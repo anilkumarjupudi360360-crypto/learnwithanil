@@ -259,6 +259,17 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .legend{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:13px;color:var(--muted)}
 .legend span{display:inline-flex;align-items:center;gap:6px}
 .legend i{width:12px;height:12px;border-radius:50%;display:inline-block;border:2px solid var(--line)}
+.join{padding:22px;display:flex;flex-direction:column;gap:16px;max-width:760px}
+.join label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:15px;min-width:0}
+.join input:not([type=checkbox]),.join textarea{font:inherit;font-weight:500;font-size:16px;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;width:100%;min-width:0}
+.join input:focus,.join textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.join textarea{resize:vertical}
+.join-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.join .consent{flex-direction:row;align-items:flex-start;gap:10px;font-weight:500;cursor:pointer}
+.join .consent input{width:18px;height:18px;margin-top:2px;flex:none;accent-color:var(--accent)}
+.join-test{margin:0;padding:10px 12px;border-radius:10px;background:var(--accent-soft);color:var(--accent-text);font-weight:600}
+.join-test .mono{font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin-right:6px}
+.join .err{margin:0;color:var(--bad);font-weight:600}
 .confirm{border:1.5px solid var(--warn);background:var(--warn-soft);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:12px}
 
 /* Result */
@@ -438,6 +449,33 @@ let S = readLS(KEY, blank());
 let P = readLS(PKEY, {papers:null, topics:null, count:10, mode:"practice", recall:true});
 const save = ()=>writeLS(KEY, S), savePrefs = ()=>writeLS(PKEY, P);
 
+/* ---------- student details + test records (sent to Anil's Google Form / Sheet) ---------- */
+const SKEY = "lwa-appsc-g2-student-v1";
+const FORM = {
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSfccfNp38-7VL9FHI5RYpRteSEBR3RgAjEYNG9LikjZ1IyIuQ/formResponse",
+  f: {name:"entry.43561638", phone:"entry.2098019624", email:"entry.2119736878", district:"entry.1148431591",
+      help:"entry.1999912595", test:"entry.1498681403", score:"entry.1095919350", acc:"entry.859095496", time:"entry.231757640"}
+};
+let ST = readLS(SKEY, {pending:[]});
+if(!Array.isArray(ST.pending)) ST.pending = [];
+const saveST = ()=>writeLS(SKEY, ST);
+function postRecord(rec){
+  const body = new URLSearchParams();
+  Object.keys(FORM.f).forEach(k=>{ if(rec[k]!=null && rec[k]!=="") body.append(FORM.f[k], String(rec[k])); });
+  return fetch(FORM.url, {method:"POST", mode:"no-cors", body, keepalive:true});
+}
+function sendRecord(extra){
+  const rec = Object.assign({name:ST.name, phone:ST.phone, email:ST.email, district:ST.district}, extra);
+  try{
+    postRecord(rec).catch(()=>{ ST.pending.push(rec); ST.pending = ST.pending.slice(-20); saveST(); });
+  }catch(e){ ST.pending.push(rec); saveST(); }
+}
+function flushRecords(){
+  if(!ST.pending.length || !navigator.onLine) return;
+  const list = ST.pending.slice(); ST.pending = []; saveST();
+  list.forEach(rec=>{ try{ postRecord(rec).catch(()=>{ ST.pending.push(rec); saveST(); }); }catch(e){} });
+}
+
 let QZ = null, LAST = null, timer = null, bankLimit = 20;
 let UI = {bankQ:"", bankPaper:"all", bankSubj:"all", bankTopic:"all", mFilter:"all", rFilter:"all", smartSubj:"all", smartCount:10, confirmSubmit:false};
 
@@ -472,7 +510,7 @@ function topicStats(){
 const band = acc=>acc===null? "none" : acc>=75? "good" : acc>=50? "warn" : "bad";
 
 /* ---------- routing ---------- */
-const VIEWS = ["home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about"];
+const VIEWS = ["home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join"];
 let current = "home";
 function go(v){ if(location.hash.slice(1)!==v){ location.hash=v; } else { render(); } }
 function route(){
@@ -484,14 +522,15 @@ function route(){
 }
 function render(){
   const v = route(); const changed = v!==current; current = v;
+  if(v!=="join") UI.pending = null;
   if(v!=="quiz") stopTimer();
-  document.querySelectorAll("#nav a").forEach(a=>{ const on = a.dataset.v===v || ((v==="quiz"||v==="result")&&a.dataset.v==="practice"); if(on) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+  document.querySelectorAll("#nav a").forEach(a=>{ const on = a.dataset.v===v || ((v==="quiz"||v==="result")&&a.dataset.v==="practice"); if(on || (v==="join"&&a.dataset.v==="practice"&&UI.pending)) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
   const mc = mistakeIds().length, mEl=$("#mcount"); mEl.hidden = !mc; mEl.textContent = mc;
   const home = $("#home-static"), host = $("#view");
   if(v==="home"){ home.hidden=false; host.hidden=true; host.innerHTML=""; renderHomeDynamic(); }
   else {
     home.hidden=true; host.hidden=false;
-    host.innerHTML = ({papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout})[v]();
+    host.innerHTML = ({papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin})[v]();
     host.querySelectorAll("[data-mixed]").forEach(el=>{ el.indeterminate = true; });
   }
   if(v==="quiz") startTimer();
@@ -635,6 +674,7 @@ function quizTitle(){
 }
 function startQuiz(ids, title, mode, source){
   if(!ids.length) return;
+  if(mode==="test" && !ST.name){ UI.pending = {ids, title, mode, source}; go("join"); return; }
   QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: mode==="test"? ids.length*60 : 0};
   UI.confirmSubmit = false;
   go("quiz");
@@ -746,6 +786,10 @@ function finishQuiz(){
   S.history.unshift({at:res.at,title:res.title,n:res.ids.length,c:res.c,w:res.w,k:res.k,secs:res.secs});
   S.history = S.history.slice(0,12);
   save(); LAST = res; QZ = null; UI.rFilter="all";
+  if(res.mode==="test" && ST.name){
+    const n = res.ids.length;
+    sendRecord({test: res.title, score: res.c+"/"+n+" (wrong "+res.w+", skipped "+res.k+")", acc: (pct(res.c,n)||0)+"%", time: fmtTime(res.secs)});
+  }
   go("result");
 }
 
@@ -881,6 +925,29 @@ function vHeatmap(){
 }
 
 /* ---------- about ---------- */
+function vJoin(){
+  const p = UI.pending, s = ST;
+  const intro = p
+    ? "Fill this in once before your first timed test. Your test scores will be saved with these details, so Anil can follow your progress and help you."
+    : "Your timed-test scores are saved with these details, so Anil can follow your progress and help you.";
+  return `<div class="wrap view">
+    ${head(p? "Before your timed test" : "Your details", p? "Tell us who is taking the test" : "Update your details", intro)}
+    <form class="card join" id="joinForm" novalidate>
+      ${p? `<p class="join-test"><span class="mono">Next</span> ${esc(p.title)} · ${p.ids.length} questions</p>` : ""}
+      <div class="join-grid">
+        <label>Full name<input name="name" autocomplete="name" required maxlength="80" value="${esc(s.name||"")}"></label>
+        <label>Phone number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="16" placeholder="10-digit mobile number" value="${esc(s.phone||"")}"></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required maxlength="120" value="${esc(s.email||"")}"></label>
+        <label>District / City<input name="district" autocomplete="address-level2" required maxlength="60" value="${esc(s.district||"")}"></label>
+      </div>
+      <label><span>Anything you need help with? <span class="muted" style="font-weight:500">(optional)</span></span><textarea name="help" rows="3" maxlength="600" placeholder="For example: I find AP Economy hard to revise. How should I plan it?"></textarea></label>
+      <label class="consent"><input type="checkbox" name="ok" ${s.name?"checked":""}> <span>I agree to share these details and my timed-test scores with Learn with Anil. They are not shown publicly.</span></label>
+      <p class="err" id="joinErr" role="alert" hidden></p>
+      <div class="row"><button class="btn btn-primary" type="submit">${p? "Save and start test" : "Save details"}</button><a class="btn btn-secondary" href="#${p? "practice" : "about"}">Cancel</a></div>
+      <p class="muted" style="font-size:13.5px;margin:0">Practice mode never needs these details. Your attempts, mistakes notebook and bookmarks stay in this browser.</p>
+    </form>
+  </div>`;
+}
 function vAbout(){
   const ig = DATA.instagram;
   return `<div class="wrap view">
@@ -902,6 +969,7 @@ function vAbout(){
           <div><dt>25</dt><dd>UPSC CSE mock interviews, Delhi</dd></div>
           <div><dt>150+</dt><dd>Educational reels &amp; videos</dd></div>
         </dl>
+        <p class="muted" style="font-size:14px;margin:4px 0 0">${ST.name? `Timed-test scores are saved as <b>${esc(ST.name)}</b> (${esc(ST.district||"")}). <a href="#join">Edit your details</a>` : "Before your first timed test you'll be asked for your name, phone, email and district, so your scores can be saved."}</p>
         <div class="handle">Follow on Instagram for daily current affairs: <a href="https://www.instagram.com/${ig}/" target="_blank" rel="noopener"><code>@${ig}</code></a><button class="btn btn-ghost btn-sm" type="button" data-act="copyig">Copy handle</button></div>
       </div>
     </section>
@@ -957,6 +1025,28 @@ document.addEventListener("click", e=>{
     case "copyig": { const h="@"+DATA.instagram; try{ navigator.clipboard.writeText(h).then(()=>toast("Copied "+h), ()=>toast("Handle: "+h)); }catch(_){ toast("Handle: "+h); } break; }
   }
 });
+document.addEventListener("submit", e=>{
+  if(e.target.id!=="joinForm") return;
+  e.preventDefault();
+  const f = e.target, val = n=> (f.elements[n].value||"").trim();
+  const name = val("name").replace(/\s+/g," "), email = val("email"), district = val("district").replace(/\s+/g," "), help = val("help");
+  let phone = val("phone").replace(/\D/g,""); if(phone.length>10 && (phone.startsWith("91")||phone.startsWith("0"))) phone = phone.slice(-10);
+  const err = name.length<2? "Please enter your full name."
+    : !/^[6-9]\d{9}$/.test(phone)? "Please enter a valid 10-digit mobile number."
+    : !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)? "Please enter a valid email address."
+    : district.length<2? "Please enter your district or city."
+    : !f.elements.ok.checked? "Please tick the box to agree to share your details." : "";
+  const box = $("#joinErr");
+  if(err){ box.textContent = err; box.hidden = false; box.scrollIntoView({block:"nearest"}); return; }
+  const isNew = !ST.name;
+  Object.assign(ST, {name, phone, email, district, joined: ST.joined || Date.now()}); saveST();
+  const p = UI.pending; UI.pending = null;
+  sendRecord({help, test: isNew? "Registered" + (p? " · before "+p.title : "") : "Updated details"});
+  if(p){ toast("Thanks, "+name.split(" ")[0]+". All the best!"); startQuiz(p.ids, p.title, p.mode, p.source); }
+  else { toast("Your details are saved"); go("about"); }
+});
+window.addEventListener("online", flushRecords);
+setTimeout(flushRecords, 1500);
 document.addEventListener("change", e=>{
   const t=e.target;
   if(t.matches('[data-act="subjall"]')){ const s=SUBJ[t.dataset.subj], set=curTopics(); s.topics.forEach(x=>{ const k=s.id+"|"+x; if(t.checked) set.add(k); else set.delete(k); }); P.topics=[...set]; savePrefs(); render(); }

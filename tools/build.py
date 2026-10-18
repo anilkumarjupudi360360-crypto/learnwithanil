@@ -210,7 +210,7 @@ def main():
     # extra files served as-is at the site root (search-engine verification files etc.)
     static = os.path.join(SRC, 'static')
     if os.path.isdir(static):
-        import shutil
+
         for f in os.listdir(static):
             shutil.copy(os.path.join(static, f), os.path.join(DIST, 'site', f))
     open(os.path.join(DIST, 'site', '.nojekyll'), 'w').write('')
@@ -241,7 +241,7 @@ def FAQ(total, npapers):
       ('Why do the 2019 questions not show four options?',
        'APPSC\'s 2019 final keys print each question with only the correct answer. Those questions appear here as quick-recall cards: you think of the answer, reveal it and mark whether you knew it. The 2024 and 2025 papers show all four options.'),
       ('Do I need to sign up?',
-       'No. The portal is free and needs no account. Your attempts, mistakes notebook and bookmarks are saved in your own browser on your device.'),
+       'No. The portal is free and practice needs no account. Before your first timed test you enter your name, phone, email and district once, so your test scores are saved with Learn with Anil and Anil can guide you. Your practice attempts, mistakes notebook and bookmarks stay in your own browser on your device.'),
     ]
 
 

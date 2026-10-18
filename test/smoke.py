@@ -10,12 +10,13 @@ async def main():
         for width, name in [(1280, 'desk'), (390, 'phone')]:
             pg = await b.new_page(viewport={'width': width, 'height': 900})
             pg.on('pageerror', lambda e: errors.append(f'pageerror: {e}'))
-            pg.on('console', lambda m: errors.append(f'console {m.type}: {m.text}') if m.type == 'error' else None)
+            pg.on('console', lambda m: errors.append(f'console {m.type}: {m.text}') if m.type == 'error' and 'fonts.g' not in m.text and 'ERR_TUNNEL' not in m.text else None)
+            await pg.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
             await pg.goto(URL); await pg.wait_for_timeout(600)
             if name == 'desk': await pg.screenshot(path=f'{SHOTS}/home-{name}.png', full_page=False)
             sw = await pg.evaluate('document.documentElement.scrollWidth'); 
             if sw > width: errors.append(f'{name}: horizontal overflow {sw}>{width}')
-            for v in ['papers','practice','bank','mistakes','smart','bookmarks','heatmap','about']:
+            for v in ['papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','join']:
                 await pg.evaluate(f'location.hash="{v}"'); await pg.wait_for_timeout(150)
                 sw = await pg.evaluate('document.documentElement.scrollWidth')
                 if sw > width: errors.append(f'{name}/{v}: horizontal overflow {sw}>{width}')
@@ -40,6 +41,9 @@ async def main():
                 # builder + timed test
                 await pg.evaluate('location.hash="practice"'); await pg.wait_for_timeout(150)
                 await pg.click('[data-act="mode"][data-mode="test"]'); await pg.click('[data-act="start"]'); await pg.wait_for_timeout(150)
+                assert await pg.evaluate('location.hash') == '#join', 'timed test should ask for student details first'
+                await pg.fill('[name=name]', 'Test Student'); await pg.fill('[name=phone]', '9876543210'); await pg.fill('[name=email]', 'test@example.com')
+                await pg.fill('[name=district]', 'Guntur'); await pg.check('[name=ok]'); await pg.click('#joinForm button[type=submit]'); await pg.wait_for_timeout(200)
                 await pg.screenshot(path=f'{SHOTS}/quiz-test.png')
                 await pg.click('[data-act="asksubmit"]'); await pg.click('.confirm [data-act="finish"]'); await pg.wait_for_timeout(150)
                 await pg.evaluate('location.hash="heatmap"'); await pg.wait_for_timeout(150)
