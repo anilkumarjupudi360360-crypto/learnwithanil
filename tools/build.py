@@ -207,6 +207,13 @@ def main():
     sm.append('</urlset>')
     open(os.path.join(DIST, 'site', 'sitemap.xml'), 'w').write('\n'.join(sm) + '\n')
     open(os.path.join(DIST, 'site', 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n')
+    # extra files served as-is at the site root (search-engine verification files etc.)
+    static = os.path.join(SRC, 'static')
+    if os.path.isdir(static):
+        import shutil
+        for f in os.listdir(static):
+            shutil.copy(os.path.join(static, f), os.path.join(DIST, 'site', f))
+    open(os.path.join(DIST, 'site', '.nojekyll'), 'w').write('')
     print(f'  total {total} questions, {len(pages)} static pages')
 
 

@@ -6,3 +6,6 @@ Free practice portal for APPSC Group-II previous year questions (Screening 2019 
 - `src/` – one text file per question paper
 - `tools/build.py` – rebuilds the site: `SITE_URL=https://<domain> python3 tools/build.py`, then copy `dist/site` to `docs/`
 - `tools/app.html` – the app template
+- `src/static/` – files copied unchanged to the site root (e.g. Google Search Console verification)
+
+To publish a change: `SITE_URL=https://anilkumarjupudi360360-crypto.github.io/learnwithanil python3 tools/build.py && rm -rf docs && cp -r dist/site docs`, then commit and push.
