@@ -111,6 +111,41 @@ def parse(paper):
     return out
 
 
+def parse_te(paper, qs):
+    """Merge official Telugu text from src/te/<file> into the parsed questions.
+    Format: 'Q <n>' line, then Telugu question lines, then optional '(1)'..'(4)' options,
+    and for answer-only papers an optional '= <answer>' line."""
+    path = os.path.join(SRC, 'te', paper['file'])
+    if not os.path.exists(path):
+        return 0
+    by_n = {q['n']: q for q in qs}
+    text = open(path, encoding='utf-8').read()
+    done, errs = 0, []
+    for b in re.split(r'\n(?=Q \d+\s*$)', '\n' + text, flags=re.M):
+        b = b.strip('\n')
+        m = re.match(r'Q (\d+)\s*$', b.split('\n')[0]) if b.startswith('Q ') else None
+        if not m:
+            continue
+        n = int(m.group(1)); q = by_n.get(n)
+        if not q:
+            errs.append(f'{paper["id"]} te Q{n}: no such English question'); continue
+        qlines, opts, ans = [], [], None
+        for ln in b.split('\n')[1:]:
+            if re.match(r'^\(([1-4])\) ', ln): opts.append(ln[4:].strip())
+            elif ln.startswith('= '): ans = ln[2:].strip()
+            elif ln.strip():
+                if opts: errs.append(f'{paper["id"]} te Q{n}: text after options')
+                qlines.append(ln.rstrip())
+        if qlines: q['qt'] = '\n'.join(qlines).strip()
+        if opts:
+            if 'o' in q and len(opts) == len(q['o']): q['ot'] = opts
+            else: errs.append(f'{paper["id"]} te Q{n}: {len(opts)} options')
+        if ans and 'ans' in q: q['at'] = ans
+        done += 1
+    for e in errs: print('  !', e)
+    return done
+
+
 def img_data_uri(rel):
     p = os.path.join(SRC, rel)
     from PIL import Image
@@ -136,6 +171,8 @@ def main():
     papers, questions = [], []
     for p in PAPERS:
         qs = parse(p)
+        nte = parse_te(p, qs)
+        if nte: print(f'  {p["id"]}: Telugu for {nte} questions')
         if not qs:
             print('  - skipping', p['id'], '(no source yet)'); continue
         for q in qs:
@@ -247,6 +284,8 @@ def FAQ(total, npapers):
 
 STATIC_CSS = """
 .nw{white-space:nowrap}
+[lang="te"]{font-family:"Noto Sans Telugu",sans-serif;line-height:1.8}
+.q .te{border-left:3px solid var(--line);padding-left:12px;margin:8px 0 4px}
 :root{--bg:#F3F6FB;--surface:#fff;--ink:#0D1830;--muted:#55627C;--line:#D6DFEC;--accent:#1846C7;--accent-soft:#E2EAFC;--accent-text:#1440B8;--band:#0C2266;--band-ink:#EEF3FF;--good:#12804A;--good-soft:#DDF3E7}
 @media (prefers-color-scheme:dark){:root{--bg:#0A1020;--surface:#111A2E;--ink:#E5ECF8;--muted:#9AA8C3;--line:#26334F;--accent:#6F95FF;--accent-soft:#1A2A52;--accent-text:#9DB7FF;--band:#0F1F4E;--band-ink:#EEF3FF;--good:#41C080;--good-soft:#123426;color-scheme:dark}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
@@ -285,7 +324,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs):
 <link rel="canonical" href="{esc(canonical)}">
 <meta property="og:type" content="article"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{esc(canonical)}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600&display=swap">
 <style>{STATIC_CSS}</style>
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
@@ -312,7 +351,16 @@ def q_html(q, paper_short, num_label):
         ans = ' / '.join(f'({i + 1}) {q["o"][i]}' for i in q['a'])
     else:
         ans = q['ans']
-    parts.append(f'<details><summary>Show answer</summary><p class="ans">Answer: {esc(ans)}</p><p class="why">{esc(q["w"])}</p></details></li>')
+    if q.get('qt'):
+        te = f'<p>{esc(q["qt"])}</p>'
+        if q.get('ot'):
+            te += '<ol>' + ''.join(f'<li>{esc(o)}</li>' for o in q['ot']) + '</ol>'
+        parts.append(f'<div class="te" lang="te">{te}</div>')
+    ans_te = ''
+    if q.get('ot'): ans_te = ' / '.join(f'({i + 1}) {q["ot"][i]}' for i in q['a'])
+    elif q.get('at'): ans_te = q['at']
+    te_ans = f'<p class="ans" lang="te">సమాధానం: {esc(ans_te)}</p>' if ans_te else ''
+    parts.append(f'<details><summary>Show answer</summary><p class="ans">Answer: {esc(ans)}</p>{te_ans}<p class="why">{esc(q["w"])}</p></details></li>')
     return ''.join(parts)
 
 
