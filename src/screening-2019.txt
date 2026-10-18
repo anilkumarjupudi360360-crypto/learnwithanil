@@ -1,0 +1,689 @@
+# APPSC Group-II Screening Test 2019 (Notification 25/2018). Source: APPSC final key (English version).
+# Key lists question + correct answer only, so these are recall cards.
+# Skipped: 19, 32, 43, 51, 80, 88, 93, 146, 150 (deleted by APPSC); 38-41 (need figure/graph); 47, 56 (answer "None of the above" is meaningless without options).
+
+Q 1 | cur | Sports
+Which team won the 2017–18 La Liga season?
+= FC Barcelona
+~ Barcelona won the 2017–18 La Liga title under coach Ernesto Valverde, finishing 14 points ahead of Atlético Madrid, and also won the Copa del Rey that season.
+
+Q 2 | cur | Awards & Personalities
+With which sports brand did P.V. Sindhu sign a record endorsement deal in the year 2019?
+= Li Ning
+~ Sindhu signed a four-year deal reported at about ₹50 crore with the Chinese sportswear brand Li Ning, one of the largest endorsement deals in badminton.
+
+Q 3 | ih | Modern India
+Who was the designer of the Indian National Flag?
+= Pingali Venkayya
+~ Pingali Venkayya, born near Machilipatnam in Krishna district, presented his flag design to Gandhi at the Bezawada (Vijayawada) Congress session in 1921. The present tricolour evolved from it.
+
+Q 4 | cur | International
+The 2018 Nobel Peace Prize winner Nadia Murad belongs to which country?
+= Iraq
+~ Nadia Murad is a Yazidi from northern Iraq who survived ISIS captivity. She shared the 2018 Peace Prize with Congolese surgeon Denis Mukwege for work against sexual violence in war.
+
+Q 5 | cur | Sports
+In which of the following years did the Indian National Blind Cricket Team win the World Cup?
+= 2018
+~ India beat Pakistan in the final of the Blind Cricket World Cup (ODI format) held in the UAE in January 2018, retaining the title it had won in 2014.
+
+Q 6 | cur | Sports
+Which female cricketer became the first player in the world to cross the 2000 runs mark in T20 International cricket?
+= Mithali Raj
+~ Mithali Raj crossed 2,000 T20I runs in 2018 and was the first Indian cricketer, man or woman, to reach the mark.
+
+Q 7 | cur | International
+Which city is going to host the 2019 G20 Summit?
+= Osaka
+~ The 14th G20 summit was held in Osaka in June 2019, the first G20 summit hosted by Japan.
+
+Q 8 | sci | Environment & Ecology
+On which date is 'World Environment Day' celebrated?
+= 5th June
+~ World Environment Day, led by UNEP, has been observed on 5 June since 1974. The date marks the opening of the 1972 Stockholm Conference on the Human Environment.
+
+Q 9 | cur | Awards & Personalities
+Which movie won the Oscar for the Best Film in 2018?
+= The Shape of Water
+~ Guillermo del Toro's The Shape of Water won Best Picture at the 90th Academy Awards in March 2018, along with Best Director.
+
+Q 10 | sci | Defence Technology
+Which company makes the fighter aircraft 'Rafale'?
+= Dassault Aviation
+~ The Rafale is a twin-engine multirole fighter built by France's Dassault Aviation. India signed an inter-governmental deal for 36 Rafales in 2016.
+
+Q 11 | sci | General Science
+What is the SI unit of inductance?
+= Henry
+~ The henry (H) is named after the American physicist Joseph Henry. One henry produces 1 volt when current changes at 1 ampere per second.
+
+Q 12 | sci | Defence Technology
+Researchers of which institute have created a 'metamaterial' that can protect soldiers from detection by enemy radars?
+= Indian Institute of Technology, Kanpur
+~ IIT Kanpur researchers developed a radar-absorbing metamaterial surface that can make soldiers and equipment hard to detect by enemy radar.
+
+Q 13 | sci | IT & Communication
+In computer terminology, MPEG stands for
+= Moving Picture Experts Group
+~ MPEG is the working group that sets compression standards for audio and video, such as MPEG-1 Audio Layer III (MP3) and MPEG-4 (MP4).
+
+Q 14 | geo | Physical Geography
+A study of mapping the sea floor is known as
+= Bathymetry
+~ Bathymetry measures water depth and maps the shape of the ocean or lake floor, much as topography maps land.
+
+Q 15 | cur | Awards & Personalities
+Susan Wojcicki is the CEO of which of the following companies?
+= YouTube
+~ Susan Wojcicki led YouTube as CEO from 2014 to 2023. Google's first office was in her garage in 1998.
+
+Q 16 | men | Data Interpretation & Statistics
+What represents the frequency of occurrence of specific phenomena that lie within a specific range of values, arranged in consecutive and fixed intervals?
+= Histogram
+~ A histogram plots how many observations fall into each class interval, with adjoining bars whose areas represent the frequencies.
+
+Q 17 | sci | IT & Communication
+DIMM, an Information Technology term, refers to which of the following?
+= Dual In-line Memory Module
+~ A DIMM is a RAM module with separate electrical contacts on each side of the board, which replaced the older SIMM.
+
+Q 18 | sci | General Science
+Match List I (Scientist) with List II (Invention):
+a. Galileo Galilei
+b. Thomas Alva Edison
+c. Alexander Graham Bell
+d. Karl Ferdinand Braun
+I. Telephone   II. Cathode Ray Tube   III. Telescope   IV. Electric Light Bulb
+= a – III, b – IV, c – I, d – II
+~ Galileo improved the telescope (1609), Edison the incandescent bulb (1879), Bell patented the telephone (1876) and Braun built the first cathode ray tube (1897).
+
+Q 20 | sci | IT & Communication
+In electronic terminology, 'LED' stands for
+= Light Emitting Diode
+~ An LED is a semiconductor diode that emits light when current flows through it. LEDs use far less power than incandescent bulbs.
+
+Q 21 | sci | Environment & Ecology
+In which year did the first Common Effluent Treatment Plant (CETP) of India commence in Andhra Pradesh to cater to the needs of small-scale industries?
+= 1989
+~ India's first CETP began in 1989 in undivided Andhra Pradesh. A CETP lets a cluster of small units treat their industrial wastewater together.
+
+Q 22 | cur | AP Affairs
+Which e-governance initiative in Andhra Pradesh is a public grievance redressal system?
+= Prajavani
+~ Prajavani registered citizens' petitions online and tracked them until they were resolved by the departments concerned.
+
+Q 23 | cur | National
+Which Smart City in India has become the first to run on 100% renewable energy during the day time?
+= Diu
+~ Diu met all its daytime power demand from its solar plants in 2018, becoming the first Indian city to do so.
+
+Q 24 | cur | AP Affairs
+Which State in India is set to establish India's first 'Justice City'?
+= Andhra Pradesh
+~ The Amaravati capital master plan included a Justice City, one of its nine theme cities, to house the High Court and other judicial institutions.
+
+Q 25 | cur | International
+Who propounded the concept of 'Soft Power' in International Relations?
+= Joseph Nye
+~ Harvard scholar Joseph Nye coined 'soft power' in 1990: the ability to shape others' choices through attraction, such as culture and values, rather than force.
+
+Q 26 | eco | Public Finance & Taxation
+Excise duty is levied on which of the following?
+= Production of goods
+~ Excise duty is a tax on the manufacture or production of goods. Since 2017 most central excise has been subsumed in GST, except on items like petroleum products and tobacco.
+
+Q 27 | eco | National Income & Growth
+According to a World Bank report, India has recently surpassed France to become the _______ largest economy in the world.
+= Sixth
+~ World Bank data for 2017, released in 2018, showed India's GDP had overtaken France's, making India the sixth largest economy.
+
+Q 28 | geo | Physical Geography
+Where is the 'International Tsunami Information Centre' located?
+= Honolulu
+~ The ITIC was set up in 1965 by UNESCO's Intergovernmental Oceanographic Commission and is based in Honolulu, Hawaii.
+
+Q 29 | sci | Disaster Management
+Which of the following does NOT lead to flooding?
+= Biological disaster
+~ Floods follow from heavy rainfall, cyclones, cloudbursts or dam failures. A biological disaster such as an epidemic does not cause flooding.
+
+Q 30 | sci | Disaster Management
+If the deficiency of a particular year's rainfall exceeds 50% of normal, it is termed as
+= Severe drought
+~ Under the IMD classification, a rainfall deficiency of 26–50% is a moderate drought and a deficiency of more than 50% is a severe drought.
+
+Q 31 | sci | Environment & Ecology
+In which year did the Parliament of India enact the Environment Protection Act?
+= 1986
+~ The Environment (Protection) Act, 1986 was passed after the Bhopal gas tragedy, under Article 253, as an umbrella law for protecting the environment.
+
+Q 33 | geo | Indian Geography
+_______, with an elevation of 8,586 metres, is the highest peak in India.
+= Kanchenjunga
+~ Kanchenjunga, on the Sikkim–Nepal border, is the third-highest mountain in the world and the highest peak in Indian-administered territory.
+
+Q 34 | geo | Indian Geography
+'Arwah' caves, known for their limestone formations and fossils, are located in which State of India?
+= Meghalaya
+~ Arwah cave is near Sohra (Cherrapunji) in Meghalaya. Its limestone passages contain fossils of marine life.
+
+Q 35 | geo | Indian Geography
+Which Indian river is known as 'Tsangpo'?
+= Brahmaputra
+~ The Brahmaputra is called the Yarlung Tsangpo in Tibet, the Siang or Dihang in Arunachal Pradesh, and the Jamuna in Bangladesh.
+
+Q 36 | geo | Indian Geography
+Which of the following States in India is NOT crossed by the Tropic of Cancer?
+= Odisha
+~ The Tropic of Cancer passes through eight states: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram. Odisha lies entirely south of it.
+
+Q 37 | men | Arithmetic
+C = 5/9 (F – 32). If C = 25, what is the value of F?
+= 77
+~ 25 = 5/9 (F – 32), so F – 32 = 45 and F = 77.
+
+Q 42 | men | Data Interpretation & Statistics
+For a moderately skewed distribution, what is the empirical relationship between Mean, Median and Mode?
+= Mean – Mode = 3(Mean – Median)
+~ Karl Pearson's empirical rule is Mode = 3 Median – 2 Mean, which rearranges to Mean – Mode = 3(Mean – Median).
+
+Q 44 | eco | Poverty, Employment & Population
+Which of the following is true in relation to the workforce in India?
+= Total male workforce was around 332 million in the year 2011.
+~ Census 2011 counted about 482 million workers, of whom about 332 million were men and 150 million were women.
+
+Q 45 | eco | AP Economy
+In Andhra Pradesh, the revenue actually received through stamp duty and registration fee in 2016–17 was
+= ₹3,476 crore
+~ The official key gives about ₹3,476 crore from stamps and registration in 2016–17, one of the State's main own-tax revenues after sales tax/VAT.
+
+Q 46 | eco | Industry & Infrastructure
+How many nodes were taken up for master planning under Japan International Cooperation Agency assistance for the Chennai–Bengaluru Industrial Corridor?
+= Three nodes
+~ JICA helped master-plan three CBIC nodes: Krishnapatnam (Andhra Pradesh), Tumakuru (Karnataka) and Ponneri (Tamil Nadu).
+
+Q 48 | pol | AP Reorganisation Act, 2014
+The Andhra Pradesh Reorganisation (Bifurcation) Act 2014, Section 31, deals with
+= High Court
+~ Section 31 provides for a separate High Court for Andhra Pradesh, with the Hyderabad High Court serving both States until it was set up. The AP High Court began at Amaravati on 1 January 2019.
+
+Q 49 | pol | AP Reorganisation Act, 2014
+According to which Section of the Andhra Pradesh Reorganisation Act are backward districts of the State to be funded by a Special Package of the Central Government?
+= Section 46 (3)
+~ Section 46(3) promises a special development package for the backward areas of Rayalaseema and north coastal Andhra, on the lines of the KBK and Bundelkhand packages.
+
+Q 50 | sci | IT & Communication
+What is the communication system that links the Secretariat and District Administration?
+= APSWAN
+~ APSWAN (Andhra Pradesh State Wide Area Network) connects the Secretariat with district and mandal offices for voice, video and data.
+
+Q 52 | pol | Constitution Basics & Preamble
+Out of the following terms, which one has NOT been used in the Preamble of the Indian Constitution?
+= Freedom
+~ The Preamble speaks of Justice, Liberty, Equality and Fraternity. The word 'freedom' does not appear in it.
+
+Q 53 | pol | Constitution Basics & Preamble
+Articles 5–11 of the Indian Constitution deal with
+= Citizenship
+~ Part II (Articles 5–11) covers citizenship at the commencement of the Constitution and lets Parliament regulate it by law, as it did through the Citizenship Act, 1955.
+
+Q 54 | pol | Fundamental Rights & Duties
+"...all persons are equally entitled to freedom of conscience and the right freely to profess, practise and propagate religion" is mentioned in which Article?
+= Article 25 (1)
+~ Article 25(1) guarantees freedom of conscience and religion, subject to public order, morality, health and the other provisions of Part III.
+
+Q 55 | pol | DPSP
+Which Article of the Indian Constitution contains the provision for "Promotion of educational and economic interests of Scheduled Castes, Scheduled Tribes and other weaker sections"?
+= Article 46
+~ Article 46, a Directive Principle, asks the State to promote the educational and economic interests of SCs, STs and weaker sections and to protect them from social injustice.
+
+Q 57 | pol | Union Executive
+All the work of the Government of India is done in the name of
+= The President of India
+~ Under Article 77, all executive action of the Government of India is expressed to be taken in the name of the President.
+
+Q 58 | pol | Federalism & Emergency
+Which of the items below does NOT fall in the State List?
+= Higher education
+~ Coordination and determination of standards in higher education is a Union List subject (Entry 66). Education in general moved to the Concurrent List with the 42nd Amendment.
+
+Q 59 | pol | Fundamental Rights & Duties
+According to which Article of the Indian Constitution, 'No person shall be prosecuted and punished for the same offence more than once'?
+= Article 20
+~ Article 20(2) bars double jeopardy. Article 20 also bars ex post facto criminal laws and self-incrimination.
+
+Q 60 | pol | Fundamental Rights & Duties
+Which of the following is/are among the fundamental duties of citizens in the Indian Constitution?
+(i) To uphold and protect the sovereignty, unity and integrity of India.
+(ii) To protect the weaker sections from social injustice.
+(iii) To value and preserve the rich heritage of our composite culture.
+(iv) To promote harmony and the spirit of common brotherhood amongst all the people of India.
+= (i), (iii) and (iv)
+~ (i), (iii) and (iv) are duties under Article 51A. Protecting weaker sections from social injustice is a Directive Principle under Article 46, not a fundamental duty.
+
+Q 61 | pol | Parliament
+Which of the following statements is/are correct?
+A. The President can nominate 02 members from the Anglo-Indian community if not adequately represented in the Lok Sabha.
+B. The Governor can nominate 02 members from the Anglo-Indian community if not adequately represented in the Legislative Assembly.
+= Only A
+~ Article 331 let the President nominate two Anglo-Indians to the Lok Sabha, but Article 333 let the Governor nominate only one to an Assembly. Both provisions ended with the 104th Amendment (2020).
+
+Q 62 | pol | Union Executive
+According to Article 67, the resolution for removing the Vice-President of India can be moved first only in
+= The Rajya Sabha
+~ Article 67(b): the Rajya Sabha passes the resolution by an effective majority and the Lok Sabha then agrees to it, after 14 days' notice.
+
+Q 63 | pol | Parliament
+Which of the following is correct about the Rajya Sabha?
+= The Rajya Sabha is not subject to dissolution
+~ Under Article 83(1), the Rajya Sabha is a permanent House; one-third of its members retire every second year.
+
+Q 64 | pol | Constitutional & Statutory Bodies
+Who is considered the highest law officer of India?
+= Attorney General
+~ The Attorney General, appointed under Article 76, is the highest law officer and may speak in either House of Parliament without a vote.
+
+Q 65 | pol | Federalism & Emergency
+The President of India cannot proclaim National Emergency under Article 352 in the entire country or any part of it on the ground of
+= Internal disturbance
+~ The 44th Amendment (1978) replaced 'internal disturbance' with 'armed rebellion'. The grounds are now war, external aggression or armed rebellion.
+
+Q 66 | pol | State Government
+Who of the following is empowered to dissolve the Legislative Assembly of a State?
+= The Governor
+~ Article 174(2)(b) empowers the Governor to dissolve the Legislative Assembly, normally on the advice of the Council of Ministers.
+
+Q 67 | pol | Federalism & Emergency
+The Parliament is empowered to make any law for the whole or any part of India for the sake of implementing international treaties
+= Without the consent of any State
+~ Article 253 lets Parliament legislate on any subject, even State List subjects, to implement treaties and international agreements, without the States' consent.
+
+Q 68 | eco | Public Finance & Taxation
+All revenues received by the Union Government by way of taxes and other receipts for the conduct of Government business are credited to
+= The Consolidated Fund of India
+~ Under Article 266(1), all revenues, loans raised and loan repayments received go into the Consolidated Fund of India. No money leaves it without Parliament's approval.
+
+Q 69 | geo | AP Geography
+Which is the oldest land mass in Andhra Pradesh?
+= Cuddapah Basin
+~ The crescent-shaped Cuddapah Basin of Proterozoic rocks is among the oldest geological formations of the State, and it hosts limestone, barytes and uranium deposits.
+
+Q 70 | aph | Ancient Andhra
+Which of the following stupas in Andhra Pradesh is the biggest?
+= Amaravathi
+~ The Amaravati Mahachaitya near Dharanikota was the largest stupa in Andhra and the centre of the Amaravati school of sculpture.
+
+Q 71 | aph | Ancient Andhra
+Which literary work is of utmost importance for the social and cultural history of the Satavahanas?
+= Gathasaptasati of Hala
+~ The Gathasaptasati, 700 Prakrit verses compiled by the Satavahana king Hala, describes village life, love, farming and customs of the time.
+
+Q 72 | aph | Modern Andhra
+The Polavaram project was initially envisaged with the name Ramapada Sagar by
+= Sir Sonti Venkata Ramamurthy
+~ In 1941 Diwan Bahadur Sonti Venkata Ramamurthy, then an engineer in the Madras Presidency, proposed a Godavari reservoir called Ramapada Sagar, which became the Polavaram project.
+
+Q 73 | aph | Modern Andhra
+Which is the biggest canal of Andhra Pradesh that gained commercial importance?
+= Buckingham Canal
+~ The Buckingham Canal, a saltwater navigation canal running from coastal Andhra to Tamil Nadu, was extended during the 1876–78 famine and named after the Madras Governor, the Duke of Buckingham.
+
+Q 74 | aph | Andhra Literature & Arts
+Who translated into Telugu the 'Ganitasarasangraha' of Mahaviracharya?
+= Pavuluri Mallana
+~ Pavuluri Mallana's Sara Sangraha Ganitamu, a translation of Mahaviracharya's Sanskrit work, is regarded as the first mathematical treatise in Telugu.
+
+Q 75 | aph | Ancient Andhra
+Which inscription proved that the Pallavas replaced the Ikshvakus of Vijayapuri?
+= The Manchikallu inscription of Pallava Simhavarman
+~ The Manchikallu inscription (Guntur district) of Simhavarman shows Pallava rule over the Krishna region that the Ikshvakus had held.
+
+Q 76 | aph | Andhra Literature & Arts
+Nannaya Bhatta was assisted by Narayana Bhatta in translating the Mahabharata. The evidence for this fact was
+= Nandampudi Grant
+~ The Nandampudi grant of Rajaraja Narendra (1053 CE), composed by Nannaya, records a gift to Narayana Bhatta, who helped Nannaya with the Andhra Mahabharatam.
+
+Q 77 | aph | Ancient Andhra
+Which dynasty of Andhra issued iron coins with a thin coating of copper?
+= Vishnukundins
+~ Vishnukundin coins include copper-coated iron pieces, usually with a lion on the obverse.
+
+Q 78 | aph | Medieval Andhra
+The credit for establishing Telugu in Andhradesa goes to
+= Eastern Chalukyas
+~ The Eastern Chalukyas of Vengi used Telugu in inscriptions and patronised Nannaya, who began the Telugu Mahabharata at Rajaraja Narendra's court.
+
+Q 79 | aph | Ancient Andhra
+The Brahmanical cave temples of Mogalrajapuram and Undavalli are assigned to
+= Vishnukundins
+~ The rock-cut cave temples at Undavalli and Mogalrajapuram near Vijayawada are attributed to the Vishnukundins (5th–6th centuries CE).
+
+Q 81 | aph | Medieval Andhra
+Under which dynasty in Andhra did the non-Brahmanisation of religion and politics culminate?
+= Kakatiyas
+~ Under the Kakatiyas, warrior and peasant groups rose to power, and Shaiva movements that drew followers from all castes flourished.
+
+Q 82 | aph | Medieval Andhra
+The Velamas, who were intruders into the economic life of Palnadu dominated by the Reddis, were defeated and driven out in the
+= Battle of Karempudi
+~ The Battle of Karempudi (Palnati Yuddham, c. 1182) is celebrated in the ballad Palnati Virula Katha attributed to Srinatha.
+
+Q 83 | aph | Andhra Literature & Arts
+The dance sculptures found in the Ramappa temple at Palampet are said to have been based on the principles found in which work on the art of dance?
+= Jayapa's Nritta Ratnavali
+~ Jayapa Senani, a general of the Kakatiya ruler Ganapatideva, wrote the Nritta Ratnavali. Its dance postures match the sculptures of the Ramappa temple.
+
+Q 84 | aph | Medieval Andhra
+Name the Reddi king who levied a tax on the delivery of a child (Puriti Pannu).
+= Racha Vema
+~ Racha Vema, the last Reddi ruler of Kondaveedu, was notorious for oppressive taxes, including one on childbirth.
+
+Q 85 | aph | Andhra Literature & Arts
+Who was the composer of "Subhadra Kalyanam"?
+= Tallapaka Thimmakka
+~ Tallapaka Timmakka, wife of Annamacharya, wrote Subhadra Kalyanam and is regarded as the first Telugu woman poet.
+
+Q 86 | aph | Andhra Literature & Arts
+Who was the pioneer composer of the kriti form of Carnatic music?
+= Thyagaraya
+~ The official key gives Tyagaraja (1767–1847), the Telugu composer of the Carnatic Trinity whose kritis set the standard form of Carnatic composition.
+
+Q 87 | aph | Andhra Literature & Arts
+Besides Yakshagana, what was the other form of art available for entertainment in rural Andhra under Vijayanagara rule?
+= Shadow play known as Bommalata
+~ Tholu Bommalata, leather shadow-puppet theatre telling stories from the epics, was a popular rural entertainment in Andhra.
+
+Q 89 | aph | Modern Andhra
+What was the important port in coastal Andhra where ship-building activity flourished during the 16th and 17th centuries?
+= Narsapur
+~ Narsapur on the Vasishta Godavari was a ship-building centre where European companies built and repaired vessels.
+
+Q 90 | aph | Modern Andhra
+Who was the negotiator between the British resident of the East India Company at Machilipatnam and Nizam Ali Khan of Hyderabad for the lease of the Northern Circars to the Company?
+= Kandregula Jogipantulu
+~ Kandregula Jogi Pantulu helped negotiate the Company's lease of the Northern Circars from Nizam Ali Khan in the 1760s.
+
+Q 91 | aph | Modern Andhra
+The Battle of Padmanabham (1794) decided the fate of
+= Vijaya Rama Raju, the ruler of Vizianagaram
+~ Vijayarama Raju II of Vizianagaram died fighting the East India Company's forces at Padmanabham in 1794, ending the estate's independence.
+
+Q 92 | aph | Modern Andhra
+Of all the famines that affected South India, which was the most serious one?
+= 1833 Guntur
+~ The Guntur famine of 1832–33 (Nandana famine) killed about two lakh people and led to the Godavari and Krishna irrigation works.
+
+Q 94 | aph | Modern Andhra
+Who translated the Bible into Telugu (1746–47)?
+= Benjamin Schultze
+~ Benjamin Schultze, a German Lutheran missionary at Madras, produced the first Telugu translation of the Bible.
+
+Q 95 | aph | Modern Andhra
+Who was the pioneer of the Kisan Movement in Andhra?
+= N.G. Ranga
+~ N.G. Ranga organised the Ryots' Association, ran the Indian Peasants' Institute at Nidubrolu and helped found the All India Kisan Sabha in 1936.
+
+Q 96 | aph | Modern Andhra
+The earliest Prarthana Samaj in Andhra was established in 1878 by
+= Veeresalingam
+~ Kandukuri Veeresalingam founded the Prarthana Samaj at Rajahmundry in 1878 as part of his social reform work.
+
+Q 97 | aph | AP Formation & Movements
+The Telugu Desam Party was founded by N.T. Rama Rao during the Chief Ministership of
+= Bhavanam Venkatram
+~ NTR launched the Telugu Desam Party on 29 March 1982, when Bhavanam Venkatram was Chief Minister. The TDP won the January 1983 elections.
+
+Q 98 | aph | Andhra Literature & Arts
+Name one famous dance performer of Kuravanji.
+= Rukmini Arundale
+~ Rukmini Devi Arundale, founder of Kalakshetra, staged the Kuravanji dance drama, notably Kutrala Kuravanji.
+
+Q 99 | aph | AP Formation & Movements
+The united State of Andhra Pradesh took its birth only after
+= Gentlemen's Agreement on February 20, 1956.
+~ The Gentlemen's Agreement between Andhra and Telangana leaders set safeguards for Telangana, and Andhra Pradesh was formed on 1 November 1956.
+
+Q 100 | aph | AP Formation & Movements
+The Jai Andhra Movement of 1972–73 finally ended with
+= The Six-Point Formula proposed by the Central Government
+~ The Six-Point Formula of 1973 ended the Mulki rules agitation and led to Article 371D through the 32nd Amendment.
+
+Q 101 | eco | Poverty, Employment & Population
+Which among the following is the poorest state in India as per the Global Multidimensional Poverty Index 2018?
+= Bihar
+~ The 2018 global MPI report by UNDP and OPHI found Bihar had the highest share of multidimensionally poor people among Indian states.
+
+Q 102 | eco | Poverty, Employment & Population
+According to the Global Multidimensional Poverty Index 2018, how many million people moved out of poverty in India between 2005–06 and 2015–16?
+= 271
+~ The 2018 report estimated that about 271 million Indians moved out of multidimensional poverty in that decade.
+
+Q 103 | eco | Poverty, Employment & Population
+In which year was the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA) enacted?
+= 2005
+~ The Act was passed in 2005 and launched in February 2006. It guarantees 100 days of wage employment a year to every rural household that seeks it.
+
+Q 104 | eco | Planning & Development
+Among the Millennium Development Goals, which target set for 2015 was achieved by India?
+= Eradicating Extreme Poverty and Hunger
+~ India met the MDG-1 target of halving the share of people in extreme poverty from its 1990 level.
+
+Q 105 | eco | Planning & Development
+Out of the 8 Millennium Development Goals, how many goals are directly related to health?
+= 3
+~ Three MDGs dealt directly with health: reduce child mortality (Goal 4), improve maternal health (Goal 5) and combat HIV/AIDS, malaria and other diseases (Goal 6).
+
+Q 106 | eco | Planning & Development
+The Sustainable Development Goals India Index 2018 is based on how many main goals?
+= 17
+~ NITI Aayog's SDG India Index is framed on the 17 SDGs. The 2018 baseline edition scored states on the 13 goals for which data were available.
+
+Q 107 | eco | Planning & Development
+Which two States are the front runners in the achievement of Sustainable Development Goals in 2018?
+= Kerala and Himachal Pradesh
+~ In the 2018 SDG India Index, Kerala and Himachal Pradesh led with a score of 69 each, followed by Tamil Nadu.
+
+Q 108 | eco | External Sector
+Which of the following sectors attracted the highest Foreign Direct Investment (FDI) during the last decade?
+= Telecom
+~ The official key gives telecom, which drew large FDI inflows after the sector was opened up to foreign investment.
+
+Q 109 | eco | Planning & Development
+Economic reforms towards liberalisation were introduced in the year
+= 1991
+~ The July 1991 reforms under P.V. Narasimha Rao and Manmohan Singh began liberalisation, privatisation and globalisation after the balance-of-payments crisis.
+
+Q 110 | eco | Industry & Infrastructure
+'License–Permit–Quota Raj' was abolished in which year?
+= 1991
+~ The New Industrial Policy of July 1991 ended industrial licensing for all but a short list of industries.
+
+Q 111 | eco | Money, Banking & Inflation
+The Insolvency and Bankruptcy Code came into force from
+= 2016
+~ The IBC was passed in May 2016 and its corporate insolvency provisions took effect in December 2016, setting time limits for resolving stressed firms.
+
+Q 112 | eco | Agriculture
+In which year was the Swaminathan Commission constituted for agriculture?
+= 2004
+~ The National Commission on Farmers, chaired by M.S. Swaminathan, was set up in 2004 and recommended MSP at 50% above the comprehensive cost of production.
+
+Q 113 | eco | Money, Banking & Inflation
+The 'Mudra' scheme is aimed at financing which of the following categories of industries?
+= Micro and small enterprises
+~ PM MUDRA Yojana (2015) gives collateral-free loans to non-farm micro and small enterprises under the Shishu, Kishore and Tarun categories.
+
+Q 114 | eco | Industry & Infrastructure
+When was the Competition Act enacted?
+= 2002
+~ The Competition Act, 2002 replaced the MRTP Act, 1969 and set up the Competition Commission of India.
+
+Q 115 | eco | Poverty, Employment & Population
+During which period did India experience a population explosion?
+= 1951–81
+~ From 1951 to 1981 the death rate fell sharply while the birth rate stayed high, so the population grew at over 2% a year.
+
+Q 116 | soc | Social Structure
+Which of the following States has the highest proportion of Hindus in its population as per the 2011 Census?
+= Himachal Pradesh
+~ About 95% of Himachal Pradesh's population was Hindu in Census 2011, the highest share among states.
+
+Q 117 | eco | Poverty, Employment & Population
+'Demographic Dividend' refers to an increase in the population in the age group of
+= 15–59 years
+~ The demographic dividend is the growth potential when the working-age share of the population, here taken as 15–59 years, rises relative to dependants.
+
+Q 118 | eco | Poverty, Employment & Population
+Child mortality implies children dying before their
+= 5th birthday
+~ The under-five mortality rate counts deaths of children before age five per 1,000 live births.
+
+Q 119 | sci | Environment & Ecology
+What proportion of the area is covered by forest in India as of 2017?
+= 24·39%
+~ The India State of Forest Report 2017 put forest and tree cover together at 24.39% of the geographical area (forest cover alone was 21.54%).
+
+Q 120 | eco | Money, Banking & Inflation
+Demonetisation was implemented in which year?
+= 2016
+~ On 8 November 2016, the ₹500 and ₹1,000 notes then in circulation ceased to be legal tender.
+
+Q 121 | eco | Money, Banking & Inflation
+The Statutory Liquidity Ratio (SLR) according to the recent RBI review (2019) is
+= 19·25
+~ The RBI cut SLR to 19.25% of net demand and time liabilities in early 2019, on a path to 18%.
+
+Q 122 | eco | Money, Banking & Inflation
+Repo rate is the rate at which
+= RBI lends money to the commercial banks
+~ Under the repo, the RBI lends short-term funds to banks against government securities. It is the RBI's main policy rate.
+
+Q 123 | eco | Public Finance & Taxation
+Which of the following is NOT a tax?
+= SAT
+~ SAT is the Securities Appellate Tribunal, which hears appeals against SEBI orders. It is a tribunal, not a tax.
+
+Q 124 | eco | Public Finance & Taxation
+Development expenditure does not include expenditure on
+= Defence
+~ Development expenditure covers economic and social services such as education, health and agriculture. Defence, interest payments and administration are non-development expenditure.
+
+Q 125 | eco | Public Finance & Taxation
+Who is the Chairman of the 14th Finance Commission?
+= Y.V. Reddy
+~ Former RBI Governor Y.V. Reddy chaired the 14th Finance Commission (2015–20), which raised the States' share of central taxes to 42%.
+
+Q 126 | eco | Money, Banking & Inflation
+Inflation would have the most adverse effects on which of the following?
+= Creditors
+~ Inflation lowers the real value of money repaid later, so lenders lose and borrowers gain.
+
+Q 127 | eco | Public Finance & Taxation
+Which of the following taxes replaced a number of indirect taxes?
+= Goods and Services Tax
+~ GST, from 1 July 2017, replaced central excise, service tax, VAT, entry tax and several other indirect taxes.
+
+Q 128 | eco | National Income & Growth
+The main difference between GDP and GNP is
+= Net foreign income from abroad
+~ GNP = GDP + net factor income from abroad (income earned by residents abroad minus income earned by foreigners in India).
+
+Q 129 | eco | National Income & Growth
+Between 2016–17 and 2017–18, India's per capita income (at current prices) increased by what percent?
+= 8·6
+~ The CSO's estimates showed per capita net national income at current prices rising about 8.6% in 2017–18.
+
+Q 130 | eco | Poverty, Employment & Population
+Between 1990 and 2017, India's Human Development Index (HDI) value increased by nearly
+= 50 percent
+~ UNDP reported India's HDI rising from 0.427 in 1990 to 0.640 in 2017, an increase of nearly 50%.
+
+Q 131 | eco | Industry & Infrastructure
+Between 2017 and 2018, how many ranks did India climb in 'ease of doing business'?
+= 23
+~ In the World Bank's Doing Business 2019 report, India rose from 100th to 77th place, a jump of 23 ranks.
+
+Q 132 | eco | National Income & Growth
+National Income refers to
+= Current market value of all final goods and services produced in a year
+~ National income counts only final goods and services, to avoid double counting of intermediate goods, produced over a year.
+
+Q 133 | eco | Money, Banking & Inflation
+The primary inflation measure is
+= Wholesale Price Index
+~ The official key gives WPI, long India's headline inflation measure. Since 2014 the RBI has used CPI (Combined) for its inflation target.
+
+Q 134 | eco | Planning & Development
+The Indian Economy is
+= Mixed
+~ India follows a mixed economy in which the public and private sectors coexist, a model adopted with the early Five-Year Plans.
+
+Q 135 | eco | National Income & Growth
+In 2017–18, what was the sectoral share of the services sector in GDP at current prices?
+= 54·4%
+~ The Economic Survey put the services sector at about 54% of India's gross value added in 2017–18, the largest of the three sectors.
+
+Q 136 | eco | AP Economy
+According to the 2011 Census, the child sex ratio (0–6 years) in Andhra Pradesh is
+= 940
+~ The official key gives 940 girls per 1,000 boys in the 0–6 age group for Andhra Pradesh in Census 2011.
+
+Q 137 | eco | AP Economy
+The "Pedarikampai Gelupu" portal of the Andhra Pradesh Government is the common platform for
+= Welfare Corporations
+~ The portal brought the loan and subsidy schemes of the State's welfare corporations onto a single online platform.
+
+Q 138 | eco | AP Economy
+The 'NTR Videsi Vidya Adarana' scheme of the Andhra Pradesh Government is meant for students of which category?
+= Backward Classes
+~ The scheme gave financial help to Backward Classes students for higher studies abroad.
+
+Q 139 | eco | AP Economy
+What is the flagship programme launched by the Andhra Pradesh Government for the welfare of artisans?
+= Adarana
+~ Adarana supplied subsidised modern tools and equipment to traditional artisans of the backward classes.
+
+Q 140 | eco | AP Economy
+'Pasupu Kumkuma' is meant for providing one-time financial assistance to
+= Self-Help Group (SHG) members
+~ Pasupu Kumkuma gave a one-time grant to women members of DWCRA self-help groups.
+
+Q 141 | eco | AP Economy
+The smart common platform created for all scholarships and education-related schemes of the Andhra Pradesh Government is labelled as
+= Jnanabhumi
+~ Jnanabhumi was the online portal for scholarships, fee reimbursement and other education schemes.
+
+Q 142 | eco | AP Economy
+Under Chandranna Pelli Kanuka, the amount of marriage incentive announced for SC inter-caste marriage is (in ₹)
+= 75,000
+~ Chandranna Pelli Kanuka gave marriage assistance to weaker sections, with ₹75,000 for SC inter-caste marriages.
+
+Q 143 | eco | AP Economy
+In Andhra Pradesh, what is the percentage of net area sown to the total geographical area of the State as of 2017–18?
+= 37·29%
+~ The Socio-Economic Survey put AP's net sown area at about 37% of its geographical area in 2017–18.
+
+Q 144 | eco | AP Economy
+How many SEZs (Special Economic Zones) does the State of Andhra Pradesh have?
+= 19
+~ The official key gives 19 operational SEZs in Andhra Pradesh at the time.
+
+Q 145 | eco | AP Economy
+Name the acronym of the Andhra Pradesh Government's strategy to transform the economy.
+= VIADUCT
+~ VIADUCT was the acronym for the State's development strategy under Vision 2029.
+
+Q 147 | eco | AP Economy
+In terms of rank on GSDP growth rates (2017–18), Andhra Pradesh's position in India is
+= 1
+~ AP reported GSDP growth of about 11% in 2017–18, the highest among major states.
+
+Q 148 | eco | AP Economy
+The best performing district in Andhra Pradesh in terms of Gross District Domestic Product (at current prices) in 2017–18 is
+= Krishna
+~ Krishna district had the highest GDDP in the State in 2017–18.
+
+Q 149 | pol | AP Reorganisation Act, 2014
+According to the white paper released by the State Government, how many assurances in the main sections of the Andhra Pradesh Reorganisation Act, 2014 are fully implemented?
+= 0
+~ The State's 2018 white paper said that none of the assurances in the Act's main sections had been fully implemented.

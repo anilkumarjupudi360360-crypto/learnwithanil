@@ -1,0 +1,1004 @@
+<title>{{TITLE}}</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Free APPSC Group 2 previous year questions (PYQs) with official final-key answers and explanations: Screening 2024, Mains 2025 Paper I & II, and 2019 papers. Topic-wise quizzes, mistakes notebook and progress heatmap by Learn with Anil.">
+{{SEO_HEAD}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: sticky app bar + one 1120px column; views swap inside <main>. Ink-blue band for the hero; OMR answer-bubbles are the recurring motif. */
+:root{
+  --bg:#F3F6FB; --surface:#FFFFFF; --surface-2:#EAF0F9; --ink:#0D1830; --muted:#55627C; --line:#D6DFEC;
+  --accent:#1846C7; --accent-ink:#FFFFFF; --accent-soft:#E2EAFC; --accent-text:#1440B8;
+  --band:#0C2266; --band-ink:#EEF3FF; --band-muted:#AFC1EE; --band-line:rgba(255,255,255,.16);
+  --good:#12804A; --good-soft:#DDF3E7; --bad:#C2352C; --bad-soft:#FBE3E0; --warn:#9A620B; --warn-soft:#FBEFD6; --none-soft:#EDF1F7;
+  --shadow:0 1px 2px rgba(13,24,48,.06),0 8px 22px rgba(13,24,48,.06);
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --r:12px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0A1020; --surface:#111A2E; --surface-2:#17223A; --ink:#E5ECF8; --muted:#9AA8C3; --line:#26334F;
+  --accent:#6F95FF; --accent-ink:#06102A; --accent-soft:#1A2A52; --accent-text:#9DB7FF;
+  --band:#0F1F4E; --band-ink:#EEF3FF; --band-muted:#A3B6E8; --band-line:rgba(255,255,255,.13);
+  --good:#41C080; --good-soft:#123426; --bad:#F2766D; --bad-soft:#3B1A1A; --warn:#E6A846; --warn-soft:#3A2C12; --none-soft:#16203A;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 22px rgba(0,0,0,.25); color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0A1020; --surface:#111A2E; --surface-2:#17223A; --ink:#E5ECF8; --muted:#9AA8C3; --line:#26334F;
+  --accent:#6F95FF; --accent-ink:#06102A; --accent-soft:#1A2A52; --accent-text:#9DB7FF;
+  --band:#0F1F4E; --band-ink:#EEF3FF; --band-muted:#A3B6E8; --band-line:rgba(255,255,255,.13);
+  --good:#41C080; --good-soft:#123426; --bad:#F2766D; --bad-soft:#3B1A1A; --warn:#E6A846; --warn-soft:#3A2C12; --none-soft:#16203A;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 22px rgba(0,0,0,.25); color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{margin:0;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+button,input,select{font:inherit;color:inherit}
+a{color:var(--accent-text)}
+img{max-width:100%}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+[hidden]{display:none!important}
+
+/* App bar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:18px;min-height:62px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand-mark{width:36px;height:36px;border-radius:50%;border:2.5px solid var(--accent);display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:14px;color:var(--accent-text);position:relative;letter-spacing:-.02em}
+.brand-mark::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--accent);opacity:.14}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-text b{font-family:var(--f-display);font-size:18px;font-weight:800;letter-spacing:-.01em}
+.brand-text span{font-family:var(--f-mono);font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.nav{display:flex;gap:2px;overflow-x:auto;flex:1;min-width:0;scrollbar-width:none;justify-content:flex-end}
+.nav::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px;padding:8px 10px;border-radius:8px;display:flex;align-items:center;gap:6px}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a[aria-current="page"]{color:var(--accent-text);background:var(--accent-soft)}
+.nav .count{font-family:var(--f-mono);font-size:11px;background:var(--bad);color:#fff;border-radius:999px;padding:0 6px;line-height:18px}
+@media (max-width:980px){
+  .topbar .wrap{gap:4px;padding-block:8px 0}
+  .nav{flex-basis:100%;justify-content:flex-start;padding-bottom:6px}
+}
+
+main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
+.view{display:flex;flex-direction:column;gap:28px}
+.page-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px}
+.page-head h1{font-size:clamp(26px,4vw,34px);font-weight:800}
+.page-head p{color:var(--muted);max-width:62ch;margin-top:6px}
+
+/* Buttons & controls */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:10px;padding:10px 18px;font-weight:700;font-size:15px;border:1.5px solid transparent;cursor:pointer;text-decoration:none;line-height:1.2;transition:background .15s,border-color .15s,transform .1s}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{filter:brightness(1.08)}
+.btn-secondary{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.btn-secondary:hover{border-color:var(--accent)}
+.btn-ghost{background:transparent;color:var(--accent-text);padding-inline:10px}
+.btn-ghost:hover{background:var(--accent-soft)}
+.btn-good{background:var(--good);color:#fff}
+.btn-bad{background:var(--bad);color:#fff}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none}
+.btn-sm{padding:7px 12px;font-size:14px;border-radius:8px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:600;cursor:pointer;color:var(--ink);text-decoration:none}
+.chip .n{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-weight:500}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-text)}
+.chip[aria-pressed="true"] .n{color:var(--accent-text)}
+.chip[disabled]{opacity:.45;cursor:not-allowed}
+.seg{display:inline-flex;background:var(--surface-2);border-radius:11px;padding:4px;gap:4px;flex-wrap:wrap}
+.seg button{border:0;background:transparent;border-radius:8px;padding:8px 14px;font-weight:700;font-size:14px;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--accent-text);box-shadow:var(--shadow)}
+.seg button[disabled]{opacity:.45;cursor:not-allowed}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.pad{padding:20px}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;padding:2px 9px;border-radius:999px;background:var(--surface-2);color:var(--muted);white-space:nowrap}
+.pill.blue{background:var(--accent-soft);color:var(--accent-text)}
+.pill.good{background:var(--good-soft);color:var(--good)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+
+/* Hero */
+.hero{background:var(--band);color:var(--band-ink);position:relative;overflow:hidden;margin-top:-28px}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(circle,transparent 0 6px,var(--band-line) 6.5px 8px,transparent 8.5px);
+  background-size:28px 28px;background-position:right 12px top 14px;
+  -webkit-mask-image:linear-gradient(90deg,transparent 40%,#000 80%);mask-image:linear-gradient(90deg,transparent 40%,#000 80%)}
+.hero .wrap{position:relative;z-index:1;padding-block:44px 40px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:36px;align-items:center}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:24px}}
+.hero-copy{display:flex;flex-direction:column;gap:18px;min-width:0}
+.hero h1{font-size:clamp(30px,5vw,50px);font-weight:800;max-width:17ch;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--band-muted)}
+.hero p{max-width:56ch;color:var(--band-muted);font-size:18px}
+.hero .btn-primary{background:var(--band-ink);color:var(--band)}
+.hero .btn-secondary{background:transparent;color:var(--band-ink);border-color:var(--band-line)}
+.hero .btn-secondary:hover{border-color:var(--band-ink)}
+.hero .eyebrow{color:var(--band-muted)}
+.mentor{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px}
+.mentor .ph{width:210px;height:210px;max-width:100%;border-radius:50%;padding:6px;border:2.5px solid var(--band-line);position:relative}
+.mentor .ph img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;background:var(--band)}
+.mentor .ph::after{content:"";position:absolute;right:10px;bottom:14px;width:34px;height:34px;border-radius:50%;background:var(--band-ink);box-shadow:0 0 0 5px var(--band)}
+.mentor b{font-family:var(--f-display);font-size:20px;font-weight:800;color:var(--band-ink)}
+.mentor span{color:var(--band-muted);font-size:14.5px;line-height:1.4}
+@media (max-width:860px){.mentor{flex-direction:row;text-align:left}.mentor .ph{width:96px;height:96px;flex-shrink:0;padding:4px}.mentor .ph::after{display:none}}
+
+.figures{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+@media (max-width:700px){.figures{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{background:var(--surface);padding:16px 18px}
+.figure .v{font-family:var(--f-display);font-weight:800;font-size:30px;font-variant-numeric:tabular-nums;line-height:1.1}
+.figure .k{font-size:14px;color:var(--muted)}
+.section{display:flex;flex-direction:column;gap:14px}
+.section-title{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.section-title h2{font-size:22px;font-weight:800}
+
+/* Paper cards */
+.papers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:980px){.papers{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.papers{grid-template-columns:1fr}}
+.paper{display:flex;flex-direction:column;gap:12px;padding:18px 20px}
+.paper .yr{font-family:var(--f-mono);font-size:13px;color:var(--accent-text);font-weight:600}
+.paper h3{font-size:19px;font-weight:800}
+.nw{white-space:nowrap}
+.paper p{color:var(--muted);font-size:14.5px}
+.paper .meta{display:flex;flex-wrap:wrap;gap:6px}
+.paper .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px}
+.subjects{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.subj-card{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px;text-align:left;cursor:pointer;color:var(--ink);font-weight:700;font-size:15.5px}
+.subj-card:hover{border-color:var(--accent);color:var(--accent-text)}
+.subj-card .mono{font-size:13px;color:var(--muted);font-weight:500}
+
+.features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:700px){.features{grid-template-columns:1fr}}
+.feature{display:flex;gap:16px;padding:20px;text-decoration:none;color:var(--ink);transition:border-color .15s}
+.feature:hover{border-color:var(--accent)}
+.feature .ic{width:44px;height:44px;flex-shrink:0;border-radius:10px;background:var(--accent-soft);color:var(--accent-text);display:grid;place-items:center}
+.feature h3{font-size:18px;font-weight:700;margin-bottom:3px}
+.feature p{color:var(--muted);font-size:15px}
+.hist{list-style:none;margin:0;padding:0}
+.hist li{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:16px;align-items:center;padding:12px 18px;border-top:1px solid var(--line)}
+.hist li:first-child{border-top:0}
+.hist .t{font-weight:600;min-width:0;overflow-wrap:anywhere}
+.hist .d{font-size:13px;color:var(--muted)}
+.faq{display:flex;flex-direction:column}
+.faq details{border-top:1px solid var(--line);padding:14px 20px}
+.faq details:first-child{border-top:0}
+.faq summary{cursor:pointer;font-weight:700;font-size:16px}
+.faq details p{color:var(--muted);margin-top:8px;max-width:75ch}
+
+/* About */
+.about{display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;padding:24px;align-items:start}
+@media (max-width:760px){.about{grid-template-columns:1fr}}
+.about img{width:100%;max-width:260px;aspect-ratio:1;object-fit:cover;border-radius:16px;display:block}
+.about h2{font-size:28px;font-weight:800}
+.about .role{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-text);margin-top:4px}
+.about .bio{margin-top:14px;max-width:68ch;display:flex;flex-direction:column;gap:10px}
+.about dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:18px 0 0}
+.about dl div{background:var(--surface-2);border-radius:10px;padding:10px 12px}
+.about dt{font-family:var(--f-display);font-size:22px;font-weight:800}
+.about dd{margin:0;font-size:13.5px;color:var(--muted)}
+.handle{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:16px}
+.handle code{font-family:var(--f-mono);background:var(--surface-2);padding:6px 10px;border-radius:8px;font-size:14px;user-select:all}
+
+/* Builder */
+.builder{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;align-items:start}
+@media (max-width:900px){.builder{grid-template-columns:1fr}}
+.step{padding:20px;display:flex;flex-direction:column;gap:14px}
+.step-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.step-h h2{font-size:18px;font-weight:700}
+.subj{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:10px}
+.subj:first-of-type{border-top:0;padding-top:0}
+.subj-h{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.subj-h label{display:flex;align-items:center;gap:10px;font-weight:700;cursor:pointer}
+.subj-h input{width:18px;height:18px;accent-color:var(--accent)}
+.summary{position:sticky;top:calc(env(safe-area-inset-top,0px) + 80px);padding:20px;display:flex;flex-direction:column;gap:14px}
+.summary .big{font-family:var(--f-display);font-size:44px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.summary dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;font-size:14px}
+.summary dt{color:var(--muted)}
+.summary dd{margin:0;text-align:right;font-weight:600}
+.modehelp{font-size:14px;color:var(--muted)}
+
+/* Quiz */
+.player{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:24px;align-items:start}
+@media (max-width:900px){.player{grid-template-columns:1fr}}
+.qbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.qbar h1{font-size:20px;font-weight:800}
+.progress{height:6px;background:var(--surface-2);border-radius:999px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .25s}
+.timer{font-family:var(--f-mono);font-weight:600;font-size:15px;padding:5px 11px;border-radius:8px;background:var(--surface-2)}
+.timer.low{background:var(--bad-soft);color:var(--bad)}
+.qcard{padding:24px;display:flex;flex-direction:column;gap:16px}
+@media (max-width:600px){.qcard{padding:18px}}
+.qhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.qmeta{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.qnum{font-family:var(--f-mono);font-weight:600;font-size:14px;color:var(--accent-text)}
+.qtext{font-size:17.5px;font-weight:600;line-height:1.55;white-space:pre-line;overflow-wrap:anywhere}
+.qimg{max-width:100%;border-radius:8px;background:#fff;padding:6px;border:1px solid var(--line);align-self:flex-start}
+.opts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.opt{width:100%;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;cursor:pointer;font-size:16.5px;color:var(--ink)}
+.opt:hover:not([disabled]){border-color:var(--accent)}
+.opt[disabled]{cursor:default}
+.bub{width:30px;height:30px;border-radius:50%;border:2px solid var(--muted);display:grid;place-items:center;font-family:var(--f-mono);font-weight:600;font-size:13px;color:var(--muted);flex-shrink:0}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.opt[aria-pressed="true"] .bub{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.opt.is-right{border-color:var(--good);background:var(--good-soft)}
+.opt.is-right .bub{background:var(--good);border-color:var(--good);color:#fff}
+.opt.is-wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.is-wrong .bub{background:var(--bad);border-color:var(--bad);color:#fff}
+.opt .tag{font-size:12.5px;font-weight:700}
+.opt > span:nth-child(2){min-width:0;overflow-wrap:anywhere}
+.answer,.why p{overflow-wrap:anywhere}
+.opt.is-right .tag{color:var(--good)}
+.opt.is-wrong .tag{color:var(--bad)}
+.recall-box{border:1.5px dashed var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.answer{border:1.5px solid var(--good);background:var(--good-soft);border-radius:10px;padding:12px 14px;font-weight:700;font-size:16.5px;width:100%}
+.answer small{display:block;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--good);font-weight:600;margin-bottom:2px}
+.why{border-left:3px solid var(--accent);background:var(--surface-2);border-radius:0 10px 10px 0;padding:14px 16px;font-size:16px}
+.why h4{font-family:var(--f-body);font-size:14px;font-weight:700;margin-bottom:4px;color:var(--accent-text)}
+.verdict{font-family:var(--f-display);font-weight:800;font-size:18px}
+.verdict.good{color:var(--good)} .verdict.bad{color:var(--bad)} .verdict.skip{color:var(--warn)}
+.qnav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.iconbtn{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:14px;font-weight:600;color:var(--muted)}
+.iconbtn[aria-pressed="true"]{color:var(--accent-text);border-color:var(--accent);background:var(--accent-soft)}
+.iconbtn svg{width:16px;height:16px}
+.palette{padding:18px;display:flex;flex-direction:column;gap:14px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 80px)}
+.palette h3{font-size:16px;font-weight:700}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(36px,1fr));gap:8px;max-height:320px;overflow:auto;padding:3px}
+.pb{aspect-ratio:1;max-width:100%;border-radius:50%;border:2px solid var(--line);background:var(--surface);font-family:var(--f-mono);font-size:12.5px;font-weight:600;cursor:pointer;color:var(--muted);display:grid;place-items:center;padding:0}
+.pb.ans{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.pb.right{background:var(--good);border-color:var(--good);color:#fff}
+.pb.wrong{background:var(--bad);border-color:var(--bad);color:#fff}
+.pb.mark{box-shadow:0 0 0 3px var(--warn-soft);border-color:var(--warn)}
+.pb.cur{outline:2.5px solid var(--ink);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:50%;display:inline-block;border:2px solid var(--line)}
+.confirm{border:1.5px solid var(--warn);background:var(--warn-soft);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:12px}
+
+/* Result */
+.score{display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center;padding:24px}
+@media (max-width:640px){.score{grid-template-columns:1fr}}
+.ring{width:132px;height:132px;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .lbl{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+.ring .lbl b{font-family:var(--f-display);font-size:30px;font-weight:800;display:block;line-height:1;font-variant-numeric:tabular-nums}
+.ring .lbl span{font-size:12px;color:var(--muted)}
+.tally{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.tally{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tally div{border-radius:10px;padding:10px 12px;background:var(--surface-2)}
+.tally b{display:block;font-family:var(--f-display);font-size:24px;font-weight:800;font-variant-numeric:tabular-nums}
+.tally span{font-size:13px;color:var(--muted)}
+.tally .g b{color:var(--good)} .tally .r b{color:var(--bad)} .tally .s b{color:var(--warn)}
+.tbl-wrap{overflow-x:auto}
+table.tbl{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+.tbl th{text-align:left;font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:500;padding:10px 16px;border-bottom:1px solid var(--line)}
+.tbl td{padding:11px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+.tbl tr:last-child td{border-bottom:0}
+.tbl .num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:right}
+.bar{height:8px;border-radius:999px;background:var(--surface-2);overflow:hidden;min-width:90px}
+.bar i{display:block;height:100%;border-radius:999px}
+
+.list{display:flex;flex-direction:column;gap:14px}
+details.ans summary{cursor:pointer;font-weight:700;color:var(--accent-text);list-style:none;display:inline-flex;align-items:center;gap:6px}
+details.ans summary::-webkit-details-marker{display:none}
+details.ans summary::before{content:"+";font-family:var(--f-mono);width:18px;height:18px;border-radius:50%;border:1.5px solid currentColor;display:grid;place-items:center;font-size:12px;line-height:1}
+details.ans[open] summary::before{content:"−"}
+details.ans[open] summary{margin-bottom:12px}
+details.ans[open]{display:flex;flex-direction:column;gap:12px}
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.search{flex:1;min-width:200px;display:flex;align-items:center;gap:8px;border:1.5px solid var(--line);background:var(--surface);border-radius:10px;padding:0 12px}
+.search input{border:0;background:transparent;outline:none;padding:10px 0;width:100%;min-width:0}
+.search:focus-within{border-color:var(--accent)}
+select.sel{border:1.5px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 12px;font-weight:600;max-width:100%}
+.empty{padding:36px 24px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.empty .bubbles{display:flex;gap:8px}
+.empty .bubbles i{width:22px;height:22px;border-radius:50%;border:2px solid var(--line)}
+.empty .bubbles i.f{background:var(--accent);border-color:var(--accent)}
+.empty h3{font-size:20px;font-weight:800}
+.empty p{color:var(--muted);max-width:48ch}
+.steps3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:s;margin:0;padding:0}
+@media (max-width:760px){.steps3{grid-template-columns:1fr}}
+.steps3 li{list-style:none;padding:18px;counter-increment:s;display:flex;flex-direction:column;gap:6px}
+.steps3 li::before{content:counter(s);font-family:var(--f-mono);font-weight:600;width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:13px}
+.steps3 h3{font-size:17px;font-weight:700}
+.steps3 p{font-size:15px;color:var(--muted)}
+.recall{display:inline-flex;gap:4px;align-items:center}
+.recall i{width:10px;height:10px;border-radius:50%;border:1.5px solid var(--good)}
+.recall i.on{background:var(--good)}
+.heat-exam{display:flex;flex-direction:column;gap:14px}
+.heat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+.tile{border:1.5px solid transparent;border-radius:10px;padding:12px 14px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:6px;min-height:96px;color:var(--ink);background:var(--none-soft)}
+.tile:hover:not([disabled]){border-color:var(--accent)}
+.tile[disabled]{opacity:.5;cursor:default}
+.tile .tn{font-weight:700;font-size:15px;line-height:1.3}
+.tile .tv{font-family:var(--f-display);font-weight:800;font-size:24px;font-variant-numeric:tabular-nums;margin-top:auto}
+.tile .ts{font-size:12.5px;color:var(--muted)}
+.tile.h-good{background:var(--good-soft)} .tile.h-good .tv{color:var(--good)}
+.tile.h-warn{background:var(--warn-soft)} .tile.h-warn .tv{color:var(--warn)}
+.tile.h-bad{background:var(--bad-soft)} .tile.h-bad .tv{color:var(--bad)}
+.tile.h-none .tv{color:var(--muted);font-size:15px;font-family:var(--f-body);font-weight:600}
+.hlegend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;color:var(--muted);align-items:center}
+.hlegend span{display:inline-flex;gap:6px;align-items:center}
+.hlegend i{width:14px;height:14px;border-radius:4px;display:inline-block}
+
+footer.foot{border-top:1px solid var(--line);background:var(--surface)}
+footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;z-index:50;box-shadow:var(--shadow);max-width:calc(100% - 32px)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<!--BODY-->
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Learn with Anil home">
+      <span class="brand-mark" aria-hidden="true">LA</span>
+      <span class="brand-text"><b>Learn with Anil</b><span>APPSC Group-II PYQs</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#home" data-v="home">Home</a>
+      <a href="#papers" data-v="papers">Previous Papers</a>
+      <a href="#practice" data-v="practice">Create Quiz</a>
+      <a href="#bank" data-v="bank">Question Bank</a>
+      <a href="#mistakes" data-v="mistakes">Mistakes <span class="count" id="mcount" hidden></span></a>
+      <a href="#smart" data-v="smart">Smart Quiz</a>
+      <a href="#bookmarks" data-v="bookmarks">Bookmarks</a>
+      <a href="#heatmap" data-v="heatmap">Heatmap</a>
+      <a href="#about" data-v="about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div id="home-static" class="view">
+  <section class="hero"><div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">APPSC Group-II · Screening &amp; Mains · 2019–2025</p>
+      <h1>APPSC Group-II previous questions, <em>with answers.</em></h1>
+      <p>{{TOTAL}} questions from {{NPAPERS}} official papers, answered from APPSC's final keys and explained. Practise them by topic, find your weak areas and revise your mistakes.</p>
+      <div class="row"><a class="btn btn-primary" href="#practice">Create a quiz</a><a class="btn btn-secondary" href="#papers">See previous papers</a></div>
+    </div>
+    <a class="mentor" href="#about" style="color:inherit;text-decoration:none">
+      <span class="ph"><img src="{{PHOTO}}" alt="Jupudi Anil Kumar" width="210" height="210"></span>
+      <span><b>Jupudi Anil Kumar</b><br><span>Polity faculty &amp; mentor · 1000+ hours of civil-services teaching</span></span>
+    </a>
+  </div></section>
+
+  <section class="wrap section">
+    <div class="figures">
+      <div class="figure"><div class="v">{{TOTAL}}</div><div class="k">Previous year questions</div></div>
+      <div class="figure"><div class="v">{{NPAPERS}}</div><div class="k">Official APPSC papers</div></div>
+      <div class="figure"><div class="v" id="hf-acc">—</div><div class="k">Your accuracy so far</div></div>
+      <div class="figure"><div class="v" id="hf-mis">0</div><div class="k">In your mistakes notebook</div></div>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2>Previous papers</h2><a class="btn btn-ghost btn-sm" href="#papers">All papers</a></div>
+    <div class="papers">{{HOME_PAPERS}}</div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2>Practise by subject</h2><span class="muted" style="font-size:14px">Pick a subject to build a quiz from every paper</span></div>
+    <div class="subjects">{{HOME_SUBJECTS}}</div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2>How the portal works</h2></div>
+    <div class="features">
+      <a class="card feature" href="#practice"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5" fill="currentColor"/><path d="M11 7h9M11 17h9" stroke-linecap="round"/></svg></span><span><h3>Topic-wise quiz</h3><p>Choose papers, subjects and topics, the number of questions, and practice or timed-test mode.</p></span></a>
+      <a class="card feature" href="#mistakes"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 3h11l3 3v15H5z"/><path d="M9 10l6 6M15 10l-6 6"/></svg></span><span><h3>Mistakes notebook</h3><p>Every question you get wrong or skip is filed automatically, sorted by subject.</p></span></a>
+      <a class="card feature" href="#smart"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/><path d="M9 12l2 2 4-4"/></svg></span><span><h3>Smart quiz</h3><p>Re-attempt your mistakes from memory. Two correct answers in a row clears a question.</p></span></a>
+      <a class="card feature" href="#heatmap"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2" opacity=".35"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2" opacity=".6"/></svg></span><span><h3>Memory heatmap</h3><p>Topic-wise accuracy in one grid, so your weak areas show up at a glance.</p></span></a>
+    </div>
+  </section>
+
+  <section class="wrap section" id="recent" hidden></section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2>Frequently asked questions</h2></div>
+    <div class="card faq">{{FAQ}}</div>
+  </section>
+</div>
+
+<div id="view" class="view" hidden></div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Questions and answers are from APPSC's official final keys. Explanations by Learn with Anil. Not affiliated with APPSC.</span>
+    <span id="resetBox"><button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button></span>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script type="application/json" id="lwa-data">{{DATA}}</script>
+<script>
+(function(){
+"use strict";
+const DATA = JSON.parse(document.getElementById("lwa-data").textContent);
+const PHOTO = "{{PHOTO}}";
+const KEY = "lwa-appsc-g2-v1", PKEY = "lwa-appsc-g2-prefs-v1";
+const LET = ["A","B","C","D"];
+const QS = DATA.questions, PAPERS = DATA.papers, SUBJECTS = DATA.subjects;
+const QMAP = Object.fromEntries(QS.map(q=>[q.id,q]));
+const PMAP = Object.fromEntries(PAPERS.map(p=>[p.id,p]));
+const SUBJ = Object.fromEntries(SUBJECTS.map(s=>[s.id,s]));
+const isMCQ = q => Array.isArray(q.o);
+
+/* ---------- storage (this browser only) ---------- */
+function readLS(k, d){ try{ const v = localStorage.getItem(k); if(v){ const o = JSON.parse(v); if(o && typeof o==="object") return Object.assign(d, o); } }catch(e){} return d; }
+function writeLS(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+const blank = ()=>({qs:{}, mistakes:{}, bm:{}, history:[]});
+let S = readLS(KEY, blank());
+let P = readLS(PKEY, {papers:null, topics:null, count:10, mode:"practice", recall:true});
+const save = ()=>writeLS(KEY, S), savePrefs = ()=>writeLS(PKEY, P);
+
+let QZ = null, LAST = null, timer = null, bankLimit = 20;
+let UI = {bankQ:"", bankPaper:"all", bankSubj:"all", bankTopic:"all", mFilter:"all", rFilter:"all", smartSubj:"all", smartCount:10, confirmSubmit:false};
+
+/* ---------- helpers ---------- */
+const $ = (s, r=document)=>r.querySelector(s);
+const esc = s=>String(s).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const tkey = q=>q.s+"|"+q.t;
+const shuffle = a=>{ a=a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+const pct = (a,b)=>b? Math.round(100*a/b) : null;
+const fmtTime = s=>{ s=Math.max(0,Math.round(s)); const h=Math.floor(s/3600), m=Math.floor((s%3600)/60), r=s%60; return (h? h+":"+String(m).padStart(2,"0") : m)+":"+String(r).padStart(2,"0"); };
+const fmtDate = t=>new Date(t).toLocaleDateString(undefined,{day:"numeric",month:"short"})+", "+new Date(t).toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
+const mistakeIds = ()=>Object.keys(S.mistakes).filter(id=>QMAP[id]);
+const bmIds = ()=>Object.keys(S.bm).filter(id=>QMAP[id] && S.bm[id]);
+const isCorrect = (q,a)=> isMCQ(q) ? (a!==undefined && q.a.includes(a)) : a==="R";
+function toast(msg){ const t=$("#toast"); t.textContent=msg; t.hidden=false; clearTimeout(toast._t); toast._t=setTimeout(()=>{t.hidden=true;},2400); }
+const ICON = {
+  bm:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
+  bmOn:'<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>'
+};
+
+/* ---------- stats ---------- */
+function overall(){
+  let att=0,c=0,w=0,k=0;
+  for(const id in S.qs){ if(!QMAP[id]) continue; const x=S.qs[id]; att++; c+=x.c||0; w+=x.w||0; k+=x.k||0; }
+  return {att,c,w,k,acc:pct(c,c+w+k)};
+}
+function topicStats(){
+  const m={};
+  QS.forEach(q=>{ const key=tkey(q); const e=m[key]||(m[key]={n:0,seen:0,c:0,w:0,k:0}); e.n++; const x=S.qs[q.id]; if(x){ e.seen++; e.c+=x.c||0; e.w+=x.w||0; e.k+=x.k||0; } });
+  return m;
+}
+const band = acc=>acc===null? "none" : acc>=75? "good" : acc>=50? "warn" : "bad";
+
+/* ---------- routing ---------- */
+const VIEWS = ["home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about"];
+let current = "home";
+function go(v){ if(location.hash.slice(1)!==v){ location.hash=v; } else { render(); } }
+function route(){
+  let v = location.hash.slice(1);
+  if(!VIEWS.includes(v)) v="home";
+  if(v==="quiz" && !QZ) v = LAST? "result" : "practice";
+  if(v==="result" && !LAST) v="home";
+  return v;
+}
+function render(){
+  const v = route(); const changed = v!==current; current = v;
+  if(v!=="quiz") stopTimer();
+  document.querySelectorAll("#nav a").forEach(a=>{ const on = a.dataset.v===v || ((v==="quiz"||v==="result")&&a.dataset.v==="practice"); if(on) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+  const mc = mistakeIds().length, mEl=$("#mcount"); mEl.hidden = !mc; mEl.textContent = mc;
+  const home = $("#home-static"), host = $("#view");
+  if(v==="home"){ home.hidden=false; host.hidden=true; host.innerHTML=""; renderHomeDynamic(); }
+  else {
+    home.hidden=true; host.hidden=false;
+    host.innerHTML = ({papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout})[v]();
+    host.querySelectorAll("[data-mixed]").forEach(el=>{ el.indeterminate = true; });
+  }
+  if(v==="quiz") startTimer();
+  if(changed) window.scrollTo(0,0);
+}
+window.addEventListener("hashchange", render);
+
+/* ---------- shared pieces ---------- */
+function bmBtn(id){ const on=!!S.bm[id]; return `<button class="iconbtn" type="button" data-act="bm" data-id="${id}" aria-pressed="${on}" title="${on?"Remove bookmark":"Bookmark this question"}">${on?ICON.bmOn:ICON.bm}<span>${on?"Saved":"Save"}</span></button>`; }
+function tags(q){ const p=PMAP[q.p]; return `<span class="pill blue">${esc(p.short)}</span><span class="pill">${esc(SUBJ[q.s].name)}</span><span class="pill">${esc(q.t)}</span>${isMCQ(q)?"":'<span class="pill warn">Quick recall</span>'}`; }
+function stemHTML(q){ return `<p class="qtext">${esc(q.q)}</p>` + (q.img? `<img class="qimg" src="${q.img}" alt="Figure for this question">` : ""); }
+function answerText(q){ return isMCQ(q) ? q.a.map(i=>`(${LET[i]}) ${q.o[i]}`).join("  or  ") : q.ans; }
+function answerBox(q){ return `<div class="answer"><small>Official answer</small>${esc(answerText(q))}</div>`; }
+function whyHTML(q){ return q.w? `<div class="why"><h4>Explanation</h4><p>${esc(q.w)}</p></div>` : ""; }
+function optsStatic(q, chosen, reveal){
+  return `<ul class="opts">${q.o.map((o,i)=>{
+    let cls="", tag="";
+    const right = q.a.includes(i);
+    if(reveal && right){ cls="is-right"; tag = chosen===i? "Your answer · correct" : "Correct answer"; }
+    else if(reveal && chosen===i){ cls="is-wrong"; tag="Your answer"; }
+    return `<li><div class="opt ${cls}"><span class="bub">${LET[i]}</span><span>${esc(o)}</span><span class="tag">${tag}</span></div></li>`;
+  }).join("")}</ul>`;
+}
+function reviewCard(q, n, opts={}){
+  const {chosen, hideAnswer=false, extra=""} = opts;
+  const mcq = isMCQ(q);
+  const reveal = !hideAnswer;
+  const body = mcq ? optsStatic(q, chosen, reveal) : "";
+  const ansBlock = hideAnswer
+    ? `<details class="ans"><summary>Show answer &amp; explanation</summary>${answerBox(q)}${whyHTML(q)}</details>`
+    : (mcq ? "" : answerBox(q)) + whyHTML(q);
+  return `<article class="card qcard">
+    <div class="qhead"><div class="qmeta">${n!=null?`<span class="qnum">Q${n}</span>`:""}${tags(q)}</div>${bmBtn(q.id)}</div>
+    ${extra}${stemHTML(q)}${body}${ansBlock}
+  </article>`;
+}
+function emptyHTML(title, body, actions){ return `<div class="card empty"><div class="bubbles" aria-hidden="true"><i></i><i class="f"></i><i></i><i></i></div><h3>${title}</h3><p>${body}</p>${actions?`<div class="row" style="justify-content:center">${actions}</div>`:""}</div>`; }
+function head(eyebrow, title, desc, right){ return `<div class="page-head"><div><p class="eyebrow">${eyebrow}</p><h1>${title}</h1>${desc?`<p>${desc}</p>`:""}</div>${right||""}</div>`; }
+
+/* ---------- home (static HTML + live numbers) ---------- */
+function renderHomeDynamic(){
+  const o = overall();
+  $("#hf-acc").textContent = o.acc===null? "—" : o.acc+"%";
+  $("#hf-mis").textContent = mistakeIds().length;
+  const r = $("#recent");
+  if(S.history.length){
+    r.hidden=false;
+    r.innerHTML = `<div class="section-title"><h2>Your recent quizzes</h2><a class="btn btn-ghost btn-sm" href="#heatmap">Open heatmap</a></div>
+      <ul class="card hist">${S.history.slice(0,5).map(h=>{ const p=pct(h.c,h.n), b=band(p); return `<li><div style="min-width:0"><div class="t">${esc(h.title)}</div><div class="d">${fmtDate(h.at)} · ${fmtTime(h.secs)}</div></div><span class="mono">${h.c}/${h.n}</span><span class="pill ${b==="none"?"":b}">${p}%</span></li>`; }).join("")}</ul>`;
+  } else { r.hidden=true; r.innerHTML=""; }
+}
+
+/* ---------- papers ---------- */
+function vPapers(){
+  const years = [...new Set(PAPERS.map(p=>p.year))].sort((a,b)=>b-a);
+  const card = p=>{
+    const done = QS.filter(q=>q.p===p.id && S.qs[q.id]).length;
+    return `<article class="card paper">
+      <span class="yr">${esc(p.held)} · ${esc(p.notif)}</span>
+      <h3>${esc(p.title).replace(/Group-II/g,'<span class="nw">Group-II</span>')}</h3>
+      <p>${esc(p.blurb)}</p>
+      <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
+      <div class="acts">
+        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">Practise in order</button>
+        ${p.fmt==="mcq"?`<button class="btn btn-secondary btn-sm" type="button" data-act="papertest" data-paper="${p.id}">Timed test · ${p.count} min</button>`:""}
+        <a class="btn btn-ghost btn-sm" href="papers/${p.slug}.html">Read with answers</a>
+      </div>
+    </article>`;
+  };
+  return `<div class="wrap view">
+    ${head("Previous papers","APPSC Group-II question papers","Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself.")}
+    ${years.map(y=>`<section class="section"><div class="section-title"><h2>${y}</h2></div><div class="papers">${PAPERS.filter(p=>p.year===y).map(card).join("")}</div></section>`).join("")}
+  </div>`;
+}
+
+/* ---------- builder ---------- */
+function selPapers(){ const all = PAPERS.map(p=>p.id); if(!Array.isArray(P.papers)) return new Set(all); return new Set(P.papers.filter(id=>all.includes(id))); }
+function allTopicKeys(){ return SUBJECTS.flatMap(s=>s.topics.map(t=>s.id+"|"+t)); }
+function curTopics(){ const all = allTopicKeys(); if(!Array.isArray(P.topics)) return new Set(all); return new Set(P.topics.filter(k=>all.includes(k))); }
+function paperPool(){ const ps=selPapers(); return QS.filter(q=>ps.has(q.p) && (P.recall || isMCQ(q))); }
+function pool(){ const tops=curTopics(); let pl = paperPool().filter(q=>tops.has(tkey(q))); if(P.mode==="test") pl = pl.filter(isMCQ); return pl; }
+function vPractice(){
+  const ps = selPapers(), tops = curTopics(), base = paperPool(), pl = pool();
+  const n = P.count==="all"? pl.length : Math.min(P.count, pl.length);
+  const cnt = {}; base.forEach(q=>{ const k=tkey(q); cnt[k]=(cnt[k]||0)+1; });
+  const subjBlock = s=>{
+    const keys = s.topics.map(t=>s.id+"|"+t).filter(k=>cnt[k]);
+    if(!keys.length) return "";
+    const on = keys.filter(k=>tops.has(k)).length, tot = keys.reduce((a,k)=>a+cnt[k],0);
+    return `<div class="subj">
+      <div class="subj-h"><label><input type="checkbox" id="sa-${s.id}" data-act="subjall" data-subj="${s.id}" ${on===keys.length?"checked":""} ${on>0&&on<keys.length?'data-mixed="1"':""}> ${esc(s.name)}</label><span class="mono muted" style="font-size:13px">${tot} Q</span></div>
+      <div class="row">${keys.map(k=>`<button type="button" class="chip" data-act="topic" data-key="${esc(k)}" aria-pressed="${tops.has(k)}">${esc(k.split("|")[1])} <span class="n">${cnt[k]}</span></button>`).join("")}</div>
+    </div>`;
+  };
+  const hasRecallSel = PAPERS.some(p=>ps.has(p.id) && p.fmt==="recall");
+  return `<div class="wrap view">
+    ${head("Create quiz","Build your own quiz","Choose papers and topics. Questions are drawn at random from what you select.")}
+    <div class="builder">
+      <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+        <section class="card step">
+          <div class="step-h"><h2>Papers</h2><div class="row"><button class="btn btn-ghost btn-sm" type="button" data-act="allpapers">Select all</button><button class="btn btn-ghost btn-sm" type="button" data-act="nopapers">Clear</button></div></div>
+          <div class="row">${PAPERS.map(p=>`<button type="button" class="chip" data-act="paper" data-paper="${p.id}" aria-pressed="${ps.has(p.id)}">${esc(p.short)} <span class="n">${p.count}</span></button>`).join("")}</div>
+          ${hasRecallSel?`<label class="row" style="gap:8px;font-size:14.5px;cursor:pointer"><input type="checkbox" id="recallToggle" data-act="recalltoggle" ${P.recall?"checked":""} style="width:18px;height:18px;accent-color:var(--accent)"> Include quick-recall questions from the 2019 answer-only keys</label>`:""}
+        </section>
+        <section class="card step">
+          <div class="step-h"><h2>Subjects &amp; topics</h2><div class="row"><button class="btn btn-ghost btn-sm" type="button" data-act="alltopics">Select all</button><button class="btn btn-ghost btn-sm" type="button" data-act="notopics">Clear</button></div></div>
+          ${SUBJECTS.map(subjBlock).join("") || `<p class="muted">Select at least one paper to see its topics.</p>`}
+        </section>
+        <section class="card step">
+          <div class="step-h"><h2>Questions &amp; mode</h2></div>
+          <div class="row">${[10,20,50,"all"].map(c=>`<button type="button" class="chip" data-act="count" data-count="${c}" aria-pressed="${P.count===c}">${c==="all"?"All matching":c+" questions"}</button>`).join("")}</div>
+          <div class="seg" role="group" aria-label="Mode">
+            <button type="button" data-act="mode" data-mode="practice" aria-pressed="${P.mode==="practice"}">Practice</button>
+            <button type="button" data-act="mode" data-mode="test" aria-pressed="${P.mode==="test"}">Timed test</button>
+          </div>
+          <p class="modehelp">${P.mode==="practice"?"Check each answer as you go and read the explanation straight away.":"One minute per question, as in the APPSC paper. Answers appear after you submit. Timed tests use only questions with all four options."}</p>
+        </section>
+      </div>
+      <aside class="card summary" aria-live="polite">
+        <p class="eyebrow">Your quiz</p>
+        <div><span class="big">${n}</span> <span class="muted">question${n===1?"":"s"}</span></div>
+        <dl>
+          <dt>Matching questions</dt><dd class="mono">${pl.length}</dd>
+          <dt>Papers</dt><dd class="mono">${ps.size}</dd>
+          <dt>Topics selected</dt><dd class="mono">${[...tops].filter(k=>cnt[k]).length}</dd>
+          <dt>Mode</dt><dd>${P.mode==="practice"?"Practice":"Timed test"}</dd>
+          ${P.mode==="test"?`<dt>Time allowed</dt><dd class="mono">${n} min</dd>`:""}
+        </dl>
+        <button class="btn btn-primary" type="button" data-act="start" ${n?"":"disabled"}>Start quiz</button>
+        ${n?"":`<p class="muted" style="font-size:14px">Select at least one paper and topic with questions to start.</p>`}
+      </aside>
+    </div>
+  </div>`;
+}
+function quizTitle(){
+  const tops=[...curTopics()], ps=[...selPapers()];
+  const subs=[...new Set(paperPool().filter(q=>curTopics().has(tkey(q))).map(q=>q.s))];
+  const base = ps.length===1? PMAP[ps[0]].short : ps.length===PAPERS.length? "All papers" : ps.length+" papers";
+  if(subs.length===1){ const tt = tops.filter(k=>k.startsWith(subs[0]+"|")); return base+" · "+(tt.length===1? tt[0].split("|")[1] : SUBJ[subs[0]].name); }
+  return base+" · "+subs.length+" subjects";
+}
+function startQuiz(ids, title, mode, source){
+  if(!ids.length) return;
+  QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: mode==="test"? ids.length*60 : 0};
+  UI.confirmSubmit = false;
+  go("quiz");
+}
+
+/* ---------- quiz player ---------- */
+function vQuiz(){
+  const q = QMAP[QZ.ids[QZ.i]], i = QZ.i, total = QZ.ids.length, chosen = QZ.ans[q.id], checked = !!QZ.chk[q.id], test = QZ.mode==="test", mcq = isMCQ(q);
+  const answered = Object.keys(QZ.ans).length;
+  let body = "", feedback = "", navR = "";
+  const last = i===total-1;
+  if(mcq){
+    body = `<ul class="opts">${q.o.map((o,j)=>{
+      let cls="", tag="";
+      if(!test && checked){ if(q.a.includes(j)){cls="is-right";tag=chosen===j?"Correct":"Correct answer";} else if(j===chosen){cls="is-wrong";tag="Your answer";} }
+      return `<li><button type="button" class="opt ${cls}" data-act="pick" data-i="${j}" aria-pressed="${chosen===j && !cls}" ${!test&&checked?"disabled":""}><span class="bub">${LET[j]}</span><span>${esc(o)}</span><span class="tag">${tag}</span></button></li>`;
+    }).join("")}</ul>`;
+    if(!test && checked){
+      feedback = (chosen===undefined? `<p class="verdict skip">Skipped. The answer is (${q.a.map(x=>LET[x]).join(" or ")}).</p>` : q.a.includes(chosen)? `<p class="verdict good">Correct.</p>` : `<p class="verdict bad">Not quite. The answer is (${q.a.map(x=>LET[x]).join(" or ")}).</p>`) + whyHTML(q);
+    }
+    if(test){
+      navR = `<button class="btn btn-secondary" type="button" data-act="markrev" aria-pressed="${!!QZ.mark[q.id]}">${QZ.mark[q.id]?"Unmark review":"Mark for review"}</button>` +
+             (last? `<button class="btn btn-primary" type="button" data-act="asksubmit">Submit test</button>` : `<button class="btn btn-primary" type="button" data-act="next">Save &amp; next</button>`);
+    } else if(!checked){
+      navR = `<button class="btn btn-secondary" type="button" data-act="skip">Skip</button><button class="btn btn-primary" type="button" data-act="check" ${chosen===undefined?"disabled":""}>Check answer</button>`;
+    } else {
+      navR = last? `<button class="btn btn-primary" type="button" data-act="finish">See results</button>` : `<button class="btn btn-primary" type="button" data-act="next">Next question</button>`;
+    }
+  } else {
+    if(!QZ.rev[q.id]){
+      body = `<div class="recall-box"><p class="muted">This 2019 key prints only the correct answer. Say your answer to yourself, then reveal it.</p><button class="btn btn-primary" type="button" data-act="reveal">Show answer</button></div>`;
+      navR = `<button class="btn btn-secondary" type="button" data-act="skip">Skip</button>`;
+    } else {
+      body = answerBox(q) + whyHTML(q);
+      if(!checked){
+        body += `<div class="row"><span style="font-weight:700">Did you know it?</span><button class="btn btn-good btn-sm" type="button" data-act="self" data-v="R">Yes, I got it right</button><button class="btn btn-bad btn-sm" type="button" data-act="self" data-v="W">No, I got it wrong</button></div>`;
+      } else {
+        feedback = chosen==="R"? `<p class="verdict good">Marked as known.</p>` : chosen==="W"? `<p class="verdict bad">Marked as missed. Added to your mistakes notebook at the end.</p>` : `<p class="verdict skip">Skipped.</p>`;
+        navR = last? `<button class="btn btn-primary" type="button" data-act="finish">See results</button>` : `<button class="btn btn-primary" type="button" data-act="next">Next question</button>`;
+      }
+    }
+  }
+  const pal = QZ.ids.map((id,j)=>{
+    const qq=QMAP[id]; let c="";
+    if(!test && QZ.chk[id]){ c = QZ.ans[id]===undefined? "" : isCorrect(qq,QZ.ans[id])? "right":"wrong"; }
+    else if(QZ.ans[id]!==undefined) c="ans";
+    if(QZ.mark[id]) c+=" mark";
+    if(j===i) c+=" cur";
+    return `<button type="button" class="pb ${c}" data-act="jump" data-i="${j}" aria-label="Question ${j+1}">${j+1}</button>`;
+  }).join("");
+  const legend = test
+    ? `<div class="legend"><span><i style="background:var(--accent);border-color:var(--accent)"></i>Answered</span><span><i></i>Not answered</span><span><i style="border-color:var(--warn)"></i>For review</span></div>`
+    : `<div class="legend"><span><i style="background:var(--good);border-color:var(--good)"></i>Correct</span><span><i style="background:var(--bad);border-color:var(--bad)"></i>Wrong</span><span><i></i>Not done</span></div>`;
+  const confirmBox = UI.confirmSubmit? `<div class="confirm" role="alertdialog" aria-label="Submit test"><p><b>Submit the test?</b> You have answered ${answered} of ${total}. ${total-answered? (total-answered)+" unanswered question"+(total-answered===1?"":"s")+" will count as skipped.":""}</p><div class="row"><button class="btn btn-primary" type="button" data-act="finish">Submit now</button><button class="btn btn-secondary" type="button" data-act="cancelsubmit">Keep working</button></div></div>` : "";
+  const prog = Math.round(100*(test?answered:Object.keys(QZ.chk).length)/total);
+  return `<div class="wrap view">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div class="qbar"><div><p class="eyebrow">${test?"Timed test":"Practice"}${QZ.source==="smart"?" · Smart quiz":""}</p><h1>${esc(QZ.title)}</h1></div>
+        <div class="row"><span class="timer" id="timer">${test? fmtTime(QZ.limit) : "0:00"}</span><button class="btn btn-ghost btn-sm" type="button" data-act="${test?"asksubmit":"finish"}">${test?"Submit":"End quiz"}</button></div></div>
+      <div class="progress" aria-hidden="true"><i style="width:${prog}%"></i></div>
+    </div>
+    <div class="player">
+      <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+        <article class="card qcard">
+          <div class="qhead"><div class="qmeta"><span class="qnum">Question ${i+1} of ${total}</span>${tags(q)}<span class="pill">Q${q.n}</span></div>${bmBtn(q.id)}</div>
+          ${stemHTML(q)}${body}${feedback}
+        </article>
+        ${confirmBox}
+        <div class="qnav"><button class="btn btn-secondary" type="button" data-act="prev" ${i===0?"disabled":""}>Previous</button><div class="row">${navR}</div></div>
+      </div>
+      <aside class="card palette">
+        <h3>Question palette</h3>
+        <div class="pgrid">${pal}</div>
+        ${legend}
+        <p class="muted" style="font-size:13px">Keys: A–D to choose${test?"":", Enter to check"}, ← → to move.</p>
+      </aside>
+    </div>
+  </div>`;
+}
+function startTimer(){
+  stopTimer();
+  const tick = ()=>{
+    if(!QZ){ stopTimer(); return; }
+    const el = $("#timer"), el2 = (Date.now()-QZ.t0)/1000;
+    if(QZ.mode==="test"){ const left = QZ.limit - el2; if(el){ el.textContent = fmtTime(left); el.classList.toggle("low", left<60); } if(left<=0){ toast("Time is up. Your test has been submitted."); finishQuiz(); } }
+    else if(el){ el.textContent = fmtTime(el2); }
+  };
+  tick(); timer = setInterval(tick, 1000);
+}
+function stopTimer(){ if(timer){ clearInterval(timer); timer=null; } }
+function finishQuiz(){
+  if(!QZ) return;
+  stopTimer();
+  // Practice: only questions you actually answered or skipped count. Timed test: every question counts, as in the exam.
+  const done = QZ.mode==="test" ? QZ.ids.slice() : QZ.ids.filter(id=>QZ.chk[id]);
+  if(!done.length){ QZ = null; toast("Quiz closed. Nothing was answered, so nothing was saved."); go(LAST? "practice" : "practice"); return; }
+  const res = {title:QZ.title, mode:QZ.mode, source:QZ.source, ids:done, total:QZ.ids.length, ans:Object.assign({},QZ.ans), secs:Math.round((Date.now()-QZ.t0)/1000), c:0,w:0,k:0, added:0, mastered:0, at:Date.now()};
+  done.forEach(id=>{
+    const q = QMAP[id], a = QZ.ans[id];
+    const x = S.qs[id] || (S.qs[id]={c:0,w:0,k:0});
+    let r;
+    if(a===undefined){ r="k"; x.k++; res.k++; } else if(isCorrect(q,a)){ r="c"; x.c++; res.c++; } else { r="w"; x.w++; res.w++; }
+    x.last=r; x.at=res.at;
+    const m = S.mistakes[id];
+    if(r==="c"){ if(m){ m.recall=(m.recall||0)+1; if(m.recall>=2){ delete S.mistakes[id]; res.mastered++; } } }
+    else if(!m){ S.mistakes[id]={reason:r, added:res.at, recall:0, miss:1}; res.added++; }
+    else { m.recall=0; m.reason=r; m.miss=(m.miss||0)+1; }
+  });
+  S.history.unshift({at:res.at,title:res.title,n:res.ids.length,c:res.c,w:res.w,k:res.k,secs:res.secs});
+  S.history = S.history.slice(0,12);
+  save(); LAST = res; QZ = null; UI.rFilter="all";
+  go("result");
+}
+
+/* ---------- result ---------- */
+function vResult(){
+  const r = LAST, n = r.ids.length, acc = pct(r.c, n) || 0;
+  const C = 2*Math.PI*54, dash = (acc/100)*C;
+  const byT = {};
+  r.ids.forEach(id=>{ const q=QMAP[id], k=tkey(q); const e=byT[k]||(byT[k]={s:q.s,t:q.t,n:0,c:0,w:0,k:0}); e.n++; const a=r.ans[id]; if(a===undefined)e.k++; else if(isCorrect(q,a))e.c++; else e.w++; });
+  const rows = Object.values(byT).sort((a,b)=>pct(a.c,a.n)-pct(b.c,b.n)).map(e=>{ const p=pct(e.c,e.n), b=band(p); const col = b==="good"?"var(--good)":b==="warn"?"var(--warn)":"var(--bad)"; return `<tr><td><div style="font-weight:600">${esc(e.t)}</div><div class="muted" style="font-size:13px">${esc(SUBJ[e.s].name)}</div></td><td class="num">${e.c}/${e.n}</td><td class="num">${e.w}</td><td class="num">${e.k}</td><td style="width:30%"><div class="row" style="flex-wrap:nowrap;gap:10px"><div class="bar" style="flex:1"><i style="width:${p}%;background:${col}"></i></div><span class="mono" style="min-width:3.2em;text-align:right">${p}%</span></div></td></tr>`; }).join("");
+  const f = UI.rFilter;
+  const list = r.ids.map((id,j)=>({q:QMAP[id],j,a:r.ans[id]})).filter(x=> f==="all" || (f==="wrong"&&x.a!==undefined&&!isCorrect(x.q,x.a)) || (f==="skip"&&x.a===undefined) || (f==="right"&&isCorrect(x.q,x.a)));
+  const verdict = x=> x.a===undefined? `<p class="verdict skip">Skipped</p>` : isCorrect(x.q,x.a)? `<p class="verdict good">Correct</p>` : `<p class="verdict bad">Wrong</p>`;
+  const retry = r.ids.filter(id=>!isCorrect(QMAP[id], r.ans[id]));
+  return `<div class="wrap view">
+    ${head("Result · "+(r.mode==="test"?"Timed test":"Practice"), esc(r.title), "", `<div class="row">${retry.length?`<button class="btn btn-primary" type="button" data-act="retry">Re-attempt ${retry.length} missed</button>`:""}<a class="btn btn-secondary" href="#practice">New quiz</a></div>`)}
+    <section class="card score">
+      <div class="ring" role="img" aria-label="Accuracy ${acc} percent">
+        <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" fill="none" stroke="var(--surface-2)" stroke-width="12"/><circle cx="60" cy="60" r="54" fill="none" stroke="var(--accent)" stroke-width="12" stroke-linecap="round" stroke-dasharray="${dash} ${C}"/></svg>
+        <div class="lbl"><div><b>${r.c}/${n}</b><span>${acc}% accuracy</span></div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+        <div class="tally">
+          <div class="g"><b>${r.c}</b><span>Correct</span></div><div class="r"><b>${r.w}</b><span>Wrong</span></div>
+          <div class="s"><b>${r.k}</b><span>Skipped</span></div><div><b style="font-family:var(--f-mono);font-size:22px">${fmtTime(r.secs)}</b><span>Time taken</span></div>
+        </div>
+        <p class="muted" style="font-size:15px">${r.total && r.total>n? `You answered ${n} of ${r.total} questions; the rest were not counted. `:""}${r.added?`<b style="color:var(--ink)">${r.added} question${r.added===1?"":"s"}</b> added to your mistakes notebook. `:""}${r.mastered? `<b style="color:var(--good)">${r.mastered}</b> cleared from the notebook after two correct recalls. `:""}${!r.added&&!r.mastered? "Nothing new for the mistakes notebook from this quiz.":""}</p>
+      </div>
+    </section>
+    <section class="card" style="overflow:hidden">
+      <div class="pad" style="padding-bottom:6px"><h2 style="font-size:18px;font-weight:700">Topic-wise analysis</h2><p class="muted" style="font-size:14px">Weakest topics first.</p></div>
+      <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Topic</th><th class="num">Correct</th><th class="num">Wrong</th><th class="num">Skipped</th><th>Accuracy</th></tr></thead><tbody>${rows}</tbody></table></div>
+    </section>
+    <section class="section">
+      <div class="section-title"><h2>Review answers</h2>
+        <div class="row">${[["all","All",n],["wrong","Wrong",r.w],["skip","Skipped",r.k],["right","Correct",r.c]].map(([id,l,c])=>`<button type="button" class="chip" data-act="rfilter" data-f="${id}" aria-pressed="${f===id}">${l} <span class="n">${c}</span></button>`).join("")}</div></div>
+      <div class="list">${list.length? list.map(x=>reviewCard(x.q, x.j+1, {chosen:x.a, extra:verdict(x)})).join("") : emptyHTML("Nothing in this filter","Choose another filter to see those questions.","")}</div>
+    </section>
+  </div>`;
+}
+
+/* ---------- question bank ---------- */
+function bankFilter(){
+  const qtext = UI.bankQ.trim().toLowerCase();
+  return QS.filter(q=>(UI.bankPaper==="all"||q.p===UI.bankPaper) && (UI.bankSubj==="all"||q.s===UI.bankSubj) && (UI.bankTopic==="all"||q.t===UI.bankTopic) &&
+    (!qtext || [q.q, q.t, SUBJ[q.s].name, ...(q.o||[]), q.ans||"", q.w].join(" ").toLowerCase().includes(qtext)));
+}
+function bankResults(){
+  const list = bankFilter(), shown = list.slice(0, bankLimit);
+  return `<p class="muted" style="font-size:14px">${list.length} question${list.length===1?"":"s"} found</p>
+    <div class="list">${shown.length? shown.map(q=>reviewCard(q, q.n, {hideAnswer:true})).join("") : emptyHTML("No questions match","Try a shorter search or clear a filter.", `<button class="btn btn-secondary" type="button" data-act="bankclear">Clear filters</button>`)}</div>
+    ${list.length>shown.length? `<div class="row" style="justify-content:center"><button class="btn btn-secondary" type="button" data-act="bankmore">Show ${Math.min(20,list.length-shown.length)} more</button></div>`:""}`;
+}
+function vBank(){
+  if(UI.bankSubj!=="all" && UI.bankTopic!=="all" && !SUBJ[UI.bankSubj].topics.includes(UI.bankTopic)) UI.bankTopic="all";
+  const topics = UI.bankSubj==="all"? [] : SUBJ[UI.bankSubj].topics;
+  return `<div class="wrap view">
+    ${head("Question bank","All questions","Search and filter by paper, subject and topic. Answers stay hidden until you open them.")}
+    <div class="toolbar">
+      <label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="color:var(--muted)"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4" stroke-linecap="round"/></svg><input id="bankSearch" type="search" placeholder="Search words, e.g. Satavahana, Article 356, Polavaram" value="${esc(UI.bankQ)}" aria-label="Search questions"></label>
+      <select class="sel" id="bankPaper" aria-label="Paper"><option value="all">All papers</option>${PAPERS.map(p=>`<option value="${p.id}" ${UI.bankPaper===p.id?"selected":""}>${esc(p.short)}</option>`).join("")}</select>
+      <select class="sel" id="bankSubj" aria-label="Subject"><option value="all">All subjects</option>${SUBJECTS.map(s=>`<option value="${s.id}" ${UI.bankSubj===s.id?"selected":""}>${esc(s.name)}</option>`).join("")}</select>
+      ${topics.length?`<select class="sel" id="bankTopic" aria-label="Topic"><option value="all">All topics</option>${topics.map(t=>`<option value="${esc(t)}" ${UI.bankTopic===t?"selected":""}>${esc(t)}</option>`).join("")}</select>`:""}
+    </div>
+    <div id="bankResults" style="display:flex;flex-direction:column;gap:14px;margin-top:-12px">${bankResults()}</div>
+  </div>`;
+}
+
+/* ---------- mistakes ---------- */
+function recallDots(m){ const r=m.recall||0; return `<span class="recall" title="Correct recalls: ${r} of 2"><i class="${r>=1?"on":""}"></i><i class="${r>=2?"on":""}"></i></span>`; }
+function vMistakes(){
+  const ids = mistakeIds();
+  if(!ids.length) return `<div class="wrap view">${head("Mistakes notebook","Your mistakes notebook","Questions you answer wrongly or skip are filed here automatically.")}${emptyHTML("Nothing to revise yet","Take a quiz. Every question you get wrong or skip will appear here, ready for the Smart Quiz.",`<a class="btn btn-primary" href="#practice">Create a quiz</a>`)}</div>`;
+  const subs = [...new Set(ids.map(id=>QMAP[id].s))];
+  if(UI.mFilter!=="all" && !subs.includes(UI.mFilter)) UI.mFilter="all";
+  const list = ids.filter(id=>UI.mFilter==="all"||QMAP[id].s===UI.mFilter).sort((a,b)=>(S.mistakes[b].miss||1)-(S.mistakes[a].miss||1) || S.mistakes[b].added-S.mistakes[a].added);
+  return `<div class="wrap view">
+    ${head("Mistakes notebook", ids.length+" question"+(ids.length===1?"":"s")+" to revise", "Filed automatically when you answer wrongly or skip. A question leaves the notebook after you get it right twice in a row.", `<a class="btn btn-primary" href="#smart">Start Smart Quiz</a>`)}
+    <div class="row"><button type="button" class="chip" data-act="mfilter" data-f="all" aria-pressed="${UI.mFilter==="all"}">All subjects <span class="n">${ids.length}</span></button>${subs.map(s=>`<button type="button" class="chip" data-act="mfilter" data-f="${s}" aria-pressed="${UI.mFilter===s}">${esc(SUBJ[s].name)} <span class="n">${ids.filter(id=>QMAP[id].s===s).length}</span></button>`).join("")}</div>
+    <div class="list">${list.map(id=>{ const m=S.mistakes[id], q=QMAP[id];
+      const extra = `<div class="row" style="justify-content:space-between"><div class="row" style="gap:8px"><span class="pill ${m.reason==="k"?"warn":"bad"}">${m.reason==="k"?"Skipped last time":"Answered wrongly"}</span><span class="pill">Missed ${m.miss||1}×</span><span class="pill">Recall ${recallDots(m)}</span></div><button class="btn btn-ghost btn-sm" type="button" data-act="learnt" data-id="${id}">I've learnt this</button></div>`;
+      return reviewCard(q, q.n, {hideAnswer:true, extra}); }).join("")}</div>
+  </div>`;
+}
+
+/* ---------- smart quiz ---------- */
+function vSmart(){
+  const ids = mistakeIds();
+  const subs = [...new Set(ids.map(id=>QMAP[id].s))];
+  if(UI.smartSubj!=="all" && !subs.includes(UI.smartSubj)) UI.smartSubj="all";
+  const avail = ids.filter(id=>UI.smartSubj==="all"||QMAP[id].s===UI.smartSubj);
+  const n = UI.smartCount==="all"? avail.length : Math.min(UI.smartCount, avail.length);
+  const how = `<ol class="steps3">
+      <li class="card"><h3>Pulled from your notebook</h3><p>Questions come only from the ones you missed or skipped, the most-missed first.</p></li>
+      <li class="card"><h3>Answer from memory</h3><p>Read the question and recall the answer before you look at the options.</p></li>
+      <li class="card"><h3>Two in a row clears it</h3><p>Get a question right twice running and it leaves the notebook. A miss resets the count.</p></li>
+    </ol>`;
+  if(!ids.length) return `<div class="wrap view">${head("Smart quiz","Re-attempt your mistakes","")}${how}${emptyHTML("Your notebook is empty","The Smart Quiz runs on the questions you get wrong or skip. Take a quiz first.",`<a class="btn btn-primary" href="#practice">Create a quiz</a>`)}</div>`;
+  return `<div class="wrap view">
+    ${head("Smart quiz","Re-attempt your mistakes","Active recall on the questions that tripped you up, until they stop tripping you up.")}
+    ${how}
+    <section class="card step">
+      <div class="step-h"><h2>Subject</h2></div>
+      <div class="row"><button type="button" class="chip" data-act="ssubj" data-f="all" aria-pressed="${UI.smartSubj==="all"}">All <span class="n">${ids.length}</span></button>${subs.map(s=>`<button type="button" class="chip" data-act="ssubj" data-f="${s}" aria-pressed="${UI.smartSubj===s}">${esc(SUBJ[s].name)} <span class="n">${ids.filter(id=>QMAP[id].s===s).length}</span></button>`).join("")}</div>
+      <div class="step-h"><h2>How many</h2></div>
+      <div class="row">${[5,10,"all"].map(c=>`<button type="button" class="chip" data-act="scount" data-count="${c}" aria-pressed="${UI.smartCount===c}">${c==="all"?"All "+avail.length:c}</button>`).join("")}</div>
+      <div class="row" style="justify-content:space-between;border-top:1px solid var(--line);padding-top:14px"><span><b class="mono">${n}</b> <span class="muted">question${n===1?"":"s"} · practice mode</span></span><button class="btn btn-primary" type="button" data-act="smartgo" ${n?"":"disabled"}>Start Smart Quiz</button></div>
+    </section>
+  </div>`;
+}
+
+/* ---------- bookmarks ---------- */
+function vBookmarks(){
+  const ids = bmIds();
+  if(!ids.length) return `<div class="wrap view">${head("Bookmarks","Saved questions","Save any question with the bookmark button to revise it later.")}${emptyHTML("No saved questions yet","Tap Save on any question in a quiz or in the question bank.",`<a class="btn btn-secondary" href="#bank">Open question bank</a>`)}</div>`;
+  return `<div class="wrap view">
+    ${head("Bookmarks", ids.length+" saved question"+(ids.length===1?"":"s"), "Your hand-picked questions for revision.", `<button class="btn btn-primary" type="button" data-act="bmquiz">Practise saved questions</button>`)}
+    <div class="list">${ids.map(id=>reviewCard(QMAP[id], QMAP[id].n, {hideAnswer:true})).join("")}</div>
+  </div>`;
+}
+
+/* ---------- heatmap ---------- */
+function vHeatmap(){
+  const ts = topicStats(), o = overall();
+  const tile = (s,t)=>{ const k=s.id+"|"+t, e=ts[k]; if(!e) return ""; const tot=e.c+e.w+e.k, acc=pct(e.c,tot), b=band(acc);
+    return `<button type="button" class="tile h-${b}" data-act="topicquiz" data-key="${esc(k)}" aria-label="${esc(t)}: ${acc===null?"not attempted":acc+" percent accuracy"}. Start a quiz on this topic.">
+      <span class="tn">${esc(t)}</span><span class="tv">${acc===null?"Not attempted":acc+"%"}</span><span class="ts">${tot? `${tot} attempt${tot===1?"":"s"} · `:""}${e.seen}/${e.n} questions seen</span></button>`; };
+  return `<div class="wrap view">
+    ${head("Memory heatmap","Topic-wise accuracy","Every attempt counts; skipped questions count as misses. Tap a topic to practise it.", `<div class="figures" style="grid-template-columns:repeat(2,minmax(0,1fr));min-width:min(100%,320px)"><div class="figure"><div class="v">${o.acc===null?"—":o.acc+"%"}</div><div class="k">Overall accuracy</div></div><div class="figure"><div class="v">${o.c+o.w+o.k}</div><div class="k">Total attempts</div></div></div>`)}
+    <div class="hlegend"><span><i style="background:var(--good-soft);border:1.5px solid var(--good)"></i>75% and above</span><span><i style="background:var(--warn-soft);border:1.5px solid var(--warn)"></i>50–74%</span><span><i style="background:var(--bad-soft);border:1.5px solid var(--bad)"></i>Below 50%</span><span><i style="background:var(--none-soft);border:1.5px solid var(--line)"></i>Not attempted</span></div>
+    ${SUBJECTS.map(s=>{ const tiles=s.topics.map(t=>tile(s,t)).join(""); return tiles? `<section class="card pad heat-exam"><h2 style="font-size:19px;font-weight:800">${esc(s.name)}</h2><div class="heat-grid">${tiles}</div></section>` : ""; }).join("")}
+  </div>`;
+}
+
+/* ---------- about ---------- */
+function vAbout(){
+  const ig = DATA.instagram;
+  return `<div class="wrap view">
+    <section class="card about">
+      <img src="${PHOTO}" alt="Jupudi Anil Kumar" width="260" height="260">
+      <div style="min-width:0">
+        <p class="eyebrow">About the mentor</p>
+        <h2>Jupudi Anil Kumar</h2>
+        <p class="role">Academic Manager · Polity Faculty · Mentor</p>
+        <div class="bio">
+          <p>I am a civil-services educator with more than 1,000 hours of classroom teaching for UPSC, APPSC and TGPSC aspirants. I teach Indian Polity, Governance and Ethics, build test series and study material, and evaluate Mains answer scripts.</p>
+          <p>At Abhiram IAS Academy, Hyderabad, I work as Academic Manager, faculty and mentor. I plan the Group-1 and Group-2 programmes and their test series, coordinate the UPSC mock interview programme in Delhi, and mentor Group-1, Group-2 and UPSC aspirants. Earlier I taught Polity at Reflections IAS Academy and Prathiba IAS Academy.</p>
+          <p>I built this portal so that every APPSC Group-II aspirant can practise the real previous questions topic by topic, for free, and see clearly where they are losing marks.</p>
+        </div>
+        <dl>
+          <div><dt>1000+</dt><dd>Hours of classroom teaching</dd></div>
+          <div><dt>1200+</dt><dd>Mains answer copies evaluated</dd></div>
+          <div><dt>70+</dt><dd>APPSC Group-1 mock interviews</dd></div>
+          <div><dt>25</dt><dd>UPSC CSE mock interviews, Delhi</dd></div>
+          <div><dt>150+</dt><dd>Educational reels &amp; videos</dd></div>
+        </dl>
+        <div class="handle">Follow on Instagram for daily current affairs: <a href="https://www.instagram.com/${ig}/" target="_blank" rel="noopener"><code>@${ig}</code></a><button class="btn btn-ghost btn-sm" type="button" data-act="copyig">Copy handle</button></div>
+      </div>
+    </section>
+  </div>`;
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click", e=>{
+  const b = e.target.closest("[data-act]"); if(!b || b.disabled) return;
+  const act = b.dataset.act;
+  switch(act){
+    case "bm": { const id=b.dataset.id; if(S.bm[id]) delete S.bm[id]; else S.bm[id]=true; save(); toast(S.bm[id]?"Saved to bookmarks":"Removed from bookmarks"); render(); break; }
+    case "presubj": { const s=SUBJ[b.dataset.subj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); go("practice"); break; }
+    case "paper": { const ps=selPapers(), id=b.dataset.paper; ps.has(id)?ps.delete(id):ps.add(id); P.papers=[...ps]; savePrefs(); render(); break; }
+    case "allpapers": P.papers=null; savePrefs(); render(); break;
+    case "nopapers": P.papers=[]; savePrefs(); render(); break;
+    case "recalltoggle": P.recall = b.checked; savePrefs(); render(); break;
+    case "topic": { const t=curTopics(), k=b.dataset.key; t.has(k)?t.delete(k):t.add(k); P.topics=[...t]; savePrefs(); render(); break; }
+    case "alltopics": P.topics=null; savePrefs(); render(); break;
+    case "notopics": P.topics=[]; savePrefs(); render(); break;
+    case "count": P.count = b.dataset.count==="all"? "all" : +b.dataset.count; savePrefs(); render(); break;
+    case "mode": P.mode=b.dataset.mode; savePrefs(); render(); break;
+    case "start": { const pl=shuffle(pool()); const n=P.count==="all"?pl.length:Math.min(P.count,pl.length); startQuiz(pl.slice(0,n).map(q=>q.id), quizTitle(), P.mode, "custom"); break; }
+    case "paperpractice": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id).map(q=>q.id), p.title, "practice", "paper"); break; }
+    case "papertest": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id && isMCQ(q)).map(q=>q.id), p.title+" · Timed test", "test", "paper"); break; }
+    case "pick": { const id=QZ.ids[QZ.i]; if(QZ.mode!=="test" && QZ.chk[id]) return; const j=+b.dataset.i; if(QZ.mode==="test" && QZ.ans[id]===j) delete QZ.ans[id]; else QZ.ans[id]=j; render(); break; }
+    case "check": { const id=QZ.ids[QZ.i]; if(QZ.ans[id]===undefined) return; QZ.chk[id]=true; render(); break; }
+    case "reveal": { QZ.rev[QZ.ids[QZ.i]]=true; render(); break; }
+    case "self": { const id=QZ.ids[QZ.i]; QZ.ans[id]=b.dataset.v; QZ.chk[id]=true; render(); break; }
+    case "skip": { const id=QZ.ids[QZ.i]; delete QZ.ans[id]; QZ.chk[id]=true; QZ.rev[id]=true; if(QZ.i<QZ.ids.length-1){ QZ.i++; } render(); break; }
+    case "next": if(QZ.i<QZ.ids.length-1){ QZ.i++; UI.confirmSubmit=false; render(); } break;
+    case "prev": if(QZ.i>0){ QZ.i--; UI.confirmSubmit=false; render(); } break;
+    case "jump": QZ.i=+b.dataset.i; UI.confirmSubmit=false; render(); break;
+    case "markrev": { const id=QZ.ids[QZ.i]; if(QZ.mark[id]) delete QZ.mark[id]; else QZ.mark[id]=true; render(); break; }
+    case "asksubmit": UI.confirmSubmit=true; render(); setTimeout(()=>{ const c=$(".confirm"); if(c) c.scrollIntoView({block:"center",behavior:"smooth"}); },0); break;
+    case "cancelsubmit": UI.confirmSubmit=false; render(); break;
+    case "finish": finishQuiz(); break;
+    case "retry": { const ids=LAST.ids.filter(id=>!isCorrect(QMAP[id], LAST.ans[id])); startQuiz(shuffle(ids), "Re-attempt · "+LAST.title, "practice", "smart"); break; }
+    case "rfilter": UI.rFilter=b.dataset.f; render(); break;
+    case "mfilter": UI.mFilter=b.dataset.f; render(); break;
+    case "learnt": delete S.mistakes[b.dataset.id]; save(); toast("Removed from your mistakes notebook"); render(); break;
+    case "ssubj": UI.smartSubj=b.dataset.f; render(); break;
+    case "scount": UI.smartCount = b.dataset.count==="all"? "all" : +b.dataset.count; render(); break;
+    case "smartgo": {
+      const avail = mistakeIds().filter(id=>UI.smartSubj==="all"||QMAP[id].s===UI.smartSubj)
+        .sort((a,b2)=>(S.mistakes[b2].miss||1)-(S.mistakes[a].miss||1) || (S.mistakes[a].recall||0)-(S.mistakes[b2].recall||0));
+      const n = UI.smartCount==="all"? avail.length : Math.min(UI.smartCount, avail.length);
+      startQuiz(shuffle(avail.slice(0,n)), "Smart Quiz · "+(UI.smartSubj==="all"?"All subjects":SUBJ[UI.smartSubj].name), "practice", "smart"); break; }
+    case "bmquiz": startQuiz(shuffle(bmIds()), "Bookmarked questions", "practice", "bookmarks"); break;
+    case "topicquiz": { const k=b.dataset.key; const ids=QS.filter(q=>tkey(q)===k).map(q=>q.id); startQuiz(shuffle(ids), SUBJ[k.split("|")[0]].name+" · "+k.split("|")[1], "practice", "topic"); break; }
+    case "bankmore": bankLimit+=20; { const box=$("#bankResults"); if(box) box.innerHTML=bankResults(); } break;
+    case "bankclear": UI.bankQ=""; UI.bankPaper="all"; UI.bankSubj="all"; UI.bankTopic="all"; bankLimit=20; render(); break;
+    case "copyig": { const h="@"+DATA.instagram; try{ navigator.clipboard.writeText(h).then(()=>toast("Copied "+h), ()=>toast("Handle: "+h)); }catch(_){ toast("Handle: "+h); } break; }
+  }
+});
+document.addEventListener("change", e=>{
+  const t=e.target;
+  if(t.matches('[data-act="subjall"]')){ const s=SUBJ[t.dataset.subj], set=curTopics(); s.topics.forEach(x=>{ const k=s.id+"|"+x; if(t.checked) set.add(k); else set.delete(k); }); P.topics=[...set]; savePrefs(); render(); }
+  if(t.id==="bankPaper"){ UI.bankPaper=t.value; bankLimit=20; render(); }
+  if(t.id==="bankSubj"){ UI.bankSubj=t.value; UI.bankTopic="all"; bankLimit=20; render(); }
+  if(t.id==="bankTopic"){ UI.bankTopic=t.value; bankLimit=20; render(); }
+});
+let searchT;
+document.addEventListener("input", e=>{
+  if(e.target.id!=="bankSearch") return;
+  UI.bankQ = e.target.value; bankLimit=20;
+  clearTimeout(searchT);
+  searchT = setTimeout(()=>{ const box=$("#bankResults"); if(box) box.innerHTML = bankResults(); }, 160);
+});
+document.addEventListener("keydown", e=>{
+  if(current!=="quiz" || !QZ || e.metaKey || e.ctrlKey || e.altKey) return;
+  if(e.target.matches && e.target.matches("input,select,textarea")) return;
+  const id = QZ.ids[QZ.i], q = QMAP[id], k = e.key.toUpperCase();
+  if(isMCQ(q)){
+    const idx = LET.indexOf(k) >= 0 ? LET.indexOf(k) : ["1","2","3","4"].indexOf(k);
+    if(idx>=0){ if(QZ.mode!=="test" && QZ.chk[id]) return; if(QZ.mode==="test" && QZ.ans[id]===idx) delete QZ.ans[id]; else QZ.ans[id]=idx; render(); e.preventDefault(); return; }
+  }
+  if(e.key==="ArrowRight" && QZ.i<QZ.ids.length-1 && (QZ.mode==="test"||QZ.chk[id])){ QZ.i++; render(); }
+  else if(e.key==="ArrowLeft" && QZ.i>0){ QZ.i--; render(); }
+  else if(e.key==="Enter" && QZ.mode!=="test" && isMCQ(q)){
+    if(e.target.closest && e.target.closest("button")) return;
+    if(!QZ.chk[id] && QZ.ans[id]!==undefined){ QZ.chk[id]=true; render(); }
+    else if(QZ.chk[id]){ if(QZ.i<QZ.ids.length-1){ QZ.i++; render(); } else finishQuiz(); }
+  }
+});
+function restoreReset(){ $("#resetBox").innerHTML=`<button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button>`; bindReset(); }
+function bindReset(){ $("#resetBtn").onclick = ()=>{
+  $("#resetBox").innerHTML = `<span class="row" style="gap:8px"><span>Clear all attempts, mistakes and bookmarks?</span><button class="btn btn-bad btn-sm" type="button" id="resetYes">Clear</button><button class="btn btn-secondary btn-sm" type="button" id="resetNo">Cancel</button></span>`;
+  $("#resetYes").onclick = ()=>{ S=blank(); save(); LAST=null; QZ=null; stopTimer(); restoreReset(); toast("Your progress has been cleared"); go("home"); };
+  $("#resetNo").onclick = restoreReset;
+}; }
+bindReset();
+
+/* ---------- boot ---------- */
+function start(data){ if(data && data.QZ) QZ = data.QZ; if(data && data.LAST) LAST = data.LAST; render(); }
+try{ window.claude?.hot?.snapshot?.(()=>({QZ, LAST})); }catch(_){}
+const hot = window.claude?.hot;
+if(hot && hot.ready) hot.ready(start); else start(hot?.data ?? {});
+})();
+</script>
