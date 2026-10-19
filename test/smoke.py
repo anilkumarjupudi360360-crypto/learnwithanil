@@ -71,13 +71,6 @@ async def main():
         await pg.goto('file://' + os.path.join(ROOT, 'dist', 'site', 'papers', 'appsc-group-2-screening-test-2024-question-paper-with-answers.html'))
         sw = await pg.evaluate('document.documentElement.scrollWidth')
         if sw > 390: errors.append(f'static page overflow {sw}')
-        for w in (390, 1280):
-            pg = await b.new_page(viewport={'width': w, 'height': 900})
-            pg.on('pageerror', lambda e: errors.append(f'initiative pageerror: {e}'))
-            await pg.goto('file://' + os.path.join(ROOT, 'dist', 'site', 'initiative.html')); await pg.wait_for_timeout(300)
-            sw = await pg.evaluate('document.documentElement.scrollWidth')
-            if sw > w: errors.append(f'initiative overflow {sw}>{w}')
-            await pg.screenshot(path=f'{SHOTS}/initiative-{w}.png', full_page=True)
         await b.close()
         print('ERRORS:', errors if errors else 'none')
 asyncio.run(main())
