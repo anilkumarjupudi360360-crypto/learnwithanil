@@ -1,0 +1,130 @@
+[
+ {
+  "id": "apeco-en",
+  "lang": "en",
+  "vol": 1,
+  "series": "Crisp Notes · Vol. 1",
+  "subject": "AP Economy",
+  "title": "Andhra Pradesh Economy",
+  "title_en": "Andhra Pradesh Economy",
+  "subtitle": "Crisp notes with the latest data, official previous questions and practice MCQs",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "Andhra Pradesh Economy: Crisp Notes 2026-27 (English Medium)",
+  "pages": 45,
+  "chapters": [
+   "Structure and Growth of the AP Economy",
+   "Public Finances of Andhra Pradesh",
+   "Central Assistance and Externally Aided Projects",
+   "Agriculture, Rural Credit and Agricultural Marketing",
+   "Horticulture, Livestock, Fisheries, Forests and Minerals",
+   "Industrial Growth, Policies and Corridors",
+   "Services Sector, IT, Electronics and Communications",
+   "Practice Questions"
+  ],
+  "pyqs": 52,
+  "price": 49,
+  "cover": "notes-apeco-en-cover.jpg",
+  "samples": [
+   "notes-apeco-en-p1.jpg",
+   "notes-apeco-en-p2.jpg"
+  ],
+  "buy": ""
+ },
+ {
+  "id": "apeco-te",
+  "lang": "te",
+  "vol": 1,
+  "series": "క్రిస్ప్ నోట్స్ · సంపుటి 1",
+  "subject": "AP Economy",
+  "title": "ఆంధ్రప్రదేశ్ ఆర్థిక వ్యవస్థ",
+  "title_en": "Andhra Pradesh Economy",
+  "subtitle": "తాజా గణాంకాలు, అధికారిక గత ప్రశ్నలు, ప్రాక్టీస్ ప్రశ్నలతో సంక్షిప్త నోట్స్",
+  "medium": "తెలుగు మాధ్యమం",
+  "medium_en": "Telugu Medium",
+  "product": "ఆంధ్రప్రదేశ్ ఆర్థిక వ్యవస్థ: క్రిస్ప్ నోట్స్ 2026-27 (తెలుగు మాధ్యమం)",
+  "pages": 46,
+  "chapters": [
+   "ఏపీ ఆర్థిక వ్యవస్థ నిర్మాణం, వృద్ధి",
+   "ఆంధ్రప్రదేశ్ ప్రభుత్వ ఆర్థిక వ్యవస్థ",
+   "కేంద్ర సహాయం, విదేశీ సహాయ ప్రాజెక్టులు",
+   "వ్యవసాయం, గ్రామీణ రుణం, వ్యవసాయ మార్కెటింగ్",
+   "ఉద్యాన, పశుసంవర్ధక, మత్స్య, అటవీ, ఖనిజ రంగాలు",
+   "పారిశ్రామిక వృద్ధి, విధానాలు, కారిడార్లు",
+   "సేవల రంగం, ఐటీ, ఎలక్ట్రానిక్స్, కమ్యూనికేషన్లు",
+   "ప్రాక్టీస్ ప్రశ్నలు"
+  ],
+  "pyqs": 52,
+  "price": 49,
+  "cover": "notes-apeco-te-cover.jpg",
+  "samples": [
+   "notes-apeco-te-p1.jpg",
+   "notes-apeco-te-p2.jpg"
+  ],
+  "buy": ""
+ },
+ {
+  "id": "st-en",
+  "lang": "en",
+  "vol": 2,
+  "series": "Crisp Notes · Vol. 2",
+  "subject": "Science & Technology",
+  "title": "Science & Technology",
+  "title_en": "Science & Technology",
+  "subtitle": "Crisp notes on technology, energy, environment and health, with official previous questions and practice MCQs",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "Science & Technology: Crisp Notes 2026-27 (English Medium)",
+  "pages": 54,
+  "chapters": [
+   "S&T Policy, National Missions, Emerging Technologies and ICT",
+   "Space Technology",
+   "Defence Technology and Nuclear Technology",
+   "Energy Management",
+   "Ecosystem and Biodiversity",
+   "Waste Management and Pollution Control",
+   "Environment, Climate Change, Sustainable Development and Health",
+   "Practice Questions"
+  ],
+  "pyqs": 83,
+  "price": 49,
+  "cover": "notes-st-en-cover.jpg",
+  "samples": [
+   "notes-st-en-p1.jpg",
+   "notes-st-en-p2.jpg"
+  ],
+  "buy": ""
+ },
+ {
+  "id": "st-te",
+  "lang": "te",
+  "vol": 2,
+  "series": "క్రిస్ప్ నోట్స్ · సంపుటి 2",
+  "subject": "Science & Technology",
+  "title": "శాస్త్ర సాంకేతిక విజ్ఞానం",
+  "title_en": "Science & Technology",
+  "subtitle": "సాంకేతికత, ఇంధనం, పర్యావరణం, ఆరోగ్యంపై సంక్షిప్త నోట్స్ — అధికారిక గత ప్రశ్నలు, ప్రాక్టీస్ ప్రశ్నలతో",
+  "medium": "తెలుగు మాధ్యమం",
+  "medium_en": "Telugu Medium",
+  "product": "శాస్త్ర సాంకేతిక విజ్ఞానం: క్రిస్ప్ నోట్స్ 2026-27 (తెలుగు మాధ్యమం)",
+  "pages": 57,
+  "chapters": [
+   "శాస్త్ర సాంకేతిక విధానం, జాతీయ మిషన్లు, కొత్త సాంకేతికతలు, ICT",
+   "అంతరిక్ష సాంకేతికత",
+   "రక్షణ సాంకేతికత, అణు సాంకేతికత",
+   "ఇంధన నిర్వహణ",
+   "పర్యావరణ వ్యవస్థ, జీవవైవిధ్యం",
+   "వ్యర్థాల నిర్వహణ, కాలుష్య నియంత్రణ",
+   "పర్యావరణం, వాతావరణ మార్పు, సుస్థిరాభివృద్ధి, ఆరోగ్యం",
+   "ప్రాక్టీస్ ప్రశ్నలు"
+  ],
+  "pyqs": 83,
+  "price": 49,
+  "cover": "notes-st-te-cover.jpg",
+  "samples": [
+   "notes-st-te-p1.jpg",
+   "notes-st-te-p2.jpg"
+  ],
+  "buy": ""
+ }
+]

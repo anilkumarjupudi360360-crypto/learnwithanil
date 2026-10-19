@@ -16,7 +16,7 @@ async def main():
             if name == 'desk': await pg.screenshot(path=f'{SHOTS}/home-{name}.png', full_page=False)
             sw = await pg.evaluate('document.documentElement.scrollWidth'); 
             if sw > width: errors.append(f'{name}: horizontal overflow {sw}>{width}')
-            for v in ['papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','join']:
+            for v in ['papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','join','notes']:
                 await pg.evaluate(f'location.hash="{v}"'); await pg.wait_for_timeout(150)
                 sw = await pg.evaluate('document.documentElement.scrollWidth')
                 if sw > width: errors.append(f'{name}/{v}: horizontal overflow {sw}>{width}')
@@ -53,7 +53,16 @@ async def main():
                 print('bank search:', await pg.inner_text('#bankResults p.muted'))
                 await pg.evaluate('location.hash="about"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/about.png')
+                await pg.evaluate('location.hash="notes"'); await pg.wait_for_timeout(300)
+                await pg.screenshot(path=f'{SHOTS}/notes-desk.png', full_page=True)
+                print('notes cards:', await pg.locator('.note').count())
+                await pg.click('.note-cover >> nth=1'); await pg.wait_for_timeout(400)
+                await pg.screenshot(path=f'{SHOTS}/notes-sample.png')
+                assert await pg.evaluate('document.getElementById("sampleDlg").open'), 'sample dialog should open'
+                await pg.click('[data-act="closesample"]')
             else:
+                await pg.evaluate('location.hash="notes"'); await pg.wait_for_timeout(300)
+                await pg.screenshot(path=f'{SHOTS}/notes-phone.png', full_page=True)
                 await pg.evaluate('location.hash="home"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/home-phone.png', full_page=False)
         # static page
@@ -62,6 +71,13 @@ async def main():
         await pg.goto('file://' + os.path.join(ROOT, 'dist', 'site', 'papers', 'appsc-group-2-screening-test-2024-question-paper-with-answers.html'))
         sw = await pg.evaluate('document.documentElement.scrollWidth')
         if sw > 390: errors.append(f'static page overflow {sw}')
+        for w in (390, 1280):
+            pg = await b.new_page(viewport={'width': w, 'height': 900})
+            pg.on('pageerror', lambda e: errors.append(f'initiative pageerror: {e}'))
+            await pg.goto('file://' + os.path.join(ROOT, 'dist', 'site', 'initiative.html')); await pg.wait_for_timeout(300)
+            sw = await pg.evaluate('document.documentElement.scrollWidth')
+            if sw > w: errors.append(f'initiative overflow {sw}>{w}')
+            await pg.screenshot(path=f'{SHOTS}/initiative-{w}.png', full_page=True)
         await b.close()
         print('ERRORS:', errors if errors else 'none')
 asyncio.run(main())

@@ -57,9 +57,9 @@ img{max-width:100%}
 .brand-text{display:flex;flex-direction:column;line-height:1.1}
 .brand-text b{font-family:var(--f-display);font-size:18px;font-weight:800;letter-spacing:-.01em}
 .brand-text span{font-family:var(--f-mono);font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-.nav{display:flex;gap:2px;overflow-x:auto;flex:1;min-width:0;scrollbar-width:none;justify-content:flex-end}
+.nav{display:flex;gap:2px;overflow-x:auto;flex:1;min-width:0;scrollbar-width:none;justify-content:flex-end;justify-content:safe flex-end}
 .nav::-webkit-scrollbar{display:none}
-.nav a{white-space:nowrap;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px;padding:8px 10px;border-radius:8px;display:flex;align-items:center;gap:6px}
+.nav a{white-space:nowrap;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px;padding:8px 9px;border-radius:8px;display:flex;align-items:center;gap:6px}
 .nav a:hover{color:var(--ink);background:var(--surface-2)}
 .nav a[aria-current="page"]{color:var(--accent-text);background:var(--accent-soft)}
 .lang{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;padding:2px;flex-shrink:0;background:var(--surface)}
@@ -70,7 +70,7 @@ img{max-width:100%}
 .lang button[lang="te"]{line-height:1.2}
 .pill.en-only{background:var(--none-soft);color:var(--muted)}
 .nav .count{font-family:var(--f-mono);font-size:11px;background:var(--bad);color:#fff;border-radius:999px;padding:0 6px;line-height:18px}
-@media (max-width:1240px){
+@media (max-width:1360px){
   .topbar .wrap{gap:4px;padding-block:8px 0}
   .nav{flex-basis:100%;justify-content:flex-start;padding-bottom:6px;order:3}
   .lang{order:2;margin-left:auto}
@@ -355,6 +355,55 @@ select.sel{border:1.5px solid var(--line);background:var(--surface);border-radiu
 footer.foot{border-top:1px solid var(--line);background:var(--surface)}
 footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted)}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;z-index:50;box-shadow:var(--shadow);max-width:calc(100% - 32px)}
+
+/* Study material (Crisp Notes) */
+.nav a .new{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.06em;background:#F2B705;color:#0C2266;border-radius:4px;padding:0 5px;line-height:16px}
+.notes-promo{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:22px 24px;text-decoration:none;color:var(--ink);transition:border-color .15s}
+.notes-promo:hover{border-color:var(--accent)}
+.notes-promo h2{font-size:24px;font-weight:800;margin:4px 0 6px}
+.notes-promo p{color:var(--muted);max-width:56ch}
+.notes-promo .btn{margin-top:14px}
+.np-covers{display:flex}
+.np-covers img{width:92px;height:auto;border-radius:4px;box-shadow:0 6px 16px rgba(13,24,48,.25);margin-left:-26px;border:1px solid rgba(255,255,255,.4)}
+.np-covers img:first-child{margin-left:0}
+@media (max-width:760px){.notes-promo{grid-template-columns:1fr}.np-covers{order:-1}.np-covers img{width:72px;margin-left:-18px}}
+.notes-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+@media (max-width:760px){.notes-steps{grid-template-columns:1fr}}
+.notes-steps>div{display:flex;gap:12px;align-items:flex-start;padding:14px 16px}
+.notes-steps b{font-family:var(--f-display);font-size:15px;display:block}
+.notes-steps p{color:var(--muted);font-size:14.5px}
+.notes-steps .n{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent-text);display:grid;place-items:center;font-family:var(--f-mono);font-weight:600;font-size:14px}
+.notes-sub{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:28px}
+.notes-sub h2{font-size:21px;font-weight:800}
+.notes-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:12px}
+@media (max-width:860px){.notes-grid{grid-template-columns:1fr}}
+.note{display:grid;grid-template-columns:140px minmax(0,1fr);gap:18px;padding:18px}
+@media (max-width:420px){.note{grid-template-columns:96px minmax(0,1fr);gap:14px;padding:14px}}
+.note-cover{padding:0;border:0;background:none;cursor:zoom-in;align-self:start;border-radius:6px;overflow:hidden;box-shadow:0 4px 14px rgba(13,24,48,.18);display:block}
+.note-cover img{display:block;width:100%;height:auto}
+.note .pills{display:flex;gap:6px;flex-wrap:wrap}
+.note h3{font-size:20px;font-weight:800;margin:8px 0 0}
+.note h3[lang=te]{font-family:"Noto Sans Telugu",var(--f-body);font-weight:700;line-height:1.4;font-size:19px;letter-spacing:0}
+.note .en{color:var(--muted);font-size:14.5px}
+.note-meta{font-size:13px;color:var(--muted);margin-top:6px}
+.note-toc{margin-top:8px;font-size:14.5px}
+.note-toc summary{cursor:pointer;color:var(--accent-text);font-weight:700}
+.note-toc ol{margin:6px 0 0;padding-left:20px;color:var(--muted)}
+.note-toc ol[lang=te]{font-family:"Noto Sans Telugu",var(--f-body);font-size:14px}
+.note-buy{display:flex;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
+.note-buy .price{font-family:var(--f-display);font-weight:800;font-size:26px;line-height:1}
+.btn[disabled]{opacity:.55;cursor:not-allowed}
+.note-links{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px;margin-left:-10px}
+.notes-foot{margin-top:24px;padding:18px 20px;color:var(--muted);font-size:15px}
+.notes-foot b{color:var(--ink)}
+.sample-dlg{border:0;padding:0;border-radius:14px;width:min(900px,calc(100vw - 20px));max-height:calc(100dvh - 20px);background:var(--surface);color:var(--ink);overflow:auto}
+.sample-dlg::backdrop{background:rgba(5,10,25,.72)}
+.sample-dlg header{position:sticky;top:0;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;background:var(--surface);border-bottom:1px solid var(--line)}
+.sample-dlg header b{font-family:var(--f-display);font-size:17px}
+.sample-dlg .imgs{display:grid;gap:14px;padding:14px;background:var(--surface-2)}
+.sample-dlg .imgs img{width:100%;height:auto;display:block;border-radius:6px;box-shadow:var(--shadow)}
+.sample-dlg .imgs p{font-size:14px;color:var(--muted);text-align:center}
+.foot a{color:var(--accent-text);font-weight:600}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 <!--BODY-->
@@ -367,6 +416,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     <nav class="nav" id="nav" aria-label="Main">
       <a href="#home" data-v="home">Home</a>
       <a href="#papers" data-v="papers">Previous Papers</a>
+      <a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>
       <a href="#practice" data-v="practice">Create Quiz</a>
       <a href="#bank" data-v="bank">Question Bank</a>
       <a href="#mistakes" data-v="mistakes">Mistakes <span class="count" id="mcount" hidden></span></a>
@@ -406,6 +456,8 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     </div>
   </section>
 
+  {{HOME_NOTES}}
+
   <section class="wrap section">
     <div class="section-title"><h2>Previous papers</h2><a class="btn btn-ghost btn-sm" href="#papers">All papers</a></div>
     <div class="papers">{{HOME_PAPERS}}</div>
@@ -439,7 +491,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 
 <footer class="foot">
   <div class="wrap">
-    <span>Questions and answers are from APPSC's official final keys. Explanations by Learn with Anil. Not affiliated with APPSC.</span>
+    <span>Questions and answers are from APPSC's official final keys. Explanations by Learn with Anil. Not affiliated with APPSC. <a href="initiative.html">Our initiative</a> · <a href="#notes">Study material</a></span>
     <span id="resetBox"><button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button></span>
   </div>
 </footer>
@@ -534,7 +586,7 @@ function topicStats(){
 const band = acc=>acc===null? "none" : acc>=75? "good" : acc>=50? "warn" : "bad";
 
 /* ---------- routing ---------- */
-const VIEWS = ["home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join"];
+const VIEWS = ["home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes"];
 let current = "home";
 function go(v){ if(location.hash.slice(1)!==v){ location.hash=v; } else { render(); } }
 function route(){
@@ -554,7 +606,7 @@ function render(){
   if(v==="home"){ home.hidden=false; host.hidden=true; host.innerHTML=""; renderHomeDynamic(); }
   else {
     home.hidden=true; host.hidden=false;
-    host.innerHTML = ({papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin})[v]();
+    host.innerHTML = ({papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,notes:vNotes})[v]();
     host.querySelectorAll("[data-mixed]").forEach(el=>{ el.indeterminate = true; });
   }
   if(v==="quiz") startTimer();
@@ -972,6 +1024,57 @@ function vJoin(){
     </form>
   </div>`;
 }
+/* ---------- study material (Crisp Notes) ---------- */
+function waLink(text){ return `https://wa.me/${DATA.wa}?text=${encodeURIComponent(text)}`; }
+function noteCard(b){
+  const te = b.lang==="te";
+  const name = `${b.title_en}: Crisp Notes 2026-27 (${b.medium_en})`;
+  const buy = b.buy
+    ? `<a class="btn btn-primary" href="${esc(b.buy)}" target="_blank" rel="noopener">Buy now</a>`
+    : `<button class="btn btn-primary" type="button" disabled>Coming soon</button>`;
+  return `<article class="card note">
+    <button class="note-cover" type="button" data-act="sample" data-id="${b.id}" aria-label="See sample pages of ${esc(name)}"><img src="${esc(b.cover)}" alt="Cover of ${esc(name)}" width="560" height="792" loading="lazy"></button>
+    <div style="min-width:0">
+      <div class="pills"><span class="pill blue">${esc(b.medium_en)}</span><span class="pill">Vol. ${b.vol}</span></div>
+      <h3${te?' lang="te"':""}>${esc(b.title)}</h3>
+      ${te? `<p class="en">${esc(b.title_en)}</p>` : ""}
+      <p class="note-meta mono">${b.pages} pages · ${b.chapters.length-1} chapters + practice · ${b.pyqs} PYQs</p>
+      <details class="note-toc"><summary>What's inside</summary><ol${te?' lang="te"':""}>${b.chapters.map(c=>`<li>${esc(c)}</li>`).join("")}</ol></details>
+      <div class="note-buy"><span class="price">₹${b.price}</span>${buy}</div>
+      <div class="note-links"><button class="btn btn-ghost btn-sm" type="button" data-act="sample" data-id="${b.id}">See sample pages</button>${b.buy? "" : `<a class="btn btn-ghost btn-sm" href="${waLink(`Hi Anil, please tell me when "${name}" is available to buy.`)}" target="_blank" rel="noopener">Notify me on WhatsApp</a>`}</div>
+    </div>
+  </article>`;
+}
+function vNotes(){
+  const N = DATA.notes||[];
+  const anyBuy = N.some(b=>b.buy);
+  const groups = [...new Set(N.map(b=>b.subject))].map(sub=>{
+    const bs = N.filter(b=>b.subject===sub);
+    return `<div class="notes-sub"><h2>${esc(sub)}</h2><span class="muted" style="font-size:14px">Group-II Mains · Paper II · Section ${sub==="AP Economy"?"A":"B"}</span></div><div class="notes-grid">${bs.map(noteCard).join("")}</div>`;
+  }).join("");
+  return `<div class="wrap view">
+    ${head("Study material · Crisp Notes 2026-27","Crisp Notes for APPSC Group-II Mains", "Short, exam-focused books by Jupudi Anil Kumar with the latest 2026-27 data, a Prelims/Mains tag on every topic, memes that make tricky facts stick, practice questions and APPSC's own previous questions with the official answers. English and Telugu medium are separate books.")}
+    <div class="notes-steps">
+      <div class="card"><span class="n">1</span><div><b>See the sample pages</b><p>Tap a cover to look inside before you buy.</p></div></div>
+      <div class="card"><span class="n">2</span><div><b>Pay ₹${N[0]?N[0].price:49} online</b><p>${anyBuy? "Secure online payment by UPI or card." : "Online payment opens soon. Tap “Notify me” to get a WhatsApp message when it does."}</p></div></div>
+      <div class="card"><span class="n">3</span><div><b>Download the PDF</b><p>Read it on your phone or print it. For your personal study only.</p></div></div>
+    </div>
+    ${groups}
+    <div class="card notes-foot"><b>The previous-question portal stays free.</b> The notes are optional and priced low so that any aspirant can afford them. Questions about the books? Call or WhatsApp <a href="tel:+919494792739">+91 94947 92739</a> or email <a href="mailto:anilkumarjupudi360360@gmail.com">anilkumarjupudi360360@<wbr>gmail.com</a>.</div>
+  </div>`;
+}
+function openSample(id){
+  const b = (DATA.notes||[]).find(x=>x.id===id); if(!b) return;
+  let d = document.getElementById("sampleDlg");
+  if(!d){ d = document.createElement("dialog"); d.id="sampleDlg"; d.className="sample-dlg"; document.body.appendChild(d);
+    d.addEventListener("click", e=>{ if(e.target===d) d.close(); }); }
+  const name = `${b.title_en}: Crisp Notes 2026-27 (${b.medium_en})`;
+  d.innerHTML = `<header><b>${esc(name)}</b><button class="btn btn-secondary btn-sm" type="button" data-act="closesample">Close</button></header>
+    <div class="imgs"><img src="${esc(b.cover)}" alt="Cover"><p>Cover</p>${b.samples.map((s,i)=>`<img src="${esc(s)}" alt="Sample page ${i+1}" loading="lazy"><p>Sample page ${i+1} of ${b.pages}</p>`).join("")}</div>`;
+  if(d.showModal) d.showModal(); else d.setAttribute("open","");
+  d.scrollTop = 0;
+}
+
 function vAbout(){
   const ig = DATA.instagram;
   return `<div class="wrap view">
@@ -998,6 +1101,7 @@ function vAbout(){
           <a href="mailto:anilkumarjupudi360360@gmail.com"><span>Email</span>anilkumarjupudi360360@<wbr>gmail.com</a>
         </div>
         <p class="muted" style="font-size:14px;margin:14px 0 0">${ST.name? `Timed-test scores are saved as <b>${esc(ST.name)}</b> (${esc(ST.district||"")}). <a href="#join">Edit your details</a>` : "Before your first timed test you'll be asked for your name, phone, email and district, so your scores can be saved."}</p>
+        <p style="margin:16px 0 0"><a href="initiative.html"><b>Read about the Learn with Anil initiative →</b></a> &nbsp;·&nbsp; <a href="#notes"><b>Crisp Notes study material →</b></a></p>
         <div class="handle">Follow on Instagram for daily current affairs: <a href="https://www.instagram.com/${ig}/" target="_blank" rel="noopener"><code>@${ig}</code></a><button class="btn btn-ghost btn-sm" type="button" data-act="copyig">Copy handle</button></div>
       </div>
     </section>
@@ -1051,6 +1155,8 @@ document.addEventListener("click", e=>{
     case "bankmore": bankLimit+=20; { const box=$("#bankResults"); if(box) box.innerHTML=bankResults(); } break;
     case "bankclear": UI.bankQ=""; UI.bankPaper="all"; UI.bankSubj="all"; UI.bankTopic="all"; bankLimit=20; render(); break;
     case "lang": { P.lang = b.dataset.l==="te"? "te" : "en"; savePrefs(); syncLang(); render(); break; }
+    case "sample": openSample(b.dataset.id); break;
+    case "closesample": { const d=document.getElementById("sampleDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } break; }
     case "copyig": { const h="@"+DATA.instagram; try{ navigator.clipboard.writeText(h).then(()=>toast("Copied "+h), ()=>toast("Handle: "+h)); }catch(_){ toast("Handle: "+h); } break; }
   }
 });
