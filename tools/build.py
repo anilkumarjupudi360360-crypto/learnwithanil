@@ -207,7 +207,7 @@ def main():
                  f'and the 2019 papers, with official final-key answers and explanations. Topic-wise quizzes by Learn with Anil.')
     ld = [
       {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":"Learn with Anil – APPSC Group-II PYQs","url":SITE_URL+'/'},
-      {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"Polity Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:anilkumarjupudi360360@gmail.com","url":SITE_URL+'/#about',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/"]},
+      {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"UPSC Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:anilkumarjupudi360360@gmail.com","url":SITE_URL+'/#about',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/"]},
       {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]},
     ]
     seo = (f'<link rel="canonical" href="{SITE_URL}/">\n<meta name="robots" content="index,follow">\n'
