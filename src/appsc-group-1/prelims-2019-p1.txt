@@ -344,7 +344,7 @@ According to 2010 Human Development Index calculated (Compiled and Computed from
 Q 65 | eco | Planning & Development
 What is the approach followed by National Institution For Transforming India Aayog in the economic policy making ?
 = Co-operative Federalism
-~ NITI Aayog, which replaced the Planning Commission on 1 January 2015, follows a bottom-up approach of co-operative federalism, involving the States (through its Governing Council of all Chief Ministers) as equal partners in policy making.
+~ NITI Aayog, which replaced the Planning Commission on 1 January 2015, follows a bottom-up approach of co-operative federalism, involving the States as equal partners in policy making through its Governing Council, which includes the Chief Ministers of all States.
 
 Q 66 | eco | Planning & Development
 Though removal of unemployment is mentioned as one of the objectives of economic planning in all Five Year Plans, from which plan onward is serious concern shown for solving the unemployment problem ?
@@ -359,7 +359,7 @@ Which of the following statements is incorrect ?
 Q 68 | eco | Agriculture
 To enhance food security and to make Indian Agriculture more resilent to climate change, which programme was started in 2011-12 ?
 = National Mission for Sustainable Agriculture
-~ The National Mission for Sustainable Agriculture, one of the eight missions under the National Action Plan on Climate Change, aims to make Indian agriculture more productive, sustainable and climate-resilient and so protect food security. (Official key; some sources differ.)
+~ The National Mission for Sustainable Agriculture, one of the eight missions of the National Action Plan on Climate Change, aims to make Indian agriculture more productive, sustainable and climate-resilient so as to protect food security. However, NMSA began operating only in 2014-15, while ICAR's National Initiative on Climate Resilient Agriculture (NICRA), launched in February 2011, better matches the stated year. (Official key; some sources differ.)
 
 Q 69 | eco | National Income & Growth
 Which sector comprises water supply ?
@@ -404,7 +404,7 @@ What is the basic goal of "Mission Indradhanush" launched in 2014 by Central Gov
 Q 78 | eco | AP Economy
 In relation to Andhra Pradesh, which of the following applications has received CSI Nihilent Best e-governance Award during the year 2017 – 18 ?
 = D-Krishi
-~ As per the official key, D-Krishi, an e-governance application of Andhra Pradesh's agriculture sector, won the CSI-Nihilent e-Governance Award for 2017-18.
+~ D-Krishi, an Aadhaar-enabled seed-distribution application built by NIC Andhra Pradesh to supply subsidised seeds to farmers according to their landholding, won the CSI-Nihilent e-Governance Award.
 
 Q 79 | eco | Money, Banking & Inflation
 Which organization launched Rupay card ?
@@ -439,12 +439,12 @@ What is the objective of National Credit Fund for Women, launched by Government 
 Q 86 | eco | AP Economy
 According to 2014 Reorganization Act, after the bifurcation of the State how many revenue divisions are there in Andhra Pradesh ?
 = 50
-~ After bifurcation the residual State of Andhra Pradesh had 13 districts, which according to the official key were grouped into 50 revenue divisions.
+~ After the AP Reorganisation Act, 2014, the residual State of Andhra Pradesh had 13 districts. The official key puts the number of revenue divisions at 50. Sources give slightly different counts because new divisions were added over time; there were about 51 before the 2022 district reorganisation, which raised the number to 72.
 
 Q 87 | eco | AP Economy
 After bifurcation, according to the suggestions of NITI Aayog who has to take the construction responsibility of Polavaram Project ?
 = State Government
-~ Polavaram was declared a national project under Section 90 of the AP Reorganisation Act, 2014, but on NITI Aayog's suggestion (2016) its execution was entrusted to the Andhra Pradesh Government on behalf of the Centre, with central funding for the irrigation component.
+~ Polavaram was declared a national project under Section 90 of the AP Reorganisation Act, 2014. On the recommendation of NITI Aayog, its execution was entrusted to the Andhra Pradesh Government on the Centre's behalf, and in September 2016 the Centre agreed to fund the remaining cost of the irrigation component.
 
 Q 88 | eco | AP Economy
 Recently announced South Coastal Railway zone comprises of
@@ -454,7 +454,7 @@ Recently announced South Coastal Railway zone comprises of
 Q 89 | eco | AP Economy
 What is the name of the project launched with the objective of computerization of Urban, Local bodies ?
 = E-suvidha
-~ As per the official key, E-suvidha is the project for computerising urban local bodies so that their civic services can be delivered to citizens electronically.
+~ e-Suvidha was the Andhra Pradesh Municipal Administration Department's e-governance project to computerise urban local bodies. It introduced one uniform software system across all municipalities for their functions, and a central system to monitor them, so that civic services could be delivered electronically.
 
 Q 90 | eco | AP Economy
 Which district in Andhra Pradesh has the largest area under food crops ?
@@ -514,7 +514,7 @@ Which of the following statement/s rightly explain/s about tropopause ?
 (ii) It is the transition zone between troposphere and stratosphere.
 (iii) It lies below the stratosphere
 = Statement ii & iii are correct
-~ The tropopause is the transition layer between the troposphere and the stratosphere, so it lies just below the stratosphere. (Official key; some sources differ, since the height of the tropopause also varies with latitude and season.)
+~ The tropopause is the transition zone between the troposphere and the stratosphere and lies just below the stratosphere, so (ii) and (iii) are correct. Statement (i) is also true in standard texts, because the height of the tropopause varies with the season (higher in summer) as well as with latitude, but the key leaves it out. (Official key; some sources differ.)
 
 Q 100 | geo | Physical Geography
 Wind in the northern hemisphere is deflected towards right due to
@@ -554,7 +554,7 @@ b. Groundnut    II. Uttar Pradesh
 c. Ragi    III. Gujarat
 d. Rice    IV. West Bengal
 = a-II, b-III, c-I, d-IV
-~ Uttar Pradesh is the leading producer of barley, Gujarat of groundnut, Karnataka of ragi and West Bengal of rice.
+~ Gujarat is the leading producer of groundnut, Karnataka of ragi and West Bengal of rice. Of the States listed, Uttar Pradesh is the major barley producer, although Rajasthan now produces more barley than any other State.
 
 Q 107 | geo | World Geography
 Which one of the following Islamic countries is predominantly of Shia sect ?

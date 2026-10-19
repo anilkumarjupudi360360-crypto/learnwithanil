@@ -464,7 +464,7 @@ II. India, using ASAT Missile, destroyed a live satellite in Low Earth Orbit.
 III. ASAT missile is capable of shooting down targets moving at a speed of 50 km per second at an altitude as high as 2000 km.
 Which of the statements regarding ASAT are true ?
 = I and II only
-~ In Mission Shakti (27 March 2019) a DRDO interceptor missile hit and destroyed a live Indian satellite (Microsat-R) in low Earth orbit at about 300 km, so I and II are true. III overstates the capability: satellites in low orbit move at only about 7.8 km per second, and the test was nowhere near 2000 km.
+~ In Mission Shakti (27 March 2019) a DRDO interceptor missile destroyed a live Indian satellite, Microsat-R, in low Earth orbit below 300 km, so I and II are true. III is false: DRDO said the missile can hit targets moving at about 10 km per second at altitudes up to about 1,200 km, not 50 km per second at 2,000 km.
 
 Q 82 | sci | Energy
 Which of the following events has delayed the commissioning of the Kudankulam Nuclear Power Plant ?
@@ -473,7 +473,7 @@ II. India’s economic crisis of 1991
 III. Protests by Civil Society
 Select the correct answer from below :
 = I and III only
-~ Kudankulam was agreed between India and the USSR in 1988; the break-up of the USSR in 1991 stalled the project for years, and later the anti-nuclear protests by local people and civil-society groups (2011–12) delayed the commissioning of Unit 1.
+~ Kudankulam was agreed between India and the USSR in 1988; the break-up of the USSR in 1991 stalled the project for years, and later the anti-nuclear protests by local people and civil-society groups (2011–12) delayed the commissioning of Unit 1. The delay is put down to the upheaval in the former Soviet Union, not India's own 1991 economic crisis, so II is left out.
 
 Q 83 | sci | Energy
 With reference to a mega project pertaining to Nuclear Fusion research that is being built in Southern France, International Thermonuclear Experimental Reactor (ITER), consider the following statements :
@@ -538,7 +538,7 @@ I. Andhra Pradesh Integrated Irrigation and Agriculture Transformation Project i
 II. Andhra Pradesh Community Managed Natural Farming (APCNF) is aided by Japan International Co-operation Agency (JICA).
 III. Andhra Pradesh Irrigation and Livelihood Improvement Project Phase-3 is aided by KfW – German Bank.
 = Only I is correct
-~ The AP Integrated Irrigation and Agriculture Transformation Project (APIIATP) is a World Bank project. JICA's loan goes to the AP Irrigation and Livelihood Improvement Project (APILIP), not to APCNF, and APILIP is not a KfW project, so only I is a correct match.
+~ The AP Integrated Irrigation and Agriculture Transformation Project (APIIATP) is a World Bank project. II and III mix up the lenders: AP Community Managed Natural Farming is backed by a loan from Germany's KfW (signed in January 2020), while the AP Irrigation and Livelihood Improvement Project (APILIP) is aided by JICA, so only I is correct.
 
 Q 92 | cur | AP Affairs
 Which of the following statements are correct regarding status of Andhra Pradesh Aquaculture ?
@@ -547,7 +547,7 @@ II. Andhra Pradesh Fisheries University is to be established in East Godavari Di
 III. The Diesel Oil Subsidy for fishermen boats is associated with exemption of sales tax on HSD oil.
 IV. The Government has enhanced the financial benefit to deceased fishermen (while fishing) family from ₹ 5 lakhs to ₹ 10 lakhs.
 = Only I, III and IV are correct
-~ YSR Matsyakara Bharosa gives ₹10,000 to marine fishing families during the annual fishing ban, and the ex gratia for families of fishermen who die while fishing was raised from ₹5 lakh to ₹10 lakh. II is wrong because the AP Fisheries University is being set up at Narsapuram in West Godavari district.
+~ YSR Matsyakara Bharosa gives ₹10,000 to marine fishing families during the annual fishing ban, the diesel subsidy for fishing boats is linked to sales-tax exemption on HSD (diesel) oil, and the ex gratia for families of fishermen who die while fishing was raised from ₹5 lakh to ₹10 lakh. II is wrong because the AP Fisheries University is being set up at Narsapuram in West Godavari district.
 
 Q 93 | cur | AP Affairs
 Which of the following statements are correct about Visakhapatnam-Chennai Industrial Corridor Development Program (VCICDP) ?
@@ -570,7 +570,7 @@ IV. Vodarevu Port is being developed on Build, Own, Operate and Transfer (BOOT) 
 Q 95 | cur | AP Affairs
 Which of the following minorities have been allotted special budget cover (2021 – 22) by the Government of Andhra Pradesh ?
 = Dudekula
-~ The AP budget for 2021–22 made a special allocation for the Dudekula (Noorbasha) community, a backward Muslim group whose traditional occupation is cotton carding.
+~ The AP budget for 2021–22 made a specific allocation for the AP State Noorbasha Dudekula Muslim Cooperative Society Federation, which serves the Dudekula, a backward Muslim community whose traditional occupation is cotton carding.
 
 Q 96 | cur | AP Affairs
 Which of the following statements are valid regarding the initiatives taken by the Andhra Pradesh Government in Women Development and Child Welfare Department ?
@@ -584,7 +584,7 @@ IV. Poshan Abhiyaan is implemented in the State by a 50% external aid from IBRD.
 Q 97 | cur | AP Affairs
 Which of the following statements regarding the investments in Andhra Pradesh at World Economic Forum (WEF) 2022 is incorrect ?
 = Government of Andhra Pradesh signed an MOU with ACE Urban Developers for setting up a Pumps and Compressor manufacturing unit at Mega Industrial Park at Kopparthy, YSR Kadapa district.
-~ AP's MoUs at WEF Davos 2022 were mainly for green-energy projects, with firms such as Adani Green Energy, Greenko and Aurobindo; per the key, no MoU was signed with ACE Urban Developers for a pumps and compressor unit at Kopparthy.
+~ AP's MoUs at WEF Davos 2022 were mainly for green-energy projects with Adani Green Energy, Greenko and Aurobindo Realty, plus an ArcelorMittal Nippon Steel pellet-plant expansion at Visakhapatnam. The key marks the statement about an ACE Urban Developers pumps-and-compressor unit at Kopparthy as the incorrect one.
 
 Q 98 | cur | AP Affairs
 In the recent times which of the following bird had mass mortality at Telineelapuram Important Bird Area (IBA) of Srikakulam district ?
@@ -599,7 +599,7 @@ III. Salur was awarded for innovation and best practices under South zone for to
 IV. Pulivendula was awarded for innovation and best practices under South zone for towns with 25,000 to 50,000 population.
 V. Vijayawada Municipal Corporation was awarded as cleanest capital.
 = I, II and V
-~ As per the official key, the awards to Visakhapatnam (Top Impact Creator, million-plus category), Tirupati (first in Safaimitra Suraksha) and Vijayawada (cleanest capital) are correct, while the South-zone innovation and best-practice awards credited to Salur and Pulivendula in III and IV are treated as wrong.
+~ In Swachh Survekshan 2022, Visakhapatnam was named 'Top Impact Creator' (million-plus cities), Tirupati came first in Safaimitra Suraksha and Vijayawada was the cleanest capital, so I, II and V are correct. III and IV swap the population bands: Pulivendula won the South-zone innovation and best-practice award for towns of 50,000 to 1 lakh, and Salur won it for towns of 25,000 to 50,000.
 
 Q 100 | cur | AP Affairs
 Consider the following statements :
