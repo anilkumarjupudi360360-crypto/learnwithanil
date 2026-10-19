@@ -1,112 +1,717 @@
 {
-  "cats": [
-    {"id": "ap", "name": "Andhra Pradesh", "te": "ఆంధ్రప్రదేశ్", "desc": "APPSC groups and posts, police, teacher and secretariat exams"},
-    {"id": "tg", "name": "Telangana", "te": "తెలంగాణ", "desc": "TGPSC (formerly TSPSC) groups and posts, police, teacher and gurukul exams"},
-    {"id": "upsc", "name": "UPSC", "desc": "Civil Services and every other UPSC examination"},
-    {"id": "ssc", "name": "SSC", "desc": "Staff Selection Commission exams"},
-    {"id": "bank", "name": "Banking & Insurance", "desc": "IBPS, SBI, RBI, NABARD and LIC exams"},
-    {"id": "rail", "name": "Railways", "desc": "Railway Recruitment Board exams"}
-  ],
-  "exams": [
-    {"id": "appsc-group-1", "cat": "ap", "b": "APPSC", "t": "Group-I", "n": "Group-I Services"},
-    {"id": "appsc-group-2", "cat": "ap", "b": "APPSC", "t": "Group-II", "n": "Group-II Services", "live": "home"},
-    {"id": "appsc-group-3", "cat": "ap", "b": "APPSC", "t": "Group-III", "n": "Panchayat Secretary"},
-    {"id": "appsc-group-4", "cat": "ap", "b": "APPSC", "t": "Group-IV", "n": "Junior Assistant, Typist"},
-    {"id": "appsc-aee", "cat": "ap", "b": "APPSC", "t": "AEE", "n": "Assistant Executive Engineer"},
-    {"id": "appsc-ae", "cat": "ap", "b": "APPSC", "t": "AE", "n": "Assistant Engineer"},
-    {"id": "appsc-jl", "cat": "ap", "b": "APPSC", "t": "Junior Lecturers", "n": "JL"},
-    {"id": "appsc-dl", "cat": "ap", "b": "APPSC", "t": "Degree Lecturers", "n": "DL"},
-    {"id": "appsc-pl", "cat": "ap", "b": "APPSC", "t": "Polytechnic Lecturers", "n": "PL"},
-    {"id": "appsc-fbo", "cat": "ap", "b": "APPSC", "t": "FBO", "n": "Forest Beat Officer"},
-    {"id": "appsc-fro", "cat": "ap", "b": "APPSC", "t": "FRO", "n": "Forest Range Officer"},
-    {"id": "appsc-fso", "cat": "ap", "b": "APPSC", "t": "FSO", "n": "Forest Section Officer"},
-    {"id": "appsc-amvi", "cat": "ap", "b": "APPSC", "t": "AMVI", "n": "Assistant Motor Vehicle Inspector"},
-    {"id": "appsc-hwo", "cat": "ap", "b": "APPSC", "t": "Hostel Welfare Officer"},
-    {"id": "appsc-deo", "cat": "ap", "b": "APPSC", "t": "Dy. EO", "n": "Deputy Educational Officer"},
-    {"id": "appsc-drug", "cat": "ap", "b": "APPSC", "t": "Drug Inspector"},
-    {"id": "appsc-hort", "cat": "ap", "b": "APPSC", "t": "Horticulture Officer"},
-    {"id": "appsc-aso", "cat": "ap", "b": "APPSC", "t": "ASO", "n": "Assistant Statistical Officer"},
-    {"id": "ap-sachivalayam", "cat": "ap", "b": "AP Govt", "t": "Sachivalayam", "n": "Grama / Ward Secretariat"},
-    {"id": "ap-police-si", "cat": "ap", "b": "APSLPRB", "t": "Police SI", "n": "Sub-Inspector"},
-    {"id": "ap-police-constable", "cat": "ap", "b": "APSLPRB", "t": "Police Constable"},
-    {"id": "ap-dsc", "cat": "ap", "b": "AP School Education", "t": "AP DSC", "n": "Teacher Recruitment"},
-    {"id": "ap-tet", "cat": "ap", "b": "AP School Education", "t": "AP TET", "n": "Teacher Eligibility Test"},
-
-    {"id": "tgpsc-group-1", "cat": "tg", "b": "TGPSC", "t": "Group-I", "n": "Group-I Services"},
-    {"id": "tgpsc-group-2", "cat": "tg", "b": "TGPSC", "t": "Group-II", "n": "Group-II Services"},
-    {"id": "tgpsc-group-3", "cat": "tg", "b": "TGPSC", "t": "Group-III", "n": "Group-III Services"},
-    {"id": "tgpsc-group-4", "cat": "tg", "b": "TGPSC", "t": "Group-IV", "n": "Junior Assistant, Typist"},
-    {"id": "tgpsc-aee", "cat": "tg", "b": "TGPSC", "t": "AEE", "n": "Assistant Executive Engineer"},
-    {"id": "tgpsc-ae", "cat": "tg", "b": "TGPSC", "t": "AE", "n": "Assistant Engineer"},
-    {"id": "tgpsc-jl", "cat": "tg", "b": "TGPSC", "t": "Junior Lecturers", "n": "JL"},
-    {"id": "tgpsc-dl", "cat": "tg", "b": "TGPSC", "t": "Degree Lecturers", "n": "DL"},
-    {"id": "tgpsc-pl", "cat": "tg", "b": "TGPSC", "t": "Polytechnic Lecturers", "n": "PL"},
-    {"id": "tgpsc-asst-prof", "cat": "tg", "b": "TGPSC", "t": "Assistant Professors"},
-    {"id": "tgpsc-dao", "cat": "tg", "b": "TGPSC", "t": "DAO", "n": "Divisional Accounts Officer"},
-    {"id": "tgpsc-aso", "cat": "tg", "b": "TGPSC", "t": "ASO", "n": "Assistant Statistical Officer"},
-    {"id": "tgpsc-mpso", "cat": "tg", "b": "TGPSC", "t": "MPSO", "n": "Mandal Planning & Statistical Officer"},
-    {"id": "tgpsc-amvi", "cat": "tg", "b": "TGPSC", "t": "AMVI", "n": "Assistant Motor Vehicle Inspector"},
-    {"id": "tgpsc-fbo", "cat": "tg", "b": "TGPSC", "t": "FBO", "n": "Forest Beat Officer"},
-    {"id": "tgpsc-fro", "cat": "tg", "b": "TGPSC", "t": "FRO", "n": "Forest Range Officer"},
-    {"id": "tgpsc-fso", "cat": "tg", "b": "TGPSC", "t": "FSO", "n": "Forest Section Officer"},
-    {"id": "tgpsc-hwo", "cat": "tg", "b": "TGPSC", "t": "Hostel Welfare Officer"},
-    {"id": "tgpsc-deo", "cat": "tg", "b": "TGPSC", "t": "Dy. EO", "n": "Deputy Educational Officer"},
-    {"id": "tgpsc-drug", "cat": "tg", "b": "TGPSC", "t": "Drug Inspector"},
-    {"id": "tgpsc-hort", "cat": "tg", "b": "TGPSC", "t": "Horticulture Officer"},
-    {"id": "tgpsc-aeo", "cat": "tg", "b": "TGPSC", "t": "AEO", "n": "Agricultural Extension Officer"},
-    {"id": "tgpsc-vas", "cat": "tg", "b": "TGPSC", "t": "Veterinary Assistant Surgeon"},
-    {"id": "tgpsc-health", "cat": "tg", "b": "TGPSC", "t": "Health Supervisor"},
-    {"id": "tgpsc-mao", "cat": "tg", "b": "TGPSC", "t": "Municipal Accounts Officer"},
-    {"id": "tgpsc-tpbo", "cat": "tg", "b": "TGPSC", "t": "Town Planning Building Overseer"},
-    {"id": "tgpsc-ward", "cat": "tg", "b": "TGPSC", "t": "Ward Officer"},
-    {"id": "tgpsc-surveyor", "cat": "tg", "b": "TGPSC", "t": "Deputy Surveyor"},
-    {"id": "tgpsc-technician", "cat": "tg", "b": "TGPSC", "t": "Technician", "n": "Grade I, II, III"},
-    {"id": "tgpsc-technical", "cat": "tg", "b": "TGPSC", "t": "Technical Officer", "n": "R&B DE, SE"},
-    {"id": "tgpsc-pd", "cat": "tg", "b": "TGPSC", "t": "Physical Director"},
-    {"id": "tgpsc-librarian", "cat": "tg", "b": "TGPSC", "t": "Librarian"},
-    {"id": "tg-panchayat", "cat": "tg", "b": "TG Panchayat Raj", "t": "Panchayat Secretary"},
-    {"id": "tg-gurukul", "cat": "tg", "b": "TREI-RB", "t": "Gurukul", "n": "Residential school posts"},
-    {"id": "tg-trt", "cat": "tg", "b": "TG School Education", "t": "TRT / DSC", "n": "Teacher Recruitment"},
-    {"id": "tg-tet", "cat": "tg", "b": "TG School Education", "t": "TG TET", "n": "Teacher Eligibility Test"},
-    {"id": "tg-police-si", "cat": "tg", "b": "TGSLPRB", "t": "Police SI", "n": "Sub-Inspector"},
-    {"id": "tg-police-constable", "cat": "tg", "b": "TGSLPRB", "t": "Police Constable"},
-
-    {"id": "upsc-cse", "cat": "upsc", "b": "UPSC", "t": "Civil Services", "n": "CSE · Prelims & Mains"},
-    {"id": "upsc-ifos", "cat": "upsc", "b": "UPSC", "t": "Indian Forest Service", "n": "IFoS"},
-    {"id": "upsc-epfo", "cat": "upsc", "b": "UPSC", "t": "EPFO", "n": "EO/AO & APFC"},
-    {"id": "upsc-cds", "cat": "upsc", "b": "UPSC", "t": "CDS", "n": "Combined Defence Services"},
-    {"id": "upsc-nda", "cat": "upsc", "b": "UPSC", "t": "NDA & NA", "n": "National Defence Academy"},
-    {"id": "upsc-capf", "cat": "upsc", "b": "UPSC", "t": "CAPF", "n": "Assistant Commandants"},
-    {"id": "upsc-ese", "cat": "upsc", "b": "UPSC", "t": "ESE", "n": "Engineering Services"},
-    {"id": "upsc-cms", "cat": "upsc", "b": "UPSC", "t": "CMS", "n": "Combined Medical Services"},
-    {"id": "upsc-geo", "cat": "upsc", "b": "UPSC", "t": "Geo-Scientist", "n": "Combined Geo-Scientist"},
-    {"id": "upsc-ies-iss", "cat": "upsc", "b": "UPSC", "t": "IES / ISS", "n": "Economic & Statistical Service"},
-
-    {"id": "ssc-cgl", "cat": "ssc", "b": "SSC", "t": "CGL", "n": "Combined Graduate Level"},
-    {"id": "ssc-chsl", "cat": "ssc", "b": "SSC", "t": "CHSL", "n": "Combined Higher Secondary Level"},
-    {"id": "ssc-mts", "cat": "ssc", "b": "SSC", "t": "MTS", "n": "Multi-Tasking Staff"},
-    {"id": "ssc-cpo", "cat": "ssc", "b": "SSC", "t": "CPO", "n": "SI in Delhi Police & CAPFs"},
-    {"id": "ssc-gd", "cat": "ssc", "b": "SSC", "t": "GD Constable"},
-    {"id": "ssc-steno", "cat": "ssc", "b": "SSC", "t": "Stenographer", "n": "Grade C & D"},
-    {"id": "ssc-je", "cat": "ssc", "b": "SSC", "t": "JE", "n": "Junior Engineer"},
-    {"id": "ssc-selection", "cat": "ssc", "b": "SSC", "t": "Selection Post"},
-
-    {"id": "ibps-po", "cat": "bank", "b": "IBPS", "t": "IBPS PO", "n": "Probationary Officer"},
-    {"id": "ibps-clerk", "cat": "bank", "b": "IBPS", "t": "IBPS Clerk"},
-    {"id": "ibps-so", "cat": "bank", "b": "IBPS", "t": "IBPS SO", "n": "Specialist Officer"},
-    {"id": "ibps-rrb", "cat": "bank", "b": "IBPS", "t": "IBPS RRB", "n": "Officer Scale I & Office Assistant"},
-    {"id": "sbi-po", "cat": "bank", "b": "SBI", "t": "SBI PO", "n": "Probationary Officer"},
-    {"id": "sbi-clerk", "cat": "bank", "b": "SBI", "t": "SBI Clerk", "n": "Junior Associate"},
-    {"id": "rbi-grade-b", "cat": "bank", "b": "RBI", "t": "RBI Grade B"},
-    {"id": "rbi-assistant", "cat": "bank", "b": "RBI", "t": "RBI Assistant"},
-    {"id": "nabard-grade-a", "cat": "bank", "b": "NABARD", "t": "NABARD Grade A"},
-    {"id": "lic-aao", "cat": "bank", "b": "LIC", "t": "LIC AAO", "n": "Assistant Administrative Officer"},
-
-    {"id": "rrb-ntpc", "cat": "rail", "b": "RRB", "t": "NTPC", "n": "Non-Technical Popular Categories"},
-    {"id": "rrb-group-d", "cat": "rail", "b": "RRB", "t": "Group D", "n": "Level 1 posts"},
-    {"id": "rrb-alp", "cat": "rail", "b": "RRB", "t": "ALP", "n": "Assistant Loco Pilot"},
-    {"id": "rrb-je", "cat": "rail", "b": "RRB", "t": "JE", "n": "Junior Engineer"},
-    {"id": "rrb-technician", "cat": "rail", "b": "RRB", "t": "Technician"},
-    {"id": "rpf", "cat": "rail", "b": "RRB", "t": "RPF", "n": "SI & Constable"}
-  ]
+ "cats": [
+  {
+   "id": "upsc",
+   "name": "UPSC",
+   "desc": "Civil Services and every other UPSC examination"
+  },
+  {
+   "id": "ap",
+   "name": "APPSC & Andhra Pradesh",
+   "te": "ఆంధ్రప్రదేశ్",
+   "desc": "APPSC groups and posts, police, teacher and secretariat exams"
+  },
+  {
+   "id": "tg",
+   "name": "TGPSC & Telangana",
+   "te": "తెలంగాణ",
+   "desc": "TGPSC (formerly TSPSC) groups and posts, police, teacher and gurukul exams"
+  },
+  {
+   "id": "ssc",
+   "name": "SSC",
+   "desc": "Staff Selection Commission exams"
+  },
+  {
+   "id": "bank",
+   "name": "Banking & Insurance",
+   "desc": "IBPS, SBI, RBI, NABARD and LIC exams"
+  },
+  {
+   "id": "rail",
+   "name": "Railways",
+   "desc": "Railway Recruitment Board exams"
+  }
+ ],
+ "exams": [
+  {
+   "id": "upsc-cse",
+   "cat": "upsc",
+   "b": "UPSC",
+   "t": "Civil Services",
+   "n": "CSE · Prelims & Mains"
+  },
+  {
+   "id": "upsc-ifos",
+   "cat": "upsc",
+   "b": "UPSC",
+   "t": "Indian Forest Service",
+   "n": "IFoS"
+  },
+  {
+   "id": "upsc-epfo",
+   "cat": "upsc",
+   "b": "UPSC",
+   "t": "EPFO",
+   "n": "EO/AO & APFC"
+  },
+  {
+   "id": "upsc-cds",
+   "cat": "upsc",
+   "b": "UPSC",
+   "t": "CDS",
+   "n": "Combined Defence Services"
+  },
+  {
+   "id": "upsc-nda",
+   "cat": "upsc",
+   "b": "UPSC",
+   "t": "NDA & NA",
+   "n": "National Defence Academy"
+  },
+  {
+   "id": "upsc-capf",
+   "cat": "upsc",
+   "b": "UPSC",
+   "t": "CAPF",
+   "n": "Assistant Commandants"
+  },
+  {
+   "id": "upsc-ese",
+   "cat": "upsc",
+   "b": "UPSC",
+   "t": "ESE",
+   "n": "Engineering Services"
+  },
+  {
+   "id": "upsc-cms",
+   "cat": "upsc",
+   "b": "UPSC",
+   "t": "CMS",
+   "n": "Combined Medical Services"
+  },
+  {
+   "id": "upsc-geo",
+   "cat": "upsc",
+   "b": "UPSC",
+   "t": "Geo-Scientist",
+   "n": "Combined Geo-Scientist"
+  },
+  {
+   "id": "upsc-ies-iss",
+   "cat": "upsc",
+   "b": "UPSC",
+   "t": "IES / ISS",
+   "n": "Economic & Statistical Service"
+  },
+  {
+   "id": "appsc-group-1",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Group-I",
+   "n": "Group-I Services"
+  },
+  {
+   "id": "appsc-group-2",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Group-II",
+   "n": "Group-II Services",
+   "live": "home"
+  },
+  {
+   "id": "appsc-group-3",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Group-III",
+   "n": "Panchayat Secretary"
+  },
+  {
+   "id": "appsc-group-4",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Group-IV",
+   "n": "Junior Assistant, Typist"
+  },
+  {
+   "id": "appsc-aee",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "AEE",
+   "n": "Assistant Executive Engineer"
+  },
+  {
+   "id": "appsc-ae",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "AE",
+   "n": "Assistant Engineer"
+  },
+  {
+   "id": "appsc-jl",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Junior Lecturers",
+   "n": "JL"
+  },
+  {
+   "id": "appsc-dl",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Degree Lecturers",
+   "n": "DL"
+  },
+  {
+   "id": "appsc-pl",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Polytechnic Lecturers",
+   "n": "PL"
+  },
+  {
+   "id": "appsc-fbo",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "FBO",
+   "n": "Forest Beat Officer"
+  },
+  {
+   "id": "appsc-fro",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "FRO",
+   "n": "Forest Range Officer"
+  },
+  {
+   "id": "appsc-fso",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "FSO",
+   "n": "Forest Section Officer"
+  },
+  {
+   "id": "appsc-amvi",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "AMVI",
+   "n": "Assistant Motor Vehicle Inspector"
+  },
+  {
+   "id": "appsc-hwo",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Hostel Welfare Officer"
+  },
+  {
+   "id": "appsc-deo",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Dy. EO",
+   "n": "Deputy Educational Officer"
+  },
+  {
+   "id": "appsc-drug",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Drug Inspector"
+  },
+  {
+   "id": "appsc-hort",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Horticulture Officer"
+  },
+  {
+   "id": "appsc-aso",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "ASO",
+   "n": "Assistant Statistical Officer"
+  },
+  {
+   "id": "ap-sachivalayam",
+   "cat": "ap",
+   "b": "AP Govt",
+   "t": "Sachivalayam",
+   "n": "Grama / Ward Secretariat"
+  },
+  {
+   "id": "ap-police-si",
+   "cat": "ap",
+   "b": "APSLPRB",
+   "t": "Police SI",
+   "n": "Sub-Inspector"
+  },
+  {
+   "id": "ap-police-constable",
+   "cat": "ap",
+   "b": "APSLPRB",
+   "t": "Police Constable"
+  },
+  {
+   "id": "ap-dsc",
+   "cat": "ap",
+   "b": "AP School Education",
+   "t": "AP DSC",
+   "n": "Teacher Recruitment"
+  },
+  {
+   "id": "ap-tet",
+   "cat": "ap",
+   "b": "AP School Education",
+   "t": "AP TET",
+   "n": "Teacher Eligibility Test"
+  },
+  {
+   "id": "tgpsc-group-1",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Group-I",
+   "n": "Group-I Services"
+  },
+  {
+   "id": "tgpsc-group-2",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Group-II",
+   "n": "Group-II Services"
+  },
+  {
+   "id": "tgpsc-group-3",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Group-III",
+   "n": "Group-III Services"
+  },
+  {
+   "id": "tgpsc-group-4",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Group-IV",
+   "n": "Junior Assistant, Typist"
+  },
+  {
+   "id": "tgpsc-aee",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "AEE",
+   "n": "Assistant Executive Engineer"
+  },
+  {
+   "id": "tgpsc-ae",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "AE",
+   "n": "Assistant Engineer"
+  },
+  {
+   "id": "tgpsc-jl",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Junior Lecturers",
+   "n": "JL"
+  },
+  {
+   "id": "tgpsc-dl",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Degree Lecturers",
+   "n": "DL"
+  },
+  {
+   "id": "tgpsc-pl",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Polytechnic Lecturers",
+   "n": "PL"
+  },
+  {
+   "id": "tgpsc-asst-prof",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Assistant Professors"
+  },
+  {
+   "id": "tgpsc-dao",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "DAO",
+   "n": "Divisional Accounts Officer"
+  },
+  {
+   "id": "tgpsc-aso",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "ASO",
+   "n": "Assistant Statistical Officer"
+  },
+  {
+   "id": "tgpsc-mpso",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "MPSO",
+   "n": "Mandal Planning & Statistical Officer"
+  },
+  {
+   "id": "tgpsc-amvi",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "AMVI",
+   "n": "Assistant Motor Vehicle Inspector"
+  },
+  {
+   "id": "tgpsc-fbo",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "FBO",
+   "n": "Forest Beat Officer"
+  },
+  {
+   "id": "tgpsc-fro",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "FRO",
+   "n": "Forest Range Officer"
+  },
+  {
+   "id": "tgpsc-fso",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "FSO",
+   "n": "Forest Section Officer"
+  },
+  {
+   "id": "tgpsc-hwo",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Hostel Welfare Officer"
+  },
+  {
+   "id": "tgpsc-deo",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Dy. EO",
+   "n": "Deputy Educational Officer"
+  },
+  {
+   "id": "tgpsc-drug",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Drug Inspector"
+  },
+  {
+   "id": "tgpsc-hort",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Horticulture Officer"
+  },
+  {
+   "id": "tgpsc-aeo",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "AEO",
+   "n": "Agricultural Extension Officer"
+  },
+  {
+   "id": "tgpsc-vas",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Veterinary Assistant Surgeon"
+  },
+  {
+   "id": "tgpsc-health",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Health Supervisor"
+  },
+  {
+   "id": "tgpsc-mao",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Municipal Accounts Officer"
+  },
+  {
+   "id": "tgpsc-tpbo",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Town Planning Building Overseer"
+  },
+  {
+   "id": "tgpsc-ward",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Ward Officer"
+  },
+  {
+   "id": "tgpsc-surveyor",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Deputy Surveyor"
+  },
+  {
+   "id": "tgpsc-technician",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Technician",
+   "n": "Grade I, II, III"
+  },
+  {
+   "id": "tgpsc-technical",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Technical Officer",
+   "n": "R&B DE, SE"
+  },
+  {
+   "id": "tgpsc-pd",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Physical Director"
+  },
+  {
+   "id": "tgpsc-librarian",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "Librarian"
+  },
+  {
+   "id": "tg-panchayat",
+   "cat": "tg",
+   "b": "TG Panchayat Raj",
+   "t": "Panchayat Secretary"
+  },
+  {
+   "id": "tg-gurukul",
+   "cat": "tg",
+   "b": "TREI-RB",
+   "t": "Gurukul",
+   "n": "Residential school posts"
+  },
+  {
+   "id": "tg-trt",
+   "cat": "tg",
+   "b": "TG School Education",
+   "t": "TRT / DSC",
+   "n": "Teacher Recruitment"
+  },
+  {
+   "id": "tg-tet",
+   "cat": "tg",
+   "b": "TG School Education",
+   "t": "TG TET",
+   "n": "Teacher Eligibility Test"
+  },
+  {
+   "id": "tg-police-si",
+   "cat": "tg",
+   "b": "TGSLPRB",
+   "t": "Police SI",
+   "n": "Sub-Inspector"
+  },
+  {
+   "id": "tg-police-constable",
+   "cat": "tg",
+   "b": "TGSLPRB",
+   "t": "Police Constable"
+  },
+  {
+   "id": "ssc-cgl",
+   "cat": "ssc",
+   "b": "SSC",
+   "t": "CGL",
+   "n": "Combined Graduate Level"
+  },
+  {
+   "id": "ssc-chsl",
+   "cat": "ssc",
+   "b": "SSC",
+   "t": "CHSL",
+   "n": "Combined Higher Secondary Level"
+  },
+  {
+   "id": "ssc-mts",
+   "cat": "ssc",
+   "b": "SSC",
+   "t": "MTS",
+   "n": "Multi-Tasking Staff"
+  },
+  {
+   "id": "ssc-cpo",
+   "cat": "ssc",
+   "b": "SSC",
+   "t": "CPO",
+   "n": "SI in Delhi Police & CAPFs"
+  },
+  {
+   "id": "ssc-gd",
+   "cat": "ssc",
+   "b": "SSC",
+   "t": "GD Constable"
+  },
+  {
+   "id": "ssc-steno",
+   "cat": "ssc",
+   "b": "SSC",
+   "t": "Stenographer",
+   "n": "Grade C & D"
+  },
+  {
+   "id": "ssc-je",
+   "cat": "ssc",
+   "b": "SSC",
+   "t": "JE",
+   "n": "Junior Engineer"
+  },
+  {
+   "id": "ssc-selection",
+   "cat": "ssc",
+   "b": "SSC",
+   "t": "Selection Post"
+  },
+  {
+   "id": "ibps-po",
+   "cat": "bank",
+   "b": "IBPS",
+   "t": "IBPS PO",
+   "n": "Probationary Officer"
+  },
+  {
+   "id": "ibps-clerk",
+   "cat": "bank",
+   "b": "IBPS",
+   "t": "IBPS Clerk"
+  },
+  {
+   "id": "ibps-so",
+   "cat": "bank",
+   "b": "IBPS",
+   "t": "IBPS SO",
+   "n": "Specialist Officer"
+  },
+  {
+   "id": "ibps-rrb",
+   "cat": "bank",
+   "b": "IBPS",
+   "t": "IBPS RRB",
+   "n": "Officer Scale I & Office Assistant"
+  },
+  {
+   "id": "sbi-po",
+   "cat": "bank",
+   "b": "SBI",
+   "t": "SBI PO",
+   "n": "Probationary Officer"
+  },
+  {
+   "id": "sbi-clerk",
+   "cat": "bank",
+   "b": "SBI",
+   "t": "SBI Clerk",
+   "n": "Junior Associate"
+  },
+  {
+   "id": "rbi-grade-b",
+   "cat": "bank",
+   "b": "RBI",
+   "t": "RBI Grade B"
+  },
+  {
+   "id": "rbi-assistant",
+   "cat": "bank",
+   "b": "RBI",
+   "t": "RBI Assistant"
+  },
+  {
+   "id": "nabard-grade-a",
+   "cat": "bank",
+   "b": "NABARD",
+   "t": "NABARD Grade A"
+  },
+  {
+   "id": "lic-aao",
+   "cat": "bank",
+   "b": "LIC",
+   "t": "LIC AAO",
+   "n": "Assistant Administrative Officer"
+  },
+  {
+   "id": "rrb-ntpc",
+   "cat": "rail",
+   "b": "RRB",
+   "t": "NTPC",
+   "n": "Non-Technical Popular Categories"
+  },
+  {
+   "id": "rrb-group-d",
+   "cat": "rail",
+   "b": "RRB",
+   "t": "Group D",
+   "n": "Level 1 posts"
+  },
+  {
+   "id": "rrb-alp",
+   "cat": "rail",
+   "b": "RRB",
+   "t": "ALP",
+   "n": "Assistant Loco Pilot"
+  },
+  {
+   "id": "rrb-je",
+   "cat": "rail",
+   "b": "RRB",
+   "t": "JE",
+   "n": "Junior Engineer"
+  },
+  {
+   "id": "rrb-technician",
+   "cat": "rail",
+   "b": "RRB",
+   "t": "Technician"
+  },
+  {
+   "id": "rpf",
+   "cat": "rail",
+   "b": "RRB",
+   "t": "RPF",
+   "n": "SI & Constable"
+  }
+ ],
+ "timers": [
+  {
+   "exam": "upsc-cse",
+   "label": "UPSC Civil Services Prelims 2027",
+   "date": "2027-05-23",
+   "src": "UPSC Calendar 2027"
+  },
+  {
+   "exam": "upsc-nda",
+   "label": "UPSC NDA & NA (I) and CDS (I) 2027",
+   "date": "2027-04-11",
+   "src": "UPSC Calendar 2027"
+  },
+  {
+   "exam": "upsc-ese",
+   "label": "UPSC Engineering Services Prelims 2027",
+   "date": "2027-01-31",
+   "src": "UPSC Calendar 2027"
+  },
+  {
+   "exam": "appsc-group-1",
+   "label": "APPSC Group-I Prelims",
+   "date": "2027-01-24",
+   "src": "APPSC Notification 07/2026"
+  },
+  {
+   "exam": "tgpsc-aee",
+   "label": "TGPSC AEE (Civil), R&B",
+   "date": "2026-11-06",
+   "src": "TGPSC exam schedule, 28 Sep 2026"
+  },
+  {
+   "exam": "ibps-rrb",
+   "label": "IBPS RRB Officer Scale I Prelims",
+   "date": "2026-11-21",
+   "src": "IBPS Calendar 2026-27"
+  }
+ ]
 }

@@ -194,7 +194,7 @@ def main():
     epath = os.path.join(SRC, 'exams.json')
     catalog = json.load(open(epath, encoding='utf-8')) if os.path.exists(epath) else dict(cats=[], exams=[])
     data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=notes, wa=WHATSAPP,
-                exams=catalog['exams'], cats=catalog['cats'])
+                exams=catalog['exams'], cats=catalog['cats'], timers=catalog.get('timers', []))
     photo_uri, photo_bytes = photo_data_uri()
 
     tpl = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
@@ -215,7 +215,8 @@ def main():
                  .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                  .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
                  .replace('{{HOME_NOTES}}', home_notes(notes)).replace('{{HUB}}', hub_html(catalog, total))
-                 .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{total:,}'))
+                 .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{total:,}')
+                 .replace('{{TIMERS}}', timers_html(catalog)))
     site_title = 'Free Previous Year Questions for APPSC Group 2, TGPSC, UPSC, SSC & Bank Exams | Learn with Anil'
     site_desc = (f'Free previous year questions with answers for every exam. APPSC Group 2 is live with {total} questions from '
                  f'{len(papers)} official papers, with official final-key answers and explanations in English and Telugu. '
@@ -324,6 +325,26 @@ def hub_html(catalog, total):
             f'<div class="card empty" id="hubEmpty" hidden><h3>No exam matches your search</h3>'
             f'<p>Tell Anil which exam you are preparing for, and it will be added to the list.</p>'
             f'<div class="row" style="justify-content:center"><a class="btn btn-primary" id="hubAsk" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener">Ask on WhatsApp</a></div></div>')
+
+
+def timers_html(catalog):
+    """Countdown cards for important upcoming exams (the page script fills in the time left and hides past ones)."""
+    timers = [t for t in catalog.get('timers', []) if t['date'] >= date.today().isoformat()]
+    if not timers: return ''
+    ex = {e['id']: e for e in catalog['exams']}
+    cards = []
+    for t in timers:
+        d = date.fromisoformat(t['date'])
+        e = ex.get(t['exam'], {})
+        href = '#' + e['live'] if e.get('live') else '#exam/' + t['exam']
+        cards.append(f'<a class="card cdown" href="{href}" data-date="{t["date"]}T00:00:00+05:30">'
+                     f'<span class="tm-label">{esc(t["label"])}</span>'
+                     f'<span class="tm-date">{d.strftime("%a, %d %b %Y")}</span>'
+                     f'<span class="tm-count"><b class="tm-d">–</b> days <span class="tm-hms">--:--:--</span></span></a>')
+    return (f'<section class="wrap timers-wrap" id="timers" aria-label="Exam countdown">'
+            f'<div class="timers-head"><span class="eyebrow">Exam countdown</span>'
+            f'<span class="muted tm-note">Dates from the official calendars and notifications. They can change, so confirm on the official website.</span></div>'
+            f'<div class="timers">{"".join(cards)}</div></section>')
 
 
 def nw(t):

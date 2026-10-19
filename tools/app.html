@@ -444,6 +444,23 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .topbar.g2 .wrap{gap:4px;padding-block:8px 0}
 .topbar.g2 .nav{flex-basis:100%;justify-content:flex-start;padding-bottom:6px;order:3}
 .topbar.g2 .lang{order:2;margin-left:auto}
+.timers-wrap{display:flex;flex-direction:column;gap:10px;margin-top:-6px}
+.timers-wrap + .hero{margin-top:0}
+.timers-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px}
+.timers-head .eyebrow{color:var(--accent-text);font-weight:600}
+.tm-note{font-size:12.5px}
+.timers{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+@media (max-width:1100px){.timers{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.timers{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;padding-bottom:4px;margin-inline:-16px;padding-inline:16px}.cdown{flex:0 0 72%;scroll-snap-align:start}}
+.cdown{display:flex;flex-direction:column;gap:2px;padding:12px 14px;text-decoration:none;color:inherit;border-top:3px solid var(--accent);transition:border-color .15s,transform .15s}
+.cdown:hover{transform:translateY(-2px);border-color:var(--accent)}
+.tm-label{font-weight:700;font-size:14.5px;line-height:1.3}
+.tm-date{font-size:12.5px;color:var(--muted)}
+.tm-count{margin-top:auto;padding-top:8px;font-size:13px;color:var(--muted);display:grid;grid-template-columns:auto 1fr;align-items:baseline;column-gap:5px}
+.tm-count .tm-d{font-family:var(--f-display);font-weight:800;font-size:26px;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.tm-count .tm-hms{grid-column:1/-1;font-size:13px;color:var(--ink);font-family:var(--f-mono)}
+.cdown.soon-7{border-top-color:var(--bad)}
+.cdown.soon-7 .tm-d{color:var(--bad)}
 .soon{display:flex;flex-direction:column;gap:14px;padding:24px;max-width:760px}
 .soon p{color:var(--muted)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -477,9 +494,10 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 
 <main>
 <div id="hub-static" class="view">
+  {{TIMERS}}
   <section class="hero"><div class="wrap">
     <div class="hero-copy">
-      <p class="eyebrow">APPSC · TGPSC · UPSC · SSC · Banks · Railways</p>
+      <p class="eyebrow">UPSC · APPSC · TGPSC · SSC · Banks · Railways</p>
       <h1>Previous-year questions for <em>every exam.</em></h1>
       <p>Official papers with official-key answers and explanations, free, in English and Telugu. APPSC Group-II is live with {{TOTALC}} questions; the other exams are being added one by one.</p>
       <div class="row"><a class="btn btn-primary" href="#home">Practise APPSC Group-II</a><button class="btn btn-secondary" type="button" data-act="hubscroll">Find your exam</button></div>
@@ -489,15 +507,6 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
       <span><b>Jupudi Anil Kumar</b><br><span>UPSC faculty &amp; mentor · 1000+ hours of civil-services teaching</span></span>
     </a>
   </div></section>
-
-  <section class="wrap section">
-    <div class="figures">
-      <div class="figure"><div class="v">{{NEXAMS}}</div><div class="k">Exams listed</div></div>
-      <div class="figure"><div class="v">{{TOTALC}}</div><div class="k">Questions live now</div></div>
-      <div class="figure"><div class="v">2</div><div class="k">Languages: English &amp; Telugu</div></div>
-      <div class="figure"><div class="v">₹0</div><div class="k">To practise, always</div></div>
-    </div>
-  </section>
 
   <section class="wrap section" id="exams-list">
     <div class="section-title"><h2>Choose your exam</h2></div>
@@ -693,7 +702,7 @@ function render(){
   const mc = mistakeIds().length, mEl=$("#mcount"); mEl.hidden = !mc; mEl.textContent = mc;
   const hub = $("#hub-static"), home = $("#home-static"), host = $("#view");
   hub.hidden = v!=="exams"; home.hidden = v!=="home";
-  if(v==="exams"){ host.hidden=true; host.innerHTML=""; applyHub(); }
+  if(v==="exams"){ host.hidden=true; host.innerHTML=""; applyHub(); tickTimers(); }
   else if(v==="home"){ host.hidden=true; host.innerHTML=""; renderHomeDynamic(); }
   else {
     host.hidden=false;
@@ -750,10 +759,35 @@ function applyHub(){
   const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Anil, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
   const s = $("#examSearch"); if(s && s.value!==(UI.exQ||"")) s.value = UI.exQ||"";
 }
+/* countdown cards on the start page (and one exam's countdown on its page) */
+const TIMERS = (DATA.timers||[]).map(t=>Object.assign({}, t, {at: new Date(t.date+"T00:00:00+05:30").getTime()}));
+function left(at){ const ms = at - Date.now(); if(ms<=0) return null; const s = Math.floor(ms/1000); return {d:Math.floor(s/86400), h:Math.floor(s%86400/3600), m:Math.floor(s%3600/60), s:s%60}; }
+const p2 = n=>String(n).padStart(2,"0");
+function tickTimers(){
+  let shown = 0;
+  document.querySelectorAll(".cdown[data-date]").forEach(c=>{
+    const l = left(new Date(c.dataset.date).getTime());
+    c.hidden = !l; if(!l) return; shown++;
+    c.querySelector(".tm-d").textContent = l.d; c.querySelector(".tm-hms").textContent = `${p2(l.h)}:${p2(l.m)}:${p2(l.s)}`;
+    c.classList.toggle("soon-7", l.d < 7);
+  });
+  const w = $("#timers"); if(w) w.hidden = !shown;
+  document.querySelectorAll("[data-exam-left]").forEach(el=>{ const l = left(+el.dataset.examLeft); el.textContent = l ? l.d : "Today"; });
+}
+setInterval(()=>{ if(current==="exams" || current==="exam") tickTimers(); }, 1000);
 function vExam(){
   const e = EXMAP[UI.exam], c = ECMAP[e.cat]||{name:""}, full = e.t + (e.n? ` (${e.n})` : "");
+  const t = TIMERS.find(x=>x.exam===e.id && x.at > Date.now());
+  const figs = `<div class="figures">
+      <div class="figure"><div class="v">Soon</div><div class="k">Questions being added</div></div>
+      <div class="figure"><div class="v">2</div><div class="k">Languages: English &amp; Telugu</div></div>
+      <div class="figure"><div class="v">₹0</div><div class="k">To practise, always</div></div>
+      ${t ? `<div class="figure"><div class="v" data-exam-left="${t.at}">${left(t.at).d}</div><div class="k">Days to ${esc(t.label)} (${new Date(t.at).toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric",timeZone:"Asia/Kolkata"})})</div></div>`
+          : `<div class="figure"><div class="v">${EXAMS.filter(x=>x.cat===e.cat).length}</div><div class="k">${esc(c.name)} exams listed</div></div>`}
+    </div>`;
   return `<section class="wrap section">
     ${head(c.name && c.name!==e.b ? `${esc(e.b)} · ${esc(c.name)}` : esc(e.b), esc(full), "Previous-year questions for this exam are being added, with official-key answers and explanations, in English and Telugu.", `<a class="btn btn-ghost btn-sm" href="#exams">← All exams</a>`)}
+    ${figs}
     <div class="card soon">
       <span class="pill warn" style="align-self:flex-start">Coming soon</span>
       <h2 style="font-size:21px">${esc(e.b)} ${esc(e.t)}: questions are on the way</h2>
