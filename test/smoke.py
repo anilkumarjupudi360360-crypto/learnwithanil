@@ -22,7 +22,7 @@ async def main():
             await pg.screenshot(path=f'{SHOTS}/hub-{name}.png', full_page=False)
             sw = await pg.evaluate('document.documentElement.scrollWidth');
             if sw > width: errors.append(f'{name}: horizontal overflow {sw}>{width}')
-            await pg.click('#hub-static a.exam.live'); await pg.wait_for_timeout(150)
+            await pg.click('#hub-static a.exam.live[href="#home"]'); await pg.wait_for_timeout(150)
             assert await pg.evaluate('!document.getElementById("home-static").hidden'), 'the live Group-II tile should open the Group-II page'
             if name == 'desk': await pg.screenshot(path=f'{SHOTS}/home-{name}.png', full_page=False)
             for v in ['exams','exam/ssc-cgl','home','papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','join','notes']:
@@ -81,6 +81,30 @@ async def main():
                 await pg.screenshot(path=f'{SHOTS}/notes-phone.png', full_page=True)
                 await pg.evaluate('location.hash="home"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/home-phone.png', full_page=False)
+        # APPSC Group-I page (second exam, its own folder)
+        g1 = os.path.join(ROOT, 'dist', 'site', 'appsc-group-1', 'index.html')
+        if os.path.exists(g1):
+            for width, name in [(1280, 'desk'), (390, 'phone')]:
+                pg = await b.new_page(viewport={'width': width, 'height': 900})
+                pg.on('pageerror', lambda e: errors.append(f'g1 pageerror: {e}'))
+                pg.on('console', lambda m: errors.append(f'g1 console {m.type}: {m.text}') if m.type == 'error' and 'fonts.g' not in m.text and 'ERR_TUNNEL' not in m.text else None)
+                await pg.goto('file://' + g1); await pg.wait_for_timeout(500)
+                assert await pg.evaluate('!document.getElementById("home-static").hidden'), 'Group-I page should open on its home'
+                assert 'Group-I' in await pg.inner_text('#home-static h1')
+                await pg.screenshot(path=f'{SHOTS}/g1-home-{name}.png', full_page=False)
+                for v in ['papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','notes']:
+                    await pg.evaluate(f'location.hash="{v}"'); await pg.wait_for_timeout(150)
+                    sw = await pg.evaluate('document.documentElement.scrollWidth')
+                    if sw > width: errors.append(f'g1 {name}/{v}: horizontal overflow {sw}>{width}')
+                if name == 'desk':
+                    await pg.evaluate('location.hash="papers"'); await pg.wait_for_timeout(150)
+                    await pg.click('#view [data-act="paperpractice"] >> nth=0'); await pg.wait_for_timeout(150)
+                    await pg.click('[data-act="pick"][data-i="0"]'); await pg.click('[data-act="check"]')
+                    await pg.screenshot(path=f'{SHOTS}/g1-quiz.png')
+                    await pg.click('[data-act="lang"][data-l="te"]'); await pg.wait_for_timeout(150)
+                    await pg.screenshot(path=f'{SHOTS}/g1-quiz-te.png')
+                    await pg.click('[data-act="lang"][data-l="en"]')
+                await pg.close()
         # static page
         pg = await b.new_page(viewport={'width': 390, 'height': 900})
         pg.on('pageerror', lambda e: errors.append(f'static pageerror: {e}'))

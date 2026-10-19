@@ -109,7 +109,8 @@
    "cat": "ap",
    "b": "APPSC",
    "t": "Group-I",
-   "n": "Group-I Services"
+   "n": "Group-I Services",
+   "live": "appsc-group-1/"
   },
   {
    "id": "appsc-group-2",

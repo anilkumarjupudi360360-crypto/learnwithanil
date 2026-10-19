@@ -468,13 +468,13 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 <!--BODY-->
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="#exams" aria-label="Learn with Anil, all exams">
+    <a class="brand" href="{{HUBHREF}}" aria-label="Learn with Anil, all exams">
       <span class="brand-mark" aria-hidden="true">LA</span>
       <span class="brand-text"><b>Learn with Anil</b><span>PYQs for every exam</span></span>
     </a>
     <nav class="nav hub" id="nav" aria-label="Main">
-      <a href="#exams" data-v="exams">All Exams</a>
-      <a href="#home" data-v="home">Group-II</a>
+      <a href="{{HUBHREF}}" data-v="exams">All Exams</a>
+      <a href="#home" data-v="home">{{EXAMSHORT}}</a>
       <a href="#papers" data-v="papers" data-g2>Previous Papers</a>
       <a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>
       <a href="#practice" data-v="practice" data-g2>Create Quiz</a>
@@ -499,8 +499,8 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     <div class="hero-copy">
       <p class="eyebrow">UPSC · APPSC · TGPSC · SSC · Banks · Railways</p>
       <h1>Previous-year questions for <em>every exam.</em></h1>
-      <p>Official papers with official-key answers and explanations, free, in English and Telugu. APPSC Group-II is live with {{TOTALC}} questions; the other exams are being added one by one.</p>
-      <div class="row"><a class="btn btn-primary" href="#home">Practise APPSC Group-II</a><button class="btn btn-secondary" type="button" data-act="hubscroll">Find your exam</button></div>
+      <p>Official papers with official-key answers and explanations, free, in English and Telugu. {{LIVE_SUMMARY}}</p>
+      <div class="row">{{HUB_CTAS}}<button class="btn btn-secondary" type="button" data-act="hubscroll">Find your exam</button></div>
     </div>
     <a class="mentor" href="#about" style="color:inherit;text-decoration:none">
       <span class="ph"><img src="{{PHOTO}}" alt="Jupudi Anil Kumar" width="210" height="210"></span>
@@ -519,9 +519,9 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 <div id="home-static" class="view" hidden>
   <section class="hero"><div class="wrap">
     <div class="hero-copy">
-      <a class="crumb" href="#exams">← All exams</a>
-      <p class="eyebrow">APPSC Group-II · Screening &amp; Mains · 2019–2025</p>
-      <h1>APPSC Group-II previous questions, <em>with answers.</em></h1>
+      <a class="crumb" href="{{HUBHREF}}">← All exams</a>
+      <p class="eyebrow">{{EYEBROW}}</p>
+      <h1>{{EXAM}} previous questions, <em>with answers.</em></h1>
       <p>{{TOTAL}} questions from {{NPAPERS}} official papers, answered from APPSC's final keys and explained. Practise them by topic, find your weak areas and revise your mistakes.</p>
       <div class="row"><a class="btn btn-primary" href="#practice">Create a quiz</a><a class="btn btn-secondary" href="#papers">See previous papers</a></div>
     </div>
@@ -587,7 +587,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 "use strict";
 const DATA = JSON.parse(document.getElementById("lwa-data").textContent);
 const PHOTO = "{{PHOTO}}";
-const KEY = "lwa-appsc-g2-v1", PKEY = "lwa-appsc-g2-prefs-v1";
+const EKEY = DATA.key || "appsc-g2", KEY = "lwa-"+EKEY+"-v1", PKEY = "lwa-"+EKEY+"-prefs-v1";
 const LET = ["A","B","C","D"];
 const QS = DATA.questions, PAPERS = DATA.papers, SUBJECTS = DATA.subjects;
 const QMAP = Object.fromEntries(QS.map(q=>[q.id,q]));
@@ -677,9 +677,12 @@ let current = "";
 function go(v){ if(location.hash.slice(1)!==v){ location.hash=v; } else { render(); } }
 function route(){
   let v = location.hash.slice(1);
-  if(v==="appsc-group-2") v = "home";
+  if(v==="appsc-group-2" && DATA.hub) v = "home";
+  if(!DATA.hub && (v==="exams" || v==="exam" || /^exam\//.test(v))){ location.href = "../#"+v; return "home"; }   // the exam list lives on the start page
   const de = v.match(/^exam\/([\w-]+)$/);   // one exam's page: #exam/ssc-cgl
-  if(de){ const e = EXMAP[de[1]]; if(e && e.live){ history.replaceState(null, "", "#"+e.live); v = e.live; } else if(e){ UI.exam = e.id; v = "exam"; } else v = "exams"; }
+  if(de){ const e = EXMAP[de[1]];
+    if(e && e.live && e.live.includes("/")){ location.href = e.live; return "exams"; }
+    if(e && e.live){ history.replaceState(null, "", "#"+e.live); v = e.live; } else if(e){ UI.exam = e.id; v = "exam"; } else v = "exams"; }
   else if(v==="exam") v = UI.exam ? "exam" : "exams";
   const dq = v.match(/^q\/([\w-]+)$/);   // shareable link to one question: #q/m2025p2-117
   if(dq && QMAP[dq[1]]){
@@ -687,7 +690,7 @@ function route(){
     QZ = {title: PMAP[q.p].title, mode:"practice", source:"paper", ids: ids.slice(k).concat(ids.slice(0,k)), i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit:0};
     UI.confirmSubmit = false; history.replaceState(null, "", "#quiz"); v = "quiz";
   }
-  if(!VIEWS.includes(v)) v="exams";
+  if(!VIEWS.includes(v)) v = DATA.hub ? "exams" : "home";
   if(v==="quiz" && !QZ) v = LAST? "result" : "practice";
   if(v==="result" && !LAST) v="home";
   return v;
@@ -818,7 +821,7 @@ function vPapers(){
     const done = QS.filter(q=>q.p===p.id && S.qs[q.id]).length;
     return `<article class="card paper">
       <span class="yr">${esc(p.held)} · ${esc(p.notif)}</span>
-      <h3>${esc(p.title).replace(/Group-II/g,'<span class="nw">Group-II</span>')}</h3>
+      <h3>${esc(p.title).replace(/Group-(I{1,3}|IV)\b/g,'<span class="nw">Group-$1</span>')}</h3>
       <p>${esc(p.blurb)}</p>
       <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
       <div class="acts">
@@ -829,7 +832,7 @@ function vPapers(){
     </article>`;
   };
   return `<div class="wrap view">
-    ${head("Previous papers","APPSC Group-II question papers","Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself.")}
+    ${head("Previous papers", esc(DATA.exam||"APPSC Group-II")+" question papers", esc(DATA.papersNote||""))}
     ${years.map(y=>`<section class="section"><div class="section-title"><h2>${y}</h2></div><div class="papers">${PAPERS.filter(p=>p.year===y).map(card).join("")}</div></section>`).join("")}
   </div>`;
 }
@@ -861,7 +864,7 @@ function vPractice(){
         <section class="card step">
           <div class="step-h"><h2>Papers</h2><div class="row"><button class="btn btn-ghost btn-sm" type="button" data-act="allpapers">Select all</button><button class="btn btn-ghost btn-sm" type="button" data-act="nopapers">Clear</button></div></div>
           <div class="row">${PAPERS.map(p=>`<button type="button" class="chip" data-act="paper" data-paper="${p.id}" aria-pressed="${ps.has(p.id)}">${esc(p.short)} <span class="n">${p.count}</span></button>`).join("")}</div>
-          ${hasRecallSel?`<label class="row" style="gap:8px;font-size:14.5px;cursor:pointer"><input type="checkbox" id="recallToggle" data-act="recalltoggle" ${P.recall?"checked":""} style="width:18px;height:18px;accent-color:var(--accent)"> Include quick-recall questions from the 2019 answer-only keys</label>`:""}
+          ${hasRecallSel?`<label class="row" style="gap:8px;font-size:14.5px;cursor:pointer"><input type="checkbox" id="recallToggle" data-act="recalltoggle" ${P.recall?"checked":""} style="width:18px;height:18px;accent-color:var(--accent)"> Include quick-recall questions from the answer-only keys</label>`:""}
         </section>
         <section class="card step">
           <div class="step-h"><h2>Subjects &amp; topics</h2><div class="row"><button class="btn btn-ghost btn-sm" type="button" data-act="alltopics">Select all</button><button class="btn btn-ghost btn-sm" type="button" data-act="notopics">Clear</button></div></div>
@@ -933,7 +936,7 @@ function vQuiz(){
     }
   } else {
     if(!QZ.rev[q.id]){
-      body = `<div class="recall-box"><p class="muted">This 2019 key prints only the correct answer. Say your answer to yourself, then reveal it.</p><button class="btn btn-primary" type="button" data-act="reveal">Show answer</button></div>`;
+      body = `<div class="recall-box"><p class="muted">This official key prints only the correct answer. Say your answer to yourself, then reveal it.</p><button class="btn btn-primary" type="button" data-act="reveal">Show answer</button></div>`;
       navR = `<button class="btn btn-secondary" type="button" data-act="skip">Skip</button>`;
     } else {
       body = answerBox(q) + whyHTML(q);
@@ -1253,11 +1256,10 @@ function vAbout(){
         <div class="bio">
           <p>I am a civil-services educator with more than 1,000 hours of classroom teaching for UPSC, APPSC and TGPSC aspirants. I teach Indian Polity, Governance and Ethics, build test series and study material, and evaluate Mains answer scripts.</p>
           <p>As Academic Manager, faculty and mentor, I plan the Group-1 and Group-2 programmes and their test series, coordinate the UPSC mock interview programme in Delhi, and mentor Group-1, Group-2 and UPSC aspirants. Earlier I taught Polity at Reflections IAS Academy and Prathiba IAS Academy.</p>
-          <p>I built this portal so that every APPSC Group-II aspirant can practise the real previous questions topic by topic, for free, and see clearly where they are losing marks.</p>
+          <p>I built this portal so that every ${esc(DATA.exam||"APPSC Group-II")} aspirant can practise the real previous questions topic by topic, for free, and see clearly where they are losing marks.</p>
         </div>
         <dl>
           <div><dt>1000+</dt><dd>Hours of classroom teaching</dd></div>
-          <div><dt>1200+</dt><dd>Mains answer copies evaluated</dd></div>
           <div><dt>70+</dt><dd>APPSC Group-1 mock interviews</dd></div>
           <div><dt>25</dt><dd>UPSC CSE mock interviews, Delhi</dd></div>
           <div><dt>150+</dt><dd>Educational reels &amp; videos</dd></div>
