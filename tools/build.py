@@ -191,7 +191,10 @@ def main():
         if q['id'] in videos: q['v'] = videos[q['id']]
     npath = os.path.join(SRC, 'notes.json')
     notes = json.load(open(npath, encoding='utf-8')) if os.path.exists(npath) else []
-    data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=notes, wa=WHATSAPP)
+    epath = os.path.join(SRC, 'exams.json')
+    catalog = json.load(open(epath, encoding='utf-8')) if os.path.exists(epath) else dict(cats=[], exams=[])
+    data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=notes, wa=WHATSAPP,
+                exams=catalog['exams'], cats=catalog['cats'])
     photo_uri, photo_bytes = photo_data_uri()
 
     tpl = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
@@ -211,12 +214,14 @@ def main():
                  .replace('{{HOME_PAPERS}}', home_papers).replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                  .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                  .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
-                 .replace('{{HOME_NOTES}}', home_notes(notes)))
-    site_title = 'APPSC Group 2 Previous Year Questions (PYQs) with Answers | Learn with Anil'
-    site_desc = (f'Free APPSC Group 2 PYQs: {total} previous year questions from the Screening Test 2024, Mains 2025 Paper I & II '
-                 f'and the 2019 papers, with official final-key answers and explanations. Topic-wise quizzes by Learn with Anil.')
+                 .replace('{{HOME_NOTES}}', home_notes(notes)).replace('{{HUB}}', hub_html(catalog, total))
+                 .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{total:,}'))
+    site_title = 'Free Previous Year Questions for APPSC Group 2, TGPSC, UPSC, SSC & Bank Exams | Learn with Anil'
+    site_desc = (f'Free previous year questions with answers for every exam. APPSC Group 2 is live with {total} questions from '
+                 f'{len(papers)} official papers, with official final-key answers and explanations in English and Telugu. '
+                 f'TGPSC, UPSC, SSC, banking and railway exams are being added.')
     ld = [
-      {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":"Learn with Anil – APPSC Group-II PYQs","url":SITE_URL+'/'},
+      {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":"Learn with Anil – Previous year questions for every exam","url":SITE_URL+'/'},
       {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"UPSC Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:anilkumarjupudi360360@gmail.com","url":SITE_URL+'/#about',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/"]},
       {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]},
     ]
@@ -275,6 +280,50 @@ def home_notes(notes):
       <div class="np-covers" aria-hidden="true">{covers}</div>
     </a>
   </section>'''
+
+
+ROMAN = {'I': '1', 'II': '2', 'III': '3', 'IV': '4'}
+
+
+def exam_terms(e, cat):
+    """Lower-case words a student might type to find this exam (used by the search box)."""
+    words = [e['b'], e['t'], e.get('n', ''), cat['name'], e['id'].replace('-', ' ')]
+    m = re.search(r'Group-(I{1,3}|IV)\b', e['t'])
+    if m:
+        d = ROMAN[m.group(1)]
+        words += [f'group {d}', f'group{d}', f'group-{d}', f'group {m.group(1)}']
+    if e['cat'] == 'tg': words += ['tspsc', 'tgpsc', 'telangana']
+    if e['cat'] == 'ap': words += ['appsc', 'andhra']
+    return ' '.join(w.lower() for w in words if w)
+
+
+def hub_html(catalog, total):
+    cats = catalog['cats']; byc = {c['id']: c for c in cats}
+    chips = (f'<button type="button" class="chip" data-act="excat" data-cat="all" aria-pressed="true">All exams <span class="n">{len(catalog["exams"])}</span></button>'
+             + ''.join(f'<button type="button" class="chip" data-act="excat" data-cat="{c["id"]}" aria-pressed="false">{esc(c["name"])} '
+                       f'<span class="n">{sum(1 for e in catalog["exams"] if e["cat"] == c["id"])}</span></button>' for c in cats))
+    secs = []
+    for c in cats:
+        tiles = []
+        for e in [e for e in catalog['exams'] if e['cat'] == c['id']]:
+            live = bool(e.get('live'))
+            href = '#' + e['live'] if live else '#exam/' + e['id']
+            status = f'Live · {total:,} questions' if live else 'Coming soon'
+            sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
+            tiles.append(f'<a class="card exam{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-s="{esc(exam_terms(e, c))}">'
+                         f'<span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st">{status}</span></a>')
+        te = f' <span class="te-sub" lang="te">{esc(c["te"])}</span>' if c.get('te') else ''
+        secs.append(f'<section class="exam-cat" data-cat="{c["id"]}"><div class="section-title"><h2>{esc(c["name"])}{te}</h2>'
+                    f'<span class="muted" style="font-size:14px">{esc(c["desc"])}</span></div><div class="exams">{"".join(tiles)}</div></section>')
+    search = ('<label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="color:var(--muted)">'
+              '<circle cx="11" cy="11" r="7"/><path d="m20 20-4-4" stroke-linecap="round"/></svg>'
+              '<input id="examSearch" type="search" placeholder="Search an exam, e.g. Group-II, CGL, NDA, Police SI" aria-label="Search exams" autocomplete="off"></label>')
+    return (f'<div class="hub-tools">{search}<div class="chips" role="group" aria-label="Filter exams">{chips}</div></div>'
+            f'<p class="muted" id="hubCount" style="font-size:14px"></p>'
+            f'<div id="hubCats">{"".join(secs)}</div>'
+            f'<div class="card empty" id="hubEmpty" hidden><h3>No exam matches your search</h3>'
+            f'<p>Tell Anil which exam you are preparing for, and it will be added to the list.</p>'
+            f'<div class="row" style="justify-content:center"><a class="btn btn-primary" id="hubAsk" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener">Ask on WhatsApp</a></div></div>')
 
 
 def nw(t):
@@ -352,7 +401,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs):
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
-<header><div class="wrap"><a href="{up}index.html">Learn with Anil · APPSC Group-II PYQs</a><a href="{up}index.html#practice">Practise online →</a></div></header>
+<header><div class="wrap"><a href="{up}index.html#home">Learn with Anil · APPSC Group-II PYQs</a><a href="{up}index.html#practice">Practise online →</a></div></header>
 <main class="wrap">
 <h1>{nw(h1)}</h1>
 <p class="lede">{lede}</p>

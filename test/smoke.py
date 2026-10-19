@@ -13,10 +13,19 @@ async def main():
             pg.on('console', lambda m: errors.append(f'console {m.type}: {m.text}') if m.type == 'error' and 'fonts.g' not in m.text and 'ERR_TUNNEL' not in m.text else None)
             await pg.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
             await pg.goto(URL); await pg.wait_for_timeout(600)
-            if name == 'desk': await pg.screenshot(path=f'{SHOTS}/home-{name}.png', full_page=False)
-            sw = await pg.evaluate('document.documentElement.scrollWidth'); 
+            assert await pg.evaluate('!document.getElementById("hub-static").hidden'), 'start page should be the exam hub'
+            tiles = await pg.locator('#hub-static .exam').count()
+            assert tiles >= 90, f'expected the full exam list, got {tiles}'
+            await pg.fill('#examSearch', 'group 2'); await pg.wait_for_timeout(100)
+            assert await pg.locator('#hub-static .exam:not([hidden])').count() == 2, 'search "group 2" should find APPSC and TGPSC Group-II'
+            await pg.fill('#examSearch', '')
+            await pg.screenshot(path=f'{SHOTS}/hub-{name}.png', full_page=False)
+            sw = await pg.evaluate('document.documentElement.scrollWidth');
             if sw > width: errors.append(f'{name}: horizontal overflow {sw}>{width}')
-            for v in ['papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','join','notes']:
+            await pg.click('#hub-static a.exam.live'); await pg.wait_for_timeout(150)
+            assert await pg.evaluate('!document.getElementById("home-static").hidden'), 'the live Group-II tile should open the Group-II page'
+            if name == 'desk': await pg.screenshot(path=f'{SHOTS}/home-{name}.png', full_page=False)
+            for v in ['exams','exam/ssc-cgl','home','papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','join','notes']:
                 await pg.evaluate(f'location.hash="{v}"'); await pg.wait_for_timeout(150)
                 sw = await pg.evaluate('document.documentElement.scrollWidth')
                 if sw > width: errors.append(f'{name}/{v}: horizontal overflow {sw}>{width}')

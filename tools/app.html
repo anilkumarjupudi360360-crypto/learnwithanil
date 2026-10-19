@@ -414,25 +414,58 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .video-dlg .vwrap{background:#000;display:flex;justify-content:center}
 .video-dlg video{display:block;width:100%;max-height:calc(100dvh - 130px);aspect-ratio:9/16;background:#000}
 .video-dlg .vcredit{font-size:12.5px;color:var(--muted);padding:8px 14px}
+/* Exam hub (start page) */
+.hub-tools{display:flex;flex-direction:column;gap:12px}
+.hub-tools .search{flex:none;max-width:560px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+#hubCats{display:flex;flex-direction:column;gap:34px}
+.exam-cat{display:flex;flex-direction:column;gap:12px}
+.exam-cat h2 .te-sub{font-size:17px;font-weight:600;color:var(--muted);margin-left:6px;letter-spacing:0;line-height:1.2}
+.exams{display:grid;grid-template-columns:repeat(auto-fill,minmax(186px,1fr));gap:12px}
+@media (max-width:520px){.exams{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+.exam{display:flex;flex-direction:column;gap:3px;padding:14px 16px;text-decoration:none;color:inherit;min-height:122px;transition:border-color .15s,transform .15s,box-shadow .15s}
+.exam:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow)}
+.exam:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.exam .ex-b{font-family:var(--f-mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.exam .ex-t{font-family:var(--f-display);font-weight:800;font-size:18px;line-height:1.2;overflow-wrap:anywhere}
+.exam .ex-n{font-size:13.5px;color:var(--muted);line-height:1.35}
+.exam .ex-st{margin-top:auto;padding-top:10px;font-size:12.5px;font-weight:700;color:var(--muted);display:flex;align-items:center;gap:6px}
+.exam .ex-st::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--line);flex-shrink:0}
+.exam.live{border:2px solid var(--accent);background:linear-gradient(160deg,var(--accent-soft),var(--surface) 70%)}
+.exam.live .ex-b{color:var(--accent-text)}
+.exam.live .ex-st{color:var(--good)}
+.exam.live .ex-st::before{background:var(--good);box-shadow:0 0 0 3px var(--good-soft)}
+@media (max-width:520px){.exam{padding:12px 13px;min-height:112px}.exam .ex-t{font-size:16.5px}}
+.crumb{color:var(--band-muted);font-weight:600;font-size:14.5px;text-decoration:none;align-self:flex-start}
+.crumb:hover{color:var(--band-ink)}
+.nav.hub a[data-g2]{display:none}
+@media (max-width:480px){.nav.hub .new{display:none}.nav.hub a{padding-inline:8px}}
+/* the Group-II menu has 11 links: give it its own row on every screen width */
+.topbar.g2 .wrap{gap:4px;padding-block:8px 0}
+.topbar.g2 .nav{flex-basis:100%;justify-content:flex-start;padding-bottom:6px;order:3}
+.topbar.g2 .lang{order:2;margin-left:auto}
+.soon{display:flex;flex-direction:column;gap:14px;padding:24px;max-width:760px}
+.soon p{color:var(--muted)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 <!--BODY-->
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="#home" aria-label="Learn with Anil home">
+    <a class="brand" href="#exams" aria-label="Learn with Anil, all exams">
       <span class="brand-mark" aria-hidden="true">LA</span>
-      <span class="brand-text"><b>Learn with Anil</b><span>APPSC Group-II PYQs</span></span>
+      <span class="brand-text"><b>Learn with Anil</b><span>PYQs for every exam</span></span>
     </a>
-    <nav class="nav" id="nav" aria-label="Main">
-      <a href="#home" data-v="home">Home</a>
-      <a href="#papers" data-v="papers">Previous Papers</a>
+    <nav class="nav hub" id="nav" aria-label="Main">
+      <a href="#exams" data-v="exams">All Exams</a>
+      <a href="#home" data-v="home">Group-II</a>
+      <a href="#papers" data-v="papers" data-g2>Previous Papers</a>
       <a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>
-      <a href="#practice" data-v="practice">Create Quiz</a>
-      <a href="#bank" data-v="bank">Question Bank</a>
-      <a href="#mistakes" data-v="mistakes">Mistakes <span class="count" id="mcount" hidden></span></a>
-      <a href="#smart" data-v="smart">Smart Quiz</a>
-      <a href="#bookmarks" data-v="bookmarks">Bookmarks</a>
-      <a href="#heatmap" data-v="heatmap">Heatmap</a>
+      <a href="#practice" data-v="practice" data-g2>Create Quiz</a>
+      <a href="#bank" data-v="bank" data-g2>Question Bank</a>
+      <a href="#mistakes" data-v="mistakes" data-g2>Mistakes <span class="count" id="mcount" hidden></span></a>
+      <a href="#smart" data-v="smart" data-g2>Smart Quiz</a>
+      <a href="#bookmarks" data-v="bookmarks" data-g2>Bookmarks</a>
+      <a href="#heatmap" data-v="heatmap" data-g2>Heatmap</a>
       <a href="#about" data-v="about">About</a>
     </nav>
     <div class="lang" role="group" aria-label="Question language">
@@ -443,9 +476,41 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </header>
 
 <main>
-<div id="home-static" class="view">
+<div id="hub-static" class="view">
   <section class="hero"><div class="wrap">
     <div class="hero-copy">
+      <p class="eyebrow">APPSC · TGPSC · UPSC · SSC · Banks · Railways</p>
+      <h1>Previous-year questions for <em>every exam.</em></h1>
+      <p>Official papers with official-key answers and explanations, free, in English and Telugu. APPSC Group-II is live with {{TOTALC}} questions; the other exams are being added one by one.</p>
+      <div class="row"><a class="btn btn-primary" href="#home">Practise APPSC Group-II</a><button class="btn btn-secondary" type="button" data-act="hubscroll">Find your exam</button></div>
+    </div>
+    <a class="mentor" href="#about" style="color:inherit;text-decoration:none">
+      <span class="ph"><img src="{{PHOTO}}" alt="Jupudi Anil Kumar" width="210" height="210"></span>
+      <span><b>Jupudi Anil Kumar</b><br><span>UPSC faculty &amp; mentor · 1000+ hours of civil-services teaching</span></span>
+    </a>
+  </div></section>
+
+  <section class="wrap section">
+    <div class="figures">
+      <div class="figure"><div class="v">{{NEXAMS}}</div><div class="k">Exams listed</div></div>
+      <div class="figure"><div class="v">{{TOTALC}}</div><div class="k">Questions live now</div></div>
+      <div class="figure"><div class="v">2</div><div class="k">Languages: English &amp; Telugu</div></div>
+      <div class="figure"><div class="v">₹0</div><div class="k">To practise, always</div></div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="exams-list">
+    <div class="section-title"><h2>Choose your exam</h2></div>
+    {{HUB}}
+  </section>
+
+  {{HOME_NOTES}}
+</div>
+
+<div id="home-static" class="view" hidden>
+  <section class="hero"><div class="wrap">
+    <div class="hero-copy">
+      <a class="crumb" href="#exams">← All exams</a>
       <p class="eyebrow">APPSC Group-II · Screening &amp; Mains · 2019–2025</p>
       <h1>APPSC Group-II previous questions, <em>with answers.</em></h1>
       <p>{{TOTAL}} questions from {{NPAPERS}} official papers, answered from APPSC's final keys and explained. Practise them by topic, find your weak areas and revise your mistakes.</p>
@@ -501,7 +566,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 
 <footer class="foot">
   <div class="wrap">
-    <span>Questions and answers are from APPSC's official final keys. Explanations by Learn with Anil. Not affiliated with APPSC. <a href="#notes">Study material</a></span>
+    <span>Questions and answers are from the official final keys. Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. <a href="#notes">Study material</a></span>
     <span id="resetBox"><button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button></span>
   </div>
 </footer>
@@ -519,6 +584,8 @@ const QS = DATA.questions, PAPERS = DATA.papers, SUBJECTS = DATA.subjects;
 const QMAP = Object.fromEntries(QS.map(q=>[q.id,q]));
 const PMAP = Object.fromEntries(PAPERS.map(p=>[p.id,p]));
 const SUBJ = Object.fromEntries(SUBJECTS.map(s=>[s.id,s]));
+const EXAMS = DATA.exams || [], ECATS = DATA.cats || [];
+const EXMAP = Object.fromEntries(EXAMS.map(e=>[e.id,e])), ECMAP = Object.fromEntries(ECATS.map(c=>[c.id,c]));
 const isMCQ = q => Array.isArray(q.o);
 const teOn = q => P.lang==="te" && !!q.qt;
 const QT = q => teOn(q) ? q.qt : q.q;
@@ -596,18 +663,22 @@ function topicStats(){
 const band = acc=>acc===null? "none" : acc>=75? "good" : acc>=50? "warn" : "bad";
 
 /* ---------- routing ---------- */
-const VIEWS = ["home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes"];
-let current = "home";
+const VIEWS = ["exams","exam","home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes"];
+let current = "";
 function go(v){ if(location.hash.slice(1)!==v){ location.hash=v; } else { render(); } }
 function route(){
   let v = location.hash.slice(1);
+  if(v==="appsc-group-2") v = "home";
+  const de = v.match(/^exam\/([\w-]+)$/);   // one exam's page: #exam/ssc-cgl
+  if(de){ const e = EXMAP[de[1]]; if(e && e.live){ history.replaceState(null, "", "#"+e.live); v = e.live; } else if(e){ UI.exam = e.id; v = "exam"; } else v = "exams"; }
+  else if(v==="exam") v = UI.exam ? "exam" : "exams";
   const dq = v.match(/^q\/([\w-]+)$/);   // shareable link to one question: #q/m2025p2-117
   if(dq && QMAP[dq[1]]){
     const q = QMAP[dq[1]], ids = QS.filter(x=>x.p===q.p).map(x=>x.id), k = ids.indexOf(q.id);
     QZ = {title: PMAP[q.p].title, mode:"practice", source:"paper", ids: ids.slice(k).concat(ids.slice(0,k)), i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit:0};
     UI.confirmSubmit = false; history.replaceState(null, "", "#quiz"); v = "quiz";
   }
-  if(!VIEWS.includes(v)) v="home";
+  if(!VIEWS.includes(v)) v="exams";
   if(v==="quiz" && !QZ) v = LAST? "result" : "practice";
   if(v==="result" && !LAST) v="home";
   return v;
@@ -616,13 +687,17 @@ function render(){
   const v = route(); const changed = v!==current; current = v;
   if(v!=="join") UI.pending = null;
   if(v!=="quiz") stopTimer();
-  document.querySelectorAll("#nav a").forEach(a=>{ const on = a.dataset.v===v || ((v==="quiz"||v==="result")&&a.dataset.v==="practice"); if(on || (v==="join"&&a.dataset.v==="practice"&&UI.pending)) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+  const hubCtx = v==="exams" || v==="exam";
+  $("#nav").classList.toggle("hub", hubCtx); $(".topbar").classList.toggle("g2", !hubCtx);
+  document.querySelectorAll("#nav a").forEach(a=>{ const on = a.dataset.v===v || (v==="exam"&&a.dataset.v==="exams") || ((v==="quiz"||v==="result")&&a.dataset.v==="practice"); if(on || (v==="join"&&a.dataset.v==="practice"&&UI.pending)) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
   const mc = mistakeIds().length, mEl=$("#mcount"); mEl.hidden = !mc; mEl.textContent = mc;
-  const home = $("#home-static"), host = $("#view");
-  if(v==="home"){ home.hidden=false; host.hidden=true; host.innerHTML=""; renderHomeDynamic(); }
+  const hub = $("#hub-static"), home = $("#home-static"), host = $("#view");
+  hub.hidden = v!=="exams"; home.hidden = v!=="home";
+  if(v==="exams"){ host.hidden=true; host.innerHTML=""; applyHub(); }
+  else if(v==="home"){ host.hidden=true; host.innerHTML=""; renderHomeDynamic(); }
   else {
-    home.hidden=true; host.hidden=false;
-    host.innerHTML = ({papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,notes:vNotes})[v]();
+    host.hidden=false;
+    host.innerHTML = ({exam:vExam,papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,notes:vNotes})[v]();
     host.querySelectorAll("[data-mixed]").forEach(el=>{ el.indeterminate = true; });
   }
   if(v==="quiz") startTimer();
@@ -662,6 +737,32 @@ function reviewCard(q, n, opts={}){
 }
 function emptyHTML(title, body, actions){ return `<div class="card empty"><div class="bubbles" aria-hidden="true"><i></i><i class="f"></i><i></i><i></i></div><h3>${title}</h3><p>${body}</p>${actions?`<div class="row" style="justify-content:center">${actions}</div>`:""}</div>`; }
 function head(eyebrow, title, desc, right){ return `<div class="page-head"><div><p class="eyebrow">${eyebrow}</p><h1>${title}</h1>${desc?`<p>${desc}</p>`:""}</div>${right||""}</div>`; }
+
+/* ---------- exam hub (start page) + one exam's page ---------- */
+function applyHub(){
+  const q = (UI.exQ||"").trim().toLowerCase().replace(/\s+/g," "), cat = UI.exCat||"all";
+  let n = 0;
+  document.querySelectorAll("#hub-static .exam").forEach(a=>{ const ok = (cat==="all"||a.dataset.cat===cat) && (!q || a.dataset.s.includes(q)); a.hidden = !ok; if(ok) n++; });
+  document.querySelectorAll("#hub-static .exam-cat").forEach(s=>{ s.hidden = !s.querySelector(".exam:not([hidden])"); });
+  document.querySelectorAll('#hub-static [data-act="excat"]').forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.cat===cat)));
+  const live = [...document.querySelectorAll("#hub-static .exam.live:not([hidden])")].length;
+  const cnt = $("#hubCount"); if(cnt) cnt.textContent = n ? `${n} exam${n>1?"s":""}${live?` · ${live} live now`:""} · questions are being added exam by exam` : "";
+  const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Anil, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
+  const s = $("#examSearch"); if(s && s.value!==(UI.exQ||"")) s.value = UI.exQ||"";
+}
+function vExam(){
+  const e = EXMAP[UI.exam], c = ECMAP[e.cat]||{name:""}, full = e.t + (e.n? ` (${e.n})` : "");
+  return `<section class="wrap section">
+    ${head(c.name && c.name!==e.b ? `${esc(e.b)} · ${esc(c.name)}` : esc(e.b), esc(full), "Previous-year questions for this exam are being added, with official-key answers and explanations, in English and Telugu.", `<a class="btn btn-ghost btn-sm" href="#exams">← All exams</a>`)}
+    <div class="card soon">
+      <span class="pill warn" style="align-self:flex-start">Coming soon</span>
+      <h2 style="font-size:21px">${esc(e.b)} ${esc(e.t)}: questions are on the way</h2>
+      <p>Exams are being added one by one. Send a WhatsApp message and Anil will tell you when ${esc(e.t)} is ready.</p>
+      <div class="row"><a class="btn btn-primary" href="${waLink(`Hi Anil, please tell me when ${e.b} ${full} questions are added on learnwithanil.in`)}" target="_blank" rel="noopener">Notify me on WhatsApp</a><a class="btn btn-secondary" href="#home">Practise APPSC Group-II now</a></div>
+      <p style="font-size:14.5px">Most exams share the same General Studies core: Polity, Economy, History, Geography and Science &amp; Technology. APPSC Group-II's ${QS.length.toLocaleString("en-IN")} questions are a good way to practise them today.</p>
+    </div>
+  </section>`;
+}
 
 /* ---------- home (static HTML + live numbers) ---------- */
 function renderHomeDynamic(){
@@ -1145,6 +1246,8 @@ document.addEventListener("click", e=>{
   const act = b.dataset.act;
   switch(act){
     case "bm": { const id=b.dataset.id; if(S.bm[id]) delete S.bm[id]; else S.bm[id]=true; save(); toast(S.bm[id]?"Saved to bookmarks":"Removed from bookmarks"); render(); break; }
+    case "excat": { UI.exCat = b.dataset.cat; applyHub(); break; }
+    case "hubscroll": { const t=$("#exams-list"); if(t) t.scrollIntoView({behavior:"smooth", block:"start"}); const s=$("#examSearch"); if(s) setTimeout(()=>s.focus({preventScroll:true}), 400); break; }
     case "presubj": { const s=SUBJ[b.dataset.subj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); go("practice"); break; }
     case "paper": { const ps=selPapers(), id=b.dataset.paper; ps.has(id)?ps.delete(id):ps.add(id); P.papers=[...ps]; savePrefs(); render(); break; }
     case "allpapers": P.papers=null; savePrefs(); render(); break;
@@ -1224,6 +1327,7 @@ document.addEventListener("change", e=>{
 });
 let searchT;
 document.addEventListener("input", e=>{
+  if(e.target.id==="examSearch"){ UI.exQ = e.target.value; applyHub(); return; }
   if(e.target.id!=="bankSearch") return;
   UI.bankQ = e.target.value; bankLimit=20;
   clearTimeout(searchT);
