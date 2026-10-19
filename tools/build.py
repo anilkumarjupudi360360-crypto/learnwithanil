@@ -185,6 +185,10 @@ def main():
         papers.append(pp); questions += qs
         print(f'  {p["id"]}: {len(qs)} questions')
     subjects = [dict(id=s[0], name=s[1], slug=s[2], topics=s[3]) for s in SUBJECTS]
+    vpath = os.path.join(SRC, 'videos.json')
+    videos = json.load(open(vpath, encoding='utf-8')) if os.path.exists(vpath) else {}
+    for q in questions:
+        if q['id'] in videos: q['v'] = videos[q['id']]
     npath = os.path.join(SRC, 'notes.json')
     notes = json.load(open(npath, encoding='utf-8')) if os.path.exists(npath) else []
     data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=notes, wa=WHATSAPP)

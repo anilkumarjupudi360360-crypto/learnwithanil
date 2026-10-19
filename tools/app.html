@@ -404,6 +404,16 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .sample-dlg .imgs img{width:100%;height:auto;display:block;border-radius:6px;box-shadow:var(--shadow)}
 .sample-dlg .imgs p{font-size:14px;color:var(--muted);text-align:center}
 .foot a{color:var(--accent-text);font-weight:600}
+.video-btn{display:flex;align-items:center;gap:14px;width:100%;margin-top:14px;padding:12px 16px;border-radius:14px;border:0;cursor:pointer;text-align:left;color:#fff;background:linear-gradient(120deg,#0C2266,#1846C7);box-shadow:0 6px 18px rgba(24,70,199,.28)}
+.video-btn:hover{filter:brightness(1.08)}
+.video-btn .play{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:#F2B705;color:#0C2266;display:grid;place-items:center;font-size:18px;padding-left:3px}
+.video-btn b{display:block;font-family:"Noto Sans Telugu",var(--f-body);font-size:17px;line-height:1.35}
+.video-btn small{display:block;font-size:13px;opacity:.85;margin-top:1px}
+.video-dlg{width:min(460px,calc(100vw - 20px))}
+.video-dlg header b{font-family:"Noto Sans Telugu",var(--f-body);letter-spacing:0;font-weight:700;font-size:16px}
+.video-dlg .vwrap{background:#000;display:flex;justify-content:center}
+.video-dlg video{display:block;width:100%;max-height:calc(100dvh - 130px);aspect-ratio:9/16;background:#000}
+.video-dlg .vcredit{font-size:12.5px;color:var(--muted);padding:8px 14px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 <!--BODY-->
@@ -591,6 +601,12 @@ let current = "home";
 function go(v){ if(location.hash.slice(1)!==v){ location.hash=v; } else { render(); } }
 function route(){
   let v = location.hash.slice(1);
+  const dq = v.match(/^q\/([\w-]+)$/);   // shareable link to one question: #q/m2025p2-117
+  if(dq && QMAP[dq[1]]){
+    const q = QMAP[dq[1]], ids = QS.filter(x=>x.p===q.p).map(x=>x.id), k = ids.indexOf(q.id);
+    QZ = {title: PMAP[q.p].title, mode:"practice", source:"paper", ids: ids.slice(k).concat(ids.slice(0,k)), i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit:0};
+    UI.confirmSubmit = false; history.replaceState(null, "", "#quiz"); v = "quiz";
+  }
   if(!VIEWS.includes(v)) v="home";
   if(v==="quiz" && !QZ) v = LAST? "result" : "practice";
   if(v==="result" && !LAST) v="home";
@@ -620,7 +636,8 @@ function tags(q){ const p=PMAP[q.p]; return `<span class="pill blue">${esc(p.sho
 function stemHTML(q){ return `<p class="qtext"${langAttr(q)}>${esc(QT(q))}</p>` + (q.img? `<img class="qimg" src="${q.img}" alt="Figure for this question">` : ""); }
 function answerText(q){ const o=OPTS(q); return isMCQ(q) ? q.a.map(i=>`(${LET[i]}) ${o[i]}`).join("  or  ") : ANS(q); }
 function answerBox(q){ const te = isMCQ(q)? (P.lang==="te"&&!!q.ot) : (P.lang==="te"&&!!q.at); return `<div class="answer"${te?' lang="te"':""}><small lang="en">Official answer</small>${esc(answerText(q))}</div>`; }
-function whyHTML(q){ return q.w? `<div class="why"><h4>Explanation</h4><p>${esc(q.w)}</p></div>` : ""; }
+function videoBtn(q){ return q.v? `<button class="video-btn" type="button" data-act="video" data-id="${q.id}"><span class="play" aria-hidden="true">▶</span><span><b lang="te">వీడియో వివరణ చూడండి</b><small>Watch the video explanation · ${esc(q.v.dur||"1 min")} · Telugu</small></span></button>` : ""; }
+function whyHTML(q){ return (q.w? `<div class="why"><h4>Explanation</h4><p>${esc(q.w)}</p></div>` : "") + videoBtn(q); }
 function optsStatic(q, chosen, reveal){
   return `<ul class="opts"${(P.lang==="te"&&q.ot)?' lang="te"':""}>${OPTS(q).map((o,i)=>{
     let cls="", tag="";
@@ -1065,6 +1082,18 @@ function vNotes(){
     <div class="card notes-foot"><b>The previous-question portal stays free.</b> The notes are optional and priced low so that any aspirant can afford them. Questions about the books? Call or WhatsApp <a href="tel:+919494792739">+91 94947 92739</a> or email <a href="mailto:anilkumarjupudi360360@gmail.com">anilkumarjupudi360360@<wbr>gmail.com</a>.</div>
   </div>`;
 }
+function openVideo(id){
+  const q = QMAP[id]; if(!q||!q.v) return;
+  let d = document.getElementById("videoDlg");
+  if(!d){ d = document.createElement("dialog"); d.id="videoDlg"; d.className="sample-dlg video-dlg"; document.body.appendChild(d);
+    d.addEventListener("click", e=>{ if(e.target===d) closeVideo(); }); d.addEventListener("close", ()=>{ const v=d.querySelector("video"); if(v) v.pause(); }); }
+  d.innerHTML = `<header><b lang="te">${esc(q.v.title||"వీడియో వివరణ")}</b><button class="btn btn-secondary btn-sm" type="button" data-act="closevideo">Close</button></header>
+    <div class="vwrap"><video controls autoplay playsinline preload="auto" poster="${esc(q.v.poster||"")}">${q.v.webm?`<source src="${esc(q.v.webm)}" type="video/webm">`:""}<source src="${esc(q.v.mp4)}" type="video/mp4"></video></div>
+    ${q.v.credit?`<p class="vcredit">${esc(q.v.credit)}</p>`:""}`;
+  if(d.showModal) d.showModal(); else d.setAttribute("open","");
+  const v=d.querySelector("video"); if(v){ const pr=v.play(); if(pr&&pr.catch) pr.catch(()=>{}); }
+}
+function closeVideo(){ const d=document.getElementById("videoDlg"); if(d){ const v=d.querySelector("video"); if(v) v.pause(); if(d.close) d.close(); else d.removeAttribute("open"); } }
 function openSample(id){
   const b = (DATA.notes||[]).find(x=>x.id===id); if(!b) return;
   let d = document.getElementById("sampleDlg");
@@ -1158,6 +1187,8 @@ document.addEventListener("click", e=>{
     case "bankclear": UI.bankQ=""; UI.bankPaper="all"; UI.bankSubj="all"; UI.bankTopic="all"; bankLimit=20; render(); break;
     case "lang": { P.lang = b.dataset.l==="te"? "te" : "en"; savePrefs(); syncLang(); render(); break; }
     case "sample": openSample(b.dataset.id); break;
+    case "video": openVideo(b.dataset.id); break;
+    case "closevideo": closeVideo(); break;
     case "closesample": { const d=document.getElementById("sampleDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } break; }
     case "copyig": { const h="@"+DATA.instagram; try{ navigator.clipboard.writeText(h).then(()=>toast("Copied "+h), ()=>toast("Handle: "+h)); }catch(_){ toast("Handle: "+h); } break; }
   }

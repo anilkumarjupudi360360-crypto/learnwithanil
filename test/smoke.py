@@ -53,6 +53,13 @@ async def main():
                 print('bank search:', await pg.inner_text('#bankResults p.muted'))
                 await pg.evaluate('location.hash="about"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/about.png')
+                await pg.evaluate('location.hash="q/m2025p2-117"'); await pg.wait_for_timeout(300)
+                assert 'GSLV' in await pg.inner_text('#view'), 'question link should open the GSLV question'
+                await pg.click('[data-act="pick"][data-i="0"]'); await pg.click('[data-act="check"]'); await pg.wait_for_timeout(200)
+                await pg.click('[data-act="video"]'); await pg.wait_for_timeout(500)
+                assert await pg.evaluate('document.getElementById("videoDlg").open'), 'video dialog should open'
+                await pg.screenshot(path=f'{SHOTS}/video-dialog.png')
+                await pg.click('[data-act="closevideo"]')
                 await pg.evaluate('location.hash="notes"'); await pg.wait_for_timeout(300)
                 await pg.screenshot(path=f'{SHOTS}/notes-desk.png', full_page=True)
                 print('notes cards:', await pg.locator('.note').count())
