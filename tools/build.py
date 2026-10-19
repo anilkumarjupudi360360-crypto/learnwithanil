@@ -265,8 +265,8 @@ def home_notes(notes):
     covers = ''.join(f'<img src="{esc(b["cover"])}" alt="" width="140" height="198" loading="lazy">' for b in notes)
     return f'''<section class="wrap section">
     <a class="card notes-promo" href="#notes">
-      <div class="np-copy"><p class="eyebrow">New · Study material</p><h2>Crisp Notes 2026-27</h2>
-      <p>{esc(" and ".join(dict.fromkeys(b["subject"] for b in notes)))} for Group-II Mains Paper II, in English and Telugu medium, with APPSC's own previous questions inside. ₹{notes[0]["price"]} per book.</p>
+      <div class="np-copy"><p class="eyebrow">New · Study material</p><h2>Study material 2026-27</h2>
+      <p>{esc(" and ".join(dict.fromkeys(b.get("subject_label", b["subject"]) for b in notes)))} for APPSC Mains, with the latest 2026 data and APPSC's own previous questions inside. From ₹{min(b["price"] for b in notes)}.</p>
       <span class="btn btn-primary">See the books</span></div>
       <div class="np-covers" aria-hidden="true">{covers}</div>
     </a>

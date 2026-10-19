@@ -1035,10 +1035,10 @@ function noteCard(b){
   return `<article class="card note">
     <button class="note-cover" type="button" data-act="sample" data-id="${b.id}" aria-label="See sample pages of ${esc(name)}"><img src="${esc(b.cover)}" alt="Cover of ${esc(name)}" width="560" height="792" loading="lazy"></button>
     <div style="min-width:0">
-      <div class="pills"><span class="pill blue">${esc(b.medium_en)}</span><span class="pill">Vol. ${b.vol}</span></div>
+      <div class="pills"><span class="pill blue">${esc(b.medium_en)}</span><span class="pill">${esc(b.badge||("Vol. "+b.vol))}</span></div>
       <h3${te?' lang="te"':""}>${esc(b.title)}</h3>
       ${te? `<p class="en">${esc(b.title_en)}</p>` : ""}
-      <p class="note-meta mono">${b.pages} pages · ${b.chapters.length-1} chapters + practice · ${b.pyqs} PYQs</p>
+      <p class="note-meta mono">${b.pages} pages · ${b.chapters_label? esc(b.chapters_label) : `${b.chapters.length-1} chapters + practice · ${b.pyqs} PYQs`}</p>
       <details class="note-toc"><summary>What's inside</summary><ol${te?' lang="te"':""}>${b.chapters.map(c=>`<li>${esc(c)}</li>`).join("")}</ol></details>
       <div class="note-buy"><span class="price">₹${b.price}</span>${buy}</div>
       <div class="note-links"><button class="btn btn-ghost btn-sm" type="button" data-act="sample" data-id="${b.id}">See sample pages</button>${b.buy? "" : `<a class="btn btn-ghost btn-sm" href="${waLink(`Hi Anil, please tell me when "${name}" is available to buy.`)}" target="_blank" rel="noopener">Notify me on WhatsApp</a>`}</div>
@@ -1048,15 +1048,17 @@ function noteCard(b){
 function vNotes(){
   const N = DATA.notes||[];
   const anyBuy = N.some(b=>b.buy);
-  const groups = [...new Set(N.map(b=>b.subject))].map(sub=>{
-    const bs = N.filter(b=>b.subject===sub);
-    return `<div class="notes-sub"><h2>${esc(sub)}</h2><span class="muted" style="font-size:14px">Group-II Mains · Paper II · Section ${sub==="AP Economy"?"A":"B"}</span></div><div class="notes-grid">${bs.map(noteCard).join("")}</div>`;
+  const groups = [...new Set(N.map(b=>b.subject_label||b.subject))].map(sub=>{
+    const bs = N.filter(b=>(b.subject_label||b.subject)===sub);
+    return `<div class="notes-sub"><h2>${esc(sub)}</h2><span class="muted" style="font-size:14px">${esc(bs[0].syllabus||"")}</span></div><div class="notes-grid">${bs.map(noteCard).join("")}</div>`;
   }).join("");
+  const prices = [...new Set(N.map(b=>b.price))].sort((a,b)=>a-b);
+  const priceTxt = prices.length>1 ? `₹${prices[0]}–₹${prices[prices.length-1]}` : `₹${prices[0]||49}`;
   return `<div class="wrap view">
-    ${head("Study material · Crisp Notes 2026-27","Crisp Notes for APPSC Group-II Mains", "Short, exam-focused books by Jupudi Anil Kumar with the latest 2026-27 data, a Prelims/Mains tag on every topic, memes that make tricky facts stick, practice questions and APPSC's own previous questions with the official answers. English and Telugu medium are separate books.")}
+    ${head("Study material · 2026-27","Study material for APPSC Mains", "Exam-focused books by Jupudi Anil Kumar: Crisp Notes on AP Economy, and a full Science & Technology book for Group-I and Group-II. Every book has the latest 2026 data, a Prelims/Mains tag on every topic, memes that make tricky facts stick, practice questions and APPSC's own previous questions with the official answers.")}
     <div class="notes-steps">
       <div class="card"><span class="n">1</span><div><b>See the sample pages</b><p>Tap a cover to look inside before you buy.</p></div></div>
-      <div class="card"><span class="n">2</span><div><b>Pay ₹${N[0]?N[0].price:49} online</b><p>${anyBuy? "Secure online payment by UPI or card." : "Online payment opens soon. Tap “Notify me” to get a WhatsApp message when it does."}</p></div></div>
+      <div class="card"><span class="n">2</span><div><b>Pay ${priceTxt} online</b><p>${anyBuy? "Secure online payment by UPI or card." : "Online payment opens soon. Tap “Notify me” to get a WhatsApp message when it does."}</p></div></div>
       <div class="card"><span class="n">3</span><div><b>Download the PDF</b><p>Read it on your phone or print it. For your personal study only.</p></div></div>
     </div>
     ${groups}
