@@ -8,4 +8,4 @@ Free practice portal for APPSC Group-II previous year questions (Screening 2019 
 - `tools/app.html` – the app template
 - `src/static/` – files copied unchanged to the site root (e.g. Google Search Console verification)
 
-To publish a change: `SITE_URL=https://anilkumarjupudi360360-crypto.github.io/learnwithanil python3 tools/build.py && rm -rf docs && cp -r dist/site docs`, then commit and push.
+To publish a change: `SITE_URL=https://learnwithanil.in python3 tools/build.py && rm -rf docs && cp -r dist/site docs`, then commit and push.
