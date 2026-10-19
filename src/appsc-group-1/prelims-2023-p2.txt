@@ -1,0 +1,793 @@
+# APPSC Group-I Prelims 2023 Paper II – General Aptitude (Notification 28/2022), held 8 January 2023. Source: APPSC final key (answers only; options are not printed).
+# Deleted by APPSC: 16, 34, 52, 78
+# Skipped: 10, 13, 24, 45 (figure-based, or the answer cannot be worked out from the printed question)
+
+Q 1 | men | Numbers & Series
+There are nine 2-digit consecutive odd numbers. If 59 is the mean of the first five such numbers, then what is the mean of all the nine numbers ?
+= 63
+~ The mean of five consecutive odd numbers is the middle one, so the first five are 55, 57, 59, 61, 63; all nine are 55 to 71, whose mean is the middle (5th) number, 63.
+
+Q 2 | men | Arithmetic
+Latha went to the market to buy some vegetables. While leaving her house she checked her wallet and got to know that she had some hundred-rupee notes and some twenty-rupee notes. After shopping she had the same number of hundred-rupee notes as she originally had twenty-rupee notes and the same number of twenty-rupee notes as she originally had hundred-rupee notes. If the remaining money was one-third of what she initially had while stepping out of her house, find the initial ratio of the number of hundred-rupee notes and twenty-rupee notes.
+= 7 : 1
+~ Let her start with h hundred-rupee and t twenty-rupee notes. Then 100t + 20h = (100h + 20t)/3, so 300t + 60h = 100h + 20t, i.e. 280t = 40h and h : t = 7 : 1.
+
+Q 3 | men | Reasoning
+In a class, Raghu got the 11th rank and he was 31st from the bottom of the list of boys passed. Three boys did not take the examination and one failed. What is the total strength of the class ?
+= 45
+~ Boys who passed = 11 + 31 − 1 = 41; adding 3 who did not take the exam and 1 who failed gives 41 + 3 + 1 = 45.
+
+Q 4 | men | Numbers & Series
+124 chocolates were left when the total chocolates in a box were divided equally among 403 students. How many chocolates would remain if the chocolates from the same box are distributed equally among 31 students ?
+= 0
+~ Total = 403k + 124. Since 403 = 13 × 31 and 124 = 4 × 31, the total is a multiple of 31, so nothing remains.
+
+Q 5 | men | Numbers & Series
+A shopkeeper has three cloth pieces of lengths 7 m, 3 m 85 cm and 12 m 95 cm respectively. He measures each of the three cloth pieces with a rod at his disposal and finds that the length of each cloth piece is an integral multiple of the length of the rod. What can be the maximum length of the rod ?
+= 35 cm
+~ The rod length is the HCF of 700 cm, 385 cm and 1295 cm. 700 = 2² × 5² × 7, 385 = 5 × 7 × 11 and 1295 = 5 × 7 × 37, so the HCF is 5 × 7 = 35 cm.
+
+Q 6 | men | Arithmetic
+100 students were to participate in school games. 60 students participated in game 1, while 50 students participated in game 2. 10 students did not come on time, so they were disqualified. How many students participated in only one of the games ?
+= 70
+~ 100 − 10 = 90 students took part, so 60 + 50 − (both) = 90 gives both = 20. Only one game = 90 − 20 = 70.
+
+Q 7 | men | Arithmetic
+In a rural market there are two types of vendors, X and Y. 70 percent of the vendors are X, and 60% of the X earn ₹50,000 or more in a month. Total number of vendors who earn ₹50,000 or more per month in the rural market is 48 percent of the total vendors. What percentage of Y earn less than ₹50,000 ?
+= 80%
+~ X earning ₹50,000 or more = 60% of 70% = 42% of all vendors, so Y contributes 48% − 42% = 6% of all vendors. Y is 30% of vendors, so 6/30 = 20% of Y earn ₹50,000 or more and 80% of Y earn less.
+
+Q 8 | men | Reasoning
+Select the missing numbers from the given alternatives.
+17 | 12 | 11
+47 | 43 | ?
+4 | 5 | 6
+= 55, 49
+~ Top number × (3, 4, 5) minus the bottom number gives the middle number: 17 × 3 − 4 = 47 and 12 × 4 − 5 = 43, so ? = 11 × 5 − 6 = 55 − 6 = 49. The key prints both 55 (the product 11 × 5) and 49 (the final value).
+
+Q 9 | men | Numbers & Series
+If we listed all numbers from 100 to 10,000, how many times would the digit 5 be printed ?
+= 3980
+~ From 0 to 9999 each of the four digit places shows 5 exactly 1000 times, giving 4000. Numbers 0 to 99 contain 20 fives (10 in the units place, 10 in the tens place) and 10,000 has none, so the count is 4000 − 20 = 3980.
+
+Q 11 | men | Numbers & Series
+Find the wrong term in the given series.
+7, 12, 40, 222, 1742, 17390, 208608
+= 1742
+~ The rule is multiply by 2, 4, 6, 8, 10, 12 and subtract 2, 8, 18, 32, 50, 72 (2n²): 7×2−2 = 12, 12×4−8 = 40, 40×6−18 = 222, 222×8−32 = 1744, 1744×10−50 = 17390, 17390×12−72 = 208608. So 1742 should be 1744.
+
+Q 12 | men | Arithmetic
+Excluding stoppages, the speed of a bus is 84 kmph and including stoppages, it is 70 kmph. For how many minutes does the bus stop per hour ?
+= 10 minutes
+~ Distance lost per hour due to stops = 84 − 70 = 14 km, which takes 14/84 hour at running speed = 1/6 hour = 10 minutes.
+
+Q 14 | men | Reasoning
+A child made a big cube by joining 64 smaller red cubes. He then painted the faces of the big cube in yellow colour, except one face. His teacher came and dismantled all the cubes and asked him to count the number of cubes whose two faces are yellow. If the child answered correctly, then how many cubes did he count ?
+= 20
+~ The big cube is 4 × 4 × 4. The 8 edges lying between two painted faces each have 2 middle cubes with two yellow faces (16), and the 4 corners on the unpainted face each have two yellow faces (4), giving 16 + 4 = 20.
+
+Q 15 | men | Arithmetic
+In a school sports competition, 40% students participated in shooting, 35% students participated in wrestling, 32% students participated in boxing, 9% students participated in shooting and wrestling, 11% students participated in boxing and wrestling, 8% students participated in shooting and boxing and 5% students participated in all the three sports. If 64 students did not participate in any sport, then find the total number of students in the school.
+= 400
+~ Students in at least one sport = 40 + 35 + 32 − 9 − 11 − 8 + 5 = 84%, so 16% took part in none. 16% = 64 means the total is 64 × 100/16 = 400.
+
+Q 17 | men | Reasoning
+What can be the maximum sum of Saturdays and Sundays in a normal year ?
+= 105
+~ A normal year has 365 days = 52 weeks + 1 day, so there are 52 Saturdays and 52 Sundays plus at most one extra Saturday or Sunday: 52 + 52 + 1 = 105.
+
+Q 18 | men | Reasoning
+If in a particular non-leap year, the month of June had 5 Mondays, then that year must have started with which one of the following days ?
+= None of the above
+~ June has 30 days (4 weeks + 2 days), so 5 Mondays means 1 June is a Sunday or a Monday. From 1 January to 1 June in a non-leap year is 151 days = 21 weeks + 4 days, so 1 January was a Wednesday or a Thursday; no single day is certain.
+
+Q 19 | men | Numbers & Series
+How many pairs of positive integers m, n satisfy the following equation :
+1/m + 4/n = 1/12,
+where n is an odd integer less than 60 ?
+= 3
+~ m = 12n/(n − 48), so n must be an odd number from 49 to 59. Only n = 49 (m = 588), n = 51 (m = 204) and n = 57 (m = 76) give whole numbers, so there are 3 pairs.
+
+Q 20 | men | Numbers & Series
+If x = – 0·5, then which of the following has the smallest value ?
+= 1/x
+~ 1/x = 1/(−0·5) = −2, which is smaller than x itself (−0·5) and smaller than any positive expression of x such as x² (0·25) or −x (0·5).
+
+Q 21 | men | Arithmetic
+Two liquids A and B are in the ratio 5 : 1 in container 1 and 1 : 3 in container 2. In what ratio should the contents of the two containers be mixed so as to obtain a mixture of A and B in the ratio 2 : 1 ?
+= 5 : 2
+~ Fraction of A is 5/6 in container 1, 1/4 in container 2 and 2/3 in the mixture. By alligation the ratio is (2/3 − 1/4) : (5/6 − 2/3) = 5/12 : 2/12 = 5 : 2.
+
+Q 22 | men | Reasoning
+There are 6 members A, B, C, D, E and F in a family who are spread across 3 generations. There are two couples in the family and no one from the third generation is married. E is the wife of C. F and B are a couple and the only people belonging to their generation. There are 4 male members in the family.
+Which of the following must be true ?
+= There is no female in the third generation.
+~ The two couples (C–E and F–B) give 2 men and 2 women, so the unmarried members A and D must both be male to make 4 males. The third generation is unmarried, so it can contain only A and D, and therefore has no female.
+
+Q 23 | men | Numbers & Series
+Let N be the greatest number that will divide 6360, 7420 and 9540, leaving the same remainder in each case. Then the sum of the digits of N is :
+= 7
+~ N is the HCF of the differences 7420 − 6360 = 1060, 9540 − 7420 = 2120 and 9540 − 6360 = 3180, which is 1060. Sum of digits = 1 + 0 + 6 + 0 = 7.
+
+Q 25 | men | Arithmetic
+The circumference of the front wheel of a cart is 30 feet and that of the back wheel is 36 feet. What is the distance travelled by the cart, when the front wheel has done five more revolutions than the rear wheel ?
+= 900 feet
+~ For distance D, D/30 − D/36 = 5, i.e. D × (6/1080) = 5, so D = 5 × 180 = 900 feet.
+
+Q 26 | men | Numbers & Series
+Ramesh wants to plant 372 tomato plants, 558 chilli plants and 1116 onion plants in equal rows. Also, he wants to make distinct rows of each plant, i.e. every row should have only one kind of plant. What are the minimum number of rows that are required ?
+= 11
+~ Plants per row = HCF(372, 558, 1116) = 186. Rows = 372/186 + 558/186 + 1116/186 = 2 + 3 + 6 = 11.
+
+Q 27 | men | Numbers & Series
+The total number of integers between 400 and 600, each of which, either begins with 5 or ends with 5 but not both, is
+= 100
+~ Begin with 5: 500 to 599 = 100 numbers; end with 5: 405, 415, ..., 595 = 20 numbers; both: 505, 515, ..., 595 = 10 numbers. Either but not both = 100 + 20 − 2 × 10 = 100.
+
+Q 28 | men | Arithmetic
+A shopkeeper is selling his goods at 40% discount, but is still able to make 20% profit on the list price. By what percentage does he mark up his goods ?
+= 100%
+~ Taking the 20% profit on cost: cost = 100 gives selling price 120. After a 40% discount the selling price is 60% of the marked price, so marked price = 120/0·6 = 200, a 100% mark-up over cost.
+
+Q 29 | men | Arithmetic
+Anand and Rishi are the two biggest competitors of chess. The probability of Rishi losing a game against Anand is 75%. What is the probability that Anand loses at least one out of the four games played between them ?
+= 175/256
+~ Anand wins a game with probability 3/4, so he wins all four with probability (3/4)⁴ = 81/256. The probability that he loses at least one is 1 − 81/256 = 175/256.
+
+Q 30 | men | Arithmetic
+A tank has eight pipes, some of which fill the tank and the rest empty the tank. Each inlet pipe fills the tank in 8 hours while each outlet pipe empties it in 6 hours. If all the pipes are kept open when the tank is full, it takes 6 hours to drain the tank. How many pipes are inlet pipes ?
+= Four
+~ With i inlet pipes, (8 − i)/6 − i/8 = 1/6. Multiplying by 24: 4(8 − i) − 3i = 4, so 32 − 7i = 4 and i = 4.
+
+Q 31 | men | Arithmetic
+Ajeet and Sujeet go for shopping in a mall. They use an escalator to move between various floors. The escalator moves at a constant speed. Ajeet takes nine steps for every five of Sujeet’s steps. Ajeet takes 30 steps to reach the top of the escalator, while Sujeet takes 20 steps to reach the top. If the escalator was turned off, how many steps would they have to take to walk up ?
+= 80 steps
+~ In one time unit Ajeet takes 9 steps and Sujeet 5, so Ajeet is on the escalator for 30/9 units and Sujeet for 20/5 = 4 units. With escalator speed e steps per unit, 30 + (10/3)e = 20 + 4e gives e = 15, so total steps = 20 + 4 × 15 = 80.
+
+Q 32 | men | Arithmetic
+A beats B by 15 seconds in a 200 m race, B beats C by 25 seconds in a 500 m race, C beats D by 32 seconds in an 800 m race and D beats E by 35 seconds in a 1 km race. What must be the speed of A in order to beat E by 800 m in a 2 km race ?
+= 3·33 m/s
+~ Time gaps grow in proportion to distance, so over 2 km A leads E by 150 + 100 + 80 + 70 = 400 s. Beating E by 800 m means E needs these 400 s to cover 800 m, so E runs 2 m/s and takes 1000 s for 2 km; A takes 600 s, i.e. 2000/600 = 3·33 m/s.
+
+Q 33 | men | Arithmetic
+5 persons will live in a tent. If each person requires 16 m² of floor area and 100 m³ space for air, then the height of the cone of smallest size to accommodate these persons would be
+= 18·75 m
+~ Base area = 5 × 16 = 80 m² and volume = 5 × 100 = 500 m³. For a cone, volume = (1/3) × base area × height, so 500 = (1/3) × 80 × h and h = 1500/80 = 18·75 m.
+
+Q 35 | men | Arithmetic
+A change-making machine contains one-rupee, two-rupee and five-rupee coins. The total number of coins is 300. The amount is ₹960. If the number of one-rupee coins and two-rupee coins are interchanged, the value comes down by ₹40. The total number of five-rupee coins is
+= 140
+~ With x one-rupee, y two-rupee and z five-rupee coins: x + 2y + 5z = 960 and 2x + y + 5z = 920 give y = x + 40. Using x + y + z = 300 gives z = 260 − 2x; substituting, 3x + 80 + 5(260 − 2x) = 960, so x = 60, y = 100 and z = 140.
+
+Q 36 | men | Reasoning
+P, Q, R and S are four statements. Relation between these statements is as follows :
+I. If P is true, then Q must be true.
+II. If Q is true, then R must be true.
+III. If S is true, then either Q is false or R is false.
+Which of the following must be true ?
+= If P is true, then S is false
+~ If P is true, then Q is true (I), so R is true (II). Since both Q and R are true, S cannot be true, because III says S being true makes Q or R false. So S is false.
+
+Q 37 | men | Arithmetic
+A decorative lamp has 2 brown, 3 green and 4 white bulbs. What is the probability of lighting three bulbs such that at least one bulb that glows is white ?
+= 37/42
+~ Ways to choose 3 of 9 bulbs = ⁹C₃ = 84; ways with no white bulb = ⁵C₃ = 10. Probability = 1 − 10/84 = 74/84 = 37/42.
+
+Q 38 | men | Reasoning
+In a college, 25% students play football. A student who does not play football, plays cricket. Every cricket player wears a cap.
+Which of the following conclusions cannot be made from the above data ?
+I. 25% of the students do not wear caps.
+II. No cricketer plays football.
+Select the correct answer using the code given below :
+= Both I & II
+~ The data say nothing about whether football players wear caps or also play cricket. So neither "25% do not wear caps" nor "no cricketer plays football" follows, and both conclusions cannot be made.
+
+Q 39 | men | Arithmetic
+The total number of students in a class is 400. The ratio of number of students who like Arts and the ones who like Science is 3 : 5. The number of students who like Science is more than the ones who like Arts by how much ?
+= 100
+~ Arts = 400 × 3/8 = 150 and Science = 400 × 5/8 = 250, so the difference is 100.
+
+Q 40 | men | Reasoning
+English alphabets A to Z are numbered with the first 26 consecutive prime numbers.
+If PQR = 519 and UVW = 705, then what is JKL equal to ?
+= 291
+~ A = 2, B = 3, ..., so P, Q, R = 53, 59, 61 (sum 173, × 3 = 519) and U, V, W = 73, 79, 83 (sum 235, × 3 = 705). The code is 3 × the sum, so J, K, L = 29, 31, 37 gives 3 × 97 = 291.
+
+Q 41 | men | Arithmetic
+Pranav sold two books at the same price. On one book he made a profit of 10% while on the other, he incurred a loss of 10%.
+In this case, which of the following statements is correct ?
+= He suffers a loss of 1%
+~ When two articles are sold at the same price, one at x% profit and the other at x% loss, there is always a net loss of x²/100 %; here 10²/100 = 1%.
+
+Q 42 | men | Numbers & Series
+In the following question, select the number which can replace the question mark (?) from the given alternatives :
+(Figure: a circle divided into four quarters; each quarter has two outer numbers and one inner number — outer numbers | inner number)
+Top-left: 3, 9 | 216
+Top-right: 14, 3 | 1331
+Bottom-right: 9, 4 | 125
+Bottom-left: 15, 28 | ?
+= 2197
+~ In each quarter the inner number is the cube of the difference of the two outer numbers: (9 − 3)³ = 216, (14 − 3)³ = 1331, (9 − 4)³ = 125, so ? = (28 − 15)³ = 13³ = 2197.
+
+Q 43 | men | Reasoning
+Kranthi is facing west. She then turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in the anti-clockwise direction. Which direction is she facing now ?
+= South-west
+~ From west, 45° clockwise gives north-west, a further 180° clockwise gives south-east, and 270° anti-clockwise from south-east (to north-east, north-west, then south-west) gives south-west.
+
+Q 44 | men | Arithmetic
+A watch loses 90 seconds in an hour and the watch owner adjusts the time lost by the watch in one day at the end of 48 hours. After how many days will the watch show the correct time before the watch owner adjusts the time ?
+= 40 days
+~ The watch loses 90 s × 48 = 72 min in every 48 hours and the owner then puts back one day's loss (36 min), so it falls a net 36 min behind every 2 days; the key takes 720 min (12 hours) ÷ 36 = 20 cycles = 40 days, when the watch is exactly 12 hours behind after the 20th adjustment. Read strictly as "before the owner adjusts", it is already 18 × 36 + 72 = 720 min behind just before the 19th adjustment. Official key: 40 days; the working above gives 38 days.
+
+Q 46 | men | Arithmetic
+There are 6 tasks and 6 people. Task 1 cannot be assigned either to person 1 or to person 2; task 2 must be assigned to either person 3 or person 4. Every person is to be assigned one task. In how many ways can the assignment be done ?
+= 144
+~ Task 2 can go to person 3 or 4 (2 ways); task 1 then goes to one of the 3 remaining people other than persons 1 and 2 (3 ways); the other 4 tasks go to the remaining 4 people in 4! = 24 ways, so 2 × 3 × 24 = 144.
+
+Q 47 | men | Reasoning
+In a row of 40 girls, when Ankitha was shifted to her left by four places, her number from the left end of the row becomes 10. What was the number of Kanchana from the right end of the row if Kanchana was three places to the right of Ankitha’s original position ?
+= 24
+~ After moving 4 places left Ankitha is 10th from the left, so she was originally 14th; Kanchana, 3 places to her right, is 17th from the left, i.e. 40 − 17 + 1 = 24th from the right.
+
+Q 48 | men | Numbers & Series
+Vaccination drive for Covid-19 is carried out in a village of 1000 people. The first person that comes for vaccination is placed in Group A, the next two in Group B, the next 3 in Group C, the next 4 in Group D, and the next 5 in Group E. After the 5th member of Group E, the pattern repeats, starting from 1 member in Group A and so on. The last beneficiary to be vaccinated belongs to
+= Group D
+~ One cycle of Groups A to E takes 1 + 2 + 3 + 4 + 5 = 15 people; 1000 = 15 × 66 + 10, and the 10th person of a cycle falls in Group D (positions 7 to 10).
+
+Q 49 | men | Arithmetic
+Ramesh said to his daughter, “I am four times as old as you now. Five years from now, I will be thrice as old as you.” His daughter asked him, “Ten years from now, how many times my age would you be ?”
+What would Ramesh’s answer be ?
+= 2·5 times
+~ Let the daughter's age be x: 4x + 5 = 3(x + 5) gives x = 10, so Ramesh is 40; in ten years they will be 50 and 20, and 50 ÷ 20 = 2·5.
+
+Q 50 | men | Arithmetic
+In a badminton tournament between schools A and B, school A won 50% of the matches played in the first three weeks. At the end of the tournament, its success rate was 75%. If 6 matches were played in the first three weeks and school A won all its matches played after that, how many matches did the tournament have ?
+= 12
+~ School A won 3 of the first 6 matches; if it then won all n later matches, (3 + n)/(6 + n) = 3/4 gives n = 6, so the tournament had 6 + 6 = 12 matches.
+
+Q 51 | men | Arithmetic
+The ratio of jobs done by 30 girls to the job done by 25 boys, in the same time period is 5 : 6. If 9 girls and 10 boys can finish a job in 40/13 days, then how many girls are required to complete the job in 6 days ?
+= 12
+~ 30 girls : 25 boys = 5 : 6 means one girl : one boy = 25 : 36, so 10 boys equal 14·4 girls and 9 girls + 10 boys = 23·4 girls. The job is 23·4 × 40/13 = 72 girl-days, so 72 ÷ 6 = 12 girls are needed.
+
+Q 53 | men | Reasoning
+There are two different ways of going from city A to city B. There are 3 different ways of going from city B to city C. There are two different ways of going from city C that are not passing through city B.
+How many different ways of going from city A to city C are there ?
+= 6
+~ Each of the 2 routes from A to B can be followed by any of the 3 routes from B to C, giving 2 × 3 = 6; the two other routes start from city C, so they add no new route from A to C.
+
+Q 54 | men | Arithmetic
+Meher purchases 3 apples, 7 bananas and 1 lemon for ₹285. Rohan buys 4 apples, 5 bananas and 1 lemon for ₹245. How much does Harish pay if he buys 1 apple, 11 bananas and 1 lemon ?
+= ₹365
+~ With prices a, b and l: 3a + 7b + l = 285 and 4a + 5b + l = 245. Taking 3 × (first) − 2 × (second) gives a + 11b + l = 855 − 490 = ₹365.
+
+Q 55 | men | Arithmetic
+The Compound interest on a certain sum for 2 years is ₹1,512 and Simple interest is ₹1,440. If the sum is invested such that the Simple interest is ₹2,592 and the number of years is equal to the rate of interest per annum, then find the rate ?
+= 6%
+~ SI of ₹1,440 for 2 years is ₹720 a year; CI − SI = ₹72 = 720 × r/100, so r = 10% and the sum is ₹7,200. Then 7,200 × R × R/100 = 2,592 gives R² = 36, so the rate is 6%.
+
+Q 56 | apt | Administrative Abilities
+You are an officer-in-charge for providing food facilities to the survivors of a cyclone affected area. Despite your best possible efforts, people level allegations against you that you are making money out of the funds sanctioned for relief. You would ...
+= Let an enquiry be set up to look into the matter
+~ An impartial enquiry lets facts, not allegations, settle the matter: it upholds transparency in the use of relief funds, protects an honest officer and restores public trust.
+
+Q 57 | apt | Administrative Abilities
+As a citizen, you have some work in Grama Sachivalayam and have submitted an application for the same. The official there calls you repeatedly and without directly asking you, sends out feelers for a bribe. You want to get your work done. You would ...
+= Verbally complain to the higher officials about the feelers and ask for help
+~ Since the official has only hinted at a bribe, reporting it to higher officials and seeking their help gets the work done through legitimate channels without paying a bribe or ignoring the corruption.
+
+Q 58 | apt | Administrative Abilities
+You have been made responsible to procure medical items at a short notice to be used for an area affected by a pandemic. On finding the price mentioned by the suppliers, you found that the lowest price quoted is approximately five times more than the approved rate of the Government. You would ...
+= Accept the lowest price
+~ In a pandemic emergency the timely supply of medical items to save lives is the priority, so the officer accepts the lowest available quotation rather than delaying procurement. (Official key; some sources differ.)
+
+Q 59 | apt | Administrative Abilities
+You are handling a time-bound project. Suddenly, you meet with an accident. Your immediate superior insists that you complete the task. You would ...
+= Suggest an alternate person to your superior who can handle the project.
+~ When an accident prevents you from working, suggesting a capable alternate person ensures the time-bound project is completed without neglecting your recovery.
+
+Q 60 | apt | Administrative Abilities
+You have differences of opinion regarding the project report prepared by your subordinate. The report has to be submitted immediately. The subordinate is justifying the information given in the report. You would …
+= Update and correct the report on your own
+~ As the superior responsible for the report and facing an immediate deadline, you correct and update it yourself instead of delaying submission over the disagreement.
+
+Q 61 | sci | Defence Technology
+Consider the following statements regarding India’s Anti-Satellite Missile test :
+I. The test successfully destroyed a live satellite in Low Earth Orbit.
+II. The test was done in the upper atmosphere to ensure that there is no space debris.
+III. India is the fourth country in the world to have this kind of missile system.
+Which of the statements given above is/are correct ?
+= I and III only
+~ In Mission Shakti (March 2019) India's ASAT missile destroyed a live satellite in Low Earth Orbit, making India the fourth country after the USA, Russia and China with this capability; the test was done in the lower part of LEO (about 300 km) so that the debris would decay quickly, not in the "upper atmosphere".
+
+Q 62 | sci | IT & Communication
+Recently, NITI Aayog approved a proposal to conduct a study on the use of facial recognition technology in India. In the context of facial recognition technology, consider the following statements :
+I. A National Automated Facial Recognition System (NAFRS) is being developed by the National Informatics Centre, under the Ministry of Electronics and Information Technology.
+II. The biggest demerit of facial recognition technology is its limitation in identifying people in real-time and not in photos and videos.
+Which of the statements given above is/are correct ?
+= Neither I nor II
+~ The NAFRS is being developed by the National Crime Records Bureau (NCRB) under the Ministry of Home Affairs, not by NIC; and facial recognition can identify people in real time as well as in photos and videos, so both statements are wrong.
+
+Q 63 | sci | Space Technology
+Consider the following statements regarding ExoMars :
+I. Its rover will be the first mission to combine the capability to move across the surface and to study Mars at depth.
+II. ExoMars is a joint programme of the European Space Agency (ESA) and the Russian Space Agency – Roscosmos.
+Which of the statements given above is/are correct ?
+= Neither I nor II
+~ ESA suspended and then ended its ExoMars cooperation with Roscosmos in 2022 after Russia's invasion of Ukraine, so II is not correct; the key also rejects I, although it follows ESA's own description of the Rosalind Franklin rover. (Official key; some sources differ.)
+
+Q 64 | sci | Energy
+Consider the following statements regarding Fast Breeder Reactors :
+I. Fast Breeder Reactors are designed to breed more fuel than they consume.
+II. In this reactor, Plutonium-239 undergoes fission to produce energy, while the Uranium-238 present in the fuel transmutes to additional Plutonium-239.
+III. It is a part of stage 1 of India’s Nuclear power programme.
+Which of the statements given above is/are correct ?
+= I and II only
+~ A fast breeder reactor produces more fissile fuel than it consumes, as Pu-239 fissions while U-238 in the fuel is converted to Pu-239; FBRs form Stage 2, not Stage 1 (Pressurised Heavy Water Reactors), of India's three-stage nuclear programme.
+
+Q 65 | sci | Environment & Ecology
+Consider the following statements about International Nitrogen Initiative (INI) :
+I. It is set up under sponsorship of the Scientific Committee on Problems of the Environment (SCOPE) and United Nations Environment Programme (UNEP).
+II. Its key objective is to optimize nitrogen’s beneficial role in sustainable food production.
+Which of the statements given above is/are correct ?
+= II only
+~ The INI was set up in 2003 under the sponsorship of SCOPE and the International Geosphere-Biosphere Programme (IGBP), not UNEP; its key aim is to optimise nitrogen's beneficial role in sustainable food production while minimising its harmful effects.
+
+Q 66 | sci | Environment & Ecology
+Consider the following statements regarding the Nationally Determined Contributions Transport Initiative for Asia (NDCTIA) :
+I. It is an ASEAN initiative that aims to facilitate a paradigm shift to zero emission transport across Asia.
+II. The Indian component of the initiative is implemented by the Ministry of Environment, Forest and Climate Change in partnership with the Ministry of Road Transport and Highways.
+Which of the statements given above is/are correct ?
+= Neither I nor II
+~ NDC-TIA is a joint project of seven organisations funded by Germany's International Climate Initiative (IKI), covering China, India and Vietnam, not an ASEAN initiative; its India component is implemented by NITI Aayog, so neither statement is correct.
+
+Q 67 | sci | Energy
+Consider the following statements regarding the Indian Renewable Energy Development Agency Limited (IREDA) :
+I. It is a Navratna Enterprise of Government of India.
+II. It aims to give financial support to schemes for generating electricity through new and renewable sources and conserving energy through energy efficiency.
+III. It works directly under the administrative control of the Ministry of New and Renewable Energy (MNRE).
+Which of the statements given above is/are correct ?
+= II and III only
+~ When the exam was held IREDA was a Mini Ratna (Category-I) enterprise (it became a Navratna only in 2024), so I is wrong; it is a non-banking financial company under the administrative control of MNRE that finances renewable-energy and energy-efficiency projects.
+
+Q 68 | sci | Energy
+The Renewables Integration in India 2021 report was launched by which of the following institutions ?
+= NITI Aayog and International Energy Agency
+~ The "Renewables Integration in India 2021" report was prepared and launched jointly by NITI Aayog and the International Energy Agency (IEA).
+
+Q 69 | sci | Energy
+Consider the following statements with reference to the enrichment of Uranium :
+I. Uranium enrichment refers to increasing the percentage of U-238 (the fissile isotope) through the process of isotope separation.
+II. Weapons-grade Uranium has to be enriched to a maximum of 20 percent of the fissile isotope.
+Which of the statements given above is/are correct ?
+= Neither I nor II
+~ Enrichment increases the share of U-235, the fissile isotope (U-238 is not fissile), and weapons-grade uranium is enriched to about 90% U-235, while uranium below 20% is only low-enriched, so both statements are wrong.
+
+Q 70 | sci | General Science
+With reference to Digital Embossing Technology, consider the following statements :
+I. It is a printing technology that does not use chemicals, solvents and also emits no pollutants.
+II. It can be used to produce braille maps for the visually challenged.
+III. It was introduced in India recently by the National Atlas & Thematic Mapping Organisation (NATMO) functioning as the Attached Office of the Department of Science & Technology.
+Which of the statements given above is/are correct ?
+= I, II and III
+~ NATMO, which works under the Department of Science & Technology, introduced digital embossing, a printing technology that needs no chemicals or solvents and emits no pollutants, to produce durable Braille maps for the visually challenged, so all three statements are correct.
+
+Q 71 | sci | Space Technology
+With reference to ISRO’s upcoming mission “Shukrayaan-I”, consider the following statements :
+I. Shukrayaan is India’s first mission to Saturn to study the planet’s surface and atmosphere.
+II. The satellite is planned to be launched onboard the GSLV Mk III rocket.
+Which of the statements given above is/are correct ?
+= None of the above
+~ Shukrayaan-I is ISRO's planned orbiter to Venus (Shukra), not Saturn, so I is wrong; the key also rejects II, as reports at the time named the GSLV Mk II as its launcher. (Official key; some sources differ.)
+
+Q 72 | sci | IT & Communication
+With reference to RFID Technology, consider the following statements :
+I. Passive RFID tags are powered by an internal circuit and utilize it to send response to the reader.
+II. Semi-passive RFID tags comprise an internal circuit with power source but rely on radio waves received from the reader to transmit the response.
+III. Active RFID tags acquire their power from the readers’ incoming radio waves.
+IV. RFID Technology can scan a tag as long as it is within frequency range and it does not have any line-of-sight limitations.
+Which of the statements given above are correct ?
+= II and IV only
+~ Passive tags have no power source and draw energy from the reader's radio waves, while active tags carry their own battery, so I and III are swapped and wrong; semi-passive tags have a battery for the circuit but respond using the reader's signal, and RFID needs no line of sight, so II and IV are correct.
+
+Q 73 | sci | Environment & Ecology
+Consider the following statements :
+I. Dark Reserve is a public or private land with a distinguished nocturnal environment and starry nights that has been developed responsibly to prevent light pollution.
+II. World’s 1st International Dark Sky Reserve is Mont-Megantic, located in Russia.
+III. The International Dark-Sky Association (IDSA) is a EU-based non-profit organisation that designates sites as international dark sky places.
+IV. The Department of Science & Technology (DST) has announced the setting up of India’s 1st Dark-Sky Reserve in Himachal Pradesh.
+Which of the statements given above are correct ?
+= None of the above
+~ Statement I is the usual description of a dark sky reserve, but II, III and IV are wrong: Mont-Mégantic, the first International Dark Sky Reserve (2007), is in Quebec, Canada, not Russia; the International Dark-Sky Association is based in Tucson, USA, not the EU; and India's first Dark Sky Reserve is at Hanle in Ladakh, not Himachal Pradesh. Since only statement I is correct, the key's "None of the above" means that none of the offered combinations of statements is right.
+
+Q 74 | sci | Space Technology
+Consider the following statements with reference to Sampurnanand Telescope :
+I. It is located at Aryabhatta Research Institute of Observational Sciences (ARIES), Ladakh.
+II. It has completed 50 years of operations.
+III. It has been extensively used for optical observations of comets, star forming regions and star clusters.
+Which of the statements given above are correct ?
+= II and III only
+~ The 104-cm Sampurnanand Telescope is at ARIES, Nainital (Uttarakhand), not Ladakh; it completed 50 years of operation in 2022 and has been widely used for optical observations of comets, star-forming regions and star clusters.
+
+Q 75 | sci | Defence Technology
+Consider the following statements with reference to Dirty Bomb :
+I. It is a bomb that contains radioactive material, such as uranium, which is scattered through the air when its conventional explosive detonates.
+II. It creates city-flattening atomic explosion and less toxic waste.
+III. Manufacturing dirty bombs is costlier than nuclear weapons.
+Which of the statements given above are incorrect ?
+= II and III only
+~ A dirty bomb (radiological dispersal device) uses a conventional explosive to scatter radioactive material, so I is correct; it causes no nuclear explosion (II is wrong) and is far cheaper and simpler to make than a nuclear weapon (III is wrong).
+
+Q 76 | sci | Space Technology
+Consider the following statements with reference to “Gaganyaan” :
+I. Gaganyaan is an Indian crewed orbital spacecraft intended to be the formative spacecraft of the Indian Human Spaceflight Programme.
+II. ISRO announced Vyommitra, a Male Robot who will accompany other astronauts in the mission.
+III. The crewed vehicle is planned to be launched on ISRO’s GSLV Mk II.
+IV. Defence Research and Development Organisation (DRDO) will provide support for critical human-centric systems and technologies in this mission.
+Which of the statements given above are correct ?
+= I and IV only
+~ Gaganyaan is India's first crewed orbital spacecraft and DRDO supplies critical human-centric systems such as space food, crew health monitoring, radiation protection and parachutes, so I and IV are correct; Vyommitra is a female half-humanoid robot, and the crew will fly on the GSLV Mk III (LVM3), not the GSLV Mk II.
+
+Q 77 | sci | Space Technology
+Consider the following statements with reference to “Small satellite launch vehicle” designed by ISRO :
+I. It can place a 500 kg payload at a height of 500 km in the Low Earth Orbit (LEO).
+II. It has two solid motor stages with a lift off mass of 100 tonnes.
+III. It is shorter in length than the PSLV and GSLV.
+IV. Unlike the PSLV and GSLV, it can be assembled both vertically and horizontally.
+Which of the statements given above are correct ?
+= I, III and IV only
+~ The SSLV can place 500 kg in a 500 km LEO, is about 34 m tall (shorter than PSLV and GSLV) and can be assembled vertically or horizontally; it has three solid stages plus a liquid velocity-trimming module and a lift-off mass of about 120 tonnes, so II is wrong.
+
+Q 79 | sci | General Science
+Which of the following Schemes/Programmes are launched with the objective of reversing India’s brain drain to brain gain ?
+I. VAJRA Scheme
+II. Ramanujan Fellowship Programme
+III. INSPIRE Scheme
+IV. ASEAN – India Research Training Fellowship Scheme
+Select the correct answer from below :
+= I, II and III only
+~ The VAJRA Faculty scheme brings overseas scientists, including NRIs, to work in Indian institutions, the Ramanujan Fellowship attracts Indian scientists working abroad back to India, and INSPIRE draws and retains talent in Indian research; the ASEAN–India Research Training Fellowship trains ASEAN researchers in India and is not a brain-gain scheme.
+
+Q 80 | sci | Biotechnology & Health
+Indian Council for Medical Research (ICMR) developed the strategic plan and Vision 2030 document based on the following :
+I. Strengthen health research capacity in the country
+II. Leverage traditional medicine
+III. Well aligned with the National Health Policy NHP-2017
+Select the correct answer from below :
+= I, II and III
+~ ICMR's Strategic Plan and Vision 2030 document aims to strengthen health-research capacity in the country and leverage traditional medicine, and is aligned with the National Health Policy 2017, so all three are correct.
+
+Q 81 | sci | Defence Technology
+A joint programme of DRDO and ISRO, developed highly potent Anti-Satellite Weapons (ASAT) under Mission Shakti.
+I. ASAT is a missile-based system to attack moving satellites.
+II. India, using ASAT Missile, destroyed a live satellite in Low Earth Orbit.
+III. ASAT missile is capable of shooting down targets moving at a speed of 50 km per second at an altitude as high as 2000 km.
+Which of the statements regarding ASAT are true ?
+= I and II only
+~ In Mission Shakti (27 March 2019) a DRDO interceptor missile hit and destroyed a live Indian satellite (Microsat-R) in low Earth orbit at about 300 km, so I and II are true. III overstates the capability: satellites in low orbit move at only about 7.8 km per second, and the test was nowhere near 2000 km.
+
+Q 82 | sci | Energy
+Which of the following events has delayed the commissioning of the Kudankulam Nuclear Power Plant ?
+I. Disintegration of the USSR
+II. India’s economic crisis of 1991
+III. Protests by Civil Society
+Select the correct answer from below :
+= I and III only
+~ Kudankulam was agreed between India and the USSR in 1988; the break-up of the USSR in 1991 stalled the project for years, and later the anti-nuclear protests by local people and civil-society groups (2011–12) delayed the commissioning of Unit 1.
+
+Q 83 | sci | Energy
+With reference to a mega project pertaining to Nuclear Fusion research that is being built in Southern France, International Thermonuclear Experimental Reactor (ITER), consider the following statements :
+I. It was designed to demonstrate the scientific and technological feasibility of fusion power for peaceful use.
+II. Institute of Plasma Research (IPR), Gandhinagar is the Nodal agency for the project ITER.
+III. ADITYA is a medium size Tokamak fusion reactor installed at IPR, Gandhinagar as part of ITER.
+IV. EU, India, China, Japan, South Korea, Russia and US are the members of ITER.
+Which of the statements given above are correct ?
+= I, II, III and IV
+~ ITER at Cadarache in southern France is meant to prove that fusion power is scientifically and technologically feasible; its seven members are the EU, China, India, Japan, South Korea, Russia and the US, and India takes part through ITER-India at IPR, Gandhinagar. ADITYA is IPR's own indigenous tokamak (1989), which predates India joining ITER, so III is loosely worded. (Official key; some sources differ.)
+
+Q 84 | sci | IT & Communication
+With reference to “Blockchain Technology”, consider the following statements :
+I. It is a public ledger that everyone can inspect, but no single user controls.
+II. The structure and design of blockchain is such that all the data in it are about cryptocurrency only.
+III. Applications that depend on basic features of blockchain can be developed without anybody’s permission.
+Which of the statements given above is/are correct ?
+= I and III only
+~ A public blockchain is a distributed ledger that anyone can verify but no single party controls, and anyone can build applications on it without permission. II is wrong because a blockchain can record any kind of data, such as supply-chain records, land records or certificates, not only cryptocurrency.
+
+Q 85 | sci | Biotechnology & Health
+In India 3D-Printed Cornea and 3D-Printed Liver Tissue were developed respectively by
+= L.V. Prasad Eye Institute and Pandorum Technologies
+~ L.V. Prasad Eye Institute, Hyderabad (with IIT Hyderabad and CCMB) developed India's first 3D-printed cornea, while the Bengaluru start-up Pandorum Technologies created 3D-bioprinted human liver tissue.
+
+Q 86 | sci | Space Technology
+In the reduced or microgravity of Space, the astronauts’ faces become red and bloated due to the blood and cerebrospinal fluid shifting towards the head causing them to have round, puffy faces and thinner legs. This phenomenon is known as
+= Charlie Brown Effect
+~ Without gravity pulling fluids down, blood and other body fluids shift towards the head, giving astronauts a round, puffy face and thin "bird legs"; the round-face look is nicknamed the Charlie Brown effect after the cartoon character.
+
+Q 87 | sci | IT & Communication
+Identify the incorrect statement about the e-Governance programmes in India.
+= KHAJANE is an e-Governance project for the computerized delivery of land records to farmers of Karnataka.
+~ Karnataka's computerised land-records project for farmers is Bhoomi; Khajane is the state's online treasury system for government receipts and payments, so this statement is incorrect.
+
+Q 88 | sci | Environment & Ecology
+“Cheetahs have been reintroduced in India.” Which of the following connected to the above statement are correct ?
+I. Cheetahs will help in the restoration of open forest and grassland system.
+II. Project Cheetah is the world’s first inter-continental large wild carnivore translocation project.
+III. Out of 8 Namibian wild Cheetahs reintroduced into Kuno National Park, 5 are male and 3 are female.
+IV. The Cheetahs indigenous to India that went extinct, are African Cheetahs.
+V. Author of “The End of a Trail – The Cheetah in India” is Divyabhanusinh.
+= I, II and V
+~ The eight Namibian cheetahs released in Kuno National Park on 17 September 2022 were five females and three males (so III is wrong), and the cheetah that went extinct in India was the Asiatic cheetah (so IV is wrong). Project Cheetah is the first inter-continental large carnivore translocation, aimed at restoring open forest and grassland ecosystems, and Divyabhanusinh wrote "The End of a Trail".
+
+Q 89 | sci | Biotechnology & Health
+A fermentation process that uses ultrasound to safely generate Xylitol from Sugarcane bagasse is created by
+= Indian Institute of Technology, Guwahati
+~ Researchers at IIT Guwahati developed an ultrasound-assisted fermentation process to make xylitol, a low-calorie sugar substitute, from sugarcane bagasse, the fibrous waste left after crushing cane.
+
+Q 90 | sci | Energy
+Identify the incorrect statement about Hydrogen Fuel Cell Bus developed in India :
+I. India’s first indigenously developed Hydrogen Fuel Cell Bus was developed by Veera Vahana Company.
+II. The fuel cell employed in the Hydrogen-powered Bus will combine Hydrogen and Carbon dioxide to create electricity.
+III. The effluent from the hydrogen-powered Bus is water and heat instead of smoke.
+= I and II
+~ India's first indigenously developed hydrogen fuel cell bus (unveiled in Pune in August 2022) was developed by KPIT with CSIR-NCL, so I is wrong. A fuel cell combines hydrogen with oxygen from the air, not carbon dioxide, so II is wrong; its only by-products are water and heat, which is why III is correct.
+
+Q 91 | cur | AP Affairs
+Pick out the correct matches from the following statements regarding externally-aided projects in Andhra Pradesh :
+I. Andhra Pradesh Integrated Irrigation and Agriculture Transformation Project is aided by the World Bank.
+II. Andhra Pradesh Community Managed Natural Farming (APCNF) is aided by Japan International Co-operation Agency (JICA).
+III. Andhra Pradesh Irrigation and Livelihood Improvement Project Phase-3 is aided by KfW – German Bank.
+= Only I is correct
+~ The AP Integrated Irrigation and Agriculture Transformation Project (APIIATP) is a World Bank project. JICA's loan goes to the AP Irrigation and Livelihood Improvement Project (APILIP), not to APCNF, and APILIP is not a KfW project, so only I is a correct match.
+
+Q 92 | cur | AP Affairs
+Which of the following statements are correct regarding status of Andhra Pradesh Aquaculture ?
+I. ‘YSR Matsyakara Bharosa’ relief is provided to marine fishermen families during fishing ban period.
+II. Andhra Pradesh Fisheries University is to be established in East Godavari District.
+III. The Diesel Oil Subsidy for fishermen boats is associated with exemption of sales tax on HSD oil.
+IV. The Government has enhanced the financial benefit to deceased fishermen (while fishing) family from ₹ 5 lakhs to ₹ 10 lakhs.
+= Only I, III and IV are correct
+~ YSR Matsyakara Bharosa gives ₹10,000 to marine fishing families during the annual fishing ban, and the ex gratia for families of fishermen who die while fishing was raised from ₹5 lakh to ₹10 lakh. II is wrong because the AP Fisheries University is being set up at Narsapuram in West Godavari district.
+
+Q 93 | cur | AP Affairs
+Which of the following statements are correct about Visakhapatnam-Chennai Industrial Corridor Development Program (VCICDP) ?
+I. It is partly funded by loan from Asian Development Bank (ADB).
+II. It is aligned with the Golden Quadrilateral and covers more than 800 km of the State of Andhra Pradesh’s coastline.
+III. It is a node-centric development platform comprising four nodes.
+IV. Donakonda is recognized as one of the nodes.
+= Only I, II and IV are correct
+~ The VCIC, the first phase of the East Coast Economic Corridor, is partly financed by ADB loans, runs about 800 km along AP's coast next to the Golden Quadrilateral, and Donakonda (Prakasam district) is one of its nodes. The key rejects III, although ADB's master plan names four nodes (Visakhapatnam, Machilipatnam, Donakonda and Srikalahasti–Chittoor). (Official key; some sources differ.)
+
+Q 94 | cur | AP Affairs
+Which of the following statements are correct about the Sea Ports in the State of Andhra Pradesh ?
+I. GoAP has recently declared Krishnapatnam Port as a Major Port.
+II. Kakinada SEZ Port is being converted from captive port to commercial port through Swiss Challenge Approach.
+III. GoAP has declared Nakkapalli Port as a Minor Port.
+IV. Vodarevu Port is being developed on Build, Own, Operate and Transfer (BOOT) basis.
+= Only II, III and IV are correct
+~ Major ports are declared and run by the Union Government, not by a state, and Krishnapatnam is a privately operated non-major port, so I is wrong. II, III and IV describe the state's own (non-major) port projects.
+
+Q 95 | cur | AP Affairs
+Which of the following minorities have been allotted special budget cover (2021 – 22) by the Government of Andhra Pradesh ?
+= Dudekula
+~ The AP budget for 2021–22 made a special allocation for the Dudekula (Noorbasha) community, a backward Muslim group whose traditional occupation is cotton carding.
+
+Q 96 | cur | AP Affairs
+Which of the following statements are valid regarding the initiatives taken by the Andhra Pradesh Government in Women Development and Child Welfare Department ?
+I. Government in collaboration with PRATHAM organization is building the capacitites of supervisors and anganwadi workers.
+II. Government in collaboration with UK CATAPULT organization is extending support for funding the YSR Thalli Bidda Express.
+III. ‘YSR Sampoorna Poshana Plus +’ scheme provides nutritional support to pregnant women and lactating mothers in all the mandals except the 77 Scheduled and Tribals sub-mandals.
+IV. Poshan Abhiyaan is implemented in the State by a 50% external aid from IBRD.
+= Only I and IV are correct
+~ YSR Sampoorna Poshana Plus covers pregnant and lactating women in the 77 tribal sub-plan mandals, while YSR Sampoorna Poshana covers the rest, so III reverses the coverage. Poshan Abhiyaan was designed with 50% government budgetary support and 50% from IBRD/multilateral loans; the key also treats the Pratham partnership as correct and the UK Catapult funding claim as wrong.
+
+Q 97 | cur | AP Affairs
+Which of the following statements regarding the investments in Andhra Pradesh at World Economic Forum (WEF) 2022 is incorrect ?
+= Government of Andhra Pradesh signed an MOU with ACE Urban Developers for setting up a Pumps and Compressor manufacturing unit at Mega Industrial Park at Kopparthy, YSR Kadapa district.
+~ AP's MoUs at WEF Davos 2022 were mainly for green-energy projects, with firms such as Adani Green Energy, Greenko and Aurobindo; per the key, no MoU was signed with ACE Urban Developers for a pumps and compressor unit at Kopparthy.
+
+Q 98 | cur | AP Affairs
+In the recent times which of the following bird had mass mortality at Telineelapuram Important Bird Area (IBA) of Srikakulam district ?
+= Pelecanus Philippensis
+~ Pelecanus philippensis is the spot-billed pelican; Telineelapuram in Srikakulam district is a major nesting site for it and for painted storks, and mass deaths of pelicans were reported there.
+
+Q 99 | cur | AP Affairs
+Which of the following statements are correct with regard to Swachh Survekshan Awards 2022 ?
+I. Visakhapatnam was awarded ‘Top Impact Creator’ under Million Plus City category.
+II. Tirupati Municipal Corporation won the first rank in ‘Safaimitra Suraksha Seher’.
+III. Salur was awarded for innovation and best practices under South zone for towns with 50,000 to one lakh population.
+IV. Pulivendula was awarded for innovation and best practices under South zone for towns with 25,000 to 50,000 population.
+V. Vijayawada Municipal Corporation was awarded as cleanest capital.
+= I, II and V
+~ As per the official key, the awards to Visakhapatnam (Top Impact Creator, million-plus category), Tirupati (first in Safaimitra Suraksha) and Vijayawada (cleanest capital) are correct, while the South-zone innovation and best-practice awards credited to Salur and Pulivendula in III and IV are treated as wrong.
+
+Q 100 | cur | AP Affairs
+Consider the following statements :
+I. Andhra Pradesh Official Language (Amendment) Act, 2022 Bill was introduced in the Andhra Pradesh Legislative Assembly on 23rd March, 2022.
+II. Urdu language, as the second official language in all the districts of Andhra Pradesh came into force on 25th April, 2022.
+III. Urdu language was already the second official language in Nellore, Anantapur, Guntur, Chittoor and Kadapa of United Andhra Pradesh.
+Which of the above statements is/are incorrect ?
+= II only
+~ The AP Official Language (Amendment) Bill, 2022, introduced in March 2022, made Urdu the second official language in all districts; before that Urdu had this status only in some districts, including those listed in III. Per the key, II is the incorrect statement because the date it gives for the change coming into force is wrong.
+
+Q 101 | cur | Sports
+Match the following List I with List II with regard to Arjuna Awards 2022 :
+Name of Sportsperson    Discipline
+a. Sushila Devi    i. Shooting
+b. Omprakash Mitharwal    ii. Weightlifting
+c. Vikas Thakur    iii. Para Badminton
+d. Tarun Dhillon    iv. Deaf Badminton
+e. Jerlin Anika J.    v. Judo
+= a-v, b-i, c-ii, d-iii, e-iv
+~ Arjuna Awards 2022: Sushila Devi Likmabam (judo), Omprakash Mitharwal (shooting), Vikas Thakur (weightlifting), Tarun Dhillon (para badminton) and Jerlin Anika J. (deaf badminton).
+
+Q 102 | cur | National
+Identify the correct statements about the Prime Minister’s Development Initiative for North East Region (PM-DevINE).
+I. It was announced in the Union Budget 2022 – 23 to address developmental gaps in the North Eastern Region (NER).
+II. PM-DevINE is an addition to the quantum of resources available for the development of the North Eastern Region and will not be a substitute for existing Central and State Schemes.
+III. It enables livelihood activities for the youth and women of North Eastern Region.
+IV. PM-DevINE will fund infrastructure convergently, in the spirit of PM Gati Shakti.
+= All of the above
+~ PM-DevINE was announced in the Union Budget 2022–23 with an initial ₹1,500 crore to fund infrastructure convergently in the spirit of PM GatiShakti and to support livelihoods for youth and women in the North East; it adds to, and does not replace, existing central and state schemes, so all four statements are correct.
+
+Q 103 | cur | National
+Consider the following statements, with reference to e-RUPI :
+I. It is a seamless one-time payment mechanism.
+II. It is powered by NPCI (National Payments Corporation of India).
+III. It was developed with the support of DFS (Department of Financial Services) and NHA (National Health Authority).
+IV. It was launched in the year 2020.
+Which of the statements given above are correct ?
+= I, II and III only
+~ e-RUPI is a cashless, purpose-specific one-time payment voucher (QR code or SMS) built by NPCI on the UPI platform with DFS, the Health Ministry and NHA. It was launched by the Prime Minister on 2 August 2021, not in 2020, so IV is wrong.
+
+Q 104 | cur | National
+Consider the following statements with respect to the “Satkosia Tiger Reserve” :
+I. It is a Tiger Reserve located in Odisha.
+II. It comprises two adjoining Sanctuaries of Central Odisha, named the Satkosia Gorge Sanctuary and the Debrigarh Sanctuary.
+III. It is located in the Eastern Ghats where Mahanadi river flows through a deep gorge.
+Which of the statements given above are correct ?
+= I and III only
+~ Satkosia Tiger Reserve in Odisha lies where the Mahanadi cuts a deep gorge through the Eastern Ghats. It is made up of the Satkosia Gorge Sanctuary and the Baisipalli Sanctuary; Debrigarh is a separate sanctuary near Hirakud, so II is wrong.
+
+Q 105 | cur | National
+Consider the following statements with reference to the “Crimson Rose Butterfly” :
+I. It is categorised as ‘Endangered’ as per the IUCN Red List.
+II. It is most common in the Himalayan regions, like Himachal Pradesh and Uttarakhand.
+Which of the statements given above is/are correct ?
+= Neither I nor II
+~ The Crimson Rose (Pachliopta hector) is a swallowtail butterfly of peninsular India and Sri Lanka, not of the Himalayas, and it is not classed as Endangered on the IUCN Red List, so neither statement is correct.
+
+Q 106 | cur | National
+Consider the following statements with reference to the Prevention of Money Laundering Act, 2002 :
+I. The Act empowers authorities like the Director to attach property believed to be “proceeds of crime”.
+II. Offences under Part A of the Schedule deal with trans-border crimes and reflect the dedication to tackle money laundering across the global boundaries.
+III. The Act and the Rules notified thereunder came into force with effect from 2005.
+IV. The Act has provided for an Appellate Tribunal and Special Court to conduct the trial of the offences of money laundering.
+Which of the statements given above are correct ?
+= I, III and IV only
+~ PMLA came into force on 1 July 2005; it lets the ED Director attach "proceeds of crime" and provides for an Appellate Tribunal and Special Courts. II is wrong because offences with cross-border implications are listed in Part C of the Schedule, not Part A.
+
+Q 107 | cur | National
+Consider the following statements with reference to Vande Bharat Express :
+I. It is semi-high speed electric multiple unit train operated by Indian Railways.
+II. The first Vande Bharat train was manufactured by Integral Coach Factory, Chennai.
+III. It can achieve maximum speed of 250 kmph, reducing journey time.
+IV. It was previously known as Train 18.
+Which of the statements given above are correct ?
+= I, II and IV only
+~ Vande Bharat, earlier called Train 18, is a semi-high-speed EMU first built by Integral Coach Factory, Chennai. III is wrong: it is designed for a top speed of 180 km/h and runs at up to 160 km/h, not 250 km/h.
+
+Q 108 | cur | National
+Consider the following statements about “Vikram-S” :
+I. It is India’s first privately built rocket.
+II. It is a single stage suborbital space launch vehicle.
+III. The mission for the rocket launch has been named as “Prarambh”, meaning beginning.
+IV. It was developed by space tech startup Agnikul Cosmos.
+Which of the statements given above are correct ?
+= I, II and III only
+~ Vikram-S, India's first privately built rocket, is a single-stage sub-orbital vehicle launched from Sriharikota on 18 November 2022 under the mission "Prarambh". It was built by Hyderabad-based Skyroot Aerospace, not Agnikul Cosmos, so IV is wrong.
+
+Q 109 | cur | National
+Consider the following statements about “National War Memorial” :
+I. It was inaugurated in 2021.
+II. The eternal flame of Amar Jawan Jyoti underneath India Gate was put out and merged with another eternal flame at the National War Memorial.
+III. It was built to commemorate all the soldiers who have laid down their lives in the various battles, wars, operations and conflicts of Independent India.
+IV. The architecture of the memorial is based on four concentric circles.
+Which of the statements given above are correct ?
+= II, III and IV only
+~ The National War Memorial in New Delhi was inaugurated on 25 February 2019, not in 2021, so I is wrong. It honours soldiers who died in independent India's wars and operations, is laid out in four concentric circles (Amar, Veerta, Tyag and Rakshak Chakra), and the Amar Jawan Jyoti flame was merged with its flame in January 2022.
+
+Q 110 | cur | Awards & Personalities
+Recently, the Prime Minister of India led tributes to freedom fighter Velu Nachiyar on her 292nd birth anniversary.
+With reference to Rani Velu Nachiyar, which of the following statements is/are correct ?
+I. She was the first queen to wage a war against the East India Company.
+II. She formed an alliance with Tipu Sultan against the British in 1780.
+Select the correct answer using the code given below :
+= I only
+~ Rani Velu Nachiyar of Sivaganga (born 1730) is remembered as the first Indian queen to fight the East India Company. II is wrong: she won back Sivaganga in 1780 with the help of Hyder Ali, not Tipu Sultan.
+
+Q 111 | cur | International
+I2U2 is a new partnership between
+= Israel, India, United Arab Emirates and United States of America.
+~ In I2U2, "I2" stands for India and Israel and "U2" for the USA and the UAE; its first leaders' summit (virtual) in July 2022 focused on joint investments in water, energy, transport, space, health and food security.
+
+Q 112 | cur | Awards & Personalities
+Identify the names of Ramon Magsaysay 2022 Awardees from the following :
+I. Sotheara Chhim
+II. Bernadette J. Madrid
+III. Tan Soo Heong
+IV. Gary Bencheghib
+V. Tadashi Hattori
+= I, II, IV and V
+~ The 2022 Ramon Magsaysay Award went to Sotheara Chhim (Cambodia), Bernadette Madrid (Philippines), Tadashi Hattori (Japan) and Gary Bencheghib (an environmental activist working in Indonesia); Tan Soo Heong was not an awardee.
+
+Q 113 | cur | Reports & Indices
+Consider the following statements with reference to Agriculture Orientation Index (AOI) :
+I. It is published by The International Food Policy Research Institute.
+II. It measures the country’s progress towards SDG-2 (End hunger, achieve food security and improved nutrition).
+III. It is calculated as the percentage of the Government’s expenditure on agriculture, divided by the share of agriculture in the GDP.
+Which of the statements given above are correct ?
+= II and III only
+~ The Agriculture Orientation Index for government expenditure is SDG indicator 2.a.1: agriculture's share of government spending divided by agriculture's share of GDP. It is compiled by the FAO, not IFPRI, so I is wrong.
+
+Q 114 | cur | International
+Which of the following statements is correct with reference to the Society for Worldwide Interbank Financial Telecommunication (SWIFT) ?
+I. SWIFT is a global member-owned cooperative that is headquartered in Switzerland.
+II. SWIFT was founded in 1991.
+III. SWIFT is a payment network.
+IV. SWIFT has the authority to impose sanctions on the banks.
+Which of the statements given above are correct ?
+= None of the above
+~ All four are false: SWIFT is a member-owned cooperative headquartered in La Hulpe, Belgium; it was founded in 1973; it is a secure messaging network and does not itself move money; and it cannot impose sanctions, it only disconnects banks when governments order it to.
+
+Q 115 | cur | International
+Consider the following statements with reference to China’s Chang’e 5 lunar probe :
+I. It is named after the Chinese Moon goddess.
+II. It is China’s first attempt at a sample-return mission.
+III. It will be the first probe to bring back material from the Moon, since NASA’s Luna 24 mission.
+Which of the statements given above are correct ?
+= I and II only
+~ Chang'e 5 (2020) is named after the Chinese Moon goddess Chang'e and was China's first lunar sample-return mission. III is wrong because Luna 24 (1976) was a Soviet mission, not a NASA one.
+
+Q 116 | cur | International
+Consider the following statements with reference to Conference of Parties (COP27) :
+I. COP27 was held in Sharm el-Sheikh, Egypt.
+II. COP27 reiterated the goal set by the Paris Agreement at COP21 which was to keep global warming from rising more than 1.5 degrees Celsius from the 2000s.
+III. The previous Conference of Parties (COP26) was held in Glasgow, Scotland.
+IV. COP27 reached agreement to provide “loss and damage” funding for vulnerable countries hit hard by climate disasters.
+Which of the statements given above are correct ?
+= I, III and IV only
+~ COP27 was held at Sharm el-Sheikh, Egypt, in November 2022, after COP26 at Glasgow, and agreed to set up a loss-and-damage fund for vulnerable countries. II is wrong because the Paris goal is to limit warming to 1.5°C above pre-industrial levels, not above the 2000s.
+
+Q 117 | cur | International
+Consider the following statements with reference to Mangrove Alliance for Climate (MAC) :
+I. The launch of Mangrove Alliance for Climate (MAC) is spearheaded by United Arab Emirates in partnership with Indonesia.
+II. Australia, Japan, United States, Canada, Sri Lanka and India are members of MAC.
+III. It was launched at the Conference of Parties (COP27) summit.
+IV. It is an intergovernmental alliance with no binding targets.
+Which of the statements given above are correct ?
+= I, III and IV only
+~ The Mangrove Alliance for Climate was launched at COP27 by the UAE in partnership with Indonesia as an intergovernmental alliance with voluntary, non-binding commitments. Its first members included India, Sri Lanka, Australia, Japan and Spain, but not the United States or Canada, so II is wrong.
+
+Q 118 | cur | International
+Consider the following statements with reference to G20 summit :
+I. The two-day G20 summit was held in Bali, Indonesia in 2022.
+II. “Recover Together, Recover Stronger” is the theme for India’s G20 presidency.
+III. “One Earth, One Family, One Future” is the theme for Indonesia’s G20 presidency.
+IV. “Data for Development” will be the integral part of overall theme of India’s G20 presidency.
+Which of the statements given above are correct ?
+= I and IV only
+~ The 2022 G20 summit was held in Bali on 15–16 November under Indonesia's theme "Recover Together, Recover Stronger", while India's presidency theme is "One Earth, One Family, One Future" (Vasudhaiva Kutumbakam), so II and III swap the themes. At Bali, PM Modi said "Data for Development" would be an integral part of India's presidency theme.
+
+Q 119 | cur | International
+Kiev city is located on which of the following rivers ?
+= Dnieper
+~ Kyiv (Kiev), the capital of Ukraine, stands on the Dnieper river.
+
+Q 120 | cur | International
+Consider the following statements with reference to GloLitter Partnerships Project :
+I. It is an initiative of the United Nations Environment Programme (UNEP).
+II. It aims to reduce marine litter, especially plastic litter from all the sources.
+Which of the statements given above is/are correct ?
+= Neither I nor II
+~ The GloLitter Partnerships Project is run by the IMO and the FAO with funding from Norway, not by UNEP, and it targets marine plastic litter from sea-based sources (shipping and fisheries), not from all sources, so neither statement is correct.

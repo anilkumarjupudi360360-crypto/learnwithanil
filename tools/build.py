@@ -263,6 +263,7 @@ def main():
     tpl = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
     head, body = tpl.split('<!--BODY-->')
     live_names = [c['name'] for c, _, _ in loaded]
+    nav_extra = ''.join(f'      <a href="{c["dir"]}/" data-hubonly>{esc(c["short"])}</a>\n' for c, _, _ in loaded if c['dir'])
     hub_ctas = ''.join(f'<a class="btn btn-primary" href="{"#home" if c["dir"] == "" else c["dir"] + "/"}">{esc(c["name"])}</a>' for c, _, _ in loaded)
     live_summary = (f'{" and ".join(live_names)} {"is" if len(live_names) == 1 else "are"} live with {grand:,} questions; '
                     f'the other exams are being added one by one.')
@@ -309,6 +310,7 @@ def main():
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}')
                      .replace('{{LIVE_SUMMARY}}', esc(live_summary))
                      .replace('{{HUB_CTAS}}', hub_ctas)
+                     .replace('{{NAV_EXTRA}}', nav_extra if is_root else '')
                      .replace('{{TIMERS}}', timers).replace('{{HUBHREF}}', hubhref)
                      .replace('{{EXAM}}', esc(conf['name'])).replace('{{EXAMSHORT}}', esc(conf['short']))
                      .replace('{{EYEBROW}}', conf['eyebrow']))

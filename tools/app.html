@@ -439,6 +439,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .crumb{color:var(--band-muted);font-weight:600;font-size:14.5px;text-decoration:none;align-self:flex-start}
 .crumb:hover{color:var(--band-ink)}
 .nav.hub a[data-g2]{display:none}
+.topbar.g2 .nav a[data-hubonly]{display:none}
 @media (max-width:480px){.nav.hub .new{display:none}.nav.hub a{padding-inline:8px}}
 /* the Group-II menu has 11 links: give it its own row on every screen width */
 .topbar.g2 .wrap{gap:4px;padding-block:8px 0}
@@ -475,7 +476,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     <nav class="nav hub" id="nav" aria-label="Main">
       <a href="{{HUBHREF}}" data-v="exams">All Exams</a>
       <a href="#home" data-v="home">{{EXAMSHORT}}</a>
-      <a href="#papers" data-v="papers" data-g2>Previous Papers</a>
+{{NAV_EXTRA}}      <a href="#papers" data-v="papers" data-g2>Previous Papers</a>
       <a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>
       <a href="#practice" data-v="practice" data-g2>Create Quiz</a>
       <a href="#bank" data-v="bank" data-g2>Question Bank</a>
