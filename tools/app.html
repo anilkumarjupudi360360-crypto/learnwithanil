@@ -1028,7 +1028,7 @@ function vJoin(){
 function waLink(text){ return `https://wa.me/${DATA.wa}?text=${encodeURIComponent(text)}`; }
 function noteCard(b){
   const te = b.lang==="te";
-  const name = `${b.title_en}: Crisp Notes 2026-27 (${b.medium_en})`;
+  const name = b.product_en || `${b.title_en}: Crisp Notes 2026-27 (${b.medium_en})`;
   const buy = b.buy
     ? `<a class="btn btn-primary" href="${esc(b.buy)}" target="_blank" rel="noopener">Buy now</a>`
     : `<button class="btn btn-primary" type="button" disabled>Coming soon</button>`;
@@ -1070,7 +1070,7 @@ function openSample(id){
   let d = document.getElementById("sampleDlg");
   if(!d){ d = document.createElement("dialog"); d.id="sampleDlg"; d.className="sample-dlg"; document.body.appendChild(d);
     d.addEventListener("click", e=>{ if(e.target===d) d.close(); }); }
-  const name = `${b.title_en}: Crisp Notes 2026-27 (${b.medium_en})`;
+  const name = b.product_en || `${b.title_en}: Crisp Notes 2026-27 (${b.medium_en})`;
   d.innerHTML = `<header><b>${esc(name)}</b><button class="btn btn-secondary btn-sm" type="button" data-act="closesample">Close</button></header>
     <div class="imgs"><img src="${esc(b.cover)}" alt="Cover"><p>Cover</p>${b.samples.map((s,i)=>`<img src="${esc(s)}" alt="Sample page ${i+1}" loading="lazy"><p>Sample page ${i+1} of ${b.pages}</p>`).join("")}</div>`;
   if(d.showModal) d.showModal(); else d.setAttribute("open","");
