@@ -265,7 +265,7 @@ def main():
     live_names = [c['name'] for c, _, _ in loaded]
     nav_extra = ''.join(f'      <a href="{c["dir"]}/" data-hubonly>{esc(c["short"])}</a>\n' for c, _, _ in loaded if c['dir'])
     hub_ctas = ''.join(f'<a class="btn btn-primary" href="{"#home" if c["dir"] == "" else c["dir"] + "/"}">{esc(c["name"])}</a>' for c, _, _ in loaded)
-    live_summary = (f'{" and ".join(live_names)} {"is" if len(live_names) == 1 else "are"} live with {grand:,} questions; '
+    live_summary = (f'APPSC PYQs are live: {" and ".join(c["short"] for c, _, _ in loaded)} previous question papers, {grand:,} questions in all; '
                     f'the other exams are being added one by one.')
 
     if os.path.exists(DIST): shutil.rmtree(DIST)
@@ -311,16 +311,17 @@ def main():
                      .replace('{{LIVE_SUMMARY}}', esc(live_summary))
                      .replace('{{HUB_CTAS}}', hub_ctas)
                      .replace('{{NAV_EXTRA}}', nav_extra if is_root else '')
-                     .replace('{{TIMERS}}', timers).replace('{{HUBHREF}}', hubhref)
+                     .replace('{{TIMERS}}', timers).replace('{{HUBHREF}}', hubhref).replace('{{ROOTUP}}', up)
                      .replace('{{EXAM}}', esc(conf['name'])).replace('{{EXAMSHORT}}', esc(conf['short']))
                      .replace('{{EYEBROW}}', conf['eyebrow']))
         if is_root:
-            site_title = 'Free Previous Year Questions for APPSC Group 1 & Group 2, TGPSC, UPSC, SSC & Bank Exams | Learn with Anil'
-            site_desc = (f'Free previous year questions with answers for every exam. {live_summary[:-1]}, with official final-key '
-                         f'answers and explanations in English and Telugu. TGPSC, UPSC, SSC, banking and railway exams are being added.')
+            site_title = 'APPSC PYQs Free – Group 1 & Group 2 Previous Question Papers with Answers | Learn with Anil'
+            site_desc = (f'Free APPSC PYQs: {grand:,} previous year questions from APPSC Group 1 and Group 2 question papers (2019–2025), '
+                         f'with official final-key answers and explanations in English and Telugu. Practise online topic-wise. '
+                         f'TGPSC, UPSC, SSC, banking and railway exams are being added.')
             canon = SITE_URL + '/'
         else:
-            site_title = f'{conf["seo"]} Previous Year Question Papers with Answers (Prelims) | Learn with Anil'
+            site_title = f'{conf["seo"]} PYQs – Prelims Previous Question Papers with Answers (2019–2024) | Learn with Anil'
             site_desc = (f'{total} {conf["name"]} previous year questions from {len(papers)} official papers, with APPSC final-key answers '
                          f'and explanations in English and Telugu. Practise topic-wise quizzes and timed tests free.')
             canon = f'{SITE_URL}/{prefix}'
@@ -355,6 +356,11 @@ def main():
         if not is_root: all_pages[prefix] = None
         for rel in pages: all_pages[prefix + rel] = None
         print(f'  {conf["name"]}: {total} questions, {len(pages)} static pages')
+
+    # one crawlable page listing every APPSC paper (the page people land on from "APPSC PYQs" searches)
+    hubrel = 'appsc-pyqs.html'
+    open(os.path.join(DIST, 'site', hubrel), 'w', encoding='utf-8').write(appsc_pyqs_page(loaded, grand))
+    all_pages = {hubrel: None, **all_pages}
 
     # sitemap + robots (site only)
     today = date.today().isoformat()
@@ -523,8 +529,9 @@ footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-
 """
 
 
-def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, conf=None):
-    ename = conf['name'] if conf else 'APPSC Group-II'
+def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, conf=None, ename=None):
+    ename = ename or (conf['name'] if conf else 'APPSC Group-II')
+    rootup = '../' * (rel_depth + (1 if conf and conf.get('dir') else 0))
     up = '../' * rel_depth
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": canonical,
           "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": SITE_URL + '/'},
@@ -552,7 +559,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {body_html}
 </main>
-<footer><div class="wrap">Questions and answers are taken from APPSC's official final keys. Explanations are by Jupudi Anil Kumar, Learn with Anil (Instagram: @{INSTAGRAM}). Not affiliated with APPSC.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="{rootup}index.html#home">APPSC Group-II</a></p>Questions and answers are taken from APPSC's official final keys. Explanations are by Jupudi Anil Kumar, Learn with Anil (Instagram: @{INSTAGRAM}). Not affiliated with APPSC.</div></footer>
 </body>
 </html>
 """
@@ -581,6 +588,40 @@ def q_html(q, paper_short, num_label, subj=SUBJ):
     return ''.join(parts)
 
 
+def appsc_pyqs_page(loaded, grand):
+    """Landing page for 'APPSC PYQs' searches: every APPSC paper and subject page, Group-I and Group-II."""
+    can = f'{SITE_URL}/appsc-pyqs.html'
+    title = 'APPSC PYQs – Group 1 & Group 2 Previous Question Papers with Answers (Free) | Learn with Anil'
+    desc = (f'All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024 and Group 2 Screening & Mains 2019–2025, '
+            f'{grand:,} questions with official final-key answers and explanations in English and Telugu. Read or practise online free.')
+    secs = []
+    for conf, papers, questions in sorted(loaded, key=lambda x: x[0]['short']):   # Group-I first, then Group-II
+        base = conf['dir'] + '/' if conf['dir'] else ''
+        home = base if base else 'index.html#home'
+        subj = {s[0]: s for s in conf['subjects']}
+        scount = {}
+        for q in questions: scount[q['s']] = scount.get(q['s'], 0) + 1
+        rows = ''.join(
+            f'<li class="q"><div class="meta">{esc(p["held"])} · {esc(p["notif"])} · {p["count"]} questions · '
+            f'{"all four options" if p["fmt"] == "mcq" else "answer-only key"}</div>'
+            f'<p><a href="{base}papers/{p["slug"]}.html">{esc(p["title"])} question paper with answers</a></p>'
+            f'<p class="why" style="font-weight:400">{esc(p["blurb"])}</p></li>'
+            for p in sorted(papers, key=lambda p: (-p['year'], p['id'])))
+        subs = ''.join(f'<a href="{base}subjects/{conf["slugp"]}-{subj[s][2]}-pyqs.html">{esc(subj[s][1])} ({scount[s]})</a>'
+                       for s in subj if scount.get(s))
+        te = 'గ్రూప్-1' if conf['short'] == 'Group-I' else 'గ్రూప్-2'
+        secs.append(f'<h2 id="{conf["id"]}">{nw(conf["name"])} PYQs <span lang="te" style="font-size:.8em;font-weight:600">· APPSC {te} ప్రశ్నాపత్రాలు</span></h2>'
+                    f'<p><a class="cta" href="{home}">Practise {esc(conf["name"])} online</a></p>'
+                    f'<ol class="qs">{rows}</ol><h3>{esc(conf["name"])} PYQs by subject</h3><nav class="toc">{subs}</nav>')
+    lede = esc(f'Every APPSC Group 1 and Group 2 previous question paper on Learn with Anil, {grand:,} questions in all. '
+               f'Answers come from APPSC\'s official final keys, and every question has a short explanation, in English and Telugu.')
+    toc = '<nav class="toc">' + ''.join(f'<a href="#{c["id"]}">{esc(c["name"])}</a>' for c, _, _ in sorted(loaded, key=lambda x: x[0]['short'])) + '</nav>'
+    body = (toc + '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 పాత ప్రశ్నాపత్రాలు అధికారిక ఫైనల్ కీ సమాధానాలు మరియు వివరణలతో — ఉచితంగా.</p>'
+            + ''.join(secs))
+    return static_page(0, title, desc, can, 'APPSC PYQs: previous question papers with answers', lede, body,
+                       [('Home', SITE_URL + '/'), ('APPSC PYQs', can)], ename='APPSC')
+
+
 def build_static(conf, papers, subjects, questions, subj):
     pages = {}
     by_p = {}
@@ -595,7 +636,7 @@ def build_static(conf, papers, subjects, questions, subj):
         can = base + rel
         fmt = ('All four options with the official answer from the APPSC final key' if p['fmt'] == 'mcq'
                else 'Each question with its official answer from the APPSC final key (the key lists the correct answer only)')
-        title = f'{p["title"]} Question Paper with Answers & Explanations | Learn with Anil'
+        title = f'{p["title"]} Question Paper with Answers – {seo} PYQs | Learn with Anil'
         desc = (f'{p["title"]} ({p["notif"]}, held {p["held"]}): {len(qs)} previous year questions with official '
                 f'final-key answers and short explanations, topic-wise. Practise {seo} PYQs online free.')
         subs = {}
