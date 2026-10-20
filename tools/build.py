@@ -372,7 +372,7 @@ def main():
                      .replace('{{BOARD}}', conf['board']).replace('{{ALLLINK}}', all_link)
                      .replace('{{FOOTSRC}}', 'Questions and answers are from the official final keys.' if conf['board'] == 'APPSC'
                               else f'Questions are from {conf["board"]}\'s official question paper; answers from {conf["keyshort"]}.')
-                     .replace('{{FROMPAPERS}}', f'{len(papers)} official papers' if len(papers) > 1 else f'the official {esc(papers[0]["title"])} paper')
+                     .replace('{{FROMPAPERS}}', f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {esc(papers[0]["stage"])} question paper')
                      .replace('{{PAPERSK}}', f'Official {conf["board"]} paper' + ('s' if len(papers) > 1 else ''))
                      .replace('{{HOME_PAPERS}}', home_papers).replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
@@ -393,7 +393,7 @@ def main():
             canon = SITE_URL + '/'
         else:
             site_title = conf['title']
-            ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["title"]} paper'
+            ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
             site_desc = (f'{total} {conf["name"]} previous year questions from {ptxt}, with answers from {conf["keyshort"]} '
                          f'and explanations, in English and {l2["name"]}. Practise topic-wise quizzes and timed tests free.')
             canon = f'{SITE_URL}/{prefix}'
