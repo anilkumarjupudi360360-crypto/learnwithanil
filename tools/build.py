@@ -257,6 +257,9 @@ def load_exam(conf):
         pp = {k: p[k] for k in ('id', 'year', 'stage', 'short', 'title', 'notif', 'held', 'fmt', 'slug', 'blurb')}
         pp['count'] = len(qs)
         if p.get('key'): pp['key'] = p['key']
+        pp['pdf'] = pdf_href(conf, p)
+        alt = paper_alt(conf, p)
+        pp['kw'] = paper_kw(conf, p) + (f' ({alt})' if alt else '')
         papers.append(pp); questions += qs
         print(f'  {conf["short"]} {p["id"]}: {len(qs)} questions')
     return papers, questions
@@ -287,20 +290,35 @@ def exam_confs():
     return [
       dict(id='appsc-group-2', dir='', src='', key='appsc-g2', name='APPSC Group-II', short='Group-II', seo='APPSC Group 2',
            slugp='appsc-group-2', papers=PAPERS, subjects=SUBJECTS, faq=FAQ, board='APPSC', l2=L2_TE, pb='/appsc-group-2/',
-           title='APPSC Group 2 PYQs – Screening & Mains Previous Question Papers with Answers (2019–2025) | Learn with Anil',
+           title='APPSC Group 2 Previous Year Question Papers with Answers – Prelims & Mains 2019–2025, PDF | Learn with Anil',
+           h1='APPSC Group 2 previous year question papers <em>with answers.</em>',
+           l2line='APPSC గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (ప్రిలిమ్స్, మెయిన్స్) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.',
+           desc=lambda t: (f"APPSC Group 2 previous year question papers with answers from APPSC's final key: Prelims (Screening Test) 2024 and 2019, "
+                           f"Mains 2025 Paper 1 and Paper 2, and Mains 2019. {t:,} questions in English and Telugu with explanations; "
+                           f"free mock tests, practice bits and PDF downloads."),
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
-           eyebrow='APPSC Group-II · Screening &amp; Mains · 2019–2025',
+           eyebrow='APPSC Group-II · Prelims (Screening) &amp; Mains · 2019–2025',
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
            slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE, pb='/appsc-group-1/',
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
-           title='APPSC Group 1 PYQs – Prelims Previous Question Papers with Answers (2019–2024) | Learn with Anil',
+           title='APPSC Group 1 Previous Year Question Papers with Answers – Prelims 2019–2024, PDF | Learn with Anil',
+           h1='APPSC Group 1 previous year question papers <em>with answers.</em>',
+           l2line='APPSC గ్రూప్ 1 ప్రిలిమ్స్ మునుపటి సంవత్సరం ప్రశ్నపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.',
+           desc=lambda t: (f"APPSC Group 1 Prelims previous year question papers with answers from APPSC's final key: 2024, 2023 and 2019, "
+                           f"Paper 1 General Studies and Paper 2 General Aptitude. {t:,} questions in English and Telugu with explanations; "
+                           f"free mock tests and PDF downloads."),
            eyebrow='APPSC Group-I · Prelims · 2019–2024',
            papers_note="Every paper uses APPSC's official final key. The 2024 key shows all four options. The 2023 and 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
       dict(id='upsc-capf', dir='upsc-capf', src='upsc-capf', key='upsc-capf', name='UPSC CAPF (AC)', short='CAPF (AC)', seo='UPSC CAPF AC',
            slugp='upsc-capf-ac', papers=CAPF_PAPERS, subjects=CAPF_SUBJECTS, faq=FAQ_CAPF, board='UPSC', l2=L2_HI, pb='/upsc-capf/',
            keyname="UPSC's answer keys", keyshort="UPSC's answer keys (2025: compiled from published keys)",
-           title='UPSC CAPF AC PYQs – Paper I Previous Question Papers with Answers (2024–2026), English & Hindi | Learn with Anil',
+           title='UPSC CAPF AC Previous Year Question Papers with Answers (2024–2026), English & Hindi PDF | Learn with Anil',
+           h1='UPSC CAPF AC previous year question papers <em>with answers.</em>',
+           l2line='यूपीएससी सीएपीएफ असिस्टेंट कमांडेंट के पिछले वर्षों के प्रश्न पत्र, उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में, निःशुल्क।',
+           desc=lambda t: (f"UPSC CAPF AC (Assistant Commandant) previous year question papers: Paper 1 General Ability and Intelligence "
+                           f"2026, 2025 and 2024 with answer keys and explanations. {t:,} questions in English and Hindi; "
+                           f"free mock tests, subject-wise PYQs and PDF downloads."),
            eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
            papers_note="2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. 2024: UPSC's official answer key (Series A). Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
     ]
@@ -394,27 +412,29 @@ def main():
                      .replace('{{NAV_EXTRA}}', nav_extra if is_root else '')
                      .replace('{{TIMERS}}', timers).replace('{{HUBHREF}}', hubhref).replace('{{ROOTUP}}', up)
                      .replace('{{EXAM}}', esc(conf['name'])).replace('{{EXAMSHORT}}', esc(conf['short']))
-                     .replace('{{EYEBROW}}', conf['eyebrow']))
-        root_title = 'Previous Year Question Papers for Government Exams, Free with Answers | Learn with Anil'
-        root_desc = (f'Free previous year questions (PYQs) for government exams: {grand:,} questions from APPSC Group 1 and Group 2 (2019–2025) '
-                     f'and UPSC CAPF (AC) 2024–2026, with official answers and explanations in English, Telugu and Hindi. '
+                     .replace('{{EYEBROW}}', conf['eyebrow']).replace('{{H1}}', conf['h1'])
+                     .replace('{{L2LINE}}', f'<span lang="{l2["code"]}">{esc(conf["l2line"])}</span>'))
+        root_title = 'Previous Year Question Papers (PYQs) for Government Exams – Free with Answers | Learn with Anil'
+        root_desc = (f'Free previous year question papers with answers for government exams: APPSC Group 1, APPSC Group 2 and UPSC CAPF AC, '
+                     f'{grand:,} questions with official keys and explanations in English, Telugu and Hindi. Free mock tests and PDFs. '
                      f'TGPSC, UPSC, SSC, banking and railway exams are being added.')
         home_title = conf['title']
         ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
-        home_desc = (f'{total} {conf["name"]} previous year questions from {ptxt}, with answers from {conf["keyshort"]} '
-                     f'and explanations, in English and {l2["name"]}. Practise topic-wise quizzes and timed tests free.')
+        home_desc = conf['desc'](total)
         pb = conf['pb']; basedir = '/' + prefix
         person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"UPSC Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:anilkumarjupudi360360@gmail.com","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/"]}
         website = {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":"Learn with Anil – Previous year questions for every exam","url":SITE_URL+'/'}
         faqld = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]}
         seo_name = conf['seo']
         views = {   # view: (title, description, canonical path, indexable)
-          'papers': (f'{seo_name} Previous Question Papers with Answers – Practise Online | Learn with Anil',
-                     f'All {len(papers)} {conf["name"]} previous question papers on Learn with Anil: practise each paper online or read it with answers and explanations, free.', pb + 'papers/', True),
-          'practice': (f'{seo_name} Topic-wise Quiz – Make Your Own PYQ Test | Learn with Anil',
-                       f'Build a free quiz from {total} {conf["name"]} previous year questions: choose papers, subjects and topics, then practise or take a timed test.', pb + 'practice/', True),
-          'bank': (f'{seo_name} Question Bank – Search All {total} PYQs | Learn with Anil',
-                   f'Search every {conf["name"]} previous year question by keyword, paper or topic, with official-key answers and explanations.', pb + 'bank/', True),
+          'papers': (f'{seo_name} Previous Year Question Papers with Answers – All {len(papers)} Papers, PDF | Learn with Anil',
+                     f'All {len(papers)} {seo_name} previous year question papers ({", ".join(paper_kw(conf, p).replace(seo_name + " ", "") for p in sorted(papers, key=lambda p: (-p["year"], p["id"])))}): '
+                     f'practise each paper online as a mock test, read it with answers and explanations, or download the PDF, free.', pb + 'papers/', True),
+          'practice': (f'{seo_name} Free Mock Test & Topic-wise Quiz from Previous Papers | Learn with Anil',
+                       f'Free {seo_name} mock test and topic-wise quiz made from {total:,} real previous year questions{" (practice bits)" if conf["board"] == "APPSC" else ""}: '
+                       f'choose papers, subjects and topics, then practise with answers or take a timed test.', pb + 'practice/', True),
+          'bank': (f'{seo_name} Question Bank – Search All {total:,} PYQs{" & Practice Bits" if conf["board"] == "APPSC" else ""} | Learn with Anil',
+                   f'Search every {seo_name} previous year question by keyword, paper or topic, with answers from {conf["keyshort"]} and explanations.', pb + 'bank/', True),
           'notes': ('Study Material 2026-27 – Crisp Notes by Jupudi Anil Kumar | Learn with Anil',
                     'Exam-focused study material by Jupudi Anil Kumar: Crisp Notes on AP Economy and Science & Technology for APPSC Mains, with the latest 2026 data.', '/appsc-group-2/notes/', True),
           'about': ('About Jupudi Anil Kumar – Learn with Anil',
@@ -436,6 +456,8 @@ def main():
 
         def site_doc(title, desc, canon_path, ld, index=True):
             canon = SITE_URL + canon_path
+            body_ = sbody if canon_path == '/' else re.sub(r'<div id="hub-static" class="view">.*?(?=<div id="home-static")', '', sbody, flags=re.S)
+            assert canon_path == '/' or 'id="hub-static"' not in body_
             seo = (f'<link rel="canonical" href="{canon}">\n<meta name="robots" content="{"index,follow" if index else "noindex,follow"}">\n'
                    f'<meta property="og:type" content="website"><meta property="og:site_name" content="Learn with Anil">'
                    f'<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">'
@@ -446,7 +468,7 @@ def main():
                    f'<base href="{basedir}">\n'
                    '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
                    + fill(head, up + 'anil.jpg', title, seo, desc).replace('<meta name="claude:viewport-fit-sides" content="cover">\n', '')
-                   + '\n</head>\n<body>\n' + fill(sbody, up + 'anil.jpg', title, seo, desc) + '\n</body>\n</html>\n')
+                   + '\n</head>\n<body>\n' + fill(body_, up + 'anil.jpg', title, seo, desc) + '\n</body>\n</html>\n')
             return site_links(doc.replace('href="{{HUBHREF}}"', 'href="/"').replace(f'href="{hubhref}"', 'href="/"'), pb)
 
         site_pages = {}   # path under the site root -> html
@@ -476,6 +498,7 @@ def main():
         for rel, content in qpages.items():
             open(os.path.join(DIST, 'site', pb.strip('/'), rel), 'w', encoding='utf-8').write(content)
             all_pages[pb.lstrip('/') + rel] = None
+        for p in papers: all_pages[pdf_href(conf, p).lstrip('/')] = None   # the PDFs come from tools/pdfs.py
         print(f'  {conf["name"]}: {total} questions, {len(pages)} static pages, {len(qpages)} question pages, {len(site_pages)} app pages')
 
     # one crawlable page listing every APPSC paper (the page people land on from "APPSC PYQs" searches)
@@ -516,6 +539,70 @@ def home_notes(notes):
 
 
 ROMAN = {'I': '1', 'II': '2', 'III': '3', 'IV': '4'}
+
+
+# ---------- search wording ----------
+# Students search with digits and the common names: "appsc group 2 prelims question paper 2024 with answers pdf",
+# "appsc group 2 mains paper 1 2025 key", "capf ac previous year question paper in hindi", "గ్రూప్ 2 ప్రశ్నపత్రం".
+# (Google autocomplete, India, 20 Oct 2026.) Titles, headings and descriptions use that wording.
+def paper_no(p):
+    m = re.search(r'Paper (I{1,3}|IV)$', p['stage'])
+    return ROMAN[m.group(1)] if m else ''
+
+
+def paper_kw(conf, p):
+    """'APPSC Group 2 Prelims 2024', 'APPSC Group 2 Mains 2025 Paper 1', 'UPSC CAPF AC 2026 Paper 1'."""
+    n = paper_no(p)
+    if conf['board'] == 'UPSC':
+        return f'{conf["seo"]} {p["year"]}' + (f' Paper {n}' if n else '')
+    stage = 'Prelims' if p['stage'].startswith(('Screening', 'Prelims')) else 'Mains'
+    return f'{conf["seo"]} {stage} {p["year"]}' + (f' Paper {n}' if n else '')
+
+
+def paper_alt(conf, p):
+    """The paper's other name, if students also search by it."""
+    if p['stage'].startswith('Screening'): return 'Screening Test'
+    if conf['board'] == 'UPSC': return 'General Ability and Intelligence'
+    if conf['short'] == 'Group-I': return 'General Studies' if paper_no(p) == '1' else 'General Aptitude'
+    return ''
+
+
+def paper_kw_l2(conf, p):
+    """The same name in Telugu (APPSC) or Hindi (UPSC CAPF), as students type it."""
+    n = paper_no(p)
+    if conf['l2']['code'] == 'te':
+        g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
+        stage = 'ప్రిలిమ్స్' if p['stage'].startswith(('Screening', 'Prelims')) else 'మెయిన్స్'
+        return f'APPSC {g} {stage} {p["year"]}' + (f' పేపర్-{n}' if n else '') + ' ప్రశ్నపత్రం సమాధానాలతో'
+    return f'यूपीएससी सीएपीएफ (असिस्टेंट कमांडेंट) {p["year"]}' + (f' पेपर-{n}' if n else '') + ' प्रश्न पत्र, उत्तर कुंजी सहित'
+
+
+def pdf_name(conf, p):
+    """File name of the paper's PDF, e.g. appsc-group-2-prelims-2024-question-paper-with-answers.pdf."""
+    return re.sub(r'[^a-z0-9]+', '-', paper_kw(conf, p).lower()).strip('-') + '-question-paper-with-answers.pdf'
+
+
+def pdf_href(conf, p):
+    """Site-root path of the paper's PDF (made by tools/pdfs.py after the build)."""
+    return '/' + (conf['dir'] + '/' if conf['dir'] else '') + 'pdf/' + pdf_name(conf, p)
+
+
+SUBJ_L2 = {
+  'te': {'ih': 'చరిత్ర', 'aph': 'ఆంధ్రప్రదేశ్ చరిత్ర, సంస్కృతి', 'pol': 'భారత రాజ్యాంగం (పాలిటీ)', 'geo': 'భూగోళశాస్త్రం (జాగ్రఫీ)',
+         'soc': 'భారతీయ సమాజం', 'eco': 'భారత, ఏపీ ఆర్థిక వ్యవస్థ (ఎకానమీ)', 'sci': 'సైన్స్ అండ్ టెక్నాలజీ', 'cur': 'కరెంట్ అఫైర్స్',
+         'men': 'మెంటల్ ఎబిలిటీ (రీజనింగ్)', 'gk': 'జనరల్ నాలెడ్జ్', 'apt': 'పరిపాలనా, మానసిక సామర్థ్యాలు'},
+  'hi': {'cur': 'समसामयिकी (करेंट अफेयर्स)', 'ih': 'इतिहास', 'pol': 'भारतीय राजव्यवस्था', 'eco': 'भारतीय अर्थव्यवस्था',
+         'geo': 'भूगोल', 'sci': 'सामान्य विज्ञान', 'men': 'सामान्य मानसिक योग्यता (रीजनिंग)'},
+}
+
+
+def subject_l2_line(conf, s):
+    name = SUBJ_L2[conf['l2']['code']].get(s['id'])
+    if not name: return ''
+    if conf['l2']['code'] == 'te':
+        g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
+        return f'APPSC {g} {name} ప్రాక్టీస్ బిట్స్ — మునుపటి సంవత్సరం ప్రశ్నలు, సమాధానాలు, వివరణలతో.'
+    return f'सीएपीएफ (एसी) {name} — पिछले वर्षों के प्रश्न, उत्तर और व्याख्या सहित।'
 
 
 def exam_terms(e, cat):
@@ -606,16 +693,23 @@ def nw(t):
 def home_paper_card(p):
     fmt = 'All 4 options' if p['fmt'] == 'mcq' else 'Answer-only key'
     cls = 'good' if p['fmt'] == 'mcq' else 'warn'
-    return (f'<article class="card paper"><span class="yr">{esc(p["held"])} · {esc(p["notif"])}</span><h3>{nw(p["title"])}</h3>'
+    return (f'<article class="card paper"><span class="yr">{esc(p["held"])} · {esc(p["notif"])}</span><h3>{esc(p.get("kw") or p["title"])}</h3>'
             f'<p>{esc(p["blurb"])}</p><div class="meta"><span class="pill blue">{p["count"]} questions</span><span class="pill {cls}">{fmt}</span></div>'
             f'<div class="acts"><button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="{p["id"]}">Practise</button>'
-            f'<a class="btn btn-ghost btn-sm" href="papers/{p["slug"]}.html">Read with answers</a></div></article>')
+            f'<a class="btn btn-ghost btn-sm" href="papers/{p["slug"]}.html">Read with answers</a>'
+            f'<a class="btn btn-ghost btn-sm" href="{p["pdf"]}" download>PDF</a></div></article>')
 
 
 def FAQ(total, npapers):
     return [
       ('Where can I get APPSC Group 2 previous year question papers with answers?',
        f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024, Mains 2025 Paper I and Paper II, and the 2019 Screening and Mains papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can read each paper with answers or practise it as a quiz, free.'),
+      ('Can I download the APPSC Group 2 previous papers as PDF?',
+       'Yes, free. Every paper has its own PDF: all the questions in English and Telugu, then the answer key and an explanation for each answer. Open a paper and tap Download PDF.'),
+      ('Are the APPSC Group 2 previous papers available in Telugu?',
+       'Yes. Almost every question has APPSC\'s own Telugu text, as printed in the question booklet. Tap తెలుగు at the top of the page to practise in Telugu.'),
+      ('Is there a free APPSC Group 2 mock test?',
+       'Yes. Tap Create a quiz, choose papers or subjects, and pick Timed test: you get a free mock test made of real APPSC Group 2 Prelims and Mains questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.'),
       ('What is the APPSC Group 2 exam pattern?',
        'Under Notification 11/2023, the Screening Test is one objective paper of 150 questions for 150 marks in 150 minutes, with 30 marks each for Indian History, Geography, Indian Society, Current Affairs and Mental Ability. The Mains has two objective papers of 150 marks each: Paper I covers the Social and Cultural History of Andhra Pradesh and the Indian Constitution, and Paper II covers the Indian and AP Economy and Science and Technology.'),
       ('Are the answers on this site official?',
@@ -631,6 +725,12 @@ def FAQ_G1(total, npapers):
     return [
       ('Where can I get APPSC Group 1 previous year question papers with answers?',
        f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam, and the 2023 and 2019 Prelims papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can read each paper with answers or practise it as a quiz, free.'),
+      ('Can I download the APPSC Group 1 previous papers as PDF?',
+       'Yes, free. Every paper has its own PDF: all the questions in English and Telugu, then the answer key and an explanation for each answer. Open a paper and tap Download PDF.'),
+      ('Where is the APPSC Group 1 Prelims 2024 answer key?',
+       'Each question on this site shows the answer from APPSC\'s final key, for Paper 1 (General Studies) and Paper 2 (General Aptitude) of the 2024 Prelims, and for the 2023 and 2019 Prelims. Open a paper to see every question with its answer.'),
+      ('Is there a free APPSC Group 1 mock test?',
+       'Yes. Tap Create a quiz, choose papers or subjects, and pick Timed test: you get a free mock test made of real APPSC Group 1 Prelims questions, in English or Telugu, with your score and a topic-wise analysis at the end.'),
       ('What is the APPSC Group 1 Prelims exam pattern?',
        'The Preliminary Examination has two objective papers on the same day: Paper I General Studies (History and Culture; Constitution, Polity, Social Justice and International Relations; Indian and AP Economy and Planning; Geography) and Paper II General Aptitude (General Mental Ability, Administrative and Psychological Abilities; Science and Technology; Current Events). Each paper has 120 questions for 120 marks in 120 minutes, and one-third of the marks of a question is deducted for a wrong answer. Prelims marks are used only to shortlist candidates for the Mains.'),
       ('Are the answers on this site official?',
@@ -646,11 +746,17 @@ def FAQ_CAPF(total, npapers):
     return [
       ('Where can I get UPSC CAPF AC previous year question papers with answers?',
        f'This page has {total} questions from {npapers} UPSC CAPF (Assistant Commandants) Paper I papers, General Ability and Intelligence (2024, 2025 and 2026), in English and Hindi as printed in the official question booklets. Every question has a short explanation. You can read each paper with answers or practise it as a quiz, free.'),
+      ('Can I download the CAPF AC previous year question papers as PDF?',
+       'Yes, free. Each paper (2026, 2025 and 2024 Paper 1) has its own PDF with every question in English and Hindi, then the answer key and an explanation for each answer. Open a paper and tap Download PDF.'),
+      ('Where is the CAPF AC 2026 answer key?',
+       'Every 2026 question on this site shows the answer from UPSC\'s provisional answer key (Series A booklet), published three days after the exam on 19 July 2026. UPSC\'s final key can differ for a few questions.'),
+      ('Is there a free CAPF AC mock test?',
+       'Yes. Tap Create a quiz, choose papers or subjects such as General Science, Current Affairs or Polity, and pick Timed test: you get a free mock test made of real CAPF AC Paper 1 questions, in English or Hindi, with your score and a topic-wise analysis.'),
       ('What is the UPSC CAPF AC exam pattern?',
        'The written exam has two papers on the same day. Paper I, General Ability and Intelligence, is objective, carries 250 marks and lasts two hours; recent papers have had 125 questions, in English and Hindi. It covers General Mental Ability, General Science, Current Events of national and international importance, Indian Polity and Economy, History of India, and Indian and World Geography. A wrong answer costs one-third of the marks for that question. Paper II, General Studies, Essay and Comprehension, is descriptive and carries 200 marks. Candidates who qualify take physical and medical standards tests and then an interview.'),
       ('Are the answers on this site official?',
        'For 2024 they come from UPSC\'s official answer key. For 2026 they come from the provisional key UPSC published after the exam; the final key can differ for a few questions. UPSC has not published a key for 2025 that we could find, so those answers were compiled from three published coaching keys and checked one by one; where a source reports a different answer, the explanation says so. Questions UPSC dropped are left out. The explanations are written by Learn with Anil.'),
-      ('Can I practise the CAPF questions in Hindi?',
+      ('Is the CAPF AC previous year question paper available in Hindi?',
        'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, exactly as printed in UPSC\'s booklet. Tap EN to switch back.'),
       ('Do I need to sign up?',
        'No. The portal is free and practice needs no account. Before your first timed test you enter your name, phone, email and district once, so your test scores are saved with Learn with Anil and Anil can guide you. Your practice attempts, mistakes notebook and bookmarks stay in your own browser on your device.'),
@@ -757,9 +863,9 @@ def appsc_pyqs_page(loaded, grand):
     loaded = [x for x in loaded if x[0]['board'] == 'APPSC']
     grand = sum(len(x[2]) for x in loaded)
     can = f'{SITE_URL}/appsc-pyqs.html'
-    title = 'APPSC PYQs – Group 1 & Group 2 Previous Question Papers with Answers (Free) | Learn with Anil'
-    desc = (f'All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024 and Group 2 Screening & Mains 2019–2025, '
-            f'{grand:,} questions with official final-key answers and explanations in English and Telugu. Read or practise online free.')
+    title = 'APPSC Previous Year Question Papers with Answers – Group 1 & Group 2 PYQs, Free PDF | Learn with Anil'
+    desc = (f'All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024 and Group 2 Prelims & Mains 2019–2025, '
+            f'{grand:,} questions with final-key answers and explanations in English and Telugu. Read online, take a free mock test or download the PDF.')
     secs = []
     for conf, papers, questions in sorted(loaded, key=lambda x: x[0]['short']):   # Group-I first, then Group-II
         base = conf['dir'] + '/' if conf['dir'] else ''
@@ -770,7 +876,7 @@ def appsc_pyqs_page(loaded, grand):
         rows = ''.join(
             f'<li class="q"><div class="meta">{esc(p["held"])} · {esc(p["notif"])} · {p["count"]} questions · '
             f'{"all four options" if p["fmt"] == "mcq" else "answer-only key"}</div>'
-            f'<p><a href="{base}papers/{p["slug"]}.html">{esc(p["title"])} question paper with answers</a></p>'
+            f'<p><a href="{base}papers/{p["slug"]}.html">{esc(paper_kw(conf, p))} question paper with answers</a> · <a href="{pdf_href(conf, p)}" download>PDF</a></p>'
             f'<p class="why" style="font-weight:400">{esc(p["blurb"])}</p></li>'
             for p in sorted(papers, key=lambda p: (-p['year'], p['id'])))
         subs = ''.join(f'<a href="{base}subjects/{conf["slugp"]}-{subj[s][2]}-pyqs.html">{esc(subj[s][1])} ({scount[s]})</a>'
@@ -782,9 +888,11 @@ def appsc_pyqs_page(loaded, grand):
     lede = esc(f'Every APPSC Group 1 and Group 2 previous question paper on Learn with Anil, {grand:,} questions in all. '
                f'Answers come from APPSC\'s official final keys, and every question has a short explanation, in English and Telugu.')
     toc = '<nav class="toc">' + ''.join(f'<a href="#{c["id"]}">{esc(c["name"])}</a>' for c, _, _ in sorted(loaded, key=lambda x: x[0]['short'])) + '</nav>'
-    body = (toc + '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 పాత ప్రశ్నాపత్రాలు అధికారిక ఫైనల్ కీ సమాధానాలు మరియు వివరణలతో — ఉచితంగా.</p>'
+    body = (toc + '<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC old question papers with the key, or a free APPSC mock test? '
+            'They are all here: open a paper to read it with answers, download its PDF, or practise it online.</p>'
+            '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — PDF డౌన్‌లోడ్, ఉచిత మాక్ టెస్ట్.</p>'
             + ''.join(secs))
-    return static_page(0, title, desc, can, 'APPSC PYQs: previous question papers with answers', lede, body,
+    return static_page(0, title, desc, can, 'APPSC previous year question papers with answers', lede, body,
                        [('Home', SITE_URL + '/'), ('APPSC PYQs', can)], ename='APPSC')
 
 
@@ -803,23 +911,28 @@ def build_static(conf, papers, subjects, questions, subj):
         pkey = p.get('key', conf['keyname'])
         fmt = (f'All four options with the answer from {pkey}' if p['fmt'] == 'mcq'
                else f'Each question with its official answer from {conf["keyname"]} (the key lists the correct answer only)')
-        title = f'{p["title"]} Question Paper with Answers – {seo} PYQs | Learn with Anil'
-        kdesc = 'official final-key answers' if conf['board'] == 'APPSC' else (f'answers from {pkey}' if p.get('key', '').startswith('UPSC') else 'compiled answers')
-        langs = f' in English and {conf["l2"]["name"]}' if conf['board'] != 'APPSC' else ''
-        desc = (f'{p["title"]} ({p["notif"]}, held {p["held"]}): {len(qs)} previous year questions{langs} with {kdesc} '
-                f'and short explanations, topic-wise. Practise {seo} PYQs online free.')
+        kw, alt = paper_kw(conf, p), paper_alt(conf, p)
+        if conf['board'] == 'UPSC':
+            title = f'{kw} Question Paper with Answer Key, English & Hindi PDF | Learn with Anil'
+        else:
+            title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – Final Key, PDF | Learn with Anil'
+        kdesc = "answers from APPSC's final key" if conf['board'] == 'APPSC' else (f'answers from {pkey}' if p.get('key', '').startswith('UPSC') else 'compiled answers')
+        desc = (f'{kw} question paper{f" ({alt})" if alt else ""}, held {p["held"]}: all {len(qs)} questions in English and {conf["l2"]["name"]} '
+                f'with {kdesc} and explanations. Download the PDF or practise it online as a free mock test.')
         subs = {}
         for q in qs: subs.setdefault(q['s'], 0); subs[q['s']] += 1
         toc = '<nav class="toc">' + ''.join(
             f'<a href="../subjects/{slugp}-{subj[s][2]}-pyqs.html">{esc(subj[s][1])} ({c})</a>' for s, c in subs.items()) + '</nav>'
-        body = (f'<a class="cta" href="{conf["pb"]}papers/">Practise this paper online</a>'
+        body = (f'<p lang="{conf["l2"]["code"]}" style="margin:0 0 6px">{esc(paper_kw_l2(conf, p))}</p>'
+                f'<a class="cta" href="{pdf_href(conf, p)}" download>Download PDF (free)</a>'
+                f'<a class="cta alt" href="{conf["pb"]}papers/">Practise this paper online</a>'
                 f'<a class="cta alt" href="{conf["pb"]}practice/">Make a topic-wise quiz</a>'
                 f'<h2>Subjects in this paper</h2>{toc}<h2>All {len(qs)} questions</h2><ol class="qs">'
                 + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html') for q in qs) + '</ol>')
         held = f'{p["notif"]}, held on {p["held"]}' if conf['board'] == 'APPSC' else f'Held on {p["held"]} ({p["notif"].replace(" · ", ", ")})'
-        lede = esc(f'{p["blurb"]} {held}. {fmt}, plus a short explanation for every question.'
-                   + (f' Each question is shown in English and {conf["l2"]["name"]}, as printed.' if conf['board'] != 'APPSC' else ''))
-        pages[rel] = static_page(1, title, desc, can, f'{p["title"]}: questions with answers', lede, body,
+        lede = esc(f'{p["title"]}{f" ({alt})" if alt and alt not in p["title"] else ""}. {p["blurb"]} {held}. {fmt}, plus a short explanation for every question. '
+                   f'Each question is shown in English and {conf["l2"]["name"]}, as printed in the booklet.')
+        pages[rel] = static_page(1, title, desc, can, f'{kw} question paper with answers', lede, body,
                                  home_crumbs + [(p['title'], can)], conf)
     by_s = {}
     for q in questions: by_s.setdefault(q['s'], []).append(q)
@@ -828,10 +941,12 @@ def build_static(conf, papers, subjects, questions, subj):
         if not qs: continue
         rel = f'subjects/{slugp}-{s["slug"]}-pyqs.html'
         can = base + rel
-        title = f'{seo} {s["name"]} PYQs – Previous Year Questions with Answers | Learn with Anil'
-        desc = (f'{len(qs)} {name} {s["name"]} previous year questions from {", ".join(sorted({pmap[q["p"]]["short"] for q in qs}))}, '
-                f'arranged topic-wise with official answers and explanations.')
-        body = [f'<a class="cta" href="{conf["pb"]}practice/">Practise {esc(s["name"])} online</a>']
+        bits = ' & Practice Bits' if conf['board'] == 'APPSC' else ' (Subject-wise)'
+        title = f'{seo} {s["name"]} Previous Year Questions (PYQs) with Answers{bits} | Learn with Anil'
+        desc = (f'{len(qs)} {seo} {s["name"]} previous year questions from {", ".join(paper_kw(conf, pmap[pid]).replace(seo + " ", "") for pid in dict.fromkeys(q["p"] for q in qs))}, '
+                f'topic-wise, with answers, explanations and {conf["l2"]["name"]} text. Practise them free as a mock test.')
+        l2l = subject_l2_line(conf, s)
+        body = ([f'<p lang="{conf["l2"]["code"]}" style="margin:0 0 6px">{esc(l2l)}</p>'] if l2l else []) + [f'<a class="cta" href="{conf["pb"]}practice/">Practise {esc(s["name"])} online</a>']
         tops = {}
         for q in qs: tops.setdefault(q['t'], []).append(q)
         body.append('<nav class="toc">' + ''.join(f'<a href="#t{i}">{esc(t)} ({len(tops[t])})</a>' for i, t in enumerate(s['topics']) if t in tops) + '</nav>')
@@ -841,7 +956,7 @@ def build_static(conf, papers, subjects, questions, subj):
                 q_html(q, pmap[q['p']]['short'], f'{pmap[q["p"]]["short"]} · Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html') for q in tops[t]) + '</ol>')
         lede = esc(f'Every {s["name"]} question asked in the {name} papers on this site, grouped by topic. '
                    f'Answers come from {conf["keyshort"]}; each has a short explanation.')
-        pages[rel] = static_page(1, title, desc, can, f'{name} {s["name"]} PYQs', lede, ''.join(body),
+        pages[rel] = static_page(1, title, desc, can, f'{seo} {s["name"]} previous year questions with answers', lede, ''.join(body),
                                  home_crumbs + [(s['name'], can)], conf)
     return pages
 
@@ -863,8 +978,9 @@ def question_pages(conf, papers, questions, subj):
             can = SITE_URL + pb + rel
             text = re.sub(r'\s+', ' ', q['q']).strip()
             short = text if len(text) <= 80 else text[:78].rsplit(' ', 1)[0] + '…'
-            title = f'{short} – {p["short"]} Q{q["n"]} | Learn with Anil'
-            desc = (f'{p["title"]}, question {q["n"]}: {text[:140].rsplit(" ", 1)[0]}… '
+            kw = paper_kw(conf, p)
+            title = f'{short} – {kw} Q{q["n"]} | Learn with Anil'
+            desc = (f'{kw} question paper, Q{q["n"]}: {text[:140].rsplit(" ", 1)[0]}… '
                     f'Answer from {p.get("key") or conf["keyname"]}, with explanation, in English and {l2["name"]}.')
             prev_q, next_q = (qs[i - 1] if i else None), (qs[i + 1] if i + 1 < len(qs) else None)
             nav = ('<nav class="toc">'
@@ -876,7 +992,7 @@ def question_pages(conf, papers, questions, subj):
                     f'<a class="cta alt" href="{pb}practice/">Make a topic-wise quiz</a></p>' + nav)
             lede = esc(f'Question {q["n"]} of the {p["title"]} ({p["held"]}). Try it first, then open the answer and explanation.')
             crumbs = [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), (p['title'], SITE_URL + paper_url), (f'Q{q["n"]}', can)]
-            pages[rel] = static_page(depth, title, desc, can, f'{p["title"]} · Question {q["n"]}', lede, body, crumbs, conf)
+            pages[rel] = static_page(depth, title, desc, can, f'{kw} · Question {q["n"]}', lede, body, crumbs, conf)
     return pages
 
 

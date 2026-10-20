@@ -102,7 +102,7 @@ async def main():
                 await pg.evaluate('location.hash="home"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/home-phone.png', full_page=False)
         # exams in their own folders: APPSC Group-I (Telugu) and UPSC CAPF (Hindi)
-        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group-I', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi')]:
+        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group 1', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi')]:
             if not os.path.exists(os.path.join(SITE, sub, 'index.html')): continue
             fp = URL + sub + '/'
             for width, name in [(1280, 'desk'), (390, 'phone')]:
@@ -140,7 +140,8 @@ async def main():
         pg = await b.new_page(viewport={'width': 1280, 'height': 900})
         pg.on('pageerror', lambda e: errors.append(f'paths pageerror: {e}'))
         async def view():
-            return await pg.evaluate("""(()=>{ if(!document.getElementById('hub-static').hidden) return 'exams'; if(!document.getElementById('home-static').hidden) return 'home';
+            return await pg.evaluate("""(()=>{ const hub = document.getElementById('hub-static'), home = document.getElementById('home-static');
+                if(hub && !hub.hidden) return 'exams'; if(home && !home.hidden) return 'home';
                 const h = document.querySelector('#view h1, #view h2'); return h ? h.innerText : '?'; })()""")
         checks = [('appsc-group-1/bank/', '/appsc-group-1/bank/', 'Search'), ('upsc-capf/practice/', '/upsc-capf/practice/', 'quiz'),
                   ('#home', '/appsc-group-2/', 'home'), ('appsc-group-1/#papers', '/appsc-group-1/papers/', 'question papers'),
@@ -161,6 +162,18 @@ async def main():
         if 'Raghu Rai' not in await pg.inner_text('main'): errors.append('question page: text missing')
         await pg.click('text=Answer it in the practice app'); await pg.wait_for_timeout(800)
         if await pg.evaluate('location.pathname') != '/upsc-capf/quiz/': errors.append('question page: practice link did not open the quiz')
+        # an exam page carries only its own heading; "All exams" goes back to the start page
+        await pg.goto(URL + 'appsc-group-1/'); await pg.wait_for_timeout(400)
+        raw = open(os.path.join(SITE, 'appsc-group-1', 'index.html'), encoding='utf-8').read()
+        markup = raw.split('<body>')[1].split('<script')[0]
+        if 'id="hub-static"' in raw or markup.count('<h1') != 1: errors.append('appsc-group-1/: should have one h1 and no exam list')
+        await pg.click('#nav a[href="/"]'); await pg.wait_for_timeout(800)
+        if await pg.evaluate('location.pathname') != '/' or await view() != 'exams': errors.append('All exams link from an exam page did not open the start page')
+        # every PDF in the sitemap exists
+        import re as _re
+        for u in _re.findall(r'<loc>https?://[^/]+/([^<]*\.pdf)</loc>', open(os.path.join(SITE, 'sitemap.xml')).read()):
+            f = os.path.join(SITE, u)
+            if not os.path.exists(f) or open(f, 'rb').read(4) != b'%PDF': errors.append(f'missing PDF {u} (run tools/pdfs.py)')
         r = await pg.goto(URL + 'no-such-page/'); await pg.wait_for_timeout(200)
         if r.status != 404 or 'does not exist' not in await pg.inner_text('body'): errors.append('404 page missing')
         await pg.close()
