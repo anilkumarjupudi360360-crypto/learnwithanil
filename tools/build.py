@@ -395,9 +395,9 @@ def main():
                      .replace('{{TIMERS}}', timers).replace('{{HUBHREF}}', hubhref).replace('{{ROOTUP}}', up)
                      .replace('{{EXAM}}', esc(conf['name'])).replace('{{EXAMSHORT}}', esc(conf['short']))
                      .replace('{{EYEBROW}}', conf['eyebrow']))
-        root_title = 'APPSC PYQs Free – Group 1 & Group 2 Previous Question Papers with Answers | Learn with Anil'
-        root_desc = (f'Free APPSC PYQs: {grand:,} previous year questions from APPSC Group 1 and Group 2 question papers (2019–2025) '
-                     f'and UPSC CAPF (AC) 2024–2026, with official-key answers and explanations in English, Telugu and Hindi. Practise online topic-wise. '
+        root_title = 'Previous Year Question Papers for Government Exams, Free with Answers | Learn with Anil'
+        root_desc = (f'Free previous year questions (PYQs) for government exams: {grand:,} questions from APPSC Group 1 and Group 2 (2019–2025) '
+                     f'and UPSC CAPF (AC) 2024–2026, with official answers and explanations in English, Telugu and Hindi. '
                      f'TGPSC, UPSC, SSC, banking and railway exams are being added.')
         home_title = conf['title']
         ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
@@ -552,7 +552,7 @@ def live_href(e):
 
 def hub_html(catalog, counts, grand):
     cats = catalog['cats']; byc = {c['id']: c for c in cats}
-    chips = (f'<button type="button" class="chip" data-act="excat" data-cat="all" aria-pressed="true">All exams <span class="n">{len(catalog["exams"])}</span></button>'
+    chips = (f'<button type="button" class="chip" data-act="excat" data-cat="all" aria-pressed="true"><span data-i18n="all">All exams</span> <span class="n">{len(catalog["exams"])}</span></button>'
              + ''.join(f'<button type="button" class="chip" data-act="excat" data-cat="{c["id"]}" aria-pressed="false">{esc(c["name"])} '
                        f'<span class="n">{sum(1 for e in catalog["exams"] if e["cat"] == c["id"])}</span></button>' for c in cats))
     secs = []
@@ -564,7 +564,7 @@ def hub_html(catalog, counts, grand):
             status = f'Live · {counts.get(e["id"], 0):,} questions' if live else 'Coming soon'
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
             tiles.append(f'<a class="card exam{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-s="{esc(exam_terms(e, c))}">'
-                         f'<span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st">{status}</span></a>')
+                         f'<span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></a>')
         te = f' <span class="te-sub" lang="te">{esc(c["te"])}</span>' if c.get('te') else ''
         secs.append(f'<section class="exam-cat" data-cat="{c["id"]}"><div class="section-title"><h2>{esc(c["name"])}{te}</h2>'
                     f'<span class="muted" style="font-size:14px">{esc(c["desc"])}</span></div><div class="exams">{"".join(tiles)}</div></section>')
@@ -574,9 +574,9 @@ def hub_html(catalog, counts, grand):
     return (f'<div class="hub-tools">{search}<div class="chips" role="group" aria-label="Filter exams">{chips}</div></div>'
             f'<p class="muted" id="hubCount" style="font-size:14px"></p>'
             f'<div id="hubCats">{"".join(secs)}</div>'
-            f'<div class="card empty" id="hubEmpty" hidden><h3>No exam matches your search</h3>'
-            f'<p>Tell Anil which exam you are preparing for, and it will be added to the list.</p>'
-            f'<div class="row" style="justify-content:center"><a class="btn btn-primary" id="hubAsk" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener">Ask on WhatsApp</a></div></div>')
+            f'<div class="card empty" id="hubEmpty" hidden><h3 data-i18n="emptyT">No exam matches your search</h3>'
+            f'<p data-i18n="emptyP">Tell Anil which exam you are preparing for, and it will be added to the list.</p>'
+            f'<div class="row" style="justify-content:center"><a class="btn btn-primary" id="hubAsk" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></div>')
 
 
 def timers_html(catalog):

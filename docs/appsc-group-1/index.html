@@ -14,7 +14,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: sticky app bar + one 1120px column; views swap inside <main>. Ink-blue band for the hero; OMR answer-bubbles are the recurring motif. */
 :root{
@@ -75,7 +75,11 @@ img{max-width:100%}
 .lang{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;padding:2px;flex-shrink:0;background:var(--surface)}
 .lang button{border:0;background:transparent;color:var(--muted);font:inherit;font-weight:700;font-size:13.5px;padding:5px 11px;border-radius:999px;cursor:pointer;line-height:1.2}
 .lang button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.lang button[lang="te"]{font-family:"Noto Sans Telugu",var(--f-body)}
+.lang button[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body)}
 .lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lang button.na{opacity:.45}
+@media (max-width:420px){.lang button{padding:5px 8px;font-size:13px}}
 [lang="te"]{font-family:"Noto Sans Telugu",var(--f-body);line-height:1.8}
 [lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body);line-height:1.75}
 .lang button[lang="te"],.lang button[lang="hi"]{line-height:1.2}
@@ -153,6 +157,9 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .figure{background:var(--surface);padding:16px 18px}
 .figure .v{font-family:var(--f-display);font-weight:800;font-size:30px;font-variant-numeric:tabular-nums;line-height:1.1}
 .figure .k{font-size:14px;color:var(--muted)}
+.hub-figs{padding-top:24px}
+.hero h1[lang]{line-height:1.3}
+div.feature:hover{border-color:var(--line)}
 .section{display:flex;flex-direction:column;gap:14px}
 .section-title{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
 .section-title h2{font-size:22px;font-weight:800}
@@ -515,6 +522,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     </nav>
     <div class="lang" role="group" aria-label="Question language">
       <button type="button" data-act="lang" data-l="en" aria-pressed="true">EN</button>
+      <button type="button" data-act="lang" data-l="hi" lang="hi" aria-pressed="false">हिंदी</button>
       <button type="button" data-act="lang" data-l="te" lang="te" aria-pressed="false">తెలుగు</button>
     </div>
   </div>
@@ -525,24 +533,37 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
   
   <section class="hero"><div class="wrap">
     <div class="hero-copy">
-      <p class="eyebrow">UPSC · APPSC · TGPSC · SSC · Banks · Railways</p>
-      <h1>Previous-year questions for <em>every exam.</em></h1>
-      <p>Official papers with official-key answers and explanations, free, in English with Telugu or Hindi. Live now: APPSC Group-II, APPSC Group-I and UPSC CAPF (AC) previous question papers, 2,063 questions in all; the other exams are being added one by one.</p>
-      <div class="row"><a class="btn btn-primary" href="/appsc-group-1/">APPSC Group-II</a><a class="btn btn-primary" href="appsc-group-1/">APPSC Group-I</a><a class="btn btn-primary" href="upsc-capf/">UPSC CAPF (AC)</a><button class="btn btn-secondary" type="button" data-act="hubscroll">Find your exam</button></div>
-      <p style="margin:14px 0 0;font-size:15px"><a href="appsc-pyqs.html" style="color:inherit">All APPSC PYQs: Group 1 &amp; Group 2 previous question papers →</a></p>
+      <p class="eyebrow">UPSC · State PSCs · SSC · Banks · Railways · Defence</p>
+      <h1 data-i18n="h1">Previous-year questions for <em>every government exam.</em></h1>
+      <p data-i18n="lede">Real question papers with official answers and short explanations. Free, no sign-up, in English, తెలుగు and हिंदी.</p>
+      <div class="row"><button class="btn btn-primary" type="button" data-act="hubscroll" data-i18n="find">Find your exam</button><button class="btn btn-secondary" type="button" data-act="qotdscroll" data-i18n="today">Today's question</button></div>
     </div>
     <a class="mentor" href="/appsc-group-1/about/" style="color:inherit;text-decoration:none">
       <span class="ph"><img src="../anil.jpg" alt="Jupudi Anil Kumar" width="210" height="210"></span>
-      <span><b>Jupudi Anil Kumar</b><br><span>UPSC faculty &amp; mentor · 1000+ hours of civil-services teaching</span></span>
+      <span><b>Jupudi Anil Kumar</b><br><span data-i18n="mentor">UPSC faculty &amp; mentor · 1000+ hours of civil-services teaching</span></span>
     </a>
   </div></section>
 
+  <section class="wrap section hub-figs">
+    <div class="figures">
+      <div class="figure"><div class="v">2,063</div><div class="k" data-i18n="f1">Previous-year questions</div></div>
+      <div class="figure"><div class="v">95</div><div class="k" data-i18n="f2">Government exams on the list</div></div>
+      <div class="figure"><div class="v">3</div><div class="k" data-i18n="f3">Languages: English, తెలుగు, हिंदी</div></div>
+      <div class="figure"><div class="v">₹0</div><div class="k" data-i18n="f4">Free for everyone, no sign-up</div></div>
+    </div>
+  </section>
+
   <section class="wrap section" id="exams-list">
-    <div class="section-title"><h2>Choose your exam</h2></div>
+    <div class="section-title"><h2 data-i18n="choose">Choose your exam</h2></div>
     
   </section>
 
   <section class="wrap section" id="qotd-hub" hidden></section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2 data-i18n="whyT">What makes this site different</h2></div>
+    <div class="features"><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 14l2 2 4-4"/></svg></span><span><h3 data-i18n="w1t">Straight from the official paper</h3><p data-i18n="w1p">Every question is typed from the official question booklet and checked twice before it goes live. Each paper says where its answers come from.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c1 4 4 7 7 8M11 5c-1 4-4 7-7 8"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg></span><span><h3 data-i18n="w2t">Read it in your language</h3><p data-i18n="w2p">Switch between English, తెలుగు and हिंदी with one tap at the top. The translation is the one printed in the exam paper, not a machine translation.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/><path d="M9 12l2 2 4-4"/></svg></span><span><h3 data-i18n="w3t">Your mistakes come back</h3><p data-i18n="w3p">Every question you get wrong goes into your Mistakes notebook. The Smart Quiz keeps asking it until you get it right twice.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2" opacity=".35"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2" opacity=".6"/></svg></span><span><h3 data-i18n="w4t">See your weak topics</h3><p data-i18n="w4p">The heatmap colours every topic by your accuracy, so you know exactly what to revise first.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><span><h3 data-i18n="w5t">Every question has its own page</h3><p data-i18n="w5p">Send any question to a friend as a link. They see the question first, and the answer only when they tap.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/><path d="M10 9l1.5 1.5L14 8"/></svg></span><span><h3 data-i18n="w6t">Your practice stays with you</h3><p data-i18n="w6p">No account and no login to practise. Your practice, mistakes and bookmarks are saved on your own phone.</p></span></div></div>
+  </section>
 
   <section class="wrap section">
     <a class="card notes-promo" href="/appsc-group-1/notes/">
@@ -629,7 +650,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/appsc-g1-ac3551a68a.js"></script>
+<script src="data/appsc-g1-3694c8c66d.js"></script>
 <script>
 (function(){
 "use strict";
@@ -651,7 +672,12 @@ const OPTS = q => (P.lang===L2.code && q.ot) ? q.ot : q.o;
 const ANS = q => (P.lang===L2.code && q.at) ? q.at : q.ans;
 const LATTR = ' lang="'+L2.code+'"';
 const langAttr = q => teOn(q) ? LATTR : "";
-function syncLang(){ document.querySelectorAll('.lang button').forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.l===(P.lang===L2.code?L2.code:"en")))); }
+function syncLang(){
+  const av = availLangs(), eff = av.includes(P.lang) ? P.lang : "en";
+  document.querySelectorAll('.lang button').forEach(b=>{ const na = !av.includes(b.dataset.l);
+    b.setAttribute("aria-pressed", String(b.dataset.l===eff)); b.classList.toggle("na", na);
+    if(na) b.title = `${LANGS[b.dataset.l]} is not available for ${DATA.exam} yet`; else b.removeAttribute("title"); });
+}
 
 /* ---------- storage (this browser only) ---------- */
 function readLS(k, d){ try{ const v = localStorage.getItem(k); if(v){ const o = JSON.parse(v); if(o && typeof o==="object") return Object.assign(d, o); } }catch(e){} return d; }
@@ -659,6 +685,7 @@ function writeLS(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(
 const blank = ()=>({qs:{}, mistakes:{}, bm:{}, history:[]});
 let S = readLS(KEY, blank());
 let P = readLS(PKEY, {papers:null, topics:null, count:10, mode:"practice", recall:true, lang:"en"});
+try{ const gl = localStorage.getItem("lwa-lang"); if(gl && ["en","hi","te"].includes(gl)) P.lang = gl; }catch(_){}
 const save = ()=>writeLS(KEY, S), savePrefs = ()=>writeLS(PKEY, P);
 
 /* ---------- student details + test records (sent to Anil's Google Form / Sheet) ---------- */
@@ -796,7 +823,8 @@ function render(){
   }
   if(v==="quiz") startTimer();
   if(changed) window.scrollTo(0,0);
-  fixLinks(); document.title = viewTitle(v);
+  fixLinks(); document.title = viewTitle(v); syncLang();
+  if(v==="exams") applyHubLang();
 }
 const BASE_TITLE = document.title;
 function viewTitle(v){
@@ -852,6 +880,69 @@ function reviewCard(q, n, opts={}){
 function emptyHTML(title, body, actions){ return `<div class="card empty"><div class="bubbles" aria-hidden="true"><i></i><i class="f"></i><i></i><i></i></div><h3>${title}</h3><p>${body}</p>${actions?`<div class="row" style="justify-content:center">${actions}</div>`:""}</div>`; }
 function head(eyebrow, title, desc, right){ return `<div class="page-head"><div><p class="eyebrow">${eyebrow}</p><h1>${title}</h1>${desc?`<p>${desc}</p>`:""}</div>${right||""}</div>`; }
 
+
+/* ---------- languages: English, हिंदी, తెలుగు (one choice for the whole site) ---------- */
+const LANGS = {en:"English", hi:"हिंदी", te:"తెలుగు"};
+const availLangs = ()=> (DATA.hub && (current==="exams" || current==="")) ? ["en","hi","te"] : ["en", L2.code];
+const hubLang = ()=> ["hi","te"].includes(P.lang) ? P.lang : "en";
+const HUBT = {
+  h1:{en:'Previous-year questions for <em>every government exam.</em>', hi:'हर सरकारी परीक्षा के <em>पिछले वर्षों के प्रश्न।</em>', te:'ప్రతి ప్రభుత్వ పరీక్షకు <em>గత సంవత్సరాల ప్రశ్నలు.</em>'},
+  lede:{en:'Real question papers with official answers and short explanations. Free, no sign-up, in English, తెలుగు and हिंदी.',
+        hi:'असली प्रश्नपत्र, आधिकारिक उत्तर और संक्षिप्त व्याख्या के साथ। पूरी तरह निःशुल्क, बिना साइन-अप, अंग्रेज़ी, तेलुगु और हिंदी में।',
+        te:'అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు, చిన్న వివరణలతో. పూర్తిగా ఉచితం, సైన్-అప్ అవసరం లేదు, ఇంగ్లీష్, తెలుగు, హిందీలో.'},
+  find:{en:'Find your exam', hi:'अपनी परीक्षा खोजें', te:'మీ పరీక్షను వెతకండి'},
+  today:{en:"Today's question", hi:'आज का प्रश्न', te:'నేటి ప్రశ్న'},
+  mentor:{en:'UPSC faculty &amp; mentor · 1000+ hours of civil-services teaching', hi:'UPSC शिक्षक और मार्गदर्शक · सिविल सेवा में 1000+ घंटे का अध्यापन', te:'UPSC అధ్యాపకులు, మెంటార్ · సివిల్ సర్వీసెస్‌లో 1000+ గంటల బోధన'},
+  f1:{en:'Previous-year questions', hi:'पिछले वर्षों के प्रश्न', te:'గత సంవత్సరాల ప్రశ్నలు'},
+  f2:{en:'Government exams on the list', hi:'सूची में सरकारी परीक्षाएँ', te:'జాబితాలో ప్రభుత్వ పరీక్షలు'},
+  f3:{en:'Languages: English, తెలుగు, हिंदी', hi:'भाषाएँ: अंग्रेज़ी, तेलुगु, हिंदी', te:'భాషలు: ఇంగ్లీష్, తెలుగు, హిందీ'},
+  f4:{en:'Free for everyone, no sign-up', hi:'सबके लिए निःशुल्क, साइन-अप नहीं', te:'అందరికీ ఉచితం, సైన్-అప్ అవసరం లేదు'},
+  choose:{en:'Choose your exam', hi:'अपनी परीक्षा चुनें', te:'మీ పరీక్షను ఎంచుకోండి'},
+  all:{en:'All exams', hi:'सभी परीक्षाएँ', te:'అన్ని పరీక్షలు'},
+  search:{en:'Search an exam, e.g. Group-II, CGL, NDA, Police SI', hi:'परीक्षा खोजें, जैसे Group-II, CGL, NDA, Police SI', te:'పరీక్షను వెతకండి, ఉదా. Group-II, CGL, NDA, Police SI'},
+  live:{en:'Live · {N} questions', hi:'उपलब्ध · {N} प्रश्न', te:'అందుబాటులో · {N} ప్రశ్నలు'},
+  soon:{en:'Coming soon', hi:'जल्द आ रहा है', te:'త్వరలో'},
+  count:{en:'{n} exams · {l} live now', hi:'{n} परीक्षाएँ · {l} अभी उपलब्ध', te:'{n} పరీక్షలు · {l} ఇప్పుడు అందుబాటులో'},
+  emptyT:{en:'No exam matches your search', hi:'आपकी खोज से कोई परीक्षा नहीं मिली', te:'మీరు వెతికిన పరీక్ష దొరకలేదు'},
+  emptyP:{en:'Tell Anil which exam you are preparing for, and it will be added to the list.', hi:'Anil को बताइए कि आप किस परीक्षा की तैयारी कर रहे हैं, उसे सूची में जोड़ दिया जाएगा।', te:'మీరు ఏ పరీక్షకు సిద్ధమవుతున్నారో Anilకి చెప్పండి, దాన్ని జాబితాలో చేరుస్తాం.'},
+  ask:{en:'Ask on WhatsApp', hi:'WhatsApp पर पूछें', te:'WhatsAppలో అడగండి'},
+  qotd:{en:'Question of the day', hi:'आज का प्रश्न', te:'నేటి ప్రశ్న'},
+  qotdSub:{en:'A new previous question every day. Answer it, then challenge your friends.', hi:'हर दिन एक नया पिछला प्रश्न। उत्तर दीजिए, फिर दोस्तों को चुनौती दीजिए।', te:'ప్రతి రోజు ఒక కొత్త పాత ప్రశ్న. సమాధానం ఇచ్చి, మీ స్నేహితులకు సవాలు విసరండి.'},
+  whyT:{en:'What makes this site different', hi:'यह साइट अलग क्यों है', te:'ఈ సైట్ ప్రత్యేకత ఏమిటి'},
+  w1t:{en:'Straight from the official paper', hi:'सीधे आधिकारिक प्रश्नपत्र से', te:'నేరుగా అధికారిక ప్రశ్నపత్రం నుంచి'},
+  w1p:{en:'Every question is typed from the official question booklet and checked twice before it goes live. Each paper says where its answers come from.',
+       hi:'हर प्रश्न आधिकारिक प्रश्न-पुस्तिका से टाइप किया गया है और प्रकाशित होने से पहले दो बार जाँचा गया है। हर प्रश्नपत्र पर लिखा है कि उसके उत्तर कहाँ से लिए गए हैं।',
+       te:'ప్రతి ప్రశ్నను అధికారిక ప్రశ్నపత్రం నుంచి టైప్ చేసి, ప్రచురించే ముందు రెండుసార్లు తనిఖీ చేశాం. సమాధానాలు ఎక్కడి నుంచి తీసుకున్నామో ప్రతి పేపర్‌పై రాసి ఉంటుంది.'},
+  w2t:{en:'Read it in your language', hi:'अपनी भाषा में पढ़ें', te:'మీ భాషలో చదవండి'},
+  w2p:{en:'Switch between English, తెలుగు and हिंदी with one tap at the top. The translation is the one printed in the exam paper, not a machine translation.',
+       hi:'ऊपर एक टैप से अंग्रेज़ी, तेलुगु और हिंदी के बीच बदलें। अनुवाद वही है जो परीक्षा के प्रश्नपत्र में छपा था, मशीन अनुवाद नहीं।',
+       te:'పైన ఒక్క ట్యాప్‌తో ఇంగ్లీష్, తెలుగు, హిందీ మధ్య మారండి. అనువాదం పరీక్ష ప్రశ్నపత్రంలో ముద్రించినదే, మెషీన్ అనువాదం కాదు.'},
+  w3t:{en:'Your mistakes come back', hi:'आपकी गलतियाँ लौटकर आती हैं', te:'మీ తప్పులు మళ్లీ వస్తాయి'},
+  w3p:{en:'Every question you get wrong goes into your Mistakes notebook. The Smart Quiz keeps asking it until you get it right twice.',
+       hi:'हर गलत प्रश्न आपकी गलतियों की नोटबुक में चला जाता है। स्मार्ट क्विज़ उसे तब तक पूछता है जब तक आप उसे दो बार सही न कर लें।',
+       te:'మీరు తప్పుగా జవాబిచ్చిన ప్రతి ప్రశ్న మీ మిస్టేక్స్ నోట్‌బుక్‌లోకి వెళ్తుంది. రెండుసార్లు సరిగ్గా చెప్పే వరకు స్మార్ట్ క్విజ్ దాన్ని మళ్లీ అడుగుతుంది.'},
+  w4t:{en:'See your weak topics', hi:'अपने कमज़ोर विषय देखें', te:'మీ బలహీన అంశాలు తెలుసుకోండి'},
+  w4p:{en:'The heatmap colours every topic by your accuracy, so you know exactly what to revise first.',
+       hi:'हीटमैप हर विषय को आपकी सटीकता के अनुसार रंग देता है, ताकि आप जानें कि पहले क्या दोहराना है।',
+       te:'హీట్‌మ్యాప్ ప్రతి అంశాన్ని మీ ఖచ్చితత్వం ప్రకారం రంగులో చూపిస్తుంది, ముందుగా ఏది రివిజన్ చేయాలో తెలుస్తుంది.'},
+  w5t:{en:'Every question has its own page', hi:'हर प्रश्न का अपना पेज', te:'ప్రతి ప్రశ్నకు సొంత పేజీ'},
+  w5p:{en:'Send any question to a friend as a link. They see the question first, and the answer only when they tap.',
+       hi:'किसी भी प्रश्न को लिंक के रूप में दोस्त को भेजें। उन्हें पहले प्रश्न दिखेगा, और उत्तर तभी जब वे टैप करेंगे।',
+       te:'ఏ ప్రశ్ననైనా లింక్‌గా స్నేహితుడికి పంపండి. వారికి ముందు ప్రశ్న మాత్రమే కనిపిస్తుంది, ట్యాప్ చేస్తేనే సమాధానం.'},
+  w6t:{en:'Your practice stays with you', hi:'आपका अभ्यास आपके पास', te:'మీ ప్రాక్టీస్ మీ దగ్గరే'},
+  w6p:{en:'No account and no login to practise. Your practice, mistakes and bookmarks are saved on your own phone.',
+       hi:'अभ्यास के लिए न खाता, न लॉगिन। आपका अभ्यास, गलतियाँ और बुकमार्क आपके अपने फ़ोन में सहेजे जाते हैं।',
+       te:'ప్రాక్టీస్‌కు ఖాతా గానీ లాగిన్ గానీ అవసరం లేదు. మీ ప్రాక్టీస్, తప్పులు, బుక్‌మార్క్‌లు మీ ఫోన్‌లోనే సేవ్ అవుతాయి.'},
+};
+const HT = (k, L)=> { const t = HUBT[k]; return t ? (t[L||hubLang()] || t.en) : ""; };
+function setLangAttr(el, L){ if(L==="en") el.removeAttribute("lang"); else el.setAttribute("lang", L); }
+function applyHubLang(){   // the start page's own text follows the language buttons
+  if(!DATA.hub) return; const L = hubLang();
+  document.querySelectorAll("#hub-static [data-i18n]").forEach(el=>{ el.innerHTML = HT(el.dataset.i18n, L); setLangAttr(el, L); });
+  const s = $("#examSearch"); if(s){ s.placeholder = HT("search", L); setLangAttr(s, L); }
+  document.querySelectorAll("#hub-static .ex-st").forEach(el=>{ const n = el.dataset.n; el.textContent = n ? HT("live", L).replace("{N}", Number(n).toLocaleString("en-IN")) : HT("soon", L); setLangAttr(el, L); });
+}
+
 /* ---------- exam hub (start page) + one exam's page ---------- */
 function applyHub(){
   const q = (UI.exQ||"").trim().toLowerCase().replace(/\s+/g," "), cat = UI.exCat||"all";
@@ -860,7 +951,7 @@ function applyHub(){
   document.querySelectorAll("#hub-static .exam-cat").forEach(s=>{ s.hidden = !s.querySelector(".exam:not([hidden])"); });
   document.querySelectorAll('#hub-static [data-act="excat"]').forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.cat===cat)));
   const live = [...document.querySelectorAll("#hub-static .exam.live:not([hidden])")].length;
-  const cnt = $("#hubCount"); if(cnt) cnt.textContent = n ? `${n} exam${n>1?"s":""}${live?` · ${live} live now`:""} · questions are being added exam by exam` : "";
+  const cnt = $("#hubCount"); if(cnt) cnt.textContent = n ? HT("count").replace("{n}", n).replace("{l}", live) : "";
   const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Anil, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
   const s = $("#examSearch"); if(s && s.value!==(UI.exQ||"")) s.value = UI.exQ||"";
 }
@@ -1405,10 +1496,11 @@ function qotdHref(x){ if(PATHMODE) return (x.pb||PB)===PB ? pathOf("q/"+x.id) : 
 function renderQotd(sel, scope){
   const box = $(sel); if(!box) return;
   const x = qotdItem(scope); if(!x){ box.hidden = true; return; }
-  const te = P.lang===L2.code && x.qt && (x.l2||"te")===L2.code, opts = (te && x.ot) ? x.ot : x.o, pick = UI.qotdPick;
+  const ql = (x.qt && P.lang!=="en" && (x.l2||"te")===P.lang) ? P.lang : "", te = !!ql, QL = te ? ` lang="${ql}"` : "";
+  const opts = (te && x.ot) ? x.ot : x.o, pick = UI.qotdPick, onHub = sel==="#qotd-hub";
   const done = pick!==undefined;
   const date = new Date().toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric",timeZone:"Asia/Kolkata"});
-  const optsHTML = `<ul class="opts"${te?LATTR:""}>${opts.map((o,j)=>{
+  const optsHTML = `<ul class="opts"${QL}>${opts.map((o,j)=>{
     let cls="", tag="";
     if(done){ if(x.a.includes(j)){ cls="is-right"; tag = pick===j? "Your answer · correct" : "Correct answer"; } else if(pick===j){ cls="is-wrong"; tag="Your answer"; } }
     return `<li><button type="button" class="opt ${cls}" data-act="qotdpick" data-i="${j}" ${done?"disabled":""}><span class="bub">${LET[j]}</span><span>${esc(o)}</span><span class="tag">${tag}</span></button></li>`;
@@ -1417,10 +1509,11 @@ function renderQotd(sel, scope){
       ${x.w? `<div class="why"><h4>Explanation</h4><p>${esc(x.w)}</p></div>`:""}
       <div class="row"><a class="btn btn-secondary btn-sm" href="${qotdHref(x)}">Practise more from this paper</a></div>` : "";
   box.hidden = false;
-  box.innerHTML = `<div class="section-title"><h2>Question of the day</h2><span class="muted" style="font-size:14px">A new previous question every day. Answer it, then challenge your friends.</span></div>
+  const qh = onHub ? hubLang() : "en";
+  box.innerHTML = `<div class="section-title"><h2${qh!=="en"?` lang="${qh}"`:""}>${HT("qotd", qh)}</h2><span class="muted" style="font-size:14px"${qh!=="en"?` lang="${qh}"`:""}>${HT("qotdSub", qh)}</span></div>
     <article class="card qotd">
       <div class="qotd-head"><span class="eyebrow">${esc(date)}</span><span class="pill blue">${esc(x.exName)} · ${esc(x.paper)}</span></div>
-      <p class="qtext"${te?LATTR:""}>${esc(te? x.qt : x.q)}</p>
+      <p class="qtext"${QL}>${esc(te? x.qt : x.q)}</p>
       ${optsHTML}${after}
       <div class="share-row"><button class="btn btn-wa btn-sm" type="button" data-act="qotdwa">${WA_ICON}Challenge friends on WhatsApp</button><button class="btn btn-secondary btn-sm" type="button" data-act="qotdimg">${IMG_ICON}Share as image</button></div>
     </article>`;
@@ -1430,7 +1523,7 @@ function renderQotd(sel, scope){
 const FONTS_READY = ()=> Promise.all([
   ['800 64px "Archivo"','Aa'], ['700 40px "Archivo"','Aa'], ['400 30px "Source Sans 3"','Aa'], ['700 30px "Source Sans 3"','Aa'], ['500 24px "IBM Plex Mono"','Aa'], ['600 24px "IBM Plex Mono"','Aa'],
   ['500 30px "Noto Sans Telugu"','తెలుగు'], ['600 30px "Noto Sans Telugu"','తెలుగు'], ['700 30px "Noto Sans Telugu"','తెలుగు']
-].concat(L2.code==="hi" ? [['500 30px "Noto Sans Devanagari"','हिंदी'], ['600 30px "Noto Sans Devanagari"','हिंदी'], ['700 30px "Noto Sans Devanagari"','हिंदी']] : []).map(([f,t])=>document.fonts && document.fonts.load ? document.fonts.load(f, t).catch(()=>{}) : null));
+].concat([['500 30px "Noto Sans Devanagari"','हिंदी'], ['600 30px "Noto Sans Devanagari"','हिंदी'], ['700 30px "Noto Sans Devanagari"','हिंदी']]).map(([f,t])=>document.fonts && document.fonts.load ? document.fonts.load(f, t).catch(()=>{}) : null));
 function wrapLines(ctx, text, maxW){
   const out = [];
   String(text).split("\n").forEach(par=>{
@@ -1463,7 +1556,7 @@ function footer(ctx, W, H, line1){
   ctx.fillStyle="#EEF3FF"; rrect(ctx, 60, H-150, W-120, 96, 18); ctx.fill();
   ctx.fillStyle="#0C2266"; ctx.font='700 30px "Source Sans 3", sans-serif'; ctx.fillText(line1, 92, H-108);
   ctx.font='600 30px "IBM Plex Mono", monospace'; ctx.fillText(SITE_HOST, 92, H-70);
-  ctx.textAlign="right"; ctx.font='700 26px "Source Sans 3", "'+L2.font+'", sans-serif'; ctx.fillStyle="#12804A"; ctx.fillText("Free · English & "+L2.label, W-92, H-70); ctx.textAlign="left";
+  ctx.textAlign="right"; ctx.font='700 26px "Source Sans 3", "Noto Sans Telugu", "Noto Sans Devanagari", sans-serif'; ctx.fillStyle="#12804A"; ctx.fillText("Free · English · తెలుగు · हिंदी", W-92, H-70); ctx.textAlign="left";
 }
 async function scoreCard(r){
   await FONTS_READY();
@@ -1491,7 +1584,7 @@ async function questionCard(x, te){
   const tag = "QUESTION OF THE DAY · "+date.toUpperCase(); ctx.font='800 24px "Archivo", sans-serif';
   ctx.fillStyle="#F2B705"; rrect(ctx,60,168,ctx.measureText(tag).width+34,46,8); ctx.fill(); ctx.fillStyle="#0C2266"; ctx.fillText(tag, 77, 200);
   ctx.fillStyle="#AFC1EE"; ctx.font='500 22px "IBM Plex Mono", monospace'; ctx.fillText((x.exName+" · "+x.paper).toUpperCase(), 60, 256);
-  const qt = te && x.qt ? x.qt : x.q, opts = te && x.ot ? x.ot : x.o, fam = te? '"'+L2.font+'", "Source Sans 3", sans-serif' : '"Source Sans 3", sans-serif';
+  const qt = te && x.qt ? x.qt : x.q, opts = te && x.ot ? x.ot : x.o, fam = te? '"'+(x.l2==="hi" ? "Noto Sans Devanagari" : "Noto Sans Telugu")+'", "Source Sans 3", sans-serif' : '"Source Sans 3", sans-serif';
   // fit text: shrink font until question + options fit above the footer
   let fs = 52, qLines, oLines, total;
   for(; fs>=24; fs-=2){
@@ -1578,15 +1671,18 @@ document.addEventListener("click", e=>{
     case "topicquiz": { const k=b.dataset.key; const ids=QS.filter(q=>tkey(q)===k).map(q=>q.id); startQuiz(shuffle(ids), SUBJ[k.split("|")[0]].name+" · "+k.split("|")[1], "practice", "topic"); break; }
     case "bankmore": bankLimit+=20; { const box=$("#bankResults"); if(box) box.innerHTML=bankResults(); } break;
     case "bankclear": UI.bankQ=""; UI.bankPaper="all"; UI.bankSubj="all"; UI.bankTopic="all"; bankLimit=20; render(); break;
-    case "lang": { P.lang = b.dataset.l===L2.code? L2.code : "en"; savePrefs(); syncLang(); render(); break; }
+    case "lang": { const l = b.dataset.l; P.lang = l; savePrefs(); try{ localStorage.setItem("lwa-lang", l); }catch(_){}
+      if(!availLangs().includes(l)) toast(`${LANGS[l]} is not available for ${DATA.exam} yet. Showing English.`);
+      syncLang(); render(); break; }
+    case "qotdscroll": { const t=$("#qotd-hub"); if(t && !t.hidden) t.scrollIntoView({behavior:"smooth", block:"start"}); break; }
     case "sample": openSample(b.dataset.id); break;
     case "video": openVideo(b.dataset.id); break;
     case "closevideo": closeVideo(); break;
     case "closesample": { const d=document.getElementById("sampleDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } break; }
     case "qotdpick": { if(UI.qotdPick===undefined){ UI.qotdPick = +b.dataset.i; render(); } break; }
-    case "qotdwa": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(x) { const te = P.lang===L2.code&&!!x.qt&&(x.l2||"te")===L2.code; shareWA(challengeText(te? x.qt : x.q, x.exName, x.paper, null, qURL(x.id, x.base, x.pb), te&&x.ot? x.ot : x.o)); } break; }
+    case "qotdwa": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(x) { const te = !!x.qt&&(x.l2||"te")===P.lang; shareWA(challengeText(te? x.qt : x.q, x.exName, x.paper, null, qURL(x.id, x.base, x.pb), te&&x.ot? x.ot : x.o)); } break; }
     case "qotdimg": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(!x) break; toast("Making the image…");
-      questionCard(x, P.lang===L2.code&&!!x.qt&&(x.l2||"te")===L2.code).then(c=>shareCanvas(c, `question-of-the-day-${new Date().toISOString().slice(0,10)}.png`, challengeText(x.q, x.exName, x.paper, null, qURL(x.id, x.base, x.pb), x.o))); break; }
+      questionCard(x, !!x.qt&&(x.l2||"te")===P.lang).then(c=>shareCanvas(c, `question-of-the-day-${new Date().toISOString().slice(0,10)}.png`, challengeText(x.q, x.exName, x.paper, null, qURL(x.id, x.base, x.pb), x.o))); break; }
     case "qchal": { const q = QMAP[b.dataset.id]; if(q) shareWA(challengeText(QT(q), DATA.exam||"APPSC", PMAP[q.p].short, q.n, qURL(q.id), isMCQ(q)? OPTS(q) : null)); break; }
     case "scorewa": if(LAST) shareWA(scoreText(LAST)); break;
     case "scoreimg": if(LAST){ toast("Making your score card…"); scoreCard(LAST).then(c=>shareCanvas(c, "my-score-learnwithanil.png", scoreText(LAST))); } break;
