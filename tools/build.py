@@ -273,7 +273,7 @@ def qotd_pool(items, n):
               and all(len(o) <= 140 for o in q['o'])]
         random.Random('qotd-' + conf['id']).shuffle(el)
         base = conf['dir'] + '/' if conf['dir'] else ''
-        pools.append([dict(id=q['id'], ex=conf['short'], exName=conf['name'], base=base, paper=pshort[q['p']], l2=conf['l2']['code'],
+        pools.append([dict(id=q['id'], ex=conf['short'], exName=conf['name'], base=base, pb=conf['pb'], paper=pshort[q['p']], l2=conf['l2']['code'],
                            q=q['q'], qt=q.get('qt', ''), o=q['o'], ot=q.get('ot'), a=q['a'], w=q['w']) for q in el])
     out, i = [], 0
     while len(out) < n and any(i < len(p) for p in pools):
@@ -286,18 +286,19 @@ def qotd_pool(items, n):
 def exam_confs():
     return [
       dict(id='appsc-group-2', dir='', src='', key='appsc-g2', name='APPSC Group-II', short='Group-II', seo='APPSC Group 2',
-           slugp='appsc-group-2', papers=PAPERS, subjects=SUBJECTS, faq=FAQ, board='APPSC', l2=L2_TE,
+           slugp='appsc-group-2', papers=PAPERS, subjects=SUBJECTS, faq=FAQ, board='APPSC', l2=L2_TE, pb='/appsc-group-2/',
+           title='APPSC Group 2 PYQs – Screening & Mains Previous Question Papers with Answers (2019–2025) | Learn with Anil',
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            eyebrow='APPSC Group-II · Screening &amp; Mains · 2019–2025',
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
-           slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE,
+           slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE, pb='/appsc-group-1/',
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            title='APPSC Group 1 PYQs – Prelims Previous Question Papers with Answers (2019–2024) | Learn with Anil',
            eyebrow='APPSC Group-I · Prelims · 2019–2024',
            papers_note="Every paper uses APPSC's official final key. The 2024 key shows all four options. The 2023 and 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
       dict(id='upsc-capf', dir='upsc-capf', src='upsc-capf', key='upsc-capf', name='UPSC CAPF (AC)', short='CAPF (AC)', seo='UPSC CAPF AC',
-           slugp='upsc-capf-ac', papers=CAPF_PAPERS, subjects=CAPF_SUBJECTS, faq=FAQ_CAPF, board='UPSC', l2=L2_HI,
+           slugp='upsc-capf-ac', papers=CAPF_PAPERS, subjects=CAPF_SUBJECTS, faq=FAQ_CAPF, board='UPSC', l2=L2_HI, pb='/upsc-capf/',
            keyname="UPSC's answer keys", keyshort="UPSC's answer keys (2025: compiled from published keys)",
            title='UPSC CAPF AC PYQs – Paper I Previous Question Papers with Answers (2024–2026), English & Hindi | Learn with Anil',
            eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
@@ -394,54 +395,95 @@ def main():
                      .replace('{{TIMERS}}', timers).replace('{{HUBHREF}}', hubhref).replace('{{ROOTUP}}', up)
                      .replace('{{EXAM}}', esc(conf['name'])).replace('{{EXAMSHORT}}', esc(conf['short']))
                      .replace('{{EYEBROW}}', conf['eyebrow']))
-        if is_root:
-            site_title = 'APPSC PYQs Free – Group 1 & Group 2 Previous Question Papers with Answers | Learn with Anil'
-            site_desc = (f'Free APPSC PYQs: {grand:,} previous year questions from APPSC Group 1 and Group 2 question papers (2019–2025) '
-                         f'and UPSC CAPF (AC) 2024–2026, with official-key answers and explanations in English, Telugu and Hindi. Practise online topic-wise. '
-                         f'TGPSC, UPSC, SSC, banking and railway exams are being added.')
-            canon = SITE_URL + '/'
-        else:
-            site_title = conf['title']
-            ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
-            site_desc = (f'{total} {conf["name"]} previous year questions from {ptxt}, with answers from {conf["keyshort"]} '
-                         f'and explanations, in English and {l2["name"]}. Practise topic-wise quizzes and timed tests free.')
-            canon = f'{SITE_URL}/{prefix}'
-        ld = [
-          {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":"Learn with Anil – Previous year questions for every exam","url":SITE_URL+'/'},
-          {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"UPSC Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:anilkumarjupudi360360@gmail.com","url":SITE_URL+'/#about',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/"]},
-          {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]},
-        ]
-        if not is_root: ld = ld[1:]
-        seo = (f'<link rel="canonical" href="{canon}">\n<meta name="robots" content="index,follow">\n'
-               f'<meta property="og:type" content="website"><meta property="og:site_name" content="Learn with Anil">'
-               f'<meta property="og:title" content="{esc(site_title)}"><meta property="og:description" content="{esc(site_desc)}">'
-               f'<meta property="og:url" content="{canon}"><meta property="og:image" content="{SITE_URL}/anil.jpg">'
-               f'<meta name="twitter:card" content="summary">\n'
-               + ''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld))
+        root_title = 'APPSC PYQs Free – Group 1 & Group 2 Previous Question Papers with Answers | Learn with Anil'
+        root_desc = (f'Free APPSC PYQs: {grand:,} previous year questions from APPSC Group 1 and Group 2 question papers (2019–2025) '
+                     f'and UPSC CAPF (AC) 2024–2026, with official-key answers and explanations in English, Telugu and Hindi. Practise online topic-wise. '
+                     f'TGPSC, UPSC, SSC, banking and railway exams are being added.')
+        home_title = conf['title']
+        ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
+        home_desc = (f'{total} {conf["name"]} previous year questions from {ptxt}, with answers from {conf["keyshort"]} '
+                     f'and explanations, in English and {l2["name"]}. Practise topic-wise quizzes and timed tests free.')
+        pb = conf['pb']; basedir = '/' + prefix
+        person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"UPSC Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:anilkumarjupudi360360@gmail.com","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/"]}
+        website = {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":"Learn with Anil – Previous year questions for every exam","url":SITE_URL+'/'}
+        faqld = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]}
+        seo_name = conf['seo']
+        views = {   # view: (title, description, canonical path, indexable)
+          'papers': (f'{seo_name} Previous Question Papers with Answers – Practise Online | Learn with Anil',
+                     f'All {len(papers)} {conf["name"]} previous question papers on Learn with Anil: practise each paper online or read it with answers and explanations, free.', pb + 'papers/', True),
+          'practice': (f'{seo_name} Topic-wise Quiz – Make Your Own PYQ Test | Learn with Anil',
+                       f'Build a free quiz from {total} {conf["name"]} previous year questions: choose papers, subjects and topics, then practise or take a timed test.', pb + 'practice/', True),
+          'bank': (f'{seo_name} Question Bank – Search All {total} PYQs | Learn with Anil',
+                   f'Search every {conf["name"]} previous year question by keyword, paper or topic, with official-key answers and explanations.', pb + 'bank/', True),
+          'notes': ('Study Material 2026-27 – Crisp Notes by Jupudi Anil Kumar | Learn with Anil',
+                    'Exam-focused study material by Jupudi Anil Kumar: Crisp Notes on AP Economy and Science & Technology for APPSC Mains, with the latest 2026 data.', '/appsc-group-2/notes/', True),
+          'about': ('About Jupudi Anil Kumar – Learn with Anil',
+                    'Jupudi Anil Kumar is a civil-services educator with 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants. He built Learn with Anil to make previous-year questions free for everyone.', '/appsc-group-2/about/', True),
+          'mistakes': (f'Mistakes Notebook – {seo_name} | Learn with Anil', 'Your mistakes notebook on Learn with Anil.', pb + 'mistakes/', False),
+          'smart': (f'Smart Quiz – {seo_name} | Learn with Anil', 'Re-attempt the questions you got wrong.', pb + 'smart/', False),
+          'bookmarks': (f'Bookmarks – {seo_name} | Learn with Anil', 'Your saved questions on Learn with Anil.', pb + 'bookmarks/', False),
+          'heatmap': (f'Topic Heatmap – {seo_name} | Learn with Anil', 'Your topic-wise accuracy on Learn with Anil.', pb + 'heatmap/', False),
+        }
+        sdata = dict(data, pb=pb, qpages=True, examSeo=seo_name, homeTitle=home_title, hubTitle=root_title)
+        sjson = json.dumps(sdata, ensure_ascii=False, separators=(',', ':'))
+        import hashlib
+        dfile = f'data/{conf["key"]}-{hashlib.sha1(sjson.encode()).hexdigest()[:10]}.js'
         outdir = os.path.join(DIST, 'site', conf['dir'])
-        os.makedirs(os.path.join(outdir, 'papers'), exist_ok=True); os.makedirs(os.path.join(outdir, 'subjects'), exist_ok=True)
+        os.makedirs(os.path.join(outdir, 'data'), exist_ok=True)
+        open(os.path.join(outdir, dfile), 'w', encoding='utf-8').write('window.LWA_DATA=' + sjson + ';\n')
+        sbody = body.replace('<script type="application/json" id="lwa-data">{{DATA}}</script>', f'<script src="{dfile}"></script>')
+        assert sbody != body
+
+        def site_doc(title, desc, canon_path, ld, index=True):
+            canon = SITE_URL + canon_path
+            seo = (f'<link rel="canonical" href="{canon}">\n<meta name="robots" content="{"index,follow" if index else "noindex,follow"}">\n'
+                   f'<meta property="og:type" content="website"><meta property="og:site_name" content="Learn with Anil">'
+                   f'<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">'
+                   f'<meta property="og:url" content="{canon}"><meta property="og:image" content="{SITE_URL}/anil.jpg">'
+                   f'<meta name="twitter:card" content="summary">\n'
+                   + ''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld))
+            doc = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+                   f'<base href="{basedir}">\n'
+                   '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
+                   + fill(head, up + 'anil.jpg', title, seo, desc).replace('<meta name="claude:viewport-fit-sides" content="cover">\n', '')
+                   + '\n</head>\n<body>\n' + fill(sbody, up + 'anil.jpg', title, seo, desc) + '\n</body>\n</html>\n')
+            return site_links(doc.replace('href="{{HUBHREF}}"', 'href="/"').replace(f'href="{hubhref}"', 'href="/"'), pb)
+
+        site_pages = {}   # path under the site root -> html
         if is_root:
-            # artifact page: fragment (publisher adds the skeleton); photo inline
             os.makedirs(os.path.join(DIST, 'artifact', 'papers')); os.makedirs(os.path.join(DIST, 'artifact', 'subjects'))
-            open(os.path.join(DIST, 'artifact', 'index.html'), 'w', encoding='utf-8').write(fill(head + body, photo_uri, 'Learn with Anil', '', site_desc))
-        doc = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
-               '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
-               + fill(head, up + 'anil.jpg', site_title, seo, site_desc).replace('<meta name="claude:viewport-fit-sides" content="cover">\n', '')
-               + '\n</head>\n<body>\n' + fill(body, up + 'anil.jpg', site_title, seo, site_desc) + '\n</body>\n</html>\n')
-        open(os.path.join(outdir, 'index.html'), 'w', encoding='utf-8').write(doc)
+            open(os.path.join(DIST, 'artifact', 'index.html'), 'w', encoding='utf-8').write(fill(head + body, photo_uri, 'Learn with Anil', '', root_desc))
+            site_pages['index.html'] = site_doc(root_title, root_desc, '/', [website, person])
+        site_pages[pb.strip('/') + '/index.html'] = site_doc(home_title, home_desc, pb, [person, faqld])
+        for v, (t, d, cp, ix) in views.items():
+            site_pages[pb.strip('/') + f'/{v}/index.html'] = site_doc(t, d, cp, [], ix and cp.startswith(pb))
+        for rel, html_ in site_pages.items():
+            fp = os.path.join(DIST, 'site', rel); os.makedirs(os.path.dirname(fp), exist_ok=True)
+            open(fp, 'w', encoding='utf-8').write(html_)
+        all_pages[pb.lstrip('/')] = None
+        for v, (t, d, cp, ix) in views.items():
+            if ix and cp.startswith(pb): all_pages[cp.lstrip('/')] = None
+        os.makedirs(os.path.join(outdir, 'papers'), exist_ok=True); os.makedirs(os.path.join(outdir, 'subjects'), exist_ok=True)
         # crawlable pages per paper and per subject
         pages = build_static(conf, papers, subjects, questions, subj)
         for rel, content in pages.items():
             open(os.path.join(outdir, rel), 'w', encoding='utf-8').write(content)
             if is_root: open(os.path.join(DIST, 'artifact', rel), 'w', encoding='utf-8').write(content)
-        if not is_root: all_pages[prefix] = None
         for rel in pages: all_pages[prefix + rel] = None
-        print(f'  {conf["name"]}: {total} questions, {len(pages)} static pages')
+        # one page per question
+        qpages = question_pages(conf, papers, questions, subj)
+        qdir = os.path.join(DIST, 'site', pb.strip('/'), 'q'); os.makedirs(qdir, exist_ok=True)
+        for rel, content in qpages.items():
+            open(os.path.join(DIST, 'site', pb.strip('/'), rel), 'w', encoding='utf-8').write(content)
+            all_pages[pb.lstrip('/') + rel] = None
+        print(f'  {conf["name"]}: {total} questions, {len(pages)} static pages, {len(qpages)} question pages, {len(site_pages)} app pages')
 
     # one crawlable page listing every APPSC paper (the page people land on from "APPSC PYQs" searches)
     hubrel = 'appsc-pyqs.html'
     open(os.path.join(DIST, 'site', hubrel), 'w', encoding='utf-8').write(appsc_pyqs_page(loaded, grand))
     all_pages = {hubrel: None, **all_pages}
+
+    open(os.path.join(DIST, 'site', '404.html'), 'w', encoding='utf-8').write(not_found_page())
 
     # sitemap + robots (site only)
     today = date.today().isoformat()
@@ -486,6 +528,21 @@ def exam_terms(e, cat):
     if e['cat'] == 'tg': words += ['tspsc', 'tgpsc', 'telangana']
     if e['cat'] == 'ap': words += ['appsc', 'andhra']
     return ' '.join(w.lower() for w in words if w)
+
+
+ROUTE_RE = r'(exams|exam/[\w-]+|home|appsc-group-2|papers|practice|quiz|result|bank|mistakes|smart|bookmarks|heatmap|about|join|notes)'
+
+
+def site_links(html_, pb):
+    """On the website every view has its own address: turn in-app links such as #bank into /appsc-group-1/bank/."""
+    def to(v):
+        if v == 'exams': return '/'
+        if v.startswith('exam/'): return f'/{v}/'
+        if v == 'home': return pb
+        if v == 'appsc-group-2': return '/appsc-group-2/'
+        return f'{pb}{v}/'
+    html_ = re.sub(r'href="\.\./#(exams|exam/[\w-]+)"', lambda m: f'href="{to(m.group(1))}"', html_)
+    return re.sub(r'href="#' + ROUTE_RE + '"', lambda m: f'href="{to(m.group(1))}"', html_)
 
 
 def live_href(e):
@@ -630,6 +687,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
     ename = ename or (conf['name'] if conf else 'APPSC Group-II')
     rootup = '../' * (rel_depth + (1 if conf and conf.get('dir') else 0))
     up = '../' * rel_depth
+    pb = conf['pb'] if conf else '/appsc-group-2/'
     board = conf['board'] if conf else 'APPSC'
     gf = conf['l2']['gf'] if conf else ''
     if board == 'APPSC':
@@ -658,20 +716,21 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
-<header><div class="wrap"><a href="{up}index.html#home">Learn with Anil · {nw(ename)} PYQs</a><a href="{up}index.html#practice">Practise online →</a></div></header>
+<header><div class="wrap"><a href="{pb if conf else '/'}">Learn with Anil · {nw(ename)} PYQs</a><a href="{pb}practice/">Practise online →</a></div></header>
 <main class="wrap">
 <h1>{nw(h1)}</h1>
 <p class="lede">{lede}</p>
 {body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="{rootup}index.html#home">APPSC Group-II</a> · <a href="{rootup}upsc-capf/">UPSC CAPF (AC)</a> · <a href="{rootup}index.html#exams">All exams</a></p>{foot}</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/">All exams</a></p>{foot}</div></footer>
 </body>
 </html>
 """
 
 
-def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE):
-    parts = [f'<li class="q" id="q{q["n"]}"><div class="meta">{esc(num_label)} · {esc(subj[q["s"]][1])} · {esc(q["t"])}</div>',
+def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None):
+    label = f'<a href="{qhref}">{esc(num_label)}</a>' if qhref else esc(num_label)
+    parts = [f'<li class="q" id="q{q["n"]}"><div class="meta">{label} · {esc(subj[q["s"]][1])} · {esc(q["t"])}</div>',
              f'<p>{esc(q["q"])}</p>']
     if q.get('img'):
         parts.append(f'<img src="{q["img"]}" alt="Figure for question {q["n"]}" loading="lazy">')
@@ -704,7 +763,7 @@ def appsc_pyqs_page(loaded, grand):
     secs = []
     for conf, papers, questions in sorted(loaded, key=lambda x: x[0]['short']):   # Group-I first, then Group-II
         base = conf['dir'] + '/' if conf['dir'] else ''
-        home = base if base else 'index.html#home'
+        home = conf['pb']
         subj = {s[0]: s for s in conf['subjects']}
         scount = {}
         for q in questions: scount[q['s']] = scount.get(q['s'], 0) + 1
@@ -753,10 +812,10 @@ def build_static(conf, papers, subjects, questions, subj):
         for q in qs: subs.setdefault(q['s'], 0); subs[q['s']] += 1
         toc = '<nav class="toc">' + ''.join(
             f'<a href="../subjects/{slugp}-{subj[s][2]}-pyqs.html">{esc(subj[s][1])} ({c})</a>' for s, c in subs.items()) + '</nav>'
-        body = (f'<a class="cta" href="../index.html#papers">Practise this paper online</a>'
-                f'<a class="cta alt" href="../index.html#practice">Make a topic-wise quiz</a>'
+        body = (f'<a class="cta" href="{conf["pb"]}papers/">Practise this paper online</a>'
+                f'<a class="cta alt" href="{conf["pb"]}practice/">Make a topic-wise quiz</a>'
                 f'<h2>Subjects in this paper</h2>{toc}<h2>All {len(qs)} questions</h2><ol class="qs">'
-                + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2']) for q in qs) + '</ol>')
+                + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html') for q in qs) + '</ol>')
         held = f'{p["notif"]}, held on {p["held"]}' if conf['board'] == 'APPSC' else f'Held on {p["held"]} ({p["notif"].replace(" · ", ", ")})'
         lede = esc(f'{p["blurb"]} {held}. {fmt}, plus a short explanation for every question.'
                    + (f' Each question is shown in English and {conf["l2"]["name"]}, as printed.' if conf['board'] != 'APPSC' else ''))
@@ -772,19 +831,79 @@ def build_static(conf, papers, subjects, questions, subj):
         title = f'{seo} {s["name"]} PYQs – Previous Year Questions with Answers | Learn with Anil'
         desc = (f'{len(qs)} {name} {s["name"]} previous year questions from {", ".join(sorted({pmap[q["p"]]["short"] for q in qs}))}, '
                 f'arranged topic-wise with official answers and explanations.')
-        body = [f'<a class="cta" href="../index.html#practice">Practise {esc(s["name"])} online</a>']
+        body = [f'<a class="cta" href="{conf["pb"]}practice/">Practise {esc(s["name"])} online</a>']
         tops = {}
         for q in qs: tops.setdefault(q['t'], []).append(q)
         body.append('<nav class="toc">' + ''.join(f'<a href="#t{i}">{esc(t)} ({len(tops[t])})</a>' for i, t in enumerate(s['topics']) if t in tops) + '</nav>')
         for i, t in enumerate(s['topics']):
             if t not in tops: continue
             body.append(f'<h2 id="t{i}">{esc(t)}</h2><ol class="qs">' + ''.join(
-                q_html(q, pmap[q['p']]['short'], f'{pmap[q["p"]]["short"]} · Q{q["n"]}', subj, conf['l2']) for q in tops[t]) + '</ol>')
+                q_html(q, pmap[q['p']]['short'], f'{pmap[q["p"]]["short"]} · Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html') for q in tops[t]) + '</ol>')
         lede = esc(f'Every {s["name"]} question asked in the {name} papers on this site, grouped by topic. '
                    f'Answers come from {conf["keyshort"]}; each has a short explanation.')
         pages[rel] = static_page(1, title, desc, can, f'{name} {s["name"]} PYQs', lede, ''.join(body),
                                  home_crumbs + [(s['name'], can)], conf)
     return pages
+
+
+def question_pages(conf, papers, questions, subj):
+    """One crawlable page per question (q/<id>.html in the exam's folder): question, options, answer, explanation, both languages."""
+    pages = {}
+    pmap = {p['id']: p for p in papers}
+    by_p = {}
+    for q in questions: by_p.setdefault(q['p'], []).append(q)
+    pb, l2 = conf['pb'], conf['l2']
+    sdir = '/' + (conf['dir'] + '/' if conf['dir'] else '')
+    depth = 1 if conf['dir'] else 2
+    for pid, qs in by_p.items():
+        p = pmap[pid]
+        paper_url = f'{sdir}papers/{p["slug"]}.html'
+        for i, q in enumerate(qs):
+            rel = f'q/{q["id"]}.html'
+            can = SITE_URL + pb + rel
+            text = re.sub(r'\s+', ' ', q['q']).strip()
+            short = text if len(text) <= 80 else text[:78].rsplit(' ', 1)[0] + '…'
+            title = f'{short} – {p["short"]} Q{q["n"]} | Learn with Anil'
+            desc = (f'{p["title"]}, question {q["n"]}: {text[:140].rsplit(" ", 1)[0]}… '
+                    f'Answer from {p.get("key") or conf["keyname"]}, with explanation, in English and {l2["name"]}.')
+            prev_q, next_q = (qs[i - 1] if i else None), (qs[i + 1] if i + 1 < len(qs) else None)
+            nav = ('<nav class="toc">'
+                   + (f'<a href="{prev_q["id"]}.html">← Q{prev_q["n"]}</a>' if prev_q else '')
+                   + (f'<a href="{next_q["id"]}.html">Q{next_q["n"]} →</a>' if next_q else '')
+                   + f'<a href="{paper_url}">All questions of this paper</a></nav>')
+            body = (f'<ol class="qs">{q_html(q, p["short"], f"{p["short"]} · Q{q["n"]}", subj, l2)}</ol>'
+                    f'<p><a class="cta" href="{pb}?q={q["id"]}">Answer it in the practice app</a>'
+                    f'<a class="cta alt" href="{pb}practice/">Make a topic-wise quiz</a></p>' + nav)
+            lede = esc(f'Question {q["n"]} of the {p["title"]} ({p["held"]}). Try it first, then open the answer and explanation.')
+            crumbs = [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), (p['title'], SITE_URL + paper_url), (f'Q{q["n"]}', can)]
+            pages[rel] = static_page(depth, title, desc, can, f'{p["title"]} · Question {q["n"]}', lede, body, crumbs, conf)
+    return pages
+
+
+def not_found_page():
+    """GitHub Pages serves this for any unknown address. Practice-app links such as /upsc-capf/q/c2026a-3/ are sent to the app."""
+    return """<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found | Learn with Anil</title><meta name="robots" content="noindex">
+<script>
+(function(){
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/"], base = "/";
+  for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
+  var rest = p.slice(base.length);
+  var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);
+  if (ok) { try { sessionStorage.setItem("lwa-path", p); } catch (e) {} location.replace(base); }
+})();
+</script>
+<style>body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#0D1830;background:#F3F6FB}
+@media (prefers-color-scheme:dark){body{color:#E5ECF8;background:#0A1020}a{color:#9DB7FF}}
+main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 0 8px}a{color:#1440B8;font-weight:700}li{margin:6px 0}</style>
+</head><body><main>
+<h1>This page does not exist</h1>
+<p>The address may be mistyped, or the page has moved. Try one of these:</p>
+<ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
+<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li></ul>
+</main></body></html>
+"""
 
 
 if __name__ == '__main__':

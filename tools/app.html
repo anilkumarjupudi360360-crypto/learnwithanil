@@ -606,7 +606,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 <script>
 (function(){
 "use strict";
-const DATA = JSON.parse(document.getElementById("lwa-data").textContent);
+const DATA = window.LWA_DATA || JSON.parse(document.getElementById("lwa-data").textContent);
 const PHOTO = "{{PHOTO}}";
 const EKEY = DATA.key || "appsc-g2", KEY = "lwa-"+EKEY+"-v1", PKEY = "lwa-"+EKEY+"-prefs-v1";
 const LET = ["A","B","C","D"];
@@ -697,21 +697,53 @@ const band = acc=>acc===null? "none" : acc>=75? "good" : acc>=50? "warn" : "bad"
 /* ---------- routing ---------- */
 const VIEWS = ["exams","exam","home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes"];
 let current = "";
-function go(v){ if(location.hash.slice(1)!==v){ location.hash=v; } else { render(); } }
+// On the website each view has its own address (/appsc-group-1/bank/); in a single-file copy the old #bank links are used.
+const PB = DATA.pb || "", PATHMODE = !!PB && /^https?:$/.test(location.protocol), HUBP = "/";
+const ROUTES = new Set(["home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes","exams"]);
+const isRoute = h => ROUTES.has(h) || /^(exam|q)\/[\w-]+$/.test(h) || h==="appsc-group-2";
+function pathOf(v){
+  if(v==="exams" || v==="") return HUBP;
+  if(/^exam\//.test(v)) return HUBP + v + "/";
+  if(v==="home" || v==="appsc-group-2") return PB;
+  return PB + v + "/";
+}
+function routeFromPath(p){   // the view a path on this site belongs to, or null if it is another page
+  p = decodeURI(p).replace(/index\.html$/,"");
+  if(p.indexOf(PB)===0){ const r = p.slice(PB.length).replace(/\/+$/,""); return r==="" ? "home" : (isRoute(r) ? r : null); }
+  if(DATA.hub){ if(p===HUBP) return "exams"; const m = p.match(/^\/(exam\/[\w-]+)\/?$/); if(m) return m[1]; }
+  return null;
+}
+const href = v => PATHMODE ? pathOf(v) : "#" + v;
+function go(v, replace){
+  if(!PATHMODE){ if(location.hash.slice(1)!==v){ location.hash=v; } else { render(); } return; }
+  const u = pathOf(v);
+  if(!DATA.hub && (v==="exams" || /^exam\//.test(v))){ location.href = u; return; }   // the exam list is another page
+  if(location.pathname!==u || location.search || location.hash) history[replace? "replaceState" : "pushState"](null, "", u);
+  render();
+}
+function curRoute(){
+  if(!PATHMODE) return location.hash.slice(1);
+  const r = routeFromPath(location.pathname);
+  return r===null ? (DATA.hub ? "exams" : "home") : r;
+}
+function fixLinks(root){   // in-app #links become real addresses (for new tabs and search engines)
+  if(!PATHMODE) return;
+  (root||document).querySelectorAll('a[href^="#"]').forEach(a=>{ const h = a.getAttribute("href").slice(1); if(isRoute(h)) a.setAttribute("href", pathOf(h)); });
+}
 function route(){
-  let v = location.hash.slice(1);
+  let v = curRoute();
   if(v==="appsc-group-2" && DATA.hub) v = "home";
-  if(!DATA.hub && (v==="exams" || v==="exam" || /^exam\//.test(v))){ location.href = "../#"+v; return "home"; }   // the exam list lives on the start page
+  if(!DATA.hub && (v==="exams" || v==="exam" || /^exam\//.test(v))){ location.href = PATHMODE ? pathOf(v==="exam" ? "exams" : v) : "../#"+v; return "home"; }   // the exam list lives on the start page
   const de = v.match(/^exam\/([\w-]+)$/);   // one exam's page: #exam/ssc-cgl
   if(de){ const e = EXMAP[de[1]];
     if(e && e.live && e.live.includes("/")){ location.href = e.live; return "exams"; }
-    if(e && e.live){ history.replaceState(null, "", "#"+e.live); v = e.live; } else if(e){ UI.exam = e.id; v = "exam"; } else v = "exams"; }
+    if(e && e.live){ history.replaceState(null, "", PATHMODE ? pathOf(e.live) : "#"+e.live); v = e.live; } else if(e){ UI.exam = e.id; v = "exam"; } else v = "exams"; }
   else if(v==="exam") v = UI.exam ? "exam" : "exams";
   const dq = v.match(/^q\/([\w-]+)$/);   // shareable link to one question: #q/m2025p2-117
   if(dq && QMAP[dq[1]]){
     const q = QMAP[dq[1]], ids = QS.filter(x=>x.p===q.p).map(x=>x.id), k = ids.indexOf(q.id);
     QZ = {title: PMAP[q.p].title, mode:"practice", source:"paper", ids: ids.slice(k).concat(ids.slice(0,k)), i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit:0};
-    UI.confirmSubmit = false; history.replaceState(null, "", "#quiz"); v = "quiz";
+    UI.confirmSubmit = false; history.replaceState(null, "", PATHMODE ? pathOf("quiz") : "#quiz"); v = "quiz";
   }
   if(!VIEWS.includes(v)) v = DATA.hub ? "exams" : "home";
   if(v==="quiz" && !QZ) v = LAST? "result" : "practice";
@@ -737,8 +769,28 @@ function render(){
   }
   if(v==="quiz") startTimer();
   if(changed) window.scrollTo(0,0);
+  fixLinks(); document.title = viewTitle(v);
 }
-window.addEventListener("hashchange", render);
+const BASE_TITLE = document.title;
+function viewTitle(v){
+  if(v==="exams" && DATA.hubTitle) return DATA.hubTitle;
+  if((v==="home" || v==="exam") && DATA.homeTitle) return DATA.homeTitle;
+  const x = DATA.examSeo || DATA.examShort || "";
+  const t = {papers:`${x} Previous Question Papers`, practice:`Create a ${x} Quiz`, bank:`${x} Question Bank`, mistakes:"Mistakes Notebook", smart:"Smart Quiz",
+             bookmarks:"Bookmarks", heatmap:"Topic Heatmap", about:"About Jupudi Anil Kumar", notes:"Study Material 2026-27", quiz:"Quiz", result:"Your Result", join:"Your Details"}[v];
+  return t ? `${t} | Learn with Anil` : BASE_TITLE;
+}
+window.addEventListener("hashchange", ()=>{ if(PATHMODE){ const h = location.hash.slice(1); if(isRoute(h)){ history.replaceState(null, "", pathOf(h)); } else return; } render(); });
+window.addEventListener("popstate", ()=>{ if(PATHMODE) render(); });
+document.addEventListener("click", e=>{   // move between views without reloading the page
+  if(!PATHMODE || e.defaultPrevented || e.button!==0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const a = e.target.closest && e.target.closest("a[href]"); if(!a || (a.target && a.target!=="_self") || a.hasAttribute("download")) return;
+  const raw = a.getAttribute("href");
+  if(raw.charAt(0)==="#"){ const h = raw.slice(1); if(isRoute(h)){ e.preventDefault(); go(h); } return; }
+  let u; try{ u = new URL(a.href, location.href); }catch(_){ return; }
+  if(u.origin!==location.origin || u.search) return;
+  const v = routeFromPath(u.pathname); if(v!==null){ e.preventDefault(); go(v); }
+});
 
 /* ---------- shared pieces ---------- */
 function bmBtn(id){ const on=!!S.bm[id]; return `<button class="iconbtn" type="button" data-act="bm" data-id="${id}" aria-pressed="${on}" title="${on?"Remove bookmark":"Bookmark this question"}">${on?ICON.bmOn:ICON.bm}<span>${on?"Saved":"Save"}</span></button>`; }
@@ -1306,7 +1358,7 @@ const IMG_ICON = '<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="curren
 const ROOTUP = DATA.base ? "../" : "";
 const SITE_HOST = (DATA.site||"https://learnwithanil.in").replace(/^https?:\/\//,"");
 function shareWA(text){ window.open("https://wa.me/?text="+encodeURIComponent(text), "_blank", "noopener"); }
-function qURL(id, base){ return `${DATA.site}/${base==null? (DATA.base||"") : base}#q/${id}`; }
+function qURL(id, base, pb){ return DATA.qpages ? `${DATA.site}${pb==null? PB : pb}q/${id}.html` : `${DATA.site}/${base==null? (DATA.base||"") : base}#q/${id}`; }
 function chalBtn(q){ return `<button class="iconbtn wa" type="button" data-act="qchal" data-id="${q.id}" title="Send this question to a friend on WhatsApp">${WA_ICON}<span>Challenge a friend</span></button>`; }
 function excerpt(t, n){ t = String(t).replace(/\s+/g," ").trim(); return t.length>n ? t.slice(0,n-1).replace(/\s\S*$/,"")+"…" : t; }
 function challengeText(text, exam, paper, n, url, opts){
@@ -1322,7 +1374,7 @@ function qotdItem(scope){
   if(!list.length) return null;
   return list[((istDay() % list.length) + list.length) % list.length];
 }
-function qotdHref(x){ return (x.base===(DATA.base||"")) ? `#q/${x.id}` : `${ROOTUP}${x.base}#q/${x.id}`; }
+function qotdHref(x){ if(PATHMODE) return (x.pb||PB)===PB ? pathOf("q/"+x.id) : `${x.pb}?q=${x.id}`; return (x.base===(DATA.base||"")) ? `#q/${x.id}` : `${ROOTUP}${x.base}#q/${x.id}`; }
 function renderQotd(sel, scope){
   const box = $(sel); if(!box) return;
   const x = qotdItem(scope); if(!x){ box.hidden = true; return; }
@@ -1505,9 +1557,9 @@ document.addEventListener("click", e=>{
     case "closevideo": closeVideo(); break;
     case "closesample": { const d=document.getElementById("sampleDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } break; }
     case "qotdpick": { if(UI.qotdPick===undefined){ UI.qotdPick = +b.dataset.i; render(); } break; }
-    case "qotdwa": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(x) { const te = P.lang===L2.code&&!!x.qt&&(x.l2||"te")===L2.code; shareWA(challengeText(te? x.qt : x.q, x.exName, x.paper, null, qURL(x.id, x.base), te&&x.ot? x.ot : x.o)); } break; }
+    case "qotdwa": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(x) { const te = P.lang===L2.code&&!!x.qt&&(x.l2||"te")===L2.code; shareWA(challengeText(te? x.qt : x.q, x.exName, x.paper, null, qURL(x.id, x.base, x.pb), te&&x.ot? x.ot : x.o)); } break; }
     case "qotdimg": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(!x) break; toast("Making the image…");
-      questionCard(x, P.lang===L2.code&&!!x.qt&&(x.l2||"te")===L2.code).then(c=>shareCanvas(c, `question-of-the-day-${new Date().toISOString().slice(0,10)}.png`, challengeText(x.q, x.exName, x.paper, null, qURL(x.id, x.base), x.o))); break; }
+      questionCard(x, P.lang===L2.code&&!!x.qt&&(x.l2||"te")===L2.code).then(c=>shareCanvas(c, `question-of-the-day-${new Date().toISOString().slice(0,10)}.png`, challengeText(x.q, x.exName, x.paper, null, qURL(x.id, x.base, x.pb), x.o))); break; }
     case "qchal": { const q = QMAP[b.dataset.id]; if(q) shareWA(challengeText(QT(q), DATA.exam||"APPSC", PMAP[q.p].short, q.n, qURL(q.id), isMCQ(q)? OPTS(q) : null)); break; }
     case "scorewa": if(LAST) shareWA(scoreText(LAST)); break;
     case "scoreimg": if(LAST){ toast("Making your score card…"); scoreCard(LAST).then(c=>shareCanvas(c, "my-score-learnwithanil.png", scoreText(LAST))); } break;
@@ -1576,7 +1628,17 @@ function bindReset(){ $("#resetBtn").onclick = ()=>{
 bindReset();
 
 /* ---------- boot ---------- */
-function start(data){ if(data && data.QZ) QZ = data.QZ; if(data && data.LAST) LAST = data.LAST; syncLang(); render(); }
+function start(data){
+  if(data && data.QZ) QZ = data.QZ; if(data && data.LAST) LAST = data.LAST;
+  if(PATHMODE){
+    let red = null; try{ red = sessionStorage.getItem("lwa-path"); sessionStorage.removeItem("lwa-path"); }catch(_){}
+    if(red && routeFromPath(red)!==null) history.replaceState(null, "", red);
+    const qp = new URLSearchParams(location.search).get("q");
+    if(qp && QMAP[qp]) history.replaceState(null, "", pathOf("q/"+qp));
+    const h = location.hash.slice(1); if(h && isRoute(h)) history.replaceState(null, "", pathOf(h));
+  }
+  syncLang(); render();
+}
 try{ window.claude?.hot?.snapshot?.(()=>({QZ, LAST})); }catch(_){}
 const hot = window.claude?.hot;
 if(hot && hot.ready) hot.ready(start); else start(hot?.data ?? {});

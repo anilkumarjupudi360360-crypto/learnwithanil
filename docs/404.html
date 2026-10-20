@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found | Learn with Anil</title><meta name="robots" content="noindex">
+<script>
+(function(){
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/"], base = "/";
+  for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
+  var rest = p.slice(base.length);
+  var ok = base === "/" ? /^exam\/[\w-]+\/?$/.test(rest) : /^(q\/[\w-]+|quiz|result|join)\/?$/.test(rest);
+  if (ok) { try { sessionStorage.setItem("lwa-path", p); } catch (e) {} location.replace(base); }
+})();
+</script>
+<style>body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#0D1830;background:#F3F6FB}
+@media (prefers-color-scheme:dark){body{color:#E5ECF8;background:#0A1020}a{color:#9DB7FF}}
+main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 0 8px}a{color:#1440B8;font-weight:700}li{margin:6px 0}</style>
+</head><body><main>
+<h1>This page does not exist</h1>
+<p>The address may be mistyped, or the page has moved. Try one of these:</p>
+<ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
+<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li></ul>
+</main></body></html>

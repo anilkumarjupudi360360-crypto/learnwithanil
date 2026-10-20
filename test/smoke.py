@@ -1,8 +1,25 @@
-import asyncio, sys, os
+import asyncio, sys, os, threading, functools
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-URL = 'file://' + os.path.join(ROOT, 'dist', 'site', 'index.html')
+SITE = os.path.join(ROOT, 'dist', 'site')
 SHOTS = os.path.join(ROOT, 'test')
+
+
+class Pages(SimpleHTTPRequestHandler):
+    """Serves dist/site like GitHub Pages: folder/ -> folder/index.html, unknown address -> 404.html with status 404."""
+    def log_message(self, *a): pass
+    def send_error(self, code, message=None, explain=None):
+        if code == 404:
+            body = open(os.path.join(SITE, '404.html'), 'rb').read()
+            self.send_response(404); self.send_header('Content-Type', 'text/html; charset=utf-8'); self.send_header('Content-Length', str(len(body))); self.end_headers()
+            self.wfile.write(body); return
+        super().send_error(code, message, explain)
+
+
+srv = ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(Pages, directory=SITE))
+threading.Thread(target=srv.serve_forever, daemon=True).start()
+URL = f'http://127.0.0.1:{srv.server_address[1]}/'
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
@@ -22,7 +39,10 @@ async def main():
             await pg.screenshot(path=f'{SHOTS}/hub-{name}.png', full_page=False)
             sw = await pg.evaluate('document.documentElement.scrollWidth');
             if sw > width: errors.append(f'{name}: horizontal overflow {sw}>{width}')
-            await pg.click('#hub-static a.exam.live[href="#home"]'); await pg.wait_for_timeout(150)
+            await pg.evaluate('window.__same = 1')
+            await pg.click('#hub-static a.exam.live[href="/appsc-group-2/"]'); await pg.wait_for_timeout(150)
+            assert await pg.evaluate('location.pathname') == '/appsc-group-2/', 'Group-II tile should open /appsc-group-2/'
+            assert await pg.evaluate('window.__same === 1'), 'moving between views should not reload the page'
             assert await pg.evaluate('!document.getElementById("home-static").hidden'), 'the live Group-II tile should open the Group-II page'
             if name == 'desk': await pg.screenshot(path=f'{SHOTS}/home-{name}.png', full_page=False)
             for v in ['exams','exam/ssc-cgl','home','papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','join','notes']:
@@ -50,7 +70,7 @@ async def main():
                 # builder + timed test
                 await pg.evaluate('location.hash="practice"'); await pg.wait_for_timeout(150)
                 await pg.click('[data-act="mode"][data-mode="test"]'); await pg.click('[data-act="start"]'); await pg.wait_for_timeout(150)
-                assert await pg.evaluate('location.hash') == '#join', 'timed test should ask for student details first'
+                assert (await pg.evaluate('location.pathname')).endswith('/join/'), 'timed test should ask for student details first'
                 await pg.fill('[name=name]', 'Test Student'); await pg.fill('[name=phone]', '9876543210'); await pg.fill('[name=email]', 'test@example.com')
                 await pg.fill('[name=district]', 'Guntur'); await pg.check('[name=ok]'); await pg.click('#joinForm button[type=submit]'); await pg.wait_for_timeout(200)
                 await pg.screenshot(path=f'{SHOTS}/quiz-test.png')
@@ -83,13 +103,13 @@ async def main():
                 await pg.screenshot(path=f'{SHOTS}/home-phone.png', full_page=False)
         # exams in their own folders: APPSC Group-I (Telugu) and UPSC CAPF (Hindi)
         for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group-I', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi')]:
-            fp = os.path.join(ROOT, 'dist', 'site', sub, 'index.html')
-            if not os.path.exists(fp): continue
+            if not os.path.exists(os.path.join(SITE, sub, 'index.html')): continue
+            fp = URL + sub + '/'
             for width, name in [(1280, 'desk'), (390, 'phone')]:
                 pg = await b.new_page(viewport={'width': width, 'height': 900})
                 pg.on('pageerror', lambda e, tag=tag: errors.append(f'{tag} pageerror: {e}'))
                 pg.on('console', lambda m, tag=tag: errors.append(f'{tag} console {m.type}: {m.text}') if m.type == 'error' and 'fonts.g' not in m.text and 'ERR_TUNNEL' not in m.text else None)
-                await pg.goto('file://' + fp); await pg.wait_for_timeout(500)
+                await pg.goto(fp); await pg.wait_for_timeout(500)
                 assert await pg.evaluate('!document.getElementById("home-static").hidden'), f'{tag} page should open on its home'
                 assert h1word in await pg.inner_text('#home-static h1')
                 assert await pg.locator(f'[data-act="lang"][data-l="{l2}"]').count() == 1, f'{tag}: {l2} language button missing'
@@ -113,9 +133,38 @@ async def main():
         # static page
         pg = await b.new_page(viewport={'width': 390, 'height': 900})
         pg.on('pageerror', lambda e: errors.append(f'static pageerror: {e}'))
-        await pg.goto('file://' + os.path.join(ROOT, 'dist', 'site', 'papers', 'appsc-group-2-screening-test-2024-question-paper-with-answers.html'))
+        await pg.goto(URL + 'papers/appsc-group-2-screening-test-2024-question-paper-with-answers.html')
         sw = await pg.evaluate('document.documentElement.scrollWidth')
         if sw > 390: errors.append(f'static page overflow {sw}')
+        # real addresses: direct loads, old #links, deep links through 404.html, question pages, back button
+        pg = await b.new_page(viewport={'width': 1280, 'height': 900})
+        pg.on('pageerror', lambda e: errors.append(f'paths pageerror: {e}'))
+        async def view():
+            return await pg.evaluate("""(()=>{ if(!document.getElementById('hub-static').hidden) return 'exams'; if(!document.getElementById('home-static').hidden) return 'home';
+                const h = document.querySelector('#view h1, #view h2'); return h ? h.innerText : '?'; })()""")
+        checks = [('appsc-group-1/bank/', '/appsc-group-1/bank/', 'Search'), ('upsc-capf/practice/', '/upsc-capf/practice/', 'quiz'),
+                  ('#home', '/appsc-group-2/', 'home'), ('appsc-group-1/#papers', '/appsc-group-1/papers/', 'question papers'),
+                  ('upsc-capf/q/c2026a-3/', '/upsc-capf/quiz/', 'Raghu'), ('upsc-capf/?q=c2026a-4', '/upsc-capf/quiz/', 'Ol Chiki'),
+                  ('exam/ssc-cgl/', '/exam/ssc-cgl/', 'CGL'), ('appsc-group-2/papers/', '/appsc-group-2/papers/', 'question papers')]
+        for path, want, word in checks:
+            await pg.goto(URL + path); await pg.wait_for_timeout(700)
+            got = await pg.evaluate('location.pathname')
+            txt = await pg.evaluate('document.body.innerText')
+            if got != want: errors.append(f'paths: {path} ended at {got}, wanted {want}')
+            elif word not in (await view()) and word not in txt: errors.append(f'paths: {path} did not show "{word}"')
+        await pg.goto(URL + 'appsc-group-1/'); await pg.wait_for_timeout(500)
+        await pg.click('#nav a[data-v="bank"]'); await pg.wait_for_timeout(200)
+        if await pg.evaluate('location.pathname') != '/appsc-group-1/bank/': errors.append('paths: nav click did not change the address')
+        await pg.go_back(); await pg.wait_for_timeout(300)
+        if await pg.evaluate('location.pathname') != '/appsc-group-1/' or await view() != 'home': errors.append('paths: back button did not return home')
+        await pg.goto(URL + 'upsc-capf/q/c2026a-3.html'); await pg.wait_for_timeout(300)
+        if 'Raghu Rai' not in await pg.inner_text('main'): errors.append('question page: text missing')
+        await pg.click('text=Answer it in the practice app'); await pg.wait_for_timeout(800)
+        if await pg.evaluate('location.pathname') != '/upsc-capf/quiz/': errors.append('question page: practice link did not open the quiz')
+        r = await pg.goto(URL + 'no-such-page/'); await pg.wait_for_timeout(200)
+        if r.status != 404 or 'does not exist' not in await pg.inner_text('body'): errors.append('404 page missing')
+        await pg.close()
         await b.close()
+        srv.shutdown()
         print('ERRORS:', errors if errors else 'none')
 asyncio.run(main())
