@@ -127,6 +127,33 @@ CAPF_SUBJECTS = [
   ('men', 'General Mental Ability', 'general-mental-ability', ['Numbers & Series', 'Reasoning', 'Arithmetic', 'Data Interpretation']),
 ]
 
+# ---------- Telangana Police (TSLPRB, now TGPRB): SI and Constable Preliminary Written Tests ----------
+TS_SI_PAPERS = [
+  dict(id='s2022', file='ts-si-2022-prelims.txt', year=2022, stage='Preliminary Written Test', short='SI Prelims 2022',
+       title='TSLPRB SI Preliminary Written Test 2022', notif='SCT SI (Civil) & equivalent · booklet A', held='7 August 2022',
+       key="TSLPRB's final key", fmt='mcq', slug='ts-police-si-prelims-2022-question-paper-with-answers',
+       blurb='Arithmetic & Test of Reasoning / Mental Ability (Q1–100) and General Studies (Q101–200): 200 questions, 200 marks, 3 hours.'),
+]
+TS_PC_PAPERS = [
+  dict(id='p2022', file='ts-pc-2022-prelims.txt', year=2022, stage='Preliminary Written Test', short='PC Prelims 2022',
+       title='TSLPRB Police Constable Preliminary Written Test 2022', notif='SCT PC (Civil) & equivalent · booklet A', held='28 August 2022',
+       key="TSLPRB's final key", fmt='mcq', slug='ts-police-constable-prelims-2022-question-paper-with-answers',
+       blurb='English, Arithmetic, Reasoning / Mental Ability and General Studies: 200 questions, 200 marks, 3 hours.'),
+]
+TS_SUBJECTS = [
+  ('ari', 'Arithmetic', 'arithmetic', ['Numbers & Simplification', 'Percentage, Profit & Loss', 'Ratio, Average & Ages', 'Interest', 'Time & Work', 'Time, Speed & Distance', 'Mensuration', 'Data Interpretation']),
+  ('rea', 'Reasoning & Mental Ability', 'reasoning-mental-ability', ['Series & Analogies', 'Coding-Decoding', 'Blood Relations & Directions', 'Calendar & Clocks', 'Venn Diagrams & Syllogisms', 'Puzzles & Arrangements', 'Non-verbal Reasoning', 'Logical Reasoning']),
+  ('eng', 'English', 'english', ['Grammar', 'Vocabulary', 'Comprehension']),
+  ('sci', 'General Science', 'general-science', ['Physics', 'Chemistry', 'Biology & Health', 'Science & Technology']),
+  ('ih',  'Indian History & Culture', 'indian-history', ['Ancient India', 'Medieval India', 'Modern India & Freedom Struggle', 'Art & Culture']),
+  ('tg',  'Telangana', 'telangana-history-movement', ['Telangana History & Culture', 'Telangana Movement & State Formation', 'Telangana Geography & Economy', 'Telangana Schemes & Affairs']),
+  ('geo', 'Geography', 'geography', ['Physical Geography', 'Indian Geography', 'World Geography', 'Environment & Ecology']),
+  ('pol', 'Indian Polity', 'indian-polity', ['Constitution & Rights', 'Union & State Government', 'Judiciary', 'Local Government & Bodies', 'Governance & Schemes']),
+  ('eco', 'Indian Economy', 'indian-economy', ['Growth & Planning', 'Money, Banking & Finance', 'Agriculture & Industry', 'Poverty, Employment & Welfare']),
+  ('cur', 'Current Affairs', 'current-affairs', ['National', 'International', 'Sports', 'Awards & Personalities', 'Defence & Security', 'Reports & Indices']),
+  ('soc', 'Society, Ethics & Sensitivity', 'ethics-gender-social-sensitivity', ['Ethics & Values', 'Gender & Social Sensitivity', 'Social Issues & Welfare', 'Disaster Management']),
+]
+
 # second language of each exam (the question booklet's other language)
 L2_TE = dict(code='te', dir='te', label='తెలుగు', name='Telugu', font='Noto Sans Telugu', ans='సమాధానం', gf='')
 L2_HI = dict(code='hi', dir='hi', label='हिंदी', name='Hindi', font='Noto Sans Devanagari', ans='उत्तर',
@@ -321,6 +348,28 @@ def exam_confs():
                            f"free mock tests, subject-wise PYQs and PDF downloads."),
            eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
            papers_note="2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. 2024: UPSC's official answer key (Series A). Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
+      dict(id='ts-police-si', dir='ts-police-si', src='ts-police-si', key='ts-si', name='TS Police SI', short='TS Police SI', seo='TS Police SI',
+           slugp='ts-police-si', papers=TS_SI_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('SI'), board='TSLPRB', l2=L2_TE, pb='/ts-police-si/',
+           keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
+           te_name='తెలంగాణ పోలీస్ ఎస్ఐ', te_paper='ప్రిలిమినరీ పరీక్ష',
+           title='TS Police SI Previous Year Question Papers with Answers – Prelims 2022, Telugu & English PDF | Learn with Anil',
+           h1='TS Police SI previous year question papers <em>with answers.</em>',
+           l2line='తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష మునుపటి ప్రశ్నపత్రం సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.',
+           desc=lambda t: (f"TS Police SI (TSLPRB / TGPRB) previous year question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. "
+                           f"{t} questions on arithmetic, reasoning and general studies in English and Telugu with explanations; free mock tests, practice bits and PDF download."),
+           eyebrow='TSLPRB / TGPRB · SI (Civil) &amp; equivalent · Preliminary Written Test',
+           papers_note="Answers come from TSLPRB's final key for booklet A, released on 21 October 2022. Questions the key deleted, or for which it accepted three or four options, are left out. Every question is in English and Telugu, as printed in the booklet."),
+      dict(id='ts-police-constable', dir='ts-police-constable', src='ts-police-constable', key='ts-pc', name='TS Police Constable', short='TS Constable', seo='TS Police Constable',
+           slugp='ts-police-constable', papers=TS_PC_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('PC'), board='TSLPRB', l2=L2_TE, pb='/ts-police-constable/',
+           keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
+           te_name='తెలంగాణ పోలీస్ కానిస్టేబుల్', te_paper='ప్రిలిమినరీ పరీక్ష',
+           title='TS Police Constable Previous Year Question Papers with Answers – Prelims 2022, Telugu & English PDF | Learn with Anil',
+           h1='TS Police Constable previous year question papers <em>with answers.</em>',
+           l2line='తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష మునుపటి ప్రశ్నపత్రం సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.',
+           desc=lambda t: (f"TS Police Constable (TSLPRB / TGPRB) previous year question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. "
+                           f"{t} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; free mock tests, practice bits and PDF download."),
+           eyebrow='TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Preliminary Written Test',
+           papers_note="Answers come from TSLPRB's final key for booklet A, released on 21 October 2022. Questions the key deleted, or for which it accepted three or four options, are left out. The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet."),
     ]
 
 
@@ -398,7 +447,7 @@ def main():
                      .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf'])
                      .replace('{{LANGS}}', 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
                      .replace('{{BOARD}}', conf['board']).replace('{{ALLLINK}}', all_link)
-                     .replace('{{FOOTSRC}}', 'Questions and answers are from the official final keys.' if conf['board'] == 'APPSC'
+                     .replace('{{FOOTSRC}}', 'Questions and answers are from the official final keys.' if conf['board'] in ('APPSC', 'TSLPRB')
                               else f'Questions are from {conf["board"]}\'s official question paper; answers from {conf["keyshort"]}.')
                      .replace('{{FROMPAPERS}}', f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {esc(papers[0]["stage"])} question paper')
                      .replace('{{PAPERSK}}', f'Official {conf["board"]} paper' + ('s' if len(papers) > 1 else ''))
@@ -415,7 +464,7 @@ def main():
                      .replace('{{EYEBROW}}', conf['eyebrow']).replace('{{H1}}', conf['h1'])
                      .replace('{{L2LINE}}', f'<span lang="{l2["code"]}">{esc(conf["l2line"])}</span>'))
         root_title = 'Previous Year Question Papers (PYQs) for Government Exams – Free with Answers | Learn with Anil'
-        root_desc = (f'Free previous year question papers with answers for government exams: APPSC Group 1, APPSC Group 2 and UPSC CAPF AC, '
+        root_desc = (f'Free previous year question papers with answers for government exams: APPSC Group 1, APPSC Group 2, UPSC CAPF AC and TS Police SI & Constable, '
                      f'{grand:,} questions with official keys and explanations in English, Telugu and Hindi. Free mock tests and PDFs. '
                      f'TGPSC, UPSC, SSC, banking and railway exams are being added.')
         home_title = conf['title']
@@ -431,9 +480,9 @@ def main():
                      f'All {len(papers)} {seo_name} previous year question papers ({", ".join(paper_kw(conf, p).replace(seo_name + " ", "") for p in sorted(papers, key=lambda p: (-p["year"], p["id"])))}): '
                      f'practise each paper online as a mock test, read it with answers and explanations, or download the PDF, free.', pb + 'papers/', True),
           'practice': (f'{seo_name} Free Mock Test & Topic-wise Quiz from Previous Papers | Learn with Anil',
-                       f'Free {seo_name} mock test and topic-wise quiz made from {total:,} real previous year questions{" (practice bits)" if conf["board"] == "APPSC" else ""}: '
+                       f'Free {seo_name} mock test and topic-wise quiz made from {total:,} real previous year questions{" (practice bits)" if conf["board"] == "APPSC" or conf.get("bits") else ""}: '
                        f'choose papers, subjects and topics, then practise with answers or take a timed test.', pb + 'practice/', True),
-          'bank': (f'{seo_name} Question Bank – Search All {total:,} PYQs{" & Practice Bits" if conf["board"] == "APPSC" else ""} | Learn with Anil',
+          'bank': (f'{seo_name} Question Bank – Search All {total:,} PYQs{" & Practice Bits" if conf["board"] == "APPSC" or conf.get("bits") else ""} | Learn with Anil',
                    f'Search every {seo_name} previous year question by keyword, paper or topic, with answers from {conf["keyshort"]} and explanations.', pb + 'bank/', True),
           'notes': ('Study Material 2026-27 – Crisp Notes by Jupudi Anil Kumar | Learn with Anil',
                     'Exam-focused study material by Jupudi Anil Kumar: Crisp Notes on AP Economy and Science & Technology for APPSC Mains, with the latest 2026 data.', '/appsc-group-2/notes/', True),
@@ -555,13 +604,14 @@ def paper_kw(conf, p):
     n = paper_no(p)
     if conf['board'] == 'UPSC':
         return f'{conf["seo"]} {p["year"]}' + (f' Paper {n}' if n else '')
-    stage = 'Prelims' if p['stage'].startswith(('Screening', 'Prelims')) else 'Mains'
+    stage = 'Prelims' if p['stage'].startswith(('Screening', 'Prelims', 'Preliminary')) else 'Mains'
     return f'{conf["seo"]} {stage} {p["year"]}' + (f' Paper {n}' if n else '')
 
 
 def paper_alt(conf, p):
     """The paper's other name, if students also search by it."""
     if p['stage'].startswith('Screening'): return 'Screening Test'
+    if p['stage'].startswith('Preliminary'): return 'Preliminary Written Test'
     if conf['board'] == 'UPSC': return 'General Ability and Intelligence'
     if conf['short'] == 'Group-I': return 'General Studies' if paper_no(p) == '1' else 'General Aptitude'
     return ''
@@ -570,6 +620,8 @@ def paper_alt(conf, p):
 def paper_kw_l2(conf, p):
     """The same name in Telugu (APPSC) or Hindi (UPSC CAPF), as students type it."""
     n = paper_no(p)
+    if conf.get('te_name'):
+        return f'{conf["te_name"]} {conf["te_paper"]} {p["year"]} ప్రశ్నపత్రం సమాధానాలతో'
     if conf['l2']['code'] == 'te':
         g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
         stage = 'ప్రిలిమ్స్' if p['stage'].startswith(('Screening', 'Prelims')) else 'మెయిన్స్'
@@ -590,7 +642,8 @@ def pdf_href(conf, p):
 SUBJ_L2 = {
   'te': {'ih': 'చరిత్ర', 'aph': 'ఆంధ్రప్రదేశ్ చరిత్ర, సంస్కృతి', 'pol': 'భారత రాజ్యాంగం (పాలిటీ)', 'geo': 'భూగోళశాస్త్రం (జాగ్రఫీ)',
          'soc': 'భారతీయ సమాజం', 'eco': 'భారత, ఏపీ ఆర్థిక వ్యవస్థ (ఎకానమీ)', 'sci': 'సైన్స్ అండ్ టెక్నాలజీ', 'cur': 'కరెంట్ అఫైర్స్',
-         'men': 'మెంటల్ ఎబిలిటీ (రీజనింగ్)', 'gk': 'జనరల్ నాలెడ్జ్', 'apt': 'పరిపాలనా, మానసిక సామర్థ్యాలు'},
+         'men': 'మెంటల్ ఎబిలిటీ (రీజనింగ్)', 'gk': 'జనరల్ నాలెడ్జ్', 'apt': 'పరిపాలనా, మానసిక సామర్థ్యాలు',
+         'ari': 'అర్థమెటిక్ (అంకగణితం)', 'rea': 'రీజనింగ్, మెంటల్ ఎబిలిటీ', 'eng': 'ఇంగ్లీష్', 'tg': 'తెలంగాణ చరిత్ర, ఉద్యమం'},
   'hi': {'cur': 'समसामयिकी (करेंट अफेयर्स)', 'ih': 'इतिहास', 'pol': 'भारतीय राजव्यवस्था', 'eco': 'भारतीय अर्थव्यवस्था',
          'geo': 'भूगोल', 'sci': 'सामान्य विज्ञान', 'men': 'सामान्य मानसिक योग्यता (रीजनिंग)'},
 }
@@ -599,6 +652,9 @@ SUBJ_L2 = {
 def subject_l2_line(conf, s):
     name = SUBJ_L2[conf['l2']['code']].get(s['id'])
     if not name: return ''
+    if conf.get('te_name'):
+        if s['id'] == 'soc': name = 'నైతిక విలువలు, జెండర్ సెన్సిటివిటీ'
+        return f'{conf["te_name"]} {name} ప్రాక్టీస్ బిట్స్ — మునుపటి సంవత్సరం ప్రశ్నలు, సమాధానాలు, వివరణలతో.'
     if conf['l2']['code'] == 'te':
         g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
         return f'APPSC {g} {name} ప్రాక్టీస్ బిట్స్ — మునుపటి సంవత్సరం ప్రశ్నలు, సమాధానాలు, వివరణలతో.'
@@ -613,6 +669,7 @@ def exam_terms(e, cat):
         d = ROMAN[m.group(1)]
         words += [f'group {d}', f'group{d}', f'group-{d}', f'group {m.group(1)}']
     if e['cat'] == 'tg': words += ['tspsc', 'tgpsc', 'telangana']
+    if 'police' in e['id']: words += ['ts police', 'tg police', 'tslprb', 'tgprb', 'si', 'constable']
     if e['cat'] == 'ap': words += ['appsc', 'andhra']
     return ' '.join(w.lower() for w in words if w)
 
@@ -763,6 +820,33 @@ def FAQ_CAPF(total, npapers):
     ]
 
 
+def FAQ_TS(post):
+    si = post == 'SI'
+    name = 'TS Police SI' if si else 'TS Police Constable'
+    def faq(total, npapers):
+        return [
+          (f'Where can I get {name} previous year question papers with answers?',
+           f'This page has {total} questions from the {"SI" if si else "Police Constable"} Preliminary Written Test held by TSLPRB on {"7 August" if si else "28 August"} 2022 (booklet A), in English and Telugu as printed. '
+           f'Every answer is taken from TSLPRB\'s final key, released on 21 October 2022, and each question has a short explanation. You can read the paper with answers, practise it as a quiz or download the PDF, free.'),
+          (f'What is the {name} Preliminary Written Test pattern?',
+           ('The SI Preliminary Written Test is one objective paper of 200 questions for 200 marks in 3 hours: Arithmetic and Test of Reasoning / Mental Ability, and General Studies. '
+            if si else
+            'The Police Constable Preliminary Written Test is one objective paper of 200 questions for 200 marks in 3 hours, covering English, Arithmetic, Reasoning / Mental Ability and General Studies. ')
+           + 'The qualifying marks are 30% for OC, 25% for BC and 20% for SC, ST and ex-servicemen. Qualified candidates take the physical tests (PMT/PET) and then the Final Written Examination.'),
+          ('When is the 2026 Preliminary Written Test?',
+           ('TGPRB has tentatively scheduled the SI Preliminary Written Test for 29 November 2026 (forenoon). ' if si else
+            'TGPRB has tentatively scheduled the Police Constable Preliminary Written Test for 20 December 2026 (forenoon). ')
+           + 'Dates can change, so confirm on tgprb.in. The 2022 paper on this page follows the same pattern.'),
+          (f'Are the {name} questions available in Telugu?',
+           'Yes. Every question that the booklet printed in Telugu is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu.'),
+          (f'Is there a free {name} mock test?',
+           f'Yes. Tap Create a quiz, choose subjects or topics, and pick Timed test: you get a free mock test made of real TSLPRB questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.'),
+          ('Which questions are left out?',
+           'Questions that TSLPRB deleted in the final key, and questions for which the final key accepted three or four options, are left out. Where the key accepted two options, both are shown as correct, and where it also gave the mark for leaving a question blank, the explanation says so.'),
+        ]
+    return faq
+
+
 STATIC_CSS = """
 .nw{white-space:nowrap}
 [lang="te"]{font-family:"Noto Sans Telugu",sans-serif;line-height:1.8}
@@ -828,7 +912,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/">All exams</a></p>{foot}</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>{foot}</div></footer>
 </body>
 </html>
 """
@@ -916,7 +1000,8 @@ def build_static(conf, papers, subjects, questions, subj):
             title = f'{kw} Question Paper with Answer Key, English & Hindi PDF | Learn with Anil'
         else:
             title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – Final Key, PDF | Learn with Anil'
-        kdesc = "answers from APPSC's final key" if conf['board'] == 'APPSC' else (f'answers from {pkey}' if p.get('key', '').startswith('UPSC') else 'compiled answers')
+        kdesc = ("answers from APPSC's final key" if conf['board'] == 'APPSC' else 'compiled answers' if p.get('key', '').startswith('answers compiled')
+                 else f'answers from {pkey}')
         desc = (f'{kw} question paper{f" ({alt})" if alt else ""}, held {p["held"]}: all {len(qs)} questions in English and {conf["l2"]["name"]} '
                 f'with {kdesc} and explanations. Download the PDF or practise it online as a free mock test.')
         subs = {}
@@ -941,7 +1026,7 @@ def build_static(conf, papers, subjects, questions, subj):
         if not qs: continue
         rel = f'subjects/{slugp}-{s["slug"]}-pyqs.html'
         can = base + rel
-        bits = ' & Practice Bits' if conf['board'] == 'APPSC' else ' (Subject-wise)'
+        bits = ' & Practice Bits' if conf['board'] == 'APPSC' or conf.get('bits') else ' (Subject-wise)'
         title = f'{seo} {s["name"]} Previous Year Questions (PYQs) with Answers{bits} | Learn with Anil'
         desc = (f'{len(qs)} {seo} {s["name"]} previous year questions from {", ".join(paper_kw(conf, pmap[pid]).replace(seo + " ", "") for pid in dict.fromkeys(q["p"] for q in qs))}, '
                 f'topic-wise, with answers, explanations and {conf["l2"]["name"]} text. Practise them free as a mock test.')
@@ -1003,7 +1088,7 @@ def not_found_page():
 <title>Page not found | Learn with Anil</title><meta name="robots" content="noindex">
 <script>
 (function(){
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/ts-police-si/", "/ts-police-constable/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);
@@ -1017,7 +1102,8 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <h1>This page does not exist</h1>
 <p>The address may be mistyped, or the page has moved. Try one of these:</p>
 <ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
-<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li></ul>
+<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li>
+<li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li></ul>
 </main></body></html>
 """
 

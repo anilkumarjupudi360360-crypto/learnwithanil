@@ -102,7 +102,7 @@ async def main():
                 await pg.evaluate('location.hash="home"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/home-phone.png', full_page=False)
         # exams in their own folders: APPSC Group-I (Telugu) and UPSC CAPF (Hindi)
-        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group 1', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi')]:
+        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group 1', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi'), ('ts-police-si', 'tssi', 'TS Police SI', 'te'), ('ts-police-constable', 'tspc', 'TS Police Constable', 'te')]:
             if not os.path.exists(os.path.join(SITE, sub, 'index.html')): continue
             fp = URL + sub + '/'
             for width, name in [(1280, 'desk'), (390, 'phone')]:

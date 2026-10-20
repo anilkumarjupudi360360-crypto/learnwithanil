@@ -506,15 +506,18 @@
   {
    "id": "tg-police-si",
    "cat": "tg",
-   "b": "TGSLPRB",
+   "b": "TSLPRB / TGPRB",
    "t": "Police SI",
-   "n": "Sub-Inspector"
+   "n": "Sub-Inspector (Civil) & equivalent",
+   "live": "ts-police-si/"
   },
   {
    "id": "tg-police-constable",
    "cat": "tg",
-   "b": "TGSLPRB",
-   "t": "Police Constable"
+   "b": "TSLPRB / TGPRB",
+   "t": "Police Constable",
+   "live": "ts-police-constable/",
+   "n": "Police Constable (Civil) & equivalent"
   },
   {
    "id": "ssc-cgl",
