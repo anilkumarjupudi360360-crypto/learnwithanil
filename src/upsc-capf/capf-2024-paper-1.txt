@@ -1,0 +1,1302 @@
+# UPSC CAPF (AC) Examination 2024, Paper I: General Ability and Intelligence (Series A, booklet KSCB-A-GAI), held 4 August 2024.
+# Source: the official UPSC question paper; answers from UPSC's official answer key (upsc.gov.in, 16 June 2025). Explanations by Learn with Anil.
+# Dropped by UPSC: 82
+
+Q 1 | sci | Science & Technology
+Which one among the following is NOT a non-procedural computer language?
+(1) LISP
+(2) Python
+(3) Prolog
+(4) ML
+= 2
+~ Non-procedural (declarative) languages describe what result is wanted rather than the step-by-step procedure: LISP and ML are functional languages and Prolog is a logic-programming language. Python is essentially a procedural (imperative) language in which programs are written as ordered statements, loops and functions, so it is the one that is NOT non-procedural.
+
+Q 2 | sci | Science & Technology
+Consider the following:
+1. MPEG
+2. P*64
+3. Indeo
+Which of the above can be used to compress video files?
+(1) 1 and 2 only
+(2) 1 and 3 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 4
+~ All three are video compression schemes: MPEG is the family of audio-video compression standards of the Moving Picture Experts Group, P*64 (p×64) is the ITU-T H.261 video-conferencing codec that works at multiples of 64 kbit/s, and Indeo is Intel's video codec. Hence 1, 2 and 3.
+
+Q 3 | sci | Physics
+Which one among the following has largest energy per photon?
+(1) X-ray
+(2) Ultra-violet ray
+(3) Visible-ray
+(4) Infra-red ray
+= 1
+~ The energy of a photon is E = hν = hc/λ, so the radiation with the highest frequency (shortest wavelength) carries the most energy per photon. X-rays have a much shorter wavelength than ultraviolet, visible and infrared radiation, so their photons are the most energetic.
+
+Q 4 | sci | Science & Technology
+In Sun-Earth system, the distance between Lagrange points L2 and L3 is about
+(1) 15 lakh kilometre
+(2) 30 lakh kilometre
+(3) 16 crore kilometre
+(4) 32 crore kilometre
+= 4
+~ L2 lies about 15 lakh km beyond the Earth on the side away from the Sun (about 15.1 crore km from the Sun), while L3 lies on the far side of the Sun at roughly the Earth-Sun distance (about 15 crore km). So L2 and L3 are about 15.1 + 15 ≈ 30 crore km apart, and the closest option is 32 crore km; 15 lakh km is only the Earth-L2 distance and 16 crore km is only about one Sun-Earth distance.
+
+Q 5 | sci | Physics
+Which one of the following statements with regard to greenhouse effect is correct?
+(1) It can take place inside a glass chamber where no radiation can pass into it or pass back through it
+(2) It can take place inside a glass chamber where long wavelength infrared radiation can pass through into it and short wavelength infrared radiation cannot pass back through it
+(3) It can take place inside a glass chamber where short wavelength infrared radiation can pass through into it and long wavelength infrared radiation cannot pass back through it
+(4) It can take place inside a glass chamber where all infrared radiation can pass into it or pass back through it
+= 3
+~ Glass lets in the Sun's short-wavelength radiation, which warms the surfaces inside; these warm surfaces re-emit long-wavelength (thermal) infrared radiation, which glass does not let back out, so heat is trapped. Greenhouse gases act in the same way in the atmosphere, so (c) is correct and (b) has the wavelengths the wrong way round.
+
+Q 6 | sci | Physics
+A cannon shoots a ball upwards with an initial speed of 100 m/s. The total time of flight of the ball is 20 s before it hits the ground. The ball loses 70% of its speed after hitting the ground. Which among the following is the correct height that the ball will bounce up after its first bounce? (g = 10 m/s²)
+(1) 100 m
+(2) 70 m
+(3) 50 m
+(4) 45 m
+= 4
+~ Time of flight T = 2u/g = 2 × 100/10 = 20 s, so the ball comes back to the ground with the same speed of 100 m/s. After losing 70% of its speed it rebounds at 30 m/s, so the bounce height is h = v²/2g = 30²/(2 × 10) = 900/20 = 45 m.
+
+Q 7 | geo | Environment & Ecology
+Which one of the following statements correctly defines PM1 particles in air?
+(1) These are suspended particles of diameter more than 10 micron
+(2) These are the particles that are filtered by the nose during respiration
+(3) These are extremely fine particles of diameter less than 1 micron
+(4) These are coarse particles that penetrate directly through the lungs into the bloodstream
+= 3
+~ PM1 is particulate matter with a diameter of less than 1 micron (micrometre); such ultra-fine particles escape the nose's filtering, reach deep into the lungs and can even enter the bloodstream. Particles larger than 10 microns are coarse and are largely trapped in the nose and throat, so (a), (b) and (d) do not describe PM1.
+
+Q 8 | sci | Physics
+Which one of the following heat transfer mechanism does NOT require a medium?
+(1) Conduction
+(2) Convection
+(3) Radiation
+(4) Collision
+= 3
+~ Conduction needs particles in contact and convection needs a moving fluid, so both require a material medium. Radiation transfers heat as electromagnetic waves (mainly infrared) that can travel through a vacuum, which is how the Sun's heat reaches the Earth.
+
+Q 9 | geo | Physical Geography
+Which one of the following statements about the solstices, an event that occurs when the Sun appears to reach most northerly or southerly, is correct?
+(1) The winter solstice takes place on June 21 in both the northern and southern hemispheres
+(2) The winter solstice takes place on December 21 in both the northern and southern hemispheres
+(3) The summer solstice occurs in northern hemisphere on June 21 and on December 21 in southern hemisphere
+(4) The summer solstice occurs in northern hemisphere on December 21 and on June 21 in southern hemisphere
+= 3
+~ Around June 21 the Sun is overhead at the Tropic of Cancer, giving the northern hemisphere its summer solstice (longest day), and around December 21 it is overhead at the Tropic of Capricorn, giving the southern hemisphere its summer solstice. Because one hemisphere's summer solstice is the other's winter solstice, (a) and (b) are wrong and (d) reverses the dates.
+
+Q 10 | sci | Physics
+Which one among the following does NOT have any linkage with the phenomenon of electromagnetic induction?
+(1) Electric transformer
+(2) Induction cooker
+(3) Galvanometer
+(4) Electron microscope
+= 4
+~ A transformer works on mutual induction, an induction cooker heats the pan through eddy currents induced by a rapidly alternating magnetic field, and the galvanometer is the instrument used to detect induced currents (Faraday's experiments) and uses eddy-current damping. An electron microscope only uses electric and magnetic fields as lenses to deflect and focus a beam of electrons, which does not involve electromagnetic induction.
+
+Q 11 | sci | Chemistry
+Which one among the following statements about matter is NOT correct?
+(1) On increasing the temperature of solids, the kinetic energy of particles increases
+(2) The maximum temperature at which a solid melts to become a liquid at atmospheric pressure is called its melting point
+(3) Particles of steam have more energy than water at 100°C
+(4) Direct change of gas to solid is called deposition
+= 2
+~ The melting point is the minimum (fixed) temperature at which a solid melts to become a liquid at atmospheric pressure, not the "maximum" temperature, so (b) is the incorrect statement. The others are correct: heating raises the kinetic energy of particles, steam at 100°C holds extra energy equal to the latent heat of vaporisation compared with water at 100°C, and a direct gas-to-solid change is called deposition.
+
+Q 12 | sci | Chemistry
+The isotope of which one among the following elements is used in the treatment of cancer?
+(1) Uranium
+(2) Cobalt
+(3) Iodine
+(4) Fluorine
+= 2
+~ Cobalt-60 emits high-energy gamma rays and is the classic radioisotope used in radiotherapy ("cobalt therapy") to destroy cancer cells. Iodine-131 is used mainly for thyroid disorders (including thyroid cancer), fluorine-18 is used in PET scans for diagnosis, and uranium isotopes are nuclear fuels, so the standard answer is cobalt.
+
+Q 13 | sci | Chemistry
+Water is a good solvent for dissolving ionic compounds because
+(1) It has a high specific heat
+(2) It has no colour
+(3) It has a high dipole moment
+(4) It has a high boiling point
+= 3
+~ A water molecule is bent and strongly polar (dipole moment about 1.85 D), so its partially negative oxygen end attracts cations and its partially positive hydrogen ends attract anions, pulling ions out of the crystal and surrounding them (hydration). This polarity also gives water a very high dielectric constant that weakens the attraction between ions; specific heat, colour and boiling point do not explain its dissolving power.
+
+Q 14 | sci | Chemistry
+Which among the following is correct with respect to bond formation in an ethyne molecule?
+(1) Carbon-Carbon single bond
+(2) Carbon-Carbon double bond
+(3) Carbon-Carbon triple bond
+(4) Carbon-Hydrogen double bond
+= 3
+~ Ethyne (acetylene), C2H2, has the structure H-C≡C-H: the two carbon atoms are joined by a triple bond (one sigma and two pi bonds) and each carbon forms a single bond with a hydrogen atom. A carbon-carbon single bond is found in ethane and a double bond in ethene, and C-H bonds are always single.
+
+Q 15 | sci | Chemistry
+Which among the following are the main ingredients for manufacturing of glass?
+(1) Silica, sodium carbonate, borax, alumina and cullets
+(2) Iron oxide, lead, sodium bicarbonate, alumina and cullets
+(3) Magnesium carbonate, alumina, silica and cullets
+(4) Iron oxide, sodium, alumina, silica and cullets
+= 1
+~ Glass is made by melting silica (sand) with a flux such as sodium carbonate (soda ash), with additives like borax (for borosilicate glass) and alumina for strength and durability; cullet (broken waste glass) is added because it melts easily and lowers the energy needed. The other options leave out the soda flux or list substances like sodium metal, sodium bicarbonate or iron oxide (an impurity that colours glass) that are not main ingredients.
+
+Q 16 | sci | Chemistry
+Which one among the following statements with respect to the atomic number of an atom is correct?
+(1) The number of neutrons is same as atomic number
+(2) The sum of electrons and neutrons is same as atomic number
+(3) The number of protons is same as atomic number
+(4) The sum of protons and neutrons is same as atomic number
+= 3
+~ The atomic number (Z) is the number of protons in the nucleus, which also equals the number of electrons in a neutral atom. The sum of protons and neutrons is the mass number (A), not the atomic number.
+
+Q 17 | sci | Chemistry
+Which one among the following is an example of endothermic process?
+(1) Combustion of carbon
+(2) Mixing acid and alkali
+(3) Photosynthesis
+(4) Respiration
+= 3
+~ Photosynthesis absorbs light energy to build glucose from carbon dioxide and water (about +2800 kJ per mole of glucose), so it is endothermic. Combustion of carbon, neutralisation of an acid by an alkali and respiration all release heat, so they are exothermic.
+
+Q 18 | sci | Chemistry
+Which one among the following is used in the manufacture of ultra-violet protective glasses?
+(1) Aluminium oxide
+(2) Tungsten oxide
+(3) Molybdenum oxide
+(4) Cerium oxide
+= 4
+~ Cerium oxide (ceria, CeO2) strongly absorbs ultraviolet radiation while remaining transparent to visible light, so it is added to glass to make UV-protective glasses (it is also widely used to polish glass).
+
+Q 19 | sci | Chemistry
+Match List I with List II and select the correct answer using the code given below the Lists:
+List I (Pigment in paint)    List II (Example)
+A. Natural pigment    1. Chalk
+B. Synthetic pigment    2. White lead
+C. Reactive pigment    3. Red lead
+D. Inert pigment    4. Titanium dioxide
+(1) A-1, B-2, C-3, D-4
+(2) A-1, B-3, C-2, D-4
+(3) A-4, B-3, C-2, D-1
+(4) A-4, B-2, C-3, D-1
+= 1
+~ The key reads the lists in order: chalk (calcium carbonate) is a naturally occurring mineral pigment, white lead (basic lead carbonate) is a manufactured, synthetic pigment, red lead (Pb3O4, minium) is a reactive pigment that reacts with the oil binder and inhibits rusting of iron, and titanium dioxide is a chemically inert white pigment, giving A-1, B-2, C-3, D-4. Many paint-technology texts instead treat chalk as an inert extender, which leads to option (d). (Official key; some sources differ.)
+
+Q 20 | sci | Chemistry
+Match List I with List II and select the correct answer using the code given below the Lists:
+List I (Element)    List II (Unpaired electron)
+A. Boron    1. Zero
+B. Nitrogen    2. Two
+C. Oxygen    3. One
+D. Neon    4. Three
+(1) A-1, B-4, C-2, D-3
+(2) A-1, B-2, C-4, D-3
+(3) A-3, B-2, C-4, D-1
+(4) A-3, B-4, C-2, D-1
+= 4
+~ Boron (2s^2 2p^1) has one unpaired electron; nitrogen (2p^3) puts its three 2p electrons in separate orbitals by Hund's rule, so three; oxygen (2p^4) has two; and neon (2p^6) has a filled shell with none. Hence A-3, B-4, C-2, D-1.
+
+Q 21 | sci | Science & Technology
+Which one among the following biotechnologies is applied to manufacture pharmaceutical products such as insulin, antibiotics and vaccines?
+(1) White Biotechnology
+(2) Red Biotechnology
+(3) Green Biotechnology
+(4) Blue Biotechnology
+= 2
+~ Red biotechnology is the medical and pharmaceutical branch, covering products such as recombinant insulin, antibiotics, vaccines and gene therapy. White biotechnology is industrial (enzymes, biofuels), green is agricultural (GM crops, biofertilisers) and blue is marine and aquatic.
+
+Q 22 | sci | Biology
+In which organism did Gregor J. Mendel conduct the experiment to explain principles of inheritance?
+(1) Groundnut
+(2) Garden Pea
+(3) Four O'clock plant
+(4) Fruit fly
+= 2
+~ Mendel worked out the laws of inheritance from hybridisation experiments on the garden pea (Pisum sativum), which has clear contrasting traits, a short life cycle and self-pollinating flowers. The four o'clock plant was later used by Correns to show incomplete dominance, and the fruit fly by T. H. Morgan to study linkage.
+
+Q 23 | sci | Biology
+In which layer of the plant tissue Guard cells are present?
+(1) Palisade mesophyll
+(2) Spongy mesophyll
+(3) Epidermis
+(4) Xylem
+= 3
+~ Guard cells are specialised cells of the epidermis that surround each stomatal pore and open or close it; unlike other epidermal cells they contain chloroplasts. Palisade and spongy mesophyll are the inner photosynthetic tissues of the leaf, and xylem is vascular tissue.
+
+Q 24 | sci | Chemistry
+Identify the correct option from the following about the proportion of different gases in Biogas?
+(1) Methane > Carbon dioxide > Nitrogen
+(2) Methane > Nitrogen > Carbon dioxide
+(3) Methane > Oxygen > Carbon monoxide
+(4) Nitrogen > Methane > Carbon dioxide
+= 1
+~ Biogas from anaerobic digestion is typically about 50-75% methane and 25-50% carbon dioxide, with only small amounts of nitrogen, hydrogen and hydrogen sulphide. Oxygen is practically absent because the gas is produced anaerobically.
+
+Q 25 | sci | Physics
+Which one of the following is the audible range of hearing for humans?
+(1) 20 kHz - 200 kHz
+(2) 20 Hz - 20 kHz
+(3) 20 Hz - 35 kHz
+(4) 20 Hz - 40 kHz
+= 2
+~ The human ear can hear sound of frequency from about 20 Hz to 20,000 Hz (20 kHz). Sound below 20 Hz is infrasound and above 20 kHz is ultrasound.
+
+Q 26 | sci | Biology
+In what form excess of glucose is stored in human body?
+(1) Fructose
+(2) Glycogen
+(3) Glucose
+(4) Starch
+= 2
+~ Excess glucose is converted into glycogen (glycogenesis) and stored mainly in the liver and skeletal muscles, to be broken down again when blood sugar falls. Starch is the storage carbohydrate of plants, not animals.
+
+Q 27 | sci | Science & Technology
+Biotechnological research is promoted through the development of "Biotechnology Parks". Which of the following is/are essential to bring technology to market?
+1. Development of new product
+2. Entrepreneurship
+3. Technology incubation
+Select the answer using the code given below:
+(1) 1 only
+(2) 1 and 2 only
+(3) 1, 2 and 3
+(4) 2 and 3 only
+= 3
+~ Biotechnology parks exist to carry research from the laboratory to the market: they provide incubation space and shared facilities where start-ups can mature (technology incubation), support entrepreneurs who commercialise research, and help turn it into new products. All three are needed, so the answer is 1, 2 and 3.
+
+Q 28 | sci | Science & Technology
+Which one of the following is the correct chronology of invention/discovery in the field of Biotechnology?
+(1) Discovery of Plasmid, Double Helical structure of DNA, DNA fingerprinting, cloning of Dolly
+(2) Double Helical structure of DNA, Discovery of Plasmid, DNA fingerprinting, cloning of Dolly
+(3) DNA fingerprinting, cloning of Dolly, Double Helical structure of DNA, Discovery of Plasmid
+(4) Double Helical structure of DNA, DNA fingerprinting, Discovery of Plasmid, cloning of Dolly
+= 1
+~ Joshua Lederberg described and named plasmids in 1952, Watson and Crick proposed the double helix of DNA in 1953, Alec Jeffreys developed DNA fingerprinting in 1984, and Dolly the sheep was cloned in 1996. Option (b) is the trap: the plasmid came one year before the double helix.
+
+Q 29 | geo | Environment & Ecology
+In an ecosystem why is the number of trophic levels of a food chain usually limited?
+(1) Lower trophic level has lesser energy than the higher trophic level
+(2) Because of the loss of energy at each trophic level
+(3) Higher trophic level individual can control the lower ones more efficiently
+(4) Limited trophic level makes a food chain less vulnerable to parasites
+= 2
+~ Only about 10% of the energy at one trophic level passes to the next (Lindeman's ten per cent law); the rest is lost, mostly as heat in respiration, so after four or five levels too little energy is left to support another level. Option (a) is reversed: lower trophic levels hold more energy, not less.
+
+Q 30 | sci | Biology
+Which one of the following structure is NOT found in prokaryotes?
+(1) Nuclear envelope
+(2) Cell membrane
+(3) Ribosome
+(4) Cell wall
+= 1
+~ Prokaryotes such as bacteria have no membrane-bound nucleus, so there is no nuclear envelope; their DNA lies free in the cytoplasm as a nucleoid. They do have a cell membrane, 70S ribosomes and, in most cases, a cell wall.
+
+Q 31 | geo | Physical Geography
+Consider the following statements regarding the rotation of the Earth:
+1. Since the Earth rotates by 15° each hour, time zones normally differ by one hour
+2. At the International Date Line, the calendar day changes - advancing a day for eastward travel, dropping back a day for westward travel
+3. Daylight saving time advances the clock by one hour
+4. The Moon rotates and revolves about the Earth in the same direction that the Earth revolves around the Sun
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 3 and 4 only
+(3) 1, 3 and 4
+(4) 2, 3 and 4
+= 3
+~ The Earth turns 360° in 24 hours, i.e. 15° per hour, so adjacent standard time zones normally differ by one hour; daylight saving time puts clocks forward by one hour; and the Moon spins and orbits the Earth anticlockwise (seen from above the North Pole), the same sense in which the Earth orbits the Sun. Statement 2 reverses the rule: crossing the Date Line eastward (Asia to America) you go back a day, and crossing it westward you advance a day.
+
+Q 32 | geo | Environment & Ecology
+Which of the following statements regarding faunal resources of India is/are correct?
+1. High degree of endemism has been noticed in the biodiversity hotspots of India
+2. Of the total biosphere reserves in India, the Sundarbans has the largest number of species and Nokrek has the smallest number of species
+Select the answer using the codes given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ India's four biodiversity hotspots (the Himalaya, Western Ghats, Indo-Burma and Sundaland, which includes the Nicobar Islands) show high endemism; for example, over three-quarters of the Western Ghats' amphibian species are found nowhere else, so statement 1 is correct. UPSC's key also accepts statement 2, which ranks the Sundarbans first and Nokrek last among India's biosphere reserves by number of species, so the answer is (c).
+
+Q 33 | geo | Physical Geography
+Consider the following characteristics of a type of wind:
+1. They occur at upper levels in the atmosphere
+2. They are subjected to two forces, a pressure gradient force and the Coriolis force
+3. When the forces balance, air moves at right angles to the pressure gradient, parallel to the isobars
+Identify the type of wind on the basis of the given characteristics:
+(1) Jet Stream
+(2) Geostrophic Wind
+(3) Westerlies
+(4) Easterlies
+= 2
+~ A geostrophic wind blows in the upper atmosphere, above the layer of surface friction, where the pressure gradient force is exactly balanced by the Coriolis force, so the air flows parallel to the isobars instead of across them. Jet streams are particular fast bands of upper-air flow, while westerlies and easterlies are planetary surface wind belts affected by friction.
+
+Q 34 | geo | Physical Geography
+Where does podsolization take place?
+(1) Regions in high middle latitudes
+(2) Coastal regions in lower latitudes
+(3) Regions with hot and humid climate
+(4) Regions having arid climate
+= 1
+~ Podzolization occurs in the cool, humid high middle latitudes under coniferous (taiga) forests, where acidic litter and heavy leaching remove iron, aluminium and humus from the upper soil, leaving a bleached ash-grey layer. Hot humid regions undergo laterization, and arid regions calcification or salinization.
+
+Q 35 | geo | Physical Geography
+Which one of the following statements with reference to the Nebular Hypothesis for the origin of Solar System is correct?
+(1) The initiation of the nebular hypothesis can be considered as a diffuse, roughly spherical, slowly rotating expanding nebula
+(2) As a result of rotation and expansion, a disk is formed with matter concentrated in the centre
+(3) Expansion continues with the formation of the proto-Sun and the rings of material are left behind
+(4) The material in the rings get condensed and form the planets that revolve in orbits around the Sun
+= 4
+~ In the Kant-Laplace nebular hypothesis a slowly rotating gaseous nebula cooled and contracted, spinning faster as it shrank and shedding rings of matter; the central mass became the Sun and the rings condensed into planets orbiting it, so (d) is right. Options (a)-(c) wrongly speak of an expanding nebula, whereas the hypothesis rests on contraction.
+
+Q 36 | geo | Physical Geography
+If it is 31st December, 2023 in New Zealand, at the same time what will be the date in the Hawaiian Islands and Alaska?
+(1) Both have 01 January, 2024
+(2) Both have 30 December, 2023
+(3) 31 December, 2023 in Alaska and 01 January, 2024 Hawaiian Islands
+(4) 31 December, 2023 in Hawaiian Islands and 01 January, 2024 in Alaska
+= 2
+~ New Zealand lies just west of the International Date Line (UTC+13 in December), while Hawaii (UTC-10) and Alaska (UTC-9) lie east of it, 23 and 22 hours behind. So for all but the last hour or two of New Zealand's 31 December it is still 30 December in both places; neither can be in 2024 while New Zealand, which is ahead of them, is still in 2023.
+
+Q 37 | geo | Physical Geography
+Which one of the following statement with reference to hailstones is NOT correct?
+(1) Their formation usually occurs during the monsoon season
+(2) They are associated with dense cumulonimbus clouds
+(3) Rain that forms in the warmer, upper layer solidifies into tiny ice pellets or hailstones in the lower, subfreezing layer
+(4) Hailstones have multiple, concentric layers of ice
+= 1
+~ Hail comes from strong convective thunderstorms in tall cumulonimbus clouds, and in India hailstorms are mostly a pre-monsoon and winter-spring phenomenon, not a feature of the monsoon season, so (a) is the incorrect statement. Hailstones grow as they are carried up and down in the cloud, which gives them concentric layers of ice, and (c) follows the NCERT description of raindrops freezing as they fall through a colder layer.
+
+Q 38 | geo | Physical Geography
+Match List I with List II and select the correct answer using the code given below the Lists:
+List I (Ocean Current)    List II (Location)
+A. Kuroshio Current    1. Antarctic Ocean
+B. Agulhas Current    2. Pacific Ocean
+C. East Wind Drift    3. Atlantic Ocean
+D. Antilles Current    4. Indian Ocean
+(1) A-3, B-4, C-1, D-2
+(2) A-3, B-1, C-4, D-2
+(3) A-2, B-1, C-4, D-3
+(4) A-2, B-4, C-1, D-3
+= 4
+~ The Kuroshio is the warm current off Japan in the North Pacific; the Agulhas is the warm current off south-east Africa in the Indian Ocean; the East Wind Drift flows westward close to the Antarctic coast; and the Antilles Current is a warm current of the North Atlantic east of the Bahamas. Hence A-2, B-4, C-1, D-3.
+
+Q 39 | geo | Environment & Ecology
+With reference to 'Black Tigers', which of the following statements is/are correct?
+1. They are also referred to as Melanistic Tigers
+2. In India they are found only in Similipal Tiger Reserve in Odisha
+Select the answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Black tigers have broad, merged dark stripes caused by a single mutation in the Taqpep gene; strictly they are pseudo-melanistic, but they are popularly called melanistic tigers. Today wild black tigers are known only from Similipal Tiger Reserve, Odisha, and the captive-born ones at Nandankanan (Bhubaneswar) and Chennai zoos share ancestry with Similipal tigers, so both statements are correct.
+
+Q 40 | eco | Agriculture & Industry
+Which one among the following statements about the Singareni Collieries Company Limited is correct?
+(1) Located at Kothagudem in Telengana, this is the first and the oldest coal mining company in India in the private sector
+(2) It has now diversified into thermal and solar power generation, explosive manufacturing for blasting in opencast mines and consultancy works
+(3) It has been conferred with 'Navratna' status since 2011
+(4) It is the single largest coal producing company in the world
+= 2
+~ SCCL, headquartered at Kothagudem, has diversified beyond coal mining into thermal power (a 1,200 MW plant), solar power, manufacture of explosives for its opencast mines and consultancy. It is a government company owned 51% by Telangana and 49% by the Centre, not a private-sector firm, it is not a Navratna, and the world's largest coal producer is Coal India Ltd.
+
+Q 41 | geo | Physical Geography
+Which of the following processes is/are part of the Rock Cycle?
+1. Lithification
+2. Metamorphism
+3. Solidification
+Select the answer using the code given below:
+(1) 1 only
+(2) 1 and 2 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 4
+~ In the rock cycle, molten magma solidifies (crystallizes) into igneous rock, sediments are compacted and cemented (lithification) into sedimentary rock, and heat and pressure transform existing rocks by metamorphism into metamorphic rock. All three processes are part of the cycle.
+
+Q 42 | geo | Physical Geography
+Consider the following statements regarding the temperature of the Earth's surface:
+1. The temperature of a surface is determined by net radiation
+2. Net radiation produces a radiant energy flow that can heat or cool a surface
+3. Net radiation balance is usually positive during the daytime and negative during night time
+4. Soil surface loses energy as temperature increases during the daytime
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 3 and 4 only
+(3) 1, 2 and 3 only
+(4) 1, 2, 3 and 4
+= 3
+~ Net radiation (incoming minus outgoing radiation) governs surface temperature: when it is positive, as in the daytime, the surface gains energy and warms, and when it is negative, as at night, the surface loses energy and cools. Statement 4 is wrong because during the day the soil surface gains energy, which is why its temperature rises.
+
+Q 43 | geo | Indian Geography
+Consider the following statements :
+1. Black soil is considered suitable for growing rain-fed crops
+2. Black soil can retain moisture for a prolonged period, aiding crops to survive even in dry seasons
+With regard to the statements given above which of the following is/are correct?
+(1) Both the statements are correct and statement 2 is the correct explanation of statement 1
+(2) Both the statements are correct and statement 2 is NOT the correct explanation of statement 1
+(3) Statement 1 is correct but statement 2 is false
+(4) Statement 1 is false but statement 2 is correct
+= 1
+~ Black (regur) soil is rich in fine clay and holds moisture for a long time, swelling when wet and cracking when dry. This moisture-holding capacity is exactly why crops such as cotton can be grown on it as rain-fed (unirrigated) crops, so statement 2 correctly explains statement 1.
+
+Q 44 | geo | World Geography
+Which one among the following countries is NOT a part of the Arabian Peninsula?
+(1) Kuwait
+(2) Oman
+(3) Libya
+(4) Yemen
+= 3
+~ Libya lies in North Africa, west of Egypt, and is not part of the Arabian Peninsula. Kuwait, Oman and Yemen are, along with Saudi Arabia, the UAE, Qatar and Bahrain.
+
+Q 45 | geo | World Geography
+With reference to 'South Coast of Australia' which of the following statements is/are correct?
+1. It is situated along the Indian Ocean
+2. It experiences rain during its winter months of December and January
+Select the answer using the code given below :
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Australia's south coast, including the Great Australian Bight, fronts the Indian Ocean (the waters Australia itself calls the Southern Ocean), so statement 1 is correct. The south coast has a Mediterranean-type climate with winter rain, but in the Southern Hemisphere winter is June-August and December-January is summer, so statement 2 is wrong.
+
+Q 46 | men | Numbers & Series
+The remainder, when 1 + (1 × 2) + (1 × 2 × 3) + ... + (1 × 2 × 3 × ... × 500) is divided by 8, is
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ The sum is 1! + 2! + 3! + ... + 500!. From 4! = 24 onwards every term is a multiple of 8, so only 1 + 2 + 6 = 9 matters, and 9 leaves remainder 1 when divided by 8.
+
+Q 47 | men | Arithmetic
+The angle (in degrees) made by a sector having area one-sixth of the area of a semicircle is
+(1) 15°
+(2) 30°
+(3) 45°
+(4) 60°
+= 2
+~ Area of sector = (θ/360°) × πr² must equal (1/6) × (πr²/2) = πr²/12. So θ/360° = 1/12, giving θ = 30°.
+
+Q 48 | men | Arithmetic
+Which one of the following is the average of first five multiples of each of the numbers from 11, 12, 13, ..., 20?
+(1) 40.5
+(2) 42.5
+(3) 44.5
+(4) 46.5
+= 4
+~ The first five multiples of n are n, 2n, 3n, 4n, 5n, whose average is 15n/5 = 3n. Averaging 3n over n = 11 to 20 gives 3 × 15.5 = 46.5.
+
+Q 49 | men | Arithmetic
+Which of the following statements is/are correct?
+1. The average of four numbers 10, 15, 20 and 25 is 17.5
+2. If a, b and c are three different natural numbers such that a + b + c = abc, then the average of a, b and c is 3
+Select the answer using the code given below :
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Statement 1: (10 + 15 + 20 + 25)/4 = 70/4 = 17.5, correct. Statement 2: the only three different natural numbers with a + b + c = abc are 1, 2, 3 (1 + 2 + 3 = 6 = 1 × 2 × 3), whose average is 2, not 3, so it is wrong.
+
+Q 50 | men | Arithmetic
+The ratio of present ages (in years) of X to Y is equal to the ratio of present ages (in years) of Y to Z. If the present age of Y is 15 years, then which of the following can be the sum of the ages (in years) of X, Y and Z?
+(1) 35
+(2) 40
+(3) 49
+(4) 55
+= 3
+~ X : Y = Y : Z gives XZ = 15² = 225, so X + Z is at least 2√225 = 30 and the total is at least 45, ruling out 35 and 40. With whole-number ages the pairs with product 225 are (1, 225), (3, 75), (5, 45), (9, 25) and (15, 15), giving totals of 241, 93, 65, 49 and 45, so 49 (ages 9, 15 and 25) is the answer; 55 would need ages that are not whole numbers.
+
+Q 51 | men | Arithmetic
+If x + 1/x = 2, then which one of the following is the value of x^32 + 1/x^32?
+(1) -1
+(2) 0
+(3) 1
+(4) 2
+= 4
+~ x + 1/x = 2 means x² - 2x + 1 = 0, i.e. (x - 1)² = 0, so x = 1. Then x^32 + 1/x^32 = 1 + 1 = 2.
+
+Q 52 | men | Arithmetic
+A shopkeeper sold a product at 30% loss. Had his selling price been ₹150 more, he would have made a profit of 10%. What was the cost price?
+(1) ₹375
+(2) ₹400
+(3) ₹425
+(4) ₹450
+= 1
+~ Moving from a 30% loss (SP = 0.7 CP) to a 10% profit (SP = 1.1 CP) is a change of 40% of the cost price. So 0.4 × CP = ₹150 and CP = ₹375.
+
+Q 53 | men | Arithmetic
+A, B and C can finish a work in 20, 25 and 30 days, respectively. They start working together but B quits after working for 3 days. In how many days from the start shall the work be completed?
+(1) 9 8/15 days
+(2) 10 1/15 days
+(3) 10 14/25 days
+(4) 11 1/10 days
+= 3
+~ Take the work as 300 units: A does 15, B 12 and C 10 units a day. In the first 3 days all three do 37 × 3 = 111 units; the remaining 189 units are done by A and C at 25 units a day in 189/25 = 7 14/25 days, so the total is 3 + 7 14/25 = 10 14/25 days.
+
+Q 54 | men | Arithmetic
+Two taps A and B can fill a tank with water in 20 minutes and 15 minutes, respectively. A third tap C can empty the full tank in 6 minutes. After the taps A and B fill the tank for 5 minutes, the tap C is opened to empty while A and B continue to fill it. In how many minutes after the start shall the tank get empty?
+(1) 10 1/3 minutes
+(2) 10 2/5 minutes
+(3) 10 4/5 minutes
+(4) 11 2/3 minutes
+= 4
+~ Take the tank as 60 units: A fills 3 and B 4 units a minute, while C empties 10, so in the first 5 minutes A and B put in 35 units. Once C is opened the net outflow is 10 - 7 = 3 units a minute, so the tank empties 35/3 = 11 2/3 minutes after C is opened, which is the keyed answer. Counted from the very start the time would be 5 + 11 2/3 = 16 2/3 minutes, which is not among the options. (Official key; some sources differ.)
+
+Q 55 | men | Arithmetic
+A and B start at the same time to reach the same destination. B travelled at 5/7 of A's speed and reached the destination 1 hour 20 minutes after A. What was the time taken by B to reach the destination?
+(1) 4 hours 40 minutes
+(2) 4 hours 55 minutes
+(3) 5 hours 5 minutes
+(4) 5 hours 15 minutes
+= 1
+~ For the same distance, time is inversely proportional to speed, so B's time : A's time = 7 : 5. The difference of 2 parts is 80 minutes, so 1 part = 40 minutes and B takes 7 × 40 = 280 minutes = 4 hours 40 minutes.
+
+Q 56 | men | Arithmetic
+There was a hike in petrol price by 12%. By how much percentage should a person decrease his petrol consumption such that there is no change in his expenditure on petrol?
+(1) 8.6%
+(2) 9.8%
+(3) 10.7%
+(4) 12%
+= 3
+~ To keep expenditure unchanged, consumption must fall by 12/(100 + 12) × 100 = 1200/112 ≈ 10.7%. Cutting by the full 12% is wrong because the cut applies to the higher price.
+
+Q 57 | men | Arithmetic
+If 19a + 19b + 19c = 437, then what is the mean of a, b and c?
+(1) 6.33
+(2) 7.66
+(3) 9.33
+(4) 11.55
+= 2
+~ 19(a + b + c) = 437 gives a + b + c = 23, so the mean is 23/3 = 7.666..., written as 7.66.
+
+Q 58 | men | Arithmetic
+Out of the six digits 1, 2, 3, 4, 5 and 6; how many two digit numbers can be formed without repetition of digits?
+(1) 6
+(2) 15
+(3) 30
+(4) 40
+= 3
+~ The tens digit can be any of the 6 digits and the units digit any of the remaining 5, giving 6 × 5 = 30 numbers. 15 would be the count of unordered pairs, but 12 and 21 are different numbers.
+
+Q 59 | men | Arithmetic
+A train travelling at a speed of 60 km/hr crosses a platform in 20 seconds. The same train crosses a person who is walking at a speed of 6 km/hr in the same direction as that of the train in 12 seconds. What is the length of the train and that of the platform, respectively?
+(1) 160 m and 153.33 m
+(2) 170 m and 166.66 m
+(3) 180 m and 153.33 m
+(4) 180 m and 170 m
+= 3
+~ Relative to the walker the train moves at 60 - 6 = 54 km/hr = 15 m/s, so its length is 15 × 12 = 180 m. At 60 km/hr = 50/3 m/s it covers 50/3 × 20 = 333.33 m while crossing the platform, so the platform is 333.33 - 180 = 153.33 m.
+
+Q 60 | men | Arithmetic
+In a partnership firm, A invests 1/6th of the total investment for 1/6th of the tenure. B invests 1/3rd of the total investment for 1/3rd of the tenure while C invests the remaining part for the full duration. Out of total profit of ₹46,00,000, what shall be C's share?
+(1) ₹30,00,000
+(2) ₹32,00,000
+(3) ₹34,00,000
+(4) ₹36,00,000
+= 4
+~ Profit is shared in the ratio of capital × time: A = 1/6 × 1/6 = 1/36, B = 1/3 × 1/3 = 4/36 and C = (1 - 1/6 - 1/3) × 1 = 1/2 = 18/36, so the ratio is 1 : 4 : 18 (total 23 parts). C's share = 18/23 × ₹46,00,000 = ₹36,00,000.
+
+Q 61 | men | Arithmetic
+The sum of the ages of A and B (in years) is 22. The product of their ages two years back was 77. Which one of the following is the value of the difference of their current ages?
+(1) 2
+(2) 3
+(3) 4
+(4) 5
+= 3
+~ Let the ages be a and b: a + b = 22 and (a - 2)(b - 2) = 77, so ab - 2(a + b) + 4 = 77, giving ab = 117. The two numbers with sum 22 and product 117 are 13 and 9 (check: two years back 11 × 7 = 77), so the difference is 13 - 9 = 4.
+
+Q 62 | men | Arithmetic
+A shopkeeper sells two items, A and B. Item B's cost price is twice as that of item A. The shopkeeper sells item A at 10% profit and item B at 20% profit. Which one of the following is the value of net profit?
+(1) 15%
+(2) 13.33%
+(3) 18%
+(4) 16.66%
+= 4
+~ Take the cost price of A as ₹100, so B costs ₹200 and the total cost is ₹300. Profit = 10% of 100 + 20% of 200 = 10 + 40 = ₹50, so the net profit = 50/300 × 100 = 16.66% (not the simple average of 15%, because B carries twice the weight).
+
+Q 63 | men | Reasoning
+Out of a class of 100 students, 25 play at least cricket and football, 15 play at least cricket and hockey, 12 play at least football and hockey and 10 play all the three sports. The number of students playing cricket, football and hockey are 50, 37 and 22, respectively. The number of students who do NOT play any of the three sports is
+(1) 33
+(2) 23
+(3) 27
+(4) 30
+= 1
+~ "At least cricket and football" means the pair totals already include the 10 who play all three, so by inclusion-exclusion the students playing at least one sport = 50 + 37 + 22 - (25 + 15 + 12) + 10 = 109 - 52 + 10 = 67. Students playing none = 100 - 67 = 33.
+
+Q 64 | men | Arithmetic
+A group of five people consisting of a couple are to be seated on a round table for a meeting. What is the total number of ways in which the seating arrangement can be made so that the couple do NOT sit next to each other?
+(1) 24
+(2) 18
+(3) 12
+(4) 6
+= 3
+~ Five people can sit round a table in (5 - 1)! = 24 ways. Treating the couple as one unit gives (4 - 1)! × 2 = 12 arrangements with them together, so 24 - 12 = 12 arrangements keep them apart.
+
+Q 65 | men | Arithmetic
+A fair coin is tossed three times and the outcomes are noted. What is the probability of getting exactly two heads?
+(1) 2/3
+(2) 1/2
+(3) 5/8
+(4) 3/8
+= 4
+~ Three tosses give 2³ = 8 equally likely outcomes, and exactly two heads occur in 3 of them (HHT, HTH, THH). So the probability is 3/8.
+
+Q 66 | ih | Ancient India
+Consider the following statements about the costumes and headgear/hairstyle in India during 4th-7th century AD:
+1. There was a marked preference for stitched garment as compared to any previous age
+2. Simple plaits without any floral embellishment dominated the hairstyle of women
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ In the Gupta and post-Gupta centuries cut-and-sewn garments such as tunics, jackets and blouses were worn far more widely than in any earlier age, so statement 1 is correct. Women's hairstyles were elaborate, with buns, ringlets and coiffures decorated with flowers, jewelled bands and nets, as the Ajanta paintings and Gupta sculpture show, so statement 2 is wrong.
+
+Q 67 | ih | Modern India
+Which of the following statements are correct?
+1. The Third Round Table Conference met in London in November 1932 without the participation of Congress
+2. The discussions in the Third Round Table Conference led to the passing of the Government of India Act, 1935
+3. The Government of India Act, 1935 did not favor the idea of provincial autonomy
+4. The Governor was not given any power in the Act of 1935 to take over and run the administration of a province
+Select the answer using the code given below:
+(1) 3 and 4
+(2) 1 and 2
+(3) 2 and 3
+(4) 1 and 3
+= 2
+~ The Third Round Table Conference (17 November-24 December 1932) was held without the Congress, and its discussions led to the White Paper of 1933 and then to the Government of India Act, 1935, so statements 1 and 2 are correct. The 1935 Act in fact introduced provincial autonomy, and its Section 93 empowered the Governor to take over the administration of a province if the constitutional machinery broke down, so statements 3 and 4 are wrong.
+
+Q 68 | ih | Art & Culture
+Consider the following pairs of texts and their subjects:
+1. Tilakmanjari : Mathematics
+2. Nighantu : Medicine
+3. Janakiharan : Logic
+Which of the pairs given above is/are correctly matched?
+(1) 1 only
+(2) 2 only
+(3) 1 and 2
+(4) 2 and 3
+= 2
+~ Nighantus are Sanskrit glossaries, and in Ayurveda the term denotes lexicons of medicinal substances (e.g. Dhanvantari Nighantu, Raja Nighantu), so pair 2 is correct. Tilakamanjari is a Sanskrit prose romance by Dhanapala (11th century) and Janakiharana is a Sanskrit epic poem by Kumaradasa on the story of Rama and Sita, so neither is a work on mathematics or logic.
+
+Q 69 | ih | Ancient India
+The Junagarh inscription goes on to tell us that during the reign of Rudradaman, in the year 72 of the Saka era, there occurred a terrible storm. What would be the time in CE of the occurrence of that terrible storm?
+(1) 150 CE
+(2) 181 CE
+(3) 130 CE
+(4) 120 CE
+= 1
+~ The Saka era began in 78 CE, so Saka year 72 = 72 + 78 = 150 CE. Rudradaman's Junagarh rock inscription records that the storm of that year breached the embankment of the Sudarshana lake, which was then repaired by his governor Suvishakha.
+
+Q 70 | ih | Medieval India
+Abdur Razzak, the traveler to Vijayanagar, had referred to the presence of a number of flower merchants in Vijayanagar and noted a particular flower that seemed as necessary as food to the people of that part. Which variety of flower was being referred to by Abdur Razzak?
+(1) Jasmine
+(2) Lotus
+(3) Hibiscus
+(4) Rose
+= 4
+~ Abdur Razzaq, the Persian envoy of the Timurid ruler Shah Rukh who visited Vijayanagara in the 1440s, wrote that roses were sold everywhere and that the people could not live without roses, looking upon them as quite as necessary as food.
+
+Q 71 | ih | Ancient India
+In Kautilya's Arthashastra, the conqueror king is expected to establish, in the conquered territories, a social order based on the
+(1) varna system only
+(2) dharma, varna and ashrama systems
+(3) dharma only
+(4) varna and ashrama systems
+= 2
+~ The Arthashastra makes the king the upholder of dharma, whose duty is to see that every subject follows the duties (svadharma) of his varna and ashrama. So the order a conqueror is to establish in newly won territory rests on dharma together with the varna and ashrama systems, not on any one of them alone.
+
+Q 72 | ih | Ancient India
+Consider the following eras in early India:
+1. Shaka era
+2. Kalachuri era
+3. Vikrama era
+4. Harsha era
+5. Gupta era
+Which one of the following is the correct chronological order of the above eras starting with the earliest?
+(1) 1-2-3-4-5
+(2) 3-1-5-2-4
+(3) 2-3-1-4-5
+(4) 3-1-2-5-4
+= 4
+~ The eras begin as follows: Vikrama era 57 BCE, Shaka era 78 CE, Kalachuri (Chedi) era 248-249 CE, Gupta era 319-320 CE and Harsha era 606 CE. So the order is 3-1-2-5-4.
+
+Q 73 | ih | Art & Culture
+What is Nalayira Divyaprabandham?
+(1) Compositions by the Alvars compiled in the form of an anthology
+(2) Hymns composed by Nayanars
+(3) Eulogies composed for Chola kings
+(4) An exposition of the hymns of Rig Veda in Malayalam
+= 1
+~ The Nalayira Divyaprabandham ("four thousand sacred compositions") is the anthology of about 4,000 Tamil verses of the twelve Vaishnava Alvars, compiled by Nathamuni around the 9th-10th century. The Nayanars were Shaiva saints, whose hymns are collected in the Tevaram.
+
+Q 74 | ih | Medieval India
+What are bhuni, pachara, and dopati mentioned frequently in the biographies of the Vaishnava reformers of medieval Assam?
+(1) Vessels of metal used in religious oblation
+(2) Agricultural implements
+(3) Musical instruments used at the time of Bohag Bihu festival
+(4) Pieces of men's clothes
+= 4
+~ In the Assamese charit-puthis (hagiographies) of Sankaradeva and his disciples, these terms refer to items of men's dress; bhuni, for example, was the unstitched lower garment (also called churia, i.e. dhoti) worn by men. They are not vessels, farm tools or Bihu instruments.
+
+Q 75 | ih | Modern India
+Consider the following statements about the Rowlatt Act of 1919:
+1. It was passed by the Imperial Legislative Council
+2. Khilafat Committee was formed to oppose the Act
+3. While Gandhiji was arrested, the local leaders were allowed to continue the protest
+How many of the above statements is/are NOT correct?
+(1) One
+(2) Two
+(3) Three
+(4) None
+= 1
+~ Statement 1 is correct (the Imperial Legislative Council passed the Act in March 1919 despite the opposition of its Indian members), and statement 2 is wrong because the Khilafat Committee (1919) was formed over the treatment of the Ottoman Sultan-Caliph, not against the Rowlatt Act. The key's "One" counts only statement 2 as wrong, reading statement 3 as saying the agitation carried on under local leaders after Gandhiji's arrest in April 1919; strictly, however, local leaders such as Saifuddin Kitchlew and Dr Satyapal were themselves arrested, so statement 3 is also wrong and many would answer (b). (Official key; some sources differ.)
+
+Q 76 | ih | Medieval India
+Consider the following statements about Mahanavami dibba, a massive platform :
+1. It is situated on one of the highest points in the city of Vijayanagara
+2. Virupaksha temple is located on it
+Which of the above statements is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ The Mahanavami dibba in the royal centre of Vijayanagara is located on one of the highest points in the city; it is a massive platform (base of about 11,000 sq ft, height about 40 ft) that once supported a wooden structure and was used for the Mahanavami festival rituals. The Virupaksha temple stands in the sacred centre on the bank of the Tungabhadra, not on this platform, so only statement 1 is correct.
+
+Q 77 | ih | Medieval India
+Which of the following statements about the Bundela rebellion against Aurangzeb are correct?
+1. Shivaji advised Chhatrasal to promote local risings against Aurangzeb
+2. Chhatrasal levied chauth like marathas
+3. In 1705, Aurangzeb decided to make peace with Chhatrasal and Chhatrasal was granted mansab of four-thousand
+Select the answer using the code given below :
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Chhatrasal, the Bundela leader, met Shivaji, who advised him to go back to Bundelkhand and organise local risings against Aurangzeb; he built up a principality there and, like the Marathas, collected chauth from the surrounding areas. In 1705 Aurangzeb chose to make peace with him and granted him a mansab of 4,000, so all three statements are correct.
+
+Q 78 | ih | Medieval India
+Consider the following statements about the Dutch trade in Mughal period :
+1. The Dutch transported silk goods from Bengal through Hooghly
+2. Cloves and nutmegs were collected at Surat by the Dutch and exported to Europe
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ The Dutch bought raw silk and silk goods in Bengal (Kasimbazar) and shipped them out through their base at Chinsura on the Hooghly, so statement 1 is correct. UPSC also marks statement 2 correct, apparently reading it loosely as a reference to the Dutch spice trade, in which cloves and nutmeg from their Moluccan monopoly also reached Surat; strictly, these spices were collected in the Spice Islands of Indonesia and shipped to Europe via Batavia, not collected at Surat, which is why many sources mark only statement 1 correct. (Official key; some sources differ.)
+
+Q 79 | ih | Medieval India
+Which naval forts were erected by Shivaji?
+1. Suvarnadurg
+2. Vijayadurg
+3. Sindhudurg
+4. Kolaba
+Select the answer using the code given below :
+(1) 1, 2, 3 and 4
+(2) 1, 2 and 4 only
+(3) 3 and 4 only
+(4) 2 and 3 only
+= 1
+~ All four were sea forts of Shivaji's navy: Sindhudurg (Malvan) was built by him from 1664, Suvarnadurg and Vijaydurg were captured from Bijapur and rebuilt and strengthened by him, and work on Kolaba (Alibag) began under him in 1680 and was completed by Sambhaji. Hence 1, 2, 3 and 4.
+
+Q 80 | ih | Medieval India
+Which of the following statements about the economy of Assam in the medieval period is/are correct?
+1. Ahoms cast excellent matchlocks and made first rate gunpowder and artillery pieces
+2. Assam adopted new crafts of brass-casting and making granulated sugar during this period
+3. Sarthebari village (in Kamrup) was known for its skill in metal casting
+Select the answer using the code given below :
+(1) 1 only
+(2) 1 and 2 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Under the Ahoms, Assam developed strong metal-working: they cast good matchlocks and cannon and produced quality gunpowder, and crafts such as brass-casting and making granulated sugar were taken up in this period. Sarthebari, then in Kamrup, was (and still is) famous for its bell-metal casting, so all three statements are correct.
+
+Q 81 | cur | Defence & Security
+Which of the following sectors have been identified as 'critical sectors' by the National Critical Information Infrastructure Protection Centre?
+1. Power and Energy
+2. Industry
+3. Banking and Financial services
+4. Irrigation
+5. Education
+Select the answer using the code given below :
+(1) 3, 4 and 5
+(2) 1 and 3 only
+(3) 1, 2 and 4
+(4) 1, 3 and 4
+= 2
+~ NCIIPC, set up under Section 70A of the IT Act, 2000 as a unit of the NTRO, lists six critical sectors: Power & Energy; Banking, Financial Services & Insurance; Telecom; Transport; Government; and Strategic & Public Enterprises. Industry, irrigation and education are not on the list, so only 1 and 3 are correct.
+
+Q 83 | cur | Sports
+Consider the following statements about the emblem of the Milano Cortina 2026 Winter Olympic and Paralympic Games :
+1. The name of the emblem is 'Futura'
+2. The emblem of the Games was decided by a popular vote for the first time in the history of the Olympic
+Which of the above statements is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ 'Futura' was announced as the Milano Cortina 2026 emblem in March 2021 after an online public poll in which it beat the rival design 'Dado' with about 75% of roughly 870,000 votes. This was the first time in Olympic history that a Games emblem was chosen by public vote, so both statements are correct.
+
+Q 84 | cur | International
+Which one among the following statements with regard to India's maritime initiative, SAGAR, is correct?
+(1) It is a platform for conducting joint naval exercises under QUAD
+(2) It aimed at promoting maritime cooperation with countries of the Indian Ocean Region
+(3) It is an alliance of India, USA and Japan to provide safety to merchant ships passing through the Indian Ocean Region
+(4) It is the name given to India's participation in the Contact Group on Piracy set up by the UN Security Council
+= 2
+~ SAGAR (Security and Growth for All in the Region), announced by PM Narendra Modi in Mauritius in 2015, is India's vision for maritime cooperation with the countries of the Indian Ocean Region, covering security, capacity building and the blue economy. It is not a QUAD exercise platform, a trilateral alliance or India's role in the anti-piracy contact group.
+
+Q 85 | cur | International
+Match List I with List II and select the correct answer using the code given below the Lists :
+List I (Climate Conference)    List II (Country)
+A. COP-26    1. Egypt
+B. COP-27    2. Azerbaijan
+C. COP-28    3. United Kingdom
+D. COP-29    4. UAE
+(1) A-3, B-4, C-1, D-2
+(2) A-2, B-1, C-4, D-3
+(3) A-2, B-4, C-1, D-3
+(4) A-3, B-1, C-4, D-2
+= 4
+~ COP-26 was held in Glasgow, United Kingdom (2021); COP-27 in Sharm el-Sheikh, Egypt (2022); COP-28 in Dubai, UAE (2023); and COP-29 in Baku, Azerbaijan (2024). So A-3, B-1, C-4, D-2.
+
+Q 86 | pol | Union & State Government
+Under which one among the following Articles of the Constitution of India, a member of a Civil Service, whether of the Union or of a State, seeks protection from unlawful dismissal from service?
+(1) Article 309
+(2) Article 311
+(3) Article 315
+(4) Article 320
+= 2
+~ Article 311 protects civil servants of the Union and the States: they cannot be dismissed or removed by an authority subordinate to the one that appointed them, and cannot be dismissed, removed or reduced in rank without an inquiry giving them a reasonable opportunity of being heard. Article 309 deals with recruitment and conditions of service, Article 315 sets up Public Service Commissions and Article 320 lists their functions.
+
+Q 87 | cur | International
+Which of the following statements are correct with regard to the UN Convention on the Law of the Sea (UNCLOS)?
+1. UNCLOS authorizes the UN Security Council to take a direct action in case of the disputes between States on sovereign rights over Exclusive Economic Zones
+2. UNCLOS defines contiguous zones and specifies its functions
+3. Both the US and India have ratified UNCLOS
+4. UNCLOS grants certain rights to Landlocked States
+Select the answer using the code given below :
+(1) 1, 2 and 4 only
+(2) 1 and 2 only
+(3) 2 and 4 only
+(4) 1, 3 and 4
+= 3
+~ UNCLOS defines the contiguous zone (up to 24 nautical miles, where the coastal State may enforce its customs, fiscal, immigration and sanitary laws) and, in Part X, gives landlocked States a right of access to and from the sea with freedom of transit, so 2 and 4 are correct. Disputes are settled through its own Part XV mechanisms (ITLOS, the ICJ or arbitration), not by the UN Security Council, and while India ratified UNCLOS in 1995, the US has not ratified it.
+
+Q 88 | pol | Governance & Schemes
+Which of the following statements is/are correct?
+1. The Muddiman Committee recommended the separation of Accounts from Audit as a necessary financial reform
+2. Indian Institute of Public Administration was set up on the lines recommended by Dr. Paul H. Appleby
+Select the answer using the code given below :
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Public administration texts credit the Muddiman (Reforms Enquiry) Committee of 1924 with recommending the separation of accounts from audit as a necessary financial reform; for Union accounts the separation finally came with departmentalisation in 1976. The Indian Institute of Public Administration, New Delhi, was set up in 1954 on the recommendation of Paul H. Appleby's 1953 survey of Indian public administration, so both statements are correct.
+
+Q 89 | eco | Public Finance & Taxation
+Which one among the following reports states that the budget is seen, not as a simple balancing of tax receipts against expenditure but as a sophisticated process in which instruments of taxation and expenditure are used to influence the course of the Economy?
+(1) Administrative Reforms Committee Report
+(2) Hoover Commission Report
+(3) Haldane Committee Report
+(4) Plowden Report on Control of Expenditure
+= 4
+~ The Plowden Committee report on the Control of Public Expenditure (UK, 1961) described the budget as a sophisticated process in which taxation and expenditure are used to influence the economy, and recommended planning public spending over several years against likely resources. The Haldane Committee (UK, 1918), the Hoover Commission (USA, 1947-49) and the administrative reforms reports dealt mainly with organising the machinery of government, not with this view of the budget.
+
+Q 90 | cur | International
+Which of the following statements are correct about the composition of the G 20?
+1. All G 7 countries are members of G 20
+2. All BRICS countries are members of G 20
+3. All ASEAN countries are members of G 20
+4. All permanent members of Security Council are members of G 20
+Select the answer using the code given below :
+(1) 1, 2 and 3
+(2) 2 and 4 only
+(3) 1 and 4
+(4) 2, 3 and 4
+= 3
+~ All G7 members (USA, UK, France, Germany, Italy, Japan, Canada) and all five permanent UNSC members (USA, UK, France, Russia, China) belong to the G20. BRICS expanded on 1 January 2024 to include Egypt, Ethiopia, Iran and the UAE, which are not G20 members, and Indonesia is the only ASEAN country in the G20, so only 1 and 4 are correct.
+
+Q 91 | pol | Constitution & Rights
+Which of the following statements is/are correct?
+1. Some Rights contained in Part-III of the Constitution of India are enforceable against the State only
+2. Some Rights contained in Part-III of the Constitution of India are enforceable in favor of citizens only
+3. Some Rights contained in Part-III of the Constitution of India are enforceable against both, the state and individuals
+Select the answer using the code given below :
+(1) 1 and 2 only
+(2) 2 only
+(3) 1 only
+(4) 1, 2 and 3
+= 4
+~ Some Fundamental Rights bind only the State (e.g., Article 14 and Article 16 on public employment), some are available only to citizens (Articles 15, 16, 19, 29 and 30), and some also operate against private individuals (Article 15(2), Article 17 abolishing untouchability, and Articles 23 and 24 against forced and child labour). Hence all three statements are correct.
+
+Q 92 | pol | Governance & Schemes
+Match List I with List II and select the correct answer using the code given below the Lists :
+List I (Commission/Committee)    List II (Suggested Reform in Civil Services Examination)
+A. Kothari Commission    1. Inclusion of Medical and Engineering subjects
+B. Satish Chandra Committee    2. Entrance Examination for Civil Service after Class XII
+C. P. C. Hota Committee    3. Objective methodology for personality assessment
+D. Prof. Y. K. Alagh Committee    4. Civil Services Mains examination (Written and Interview)
+(1) A-4, B-1, C-2, D-3
+(2) A-4, B-2, C-1, D-3
+(3) A-3, B-1, C-2, D-4
+(4) A-3, B-2, C-1, D-4
+= 1
+~ The D. S. Kothari Committee (report 1976) recommended the present scheme of a Preliminary followed by a Main examination (written papers and interview), adopted from 1979, so A-4; the Satish Chandra Committee (1989) recommended adding optional subjects such as Medical Sciences and Electronics & Telecommunication Engineering, so B-1. Option (a) is the only code with both A-4 and B-1, so its remaining pairs C-2 and D-3 follow by elimination.
+
+Q 93 | pol | Federalism & Local Government
+Under which one among the following Articles of the Constitution of India, the seats are reserved for the Scheduled Caste and the Scheduled Tribe in every Municipality?
+(1) 243-R
+(2) 243-S
+(3) 243-T
+(4) 243-ZA
+= 3
+~ Article 243T (added by the 74th Amendment) reserves seats for SCs and STs in every Municipality in proportion to their population, with one-third of seats reserved for women. Article 243R deals with the composition of Municipalities, 243S with Wards Committees and 243ZA with elections to Municipalities by the State Election Commission.
+
+Q 94 | pol | Governance & Schemes
+Which of the following statements is/are correct?
+1. The abolition of the Official Secrets Act, 1923 was recommended by the Second Administrative Reforms Commission
+2. The Right to Information Act was enacted in 2005
+Select the answer using the code given below :
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ The Second ARC's first report, "Right to Information: Master Key to Good Governance" (2006), recommended repealing the Official Secrets Act, 1923, so statement 1 is correct. The RTI Act was passed in 2005 and came fully into force on 12 October 2005, so statement 2 is also correct.
+
+Q 95 | cur | Defence & Security
+"Mission Shakti" (DRDO) is the name given by India to
+(1) Inter-Continental Ballistic Missile
+(2) Air-to-Air Missile
+(3) Anti-Satellite Missile
+(4) Nuclear-Powered Attack Submarine
+= 3
+~ Mission Shakti was India's anti-satellite (ASAT) missile test of 27 March 2019, in which a DRDO-developed interceptor destroyed a live Indian satellite in low Earth orbit. This made India the fourth country, after the USA, Russia and China, to demonstrate the capability.
+
+Q 96 | eco | Public Finance & Taxation
+Consider the following statements :
+1. The 15th Finance Commission used fiscal effort as a criterion for horizontal devolution unlike the 14th Finance Commission
+2. Both the 14th and the 15th Finance Commission used pre-2011 demographic variables as a criteria for horizontal devolution
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ The 15th FC gave 2.5% weight to tax and fiscal effort, a criterion the 14th FC did not use, so statement 1 is correct. The 14th FC gave 17.5% weight to 1971 population, and the 15th FC's demographic performance criterion (12.5%) uses the reciprocal of each State's total fertility rate scaled by its 1971 population, so both drew on pre-2011 demographic data and statement 2 is also correct.
+
+Q 97 | eco | Poverty, Employment & Welfare
+Which of the following does NOT show an improvement in rural areas from the National Family Health Survey 4 to National Family Health Survey 5?
+(1) Infant mortality rate
+(2) Obesity in women
+(3) Anaemia in children
+(4) Total fertility rate
+= 2,3
+~ Between NFHS-4 (2015-16) and NFHS-5 (2019-21), rural infant mortality fell and the rural total fertility rate fell from 2.4 to 2.1, both improvements. However, the share of overweight or obese rural women rose and anaemia among rural children aged 6-59 months rose to 68.3%, so neither (b) nor (c) shows an improvement, which is why UPSC accepted both answers.
+
+Q 98 | eco | Public Finance & Taxation
+Consider the following statements :
+1. Burden of a tax on a commodity is independent of who (buyer or seller) it is explicitly imposed upon
+2. Burden of a tax on a commodity depends on the slope of the demand and supply curves
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ The economic incidence of a tax does not depend on whether the law levies it on the buyer or the seller; the market price adjusts so that the final split of the burden is the same, so statement 1 is correct. That split depends on the relative slopes (elasticities) of demand and supply, with the less elastic side bearing more of the tax, so statement 2 is also correct.
+
+Q 99 | eco | Growth, Planning & National Income
+In recent years, which one among the following is the source of demand in the Indian economy in descending order?
+(1) Private Consumption, Government Consumption, Net Exports, Gross Fixed Capital Formation
+(2) Government Consumption, Private Consumption, Net Exports, Gross Fixed Capital Formation
+(3) Private Consumption, Gross Fixed Capital Formation, Government Consumption, Net Exports
+(4) Government Consumption, Private Consumption, Gross Fixed Capital Formation, Net Exports
+= 3
+~ In India's GDP by expenditure, private final consumption is the largest component (around 55-60% of GDP), followed by gross fixed capital formation (around 30%) and government final consumption (around 10%). Net exports come last because India runs a trade deficit, so they are usually negative.
+
+Q 100 | eco | Public Finance & Taxation
+What is the percentage weightage assigned to Forest and Ecology in the devolution formula given by the Fifteenth Finance Commission of India for sharing of Union tax revenue with the States?
+(1) 10%
+(2) 15%
+(3) 7.5%
+(4) 2.5%
+= 1
+~ The 15th FC's horizontal devolution weights are income distance 45%, population (2011) 15%, area 15%, forest and ecology 10%, demographic performance 12.5% and tax and fiscal effort 2.5%. The 7.5% option is the weight the 14th FC gave to forest cover.
+
+Q 101 | eco | Money, Banking & Inflation
+Consider the following statements regarding instruments of Monetary Policy :
+1. The Central Bank can increase the money supply by increasing the bank rate
+2. The Central Bank can increase the money supply by purchasing securities from the public
+3. The Central Bank can decrease the money supply by increasing the cash reserve ratio
+Which of the statements given above is/are correct?
+(1) 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ Raising the bank rate makes borrowing from the central bank costlier and contracts money supply, so statement 1 is wrong. Buying securities from the public (open market purchase) injects money, and raising the CRR locks more deposits with the central bank and reduces lending, so statements 2 and 3 are correct.
+
+Q 102 | eco | Agriculture & Industry
+Which of the following statements with regard to National Logistics Policy (NLP) is NOT correct?
+(1) NLP was launched in 2022
+(2) NLP would improve the competitiveness of Indian goods
+(3) NLP would enhance economic growth and increase employment opportunities
+(4) NLP would provide an opportunity for deleveraging balance sheets and providing fiscal space for investment in new infrastructure assets
+= 4
+~ The National Logistics Policy was launched on 17 September 2022 to cut logistics costs, which makes Indian goods more competitive and supports growth and jobs, so (a), (b) and (c) are correct. Freeing up balance sheets and creating fiscal space for new infrastructure is the rationale of asset monetisation (the National Monetisation Pipeline), not of the NLP.
+
+Q 103 | eco | Public Finance & Taxation
+Consider the following statements regarding Public Goods and Externalities :
+1. Non-rivalry and non-excludability are two characteristics of Public Goods
+2. Market can provide the optimal amount of a good in the presence of externalities
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Public goods are non-rival (one person's use does not reduce another's) and non-excludable (no one can be kept from using them), so statement 1 is correct. Externalities cause market failure: goods with negative externalities are over-produced and those with positive externalities under-produced, so the market does not reach the optimal amount and statement 2 is wrong.
+
+Q 104 | eco | Public Finance & Taxation
+Population of the year 2011 was first introduced in the tax devolution formula for sharing Union tax revenue with the States by
+(1) Thirteenth Finance Commission
+(2) Fifteenth Finance Commission
+(3) Fourteenth Finance Commission
+(4) Twelfth Finance Commission
+= 3
+~ Earlier Finance Commissions, including the 13th, used 1971 population. The 14th FC kept 1971 population (17.5%) but added a 10% "demographic change" criterion based on 2011 population, the first use of 2011 data; the 15th FC then based its 15% population criterion on 2011 data.
+
+Q 105 | eco | Money, Banking & Inflation
+Which of the following statements is NOT correct for Pradhan Mantri Mudra Yojana (PMMY)?
+(1) It was launched in 2015
+(2) It grants loans of up to ₹15 lakhs for income generating manufacturing, trading and services sectors
+(3) Under this scheme only the term loan requirements can be met and not the working capital requirements
+(4) There is no insistence on collateral for the sanction of loan
+= 2,3
+~ PMMY was launched on 8 April 2015 and gives collateral-free loans, so (a) and (d) are correct. Statement (b) is wrong because the ceiling was ₹10 lakh at the time of the exam (raised to ₹20 lakh under the new Tarun Plus category in October 2024, never ₹15 lakh), and (c) is wrong because Mudra loans meet both term-loan and working-capital needs (e.g., through the MUDRA card), so UPSC accepted both (b) and (c).
+
+Q 106 | eco | Growth, Planning & National Income
+What were the main reforms undertaken under the New Economic Policy of the early 1990s?
+1. Trade liberalization
+2. Public Sector Disinvestment
+3. Poverty Alleviation
+4. Rapid industrialization
+Select the answer using the code given below:
+(1) 1 only
+(2) 3 and 4
+(3) 1 and 2
+(4) 2 and 4
+= 3
+~ The New Economic Policy of 1991 rested on Liberalisation, Privatisation and Globalisation: it liberalised trade (lower tariffs, removal of quantitative restrictions and import licensing) and began disinvestment of government equity in public sector enterprises. Poverty alleviation and rapid state-led industrialization were aims of the earlier planning era, not the core reforms of 1991.
+
+Q 107 | eco | Public Finance & Taxation
+Consider the following statements:
+1. National Monetisation Pipeline estimates that for the period 2022-2025, the top three sectors in terms of monetization potential are roads, railways, and oil and gas pipelines
+2. Under the National Monetisation Pipeline, the instruments to be used for asset monetization include Public-Private Partnership concessions and Infrastructure Investment Trusts
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ The National Monetisation Pipeline (FY 2022-25) places roads (about 27%), railways (about 25%) and power (about 15%) as the top three sectors by monetisation value; oil and gas pipelines (about 8%) come fourth, so statement 1 is wrong. Statement 2 is correct: assets are to be monetised through direct contractual instruments such as PPP concessions and capital-market instruments such as InvITs.
+
+Q 108 | eco | Money, Banking & Inflation
+Retail core inflation is calculated excluding which of the following?
+1. Food and beverages
+2. Fuel and light
+3. Transport and communication
+4. Clothing and Education
+Select the answer using the code given below:
+(1) 1 and 2 only
+(2) 1, 2 and 3 only
+(3) 1, 2, 3 and 4
+(4) 3 and 4 only
+= 1
+~ Core (retail) inflation is CPI inflation with its most volatile groups, 'food and beverages' and 'fuel and light', removed. Groups such as transport and communication, clothing and education remain in the core basket.
+
+Q 109 | eco | Public Finance & Taxation
+Which of the following is a part of the capital receipt of the Government of India?
+1. Disinvestment receipts
+2. Interest receipts
+3. Small savings
+4. Net market borrowing
+Select the answer using the code given below:
+(1) 1 and 3 only
+(2) 2 and 4 only
+(3) 1, 2, 3 and 4
+(4) 1, 3 and 4 only
+= 4
+~ Capital receipts either create a liability or reduce the government's assets: net market borrowings and small savings (through the NSSF) are debt receipts, and disinvestment proceeds are non-debt capital receipts. Interest receipts are non-tax revenue receipts, so item 2 is excluded.
+
+Q 110 | eco | Public Finance & Taxation
+Arrange the following sources of revenue of the Central Government in ascending manner in terms of percentage contribution to the total revenues of the Central Government in 2023-24
+(1) Union Excise Duty, Custom, Corporation Tax, GST
+(2) Custom, Union Excise Duty, GST, Corporation Tax
+(3) Custom, Union Excise Duty, Corporation Tax, GST
+(4) Custom, GST, Union Excise Duty, Corporation Tax
+= 3
+~ In the Budget 2023-24 "rupee comes from" breakdown, customs gave about 4 paise, Union excise duties 7 paise, corporation tax 15 paise and GST and other taxes 17 paise of every rupee. Hence the ascending order is Customs < Union Excise Duty < Corporation Tax < GST.
+
+Q 111 | cur | International
+Which of the following statements with regard to the outcomes of the talks between the Prime Minister of India and the President of UAE held in February, 2024 is/are correct?
+1. Both countries signed an agreement on inter-linking of domestic debit/credit cards
+2. An MoU was signed on cooperation in digital infrastructure projects
+3. Both countries agreed that a Bilateral Investment Treaty shall be signed in the next meeting at the ministerial level
+Select the answer using the code given below:
+(1) 1 and 2 only
+(2) 2 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 1
+~ During PM Modi's visit to the UAE on 13-14 February 2024, the two sides exchanged an agreement on interlinking domestic debit/credit cards (India's RuPay with the UAE's JAYWAN) and an MoU on cooperation in digital infrastructure projects, so statements 1 and 2 are correct. The Bilateral Investment Treaty was itself signed during that visit, not deferred to a later ministerial meeting, so statement 3 is wrong.
+
+Q 112 | eco | External Sector & Trade
+Which of the following is NOT one of the pillars of India's 'Foreign Trade Policy-2023'?
+(1) Enlarging MFN (Most Favored Nations)
+(2) Export promotion through collaboration
+(3) Ease of doing business
+(4) Emerging areas - streamlining SCOMET policy
+= 1
+~ Foreign Trade Policy 2023 rests on four pillars: Incentive to Remission; Export promotion through collaboration (exporters, States, districts and Indian Missions); Ease of doing business, reduction in transaction cost and e-initiatives; and Emerging areas (e-commerce, districts as export hubs, streamlining SCOMET policy). Enlarging MFN status is not one of them.
+
+Q 113 | cur | National
+Which of the following statements about 'Vibrant Village Programme' of the Government of India is/are correct?
+1. It aims at comprehensive development of the identified villages
+2. Fairs, festivals, sports meet etc. are organized under this programme
+Select the answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ The Vibrant Villages Programme (approved in February 2023 with ₹4,800 crore for 2022-23 to 2025-26) is a centrally sponsored scheme for the comprehensive development of identified villages in blocks along India's northern border. To keep these villages lively and check out-migration, activities such as fairs and festivals, awareness and service-delivery camps and other community events are organised under it, so both statements are correct.
+
+Q 114 | cur | International
+Which of the following countries chaired the 43rd ASEAN SUMMIT?
+(1) Thailand
+(2) Philippines
+(3) Indonesia
+(4) Cambodia
+= 3
+~ The 43rd ASEAN Summit was held in Jakarta on 5-7 September 2023 under Indonesia's ASEAN chairmanship for 2023, with the theme "ASEAN Matters: Epicentrum of Growth".
+
+Q 115 | cur | Awards & Personalities
+Which one among the following Indian PSUs has been declared as the winner at the Brandon Hall Group's Excellence in Technology Award-2023?
+(1) NTPC
+(2) BHEL
+(3) Balmer Lawrie
+(4) HPCL
+= 1
+~ NTPC won two silver awards at the Brandon Hall Group's Excellence in Technology Awards 2023 (announced in December 2023), in the categories "Best Advance in Corporate Wellbeing Technology" and "Best Advance in Augmented and Virtual Reality". Brandon Hall Group is a US-based research firm whose awards recognise excellence in human-capital and learning practices.
+
+Q 116 | cur | International
+Which of the following two organizations are parts of TIWB (Tax Inspectors Without Borders)?
+(1) United Nations Development Programme (UNDP) and Association of Southeast Asian Nations (ASEAN)
+(2) Organization for Economic Cooperation and Development (OECD) and ASEAN
+(3) UNDP and Organization for Economic Cooperation and Development (OECD)
+(4) International Labour Organization (ILO) and ASEAN
+= 3
+~ Tax Inspectors Without Borders is a joint initiative of the OECD and UNDP, launched in July 2015 at the Financing for Development conference in Addis Ababa. It sends experienced tax auditors to developing countries to build their capacity to audit, especially multinational companies; ASEAN and the ILO have no role in it.
+
+Q 117 | geo | World Geography
+Which of the following countries does NOT share boundary with Ukraine?
+(1) Romania
+(2) Moldova
+(3) Poland
+(4) Lithuania
+= 4
+~ Ukraine's land neighbours are Russia, Belarus, Poland, Slovakia, Hungary, Romania and Moldova. Lithuania is a Baltic state lying to the north beyond Belarus, so it has no border with Ukraine.
+
+Q 118 | cur | International
+JAYWAN is the domestic Debit Card of which of the following countries?
+(1) UAE
+(2) Egypt
+(3) Saudi Arabia
+(4) Nepal
+= 1
+~ Jaywan is the UAE's first domestic card scheme, run by Al Etihad Payments (a subsidiary of the Central Bank of the UAE) and built on India's RuPay card technology stack. PM Narendra Modi and UAE President Sheikh Mohamed bin Zayed unveiled it in Abu Dhabi on 13 February 2024.
+
+Q 119 | cur | Awards & Personalities
+Who, amongst the following, has won International Emmy Award-2023 for 'Best Actor'?
+(1) Jim Sarbh
+(2) Shefali Shah
+(3) Vir Das
+(4) Martin Freeman
+= 4
+~ Martin Freeman won Best Performance by an Actor at the 51st International Emmy Awards (November 2023) for the British series "The Responder". Jim Sarbh (Rocket Boys) was only a nominee in that category, Shefali Shah was nominated for Best Actress (Delhi Crime 2), and Vir Das won in the Comedy category for "Vir Das: Landing".
+
+Q 120 | eco | External Sector & Trade
+Which of the following statements about CBAM (Carbon Border Adjustment Mechanisms) is/are correct?
+1. These are an emerging set of trade policy tools to allow movement of carbon-intensive economic activity from a jurisdiction having less stringent climate policy to a jurisdiction having stringent climate policy
+2. These are meant to increase the environmental effectiveness of climate policies
+Select the answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ A CBAM (such as the EU's, whose transitional phase began in October 2023) puts a carbon price on imports of carbon-intensive goods to prevent "carbon leakage", i.e. the shift of carbon-intensive activity from a jurisdiction with stringent climate policy to one with less stringent policy. Statement 1 is therefore wrong on two counts: CBAMs are meant to prevent, not allow, such movement, and leakage runs from the stringent to the less stringent jurisdiction, not the other way round; statement 2 is correct because curbing leakage makes climate policies environmentally more effective.
+
+Q 121 | cur | Awards & Personalities
+Which of the following statements about the Nobel Peace Prize for 2023 is/are correct?
+1. The 2023 Nobel Peace Prize was awarded to Narges Mohammadi
+2. Narges Mohammadi was awarded the prize for her struggle to bring peace in Afghanistan and Iran
+Select the answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ The 2023 Nobel Peace Prize went to the jailed Iranian activist Narges Mohammadi "for her fight against the oppression of women in Iran and her fight to promote human rights and freedom for all". The award had nothing to do with Afghanistan or bringing peace there, so statement 2 is wrong.
+
+Q 122 | cur | International
+Which one among the following statements with regard to the United Nations Climate Change Conference (COP28) is NOT correct?
+(1) The 'Global Stocktake' is the central outcome of COP28
+(2) It recognized the need to limit global warming to 1.5°C
+(3) It directed the developing countries to lead the transition away from fossil fuel
+(4) It emphasized accelerated phase-down of coal-power
+= 3
+~ The COP28 decision (Dubai, December 2023) on the first Global Stocktake, its central outcome, called on all Parties to transition away from fossil fuels in energy systems in a just, orderly and equitable manner; it did not direct developing countries to lead, since under the Paris principle of common but differentiated responsibilities developed countries are expected to take the lead. The same text reaffirmed the 1.5°C goal and called for accelerating efforts towards the phase-down of unabated coal power, so (1), (2) and (4) are correct.
+
+Q 123 | pol | Constitutional & Statutory Bodies
+Which of the following statements with regard to the Anoop Barenwal v. Union of India (2023) case is/are correct?
+1. The case was heard by a Constitutional Bench
+2. According to the judgment, the grounds for removal of Election Commissioners shall be the same as the Chief Justice of India
+Select the answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ The case (decided 2 March 2023) was heard by a five-judge Constitution Bench headed by Justice K.M. Joseph, which ruled that the CEC and Election Commissioners be appointed on the advice of a committee of the Prime Minister, the Leader of the Opposition and the Chief Justice of India until Parliament makes a law. It did not equate the removal of Election Commissioners with that of the CJI: the majority left Article 324(5) as it is (only the CEC is removable like a Supreme Court judge), and only Justice Rastogi's separate opinion suggested giving the other ECs the same protection as the CEC.
+
+Q 124 | cur | National
+The National Council of Science Museums (NCSM), which is developing Science Centres/Museums/Innovation Hubs in India, works under
+(1) the Ministry of Science and Technology
+(2) the Ministry of Culture
+(3) the Ministry of Education
+(4) the Ministry of Earth Sciences
+= 2
+~ NCSM is an autonomous society under the Union Ministry of Culture, headquartered in Kolkata, which builds and runs science centres and museums across India. Despite its science work, it does not come under the Ministry of Science and Technology.
+
+Q 125 | cur | National
+Which one among the following cities was included as the 'City of Music' in the year 2023 in the UNESCO's Creative Cities Network?
+(1) Kozhikode
+(2) Chennai
+(3) Varanasi
+(4) Gwalior
+= 4
+~ On 31 October 2023 UNESCO added Gwalior to its Creative Cities Network as a "City of Music" and Kozhikode as India's first "City of Literature". Varanasi (2015) and Chennai (2017) were already Cities of Music, but they were included earlier, not in 2023.

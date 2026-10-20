@@ -301,7 +301,7 @@ def exam_confs():
            keyname="UPSC's answer keys", keyshort="UPSC's answer keys (2025: compiled from published keys)",
            title='UPSC CAPF AC PYQs – Paper I Previous Question Papers with Answers (2024–2026), English & Hindi | Learn with Anil',
            eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
-           papers_note="2024: UPSC's official answer key (Series A). 2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
+           papers_note="2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. 2024: UPSC's official answer key (Series A). Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
     ]
 
 
