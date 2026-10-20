@@ -160,6 +160,8 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .hub-figs{padding-top:24px}
 .hero h1[lang]{line-height:1.3}
 .hero p.hero-l2{font-size:16px;margin-top:-4px}
+.why h4[lang="te"],.why-en summary[lang="te"]{font-family:"Noto Sans Telugu",var(--f-body)}.why h4[lang="hi"],.why-en summary[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body)}
+.why-en{margin-top:6px}.why-en summary{cursor:pointer;font-size:13.5px;font-weight:700;color:var(--accent-text)}.why-en p{margin:6px 0 0}
 #home-static .hero h1{max-width:20ch}
 #hub-static .hero h1{max-width:21ch}
 div.feature:hover{border-color:var(--line)}
@@ -608,7 +610,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/upsc-capf-fe9358fcd6.js"></script>
+<script src="data/upsc-capf-87c0faab26.js"></script>
 <script>
 (function(){
 "use strict";
@@ -813,7 +815,13 @@ function stemHTML(q){ return `<p class="qtext"${langAttr(q)}>${esc(QT(q))}</p>` 
 function answerText(q){ const o=OPTS(q); return isMCQ(q) ? q.a.map(i=>`(${LET[i]}) ${o[i]}`).join("  or  ") : ANS(q); }
 function answerBox(q){ const te = isMCQ(q)? (P.lang===L2.code&&!!q.ot) : (P.lang===L2.code&&!!q.at); return `<div class="answer"${te?LATTR:""}><small lang="en">Official answer</small>${esc(answerText(q))}</div>`; }
 function videoBtn(q){ return q.v? `<button class="video-btn" type="button" data-act="video" data-id="${q.id}"><span class="play" aria-hidden="true">▶</span><span><b lang="te">వీడియో వివరణ చూడండి</b><small>Watch the video explanation · ${esc(q.v.dur||"1 min")} · Telugu</small></span></button>` : ""; }
-function whyHTML(q){ return (q.w? `<div class="why"><h4>Explanation</h4><p>${esc(q.w)}</p></div>` : "") + videoBtn(q); }
+const WHY_L2 = {te:"వివరణ", hi:"व्याख्या"}, EN_TOO = {te:"English లో చదవండి", hi:"अंग्रेज़ी में पढ़ें"};
+function whyBox(w, wt, l){   // the explanation in the reader's language, with the English one a tap away
+  if(wt && l && l!=="en") return `<div class="why"><h4 lang="${l}">${WHY_L2[l]||"Explanation"}</h4><p lang="${l}">${esc(wt)}</p>`
+    + (w? `<details class="why-en"><summary lang="${l}">${EN_TOO[l]||"Read in English"}</summary><p>${esc(w)}</p></details>` : "") + `</div>`;
+  return w? `<div class="why"><h4>Explanation</h4><p>${esc(w)}</p></div>` : "";
+}
+function whyHTML(q){ return whyBox(q.w, q.wt, P.lang===L2.code ? L2.code : "en") + videoBtn(q); }
 function optsStatic(q, chosen, reveal){
   return `<ul class="opts"${(P.lang===L2.code&&q.ot)?LATTR:""}>${OPTS(q).map((o,i)=>{
     let cls="", tag="";
@@ -1220,7 +1228,7 @@ function vResult(){
 function bankFilter(){
   const qtext = UI.bankQ.trim().toLowerCase();
   return QS.filter(q=>(UI.bankPaper==="all"||q.p===UI.bankPaper) && (UI.bankSubj==="all"||q.s===UI.bankSubj) && (UI.bankTopic==="all"||q.t===UI.bankTopic) &&
-    (!qtext || [q.q, q.qt||"", q.t, SUBJ[q.s].name, ...(q.o||[]), ...(q.ot||[]), q.ans||"", q.at||"", q.w].join(" ").toLowerCase().includes(qtext)));
+    (!qtext || [q.q, q.qt||"", q.t, SUBJ[q.s].name, ...(q.o||[]), ...(q.ot||[]), q.ans||"", q.at||"", q.w, q.wt||""].join(" ").toLowerCase().includes(qtext)));
 }
 function bankResults(){
   const list = bankFilter(), shown = list.slice(0, bankLimit);
@@ -1466,7 +1474,7 @@ function renderQotd(sel, scope){
     return `<li><button type="button" class="opt ${cls}" data-act="qotdpick" data-i="${j}" ${done?"disabled":""}><span class="bub">${LET[j]}</span><span>${esc(o)}</span><span class="tag">${tag}</span></button></li>`;
   }).join("")}</ul>`;
   const after = done ? `${x.a.includes(pick)? `<p class="verdict good">Correct! 🎉</p>` : `<p class="verdict bad">Not quite. The answer is (${x.a.map(i=>LET[i]).join(" or ")}).</p>`}
-      ${x.w? `<div class="why"><h4>Explanation</h4><p>${esc(x.w)}</p></div>`:""}
+      ${whyBox(x.w, te ? x.wt : "", ql)}
       <div class="row"><a class="btn btn-secondary btn-sm" href="${qotdHref(x)}">Practise more from this paper</a></div>` : "";
   box.hidden = false;
   const qh = onHub ? hubLang() : "en";
