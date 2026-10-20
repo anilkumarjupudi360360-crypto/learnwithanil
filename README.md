@@ -8,4 +8,5 @@ Free practice portal for APPSC Group-II previous year questions (Screening 2019 
 - `tools/app.html` – the app template
 - `src/static/` – files copied unchanged to the site root (e.g. Google Search Console verification)
 
-To publish a change: `SITE_URL=https://learnwithanil.in python3 tools/build.py && rm -rf docs && cp -r dist/site docs`, then commit and push.
+To publish a change: `SITE_URL=https://learnwithanil.in python3 tools/build.py && python3 tools/pdfs.py && python3 test/smoke.py && rm -rf docs && cp -r dist/site docs && rm -rf dist`, then commit and push.
+- `tools/pdfs.py` – one PDF per paper (questions, answer key, explanations) into `dist/site/…/pdf/`; only changed papers are re-rendered (`tools/pdf-manifest.json`).
