@@ -14,6 +14,7 @@ INSTAGRAM = 'learn_with_anil06'
 WHATSAPP = '919494792739'
 PHONE = '+91 94947 92739'
 EMAIL = 'anilkumarjupudi360360@gmail.com'
+SHOW_TIMERS = False   # exam countdown cards on the start page (dates stay in src/exams.json); Anil asked to remove them, 20 Oct 2026
 
 PAPERS = [
   dict(id='s2024', file='screening-2024.txt', year=2024, stage='Screening Test', short='Screening 2024',
@@ -309,7 +310,7 @@ def main():
                     key=conf['key'], exam=conf['name'], examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     base=prefix, qotd=qotd_pool(loaded if is_root else [(conf, papers, questions)], 120 if is_root else 90),
                     exams=catalog['exams'] if is_root else [], cats=catalog['cats'] if is_root else [],
-                    timers=catalog.get('timers', []) if is_root else [])
+                    timers=catalog.get('timers', []) if (is_root and SHOW_TIMERS) else [])
         data_json = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
         total = len(questions)
         home_papers = ''.join(home_paper_card(p) for p in sorted(papers, key=lambda p: (-p['year'], p['id'])))
@@ -321,7 +322,7 @@ def main():
         faq = conf['faq'](total, len(papers))
         faq_html = ''.join(f'<details><summary>{esc(qq)}</summary><p>{esc(aa)}</p></details>' for qq, aa in faq)
         hub = hub_html(catalog, counts, grand) if is_root else ''
-        timers = timers_html(catalog) if is_root else ''
+        timers = timers_html(catalog) if (is_root and SHOW_TIMERS) else ''
 
         def fill(s, photo, title, seo):
             return (s.replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title)
