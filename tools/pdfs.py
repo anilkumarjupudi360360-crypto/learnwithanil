@@ -17,7 +17,7 @@ ROOT, DIST = B.ROOT, B.DIST
 DOCS = os.path.join(ROOT, 'docs')
 FONTS = os.path.join(ROOT, 'tools', 'fonts')
 MANIFEST = os.path.join(ROOT, 'tools', 'pdf-manifest.json')
-VERSION = 'pdf-v1'   # bump to re-render every PDF after a layout change
+VERSION = 'pdf-v2'   # bump to re-render every PDF after a layout change
 esc = B.esc
 
 FACES = [('Source Sans 3', 'source-sans-3-latin', 400), ('Source Sans 3', 'source-sans-3-latin', 600), ('Source Sans 3', 'source-sans-3-latin', 700),
@@ -110,8 +110,9 @@ def paper_html(conf, p, qs, subj):
         else:
             ans, ans2 = q['ans'], q.get('at', '')
         l2a = f' <span lang="{l2["code"]}">· {esc(ans2)}</span>' if ans2 else ''
+        wt = f'<p class="why" lang="{l2["code"]}">{esc(q["wt"])}</p>' if q.get('wt') else ''
         parts.append(f'<div class="ans"><span class="n">Q{q["n"]}.</span> <b>{esc(ans)}</b>{l2a}'
-                     f'<p class="why">{esc(q["w"])}</p></div>')
+                     f'<p class="why">{esc(q["w"])}</p>{wt}</div>')
     parts.append(f'<div class="box">More free papers, mock tests and Telugu/Hindi practice at <a href="{site}/">learnwithanil.in</a>. '
                  f'Explanations by Jupudi Anil Kumar. Not affiliated with {conf["board"]}.</div></body></html>')
     return ''.join(parts)

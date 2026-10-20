@@ -276,6 +276,11 @@ def load_exam(conf):
     for p in conf['papers']:
         qs = parse(p, conf['src'], subj)
         nte = parse_te(p, qs, conf['src'], conf['l2']['dir'])
+        xp = os.path.join(SRC, conf['src'], conf['l2']['dir'], 'explanations.json')   # explanations in Telugu / Hindi
+        if os.path.exists(xp):
+            wt = json.load(open(xp, encoding='utf-8'))
+            for q in qs:
+                if q['id'] in wt and q.get('qt'): q['wt'] = wt[q['id']]
         if nte: print(f'  {conf["short"]} {p["id"]}: {conf["l2"]["name"]} for {nte} questions')
         if not qs:
             print(f'  - skipping {conf["short"]} {p["id"]} (no source yet)'); continue
@@ -304,7 +309,7 @@ def qotd_pool(items, n):
         random.Random('qotd-' + conf['id']).shuffle(el)
         base = conf['dir'] + '/' if conf['dir'] else ''
         pools.append([dict(id=q['id'], ex=conf['short'], exName=conf['name'], base=base, pb=conf['pb'], paper=pshort[q['p']], l2=conf['l2']['code'],
-                           q=q['q'], qt=q.get('qt', ''), o=q['o'], ot=q.get('ot'), a=q['a'], w=q['w']) for q in el])
+                           q=q['q'], qt=q.get('qt', ''), o=q['o'], ot=q.get('ot'), a=q['a'], w=q['w'], wt=q.get('wt', '')) for q in el])
     out, i = [], 0
     while len(out) < n and any(i < len(p) for p in pools):
         for p in pools:
@@ -938,7 +943,8 @@ def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None):
     if q.get('ot'): ans_te = ' / '.join(f'({i + 1}) {q["ot"][i]}' for i in q['a'])
     elif q.get('at'): ans_te = q['at']
     te_ans = f'<p class="ans" lang="{l2["code"]}">{l2["ans"]}: {esc(ans_te)}</p>' if ans_te else ''
-    parts.append(f'<details><summary>Show answer</summary><p class="ans">Answer: {esc(ans)}</p>{te_ans}<p class="why">{esc(q["w"])}</p></details></li>')
+    wt = f'<p class="why" lang="{l2["code"]}" style="margin-top:6px">{esc(q["wt"])}</p>' if q.get('wt') else ''
+    parts.append(f'<details><summary>Show answer</summary><p class="ans">Answer: {esc(ans)}</p>{te_ans}<p class="why">{esc(q["w"])}</p>{wt}</details></li>')
     return ''.join(parts)
 
 
