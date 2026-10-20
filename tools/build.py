@@ -104,9 +104,17 @@ G1_SUBJECTS = [
 # ---------- UPSC CAPF (AC) ----------
 CAPF_PAPERS = [
   dict(id='c2026a', file='capf-2026-paper-1.txt', year=2026, stage='Paper I', short='CAPF 2026 · P-I',
-       title='UPSC CAPF (AC) 2026 Paper I', notif='Series A · provisional key', held='19 July 2026',
+       title='UPSC CAPF (AC) 2026 Paper I', notif='Series A · provisional key', held='19 July 2026', key="UPSC's provisional answer key",
        fmt='mcq', slug='upsc-capf-ac-2026-paper-1-general-ability-intelligence-question-paper-with-answers',
        blurb='General Ability & Intelligence: General Mental Ability, General Science, Current Events, Indian Polity & Economy, History and Geography (125 questions, 250 marks).'),
+  dict(id='c2025a', file='capf-2025-paper-1.txt', year=2025, stage='Paper I', short='CAPF 2025 · P-I',
+       title='UPSC CAPF (AC) 2025 Paper I', notif='Answers compiled (UPSC key not published)', held='3 August 2025', key='answers compiled by Learn with Anil from three published keys (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-capf-ac-2025-paper-1-general-ability-intelligence-question-paper-with-answers',
+       blurb='General Ability & Intelligence: Current Events, General Science, Polity, Economy, History, Geography and Mental Ability (125 questions, 250 marks).'),
+  dict(id='c2024a', file='capf-2024-paper-1.txt', year=2024, stage='Paper I', short='CAPF 2024 · P-I',
+       title='UPSC CAPF (AC) 2024 Paper I', notif='Series A · official key', held='4 August 2024', key="UPSC's official answer key",
+       fmt='mcq', slug='upsc-capf-ac-2024-paper-1-general-ability-intelligence-question-paper-with-answers',
+       blurb='General Ability & Intelligence: General Science, Current Events, Polity, Economy, History, Geography and Mental Ability (125 questions, 250 marks).'),
 ]
 
 CAPF_SUBJECTS = [
@@ -248,6 +256,7 @@ def load_exam(conf):
             if 'img' in q: q['img'] = img_data_uri(os.path.join(conf['src'], q['img']))
         pp = {k: p[k] for k in ('id', 'year', 'stage', 'short', 'title', 'notif', 'held', 'fmt', 'slug', 'blurb')}
         pp['count'] = len(qs)
+        if p.get('key'): pp['key'] = p['key']
         papers.append(pp); questions += qs
         print(f'  {conf["short"]} {p["id"]}: {len(qs)} questions')
     return papers, questions
@@ -289,10 +298,10 @@ def exam_confs():
            papers_note="Every paper uses APPSC's official final key. The 2024 key shows all four options. The 2023 and 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
       dict(id='upsc-capf', dir='upsc-capf', src='upsc-capf', key='upsc-capf', name='UPSC CAPF (AC)', short='CAPF (AC)', seo='UPSC CAPF AC',
            slugp='upsc-capf-ac', papers=CAPF_PAPERS, subjects=CAPF_SUBJECTS, faq=FAQ_CAPF, board='UPSC', l2=L2_HI,
-           keyname="UPSC's official provisional answer key", keyshort="UPSC's provisional answer key",
-           title='UPSC CAPF AC PYQs – 2026 Paper I Question Paper with Answers in English & Hindi | Learn with Anil',
-           eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2026',
-           papers_note="The 2026 Paper I uses UPSC's provisional answer key for Series A, published three days after the exam. UPSC dropped question 41, so it is left out. UPSC's final key may still differ for a few questions. Every question is in English and Hindi, as printed in the booklet."),
+           keyname="UPSC's answer keys", keyshort="UPSC's answer keys (2025: compiled from published keys)",
+           title='UPSC CAPF AC PYQs – Paper I Previous Question Papers with Answers (2024–2026), English & Hindi | Learn with Anil',
+           eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
+           papers_note="2024: UPSC's official answer key (Series A). 2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
     ]
 
 
@@ -388,7 +397,7 @@ def main():
         if is_root:
             site_title = 'APPSC PYQs Free – Group 1 & Group 2 Previous Question Papers with Answers | Learn with Anil'
             site_desc = (f'Free APPSC PYQs: {grand:,} previous year questions from APPSC Group 1 and Group 2 question papers (2019–2025) '
-                         f'and UPSC CAPF (AC) 2026, with official-key answers and explanations in English, Telugu and Hindi. Practise online topic-wise. '
+                         f'and UPSC CAPF (AC) 2024–2026, with official-key answers and explanations in English, Telugu and Hindi. Practise online topic-wise. '
                          f'TGPSC, UPSC, SSC, banking and railway exams are being added.')
             canon = SITE_URL + '/'
         else:
@@ -579,11 +588,11 @@ def FAQ_G1(total, npapers):
 def FAQ_CAPF(total, npapers):
     return [
       ('Where can I get UPSC CAPF AC previous year question papers with answers?',
-       f'This page has {total} questions from the UPSC CAPF (Assistant Commandants) 2026 Paper I, General Ability and Intelligence, in English and Hindi as printed in the official question booklet. The answers come from UPSC\'s provisional answer key (Series A), and every question has a short explanation. You can read the paper with answers or practise it as a quiz, free.'),
+       f'This page has {total} questions from {npapers} UPSC CAPF (Assistant Commandants) Paper I papers, General Ability and Intelligence (2024, 2025 and 2026), in English and Hindi as printed in the official question booklets. Every question has a short explanation. You can read each paper with answers or practise it as a quiz, free.'),
       ('What is the UPSC CAPF AC exam pattern?',
-       'The written exam has two papers on the same day. Paper I, General Ability and Intelligence, is objective, carries 250 marks and lasts two hours; the 2026 paper had 125 questions, in English and Hindi. It covers General Mental Ability, General Science, Current Events of national and international importance, Indian Polity and Economy, History of India, and Indian and World Geography. A wrong answer costs one-third of the marks for that question. Paper II, General Studies, Essay and Comprehension, is descriptive and carries 200 marks. Candidates who qualify take physical and medical standards tests and then an interview.'),
+       'The written exam has two papers on the same day. Paper I, General Ability and Intelligence, is objective, carries 250 marks and lasts two hours; recent papers have had 125 questions, in English and Hindi. It covers General Mental Ability, General Science, Current Events of national and international importance, Indian Polity and Economy, History of India, and Indian and World Geography. A wrong answer costs one-third of the marks for that question. Paper II, General Studies, Essay and Comprehension, is descriptive and carries 200 marks. Candidates who qualify take physical and medical standards tests and then an interview.'),
       ('Are the answers on this site official?',
-       'They come from the provisional answer key that UPSC published on its website after the 2026 exam. Question 41, which UPSC dropped, is left out. UPSC\'s final key can differ for a few questions. The explanations are written by Learn with Anil.'),
+       'For 2024 they come from UPSC\'s official answer key. For 2026 they come from the provisional key UPSC published after the exam; the final key can differ for a few questions. UPSC has not published a key for 2025 that we could find, so those answers were compiled from three published coaching keys and checked one by one; where a source reports a different answer, the explanation says so. Questions UPSC dropped are left out. The explanations are written by Learn with Anil.'),
       ('Can I practise the CAPF questions in Hindi?',
        'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, exactly as printed in UPSC\'s booklet. Tap EN to switch back.'),
       ('Do I need to sign up?',
@@ -732,10 +741,11 @@ def build_static(conf, papers, subjects, questions, subj):
         qs = by_p[p['id']]
         rel = f'papers/{p["slug"]}.html'
         can = base + rel
-        fmt = (f'All four options with the answer from {conf["keyname"]}' if p['fmt'] == 'mcq'
+        pkey = p.get('key', conf['keyname'])
+        fmt = (f'All four options with the answer from {pkey}' if p['fmt'] == 'mcq'
                else f'Each question with its official answer from {conf["keyname"]} (the key lists the correct answer only)')
         title = f'{p["title"]} Question Paper with Answers – {seo} PYQs | Learn with Anil'
-        kdesc = 'official final-key answers' if conf['board'] == 'APPSC' else f'answers from {conf["keyshort"]}'
+        kdesc = 'official final-key answers' if conf['board'] == 'APPSC' else (f'answers from {pkey}' if p.get('key', '').startswith('UPSC') else 'compiled answers')
         langs = f' in English and {conf["l2"]["name"]}' if conf['board'] != 'APPSC' else ''
         desc = (f'{p["title"]} ({p["notif"]}, held {p["held"]}): {len(qs)} previous year questions{langs} with {kdesc} '
                 f'and short explanations, topic-wise. Practise {seo} PYQs online free.')
