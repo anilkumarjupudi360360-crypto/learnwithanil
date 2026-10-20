@@ -1,0 +1,1851 @@
+# TSLPRB SCT SI (Civil) and/or equivalent posts, Preliminary Written Test, held 7 August 2022 (booklet A).
+# Answers: TSLPRB final key (21 October 2022), booklet A column. Explanations by Learn with Anil.
+# Left out (deleted, or three/four options accepted): 43, 54, 111, 146, 173, 180, 184, 195, 199
+
+Q 1 | ari | Interest
+A person invested an amount of ₹ X at the rate of 18% simple interest per annum and an amount of ₹ Y at the rate of 12% simple interest per annum. He received an interest of ₹ 4,320/- at the end of the year. Had he interchanged the amounts invested, he would have received an interest of ₹ 4,680/-. Then |X - Y| =
+(1) ₹ 9,500/-
+(2) ₹ 8,000/-
+(3) ₹ 7,500/-
+(4) ₹ 6,000/-
+= 4
+~ 0.18X + 0.12Y = 4,320 and 0.12X + 0.18Y = 4,680; subtracting, 0.06(X - Y) = -360, so X - Y = -6,000 and |X - Y| = ₹6,000. (Solving fully gives X = 12,000 and Y = 18,000, which satisfy both equations.)
+
+Q 2 | ari | Interest
+The ratio of a principal and the total amount with r% simple interest rate on that principal after 1 year is a : b then value of r in terms of a, b is
+(1) ((b - a)/a) × 100
+(2) ((b - a)/b) × 100
+(3) (b - a)/(b + a) × 100
+(4) (b + a)/(b - a) × 100
+= 1
+~ After 1 year the amount is P(1 + r/100), so a : b = 100 : (100 + r); then 100b = a(100 + r), giving r = ((b - a)/a) × 100. Option (2) wrongly divides the interest by the amount b instead of the principal a.
+
+Q 3 | ari | Interest
+A person invested ₹18,000 at the rate of 20% compound interest per annum. Then the interest he gets after completing the duration of two years is
+(1) ₹ 7,920
+(2) ₹ 4,320
+(3) ₹ 6,750
+(4) ₹ 8,670
+= 1
+~ Amount = 18,000 × (1.2)² = 18,000 × 1.44 = 25,920, so the compound interest = 25,920 - 18,000 = ₹7,920. Option (2) ₹4,320 is only the second year's interest (20% of 21,600).
+
+Q 4 | ari | Interest
+A building of initial value Rs. 31,25,000 depreciates in its value every year at the rate of 4% on its value at the beginning of the year. If Rs. x is the value of the building at the end of 3 years and Rs. y is the value of the land which appreciates at the rate of 5% compoundingly and the value of the land initially is Rs. 32,00,000 then y - x =
+(1) 609700
+(2) 939600
+(3) 600000
+(4) 508900
+= 2
+~ x = 31,25,000 × (0.96)³ = 31,25,000 × 0.884736 = 27,64,800 and y = 32,00,000 × (1.05)³ = 32,00,000 × 1.157625 = 37,04,400. So y - x = 9,39,600.
+
+Q 5 | ari | Numbers & Simplification
+If Tn = Tn-1 + Tn-2 ∀ n ≥ 3 and T1 = T2 = 1 then T1 + T2 + ... + T10 =
+(1) T11 + 4
+(2) T12 - 1
+(3) T12 + 1
+(4) T9 + T11
+= 2
+~ This is the Fibonacci sequence 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, so T1 + ... + T10 = 143 = 144 - 1 = T12 - 1. In general the sum of the first n terms equals T(n+2) - 1.
+
+Q 6 | ari | Ratio, Average & Ages
+Certain amount 'x' is distributed to three persons A, B, C. A gets 25% share of x. Twice the difference of B and C is equal to the share of A. Then the ratio in which A, B, C get the amounts is
+(1) 26 : 72 : 59
+(2) 4 : 7 : 5
+(3) 8 : 13 : 9
+(4) 2 : 7 : 6
+= 2
+~ A = x/4, so B + C = 3x/4, and 2(B - C) = x/4 gives B - C = x/8. Hence B = 7x/16 and C = 5x/16, while A = 4x/16, so A : B : C = 4 : 7 : 5.
+
+Q 7 | ari | Ratio, Average & Ages
+The averages of 3 different data D1, D2, D3 are 30, 40, 50 respectively. If the average of D1 and D2 together is 38 and that of D2 and D3 together is 42, then the average of the three data D1, D2 and D3 together is
+(1) 44.53
+(2) 42
+(3) 43.12
+(4) 40
+= 4
+~ Let the data sets have n1, n2, n3 values: (30n1 + 40n2)/(n1 + n2) = 38 gives n2 = 4n1, and (40n2 + 50n3)/(n2 + n3) = 42 gives n2 = 4n3. Taking n1 = n3 = 1 and n2 = 4, the combined average = (30 + 160 + 50)/6 = 240/6 = 40.
+
+Q 8 | ari | Ratio, Average & Ages
+In a police battalion of 600 police, the average height is 150 cm. Later it is discovered that for x policemen heights are copied wrongly as 160 cm instead of 190 cm. By taking the Correct heights, the average is increased to 155 cm. Then x =
+(1) 120
+(2) 100
+(3) 180
+(4) 150
+= 2
+~ The total height rises by 600 × (155 - 150) = 3,000 cm, and each corrected entry adds 190 - 160 = 30 cm. So x = 3,000/30 = 100.
+
+Q 9 | ari | Percentage, Profit & Loss
+The marked price of a newly arrived article shows an increase of 15% on its cost price. Later this marked price was decreased by 20% as the article is outdated. If the cost price of the article is ₹1,200 then the profit or loss for the shopkeeper with the current selling price is
+(1) 5% loss
+(2) 8% loss
+(3) 10% gain
+(4) 7% gain
+= 2
+~ Marked price = 1.15 × 1,200 = 1,380 and selling price = 0.8 × 1,380 = 1,104. Loss = 1,200 - 1,104 = 96, i.e. 96/1,200 = 8% loss (the net factor is 1.15 × 0.8 = 0.92).
+
+Q 10 | ari | Ratio, Average & Ages
+A sum of ₹ 5,600 is distributed among 12 people consisting of men, women and children. The ratio of the total amounts given to all men, all women and all children is 9 : 4 : 1. But the ratio of the amounts received by each man, woman and child is 3 : 2 : 1. Then the amount received by each women is
+(1) ₹ 250
+(2) ₹ 300
+(3) ₹ 400
+(4) ₹ 450
+= 3
+~ The group totals are 3,600 (men), 1,600 (women) and 400 (children). If each man, woman and child gets 3k, 2k and k, the head count is 1,200/k + 800/k + 400/k = 2,400/k = 12, so k = 200 and each woman gets 2k = ₹400 (6 men, 4 women and 2 children).
+
+Q 11 | ari | Percentage, Profit & Loss
+A shopkeeper sells his goods at 30% profit on cost price. Due to an error in weighing machine, it weighs 20% more than what it displays on its screen. Then the profit or loss he gets is
+(1) 8 1/3 % profit
+(2) 10% profit
+(3) 10% loss
+(4) 8 1/3 % loss
+= 1
+~ The customer actually receives 1.2 units but pays for 1 unit at 1.3 times the cost price. So SP/CP = 1.3/1.2 = 13/12, a profit of 1/12 = 8 1/3%.
+
+Q 12 | ari | Percentage, Profit & Loss
+A Shopkeeper sells an article by offering 24% discount on the marked price and there by gets a loss of 5%. If he does not offer the discount, then the gain/loss he gets is
+(1) 20% gain
+(2) 29% loss
+(3) 25% gain
+(4) 21% loss
+= 3
+~ Selling price = 0.76 × MP = 0.95 × CP, so MP = (0.95/0.76) × CP = 1.25 × CP. Selling at the marked price without any discount therefore gives a 25% gain.
+
+Q 13 | ari | Time & Work
+A can complete a piece of work in 18 days and B can complete the same work in 12 days. Both begin the work together but after some days, B leaves the work. If A finishes the remaining work in 3 days, then the number of days B worked is
+(1) 5
+(2) 8
+(3) 4
+(4) 6
+= 4
+~ A does 1/18 and B does 1/12 of the work per day, i.e. 5/36 together. A's last 3 days cover 3/18 = 1/6, so the joint work is 5/6, which takes (5/6) ÷ (5/36) = 6 days; B worked 6 days.
+
+Q 14 | ari | Time & Work
+14 men can do a work in 18 days. 15 women can do the same work in 24 days. If 14 men work for first 3 days and 10 women work after that for 3 days, then the ratio of the time taken by 7 men alone and the time taken by 5 women alone to complete the remaining work is
+(1) 2 : 3
+(2) 3 : 4
+(3) 1 : 3
+(4) 1 : 2
+= 4
+~ The work = 14 × 18 = 252 man-days = 15 × 24 = 360 woman-days. In 3 days 14 men do 42/252 = 1/6 and then 10 women do 30/360 = 1/12, leaving 3/4. 7 men need (3/4 × 252)/7 = 27 days and 5 women need (3/4 × 360)/5 = 54 days, so the ratio is 27 : 54 = 1 : 2.
+
+Q 15 | ari | Time & Work
+A alone can do a piece of work in 10 days and B alone can do the same work in 15 days. A and B agreed to complete the work for ₹30,000. With the help of C, they completed the work in 5 days. Then the amount to be paid to C is
+(1) 1/3 of the amount to be paid to B.
+(2) Equal to the amount to be paid to B.
+(3) 1/2 of the amount to be paid to A.
+(4) 1/3 of the amount to be paid to A.
+= 4
+~ In 5 days A does 5/10 = 1/2 and B does 5/15 = 1/3 of the work, so C does 1 - 1/2 - 1/3 = 1/6. Payment is in the ratio of work done, 1/2 : 1/3 : 1/6 = 3 : 2 : 1 (₹15,000, ₹10,000, ₹5,000), so C gets 1/3 of A's amount; C gets 1/2, not 1/3, of B's amount.
+
+Q 16 | ari | Percentage, Profit & Loss
+If 22½% increase of a number is 98, then 22½% decrease of that number is
+(1) 49
+(2) 53
+(3) 62
+(4) 45
+= 3
+~ A 22½% increase gives 1.225N = 98, so N = 80. A 22½% decrease of 80 gives 0.775 × 80 = 62.
+
+Q 17 | ari | Time, Speed & Distance
+A man started 10 minutes late from his home to his office. He travelled at a speed of 1 1/4 times of his usual speed and reached his office in time. Then the time taken by the man to reach his office at his usual speed is (in minutes)
+(1) 50
+(2) 60
+(3) 45
+(4) 75
+= 1
+~ At 5/4 of the usual speed the time taken becomes 4/5 of the usual time, saving 1/5 of it. Since 1/5 of the usual time = 10 minutes, the usual time = 50 minutes.
+
+Q 18 | ari | Time, Speed & Distance
+Two persons P and Q started travelling towards each other at two places A and B respectively at 7 AM. The speeds of P and Q are in the ratio 4 : 5. Somewhere between A and B they met at C and spent some time together. From C at 8.07 AM P and Q started travelling towards B and A respectively. If P reaches B by 9.12 AM, the time they spent at C together is
+(1) 12 min
+(2) 15 min
+(3) 17 min
+(4) 20 min
+= 2
+~ If they meet t minutes after 7 AM, AC = 4t and CB = 5t (speeds 4 and 5). P covers CB at speed 4 in 5t/4 minutes, which equals 8.07 to 9.12 = 65 minutes, so t = 52 and they met at 7.52 AM; the time spent at C = 8.07 - 7.52 = 15 minutes.
+
+Q 19 | rea | Calendar & Clocks
+The time between 7 and 8 O'clock when the minute hand is 5 minutes behind the hour hand is
+(1) 30 2/11 min. past 7 O'clock
+(2) 32 8/11 min. past 7 O'clock
+(3) 43 7/11 min. past 7 O'clock
+(4) 31 3/11 min. past 7 O'clock
+= 2
+~ At 7 o'clock the hour hand is 35 minute-spaces ahead of the minute hand, and the minute hand gains 11/12 of a space per minute. To be 5 spaces behind, it must gain 30 spaces: m = 30 × 12/11 = 360/11 = 32 8/11 minutes past 7.
+
+Q 20 | rea | Calendar & Clocks
+If m and n are the number of rotations of hour-hand and minute hand of a clock respectively in 72 hours, then n - m =
+(1) 66
+(2) 72
+(3) 24
+(4) 56
+= 1
+~ The hour hand makes one rotation every 12 hours, so m = 72/12 = 6; the minute hand makes one rotation every hour, so n = 72. Hence n - m = 66.
+
+Q 21 | ari | Time & Work
+Three persons X, Y and Z are employed to do a piece of work. X and Y together completed 21/25 part of the work. Y and Z together completed 8/25 part of the work. If all the 3 agreed to complete the work for ₹3,250, then the amount X receives more than that of Z is
+(1) 2,210
+(2) 520
+(3) 1,690
+(4) 1,170
+= 3
+~ X + Y = 21/25 gives Z = 4/25, and Y + Z = 8/25 gives X = 17/25 (so Y = 4/25). Payment follows the work done, so X - Z = 13/25 × 3,250 = ₹1,690.
+
+Q 22 | rea | Calendar & Clocks
+In 2022 August 15th is on Monday. Then the day of the week on which Republic day will be celebrated in the year 2024 is
+(1) Tuesday
+(2) Wednesday
+(3) Thursday
+(4) Friday
+= 4
+~ 2023 is not a leap year, so 15 August 2023 is one day later, a Tuesday. From 15 August 2023 to 26 January 2024 is 16 + 30 + 31 + 30 + 31 + 26 = 164 days = 23 weeks + 3 days, so Republic Day 2024 falls on a Friday.
+
+Q 23 | ari | Ratio, Average & Ages
+A person P started a business with ₹5,00,000. After 3 months, another person Q joined P with ₹4,00,000 in the business. At the end of the year, out of the total profit Q received a total of ₹50,000 including 20% of the profit for managing the business. Then the amount P received is
+(1) ₹ 45,000
+(2) ₹ 55,000
+(3) ₹ 60,000
+(4) ₹ 50,000
+= 4
+~ The capital-time ratio P : Q = 5,00,000 × 12 : 4,00,000 × 9 = 5 : 3. If the total profit is T, Q gets 0.2T + 0.8T × 3/8 = 0.5T = 50,000, so T = 1,00,000 and P gets 0.8T × 5/8 = ₹50,000.
+
+Q 24 | ari | Ratio, Average & Ages
+A, B, and C started a business with investments of ₹ 4,200, ₹ 8,400, ₹ 5,400 respectively. At the end of the year they got a profit of ₹ 6,000 and they reinvested their profits in the business. At the end of next year the ratio in which they get their profits is
+(1) 7 : 14 : 9
+(2) 8 : 11 : 17
+(3) 23 : 54 : 69
+(4) 29 : 56 : 36
+= 1
+~ The investments 4,200 : 8,400 : 5,400 = 7 : 14 : 9, so the ₹6,000 profit is shared as 1,400, 2,800 and 1,800. The new capitals 5,600 : 11,200 : 7,200 are still 7 : 14 : 9, so next year's profits are shared 7 : 14 : 9.
+
+Q 25 | ari | Mensuration
+A rectangular plot of dimensions 210 meters × 120 meters is divided into 4 equal parts by two roads each of width 12 meters running in the middle of it, one parallel to the length and the other parallel to the breadth. Then the area of each part is (in Sq. meters)
+(1) 10,692
+(2) 6,300
+(3) 3,816
+(4) 5,346
+= 4
+~ Removing the two crossing roads leaves (210 - 12) × (120 - 12) = 198 × 108 = 21,384 sq m. Each of the 4 equal parts = 21,384/4 = 5,346 sq m.
+
+Q 26 | ari | Mensuration
+For a square, the lengths of its side and diagonal are equal to the diameters of two unequal circles; The ratio of the areas of the smaller circle and larger circle is
+(1) 2:3
+(2) 1:3
+(3) 1:2
+(4) 2:5
+= 3
+~ If the side is a, the diagonal is a√2, so the diameters are in the ratio 1 : √2. Areas vary as the square of the diameter, so the ratio of areas is 1² : (√2)² = 1 : 2.
+
+Q 27 | rea | Calendar & Clocks
+After 2022, the next immediate calendar year which will be same as 2022 is
+(1) 2032
+(2) 2033
+(3) 2026
+(4) 2028
+= 2
+~ 2022 is an ordinary year beginning on Saturday; adding odd days for 2022 to 2032 (1 for each ordinary year, 2 for each of the leap years 2024, 2028, 2032) gives 8 + 6 = 14 = 0 (mod 7), so 2033 also begins on Saturday and is an ordinary year. 2028 also begins on Saturday but is a leap year, so its calendar differs from 2022.
+
+Q 28 | ari | Mensuration
+A solid cone is melted and with that entire material a sphere is made having volume of 38,808 cm³. If the radius of the cone and sphere are equal, then height of the cone (in centimeters) is
+(1) 42
+(2) 25
+(3) 84
+(4) 36
+= 3
+~ (4/3) × (22/7) × r³ = 38,808 gives r³ = 38,808 × 21/88 = 9,261, so r = 21 cm. Since the volumes are equal, (1/3)πr²h = (4/3)πr³, so h = 4r = 84 cm.
+
+Q 29 | ari | Time & Work
+Pipe A can fill a tank in 30 minutes and Pipe B can fill it in 45 minutes. But third Pipe C can empty a full tank in 15 minutes. A and B are kept open for 15 minutes in the beginning and then C is also opened. Since then the time required (in minutes) to empty the tank is
+(1) 15
+(2) 45
+(3) 75
+(4) 90
+= 3
+~ In 15 minutes A and B fill 15 × (1/30 + 1/45) = 15 × 5/90 = 5/6 of the tank. With all three open the net rate is 1/30 + 1/45 - 1/15 = -1/90 per minute, so emptying 5/6 of the tank takes (5/6) × 90 = 75 minutes.
+
+Q 30 | ari | Time & Work
+Two inlet pipes A and B working together for 4 hours fill 72 units of water in a tank having capacity 160 units. If A alone can fill the tank in 20 hours, the time taken by B alone to fill the tank is
+(1) 25 hours
+(2) 15 hours
+(3) 21 hours
+(4) 16 hours
+= 4
+~ A and B together fill 72/4 = 18 units per hour and A alone fills 160/20 = 8 units per hour, so B fills 10 units per hour. B alone needs 160/10 = 16 hours.
+
+Q 31 | ari | Time, Speed & Distance
+Two trains run on parallel tracks at 126 kmph and 108 kmph. When they are running in opposite directions they cross each other completely in 5 seconds and when they are running in the same direction a passenger sitting in the faster train sees that the other train passes completely in 30 seconds. Then the length of the faster train is (in meters)
+(1) 150
+(2) 200
+(3) 175
+(4) 225
+= 3
+~ In opposite directions the relative speed is 234 km/h = 65 m/s, so the sum of the lengths is 65 × 5 = 325 m. The passenger in the faster train sees only the slower train pass at relative speed 18 km/h = 5 m/s, so the slower train is 5 × 30 = 150 m long and the faster train is 325 - 150 = 175 m.
+
+Q 32 | ari | Time, Speed & Distance
+A train of 450 meters long moving with a speed of 65 km/hr crosses a man travelling in some direction of the train in 27 seconds. Then the speed with which the man moving and his direction is
+(1) 15 kmph; Same direction
+(2) 15 kmph; Opposite direction
+(3) 5 kmph; Same direction
+(4) 5 kmph; Opposite direction
+= 3
+~ Relative speed = 450/27 m/s = 50/3 m/s = 60 km/h. This is less than the train's 65 km/h, so the man moves in the same direction at 65 - 60 = 5 km/h. If he walked the opposite way, the relative speed would be more than 65 km/h.
+
+Q 33 | ari | Mensuration
+Two cubes, each of volume 4,096 c.c., are joined to form a cuboid. Then the difference between the surface area of the cuboid and the total surface area of the two cubes is (in sq.cm)
+(1) 512
+(2) 256
+(3) 1,024
+(4) 1,536
+= 1
+~ Each cube has edge ∛4,096 = 16 cm, so the two cubes have total surface area 2 × 6 × 16² = 3,072 sq.cm. The cuboid is 32 × 16 × 16, with surface area 2(512 + 256 + 512) = 2,560 sq.cm, so the difference is 512 sq.cm (the two faces that are joined and hidden).
+
+Q 34 | ari | Ratio, Average & Ages
+In a mixture of acid and water, if 1 liter of water is added, then the new mixture contains 20% acid. When 1 liter of acid is added to the new mixture, the acid in the resulting mixture is 33 1/3%. The percentage of acid in the original mixture is
+(1) 50
+(2) 22½
+(3) 25
+(4) 37½
+= 3
+~ Let the original mixture have a liters of acid in T liters; then a = (T + 1)/5 and a + 1 = (T + 2)/3. Substituting T + 1 = 5a gives 3a + 3 = 5a + 1, so a = 1 and T = 4. The original acid share is 1/4 = 25%.
+
+Q 35 | ari | Time, Speed & Distance
+The speed of a motor boat in still water is 50kmph. If the motor boat travels 60 km against the stream in 1hr 30 minutes, then the time taken by the boat to cover 100 km along the stream is (in minutes)
+(1) 130
+(2) 110
+(3) 135
+(4) 100
+= 4
+~ Upstream speed = 60/1.5 = 40 km/h, so the stream's speed is 50 - 40 = 10 km/h. Downstream speed is 60 km/h, so 100 km takes 100/60 h = 100 minutes.
+
+Q 36 | ari | Time, Speed & Distance
+A Motor Boat travelled to a point B from A and returned to A. The speed of the stream is 3 km/hr. If distance between A and B is 2 km and total time taken to the round trip is 30 minutes, then speed of the motor boat in still water is
+(1) 8 km/hr
+(2) 1 km/hr
+(3) 9 km/hr
+(4) 6 km/hr
+= 3
+~ With boat speed b, 2/(b + 3) + 2/(b - 3) = 1/2, so 4b/(b² - 9) = 1/2, which gives b² - 8b - 9 = 0, so b = 9 km/h. Check: 2/12 + 2/6 = 1/2 hour.
+
+Q 37 | ari | Time, Speed & Distance
+In a race of 1200 meters, A can beat B by 120 meters and in a race of 800 meters B can beat C by 40 meter. In a race of 400 meters by how many meters can A beat C ?
+(1) 58
+(2) 42
+(3) 60
+(4) 54
+= 1
+~ While A runs 1200 m, B runs 1080 m, so B runs 9/10 of A's distance. While B runs 800 m, C runs 760 m, so C runs 19/20 of B's distance. When A runs 400 m, C runs 400 × 9/10 × 19/20 = 342 m, so A beats C by 58 m.
+
+Q 38 | ari | Ratio, Average & Ages
+In three different vessels A, B and C, a syrup and water are mixed in the ratios of 2:3, 3:5 and 5:7 respectively. 15 liters of mixture taken from A, 16 liters of mixture taken from B and x liters of mixture taken from C are mixed in a new vessel to have the ratio of syrup and water as 2:3 then x =
+(1) 24
+(2) 20
+(3) 18
+(4) 17
+= 1
+~ The syrup taken is 15 × 2/5 = 6 litres from A, 16 × 3/8 = 6 litres from B and 5x/12 litres from C. For syrup to be 2/5 of the total, 12 + 5x/12 = (2/5)(31 + x). Multiplying by 60 gives 720 + 25x = 744 + 24x, so x = 24.
+
+Q 39 | ari | Ratio, Average & Ages
+The present age of A is twice the age of B. 15 years ago the age of A was thrice the age of B. Then 25 years ago the age of A was
+(1) 7 times the age of B.
+(2) 6 times the age of B.
+(3) 5 times the age of B.
+(4) 4 times the age of B.
+= 1
+~ Let B = b and A = 2b. Then 2b - 15 = 3(b - 15), so b = 30 and A = 60. Twenty-five years ago A was 35 and B was 5, so A was 7 times B's age.
+
+Q 40 | ari | Ratio, Average & Ages
+The ratio of ages of Ram and Rahim after 5 years from now is 11 : 10. The ratio of their ages 4 years ago was 8 : 7. The ratio of their present ages is
+(1) 19:17
+(2) 1:1
+(3) 28:25
+(4) 21:25
+= 3
+~ Let the present ages be R and H; then 10(R + 5) = 11(H + 5) and 7(R - 4) = 8(H - 4), so 10R - 11H = 5 and 7R - 8H = -4. Solving gives H = 25 and R = 28, so the ratio is 28 : 25. Check: 33 : 30 = 11 : 10 and 24 : 21 = 8 : 7.
+
+Q 41 | ari | Percentage, Profit & Loss
+The cost price of an article B is 25% more than that of an article A. Articles A and B are marked up by 30% and 20% respectively. Article A is sold at a discount of 10% and article B is sold at a discount of 5%. If the selling price of article A is ₹ 51 less than the selling price of article B, then the cost price of article B is
+(1) ₹200
+(2) ₹250
+(3) ₹260
+(4) ₹300
+= 2
+~ Let the CP of A be x, so the CP of B is 1.25x; SP of A = 1.3x × 0.9 = 1.17x and SP of B = 1.25x × 1.2 × 0.95 = 1.425x. Then 0.255x = 51, so x = 200 and the CP of B = 1.25 × 200 = ₹250. Option (1), ₹200, is the CP of A.
+
+Q 42 | ari | Percentage, Profit & Loss
+The cost price of an article is 64% of the marked price. If the article is sold for 12% discount on the marked price, then the profit percent is
+(1) 48
+(2) 28.5
+(3) 37.5
+(4) 25
+= 3
+~ Take MP = 100: CP = 64 and SP = 88, so the profit is 24 on a cost of 64, which is 24/64 × 100 = 37.5%.
+
+Q 44 | ari | Numbers & Simplification
+A 25 digit number is such that its extreme digits are same and all other 23 digits are same but different from extreme digits. If that number is divisible by 11, then end digit can't be
+(1) 9
+(2) 8
+(3) 5
+(4) 4
+= 3
+~ Let the end digits be a and the middle digits b. The 13 odd-place digits are the two a's and 11 b's, and the 12 even-place digits are all b, so the 11-test difference is (2a + 11b) - 12b = 2a - b, which must be 0 or ±11. a = 9 works with b = 7, a = 8 with b = 5 and a = 4 with b = 8, but a = 5 would need b = 10 or -1, so the end digit cannot be 5.
+
+Q 45 | ari | Numbers & Simplification
+Let G be the GCD of three numbers 3,780, 3,465 and 3,003 and L be the LCM of 3,465 and 3,003. Then L/(33G) =
+(1) 65
+(2) 780
+(3) 455
+(4) 429
+= 1
+~ 3,780 = 2² × 3³ × 5 × 7, 3,465 = 3² × 5 × 7 × 11 and 3,003 = 3 × 7 × 11 × 13, so G = 3 × 7 = 21. L = 3² × 5 × 7 × 11 × 13 = 45,045, so L/(33G) = 45,045/693 = 65.
+
+Q 46 | ari | Numbers & Simplification
+If the sum of the fractions 12 1/3, 10 5/6 is x and the sum of the fractions 7 2/3, 1 4/7 is y then x - y =
+(1) 14 1/4
+(2) 13 13/14
+(3) 13 11/14
+(4) 14 3/14
+= 2
+~ x = 12 1/3 + 10 5/6 = 23 1/6 and y = 7 2/3 + 1 4/7 = 9 5/21. x - y = 14 + (7/42 - 10/42) = 14 - 1/14 = 13 13/14.
+
+Q 47 | ari | Numbers & Simplification
+If the digit in the units place of the square of an integer is x, then the sum of all possible distinct values of x is
+(1) 25
+(2) 27
+(3) 28
+(4) 32
+= 1
+~ Squares can end only in 0, 1, 4, 5, 6 or 9; 2, 3, 7 and 8 never occur. The sum is 0 + 1 + 4 + 5 + 6 + 9 = 25.
+
+Q 48 | ari | Numbers & Simplification
+(∛(-2197) × ∛(-125) ÷ ∛(27/512)) + 2/3 =
+(1) 174
+(2) ∛131
+(3) 7/3
+(4) 12∛3
+= 1
+~ ∛(-2197) = -13, ∛(-125) = -5 and ∛(27/512) = 3/8, so the bracket is 65 ÷ 3/8 = 520/3. Adding 2/3 gives 522/3 = 174.
+
+Q 49 | ari | Numbers & Simplification
+If x is an integer satisfying the equation 9x^(2/3) + 9x^(-2/3) = 82 then √(12 + 2√x) =
+(1) 1 + √11
+(2) 3 + √3
+(3) √3 + √5
+(4) 2 + √8
+= 2
+~ Put t = x^(2/3): 9t + 9/t = 82 gives 9t² - 82t + 9 = 0, so t = 9 or 1/9. Only t = 9 gives an integer (x = ±27), and √x needs x ≥ 0, so x = 27. Then √(12 + 2√27) = √(12 + 6√3) = √((3 + √3)²) = 3 + √3.
+
+Q 50 | ari | Numbers & Simplification
+The set of all perfect numbers and twin primes among the numbers 1, 2, 3, 4, 5, 6, 7, 8, 9 is
+(1) {1, 2, 3, 4, 5, 7, 9}
+(2) {1, 3, 4, 5, 7, 9}
+(3) {3, 4, 5, 7, 9}
+(4) {3, 5, 6, 7}
+= 4
+~ The only perfect number up to 9 is 6 (1 + 2 + 3 = 6). The twin-prime pairs are (3, 5) and (5, 7), giving 3, 5 and 7; 2 is not a twin prime because neither 0 nor 4 is prime. The set is {3, 5, 6, 7}.
+
+Q 51 | rea | Venn Diagrams & Syllogisms
+Identify the venn diagram which best represent the relation between triangles, equilateral triangles, right angled triangles, isosceles triangles.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+~ All the sets lie inside the big circle of triangles; every equilateral triangle is also isosceles, so that circle sits wholly inside the isosceles circle, while right-angled triangles overlap isosceles ones only partly (the 45-45-90 triangle) and never overlap equilateral ones, which is exactly diagram (2).
+! img/s2022-q51.png
+
+Q 52 | rea | Puzzles & Arrangements
+A ranks 13th from the top and B ranks 17th from the bottom in a class. If the rank of C is 5 ranks below A and 5 ranks above B, then the number of students of the class is
+(1) 39
+(2) 29
+(3) 19
+(4) 30
+= 1
+~ C is 13 + 5 = 18th from the top, and B is 5 ranks below C, i.e. 23rd from the top. B is also 17th from the bottom, so the class has 23 + 17 - 1 = 39 students.
+
+Q 53 | rea | Venn Diagrams & Syllogisms
+In the following diagram, if triangle represents Cricket players, circle represents Football players, rectangle represents Hockey players and rhombus represents Tennis players, then the difference between the number of players who can play all the games except Hockey and the number of players who can play all the four games is equal to
+(1) Number of players who can play all the games except Tennis.
+(2) Number of players who can play only Tennis.
+(3) Number of players who can play only Hockey.
+(4) Number of players who can play all the games except Football.
+= 4
+~ Players of all games except Hockey (inside triangle, circle and rhombus but outside the rectangle) = 5 and players of all four games = 2, so the difference is 3. The region inside triangle, rectangle and rhombus but outside the circle (all games except Football) also holds 3, whereas all except Tennis = 1, only Tennis = 4 and only Hockey = 6.
+! img/s2022-q53.png
+
+Q 55 | rea | Puzzles & Arrangements
+5 persons A, B, C, D, E are sitting at the corners of square shaped garden and one is at the centre. A is adjacent to C; B, E, D are not on a line; A and D are equidistant from C; A, E, D are not on a line. Then the persons sitting at the corners are
+(1) A, C, D, E
+(2) A, B, C, D
+(3) B, C, D, E
+(4) B, A, D, E
+= 1
+~ With B at the centre, A and D are the two corners next to C along the sides (so equidistant from C) and E is at the corner opposite C; E and D are then adjacent corners, so B, E, D are not in a line, and three corners A, E, D are never in a line. E cannot be at the centre (A and D would then be diagonally opposite, putting A, E, D on a line), A or D at the centre would make their distances from C unequal, and C is not at the centre because A sits next to C along a side, so the corners are A, C, D, E.
+
+Q 56 | rea | Blood Relations & Directions
+A goes 500 meters straight from his house. He turns to his left and walks 1 km. He then goes 1½ km after turning to his right to reach his office. If his office is located in North - East direction from his house, then the direction in which A started moving initially from his house and the shortest distance from his house to his office is
+(1) South - East, 2 km
+(2) North, 2 km
+(3) East, √5 km
+(4) West, √5 km
+= 3
+~ Starting East: 0.5 km East, a left turn gives 1 km North, a right turn gives 1.5 km East, so he ends 2 km East and 1 km North of the house, i.e. on the North-East side; the shortest distance is √(2² + 1²) = √5 km. Starting North would leave him North-West of the house.
+
+Q 57 | rea | Puzzles & Arrangements
+6 Students S1, S2, S3, S4, S5, S6 wrote an entrance exam and the following is the information regarding their marks. Sum of the marks of all is 1000. S3 got more marks than S4 but less than S2. S6 got the least marks among them. 400 marks is the highest mark and 60 marks is the least mark among these six students. The position of the student having highest marks is 1 and the position of the student having least mark is 6. If S1 got 400 marks, S5's position in the list is 2nd from the last, the average marks of last 3 students is 95, then the total marks of S2 and S3 is
+(1) 225
+(2) 185
+(3) 315
+(4) 200
+= 3
+~ S1 (400) is 1st, S6 (60) is 6th and S5 is 5th; since S2 > S3 > S4, they are 2nd, 3rd and 4th. The last three (S4, S5, S6) total 3 × 95 = 285, so S2 + S3 = 1000 - 400 - 285 = 315.
+
+Q 58 | rea | Logical Reasoning
+Each statement is followed by two arguments numbered I and II. Decide which of the arguments is a strong argument and which is a weak argument.
+Statement: Should there be blended learning in education system?
+Arguments:
+I. Yes. This method allows students to work at their own pace, ensuring that they fully understand new concepts.
+II. No. Possession of electronic gadgets in classroom and access to social media diverts most of the students from the actual concepts and lessons.
+(1) Only I is strong.
+(2) Only II is strong.
+(3) Both I and II are strong.
+(4) Both I and II are weak.
+= 1
+~ Argument I gives a real, relevant benefit of blended learning (self-paced learning that ensures understanding), so it is strong. Argument II is weak because it attacks only the possible misuse of gadgets and social media, which can be controlled, not blended learning itself.
+
+Q 59 | rea | Logical Reasoning
+Each statement is followed by two arguments numbered I and II. Decide which of the arguments is a strong argument and which is a weak argument.
+Statement: Should there be high level of violence in films in the name of entertainment?
+Arguments:
+I. No. Exposure to high level of violence causes behavioural changes in human attitude particularly in children and youth there by developing criminal thoughts in mind.
+II. Yes. When the story demands the film makers have no other go
+(1) Only I is strong.
+(2) Only II is strong.
+(3) Both I and II are strong.
+(4) Both I and II are weak.
+= 1
+~ Argument I is strong because it points to a real harm: heavy on-screen violence influencing the behaviour of children and youth. Argument II is weak, since "the story demands it" does not justify a high level of violence; a story can be told without excessive violence.
+
+Q 60 | rea | Blood Relations & Directions
+A Person facing West moves 30 meters towards West and then moves a distance of 80 meters North and later moves 30 meters towards West again. The distance of its final position from the starting point is
+(1) 90 m
+(2) 85 m
+(3) 100 m
+(4) 105 m
+= 3
+~ In all the person goes 30 + 30 = 60 m West and 80 m North, so the distance from the start is √(60² + 80²) = √(3600 + 6400) = √10000 = 100 m.
+
+Q 61 | rea | Logical Reasoning
+In this question, a statement which is to be taken as true is given and it is followed by two assumptions numbered I & II. Decide which of the assumption (s) is (are) implicit of the statement.
+Statement: An instruction on the hall ticket for a competitive examination is "Every candidate has to be in the examination hall before the examination commences. Not even a late by 1 min is allowed."
+Assumptions:
+I. If not mentioned in hall ticket, candidates may come to the exam at any time as per their wish.
+II. In a Competitive examination, every candidate should be given equal chance of writing the exam so as to filter the meritorious students.
+(1) Only assumption I is implicit.
+(2) Only assumption II is implicit.
+(3) Both assumptions I & II are implicit.
+(4) Neither I nor II is implicit.
+= 1
+~ The instruction is printed on the hall ticket only because it is assumed that, without it, candidates might walk in late or whenever they like, so I is implicit. The punctuality rule does not depend on the idea of filtering meritorious students through an equal chance (II), so II is not implicit.
+
+Q 62 | rea | Logical Reasoning
+In this question, a statement which is to be taken as true is given and it is followed by two assumptions numbered I & II. Decide which of the assumption (s) is (are) implicit of the statement.
+Statement: The national education policy brings major changes in the education system.
+Assumptions:
+I. Present education system is not supporting the needs of the nation.
+II. Present education system is teacher centric.
+(1) Only assumption I is implicit.
+(2) Only assumption II is implicit.
+(3) Both I & II are implicit.
+(4) Neither I nor II is implicit.
+= 1
+~ Bringing major changes presupposes that the present system falls short of the nation's needs, so I is implicit. The statement says nothing about what kind of change is made, so assuming the present system is "teacher centric" (II) goes beyond it.
+
+Q 63 | rea | Logical Reasoning
+Directions: In this question a statement is given followed by two conclusions that can be derived from the statement either directly or indirectly or may not be derived. Which conclusion (s) follow (s) from the statement?
+Statement: One of the prime ministers of India said, "Wastage of anything is crime. Wastage of food is double crime."
+Conclusions:
+I. The issue of food wastage is of high importance to fight hunger, raise income and improve food security in India.
+II. Food wastage is morally wrong because there are many people who are hungry simply because they have no food.
+(1) only I follows.
+(2) only II follows.
+(3) Both I & II follows.
+(4) Neither I nor II follows.
+= 3
+~ Calling food wastage a "double crime" marks it as an issue of great importance for hunger and food security (I) and as a moral wrong when many people go hungry for want of food (II), so both conclusions follow.
+
+Q 64 | rea | Logical Reasoning
+Directions: In this question a statement is given followed by two conclusions that can be derived from the statement either directly or indirectly or may not be derived. Which conclusion (s) follow (s) from the statement?
+Statement: 'Marriages are made in Heaven.'
+Conclusions:
+I. It is a divine power that ultimately decides who should marry whom.
+II. Marriages are made in heaven before the couple even meet on earth.
+(1) Only I follows.
+(2) Only II follows.
+(3) Both I & II follows.
+(4) Neither I nor II follows.
+= 1
+~ The saying means that who marries whom is ultimately decided by a divine power, so I follows. II takes the proverb literally, as if weddings are actually performed in heaven before the couple meet, which the statement does not convey.
+
+Q 65 | rea | Logical Reasoning
+Directions: Decide whether the data provided in the two statements given under the question is sufficient to answer the question or not. Given option
+Is the product xy an irrational number?
+I: x is an irrational number.
+II: y is an irrational number.
+(1) if the data in statement I alone is sufficient to answer the question;
+(2) if the data in statement II alone is sufficient to answer the question;
+(3) if the data in both the statements I & II together is sufficient to answer the question;
+(4) if the data in both the statements I & II together is not sufficient to answer the question.
+= 4
+~ Even with both statements, the product of two irrational numbers may be rational (√2 × √2 = 2) or irrational (√2 × √3 = √6), so the question cannot be answered.
+
+Q 66 | rea | Logical Reasoning
+Directions: Decide whether the data provided in the two statements given under the question is sufficient to answer the question or not. Given option
+What is the perimeter of the circle?
+I. The centre (0,0) of the circle is at a distance of 5 units from the point P (3, 4)
+II. The images of P with respect to both x-axis and y-axis lie on the circle
+(1) if the data in statement I alone is sufficient to answer the question;
+(2) if the data in statement II alone is sufficient to answer the question;
+(3) if the data in both the statements I & II together is sufficient to answer the question;
+(4) if the data in both the statements I & II together is not sufficient to answer the question.
+= 3
+~ Statement I gives the centre (0, 0) but does not say P is on the circle, so the radius is unknown; II alone puts (3, -4) and (-3, 4) on the circle but two points do not fix a circle. Together, the radius is the distance from (0, 0) to (3, -4) = 5, so the perimeter is 2π × 5 = 10π units.
+
+Q 67 | rea | Logical Reasoning
+Directions: Consider the following information and answer the question given below
+For the selection of a manager in a company, the following are the conditions to be satisfied.
+A Candidate
+(a) must be a graduate with a minimum of 60% marks
+(b) as on 1st July 2022, must have less than 30 years
+(c) must have at least 50% marks in X class
+(d) must have a diploma / degree / P.G degree in management
+(e) must have minimum 1 year work experience.
+In case a Candidate satisfies all the above conditions, except
+I. (e) above, he must have 60% and above at X class and P.G degree in management
+II. (a) above, he must have minimum 2 years of work experience.
+If any information is not known, then such case will be referred to CEO.
+Mr. X was born on 15th August 1995, and has graduation and P.G degree in management. He has 1½ years of work experience. During his academic career from XI standard he got 75% marks. Then Mr. X
+(1) Can be recruited as manager
+(2) Can not be recruited since only one condition is not satisfied
+(3) Can not be recruited because he does not have minimum 2 years work experience
+(4) Will be referred to CEO
+= 4
+~ Mr. X is 26 on 1 July 2022, has a P.G degree in management, 1½ years of experience and 75% from XI standard onwards (which covers his graduation), but his X class marks are not given. Since condition (c) cannot be checked, the case is referred to the CEO.
+
+Q 68 | rea | Logical Reasoning
+Directions: Consider the following information and answer the question given below:
+For the selection of a manager in a company, the following are the conditions to be satisfied.
+A Candidate
+(a) must be a graduate with a minimum of 60% marks
+(b) as on 1st July 2022, must have less than 30 years
+(c) must have at least 50% marks in X class
+(d) must have a diploma / degree / P.G degree in management
+(e) must have minimum 1 year work experience.
+In case a Candidate satisfies all the above conditions, except
+I. (e) above, he must have 60% and above at X class and P.G degree in management
+II. (a) above, he must have minimum 2 years of work experience.
+If any information is not known, then such case will be referred to CEO.
+Mr. Y was a 1st class student throught his academic career and completed his 25th birth day on 2nd September 2017. Prior to applying for this post of manager, he worked as assistant manager from 1st July 2018 to 3rd August 2019. He had a diploma in management from IIM. Then Mr. Y
+(1) Can be appointed as manager
+(2) Can not be appointed as he is above 30 years of age
+(3) Can not be appointed as he does not have 2 years work experience
+(4) Can be referred to CEO
+= 4
+~ Mr. Y (born 2 September 1992) is 29 on 1 July 2022, has about 1 year 1 month of experience and a management diploma, and a first-class record covers the marks conditions. However, the data never says that he is a graduate (condition (a)), and a diploma is not a degree, so this information is not known and the case goes to the CEO.
+
+Q 69 | rea | Blood Relations & Directions
+Study the following information carefully and answer the questions given below.
+There is a family of 8 members A, B, C, D, E, F, G, H. D is the grand-son of F. G is the son-in-law of C. F is the mother of B. A is the wife of B. H is the daughter of C and mother of D. E is the daughter of A.
+Who is the father of D?
+(1) C
+(2) B
+(3) D
+(4) G
+= 4
+~ H is C's daughter and D's mother, and G is C's son-in-law, so G is H's husband and hence D's father. B cannot be the father because B's wife is A, not H.
+
+Q 70 | sci | Biology & Health
+Assertion (A): Antibiotics do not treat the Corona infection.
+Reason (R): Corona is a virus; not a bacteria.
+Choose the correct option from the following:
+(1) (A) is true, (R) is true and (R) is the correct explanation of (A)
+(2) (A) is true, (R) is true but (R) is not the correct explanation of (A)
+(3) (A) is True but (R) is False
+(4) (A) is False but (R) is True
+= 1
+~ COVID-19 is caused by a virus (SARS-CoV-2), and antibiotics act only against bacteria, so they cannot cure the infection; (R) is therefore the correct explanation of (A).
+
+Q 71 | rea | Puzzles & Arrangements
+Six persons P1, P2, P3, P4, P5 and P6 live one on each floor in a building having six floors numbered from bottom to top. P3 lives in a floor immediately below the floor of P1. P5 lives in the floor immediately below the floor of P4. Three people live between the floors of P6 and P5. P2 does not live in the top most floor. P1 does not show interest to live on any floor below the floor of P4. P5 and P6 live on the even numbered floors. Then the persons P1 and P2 respectively live in the floors.
+(1) 5 & 1
+(2) 3 & 5
+(3) 2 & 5
+(4) 4 & 5
+= 1
+~ P5 and P6 are on even floors with three people between them, so they occupy floors 2 and 6; P5 is just below P4, so P5 = 2, P4 = 3 and P6 = 6. P1 must be above P4 with P3 just below him, so P1 = 5 and P3 = 4, leaving floor 1 for P2: the answer is 5 & 1.
+
+Q 72 | rea | Logical Reasoning
+Read the statements and mark the correct answer.
+Statement I: The prices of petrol products have increased substantially during the past few months in India
+Statement II: The prices of many goods in India are increasing now-a-days
+These statements may have a cause and effect relationship or may have independent causes or be the effects of independent causes.
+(1) I is cause and II is effect
+(2) II is cause and I is effect
+(3) I, II are effects of independent causes
+(4) I, II are causes of independent effects
+= 1
+~ Costlier petrol and diesel raise transport and production costs, which pushes up the prices of many other goods, so I is the cause and II is the effect.
+
+Q 73 | rea | Coding-Decoding
+If the English alphabet is coded with numbers from 1 to 26 starting from the last letter to the first letter. A meaningful word is hidden in the codes given in the following options. That code is
+(1) 8-18-22-14-11-15
+(2) 11-12-13-23-2-26
+(3) 8-7-9-14-22-26
+(4) 8-18-14-11-15-22
+= 4
+~ With Z = 1 up to A = 26, code n stands for the (27 - n)th letter, so 8-18-14-11-15-22 gives S, I, M, P, L, E = SIMPLE. The other codes give non-words, e.g. option (1) gives SIEMPL.
+
+Q 74 | rea | Logical Reasoning
+Assertion (A): Now-a-days, knee pain is a common complaint. Knee replacement is a boon for such sufferers.
+Reason (R): Necessity is the mother of invention.
+Choose the correct option from the following:
+(1) (A) is true, (R) is true and (R) is the correct explanation of (A)
+(2) (A) is true, (R) is true but (R) is not the correct explanation of (A)
+(3) (A) is True but (R) is False
+(4) (A) is False but (R) is True
+= 1
+~ Knee pain being common created the need for a remedy, and knee replacement was developed to meet that need, so the proverb in (R) correctly explains (A); both are true.
+
+Q 75 | rea | Coding-Decoding
+In a code language, 'Mathematics improves Reasoning' is coded as 'du mu vu'; 'Reasoning improves logical thinking' is coded as 'vu lu du ya' and 'Logical thinking improves common sense' is coded as 'ma ya du lu ta' then in the same code language 'Mathematics improves logical thinking' is coded as
+(1) vu lu mu ya
+(2) ta ya mu lu
+(3) du mu ya lu
+(4) mu ya du vu
+= 3
+~ "improves" is common to all three sentences, so improves = du; Reasoning = vu (common to the first two), hence Mathematics = mu; "logical thinking" = lu ya (common to the last two). So the code must contain only mu, du, lu, ya, which is "du mu ya lu"; options with vu or ta are wrong.
+
+Q 76 | rea | Coding-Decoding
+In a certain code "Write exam well" is written as 'lm rs ek', "All is well" is written as 'ek jp pm', "Exam is easy" is written as 'rs jp wk'. Then using this code "All write exam well" is written as
+(1) ek rs jp pm
+(2) ek rs lm pm
+(3) wk jp rs pm
+(4) ek rs jp wk
+= 2
+~ "well" is common to the first two sentences, so well = ek; "is" is common to the last two, so is = jp; "exam" is common to the first and third, so exam = rs. That leaves write = lm and all = pm, so "All write exam well" uses the codes pm, lm, rs, ek, which is option (2) ek rs lm pm.
+
+Q 77 | rea | Series & Analogies
+Choose the correct alternative from the given ones that will complete the series.
+CX, FU, ______, LO
+(1) HS
+(2) JR
+(3) IQ
+(4) IR
+= 4
+~ The first letters move forward by 3 (C, F, I, L) and the second letters move back by 3 (X, U, R, O), so the missing term is IR.
+
+Q 78 | rea | Coding-Decoding
+The letters of the English alphabet are coded as follows:
+kth letter of the alphabet is coded as
+(i) (k+17)th letter when 1 ≤ k ≤ 9
+(ii) (k-1)th letter when 10 ≤ k ≤ 18
+(iii) (k-18)th letter when 19 ≤ k ≤ 26
+For decoding reverse process is used.
+The word that is coded as GAURD is
+(1) YRCQU
+(2) YSDAV
+(3) XRDPV
+(4) YSDNA
+= 2
+~ Decode each letter: G (7) = k - 18 gives k = 25 (Y); A (1) = k - 18 gives k = 19 (S); U (21) = k + 17 gives k = 4 (D); R (18) = k + 17 gives k = 1 (A); D (4) = k - 18 gives k = 22 (V). So the word is YSDAV; check: Y → G, S → A, D → U, A → R, V → D.
+
+Q 79 | rea | Series & Analogies
+What should come in the place of question mark (?) in the following alpha-numeric series?
+B3E, C5G, E7K, G11M, ?
+(1) M15Q
+(2) K13O
+(3) K13Q
+(4) K15S
+= 3
+~ All three parts follow consecutive prime numbers: first letters B, C, E, G, K are positions 2, 3, 5, 7, 11; the numbers are 3, 5, 7, 11, 13; last letters E, G, K, M, Q are positions 5, 7, 11, 13, 17. So the next term is K13Q.
+
+Q 80 | rea | Series & Analogies
+Choose the correct option which contains the letters that are to be placed in order in the blank places to have a complete series
+Z _ T _ N K H _ B
+(1) X, R, E
+(2) W, R, E
+(3) W, Q, E
+(4) X, Q, E
+= 3
+~ Each letter is 3 places before the previous one: Z (26), W (23), T (20), Q (17), N (14), K (11), H (8), E (5), B (2). So the blanks are W, Q, E.
+
+Q 81 | rea | Blood Relations & Directions
+Pointing to a man in the photograph, A said, "His daughter's mother is the daughter-in-law of my father". How is A related to the man?
+(1) Sister-in-law
+(2) Brother-in-law
+(3) Spouse
+(4) Sibling
+= 4
+~ The man's daughter's mother is the man's wife, and she is the daughter-in-law of A's father, so the man is a son of A's father. Hence the man is A's brother and A is his sibling; A cannot be his spouse, since A's own father's daughter-in-law cannot be A.
+
+Q 82 | rea | Blood Relations & Directions
+A is only daughter of B, C is husband of B, D is father of C and E is wife of D, then A is related to E as
+(1) Grand Son
+(2) Daughter-in-law
+(3) Uncle
+(4) Grand Daughter
+= 4
+~ C is A's father, D is C's father and E is D's wife, so E is A's paternal grandmother. Since A is a daughter, A is E's granddaughter.
+
+Q 83 | rea | Coding-Decoding
+If 'B' means '÷', 'D' means '×', 'Q' means '+' and 'R' means '-' then 23Q19R24B2D3 =
+(1) 22
+(2) 6
+(3) 12
+(4) 17
+= 2
+~ Replacing the letters gives 23 + 19 - 24 ÷ 2 × 3. Division and multiplication come first: 24 ÷ 2 × 3 = 36, so the value is 42 - 36 = 6.
+
+Q 84 | rea | Logical Reasoning
+The symbols used to represent ≮, ≠, ≯, >, < and =, are respectively A, B, C, D, E and F. Consider the statements PAQ, QFR and SER. The correct implications from given statements are
+(1) PDS, RCP
+(2) PES, RBF
+(3) RBQ, PFS
+(4) PAS, PCR
+= 1
+~ PAQ means P ≮ Q (P ≥ Q), QFR means Q = R and SER means S < R, so P ≥ Q = R > S. Then P > S (PDS) and R ≯ P, i.e. R ≤ P (RCP), both follow; in option (4) PCR (P ≤ R) is not certain because P can be greater than R.
+
+Q 85 | rea | Series & Analogies
+A series of fractions that follow a definite pattern is given below. Fill the blank space by the correct answer from the given 4 options to complete the series without breaking the pattern.
+1/2, 8/5, 27/10, 64/17, ______, 216/37
+(1) 125/26
+(2) 81/23
+(3) 125/3
+(4) 121/36
+= 1
+~ The numerators are cubes 1³, 2³, 3³, 4³, 5³, 6³ and the denominators are n² + 1 (2, 5, 10, 17, 26, 37). So the missing term is 125/26.
+
+Q 86 | rea | Series & Analogies
+Choose a term which bears the same relationship with the third term as the first two terms bear.
+Stag : Hind :: Ram :
+(1) Ewe
+(2) Hart
+(3) Earl
+(4) Heifer
+= 1
+~ A stag is a male deer and a hind is a female deer; in the same way a ram is a male sheep and a ewe is a female sheep. Hart is just another word for a male deer.
+
+Q 87 | rea | Series & Analogies
+Choose a term which bears the same relationship with the third term as the first two terms bear.
+OPQ : PRT :: FGH : ______
+(1) GIR
+(2) GIL
+(3) GIK
+(4) EDC
+= 3
+~ The letters of OPQ are moved forward by +1, +2 and +3 to give PRT (O→P, P→R, Q→T). Doing the same to FGH gives G, I, K, i.e. GIK.
+
+Q 88 | rea | Series & Analogies
+Select the related number from the given alternatives.
+444 : 21 :: 964 : ____
+(1) 31
+(2) 41
+(3) 24
+(4) 29
+= 1
+~ 444 = 21² + 3 (441 + 3), and in the same way 964 = 31² + 3 (961 + 3), so the related number is 31.
+
+Q 89 | rea | Series & Analogies
+Four pairs of words are given in the options below in which three pairs are alike in a certain way and one is odd (different). Choose the odd pair.
+(1) Short : long
+(2) Light : Heavy
+(3) Crime : Blame
+(4) Poor : Rich
+= 3
+~ Short-long, light-heavy and poor-rich are pairs of opposites (antonyms); crime and blame are not opposites, so Crime : Blame is the odd pair.
+
+Q 90 | rea | Series & Analogies
+Among the given numbers 131,151,161,181,191, one is different from the others in one way. It is
+(1) 131
+(2) 181
+(3) 161
+(4) 191
+= 3
+~ 131, 151, 181 and 191 are prime numbers, but 161 = 7 × 23 is not, so 161 is the odd one.
+
+Q 91 | rea | Series & Analogies
+Choose the odd one out of the four options given below.
+(1) V21T
+(2) N15L
+(3) I8G
+(4) E4C
+= 2
+~ In each term the number is one less than the position of the first letter and the last letter is two places before it: V (22) 21 T (20), I (9) 8 G (7), E (5) 4 C (3). For N (14) the number should be 13, not 15, so N15L is the odd one.
+
+Q 92 | rea | Series & Analogies
+Choose the odd one out of the four options given below.
+(1) Earth
+(2) Water
+(3) Fire
+(4) Environment
+= 4
+~ Earth, water and fire are among the five natural elements (with air and sky), while environment is not an element, so it is the odd one.
+
+Q 93 | rea | Series & Analogies
+Choose the correct option whose group numbers follow the same pattern as that of the pattern in two groups of numbers given in the question
+11 : 121 : 110 :: 15 : 225 : 210 ::
+(1) 9 : 81 : 70
+(2) 19 : 361 : 342
+(3) 17 : 288 : 272
+(4) 16 : 225 : 239
+= 2
+~ The pattern is n : n² : n² - n (11² = 121, 121 - 11 = 110; 15² = 225, 225 - 15 = 210). For 19: 19² = 361 and 361 - 19 = 342; option (1) fails because 81 - 9 = 72, and 17² is 289, not 288.
+
+Q 94 | ari | Mensuration
+If a cuboid of length 81cm, breadth 27 cm and height 9 cm is cut into 729 smaller identical cubes, then the length of the edge of each smaller cube is
+(1) 1 cm
+(2) 3 cm
+(3) 9 cm
+(4) 27 cm
+= 2
+~ Volume of the cuboid = 81 × 27 × 9 = 19,683 cm³, so each small cube has volume 19,683 ÷ 729 = 27 cm³ and edge ∛27 = 3 cm. (Check: 81/3 × 27/3 × 9/3 = 27 × 9 × 3 = 729 cubes.)
+
+Q 95 | rea | Non-verbal Reasoning
+A Solid cube of 4 inches edge has been painted with red, green and yellow colours such that each colour appears on a pair of opposite faces. It has been cut into one inch cubes. The number of small one inch cubes that have only one face painted with red colour is
+(1) 16
+(2) 24
+(3) 8
+(4) 32
+= 3
+~ Each face is a 4 × 4 layer of small cubes, and only the inner (4 - 2)² = 4 cubes on a face have just one painted face (the rest lie on edges). Red is on two opposite faces, so 2 × 4 = 8 cubes have only one face painted, and it is red.
+
+Q 96 | rea | Non-verbal Reasoning
+Select the pair from the options that has a relationship similar to that in the pair labelled (A).
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+~ In pair (A) a triangle (3 sides) is drawn inside a circle, and then a circle is drawn inside a square (4 sides), i.e. the next polygon. In option (3) a square (4 sides) is inside a circle and then a circle is inside a pentagon (5 sides), the same relationship; option (4) goes from a pentagon back to a square.
+! img/s2022-q96.png
+
+Q 97 | rea | Non-verbal Reasoning
+All the faces of a cube are labelled with I, II, III, IV, V, VI one on each. The 3 positions of a cube are shown below. The face opposite to face containing I contains:
+(1) VI
+(2) IV
+(3) II
+(4) V
+= 1
+~ The first figure shows II and IV next to I, and the second shows III and V next to I. So I is adjacent to II, III, IV and V, and the only face left, VI, is opposite I.
+! img/s2022-q97.png
+
+Q 98 | rea | Non-verbal Reasoning
+Figure (A) is given below. One part of this figure is missing. Choose the missing part from the given four options.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+~ Fig (A) is symmetric about its vertical centre line, so the missing bottom-right quarter must be the mirror image of the bottom-left quarter: the outer circle's arc and the big diamond's side run from its bottom-left to its top-right corner, with the inner arcs and lines meeting at its top-left corner. Option (3) matches this exactly; in the other pieces the lines or arcs are in the wrong places.
+! img/s2022-q98.png
+
+Q 99 | rea | Non-verbal Reasoning
+The total number of squares in the figure given below is
+(1) 32
+(2) 42
+(3) 35
+(4) 45
+= 3
+~ Treating the 4 × 4 grid as made of squares (the figure is drawn stretched sideways), there are 16 + 9 + 4 + 1 = 30 upright squares. The slanting lines form a large tilted square (joining the mid-points of the sides) split into 4 smaller tilted squares, which adds 5, so the total is 35. (TSLPRB's final key also gave the mark to candidates who left this question unanswered.)
+! img/s2022-q99.png
+
+Q 100 | rea | Non-verbal Reasoning
+In the question figure, assume a mirror is placed on the line MN, then the option among the answer figure that shows the correct image is
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+~ A mirror along the vertical line MN reverses left and right but keeps top and bottom unchanged, so the image should read, from the left: an upright stroke rising from the line, a slant down to the right below the line, a stroke back up above the line and a final slant down to the right onto the line. Option (4) is the only figure with this left-right reversed pattern (its middle rising stroke is drawn slightly slanted instead of upright), while option (2) is the question figure turned through 180°. (TSLPRB's final key also gave the mark to candidates who left this question unanswered.)
+! img/s2022-q100.png
+
+Q 101 | cur | International
+______ is expected to host the summit meeting of Shanghai Cooperation Organization in 2023.
+(1) China
+(2) India
+(3) Kazakhistan
+(4) Russia
+= 2
+~ India was due to take over the rotating SCO chair after the 2022 Samarkand summit in Uzbekistan, so it would host the 2023 meeting of the SCO Heads of State Council. India hosted that summit, in virtual format, in July 2023.
+
+Q 102 | cur | National
+The Election commission has announced polls for ______ Rajya sabha seats that fell vacant between June and August 2022.
+(1) 47
+(2) 52
+(3) 57
+(4) 62
+= 3
+~ In May 2022 the Election Commission announced biennial elections to 57 Rajya Sabha seats in 15 states. The seats were falling vacant between June and August 2022, and polling was held on 10 June 2022.
+
+Q 103 | eco | Agriculture & Industry
+______ measures output in sectors like electricity, mining and manufacturing.
+(1) Gross domestic product
+(2) Index of industrial production
+(3) Current account balance
+(4) Fiscal surplus / deficit
+= 2
+~ The Index of Industrial Production (IIP), released monthly by the National Statistical Office, tracks the volume of industrial output in three sectors: mining, manufacturing and electricity. GDP covers the whole economy, not only these sectors.
+
+Q 104 | cur | National
+As the American automobile company Ford exits India, its manufacturing unit in Gujarat has been taken over by ______
+(1) Mahindra
+(2) Suzuki
+(3) Tata
+(4) Hyundai
+= 3
+~ Tata Motors, through its subsidiary Tata Passenger Electric Mobility, signed agreements in 2022 to take over Ford India's car plant at Sanand in Gujarat after Ford stopped making cars in India.
+
+Q 105 | cur | International
+Recently, the International Labour Organization (ILO) directed that there should be no barriers to people with different sexual orientations. They should be described as ______
+(1) LGBTIQ Peoples
+(2) Hijras
+(3) Gay People
+(4) Trans genders
+= 1
+~ In May 2022 the ILO released a guide on including lesbian, gay, bisexual, transgender, intersex and queer (LGBTIQ+) persons in the world of work. The guide uses LGBTIQ+ as the inclusive term for people of diverse sexual orientations and gender identities.
+
+Q 106 | cur | Defence & Security
+The Indian army plans to create an integrated battle group combining strike formation on northern border and ______
+(1) Hold formation on western border
+(2) Push formation on northern border
+(3) Hold formation on northern border
+(4) Strike formation on western border
+= 1
+~ Integrated Battle Groups (IBGs) are brigade-sized, self-contained fighting units that combine infantry, armour, artillery, engineers and other arms. Reports on the Army's plan said it had picked a holding formation on the western front and a strike formation on the northern border as the first to be converted into IBGs, which is option (1).
+
+Q 107 | geo | Indian Geography
+The Southwest monsoon sets in first in ______ state.
+(1) Tamil Nadu
+(2) Kerala
+(3) Karnataka
+(4) Maharashtra
+= 2
+~ On the Indian mainland, the southwest monsoon first sets in over Kerala, normally around 1 June. From there it advances north and normally covers the whole country by about 8 July.
+
+Q 108 | cur | National
+The Supreme Court of India suspended ______ covering sedition
+(1) Section 120(B) of IPC
+(2) Section 124(A) of IPC
+(3) Section 128 of IPC
+(4) Section 132 of IPC
+= 2
+~ On 11 May 2022, in S.G. Vombatkere v. Union of India, the Supreme Court kept the sedition law, Section 124A of the IPC, in abeyance until the government re-examined it. Section 120B deals with criminal conspiracy.
+
+Q 109 | tg | Telangana Schemes & Affairs
+TSRTC filed a ______ case against Rapido organization over an advertisement
+(1) Defamation
+(2) Copyright
+(3) Cheating
+(4) Conspiracy
+= 1
+~ TSRTC said a Rapido bike-taxi advertisement featuring actor Allu Arjun showed its buses in poor light. It went to a Hyderabad civil court alleging the ad was defamatory, and in late 2021 the court granted an injunction against the ad.
+
+Q 110 | cur | International
+Russia has overtaken which country to become India's second biggest supplier of oil?
+(1) Qatar
+(2) Iran
+(3) Saudi Arabia
+(4) Ukraine
+= 3
+~ After the Ukraine war began, India bought large volumes of discounted Russian crude. In May 2022 Russia overtook Saudi Arabia to become India's second-largest oil supplier after Iraq.
+
+Q 112 | eco | Poverty, Employment & Welfare
+The Human Development Index is an indication of ______.
+(1) Income, Health, Education
+(2) Income, Health, Trade
+(3) Health, Education, Nutrition
+(4) Income, Health, Imports
+= 1
+~ UNDP's Human Development Index has three dimensions. A long and healthy life is measured by life expectancy, knowledge by mean and expected years of schooling, and a decent standard of living by GNI per capita.
+
+Q 113 | cur | National
+Cyclone Asani, which formed in the month of May 2022 affected ______ state
+(1) Andhra Pradesh
+(2) Tamil Nadu
+(3) Kerala
+(4) Karnataka
+= 1
+~ Cyclone Asani formed over the Bay of Bengal in May 2022 and moved towards the Andhra Pradesh coast. It weakened near Machilipatnam on 11 May and then moved along the coast, bringing rain, strong winds and rough seas to coastal Andhra Pradesh.
+
+Q 114 | cur | International
+All the countries of ______ continent are members of G-77.
+(1) Africa
+(2) Asia
+(3) Europe
+(4) South America
+= 1,4
+~ The Group of 77 is a UN coalition of developing countries, and every country in Africa and every country in South America is a member. Asia has non-members such as Japan, South Korea and Israel, and most of Europe is outside the group. TSLPRB's final key therefore accepted both (1) and (4). (TSLPRB's final key also gave the mark to candidates who left this question unanswered.)
+
+Q 115 | cur | International
+Thomson Reuters is ______
+(1) Canada based
+(2) UK based
+(3) USA based
+(4) Australia based
+= 1
+~ Thomson Reuters is headquartered in Toronto, Canada. It was formed in 2008 when the Canadian Thomson Corporation bought the British news agency Reuters, which is why "UK based" is a tempting wrong answer.
+
+Q 116 | geo | World Geography
+The Kruger National Park is in ______
+(1) Greece
+(2) Russia
+(3) South Africa
+(4) Singapore
+= 3
+~ Kruger National Park is one of Africa's largest game reserves. It lies in north-eastern South Africa, in the Limpopo and Mpumalanga provinces.
+
+Q 117 | ih | Ancient India
+Match List I with List-II and select the correct answer
+List-I (Kingdom)    List-II (Rulers)
+(a) Vatsa    (i) Udayana
+(b) Avanti    (ii) Prasenajit
+(c) Kosala    (iii) Sishupala
+(d) Chedi    (iv) Pradyota
+The correct answer is
+(1) a-i, b-ii, c-iii, d-iv
+(2) a-i, b-iv, c-ii, d-iii
+(3) a-i, b-iii, c-iv, d-ii
+(4) a-i, b-ii, c-iv, d-iii
+= 2
+~ Udayana ruled Vatsa from Kaushambi, and Pradyota ruled Avanti from Ujjain. Prasenajit, a contemporary of the Buddha, ruled Kosala, and Sishupala is the Chedi king of the Mahabharata. This gives a-i, b-iv, c-ii, d-iii.
+
+Q 118 | sci | Science & Technology
+What is the expansion of NASA ?
+(1) National Agency of Space Administration
+(2) National Aeronautics and Space Administration
+(3) National Air and Space Agency
+(4) Navigational, Aeronautical & Space Agency
+= 2
+~ NASA stands for the National Aeronautics and Space Administration, the United States' civil space agency, set up in 1958.
+
+Q 119 | ih | Ancient India
+Which one of the following statements is not correct about Ashoka and Mauryas?
+(1) Dhamma-Mahamatras were a new cadre of officials created by Ashoka to spread Dhamma all over the empire.
+(2) According to Mauryan sources Pradeshika, Rajuka and Yukta were important officers at the district level.
+(3) Pativedaka and Pulasani, were responsible for maintenance of Treasury and accounts.
+(4) According to Dipavamsa and Mahavamsa Ashoka killed 99 of his brothers and succeeded to the throne.
+= 3
+~ Pativedakas (reporters) and Pulisanis were officials who kept the king informed about public affairs and opinion; they did not run the treasury and accounts, which were the work of officers such as the Sannidhata (treasurer) and the Samaharta (chief collector). The other statements are correct: Ashoka created the Dhamma-Mahamatras, Pradeshika, Rajuka and Yukta were district-level officers, and the Sri Lankan chronicles say he killed 99 brothers to gain the throne.
+
+Q 120 | ih | Ancient India
+Who among the following composed the Mandasor Inscription ?
+(1) Vatsabhatti
+(2) Chitradatta
+(3) Parnadatta
+(4) Chakra palita
+= 1
+~ The Mandasor inscription of the silk-weavers' guild, from the time of Kumaragupta I and Bandhuvarman, was composed in ornate Sanskrit verse by the poet Vatsabhatti. Parnadatta and his son Chakrapalita are linked with the Junagadh inscription of Skandagupta, which records repairs to the Sudarshana lake.
+
+Q 121 | ih | Ancient India
+Which one of the following statements is not correct about Jainism ?
+(1) According to Jaina tradition, at the time of Mahabharatha war, Jaina order led by Neminatha, who is recognized as the twenty second Tirthankara.
+(2) Jaina monks were found on the banks of Sindhu river at the time of Alexander's invasion of India.
+(3) The famous Gomateshwara statue was erected at Sravanabelgola by Chamundaraya, the king of Gangas in 11th century.
+(4) Mahaveera preached in the mixed dialect called Ardha-Magadi and his teachings were classified into twelve books called 'Srutangas'.
+= 3
+~ The Gomateshwara (Bahubali) statue at Shravanabelagola was set up around 983 AD, in the late 10th century, by Chamundaraya. He was a minister and general of the Western Ganga king Rachamalla IV, not a Ganga king himself, so statement (3) is wrong. Neminatha as the 22nd Tirthankara and Mahavira preaching in Ardha-Magadhi are standard Jain traditions.
+
+Q 122 | ih | Medieval India
+Assertion (A): Balban could not raise the numerical strength of the army to the level which it reached later at the time of Allauddin Khilji.
+Reason (R): Balban insisted upon high birth as an essential qualification for appointment to higher civil and military posts.
+Choose the correct option from the following:
+(1) (A) is true, (R) is true and (R) is the correct explanation of (A)
+(2) (A) is true, (R) is true but (R) is not the correct explanation of (A)
+(3) (A) is true but (R) is false
+(4) (A) is false but (R) is true
+= 2
+~ Balban reorganised the army, but it never reached the very large standing army that Alauddin Khilji later kept and paid in cash, so (A) is true. Balban also gave high offices only to men of noble Turkish birth, so (R) is true. However, his insistence on high birth was a policy about who could hold office, not the reason his army stayed smaller, so (R) does not explain (A).
+
+Q 123 | ih | Medieval India
+Match List I with List-II and select the correct answer
+List-I (Texts)    List-II (Authors)
+(a) Kumarapalacharita    (i) Chandbardai
+(b) Vikaramankadevacharitra    (ii) Kalhana
+(c) Rajatarangini    (iii) Bilhana
+(d) Pruthviraj Raso    (iv) Hemachandra
+(1) a-i, b-ii, c-iii, d-iv
+(2) a-ii, b-i, c-iv, d-iii
+(3) a-iv, b-iii, c-ii, d-i
+(4) a-iii, b-iv, c-ii, d-i
+= 3
+~ The Jain scholar Hemachandra wrote the Kumarapalacharita about the Chalukya king Kumarapala, and Bilhana wrote the Vikramankadevacharita about Vikramaditya VI. Kalhana wrote the Rajatarangini, the chronicle of Kashmir, and Chand Bardai wrote the Prithviraj Raso, so the matching is a-iv, b-iii, c-ii, d-i.
+
+Q 124 | ih | Medieval India
+Match the following.
+List-I (Dynasties)    List-II (Kingdoms)
+(a) Nizam Shahis    (i) Bidar
+(b) Imad Shahis    (ii) Golkonda
+(c) Adil Shahis    (iii) Berar
+(d) Qutub Shahis    (iv) Ahmednagar
+(e) Barid Shahis    (v) Bijapur
+(1) a-iii, b-i, c-iv, d-ii, e-v
+(2) a-i, b-iii, c-iv, d-ii, e-v
+(3) a-v, b-iv, c-iii, d-ii, e-i
+(4) a-iv, b-iii, c-v, d-ii, e-i
+= 4
+~ After the Bahmani kingdom broke up, five Deccan sultanates emerged: the Nizam Shahis at Ahmednagar, the Imad Shahis at Berar, the Adil Shahis at Bijapur, the Qutb Shahis at Golconda and the Barid Shahis at Bidar. This gives a-iv, b-iii, c-v, d-ii, e-i.
+
+Q 125 | ih | Medieval India
+Which one the following statements is not correct about Bahamani Kingdom ?
+(1) Bahamani sultanate was founded by Allauddin Hasan Bahaman Shah in the year 1327 A.D.
+(2) Among all the Bahamani rulers Shihab-uddin-Mahmud's was the longest rule.
+(3) Mahmud Gawan was appointed as Prime Minister of Bahamani Kingdom at the time of Muhammad Shah III.
+(4) Kalamullah Shah was the last ruler of Bahamani Kingdom.
+= 1
+~ Alauddin Hasan Bahman Shah (Hasan Gangu) founded the Bahmani sultanate in 1347 AD, not 1327, so statement (1) is wrong. Shihabuddin Mahmud ruled from 1482 to 1518, the longest Bahmani reign, and Mahmud Gawan served as chief minister under Muhammad Shah III. Kalimullah Shah was the last Bahmani sultan.
+
+Q 126 | ih | Medieval India
+Name the Afghan who played an important role in forming Rajput confederacy against Babur at the Battle of Khanwa in 1527.
+(1) Alam Khan of Kalpi
+(2) Hasan Khan Mewati
+(3) Nizam Khan of Bayana
+(4) Tatar Khan Sarangkhan of Gwalior
+= 2
+~ Hasan Khan Mewati, the Muslim ruler of Mewat, joined Rana Sanga's confederacy against Babur at Khanwa (March 1527) together with the Afghan claimant Mahmud Lodi, and was killed in the battle. The question calls him an Afghan, though he was a Khanzada of Rajput descent; the other chiefs named were Afghans who came to terms with Babur (Nizam Khan, for example, surrendered Bayana to him).
+
+Q 127 | ih | Medieval India
+Which one the following statements is not correct about Shivaji Coronation Ceremony ?
+(1) It was conducted by 'Vishweshwar' a Pundit from Benaras.
+(2) Balam Bhatta was a family priest of Shivaji
+(3) On 10th June 1674, Shivaji re-married his four surviving wives according to Kshatriya rites.
+(4) Shivaji was obliged to undergo a second coronation ceremony on the suggestion of a well-known tantric priest, Nishchal Puri Goswami.
+= 3
+~ Shivaji was crowned at Raigad on 6 June 1674 by Gaga Bhatt (Vishweshwar) of Benaras, and the re-marriage of his wives with Kshatriya (Vedic) rites took place in the days before the coronation, not on 10 June, so statement (3) is wrong. A second, tantric coronation was held later in 1674 on the advice of Nishchal Puri Goswami.
+
+Q 128 | ih | Medieval India
+Arrange the following Bhakti leaders according to their year of Birth.
+(a) Sant Tukaram
+(b) Chaitanya Mahaprabhu
+(c) Guru Nanak
+(d) Kabir
+(1) (a) (b) (c) (d)
+(2) (b) (d) (c) (a)
+(3) (c) (a) (d) (b)
+(4) (d) (c) (b) (a)
+= 4
+~ Kabir was born around 1440 (traditionally 1398), Guru Nanak in 1469, Chaitanya Mahaprabhu in 1486 and Sant Tukaram in 1608, giving the order d, c, b, a.
+
+Q 129 | ih | Modern India & Freedom Struggle
+Which one of the following statements is not correct about Raja Ram Mohan Roy ?
+(1) He condemned the idol worship and Brahmanical rituals.
+(2) He propagated Monotheism and stated that religion and divine worship mere personal matters of an individual and unjustly controlled by Priests.
+(3) To support his arguments, he depended upon Vedic and Puranic Literature.
+(4) He wrote a pamphlet 'Anusthan' prescribing the mode of worship to be followed in the Samaj.
+= 3
+~ Ram Mohan Roy based his case for monotheism on the Vedas and the Upanishads (Vedanta); he rejected the Puranas, which he saw as the source of idolatry and superstition, so statement (3) is incorrect.
+
+Q 130 | ih | Modern India & Freedom Struggle
+Which one of the following statements is not correct about Portuguese presence in India ?
+(1) In 1498 Vasco-da-gama reached Calicut on the Malabar coast where he was received cordially by the Hindu Raja Zamorin.
+(2) Francisco de Almeida, the first governor of the Portuguese in India followed a policy known as Blue Water Policy.
+(3) Portuguese conquered Goa from Mysore rulers in 1510 and made it their capital.
+(4) Alfonso de Albuquerque was the second Governor of Portuguese in India who tried to introduce reforms in the Hindu society by legally abolishing Sati.
+= 3
+~ Albuquerque captured Goa in 1510 from the Adil Shahi Sultan of Bijapur, not from Mysore rulers, so statement (3) is wrong; the other statements (Zamorin's welcome, Almeida's Blue Water Policy, Albuquerque's ban on Sati) are correct.
+
+Q 131 | ih | Modern India & Freedom Struggle
+Arrange the following Political Associations chronologically based on their inception.
+(a) Indian Association
+(b) Poona Sarvajanik Sabha
+(c) Madras Mahajana Sabha
+(d) Bombay Presidency Association
+(1) (a) (b) (c) (d)
+(2) (b) (a) (c) (d)
+(3) (c) (d) (b) (a)
+(4) (d) (c) (a) (b)
+= 2
+~ Poona Sarvajanik Sabha was founded in 1870, the Indian Association in 1876, the Madras Mahajana Sabha in 1884 and the Bombay Presidency Association in January 1885, giving b, a, c, d.
+
+Q 132 | ih | Modern India & Freedom Struggle
+Who among the following is not associated with defence of the 'Indian National Army' prisoners in the Year 1945 - 46 ?
+(1) Bhulabhai Desai
+(2) Jawaharlal Nehru
+(3) Mahadev Desai
+(4) Asaf Ali
+= 3
+~ The Congress defence team at the INA Red Fort trials included Bhulabhai Desai, Tej Bahadur Sapru, Asaf Ali, K.N. Katju and Jawaharlal Nehru; Mahadev Desai, Gandhiji's secretary, had died in 1942 in the Aga Khan Palace.
+
+Q 133 | ih | Modern India & Freedom Struggle
+Arrange the following important events chronologically based on the Muslim separatist politics.
+(a) Deliverance Day
+(b) Lucknow Pact
+(c) Direct Action day
+(d) Establishment of 'All India Muslim League'
+(1) (d) (a) (b) (c)
+(2) (d) (b) (a) (c)
+(3) (d) (b) (c) (a)
+(4) (d) (c) (b) (a)
+= 2
+~ The All India Muslim League was founded in 1906, the Lucknow Pact was signed in 1916, Deliverance Day was observed on 22 December 1939 and Direct Action Day on 16 August 1946, giving d, b, a, c.
+
+Q 134 | ih | Modern India & Freedom Struggle
+Which one of the following opinions on the nature of 1857 Mutiny is not correct ?
+(1) John Seeley: "The Revolt of 1857 as a wholly unpatriotic and selfish sepoy mutiny with no native leadership and no popular support".
+(2) James Outram & W. Tayler: "The outbreak of 1857 mutiny as a result of Hindu - Muslim conspiracy".
+(3) R.C. Majumdar: "1857 Sepoy mutiny was not a war of Independence. There is nothing in the conduct or behaviour of the sepoys which would justify us in the belief or assumption, that they were inspired by love for their country or fought against the British with the definite idea of freeing their motherland".
+(4) William Dalrymple: "It is a conflict between civilization and Barbarism".
+= 4
+~ The view of 1857 as a conflict between civilisation and barbarism belongs to T.R. Holmes, not William Dalrymple, who stressed the religious (jihad) element in the revolt. The other three are the standard textbook attributions, although Outram himself described the outbreak as a Muslim conspiracy exploiting Hindu grievances.
+
+Q 135 | geo | World Geography
+Tropical monsoon forests are normally
+(1) Evergreen forests
+(2) Deciduous forests
+(3) Temperate forests
+(4) Mangrove forests
+= 2
+~ Tropical monsoon forests shed their leaves during the long dry season, so they are deciduous forests; evergreen forests need rainfall throughout the year.
+
+Q 136 | geo | World Geography
+The predominant vegetation of hot deserts is
+(1) Xerophytes
+(2) Mesophytes
+(3) Hygrophytes
+(4) Hydrophytes
+= 1
+~ Xerophytes (cacti, thorny bushes) are plants adapted to very dry conditions with deep roots, thick skins and reduced leaves, so they dominate hot deserts; hydrophytes and hygrophytes need water or damp soil.
+
+Q 137 | geo | World Geography
+The hot & dry wind which originates in Sahara is
+(1) Sirocco
+(2) Leveche
+(3) Chili
+(4) Loo
+= 1
+~ The Sirocco is a hot, dry, dusty wind that originates in the Sahara and blows north towards the Mediterranean and southern Europe; the Loo blows over the plains of north India.
+
+Q 138 | geo | World Geography
+The Mediterranean lands are also known as
+(1) Orchard lands
+(2) Dry grass lands
+(3) Evergreen lands
+(4) Nomadic lands
+= 1
+~ The Mediterranean regions are called the orchard lands of the world because of their large-scale cultivation of citrus fruits, grapes, olives and figs.
+
+Q 139 | geo | Physical Geography
+The planet that takes 88 days to make one revolution of the sun is
+(1) Jupiter
+(2) Mars
+(3) Mercury
+(4) Saturn
+= 3
+~ Mercury, the planet nearest the Sun, completes one revolution in about 88 days; Mars takes about 687 days and Jupiter about 12 years.
+
+Q 140 | geo | Physical Geography
+Which one of the following is the source region for the formation of air masses?
+(1) The Himalayas
+(2) The Equatorial forest
+(3) The Deccan plateau
+(4) The Siberian plain
+= 4
+~ Air masses form over large, uniform areas where air stays long enough to take on the surface's temperature and humidity; the vast Siberian plain is a classic source region of cold, dry continental polar air.
+
+Q 141 | geo | Physical Geography
+Sub-tropical high pressure belts are also referred as
+(1) Doldrums
+(2) Wind convergence
+(3) Horse latitudes
+(4) Frontal rains
+= 3
+~ The calm sub-tropical high pressure belts around 30° N and S are called the Horse latitudes; the Doldrums are the equatorial low pressure belt.
+
+Q 142 | geo | Indian Geography
+Which is the largest Physiographic division of India ?
+(1) Greater Himalayas
+(2) Greater Northern plains
+(3) Greater Indian plateau
+(4) The Coastal plains
+= 3
+~ The Peninsular (Indian) plateau is the largest and oldest physiographic division of India, covering roughly half of the country's area.
+
+Q 143 | tg | Telangana Geography & Economy
+In India Multi Mode Transport System (MMTS) was started on the
+(1) 9th July 2003
+(2) 9th August 2003
+(3) 9th September 2003
+(4) 9th October 2003
+= 2
+~ The Multi-Modal Transport System (MMTS) suburban rail service of Hyderabad-Secunderabad was inaugurated on 9 August 2003 by the then Deputy Prime Minister L.K. Advani.
+
+Q 144 | geo | Indian Geography
+Karewa Soil is known for the cultivation of
+(1) Citrus Fruits
+(2) Floriculture
+(3) Coarse grains
+(4) Saffron
+= 4
+~ Karewas are lacustrine (lake-deposit) terraces of the Kashmir Valley, famous for saffron cultivation, especially around Pampore.
+
+Q 145 | geo | Indian Geography
+Namchik Coal Mine is situated on
+(1) Meghalaya
+(2) Assam
+(3) Arunachal Pradesh
+(4) Tripura
+= 3
+~ The Namchik-Namphuk coalfield lies in Changlang district of Arunachal Pradesh.
+
+Q 147 | geo | Indian Geography
+The boundary between India and Pakistan is an example of
+(1) Super imposed boundary
+(2) Subsequent boundary
+(3) Antecedent boundary
+(4) Relict boundary
+= 1
+~ A superimposed boundary is one imposed by an outside power on an already settled cultural landscape; the India-Pakistan boundary (Radcliffe Line) was drawn by the departing British in August 1947 straight across long-settled Punjab and Bengal. Some textbooks call it a subsequent boundary because it broadly followed religious-majority areas, but the official key treats it as superimposed.
+
+Q 148 | geo | Indian Geography
+Which one of the following is the most urbanized state in India ?
+(1) Punjab
+(2) Gujarat
+(3) Karnataka
+(4) Tamil Nadu
+= 4
+~ According to Census 2011, Tamil Nadu has about 48.4% urban population, higher than Gujarat (about 42.6%), Karnataka (about 38.7%) and Punjab (about 37.5%).
+
+Q 149 | geo | Indian Geography
+Centre for Arid Zone Research Institute is located at
+(1) Bangalore
+(2) Ranchi
+(3) Jodhpur
+(4) Jaipur
+= 3
+~ The Central Arid Zone Research Institute (CAZRI) of ICAR is located at Jodhpur in the Thar desert region of Rajasthan.
+
+Q 150 | eco | Poverty, Employment & Welfare
+Which one of the following state has the lowest Human Development Index ?
+(1) Bihar
+(2) Haryana
+(3) Himachal Pradesh
+(4) Punjab
+= 1
+~ Bihar has the lowest Human Development Index among Indian states, while Himachal Pradesh, Punjab and Haryana rank well above the national average.
+
+Q 151 | pol | Constitution & Rights
+Which part of the Constitution deals with Amendments?
+(1) XXI
+(2) XXII
+(3) XX
+(4) IX
+= 3
+~ Part XX of the Constitution contains only Article 368, which lays down the power of Parliament to amend the Constitution and the procedure for doing so. Part XXI deals with temporary, transitional and special provisions, and Part XXII with the short title, commencement and repeals.
+
+Q 152 | pol | Constitution & Rights
+Equal Justice and free legal aid are parts of ____
+(1) Directive Principles of State Policy
+(2) Fundamental Rights
+(3) Fundamental Duties
+(4) Citizenship
+= 1
+~ Article 39A, inserted by the 42nd Amendment (1976), directs the State to secure equal justice and provide free legal aid, so it is a Directive Principle of State Policy. It is not a Fundamental Duty; the Fundamental Duties are in Article 51A.
+
+Q 153 | geo | Indian Geography
+Which one of the following is not correctly matched?
+Pass    State/UT
+(1) Lanak la    Ladakh
+(2) Bomdila    Sikkim
+(3) Manapass    Uttarakhand
+(4) Shipkila    Himachal Pradesh
+= 2
+~ Bomdila is in Arunachal Pradesh (West Kameng district), not Sikkim; the major passes of Sikkim are Nathu La and Jelep La. Lanak La is in Ladakh, Mana Pass in Uttarakhand and Shipki La in Himachal Pradesh, so those pairs are correct.
+
+Q 154 | pol | Constitution & Rights
+"The citizens, men and women equally, have the right to an adequate means of livelihood" was mentioned in
+(1) Directive Principles of State Policy
+(2) Centre-State Relations
+(3) Federal Policy
+(4) Fundamental Duties
+= 1
+~ This is Article 39(a), one of the Directive Principles of State Policy in Part IV, which asks the State to direct its policy towards securing that citizens, men and women equally, have the right to an adequate means of livelihood.
+
+Q 155 | pol | Union & State Government
+Parliament means
+(1) The Lok Sabha
+(2) The Rajya Sabha
+(3) The President
+(4) All the above
+= 4
+~ Under Article 79, Parliament of the Union consists of the President and the two Houses, the Council of States (Rajya Sabha) and the House of the People (Lok Sabha). Although the President does not sit in either House, he is an integral part of Parliament.
+
+Q 156 | pol | Local Government & Bodies
+"A body consisting of persons registered in the electoral rolls relating to a village comprised within the area of panchayat at the village level" is called
+(1) District
+(2) Gram Sabha
+(3) Panchayat Area
+(4) None of the above
+= 2
+~ This is the definition of Gram Sabha in Article 243(b), inserted by the 73rd Constitutional Amendment Act, 1992. The Gram Sabha is the assembly of all registered voters of the village, while "Panchayat area" means the territorial area of a Panchayat.
+
+Q 157 | pol | Governance & Schemes
+In the format of Party competition, which model is currently working in India?
+(1) One Party dominance
+(2) Bipolar competition
+(3) Two-plus competition
+(4) Multiparty competition
+= 4
+~ India has a multiparty system in which many national and state parties compete for power and governments are often formed by coalitions. The one-party dominance of the Congress belonged to the early decades after independence.
+
+Q 158 | pol | Constitution & Rights
+"The state shall provide free and compulsory education to all children of the age of six to fourteen years in such a manner as the state may, by law, determine" is part of
+(1) Right to Equality
+(2) Right against Exploitation
+(3) Right to Freedom of Religion
+(4) Right to Freedom
+= 4
+~ This is Article 21A, inserted by the 86th Constitutional Amendment Act, 2002. Article 21A falls within the Right to Freedom group (Articles 19 to 22), not the Right against Exploitation (Articles 23 and 24).
+
+Q 159 | eco | Poverty, Employment & Welfare
+"Deen Dayal Upadhyaya Grameen Kaushalaya Yojana" is part of
+(1) Ministry of Rural Development
+(2) Ministry of Social Justice and Empowerment
+(3) Ministry of Communication
+(4) Ministry of Micro, Small and Medium Enterprises
+= 1
+~ DDU-GKY, launched in 2014, is the placement-linked skill development programme for poor rural youth run by the Ministry of Rural Development as part of the National Rural Livelihood Mission.
+
+Q 160 | eco | Growth & Planning
+During which five-year plan was phase of heavy industrialization initiated?
+(1) Second Five-Year Plan
+(2) First Five-Year Plan
+(3) Third Five-Year Plan
+(4) Sixth Five-Year Plan
+= 1
+~ The Second Five-Year Plan (1956-61), based on the Mahalanobis model, stressed rapid industrialisation with emphasis on heavy and basic industries. The First Plan (1951-56) had focused mainly on agriculture and irrigation.
+
+Q 161 | eco | Growth & Planning
+Which sector does contribute the most to Indian Economy?
+(1) Service sector
+(2) Manufacturing sector
+(3) Agricultural sector
+(4) Small Scale Industrial sector
+= 1
+~ The services (tertiary) sector contributes more than half of India's Gross Value Added, far more than industry or agriculture. Agriculture still employs the largest share of workers, but its share in output is below one-fifth.
+
+Q 162 | eco | Poverty, Employment & Welfare
+Which type of unemployment has the marginal productivity of the workers is zero?
+(1) Seasonal unemployment.
+(2) Involuntary unemployment.
+(3) Disguised unemployment.
+(4) Structural unemployment.
+= 3
+~ In disguised unemployment, more people are engaged in work (typically on family farms) than are actually needed, so withdrawing the extra workers does not reduce output; their marginal productivity is zero.
+
+Q 163 | pol | Local Government & Bodies
+Identify the Non-Constitutional Body.
+(1) National Human Rights Commission
+(2) Election Commission of India
+(3) National Commission for SCs
+(4) National Commission for STs
+= 1
+~ The NHRC is a statutory body set up under the Protection of Human Rights Act, 1993. The Election Commission (Article 324), the National Commission for SCs (Article 338) and the National Commission for STs (Article 338A) are constitutional bodies.
+
+Q 164 | eco | Money, Banking & Finance
+What is meant by Monetary Policy?
+(1) The process by which the Parliament controls the Money supply
+(2) The process by which Central Bank of a country controls the supply of Money
+(3) The process by which IMF controls the Money supply
+(4) The process by which World Bank controls the money supply
+= 2
+~ Monetary policy is the policy by which a country's central bank (in India, the Reserve Bank of India) controls the money supply, credit and interest rates. Government taxation and spending, which Parliament approves, come under fiscal policy.
+
+Q 165 | eco | Money, Banking & Finance
+If the Balance of Payments of a country is adverse, then which institution will help that country?
+(1) World Bank
+(2) WTO
+(3) IMF
+(4) Asian Development Bank
+= 3
+~ The International Monetary Fund lends to member countries facing balance of payments difficulties (India, for example, borrowed from it in the 1991 crisis). The World Bank and the ADB mainly finance development projects, and the WTO regulates trade.
+
+Q 166 | eco | Money, Banking & Finance
+Which of the following are called the Twins of Bretton Woods?
+(1) IMF & IBRD
+(2) IMF & WTO
+(3) IBRD & WHO
+(4) ADB & WHO
+= 1
+~ The International Monetary Fund and the International Bank for Reconstruction and Development (World Bank) were both created at the Bretton Woods Conference of 1944, so they are called the Bretton Woods twins. The WTO came only in 1995.
+
+Q 167 | tg | Telangana Movement & State Formation
+Who was the founder of 'Hyderabad Protection Samithi'?
+(1) Boorgula Narsing Rao
+(2) Hayagreevachari
+(3) Ramachary
+(4) Mandumula Narsinga Rao
+= 3
+~ In August 1952, at the time of the Mulki agitation, legislator P. Ramachari founded the Hyderabad Hita Rakshana Samithi (Hyderabad Protection Samithi) and used it to campaign against the appointment of non-Mulkis (non-locals) to government jobs in Hyderabad State.
+
+Q 168 | tg | Telangana Movement & State Formation
+The Gentle men's agreement at Delhi was signed on:
+(1) 16th February, 1956
+(2) 18th February, 1956
+(3) 19th February, 1956
+(4) 20th February, 1956
+= 4
+~ The Gentlemen's Agreement between leaders of Andhra and Telangana was signed in Delhi on 20 February 1956. It promised safeguards for Telangana (such as a regional council and Mulki rules) before Andhra Pradesh was formed on 1 November 1956.
+
+Q 169 | eco | Agriculture & Industry
+When was the first Industrial Policy of India launched?
+(1) 1956
+(2) 1948
+(3) 1951
+(4) 1965
+= 2
+~ India's first Industrial Policy Resolution was announced on 6 April 1948 and set out a mixed economy with roles for both the public and private sectors. The 1956 Resolution was the second, and 1951 is the year of the Industries (Development and Regulation) Act.
+
+Q 170 | tg | Telangana Movement & State Formation
+Who organized democratic Telangana conference in December, 1997 in the banner of 'All India People Resistance Forum'?
+(1) Marrichenna Reddy
+(2) K. Jaya Shankar
+(3) Kaloji Narayan Rao
+(4) Veda Kumar
+= 3
+~ The All India People's Resistance Forum held a 'Democratic Telangana' public meeting at Hanamkonda (Warangal) on 28 December 1997, where the Warangal Declaration of 50 demands for a democratic Telangana state was released. Accounts credit AIPRF general secretary Prof. G.N. Saibaba with organising it; of the names given, the official key picks people's poet Kaloji Narayana Rao, who spoke at the meeting and was among those who released the declaration (Marri Chenna Reddy had died in December 1996).
+
+Q 171 | tg | Telangana Movement & State Formation
+Identify the commission appointed by Telugu Desham government in June, 2001
+(1) Bhargava Commission
+(2) J.M. Girglani Commission
+(3) Non-Mulki Protection Commission
+(4) Telangana Mulki Commission
+= 2
+~ In June 2001 the Chandrababu Naidu (TDP) government appointed the one-man J.M. Girglani Commission to study violations of the Presidential Order and GO 610 in government employment in Telangana. The Bhargava Committee was set up in 1969 to assess Telangana surpluses.
+
+Q 172 | tg | Telangana Movement & State Formation
+What is the historical importance of the day 27th April, 2001 in the Final phase of Telangana Movement?
+(1) Formation of Telangana Elites Forum
+(2) Foundation Telangana Jana Sabha
+(3) 'Bongiri' Declaration
+(4) Foundation of Telangana Rastra Samithi
+= 4
+~ K. Chandrasekhar Rao founded the Telangana Rashtra Samithi (TRS) at Jala Drushyam in Hyderabad on 27 April 2001, which marked the start of the final phase of the movement for a separate Telangana state.
+
+Q 174 | tg | Telangana Movement & State Formation
+Who was the 'Home Minister of India' on the historic occasion of signing of 'Gentlemen's Agreement' by Andhra & Telangana leaders in 1956?
+(1) Sardar Patel
+(2) Govind Vallabh Pant
+(3) Morarji Desai
+(4) Moulana Abdul Kalam Azad
+= 2
+~ Govind Ballabh Pant was Union Home Minister from 1955 to 1961, so he held the office when the Gentlemen's Agreement was signed in February 1956. Sardar Patel had died in 1950, and Maulana Azad was Education Minister.
+
+Q 175 | tg | Telangana Movement & State Formation
+How many seats were won by 'Telangana Prajasamithi' in the 1971 General Elections in Andhra Pradesh?
+(1) 12
+(2) 11
+(3) 14
+(4) 10
+= 4
+~ In the 1971 Lok Sabha elections, held after the 1969 agitation, Dr. M. Chenna Reddy's Telangana Praja Samithi won 10 of the 14 Lok Sabha seats in the Telangana region.
+
+Q 176 | tg | Telangana History & Culture
+Who was the editor of 'imroz' a popular paper in Hyderabad State during the period of Osman Ali Khan ?
+(1) Md. Arif Khan
+(2) Md. Iqbal
+(3) Shoebullah Khan
+(4) Raza Ali Khan
+= 3
+~ Shoebullah (Shoeb-ulla) Khan edited the Urdu daily Imroz, which supported Hyderabad's merger with India and criticised the Razakars under Osman Ali Khan's rule. He was attacked and killed in Hyderabad in August 1948 for his writings.
+
+Q 177 | tg | Telangana Movement & State Formation
+Arrange the following events related to Telangana Movement in Chronological order :
+(a) Telangana Vidrohadinam
+(b) Bhuvanagiri Declaration
+(c) Namaste Telangana daily was launched
+(d) Sagaraharam
+(1) a, c, d, b
+(2) b, c, d, a
+(3) a, b, c, d
+(4) d, b, a, c
+= 3
+~ Telangana Vidroha Dinam (betrayal day) was observed in Warangal on 1 November 1996, the 40th anniversary of Andhra Pradesh's formation, by intellectuals led by Prof. Jayashankar. The Bhuvanagiri Declaration came out of the Bhuvanagiri (Bhongir) Sabha of 8-9 March 1997, Namaste Telangana daily was launched on 6 June 2011, and the Sagara Haram was held on Necklace Road, Hyderabad, on 30 September 2012.
+
+Q 178 | tg | Telangana Movement & State Formation
+Who described the post of Deputy Chief Minister as 'sixth finger to a hand' ?
+(1) M. Chenna Reddy
+(2) Neelam Sanjeeva Reddy
+(3) B. Ramakrishna Reddy
+(4) K. Brahmananda Reddy
+= 2
+~ The Gentlemen's Agreement (1956) said that if the Chief Minister came from Andhra, the Deputy Chief Minister would come from Telangana. Neelam Sanjeeva Reddy, the first Chief Minister of Andhra Pradesh, refused to appoint a Deputy Chief Minister in 1956 and dismissed the post as a 'sixth finger', meaning it was unnecessary; K. V. Ranga Reddy became Deputy Chief Minister only in 1959.
+
+Q 179 | tg | Telangana Movement & State Formation
+Identify the leader from Andhra region who was not a member, who signed on the 'Gentlemen's Agreement' in 1956
+(1) Damodaram Sanjeevaiah
+(2) N. Sanjeeva Reddy
+(3) Gauthu Lachanna
+(4) B. Gopal Reddy
+= 1
+~ Four Andhra leaders signed the Gentlemen's Agreement of 20 February 1956: Bezawada Gopala Reddy, N. Sanjeeva Reddy, Gouthu Latchanna and Alluri Satyanarayana Raju. Damodaram Sanjeevaiah was not one of them.
+
+Q 181 | tg | Telangana Movement & State Formation
+Arrange the following events connected with the Second phase of Telangana Movement in chronological order :
+(a) Appointment of Justice Sri Krishna Committee
+(b) Rail Bandh
+(c) Million March
+(d) Submission of resignation to Chief Minister post by N. Kiran Kumar Reddy
+(1) a, b, c, d
+(2) b, d, c, a
+(3) d, b, c, a
+(4) b, c, a, d
+= 1
+~ The Srikrishna Committee was appointed in February 2010, the rail roko (rail bandh) was held on 1 March 2011 and the Million March on 10 March 2011. N. Kiran Kumar Reddy resigned as Chief Minister in February 2014, after Parliament took up the bifurcation bill.
+
+Q 182 | tg | Telangana Movement & State Formation
+The students of Telangana conducted 'Telangana Vidyarthi Garjana' in Osmania University, on
+(1) 14th June, 2013
+(2) 3rd January, 2010
+(3) 3rd January, 2012
+(4) 10th April, 2011
+= 2
+~ The Telangana Vidyarthi Garjana, a huge rally of students at Osmania University, was held on 3 January 2010. It came during the agitation that followed the Centre's 23 December 2009 statement putting the Telangana process on hold.
+
+Q 183 | tg | Telangana Movement & State Formation
+Identify the person who brought the illegal appointment of non-locals in Kothagudem thermal power station for the first-time into public ?
+(1) A. Ramadas
+(2) A. Ravindranath
+(3) Sree Ramadas
+(4) I. Kiran Nath
+= 1,3
+~ Kolishetti Ramadasu (K. Ramadas) of Yellandu set up a Telangana regional samiti in 1968 to expose non-Mulkis who had got jobs on fake Mulki certificates, such as those at the Kothagudem Thermal Power Station, and the 1969 agitation is traced to his efforts. Options (1) 'A. Ramadas' and (3) 'Sree Ramadas' both point to him, so TSLPRB's final key accepted both; A. Ravindranath was the Khammam student whose hunger strike in January 1969 launched the agitation. (TSLPRB's final key also gave the mark to candidates who left this question unanswered.)
+
+Q 185 | sci | Physics
+Which of the following radio active elements is used to make nuclear fission reaction ?
+(1) Thorium
+(2) Uranium
+(3) Barium
+(4) Actinium
+= 2
+~ Uranium-235 is the fissile fuel that splits on absorbing a slow neutron and keeps a fission chain reaction going in reactors. Thorium is only fertile, because it must first be converted to U-233. Barium is one of the products of uranium fission, not its fuel.
+
+Q 186 | sci | Science & Technology
+Satellite communication uses the following electro magnetic waves
+(1) Visible Light
+(2) X - Rays
+(3) Micro Waves
+(4) Radio Waves
+= 3,4
+~ Communication satellites use microwave frequencies (for example the C, Ku and Ka bands, a few GHz to tens of GHz), which pass through the ionosphere. Microwaves are the high-frequency part of the radio spectrum, so TSLPRB's final key accepted both (3) and (4). (TSLPRB's final key also gave the mark to candidates who left this question unanswered.)
+
+Q 187 | sci | Science & Technology
+What is the code name used for first Indian nuclear test ?
+(1) Chargi
+(2) Pokhran
+(3) Smiling Buddha
+(4) Pinaka
+= 3
+~ India's first nuclear test, held at Pokhran on 18 May 1974, was code-named 'Smiling Buddha'. Pokhran is the site, not the code name, and Pinaka is a rocket launcher system.
+
+Q 188 | sci | Science & Technology
+Speed of internet is measured in
+(1) GHZ
+(2) GB
+(3) Dpi
+(4) GBPS
+= 4
+~ Data transfer speed is measured in bits per second (bps, Mbps, Gbps), so GBPS is the right unit. GHz measures frequency such as processor clock speed, GB measures storage size, and dpi measures print or scan resolution.
+
+Q 189 | geo | Environment & Ecology
+The common components of photo chemical smog are
+(1) Ozone and SO2
+(2) NO2 and SO2
+(3) Formaldehyde and PAN
+(4) Ozone, Formaldehyde and PAN
+= 4
+~ Photochemical smog forms when sunlight acts on nitrogen oxides and hydrocarbons, producing ozone, peroxyacetyl nitrate (PAN) and aldehydes such as formaldehyde. SO2 is typical of classical (London-type) smog, so options with SO2 are wrong and option (3) is incomplete.
+
+Q 190 | sci | Biology & Health
+The first patent was issued on a human gene sequence is located on which chromosome and what kind of health risk is caused due to its mutation ?
+(1) 4 and Huntingtin
+(2) 23 and Hemophilia
+(3) 7 and Cystic fibrosis
+(4) 17 and Cancer
+= 1
+~ The Huntingtin (HTT) gene lies on the short arm of chromosome 4, and its mutation (an expanded CAG repeat) causes Huntington's disease; the key rests on an early US patent (1987) for a Huntington's disease test using chromosome-4 DNA. The pairs in (3) (CFTR gene, chromosome 7) and (4) (BRCA1 gene, chromosome 17) are also biologically correct, and a 1982 patent on the human CSH1 gene predates all of these, so the question's premise is doubtful. (Official final key; some sources differ.)
+
+Q 191 | geo | Environment & Ecology
+What is the reason for increasing sea level in some coastal areas ?
+(1) Decrease of CO2 in Troposphere
+(2) Increase of O3 layer in stratosphere
+(3) CH4 trapped beneath frozen soil of Alaska
+(4) Afforestation
+= 3
+~ Methane trapped in permafrost, such as the frozen soils of Alaska, is released as the ground thaws. Methane is a powerful greenhouse gas, so the extra warming melts ice and makes seawater expand, which raises sea level. Less CO2, a thicker ozone layer and afforestation would all reduce warming rather than raise sea level.
+
+Q 192 | sci | Biology & Health
+Which of the following plant has high levels of Protein and rich in thiamin in its seeds ?
+(1) Brassica rapa
+(2) Arachis hypogaea
+(3) Linum usitatissimum
+(4) Pennisetum glaucum
+= 2,3
+~ Groundnut (Arachis hypogaea) seeds are about 25% protein and a good source of thiamin (vitamin B1). Flax (Linum usitatissimum) seeds are also rich in protein and very rich in thiamin, so TSLPRB's final key accepted both (2) and (3). Pearl millet (Pennisetum glaucum) grain has only about 11% protein, and Brassica rapa is grown mainly as an oilseed and vegetable crop. (TSLPRB's final key also gave the mark to candidates who left this question unanswered.)
+
+Q 193 | geo | Environment & Ecology
+The main reason of ozone layer depletion is due to the release of
+(1) CO from vehicles
+(2) SO2 from fuels
+(3) Chloro Fluoro Carbon compounds
+(4) Methane gas in atmosphere
+= 3
+~ CFCs are broken down by UV light in the stratosphere and release chlorine atoms. These destroy ozone in a catalytic cycle, and one chlorine atom can break down thousands of ozone molecules. This is the main cause of ozone-layer depletion.
+
+Q 194 | sci | Science & Technology
+What is the function of a modem ?
+(1) Encryption and decryption
+(2) Voice to data conversion and data to voice conversion
+(3) Convert from analog signals to digital and from digital to analog signals
+(4) Check for virus
+= 3
+~ A modem (MOdulator-DEModulator) turns a computer's digital data into analog signals for transmission over telephone or cable lines (modulation). At the receiving end it turns the analog signals back into digital data (demodulation).
+
+Q 196 | sci | Biology & Health
+Arrange the following events of "biogeny theory" in a sequence.
+A. Formation of coacervates
+B. Aerobic organisms came to existence
+C. Heterotrophic organisms began to form
+D. Mycoplasmas are first formed cells
+The correct answer is
+(1) A, D, C, B
+(2) A, C, D, B
+(3) B, A, C, D
+(4) A, B, C, D
+= 1
+~ In the Oparin-Haldane account, organic molecules first gathered into coacervates (A). These gave rise to the first simple cells, mycoplasma-like forms (D), which lived as heterotrophs (C). Aerobic organisms (B) appeared only after photosynthesis had added oxygen to the atmosphere.
+
+Q 197 | sci | Science & Technology
+In fiber optic communication the source of Light used is
+(1) Light Emitting Diode (LED)
+(2) Compact Fluorescent Lamp (CFL)
+(3) Diode
+(4) Semi conductor laser
+= 1,4
+~ Optical-fibre systems use LEDs for short, low-speed links and semiconductor laser diodes for long-distance, high-speed links, so TSLPRB's final key accepted both (1) and (4). A CFL is unsuitable because its light is not monochromatic and cannot be coupled into a fibre efficiently. (TSLPRB's final key also gave the mark to candidates who left this question unanswered.)
+
+Q 198 | sci | Science & Technology
+The size of quantum nano dots is around ______
+(1) 300 nm
+(2) 200 nm
+(3) 100 nm
+(4) 10 nm
+= 4
+~ Quantum dots are semiconductor nanocrystals usually about 2-10 nm across. At this size quantum confinement controls the colour of light they emit, and the 100-300 nm values are far too large.
+
+Q 200 | sci | Biology & Health
+Increasing blood clotting time is due to the deficiency of which of the following vitamin?
+(1) Vitamin K
+(2) Vitamin B1
+(3) Vitamin A
+(4) Vitamin C
+= 1
+~ The liver needs vitamin K to make prothrombin and clotting factors VII, IX and X, so a deficiency prolongs clotting time and causes bleeding. A B1 deficiency causes beriberi, an A deficiency causes night blindness and a C deficiency causes scurvy.
