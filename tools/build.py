@@ -101,6 +101,30 @@ G1_SUBJECTS = [
 ]
 
 
+# ---------- UPSC CAPF (AC) ----------
+CAPF_PAPERS = [
+  dict(id='c2026a', file='capf-2026-paper-1.txt', year=2026, stage='Paper I', short='CAPF 2026 · P-I',
+       title='UPSC CAPF (AC) 2026 Paper I', notif='Series A · provisional key', held='19 July 2026',
+       fmt='mcq', slug='upsc-capf-ac-2026-paper-1-general-ability-intelligence-question-paper-with-answers',
+       blurb='General Ability & Intelligence: General Mental Ability, General Science, Current Events, Indian Polity & Economy, History and Geography (125 questions, 250 marks).'),
+]
+
+CAPF_SUBJECTS = [
+  ('cur', 'Current Affairs', 'current-affairs', ['National', 'International', 'Sports', 'Awards & Personalities', 'Reports & Indices', 'Defence & Security']),
+  ('ih',  'History', 'history', ['Ancient India', 'Medieval India', 'Modern India', 'Art & Culture', 'World History']),
+  ('pol', 'Indian Polity', 'indian-polity', ['Constitution & Rights', 'Union & State Government', 'Judiciary', 'Federalism & Local Government', 'Constitutional & Statutory Bodies', 'Governance & Schemes']),
+  ('eco', 'Indian Economy', 'indian-economy', ['Growth, Planning & National Income', 'Money, Banking & Inflation', 'Public Finance & Taxation', 'Agriculture & Industry', 'External Sector & Trade', 'Poverty, Employment & Welfare']),
+  ('geo', 'Geography', 'geography', ['Physical Geography', 'Indian Geography', 'World Geography', 'Environment & Ecology']),
+  ('sci', 'General Science', 'general-science', ['Physics', 'Chemistry', 'Biology', 'Science & Technology']),
+  ('men', 'General Mental Ability', 'general-mental-ability', ['Numbers & Series', 'Reasoning', 'Arithmetic', 'Data Interpretation']),
+]
+
+# second language of each exam (the question booklet's other language)
+L2_TE = dict(code='te', dir='te', label='తెలుగు', name='Telugu', font='Noto Sans Telugu', ans='సమాధానం', gf='')
+L2_HI = dict(code='hi', dir='hi', label='हिंदी', name='Hindi', font='Noto Sans Devanagari', ans='उत्तर',
+             gf='&family=Noto+Sans+Devanagari:wght@400;500;600;700')
+
+
 def parse(paper, srcdir='', subj=SUBJ):
     path = os.path.join(SRC, srcdir, paper['file'])
     if not os.path.exists(path):
@@ -154,11 +178,11 @@ def parse(paper, srcdir='', subj=SUBJ):
     return out
 
 
-def parse_te(paper, qs, srcdir=''):
-    """Merge official Telugu text from src/[<exam>/]te/<file> into the parsed questions.
-    Format: 'Q <n>' line, then Telugu question lines, then optional '(1)'..'(4)' options,
-    and for answer-only papers an optional '= <answer>' line."""
-    path = os.path.join(SRC, srcdir, 'te', paper['file'])
+def parse_te(paper, qs, srcdir='', l2dir='te'):
+    """Merge the official second-language text (Telugu, or Hindi for UPSC) from src/[<exam>/]<l2dir>/<file>
+    into the parsed questions (fields qt/ot/at). Format: 'Q <n>' line, then question lines, then optional
+    '(1)'..'(4)' options, and for answer-only papers an optional '= <answer>' line."""
+    path = os.path.join(SRC, srcdir, l2dir, paper['file'])
     if not os.path.exists(path):
         return 0
     by_n = {q['n']: q for q in qs}
@@ -216,8 +240,8 @@ def load_exam(conf):
     papers, questions = [], []
     for p in conf['papers']:
         qs = parse(p, conf['src'], subj)
-        nte = parse_te(p, qs, conf['src'])
-        if nte: print(f'  {conf["short"]} {p["id"]}: Telugu for {nte} questions')
+        nte = parse_te(p, qs, conf['src'], conf['l2']['dir'])
+        if nte: print(f'  {conf["short"]} {p["id"]}: {conf["l2"]["name"]} for {nte} questions')
         if not qs:
             print(f'  - skipping {conf["short"]} {p["id"]} (no source yet)'); continue
         for q in qs:
@@ -240,7 +264,7 @@ def qotd_pool(items, n):
               and all(len(o) <= 140 for o in q['o'])]
         random.Random('qotd-' + conf['id']).shuffle(el)
         base = conf['dir'] + '/' if conf['dir'] else ''
-        pools.append([dict(id=q['id'], ex=conf['short'], exName=conf['name'], base=base, paper=pshort[q['p']],
+        pools.append([dict(id=q['id'], ex=conf['short'], exName=conf['name'], base=base, paper=pshort[q['p']], l2=conf['l2']['code'],
                            q=q['q'], qt=q.get('qt', ''), o=q['o'], ot=q.get('ot'), a=q['a'], w=q['w']) for q in el])
     out, i = [], 0
     while len(out) < n and any(i < len(p) for p in pools):
@@ -253,13 +277,22 @@ def qotd_pool(items, n):
 def exam_confs():
     return [
       dict(id='appsc-group-2', dir='', src='', key='appsc-g2', name='APPSC Group-II', short='Group-II', seo='APPSC Group 2',
-           slugp='appsc-group-2', papers=PAPERS, subjects=SUBJECTS, faq=FAQ,
+           slugp='appsc-group-2', papers=PAPERS, subjects=SUBJECTS, faq=FAQ, board='APPSC', l2=L2_TE,
+           keyname="APPSC's official final key", keyshort="APPSC's final keys",
            eyebrow='APPSC Group-II · Screening &amp; Mains · 2019–2025',
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
-           slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1,
+           slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE,
+           keyname="APPSC's official final key", keyshort="APPSC's final keys",
+           title='APPSC Group 1 PYQs – Prelims Previous Question Papers with Answers (2019–2024) | Learn with Anil',
            eyebrow='APPSC Group-I · Prelims · 2019–2024',
            papers_note="Every paper uses APPSC's official final key. The 2024 key shows all four options. The 2023 and 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
+      dict(id='upsc-capf', dir='upsc-capf', src='upsc-capf', key='upsc-capf', name='UPSC CAPF (AC)', short='CAPF (AC)', seo='UPSC CAPF AC',
+           slugp='upsc-capf-ac', papers=CAPF_PAPERS, subjects=CAPF_SUBJECTS, faq=FAQ_CAPF, board='UPSC', l2=L2_HI,
+           keyname="UPSC's official provisional answer key", keyshort="UPSC's provisional answer key",
+           title='UPSC CAPF AC PYQs – 2026 Paper I Question Paper with Answers in English & Hindi | Learn with Anil',
+           eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2026',
+           papers_note="The 2026 Paper I uses UPSC's provisional answer key for Series A, published three days after the exam. UPSC dropped question 41, so it is left out. UPSC's final key may still differ for a few questions. Every question is in English and Hindi, as printed in the booklet."),
     ]
 
 
@@ -287,8 +320,9 @@ def main():
     live_names = [c['name'] for c, _, _ in loaded]
     nav_extra = ''.join(f'      <a href="{c["dir"]}/" data-hubonly>{esc(c["short"])}</a>\n' for c, _, _ in loaded if c['dir'])
     hub_ctas = ''.join(f'<a class="btn btn-primary" href="{"#home" if c["dir"] == "" else c["dir"] + "/"}">{esc(c["name"])}</a>' for c, _, _ in loaded)
-    live_summary = (f'APPSC PYQs are live: {" and ".join(c["short"] for c, _, _ in loaded)} previous question papers, {grand:,} questions in all; '
-                    f'the other exams are being added one by one.')
+    live_list = [c['name'] for c, _, _ in loaded]
+    live_summary = (f'Live now: {", ".join(live_list[:-1]) + " and " + live_list[-1] if len(live_list) > 1 else live_list[0]} '
+                    f'previous question papers, {grand:,} questions in all; the other exams are being added one by one.')
 
     if os.path.exists(DIST): shutil.rmtree(DIST)
     os.makedirs(os.path.join(DIST, 'site')); os.makedirs(os.path.join(DIST, 'artifact'))
@@ -308,6 +342,7 @@ def main():
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
         data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     key=conf['key'], exam=conf['name'], examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
+                    board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
                     base=prefix, qotd=qotd_pool(loaded if is_root else [(conf, papers, questions)], 120 if is_root else 90),
                     exams=catalog['exams'] if is_root else [], cats=catalog['cats'] if is_root else [],
                     timers=catalog.get('timers', []) if (is_root and SHOW_TIMERS) else [])
@@ -324,8 +359,21 @@ def main():
         hub = hub_html(catalog, counts, grand) if is_root else ''
         timers = timers_html(catalog) if (is_root and SHOW_TIMERS) else ''
 
-        def fill(s, photo, title, seo):
-            return (s.replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title)
+        l2 = conf['l2']
+        if conf['board'] == 'APPSC':
+            all_link = f'<a href="{up}appsc-pyqs.html" style="color:inherit">All APPSC previous question papers (Group 1 &amp; Group 2) →</a>'
+        else:
+            all_link = f'<a href="{up}#exams" style="color:inherit">All exams on Learn with Anil: APPSC Group 1, Group 2 and more →</a>'
+
+        def fill(s, photo, title, seo, desc=''):
+            return (s.replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title).replace('{{DESC}}', esc(desc))
+                     .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf'])
+                     .replace('{{LANGS}}', 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
+                     .replace('{{BOARD}}', conf['board']).replace('{{ALLLINK}}', all_link)
+                     .replace('{{FOOTSRC}}', 'Questions and answers are from the official final keys.' if conf['board'] == 'APPSC'
+                              else f'Questions are from {conf["board"]}\'s official question paper; answers from {conf["keyshort"]}.')
+                     .replace('{{FROMPAPERS}}', f'{len(papers)} official papers' if len(papers) > 1 else f'the official {esc(papers[0]["title"])} paper')
+                     .replace('{{PAPERSK}}', f'Official {conf["board"]} paper' + ('s' if len(papers) > 1 else ''))
                      .replace('{{HOME_PAPERS}}', home_papers).replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
@@ -339,14 +387,15 @@ def main():
                      .replace('{{EYEBROW}}', conf['eyebrow']))
         if is_root:
             site_title = 'APPSC PYQs Free – Group 1 & Group 2 Previous Question Papers with Answers | Learn with Anil'
-            site_desc = (f'Free APPSC PYQs: {grand:,} previous year questions from APPSC Group 1 and Group 2 question papers (2019–2025), '
-                         f'with official final-key answers and explanations in English and Telugu. Practise online topic-wise. '
+            site_desc = (f'Free APPSC PYQs: {grand:,} previous year questions from APPSC Group 1 and Group 2 question papers (2019–2025) '
+                         f'and UPSC CAPF (AC) 2026, with official-key answers and explanations in English, Telugu and Hindi. Practise online topic-wise. '
                          f'TGPSC, UPSC, SSC, banking and railway exams are being added.')
             canon = SITE_URL + '/'
         else:
-            site_title = f'{conf["seo"]} PYQs – Prelims Previous Question Papers with Answers (2019–2024) | Learn with Anil'
-            site_desc = (f'{total} {conf["name"]} previous year questions from {len(papers)} official papers, with APPSC final-key answers '
-                         f'and explanations in English and Telugu. Practise topic-wise quizzes and timed tests free.')
+            site_title = conf['title']
+            ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["title"]} paper'
+            site_desc = (f'{total} {conf["name"]} previous year questions from {ptxt}, with answers from {conf["keyshort"]} '
+                         f'and explanations, in English and {l2["name"]}. Practise topic-wise quizzes and timed tests free.')
             canon = f'{SITE_URL}/{prefix}'
         ld = [
           {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":"Learn with Anil – Previous year questions for every exam","url":SITE_URL+'/'},
@@ -365,11 +414,11 @@ def main():
         if is_root:
             # artifact page: fragment (publisher adds the skeleton); photo inline
             os.makedirs(os.path.join(DIST, 'artifact', 'papers')); os.makedirs(os.path.join(DIST, 'artifact', 'subjects'))
-            open(os.path.join(DIST, 'artifact', 'index.html'), 'w', encoding='utf-8').write(fill(head + body, photo_uri, 'Learn with Anil', ''))
+            open(os.path.join(DIST, 'artifact', 'index.html'), 'w', encoding='utf-8').write(fill(head + body, photo_uri, 'Learn with Anil', '', site_desc))
         doc = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
                '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
-               + fill(head, up + 'anil.jpg', site_title, seo).replace('<meta name="claude:viewport-fit-sides" content="cover">\n', '')
-               + '\n</head>\n<body>\n' + fill(body, up + 'anil.jpg', site_title, seo) + '\n</body>\n</html>\n')
+               + fill(head, up + 'anil.jpg', site_title, seo, site_desc).replace('<meta name="claude:viewport-fit-sides" content="cover">\n', '')
+               + '\n</head>\n<body>\n' + fill(body, up + 'anil.jpg', site_title, seo, site_desc) + '\n</body>\n</html>\n')
         open(os.path.join(outdir, 'index.html'), 'w', encoding='utf-8').write(doc)
         # crawlable pages per paper and per subject
         pages = build_static(conf, papers, subjects, questions, subj)
@@ -527,9 +576,25 @@ def FAQ_G1(total, npapers):
     ]
 
 
+def FAQ_CAPF(total, npapers):
+    return [
+      ('Where can I get UPSC CAPF AC previous year question papers with answers?',
+       f'This page has {total} questions from the UPSC CAPF (Assistant Commandants) 2026 Paper I, General Ability and Intelligence, in English and Hindi as printed in the official question booklet. The answers come from UPSC\'s provisional answer key (Series A), and every question has a short explanation. You can read the paper with answers or practise it as a quiz, free.'),
+      ('What is the UPSC CAPF AC exam pattern?',
+       'The written exam has two papers on the same day. Paper I, General Ability and Intelligence, is objective, carries 250 marks and lasts two hours; the 2026 paper had 125 questions, in English and Hindi. It covers General Mental Ability, General Science, Current Events of national and international importance, Indian Polity and Economy, History of India, and Indian and World Geography. A wrong answer costs one-third of the marks for that question. Paper II, General Studies, Essay and Comprehension, is descriptive and carries 200 marks. Candidates who qualify take physical and medical standards tests and then an interview.'),
+      ('Are the answers on this site official?',
+       'They come from the provisional answer key that UPSC published on its website after the 2026 exam. Question 41, which UPSC dropped, is left out. UPSC\'s final key can differ for a few questions. The explanations are written by Learn with Anil.'),
+      ('Can I practise the CAPF questions in Hindi?',
+       'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, exactly as printed in UPSC\'s booklet. Tap EN to switch back.'),
+      ('Do I need to sign up?',
+       'No. The portal is free and practice needs no account. Before your first timed test you enter your name, phone, email and district once, so your test scores are saved with Learn with Anil and Anil can guide you. Your practice attempts, mistakes notebook and bookmarks stay in your own browser on your device.'),
+    ]
+
+
 STATIC_CSS = """
 .nw{white-space:nowrap}
 [lang="te"]{font-family:"Noto Sans Telugu",sans-serif;line-height:1.8}
+[lang="hi"]{font-family:"Noto Sans Devanagari",sans-serif;line-height:1.75}
 .q .te{border-left:3px solid var(--line);padding-left:12px;margin:8px 0 4px}
 :root{--bg:#F3F6FB;--surface:#fff;--ink:#0D1830;--muted:#55627C;--line:#D6DFEC;--accent:#1846C7;--accent-soft:#E2EAFC;--accent-text:#1440B8;--band:#0C2266;--band-ink:#EEF3FF;--good:#12804A;--good-soft:#DDF3E7}
 @media (prefers-color-scheme:dark){:root{--bg:#0A1020;--surface:#111A2E;--ink:#E5ECF8;--muted:#9AA8C3;--line:#26334F;--accent:#6F95FF;--accent-soft:#1A2A52;--accent-text:#9DB7FF;--band:#0F1F4E;--band-ink:#EEF3FF;--good:#41C080;--good-soft:#123426;color-scheme:dark}}
@@ -556,6 +621,14 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
     ename = ename or (conf['name'] if conf else 'APPSC Group-II')
     rootup = '../' * (rel_depth + (1 if conf and conf.get('dir') else 0))
     up = '../' * rel_depth
+    board = conf['board'] if conf else 'APPSC'
+    gf = conf['l2']['gf'] if conf else ''
+    if board == 'APPSC':
+        foot = (f'Questions and answers are taken from APPSC\'s official final keys. Explanations are by Jupudi Anil Kumar, '
+                f'Learn with Anil (Instagram: @{INSTAGRAM}). Not affiliated with APPSC.')
+    else:
+        foot = (f'Questions are from {board}\'s official question paper and answers from {conf["keyshort"]}. Explanations are by '
+                f'Jupudi Anil Kumar, Learn with Anil (Instagram: @{INSTAGRAM}). Not affiliated with {board}.')
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": canonical,
           "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": SITE_URL + '/'},
           "author": {"@type": "Person", "name": "Jupudi Anil Kumar"},
@@ -571,7 +644,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <link rel="canonical" href="{esc(canonical)}">
 <meta property="og:type" content="article"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{esc(canonical)}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600{gf}&display=swap">
 <style>{STATIC_CSS}</style>
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
@@ -582,13 +655,13 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="{rootup}index.html#home">APPSC Group-II</a></p>Questions and answers are taken from APPSC's official final keys. Explanations are by Jupudi Anil Kumar, Learn with Anil (Instagram: @{INSTAGRAM}). Not affiliated with APPSC.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="{rootup}index.html#home">APPSC Group-II</a> · <a href="{rootup}upsc-capf/">UPSC CAPF (AC)</a> · <a href="{rootup}index.html#exams">All exams</a></p>{foot}</div></footer>
 </body>
 </html>
 """
 
 
-def q_html(q, paper_short, num_label, subj=SUBJ):
+def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE):
     parts = [f'<li class="q" id="q{q["n"]}"><div class="meta">{esc(num_label)} · {esc(subj[q["s"]][1])} · {esc(q["t"])}</div>',
              f'<p>{esc(q["q"])}</p>']
     if q.get('img'):
@@ -602,17 +675,19 @@ def q_html(q, paper_short, num_label, subj=SUBJ):
         te = f'<p>{esc(q["qt"])}</p>'
         if q.get('ot'):
             te += '<ol>' + ''.join(f'<li>{esc(o)}</li>' for o in q['ot']) + '</ol>'
-        parts.append(f'<div class="te" lang="te">{te}</div>')
+        parts.append(f'<div class="te" lang="{l2["code"]}">{te}</div>')
     ans_te = ''
     if q.get('ot'): ans_te = ' / '.join(f'({i + 1}) {q["ot"][i]}' for i in q['a'])
     elif q.get('at'): ans_te = q['at']
-    te_ans = f'<p class="ans" lang="te">సమాధానం: {esc(ans_te)}</p>' if ans_te else ''
+    te_ans = f'<p class="ans" lang="{l2["code"]}">{l2["ans"]}: {esc(ans_te)}</p>' if ans_te else ''
     parts.append(f'<details><summary>Show answer</summary><p class="ans">Answer: {esc(ans)}</p>{te_ans}<p class="why">{esc(q["w"])}</p></details></li>')
     return ''.join(parts)
 
 
 def appsc_pyqs_page(loaded, grand):
     """Landing page for 'APPSC PYQs' searches: every APPSC paper and subject page, Group-I and Group-II."""
+    loaded = [x for x in loaded if x[0]['board'] == 'APPSC']
+    grand = sum(len(x[2]) for x in loaded)
     can = f'{SITE_URL}/appsc-pyqs.html'
     title = 'APPSC PYQs – Group 1 & Group 2 Previous Question Papers with Answers (Free) | Learn with Anil'
     desc = (f'All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024 and Group 2 Screening & Mains 2019–2025, '
@@ -657,11 +732,13 @@ def build_static(conf, papers, subjects, questions, subj):
         qs = by_p[p['id']]
         rel = f'papers/{p["slug"]}.html'
         can = base + rel
-        fmt = ('All four options with the official answer from the APPSC final key' if p['fmt'] == 'mcq'
-               else 'Each question with its official answer from the APPSC final key (the key lists the correct answer only)')
+        fmt = (f'All four options with the answer from {conf["keyname"]}' if p['fmt'] == 'mcq'
+               else f'Each question with its official answer from {conf["keyname"]} (the key lists the correct answer only)')
         title = f'{p["title"]} Question Paper with Answers – {seo} PYQs | Learn with Anil'
-        desc = (f'{p["title"]} ({p["notif"]}, held {p["held"]}): {len(qs)} previous year questions with official '
-                f'final-key answers and short explanations, topic-wise. Practise {seo} PYQs online free.')
+        kdesc = 'official final-key answers' if conf['board'] == 'APPSC' else f'answers from {conf["keyshort"]}'
+        langs = f' in English and {conf["l2"]["name"]}' if conf['board'] != 'APPSC' else ''
+        desc = (f'{p["title"]} ({p["notif"]}, held {p["held"]}): {len(qs)} previous year questions{langs} with {kdesc} '
+                f'and short explanations, topic-wise. Practise {seo} PYQs online free.')
         subs = {}
         for q in qs: subs.setdefault(q['s'], 0); subs[q['s']] += 1
         toc = '<nav class="toc">' + ''.join(
@@ -669,8 +746,10 @@ def build_static(conf, papers, subjects, questions, subj):
         body = (f'<a class="cta" href="../index.html#papers">Practise this paper online</a>'
                 f'<a class="cta alt" href="../index.html#practice">Make a topic-wise quiz</a>'
                 f'<h2>Subjects in this paper</h2>{toc}<h2>All {len(qs)} questions</h2><ol class="qs">'
-                + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj) for q in qs) + '</ol>')
-        lede = esc(f'{p["blurb"]} {p["notif"]}, held on {p["held"]}. {fmt}, plus a short explanation for every question.')
+                + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2']) for q in qs) + '</ol>')
+        held = f'{p["notif"]}, held on {p["held"]}' if conf['board'] == 'APPSC' else f'Held on {p["held"]} ({p["notif"].replace(" · ", ", ")})'
+        lede = esc(f'{p["blurb"]} {held}. {fmt}, plus a short explanation for every question.'
+                   + (f' Each question is shown in English and {conf["l2"]["name"]}, as printed.' if conf['board'] != 'APPSC' else ''))
         pages[rel] = static_page(1, title, desc, can, f'{p["title"]}: questions with answers', lede, body,
                                  home_crumbs + [(p['title'], can)], conf)
     by_s = {}
@@ -690,9 +769,9 @@ def build_static(conf, papers, subjects, questions, subj):
         for i, t in enumerate(s['topics']):
             if t not in tops: continue
             body.append(f'<h2 id="t{i}">{esc(t)}</h2><ol class="qs">' + ''.join(
-                q_html(q, pmap[q['p']]['short'], f'{pmap[q["p"]]["short"]} · Q{q["n"]}', subj) for q in tops[t]) + '</ol>')
+                q_html(q, pmap[q['p']]['short'], f'{pmap[q["p"]]["short"]} · Q{q["n"]}', subj, conf['l2']) for q in tops[t]) + '</ol>')
         lede = esc(f'Every {s["name"]} question asked in the {name} papers on this site, grouped by topic. '
-                   f'Answers come from APPSC\'s final keys; each has a short explanation.')
+                   f'Answers come from {conf["keyshort"]}; each has a short explanation.')
         pages[rel] = static_page(1, title, desc, can, f'{name} {s["name"]} PYQs', lede, ''.join(body),
                                  home_crumbs + [(s['name'], can)], conf)
     return pages

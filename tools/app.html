@@ -1,10 +1,10 @@
 <title>{{TITLE}}</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Free APPSC Group 2 previous year questions (PYQs) with official final-key answers and explanations: Screening 2024, Mains 2025 Paper I & II, and 2019 papers. Topic-wise quizzes, mistakes notebook and progress heatmap by Learn with Anil.">
+<meta name="description" content="{{DESC}}">
 {{SEO_HEAD}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700{{FONTS2}}&display=swap">
 <style>
 /* Layout: sticky app bar + one 1120px column; views swap inside <main>. Ink-blue band for the hero; OMR answer-bubbles are the recurring motif. */
 :root{
@@ -67,7 +67,8 @@ img{max-width:100%}
 .lang button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
 .lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 [lang="te"]{font-family:"Noto Sans Telugu",var(--f-body);line-height:1.8}
-.lang button[lang="te"]{line-height:1.2}
+[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body);line-height:1.75}
+.lang button[lang="te"],.lang button[lang="hi"]{line-height:1.2}
 .pill.en-only{background:var(--none-soft);color:var(--muted)}
 .nav .count{font-family:var(--f-mono);font-size:11px;background:var(--bad);color:#fff;border-radius:999px;padding:0 6px;line-height:18px}
 @media (max-width:1360px){
@@ -501,7 +502,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     </nav>
     <div class="lang" role="group" aria-label="Question language">
       <button type="button" data-act="lang" data-l="en" aria-pressed="true">EN</button>
-      <button type="button" data-act="lang" data-l="te" lang="te" aria-pressed="false">తెలుగు</button>
+      <button type="button" data-act="lang" data-l="{{L2CODE}}" lang="{{L2CODE}}" aria-pressed="false">{{L2LABEL}}</button>
     </div>
   </div>
 </header>
@@ -513,7 +514,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     <div class="hero-copy">
       <p class="eyebrow">UPSC · APPSC · TGPSC · SSC · Banks · Railways</p>
       <h1>Previous-year questions for <em>every exam.</em></h1>
-      <p>Official papers with official-key answers and explanations, free, in English and Telugu. {{LIVE_SUMMARY}}</p>
+      <p>Official papers with official-key answers and explanations, free, in English with Telugu or Hindi. {{LIVE_SUMMARY}}</p>
       <div class="row">{{HUB_CTAS}}<button class="btn btn-secondary" type="button" data-act="hubscroll">Find your exam</button></div>
       <p style="margin:14px 0 0;font-size:15px"><a href="appsc-pyqs.html" style="color:inherit">All APPSC PYQs: Group 1 &amp; Group 2 previous question papers →</a></p>
     </div>
@@ -539,9 +540,9 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
       <a class="crumb" href="{{HUBHREF}}">← All exams</a>
       <p class="eyebrow">{{EYEBROW}}</p>
       <h1>{{EXAM}} PYQs: previous questions <em>with answers.</em></h1>
-      <p>{{TOTAL}} questions from {{NPAPERS}} official papers, answered from APPSC's final keys and explained. Practise them by topic, find your weak areas and revise your mistakes.</p>
+      <p>{{TOTAL}} questions from {{FROMPAPERS}}, answered from {{KEYSHORT}} and explained, in {{LANGS}}. Practise them by topic, find your weak areas and revise your mistakes.</p>
       <div class="row"><a class="btn btn-primary" href="#practice">Create a quiz</a><a class="btn btn-secondary" href="#papers">See previous papers</a></div>
-      <p style="margin:14px 0 0;font-size:15px"><a href="{{ROOTUP}}appsc-pyqs.html" style="color:inherit">All APPSC previous question papers (Group 1 &amp; Group 2) →</a></p>
+      <p style="margin:14px 0 0;font-size:15px">{{ALLLINK}}</p>
     </div>
     <a class="mentor" href="#about" style="color:inherit;text-decoration:none">
       <span class="ph"><img src="{{PHOTO}}" alt="Jupudi Anil Kumar" width="210" height="210"></span>
@@ -552,7 +553,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
   <section class="wrap section">
     <div class="figures">
       <div class="figure"><div class="v">{{TOTAL}}</div><div class="k">Previous year questions</div></div>
-      <div class="figure"><div class="v">{{NPAPERS}}</div><div class="k">Official APPSC papers</div></div>
+      <div class="figure"><div class="v">{{NPAPERS}}</div><div class="k">{{PAPERSK}}</div></div>
       <div class="figure"><div class="v" id="hf-acc">—</div><div class="k">Your accuracy so far</div></div>
       <div class="figure"><div class="v" id="hf-mis">0</div><div class="k">In your mistakes notebook</div></div>
     </div>
@@ -595,7 +596,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 
 <footer class="foot">
   <div class="wrap">
-    <span>Questions and answers are from the official final keys. Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. <a href="#notes">Study material</a> · <a href="{{ROOTUP}}appsc-pyqs.html">APPSC PYQs</a></span>
+    <span>{{FOOTSRC}} Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. <a href="#notes">Study material</a> · <a href="{{ROOTUP}}appsc-pyqs.html">APPSC PYQs</a></span>
     <span id="resetBox"><button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button></span>
   </div>
 </footer>
@@ -616,12 +617,14 @@ const SUBJ = Object.fromEntries(SUBJECTS.map(s=>[s.id,s]));
 const EXAMS = DATA.exams || [], ECATS = DATA.cats || [];
 const EXMAP = Object.fromEntries(EXAMS.map(e=>[e.id,e])), ECMAP = Object.fromEntries(ECATS.map(c=>[c.id,c]));
 const isMCQ = q => Array.isArray(q.o);
-const teOn = q => P.lang==="te" && !!q.qt;
+const L2 = DATA.l2 || {code:"te", label:"తెలుగు", name:"Telugu", font:"Noto Sans Telugu"};
+const teOn = q => P.lang===L2.code && !!q.qt;
 const QT = q => teOn(q) ? q.qt : q.q;
-const OPTS = q => (P.lang==="te" && q.ot) ? q.ot : q.o;
-const ANS = q => (P.lang==="te" && q.at) ? q.at : q.ans;
-const langAttr = q => teOn(q) ? ' lang="te"' : "";
-function syncLang(){ document.querySelectorAll('.lang button').forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.l===(P.lang==="te"?"te":"en")))); }
+const OPTS = q => (P.lang===L2.code && q.ot) ? q.ot : q.o;
+const ANS = q => (P.lang===L2.code && q.at) ? q.at : q.ans;
+const LATTR = ' lang="'+L2.code+'"';
+const langAttr = q => teOn(q) ? LATTR : "";
+function syncLang(){ document.querySelectorAll('.lang button').forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.l===(P.lang===L2.code?L2.code:"en")))); }
 
 /* ---------- storage (this browser only) ---------- */
 function readLS(k, d){ try{ const v = localStorage.getItem(k); if(v){ const o = JSON.parse(v); if(o && typeof o==="object") return Object.assign(d, o); } }catch(e){} return d; }
@@ -739,14 +742,14 @@ window.addEventListener("hashchange", render);
 
 /* ---------- shared pieces ---------- */
 function bmBtn(id){ const on=!!S.bm[id]; return `<button class="iconbtn" type="button" data-act="bm" data-id="${id}" aria-pressed="${on}" title="${on?"Remove bookmark":"Bookmark this question"}">${on?ICON.bmOn:ICON.bm}<span>${on?"Saved":"Save"}</span></button>`; }
-function tags(q){ const p=PMAP[q.p]; return `<span class="pill blue">${esc(p.short)}</span><span class="pill">${esc(SUBJ[q.s].name)}</span><span class="pill">${esc(q.t)}</span>${isMCQ(q)?"":'<span class="pill warn">Quick recall</span>'}${P.lang==="te"&&!q.qt?'<span class="pill en-only">English only</span>':""}`; }
+function tags(q){ const p=PMAP[q.p]; return `<span class="pill blue">${esc(p.short)}</span><span class="pill">${esc(SUBJ[q.s].name)}</span><span class="pill">${esc(q.t)}</span>${isMCQ(q)?"":'<span class="pill warn">Quick recall</span>'}${P.lang===L2.code&&!q.qt?'<span class="pill en-only">English only</span>':""}`; }
 function stemHTML(q){ return `<p class="qtext"${langAttr(q)}>${esc(QT(q))}</p>` + (q.img? `<img class="qimg" src="${q.img}" alt="Figure for this question">` : ""); }
 function answerText(q){ const o=OPTS(q); return isMCQ(q) ? q.a.map(i=>`(${LET[i]}) ${o[i]}`).join("  or  ") : ANS(q); }
-function answerBox(q){ const te = isMCQ(q)? (P.lang==="te"&&!!q.ot) : (P.lang==="te"&&!!q.at); return `<div class="answer"${te?' lang="te"':""}><small lang="en">Official answer</small>${esc(answerText(q))}</div>`; }
+function answerBox(q){ const te = isMCQ(q)? (P.lang===L2.code&&!!q.ot) : (P.lang===L2.code&&!!q.at); return `<div class="answer"${te?LATTR:""}><small lang="en">Official answer</small>${esc(answerText(q))}</div>`; }
 function videoBtn(q){ return q.v? `<button class="video-btn" type="button" data-act="video" data-id="${q.id}"><span class="play" aria-hidden="true">▶</span><span><b lang="te">వీడియో వివరణ చూడండి</b><small>Watch the video explanation · ${esc(q.v.dur||"1 min")} · Telugu</small></span></button>` : ""; }
 function whyHTML(q){ return (q.w? `<div class="why"><h4>Explanation</h4><p>${esc(q.w)}</p></div>` : "") + videoBtn(q); }
 function optsStatic(q, chosen, reveal){
-  return `<ul class="opts"${(P.lang==="te"&&q.ot)?' lang="te"':""}>${OPTS(q).map((o,i)=>{
+  return `<ul class="opts"${(P.lang===L2.code&&q.ot)?LATTR:""}>${OPTS(q).map((o,i)=>{
     let cls="", tag="";
     const right = q.a.includes(i);
     if(reveal && right){ cls="is-right"; tag = chosen===i? "Your answer · correct" : "Correct answer"; }
@@ -897,7 +900,7 @@ function vPractice(){
             <button type="button" data-act="mode" data-mode="practice" aria-pressed="${P.mode==="practice"}">Practice</button>
             <button type="button" data-act="mode" data-mode="test" aria-pressed="${P.mode==="test"}">Timed test</button>
           </div>
-          <p class="modehelp">${P.mode==="practice"?"Check each answer as you go and read the explanation straight away.":"One minute per question, as in the APPSC paper. Answers appear after you submit. Timed tests use only questions with all four options."}</p>
+          <p class="modehelp">${P.mode==="practice"?"Check each answer as you go and read the explanation straight away.":"One minute per question, about the pace of the real exam. Answers appear after you submit. Timed tests use only questions with all four options."}</p>
         </section>
       </div>
       <aside class="card summary" aria-live="polite">
@@ -938,7 +941,7 @@ function vQuiz(){
   let body = "", feedback = "", navR = "";
   const last = i===total-1;
   if(mcq){
-    body = `<ul class="opts"${(P.lang==="te"&&q.ot)?' lang="te"':""}>${OPTS(q).map((o,j)=>{
+    body = `<ul class="opts"${(P.lang===L2.code&&q.ot)?LATTR:""}>${OPTS(q).map((o,j)=>{
       let cls="", tag="";
       if(!test && checked){ if(q.a.includes(j)){cls="is-right";tag=chosen===j?"Correct":"Correct answer";} else if(j===chosen){cls="is-wrong";tag="Your answer";} }
       return `<li><button type="button" class="opt ${cls}" data-act="pick" data-i="${j}" aria-pressed="${chosen===j && !cls}" ${!test&&checked?"disabled":""}><span class="bub">${LET[j]}</span><span>${esc(o)}</span><span class="tag">${tag}</span></button></li>`;
@@ -1323,10 +1326,10 @@ function qotdHref(x){ return (x.base===(DATA.base||"")) ? `#q/${x.id}` : `${ROOT
 function renderQotd(sel, scope){
   const box = $(sel); if(!box) return;
   const x = qotdItem(scope); if(!x){ box.hidden = true; return; }
-  const te = P.lang==="te" && x.qt, opts = (te && x.ot) ? x.ot : x.o, pick = UI.qotdPick;
+  const te = P.lang===L2.code && x.qt && (x.l2||"te")===L2.code, opts = (te && x.ot) ? x.ot : x.o, pick = UI.qotdPick;
   const done = pick!==undefined;
   const date = new Date().toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric",timeZone:"Asia/Kolkata"});
-  const optsHTML = `<ul class="opts"${te?' lang="te"':""}>${opts.map((o,j)=>{
+  const optsHTML = `<ul class="opts"${te?LATTR:""}>${opts.map((o,j)=>{
     let cls="", tag="";
     if(done){ if(x.a.includes(j)){ cls="is-right"; tag = pick===j? "Your answer · correct" : "Correct answer"; } else if(pick===j){ cls="is-wrong"; tag="Your answer"; } }
     return `<li><button type="button" class="opt ${cls}" data-act="qotdpick" data-i="${j}" ${done?"disabled":""}><span class="bub">${LET[j]}</span><span>${esc(o)}</span><span class="tag">${tag}</span></button></li>`;
@@ -1335,10 +1338,10 @@ function renderQotd(sel, scope){
       ${x.w? `<div class="why"><h4>Explanation</h4><p>${esc(x.w)}</p></div>`:""}
       <div class="row"><a class="btn btn-secondary btn-sm" href="${qotdHref(x)}">Practise more from this paper</a></div>` : "";
   box.hidden = false;
-  box.innerHTML = `<div class="section-title"><h2>Question of the day</h2><span class="muted" style="font-size:14px">A new APPSC previous question every day. Answer it, then challenge your friends.</span></div>
+  box.innerHTML = `<div class="section-title"><h2>Question of the day</h2><span class="muted" style="font-size:14px">A new previous question every day. Answer it, then challenge your friends.</span></div>
     <article class="card qotd">
       <div class="qotd-head"><span class="eyebrow">${esc(date)}</span><span class="pill blue">${esc(x.exName)} · ${esc(x.paper)}</span></div>
-      <p class="qtext"${te?' lang="te"':""}>${esc(te? x.qt : x.q)}</p>
+      <p class="qtext"${te?LATTR:""}>${esc(te? x.qt : x.q)}</p>
       ${optsHTML}${after}
       <div class="share-row"><button class="btn btn-wa btn-sm" type="button" data-act="qotdwa">${WA_ICON}Challenge friends on WhatsApp</button><button class="btn btn-secondary btn-sm" type="button" data-act="qotdimg">${IMG_ICON}Share as image</button></div>
     </article>`;
@@ -1348,7 +1351,7 @@ function renderQotd(sel, scope){
 const FONTS_READY = ()=> Promise.all([
   ['800 64px "Archivo"','Aa'], ['700 40px "Archivo"','Aa'], ['400 30px "Source Sans 3"','Aa'], ['700 30px "Source Sans 3"','Aa'], ['500 24px "IBM Plex Mono"','Aa'], ['600 24px "IBM Plex Mono"','Aa'],
   ['500 30px "Noto Sans Telugu"','తెలుగు'], ['600 30px "Noto Sans Telugu"','తెలుగు'], ['700 30px "Noto Sans Telugu"','తెలుగు']
-].map(([f,t])=>document.fonts && document.fonts.load ? document.fonts.load(f, t).catch(()=>{}) : null));
+].concat(L2.code==="hi" ? [['500 30px "Noto Sans Devanagari"','हिंदी'], ['600 30px "Noto Sans Devanagari"','हिंदी'], ['700 30px "Noto Sans Devanagari"','हिंदी']] : []).map(([f,t])=>document.fonts && document.fonts.load ? document.fonts.load(f, t).catch(()=>{}) : null));
 function wrapLines(ctx, text, maxW){
   const out = [];
   String(text).split("\n").forEach(par=>{
@@ -1381,7 +1384,7 @@ function footer(ctx, W, H, line1){
   ctx.fillStyle="#EEF3FF"; rrect(ctx, 60, H-150, W-120, 96, 18); ctx.fill();
   ctx.fillStyle="#0C2266"; ctx.font='700 30px "Source Sans 3", sans-serif'; ctx.fillText(line1, 92, H-108);
   ctx.font='600 30px "IBM Plex Mono", monospace'; ctx.fillText(SITE_HOST, 92, H-70);
-  ctx.textAlign="right"; ctx.font='700 26px "Source Sans 3", "Noto Sans Telugu", sans-serif'; ctx.fillStyle="#12804A"; ctx.fillText("Free · English & తెలుగు", W-92, H-70); ctx.textAlign="left";
+  ctx.textAlign="right"; ctx.font='700 26px "Source Sans 3", "'+L2.font+'", sans-serif'; ctx.fillStyle="#12804A"; ctx.fillText("Free · English & "+L2.label, W-92, H-70); ctx.textAlign="left";
 }
 async function scoreCard(r){
   await FONTS_READY();
@@ -1399,7 +1402,7 @@ async function scoreCard(r){
     ctx.fillStyle="#AFC1EE"; ctx.font='700 28px "Source Sans 3", sans-serif'; ctx.fillText(k, 590, y-9);
     ctx.fillStyle=col; ctx.font='800 40px "Archivo", sans-serif'; ctx.textAlign="right"; ctx.fillText(String(v), 990, y-6); ctx.textAlign="left"; });
   ctx.fillStyle="#fff"; ctx.font='700 34px "Source Sans 3", sans-serif'; ctx.fillText("Can you beat my score? 💪", 60, 850);
-  footer(ctx, W, H, "Practise real APPSC previous questions at");
+  footer(ctx, W, H, "Practise real "+(DATA.board||"APPSC")+" previous questions at");
   return c;
 }
 async function questionCard(x, te){
@@ -1409,7 +1412,7 @@ async function questionCard(x, te){
   const tag = "QUESTION OF THE DAY · "+date.toUpperCase(); ctx.font='800 24px "Archivo", sans-serif';
   ctx.fillStyle="#F2B705"; rrect(ctx,60,168,ctx.measureText(tag).width+34,46,8); ctx.fill(); ctx.fillStyle="#0C2266"; ctx.fillText(tag, 77, 200);
   ctx.fillStyle="#AFC1EE"; ctx.font='500 22px "IBM Plex Mono", monospace'; ctx.fillText((x.exName+" · "+x.paper).toUpperCase(), 60, 256);
-  const qt = te && x.qt ? x.qt : x.q, opts = te && x.ot ? x.ot : x.o, fam = te? '"Noto Sans Telugu", "Source Sans 3", sans-serif' : '"Source Sans 3", sans-serif';
+  const qt = te && x.qt ? x.qt : x.q, opts = te && x.ot ? x.ot : x.o, fam = te? '"'+L2.font+'", "Source Sans 3", sans-serif' : '"Source Sans 3", sans-serif';
   // fit text: shrink font until question + options fit above the footer
   let fs = 52, qLines, oLines, total;
   for(; fs>=24; fs-=2){
@@ -1441,7 +1444,7 @@ async function shareCanvas(c, name, text){
   try{ if(navigator.clipboard) navigator.clipboard.writeText(text).catch(()=>{}); }catch(_){}
   toast("Image saved. Attach it on WhatsApp or Instagram; the caption is copied.");
 }
-function scoreText(r){ const n=r.ids.length; return `🎯 I scored ${r.c}/${n} (${pct(r.c,n)||0}%) in "${r.title}" on Learn with Anil.\nCan you beat me? Practise real APPSC previous questions free 👉 ${DATA.site}/${DATA.base||""}`; }
+function scoreText(r){ const n=r.ids.length; return `🎯 I scored ${r.c}/${n} (${pct(r.c,n)||0}%) in "${r.title}" on Learn with Anil.\nCan you beat me? Practise real ${DATA.board||"APPSC"} previous questions free 👉 ${DATA.site}/${DATA.base||""}`; }
 function shareBlock(){ return `<section class="card share-card">
     <h3>Share your score</h3>
     <p class="muted" style="font-size:15px">Challenge your friends to beat it. Practising together is how toppers stay consistent.</p>
@@ -1496,15 +1499,15 @@ document.addEventListener("click", e=>{
     case "topicquiz": { const k=b.dataset.key; const ids=QS.filter(q=>tkey(q)===k).map(q=>q.id); startQuiz(shuffle(ids), SUBJ[k.split("|")[0]].name+" · "+k.split("|")[1], "practice", "topic"); break; }
     case "bankmore": bankLimit+=20; { const box=$("#bankResults"); if(box) box.innerHTML=bankResults(); } break;
     case "bankclear": UI.bankQ=""; UI.bankPaper="all"; UI.bankSubj="all"; UI.bankTopic="all"; bankLimit=20; render(); break;
-    case "lang": { P.lang = b.dataset.l==="te"? "te" : "en"; savePrefs(); syncLang(); render(); break; }
+    case "lang": { P.lang = b.dataset.l===L2.code? L2.code : "en"; savePrefs(); syncLang(); render(); break; }
     case "sample": openSample(b.dataset.id); break;
     case "video": openVideo(b.dataset.id); break;
     case "closevideo": closeVideo(); break;
     case "closesample": { const d=document.getElementById("sampleDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } break; }
     case "qotdpick": { if(UI.qotdPick===undefined){ UI.qotdPick = +b.dataset.i; render(); } break; }
-    case "qotdwa": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(x) { const te = P.lang==="te"&&!!x.qt; shareWA(challengeText(te? x.qt : x.q, x.exName, x.paper, null, qURL(x.id, x.base), te&&x.ot? x.ot : x.o)); } break; }
+    case "qotdwa": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(x) { const te = P.lang===L2.code&&!!x.qt&&(x.l2||"te")===L2.code; shareWA(challengeText(te? x.qt : x.q, x.exName, x.paper, null, qURL(x.id, x.base), te&&x.ot? x.ot : x.o)); } break; }
     case "qotdimg": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(!x) break; toast("Making the image…");
-      questionCard(x, P.lang==="te"&&!!x.qt).then(c=>shareCanvas(c, `question-of-the-day-${new Date().toISOString().slice(0,10)}.png`, challengeText(x.q, x.exName, x.paper, null, qURL(x.id, x.base), x.o))); break; }
+      questionCard(x, P.lang===L2.code&&!!x.qt&&(x.l2||"te")===L2.code).then(c=>shareCanvas(c, `question-of-the-day-${new Date().toISOString().slice(0,10)}.png`, challengeText(x.q, x.exName, x.paper, null, qURL(x.id, x.base), x.o))); break; }
     case "qchal": { const q = QMAP[b.dataset.id]; if(q) shareWA(challengeText(QT(q), DATA.exam||"APPSC", PMAP[q.p].short, q.n, qURL(q.id), isMCQ(q)? OPTS(q) : null)); break; }
     case "scorewa": if(LAST) shareWA(scoreText(LAST)); break;
     case "scoreimg": if(LAST){ toast("Making your score card…"); scoreCard(LAST).then(c=>shareCanvas(c, "my-score-learnwithanil.png", scoreText(LAST))); } break;

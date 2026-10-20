@@ -74,7 +74,8 @@
    "cat": "upsc",
    "b": "UPSC",
    "t": "CAPF",
-   "n": "Assistant Commandants"
+   "n": "Assistant Commandants",
+   "live": "upsc-capf/"
   },
   {
    "id": "upsc-ese",

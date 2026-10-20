@@ -81,29 +81,34 @@ async def main():
                 await pg.screenshot(path=f'{SHOTS}/notes-phone.png', full_page=True)
                 await pg.evaluate('location.hash="home"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/home-phone.png', full_page=False)
-        # APPSC Group-I page (second exam, its own folder)
-        g1 = os.path.join(ROOT, 'dist', 'site', 'appsc-group-1', 'index.html')
-        if os.path.exists(g1):
+        # exams in their own folders: APPSC Group-I (Telugu) and UPSC CAPF (Hindi)
+        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group-I', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi')]:
+            fp = os.path.join(ROOT, 'dist', 'site', sub, 'index.html')
+            if not os.path.exists(fp): continue
             for width, name in [(1280, 'desk'), (390, 'phone')]:
                 pg = await b.new_page(viewport={'width': width, 'height': 900})
-                pg.on('pageerror', lambda e: errors.append(f'g1 pageerror: {e}'))
-                pg.on('console', lambda m: errors.append(f'g1 console {m.type}: {m.text}') if m.type == 'error' and 'fonts.g' not in m.text and 'ERR_TUNNEL' not in m.text else None)
-                await pg.goto('file://' + g1); await pg.wait_for_timeout(500)
-                assert await pg.evaluate('!document.getElementById("home-static").hidden'), 'Group-I page should open on its home'
-                assert 'Group-I' in await pg.inner_text('#home-static h1')
-                await pg.screenshot(path=f'{SHOTS}/g1-home-{name}.png', full_page=False)
+                pg.on('pageerror', lambda e, tag=tag: errors.append(f'{tag} pageerror: {e}'))
+                pg.on('console', lambda m, tag=tag: errors.append(f'{tag} console {m.type}: {m.text}') if m.type == 'error' and 'fonts.g' not in m.text and 'ERR_TUNNEL' not in m.text else None)
+                await pg.goto('file://' + fp); await pg.wait_for_timeout(500)
+                assert await pg.evaluate('!document.getElementById("home-static").hidden'), f'{tag} page should open on its home'
+                assert h1word in await pg.inner_text('#home-static h1')
+                assert await pg.locator(f'[data-act="lang"][data-l="{l2}"]').count() == 1, f'{tag}: {l2} language button missing'
+                await pg.screenshot(path=f'{SHOTS}/{tag}-home-{name}.png', full_page=False)
                 for v in ['papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','notes']:
                     await pg.evaluate(f'location.hash="{v}"'); await pg.wait_for_timeout(150)
                     sw = await pg.evaluate('document.documentElement.scrollWidth')
-                    if sw > width: errors.append(f'g1 {name}/{v}: horizontal overflow {sw}>{width}')
-                if name == 'desk':
-                    await pg.evaluate('location.hash="papers"'); await pg.wait_for_timeout(150)
-                    await pg.click('#view [data-act="paperpractice"] >> nth=0'); await pg.wait_for_timeout(150)
-                    await pg.click('[data-act="pick"][data-i="0"]'); await pg.click('[data-act="check"]')
-                    await pg.screenshot(path=f'{SHOTS}/g1-quiz.png')
-                    await pg.click('[data-act="lang"][data-l="te"]'); await pg.wait_for_timeout(150)
-                    await pg.screenshot(path=f'{SHOTS}/g1-quiz-te.png')
-                    await pg.click('[data-act="lang"][data-l="en"]')
+                    if sw > width: errors.append(f'{tag} {name}/{v}: horizontal overflow {sw}>{width}')
+                await pg.evaluate('location.hash="papers"'); await pg.wait_for_timeout(150)
+                await pg.click('#view [data-act="paperpractice"] >> nth=0'); await pg.wait_for_timeout(150)
+                await pg.click('[data-act="pick"][data-i="0"]'); await pg.click('[data-act="check"]')
+                await pg.screenshot(path=f'{SHOTS}/{tag}-quiz-{name}.png')
+                await pg.click(f'[data-act="lang"][data-l="{l2}"]'); await pg.wait_for_timeout(150)
+                if l2 == 'hi':
+                    assert await pg.locator('#view .qtext[lang="hi"]').count() >= 1, 'CAPF question should show in Hindi'
+                await pg.screenshot(path=f'{SHOTS}/{tag}-quiz-{l2}-{name}.png')
+                sw = await pg.evaluate('document.documentElement.scrollWidth')
+                if sw > width: errors.append(f'{tag} {name}/quiz-{l2}: horizontal overflow {sw}>{width}')
+                await pg.click('[data-act="lang"][data-l="en"]')
                 await pg.close()
         # static page
         pg = await b.new_page(viewport={'width': 390, 'height': 900})
