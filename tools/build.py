@@ -702,7 +702,7 @@ def hub_html(catalog, counts, grand):
     secs = []
     for c in cats:
         tiles = []
-        for e in [e for e in catalog['exams'] if e['cat'] == c['id']]:
+        for e in sorted([e for e in catalog['exams'] if e['cat'] == c['id']], key=lambda e: not e.get('live')):   # live exams first
             live = bool(e.get('live'))
             href = live_href(e) if live else '#exam/' + e['id']
             status = f'Live · {counts.get(e["id"], 0):,} questions' if live else 'Coming soon'

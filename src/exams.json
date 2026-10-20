@@ -504,7 +504,7 @@
    "n": "Teacher Eligibility Test"
   },
   {
-   "id": "tg-police-si",
+   "id": "ts-police-si",
    "cat": "tg",
    "b": "TSLPRB / TGPRB",
    "t": "Police SI",
@@ -512,7 +512,7 @@
    "live": "ts-police-si/"
   },
   {
-   "id": "tg-police-constable",
+   "id": "ts-police-constable",
    "cat": "tg",
    "b": "TSLPRB / TGPRB",
    "t": "Police Constable",
