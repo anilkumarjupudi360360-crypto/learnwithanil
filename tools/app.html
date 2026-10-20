@@ -261,6 +261,19 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .iconbtn{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:14px;font-weight:600;color:var(--muted)}
 .iconbtn[aria-pressed="true"]{color:var(--accent-text);border-color:var(--accent);background:var(--accent-soft)}
 .iconbtn svg{width:16px;height:16px}
+.qacts{display:flex;gap:8px;flex-wrap:wrap}
+.iconbtn.wa{color:#0B7A3E;border-color:#BFE6CF}
+.iconbtn.wa:hover{background:#E7F7EE}
+.qotd{display:flex;flex-direction:column;gap:14px;padding:20px 22px}
+.qotd-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+.qotd-head .eyebrow{color:var(--accent-text);font-weight:600}
+.share-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.share-row .muted{font-size:14px}
+.btn-wa{background:#128C4B;color:#fff;border-color:#128C4B}
+.btn-wa:hover{background:#0E7A40}
+.btn-wa svg,.btn svg.ic{width:18px;height:18px}
+.share-card{display:flex;flex-direction:column;gap:12px;padding:18px 20px;border:1.5px dashed var(--accent);background:linear-gradient(160deg,var(--accent-soft),var(--surface) 70%)}
+.share-card h3{font-size:18px}
 .palette{padding:18px;display:flex;flex-direction:column;gap:14px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 80px)}
 .palette h3{font-size:16px;font-weight:700}
 .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(36px,1fr));gap:8px;max-height:320px;overflow:auto;padding:3px}
@@ -515,6 +528,8 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     {{HUB}}
   </section>
 
+  <section class="wrap section" id="qotd-hub" hidden></section>
+
   {{HOME_NOTES}}
 </div>
 
@@ -542,6 +557,8 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
       <div class="figure"><div class="v" id="hf-mis">0</div><div class="k">In your mistakes notebook</div></div>
     </div>
   </section>
+
+  <section class="wrap section" id="qotd-home" hidden></section>
 
   {{HOME_NOTES}}
 
@@ -708,8 +725,8 @@ function render(){
   const mc = mistakeIds().length, mEl=$("#mcount"); mEl.hidden = !mc; mEl.textContent = mc;
   const hub = $("#hub-static"), home = $("#home-static"), host = $("#view");
   hub.hidden = v!=="exams"; home.hidden = v!=="home";
-  if(v==="exams"){ host.hidden=true; host.innerHTML=""; applyHub(); tickTimers(); }
-  else if(v==="home"){ host.hidden=true; host.innerHTML=""; renderHomeDynamic(); }
+  if(v==="exams"){ host.hidden=true; host.innerHTML=""; applyHub(); tickTimers(); renderQotd("#qotd-hub","all"); }
+  else if(v==="home"){ host.hidden=true; host.innerHTML=""; renderHomeDynamic(); renderQotd("#qotd-home", DATA.examShort); }
   else {
     host.hidden=false;
     host.innerHTML = ({exam:vExam,papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,notes:vNotes})[v]();
@@ -746,7 +763,7 @@ function reviewCard(q, n, opts={}){
     ? `<details class="ans"><summary>Show answer &amp; explanation</summary>${answerBox(q)}${whyHTML(q)}</details>`
     : (mcq ? "" : answerBox(q)) + whyHTML(q);
   return `<article class="card qcard">
-    <div class="qhead"><div class="qmeta">${n!=null?`<span class="qnum">Q${n}</span>`:""}${tags(q)}</div>${bmBtn(q.id)}</div>
+    <div class="qhead"><div class="qmeta">${n!=null?`<span class="qnum">Q${n}</span>`:""}${tags(q)}</div><div class="qacts">${chalBtn(q)}${bmBtn(q.id)}</div></div>
     ${extra}${stemHTML(q)}${body}${ansBlock}
   </article>`;
 }
@@ -973,7 +990,7 @@ function vQuiz(){
     <div class="player">
       <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
         <article class="card qcard">
-          <div class="qhead"><div class="qmeta"><span class="qnum">Question ${i+1} of ${total}</span>${tags(q)}<span class="pill">Q${q.n}</span></div>${bmBtn(q.id)}</div>
+          <div class="qhead"><div class="qmeta"><span class="qnum">Question ${i+1} of ${total}</span>${tags(q)}<span class="pill">Q${q.n}</span></div><div class="qacts">${test? "" : chalBtn(q)}${bmBtn(q.id)}</div></div>
           ${stemHTML(q)}${body}${feedback}
         </article>
         ${confirmBox}
@@ -1053,6 +1070,7 @@ function vResult(){
         <p class="muted" style="font-size:15px">${r.total && r.total>n? `You answered ${n} of ${r.total} questions; the rest were not counted. `:""}${r.added?`<b style="color:var(--ink)">${r.added} question${r.added===1?"":"s"}</b> added to your mistakes notebook. `:""}${r.mastered? `<b style="color:var(--good)">${r.mastered}</b> cleared from the notebook after two correct recalls. `:""}${!r.added&&!r.mastered? "Nothing new for the mistakes notebook from this quiz.":""}</p>
       </div>
     </section>
+    ${shareBlock()}
     <section class="card" style="overflow:hidden">
       <div class="pad" style="padding-bottom:6px"><h2 style="font-size:18px;font-weight:700">Topic-wise analysis</h2><p class="muted" style="font-size:14px">Weakest topics first.</p></div>
       <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Topic</th><th class="num">Correct</th><th class="num">Wrong</th><th class="num">Skipped</th><th>Accuracy</th></tr></thead><tbody>${rows}</tbody></table></div>
@@ -1279,6 +1297,157 @@ function vAbout(){
   </div>`;
 }
 
+/* ---------- sharing: question of the day, challenge a friend, score / question image cards ---------- */
+const WA_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg>';
+const IMG_ICON = '<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>';
+const ROOTUP = DATA.base ? "../" : "";
+const SITE_HOST = (DATA.site||"https://learnwithanil.in").replace(/^https?:\/\//,"");
+function shareWA(text){ window.open("https://wa.me/?text="+encodeURIComponent(text), "_blank", "noopener"); }
+function qURL(id, base){ return `${DATA.site}/${base==null? (DATA.base||"") : base}#q/${id}`; }
+function chalBtn(q){ return `<button class="iconbtn wa" type="button" data-act="qchal" data-id="${q.id}" title="Send this question to a friend on WhatsApp">${WA_ICON}<span>Challenge a friend</span></button>`; }
+function excerpt(t, n){ t = String(t).replace(/\s+/g," ").trim(); return t.length>n ? t.slice(0,n-1).replace(/\s\S*$/,"")+"…" : t; }
+function challengeText(text, exam, paper, n, url, opts){
+  const o = opts && opts.length ? "\n\n" + opts.map((x,i)=>`${LET[i]}) ${excerpt(x, 90)}`).join("\n") : "";
+  return `🧠 ${exam} PYQ challenge${paper? ` (${paper}${n?`, Q${n}`:""})`:""}:\n\n${excerpt(text, 300)}${o}\n\nCan you answer it? Check your answer free 👉 ${url}`;
+}
+
+/* Question of the day: same question for everyone on a given day (India time) */
+const QOTD = DATA.qotd || [];
+const istDay = ()=> Math.floor((Date.now() + 19800000) / 86400000);
+function qotdItem(scope){
+  const list = scope==="all" ? QOTD : QOTD.filter(x=>x.ex===scope);
+  if(!list.length) return null;
+  return list[((istDay() % list.length) + list.length) % list.length];
+}
+function qotdHref(x){ return (x.base===(DATA.base||"")) ? `#q/${x.id}` : `${ROOTUP}${x.base}#q/${x.id}`; }
+function renderQotd(sel, scope){
+  const box = $(sel); if(!box) return;
+  const x = qotdItem(scope); if(!x){ box.hidden = true; return; }
+  const te = P.lang==="te" && x.qt, opts = (te && x.ot) ? x.ot : x.o, pick = UI.qotdPick;
+  const done = pick!==undefined;
+  const date = new Date().toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric",timeZone:"Asia/Kolkata"});
+  const optsHTML = `<ul class="opts"${te?' lang="te"':""}>${opts.map((o,j)=>{
+    let cls="", tag="";
+    if(done){ if(x.a.includes(j)){ cls="is-right"; tag = pick===j? "Your answer · correct" : "Correct answer"; } else if(pick===j){ cls="is-wrong"; tag="Your answer"; } }
+    return `<li><button type="button" class="opt ${cls}" data-act="qotdpick" data-i="${j}" ${done?"disabled":""}><span class="bub">${LET[j]}</span><span>${esc(o)}</span><span class="tag">${tag}</span></button></li>`;
+  }).join("")}</ul>`;
+  const after = done ? `${x.a.includes(pick)? `<p class="verdict good">Correct! 🎉</p>` : `<p class="verdict bad">Not quite. The answer is (${x.a.map(i=>LET[i]).join(" or ")}).</p>`}
+      ${x.w? `<div class="why"><h4>Explanation</h4><p>${esc(x.w)}</p></div>`:""}
+      <div class="row"><a class="btn btn-secondary btn-sm" href="${qotdHref(x)}">Practise more from this paper</a></div>` : "";
+  box.hidden = false;
+  box.innerHTML = `<div class="section-title"><h2>Question of the day</h2><span class="muted" style="font-size:14px">A new APPSC previous question every day. Answer it, then challenge your friends.</span></div>
+    <article class="card qotd">
+      <div class="qotd-head"><span class="eyebrow">${esc(date)}</span><span class="pill blue">${esc(x.exName)} · ${esc(x.paper)}</span></div>
+      <p class="qtext"${te?' lang="te"':""}>${esc(te? x.qt : x.q)}</p>
+      ${optsHTML}${after}
+      <div class="share-row"><button class="btn btn-wa btn-sm" type="button" data-act="qotdwa">${WA_ICON}Challenge friends on WhatsApp</button><button class="btn btn-secondary btn-sm" type="button" data-act="qotdimg">${IMG_ICON}Share as image</button></div>
+    </article>`;
+}
+
+/* ---------- image cards (canvas) ---------- */
+const FONTS_READY = ()=> Promise.all([
+  ['800 64px "Archivo"','Aa'], ['700 40px "Archivo"','Aa'], ['400 30px "Source Sans 3"','Aa'], ['700 30px "Source Sans 3"','Aa'], ['500 24px "IBM Plex Mono"','Aa'], ['600 24px "IBM Plex Mono"','Aa'],
+  ['500 30px "Noto Sans Telugu"','తెలుగు'], ['600 30px "Noto Sans Telugu"','తెలుగు'], ['700 30px "Noto Sans Telugu"','తెలుగు']
+].map(([f,t])=>document.fonts && document.fonts.load ? document.fonts.load(f, t).catch(()=>{}) : null));
+function wrapLines(ctx, text, maxW){
+  const out = [];
+  String(text).split("\n").forEach(par=>{
+    const words = par.split(/\s+/).filter(Boolean); let line = "";
+    words.forEach(w=>{
+      const t = line ? line+" "+w : w;
+      if(ctx.measureText(t).width <= maxW || !line){ line = t; while(ctx.measureText(line).width > maxW && line.length>1){ // very long single token
+          let k=line.length-1; while(k>1 && ctx.measureText(line.slice(0,k)).width>maxW) k--; out.push(line.slice(0,k)); line=line.slice(k); } }
+      else { out.push(line); line = w; }
+    });
+    if(line) out.push(line);
+  });
+  return out;
+}
+function rrect(ctx,x,y,w,h,r){ ctx.beginPath(); ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
+function cardBase(W, H){
+  const c = document.createElement("canvas"); c.width=W; c.height=H; const ctx = c.getContext("2d");
+  ctx.fillStyle = "#0C2266"; ctx.fillRect(0,0,W,H);
+  const g = ctx.createRadialGradient(W*0.85, -H*0.1, 10, W*0.85, -H*0.1, W*0.9); g.addColorStop(0,"rgba(24,70,199,.85)"); g.addColorStop(1,"rgba(24,70,199,0)"); ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  ctx.strokeStyle = "rgba(255,255,255,.08)"; ctx.lineWidth = 2;
+  for(let y=30; y<H; y+=46) for(let x=30; x<W; x+=46){ ctx.beginPath(); ctx.arc(x,y,7,0,7); ctx.stroke(); }
+  // brand
+  ctx.fillStyle="#fff"; ctx.beginPath(); ctx.arc(92,92,34,0,7); ctx.fill();
+  ctx.fillStyle="#0C2266"; ctx.font='800 26px "Archivo", sans-serif'; ctx.textAlign="center"; ctx.textBaseline="middle"; ctx.fillText("LA",92,93);
+  ctx.textAlign="left"; ctx.textBaseline="alphabetic"; ctx.fillStyle="#fff"; ctx.font='800 34px "Archivo", sans-serif'; ctx.fillText("Learn with Anil",142,90);
+  ctx.fillStyle="#AFC1EE"; ctx.font='500 20px "IBM Plex Mono", monospace'; ctx.fillText("PYQS FOR EVERY EXAM",143,120);
+  return {c, ctx};
+}
+function footer(ctx, W, H, line1){
+  ctx.fillStyle="#EEF3FF"; rrect(ctx, 60, H-150, W-120, 96, 18); ctx.fill();
+  ctx.fillStyle="#0C2266"; ctx.font='700 30px "Source Sans 3", sans-serif'; ctx.fillText(line1, 92, H-108);
+  ctx.font='600 30px "IBM Plex Mono", monospace'; ctx.fillText(SITE_HOST, 92, H-70);
+  ctx.textAlign="right"; ctx.font='700 26px "Source Sans 3", "Noto Sans Telugu", sans-serif'; ctx.fillStyle="#12804A"; ctx.fillText("Free · English & తెలుగు", W-92, H-70); ctx.textAlign="left";
+}
+async function scoreCard(r){
+  await FONTS_READY();
+  const W=1080, H=1080, {c, ctx} = cardBase(W,H), n = r.ids.length, acc = pct(r.c,n)||0;
+  ctx.fillStyle="#AFC1EE"; ctx.font='500 24px "IBM Plex Mono", monospace'; ctx.fillText((r.mode==="test"?"MY TIMED TEST SCORE":"MY PRACTICE SCORE")+" · "+(DATA.exam||"APPSC").toUpperCase(), 60, 210);
+  ctx.fillStyle="#fff"; ctx.font='800 44px "Archivo", sans-serif';
+  wrapLines(ctx, r.title, W-120).slice(0,2).forEach((l,i)=>ctx.fillText(l, 60, 268+i*54));
+  // ring
+  const cx=300, cy=560, R=170; ctx.lineWidth=34; ctx.strokeStyle="rgba(255,255,255,.14)"; ctx.beginPath(); ctx.arc(cx,cy,R,0,7); ctx.stroke();
+  ctx.strokeStyle="#7FA2FF"; ctx.lineCap="round"; ctx.beginPath(); ctx.arc(cx,cy,R,-Math.PI/2,-Math.PI/2+2*Math.PI*acc/100); if(acc>0) ctx.stroke(); ctx.lineCap="butt";
+  ctx.textAlign="center"; ctx.fillStyle="#fff"; ctx.font='800 86px "Archivo", sans-serif'; ctx.fillText(`${r.c}/${n}`, cx, cy+18);
+  ctx.fillStyle="#AFC1EE"; ctx.font='700 30px "Source Sans 3", sans-serif'; ctx.fillText(`${acc}% accuracy`, cx, cy+66); ctx.textAlign="left";
+  const stats = [["Correct", r.c, "#41C080"],["Wrong", r.w, "#F2766D"],["Skipped", r.k, "#E6A846"],["Time", fmtTime(r.secs), "#fff"]];
+  stats.forEach(([k,v,col],i)=>{ const y = 430+i*92; ctx.fillStyle="rgba(255,255,255,.08)"; rrect(ctx,560,y-58,460,78,14); ctx.fill();
+    ctx.fillStyle="#AFC1EE"; ctx.font='700 28px "Source Sans 3", sans-serif'; ctx.fillText(k, 590, y-9);
+    ctx.fillStyle=col; ctx.font='800 40px "Archivo", sans-serif'; ctx.textAlign="right"; ctx.fillText(String(v), 990, y-6); ctx.textAlign="left"; });
+  ctx.fillStyle="#fff"; ctx.font='700 34px "Source Sans 3", sans-serif'; ctx.fillText("Can you beat my score? 💪", 60, 850);
+  footer(ctx, W, H, "Practise real APPSC previous questions at");
+  return c;
+}
+async function questionCard(x, te){
+  await FONTS_READY();
+  const W=1080, H=1350, {c, ctx} = cardBase(W,H);
+  const date = new Date().toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric",timeZone:"Asia/Kolkata"});
+  const tag = "QUESTION OF THE DAY · "+date.toUpperCase(); ctx.font='800 24px "Archivo", sans-serif';
+  ctx.fillStyle="#F2B705"; rrect(ctx,60,168,ctx.measureText(tag).width+34,46,8); ctx.fill(); ctx.fillStyle="#0C2266"; ctx.fillText(tag, 77, 200);
+  ctx.fillStyle="#AFC1EE"; ctx.font='500 22px "IBM Plex Mono", monospace'; ctx.fillText((x.exName+" · "+x.paper).toUpperCase(), 60, 256);
+  const qt = te && x.qt ? x.qt : x.q, opts = te && x.ot ? x.ot : x.o, fam = te? '"Noto Sans Telugu", "Source Sans 3", sans-serif' : '"Source Sans 3", sans-serif';
+  // fit text: shrink font until question + options fit above the footer
+  let fs = 52, qLines, oLines, total;
+  for(; fs>=24; fs-=2){
+    ctx.font = `${te?600:700} ${fs}px ${fam}`; qLines = wrapLines(ctx, qt, W-120);
+    ctx.font = `${te?500:400} ${fs-4}px ${fam}`; oLines = opts.map(o=>wrapLines(ctx, o, W-220));
+    total = qLines.length*fs*1.35 + oLines.reduce((a,l)=>a + l.length*(fs-4)*1.3 + 34, 0) + 30;
+    if(total < H-310-200) break;
+  }
+  let y = 320;
+  ctx.fillStyle="#fff"; ctx.font = `${te?600:700} ${fs}px ${fam}`; qLines.forEach(l=>{ ctx.fillText(l, 60, y); y += fs*1.35; });
+  y += 18;
+  oLines.forEach((ls,j)=>{
+    const h = ls.length*(fs-4)*1.3 + 22; ctx.fillStyle="rgba(255,255,255,.09)"; rrect(ctx,60,y-(fs-4)-8,W-120,h,14); ctx.fill();
+    ctx.fillStyle="#7FA2FF"; ctx.beginPath(); ctx.arc(100, y-(fs-4)/2+4, 22, 0, 7); ctx.fill();
+    ctx.fillStyle="#0C2266"; ctx.font='800 24px "Archivo", sans-serif'; ctx.textAlign="center"; ctx.fillText(LET[j], 100, y-(fs-4)/2+12); ctx.textAlign="left";
+    ctx.fillStyle="#EEF3FF"; ctx.font = `${te?500:400} ${fs-4}px ${fam}`; ls.forEach((l,k)=>ctx.fillText(l, 140, y + k*(fs-4)*1.3)); y += h + 12;
+  });
+  footer(ctx, W, H, "Answer + explanation, free:");
+  return c;
+}
+async function shareCanvas(c, name, text){
+  const blob = await new Promise(r=>c.toBlob(r,"image/png"));
+  const file = new File([blob], name, {type:"image/png"});
+  if(navigator.canShare && navigator.canShare({files:[file]})){
+    try{ await navigator.share({files:[file], text}); return; }catch(e){ if(e && e.name==="AbortError") return; }
+  }
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+  try{ if(navigator.clipboard) navigator.clipboard.writeText(text).catch(()=>{}); }catch(_){}
+  toast("Image saved. Attach it on WhatsApp or Instagram; the caption is copied.");
+}
+function scoreText(r){ const n=r.ids.length; return `🎯 I scored ${r.c}/${n} (${pct(r.c,n)||0}%) in "${r.title}" on Learn with Anil.\nCan you beat me? Practise real APPSC previous questions free 👉 ${DATA.site}/${DATA.base||""}`; }
+function shareBlock(){ return `<section class="card share-card">
+    <h3>Share your score</h3>
+    <p class="muted" style="font-size:15px">Challenge your friends to beat it. Practising together is how toppers stay consistent.</p>
+    <div class="share-row"><button class="btn btn-wa" type="button" data-act="scorewa">${WA_ICON}Send on WhatsApp</button><button class="btn btn-secondary" type="button" data-act="scoreimg">${IMG_ICON}Share score card (image)</button></div>
+  </section>`; }
+
 /* ---------- events ---------- */
 document.addEventListener("click", e=>{
   const b = e.target.closest("[data-act]"); if(!b || b.disabled) return;
@@ -1332,6 +1501,13 @@ document.addEventListener("click", e=>{
     case "video": openVideo(b.dataset.id); break;
     case "closevideo": closeVideo(); break;
     case "closesample": { const d=document.getElementById("sampleDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } break; }
+    case "qotdpick": { if(UI.qotdPick===undefined){ UI.qotdPick = +b.dataset.i; render(); } break; }
+    case "qotdwa": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(x) { const te = P.lang==="te"&&!!x.qt; shareWA(challengeText(te? x.qt : x.q, x.exName, x.paper, null, qURL(x.id, x.base), te&&x.ot? x.ot : x.o)); } break; }
+    case "qotdimg": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(!x) break; toast("Making the image…");
+      questionCard(x, P.lang==="te"&&!!x.qt).then(c=>shareCanvas(c, `question-of-the-day-${new Date().toISOString().slice(0,10)}.png`, challengeText(x.q, x.exName, x.paper, null, qURL(x.id, x.base), x.o))); break; }
+    case "qchal": { const q = QMAP[b.dataset.id]; if(q) shareWA(challengeText(QT(q), DATA.exam||"APPSC", PMAP[q.p].short, q.n, qURL(q.id), isMCQ(q)? OPTS(q) : null)); break; }
+    case "scorewa": if(LAST) shareWA(scoreText(LAST)); break;
+    case "scoreimg": if(LAST){ toast("Making your score card…"); scoreCard(LAST).then(c=>shareCanvas(c, "my-score-learnwithanil.png", scoreText(LAST))); } break;
     case "copyig": { const h="@"+DATA.instagram; try{ navigator.clipboard.writeText(h).then(()=>toast("Copied "+h), ()=>toast("Handle: "+h)); }catch(_){ toast("Handle: "+h); } break; }
   }
 });

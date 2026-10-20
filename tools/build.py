@@ -228,6 +228,27 @@ def load_exam(conf):
     return papers, questions
 
 
+def qotd_pool(items, n):
+    """Question-of-the-day list: four-option questions without figures, short enough for a phone screen and a
+    share image, shuffled once (fixed seed) and interleaved across exams. The page picks one per day (India time)."""
+    import random
+    pools = []
+    for conf, papers, questions in items:
+        pshort = {p['id']: p['short'] for p in papers}
+        el = [q for q in questions if q.get('o') and not q.get('img') and q.get('w') and len(q['q']) <= 520
+              and all(len(o) <= 140 for o in q['o'])]
+        random.Random('qotd-' + conf['id']).shuffle(el)
+        base = conf['dir'] + '/' if conf['dir'] else ''
+        pools.append([dict(id=q['id'], ex=conf['short'], exName=conf['name'], base=base, paper=pshort[q['p']],
+                           q=q['q'], qt=q.get('qt', ''), o=q['o'], ot=q.get('ot'), a=q['a'], w=q['w']) for q in el])
+    out, i = [], 0
+    while len(out) < n and any(i < len(p) for p in pools):
+        for p in pools:
+            if i < len(p): out.append(p[i])
+        i += 1
+    return out[:n]
+
+
 def exam_confs():
     return [
       dict(id='appsc-group-2', dir='', src='', key='appsc-g2', name='APPSC Group-II', short='Group-II', seo='APPSC Group 2',
@@ -286,6 +307,7 @@ def main():
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
         data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     key=conf['key'], exam=conf['name'], examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
+                    base=prefix, qotd=qotd_pool(loaded if is_root else [(conf, papers, questions)], 120 if is_root else 90),
                     exams=catalog['exams'] if is_root else [], cats=catalog['cats'] if is_root else [],
                     timers=catalog.get('timers', []) if is_root else [])
         data_json = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
