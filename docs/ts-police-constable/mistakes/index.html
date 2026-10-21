@@ -593,7 +593,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 
   <section class="wrap section">
     <div class="section-title"><h2>Frequently asked questions</h2></div>
-    <div class="card faq"><details><summary>Where can I get TS Police Constable previous year question papers with answers?</summary><p>This page has 198 questions from the Police Constable Preliminary Written Test held by TSLPRB on 28 August 2022 (booklet A), in English and Telugu as printed. Every answer is taken from TSLPRB&#x27;s final key, released on 21 October 2022, and each question has a short explanation. You can read the paper with answers, practise it as a quiz or download the PDF, free.</p></details><details><summary>What is the TS Police Constable Preliminary Written Test pattern?</summary><p>The Police Constable Preliminary Written Test is one objective paper of 200 questions for 200 marks in 3 hours, covering English, Arithmetic, Reasoning / Mental Ability and General Studies. The qualifying marks are 30% for OC, 25% for BC and 20% for SC, ST and ex-servicemen. Qualified candidates take the physical tests (PMT/PET) and then the Final Written Examination.</p></details><details><summary>When is the 2026 Preliminary Written Test?</summary><p>TGPRB has tentatively scheduled the Police Constable Preliminary Written Test for 20 December 2026 (forenoon). Dates can change, so confirm on tgprb.in. The 2022 paper on this page follows the same pattern.</p></details><details><summary>Are the TS Police Constable questions available in Telugu?</summary><p>Yes. Every question that the booklet printed in Telugu is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu.</p></details><details><summary>Is there a free TS Police Constable mock test?</summary><p>Yes. Tap Create a quiz, choose subjects or topics, and pick Timed test: you get a free mock test made of real TSLPRB questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.</p></details><details><summary>Which questions are left out?</summary><p>Questions that TSLPRB deleted in the final key, and questions for which the final key accepted three or four options, are left out. Where the key accepted two options, both are shown as correct, and where it also gave the mark for leaving a question blank, the explanation says so.</p></details></div>
+    <div class="card faq"><details><summary>Where can I get TS Police Constable previous year question papers with answers?</summary><p>This page has 198 questions from the Police Constable Preliminary Written Test held by TSLPRB on 28 August 2022 (booklet A), in English and Telugu as printed. Every answer is taken from TSLPRB&#x27;s final key, released on 21 October 2022, and each question has a short explanation. You can read the paper with answers, practise it as a quiz or download the PDF, free.</p></details><details><summary>What is the TS Police Constable Preliminary Written Test pattern?</summary><p>The Police Constable Preliminary Written Test is one objective paper of 200 questions for 200 marks in 3 hours, covering English, Arithmetic, Reasoning / Mental Ability and General Studies. The qualifying marks are 30% for OC, 25% for BC and 20% for SC, ST and ex-servicemen. Qualified candidates take the physical tests (PMT/PET) and then the Final Written Examination.</p></details><details><summary>When is the 2026 Preliminary Written Test?</summary><p>TGPRB has tentatively scheduled the Police Constable Preliminary Written Test for 20 December 2026 (forenoon). Dates can change, so confirm on tgprb.in. The 2022 paper on this page follows the same pattern.</p></details><details><summary>Are the TS Police Constable questions available in Telugu?</summary><p>Yes. Every question that the booklet printed in Telugu is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu.</p></details><details><summary>Is there a free TS Police Constable mock test?</summary><p>Yes. Tap Create a quiz, choose subjects or topics, and pick Timed test: you get a free mock test made of real TSLPRB questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.</p></details><details><summary>Do I need to register?</summary><p>Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that every quiz and test on every exam opens straight away on that phone or computer. There is no password.</p></details><details><summary>Which questions are left out?</summary><p>Questions that TSLPRB deleted in the final key, and questions for which the final key accepted three or four options, are left out. Where the key accepted two options, both are shown as correct, and where it also gave the mark for leaving a question blank, the explanation says so.</p></details></div>
   </section>
 </div>
 
@@ -645,6 +645,9 @@ let S = readLS(KEY, blank());
 let P = readLS(PKEY, {papers:null, topics:null, count:10, mode:"practice", recall:true, lang:"en"});
 try{ const gl = localStorage.getItem("lwa-lang"); if(gl && ["en","hi","te"].includes(gl)) P.lang = gl; }catch(_){}
 const save = ()=>writeLS(KEY, S), savePrefs = ()=>writeLS(PKEY, P);
+
+/* ---------- visit statistics (Google Analytics, only when the site is built with an id) ---------- */
+function track(name, params){ try{ if(typeof gtag==="function") gtag("event", name, params||{}); }catch(_){} }
 
 /* ---------- student details + test records (sent to Anil's Google Form / Sheet) ---------- */
 const SKEY = "lwa-appsc-g2-student-v1";
@@ -852,16 +855,16 @@ const availLangs = ()=> (DATA.hub && (current==="exams" || current==="")) ? ["en
 const hubLang = ()=> ["hi","te"].includes(P.lang) ? P.lang : "en";
 const HUBT = {
   h1:{en:'Previous year question papers for <em>every government exam.</em>', hi:'हर सरकारी परीक्षा के <em>पिछले वर्षों के प्रश्न पत्र।</em>', te:'ప్రతి ప్రభుత్వ పరీక్షకు <em>మునుపటి సంవత్సరాల ప్రశ్నపత్రాలు.</em>'},
-  lede:{en:'Real question papers with official answers and short explanations. Free mock tests and PDFs, no sign-up, in English, తెలుగు and हिंदी.',
-        hi:'असली प्रश्न पत्र, आधिकारिक उत्तर और संक्षिप्त व्याख्या के साथ। निःशुल्क मॉक टेस्ट और PDF, बिना साइन-अप, अंग्रेज़ी, तेलुगु और हिंदी में।',
-        te:'అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు, చిన్న వివరణలతో. ఉచిత మాక్ టెస్టులు, PDFలు, సైన్-అప్ అవసరం లేదు, ఇంగ్లీష్, తెలుగు, హిందీలో.'},
+  lede:{en:'Real question papers with official answers and short explanations. Free mock tests and PDFs, one-time free registration, in English, తెలుగు and हिंदी.',
+        hi:'असली प्रश्न पत्र, आधिकारिक उत्तर और संक्षिप्त व्याख्या के साथ। निःशुल्क मॉक टेस्ट और PDF, केवल एक बार निःशुल्क पंजीकरण, अंग्रेज़ी, तेलुगु और हिंदी में।',
+        te:'అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు, చిన్న వివరణలతో. ఉచిత మాక్ టెస్టులు, PDFలు, ఒక్కసారి ఉచిత రిజిస్ట్రేషన్, ఇంగ్లీష్, తెలుగు, హిందీలో.'},
   find:{en:'Find your exam', hi:'अपनी परीक्षा खोजें', te:'మీ పరీక్షను వెతకండి'},
   today:{en:"Today's question", hi:'आज का प्रश्न', te:'నేటి ప్రశ్న'},
   mentor:{en:'UPSC faculty &amp; mentor · 1000+ hours of civil-services teaching', hi:'UPSC शिक्षक और मार्गदर्शक · सिविल सेवा में 1000+ घंटे का अध्यापन', te:'UPSC అధ్యాపకులు, మెంటార్ · సివిల్ సర్వీసెస్‌లో 1000+ గంటల బోధన'},
   f1:{en:'Previous-year questions', hi:'पिछले वर्षों के प्रश्न', te:'గత సంవత్సరాల ప్రశ్నలు'},
   f2:{en:'Government exams on the list', hi:'सूची में सरकारी परीक्षाएँ', te:'జాబితాలో ప్రభుత్వ పరీక్షలు'},
   f3:{en:'Languages: English, తెలుగు, हिंदी', hi:'भाषाएँ: अंग्रेज़ी, तेलुगु, हिंदी', te:'భాషలు: ఇంగ్లీష్, తెలుగు, హిందీ'},
-  f4:{en:'Free for everyone, no sign-up', hi:'सबके लिए निःशुल्क, साइन-अप नहीं', te:'అందరికీ ఉచితం, సైన్-అప్ అవసరం లేదు'},
+  f4:{en:'Free for everyone, register once', hi:'सबके लिए निःशुल्क, केवल एक बार पंजीकरण', te:'అందరికీ ఉచితం, ఒక్కసారి రిజిస్ట్రేషన్'},
   choose:{en:'Choose your exam', hi:'अपनी परीक्षा चुनें', te:'మీ పరీక్షను ఎంచుకోండి'},
   all:{en:'All exams', hi:'सभी परीक्षाएँ', te:'అన్ని పరీక్షలు'},
   search:{en:'Search an exam, e.g. Group-II, CGL, NDA, Police SI', hi:'परीक्षा खोजें, जैसे Group-II, CGL, NDA, Police SI', te:'పరీక్షను వెతకండి, ఉదా. Group-II, CGL, NDA, Police SI'},
@@ -895,9 +898,9 @@ const HUBT = {
        hi:'किसी भी प्रश्न को लिंक के रूप में दोस्त को भेजें। उन्हें पहले प्रश्न दिखेगा, और उत्तर तभी जब वे टैप करेंगे।',
        te:'ఏ ప్రశ్ననైనా లింక్‌గా స్నేహితుడికి పంపండి. వారికి ముందు ప్రశ్న మాత్రమే కనిపిస్తుంది, ట్యాప్ చేస్తేనే సమాధానం.'},
   w6t:{en:'Your practice stays with you', hi:'आपका अभ्यास आपके पास', te:'మీ ప్రాక్టీస్ మీ దగ్గరే'},
-  w6p:{en:'No account and no login to practise. Your practice, mistakes and bookmarks are saved on your own phone.',
-       hi:'अभ्यास के लिए न खाता, न लॉगिन। आपका अभ्यास, गलतियाँ और बुकमार्क आपके अपने फ़ोन में सहेजे जाते हैं।',
-       te:'ప్రాక్టీస్‌కు ఖాతా గానీ లాగిన్ గానీ అవసరం లేదు. మీ ప్రాక్టీస్, తప్పులు, బుక్‌మార్క్‌లు మీ ఫోన్‌లోనే సేవ్ అవుతాయి.'},
+  w6p:{en:'Register once, free, with no password to remember. Your practice, mistakes and bookmarks are saved on your own phone.',
+       hi:'केवल एक बार निःशुल्क पंजीकरण, कोई पासवर्ड याद रखने की ज़रूरत नहीं। आपका अभ्यास, गलतियाँ और बुकमार्क आपके अपने फ़ोन में सहेजे जाते हैं।',
+       te:'ఒక్కసారి ఉచితంగా రిజిస్టర్ అవ్వండి, పాస్‌వర్డ్ గుర్తుంచుకోవాల్సిన పని లేదు. మీ ప్రాక్టీస్, తప్పులు, బుక్‌మార్క్‌లు మీ ఫోన్‌లోనే సేవ్ అవుతాయి.'},
 };
 const HT = (k, L)=> { const t = HUBT[k]; return t ? (t[L||hubLang()] || t.en) : ""; };
 function setLangAttr(el, L){ if(L==="en") el.removeAttribute("lang"); else el.setAttribute("lang", L); }
@@ -1064,7 +1067,8 @@ function quizTitle(){
 }
 function startQuiz(ids, title, mode, source){
   if(!ids.length) return;
-  if(mode==="test" && !ST.name){ UI.pending = {ids, title, mode, source}; go("join"); return; }
+  if(!ST.name){ UI.pending = {ids, title, mode, source}; go("join"); return; }   // one-time registration before the first quiz or test
+  track("quiz_start", {mode, exam: DATA.examShort||"", questions: ids.length});
   QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: mode==="test"? ids.length*60 : 0};
   UI.confirmSubmit = false;
   go("quiz");
@@ -1176,10 +1180,12 @@ function finishQuiz(){
   S.history.unshift({at:res.at,title:res.title,n:res.ids.length,c:res.c,w:res.w,k:res.k,secs:res.secs});
   S.history = S.history.slice(0,12);
   save(); LAST = res; QZ = null; UI.rFilter="all";
-  if(res.mode==="test" && ST.name){
-    const n = res.ids.length;
-    sendRecord({test: res.title, score: res.c+"/"+n+" (wrong "+res.w+", skipped "+res.k+")", acc: (pct(res.c,n)||0)+"%", time: fmtTime(res.secs)});
+  const n = res.ids.length;
+  if(ST.name && (res.mode==="test" || n>=5)){   // timed tests, and practice quizzes of 5+ questions, go to Anil's sheet
+    sendRecord({test: (res.mode==="test"? "" : "Practice · ") + (DATA.examShort? DATA.examShort+" · " : "") + res.title,
+                score: res.c+"/"+n+" (wrong "+res.w+", skipped "+res.k+")", acc: (pct(res.c,n)||0)+"%", time: fmtTime(res.secs)});
   }
+  track("quiz_complete", {mode: res.mode, exam: DATA.examShort||"", questions: n, correct: res.c});
   go("result");
 }
 
@@ -1319,10 +1325,10 @@ function vHeatmap(){
 function vJoin(){
   const p = UI.pending, s = ST;
   const intro = p
-    ? "Fill this in once before your first timed test. Your test scores will be saved with these details, so Anil can follow your progress and help you."
-    : "Your timed-test scores are saved with these details, so Anil can follow your progress and help you.";
+    ? "Registration is free and only once. Fill this in now; after this, every quiz and test on every exam opens straight away, on this phone or computer."
+    : "Your test scores are saved with these details, so Anil can follow your progress and help you.";
   return `<div class="wrap view">
-    ${head(p? "Before your timed test" : "Your details", p? "Tell us who is taking the test" : "Update your details", intro)}
+    ${head(p? "One-time registration" : "Your details", p? "Register once to start practising" : "Update your details", intro)}
     <form class="card join" id="joinForm" novalidate>
       ${p? `<p class="join-test"><span class="mono">Next</span> ${esc(p.title)} · ${p.ids.length} questions</p>` : ""}
       <div class="join-grid">
@@ -1332,10 +1338,10 @@ function vJoin(){
         <label>District / City<input name="district" autocomplete="address-level2" required maxlength="60" value="${esc(s.district||"")}"></label>
       </div>
       <label><span>Anything you need help with? <span class="muted" style="font-weight:500">(optional)</span></span><textarea name="help" rows="3" maxlength="600" placeholder="For example: I find AP Economy hard to revise. How should I plan it?"></textarea></label>
-      <label class="consent"><input type="checkbox" name="ok" ${s.name?"checked":""}> <span>I agree to share these details and my timed-test scores with Learn with Anil. They are not shown publicly.</span></label>
+      <label class="consent"><input type="checkbox" name="ok" ${s.name?"checked":""}> <span>I agree to share these details and my test scores with Learn with Anil. They are not shown publicly.</span></label>
       <p class="err" id="joinErr" role="alert" hidden></p>
-      <div class="row"><button class="btn btn-primary" type="submit">${p? "Save and start test" : "Save details"}</button><a class="btn btn-secondary" href="#${p? "practice" : "about"}">Cancel</a></div>
-      <p class="muted" style="font-size:13.5px;margin:0">Practice mode never needs these details. Your attempts, mistakes notebook and bookmarks stay in this browser.</p>
+      <div class="row"><button class="btn btn-primary" type="submit">${p? "Register and start" : "Save details"}</button><a class="btn btn-secondary" href="#${p? "papers" : "about"}">Cancel</a></div>
+      <p class="muted" style="font-size:13.5px;margin:0">You register only once. Your attempts, mistakes notebook and bookmarks stay on this phone or computer.</p>
     </form>
   </div>`;
 }
@@ -1672,6 +1678,7 @@ document.addEventListener("submit", e=>{
   Object.assign(ST, {name, phone, email, district, joined: ST.joined || Date.now()}); saveST();
   const p = UI.pending; UI.pending = null;
   sendRecord({help, test: isNew? "Registered" + (p? " · before "+p.title : "") : "Updated details"});
+  if(isNew) track("sign_up", {method: "form", exam: DATA.examShort||"", district});
   if(p){ toast("Thanks, "+name.split(" ")[0]+". All the best!"); startQuiz(p.ids, p.title, p.mode, p.source); }
   else { toast("Your details are saved"); go("about"); }
 });
