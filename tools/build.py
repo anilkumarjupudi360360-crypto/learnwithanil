@@ -18,6 +18,11 @@ EMAIL = 'anilkumarjupudi360360@gmail.com'
 GA_ID = os.environ.get('GA_ID', '') or (open(os.path.join(ROOT, 'src', 'ga-id.txt')).read().strip() if os.path.exists(os.path.join(ROOT, 'src', 'ga-id.txt')) else '')
 
 
+# site icon (src/static): Google shows it next to the site in search results; it wants a multiple of 48 px square
+ICONS = ('<link rel="icon" href="/favicon.ico" sizes="48x48">\n<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">\n'
+         '<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n')
+
+
 def ga_tag():
     """Google Analytics tag (page views, visitor counts, sources, cities). No tag in the artifact copy or without an id."""
     if not re.fullmatch(r'G-[A-Z0-9]{4,}', GA_ID or ''): return ''
@@ -499,6 +504,7 @@ def main():
         pb = conf['pb']; basedir = '/' + prefix
         person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"UPSC Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:anilkumarjupudi360360@gmail.com","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/"]}
         website = {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":"Learn with Anil – Previous year questions for every exam","url":SITE_URL+'/'}
+        org = {"@context":"https://schema.org","@type":"Organization","name":"Learn with Anil","url":SITE_URL+'/',"logo":SITE_URL+'/icon-512.png',"founder":{"@type":"Person","name":"Jupudi Anil Kumar"},"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/"]}
         faqld = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]}
         seo_name = conf['seo']
         views = {   # view: (title, description, canonical path, indexable)
@@ -534,7 +540,7 @@ def main():
             canon = SITE_URL + canon_path
             body_ = sbody if canon_path == '/' else re.sub(r'<div id="hub-static" class="view">.*?(?=<div id="home-static")', '', sbody, flags=re.S)
             assert canon_path == '/' or 'id="hub-static"' not in body_
-            seo = (ga_tag() + f'<link rel="canonical" href="{canon}">\n<meta name="robots" content="{"index,follow" if index else "noindex,follow"}">\n'
+            seo = (ICONS + ga_tag() + f'<link rel="canonical" href="{canon}">\n<meta name="robots" content="{"index,follow" if index else "noindex,follow"}">\n'
                    f'<meta property="og:type" content="website"><meta property="og:site_name" content="Learn with Anil">'
                    f'<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">'
                    f'<meta property="og:url" content="{canon}"><meta property="og:image" content="{SITE_URL}/anil.jpg">'
@@ -551,7 +557,7 @@ def main():
         if is_root:
             os.makedirs(os.path.join(DIST, 'artifact', 'papers')); os.makedirs(os.path.join(DIST, 'artifact', 'subjects'))
             open(os.path.join(DIST, 'artifact', 'index.html'), 'w', encoding='utf-8').write(fill(head + body, photo_uri, 'Learn with Anil', '', root_desc))
-            site_pages['index.html'] = site_doc(root_title, root_desc, '/', [website, person])
+            site_pages['index.html'] = site_doc(root_title, root_desc, '/', [website, org, person])
         site_pages[pb.strip('/') + '/index.html'] = site_doc(home_title, home_desc, pb, [person, faqld])
         for v, (t, d, cp, ix) in views.items():
             site_pages[pb.strip('/') + f'/{v}/index.html'] = site_doc(t, d, cp, [], ix and cp.startswith(pb))
@@ -933,7 +939,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600{gf}&display=swap">
 <style>{STATIC_CSS}</style>
-{ga_tag()}
+{ICONS}{ga_tag()}
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
@@ -1142,6 +1148,7 @@ def not_found_page():
     return """<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Page not found | Learn with Anil</title><meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <script>
 (function(){
   var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/ts-police-si/", "/ts-police-constable/"], base = "/";

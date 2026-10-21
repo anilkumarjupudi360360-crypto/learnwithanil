@@ -184,6 +184,11 @@ async def main():
         for u in _re.findall(r'<loc>https?://[^/]+/([^<]*\.pdf)</loc>', open(os.path.join(SITE, 'sitemap.xml')).read()):
             f = os.path.join(SITE, u)
             if not os.path.exists(f) or open(f, 'rb').read(4) != b'%PDF': errors.append(f'missing PDF {u} (run tools/pdfs.py)')
+        # site icon: the files exist and the pages point to them
+        for f in ('favicon.ico', 'icon-192.png', 'apple-touch-icon.png', 'icon-512.png'):
+            if not os.path.isfile(os.path.join(SITE, f)): errors.append(f'missing {f}')
+        for page in ('index.html', 'appsc-group-1/index.html', 'ts-police-pyqs.html', 'ts-police-si/papers/ts-police-si-prelims-2022-question-paper-with-answers.html', 'upsc-capf/q/c2026a-3.html'):
+            if 'rel="icon" href="/favicon.ico"' not in open(os.path.join(SITE, page), encoding='utf-8').read(): errors.append(f'{page}: no site icon link')
         # board landing pages: in the sitemap, and every link on them leads to a real file
         sm = open(os.path.join(SITE, 'sitemap.xml')).read()
         for land in ('appsc-pyqs.html', 'ts-police-pyqs.html'):
