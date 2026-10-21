@@ -149,12 +149,27 @@ TS_SI_PAPERS = [
        title='TSLPRB SI Preliminary Written Test 2022', notif='SCT SI (Civil) & equivalent · booklet A', held='7 August 2022',
        key="TSLPRB's final key", fmt='mcq', slug='ts-police-si-prelims-2022-question-paper-with-answers',
        blurb='Arithmetic & Test of Reasoning / Mental Ability (Q1–100) and General Studies (Q101–200): 200 questions, 200 marks, 3 hours.'),
+  dict(id='s2023c', file='ts-si-2023-fwe-paper3.txt', year=2023, stage='Final Written Examination Paper III', short='SI Mains 2023 Paper III',
+       title='TSLPRB SI Final Written Examination 2023, Paper III (Arithmetic & Reasoning)', notif='SCT SI (Civil) & others · booklet D', held='8 April 2023',
+       key="TSLPRB's final key", fmt='mcq', slug='ts-police-si-mains-2023-paper-3-arithmetic-reasoning-question-paper-with-answers',
+       alt='Final Written Exam, Arithmetic & Reasoning', te_paper='ఫైనల్ రాత పరీక్ష పేపర్-3 (అర్థమెటిక్, రీజనింగ్)',
+       blurb='Final Written Examination, Paper III: Arithmetic and Test of Reasoning / Mental Ability, 200 questions, 200 marks, 3 hours.'),
+  dict(id='s2023d', file='ts-si-2023-fwe-paper4.txt', year=2023, stage='Final Written Examination Paper IV', short='SI Mains 2023 Paper IV',
+       title='TSLPRB SI Final Written Examination 2023, Paper IV (General Studies)', notif='SCT SI (Civil) & others · booklet D', held='9 April 2023',
+       key="TSLPRB's final key", fmt='mcq', slug='ts-police-si-mains-2023-paper-4-general-studies-question-paper-with-answers',
+       alt='Final Written Exam, General Studies', te_paper='ఫైనల్ రాత పరీక్ష పేపర్-4 (జనరల్ స్టడీస్)',
+       blurb='Final Written Examination, Paper IV: General Studies (science, history, geography, polity, economy, current events, personality test and the Telangana movement), 200 questions, 200 marks, 3 hours.'),
 ]
 TS_PC_PAPERS = [
   dict(id='p2022', file='ts-pc-2022-prelims.txt', year=2022, stage='Preliminary Written Test', short='PC Prelims 2022',
        title='TSLPRB Police Constable Preliminary Written Test 2022', notif='SCT PC (Civil) & equivalent · booklet A', held='28 August 2022',
        key="TSLPRB's final key", fmt='mcq', slug='ts-police-constable-prelims-2022-question-paper-with-answers',
        blurb='English, Arithmetic, Reasoning / Mental Ability and General Studies: 200 questions, 200 marks, 3 hours.'),
+  dict(id='p2023', file='ts-pc-2023-fwe.txt', year=2023, stage='Final Written Examination', short='PC Mains 2023',
+       title='TSLPRB Police Constable Final Written Examination 2023 (General Studies)', notif='SCT PC (Civil) & equivalent · booklet A', held='30 April 2023',
+       key="TSLPRB's final key", fmt='mcq', slug='ts-police-constable-mains-2023-question-paper-with-answers',
+       alt='Final Written Exam', te_paper='ఫైనల్ రాత పరీక్ష',
+       blurb='Final Written Examination (General Studies): English, arithmetic, reasoning, science, history, geography, polity and economy, current events, personality test and Telangana, 200 questions, 200 marks, 3 hours.'),
 ]
 TS_SUBJECTS = [
   ('ari', 'Arithmetic', 'arithmetic', ['Numbers & Simplification', 'Percentage, Profit & Loss', 'Ratio, Average & Ages', 'Interest', 'Time & Work', 'Time, Speed & Distance', 'Mensuration', 'Data Interpretation']),
@@ -659,6 +674,7 @@ def paper_kw(conf, p):
 
 def paper_alt(conf, p):
     """The paper's other name, if students also search by it."""
+    if p.get('alt'): return p['alt']
     if p['stage'].startswith('Screening'): return 'Screening Test'
     if p['stage'].startswith('Preliminary'): return 'Preliminary Written Test'
     if conf['board'] == 'UPSC': return 'General Ability and Intelligence'
@@ -670,7 +686,7 @@ def paper_kw_l2(conf, p):
     """The same name in Telugu (APPSC) or Hindi (UPSC CAPF), as students type it."""
     n = paper_no(p)
     if conf.get('te_name'):
-        return f'{conf["te_name"]} {conf["te_paper"]} {p["year"]} ప్రశ్నపత్రం సమాధానాలతో'
+        return f'{conf["te_name"]} {p.get("te_paper") or conf["te_paper"]} {p["year"]} ప్రశ్నపత్రం సమాధానాలతో'
     if conf['l2']['code'] == 'te':
         g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
         stage = 'ప్రిలిమ్స్' if p['stage'].startswith(('Screening', 'Prelims')) else 'మెయిన్స్'
