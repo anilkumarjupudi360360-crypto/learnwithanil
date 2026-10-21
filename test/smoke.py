@@ -184,6 +184,16 @@ async def main():
         for u in _re.findall(r'<loc>https?://[^/]+/([^<]*\.pdf)</loc>', open(os.path.join(SITE, 'sitemap.xml')).read()):
             f = os.path.join(SITE, u)
             if not os.path.exists(f) or open(f, 'rb').read(4) != b'%PDF': errors.append(f'missing PDF {u} (run tools/pdfs.py)')
+        # ?test=<paper>: a full timed mock test of that paper, from the mock-test pages
+        for path, n in (('ts-police-si/?test=s2022', 191), ('appsc-group-2/?test=s2024', 143)):
+            await pg.goto(URL + path); await pg.wait_for_timeout(700)
+            if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'{path}: did not open the mock test')
+            elif str(n) not in await pg.inner_text('main'): errors.append(f'{path}: mock test does not show {n} questions')
+        for rel in ('ts-police-si/mock-test.html', 'appsc-group-2/mock-test.html', 'appsc-group-2-notification-2026.html', 'appsc-group-1-notification-2026.html'):
+            raw = open(os.path.join(SITE, rel), encoding='utf-8').read()
+            for h in _re.findall(r'href="(/[^"#:?]*)', raw):
+                f = os.path.join(SITE, h.lstrip('/'))
+                if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')
         # site icon: the files exist and the pages point to them
         for f in ('favicon.ico', 'icon-192.png', 'apple-touch-icon.png', 'icon-512.png'):
             if not os.path.isfile(os.path.join(SITE, f)): errors.append(f'missing {f}')

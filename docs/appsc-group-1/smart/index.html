@@ -163,6 +163,7 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .hub-figs{padding-top:24px}
 .hero h1[lang]{line-height:1.3}
 .hero p.hero-l2{font-size:16px;margin-top:-4px}
+.hero p.hero-news{font-size:15px;margin-top:-8px}.hero p.hero-news:empty{display:none}.hero p.hero-news a{color:inherit;font-weight:700}
 .hero p.hero-aka{font-size:15px;color:var(--band-muted);opacity:.85;margin-top:-4px}.hero p.hero-aka:empty{display:none}
 .why h4[lang="te"],.why-en summary[lang="te"]{font-family:"Noto Sans Telugu",var(--f-body)}.why h4[lang="hi"],.why-en summary[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body)}
 .why-en{margin-top:6px}.why-en summary{cursor:pointer;font-size:13.5px;font-weight:700;color:var(--accent-text)}.why-en p{margin:6px 0 0}
@@ -549,6 +550,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
       <p class="hero-aka">Also known as AP Group 1 or APPSC Group-I Services. Old question papers and PYQs of the Prelims, with the final key.</p>
       <div class="row"><a class="btn btn-primary" href="/appsc-group-1/practice/">Create a quiz</a><a class="btn btn-secondary" href="/appsc-group-1/papers/">See previous papers</a></div>
       <p style="margin:14px 0 0;font-size:15px"><a href="../appsc-pyqs.html" style="color:inherit">All APPSC previous question papers (Group 1 &amp; Group 2) →</a></p>
+      <p class="hero-news"><a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026: 166 posts →</a> · <a href="/appsc-group-1/mock-test.html">Free APPSC Group 1 mock test with a timer →</a></p>
     </div>
     <a class="mentor" href="/appsc-group-1/about/" style="color:inherit;text-decoration:none">
       <span class="ph"><img src="../anil.jpg" alt="Jupudi Anil Kumar" width="210" height="210"></span>
@@ -1738,6 +1740,9 @@ function start(data){
     if(red && routeFromPath(red)!==null) history.replaceState(null, "", red);
     const qp = new URLSearchParams(location.search).get("q");
     if(qp && QMAP[qp]) history.replaceState(null, "", pathOf("q/"+qp));
+    const tp = new URLSearchParams(location.search).get("test");   // ?test=<paper id>: start that paper as a full timed mock test
+    if(tp && PMAP[tp]){ history.replaceState(null, "", location.pathname); syncLang(); render();
+      startQuiz(QS.filter(q=>q.p===tp && isMCQ(q)).map(q=>q.id), PMAP[tp].title+" · Mock test", "test", "paper"); return; }
     const h = location.hash.slice(1); if(h && isRoute(h)) history.replaceState(null, "", pathOf(h));
   }
   syncLang(); render();

@@ -472,6 +472,10 @@ def main():
         else:
             all_link = f'<a href="{up}#exams" style="color:inherit">All exams on Learn with Anil: APPSC Group 1, Group 2 and more →</a>'
 
+        news = [f'<a href="/{rel}">{esc(N["h1"])} →</a>' for rel, N in NOTIFS.items() if N['exam'] == conf['id']]
+        if any(p['fmt'] == 'mcq' for p in papers): news.append(f'<a href="{conf["pb"]}mock-test.html">Free {esc(conf["seo"])} mock test with a timer →</a>')
+        news_html = ' · '.join(news)
+
         def fill(s, photo, title, seo, desc=''):
             return (s.replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title).replace('{{DESC}}', esc(desc))
                      .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf'])
@@ -493,7 +497,8 @@ def main():
                      .replace('{{EXAM}}', esc(conf['name'])).replace('{{EXAMSHORT}}', esc(conf['short']))
                      .replace('{{EYEBROW}}', conf['eyebrow']).replace('{{H1}}', conf['h1'])
                      .replace('{{L2LINE}}', f'<span lang="{l2["code"]}">{esc(conf["l2line"])}</span>')
-                     .replace('{{AKA}}', esc(conf.get('aka', ''))))
+                     .replace('{{AKA}}', esc(conf.get('aka', '')))
+                     .replace('{{NEWS}}', news_html))
         root_title = 'Free PYQs with Answers – APPSC Group 1 & Group 2, TS Police SI & Constable, UPSC CAPF Previous Papers | Learn with Anil'
         root_desc = (f'Free previous year question papers (PYQs) with answers: APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
                      f'(Telangana police, TSLPRB / TGPRB) and UPSC CAPF AC. {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
@@ -588,6 +593,16 @@ def main():
     for rel in lands:
         open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(landing_page(loaded, rel))
     all_pages = {**lands, **all_pages}
+    notifs = {rel: None for rel in NOTIFS if any(c['id'] == NOTIFS[rel]['exam'] for c, _, _ in loaded)}
+    for rel in notifs:
+        open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(notif_page(loaded, rel))
+    mocks = {}
+    for c, ps, qs in loaded:
+        if not any(p['fmt'] == 'mcq' for p in ps): continue
+        rel, html_ = mock_page(c, ps, qs)
+        open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(html_)
+        mocks[rel] = None
+    all_pages = {**notifs, **mocks, **all_pages}
 
     open(os.path.join(DIST, 'site', '404.html'), 'w', encoding='utf-8').write(not_found_page())
 
@@ -903,6 +918,10 @@ ol.qs{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:
 .q p{margin:0 0 8px;white-space:pre-line;font-weight:600;overflow-wrap:anywhere}.q ol{margin:0 0 8px;padding-left:28px}.q li{overflow-wrap:anywhere}
 .q img{max-width:100%;background:#fff;border-radius:6px}
 details summary{cursor:pointer;color:var(--accent-text);font-weight:700}
+table.facts{border-collapse:collapse;width:100%;margin:8px 0 16px;background:var(--surface);font-size:16px}
+table.facts th,table.facts td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+table.facts th{background:var(--accent-soft);font-weight:700;overflow-wrap:normal}table.facts td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;margin:16px 0}
 .ans{color:var(--good);font-weight:700;margin:8px 0 4px}.why{color:var(--muted);margin:0}
 nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}nav.toc a{background:var(--accent-soft);padding:4px 10px;border-radius:999px;text-decoration:none;font-size:15px}
 footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}footer .wrap{padding-block:18px}
@@ -949,7 +968,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 </body>
 </html>
 """
@@ -992,7 +1011,10 @@ LANDINGS = {
            "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu.",
       intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC old question papers with the key, or a free APPSC mock test? '
             'They are all here: open a paper to read it with answers, download its PDF, or practise it online.</p>'
-            '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — PDF డౌన్‌లోడ్, ఉచిత మాక్ టెస్ట్.</p>',
+            '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — PDF డౌన్‌లోడ్, ఉచిత మాక్ టెస్ట్.</p>'
+            '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (686 posts, apply 10–30 November) and '
+            '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts). Free timed mock tests: '
+            '<a href="/appsc-group-2/mock-test.html">Group 2</a> · <a href="/appsc-group-1/mock-test.html">Group 1</a>.</p>',
       te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు'},
       order=lambda c: c['short']),   # Group-I first, then Group-II
   'ts-police-pyqs.html': dict(
@@ -1005,7 +1027,9 @@ LANDINGS = {
            "Answers come from TSLPRB's final key, and every question has a short explanation, in English and Telugu.",
       intro='<p>Looking for TS Police SI previous papers, the TS Constable question paper 2022 PDF, TSLPRB / TGPRB previous question papers with answers, '
             'or a free Telangana police mock test? They are all here: open a paper to read it with answers, download its PDF, or practise it online.</p>'
-            '<p lang="te">తెలంగాణ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) TSLPRB ఫైనల్ కీ సమాధానాలు, తెలుగులో వివరణలతో — PDF డౌన్‌లోడ్, ఉచిత మాక్ టెస్ట్.</p>',
+            '<p lang="te">తెలంగాణ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) TSLPRB ఫైనల్ కీ సమాధానాలు, తెలుగులో వివరణలతో — PDF డౌన్‌లోడ్, ఉచిత మాక్ టెస్ట్.</p>'
+            '<p class="note">2026 prelims are tentatively on 29 November (SI) and 20 December (Constable). Free full mock tests with a timer: '
+            '<a href="/ts-police-si/mock-test.html">TS Police SI mock test</a> · <a href="/ts-police-constable/mock-test.html">TS Police Constable mock test</a>.</p>',
       te={'TS Police SI': 'తెలంగాణ పోలీస్ ఎస్ఐ ప్రశ్నాపత్రాలు', 'TS Constable': 'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రశ్నాపత్రాలు'},
       order=lambda c: 0 if c['id'] == 'ts-police-si' else 1),
 }
@@ -1039,6 +1063,166 @@ def landing_page(loaded, rel):
     return static_page(0, L['title'], L['desc'].format(n=n), can, L['h1'], esc(L['lede'].format(n=n)), toc + L['intro'] + ''.join(secs),
                        [('Home', SITE_URL + '/'), (L['crumb'], can)], loaded[0][0] if L['board'] != 'APPSC' else None,
                        ename=L['ename'], at_root=True)
+
+
+# ---------- 2026 notification pages and free mock-test pages ----------
+# Facts from APPSC's notifications (as reported by several exam sites on 13-20 Oct 2026; each page links the official PDF
+# and tells readers to check psc.ap.gov.in). Update these when the detailed notifications or exam dates come out.
+def facts_table(rows, head=None):
+    h = ('<tr>' + ''.join(f'<th>{esc(x)}</th>' for x in head) + '</tr>') if head else ''
+    return ('<table class="facts">' + h + ''.join(
+        '<tr>' + ''.join(f'<td class="n">{c:,}</td>' if (i and isinstance(c, int)) else (f'<th scope="row">{esc(str(c))}</th>' if (not i and not head) else f'<td>{esc(str(c))}</td>')
+                         for i, c in enumerate(r)) + '</tr>' for r in rows) + '</table>')
+
+
+def practice_links(conf, papers, questions):
+    """Links to this exam's papers, mock tests and subject pages (for the notification pages)."""
+    base = conf['dir'] + '/' if conf['dir'] else ''
+    subj = {x[0]: x for x in conf['subjects']}
+    scount = {}
+    for q in questions: scount[q['s']] = scount.get(q['s'], 0) + 1
+    rows = ''.join(
+        f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {"timed mock test available" if p["fmt"] == "mcq" else "answer-only key (quick-recall cards)"}</div>'
+        f'<p><a href="/{base}papers/{p["slug"]}.html">{esc(paper_kw(conf, p))} question paper with answers</a> · <a href="{pdf_href(conf, p)}" download>PDF</a>'
+        + (f' · <a href="{conf["pb"]}?test={p["id"]}">Take it as a timed mock test</a>' if p['fmt'] == 'mcq' else '') + '</p></li>'
+        for p in sorted(papers, key=lambda p: (-p['year'], p['id'])))
+    subs = ''.join(f'<a href="/{base}subjects/{conf["slugp"]}-{subj[x][2]}-pyqs.html">{esc(subj[x][1])} ({scount[x]})</a>' for x in subj if scount.get(x))
+    return (f'<ol class="qs">{rows}</ol><h3>{esc(conf["seo"])} previous questions by subject</h3><nav class="toc">{subs}</nav>'
+            f'<p><a class="cta" href="{conf["pb"]}mock-test.html">Free {esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}">Practise topic-wise</a></p>')
+
+
+NOTIFS = {
+  'appsc-group-2-notification-2026.html': dict(
+    exam='appsc-group-2', crumb='Group 2 Notification 2026',
+    title='APPSC Group 2 Notification 2026 – 686 Posts, Apply 10–30 November, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='APPSC Group 2 Notification 2026 (No. 37/2026): 686 posts including 200 Deputy Tahsildar and 176 Deputy MPDO posts, online applications '
+         'from 10 to 30 November 2026, the screening test and mains pattern, and free APPSC Group 2 previous year question papers with answers.',
+    h1='APPSC Group 2 Notification 2026: 686 posts',
+    lede='APPSC issued a brief notification (No. 37/2026) on 13 October 2026 for 686 Group-II posts, Executive and Non-Executive. '
+         'Online applications run from 10 to 30 November 2026. Here are the posts, the dates, the exam pattern, and the Group 2 previous papers to start practising now.',
+    te='APPSC గ్రూప్ 2 నోటిఫికేషన్ 2026 (నం. 37/2026): 686 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు నవంబర్ 10 నుంచి 30 వరకు. పరీక్ష విధానం, పాత ప్రశ్నాపత్రాలు సమాధానాలతో.',
+    pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_II_372026.pdf', pdfname='APPSC brief notification No. 37/2026, dated 13 October 2026',
+    sections=[
+      ('Important dates', 'table', [
+        ('Brief notification (No. 37/2026)', '13 October 2026'),
+        ('Detailed notification', 'Expected by 10 November 2026: age limits, fee and reservations'),
+        ('Online applications', '10 November to 30 November 2026 (till 11:59 pm)'),
+        ('Screening test (prelims)', 'Date not announced yet'),
+        ('Official website', 'psc.ap.gov.in')]),
+      ('Posts and vacancies', 'table+', (['Post', 'Vacancies'], [
+        ('Municipal Commissioner Grade-III', 6), ('Sub-Registrar Grade-II', 7), ('Deputy Tahsildar', 200),
+        ('Goods and Services Tax Officer (erstwhile ACTO)', 40), ('Assistant Registrar of Co-operative Societies', 10),
+        ('Deputy Mandal Parishad Development Officer', 176), ('Prohibition and Excise Sub-Inspector', 29),
+        ('Assistant Section Officer (GAD)', 71), ('Assistant Section Officer (Finance)', 5), ('Assistant Section Officer (Law)', 4),
+        ('Senior Accountant (HODs)', 90), ('Junior Accountant (HODs)', 48), ('Total', 686)])),
+      ('Who can apply', 'p', 'A bachelor\'s degree from a recognised university. Some posts need a particular degree: Assistant Section Officer (Finance) a degree in '
+                          'mathematics, economics or commerce; Assistant Section Officer (Law) a law degree; Senior and Junior Accountant a degree in commerce, '
+                          'economics or mathematics plus a computer qualification. Age limits, relaxations and the fee are given in the detailed notification.'),
+      ('Exam pattern', 'table+', (['Stage', 'What it covers', 'Questions · marks · time'], [
+        ('Screening test (objective, OMR)', 'Indian History, Geography, Indian Society, Current Affairs and Mental Ability, 30 marks each', '150 · 150 · 150 min'),
+        ('Mains Paper I (objective)', 'Social and cultural history of Andhra Pradesh; general overview of the Indian Constitution', '150 · 150 · 150 min'),
+        ('Mains Paper II (objective)', 'Indian and Andhra Pradesh economy; science and technology', '150 · 150 · 150 min'),
+        ('Computer Proficiency Test', 'Qualifying test for the posts that need it, then document verification', '—')])),
+      ('', 'note', 'The screening test only shortlists candidates for the Mains; selection is on the Mains marks. The pattern is the same as in the previous '
+                   'Group-II recruitment (Notification 11/2023), so the 2024 Screening Test and the 2025 Mains papers below are the closest practice you can get.'),
+    ]),
+  'appsc-group-1-notification-2026.html': dict(
+    exam='appsc-group-1', crumb='Group 1 Notification 2026',
+    title='APPSC Group 1 Notification 2026 – 166 Posts, Last Date 27 October, Prelims Pattern & Previous Papers | Learn with Anil',
+    desc='APPSC Group 1 Notification 2026 (No. 07/2026): 166 posts including Deputy Collector, DSP and Divisional Development Officer, applications till 27 October 2026, '
+         'screening test tentatively on 24 January 2027, prelims and mains pattern, and free APPSC Group 1 previous year question papers with answers.',
+    h1='APPSC Group 1 Notification 2026: 166 posts',
+    lede='APPSC Notification No. 07/2026 is for 166 Group-I Services posts, from Deputy Collector and DSP to Divisional Development Officer. '
+         'Online applications close on 27 October 2026, and the screening test is tentatively on 24 January 2027. Here are the dates, the posts, the exam pattern, and the Group 1 previous papers to practise.',
+    te='APPSC గ్రూప్ 1 నోటిఫికేషన్ 2026 (నం. 07/2026): 166 పోస్టులు — దరఖాస్తుకు చివరి తేదీ అక్టోబర్ 27, ప్రిలిమ్స్ (స్క్రీనింగ్ టెస్ట్) తాత్కాలికంగా 2027 జనవరి 24. పరీక్ష విధానం, పాత ప్రశ్నాపత్రాలు సమాధానాలతో.',
+    pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_I_07_2026.pdf', pdfname='APPSC Notification No. 07/2026 (Group-I Services)',
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification (No. 07/2026)', '6 October 2026'),
+        ('Online applications', '6 October to 27 October 2026 (till 11:59 pm)'),
+        ('Screening test (prelims)', 'Tentatively 24 January 2027'),
+        ('Mains and interview', 'To be announced'),
+        ('Official website', 'psc.ap.gov.in')]),
+      ('Posts', 'list', ['Deputy Collector (A.P. Civil Service, Executive Branch)', 'Assistant Commissioner of State Tax', 'Deputy Superintendent of Police (Civil)',
+                         'Deputy Superintendent of Jails (Men)', 'Divisional / District Fire Officer', 'Regional Transport Officer', 'District Tribal Welfare Officer',
+                         'Deputy Registrar of Co-operative Societies', 'Municipal Commissioner Grade-II', 'Assistant Treasury Officer / Assistant Accounts Officer',
+                         'District Employment Officer', 'Divisional Development Officer', 'Assistant Audit Officer']),
+      ('Who can apply', 'p', 'A bachelor\'s degree from a recognised university (a few posts ask for a particular degree). Most posts take candidates aged 18 to 44, '
+                          'reckoned on 1 July 2026, with the usual relaxations for reserved categories; the police posts have their own age limits. '
+                          'Fee: ₹250 application fee plus ₹120 examination fee; the examination fee is waived for SC, ST, BC, PwBD and ex-service candidates and some others.'),
+      ('Exam pattern', 'table+', (['Stage', 'What it covers', 'Questions · marks · time'], [
+        ('Screening test Paper I', 'General Studies: history and culture; polity, constitution, social justice and international relations; Indian and AP economy and planning; geography', '120 · 120 · 120 min'),
+        ('Screening test Paper II', 'General Aptitude: mental ability, administrative and psychological abilities; science and technology; current events', '120 · 120 · 120 min'),
+        ('Mains (written, descriptive)', 'Telugu and English (qualifying); General Essay; History, Culture and Geography of India and AP; Polity, Constitution, Governance, Law and Ethics; '
+                                         'Economy and Development of India and AP; Science, Technology and Environmental Issues', '7 papers · 150 marks each · 3 hours each'),
+        ('Interview', 'Personality test', '75 marks')])),
+      ('', 'note', 'In the screening test, one-third of a mark is deducted for each wrong answer, and about 50 candidates per post go through to the Mains. '
+                   'Screening marks are not counted in the final merit (Mains merit papers 750 + interview 75 = 825). The 2024 Prelims papers below follow this same pattern.'),
+    ]),
+}
+
+
+def notif_page(loaded, rel):
+    N = NOTIFS[rel]
+    conf, papers, questions = next(x for x in loaded if x[0]['id'] == N['exam'])
+    can = f'{SITE_URL}/{rel}'
+    body = [f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>',
+            f'<a class="cta" href="{conf["pb"]}mock-test.html">Free {esc(conf["seo"])} mock test</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>']
+    for head, kind, data in N['sections']:
+        if head: body.append(f'<h2>{esc(head)}</h2>')
+        if kind == 'table': body.append(facts_table(data))
+        elif kind == 'table+': body.append(facts_table(data[1], data[0]))
+        elif kind == 'list': body.append('<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in data) + '</ul>')
+        elif kind == 'note': body.append(f'<p class="note">{esc(data)}</p>')
+        else: body.append(f'<p>{esc(data)}</p>')
+    body.append(f'<h2>Start with the previous papers</h2><p>Every {esc(conf["name"])} paper on this site comes with the answers from APPSC\'s final key and a short '
+                f'explanation in English and Telugu. Read a paper, download it as a PDF, or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
+    body.append(f'<p class="note">Source: <a href="{N["pdf"]}" rel="nofollow">{esc(N["pdfname"])}</a>. Dates and vacancies can change with corrigenda; '
+                f'always check the official website psc.ap.gov.in before applying. Learn with Anil is not connected with APPSC.</p>')
+    return static_page(0, N['title'], N['desc'], can, N['h1'], esc(N['lede']), ''.join(body),
+                       [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + conf['pb']), (N['crumb'], can)], conf, at_root=True)
+
+
+MOCK_INFO = {   # exam id: (when the next exam is, as students should read it)
+  'appsc-group-2': 'APPSC Group 2 2026: 686 posts, applications from 10 to 30 November 2026 (Notification 37/2026); screening test date not announced yet.',
+  'appsc-group-1': 'APPSC Group 1 2026: 166 posts (Notification 07/2026); screening test tentatively on 24 January 2027.',
+  'ts-police-si': 'TS Police SI 2026: the Preliminary Written Test is tentatively on 29 November 2026 (forenoon), as per TGPRB. Confirm on tgprb.in.',
+  'ts-police-constable': 'TS Police Constable 2026: the Preliminary Written Test is tentatively on 20 December 2026 (forenoon), as per TGPRB. Confirm on tgprb.in.',
+  'upsc-capf': '',
+}
+
+
+def mock_page(conf, papers, questions):
+    """Crawlable 'free mock test' page for an exam: every paper with four options as a full timed test."""
+    pb, seo = conf['pb'], conf['seo']
+    rel = pb.strip('/') + '/mock-test.html'
+    can = SITE_URL + '/' + rel
+    mcq = [p for p in sorted(papers, key=lambda p: (-p['year'], p['id'])) if p['fmt'] == 'mcq']
+    l2 = conf['l2']
+    title = f'{seo} Mock Test Free – Full Previous Papers with Timer, English & {l2["name"]} | Learn with Anil'
+    desc = (f'Free {seo} mock test online: take the real {", ".join(paper_kw(conf, p).replace(seo + " ", "") for p in mcq)} question paper'
+            f'{"s" if len(mcq) > 1 else ""} as a timed test, in English and {l2["name"]}, with your score, answers from the official key and an explanation for every question.')
+    rows = ''.join(
+        f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · about {round(p["count"] / 60 * 4) / 4:g} hours</div>'
+        f'<p>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</p>'
+        f'<p style="font-weight:400">{esc(p["blurb"])}</p>'
+        f'<a class="cta" href="{pb}?test={p["id"]}">Start the mock test</a><a class="cta alt" href="/{conf["dir"] + "/" if conf["dir"] else ""}papers/{p["slug"]}.html">Read it with answers</a></li>'
+        for p in mcq)
+    info = MOCK_INFO.get(conf['id'], '')
+    te = {'te': f'{conf.get("te_name") or seo} ఉచిత మాక్ టెస్ట్ — అసలు పాత ప్రశ్నాపత్రంతో, టైమర్‌తో, తెలుగు & ఇంగ్లీష్‌లో. పరీక్ష తర్వాత స్కోర్, సమాధానాలు, వివరణలు.',
+          'hi': f'{seo} निःशुल्क मॉक टेस्ट — असली पिछले प्रश्न पत्र से, टाइमर के साथ, हिंदी और अंग्रेज़ी में। टेस्ट के बाद स्कोर, उत्तर और व्याख्या।'}[l2['code']]
+    body = (f'<p lang="{l2["code"]}" style="margin:0 0 6px">{esc(te)}</p>'
+            + (f'<p class="note">{esc(info)}</p>' if info else '')
+            + '<h2>Choose a paper</h2><ol class="qs">' + rows + '</ol>'
+            + '<h2>How the mock test works</h2><ul>'
+            f'<li>Every question is from the official {esc(conf["board"])} question paper, in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>'
+            '<li>The timer gives you one minute per question. You can move between questions and change answers until you submit.</li>'
+            '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question. Wrong answers go to your Mistakes notebook for revision.</li>'
+            '<li>It is free. The first time, you register once (name, phone, district); after that every test opens straight away.</li></ul>'
+            + f'<p><a class="cta alt" href="{pb}practice/">Make a shorter topic-wise test</a><a class="cta alt" href="{pb}papers/">All {esc(seo)} previous papers</a></p>')
+    lede = esc(f'Take a real {seo} previous paper as a full mock test with a timer, free, then see your score and an explanation for every answer.')
+    return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} mock test: free, with real previous papers', lede, body,
+                            [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Mock test', can)], conf)
 
 
 def build_static(conf, papers, subjects, questions, subj):
