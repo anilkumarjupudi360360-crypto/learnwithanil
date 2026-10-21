@@ -184,6 +184,13 @@ async def main():
         for u in _re.findall(r'<loc>https?://[^/]+/([^<]*\.pdf)</loc>', open(os.path.join(SITE, 'sitemap.xml')).read()):
             f = os.path.join(SITE, u)
             if not os.path.exists(f) or open(f, 'rb').read(4) != b'%PDF': errors.append(f'missing PDF {u} (run tools/pdfs.py)')
+        # board landing pages: in the sitemap, and every link on them leads to a real file
+        sm = open(os.path.join(SITE, 'sitemap.xml')).read()
+        for land in ('appsc-pyqs.html', 'ts-police-pyqs.html'):
+            if f'/{land}</loc>' not in sm: errors.append(f'{land} not in sitemap')
+            for h in _re.findall(r'href="([^"#:]+)"', open(os.path.join(SITE, land), encoding='utf-8').read()):
+                f = os.path.join(SITE, h.lstrip('/'))
+                if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{land}: broken link {h}')
         r = await pg.goto(URL + 'no-such-page/'); await pg.wait_for_timeout(200)
         if r.status != 404 or 'does not exist' not in await pg.inner_text('body'): errors.append('404 page missing')
         await pg.close()
