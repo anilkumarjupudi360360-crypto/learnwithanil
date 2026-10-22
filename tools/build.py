@@ -710,6 +710,12 @@ def paper_alt(conf, p):
     return ''
 
 
+def alt_shown(alt, title):
+    """The alternative name, unless the paper's full title already says it (e.g. 'Final Written Exam, General Studies')."""
+    if not alt: return ''
+    return '' if all(x.strip().replace(' Exam', ' Examination') in title for x in alt.split(',')) else alt
+
+
 def paper_kw_l2(conf, p):
     """The same name in Telugu (APPSC) or Hindi (UPSC CAPF), as students type it."""
     n = paper_no(p)
@@ -1312,7 +1318,7 @@ def build_static(conf, papers, subjects, questions, subj):
                 f'<h2>Subjects in this paper</h2>{toc}<h2>All {len(qs)} questions</h2><ol class="qs">'
                 + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html') for q in qs) + '</ol>')
         held = f'{p["notif"]}, held on {p["held"]}' if conf['board'] == 'APPSC' else f'Held on {p["held"]} ({p["notif"].replace(" · ", ", ")})'
-        lede = esc(f'{p["title"]}{f" ({alt})" if alt and alt not in p["title"] else ""}. {p["blurb"]} {held}. {fmt}, plus a short explanation for every question. '
+        lede = esc(f'{p["title"]}{f" ({alt_shown(alt, p['title'])})" if alt_shown(alt, p['title']) else ""}. {p["blurb"]} {held}. {fmt}, plus a short explanation for every question. '
                    f'Each question is shown in English and {conf["l2"]["name"]}, as printed in the booklet.')
         pages[rel] = static_page(1, title, desc, can, f'{kw} question paper with answers', lede, body,
                                  home_crumbs + [(p['title'], can)], conf)
