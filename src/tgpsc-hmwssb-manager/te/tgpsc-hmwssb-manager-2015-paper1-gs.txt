@@ -840,111 +840,6 @@ Q 120
 (3) రాయల్ నార్వేజియన్ అకాడమీ ఆఫ్ సైన్సెస్
 (4) రాయల్ సొసైటీ ఆఫ్ న్యూసౌత్ వేల్స్
 
-Q 121
-My mother is ______ English teacher at a University.
-(1) an
-(2) the
-(3) a
-(4) are
-
-Q 122
-Every day before sleeping, I turn off ______ lights in my room.
-(1) an
-(2) the
-(3) a
-(4) are
-
-Q 123
-Moving to a foreign country is not ______ easy thing to do. You have to complete many formalities before that.
-(1) an
-(2) the
-(3) a
-(4) are
-
-Q 124
-Though the ______ is relevant, we need to consider all possible aspects.
-(1) information
-(2) inform
-(3) informations
-(4) informing
-
-Q 125
-Nowadays, a large number of ______ are getting stressed out easily.
-(1) Person
-(2) Peoples
-(3) People
-(4) Personing
-
-Q 126
-We do not have a ______ of time, so let's discuss this quickly.
-(1) lot
-(2) much
-(3) enough
-(4) few
-
-Q 127
-You must ______ Golconda. It is an interesting historical monument.
-(1) visit
-(2) be visiting
-(3) is visiting
-(4) visited
-
-Q 128
-Raghav is not ______ the meeting today because he has a medical emergency at home.
-(1) attend
-(2) attended
-(3) is attending
-(4) attending
-
-Q 129
-You must visit the handicrafts shop at the end of this road. It ______ an excellent variety of gift items.
-(1) had
-(2) has
-(3) was
-(4) have
-
-Q 130
-I ______ think the team will win the game tonight.
-(1) don't
-(2) doesn't
-(3) are
-(4) am
-
-Q 131
-Gymnastics ______ a very difficult sport.
-(1) am
-(2) is
-(3) were
-(4) are
-
-Q 132
-Eighty days ______ not enough to complete this project.
-(1) are
-(2) is
-(3) were
-(4) am
-
-Q 133
-We must talk ______ what we can do as a community to reduce pollution in our locality.
-(1) at
-(2) about
-(3) in
-(4) for
-
-Q 134
-To do this job, you don't have to be particularly skilled ______ anything.
-(1) for
-(2) in
-(3) at
-(4) an
-
-Q 135
-Most of the companies prefer to remain in touch with their clients ______ email.
-(1) by
-(2) in
-(3) to
-(4) for
-
 Q 136
 సూచనలు: ఈ ప్రశ్నలో ఒక ప్రకటన (Statement) మరియు రెండు 'భావించిన అంశాలు' (Assumptions) ఇవ్వబడ్డాయి. ఒక ప్రకటన చేయడానికి ఉపయోగపడుతూ నిజాలుగా భావించిన అంశాలనే 'భావించిన అంశాలుగా' పేర్కొనవచ్చు. 'భావించిన అంశాల' ఆధారంగానే ప్రకటన చేయడం జరుగుతుంది. ఇచ్చిన ప్రకటన మరియు 'భావించిన అంశాలను' పరిశీలించి ప్రకటన చేయడానికి ఏ అంశం లేదా అంశాలు భావించబడ్డాయో గుర్తించండి.
 ప్రకటన: బాహ్యవలయ రహదారి ప్రారంభం నుంచి అనేక ప్రమాదాలకు నెలవయ్యింది - విలేకరుల సమావేశంలో నగర పోలీసు కమిషనర్.
@@ -1024,8 +919,7 @@ Q 144
 (4) BEJMZBZD
 
 Q 145
-ఈ కింది సిరీస్‌లో '?' స్థానంలో ఏ సంఖ్య వస్తుంది?
-1, 4, 27, 4, 25, 216, 7, ?
+ఈ కింది సిరీస్‌లో '?' స్థానంలో ఏ సంఖ్య వస్తుంది? 1, 4, 27, 4, 25, 216, 7, ?
 (1) 49
 (2) 343
 (3) 512
