@@ -773,6 +773,25 @@ async function payReturn(params){
   return true;
 }
 
+/* Mission Khaki and other mock packs: the questions are served by the payments script only to a phone with a mock pass */
+const PART_NAME = {ari:"Arithmetic", rea:"Reasoning & Mental Ability", gs:"General Studies"};
+async function startMock(id, part){
+  if(!PAYC || !PAYC.mock) return;
+  if(!ST.name){ UI.pendingMock = {id, part}; go("join"); return; }
+  if(!PAYC.on || !PAYC.api){ toast(PAYC.mock.name + " opens when online payments start."); openPay("mock"); return; }
+  toast("Loading the mock…");
+  try{
+    const r = await payCall({action:"mock", exam:PAYC.exam, id, phone:ST.phone, email:ST.email||"", device:DEVICE});
+    if(!r || !r.ok){ if(r && r.need==="mock") openPay("mock"); else toast((r && r.error) || "Could not load the mock. Please try again."); return; }
+    const no = id.split("-").pop();
+    PMAP[id] = PMAP[id] || {id, short: PAYC.mock.name + " Mock " + no, title: PAYC.mock.name + " · Mock " + no, fmt:"mcq", paid:true, count:r.questions.length};
+    r.questions.forEach(q=>{ QMAP[q.id] = q; });
+    let qs = r.questions;
+    if(part==="ari" || part==="rea") qs = qs.filter(q=>q.s===part); else if(part==="gs") qs = qs.filter(q=>q.s!=="ari" && q.s!=="rea");
+    startQuiz(qs.map(q=>q.id), PAYC.mock.name + " · Mock " + id.split("-").pop() + (PART_NAME[part]? " · " + PART_NAME[part] + " sectional" : ""), "test", "mock");
+  }catch(_){ toast("No connection. Please try again."); }
+}
+
 let QZ = null, LAST = null, timer = null, bankLimit = 20;
 let UI = {bankQ:"", bankPaper:"all", bankSubj:"all", bankTopic:"all", mFilter:"all", rFilter:"all", smartSubj:"all", smartCount:10, confirmSubmit:false};
 
@@ -1549,7 +1568,7 @@ const ROOTUP = DATA.base ? "../" : "";
 const SITE_HOST = (DATA.site||"https://learnwithanil.in").replace(/^https?:\/\//,"");
 function shareWA(text){ window.open("https://wa.me/?text="+encodeURIComponent(text), "_blank", "noopener"); }
 function qURL(id, base, pb){ return DATA.qpages ? `${DATA.site}${pb==null? PB : pb}q/${id}.html` : `${DATA.site}/${base==null? (DATA.base||"") : base}#q/${id}`; }
-function chalBtn(q){ return `<button class="iconbtn wa" type="button" data-act="qchal" data-id="${q.id}" title="Send this question to a friend on WhatsApp">${WA_ICON}<span>Challenge a friend</span></button>`; }
+function chalBtn(q){ if(PMAP[q.p] && PMAP[q.p].paid) return ""; return `<button class="iconbtn wa" type="button" data-act="qchal" data-id="${q.id}" title="Send this question to a friend on WhatsApp">${WA_ICON}<span>Challenge a friend</span></button>`; }
 function excerpt(t, n){ t = String(t).replace(/\s+/g," ").trim(); return t.length>n ? t.slice(0,n-1).replace(/\s\S*$/,"")+"…" : t; }
 function challengeText(text, exam, paper, n, url, opts){
   const o = opts && opts.length ? "\n\n" + opts.map((x,i)=>`${LET[i]}) ${excerpt(x, 90)}`).join("\n") : "";
@@ -1784,6 +1803,7 @@ document.addEventListener("submit", e=>{
   if(isNew) track("sign_up", {method: "form", exam: DATA.examShort||"", district});
   if(p){ toast("Thanks, "+name.split(" ")[0]+". All the best!"); startQuiz(p.ids, p.title, p.mode, p.source); }
   else if(UI.pendingBuy){ const k = UI.pendingBuy; UI.pendingBuy = null; go("home"); payBuy(k); }
+  else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; go("home"); startMock(m.id, m.part); }
   else { toast("Your details are saved"); go("about"); }
 });
 window.addEventListener("online", flushRecords);
@@ -1839,6 +1859,8 @@ function start(data){
     if(sp.get("payment_request_id")){ syncLang(); render(); payReturn(sp); return; }   // back from Instamojo
     const bk = sp.get("buy");   // ?buy=pyq|mock: open the pass checkout
     if(bk==="pyq" || bk==="mock"){ history.replaceState(null, "", location.pathname); syncLang(); render(); openPay(bk); return; }
+    const mk = sp.get("mock");  // ?mock=<mock id>[&part=ari|rea|gs]: a Mission Khaki mock or one of its sections
+    if(mk && /^[a-z0-9-]+$/.test(mk)){ history.replaceState(null, "", location.pathname); syncLang(); render(); startMock(mk, sp.get("part")||""); return; }
     const sec = sp.get("sec");  // ?sec=<subject id>: a PYQ sectional test (up to 30 questions from one subject)
     if(sec && SUBJ[sec]){ history.replaceState(null, "", location.pathname); syncLang(); render();
       startQuiz(shuffle(QS.filter(q=>q.s===sec && isMCQ(q)).map(q=>q.id)).slice(0,30), SUBJ[sec].name+" · PYQ sectional", "test", "sectional"); return; }

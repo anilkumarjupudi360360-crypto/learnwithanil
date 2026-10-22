@@ -1334,6 +1334,8 @@ PAY = dict(
     api='',     # the Apps Script web-app URL (…/exec), set after it is deployed
     pyq_price=45,
 )
+if os.environ.get('PAY_TEST'):   # test builds only (test/pay_test.py): payments on, against a fake script address
+    PAY.update(on=True, api='https://pay.test/exec')
 BB_URL = ''   # the Bahubali Test Series page (APPSC Group 2 Mains), set by main() once its tests are sealed
 # when an exam's passes run out (the day after the exam); None = 12 months from purchase
 PASS_UNTIL = {'ts-police-si': ('2026-11-30', 'TS Police SI Prelims on 29 November 2026'),
@@ -1460,7 +1462,10 @@ def sectional_page(conf, papers, questions):
             + (f', and sectional mocks from the {mk["name"]} test series' if mk else '') + ', with answers and explanations.')
     rows = ''.join(f'<li class="q"><div class="meta">{cnt[s[0]]} previous questions · up to 30 per test · one minute per question</div><p>{esc(s[1])}</p>'
                    f'<a class="cta" href="{pb}?sec={s[0]}">Start {esc(s[1])} sectional</a></li>' for s in subs)
-    mock_part = (f'<h2>{esc(mk["name"])} sectional mocks</h2><p>Each {esc(mk["name"])} mock\'s sections — '
+    secrows = (''.join(f'<li class="q"><div class="meta">Opens {d}</div><p>Mock {i + 1} sections</p>'
+                       + ''.join(f'<a class="cta alt" href="{pb}?mock={mk["id"]}-{i + 1}&amp;part={k}">{v}</a>' for k, v in (('ari', 'Arithmetic'), ('rea', 'Reasoning'), ('gs', 'General Studies')))
+                       + '</li>' for i, d in enumerate(mk['schedule'])) if mk else '')
+    mock_part = (f'<h2>{esc(mk["name"])} sectional mocks</h2><ol class="qs">{secrows}</ol><p>Each {esc(mk["name"])} mock\'s sections — '
                  + ', '.join(esc(x) for x in mk['sections']) + ' — open as separate timed tests as the mocks are released '
                  f'(Mock 1 on {mk["schedule"][0]}, then every three days). They come with the {esc(mk["name"])} pack.</p>' + buy_box(conf, 'mock')
                  if mk else '<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack. Its price will be announced soon.</p>')
@@ -1503,9 +1508,12 @@ def mock_page(conf, papers, questions):
         for p in mcq)
     info = MOCK_INFO.get(conf['id'], '')
     if mk:
-        sched = ''.join(f'<tr><td>Mock {i + 1}</td><td>{d}</td><td>{mk["qn"]} questions</td></tr>' for i, d in enumerate(mk['schedule']))
+        mid = lambda i: f'{mk["id"]}-{i + 1}'
+        sched = ''.join(f'<tr><td>Mock {i + 1}</td><td>{d}</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">Start</a></td>'
+                        f'<td><a href="{pb}?mock={mid(i)}&amp;part=ari">Arithmetic</a> · <a href="{pb}?mock={mid(i)}&amp;part=rea">Reasoning</a> · '
+                        f'<a href="{pb}?mock={mid(i)}&amp;part=gs">General Studies</a></td></tr>' for i, d in enumerate(mk['schedule']))
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
-                + f'<table class="facts"><tr><th>Mock</th><th>Opens</th><th>Size</th></tr>{sched}</table>'
+                + f'<table class="facts"><tr><th>Mock</th><th>Opens</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
                 '<ul><li>Fresh questions written for this series in the TS SI Prelims pattern, not copied from coaching material: Arithmetic &amp; Reasoning (100) and General Studies (100), in English and Telugu.</li>'
                 '<li>Every question has an explanation in English and Telugu. Your score, accuracy and topic-wise analysis come after each mock.</li>'
                 '<li>Each mock\'s sections can also be taken on their own as sectional tests.</li></ul>')
