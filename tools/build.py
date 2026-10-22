@@ -513,6 +513,9 @@ def main():
     # an exam tile is live only if its questions were built
     for e in catalog['exams']:
         if e.get('live') and e['id'] not in counts: e.pop('live')
+    import bahubali   # paid Group-II Mains test series (encrypted; see tools/bahubali.py)
+    bb_live = bool(bahubali.load_series().get('tests'))
+    bb_url = '/' + bahubali.URLDIR + '/' if bb_live else ''
     photo_uri, photo_bytes = photo_data_uri()
     tpl = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
     head, body = tpl.split('<!--BODY-->')
@@ -540,7 +543,7 @@ def main():
         for q in questions:
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
         data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=enotes, wa=WHATSAPP,
-                    key=conf['key'], exam=conf['name'], examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
+                    key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
                     base=prefix, qotd=qotd_pool(loaded if is_root else [(conf, papers, questions)], 120 if is_root else 90),
                     exams=catalog['exams'] if is_root else [], cats=catalog['cats'] if is_root else [],
@@ -568,6 +571,7 @@ def main():
 
         news = [f'<a href="/{rel}">{esc(N["h1"])} →</a>' for rel, N in NOTIFS.items() if N['exam'] == conf['id']]
         if any(p['fmt'] == 'mcq' for p in papers): news.append(f'<a href="{conf["pb"]}mock-test.html">Free {esc(conf["seo"])} mock test with a timer →</a>')
+        if bb_url and conf['id'] == 'appsc-group-2': news.insert(0, f'<a href="{bb_url}"><b>New:</b> Bahubali Test Series – Group 2 Mains full-length tests (Paper 1 &amp; 2) →</a>')
         news_html = ' · '.join(news)
 
         def fill(s, photo, title, seo, desc=''):
@@ -582,7 +586,7 @@ def main():
                      .replace('{{HOME_PAPERS}}', home_papers).replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
-                     .replace('{{HOME_NOTES}}', home_notes(enotes)).replace('{{HUB}}', hub)
+                     .replace('{{HOME_NOTES}}', home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '')).replace('{{HUB}}', hub)
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}')
                      .replace('{{LIVE_SUMMARY}}', esc(live_summary))
                      .replace('{{HUB_CTAS}}', hub_ctas)
@@ -696,6 +700,7 @@ def main():
         rel, html_ = mock_page(c, ps, qs)
         open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(html_)
         mocks[rel] = None
+    if bb_live: mocks[bahubali.page(os.path.join(DIST, 'site'))] = None
     all_pages = {**notifs, **mocks, **all_pages}
 
     open(os.path.join(DIST, 'site', '404.html'), 'w', encoding='utf-8').write(not_found_page())
@@ -717,10 +722,20 @@ def main():
     print(f'  grand total {grand} questions, {len(all_pages)} static pages')
 
 
-def home_notes(notes):
-    if not notes: return ''
+def bahubali_promo(url):
+    return f'''<a class="card notes-promo bb-promo" href="{url}">
+      <div class="np-copy"><p class="eyebrow">New · APPSC Group-II Mains 2026</p><h2>Bahubali Test Series</h2>
+      <p>24 full-length mock tests for Paper I and Paper II (12 each): 150 questions per test, English and Telugu, ⅓ negative marking, explanations from official sources and PDFs. ₹250 for the whole series.</p>
+      <span class="btn btn-primary">See the tests</span></div>
+      <div class="bb-mark" aria-hidden="true"><b>150</b><span>Qs · 150 min</span></div>
+    </a>'''
+
+
+def home_notes(notes, bb_url=''):
+    if not notes and not bb_url: return ''
+    if not notes: return f'<section class="wrap section">{bahubali_promo(bb_url)}</section>'
     covers = ''.join(f'<img src="{esc(b["cover"])}" alt="" width="140" height="198" loading="lazy">' for b in notes)
-    return f'''<section class="wrap section">
+    return f'''<section class="wrap section">{bahubali_promo(bb_url) if bb_url else ''}
     <a class="card notes-promo" href="#notes">
       <div class="np-copy"><p class="eyebrow">New · Study material</p><h2>Study material 2026-27</h2>
       <p>{esc(" and ".join(dict.fromkeys(b.get("subject_label", b["subject"]) for b in notes)))} for APPSC Mains, with the latest 2026 data and APPSC's own previous questions inside. From ₹{min(b["price"] for b in notes)}.</p>

@@ -206,6 +206,19 @@ async def main():
             for h in _re.findall(r'href="([^"#:]+)"', open(os.path.join(SITE, land), encoding='utf-8').read()):
                 f = os.path.join(SITE, h.lstrip('/'))
                 if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{land}: broken link {h}')
+        # Bahubali Test Series (paid): the page is built once tests are sealed, and nothing is published unencrypted
+        bbdir = os.path.join(SITE, 'appsc-group-2', 'bahubali-test-series')
+        if os.path.isfile(os.path.join(ROOT, 'src', 'bahubali', 'series.json')):
+            if not os.path.isfile(os.path.join(bbdir, 'index.html')): errors.append('Bahubali page missing')
+            else:
+                await pg.goto(URL + 'appsc-group-2/bahubali-test-series/'); await pg.wait_for_timeout(300)
+                if await pg.locator('[data-test]').count() < 1: errors.append('Bahubali: no live test cards')
+                if await pg.locator('#unlockForm').count() != 1: errors.append('Bahubali: no unlock form')
+                if '/appsc-group-2/bahubali-test-series/</loc>' not in sm: errors.append('Bahubali page not in sitemap')
+                for d, bad in (('data', b'"q":'), ('pdf', None)):
+                    for f in os.listdir(os.path.join(bbdir, d)):
+                        raw = open(os.path.join(bbdir, d, f), 'rb').read()
+                        if (bad and bad in raw) or (d == 'pdf' and b'/Encrypt' not in raw): errors.append(f'Bahubali {d}/{f} is not encrypted')
         r = await pg.goto(URL + 'no-such-page/'); await pg.wait_for_timeout(200)
         if r.status != 404 or 'does not exist' not in await pg.inner_text('body'): errors.append('404 page missing')
         await pg.close()

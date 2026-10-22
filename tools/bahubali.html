@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<link rel="canonical" href="{{CANON}}">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Learn with Anil">
+<meta property="og:title" content="{{TITLE}}"><meta property="og:description" content="{{DESC}}">
+<meta property="og:url" content="{{CANON}}"><meta property="og:image" content="{{SITE}}/anil.jpg"><meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap">
+{{HEAD_EXTRA}}
+<style>
+:root{
+  --bg:#F3F6FB; --surface:#FFFFFF; --surface-2:#EAF0F9; --ink:#0D1830; --muted:#55627C; --line:#D6DFEC;
+  --accent:#1846C7; --accent-ink:#FFFFFF; --accent-soft:#E2EAFC; --accent-text:#1440B8;
+  --band:#0C2266; --band-ink:#EEF3FF; --band-muted:#AFC1EE; --band-line:rgba(255,255,255,.16);
+  --gold:#E8A317; --gold-soft:#FFF3D6; --gold-ink:#6B4500;
+  --good:#12804A; --good-soft:#DDF3E7; --bad:#C2352C; --bad-soft:#FBE3E0; --mark:#6D3FC6; --mark-soft:#EEE6FB; --none-soft:#EDF1F7;
+  --shadow:0 1px 2px rgba(13,24,48,.06),0 8px 22px rgba(13,24,48,.06);
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --f-te:"Noto Sans Telugu","Source Sans 3",sans-serif;
+  --r:12px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0A1020; --surface:#111A2E; --surface-2:#17223A; --ink:#E5ECF8; --muted:#9AA8C3; --line:#26334F;
+  --accent:#6F95FF; --accent-ink:#06102A; --accent-soft:#1A2A52; --accent-text:#9DB7FF;
+  --band:#0F1F4E; --band-ink:#EEF3FF; --band-muted:#A3B6E8; --band-line:rgba(255,255,255,.13);
+  --gold:#F2B840; --gold-soft:#3A2C12; --gold-ink:#FFE2A6;
+  --good:#41C080; --good-soft:#123426; --bad:#F2766D; --bad-soft:#3B1A1A; --mark:#B391F5; --mark-soft:#2A1F45; --none-soft:#16203A;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 22px rgba(0,0,0,.25); color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0A1020; --surface:#111A2E; --surface-2:#17223A; --ink:#E5ECF8; --muted:#9AA8C3; --line:#26334F;
+  --accent:#6F95FF; --accent-ink:#06102A; --accent-soft:#1A2A52; --accent-text:#9DB7FF;
+  --band:#0F1F4E; --band-ink:#EEF3FF; --band-muted:#A3B6E8; --band-line:rgba(255,255,255,.13);
+  --gold:#F2B840; --gold-soft:#3A2C12; --gold-ink:#FFE2A6;
+  --good:#41C080; --good-soft:#123426; --bad:#F2766D; --bad-soft:#3B1A1A; --mark:#B391F5; --mark-soft:#2A1F45; --none-soft:#16203A;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 22px rgba(0,0,0,.25); color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{margin:0;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--f-display);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+a{color:var(--accent-text)}
+button,input{font:inherit;color:inherit}
+[hidden]{display:none!important}
+[lang="te"]{font-family:var(--f-te);line-height:1.75}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:9px 18px;border-radius:10px;border:1.5px solid transparent;font-weight:700;text-decoration:none;cursor:pointer;background:none;line-height:1.2}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{filter:brightness(1.08)}
+.btn-gold{background:var(--gold);color:#2B1B00}
+.btn-gold:hover{filter:brightness(1.05)}
+.btn-secondary{border-color:var(--line);color:var(--accent-text);background:var(--surface)}
+.btn-secondary:hover{border-color:var(--accent)}
+.btn-quiet{color:var(--accent-text);padding-inline:10px}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.btn-sm{min-height:36px;padding:6px 12px;font-size:14.5px;border-radius:8px}
+
+/* top bar */
+.topbar{background:var(--surface);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:14px;min-height:60px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand-mark{width:34px;height:34px;border-radius:50%;border:2.5px solid var(--accent);display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:13px;color:var(--accent-text)}
+.brand b{font-family:var(--f-display);font-size:17px;font-weight:800}
+.topnav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+.topnav a{padding:6px 10px;border-radius:8px;text-decoration:none;font-weight:600;color:var(--muted);font-size:15px}
+.topnav a:hover{color:var(--ink);background:var(--surface-2)}
+
+/* hero */
+.hero{background:var(--band);color:var(--band-ink);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:2px solid var(--band-line);box-shadow:0 0 0 40px rgba(255,255,255,.03),0 0 0 90px rgba(255,255,255,.025)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:32px;padding-block:40px 44px;position:relative;z-index:1}
+@media (max-width:880px){.hero .wrap{grid-template-columns:minmax(0,1fr);padding-block:28px 32px}}
+.hero .eyebrow{color:var(--band-muted)}
+.hero h1{font-size:clamp(34px,5.6vw,58px);font-weight:800;margin:10px 0 6px;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .sub{font-size:19px;color:var(--band-ink);max-width:52ch}
+.hero .te{color:var(--band-muted);margin-top:6px;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font-family:var(--f-mono);font-size:12.5px;padding:5px 10px;border-radius:999px;border:1px solid var(--band-line);color:var(--band-ink);background:rgba(255,255,255,.06)}
+.buy{background:var(--surface);color:var(--ink);border-radius:16px;padding:22px;box-shadow:0 12px 40px rgba(0,0,0,.25);align-self:start}
+.buy .price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.buy .price b{font-family:var(--f-display);font-size:46px;font-weight:800;letter-spacing:-.02em}
+.buy .price span{color:var(--muted)}
+.buy ul{margin:12px 0 16px;padding:0;list-style:none;display:grid;gap:6px;font-size:15.5px}
+.buy li{display:flex;gap:8px;align-items:flex-start}
+.buy li::before{content:"";flex-shrink:0;width:16px;height:16px;margin-top:4px;border-radius:50%;background:var(--good-soft);border:4px solid var(--good)}
+.buy .btn-gold{width:100%;font-size:17px;min-height:50px}
+.unlock{margin-top:16px;padding-top:16px;border-top:1px dashed var(--line)}
+.unlock label{font-weight:700;font-size:15px;display:block;margin-bottom:6px}
+.unlock .row{display:flex;gap:8px}
+.unlock input{flex:1;min-width:0;min-height:44px;border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;background:var(--bg);font-family:var(--f-mono);letter-spacing:.06em;text-transform:uppercase}
+.unlock input:focus{border-color:var(--accent);outline:none}
+.msg{margin-top:8px;font-size:14.5px}
+.msg.ok{color:var(--good)} .msg.err{color:var(--bad)}
+.unlocked-box{display:flex;gap:10px;align-items:center;background:var(--good-soft);color:var(--good);border-radius:10px;padding:10px 12px;font-weight:700}
+
+/* sections */
+section.blk{padding-block:34px 6px}
+section.blk>.wrap>h2{font-size:clamp(24px,3vw,30px);font-weight:800}
+section.blk .lead{color:var(--muted);margin-top:6px;max-width:70ch}
+.paper-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:26px}
+.paper-head h3{font-size:22px;font-weight:800}
+.paper-head p{color:var(--muted);font-size:15px}
+.tests{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
+@media (max-width:900px){.tests{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.tests{grid-template-columns:1fr}}
+.test{padding:16px;display:flex;flex-direction:column;gap:10px;position:relative}
+.test .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.test .no{font-family:var(--f-display);font-weight:800;font-size:19px}
+.badge{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.04em;padding:3px 8px;border-radius:999px;text-transform:uppercase;font-weight:600}
+.badge.live{background:var(--good-soft);color:var(--good)}
+.badge.soon{background:var(--none-soft);color:var(--muted)}
+.badge.done{background:var(--accent-soft);color:var(--accent-text)}
+.test .meta{font-size:14.5px;color:var(--muted)}
+.test .secs{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:13.5px}
+.test .secs span{background:var(--surface-2);border-radius:8px;padding:5px 8px;line-height:1.3}
+.test .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.test .acts .btn{flex:1}
+.test .pdfs{display:flex;gap:12px;flex-wrap:wrap;font-size:14px}
+.test.soon{background:transparent;box-shadow:none;border-style:dashed}
+.test.soon .no{color:var(--muted)}
+.score-line{font-size:14.5px}
+.score-line b{font-family:var(--f-mono)}
+.feat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+@media (max-width:860px){.feat{grid-template-columns:1fr}}
+.feat>div{padding:16px 18px}
+.feat b{font-family:var(--f-display);font-size:17px;display:block;margin-bottom:4px}
+.feat p{color:var(--muted);font-size:15px}
+table.pat{border-collapse:collapse;width:100%;margin-top:14px;background:var(--surface);border-radius:var(--r);overflow:hidden;font-size:15.5px}
+table.pat th,table.pat td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+table.pat th{background:var(--accent-soft);font-weight:700}
+table.pat td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+.steps>div{display:flex;gap:12px;padding:14px 16px}
+.steps .n{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--gold-soft);color:var(--gold-ink);display:grid;place-items:center;font-family:var(--f-mono);font-weight:600}
+.steps b{display:block;font-family:var(--f-display)}
+.steps p{color:var(--muted);font-size:15px}
+.sample{padding:16px 18px;margin-top:12px}
+.sample .qn{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.sample p.q{white-space:pre-line;font-weight:600;margin:6px 0}
+.sample ol{margin:6px 0 8px;padding-left:0;list-style:none;display:grid;gap:3px}
+.sample details summary{cursor:pointer;color:var(--accent-text);font-weight:700}
+.sample .why{color:var(--muted);margin-top:6px;font-size:15px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-top:8px}
+.faq summary{cursor:pointer;font-weight:700}
+.faq details p{margin-top:8px;color:var(--muted)}
+footer{margin-top:44px;border-top:1px solid var(--line);color:var(--muted);font-size:14.5px}
+footer .wrap{padding-block:18px}
+
+/* overlay screens (exam / result / dialogs) */
+.screen{position:fixed;inset:0;z-index:50;background:var(--bg);overflow:auto;-webkit-overflow-scrolling:touch}
+body.locked{overflow:hidden}
+.dlg-back{position:fixed;inset:0;z-index:80;background:rgba(6,12,30,.55);display:grid;place-items:center;padding:16px}
+.dlg{background:var(--surface);color:var(--ink);border-radius:16px;max-width:560px;width:100%;max-height:calc(100dvh - 32px);overflow:auto;padding:22px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.dlg h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.dlg .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.dlg ul{padding-left:20px;margin:10px 0}
+.dlg li{margin:4px 0}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+@media (max-width:520px){.form-grid{grid-template-columns:1fr}}
+.form-grid label,.dlg label.full{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:14.5px}
+.form-grid input{min-height:42px;border:1.5px solid var(--line);border-radius:9px;padding:6px 10px;background:var(--bg)}
+.consent{display:flex;gap:8px;align-items:flex-start;margin-top:10px;font-size:14.5px}
+.err{color:var(--bad);font-size:14.5px;margin-top:8px}
+
+/* exam */
+.ex{display:flex;flex-direction:column;min-height:100dvh}
+.ex-bar{position:sticky;top:0;z-index:5;background:var(--band);color:var(--band-ink)}
+.ex-bar .in{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px max(12px,env(safe-area-inset-left,0px));max-width:1320px;margin:0 auto}
+.ex-bar .t{font-family:var(--f-display);font-weight:800;font-size:16px;margin-right:auto;line-height:1.2}
+.ex-bar .t small{display:block;font-family:var(--f-mono);font-weight:500;font-size:11.5px;color:var(--band-muted);letter-spacing:.05em;text-transform:uppercase}
+.timer{font-family:var(--f-mono);font-weight:600;font-size:18px;background:rgba(255,255,255,.1);padding:6px 10px;border-radius:8px;min-width:96px;text-align:center}
+.timer.low{background:var(--bad);color:#fff}
+.seg{display:inline-flex;border:1px solid var(--band-line);border-radius:9px;overflow:hidden}
+.seg button{background:none;border:0;color:var(--band-ink);padding:6px 10px;cursor:pointer;font-weight:700;font-size:14px;min-height:36px}
+.seg button[aria-pressed="true"]{background:var(--band-ink);color:var(--band)}
+.ex-bar .btn{min-height:38px;padding:6px 14px}
+.ex-bar .btn-sub{background:var(--gold);color:#2B1B00}
+.ex-bar .btn-pal{border-color:var(--band-line);color:var(--band-ink)}
+.ex-body{flex:1;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;max-width:1320px;width:100%;margin:0 auto;padding:16px max(12px,env(safe-area-inset-left,0px)) 90px}
+@media (min-width:1001px){.ex-bar .btn-pal{display:none}}
+@media (max-width:1000px){.ex-body{grid-template-columns:1fr}}
+.qpane{padding:18px 20px;align-self:start}
+.qhead{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:14px}
+.qhead b{font-family:var(--f-display);font-size:19px}
+.qhead span{font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+.qtext{white-space:pre-line;font-size:17px;font-weight:600;overflow-wrap:anywhere}
+.qtext[lang="te"]{font-size:17px}
+.opts{display:grid;gap:8px;margin-top:16px}
+.opt{display:flex;gap:12px;align-items:flex-start;padding:11px 14px;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;background:var(--surface);overflow-wrap:anywhere}
+.opt:hover{border-color:var(--accent)}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt .bub{flex-shrink:0;width:28px;height:28px;border-radius:50%;border:2px solid var(--muted);display:grid;place-items:center;font-family:var(--f-mono);font-weight:600;font-size:13px;color:var(--muted)}
+.opt.sel{border-color:var(--accent);background:var(--accent-soft)}
+.opt.sel .bub{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.opt input:focus-visible + .bub{outline:2px solid var(--accent);outline-offset:2px}
+.ex-acts{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);padding:10px max(12px,env(safe-area-inset-left,0px)) calc(10px + env(safe-area-inset-bottom,0px))}
+.ex-acts .in{max-width:1320px;margin:0 auto;display:flex;gap:8px;flex-wrap:wrap}
+.ex-acts .sp{flex:1}
+@media (max-width:640px){.ex-acts .btn{flex:1 1 40%;padding-inline:8px;font-size:14.5px}.ex-acts .sp{display:none}}
+.pal{padding:14px;align-self:start;position:sticky;top:72px;max-height:calc(100dvh - 170px);overflow:auto}
+@media (max-width:1000px){.pal{position:fixed;inset:auto 0 0 0;top:auto;max-height:78dvh;z-index:60;border-radius:16px 16px 0 0;transform:translateY(105%);transition:transform .2s ease;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}.pal.open{transform:none}}
+.pal h3{font-size:15px;margin:12px 0 6px;font-weight:800}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:13px;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:6px}
+.dot{width:16px;height:16px;border-radius:5px;flex-shrink:0;border:1.5px solid var(--line);background:var(--surface)}
+.grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:5px}
+.pb{aspect-ratio:1;border-radius:7px;border:1.5px solid var(--line);background:var(--surface);font-family:var(--f-mono);font-size:12px;font-weight:600;cursor:pointer;display:grid;place-items:center;padding:0;position:relative;color:var(--ink)}
+.pb.v,.dot.v{background:var(--bad-soft);border-color:var(--bad)}
+.pb.a,.dot.a{background:var(--good);border-color:var(--good);color:#fff}
+.pb.m,.dot.m{background:var(--mark);border-color:var(--mark);color:#fff}
+.pb.am,.dot.am{background:var(--mark);border-color:var(--mark);color:#fff;box-shadow:inset 0 -5px 0 var(--good)}
+.pb.cur{outline:2.5px solid var(--accent);outline-offset:1px}
+.pal .cnt{display:flex;gap:10px;flex-wrap:wrap;font-size:13.5px;margin-top:8px}
+.pal .close{display:none}
+@media (max-width:1000px){.pal .close{display:inline-flex}}
+.shade{position:fixed;inset:0;background:rgba(6,12,30,.45);z-index:55}
+
+/* result */
+.res .hd{background:var(--band);color:var(--band-ink)}
+.res .hd .wrap{padding-block:22px 26px}
+.res .hd .eyebrow{color:var(--band-muted)}
+.res .hd h1{font-size:clamp(26px,4vw,38px);font-weight:800;margin:6px 0 14px}
+.tiles{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+@media (max-width:900px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.tile{background:rgba(255,255,255,.07);border:1px solid var(--band-line);border-radius:12px;padding:10px 12px}
+.tile b{display:block;font-family:var(--f-display);font-size:26px;font-weight:800;line-height:1.1}
+.tile span{font-size:13px;color:var(--band-muted)}
+.tile.big{background:var(--gold);color:#2B1B00;border-color:transparent}
+.tile.big span{color:#5A3A00}
+.res-acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.res-acts .btn-secondary{background:transparent;border-color:var(--band-line);color:var(--band-ink)}
+.tbl{border-collapse:collapse;width:100%;background:var(--surface);font-size:15px;margin-top:10px}
+.tbl th,.tbl td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+.tbl th{background:var(--accent-soft)}
+.tbl td.n{text-align:right;font-family:var(--f-mono);font-size:14px;white-space:nowrap}
+@media (max-width:560px){.tbl th,.tbl td{padding:6px 6px;font-size:13.5px}.tbl td.n{font-size:12.5px}}
+.tbl .bar{height:6px;border-radius:3px;background:var(--none-soft);margin-top:4px;overflow:hidden}
+.tbl .bar i{display:block;height:100%;background:var(--good)}
+.scroll-x{overflow-x:auto}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0 10px;align-items:center}
+.filters button{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-weight:600;cursor:pointer;font-size:14.5px}
+.filters button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.rv{padding:16px 18px;margin-bottom:10px}
+.rv .h{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+.rv .tag{font-weight:600}
+.rv .tag.c{color:var(--good)} .rv .tag.w{color:var(--bad)} .rv .tag.k{color:var(--muted)}
+.rv .q{white-space:pre-line;font-weight:600;margin:8px 0;overflow-wrap:anywhere}
+.rv ol{list-style:none;padding:0;margin:0;display:grid;gap:4px}
+.rv li{padding:6px 10px;border-radius:8px;border:1px solid var(--line);overflow-wrap:anywhere}
+.rv li.ok{background:var(--good-soft);border-color:var(--good)}
+.rv li.no{background:var(--bad-soft);border-color:var(--bad)}
+.rv .why{margin-top:10px;color:var(--ink);background:var(--surface-2);border-radius:10px;padding:10px 12px;font-size:15.5px;overflow-wrap:anywhere}
+.rv .why b{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:2px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;z-index:99;font-weight:600;max-width:90vw}
+.spin{display:inline-block;width:18px;height:18px;border:2.5px solid currentColor;border-right-color:transparent;border-radius:50%;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="/" aria-label="Learn with Anil, all exams"><span class="brand-mark" aria-hidden="true">LA</span><b>Learn with Anil</b></a>
+  <nav class="topnav" aria-label="Main">
+    <a href="/appsc-group-2/">APPSC Group-II</a>
+    <a href="/appsc-group-2/papers/">Previous Papers</a>
+    <a href="/appsc-group-2/mock-test.html">Free Mock Test</a>
+    <a href="/appsc-group-2/notes/">Study Material</a>
+  </nav>
+</div></header>
+
+<main id="landing">
+<section class="hero"><div class="wrap">
+  <div>
+    <p class="eyebrow">APPSC Group-II Mains 2026 · Paper I &amp; Paper II · Notification 37/2026</p>
+    <h1><em>Bahubali</em> Test Series</h1>
+    <p class="sub">{{HERO_SUB}}</p>
+    <p class="te" lang="te">APPSC గ్రూప్-2 మెయిన్స్ పూర్తి నిడివి టెస్టులు — ప్రతి టెస్టులో 150 ప్రశ్నలు, ఇంగ్లీష్ మరియు తెలుగులో, వివరణలతో.</p>
+    <div class="chips">
+      <span class="chip">150 questions per test</span><span class="chip">150 minutes</span><span class="chip">⅓ negative marking</span><span class="chip">English + తెలుగు</span><span class="chip">Explanations with official sources</span>
+    </div>
+  </div>
+  <div class="buy" id="buy">
+    <p class="eyebrow muted">Whole series · Paper I + Paper II</p>
+    <div class="price"><b>₹{{PRICE}}</b><span>for all {{TOTAL_TESTS}} tests</span></div>
+    <ul>
+      <li>{{NLIVE}} tests live now ({{LIVE_DESC}}); the rest unlock free as they are added</li>
+      <li>Online exam with timer, OMR-style palette and instant score</li>
+      <li>Question booklet and answer PDFs for every live test</li>
+    </ul>
+    {{BUY_BUTTON}}
+    <div class="unlock" id="unlockBox">
+      <label for="code">Already bought? Enter your access code</label>
+      <form class="row" id="unlockForm" autocomplete="off"><input id="code" name="code" placeholder="BAHU-XXXX-XXXX" maxlength="24" spellcheck="false" autocapitalize="characters"><button class="btn btn-primary" type="submit">Unlock</button></form>
+      <p class="msg" id="unlockMsg" role="status"></p>
+    </div>
+    <div class="unlock" id="unlockedBox" hidden>
+      <div class="unlocked-box">✓ Series unlocked on this device</div>
+      <p class="msg muted">Your code is saved in this browser. To use another phone or computer, enter the same code there. <button class="btn btn-quiet btn-sm" type="button" data-act="forget">Remove code</button></p>
+    </div>
+  </div>
+</div></section>
+
+<section class="blk" id="tests"><div class="wrap">
+  <h2>Test schedule</h2>
+  <p class="lead">Each test is a full Mains paper: 150 questions, 150 marks, 150 minutes, exactly as APPSC sets it. Write it online in one sitting, then see your score, section-wise and topic-wise analysis, and every answer explained.</p>
+  {{PAPERS_HTML}}
+</div></section>
+
+<section class="blk"><div class="wrap">
+  <h2>What you get</h2>
+  <div class="feat">
+    <div class="card"><b>Exam-standard questions</b><p>Original questions at UPSC Prelims standard, written to APPSC's Group-II Mains syllabus and its question styles: statements, assertion–reason, match the following, chronology.</p></div>
+    <div class="card"><b>English and తెలుగు</b><p>Every question, option and explanation in both languages. Switch language any time during the test, as in the real booklet.</p></div>
+    <div class="card"><b>Explained from official sources</b><p>A 100–150-word explanation for each answer, citing government sources such as the Constitution, Socio-Economic Survey, Budget, ISRO and PIB.</p></div>
+    <div class="card"><b>Real exam conditions</b><p>150-minute timer, question palette, mark for review, ⅓ negative marking and auto-submit when time runs out.</p></div>
+    <div class="card"><b>Know your weak units</b><p>Score by section and by syllabus unit, so you know exactly which units need more revision.</p></div>
+    <div class="card"><b>Current affairs built in</b><p>Each test carries 2025–26 developments: Budget 2026-27, Socio-Economic Survey 2025-26, recent judgments, missions and schemes.</p></div>
+  </div>
+</div></section>
+
+<section class="blk"><div class="wrap">
+  <h2>APPSC Group-II Mains pattern</h2>
+  <div class="scroll-x"><table class="pat">
+    <tr><th>Paper</th><th>Section</th><th>Subject</th><th>Questions</th></tr>
+    <tr><td rowspan="2">Paper I<br><span class="muted">150 marks · 150 min</span></td><td>A</td><td>Social and Cultural History of Andhra Pradesh</td><td class="n">75</td></tr>
+    <tr><td>B</td><td>General Overview of the Indian Constitution</td><td class="n">75</td></tr>
+    <tr><td rowspan="2">Paper II<br><span class="muted">150 marks · 150 min</span></td><td>A</td><td>Indian and Andhra Pradesh Economy</td><td class="n">75</td></tr>
+    <tr><td>B</td><td>Science and Technology</td><td class="n">75</td></tr>
+  </table></div>
+  <p class="lead" style="margin-top:10px">Objective questions, one mark each, one-third of a mark deducted for each wrong answer. Bahubali tests follow the same pattern.</p>
+</div></section>
+
+{{SAMPLE_HTML}}
+
+<section class="blk"><div class="wrap">
+  <h2>How to buy</h2>
+  <div class="steps">
+    <div class="card"><span class="n">1</span><div><b>Pay ₹{{PRICE}} once</b><p>Tap “Buy now”. Secure payment by UPI, card or net banking on Instamojo.</p></div></div>
+    <div class="card"><span class="n">2</span><div><b>Get your access code</b><p>Your access card (PDF) downloads right after payment and is also emailed to you. It has your code.</p></div></div>
+    <div class="card"><span class="n">3</span><div><b>Unlock and write</b><p>Enter the code on this page. All live tests open; new tests open automatically when they are added.</p></div></div>
+  </div>
+</div></section>
+
+<section class="blk faq"><div class="wrap">
+  <h2>Questions</h2>
+  {{FAQ_HTML}}
+</div></section>
+</main>
+
+<footer><div class="wrap">Bahubali Test Series by Jupudi Anil Kumar, Learn with Anil · <a href="https://wa.me/{{WA}}">WhatsApp {{PHONE}}</a> · <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>. Original questions written for practice; not affiliated with APPSC. Visits are counted with Google Analytics. · <a href="/appsc-group-2/">Free APPSC Group 2 PYQs</a> · <a href="/">All exams</a></div></footer>
+
+<div id="screen" class="screen" hidden></div>
+<div id="dlg" hidden></div>
+<div id="toast" class="toast" hidden></div>
+
+<script type="application/json" id="bb-conf">{{CONF}}</script>
+<script>
+(function(){
+"use strict";
+const CONF = JSON.parse(document.getElementById("bb-conf").textContent);
+const CKEY = "lwa-bahubali-code", AKEY = "lwa-bahubali-v1", SKEY = "lwa-appsc-g2-student-v1";
+const FORM = {
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSfccfNp38-7VL9FHI5RYpRteSEBR3RgAjEYNG9LikjZ1IyIuQ/formResponse",
+  f: {name:"entry.43561638", phone:"entry.2098019624", email:"entry.2119736878", district:"entry.1148431591",
+      help:"entry.1999912595", test:"entry.1498681403", score:"entry.1095919350", acc:"entry.859095496", time:"entry.231757640"}
+};
+const $ = (s, r=document)=>r.querySelector(s);
+const esc = s=>String(s==null?"":s).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const linkify = s=>esc(s).replace(/https?:\/\/[^\s,;)]+[^\s,;).]/g, u=>`<a href="${u}" target="_blank" rel="noopener">${u.replace(/^https?:\/\//,"").slice(0,60)}${u.length>68?"…":""}</a>`);
+function readLS(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function writeLS(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function getStr(k){ try{ return localStorage.getItem(k) || ""; }catch(e){ return ""; } }
+function setStr(k, v){ try{ if(v) localStorage.setItem(k, v); else localStorage.removeItem(k); }catch(e){} }
+function track(name, params){ try{ if(typeof gtag==="function") gtag("event", name, params||{}); }catch(_){} }
+function toast(m){ const t=$("#toast"); t.textContent=m; t.hidden=false; clearTimeout(toast._t); toast._t=setTimeout(()=>{t.hidden=true;},2600); }
+const fmtT = s=>{ s=Math.max(0,Math.round(s)); const h=Math.floor(s/3600), m=Math.floor((s%3600)/60), r=s%60; return (h? h+":"+String(m).padStart(2,"0") : m)+":"+String(r).padStart(2,"0"); };
+const f2 = x=>(Math.round(x*100)/100).toFixed(2).replace(/\.00$/,"");
+
+let A = readLS(AKEY, {t:{}}); if(!A.t) A.t = {};
+const saveA = ()=>writeLS(AKEY, A);
+let ST = readLS(SKEY, {pending:[]}); if(!Array.isArray(ST.pending)) ST.pending = [];
+const saveST = ()=>writeLS(SKEY, ST);
+let LANG = getStr("lwa-lang")==="te" ? "te" : "en";
+let KEY = null;
+const TESTS = {}; CONF.tests.forEach(t=>{ TESTS[t.id] = t; });
+const DATA = {};
+
+/* ---------- records to Anil's sheet ---------- */
+function postRecord(rec){
+  const body = new URLSearchParams();
+  Object.keys(FORM.f).forEach(k=>{ if(rec[k]!=null && rec[k]!=="") body.append(FORM.f[k], String(rec[k])); });
+  return fetch(FORM.url, {method:"POST", mode:"no-cors", body, keepalive:true});
+}
+function sendRecord(extra){
+  const rec = Object.assign({name:ST.name, phone:ST.phone, email:ST.email, district:ST.district}, extra);
+  try{ postRecord(rec).catch(()=>{ ST.pending.push(rec); ST.pending = ST.pending.slice(-20); saveST(); }); }
+  catch(e){ ST.pending.push(rec); saveST(); }
+}
+
+/* ---------- unlocking (AES-GCM, key from the access code with PBKDF2) ---------- */
+const b64 = s=>Uint8Array.from(atob(s), c=>c.charCodeAt(0));
+const norm = s=>String(s).toUpperCase().replace(/[^A-Z0-9]/g,"");
+async function deriveKey(code){
+  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(norm(code)), "PBKDF2", false, ["deriveKey"]);
+  return crypto.subtle.deriveKey({name:"PBKDF2", salt:b64(CONF.kdf.salt), iterations:CONF.kdf.iter, hash:"SHA-256"}, base, {name:"AES-GCM", length:256}, false, ["decrypt"]);
+}
+async function openBox(key, bytes){
+  const pt = await crypto.subtle.decrypt({name:"AES-GCM", iv:bytes.slice(0,12)}, key, bytes.slice(12));
+  return new TextDecoder().decode(pt);
+}
+async function tryCode(code){
+  const key = await deriveKey(code);
+  const txt = await openBox(key, b64(CONF.check));
+  if(txt !== "bahubali-ok") throw new Error("bad");
+  KEY = key; return true;
+}
+async function loadTest(id){
+  if(DATA[id]) return DATA[id];
+  const t = TESTS[id];
+  const r = await fetch(t.data, {cache:"force-cache"});
+  if(!r.ok) throw new Error("download");
+  const txt = await openBox(KEY, new Uint8Array(await r.arrayBuffer()));
+  DATA[id] = JSON.parse(txt); return DATA[id];
+}
+
+/* ---------- landing ---------- */
+function testState(id){ return A.t[id] || (A.t[id] = {cur:null, hist:[]}); }
+function renderCards(){
+  document.querySelectorAll("[data-test]").forEach(el=>{
+    const id = el.dataset.test, t = TESTS[id], s = testState(id);
+    const acts = el.querySelector(".acts"), info = el.querySelector(".score-line"), pdfs = el.querySelector(".pdfs");
+    const last = s.hist[0];
+    info.innerHTML = last ? `Last score <b>${f2(last.sc)}/${t.q}</b> · ${new Date(last.at).toLocaleDateString(undefined,{day:"numeric",month:"short"})}` : "";
+    info.hidden = !last;
+    el.querySelector(".badge").className = "badge " + (last ? "done" : "live");
+    el.querySelector(".badge").textContent = last ? "Attempted" : "Live";
+    if(!KEY){
+      acts.innerHTML = `<button class="btn btn-secondary" type="button" data-act="needcode">🔒 Unlock to start</button>`;
+      pdfs.hidden = true;
+    } else {
+      acts.innerHTML = (s.cur ? `<button class="btn btn-primary" type="button" data-act="start" data-id="${id}">Resume · ${fmtT(s.cur.left)} left</button>`
+                              : `<button class="btn btn-primary" type="button" data-act="start" data-id="${id}">${last? "Retake test" : "Start test"}</button>`)
+                     + (last ? `<button class="btn btn-secondary" type="button" data-act="result" data-id="${id}">Result</button>` : "");
+      pdfs.hidden = false;
+      pdfs.innerHTML = `<a href="${t.pdf_q}" download>Question booklet PDF</a><a href="${t.pdf_a}" download>Answers PDF</a>`;
+    }
+  });
+  $("#unlockBox").hidden = !!KEY; $("#unlockedBox").hidden = !KEY;
+}
+
+/* ---------- dialogs ---------- */
+function dialog(html){
+  const d = $("#dlg"); d.innerHTML = `<div class="dlg-back"><div class="dlg" role="dialog" aria-modal="true">${html}</div></div>`; d.hidden = false;
+  const f = d.querySelector("input,button"); if(f) setTimeout(()=>f.focus(), 30);
+  return d;
+}
+function closeDialog(){ const d=$("#dlg"); d.hidden = true; d.innerHTML = ""; }
+
+function askRegister(next){
+  const s = ST;
+  dialog(`<h2>One-time registration</h2>
+    <p class="muted">Register once so your Bahubali scores are saved with your name and Anil can follow your progress. Your details are not shown publicly.</p>
+    <form id="regForm" novalidate>
+      <div class="form-grid">
+        <label>Full name<input name="name" autocomplete="name" maxlength="80" value="${esc(s.name||"")}"></label>
+        <label>Phone number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="16" placeholder="10-digit mobile" value="${esc(s.phone||"")}"></label>
+        <label>Email<input name="email" type="email" autocomplete="email" maxlength="120" value="${esc(s.email||"")}"></label>
+        <label>District / City<input name="district" autocomplete="address-level2" maxlength="60" value="${esc(s.district||"")}"></label>
+      </div>
+      <label class="consent"><input type="checkbox" name="ok"> <span>I agree to share these details and my test scores with Learn with Anil.</span></label>
+      <p class="err" id="regErr" hidden></p>
+      <div class="row"><button class="btn btn-primary" type="submit">Register and continue</button><button class="btn btn-secondary" type="button" data-act="close">Cancel</button></div>
+    </form>`);
+  $("#regForm").addEventListener("submit", e=>{
+    e.preventDefault(); const f = e.target;
+    const name=f.name.value.trim(), phone=f.phone.value.replace(/\D/g,"").replace(/^91(?=\d{10}$)/,""), email=f.email.value.trim(), district=f.district.value.trim();
+    const err = name.length<2? "Please enter your full name." : !/^[6-9]\d{9}$/.test(phone)? "Please enter a valid 10-digit mobile number."
+      : !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)? "Please enter a valid email address." : district.length<2? "Please enter your district or city."
+      : !f.ok.checked? "Please tick the box to agree." : "";
+    if(err){ const b=$("#regErr"); b.textContent=err; b.hidden=false; return; }
+    Object.assign(ST, {name, phone, email, district, joined: ST.joined || Date.now()}); saveST();
+    sendRecord({test:"Registered · Bahubali Test Series"}); track("sign_up", {method:"form", exam:"Bahubali"});
+    closeDialog(); next();
+  });
+}
+
+function instructions(id){
+  const t = TESTS[id], s = testState(id);
+  if(s.cur){ return startExam(id); }
+  dialog(`<p class="eyebrow muted">${esc(t.paper_name)} · ${esc(t.label)}</p><h2>Instructions</h2>
+    <ul>
+      <li><b>${t.q} questions, ${t.q} marks, ${t.min} minutes.</b> ${esc(t.sections_desc)}.</li>
+      <li>Each correct answer: +1. Each wrong answer: −⅓. Unanswered: 0.</li>
+      <li>Tap an option to answer. <b>Save &amp; next</b> moves on; <b>Mark for review</b> flags a question to come back to (a marked question that has an answer is still counted).</li>
+      <li>Use the question palette to jump to any question. Switch between English and తెలుగు at the top.</li>
+      <li>The timer keeps running while this page is open. If you close the page, your answers are kept and you can resume.</li>
+      <li>The test submits itself when time is up.</li>
+    </ul>
+    <div class="row"><button class="btn btn-primary" type="button" data-act="go" data-id="${id}">I am ready, start the test</button><button class="btn btn-secondary" type="button" data-act="close">Not now</button></div>`);
+}
+
+async function startFlow(id){
+  if(!KEY){ needCode(); return; }
+  if(!ST.name){ askRegister(()=>instructions(id)); return; }
+  instructions(id);
+}
+function needCode(){
+  const box = $("#buy"); box.scrollIntoView({behavior:"smooth", block:"center"}); setTimeout(()=>$("#code").focus(), 350);
+  const m=$("#unlockMsg"); m.className="msg"; m.textContent="Enter the access code from your Bahubali access card, or buy the series first.";
+}
+
+/* ---------- exam ---------- */
+let EX = null, tick = null;
+async function startExam(id){
+  closeDialog();
+  const scr = $("#screen"); scr.hidden = false; document.body.classList.add("locked");
+  scr.innerHTML = `<div class="wrap" style="padding-top:60px;text-align:center"><span class="spin"></span><p style="margin-top:10px">Opening your test…</p></div>`;
+  let D;
+  try{ D = await loadTest(id); }
+  catch(e){ scr.innerHTML = `<div class="wrap" style="padding-top:60px"><h2>Could not open the test</h2><p class="muted" style="margin:8px 0 16px">Check your internet connection and try again.</p><button class="btn btn-primary" data-act="home">Back to tests</button></div>`; return; }
+  const s = testState(id);
+  if(!s.cur){ s.cur = {ans:{}, mk:{}, vis:{}, left: D.min*60, i:0, at: Date.now()}; track("quiz_start", {mode:"test", exam:"Bahubali", test:id}); }
+  saveA();
+  EX = {id, D, s:s.cur, pal:false};
+  location.hash = "exam/" + id;
+  drawExam(); startTick();
+}
+function startTick(){
+  clearInterval(tick);
+  let last = Date.now(), unsaved = 0;
+  tick = setInterval(()=>{
+    if(!EX) return clearInterval(tick);
+    const now = Date.now(), d = Math.floor((now-last)/1000); if(d<1) return; last += d*1000;
+    EX.s.left -= Math.min(d, 120);   // a sleeping phone does not eat the whole test
+    const tm = $("#exTimer"); if(tm){ tm.textContent = fmtT(EX.s.left); tm.classList.toggle("low", EX.s.left <= 300); }
+    if((unsaved += d) >= 10){ unsaved = 0; saveA(); }
+    if(EX.s.left <= 0){ EX.s.left = 0; submitExam(true); }
+  }, 1000);
+}
+function qState(n){ const s=EX.s, a=s.ans[n]!==undefined, m=!!s.mk[n]; return a&&m? "am" : m? "m" : a? "a" : s.vis[n]? "v" : ""; }
+function qText(q){ return LANG==="te" && q.qt ? {t:q.qt, o:q.ot||q.o, l:"te"} : {t:q.q, o:q.o, l:"en"}; }
+function drawExam(){
+  const {D, s} = EX, q = D.q[s.i], n = q.n;
+  s.vis[n] = 1;
+  const sec = D.sections.find(x=>n>=x.from && n<=x.to);
+  const T = qText(q);
+  const counts = {a:0, m:0, am:0, v:0, "":0}; D.q.forEach(x=>counts[qState(x.n)]++);
+  const pal = D.sections.map(sc=>`<h3>${esc(sc.name)} · ${esc(sc.sub)}</h3><div class="grid">${D.q.filter(x=>x.n>=sc.from&&x.n<=sc.to).map(x=>`<button type="button" class="pb ${qState(x.n)}${x.n===n?" cur":""}" data-act="jump" data-n="${x.n}" aria-label="Question ${x.n}">${x.n}</button>`).join("")}</div>`).join("");
+  $("#screen").innerHTML = `<div class="ex">
+    <div class="ex-bar"><div class="in">
+      <div class="t"><small>Bahubali · ${esc(D.paper_name)}</small>${esc(D.label)}</div>
+      <div class="seg" role="group" aria-label="Section">${D.sections.map(sc=>`<button type="button" data-act="jump" data-n="${sc.from}" aria-pressed="${sc===sec}">${esc(sc.name.replace("Section ",""))}</button>`).join("")}</div>
+      <div class="seg" role="group" aria-label="Language"><button type="button" data-act="lang" data-l="en" aria-pressed="${LANG==="en"}">EN</button><button type="button" data-act="lang" data-l="te" lang="te" aria-pressed="${LANG==="te"}">తెలుగు</button></div>
+      <span class="timer${s.left<=300?" low":""}" id="exTimer" aria-label="Time left">${fmtT(s.left)}</span>
+      <button class="btn btn-pal btn-secondary" type="button" data-act="pal" style="background:transparent">Questions</button>
+      <button class="btn btn-sub" type="button" data-act="submit">Submit</button>
+    </div></div>
+    <div class="ex-body">
+      <section class="card qpane" aria-live="polite">
+        <div class="qhead"><b>Question ${n}</b><span>${esc(sec? sec.name : "")} · ${esc(q.t)} · +1 / −⅓</span></div>
+        <div class="qtext" lang="${T.l}">${esc(T.t)}</div>
+        <div class="opts" role="radiogroup" aria-label="Options">${T.o.map((o,i)=>`<label class="opt${s.ans[n]===i?" sel":""}" lang="${T.l}"><input type="radio" name="opt" value="${i}" ${s.ans[n]===i?"checked":""} data-act="pick"><span class="bub">${i+1}</span><span>${esc(o)}</span></label>`).join("")}</div>
+      </section>
+      ${EX.pal? `<div class="shade" data-act="pal"></div>` : ""}
+      <aside class="card pal${EX.pal?" open":""}" aria-label="Question palette">
+        <div style="display:flex;justify-content:space-between;align-items:center"><b style="font-family:var(--f-display)">Question palette</b><button class="btn btn-quiet btn-sm close" type="button" data-act="pal">Close</button></div>
+        <div class="legend" style="margin-top:8px"><span><i class="dot a"></i>Answered ${counts.a}</span><span><i class="dot v"></i>Not answered ${counts.v}</span><span><i class="dot m"></i>Marked ${counts.m}</span><span><i class="dot am"></i>Answered &amp; marked ${counts.am}</span><span><i class="dot"></i>Not visited ${counts[""]}</span></div>
+        ${pal}
+        <button class="btn btn-gold" type="button" data-act="submit" style="width:100%;margin-top:14px">Submit test</button>
+      </aside>
+    </div>
+    <div class="ex-acts"><div class="in">
+      <button class="btn btn-secondary" type="button" data-act="prev" ${s.i===0?"disabled":""}>← Previous</button>
+      <button class="btn btn-secondary" type="button" data-act="clear">Clear</button>
+      <span class="sp"></span>
+      <button class="btn btn-secondary" type="button" data-act="mark" style="color:var(--mark)">${s.mk[n]? "Unmark" : "Mark for review"} &amp; next</button>
+      <button class="btn btn-primary" type="button" data-act="next">${s.i===D.q.length-1? "Save" : "Save &amp; next →"}</button>
+    </div></div>
+  </div>`;
+  saveA();
+}
+function move(d){ const L = EX.D.q.length; EX.s.i = Math.max(0, Math.min(L-1, EX.s.i + d)); EX.pal=false; drawExam(); $("#screen").scrollTo(0,0); }
+function confirmSubmit(){
+  const {D} = EX; const c = {a:0, m:0, am:0, v:0, "":0}; D.q.forEach(x=>c[qState(x.n)]++);
+  const ans = c.a + c.am, left = D.q.length - ans;
+  dialog(`<h2>Submit the test?</h2>
+    <p>You have answered <b>${ans}</b> of ${D.q.length} questions${left? `; <b>${left}</b> are unanswered` : ""}. ${c.m? `${c.m} marked question(s) have no answer.` : ""}</p>
+    <p class="muted" style="margin-top:6px">Time left: ${fmtT(EX.s.left)}. You cannot change answers after submitting.</p>
+    <div class="row"><button class="btn btn-gold" type="button" data-act="dosubmit">Yes, submit</button><button class="btn btn-secondary" type="button" data-act="close">Back to the test</button></div>`);
+}
+function submitExam(auto){
+  clearInterval(tick);
+  const {id, D, s} = EX;
+  let c=0, w=0, k=0;
+  D.q.forEach(q=>{ const a=s.ans[q.n]; if(a===undefined) k++; else if(a===q.a) c++; else w++; });
+  const sc = c - w/3, secs = D.min*60 - s.left;
+  const st = testState(id);
+  st.hist.unshift({at: Date.now(), sc, c, w, k, secs, ans: s.ans});
+  st.hist = st.hist.slice(0, 5); st.cur = null; saveA();
+  if(ST.name) sendRecord({test:`Bahubali · ${D.paper_name} · ${D.label}`, score:`${f2(sc)}/${D.q.length} (correct ${c}, wrong ${w}, skipped ${k})`, acc:(c+w? Math.round(100*c/(c+w)) : 0)+"%", time: fmtT(secs)});
+  track("quiz_complete", {mode:"test", exam:"Bahubali", test:id, correct:c});
+  closeDialog();
+  if(auto) toast("Time is up. Your test was submitted.");
+  EX = null; showResult(id);
+}
+
+/* ---------- result ---------- */
+let RV = {f:"all", sec:"all"};
+async function showResult(id){
+  const scr = $("#screen"); scr.hidden = false; document.body.classList.add("locked");
+  let D; try{ D = await loadTest(id); }catch(e){ toast("Could not open the result. Check your connection."); return goHome(); }
+  const h = testState(id).hist[0]; if(!h) return goHome();
+  location.hash = "result/" + id;
+  RV = {f:"all", sec:"all", id, D, h};
+  drawResult(); scr.scrollTo(0,0);
+}
+function drawResult(){
+  const {D, h} = RV, N = D.q.length;
+  const acc = h.c+h.w ? Math.round(100*h.c/(h.c+h.w)) : 0;
+  const bySec = D.sections.map(sc=>{ const e={name:sc.name+" · "+sc.sub, n:0,c:0,w:0,k:0}; D.q.forEach(q=>{ if(q.n<sc.from||q.n>sc.to) return; e.n++; const a=h.ans[q.n]; if(a===undefined)e.k++; else if(a===q.a)e.c++; else e.w++; }); return e; });
+  const byU = {}; const order = [];
+  D.q.forEach(q=>{ const k=q.t; if(!byU[k]){ byU[k]={n:0,c:0,w:0,k:0}; order.push(k); } const e=byU[k]; e.n++; const a=h.ans[q.n]; if(a===undefined)e.k++; else if(a===q.a)e.c++; else e.w++; });
+  const row = (name, e)=>{ const s=e.c-e.w/3; return `<tr><td>${esc(name)}<div class="bar"><i style="width:${Math.max(0,Math.round(100*e.c/e.n))}%"></i></div></td><td class="n">${e.n}</td><td class="n">${e.c}</td><td class="n">${e.w}</td><td class="n">${e.k}</td><td class="n"><b>${f2(s)}</b></td></tr>`; };
+  const share = `https://wa.me/?text=${encodeURIComponent(`I scored ${f2(h.sc)}/${N} in Bahubali Test Series (${D.paper_name}, ${D.label}) for APPSC Group-II Mains. Try it: ${CONF.url}`)}`;
+  const t = TESTS[RV.id];
+  $("#screen").innerHTML = `<div class="res">
+    <div class="hd"><div class="wrap">
+      <p class="eyebrow">Bahubali Test Series · ${esc(D.paper_name)} · Result</p>
+      <h1>${esc(D.label)}</h1>
+      <div class="tiles">
+        <div class="tile big"><b>${f2(h.sc)}</b><span>Score out of ${N}</span></div>
+        <div class="tile"><b>${h.c}</b><span>Correct (+${h.c})</span></div>
+        <div class="tile"><b>${h.w}</b><span>Wrong (−${f2(h.w/3)})</span></div>
+        <div class="tile"><b>${h.k}</b><span>Not answered</span></div>
+        <div class="tile"><b>${acc}%</b><span>Accuracy of attempts</span></div>
+        <div class="tile"><b>${fmtT(h.secs)}</b><span>Time taken</span></div>
+      </div>
+      <div class="res-acts">
+        <a class="btn btn-gold" href="#review" data-act="toreview">Review answers</a>
+        <button class="btn btn-secondary" type="button" data-act="start" data-id="${RV.id}">Retake test</button>
+        <a class="btn btn-secondary" href="${share}" target="_blank" rel="noopener">Share score on WhatsApp</a>
+        <button class="btn btn-secondary" type="button" data-act="home">All tests</button>
+      </div>
+    </div></div>
+    <div class="wrap" style="padding-bottom:60px">
+      <h2 style="margin-top:24px;font-size:22px">Section-wise</h2>
+      <div class="scroll-x"><table class="tbl"><tr><th>Section</th><th>Qs</th><th>Correct</th><th>Wrong</th><th>Skipped</th><th>Score</th></tr>${bySec.map(e=>row(e.name, e)).join("")}</table></div>
+      <h2 style="margin-top:24px;font-size:22px">Unit-wise</h2>
+      <p class="muted" style="margin-top:4px">Units with a short green bar need revision first.</p>
+      <div class="scroll-x"><table class="tbl"><tr><th>Syllabus unit</th><th>Qs</th><th>Correct</th><th>Wrong</th><th>Skipped</th><th>Score</th></tr>${order.map(k=>row(k, byU[k])).join("")}</table></div>
+      <p class="muted" style="margin-top:12px;font-size:14.5px">PDFs of this test: <a href="${t.pdf_q}" download>question booklet</a> · <a href="${t.pdf_a}" download>answers and explanations</a> (the PDF password is your access code).</p>
+      <h2 id="review" style="margin-top:28px;font-size:22px">Answers and explanations</h2>
+      <div class="filters" id="rvFilters"></div>
+      <div id="rvList"></div>
+    </div>
+  </div>`;
+  drawReview();
+}
+function drawReview(){
+  const {D, h} = RV;
+  const st = q=>{ const a=h.ans[q.n]; return a===undefined? "k" : a===q.a? "c" : "w"; };
+  const cnt = {all:D.q.length, w:0, k:0, c:0}; D.q.forEach(q=>cnt[st(q)]++);
+  const fb = (k, l)=>`<button type="button" data-act="rvf" data-f="${k}" aria-pressed="${RV.f===k}">${l} (${cnt[k]})</button>`;
+  $("#rvFilters").innerHTML = fb("all","All") + fb("w","Wrong") + fb("k","Not answered") + fb("c","Correct")
+    + `<span style="flex:1"></span><div class="seg" role="group" aria-label="Language" style="border-color:var(--line)"><button type="button" data-act="lang" data-l="en" aria-pressed="${LANG==="en"}" style="color:var(--ink)">EN</button><button type="button" data-act="lang" data-l="te" lang="te" aria-pressed="${LANG==="te"}" style="color:var(--ink)">తెలుగు</button></div>`;
+  const list = D.q.filter(q=>RV.f==="all" || st(q)===RV.f);
+  const lab = {c:"✓ Correct", w:"✗ Wrong", k:"— Not answered"};
+  $("#rvList").innerHTML = list.map(q=>{
+    const T = qText(q), a = h.ans[q.n], s = st(q);
+    const wt = LANG==="te" && q.wt ? q.wt : q.w, wl = LANG==="te" && q.wt ? "te" : "en";
+    return `<article class="card rv"><div class="h"><span>Q${q.n} · ${esc(q.t)}</span><span class="tag ${s}">${lab[s]}</span></div>
+      <p class="q" lang="${T.l}">${esc(T.t)}</p>
+      <ol lang="${T.l}">${T.o.map((o,i)=>`<li class="${i===q.a?"ok":(i===a?"no":"")}">(${i+1}) ${esc(o)}${i===q.a?" ✓":""}${i===a&&i!==q.a?" ✗ your answer":""}</li>`).join("")}</ol>
+      <div class="why" lang="${wl}"><b>Explanation</b>${linkify(wt)}</div>
+    </article>`;
+  }).join("") || `<p class="muted">No questions here.</p>`;
+}
+
+/* ---------- navigation ---------- */
+function goHome(){
+  clearInterval(tick); if(EX){ saveA(); EX = null; }
+  const scr=$("#screen"); scr.hidden = true; scr.innerHTML = ""; document.body.classList.remove("locked"); closeDialog();
+  if(location.hash) history.replaceState(null, "", location.pathname + location.search);
+  renderCards();
+}
+window.addEventListener("hashchange", ()=>{
+  const h = location.hash.slice(1);
+  if(!h || h==="tests"){ if(!$("#screen").hidden) goHome(); }
+});
+document.addEventListener("visibilitychange", ()=>{ if(document.hidden && EX) saveA(); });
+window.addEventListener("beforeunload", ()=>{ if(EX) saveA(); });
+
+document.addEventListener("click", e=>{
+  const b = e.target.closest("[data-act]"); if(!b) return;
+  const act = b.dataset.act;
+  if(act==="pick") return;   // handled on change
+  if(b.tagName==="A" && act!=="toreview") return;
+  e.preventDefault();
+  if(act==="needcode") needCode();
+  else if(act==="start") startFlow(b.dataset.id);
+  else if(act==="go") startExam(b.dataset.id);
+  else if(act==="close") closeDialog();
+  else if(act==="result") showResult(b.dataset.id);
+  else if(act==="home") goHome();
+  else if(act==="forget"){ setStr(CKEY, ""); KEY = null; renderCards(); toast("Code removed from this browser"); }
+  else if(act==="lang"){ LANG = b.dataset.l; setStr("lwa-lang", LANG); if(EX) drawExam(); else if(RV.D && !$("#screen").hidden) drawReview(); }
+  else if(act==="rvf"){ RV.f = b.dataset.f; drawReview(); }
+  else if(act==="toreview"){ const r=$("#review"); if(r) r.scrollIntoView({behavior:"smooth"}); }
+  else if(EX){
+    if(act==="jump"){ const i = EX.D.q.findIndex(q=>q.n===+b.dataset.n); if(i>=0){ EX.s.i=i; EX.pal=false; drawExam(); } }
+    else if(act==="next") move(1);
+    else if(act==="prev") move(-1);
+    else if(act==="clear"){ delete EX.s.ans[EX.D.q[EX.s.i].n]; drawExam(); }
+    else if(act==="mark"){ const n=EX.D.q[EX.s.i].n; if(EX.s.mk[n]) delete EX.s.mk[n]; else EX.s.mk[n]=1; move(1); }
+    else if(act==="pal"){ EX.pal = !EX.pal; drawExam(); }
+    else if(act==="submit") confirmSubmit();
+    else if(act==="dosubmit") submitExam(false);
+  }
+});
+document.addEventListener("change", e=>{
+  if(e.target.matches('[data-act="pick"]') && EX){ EX.s.ans[EX.D.q[EX.s.i].n] = +e.target.value; drawExam(); }
+});
+document.addEventListener("keydown", e=>{
+  if(e.key==="Escape" && !$("#dlg").hidden){ closeDialog(); return; }
+  if(!EX || !$("#dlg").hidden || e.ctrlKey || e.metaKey || e.altKey) return;
+  const inField = /INPUT|TEXTAREA|SELECT/.test(e.target.tagName||"");
+  if(/^[1-4]$/.test(e.key) && (!inField || e.target.type==="radio")){ e.preventDefault(); EX.s.ans[EX.D.q[EX.s.i].n] = +e.key-1; drawExam(); }
+  else if(!inField && e.key==="ArrowRight") move(1);
+  else if(!inField && e.key==="ArrowLeft") move(-1);
+});
+
+$("#unlockForm").addEventListener("submit", async e=>{
+  e.preventDefault();
+  const code = $("#code").value.trim(), m = $("#unlockMsg");
+  if(norm(code).length < 8){ m.className="msg err"; m.textContent="Please type the full code, e.g. BAHU-XXXX-XXXX."; return; }
+  if(!window.crypto || !crypto.subtle){ m.className="msg err"; m.textContent="This browser cannot unlock the tests. Please use the latest Chrome."; return; }
+  m.className="msg"; m.innerHTML = `<span class="spin"></span> Checking…`;
+  try{ await tryCode(code); setStr(CKEY, norm(code)); m.className="msg ok"; m.textContent="Unlocked!"; renderCards(); track("bahubali_unlock", {}); toast("Bahubali unlocked. All the best!"); document.getElementById("tests").scrollIntoView({behavior:"smooth"}); }
+  catch(err){ m.className="msg err"; m.textContent="That code is not right. Check it on your access card (letters and numbers only)."; }
+});
+
+(async function init(){
+  const saved = getStr(CKEY);
+  if(saved && window.crypto && crypto.subtle){ try{ await tryCode(saved); }catch(e){ setStr(CKEY, ""); } }
+  renderCards();
+  const h = location.hash.slice(1), m = h.match(/^(exam|result)\/(\w+)$/);
+  if(m && TESTS[m[2]] && KEY){ if(m[1]==="exam" && testState(m[2]).cur) startExam(m[2]); else if(m[1]==="result") showResult(m[2]); }
+  if(ST.pending && ST.pending.length && navigator.onLine){ const l = ST.pending.slice(); ST.pending=[]; saveST(); l.forEach(r=>{ try{ postRecord(r).catch(()=>{ ST.pending.push(r); saveST(); }); }catch(_){} }); }
+})();
+})();
+</script>
+</body>
+</html>
