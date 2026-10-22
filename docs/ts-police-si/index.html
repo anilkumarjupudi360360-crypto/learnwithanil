@@ -425,6 +425,11 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .np-covers img{width:92px;height:auto;border-radius:4px;box-shadow:0 6px 16px rgba(13,24,48,.25);margin-left:-26px;border:1px solid rgba(255,255,255,.4)}
 .np-covers img:first-child{margin-left:0}
 @media (max-width:760px){.notes-promo{grid-template-columns:1fr}.np-covers{order:-1}.np-covers img{width:72px;margin-left:-18px}}
+.bb-promo{margin-bottom:14px;border-color:#E8A317;background:linear-gradient(120deg,var(--surface) 55%,rgba(232,163,23,.12))}
+.bb-mark{width:120px;height:120px;border-radius:50%;background:var(--band);color:var(--band-ink);display:grid;place-content:center;text-align:center;box-shadow:0 0 0 6px rgba(232,163,23,.35)}
+.bb-mark b{font-family:var(--f-display);font-size:34px;font-weight:800;line-height:1;color:#F2B840}
+.bb-mark span{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em}
+@media (max-width:760px){.bb-mark{display:none}}
 .notes-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
 @media (max-width:760px){.notes-steps{grid-template-columns:1fr}}
 .notes-steps>div{display:flex;gap:12px;align-items:flex-start;padding:14px 16px}
@@ -633,7 +638,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ts-si-c353fa3c16.js"></script>
+<script src="data/ts-si-437a0103ed.js"></script>
 <script>
 (function(){
 "use strict";
@@ -1472,6 +1477,8 @@ function vNotes(){
       <div class="card"><span class="n">2</span><div><b>Pay ${priceTxt} online</b><p>${anyBuy? "Secure online payment by UPI or card." : "Online payment opens soon. Tap “Notify me” to get a WhatsApp message when it does."}</p></div></div>
       <div class="card"><span class="n">3</span><div><b>Download the PDF</b><p>Read it on your phone or print it. For your personal study only.</p></div></div>
     </div>
+    ${DATA.bahubali? `<div class="notes-sub"><h2>Test series</h2><span class="muted" style="font-size:14px">Group-II Mains · Paper I &amp; Paper II</span></div>
+    <a class="card notes-promo bb-promo" href="${esc(DATA.bahubali)}" style="margin-top:12px"><div class="np-copy"><p class="eyebrow">New · ₹250 for all 24 tests</p><h2>Bahubali Test Series</h2><p>Full-length APPSC Group-II Mains mock tests: 150 questions, 150 minutes, ⅓ negative marking, English and Telugu, with explanations and PDFs. 12 tests for Paper I and 12 for Paper II.</p><span class="btn btn-primary">See the tests</span></div><div class="bb-mark" aria-hidden="true"><b>150</b><span>Qs · 150 min</span></div></a>` : ""}
     ${groups}
     <div class="card notes-foot"><b>Reading the previous questions stays free.</b> The notes are optional and priced low so that any aspirant can afford them. Questions about the books? Call or WhatsApp <a href="tel:+919494792739">+91 94947 92739</a> or email <a href="mailto:anilkumarjupudi360360@gmail.com">anilkumarjupudi360360@<wbr>gmail.com</a>.</div>
   </div>`;
