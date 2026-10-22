@@ -1,3 +1,4 @@
+/** @OnlyCurrentDoc */
 /**
  * Learn with Anil — passes and payments (Google Apps Script, bound to the "Learn with Anil – Passes" spreadsheet).
  *
@@ -207,4 +208,12 @@ function mock(b, exam) {
   if (!qs.length) return {ok: false, error: 'This mock is not ready yet.'};
   qs.sort((a, c) => a[0] - c[0]);
   return {ok: true, id: id, questions: qs.map(x => JSON.parse(x[1]))};
+}
+
+// Run once from the editor (Run ▶ checkSetup) to approve the script and check the settings. Prints no secrets.
+function checkSetup() {
+  const ss = SpreadsheetApp.getActive();
+  Logger.log('Spreadsheet: ' + (ss ? ss.getName() : 'NOT BOUND'));
+  ['INSTAMOJO_CLIENT_ID', 'INSTAMOJO_CLIENT_SECRET', 'INSTAMOJO_SALT'].forEach(k => Logger.log(k + ': ' + (prop(k) ? 'set' : 'MISSING')));
+  Logger.log('Web app URL: ' + ScriptApp.getService().getUrl());
 }
