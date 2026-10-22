@@ -28,8 +28,9 @@ Commands:
     bot.py whoami            list the Telegram chats that have messaged the bot (to find TG_ADMIN_CHAT)
     bot.py demo --out DIR    make one sample card per exam, without posting or remembering anything
 
-Settings (GitHub secrets): TG_BOT_TOKEN, TG_CHANNEL (@name or -100… id), TG_ADMIN_CHAT (Anil's chat id),
-IG_TOKEN (long-lived Instagram token), IG_USER_ID (optional), STATE_KEY (any long random text).
+Settings (GitHub secrets): TG_BOT_TOKEN and IG_TOKEN (long-lived Instagram token) are needed. Optional:
+TG_CHANNEL (default @learn_with_anil06), TG_ADMIN_CHAT (default: the channel owner), IG_USER_ID, STATE_KEY
+(key for the stored refreshed token; default derived from IG_TOKEN).
 DRY_RUN=1 renders and logs but does not post.
 """
 import argparse, asyncio, base64, datetime as dt, hashlib, json, os, random, subprocess, sys, time
@@ -47,6 +48,8 @@ REPO = os.environ.get('GITHUB_REPOSITORY', 'anilkumarjupudi360360-crypto/learnwi
 BRANCH = 'social'
 DRY = os.environ.get('DRY_RUN') == '1'
 IG_VER = os.environ.get('IG_API_VERSION', 'v24.0')
+if not os.environ.get('TG_CHANNEL'):            # an unset GitHub secret arrives as an empty string
+    os.environ['TG_CHANNEL'] = '@learn_with_anil06'   # the public channel
 
 # slot: when it is due, until when a late post is still worth making (India time)
 SLOTS = [
@@ -172,6 +175,24 @@ class Telegram:
         return self.call('sendMessage', chat_id=chat, text=text[:4000], disable_web_page_preview=True)
 
 
+def admin_chat(tg, ctl):
+    """Anil's private chat with the bot: TG_ADMIN_CHAT, or else the owner of the channel (he must have pressed Start)."""
+    if os.environ.get('TG_ADMIN_CHAT'):
+        return str(os.environ['TG_ADMIN_CHAT'])
+    if ctl.get('admin_chat'):
+        return str(ctl['admin_chat'])
+    if not tg:
+        return ''
+    try:
+        for m in tg.call('getChatAdministrators', chat_id=os.environ['TG_CHANNEL']):
+            if m.get('status') == 'creator' and not m['user'].get('is_bot'):
+                ctl['admin_chat'] = m['user']['id']
+                return str(m['user']['id'])
+    except Exception as e:
+        log(f'(could not look up the channel owner: {e})')
+    return ''
+
+
 def channel_link(msg):
     ch = msg.get('chat', {})
     if ch.get('username'):
@@ -183,18 +204,22 @@ def channel_link(msg):
 # ---------------------------------------------------------------- Instagram
 
 def _fernet():
-    key = os.environ.get('STATE_KEY', '')
+    key = os.environ.get('STATE_KEY') or os.environ.get('IG_TOKEN', '')   # the original token is secret too
     if not key:
         return None
     from cryptography.fernet import Fernet
-    return Fernet(base64.urlsafe_b64encode(hashlib.sha256(key.encode()).digest()))
+    return Fernet(base64.urlsafe_b64encode(hashlib.sha256(('lwa-state-key:' + key).encode()).digest()))
+
+
+def _fingerprint(tok):
+    return hashlib.sha256(('lwa-fingerprint:' + tok).encode()).hexdigest()[:16]
 
 
 def ig_token():
     """The newest Instagram token: the refreshed one on the state branch, unless the IG_TOKEN secret has changed since."""
     env = os.environ.get('IG_TOKEN', '').strip()
     stored, f = jload(sp('secrets', 'ig.token'), None), _fernet()
-    if stored and f and stored.get('secret') == hashlib.sha256(env.encode()).hexdigest()[:16]:
+    if stored and f and stored.get('secret') == _fingerprint(env):
         try:
             return f.decrypt(stored['token'].encode()).decode()
         except Exception:
@@ -207,7 +232,7 @@ def save_ig_token(token):
     if not f:
         return
     env = os.environ.get('IG_TOKEN', '').strip()
-    jsave(sp('secrets', 'ig.token'), dict(secret=hashlib.sha256(env.encode()).hexdigest()[:16],
+    jsave(sp('secrets', 'ig.token'), dict(secret=_fingerprint(env),
                                           token=f.encrypt(token.encode()).decode(), saved=now_ist().isoformat()))
 
 
@@ -254,8 +279,13 @@ class Instagram:
 
 def refresh_ig(ctl):
     """Long-lived Instagram tokens last 60 days; refresh once a week so it never runs out."""
+    today = now_ist().date()
+    fp = _fingerprint(os.environ.get('IG_TOKEN', ''))
+    if ctl.get('ig_secret_fp') != fp:                 # a new IG_TOKEN secret: Instagram refuses to refresh tokens < 24 h old
+        ctl['ig_secret_fp'], ctl['ig_secret_seen'], ctl['ig_refreshed'] = fp, today.isoformat(), today.isoformat()
+        return
     last = ctl.get('ig_refreshed')
-    if last and (now_ist().date() - dt.date.fromisoformat(last)).days < 7:
+    if last and (today - dt.date.fromisoformat(last)).days < 7:
         return
     tok = ig_token()
     if not tok or not _fernet():
@@ -455,7 +485,7 @@ def meme_caption(meta, platform):
 
 def process_updates(tg, ctl):
     """Stop / Undo taps on meme previews, and a /status reply."""
-    admin = str(os.environ.get('TG_ADMIN_CHAT', ''))
+    admin = admin_chat(tg, ctl)
     ups = tg.call('getUpdates', offset=ctl.get('tg_offset', 0) + 1, timeout=0, allowed_updates=['callback_query', 'message'])
     for u in ups:
         ctl['tg_offset'] = u['update_id']
@@ -486,7 +516,7 @@ def process_updates(tg, ctl):
 
 
 def send_previews(tg, ctl, day):
-    admin = os.environ.get('TG_ADMIN_CHAT')
+    admin = admin_chat(tg, ctl)
     if not admin:
         return
     prev = ctl.setdefault('previews', {})
@@ -570,13 +600,16 @@ def post_slot(s, day, lg, ctl, tg, ig):
         entry['history'] = True
 
 
+CTL = {}
+
+
 def alert_once(tg, entry, platform, msg):
     log('! ' + msg)
     errs = entry.setdefault('errors', {})
     if platform in errs:
         return
     errs[platform] = msg[:300]
-    admin = os.environ.get('TG_ADMIN_CHAT')
+    admin = admin_chat(tg, CTL) if tg else ''
     if tg and admin and not DRY:
         try:
             tg.text(admin, '⚠️ ' + msg + '\nThe bot will try again on its next run.')
@@ -609,6 +642,7 @@ def cmd_run(wait):
     tg = Telegram(tok_tg) if tok_tg else None
     ig = Instagram(tok_ig, os.environ.get('IG_USER_ID', '')) if tok_ig else None
     ctl = jload(sp('control.json'), {})
+    CTL.clear(); CTL.update(ctl); ctl = CTL
     now = now_ist()
     day = now.date()
 
@@ -647,8 +681,8 @@ def cmd_run(wait):
         except Exception as e:
             if ctl.get('refresh_alerted') != day.isoformat():
                 ctl['refresh_alerted'] = day.isoformat()
-                if tg and os.environ.get('TG_ADMIN_CHAT'):
-                    tg.text(os.environ['TG_ADMIN_CHAT'], f'⚠️ {e}. Instagram posts stop when the token expires; ask Claude to renew it.')
+                if tg and admin_chat(tg, ctl):
+                    tg.text(admin_chat(tg, ctl), f'⚠️ {e}. Instagram posts stop when the token expires; ask Claude to renew it.')
             log(f'! {e}')
     prune()
     jsave(sp('control.json'), ctl)
@@ -663,6 +697,8 @@ def cmd_check():
         tg = Telegram(os.environ['TG_BOT_TOKEN'])
         me = tg.call('getMe')
         print(f'Telegram bot: @{me["username"]}')
+        if not os.environ.get('TG_ADMIN_CHAT'):
+            os.environ['TG_ADMIN_CHAT'] = admin_chat(tg, {}) or ''
         for name in ('TG_CHANNEL', 'TG_ADMIN_CHAT'):
             v = os.environ.get(name)
             if not v:
@@ -685,7 +721,7 @@ def cmd_check():
             print(f'Instagram: {e}'); ok = False
     else:
         print('Instagram: IG_TOKEN not set'); ok = False
-    print('STATE_KEY: ' + ('set' if os.environ.get('STATE_KEY') else 'not set (the Instagram token will not be refreshed!)'))
+    print('STATE_KEY: ' + ('set' if os.environ.get('STATE_KEY') else 'not set (using the IG_TOKEN secret as the key)'))
     return ok
 
 
