@@ -319,7 +319,8 @@ def load_exam(conf):
             if 'img' in q: q['img'] = img_data_uri(os.path.join(conf['src'], q['img']))
         pp = {k: p[k] for k in ('id', 'year', 'stage', 'short', 'title', 'notif', 'held', 'fmt', 'slug', 'blurb')}
         pp['count'] = len(qs)
-        if p.get('key'): pp['key'] = p['key']
+        for k in ('key', 'alt', 'te_paper'):
+            if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p)
         alt = paper_alt(conf, p)
         pp['kw'] = paper_kw(conf, p) + (f' ({alt})' if alt else '')
@@ -349,7 +350,22 @@ def qotd_pool(items, n):
     return out[:n]
 
 
+def have_src(src, papers):
+    """Ids of the papers whose source file exists (load_exam skips the others)."""
+    return [p['id'] for p in papers if os.path.exists(os.path.join(SRC, src, p['file']))]
+
+
+def ts_text():
+    """Wording for the TS Police pages that depends on which 2023 Final Written Examination papers are on the site."""
+    si = [i for i in have_src('ts-police-si', TS_SI_PAPERS) if i != 's2022']
+    pc = [i for i in have_src('ts-police-constable', TS_PC_PAPERS) if i != 'p2022']
+    si_fwe = 'Papers III and IV' if len(si) > 1 else {'s2023c': 'Paper III, Arithmetic & Reasoning', 's2023d': 'Paper IV, General Studies'}.get(si[0], '') if si else ''
+    return dict(si=si, pc=pc, si_fwe=si_fwe)
+
+
 def exam_confs():
+    T = ts_text()
+    si_m, pc_m = bool(T['si']), bool(T['pc'])
     return [
       dict(id='appsc-group-2', dir='', src='', key='appsc-g2', name='APPSC Group-II', short='Group-II', seo='APPSC Group 2',
            slugp='appsc-group-2', papers=PAPERS, subjects=SUBJECTS, faq=FAQ, board='APPSC', l2=L2_TE, pb='/appsc-group-2/',
@@ -388,31 +404,43 @@ def exam_confs():
            eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
            papers_note="2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. 2024: UPSC's official answer key (Series A). Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
       dict(id='ts-police-si', dir='ts-police-si', src='ts-police-si', key='ts-si', name='TS Police SI', short='TS Police SI', seo='TS Police SI',
-           slugp='ts-police-si', papers=TS_SI_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('SI'), board='TSLPRB', l2=L2_TE, pb='/ts-police-si/',
+           slugp='ts-police-si', papers=TS_SI_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('SI', T['si']), board='TSLPRB', l2=L2_TE, pb='/ts-police-si/',
            keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
            te_name='తెలంగాణ పోలీస్ ఎస్ఐ', te_paper='ప్రిలిమినరీ పరీక్ష',
-           title='TS Police SI Previous Question Papers with Answers – Telangana SI (TSLPRB) Prelims 2022, Telugu PDF | Learn with Anil',
+           title=('TS Police SI Previous Question Papers with Answers – Telangana SI Prelims 2022 & Mains 2023 (TSLPRB), Telugu PDF | Learn with Anil' if si_m else
+                  'TS Police SI Previous Question Papers with Answers – Telangana SI (TSLPRB) Prelims 2022, Telugu PDF | Learn with Anil'),
            h1='TS Police SI previous year question papers <em>with answers.</em>',
-           l2line='తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.',
+           l2line=('తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.' if si_m else
+                   'తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.'),
            aka='Also known as the Telangana (TG) Police SI exam: SCT SI (Civil) and equivalent posts, conducted by TSLPRB, now TGPRB.',
            aka_short='Telangana Police SI (TSLPRB / TGPRB)',
-           desc=lambda t: (f"TS Police SI (Telangana SI, TSLPRB / TGPRB) previous question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. "
-                           f"{t} questions on arithmetic, reasoning and general studies in English and Telugu with explanations; free mock tests, practice bits and PDF download."),
-           eyebrow='TSLPRB / TGPRB · SI (Civil) &amp; equivalent · Preliminary Written Test',
-           papers_note="Answers come from TSLPRB's final key for booklet A, released on 21 October 2022. Questions the key deleted, or for which it accepted three or four options, are left out. Every question is in English and Telugu, as printed in the booklet."),
+           desc=lambda t: ((f"TS Police SI (Telangana SI, TSLPRB / TGPRB) previous question papers: Prelims 2022 and Mains 2023 (Final Written Examination {T['si_fwe']}) with answers from TSLPRB's final keys. " if si_m else
+                            f"TS Police SI (Telangana SI, TSLPRB / TGPRB) previous question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. ")
+                           + f"{t:,} questions on arithmetic, reasoning and general studies in English and Telugu with explanations; free mock tests, practice bits and PDF download."),
+           eyebrow=('TSLPRB / TGPRB · SI (Civil) &amp; equivalent · Prelims 2022 &amp; Final Written Exam 2023' if si_m else
+                    'TSLPRB / TGPRB · SI (Civil) &amp; equivalent · Preliminary Written Test'),
+           papers_note=("Answers come from TSLPRB's final keys: booklet A for the 2022 Preliminary Written Test (key released on 21 October 2022) and booklet D for the 2023 Final Written Examination. "
+                        "Questions the key deleted, or for which it accepted three or four options, are left out, as are the few that cannot be read cleanly in the photographed booklet. Every question is in English and Telugu, as printed in the booklet." if si_m else
+                        "Answers come from TSLPRB's final key for booklet A, released on 21 October 2022. Questions the key deleted, or for which it accepted three or four options, are left out. Every question is in English and Telugu, as printed in the booklet.")),
       dict(id='ts-police-constable', dir='ts-police-constable', src='ts-police-constable', key='ts-pc', name='TS Police Constable', short='TS Constable', seo='TS Police Constable',
-           slugp='ts-police-constable', papers=TS_PC_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('PC'), board='TSLPRB', l2=L2_TE, pb='/ts-police-constable/',
+           slugp='ts-police-constable', papers=TS_PC_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('PC', T['pc']), board='TSLPRB', l2=L2_TE, pb='/ts-police-constable/',
            keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
            te_name='తెలంగాణ పోలీస్ కానిస్టేబుల్', te_paper='ప్రిలిమినరీ పరీక్ష',
-           title='TS Police Constable Previous Question Papers with Answers – Telangana Constable (TSLPRB) Prelims 2022, Telugu PDF | Learn with Anil',
+           title=('TS Police Constable Previous Question Papers with Answers – Telangana Constable Prelims 2022 & Mains 2023 (TSLPRB), Telugu PDF | Learn with Anil' if pc_m else
+                  'TS Police Constable Previous Question Papers with Answers – Telangana Constable (TSLPRB) Prelims 2022, Telugu PDF | Learn with Anil'),
            h1='TS Police Constable previous year question papers <em>with answers.</em>',
-           l2line='తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.',
+           l2line=('తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.' if pc_m else
+                   'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.'),
            aka='Also known as the Telangana (TG) Police Constable or TS PC exam: SCT PC (Civil) and equivalent posts, conducted by TSLPRB, now TGPRB.',
            aka_short='Telangana Police Constable (TSLPRB / TGPRB)',
-           desc=lambda t: (f"TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. "
-                           f"{t} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; free mock tests, practice bits and PDF download."),
-           eyebrow='TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Preliminary Written Test',
-           papers_note="Answers come from TSLPRB's final key for booklet A, released on 21 October 2022. Questions the key deleted, or for which it accepted three or four options, are left out. The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet."),
+           desc=lambda t: (("TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question papers: Prelims 2022 and Mains 2023 (Final Written Examination, 30 April 2023) with answers from TSLPRB's final keys. " if pc_m else
+                            "TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. ")
+                           + f"{t:,} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; free mock tests, practice bits and PDF download."),
+           eyebrow=('TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Prelims 2022 &amp; Final Written Exam 2023' if pc_m else
+                    'TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Preliminary Written Test'),
+           papers_note=("Answers come from TSLPRB's final keys for booklet A of the 2022 Preliminary Written Test (key released on 21 October 2022) and of the 2023 Final Written Examination. "
+                        "Questions the key deleted, or for which it accepted three or four options, are left out, as are the few that cannot be read cleanly in the photographed booklet. The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet." if pc_m else
+                        "Answers come from TSLPRB's final key for booklet A, released on 21 October 2022. Questions the key deleted, or for which it accepted three or four options, are left out. The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet.")),
     ]
 
 
@@ -885,14 +913,21 @@ def FAQ_CAPF(total, npapers):
     ]
 
 
-def FAQ_TS(post):
+def FAQ_TS(post, mains=()):
     si = post == 'SI'
     name = 'TS Police SI' if si else 'TS Police Constable'
     def faq(total, npapers):
+        if mains:
+            fwe = (' and '.join(x for i, x in (('s2023c', 'Paper III, Arithmetic & Reasoning, on 8 April'), ('s2023d', 'Paper IV, General Studies, on 9 April')) if i in mains)
+                   + ' 2023, booklet D') if si else '30 April 2023, booklet A'
+            where = (f'This page has {total:,} questions from {npapers} TSLPRB papers: the {"SI" if si else "Police Constable"} Preliminary Written Test of {"7 August" if si else "28 August"} 2022 (booklet A) '
+                     f'and the Final Written Examination ({fwe}), in English and Telugu as printed. '
+                     f'Every answer is taken from TSLPRB\'s final key for that paper, and each question has a short explanation. You can read each paper with answers, practise it as a quiz or mock test, or download the PDF, free.')
+        else:
+            where = (f'This page has {total} questions from the {"SI" if si else "Police Constable"} Preliminary Written Test held by TSLPRB on {"7 August" if si else "28 August"} 2022 (booklet A), in English and Telugu as printed. '
+                     f'Every answer is taken from TSLPRB\'s final key, released on 21 October 2022, and each question has a short explanation. You can read the paper with answers, practise it as a quiz or download the PDF, free.')
         return [
-          (f'Where can I get {name} previous year question papers with answers?',
-           f'This page has {total} questions from the {"SI" if si else "Police Constable"} Preliminary Written Test held by TSLPRB on {"7 August" if si else "28 August"} 2022 (booklet A), in English and Telugu as printed. '
-           f'Every answer is taken from TSLPRB\'s final key, released on 21 October 2022, and each question has a short explanation. You can read the paper with answers, practise it as a quiz or download the PDF, free.'),
+          (f'Where can I get {name} previous year question papers with answers?', where),
           (f'What is the {name} Preliminary Written Test pattern?',
            ('The SI Preliminary Written Test is one objective paper of 200 questions for 200 marks in 3 hours: Arithmetic and Test of Reasoning / Mental Ability, and General Studies. '
             if si else
@@ -901,7 +936,7 @@ def FAQ_TS(post):
           ('When is the 2026 Preliminary Written Test?',
            ('TGPRB has tentatively scheduled the SI Preliminary Written Test for 29 November 2026 (forenoon). ' if si else
             'TGPRB has tentatively scheduled the Police Constable Preliminary Written Test for 20 December 2026 (forenoon). ')
-           + 'Dates can change, so confirm on tgprb.in. The 2022 paper on this page follows the same pattern.'),
+           + 'Dates can change, so confirm on tgprb.in. The 2022 prelims paper on this page follows the same pattern.'),
           (f'Are the {name} questions available in Telugu?',
            'Yes. Every question that the booklet printed in Telugu is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu.'),
           (f'Is there a free {name} mock test?',
@@ -1036,12 +1071,12 @@ LANDINGS = {
   'ts-police-pyqs.html': dict(
       board='TSLPRB', ename='TS Police', crumb='TS Police PYQs',
       title='TS Police Previous Question Papers with Answers – SI & Constable PYQs (TSLPRB / TGPRB), Telugu PDF | Learn with Anil',
-      desc='Telangana Police SI and Constable previous question papers in one place: the TSLPRB Preliminary Written Test 2022 papers, '
+      desc='Telangana Police SI and Constable previous question papers in one place: the TSLPRB Preliminary Written Test 2022 and Final Written Examination 2023 papers, '
            '{n} questions with final-key answers and explanations in English and Telugu. Read online, take a free mock test or download the PDF.',
       h1='TS Police SI & Constable previous question papers with answers',
       lede="Every Telangana Police SI and Constable question paper on Learn with Anil, {n} questions in all. "
            "Answers come from TSLPRB's final key, and every question has a short explanation, in English and Telugu.",
-      intro='<p>Looking for TS Police SI previous papers, the TS Constable question paper 2022 PDF, TSLPRB / TGPRB previous question papers with answers, '
+      intro='<p>Looking for TS Police SI previous papers, the TS SI or Constable mains 2023 question paper, the TS Constable question paper 2022 PDF, TSLPRB / TGPRB previous question papers with answers, '
             'or a free Telangana police mock test? They are all here: open a paper to read it with answers, download its PDF, or practise it online.</p>'
             '<p lang="te">తెలంగాణ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) TSLPRB ఫైనల్ కీ సమాధానాలు, తెలుగులో వివరణలతో — PDF డౌన్‌లోడ్, ఉచిత మాక్ టెస్ట్.</p>'
             '<p class="note">2026 prelims are tentatively on 29 November (SI) and 20 December (Constable). Free full mock tests with a timer: '
