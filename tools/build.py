@@ -716,6 +716,12 @@ def main():
     if os.path.isdir(static):
         for f in os.listdir(static):
             shutil.copy(os.path.join(static, f), os.path.join(DIST, 'site', f))
+    # sealed (encrypted) paid mocks: published as-is; the keys are only in Anil's private sheet (tools/mk_seal.py)
+    mkdir_ = os.path.join(SRC, 'mission-khaki')
+    if os.path.isdir(mkdir_):
+        os.makedirs(os.path.join(DIST, 'site', 'ts-police-si', 'mk'), exist_ok=True)
+        for f in os.listdir(mkdir_):
+            if f.endswith('.bin'): shutil.copy(os.path.join(mkdir_, f), os.path.join(DIST, 'site', 'ts-police-si', 'mk', f))
     open(os.path.join(DIST, 'site', '.nojekyll'), 'w').write('')
     print(f'  grand total {grand} questions, {len(all_pages)} static pages')
 

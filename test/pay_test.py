@@ -11,6 +11,19 @@ MOCK = [dict(id=f'mk-si-1-{n}', p='mk-si-1', n=n, s=('ari' if n <= 2 else 'rea' 
 http.server.SimpleHTTPRequestHandler.log_message = lambda *a: None
 
 
+def seal_test_mock():   # a sealed test mock exactly as tools/mk_seal.py makes them
+    import base64
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    key, nonce = os.urandom(32), os.urandom(12)
+    blob = nonce + AESGCM(key).encrypt(nonce, json.dumps({'id': 'mk-si-1', 'questions': MOCK}).encode(), b'mk-si-1')
+    d = os.path.join(SITE, 'ts-police-si', 'mk'); os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, 'test-mock.bin'), 'wb').write(blob)
+    return base64.b64encode(key).decode(), 'test-mock.bin'
+
+
+TKEY, TFILE = seal_test_mock()
+
+
 async def main():
     srv = http.server.ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(http.server.SimpleHTTPRequestHandler, directory=SITE))
     threading.Thread(target=srv.serve_forever, daemon=True).start()
@@ -21,7 +34,7 @@ async def main():
         if b['action'] == 'passes': r = dict(ok=True, passes=({'mock': '2026-11-30'} if state['paid'] else {}))
         elif b['action'] == 'buy': r = dict(ok=True, url=url + 'ts-police-si/?payment_id=MOJO1&payment_status=Credit&payment_request_id=REQ1')
         elif b['action'] == 'verify': state['paid'] = True; r = dict(ok=True, passes={'mock': '2026-11-30'})
-        elif b['action'] == 'mock': r = dict(ok=True, id=b['id'], questions=MOCK) if state['paid'] else dict(ok=False, need='mock', error='needs pass')
+        elif b['action'] == 'mock': r = dict(ok=True, id=b['id'], key=TKEY, file=TFILE) if state['paid'] else dict(ok=False, need='mock', error='needs pass')
         else: r = dict(ok=False)
         await route.fulfill(status=200, content_type='application/json', body=json.dumps(r))
     errors = []

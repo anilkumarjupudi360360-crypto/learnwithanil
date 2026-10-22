@@ -794,6 +794,12 @@ async function startMock(id, part){
   try{
     const r = await payCall({action:"mock", exam:PAYC.exam, id, phone:ST.phone, email:ST.email||"", device:DEVICE});
     if(!r || !r.ok){ if(r && r.need==="mock") openPay("mock"); else toast((r && r.error) || "Could not load the mock. Please try again."); return; }
+    if(!r.questions){   // sealed mock: the encrypted file is on this site, the key comes from the payments script
+      const blob = new Uint8Array(await (await fetch(PB + "mk/" + r.file)).arrayBuffer());
+      const key = await crypto.subtle.importKey("raw", Uint8Array.from(atob(r.key), c=>c.charCodeAt(0)), "AES-GCM", false, ["decrypt"]);
+      const plain = await crypto.subtle.decrypt({name:"AES-GCM", iv: blob.slice(0,12), additionalData: new TextEncoder().encode(id)}, key, blob.slice(12));
+      r.questions = JSON.parse(new TextDecoder().decode(plain)).questions;
+    }
     const no = id.split("-").pop();
     PMAP[id] = PMAP[id] || {id, short: PAYC.mock.name + " Mock " + no, title: PAYC.mock.name + " · Mock " + no, fmt:"mcq", paid:true, count:r.questions.length};
     r.questions.forEach(q=>{ QMAP[q.id] = q; });

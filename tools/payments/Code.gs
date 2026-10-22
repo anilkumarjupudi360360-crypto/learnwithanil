@@ -10,7 +10,7 @@
  *  - webhook: Instamojo also calls this script when a payment succeeds (checked with the private salt), so a pass
  *             is recorded even if the student closes the page.
  *  - passes:  which passes a registered phone number has for an exam.
- *  - mock:    the questions of a released Mission Khaki mock, only for a phone with a valid mock pass.
+ *  - mock:    the key of a released Mission Khaki mock (its encrypted file is on the website), only for a valid mock pass.
  *
  * Secrets are NOT in this file. Anil adds them himself under Project Settings → Script properties:
  *   INSTAMOJO_CLIENT_ID, INSTAMOJO_CLIENT_SECRET   (Instamojo dashboard → API & Plugins; "API v2")
@@ -28,10 +28,7 @@ const EXAMS = {   // exam id: name, last day a pass is valid (null = 12 months),
   'ts-police-constable':  {name: 'TS Police Constable', until: '2026-12-21', mock: null},
   'tgpsc-hmwssb-manager': {name: 'TGPSC HMWSSB Manager', until: null, mock: null},
 };
-const MOCK_RELEASE = {   // mock id: first day it opens (IST)
-  'mk-si-1': '2026-10-27', 'mk-si-2': '2026-10-30', 'mk-si-3': '2026-11-02', 'mk-si-4': '2026-11-05', 'mk-si-5': '2026-11-08',
-  'mk-si-6': '2026-11-11', 'mk-si-7': '2026-11-14', 'mk-si-8': '2026-11-17', 'mk-si-9': '2026-11-20', 'mk-si-10': '2026-11-23',
-};
+// Mock keys live in the 'keys' tab of this spreadsheet: mock_id | key (base64) | file | opens (yyyy-mm-dd, IST).
 const MAX_DEVICES = 3;   // one pass, at most this many phones/computers
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -195,19 +192,18 @@ function deviceOK_(phone, exam, device) {
   return true;
 }
 
-function mock(b, exam) {
+function mock(b, exam) {   // the key of a sealed mock (the encrypted file is on the website), only for a valid mock pass
   const id = String(b.id || '');
-  if (!MOCK_RELEASE[id]) return {ok: false, error: 'Unknown mock.'};
-  if (MOCK_RELEASE[id] > today_()) return {ok: false, error: 'This mock opens on ' + MOCK_RELEASE[id] + '.'};
+  const v = sheet('keys', ['mock_id', 'key', 'file', 'opens']).getDataRange().getValues();
+  let row = null;
+  for (let i = 1; i < v.length; i++) if (String(v[i][0]) === id) row = v[i];
+  if (!row) return {ok: false, error: 'This mock is not ready yet.'};
+  const opens = row[3] instanceof Date ? Utilities.formatDate(row[3], 'Asia/Kolkata', 'yyyy-MM-dd') : String(row[3]);
+  if (opens > today_()) return {ok: false, error: 'This mock opens on ' + opens + '.'};
   const ps = passesFor(phoneOf(b.phone), exam, b.device, b.email);
   if (!ps.ok) return ps;
   if (!ps.passes.mock) return {ok: false, error: 'This mock needs the mock test pass.', need: 'mock'};
-  const v = sheet('mocks', ['mock_id', 'n', 'json']).getDataRange().getValues();
-  const qs = [];
-  for (let i = 1; i < v.length; i++) if (v[i][0] === id) qs.push([Number(v[i][1]), v[i][2]]);
-  if (!qs.length) return {ok: false, error: 'This mock is not ready yet.'};
-  qs.sort((a, c) => a[0] - c[0]);
-  return {ok: true, id: id, questions: qs.map(x => JSON.parse(x[1]))};
+  return {ok: true, id: id, key: String(row[1]), file: String(row[2])};
 }
 
 // Run once from the editor (Run ▶ checkSetup) to approve the script and check the settings. Prints no secrets.
