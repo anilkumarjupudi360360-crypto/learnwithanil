@@ -88,7 +88,7 @@ def paper_html(conf, p, qs, subj):
              f'<p class="meta">{esc(p["title"])}{f" ({esc(B.alt_shown(alt, p['title']))})" if B.alt_shown(alt, p['title']) else ""} · held {esc(p["held"])} · {esc(p["notif"])} · {len(qs)} questions. {esc(src)}</p>'
              f'<div class="box">Practise this paper free online, as a mock test or topic by topic, with your mistakes saved for revision: '
              f'<a href="{esc(paper_url)}">{esc(paper_url.replace("https://", ""))}</a>. '
-             f'Questions are as printed in the official booklet, in English and {l2["name"]}; the answer key and explanations follow the questions.</div></div>']
+             f'Questions are as printed in the official booklet, in {"English" if p.get("en_only") else "English and " + l2["name"]}; the answer key and explanations follow the questions.</div></div>']
     parts.append('<h2>Questions</h2>')
     for q in qs:
         h = [f'<div class="q"><p><span class="n">Q{q["n"]}.</span> {esc(q["q"])}</p>']

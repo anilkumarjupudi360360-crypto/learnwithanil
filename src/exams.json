@@ -465,6 +465,21 @@
    "n": "R&B DE, SE"
   },
   {
+   "id": "tgpsc-hmwssb-manager",
+   "cat": "tg",
+   "b": "TGPSC",
+   "t": "HMWSSB Manager",
+   "n": "Manager (Engineering), Water Board",
+   "live": "tgpsc-hmwssb-manager/"
+  },
+  {
+   "id": "ts-civil-judge",
+   "cat": "tg",
+   "b": "Telangana High Court",
+   "t": "Civil Judge",
+   "n": "Junior Division (JCJ)"
+  },
+  {
    "id": "tgpsc-pd",
    "cat": "tg",
    "b": "TGPSC",

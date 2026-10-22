@@ -35,7 +35,7 @@ async def main():
             tiles = await pg.locator('#hub-static .exam').count()
             assert tiles >= 90, f'expected the full exam list, got {tiles}'
             live = await pg.locator('#hub-static .exam.live').count()
-            built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'ts-police-si', 'ts-police-constable') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
+            built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
             assert live == built, f'{built} exams are built but {live} tiles are live'
             await pg.fill('#examSearch', 'group 2'); await pg.wait_for_timeout(100)
             assert await pg.locator('#hub-static .exam:not([hidden])').count() == 2, 'search "group 2" should find APPSC and TGPSC Group-II'
@@ -110,7 +110,7 @@ async def main():
                 await pg.evaluate('location.hash="home"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/home-phone.png', full_page=False)
         # exams in their own folders: APPSC Group-I (Telugu) and UPSC CAPF (Hindi)
-        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group 1', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi'), ('ts-police-si', 'tssi', 'TS Police SI', 'te'), ('ts-police-constable', 'tspc', 'TS Police Constable', 'te')]:
+        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group 1', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi'), ('ts-police-si', 'tssi', 'TS Police SI', 'te'), ('ts-police-constable', 'tspc', 'TS Police Constable', 'te'), ('tgpsc-hmwssb-manager', 'hmws', 'HMWSSB Manager', 'te')]:
             if not os.path.exists(os.path.join(SITE, sub, 'index.html')): continue
             fp = URL + sub + '/'
             for width, name in [(1280, 'desk'), (390, 'phone')]:

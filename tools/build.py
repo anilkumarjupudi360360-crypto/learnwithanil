@@ -171,6 +171,44 @@ TS_PC_PAPERS = [
        alt='Final Written Exam', te_paper='ఫైనల్ రాత పరీక్ష',
        blurb='Final Written Examination (General Studies): English, arithmetic, reasoning, science, history, geography, polity and economy, current events, personality test and Telangana, 200 questions, 200 marks, 3 hours.'),
 ]
+# ---------- TGPSC (formerly TSPSC): Manager (Engineering) in HMWSSB, Hyderabad's water board ----------
+HM_PAPERS = [
+  dict(id='m15a', file='tgpsc-hmwssb-manager-2015-paper1-gs.txt', year=2015, stage='Written Examination Paper I', short='Manager 2015 Paper 1 (GS)',
+       title='TSPSC Manager (Engineering), HMWSSB, 2015: Paper 1 (General Studies)', notif='Notification 13/2015 · Series A', held='1 November 2015',
+       key="TSPSC's final key", fmt='mcq', slug='tgpsc-hmwssb-manager-2015-paper-1-general-studies-question-paper-with-answers',
+       alt='General Studies', te_paper='పేపర్-1 జనరల్ స్టడీస్',
+       blurb='Paper 1: General Studies (current affairs, science, environment, geography, history, Telangana, polity, economy, reasoning and data interpretation), 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
+  dict(id='m15b', file='tgpsc-hmwssb-manager-2015-paper2-civil.txt', year=2015, stage='Written Examination Paper II', short='Manager 2015 Paper 2 (Civil)',
+       title='TSPSC Manager (Engineering), HMWSSB, 2015: Paper 2 (Civil Engineering)', notif='Notification 13/2015 · Series A', held='1 November 2015',
+       key="TSPSC's final key", fmt='mcq', slug='tgpsc-hmwssb-manager-2015-paper-2-civil-engineering-question-paper-with-answers',
+       alt='Civil Engineering', te_paper='పేపర్-2 సివిల్ ఇంజనీరింగ్', en_only=True,
+       blurb='Paper 2: Civil Engineering (surveying, transportation, structures and design, geotechnical, fluid mechanics, water resources, environmental engineering, building materials and construction), 150 questions, 300 marks, 150 minutes, in English only.'),
+]
+HM_SUBJECTS = [
+  ('cur', 'Current Affairs', 'current-affairs', ['National', 'International', 'Telangana', 'Sports & Awards']),
+  ('sci', 'General Science & Technology', 'general-science', ['Physics', 'Chemistry', 'Biology & Health', 'Science & Technology']),
+  ('env', 'Environment & Disaster Management', 'environment-disaster-management', ['Environment & Ecology', 'Disaster Management']),
+  ('geo', 'Geography', 'geography', ['World Geography', 'Indian Geography', 'Telangana Geography']),
+  ('ih',  'Indian History & Culture', 'indian-history', ['Ancient India', 'Medieval India', 'Modern India & Freedom Struggle', 'Art & Culture']),
+  ('tg',  'Telangana History & Movement', 'telangana-history-movement', ['Telangana History & Culture', 'Telangana Movement & State Formation', 'Telangana Schemes & Policies']),
+  ('pol', 'Indian Polity', 'indian-polity', ['Constitution & Rights', 'Union & State Government', 'Local Government', 'Governance, Schemes & Social Issues']),
+  ('eco', 'Economy', 'economy', ['Indian Economy', 'Telangana Economy']),
+  ('rea', 'Reasoning & Data Interpretation', 'reasoning-data-interpretation', ['Logical Reasoning', 'Arithmetic & Mental Ability', 'Data Interpretation']),
+  ('eng', 'English', 'english', ['Grammar', 'Vocabulary']),
+  ('sur', 'Surveying & GIS', 'surveying', ['Surveying', 'Remote Sensing & GIS']),
+  ('trn', 'Transportation Engineering', 'transportation-engineering', ['Highway Engineering', 'Traffic Engineering', 'Railways & Airports']),
+  ('som', 'Strength of Materials & Structural Analysis', 'strength-of-materials-structural-analysis', ['Strength of Materials', 'Structural Analysis']),
+  ('rcd', 'RCC, Steel & Prestressed Design', 'rcc-steel-design', ['RCC Design', 'Steel Design', 'Prestressed Concrete']),
+  ('geot', 'Geotechnical Engineering', 'geotechnical-engineering', ['Soil Mechanics', 'Foundation Engineering']),
+  ('fm',  'Fluid Mechanics & Hydraulics', 'fluid-mechanics-hydraulics', ['Fluid Mechanics', 'Hydraulics & Hydraulic Machines']),
+  ('wre', 'Water Resources & Irrigation', 'water-resources-irrigation', ['Hydrology', 'Irrigation Engineering']),
+  ('evn', 'Environmental Engineering', 'environmental-engineering', ['Water Supply', 'Sewerage & Wastewater Treatment', 'Solid Waste & Pollution']),
+  ('bmc', 'Building Materials & Construction', 'building-materials-construction', ['Building Materials', 'Construction & Estimation', 'Construction Management']),
+]
+HM_SUBJ_TE = {'cur': 'కరెంట్ అఫైర్స్', 'sci': 'జనరల్ సైన్స్', 'env': 'పర్యావరణం, విపత్తు నిర్వహణ', 'geo': 'భూగోళశాస్త్రం (జాగ్రఫీ)',
+              'ih': 'భారతదేశ చరిత్ర', 'tg': 'తెలంగాణ చరిత్ర, ఉద్యమం', 'pol': 'భారత రాజ్యాంగం (పాలిటీ)', 'eco': 'భారత, తెలంగాణ ఆర్థిక వ్యవస్థ',
+              'rea': 'రీజనింగ్, డేటా ఇంటర్‌ప్రిటేషన్', 'eng': 'ఇంగ్లీష్'}
+
 TS_SUBJECTS = [
   ('ari', 'Arithmetic', 'arithmetic', ['Numbers & Simplification', 'Percentage, Profit & Loss', 'Ratio, Average & Ages', 'Interest', 'Time & Work', 'Time, Speed & Distance', 'Mensuration', 'Data Interpretation']),
   ('rea', 'Reasoning & Mental Ability', 'reasoning-mental-ability', ['Series & Analogies', 'Coding-Decoding', 'Blood Relations & Directions', 'Calendar & Clocks', 'Venn Diagrams & Syllogisms', 'Puzzles & Arrangements', 'Non-verbal Reasoning', 'Logical Reasoning']),
@@ -319,7 +357,7 @@ def load_exam(conf):
             if 'img' in q: q['img'] = img_data_uri(os.path.join(conf['src'], q['img']))
         pp = {k: p[k] for k in ('id', 'year', 'stage', 'short', 'title', 'notif', 'held', 'fmt', 'slug', 'blurb')}
         pp['count'] = len(qs)
-        for k in ('key', 'alt', 'te_paper'):
+        for k in ('key', 'alt', 'te_paper', 'en_only'):
             if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p)
         alt = paper_alt(conf, p)
@@ -441,6 +479,19 @@ def exam_confs():
            papers_note=("Answers come from TSLPRB's final keys for booklet A of the 2022 Preliminary Written Test (key released on 21 October 2022) and of the 2023 Final Written Examination. "
                         "Questions the key deleted, or for which it accepted three or four options, are left out, as are the few that cannot be read cleanly in the photographed booklet. The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet." if pc_m else
                         "Answers come from TSLPRB's final key for booklet A, released on 21 October 2022. Questions the key deleted, or for which it accepted three or four options, are left out. The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet.")),
+      dict(id='tgpsc-hmwssb-manager', dir='tgpsc-hmwssb-manager', src='tgpsc-hmwssb-manager', key='tg-hmws', name='TGPSC HMWSSB Manager (Engineering)',
+           short='HMWSSB Manager', seo='TGPSC HMWSSB Manager', slugp='tgpsc-hmwssb-manager', papers=HM_PAPERS, subjects=HM_SUBJECTS, faq=FAQ_HM,
+           board='TGPSC', l2=L2_TE, pb='/tgpsc-hmwssb-manager/', keyname="TSPSC's final key", keyshort="TSPSC's final key", bits=True,
+           te_name='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్)', te_paper='రాత పరీక్ష', subj_te=HM_SUBJ_TE,
+           title='TGPSC HMWSSB Manager (Engineering) Previous Question Papers with Answers – GS & Civil Engineering, Telugu PDF | Learn with Anil',
+           h1='TGPSC HMWSSB Manager (Engineering) previous question papers <em>with answers.</em>',
+           l2line='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), సివిల్ ఇంజనీరింగ్, ఉచితంగా.',
+           aka='Manager (Engineering) in the Hyderabad Metropolitan Water Supply and Sewerage Board (HMWSSB, Jalamandali), recruited by TGPSC, formerly TSPSC.',
+           aka_short='TGPSC (TSPSC) Manager (Engineering), Hyderabad Metro Water Board',
+           desc=lambda t: (f"TGPSC (TSPSC) HMWSSB Manager (Engineering) previous question papers: the 2015 Paper 1 General Studies (English and Telugu) "
+                           f"and Paper 2 Civil Engineering with answers from TSPSC's final key. {t:,} questions with explanations; free mock tests, practice bits and PDF download."),
+           eyebrow='TGPSC (TSPSC) · Manager (Engineering), HMWSSB · Notification 13/2015',
+           papers_note="Answers come from TSPSC's final key for booklet Series A (Notification 13/2015, written test held on 1 November 2015). Questions for which TSPSC gave the mark to every candidate are left out. Paper 1 is in English and Telugu as printed (its English-language questions in English only); Paper 2 (Civil Engineering) is in English only."),
     ]
 
 
@@ -694,7 +745,7 @@ def paper_no(p):
 def paper_kw(conf, p):
     """'APPSC Group 2 Prelims 2024', 'APPSC Group 2 Mains 2025 Paper 1', 'UPSC CAPF AC 2026 Paper 1'."""
     n = paper_no(p)
-    if conf['board'] == 'UPSC':
+    if conf['board'] in ('UPSC', 'TGPSC'):
         return f'{conf["seo"]} {p["year"]}' + (f' Paper {n}' if n else '')
     stage = 'Prelims' if p['stage'].startswith(('Screening', 'Prelims', 'Preliminary')) else 'Mains'
     return f'{conf["seo"]} {stage} {p["year"]}' + (f' Paper {n}' if n else '')
@@ -749,7 +800,7 @@ SUBJ_L2 = {
 
 
 def subject_l2_line(conf, s):
-    name = SUBJ_L2[conf['l2']['code']].get(s['id'])
+    name = conf.get('subj_te', {}).get(s['id']) if 'subj_te' in conf else SUBJ_L2[conf['l2']['code']].get(s['id'])
     if not name: return ''
     if conf.get('te_name'):
         if s['id'] == 'soc': name = 'నైతిక విలువలు, జెండర్ సెన్సిటివిటీ'
@@ -769,6 +820,8 @@ def exam_terms(e, cat):
         words += [f'group {d}', f'group{d}', f'group-{d}', f'group {m.group(1)}']
     if e['cat'] == 'tg': words += ['tspsc', 'tgpsc', 'telangana']
     if 'police' in e['id']: words += ['ts police', 'tg police', 'tslprb', 'tgprb', 'si', 'constable']
+    if 'hmwssb' in e['id']: words += ['hmwssb', 'water board', 'jalamandali', 'metro water', 'manager engineering', 'civil engineering', 'hmws']
+    if 'civil-judge' in e['id']: words += ['civil judge', 'junior civil judge', 'jcj', 'judiciary', 'high court', 'llb', 'law']
     if e['cat'] == 'ap': words += ['appsc', 'andhra'] + ([f'ap group {ROMAN[m.group(1)]}'] if m else [])
     return ' '.join(w.lower() for w in words if w)
 
@@ -916,6 +969,26 @@ def FAQ_CAPF(total, npapers):
        'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, exactly as printed in UPSC\'s booklet. Tap EN to switch back.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that every quiz and test on every exam opens straight away on that phone or computer. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
+    ]
+
+
+def FAQ_HM(total, npapers):
+    return [
+      ('Where can I get TGPSC HMWSSB Manager (Engineering) previous question papers with answers?',
+       f'This page has {total} questions from the TSPSC Manager (Engineering) written test for HMWSSB, Notification 13/2015, held on 1 November 2015: '
+       'Paper 1 General Studies in English and Telugu, and Paper 2 Civil Engineering. Every answer is taken from TSPSC\'s final key (Series A), and each question has a short explanation. '
+       'You can read each paper with answers, practise it as a quiz or timed mock test, or download the PDF, free.'),
+      ('What is the TGPSC HMWSSB Manager (Engineering) 2026 exam pattern?',
+       'Two objective papers: Paper 1 General Studies and General Abilities (150 questions, 150 marks, in English and Telugu) and Paper 2 in the candidate\'s engineering '
+       'subject (150 questions, 300 marks, in English), 450 marks in all. Notification 04/2026 has 130 posts, mostly Civil, and the exam is tentatively in December 2026; confirm dates on tgpsc.gov.in.'),
+      ('Are the HMWSSB Manager General Studies questions available in Telugu?',
+       'Yes. Paper 1 (General Studies) is printed in English and Telugu, apart from its English-language questions, and every question is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu. Paper 2 (Civil Engineering) is printed in English only.'),
+      ('Is there a free HMWSSB Manager mock test?',
+       'Yes. Open the mock test page and take a real 2015 paper with a timer, or tap Create a quiz to choose subjects such as Environmental Engineering, Fluid Mechanics or Telangana History. You get your score, the official answer and an explanation for every question.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that every quiz and test on every exam opens straight away on that phone or computer. There is no password.'),
+      ('Which questions are left out?',
+       'In Paper 2 (Civil Engineering), TSPSC\'s final key gave the mark to every candidate for five questions (Q3, 37, 64, 95 and 128 in Series A); they are left out. The Mechanical, Electrical, ECE and CSE papers are not on the site yet.'),
     ]
 
 
@@ -1246,6 +1319,7 @@ MOCK_INFO = {   # exam id: (when the next exam is, as students should read it)
   'ts-police-si': 'TS Police SI 2026: the Preliminary Written Test is tentatively on 29 November 2026 (forenoon), as per TGPRB. Confirm on tgprb.in.',
   'ts-police-constable': 'TS Police Constable 2026: the Preliminary Written Test is tentatively on 20 December 2026 (forenoon), as per TGPRB. Confirm on tgprb.in.',
   'upsc-capf': '',
+  'tgpsc-hmwssb-manager': 'TGPSC HMWSSB Manager (Engineering) 2026: 130 posts (Notification 04/2026); the exam is tentatively in December 2026. Confirm on tgpsc.gov.in.',
 }
 
 
@@ -1301,10 +1375,10 @@ def build_static(conf, papers, subjects, questions, subj):
         if conf['board'] == 'UPSC':
             title = f'{kw} Question Paper with Answer Key, English & Hindi PDF | Learn with Anil'
         else:
-            title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – Final Key, Telugu & English PDF | Learn with Anil'
+            title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – Final Key, {"English" if p.get("en_only") else "Telugu & English"} PDF | Learn with Anil'
         kdesc = ("answers from APPSC's final key" if conf['board'] == 'APPSC' else 'compiled answers' if p.get('key', '').startswith('answers compiled')
                  else f'answers from {pkey}')
-        desc = (f'{kw} question paper{f" ({alt})" if alt else ""}, held {p["held"]}: all {len(qs)} questions in English and {conf["l2"]["name"]} '
+        desc = (f'{kw} question paper{f" ({alt})" if alt else ""}, held {p["held"]}: all {len(qs)} questions in {"English" if p.get("en_only") else "English and " + conf["l2"]["name"]} '
                 f'with {kdesc} and explanations. Download the PDF or practise it online as a free mock test.'
                 + (f' {conf["aka_short"]}.' if conf.get('aka_short') else ''))
         subs = {}
@@ -1319,7 +1393,7 @@ def build_static(conf, papers, subjects, questions, subj):
                 + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html') for q in qs) + '</ol>')
         held = f'{p["notif"]}, held on {p["held"]}' if conf['board'] == 'APPSC' else f'Held on {p["held"]} ({p["notif"].replace(" · ", ", ")})'
         lede = esc(f'{p["title"]}{f" ({alt_shown(alt, p['title'])})" if alt_shown(alt, p['title']) else ""}. {p["blurb"]} {held}. {fmt}, plus a short explanation for every question. '
-                   f'Each question is shown in English and {conf["l2"]["name"]}, as printed in the booklet.')
+                   + ('' if p.get('en_only') else f'Each question is shown in English and {conf["l2"]["name"]}, as printed in the booklet.'))
         pages[rel] = static_page(1, title, desc, can, f'{kw} question paper with answers', lede, body,
                                  home_crumbs + [(p['title'], can)], conf)
     by_s = {}

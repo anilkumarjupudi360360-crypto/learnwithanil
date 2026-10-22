@@ -1,0 +1,1347 @@
+# TSPSC Manager (Engineering), HMWSSB, Notification 13/2015, Paper 2: Civil Engineering (paper code 501), held 1 November 2015 (booklet Series A).
+# Answers: TSPSC final key, Series A. Explanations by Learn with Anil.
+# Left out (mark given to all candidates in the final key): 3, 37, 64, 95, 128
+
+Q 1 | sur | Surveying
+If θ be the angle of slope and the length of chain is 30m, then the correction to be applied per chain length is
+(1) 30 (1 - sec θ) m
+(2) 30 (1 - cos θ) m
+(3) 30 (sec θ - 1) m
+(4) 30 (cos θ - 1) m
+= 3
+~ When chaining down a slope, a 30 m chain laid along the ground covers only 30 cos θ horizontally, so the arrow is set forward by the hypotenusal allowance 30(sec θ − 1) m in each chain length to make the horizontal distance a full 30 m. Option (2), 30(1 − cos θ), is instead the slope correction subtracted from a length already measured along the slope.
+
+Q 2 | sur | Surveying
+Which one of the following angles can be set out with the help of French cross staff?
+(1) 180°
+(2) 90°
+(3) 45°
+(4) any angle
+= 3
+~ A French cross staff is an octagonal tube with sighting slits on all eight faces, so unlike the ordinary open cross staff (which gives only right angles) it can also set out 45° angles. It cannot set out any arbitrary angle; that needs an adjustable cross staff.
+
+Q 4 | sur | Surveying
+The line Joining points of equal dip is called
+(1) Isoclinic lines
+(2) Aclinic lines
+(3) Isogonic lines
+(4) Agonic lines
+= 1
+~ Isoclinic lines join places of equal magnetic dip, and the aclinic line joins places of zero dip. Isogonic and agonic lines refer to declination (equal and zero declination respectively), not dip.
+
+Q 5 | sur | Surveying
+If the forebearing of a line AB is 50° and that of line BC is 20°, then the included angle between the lines is
+(1) 70°
+(2) 120°
+(3) 220°
+(4) 150°
+= 4
+~ Back bearing of AB = 50° + 180° = 230°, so the included angle at B = FB of BC − BB of AB = 20° − 230° + 360° = 150°. Equivalently, the line deflects 50° − 20° = 30° to the left at B, and 180° − 30° = 150°.
+
+Q 6 | sur | Surveying
+When contours of different elevations cross each other, it indicates
+(1) Level surface
+(2) Overhanging cliff
+(3) Saddle
+(4) Vertical cliff
+= 2
+~ Contours of different elevations can intersect only where the ground overhangs, as in an overhanging cliff or cave. For a vertical cliff the contours merge into one line without crossing, and a saddle shows as two sets of closed contours between two summits.
+
+Q 7 | sur | Surveying
+In theodolite survey, the telescope is said to be inverted, if the
+(1) Vertical circle is to the right of the observer and the bubble of the telescope is up
+(2) Vertical circle is to the right of the observer and the bubble of the telescope is down
+(3) Vertical circle is to the left of the observer and the bubble of the telescope is up
+(4) Vertical circle is to the left of the observer and the bubble of the telescope is down
+= 2
+~ In the normal (face left) position the vertical circle is on the observer's left and the telescope bubble is up. After transiting, the telescope is inverted (face right): the vertical circle comes to the observer's right and the bubble is down.
+
+Q 8 | sur | Remote Sensing & GIS
+In Geographic information system, line in polygon method is characteristic of
+(1) Buffer operation
+(2) Raster overlay
+(3) Intersecting operation
+(4) Vector overlay
+= 4
+~ Point-in-polygon, line-in-polygon and polygon-on-polygon are the three types of vector overlay, where geometric features are intersected with polygon layers. Raster overlay instead combines layers cell by cell.
+
+Q 9 | sur | Surveying
+If the RL of a BM is 100m, the back sight is 1.415m and the foresight is 1.670m, the RL of the forward station is
+(1) 101.670m
+(2) 101.415m
+(3) 99.745m
+(4) 98.585m
+= 3
+~ Height of instrument = RL of BM + BS = 100 + 1.415 = 101.415 m. RL of forward station = HI − FS = 101.415 − 1.670 = 99.745 m.
+
+Q 10 | trn | Highway Engineering
+In functional classification of highways, which one of the following highway type have highest mobility and less accessibility
+(1) National Highways
+(2) State Highways
+(3) Major District roads
+(4) Street and Village Roads
+= 1
+~ In the functional hierarchy, arterial roads such as National Highways are meant for long-distance through traffic, so they give the highest mobility with restricted access. Mobility falls and accessibility rises down the hierarchy, with village roads and local streets giving the most access.
+
+Q 11 | trn | Traffic Engineering
+Webster's equation for computing saturation flow rate in signal design (S = saturation flow rate PCU/hour; W = carriage way width in meters.)
+(1) S = 225 W PCU/hour
+(2) S = 525 W PCU/hour
+(3) S = 550 W PCU/hour
+(4) S = 250 W PCU/hour
+= 2
+~ For an approach width of about 5.5 m to 18 m, Webster's method takes the saturation flow as S = 525 W PCU per hour of green, where W is the approach width in metres.
+
+Q 12 | trn | Highway Engineering
+For the calculation of stopping distance, the longitudinal friction co-efficient values of ______ have been recommended by Indian Roads Congress.
+(1) 0.35 to 0.40
+(2) 0.15 to 0.20
+(3) 0.40 to 0.45
+(4) 0.45 to 0.50
+= 1
+~ IRC recommends a longitudinal friction coefficient ranging from 0.40 at low speeds down to 0.35 at high speeds for calculating braking distance in SSD. Values of 0.15 to 0.20 are of the order used for lateral friction on curves, not braking.
+
+Q 13 | trn | Traffic Engineering
+In total reaction time of the driver, the time required for the sensations received by the eyes/ears to be transmitted to the brain through the nervous system and spinal cord is called ______.
+(1) Intellection time
+(2) Emotion time
+(3) Volition time
+(4) Perception time
+= 4
+~ In the PIEV theory, perception time is the time taken for the sensations received by the eyes or ears to be carried to the brain through the nervous system and spinal cord. Intellection is the time to understand the situation, emotion the time spent on fear, anger, etc., and volition the time to decide and act.
+
+Q 14 | trn | Highway Engineering
+Calculate the value of lag distance in SSD for a highway with a design speed of 65 kmph?
+(1) 45.18 m
+(2) 36.14 m
+(3) 32.50 m
+(4) 451.80 m
+= 1
+~ Lag distance = 0.278 V t, with the IRC reaction time t = 2.5 s. So lag distance = 0.278 × 65 × 2.5 = 45.18 m.
+
+Q 15 | trn | Highway Engineering
+The psychological widening of pavement is calculated using which one of the following formula (take V = speed of vehicle in kmph; R = radius of the curve in m)
+(1) V²/(9.5√R)
+(2) V/(9.5√R)
+(3) V/(9.5R)
+(4) V³/(9.5R²)
+= 2
+~ IRC gives psychological (extra) widening on horizontal curves as W_ps = V/(9.5√R) m. It is added to the mechanical widening nl²/(2R) to get the total widening.
+
+Q 16 | trn | Highway Engineering
+Find out the rate of change of centrifugal acceleration for a design speed of 75 kmph, using IRC recommended formula.
+(1) 0.63 m/sec³
+(2) 0.53 m/sec³
+(3) 0.48 m/sec³
+(4) 0.73 m/sec³
+= 2
+~ IRC formula: C = 80/(75 + V) = 80/(75 + 75) = 0.53 m/sec³. This lies within the IRC limits of 0.5 to 0.8 m/sec³, so it is adopted.
+
+Q 17 | trn | Traffic Engineering
+Estimate the theoretical capacity of a traffic lane with traffic flow stream speed of 50 kmph (take average centre to centre spacing of vehicles as 10 m)
+(1) 500 vehicles /hour/lane
+(2) 5000 vehicles /hour/lane
+(3) 3000 vehicles /hour/lane
+(4) 300 vehicles /hour/lane
+= 2
+~ Theoretical capacity C = 1000 V/S, with V in kmph and spacing S in m. C = 1000 × 50/10 = 5000 vehicles/hour/lane.
+
+Q 18 | trn | Highway Engineering
+In a flexible pavement, the different materials with the CBR values are available as follows: 80%, 60%, 15% and 4%. Indicate the order (top to bottom) in which the materials are to be placed for making a good pavement
+(1) 4%, 15%, 60%, 80%
+(2) 4%, 60%, 80%, 15%
+(3) 80%, 60%, 15%, 4%.
+(4) 4%, 80%, 15%, 60%
+= 3
+~ In a flexible pavement the wheel stresses are highest at the surface and spread out with depth, so the strongest material (highest CBR) goes on top and weaker layers below. Hence 80% (base), 60%, 15% (sub-base) and 4% (subgrade) from top to bottom.
+
+Q 19 | trn | Highway Engineering
+Calculate the Equivalent Axle load factor (EALF) for single axle load of 10 tons using fourth power formula.
+(1) 2.26
+(2) 22.60
+(3) 1.23
+(4) 11.23
+= 1
+~ By the fourth power rule, EALF = (axle load/standard axle load)⁴. With the standard single axle of 8.16 t (80 kN), EALF = (10/8.16)⁴ = 1.2255⁴ ≈ 2.26.
+
+Q 20 | trn | Highway Engineering
+The hardness and toughness properties of a road aggregate will be obtained from
+(1) Aggregate Impact Test
+(2) Aggregate crushing test
+(3) Los Angeles Abrasion Test
+(4) Aggregate Shape test
+= 3
+~ In the Los Angeles abrasion test the aggregate is tumbled with steel balls in a rotating drum, so it is subjected to abrasion (testing hardness) and impact (testing toughness) at the same time. The impact test measures toughness only and the crushing test measures strength.
+
+Q 21 | trn | Highway Engineering
+In the rigid pavement fatigue analysis, the ratio of flexural stress due to load and the flexural strength due to concrete is less than 0.45 indicates
+(1) the allowable number of repetitions of the axle loads is infinity
+(2) the allowable number of repetitions of the axle loads is zero
+(3) the allowable number of repetitions of the axle loads is 4500
+(4) the allowable number of repetitions of the axle loads is 45000
+= 1
+~ In IRC:58 fatigue analysis, when the stress ratio (flexural stress/modulus of rupture) is below 0.45 the concrete can withstand an unlimited number of load repetitions. Such axle loads therefore consume no fatigue life.
+
+Q 22 | trn | Railways & Airports
+The gauge widths (in meter) for broad, standard and narrow gauges respectively are
+(1) 1.767, 1.650 and 0.760
+(2) 1.676, 1.500 and 0.676
+(3) 1.676, 1.435 and 0.762
+(4) 1.876, 1.656 and 0.800
+= 3
+~ Broad gauge is 1676 mm, standard gauge is 1435 mm and narrow gauge (2 ft 6 in) is 762 mm; metre gauge is 1000 mm.
+
+Q 23 | trn | Railways & Airports
+For airports serving big aircrafts, ICAO recommends the cross wind component should not exceed ______.
+(1) 25 kmph
+(2) 35 kmph
+(3) 15 kmph
+(4) 23 kmph
+= 2
+~ ICAO limits the crosswind component to about 37 km/h (20 knots) for large aircraft that need long runways (reference field length of 1500 m or more), which Indian textbooks quote as 35 kmph. Smaller aircraft are allowed lower crosswind limits.
+
+Q 24 | trn | Railways & Airports
+The monthly mean of average daily temperature for the hottest month of the year is 30°C and the monthly mean of the maximum daily temperature for the same month of the year is 45°C, Find out the airport reference temperature
+(1) 25°C
+(2) 35°C
+(3) 40°C
+(4) 15°C
+= 2
+~ Airport reference temperature = Ta + (Tm − Ta)/3, where Ta is the mean of average daily temperature and Tm the mean of maximum daily temperature of the hottest month. ART = 30 + (45 − 30)/3 = 35°C.
+
+Q 25 | trn | Railways & Airports
+The minimum value of Composite Sleeper Index (CSI) prescribed on Indian railways for track sleeper is
+(1) 783
+(2) 1352
+(3) 1455
+(4) 873
+= 1
+~ Indian Railways prescribe a minimum composite sleeper index of 783 for timber track sleepers. The higher values 1352 and 1455 are the minimums for crossing sleepers and bridge sleepers respectively.
+
+Q 26 | trn | Railways & Airports
+The formula used for calculation of superelevation on railways is ______ (take G = gauge in meters, V = Speed in kmph; R = radius of curve in meters)
+(1) GV²/(127R) m
+(2) GV²/(127R) cm
+(3) GV³/(127R) m
+(4) GV²/(225R) m
+= 1
+~ For equilibrium on a curve e/G = v²/(gR); with v = V/3.6 m/s and g = 9.81 m/s² this gives e = GV²/(127R), since 3.6² × 9.81 ≈ 127. With G and R in metres the superelevation e also comes out in metres, so option (2) has the wrong unit.
+
+Q 27 | bmc | Construction & Estimation
+Cornice and coping is measured in ______
+(1) Running meter & Square meter
+(2) Running meter & Running meter
+(3) Square meter & Square meter
+(4) Square meter & Running meter
+= 2
+~ Cornices and copings are linear features of a building, so in estimates both are measured in running metres, with their cross-section described in the item. Area units are used for items such as plastering and flooring.
+
+Q 28 | sur | Surveying
+In Simpson's formula for areas calculation, the line joining the top of the ordinates is considered as
+(1) elliptical
+(2) circular
+(3) parabolic
+(4) straight
+= 3
+~ Simpson's one-third rule assumes that the boundary between every three consecutive ordinates is an arc of a parabola. The trapezoidal rule instead assumes straight lines between the tops of adjacent ordinates.
+
+Q 29 | sur | Surveying
+To obtain the correct volume using the trapezoidal rule, the prismoidal correction should always be
+(1) Multiplied
+(2) Added
+(3) Subtracted
+(4) Zero
+= 3
+~ The trapezoidal (average end area) rule usually overestimates the volume of earthwork compared with the prismoidal formula. The prismoidal correction is therefore subtracted from the trapezoidal volume to get the correct volume.
+
+Q 30 | bmc | Construction & Estimation
+In earth work excavation, normally lead and lift is considered for preparation of road estimate
+(1) 30 m and 1.5 m
+(2) 20 m and 1.5 m
+(3) 20 m and 2.0 m
+(4) 30 m and 2.0 m
+= 1
+~ The normal rate for earthwork in estimates includes an initial lead of 30 m (horizontal carriage) and a lift of 1.5 m (vertical raising). Extra lead or lift beyond these is paid for separately.
+
+Q 31 | geot | Soil Mechanics
+The unconfined compressive strength of a clay in un-disturbed and disturbed state was found to be 180 kN/sqm and 10 kN/sqm respectively. Based on Sensitivity, the soil may be classified as:
+(1) In-sensitive
+(2) Sensitive
+(3) Quick Clays
+(4) Extra Sensitive Clays
+= 3
+~ Sensitivity = undisturbed strength/remoulded strength = 180/10 = 18. Clays with sensitivity above 16 are classed as quick clays (8 to 16 is extra-sensitive, 4 to 8 sensitive).
+
+Q 32 | geot | Soil Mechanics
+If R_1 and R_2 are the radii of curvature of a non-uniform meniscus in two orthogonal planes, the capillary rise is given by:
+(1) h_c = (σ/γ_w){R_1 + R_2}
+(2) h_c = (σ/γ_w){(1/R_1) + (1/R_2)}
+(3) h_c = (σ/γ_w){R_1 × R_2}
+(4) h_c = (σ/γ_w){R_1/R_2}
+= 2
+~ By Laplace's equation, the pressure difference across a curved meniscus is σ(1/R_1 + 1/R_2); equating it to the weight of the raised column, γ_w h_c, gives h_c = (σ/γ_w)(1/R_1 + 1/R_2). For a spherical meniscus (R_1 = R_2 = R) this reduces to the familiar 2σ/(γ_w R).
+
+Q 33 | geot | Soil Mechanics
+The coefficient of permeability of a soil sample having its void ratio as 0.50 and co-efficient of percolation as 3.00 × 10⁻⁴ cm/s is:
+(1) 3.00 × 10⁻⁴ cm/s
+(2) 1.50 × 10⁻⁴ cm/s
+(3) 6.00 × 10⁻⁴ cm/s
+(4) 1.00 × 10⁻⁴ cm/s
+= 4
+~ Coefficient of percolation k_p = k/n, where porosity n = e/(1 + e) = 0.50/1.50 = 1/3. So k = k_p × n = 3.00 × 10⁻⁴ × 1/3 = 1.00 × 10⁻⁴ cm/s.
+
+Q 34 | geot | Soil Mechanics
+In a Laboratory, to perform IS Heavy Compaction Test, it was required to use a mould of 1400 cc capacity in place of standard 1000 cc capacity mould. All other parameters remaining same, the number of blows to be applied per layer to ensure the designated compaction energy is:
+(1) 56
+(2) 25
+(3) 35
+(4) 50
+= 3
+~ The standard 1000 cc mould receives 25 blows per layer, and to keep the same compaction energy per unit volume the number of blows must increase in proportion to the mould volume. Blows = 25 × 1400/1000 = 35.
+
+Q 35 | geot | Soil Mechanics
+The magnitude of total primary consolidation settlement of a 6m thick clay with single drainage was estimated as 96 mm. Later it was found that, the medium has double drainage. Then, the magnitude of total primary consolidation settlement will be:
+(1) 48 mm
+(2) 192 mm
+(3) 384 mm
+(4) 96 mm
+= 4
+~ Final consolidation settlement (m_v Δσ H) depends on the compressibility, stress increase and layer thickness, not on the drainage conditions. Double drainage only shortens the drainage path, so the settlement happens about four times faster but stays 96 mm.
+
+Q 36 | geot | Soil Mechanics
+The shear strength of a pure clay specimen when tested in Unconfined compression Test was found to be 100 kPa. If the same specimen was tested in Tri-axial Compression Test, the deviatoric stress at which specimen will undergo failure when the confining stress was 50 kPa, will be:
+(1) 50 kPa
+(2) 100 kPa
+(3) 200 kPa
+(4) 400 kPa
+= 3
+~ A shear strength of 100 kPa means c_u = 100 kPa, so the unconfined compressive strength is q_u = 2c_u = 200 kPa. For a pure clay tested undrained (φ_u = 0) the deviator stress at failure does not depend on the confining pressure, so at 50 kPa confinement it is again 2c_u = 200 kPa; 100 kPa would be the answer only if 100 kPa were the compressive strength.
+
+Q 38 | geot | Soil Mechanics
+The factor of safety of a slope of given inclination of 6 m high constructed using a soil with c=60 kPa, γ=20 kN/cum and its Taylor's stability number=0.20, will be:
+(1) 2.50
+(2) 5.00
+(3) 1.00
+(4) 2.00
+= 1
+~ Mobilised cohesion c_m = S_n γ H = 0.20 × 20 × 6 = 24 kPa. Factor of safety = c/c_m = 60/24 = 2.50.
+
+Q 39 | geot | Soil Mechanics
+According to Boussinesque's theory, under the application of a point load of 100 kN on the surface, the pressure bulb corresponding to an increment in vertical stress of 47.75 kN/sqm will extend to a depth of:
+(1) 0.50 m
+(2) 1.00 m
+(3) 2.00 m
+(4) 4.00 m
+= 2
+~ Directly below the load, Boussinesq gives σ_z = (3/2π)Q/z² = 0.4775 Q/z². Setting 47.75 = 0.4775 × 100/z² gives z² = 1, so the bulb extends to z = 1.00 m.
+
+Q 40 | geot | Foundation Engineering
+The ultimate bearing capacity of a shallow foundation laid on a cohesion-less soil medium was estimated as 200 kN/sqm, when the water table was far below. All other conditions remaining the same, the ultimate bearing capacity of the foundation, when the water table was risen to ground level, is:
+(1) 400 kN/sqm
+(2) 200 kN/sqm
+(3) 100 kN/sqm
+(4) 50 kN/sqm
+= 3
+~ For a cohesionless soil both terms of the bearing capacity equation (γD_f N_q and 0.5γBN_γ) contain the unit weight, which becomes the submerged unit weight (about half) when the water table rises to ground level. The capacity is therefore halved: 200/2 = 100 kN/sqm.
+
+Q 41 | geot | Foundation Engineering
+The observations of a Standard Penetration Test are reported as 10/15/20. Assuming correction for overburden is not required and correction for dilatancy only is required, the corrected N-value is:
+(1) 45
+(2) 35
+(3) 25
+(4) 15
+= 3
+~ The first 150 mm is the seating drive and is ignored, so observed N = 15 + 20 = 35. Since N > 15, the dilatancy correction gives N' = 15 + (N − 15)/2 = 15 + (35 − 15)/2 = 25.
+
+Q 42 | geot | Foundation Engineering
+The ultimate load carrying capacity of an end bearing type of bored cast-in-situ circular pile is estimated as 100 kN. All other parameters remaining the same, the capacity of the Pile if the diameter is doubled, is:
+(1) 100 kN
+(2) 200 kN
+(3) 300 kN
+(4) 400 kN
+= 4
+~ An end bearing pile carries its load through the base, Q = q_b × (π/4)d², so the capacity varies with d². Doubling the diameter makes it 2² = 4 times, i.e. 4 × 100 = 400 kN.
+
+Q 43 | geot | Foundation Engineering
+Which of the following type of Piles is more appropriate as foundation of structures constructed on Expansive Clays:
+(1) Batter Piles
+(2) Sheet Piles
+(3) Under-reamed Piles
+(4) Compaction Piles
+= 3
+~ Under-reamed piles have one or more bulbs that anchor them in stable soil below the zone of seasonal moisture change, so they resist the uplift caused when expansive (black cotton) clays swell. They are the standard foundation for light structures on such soils.
+
+Q 44 | geot | Foundation Engineering
+The type of Caissons preferred in sites where high upward seepage exists, is:
+(1) Pneumatic Caissons
+(2) Open Caissons
+(3) Box Caissons
+(4) Open caissons and Box caissons
+= 1
+~ A pneumatic caisson has a closed working chamber at its bottom kept under compressed air, which holds back the water and prevents soil from boiling or flowing in, so excavation can be done in the dry. Open caissons, dredged through water, are prone to blows and loss of ground where strong upward seepage exists.
+
+Q 45 | geot | Foundation Engineering
+Coffer Dams are :
+(1) Permanent structures meant for storage of water
+(2) Structures built across drains to act as check dams
+(3) Temporary structures build to reserve water in side to cure foundation concrete
+(4) Temporary structures build to reserve water outside to facilitate construction of foundation
+= 4
+~ A cofferdam is a temporary enclosure built in water or water-bearing soil to keep water out of the working area, so that foundations can be laid in the dry. It is removed after the work is complete.
+
+Q 46 | fm | Fluid Mechanics
+The dimensions for Kinematic Viscosity is
+(1) FL⁻²T
+(2) ML⁻¹T⁻¹
+(3) L²T⁻²
+(4) L²T⁻¹
+= 4
+~ Kinematic viscosity ν = μ/ρ, with units m²/s, so its dimensions are L²T⁻¹. FL⁻²T and ML⁻¹T⁻¹ are the dimensions of dynamic viscosity μ.
+
+Q 47 | fm | Fluid Mechanics
+The stream function for a potential flow field is given by ψ=x²-y², the corresponding potential function (Φ), assuming zero potential at the origin is
+(1) x²+y²
+(2) 2xy
+(3) x²-y²
+(4) x-y
+= 2
+~ From ψ = x² − y², u = ∂ψ/∂y = −2y and v = −∂ψ/∂x = −2x. With u = −∂Φ/∂x and v = −∂Φ/∂y this gives Φ = 2xy (zero at the origin); Φ and ψ are harmonic conjugates, and the opposite sign convention only changes the sign to −2xy.
+
+Q 48 | fm | Fluid Mechanics
+Water flows through a large size pipe. The stagnation pressure and static pressures measured by a pitot tube are 0.3m and 0.24m of water. The velocity of flow in, m/minute is
+(1) 1.08
+(2) 65.00
+(3) 10.8
+(4) 0.65
+= 2
+~ Dynamic head = 0.30 − 0.24 = 0.06 m, so V = √(2gh) = √(2 × 9.81 × 0.06) = 1.085 m/s. In m/minute, V = 1.085 × 60 ≈ 65 m/minute.
+
+Q 49 | fm | Hydraulics & Hydraulic Machines
+A rectangular channel has a width of 1.8m and carries a discharge of 1.8m³/sec at a depth of 0.20m. The specific energy is
+(1) 1.03m
+(2) 1.47m
+(3) 1.87m
+(4) 2.0m
+= 2
+~ Velocity V = Q/(by) = 1.8/(1.8 × 0.20) = 5 m/s, so velocity head = 5²/(2 × 9.81) = 1.274 m. Specific energy E = y + V²/2g = 0.20 + 1.274 = 1.47 m.
+
+Q 50 | wre | Hydrology
+In a catchment there are six rain gauge stations with average depth of rainfall of 92.8cm and standard deviation of the rainfall is recorded in these rain gauge stations is 30.7cm. For a 10% degree of error in the measurement of mean rainfall, the optimum number of stations required is
+(1) 5 nos
+(2) 6 nos
+(3) 10 nos
+(4) 11 nos
+= 4
+~ Coefficient of variation C_v = 100 × 30.7/92.8 = 33.08%. Optimum number of stations N = (C_v/ε)² = (33.08/10)² = 10.9, which is rounded up to 11 stations.
+
+Q 51 | wre | Hydrology
+The area between the two isohyets 45cm and 55cm is 100km² and that between 55cm and 65cm is 150km². What is the average depth of annual precipitation over the basin of 250km²
+(1) 50cm
+(2) 52cm
+(3) 56cm
+(4) 60cm
+= 3
+~ By the isohyetal method each strip takes the mean of its bounding isohyets (50 cm and 60 cm), so P = (100 × 50 + 150 × 60)/250 = 14000/250 = 56 cm.
+
+Q 52 | wre | Hydrology
+The total observed runoff volume during a 4hr storm with a uniform intensity of 2.8cm/hr is 25.2×10⁶ m³ from a basin of 280 km² area. What is the average infiltration rate for the basin
+(1) 3.6mm/hr
+(2) 4.8mm/hr
+(3) 5.2mm/hr
+(4) 5.5mm/hr
+= 4
+~ Rainfall = 2.8 × 4 = 11.2 cm; runoff depth = 25.2×10⁶ / (280×10⁶) = 0.09 m = 9 cm; so infiltration = 11.2 − 9 = 2.2 cm in 4 h = 0.55 cm/h = 5.5 mm/hr.
+
+Q 53 | wre | Hydrology
+A volume of 3×10⁶ m³ of groundwater was pumped out from an unconfined aquifer, uniformly over an area of 5km². The pumping lowered the water table from initial level of 102m to 99m. The specific yield of the aquifer is
+(1) 0.20
+(2) 0.30
+(3) 0.40
+(4) 0.50
+= 1
+~ Specific yield = volume drained / (area × fall of water table) = 3×10⁶ / (5×10⁶ × 3) = 0.20.
+
+Q 54 | wre | Hydrology
+A hyetograph is a plot of
+(1) Cumulative rainfall Vs time
+(2) Rainfall intensity Vs time
+(3) Rainfall depth Vs duration
+(4) Discharge Vs time
+= 2
+~ A hyetograph shows rainfall intensity against time (usually as a bar diagram); cumulative rainfall against time is a mass curve and discharge against time is a hydrograph.
+
+Q 55 | wre | Hydrology
+The unit of intrinsic permeability is
+(1) cm/day
+(2) m/day
+(3) Darcy/day
+(4) cm²
+= 4
+~ Intrinsic permeability k = Kμ/γ depends only on the pore geometry of the medium and has dimensions of L² (cm², or the darcy); cm/day and m/day are units of hydraulic conductivity, which also depends on the fluid.
+
+Q 56 | wre | Hydrology
+If S_y = specific yield and S_r = specific retention then
+(1) S_y + S_r = void ratio
+(2) S_y + S_r = porosity
+(3) S_y + S_r = 1.0
+(4) S_y + S_r = permeability
+= 2
+~ Of the total pore volume, the part that drains by gravity is the specific yield and the part held back against gravity is the specific retention, so S_y + S_r = porosity (n), not void ratio.
+
+Q 57 | wre | Irrigation Engineering
+If duty (D) is 1428 hectare/cumec and base period (B) is 120 days for an irrigated crop, then delta (Δ) in metres is given by
+(1) 102.8
+(2) 0.73
+(3) 1.38
+(4) 0.01
+= 2
+~ Δ = 8.64B/D (Δ in m, B in days, D in ha/cumec) = 8.64 × 120/1428 = 0.726 ≈ 0.73 m.
+
+Q 58 | wre | Irrigation Engineering
+Which one of the following equations represents the downstream profile of Ogee spillway with vertical upstream face? (X, Y) are the coordinates of the point on the downstream profile with origin at the crest of the spillway and H_d is the design head.
+(1) Y/H_d = -0.5(X/H_d)^1.85
+(2) Y/H_d = -0.5(X/H_d)^(1/185)
+(3) Y/H_d = -2.0(X/H_d)
+(4) Y/H_d = -2.0(X/H_d)^(1/185)
+= 1
+~ The WES standard profile for a vertical upstream face is X^1.85 = 2.0 H_d^0.85 Y, i.e. Y/H_d = 0.5(X/H_d)^1.85, with the minus sign because Y is measured downward from the crest.
+
+Q 59 | wre | Irrigation Engineering
+For no tension to develop in the gravity dam the eccentricity 'e' of the resultant force should be
+(1) Less than b/3
+(2) Less than b/6
+(3) Less than b/4
+(4) Less than b/12
+= 2
+~ Base stress = (ΣV/b)(1 ± 6e/b), so the heel stays in compression only if e ≤ b/6, i.e. the resultant lies within the middle third of the base.
+
+Q 60 | wre | Irrigation Engineering
+Lacey's equations can be used for the design of
+(1) Unlined channels only
+(2) Lined channels only
+(3) Both lined and unlined channels
+(4) Neither lined nor unlined channels
+= 1
+~ Lacey's regime theory applies to unlined alluvial channels that adjust their own width, depth and slope to the silt load until they reach regime; lined channels have a fixed section and are designed with Manning's formula.
+
+Q 61 | wre | Irrigation Engineering
+Syphon aqueduct is a cross drainage work provided to carry canal over a natural drain when
+(1) Canal bed is well above the HFL of the natural drain
+(2) Canal bed is at the same level as the bed of the natural drain
+(3) Canal bed is below the HFL of the natural drain
+(4) Canal bed is below bed of the natural drain
+= 3
+~ When the drain's HFL rises above the canal bed, the drain water passes under the canal through barrels flowing under pressure (syphonic action), so the structure is a syphon aqueduct; if the canal bed is well above the HFL it is an ordinary aqueduct.
+
+Q 62 | fm | Fluid Mechanics
+Poise is the CGS unit of
+(1) Kinematic viscosity
+(2) Dynamic viscosity
+(3) Mass Density
+(4) Weight Density
+= 2
+~ 1 poise = 1 dyne-s/cm² = 0.1 N-s/m², a unit of dynamic viscosity; the CGS unit of kinematic viscosity is the stokes (cm²/s).
+
+Q 63 | fm | Fluid Mechanics
+The velocity gradient is 1000/s. The viscosity is 1.2×10⁻⁴ N-s/m². The shear stress is
+(1) 0.12N/m²
+(2) 1.2×10⁻⁷ N/m²
+(3) 12N/m²
+(4) 12×10⁻⁵ N/m²
+= 1
+~ By Newton's law of viscosity τ = μ(du/dy) = 1.2×10⁻⁴ × 1000 = 0.12 N/m².
+
+Q 65 | fm | Fluid Mechanics
+If ψ = 3x²y - y³, the values of u and v are
+(1) 6xy, 3x² - 3y²
+(2) 3x² - 3y², 6xy
+(3) (3x² - 3y²), -6xy
+(4) 3y² - 3x², 6xy
+= 3
+~ With the convention u = ∂ψ/∂y and v = −∂ψ/∂x: u = 3x² − 3y² and v = −6xy. Some Indian textbooks use the opposite sign convention (u = −∂ψ/∂y, v = ∂ψ/∂x), which gives option (4), but the official key follows the first.
+
+Q 66 | fm | Fluid Mechanics
+In a three dimensional motion of a fluid, the component of rotation about the x-axis, ω_x is
+(1) (1/2)(∂w/∂y - ∂v/∂z)
+(2) (1/2)(∂u/∂z - ∂w/∂y)
+(3) (1/2)(∂v/∂x - ∂u/∂y)
+(4) (1/2)(∂v/∂x - ∂w/∂y)
+= 1
+~ Rotation about the x-axis involves only the velocities in the y-z plane: ω_x = ½(∂w/∂y − ∂v/∂z); option (3) is ω_z.
+
+Q 67 | fm | Fluid Mechanics
+Existence of velocity potential implies that
+(1) Fluid is in continuum
+(2) Fluid is irrotational
+(3) Fluid is ideal
+(4) Fluid is compressible
+= 2
+~ If u = −∂φ/∂x, v = −∂φ/∂y, w = −∂φ/∂z, every rotation component such as ½(∂v/∂x − ∂u/∂y) becomes zero, so a velocity potential can exist only for irrotational flow.
+
+Q 68 | fm | Fluid Mechanics
+Piezometric head is the summation of
+(1) Velocity head and elevation head
+(2) Velocity head and pressure head
+(3) Pressure head and elevation head
+(4) Total head
+= 3
+~ Piezometric head = p/γ + z (pressure head + elevation head), the level to which water rises in a piezometer; adding the velocity head gives the total head.
+
+Q 69 | fm | Fluid Mechanics
+The Bernoulli's equation is written with usual notation as p/γ + v²/2g + z = Constant. In this equation each of the terms represents
+(1) Energy in kg.m/kg mass of fluid
+(2) Energy in Nm/kg mass of fluid
+(3) Energy in Nm/N weight of fluid
+(4) Energy in KW/kg mass of fluid
+= 3
+~ In this form every term has the unit of length (m), i.e. energy per unit weight (N·m/N), which is why the terms are called heads.
+
+Q 70 | fm | Hydraulics & Hydraulic Machines
+A 50mm diameter jet having a velocity of 25m/s strikes a flat stationary plate, the normal of which is inclined at 60° to the axis of the jet. The normal force exerted on the plate in Newtons is
+(1) 460N
+(2) 360 N
+(3) 640 N
+(4) 630 N
+= 1
+~ With the plate normal at 60° to the jet, F_n = ρaV² cos 60° = 1000 × (π/4)(0.05)² × 25² × 0.5 ≈ 614 N (reading 60° as the angle of the plate itself gives ρaV² sin 60° ≈ 1063 N instead). The official key gives 460 N, which neither standard working reproduces, so treat this key with caution. (Official final key; some sources differ.)
+
+Q 71 | fm | Fluid Mechanics
+Reynolds number of a flow is the ratio of
+(1) Gravity forces to viscous forces
+(2) Gravity forces to pressure forces
+(3) Inertia forces to viscous forces
+(4) Viscous forces to pressure forces
+= 3
+~ Re = ρVD/μ = inertia force / viscous force; the ratio involving gravity (inertia to gravity) is the Froude number.
+
+Q 72 | fm | Fluid Mechanics
+Ratio of the average velocity to maximum velocity for steady laminar flow in circular pipe is
+(1) 1/2
+(2) 2/3
+(3) 3/2
+(4) 2
+= 1
+~ For laminar (Hagen-Poiseuille) flow the velocity profile is parabolic, u = u_max(1 − r²/R²), whose mean over the circular section is u_max/2.
+
+Q 73 | fm | Fluid Mechanics
+Difference in elevation between TEL and HGL of pipe flow at a point is equal to
+(1) Datum head
+(2) Velocity head
+(3) Pressure head
+(4) Piezometric head
+= 2
+~ The HGL is at p/γ + z and the TEL at p/γ + z + V²/2g, so the TEL lies above the HGL by the velocity head V²/2g.
+
+Q 74 | fm | Fluid Mechanics
+Boundary layer separation takes place when
+(1) ∂p/∂x>0
+(2) ∂v/∂y≤0
+(3) ∂p/∂x>0 & ∂v/∂y≤0
+(4) ∂p/∂x<0
+= 3
+~ Separation needs an adverse pressure gradient (∂p/∂x > 0) that slows the flow near the wall until the velocity gradient at the wall becomes zero or negative; a favourable gradient (∂p/∂x < 0) prevents separation, and an adverse gradient alone does not guarantee it.
+
+Q 75 | fm | Hydraulics & Hydraulic Machines
+For a uniform flow with a depth of 0.6m and Froude number of 2.0 in a rectangular channel, the specific energy will be
+(1) 2.4m
+(2) 0.8m
+(3) 2.6m
+(4) 1.8m
+= 4
+~ Fr² = V²/(gy) = 4, so V²/2g = 2y = 1.2 m and E = y + V²/2g = 0.6 + 1.2 = 1.8 m.
+
+Q 76 | fm | Hydraulics & Hydraulic Machines
+A water turbine of expected efficiency 85% operates under 36m at a flow rate of 10m³/s. The unit weight of water is 10kN/m³. The nearest shaft power in MW is
+(1) 3.06
+(2) 3060
+(3) 3600
+(4) 850
+= 1
+~ Shaft power = ηγQH = 0.85 × 10 kN/m³ × 10 m³/s × 36 m = 3060 kW = 3.06 MW (3060 is the answer in kW, not MW).
+
+Q 77 | evn | Water Supply
+A sedimentation tank 6m wide, 15m long and 3m water depth is treating 2MLD of water. The surface overflow rate in lt/hr/m² is
+(1) 858
+(2) 926
+(3) 1028
+(4) 748
+= 2
+~ Surface overflow rate = Q/(plan area) = 2×10⁶ litres/day ÷ (6 × 15 = 90 m²) = 22,222 lt/day/m² ÷ 24 ≈ 926 lt/hr/m²; the depth does not enter the calculation.
+
+Q 78 | evn | Water Supply
+The efficiency of a sediment removal in a continuous sedimentation tank does not depend upon the
+(1) Discharge through the tank
+(2) Width of the tank
+(3) Length of the tank
+(4) Depth of the tank
+= 4
+~ For an ideal continuous-flow settling tank, a particle is removed if its settling velocity is at least the overflow rate Q/(B × L), so efficiency depends on discharge and plan area (length and width) but not on depth.
+
+Q 79 | evn | Water Supply
+The disinfection efficiency of chlorine in water treatment
+(1) Is not dependant on pH value
+(2) Is increased by increase in pH value
+(3) Remains constant at all pH values
+(4) Is reduced by increase in pH value
+= 4
+~ Chlorine forms hypochlorous acid (HOCl), which dissociates into the much weaker hypochlorite ion (OCl⁻) as pH rises; so disinfection is best at low pH (below about 7) and falls as pH increases.
+
+Q 80 | evn | Sewerage & Wastewater Treatment
+A 2% solution of a sewage sample is kept at an incubation temperature of 20°C. If initial DO and final DO values after 5 days of incubation period are 8.5 mg/lit and 5.5 mg/lit respectively, then the BOD will be
+(1) 50mg/lit
+(2) 150mg/lit
+(3) 250mg/lit
+(4) 350mg/lit
+= 2
+~ BOD₅ = (DO_initial − DO_final)/dilution fraction = (8.5 − 5.5)/0.02 = 150 mg/lit.
+
+Q 81 | evn | Water Supply
+If total hardness of water is less than its total alkalinity the non-carbonate hardness will be equal to
+(1) Total alkalinity
+(2) Total hardness
+(3) Total alkalinity - total hardness
+(4) Zero
+= 4
+~ When total hardness ≤ total alkalinity, all the hardness is carbonate hardness (carbonate hardness = total hardness), so non-carbonate hardness is zero; the extra alkalinity is due to sodium/potassium salts.
+
+Q 82 | evn | Water Supply
+If for diluting 25ml of water sample 175ml of taste free water is required to be added to make the water sample to just lose its taste then the Flavour Threshold Number (FTN) will be
+(1) 6
+(2) 7
+(3) 8
+(4) 9
+= 3
+~ FTN = (A + B)/A, where A is the sample volume and B the taste-free dilution water, so FTN = (25 + 175)/25 = 8.
+
+Q 83 | evn | Water Supply
+In network of pipes
+(1) The algebraic sum of discharges around each circuit is zero
+(2) The algebraic sum of head losses around each circuit is zero
+(3) The elevation of hydraulic grade line is assumed for each junction point
+(4) Elementary circuits are replaced by equivalent pipes
+= 2
+~ In a pipe network (Hardy Cross method), the algebraic sum of head losses around every closed circuit (loop) must be zero, because the pressure head at a junction has a single value; the algebraic sum of discharges is zero at each junction (continuity), not around a circuit.
+
+Q 84 | evn | Solid Waste & Pollution
+The dispersion of pollutants in atmosphere is maximum when
+(1) Environmental lapse rate is greater than adiabatic lapse rate
+(2) Environmental lapse rate is less than adiabatic lapse rate
+(3) Environmental lapse rate is equal to adiabatic lapse rate
+(4) Maximum mixing depth is equal to zero
+= 1
+~ When the environmental lapse rate exceeds the adiabatic lapse rate (super-adiabatic condition), the atmosphere is unstable, rising air keeps rising and vertical mixing is strongest; a lower environmental lapse rate gives stable air and poor dispersion.
+
+Q 85 | evn | Solid Waste & Pollution
+Which one of the following pollutant (or) pairs of pollutants is formed due to photochemical reactions
+(1) CO alone
+(2) O₃ and PAN
+(3) PAN and NH₃
+(4) NH₃ and CO
+= 2
+~ Ozone and peroxyacetyl nitrate (PAN) are secondary pollutants formed when sunlight acts on nitrogen oxides and hydrocarbons (photochemical smog); CO and NH₃ are emitted directly as primary pollutants.
+
+Q 86 | evn | Sewerage & Wastewater Treatment
+If a sewer carrying a discharge of 3 cumecs outfalls into a river having a discharge of 10 cumecs and DO equal to 9.1mg/lt, the resultant DO of the mix will be equal to
+(1) 5mg/lt
+(2) 6mg/lt
+(3) 7mg/lt
+(4) 8mg/lt
+= 3
+~ Taking the DO of raw sewage as zero, the mixed DO = (10 × 9.1 + 3 × 0)/(10 + 3) = 91/13 = 7 mg/lt.
+
+Q 87 | evn | Sewerage & Wastewater Treatment
+The natural process under which the flowing river gets cleaned is known as
+(1) Oxidation
+(2) Photosynthesis
+(3) Reduction
+(4) Self-purification
+= 4
+~ Self-purification is the combined natural action of dilution, sedimentation, oxidation by bacteria, reaeration, sunlight and photosynthesis by which a river cleans itself; oxidation and photosynthesis are only parts of it.
+
+Q 88 | evn | Sewerage & Wastewater Treatment
+Recirculation in activated sludge process is done to
+(1) Dilute the incoming sewage
+(2) Dampen the effect of the flow variation
+(3) Operate the plant continuously
+(4) Supply seed materials to the aeration tank
+= 4
+~ Part of the settled sludge from the secondary clarifier is returned to the aeration tank so that the incoming sewage is seeded with an active population of acclimatised micro-organisms, keeping the MLSS at the required level.
+
+Q 89 | evn | Sewerage & Wastewater Treatment
+Lower Food to Micro-organism (F/M) ratio in a conventional activated treatment plant will mean
+(1) Lower BOD removal
+(2) Higher BOD removal
+(3) No effect on BOD removal
+(4) Medium BOD removal
+= 2
+~ At a low F/M ratio the micro-organisms are starved of food relative to their number, so they consume the organic matter more completely, giving higher BOD removal (as in extended aeration), though with a larger tank.
+
+Q 90 | evn | Sewerage & Wastewater Treatment
+The relative stability of a sewage sample whose dissolved oxygen levels equals the total oxygen required to satisfy its BOD is
+(1) Zero
+(2) 1%
+(3) 100%
+(4) Infinity
+= 3
+~ Relative stability is the oxygen available in the sample expressed as a percentage of the oxygen needed to satisfy its BOD, so when the two are equal the relative stability is 100%.
+
+Q 91 | som | Strength of Materials
+A rectangular box made with thin uniform plate measures 2000mm x 1000mm x 1000mm. When the box is subjected to certain internal pressure, the dimensions in respective directions have changed by +2.0mm, -1mm and +1mm. The change in the volume of the box is ______.
+(1) 2.0 × 10⁶ mm³
+(2) 1.0 × 10⁶ mm³
+(3) 2.0 × 10³ mm³
+(4) 2.0 × 10⁵ mm³
+= 1
+~ Volumetric strain = 2/2000 − 1/1000 + 1/1000 = 0.001, and V = 2000 × 1000 × 1000 = 2×10⁹ mm³, so ΔV = 0.001 × 2×10⁹ = 2.0×10⁶ mm³.
+
+Q 92 | som | Strength of Materials
+A rectangular section of a beam is acted upon by certain amounts of shear force and bending moment. Whereas the shear stress varies ______, the variation of bending stress is ______ along the depth.
+(1) linear with zero value at centroid, linear with zero value at centroid
+(2) parabolic with zero value at centroid, linear with zero value at centroid
+(3) parabolic, with zero value at top & bottom, linear with zero value at middle
+(4) linear with zero value at centroid, parabolic with zero value at top & bottom
+= 3
+~ In a rectangular section the shear stress τ = (F/2I)(d²/4 − y²) is parabolic, zero at the top and bottom and maximum (1.5 times average) at the neutral axis, while bending stress σ = My/I is linear and zero at the neutral axis (middle).
+
+Q 93 | som | Strength of Materials
+A simply supported beam of span L, carries a UVL with intensity varying from w/unit downward at left support to w/unit upward at right support. The reactions at left and right supports are respectively:
+(1) wL/4 upward and wL/4 downward
+(2) wL/4 downward and wL/4 upward
+(3) wL/6 upward and wL/6 downward
+(4) wL/8 upward and wL/8 downward
+= 3
+~ The load is a downward triangle wL/4 acting at L/6 from A and an upward triangle wL/4 acting at 5L/6 from A, so the net load is zero; moments about A give R_B × L = (wL/4)(L/6) − (wL/4)(5L/6) = −wL²/6, so R_B = wL/6 downward and R_A = wL/6 upward.
+
+Q 94 | som | Strength of Materials
+A cantilever beam of span L, uniform flexural rigidity EI is subjected to a unit couple at its free end. The deflection at the centre of the beam is:
+(1) L²/2EI
+(2) L²/8EI
+(3) L²/4EI
+(4) L²/16EI
+= 2
+~ A couple M at the free end gives constant bending moment, so the deflection at distance x from the fixed end is Mx²/(2EI); with M = 1 and x = L/2 it is (L/2)²/(2EI) = L²/8EI (L²/2EI is the tip deflection).
+
+Q 96 | som | Strength of Materials
+A simply supported beam of span L, carries two couples of magnitude M each acting at both middle third locations of the beam. While one of them is acting clockwise the other is acting counter clockwise. Magnitude of the maximum shear force acting in the beam ______.
+(1) 2M/L
+(2) M/L
+(3) 1.5M/L
+(4) 0
+= 4
+~ The two equal and opposite couples cancel, so both support reactions are zero; with no transverse load and no reactions the shear force is zero everywhere (the bending moment is M between the couples, but there is no shear).
+
+Q 97 | som | Structural Analysis
+The plane truss shown in Fig.2 carries a point load W and a moment M at the location B. Force carried by member AB is ______.
+(1) 5W/6 (compressive)
+(2) W/2 (compressive)
+(3) 5W/6 + M/L (compressive)
+(4) W/2 - M/2 (compressive)
+= 1
+! img/m15b-q97.png
+~ Truss members are pin-connected and carry only axial force, so the moment at the pin B does not enter the member forces; both members slope 3 vertical : 4 horizontal (sin θ = 3/5), so by symmetry 2F(3/5) = W gives F_AB = 5W/6, compressive.
+
+Q 98 | som | Structural Analysis
+Analysis of trusses is based on the following assumptions. The correct combination of assumptions is ______.
+(i) All loads act at joints
+(ii) All joints are smooth friction less pin joints.
+(iii) Truss is made with material which is homogeneous, elastic and isotropic.
+(iv) The axis of all members is straight and their self weights are ignored.
+(1) i, ii and iv
+(2) i, ii, iii
+(3) i, iv
+(4) i, iii, iv
+= 1
+~ The ideal-truss assumptions are that loads act only at the joints, joints are frictionless pins, and members are straight with self-weight neglected, so every member carries only axial force; the material being homogeneous and isotropic is not one of the basic truss assumptions.
+
+Q 99 | som | Structural Analysis
+The correct combination of conditions that defines a rigid joint is ______
+i) All members meeting at the joint are rigid.
+ii) All deflections and rotations at the joint are zero.
+iii) All members meeting at the joint undergo same deflections at that joint.
+iv) All members meeting at the joint undergo same rotations at that joint.
+(1) i, ii
+(2) i, iii
+(3) ii, iv
+(4) iii, iv
+= 4
+~ A rigid joint keeps the angles between the connected members unchanged, so all member ends at the joint have the same displacement and the same rotation; the joint itself may still deflect and rotate (ii is a fixed support), and the members need not be rigid (i).
+
+Q 100 | som | Structural Analysis
+The kinematic indeterminacy of the 2-D portal frame shown in Fig.3 including axial deformations is ______.
+(1) 6
+(2) 11
+(3) 8
+(4) 9
+= 2
+! img/m15b-q100.png
+~ The two fixed bases have no freedom; the hinged corner at the top of the left column has 2 translations + 2 independent rotations = 4, the internal hinge in the beam also has 4, and the rigid right corner has 3, so D_k = 4 + 4 + 3 = 11.
+
+Q 101 | som | Structural Analysis
+In the moment distribution method of plane frame analysis, the distribution factor for a member at a joint depends on ______ combination of conditions.
+i) The slenderness ratio of all the members meeting at the joint.
+ii) The flexural rigidity of all the members meeting at the joint.
+iii) The I/L values of each member meeting at the joint.
+iv) Support conditions at the farther ends of members meeting at the joint.
+(1) ii, iii
+(2) i, iii
+(3) iii, iv
+(4) i, iv
+= 3
+~ The distribution factor of a member is its stiffness divided by the sum of the stiffnesses of all members at the joint, where stiffness is 4EI/L for a far end fixed and 3EI/L for a far end hinged. So it depends on the relative I/L values and on the far-end support conditions; slenderness ratio plays no part.
+
+Q 102 | som | Strength of Materials
+A cantilever beam of uniform flexural rigidity with span L and depth D is subjected to temperatures T_1 on the upper face and T_2 on the lower face. If T_1 < T_2 and α is the coefficient of linear expansion for the material, the deflection at the free end of the beam is ______.
+(1) α (T_2 - T_1) L²/2D (upward)
+(2) α (T_2 - T_1) L²/D (upward)
+(3) α (T_2 - T_1) L/2D (upward)
+(4) α (T_2 - T_1) L²/2D (downward)
+= 1
+~ The temperature difference across the depth gives a uniform curvature κ = α(T_2 − T_1)/D; the hotter lower face expands more, so the cantilever curls upward. Free-end deflection = κL²/2 = α(T_2 − T_1)L²/(2D), upward.
+
+Q 103 | som | Strength of Materials
+At a point in elastic medium normal stresses in two mutually perpendicular directions are 120 MPa, 40 MPa (both tensile) associated with a tangential stress of 30 MPa. The principal stresses at the location are ______.
+(1) 120 MPa, 40 MPa (both tensile)
+(2) 130 MPa, 30 MPa (both tensile)
+(3) 130 MPa, 30 MPa (both compressive)
+(4) 130 MPa (tensile), 30 MPa (compressive)
+= 2
+~ Centre of Mohr's circle = (120 + 40)/2 = 80 MPa and radius = √(40² + 30²) = 50 MPa, so σ1 = 80 + 50 = 130 MPa and σ2 = 80 − 50 = 30 MPa, both tensile.
+
+Q 104 | som | Strength of Materials
+A weight W falls freely on a body from a height of h. If the instantaneous deformation of the body in the direction of weight is δ, the work done by the force is ______.
+(1) ½ W (h + δ)
+(2) W (h + δ)
+(3) ½ W h + W δ
+(4) W h + ½ W δ
+= 2
+~ The weight falls through h and then moves a further δ while the body deforms, so the work done by the constant force W is W(h + δ), which equals the strain energy stored at maximum deformation. The factor ½ applies to a gradually applied load, not to a falling weight.
+
+Q 105 | som | Strength of Materials
+In a beam, where the variation of shear force is a second degree parabola and the variation of loading is ______, the variation of bending moment is ______.
+(1) constant, cubic parabola
+(2) linear, square parabola
+(3) cubic parabola, square parabola
+(4) linear, cubic parabola
+= 4
+~ Since dV/dx = −w and dM/dx = V, a shear force varying as a second-degree parabola means the load varies linearly (one degree lower) and the bending moment varies as a cubic parabola (one degree higher).
+
+Q 106 | som | Strength of Materials
+A force of magnitude 5 N moves through a distance of 4mm in a direction, inclined at 60° to the direction of force. The magnitude of the work done by the force is ______.
+(1) 10√3 N.mm
+(2) 0 N.mm
+(3) 10 N.mm
+(4) 20 N.mm
+= 3
+~ Work = F × d × cos θ = 5 × 4 × cos 60° = 5 × 4 × 0.5 = 10 N.mm. Only the component of displacement along the force does work.
+
+Q 107 | som | Strength of Materials
+The shear centre for an angle section is located ______.
+(1) at the tip of the flange
+(2) at the intersection of flanges
+(3) at the centroid of the angle
+(4) at the rigidity centre of the angle
+= 2
+~ In an angle section the shear flows in both legs act along the leg centre-lines, which meet at the corner, so their resultant passes through that point. Hence the shear centre lies at the intersection of the two flanges (legs), not at the centroid.
+
+Q 108 | som | Strength of Materials
+A beam has a circular cross section. If the plane of loading on the beam does not coincide with the centroidal axis of the beam, the member is subjected to ______.
+(1) axial force, shear force and bending moment
+(2) torque, shear force
+(3) torque, shear force and bending moment
+(4) axial force, shear force and torque
+= 3
+~ A transverse load always produces shear force and bending moment; when its plane does not pass through the axis (shear centre) of the section, the eccentricity also produces a twisting moment (torque). There is no axial force because the load is transverse.
+
+Q 109 | som | Strength of Materials
+The stiffness of a close coiled spring is more when ______.
+(1) wire diameter, rigidity modulus are more and mean radius, number of turns are lesser
+(2) number of turns, rigidity modulus are more and mean radius, wire diameter are lesser
+(3) mean radius, rigidity modulus are more and wire diameter, number of turns are lesser
+(4) rigidity modulus is more and wire diameter, mean radius, number of turns are lesser
+= 1
+~ Stiffness of a close-coiled helical spring k = Gd⁴/(64R³n), so it increases with larger wire diameter d and rigidity modulus G, and with smaller mean coil radius R and fewer turns n.
+
+Q 110 | som | Strength of Materials
+A pressure vessel in the form of a thin cylinder of 1m diameter and 1mm plate thickness is subjected to an internal fluid pressure of 0.2 MPa. The maximum shear stress in the material is ______.
+(1) 50 MPa
+(2) 0 MPa
+(3) 25 MPa
+(4) 37.5 MPa
+= 3
+~ Hoop stress = pd/2t = 0.2 × 1000/(2 × 1) = 100 MPa and longitudinal stress = pd/4t = 50 MPa, so the maximum (in-plane) shear stress = (100 − 50)/2 = 25 MPa. The key takes this in-plane value; 50 MPa would be the absolute maximum if the near-zero radial stress were also considered.
+
+Q 111 | som | Strength of Materials
+Two circular shafts of same length, weight and material are compared for strength. The first one is a solid shaft and the other is a hollow shaft of outer to inner diameter ratio as 2. The ratio of the torque carrying capacity of the hollow shaft to solid shaft considering the shear stress criterion alone is ______.
+(1) 2.5/√3
+(2) 5√3/6
+(3) √3
+(4) √3/2
+= 2
+~ Equal weight and length means equal areas: D² − (D/2)² = d², so D = 2d/√3. T_hollow/T_solid = [(D⁴ − (D/2)⁴)/D]/d³ = (15/16)(2/√3)³ = 5/(2√3) = 5√3/6 ≈ 1.44. Note that option (1), 2.5/√3, is the same number written differently; the key gives (2).
+
+Q 112 | som | Strength of Materials
+For a circular cross section subjected to shear force, the ratio of maximum shear stress to average shear stress is ______.
+(1) 1.0
+(2) 2.0
+(3) 1.5
+(4) 4/3
+= 4
+~ For a solid circular section the maximum shear stress, at the neutral axis, is (4/3) times the average shear stress V/(πd²/4). The ratio 1.5 belongs to a rectangular section.
+
+Q 113 | som | Structural Analysis
+A cantilever beam of span L and flexural rigidity EI carries a point load W, vertically downwards at its free end. The free end of the beam is resting at the centre of another simply supported beam of span L and flexural rigidity EI. The support reactions for the simply supported beam are ______ and ______.
+(1) W/4, W/4
+(2) W/2, W/2
+(3) 8W/17, 8W/17
+(4) 8W/3, 8W/3
+= 3
+~ Let R be the force between the beams. Equal deflection at the contact gives (W − R)L³/(3EI) = RL³/(48EI), so 16(W − R) = R and R = 16W/17. This acts at mid-span of the simply supported beam, so each reaction = R/2 = 8W/17.
+
+Q 114 | som | Structural Analysis
+A simply supported beam of span L and flexural rigidity EI carries a UDL of intensity w/unit run all along its span. The beam is supported at its centre by a linear spring of stiffness k. The force carried by the spring is ______.
+(1) 5kwL⁴/(kL³+8EI)
+(2) 5kwL⁴/8(kL³+48EI)
+(3) 5wL⁴/8(kL³+8EI)
+(4) 5wL⁴/8(kL³+48EI)
+= 2
+~ The UDL alone deflects mid-span by 5wL⁴/384EI and the spring force R lifts it back by RL³/48EI; the spring compresses by the net deflection, so R = k(5wL⁴/384EI − RL³/48EI). Multiplying by 48EI gives R(48EI + kL³) = 5kwL⁴/8, so R = 5kwL⁴/8(kL³ + 48EI).
+
+Q 115 | som | Structural Analysis
+The three member plane truss A-B-C-D, shown in Fig.4 supports a vertical load W at B. The magnitude of the force carried by member BD is ______.
+(1) W (compressive)
+(2) 0.5 W (compressive)
+(3) (√3/2) W (compressive)
+(4) 0.5W (tensile)
+= 3
+! img/m15b-q115.png
+~ AB and BC are both inclined at 30° to the horizontal, so A, B and C lie on one straight line, and BD (at 60° to the horizontal) is perpendicular to it. Resolving forces at B perpendicular to line ABC, only W and BD have components, so F_BD = W cos 30° = (√3/2)W, and since it pushes back on joint B it is compressive.
+
+Q 116 | som | Structural Analysis
+The symmetry of flexibility matrix is due to ______.
+(1) Betty's theorem
+(2) Maxwell's reciprocal theorem
+(3) Eddy's theorem
+(4) Castigliano's theorem
+= 2
+~ Maxwell's reciprocal theorem states that the deflection at i due to a unit load at j equals the deflection at j due to a unit load at i, i.e. f_ij = f_ji, which is exactly the symmetry of the flexibility matrix. Eddy's theorem relates to arches and Castigliano's theorem to strain energy.
+
+Q 117 | som | Structural Analysis
+A fixed beam of span L and uniform flexural rigidity EI carries a vertical downward load W at its mid span. If a hinge is introduced in the beam at the location of the load, the deflection under the load is ______.
+(1) WL³/12EI
+(2) WL³/24EI
+(3) WL³/16EI
+(4) WL³/48EI
+= 4
+~ With a hinge at mid-span the fixed beam becomes two cantilevers of length L/2 meeting at the hinge, each carrying W/2 by symmetry. Deflection under the load = (W/2)(L/2)³/(3EI) = WL³/48EI.
+
+Q 118 | som | Strength of Materials
+A stepped bar A-B-C of total length 2L carries an axial load P at B as shown in Fig.5. Axial rigidity of segment AB is 2AE and that of BC is AE. The displacement at B is ______.
+(1) PL/3AE
+(2) 0
+(3) PL/2AE
+(4) PL/AE
+= 1
+! img/m15b-q118.png
+~ Both ends are fixed, so AB and BC resist the load at B like two springs in parallel with stiffnesses 2AE/L and AE/L. Displacement at B = P/(3AE/L) = PL/3AE; AB then carries 2P/3 (tension) and BC carries P/3 (compression).
+
+Q 119 | som | Structural Analysis
+The static indeterminacy for the continuous beam shown in Fig.6 is ______.
+(1) 6
+(2) 3
+(3) 2
+(4) 4
+= 3
+! img/m15b-q119.png
+~ The fixed support at the left gives 3 reactions, the roller at the middle 1 and the inclined roller at the right end 1, a total of 5. With 3 equations of static equilibrium, the static indeterminacy = 5 − 3 = 2.
+
+Q 120 | som | Structural Analysis
+A simply supported girder of span 10m is traversed by a 5m long UDL segment of intensity 10kN/m. The magnitude of absolute maximum moment in the beam is ______.
+(1) 93.75kN.m
+(2) 98.75kN.m
+(3) 90.25kN.m
+(4) 88.75kN.m
+= 1
+~ For a UDL shorter than the span, the absolute maximum moment occurs at mid-span with the load placed centrally: M = (W/4)(L − a/2), where W = 10 × 5 = 50 kN and a = 5 m. M = (50/4)(10 − 2.5) = 12.5 × 7.5 = 93.75 kN.m.
+
+Q 121 | som | Structural Analysis
+For a simply supported girder, EUDLL is defined as the intensity of the UDL acting on full span whose ______.
+(1) intensity is larger than all other loads acting on the span.
+(2) moment diagram is above the bending moment ordinates caused by all loads on the span.
+(3) bending moment diagram just envelops bending moment caused by all loads on the span.
+(4) intensity is larger than the sum of intensities of all loads on the span.
+= 3
+~ The equivalent uniformly distributed live load (EUDLL) is the uniform load over the whole span whose bending moment diagram just envelops the maximum bending moments produced at every section by the actual moving loads. It lets girders and bridge decks be designed with one simple uniform load.
+
+Q 122 | rcd | Prestressed Concrete
+A simply supported beam of span L and uniform flexural rigidity EI is subjected a pre-stressing force of magnitude P, at an eccentricity e below the neutral layer, parallel to the axis of the member. The displacement of the beam at a location L/4 from the support is ______.
+(1) PeL²/4EI
+(2) PeL²/8EI
+(3) PeL²/2EI
+(4) PeL²/EI
+= 2
+~ A straight tendon at eccentricity e gives a uniform moment M = Pe along the span, and a simply supported beam under uniform moment cambers upward by ML²/8EI = PeL²/8EI, the keyed value (this is the mid-span camber). Strictly, at L/4 the expression Mx(L − x)/2EI gives 3PeL²/32EI, which is not among the options. (Official final key; some sources differ.)
+
+Q 123 | som | Structural Analysis
+For a member subjected to loads on its span, equivalent joint loads are determined in such a way that ______.
+(1) The member end actions caused by equivalent joint loads are same as those caused by loads on the member.
+(2) The equivalent joint loads cause same set of nodal displacements as caused by the member loads.
+(3) The equivalent joint loads together with member loads ensure the equilibrium of the structure.
+(4) The equivalent joint loads together with member loads ensure the compatibility of displacements for the structure.
+= 1
+~ Equivalent joint loads are obtained by reversing the fixed-end actions that the span loads produce at the member ends, so they stand in at the joints for the end actions of the member loads, which is the reasoning of the keyed option. Standard matrix-analysis texts, however, define them as joint loads that produce the same joint (nodal) displacements as the actual member loads, with final end actions = fixed-end actions + actions due to the equivalent joint loads. (Official final key; some sources differ.)
+
+Q 124 | som | Structural Analysis
+An orthogrid structure is one which satisfies following combinations of conditions ______.
+i) A two dimensional framed structure consisting of members oriented in different directions.
+ii) Loading plane perpendicular to the plane of structure.
+iii) Member end actions are the axial forces, shear forces and bending moments.
+iv) Angle between members is always 90°.
+v) Member end actions are the shear forces, torques and bending moments.
+(1) i, ii, iii, iv, v
+(2) i, ii, iii, iv
+(3) ii, iii, iv, v
+(4) i, ii, iv, v
+= 4
+~ A grid is a plane framework loaded perpendicular to its own plane, so its member end actions are shear force, twisting moment (torque) and bending moment, with no axial force; in an orthogrid the members meet at 90°. Statement iii (axial force, shear force and bending moment) describes a plane frame, so it is excluded.
+
+Q 125 | som | Structural Analysis
+In the stiffness matrix method, the boundary conditions are needed to avert ______.
+(1) divergent solution
+(2) singularity
+(3) irrational solution
+(4) zero displacement vector
+= 2
+~ Without support conditions the assembled structure stiffness matrix permits rigid-body movement and is singular (its determinant is zero), so it cannot be inverted. Applying the boundary conditions removes these rigid-body modes and makes the matrix non-singular.
+
+Q 126 | som | Structural Analysis
+In the direct element method of structural analysis, the transformation matrices are needed for following combinations of actions ______.
+i) They facilitate the transformation of element stiffness and element load matrices to global stiffness and global load matrices respectively.
+ii) They are useful for determining the displacement matrices.
+iii) They facilitate the conversion of resultant displacement matrices into member oriented displacement matrices.
+iv) They are useful for determining member end actions.
+(1) i, iii
+(2) ii, iii
+(3) iii, iv
+(4) i, ii
+= 1
+~ Transformation matrices rotate each element's stiffness and load matrices from local (member) axes to global axes before assembly, and after the solution they convert the global (resultant) displacements back into member-oriented displacements. The displacements and end actions themselves come from solving the equations and from member stiffness, so i and iii describe the role of the transformation matrices.
+
+Q 127 | som | Structural Analysis
+For a fixed beam of span L and uniform flexural rigidity EI, with both supports at same level, the support at right rotate by α radians anti clockwise. The support reactions at left and right supports (assuming upward displacement and anti clockwise rotations as positive) respectively are ______.
+(1) 6EI α/L², 2EI α/L, 6EI α/L², 2EI α/L
+(2) 6EI α/L², 4EI α/L, - 6EI α/L², 2EI α/L
+(3) 6EI α/L², 2EI α/L, - 6EI α/L², 4EI α/L
+(4) 6EI α/L², 2EI α/L, - 6EI α/L², 2EI α/L
+= 3
+~ Rotating the right end by α induces a moment 4EIα/L at that end and a carry-over moment 2EIα/L at the left end, both anticlockwise. These end moments (total 6EIα/L) are balanced by a couple of vertical reactions 6EIα/L², upward at the left and downward at the right, giving 6EIα/L², 2EIα/L, −6EIα/L², 4EIα/L.
+
+Q 129 | som | Structural Analysis
+Three members AB, BC and BD 3m, 3m and 4m long each, with uniform flexural rigidity are rigidly connected at B. If the supports at A and C are fixed while at D it is hinged the distribution factors in directions of BA, BC and BD at the joint B are ______ respectively.
+(1) 3/11, 4/11, 4/11
+(2) 4/11, 3/11, 4/11
+(3) 4/11, 4/11, 3/11
+(4) 1/3, 1/3, 1/3
+= 4
+~ The key takes the three members as sharing the moment at B equally (1/3 each). Working it out with stiffnesses 4EI/3 (BA), 4EI/3 (BC) and 3EI/4 (BD, far end hinged) gives 16/41, 16/41 and 9/41, which is not among the options, while option (3) would follow if D were treated as fixed (4EI/4). (Official final key; some sources differ.)
+
+Q 130 | som | Structural Analysis
+In a three hinged parabolic arch, the third hinge is located at the crown. The beam moment coinciding with H-moment indicates ______.
+(1) Arch all along carries only radial shear.
+(2) Arch all along carries only beam moment
+(3) Arch all along carries only normal thrust.
+(4) Arch all along carries only H- moment.
+= 3
+~ In a three-hinged arch the net bending moment at any section = beam moment − H·y (the H-moment). If the beam moment diagram coincides with the H-moment diagram, the net moment is zero everywhere and the arch carries only normal (axial) thrust, as a parabolic arch does under a uniformly distributed load.
+
+Q 131 | som | Structural Analysis
+A cable carrying a load of w/unit run is stretched between supports L apart. The supports are at the same level and the central dip is h. The greatest and least tensions in the cable are ______.
+(1) wL/2, wL²/8h
+(2) √((wL/2)²+(wL²/8h)), wL²/16h
+(3) √((wL/2)²+(wL²/8h)), wL²/8h
+(4) √((wL/2)²+(wL²/2h)), wL²/8h
+= 3
+~ The horizontal tension H = (wL²/8)/h = wL²/8h is the least tension, at the lowest point, and each support also has a vertical reaction wL/2. The greatest tension, at the supports, is √((wL/2)² + (wL²/8h)²); the booklet's options omit the square on the second term.
+
+Q 132 | som | Strength of Materials
+A cantilever beam AB is fixed at left end A and free at B. The corresponding conjugate beam will supports ______.
+(1) fixed at A and free at B
+(2) free at A and simple support at B
+(3) free at A and fixed at B
+(4) simple supports at both A and B
+= 3
+~ In the conjugate beam a fixed end (zero slope and deflection) becomes a free end, and a free end (with slope and deflection) becomes a fixed end. So a cantilever fixed at A and free at B has a conjugate beam free at A and fixed at B.
+
+Q 133 | rcd | Steel Design
+In a steel tension member, it's maximum strength in case of adequately designed bolted connections is governed by ______.
+(1) The slenderness of the member
+(2) The tensile strength of net sectional area of the member.
+(3) The strength of the bolted connection.
+(4) The section modulus of the member
+= 2
+~ When the bolted connection is adequately designed it does not fail first, so the member's strength is limited by rupture of its net cross-section at the bolt holes. Slenderness and section modulus govern compression and bending members, not tensile strength.
+
+Q 134 | rcd | Steel Design
+The principal reason for adding stiffeners to the web of a steel beam is to ______.
+(1) Increase its moment carrying capacity.
+(2) Reduce the deflection of the beam.
+(3) Increase the stiffness of the web.
+(4) Improve aesthetics.
+= 3
+~ Web stiffeners stiffen the thin web so that it does not buckle under shear or cripple and buckle under concentrated loads and reactions. Moment capacity and deflection depend mainly on the flanges and the overall section, not on the stiffeners.
+
+Q 135 | rcd | Steel Design
+In the built-up steel columns, the lacing is provided ______.
+i) to keep all individual sections together.
+ii) to take-up lateral shear to an extent of 2.5% of axial force.
+iii) to increase the bending strength of the section.
+iv) to increase the compressive strength of the section.
+(1) i, iii
+(2) ii, iii
+(3) iii, iv
+(4) i, ii
+= 4
+~ Lacing ties the component sections of a built-up column together so that they act as one unit, and IS 800 requires it to be designed for a transverse (lateral) shear of 2.5% of the axial force in the column. It does not by itself increase the bending or compressive strength of the section.
+
+Q 136 | rcd | Steel Design
+The list of principal components of a plate girder is ______.
+i) Top and bottom flange plates and web plates.
+ii) Horizontal stiffeners, Intermediate and bearing stiffeners.
+iii) Cleat angles and seat angles.
+iv) Web splicing and flange splicing.
+(1) i, iii, iv
+(2) i, ii, iii
+(3) i, ii, iv
+(4) ii, iii, iv
+= 3
+~ A plate girder is made up of flange plates and a web plate, horizontal, intermediate and bearing stiffeners, and web and flange splices. Cleat angles and seat angles belong to beam-to-column connections, not to the girder itself.
+
+Q 137 | rcd | Steel Design
+The requirements to be satisfied in the design of a gantry girder are that it has to withstand effects due to ______.
+(1) Moving loads, impact effects and fatigue.
+(2) Moving loads, longitudinal loads, lateral loads, impact effects and fatigue.
+(3) Lateral loads, longitudinal loads, impact effects and fatigue.
+(4) Dynamic loads, longitudinal loads, impact effects and fatigue.
+= 2
+~ A gantry girder must resist the vertical moving wheel loads of the crane with impact, lateral (surge) loads from the crab, longitudinal loads from braking of the crane, and fatigue from repeated load cycles. Only option (2) lists all of these.
+
+Q 138 | rcd | Steel Design
+The Lug angle is a member which ______.
+(1) is connected to the main tension member to transfer the tensile force economically to the joint.
+(2) is connected to the main tension member for erection purpose.
+(3) is connected to the main tension member to increase its strength locally.
+(4) is connected to the main tension member to increase its stiffness
+= 1
+~ A lug angle is a short angle connected to the outstanding leg of the main member and to the gusset, so that part of the force is passed to the gusset directly. This shortens the end connection and transfers the tensile force to the joint economically.
+
+Q 139 | rcd | Steel Design
+The expression working out the thickness of slab base is given by ______.
+If t = thickness of slab base, w = pressure under slab base, σ_bs = permissible bending stress in slab base, a, b = longer and shorter projections of the slab base edge to the column member, Poisson's ratio = 0.25.
+(1) t = ((3w/σ_bs)(a-b/4))^(1/2)
+(2) t = ((3w/σ_bs)(a²-b²/4))^(1/2)
+(3) t = ((3w/σ_bs)(a²-b²))^(1/2)
+(4) t = ((3w/σ_bs)(a-b²/4))^(1/2)
+= 2
+~ For a slab base under uniform pressure w, the working-stress formula (IS 800:1984) is t = √[(3w/σ_bs)(a² − b²/4)], where a and b are the greater and lesser projections beyond the column. The b²/4 term allows for two-way bending of the plate with Poisson's ratio 0.25; options (1) and (4) are dimensionally inconsistent and option (3) uses b² instead of b²/4.
+
+Q 140 | som | Structural Analysis
+A fixed beam of span L carries a UDL of intensity w/unit run. If the plastic moment of the beam section is M_p, collapse occurs when ______ number of plastic hinges are formed and wL = ______.
+(1) 2 and 8M_p/L
+(2) 3 and 8M_p/L
+(3) 3 and 16M_p/L
+(4) 2 and 16M_p/L
+= 3
+~ A fixed beam under UDL collapses when plastic hinges form at both supports and at mid-span, i.e. 3 hinges. The free moment wL²/8 must equal M_p (support) + M_p (mid-span) = 2M_p, so w = 16M_p/L² and wL = 16M_p/L.
+
+Q 141 | som | Structural Analysis
+A cantilever beam of span L carries a point load W at its free end. Plastic moment of the section from support to middle of span is 1.5 M_p and from there to free end is M_p. Collapse occurs when W = ______.
+(1) 1.5M_p/L
+(2) M_p/L
+(3) 2M_p/L
+(4) 0.75M_p/L
+= 1
+~ The moment is WL at the support (capacity 1.5M_p) and WL/2 at mid-span (capacity M_p). A hinge forms at the support when W = 1.5M_p/L, before mid-span reaches its capacity (which would need W = 2M_p/L), so the collapse load is W = 1.5M_p/L.
+
+Q 142 | rcd | RCC Design
+According to IS: 456-2000, in the design of isolated RCC column footing using RCC with an effective depth d, the critical sections to be checked are ______.
+(1) Bending moment at the face of the column, one-way shear at d/2 away from the face of column and two-way shear at d around the column.
+(2) Bending moment at the face of the column, one-way shear at d away from the face of column and two-way shear at d around the column.
+(3) Bending moment at d/2 away from the face of the column, one-way shear at d away from the face of column and two-way shear at d/2 around the column.
+(4) Bending moment at the face of the column, one-way shear at d away from the face of column and two-way shear at d/2 around the column.
+= 4
+~ IS 456:2000 (cl. 34.2.3.2 and 34.2.4.1) takes the critical section for bending at the face of the column, for one-way shear at a distance d from the column face, and for two-way (punching) shear on a perimeter at d/2 from the column face.
+
+Q 143 | rcd | RCC Design
+Minimum amount of high strength deformed bar reinforcement used in solid slabs shall not be less than ______ of the total cross sectional area of the slab according to IS: 456-2000.
+(1) 0.15%
+(2) 0.12%
+(3) 0.20%
+(4) 0.25%
+= 2
+~ IS 456:2000 (cl. 26.5.2.1) requires slab reinforcement of at least 0.12% of the total cross-sectional area when high strength deformed bars or welded wire fabric are used. The value 0.15% applies to mild steel bars.
+
+Q 144 | rcd | RCC Design
+When the depth of the web of beam is more than ______ mm, side face reinforcement of ______ % of the web area is needed to be provided according to IS:456-2000.
+(1) 600, 0.1%
+(2) 750, 0.15%
+(3) 600, 0.15%
+(4) 750, 0.1%
+= 4
+~ IS 456:2000 (cl. 26.5.1.3) requires side face reinforcement totalling 0.1% of the web area, distributed equally on the two faces, when the depth of the web exceeds 750 mm.
+
+Q 145 | rcd | RCC Design
+Maximum spacing of vertical shear reinforcement measured along the axis of the RCC beam shall not exceed ______, whichever is lowest.
+(1) 0.75d or 300mm
+(2) 0.75d or 400mm
+(3) 0.50d or 250mm
+(4) 0.5d or 300mm
+= 1
+~ IS 456:2000 (cl. 26.5.1.5) limits the spacing of vertical stirrups to 0.75d or 300 mm, whichever is less, where d is the effective depth. For inclined stirrups at 45° the limit is d.
+
+Q 146 | rcd | RCC Design
+The bearing stress check for column footing in limit state design specifies that the value ______ subjected to a maximum of 2 multiplied by bearing stress ______ shall be more than the compressive stress at the base of the column.
+A_1 = supporting area for bearing of footing, which in sloped or stepped footing maybe taken as the area of the lower base of the largest frustum of a pyramid or cone contained wholly within the footing and having for its upper base, the area actually loaded and having side slope of one vertical to two horizontal; and, A_2 = loaded area at the column base.
+(1) √(A_1/A_2), 0.30 f_ck
+(2) √(A_1/2A_2), 0.45 f_ck
+(3) √(A_1/A_2), 0.45 f_ck
+(4) √(A_1/A_2), 0.60 f_ck
+= 3
+~ IS 456:2000 (cl. 34.4) allows a design bearing stress of 0.45 f_ck on the loaded area, which may be increased by the factor √(A_1/A_2), limited to 2, when the supporting area is larger than the loaded area. This bearing resistance must be at least the compressive stress at the column base; otherwise the excess force has to be carried by reinforcement such as dowels.
+
+Q 147 | rcd | RCC Design
+The functionality of a wall, retaining wall and a shear wall in order is ______.
+i) resist predominantly vertical loads
+ii) resist lateral loads perpendicular to the plane of wall
+iii) resist lateral loads in the plane of wall
+(1) ii, iii, i
+(2) i, ii, iii
+(3) iii, ii, i
+(4) ii, i, iii
+= 2
+~ An ordinary (load-bearing) wall mainly carries vertical gravity loads, a retaining wall resists lateral earth pressure acting perpendicular to its plane, and a shear wall resists lateral wind or earthquake forces acting in its own plane. So the order is i, ii, iii.
+
+Q 148 | rcd | RCC Design
+Splicing of reinforcement in flexure members is taken-up at a location where bending moment is less than ______ the moment of resistance at that section and not more than ______ of bars are spliced at any particular section.
+(1) 75%, 50%
+(2) 50%, 75%
+(3) 25%, 50%
+(4) 50%, 50%
+= 4
+~ IS 456:2000 (cl. 26.2.5.1) requires splices in flexural members to be placed where the bending moment is not more than 50% of the moment of resistance, and not more than half (50%) of the bars may be spliced at any one section.
+
+Q 149 | rcd | Prestressed Concrete
+The loss stress due to creep in steel in a pre-stress problem is given by the formula ______, where α = creep coefficient, f_c = stress in concrete, E_c = modulus of elasticity of concrete and E_s = modulus of elasticity of steel.
+(1) α(f_c/E_c) E_s
+(2) α(f_c/2E_c) E_s
+(3) α(f_c/E_s) E_c
+(4) 2α(f_c/E_c) E_s
+= 1
+~ The elastic strain of concrete at the steel level is f_c/E_c and creep adds α times this strain; the steel shortens by the same amount. So the loss of prestress = α(f_c/E_c)E_s, i.e. α·m·f_c with modular ratio m = E_s/E_c.
+
+Q 150 | rcd | Prestressed Concrete
+The principal reason for adopting pre-stressing cable profiles in flexure members as parabolic is due to the fact that ______.
+(1) They need to resist both bending moments and shear forces in members.
+(2) The strength of pre-stressing cables is maximum in parabolic shapes only.
+(3) The profile of moment caused by self weight of structure is parabolic and to counter this, the cable profile also needs to be parabolic.
+(4) Its a regular practice
+= 3
+~ Self weight and other uniformly distributed loads give a parabolic bending moment diagram, so a parabolic tendon produces a prestressing moment P·e(x) of the same shape that counteracts it at every section (load balancing). The strength of the cable itself does not depend on its profile.
