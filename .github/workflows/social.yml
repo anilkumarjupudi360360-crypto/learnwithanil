@@ -45,6 +45,7 @@ jobs:
       - run: |
           git -C state config user.name "Learn with Anil bot"
           git -C state config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - run: python3 tools/social/bot.py fetch
       - id: plan
         run: echo "render=$(python3 tools/social/bot.py needs-render)" >> "$GITHUB_OUTPUT"
       - name: Make question cards

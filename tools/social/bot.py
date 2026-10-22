@@ -21,6 +21,7 @@ State lives on the `social` branch, checked out at ./state (or $STATE_DIR):
 
 Commands:
     bot.py run [--wait]      do what is due now (--wait: if a post is due within 15 minutes, wait for it)
+    bot.py fetch             download queued memes that only have a Canva link (runs when the meme maker pushes)
     bot.py needs-render      print true if question cards for today / tomorrow are missing
     bot.py render            make the missing question cards
     bot.py check             check the Telegram and Instagram settings and say which accounts they reach
@@ -420,14 +421,29 @@ def _to_jpeg(src, dst):
     from PIL import Image
     im = Image.open(src).convert('RGB')
     w, h = im.size
-    if w / h < 0.8 or w / h > 1.91:      # Instagram accepts 4:5 to 1.91:1; pad anything taller onto 4:5
+    if w / h < 0.8 or w / h > 1.91:      # Instagram accepts 4:5 to 1.91:1; pad anything taller onto 4:5, in the edge colour
         nw = max(w, int(h * 0.8))
-        bg = Image.new('RGB', (nw, int(nw / 0.8)), 'white')
+        edge = [im.getpixel((x, y)) for x in (0, w - 1) for y in range(0, h, max(1, h // 40))]
+        fill = tuple(sum(c[i] for c in edge) // len(edge) for i in range(3))
+        bg = Image.new('RGB', (nw, int(nw / 0.8)), fill)
         bg.paste(im, ((nw - w) // 2, (int(nw / 0.8) - h) // 2))
         im = bg
     im.save(dst, 'JPEG', quality=90, optimize=True)
     if os.path.abspath(src) != os.path.abspath(dst) and src.startswith(STATE):
         os.remove(src)
+
+
+def cmd_fetch():
+    """Download queued memes that only have Canva's (short-lived) download link. Needs no tokens."""
+    day = now_ist().date()
+    for d in (day, day + dt.timedelta(days=1)):
+        for n in (1, 2):
+            try:
+                if ensure_meme_image(d, n):
+                    log(f'meme {d} {n}: image ready')
+            except Exception as e:
+                log(f'! meme {d} {n}: could not fetch the image: {e}')
+    publish_state(f'Meme images for {day}')
 
 
 def meme_caption(meta, platform):
@@ -707,7 +723,7 @@ def cmd_demo(out):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('cmd', choices=['run', 'needs-render', 'render', 'check', 'whoami', 'demo'])
+    ap.add_argument('cmd', choices=['run', 'fetch', 'needs-render', 'render', 'check', 'whoami', 'demo'])
     ap.add_argument('--wait', action='store_true')
     ap.add_argument('--out')
     a = ap.parse_args()
@@ -715,6 +731,8 @@ def main():
         print('true' if needs_render() else 'false')
     elif a.cmd == 'render':
         cmd_render()
+    elif a.cmd == 'fetch':
+        cmd_fetch()
     elif a.cmd == 'run':
         cmd_run(a.wait)
     elif a.cmd == 'check':
