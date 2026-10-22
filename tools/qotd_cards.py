@@ -28,7 +28,8 @@ STREAMS = [
 def font_css():
     faces = [('Archivo', 'archivo-latin-800-normal', 800), ('Plex', 'ibm-plex-mono-latin-500-normal', 500),
              ('Src', 'source-sans-3-latin-400-normal', 400), ('Src', 'source-sans-3-latin-600-normal', 600), ('Src', 'source-sans-3-latin-700-normal', 700),
-             ('Te', 'noto-sans-telugu-telugu-400-normal', 400), ('Te', 'noto-sans-telugu-telugu-600-normal', 600)]
+             ('Te', 'noto-sans-telugu-telugu-400-normal', 400), ('Te', 'noto-sans-telugu-telugu-600-normal', 600),
+             ('Hi', 'noto-sans-devanagari-devanagari-400-normal', 400), ('Hi', 'noto-sans-devanagari-devanagari-600-normal', 600)]
     return '\n'.join(f"@font-face{{font-family:'{f}';font-weight:{w};src:url('file://{FONTS}/{n}.woff2') format('woff2')}}" for f, n, w in faces)
 
 
@@ -42,6 +43,7 @@ def qr_data_uri(url):
 
 def card_html(item):
     e = html.escape
+    l2f, l2code, l2name = item.get('l2font', 'Te'), item.get('l2code', 'te'), item.get('l2name', 'Telugu')   # Hindi for UPSC papers
     opts = ''.join(f'<li><b>({i + 1})</b> {e(o)}</li>' for i, o in enumerate(item['o']))
     opts_te = ''.join(f'<li><b>({i + 1})</b> {e(o)}</li>' for i, o in enumerate(item['ot']))
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{font_css()}
@@ -56,20 +58,20 @@ main{{flex:1;min-height:0;padding:40px 64px 36px;display:flex;flex-direction:col
 .q{{font:700 {item['fs']}px/1.32 'Src';margin:0;white-space:pre-line}}
 ol{{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 18px}}
 li{{background:#fff;border:2px solid #D6DFEC;border-radius:16px;padding:14px 20px;font:600 {item['fo']}px/1.3 'Src'}}li b{{color:#1440B8}}
-.te{{border-left:6px solid #D6DFEC;padding-left:22px;color:#25324B}}.te .q{{font:600 {item['ft']}px/1.55 'Te','Src';}}
-.te ol li{{font:400 {item['ft'] - 2}px/1.45 'Te','Src';padding:10px 16px}}
+.te{{border-left:6px solid #D6DFEC;padding-left:22px;color:#25324B}}.te .q{{font:600 {item['ft']}px/1.55 '{l2f}','Src';}}
+.te ol li{{font:400 {item['ft'] - 2}px/1.45 '{l2f}','Src';padding:10px 16px}}
 .foot{{margin-top:auto;background:#fff;border-top:2px solid #D6DFEC;padding:30px 64px;display:flex;align-items:center;gap:30px}}
 .foot img{{width:170px;height:170px;border-radius:12px}}
 .foot .t{{font:700 30px/1.25 'Src'}}.foot .u{{font:500 22px/1.3 'Plex';color:#1440B8;margin-top:8px;word-break:break-all}}.foot .s{{font:400 24px 'Src';color:#55627C;margin-top:8px}}
 </style></head><body>
-<div class="top"><div class="logo">LA</div><div class="brand"><b>Learn with Anil</b><span>Question of the day</span></div><div class="day">{e(item['daylabel'])}<b>{e(item['exam_short'])}</b></div></div>
+<div class="top"><div class="logo">LA</div><div class="brand"><b>Learn with Anil</b><span>{e(item.get('kicker', 'Question of the day'))}</span></div><div class="day">{e(item['daylabel'])}<b>{e(item['exam_short'])}</b></div></div>
 <main>
 <div class="meta"><span class="chip">{e(item['paper'])} · Q{item['n']}</span><span class="chip">{e(item['subject'])}</span></div>
 <p class="q">{e(item['q'])}</p>
 <ol>{opts}</ol>
-<div class="te" lang="te"><p class="q">{e(item['qt'])}</p><ol style="margin-top:14px">{opts_te}</ol></div>
+<div class="te" lang="{l2code}"><p class="q">{e(item['qt'])}</p><ol style="margin-top:14px">{opts_te}</ol></div>
 </main>
-<div class="foot"><img src="{qr_data_uri(item['qr'])}" alt=""><div><div class="t">Answer + explanation in English &amp; Telugu</div>
+<div class="foot"><img src="{qr_data_uri(item['qr'])}" alt=""><div><div class="t">Answer + explanation in English &amp; {e(l2name)}</div>
 <div class="u">{e(item['short'])}</div><div class="s">Free previous papers &amp; mock tests · comment your answer first</div></div></div>
 </body></html>"""
 
@@ -129,8 +131,10 @@ async def render(items, out):
                 if not over: break
                 it['fs'] -= 2; it['fo'] -= 1 if it['fo'] > 26 else 0; it['ft'] -= 1 if it['ft'] > 25 else 0
                 open(f, 'w', encoding='utf-8').write(card_html(it)); await pg.goto('file://' + f); await pg.evaluate('document.fonts.ready')
-            it['file'] = f"{it['day']}-{'appsc-group-2' if it['exam_id'] == 'appsc-group-2' else 'ts-police'}.png"
-            await pg.screenshot(path=os.path.join(out, it['file']))
+            it['file'] = it.get('file') or f"{it['day']}-{'appsc-group-2' if it['exam_id'] == 'appsc-group-2' else 'ts-police'}.png"
+            shot = dict(path=os.path.join(out, it['file']))
+            if it['file'].endswith('.jpg'): shot['quality'] = 90   # Instagram takes JPEG only
+            await pg.screenshot(**shot)
         os.remove(os.path.join(out, 'card.html'))
         await b.close()
 

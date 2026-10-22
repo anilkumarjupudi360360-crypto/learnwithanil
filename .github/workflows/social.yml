@@ -1,0 +1,57 @@
+# Daily posts to the Telegram channel and Instagram (tools/social/bot.py).
+# India time: questions at 8 AM and 6 PM, memes at 1 PM and 9 PM. Memes are previewed to Anil on Telegram first.
+name: Social posts
+
+on:
+  schedule:
+    - cron: '18 2,7,12,15 * * *'   # 7:48 AM, 12:48, 5:48 and 8:48 PM IST: waits, then posts on the dot
+    - cron: '5,35 1-17 * * *'      # every 30 min, 6:35 AM to 11:05 PM IST: meme previews, Stop taps, catch-up
+  workflow_dispatch:
+    inputs:
+      command:
+        description: 'run, check, whoami or render'
+        default: check
+
+permissions:
+  contents: write
+
+concurrency:
+  group: social-posts
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+      TG_CHANNEL: ${{ secrets.TG_CHANNEL }}
+      TG_ADMIN_CHAT: ${{ secrets.TG_ADMIN_CHAT }}
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      STATE_KEY: ${{ secrets.STATE_KEY }}
+      STATE_DIR: ${{ github.workspace }}/state
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: social
+          path: state
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests pillow qrcode cryptography
+      - run: |
+          git -C state config user.name "Learn with Anil bot"
+          git -C state config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - id: plan
+        run: echo "render=$(python3 tools/social/bot.py needs-render)" >> "$GITHUB_OUTPUT"
+      - name: Make question cards
+        if: steps.plan.outputs.render == 'true'
+        run: |
+          pip install -q playwright
+          python3 -m playwright install --with-deps chromium > /dev/null
+          python3 tools/social/bot.py render
+      - name: Post what is due
+        run: python3 tools/social/bot.py ${{ github.event.inputs.command || 'run' }} ${{ github.event.schedule == '18 2,7,12,15 * * *' && '--wait' || '' }}

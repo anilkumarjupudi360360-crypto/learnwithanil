@@ -10,3 +10,7 @@ Free practice portal for APPSC Group-II previous year questions (Screening 2019 
 
 To publish a change: `SITE_URL=https://learnwithanil.in python3 tools/build.py && python3 tools/pdfs.py && python3 test/smoke.py && rm -rf docs && cp -r dist/site docs && rm -rf dist`, then commit and push.
 - `tools/pdfs.py` – one PDF per paper (questions, answer key, explanations) into `dist/site/…/pdf/`; only changed papers are re-rendered (`tools/pdf-manifest.json`).
+
+## Daily social posts (Telegram + Instagram)
+
+`tools/social/bot.py`, run by `.github/workflows/social.yml` on GitHub Actions, posts every day (India time): a previous-year question card at 8 AM and 6 PM (rotating Group 2, TS SI, Group 1, TS Constable, CAPF), and the two memes made each morning by the Claude meme maker at 1 PM and 9 PM. Memes are sent to Anil on Telegram first with a Stop button. The bot's memory (cards, memes, logs) is on the `social` branch. Secrets: `TG_BOT_TOKEN`, `TG_CHANNEL`, `TG_ADMIN_CHAT`, `IG_TOKEN`, `IG_USER_ID` (optional), `STATE_KEY`. Test locally with `python3 tools/social/bot.py demo --out /tmp/cards`.
