@@ -194,6 +194,26 @@ async def main():
             for h in _re.findall(r'href="(/[^"#:?]*)', raw):
                 f = os.path.join(SITE, h.lstrip('/'))
                 if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')
+        # every exam home: three tiles (PYQs, mock tests, sectional tests), each a page of its own; no question of the day there
+        smx = open(os.path.join(SITE, 'sitemap.xml')).read()
+        for sub in ('ts-police-si', 'ts-police-constable', 'appsc-group-2', 'appsc-group-1', 'upsc-capf', 'tgpsc-hmwssb-manager'):
+            for rel in (f'{sub}/pyqs.html', f'{sub}/mock-test.html', f'{sub}/sectional-tests.html'):
+                if not os.path.isfile(os.path.join(SITE, rel)): errors.append(f'missing {rel}'); continue
+                if f'/{rel}</loc>' not in smx: errors.append(f'{rel} not in sitemap')
+                for h in _re.findall(r'href="(/[^"#:?]*)', open(os.path.join(SITE, rel), encoding='utf-8').read()):
+                    f = os.path.join(SITE, h.lstrip('/'))
+                    if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')
+            await pg.goto(URL + sub + '/'); await pg.wait_for_timeout(400)
+            nt = await pg.locator('#home-static .etiles .etile:not(.etile-sm)').count()
+            if nt != 3: errors.append(f'{sub}: {nt} main tiles on the exam home, expected 3')
+            if await pg.locator('#qotd-home').count(): errors.append(f'{sub}: question of the day should only be on the start page')
+            for h in await pg.eval_on_selector_all('#home-static .etiles a', 'els => els.map(e => e.getAttribute("href"))'):
+                f = os.path.join(SITE, h.lstrip('/'))
+                if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{sub}: tile links to missing {h}')
+        await pg.goto(URL + 'ts-police-si/?sec=ari'); await pg.wait_for_timeout(600)
+        if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('?sec=ari did not open a sectional test')
+        await pg.goto(URL + 'ts-police-si/?buy=mock'); await pg.wait_for_timeout(500)
+        if not await pg.evaluate('!!document.querySelector("#payDlg[open]")') or 'Mission Khaki' not in await pg.inner_text('#payDlg'): errors.append('?buy=mock did not open the Mission Khaki checkout')
         # site icon: the files exist and the pages point to them
         for f in ('favicon.ico', 'icon-192.png', 'apple-touch-icon.png', 'icon-512.png'):
             if not os.path.isfile(os.path.join(SITE, f)): errors.append(f'missing {f}')

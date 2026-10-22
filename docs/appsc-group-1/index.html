@@ -294,6 +294,21 @@ div.feature:hover{border-color:var(--line)}
 .qacts{display:flex;gap:8px;flex-wrap:wrap}
 .iconbtn.wa{color:#0B7A3E;border-color:#BFE6CF}
 .iconbtn.wa:hover{background:#E7F7EE}
+.etiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.etile{display:flex;flex-direction:column;gap:8px;padding:20px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);color:inherit;text-decoration:none;transition:border-color .15s,transform .15s}
+.etile:hover{border-color:var(--accent);transform:translateY(-2px)}
+.etile-k{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-text);font-weight:600}
+.etile b{font-size:20px;font-weight:800;line-height:1.2}.etile-p{color:var(--muted);font-size:14.5px}
+.etile-price{margin-top:auto;padding-top:6px;font-weight:700;color:var(--accent-text)}
+.etiles-links{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:12px}
+.etile-sm{flex-direction:row;align-items:center;justify-content:space-between;padding:14px 18px}.etile-sm b{font-size:15.5px;font-weight:700}.etile-go{color:var(--accent-text);font-weight:700}
+.etiles-note{color:var(--muted);font-size:14px;margin:10px 0 0}
+@media (max-width:860px){.etiles{grid-template-columns:1fr}}
+.pay-dlg{max-width:min(520px,calc(100vw - 32px));border:1px solid var(--line);border-radius:var(--r);padding:0;background:var(--surface);color:var(--ink)}
+.pay-dlg::backdrop{background:rgba(8,14,32,.55)}
+.pay-dlg .pay-in{padding:20px 22px;display:flex;flex-direction:column;gap:12px}
+.pay-dlg h2{font-size:21px;font-weight:800}.pay-dlg .price{font-size:30px;font-weight:800;color:var(--accent-text)}
+.pay-dlg ul{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px}.pay-dlg .small{color:var(--muted);font-size:13.5px}
 .qotd{display:flex;flex-direction:column;gap:14px;padding:20px 22px}
 .qotd-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
 .qotd-head .eyebrow{color:var(--accent-text);font-weight:600}
@@ -547,18 +562,18 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
       <a class="crumb" href="/">← All exams</a>
       <p class="eyebrow">APPSC Group-I · Prelims · 2019–2024</p>
       <h1>APPSC Group 1 previous year question papers <em>with answers.</em></h1>
-      <p>687 questions from 6 official papers, answered from APPSC's final keys and explained, in English and Telugu. Practise them by topic as free mock tests, download each paper as a PDF, and revise your mistakes.</p>
+      <p>687 questions from 6 official papers, answered from APPSC's final keys and explained, in English and Telugu. Read every question with its answer, practise by topic, take timed tests, download each paper as a PDF and revise your mistakes.</p>
       <p class="hero-l2"><span lang="te">APPSC గ్రూప్ 1 ప్రిలిమ్స్ మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.</span></p>
       <p class="hero-aka">Also known as AP Group 1 or APPSC Group-I Services. Old question papers and PYQs of the Prelims, with the final key.</p>
       <div class="row"><a class="btn btn-primary" href="/appsc-group-1/practice/">Create a quiz</a><a class="btn btn-secondary" href="/appsc-group-1/papers/">See previous papers</a></div>
-      <p style="margin:14px 0 0;font-size:15px"><a href="../appsc-pyqs.html" style="color:inherit">All APPSC previous question papers (Group 1 &amp; Group 2) →</a></p>
-      <p class="hero-news"><a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026: 166 posts →</a> · <a href="/appsc-group-1/mock-test.html">Free APPSC Group 1 mock test with a timer →</a></p>
     </div>
     <a class="mentor" href="/appsc-group-1/about/" style="color:inherit;text-decoration:none">
       <span class="ph"><img src="../anil.jpg" alt="Jupudi Anil Kumar" width="210" height="210"></span>
       <span><b>Jupudi Anil Kumar</b><br><span>UPSC faculty &amp; mentor · 1000+ hours of civil-services teaching</span></span>
     </a>
   </div></section>
+
+  <section class="wrap section"><div class="etiles"><a class="etile" href="/appsc-group-1/pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b><span class="etile-p">687 questions from 6 official papers. Read every question with its answer free; attempt them as quizzes and timed tests with the PYQ Pass.</span><span class="etile-price">₹45 · valid till 25 Jan 2027</span></a><a class="etile" href="/appsc-group-1/mock-test.html"><span class="etile-k">02 · Mock tests</span><b>Mock test pack</b><span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span><span class="etile-price">Price coming soon</span></a><a class="etile" href="/appsc-group-1/sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 8 subjects. Practise one section at a time with a timer.</span><span class="etile-price">With the PYQ Pass</span></a></div><div class="etiles etiles-links"><a class="etile etile-sm" href="/appsc-group-1-notification-2026.html"><b>APPSC Group 1 Notification 2026: 166 posts</b><span class="etile-go">→</span></a><a class="etile etile-sm" href="/appsc-pyqs.html"><b>All APPSC previous papers (Group 1 &amp; Group 2)</b><span class="etile-go">→</span></a></div><p class="etiles-note">Payments open soon. Until then every quiz and test stays free.</p></section>
 
   <section class="wrap section">
     <div class="figures">
@@ -569,7 +584,6 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     </div>
   </section>
 
-  <section class="wrap section" id="qotd-home" hidden></section>
 
   <section class="wrap section">
     <a class="card notes-promo" href="/appsc-group-1/notes/">
@@ -619,7 +633,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/appsc-g1-9e6d53dd8e.js"></script>
+<script src="data/appsc-g1-dd614ba280.js"></script>
 <script>
 (function(){
 "use strict";
@@ -685,6 +699,70 @@ function flushRecords(){
   if(!ST.pending.length || !navigator.onLine) return;
   const list = ST.pending.slice(); ST.pending = []; saveST();
   list.forEach(rec=>{ try{ postRecord(rec).catch(()=>{ ST.pending.push(rec); saveST(); }); }catch(e){} });
+}
+
+/* ---------- passes: the PYQ Pass and mock-test packs are paid on Instamojo and unlocked by the registered phone ---------- */
+const PAYC = DATA.pay || null;
+const PASSKEY = "lwa-passes-v1";
+let PASSES = readLS(PASSKEY, {});   // {examId: {pyq: "YYYY-MM-DD", mock: "YYYY-MM-DD"}}
+const savePasses = ()=>writeLS(PASSKEY, PASSES);
+const DEVICE = (()=>{ try{ let d = localStorage.getItem("lwa-device"); if(!d){ d = Math.random().toString(36).slice(2) + Date.now().toString(36); localStorage.setItem("lwa-device", d); } return d; }catch(_){ return ""; } })();
+function passOK(kind){
+  if(!PAYC || !PAYC.on) return true;   // payments not open yet: everything stays free
+  const e = PASSES[PAYC.exam] || {}, until = kind==="pyq" ? (e.pyq || e.mock) : e.mock;
+  return !!until && new Date(until + "T23:59:59+05:30") >= new Date();
+}
+async function payCall(body){
+  const r = await fetch(PAYC.api, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(body)});
+  return r.json();
+}
+async function refreshPasses(){
+  if(!PAYC || !PAYC.on || !PAYC.api || !ST.phone) return;
+  try{ const r = await payCall({action:"passes", exam:PAYC.exam, phone:ST.phone, email:ST.email||"", device:DEVICE});
+       if(r && r.ok){ PASSES[PAYC.exam] = r.passes || {}; savePasses(); } else if(r && r.error) toast(r.error); }catch(_){}
+}
+function payInfo(kind){
+  const m = PAYC && PAYC.mock;
+  return kind==="mock" && m ? {name: m.title, price: m.price, what: [`${m.n} full-length mock tests in English and Telugu, with explanations`, "Sectional mocks from every mock", "The PYQ Pass: attempt every previous paper and PYQ sectional"]}
+    : {name: (DATA.examShort||"") + " PYQ Pass", price: PAYC ? PAYC.pyq.price : 45, what: ["Attempt every previous paper as a practice quiz or a timed test", "PYQ sectionals, topic-wise quizzes and Smart Quiz", "Mistakes revision with your scores and topic-wise analysis"]};
+}
+function openPay(kind){
+  if(!PAYC) return;
+  const x = payInfo(kind), open = PAYC.on && PAYC.api;
+  let d = document.getElementById("payDlg");
+  if(!d){ d = document.createElement("dialog"); d.id = "payDlg"; d.className = "pay-dlg"; document.body.appendChild(d); d.addEventListener("click", e=>{ if(e.target===d) d.close(); }); }
+  d.innerHTML = `<div class="pay-in"><h2>${esc(x.name)}</h2><div class="price">₹${x.price}</div>
+    <ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
+    <p class="small">${esc(PAYC.pyq.valid.replace(/^valid/, "Valid"))}. Reading every question with its answer stays free.</p>
+    ${open ? `<p class="small">The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}, on up to 3 devices. Pay by UPI, card or net banking on Instamojo's secure page.</p>
+      <div class="row"><button class="btn btn-primary" type="button" data-act="paybuy" data-kind="${kind}">Pay ₹${x.price}</button><button class="btn btn-secondary" type="button" data-act="paycheck">I have paid · check</button><button class="btn btn-ghost" type="button" data-act="payclose">Close</button></div>`
+    : `<p class="small"><b>Payments open soon.</b> Until then every quiz and test stays free.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}</div>`;
+  if(d.showModal) d.showModal(); else d.setAttribute("open","");
+}
+function closePay(){ const d = document.getElementById("payDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } }
+async function payBuy(kind){
+  if(!PAYC || !PAYC.on || !PAYC.api){ toast("Payments open soon. Until then everything is free."); return; }
+  if(!ST.name){ UI.pendingBuy = kind; closePay(); go("join"); return; }
+  toast("Opening the secure payment page…"); track("begin_checkout", {exam: PAYC.exam, kind});
+  try{ const r = await payCall({action:"buy", exam:PAYC.exam, kind, name:ST.name, phone:ST.phone, email:ST.email, back: location.origin + PB});
+       if(r && r.ok && r.url) location.href = r.url; else toast((r && r.error) || "Could not open the payment page. Please try again."); }
+  catch(_){ toast("No connection. Please try again."); }
+}
+async function payCheck(){
+  await refreshPasses(); closePay();
+  if(passOK("pyq")){ toast("Unlocked. All the best!"); const p = UI.payPending; UI.payPending = null; if(p) startQuiz(p.ids, p.title, p.mode, p.source); else render(); }
+  else toast("No payment found for " + (ST.phone||"this phone") + " yet. If you just paid, wait a minute and check again.");
+}
+async function payReturn(params){
+  const req = params.get("payment_request_id"); if(!req || !PAYC || !PAYC.api) return false;
+  const pid = params.get("payment_id") || "";
+  history.replaceState(null, "", location.pathname);
+  toast("Checking your payment…");
+  try{ const r = await payCall({action:"verify", exam:PAYC.exam, request:req, payment:pid, phone:ST.phone||"", email:ST.email||"", device:DEVICE});
+       if(r && r.ok){ PASSES[PAYC.exam] = r.passes || {}; savePasses(); track("purchase", {exam: PAYC.exam}); toast("Payment received. Unlocked!"); render(); }
+       else toast((r && r.error) || "The payment is not complete yet."); }
+  catch(_){ toast("Could not check the payment now. Open the pass again and tap “I have paid”."); }
+  return true;
 }
 
 let QZ = null, LAST = null, timer = null, bankLimit = 20;
@@ -788,7 +866,7 @@ function render(){
   const hub = $("#hub-static"), home = $("#home-static"), host = $("#view");
   if(hub) hub.hidden = v!=="exams"; if(home) home.hidden = v!=="home";
   if(v==="exams"){ host.hidden=true; host.innerHTML=""; applyHub(); tickTimers(); renderQotd("#qotd-hub","all"); }
-  else if(v==="home"){ host.hidden=true; host.innerHTML=""; renderHomeDynamic(); renderQotd("#qotd-home", DATA.examShort); }
+  else if(v==="home"){ host.hidden=true; host.innerHTML=""; renderHomeDynamic(); }
   else {
     host.hidden=false;
     host.innerHTML = ({exam:vExam,papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,notes:vNotes})[v]();
@@ -1079,6 +1157,7 @@ function quizTitle(){
 function startQuiz(ids, title, mode, source){
   if(!ids.length) return;
   if(!ST.name){ UI.pending = {ids, title, mode, source}; go("join"); return; }   // one-time registration before the first quiz or test
+  if(source!=="mock" && ids.length>1 && !passOK("pyq")){ UI.payPending = {ids, title, mode, source}; openPay("pyq"); return; }   // attempting PYQs needs the PYQ Pass
   track("quiz_start", {mode, exam: DATA.examShort||"", questions: ids.length});
   QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: mode==="test"? ids.length*60 : 0};
   UI.confirmSubmit = false;
@@ -1394,7 +1473,7 @@ function vNotes(){
       <div class="card"><span class="n">3</span><div><b>Download the PDF</b><p>Read it on your phone or print it. For your personal study only.</p></div></div>
     </div>
     ${groups}
-    <div class="card notes-foot"><b>The previous-question portal stays free.</b> The notes are optional and priced low so that any aspirant can afford them. Questions about the books? Call or WhatsApp <a href="tel:+919494792739">+91 94947 92739</a> or email <a href="mailto:anilkumarjupudi360360@gmail.com">anilkumarjupudi360360@<wbr>gmail.com</a>.</div>
+    <div class="card notes-foot"><b>Reading the previous questions stays free.</b> The notes are optional and priced low so that any aspirant can afford them. Questions about the books? Call or WhatsApp <a href="tel:+919494792739">+91 94947 92739</a> or email <a href="mailto:anilkumarjupudi360360@gmail.com">anilkumarjupudi360360@<wbr>gmail.com</a>.</div>
   </div>`;
 }
 function openVideo(id){
@@ -1625,6 +1704,9 @@ document.addEventListener("click", e=>{
     case "count": P.count = b.dataset.count==="all"? "all" : +b.dataset.count; savePrefs(); render(); break;
     case "mode": P.mode=b.dataset.mode; savePrefs(); render(); break;
     case "start": { const pl=shuffle(pool()); const n=P.count==="all"?pl.length:Math.min(P.count,pl.length); startQuiz(pl.slice(0,n).map(q=>q.id), quizTitle(), P.mode, "custom"); break; }
+    case "paybuy": { payBuy(b.dataset.kind); break; }
+    case "paycheck": { payCheck(); break; }
+    case "payclose": { closePay(); break; }
     case "paperpractice": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id).map(q=>q.id), p.title, "practice", "paper"); break; }
     case "papertest": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id && isMCQ(q)).map(q=>q.id), p.title+" · Timed test", "test", "paper"); break; }
     case "pick": { const id=QZ.ids[QZ.i]; if(QZ.mode!=="test" && QZ.chk[id]) return; const j=+b.dataset.i; if(QZ.mode==="test" && QZ.ans[id]===j) delete QZ.ans[id]; else QZ.ans[id]=j; render(); break; }
@@ -1691,6 +1773,7 @@ document.addEventListener("submit", e=>{
   sendRecord({help, test: isNew? "Registered" + (p? " · before "+p.title : "") : "Updated details"});
   if(isNew) track("sign_up", {method: "form", exam: DATA.examShort||"", district});
   if(p){ toast("Thanks, "+name.split(" ")[0]+". All the best!"); startQuiz(p.ids, p.title, p.mode, p.source); }
+  else if(UI.pendingBuy){ const k = UI.pendingBuy; UI.pendingBuy = null; go("home"); payBuy(k); }
   else { toast("Your details are saved"); go("about"); }
 });
 window.addEventListener("online", flushRecords);
@@ -1742,12 +1825,19 @@ function start(data){
     if(red && routeFromPath(red)!==null) history.replaceState(null, "", red);
     const qp = new URLSearchParams(location.search).get("q");
     if(qp && QMAP[qp]) history.replaceState(null, "", pathOf("q/"+qp));
-    const tp = new URLSearchParams(location.search).get("test");   // ?test=<paper id>: start that paper as a full timed mock test
+    const sp = new URLSearchParams(location.search);
+    if(sp.get("payment_request_id")){ syncLang(); render(); payReturn(sp); return; }   // back from Instamojo
+    const bk = sp.get("buy");   // ?buy=pyq|mock: open the pass checkout
+    if(bk==="pyq" || bk==="mock"){ history.replaceState(null, "", location.pathname); syncLang(); render(); openPay(bk); return; }
+    const sec = sp.get("sec");  // ?sec=<subject id>: a PYQ sectional test (up to 30 questions from one subject)
+    if(sec && SUBJ[sec]){ history.replaceState(null, "", location.pathname); syncLang(); render();
+      startQuiz(shuffle(QS.filter(q=>q.s===sec && isMCQ(q)).map(q=>q.id)).slice(0,30), SUBJ[sec].name+" · PYQ sectional", "test", "sectional"); return; }
+    const tp = sp.get("test");   // ?test=<paper id>: start that paper as a full timed mock test
     if(tp && PMAP[tp]){ history.replaceState(null, "", location.pathname); syncLang(); render();
       startQuiz(QS.filter(q=>q.p===tp && isMCQ(q)).map(q=>q.id), PMAP[tp].title+" · Mock test", "test", "paper"); return; }
     const h = location.hash.slice(1); if(h && isRoute(h)) history.replaceState(null, "", pathOf(h));
   }
-  syncLang(); render();
+  syncLang(); render(); refreshPasses();
 }
 try{ window.claude?.hot?.snapshot?.(()=>({QZ, LAST})); }catch(_){}
 const hot = window.claude?.hot;
