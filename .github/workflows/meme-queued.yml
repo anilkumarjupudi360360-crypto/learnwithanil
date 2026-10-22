@@ -1,0 +1,46 @@
+# Runs when the Claude meme maker pushes a meme to this branch: downloads the Canva image
+# (its link expires within hours) and sends Anil the Telegram preview.
+name: Meme queued
+
+on:
+  push:
+    branches: [social]
+    paths: ['memes/**']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: social-posts
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+      TG_CHANNEL: ${{ secrets.TG_CHANNEL }}
+      TG_ADMIN_CHAT: ${{ secrets.TG_ADMIN_CHAT }}
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      STATE_KEY: ${{ secrets.STATE_KEY }}
+      STATE_DIR: ${{ github.workspace }}/state
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/checkout@v4
+        with:
+          ref: social
+          path: state
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests pillow qrcode cryptography
+      - run: |
+          git -C state config user.name "Learn with Anil bot"
+          git -C state config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - run: python3 tools/social/bot.py fetch
+      - run: python3 tools/social/bot.py run
