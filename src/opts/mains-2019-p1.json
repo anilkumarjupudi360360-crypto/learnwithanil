@@ -1,0 +1,1694 @@
+{
+ "1": {
+  "d": [
+   "36 and 27",
+   "39 and 30",
+   "45 and 36"
+  ],
+  "dt": [
+   "36, 27",
+   "39, 30",
+   "45, 36"
+  ]
+ },
+ "3": {
+  "d": [
+   "Ministry of Home Affairs",
+   "Ministry of Information & Broadcasting",
+   "Ministry of Finance"
+  ],
+  "dt": [
+   "మినిస్ట్రీ ఆఫ్ హోమ్ ఎఫైర్స్",
+   "మినిస్ట్రీ ఆఫ్ ఇన్ఫర్మేషన్ మరియు బ్రాడ్‌కాస్టింగ్",
+   "మినిస్ట్రీ ఆఫ్ ఫైనాన్స్"
+  ]
+ },
+ "4": {
+  "d": [
+   "Mean deviation",
+   "Quartile deviation",
+   "Coefficient of variation"
+  ],
+  "dt": [
+   "మీన్ డివియేషన్",
+   "క్వార్టైల్ డివియేషన్",
+   "కోఎఫిషియెంట్ ఆఫ్ వేరియేషన్"
+  ]
+ },
+ "5": {
+  "d": [
+   "Early Adopters, Innovators, Early Majority, Late Majority, Laggards",
+   "Innovators, Early Majority, Early Adopters, Late Majority, Laggards",
+   "Innovators, Early Adopters, Late Majority, Early Majority, Laggards"
+  ],
+  "dt": [
+   "అర్లీ అడాప్టర్స్, ఇన్నోవేటర్స్, అర్లీ మెజార్టీ, లేట్ మెజార్టీ, లెగ్గార్డ్స్",
+   "ఇన్నోవేటర్స్, అర్లీ మెజార్టీ, అర్లీ అడాప్టర్స్, లేట్ మెజార్టీ, లెగ్గార్డ్స్",
+   "ఇన్నోవేటర్స్, అర్లీ అడాప్టర్స్, లేట్ మెజార్టీ, అర్లీ మెజార్టీ, లెగ్గార్డ్స్"
+  ]
+ },
+ "6": {
+  "d": [
+   "Desktop publishing",
+   "Photo editing",
+   "Web designing"
+  ],
+  "dt": [
+   "డెస్క్‌టాప్ పబ్లిషింగ్",
+   "ఫోటో ఎడిటింగ్",
+   "వెబ్ డిజైనింగ్"
+  ]
+ },
+ "7": {
+  "d": [
+   "Sedition",
+   "Perjury",
+   "Contempt of court"
+  ],
+  "dt": [
+   "రాజద్రోహం (సెడిషన్)",
+   "అబద్ధపు సాక్ష్యం (పెర్జ్యూరీ)",
+   "కోర్టు ధిక్కారం (కంటెంప్ట్ ఆఫ్ కోర్ట్)"
+  ]
+ },
+ "8": {
+  "d": [
+   "Both (A) and (B) are true (and B explains A)",
+   "(A) is true but (B) is false",
+   "(A) is false but (B) is true"
+  ],
+  "dt": [
+   "ఎ, బి రెండూ వాస్తవం, బి ఎ కి సరైన వివరణ",
+   "ఎ వాస్తవం, బి అవాస్తవం",
+   "ఎ అవాస్తవం, బి వాస్తవం"
+  ]
+ },
+ "9": {
+  "d": [
+   "(A) is true but (B) is not the correct explanation of (A)",
+   "(A) is true but (B) is false",
+   "(A) is false but (B) is true"
+  ],
+  "dt": [
+   "ఎ వాస్తవం, బి ఎ కి సరైన వివరణ కాదు",
+   "ఎ వాస్తవం, బి అవాస్తవం",
+   "ఎ అవాస్తవం, బి వాస్తవం"
+  ]
+ },
+ "10": {
+  "d": [
+   "Solar-powered display",
+   "Liquid crystal display",
+   "Plasma display"
+  ],
+  "dt": [
+   "సోలార్ పవర్డ్ డిస్‌ప్లే",
+   "లిక్విడ్ క్రిస్టల్ డిస్‌ప్లే",
+   "ప్లాస్మా డిస్‌ప్లే"
+  ]
+ },
+ "11": {
+  "d": [
+   "23 July",
+   "13 February",
+   "15 September"
+  ],
+  "dt": [
+   "జూలై 23",
+   "ఫిబ్రవరి 13",
+   "సెప్టెంబర్ 15"
+  ]
+ },
+ "12": {
+  "d": [
+   "1920–1940",
+   "1960–1980",
+   "1980–2000"
+  ],
+  "dt": [
+   "1920-1940",
+   "1960-1980",
+   "1980-2000"
+  ]
+ },
+ "13": {
+  "d": [
+   "Binet",
+   "Wechsler",
+   "Kuppuswamy"
+  ],
+  "dt": [
+   "బినే",
+   "వెక్స్‌లర్",
+   "కుప్పుస్వామి"
+  ]
+ },
+ "14": {
+  "d": [
+   "Hypertext",
+   "Teletext",
+   "Word processing"
+  ],
+  "dt": [
+   "హైపర్‌టెక్స్ట్",
+   "టెలిటెక్స్ట్",
+   "వర్డ్ ప్రాసెసింగ్"
+  ]
+ },
+ "15": {
+  "d": [
+   "Semantics",
+   "Phonetics",
+   "Pragmatics"
+  ],
+  "dt": [
+   "సెమాంటిక్స్",
+   "ఫోనెటిక్స్",
+   "ప్రాగ్మాటిక్స్"
+  ]
+ },
+ "17": {
+  "d": [
+   "Society essentially 'shapes' technology to suit its needs",
+   "Technology is neutral and its effects depend only on its users",
+   "Economic forces essentially 'cause' cultural change"
+  ],
+  "dt": [
+   "మౌలికంగా సమాజం తన అవసరాలకు తగ్గట్టు టెక్నాలజీని మలచుకోవటం",
+   "టెక్నాలజీ తటస్థమైనది, దాని ప్రభావం వాడేవారి మీదే ఆధారపడి ఉండటం",
+   "మౌలికంగా ఆర్థిక శక్తులు సాంస్కృతిక మార్పులకు కారణం కావటం"
+  ]
+ },
+ "18": {
+  "d": [
+   "Public service programming",
+   "News programming",
+   "Educational programming"
+  ],
+  "dt": [
+   "పబ్లిక్ సర్వీస్ ప్రోగ్రామింగ్",
+   "న్యూస్ ప్రోగ్రామింగ్",
+   "ఎడ్యుకేషనల్ ప్రోగ్రామింగ్"
+  ]
+ },
+ "19": {
+  "d": [
+   "Anusat",
+   "SRMSat",
+   "Jugnu"
+  ],
+  "dt": [
+   "అనుశాట్",
+   "ఎస్.ఆర్.ఎమ్. శాట్",
+   "జుగ్ను"
+  ]
+ },
+ "20": {
+  "d": [
+   "Social equity",
+   "People's participation",
+   "Self-reliance"
+  ],
+  "dt": [
+   "సామాజిక సమానత్వం",
+   "ప్రజల భాగస్వామ్యం",
+   "స్వావలంబన"
+  ]
+ },
+ "21": {
+  "d": [
+   "Per capita income growth",
+   "Heavy industrialisation",
+   "Rapid urbanisation"
+  ],
+  "dt": [
+   "తలసరి ఆదాయ పెరుగుదల",
+   "భారీ పారిశ్రామికీకరణ",
+   "వేగవంతమైన పట్టణీకరణ"
+  ]
+ },
+ "22": {
+  "d": [
+   "The source is an official spokesperson authorised to speak on record",
+   "There is no source and it is the reporter's own guess",
+   "The source is an expert but has no access to official information"
+  ],
+  "dt": [
+   "మూలం అధికారిక ప్రతినిధి, బహిరంగంగా మాట్లాడే అధికారం ఉందని",
+   "మూలం ఏదీ లేదు, అది విలేకరి సొంత ఊహ అని",
+   "మూలం నిపుణుడు, కానీ అధికారిక సమాచారం పొందటం కుదరదని"
+  ]
+ },
+ "23": {
+  "d": [
+   "ABC",
+   "TRAI",
+   "BECIL"
+  ],
+  "dt": [
+   "ఎ బి సి",
+   "ట్రాయ్ (టి ఆర్ ఎ ఐ)",
+   "బెసిల్ (బి ఇ సి ఐ ఎల్)"
+  ]
+ },
+ "24": {
+  "d": [
+   "Sale of drugs without a doctor's prescription",
+   "Manufacture of spurious and adulterated drugs",
+   "Practice of magic remedies by unqualified persons"
+  ],
+  "dt": [
+   "డాక్టర్ చీటీ లేకుండా మందులు అమ్మటాన్ని",
+   "నకిలీ, కల్తీ మందులు తయారు చేయటాన్ని",
+   "అర్హత లేనివారు మంత్ర చికిత్సలు చేయటాన్ని"
+  ]
+ },
+ "25": {
+  "d": [
+   "Consumer Protection Act, 1986",
+   "Foreign Exchange Management Act, 1999",
+   "Companies Act, 2013"
+  ],
+  "dt": [
+   "కన్స్యూమర్ ప్రొటెక్షన్ యాక్ట్ 1986",
+   "ఫారిన్ ఎక్స్‌చేంజ్ మేనేజ్‌మెంట్ యాక్ట్ 1999",
+   "కంపెనీస్ యాక్ట్ 2013"
+  ]
+ },
+ "26": {
+  "d": [
+   "The study gives the same results when it is repeated",
+   "The sample of the study is drawn at random",
+   "The study covers a large number of respondents"
+  ],
+  "dt": [
+   "మళ్ళీ చేసినప్పుడు అధ్యయనం అవే ఫలితాలను ఇస్తుంది",
+   "అధ్యయనపు నమూనాను యాదృచ్ఛికంగా ఎంపిక చేస్తారు",
+   "అధ్యయనం ఎక్కువ మంది ప్రతివాదులను కవర్ చేస్తుంది"
+  ]
+ },
+ "27": {
+  "d": [
+   "Webinar",
+   "Vlog",
+   "Telecast"
+  ],
+  "dt": [
+   "వెబినార్",
+   "వ్లాగ్",
+   "టెలికాస్ట్"
+  ]
+ },
+ "28": {
+  "d": [
+   "Both A and R are correct but R is not the correct explanation of A",
+   "A is correct but R is incorrect",
+   "A is incorrect but R is correct"
+  ],
+  "dt": [
+   "ఎ ఆర్ రెండు సరైనవి. అయితే ఆర్ అనేది ఎ కి సరైన వివరణ కాదు",
+   "ఎ సరైనది, కానీ ఆర్ సరైనది కాదు",
+   "ఎ సరైనది కాదు, కానీ ఆర్ సరైనది"
+  ]
+ },
+ "29": {
+  "d": [
+   "Yojana",
+   "Kurukshetra",
+   "Bal Bharati"
+  ],
+  "dt": [
+   "యోజన",
+   "కురుక్షేత్ర",
+   "బాల భారతి"
+  ]
+ },
+ "30": {
+  "d": [
+   "Marasmus",
+   "Rickets",
+   "Pellagra"
+  ],
+  "dt": [
+   "మెరాస్మస్",
+   "రికెట్స్",
+   "పెల్లాగ్రా"
+  ]
+ },
+ "31": {
+  "d": [
+   "Malaria",
+   "Tuberculosis",
+   "Iodine deficiency"
+  ],
+  "dt": [
+   "మలేరియా",
+   "క్షయ",
+   "అయోడిన్ లోపం"
+  ]
+ },
+ "32": {
+  "d": [
+   "Principle of learning by doing and trained specialists",
+   "Principle of cultural difference and adaptability",
+   "Principle of whole-family approach and leadership"
+  ],
+  "dt": [
+   "చేస్తూ నేర్చుకోవటం మరియు శిక్షణ పొందిన నిపుణుల సూత్రం",
+   "సాంస్కృతిక భేదం మరియు అనుకూలత సూత్రం",
+   "మొత్తం కుటుంబ ధోరణి మరియు నాయకత్వ సూత్రం"
+  ]
+ },
+ "33": {
+  "d": [
+   "Lecture method",
+   "Demonstration method",
+   "Programmed instruction"
+  ],
+  "dt": [
+   "ఉపన్యాస పద్ధతి",
+   "ప్రదర్శన పద్ధతి",
+   "క్రమయోజిత బోధన (ప్రోగ్రామ్డ్ ఇన్‌స్ట్రక్షన్)"
+  ]
+ },
+ "34": {
+  "d": [
+   "Rheumatic heart disease",
+   "Varicose veins",
+   "Congenital heart disease"
+  ],
+  "dt": [
+   "రుమాటిక్ హృదయ వ్యాధి",
+   "సిరలు ఉబ్బే వ్యాధి (వెరికోస్ వెయిన్స్)",
+   "పుట్టుకతో వచ్చే హృదయ వ్యాధి"
+  ]
+ },
+ "35": {
+  "d": [
+   "Synapse",
+   "Nerve impulse",
+   "Voluntary action"
+  ],
+  "dt": [
+   "సినాప్స్ (నాడీ సంధి)",
+   "నాడీ ప్రచోదనం",
+   "స్వచ్ఛంద చర్య"
+  ]
+ },
+ "36": {
+  "d": [
+   "Short stay home",
+   "Family counselling centre",
+   "Condensed course of education"
+  ],
+  "dt": [
+   "స్వల్పకాలిక వసతి గృహం",
+   "కుటుంబ సలహా కేంద్రం",
+   "సంక్షిప్త విద్యా కోర్సు"
+  ]
+ },
+ "37": {
+  "d": [
+   "Anganwadi Workers",
+   "Anganwadi Helpers",
+   "Accredited Social Health Activists"
+  ],
+  "dt": [
+   "అంగన్‌వాడి వర్కర్లు",
+   "అంగన్‌వాడి హెల్పర్లు",
+   "ఆశా కార్యకర్తలు"
+  ]
+ },
+ "38": {
+  "d": [
+   "Herbartian",
+   "Subject-centred",
+   "Monitorial"
+  ],
+  "dt": [
+   "హెర్బార్టియన్",
+   "విషయ కేంద్రిత",
+   "మానిటోరియల్"
+  ]
+ },
+ "39": {
+  "d": [
+   "Universalisation of elementary education",
+   "Eradication of adult illiteracy",
+   "Vocationalisation of secondary education"
+  ],
+  "dt": [
+   "ప్రాథమిక విద్య సార్వత్రికీకరణ",
+   "వయోజన నిరక్షరాస్యత నిర్మూలన",
+   "సెకండరీ విద్య వృత్తీకరణ"
+  ]
+ },
+ "40": {
+  "d": [
+   "Bipin Rawat",
+   "D. Anbu",
+   "Ranbir Singh"
+  ],
+  "dt": [
+   "బిపిన్ రావత్",
+   "డి. అన్బు",
+   "రణ్‌బీర్ సింగ్"
+  ]
+ },
+ "42": {
+  "d": [
+   "9.50 lakh victims and ₹950 crore",
+   "13.50 lakh victims and ₹1,350 crore",
+   "15.00 lakh victims and ₹1,500 crore"
+  ],
+  "dt": [
+   "9.50 లక్షలు మరియు రూ. 950.00 కోట్లు",
+   "13.50 లక్షలు మరియు రూ. 1350.00 కోట్లు",
+   "15.00 లక్షలు మరియు రూ. 1500.00 కోట్లు"
+  ]
+ },
+ "43": {
+  "d": [
+   "28",
+   "41",
+   "46"
+  ],
+  "dt": [
+   "28",
+   "41",
+   "46"
+  ]
+ },
+ "44": {
+  "d": [
+   "Auxiliary Nurse Midwife",
+   "Mukhya Sevika (Supervisor)",
+   "Child Development Project Officer"
+  ],
+  "dt": [
+   "ఆక్సిలరీ నర్స్ మిడ్‌వైఫ్ (ఎ.ఎన్.ఎమ్)",
+   "ముఖ్య సేవిక (సూపర్‌వైజర్)",
+   "చైల్డ్ డెవలప్‌మెంట్ ప్రాజెక్ట్ ఆఫీసర్"
+  ]
+ },
+ "45": {
+  "d": [
+   "13",
+   "15",
+   "19"
+  ],
+  "dt": [
+   "13",
+   "15",
+   "19"
+  ]
+ },
+ "46": {
+  "d": [
+   "Major",
+   "Captain",
+   "Brigadier"
+  ],
+  "dt": [
+   "మేజర్",
+   "కెప్టెన్",
+   "బ్రిగేడియర్"
+  ]
+ },
+ "47": {
+  "d": [
+   "2010",
+   "2014",
+   "2018"
+  ],
+  "dt": [
+   "2010",
+   "2014",
+   "2018"
+  ]
+ },
+ "48": {
+  "d": [
+   "Jan Dhan Yojana",
+   "Make in India",
+   "Swachh Bharat Abhiyan"
+  ],
+  "dt": [
+   "జన్ ధన్ యోజన",
+   "మేక్ ఇన్ ఇండియా",
+   "స్వచ్ఛ భారత్ అభియాన్"
+  ]
+ },
+ "49": {
+  "d": [
+   "Ampere : Current",
+   "Joule : Energy",
+   "Ohm : Resistance"
+  ],
+  "dt": [
+   "ఆంపియర్ : కరెంట్",
+   "జౌల్ : ఎనర్జీ",
+   "ఓమ్ : రెసిస్టెన్స్"
+  ]
+ },
+ "50": {
+  "d": [
+   "Swami Vivekananda",
+   "Raja Ram Mohan Roy",
+   "Keshab Chandra Sen"
+  ],
+  "dt": [
+   "స్వామి వివేకానంద",
+   "రాజా రామ్ మోహన్ రాయ్",
+   "కేశవ చంద్ర సేన్"
+  ]
+ },
+ "51": {
+  "d": [
+   "1829",
+   "1856",
+   "1891"
+  ],
+  "dt": [
+   "1829",
+   "1856",
+   "1891"
+  ]
+ },
+ "52": {
+  "d": [
+   "UNESCO",
+   "UNDP",
+   "UNEP"
+  ],
+  "dt": [
+   "యునెస్కో (యు.ఎన్.ఇ.ఎస్.సి.ఒ)",
+   "యు.ఎన్.డి.పి",
+   "యునెప్ (యు.ఎన్.ఇ.పి)"
+  ]
+ },
+ "53": {
+  "d": [
+   "Mahila Samakhya",
+   "National Commission for Women",
+   "Indira Mahila Yojana"
+  ],
+  "dt": [
+   "మహిళా సమాఖ్య",
+   "జాతీయ మహిళా కమిషన్",
+   "ఇందిరా మహిళా యోజన"
+  ]
+ },
+ "54": {
+  "d": [
+   "41",
+   "42",
+   "44"
+  ],
+  "dt": [
+   "41",
+   "42",
+   "44"
+  ]
+ },
+ "55": {
+  "d": [
+   "Raising and capturing fish in sea water",
+   "Capturing fish beyond the territorial waters",
+   "Processing and exporting frozen fish"
+  ],
+  "dt": [
+   "సముద్రపు నీటిలో చేపల్ని పెంచి, పట్టుకోవటం",
+   "ప్రాదేశిక జలాల అవతల చేపల్ని పట్టుకోవటం",
+   "ఘనీభవించిన చేపల్ని ప్రాసెస్ చేసి, ఎగుమతి చేయటం"
+  ]
+ },
+ "56": {
+  "d": [
+   "Sri Lanka",
+   "Bahrain",
+   "India"
+  ],
+  "dt": [
+   "శ్రీలంక",
+   "బహ్రెయిన్",
+   "భారత దేశం"
+  ]
+ },
+ "57": {
+  "d": [
+   "Vietnam",
+   "Bangladesh",
+   "Norway"
+  ],
+  "dt": [
+   "వియత్నాం",
+   "బంగ్లాదేశ్",
+   "నార్వే"
+  ]
+ },
+ "58": {
+  "d": [
+   "Instantly Quality Frozen",
+   "Integrated Quick Freezing",
+   "Insulated Quick Freezer"
+  ],
+  "dt": [
+   "ఇన్‌స్టంట్లీ క్వాలిటీ ఫ్రోజెన్",
+   "ఇంటిగ్రేటెడ్ క్విక్ ఫ్రీజింగ్",
+   "ఇన్సులేటెడ్ క్విక్ ఫ్రీజర్"
+  ]
+ },
+ "59": {
+  "d": [
+   "Productivity",
+   "Biome",
+   "Population density"
+  ],
+  "dt": [
+   "ప్రొడక్టివిటీ",
+   "బయోమ్",
+   "పాపులేషన్ డెన్సిటీ"
+  ]
+ },
+ "60": {
+  "d": [
+   "Hilsa",
+   "Rohu",
+   "Pomfret"
+  ],
+  "dt": [
+   "హిల్సా",
+   "రోహు",
+   "పాంఫ్రెట్"
+  ]
+ },
+ "61": {
+  "d": [
+   "2008",
+   "2012",
+   "2015"
+  ],
+  "dt": [
+   "2008",
+   "2012",
+   "2015"
+  ]
+ },
+ "62": {
+  "d": [
+   "Saltwater Crocodile",
+   "Olive Ridley Turtle",
+   "Dugong"
+  ],
+  "dt": [
+   "సాల్ట్ వాటర్ క్రొకడైల్",
+   "ఆలివ్ రిడ్లీ టర్టిల్",
+   "డుగాంగ్"
+  ]
+ },
+ "63": {
+  "d": [
+   "Gene cloning",
+   "Western blotting",
+   "Recombinant DNA technology"
+  ],
+  "dt": [
+   "జీన్ క్లోనింగ్",
+   "వెస్టర్న్ బ్లాటింగ్",
+   "రీకాంబినెంట్ డి.యన్.ఏ. టెక్నాలజీ"
+  ]
+ },
+ "65": {
+  "d": [
+   "Alfred Russel Wallace",
+   "Jean-Baptiste Lamarck",
+   "Gregor Mendel"
+  ],
+  "dt": [
+   "ఆల్ఫ్రెడ్ రసెల్ వాలెస్",
+   "జీన్ బాప్టిస్ట్ లామార్క్",
+   "గ్రెగర్ మెండెల్"
+  ]
+ },
+ "66": {
+  "d": [
+   "International Unit for Conservation of Nature",
+   "Intergovernmental Union for Conservation of Nature",
+   "International Union for Climate and Nature"
+  ],
+  "dt": [
+   "ఇంటర్నేషనల్ యూనిట్ ఫర్ కన్సర్వేషన్ ఆఫ్ నేచర్",
+   "ఇంటర్‌గవర్నమెంటల్ యూనియన్ ఫర్ కన్సర్వేషన్ ఆఫ్ నేచర్",
+   "ఇంటర్నేషనల్ యూనియన్ ఫర్ క్లైమేట్ అండ్ నేచర్"
+  ]
+ },
+ "67": {
+  "d": [
+   "Change + into – (between the brackets)",
+   "Change – into + (after 28)",
+   "Change × into + (inside the second bracket)"
+  ],
+  "dt": [
+   "బ్రాకెట్ల మధ్య ఉన్న + ను – గా మార్చండి",
+   "28 తర్వాత ఉన్న – ను + గా మార్చండి",
+   "రెండవ బ్రాకెట్ లోపలి x ను + గా మార్చండి"
+  ]
+ },
+ "68": {
+  "d": [
+   "January 1997",
+   "August 1998",
+   "January 2001"
+  ],
+  "dt": [
+   "జనవరి 1997",
+   "ఆగస్ట్ 1998",
+   "జనవరి 2001"
+  ]
+ },
+ "70": {
+  "d": [
+   "Faridabad",
+   "New Delhi",
+   "Guntur"
+  ],
+  "dt": [
+   "ఫరీదాబాద్",
+   "న్యూఢిల్లీ",
+   "గుంటూరు"
+  ]
+ },
+ "71": {
+  "d": [
+   "₹120",
+   "₹160",
+   "₹80"
+  ],
+  "dt": [
+   "120 రూ||లు",
+   "160 రూ||లు",
+   "80 రూ||లు"
+  ]
+ },
+ "72": {
+  "d": [
+   "16 m and 12 m",
+   "8 m and 4 m",
+   "10 m and 6 m"
+  ],
+  "dt": [
+   "16 మీ మరియు 12 మీ",
+   "8 మీ మరియు 4 మీ",
+   "10 మీ మరియు 6 మీ"
+  ]
+ },
+ "73": {
+  "d": [
+   "11 : 12",
+   "13 : 16",
+   "16 : 13"
+  ],
+  "dt": [
+   "11 : 12",
+   "13 : 16",
+   "16 : 13"
+  ]
+ },
+ "74": {
+  "d": [
+   "46°",
+   "54°",
+   "62°"
+  ],
+  "dt": [
+   "46°",
+   "54°",
+   "62°"
+  ]
+ },
+ "75": {
+  "d": [
+   "172",
+   "176",
+   "178"
+  ],
+  "dt": [
+   "172",
+   "176",
+   "178"
+  ]
+ },
+ "76": {
+  "d": [
+   "17%",
+   "26%",
+   "28%"
+  ],
+  "dt": [
+   "17%",
+   "26%",
+   "28%"
+  ]
+ },
+ "77": {
+  "d": [
+   "25%",
+   "16⅔%",
+   "22.5%"
+  ],
+  "dt": [
+   "25%",
+   "16⅔%",
+   "22.5%"
+  ]
+ },
+ "79": {
+  "d": [
+   "Carbon footprint",
+   "Water footprint",
+   "Carrying capacity"
+  ],
+  "dt": [
+   "కర్బన పాదముద్ర",
+   "నీటి పాదముద్ర",
+   "ధారణ సామర్థ్యం (క్యారీయింగ్ కెపాసిటీ)"
+  ]
+ },
+ "80": {
+  "d": [
+   "Carbon dioxide",
+   "Nitrous oxide",
+   "Ozone"
+  ],
+  "dt": [
+   "కార్బన్ డై ఆక్సైడ్",
+   "నైట్రస్ ఆక్సైడ్",
+   "ఓజోన్"
+  ]
+ },
+ "81": {
+  "d": [
+   "Bengaluru",
+   "Pune",
+   "Chennai"
+  ],
+  "dt": [
+   "బెంగళూరు",
+   "పుణె",
+   "చెన్నై"
+  ]
+ },
+ "82": {
+  "d": [
+   "Rice–Rice",
+   "Maize–Wheat",
+   "Cotton–Wheat"
+  ],
+  "dt": [
+   "వరి మరియు వరి",
+   "మొక్కజొన్న మరియు గోధుమ",
+   "ప్రత్తి మరియు గోధుమ"
+  ]
+ },
+ "84": {
+  "d": [
+   "Science of soils",
+   "Science of minerals",
+   "Science of petroleum"
+  ],
+  "dt": [
+   "నేలల విజ్ఞానం",
+   "ఖనిజాల విజ్ఞానం",
+   "పెట్రోలియం విజ్ఞానం"
+  ]
+ },
+ "85": {
+  "d": [
+   "Gain of electrons",
+   "Gain of hydrogen",
+   "Loss of oxygen"
+  ],
+  "dt": [
+   "ఎలక్ట్రాన్లను పొందటం",
+   "హైడ్రోజన్‌ను పొందటం",
+   "ఆక్సిజన్‌ను కోల్పోవటం"
+  ]
+ },
+ "86": {
+  "d": [
+   "I–A, II–D, III–C, IV–B",
+   "I–C, II–B, III–A, IV–D",
+   "I–D, II–C, III–B, IV–A"
+  ],
+  "dt": [
+   "I–ఎ, II–డి, III–సి, IV–బి",
+   "I–సి, II–బి, III–ఎ, IV–డి",
+   "I–డి, II–సి, III–బి, IV–ఎ"
+  ]
+ },
+ "87": {
+  "d": [
+   "Between 100 and 1000 nm",
+   "Between 0.01 and 1 nm",
+   "Between 1 and 100 µm"
+  ],
+  "dt": [
+   "100 మరియు 1000 ఎన్.ఎం. ల మధ్య",
+   "0.01 మరియు 1 ఎన్.ఎం. ల మధ్య",
+   "1 మరియు 100 మైక్రో మీ. ల మధ్య"
+  ]
+ },
+ "88": {
+  "d": [
+   "Blue Book – Official Reports of Britain",
+   "Yellow Book – Official Reports of France",
+   "Grey Book – Official Reports of Japan"
+  ],
+  "dt": [
+   "బ్లూ బుక్ - బ్రిటన్ ప్రభుత్వ అధికారిక నివేదిక",
+   "ఎల్లో బుక్ - ఫ్రాన్స్ ప్రభుత్వ అధికారిక నివేదిక",
+   "గ్రే బుక్ - జపాన్ ప్రభుత్వ అధికారిక నివేదిక"
+  ]
+ },
+ "89": {
+  "d": [
+   "Japan",
+   "India",
+   "Italy"
+  ],
+  "dt": [
+   "జపాన్",
+   "భారత్",
+   "ఇటలీ"
+  ]
+ },
+ "90": {
+  "d": [
+   "The joining of two light nuclei to form a heavier nucleus is called fusion.",
+   "The splitting of a heavy nucleus into lighter nuclei is called fission.",
+   "The energy of the Sun comes mainly from nuclear fusion."
+  ],
+  "dt": [
+   "రెండు తేలికపాటి న్యూక్లియస్ లు కలిసి బరువైన న్యూక్లియస్ ఏర్పడటాన్ని 'ఫ్యూజన్' అంటారు",
+   "బరువైన న్యూక్లియస్ తేలికపాటి న్యూక్లియస్ లుగా విడిపోవటాన్ని 'ఫిషన్' అంటారు",
+   "సూర్యుని శక్తి ప్రధానంగా కేంద్రక 'ఫ్యూజన్' నుండి వస్తుంది"
+  ]
+ },
+ "91": {
+  "d": [
+   "Uranus",
+   "Neptune",
+   "Mars"
+  ],
+  "dt": [
+   "యురేనస్",
+   "నెప్ట్యూన్",
+   "అంగారకుడు (మార్స్)"
+  ]
+ },
+ "92": {
+  "d": [
+   "Article 170",
+   "Article 172",
+   "Article 173"
+  ],
+  "dt": [
+   "170",
+   "172",
+   "173"
+  ]
+ },
+ "93": {
+  "d": [
+   "211",
+   "254",
+   "398"
+  ],
+  "dt": [
+   "211",
+   "254",
+   "398"
+  ]
+ },
+ "94": {
+  "d": [
+   "Schedule II",
+   "Schedule III",
+   "Schedule VII"
+  ],
+  "dt": [
+   "షెడ్యూల్ II",
+   "షెడ్యూల్ III",
+   "షెడ్యూల్ VII"
+  ]
+ },
+ "95": {
+  "d": [
+   "2004",
+   "2010",
+   "2012"
+  ],
+  "dt": [
+   "2004",
+   "2010",
+   "2012"
+  ]
+ },
+ "96": {
+  "d": [
+   "19 for SC and 12 for ST",
+   "48 for SC and 19 for ST",
+   "25 for SC and 4 for ST"
+  ],
+  "dt": [
+   "19 & 12",
+   "48 & 19",
+   "25 & 4"
+  ]
+ },
+ "97": {
+  "d": [
+   "Godavari River Management Board",
+   "Central Water Commission",
+   "Polavaram Project Authority"
+  ],
+  "dt": [
+   "గోదావరి నీటి మేనేజ్ మెంట్ బోర్డు",
+   "కేంద్ర జల సంఘం",
+   "పోలవరం ప్రాజెక్టు అథారిటీ"
+  ]
+ },
+ "98": {
+  "d": [
+   "Section 46(3)",
+   "Section 94(2)",
+   "Section 90(1)"
+  ],
+  "dt": [
+   "సెక్షన్ 46(3)",
+   "సెక్షన్ 94(2)",
+   "సెక్షన్ 90(1)"
+  ]
+ },
+ "99": {
+  "d": [
+   "Section 94, Part X",
+   "Section 85, Part IX",
+   "Section 30, Part IV"
+  ],
+  "dt": [
+   "94, పార్ట్ 10",
+   "85, పార్ట్ 9",
+   "30, పార్ట్ 4"
+  ]
+ },
+ "100": {
+  "d": [
+   "Fifth Schedule (of the Act)",
+   "Fourth Schedule (of the Act)",
+   "Seventh Schedule (of the Act)"
+  ],
+  "dt": [
+   "ఐదవ షెడ్యూల్",
+   "నాల్గవ షెడ్యూల్",
+   "ఏడవ షెడ్యూల్"
+  ]
+ },
+ "101": {
+  "d": [
+   "24 April",
+   "26 November",
+   "21 May"
+  ],
+  "dt": [
+   "24 ఏప్రిల్",
+   "26 నవంబర్",
+   "21 మే"
+  ]
+ },
+ "102": {
+  "d": [
+   "Dr. B. V. Keskar",
+   "R. R. Diwakar",
+   "Maulana Abul Kalam Azad"
+  ],
+  "dt": [
+   "డాక్టర్ బి. వి. కేస్కర్",
+   "ఆర్. ఆర్. దివాకర్",
+   "మౌలానా అబుల్ కలాం ఆజాద్"
+  ]
+ },
+ "103": {
+  "d": [
+   "Prasar Bharati",
+   "Imperial Radio Service",
+   "National Broadcasting Corporation"
+  ],
+  "dt": [
+   "ప్రసార భారతి",
+   "ఇంపీరియల్ రేడియో సర్వీస్",
+   "నేషనల్ బ్రాడ్ కాస్టింగ్ కార్పొరేషన్"
+  ]
+ },
+ "104": {
+  "d": [
+   "Raja Harishchandra",
+   "Kalidas",
+   "Bhakta Prahlada"
+  ],
+  "dt": [
+   "రాజా హరిశ్చంద్ర",
+   "కాళిదాస్",
+   "భక్త ప్రహ్లాద"
+  ]
+ },
+ "105": {
+  "d": [
+   "UK",
+   "Canada",
+   "Australia"
+  ],
+  "dt": [
+   "యు కె",
+   "కెనడా",
+   "ఆస్ట్రేలియా"
+  ]
+ },
+ "106": {
+  "d": [
+   "Motivation",
+   "Coordination",
+   "Communication"
+  ],
+  "dt": [
+   "ప్రేరణ",
+   "సమన్వయము",
+   "సమాచార ప్రసారము"
+  ]
+ },
+ "107": {
+  "d": [
+   "PMGSY",
+   "IAY",
+   "RGGVY"
+  ],
+  "dt": [
+   "పి.ఎం.జి.ఎస్.వై",
+   "ఐ.ఏ.వై",
+   "ఆర్.జి.జి.వి.వై"
+  ]
+ },
+ "108": {
+  "d": [
+   "PMGSY",
+   "RGGVY",
+   "JNNURM"
+  ],
+  "dt": [
+   "పి.ఎం.జి.ఎస్.వై",
+   "ఆర్.జి.జి.వి.వై",
+   "జె.ఎన్.ఎన్.యు.ఆర్.ఎం"
+  ]
+ },
+ "109": {
+  "d": [
+   "Participatory Rural Appraisal",
+   "Cost–Benefit Analysis",
+   "Input–Output Analysis"
+  ],
+  "dt": [
+   "భాగస్వామ్య గ్రామీణ అంచనా",
+   "వ్యయ–ప్రయోజన విశ్లేషణ",
+   "ఉత్పాదకాలు–ఉత్పత్తుల విశ్లేషణ"
+  ]
+ },
+ "110": {
+  "d": [
+   "Chief Minister of the State",
+   "Minister for Agriculture of the State",
+   "Agriculture Production Commissioner of the State"
+  ],
+  "dt": [
+   "రాష్ట్ర ముఖ్యమంత్రి",
+   "రాష్ట్ర వ్యవసాయ శాఖ మంత్రి",
+   "రాష్ట్ర ప్రభుత్వ వ్యవసాయ ఉత్పత్తి కమిషనర్"
+  ]
+ },
+ "111": {
+  "d": [
+   "Leather craft",
+   "Brass craft",
+   "Stone craft"
+  ],
+  "dt": [
+   "తోలుబొమ్మలు",
+   "ఇత్తడి బొమ్మలు",
+   "రాతి బొమ్మలు"
+  ]
+ },
+ "112": {
+  "d": [
+   "Coastal Sandy",
+   "Upland Laterite",
+   "Saline Alkaline"
+  ],
+  "dt": [
+   "తీరప్రాంత ఇసుక నేలలు",
+   "ఎత్తైన ప్రాంతాల లేటరైట్ నేలలు",
+   "లవణ క్షార (చౌడు) నేలలు"
+  ]
+ },
+ "113": {
+  "d": [
+   "World Bank",
+   "ADB",
+   "IFAD"
+  ],
+  "dt": [
+   "ప్రపంచ బ్యాంకు",
+   "ఏ.డి.బి",
+   "ఐ.ఎఫ్.ఏ.డి"
+  ]
+ },
+ "114": {
+  "d": [
+   "Decentralisation",
+   "Delegation",
+   "Disinvestment"
+  ],
+  "dt": [
+   "వికేంద్రీకరణ (డీసెంట్రలైజేషన్)",
+   "అధికార బదలాయింపు (డెలిగేషన్)",
+   "పెట్టుబడుల ఉపసంహరణ (డిస్ఇన్వెస్ట్‌మెంట్)"
+  ]
+ },
+ "115": {
+  "d": [
+   "75 : 25",
+   "50 : 50",
+   "70 : 30"
+  ],
+  "dt": [
+   "75:25",
+   "50:50",
+   "70:30"
+  ]
+ },
+ "116": {
+  "d": [
+   "Integrated Watershed Management Programme (IWMP)",
+   "Swarnajayanti Gram Swarozgar Yojana (SGSY)",
+   "National Rural Drinking Water Programme (NRDWP)"
+  ],
+  "dt": [
+   "సమగ్ర వాటర్‌షెడ్ నిర్వహణ కార్యక్రమం (IWMP)",
+   "స్వర్ణజయంతి గ్రామ స్వరోజ్‌గార్ యోజన (SGSY)",
+   "జాతీయ గ్రామీణ తాగునీటి కార్యక్రమం (NRDWP)"
+  ]
+ },
+ "117": {
+  "d": [
+   "Dr. M. S. Swaminathan",
+   "Prof. D. R. Gadgil",
+   "Dr. V. K. R. V. Rao"
+  ],
+  "dt": [
+   "డాక్టర్ ఎం. ఎస్. స్వామినాథన్",
+   "ప్రొఫెసర్ డి. ఆర్. గాడ్గిల్",
+   "డాక్టర్ వి. కె. ఆర్. వి. రావు"
+  ]
+ },
+ "118": {
+  "d": [
+   "Lok Nayak Jayaprakash Narayan",
+   "Dr. Ram Manohar Lohia",
+   "Mahatma Gandhi"
+  ],
+  "dt": [
+   "లోక్ నాయక్ జయప్రకాశ్ నారాయణ్",
+   "డాక్టర్ రామ్ మనోహర్ లోహియా",
+   "మహాత్మా గాంధీ"
+  ]
+ },
+ "119": {
+  "d": [
+   "15th August 2019",
+   "2nd October 2022",
+   "31st March 2020"
+  ],
+  "dt": [
+   "15 ఆగస్టు 2019",
+   "2 అక్టోబర్ 2022",
+   "31 మార్చి 2020"
+  ]
+ },
+ "120": {
+  "d": [
+   "25 June 2015",
+   "14 April 2016",
+   "11 October 2014"
+  ],
+  "dt": [
+   "జూన్ 25, 2015",
+   "ఏప్రిల్ 14, 2016",
+   "అక్టోబర్ 11, 2014"
+  ]
+ },
+ "122": {
+  "d": [
+   "Google Earth Platform",
+   "UMANG Mobile Platform",
+   "mAadhaar Mobile Platform"
+  ],
+  "dt": [
+   "గూగుల్ ఎర్త్ వేదిక",
+   "ఉమంగ్ మొబైల్ వేదిక",
+   "ఎం-ఆధార్ మొబైల్ వేదిక"
+  ]
+ },
+ "123": {
+  "d": [
+   "2014",
+   "2015",
+   "2020"
+  ],
+  "dt": [
+   "2014",
+   "2015",
+   "2020"
+  ]
+ },
+ "124": {
+  "d": [
+   "Paddy",
+   "Jowar",
+   "Ragi"
+  ],
+  "dt": [
+   "వరి",
+   "జొన్న",
+   "రాగి"
+  ]
+ },
+ "125": {
+  "d": [
+   "Provide seed capital to start-ups in metropolitan cities",
+   "Attract foreign investors to start-ups in tier-1 cities",
+   "Showcase Indian start-ups to investors in foreign cities"
+  ],
+  "dt": [
+   "మెట్రో నగరాల్లోని స్టార్ట్ అప్ లకు ప్రారంభ మూలధనాన్ని అందించుట",
+   "1వ తరగతి నగరాల్లోని స్టార్ట్ అప్ ల వైపు విదేశీ పెట్టుబడిదారులను ఆకర్షించుట",
+   "విదేశీ నగరాల్లోని పెట్టుబడిదారులకు భారతీయ స్టార్ట్ అప్ లను ప్రదర్శించుట"
+  ]
+ },
+ "126": {
+  "d": [
+   "Totapuri",
+   "Suvarnarekha",
+   "Himayat"
+  ],
+  "dt": [
+   "తోతాపురి",
+   "సువర్ణరేఖ",
+   "హిమాయత్"
+  ]
+ },
+ "127": {
+  "d": [
+   "Naandi Foundation",
+   "Smile Foundation",
+   "Pratham Education Foundation"
+  ],
+  "dt": [
+   "నాంది ఫౌండేషన్",
+   "స్మైల్ ఫౌండేషన్",
+   "ప్రథమ్ ఎడ్యుకేషన్ ఫౌండేషన్"
+  ]
+ },
+ "128": {
+  "d": [
+   "Central Ground Water Authority",
+   "National Water Development Agency",
+   "National Horticulture Board"
+  ],
+  "dt": [
+   "సెంట్రల్ గ్రౌండ్ వాటర్ అథారిటీ",
+   "నేషనల్ వాటర్ డెవలప్‌మెంట్ ఏజెన్సీ",
+   "నేషనల్ హార్టికల్చర్ బోర్డ్"
+  ]
+ },
+ "129": {
+  "d": [
+   "Smt. Vijaya Lakshmi Pandit",
+   "Smt. Aruna Asaf Ali",
+   "Smt. Durgabai Deshmukh"
+  ],
+  "dt": [
+   "శ్రీమతి విజయలక్ష్మి పండిట్",
+   "శ్రీమతి అరుణా అసఫ్ అలీ",
+   "శ్రీమతి దుర్గాబాయి దేశ్‌ముఖ్"
+  ]
+ },
+ "130": {
+  "d": [
+   "NSAP",
+   "PMMVY",
+   "PMAY-G"
+  ],
+  "dt": [
+   "జాతీయ సామాజిక సహాయ కార్యక్రమం (NSAP)",
+   "ప్రధాన మంత్రి మాతృ వందన యోజన (PMMVY)",
+   "ప్రధాన మంత్రి ఆవాస్ యోజన - గ్రామీణ్ (PMAY-G)"
+  ]
+ },
+ "131": {
+  "d": [
+   "District Collector of the State capital or an equivalent-level officer",
+   "Deputy Secretary (Rural Development) or an equivalent-level officer",
+   "Director of Treasuries and Accounts or an equivalent-level officer"
+  ],
+  "dt": [
+   "రాష్ట్ర రాజధాని జిల్లా కలెక్టర్ లేదా సమాన స్థాయి ఆఫీసర్",
+   "డిప్యూటీ సెక్రటరీ (గ్రామీణాభివృద్ధి) లేదా సమాన స్థాయి ఆఫీసర్",
+   "ట్రెజరీలు మరియు అకౌంట్ల డైరెక్టర్ లేదా సమాన స్థాయి ఆఫీసర్"
+  ]
+ },
+ "132": {
+  "d": [
+   "Ministry of Home Affairs",
+   "Ministry of Finance",
+   "Ministry of Law & Justice"
+  ],
+  "dt": [
+   "హోం వ్యవహారాల మంత్రిత్వ శాఖ.",
+   "ఆర్థిక మంత్రిత్వ శాఖ.",
+   "లా అండ్ జస్టిస్ మంత్రిత్వ శాఖ."
+  ]
+ },
+ "133": {
+  "d": [
+   "Latin",
+   "French",
+   "Sanskrit"
+  ],
+  "dt": [
+   "లాటిన్",
+   "ఫ్రెంచ్",
+   "సంస్కృతం"
+  ]
+ },
+ "134": {
+  "d": [
+   "Rochdale Principles",
+   "Panchsheel",
+   "Sarvodaya Ideals"
+  ],
+  "dt": [
+   "రోచ్‌డేల్ సూత్రాలు",
+   "పంచశీల",
+   "సర్వోదయ ఆదర్శాలు"
+  ]
+ },
+ "135": {
+  "d": [
+   "Sriniketan",
+   "Gurgaon Experiment",
+   "Etawah Pilot Project"
+  ],
+  "dt": [
+   "శ్రీనికేతన్",
+   "గుర్గావ్ ప్రయోగం",
+   "ఇటావా పైలట్ ప్రాజెక్టు"
+  ]
+ },
+ "136": {
+  "d": [
+   "Central Cattle Breeding Farm",
+   "National Dairy Research Centre",
+   "National Fodder Development Centre"
+  ],
+  "dt": [
+   "కేంద్ర పశు సంతానోత్పత్తి క్షేత్రం",
+   "జాతీయ పాడి పరిశోధన కేంద్రం",
+   "జాతీయ పశుగ్రాస అభివృద్ధి కేంద్రం"
+  ]
+ },
+ "137": {
+  "d": [
+   "Compensate insured farmers for the loss in crop yield assessed through crop-cutting experiments conducted at the village level",
+   "Provide crop loans at a subsidised rate of interest to farmers whose crops are affected by adverse weather conditions",
+   "Stabilise the market prices of crops when production rises sharply due to favourable weather conditions"
+  ],
+  "dt": [
+   "గ్రామ స్థాయిలో నిర్వహించే పంట కోత ప్రయోగాల ద్వారా అంచనా వేసిన పంట దిగుబడి నష్టానికి భీమా సౌకర్యం కలిగి ఉన్న రైతులకు పరిహారం చెల్లించడం",
+   "ప్రతికూల వాతావరణ పరిస్థితుల వల్ల పంటలు దెబ్బతిన్న రైతులకు రాయితీ వడ్డీ రేటుపై పంట రుణాలను అందించడం",
+   "అనుకూల వాతావరణ పరిస్థితుల వల్ల ఉత్పత్తి బాగా పెరిగినప్పుడు పంటల మార్కెట్ ధరలను స్థిరీకరించడం"
+  ]
+ },
+ "139": {
+  "d": [
+   "3",
+   "17",
+   "27"
+  ],
+  "dt": [
+   "3",
+   "17",
+   "27"
+  ]
+ },
+ "140": {
+  "d": [
+   "a and b only are correct",
+   "b and c only are correct",
+   "a and c only are correct"
+  ],
+  "dt": [
+   "ఎ, బి మాత్రమే సరి అయినవి",
+   "బి, సి మాత్రమే సరి అయినవి",
+   "ఎ, సి మాత్రమే సరి అయినవి"
+  ]
+ },
+ "141": {
+  "d": [
+   "Sompeta, Srikakulam",
+   "Parvathipuram, Vizianagaram",
+   "Rampachodavaram, East Godavari"
+  ],
+  "dt": [
+   "సోంపేట, శ్రీకాకుళం",
+   "పార్వతీపురం, విజయనగరం",
+   "రంపచోడవరం, తూర్పు గోదావరి"
+  ]
+ },
+ "142": {
+  "d": [
+   "38,000 and 2,47,000",
+   "47,000 and 1,26,000",
+   "35,000 and 1,65,000"
+  ],
+  "dt": [
+   "38,000 మరియు 2,47,000",
+   "47,000 మరియు 1,26,000",
+   "35,000 మరియు 1,65,000"
+  ]
+ },
+ "143": {
+  "d": [
+   "Jagananna Vidya Deevena",
+   "Jagananna Vasathi Deevena",
+   "Jagananna Thodu"
+  ],
+  "dt": [
+   "జగనన్న విద్యా దీవెన",
+   "జగనన్న వసతి దీవెన",
+   "జగనన్న తోడు"
+  ]
+ },
+ "144": {
+  "d": [
+   "₹5,500 crore",
+   "₹10,250 crore",
+   "₹12,500 crore"
+  ],
+  "dt": [
+   "రూ. 5500.00 కోట్లు",
+   "రూ. 10250.00 కోట్లు",
+   "రూ. 12500.00 కోట్లు"
+  ]
+ },
+ "145": {
+  "d": [
+   "1,32,512 fishermen",
+   "96,148 fishermen",
+   "1,54,027 fishermen"
+  ],
+  "dt": [
+   "1,32,512 మంది మత్స్యకారులు",
+   "96,148 మంది మత్స్యకారులు",
+   "1,54,027 మంది మత్స్యకారులు"
+  ]
+ },
+ "146": {
+  "d": [
+   "G",
+   "D",
+   "F"
+  ],
+  "dt": [
+   "G",
+   "D",
+   "F"
+  ]
+ },
+ "147": {
+  "d": [
+   "B",
+   "E",
+   "D"
+  ],
+  "dt": [
+   "B",
+   "E",
+   "D"
+  ]
+ },
+ "148": {
+  "d": [
+   "C",
+   "A",
+   "F"
+  ],
+  "dt": [
+   "C",
+   "A",
+   "F"
+  ]
+ },
+ "149": {
+  "d": [
+   "A",
+   "D",
+   "G"
+  ],
+  "dt": [
+   "A",
+   "D",
+   "G"
+  ]
+ },
+ "150": {
+  "d": [
+   "Second to the left",
+   "Third to the right",
+   "Third to the left"
+  ],
+  "dt": [
+   "ఎడమ వైపు నుండి రెండవ స్థానం",
+   "కుడి వైపు నుండి మూడవ స్థానం",
+   "ఎడమ వైపు నుండి మూడవ స్థానం"
+  ]
+ }
+}

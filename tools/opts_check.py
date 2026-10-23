@@ -1,6 +1,6 @@
 """Check a Learn-with-Anil options file for an answer-only APPSC paper.
 
-Usage: python3 tools/opts_check.py <english source .txt> [<options .json>]
+Usage: python3 tools/opts_check.py <english source .txt> [<options .json>] [--only=FIRST-LAST]
 The options file defaults to <dir of source>/opts/<name>.json and looks like
   {"1": {"d": ["wrong 1", "wrong 2", "wrong 3"], "dt": ["తప్పు 1", "తప్పు 2", "తప్పు 3"]}, ...}
 "d" = three wrong options in English, "dt" = the same three in Telugu (same order).
@@ -28,10 +28,11 @@ def answers(path):
     return out
 
 
-def check(src, optf=None):
+def check(src, optf=None, only=None):
     d, f = os.path.split(src)
     optf = optf or os.path.join(d, 'opts', f.replace('.txt', '.json'))
     en, te = answers(src), answers(os.path.join(d, 'te', f))
+    if only: en = {n: a for n, a in en.items() if only[0] <= n <= only[1]}
     errs = []
     try:
         opts = json.load(open(optf, encoding='utf-8'))
@@ -64,7 +65,9 @@ def check(src, optf=None):
 
 
 if __name__ == '__main__':
-    errs, n = check(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None)
+    args = [a for a in sys.argv[1:] if not a.startswith('--only')]
+    only = next((tuple(int(x) for x in a.split('=')[1].split('-')) for a in sys.argv[1:] if a.startswith('--only=')), None)
+    errs, n = check(args[0], args[1] if len(args) > 1 else None, only)
     for e in errs: print('!', e)
     print(f'{n} questions, {len(errs)} problems')
     sys.exit(1 if errs else 0)
