@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: 'run, check, whoami or render'
+        description: 'run, post-now, check, whoami or render'
         default: check
 
 permissions:

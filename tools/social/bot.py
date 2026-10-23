@@ -691,6 +691,40 @@ def cmd_run(wait):
     publish_state(f'Run {now:%Y-%m-%d %H:%M} IST')
 
 
+def cmd_post_now():
+    """Post today's memes right away instead of waiting for 1 PM / 9 PM (Anil asked; respects Stop)."""
+    tok_tg, tok_ig = os.environ.get('TG_BOT_TOKEN'), ig_token()
+    tg = Telegram(tok_tg) if tok_tg else None
+    ig = Instagram(tok_ig, os.environ.get('IG_USER_ID', '')) if tok_ig else None
+    if not tg and not ig:
+        log('no TG_BOT_TOKEN / IG_TOKEN; nothing to do'); return
+    ctl = jload(sp('control.json'), {})
+    CTL.clear(); CTL.update(ctl); ctl = CTL
+    now = now_ist()
+    day = now.date()
+    if tg:
+        try:
+            process_updates(tg, ctl)              # pick up any Stop taps first
+        except Exception as e:
+            log(f'! telegram updates: {e}')
+    lg = jload(sp('log', f'{day}.json'), {})
+    early = (now - dt.timedelta(minutes=PREVIEW_MIN + 1)).isoformat()
+    for s in SLOTS:
+        if s['kind'] != 'meme':
+            continue
+        e = lg.get(s['key'], {})
+        if e.get('skipped') or (('telegram' in e or not tg) and ('instagram' in e or not ig)):
+            log(f'{s["label"]}: already done'); continue
+        ctl.setdefault('previews', {})[f'{day}:{s["n"]}'] = early   # Anil approved posting now
+        try:
+            post_slot(s, day, lg, ctl, tg, ig)
+        except Exception as ex:
+            alert_once(tg, lg.setdefault(s['key'], {}), 'slot', f'{s["label"]}: {ex}')
+        jsave(sp('log', f'{day}.json'), lg)
+        jsave(sp('control.json'), ctl)
+    publish_state(f'Post now {now:%Y-%m-%d %H:%M} IST')
+
+
 def cmd_check():
     ok = True
     if os.environ.get('TG_BOT_TOKEN'):
@@ -759,7 +793,7 @@ def cmd_demo(out):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('cmd', choices=['run', 'fetch', 'needs-render', 'render', 'check', 'whoami', 'demo'])
+    ap.add_argument('cmd', choices=['run', 'post-now', 'fetch', 'needs-render', 'render', 'check', 'whoami', 'demo'])
     ap.add_argument('--wait', action='store_true')
     ap.add_argument('--out')
     a = ap.parse_args()
@@ -771,6 +805,8 @@ def main():
         cmd_fetch()
     elif a.cmd == 'run':
         cmd_run(a.wait)
+    elif a.cmd == 'post-now':
+        cmd_post_now()
     elif a.cmd == 'check':
         sys.exit(0 if cmd_check() else 1)
     elif a.cmd == 'whoami':
