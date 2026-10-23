@@ -244,6 +244,8 @@ async def main():
                     if await pg.inner_text('#timer') != t1 or not await pg.locator('#timer.off').count(): errors.append(f'{path}: timer kept running after switching it off')
                     await pg.click('[data-act="timertoggle"]'); await pg.wait_for_timeout(2200)
                     if await pg.inner_text('#timer') == t1: errors.append(f'{path}: timer did not restart after switching it on')
+        epm = open(os.path.join(SITE, 'upsc-epfo', 'mock-test.html'), encoding='utf-8').read()
+        if '₹199' not in epm or 'coming soon' not in epm or '?buy=mock' in epm: errors.append('upsc-epfo/mock-test.html: no "₹199 · coming soon" pack, or it can be bought already')
         await pg.goto(URL + 'ts-police-si/?sec=ari'); await pg.wait_for_timeout(600)
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('?sec=ari did not open a sectional test')
         await pg.goto(URL + 'ts-police-si/?buy=mock'); await pg.wait_for_timeout(500)
