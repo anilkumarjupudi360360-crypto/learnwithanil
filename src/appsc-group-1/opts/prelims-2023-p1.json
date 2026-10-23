@@ -2,12 +2,12 @@
  "1": {
   "d": [
    "Kalibangan",
-   "Banawali",
+   "Surkotada",
    "Ropar"
   ],
   "dt": [
    "కాళీబంగన్",
-   "బనవాలి",
+   "సుర్కోటడా",
    "రోపార్"
   ]
  },
@@ -397,14 +397,14 @@
  },
  "35": {
   "d": [
-   "The Speaker decides whether a Bill is a Money Bill or not.",
-   "The Speaker decides questions of disqualification of members on the ground of defection.",
-   "The Speaker adjourns the House or suspends the meeting in the absence of quorum."
+   "The Speaker decides whether a Bill is a Money Bill or not & The Speaker maintains order and decorum in the House.",
+   "The Speaker decides questions of disqualification of members on the ground of defection & The Speaker accepts the resignation of a member only when satisfied that it is voluntary and genuine.",
+   "The Speaker adjourns the House or suspends the meeting in the absence of quorum & The Speaker can permit a member to address the House in his mother tongue."
   ],
   "dt": [
-   "ఒక బిల్లు ద్రవ్య బిల్లు అవునా కాదా అని స్పీకర్ నిర్ణయిస్తారు.",
-   "ఫిరాయింపుల కారణంగా సభ్యుల అనర్హతకు సంబంధించిన ప్రశ్నలపై స్పీకర్ నిర్ణయం తీసుకుంటారు.",
-   "కోరం లేనప్పుడు స్పీకర్ సభను వాయిదా వేస్తారు లేదా సమావేశాన్ని నిలిపివేస్తారు."
+   "ఒక బిల్లు ద్రవ్య బిల్లు అవునా కాదా అని స్పీకర్ నిర్ణయిస్తారు & సభలో క్రమశిక్షణ, మర్యాదను స్పీకర్ కాపాడుతారు.",
+   "ఫిరాయింపుల కారణంగా సభ్యుల అనర్హతకు సంబంధించిన ప్రశ్నలపై స్పీకర్ నిర్ణయం తీసుకుంటారు & సభ్యుని రాజీనామా స్వచ్ఛందమైనది, నిజమైనది అని సంతృప్తి చెందినప్పుడే స్పీకర్ దానిని ఆమోదిస్తారు.",
+   "కోరం లేనప్పుడు స్పీకర్ సభను వాయిదా వేస్తారు లేదా సమావేశాన్ని నిలిపివేస్తారు & ఒక సభ్యుడు తన మాతృభాషలో సభలో మాట్లాడేందుకు స్పీకర్ అనుమతించవచ్చు."
   ]
  },
  "36": {
@@ -805,14 +805,14 @@
  },
  "70": {
   "d": [
-   "Wages and Salaries",
-   "Profits of Companies",
-   "Imputed Rent of Owner-Occupied Houses"
+   "Wages and Salaries / Employers’ Contribution to Social Security",
+   "Profits of Companies / Mixed Income of the Self-Employed",
+   "Imputed Rent of Owner-Occupied Houses / Rent and Royalties"
   ],
   "dt": [
-   "వేతనాలు, జీతాలు",
-   "కంపెనీల లాభాలు",
-   "స్వంత నివాస గృహాల ఆరోపిత అద్దె"
+   "వేతనాలు, జీతాలు / సామాజిక భద్రతకు యజమానుల చందా",
+   "కంపెనీల లాభాలు / స్వయం ఉపాధి పొందేవారి మిశ్రమ ఆదాయం",
+   "స్వంత నివాస గృహాల ఆరోపిత అద్దె / అద్దె, రాయల్టీలు"
   ]
  },
  "71": {

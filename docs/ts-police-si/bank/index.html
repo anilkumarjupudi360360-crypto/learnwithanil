@@ -958,7 +958,7 @@ document.addEventListener("click", e=>{   // move between views without reloadin
 
 /* ---------- shared pieces ---------- */
 function bmBtn(id){ const on=!!S.bm[id]; return `<button class="iconbtn" type="button" data-act="bm" data-id="${id}" aria-pressed="${on}" title="${on?"Remove bookmark":"Bookmark this question"}">${on?ICON.bmOn:ICON.bm}<span>${on?"Saved":"Save"}</span></button>`; }
-function tags(q){ const p=PMAP[q.p]; return `<span class="pill blue">${esc(p.short)}</span><span class="pill">${esc(SUBJ[q.s].name)}</span><span class="pill">${esc(q.t)}</span>${isMCQ(q)?"":'<span class="pill warn">Quick recall</span>'}${P.lang===L2.code&&!q.qt?'<span class="pill en-only">English only</span>':""}`; }
+function tags(q){ const p=PMAP[q.p]; return `<span class="pill blue">${esc(p.short)}</span><span class="pill">${esc(SUBJ[q.s].name)}</span><span class="pill">${esc(q.t)}</span>${isMCQ(q)?"":'<span class="pill warn">Quick recall</span>'}${q.lwo?'<span class="pill" title="APPSC\'s key printed only the correct answer. That answer is the official one; the other three options are written by Learn with Anil.">Answer: APPSC key · options: Learn with Anil</span>':""}${P.lang===L2.code&&!q.qt?'<span class="pill en-only">English only</span>':""}`; }
 /* Question text; runs of two or more pipe-typed rows ("Trade receivables | 25,00,000 |", header row first) become a table. */
 function tblRow(l){ const t=l.trim(); return t.includes("|") && (t.includes(" | ") || t.startsWith("| ") || t.endsWith(" |") || t==="|"); }
 function qtextHTML(text){
@@ -1153,7 +1153,7 @@ function vPapers(){
       <span class="yr">${esc(p.held)} · ${esc(p.notif)}</span>
       <h3>${p.kw ? esc(p.kw) : esc(p.title).replace(/Group-(I{1,3}|IV)\b/g,'<span class="nw">Group-$1</span>')}</h3>
       <p>${esc(p.blurb)}</p>
-      <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
+      <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.own?"Options by Learn with Anil":p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
       <div class="acts">
         <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":"🔒 "}Attempt this paper · ${p.count} min timer</button>
       </div>
@@ -1630,7 +1630,7 @@ const ROOTUP = DATA.base ? "../" : "";
 const SITE_HOST = (DATA.site||"https://learnwithanil.in").replace(/^https?:\/\//,"");
 function shareWA(text){ window.open("https://wa.me/?text="+encodeURIComponent(text), "_blank", "noopener"); }
 function qURL(id, base, pb){ return DATA.qpages ? `${DATA.site}${pb==null? PB : pb}q/${id}.html` : `${DATA.site}/${base==null? (DATA.base||"") : base}#q/${id}`; }
-function chalBtn(q){ if(PMAP[q.p] && (PMAP[q.p].paid || PMAP[q.p].fmt!=="mcq")) return ""; return `<button class="iconbtn wa" type="button" data-act="qchal" data-id="${q.id}" title="Send this question to a friend on WhatsApp">${WA_ICON}<span>Challenge a friend</span></button>`; }
+function chalBtn(q){ if(PMAP[q.p] && (PMAP[q.p].paid || PMAP[q.p].own || PMAP[q.p].fmt!=="mcq")) return ""; return `<button class="iconbtn wa" type="button" data-act="qchal" data-id="${q.id}" title="Send this question to a friend on WhatsApp">${WA_ICON}<span>Challenge a friend</span></button>`; }
 function excerpt(t, n){ t = String(t).replace(/\s+/g," ").trim(); return t.length>n ? t.slice(0,n-1).replace(/\s\S*$/,"")+"…" : t; }
 function challengeText(text, exam, paper, n, url, opts){
   const o = opts && opts.length ? "\n\n" + opts.map((x,i)=>`${LET[i]}) ${excerpt(x, 90)}`).join("\n") : "";

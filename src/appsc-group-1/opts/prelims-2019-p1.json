@@ -565,12 +565,12 @@
  },
  "50": {
   "d": [
-   "The Governor can pardon a sentence of death passed for an offence under a State law.",
+   "The President's pardoning power is not subject to judicial review on any ground.",
    "The President exercises the pardoning power in his own discretion, without the advice of the Council of Ministers.",
    "The Governor can pardon a sentence passed by a court martial."
   ],
   "dt": [
-   "రాష్ట్ర చట్టం కింద నేరానికి విధించిన మరణదండనను రద్దు చేసే అధికారం గవర్నరుకు ఉంది.",
+   "రాష్ట్రపతి క్షమించే అధికారం ఏ ప్రాతిపదికపైనా న్యాయ సమీక్షకు లోబడదు.",
    "రాష్ట్రపతి మంత్రిమండలి సలహా లేకుండా తన విచక్షణతో క్షమించే అధికారాన్ని వినియోగిస్తాడు.",
    "కోర్ట్ మార్షల్ విధించిన శిక్షను రద్దు చేసే అధికారం గవర్నరుకు ఉంది."
   ]
@@ -1117,13 +1117,13 @@
  },
  "99": {
   "d": [
-   "Statement i & ii are correct",
-   "Statement i & iii are correct",
+   "Statement ii only is correct",
+   "Statement iii only is correct",
    "Statement i only is correct"
   ],
   "dt": [
-   "Statement i & ii are correct",
-   "Statement i & iii are correct",
+   "Statement ii only is correct",
+   "Statement iii only is correct",
    "Statement i only is correct"
   ]
  },
@@ -1347,12 +1347,12 @@
   "d": [
    "Urals",
    "Carpathians",
-   "Elburz"
+   "Zagros"
   ],
   "dt": [
    "యూరల్",
    "కార్పేథియన్",
-   "ఎల్బర్జ్"
+   "జాగ్రోస్"
   ]
  },
  "119": {

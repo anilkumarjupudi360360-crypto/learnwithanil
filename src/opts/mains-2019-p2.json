@@ -15,12 +15,12 @@
   "d": [
    "Vessantara Jataka",
    "Mahajanaka Jataka",
-   "Sutta Nipata"
+   "Kusa Jataka"
   ],
   "dt": [
    "వెస్సంతర జాతకం",
    "మహాజనక జాతకం",
-   "సుత్త నిపాతం"
+   "కుశ జాతకం"
   ]
  },
  "3": {
@@ -75,12 +75,12 @@
   "d": [
    "Anjanam",
    "Laksharasam",
-   "Kumkumam"
+   "Sinduram"
   ],
   "dt": [
    "అంజనం",
    "లాక్షారసం",
-   "కుంకుమం"
+   "సిందూరం"
   ]
  },
  "8": {
@@ -122,13 +122,13 @@
  "11": {
   "d": [
    "Suravaram Pratapa Reddy",
-   "K.A. Nilakanta Sastri",
-   "Chilukuri Veerabhadra Rao"
+   "Colin Mackenzie",
+   "C.P. Brown"
   ],
   "dt": [
    "సురవరం ప్రతాపరెడ్డి",
-   "కె.ఎ. నీలకంఠ శాస్త్రి",
-   "చిలుకూరి వీరభద్ర రావు"
+   "కాలిన్ మెకంజీ",
+   "సి.పి. బ్రౌన్"
   ]
  },
  "12": {
@@ -218,12 +218,12 @@
  "19": {
   "d": [
    "Ketana",
-   "Eluganti Peddana",
+   "Nannechoda",
    "Vemulavada Bhimakavi"
   ],
   "dt": [
    "కేతన",
-   "ఎలుగంటి పెద్దన",
+   "నన్నెచోడుడు",
    "వేములవాడ భీమకవి"
   ]
  },
@@ -398,12 +398,12 @@
  "34": {
   "d": [
    "Hanumakonda",
-   "Palampet",
+   "Bayyaram",
    "Motupalli"
   ],
   "dt": [
    "హనుమకొండ శాసనం",
-   "పాలంపేట శాసనం",
+   "బయ్యారం శాసనం",
    "మోటుపల్లి శాసనం"
   ]
  },
@@ -627,12 +627,12 @@
   "d": [
    "B.G. Tilak",
    "Dadabhai Naoroji",
-   "Keshab Chandra Sen"
+   "Pherozeshah Mehta"
   ],
   "dt": [
    "బి.జి. తిలక్",
    "దాదాభాయి నౌరోజీ",
-   "కేశవ చంద్ర సేన్"
+   "ఫిరోజ్ షా మెహతా"
   ]
  },
  "54": {
@@ -758,12 +758,12 @@
  "64": {
   "d": [
    "Pattabhi Sitaramayya",
-   "Tanguturi Prakasam",
+   "Kasinathuni Nageswara Rao",
    "Konda Venkatappayya"
   ],
   "dt": [
    "పట్టాభి సీతారామయ్య",
-   "టంగుటూరి ప్రకాశం",
+   "కాశీనాథుని నాగేశ్వరరావు",
    "కొండా వెంకటప్పయ్య"
   ]
  },
@@ -793,12 +793,12 @@
  },
  "68": {
   "d": [
-   "Neelam Sanjiva Reddy",
+   "Burgula Ramakrishna Rao",
    "Pattabhi Sitaramayya",
    "Bezawada Gopala Reddy"
   ],
   "dt": [
-   "నీలం సంజీవరెడ్డి",
+   "బూర్గుల రామకృష్ణారావు",
    "పట్టాభి సీతారామయ్య",
    "బెజవాడ గోపాలరెడ్డి"
   ]
@@ -1718,12 +1718,12 @@
  "147": {
   "d": [
    "Chairman (and Deputy Chairman)",
-   "Governor (and Chief Minister)",
+   "Advocate General (and Additional Advocate General)",
    "Chief Minister (and Leader of the Opposition)"
   ],
   "dt": [
    "ఛైర్మన్",
-   "గవర్నర్",
+   "అడ్వకేట్ జనరల్",
    "ముఖ్యమంత్రి"
   ]
  },

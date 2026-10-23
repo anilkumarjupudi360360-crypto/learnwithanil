@@ -37,12 +37,12 @@
  },
  "4": {
   "d": [
-   "Rent of land or period of lease, or both",
+   "Land revenue or irrigation cess, or both",
    "Wages of farm labour or working hours, or both",
    "Rate of interest on crop loans or repayment period, or both"
   ],
   "dt": [
-   "భూమి కౌలు లేదా కౌలు కాలం లేదా ఈ రెండూ.",
+   "భూమి శిస్తు లేదా నీటి తీరువా లేదా ఈ రెండూ.",
    "వ్యవసాయ కూలీల వేతనం లేదా పని గంటలు లేదా ఈ రెండూ.",
    "పంట రుణాలపై వడ్డీ రేటు లేదా తిరిగి చెల్లింపు కాలం లేదా ఈ రెండూ."
   ]
@@ -338,13 +338,13 @@
  "33": {
   "d": [
    "4.7 percent",
-   "5.3 percent",
-   "7.8 percent"
+   "5.5 percent",
+   "6.8 percent"
   ],
   "dt": [
    "4.7 శాతం",
-   "5.3 శాతం",
-   "7.8 శాతం"
+   "5.5 శాతం",
+   "6.8 శాతం"
   ]
  },
  "34": {
@@ -829,14 +829,14 @@
  },
  "80": {
   "d": [
-   "World Poverty Barometer",
-   "Global Poverty Compass",
-   "World Poverty Meter"
+   "Doomsday Clock",
+   "Global Hunger Index",
+   "Poverty Reduction and Growth Trust"
   ],
   "dt": [
-   "ప్రపంచ పేదరిక బారోమీటర్",
-   "ప్రపంచ పేదరిక దిక్సూచి",
-   "ప్రపంచ పేదరిక మీటర్"
+   "డూమ్స్‌డే గడియారం",
+   "ప్రపంచ ఆకలి సూచీ",
+   "పేదరిక తగ్గింపు మరియు వృద్ధి ట్రస్ట్"
   ]
  },
  "82": {
@@ -1309,14 +1309,14 @@
  },
  "121": {
   "d": [
-   "GDP growth was underestimated by about 2.5 points after 2011",
+   "Actual GDP growth after 2011 was about 2.5 points higher than the official estimates",
    "Select indicators and GDP growth moved closely together after 2011",
    "GDP growth was overestimated only before the 2011 base revision"
   ],
   "dt": [
-   "2011 అనంతర కాలంలో జి.డి.పి వృద్ధి సుమారు 2.5 శాతం తక్కువగా అంచనా వేయబడినది",
-   "కొన్ని సూచికలను ఎంపిక మరియు జి.డి.పి వృద్ధి 2011 అనంతర కాలంలో దగ్గరగా కలిసి కదిలినవి",
-   "2011 ఆధార సంవత్సర సవరణకు ముందు మాత్రమే జి.డి.పి వృద్ధి అధికంగా అంచనా వేయబడినది"
+   "2011 తర్వాత వాస్తవ జి.డి.పి వృద్ధి అధికారిక అంచనాల కంటే సుమారు 2.5 శాతం పాయింట్లు ఎక్కువగా ఉంది",
+   "2011 తర్వాత ఎంపిక చేసిన కొన్ని సూచికలు, జి.డి.పి వృద్ధి ఒకే దిశలో దగ్గరగా కలిసి సాగాయి",
+   "2011 ఆధార సంవత్సర సవరణకు ముందు మాత్రమే జి.డి.పి వృద్ధి అధికంగా అంచనా వేయబడింది"
   ]
  },
  "122": {
