@@ -932,8 +932,8 @@ def FAQ(total, npapers):
     return [
       ('Where can I get APPSC Group 2 previous year question papers with answers?',
        f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024, Mains 2025 Paper I and Paper II, and the 2019 Screening and Mains papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
-      ('Is it free? What does the ₹45 PYQ Pass cover?',
-       'Every question is free to read, and the answers and explanations of the first 10 questions of each paper are free on the paper pages. Register once and every paper of every exam opens for 3 days. After that, one PYQ Pass of ₹45 unlocks all the previous papers on the website, every exam, for 12 months. Mock-test packs such as Mission Khaki are separate.'),
+      ('What does it cost, and what does the ₹45 PYQ Pass cover?',
+       'There are three plans. Free trial: register once and every previous paper of every exam, with all study tools, opens for 3 days. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
       ('Are the APPSC Group 2 previous papers available in Telugu?',
        'Yes. Almost every question has APPSC\'s own Telugu text, as printed in the question booklet. Tap తెలుగు at the top of the page to practise in Telugu.'),
       ('Is there a APPSC Group 2 mock test?',
@@ -953,8 +953,8 @@ def FAQ_G1(total, npapers):
     return [
       ('Where can I get APPSC Group 1 previous year question papers with answers?',
        f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam, and the 2023 and 2019 Prelims papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
-      ('Is it free? What does the ₹45 PYQ Pass cover?',
-       'Every question is free to read, and the answers and explanations of the first 10 questions of each paper are free on the paper pages. Register once and every paper of every exam opens for 3 days. After that, one PYQ Pass of ₹45 unlocks all the previous papers on the website, every exam, for 12 months. Mock-test packs such as Mission Khaki are separate.'),
+      ('What does it cost, and what does the ₹45 PYQ Pass cover?',
+       'There are three plans. Free trial: register once and every previous paper of every exam, with all study tools, opens for 3 days. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
       ('Where is the APPSC Group 1 Prelims 2024 answer key?',
        'Each question on this site shows the answer from APPSC\'s final key, for Paper 1 (General Studies) and Paper 2 (General Aptitude) of the 2024 Prelims, and for the 2023 and 2019 Prelims. Open a paper to see every question with its answer.'),
       ('Is there a APPSC Group 1 mock test?',
@@ -974,8 +974,8 @@ def FAQ_CAPF(total, npapers):
     return [
       ('Where can I get UPSC CAPF AC previous year question papers with answers?',
        f'This page has {total} questions from {npapers} UPSC CAPF (Assistant Commandants) Paper I papers, General Ability and Intelligence (2024, 2025 and 2026), in English and Hindi as printed in the official question booklets. Every question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
-      ('Is it free? What does the ₹45 PYQ Pass cover?',
-       'Every question is free to read, and the answers and explanations of the first 10 questions of each paper are free on the paper pages. Register once and every paper of every exam opens for 3 days. After that, one PYQ Pass of ₹45 unlocks all the previous papers on the website, every exam, for 12 months. Mock-test packs such as Mission Khaki are separate.'),
+      ('What does it cost, and what does the ₹45 PYQ Pass cover?',
+       'There are three plans. Free trial: register once and every previous paper of every exam, with all study tools, opens for 3 days. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
       ('Where is the CAPF AC 2026 answer key?',
        'Every 2026 question on this site shows the answer from UPSC\'s provisional answer key (Series A booklet), published three days after the exam on 19 July 2026. UPSC\'s final key can differ for a few questions.'),
       ('Is there a CAPF AC mock test?',
@@ -1081,6 +1081,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-
 .sgrid a{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--ink);font-weight:700}
 .sgrid a:hover,.fgrid a:hover{border-color:var(--accent)}.sgrid .n{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);font-weight:400;white-space:nowrap}
 .fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:8px 0}@media (max-width:640px){.fgrid{grid-template-columns:1fr}}
+.fgrid:has(> a:only-child){grid-template-columns:1fr}
 .fgrid a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}
 .fgrid b{display:block;font-size:17px;margin-bottom:2px}.fgrid span{color:var(--muted);font-size:15px}
 """
@@ -1465,7 +1466,7 @@ def tiles_html(conf, papers, questions, extra_links):
           f'<span class="etile-p">PYQ sectionals in {nsub} subjects{", plus sectional mocks from " + esc(mk["name"]) if mk else ""}. '
           f'Practise one section at a time with a timer.</span><span class="etile-price">{"With the PYQ Pass or " + esc(mk["name"]) if mk else "With the PYQ Pass"}</span></a>')
     links = ''.join(f'<a class="etile etile-sm" href="{h}"><b>{esc(x)}</b><span class="etile-go">→</span></a>' for x, h in extra_links)
-    note = '' if PAY['on'] else '<p class="etiles-note">Payments open soon. Until then every quiz and test stays free.</p>'
+    note = ''
     return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + exam_clock_html(conf)
             + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
 
@@ -1484,9 +1485,26 @@ def buy_box(conf, kind):
         price, name = mk['price'], mk['title']
         what = esc(mk['summary']) + f' Mock tests only: previous papers need the PYQ Pass (₹{PAY["pyq_price"]}, all exams), bought separately.'
         valid = pass_until_text(conf)
-    status = ('' if PAY['on'] else '<p class="note">Payments open soon. Until then every quiz and test on the site stays free.</p>')
+    status = ''
     return (f'<div class="buy"><div><b>{esc(name)}</b><p>{what}</p><p class="muted">₹{price} · {valid} · pay by UPI, card or net banking (Instamojo)</p></div>'
             f'<a class="cta" href="{pb}?buy={kind}">Get it for ₹{price}</a></div>{status}')
+
+
+def plans_html(conf):
+    """Every plan in one table, so there is no doubt about what is free and what is paid."""
+    mk = MOCK_PACKS.get(conf['id'])
+    rows = [('Free trial', '₹0, once per phone number', f'Every previous paper of every exam on the site, with answers and explanations, practice quizzes, timed tests and all study tools', f'{TRIAL_DAYS} days from registration'),
+            ('PYQ Pass', f'₹{PAY["pyq_price"]}', f'Every previous paper of every exam on the site ({esc(PAY["exams"])}) and every exam added later: answers and explanations, practice quizzes, timed tests, PYQ sectionals and all study tools', '12 months from payment')]
+    if mk:
+        rows.append((esc(mk['name']), f'₹{mk["price"]}', f'{mk["n"]} full-length {esc(conf["seo"])} mock tests and their sectional tests, with explanations, and the study tools for your mock results. Previous papers are not included (that is the PYQ Pass).',
+                     esc(pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:])))
+    return ('<table class="facts plans"><tr><th style="width:17%">Plan</th><th style="width:17%">Price</th><th>What you get</th><th style="width:19%">Valid</th></tr>'
+            + ''.join(f'<tr><td><b>{a}</b></td><td>{b}</td><td>{c}</td><td>{d}</td></tr>' for a, b, c, d in rows) + '</table>'
+            f'<p>Open to everyone without a plan: the question of the day, and the answers to the first {SAMPLE_N} questions of each paper on the paper pages. '
+            'Plans are linked to the phone number and email you register with, on up to 3 devices; pay with the same details.</p>')
+
+
+TOOLS_NOTE = 'Included with every plan: the free trial, the PYQ Pass and mock-test packs such as Mission Khaki.'
 
 
 FEATURES = {   # how the practice tools work (shown on the PYQs and mock-test pages; the app pages are /<exam>/<view>/)
@@ -1494,6 +1512,7 @@ FEATURES = {   # how the practice tools work (shown on the PYQs and mock-test pa
   'mistakes': ('Mistakes notebook', 'Every question you get wrong or skip is filed automatically, sorted by subject.'),
   'smart': ('Smart quiz', 'Re-attempt your mistakes from memory. Two correct answers in a row clears a question.'),
   'heatmap': ('Memory heatmap', 'Topic-wise accuracy in one grid, so your weak areas show up at a glance.'),
+  'bookmarks': ('Bookmarks', 'Save any question with one tap and come back to it before the exam.'),
 }
 
 
@@ -1524,14 +1543,10 @@ def pyq_page(conf, papers, questions):
         f'<a class="cta alt" href="{pb}?practice={p["id"]}">Practise question by question</a>'
         + (f'<a class="cta" href="{pb}?test={p["id"]}">Attempt as a timed test</a>' if p['fmt'] == 'mcq' else '') + '</li>' for p in ps)
     body = (buy_box(conf, 'pyq') + '<h2>Previous papers</h2><ol class="qs">' + rows + '</ol>'
-            + '<h2>Practise by subject</h2><p>Pick a subject to build a quiz from every paper.</p>' + subjects_html(conf, questions)
-            + '<h2>How practice works</h2>' + features_html(pb, ('practice', 'mistakes', 'smart', 'heatmap'))
-            + '<h2>Free trial and the PYQ Pass</h2><ul>'
-            f'<li><b>{TRIAL_DAYS} days free:</b> register once with your name, phone and email, and every previous paper of every exam opens for {TRIAL_DAYS} days.</li>'
-            f'<li><b>PYQ Pass, ₹{PAY["pyq_price"]} for the whole website:</b> one payment covers every exam on Learn with Anil ({esc(PAY["exams"])}) and every exam added later, for 12 months from the day you pay.</li>'
-            f'<li><b>Free for everyone:</b> the question of the day, and a sample of every paper on the public pages (the answers of the first {SAMPLE_N} questions).</li>'
-            '<li>Mock-test packs such as Mission Khaki are separate.</li>'
-            '<li>The pass is linked to the phone number and email you registered with on the site, so use the same ones when you pay.</li></ul>'
+            + '<h2>Practise by subject and topic</h2><p>With the PYQ Pass or the free trial: pick a subject to build a quiz from every paper, or build your own topic-wise quiz.</p>'
+            + subjects_html(conf, questions) + features_html(pb, ('practice',))
+            + f'<h2>Study tools</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
+            + '<h2>Plans</h2>' + plans_html(conf)
             + f'<p><a class="cta alt" href="{pb}mock-test.html">Mock tests</a><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a></p>')
     lede = esc(f'Every {seo} previous paper on Learn with Anil, with official answers and explanations, as practice quizzes and timed tests. '
                f'{TRIAL_DAYS} days free when you register; then one ₹{PAY["pyq_price"]} PYQ Pass opens every exam on the site for 12 months.')
@@ -1562,8 +1577,8 @@ def sectional_page(conf, papers, questions):
                  + ', '.join(esc(x) for x in mk['sections']) + ' — open as separate timed tests as the mocks are released '
                  f'({live_text(mk)}). They come with the {esc(mk["name"])} pack.</p>' + buy_box(conf, 'mock')
                  if mk else '<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack. Its price will be announced soon.</p>')
-    body = ('<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. They need the PYQ Pass.</p>'
-            '<ol class="qs">' + rows + '</ol>' + buy_box(conf, 'pyq') + mock_part)
+    body = ('<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. With the PYQ Pass or the free trial.</p>'
+            '<ol class="qs">' + rows + '</ol>' + buy_box(conf, 'pyq') + mock_part + '<h2>Plans</h2>' + plans_html(conf))
     lede = esc(f'Practise {seo} one section at a time: timed tests from real previous questions in every subject'
                + (f', and sectional mocks from {mk["name"]}.' if mk else '.'))
     return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} sectional tests', lede, body,
@@ -1617,7 +1632,8 @@ def mock_page(conf, papers, questions):
             '<li>The timer gives you one minute per question. You can move between questions and change answers until you submit.</li>'
             '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question. Wrong answers go to your Mistakes notebook.</li>'
             f'<li>Previous papers as tests need the PYQ Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months) or your {TRIAL_DAYS}-day free trial{"; " + esc(mk["name"]) + " is separate" if mk else ""}. Register once with your phone number and use the same number when you pay.</li></ul>'
-            + '<h2>After every test</h2>' + features_html(pb, ('mistakes', 'smart', 'heatmap'))
+            + f'<h2>Study tools after every test</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
+            + '<h2>Plans</h2>' + plans_html(conf)
             + f'<p><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a><a class="cta alt" href="{pb}pyqs.html">All {esc(seo)} PYQs</a></p>')
     lede = esc((f'{mk["title"]}, plus every real {seo} previous paper as a timed mock test.') if mk else
                f'Take a real {seo} previous paper as a full mock test with a timer, then see your score and an explanation for every answer.')

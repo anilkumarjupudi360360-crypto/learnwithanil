@@ -200,6 +200,10 @@ async def main():
             for rel in (f'{sub}/pyqs.html', f'{sub}/mock-test.html', f'{sub}/sectional-tests.html'):
                 if not os.path.isfile(os.path.join(SITE, rel)): errors.append(f'missing {rel}'); continue
                 if f'/{rel}</loc>' not in smx: errors.append(f'{rel} not in sitemap')
+                body = open(os.path.join(SITE, rel), encoding='utf-8').read()
+                if 'Payments open soon' in body or 'stays free' in body or 'Read with answers (free)' in body or 'download>PDF' in body:
+                    errors.append(f'{rel}: says something is free or offers a free PDF')
+                if '<h2>Plans</h2>' not in body or 'Free trial' not in body or 'PYQ Pass' not in body: errors.append(f'{rel}: no plans table')
                 for h in _re.findall(r'href="(/[^"#:?]*)', open(os.path.join(SITE, rel), encoding='utf-8').read()):
                     f = os.path.join(SITE, h.lstrip('/'))
                     if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')

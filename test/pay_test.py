@@ -76,7 +76,11 @@ async def main():
         elif 'whole website' not in txt or '12 months' not in txt or 'all exams' not in txt: errors.append(f'PYQ Pass checkout does not say it covers every exam: {txt[:200]!r}')
         # 1b. the question bank hides answers
         await pg.goto(url + 'ts-police-si/bank/'); await pg.wait_for_timeout(800)
-        if not await pg.locator('[data-act="unlockpyq"]').count() or await pg.locator('details.ans').count(): errors.append('question bank shows answers without a pass')
+        if await pg.locator('details.ans').count() or not await pg.locator('[data-act="openpay"],[data-act="unlockpyq"]').count(): errors.append('question bank shows answers without a pass')
+        # 1c. no plan: the study tools and the quiz builder are locked, with a way to buy
+        for view in ('mistakes', 'smart', 'heatmap', 'bookmarks', 'practice'):
+            await pg.goto(url + f'ts-police-si/{view}/'); await pg.wait_for_timeout(700)
+            if not await pg.locator('[data-act="openpay"]').count(): errors.append(f'{view} is open without any plan')
         # 2. a mock without a pass opens the mock checkout (mocks only)
         await pg.goto(url + 'ts-police-si/?mock=mk-si-1'); await pg.wait_for_timeout(800)
         txt = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
@@ -91,6 +95,11 @@ async def main():
         if await pg.locator('[data-act="qchal"]').count(): errors.append('paid mock question offers "challenge a friend"')
         await pg.goto(url + 'ts-police-si/?mock=mk-si-1&part=rea'); await pg.wait_for_timeout(1200)
         if 'of 2' not in await pg.inner_text('main'): errors.append('reasoning sectional should have 2 questions')
+        # 4b. Mission Khaki opens the study tools but not the PYQ quiz builder
+        await pg.goto(url + 'ts-police-si/mistakes/'); await pg.wait_for_timeout(700)
+        if await pg.locator('[data-act="openpay"]').count(): errors.append('Mistakes notebook locked although Mission Khaki was bought')
+        await pg.goto(url + 'ts-police-si/practice/'); await pg.wait_for_timeout(700)
+        if not await pg.locator('[data-act="openpay"]').count(): errors.append('PYQ quiz builder open with only Mission Khaki')
         # 5. Mission Khaki does not include the PYQ Pass
         await pg.goto(url + 'ts-police-si/?test=s2022'); await pg.wait_for_timeout(900)
         if (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('PYQ test opened with only the Mission Khaki pass')

@@ -585,7 +585,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     </a>
   </div></section>
 
-  <section class="wrap section"><div class="etiles"><a class="etile" href="/tgpsc-hmwssb-manager/pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b><span class="etile-p">295 questions from 2 official papers, with answers and explanations, as quizzes and timed tests. 3 days free when you register.</span><span class="etile-price">₹45 · all exams · 12 months</span></a><a class="etile" href="/tgpsc-hmwssb-manager/mock-test.html"><span class="etile-k">02 · Mock tests</span><b>Mock test pack</b><span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span><span class="etile-price">Upcoming</span></a><a class="etile" href="/tgpsc-hmwssb-manager/sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 19 subjects. Practise one section at a time with a timer.</span><span class="etile-price">With the PYQ Pass</span></a></div><div class="card eclock eclock-tba"><div class="ec-l"><span class="ec-k">Exam clock</span><b>TGPSC HMWSSB Manager (Engineering)</b><span class="ec-src">Tentatively December 2026; TGPSC has not announced the exact date yet.</span></div><div class="ec-r"><span class="ec-tba">Date not announced yet</span></div></div><p class="etiles-note">Payments open soon. Until then every quiz and test stays free.</p></section>
+  <section class="wrap section"><div class="etiles"><a class="etile" href="/tgpsc-hmwssb-manager/pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b><span class="etile-p">295 questions from 2 official papers, with answers and explanations, as quizzes and timed tests. 3 days free when you register.</span><span class="etile-price">₹45 · all exams · 12 months</span></a><a class="etile" href="/tgpsc-hmwssb-manager/mock-test.html"><span class="etile-k">02 · Mock tests</span><b>Mock test pack</b><span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span><span class="etile-price">Upcoming</span></a><a class="etile" href="/tgpsc-hmwssb-manager/sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 19 subjects. Practise one section at a time with a timer.</span><span class="etile-price">With the PYQ Pass</span></a></div><div class="card eclock eclock-tba"><div class="ec-l"><span class="ec-k">Exam clock</span><b>TGPSC HMWSSB Manager (Engineering)</b><span class="ec-src">Tentatively December 2026; TGPSC has not announced the exact date yet.</span></div><div class="ec-r"><span class="ec-tba">Date not announced yet</span></div></div></section>
 
   <section class="wrap section">
     <div class="figures">
@@ -708,6 +708,27 @@ function setPasses(p){   // from the payments script: {pyq, trial, paid, mock}
   p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses();
 }
 const fmtDay = d=> new Date(d + "T12:00:00+05:30").toLocaleDateString(undefined, {day:"numeric", month:"long"});
+/* What each plan opens. PYQ content (quizzes, subject practice, question bank) needs the PYQ Pass or the free trial;
+   the study tools (Mistakes notebook, Smart Quiz, Bookmarks, Memory heatmap) come with any plan: the free trial,
+   the PYQ Pass or a mock-test pack such as Mission Khaki. */
+function anyPlan(){
+  if(!PAYC || !PAYC.on) return true;
+  return passOK("pyq") || Object.keys(PASSES).some(k=>k!=="all" && live((PASSES[k]||{}).mock));
+}
+const GATE = {practice:"pyq", bank:"pyq", mistakes:"any", smart:"any", bookmarks:"any", heatmap:"any"};
+function gateOK(v){ const g = GATE[v]; return !g || (g==="pyq" ? passOK("pyq") : anyPlan()); }
+function vLocked(v){
+  const pyq = GATE[v]==="pyq", price = PAYC ? PAYC.pyq.price : 45, a = PASSES.all || {};
+  const name = {practice:"Topic-wise quiz", bank:"Question bank", mistakes:"Mistakes notebook", smart:"Smart Quiz", bookmarks:"Bookmarks", heatmap:"Memory heatmap"}[v];
+  const body = pyq
+    ? `The ${name.toLowerCase()} is part of the PYQ Pass: every previous paper of every exam on Learn with Anil, with answers and explanations, practice quizzes, timed tests and all study tools. ₹${price} for 12 months.`
+    : `The ${name} comes with every plan: the PYQ Pass (₹${price}, all exams, 12 months)${PAYC && PAYC.mock ? `, ${esc(PAYC.mock.name)} (₹${PAYC.mock.price})` : ""} and the 3-day free trial.`;
+  const trialLine = !ST.name ? " New here? Register once and get 3 days free." : (a.trial && !live(a.trial) && !a.paid ? " Your 3-day free trial has ended." : "");
+  const btns = (!ST.name ? `<button class="btn btn-primary" type="button" data-act="unlockpyq">Register · 3 days free</button>`
+                         : `<button class="btn btn-primary" type="button" data-act="openpay" data-kind="pyq">Get the PYQ Pass · ₹${price}</button>`)
+    + (!pyq && PAYC && PAYC.mock ? `<button class="btn btn-secondary" type="button" data-act="openpay" data-kind="mock">${esc(PAYC.mock.name)} · ₹${PAYC.mock.price}</button>` : "");
+  return `<div class="wrap view">${head(pyq ? "PYQ Pass" : "Included with every plan", esc(name), "")}${emptyHTML("Unlock " + esc(name), esc(body + trialLine), btns)}</div>`;
+}
 async function payCall(body){
   const r = await fetch(PAYC.api, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(body)});
   return r.json();
@@ -737,12 +758,12 @@ function openPay(kind){
     <p class="small"><b>${esc(x.valid)}.</b>${kind!=="mock" && live((PASSES.all||{}).trial) && !(PASSES.all||{}).paid ? ` Your free trial ends on ${esc(fmtDay(PASSES.all.trial))}.` : kind!=="mock" && !ST.name ? " New here? Register once and get 3 days free." : ""}</p>
     ${open ? `<p class="small">The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}, on up to 3 devices. Pay by UPI, card or net banking on Instamojo's secure page.</p>
       <div class="row"><button class="btn btn-primary" type="button" data-act="paybuy" data-kind="${kind}">${esc(x.btn)}</button><button class="btn btn-secondary" type="button" data-act="paycheck">I have paid · check</button><button class="btn btn-ghost" type="button" data-act="payclose">Close</button></div>`
-    : `<p class="small"><b>Payments open soon.</b> Until then every quiz and test stays free.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}</div>`;
+    : `<p class="small"><b>Online payment is being switched on.</b> Please check back shortly.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}</div>`;
   if(d.showModal) d.showModal(); else d.setAttribute("open","");
 }
 function closePay(){ const d = document.getElementById("payDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } }
 async function payBuy(kind){
-  if(!PAYC || !PAYC.on || !PAYC.api){ toast("Payments open soon. Until then everything is free."); return; }
+  if(!PAYC || !PAYC.on || !PAYC.api){ toast("Online payment is being switched on. Please check back shortly."); return; }
   if(!ST.name){ UI.pendingBuy = kind; closePay(); go("join"); return; }
   toast("Opening the secure payment page…"); track("begin_checkout", {exam: PAYC.exam, kind});
   try{ const r = await payCall({action:"buy", exam:PAYC.exam, kind, name:ST.name, phone:ST.phone, email:ST.email, back: location.origin + PB});
@@ -771,7 +792,7 @@ const PART_NAME = {ari:"Arithmetic", rea:"Reasoning & Mental Ability", gs:"Gener
 async function startMock(id, part){
   if(!PAYC || !PAYC.mock) return;
   if(!ST.name){ UI.pendingMock = {id, part}; go("join"); return; }
-  if(!PAYC.on || !PAYC.api){ toast(PAYC.mock.name + " opens when online payments start."); openPay("mock"); return; }
+  if(!PAYC.on || !PAYC.api){ openPay("mock"); return; }
   toast("Loading the mock…");
   try{
     const r = await payCall({action:"mock", exam:PAYC.exam, id, phone:ST.phone, email:ST.email||"", device:DEVICE});
@@ -895,7 +916,7 @@ function render(){
   else if(v==="home"){ host.hidden=true; host.innerHTML=""; renderHomeDynamic(); }
   else {
     host.hidden=false;
-    host.innerHTML = ({exam:vExam,papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,notes:vNotes})[v]();
+    host.innerHTML = gateOK(v) ? ({exam:vExam,papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,notes:vNotes})[v]() : vLocked(v);
     host.querySelectorAll("[data-mixed]").forEach(el=>{ el.indeterminate = true; });
   }
   if(v==="quiz") startTimer();
@@ -1721,7 +1742,8 @@ document.addEventListener("click", e=>{
     case "bm": { const id=b.dataset.id; if(S.bm[id]) delete S.bm[id]; else S.bm[id]=true; save(); toast(S.bm[id]?"Saved to bookmarks":"Removed from bookmarks"); render(); break; }
     case "excat": { UI.exCat = b.dataset.cat; applyHub(); break; }
     case "hubscroll": { const t=$("#exams-list"); if(t) t.scrollIntoView({behavior:"smooth", block:"start"}); const s=$("#examSearch"); if(s) setTimeout(()=>s.focus({preventScroll:true}), 400); break; }
-    case "unlockpyq": if(!ST.name) go("join"); else openPay("pyq"); break;
+    case "unlockpyq": if(!ST.name){ UI.afterJoin = current; go("join"); } else openPay("pyq"); break;
+    case "openpay": openPay(b.dataset.kind==="mock" ? "mock" : "pyq"); break;
     case "presubj": { const s=SUBJ[b.dataset.subj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); go("practice"); break; }
     case "paper": { const ps=selPapers(), id=b.dataset.paper; ps.has(id)?ps.delete(id):ps.add(id); P.papers=[...ps]; savePrefs(); render(); break; }
     case "allpapers": P.papers=null; savePrefs(); render(); break;
@@ -1810,7 +1832,7 @@ document.addEventListener("submit", async e=>{
   if(p){ toast("Thanks, "+name.split(" ")[0]+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source); }
   else if(UI.pendingBuy){ const k = UI.pendingBuy; UI.pendingBuy = null; go("home"); payBuy(k); }
   else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; go("home"); startMock(m.id, m.part); }
-  else { toast("Your details are saved." + trialMsg); go("about"); }
+  else { toast("Your details are saved." + trialMsg); const back = UI.afterJoin; UI.afterJoin = null; go(back && back!=="join" ? back : "about"); }
 });
 window.addEventListener("online", flushRecords);
 setTimeout(flushRecords, 1500);
