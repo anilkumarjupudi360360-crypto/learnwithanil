@@ -1349,13 +1349,21 @@ PASS_UNTIL = {'ts-police-si': ('2026-11-30', 'TS Police SI Prelims on 29 Novembe
               'appsc-group-1': ('2027-01-25', 'APPSC Group 1 screening test on 24 January 2027')}
 # mock-test packs on sale (Anil sets the price per exam)
 MOCK_PACKS = {
-  'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, qn=200,
+  'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, live=1, qn=200,   # live = mocks released so far (rest: coming soon)
                        title='Mission Khaki – TS Police SI Prelims 2026 Test Series',
                        summary='10 full-length TS SI Prelims mock tests, 200 questions each (Arithmetic & Reasoning 100, General Studies 100), '
                                'in English and Telugu, with an explanation for every answer. Each mock\'s sections can also be taken on their own as sectional tests.',
-                       schedule=['27 Oct', '30 Oct', '2 Nov', '5 Nov', '8 Nov', '11 Nov', '14 Nov', '17 Nov', '20 Nov', '23 Nov'],
                        sections=['Arithmetic', 'Reasoning & Mental Ability', 'General Studies']),
 }
+
+
+def live_text(mk):
+    """'Mock 1 is available now; Mocks 2–10 are coming soon.' (all mocks are included in the pack price)"""
+    a, n = mk['live'], mk['n']
+    if a >= n: return f'All {n} mocks are available now.'
+    now = 'Mock 1 is' if a == 1 else f'Mocks 1–{a} are'
+    later = f'Mock {n} is' if a == n - 1 else f'Mocks {a + 1}–{n} are'
+    return f'{now} available now; {later} coming soon (included in the price)'
 
 
 def pass_until_text(conf):
@@ -1378,7 +1386,7 @@ def pay_data(conf):
     mk = MOCK_PACKS.get(conf['id'])
     return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'],
                 pyq=dict(price=PAY['pyq_price'], valid=pass_until_text(conf)),
-                mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=mk['price'], n=mk['n']) if mk else None),
+                mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=mk['price'], n=mk['n'], live=mk['live']) if mk else None),
                 pages=dict(pyq=pb + 'pyqs.html', mock=pb + 'mock-test.html', sec=pb + 'sectional-tests.html'))
 
 
@@ -1392,7 +1400,7 @@ def tiles_html(conf, papers, questions, extra_links):
           f'attempt them as quizzes and timed tests with the PYQ Pass.</span><span class="etile-price">₹{PAY["pyq_price"]} · {pass_until_short(conf)}</span></a>')
     if mk:
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
-              f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. New mock every three days from {mk["schedule"][0]}.</span>'
+              f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>'
               f'<span class="etile-price">₹{mk["price"]} · includes the PYQ Pass</span></a>')
     elif BB_URL and conf['id'] == 'appsc-group-2':
         t2 = (f'<a class="etile" href="{BB_URL}"><span class="etile-k">02 · Mock tests</span><b>Bahubali Test Series</b>'
@@ -1468,12 +1476,13 @@ def sectional_page(conf, papers, questions):
             + (f', and sectional mocks from the {mk["name"]} test series' if mk else '') + ', with answers and explanations.')
     rows = ''.join(f'<li class="q"><div class="meta">{cnt[s[0]]} previous questions · up to 30 per test · one minute per question</div><p>{esc(s[1])}</p>'
                    f'<a class="cta" href="{pb}?sec={s[0]}">Start {esc(s[1])} sectional</a></li>' for s in subs)
-    secrows = (''.join(f'<li class="q"><div class="meta">Opens {d}</div><p>Mock {i + 1} sections</p>'
-                       + ''.join(f'<a class="cta alt" href="{pb}?mock={mk["id"]}-{i + 1}&amp;part={k}">{v}</a>' for k, v in (('ari', 'Arithmetic'), ('rea', 'Reasoning'), ('gs', 'General Studies')))
-                       + '</li>' for i, d in enumerate(mk['schedule'])) if mk else '')
+    secrows = (''.join((f'<li class="q"><div class="meta">Available now</div><p>Mock {i + 1} sections</p>'
+                        + ''.join(f'<a class="cta alt" href="{pb}?mock={mk["id"]}-{i + 1}&amp;part={k}">{v}</a>' for k, v in (('ari', 'Arithmetic'), ('rea', 'Reasoning'), ('gs', 'General Studies')))
+                        + '</li>') if i < mk['live'] else f'<li class="q"><div class="meta">Coming soon</div><p>Mock {i + 1} sections</p></li>'
+                       for i in range(mk['n'])) if mk else '')
     mock_part = (f'<h2>{esc(mk["name"])} sectional mocks</h2><ol class="qs">{secrows}</ol><p>Each {esc(mk["name"])} mock\'s sections — '
                  + ', '.join(esc(x) for x in mk['sections']) + ' — open as separate timed tests as the mocks are released '
-                 f'(Mock 1 on {mk["schedule"][0]}, then every three days). They come with the {esc(mk["name"])} pack.</p>' + buy_box(conf, 'mock')
+                 f'({live_text(mk)}). They come with the {esc(mk["name"])} pack.</p>' + buy_box(conf, 'mock')
                  if mk else '<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack. Its price will be announced soon.</p>')
     body = ('<h2>PYQ sectionals</h2><p>Each test takes up to 30 real previous questions from one subject, with a timer. They need the PYQ Pass.</p>'
             '<ol class="qs">' + rows + '</ol>' + buy_box(conf, 'pyq') + mock_part)
@@ -1515,11 +1524,13 @@ def mock_page(conf, papers, questions):
     info = MOCK_INFO.get(conf['id'], '')
     if mk:
         mid = lambda i: f'{mk["id"]}-{i + 1}'
-        sched = ''.join(f'<tr><td>Mock {i + 1}</td><td>{d}</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">Start</a></td>'
-                        f'<td><a href="{pb}?mock={mid(i)}&amp;part=ari">Arithmetic</a> · <a href="{pb}?mock={mid(i)}&amp;part=rea">Reasoning</a> · '
-                        f'<a href="{pb}?mock={mid(i)}&amp;part=gs">General Studies</a></td></tr>' for i, d in enumerate(mk['schedule']))
+        sched = ''.join((f'<tr><td>Mock {i + 1}</td><td>Available now</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">Start</a></td>'
+                         f'<td><a href="{pb}?mock={mid(i)}&amp;part=ari">Arithmetic</a> · <a href="{pb}?mock={mid(i)}&amp;part=rea">Reasoning</a> · '
+                         f'<a href="{pb}?mock={mid(i)}&amp;part=gs">General Studies</a></td></tr>') if i < mk['live'] else
+                        f'<tr><td>Mock {i + 1}</td><td>Coming soon</td><td>{mk["qn"]} questions</td><td>Arithmetic · Reasoning · General Studies</td></tr>'
+                        for i in range(mk['n']))
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
-                + f'<table class="facts"><tr><th>Mock</th><th>Opens</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
+                + f'<table class="facts"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
                 '<ul><li>Fresh questions written for this series in the TS SI Prelims pattern, not copied from coaching material: Arithmetic &amp; Reasoning (100) and General Studies (100), in English and Telugu.</li>'
                 '<li>Every question has an explanation in English and Telugu. Your score, accuracy and topic-wise analysis come after each mock.</li>'
                 '<li>Each mock\'s sections can also be taken on their own as sectional tests.</li></ul>')

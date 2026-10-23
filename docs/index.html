@@ -780,7 +780,7 @@ async function refreshPasses(){
 }
 function payInfo(kind){
   const m = PAYC && PAYC.mock;
-  return kind==="mock" && m ? {name: m.title, price: m.price, what: [`${m.n} full-length mock tests in English and Telugu, with explanations`, "Sectional mocks from every mock", "The PYQ Pass: attempt every previous paper and PYQ sectional"]}
+  return kind==="mock" && m ? {name: m.title, price: m.price, what: [`${m.n} full-length mock tests in English and Telugu, with explanations` + (m.live && m.live < m.n ? ` (Mock ${m.live===1 ? "1" : "1–"+m.live} now, the rest coming soon)` : ""), "Sectional mocks from every mock", "The PYQ Pass: attempt every previous paper and PYQ sectional"]}
     : {name: (DATA.examShort||"") + " PYQ Pass", price: PAYC ? PAYC.pyq.price : 45, what: ["Attempt every previous paper as a practice quiz or a timed test", "PYQ sectionals, topic-wise quizzes and Smart Quiz", "Mistakes revision with your scores and topic-wise analysis"]};
 }
 function openPay(kind){

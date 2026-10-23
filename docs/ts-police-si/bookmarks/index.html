@@ -576,7 +576,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     </a>
   </div></section>
 
-  <section class="wrap section"><div class="etiles"><a class="etile" href="/ts-police-si/pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b><span class="etile-p">581 questions from 3 official papers. Read every question with its answer free; attempt them as quizzes and timed tests with the PYQ Pass.</span><span class="etile-price">₹45 · valid till 30 Nov 2026</span></a><a class="etile" href="/ts-police-si/mock-test.html"><span class="etile-k">02 · Mock tests</span><b>Mission Khaki test series</b><span class="etile-p">10 full-length mocks, 200 questions each, English &amp; Telugu, with explanations. New mock every three days from 27 Oct.</span><span class="etile-price">₹150 · includes the PYQ Pass</span></a><a class="etile" href="/ts-police-si/sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 10 subjects, plus sectional mocks from Mission Khaki. Practise one section at a time with a timer.</span><span class="etile-price">With the PYQ Pass or Mission Khaki</span></a></div><div class="etiles etiles-links"><a class="etile etile-sm" href="/ts-police-pyqs.html"><b>All TS Police previous papers (SI &amp; Constable)</b><span class="etile-go">→</span></a></div><p class="etiles-note">Payments open soon. Until then every quiz and test stays free.</p></section>
+  <section class="wrap section"><div class="etiles"><a class="etile" href="/ts-police-si/pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b><span class="etile-p">581 questions from 3 official papers. Read every question with its answer free; attempt them as quizzes and timed tests with the PYQ Pass.</span><span class="etile-price">₹45 · valid till 30 Nov 2026</span></a><a class="etile" href="/ts-police-si/mock-test.html"><span class="etile-k">02 · Mock tests</span><b>Mission Khaki test series</b><span class="etile-p">10 full-length mocks, 200 questions each, English &amp; Telugu, with explanations. Mock 1 is available now; Mocks 2–10 are coming soon (included in the price).</span><span class="etile-price">₹150 · includes the PYQ Pass</span></a><a class="etile" href="/ts-police-si/sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 10 subjects, plus sectional mocks from Mission Khaki. Practise one section at a time with a timer.</span><span class="etile-price">With the PYQ Pass or Mission Khaki</span></a></div><div class="etiles etiles-links"><a class="etile etile-sm" href="/ts-police-pyqs.html"><b>All TS Police previous papers (SI &amp; Constable)</b><span class="etile-go">→</span></a></div><p class="etiles-note">Payments open soon. Until then every quiz and test stays free.</p></section>
 
   <section class="wrap section">
     <div class="figures">
@@ -636,7 +636,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ts-si-437a0103ed.js"></script>
+<script src="data/ts-si-92c4b1539d.js"></script>
 <script>
 (function(){
 "use strict";
@@ -726,7 +726,7 @@ async function refreshPasses(){
 }
 function payInfo(kind){
   const m = PAYC && PAYC.mock;
-  return kind==="mock" && m ? {name: m.title, price: m.price, what: [`${m.n} full-length mock tests in English and Telugu, with explanations`, "Sectional mocks from every mock", "The PYQ Pass: attempt every previous paper and PYQ sectional"]}
+  return kind==="mock" && m ? {name: m.title, price: m.price, what: [`${m.n} full-length mock tests in English and Telugu, with explanations` + (m.live && m.live < m.n ? ` (Mock ${m.live===1 ? "1" : "1–"+m.live} now, the rest coming soon)` : ""), "Sectional mocks from every mock", "The PYQ Pass: attempt every previous paper and PYQ sectional"]}
     : {name: (DATA.examShort||"") + " PYQ Pass", price: PAYC ? PAYC.pyq.price : 45, what: ["Attempt every previous paper as a practice quiz or a timed test", "PYQ sectionals, topic-wise quizzes and Smart Quiz", "Mistakes revision with your scores and topic-wise analysis"]};
 }
 function openPay(kind){
