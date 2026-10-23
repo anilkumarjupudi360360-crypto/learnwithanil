@@ -1,6 +1,13 @@
 /**
  * Learn with Anil — passes and payments (Google Apps Script; its data lives in the private "Learn with Anil – Passes" spreadsheet).
  *
+ * Passes
+ *  - PYQ Pass (₹45): every previous paper on the whole website, all exams (including exams added later), for 12 months
+ *    from the day of payment. Stored with exam = 'all'.
+ *  - Free trial: the same access as the PYQ Pass for 3 days, once per phone number, starting the first time a registered
+ *    student's phone and email reach this script (right after they register on the site). Stored in the 'trials' tab.
+ *  - Mock packs (Mission Khaki, ₹150): one exam's mock tests only (the PYQ Pass is separate). Valid till that exam.
+ *
  * What it does
  *  - buy:     creates an Instamojo payment request for a pass (price fixed here, never taken from the browser)
  *             and returns Instamojo's checkout link.
@@ -8,7 +15,7 @@
  *             request was paid and, if so, records the pass.
  *  - webhook: Instamojo also calls this script when a payment succeeds (checked with the private salt), so a pass
  *             is recorded even if the student closes the page.
- *  - passes:  which passes a registered phone number has for an exam.
+ *  - passes:  which passes (and free trial) a registered phone number has; starts the free trial the first time.
  *  - mock:    the key of a released Mission Khaki mock (its encrypted file is on the website), only for a valid mock pass.
  *
  * Settings are NOT in this file. They live under Project Settings → Script properties:
@@ -19,17 +26,13 @@
  */
 
 const SITE = 'https://learnwithanil.in/';
-const PYQ_PRICE = 45;
-const EXAMS = {   // exam id: name, last day a pass is valid (null = 12 months), mock pack price (null = not on sale)
-  'appsc-group-2':        {name: 'APPSC Group 2', until: null, mock: null},
-  'appsc-group-1':        {name: 'APPSC Group 1', until: '2027-01-25', mock: null},
-  'upsc-capf':            {name: 'UPSC CAPF AC', until: null, mock: null},
-  'ts-police-si':         {name: 'TS Police SI', until: '2026-11-30', mock: {price: 150, name: 'Mission Khaki TS SI Mocks'}},
-  'ts-police-constable':  {name: 'TS Police Constable', until: '2026-12-21', mock: null},
-  'tgpsc-hmwssb-manager': {name: 'TGPSC HMWSSB Manager', until: null, mock: null},
+const PYQ = {price: 45, months: 12, purpose: 'PYQ Pass - All Exams (1 yr)'};   // Instamojo allows 30 characters
+const TRIAL_DAYS = 3;
+const MOCKS = {   // exam id: mock pack on sale (price, name shown at checkout, last day the pass is valid)
+  'ts-police-si': {price: 150, name: 'Mission Khaki TS SI Mocks', until: '2026-11-30'},
 };
 // Mock keys live in the 'keys' tab of this spreadsheet: mock_id | key (base64) | file | opens (yyyy-mm-dd, IST).
-const MAX_DEVICES = 3;   // one pass, at most this many phones/computers
+const MAX_DEVICES = 3;   // one phone number's passes work on at most this many phones/computers
 
 // ---------------------------------------------------------------------------------------------------------------
 function doGet() { return out({ok: true, service: 'Learn with Anil passes'}); }
@@ -39,11 +42,11 @@ function doPost(e) {
     if (e && e.parameter && e.parameter.mac) return webhook(e.parameter);   // Instamojo → form-encoded, signed
     const b = JSON.parse((e && e.postData && e.postData.contents) || '{}');
     const exam = String(b.exam || '');
-    if (!EXAMS[exam]) return out({ok: false, error: 'Unknown exam.'});
+    if (!/^[a-z0-9-]{2,40}$/.test(exam)) return out({ok: false, error: 'Unknown exam.'});
     switch (b.action) {
       case 'buy': return out(buy(b, exam));
       case 'verify': return out(verify(b, exam));
-      case 'passes': return out(passesFor(phoneOf(b.phone), exam, b.device, b.email));
+      case 'passes': return out(passesFor(phoneOf(b.phone), exam, b.device, b.email, true));
       case 'mock': return out(mock(b, exam));
       default: return out({ok: false, error: 'Unknown action.'});
     }
@@ -64,13 +67,12 @@ function sheet(name, header) {
   return sh;
 }
 function log_(kind, text) { sheet('log', ['time', 'kind', 'text']).appendRow([new Date(), kind, String(text).slice(0, 4000)]); }
-function today_() { return Utilities.formatDate(new Date(), 'Asia/Kolkata', 'yyyy-MM-dd'); }
-function untilFor(exam) {
-  const u = EXAMS[exam].until;
-  if (u) return u;
-  const d = new Date(); d.setFullYear(d.getFullYear() + 1);
-  return Utilities.formatDate(d, 'Asia/Kolkata', 'yyyy-MM-dd');
-}
+function ymd_(d) { return Utilities.formatDate(d, 'Asia/Kolkata', 'yyyy-MM-dd'); }
+function today_() { return ymd_(new Date()); }
+function day_(v) { return v instanceof Date ? ymd_(v) : String(v || ''); }
+function inMonths_(n) { const d = new Date(); d.setMonth(d.getMonth() + n); return ymd_(d); }
+function inDays_(n) { const d = new Date(); d.setDate(d.getDate() + n); return ymd_(d); }
+function untilFor(kind, exam) { return kind === 'mock' ? MOCKS[exam].until : inMonths_(PYQ.months); }
 
 // ---------- Instamojo API v2 ----------
 function api_() { return (prop('INSTAMOJO_API') || 'https://api.instamojo.com').replace(/\/+$/, ''); }
@@ -94,29 +96,30 @@ function im_(method, path, payload) {
 }
 
 // ---------- actions ----------
+const REQ_HEAD = ['time', 'request_id', 'phone', 'exam', 'kind', 'amount', 'name', 'email', 'status'];
+
 function buy(b, exam) {
   const kind = b.kind === 'mock' ? 'mock' : 'pyq';
-  const E = EXAMS[exam];
-  if (kind === 'mock' && !E.mock) return {ok: false, error: 'This mock test pack is not on sale yet.'};
+  if (kind === 'mock' && !MOCKS[exam]) return {ok: false, error: 'This mock test pack is not on sale yet.'};
   const phone = phoneOf(b.phone);
   if (!phone) return {ok: false, error: 'Please register with a valid 10-digit mobile number first.'};
-  const amount = kind === 'mock' ? E.mock.price : PYQ_PRICE;
-  const purpose = (kind === 'mock' ? E.mock.name : E.name + ' PYQ Pass').slice(0, 30);   // Instamojo allows 30 characters
+  const amount = kind === 'mock' ? MOCKS[exam].price : PYQ.price;
+  const purpose = (kind === 'mock' ? MOCKS[exam].name : PYQ.purpose).slice(0, 30);
+  const passExam = kind === 'mock' ? exam : 'all';
   let back = String(b.back || '');
   if (back.indexOf(SITE) !== 0) back = SITE;
   const pr = im_('post', '/v2/payment_requests/', {
     purpose: purpose, amount: String(amount), buyer_name: String(b.name || '').slice(0, 100),
     email: String(b.email || '').slice(0, 100), phone: phone, redirect_url: back,
     webhook: ScriptApp.getService().getUrl(), send_email: 'false', send_sms: 'false', allow_repeated_payments: 'false'});
-  sheet('requests', ['time', 'request_id', 'phone', 'exam', 'kind', 'amount', 'name', 'email', 'status'])
-    .appendRow([new Date(), pr.id, phone, exam, kind, amount, String(b.name || ''), String(b.email || ''), 'created']);
+  sheet('requests', REQ_HEAD).appendRow([new Date(), pr.id, phone, passExam, kind, amount, String(b.name || ''), String(b.email || ''), 'created']);
   return {ok: true, url: pr.longurl};
 }
 
 function requestRow_(id) {
-  const sh = sheet('requests', ['time', 'request_id', 'phone', 'exam', 'kind', 'amount', 'name', 'email', 'status']);
+  const sh = sheet('requests', REQ_HEAD);
   const v = sh.getDataRange().getValues();
-  for (let i = v.length - 1; i >= 1; i--) if (String(v[i][1]) === String(id)) return {sh: sh, row: i + 1, phone: String(v[i][2]), exam: v[i][3], kind: v[i][4], amount: v[i][5], email: String(v[i][7] || '')};
+  for (let i = v.length - 1; i >= 1; i--) if (String(v[i][1]) === String(id)) return {sh: sh, row: i + 1, phone: String(v[i][2]), exam: String(v[i][3]), kind: String(v[i][4]), amount: v[i][5], email: String(v[i][7] || '')};
   return null;
 }
 
@@ -126,7 +129,7 @@ function grant_(req, paymentId, amount, source) {
     const sh = sheet('passes', PASS_HEAD);
     const v = sh.getDataRange().getValues();
     for (let i = 1; i < v.length; i++) if (paymentId && String(v[i][5]) === String(paymentId)) return;   // already recorded
-    sh.appendRow([new Date(), req.phone, req.exam, req.kind, untilFor(req.exam), paymentId || '', req.request || '', amount || req.amount, source, req.email.toLowerCase()]);
+    sh.appendRow([new Date(), req.phone, req.exam, req.kind, untilFor(req.kind, req.exam), paymentId || '', req.request || '', amount || req.amount, source, req.email.toLowerCase()]);
     if (req.sh) req.sh.getRange(req.row, 9).setValue('paid');
   } finally { lock.releaseLock(); }
 }
@@ -134,7 +137,7 @@ function grant_(req, paymentId, amount, source) {
 function verify(b, exam) {
   const id = String(b.request || '');
   const req = requestRow_(id);
-  if (!req || req.exam !== exam) return {ok: false, error: 'Payment not found.'};
+  if (!req || (req.exam !== exam && req.exam !== 'all')) return {ok: false, error: 'Payment not found.'};
   const pr = im_('get', '/v2/payment_requests/' + encodeURIComponent(id) + '/');
   const paid = String(pr.status || '').toLowerCase() === 'completed';
   if (!paid) return {ok: false, error: 'The payment is not complete yet. If money was taken, it will show here within a few minutes.'};
@@ -145,7 +148,7 @@ function verify(b, exam) {
   }
   req.request = id;
   grant_(req, pid || ('req-' + id), pr.amount, 'verify');
-  return passesFor(req.phone, exam, b.device, req.email);
+  return passesFor(req.phone, exam, b.device, req.email, false);
 }
 
 function webhook(p) {
@@ -164,32 +167,51 @@ function webhook(p) {
 }
 
 const PASS_HEAD = ['time', 'phone', 'exam', 'kind', 'until', 'payment_id', 'request_id', 'amount', 'source', 'email'];
+const TRIAL_HEAD = ['time', 'phone', 'email', 'until'];
 
-function passesFor(phone, exam, device, email) {   // a pass needs the same phone AND email the student paid with
+function trialFor_(phone, email, start) {   // the phone's free-trial end date; starts it the first time if asked
+  const sh = sheet('trials', TRIAL_HEAD);
+  const v = sh.getDataRange().getValues();
+  for (let i = 1; i < v.length; i++) if (String(v[i][1]) === phone) return day_(v[i][3]);
+  if (!start) return '';
+  const lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    const w = sh.getDataRange().getValues();
+    for (let i = 1; i < w.length; i++) if (String(w[i][1]) === phone) return day_(w[i][3]);
+    const until = inDays_(TRIAL_DAYS);
+    sh.appendRow([new Date(), phone, email, until]);
+    return until;
+  } finally { lock.releaseLock(); }
+}
+
+// A pass needs the same phone AND email the student paid with. Returns {pyq, mock, trial, paid}: pyq = last day the
+// student can use every PYQ on the site (PYQ Pass or free trial), mock = last day of this exam's mock pack.
+function passesFor(phone, exam, device, email, startTrial) {
   email = String(email || '').trim().toLowerCase();
   if (!phone || !email) return {ok: true, passes: {}};
   const v = sheet('passes', PASS_HEAD).getDataRange().getValues();
-  const res = {}, now = today_();
+  const now = today_(), res = {};
   for (let i = 1; i < v.length; i++) {
-    if (String(v[i][1]) !== phone || v[i][2] !== exam) continue;
-    if (String(v[i][9] || '').toLowerCase() !== email) continue;
-    const u = v[i][4] instanceof Date ? Utilities.formatDate(v[i][4], 'Asia/Kolkata', 'yyyy-MM-dd') : String(v[i][4]);
+    if (String(v[i][1]) !== phone || String(v[i][9] || '').toLowerCase() !== email) continue;
+    const ex = String(v[i][2]), kind = String(v[i][3]), u = day_(v[i][4]);
     if (u < now) continue;
-    const k = v[i][3];
-    if (!res[k] || res[k] < u) res[k] = u;
+    if (kind === 'pyq' && ex === 'all') { if (!res.pyq || res.pyq < u) res.pyq = u; res.paid = true; }
+    else if (kind === 'mock' && ex === exam) { if (!res.mock || res.mock < u) res.mock = u; }
   }
-  if (Object.keys(res).length && device && !deviceOK_(phone, exam, String(device))) return {ok: false, error: 'This pass is already in use on ' + MAX_DEVICES + ' devices.', passes: {}};
+  const t = trialFor_(phone, email, startTrial);
+  if (t && t >= now) { res.trial = t; if (!res.pyq || res.pyq < t) res.pyq = t; }
+  if ((res.pyq || res.mock) && device && !deviceOK_(phone, String(device))) return {ok: false, error: 'These passes are already in use on ' + MAX_DEVICES + ' devices.', passes: {}};
   return {ok: true, passes: res};
 }
 
-function deviceOK_(phone, exam, device) {
+function deviceOK_(phone, device) {
   const sh = sheet('devices', ['time', 'phone', 'exam', 'device']);
   const v = sh.getDataRange().getValues();
   const seen = new Set();
-  for (let i = 1; i < v.length; i++) if (String(v[i][1]) === phone && v[i][2] === exam) seen.add(String(v[i][3]));
+  for (let i = 1; i < v.length; i++) if (String(v[i][1]) === phone) seen.add(String(v[i][3]));
   if (seen.has(device)) return true;
   if (seen.size >= MAX_DEVICES) return false;
-  sh.appendRow([new Date(), phone, exam, device]);
+  sh.appendRow([new Date(), phone, 'all', device]);
   return true;
 }
 
@@ -199,15 +221,15 @@ function mock(b, exam) {   // the key of a sealed mock (the encrypted file is on
   let row = null;
   for (let i = 1; i < v.length; i++) if (String(v[i][0]) === id) row = v[i];
   if (!row) return {ok: false, error: 'This mock is not ready yet.'};
-  const opens = row[3] instanceof Date ? Utilities.formatDate(row[3], 'Asia/Kolkata', 'yyyy-MM-dd') : String(row[3]);
+  const opens = day_(row[3]);
   if (opens > today_()) return {ok: false, error: 'This mock opens on ' + opens + '.'};
-  const ps = passesFor(phoneOf(b.phone), exam, b.device, b.email);
+  const ps = passesFor(phoneOf(b.phone), exam, b.device, b.email, false);
   if (!ps.ok) return ps;
-  if (!ps.passes.mock) return {ok: false, error: 'This mock needs the mock test pass.', need: 'mock'};
+  if (!ps.passes.mock) return {ok: false, error: 'This mock needs the ' + (MOCKS[exam] ? MOCKS[exam].name : 'mock test') + ' pass.', need: 'mock'};
   return {ok: true, id: id, key: String(row[1]), file: String(row[2])};
 }
 
-// Run once from the editor (Run ▶ checkSetup) to approve the script and check the settings. Prints no secrets.
+// Run from the editor (Run ▶ checkSetup) to check the settings. Prints no secrets.
 function checkSetup() {
   Logger.log('Spreadsheet: ' + (prop('SHEET_ID') ? book_().getName() : 'SHEET_ID MISSING'));
   ['INSTAMOJO_CLIENT_ID', 'INSTAMOJO_CLIENT_SECRET', 'INSTAMOJO_SALT'].forEach(k => Logger.log(k + ': ' + (prop(k) ? 'set' : 'MISSING')));

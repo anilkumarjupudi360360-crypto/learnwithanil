@@ -142,6 +142,8 @@ async def render(jobs):
 
 
 def main():
+    if not B.PUBLIC_PDFS:   # Anil, 23 Oct 2026: no free PDF downloads on the site
+        print('  PDFs: not published (PUBLIC_PDFS is False)'); return
     if not os.path.isdir(os.path.join(DIST, 'site')): sys.exit('run tools/build.py first')
     manifest = json.load(open(MANIFEST)) if os.path.exists(MANIFEST) else {}
     new, jobs, kept = {}, [], 0

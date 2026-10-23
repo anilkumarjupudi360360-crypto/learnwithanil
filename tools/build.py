@@ -359,7 +359,7 @@ def load_exam(conf):
         pp['count'] = len(qs)
         for k in ('key', 'alt', 'te_paper', 'en_only'):
             if p.get(k): pp[k] = p[k]
-        pp['pdf'] = pdf_href(conf, p)
+        pp['pdf'] = pdf_href(conf, p) if PUBLIC_PDFS else ''
         alt = paper_alt(conf, p)
         pp['kw'] = paper_kw(conf, p) + (f' ({alt})' if alt else '')
         papers.append(pp); questions += qs
@@ -407,54 +407,54 @@ def exam_confs():
     return [
       dict(id='appsc-group-2', dir='', src='', key='appsc-g2', name='APPSC Group-II', short='Group-II', seo='APPSC Group 2',
            slugp='appsc-group-2', papers=PAPERS, subjects=SUBJECTS, faq=FAQ, board='APPSC', l2=L2_TE, pb='/appsc-group-2/',
-           title='APPSC Group 2 Previous Year Question Papers (PYQs) with Answers – Prelims & Mains 2019–2025, Telugu PDF | Learn with Anil',
+           title='APPSC Group 2 Previous Year Question Papers (PYQs) with Answers – Prelims & Mains 2019–2025, English & Telugu | Learn with Anil',
            h1='APPSC Group 2 previous year question papers <em>with answers.</em>',
-           l2line='APPSC గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు (ప్రిలిమ్స్, మెయిన్స్) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.',
+           l2line='APPSC గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు (ప్రిలిమ్స్, మెయిన్స్) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.',
            aka='Also known as AP Group 2 or APPSC Group-II Services. Old question papers, PYQs and practice bits, all with the final key.',
            desc=lambda t: (f"APPSC Group 2 (AP Group 2) previous year question papers and old papers with answers from APPSC's final key: Prelims (Screening Test) 2024 and 2019, "
                            f"Mains 2025 Paper 1 and Paper 2, and Mains 2019. {t:,} questions in English and Telugu with explanations; "
-                           f"free mock tests, practice bits and PDF downloads."),
+                           f"practice quizzes and timed mock tests, 3 days free."),
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            eyebrow='APPSC Group-II · Prelims (Screening) &amp; Mains · 2019–2025',
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
            slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE, pb='/appsc-group-1/',
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
-           title='APPSC Group 1 Previous Year Question Papers (PYQs) with Answers – Prelims 2019–2024, Telugu PDF | Learn with Anil',
+           title='APPSC Group 1 Previous Year Question Papers (PYQs) with Answers – Prelims 2019–2024, English & Telugu | Learn with Anil',
            h1='APPSC Group 1 previous year question papers <em>with answers.</em>',
-           l2line='APPSC గ్రూప్ 1 ప్రిలిమ్స్ మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.',
+           l2line='APPSC గ్రూప్ 1 ప్రిలిమ్స్ మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.',
            aka='Also known as AP Group 1 or APPSC Group-I Services. Old question papers and PYQs of the Prelims, with the final key.',
            desc=lambda t: (f"APPSC Group 1 (AP Group 1) Prelims previous year question papers and old papers with answers from APPSC's final key: 2024, 2023 and 2019, "
                            f"Paper 1 General Studies and Paper 2 General Aptitude. {t:,} questions in English and Telugu with explanations; "
-                           f"free mock tests and PDF downloads."),
+                           f"practice quizzes and timed mock tests, 3 days free."),
            eyebrow='APPSC Group-I · Prelims · 2019–2024',
            papers_note="Every paper uses APPSC's official final key. The 2024 key shows all four options. The 2023 and 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
       dict(id='upsc-capf', dir='upsc-capf', src='upsc-capf', key='upsc-capf', name='UPSC CAPF (AC)', short='CAPF (AC)', seo='UPSC CAPF AC',
            slugp='upsc-capf-ac', papers=CAPF_PAPERS, subjects=CAPF_SUBJECTS, faq=FAQ_CAPF, board='UPSC', l2=L2_HI, pb='/upsc-capf/',
            keyname="UPSC's answer keys", keyshort="UPSC's answer keys (2025: compiled from published keys)",
-           title='UPSC CAPF AC Previous Year Question Papers with Answers (2024–2026), English & Hindi PDF | Learn with Anil',
+           title='UPSC CAPF AC Previous Year Question Papers with Answers (2024–2026), English & Hindi | Learn with Anil',
            h1='UPSC CAPF AC previous year question papers <em>with answers.</em>',
            aka='Also known as the CAPF Assistant Commandant (AC) exam. PYQs of Paper 1 (General Ability and Intelligence), subject-wise, with the answer key.',
-           l2line='यूपीएससी सीएपीएफ असिस्टेंट कमांडेंट के पिछले वर्षों के प्रश्न पत्र, उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में, निःशुल्क।',
+           l2line='यूपीएससी सीएपीएफ असिस्टेंट कमांडेंट के पिछले वर्षों के प्रश्न पत्र, उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; पंजीकरण करने पर 3 दिन निःशुल्क।',
            desc=lambda t: (f"UPSC CAPF AC (Assistant Commandant) previous year question papers: Paper 1 General Ability and Intelligence "
                            f"2026, 2025 and 2024 with answer keys and explanations. {t:,} questions in English and Hindi; "
-                           f"free mock tests, subject-wise PYQs and PDF downloads."),
+                           f"subject-wise practice and timed mock tests, 3 days free."),
            eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
            papers_note="2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. 2024: UPSC's official answer key (Series A). Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
       dict(id='ts-police-si', dir='ts-police-si', src='ts-police-si', key='ts-si', name='TS Police SI', short='TS Police SI', seo='TS Police SI',
            slugp='ts-police-si', papers=TS_SI_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('SI', T['si']), board='TSLPRB', l2=L2_TE, pb='/ts-police-si/',
            keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
            te_name='తెలంగాణ పోలీస్ ఎస్ఐ', te_paper='ప్రిలిమినరీ పరీక్ష',
-           title=('TS Police SI Previous Question Papers with Answers – Telangana SI Prelims 2022 & Mains 2023 (TSLPRB), Telugu PDF | Learn with Anil' if si_m else
-                  'TS Police SI Previous Question Papers with Answers – Telangana SI (TSLPRB) Prelims 2022, Telugu PDF | Learn with Anil'),
+           title=('TS Police SI Previous Question Papers with Answers – Telangana SI Prelims 2022 & Mains 2023 (TSLPRB), English & Telugu | Learn with Anil' if si_m else
+                  'TS Police SI Previous Question Papers with Answers – Telangana SI (TSLPRB) Prelims 2022, English & Telugu | Learn with Anil'),
            h1='TS Police SI previous year question papers <em>with answers.</em>',
-           l2line=('తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.' if si_m else
-                   'తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.'),
+           l2line=('తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.' if si_m else
+                   'తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.'),
            aka='Also known as the Telangana (TG) Police SI exam: SCT SI (Civil) and equivalent posts, conducted by TSLPRB, now TGPRB.',
            aka_short='Telangana Police SI (TSLPRB / TGPRB)',
            desc=lambda t: ((f"TS Police SI (Telangana SI, TSLPRB / TGPRB) previous question papers: Prelims 2022 and Mains 2023 (Final Written Examination {T['si_fwe']}) with answers from TSLPRB's final keys. " if si_m else
                             f"TS Police SI (Telangana SI, TSLPRB / TGPRB) previous question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. ")
-                           + f"{t:,} questions on arithmetic, reasoning and general studies in English and Telugu with explanations; free mock tests, practice bits and PDF download."),
+                           + f"{t:,} questions on arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests, 3 days free."),
            eyebrow=('TSLPRB / TGPRB · SI (Civil) &amp; equivalent · Prelims 2022 &amp; Final Written Exam 2023' if si_m else
                     'TSLPRB / TGPRB · SI (Civil) &amp; equivalent · Preliminary Written Test'),
            papers_note=("Answers come from TSLPRB's final keys: booklet A for the 2022 Preliminary Written Test (key released on 21 October 2022) and booklet D for the 2023 Final Written Examination. "
@@ -464,16 +464,16 @@ def exam_confs():
            slugp='ts-police-constable', papers=TS_PC_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('PC', T['pc']), board='TSLPRB', l2=L2_TE, pb='/ts-police-constable/',
            keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
            te_name='తెలంగాణ పోలీస్ కానిస్టేబుల్', te_paper='ప్రిలిమినరీ పరీక్ష',
-           title=('TS Police Constable Previous Question Papers with Answers – Telangana Constable Prelims 2022 & Mains 2023 (TSLPRB), Telugu PDF | Learn with Anil' if pc_m else
-                  'TS Police Constable Previous Question Papers with Answers – Telangana Constable (TSLPRB) Prelims 2022, Telugu PDF | Learn with Anil'),
+           title=('TS Police Constable Previous Question Papers with Answers – Telangana Constable Prelims 2022 & Mains 2023 (TSLPRB), English & Telugu | Learn with Anil' if pc_m else
+                  'TS Police Constable Previous Question Papers with Answers – Telangana Constable (TSLPRB) Prelims 2022, English & Telugu | Learn with Anil'),
            h1='TS Police Constable previous year question papers <em>with answers.</em>',
-           l2line=('తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.' if pc_m else
-                   'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో, ఉచితంగా.'),
+           l2line=('తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.' if pc_m else
+                   'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.'),
            aka='Also known as the Telangana (TG) Police Constable or TS PC exam: SCT PC (Civil) and equivalent posts, conducted by TSLPRB, now TGPRB.',
            aka_short='Telangana Police Constable (TSLPRB / TGPRB)',
            desc=lambda t: (("TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question papers: Prelims 2022 and Mains 2023 (Final Written Examination, 30 April 2023) with answers from TSLPRB's final keys. " if pc_m else
                             "TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. ")
-                           + f"{t:,} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; free mock tests, practice bits and PDF download."),
+                           + f"{t:,} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests, 3 days free."),
            eyebrow=('TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Prelims 2022 &amp; Final Written Exam 2023' if pc_m else
                     'TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Preliminary Written Test'),
            papers_note=("Answers come from TSLPRB's final keys for booklet A of the 2022 Preliminary Written Test (key released on 21 October 2022) and of the 2023 Final Written Examination. "
@@ -483,13 +483,13 @@ def exam_confs():
            short='HMWSSB Manager', seo='TGPSC HMWSSB Manager', slugp='tgpsc-hmwssb-manager', papers=HM_PAPERS, subjects=HM_SUBJECTS, faq=FAQ_HM,
            board='TGPSC', l2=L2_TE, pb='/tgpsc-hmwssb-manager/', keyname="TSPSC's final key", keyshort="TSPSC's final key", bits=True,
            te_name='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్)', te_paper='రాత పరీక్ష', subj_te=HM_SUBJ_TE,
-           title='TGPSC HMWSSB Manager (Engineering) Previous Question Papers with Answers – GS & Civil Engineering, Telugu PDF | Learn with Anil',
+           title='TGPSC HMWSSB Manager (Engineering) Previous Question Papers with Answers – GS & Civil Engineering, English & Telugu | Learn with Anil',
            h1='TGPSC HMWSSB Manager (Engineering) previous question papers <em>with answers.</em>',
-           l2line='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), సివిల్ ఇంజనీరింగ్, ఉచితంగా.',
+           l2line='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), సివిల్ ఇంజనీరింగ్; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.',
            aka='Manager (Engineering) in the Hyderabad Metropolitan Water Supply and Sewerage Board (HMWSSB, Jalamandali), recruited by TGPSC, formerly TSPSC.',
            aka_short='TGPSC (TSPSC) Manager (Engineering), Hyderabad Metro Water Board',
            desc=lambda t: (f"TGPSC (TSPSC) HMWSSB Manager (Engineering) previous question papers: the 2015 Paper 1 General Studies (English and Telugu) "
-                           f"and Paper 2 Civil Engineering with answers from TSPSC's final key. {t:,} questions with explanations; free mock tests, practice bits and PDF download."),
+                           f"and Paper 2 Civil Engineering with answers from TSPSC's final key. {t:,} questions with explanations; practice quizzes and timed mock tests, 3 days free."),
            eyebrow='TGPSC (TSPSC) · Manager (Engineering), HMWSSB · Notification 13/2015',
            papers_note="Answers come from TSPSC's final key for booklet Series A (Notification 13/2015, written test held on 1 November 2015). Questions for which TSPSC gave the mark to every candidate are left out. Paper 1 is in English and Telugu as printed (its English-language questions in English only); Paper 2 (Civil Engineering) is in English only."),
     ]
@@ -497,6 +497,7 @@ def exam_confs():
 
 def main():
     confs = exam_confs()
+    PAY['exams'] = ', '.join(c['seo'] for c in confs)   # the PYQ Pass covers every one of these
     loaded = []
     for c in confs:
         papers, questions = load_exam(c)
@@ -592,10 +593,10 @@ def main():
                      .replace('{{L2LINE}}', f'<span lang="{l2["code"]}">{esc(conf["l2line"])}</span>')
                      .replace('{{AKA}}', esc(conf.get('aka', '')))
                      .replace('{{TILES}}', tiles))
-        root_title = 'Free PYQs with Answers – APPSC Group 1 & Group 2, TS Police SI & Constable, UPSC CAPF Previous Papers | Learn with Anil'
+        root_title = 'PYQs with Answers – APPSC Group 1 & Group 2, TS Police SI & Constable, UPSC CAPF Previous Papers | Learn with Anil'
         root_desc = (f'Free previous year question papers (PYQs) with answers: APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
                      f'(Telangana police, TSLPRB / TGPRB) and UPSC CAPF AC. {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
-                     f'Free mock tests and PDF downloads; TGPSC, UPSC, SSC, banking and railway exams are being added.')
+                     f'3 days free when you register, then one ₹45 PYQ Pass for every exam; TGPSC, UPSC, SSC, banking and railway exams are being added.')
         home_title = conf['title']
         ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
         home_desc = conf['desc'](total)
@@ -606,12 +607,12 @@ def main():
         faqld = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]}
         seo_name = conf['seo']
         views = {   # view: (title, description, canonical path, indexable)
-          'papers': ((f'{seo_name} Previous Year Question Papers with Answers – All {len(papers)} Papers, PDF | Learn with Anil' if len(papers) > 1 else
-                      f'{seo_name} Previous Question Paper with Answers – {paper_kw(conf, papers[0]).replace(seo_name + " ", "")}, Telugu PDF | Learn with Anil'),
+          'papers': ((f'{seo_name} Previous Year Question Papers with Answers – All {len(papers)} Papers | Learn with Anil' if len(papers) > 1 else
+                      f'{seo_name} Previous Question Paper with Answers – {paper_kw(conf, papers[0]).replace(seo_name + " ", "")}, English & Telugu | Learn with Anil'),
                      (f'All {len(papers)} {seo_name} previous year question papers' if len(papers) > 1 else f'{seo_name} previous question paper') + f' ({", ".join(paper_kw(conf, p).replace(seo_name + " ", "") for p in sorted(papers, key=lambda p: (-p["year"], p["id"])))}): '
-                     f'practise {"each paper" if len(papers) > 1 else "it"} online as a mock test, read it with answers and explanations, or download the PDF, free.', pb + 'papers/', True),
-          'practice': (f'{seo_name} Free Mock Test & Topic-wise Quiz from Previous Papers | Learn with Anil',
-                       f'Free {seo_name} mock test and topic-wise quiz made from {total:,} real previous year questions{" (practice bits)" if conf["board"] == "APPSC" or conf.get("bits") else ""}: '
+                     f'practise {"each paper" if len(papers) > 1 else "it"} online as a quiz or a timed mock test, with answers and explanations: 3 days free when you register.', pb + 'papers/', True),
+          'practice': (f'{seo_name} Mock Test & Topic-wise Quiz from Previous Papers | Learn with Anil',
+                       f'{seo_name} mock test and topic-wise quiz made from {total:,} real previous year questions{" (practice bits)" if conf["board"] == "APPSC" or conf.get("bits") else ""}: '
                        f'choose papers, subjects and topics, then practise with answers or take a timed test.', pb + 'practice/', True),
           'bank': (f'{seo_name} Question Bank – Search All {total:,} PYQs{" & Practice Bits" if conf["board"] == "APPSC" or conf.get("bits") else ""} | Learn with Anil',
                    f'Search every {seo_name} previous year question by keyword, paper or topic, with answers from {conf["keyshort"]} and explanations.', pb + 'bank/', True),
@@ -678,7 +679,8 @@ def main():
         for rel, content in qpages.items():
             open(os.path.join(DIST, 'site', pb.strip('/'), rel), 'w', encoding='utf-8').write(content)
             all_pages[pb.lstrip('/') + rel] = None
-        for p in papers: all_pages[pdf_href(conf, p).lstrip('/')] = None   # the PDFs come from tools/pdfs.py
+        if PUBLIC_PDFS:
+            for p in papers: all_pages[pdf_href(conf, p).lstrip('/')] = None   # the PDFs come from tools/pdfs.py
         print(f'  {conf["name"]}: {total} questions, {len(pages)} static pages, {len(qpages)} question pages, {len(site_pages)} app pages')
 
     # one crawlable page per recruiting board listing all its papers (where "APPSC PYQs" / "TS police previous papers" searches land)
@@ -923,19 +925,19 @@ def home_paper_card(p):
             f'<p>{esc(p["blurb"])}</p><div class="meta"><span class="pill blue">{p["count"]} questions</span><span class="pill {cls}">{fmt}</span></div>'
             f'<div class="acts"><button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="{p["id"]}">Practise</button>'
             f'<a class="btn btn-ghost btn-sm" href="papers/{p["slug"]}.html">Read with answers</a>'
-            f'<a class="btn btn-ghost btn-sm" href="{p["pdf"]}" download>PDF</a></div></article>')
+            + (f'<a class="btn btn-ghost btn-sm" href="{p["pdf"]}" download>PDF</a>' if p.get('pdf') else '') + '</div></article>')
 
 
 def FAQ(total, npapers):
     return [
       ('Where can I get APPSC Group 2 previous year question papers with answers?',
-       f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024, Mains 2025 Paper I and Paper II, and the 2019 Screening and Mains papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can read each paper with answers or practise it as a quiz, free.'),
-      ('Can I download the APPSC Group 2 previous papers as PDF?',
-       'Yes, free. Every paper has its own PDF: all the questions in English and Telugu, then the answer key and an explanation for each answer. Open a paper and tap Download PDF.'),
+       f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024, Mains 2025 Paper I and Paper II, and the 2019 Screening and Mains papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+      ('Is it free? What does the ₹45 PYQ Pass cover?',
+       'Every question is free to read, and the answers and explanations of the first 10 questions of each paper are free on the paper pages. Register once and every paper of every exam opens for 3 days. After that, one PYQ Pass of ₹45 unlocks all the previous papers on the website, every exam, for 12 months. Mock-test packs such as Mission Khaki are separate.'),
       ('Are the APPSC Group 2 previous papers available in Telugu?',
        'Yes. Almost every question has APPSC\'s own Telugu text, as printed in the question booklet. Tap తెలుగు at the top of the page to practise in Telugu.'),
-      ('Is there a free APPSC Group 2 mock test?',
-       'Yes. Tap Create a quiz, choose papers or subjects, and pick Timed test: you get a free mock test made of real APPSC Group 2 Prelims and Mains questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.'),
+      ('Is there a APPSC Group 2 mock test?',
+       'Yes. Tap Create a quiz, choose papers or subjects, and pick Timed test: you get a mock test made of real APPSC Group 2 Prelims and Mains questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.'),
       ('What is the APPSC Group 2 exam pattern?',
        'Under Notification 11/2023, the Screening Test is one objective paper of 150 questions for 150 marks in 150 minutes, with 30 marks each for Indian History, Geography, Indian Society, Current Affairs and Mental Ability. The Mains has two objective papers of 150 marks each: Paper I covers the Social and Cultural History of Andhra Pradesh and the Indian Constitution, and Paper II covers the Indian and AP Economy and Science and Technology.'),
       ('Are the answers on this site official?',
@@ -943,20 +945,20 @@ def FAQ(total, npapers):
       ('Why do the 2019 questions not show four options?',
        'APPSC\'s 2019 final keys print each question with only the correct answer. Those questions appear here as quick-recall cards: you think of the answer, reveal it and mark whether you knew it. The 2024 and 2025 papers show all four options.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that every quiz and test on every exam opens straight away on that phone or computer. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
 
 
 def FAQ_G1(total, npapers):
     return [
       ('Where can I get APPSC Group 1 previous year question papers with answers?',
-       f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam, and the 2023 and 2019 Prelims papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can read each paper with answers or practise it as a quiz, free.'),
-      ('Can I download the APPSC Group 1 previous papers as PDF?',
-       'Yes, free. Every paper has its own PDF: all the questions in English and Telugu, then the answer key and an explanation for each answer. Open a paper and tap Download PDF.'),
+       f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam, and the 2023 and 2019 Prelims papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+      ('Is it free? What does the ₹45 PYQ Pass cover?',
+       'Every question is free to read, and the answers and explanations of the first 10 questions of each paper are free on the paper pages. Register once and every paper of every exam opens for 3 days. After that, one PYQ Pass of ₹45 unlocks all the previous papers on the website, every exam, for 12 months. Mock-test packs such as Mission Khaki are separate.'),
       ('Where is the APPSC Group 1 Prelims 2024 answer key?',
        'Each question on this site shows the answer from APPSC\'s final key, for Paper 1 (General Studies) and Paper 2 (General Aptitude) of the 2024 Prelims, and for the 2023 and 2019 Prelims. Open a paper to see every question with its answer.'),
-      ('Is there a free APPSC Group 1 mock test?',
-       'Yes. Tap Create a quiz, choose papers or subjects, and pick Timed test: you get a free mock test made of real APPSC Group 1 Prelims questions, in English or Telugu, with your score and a topic-wise analysis at the end.'),
+      ('Is there a APPSC Group 1 mock test?',
+       'Yes. Tap Create a quiz, choose papers or subjects, and pick Timed test: you get a mock test made of real APPSC Group 1 Prelims questions, in English or Telugu, with your score and a topic-wise analysis at the end.'),
       ('What is the APPSC Group 1 Prelims exam pattern?',
        'The Preliminary Examination has two objective papers on the same day: Paper I General Studies (History and Culture; Constitution, Polity, Social Justice and International Relations; Indian and AP Economy and Planning; Geography) and Paper II General Aptitude (General Mental Ability, Administrative and Psychological Abilities; Science and Technology; Current Events). Each paper has 120 questions for 120 marks in 120 minutes, and one-third of the marks of a question is deducted for a wrong answer. Prelims marks are used only to shortlist candidates for the Mains.'),
       ('Are the answers on this site official?',
@@ -964,20 +966,20 @@ def FAQ_G1(total, npapers):
       ('Why do the 2023 and 2019 questions not show four options?',
        'APPSC\'s 2023 and 2019 final keys print each question with only the correct answer. Those questions appear here as quick-recall cards: you think of the answer, reveal it and mark whether you knew it. The 2024 papers show all four options.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that every quiz and test on every exam opens straight away on that phone or computer. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
 
 
 def FAQ_CAPF(total, npapers):
     return [
       ('Where can I get UPSC CAPF AC previous year question papers with answers?',
-       f'This page has {total} questions from {npapers} UPSC CAPF (Assistant Commandants) Paper I papers, General Ability and Intelligence (2024, 2025 and 2026), in English and Hindi as printed in the official question booklets. Every question has a short explanation. You can read each paper with answers or practise it as a quiz, free.'),
-      ('Can I download the CAPF AC previous year question papers as PDF?',
-       'Yes, free. Each paper (2026, 2025 and 2024 Paper 1) has its own PDF with every question in English and Hindi, then the answer key and an explanation for each answer. Open a paper and tap Download PDF.'),
+       f'This page has {total} questions from {npapers} UPSC CAPF (Assistant Commandants) Paper I papers, General Ability and Intelligence (2024, 2025 and 2026), in English and Hindi as printed in the official question booklets. Every question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+      ('Is it free? What does the ₹45 PYQ Pass cover?',
+       'Every question is free to read, and the answers and explanations of the first 10 questions of each paper are free on the paper pages. Register once and every paper of every exam opens for 3 days. After that, one PYQ Pass of ₹45 unlocks all the previous papers on the website, every exam, for 12 months. Mock-test packs such as Mission Khaki are separate.'),
       ('Where is the CAPF AC 2026 answer key?',
        'Every 2026 question on this site shows the answer from UPSC\'s provisional answer key (Series A booklet), published three days after the exam on 19 July 2026. UPSC\'s final key can differ for a few questions.'),
-      ('Is there a free CAPF AC mock test?',
-       'Yes. Tap Create a quiz, choose papers or subjects such as General Science, Current Affairs or Polity, and pick Timed test: you get a free mock test made of real CAPF AC Paper 1 questions, in English or Hindi, with your score and a topic-wise analysis.'),
+      ('Is there a CAPF AC mock test?',
+       'Yes. Tap Create a quiz, choose papers or subjects such as General Science, Current Affairs or Polity, and pick Timed test: you get a mock test made of real CAPF AC Paper 1 questions, in English or Hindi, with your score and a topic-wise analysis.'),
       ('What is the UPSC CAPF AC exam pattern?',
        'The written exam has two papers on the same day. Paper I, General Ability and Intelligence, is objective, carries 250 marks and lasts two hours; recent papers have had 125 questions, in English and Hindi. It covers General Mental Ability, General Science, Current Events of national and international importance, Indian Polity and Economy, History of India, and Indian and World Geography. A wrong answer costs one-third of the marks for that question. Paper II, General Studies, Essay and Comprehension, is descriptive and carries 200 marks. Candidates who qualify take physical and medical standards tests and then an interview.'),
       ('Are the answers on this site official?',
@@ -985,7 +987,7 @@ def FAQ_CAPF(total, npapers):
       ('Is the CAPF AC previous year question paper available in Hindi?',
        'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, exactly as printed in UPSC\'s booklet. Tap EN to switch back.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that every quiz and test on every exam opens straight away on that phone or computer. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
 
 
@@ -994,16 +996,16 @@ def FAQ_HM(total, npapers):
       ('Where can I get TGPSC HMWSSB Manager (Engineering) previous question papers with answers?',
        f'This page has {total} questions from the TSPSC Manager (Engineering) written test for HMWSSB, Notification 13/2015, held on 1 November 2015: '
        'Paper 1 General Studies in English and Telugu, and Paper 2 Civil Engineering. Every answer is taken from TSPSC\'s final key (Series A), and each question has a short explanation. '
-       'You can read each paper with answers, practise it as a quiz or timed mock test, or download the PDF, free.'),
+       'You can practise each paper as a quiz or a timed mock test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
       ('What is the TGPSC HMWSSB Manager (Engineering) 2026 exam pattern?',
        'Two objective papers: Paper 1 General Studies and General Abilities (150 questions, 150 marks, in English and Telugu) and Paper 2 in the candidate\'s engineering '
        'subject (150 questions, 300 marks, in English), 450 marks in all. Notification 04/2026 has 130 posts, mostly Civil, and the exam is tentatively in December 2026; confirm dates on tgpsc.gov.in.'),
       ('Are the HMWSSB Manager General Studies questions available in Telugu?',
        'Yes. Paper 1 (General Studies) is printed in English and Telugu, apart from its English-language questions, and every question is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu. Paper 2 (Civil Engineering) is printed in English only.'),
-      ('Is there a free HMWSSB Manager mock test?',
+      ('Is there a HMWSSB Manager mock test?',
        'Yes. Open the mock test page and take a real 2015 paper with a timer, or tap Create a quiz to choose subjects such as Environmental Engineering, Fluid Mechanics or Telangana History. You get your score, the official answer and an explanation for every question.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that every quiz and test on every exam opens straight away on that phone or computer. There is no password.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password.'),
       ('Which questions are left out?',
        'In Paper 2 (Civil Engineering), TSPSC\'s final key gave the mark to every candidate for five questions (Q3, 37, 64, 95 and 128 in Series A); they are left out. The Mechanical, Electrical, ECE and CSE papers are not on the site yet.'),
     ]
@@ -1018,10 +1020,10 @@ def FAQ_TS(post, mains=()):
                    + ' 2023, booklet D') if si else '30 April 2023, booklet A'
             where = (f'This page has {total:,} questions from {npapers} TSLPRB papers: the {"SI" if si else "Police Constable"} Preliminary Written Test of {"7 August" if si else "28 August"} 2022 (booklet A) '
                      f'and the Final Written Examination ({fwe}), in English and Telugu as printed. '
-                     f'Every answer is taken from TSLPRB\'s final key for that paper, and each question has a short explanation. You can read each paper with answers, practise it as a quiz or mock test, or download the PDF, free.')
+                     f'Every answer is taken from TSLPRB\'s final key for that paper, and each question has a short explanation. You can practise each paper as a quiz or a mock test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.')
         else:
             where = (f'This page has {total} questions from the {"SI" if si else "Police Constable"} Preliminary Written Test held by TSLPRB on {"7 August" if si else "28 August"} 2022 (booklet A), in English and Telugu as printed. '
-                     f'Every answer is taken from TSLPRB\'s final key, released on 21 October 2022, and each question has a short explanation. You can read the paper with answers, practise it as a quiz or download the PDF, free.')
+                     f'Every answer is taken from TSLPRB\'s final key, released on 21 October 2022, and each question has a short explanation. You can practise the paper as a quiz, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.')
         return [
           (f'Where can I get {name} previous year question papers with answers?', where),
           (f'What is the {name} Preliminary Written Test pattern?',
@@ -1035,10 +1037,10 @@ def FAQ_TS(post, mains=()):
            + 'Dates can change, so confirm on tgprb.in. The 2022 prelims paper on this page follows the same pattern.'),
           (f'Are the {name} questions available in Telugu?',
            'Yes. Every question that the booklet printed in Telugu is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu.'),
-          (f'Is there a free {name} mock test?',
-           f'Yes. Tap Create a quiz, choose subjects or topics, and pick Timed test: you get a free mock test made of real TSLPRB questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.'),
+          (f'Is there a {name} mock test?',
+           f'Yes. Tap Create a quiz, choose subjects or topics, and pick Timed test: you get a mock test made of real TSLPRB questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.'),
           ('Do I need to register?',
-           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that every quiz and test on every exam opens straight away on that phone or computer. There is no password.'),
+           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password.'),
           ('Which questions are left out?',
            'Questions that TSLPRB deleted in the final key, and questions for which the final key accepted three or four options, are left out. Where the key accepted two options, both are shown as correct, and where it also gave the mark for leaving a question blank, the explanation says so.'),
         ]
@@ -1072,6 +1074,7 @@ table.facts th,table.facts td{border:1px solid var(--line);padding:8px 10px;text
 table.facts th{background:var(--accent-soft);font-weight:700;overflow-wrap:normal}table.facts td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;margin:16px 0}
 .ans{color:var(--good);font-weight:700;margin:8px 0 4px}.why{color:var(--muted);margin:0}
+.lock{background:var(--accent-soft);border-radius:10px;padding:10px 12px;margin:8px 0 0;font-size:15.5px}
 nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}nav.toc a{background:var(--accent-soft);padding:4px 10px;border-radius:999px;text-decoration:none;font-size:15px}
 footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}footer .wrap{padding-block:18px}
 .sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:8px 0}
@@ -1129,7 +1132,21 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 """
 
 
-def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None):
+def lock_html(unlock):
+    return (f'<p class="lock">Answer and explanation: <a href="{unlock}">open it in the practice app</a>. '
+            f'{TRIAL_DAYS} days free when you register, then one ₹{PAY["pyq_price"]} PYQ Pass for every exam on the site.</p>')
+
+
+def sample_ids(questions):
+    """The questions whose answers stay public: the first SAMPLE_N of each paper."""
+    seen, out = {}, set()
+    for q in questions:
+        seen[q['p']] = seen.get(q['p'], 0) + 1
+        if seen[q['p']] <= SAMPLE_N: out.add(q['id'])
+    return out
+
+
+def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None, unlock=None):
     label = f'<a href="{qhref}">{esc(num_label)}</a>' if qhref else esc(num_label)
     parts = [f'<li class="q" id="q{q["n"]}"><div class="meta">{label} · {esc(subj[q["s"]][1])} · {esc(q["t"])}</div>',
              f'<p>{esc(q["q"])}</p>']
@@ -1150,6 +1167,9 @@ def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None):
     elif q.get('at'): ans_te = q['at']
     te_ans = f'<p class="ans" lang="{l2["code"]}">{l2["ans"]}: {esc(ans_te)}</p>' if ans_te else ''
     wt = f'<p class="why" lang="{l2["code"]}" style="margin-top:6px">{esc(q["wt"])}</p>' if q.get('wt') else ''
+    if unlock:   # outside the free sample: no answer on the public page
+        parts.append(lock_html(unlock) + '</li>')
+        return ''.join(parts)
     parts.append(f'<details><summary>Show answer</summary><p class="ans">Answer: {esc(ans)}</p>{te_ans}<p class="why">{esc(q["w"])}</p>{wt}</details></li>')
     return ''.join(parts)
 
@@ -1158,32 +1178,32 @@ LANDINGS = {
   # file: what the page covers. People search "APPSC PYQs", "TS police previous papers", "TSLPRB previous question papers" ...
   'appsc-pyqs.html': dict(
       board='APPSC', ename='APPSC', crumb='APPSC PYQs',
-      title='APPSC Previous Year Question Papers with Answers – Group 1 & Group 2 PYQs, Free PDF | Learn with Anil',
+      title='APPSC Previous Year Question Papers with Answers – Group 1 & Group 2 PYQs | Learn with Anil',
       desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024 and Group 2 Prelims & Mains 2019–2025, '
-           '{n} questions with final-key answers and explanations in English and Telugu. Read online, take a free mock test or download the PDF.',
+           '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations: 3 days free, then one ₹45 PYQ Pass for every exam.',
       h1='APPSC previous year question papers with answers',
       lede="Every APPSC Group 1 and Group 2 previous question paper on Learn with Anil, {n} questions in all. "
            "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu.",
-      intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC old question papers with the key, or a free APPSC mock test? '
-            'They are all here: open a paper to read it with answers, download its PDF, or practise it online.</p>'
-            '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — PDF డౌన్‌లోడ్, ఉచిత మాక్ టెస్ట్.</p>'
+      intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC old question papers with the key, or an APPSC mock test? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.</p>'
             '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (686 posts, apply 10–30 November) and '
-            '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts). Free timed mock tests: '
+            '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts). Timed mock tests: '
             '<a href="/appsc-group-2/mock-test.html">Group 2</a> · <a href="/appsc-group-1/mock-test.html">Group 1</a>.</p>',
       te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు'},
       order=lambda c: c['short']),   # Group-I first, then Group-II
   'ts-police-pyqs.html': dict(
       board='TSLPRB', ename='TS Police', crumb='TS Police PYQs',
-      title='TS Police Previous Question Papers with Answers – SI & Constable PYQs (TSLPRB / TGPRB), Telugu PDF | Learn with Anil',
+      title='TS Police Previous Question Papers with Answers – SI & Constable PYQs (TSLPRB / TGPRB), English & Telugu | Learn with Anil',
       desc='Telangana Police SI and Constable previous question papers in one place: the TSLPRB Preliminary Written Test 2022 and Final Written Examination 2023 papers, '
-           '{n} questions with final-key answers and explanations in English and Telugu. Read online, take a free mock test or download the PDF.',
+           '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations: 3 days free, then one ₹45 PYQ Pass for every exam.',
       h1='TS Police SI & Constable previous question papers with answers',
       lede="Every Telangana Police SI and Constable question paper on Learn with Anil, {n} questions in all. "
            "Answers come from TSLPRB's final key, and every question has a short explanation, in English and Telugu.",
-      intro='<p>Looking for TS Police SI previous papers, the TS SI or Constable mains 2023 question paper, the TS Constable question paper 2022 PDF, TSLPRB / TGPRB previous question papers with answers, '
-            'or a free Telangana police mock test? They are all here: open a paper to read it with answers, download its PDF, or practise it online.</p>'
-            '<p lang="te">తెలంగాణ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) TSLPRB ఫైనల్ కీ సమాధానాలు, తెలుగులో వివరణలతో — PDF డౌన్‌లోడ్, ఉచిత మాక్ టెస్ట్.</p>'
-            '<p class="note">2026 prelims are tentatively on 29 November (SI) and 20 December (Constable). Free full mock tests with a timer: '
+      intro='<p>Looking for TS Police SI previous papers, the TS SI or Constable mains 2023 question paper, the TS Constable question paper 2022, TSLPRB / TGPRB previous question papers with answers, '
+            'or a Telangana police mock test? They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="te">తెలంగాణ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) TSLPRB ఫైనల్ కీ సమాధానాలు, తెలుగులో వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.</p>'
+            '<p class="note">2026 prelims are tentatively on 29 November (SI) and 20 December (Constable). Full mock tests with a timer: '
             '<a href="/ts-police-si/mock-test.html">TS Police SI mock test</a> · <a href="/ts-police-constable/mock-test.html">TS Police Constable mock test</a>.</p>',
       te={'TS Police SI': 'తెలంగాణ పోలీస్ ఎస్ఐ ప్రశ్నాపత్రాలు', 'TS Constable': 'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రశ్నాపత్రాలు'},
       order=lambda c: 0 if c['id'] == 'ts-police-si' else 1),
@@ -1205,7 +1225,7 @@ def landing_page(loaded, rel):
         rows = ''.join(
             f'<li class="q"><div class="meta">{esc(p["held"])} · {esc(p["notif"])} · {p["count"]} questions · '
             f'{"all four options" if p["fmt"] == "mcq" else "answer-only key"}</div>'
-            f'<p><a href="{base}papers/{p["slug"]}.html">{esc(paper_kw(conf, p))} question paper with answers</a> · <a href="{pdf_href(conf, p)}" download>PDF</a></p>'
+            f'<p><a href="{base}papers/{p["slug"]}.html">{esc(paper_kw(conf, p))} question paper with answers</a></p>'
             f'<p class="why" style="font-weight:400">{esc(p["blurb"])}</p></li>'
             for p in sorted(papers, key=lambda p: (-p['year'], p['id'])))
         subs = ''.join(f'<a href="{base}subjects/{conf["slugp"]}-{subj[s][2]}-pyqs.html">{esc(subj[s][1])} ({scount[s]})</a>'
@@ -1238,7 +1258,7 @@ def practice_links(conf, papers, questions):
     for q in questions: scount[q['s']] = scount.get(q['s'], 0) + 1
     rows = ''.join(
         f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {"timed mock test available" if p["fmt"] == "mcq" else "answer-only key (quick-recall cards)"}</div>'
-        f'<p><a href="/{base}papers/{p["slug"]}.html">{esc(paper_kw(conf, p))} question paper with answers</a> · <a href="{pdf_href(conf, p)}" download>PDF</a>'
+        f'<p><a href="/{base}papers/{p["slug"]}.html">{esc(paper_kw(conf, p))} question paper with answers</a>'
         + (f' · <a href="{conf["pb"]}?test={p["id"]}">Take it as a timed mock test</a>' if p['fmt'] == 'mcq' else '') + '</p></li>'
         for p in sorted(papers, key=lambda p: (-p['year'], p['id'])))
     subs = ''.join(f'<a href="/{base}subjects/{conf["slugp"]}-{subj[x][2]}-pyqs.html">{esc(subj[x][1])} ({scount[x]})</a>' for x in subj if scount.get(x))
@@ -1251,7 +1271,7 @@ NOTIFS = {
     exam='appsc-group-2', crumb='Group 2 Notification 2026',
     title='APPSC Group 2 Notification 2026 – 686 Posts, Apply 10–30 November, Exam Pattern & Previous Papers | Learn with Anil',
     desc='APPSC Group 2 Notification 2026 (No. 37/2026): 686 posts including 200 Deputy Tahsildar and 176 Deputy MPDO posts, online applications '
-         'from 10 to 30 November 2026, the screening test and mains pattern, and free APPSC Group 2 previous year question papers with answers.',
+         'from 10 to 30 November 2026, the screening test and mains pattern, and APPSC Group 2 previous year question papers with answers.',
     h1='APPSC Group 2 Notification 2026: 686 posts',
     lede='APPSC issued a brief notification (No. 37/2026) on 13 October 2026 for 686 Group-II posts, Executive and Non-Executive. '
          'Online applications run from 10 to 30 November 2026. Here are the posts, the dates, the exam pattern, and the Group 2 previous papers to start practising now.',
@@ -1285,7 +1305,7 @@ NOTIFS = {
     exam='appsc-group-1', crumb='Group 1 Notification 2026',
     title='APPSC Group 1 Notification 2026 – 166 Posts, Last Date 27 October, Prelims Pattern & Previous Papers | Learn with Anil',
     desc='APPSC Group 1 Notification 2026 (No. 07/2026): 166 posts including Deputy Collector, DSP and Divisional Development Officer, applications till 27 October 2026, '
-         'screening test tentatively on 24 January 2027, prelims and mains pattern, and free APPSC Group 1 previous year question papers with answers.',
+         'screening test tentatively on 24 January 2027, prelims and mains pattern, and APPSC Group 1 previous year question papers with answers.',
     h1='APPSC Group 1 Notification 2026: 166 posts',
     lede='APPSC Notification No. 07/2026 is for 166 Group-I Services posts, from Deputy Collector and DSP to Divisional Development Officer. '
          'Online applications close on 27 October 2026, and the screening test is tentatively on 24 January 2027. Here are the dates, the posts, the exam pattern, and the Group 1 previous papers to practise.',
@@ -1331,7 +1351,7 @@ def notif_page(loaded, rel):
         elif kind == 'note': body.append(f'<p class="note">{esc(data)}</p>')
         else: body.append(f'<p>{esc(data)}</p>')
     body.append(f'<h2>Start with the previous papers</h2><p>Every {esc(conf["name"])} paper on this site comes with the answers from APPSC\'s final key and a short '
-                f'explanation in English and Telugu. Read a paper, download it as a PDF, or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
+                f'explanation in English and Telugu. Practise a paper online or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
     body.append(f'<p class="note">Source: <a href="{N["pdf"]}" rel="nofollow">{esc(N["pdfname"])}</a>. Dates and vacancies can change with corrigenda; '
                 f'always check the official website psc.ap.gov.in before applying. Learn with Anil is not connected with APPSC.</p>')
     return static_page(0, N['title'], N['desc'], can, N['h1'], esc(N['lede']), ''.join(body),
@@ -1343,7 +1363,12 @@ PAY = dict(
     on=False,   # True once Instamojo payments work end to end: attempting tests then needs a pass. Until then everything stays free.
     api='https://script.google.com/macros/s/AKfycbxgNi2CfnbaEsVpA1Ghgy0AdYdUG7eYBkol5zqcbMgA2Q4D0Pvy0rndLxeyE7MlPy_3Rg/exec',   # the payments script (Apps Script web app, deployed 23 Oct 2026)
     pyq_price=45,
+    exams='',   # names of every live exam, for the pay dialog ("one payment for the whole website"); set in main()
 )
+PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
+TRIAL_DAYS = 3
+SAMPLE_N = 10        # public paper / question pages show the answers of the first SAMPLE_N questions of each paper; the rest need the pass or trial
+PUBLIC_PDFS = False  # Anil, 23 Oct 2026: no free PDF downloads (tools/pdfs.py makes nothing while this is False)
 if os.environ.get('PAY_TEST'):   # test builds only (test/pay_test.py): payments on, against a fake script address
     PAY.update(on=True, api='https://pay.test/exec')
 BB_URL = ''   # the Bahubali Test Series page (APPSC Group 2 Mains), set by main() once its tests are sealed
@@ -1410,8 +1435,9 @@ def pay_data(conf):
     pb = conf['pb']
     mk = MOCK_PACKS.get(conf['id'])
     return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'],
-                pyq=dict(price=PAY['pyq_price'], valid=pass_until_text(conf)),
-                mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=mk['price'], n=mk['n'], live=mk['live']) if mk else None),
+                pyq=dict(price=PAY['pyq_price'], valid=PYQ_VALID, exams=PAY['exams'], trial=TRIAL_DAYS),
+                mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=mk['price'], n=mk['n'], live=mk['live'],
+                           valid=pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:]) if mk else None),
                 pages=dict(pyq=pb + 'pyqs.html', mock=pb + 'mock-test.html', sec=pb + 'sectional-tests.html'))
 
 
@@ -1421,12 +1447,12 @@ def tiles_html(conf, papers, questions, extra_links):
     n = len(questions)
     nsub = len({q['s'] for q in questions})
     t1 = (f'<a class="etile" href="{pb}pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b>'
-          f'<span class="etile-p">{n:,} questions from {len(papers)} official paper{"s" if len(papers) > 1 else ""}. Read every question with its answer free; '
-          f'attempt them as quizzes and timed tests with the PYQ Pass.</span><span class="etile-price">₹{PAY["pyq_price"]} · {pass_until_short(conf)}</span></a>')
+          f'<span class="etile-p">{n:,} questions from {len(papers)} official paper{"s" if len(papers) > 1 else ""}, with answers and explanations, as quizzes and timed tests. '
+          f'3 days free when you register.</span><span class="etile-price">₹{PAY["pyq_price"]} · all exams · 12 months</span></a>')
     if mk:
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
               f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>'
-              f'<span class="etile-price">₹{mk["price"]} · includes the PYQ Pass</span></a>')
+              f'<span class="etile-price">₹{mk["price"]} · mock tests only</span></a>')
     elif BB_URL and conf['id'] == 'appsc-group-2':
         t2 = (f'<a class="etile" href="{BB_URL}"><span class="etile-k">02 · Mock tests</span><b>Bahubali Test Series</b>'
               f'<span class="etile-p">24 full-length Group-II Mains mocks, 12 for Paper I and 12 for Paper II: 150 questions each, English and Telugu, with explanations.</span>'
@@ -1448,14 +1474,16 @@ def buy_box(conf, kind):
     """A price box with a buy button that opens the checkout inside the app."""
     pb = conf['pb']
     if kind == 'pyq':
-        price, name = PAY['pyq_price'], f'{conf["seo"]} PYQ Pass'
-        what = (f'Attempt every {esc(conf["seo"])} previous paper as a practice quiz or a timed test, take PYQ sectionals and topic-wise quizzes, '
-                f'and revise with Smart Quiz and your Mistakes notebook. Reading the questions with answers stays free.')
+        price, name = PAY['pyq_price'], 'PYQ Pass · all exams'
+        what = (f'<b>One payment of ₹{PAY["pyq_price"]} for the whole website:</b> the previous papers of every exam on Learn with Anil '
+                f'({esc(PAY["exams"])}) and every exam added later, not just {esc(conf["seo"])}. Every answer and explanation, practice quizzes and timed tests, '
+                f'PYQ sectionals, topic-wise quizzes, Smart Quiz and your Mistakes notebook. New here? Register once and get {TRIAL_DAYS} days free.')
+        valid = PYQ_VALID
     else:
         mk = MOCK_PACKS[conf['id']]
         price, name = mk['price'], mk['title']
-        what = esc(mk['summary']) + ' The PYQ Pass is included.'
-    valid = pass_until_text(conf)
+        what = esc(mk['summary']) + f' Mock tests only: previous papers need the PYQ Pass (₹{PAY["pyq_price"]}, all exams), bought separately.'
+        valid = pass_until_text(conf)
     status = ('' if PAY['on'] else '<p class="note">Payments open soon. Until then every quiz and test on the site stays free.</p>')
     return (f'<div class="buy"><div><b>{esc(name)}</b><p>{what}</p><p class="muted">₹{price} · {valid} · pay by UPI, card or net banking (Instamojo)</p></div>'
             f'<a class="cta" href="{pb}?buy={kind}">Get it for ₹{price}</a></div>{status}')
@@ -1482,29 +1510,32 @@ def subjects_html(conf, questions):
 
 
 def pyq_page(conf, papers, questions):
-    """Tile 1: PYQs — read free, attempt with the PYQ Pass."""
+    """Tile 1: PYQs — a free sample on the public pages; everything with the free trial or the PYQ Pass (all exams)."""
     pb, seo, l2 = conf['pb'], conf['seo'], conf['l2']
     rel = pb.strip('/') + '/pyqs.html'
     can = SITE_URL + '/' + rel
     base = '/' + (conf['dir'] + '/' if conf['dir'] else '')
     ps = sorted(papers, key=lambda p: (-p['year'], p['id']))
-    title = f'{seo} PYQs with Answers – Previous Papers, Read Free, Practise with the PYQ Pass | Learn with Anil'
-    desc = (f'{seo} previous year questions (PYQs): {len(questions):,} questions from {len(papers)} official papers with answers and explanations in English and {l2["name"]}. '
-            f'Read them free; attempt them as quizzes and timed tests with the ₹{PAY["pyq_price"]} PYQ Pass.')
+    title = f'{seo} PYQs with Answers – Previous Papers as Quizzes & Timed Tests, 3 Days Free | Learn with Anil'
+    desc = (f'{seo} previous year questions (PYQs): {len(questions):,} questions from {len(papers)} official papers with answers and explanations in English and {l2["name"]}, '
+            f'as practice quizzes and timed tests. 3 days free when you register, then one ₹{PAY["pyq_price"]} PYQ Pass for every exam on the site.')
     rows = ''.join(
         f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions</div><p>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</p>'
-        f'<a class="cta alt" href="{base}papers/{p["slug"]}.html">Read with answers (free)</a><a class="cta alt" href="{pdf_href(conf, p)}" download>PDF</a>'
-        f'<a class="cta" href="{pb}?test={p["id"]}">Attempt as a timed test</a></li>' for p in ps)
+        f'<a class="cta alt" href="{pb}?practice={p["id"]}">Practise question by question</a>'
+        + (f'<a class="cta" href="{pb}?test={p["id"]}">Attempt as a timed test</a>' if p['fmt'] == 'mcq' else '') + '</li>' for p in ps)
     body = (buy_box(conf, 'pyq') + '<h2>Previous papers</h2><ol class="qs">' + rows + '</ol>'
             + '<h2>Practise by subject</h2><p>Pick a subject to build a quiz from every paper.</p>' + subjects_html(conf, questions)
             + '<h2>How practice works</h2>' + features_html(pb, ('practice', 'mistakes', 'smart', 'heatmap'))
-            + '<h2>Free and with the pass</h2><ul>'
-            '<li><b>Free for everyone:</b> every paper, subject page and question page with the official answer and explanation, the PDFs, and the question of the day.</li>'
-            f'<li><b>With the PYQ Pass (₹{PAY["pyq_price"]}):</b> attempt papers as practice quizzes and timed tests, PYQ sectionals, topic-wise quizzes, Smart Quiz and Mistakes revision, with your scores and topic-wise analysis.</li>'
-            '<li>The pass is linked to the phone number you registered with on the site, so use the same number when you pay.</li></ul>'
+            + '<h2>Free trial and the PYQ Pass</h2><ul>'
+            f'<li><b>{TRIAL_DAYS} days free:</b> register once with your name, phone and email, and every previous paper of every exam opens for {TRIAL_DAYS} days.</li>'
+            f'<li><b>PYQ Pass, ₹{PAY["pyq_price"]} for the whole website:</b> one payment covers every exam on Learn with Anil ({esc(PAY["exams"])}) and every exam added later, for 12 months from the day you pay.</li>'
+            f'<li><b>Free for everyone:</b> the question of the day, and a sample of every paper on the public pages (the answers of the first {SAMPLE_N} questions).</li>'
+            '<li>Mock-test packs such as Mission Khaki are separate.</li>'
+            '<li>The pass is linked to the phone number and email you registered with on the site, so use the same ones when you pay.</li></ul>'
             + f'<p><a class="cta alt" href="{pb}mock-test.html">Mock tests</a><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a></p>')
-    lede = esc(f'Every {seo} previous paper on Learn with Anil, with official answers and explanations. Reading is free; attempting them as tests needs the PYQ Pass.')
-    return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} PYQs: read free, practise with the PYQ Pass', lede, body,
+    lede = esc(f'Every {seo} previous paper on Learn with Anil, with official answers and explanations, as practice quizzes and timed tests. '
+               f'{TRIAL_DAYS} days free when you register; then one ₹{PAY["pyq_price"]} PYQ Pass opens every exam on the site for 12 months.')
+    return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} PYQs with answers', lede, body,
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('PYQs', can)], conf)
 
 
@@ -1585,7 +1616,7 @@ def mock_page(conf, papers, questions):
             f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>'
             '<li>The timer gives you one minute per question. You can move between questions and change answers until you submit.</li>'
             '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question. Wrong answers go to your Mistakes notebook.</li>'
-            f'<li>Previous papers as tests need the ₹{PAY["pyq_price"]} PYQ Pass{" (included in " + esc(mk["name"]) + ")" if mk else ""}. Register once with your phone number and use the same number when you pay.</li></ul>'
+            f'<li>Previous papers as tests need the PYQ Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months) or your {TRIAL_DAYS}-day free trial{"; " + esc(mk["name"]) + " is separate" if mk else ""}. Register once with your phone number and use the same number when you pay.</li></ul>'
             + '<h2>After every test</h2>' + features_html(pb, ('mistakes', 'smart', 'heatmap'))
             + f'<p><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a><a class="cta alt" href="{pb}pyqs.html">All {esc(seo)} PYQs</a></p>')
     lede = esc((f'{mk["title"]}, plus every real {seo} previous paper as a timed mock test.') if mk else
@@ -1602,6 +1633,8 @@ def build_static(conf, papers, subjects, questions, subj):
     base = f'{SITE_URL}/{conf["dir"] + "/" if conf["dir"] else ""}'
     home_crumbs = [('Home', SITE_URL + '/')] + ([(conf['name'], base)] if conf['dir'] else [])
     name, seo, slugp = conf['name'], conf['seo'], conf['slugp']
+    free = sample_ids(questions)
+    unl = lambda q: None if q['id'] in free else f'{conf["pb"]}?q={q["id"]}'
     for p in papers:
         qs = by_p[p['id']]
         rel = f'papers/{p["slug"]}.html'
@@ -1611,26 +1644,28 @@ def build_static(conf, papers, subjects, questions, subj):
                else f'Each question with its official answer from {conf["keyname"]} (the key lists the correct answer only)')
         kw, alt = paper_kw(conf, p), paper_alt(conf, p)
         if conf['board'] == 'UPSC':
-            title = f'{kw} Question Paper with Answer Key, English & Hindi PDF | Learn with Anil'
+            title = f'{kw} Question Paper with Answer Key, English & Hindi | Learn with Anil'
         else:
-            title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – Final Key, {"English" if p.get("en_only") else "Telugu & English"} PDF | Learn with Anil'
+            title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – Final Key, {"English" if p.get("en_only") else "Telugu & English"} | Learn with Anil'
         kdesc = ("answers from APPSC's final key" if conf['board'] == 'APPSC' else 'compiled answers' if p.get('key', '').startswith('answers compiled')
                  else f'answers from {pkey}')
         desc = (f'{kw} question paper{f" ({alt})" if alt else ""}, held {p["held"]}: all {len(qs)} questions in {"English" if p.get("en_only") else "English and " + conf["l2"]["name"]} '
-                f'with {kdesc} and explanations. Download the PDF or practise it online as a free mock test.'
+                f'with {kdesc} and explanations. Practise it online as a quiz or a timed mock test: {TRIAL_DAYS} days free when you register.'
                 + (f' {conf["aka_short"]}.' if conf.get('aka_short') else ''))
         subs = {}
         for q in qs: subs.setdefault(q['s'], 0); subs[q['s']] += 1
         toc = '<nav class="toc">' + ''.join(
             f'<a href="../subjects/{slugp}-{subj[s][2]}-pyqs.html">{esc(subj[s][1])} ({c})</a>' for s, c in subs.items()) + '</nav>'
         body = (f'<p lang="{conf["l2"]["code"]}" style="margin:0 0 6px">{esc(paper_kw_l2(conf, p))}</p>'
-                f'<a class="cta" href="{pdf_href(conf, p)}" download>Download PDF (free)</a>'
-                f'<a class="cta alt" href="{conf["pb"]}papers/">Practise this paper online</a>'
+                f'<a class="cta" href="{conf["pb"]}?practice={p["id"]}">Practise this paper online</a>'
+                + (f'<a class="cta alt" href="{conf["pb"]}?test={p["id"]}">Take it as a timed test</a>' if p['fmt'] == 'mcq' else '') +
                 f'<a class="cta alt" href="{conf["pb"]}practice/">Make a topic-wise quiz</a>'
+                f'<p class="note">The answers and explanations of the first {min(SAMPLE_N, len(qs))} questions are free on this page. For all {len(qs)}, practise the paper in the app: '
+                f'{TRIAL_DAYS} days free when you register, then one ₹{PAY["pyq_price"]} PYQ Pass for every exam on the site.</p>'
                 f'<h2>Subjects in this paper</h2>{toc}<h2>All {len(qs)} questions</h2><ol class="qs">'
-                + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html') for q in qs) + '</ol>')
+                + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html', unl(q)) for q in qs) + '</ol>')
         held = f'{p["notif"]}, held on {p["held"]}' if conf['board'] == 'APPSC' else f'Held on {p["held"]} ({p["notif"].replace(" · ", ", ")})'
-        lede = esc(f'{p["title"]}{f" ({alt_shown(alt, p['title'])})" if alt_shown(alt, p['title']) else ""}. {p["blurb"]} {held}. {fmt}, plus a short explanation for every question. '
+        lede = esc(f'{p["title"]}{f" ({alt_shown(alt, p['title'])})" if alt_shown(alt, p['title']) else ""}. {p["blurb"]} {held}. {fmt}, plus a short explanation for every question (the first {SAMPLE_N} here, all of them in the app). '
                    + ('' if p.get('en_only') else f'Each question is shown in English and {conf["l2"]["name"]}, as printed in the booklet.'))
         pages[rel] = static_page(1, title, desc, can, f'{kw} question paper with answers', lede, body,
                                  home_crumbs + [(p['title'], can)], conf)
@@ -1644,7 +1679,7 @@ def build_static(conf, papers, subjects, questions, subj):
         bits = ' & Practice Bits' if conf['board'] == 'APPSC' or conf.get('bits') else ' (Subject-wise)'
         title = f'{seo} {s["name"]} Previous Year Questions (PYQs) with Answers{bits} | Learn with Anil'
         desc = (f'{len(qs)} {seo} {s["name"]} previous year questions from {", ".join(paper_kw(conf, pmap[pid]).replace(seo + " ", "") for pid in dict.fromkeys(q["p"] for q in qs))}, '
-                f'topic-wise, with answers, explanations and {conf["l2"]["name"]} text. Practise them free as a mock test.')
+                f'topic-wise, with answers, explanations and {conf["l2"]["name"]} text. Practise them as a quiz or a timed test: {TRIAL_DAYS} days free when you register.')
         l2l = subject_l2_line(conf, s)
         body = ([f'<p lang="{conf["l2"]["code"]}" style="margin:0 0 6px">{esc(l2l)}</p>'] if l2l else []) + [f'<a class="cta" href="{conf["pb"]}practice/">Practise {esc(s["name"])} online</a>']
         tops = {}
@@ -1653,9 +1688,9 @@ def build_static(conf, papers, subjects, questions, subj):
         for i, t in enumerate(s['topics']):
             if t not in tops: continue
             body.append(f'<h2 id="t{i}">{esc(t)}</h2><ol class="qs">' + ''.join(
-                q_html(q, pmap[q['p']]['short'], f'{pmap[q["p"]]["short"]} · Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html') for q in tops[t]) + '</ol>')
+                q_html(q, pmap[q['p']]['short'], f'{pmap[q["p"]]["short"]} · Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html', unl(q)) for q in tops[t]) + '</ol>')
         lede = esc(f'Every {s["name"]} question asked in the {name} papers on this site, grouped by topic. '
-                   f'Answers come from {conf["keyshort"]}; each has a short explanation.')
+                   f'Answers come from {conf["keyshort"]}; each has a short explanation (free here for a sample, all of them in the practice app).')
         pages[rel] = static_page(1, title, desc, can, f'{seo} {s["name"]} previous year questions with answers', lede, ''.join(body),
                                  home_crumbs + [(s['name'], can)], conf)
     return pages
@@ -1670,6 +1705,7 @@ def question_pages(conf, papers, questions, subj):
     pb, l2 = conf['pb'], conf['l2']
     sdir = '/' + (conf['dir'] + '/' if conf['dir'] else '')
     depth = 1 if conf['dir'] else 2
+    free = sample_ids(questions)
     for pid, qs in by_p.items():
         p = pmap[pid]
         paper_url = f'{sdir}papers/{p["slug"]}.html'
@@ -1687,10 +1723,12 @@ def question_pages(conf, papers, questions, subj):
                    + (f'<a href="{prev_q["id"]}.html">← Q{prev_q["n"]}</a>' if prev_q else '')
                    + (f'<a href="{next_q["id"]}.html">Q{next_q["n"]} →</a>' if next_q else '')
                    + f'<a href="{paper_url}">All questions of this paper</a></nav>')
-            body = (f'<ol class="qs">{q_html(q, p["short"], f"{p["short"]} · Q{q["n"]}", subj, l2)}</ol>'
+            locked = q['id'] not in free
+            body = (f'<ol class="qs">{q_html(q, p["short"], f"{p["short"]} · Q{q["n"]}", subj, l2, None, f"{pb}?q={q["id"]}" if locked else None)}</ol>'
                     f'<p><a class="cta" href="{pb}?q={q["id"]}">Answer it in the practice app</a>'
                     f'<a class="cta alt" href="{pb}practice/">Make a topic-wise quiz</a></p>' + nav)
-            lede = esc(f'Question {q["n"]} of the {p["title"]} ({p["held"]}). Try it first, then open the answer and explanation.')
+            lede = esc(f'Question {q["n"]} of the {p["title"]} ({p["held"]}). '
+                       + ('Try it first, then check your answer and the explanation in the practice app.' if locked else 'Try it first, then open the answer and explanation.'))
             crumbs = [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), (p['title'], SITE_URL + paper_url), (f'Q{q["n"]}', can)]
             pages[rel] = static_page(depth, title, desc, can, f'{kw} · Question {q["n"]}', lede, body, crumbs, conf)
     return pages
