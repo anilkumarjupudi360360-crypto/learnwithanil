@@ -1858,9 +1858,9 @@ function start(data){
     if(bk==="pyq" || bk==="mock"){ history.replaceState(null, "", location.pathname); syncLang(); render(); openPay(bk); return; }
     const mk = sp.get("mock");  // ?mock=<mock id>[&part=ari|rea|gs]: a Mission Khaki mock or one of its sections
     if(mk && /^[a-z0-9-]+$/.test(mk)){ history.replaceState(null, "", location.pathname); syncLang(); render(); startMock(mk, sp.get("part")||""); return; }
-    const sec = sp.get("sec");  // ?sec=<subject id>: a PYQ sectional test (up to 30 questions from one subject)
+    const sec = sp.get("sec");  // ?sec=<subject id>: a PYQ sectional test (every previous question from one subject)
     if(sec && SUBJ[sec]){ history.replaceState(null, "", location.pathname); syncLang(); render();
-      startQuiz(shuffle(QS.filter(q=>q.s===sec && isMCQ(q)).map(q=>q.id)).slice(0,30), SUBJ[sec].name+" · PYQ sectional", "test", "sectional"); return; }
+      startQuiz(shuffle(QS.filter(q=>q.s===sec && isMCQ(q)).map(q=>q.id)), SUBJ[sec].name+" · PYQ sectional", "test", "sectional"); return; }
     const sj = sp.get("subj");   // ?subj=<subject id>: the quiz builder with that subject picked (from the PYQs page)
     if(sj && SUBJ[sj]){ history.replaceState(null, "", location.pathname); const s=SUBJ[sj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); syncLang(); go("practice"); return; }
     const tp = sp.get("test");   // ?test=<paper id>: start that paper as a full timed mock test

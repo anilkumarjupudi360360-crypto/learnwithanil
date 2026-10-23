@@ -567,8 +567,6 @@ def main():
 
         links = [(N['h1'], '/' + rel) for rel, N in NOTIFS.items() if N['exam'] == conf['id']]
         if bb_url and conf['id'] == 'appsc-group-2': links.insert(0, ('New: Bahubali Test Series – Group 2 Mains full-length tests', bb_url))
-        links.append({'APPSC': ('All APPSC previous papers (Group 1 & Group 2)', '/appsc-pyqs.html'),
-                      'TSLPRB': ('All TS Police previous papers (SI & Constable)', '/ts-police-pyqs.html')}.get(conf['board'], ('All exams on Learn with Anil', '/')))
         tiles = tiles_html(conf, papers, questions, links)
 
         def fill(s, photo, title, seo, desc=''):
@@ -1500,7 +1498,7 @@ def sectional_page(conf, papers, questions):
     title = f'{seo} Sectional Tests – Subject-wise PYQ Tests{" & " + mk["name"] + " Sectional Mocks" if mk else ""} with Timer | Learn with Anil'
     desc = (f'{seo} sectional tests: subject-wise timed tests made of real previous year questions'
             + (f', and sectional mocks from the {mk["name"]} test series' if mk else '') + ', with answers and explanations.')
-    rows = ''.join(f'<li class="q"><div class="meta">{cnt[s[0]]} previous questions · up to 30 per test · one minute per question</div><p>{esc(s[1])}</p>'
+    rows = ''.join(f'<li class="q"><div class="meta">{cnt[s[0]]} previous questions · all in one test · one minute per question</div><p>{esc(s[1])}</p>'
                    f'<a class="cta" href="{pb}?sec={s[0]}">Start {esc(s[1])} sectional</a></li>' for s in subs)
     secrows = (''.join((f'<li class="q"><div class="meta">Available now</div><p>Mock {i + 1} sections</p>'
                         + ''.join(f'<a class="cta alt" href="{pb}?mock={mk["id"]}-{i + 1}&amp;part={k}">{v}</a>' for k, v in (('ari', 'Arithmetic'), ('rea', 'Reasoning'), ('gs', 'General Studies')))
@@ -1510,7 +1508,7 @@ def sectional_page(conf, papers, questions):
                  + ', '.join(esc(x) for x in mk['sections']) + ' — open as separate timed tests as the mocks are released '
                  f'({live_text(mk)}). They come with the {esc(mk["name"])} pack.</p>' + buy_box(conf, 'mock')
                  if mk else '<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack. Its price will be announced soon.</p>')
-    body = ('<h2>PYQ sectionals</h2><p>Each test takes up to 30 real previous questions from one subject, with a timer. They need the PYQ Pass.</p>'
+    body = ('<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. They need the PYQ Pass.</p>'
             '<ol class="qs">' + rows + '</ol>' + buy_box(conf, 'pyq') + mock_part)
     lede = esc(f'Practise {seo} one section at a time: timed tests from real previous questions in every subject'
                + (f', and sectional mocks from {mk["name"]}.' if mk else '.'))
