@@ -353,7 +353,7 @@ def page(dist_site):
     live_desc = ' and '.join(f'{p["name"]} Grand Test' + ('s ' if sum(t['paper'] == p['id'] for t in conf_tests) > 1 else ' ') + _ranges([t['n'] for t in conf_tests if t['paper'] == p['id']]) for p in PAPERS if any(t['paper'] == p['id'] for t in conf_tests)) or 'first tests coming soon'
     buy = S.get('buy', '')
     buy_btn = (f'<a class="btn btn-gold" href="{esc(buy)}" target="_blank" rel="noopener" data-buy>Buy now · ₹{PRICE}</a>' if buy else
-               f'<a class="btn btn-gold" href="https://wa.me/{B.WHATSAPP}?text={html.escape("Hi Anil, I want to buy the Bahubali Test Series (APPSC Group-II Mains).")}" target="_blank" rel="noopener">Buy on WhatsApp · ₹{PRICE}</a>')
+               f'<a class="btn btn-gold" href="https://wa.me/{B.WHATSAPP}?text={html.escape("Hi Learn_with_anil Team, I want to buy the Bahubali Test Series (APPSC Group-II Mains).")}" target="_blank" rel="noopener">Buy on WhatsApp · ₹{PRICE}</a>')
     samples = S.get('samples', [])
     sample_html = ''
     if samples:

@@ -1036,7 +1036,7 @@ function applyHub(){
   document.querySelectorAll('#hub-static [data-act="excat"]').forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.cat===cat)));
   const live = [...document.querySelectorAll("#hub-static .exam.live:not([hidden])")].length;
   const cnt = $("#hubCount"); if(cnt) cnt.textContent = n ? HT("count").replace("{n}", n).replace("{l}", live) : "";
-  const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Anil, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
+  const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Learn_with_anil Team, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
   const s = $("#examSearch"); if(s && s.value!==(UI.exQ||"")) s.value = UI.exQ||"";
 }
 /* countdown cards on the start page (and one exam's countdown on its page) */
@@ -1072,7 +1072,7 @@ function vExam(){
       <span class="pill warn" style="align-self:flex-start">Upcoming</span>
       <h2 style="font-size:21px">${esc(e.b)} ${esc(e.t)}: questions are on the way</h2>
       <p>Exams are being added one by one. Send a WhatsApp message and Anil will tell you when ${esc(e.t)} is ready.</p>
-      <div class="row"><a class="btn btn-primary" href="${waLink(`Hi Anil, please tell me when ${e.b} ${full} questions are added on learnwithanil.in`)}" target="_blank" rel="noopener">Notify me on WhatsApp</a><a class="btn btn-secondary" href="/ts-police-si/">Practise APPSC Group-II now</a></div>
+      <div class="row"><a class="btn btn-primary" href="${waLink(`Hi Learn_with_anil Team, please tell me when ${e.b} ${full} questions are added on learnwithanil.in`)}" target="_blank" rel="noopener">Notify me on WhatsApp</a><a class="btn btn-secondary" href="/ts-police-si/">Practise APPSC Group-II now</a></div>
       <p style="font-size:14.5px">Most exams share the same General Studies core: Polity, Economy, History, Geography and Science &amp; Technology. APPSC Group-II's ${QS.length.toLocaleString("en-IN")} questions are a good way to practise them today.</p>
     </div>
   </section>`;
@@ -1477,7 +1477,7 @@ function noteCard(b){
       <p class="note-meta mono">${b.pages} pages · ${b.chapters_label? esc(b.chapters_label) : `${b.chapters.length-1} chapters + practice · ${b.pyqs} PYQs`}</p>
       <details class="note-toc"><summary>What's inside</summary><ol${te?' lang="te"':""}>${b.chapters.map(c=>`<li>${esc(c)}</li>`).join("")}</ol></details>
       <div class="note-buy"><span class="price">₹${b.price}</span>${buy}</div>
-      <div class="note-links"><button class="btn btn-ghost btn-sm" type="button" data-act="sample" data-id="${b.id}">See sample pages</button>${b.buy? "" : `<a class="btn btn-ghost btn-sm" href="${waLink(`Hi Anil, please tell me when "${name}" is available to buy.`)}" target="_blank" rel="noopener">Notify me on WhatsApp</a>`}</div>
+      <div class="note-links"><button class="btn btn-ghost btn-sm" type="button" data-act="sample" data-id="${b.id}">See sample pages</button>${b.buy? "" : `<a class="btn btn-ghost btn-sm" href="${waLink(`Hi Learn_with_anil Team, please tell me when "${name}" is available to buy.`)}" target="_blank" rel="noopener">Notify me on WhatsApp</a>`}</div>
     </div>
   </article>`;
 }
