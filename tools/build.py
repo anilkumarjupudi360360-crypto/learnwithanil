@@ -456,11 +456,11 @@ def exam_confs():
            slugp='appsc-group-2', papers=PAPERS, subjects=SUBJECTS, faq=FAQ, board='APPSC', l2=L2_TE, pb='/appsc-group-2/',
            title='APPSC Group 2 Previous Year Question Papers (PYQs) with Answers – Prelims & Mains 2019–2025, English & Telugu | Learn with Anil',
            h1='APPSC Group 2 previous year question papers <em>with answers.</em>',
-           l2line='APPSC గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు (ప్రిలిమ్స్, మెయిన్స్) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.',
+           l2line='APPSC గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు (ప్రిలిమ్స్, మెయిన్స్) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.',
            aka='Also known as AP Group 2 or APPSC Group-II Services. Old question papers, PYQs and practice bits, all with the final key.',
            desc=lambda t: (f"APPSC Group 2 (AP Group 2) previous year question papers and old papers with answers from APPSC's final key: Prelims (Screening Test) 2024 and 2019, "
                            f"Mains 2025 Paper 1 and Paper 2, and Mains 2019. {t:,} questions in English and Telugu with explanations; "
-                           f"practice quizzes and timed mock tests, 3 days free."),
+                           f"practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            eyebrow='APPSC Group-II · Prelims (Screening) &amp; Mains · 2019–2025',
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
@@ -469,11 +469,11 @@ def exam_confs():
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            title='APPSC Group 1 Previous Year Question Papers (PYQs) with Answers – Prelims 2019–2024, English & Telugu | Learn with Anil',
            h1='APPSC Group 1 previous year question papers <em>with answers.</em>',
-           l2line='APPSC గ్రూప్ 1 ప్రిలిమ్స్ మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.',
+           l2line='APPSC గ్రూప్ 1 ప్రిలిమ్స్ మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.',
            aka='Also known as AP Group 1 or APPSC Group-I Services. Old question papers and PYQs of the Prelims, with the final key.',
            desc=lambda t: (f"APPSC Group 1 (AP Group 1) Prelims previous year question papers and old papers with answers from APPSC's final key: 2024, 2023 and 2019, "
                            f"Paper 1 General Studies and Paper 2 General Aptitude. {t:,} questions in English and Telugu with explanations; "
-                           f"practice quizzes and timed mock tests, 3 days free."),
+                           f"practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow='APPSC Group-I · Prelims · 2019–2024',
            papers_note="Every paper uses APPSC's official final key. The 2024 key shows all four options. The 2023 and 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
       dict(id='upsc-capf', dir='upsc-capf', src='upsc-capf', key='upsc-capf', name='UPSC CAPF (AC)', short='CAPF (AC)', seo='UPSC CAPF AC',
@@ -482,10 +482,10 @@ def exam_confs():
            title='UPSC CAPF AC Previous Year Question Papers with Answers (2024–2026), English & Hindi | Learn with Anil',
            h1='UPSC CAPF AC previous year question papers <em>with answers.</em>',
            aka='Also known as the CAPF Assistant Commandant (AC) exam. PYQs of Paper 1 (General Ability and Intelligence), subject-wise, with the answer key.',
-           l2line='यूपीएससी सीएपीएफ असिस्टेंट कमांडेंट के पिछले वर्षों के प्रश्न पत्र, उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; पंजीकरण करने पर 3 दिन निःशुल्क।',
+           l2line='यूपीएससी सीएपीएफ असिस्टेंट कमांडेंट के पिछले वर्षों के प्रश्न पत्र, उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 PYQ पास।',
            desc=lambda t: (f"UPSC CAPF AC (Assistant Commandant) previous year question papers: Paper 1 General Ability and Intelligence "
                            f"2026, 2025 and 2024 with answer keys and explanations. {t:,} questions in English and Hindi; "
-                           f"subject-wise practice and timed mock tests, 3 days free."),
+                           f"subject-wise practice and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
            papers_note="2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. 2024: UPSC's official answer key (Series A). Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
       dict(id='upsc-epfo', dir='upsc-epfo', src='upsc-epfo', key='upsc-epfo', name='UPSC EPFO (APFC, EO/AO)', short='EPFO', seo=('UPSC EPFO' if E['eo'] else 'UPSC EPFO APFC'),
@@ -500,12 +500,12 @@ def exam_confs():
                 'Also known as the EPFO Assistant Provident Fund Commissioner (APFC) recruitment test. ')
                + 'PYQs with UPSC\'s official answer key, subject-wise: labour laws, social security, accounting, polity, economy, history, science, aptitude and English.',
            aka_short=('UPSC EPFO APFC and EO/AO (Enforcement Officer / Accounts Officer)' if E['eo'] else 'UPSC EPFO Assistant Provident Fund Commissioner (APFC)'),
-           l2line=('यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) और प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) भर्ती परीक्षाओं के पिछले वर्षों के प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; पंजीकरण करने पर 3 दिन निःशुल्क।' if E['eo'] else
-                   'यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) भर्ती परीक्षा का पिछले वर्ष का प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; पंजीकरण करने पर 3 दिन निःशुल्क।'),
+           l2line=('यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) और प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) भर्ती परीक्षाओं के पिछले वर्षों के प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 PYQ पास।' if E['eo'] else
+                   'यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) भर्ती परीक्षा का पिछले वर्ष का प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 PYQ पास।'),
            desc=lambda t: ((f"UPSC EPFO previous year question papers with UPSC's official answer keys and explanations: the APFC 2023 recruitment test and the EO/AO (Enforcement Officer / Accounts Officer) {E['eoy'].replace(' & ', ' and ')} test{'s' if E['eo21'] else ''}. " if E['eo'] else
                             f"UPSC EPFO APFC (Assistant Provident Fund Commissioner) previous year question paper: the 2023 recruitment test with UPSC's official answer key and explanations. ")
                            + f"{t:,} questions in English and Hindi on labour laws, social security, accounting, polity, economy, history, science, aptitude and English; "
-                           f"subject-wise practice and timed mock tests, 3 days free."),
+                           f"subject-wise practice and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow=(f"UPSC · EPFO APFC &amp; EO/AO · Recruitment Tests {E['years']}" if E['eo'] else 'UPSC · EPFO Assistant Provident Fund Commissioner · Recruitment Test 2023'),
            papers_note=("Answers come from UPSC's official answer keys (Series A) on upsc.gov.in. UPSC dropped no question in the two 2023 papers"
                         + (" and one (Q71) in the 2021 EO/AO paper, which is left out" if E['eo21'] else "")
@@ -518,13 +518,13 @@ def exam_confs():
            title=('TS Police SI Previous Question Papers with Answers – Telangana SI Prelims 2022 & Mains 2023 (TSLPRB), English & Telugu | Learn with Anil' if si_m else
                   'TS Police SI Previous Question Papers with Answers – Telangana SI (TSLPRB) Prelims 2022, English & Telugu | Learn with Anil'),
            h1='TS Police SI previous year question papers <em>with answers.</em>',
-           l2line=('తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.' if si_m else
-                   'తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.'),
+           l2line=('తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.' if si_m else
+                   'తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.'),
            aka='Also known as the Telangana (TG) Police SI exam: SCT SI (Civil) and equivalent posts, conducted by TSLPRB, now TGPRB.',
            aka_short='Telangana Police SI (TSLPRB / TGPRB)',
            desc=lambda t: ((f"TS Police SI (Telangana SI, TSLPRB / TGPRB) previous question papers: Prelims 2022 and Mains 2023 (Final Written Examination {T['si_fwe']}) with answers from TSLPRB's final keys. " if si_m else
                             f"TS Police SI (Telangana SI, TSLPRB / TGPRB) previous question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. ")
-                           + f"{t:,} questions on arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests, 3 days free."),
+                           + f"{t:,} questions on arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow=('TSLPRB / TGPRB · SI (Civil) &amp; equivalent · Prelims 2022 &amp; Final Written Exam 2023' if si_m else
                     'TSLPRB / TGPRB · SI (Civil) &amp; equivalent · Preliminary Written Test'),
            papers_note=("Answers come from TSLPRB's final keys: booklet A for the 2022 Preliminary Written Test (key released on 21 October 2022) and booklet D for the 2023 Final Written Examination. "
@@ -537,13 +537,13 @@ def exam_confs():
            title=('TS Police Constable Previous Question Papers with Answers – Telangana Constable Prelims 2022 & Mains 2023 (TSLPRB), English & Telugu | Learn with Anil' if pc_m else
                   'TS Police Constable Previous Question Papers with Answers – Telangana Constable (TSLPRB) Prelims 2022, English & Telugu | Learn with Anil'),
            h1='TS Police Constable previous year question papers <em>with answers.</em>',
-           l2line=('తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.' if pc_m else
-                   'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.'),
+           l2line=('తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.' if pc_m else
+                   'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.'),
            aka='Also known as the Telangana (TG) Police Constable or TS PC exam: SCT PC (Civil) and equivalent posts, conducted by TSLPRB, now TGPRB.',
            aka_short='Telangana Police Constable (TSLPRB / TGPRB)',
            desc=lambda t: (("TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question papers: Prelims 2022 and Mains 2023 (Final Written Examination, 30 April 2023) with answers from TSLPRB's final keys. " if pc_m else
                             "TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. ")
-                           + f"{t:,} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests, 3 days free."),
+                           + f"{t:,} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow=('TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Prelims 2022 &amp; Final Written Exam 2023' if pc_m else
                     'TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Preliminary Written Test'),
            papers_note=("Answers come from TSLPRB's final keys for booklet A of the 2022 Preliminary Written Test (key released on 21 October 2022) and of the 2023 Final Written Examination. "
@@ -555,11 +555,11 @@ def exam_confs():
            te_name='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్)', te_paper='రాత పరీక్ష', subj_te=HM_SUBJ_TE,
            title='TGPSC HMWSSB Manager (Engineering) Previous Question Papers with Answers – GS & Civil Engineering, English & Telugu | Learn with Anil',
            h1='TGPSC HMWSSB Manager (Engineering) previous question papers <em>with answers.</em>',
-           l2line='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), సివిల్ ఇంజనీరింగ్; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.',
+           l2line='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), సివిల్ ఇంజనీరింగ్; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.',
            aka='Manager (Engineering) in the Hyderabad Metropolitan Water Supply and Sewerage Board (HMWSSB, Jalamandali), recruited by TGPSC, formerly TSPSC.',
            aka_short='TGPSC (TSPSC) Manager (Engineering), Hyderabad Metro Water Board',
            desc=lambda t: (f"TGPSC (TSPSC) HMWSSB Manager (Engineering) previous question papers: the 2015 Paper 1 General Studies (English and Telugu) "
-                           f"and Paper 2 Civil Engineering with answers from TSPSC's final key. {t:,} questions with explanations; practice quizzes and timed mock tests, 3 days free."),
+                           f"and Paper 2 Civil Engineering with answers from TSPSC's final key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow='TGPSC (TSPSC) · Manager (Engineering), HMWSSB · Notification 13/2015',
            papers_note="Answers come from TSPSC's final key for booklet Series A (Notification 13/2015, written test held on 1 November 2015). Questions for which TSPSC gave the mark to every candidate are left out. Paper 1 is in English and Telugu as printed (its English-language questions in English only); Paper 2 (Civil Engineering) is in English only."),
     ]
@@ -665,9 +665,9 @@ def main():
                      .replace('{{AKA}}', esc(conf.get('aka', '')))
                      .replace('{{TILES}}', tiles))
         root_title = 'PYQs with Answers – APPSC Group 1 & Group 2, TS Police SI & Constable, UPSC CAPF Previous Papers | Learn with Anil'
-        root_desc = (f'Free previous year question papers (PYQs) with answers: APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
+        root_desc = (f'Previous year question papers (PYQs) with answers: APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
                      f'(Telangana police, TSLPRB / TGPRB) and UPSC CAPF AC. {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
-                     f'3 days free when you register, then one ₹45 PYQ Pass for every exam; TGPSC, UPSC, SSC, banking and railway exams are being added.')
+                     f'One ₹45 PYQ Pass for every exam; TGPSC, UPSC, SSC, banking and railway exams are being added.')
         home_title = conf['title']
         ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
         home_desc = conf['desc'](total)
@@ -681,7 +681,7 @@ def main():
           'papers': ((f'{seo_name} Previous Year Question Papers with Answers – All {len(papers)} Papers | Learn with Anil' if len(papers) > 1 else
                       f'{seo_name} Previous Question Paper with Answers – {paper_kw(conf, papers[0]).replace(seo_name + " ", "")}, English & {conf["l2"]["name"]} | Learn with Anil'),
                      (f'All {len(papers)} {seo_name} previous year question papers' if len(papers) > 1 else f'{seo_name} previous question paper') + f' ({", ".join(paper_kw(conf, p).replace(seo_name + " ", "") for p in sorted(papers, key=lambda p: (-p["year"], p["id"])))}): '
-                     f'practise {"each paper" if len(papers) > 1 else "it"} online as a quiz or a timed mock test, with answers and explanations: 3 days free when you register.', pb + 'papers/', True),
+                     f'practise {"each paper" if len(papers) > 1 else "it"} online as a quiz or a timed mock test, with answers and explanations, with the ₹45 PYQ Pass.', pb + 'papers/', True),
           'practice': (f'{seo_name} Mock Test & Topic-wise Quiz from Previous Papers | Learn with Anil',
                        f'{seo_name} mock test and topic-wise quiz made from {total:,} real previous year questions{" (practice bits)" if conf["board"] == "APPSC" or conf.get("bits") else ""}: '
                        f'choose papers, subjects and topics, then practise with answers or take a timed test.', pb + 'practice/', True),
@@ -690,7 +690,7 @@ def main():
           'notes': ('Study Material 2026-27 – Crisp Notes by Jupudi Anil Kumar | Learn with Anil',
                     'Exam-focused study material by Jupudi Anil Kumar: Crisp Notes on AP Economy and Science & Technology for APPSC Mains, with the latest 2026 data.', '/appsc-group-2/notes/', True),
           'about': ('About Jupudi Anil Kumar – Learn with Anil',
-                    'Jupudi Anil Kumar is a civil-services educator with 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants. He built Learn with Anil to make previous-year questions free for everyone.', '/appsc-group-2/about/', True),
+                    'Jupudi Anil Kumar is a civil-services educator with 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants. He built Learn with Anil to make previous-year questions easy and affordable to practise for every aspirant.', '/appsc-group-2/about/', True),
           'mistakes': (f'Mistakes Notebook – {seo_name} | Learn with Anil', 'Your mistakes notebook on Learn with Anil.', pb + 'mistakes/', False),
           'smart': (f'Smart Quiz – {seo_name} | Learn with Anil', 'Re-attempt the questions you got wrong.', pb + 'smart/', False),
           'bookmarks': (f'Bookmarks – {seo_name} | Learn with Anil', 'Your saved questions on Learn with Anil.', pb + 'bookmarks/', False),
@@ -1005,9 +1005,9 @@ def home_paper_card(p):
 def FAQ(total, npapers):
     return [
       ('Where can I get APPSC Group 2 previous year question papers with answers?',
-       f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024, Mains 2025 Paper I and Paper II, and the 2019 Screening and Mains papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+       f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024, Mains 2025 Paper I and Paper II, and the 2019 Screening and Mains papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
-       'There are three plans. Free trial: register once and every previous paper of every exam, with all study tools, opens for 3 days. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
+       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
       ('Are the APPSC Group 2 previous papers available in Telugu?',
        'Yes. Almost every question has APPSC\'s own Telugu text, as printed in the question booklet. Tap తెలుగు at the top of the page to practise in Telugu.'),
       ('Is there a APPSC Group 2 mock test?',
@@ -1019,16 +1019,16 @@ def FAQ(total, npapers):
       ('Why do the 2019 questions not show four options?',
        'APPSC\'s 2019 final keys print each question with only the correct answer. Those questions appear here as quick-recall cards: you think of the answer, reveal it and mark whether you knew it. The 2024 and 2025 papers show all four options.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
 
 
 def FAQ_G1(total, npapers):
     return [
       ('Where can I get APPSC Group 1 previous year question papers with answers?',
-       f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam, and the 2023 and 2019 Prelims papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+       f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam, and the 2023 and 2019 Prelims papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
-       'There are three plans. Free trial: register once and every previous paper of every exam, with all study tools, opens for 3 days. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
+       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
       ('Where is the APPSC Group 1 Prelims 2024 answer key?',
        'Each question on this site shows the answer from APPSC\'s final key, for Paper 1 (General Studies) and Paper 2 (General Aptitude) of the 2024 Prelims, and for the 2023 and 2019 Prelims. Open a paper to see every question with its answer.'),
       ('Is there a APPSC Group 1 mock test?',
@@ -1040,16 +1040,16 @@ def FAQ_G1(total, npapers):
       ('Why do the 2023 and 2019 questions not show four options?',
        'APPSC\'s 2023 and 2019 final keys print each question with only the correct answer. Those questions appear here as quick-recall cards: you think of the answer, reveal it and mark whether you knew it. The 2024 papers show all four options.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
 
 
 def FAQ_CAPF(total, npapers):
     return [
       ('Where can I get UPSC CAPF AC previous year question papers with answers?',
-       f'This page has {total} questions from {npapers} UPSC CAPF (Assistant Commandants) Paper I papers, General Ability and Intelligence (2024, 2025 and 2026), in English and Hindi as printed in the official question booklets. Every question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+       f'This page has {total} questions from {npapers} UPSC CAPF (Assistant Commandants) Paper I papers, General Ability and Intelligence (2024, 2025 and 2026), in English and Hindi as printed in the official question booklets. Every question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
-       'There are three plans. Free trial: register once and every previous paper of every exam, with all study tools, opens for 3 days. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
+       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
       ('Where is the CAPF AC 2026 answer key?',
        'Every 2026 question on this site shows the answer from UPSC\'s provisional answer key (Series A booklet), published three days after the exam on 19 July 2026. UPSC\'s final key can differ for a few questions.'),
       ('Is there a CAPF AC mock test?',
@@ -1061,7 +1061,7 @@ def FAQ_CAPF(total, npapers):
       ('Is the CAPF AC previous year question paper available in Hindi?',
        'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, exactly as printed in UPSC\'s booklet. Tap EN to switch back.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
 
 
@@ -1073,7 +1073,7 @@ def FAQ_EPFO(total, npapers):
        (f'This page has {total} questions from {npapers} UPSC recruitment tests for EPFO: Assistant Provident Fund Commissioner (APFC), held on 2 July 2023, and Enforcement Officer / Accounts Officer (EO/AO), held on {E["eodates"]}. ' if eo else
         f'This page has {total} questions from the UPSC recruitment test for Assistant Provident Fund Commissioner (APFC) in EPFO, held on 2 July 2023. ')
        + 'Every question is in English and Hindi as printed in the official booklet (Series A), apart from the General English part. Every answer is taken from UPSC\'s official answer key and every question has a short explanation. '
-       'You can practise each paper question by question, subject-wise or as a timed test: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+       'You can practise each paper question by question, subject-wise or as a timed test with one ₹45 PYQ Pass for every exam.'),
       ('Are the answers official?',
        ('Yes. They come from UPSC\'s official answer keys for Series A, published on upsc.gov.in after each recruitment was completed. UPSC dropped no question in the 2023 papers'
         + ('; in the 2021 EO/AO paper it dropped Q71, which is left out. ' if E['eo21'] else '. ') if eo else
@@ -1097,7 +1097,7 @@ def FAQ_EPFO(total, npapers):
        ('Yes. Open the mock test page and take a real APFC or EO/AO paper with a timer, ' if eo else 'Yes. Open the mock test page and take the real 2023 paper with a timer, ')
        + 'or tap Create a quiz to choose subjects such as Labour Laws, Social Security or Accounting. You get your score, the official answer and an explanation for every question.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
 
@@ -1106,7 +1106,7 @@ def FAQ_HM(total, npapers):
       ('Where can I get TGPSC HMWSSB Manager (Engineering) previous question papers with answers?',
        f'This page has {total} questions from the TSPSC Manager (Engineering) written test for HMWSSB, Notification 13/2015, held on 1 November 2015: '
        'Paper 1 General Studies in English and Telugu, and Paper 2 Civil Engineering. Every answer is taken from TSPSC\'s final key (Series A), and each question has a short explanation. '
-       'You can practise each paper as a quiz or a timed mock test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+       'You can practise each paper as a quiz or a timed mock test, with answers and explanations with one ₹45 PYQ Pass for every exam.'),
       ('What is the TGPSC HMWSSB Manager (Engineering) 2026 exam pattern?',
        'Two objective papers: Paper 1 General Studies and General Abilities (150 questions, 150 marks, in English and Telugu) and Paper 2 in the candidate\'s engineering '
        'subject (150 questions, 300 marks, in English), 450 marks in all. Notification 04/2026 has 130 posts, mostly Civil, and the exam is tentatively in December 2026; confirm dates on tgpsc.gov.in.'),
@@ -1115,7 +1115,7 @@ def FAQ_HM(total, npapers):
       ('Is there a HMWSSB Manager mock test?',
        'Yes. Open the mock test page and take a real 2015 paper with a timer, or tap Create a quiz to choose subjects such as Environmental Engineering, Fluid Mechanics or Telangana History. You get your score, the official answer and an explanation for every question.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password.'),
       ('Which questions are left out?',
        'In Paper 2 (Civil Engineering), TSPSC\'s final key gave the mark to every candidate for five questions (Q3, 37, 64, 95 and 128 in Series A); they are left out. The Mechanical, Electrical, ECE and CSE papers are not on the site yet.'),
     ]
@@ -1130,10 +1130,10 @@ def FAQ_TS(post, mains=()):
                    + ' 2023, booklet D') if si else '30 April 2023, booklet A'
             where = (f'This page has {total:,} questions from {npapers} TSLPRB papers: the {"SI" if si else "Police Constable"} Preliminary Written Test of {"7 August" if si else "28 August"} 2022 (booklet A) '
                      f'and the Final Written Examination ({fwe}), in English and Telugu as printed. '
-                     f'Every answer is taken from TSLPRB\'s final key for that paper, and each question has a short explanation. You can practise each paper as a quiz or a mock test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.')
+                     f'Every answer is taken from TSLPRB\'s final key for that paper, and each question has a short explanation. You can practise each paper as a quiz or a mock test, with answers and explanations with one ₹45 PYQ Pass for every exam.')
         else:
             where = (f'This page has {total} questions from the {"SI" if si else "Police Constable"} Preliminary Written Test held by TSLPRB on {"7 August" if si else "28 August"} 2022 (booklet A), in English and Telugu as printed. '
-                     f'Every answer is taken from TSLPRB\'s final key, released on 21 October 2022, and each question has a short explanation. You can practise the paper as a quiz, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.')
+                     f'Every answer is taken from TSLPRB\'s final key, released on 21 October 2022, and each question has a short explanation. You can practise the paper as a quiz, with answers and explanations with one ₹45 PYQ Pass for every exam.')
         return [
           (f'Where can I get {name} previous year question papers with answers?', where),
           (f'What is the {name} Preliminary Written Test pattern?',
@@ -1150,7 +1150,7 @@ def FAQ_TS(post, mains=()):
           (f'Is there a {name} mock test?',
            f'Yes. Tap Create a quiz, choose subjects or topics, and pick Timed test: you get a mock test made of real TSLPRB questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.'),
           ('Do I need to register?',
-           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password.'),
+           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password.'),
           ('Which questions are left out?',
            'Questions that TSLPRB deleted in the final key, and questions for which the final key accepted three or four options, are left out. Where the key accepted two options, both are shown as correct, and where it also gave the mark for leaving a question blank, the explanation says so.'),
         ]
@@ -1253,7 +1253,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 
 def lock_html(unlock):
     return (f'<p class="lock">Answer and explanation: <a href="{unlock}">open it in the practice app</a>. '
-            f'{TRIAL_DAYS} days free when you register, then one ₹{PAY["pyq_price"]} PYQ Pass for every exam on the site.</p>')
+            f'It needs the ₹{PAY["pyq_price"]} PYQ Pass: one payment for every exam on the site.</p>')
 
 
 def sample_ids(questions):
@@ -1330,13 +1330,13 @@ LANDINGS = {
       board='APPSC', ename='APPSC', crumb='APPSC PYQs',
       title='APPSC Previous Year Question Papers with Answers – Group 1 & Group 2 PYQs | Learn with Anil',
       desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024 and Group 2 Prelims & Mains 2019–2025, '
-           '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations: 3 days free, then one ₹45 PYQ Pass for every exam.',
+           '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations with one ₹45 PYQ Pass for every exam.',
       h1='APPSC previous year question papers with answers',
       lede="Every APPSC Group 1 and Group 2 previous question paper on Learn with Anil, {n} questions in all. "
            "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu.",
       intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC old question papers with the key, or an APPSC mock test? '
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
-            '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.</p>'
+            '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.</p>'
             '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (686 posts, apply 10–30 November) and '
             '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts). Timed mock tests: '
             '<a href="/appsc-group-2/mock-test.html">Group 2</a> · <a href="/appsc-group-1/mock-test.html">Group 1</a>.</p>',
@@ -1346,13 +1346,13 @@ LANDINGS = {
       board='TSLPRB', ename='TS Police', crumb='TS Police PYQs',
       title='TS Police Previous Question Papers with Answers – SI & Constable PYQs (TSLPRB / TGPRB), English & Telugu | Learn with Anil',
       desc='Telangana Police SI and Constable previous question papers in one place: the TSLPRB Preliminary Written Test 2022 and Final Written Examination 2023 papers, '
-           '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations: 3 days free, then one ₹45 PYQ Pass for every exam.',
+           '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations with one ₹45 PYQ Pass for every exam.',
       h1='TS Police SI & Constable previous question papers with answers',
       lede="Every Telangana Police SI and Constable question paper on Learn with Anil, {n} questions in all. "
            "Answers come from TSLPRB's final key, and every question has a short explanation, in English and Telugu.",
       intro='<p>Looking for TS Police SI previous papers, the TS SI or Constable mains 2023 question paper, the TS Constable question paper 2022, TSLPRB / TGPRB previous question papers with answers, '
             'or a Telangana police mock test? They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
-            '<p lang="te">తెలంగాణ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) TSLPRB ఫైనల్ కీ సమాధానాలు, తెలుగులో వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.</p>'
+            '<p lang="te">తెలంగాణ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) TSLPRB ఫైనల్ కీ సమాధానాలు, తెలుగులో వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.</p>'
             '<p class="note">2026 prelims are tentatively on 29 November (SI) and 20 December (Constable). Full mock tests with a timer: '
             '<a href="/ts-police-si/mock-test.html">TS Police SI mock test</a> · <a href="/ts-police-constable/mock-test.html">TS Police Constable mock test</a>.</p>',
       te={'TS Police SI': 'తెలంగాణ పోలీస్ ఎస్ఐ ప్రశ్నాపత్రాలు', 'TS Constable': 'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రశ్నాపత్రాలు'},
@@ -1494,7 +1494,7 @@ def notif_page(loaded, rel):
     conf, papers, questions = next(x for x in loaded if x[0]['id'] == N['exam'])
     can = f'{SITE_URL}/{rel}'
     body = [f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>',
-            f'<a class="cta" href="{conf["pb"]}mock-test.html">Free {esc(conf["seo"])} mock test</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>']
+            f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>']
     for head, kind, data in N['sections']:
         if head: body.append(f'<h2>{esc(head)}</h2>')
         if kind == 'table': body.append(facts_table(data))
@@ -1512,14 +1512,14 @@ def notif_page(loaded, rel):
 
 # ---------- paid passes: Instamojo checkout through the Learn with Anil payments script (Google Apps Script) ----------
 PAY = dict(
-    on=True,    # Anil, 23 Oct 2026: attempting any PYQ needs the PYQ Pass or the 3-day free trial (False = everything free, never again)
+    on=True,    # Anil, 23 Oct 2026: attempting any PYQ needs the paid PYQ Pass (no free trial) (False = everything free, never again)
     api='https://script.google.com/macros/s/AKfycbxgNi2CfnbaEsVpA1Ghgy0AdYdUG7eYBkol5zqcbMgA2Q4D0Pvy0rndLxeyE7MlPy_3Rg/exec',   # the payments script (Apps Script web app, deployed 23 Oct 2026)
     pyq_price=45,
     exams='',   # names of every live exam, for the pay dialog ("one payment for the whole website"); set in main()
 )
 PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
-TRIAL_DAYS = 3
-SAMPLE_N = 10        # public paper / question pages show the answers of the first SAMPLE_N questions of each paper; the rest need the pass or trial
+TRIAL_DAYS = 0   # Anil, 23 Oct 2026: no free trial; every PYQ needs the paid PYQ Pass (was 3)
+SAMPLE_N = 10        # public paper / question pages show the answers of the first SAMPLE_N questions of each paper; the rest need the PYQ Pass
 PUBLIC_PDFS = False  # Anil, 23 Oct 2026: no free PDF downloads (tools/pdfs.py makes nothing while this is False)
 if os.environ.get('PAY_TEST'):   # test builds only (test/pay_test.py): payments on, against a fake script address
     PAY.update(on=True, api='https://pay.test/exec')
@@ -1601,7 +1601,7 @@ def tiles_html(conf, papers, questions, extra_links):
     nsub = len({q['s'] for q in questions})
     t1 = (f'<a class="etile" href="{pb}pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b>'
           f'<span class="etile-p">{n:,} questions from {len(papers)} official paper{"s" if len(papers) > 1 else ""}, with answers and explanations, as quizzes and timed tests. '
-          f'3 days free when you register.</span><span class="etile-price">₹{PAY["pyq_price"]} · all exams · 12 months</span></a>')
+          f'One pass for every exam.</span><span class="etile-price">₹{PAY["pyq_price"]} · all exams · 12 months</span></a>')
     if mk:
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
               f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>'
@@ -1630,7 +1630,7 @@ def buy_box(conf, kind):
         price, name = PAY['pyq_price'], 'PYQ Pass · all exams'
         what = (f'<b>One payment of ₹{PAY["pyq_price"]} for the whole website:</b> the previous papers of every exam on Learn with Anil '
                 f'({esc(PAY["exams"])}) and every exam added later, not just {esc(conf["seo"])}. Every answer and explanation, practice quizzes and timed tests, '
-                f'PYQ sectionals, topic-wise quizzes, Smart Quiz and your Mistakes notebook. New here? Register once and get {TRIAL_DAYS} days free.')
+                f'PYQ sectionals, topic-wise quizzes, Smart Quiz and your Mistakes notebook.')
         valid = PYQ_VALID
     else:
         mk = MOCK_PACKS[conf['id']]
@@ -1645,8 +1645,7 @@ def buy_box(conf, kind):
 def plans_html(conf):
     """Every plan in one table, so there is no doubt about what is free and what is paid."""
     mk = MOCK_PACKS.get(conf['id'])
-    rows = [('Free trial', '₹0, once per phone number', f'Every previous paper of every exam on the site, with answers and explanations, practice quizzes, timed tests and all study tools', f'{TRIAL_DAYS} days from registration'),
-            ('PYQ Pass', f'₹{PAY["pyq_price"]}', f'Every previous paper of every exam on the site ({esc(PAY["exams"])}) and every exam added later: answers and explanations, practice quizzes, timed tests, PYQ sectionals and all study tools', '12 months from payment')]
+    rows = [('PYQ Pass', f'₹{PAY["pyq_price"]}', f'Every previous paper of every exam on the site ({esc(PAY["exams"])}) and every exam added later: answers and explanations, practice quizzes, timed tests, PYQ sectionals and all study tools', '12 months from payment')]
     if mk:
         rows.append((esc(mk['name']), f'₹{mk["price"]}', f'{mk["n"]} full-length {esc(conf["seo"])} mock tests and their sectional tests, with explanations, and the study tools for your mock results. Previous papers are not included (that is the PYQ Pass).',
                      esc(pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:])))
@@ -1656,7 +1655,7 @@ def plans_html(conf):
             'Plans are linked to the phone number and email you register with, on up to 3 devices; pay with the same details.</p>')
 
 
-TOOLS_NOTE = 'Included with every plan: the free trial, the PYQ Pass and mock-test packs such as Mission Khaki.'
+TOOLS_NOTE = 'Included with every plan: the PYQ Pass and mock-test packs such as Mission Khaki.'
 
 
 FEATURES = {   # how the practice tools work (shown on the PYQs and mock-test pages; the app pages are /<exam>/<view>/)
@@ -1681,16 +1680,16 @@ def subjects_html(conf, questions):
 
 
 def pyq_page(conf, papers, questions):
-    """Tile 1: PYQs — a free sample on the public pages; everything with the free trial or the PYQ Pass (all exams)."""
+    """Tile 1: PYQs — a sample of answers on the public pages; everything with the PYQ Pass (all exams)."""
     pb, seo, l2 = conf['pb'], conf['seo'], conf['l2']
     rel = pb.strip('/') + '/pyqs.html'
     can = SITE_URL + '/' + rel
     base = '/' + (conf['dir'] + '/' if conf['dir'] else '')
     extra = pass_only_papers(papers)
     ps = sorted(public_only(papers, questions)[0], key=lambda p: (-p['year'], p['id']))
-    title = f'{seo} PYQs with Answers – Previous Papers as Quizzes & Timed Tests, 3 Days Free | Learn with Anil'
+    title = f'{seo} PYQs with Answers – Previous Papers as Quizzes & Timed Tests | Learn with Anil'
     desc = (f'{seo} previous year questions (PYQs): {len(questions):,} questions from {len(papers)} official papers with answers and explanations in English and {l2["name"]}, '
-            f'as practice quizzes and timed tests. 3 days free when you register, then one ₹{PAY["pyq_price"]} PYQ Pass for every exam on the site.')
+            f'as practice quizzes and timed tests, with one ₹{PAY["pyq_price"]} PYQ Pass for every exam on the site.')
     def row(p):
         recall = p['fmt'] != 'mcq'
         return (f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions{" · official key gives the answer only: quick-recall cards" if recall else ""}</div>'
@@ -1702,21 +1701,20 @@ def pyq_page(conf, papers, questions):
     course = (f'<section class="course"><div class="chead"><div><p class="ck">₹{PAY["pyq_price"]} course · PYQ Pass · all exams</p>'
               f'<h2>Every previous paper, one pass</h2>'
               f'<p>One payment of ₹{PAY["pyq_price"]} for the whole website, valid for 12 months. Every answer and explanation in English and {esc(l2["name"])}, '
-              f'practice question by question, timed tests, PYQ sectionals, subject and topic quizzes, and all study tools. '
-              f'New here? Register once and get {TRIAL_DAYS} days free.</p></div>'
+              f'practice question by question, timed tests, PYQ sectionals, subject and topic quizzes, and all study tools.</p></div>'
               f'<a class="cta" href="{pb}?buy=pyq">Get it for ₹{PAY["pyq_price"]}</a></div>'
               f'<h3>{esc(seo)} papers in this course ({len(allp)} papers, {len(questions):,} questions)</h3><ol class="clist">' + ''.join(row(p) for p in allp) + '</ol>'
               + (f'<h3>Also in the same ₹{PAY["pyq_price"]} pass</h3><p>Every paper of these exams, and of every exam added to the site later:</p>'
                  '<nav class="toc">' + ''.join(f'<a href="{h}pyqs.html">{esc(x)}</a>' for x, h in others) + '</nav>' if others else '')
               + '</section>')
     body = (course
-            + '<h2>Practise by subject and topic</h2><p>With the PYQ Pass or the free trial: pick a subject to build a quiz from every paper, or build your own topic-wise quiz.</p>'
+            + '<h2>Practise by subject and topic</h2><p>With the PYQ Pass: pick a subject to build a quiz from every paper, or build your own topic-wise quiz.</p>'
             + subjects_html(conf, questions) + features_html(pb, ('practice',))
             + f'<h2>Study tools</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
             + '<h2>Plans</h2>' + plans_html(conf)
             + f'<p><a class="cta alt" href="{pb}mock-test.html">Mock tests</a><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a></p>')
     lede = esc(f'Every {seo} previous paper on Learn with Anil, with official answers and explanations, as practice quizzes and timed tests. '
-               f'{TRIAL_DAYS} days free when you register; then one ₹{PAY["pyq_price"]} PYQ Pass opens every exam on the site for 12 months.')
+               f'One ₹{PAY["pyq_price"]} PYQ Pass opens every exam on the site for 12 months.')
     return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} PYQs with answers', lede, body,
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('PYQs', can)], conf)
 
@@ -1744,7 +1742,7 @@ def sectional_page(conf, papers, questions):
                  + ', '.join(esc(x) for x in mk['sections']) + ' — open as separate timed tests as the mocks are released '
                  f'({live_text(mk)}). They come with the {esc(mk["name"])} pack.</p>' + buy_box(conf, 'mock')
                  if mk else '<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack. Its price will be announced soon.</p>')
-    body = ('<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. With the PYQ Pass or the free trial.</p>'
+    body = ('<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. With the PYQ Pass.</p>'
             '<ol class="qs">' + rows + '</ol>' + buy_box(conf, 'pyq') + mock_part + '<h2>Plans</h2>' + plans_html(conf))
     lede = esc(f'Practise {seo} one section at a time: timed tests from real previous questions in every subject'
                + (f', and sectional mocks from {mk["name"]}.' if mk else '.'))
@@ -1798,7 +1796,7 @@ def mock_page(conf, papers, questions):
             f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>'
             '<li>The timer gives you one minute per question. You can move between questions and change answers until you submit.</li>'
             '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question. Wrong answers go to your Mistakes notebook.</li>'
-            f'<li>Previous papers as tests need the PYQ Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months) or your {TRIAL_DAYS}-day free trial{"; " + esc(mk["name"]) + " is separate" if mk else ""}. Register once with your phone number and use the same number when you pay.</li></ul>'
+            f'<li>Previous papers as tests need the PYQ Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months){"; " + esc(mk["name"]) + " is separate" if mk else ""}. Register once with your phone number and use the same number when you pay.</li></ul>'
             + f'<h2>Study tools after every test</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
             + '<h2>Plans</h2>' + plans_html(conf)
             + f'<p><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a><a class="cta alt" href="{pb}pyqs.html">All {esc(seo)} PYQs</a></p>')
@@ -1846,7 +1844,7 @@ def build_static(conf, papers, subjects, questions, subj):
         kdesc = ("answers from APPSC's final key" if conf['board'] == 'APPSC' else 'compiled answers' if p.get('key', '').startswith('answers compiled')
                  else f'answers from {pkey}')
         desc = (f'{kw} question paper{f" ({alt})" if alt else ""}, held {p["held"]}: all {len(qs)} questions in {"English" if p.get("en_only") else "English and " + conf["l2"]["name"]} '
-                f'with {kdesc} and explanations. Practise it online as a quiz or a timed mock test: {TRIAL_DAYS} days free when you register.'
+                f'with {kdesc} and explanations. Practise it online as a quiz or a timed mock test with the ₹45 PYQ Pass.'
                 + (f' {conf["aka_short"]}.' if conf.get('aka_short') else ''))
         subs = {}
         for q in qs: subs.setdefault(q['s'], 0); subs[q['s']] += 1
@@ -1856,8 +1854,8 @@ def build_static(conf, papers, subjects, questions, subj):
                 f'<a class="cta" href="{conf["pb"]}?practice={p["id"]}">Practise this paper online</a>'
                 + (f'<a class="cta alt" href="{conf["pb"]}?test={p["id"]}">Take it as a timed test</a>' if p['fmt'] == 'mcq' else '') +
                 f'<a class="cta alt" href="{conf["pb"]}practice/">Make a topic-wise quiz</a>'
-                f'<p class="note">The answers and explanations of the first {min(SAMPLE_N, len(qs))} questions are free on this page. For all {len(qs)}, practise the paper in the app: '
-                f'{TRIAL_DAYS} days free when you register, then one ₹{PAY["pyq_price"]} PYQ Pass for every exam on the site.</p>'
+                f'<p class="note">The answers and explanations of the first {min(SAMPLE_N, len(qs))} questions are free on this page. For all {len(qs)}, practise the paper in the app '
+                f'with the ₹{PAY["pyq_price"]} PYQ Pass, one payment for every exam on the site.</p>'
                 f'<h2>Subjects in this paper</h2>{toc}<h2>All {len(qs)} questions</h2><ol class="qs">'
                 + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html', unl(q)) for q in qs) + '</ol>')
         held = f'{p["notif"]}, held on {p["held"]}' if conf['board'] == 'APPSC' else f'Held on {p["held"]} ({p["notif"].replace(" · ", ", ")})'
@@ -1875,7 +1873,7 @@ def build_static(conf, papers, subjects, questions, subj):
         bits = ' & Practice Bits' if conf['board'] == 'APPSC' or conf.get('bits') else ' (Subject-wise)'
         title = f'{seo} {s["name"]} Previous Year Questions (PYQs) with Answers{bits} | Learn with Anil'
         desc = (f'{len(qs)} {seo} {s["name"]} previous year questions from {", ".join(paper_kw(conf, pmap[pid]).replace(seo + " ", "") for pid in dict.fromkeys(q["p"] for q in qs))}, '
-                f'topic-wise, with answers, explanations and {conf["l2"]["name"]} text. Practise them as a quiz or a timed test: {TRIAL_DAYS} days free when you register.')
+                f'topic-wise, with answers, explanations and {conf["l2"]["name"]} text. Practise them as a quiz or a timed test with the ₹45 PYQ Pass.')
         l2l = subject_l2_line(conf, s)
         body = ([f'<p lang="{conf["l2"]["code"]}" style="margin:0 0 6px">{esc(l2l)}</p>'] if l2l else []) + [f'<a class="cta" href="{conf["pb"]}practice/">Practise {esc(s["name"])} online</a>']
         tops = {}

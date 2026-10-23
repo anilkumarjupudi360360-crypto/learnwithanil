@@ -49,9 +49,11 @@ async def main():
     errors = []
     async with async_playwright() as pw:
         b = await pw.chromium.launch()
-        # A. a new visitor registers: the 3-day free trial starts and the PYQ test opens
+        # A. no free trial (Anil, 23 Oct 2026): a new visitor registers and gets the checkout, not the test,
+        #    even if the server still answered with an old free-trial date, and even with one cached on the phone
         pg = await b.new_page()
         pg.on('pageerror', lambda e: errors.append(f'pageerror: {e}'))
+        await pg.add_init_script('try{localStorage.setItem("lwa-passes-v1", JSON.stringify({all:{pyq:"2099-01-03", trial:"2099-01-03", paid:false}}))}catch(e){}')
         await pg.route('https://pay.test/**', api)
         await pg.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
         state['trial'] = 'start'
@@ -60,9 +62,11 @@ async def main():
         else:
             for k, v in (('name', 'New Student'), ('phone', '9123456780'), ('email', 'n@example.com'), ('district', 'Warangal')): await pg.fill(f'#joinForm [name="{k}"]', v)
             await pg.check('#joinForm [name="ok"]'); await pg.click('#joinForm [type="submit"]'); await pg.wait_for_timeout(1500)
-            if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'PYQ test did not open in the free trial (calls {state["calls"]})')
+            if (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'PYQ test opened without payment (calls {state["calls"]})')
+            elif not await pg.locator('#payDlg[open]').count(): errors.append('no PYQ Pass checkout after registering')
+            elif 'days free' in (await pg.inner_text('body')) or 'free trial' in (await pg.inner_text('body')).lower(): errors.append('the page still mentions a free trial')
         await pg.close()
-        # B. a registered student whose trial is over
+        # B. a registered student without a pass
         state.update(trial='expired', calls=[])
         pg = await b.new_page()
         pg.on('pageerror', lambda e: errors.append(f'pageerror: {e}'))

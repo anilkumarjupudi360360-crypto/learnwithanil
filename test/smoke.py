@@ -217,7 +217,8 @@ async def main():
                 body = open(os.path.join(SITE, rel), encoding='utf-8').read()
                 if 'Payments open soon' in body or 'stays free' in body or 'Read with answers (free)' in body or 'download>PDF' in body:
                     errors.append(f'{rel}: says something is free or offers a free PDF')
-                if '<h2>Plans</h2>' not in body or 'Free trial' not in body or 'PYQ Pass' not in body: errors.append(f'{rel}: no plans table')
+                if '<h2>Plans</h2>' not in body or 'PYQ Pass' not in body: errors.append(f'{rel}: no plans table')
+                if 'Free trial' in body or 'days free' in body.lower(): errors.append(f'{rel}: still offers a free trial')
                 for h in _re.findall(r'href="(/[^"#:?]*)', open(os.path.join(SITE, rel), encoding='utf-8').read()):
                     f = os.path.join(SITE, h.lstrip('/'))
                     if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')
@@ -257,8 +258,14 @@ async def main():
                     for f in os.listdir(os.path.join(bbdir, d)):
                         raw = open(os.path.join(bbdir, d, f), 'rb').read()
                         if (bad and bad in raw) or (d == 'pdf' and b'/Encrypt' not in raw): errors.append(f'Bahubali {d}/{f} is not encrypted')
-        # payments on: without a pass nothing PYQ opens (registered student, trial over, no PYQ Pass)
-        np = await b.new_page(passes={'trial': '2020-01-01'}, viewport={'width': 1280, 'height': 900})
+        # no free trial anywhere on the site (Anil, 23 Oct 2026)
+        for dp, _, fs in os.walk(SITE):
+            for f in fs:
+                if f.endswith(('.html', '.js')):
+                    t = open(os.path.join(dp, f), encoding='utf-8', errors='ignore').read()
+                    if 'days free' in t or 'రోజులు ఉచితం' in t or 'दिन निःशुल्क' in t: errors.append(f'{os.path.relpath(os.path.join(dp, f), SITE)}: mentions a free trial')
+        # payments on: without a pass nothing PYQ opens (registered student, old free-trial date, no PYQ Pass)
+        np = await b.new_page(passes={'pyq': '2099-01-03', 'trial': '2099-01-03'}, viewport={'width': 1280, 'height': 900})
         await np.add_init_script(REGISTERED); await np.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
         np.on('pageerror', lambda e: errors.append(f'nopass pageerror: {e}'))
         for path in ('ts-police-si/?test=s2022', 'ts-police-si/?sec=ari', 'upsc-capf/q/c2026a-3/', 'appsc-group-2/?practice=s2024'):

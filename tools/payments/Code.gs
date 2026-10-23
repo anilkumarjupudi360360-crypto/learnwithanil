@@ -27,7 +27,7 @@
 
 const SITE = 'https://learnwithanil.in/';
 const PYQ = {price: 45, months: 12, purpose: 'PYQ Pass - All Exams (1 yr)'};   // Instamojo allows 30 characters
-const TRIAL_DAYS = 3;
+const TRIAL_DAYS = 0;   // free trial switched off (Anil, 23 Oct 2026: every PYQ needs the paid pass). Was 3.
 const MOCKS = {   // exam id: mock pack on sale (price, name shown at checkout, last day the pass is valid)
   'ts-police-si': {price: 150, name: 'Mission Khaki TS SI Mocks', until: '2026-11-30'},
 };
@@ -199,7 +199,7 @@ function passesFor(phone, exam, device, email, startTrial) {
     if (kind === 'pyq' && ex === 'all') { if (!res.pyq || res.pyq < u) res.pyq = u; res.paid = true; }
     else if (kind === 'mock' && ex === exam) { if (!res.mock || res.mock < u) res.mock = u; }
   }
-  const t = trialFor_(phone, email, startTrial);
+  const t = TRIAL_DAYS > 0 ? trialFor_(phone, email, startTrial) : '';
   if (t && t >= now) { res.trial = t; if (!res.pyq || res.pyq < t) res.pyq = t; }
   if ((res.pyq || res.mock) && device && !deviceOK_(phone, String(device))) return {ok: false, error: 'These passes are already in use on ' + MAX_DEVICES + ' devices.', passes: {}};
   return {ok: true, passes: res};
