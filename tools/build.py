@@ -1512,7 +1512,7 @@ def notif_page(loaded, rel):
 
 # ---------- paid passes: Instamojo checkout through the Learn with Anil payments script (Google Apps Script) ----------
 PAY = dict(
-    on=False,   # True once Instamojo payments work end to end: attempting tests then needs a pass. Until then everything stays free.
+    on=True,    # Anil, 23 Oct 2026: attempting any PYQ needs the PYQ Pass or the 3-day free trial (False = everything free, never again)
     api='https://script.google.com/macros/s/AKfycbxgNi2CfnbaEsVpA1Ghgy0AdYdUG7eYBkol5zqcbMgA2Q4D0Pvy0rndLxeyE7MlPy_3Rg/exec',   # the payments script (Apps Script web app, deployed 23 Oct 2026)
     pyq_price=45,
     exams='',   # names of every live exam, for the pay dialog ("one payment for the whole website"); set in main()

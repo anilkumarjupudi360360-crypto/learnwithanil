@@ -20,10 +20,24 @@ class Pages(SimpleHTTPRequestHandler):
 srv = ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(Pages, directory=SITE))
 threading.Thread(target=srv.serve_forever, daemon=True).start()
 URL = f'http://127.0.0.1:{srv.server_address[1]}/'
+PAY_API = 'https://script.google.com/macros/**'
+def fake_pay(passes):   # the payments script: a student with the given passes
+    import json
+    async def h(route):
+        try: act = json.loads(route.request.post_data or '{}').get('action')
+        except Exception: act = ''
+        r = {'ok': True, 'passes': passes} if act in ('passes', 'verify') else {'ok': False, 'error': 'test'}
+        await route.fulfill(status=200, content_type='application/json', body=json.dumps(r))
+    return h
+PAID = {'pyq': '2099-12-31', 'paid': True}
 REGISTERED = 'try{localStorage.setItem("lwa-appsc-g2-student-v1", JSON.stringify({name:"Test Student",phone:"9876543210",email:"t@example.com",district:"Guntur",pending:[]}))}catch(e){}'
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
+        _new = b.new_page
+        async def new_page(passes=PAID, **kw):   # every page talks to a fake payments script: by default a student with the PYQ Pass
+            pg = await _new(**kw); await pg.route(PAY_API, fake_pay(passes)); return pg
+        b.new_page = new_page
         errors = []
         for width, name in [(1280, 'desk'), (390, 'phone')]:
             pg = await b.new_page(viewport={'width': width, 'height': 900})
@@ -243,6 +257,19 @@ async def main():
                     for f in os.listdir(os.path.join(bbdir, d)):
                         raw = open(os.path.join(bbdir, d, f), 'rb').read()
                         if (bad and bad in raw) or (d == 'pdf' and b'/Encrypt' not in raw): errors.append(f'Bahubali {d}/{f} is not encrypted')
+        # payments on: without a pass nothing PYQ opens (registered student, trial over, no PYQ Pass)
+        np = await b.new_page(passes={'trial': '2020-01-01'}, viewport={'width': 1280, 'height': 900})
+        await np.add_init_script(REGISTERED); await np.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
+        np.on('pageerror', lambda e: errors.append(f'nopass pageerror: {e}'))
+        for path in ('ts-police-si/?test=s2022', 'ts-police-si/?sec=ari', 'upsc-capf/q/c2026a-3/', 'appsc-group-2/?practice=s2024'):
+            await np.goto(URL + path); await np.wait_for_timeout(900)
+            if (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: {path} opened a quiz without a pass')
+        await np.goto(URL + 'ts-police-si/?test=s2022'); await np.wait_for_timeout(900)
+        if not await np.evaluate('!!document.querySelector("#payDlg[open]")') or 'PYQ Pass' not in await np.inner_text('#payDlg'): errors.append('nopass: ?test= did not open the PYQ Pass checkout')
+        for v in ('bank', 'practice', 'mistakes'):
+            await np.goto(URL + f'appsc-group-2/{v}/'); await np.wait_for_timeout(600)
+            if 'Unlock' not in await np.inner_text('#view'): errors.append(f'nopass: {v} is open without a plan')
+        await np.close()
         r = await pg.goto(URL + 'no-such-page/'); await pg.wait_for_timeout(200)
         if r.status != 404 or 'does not exist' not in await pg.inner_text('body'): errors.append('404 page missing')
         await pg.close()

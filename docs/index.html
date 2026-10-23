@@ -691,7 +691,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/appsc-g2-32d9e2a598.js"></script>
+<script src="data/appsc-g2-257cbfdeb7.js"></script>
 <script>
 (function(){
 "use strict";
@@ -802,7 +802,7 @@ async function payCall(body){
 async function refreshPasses(){
   if(!PAYC || !PAYC.on || !PAYC.api || !ST.phone) return;
   try{ const r = await payCall({action:"passes", exam:PAYC.exam, phone:ST.phone, email:ST.email||"", device:DEVICE});
-       if(r && r.ok) setPasses(r.passes); else if(r && r.error) toast(r.error); }catch(_){}
+       if(r && r.ok){ UI.passChecked = true; setPasses(r.passes); if(GATE[current]) render(); } else if(r && r.error) toast(r.error); }catch(_){}
 }
 function payInfo(kind){
   const m = PAYC && PAYC.mock;
@@ -959,8 +959,10 @@ function route(){
   else if(v==="exam") v = UI.exam ? "exam" : "exams";
   const dq = v.match(/^q\/([\w-]+)$/);   // shareable link to one question: #q/m2025p2-117
   if(dq && QMAP[dq[1]]){
-    const q = QMAP[dq[1]], ids = QS.filter(x=>x.p===q.p).map(x=>x.id), k = ids.indexOf(q.id);
-    QZ = {title: PMAP[q.p].title, mode:"practice", source:"paper", ids: ids.slice(k).concat(ids.slice(0,k)), i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit:0};
+    const q = QMAP[dq[1]], ids = QS.filter(x=>x.p===q.p).map(x=>x.id), k = ids.indexOf(q.id), order = ids.slice(k).concat(ids.slice(0,k));
+    if(!ST.name || !passOK("pyq")){   // no pass: the paper list, then registration or the PYQ Pass checkout
+      history.replaceState(null, "", PATHMODE ? pathOf("papers") : "#papers"); setTimeout(()=>startQuiz(order, PMAP[q.p].title, "practice", "paper"), 0); return "papers"; }
+    QZ = {title: PMAP[q.p].title, mode:"practice", source:"paper", ids: order, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit:0};
     UI.confirmSubmit = false; history.replaceState(null, "", PATHMODE ? pathOf("quiz") : "#quiz"); v = "quiz";
   }
   if(!VIEWS.includes(v)) v = DATA.hub ? "exams" : "home";
@@ -1290,7 +1292,9 @@ function quizTitle(){
 function startQuiz(ids, title, mode, source){
   if(!ids.length) return;
   if(!ST.name){ UI.pending = {ids, title, mode, source}; go("join"); return; }   // one-time registration before the first quiz or test
-  if(source!=="mock" && !passOK("pyq")){ UI.payPending = {ids, title, mode, source}; openPay("pyq"); return; }   // PYQs need the PYQ Pass or the free trial
+  if(source!=="mock" && !passOK("pyq")){   // PYQs need the PYQ Pass or the free trial
+    if(ST.phone && PAYC && PAYC.on && !UI.passChecked){ UI.passChecked = true; refreshPasses().then(()=>startQuiz(ids, title, mode, source)); return; }   // paid on another device? ask the payments script once
+    UI.payPending = {ids, title, mode, source}; openPay("pyq"); return; }
   track("quiz_start", {mode, exam: DATA.examShort||"", questions: ids.length});
   QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: mode==="test"? ids.length*60 : 0};
   UI.confirmSubmit = false;

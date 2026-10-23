@@ -103,6 +103,7 @@ function buy(b, exam) {
   if (kind === 'mock' && !MOCKS[exam]) return {ok: false, error: 'This mock test pack is not on sale yet.'};
   const phone = phoneOf(b.phone);
   if (!phone) return {ok: false, error: 'Please register with a valid 10-digit mobile number first.'};
+  if (!prop('INSTAMOJO_CLIENT_ID') || !prop('INSTAMOJO_CLIENT_SECRET')) return {ok: false, error: 'Online payment opens in a few hours. Please try again later today.'};
   const amount = kind === 'mock' ? MOCKS[exam].price : PYQ.price;
   const purpose = (kind === 'mock' ? MOCKS[exam].name : PYQ.purpose).slice(0, 30);
   const passExam = kind === 'mock' ? exam : 'all';
