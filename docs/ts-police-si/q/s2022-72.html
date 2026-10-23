@@ -37,6 +37,7 @@ table.facts th{background:var(--accent-soft);font-weight:700;overflow-wrap:norma
 .note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;margin:16px 0}
 .ans{color:var(--good);font-weight:700;margin:8px 0 4px}.why{color:var(--muted);margin:0}
 .lock{background:var(--accent-soft);border-radius:10px;padding:10px 12px;margin:8px 0 0;font-size:15.5px}
+.passon{background:#E6F4EC;color:#0B5E36;border:1px solid #9FD3B5;border-radius:10px;padding:10px 12px;margin:10px 0;font-weight:600}
 nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}nav.toc a{background:var(--accent-soft);padding:4px 10px;border-radius:999px;text-decoration:none;font-size:15px}
 footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}footer .wrap{padding-block:18px}
 .course{background:var(--surface);border:2px solid var(--accent);border-radius:16px;padding:18px 20px;margin:16px 0 8px}
@@ -68,7 +69,7 @@ ol.clist li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;ba
 <main class="wrap">
 <h1>TS Police SI Prelims 2022 · Question 72</h1>
 <p class="lede">Question 72 of the TSLPRB SI Preliminary Written Test 2022 (7 August 2022). Try it first, then check your answer and the explanation in the practice app.</p>
-<ol class="qs"><li class="q" id="q72"><div class="meta">SI Prelims 2022 · Q72 · Reasoning &amp; Mental Ability · Logical Reasoning</div><p>Read the statements and mark the correct answer.
+<p class="passon" hidden></p><ol class="qs"><li class="q" id="q72"><div class="meta">SI Prelims 2022 · Q72 · Reasoning &amp; Mental Ability · Logical Reasoning</div><p>Read the statements and mark the correct answer.
 Statement I: The prices of petrol products have increased substantially during the past few months in India
 Statement II: The prices of many goods in India are increasing now-a-days
 These statements may have a cause and effect relationship or may have independent causes or be the effects of independent causes.</p><ol><li>I is cause and II is effect</li><li>II is cause and I is effect</li><li>I, II are effects of independent causes</li><li>I, II are causes of independent effects</li></ol><div class="te" lang="te"><p>ప్రవచనాలను చదివి సరియైన సమాధానాన్ని గుర్తించుము.
@@ -77,6 +78,10 @@ These statements may have a cause and effect relationship or may have independen
 ఈ ప్రవచనాలు కారణము మరియు ప్రభావం అనే సంబంధాన్ని కలిగి ఉండవచ్చు లేదా స్వతంత్ర కారణాలు కావచ్చు లేదా ఏదైనా కారణాలకు ప్రభావాలు కావచ్చు.</p><ol><li>I కారణం II ప్రభావం</li><li>II కారణం I ప్రభావం</li><li>I, II లు రెండు స్వతంత్ర కారణాల ప్రభావాలు</li><li>I, II లు రెండు స్వతంత్ర ప్రభావాల కారణాలు</li></ol></div><p class="lock">Answer and explanation: <a href="/ts-police-si/?q=s2022-72">open it in the practice app</a>. It needs the ₹45 PYQ Pass: one payment for every exam on the site.</p></li></ol><p><a class="cta" href="/ts-police-si/?q=s2022-72">Answer it in the practice app</a><a class="cta alt" href="/ts-police-si/practice/">Make a topic-wise quiz</a></p><nav class="toc"><a href="s2022-71.html">← Q71</a><a href="s2022-73.html">Q73 →</a><a href="/ts-police-si/papers/ts-police-si-prelims-2022-question-paper-with-answers.html">All questions of this paper</a></nav>
 </main>
 <footer><div class="wrap"><p style="margin:0 0 8px"><a href="../../appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="../../ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="../../appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>Questions are from TSLPRB's official question paper and answers from TSLPRB's final key. Explanations are by Jupudi Anil Kumar, Learn with Anil (Instagram: @learn_with_anil06). Not affiliated with TSLPRB. Visits are counted with Google Analytics.</div></footer>
-<script>try{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{}").all)||{};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date())document.querySelectorAll(".lk").forEach(function(e){e.remove()})}catch(e){}</script>
+<script>try{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{}").all)||{};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){
+document.querySelectorAll(".lk").forEach(function(e){e.textContent="✓ ";e.className="lk ok"});
+document.querySelectorAll("[data-paidtxt]").forEach(function(e){e.textContent=e.getAttribute("data-paidtxt")});
+document.querySelectorAll('a[href*="?buy=pyq"]').forEach(function(e){e.textContent="✓ PYQ Pass active"});
+var b=document.querySelector(".passon");if(b){b.textContent="✓ Your PYQ Pass is active until "+new Date(a.pyq+"T12:00:00+05:30").toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"})+": every previous paper, sectional and quiz of every exam is unlocked on this device. Students without the pass see a lock (🔒) on these buttons.";b.hidden=false}}}catch(e){}</script>
 </body>
 </html>

@@ -648,7 +648,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     </a>
   </div></section>
 
-  <section class="wrap section"><div class="etiles"><a class="etile" href="/appsc-group-2/pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b><span class="etile-p">1,004 questions from 7 official papers, with answers and explanations, as quizzes and timed tests. One pass for every exam.</span><span class="etile-price">₹45 · all exams · 12 months</span></a><a class="etile" href="/appsc-group-2/bahubali-test-series/"><span class="etile-k">02 · Mock tests</span><b>Bahubali Test Series</b><span class="etile-p">24 full-length Group-II Mains mocks, 12 for Paper I and 12 for Paper II: 150 questions each, English and Telugu, with explanations.</span><span class="etile-price">₹250 for all 24 tests</span></a><a class="etile" href="/appsc-group-2/sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 10 subjects. Practise one section at a time with a timer.</span><span class="etile-price">With the PYQ Pass</span></a></div><div class="card eclock eclock-tba"><div class="ec-l"><span class="ec-k">Exam clock</span><b>APPSC Group 2 Screening Test</b><span class="ec-src">Applications 10–30 November 2026 (Notification 37/2026); APPSC has not announced the exam date yet.</span></div><div class="ec-r"><span class="ec-tba">Date not announced yet</span></div></div><div class="etiles etiles-links"><a class="etile etile-sm" href="/appsc-group-2/bahubali-test-series/"><b>New: Bahubali Test Series – Group 2 Mains full-length tests</b><span class="etile-go">→</span></a><a class="etile etile-sm" href="/appsc-group-2-notification-2026.html"><b>APPSC Group 2 Notification 2026: 686 posts</b><span class="etile-go">→</span></a></div></section>
+  <section class="wrap section"><div class="etiles"><a class="etile" href="/appsc-group-2/pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b><span class="etile-p">1,004 questions from 7 official papers, with answers and explanations, as quizzes and timed tests. One pass for every exam.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 ₹45 · all exams · 12 months</span></a><a class="etile" href="/appsc-group-2/bahubali-test-series/"><span class="etile-k">02 · Mock tests</span><b>Bahubali Test Series</b><span class="etile-p">24 full-length Group-II Mains mocks, 12 for Paper I and 12 for Paper II: 150 questions each, English and Telugu, with explanations.</span><span class="etile-price">₹250 for all 24 tests</span></a><a class="etile" href="/appsc-group-2/sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 10 subjects. Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 With the PYQ Pass</span></a></div><div class="card eclock eclock-tba"><div class="ec-l"><span class="ec-k">Exam clock</span><b>APPSC Group 2 Screening Test</b><span class="ec-src">Applications 10–30 November 2026 (Notification 37/2026); APPSC has not announced the exam date yet.</span></div><div class="ec-r"><span class="ec-tba">Date not announced yet</span></div></div><div class="etiles etiles-links"><a class="etile etile-sm" href="/appsc-group-2/bahubali-test-series/"><b>New: Bahubali Test Series – Group 2 Mains full-length tests</b><span class="etile-go">→</span></a><a class="etile etile-sm" href="/appsc-group-2-notification-2026.html"><b>APPSC Group 2 Notification 2026: 686 posts</b><span class="etile-go">→</span></a></div></section>
 
   <section class="wrap section">
     <div class="figures">
@@ -773,7 +773,12 @@ function passOK(kind){
   return kind==="pyq" ? (live((PASSES.all||{}).pyq) && !!(PASSES.all||{}).paid) : live((PASSES[PAYC.exam]||{}).mock);   // paid PYQ Pass only (old free-trial dates no longer count)
 }
 function setPasses(p){   // from the payments script: {pyq, trial, paid, mock}
-  p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses();
+  p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses(); markLocks();
+}
+function markLocks(){   // 🔒 on PYQ buttons and tiles without the PYQ Pass; "✓ Unlocked" with it
+  if(!PAYC || !PAYC.on) return; const ok = passOK("pyq");
+  document.querySelectorAll(".lk").forEach(e=>{ e.textContent = ok ? "✓ " : "🔒 "; });
+  document.querySelectorAll("[data-paidtxt]").forEach(e=>{ if(e.dataset.unpaid===undefined) e.dataset.unpaid = e.textContent; e.textContent = ok ? e.dataset.paidtxt : e.dataset.unpaid; });
 }
 const fmtDay = d=> new Date(d + "T12:00:00+05:30").toLocaleDateString(undefined, {day:"numeric", month:"long"});
 /* What each plan opens. PYQ content (quizzes, subject practice, question bank) needs the paid PYQ Pass;
@@ -990,6 +995,7 @@ function render(){
     host.querySelectorAll("[data-mixed]").forEach(el=>{ el.indeterminate = true; });
   }
   if(v==="quiz") startTimer();
+  markLocks();
   if(changed) window.scrollTo(0,0);
   fixLinks(); document.title = viewTitle(v); syncLang();
   if(v==="exams") applyHubLang();
@@ -1214,7 +1220,7 @@ function vPapers(){
       <p>${esc(p.blurb)}</p>
       <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
       <div class="acts">
-        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"":"🔒 "}Attempt this paper · ${p.count} min timer</button>
+        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":"🔒 "}Attempt this paper · ${p.count} min timer</button>
       </div>
     </article>`;
   };

@@ -724,7 +724,12 @@ function passOK(kind){
   return kind==="pyq" ? (live((PASSES.all||{}).pyq) && !!(PASSES.all||{}).paid) : live((PASSES[PAYC.exam]||{}).mock);   // paid PYQ Pass only (old free-trial dates no longer count)
 }
 function setPasses(p){   // from the payments script: {pyq, trial, paid, mock}
-  p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses();
+  p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses(); markLocks();
+}
+function markLocks(){   // 🔒 on PYQ buttons and tiles without the PYQ Pass; "✓ Unlocked" with it
+  if(!PAYC || !PAYC.on) return; const ok = passOK("pyq");
+  document.querySelectorAll(".lk").forEach(e=>{ e.textContent = ok ? "✓ " : "🔒 "; });
+  document.querySelectorAll("[data-paidtxt]").forEach(e=>{ if(e.dataset.unpaid===undefined) e.dataset.unpaid = e.textContent; e.textContent = ok ? e.dataset.paidtxt : e.dataset.unpaid; });
 }
 const fmtDay = d=> new Date(d + "T12:00:00+05:30").toLocaleDateString(undefined, {day:"numeric", month:"long"});
 /* What each plan opens. PYQ content (quizzes, subject practice, question bank) needs the paid PYQ Pass;
@@ -941,6 +946,7 @@ function render(){
     host.querySelectorAll("[data-mixed]").forEach(el=>{ el.indeterminate = true; });
   }
   if(v==="quiz") startTimer();
+  markLocks();
   if(changed) window.scrollTo(0,0);
   fixLinks(); document.title = viewTitle(v); syncLang();
   if(v==="exams") applyHubLang();
@@ -1165,7 +1171,7 @@ function vPapers(){
       <p>${esc(p.blurb)}</p>
       <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
       <div class="acts">
-        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"":"🔒 "}Attempt this paper · ${p.count} min timer</button>
+        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":"🔒 "}Attempt this paper · ${p.count} min timer</button>
       </div>
     </article>`;
   };
