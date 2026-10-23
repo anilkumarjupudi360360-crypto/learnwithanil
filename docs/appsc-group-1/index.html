@@ -217,7 +217,7 @@ div.feature:hover{border-color:var(--line)}
 .about h2{font-size:28px;font-weight:800}
 .about .role{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-text);margin-top:4px}
 .about .bio{margin-top:14px;max-width:68ch;display:flex;flex-direction:column;gap:10px}
-.about dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:18px 0 0}
+.about dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:12px;margin:18px 0 0}
 .about dl div{background:var(--surface-2);border-radius:10px;padding:10px 12px}
 .about dt{font-family:var(--f-display);font-size:22px;font-weight:800}
 .about dd{margin:0;font-size:13.5px;color:var(--muted)}
@@ -525,6 +525,16 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .tm-count .tm-hms{grid-column:1/-1;font-size:13px;color:var(--ink);font-family:var(--f-mono)}
 .cdown.soon-7{border-top-color:var(--bad)}
 .cdown.soon-7 .tm-d{color:var(--bad)}
+.eclock{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;margin-top:16px;padding:16px 20px;border-top:3px solid var(--accent)}
+.eclock:hover{transform:none}
+.eclock .ec-l{display:flex;flex-direction:column;gap:2px;min-width:0}
+.eclock .ec-k{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text)}
+.eclock b{font-size:18px;line-height:1.3}.eclock .ec-date{font-weight:600}
+.eclock .ec-src{font-size:13px;color:var(--muted)}
+.eclock .ec-r.tm-count{margin:0;padding:0;display:grid;grid-template-columns:auto auto;align-items:baseline;column-gap:8px;font-size:15px}
+.eclock .tm-count .tm-d{font-size:44px}
+.eclock .tm-count .tm-hms{font-size:16px}
+.eclock .ec-tba{font-weight:700;color:var(--muted)}
 .soon{display:flex;flex-direction:column;gap:14px;padding:24px;max-width:760px}
 .soon p{color:var(--muted)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -578,7 +588,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     </a>
   </div></section>
 
-  <section class="wrap section"><div class="etiles"><a class="etile" href="/appsc-group-1/pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b><span class="etile-p">687 questions from 6 official papers. Read every question with its answer free; attempt them as quizzes and timed tests with the PYQ Pass.</span><span class="etile-price">₹45 · valid till the exam</span></a><a class="etile" href="/appsc-group-1/mock-test.html"><span class="etile-k">02 · Mock tests</span><b>Mock test pack</b><span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span><span class="etile-price">Upcoming</span></a><a class="etile" href="/appsc-group-1/sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 8 subjects. Practise one section at a time with a timer.</span><span class="etile-price">With the PYQ Pass</span></a></div><div class="etiles etiles-links"><a class="etile etile-sm" href="/appsc-group-1-notification-2026.html"><b>APPSC Group 1 Notification 2026: 166 posts</b><span class="etile-go">→</span></a></div><p class="etiles-note">Payments open soon. Until then every quiz and test stays free.</p></section>
+  <section class="wrap section"><div class="etiles"><a class="etile" href="/appsc-group-1/pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b><span class="etile-p">687 questions from 6 official papers. Read every question with its answer free; attempt them as quizzes and timed tests with the PYQ Pass.</span><span class="etile-price">₹45 · valid till the exam</span></a><a class="etile" href="/appsc-group-1/mock-test.html"><span class="etile-k">02 · Mock tests</span><b>Mock test pack</b><span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span><span class="etile-price">Upcoming</span></a><a class="etile" href="/appsc-group-1/sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 8 subjects. Practise one section at a time with a timer.</span><span class="etile-price">With the PYQ Pass</span></a></div><div class="card cdown eclock" data-date="2027-01-24T00:00:00+05:30"><div class="ec-l"><span class="ec-k">Exam clock</span><b>APPSC Group 1 Screening Test</b><span class="ec-date">Sunday, 24 January 2027</span><span class="ec-src">APPSC Notification 07/2026. Confirm on the official website.</span></div><div class="ec-r tm-count"><b class="tm-d">–</b> <span class="ec-days">days to go</span> <span class="tm-hms">--:--:--</span></div></div><div class="etiles etiles-links"><a class="etile etile-sm" href="/appsc-group-1-notification-2026.html"><b>APPSC Group 1 Notification 2026: 166 posts</b><span class="etile-go">→</span></a></div><p class="etiles-note">Payments open soon. Until then every quiz and test stays free.</p></section>
 
   <section class="wrap section">
     <div class="figures">
@@ -1042,7 +1052,7 @@ function tickTimers(){
   const w = $("#timers"); if(w) w.hidden = !shown;
   document.querySelectorAll("[data-exam-left]").forEach(el=>{ const l = left(+el.dataset.examLeft); el.textContent = l ? l.d : "Today"; });
 }
-setInterval(()=>{ if(current==="exams" || current==="exam") tickTimers(); }, 1000);
+setInterval(()=>{ if(current==="exams" || current==="exam" || document.querySelector(".eclock[data-date]")) tickTimers(); }, 1000);
 function vExam(){
   const e = EXMAP[UI.exam], c = ECMAP[e.cat]||{name:""}, full = e.t + (e.n? ` (${e.n})` : "");
   const t = TIMERS.find(x=>x.exam===e.id && x.at > Date.now());
@@ -1525,17 +1535,18 @@ function vAbout(){
       <div style="min-width:0">
         <p class="eyebrow">About the mentor</p>
         <h2>Jupudi Anil Kumar</h2>
-        <p class="role">Academic Manager · UPSC Faculty · Mentor</p>
+        <p class="role">Course Coordinator · UPSC Faculty · Mentor</p>
         <div class="bio">
-          <p>I am a civil-services educator with more than 1,000 hours of classroom teaching for UPSC, APPSC and TGPSC aspirants. I teach Indian Polity, Governance and Ethics, build test series and study material, and evaluate Mains answer scripts.</p>
-          <p>As Academic Manager, faculty and mentor, I plan the Group-1 and Group-2 programmes and their test series, coordinate the UPSC mock interview programme in Delhi, and mentor Group-1, Group-2 and UPSC aspirants. Earlier I taught Polity at Reflections IAS Academy and Prathiba IAS Academy.</p>
+          <p>I am a civil-services educator with more than 1,000 hours of classroom teaching for UPSC, APPSC and TGPSC aspirants. I teach Indian Polity, Governance and Ethics, build test series and study material, and have evaluated more than 2,000 Mains answer copies.</p>
+          <p>As Course Coordinator, faculty and mentor, I plan the Group-1 and Group-2 programmes and their test series, coordinate the UPSC mock interview programme in Delhi, and mentor Group-1, Group-2 and UPSC aspirants. I have headed several Prelims and Mains test series.</p>
           <p>I built this portal so that every ${esc(DATA.exam||"APPSC Group-II")} aspirant can practise the real previous questions topic by topic, for free, and see clearly where they are losing marks.</p>
         </div>
         <dl>
           <div><dt>1000+</dt><dd>Hours of classroom teaching</dd></div>
+          <div><dt>2000+</dt><dd>Mains answer copies evaluated</dd></div>
           <div><dt>70+</dt><dd>APPSC Group-1 mock interviews</dd></div>
           <div><dt>25</dt><dd>UPSC CSE mock interviews, Delhi</dd></div>
-          <div><dt>150+</dt><dd>Educational reels &amp; videos</dd></div>
+          <div><dt>250+</dt><dd>YouTube &amp; educational videos</dd></div>
         </dl>
         <div class="contact">
           <a href="tel:+919494792739"><span>Phone</span>+91 94947 92739</a>

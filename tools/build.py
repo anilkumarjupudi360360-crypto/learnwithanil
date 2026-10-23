@@ -1361,6 +1361,29 @@ MOCK_PACKS = {
 }
 
 
+EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from) — the countdown under the exam tiles
+  'appsc-group-2': ('APPSC Group 2 Screening Test', None, 'Applications 10–30 November 2026 (Notification 37/2026); APPSC has not announced the exam date yet.'),
+  'appsc-group-1': ('APPSC Group 1 Screening Test', '2027-01-24', 'APPSC Notification 07/2026.'),
+  'ts-police-si': ('TS Police SI Preliminary Written Test', '2026-11-29', 'Tentative, TGPRB press note of 17 September 2026.'),
+  'ts-police-constable': ('TS Police Constable Preliminary Written Test', '2026-12-20', 'Tentative, TGPRB press note of 17 September 2026.'),
+  'upsc-capf': ('UPSC CAPF (Assistant Commandants) 2027', '2027-07-04', 'UPSC Calendar 2027.'),
+  'tgpsc-hmwssb-manager': ('TGPSC HMWSSB Manager (Engineering)', None, 'Tentatively December 2026; TGPSC has not announced the exact date yet.'),
+}
+
+
+def exam_clock_html(conf):
+    c = EXAM_CLOCK.get(conf['id'])
+    if not c: return ''
+    name, d, src = c
+    if not d or d < date.today().isoformat():
+        return (f'<div class="card eclock eclock-tba"><div class="ec-l"><span class="ec-k">Exam clock</span><b>{esc(name)}</b>'
+                f'<span class="ec-src">{esc(src)}</span></div><div class="ec-r"><span class="ec-tba">Date not announced yet</span></div></div>')
+    dd = date.fromisoformat(d)
+    return (f'<div class="card cdown eclock" data-date="{d}T00:00:00+05:30"><div class="ec-l"><span class="ec-k">Exam clock</span><b>{esc(name)}</b>'
+            f'<span class="ec-date">{dd.strftime("%A, %d %B %Y")}</span><span class="ec-src">{esc(src)} Confirm on the official website.</span></div>'
+            f'<div class="ec-r tm-count"><b class="tm-d">–</b> <span class="ec-days">days to go</span> <span class="tm-hms">--:--:--</span></div></div>')
+
+
 def live_text(mk):
     """'Mock 1 is available now; Mocks 2–10 are coming soon.' (all mocks are included in the pack price)"""
     a, n = mk['live'], mk['n']
@@ -1417,7 +1440,7 @@ def tiles_html(conf, papers, questions, extra_links):
           f'Practise one section at a time with a timer.</span><span class="etile-price">{"With the PYQ Pass or " + esc(mk["name"]) if mk else "With the PYQ Pass"}</span></a>')
     links = ''.join(f'<a class="etile etile-sm" href="{h}"><b>{esc(x)}</b><span class="etile-go">→</span></a>' for x, h in extra_links)
     note = '' if PAY['on'] else '<p class="etiles-note">Payments open soon. Until then every quiz and test stays free.</p>'
-    return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>'
+    return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + exam_clock_html(conf)
             + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
 
 
