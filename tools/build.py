@@ -3,7 +3,7 @@
 
 src/*.txt  (question transcriptions)  ->  dist/  (artifact page + hostable website)
 """
-import json, re, os, sys, html, base64, shutil, io
+import json, re, os, sys, html, base64, shutil, io, hashlib
 from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -363,6 +363,24 @@ def parse_te(paper, qs, srcdir='', l2dir='te'):
     return done
 
 
+def add_own_options(paper, qs, srcdir=''):
+    """Answer-only papers: APPSC's final key prints each question with only the correct answer. At Anil's request
+    (23 Oct 2026) Learn with Anil writes three wrong options per question: src/[<exam>/]opts/<file>.json
+    {"<n>": {"d": [3 English], "dt": [3 Telugu]}}. The official answer goes in at a fixed pseudo-random place.
+    Such questions are marked lwo=1 so the app and pages say the options are ours and the answer is APPSC's."""
+    path = os.path.join(SRC, srcdir, 'opts', paper['file'].replace('.txt', '.json'))
+    if not os.path.exists(path): return 0
+    od = json.load(open(path, encoding='utf-8')); n = 0
+    for q in qs:
+        o = od.get(str(q['n']))
+        if 'ans' not in q or not o or len(o.get('d') or []) != 3: continue
+        pos = int(hashlib.md5(q['id'].encode()).hexdigest(), 16) % 4
+        q['o'] = o['d'][:pos] + [q['ans']] + o['d'][pos:]; q['a'] = [pos]
+        if q.get('at') and len(o.get('dt') or []) == 3: q['ot'] = o['dt'][:pos] + [q['at']] + o['dt'][pos:]
+        q.pop('ans'); q.pop('at', None); q['lwo'] = 1; n += 1
+    return n
+
+
 def img_data_uri(rel):
     p = os.path.join(SRC, rel)
     from PIL import Image
@@ -397,12 +415,16 @@ def load_exam(conf):
             for q in qs:
                 if q['id'] in wt and q.get('qt'): q['wt'] = wt[q['id']]
         if nte: print(f'  {conf["short"]} {p["id"]}: {conf["l2"]["name"]} for {nte} questions')
+        nown = add_own_options(p, qs, conf['src'])
         if not qs:
             print(f'  - skipping {conf["short"]} {p["id"]} (no source yet)'); continue
         for q in qs:
             if 'img' in q: q['img'] = img_data_uri(os.path.join(conf['src'], q['img']))
         pp = {k: p[k] for k in ('id', 'year', 'stage', 'short', 'title', 'notif', 'held', 'fmt', 'slug', 'blurb')}
         pp['count'] = len(qs)
+        if nown:
+            if nown == len(qs): pp['fmt'], pp['own'] = 'mcq', 1   # four options now (ours + APPSC's answer); still PYQ Pass only
+            else: print(f'  ! {conf["short"]} {p["id"]}: options for {nown} of {len(qs)} questions only; paper stays quick-recall')
         for k in ('key', 'alt', 'te_paper', 'hi_paper', 'en_only', 'kwname'):
             if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p) if PUBLIC_PDFS else ''
@@ -420,7 +442,7 @@ def qotd_pool(items, n):
     pools = []
     for conf, papers, questions in items:
         pshort = {p['id']: p['short'] for p in papers}
-        el = [q for q in questions if q.get('o') and not q.get('img') and q.get('w') and len(q['q']) <= 520
+        el = [q for q in questions if q.get('o') and not q.get('lwo') and not q.get('img') and q.get('w') and len(q['q']) <= 520
               and all(len(o) <= 140 for o in q['o'])]
         random.Random('qotd-' + conf['id']).shuffle(el)
         base = conf['dir'] + '/' if conf['dir'] else ''
@@ -463,7 +485,7 @@ def exam_confs():
                            f"practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            eyebrow='APPSC Group-II · Prelims (Screening) &amp; Mains · 2019–2025',
-           papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
+           papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer: there the answer is APPSC's and the other three options are written by Learn with Anil (inside the PYQ Pass)."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
            slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE, pb='/appsc-group-1/',
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
@@ -475,7 +497,7 @@ def exam_confs():
                            f"Paper 1 General Studies and Paper 2 General Aptitude. {t:,} questions in English and Telugu with explanations; "
                            f"practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow='APPSC Group-I · Prelims · 2019–2024',
-           papers_note="Every paper uses APPSC's official final key. The 2024 key shows all four options. The 2023 and 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
+           papers_note="Every paper uses APPSC's official final key. The 2024 key shows all four options. The 2023 and 2019 keys print only the correct answer: there the answer is APPSC's and the other three options are written by Learn with Anil (inside the PYQ Pass)."),
       dict(id='upsc-capf', dir='upsc-capf', src='upsc-capf', key='upsc-capf', name='UPSC CAPF (AC)', short='CAPF (AC)', seo='UPSC CAPF AC',
            slugp='upsc-capf-ac', papers=CAPF_PAPERS, subjects=CAPF_SUBJECTS, faq=FAQ_CAPF, board='UPSC', l2=L2_HI, pb='/upsc-capf/',
            keyname="UPSC's answer keys", keyshort="UPSC's answer keys (2025: compiled from published keys)",
@@ -993,7 +1015,7 @@ def nw(t):
 
 
 def home_paper_card(p):
-    fmt = 'All 4 options' if p['fmt'] == 'mcq' else 'Answer-only key'
+    fmt = 'Options by Learn with Anil' if p.get('own') else 'All 4 options' if p['fmt'] == 'mcq' else 'Answer-only key'
     cls = 'good' if p['fmt'] == 'mcq' else 'warn'
     return (f'<article class="card paper"><span class="yr">{esc(p["held"])} · {esc(p["notif"])}</span><h3>{esc(p.get("kw") or p["title"])}</h3>'
             f'<p>{esc(p["blurb"])}</p><div class="meta"><span class="pill blue">{p["count"]} questions</span><span class="pill {cls}">{fmt}</span></div>'
@@ -1016,8 +1038,8 @@ def FAQ(total, npapers):
        'Under Notification 11/2023, the Screening Test is one objective paper of 150 questions for 150 marks in 150 minutes, with 30 marks each for Indian History, Geography, Indian Society, Current Affairs and Mental Ability. The Mains has two objective papers of 150 marks each: Paper I covers the Social and Cultural History of Andhra Pradesh and the Indian Constitution, and Paper II covers the Indian and AP Economy and Science and Technology.'),
       ('Are the answers on this site official?',
        'Yes. The answers come from the final keys published by APPSC. Questions that APPSC deleted are left out, and where the final key accepted two options, both are shown as correct. The explanations are written by Learn with Anil.'),
-      ('Why do the 2019 questions not show four options?',
-       'APPSC\'s 2019 final keys print each question with only the correct answer. Those questions appear here as quick-recall cards: you think of the answer, reveal it and mark whether you knew it. The 2024 and 2025 papers show all four options.'),
+      ('Where do the options of the 2019 papers come from?',
+       'APPSC\'s 2019 final keys print each question with only the correct answer, and APPSC has not published the original options. In the PYQ Pass, the correct option of each 2019 question is APPSC\'s official answer and the other three options are written by Learn with Anil; every such question is labelled. The 2024 and 2025 papers show APPSC\'s own four options.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
@@ -1037,8 +1059,8 @@ def FAQ_G1(total, npapers):
        'The Preliminary Examination has two objective papers on the same day: Paper I General Studies (History and Culture; Constitution, Polity, Social Justice and International Relations; Indian and AP Economy and Planning; Geography) and Paper II General Aptitude (General Mental Ability, Administrative and Psychological Abilities; Science and Technology; Current Events). Each paper has 120 questions for 120 marks in 120 minutes, and one-third of the marks of a question is deducted for a wrong answer. Prelims marks are used only to shortlist candidates for the Mains.'),
       ('Are the answers on this site official?',
        'Yes. The answers come from the final keys published by APPSC. Questions that APPSC deleted are left out, and where the final key accepted two options, both are shown as correct. The explanations are written by Learn with Anil.'),
-      ('Why do the 2023 and 2019 questions not show four options?',
-       'APPSC\'s 2023 and 2019 final keys print each question with only the correct answer. Those questions appear here as quick-recall cards: you think of the answer, reveal it and mark whether you knew it. The 2024 papers show all four options.'),
+      ('Where do the options of the 2023 and 2019 papers come from?',
+       'APPSC\'s 2023 and 2019 final keys print each question with only the correct answer, and APPSC has not published the original options. In the PYQ Pass, the correct option of each 2023 and 2019 question is APPSC\'s official answer and the other three options are written by Learn with Anil; every such question is labelled. The 2024 papers show APPSC\'s own four options.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
@@ -1692,7 +1714,9 @@ def pyq_page(conf, papers, questions):
             f'as practice quizzes and timed tests, with one ₹{PAY["pyq_price"]} PYQ Pass for every exam on the site.')
     def row(p):
         recall = p['fmt'] != 'mcq'
-        return (f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions{" · official key gives the answer only: quick-recall cards" if recall else ""}</div>'
+        note = (" · answers from APPSC's key; APPSC printed no options, so the other three options are by Learn with Anil" if p.get('own')
+                else " · official key gives the answer only: quick-recall cards" if recall else "")
+        return (f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions{note}</div>'
                 f'<b>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</b>'
                 f'<div class="cacts"><a class="cta" href="{pb}?practice={p["id"]}">Attempt this paper · {p["count"]} min timer</a></div></li>')
     allp = ps + sorted(extra, key=lambda p: (-p['year'], p['id']))
@@ -1758,7 +1782,7 @@ def mock_page(conf, papers, questions):
     pb, seo = conf['pb'], conf['seo']
     rel = pb.strip('/') + '/mock-test.html'
     can = SITE_URL + '/' + rel
-    mcq = [p for p in sorted(papers, key=lambda p: (-p['year'], p['id'])) if p['fmt'] == 'mcq']
+    mcq = [p for p in sorted(papers, key=lambda p: (-p['year'], p['id'])) if p['fmt'] == 'mcq' and not p.get('own')]
     l2 = conf['l2']
     mk = MOCK_PACKS.get(conf['id'])
     title = (f'{seo} Mock Test – {mk["name"]} Test Series (₹{mk["price"]}) & Previous Papers with Timer | Learn with Anil' if mk else
@@ -1809,13 +1833,13 @@ def mock_page(conf, papers, questions):
 def public_only(papers, questions):
     """Papers and questions that get public pages. Answer-only papers (no four options) are only inside the PYQ Pass
     (Anil, 23 Oct 2026: "all PYQs under one shelter", no free pages for them)."""
-    ps = [p for p in papers if p['fmt'] == 'mcq']
+    ps = [p for p in papers if p['fmt'] == 'mcq' and not p.get('own')]   # papers with our own options stay inside the pass too
     ids = {p['id'] for p in ps}
     return ps, [q for q in questions if q['p'] in ids]
 
 
 def pass_only_papers(papers):
-    return [p for p in papers if p['fmt'] != 'mcq']
+    return [p for p in papers if p['fmt'] != 'mcq' or p.get('own')]
 
 
 def build_static(conf, papers, subjects, questions, subj):

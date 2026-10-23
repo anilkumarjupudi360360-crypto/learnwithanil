@@ -83,10 +83,15 @@ async def main():
                 await pg.screenshot(path=f'{SHOTS}/quiz-mcq.png')
                 await pg.click('[data-act="finish"]'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/result.png', full_page=False)
-                # recall flow
+                # an answer-only paper (2019): APPSC's answer plus three options by Learn with Anil, labelled
                 await pg.evaluate('location.hash="papers"'); await pg.wait_for_timeout(150)
                 await pg.click('#view [data-act="paperpractice"][data-paper="s2019"]'); await pg.wait_for_timeout(150)
-                await pg.click('[data-act="reveal"]'); await pg.click('[data-act="self"][data-v="W"]')
+                if await pg.locator('[data-act="reveal"]').count():
+                    await pg.click('[data-act="reveal"]'); await pg.click('[data-act="self"][data-v="W"]')
+                else:
+                    if await pg.locator('[data-act="pick"]').count() != 4: errors.append('s2019: question does not show four options')
+                    if 'options: Learn with Anil' not in await pg.inner_text('#view'): errors.append('s2019: options are not labelled as written by Learn with Anil')
+                    await pg.click('[data-act="pick"][data-i="0"]'); await pg.click('[data-act="check"]')
                 await pg.screenshot(path=f'{SHOTS}/quiz-recall.png')
                 await pg.click('[data-act="finish"]'); await pg.wait_for_timeout(150)
                 mis = await pg.evaluate('document.getElementById("mcount").textContent')
