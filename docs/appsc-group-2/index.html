@@ -609,21 +609,6 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
     </a>
   </section>
 
-  <section class="wrap section">
-    <div class="section-title"><h2>Practise by subject</h2><span class="muted" style="font-size:14px">Pick a subject to build a quiz from every paper</span></div>
-    <div class="subjects"><button type="button" class="card subj-card" data-act="presubj" data-subj="ih"><span>Indian History</span><span class="mono">43 Q</span></button><button type="button" class="card subj-card" data-act="presubj" data-subj="aph"><span>AP History &amp; Culture</span><span class="mono">172 Q</span></button><button type="button" class="card subj-card" data-act="presubj" data-subj="pol"><span>Indian Polity</span><span class="mono">152 Q</span></button><button type="button" class="card subj-card" data-act="presubj" data-subj="geo"><span>Geography</span><span class="mono">34 Q</span></button><button type="button" class="card subj-card" data-act="presubj" data-subj="soc"><span>Indian Society</span><span class="mono">42 Q</span></button><button type="button" class="card subj-card" data-act="presubj" data-subj="eco"><span>Economy (India &amp; AP)</span><span class="mono">315 Q</span></button><button type="button" class="card subj-card" data-act="presubj" data-subj="sci"><span>Science &amp; Technology</span><span class="mono">121 Q</span></button><button type="button" class="card subj-card" data-act="presubj" data-subj="cur"><span>Current Affairs</span><span class="mono">48 Q</span></button><button type="button" class="card subj-card" data-act="presubj" data-subj="men"><span>Mental Ability</span><span class="mono">48 Q</span></button><button type="button" class="card subj-card" data-act="presubj" data-subj="gk"><span>General Knowledge</span><span class="mono">29 Q</span></button></div>
-  </section>
-
-  <section class="wrap section">
-    <div class="section-title"><h2>How the portal works</h2></div>
-    <div class="features">
-      <a class="card feature" href="/appsc-group-2/practice/"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5" fill="currentColor"/><path d="M11 7h9M11 17h9" stroke-linecap="round"/></svg></span><span><h3>Topic-wise quiz</h3><p>Choose papers, subjects and topics, the number of questions, and practice or timed-test mode.</p></span></a>
-      <a class="card feature" href="/appsc-group-2/mistakes/"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 3h11l3 3v15H5z"/><path d="M9 10l6 6M15 10l-6 6"/></svg></span><span><h3>Mistakes notebook</h3><p>Every question you get wrong or skip is filed automatically, sorted by subject.</p></span></a>
-      <a class="card feature" href="/appsc-group-2/smart/"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/><path d="M9 12l2 2 4-4"/></svg></span><span><h3>Smart quiz</h3><p>Re-attempt your mistakes from memory. Two correct answers in a row clears a question.</p></span></a>
-      <a class="card feature" href="/appsc-group-2/heatmap/"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2" opacity=".35"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2" opacity=".6"/></svg></span><span><h3>Memory heatmap</h3><p>Topic-wise accuracy in one grid, so your weak areas show up at a glance.</p></span></a>
-    </div>
-  </section>
-
   <section class="wrap section" id="recent" hidden></section>
 
   <section class="wrap section">
@@ -1872,6 +1857,8 @@ function start(data){
     const sec = sp.get("sec");  // ?sec=<subject id>: a PYQ sectional test (up to 30 questions from one subject)
     if(sec && SUBJ[sec]){ history.replaceState(null, "", location.pathname); syncLang(); render();
       startQuiz(shuffle(QS.filter(q=>q.s===sec && isMCQ(q)).map(q=>q.id)).slice(0,30), SUBJ[sec].name+" · PYQ sectional", "test", "sectional"); return; }
+    const sj = sp.get("subj");   // ?subj=<subject id>: the quiz builder with that subject picked (from the PYQs page)
+    if(sj && SUBJ[sj]){ history.replaceState(null, "", location.pathname); const s=SUBJ[sj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); syncLang(); go("practice"); return; }
     const tp = sp.get("test");   // ?test=<paper id>: start that paper as a full timed mock test
     if(tp && PMAP[tp]){ history.replaceState(null, "", location.pathname); syncLang(); render();
       startQuiz(QS.filter(q=>q.p===tp && isMCQ(q)).map(q=>q.id), PMAP[tp].title+" · Mock test", "test", "paper"); return; }

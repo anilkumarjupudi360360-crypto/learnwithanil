@@ -1076,6 +1076,12 @@ table.facts th{background:var(--accent-soft);font-weight:700;overflow-wrap:norma
 .ans{color:var(--good);font-weight:700;margin:8px 0 4px}.why{color:var(--muted);margin:0}
 nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}nav.toc a{background:var(--accent-soft);padding:4px 10px;border-radius:999px;text-decoration:none;font-size:15px}
 footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}footer .wrap{padding-block:18px}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:8px 0}
+.sgrid a{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--ink);font-weight:700}
+.sgrid a:hover,.fgrid a:hover{border-color:var(--accent)}.sgrid .n{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);font-weight:400;white-space:nowrap}
+.fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:8px 0}@media (max-width:640px){.fgrid{grid-template-columns:1fr}}
+.fgrid a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}
+.fgrid b{display:block;font-size:17px;margin-bottom:2px}.fgrid span{color:var(--muted);font-size:15px}
 """
 
 
@@ -1434,6 +1440,26 @@ def buy_box(conf, kind):
             f'<a class="cta" href="{pb}?buy={kind}">Get it for ₹{price}</a></div>{status}')
 
 
+FEATURES = {   # how the practice tools work (shown on the PYQs and mock-test pages; the app pages are /<exam>/<view>/)
+  'practice': ('Topic-wise quiz', 'Choose papers, subjects and topics, the number of questions, and practice or timed-test mode.'),
+  'mistakes': ('Mistakes notebook', 'Every question you get wrong or skip is filed automatically, sorted by subject.'),
+  'smart': ('Smart quiz', 'Re-attempt your mistakes from memory. Two correct answers in a row clears a question.'),
+  'heatmap': ('Memory heatmap', 'Topic-wise accuracy in one grid, so your weak areas show up at a glance.'),
+}
+
+
+def features_html(pb, keys):
+    return '<div class="fgrid">' + ''.join(f'<a href="{pb}{k}/"><b>{esc(FEATURES[k][0])}</b><span>{esc(FEATURES[k][1])}</span></a>' for k in keys) + '</div>'
+
+
+def subjects_html(conf, questions):
+    """Practise by subject: one card per subject, opening the quiz builder with that subject picked."""
+    pb, cnt = conf['pb'], {}
+    for q in questions: cnt[q['s']] = cnt.get(q['s'], 0) + 1
+    return '<div class="sgrid">' + ''.join(f'<a href="{pb}?subj={s[0]}"><span>{esc(s[1])}</span><span class="n">{cnt[s[0]]} Q</span></a>'
+                                           for s in conf['subjects'] if cnt.get(s[0])) + '</div>'
+
+
 def pyq_page(conf, papers, questions):
     """Tile 1: PYQs — read free, attempt with the PYQ Pass."""
     pb, seo, l2 = conf['pb'], conf['seo'], conf['l2']
@@ -1449,6 +1475,8 @@ def pyq_page(conf, papers, questions):
         f'<a class="cta alt" href="{base}papers/{p["slug"]}.html">Read with answers (free)</a><a class="cta alt" href="{pdf_href(conf, p)}" download>PDF</a>'
         f'<a class="cta" href="{pb}?test={p["id"]}">Attempt as a timed test</a></li>' for p in ps)
     body = (buy_box(conf, 'pyq') + '<h2>Previous papers</h2><ol class="qs">' + rows + '</ol>'
+            + '<h2>Practise by subject</h2><p>Pick a subject to build a quiz from every paper.</p>' + subjects_html(conf, questions)
+            + '<h2>How practice works</h2>' + features_html(pb, ('practice', 'mistakes', 'smart', 'heatmap'))
             + '<h2>Free and with the pass</h2><ul>'
             '<li><b>Free for everyone:</b> every paper, subject page and question page with the official answer and explanation, the PDFs, and the question of the day.</li>'
             f'<li><b>With the PYQ Pass (₹{PAY["pyq_price"]}):</b> attempt papers as practice quizzes and timed tests, PYQ sectionals, topic-wise quizzes, Smart Quiz and Mistakes revision, with your scores and topic-wise analysis.</li>'
@@ -1537,6 +1565,7 @@ def mock_page(conf, papers, questions):
             '<li>The timer gives you one minute per question. You can move between questions and change answers until you submit.</li>'
             '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question. Wrong answers go to your Mistakes notebook.</li>'
             f'<li>Previous papers as tests need the ₹{PAY["pyq_price"]} PYQ Pass{" (included in " + esc(mk["name"]) + ")" if mk else ""}. Register once with your phone number and use the same number when you pay.</li></ul>'
+            + '<h2>After every test</h2>' + features_html(pb, ('mistakes', 'smart', 'heatmap'))
             + f'<p><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a><a class="cta alt" href="{pb}pyqs.html">All {esc(seo)} PYQs</a></p>')
     lede = esc((f'{mk["title"]}, plus every real {seo} previous paper as a timed mock test.') if mk else
                f'Take a real {seo} previous paper as a full mock test with a timer, then see your score and an explanation for every answer.')
