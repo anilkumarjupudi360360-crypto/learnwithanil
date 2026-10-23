@@ -1,0 +1,722 @@
+{
+ "1": {
+  "d": [
+   "Eleventh",
+   "Tenth",
+   "Ninth"
+  ],
+  "dt": [
+   "పదకొండవ",
+   "పదవ",
+   "తొమ్మిదవ"
+  ]
+ },
+ "2": {
+  "d": [
+   "Money market",
+   "Commodity market",
+   "Foreign exchange market"
+  ],
+  "dt": [
+   "ద్రవ్య వ్యాపార కూడలి (కేంద్రం)",
+   "సరుకుల వ్యాపార కూడలి (కేంద్రం)",
+   "విదేశీ మారక ద్రవ్య వ్యాపార కూడలి (కేంద్రం)"
+  ]
+ },
+ "3": {
+  "d": [
+   "IMF",
+   "UNCTAD",
+   "IBRD"
+  ],
+  "dt": [
+   "ఐ.ఎమ్.ఎఫ్",
+   "యు.ఎన్.సి.టి.ఎ.డి (అంక్టాడ్)",
+   "ఐ.బి.ఆర్.డి"
+  ]
+ },
+ "4": {
+  "d": [
+   "Rent of land or period of lease, or both",
+   "Wages of farm labour or working hours, or both",
+   "Rate of interest on crop loans or repayment period, or both"
+  ],
+  "dt": [
+   "భూమి కౌలు లేదా కౌలు కాలం లేదా ఈ రెండూ.",
+   "వ్యవసాయ కూలీల వేతనం లేదా పని గంటలు లేదా ఈ రెండూ.",
+   "పంట రుణాలపై వడ్డీ రేటు లేదా తిరిగి చెల్లింపు కాలం లేదా ఈ రెండూ."
+  ]
+ },
+ "5": {
+  "d": [
+   "Minimum Support Prices",
+   "Procurement Prices",
+   "Market Intervention Prices"
+  ],
+  "dt": [
+   "కనీస మద్దతు ధరలు",
+   "సేకరణ ధరలు",
+   "మార్కెట్ జోక్య ధరలు"
+  ]
+ },
+ "6": {
+  "d": [
+   "Through an open outcry auction in the market yard",
+   "Through sealed tender boxes at the mandi",
+   "Through commission agents over the telephone"
+  ],
+  "dt": [
+   "మార్కెట్ యార్డులో బహిరంగ కేకల వేలం ద్వారా",
+   "మండీలో సీల్డ్ టెండర్ పెట్టెల ద్వారా",
+   "టెలిఫోన్ పై కమీషన్ ఏజెంట్ల ద్వారా"
+  ]
+ },
+ "7": {
+  "d": [
+   "GDP at market price + indirect taxes – subsidies",
+   "GDP at market price – depreciation",
+   "GDP at market price + net factor income from abroad"
+  ],
+  "dt": [
+   "జిడిపి మార్కెట్ వెల + పరోక్ష పన్నులు - రాయితీలు",
+   "జిడిపి మార్కెట్ వెల - తరుగుదల",
+   "జిడిపి మార్కెట్ వెల + విదేశాల నుండి నికర కారక ఆదాయం"
+  ]
+ },
+ "8": {
+  "d": [
+   "Inferior goods",
+   "Giffen goods",
+   "Substitute goods"
+  ],
+  "dt": [
+   "నాసిరకం వస్తువులు",
+   "గిఫెన్ వస్తువులు",
+   "ప్రత్యామ్నాయ వస్తువులు"
+  ]
+ },
+ "9": {
+  "d": [
+   "Specific tax only",
+   "Lump-sum tax only",
+   "Both specific tax and poll tax"
+  ],
+  "dt": [
+   "సరుకు పరిమాణం ఆధారంగా వేసే నిర్దిష్ట పన్ను మాత్రమే",
+   "ఏకమొత్త పన్ను మాత్రమే",
+   "నిర్దిష్ట పన్ను మరియు తలసరి పన్ను"
+  ]
+ },
+ "10": {
+  "d": [
+   "Atomic energy",
+   "Railway transport",
+   "Minerals specified in the atomic energy schedule"
+  ],
+  "dt": [
+   "అణుశక్తి",
+   "రైల్వే రవాణా",
+   "అణుశక్తి షెడ్యూలులో పేర్కొన్న ఖనిజాలు"
+  ]
+ },
+ "11": {
+  "d": [
+   "2020",
+   "2025",
+   "2030"
+  ],
+  "dt": [
+   "2020 సం॥",
+   "2025 సం॥",
+   "2030 సం॥"
+  ]
+ },
+ "12": {
+  "d": [
+   "NITI Aayog",
+   "Planning Commission",
+   "Reserve Bank of India"
+  ],
+  "dt": [
+   "నీతి ఆయోగ్",
+   "ప్రణాళికా సంఘం",
+   "భారతీయ రిజర్వ్ బ్యాంకు"
+  ]
+ },
+ "14": {
+  "d": [
+   "China",
+   "United States",
+   "Russia"
+  ],
+  "dt": [
+   "చైనా",
+   "అమెరికా సంయుక్త రాష్ట్రాలు",
+   "రష్యా"
+  ]
+ },
+ "15": {
+  "d": [
+   "Bihar",
+   "Madhya Pradesh",
+   "West Bengal"
+  ],
+  "dt": [
+   "బీహార్",
+   "మధ్య ప్రదేశ్",
+   "పశ్చిమ బెంగాల్"
+  ]
+ },
+ "16": {
+  "d": [
+   "Patna",
+   "Shimla",
+   "Srinagar"
+  ],
+  "dt": [
+   "పాట్నా",
+   "సిమ్లా",
+   "శ్రీనగర్"
+  ]
+ },
+ "17": {
+  "d": [
+   "Forests",
+   "Energy",
+   "Land"
+  ],
+  "dt": [
+   "అడవులు",
+   "శక్తి",
+   "భూమి"
+  ]
+ },
+ "18": {
+  "d": [
+   "2010–11",
+   "2012–13",
+   "2016–17"
+  ],
+  "dt": [
+   "2010 – 11",
+   "2012 – 13",
+   "2016 – 17"
+  ]
+ },
+ "19": {
+  "d": [
+   "Dr. Arvind Panagariya",
+   "Dr. V.K. Saraswat",
+   "Dr. Bibek Debroy"
+  ],
+  "dt": [
+   "డా॥ అరవింద్ పనగరియా",
+   "డా॥ వి.కె. సారస్వత్",
+   "డా॥ బిబేక్ దేబ్‌రాయ్"
+  ]
+ },
+ "20": {
+  "d": [
+   "16 October",
+   "5 June",
+   "22 April"
+  ],
+  "dt": [
+   "16 అక్టోబర్",
+   "5 జూన్",
+   "22 ఏప్రిల్"
+  ]
+ },
+ "21": {
+  "d": [
+   "Kerala",
+   "Meghalaya",
+   "Uttarakhand"
+  ],
+  "dt": [
+   "కేరళ",
+   "మేఘాలయ",
+   "ఉత్తరాఖండ్"
+  ]
+ },
+ "23": {
+  "d": [
+   "5 percent",
+   "9 percent",
+   "10 percent"
+  ],
+  "dt": [
+   "5 శాతం",
+   "9 శాతం",
+   "10 శాతం"
+  ]
+ },
+ "25": {
+  "d": [
+   "9th Five Year Plan",
+   "10th Five Year Plan",
+   "12th Five Year Plan"
+  ],
+  "dt": [
+   "9 వ పంచవర్ష ప్రణాళిక",
+   "10 వ పంచవర్ష ప్రణాళిక",
+   "12 వ పంచవర్ష ప్రణాళిక"
+  ]
+ },
+ "26": {
+  "d": [
+   "2006–07",
+   "2008–09",
+   "2010–11"
+  ],
+  "dt": [
+   "2006 – 07",
+   "2008 – 09",
+   "2010 – 11"
+  ]
+ },
+ "27": {
+  "d": [
+   "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+   "Paramparagat Krishi Vikas Yojana (PKVY)",
+   "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+  ],
+  "dt": [
+   "ప్రధాన మంత్రి ఫసల్ బీమా యోజన (PMFBY)",
+   "పరంపరాగత్ కృషి వికాస్ యోజన (PKVY)",
+   "ప్రధాన మంత్రి కిసాన్ సమ్మాన్ నిధి (PM-KISAN)"
+  ]
+ },
+ "28": {
+  "d": [
+   "Coal",
+   "Cement",
+   "Fertilisers"
+  ],
+  "dt": [
+   "బొగ్గు (Coal)",
+   "సిమెంట్ (Cement)",
+   "ఎరువులు (Fertilizers)"
+  ]
+ },
+ "29": {
+  "d": [
+   "Human Development Index",
+   "Physical Quality of Life Index",
+   "Gender Development Index"
+  ],
+  "dt": [
+   "మానవాభివృద్ధి సూచీ",
+   "భౌతిక జీవన నాణ్యతా సూచీ",
+   "లింగ అభివృద్ధి సూచీ"
+  ]
+ },
+ "31": {
+  "d": [
+   "Bangladesh",
+   "United States",
+   "Pakistan"
+  ],
+  "dt": [
+   "బంగ్లాదేశ్",
+   "అమెరికా",
+   "పాకిస్తాన్"
+  ]
+ },
+ "32": {
+  "d": [
+   "₹176",
+   "₹300",
+   "₹450"
+  ],
+  "dt": [
+   "రు. 176 /-",
+   "రు. 300 /-",
+   "రు. 450 /-"
+  ]
+ },
+ "33": {
+  "d": [
+   "4.7 percent",
+   "5.3 percent",
+   "7.8 percent"
+  ],
+  "dt": [
+   "4.7 శాతం",
+   "5.3 శాతం",
+   "7.8 శాతం"
+  ]
+ },
+ "34": {
+  "d": [
+   "25 years",
+   "33 years",
+   "37 years"
+  ],
+  "dt": [
+   "25 సంవత్సరములు",
+   "33 సంవత్సరములు",
+   "37 సంవత్సరములు"
+  ]
+ },
+ "35": {
+  "d": [
+   "Goa",
+   "Tamil Nadu",
+   "Mizoram"
+  ],
+  "dt": [
+   "గోవా",
+   "తమిళనాడు",
+   "మిజోరం"
+  ]
+ },
+ "36": {
+  "d": [
+   "Human capital",
+   "Social capital",
+   "Natural capital"
+  ],
+  "dt": [
+   "మానవ మూలధనం",
+   "సామాజిక మూలధనం",
+   "సహజ మూలధనం"
+  ]
+ },
+ "37": {
+  "d": [
+   "52.10 percent",
+   "45.30 percent",
+   "59.80 percent"
+  ],
+  "dt": [
+   "52.10 శాతం",
+   "45.30 శాతం",
+   "59.80 శాతం"
+  ]
+ },
+ "39": {
+  "d": [
+   "2010",
+   "2014",
+   "2016"
+  ],
+  "dt": [
+   "2010 సం॥",
+   "2014 సం॥",
+   "2016 సం॥"
+  ]
+ },
+ "40": {
+  "d": [
+   "Cash Reserve Ratio",
+   "Statutory Liquidity Ratio",
+   "Market Stabilisation Scheme"
+  ],
+  "dt": [
+   "నగదు నిల్వల నిష్పత్తి",
+   "చట్టబద్ధ ద్రవ్యత్వ నిష్పత్తి",
+   "మార్కెట్ స్థిరీకరణ పథకం"
+  ]
+ },
+ "41": {
+  "d": [
+   "2.0 percent of GDP",
+   "1.5 percent of GDP",
+   "2.8 percent of GDP"
+  ],
+  "dt": [
+   "స్థూల దేశీయోత్పత్తి నందు 2.00 శాతం",
+   "స్థూల దేశీయోత్పత్తి నందు 1.50 శాతం",
+   "స్థూల దేశీయోత్పత్తి నందు 2.80 శాతం"
+  ]
+ },
+ "42": {
+  "d": [
+   "Primary deficit",
+   "Current account deficit",
+   "Trade deficit"
+  ],
+  "dt": [
+   "ప్రాథమిక లోటు",
+   "కరెంట్ ఖాతా లోటు",
+   "వాణిజ్య లోటు"
+  ]
+ },
+ "43": {
+  "d": [
+   "2.5 percent",
+   "3.0 percent",
+   "5.0 percent"
+  ],
+  "dt": [
+   "2.5 శాతం",
+   "3.0 శాతం",
+   "5.0 శాతం"
+  ]
+ },
+ "44": {
+  "d": [
+   "Headline inflation",
+   "Cost-push inflation",
+   "Demand-pull inflation"
+  ],
+  "dt": [
+   "హెడ్‌లైన్ ద్రవ్యోల్బణం",
+   "వ్యయ ప్రేరిత ద్రవ్యోల్బణం",
+   "డిమాండ్ ప్రేరిత ద్రవ్యోల్బణం"
+  ]
+ },
+ "45": {
+  "d": [
+   "An increase in the rate of taxation always leads to a proportionate increase in tax yield",
+   "A reduction in the rate of taxation leads to a proportionate fall in tax yield",
+   "Tax yield remains unchanged whatever the rate of taxation"
+  ],
+  "dt": [
+   "పన్నురేట్ల పెంపు ఫలితంగా ఎల్లప్పుడూ అదే అనుపాతంలో పన్ను రాబడి పెరుగుదల",
+   "పన్నురేట్ల తగ్గింపు ఫలితంగా అదే అనుపాతంలో పన్ను రాబడి తగ్గుదల",
+   "పన్నురేట్లు ఎలా ఉన్నా పన్ను రాబడిలో మార్పు లేకపోవుట"
+  ]
+ },
+ "47": {
+  "d": [
+   "₹50,000 crore",
+   "₹80 crore",
+   "₹12,000 crore"
+  ],
+  "dt": [
+   "రు.50000 కోట్లు",
+   "రు.80 కోట్లు",
+   "రు.12000 కోట్లు"
+  ]
+ },
+ "48": {
+  "d": [
+   "Personal income",
+   "Personal disposable income",
+   "Private income"
+  ],
+  "dt": [
+   "వ్యక్తిగత ఆదాయం",
+   "వ్యక్తిగత వినియోగార్హ ఆదాయం",
+   "ప్రైవేటు ఆదాయం"
+  ]
+ },
+ "49": {
+  "d": [
+   "1.0 percent",
+   "5.5 percent",
+   "8.0 percent"
+  ],
+  "dt": [
+   "1.0 శాతం",
+   "5.5 శాతం",
+   "8.0 శాతం"
+  ]
+ },
+ "50": {
+  "d": [
+   "3.5 percent per annum",
+   "7.2 percent per annum",
+   "8.0 percent per annum"
+  ],
+  "dt": [
+   "వార్షికంగా 3.5 శాతం",
+   "వార్షికంగా 7.2 శాతం",
+   "వార్షికంగా 8.0 శాతం"
+  ]
+ },
+ "51": {
+  "d": [
+   "Investment driven",
+   "Export driven",
+   "Agriculture driven"
+  ],
+  "dt": [
+   "ఇన్వెస్ట్‌మెంట్ డ్రైవన్ (Investment driven)",
+   "ఎక్స్‌పోర్ట్ డ్రైవన్ (Export driven)",
+   "అగ్రికల్చర్ డ్రైవన్ (Agriculture driven)"
+  ]
+ },
+ "53": {
+  "d": [
+   "Total expenditure on consumption, investment, government purchases of goods and services, and imports over a period of time",
+   "Total value of all goods and services produced, including intermediate goods, over a period of time",
+   "Total factor incomes plus transfer payments and sales of second-hand goods over a period of time"
+  ],
+  "dt": [
+   "సం॥ కాలం నందలి మొత్తం వినియోగ వ్యయం, పెట్టుబడి మరియు వస్తు, సేవల కొనుగోలుకై ప్రభుత్వ ఖర్చు మరియు దిగుమతులు.",
+   "సం॥ కాలం నందలి మాధ్యమిక వస్తువులతో సహా ఉత్పత్తి అయిన అన్ని వస్తు, సేవల మొత్తం విలువ.",
+   "సం॥ కాలం నందలి మొత్తం కారక ఆదాయాలు, బదిలీ చెల్లింపులు మరియు పాత వస్తువుల అమ్మకాలు."
+  ]
+ },
+ "54": {
+  "d": [
+   "Value of total production at the current prices of each year",
+   "Value of total production after deducting depreciation",
+   "Value of total production divided by the population"
+  ],
+  "dt": [
+   "మొత్తం ఉత్పత్తి విలువ ప్రతి సం॥ ప్రస్తుత ధరలతో అనుసంధించుట",
+   "మొత్తం ఉత్పత్తి విలువ నుండి తరుగుదల తీసివేయుట",
+   "మొత్తం ఉత్పత్తి విలువను జనాభాతో భాగించుట"
+  ]
+ },
+ "55": {
+  "d": [
+   "Domestic factor incomes plus transfer payments",
+   "Value of output minus intermediate consumption",
+   "Consumption expenditure plus investment expenditure"
+  ],
+  "dt": [
+   "దేశీయ కారకాల ఆదాయాలు + బదిలీ చెల్లింపులు",
+   "ఉత్పత్తి విలువ – మాధ్యమిక వినియోగం",
+   "వినియోగ వ్యయం + పెట్టుబడి వ్యయం"
+  ]
+ },
+ "56": {
+  "d": [
+   "National income",
+   "Disposable income",
+   "Personal income"
+  ],
+  "dt": [
+   "జాతీయ ఆదాయం",
+   "వినియోగార్హ ఆదాయం",
+   "వ్యక్తిగత ఆదాయం"
+  ]
+ },
+ "57": {
+  "d": [
+   "Kerala",
+   "Haryana",
+   "Maharashtra"
+  ],
+  "dt": [
+   "కేరళ",
+   "హర్యానా",
+   "మహారాష్ట్ర"
+  ]
+ },
+ "58": {
+  "d": [
+   "8 June 2016",
+   "1 May 2018",
+   "2 October 2017"
+  ],
+  "dt": [
+   "8 జూన్, 2016",
+   "1 మే, 2018",
+   "2 అక్టోబర్, 2017"
+  ]
+ },
+ "59": {
+  "d": [
+   "Teachers",
+   "Students",
+   "Traders"
+  ],
+  "dt": [
+   "ఉపాధ్యాయులు",
+   "విద్యార్థులు",
+   "వ్యాపారులు"
+  ]
+ },
+ "60": {
+  "d": [
+   "2012–13",
+   "2014–15",
+   "2015–16"
+  ],
+  "dt": [
+   "2012 – 13",
+   "2014 – 15",
+   "2015 – 16"
+  ]
+ },
+ "62": {
+  "d": [
+   "Anantapur district",
+   "Kadapa district",
+   "Nellore district"
+  ],
+  "dt": [
+   "అనంతపురం జిల్లా",
+   "కడప జిల్లా",
+   "నెల్లూరు జిల్లా"
+  ]
+ },
+ "63": {
+  "d": [
+   "West Bengal",
+   "Gujarat",
+   "Kerala"
+  ],
+  "dt": [
+   "పశ్చిమ బెంగాల్",
+   "గుజరాత్",
+   "కేరళ"
+  ]
+ },
+ "64": {
+  "d": [
+   "Gujarat",
+   "Kerala",
+   "Tamil Nadu"
+  ],
+  "dt": [
+   "గుజరాత్",
+   "కేరళ",
+   "తమిళనాడు"
+  ]
+ },
+ "65": {
+  "d": [
+   "1.05",
+   "1.42",
+   "1.60"
+  ],
+  "dt": [
+   "1.05",
+   "1.42",
+   "1.60"
+  ]
+ },
+ "66": {
+  "d": [
+   "Canal irrigation",
+   "Tank irrigation",
+   "Lift irrigation"
+  ],
+  "dt": [
+   "కాలువలు",
+   "చెరువులు",
+   "ఎత్తిపోతల పథకాలు"
+  ]
+ },
+ "67": {
+  "d": [
+   "1,028 persons",
+   "1,742 persons",
+   "2,315 persons"
+  ],
+  "dt": [
+   "1028",
+   "1742",
+   "2315"
+  ]
+ },
+ "69": {
+  "d": [
+   "2",
+   "6",
+   "8"
+  ],
+  "dt": [
+   "2 సెజ్ లు",
+   "6 సెజ్ లు",
+   "8 సెజ్ లు"
+  ]
+ }
+}

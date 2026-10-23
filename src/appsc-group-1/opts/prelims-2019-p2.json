@@ -1,0 +1,1106 @@
+{
+ "4": {
+  "d": [
+   "cbca",
+   "acbc",
+   "ccab"
+  ],
+  "dt": [
+   "cbca",
+   "acbc",
+   "ccab"
+  ]
+ },
+ "5": {
+  "d": [
+   "G, H, R",
+   "H, I, Q",
+   "Q, G, H"
+  ],
+  "dt": [
+   "G, H, R",
+   "H, I, Q",
+   "Q, G, H"
+  ]
+ },
+ "6": {
+  "d": [
+   "39",
+   "65",
+   "73"
+  ],
+  "dt": [
+   "39",
+   "65",
+   "73"
+  ]
+ },
+ "7": {
+  "d": [
+   "GPNTX",
+   "GTPNX",
+   "GPTXN"
+  ],
+  "dt": [
+   "GPNTX",
+   "GTPNX",
+   "GPTXN"
+  ]
+ },
+ "8": {
+  "d": [
+   "C % B % F % E",
+   "C @ B % F $ E",
+   "C $ B % F % E"
+  ],
+  "dt": [
+   "C % B % F % E",
+   "C @ B % F $ E",
+   "C $ B % F % E"
+  ]
+ },
+ "9": {
+  "d": [
+   "A × D ÷ B",
+   "A ÷ D + B",
+   "A ÷ B × D"
+  ],
+  "dt": [
+   "A × D ÷ B",
+   "A ÷ D + B",
+   "A ÷ B × D"
+  ]
+ },
+ "10": {
+  "d": [
+   "7x",
+   "14x",
+   "x + 7"
+  ],
+  "dt": [
+   "7x",
+   "14x",
+   "x + 7"
+  ]
+ },
+ "11": {
+  "d": [
+   "43 5/11 min. past 5",
+   "40 min. past 5",
+   "45 2/11 min. past 5"
+  ],
+  "dt": [
+   "43 5/11 నిమి. 5 తర్వాత",
+   "40 నిమి. 5 తర్వాత",
+   "45 2/11 నిమి. 5 తర్వాత"
+  ]
+ },
+ "12": {
+  "d": [
+   "1",
+   "4",
+   "88"
+  ],
+  "dt": [
+   "1",
+   "4",
+   "88"
+  ]
+ },
+ "13": {
+  "d": [
+   "176",
+   "198",
+   "748"
+  ],
+  "dt": [
+   "176",
+   "198",
+   "748"
+  ]
+ },
+ "14": {
+  "d": [
+   "50 : 17",
+   "17 : 25",
+   "34 : 75"
+  ],
+  "dt": [
+   "50 : 17",
+   "17 : 25",
+   "34 : 75"
+  ]
+ },
+ "15": {
+  "d": [
+   "200",
+   "300",
+   "400"
+  ],
+  "dt": [
+   "200",
+   "300",
+   "400"
+  ]
+ },
+ "16": {
+  "d": [
+   "25 percent",
+   "33 percent",
+   "75 percent"
+  ],
+  "dt": [
+   "25 శాతం",
+   "33 శాతం",
+   "75 శాతం"
+  ]
+ },
+ "18": {
+  "d": [
+   "16",
+   "32",
+   "128"
+  ],
+  "dt": [
+   "16",
+   "32",
+   "128"
+  ]
+ },
+ "19": {
+  "d": [
+   "96",
+   "120",
+   "132"
+  ],
+  "dt": [
+   "96",
+   "120",
+   "132"
+  ]
+ },
+ "20": {
+  "d": [
+   "5%",
+   "8%",
+   "12%"
+  ],
+  "dt": [
+   "5%",
+   "8%",
+   "12%"
+  ]
+ },
+ "21": {
+  "d": [
+   "X = 2Z",
+   "Z = 4X",
+   "X = 4Z"
+  ],
+  "dt": [
+   "X = 2Z",
+   "Z = 4X",
+   "X = 4Z"
+  ]
+ },
+ "22": {
+  "d": [
+   "2 days",
+   "8 days",
+   "15 days"
+  ],
+  "dt": [
+   "2 రోజులలో",
+   "8 రోజులలో",
+   "15 రోజులలో"
+  ]
+ },
+ "23": {
+  "d": [
+   "18 seconds",
+   "20 seconds",
+   "144 seconds"
+  ],
+  "dt": [
+   "18 సెకన్లు",
+   "20 సెకన్లు",
+   "144 సెకన్లు"
+  ]
+ },
+ "24": {
+  "d": [
+   "8736 cm³",
+   "3408 cm³",
+   "5940 cm³"
+  ],
+  "dt": [
+   "8736 cm³",
+   "3408 cm³",
+   "5940 cm³"
+  ]
+ },
+ "25": {
+  "d": [
+   "1 : 25",
+   "5 : 1",
+   "1 : 125"
+  ],
+  "dt": [
+   "1 : 25",
+   "5 : 1",
+   "1 : 125"
+  ]
+ },
+ "26": {
+  "d": [
+   "x=20°, y=40°, z=60°",
+   "x=60°, y=120°, z=180°",
+   "x=15°, y=30°, z=45°"
+  ],
+  "dt": [
+   "x=20°, y=40°, z=60°",
+   "x=60°, y=120°, z=180°",
+   "x=15°, y=30°, z=45°"
+  ]
+ },
+ "27": {
+  "d": [
+   "18°",
+   "72°",
+   "288°"
+  ],
+  "dt": [
+   "18°",
+   "72°",
+   "288°"
+  ]
+ },
+ "28": {
+  "d": [
+   "2",
+   "4",
+   "15"
+  ],
+  "dt": [
+   "2",
+   "4",
+   "15"
+  ]
+ },
+ "29": {
+  "d": [
+   "15",
+   "25",
+   "135"
+  ],
+  "dt": [
+   "15",
+   "25",
+   "135"
+  ]
+ },
+ "30": {
+  "d": [
+   "7/22",
+   "25/144",
+   "35/66"
+  ],
+  "dt": [
+   "7/22",
+   "25/144",
+   "35/66"
+  ]
+ },
+ "32": {
+  "d": [
+   "COCAKPINA",
+   "BNBAJOHMZ",
+   "COCBKPINZ"
+  ],
+  "dt": [
+   "COCAKPINA",
+   "BNBAJOHMZ",
+   "COCBKPINZ"
+  ]
+ },
+ "33": {
+  "d": [
+   "Do nothing about the mistake, since the email has already gone. Send the email to the correct person the next morning.",
+   "Send the email to the correct person and simply hope that the \"wrong\" person does not open the attachment.",
+   "Leave the matter till the next day, and then ask your colleagues what should be done about the mistake."
+  ],
+  "dt": [
+   "మెయిల్ ఇప్పటికే వెళ్ళిపోయింది కాబట్టి తప్పు గురించి ఏమీ చేయకపోవటం, మరుసటి రోజు ఉదయం సరైన వ్యక్తికి మెయిల్ పెట్టటం.",
+   "సరైన వ్యక్తికి మెయిల్ పెట్టి, తప్పుడు వ్యక్తి ఆ అటాచ్‌మెంట్‌ను తెరవడని ఆశించటం.",
+   "విషయాన్ని మరుసటి రోజుకు వదిలేసి, తర్వాత ఆ తప్పు గురించి ఏం చేయాలో సహోద్యోగులను అడగటం."
+  ]
+ },
+ "34": {
+  "d": [
+   "Assume you are being treated unfairly and complain to your colleagues.",
+   "Say nothing and wait to see whether a new computer arrives for you.",
+   "Confront your manager angrily and demand to know why you were left out."
+  ],
+  "dt": [
+   "మీకు అన్యాయం జరుగుతోందనుకొని సహోద్యోగుల దగ్గర ఫిర్యాదు చేయటం.",
+   "ఏమీ మాట్లాడకుండా మీకు కొత్త కంప్యూటర్ వస్తుందేమోనని ఎదురుచూడటం.",
+   "మిమ్మల్ని ఎందుకు వదిలేశారని మేనేజరును కోపంగా నిలదీయటం."
+  ]
+ },
+ "35": {
+  "d": [
+   "16",
+   "503",
+   "510"
+  ],
+  "dt": [
+   "16",
+   "503",
+   "510"
+  ]
+ },
+ "36": {
+  "d": [
+   "27",
+   "75",
+   "243"
+  ],
+  "dt": [
+   "27",
+   "75",
+   "243"
+  ]
+ },
+ "37": {
+  "d": [
+   "Monday",
+   "Saturday",
+   "Friday"
+  ],
+  "dt": [
+   "సోమవారం",
+   "శనివారం",
+   "శుక్రవారం"
+  ]
+ },
+ "38": {
+  "d": [
+   "North-East",
+   "South-West",
+   "South"
+  ],
+  "dt": [
+   "ఈశాన్యం",
+   "నైరుతి",
+   "దక్షిణం"
+  ]
+ },
+ "39": {
+  "d": [
+   "3 : 2",
+   "2 : 3",
+   "3 : 5"
+  ],
+  "dt": [
+   "3 : 2",
+   "2 : 3",
+   "3 : 5"
+  ]
+ },
+ "40": {
+  "d": [
+   "Rs. 12,00,000",
+   "Rs. 18,00,000",
+   "Rs. 30,00,000"
+  ],
+  "dt": [
+   "రూ 12,00,000",
+   "రూ 18,00,000",
+   "రూ 30,00,000"
+  ]
+ },
+ "41": {
+  "d": [
+   "Football",
+   "Hockey",
+   "Tennis"
+  ],
+  "dt": [
+   "ఫుట్‌బాల్",
+   "హాకీ",
+   "టెన్నిస్"
+  ]
+ },
+ "42": {
+  "d": [
+   "Cricket and Hockey",
+   "Tennis and Golf",
+   "Football and Basketball"
+  ],
+  "dt": [
+   "క్రికెట్ మరియు హాకీ",
+   "టెన్నిస్ మరియు గోల్ఫ్",
+   "ఫుట్‌బాల్ మరియు బాస్కెటబాల్"
+  ]
+ },
+ "43": {
+  "d": [
+   "Rs.37,50,000",
+   "Rs.48,00,000",
+   "Rs.52,50,000"
+  ],
+  "dt": [
+   "రూ 37,50,000",
+   "రూ 48,00,000",
+   "రూ 52,50,000"
+  ]
+ },
+ "45": {
+  "d": [
+   "18",
+   "20",
+   "28"
+  ],
+  "dt": [
+   "18",
+   "20",
+   "28"
+  ]
+ },
+ "46": {
+  "d": [
+   "1",
+   "2",
+   "6"
+  ],
+  "dt": [
+   "1",
+   "2",
+   "6"
+  ]
+ },
+ "47": {
+  "d": [
+   "5/12",
+   "5/66",
+   "25/144"
+  ],
+  "dt": [
+   "5/12",
+   "5/66",
+   "25/144"
+  ]
+ },
+ "48": {
+  "d": [
+   "6",
+   "10",
+   "12"
+  ],
+  "dt": [
+   "6",
+   "10",
+   "12"
+  ]
+ },
+ "49": {
+  "d": [
+   "Tell the villager that you are busy now and ask him to come and meet you some other day.",
+   "Ignore the villager and rush to the next meeting, as official meetings must come first.",
+   "Ask the villager to send his application to your office by post and leave for the meeting."
+  ],
+  "dt": [
+   "ఇప్పుడు బిజీగా ఉన్నానని, మరో రోజు వచ్చి కలవమని ఆవ్యక్తికి చెప్పటం.",
+   "అధికారిక మీటింగ్ లే ముఖ్యం కాబట్టి ఆవ్యక్తిని పట్టించుకోకుండా మరో మీటింగ్ కు వెళ్ళిపోవటం.",
+   "తన ఉత్తరాన్ని పోస్టు ద్వారా మీ ఆఫీసుకు పంపమని ఆవ్యక్తికి చెప్పి మీటింగ్ కు వెళ్ళిపోవటం."
+  ]
+ },
+ "50": {
+  "d": [
+   "Ignore the matter, since the amount is small and you are in a hurry for the meeting.",
+   "Argue with the clerk at the counter until he returns the extra money, even if you miss the meeting.",
+   "Pay the extra amount quietly, as this is the usual practice at such transport offices."
+  ],
+  "dt": [
+   "మొత్తం చిన్నది, మీరు మీటింగుకు తొందరగా వెళ్ళాలి కాబట్టి ఆవిషయాన్ని పట్టించుకోకపోవటం.",
+   "మీటింగ్ తప్పిపోయినా సరే, ఆ క్లర్క్ ఎక్కువ డబ్బు తిరిగి ఇచ్చేవరకు కౌంటర్ దగ్గర వాదించటం.",
+   "ఇలాంటి ట్రాన్స్ పోర్టు ఆఫీసుల్లో ఇది మామూలే కాబట్టి ఎక్కువ మొత్తాన్ని మౌనంగా చెల్లించటం."
+  ]
+ },
+ "51": {
+  "d": [
+   "You will tell her mother only about Anjali's poor marks and warn her that Anjali may fail if this continues.",
+   "You will not call her mother at all, as the family is already going through a very difficult time.",
+   "You will advise her mother to shift Anjali to another school where she can make a fresh start."
+  ],
+  "dt": [
+   "ఆమె తల్లికి అంజలి తక్కువ మార్కుల గురించి మాత్రమే చెప్పి, ఇలాగే కొనసాగితే ఆమె ఫెయిల్ అవుతుందని హెచ్చరించడం.",
+   "ఆ కుటుంబం ఇప్పటికే చాలా కష్టకాలంలో ఉంది కాబట్టి ఆమె తల్లిని అసలు పిలిపించకపోవడం.",
+   "అంజలి కొత్తగా మొదలుపెట్టేలా ఆమెను వేరే స్కూలుకు మార్చమని ఆమె తల్లికి సలహా ఇవ్వడం."
+  ]
+ },
+ "52": {
+  "d": [
+   "Submit a report based only on your own observations, without consulting the group members.",
+   "Ask the most senior member of the group to prepare and submit the report on his own.",
+   "Submit a short report including only those views of members that agree with your own opinion."
+  ],
+  "dt": [
+   "సభ్యులను సంప్రదించకుండా మీ సొంత పరిశీలనల ఆధారంగా మాత్రమే నివేదిక సమర్పిస్తారు.",
+   "జట్టులోని అత్యంత సీనియర్ సభ్యుడినే సొంతంగా నివేదిక తయారుచేసి సమర్పించమంటారు.",
+   "మీ అభిప్రాయంతో ఏకీభవించే సభ్యుల అభిప్రాయాలను మాత్రమే చేర్చి చిన్న నివేదిక సమర్పిస్తారు."
+  ]
+ },
+ "53": {
+  "d": [
+   "Ask the organisers to cancel the fair, since large crowds always carry a risk of stampede.",
+   "Leave the crowd control entirely to the temple committee and its volunteers.",
+   "Deploy all the police officers only at the main entrance of the holy shrine."
+  ],
+  "dt": [
+   "పెద్ద గుంపుల వల్ల ఎప్పుడూ తొక్కిసలాట ప్రమాదం ఉంటుంది కాబట్టి ఉత్సవాన్ని రద్దు చేయమని నిర్వాహకులను కోరతారు.",
+   "గుంపు నియంత్రణను పూర్తిగా ఆలయ కమిటీకి, దాని వాలంటీర్లకు వదిలేస్తారు.",
+   "పోలీసు అధికారులందరినీ పవిత్ర స్థలం ప్రధాన ద్వారం దగ్గర మాత్రమే నియమిస్తారు."
+  ]
+ },
+ "54": {
+  "d": [
+   "Encoding",
+   "Feedback",
+   "Transmission"
+  ],
+  "dt": [
+   "ఎన్‌కోడింగ్",
+   "ఫీడ్‌బ్యాక్",
+   "ట్రాన్స్‌మిషన్"
+  ]
+ },
+ "55": {
+  "d": [
+   "Authority",
+   "Superiority",
+   "Distance"
+  ],
+  "dt": [
+   "అధికారాన్ని",
+   "ఆధిక్యతను",
+   "దూరాన్ని"
+  ]
+ },
+ "56": {
+  "d": [
+   "The ability to solve abstract problems quickly by logical reasoning",
+   "The ability to suppress one's own feelings in all situations",
+   "The ability to express one's emotions freely without any control"
+  ],
+  "dt": [
+   "తార్కిక ఆలోచనతో క్లిష్టమైన సమస్యలను వేగంగా పరిష్కరించగలగటం",
+   "అన్ని పరిస్థితుల్లోనూ తమ భావాలను అణచివేయగలగటం",
+   "ఎలాంటి నియంత్రణ లేకుండా తమ భావాలను స్వేచ్ఛగా వ్యక్తపరచగలగటం"
+  ]
+ },
+ "57": {
+  "d": [
+   "Logic",
+   "Statistics",
+   "Rules"
+  ],
+  "dt": [
+   "తర్కం",
+   "గణాంకాలు",
+   "నియమాలు"
+  ]
+ },
+ "58": {
+  "d": [
+   "Accepting the beliefs of experts without question",
+   "Finding faults in the opinions of others",
+   "Memorising facts and information accurately"
+  ],
+  "dt": [
+   "నిపుణుల నమ్మకాలను ప్రశ్నించకుండా అంగీకరిస్తాయి",
+   "ఇతరుల అభిప్రాయాల్లో తప్పులను వెతుకుతాయి",
+   "వాస్తవాలను, సమాచారాన్ని కచ్చితంగా గుర్తుంచుకుంటాయి"
+  ]
+ },
+ "59": {
+  "d": [
+   "LSAOIHEBD",
+   "SLAODHEBI",
+   "LSOADHEBI"
+  ],
+  "dt": [
+   "LSAOIHEBD",
+   "SLAODHEBI",
+   "LSOADHEBI"
+  ]
+ },
+ "60": {
+  "d": [
+   "BSILOACLOIG",
+   "BSLIOALCOIG",
+   "BSILOALCIOG"
+  ],
+  "dt": [
+   "BSILOACLOIG",
+   "BSLIOALCOIG",
+   "BSILOALCIOG"
+  ]
+ },
+ "61": {
+  "d": [
+   "Photoelectric effect",
+   "Thermoelectric effect",
+   "Electromagnetic induction"
+  ],
+  "dt": [
+   "ఫోటో ఎలక్ట్రిక్ ఎఫెక్ట్",
+   "థర్మో ఎలక్ట్రిక్ ఎఫెక్ట్",
+   "ఎలక్ట్రో మాగ్నెటిక్ ఇండక్షన్"
+  ]
+ },
+ "62": {
+  "d": [
+   "Moxie",
+   "Meda",
+   "Rimfax"
+  ],
+  "dt": [
+   "మోక్సీ",
+   "మెడా",
+   "రిమ్‌ఫాక్స్"
+  ]
+ },
+ "64": {
+  "d": [
+   "is more than one",
+   "is equal to one",
+   "is infinite"
+  ],
+  "dt": [
+   "ఒకటి కన్నా ఎక్కువ",
+   "ఒకటికి సమానం",
+   "అనంతం"
+  ]
+ },
+ "65": {
+  "d": [
+   "Reflection, diffraction and interference",
+   "Scattering, polarisation and refraction",
+   "Dispersion, diffraction and scattering"
+  ],
+  "dt": [
+   "ప్రతిబింబం, వివర్తనం, వ్యతికరణం",
+   "పరిక్షేపణం, ధ్రువణం, వక్రీభవనం",
+   "వ్యాప్తి, వివర్తనం, పరిక్షేపణం"
+  ]
+ },
+ "66": {
+  "d": [
+   "PhonePe",
+   "Google Pay",
+   "Amazon Pay"
+  ],
+  "dt": [
+   "ఫోన్‌పే",
+   "గూగుల్ పే",
+   "అమెజాన్ పే"
+  ]
+ },
+ "67": {
+  "d": [
+   "Innovative technology for “Solid Waste Management System”",
+   "Innovative technology for “Air Pollution Monitoring System”",
+   "Innovative technology for “Rainwater Harvesting System”"
+  ],
+  "dt": [
+   "“ఘన వ్యర్థాల నిర్వహణ సిస్టమ్” కొత్త సాంకేతికత",
+   "“వాయు కాలుష్య పర్యవేక్షణ సిస్టమ్” కొత్త సాంకేతికత",
+   "“వాన నీటి సేకరణ సిస్టమ్” కొత్త సాంకేతికత"
+  ]
+ },
+ "68": {
+  "d": [
+   "Prithvi",
+   "Akash",
+   "Trishul"
+  ],
+  "dt": [
+   "పృథ్వి",
+   "ఆకాష్",
+   "త్రిశూల్"
+  ]
+ },
+ "69": {
+  "d": [
+   "Number of bits required for IPv4 address is more than number of bits required for IPv6 address",
+   "Number of bits required for IPv4 address is equal to number of bits required for IPv6 address",
+   "Number of bits required for IPv6 address is twice the number of bits required for IPv4 address"
+  ],
+  "dt": [
+   "IPv6 చిరునామాకు అవసరమయ్యే బిట్ల సంఖ్య కన్నా IPv4 కి అవసరమయ్యే బిట్ల సంఖ్య ఎక్కువ",
+   "IPv6 చిరునామాకు అవసరమయ్యే బిట్ల సంఖ్య, IPv4 కి అవసరమయ్యే బిట్ల సంఖ్య సమానం",
+   "IPv6 చిరునామాకు అవసరమయ్యే బిట్ల సంఖ్య, IPv4 కి అవసరమయ్యే బిట్ల సంఖ్యకు రెట్టింపు"
+  ]
+ },
+ "70": {
+  "d": [
+   "Melissa Virus",
+   "ILOVEYOU Virus",
+   "Chernobyl Virus"
+  ],
+  "dt": [
+   "మెలిస్సా వైరస్",
+   "ఐ లవ్ యు వైరస్",
+   "చెర్నోబిల్ వైరస్"
+  ]
+ },
+ "71": {
+  "d": [
+   "m-commerce",
+   "m-governance",
+   "e-learning"
+  ],
+  "dt": [
+   "ఎమ్-కామర్స్",
+   "ఎమ్-గవర్నెన్స్",
+   "ఇ-లెర్నింగ్"
+  ]
+ },
+ "72": {
+  "d": [
+   "Light Frequency",
+   "Lightwave Fibre",
+   "Line Fidelity"
+  ],
+  "dt": [
+   "లైట్ ఫ్రీక్వెన్సీ",
+   "లైట్‌వేవ్ ఫైబర్",
+   "లైన్ ఫిడిలిటి"
+  ]
+ },
+ "74": {
+  "d": [
+   "Moon",
+   "Mars",
+   "Antarctica"
+  ],
+  "dt": [
+   "మూన్",
+   "మార్స్",
+   "అంటార్కిటికా"
+  ]
+ },
+ "75": {
+  "d": [
+   "Navigation",
+   "Telecommunication",
+   "Space astronomy"
+  ],
+  "dt": [
+   "నావిగేషన్",
+   "టెలికమ్యూనికేషన్",
+   "స్పేస్ ఆస్ట్రానమీ"
+  ]
+ },
+ "76": {
+  "d": [
+   "Mars Orbiter",
+   "Solar Observatory",
+   "Communication Satellite"
+  ],
+  "dt": [
+   "మార్స్ ఆర్బిటర్",
+   "సోలార్ అబ్జర్వేటరీ",
+   "కమ్యూనికేషన్ శాటిలైట్"
+  ]
+ },
+ "77": {
+  "d": [
+   "1,000",
+   "2,500",
+   "15,000"
+  ],
+  "dt": [
+   "1,000",
+   "2,500",
+   "15,000"
+  ]
+ },
+ "78": {
+  "d": [
+   "A submarine",
+   "A cruise missile",
+   "A battle tank"
+  ],
+  "dt": [
+   "ఒక జలాంతర్గామి",
+   "ఒక క్రూయిజ్ మిస్సైల్",
+   "ఒక యుద్ధ ట్యాంక్"
+  ]
+ },
+ "79": {
+  "d": [
+   "ISRO",
+   "BARC",
+   "CSIR"
+  ],
+  "dt": [
+   "ఐ ఎస్ ఆర్ ఓ",
+   "బి ఏ ఆర్ సి",
+   "సి ఎస్ ఐ ఆర్"
+  ]
+ },
+ "80": {
+  "d": [
+   "Anti-ship missile",
+   "Anti-tank missile",
+   "Anti-ballistic missile"
+  ],
+  "dt": [
+   "ఆంటి–షిప్ మిస్సైల్",
+   "ఆంటి–ట్యాంక్ మిస్సైల్",
+   "ఆంటి–బాలిస్టిక్ మిస్సైల్"
+  ]
+ },
+ "81": {
+  "d": [
+   "Copper Zinc",
+   "Aluminium Magnesium",
+   "Lead Tin"
+  ],
+  "dt": [
+   "కాపర్ జింక్",
+   "అల్యూమినియమ్ మెగ్నీషియమ్",
+   "లెడ్ టిన్"
+  ]
+ },
+ "82": {
+  "d": [
+   "Kerala",
+   "Karnataka",
+   "Gujarat"
+  ],
+  "dt": [
+   "కేరళ",
+   "కర్ణాటక",
+   "గుజరాత్"
+  ]
+ },
+ "83": {
+  "d": [
+   "Because of water pollution",
+   "Because of soil pollution",
+   "Because of noise pollution"
+  ],
+  "dt": [
+   "నీటి కాలుష్యం వల్ల",
+   "నేల కాలుష్యం వల్ల",
+   "శబ్ద కాలుష్యం వల్ల"
+  ]
+ },
+ "84": {
+  "d": [
+   "Western Himalayas and Eastern Ghats",
+   "Eastern Ghats and Western Ghats",
+   "Sundarbans and Thar Desert"
+  ],
+  "dt": [
+   "పడమటి హిమాలయాలు, తూర్పు కనుమలు",
+   "తూర్పు కనుమలు, పడమటి కనుమలు",
+   "సుందర్బన్స్, థార్ ఎడారి"
+  ]
+ },
+ "85": {
+  "d": [
+   "Oxidized iron",
+   "Oxidized aluminium",
+   "Oxidized silver"
+  ],
+  "dt": [
+   "ఆక్సిడైజ్డ్ ఇనుము",
+   "ఆక్సిడైజ్డ్ అల్యూమినియం",
+   "ఆక్సిడైజ్డ్ వెండి"
+  ]
+ },
+ "86": {
+  "d": [
+   "Barometer",
+   "Anemometer",
+   "Pyrometer"
+  ],
+  "dt": [
+   "బేరోమీటర్",
+   "ఎనిమోమీటర్",
+   "పైరోమీటర్"
+  ]
+ },
+ "87": {
+  "d": [
+   "Neon",
+   "Krypton",
+   "Xenon"
+  ],
+  "dt": [
+   "నియాన్",
+   "క్రిప్టాన్",
+   "జీనాన్"
+  ]
+ },
+ "88": {
+  "d": [
+   "Air pressure",
+   "Air density",
+   "Air humidity"
+  ],
+  "dt": [
+   "గాలి పీడనం",
+   "గాలి సాంద్రత",
+   "గాలి తేమ"
+  ]
+ },
+ "89": {
+  "d": [
+   "Petiole or stalk",
+   "Midrib or vein",
+   "Leaf base or pulvinus"
+  ],
+  "dt": [
+   "పెటియోల్ లేదా స్టాక్",
+   "మిడ్‌రిబ్ లేదా వెయిన్",
+   "లీఫ్ బేస్ లేదా పల్వైనస్"
+  ]
+ },
+ "90": {
+  "d": [
+   "Mercury",
+   "Arsenic",
+   "Lead"
+  ],
+  "dt": [
+   "మెర్క్యురీ",
+   "ఆర్సెనిక్",
+   "లెడ్"
+  ]
+ },
+ "91": {
+  "d": [
+   "2022",
+   "2025",
+   "2035"
+  ],
+  "dt": [
+   "2022",
+   "2025",
+   "2035"
+  ]
+ },
+ "92": {
+  "d": [
+   "Archery",
+   "Wrestling",
+   "Boxing"
+  ],
+  "dt": [
+   "ఆర్చరీ",
+   "రెజ్లింగ్",
+   "బాక్సింగ్"
+  ]
+ },
+ "93": {
+  "d": [
+   "Pune",
+   "Lucknow",
+   "Mysuru"
+  ],
+  "dt": [
+   "పూణె",
+   "లక్నో",
+   "మైసూరు"
+  ]
+ },
+ "94": {
+  "d": [
+   "China",
+   "Japan",
+   "Malaysia"
+  ],
+  "dt": [
+   "చైనా",
+   "జపాన్",
+   "మలేషియా"
+  ]
+ },
+ "95": {
+  "d": [
+   "Dr. Jagdish Bhagwati",
+   "Dr. Raghuram Rajan",
+   "Dr. Kaushik Basu"
+  ],
+  "dt": [
+   "డా. జగదీశ్ భగవతి",
+   "డా. రఘురామ్ రాజన్",
+   "డా. కౌశిక్ బసు"
+  ]
+ },
+ "96": {
+  "d": [
+   "Madhya Pradesh",
+   "Gujarat",
+   "Punjab"
+  ],
+  "dt": [
+   "మధ్యప్రదేశ్",
+   "గుజరాత్",
+   "పంజాబ్"
+  ]
+ },
+ "97": {
+  "d": [
+   "Bill Gates",
+   "Warren Buffett",
+   "Bernard Arnault"
+  ],
+  "dt": [
+   "బిల్ గేట్స్",
+   "వారెన్ బఫెట్",
+   "బెర్నార్డ్ ఆర్నాల్ట్"
+  ]
+ },
+ "98": {
+  "d": [
+   "Justice A.K. Patnaik",
+   "Justice R.M. Lodha",
+   "Justice J. Chelameswar"
+  ],
+  "dt": [
+   "జస్టిస్ ఎ.కె. పట్నాయక్",
+   "జస్టిస్ ఆర్.ఎమ్. లోధా",
+   "జస్టిస్ జె. చలమేశ్వర్"
+  ]
+ },
+ "99": {
+  "d": [
+   "Andhra Pradesh",
+   "Odisha",
+   "Bihar"
+  ],
+  "dt": [
+   "ఆంధ్రప్రదేశ్",
+   "ఒడిశా",
+   "బీహార్"
+  ]
+ },
+ "100": {
+  "d": [
+   "Uttar Pradesh, West Bengal, Andhra Pradesh and Punjab",
+   "Punjab, Andhra Pradesh, West Bengal and Uttar Pradesh",
+   "Andhra Pradesh, Punjab, Uttar Pradesh and West Bengal"
+  ],
+  "dt": [
+   "ఉత్తరప్రదేశ్, పశ్చిమబెంగాల్, ఆంధ్రప్రదేశ్, పంజాబ్",
+   "పంజాబ్, ఆంధ్రప్రదేశ్, పశ్చిమబెంగాల్, ఉత్తరప్రదేశ్",
+   "ఆంధ్రప్రదేశ్, పంజాబ్, ఉత్తరప్రదేశ్, పశ్చిమబెంగాల్"
+  ]
+ }
+}

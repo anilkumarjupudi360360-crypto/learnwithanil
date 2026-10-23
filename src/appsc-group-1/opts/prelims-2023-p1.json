@@ -1,0 +1,818 @@
+{
+ "1": {
+  "d": [
+   "Kalibangan",
+   "Banawali",
+   "Ropar"
+  ],
+  "dt": [
+   "కాళీబంగన్",
+   "బనవాలి",
+   "రోపార్"
+  ]
+ },
+ "2": {
+  "d": [
+   "I, II and III only",
+   "II, III and IV only",
+   "I and III only"
+  ],
+  "dt": [
+   "I, II మరియు III మాత్రమే",
+   "II, III మరియు IV మాత్రమే",
+   "I మరియు III మాత్రమే"
+  ]
+ },
+ "3": {
+  "d": [
+   "a-III, b-II, c-IV, d-I",
+   "a-II, b-III, c-I, d-IV",
+   "a-IV, b-I, c-II, d-III"
+  ],
+  "dt": [
+   "a-III, b-II, c-IV, d-I",
+   "a-II, b-III, c-I, d-IV",
+   "a-IV, b-I, c-II, d-III"
+  ]
+ },
+ "4": {
+  "d": [
+   "Chandragupta Maurya",
+   "Ashoka",
+   "Bindusara"
+  ],
+  "dt": [
+   "చంద్రగుప్త మౌర్య",
+   "అశోక",
+   "బిందుసార"
+  ]
+ },
+ "5": {
+  "d": [
+   "I, II and IV only",
+   "II, III and IV only",
+   "I, III and IV only"
+  ],
+  "dt": [
+   "I, II మరియు IV మాత్రమే",
+   "II, III మరియు IV మాత్రమే",
+   "I, III మరియు IV మాత్రమే"
+  ]
+ },
+ "6": {
+  "d": [
+   "a-I, b-III, c-IV, d-II",
+   "a-III, b-I, c-II, d-IV",
+   "a-II, b-IV, c-I, d-III"
+  ],
+  "dt": [
+   "a-I, b-III, c-IV, d-II",
+   "a-III, b-I, c-II, d-IV",
+   "a-II, b-IV, c-I, d-III"
+  ]
+ },
+ "7": {
+  "d": [
+   "Self-Governing Bodies",
+   "Deposit-Receiving Bodies",
+   "Bodies with Their Own Seals"
+  ],
+  "dt": [
+   "స్వయం పాలిత సంస్థలు",
+   "డిపాజిట్లు స్వీకరించే సంస్థలు",
+   "సొంత ముద్రలు గల సంస్థలు"
+  ]
+ },
+ "8": {
+  "d": [
+   "I, II and IV",
+   "II, III and IV",
+   "I, III and IV"
+  ],
+  "dt": [
+   "I, II మరియు IV",
+   "II, III మరియు IV",
+   "I, III మరియు IV"
+  ]
+ },
+ "9": {
+  "d": [
+   "Nagarjuna was the Chancellor of the university.",
+   "Hiuen Tsang was the Chancellor of the university.",
+   "Vasubandhu was the Chancellor of the university."
+  ],
+  "dt": [
+   "నాగార్జునుడు విశ్వవిద్యాలయ కులపతి.",
+   "హ్యూయన్ త్సాంగ్ విశ్వవిద్యాలయ కులపతి.",
+   "వసుబంధువు విశ్వవిద్యాలయ కులపతి."
+  ]
+ },
+ "10": {
+  "d": [
+   "a-IV, b-III, c-II, d-I",
+   "a-II, b-I, c-IV, d-III",
+   "a-III, b-II, c-I, d-IV"
+  ],
+  "dt": [
+   "a-IV, b-III, c-II, d-I",
+   "a-II, b-I, c-IV, d-III",
+   "a-III, b-II, c-I, d-IV"
+  ]
+ },
+ "11": {
+  "d": [
+   "II, III, I, IV",
+   "I, II, III, IV",
+   "III, II, IV, I"
+  ],
+  "dt": [
+   "II, III, I, IV",
+   "I, II, III, IV",
+   "III, II, IV, I"
+  ]
+ },
+ "12": {
+  "d": [
+   "a-I, b-IV, c-II, d-III",
+   "a-IV, b-I, c-III, d-II",
+   "a-II, b-III, c-IV, d-I"
+  ],
+  "dt": [
+   "a-I, b-IV, c-II, d-III",
+   "a-IV, b-I, c-III, d-II",
+   "a-II, b-III, c-IV, d-I"
+  ]
+ },
+ "13": {
+  "d": [
+   "I and II only",
+   "II and III only",
+   "I and IV only"
+  ],
+  "dt": [
+   "I మరియు II మాత్రమే",
+   "II మరియు III మాత్రమే",
+   "I మరియు IV మాత్రమే"
+  ]
+ },
+ "14": {
+  "d": [
+   "I, II and IV only",
+   "II, III and IV only",
+   "I, III and IV only"
+  ],
+  "dt": [
+   "I, II మరియు IV మాత్రమే",
+   "II, III మరియు IV మాత్రమే",
+   "I, III మరియు IV మాత్రమే"
+  ]
+ },
+ "15": {
+  "d": [
+   "Abdur Razzaq – Visited during the reign of Devaraya II",
+   "Domingo Paes – Visited during the reign of Krishnadevaraya",
+   "Fernao Nuniz – Visited during the reign of Achyuta Devaraya"
+  ],
+  "dt": [
+   "అబ్దుర్ రజాక్ – రెండవ దేవరాయల పాలనా కాలంలో యాత్రికుడిగా వచ్చాడు",
+   "డొమింగో పేస్ – శ్రీకృష్ణదేవరాయల పాలనా కాలంలో యాత్రికుడిగా వచ్చాడు",
+   "ఫెర్నావో నూనిజ్ – అచ్యుత దేవరాయుల పాలనా కాలంలో యాత్రికుడిగా వచ్చాడు"
+  ]
+ },
+ "16": {
+  "d": [
+   "Sriranga Raya I",
+   "Tirumala Deva Raya",
+   "Sadasiva Raya"
+  ],
+  "dt": [
+   "శ్రీరంగరాయులు I",
+   "తిరుమల దేవరాయులు",
+   "సదాశివరాయులు"
+  ]
+ },
+ "17": {
+  "d": [
+   "I, III and IV only",
+   "II, III and IV only",
+   "I, II and III only"
+  ],
+  "dt": [
+   "I, III మరియు IV మాత్రమే",
+   "II, III మరియు IV మాత్రమే",
+   "I, II మరియు III మాత్రమే"
+  ]
+ },
+ "18": {
+  "d": [
+   "a-I, b-II, c-IV, d-III",
+   "a-III, b-IV, c-II, d-I",
+   "a-IV, b-I, c-III, d-II"
+  ],
+  "dt": [
+   "a-I, b-II, c-IV, d-III",
+   "a-III, b-IV, c-II, d-I",
+   "a-IV, b-I, c-III, d-II"
+  ]
+ },
+ "19": {
+  "d": [
+   "Agra to Burhanpur",
+   "Agra to Chittor",
+   "Lahore to Multan"
+  ],
+  "dt": [
+   "ఆగ్రా నుండి బుర్హాన్‌పూర్",
+   "ఆగ్రా నుండి చిత్తోర్",
+   "లాహోర్ నుండి ముల్తాన్"
+  ]
+ },
+ "20": {
+  "d": [
+   "a-I, b-IV, c-III, d-II",
+   "a-IV, b-II, c-I, d-III",
+   "a-III, b-I, c-II, d-IV"
+  ],
+  "dt": [
+   "a-I, b-IV, c-III, d-II",
+   "a-IV, b-II, c-I, d-III",
+   "a-III, b-I, c-II, d-IV"
+  ]
+ },
+ "21": {
+  "d": [
+   "E.B. Havell",
+   "Percy Brown",
+   "Jadunath Sarkar"
+  ],
+  "dt": [
+   "ఇ.బి. హావెల్",
+   "పెర్సీ బ్రౌన్",
+   "జాదునాథ్ సర్కార్"
+  ]
+ },
+ "22": {
+  "d": [
+   "a-I, b-II, c-IV, d-III",
+   "a-III, b-IV, c-II, d-I",
+   "a-II, b-III, c-I, d-IV"
+  ],
+  "dt": [
+   "a-I, b-II, c-IV, d-III",
+   "a-III, b-IV, c-II, d-I",
+   "a-II, b-III, c-I, d-IV"
+  ]
+ },
+ "23": {
+  "d": [
+   "III, II, I, IV",
+   "II, I, III, IV",
+   "I, II, IV, III"
+  ],
+  "dt": [
+   "III, II, I, IV",
+   "II, I, III, IV",
+   "I, II, IV, III"
+  ]
+ },
+ "24": {
+  "d": [
+   "a-I, b-IV, c-III, d-II",
+   "a-IV, b-I, c-II, d-III",
+   "a-II, b-III, c-I, d-IV"
+  ],
+  "dt": [
+   "a-I, b-IV, c-III, d-II",
+   "a-IV, b-I, c-II, d-III",
+   "a-II, b-III, c-I, d-IV"
+  ]
+ },
+ "25": {
+  "d": [
+   "Leo Tolstoy – A Letter to a Hindu",
+   "Plato – Apology",
+   "Henry David Thoreau – Civil Disobedience"
+  ],
+  "dt": [
+   "లియో టాల్‌స్టాయ్ – ఎ లెటర్ టు ఎ హిందూ",
+   "ప్లేటో – అపాలజీ",
+   "హెన్రీ డేవిడ్ థోరో – సివిల్ డిసొబీడియన్స్"
+  ]
+ },
+ "26": {
+  "d": [
+   "a-III, b-II, c-I, d-IV",
+   "a-II, b-III, c-IV, d-I",
+   "a-I, b-IV, c-II, d-III"
+  ],
+  "dt": [
+   "a-III, b-II, c-I, d-IV",
+   "a-II, b-III, c-IV, d-I",
+   "a-I, b-IV, c-II, d-III"
+  ]
+ },
+ "27": {
+  "d": [
+   "Motilal Nehru",
+   "B.R. Ambedkar",
+   "Tej Bahadur Sapru"
+  ],
+  "dt": [
+   "మోతీలాల్ నెహ్రూ",
+   "బి.ఆర్. అంబేద్కర్",
+   "తేజ్ బహదూర్ సప్రూ"
+  ]
+ },
+ "28": {
+  "d": [
+   "a-IV, b-II, c-I, d-III",
+   "a-II, b-IV, c-III, d-I",
+   "a-I, b-III, c-II, d-IV"
+  ],
+  "dt": [
+   "a-IV, b-II, c-I, d-III",
+   "a-II, b-IV, c-III, d-I",
+   "a-I, b-III, c-II, d-IV"
+  ]
+ },
+ "29": {
+  "d": [
+   "II and III only",
+   "I and II only",
+   "III and IV only"
+  ],
+  "dt": [
+   "II మరియు III మాత్రమే",
+   "I మరియు II మాత్రమే",
+   "III మరియు IV మాత్రమే"
+  ]
+ },
+ "30": {
+  "d": [
+   "20th February, 1947",
+   "3rd June, 1947",
+   "18th July, 1947"
+  ],
+  "dt": [
+   "20 ఫిబ్రవరి, 1947",
+   "3 జూన్, 1947",
+   "18 జూలై, 1947"
+  ]
+ },
+ "31": {
+  "d": [
+   "II and III",
+   "I and III",
+   "I, II and III"
+  ],
+  "dt": [
+   "II మరియు III",
+   "I మరియు III",
+   "I, II మరియు III"
+  ]
+ },
+ "33": {
+  "d": [
+   "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+   "(A) is true, but (R) is false.",
+   "(A) is false, but (R) is true."
+  ],
+  "dt": [
+   "(A), (R) రెండూ నిజం కానీ (R) అనేది (A)కు సరైన వివరణ కాదు.",
+   "(A) నిజం కానీ (R) తప్పు.",
+   "(A) తప్పు కానీ (R) నిజం."
+  ]
+ },
+ "34": {
+  "d": [
+   "I, II, III and V",
+   "II, III, IV and V",
+   "I, II, IV and V"
+  ],
+  "dt": [
+   "I, II, III మరియు V",
+   "II, III, IV మరియు V",
+   "I, II, IV మరియు V"
+  ]
+ },
+ "35": {
+  "d": [
+   "The Speaker decides whether a Bill is a Money Bill or not.",
+   "The Speaker decides questions of disqualification of members on the ground of defection.",
+   "The Speaker adjourns the House or suspends the meeting in the absence of quorum."
+  ],
+  "dt": [
+   "ఒక బిల్లు ద్రవ్య బిల్లు అవునా కాదా అని స్పీకర్ నిర్ణయిస్తారు.",
+   "ఫిరాయింపుల కారణంగా సభ్యుల అనర్హతకు సంబంధించిన ప్రశ్నలపై స్పీకర్ నిర్ణయం తీసుకుంటారు.",
+   "కోరం లేనప్పుడు స్పీకర్ సభను వాయిదా వేస్తారు లేదా సమావేశాన్ని నిలిపివేస్తారు."
+  ]
+ },
+ "36": {
+  "d": [
+   "I and II only",
+   "II and III only",
+   "I, II and III"
+  ],
+  "dt": [
+   "I మరియు II మాత్రమే",
+   "II మరియు III మాత్రమే",
+   "I, II మరియు III"
+  ]
+ },
+ "37": {
+  "d": [
+   "I and II only",
+   "II and III only",
+   "I, II and III"
+  ],
+  "dt": [
+   "I మరియు II మాత్రమే",
+   "II మరియు III మాత్రమే",
+   "I, II మరియు III"
+  ]
+ },
+ "38": {
+  "d": [
+   "I and IV",
+   "I and II",
+   "III and IV"
+  ],
+  "dt": [
+   "I మరియు IV",
+   "I మరియు II",
+   "III మరియు IV"
+  ]
+ },
+ "39": {
+  "d": [
+   "I and II only",
+   "II and III only",
+   "I and III only"
+  ],
+  "dt": [
+   "I మరియు II మాత్రమే",
+   "II మరియు III మాత్రమే",
+   "I మరియు III మాత్రమే"
+  ]
+ },
+ "40": {
+  "d": [
+   "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+   "(A) is true, but (R) is false.",
+   "(A) is false, but (R) is true."
+  ],
+  "dt": [
+   "(A), (R) రెండూ నిజం కానీ (R) అనేది (A)కు సరైన వివరణ కాదు.",
+   "(A) నిజం కానీ (R) తప్పు.",
+   "(A) తప్పు కానీ (R) నిజం."
+  ]
+ },
+ "41": {
+  "d": [
+   "I, II and III",
+   "I, III and IV",
+   "I, II and IV"
+  ],
+  "dt": [
+   "I, II మరియు III",
+   "I, III మరియు IV",
+   "I, II మరియు IV"
+  ]
+ },
+ "42": {
+  "d": [
+   "Entry 62",
+   "Entry 65",
+   "Entry 66"
+  ],
+  "dt": [
+   "ఎంట్రీ (నమోదు) 62",
+   "ఎంట్రీ (నమోదు) 65",
+   "ఎంట్రీ (నమోదు) 66"
+  ]
+ },
+ "43": {
+  "d": [
+   "Granville Austin",
+   "K.C. Wheare",
+   "Ivor Jennings"
+  ],
+  "dt": [
+   "గ్రాన్‌విల్ ఆస్టిన్",
+   "కె.సి. వేర్",
+   "ఐవర్ జెన్నింగ్స్"
+  ]
+ },
+ "44": {
+  "d": [
+   "I, II and III only",
+   "II, III and IV only",
+   "I, III and IV only"
+  ],
+  "dt": [
+   "I, II మరియు III మాత్రమే",
+   "II, III మరియు IV మాత్రమే",
+   "I, III మరియు IV మాత్రమే"
+  ]
+ },
+ "45": {
+  "d": [
+   "II and IV only",
+   "I and II only",
+   "III and IV only"
+  ],
+  "dt": [
+   "II మరియు IV మాత్రమే",
+   "I మరియు II మాత్రమే",
+   "III మరియు IV మాత్రమే"
+  ]
+ },
+ "46": {
+  "d": [
+   "I only",
+   "II only",
+   "Neither I nor II"
+  ],
+  "dt": [
+   "I మాత్రమే",
+   "II మాత్రమే",
+   "I మరియు II రెండూ కాదు"
+  ]
+ },
+ "47": {
+  "d": [
+   "Articles 21A and 23",
+   "Articles 30 and 24",
+   "Articles 45 and 23"
+  ],
+  "dt": [
+   "ఆర్టికల్ 21A మరియు 23",
+   "ఆర్టికల్ 30 మరియు 24",
+   "ఆర్టికల్ 45 మరియు 23"
+  ]
+ },
+ "48": {
+  "d": [
+   "I and II only",
+   "I and III only",
+   "I, II and III"
+  ],
+  "dt": [
+   "I మరియు II మాత్రమే",
+   "I మరియు III మాత్రమే",
+   "I, II మరియు III"
+  ]
+ },
+ "49": {
+  "d": [
+   "NITI Aayog",
+   "GST Council",
+   "Inter-State Council"
+  ],
+  "dt": [
+   "నీతి ఆయోగ్",
+   "జీ.ఎస్.టీ. కౌన్సిల్",
+   "అంతర్ రాష్ట్ర మండలి"
+  ]
+ },
+ "50": {
+  "d": [
+   "To investigate and monitor all matters relating to the safeguards provided for Scheduled Castes.",
+   "To inquire into specific complaints with respect to the deprivation of rights and safeguards of Scheduled Castes.",
+   "To participate and advise on the planning process of socio-economic development of Scheduled Castes."
+  ],
+  "dt": [
+   "షెడ్యూల్డ్ కులాలకు కల్పించిన రక్షణలకు సంబంధించిన అన్ని విషయాలను దర్యాప్తు చేయడం, పర్యవేక్షించడం.",
+   "షెడ్యూల్డ్ కులాల హక్కులు, రక్షణలను హరించడంపై వచ్చిన నిర్దిష్ట ఫిర్యాదులను విచారించడం.",
+   "షెడ్యూల్డ్ కులాల సామాజిక-ఆర్థిక అభివృద్ధి ప్రణాళికా ప్రక్రియలో పాల్గొని సలహా ఇవ్వడం."
+  ]
+ },
+ "51": {
+  "d": [
+   "Methods of recruitment",
+   "Disciplinary matters",
+   "Conduct of examinations"
+  ],
+  "dt": [
+   "నియామక పద్ధతులు",
+   "క్రమశిక్షణ విషయాలు",
+   "పరీక్షల నిర్వహణ"
+  ]
+ },
+ "52": {
+  "d": [
+   "I, II, IV and V",
+   "II, III, IV and V",
+   "I, III, IV and V"
+  ],
+  "dt": [
+   "I, II, IV మరియు V",
+   "II, III, IV మరియు V",
+   "I, III, IV మరియు V"
+  ]
+ },
+ "53": {
+  "d": [
+   "I and II only",
+   "II and III only",
+   "I and III only"
+  ],
+  "dt": [
+   "I మరియు II మాత్రమే",
+   "II మరియు III మాత్రమే",
+   "I మరియు III మాత్రమే"
+  ]
+ },
+ "54": {
+  "d": [
+   "I and II only",
+   "II and III only",
+   "I and III only"
+  ],
+  "dt": [
+   "I మరియు II మాత్రమే",
+   "II మరియు III మాత్రమే",
+   "I మరియు III మాత్రమే"
+  ]
+ },
+ "55": {
+  "d": [
+   "I and II only",
+   "II and III only",
+   "I, II and III"
+  ],
+  "dt": [
+   "I మరియు II మాత్రమే",
+   "II మరియు III మాత్రమే",
+   "I, II మరియు III"
+  ]
+ },
+ "56": {
+  "d": [
+   "Maritime Shipping",
+   "Telecommunications",
+   "Nuclear Safety"
+  ],
+  "dt": [
+   "సముద్ర రవాణా",
+   "టెలికమ్యూనికేషన్లు",
+   "అణు భద్రత"
+  ]
+ },
+ "57": {
+  "d": [
+   "II only",
+   "Both I and II",
+   "Neither I nor II"
+  ],
+  "dt": [
+   "II మాత్రమే",
+   "I మరియు II రెండూ",
+   "I మరియు II రెండూ కాదు"
+  ]
+ },
+ "58": {
+  "d": [
+   "Gorwala Committee",
+   "Narasimham Committee",
+   "Khusro Committee"
+  ],
+  "dt": [
+   "గోర్వాలా కమిటీ",
+   "నరసింహం కమిటీ",
+   "ఖుస్రో కమిటీ"
+  ]
+ },
+ "59": {
+  "d": [
+   "World Bank",
+   "International Monetary Fund",
+   "World Trade Organization"
+  ],
+  "dt": [
+   "ప్రపంచ బ్యాంకు",
+   "అంతర్జాతీయ ద్రవ్య నిధి",
+   "ప్రపంచ వాణిజ్య సంస్థ"
+  ]
+ },
+ "60": {
+  "d": [
+   "Officer of the Treasury Department",
+   "Officer of the Frontier Department",
+   "Officer of the Revenue Department"
+  ],
+  "dt": [
+   "ఖజానా విభాగ అధికారి",
+   "సరిహద్దు విభాగ అధికారి",
+   "రెవెన్యూ విభాగ అధికారి"
+  ]
+ },
+ "61": {
+  "d": [
+   "Both (A) and (R) are true, but (R) is not the correct explanation for (A).",
+   "(A) is true, but (R) is false.",
+   "(A) is false, but (R) is true."
+  ],
+  "dt": [
+   "(A) మరియు (R) రెండూ నిజం, కానీ (R) అనేది (A)కి సరైన వివరణ కాదు.",
+   "(A) నిజం, కానీ (R) తప్పు.",
+   "(A) తప్పు, కానీ (R) నిజం."
+  ]
+ },
+ "62": {
+  "d": [
+   "Alfred Marshall",
+   "A.C. Pigou",
+   "Simon Kuznets"
+  ],
+  "dt": [
+   "ఆల్‌ఫ్రెడ్ మార్షల్",
+   "ఎ.సి. పిగూ",
+   "సైమన్ కుజ్నెట్స్"
+  ]
+ },
+ "63": {
+  "d": [
+   "Both (A) and (R) are true, but (R) is not the correct explanation for (A).",
+   "(A) is true, but (R) is false.",
+   "(A) is false, but (R) is true."
+  ],
+  "dt": [
+   "(A) మరియు (R) రెండూ నిజం, కానీ (A)కి (R) సరైన వివరణ కాదు.",
+   "(A) నిజం, కానీ (R) తప్పు.",
+   "(A) తప్పు, కానీ (R) నిజం."
+  ]
+ },
+ "64": {
+  "d": [
+   "10th Five Year Plan",
+   "8th Five Year Plan",
+   "6th Five Year Plan"
+  ],
+  "dt": [
+   "10వ పంచవర్ష ప్రణాళిక",
+   "8వ పంచవర్ష ప్రణాళిక",
+   "6వ పంచవర్ష ప్రణాళిక"
+  ]
+ },
+ "66": {
+  "d": [
+   "0 – 14 years",
+   "18 – 45 years",
+   "65 – 80 years"
+  ],
+  "dt": [
+   "0 – 14 సంవత్సరాలు",
+   "18 – 45 సంవత్సరాలు",
+   "65 – 80 సంవత్సరాలు"
+  ]
+ },
+ "67": {
+  "d": [
+   "I, II and III",
+   "I, III and IV",
+   "I, II and IV"
+  ],
+  "dt": [
+   "I, II మరియు III",
+   "I, III మరియు IV",
+   "I, II మరియు IV"
+  ]
+ },
+ "68": {
+  "d": [
+   "Both (A) and (R) are true, but (R) is not the correct explanation for (A).",
+   "(A) is true, but (R) is false.",
+   "(A) is false, but (R) is true."
+  ],
+  "dt": [
+   "(A) మరియు (R) రెండూ నిజం, కానీ (A)కి (R) సరైన వివరణ కాదు.",
+   "(A) నిజం, కానీ (R) తప్పు.",
+   "(A) తప్పు, కానీ (R) నిజం."
+  ]
+ },
+ "69": {
+  "d": [
+   "a-IV, b-II, c-I, d-III",
+   "a-II, b-IV, c-III, d-I",
+   "a-III, b-I, c-II, d-IV"
+  ],
+  "dt": [
+   "a-IV, b-II, c-I, d-III",
+   "a-II, b-IV, c-III, d-I",
+   "a-III, b-I, c-II, d-IV"
+  ]
+ },
+ "70": {
+  "d": [
+   "Wages and Salaries",
+   "Profits of Companies",
+   "Imputed Rent of Owner-Occupied Houses"
+  ],
+  "dt": [
+   "వేతనాలు, జీతాలు",
+   "కంపెనీల లాభాలు",
+   "స్వంత నివాస గృహాల ఆరోపిత అద్దె"
+  ]
+ }
+}
