@@ -1218,6 +1218,8 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
     else:
         foot = (f'Questions are from {board}\'s official question paper and answers from {conf["keyshort"]}. Explanations are by '
                 f'Jupudi Anil Kumar, Learn with Anil (Instagram: @{INSTAGRAM}). Not affiliated with {board}.')
+    if PAY.get('on'):   # PYQ buttons carry a lock; the small script at the end removes it once this device has a paid PYQ Pass
+        body_html = re.sub(r'(<a class="cta[^"]*" href="[^"]*\?(?:sec|practice|test)=[^"]*">)', r'\1<span class="lk" aria-hidden="true">🔒 </span>', body_html)
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": canonical,
           "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": SITE_URL + '/'},
           "author": {"@type": "Person", "name": "Jupudi Anil Kumar"},
@@ -1246,6 +1248,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 {body_html}
 </main>
 <footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date())document.querySelectorAll(".lk").forEach(function(e){{e.remove()}})}}catch(e){{}}</script>
 </body>
 </html>
 """
@@ -1742,7 +1745,7 @@ def sectional_page(conf, papers, questions):
                  + ', '.join(esc(x) for x in mk['sections']) + ' — open as separate timed tests as the mocks are released '
                  f'({live_text(mk)}). They come with the {esc(mk["name"])} pack.</p>' + buy_box(conf, 'mock')
                  if mk else '<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack. Its price will be announced soon.</p>')
-    body = ('<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. With the PYQ Pass.</p>'
+    body = (f'<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. 🔒 Opens only with the ₹{PAY["pyq_price"]} PYQ Pass.</p>'
             '<ol class="qs">' + rows + '</ol>' + buy_box(conf, 'pyq') + mock_part + '<h2>Plans</h2>' + plans_html(conf))
     lede = esc(f'Practise {seo} one section at a time: timed tests from real previous questions in every subject'
                + (f', and sectional mocks from {mk["name"]}.' if mk else '.'))

@@ -219,6 +219,7 @@ async def main():
                     errors.append(f'{rel}: says something is free or offers a free PDF')
                 if '<h2>Plans</h2>' not in body or 'PYQ Pass' not in body: errors.append(f'{rel}: no plans table')
                 if 'Free trial' in body or 'days free' in body.lower(): errors.append(f'{rel}: still offers a free trial')
+                if ('?sec=' in body or '?practice=' in body) and 'class="lk"' not in body: errors.append(f'{rel}: PYQ buttons show no lock')
                 if rel.endswith('pyqs.html') and ('Attempt as a timed test' in body or 'Practise question by question' in body or 'min timer</a>' not in body): errors.append(f'{rel}: papers should have one "Attempt this paper" button')
                 for h in _re.findall(r'href="(/[^"#:?]*)', open(os.path.join(SITE, rel), encoding='utf-8').read()):
                     f = os.path.join(SITE, h.lstrip('/'))

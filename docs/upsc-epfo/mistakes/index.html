@@ -1149,7 +1149,7 @@ function vPapers(){
       <p>${esc(p.blurb)}</p>
       <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
       <div class="acts">
-        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">Attempt this paper · ${p.count} min timer</button>
+        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"":"🔒 "}Attempt this paper · ${p.count} min timer</button>
       </div>
     </article>`;
   };
