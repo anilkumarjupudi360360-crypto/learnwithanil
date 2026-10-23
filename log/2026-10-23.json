@@ -1,0 +1,22 @@
+{
+ "meme-1": {
+  "title": "UDAN turns 10",
+  "kind": "current-affairs",
+  "telegram": {
+   "message_id": 2,
+   "link": "https://t.me/learn_with_anil06/2",
+   "at": "2026-10-23T13:52:17.731473+05:30"
+  },
+  "history": true
+ },
+ "meme-2": {
+  "title": "Timetable vs Reality",
+  "kind": "aspirant-life",
+  "telegram": {
+   "message_id": 3,
+   "link": "https://t.me/learn_with_anil06/3",
+   "at": "2026-10-23T13:52:19.976236+05:30"
+  },
+  "history": true
+ }
+}
