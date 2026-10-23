@@ -64,7 +64,8 @@ PREVIEW_MIN = 30          # a meme posts only if Anil has had its preview for at
 KEEP_DAYS = 21            # images older than this are removed from the branch (Instagram has its own copy)
 
 # questions rotate through every live exam, two a day
-ROTATION = ['appsc-group-2', 'ts-police-si', 'appsc-group-1', 'ts-police-constable', 'upsc-capf']
+# Anil, 23 Oct 2026: only APPSC Group 2 and TS Police SI for now (others: 'appsc-group-1', 'ts-police-constable', 'upsc-capf')
+ROTATION = ['appsc-group-2', 'ts-police-si']
 TAGS = {
     'appsc-group-2': '#APPSC #APPSCGroup2 #Group2 #APGroup2 #APPSCExams',
     'appsc-group-1': '#APPSC #APPSCGroup1 #Group1 #APGroup1 #APPSCExams',
