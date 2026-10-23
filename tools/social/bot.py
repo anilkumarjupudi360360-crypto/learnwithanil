@@ -14,6 +14,7 @@ State lives on the `social` branch, checked out at ./state (or $STATE_DIR):
     used-questions.json              question ids already posted (never repeated)
     cards/<date>-<am|pm>.jpg / .json question cards, made up to a day ahead
     memes/<date>/<1|2>.jpg / .json   memes queued by the meme maker
+                                     (a video meme: "media": "video" in the .json, <n>.mp4 beside it, <n>.jpg is its cover)
     memes/history.jsonl              every meme posted (the meme maker reads it to avoid repeats)
     log/<date>.json                  what went out where, with the Instagram links (the WhatsApp status task reads it)
     control.json                     Telegram update offset, meme previews, stopped memes
@@ -171,6 +172,13 @@ class Telegram:
         with open(path, 'rb') as f:
             return self.call('sendPhoto', files={'photo': f}, **kw)
 
+    def video(self, chat, path, caption, buttons=None):
+        kw = dict(chat_id=chat, caption=caption[:1024], supports_streaming='true')
+        if buttons:
+            kw['reply_markup'] = {'inline_keyboard': buttons}
+        with open(path, 'rb') as f:
+            return self.call('sendVideo', files={'video': f}, **kw)
+
     def text(self, chat, text):
         return self.call('sendMessage', chat_id=chat, text=text[:4000], disable_web_page_preview=True)
 
@@ -261,13 +269,27 @@ class Instagram:
         if not self.uid:
             self.me()
         c = self.call('POST', f'{self.uid}/media', image_url=image_url, caption=caption[:2200])['id']
-        for _ in range(24):
+        return self._publish(c, 24, 'image')
+
+    def post_reel(self, video_url, caption, cover_url=None):
+        if not self.uid:
+            self.me()
+        kw = dict(media_type='REELS', video_url=video_url, caption=caption[:2200], share_to_feed='true')
+        if cover_url:
+            kw['cover_url'] = cover_url
+        c = self.call('POST', f'{self.uid}/media', **kw)['id']
+        return self._publish(c, 72, 'video')          # videos take a minute or two to process
+
+    def _publish(self, c, polls, what):
+        for _ in range(polls):
             st = self.call('GET', c, fields='status_code').get('status_code')
             if st == 'FINISHED':
                 break
             if st in ('ERROR', 'EXPIRED'):
-                raise RuntimeError(f'Instagram could not process the image ({st})')
+                raise RuntimeError(f'Instagram could not process the {what} ({st})')
             time.sleep(5)
+        else:
+            raise RuntimeError(f'Instagram is still processing the {what}; will retry')
         m = self.call('POST', f'{self.uid}/media_publish', creation_id=c)['id']
         link = ''
         try:
@@ -425,10 +447,25 @@ def meme_paths(day, n):
     return base + '.jpg', base + '.json'
 
 
+def meme_video(day, n, meta):
+    """The .mp4 of a video meme, or None for an image meme."""
+    return sp('memes', day.isoformat(), f'{n}.mp4') if (meta or {}).get('media') == 'video' else None
+
+
 def ensure_meme_image(day, n):
-    """The meme maker normally commits the JPEG; if it could only leave Canva's download link, fetch it here."""
+    """The meme maker normally commits the JPEG; if it could only leave Canva's download link, fetch it here.
+    A video meme is ready only when its .mp4 is there too (committed, or fetched from its video_url)."""
     img, meta_p = meme_paths(day, n)
     meta = jload(meta_p, None)
+    vid = meme_video(day, n, meta)
+    if vid and not os.path.exists(vid):
+        if not meta.get('video_url'):
+            return None
+        import requests
+        r = requests.get(meta['video_url'], timeout=300)
+        r.raise_for_status()
+        with open(vid, 'wb') as f:
+            f.write(r.content)
     if os.path.exists(img) or not meta:
         return meta if os.path.exists(img) else None
     for name in ('png', 'jpeg'):
@@ -530,13 +567,15 @@ def send_previews(tg, ctl, day):
         if not meta:
             continue
         img = meme_paths(day, s['n'])[0]
+        vid = meme_video(day, s['n'], meta)
         t = f'{s["at"][0] % 12 or 12}:{s["at"][1]:02d} {"PM" if s["at"][0] >= 12 else "AM"}'
         text = (f'🕐 Meme {s["n"]} for today posts at {t} on Instagram and Telegram.\n'
                 f'Tap Stop if you don\'t want it (the bot checks every 30 minutes).\n\n'
                 f'{meta.get("title", "")}\n\nCaption:\n{meme_caption(meta, "ig")}')
         if DRY:
             log(f'[dry] preview {key}'); prev[key] = now_ist().isoformat(); continue
-        tg.photo(admin, img, text, [[{'text': '⛔ Stop this meme', 'callback_data': f'stop:{key}'}]])
+        stop = [[{'text': '⛔ Stop this meme', 'callback_data': f'stop:{key}'}]]
+        tg.video(admin, vid, text, stop) if vid else tg.photo(admin, img, text, stop)
         prev[key] = now_ist().isoformat()
         log(f'preview sent for meme {key}')
 
@@ -565,16 +604,21 @@ def post_slot(s, day, lg, ctl, tg, ig):
             return
         img, _ = meme_paths(day, s['n'])
         rel = os.path.relpath(img, STATE).replace(os.sep, '/')
+        vid = meme_video(day, s['n'], meta)
+        vrel = os.path.relpath(vid, STATE).replace(os.sep, '/') if vid else None
         cap_ig, cap_tg, buttons = meme_caption(meta, 'ig'), meme_caption(meta, 'tg'), None
         entry.update(title=meta.get('title', s['label']), kind=meta.get('kind', ''))
 
+    if s['kind'] == 'question':
+        vrel = None
     path = sp(rel)
     if tg and os.environ.get('TG_CHANNEL') and 'telegram' not in entry:
         if DRY:
             log(f'[dry] telegram {s["key"]}'); entry['telegram'] = {'dry': True}
         else:
             try:
-                m = tg.photo(os.environ['TG_CHANNEL'], path, cap_tg, buttons)
+                m = (tg.video(os.environ['TG_CHANNEL'], sp(vrel), cap_tg) if vrel
+                     else tg.photo(os.environ['TG_CHANNEL'], path, cap_tg, buttons))
                 entry['telegram'] = dict(message_id=m['message_id'], link=channel_link(m), at=now_ist().isoformat())
                 log(f'telegram: {s["key"]} posted {entry["telegram"]["link"]}')
             except Exception as e:
@@ -585,10 +629,10 @@ def post_slot(s, day, lg, ctl, tg, ig):
         else:
             try:
                 publish_state(f'{day} {s["key"]} image')
-                url = raw_url(rel)
+                url = raw_url(vrel or rel)
                 if not wait_until_public(url):
                     raise RuntimeError(f'image not public yet: {url}')
-                r = ig.post_image(url, cap_ig)
+                r = ig.post_reel(url, cap_ig, raw_url(rel)) if vrel else ig.post_image(url, cap_ig)
                 entry['instagram'] = dict(r, at=now_ist().isoformat())
                 log(f'instagram: {s["key"]} posted {r["permalink"]}')
             except Exception as e:
@@ -625,7 +669,7 @@ def prune():
             continue
         for dirpath, _, files in os.walk(root):
             for fn in files:
-                if fn.endswith(('.jpg', '.png', '.jpeg')):
+                if fn.endswith(('.jpg', '.png', '.jpeg', '.mp4')):
                     try:
                         d = dt.date.fromisoformat((os.path.basename(dirpath) if folder == 'memes' else fn)[:10])
                     except ValueError:
