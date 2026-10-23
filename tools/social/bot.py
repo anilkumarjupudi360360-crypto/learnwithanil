@@ -45,6 +45,7 @@ sys.path.insert(0, TOOLS)
 
 IST = ZoneInfo('Asia/Kolkata')
 SITE = 'https://learnwithanil.in'
+TG_LINK = 't.me/learn_with_anil06'      # the public Telegram channel, shown in every question caption
 STATE = os.path.abspath(os.environ.get('STATE_DIR') or os.path.join(ROOT, 'state'))
 REPO = os.environ.get('GITHUB_REPOSITORY', 'anilkumarjupudi360360-crypto/learnwithanil')
 BRANCH = 'social'
@@ -394,9 +395,11 @@ def captions(it):
     tags = f"{TAGS.get(it['exam_id'], '')} #PYQ #PreviousYearQuestions #LearnWithAnil"
     ig = (head + f"✅ Answer + explanation in English & {it['l2name']}: {it['short']}\n"
           f"(scan the QR code on the card, or tap the link in our bio)\n{l2['line']}\n\n"
-          f"Free previous papers & mock tests: learnwithanil.in\n\n{tags}")
+          f"Free previous papers & mock tests: learnwithanil.in\n"
+          f"📢 Daily PYQs on Telegram: {TG_LINK}\n\n{tags}")
     tg = (head + f"✅ Answer + explanation: {it['url']}\n{l2['line']}\n\n"
-          f"Free previous papers & mock tests: {SITE}\n{tags}")
+          f"Free previous papers & mock tests: {SITE}\n"
+          f"📢 Join our Telegram channel: https://{TG_LINK}\n{tags}")
     return ig, tg
 
 
