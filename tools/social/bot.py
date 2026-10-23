@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Learn with Anil social bot: posts to the Telegram channel and to Instagram, every day, India time.
 
-    08:00  morning question  a real previous-year question card (rotating exams), answer on the site
-    13:00  meme 1            current affairs, made each morning by the Claude meme maker
+    08:00  morning question    a real previous-year question card (rotating exams), answer on the site
+    13:00  afternoon question
     18:00  evening question
-    21:00  meme 2            aspirant life
+    21:00  night question
+    (memes are switched off since 23 Oct 2026 at Anil's request; add the meme slots back to SLOTS to restore them)
 
 It runs on GitHub Actions (.github/workflows/social.yml). Each run looks at the clock and does what is due,
 so a late or missed run is caught up by the next one. Memes are first sent to Anil on Telegram with a Stop
@@ -12,7 +13,7 @@ button; they post on time unless he taps Stop.
 
 State lives on the `social` branch, checked out at ./state (or $STATE_DIR):
     used-questions.json              question ids already posted (never repeated)
-    cards/<date>-<am|pm>.jpg / .json question cards, made up to a day ahead
+    cards/<date>-<am|noon|pm|night>.jpg / .json question cards, made up to a day ahead
     memes/<date>/<1|2>.jpg / .json   memes queued by the meme maker
                                      (a video meme: "media": "video" in the .json, <n>.mp4 beside it, <n>.jpg is its cover)
     memes/history.jsonl              every meme posted (the meme maker reads it to avoid repeats)
@@ -55,9 +56,9 @@ if not os.environ.get('TG_CHANNEL'):            # an unset GitHub secret arrives
 # slot: when it is due, until when a late post is still worth making (India time)
 SLOTS = [
     dict(key='q-am', kind='question', half='am', at=(8, 0), until=(12, 0), label='morning question'),
-    dict(key='meme-1', kind='meme', n=1, at=(13, 0), until=(17, 0), label='meme 1'),
+    dict(key='q-noon', kind='question', half='noon', at=(13, 0), until=(17, 0), label='afternoon question'),
     dict(key='q-pm', kind='question', half='pm', at=(18, 0), until=(21, 0), label='evening question'),
-    dict(key='meme-2', kind='meme', n=2, at=(21, 0), until=(23, 30), label='meme 2'),
+    dict(key='q-night', kind='question', half='night', at=(21, 0), until=(23, 30), label='night question'),
 ]
 PREVIEW_MIN = 30          # a meme posts only if Anil has had its preview for at least this many minutes
 KEEP_DAYS = 21            # images older than this are removed from the branch (Instagram has its own copy)
@@ -325,8 +326,12 @@ def refresh_ig(ctl):
 
 # ---------------------------------------------------------------- question cards
 
+HALVES = ['am', 'noon', 'pm', 'night']     # the day's question slots, in order
+KICKER = {'am': 'Morning question', 'noon': 'Afternoon question', 'pm': 'Evening question', 'night': 'Night question'}
+
+
 def exam_for(day, half):
-    k = day.toordinal() * 2 + (0 if half == 'am' else 1)
+    k = day.toordinal() * len(HALVES) + HALVES.index(half)
     return ROTATION[k % len(ROTATION)], k // len(ROTATION)
 
 
@@ -372,7 +377,7 @@ def card_item(B, conf, papers, q, day, half):
     url = f'{SITE}{conf["pb"]}q/{q["id"]}.html'
     exam = conf['seo'].replace('TS Police Constable', 'TS Constable')
     return dict(day=day.isoformat(), daylabel=day.strftime('%a %d %b'), exam_short=exam, exam_id=conf['id'],
-                kicker='Morning question' if half == 'am' else 'Evening question',
+                kicker=KICKER[half],
                 paper=B.paper_kw(conf, p).replace(conf['seo'] + ' ', ''), n=q['n'], subject=subj[q['s']],
                 q=q['q'], o=q['o'], qt=q['qt'], ot=q['ot'], id=q['id'], url=url, short=url.replace('https://', ''),
                 qr=url + f'?utm_source=qotd&utm_medium=social&utm_campaign={day.isoformat()}-{half}',
@@ -381,7 +386,7 @@ def card_item(B, conf, papers, q, day, half):
 
 def captions(it):
     l2 = L2[it['l2code']]
-    when = 'Morning' if it['kicker'].startswith('Morning') else 'Evening'
+    when = it['kicker'].split()[0]
     head = (f"{it['exam_short']}: {when} question ({it['daylabel']})\n"
             f"From the {it['exam_short']} {it['paper']} question paper, Q{it['n']} · {it['subject']}\n\n"
             f"Comment your answer (1/2/3/4) before you check!\n{l2['comment']}\n\n")

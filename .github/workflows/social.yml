@@ -1,5 +1,5 @@
 # Daily posts to the Telegram channel and Instagram (tools/social/bot.py).
-# India time: questions at 8 AM and 6 PM, memes at 1 PM and 9 PM. Memes are previewed to Anil on Telegram first.
+# India time: questions at 8 AM, 1 PM, 6 PM and 9 PM (memes switched off).
 name: Social posts
 
 on:
