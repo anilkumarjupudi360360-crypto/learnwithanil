@@ -1082,9 +1082,9 @@ def FAQ_EPFO(total, npapers):
        'industrial relations and labour laws, social security in India, general science and computer applications, and general mental ability and quantitative aptitude. '
        + ('APFC and EO/AO have had separate papers on the same syllabus; in 2025 UPSC set one common paper for both posts.' if eo else '')),
       ('Which labour law questions come in the EPFO exams?' if eo else 'Which labour law questions come in the APFC exam?',
-       ('The papers ask about the EPF &amp; MP Act, the Employees\' Compensation Act, the ESI Act, the Industrial Disputes Act, the Trade Unions Act, the Factories Act, the Mines Act, the Payment of Wages, Payment of Bonus and Minimum Wages Acts, '
+       ('The papers ask about the EPF & MP Act, the Employees\' Compensation Act, the ESI Act, the Industrial Disputes Act, the Trade Unions Act, the Factories Act, the Mines Act, the Payment of Wages, Payment of Bonus and Minimum Wages Acts, '
         'the Contract Labour and Standing Orders Acts, the Building and Other Construction Workers Act, and ILO conventions. ' if eo else
-        'The 2023 paper had 18 questions on labour laws and social security: the EPF &amp; MP Act, the Employees\' Compensation Act, the ESI Act, the Industrial Disputes Act, the Trade Unions Act, '
+        'The 2023 paper had 18 questions on labour laws and social security: the EPF & MP Act, the Employees\' Compensation Act, the ESI Act, the Industrial Disputes Act, the Trade Unions Act, '
         'the Factories Act, the Mines Act, the Payment of Wages and Payment of Bonus Acts, the Building and Other Construction Workers Act, and ILO core conventions. ')
        + 'The four Labour Codes, in force since 21 November 2025, have since replaced most of these Acts; the explanations say where the law has changed after the exam.'),
       ('Is the EPFO question paper available in Hindi?' if eo else 'Is the APFC question paper available in Hindi?',
