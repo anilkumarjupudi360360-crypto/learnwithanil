@@ -1,0 +1,1282 @@
+# UPSC EPFO Recruitment Test for Enforcement Officer / Accounts Officer (EO/AO), Advt. 51/2023 (Special), held 2 July 2023. Booklet Series A (BNYR-U-GAT), General Ability Test, 120 questions, 300 marks.
+# Source: the official UPSC question paper; answers from UPSC's official answer key, Series A (upsc.gov.in, 5 March 2025). No question dropped. Explanations by Learn with Anil.
+
+Q 1 | eng | Sentence Arrangement
+The first and sixth sentences of a passage are given as S1 and S6. The four sentences in between have been jumbled up and labelled P, Q, R and S. Choose the proper sequence of the four sentences.
+S1: Geological mapping, when properly done, demands skill and judgment.
+S6: Nothing is more naive than to believe that a field geologist should gather only 'facts', the interpretation of which is to be made at a later date.
+P: While the field work progresses he should conceive as many interpretations as are consistent with the known facts.
+Q: As the field work progresses and the larger geological picture begins to unfold, experience and judgment are essential if the geologist is to evaluate properly the vast number of facts gathered from thousands of outcrops.
+R: Such mapping requires keen observation and a knowledge of what data are significant.
+S: Above all, the field geologist must use the method of "working multiple hypotheses" to deduce the geological structure.
+(1) SRQP
+(2) RQSP
+(3) PSQR
+(4) SRPQ
+= 2
+~ The order is RQSP. R must come first because "Such mapping" refers back to the geological mapping of S1 and spells out the skill it demands: keen observation and knowing which data matter. Q moves on to the progress of the field work, when experience and judgment are needed to evaluate the facts. S ("Above all") gives the most important requirement, the method of multiple hypotheses, and P explains it: "he", the field geologist of S, should form many interpretations while the work goes on. That leads into S6, which rejects gathering facts now and interpreting them later. Only RQSP begins with R.
+
+Q 2 | eng | Sentence Arrangement
+The first and sixth sentences of a passage are given as S1 and S6. The four sentences in between have been jumbled up and labelled P, Q, R and S. Choose the proper sequence of the four sentences.
+S1: Under the colonial regime, basic infrastructure such as railways, ports, water transport, posts and telegraphs did develop.
+S6: Naturally, therefore, these areas remained inaccessible to the people.
+P: There always remained an acute shortage of all-weather roads to reach out to the rural areas during the rainy season.
+Q: Roads constructed in India prior to the advent of British rule were not fit for modern transport.
+R: However, the real motive behind this development was not necessarily to provide basic amenities to the people but to subserve various colonial interests.
+S: The roads that were built primarily served the purposes of mobilizing the army within India and drawing out raw materials from the countryside to the nearest railway station.
+(1) SPQR
+(2) PQSR
+(3) QPRS
+(4) RQSP
+= 4
+~ The order is RQSP. R comes first: "However" contrasts with S1's statement that infrastructure "did develop", and "this development" refers back to it before revealing the real colonial motive. Q and S narrow this down to roads: roads built before British rule were unfit for modern transport, and the roads the British built mainly served army movement and the carrying of raw materials to railway stations. P gives the result, a shortage of all-weather roads to rural areas, and S6's "these areas" means those rural areas, so P must come last. Only RQSP starts with R and ends with P.
+
+Q 3 | eng | Sentence Arrangement
+The first and sixth sentences of a passage are given as S1 and S6. The four sentences in between have been jumbled up and labelled P, Q, R and S. Choose the proper sequence of the four sentences.
+S1: Contemporary history is necessary, but it is at best a tentative record.
+S6: Some portentous events can be seen to be so from the moment of their occurrence, like the discovery of the New World; others of comparable momentousness are hidden in obscurity.
+P: The relevance of the issue of proportion is significant.
+Q: It possesses, indeed, a massive supply of public record, but it necessarily lacks the inner knowledge of politicians' minds, of planners' proposals, of scientists' discoveries, of technicians' break-throughs.
+R: It also lacks perspective since it is bereft of a sense of proportion.
+S: It is impossible, over just a few years of observation, to estimate accurately the significance of various events.
+(1) QPSR
+(2) SRPQ
+(3) QSRP
+(4) PRSQ
+= 3
+~ The order is QSRP. Q follows S1 directly: "It" is contemporary history, and its "massive supply of public record" picks up S1's "tentative record" before saying what it lacks. S gives a second limitation: a few years of observation cannot show the real significance of events. R adds, with "also lacks", the lack of perspective and of a sense of proportion, and P can only come after R, because "the issue of proportion" needs R to introduce it. S6 then illustrates proportion with portentous events, some obvious at once and others hidden. QPSR wrongly puts P before proportion has been mentioned.
+
+Q 4 | eng | Sentence Arrangement
+The first and sixth sentences of a passage are given as S1 and S6. The four sentences in between have been jumbled up and labelled P, Q, R and S. Choose the proper sequence of the four sentences.
+S1: Income inequality in less-developed countries is worse than most estimates.
+S6: The tax regime in these countries needs to be progressive and futuristic.
+P: There is a staggering level of difference between the income metrics and the actual income of the prosperous in such countries.
+Q: The effective tax rates are not really progressive with regard to income.
+R: They need to be reengineered to bring into the tax net the enormous sums of 'missing' income.
+S: They are even less so with regard to wealth.
+(1) PQSR
+(2) QSPR
+(3) QSRP
+(4) SRPQ
+= 2
+~ The keyed order is QSPR. Q and S are a fixed pair: "even less so" in S needs "not really progressive" in Q (on income, then wealth). P then points to the gap between measured income and the actual income of the prosperous, and R gives the remedy: reengineer the tax rates to bring this "missing" income into the tax net, as S6 sums up. SRPQ fails because S cannot open, and QSRP mentions the "missing" income before P explains it. PQSR, with P explaining S1's "worse than most estimates" and R's "They" directly after S's "They", reads at least as naturally. (Official key; some sources differ.)
+
+Q 5 | eng | Sentence Arrangement
+The first and sixth sentences of a passage are given as S1 and S6. The four sentences in between have been jumbled up and labelled P, Q, R and S. Choose the proper sequence of the four sentences.
+S1: The history of English literature is usually divided into different periods.
+S6: This is the real danger of periodization, which tends to give the impression of distinct categories where there are none.
+P: However there are important discontinuities to be kept in mind.
+Q: Each period has unique features that produce certain family resemblances between the writers of a particular period.
+R: Scholars often specialize in periods such as Medieval, Renaissance, Romantic, Victorian, and Modern literature.
+S: Failure to detect these discontinuities often produce a false sense of uniformity and consensus within a period.
+(1) PQRS
+(2) RQPS
+(3) PSQR
+(4) RSPQ
+= 2
+~ The order is RQPS. R follows S1 by naming the usual periods (Medieval, Renaissance, Romantic, Victorian, Modern), and Q explains what holds a period together: features that produce family resemblances among its writers. P, opening with "However", turns to the discontinuities this view can hide, and S must follow P because "these discontinuities" refers back to them. S6's "This is the real danger of periodization" sums up the false sense of uniformity in S, so S comes last. PSQR keeps P and S together but separates S from S6. (In S, printed "produce" should strictly be "produces", agreeing with "Failure".)
+
+Q 6 | eng | Grammar & Usage
+Find the part of the sentence that contains an error. If there is no error, choose "No error".
+Ramesh liked his friend's music player to his own.
+(1) Ramesh liked
+(2) his friend's music player
+(3) to his own.
+(4) No error
+= 1
+~ The error is in part (1). The verb "like" cannot take a "to" phrase of comparison; the verb that does is "prefer", since one prefers one thing to another. The correct sentence is "Ramesh preferred his friend's music player to his own." Parts (2) and (3) are correct once the verb is changed: "his friend's music player" is the object, and "to his own" (to his own music player) completes the comparison. "Liked ... more than his own" would also be acceptable, but with "to" the sentence needs "preferred".
+
+Q 7 | eng | Grammar & Usage
+Find the part of the sentence that contains an error. If there is no error, choose "No error".
+Given the complex of the problem the committee is not expected to arrive at a decision any time soon.
+(1) Given the complex of the problem
+(2) the committee is not expected
+(3) to arrive at a decision any time soon.
+(4) No error
+= 1
+~ The error is in part (1). As a noun, "complex" means a group of connected buildings or parts (a sports complex) or a psychological fixation (an inferiority complex); it does not mean the quality of being complicated. The noun needed is "complexity": "Given the complexity of the problem, the committee is not expected to arrive at a decision any time soon." Part (2) is a correct passive ("is not expected"), and part (3) uses the right collocation "arrive at a decision" and the idiom "any time soon", meaning in the near future.
+
+Q 8 | eng | Grammar & Usage
+Find the part of the sentence that contains an error. If there is no error, choose "No error".
+The group of students on a visit to Srinagar circumnavigated around the Dal Lake.
+(1) The group of students
+(2) on a visit to Srinagar
+(3) circumnavigated around the Dal Lake.
+(4) No error
+= 3
+~ The error is in part (3). To circumnavigate means to sail, fly or travel all the way around something (Latin circum, around, and navigare, to sail), so "circumnavigated around" is a redundancy, like "return back" or "revert back". The correct sentence is "The group of students on a visit to Srinagar circumnavigated the Dal Lake" (or "went around the Dal Lake"). Parts (1) and (2) are correct: "The group of students" is the subject, and "on a visit to Srinagar" describes it.
+
+Q 9 | eng | Grammar & Usage
+Find the part of the sentence that contains an error. If there is no error, choose "No error".
+Jitender was the smartest of the two children in the room.
+(1) Jitender was the smartest
+(2) of the two
+(3) children in the room.
+(4) No error
+= 1
+~ The error is in part (1). When two persons or things are compared, the comparative degree is used, not the superlative: "Jitender was the smarter of the two children in the room." The superlative "smartest" is used for three or more, as in "the smartest of all the children". Note that "the" stays before the comparative in the pattern "the + comparative + of the two" (the taller of the two, the better of the two). Parts (2) and (3) are correct as they stand.
+
+Q 10 | eng | Grammar & Usage
+Find the part of the sentence that contains an error. If there is no error, choose "No error".
+He asked me if I would be interested in signing up as a member of the group.
+(1) He asked me if I would be
+(2) interested in signing up
+(3) as a member of the group.
+(4) No error
+= 4
+~ The sentence is correct, so the answer is "No error". It reports a yes/no question ("Would you be interested ...?"); such questions are reported with "if" or "whether" followed by normal statement word order, and "would" is correct after the past reporting verb "asked". "Interested in" takes the right preposition and is followed by the gerund "signing up", and "sign up as a member of" is idiomatic for enrolling in or joining a group. No part needs correction.
+
+Q 11 | eng | Grammar & Usage
+Select the most appropriate option for the blank space.
+I ______ walking past this particular shop for the past three years.
+(1) was
+(2) have
+(3) have been
+(4) had been
+= 3
+~ The phrase "for the past three years" describes an action that began in the past and is still going on, which calls for the present perfect continuous: "I have been walking past this particular shop for the past three years." "Was walking" is the past continuous and cannot be combined with a period that runs up to the present, "have walking" is not a verb form at all, and "had been walking" (past perfect continuous) needs an earlier past point of reference, for example "... when it closed down".
+
+Q 12 | eng | Grammar & Usage
+Select the most appropriate option for the blank space.
+All effects can be connected with immediate causes, but it ______ whether they provide the whole explanation.
+(1) is doubted
+(2) is a doubt
+(3) may be a doubt
+(4) may be doubted
+= 4
+~ The impersonal passive "it may be doubted whether ..." means "one may doubt whether" or "it is open to question whether": "All effects can be connected with immediate causes, but it may be doubted whether they provide the whole explanation." The modal "may" suits the tentative tone set by "can". "It is doubted whether" is grammatical but states that people actually doubt it, which is less apt. "Is a doubt" and "may be a doubt" are unidiomatic, since the noun would need "there is a doubt" or "it is doubtful".
+
+Q 13 | eng | Vocabulary & Idioms
+Select the most appropriate option for the blank space.
+A bird ______ is better than two in the bush.
+(1) in hand
+(2) to hand
+(3) handy
+(4) in one's hands
+= 1
+~ The proverb is "A bird in hand is better than two in the bush", more often worded "A bird in the hand is worth two in the bush". It means that a small advantage you already have is better than a bigger one that is only possible, so one should not give up what is certain for what is uncertain. "In hand" means held, in one's possession. "To hand" means within reach, "handy" means convenient or useful, and "in one's hands" (plural) breaks the fixed wording of the proverb.
+
+Q 14 | eng | Vocabulary & Idioms
+Select the most appropriate option for the blank space.
+Human history is ample proof that human ambition ______ no limits.
+(1) knows
+(2) keeps
+(3) crosses
+(4) marks
+= 1
+~ The idiom "to know no limits" (also "know no bounds") means to be boundless, to have no limit at all: "Human history is ample proof that human ambition knows no limits." "Know" is used figuratively here, as in "her generosity knew no bounds". "Keeps no limits" and "marks no limits" are not idiomatic, and "crosses no limits" would say the opposite of what is meant, since ambition that crosses no limits stays within them. The sentence means that history shows human ambition has always reached for more.
+
+Q 15 | eng | Vocabulary & Idioms
+Select the most appropriate option for the blank space.
+Good history presents several perspectives on a period but these divergent views must ______ into an integrated whole.
+(1) be made
+(2) be fused
+(3) fit
+(4) be balanced
+= 2
+~ The sentence contrasts "several perspectives" and "divergent views" with "an integrated whole", so the verb must mean blending separate things into one: "these divergent views must be fused into an integrated whole." To fuse is to join or blend two or more things so that they become a single unit. "Be made into" is grammatical but vague, "fit into" suggests slotting into a whole that already exists rather than forming one, and "be balanced" does not go with "into". So "be fused" is the most precise collocation.
+
+Q 16 | eng | Reading Comprehension
+Read the passage given below and answer the question that follows.
+The world's life-supporting resources are being depleted at a faster rate than ever before! We have to change our practices and those of the world as a whole towards a more sustainable future. To give us an idea about the dimensions of change, the General Assembly of the United Nations has announced its 'Agenda 2030'. The 17 Sustainable Development Goals describe the framework of our common global efforts. Within each goal, education holds a key position.
+Of course education and learning do not function in isolation. In a traditional sense they help to understand the world one lives in and prepare all for a job market with both intrinsic and instrumental values. What are the many roles of education in sustainable development? Its purpose is transformative in nature, in the sense that it should widen one's worldview, make one question 'unsustainability', and help one build competencies to address global challenges and be accommodated into a global system. Beyond this, education for sustainable development means integrating the 'future' as a specific dimension of our learning activities and teaching. How to build a sustainable future must play a central role in educational processes. Globalization, which is sometimes merely seen as global capitalism, has an inevitability about it. Whether we like it or not, we live in a highly interconnected and interdependent world. It is now well recognized that 21st century challenges are global in nature and require cooperation beyond national boundaries. In a sustainable development sense we have to see ourselves as 'citizens' of the world and respond accordingly to the global challenges in the present century. In fact, global challenges have expanded the very notion of citizenship itself. There is an increasing recognition of the importance of global citizenship.
+Which one of the following areas holds a common key position in United Nations 'Agenda 2030'?
+(1) Environment
+(2) Gender
+(3) Globalization
+(4) Education
+= 4
+~ The first paragraph says that the 17 Sustainable Development Goals describe the framework of our common global efforts and that "within each goal, education holds a key position". So education is the area common to all the goals of Agenda 2030, which the UN General Assembly adopted in September 2015. Environment and gender are the subjects of particular goals, and globalization comes up later only as a feature of the interconnected world, but none of them is said to hold a key position in every goal.
+
+Q 17 | eng | Reading Comprehension
+Read the passage given below and answer the question that follows.
+The world's life-supporting resources are being depleted at a faster rate than ever before! We have to change our practices and those of the world as a whole towards a more sustainable future. To give us an idea about the dimensions of change, the General Assembly of the United Nations has announced its 'Agenda 2030'. The 17 Sustainable Development Goals describe the framework of our common global efforts. Within each goal, education holds a key position.
+Of course education and learning do not function in isolation. In a traditional sense they help to understand the world one lives in and prepare all for a job market with both intrinsic and instrumental values. What are the many roles of education in sustainable development? Its purpose is transformative in nature, in the sense that it should widen one's worldview, make one question 'unsustainability', and help one build competencies to address global challenges and be accommodated into a global system. Beyond this, education for sustainable development means integrating the 'future' as a specific dimension of our learning activities and teaching. How to build a sustainable future must play a central role in educational processes. Globalization, which is sometimes merely seen as global capitalism, has an inevitability about it. Whether we like it or not, we live in a highly interconnected and interdependent world. It is now well recognized that 21st century challenges are global in nature and require cooperation beyond national boundaries. In a sustainable development sense we have to see ourselves as 'citizens' of the world and respond accordingly to the global challenges in the present century. In fact, global challenges have expanded the very notion of citizenship itself. There is an increasing recognition of the importance of global citizenship.
+What is the role of Education in sustainable development?
+(1) Education will develop multiple competencies for sustainable development among people all over the world
+(2) Education will provide books to read on sustainable development
+(3) Education will increase the global capital
+(4) Education will reduce interdependence of the people
+= 1
+~ The second paragraph says that the purpose of education is transformative: it should widen one's worldview, make one question unsustainability and "help one build competencies to address global challenges", challenges that are global in nature. Option 1 restates this. Providing books (option 2) is never mentioned, and the passage refers to global capitalism only as a narrow view of globalization, not as something education will increase (option 3). Option 4 contradicts the passage, which treats interdependence as an inevitable fact that education must help people respond to.
+
+Q 18 | eng | Reading Comprehension
+Read the passage given below and answer the question that follows.
+The world's life-supporting resources are being depleted at a faster rate than ever before! We have to change our practices and those of the world as a whole towards a more sustainable future. To give us an idea about the dimensions of change, the General Assembly of the United Nations has announced its 'Agenda 2030'. The 17 Sustainable Development Goals describe the framework of our common global efforts. Within each goal, education holds a key position.
+Of course education and learning do not function in isolation. In a traditional sense they help to understand the world one lives in and prepare all for a job market with both intrinsic and instrumental values. What are the many roles of education in sustainable development? Its purpose is transformative in nature, in the sense that it should widen one's worldview, make one question 'unsustainability', and help one build competencies to address global challenges and be accommodated into a global system. Beyond this, education for sustainable development means integrating the 'future' as a specific dimension of our learning activities and teaching. How to build a sustainable future must play a central role in educational processes. Globalization, which is sometimes merely seen as global capitalism, has an inevitability about it. Whether we like it or not, we live in a highly interconnected and interdependent world. It is now well recognized that 21st century challenges are global in nature and require cooperation beyond national boundaries. In a sustainable development sense we have to see ourselves as 'citizens' of the world and respond accordingly to the global challenges in the present century. In fact, global challenges have expanded the very notion of citizenship itself. There is an increasing recognition of the importance of global citizenship.
+'We live in a highly interconnected and interdependent world'. What does this phrase mean in the passage?
+(1) We are now more connected and dependent upon each other for our survival
+(2) The means of transport have become faster
+(3) We have become dependent on other countries
+(4) We are facing challenges from globalization
+= 1
+~ The sentence follows the remark that globalization "has an inevitability about it", and the next sentence says that 21st century challenges are global and require cooperation beyond national boundaries. So "interconnected and interdependent" means that people everywhere are now linked and rely on one another, and must work together to survive the challenges they share, as option 1 says. Faster transport (option 2) is not mentioned, option 3 makes the dependence one-way and limits it to countries, and option 4 confuses challenges that are global in nature with challenges caused by globalization.
+
+Q 19 | eng | Reading Comprehension
+Read the passage given below and answer the question that follows.
+The world's life-supporting resources are being depleted at a faster rate than ever before! We have to change our practices and those of the world as a whole towards a more sustainable future. To give us an idea about the dimensions of change, the General Assembly of the United Nations has announced its 'Agenda 2030'. The 17 Sustainable Development Goals describe the framework of our common global efforts. Within each goal, education holds a key position.
+Of course education and learning do not function in isolation. In a traditional sense they help to understand the world one lives in and prepare all for a job market with both intrinsic and instrumental values. What are the many roles of education in sustainable development? Its purpose is transformative in nature, in the sense that it should widen one's worldview, make one question 'unsustainability', and help one build competencies to address global challenges and be accommodated into a global system. Beyond this, education for sustainable development means integrating the 'future' as a specific dimension of our learning activities and teaching. How to build a sustainable future must play a central role in educational processes. Globalization, which is sometimes merely seen as global capitalism, has an inevitability about it. Whether we like it or not, we live in a highly interconnected and interdependent world. It is now well recognized that 21st century challenges are global in nature and require cooperation beyond national boundaries. In a sustainable development sense we have to see ourselves as 'citizens' of the world and respond accordingly to the global challenges in the present century. In fact, global challenges have expanded the very notion of citizenship itself. There is an increasing recognition of the importance of global citizenship.
+'The world's life-supporting resources are being depleted at a faster rate than ever before!' What does this phrase mean in the passage?
+(1) Today we are facing an acute shortage of food products
+(2) Medical health systems are deteriorating at a fast pace
+(3) The natural resources necessary to sustain life are reducing drastically
+(4) Human life is becoming more dependent on the support of technology
+= 3
+~ Life-supporting resources are the natural resources that sustain life, such as water, soil, air, forests and minerals, and "depleted at a faster rate than ever before" means that they are being used up more and more quickly. So the sentence means that the natural resources needed for life are shrinking drastically, which is option 3. Food is only one product of these resources, and the passage does not mention food shortages (option 1), health systems (option 2) or technology (option 4). This alarm is why the passage calls for a more sustainable future.
+
+Q 20 | eng | Reading Comprehension
+Read the passage given below and answer the question that follows.
+The world's life-supporting resources are being depleted at a faster rate than ever before! We have to change our practices and those of the world as a whole towards a more sustainable future. To give us an idea about the dimensions of change, the General Assembly of the United Nations has announced its 'Agenda 2030'. The 17 Sustainable Development Goals describe the framework of our common global efforts. Within each goal, education holds a key position.
+Of course education and learning do not function in isolation. In a traditional sense they help to understand the world one lives in and prepare all for a job market with both intrinsic and instrumental values. What are the many roles of education in sustainable development? Its purpose is transformative in nature, in the sense that it should widen one's worldview, make one question 'unsustainability', and help one build competencies to address global challenges and be accommodated into a global system. Beyond this, education for sustainable development means integrating the 'future' as a specific dimension of our learning activities and teaching. How to build a sustainable future must play a central role in educational processes. Globalization, which is sometimes merely seen as global capitalism, has an inevitability about it. Whether we like it or not, we live in a highly interconnected and interdependent world. It is now well recognized that 21st century challenges are global in nature and require cooperation beyond national boundaries. In a sustainable development sense we have to see ourselves as 'citizens' of the world and respond accordingly to the global challenges in the present century. In fact, global challenges have expanded the very notion of citizenship itself. There is an increasing recognition of the importance of global citizenship.
+'There is an increasing recognition of the importance of global citizenship' because:
+(1) People want to travel more and live in different parts of the world
+(2) It will unite people from all over the world to face the challenges of the 21st century
+(3) People believe that there is a future in foreign countries
+(4) People will cooperate with each other to save themselves from natural disasters
+= 2
+~ The passage says that 21st century challenges are global and "require cooperation beyond national boundaries", that we must see ourselves as citizens of the world and respond accordingly, and that global challenges have expanded the very notion of citizenship. So global citizenship matters because it unites people across the world to face these shared challenges, as option 2 says. Travel and living abroad (option 1) and a future in foreign countries (option 3) are not mentioned, and natural disasters (option 4) are too narrow, since the passage speaks of global challenges in general.
+
+Q 21 | ih | Modern India & Freedom Struggle
+Which one of the following was not provided in the Regulating Act of 1773?
+(1) It made the Presidency of Bengal supreme over those of Bombay and Madras in matters relating to war and peace.
+(2) The tenure of the Governor-General and his Councillors was fixed as five years.
+(3) The Supreme Court of Justice was established at Calcutta.
+(4) The Governor-General-in-Council was authorized to appoint successors to Bombay and Madras Presidencies.
+= 4
+~ The Regulating Act, 1773 made the Governor of Bengal the Governor-General (Warren Hastings) with a council of four, all named in the Act for a term of five years, and placed the Bombay and Madras Presidencies under Bengal in matters of war and peace, so (1) and (2) were provided. It also provided for a Supreme Court of Judicature at Fort William, Calcutta, set up in 1774 (3). It gave the Governor-General-in-Council only superintendence and control over the other two presidencies, not the power to appoint their governors or successors, so (4) was not provided.
+
+Q 22 | ih | Modern India & Freedom Struggle
+Which one of the following statements about the Government of India Act of 1935 is not correct?
+(1) It was an outcome of the Round Table Conferences.
+(2) It provided for the establishment of an All India Federation.
+(3) It retained the authority of the Secretary of State over the Government of India.
+(4) It introduced the provision of Provincial Autonomy.
+= 3
+~ The Government of India Act, 1935 grew out of the three Round Table Conferences, the 1933 White Paper and the Joint Parliamentary Committee's report (1); it provided for an All-India Federation of provinces and princely states, which never materialised (2); and it replaced provincial dyarchy with provincial autonomy (4). The key treats (3) as incorrect because the Act loosened London's grip: it dissolved the Council of India, leaving the Secretary of State three to six advisers, and his control receded where responsible provincial ministers acted. Yet Sections 14 and 314 kept the Governor-General, and until federation the Governor-General in Council, under his general control. (Official key; some sources differ.)
+
+Q 23 | ih | Modern India & Freedom Struggle
+Match List I with List II and select the correct answer using the code given below the Lists:
+List-I (Congress Session)
+A. Lahore Session, 1909
+B. Calcutta Session, 1911
+C. Bankipore Session, 1912
+D. Madras Session, 1914
+List-II (President)
+1. Madan Mohan Malaviya
+2. Raghunath Narasinha Mudholkar
+3. Bishan Narayan Dar
+4. Bhupendra Nath Bose
+(1) A-1, B-3, C-2, D-4
+(2) A-1, B-2, C-3, D-4
+(3) A-4, B-2, C-3, D-1
+(4) A-4, B-3, C-2, D-1
+= 1
+~ Madan Mohan Malaviya presided over the Lahore session of 1909 (A-1); Bishan Narayan Dar over the Calcutta session of 1911, where 'Jana Gana Mana' was first sung (B-3); Raghunath Narasinha Mudholkar over the Bankipore (Patna) session of 1912 (C-2); and Bhupendra Nath Bose over the Madras session of 1914 (D-4). Hence A-1, B-3, C-2, D-4, option (1). The other codes wrongly swap Dar and Mudholkar, or Malaviya and Bose.
+
+Q 24 | ih | Modern India & Freedom Struggle
+Who among the following started the Bhonsala Military School at Nashik?
+(1) V.D. Savarkar
+(2) M.R. Jayakar
+(3) N.C. Kelkar
+(4) B.S. Moonje
+= 4
+~ The Bhonsala Military School at Nashik was founded in 1937 by Dr. B. S. Moonje, a Hindu Mahasabha leader, through the Central Hindu Military Education Society he had set up in 1935 to prepare Indian youth for careers in the armed forces. So (4) is correct. V. D. Savarkar was the Hindu Mahasabha's president and ideologue, M. R. Jayakar a liberal lawyer and later the first Vice-Chancellor of Poona University, and N. C. Kelkar a Tilakite editor of the Kesari and the Mahratta; none of them started the school.
+
+Q 25 | ih | Modern India & Freedom Struggle
+Arrange the following events associated with Pandit Madan Mohan Malaviya in chronological order, starting with the earliest:
+1. Founding of the Banaras Hindu University
+2. Formation of the Congress Nationalist Party
+3. Founding of the English newspaper 'The Leader'
+4. Founding of the Hindu Boarding House at Allahabad
+Select the correct answer using the code given below:
+(1) 3-4-1-2
+(2) 4-3-1-2
+(3) 4-3-2-1
+(4) 3-4-2-1
+= 2
+~ Malaviya set up the Hindu Boarding House at Allahabad for students of Muir Central College in the early 1900s (about 1901-03); he launched the English daily 'The Leader' from Allahabad in 1909; he founded the Banaras Hindu University in 1916; and in 1934 he and M. S. Aney formed the Congress Nationalist Party to oppose the Congress's neutral stand on the Communal Award. So the order is 4-3-1-2, option (2). Codes ending in 2-1 wrongly place the 1934 party before the 1916 university.
+
+Q 26 | lab | Labour Codes & Wages
+An employee shall be covered under the provisions of the Payment of Wages Act, 1936, should the employee be drawing a maximum monthly wage of:
+(1) Rupees fifteen thousand
+(2) Rupees eighteen thousand
+(3) Rupees twenty-one thousand
+(4) Rupees twenty-four thousand
+= 4
+~ Under Section 1(6) of the Payment of Wages Act, 1936, the Act applies where an employee's wages for a wage period do not exceed a ceiling that the Central Government may revise every five years on the basis of the NSSO Consumer Expenditure Survey; the notification of 28 August 2017 raised it from ₹18,000 (fixed in 2012) to ₹24,000 a month, so (4) is correct. ₹15,000 and ₹21,000 are the EPF and ESI wage ceilings, often confused with it. The Act has since been subsumed in the Code on Wages, 2019 (in force from 21 November 2025), whose timely-payment and deduction rules apply to all employees irrespective of wage ceiling.
+
+Q 27 | lab | Labour Codes & Wages
+A minimum rate of remuneration which shall be applied to an employee working on piece work for the purpose of securing to such employees a minimum rate of wages on a time work basis under the Minimum Wages Act, 1948 is known as:
+(1) A minimum piece rate
+(2) A guaranteed time rate
+(3) A minimum time rate
+(4) A guaranteed piece rate
+= 2
+~ Section 3(2) of the Minimum Wages Act, 1948 lets the appropriate Government fix four kinds of rates: a minimum time rate for time work, a minimum piece rate for piece work, a guaranteed time rate, which is a minimum rate of remuneration for employees on piece work that secures them a minimum wage on a time-work basis (clause (c)), and an overtime rate. The definition in the question is that of the guaranteed time rate, so (2) is correct; "guaranteed piece rate" is not a term used in the Act. The Act has since been subsumed in the Code on Wages, 2019, in force from 21 November 2025.
+
+Q 28 | lab | Labour Codes & Wages
+Match List I with List II and select the correct answer using the code given below the Lists:
+List-I (Provision)
+A. Recovery Officer
+B. Compulsory Insurance
+C. Scheduled Employment
+D. Subsistence Allowance
+List-II (Legislation)
+1. The Industrial Employment (Standing Orders) Act, 1946
+2. The Minimum Wages Act, 1948
+3. The Payment of Gratuity Act, 1972
+4. The Employees' Provident Fund and Miscellaneous Provisions Act, 1952
+(1) A-4, B-3, C-2, D-1
+(2) A-4, B-2, C-3, D-1
+(3) A-1, B-2, C-3, D-4
+(4) A-1, B-3, C-2, D-4
+= 1
+~ The Recovery Officer, who recovers provident fund arrears as if they were arrears of land revenue, is an authority under the EPF & MP Act, 1952 (Sections 2(kk) and 8B-8G), so A-4. Compulsory insurance of the employer's gratuity liability is required by Section 4A of the Payment of Gratuity Act, 1972 (B-3). "Scheduled employment", one listed in the Schedule for which minimum wages are fixed, belongs to the Minimum Wages Act, 1948 (C-2). Subsistence allowance to a suspended workman is payable under Section 10A of the Industrial Employment (Standing Orders) Act, 1946 (D-1). All four Acts are now subsumed in the Labour Codes, in force from 21 November 2025.
+
+Q 29 | lab | Factories & Working Conditions
+An adult worker who has joined on 1st January, 2022 in a factory and worked for 220 days during the year has been laid off for 25 days as per Standing Orders during the year. How many days of leave with wages shall he be entitled to during the calendar year 2023?
+(1) Nil
+(2) 10
+(3) 12
+(4) 11
+= 4
+~ Under Section 79 of the Factories Act, 1948, a worker who has worked 240 days or more in a calendar year gets leave with wages in the next year at one day for every 20 days worked. Explanation 1 to Section 79(1) counts lay-off days permitted by standing orders towards the 240 days, but no leave is earned on them. Here 220 + 25 = 245 days, so he qualifies, and leave = 220 ÷ 20 = 11 days, option (4). "Nil" ignores the lay-off days; 12 wrongly earns leave on them (245 ÷ 20). Since 21 November 2025 the OSH Code, 2020 applies (180-day threshold, same one-in-20 rate).
+
+Q 30 | lab | Industrial Disputes & Trade Unions
+As per the provisions of the Industrial Employment (Standing Orders) Act, 1946, standing orders shall come into operation after the expiry of how many days from the date on which copies of the order of the Appellate Authority are sent to the employer and to the trade unions?
+(1) Seven days
+(2) Ten days
+(3) Fifteen days
+(4) Thirty days
+= 1
+~ Section 7 of the Industrial Employment (Standing Orders) Act, 1946 says that certified standing orders come into operation on the expiry of thirty days from the date on which authenticated copies are sent to the employer and the workmen's representatives if no appeal is filed, or, where an appeal is preferred under Section 6, on the expiry of seven days from the date on which copies of the Appellate Authority's order are sent to the employer and the trade union. So (1) is correct; thirty days is the no-appeal case (4). The Act has since been subsumed in the Industrial Relations Code, 2020, in force from 21 November 2025.
+
+Q 31 | ss | Social Security Schemes & Codes
+How many members are to be nominated by the Central Government to the National Social Security Board as per the provisions of the Unorganised Workers' Social Security Act, 2008?
+(1) Eighteen
+(2) Twenty
+(3) Twenty-six
+(4) Thirty-four
+= 4
+~ Section 5(2) of the Unorganised Workers' Social Security Act, 2008 constitutes the National Social Security Board with the Union Labour Minister as Chairperson and the Director General (Labour Welfare) as Member-Secretary, both ex officio, plus 34 members nominated by the Central Government: 7 representing unorganised workers, 7 their employers, 7 eminent persons from civil society, 3 MPs (2 Lok Sabha, 1 Rajya Sabha), 5 from Central Ministries and 5 from State Governments (7 + 7 + 7 + 3 + 5 + 5 = 34). So (4). The Act has since been subsumed in the Code on Social Security, 2020, in force from 21 November 2025.
+
+Q 32 | ss | Social Security Schemes & Codes
+Which one of the following schemes is not a Social Security Scheme under the Unorganised Workers' Social Security Act, 2008?
+(1) National Family Benefit Scheme
+(2) Janshree Bima Yojana
+(3) Employees' Pension Scheme
+(4) Rashtriya Swasthya Bima Yojana
+= 3
+~ The First Schedule to the Unorganised Workers' Social Security Act, 2008 lists ten Central schemes for unorganised workers, among them the Indira Gandhi National Old Age Pension Scheme, National Family Benefit Scheme, Janani Suraksha Yojana, Janshree Bima Yojana, Aam Admi Bima Yojana and Rashtriya Swasthya Bima Yojana. The Employees' Pension Scheme, 1995 is framed under Section 6A of the EPF & MP Act, 1952 for organised-sector EPF members, so it is not a scheme under the 2008 Act; answer (3). The 2008 Act has since been subsumed in the Code on Social Security, 2020, in force from 21 November 2025.
+
+Q 33 | ss | EPF & Pension
+Which one of the following authorities constituted by the Central Government shall be the Appellate Authority under the Employees' Provident Fund and Miscellaneous Provisions Act, 1952?
+(1) Employees Provident Funds Appellate Tribunal
+(2) National Tribunal
+(3) Labour Appellate Tribunal
+(4) Industrial Tribunal
+= 4
+~ Section 7D of the EPF & MP Act, 1952 originally set up an Employees' Provident Funds Appellate Tribunal, but the Finance Act, 2017 merged it with the Central Government Industrial Tribunal from 26 May 2017. Section 7D now makes the Industrial Tribunal constituted by the Central Government under Section 7A of the Industrial Disputes Act, 1947 the Tribunal for appeals under the Act. So in July 2023 the answer was (4), not the abolished EPF Appellate Tribunal (1). Under the Code on Social Security, 2020 (in force from 21 November 2025), appeals go to the Tribunal constituted by the Central Government (Section 23).
+
+Q 34 | ss | Compensation & Maternity Benefit
+As per the provisions of the Maternity Benefit Act, 1961, the maximum period for which a female employee shall be entitled to leave with wages as maternity benefit for giving birth to the third child is:
+(1) Eight weeks
+(2) Twelve weeks
+(3) Sixteen weeks
+(4) Twenty-six weeks
+= 2
+~ Section 5(3) of the Maternity Benefit Act, 1961, as amended in 2017, gives up to 26 weeks of maternity benefit (not more than 8 weeks before the expected delivery) to a woman with fewer than two surviving children. A woman who already has two or more surviving children, as when she gives birth to a third child, gets a maximum of 12 weeks, of which not more than 6 weeks may precede the expected delivery. So (2) is correct; 26 weeks applies only to the first two children. The same rule now appears in the Code on Social Security, 2020, in force from 21 November 2025.
+
+Q 35 | ss | EPF & Pension
+Which one of the following statements under the Employees' Provident Fund and Miscellaneous Provisions Act, 1952, is not correct?
+(1) It makes provision for pension scheme including family pension.
+(2) It makes provision for Employees' Deposit Linked Insurance Scheme.
+(3) The provisions of the Act shall not be applicable to Cooperative Societies employing fifty or more persons working without the aid of power.
+(4) The contribution by the employer to the Fund shall be on the basis of the basic wage, dearness allowance and retaining allowance (if any) of the employee.
+= 3
+~ Section 16(1)(a) of the EPF & MP Act, 1952 excludes a co-operative society employing less than fifty persons and working without the aid of power; a society employing fifty or more such persons is covered, so statement (3) is not correct. The Act does provide for the Employees' Pension Scheme, including family pension (Section 6A), and for the Employees' Deposit Linked Insurance Scheme (Section 6C), and Section 6 fixes the employer's contribution on the basic wages, dearness allowance and retaining allowance (if any). The Act has since been subsumed in the Code on Social Security, 2020, in force from 21 November 2025.
+
+Q 36 | qa | Algebra & Numbers
+In a desert, X and Y are two spots that are separated by 100 km. At point X, are placed two pillars, one black and one white. Along the line joining X and Y, a white pillar is placed for every 180 m and a black pillar is placed for every 350 m. How many times can one find black and white pillars together while traveling from X to Y?
+(1) 14
+(2) 15
+(3) 16
+(4) 17
+= 3
+~ Both pillars stand together wherever the distance from X is a common multiple of 180 m and 350 m. Since 180 = 2² × 3² × 5 and 350 = 2 × 5² × 7, LCM = 2² × 3² × 5² × 7 = 6,300 m. In 100 km = 100,000 m there are 15 such points after X (15 × 6,300 = 94,500 m, while 16 × 6,300 = 100,800 m lies beyond Y). Adding the pair already standing at X gives 15 + 1 = 16 times, option (3). The figure 15 forgets the pair at X.
+
+Q 37 | qa | Reasoning
+P, Q, R, S, T and U are six friends. Which of the following is/are sufficient to compare heights of S and T?
+1. R is shorter than P but taller than other friends.
+2. U is taller than Q but shorter than S although Q is not the shortest among the friends.
+Select the correct answer using the code given below:
+(1) 1 alone is sufficient
+(2) 2 alone is sufficient
+(3) Both 1 and 2 are not sufficient
+(4) 1 and 2 together are sufficient
+= 4
+~ Statement 1 gives only P > R > the other four, saying nothing about S versus T. Statement 2 gives S > U > Q with Q not the shortest, so the shortest is P, R or T; if it is P or R, T may be taller or shorter than S, so statement 2 alone is not enough either. Together, P and R are taller than everyone else, so the shortest must be T: P > R > S > U > Q > T. Thus S is taller than T, and the comparison needs both statements, option (4).
+
+Q 38 | qa | Reasoning
+Eight chairs are placed at a uniform distance from each other around a round table. C and D are equal distance away from both A and B; E sits between A and C; G and F sit opposite each other. Where does H sit?
+(1) Adjacent to D
+(2) Adjacent to A
+(3) Adjacent to F
+(4) Adjacent to G
+= 1
+~ Number the chairs 0-7 with A at 0. Reading "E sits between A and C" as E occupying the one chair separating them, C is two seats from A (say C at 2, E at 1). For C to be equally far from A and B, B must be at 4, opposite A, and D, equidistant too, takes the other midway chair, 6. Of the free chairs 3, 5 and 7, only 3 and 7 are opposite, so G and F take them and H sits at 5, next to D, option (1). The wording is loose; if "between" meant anywhere on the arc, other seatings would fit.
+
+Q 39 | qa | Arithmetic
+A, B and C can individually finish a job in 10, 15 and 6 days, respectively. If all of them work together, in how many days will they finish the job?
+(1) 2 days
+(2) 3 days
+(3) 4 days
+(4) 5 days
+= 2
+~ Daily work rates: A = 1/10, B = 1/15 and C = 1/6 of the job. Together they do 1/10 + 1/15 + 1/6 = 3/30 + 2/30 + 5/30 = 10/30 = 1/3 of the job per day, so they finish it in 3 days, option (2). Check with total work = LCM(10, 15, 6) = 30 units: A does 3, B 2 and C 5 units a day, 10 units together, and 30 ÷ 10 = 3 days.
+
+Q 40 | qa | Algebra & Numbers
+A dice is thrown two times. The number of ways that the number appearing on the first throw is not less than that on the second throw is:
+(1) 15
+(2) 20
+(3) 21
+(4) 36
+= 3
+~ Two throws of a die give 6 × 6 = 36 ordered outcomes. "First number not less than the second" means first ≥ second. If the first throw shows 1 there is 1 such outcome, if 2 there are 2, and so on up to 6, so the count is 1 + 2 + 3 + 4 + 5 + 6 = 21, option (3). Equivalently, the 6 doubles plus half of the 30 unequal outcomes (15) give 21. The distractor 15 counts only "first greater than second", and 36 is all outcomes.
+
+Q 41 | acc | Accounting Basics
+Overhauling expenses of ₹25,000 for the engine of a motor car to get better fuel efficiency is:
+(1) Deferred revenue expenditure
+(2) Revenue receipt
+(3) Capital expenditure
+(4) Revenue expenditure
+= 3
+~ Overhauling the engine of a motor car to improve its fuel efficiency is not routine upkeep: it improves the asset's performance and cuts future running costs, so the benefit extends beyond the current year and the ₹25,000 is capitalised (added to the car's cost) as capital expenditure, option (3). Ordinary repairs that merely keep the car in working order would be revenue expenditure (4); deferred revenue expenditure is a large revenue outlay, such as a heavy advertising campaign, written off over several years (1); and an outlay is not a receipt (2).
+
+Q 42 | acc | Depreciation & Valuation
+Which one of the following statements is not correct?
+(1) Depreciation is a non-cash expense.
+(2) Depreciation is the process of valuation of assets.
+(3) The main cause of depreciation is wear and tear caused by usage.
+(4) Depreciation must be charged so as to ascertain true profit or loss of a business.
+= 2
+~ Depreciation is a process of allocating the cost (less residual value) of a fixed asset over its useful life, not a process of valuing assets; the written-down book value need not equal the asset's market value. So statement (2) is not correct. The others are standard points: depreciation is a non-cash expense, since no cash goes out when it is charged (1); wear and tear from use is its main cause, along with obsolescence, passage of time and depletion (3); and it must be charged to show the true profit or loss and a fair balance sheet (4).
+
+Q 43 | acc | Accounting Basics
+A credit purchase of machinery recorded in Purchase Book instead of Journal Proper is an example of:
+(1) Compensating errors
+(2) Errors of commission
+(3) Errors of principle
+(4) Errors of omission
+= 3
+~ An error of principle arises when a transaction is recorded against accounting principles, typically by treating a capital item as revenue or vice versa. The Purchase Book records only credit purchases of goods meant for resale; a credit purchase of machinery, a fixed asset, belongs in the Journal Proper with Machinery account debited. Entering it in the Purchase Book sends it to Purchases account, so it is an error of principle, option (3). It is not an omission (the transaction is recorded), an error of commission (wrong amount or wrong account of the same class) or a compensating error.
+
+Q 44 | acc | Accounting Basics
+The practice of appending notes regarding contingent liability in accounting statements is pursuant to:
+(1) Convention of consistency
+(2) Money measurement concept
+(3) Convention of conservatism
+(4) Convention of full disclosure
+= 4
+~ The convention of full disclosure requires that all material information users need be disclosed in the financial statements. Contingent liabilities, such as claims against the firm not acknowledged as debts or guarantees given, are not entered in the accounts because they may never arise, but they are disclosed by way of notes to the accounts, so (4) is correct. Conservatism concerns providing for probable losses but not anticipating gains (3), consistency the use of the same methods from year to year (1), and money measurement the recording of only items expressible in money (2).
+
+Q 45 | acc | Accounting Basics
+'Outstanding rent' may be classified as:
+(1) Natural personal account
+(2) Representative personal account
+(3) Real account
+(4) Nominal account
+= 2
+~ Accounts are classified as personal (natural, artificial and representative), real and nominal. Outstanding rent is rent that has become due but is unpaid; the account stands for the landlord, the person to whom the money is owed, so it is a representative personal account, option (2). Prepaid expenses, accrued income and income received in advance are likewise representative personal accounts. The Rent account itself is nominal (4), but Outstanding Rent is not; nor is it a real account, which records assets such as land or machinery (3), or a natural personal account of a named individual (1).
+
+Q 46 | sci | Computer Applications
+Which of the following tag is used to insert comments in the HTML source code?
+(1) </-- -->
+(2) <!-- -->
+(3) <-- ! -->
+(4) </-- --/>
+= 2
+~ An HTML comment begins with <!-- and ends with -->, for example <!-- main menu -->. The browser does not display anything written between the two markers, so comments are used to annotate the source code or to hide part of a page for a while. The other options are not valid comment syntax: </-- starts like a closing tag, <-- ! --> puts the exclamation mark at the wrong end, and --/> is not the comment's closing marker.
+
+Q 47 | sci | Computer Applications
+Which one among the following is used to create an e-mail hyperlink to a webpage?
+(1) mail:
+(2) mailto:
+(3) tomail:
+(4) to_mail:
+= 2
+~ An e-mail link is made with the mailto: scheme in the href attribute of an anchor tag, for example <a href="mailto:name@example.com">Write to us</a>. Clicking it opens the user's default e-mail program with a new message addressed to that address, and a subject or body can be added after a question mark (?subject=...). "mail:", "tomail:" and "to_mail:" are not recognised URL schemes, so browsers do not treat them as e-mail links.
+
+Q 48 | sci | Computer Applications
+In the context of a buffer in memory area or disk, spool refers to:
+(1) Simple peripheral operation on-line
+(2) Simple peripheral operation off-line
+(3) Simultaneous peripheral operation on-line
+(4) Simultaneous peripheral operation off-line
+= 3
+~ SPOOL stands for Simultaneous Peripheral Operations On-Line. In spooling, data meant for a slow device such as a printer are first written to a buffer on disk or in memory, and the device takes them from this queue at its own speed. The CPU and other programs carry on meanwhile, and several jobs can wait in the queue; the print spooler is the commonest example. The peripheral works at the same time as the computer and under its control, so the operation is "simultaneous" and "on-line", not "simple" or "off-line".
+
+Q 49 | sci | Computer Applications
+Which one of the following is not a commutative law?
+(1) A * b = b * A
+(2) A + b = b + A
+(3) A − b = b − A
+(4) A * B = B * A
+= 3
+~ An operation is commutative when the order of the operands does not change the result. Addition and multiplication are commutative: A + b = b + A and A * b = b * A, where * stands for multiplication (options (1) and (4) differ only in letter case). Subtraction is not commutative, because A − b is the negative of b − A; for example, 5 − 3 = 2 but 3 − 5 = −2. So A − b = b − A is not a commutative law; it holds only when A = b. Division is not commutative either.
+
+Q 50 | sci | Computer Applications
+Which OSI layer is responsible for managing the communication between computers in the network?
+(1) Network layer
+(2) Transport layer
+(3) Session layer
+(4) Data link layer
+= 3
+~ The session layer, layer 5 of the OSI model, establishes, manages and terminates the sessions (dialogues) between applications running on different computers. It controls which side may send at a time (dialogue control) and inserts checkpoints so that a long transfer can resume from the last checkpoint after a failure (synchronisation). The network layer (layer 3) handles logical addressing and routing, the transport layer (layer 4) end-to-end delivery and error recovery, and the data link layer (layer 2) framing and node-to-node delivery on a single link.
+
+Q 51 | sci | Biology
+Consider the following statements about DNA:
+1. DNA refers to Deoxyribonucleic Acid.
+2. It is located in the ribosomes.
+3. It is composed of Ribonucleic Acid.
+4. It can make a copy of itself.
+Which of the statements given above is/are correct?
+(1) 1 and 4
+(2) 1 and 3
+(3) 4 only
+(4) 2 and 3
+= 1
+~ Statement 1 is correct: DNA is deoxyribonucleic acid. Statement 4 is correct: DNA replicates itself, each strand serving as the template for a new strand (semi-conservative replication), which is how genetic information passes to daughter cells. Statement 2 is wrong: DNA is found mainly in the nucleus, with small amounts in mitochondria and chloroplasts; ribosomes are made of ribosomal RNA and proteins. Statement 3 is wrong: DNA is built of deoxyribonucleotides (deoxyribose sugar, phosphate and the bases A, T, G, C), while ribonucleic acid (RNA) is a different nucleic acid.
+
+Q 52 | sci | Biology
+Velamen, a spongy tissue, is formed in:
+(1) Tap root
+(2) Epiphytic root
+(3) Fibrous root
+(4) Respiratory root
+= 2
+~ Velamen is a spongy, many-layered covering of dead cells on the aerial roots of epiphytes, especially epiphytic orchids such as Vanda. Like blotting paper, it soaks up and holds moisture from humid air and rain, and it also protects the root. Tap roots and fibrous roots are underground root systems. Respiratory roots (pneumatophores) of mangroves such as Rhizophora grow upward out of the mud and take in air through their lenticels; they do not absorb water from the air.
+
+Q 53 | sci | Chemistry
+Which one of the following statements is not correct?
+(1) Hydrogen ions cannot exist alone.
+(2) All compounds containing hydrogen are acidic.
+(3) Separation of H⁺ ions from HCl molecules cannot occur in the absence of water.
+(4) Water soluble bases are known as alkalis.
+= 2
+~ Statement (2) is wrong: many compounds contain hydrogen but are not acidic, for example glucose (C₆H₁₂O₆) and alcohol (C₂H₅OH), whose solutions do not conduct electricity because they release no H⁺ ions. Only compounds that give H⁺ ions in water are acids. The other statements follow NCERT Class 10 Science: H⁺ ions cannot exist alone and combine with water to form hydronium ions (H₃O⁺); HCl gives H⁺ ions only in water, which is why dry HCl gas does not change the colour of dry litmus paper; and bases that dissolve in water are called alkalis.
+
+Q 54 | sci | Chemistry
+Which one of the following elements has the highest boiling point?
+(1) Lithium
+(2) Sodium
+(3) Potassium
+(4) Rubidium
+= 1
+~ The boiling points of the alkali metals fall down Group 1: lithium about 1342 °C, sodium 883 °C, potassium 759 °C and rubidium 688 °C. Down the group the atoms get larger, the single valence electron is farther from the nucleus, and the metallic bonding between atoms becomes weaker, so less energy is needed to separate them. Lithium, the smallest atom of the four, has the strongest metallic bonding and therefore the highest boiling point (and also the highest melting point).
+
+Q 55 | qa | Geometry & Mensuration
+An ice cube with 10 cm side is divided into eight smaller cubes, each with same side. Which one of the following statements is correct in this context?
+(1) Total volume will increase and total surface area will decrease.
+(2) Total volume will decrease and total surface area will increase.
+(3) Total volume will remain the same and total surface area will increase.
+(4) Total volume will increase and total surface area will remain the same.
+= 3
+~ Cutting neither adds nor removes ice, so the total volume stays 10³ = 1000 cm³: each small cube has side 5 cm and volume 125 cm³, and 8 × 125 = 1000 cm³. The surface area rises because new faces are exposed. The original cube has 6 × 10² = 600 cm², while the eight small cubes together have 8 × 6 × 5² = 1200 cm², twice as much. This is why crushed ice melts faster than a single block: more of its surface is in contact with the surroundings.
+
+Q 56 | pol | Judiciary
+Which of the following statements regarding the attendance of retired judges at sittings of the Supreme Court of India is/are correct?
+1. Article 128 permits the attendance of retired judges at the sittings of the Supreme Court.
+2. The Chief Justice of India may at any time request anyone who has held office as a Judge of the Supreme Court or of a High Court to sit and act as a Judge of the Supreme Court.
+3. The Chief Justice of India may at any time, with the previous consent of the President of India, request any person who has held the office of Chief Justice of a High Court to sit and act as a Judge of the Supreme Court.
+4. The Chief Justice of India may at any time, with the previous consent of the President of India, request any person who has held the office of a Judge of the Supreme Court to sit and act as a Judge of the Supreme Court.
+Select the correct answer using the code given below:
+(1) 1 and 4
+(2) 1 and 3
+(3) 2 and 4
+(4) 4 only
+= 1
+~ Article 128 is headed "Attendance of retired Judges at sittings of the Supreme Court", so statement 1 is correct. With the President's previous consent, the Chief Justice of India may ask a former Supreme Court Judge to sit and act as a Judge, so statement 4 is correct. Statement 2 is wrong: it omits the President's consent and the condition that a former High Court Judge be duly qualified for the Supreme Court. Statement 3 is treated as wrong because Article 128 names no High Court Chief Justices; they come in only as qualified former High Court Judges. No option offers 1, 3 and 4.
+
+Q 57 | pol | Federalism & Local Government
+The board of a cooperative society can be superseded or kept under suspension if:
+1. There is negligence in the performance of duties.
+2. There is any act prejudicial to the interest of the co-operative society or its members.
+3. The body has failed to conduct elections in accordance with the provisions of the State Act.
+4. There is no Government shareholdings or loan or financial assistance or any guarantee by the Government.
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 1 and 3 only
+(3) 3 and 4 only
+(4) 1, 2 and 3
+= 4
+~ Article 243ZL(1), added by the 97th Constitutional Amendment (2011), bars superseding a co-operative board or keeping it under suspension for more than six months. It allows this only for persistent default, negligence in the performance of duties, an act prejudicial to the interests of the society or its members, a stalemate in the board, or the election authority's failure to hold elections under the State Act, so 1, 2 and 3 are grounds. Statement 4 is the opposite: a board cannot be superseded where there is no Government shareholding, loan, financial assistance or guarantee. Since Rajendra N. Shah (2021), Part IXB applies only to multi-State co-operative societies.
+
+Q 58 | cur | Schemes & Development
+Which of the following statements regarding the Member of Parliament Local Area Development Scheme are correct?
+1. The nodal ministry for the scheme is the Ministry of Statistics and Programme Implementation.
+2. Funds released under the scheme are non-lapsable.
+3. The role of the Member of Parliament is limited to recommending works.
+4. The scheme is confined to the State from which the Member of Parliament is elected (Lok Sabha). However, a Member of Parliament from Rajya Sabha can recommend works anywhere in the country.
+Select the correct answer using the code given below:
+(1) 1 and 4 only
+(2) 1, 2 and 3 only
+(3) 2, 3 and 4 only
+(4) 1, 2, 3 and 4
+= 2
+~ MPLADS, launched in December 1993, is run by the Ministry of Statistics and Programme Implementation, so statement 1 is correct. Funds released under it are non-lapsable: money not used in a year is carried forward, so statement 2 is correct. The MP only recommends works, and the district authority sanctions, executes and monitors them, so statement 3 is correct. Statement 4 is wrong: a Lok Sabha MP recommends works within his constituency, not anywhere in the State, and an elected Rajya Sabha MP within his State of election, not anywhere in the country; nominated members of either House may choose districts in any one State.
+
+Q 59 | eco | Poverty, Employment & Welfare
+The Global Multidimensional Poverty Index developed by the United Nations Development Programme is a measurement of:
+1. Nutrition
+2. Cooking fuel
+3. Assets
+4. School attendance
+Select the correct answer using the code given below:
+(1) 1, 2, 3 and 4
+(2) 1, 2 and 3 only
+(3) 2, 3 and 4 only
+(4) 1 and 4 only
+= 1
+~ The global Multidimensional Poverty Index, published since 2010 by UNDP's Human Development Report Office with the Oxford Poverty and Human Development Initiative (OPHI), measures deprivation in three equally weighted dimensions through 10 indicators. Health covers nutrition and child mortality. Education covers years of schooling and school attendance. Standard of living covers cooking fuel, sanitation, drinking water, electricity, housing and assets. A person deprived in at least one-third of the weighted indicators is counted as multidimensionally poor. Nutrition, cooking fuel, assets and school attendance are all indicators, so all four are correct.
+
+Q 60 | pol | Constitutional & Statutory Bodies
+Which one of the following was not recommended by the Dinesh Goswami Committee (1990)?
+(1) The appointment of the Chief Election Commissioner should be made by the President of India in consultation with the Chief Justice of India and the Leader of the Opposition.
+(2) The members of the Election Commission should be appointed by the President of India on the advice of a Committee, consisting of the Prime Minister and the Leader of the Opposition.
+(3) The consultation process should have a statutory backing.
+(4) The appointment of the other Election Commissioners should be made in consultation with the Chief Election Commissioner, the Chief Justice of India and the Leader of the Opposition.
+= 2
+~ The Dinesh Goswami Committee (1990) recommended that the President appoint the Chief Election Commissioner in consultation with the Chief Justice of India and the Leader of the Opposition, and the other Election Commissioners with these two and the CEC, with statutory backing for this consultation. It did not propose a committee of the Prime Minister and the Leader of the Opposition. At the exam date, the Supreme Court's Anoop Baranwal judgment (2 March 2023) had the President appoint on the advice of the Prime Minister, Leader of the Opposition and CJI until Parliament legislated; the CEC and Other ECs Act, 2023 now replaces the CJI with a Union Cabinet Minister.
+
+Q 61 | ih | Modern India & Freedom Struggle
+Who among the following was a companion of freedom fighter Rani Chennamma of Kittur and continued the fight against the British after the Rani's capture by the British in 1824?
+(1) Rayanna
+(2) Tipu Garo
+(3) Jagbandhu
+(4) Dukaribala Devi
+= 1
+~ Sangolli Rayanna, a commander in the Kittur army, was Rani Chennamma's companion. After the British captured the Rani in December 1824 and took over Kittur, he carried on a guerrilla struggle against them until he was betrayed and captured; he was hanged at Nandagad on 26 January 1831. The others belong to other movements. Tipu, the Pagal Panthi leader, led the Garo and Hajong peasants of Mymensingh in Bengal in the 1820s. Bakshi Jagabandhu led the Paika rebellion in Odisha in 1817. Dukaribala Devi was a woman revolutionary of Bengal in the early twentieth century.
+
+Q 62 | lab | Factories & Working Conditions
+The First Indian Factories Act, passed in 1881, dealt primarily with:
+(1) Women labour
+(2) Living conditions of factory workers
+(3) Child labour
+(4) Textile workers
+= 3
+~ The Indian Factories Act, 1881, passed under Lord Ripon, was mainly a child-labour law. It applied to factories using mechanical power and employing 100 or more persons. It banned the employment of children under 7, limited children aged 7 to 12 to 9 hours a day with an hour's rest and four holidays a month, and required dangerous machinery to be fenced. Women's working hours were first regulated by the Factories Act of 1891, which also raised the minimum age to 9. Living conditions and textile workers as such were not its subject.
+
+Q 63 | ih | Modern India & Freedom Struggle
+Where was Azad Hind Fauj (INA) formed?
+(1) Singapore
+(2) Tokyo
+(3) Berlin
+(4) Rangoon
+= 1
+~ The Indian National Army was formed in Singapore. After Singapore fell to Japan in February 1942, Indian prisoners of war there were handed over to Captain Mohan Singh, and the INA was formally set up on 1 September 1942. It was revived under Subhas Chandra Bose, who took command in Singapore in August 1943 and proclaimed the Provisional Government of Azad Hind there on 21 October 1943. Rash Behari Bose worked from Tokyo, the Free India Legion was raised in Germany, and the INA moved its headquarters to Rangoon only in 1944.
+
+Q 64 | ih | Modern India & Freedom Struggle
+In 1927, Lord Birkenhead, Secretary of State for India, appointed a Committee of three members to enquire into the relationship between the Indian States and the British Government and to make suggestions for more satisfactory adjustment of the existing economic relations between the Indian States and British India. Who among the following was not a member of the Committee?
+(1) Harcourt Butler
+(2) A.J. Wilson
+(3) W.S. Holdsworth
+(4) S.C. Peel
+= 2
+~ The Indian States Committee appointed by Lord Birkenhead in December 1927 is known as the Butler Committee after its chairman, Sir Harcourt Butler. Its other two members were Professor W.S. Holdsworth, the Oxford legal historian, and S.C. Peel (the Hon. Sidney Peel). Its report (1929) held that paramountcy must remain supreme, and that the States should not be transferred without their own consent to a new government in British India responsible to an Indian legislature. A.J. Wilson was not a member.
+
+Q 65 | ih | Modern India & Freedom Struggle
+Which of the following statements are correct?
+1. Under the Cornwallis System, the districts were divided into thanas or police jurisdictions of 20–30 miles square.
+2. Each of them was placed under an officer of government, under the denomination of daroga.
+3. The daroga system was introduced in Madras in 1812.
+4. The daroga was nominated by the district magistrate.
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 2, 3 and 4
+(3) 1, 3 and 4
+(4) 1, 2 and 4
+= 4
+~ Statements 1, 2 and 4 describe Cornwallis's police plan of 1793 in Bengal. The zamindars lost their police duties, and each district was divided into thanas, police circles of about 20 to 30 miles square. Each thana was placed under a salaried government officer called the daroga, who was appointed by and answerable to the district magistrate. Statement 3 is wrong: the daroga system was extended to Madras in 1802, with the Cornwallis regulations, not in 1812. Madras soon gave it up: Regulation XI of 1816, framed under Thomas Munro, restored the village police under the village headmen and the tahsildars.
+
+Q 66 | lab | Industrial Disputes & Trade Unions
+Model Standing Orders formed under the Industrial Employment (Standing Orders) Act, 1946 shall not apply to an establishment in respect of which the Appropriate Government is that of the State of:
+(1) Madhya Pradesh
+(2) Gujarat
+(3) Kerala
+(4) West Bengal
+= 2
+~ Section 12A(1) of the Industrial Employment (Standing Orders) Act, 1946 deems the prescribed model standing orders to be adopted in an industrial establishment from the day the Act applies to it until its own standing orders are certified and come into operation. Section 12A(2) says this does not apply to an establishment for which the appropriate Government is the Government of Gujarat or of Maharashtra, the two States formed from the old Bombay State. Gujarat is the only one of these named in the options. The Act has since been subsumed in the Industrial Relations Code, 2020 (in force from 21 November 2025).
+
+Q 67 | lab | Factories & Working Conditions
+An 'out-worker' is expressly excluded from the definition of 'workman' under which one of the following legislations?
+(1) The Factories Act, 1948
+(2) The Plantations Labour Act, 1951
+(3) The Contract Labour (Regulation and Abolition) Act, 1970
+(4) The Inter-State Migrant Workmen (Regulation of Employment and Conditions of Service) Act, 1979
+= 3
+~ Section 2(1)(i) of the Contract Labour (Regulation and Abolition) Act, 1970 defines "workman". It expressly excludes persons employed mainly in a managerial or administrative capacity, certain supervisory staff, and an out-worker: a person to whom the principal employer gives articles or materials to be made up, cleaned, repaired or otherwise processed in his home or in other premises not under the principal employer's control. The Factories Act and the Plantations Labour Act define "worker" with no such clause, and the Inter-State Migrant Workmen Act excludes only managerial and supervisory staff. All four Acts are now subsumed in the OSH Code, 2020 (in force from 21 November 2025).
+
+Q 68 | lab | Factories & Working Conditions
+Which one of the following nature of work shall not be taken into account while the Appropriate Government considers prohibiting employment of contract labour in an establishment under the Contract Labour (Regulation and Abolition) Act, 1970?
+(1) The process, operation or other work is incidental to or necessary for the industry
+(2) The work is of a permanent nature
+(3) The work is done ordinarily through regular workmen
+(4) The work is of intermittent nature
+= 4
+~ Section 10(2) of the Contract Labour (Regulation and Abolition) Act, 1970 lists what the appropriate Government must consider before prohibiting contract labour in any work: whether it is incidental to or necessary for the industry, trade or business; whether it is of a perennial nature, that is, of sufficient duration; whether it is done ordinarily through regular workmen in that or a similar establishment; and whether it is enough to employ a considerable number of whole-time workmen. Intermittent work is not a ground. Section 57 of the OSH Code, 2020 (in force from 21 November 2025) now bans contract labour in core activities, with limited exceptions.
+
+Q 69 | lab | Industrial Disputes & Trade Unions
+Which of the statements relating to the Grievance Redressal Committee under the Industrial Disputes Act, 1947 is not correct?
+(1) It shall consist of equal number of members from among employer and workmen.
+(2) It shall be constituted in an industrial establishment employing twenty or more workmen.
+(3) The Chairperson of the Committee shall be nominated by the Appropriate Government.
+(4) The total members of the Committee shall not be more than six.
+= 3
+~ Section 9C of the Industrial Disputes Act, 1947 (inserted in 2010) requires every industrial establishment employing twenty or more workmen to have one or more Grievance Redressal Committees. Each committee has an equal number of members from the employer and the workmen, and not more than six members in all. The chairperson is not nominated by the Government: the post goes alternately to the employer's side and the workmen's side, by rotation every year, so (3) is wrong. Section 4 of the Industrial Relations Code, 2020 (in force from 21 November 2025) keeps this rotation but allows up to ten members.
+
+Q 70 | lab | Factories & Working Conditions
+Under the provisions of the Factories Act, 1948, a Safety Committee is to be constituted in a factory where:
+(1) 1000 or more workers are employed
+(2) Hazardous substances are used or handled
+(3) Heavy machinery is utilized
+(4) 500 or more workers are employed
+= 2
+~ Section 41G of the Factories Act, 1948, added in 1987 after the Bhopal gas disaster, requires the occupier of every factory where a hazardous process takes place, or where hazardous substances are used or handled, to set up a Safety Committee. It has equal numbers of workers' and management representatives and works to promote co-operation on safety and health and to review safety measures. The figure of 1000 workers belongs to Section 40B, on the appointment of safety officers. Under the OSH Code, 2020 (in force from 21 November 2025), safety committees are required where the appropriate Government so orders.
+
+Q 71 | qa | Algebra & Numbers
+The eight-digit number 789459xy is divisible by 88, where x and y are digits. What are the possible values of x and y?
+(1) x = 1, y = 2
+(2) x = 2, y = 2
+(3) x = 3, y = 6
+(4) x = 4, y = 4
+= 4
+~ Since 88 = 8 × 11 (co-prime factors), the number must be divisible by both 8 and 11. Test for 11: the sums of alternate digits are 7 + 9 + 5 + x = 21 + x and 8 + 4 + 9 + y = 21 + y, so x − y must be 0, that is x = y. This rules out options 1 and 3. Test for 8: the last three digits, 9xy, must be divisible by 8. 922 is not, but 944 = 8 × 118 is. So x = 4, y = 4, and 78945944 = 88 × 897113.
+
+Q 72 | qa | Algebra & Numbers
+If x is the smallest natural number that is divisible by both 24 and 30, whereas y is the largest natural number that divides both 36 and 100, then what is the value of x − y?
+(1) 116
+(2) 124
+(3) 128
+(4) 132
+= 1
+~ The smallest number divisible by both 24 and 30 is their LCM. 24 = 2³ × 3 and 30 = 2 × 3 × 5, so x = 2³ × 3 × 5 = 120. The largest number that divides both 36 and 100 is their HCF. 36 = 2² × 3² and 100 = 2² × 5², so y = 2² = 4. Therefore x − y = 120 − 4 = 116. Option 2 (124) is x + y; it adds the two numbers instead of subtracting.
+
+Q 73 | qa | Algebra & Numbers
+What is the digit in the unit place of 2^(2^100)?
+(1) 2
+(2) 4
+(3) 6
+(4) 8
+= 3
+~ The unit digits of the powers of 2 repeat in a cycle of four: 2, 4, 8, 6 (for 2¹, 2², 2³, 2⁴), then 2 again for 2⁵. So the unit digit depends only on the remainder when the exponent is divided by 4. Here the exponent is 2^100 = 4 × 2^98, which leaves remainder 0. A remainder of 0 matches the fourth place in the cycle, so 2^(2^100) ends in 6, just as 2⁴ = 16 and 2⁸ = 256 do.
+
+Q 74 | qa | Arithmetic
+A runner completed a 40 km race in 3 hours. She changed her speed after completing each quarter of the distance such that the proportion of the speeds in the first, second, third and the fourth quarter, is given by 2 : 3 : 4 : 5 respectively. In how much time then (approximately) did she complete the last quarter of the race?
+(1) 32 minutes
+(2) 31 minutes
+(3) 29 minutes
+(4) 28 minutes
+= 4
+~ Each quarter is 10 km. Time = distance ÷ speed, so with equal distances the times are in the inverse ratio of the speeds: 1/2 : 1/3 : 1/4 : 1/5. Multiplying by 60 gives 30 : 20 : 15 : 12, which adds up to 77 parts. The whole race took 3 hours = 180 minutes. The last quarter therefore took 12/77 × 180 = 2160/77 = 28.05 minutes, or about 28 minutes. The first three quarters took about 70, 47 and 35 minutes.
+
+Q 75 | qa | Algebra & Numbers
+If there are enough coins of denomination ₹1, ₹2 and ₹5, then in how many ways can one pay ₹10?
+(1) 8
+(2) 9
+(3) 10
+(4) 11
+= 3
+~ Count the solutions of a + 2b + 5c = 10 in whole numbers, where a, b and c are the numbers of ₹1, ₹2 and ₹5 coins. With no ₹5 coin, ₹10 is made up of ₹2 and ₹1 coins, with b = 0, 1, 2, 3, 4 or 5: 6 ways. With one ₹5 coin, the remaining ₹5 uses b = 0, 1 or 2: 3 ways. With two ₹5 coins there is 1 way. Total = 6 + 3 + 1 = 10 ways.
+
+Q 76 | acc | Depreciation & Valuation
+Which of the following is included in the 'Cost of Inventory' according to Accounting Standard-2 (Inventory Valuation):
+(1) Administrative overheads that do not contribute to bringing the inventories to their present location and condition
+(2) Storage costs which are necessary in the production process prior to a further production stage
+(3) Selling and distribution costs
+(4) Duties and taxes paid on purchases, subsequently recoverable by the enterprise from the Tax Authorities
+= 2
+~ Under AS 2 (Valuation of Inventories), the cost of inventories includes costs of purchase, costs of conversion and other costs incurred in bringing the inventories to their present location and condition. Paragraph 13 excludes storage costs "unless those costs are necessary in the production process prior to a further production stage", so option 2 is included. The same paragraph excludes administrative overheads that do not contribute to bringing inventories to their present location and condition, and selling and distribution costs. Costs of purchase include only duties and taxes other than those subsequently recoverable from the taxing authorities, so option 4 is excluded.
+
+Q 77 | acc | Financial Statements
+Following is the trial balance of a firm as on 31.03.2022:
+Trade receivables | ₹2,50,000 |
+Provision for discount to debtors | | ₹14,000
+Discount to debtors | ₹4,000 |
+Additional discount allowed to debtors during the year is ₹20,000. The firm has a policy of maintaining a provision for discount to debtors equal to 10% of the Trade Receivables' balances. Total amount to be charged to Profit and Loss Account (for the year ending 31.03.2022) for discount allowed and provision for discount created will be:
+(1) ₹25,000
+(2) ₹13,000
+(3) ₹9,000
+(4) ₹33,000
+= 4
+~ Discount allowed = ₹4,000 (already in the trial balance) + ₹20,000 (additional) = ₹24,000. After the additional discount, trade receivables = 2,50,000 − 20,000 = ₹2,30,000, so the required provision = 10% × 2,30,000 = ₹23,000. The existing provision of ₹14,000 is adjusted against it. Total charge to Profit and Loss Account = 24,000 + 23,000 − 14,000 = ₹33,000. Option 3 (₹9,000) is only the increase in the provision, option 2 (₹13,000) leaves out the additional ₹20,000 discount, and option 1 (₹25,000) is only a 10% provision on the unadjusted ₹2,50,000.
+
+Q 78 | acc | Depreciation & Valuation
+Consider the following information:
+Date | Particulars | Units | Rate per unit (₹)
+January 1 | Inventory in hand | 200 | 7
+January 8 | Purchases | 1100 | 8
+January 25 | Purchases | 300 | 9
+January 6 | Issued for sale | 100 | –
+January 9 | Issued for sale | 200 | –
+Which one of the following is the value of inventory on January 31 under perpetual inventory system using First-In-First-Out (FIFO) method?
+(1) ₹6,700
+(2) ₹8,700
+(3) ₹10,700
+(4) ₹12,000
+= 3
+~ Under the perpetual system with FIFO, the transactions are taken in date order and each issue is charged to the oldest stock on hand. Jan 1: 200 units @ ₹7. Jan 6: 100 units are issued from the opening stock, leaving 100 @ ₹7. Jan 8: 1,100 units are bought @ ₹8. Jan 9: the issue of 200 units = 100 @ ₹7 + 100 @ ₹8, leaving 1,000 @ ₹8. Jan 25: 300 units are bought @ ₹9. Closing stock on 31 January = 1,000 × 8 + 300 × 9 = 8,000 + 2,700 = ₹10,700 for 1,300 units, which are the latest purchases.
+
+Q 79 | acc | Financial Statements
+Following is the information relating to a club for the year ending 31.03.2022:
+Subscription outstanding as on 31.03.2021 | ₹16,000
+Subscription outstanding as on 31.03.2022 | ₹18,000
+Subscription received in advance as on 31.03.2021 | ₹12,000
+Subscription received in advance as on 31.03.2022 | ₹11,000
+There are 70 members each paying an annual subscription of ₹1,000. Total subscription received during the year 2021–22 will be:
+(1) ₹67,000
+(2) ₹71,000
+(3) ₹69,000
+(4) ₹77,000
+= 1
+~ Subscription income for 2021–22 = 70 × ₹1,000 = ₹70,000. Cash received in the year = income + opening outstanding (arrears collected this year) − closing outstanding (not yet received) + closing advance (received now for next year) − opening advance (received last year for this year). So 70,000 + 16,000 − 18,000 + 11,000 − 12,000 = ₹67,000. Reversing the outstanding items gives ₹71,000, and reversing the advance items gives ₹69,000.
+
+Q 80 | acc | Auditing & Company Accounts
+Reporting on fraud is to be made by an auditor to the Central Government when the sums involved in the fraud:
+(1) exceed ₹20 lakh
+(2) exceed ₹50 lakh
+(3) exceed ₹75 lakh
+(4) are ₹1 crore or above
+= 4
+~ Under Section 143(12) of the Companies Act, 2013, read with Rule 13 of the Companies (Audit and Auditors) Rules, 2014, an auditor who has reason to believe that a fraud involving, or expected to involve, individually ₹1 crore or above is being or has been committed against the company by its officers or employees must report it to the Central Government. He first reports it to the Board or Audit Committee within two days and seeks their reply within 45 days, then reports to the Central Government in Form ADT-4. Frauds below ₹1 crore are reported only to the Audit Committee or Board and disclosed in the Board's report.
+
+Q 81 | sci | Computer Applications
+Which one of the following is not a security protocol?
+(1) TLS
+(2) SSL
+(3) IPsec
+(4) MIME
+= 4
+~ TLS (Transport Layer Security), its predecessor SSL (Secure Sockets Layer) and IPsec (Internet Protocol Security) are all security protocols: they authenticate the communicating parties and encrypt the data. SSL/TLS works above the transport layer, as in HTTPS, and IPsec works at the network layer, as in many VPNs. MIME (Multipurpose Internet Mail Extensions) is only a format standard that lets e-mail carry non-ASCII text and attachments such as images and audio. It gives no security by itself; its secure extension is S/MIME.
+
+Q 82 | sci | Computer Applications
+LaTeX document does not contain:
+(1) \documentclass{article}
+(2) \begin{document}
+(3) \end{document}
+(4) \documentstyle{article}
+= 4
+~ In LaTeX2e, the current version of LaTeX, every document begins with \documentclass{article} (or another class) in the preamble, and its body is enclosed between \begin{document} and \end{document}. \documentstyle{article} was the command of the old LaTeX 2.09. LaTeX2e accepts it only in a compatibility mode, so a modern LaTeX document does not contain it. The first three options are standard parts of every LaTeX document.
+
+Q 83 | sci | Computer Applications
+The decimal equivalent of (.1101)₂ is:
+(1) 0.8122
+(2) 0.8123
+(3) 0.8124
+(4) 0.8125
+= 4
+~ The digits after the binary point have place values 2⁻¹, 2⁻², 2⁻³ and 2⁻⁴, that is 0.5, 0.25, 0.125 and 0.0625. So (.1101)₂ = 1 × 0.5 + 1 × 0.25 + 0 × 0.125 + 1 × 0.0625 = 0.8125. Another way: four binary places mean sixteenths, and 1101 in binary is 13, so the value is 13/16 = 0.8125. A four-place binary fraction is always an exact multiple of 1/16, so 0.8122, 0.8123 and 0.8124 are impossible.
+
+Q 84 | sci | Computer Applications
+In a worksheet, which one of the following is not a cell referencing style?
+(1) Relative referencing
+(2) Real-time referencing
+(3) Absolute referencing
+(4) Mixed referencing
+= 2
+~ Spreadsheet cell references are of three kinds. A relative reference (A1) changes when the formula is copied to another cell. An absolute reference ($A$1) stays fixed, because both the column and the row are locked with the dollar sign. A mixed reference ($A1 or A$1) locks only the column or only the row. "Real-time referencing" is not a cell referencing style; it is a distractor that sounds like live data.
+
+Q 85 | sci | Computer Applications
+Which one among the following is used to combine several object modules and libraries to a single executable program?
+(1) Interpreter
+(2) Compiler
+(3) Linker
+(4) Loader
+= 3
+~ A linker (link editor) takes the object modules produced by the compiler or assembler, together with the library routines they call. It resolves the references between them and combines them into a single executable program. A compiler translates the whole source program into object code. An interpreter translates and executes a program statement by statement, without producing an executable file. A loader places an executable program in main memory and starts it.
+
+Q 86 | sci | Physics
+An incandescent bulb rated as 100 W at 110 V is connected to a 220 V power supply. The power that dissipates in the bulb would be:
+(1) 50 W
+(2) 100 W
+(3) 200 W
+(4) 400 W
+= 4
+~ The bulb's resistance follows from its rating: R = V²/P = 110²/100 = 12,100/100 = 121 Ω. Taking the resistance as constant, at 220 V the power is P = V²/R = 220²/121 = 48,400/121 = 400 W. Doubling the voltage doubles the current, so the power becomes four times as large (P ∝ V² for a fixed R). In practice the filament, overloaded four times, would soon fuse. 200 W wrongly assumes that power is directly proportional to voltage.
+
+Q 87 | sci | Physics
+If the length of a current carrying wire is halved, for a given potential difference, the current in the wire would:
+(1) be doubled
+(2) be halved
+(3) remain unchanged
+(4) become zero
+= 1
+~ The resistance of a wire is R = ρL/A, so for the same material and cross-section it is directly proportional to the length. Halving the length halves the resistance. By Ohm's law, I = V/R, so with the potential difference held constant the current becomes V/(R/2) = 2V/R, that is, it doubles. The current would be halved only if the length were doubled, and it would remain unchanged only if the resistance did not change.
+
+Q 88 | sci | Chemistry
+Crystals of copper sulphate pentahydrate, on heating, form:
+(1) blue colour salt
+(2) white colour salt
+(3) green colour salt
+(4) brown colour salt
+= 2
+~ Copper sulphate pentahydrate, CuSO₄·5H₂O, is blue because of its water of crystallisation. On heating, it loses the five water molecules and becomes white anhydrous copper sulphate: CuSO₄·5H₂O → CuSO₄ + 5H₂O. The change is reversible. Adding a few drops of water to the white powder brings back the blue colour, which is why anhydrous copper sulphate is used to test for water (NCERT Class 10 Science, "Acids, Bases and Salts").
+
+Q 89 | sci | Chemistry
+Tartaric acid is found in:
+(1) Tamarind
+(2) Tomato
+(3) Orange
+(4) Vinegar
+= 1
+~ Tamarind (imli) gets its sour taste mainly from tartaric acid; grapes are the other well-known source. NCERT Class 10 Science ("Acids, Bases and Salts") pairs the other options with different natural acids: tomato with oxalic acid, orange with citric acid, and vinegar, a dilute solution of acetic (ethanoic) acid. Tomatoes in fact get most of their sourness from citric and malic acids, but none of the three is a notable source of tartaric acid, so tamarind is the answer.
+
+Q 90 | sci | Chemistry
+Which one of the following is an example of chemical change?
+(1) Melting of wax
+(2) Heating of iron
+(3) Dissolution of sugar in water
+(4) Burning of magnesium in air
+= 4
+~ A chemical change produces a new substance with new properties and is usually not easily reversed. When magnesium ribbon burns in air, it gives a dazzling white light and combines with oxygen to form white magnesium oxide powder: 2Mg + O₂ → 2MgO. Melting of wax and dissolving sugar in water are physical changes: no new substance forms, and cooling or evaporation reverses them. Simply heating iron only raises its temperature, which is also a physical change.
+
+Q 91 | pol | Constitutional & Statutory Bodies
+Which one of the following is not a constitutional body in India?
+(1) National Human Rights Commission
+(2) National Commission for Scheduled Tribes
+(3) National Commission for Backward Classes
+(4) National Commission for Scheduled Castes
+= 1
+~ The National Human Rights Commission is a statutory body, set up in 1993 under the Protection of Human Rights Act, 1993, and not under the Constitution. The other three are constitutional bodies. The National Commission for Scheduled Castes comes under Article 338. The National Commission for Scheduled Tribes comes under Article 338A, inserted by the 89th Amendment, 2003. The National Commission for Backward Classes got constitutional status under Article 338B through the 102nd Amendment Act, 2018; earlier it was a statutory body under a 1993 Act.
+
+Q 92 | cur | International
+Which of the following is/are elements of India's 'Panchamrit' view on climate change?
+1. India will reach its non-fossil energy capacity of 500 GW by 2030.
+2. India will meet 50% of its energy requirements from renewable energy by 2030.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ At COP26 in Glasgow (November 2021), Prime Minister Modi announced India's 'Panchamrit', five nectar elements. India would reach 500 GW of non-fossil energy capacity by 2030 and meet 50% of its energy requirements from renewable energy by 2030. It would cut its total projected carbon emissions by one billion tonnes by 2030, reduce the carbon intensity of its economy by 45% by 2030, and reach net zero by 2070. Both statements are therefore elements. India's updated NDC (2022) restated the second as about 50% of installed electric power capacity from non-fossil sources by 2030, a share India reached in mid-2025.
+
+Q 93 | pol | Federalism & Local Government
+What are the prerequisites for declaring any area as a 'Scheduled Area' under the Fifth Schedule of the Constitution of India?
+1. Preponderance of Tribal Population
+2. Compactness and reasonable size of the area
+3. Economic backwardness of the area
+4. The notification must be issued by the Governor of the concerned State
+Select the correct answer using the code given below:
+(1) 2 and 4 only
+(2) 1, 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2, 3 and 4
+= 2
+~ Under Paragraph 6 of the Fifth Schedule, Scheduled Areas are declared by order of the President, who must consult the Governor of the State before increasing a Scheduled Area or redefining it by fresh orders. The Governor does not issue the notification, so statement 4 is wrong. The Ministry of Tribal Affairs lists the criteria for declaring Scheduled Areas: preponderance of tribal population, compactness and reasonable size of the area, a viable administrative unit such as a district, block or taluk, and economic backwardness compared with neighbouring areas. These are not written in the Constitution but are well established. Hence 1, 2 and 3 only.
+
+Q 94 | eco | Public Finance & Taxation
+The Railway Budget was separated from General Budget owing to:
+(1) Distributive Convention of 1925
+(2) Separation Convention of 1924
+(3) Bifurcation of Estimates of 1924
+(4) Equalising Convention of 1925
+= 2
+~ The Acworth Committee (1920–21) recommended separating railway finances from general finances. On that recommendation, the Central Legislature adopted a resolution on 20 September 1924, known as the Separation Convention of 1924. It created a separate Railway Budget, with the railways paying an annual contribution to general revenues. The other three options are distractors. The separate Railway Budget ended when it was merged with the Union (General) Budget from 2017–18.
+
+Q 95 | cur | National
+Which of the following statements regarding the non-electric cooling cabinet, for which the Bureau of Indian Standards (BIS) has recently developed an Indian Standard (IS 17693 : 2022), is/are correct?
+1. It is a natural refrigerator made primarily to store vegetables, fruits, milk and also for cooling water.
+2. This standard helps BIS in fulfilling 6 out of 17 United Nations Sustainable Development Goals.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ In June 2022, BIS announced IS 17693:2022, which sets construction and performance requirements for a non-electric cooling cabinet made of clay. The cabinet works by evaporative cooling, like the 'Mitticool' fridge of Mansukhbhai Prajapati of Gujarat. BIS called it a natural refrigerator, made mainly of clay, to store vegetables, fruits and milk and also to cool water without electricity. BIS also said the standard helps it fulfil 6 of the 17 UN Sustainable Development Goals, including no poverty, zero hunger and affordable and clean energy. Both statements are correct.
+
+Q 96 | lab | Factories & Working Conditions
+Which of the following facilities are to be provided by the contractor to Inter-State migrant workers in connection with the work of an establishment to which the Inter-State Migrant Workmen (Regulation of Employment and Conditions of Service) Act, 1979 is applicable?
+1. Equal pay for equal work irrespective of sex
+2. Provision for suitable residential accommodation
+3. Provision for protective clothing
+4. Provision for old age benefit scheme
+5. Prescribed medical facilities
+Select the correct answer using the code given below:
+(1) 2, 3 and 5 only
+(2) 2, 4 and 5 only
+(3) 1, 2, 3 and 5
+(4) 1, 3 and 4 only
+= 3
+~ Section 16 of the Inter-State Migrant Workmen Act, 1979 makes it the duty of every contractor employing inter-State migrant workmen to ensure regular payment of wages, equal pay for equal work irrespective of sex and suitable conditions of work, to provide and maintain suitable residential accommodation, to provide the prescribed medical facilities free of charge and prescribed protective clothing, and to report fatal accidents or serious injuries. So items 1, 2, 3 and 5 are duties. No old age benefit scheme is listed, which rules out options (2) and (4). The Act has since been subsumed in the OSH Code, 2020, in force from 21 Nov 2025.
+
+Q 97 | lab | Factories & Working Conditions
+A dispute relating to the age of an adolescent employed by an employer which arises due to the absence of any authentic document can be referred to which one of the following authorities for a decision under the Child and Adolescent Labour (Prohibition and Regulation) Act, 1986?
+(1) The Prescribed Medical Authority
+(2) The Labour Court
+(3) The Inspector appointed under the Act
+(4) The Appropriate Government
+= 1
+~ Section 10 of the Child and Adolescent Labour (Prohibition and Regulation) Act, 1986 deals with disputes as to age. If a question arises between an Inspector and an occupier about the age of an adolescent employed or permitted to work in an establishment, and there is no age certificate granted by the prescribed medical authority, the Inspector must refer the question to the prescribed medical authority for decision. The Inspector only makes the reference, and neither the Labour Court nor the appropriate Government decides it. This Act was not subsumed in the four Labour Codes and remains in force.
+
+Q 98 | lab | Factories & Working Conditions
+Under the provisions of the Factories Act, 1948, which one of the following statements relating to the appointment of the Chairman of the Site Appraisal Committee is correct?
+(1) Labour Commissioner of the State is the Chairman.
+(2) An independent person is appointed as the Chairman.
+(3) The Labour Minister of the State is the ex-officio Chairman.
+(4) The Chief Inspector of the State is the Chairman.
+= 4
+~ Section 41A of the Factories Act, 1948, inserted in 1987 after the Bhopal gas disaster, lets the State Government appoint a Site Appraisal Committee to advise on applications for the initial location or expansion of a factory involving a hazardous process. The Chief Inspector of the State is its Chairman; members include representatives of the Central and State Pollution Control Boards, the State's environment department and the Meteorological Department, an occupational health expert and the town planning department. The OSH Code, 2020, in force from 21 Nov 2025, replaced the Factories Act and provides for site appraisal committees under the State Advisory Board (Section 17).
+
+Q 99 | lab | Labour Codes & Wages
+Match List I with List II and select the correct answer using the code given below the Lists:
+List-I (Provision)
+A. Displacement Allowance
+B. Certifying Surgeon
+C. Half-monthly payment
+D. Piece work
+List-II (Act)
+1. The Factories Act, 1948
+2. The Minimum Wages Act, 1948
+3. The Inter-State Migrant Workmen (Regulation of Employment and Conditions of Service) Act, 1979
+4. The Employees' Compensation Act, 1923
+(1) A-2, B-1, C-4, D-3
+(2) A-3, B-1, C-4, D-2
+(3) A-2, B-4, C-1, D-3
+(4) A-3, B-4, C-1, D-2
+= 2
+~ Displacement allowance is paid to inter-State migrant workmen under Section 14 of the Inter-State Migrant Workmen Act, 1979, at 50% of a month's wages or ₹75, whichever is higher (A-3). Certifying surgeons are appointed under Section 10 of the Factories Act, 1948 (B-1). Half-monthly payments are the compensation for temporary disablement under Section 4(1)(d) of the Employees' Compensation Act, 1923, at 25% of monthly wages (C-4). Section 17 of the Minimum Wages Act, 1948 deals with piece work paid at a minimum time rate (D-2). All four Acts are now subsumed in the Labour Codes in force from 21 Nov 2025.
+
+Q 100 | lab | Industrial Disputes & Trade Unions
+Under the provisions of the Industrial Disputes Act, 1947, right of legal representation before a Labour Court, or Industrial Tribunal or National Industrial Tribunal is:
+(1) A statutory right
+(2) Not at all permissible
+(3) Can be permitted by the forum if the other party does not object or gives consent
+(4) May be permitted if such permission is granted by the High Court of the State/Union Territory
+= 3
+~ Section 36(4) of the Industrial Disputes Act, 1947 allows a party to be represented by a legal practitioner before a Labour Court, Tribunal or National Tribunal only with the consent of the other parties to the proceeding and with the leave of that forum. So it is neither a statutory right nor totally barred; Section 36(3) bars lawyers only in conciliation proceedings and before a Court of Inquiry. Option (3) describes this conditional permission, and the High Court has no role. Section 94(4) of the Industrial Relations Code, 2020, in force from 21 Nov 2025, keeps the same rule for Tribunals and the National Industrial Tribunal.
+
+Q 101 | qa | Arithmetic
+A train of length 400 m takes 15 seconds to cross a train of length 300 m travelling at 60 km per hour from the opposite direction along a parallel track. What is the speed of the longer train, in km per hour?
+(1) 108
+(2) 102
+(3) 98
+(4) 96
+= 1
+~ Trains moving in opposite directions have a relative speed equal to the sum of their speeds. To cross each other completely they must cover the sum of their lengths, 400 + 300 = 700 m, in 15 s. Relative speed = 700/15 m/s = 700/15 × 18/5 = 168 km/h. Speed of the longer train = 168 − 60 = 108 km/h. Using only the 400 m length gives 400/15 × 18/5 = 96 km/h, the trap in option (4), which also forgets to subtract the other train's speed.
+
+Q 102 | qa | Geometry & Mensuration
+There is a water tank in the form of a rectangular parallelepiped of height 1.1 m and a square base of side 2 m. If a full tank of water is drained out completely in a long pipe of circular cross-sectional area of radius 1 cm, what should be the minimum length of the pipe, in km, to hold the entire water in it? (Take π = 22/7)
+(1) 12
+(2) 13
+(3) 14
+(4) 15
+= 3
+~ Volume of the tank = 2 × 2 × 1.1 = 4.4 m³. The pipe is a long cylinder of radius 1 cm = 0.01 m, so its cross-sectional area = πr² = 22/7 × 0.0001 m². Minimum length = volume ÷ area = 4.4 × 7/(22 × 0.0001) = 30.8/0.0022 = 14,000 m = 14 km. Check: 22/7 × 0.0001 × 14,000 = 4.4 m³, exactly the tank's volume. The usual slip is not converting 1 cm to metres before squaring.
+
+Q 103 | qa | Algebra & Numbers
+A person buys ten pens and eight pencils for ₹200. Price of each pen is same and price of each pencil is same. If he could have bought five pens and twenty-four pencils of same types using the same amount, then what is the price of each pen in rupees?
+(1) ₹16
+(2) ₹15
+(3) ₹14
+(4) ₹13
+= 1
+~ Let a pen cost p and a pencil q. Then 10p + 8q = 200 and 5p + 24q = 200. Doubling the second equation gives 10p + 48q = 400; subtracting the first gives 40q = 200, so q = ₹5. Then 10p = 200 − 8 × 5 = 160, so p = ₹16. Check with the second purchase: 5 × 16 + 24 × 5 = 80 + 120 = ₹200. Hence each pen costs ₹16.
+
+Q 104 | qa | Reasoning
+A school has 100 students and every student plays either cricket or football or both. The number of students who play cricket is twice the number of students who play football. Also, the number of students who play only cricket is three times the number of students who play only football. The number of students who play both cricket and football is, therefore:
+(1) 30
+(2) 28
+(3) 25
+(4) 20
+= 4
+~ Let B play both, and let C and F be the totals for cricket and football, with C = 2F. Only cricket = C − B and only football = F − B, and C − B = 3(F − B). Substituting C = 2F gives 2F − B = 3F − 3B, so F = 2B and C = 4B. Since every student plays at least one game, C + F − B = 100, i.e. 4B + 2B − B = 5B = 100, so B = 20. Check: cricket 80, football 40, only cricket 60, which is three times only football (20).
+
+Q 105 | qa | Reasoning
+A man walks in a certain direction for 5 km and then walks in the south direction for 4 km. If he ends up in the east direction with respect to the starting position, how far is he from the starting position?
+(1) 2 km
+(2) 3 km
+(3) 4 km
+(4) 5 km
+= 2
+~ Let the first 5 km walk have an east component x and a north component y, so x² + y² = 25. After walking 4 km south he is due east of the start, so his net north-south displacement is zero: y − 4 = 0, giving y = 4. Then x = √(25 − 16) = 3. He is therefore 3 km east of the starting point; the first walk went towards the north-east, forming a 3-4-5 right triangle with the southward leg. Options (3) and (4) merely repeat the given leg lengths.
+
+Q 106 | eco | Poverty, Employment & Welfare
+The beneficiaries under the Integrated Child Development Services (ICDS) Scheme are children in the age group of:
+(1) 0 – 6 years
+(2) 0 – 3 years
+(3) 3 – 6 years
+(4) 6 – 15 years
+= 1
+~ The Integrated Child Development Services scheme, launched on 2 October 1975, serves children aged 0–6 years, pregnant women and lactating mothers through anganwadi centres. Its six services are supplementary nutrition, pre-school non-formal education, nutrition and health education, immunisation, health check-ups and referral services. The 0–3 and 3–6 groups are only sub-groups within it (pre-school education, for example, is for children aged 3–6), and 6–15 years is school age. ICDS now runs as part of Mission Saksham Anganwadi and Poshan 2.0.
+
+Q 107 | eco | Agriculture & Industry
+Which of the following statements about 'Truck farming' is/are correct?
+1. Growing vegetables around urban centres to meet the daily demand of people is known as Truck Farming.
+2. It is governed by the distance a truck can cover overnight between the farm and the market.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Both statements follow the NCERT account of market gardening (Class XII, Fundamentals of Human Geography). Market gardening grows high-value crops such as vegetables, fruits and flowers for urban markets, and where farmers specialise in vegetables only it is called truck farming, so statement 1 holds. The distance of truck farms from the market is governed by the distance a truck can cover overnight, which gives the system its name, so statement 2 is also correct. Such farming is well developed in the densely populated industrial regions of north-west Europe and the north-eastern United States.
+
+Q 108 | eco | Growth & National Income
+Which of the following statements with reference to the service sector is/are correct?
+1. Retail trade falls under tertiary activity.
+2. Research and Development based activity comes under quaternary activity.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Tertiary activities provide services, and trade, both wholesale and retail, is one of the main tertiary activities along with transport, communication and other services, so statement 1 is correct. Quaternary activities are knowledge-based services: the collection, production and dissemination of information, research and development, and specialised services such as consultancy, education and finance. R&D-based activity is therefore quaternary, as in the NCERT Class XII geography classification, so statement 2 is also correct. Quinary activities, the highest level, cover top executives and policy-makers.
+
+Q 109 | cur | Schemes & Development
+Which of the following statements about the National Skill Development Corporation is/are not correct?
+1. It is a not-for-profit Public Limited Company set up by the Ministry of Skill Development and Entrepreneurship.
+2. It promotes skill development by catalysing the creation of only large, quality and non-profit vocational institutions.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ NSDC was incorporated on 31 July 2008 as a not-for-profit public limited company under Section 25 of the Companies Act, 1956. It is a public-private partnership: the Government, now through the Ministry of Skill Development and Entrepreneurship (MSDE), holds 49% and the private sector 51%. Statement 2 is clearly wrong, because NSDC's stated aim is to catalyse large, quality, for-profit vocational institutions. The key treats statement 1 as correct, reading it as NSDC being under MSDE. Strictly, NSDC's own profile says it was set up by the Ministry of Finance, since MSDE was created only in November 2014, so (3) can also be argued. (Official key; some sources differ.)
+
+Q 110 | cur | Schemes & Development
+Which of the following statements with reference to the Atal Vayo Abhyuday Yojana (AVYAY) is/are correct?
+1. Fulfil basic needs of destitute elderly citizens
+2. Build and strengthen intergenerational relationships through Regional Resource and Training Centres
+3. Provide guaranteed monthly pension to elderly citizens
+4. Establish Atal Incubation centres for elderly citizens
+Select the correct answer using the code given below:
+(1) 1, 2, and 4
+(2) 3 and 4 only
+(3) 1 and 2 only
+(4) 1 only
+= 3
+~ Atal Vayo Abhyuday Yojana (AVYAY), the Ministry of Social Justice and Empowerment's umbrella scheme for senior citizens since 2021, funds agencies to meet the basic needs of destitute elderly people (food, shelter and health care) and to build intergenerational relationships and active ageing through Regional Resource and Training Centres, so 1 and 2 are correct. It includes senior citizen homes, the Rashtriya Vayoshri Yojana and the Elderline helpline 14567. Monthly old age pensions come under the Indira Gandhi National Old Age Pension Scheme of the National Social Assistance Programme, and Atal Incubation Centres belong to NITI Aayog's Atal Innovation Mission.
+
+Q 111 | eco | Money, Banking & Inflation
+Consider the following statements:
+Statement I:
+In India, Central Government determines the inflation target, in consultation with Reserve Bank of India, in terms of Consumer Price Index once in five years.
+Statement II:
+At present, the Monetary Policy framework in India is operated by Central Government.
+Which of the following is correct in respect of the above statements?
+(1) Both statement I and statement II are correct and statement II is the correct explanation for statement I
+(2) Both statement I and statement II are correct and statement II is not the correct explanation for statement I
+(3) Statement I is correct but statement II is incorrect
+(4) Statement I is incorrect but statement II is correct
+= 3
+~ Section 45ZA of the RBI Act, 1934, inserted in 2016, says the Central Government shall, in consultation with the Reserve Bank, determine the inflation target in terms of the Consumer Price Index once in every five years, so statement I is correct. The target is 4% CPI inflation within a band of 2% to 6%, and in March 2026 it was retained for April 2026 to March 2031. Statement II is wrong: the Act gives the RBI the mandate to operate the monetary policy framework, and the six-member Monetary Policy Committee under Section 45ZB fixes the policy repo rate. The government sets the target, but the RBI runs the framework.
+
+Q 112 | eco | Money, Banking & Inflation
+Consider the following statements:
+Statement I:
+In India, the RTGS and NEFT payment systems are owned and operated by National Payment Corporation of India.
+Statement II:
+National Payment Corporation of India is an entity promoted by banks.
+Which of the following is correct in respect of the above statements?
+(1) Both statement I and statement II are correct and statement II is the correct explanation for statement I
+(2) Both statement I and statement II are correct and statement II is not the correct explanation for statement I
+(3) Statement I is correct but statement II is incorrect
+(4) Statement I is incorrect but statement II is correct
+= 4
+~ RTGS and NEFT, India's large-value and retail electronic fund transfer systems, are owned and operated by the Reserve Bank of India, so statement I is incorrect. The correct name of the body is the National Payments Corporation of India (NPCI), not "Payment" as printed. It was set up in 2008 as an initiative of the RBI and the Indian Banks' Association under the Payment and Settlement Systems Act, 2007. It is a not-for-profit company promoted by banks, which own its shares, so statement II is correct. NPCI runs other retail systems such as UPI, IMPS, RuPay, NACH and the National Financial Switch for ATMs.
+
+Q 113 | eco | External Sector
+Consider the following statements:
+Statement I:
+A very strong US Dollar squeezes global credit.
+Statement II:
+Many countries and companies outside America borrow in Dollars.
+Which of the following is correct in respect of the above statements?
+(1) Both statement I and statement II are correct and statement II is the correct explanation for statement I
+(2) Both statement I and statement II are correct and statement II is not the correct explanation for statement I
+(3) Statement I is correct but statement II is incorrect
+(4) Statement I is incorrect but statement II is correct
+= 1
+~ Statement I is correct: when the US dollar is very strong, credit tightens worldwide, because servicing and refinancing dollar debt becomes costlier in local currency, borrowers' balance sheets weaken and lenders pull back. Statement II gives the reason: a large share of cross-border loans and bonds taken by governments and companies outside the United States is denominated in dollars. A rise in the dollar therefore raises the real debt burden of these borrowers and squeezes global credit, so statement II correctly explains statement I.
+
+Q 114 | eco | Agriculture & Industry
+Consider the following statements:
+Statement I:
+The Government of India mandates the packaging of 100% sugar and food grains in diversified jute bags.
+Statement II:
+The Government of India enacted the Jute Packaging Materials (Compulsory Use in Packing Commodities) Act, 1987.
+Which of the following is correct in respect of the above statements?
+(1) Both statement I and statement II are correct and statement II is the correct explanation for statement I
+(2) Both statement I and statement II are correct and statement II is not the correct explanation for statement I
+(3) Statement I is correct but statement II is incorrect
+(4) Statement I is incorrect but statement II is correct
+= 4
+~ Statement II is correct: Parliament enacted the Jute Packaging Materials (Compulsory Use in Packing Commodities) Act, 1987, under which the Government notifies the share of commodities that must be packed in jute. Statement I is incorrect because the mandate is not 100% for sugar. The reservation norms approved in February 2023 for the Jute Year 2022-23 (July 2022 to June 2023) require 100% of foodgrains but only 20% of sugar to be packed in jute bags. Hence statement I is incorrect but statement II is correct.
+
+Q 115 | cur | International
+Recently which one among the following committed up to $25 billion for the next five years to fund India's infrastructure creation under the Prime Minister Gati Shakti initiative as well as social development and climate action, thus aiding India's aspirations for green growth?
+(1) Asian Development Bank
+(2) International Finance Corporation
+(3) New Development Bank
+(4) World Bank
+= 1
+~ In February 2023, Asian Development Bank President Masatsugu Asakawa met Prime Minister Narendra Modi in New Delhi and proposed $20–25 billion of ADB support to India over the next five years. The money is meant for infrastructure under PM Gati Shakti, for social development such as basic services in disadvantaged districts, and for climate action, in line with India's green growth agenda. The World Bank, the IFC and the BRICS-led New Development Bank also lend to India, but this five-year commitment came from the ADB.
+
+Q 116 | sci | Computer Applications
+'Large Language Models', sometimes described in news, can be used in which of the following?
+1. Creation of reimagined search engines
+2. Health care
+3. Software development
+4. Translating a language
+Select the correct answer using the code given below:
+(1) 1 and 3 only
+(2) 1, 2 and 4 only
+(3) 2, 3 and 4 only
+(4) 1, 2, 3 and 4
+= 4
+~ Large Language Models (LLMs) such as GPT-4, PaLM and LLaMA are AI systems trained on huge amounts of text to understand and generate language, so they can be used in all four areas. They power reimagined, conversational search engines (Microsoft's Bing Chat and Google's Bard); support health care through medical question answering and clinical notes (for example Med-PaLM 2); write, explain and debug code (GitHub Copilot); and translate between languages. Hence 1, 2, 3 and 4.
+
+Q 117 | sci | Science & Technology
+With reference to the three types of carbon emissions from companies, consider the following pairs:
+Emission : Example
+1. Scope 1 emissions : Emissions as a result of employee commuting, business travel and waste produced
+2. Scope 2 emissions : Emissions as a result of purchase of electricity, steam, heating and cooling for own use
+3. Scope 3 emissions : Emissions from fuels consumed by company vehicles, owned and leased
+Which of the above pairs is/are correctly matched?
+(1) 1 and 2
+(2) 2 only
+(3) 1 and 3
+(4) 3 only
+= 2
+~ Under the GHG Protocol, Scope 1 covers direct emissions from sources a company owns or controls, such as fuel burnt in company vehicles and boilers, so pair 3's example is really Scope 1. Scope 2 covers indirect emissions from purchased electricity, steam, heating and cooling for the company's own use, so pair 2 is correct. Scope 3 covers all other indirect emissions in the value chain, including employee commuting, business travel and waste generated in operations, so pair 1's example is really Scope 3. Only pair 2 is correctly matched.
+
+Q 118 | eco | Public Finance & Taxation
+'Quantified Domestic Minimum Top-up Tax' is generally talked about in the context of:
+(1) Global Anti-Base Erosion Rules
+(2) Prevention of Money Laundering
+(3) Regulation of Crypto-currency
+(4) Virtual Digital Asset Transactions
+= 1
+~ The official term is Qualified (not Quantified) Domestic Minimum Top-up Tax, or QDMTT. It belongs to Pillar Two of the OECD/G20 Inclusive Framework, the Global Anti-Base Erosion (GloBE) Model Rules released in December 2021, which set a 15% global minimum effective tax rate for multinational groups with revenue of at least EUR 750 million. A QDMTT lets the country where low-taxed profits arise collect the top-up tax itself, before other countries can charge it under the Income Inclusion Rule or the Undertaxed Profits Rule. It has nothing to do with money laundering or crypto assets.
+
+Q 119 | sci | Computer Applications
+Which one of the following statements best describes the term 'Prowessdx' sometimes seen in news?
+(1) A special-purpose supercomputer with a hardware architecture dedicated to a single problem
+(2) A database of the financial performance of companies that is specially designed for academia
+(3) A computing machine that uses the properties of quantum physics to store data and perform computation
+(4) A database in which collection and storing of data is done on user's system and this is basically designed for a single user
+= 2
+~ Prowessdx is a product of the Centre for Monitoring Indian Economy (CMIE). It delivers CMIE's Prowess database of the financial performance of tens of thousands of Indian companies, listed and unlisted, with data from 1990, in a form specially designed for academia, with simple text-file downloads for researchers. The other options describe different things: a supercomputer dedicated to a single problem is a special-purpose machine, a computer using quantum physics is a quantum computer, and a database kept on the user's own system for one user is a desktop or personal database.
+
+Q 120 | cur | National
+'NSE Prime', sometimes mentioned in news, denotes:
+(1) A high standard corporate governance initiative
+(2) Long-duration Sovereign Green Bonds
+(3) Concessions and tax-holidays for hi-tech startup companies
+(4) Special privileges for certain categories of Non-Banking Financial Institutions
+= 1
+~ NSE Prime, launched by the National Stock Exchange in December 2021, is a voluntary corporate governance framework for listed companies. Companies that opt in must meet, on an ongoing basis, governance norms and disclosure requirements set above the regulatory minimum, and NSE monitors their compliance. It aims to mark out well-governed companies and give investors more confidence. It has nothing to do with sovereign green bonds (first issued by the RBI for the government in January 2023), tax holidays for startups or privileges for NBFCs.

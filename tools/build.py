@@ -147,10 +147,31 @@ CAPF_SUBJECTS = [
 EPFO_PAPERS = [
   dict(id='apfc23', file='apfc-2023.txt', year=2023, stage='APFC Recruitment Test', short='APFC 2023',
        title='UPSC EPFO APFC Recruitment Test 2023 (General Studies)', notif='Advt. 51/2023 · Series A · official key', held='2 July 2023',
-       key="UPSC's official answer key", fmt='mcq', slug='upsc-epfo-apfc-2023-question-paper-with-answers', alt='Assistant Provident Fund Commissioner',
+       key="UPSC's official answer key", fmt='mcq', slug='upsc-epfo-apfc-2023-question-paper-with-answers', alt='Assistant Provident Fund Commissioner', kwname='UPSC EPFO APFC 2023',
        hi_paper='सहायक भविष्य निधि आयुक्त (APFC) भर्ती परीक्षा',
        blurb='General Studies for Assistant Provident Fund Commissioner: General English, Indian history and culture, current events, polity and economy, accounting, labour laws, social security, general science and computers, and quantitative aptitude (120 questions, 300 marks, 2 hours).'),
+  dict(id='eoao23', file='eoao-2023.txt', year=2023, stage='EO/AO Recruitment Test', short='EO/AO 2023',
+       title='UPSC EPFO EO/AO Recruitment Test 2023 (General Ability Test)', notif='Advt. 51/2023 · Series A · official key', held='2 July 2023',
+       key="UPSC's official answer key", fmt='mcq', slug='upsc-epfo-eo-ao-2023-question-paper-with-answers', alt='Enforcement Officer / Accounts Officer', kwname='UPSC EPFO EO/AO 2023',
+       hi_paper='प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) भर्ती परीक्षा',
+       blurb='General Ability Test for Enforcement Officer / Accounts Officer: General English, Indian freedom struggle, current events, polity and economy, accounting, labour laws, social security, general science and computers, and quantitative aptitude (120 questions, 300 marks, 2 hours).'),
+  dict(id='eoao21', file='eoao-2021.txt', year=2021, stage='EO/AO Recruitment Test', short='EO/AO 2021',
+       title='UPSC EPFO EO/AO Recruitment Test 2021 (General Ability Test, Advt. 51/2020)', notif='Advt. 51/2020 · Series A · official key', held='5 September 2021',
+       key="UPSC's official answer key", fmt='mcq', slug='upsc-epfo-eo-ao-2021-question-paper-with-answers', alt='Enforcement Officer / Accounts Officer', kwname='UPSC EPFO EO/AO 2021',
+       hi_paper='प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) भर्ती परीक्षा',
+       blurb='General Ability Test for Enforcement Officer / Accounts Officer (advertisement of 2020, test held in 2021): General English, Indian freedom struggle, current events, polity and economy, accounting, labour laws, social security, general science and computers, and quantitative aptitude (119 questions; UPSC dropped Q71).'),
 ]
+
+
+def epfo_text():
+    """Wording for the EPFO page that depends on which EO/AO papers are on the site."""
+    have = have_src('upsc-epfo', EPFO_PAPERS)
+    eo23, eo21 = 'eoao23' in have, 'eoao21' in have
+    eoy = ' & '.join(y for y, h in (('2023', eo23), ('2021', eo21)) if h)          # '2023 & 2021'
+    return dict(eo=eo23 or eo21, eo21=eo21, eoy=eoy, n=len(have),
+                papers=('APFC 2023, EO/AO ' + eoy) if (eo23 and eo21) else ('APFC 2023 & EO/AO ' + eoy) if eoy else 'APFC 2023',
+                years='2021–2023' if eo21 else '2023',
+                eodates=' and '.join(d for d, h in (('2 July 2023', eo23), ('5 September 2021', eo21)) if h))
 
 EPFO_SUBJECTS = [
   ('eng', 'General English', 'general-english', ['Sentence Arrangement', 'Vocabulary & Idioms', 'Reading Comprehension', 'Grammar & Usage']),
@@ -382,7 +403,7 @@ def load_exam(conf):
             if 'img' in q: q['img'] = img_data_uri(os.path.join(conf['src'], q['img']))
         pp = {k: p[k] for k in ('id', 'year', 'stage', 'short', 'title', 'notif', 'held', 'fmt', 'slug', 'blurb')}
         pp['count'] = len(qs)
-        for k in ('key', 'alt', 'te_paper', 'en_only'):
+        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'en_only', 'kwname'):
             if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p) if PUBLIC_PDFS else ''
         alt = paper_alt(conf, p)
@@ -428,6 +449,7 @@ def ts_text():
 
 def exam_confs():
     T = ts_text()
+    E = epfo_text()
     si_m, pc_m = bool(T['si']), bool(T['pc'])
     return [
       dict(id='appsc-group-2', dir='', src='', key='appsc-g2', name='APPSC Group-II', short='Group-II', seo='APPSC Group 2',
@@ -466,20 +488,29 @@ def exam_confs():
                            f"subject-wise practice and timed mock tests, 3 days free."),
            eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
            papers_note="2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. 2024: UPSC's official answer key (Series A). Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
-      dict(id='upsc-epfo', dir='upsc-epfo', src='upsc-epfo', key='upsc-epfo', name='UPSC EPFO (APFC, EO/AO)', short='EPFO', seo='UPSC EPFO APFC',
+      dict(id='upsc-epfo', dir='upsc-epfo', src='upsc-epfo', key='upsc-epfo', name='UPSC EPFO (APFC, EO/AO)', short='EPFO', seo=('UPSC EPFO' if E['eo'] else 'UPSC EPFO APFC'),
            slugp='upsc-epfo', papers=EPFO_PAPERS, subjects=EPFO_SUBJECTS, faq=FAQ_EPFO, board='UPSC', l2=L2_HI, pb='/upsc-epfo/',
-           keyname="UPSC's official answer key", keyshort="UPSC's official answer key",
+           keyname="UPSC's official answer key", keyshort="UPSC's official answer keys",
            hi_name='यूपीएससी ईपीएफओ', hi_paper='भर्ती परीक्षा', subj_te=EPFO_SUBJ_HI,
-           title='UPSC EPFO APFC Previous Year Question Paper with Answers – APFC 2023, English & Hindi | Learn with Anil',
-           h1='UPSC EPFO APFC previous year question paper <em>with answers.</em>',
-           aka='Also known as the EPFO Assistant Provident Fund Commissioner (APFC) recruitment test. PYQs with UPSC\'s official answer key, subject-wise: labour laws, social security, accounting, polity, economy, history, science, aptitude and English.',
-           aka_short='UPSC EPFO Assistant Provident Fund Commissioner (APFC)',
-           l2line='यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) भर्ती परीक्षा का पिछले वर्ष का प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; पंजीकरण करने पर 3 दिन निःशुल्क।',
-           desc=lambda t: (f"UPSC EPFO APFC (Assistant Provident Fund Commissioner) previous year question paper: the 2023 recruitment test with UPSC's official answer key "
-                           f"and explanations. {t:,} questions in English and Hindi on labour laws, social security, accounting, polity, economy, history, science, aptitude and English; "
+           title=(f"UPSC EPFO Previous Year Question Papers with Answers – {E['papers']}, English & Hindi | Learn with Anil" if E['eo'] else
+                  'UPSC EPFO APFC Previous Year Question Paper with Answers – APFC 2023, English & Hindi | Learn with Anil'),
+           h1=('UPSC EPFO APFC &amp; EO/AO previous year question papers <em>with answers.</em>' if E['eo'] else
+               'UPSC EPFO APFC previous year question paper <em>with answers.</em>'),
+           aka=('Also known as the EPFO Assistant Provident Fund Commissioner (APFC) and Enforcement Officer / Accounts Officer (EO/AO) recruitment tests. ' if E['eo'] else
+                'Also known as the EPFO Assistant Provident Fund Commissioner (APFC) recruitment test. ')
+               + 'PYQs with UPSC\'s official answer key, subject-wise: labour laws, social security, accounting, polity, economy, history, science, aptitude and English.',
+           aka_short=('UPSC EPFO APFC and EO/AO (Enforcement Officer / Accounts Officer)' if E['eo'] else 'UPSC EPFO Assistant Provident Fund Commissioner (APFC)'),
+           l2line=('यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) और प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) भर्ती परीक्षाओं के पिछले वर्षों के प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; पंजीकरण करने पर 3 दिन निःशुल्क।' if E['eo'] else
+                   'यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) भर्ती परीक्षा का पिछले वर्ष का प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; पंजीकरण करने पर 3 दिन निःशुल्क।'),
+           desc=lambda t: ((f"UPSC EPFO previous year question papers with UPSC's official answer keys and explanations: the APFC 2023 recruitment test and the EO/AO (Enforcement Officer / Accounts Officer) {E['eoy'].replace(' & ', ' and ')} test{'s' if E['eo21'] else ''}. " if E['eo'] else
+                            f"UPSC EPFO APFC (Assistant Provident Fund Commissioner) previous year question paper: the 2023 recruitment test with UPSC's official answer key and explanations. ")
+                           + f"{t:,} questions in English and Hindi on labour laws, social security, accounting, polity, economy, history, science, aptitude and English; "
                            f"subject-wise practice and timed mock tests, 3 days free."),
-           eyebrow='UPSC · EPFO Assistant Provident Fund Commissioner · Recruitment Test 2023',
-           papers_note="Answers come from UPSC's official answer key (Series A), published on upsc.gov.in in August 2024; no question was dropped. Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklet."),
+           eyebrow=(f"UPSC · EPFO APFC &amp; EO/AO · Recruitment Tests {E['years']}" if E['eo'] else 'UPSC · EPFO Assistant Provident Fund Commissioner · Recruitment Test 2023'),
+           papers_note=("Answers come from UPSC's official answer keys (Series A) on upsc.gov.in. UPSC dropped no question in the two 2023 papers"
+                        + (" and one (Q71) in the 2021 EO/AO paper, which is left out" if E['eo21'] else "")
+                        + ". Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklets." if E['eo'] else
+                        "Answers come from UPSC's official answer key (Series A), published on upsc.gov.in in August 2024; no question was dropped. Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklet.")),
       dict(id='ts-police-si', dir='ts-police-si', src='ts-police-si', key='ts-si', name='TS Police SI', short='TS Police SI', seo='TS Police SI',
            slugp='ts-police-si', papers=TS_SI_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('SI', T['si']), board='TSLPRB', l2=L2_TE, pb='/ts-police-si/',
            keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
@@ -801,7 +832,8 @@ def paper_no(p):
 
 
 def paper_kw(conf, p):
-    """'APPSC Group 2 Prelims 2024', 'APPSC Group 2 Mains 2025 Paper 1', 'UPSC CAPF AC 2026 Paper 1'."""
+    """'APPSC Group 2 Prelims 2024', 'APPSC Group 2 Mains 2025 Paper 1', 'UPSC CAPF AC 2026 Paper 1'; a paper's own 'kwname' wins (EPFO: APFC vs EO/AO)."""
+    if p.get('kwname'): return p['kwname']
     n = paper_no(p)
     if conf['board'] in ('UPSC', 'TGPSC'):
         return f'{conf["seo"]} {p["year"]}' + (f' Paper {n}' if n else '')
@@ -1033,26 +1065,36 @@ def FAQ_CAPF(total, npapers):
 
 
 def FAQ_EPFO(total, npapers):
+    E = epfo_text(); eo = E['eo']   # are the EO/AO papers on the site?
     return [
-      ('Where can I get the UPSC EPFO APFC previous year question paper with answers?',
-       f'This page has {total} questions from the UPSC recruitment test for Assistant Provident Fund Commissioner (APFC) in EPFO, held on 2 July 2023, '
-       'in English and Hindi as printed in the official question booklet (Series A). Every answer is taken from UPSC\'s official answer key and every question has a short explanation. '
-       'You can practise the paper question by question, subject-wise or as a timed test: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+      (('Where can I get UPSC EPFO previous year question papers with answers?' if eo else
+        'Where can I get the UPSC EPFO APFC previous year question paper with answers?'),
+       (f'This page has {total} questions from {npapers} UPSC recruitment tests for EPFO: Assistant Provident Fund Commissioner (APFC), held on 2 July 2023, and Enforcement Officer / Accounts Officer (EO/AO), held on {E["eodates"]}. ' if eo else
+        f'This page has {total} questions from the UPSC recruitment test for Assistant Provident Fund Commissioner (APFC) in EPFO, held on 2 July 2023. ')
+       + 'Every question is in English and Hindi as printed in the official booklet (Series A), apart from the General English part. Every answer is taken from UPSC\'s official answer key and every question has a short explanation. '
+       'You can practise each paper question by question, subject-wise or as a timed test: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
       ('Are the answers official?',
-       'Yes. They come from UPSC\'s official answer key for Series A, published on upsc.gov.in in August 2024 after the recruitment was completed. UPSC dropped no question in this paper. The explanations are written by Learn with Anil.'),
-      ('What is the UPSC EPFO APFC exam pattern?',
+       ('Yes. They come from UPSC\'s official answer keys for Series A, published on upsc.gov.in after each recruitment was completed. UPSC dropped no question in the 2023 papers'
+        + ('; in the 2021 EO/AO paper it dropped Q71, which is left out. ' if E['eo21'] else '. ') if eo else
+        'Yes. They come from UPSC\'s official answer key for Series A, published on upsc.gov.in in August 2024 after the recruitment was completed. UPSC dropped no question in this paper. ')
+       + 'Where a keyed answer is debatable, the explanation says "(Official key; some sources differ.)". The explanations are written by Learn with Anil.'),
+      ('What is the UPSC EPFO exam pattern?' if eo else 'What is the UPSC EPFO APFC exam pattern?',
        'The recruitment test is one objective paper of 120 questions for 300 marks in two hours, in English and Hindi (the General English part in English only). '
        'A wrong answer costs one-third of the marks for that question. Candidates who qualify are called for an interview; the test and the interview are weighted 75:25. '
        'The syllabus covers General English, Indian freedom struggle, history and culture, current events and developmental issues, Indian polity and economy, general accounting principles, '
-       'industrial relations and labour laws, social security in India, general science and computer applications, and general mental ability and quantitative aptitude.'),
-      ('Which labour law questions come in the APFC exam?',
-       'The 2023 paper had 18 questions on labour laws and social security: the EPF &amp; MP Act, the Employees\' Compensation Act, the ESI Act, the Industrial Disputes Act, the Trade Unions Act, '
-       'the Factories Act, the Mines Act, the Payment of Wages and Payment of Bonus Acts, the Building and Other Construction Workers Act, and ILO core conventions. '
-       'The four Labour Codes, in force since 21 November 2025, have since replaced most of these Acts; the explanations say where the law has changed after the exam.'),
-      ('Is the APFC question paper available in Hindi?',
+       'industrial relations and labour laws, social security in India, general science and computer applications, and general mental ability and quantitative aptitude. '
+       + ('APFC and EO/AO have had separate papers on the same syllabus; in 2025 UPSC set one common paper for both posts.' if eo else '')),
+      ('Which labour law questions come in the EPFO exams?' if eo else 'Which labour law questions come in the APFC exam?',
+       ('The papers ask about the EPF &amp; MP Act, the Employees\' Compensation Act, the ESI Act, the Industrial Disputes Act, the Trade Unions Act, the Factories Act, the Mines Act, the Payment of Wages, Payment of Bonus and Minimum Wages Acts, '
+        'the Contract Labour and Standing Orders Acts, the Building and Other Construction Workers Act, and ILO conventions. ' if eo else
+        'The 2023 paper had 18 questions on labour laws and social security: the EPF &amp; MP Act, the Employees\' Compensation Act, the ESI Act, the Industrial Disputes Act, the Trade Unions Act, '
+        'the Factories Act, the Mines Act, the Payment of Wages and Payment of Bonus Acts, the Building and Other Construction Workers Act, and ILO core conventions. ')
+       + 'The four Labour Codes, in force since 21 November 2025, have since replaced most of these Acts; the explanations say where the law has changed after the exam.'),
+      ('Is the EPFO question paper available in Hindi?' if eo else 'Is the APFC question paper available in Hindi?',
        'Yes. Tap हिंदी at the top of the page to see every question and option of Part B in Hindi, exactly as printed in UPSC\'s booklet, with the explanation in Hindi. Part A (General English) is in English only.'),
-      ('Is there an EPFO APFC mock test?',
-       'Yes. Open the mock test page and take the real 2023 paper with a timer, or tap Create a quiz to choose subjects such as Labour Laws, Social Security or Accounting. You get your score, the official answer and an explanation for every question.'),
+      ('Is there an EPFO mock test?' if eo else 'Is there an EPFO APFC mock test?',
+       ('Yes. Open the mock test page and take a real APFC or EO/AO paper with a timer, ' if eo else 'Yes. Open the mock test page and take the real 2023 paper with a timer, ')
+       + 'or tap Create a quiz to choose subjects such as Labour Laws, Social Security or Accounting. You get your score, the official answer and an explanation for every question.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password.'),
     ]
