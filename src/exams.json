@@ -53,7 +53,8 @@
    "cat": "upsc",
    "b": "UPSC",
    "t": "EPFO",
-   "n": "EO/AO & APFC"
+   "n": "EO/AO & APFC",
+   "live": "upsc-epfo/"
   },
   {
    "id": "upsc-cds",

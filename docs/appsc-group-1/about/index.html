@@ -261,6 +261,7 @@ div.feature:hover{border-color:var(--line)}
 .qmeta{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .qnum{font-family:var(--f-mono);font-weight:600;font-size:14px;color:var(--accent-text)}
 .qtext{font-size:17.5px;font-weight:600;line-height:1.55;white-space:pre-line;overflow-wrap:anywhere}
+.qtbl-wrap{overflow-x:auto;margin:6px 0 8px;white-space:normal}.qtbl{border-collapse:collapse;font-size:15px;font-weight:500}.qtbl th,.qtbl td{border:1px solid var(--line);padding:4px 10px;text-align:left;vertical-align:top}.qtbl th{background:var(--accent-soft);font-weight:700}.qtbl .num{text-align:right;white-space:nowrap}
 .qimg{max-width:100%;border-radius:8px;background:#fff;padding:6px;border:1px solid var(--line);align-self:flex-start}
 .opts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
 .opt{width:100%;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;cursor:pointer;font-size:16.5px;color:var(--ink)}
@@ -630,7 +631,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/appsc-g1-2c8479136e.js"></script>
+<script src="data/appsc-g1-62856104f4.js"></script>
 <script>
 (function(){
 "use strict";
@@ -953,7 +954,28 @@ document.addEventListener("click", e=>{   // move between views without reloadin
 /* ---------- shared pieces ---------- */
 function bmBtn(id){ const on=!!S.bm[id]; return `<button class="iconbtn" type="button" data-act="bm" data-id="${id}" aria-pressed="${on}" title="${on?"Remove bookmark":"Bookmark this question"}">${on?ICON.bmOn:ICON.bm}<span>${on?"Saved":"Save"}</span></button>`; }
 function tags(q){ const p=PMAP[q.p]; return `<span class="pill blue">${esc(p.short)}</span><span class="pill">${esc(SUBJ[q.s].name)}</span><span class="pill">${esc(q.t)}</span>${isMCQ(q)?"":'<span class="pill warn">Quick recall</span>'}${P.lang===L2.code&&!q.qt?'<span class="pill en-only">English only</span>':""}`; }
-function stemHTML(q){ return `<p class="qtext"${langAttr(q)}>${esc(QT(q))}</p>` + (q.img? `<img class="qimg" src="${q.img}" alt="Figure for this question">` : ""); }
+/* Question text; runs of two or more pipe-typed rows ("Trade receivables | 25,00,000 |", header row first) become a table. */
+function tblRow(l){ const t=l.trim(); return t.includes("|") && (t.includes(" | ") || t.startsWith("| ") || t.endsWith(" |") || t==="|"); }
+function qtextHTML(text){
+  const L=String(text).split("\n"), out=[]; let buf=[], i=0;
+  const isNum = c => /\d/.test(c) && /^[₹$%()+\-–—−.,:/\d\s]*$/.test(c);
+  const cell = (t,c) => `<${t}${isNum(c)?' class="num"':""}>${esc(c)}</${t}>`;
+  const flush = () => { if(buf.length){ out.push(esc(buf.join("\n"))); buf=[]; } };
+  while(i<L.length){
+    let j=i; while(j<L.length && tblRow(L[j])) j++;
+    if(j-i>=2){
+      flush();
+      let rows=L.slice(i,j).map(r=>r.trim().split("|").map(c=>c.trim())); const w=Math.max(...rows.map(r=>r.length));
+      rows=rows.map(r=>r.concat(Array(w-r.length).fill("")));
+      const head = !rows[0].some(isNum);   // a first row with figures in it is data, not a header
+      out.push(`<span class="qtbl-wrap" style="display:block"><table class="qtbl">${head? `<thead><tr>${rows[0].map(c=>cell("th",c)).join("")}</tr></thead>` : ""}<tbody>${rows.slice(head?1:0).map(r=>`<tr>${r.map(c=>cell("td",c)).join("")}</tr>`).join("")}</tbody></table></span>`);
+      i=j;
+    } else { buf.push(L[i]); i++; }
+  }
+  flush();
+  return out.join("");
+}
+function stemHTML(q){ const t=QT(q), tag = t.split("\n").filter(tblRow).length>=2 ? "div" : "p"; return `<${tag} class="qtext"${langAttr(q)}>${qtextHTML(t)}</${tag}>` + (q.img? `<img class="qimg" src="${q.img}" alt="Figure for this question">` : ""); }
 function answerText(q){ const o=OPTS(q); return isMCQ(q) ? q.a.map(i=>`(${LET[i]}) ${o[i]}`).join("  or  ") : ANS(q); }
 function answerBox(q){ const te = isMCQ(q)? (P.lang===L2.code&&!!q.ot) : (P.lang===L2.code&&!!q.at); return `<div class="answer"${te?LATTR:""}><small lang="en">Official answer</small>${esc(answerText(q))}</div>`; }
 function videoBtn(q){ return q.v? `<button class="video-btn" type="button" data-act="video" data-id="${q.id}"><span class="play" aria-hidden="true">▶</span><span><b lang="te">వీడియో వివరణ చూడండి</b><small>Watch the video explanation · ${esc(q.v.dur||"1 min")} · Telugu</small></span></button>` : ""; }
@@ -1629,7 +1651,7 @@ function renderQotd(sel, scope){
   box.innerHTML = `<div class="section-title"><h2${qh!=="en"?` lang="${qh}"`:""}>${HT("qotd", qh)}</h2><span class="muted" style="font-size:14px"${qh!=="en"?` lang="${qh}"`:""}>${HT("qotdSub", qh)}</span></div>
     <article class="card qotd">
       <div class="qotd-head"><span class="eyebrow">${esc(date)}</span><span class="pill blue">${esc(x.exName)} · ${esc(x.paper)}</span></div>
-      <p class="qtext"${QL}>${esc(te? x.qt : x.q)}</p>
+      <div class="qtext"${QL}>${qtextHTML(te? x.qt : x.q)}</div>
       ${optsHTML}${after}
       <div class="share-row"><button class="btn btn-wa btn-sm" type="button" data-act="qotdwa">${WA_ICON}Challenge friends on WhatsApp</button><button class="btn btn-secondary btn-sm" type="button" data-act="qotdimg">${IMG_ICON}Share as image</button></div>
     </article>`;

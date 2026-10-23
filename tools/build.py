@@ -143,6 +143,31 @@ CAPF_SUBJECTS = [
   ('men', 'General Mental Ability', 'general-mental-ability', ['Numbers & Series', 'Reasoning', 'Arithmetic', 'Data Interpretation']),
 ]
 
+# ---------- UPSC EPFO: Assistant Provident Fund Commissioner (APFC) and Enforcement Officer / Accounts Officer (EO/AO) ----------
+EPFO_PAPERS = [
+  dict(id='apfc23', file='apfc-2023.txt', year=2023, stage='APFC Recruitment Test', short='APFC 2023',
+       title='UPSC EPFO APFC Recruitment Test 2023 (General Studies)', notif='Advt. 51/2023 · Series A · official key', held='2 July 2023',
+       key="UPSC's official answer key", fmt='mcq', slug='upsc-epfo-apfc-2023-question-paper-with-answers', alt='Assistant Provident Fund Commissioner',
+       hi_paper='सहायक भविष्य निधि आयुक्त (APFC) भर्ती परीक्षा',
+       blurb='General Studies for Assistant Provident Fund Commissioner: General English, Indian history and culture, current events, polity and economy, accounting, labour laws, social security, general science and computers, and quantitative aptitude (120 questions, 300 marks, 2 hours).'),
+]
+
+EPFO_SUBJECTS = [
+  ('eng', 'General English', 'general-english', ['Sentence Arrangement', 'Vocabulary & Idioms', 'Reading Comprehension', 'Grammar & Usage']),
+  ('ih',  'History, Culture & Freedom Struggle', 'history-culture-freedom-struggle', ['Ancient India', 'Medieval India', 'Art & Culture', 'Modern India & Freedom Struggle']),
+  ('cur', 'Current Events & Developmental Issues', 'current-events-developmental-issues', ['National', 'International', 'Schemes & Development', 'Reports & Indices', 'Awards, Sports & Persons']),
+  ('pol', 'Indian Polity', 'indian-polity', ['Constitution & Rights', 'Union & State Government', 'Judiciary', 'Federalism & Local Government', 'Constitutional & Statutory Bodies']),
+  ('eco', 'Indian Economy', 'indian-economy', ['Growth & National Income', 'Money, Banking & Inflation', 'Public Finance & Taxation', 'Agriculture & Industry', 'External Sector', 'Poverty, Employment & Welfare']),
+  ('acc', 'General Accounting Principles', 'general-accounting-principles', ['Accounting Basics', 'Financial Statements', 'Depreciation & Valuation', 'Cost & Management Accounting', 'Auditing & Company Accounts']),
+  ('lab', 'Industrial Relations & Labour Laws', 'industrial-relations-labour-laws', ['Labour Codes & Wages', 'Industrial Disputes & Trade Unions', 'Factories & Working Conditions', 'Labour Welfare & ILO']),
+  ('ss',  'Social Security in India', 'social-security-in-india', ['EPF & Pension', 'ESI & Health Insurance', 'Compensation & Maternity Benefit', 'Social Security Schemes & Codes']),
+  ('sci', 'General Science & Computers', 'general-science-computers', ['Physics', 'Chemistry', 'Biology', 'Computer Applications', 'Science & Technology']),
+  ('qa',  'Quantitative Aptitude', 'quantitative-aptitude', ['Arithmetic', 'Algebra & Numbers', 'Data Interpretation', 'Geometry & Mensuration', 'Reasoning']),
+]
+EPFO_SUBJ_HI = {'eng': 'सामान्य अंग्रेज़ी', 'ih': 'इतिहास, संस्कृति और स्वतंत्रता संग्राम', 'cur': 'समसामयिक घटनाएँ और विकास के मुद्दे',
+                'pol': 'भारतीय राजव्यवस्था', 'eco': 'भारतीय अर्थव्यवस्था', 'acc': 'सामान्य लेखा सिद्धांत', 'lab': 'औद्योगिक संबंध और श्रम कानून',
+                'ss': 'भारत में सामाजिक सुरक्षा', 'sci': 'सामान्य विज्ञान और कंप्यूटर', 'qa': 'मात्रात्मक अभिरुचि (क्वांटिटेटिव एप्टीट्यूड)'}
+
 # ---------- Telangana Police (TSLPRB, now TGPRB): SI and Constable Preliminary Written Tests ----------
 TS_SI_PAPERS = [
   dict(id='s2022', file='ts-si-2022-prelims.txt', year=2022, stage='Preliminary Written Test', short='SI Prelims 2022',
@@ -441,6 +466,20 @@ def exam_confs():
                            f"subject-wise practice and timed mock tests, 3 days free."),
            eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
            papers_note="2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. 2024: UPSC's official answer key (Series A). Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
+      dict(id='upsc-epfo', dir='upsc-epfo', src='upsc-epfo', key='upsc-epfo', name='UPSC EPFO (APFC, EO/AO)', short='EPFO', seo='UPSC EPFO APFC',
+           slugp='upsc-epfo', papers=EPFO_PAPERS, subjects=EPFO_SUBJECTS, faq=FAQ_EPFO, board='UPSC', l2=L2_HI, pb='/upsc-epfo/',
+           keyname="UPSC's official answer key", keyshort="UPSC's official answer key",
+           hi_name='यूपीएससी ईपीएफओ', hi_paper='भर्ती परीक्षा', subj_te=EPFO_SUBJ_HI,
+           title='UPSC EPFO APFC Previous Year Question Paper with Answers – APFC 2023, English & Hindi | Learn with Anil',
+           h1='UPSC EPFO APFC previous year question paper <em>with answers.</em>',
+           aka='Also known as the EPFO Assistant Provident Fund Commissioner (APFC) recruitment test. PYQs with UPSC\'s official answer key, subject-wise: labour laws, social security, accounting, polity, economy, history, science, aptitude and English.',
+           aka_short='UPSC EPFO Assistant Provident Fund Commissioner (APFC)',
+           l2line='यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) भर्ती परीक्षा का पिछले वर्ष का प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; पंजीकरण करने पर 3 दिन निःशुल्क।',
+           desc=lambda t: (f"UPSC EPFO APFC (Assistant Provident Fund Commissioner) previous year question paper: the 2023 recruitment test with UPSC's official answer key "
+                           f"and explanations. {t:,} questions in English and Hindi on labour laws, social security, accounting, polity, economy, history, science, aptitude and English; "
+                           f"subject-wise practice and timed mock tests, 3 days free."),
+           eyebrow='UPSC · EPFO Assistant Provident Fund Commissioner · Recruitment Test 2023',
+           papers_note="Answers come from UPSC's official answer key (Series A), published on upsc.gov.in in August 2024; no question was dropped. Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklet."),
       dict(id='ts-police-si', dir='ts-police-si', src='ts-police-si', key='ts-si', name='TS Police SI', short='TS Police SI', seo='TS Police SI',
            slugp='ts-police-si', papers=TS_SI_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('SI', T['si']), board='TSLPRB', l2=L2_TE, pb='/ts-police-si/',
            keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
@@ -608,7 +647,7 @@ def main():
         seo_name = conf['seo']
         views = {   # view: (title, description, canonical path, indexable)
           'papers': ((f'{seo_name} Previous Year Question Papers with Answers – All {len(papers)} Papers | Learn with Anil' if len(papers) > 1 else
-                      f'{seo_name} Previous Question Paper with Answers – {paper_kw(conf, papers[0]).replace(seo_name + " ", "")}, English & Telugu | Learn with Anil'),
+                      f'{seo_name} Previous Question Paper with Answers – {paper_kw(conf, papers[0]).replace(seo_name + " ", "")}, English & {conf["l2"]["name"]} | Learn with Anil'),
                      (f'All {len(papers)} {seo_name} previous year question papers' if len(papers) > 1 else f'{seo_name} previous question paper') + f' ({", ".join(paper_kw(conf, p).replace(seo_name + " ", "") for p in sorted(papers, key=lambda p: (-p["year"], p["id"])))}): '
                      f'practise {"each paper" if len(papers) > 1 else "it"} online as a quiz or a timed mock test, with answers and explanations: 3 days free when you register.', pb + 'papers/', True),
           'practice': (f'{seo_name} Mock Test & Topic-wise Quiz from Previous Papers | Learn with Anil',
@@ -791,6 +830,8 @@ def paper_kw_l2(conf, p):
     n = paper_no(p)
     if conf.get('te_name'):
         return f'{conf["te_name"]} {p.get("te_paper") or conf["te_paper"]} {p["year"]} ప్రశ్నపత్రం సమాధానాలతో'
+    if conf.get('hi_name'):
+        return f'{conf["hi_name"]} {p.get("hi_paper") or conf["hi_paper"]} {p["year"]} प्रश्न पत्र, उत्तर कुंजी सहित'
     if conf['l2']['code'] == 'te':
         g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
         stage = 'ప్రిలిమ్స్' if p['stage'].startswith(('Screening', 'Prelims')) else 'మెయిన్స్'
@@ -991,6 +1032,32 @@ def FAQ_CAPF(total, npapers):
     ]
 
 
+def FAQ_EPFO(total, npapers):
+    return [
+      ('Where can I get the UPSC EPFO APFC previous year question paper with answers?',
+       f'This page has {total} questions from the UPSC recruitment test for Assistant Provident Fund Commissioner (APFC) in EPFO, held on 2 July 2023, '
+       'in English and Hindi as printed in the official question booklet (Series A). Every answer is taken from UPSC\'s official answer key and every question has a short explanation. '
+       'You can practise the paper question by question, subject-wise or as a timed test: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+      ('Are the answers official?',
+       'Yes. They come from UPSC\'s official answer key for Series A, published on upsc.gov.in in August 2024 after the recruitment was completed. UPSC dropped no question in this paper. The explanations are written by Learn with Anil.'),
+      ('What is the UPSC EPFO APFC exam pattern?',
+       'The recruitment test is one objective paper of 120 questions for 300 marks in two hours, in English and Hindi (the General English part in English only). '
+       'A wrong answer costs one-third of the marks for that question. Candidates who qualify are called for an interview; the test and the interview are weighted 75:25. '
+       'The syllabus covers General English, Indian freedom struggle, history and culture, current events and developmental issues, Indian polity and economy, general accounting principles, '
+       'industrial relations and labour laws, social security in India, general science and computer applications, and general mental ability and quantitative aptitude.'),
+      ('Which labour law questions come in the APFC exam?',
+       'The 2023 paper had 18 questions on labour laws and social security: the EPF &amp; MP Act, the Employees\' Compensation Act, the ESI Act, the Industrial Disputes Act, the Trade Unions Act, '
+       'the Factories Act, the Mines Act, the Payment of Wages and Payment of Bonus Acts, the Building and Other Construction Workers Act, and ILO core conventions. '
+       'The four Labour Codes, in force since 21 November 2025, have since replaced most of these Acts; the explanations say where the law has changed after the exam.'),
+      ('Is the APFC question paper available in Hindi?',
+       'Yes. Tap हिंदी at the top of the page to see every question and option of Part B in Hindi, exactly as printed in UPSC\'s booklet, with the explanation in Hindi. Part A (General English) is in English only.'),
+      ('Is there an EPFO APFC mock test?',
+       'Yes. Open the mock test page and take the real 2023 paper with a timer, or tap Create a quiz to choose subjects such as Labour Laws, Social Security or Accounting. You get your score, the official answer and an explanation for every question.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password.'),
+    ]
+
+
 def FAQ_HM(total, npapers):
     return [
       ('Where can I get TGPSC HMWSSB Manager (Engineering) previous question papers with answers?',
@@ -1064,7 +1131,7 @@ h1{font-size:clamp(26px,4vw,36px);margin:28px 0 8px}h2{font-size:22px;margin:32p
 ol.qs{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
 .q{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
 .q .meta{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);margin-bottom:6px}
-.q p{margin:0 0 8px;white-space:pre-line;font-weight:600;overflow-wrap:anywhere}.q ol{margin:0 0 8px;padding-left:28px}.q li{overflow-wrap:anywhere}
+.q p{margin:0 0 8px;white-space:pre-line;font-weight:600;overflow-wrap:anywhere}.qtbl-wrap{overflow-x:auto;margin:0 0 10px}.qtbl{border-collapse:collapse;font-size:15px}.qtbl th,.qtbl td{border:1px solid var(--line);padding:4px 10px;text-align:left;vertical-align:top}.qtbl th{background:var(--accent-soft);font-weight:700}.qtbl .num{text-align:right;white-space:nowrap}.q ol{margin:0 0 8px;padding-left:28px}.q li{overflow-wrap:anywhere}
 .q img{max-width:100%;background:#fff;border-radius:6px}
 details summary{cursor:pointer;color:var(--accent-text);font-weight:700}
 .buy{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--surface);border:1.5px solid var(--accent);border-radius:14px;padding:16px 18px;margin:12px 0}
@@ -1127,7 +1194,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 </body>
 </html>
 """
@@ -1147,10 +1214,41 @@ def sample_ids(questions):
     return out
 
 
+def _tbl_row(line):
+    """A line of a pipe-typed table ('Trade receivables | 25,00,000 |'); '|x - y|' (absolute value) is not one."""
+    s = line.strip()
+    return '|' in s and (' | ' in s or s.startswith('| ') or s.endswith(' |') or s == '|')
+
+
+def qtext_html(text):
+    """Question text as <p> blocks; runs of two or more pipe-typed rows become a real table (first row = header unless it holds figures)."""
+    lines, out, buf, i = text.split('\n'), [], [], 0
+    def flush():
+        if buf: out.append(f'<p>{esc(chr(10).join(buf))}</p>'); buf.clear()
+    while i < len(lines):
+        j = i
+        while j < len(lines) and _tbl_row(lines[j]): j += 1
+        if j - i >= 2:
+            flush()
+            rows = [[c.strip() for c in ln.strip().split('|')] for ln in lines[i:j]]
+            w = max(len(r) for r in rows)
+            rows = [r + [''] * (w - len(r)) for r in rows]
+            num = lambda c: bool(re.fullmatch(r'[₹$%()+\-–—−.,:/\d\s]*\d[₹$%()+\-–—−.,:/\d\s]*', c))
+            cell = lambda tag, c: f'<{tag}{" class=num" if num(c) else ""}>{esc(c)}</{tag}>'
+            head = not any(num(c) for c in rows[0])   # a first row with figures in it is data, not a header ('Hockey | 15%')
+            out.append('<div class="qtbl-wrap"><table class="qtbl">' + ('<thead><tr>' + ''.join(cell('th', c) for c in rows[0]) + '</tr></thead>' if head else '') + '<tbody>'
+                       + ''.join('<tr>' + ''.join(cell('td', c) for c in r) + '</tr>' for r in rows[1 if head else 0:]) + '</tbody></table></div>')
+            i = j
+        else:
+            buf.append(lines[i]); i += 1
+    flush()
+    return ''.join(out)
+
+
 def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None, unlock=None):
     label = f'<a href="{qhref}">{esc(num_label)}</a>' if qhref else esc(num_label)
     parts = [f'<li class="q" id="q{q["n"]}"><div class="meta">{label} · {esc(subj[q["s"]][1])} · {esc(q["t"])}</div>',
-             f'<p>{esc(q["q"])}</p>']
+             qtext_html(q['q'])]
     if q.get('img'):
         parts.append(f'<img src="{q["img"]}" alt="Figure for question {q["n"]}" loading="lazy">')
     if q.get('o'):
@@ -1159,7 +1257,7 @@ def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None, unlock=No
     else:
         ans = q['ans']
     if q.get('qt'):
-        te = f'<p>{esc(q["qt"])}</p>'
+        te = qtext_html(q['qt'])
         if q.get('ot'):
             te += '<ol>' + ''.join(f'<li>{esc(o)}</li>' for o in q['ot']) + '</ol>'
         parts.append(f'<div class="te" lang="{l2["code"]}">{te}</div>')
@@ -1393,6 +1491,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'ts-police-si': ('TS Police SI Preliminary Written Test', '2026-11-29', 'Tentative, TGPRB press note of 17 September 2026.'),
   'ts-police-constable': ('TS Police Constable Preliminary Written Test', '2026-12-20', 'Tentative, TGPRB press note of 17 September 2026.'),
   'upsc-capf': ('UPSC CAPF (Assistant Commandants) 2027', '2027-07-04', 'UPSC Calendar 2027.'),
+  'upsc-epfo': ('UPSC EPFO APFC / EO-AO Recruitment Test', None, 'UPSC holds this test only when EPFO posts are advertised; no new advertisement yet.'),
   'tgpsc-hmwssb-manager': ('TGPSC HMWSSB Manager (Engineering)', None, 'Tentatively December 2026; TGPSC has not announced the exact date yet.'),
 }
 
@@ -1758,7 +1857,7 @@ def not_found_page():
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <script>
 (function(){
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/ts-police-si/", "/ts-police-constable/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);
@@ -1772,7 +1871,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <h1>This page does not exist</h1>
 <p>The address may be mistyped, or the page has moved. Try one of these:</p>
 <ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
-<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li>
+<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li></ul>
 </main></body></html>
