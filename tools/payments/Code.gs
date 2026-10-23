@@ -1,6 +1,5 @@
-/** @OnlyCurrentDoc */
 /**
- * Learn with Anil — passes and payments (Google Apps Script, bound to the "Learn with Anil – Passes" spreadsheet).
+ * Learn with Anil — passes and payments (Google Apps Script; its data lives in the private "Learn with Anil – Passes" spreadsheet).
  *
  * What it does
  *  - buy:     creates an Instamojo payment request for a pass (price fixed here, never taken from the browser)
@@ -12,7 +11,8 @@
  *  - passes:  which passes a registered phone number has for an exam.
  *  - mock:    the key of a released Mission Khaki mock (its encrypted file is on the website), only for a valid mock pass.
  *
- * Secrets are NOT in this file. Anil adds them himself under Project Settings → Script properties:
+ * Settings are NOT in this file. They live under Project Settings → Script properties:
+ *   SHEET_ID                                       the ID of the "Learn with Anil – Passes" spreadsheet (the only sheet this script opens)
  *   INSTAMOJO_CLIENT_ID, INSTAMOJO_CLIENT_SECRET   (Instamojo dashboard → API & Plugins; "API v2")
  *   INSTAMOJO_SALT                                 (Instamojo private salt, used to check webhooks)
  *   INSTAMOJO_API (optional)                       defaults to https://api.instamojo.com
@@ -56,8 +56,9 @@ function doPost(e) {
 function out(o) { return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON); }
 function phoneOf(p) { const d = String(p || '').replace(/\D/g, '').slice(-10); return /^[6-9]\d{9}$/.test(d) ? d : ''; }
 function prop(k) { return PropertiesService.getScriptProperties().getProperty(k) || ''; }
+function book_() { return SpreadsheetApp.openById(prop('SHEET_ID')); }
 function sheet(name, header) {
-  const ss = SpreadsheetApp.getActive();
+  const ss = book_();
   let sh = ss.getSheetByName(name);
   if (!sh) { sh = ss.insertSheet(name); sh.appendRow(header); sh.setFrozenRows(1); }
   return sh;
@@ -208,8 +209,7 @@ function mock(b, exam) {   // the key of a sealed mock (the encrypted file is on
 
 // Run once from the editor (Run ▶ checkSetup) to approve the script and check the settings. Prints no secrets.
 function checkSetup() {
-  const ss = SpreadsheetApp.getActive();
-  Logger.log('Spreadsheet: ' + (ss ? ss.getName() : 'NOT BOUND'));
+  Logger.log('Spreadsheet: ' + (prop('SHEET_ID') ? book_().getName() : 'SHEET_ID MISSING'));
   ['INSTAMOJO_CLIENT_ID', 'INSTAMOJO_CLIENT_SECRET', 'INSTAMOJO_SALT'].forEach(k => Logger.log(k + ': ' + (prop(k) ? 'set' : 'MISSING')));
   Logger.log('Web app URL: ' + ScriptApp.getService().getUrl());
 }
