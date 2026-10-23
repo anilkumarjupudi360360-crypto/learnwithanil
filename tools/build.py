@@ -389,7 +389,6 @@ def load_exam(conf):
     subj = {s[0]: s for s in conf['subjects']}
     papers, questions = [], []
     for p in conf['papers']:
-        if p.get('fmt') != 'mcq': continue   # Anil, 23 Oct 2026: answer-only keys (no four options) are not shown on the site
         qs = parse(p, conf['src'], subj)
         nte = parse_te(p, qs, conf['src'], conf['l2']['dir'])
         xp = os.path.join(SRC, conf['src'], conf['l2']['dir'], 'explanations.json')   # explanations in Telugu / Hindi
@@ -455,28 +454,28 @@ def exam_confs():
     return [
       dict(id='appsc-group-2', dir='', src='', key='appsc-g2', name='APPSC Group-II', short='Group-II', seo='APPSC Group 2',
            slugp='appsc-group-2', papers=PAPERS, subjects=SUBJECTS, faq=FAQ, board='APPSC', l2=L2_TE, pb='/appsc-group-2/',
-           title='APPSC Group 2 Previous Year Question Papers (PYQs) with Answers – Prelims 2024 & Mains 2025, English & Telugu | Learn with Anil',
+           title='APPSC Group 2 Previous Year Question Papers (PYQs) with Answers – Prelims & Mains 2019–2025, English & Telugu | Learn with Anil',
            h1='APPSC Group 2 previous year question papers <em>with answers.</em>',
            l2line='APPSC గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు (ప్రిలిమ్స్, మెయిన్స్) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.',
            aka='Also known as AP Group 2 or APPSC Group-II Services. Old question papers, PYQs and practice bits, all with the final key.',
-           desc=lambda t: (f"APPSC Group 2 (AP Group 2) previous year question papers and old papers with answers from APPSC's final key: Prelims (Screening Test) 2024 "
-                           f"and Mains 2025 Paper 1 and Paper 2. {t:,} questions in English and Telugu with explanations; "
+           desc=lambda t: (f"APPSC Group 2 (AP Group 2) previous year question papers and old papers with answers from APPSC's final key: Prelims (Screening Test) 2024 and 2019, "
+                           f"Mains 2025 Paper 1 and Paper 2, and Mains 2019. {t:,} questions in English and Telugu with explanations; "
                            f"practice quizzes and timed mock tests, 3 days free."),
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
-           eyebrow='APPSC Group-II · Prelims (Screening) 2024 &amp; Mains 2025',
-           papers_note="Every paper uses APPSC's official final key, with all four options for every question."),
+           eyebrow='APPSC Group-II · Prelims (Screening) &amp; Mains · 2019–2025',
+           papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
            slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE, pb='/appsc-group-1/',
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
-           title='APPSC Group 1 Previous Year Question Papers (PYQs) with Answers – Prelims 2024 Paper 1 & 2, English & Telugu | Learn with Anil',
+           title='APPSC Group 1 Previous Year Question Papers (PYQs) with Answers – Prelims 2019–2024, English & Telugu | Learn with Anil',
            h1='APPSC Group 1 previous year question papers <em>with answers.</em>',
            l2line='APPSC గ్రూప్ 1 ప్రిలిమ్స్ మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; రిజిస్టర్ చేసుకుంటే 3 రోజులు ఉచితం.',
            aka='Also known as AP Group 1 or APPSC Group-I Services. Old question papers and PYQs of the Prelims, with the final key.',
-           desc=lambda t: (f"APPSC Group 1 (AP Group 1) Prelims previous year question papers and old papers with answers from APPSC's final key: the 2024 Prelims "
+           desc=lambda t: (f"APPSC Group 1 (AP Group 1) Prelims previous year question papers and old papers with answers from APPSC's final key: 2024, 2023 and 2019, "
                            f"Paper 1 General Studies and Paper 2 General Aptitude. {t:,} questions in English and Telugu with explanations; "
                            f"practice quizzes and timed mock tests, 3 days free."),
-           eyebrow='APPSC Group-I · Prelims 2024',
-           papers_note="Every paper uses APPSC's official final key, with all four options for every question."),
+           eyebrow='APPSC Group-I · Prelims · 2019–2024',
+           papers_note="Every paper uses APPSC's official final key. The 2024 key shows all four options. The 2023 and 2019 keys print only the correct answer, so those questions appear as quick-recall cards: think of the answer, reveal it, then mark yourself."),
       dict(id='upsc-capf', dir='upsc-capf', src='upsc-capf', key='upsc-capf', name='UPSC CAPF (AC)', short='CAPF (AC)', seo='UPSC CAPF AC',
            slugp='upsc-capf-ac', papers=CAPF_PAPERS, subjects=CAPF_SUBJECTS, faq=FAQ_CAPF, board='UPSC', l2=L2_HI, pb='/upsc-capf/',
            keyname="UPSC's answer keys", keyshort="UPSC's answer keys (2025: compiled from published keys)",
@@ -1005,7 +1004,7 @@ def home_paper_card(p):
 def FAQ(total, npapers):
     return [
       ('Where can I get APPSC Group 2 previous year question papers with answers?',
-       f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024 and Mains 2025 Paper I and Paper II. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+       f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024, Mains 2025 Paper I and Paper II, and the 2019 Screening and Mains papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
        'There are three plans. Free trial: register once and every previous paper of every exam, with all study tools, opens for 3 days. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
       ('Are the APPSC Group 2 previous papers available in Telugu?',
@@ -1016,6 +1015,8 @@ def FAQ(total, npapers):
        'Under Notification 11/2023, the Screening Test is one objective paper of 150 questions for 150 marks in 150 minutes, with 30 marks each for Indian History, Geography, Indian Society, Current Affairs and Mental Ability. The Mains has two objective papers of 150 marks each: Paper I covers the Social and Cultural History of Andhra Pradesh and the Indian Constitution, and Paper II covers the Indian and AP Economy and Science and Technology.'),
       ('Are the answers on this site official?',
        'Yes. The answers come from the final keys published by APPSC. Questions that APPSC deleted are left out, and where the final key accepted two options, both are shown as correct. The explanations are written by Learn with Anil.'),
+      ('Why do the 2019 questions not show four options?',
+       'APPSC\'s 2019 final keys print each question with only the correct answer. Those questions appear here as quick-recall cards: you think of the answer, reveal it and mark whether you knew it. The 2024 and 2025 papers show all four options.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
@@ -1024,17 +1025,19 @@ def FAQ(total, npapers):
 def FAQ_G1(total, npapers):
     return [
       ('Where can I get APPSC Group 1 previous year question papers with answers?',
-       f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
+       f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam, and the 2023 and 2019 Prelims papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations: 3 days free when you register, then one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
        'There are three plans. Free trial: register once and every previous paper of every exam, with all study tools, opens for 3 days. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
       ('Where is the APPSC Group 1 Prelims 2024 answer key?',
-       'Each question on this site shows the answer from APPSC\'s final key, for Paper 1 (General Studies) and Paper 2 (General Aptitude) of the 2024 Prelims. Open a paper to see every question with its answer.'),
+       'Each question on this site shows the answer from APPSC\'s final key, for Paper 1 (General Studies) and Paper 2 (General Aptitude) of the 2024 Prelims, and for the 2023 and 2019 Prelims. Open a paper to see every question with its answer.'),
       ('Is there a APPSC Group 1 mock test?',
        'Yes. Tap Create a quiz, choose papers or subjects, and pick Timed test: you get a mock test made of real APPSC Group 1 Prelims questions, in English or Telugu, with your score and a topic-wise analysis at the end.'),
       ('What is the APPSC Group 1 Prelims exam pattern?',
        'The Preliminary Examination has two objective papers on the same day: Paper I General Studies (History and Culture; Constitution, Polity, Social Justice and International Relations; Indian and AP Economy and Planning; Geography) and Paper II General Aptitude (General Mental Ability, Administrative and Psychological Abilities; Science and Technology; Current Events). Each paper has 120 questions for 120 marks in 120 minutes, and one-third of the marks of a question is deducted for a wrong answer. Prelims marks are used only to shortlist candidates for the Mains.'),
       ('Are the answers on this site official?',
        'Yes. The answers come from the final keys published by APPSC. Questions that APPSC deleted are left out, and where the final key accepted two options, both are shown as correct. The explanations are written by Learn with Anil.'),
+      ('Why do the 2023 and 2019 questions not show four options?',
+       'APPSC\'s 2023 and 2019 final keys print each question with only the correct answer. Those questions appear here as quick-recall cards: you think of the answer, reveal it and mark whether you knew it. The 2024 papers show all four options.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; registering also starts your 3-day free trial of the previous papers of every exam, and after that one ₹45 PYQ Pass covers them all for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
@@ -1317,7 +1320,7 @@ LANDINGS = {
   'appsc-pyqs.html': dict(
       board='APPSC', ename='APPSC', crumb='APPSC PYQs',
       title='APPSC Previous Year Question Papers with Answers – Group 1 & Group 2 PYQs | Learn with Anil',
-      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2024 and Group 2 Prelims 2024 & Mains 2025, '
+      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024 and Group 2 Prelims & Mains 2019–2025, '
            '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations: 3 days free, then one ₹45 PYQ Pass for every exam.',
       h1='APPSC previous year question papers with answers',
       lede="Every APPSC Group 1 and Group 2 previous question paper on Learn with Anil, {n} questions in all. "
@@ -1356,6 +1359,7 @@ def landing_page(loaded, rel):
     can = f'{SITE_URL}/{rel}'
     secs = []
     for conf, papers, questions in loaded:
+        papers, questions = public_only(papers, questions)   # public pages only for four-option papers
         base = conf['dir'] + '/' if conf['dir'] else ''
         subj = {s[0]: s for s in conf['subjects']}
         scount = {}
@@ -1390,6 +1394,7 @@ def facts_table(rows, head=None):
 
 def practice_links(conf, papers, questions):
     """Links to this exam's papers, mock tests and subject pages (for the notification pages)."""
+    papers, questions = public_only(papers, questions)
     base = conf['dir'] + '/' if conf['dir'] else ''
     subj = {x[0]: x for x in conf['subjects']}
     scount = {}
@@ -1401,7 +1406,7 @@ def practice_links(conf, papers, questions):
         for p in sorted(papers, key=lambda p: (-p['year'], p['id'])))
     subs = ''.join(f'<a href="/{base}subjects/{conf["slugp"]}-{subj[x][2]}-pyqs.html">{esc(subj[x][1])} ({scount[x]})</a>' for x in subj if scount.get(x))
     return (f'<ol class="qs">{rows}</ol><h3>{esc(conf["seo"])} previous questions by subject</h3><nav class="toc">{subs}</nav>'
-            f'<p><a class="cta" href="{conf["pb"]}mock-test.html">Free {esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}">Practise topic-wise</a></p>')
+            f'<p><a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}">Practise topic-wise</a></p>')
 
 
 NOTIFS = {
@@ -1672,7 +1677,8 @@ def pyq_page(conf, papers, questions):
     rel = pb.strip('/') + '/pyqs.html'
     can = SITE_URL + '/' + rel
     base = '/' + (conf['dir'] + '/' if conf['dir'] else '')
-    ps = sorted(papers, key=lambda p: (-p['year'], p['id']))
+    extra = pass_only_papers(papers)
+    ps = sorted(public_only(papers, questions)[0], key=lambda p: (-p['year'], p['id']))
     title = f'{seo} PYQs with Answers – Previous Papers as Quizzes & Timed Tests, 3 Days Free | Learn with Anil'
     desc = (f'{seo} previous year questions (PYQs): {len(questions):,} questions from {len(papers)} official papers with answers and explanations in English and {l2["name"]}, '
             f'as practice quizzes and timed tests. 3 days free when you register, then one ₹{PAY["pyq_price"]} PYQ Pass for every exam on the site.')
@@ -1680,7 +1686,12 @@ def pyq_page(conf, papers, questions):
         f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions</div><p>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</p>'
         f'<a class="cta alt" href="{pb}?practice={p["id"]}">Practise question by question</a>'
         + (f'<a class="cta" href="{pb}?test={p["id"]}">Attempt as a timed test</a>' if p['fmt'] == 'mcq' else '') + '</li>' for p in ps)
-    body = (buy_box(conf, 'pyq') + '<h2>Previous papers</h2><ol class="qs">' + rows + '</ol>'
+    inside = ('' if not extra else
+              f'<h2>Also inside the PYQ Pass</h2><p>{sum(p["count"] for p in extra)} more questions from '
+              + ', '.join(esc(p['short']) for p in sorted(extra, key=lambda p: (-p['year'], p['id'])))
+              + '. Their official keys print only the correct answer, so they open in the app as quick-recall cards: think of the answer, reveal it, mark yourself. '
+              'They are part of every quiz, subject practice and the question bank with the PYQ Pass or the free trial.</p>')
+    body = (buy_box(conf, 'pyq') + '<h2>Previous papers</h2><ol class="qs">' + rows + '</ol>' + inside
             + '<h2>Practise by subject and topic</h2><p>With the PYQ Pass or the free trial: pick a subject to build a quiz from every paper, or build your own topic-wise quiz.</p>'
             + subjects_html(conf, questions) + features_html(pb, ('practice',))
             + f'<h2>Study tools</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
@@ -1779,7 +1790,20 @@ def mock_page(conf, papers, questions):
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Mock test', can)], conf)
 
 
+def public_only(papers, questions):
+    """Papers and questions that get public pages. Answer-only papers (no four options) are only inside the PYQ Pass
+    (Anil, 23 Oct 2026: "all PYQs under one shelter", no free pages for them)."""
+    ps = [p for p in papers if p['fmt'] == 'mcq']
+    ids = {p['id'] for p in ps}
+    return ps, [q for q in questions if q['p'] in ids]
+
+
+def pass_only_papers(papers):
+    return [p for p in papers if p['fmt'] != 'mcq']
+
+
 def build_static(conf, papers, subjects, questions, subj):
+    papers, questions = public_only(papers, questions)
     pages = {}
     by_p = {}
     for q in questions: by_p.setdefault(q['p'], []).append(q)
@@ -1852,6 +1876,7 @@ def build_static(conf, papers, subjects, questions, subj):
 
 def question_pages(conf, papers, questions, subj):
     """One crawlable page per question (q/<id>.html in the exam's folder): question, options, answer, explanation, both languages."""
+    papers, questions = public_only(papers, questions)
     pages = {}
     pmap = {p['id']: p for p in papers}
     by_p = {}

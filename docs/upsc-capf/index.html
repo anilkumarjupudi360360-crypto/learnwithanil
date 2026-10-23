@@ -1612,7 +1612,7 @@ const ROOTUP = DATA.base ? "../" : "";
 const SITE_HOST = (DATA.site||"https://learnwithanil.in").replace(/^https?:\/\//,"");
 function shareWA(text){ window.open("https://wa.me/?text="+encodeURIComponent(text), "_blank", "noopener"); }
 function qURL(id, base, pb){ return DATA.qpages ? `${DATA.site}${pb==null? PB : pb}q/${id}.html` : `${DATA.site}/${base==null? (DATA.base||"") : base}#q/${id}`; }
-function chalBtn(q){ if(PMAP[q.p] && PMAP[q.p].paid) return ""; return `<button class="iconbtn wa" type="button" data-act="qchal" data-id="${q.id}" title="Send this question to a friend on WhatsApp">${WA_ICON}<span>Challenge a friend</span></button>`; }
+function chalBtn(q){ if(PMAP[q.p] && (PMAP[q.p].paid || PMAP[q.p].fmt!=="mcq")) return ""; return `<button class="iconbtn wa" type="button" data-act="qchal" data-id="${q.id}" title="Send this question to a friend on WhatsApp">${WA_ICON}<span>Challenge a friend</span></button>`; }
 function excerpt(t, n){ t = String(t).replace(/\s+/g," ").trim(); return t.length>n ? t.slice(0,n-1).replace(/\s\S*$/,"")+"…" : t; }
 function challengeText(text, exam, paper, n, url, opts){
   const o = opts && opts.length ? "\n\n" + opts.map((x,i)=>`${LET[i]}) ${excerpt(x, 90)}`).join("\n") : "";
