@@ -257,6 +257,8 @@ div.feature:hover{border-color:var(--line)}
 .progress i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .25s}
 .timer{font-family:var(--f-mono);font-weight:600;font-size:15px;padding:5px 11px;border-radius:8px;background:var(--surface-2)}
 .timer.low{background:var(--bad-soft);color:var(--bad)}
+.timer.off{opacity:.55}
+.tmtog[aria-pressed="true"]{color:var(--accent)}
 .qcard{padding:24px;display:flex;flex-direction:column;gap:16px}
 @media (max-width:600px){.qcard{padding:18px}}
 .qhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap}
@@ -904,7 +906,7 @@ function route(){
     const q = QMAP[dq[1]], ids = QS.filter(x=>x.p===q.p).map(x=>x.id), k = ids.indexOf(q.id), order = ids.slice(k).concat(ids.slice(0,k));
     if(!ST.name || !passOK("pyq")){   // no pass: the paper list, then registration or the PYQ Pass checkout
       history.replaceState(null, "", PATHMODE ? pathOf("papers") : "#papers"); setTimeout(()=>startQuiz(order, PMAP[q.p].title, "practice", "paper"), 0); return "papers"; }
-    QZ = {title: PMAP[q.p].title, mode:"practice", source:"paper", ids: order, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit:0};
+    QZ = {title: PMAP[q.p].title, mode:"practice", source:"paper", ids: order, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: order.length*60};
     UI.confirmSubmit = false; history.replaceState(null, "", PATHMODE ? pathOf("quiz") : "#quiz"); v = "quiz";
   }
   if(!VIEWS.includes(v)) v = DATA.hub ? "exams" : "home";
@@ -1154,8 +1156,7 @@ function vPapers(){
       <p>${esc(p.blurb)}</p>
       <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
       <div class="acts">
-        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">Practise in order</button>
-        ${p.fmt==="mcq"?`<button class="btn btn-secondary btn-sm" type="button" data-act="papertest" data-paper="${p.id}">Timed test · ${p.count} min</button>`:""}
+        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">Attempt this paper · ${p.count} min timer</button>
       </div>
     </article>`;
   };
@@ -1238,7 +1239,7 @@ function startQuiz(ids, title, mode, source){
     if(ST.phone && PAYC && PAYC.on && !UI.passChecked){ UI.passChecked = true; refreshPasses().then(()=>startQuiz(ids, title, mode, source)); return; }   // paid on another device? ask the payments script once
     UI.payPending = {ids, title, mode, source}; openPay("pyq"); return; }
   track("quiz_start", {mode, exam: DATA.examShort||"", questions: ids.length});
-  QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: mode==="test"? ids.length*60 : 0};
+  QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: ids.length*60};   // every quiz and paper has a timer: 1 minute per question (the student can switch it off)
   UI.confirmSubmit = false;
   go("quiz");
 }
@@ -1295,8 +1296,8 @@ function vQuiz(){
   const prog = Math.round(100*(test?answered:Object.keys(QZ.chk).length)/total);
   return `<div class="wrap view">
     <div style="display:flex;flex-direction:column;gap:10px">
-      <div class="qbar"><div><p class="eyebrow">${test?"Timed test":"Practice"}${QZ.source==="smart"?" · Smart quiz":""}</p><h1>${esc(QZ.title)}</h1></div>
-        <div class="row"><span class="timer" id="timer">${test? fmtTime(QZ.limit) : "0:00"}</span><button class="btn btn-ghost btn-sm" type="button" data-act="${test?"asksubmit":"finish"}">${test?"Submit":"End quiz"}</button></div></div>
+      <div class="qbar"><div><p class="eyebrow">${test?"Timed test":QZ.source==="paper"?"Previous paper · timed":"Practice"}${QZ.source==="smart"?" · Smart quiz":""}</p><h1>${esc(QZ.title)}</h1></div>
+        <div class="row">${QZ.source!=="mock" ? `<button class="btn btn-ghost btn-sm tmtog" type="button" data-act="timertoggle" aria-pressed="${!QZ.timerOff}" title="${QZ.timerOff?"Switch the timer on":"Switch the timer off"}">⏱ Timer ${QZ.timerOff?"off":"on"}</button>` : ""}<span class="timer${QZ.timerOff?" off":""}" id="timer">${QZ.limit? fmtTime(QZ.limit - qzSecs()) : "0:00"}</span><button class="btn btn-ghost btn-sm" type="button" data-act="${test?"asksubmit":"finish"}">${test?"Submit":"End quiz"}</button></div></div>
       <div class="progress" aria-hidden="true"><i style="width:${prog}%"></i></div>
     </div>
     <div class="player">
@@ -1317,12 +1318,21 @@ function vQuiz(){
     </div>
   </div>`;
 }
+// seconds on the clock: time since the start, minus the time the student had the timer switched off
+const qzSecs = ()=> QZ ? (Date.now() - QZ.t0 - (QZ.pausedMs||0) - (QZ.timerOff && QZ.offAt ? Date.now() - QZ.offAt : 0))/1000 : 0;
+function toggleTimer(){
+  if(!QZ || QZ.source==="mock") return;
+  if(QZ.timerOff){ QZ.pausedMs = (QZ.pausedMs||0) + (Date.now() - (QZ.offAt||Date.now())); QZ.timerOff = false; QZ.offAt = 0; toast("Timer on"); }
+  else { QZ.timerOff = true; QZ.offAt = Date.now(); toast("Timer off. The clock is paused; switch it on any time."); }
+  render();
+}
 function startTimer(){
   stopTimer();
   const tick = ()=>{
     if(!QZ){ stopTimer(); return; }
-    const el = $("#timer"), el2 = (Date.now()-QZ.t0)/1000;
-    if(QZ.mode==="test"){ const left = QZ.limit - el2; if(el){ el.textContent = fmtTime(left); el.classList.toggle("low", left<60); } if(left<=0){ toast("Time is up. Your test has been submitted."); finishQuiz(); } }
+    const el = $("#timer"), el2 = qzSecs();
+    if(QZ.timerOff){ if(el) el.textContent = QZ.limit ? fmtTime(QZ.limit - el2) : fmtTime(el2); return; }   // paused: the time stays where it was
+    if(QZ.limit){ const left = QZ.limit - el2; if(el){ el.textContent = fmtTime(Math.max(0, left)); el.classList.toggle("low", left<60); } if(left<=0){ toast(QZ.mode==="test" ? "Time is up. Your test has been submitted." : "Time is up. Here is how you did."); finishQuiz(); } }
     else if(el){ el.textContent = fmtTime(el2); }
   };
   tick(); timer = setInterval(tick, 1000);
@@ -1334,7 +1344,7 @@ function finishQuiz(){
   // Practice: only questions you actually answered or skipped count. Timed test: every question counts, as in the exam.
   const done = QZ.mode==="test" ? QZ.ids.slice() : QZ.ids.filter(id=>QZ.chk[id]);
   if(!done.length){ QZ = null; toast("Quiz closed. Nothing was answered, so nothing was saved."); go(LAST? "practice" : "practice"); return; }
-  const res = {title:QZ.title, mode:QZ.mode, source:QZ.source, ids:done, total:QZ.ids.length, ans:Object.assign({},QZ.ans), secs:Math.round((Date.now()-QZ.t0)/1000), c:0,w:0,k:0, added:0, mastered:0, at:Date.now()};
+  const res = {title:QZ.title, mode:QZ.mode, source:QZ.source, ids:done, total:QZ.ids.length, ans:Object.assign({},QZ.ans), secs:Math.round(qzSecs()), c:0,w:0,k:0, added:0, mastered:0, at:Date.now()};
   done.forEach(id=>{
     const q = QMAP[id], a = QZ.ans[id];
     const x = S.qs[id] || (S.qs[id]={c:0,w:0,k:0});
@@ -1805,6 +1815,7 @@ document.addEventListener("click", e=>{
     case "asksubmit": UI.confirmSubmit=true; render(); setTimeout(()=>{ const c=$(".confirm"); if(c) c.scrollIntoView({block:"center",behavior:"smooth"}); },0); break;
     case "cancelsubmit": UI.confirmSubmit=false; render(); break;
     case "finish": finishQuiz(); break;
+    case "timertoggle": toggleTimer(); break;
     case "retry": { const ids=LAST.ids.filter(id=>!isCorrect(QMAP[id], LAST.ans[id])); startQuiz(shuffle(ids), "Re-attempt · "+LAST.title, "practice", "smart"); break; }
     case "rfilter": UI.rFilter=b.dataset.f; render(); break;
     case "mfilter": UI.mFilter=b.dataset.f; render(); break;

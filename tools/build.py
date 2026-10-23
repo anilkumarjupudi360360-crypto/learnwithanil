@@ -1409,9 +1409,9 @@ def practice_links(conf, papers, questions):
     scount = {}
     for q in questions: scount[q['s']] = scount.get(q['s'], 0) + 1
     rows = ''.join(
-        f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {"timed mock test available" if p["fmt"] == "mcq" else "answer-only key (quick-recall cards)"}</div>'
+        f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {p["count"]} min timer{"" if p["fmt"] == "mcq" else " · answer-only key (quick-recall cards)"}</div>'
         f'<p><a href="/{base}papers/{p["slug"]}.html">{esc(paper_kw(conf, p))} question paper with answers</a>'
-        + (f' · <a href="{conf["pb"]}?test={p["id"]}">Take it as a timed mock test</a>' if p['fmt'] == 'mcq' else '') + '</p></li>'
+        + f' · <a href="{conf["pb"]}?practice={p["id"]}">Attempt it with a timer</a></p></li>'
         for p in sorted(papers, key=lambda p: (-p['year'], p['id'])))
     subs = ''.join(f'<a href="/{base}subjects/{conf["slugp"]}-{subj[x][2]}-pyqs.html">{esc(subj[x][1])} ({scount[x]})</a>' for x in subj if scount.get(x))
     return (f'<ol class="qs">{rows}</ol><h3>{esc(conf["seo"])} previous questions by subject</h3><nav class="toc">{subs}</nav>'
@@ -1694,14 +1694,14 @@ def pyq_page(conf, papers, questions):
         recall = p['fmt'] != 'mcq'
         return (f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions{" · official key gives the answer only: quick-recall cards" if recall else ""}</div>'
                 f'<b>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</b>'
-                f'<div class="cacts"><a class="cta alt" href="{pb}?practice={p["id"]}">Practise question by question</a>'
-                + ('' if recall else f'<a class="cta" href="{pb}?test={p["id"]}">Attempt as a timed test</a>') + '</div></li>')
+                f'<div class="cacts"><a class="cta" href="{pb}?practice={p["id"]}">Attempt this paper · {p["count"]} min timer</a></div></li>')
     allp = ps + sorted(extra, key=lambda p: (-p['year'], p['id']))
     others = [(x, h) for x, h in PAY.get('exam_links', []) if x != seo]
     course = (f'<section class="course"><div class="chead"><div><p class="ck">₹{PAY["pyq_price"]} course · PYQ Pass · all exams</p>'
               f'<h2>Every previous paper, one pass</h2>'
               f'<p>One payment of ₹{PAY["pyq_price"]} for the whole website, valid for 12 months. Every answer and explanation in English and {esc(l2["name"])}, '
-              f'practice question by question, timed tests, PYQ sectionals, subject and topic quizzes, and all study tools.</p></div>'
+              f'practice question by question, timed tests, PYQ sectionals, subject and topic quizzes, and all study tools. '
+              f'Every paper runs with a timer (1 minute per question) that you can switch off and on at the top of the screen.</p></div>'
               f'<a class="cta" href="{pb}?buy=pyq">Get it for ₹{PAY["pyq_price"]}</a></div>'
               f'<h3>{esc(seo)} papers in this course ({len(allp)} papers, {len(questions):,} questions)</h3><ol class="clist">' + ''.join(row(p) for p in allp) + '</ol>'
               + (f'<h3>Also in the same ₹{PAY["pyq_price"]} pass</h3><p>Every paper of these exams, and of every exam added to the site later:</p>'
@@ -1770,7 +1770,7 @@ def mock_page(conf, papers, questions):
         f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · about {round(p["count"] / 60 * 4) / 4:g} hours</div>'
         f'<p>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</p>'
         f'<p style="font-weight:400">{esc(p["blurb"])}</p>'
-        f'<a class="cta" href="{pb}?test={p["id"]}">Start the mock test</a><a class="cta alt" href="/{conf["dir"] + "/" if conf["dir"] else ""}papers/{p["slug"]}.html">Read it with answers</a></li>'
+        f'<a class="cta" href="{pb}?test={p["id"]}">Start the mock test</a><a class="cta alt" href="/{conf["dir"] + "/" if conf["dir"] else ""}papers/{p["slug"]}.html">See the questions</a></li>'
         for p in mcq)
     info = MOCK_INFO.get(conf['id'], '')
     if mk:
@@ -1851,8 +1851,7 @@ def build_static(conf, papers, subjects, questions, subj):
         toc = '<nav class="toc">' + ''.join(
             f'<a href="../subjects/{slugp}-{subj[s][2]}-pyqs.html">{esc(subj[s][1])} ({c})</a>' for s, c in subs.items()) + '</nav>'
         body = (f'<p lang="{conf["l2"]["code"]}" style="margin:0 0 6px">{esc(paper_kw_l2(conf, p))}</p>'
-                f'<a class="cta" href="{conf["pb"]}?practice={p["id"]}">Practise this paper online</a>'
-                + (f'<a class="cta alt" href="{conf["pb"]}?test={p["id"]}">Take it as a timed test</a>' if p['fmt'] == 'mcq' else '') +
+                f'<a class="cta" href="{conf["pb"]}?practice={p["id"]}">Attempt this paper · {len(qs)} min timer</a>' +
                 f'<a class="cta alt" href="{conf["pb"]}practice/">Make a topic-wise quiz</a>'
                 f'<p class="note">The answers and explanations of the first {min(SAMPLE_N, len(qs))} questions are free on this page. For all {len(qs)}, practise the paper in the app '
                 f'with the ₹{PAY["pyq_price"]} PYQ Pass, one payment for every exam on the site.</p>'

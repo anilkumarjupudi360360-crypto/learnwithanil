@@ -219,6 +219,7 @@ async def main():
                     errors.append(f'{rel}: says something is free or offers a free PDF')
                 if '<h2>Plans</h2>' not in body or 'PYQ Pass' not in body: errors.append(f'{rel}: no plans table')
                 if 'Free trial' in body or 'days free' in body.lower(): errors.append(f'{rel}: still offers a free trial')
+                if rel.endswith('pyqs.html') and ('Attempt as a timed test' in body or 'Practise question by question' in body or 'min timer</a>' not in body): errors.append(f'{rel}: papers should have one "Attempt this paper" button')
                 for h in _re.findall(r'href="(/[^"#:?]*)', open(os.path.join(SITE, rel), encoding='utf-8').read()):
                     f = os.path.join(SITE, h.lstrip('/'))
                     if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')
@@ -229,6 +230,19 @@ async def main():
             for h in await pg.eval_on_selector_all('#home-static .etiles a', 'els => els.map(e => e.getAttribute("href"))'):
                 f = os.path.join(SITE, h.lstrip('/'))
                 if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{sub}: tile links to missing {h}')
+        # every previous paper runs with a countdown timer (1 minute per question), also question by question
+        for path in ('appsc-group-2/?practice=s2024', 'appsc-group-1/?practice=p2023a'):
+            await pg.goto(URL + path); await pg.wait_for_timeout(1500)
+            if (await pg.evaluate('location.pathname')).endswith('/quiz/'):
+                t = await pg.inner_text('#timer')
+                if t.count(':') != 2: errors.append(f'{path}: no countdown timer (shows {t})')
+                # the student can switch the timer off (the clock pauses) and on again
+                if not await pg.locator('[data-act="timertoggle"][aria-pressed="true"]').count(): errors.append(f'{path}: no timer on/off button')
+                else:
+                    await pg.click('[data-act="timertoggle"]'); t1 = await pg.inner_text('#timer'); await pg.wait_for_timeout(2200)
+                    if await pg.inner_text('#timer') != t1 or not await pg.locator('#timer.off').count(): errors.append(f'{path}: timer kept running after switching it off')
+                    await pg.click('[data-act="timertoggle"]'); await pg.wait_for_timeout(2200)
+                    if await pg.inner_text('#timer') == t1: errors.append(f'{path}: timer did not restart after switching it on')
         await pg.goto(URL + 'ts-police-si/?sec=ari'); await pg.wait_for_timeout(600)
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('?sec=ari did not open a sectional test')
         await pg.goto(URL + 'ts-police-si/?buy=mock'); await pg.wait_for_timeout(500)
