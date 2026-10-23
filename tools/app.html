@@ -1002,7 +1002,7 @@ const HUBT = {
   all:{en:'All exams', hi:'सभी परीक्षाएँ', te:'అన్ని పరీక్షలు'},
   search:{en:'Search an exam, e.g. Group-II, CGL, NDA, Police SI', hi:'परीक्षा खोजें, जैसे Group-II, CGL, NDA, Police SI', te:'పరీక్షను వెతకండి, ఉదా. Group-II, CGL, NDA, Police SI'},
   live:{en:'Live · {N} questions', hi:'उपलब्ध · {N} प्रश्न', te:'అందుబాటులో · {N} ప్రశ్నలు'},
-  soon:{en:'Coming soon', hi:'जल्द आ रहा है', te:'త్వరలో'},
+  soon:{en:'Upcoming', hi:'आगामी', te:'రాబోయేది'},
   count:{en:'{n} exams · {l} live now', hi:'{n} परीक्षाएँ · {l} अभी उपलब्ध', te:'{n} పరీక్షలు · {l} ఇప్పుడు అందుబాటులో'},
   emptyT:{en:'No exam matches your search', hi:'आपकी खोज से कोई परीक्षा नहीं मिली', te:'మీరు వెతికిన పరీక్ష దొరకలేదు'},
   emptyP:{en:'Tell Anil which exam you are preparing for, and it will be added to the list.', hi:'Anil को बताइए कि आप किस परीक्षा की तैयारी कर रहे हैं, उसे सूची में जोड़ दिया जाएगा।', te:'మీరు ఏ పరీక్షకు సిద్ధమవుతున్నారో Anilకి చెప్పండి, దాన్ని జాబితాలో చేరుస్తాం.'},
@@ -1086,7 +1086,7 @@ function vExam(){
     ${head(c.name && c.name!==e.b ? `${esc(e.b)} · ${esc(c.name)}` : esc(e.b), esc(full), "Previous-year questions for this exam are being added, with official-key answers and explanations, in English and Telugu.", `<a class="btn btn-ghost btn-sm" href="#exams">← All exams</a>`)}
     ${figs}
     <div class="card soon">
-      <span class="pill warn" style="align-self:flex-start">Coming soon</span>
+      <span class="pill warn" style="align-self:flex-start">Upcoming</span>
       <h2 style="font-size:21px">${esc(e.b)} ${esc(e.t)}: questions are on the way</h2>
       <p>Exams are being added one by one. Send a WhatsApp message and Anil will tell you when ${esc(e.t)} is ready.</p>
       <div class="row"><a class="btn btn-primary" href="${waLink(`Hi Anil, please tell me when ${e.b} ${full} questions are added on learnwithanil.in`)}" target="_blank" rel="noopener">Notify me on WhatsApp</a><a class="btn btn-secondary" href="#home">Practise APPSC Group-II now</a></div>

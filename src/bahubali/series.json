@@ -1,0 +1,63 @@
+{
+ "kdf": {
+  "salt": "Lsd64aynzzeihNH6/hjPyg==",
+  "iter": 210000
+ },
+ "check": "HZLXXgGxxJl/n3feZeW7Zwf9VRuJb883WGeCvevbGA8yZ21rfXmz",
+ "tests": {
+  "p2t1": {
+   "data": "data/p2t1-89cbb35b8c.bin",
+   "pdf_q": "pdf/bahubali-paper-2-grand-test-01-question-booklet.pdf",
+   "pdf_a": "pdf/bahubali-paper-2-grand-test-01-answers.pdf",
+   "q": 150
+  }
+ },
+ "samples": [
+  {
+   "paper": "Paper II",
+   "sec": "Indian & Andhra Pradesh Economy",
+   "n": 1,
+   "t": "Indian Economy & Planning",
+   "q": "Consider the following statements regarding the production boundary followed in India's national accounts:\nI. Unpaid services rendered by members of a household, such as cooking meals and minding children, are included in output.\nII. Farm, forest and fish products retained by producers for their own consumption are valued and included in output.\nIII. The imputed rent of owner-occupied dwellings is included in output and in household final consumption expenditure.\nIV. Own-account construction activity is included in output.\nWhich of the statements given above are correct?",
+   "o": [
+    "II, III and IV only",
+    "I, II and III only",
+    "I and IV only",
+    "II and III only"
+   ],
+   "a": 0,
+   "w": "Statements II, III and IV are correct. The MoSPI manual on national accounts states that all goods produced during the period are counted whether they are marketed or not, so farm, forest and fish products kept for home consumption are given an imputed value. Services produced for the producer's own final consumption are excluded, with two exceptions that are included: the imputed rent of owner-occupied buildings and the services of paid domestic servants; imputed rent is also part of household final consumption. Own-account construction is likewise included. Statement I is incorrect: cooking meals, scrubbing floors or minding children by members of the household fall outside the production boundary, which is one reason GDP understates the economic contribution of unpaid work. Transfer receipts such as pensions and gifts are also excluded, as they are not payments for current production. Source: MoSPI, National Accounts Statistics: Manual on Estimation of State and District Income, paras 1.3, 1.14 and 1.19, https://www.mospi.gov.in/sites/default/files/publication_reports/national_accounta_0.pdf",
+   "qt": "భారతదేశ జాతీయ ఖాతాలలో అనుసరించే ఉత్పత్తి సరిహద్దు (ప్రొడక్షన్ బౌండరీ) కు సంబంధించి క్రింది ప్రకటనలను పరిగణించండి:\nI. భోజనం వండటం, పిల్లలను చూసుకోవడం వంటి, కుటుంబ సభ్యులు అందించే చెల్లింపు లేని సేవలు ఉత్పత్తిలో చేర్చబడతాయి.\nII. ఉత్పత్తిదారులు తమ స్వంత వినియోగం కోసం ఉంచుకున్న వ్యవసాయ, అటవీ మరియు మత్స్య ఉత్పత్తులకు విలువ కట్టి వాటిని ఉత్పత్తిలో చేర్చుతారు.\nIII. యజమానులే నివసిస్తున్న గృహాల ఆరోపిత అద్దె (ఇంప్యూటెడ్ రెంట్) ఉత్పత్తిలోనూ, గృహ అంతిమ వినియోగ వ్యయంలోనూ చేర్చబడుతుంది.\nIV. స్వంత ఖాతా నిర్మాణ కార్యకలాపాలు (ఓన్-అకౌంట్ కన్‌స్ట్రక్షన్) ఉత్పత్తిలో చేర్చబడతాయి.\nపై ప్రకటనలలో ఏవి సరైనవి?",
+   "ot": [
+    "II, III మరియు IV మాత్రమే",
+    "I, II మరియు III మాత్రమే",
+    "I మరియు IV మాత్రమే",
+    "II మరియు III మాత్రమే"
+   ]
+  },
+  {
+   "paper": "Paper II",
+   "sec": "Science & Technology",
+   "n": 76,
+   "t": "S&T Policy & Emerging Tech",
+   "q": "Consider the following statements about the Quantum Valley Tech Park at Amaravati, as announced in May 2025:\nI. The park is to be anchored by an IBM Quantum System Two built around IBM's 156-qubit Heron processor.\nII. The announcement described the installation of the IBM system as unconditional, without any need for export licences or further agreements.\nIII. The quantum computer planned for the park is based on trapped-ion qubits.\nWhich of the statements given above is/are correct?",
+   "o": [
+    "I only",
+    "I and II only",
+    "II and III only",
+    "I, II and III"
+   ],
+   "a": 0,
+   "w": "Statement I is correct: the joint announcement of 2 May 2025 by IBM, Tata Consultancy Services and the Government of Andhra Pradesh said the park would be anchored by an IBM Quantum System Two with IBM's 156-qubit Heron processor, India's largest quantum computer as currently envisioned. Statement II is wrong: the release said the deployment was subject to the issuance of appropriate export licences and the closing of definitive agreements. Statement III is wrong: IBM's processors, including Heron, are superconducting quantum processors that its modular System Two houses and cools near absolute zero; they are not trapped-ion machines. TCS is a partner that will develop quantum use cases in life sciences, materials science, supply-chain resilience, energy optimisation and cryptography, and park members can work with TCS to access IBM's cloud-based quantum computers. The state presented the park as support for the National Quantum Mission. Source: IBM Newsroom, 2 May 2025, https://newsroom.ibm.com/2025-05-02-ibm,-tata-consultancy-services-and-government-of-andhra-pradesh-unveil-plans-to-deploy-indias-largest-quantum-computer-in-the-countrys-first-quantum-valley-tech-park; IBM Quantum hardware, https://www.ibm.com/quantum/hardware",
+   "qt": "మే 2025 లో ప్రకటించిన విధంగా, అమరావతిలోని క్వాంటం వ్యాలీ టెక్ పార్క్ గురించి క్రింది ప్రకటనలను పరిగణించండి:\nI. IBM యొక్క 156-క్యూబిట్ హెరాన్ ప్రాసెసర్ ఆధారంగా నిర్మించిన IBM క్వాంటం సిస్టమ్ టూ ఈ పార్క్‌కు కేంద్ర బిందువుగా (యాంకర్‌గా) ఉంటుంది.\nII. ఎగుమతి లైసెన్సులు లేదా తదుపరి ఒప్పందాల అవసరం ఏదీ లేకుండా, IBM వ్యవస్థ ఏర్పాటు బేషరతుగా జరుగుతుందని ఆ ప్రకటన పేర్కొంది.\nIII. ఈ పార్క్ కోసం ప్రణాళిక చేసిన క్వాంటం కంప్యూటర్ ట్రాప్డ్-అయాన్ (బంధిత అయాన్) క్యూబిట్‌లపై ఆధారపడి ఉంటుంది.\nపై ప్రకటనలలో ఏది/ఏవి సరైనవి?",
+   "ot": [
+    "I మాత్రమే",
+    "I మరియు II మాత్రమే",
+    "II మరియు III మాత్రమే",
+    "I, II మరియు III"
+   ]
+  }
+ ],
+ "buy": "https://anilkumarjupudi360360.myinstamojo.com/product/bahubali-test-series-appsc-group-2-mains/",
+ "note": "Encrypted. The question source is private (see tools/bahubali.py)."
+}

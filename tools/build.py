@@ -876,7 +876,7 @@ def hub_html(catalog, counts, grand):
         for e in sorted([e for e in catalog['exams'] if e['cat'] == c['id']], key=lambda e: not e.get('live')):   # live exams first
             live = bool(e.get('live'))
             href = live_href(e) if live else '#exam/' + e['id']
-            status = f'Live · {counts.get(e["id"], 0):,} questions' if live else 'Coming soon'
+            status = f'Live · {counts.get(e["id"], 0):,} questions' if live else 'Upcoming'
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
             tiles.append(f'<a class="card exam{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-s="{esc(exam_terms(e, c))}">'
                          f'<span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></a>')
@@ -1369,15 +1369,13 @@ def live_text(mk):
 def pass_until_text(conf):
     u = PASS_UNTIL.get(conf['id'])
     if not u: return 'valid for 12 months'
-    d = date.fromisoformat(u[0])
-    return f'valid till {d.day} {d.strftime("%B %Y")}, the day after the {u[1].split(" on ")[0]}'
+    return f'valid till the {u[1].split(" on ")[0]}'   # no dates on the site (Anil, 23 Oct 2026)
 
 
 def pass_until_short(conf):
     u = PASS_UNTIL.get(conf['id'])
     if not u: return 'valid 12 months'
-    d = date.fromisoformat(u[0])
-    return f'valid till {d.day} {d.strftime("%b %Y")}'
+    return 'valid till the exam'
 
 
 def pay_data(conf):
@@ -1409,7 +1407,7 @@ def tiles_html(conf, papers, questions, extra_links):
     else:
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>Mock test pack</b>'
               f'<span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span>'
-              f'<span class="etile-price">Price coming soon</span></a>')
+              f'<span class="etile-price">Upcoming</span></a>')
     t3 = (f'<a class="etile" href="{pb}sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b>'
           f'<span class="etile-p">PYQ sectionals in {nsub} subjects{", plus sectional mocks from " + esc(mk["name"]) if mk else ""}. '
           f'Practise one section at a time with a timer.</span><span class="etile-price">{"With the PYQ Pass or " + esc(mk["name"]) if mk else "With the PYQ Pass"}</span></a>')
@@ -1492,14 +1490,7 @@ def sectional_page(conf, papers, questions):
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Sectional tests', can)], conf)
 
 
-MOCK_INFO = {   # exam id: (when the next exam is, as students should read it)
-  'appsc-group-2': 'APPSC Group 2 2026: 686 posts, applications from 10 to 30 November 2026 (Notification 37/2026); screening test date not announced yet.',
-  'appsc-group-1': 'APPSC Group 1 2026: 166 posts (Notification 07/2026); screening test tentatively on 24 January 2027.',
-  'ts-police-si': 'TS Police SI 2026: the Preliminary Written Test is tentatively on 29 November 2026 (forenoon), as per TGPRB. Confirm on tgprb.in.',
-  'ts-police-constable': 'TS Police Constable 2026: the Preliminary Written Test is tentatively on 20 December 2026 (forenoon), as per TGPRB. Confirm on tgprb.in.',
-  'upsc-capf': '',
-  'tgpsc-hmwssb-manager': 'TGPSC HMWSSB Manager (Engineering) 2026: 130 posts (Notification 04/2026); the exam is tentatively in December 2026. Confirm on tgpsc.gov.in.',
-}
+MOCK_INFO = {}   # exam dates removed at Anil's request (23 Oct 2026): no exam dates on the site
 
 
 def mock_page(conf, papers, questions):
