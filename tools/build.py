@@ -674,7 +674,7 @@ def main():
         pb = conf['pb']; basedir = '/' + prefix
         person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"UPSC Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:anilkumarjupudi360360@gmail.com","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/"]}
         website = {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":"Learn with Anil – Previous year questions for every exam","url":SITE_URL+'/'}
-        org = {"@context":"https://schema.org","@type":"Organization","name":"Learn with Anil","url":SITE_URL+'/',"logo":SITE_URL+'/icon-512.png',"founder":{"@type":"Person","name":"Jupudi Anil Kumar"},"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/"]}
+        org = {"@context":"https://schema.org","@type":"Organization","name":"Learn with Anil","url":SITE_URL+'/',"logo":SITE_URL+'/icon-512.png',"alternateName":["Learn with Anil PYQs","learnwithanil.in"],"founder":{"@type":"Person","name":"Jupudi Anil Kumar"},"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://t.me/learn_with_anil06"]}
         faqld = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]}
         seo_name = conf['seo']
         views = {   # view: (title, description, canonical path, indexable)
@@ -728,9 +728,11 @@ def main():
             os.makedirs(os.path.join(DIST, 'artifact', 'papers')); os.makedirs(os.path.join(DIST, 'artifact', 'subjects'))
             open(os.path.join(DIST, 'artifact', 'index.html'), 'w', encoding='utf-8').write(fill(head + body, photo_uri, 'Learn with Anil', '', root_desc))
             site_pages['index.html'] = site_doc(root_title, root_desc, '/', [website, org, person])
-        site_pages[pb.strip('/') + '/index.html'] = site_doc(home_title, home_desc, pb, [person, faqld])
+        exam_crumbs = [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb)]
+        site_pages[pb.strip('/') + '/index.html'] = site_doc(home_title, home_desc, pb, [person, faqld, crumb_ld(exam_crumbs)])
         for v, (t, d, cp, ix) in views.items():
-            site_pages[pb.strip('/') + f'/{v}/index.html'] = site_doc(t, d, cp, [], ix and cp.startswith(pb))
+            vld = [crumb_ld(exam_crumbs + [(VIEW_CRUMB.get(v, v.title()), SITE_URL + cp)])] if ix and cp.startswith(pb) else []
+            site_pages[pb.strip('/') + f'/{v}/index.html'] = site_doc(t, d, cp, vld, ix and cp.startswith(pb))
         for rel, html_ in site_pages.items():
             fp = os.path.join(DIST, 'site', rel); os.makedirs(os.path.dirname(fp), exist_ok=True)
             open(fp, 'w', encoding='utf-8').write(html_)
@@ -1838,16 +1840,24 @@ def mock_page(conf, papers, questions):
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Mock test', can)], conf)
 
 
+VIEW_CRUMB = {'papers': 'Previous papers', 'practice': 'Topic-wise quiz', 'bank': 'Question bank', 'notes': 'Study material', 'about': 'About'}
+
+
+def crumb_ld(items):
+    """BreadcrumbList structured data, so Google shows the page's place on the site (Home › Exam › Page) in results."""
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList",
+            "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, "item": u} for i, (n, u) in enumerate(items)]}
+
+
 def public_only(papers, questions):
-    """Papers and questions that get public pages. Answer-only papers (no four options) are only inside the PYQ Pass
-    (Anil, 23 Oct 2026: "all PYQs under one shelter", no free pages for them)."""
-    ps = [p for p in papers if p['fmt'] == 'mcq']
-    ids = {p['id'] for p in ps}
-    return ps, [q for q in questions if q['p'] in ids]
+    """Papers and questions that get public pages: all of them. Answer-only papers (no four options) were kept off the public pages
+    on 23 Oct 2026; on 24 Oct Anil chose to give them the same free-sample pages as the other papers (questions public, first
+    SAMPLE_N answers free, the rest with the PYQ Pass), because Google had already indexed their pages."""
+    return list(papers), list(questions)
 
 
 def pass_only_papers(papers):
-    return [p for p in papers if p['fmt'] != 'mcq']
+    return []   # no paper is hidden from the public pages any more (see public_only)
 
 
 def build_static(conf, papers, subjects, questions, subj):
