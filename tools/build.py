@@ -568,6 +568,7 @@ def exam_confs():
 def main():
     confs = exam_confs()
     PAY['exams'] = ', '.join(c['seo'] for c in confs)   # the PYQ Pass covers every one of these
+    PAY['exam_links'] = [(c['seo'], c['pb']) for c in confs]
     loaded = []
     for c in confs:
         papers, questions = load_exam(c)
@@ -1186,6 +1187,14 @@ table.facts th{background:var(--accent-soft);font-weight:700;overflow-wrap:norma
 .lock{background:var(--accent-soft);border-radius:10px;padding:10px 12px;margin:8px 0 0;font-size:15.5px}
 nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}nav.toc a{background:var(--accent-soft);padding:4px 10px;border-radius:999px;text-decoration:none;font-size:15px}
 footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}footer .wrap{padding-block:18px}
+.course{background:var(--surface);border:2px solid var(--accent);border-radius:16px;padding:18px 20px;margin:16px 0 8px}
+.course .chead{display:flex;gap:16px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}.course .chead>div{flex:1 1 380px}
+.course .ck{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--accent-text);text-transform:uppercase;letter-spacing:.04em;margin:0 0 4px}
+.course h2{margin:0 0 6px}.course h3{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-size:18px;margin:18px 0 8px}
+.course .chead .cta{margin:4px 0 0;white-space:nowrap}
+ol.clist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+ol.clist li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg)}
+.cmeta{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);margin-bottom:4px}.cacts .cta{margin:8px 8px 0 0}
 .sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:8px 0}
 .sgrid a{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--ink);font-weight:700}
 .sgrid a:hover,.fgrid a:hover{border-color:var(--accent)}.sgrid .n{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);font-weight:400;white-space:nowrap}
@@ -1682,16 +1691,25 @@ def pyq_page(conf, papers, questions):
     title = f'{seo} PYQs with Answers – Previous Papers as Quizzes & Timed Tests, 3 Days Free | Learn with Anil'
     desc = (f'{seo} previous year questions (PYQs): {len(questions):,} questions from {len(papers)} official papers with answers and explanations in English and {l2["name"]}, '
             f'as practice quizzes and timed tests. 3 days free when you register, then one ₹{PAY["pyq_price"]} PYQ Pass for every exam on the site.')
-    rows = ''.join(
-        f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions</div><p>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</p>'
-        f'<a class="cta alt" href="{pb}?practice={p["id"]}">Practise question by question</a>'
-        + (f'<a class="cta" href="{pb}?test={p["id"]}">Attempt as a timed test</a>' if p['fmt'] == 'mcq' else '') + '</li>' for p in ps)
-    inside = ('' if not extra else
-              f'<h2>Also inside the PYQ Pass</h2><p>{sum(p["count"] for p in extra)} more questions from '
-              + ', '.join(esc(p['short']) for p in sorted(extra, key=lambda p: (-p['year'], p['id'])))
-              + '. Their official keys print only the correct answer, so they open in the app as quick-recall cards: think of the answer, reveal it, mark yourself. '
-              'They are part of every quiz, subject practice and the question bank with the PYQ Pass or the free trial.</p>')
-    body = (buy_box(conf, 'pyq') + '<h2>Previous papers</h2><ol class="qs">' + rows + '</ol>' + inside
+    def row(p):
+        recall = p['fmt'] != 'mcq'
+        return (f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions{" · official key gives the answer only: quick-recall cards" if recall else ""}</div>'
+                f'<b>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</b>'
+                f'<div class="cacts"><a class="cta alt" href="{pb}?practice={p["id"]}">Practise question by question</a>'
+                + ('' if recall else f'<a class="cta" href="{pb}?test={p["id"]}">Attempt as a timed test</a>') + '</div></li>')
+    allp = ps + sorted(extra, key=lambda p: (-p['year'], p['id']))
+    others = [(x, h) for x, h in PAY.get('exam_links', []) if x != seo]
+    course = (f'<section class="course"><div class="chead"><div><p class="ck">₹{PAY["pyq_price"]} course · PYQ Pass · all exams</p>'
+              f'<h2>Every previous paper, one pass</h2>'
+              f'<p>One payment of ₹{PAY["pyq_price"]} for the whole website, valid for 12 months. Every answer and explanation in English and {esc(l2["name"])}, '
+              f'practice question by question, timed tests, PYQ sectionals, subject and topic quizzes, and all study tools. '
+              f'New here? Register once and get {TRIAL_DAYS} days free.</p></div>'
+              f'<a class="cta" href="{pb}?buy=pyq">Get it for ₹{PAY["pyq_price"]}</a></div>'
+              f'<h3>{esc(seo)} papers in this course ({len(allp)} papers, {len(questions):,} questions)</h3><ol class="clist">' + ''.join(row(p) for p in allp) + '</ol>'
+              + (f'<h3>Also in the same ₹{PAY["pyq_price"]} pass</h3><p>Every paper of these exams, and of every exam added to the site later:</p>'
+                 '<nav class="toc">' + ''.join(f'<a href="{h}pyqs.html">{esc(x)}</a>' for x, h in others) + '</nav>' if others else '')
+              + '</section>')
+    body = (course
             + '<h2>Practise by subject and topic</h2><p>With the PYQ Pass or the free trial: pick a subject to build a quiz from every paper, or build your own topic-wise quiz.</p>'
             + subjects_html(conf, questions) + features_html(pb, ('practice',))
             + f'<h2>Study tools</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
