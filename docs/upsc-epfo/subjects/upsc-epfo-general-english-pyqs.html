@@ -37,6 +37,7 @@ table.facts th{background:var(--accent-soft);font-weight:700;overflow-wrap:norma
 .note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;margin:16px 0}
 .ans{color:var(--good);font-weight:700;margin:8px 0 4px}.why{color:var(--muted);margin:0}
 .lock{background:var(--accent-soft);border-radius:10px;padding:10px 12px;margin:8px 0 0;font-size:15.5px}
+.passon{background:#E6F4EC;color:#0B5E36;border:1px solid #9FD3B5;border-radius:10px;padding:10px 12px;margin:10px 0;font-weight:600}
 nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}nav.toc a{background:var(--accent-soft);padding:4px 10px;border-radius:999px;text-decoration:none;font-size:15px}
 footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}footer .wrap{padding-block:18px}
 .course{background:var(--surface);border:2px solid var(--accent);border-radius:16px;padding:18px 20px;margin:16px 0 8px}
@@ -68,7 +69,7 @@ ol.clist li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;ba
 <main class="wrap">
 <h1>UPSC EPFO General English previous year questions with answers</h1>
 <p class="lede">Every General English question asked in the UPSC EPFO (APFC, EO/AO) papers on this site, grouped by topic. Answers come from UPSC&#x27;s official answer keys; each has a short explanation (free here for a sample, all of them in the practice app).</p>
-<p lang="hi" style="margin:0 0 6px">सीएपीएफ (एसी) सामान्य अंग्रेज़ी — पिछले वर्षों के प्रश्न, उत्तर और व्याख्या सहित।</p><a class="cta" href="/upsc-epfo/practice/">Practise General English online</a><nav class="toc"><a href="#t0">Sentence Arrangement (10)</a><a href="#t1">Vocabulary &amp; Idioms (28)</a><a href="#t2">Reading Comprehension (10)</a><a href="#t3">Grammar &amp; Usage (12)</a></nav><h2 id="t0">Sentence Arrangement</h2><ol class="qs"><li class="q" id="q1"><div class="meta"><a href="/upsc-epfo/q/apfc23-1.html">APFC 2023 · Q1</a> · General English · Sentence Arrangement</div><p>Rearrange the parts P, Q, R and S to form a meaningful sentence.
+<p class="passon" hidden></p><p lang="hi" style="margin:0 0 6px">सीएपीएफ (एसी) सामान्य अंग्रेज़ी — पिछले वर्षों के प्रश्न, उत्तर और व्याख्या सहित।</p><a class="cta" href="/upsc-epfo/practice/">Practise General English online</a><nav class="toc"><a href="#t0">Sentence Arrangement (10)</a><a href="#t1">Vocabulary &amp; Idioms (28)</a><a href="#t2">Reading Comprehension (10)</a><a href="#t3">Grammar &amp; Usage (12)</a></nav><h2 id="t0">Sentence Arrangement</h2><ol class="qs"><li class="q" id="q1"><div class="meta"><a href="/upsc-epfo/q/apfc23-1.html">APFC 2023 · Q1</a> · General English · Sentence Arrangement</div><p>Rearrange the parts P, Q, R and S to form a meaningful sentence.
 P: before the judge
 Q: given that he was clearly innocent
 R: was incomprehensible
@@ -216,5 +217,10 @@ I have much work to do.</p><ol><li>I have</li><li>much work</li><li>to do.</li><
 Psychology did not develop into a science based of careful observation and experimentation until the late 1800s.</p><ol><li>Psychology did not develop into a science</li><li>based of careful observation</li><li>and experimentation until the late 1800s.</li><li>No error</li></ol><p class="lock">Answer and explanation: <a href="/upsc-epfo/?q=eoao21-20">open it in the practice app</a>. It needs the ₹45 PYQ Pass: one payment for every exam on the site.</p></li></ol>
 </main>
 <footer><div class="wrap"><p style="margin:0 0 8px"><a href="../../appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="../../ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="../../appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>Questions are from UPSC's official question paper and answers from UPSC's official answer keys. Explanations are by Jupudi Anil Kumar, Learn with Anil (Instagram: @learn_with_anil06). Not affiliated with UPSC. Visits are counted with Google Analytics.</div></footer>
+<script>try{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{}").all)||{};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){
+document.querySelectorAll(".lk").forEach(function(e){e.textContent="✓ ";e.className="lk ok"});
+document.querySelectorAll("[data-paidtxt]").forEach(function(e){e.textContent=e.getAttribute("data-paidtxt")});
+document.querySelectorAll('a[href*="?buy=pyq"]').forEach(function(e){e.textContent="✓ PYQ Pass active"});
+var b=document.querySelector(".passon");if(b){b.textContent="✓ Your PYQ Pass is active until "+new Date(a.pyq+"T12:00:00+05:30").toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"})+": every previous paper, sectional and quiz of every exam is unlocked on this device. Students without the pass see a lock (🔒) on these buttons.";b.hidden=false}}}catch(e){}</script>
 </body>
 </html>

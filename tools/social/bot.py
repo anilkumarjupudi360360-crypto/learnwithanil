@@ -442,7 +442,7 @@ def cmd_render():
     for it in items:
         ig, tg = captions(it)
         meta = {k: it[k] for k in ('day', 'kicker', 'exam_id', 'exam_short', 'paper', 'n', 'subject', 'id', 'url', 'file')}
-        meta.update(caption_ig=ig, caption_tg=tg, q=it['q'])
+        meta.update(caption_ig=ig, caption_tg=tg, q=it['q'], o=it['o'])      # q + options: the WhatsApp channel posts them as text
         jsave(sp('cards', it['file'][:-4] + '.json'), meta)
         log(f'card {it["file"]}: {it["exam_short"]} {it["id"]}')
     jsave(sp('used-questions.json'), sorted(used))

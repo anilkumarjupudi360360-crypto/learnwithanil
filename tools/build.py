@@ -1207,6 +1207,7 @@ table.facts th{background:var(--accent-soft);font-weight:700;overflow-wrap:norma
 .note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;margin:16px 0}
 .ans{color:var(--good);font-weight:700;margin:8px 0 4px}.why{color:var(--muted);margin:0}
 .lock{background:var(--accent-soft);border-radius:10px;padding:10px 12px;margin:8px 0 0;font-size:15.5px}
+.passon{background:#E6F4EC;color:#0B5E36;border:1px solid #9FD3B5;border-radius:10px;padding:10px 12px;margin:10px 0;font-weight:600}
 nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}nav.toc a{background:var(--accent-soft);padding:4px 10px;border-radius:999px;text-decoration:none;font-size:15px}
 footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}footer .wrap{padding-block:18px}
 .course{background:var(--surface);border:2px solid var(--accent);border-radius:16px;padding:18px 20px;margin:16px 0 8px}
@@ -1240,6 +1241,8 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
     else:
         foot = (f'Questions are from {board}\'s official question paper and answers from {conf["keyshort"]}. Explanations are by '
                 f'Jupudi Anil Kumar, Learn with Anil (Instagram: @{INSTAGRAM}). Not affiliated with {board}.')
+    if PAY.get('on'):   # PYQ buttons carry a lock; the small script at the end removes it once this device has a paid PYQ Pass
+        body_html = re.sub(r'(<a class="cta[^"]*" href="[^"]*\?(?:sec|practice|test)=[^"]*">)', r'\1<span class="lk" aria-hidden="true">🔒 </span>', body_html)
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": canonical,
           "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": SITE_URL + '/'},
           "author": {"@type": "Person", "name": "Jupudi Anil Kumar"},
@@ -1265,9 +1268,14 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <main class="wrap">
 <h1>{nw(h1)}</h1>
 <p class="lede">{lede}</p>
-{body_html}
+{'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
 <footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){{
+document.querySelectorAll(".lk").forEach(function(e){{e.textContent="✓ ";e.className="lk ok"}});
+document.querySelectorAll("[data-paidtxt]").forEach(function(e){{e.textContent=e.getAttribute("data-paidtxt")}});
+document.querySelectorAll('a[href*="?buy=pyq"]').forEach(function(e){{e.textContent="✓ PYQ Pass active"}});
+var b=document.querySelector(".passon");if(b){{b.textContent="✓ Your PYQ Pass is active until "+new Date(a.pyq+"T12:00:00+05:30").toLocaleDateString("en-IN",{{day:"numeric",month:"long",year:"numeric"}})+": every previous paper, sectional and quiz of every exam is unlocked on this device. Students without the pass see a lock (🔒) on these buttons.";b.hidden=false}}}}}}catch(e){{}}</script>
 </body>
 </html>
 """
@@ -1559,6 +1567,13 @@ MOCK_PACKS = {
                        sections=['Arithmetic', 'Reasoning & Mental Ability', 'General Studies']),
 }
 
+# mock-test packs with a price but no mocks yet: shown as "coming soon", no Pay button and no checkout until Mock 1 is ready
+UPCOMING_PACKS = {
+  'upsc-epfo': dict(name='UPSC EPFO Mock Test Series', price=199, n=10, qn=120, langs='English &amp; Hindi',   # Anil, 24 Oct 2026: ₹199
+                    summary='10 full-length UPSC EPFO (APFC / EO-AO) mock tests in the real exam pattern, 120 questions each, in English and Hindi, '
+                            'with an explanation for every answer.'),
+}
+
 
 EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from) — the countdown under the exam tiles
   'appsc-group-2': ('APPSC Group 2 Screening Test', None, 'Applications 10–30 November 2026 (Notification 37/2026); APPSC has not announced the exam date yet.'),
@@ -1623,7 +1638,7 @@ def tiles_html(conf, papers, questions, extra_links):
     nsub = len({q['s'] for q in questions})
     t1 = (f'<a class="etile" href="{pb}pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b>'
           f'<span class="etile-p">{n:,} questions from {len(papers)} official paper{"s" if len(papers) > 1 else ""}, with answers and explanations, as quizzes and timed tests. '
-          f'One pass for every exam.</span><span class="etile-price">₹{PAY["pyq_price"]} · all exams · 12 months</span></a>')
+          f'One pass for every exam.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 ₹{PAY["pyq_price"]} · all exams · 12 months</span></a>')
     if mk:
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
               f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>'
@@ -1632,13 +1647,18 @@ def tiles_html(conf, papers, questions, extra_links):
         t2 = (f'<a class="etile" href="{BB_URL}"><span class="etile-k">02 · Mock tests</span><b>Bahubali Test Series</b>'
               f'<span class="etile-p">24 full-length Group-II Mains mocks, 12 for Paper I and 12 for Paper II: 150 questions each, English and Telugu, with explanations.</span>'
               f'<span class="etile-price">₹250 for all 24 tests</span></a>')
+    elif conf['id'] in UPCOMING_PACKS:
+        up = UPCOMING_PACKS[conf['id']]
+        t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(up["name"])}</b>'
+              f'<span class="etile-p">{up["n"]} full-length mocks, {up["qn"]} questions each, {up["langs"]}, with explanations. Coming soon.</span>'
+              f'<span class="etile-price">₹{up["price"]} · coming soon</span></a>')
     else:
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>Mock test pack</b>'
               f'<span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span>'
               f'<span class="etile-price">Upcoming</span></a>')
     t3 = (f'<a class="etile" href="{pb}sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b>'
           f'<span class="etile-p">PYQ sectionals in {nsub} subjects{", plus sectional mocks from " + esc(mk["name"]) if mk else ""}. '
-          f'Practise one section at a time with a timer.</span><span class="etile-price">{"With the PYQ Pass or " + esc(mk["name"]) if mk else "With the PYQ Pass"}</span></a>')
+          f'Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">{"🔒 With the PYQ Pass or " + esc(mk["name"]) if mk else "🔒 With the PYQ Pass"}</span></a>')
     links = ''.join(f'<a class="etile etile-sm" href="{h}"><b>{esc(x)}</b><span class="etile-go">→</span></a>' for x, h in extra_links)
     note = ''
     return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + exam_clock_html(conf)
@@ -1668,6 +1688,9 @@ def plans_html(conf):
     """Every plan in one table, so there is no doubt about what is free and what is paid."""
     mk = MOCK_PACKS.get(conf['id'])
     rows = [('PYQ Pass', f'₹{PAY["pyq_price"]}', f'Every previous paper of every exam on the site ({esc(PAY["exams"])}) and every exam added later: answers and explanations, practice quizzes, timed tests, PYQ sectionals and all study tools', '12 months from payment')]
+    up = UPCOMING_PACKS.get(conf['id'])
+    if up:
+        rows.append((esc(up['name']), f'₹{up["price"]} (coming soon)', f'{up["n"]} full-length {esc(conf["seo"])} mock tests, {up["qn"]} questions each, with explanations. Previous papers are not included (that is the PYQ Pass). Payment opens when Mock 1 is ready.', 'Till the exam'))
     if mk:
         rows.append((esc(mk['name']), f'₹{mk["price"]}', f'{mk["n"]} full-length {esc(conf["seo"])} mock tests and their sectional tests, with explanations, and the study tools for your mock results. Previous papers are not included (that is the PYQ Pass).',
                      esc(pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:])))
@@ -1765,8 +1788,10 @@ def sectional_page(conf, papers, questions):
     mock_part = (f'<h2>{esc(mk["name"])} sectional mocks</h2><ol class="qs">{secrows}</ol><p>Each {esc(mk["name"])} mock\'s sections — '
                  + ', '.join(esc(x) for x in mk['sections']) + ' — open as separate timed tests as the mocks are released '
                  f'({live_text(mk)}). They come with the {esc(mk["name"])} pack.</p>' + buy_box(conf, 'mock')
-                 if mk else '<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack. Its price will be announced soon.</p>')
-    body = ('<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. With the PYQ Pass.</p>'
+                 if mk else (f'<h2>Sectional mocks</h2><p>Sectional mocks will come with the {esc(UPCOMING_PACKS[conf["id"]]["name"])} '
+                             f'(₹{UPCOMING_PACKS[conf["id"]]["price"]}, coming soon).</p>' if conf['id'] in UPCOMING_PACKS else
+                             '<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack. Its price will be announced soon.</p>'))
+    body = (f'<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. 🔒 Opens only with the ₹{PAY["pyq_price"]} PYQ Pass.</p>'
             '<ol class="qs">' + rows + '</ol>' + buy_box(conf, 'pyq') + mock_part + '<h2>Plans</h2>' + plans_html(conf))
     lede = esc(f'Practise {seo} one section at a time: timed tests from real previous questions in every subject'
                + (f', and sectional mocks from {mk["name"]}.' if mk else '.'))
@@ -1812,6 +1837,13 @@ def mock_page(conf, papers, questions):
     elif BB_URL and conf['id'] == 'appsc-group-2':
         pack = (f'<h2>Bahubali Test Series</h2><p>24 full-length APPSC Group-II Mains mock tests, 12 for Paper I and 12 for Paper II: 150 questions each, '
                 f'English and Telugu, with explanations and PDFs. ₹250 for the whole series.</p><p><a class="cta" href="{BB_URL}">See the Bahubali tests</a></p>')
+    elif conf['id'] in UPCOMING_PACKS:
+        up = UPCOMING_PACKS[conf['id']]
+        pack = (f'<h2>{esc(up["name"])} · ₹{up["price"]} · coming soon</h2>'
+                f'<div class="buy"><div><b>{esc(up["name"])}</b><p>{esc(up["summary"])} Mock tests only: previous papers need the PYQ Pass '
+                f'(₹{PAY["pyq_price"]}, all exams), bought separately.</p><p class="muted">₹{up["price"]} · coming soon: payment opens when Mock 1 is ready</p></div>'
+                f'<span class="cta alt" aria-disabled="true">Coming soon</span></div>'
+                '<p>Until then, take the real previous papers below as timed mocks (with the PYQ Pass).</p>')
     else:
         pack = '<h2>Mock test pack</h2><p>Full-length mock tests for this exam are being prepared; the price will be announced soon. Until then, take the real previous papers below as timed mocks.</p>'
     body = (pack + (f'<p class="note">{esc(info)}</p>' if info else '')

@@ -37,6 +37,7 @@ table.facts th{background:var(--accent-soft);font-weight:700;overflow-wrap:norma
 .note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;margin:16px 0}
 .ans{color:var(--good);font-weight:700;margin:8px 0 4px}.why{color:var(--muted);margin:0}
 .lock{background:var(--accent-soft);border-radius:10px;padding:10px 12px;margin:8px 0 0;font-size:15.5px}
+.passon{background:#E6F4EC;color:#0B5E36;border:1px solid #9FD3B5;border-radius:10px;padding:10px 12px;margin:10px 0;font-weight:600}
 nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}nav.toc a{background:var(--accent-soft);padding:4px 10px;border-radius:999px;text-decoration:none;font-size:15px}
 footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}footer .wrap{padding-block:18px}
 .course{background:var(--surface);border:2px solid var(--accent);border-radius:16px;padding:18px 20px;margin:16px 0 8px}
@@ -68,7 +69,7 @@ ol.clist li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;ba
 <main class="wrap">
 <h1>UPSC CAPF AC 2026 Paper 1 · Question 11</h1>
 <p class="lede">Question 11 of the UPSC CAPF (AC) 2026 Paper I (19 July 2026). Try it first, then check your answer and the explanation in the practice app.</p>
-<ol class="qs"><li class="q" id="q11"><div class="meta">CAPF 2026 · P-I · Q11 · Indian Economy · Poverty, Employment &amp; Welfare</div><p>Consider the following statements about India&#x27;s labour reforms introduced in 2025 :
+<p class="passon" hidden></p><ol class="qs"><li class="q" id="q11"><div class="meta">CAPF 2026 · P-I · Q11 · Indian Economy · Poverty, Employment &amp; Welfare</div><p>Consider the following statements about India&#x27;s labour reforms introduced in 2025 :
 1. The Industrial Relations Code, 2020 introduces Re-skilling Fund by an industrial establishment which is equal to 15 days wages for every worker retrenched in addition to the retrenchment compensation, and has to be credited in the worker&#x27;s account within 45 days of retrenchment.
 2. With respect to Trade Union Recognition, any union with 41% membership shall get recognition as the Negotiating Union.
 Which of the statements given above is/are correct?</p><ol><li>1 only</li><li>2 only</li><li>Both 1 and 2</li><li>Neither 1 nor 2</li></ol><div class="te" lang="hi"><p>वर्ष 2025 में प्रवर्तित किए गए भारत के श्रम सुधारों के बारे में निम्नलिखित कथनों पर विचार कीजिए :
@@ -77,5 +78,10 @@ Which of the statements given above is/are correct?</p><ol><li>1 only</li><li>2 
 उपर्युक्त कथनों में से कौन-सा/कौन-से सही है/हैं?</p><ol><li>केवल 1</li><li>केवल 2</li><li>1 और 2 दोनों</li><li>न तो 1 और न ही 2</li></ol></div><p class="lock">Answer and explanation: <a href="/upsc-capf/?q=c2026a-11">open it in the practice app</a>. It needs the ₹45 PYQ Pass: one payment for every exam on the site.</p></li></ol><p><a class="cta" href="/upsc-capf/?q=c2026a-11">Answer it in the practice app</a><a class="cta alt" href="/upsc-capf/practice/">Make a topic-wise quiz</a></p><nav class="toc"><a href="c2026a-10.html">← Q10</a><a href="c2026a-12.html">Q12 →</a><a href="/upsc-capf/papers/upsc-capf-ac-2026-paper-1-general-ability-intelligence-question-paper-with-answers.html">All questions of this paper</a></nav>
 </main>
 <footer><div class="wrap"><p style="margin:0 0 8px"><a href="../../appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="../../ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="../../appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>Questions are from UPSC's official question paper and answers from UPSC's answer keys (2025: compiled from published keys). Explanations are by Jupudi Anil Kumar, Learn with Anil (Instagram: @learn_with_anil06). Not affiliated with UPSC. Visits are counted with Google Analytics.</div></footer>
+<script>try{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{}").all)||{};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){
+document.querySelectorAll(".lk").forEach(function(e){e.textContent="✓ ";e.className="lk ok"});
+document.querySelectorAll("[data-paidtxt]").forEach(function(e){e.textContent=e.getAttribute("data-paidtxt")});
+document.querySelectorAll('a[href*="?buy=pyq"]').forEach(function(e){e.textContent="✓ PYQ Pass active"});
+var b=document.querySelector(".passon");if(b){b.textContent="✓ Your PYQ Pass is active until "+new Date(a.pyq+"T12:00:00+05:30").toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"})+": every previous paper, sectional and quiz of every exam is unlocked on this device. Students without the pass see a lock (🔒) on these buttons.";b.hidden=false}}}catch(e){}</script>
 </body>
 </html>
