@@ -1,0 +1,974 @@
+# SSC Combined Graduate Level Examination 2025, Tier-I, held 18 September 2025, Shift 3 (4:00 PM). 100 questions, 200 marks, 60 minutes.
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via AglaSem); answers are the options SSC marked correct on that sheet (answer-key stage). Explanations by Learn with Anil.
+
+Q 1 | rea | Series
+Select the letter-cluster from among the given options that can replace the question mark (?) in the following series.
+D I N, I N S, N S X, S X C, ?
+(1) LKA
+(2) JNA
+(3) GVA
+(4) XCH
+= 4
+~ Within each cluster the letters move +5: D (4) → I (9) → N (14). Each new cluster drops the first letter of the previous one and adds a letter 5 steps ahead: DIN, INS, NSX, SXC. So the next cluster starts with X, C and adds H: C (3) + 5 = H (8), just as X (24) + 5 wraps round to C (3). The answer is XCH. LKA, JNA and GVA break the +5 pattern.
+
+Q 2 | rea | Mathematical Operations
+If 6 @ 2 = 9, 15 @ 3 = 125, then 8 @ 4 = ?
+(1) 4
+(2) 8
+(3) 16
+(4) 10
+= 3
+~ The rule is a @ b = (a ÷ b) raised to the power b. Check: 6 @ 2 = (6 ÷ 2)² = 3² = 9 and 15 @ 3 = (15 ÷ 3)³ = 5³ = 125. So 8 @ 4 = (8 ÷ 4)⁴ = 2⁴ = 16. Options 4 and 8 are 2² and 2³, which use the wrong power, and 10 fits no consistent rule.
+
+Q 3 | rea | Mathematical Operations
+Choose the correct signs to swap.
+40 ÷ 8 + 10 − 5 × 2 = 5
+(1) ÷ and ×
+(2) + and −
+(3) ÷ and +
+(4) − and ×
+= 2
+~ The printed equation is already true (5 + 10 − 10 = 5), so the question really asks which swap keeps it true. By BODMAS, swapping + and − gives 40 ÷ 8 − 10 + 5 × 2 = 5 − 10 + 10 = 5. The other swaps give 327.5 (÷ and ×: 40 × 8 + 10 − 5 ÷ 2), 30.8 (÷ and +: 40 + 8 ÷ 10 − 5 × 2) and 53 (− and ×: 40 ÷ 8 + 10 × 5 − 2). So + and − is the only valid swap.
+
+Q 4 | rea | Blood Relations & Directions
+A is the brother of B. B is the sister of C. C is the brother of D. How is B related to D?
+(1) Sister
+(2) Aunt
+(3) Niece
+(4) Can’t say
+= 1
+~ B is the sister of C, so B is female. C is the brother of D, so C and D are siblings, which makes A, B, C and D children of the same parents. Hence B is D's sister. "Can't say" is tempting because D's gender is not given, but it does not matter: the question asks how B is related to D, and B, being female, is D's sister either way. Aunt and niece would need a different generation.
+
+Q 5 | rea | Analogy & Classification
+Solve:
+FD : KH :: QM : ?
+(1) VP
+(2) WT
+(3) VQ
+(4) UW
+= 3
+~ Use letter positions (A = 1 … Z = 26). In FD : KH, F (6) + 5 = K (11) and D (4) + 4 = H (8). Apply the same steps to QM: Q (17) + 5 = V (22) and M (13) + 4 = Q (17). So QM : VQ. VP has the right first letter but adds only 3 to M, while WT and UW do not follow either step.
+
+Q 6 | rea | Series
+What comes next: 13, 16, 21, 30, 45, ?
+(1) 70
+(2) 66
+(3) 67
+(4) 68
+= 4
+~ Take differences: 16 − 13 = 3, 21 − 16 = 5, 30 − 21 = 9, 45 − 30 = 15. The differences themselves grow by 2, 4, 6, so the next increase is 8 and the next difference is 15 + 8 = 23. The next term is 45 + 23 = 68. 67 or 66 would need a difference of 22 or 21, which breaks the 2, 4, 6, 8 pattern of second differences.
+
+Q 7 | rea | Syllogism & Statements
+Read the following statement carefully and identify the conclusion that follows.
+Statement: Rising noise pollution in urban areas is affecting children’s concentration.
+Conclusion I: Urban children can’t study well.
+Conclusion II: Controlling noise pollution may improve children’s concentration.
+(1) Only I follows
+(2) Only II follows
+(3) Both follow
+(4) Neither follows
+= 2
+~ Conclusion I is too sweeping: the statement says noise is affecting concentration, not that urban children cannot study well at all, so I does not follow. Since rising noise is harming concentration, it is reasonable to infer that controlling noise pollution may improve it; the cautious word "may" makes II a valid conclusion. Hence only II follows.
+
+Q 8 | rea | Analogy & Classification
+Identify the odd one out:
+(1) 121
+(2) 131
+(3) 444
+(4) 544
+= 4
+~ 121, 131 and 444 are palindromic numbers: each reads the same forwards and backwards. 544 read backwards is 445, so it is not a palindrome and is the odd one out. Other properties do not group the numbers consistently (121 is a perfect square, 131 is prime, 444 is even), so the palindrome property is the intended rule.
+
+Q 9 | rea | Syllogism & Statements
+Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option.
+Statement: The introduction of Artificial Intelligence into healthcare systems can enhance diagnostic accuracy, but its widespread implementation may lead to ethical dilemmas in patient care.
+Assumptions:
+I. AI can improve healthcare diagnostics.
+II. The ethical concerns surrounding AI in healthcare are significant.
+III. AI will eventually replace human healthcare professionals.
+(1) Only I and II are implicit
+(2) Only II and III are implicit
+(3) All I, II and III are implicit
+(4) Only I is implicit
+= 1
+~ An assumption is what the statement takes for granted. Saying AI "can enhance diagnostic accuracy" presumes that AI can improve healthcare diagnostics, so I is implicit. Warning that its use "may lead to ethical dilemmas" presumes the ethical concerns are real and significant enough to mention, so II is implicit. The statement nowhere suggests that AI will replace human healthcare professionals, so III is not implicit. Hence only I and II are implicit.
+
+Q 10 | rea | Syllogism & Statements
+Read the following statement carefully and identify the conclusion that follows.
+Statement: All metro stations are under CCTV surveillance.
+Conclusions:
+I. Activities at metro stations are being monitored.
+II. No criminal activity can happen in metro stations.
+(1) Only Conclusion I follows
+(2) Only Conclusion II follows
+(3) Both I and II follow
+(4) Neither I nor II follows
+= 1
+~ CCTV surveillance means the stations are being watched, so activities at metro stations are being monitored and conclusion I follows. Surveillance can deter or record crime but cannot make it impossible, so the absolute claim in conclusion II that no criminal activity can happen does not follow. Hence only conclusion I follows.
+
+Q 11 | rea | Arrangement & Puzzles
+Direction: Study the information carefully and answer the given questions.
+Eight People Tina, Raj, Dia, Viraj, Soma, Meena, Neha and Ria are living in an eight-storey building, but not necessarily in the same order. The ground floor is numbered 1 and the floor above it is numbered 2, and so on, until the topmost floor is numbered 8. Dia lives on the lowermost floor. Only three people live between Dia and Ria. Tina lives on the 4th floor. Only two people live between Tina and Raj. Only five people live between Viraj and Soma. Neha lives on an odd numbered floor. Only one person lives between Meena and Viraj.
+Who lives three floors below the one who lives immediate below Raj?
+(1) Neha
+(2) Tina
+(3) Dia
+(4) Raj
+= 1
+~ Dia is on floor 1, so Ria (three people between) is on 5. Tina is on 4, so Raj (two between) is on 7, since 1 is taken. Viraj and Soma have five people between them, so they take floors 2 and 8. Neha and Meena take floors 3 and 6; Neha is on an odd floor, so Neha is on 3 and Meena on 6. One person between Meena and Viraj puts Viraj on 8 and Soma on 2. Immediately below Raj (7) is Meena (6), and three floors below 6 is floor 3: Neha.
+
+Q 12 | rea | Syllogism & Statements
+Read the following statement carefully and identify the conclusion that follows.
+Statement:
+No painters are athletes. Some artists are athletes. All artists are painters.
+Conclusions:
+I. Some painters are athletes.
+II. Some athletes are not painters.
+(1) Only I follows
+(2) Only II follows
+(3) Both I and II follow
+(4) Neither I nor II follows
+= 2
+~ The statements clash: artists who are athletes are also painters (all artists are painters), which contradicts "No painters are athletes". SSC's key takes "No painters are athletes" as given. Conclusion I (Some painters are athletes) directly contradicts it, so I does not follow. It also means no athlete is a painter, and athletes exist (some artists are athletes), so some athletes are not painters: II follows. Combining the other two statements would instead give I, which is why "Both follow" is also argued. (SSC key; some sources differ.)
+
+Q 13 | rea | Analogy & Classification
+Find the odd one out:
+Pacific, Atlantic, Indian, Arctic, Mediterranean
+(1) Pacific
+(2) Atlantic
+(3) Mediterranean
+(4) Arctic
+= 3
+~ Pacific, Atlantic, Indian and Arctic are oceans; with the Southern Ocean they make up the world's five oceans. The Mediterranean is a sea, almost enclosed by Europe, Africa and Asia and joined to the Atlantic Ocean through the Strait of Gibraltar. So Mediterranean is the odd one out. The Indian Ocean appears in the list but not among the options.
+
+Q 14 | rea | Coding-Decoding
+If CLOUD is coded as BKNTC, how is RAINY written?
+(1) QZHMX
+(2) QZHLX
+(3) QZHLW
+(4) QZHMV
+= 1
+~ Each letter of CLOUD moves one step back: C − 1 = B, L − 1 = K, O − 1 = N, U − 1 = T, D − 1 = C, giving BKNTC. Apply the same rule to RAINY: R − 1 = Q, A − 1 = Z (wrapping round the alphabet), I − 1 = H, N − 1 = M, Y − 1 = X, giving QZHMX. The other options go wrong at the fourth or fifth letter (L instead of M, or W or V instead of X).
+
+Q 15 | rea | Analogy & Classification
+In each of the following questions, a specific alphabetical pattern is applied to the first set of letters to form the second. Apply the same logic to find the missing term that relates to the third set in the same way. Choose the correct option from the given alternatives.
+AEFJ : KOPT :: ? : QUVZ
+(1) HKQL
+(2) GLKP
+(3) GKLP
+(4) HLKP
+= 3
+~ In AEFJ : KOPT each letter moves 10 steps forward: A (1) + 10 = K (11), E (5) + 10 = O (15), F (6) + 10 = P (16), J (10) + 10 = T (20). The missing term must give QUVZ after adding 10, so go 10 steps back: Q (17) → G (7), U (21) → K (11), V (22) → L (12), Z (26) → P (16). The answer is GKLP. GLKP has K and L swapped, so it is a trap.
+
+Q 16 | rea | Analogy & Classification
+TEACHER is to CLASSROOM as SURGEON is to:
+(1) PATIENT
+(2) SCALPEL
+(3) OPERATION
+(4) OT (Operation Theatre)
+= 4
+~ The relation is person : place of work. A teacher works in a classroom, and a surgeon works in an operation theatre (OT), so OT completes the analogy. A patient is the person a surgeon treats, a scalpel is the surgeon's tool and an operation is the surgeon's work; none of these is the place where the surgeon works, so they break the relation.
+
+Q 17 | rea | Series
+What is the sum of the first 10 terms of the series?
+1, 3, 5, 7, ...?
+(1) 90
+(2) 100
+(3) 110
+(4) 120
+= 2
+~ The series 1, 3, 5, 7, … is the sequence of odd numbers, an AP with first term 1 and common difference 2. The sum of the first n odd numbers is n², so the sum of the first 10 terms is 10² = 100. Check with the AP formula: S = n/2 × [2a + (n − 1)d] = 10/2 × [2 + 18] = 5 × 20 = 100 (the 10th term is 19).
+
+Q 18 | rea | Series
+What comes next?
+BYD, DWF, FUH, ?
+(1) HSJ
+(2) IQK
+(3) HQJ
+(4) JQL
+= 1
+~ Track each position separately. First letters: B, D, F move two steps forward, so the next is H. Second letters: Y, W, U move two steps backward, so the next is S. Third letters: D, F, H move two steps forward, so the next is J. The next cluster is HSJ. HQJ goes wrong on the second letter (Q instead of S), while IQK and JQL break the pattern in every position.
+
+Q 19 | rea | Analogy & Classification
+Find the odd one out from the given alternatives:
+(1) Troposphere
+(2) Stratosphere
+(3) Hydrosphere
+(4) Mesosphere
+= 3
+~ Troposphere, stratosphere and mesosphere are layers of the Earth's atmosphere (from the ground up: troposphere, stratosphere, mesosphere, thermosphere, exosphere). The hydrosphere is not an atmospheric layer; it is all the water on Earth, including oceans, rivers, lakes, ice and groundwater. So hydrosphere is the odd one out. All four end in "-sphere", so the suffix alone does not decide the answer.
+
+Q 20 | rea | Analogy & Classification
+Find the odd one out from the given alternatives:
+(1) Retina
+(2) Cornea
+(3) Iris
+(4) Femur
+= 4
+~ Retina, cornea and iris are parts of the human eye: the cornea is the transparent front layer, the iris is the coloured part that controls the size of the pupil, and the retina is the light-sensitive layer at the back. The femur is the thigh bone, the longest bone in the human body, and is not part of the eye. So femur is the odd one out.
+
+Q 21 | rea | Coding-Decoding
+In a certain code, NIGHT is written as OHJIS How will LIGHT be written?
+(1) MHJIS
+(2) KJHIS
+(3) LIHIS
+(4) MIHIS
+= 1
+~ Compare NIGHT with OHJIS letter by letter: N + 1 = O, I − 1 = H, G + 3 = J, H + 1 = I, T − 1 = S. Apply the same steps to LIGHT: L + 1 = M, I − 1 = H, G + 3 = J, H + 1 = I, T − 1 = S, giving MHJIS. Quicker: NIGHT and LIGHT share IGHT, so the code must end in HJIS and only the first letter changes (L + 1 = M). KJHIS, LIHIS and MIHIS alter the common part.
+
+Q 22 | rea | Blood Relations & Directions
+Pointing to a woman, John says, “She is the wife of my uncle’s only son.” How is the woman related to John?
+(1) Sister
+(2) Cousin
+(3) Sister-in-law
+(4) Niece
+= 3
+~ John's uncle's only son is John's cousin, and the woman is that cousin's wife. Strictly, English would call her a cousin-in-law, but in Indian usage a cousin's wife is called sister-in-law (bhabhi, the word the Hindi option uses), and it is the only option that fits. "Cousin" describes her husband, not her; sister and niece are blood relations that do not fit a cousin's wife. Hence the woman is John's sister-in-law.
+
+Q 23 | rea | Mathematical Operations
+If × = +, + = −, − = ×; then 4 × 5 + 2 − 3 = ?
+(1) 3
+(2) 7
+(3) 35
+(4) 29
+= 1
+~ Replace the signs as given: × becomes +, + becomes − and − becomes ×. So 4 × 5 + 2 − 3 becomes 4 + 5 − 2 × 3. By BODMAS, multiply first: 2 × 3 = 6, then 4 + 5 − 6 = 3. Option 7 comes from 4 + 5 − 2, which ignores the multiplication by 3; 35 and 29 do not come from the correct substitution.
+
+Q 24 | rea | Miscellaneous Reasoning
+If the sum of 13 and 39 is multiplied by 2, what is the result?
+(1) 100
+(2) 104
+(3) 106
+(4) 110
+= 2
+~ The wording "the sum … is multiplied by 2" means (13 + 39) × 2. First add: 13 + 39 = 52. Then multiply: 52 × 2 = 104. Check with the distributive law: 13 × 2 + 39 × 2 = 26 + 78 = 104, the same result. 100, 106 and 110 are close figures that come from slips in the addition or multiplication.
+
+Q 25 | rea | Series
+The series given below contains a sequence of numbers. Accordingly identify the incorrect combination. 25, 32, 46, 67, 97
+(1) 32
+(2) 46
+(3) 97
+(4) 67
+= 3
+~ Look at the differences: 32 − 25 = 7, 46 − 32 = 14, 67 − 46 = 21, 97 − 67 = 30. The first three are consecutive multiples of 7 (7, 14, 21), so the next difference should be 28 and the last term 67 + 28 = 95. Hence 97 is the incorrect term. 32, 46 and 67 all fit the +7, +14, +21 pattern, so they are correct.
+
+Q 26 | sci | Science & Technology
+What is the contribution of Vikram Sarabhai Space Centre (VSSC) to India’s space program?
+(1) Launch site for ISRO missions
+(2) Designs and builds launch vehicles
+(3) Trains Indian astronauts
+(4) Controls ISRO satellites
+= 2
+~ The Vikram Sarabhai Space Centre at Thiruvananthapuram, Kerala, is ISRO's lead centre for launch vehicle technology. It designs and develops India's rockets, from SLV-3 and ASLV to PSLV, GSLV and LVM3, as well as sounding rockets. It grew out of the Thumba Equatorial Rocket Launching Station (1963) and was named after Vikram Sarabhai after his death in 1971. Launches take place from the Satish Dhawan Space Centre, Sriharikota; astronaut training is the job of the Human Space Flight Centre, and satellite tracking and control that of ISTRAC and the Master Control Facility.
+
+Q 27 | eco | Schemes & Welfare
+The "Atal Innovation Mission (AIM)" is a flagship initiative to promote innovation and entrepreneurship in India. Which of the following is a key component or program under AIM?
+(1) Skill India Centers
+(2) Startup India Seed Fund Scheme
+(3) Atal Tinkering Labs (ATLs)
+(4) Pradhan Mantri Kaushal Vikas Yojana (PMKVY)
+= 3
+~ The Atal Innovation Mission was set up by NITI Aayog in 2016. Its flagship programme is the Atal Tinkering Labs, workspaces in schools where students of classes 6 to 12 build projects with tools such as 3D printers, robotics and electronics kits. AIM also runs Atal Incubation Centres, Atal Community Innovation Centres, the Atal New India Challenge and Mentor India. The Startup India Seed Fund Scheme belongs to DPIIT (Ministry of Commerce and Industry), while Skill India and PMKVY come under the Ministry of Skill Development and Entrepreneurship.
+
+Q 28 | ih | Modern India
+The integration of the princely states into the Indian Union after 1947 involved a complex interplay of political negotiation, popular movements, and, at times, coercion. Which of the following factors most significantly undermined the initial aspirations of some princely rulers to maintain independent or autonomous status?
+(1) The overwhelming military superiority of the newly formed Pakistani state, compelling the rulers to seek protection within India.
+(2) The consistent and unwavering support provided by the British government to the princely states seeking independence.
+(3) The strong undercurrent of popular will within the princely states favoring accession to India, often expressed through organized movements and protests.
+(4) The economic prosperity and stability offered by remaining independent, making integration into the financially strained Indian Union unattractive.
+= 3
+~ When British paramountcy lapsed in 1947, rulers such as those of Travancore, Hyderabad, Bhopal and Jammu and Kashmir hoped to stay independent. But the people of most states wanted to join India, and the States' People's movements and Praja Mandals, linked to the All India States People's Conference (1927), organised agitations, as in Travancore, Junagadh, Hyderabad and the Orissa states. Together with the diplomacy of Sardar Patel and V.P. Menon through the Instrument of Accession, this popular pressure made independence unworkable. Britain did not back independent states, and Pakistan was not militarily dominant.
+
+Q 29 | pol | Judiciary & Constitutional Bodies
+The Bharatiya Nyaya Sanhita (BNS) was introduced as part of:
+(1) The effort to codify personal laws.
+(2) The effort to modernize and decolonize India’s criminal justice system.
+(3) The new taxation policy.
+(4) A trade agreement.
+= 2
+~ The Bharatiya Nyaya Sanhita, 2023 replaced the colonial-era Indian Penal Code, 1860. It was enacted together with the Bharatiya Nagarik Suraksha Sanhita (replacing the CrPC, 1973) and the Bharatiya Sakshya Adhiniyam (replacing the Indian Evidence Act, 1872); all three received assent in December 2023 and came into force on 1 July 2024. The government presented them as decolonising and modernising criminal justice, with a focus on justice rather than punishment, new offences such as organised crime and terrorism, and community service as a punishment.
+
+Q 30 | geo | Indian Geography
+Digboi, Moran, Sivasagar, and Naharkatiya oil fields are located in which of the following regions of India?
+(1) Aravalli and Delhi Ridge
+(2) Deccan Plateau
+(3) North-Eastern India
+(4) Western Coastal Plains
+= 3
+~ All four oil fields are in Upper Assam in North-Eastern India. NCERT notes that Assam is the oldest oil-producing state of India, with Digboi, Naharkatiya and Moran-Hugrijan as its important fields; Sivasagar district has fields such as Rudrasagar and Lakwa. Oil was struck at Digboi in 1889, and the Digboi refinery (1901) is among the oldest working refineries in the world. The western offshore and Gujarat fields, such as Mumbai High and Ankleshwar, form a different group, so Western Coastal Plains is a trap.
+
+Q 31 | cur | Static GK & Culture
+The term 'svaravalis' refers to what in the context of Indian classical music?
+(1) A specific type of raga
+(2) A melody composed using the seven notes of the scale
+(3) Ornamentation and embellishment of a raga
+(4) A rhythmic cycle used in carnatic music
+= 2
+~ Svaravali (svara + avali, 'a row of notes'), also called sarali varisai, is the first set of exercises taught in Carnatic music. Organised by Purandara Dasa and sung in raga Mayamalavagowla, these exercises are melodic patterns of the seven svaras of the scale (sa ri ga ma pa dha ni), sung up and down in three speeds to train the voice and pitch. They are not a separate raga; ornamentation of a raga is called gamaka, and a rhythmic cycle is a tala.
+
+Q 32 | geo | Indian Geography
+Consider the following physiographic features.
+1. Tors
+2. Spurs
+3. Block Mountains
+Which of the feature/features given above is/are found in the peninsular plateau of India?
+(1) 1 and 3 only
+(2) 3 only
+(3) 2 and 3 only
+(4) 1, 2, and 3
+= 4
+~ The Peninsular plateau is an old, stable tableland of crystalline, igneous and metamorphic rocks that has gone through repeated phases of uplift and submergence with crustal faulting and fracturing. NCERT (India: Physical Environment) lists its typical relief features as tors, block mountains, rift valleys, spurs, bare rocky structures, series of hummocky hills and wall-like quartzite dykes that offer natural sites for water storage. So all three features are found there; the Satpura range, flanked by the Narmada and Tapi rift valleys, is an example of a block mountain.
+
+Q 33 | ih | Art & Culture
+Which of the following building materials were primarily used in constructing Purana Qila?
+(1) Granite and lime plaster
+(2) Concrete and red bricks
+(3) Sandstone and marble
+(4) Wood and terracotta
+= 3
+~ Purana Qila in Delhi stands on the site of Humayun's city Dinpanah (begun 1533) and was largely completed by Sher Shah Suri in the 1540s. Its double-storeyed gateways, the Bara Darwaza, Humayun Darwaza and Talaqi Darwaza, are of red sandstone decorated with white and coloured marble inlay and blue tiles. The Qila-i-Kuhna Mosque (1541), built by Sher Shah, is of red sandstone with marble decoration, and the octagonal Sher Mandal is also of red sandstone. So sandstone and marble are its characteristic materials; granite, concrete and terracotta do not fit.
+
+Q 34 | cur | Static GK & Culture
+During the Solung festival celebrated by the Adi tribe of Arunachal Pradesh, which traditional drink is shared to promote social bonding?
+(1) Soma
+(2) Apong
+(3) Thukpa
+(4) Chhang
+= 2
+~ Solung is the main festival of the Adi people of Arunachal Pradesh, celebrated around 1 September, mainly as an agricultural festival. According to the Government of India's festival portal, people give meat and apong (rice beer) to neighbours and relatives, which strengthens family and social ties; prayers and animal sacrifices are offered to the deities, followed by folk dances, archery and tug-of-war. Thukpa is a noodle soup, chhang is a barley or millet beer of Ladakh, Sikkim and the Himalaya, and soma is the Vedic ritual drink.
+
+Q 35 | ih | Ancient India
+The drainage system at Mohenjodaro was notable because each house was connected to:
+(1) An underground water tank
+(2) A central pillar for support
+(3) A covered street drain
+(4) A rooftop reservoir
+= 3
+~ Harappan cities had carefully planned drainage. As NCERT explains, streets were laid out on a grid with their drains planned first, and every house had one wall along a street so that domestic waste water could flow out into the street drains. Bathrooms paved with bricks sloped towards these drains. The street drains were built of brick and covered with bricks or stone slabs, with sumps and removable covers at intervals for cleaning. Ernest Mackay called it the most complete ancient drainage system yet discovered.
+
+Q 36 | cur | Sports
+Which of the following statements is correct regarding the Golden Raid and card system in Kabaddi?
+(1) A team is allowed two Golden Raids before the result is decided.
+(2) A Green Card leads to a 2-minute suspension from the game.
+(3) A fresh toss is taken if the match is tied even after 5–5 raids.
+(4) A Red Card results in a warning with no match suspension.
+= 3
+~ A knockout kabaddi match that ends level is decided first by five raids for each team, made by five different raiders. If the score is still tied after these 5–5 raids, a fresh toss is taken; the toss winner gets the Golden Raid, and only if it fails to score does the other team get one, so no team gets two. Under the card system, a green card is a warning, a yellow card means a 2-minute suspension, and a red card means suspension for the rest of the match. So only statement 3 is correct.
+
+Q 37 | ih | Medieval India
+What was a major challenge for agriculture in the Chola kingdom apart from rocky land?
+(1) Lack of seeds
+(2) Lack of labour
+(3) Irrigation water
+(4) Pest infestation
+= 3
+~ The Chola heartland was the Kaveri delta, but much of the surrounding region was dry and rocky, so farming depended on artificial watering. NCERT (Our Pasts II) explains that forests had to be cleared and land levelled, embankments built in the delta to prevent floods and canals dug to carry water to the fields. As crops often had to be watered artificially, wells were dug and huge tanks were built to collect rainwater, and village assemblies (sabhas) had committees to look after irrigation works. So the supply of irrigation water was the main challenge.
+
+Q 38 | cur | Sports
+Consider the following statements about recent National Basketball Championships:
+1) Tamil Nadu won the 74th Senior Men’s title; Punjab and Indian Railways were runner-up and second runner-up.
+2) Rajasthan won the 39th Youth Boys, and Karnataka won the Youth Girls tournament.
+Which of the statements is/are correct?
+(1) Only 1 is Correct
+(2) Only 2 is Correct
+(3) 1 and 2 are Correct
+(4) Neither 1 nor 2 is Correct
+= 3
+~ Both statements are correct. At the 74th Senior National Basketball Championship in Bhavnagar, Gujarat (January 2025), Tamil Nadu beat Punjab 80–56 in the men's final, and Indian Railways finished third; the Railways women won their title by beating Kerala. At the 39th Youth National Basketball Championship in Kolkata (December 2024), Rajasthan won the boys' title by beating Karnataka 85–67, and the Karnataka girls beat Tamil Nadu 61–54 in their final.
+
+Q 39 | cur | International
+The “Kaladan Multimodal Transit Transport Project” links India with which country?
+(1) China
+(2) Myanmar
+(3) Bangladesh
+(4) Nepal
+= 2
+~ The Kaladan Multi-Modal Transit Transport Project, based on a 2008 India–Myanmar framework agreement, gives Mizoram and the North-East a route to the sea that avoids the narrow Siliguri corridor. Cargo goes by sea from Kolkata to Sittwe port in Myanmar's Rakhine State, by inland waterway up the Kaladan river to Paletwa, and then by road to Zorinpui on the Mizoram border. Sittwe port, built with Indian funding, was operationalised in May 2023. The project is a key part of India's Act East Policy.
+
+Q 40 | cur | Awards, Books & Persons
+'The Namesake' is a famous novel by which Indian-American author?
+(1) Jhumpa Lahiri
+(2) Arundhati Roy
+(3) Chitra Banerjee
+(4) Kiran Desai
+= 1
+~ The Namesake (2003) is the first novel of Jhumpa Lahiri, an American writer of Bengali origin. It follows Gogol Ganguli, son of Bengali immigrants in the United States, and his struggle with his unusual name and identity; Mira Nair made it into a film in 2006. Lahiri had earlier won the Pulitzer Prize for Fiction (2000) for her story collection Interpreter of Maladies. Kiran Desai wrote The Inheritance of Loss (Booker 2006), Arundhati Roy The God of Small Things, and Chitra Banerjee Divakaruni The Mistress of Spices.
+
+Q 41 | geo | Indian Geography
+Which of the following statements is correct regarding population stabilization?
+(1) Stabilization occurs when birth rate exceeds death rate
+(2) Stabilization is reached when fertility rate drops to zero
+(3) Stabilization occurs when birth and death rates are nearly equal
+(4) Stabilization refers to doubling of population every decade
+= 3
+~ A population is stable when it stops growing, that is, when the birth rate and death rate are nearly equal so that natural increase is close to zero. This is the last stage of the demographic transition. In the long run it needs fertility at replacement level, a total fertility rate of about 2.1 children per woman, not zero fertility. India's National Population Policy, 2000 set the long-term goal of a stable population by 2045. A birth rate higher than the death rate means growth, not stability.
+
+Q 42 | cur | National
+Ajit Doval is known as a key figure in India’s strategic affairs, remains the National Security Advisor (NSA). In light of his ongoing tenure and recent developments, which of the following statements best reflects his current status as of July 2025?
+(1) Ajit Doval's current tenure as NSA, which began in June 2025, is his first independent term after serving as Principal Advisor on National Security for a decade.
+(2) He holds the ex-officio rank equivalent to a Cabinet Secretary, with his appointment typically for a fixed five-year term irrespective of the government's tenure.
+(3) Having been reappointed for a fresh term in June 2024, his current position is co-terminus with the Prime Minister's term and he holds the rank of a Cabinet Minister.
+(4) As NSA, his primary role is to chair the National Security Council (NSC), where he holds voting power on all key security policy decisions, including those related to defence procurement.
+= 3
+~ Ajit Doval, a former Director of the Intelligence Bureau, has been NSA since May 2014. After the 2024 general election, the Appointments Committee of the Cabinet reappointed him for a third term with effect from 10 June 2024, co-terminus with the Prime Minister's term or until further orders, with the rank of a Cabinet Minister (given to him since 2019). So option 3 fits. His tenure began in 2014, not 2025; his rank is not that of Cabinet Secretary and there is no fixed five-year term; and the National Security Council is chaired by the Prime Minister.
+
+Q 43 | cur | Sports
+Which of the following combinations of athletics winners at the 2025 National Games is entirely correct?
+(1) Parul Chaudhary – 3000m steeplechase; Jyothi Yarraji – 100m hurdles
+(2) Lovlina – 100m hurdles; Amoj Jacob – Shot Put
+(3) Swapnil Kusale – Boxing; Sarabjot – Sprint
+(4) Amoj Jacob – Wrestling; Jyothi – Relay
+= 1
+~ Only option 1 pairs the athletes with their own events. Jyothi Yarraji (Andhra Pradesh) won the women's 100 m hurdles at the 38th National Games in Uttarakhand (February 2025) in a Games-record 13.10 s, and Parul Chaudhary is India's leading 3000 m steeplechaser and national record holder. In the other options, Lovlina Borgohain is a boxer, Amoj Jacob a 400 m runner, and Swapnil Kusale and Sarabjot Singh are shooters. However, results show the 2025 Games steeplechase gold went to Ankita Dhyani of Uttarakhand, Parul not starting. (SSC key; some sources differ.)
+
+Q 44 | pol | Constitution & Rights
+Under Article 258A, what power is granted to States?
+(1) States need Presidential assent to assign functions to Union
+(2) Governor can entrust Union tasks to State Legislature with President’s consent
+(3) State Legislature can entrust Union work to State officers with Centre’s approval
+(4) State Government can, with Union’s consent, assign Union functions to its officers
+= 4
+~ Article 258A, added by the Seventh Amendment (1956), lets the Governor of a State, with the consent of the Government of India, entrust to that Government or its officers functions on any matter to which the executive power of the State extends. It is the reverse of Article 258(1), under which the President, with a State's consent, entrusts Union functions to the State. Option 4 is the only one built on the State acting with the Union's consent, but its wording is loose: the functions entrusted are the State's, given to Union officers. (SSC key; some sources differ.)
+
+Q 45 | sci | Physics
+Read the following statements about the photoelectric effect:
+1. The kinetic energy of emitted photoelectrons increases with increasing intensity of incident light.
+2. The photoelectric effect demonstrates the particle nature of light.
+3. There is a threshold frequency below which no photoemission occurs, regardless of light intensity.
+Which of the above statements are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ By Einstein's equation, the maximum kinetic energy of photoelectrons is K = hν − φ, where φ is the work function of the metal. It depends on the frequency of light, not its intensity; higher intensity only means more photons and so more photoelectrons (a larger photocurrent). So statement 1 is wrong. Einstein explained the effect (1905) by treating light as particles (photons), so statement 2 is correct. Emission needs hν ≥ φ, so below the threshold frequency ν₀ = φ/h no electrons are emitted at any intensity; statement 3 is correct.
+
+Q 46 | cur | Static GK & Culture
+Fill in the Blank:
+Ghoomar was originally performed to worship ______.
+(1) Shiva
+(2) Saraswati
+(3) Krishna
+(4) Ganesha
+= 2
+~ Ghoomar is a traditional folk dance of Rajasthan. It is said to have been developed by the Bhil tribe to worship the goddess Saraswati and was later adopted by the Rajputs and other Rajasthani communities. Women in flowing ghaghras and veils dance in circles, and the name comes from ghoomna, the twirling movement. It is performed at festivals such as Teej, Gangaur and Holi and at weddings and other auspicious occasions.
+
+Q 47 | eco | Agriculture, Industry & Trade
+Which new element was incorporated in the 2023 edition of the Logistics Performance Index (LPI)?
+(1) It evaluates only land-based transport systems
+(2) It ranks countries based on tourism potential
+(3) It includes indicators measuring trade speed using big data
+(4) It excludes lower-income economies from the analysis
+= 3
+~ The Logistics Performance Index is the World Bank's benchmarking tool for trade logistics, published every two years from 2010 to 2018. The 2023 edition, the seventh, covering 139 countries, for the first time measured the speed of trade with new indicators drawn from big datasets that track shipments, alongside the usual survey of logistics professionals. India ranked 38th, up six places from 44th in 2018. The LPI covers all transport modes and all income groups and has nothing to do with tourism.
+
+Q 48 | geo | Environment & Ecology
+Which institute has been studying the Pensilungpa Glacier in Zanskar, Ladakh, to monitor its retreat and mass balance?
+(1) Indian National Centre for Ocean Information Services (INCOIS)
+(2) Wadia Institute of Himalayan Geology (WIHG)
+(3) Central Marine Fisheries Research Institute (CMFRI)
+(4) Zoological Survey of India (ZSI)
+= 2
+~ Scientists of the Wadia Institute of Himalayan Geology, Dehradun, an autonomous institute under the Department of Science and Technology, have studied the Pensilungpa Glacier in the Zanskar valley of Ladakh. Their study, reported by DST in 2021, found that the glacier is retreating at about 6.7 ± 3 m a year and that its mass balance for 2016–2019 was negative, mainly because of rising temperature and falling winter precipitation, with debris cover affecting summer melt. INCOIS (Hyderabad) and CMFRI (Kochi) deal with the oceans, and ZSI surveys animal life.
+
+Q 49 | geo | World & Physical Geography
+Earth's atmosphere reaches what height approximately(Kármán line )?
+(1) 100 km
+(2) 1000 km
+(3) 10,000 km
+(4) 100,000 km
+= 1
+~ The Kármán line, about 100 km above mean sea level, is the conventional boundary between Earth's atmosphere and outer space, used by the Fédération Aéronautique Internationale (FAI). It is named after Theodore von Kármán, who showed that above roughly this height an aircraft would have to fly at orbital speed to get enough aerodynamic lift. The atmosphere has no sharp top: it thins out gradually, and the very thin exosphere extends to several thousand kilometres, so the other options do not match the Kármán line.
+
+Q 50 | pol | Constitution & Rights
+Consider the following statements:
+1. Article 300 allows legal suits against State Governments.
+2. The term 'Government of India' is a legal entity under Article 300.
+Which of the above is/are correct?
+(1) Only 1
+(2) Only 2
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Article 300 provides that the Government of India may sue or be sued by the name of the Union of India, and the Government of a State by the name of the State, in the same cases as the Dominion of India and the provinces could before the Constitution, subject to laws made by Parliament or the State Legislature. So suits can be filed against State Governments (statement 1), and the Government of India is treated as a juristic entity that can sue and be sued (statement 2), the party being named 'Union of India'.
+
+Q 51 | qa | Number System & Simplification
+Solve: (√6400 − √2401) × (1/4)
+(1) 7.75
+(2) 8.75
+(3) 9.75
+(4) 10.75
+= 1
+~ Take the square roots first: √6400 = 80 (since 80² = 6400) and √2401 = 49 (since 49² = 2401). The bracket is 80 − 49 = 31, and 31 × (1/4) = 31/4 = 7.75. Each distractor needs a different bracket (8.75 needs 35, 9.75 needs 39), so a slip in a root shows up at once; confirm each root by squaring.
+
+Q 52 | qa | Number System & Simplification
+Solve: (√5776 − √4761) × (1/2)
+(1) 3.5
+(2) 4.5
+(3) 6.5
+(4) 7.5
+= 1
+~ Find each square root: 76² = 5776, so √5776 = 76; 69² = 4761, so √4761 = 69. The bracket is 76 − 69 = 7, and 7 × (1/2) = 3.5. Quick check: a square ending in 6 has a root ending in 4 or 6, and one ending in 1 has a root ending in 1 or 9; since 75² = 5625 < 5776 and 4761 < 70² = 4900, the roots are 76 and 69.
+
+Q 53 | qa | Ratio, Average & Mixtures
+If 40% of A = 0.5 of B = 1/4 of C, then what is A: B: C?
+(1) 5 : 4 : 2
+(2) 10 : 8 : 5
+(3) 5 : 4 : 8
+(4) 5 : 10 : 20
+= 3
+~ Let each equal quantity be k. Then 0.4A = k gives A = 2.5k; 0.5B = k gives B = 2k; and C/4 = k gives C = 4k. So A : B : C = 2.5 : 2 : 4 = 5 : 4 : 8 (multiplying by 2). Check with k = 2: A = 5, B = 4, C = 8, and 40% of 5 = 0.5 of 4 = 1/4 of 8 = 2. Option 5 : 4 : 2 fails this check, since 1/4 of 2 is 0.5, not 2.
+
+Q 54 | qa | Ratio, Average & Mixtures
+Two containers of equal capacity filled with milk and water. The first contains milk and water in the ratio 2 : 3, and the second in the ratio 3 : 2. The mixtures are then combined. What is the ratio of milk to water in the resulting mixture?
+(1) 1:1
+(2) 2:3
+(3) 3:2
+(4) 5:5
+= 1
+~ Take each container as 5 litres (the ratio parts add to 5 in both). The first has 2 L milk and 3 L water; the second has 3 L milk and 2 L water. Combined: milk = 2 + 3 = 5 L and water = 3 + 2 = 5 L, so milk : water = 5 : 5 = 1 : 1. The option 5:5 is the same ratio left unsimplified; a ratio is normally given in its lowest terms, 1:1, which is the keyed option.
+
+Q 55 | qa | Percentage, Profit & Interest
+A pair of shoes is listed at ₹ 800. After two successive discounts, it is sold for ₹ 612. If the first discount offered was 10%, what was the second discount percentage?
+(1) 12%
+(2) 14%
+(3) 15%
+(4) 18%
+= 3
+~ After the first discount of 10%, the price is 800 × 0.90 = ₹720. The second discount brings it from ₹720 to ₹612, a reduction of ₹108. Second discount = 108/720 × 100 = 15%. Check: 800 × 0.90 × 0.85 = ₹612. The second discount is worked on the already reduced price (₹720), not on the list price; 188/800 would give the total discount of 23.5%.
+
+Q 56 | qa | Percentage, Profit & Interest
+A retailer marked a product 60% above its cost price. He provided two successive discounts of 25% and 10%. If he earned a profit of ₹160, what was the cost price of the product?
+(1) ₹2000
+(2) ₹2500
+(3) ₹1080
+(4) ₹1000
+= 1
+~ Let CP = ₹x. Marked price = 1.6x. After successive discounts of 25% and 10%, SP = 1.6x × 0.75 × 0.90 = 1.08x. So the profit is 8% of CP: 0.08x = 160, giving x = ₹2000. Check: MP = 3200, after 25% off = 2400, after 10% off = 2160, and 2160 − 2000 = ₹160. The distractor ₹1080 confuses the multiplier 1.08 with the answer.
+
+Q 57 | qa | Algebra
+If (x + 2/x = 7), find the value of x³ + 8/x³.
+(1) 256
+(2) 301
+(3) 352
+(4) 298
+= 2
+~ Use (a + b)³ = a³ + b³ + 3ab(a + b) with a = x and b = 2/x, so ab = 2. Then x³ + 8/x³ = (x + 2/x)³ − 3 × 2 × (x + 2/x) = 7³ − 6 × 7 = 343 − 42 = 301. Using 3 instead of 3ab = 6 (as for x + 1/x) gives 343 − 21 = 322, and forgetting the product term entirely gives 343; neither is the right value.
+
+Q 58 | qa | Percentage, Profit & Interest
+An educational fund of ₹6,00,000 earns simple interest at 9% per annum. This annual interest is used to grant three scholarships. If the first and third scholarships are ₹18,000 and ₹22,000 respectively, what is the value of the second scholarship?
+(1) ₹14,000
+(2) ₹16,000
+(3) ₹18,000
+(4) ₹20,000
+= 1
+~ Annual simple interest = P × R × T/100 = 6,00,000 × 9 × 1/100 = ₹54,000. This whole amount is shared by the three scholarships, so the second one = 54,000 − (18,000 + 22,000) = 54,000 − 40,000 = ₹14,000. Only one year's interest is used, because the scholarships are paid from the annual interest.
+
+Q 59 | qa | Percentage, Profit & Interest
+Suppose ₹X is invested, and after 2 years at 5% simple interest, it yields ₹Y interest. If ₹Y is then invested for 2 years at 5% simple interest, it yields ₹Z interest. Which of the following is true?
+(1) Y = X + Z
+(2) Y² = XZ
+(3) X = Y + Z
+(4) X² = Y + Z
+= 2
+~ Simple interest for 2 years at 5% is 10% of the principal. So Y = X × 5 × 2/100 = X/10, and Z = Y × 5 × 2/100 = Y/10. Hence Y/X = Z/Y = 1/10, i.e. X, Y, Z are in geometric progression, so Y² = XZ. Check with X = 1000: Y = 100, Z = 10, and 100² = 10,000 = 1000 × 10, while X + Z = 1010 ≠ Y.
+
+Q 60 | qa | Trigonometry & Heights
+An airplane flying at a height of 300 m notices the angles of depression to two boats located on opposite sides as 45° and 30°. Find the distance between the two boats.
+(1) 300(√3 − 1) m
+(2) 300√3 m
+(3) 300 (1 + 1/√3) m
+(4) 300(√3 + 1) m
+= 4
+~ The angle of depression from the plane equals the angle of elevation from each boat. Horizontal distance of a boat = height/tan(angle). For 45°: 300/1 = 300 m; for 30°: 300/(1/√3) = 300√3 m. The boats are on opposite sides of the point below the plane, so the distances add: 300 + 300√3 = 300(√3 + 1) m ≈ 819.6 m. If they were on the same side, the answer would be the difference, 300(√3 − 1) m.
+
+Q 61 | qa | Trigonometry & Heights
+A statue that is 1.6 meters in height is positioned on top of a pedestal. From a location on the ground, the angle of elevation to the top of the statue measures 60 degrees, while the angle of elevation to the top of the pedestal from the same point is 45 degrees. Determine the height of the pedestal.
+(1) 0.8(√3 − 1) m
+(2) 1.6(√3 − 1) m
+(3) 0.8(√3 + 1) m
+(4) 1.6(√3 + 1) m
+= 3
+~ Let the pedestal be h m and the point be d m from its foot. tan 45° = h/d gives d = h. tan 60° = (h + 1.6)/d gives √3h = h + 1.6, so h(√3 − 1) = 1.6 and h = 1.6/(√3 − 1). Rationalise: 1.6(√3 + 1)/(3 − 1) = 0.8(√3 + 1) m ≈ 2.19 m. Forgetting to divide by 2 while rationalising gives the distractor 1.6(√3 + 1) m.
+
+Q 62 | qa | Mensuration
+The inner and outer radius of a hollow hemispherical shell are 7 cm and 14 cm respectively. Find the approximate volume of the metal used.
+(1) 5987.25 cm³
+(2) 5026.33 cm³
+(3) 4500.8 cm³
+(4) 5500 cm³
+= 2
+~ Volume of metal = volume of outer hemisphere − volume of inner hemisphere = (2/3)π(R³ − r³) = (2/3)π(14³ − 7³) = (2/3)π(2744 − 343) = (2/3)π × 2401. With π = 3.14 this is about 5026.1 cm³ (about 5028.6 cm³ with exact π). SSC's 5026.33 cm³ is a slightly rounded figure for this value and the only option near it; every other option is at least 470 cm³ away.
+
+Q 63 | qa | Mensuration
+A right circular cone is divided into two sections by a plane that is parallel to the base, with the volumes of the frustum and the smaller cone having a ratio of 7:1. Determine the ratio of their heights.
+(1) 1:1
+(2) 1:7
+(3) 5:1
+(4) 6:1
+= 1
+~ Frustum : small cone = 7 : 1 in volume, so the small cone is 1/8 of the whole cone. The small cone is similar to the whole, so (h/H)³ = 1/8 and h = H/2. The frustum's height is then H − H/2 = H/2, the same as the small cone's height, so the ratio of their heights is 1 : 1. Taking the volume ratio 7 : 1 (or 1 : 7) directly as the height ratio is the usual mistake.
+
+Q 64 | qa | Mensuration
+If the side of a regular hexagon is doubled, what happens to its area?
+(1) Doubled
+(2) Tripled
+(3) Quadrupled
+(4) Increases 6 times
+= 3
+~ Area of a regular hexagon of side a = (3√3/2)a². Area varies as the square of the side, so with side 2a the area is (3√3/2)(2a)² = 4 × (3√3/2)a², i.e. four times the original: quadrupled. This holds for any plane figure scaled up: doubling every length multiplies the area by 2² = 4 (and a volume by 2³ = 8). "Increases 6 times" wrongly links the 6 sides to the factor.
+
+Q 65 | qa | Mensuration
+A cylindrical storage container has a base radius of 3 cm. It is designed with sections whose heights form an arithmetic progression, starting from 2 cm for the bottom section and reaching 10 cm for the topmost section, covering a total of 5 sections. What is the total volume of the container? (Use π≈3.14)
+(1) 753.6 cm³
+(2) 847.8 cm³
+(3) 942.0 cm³
+(4) 1130.4 cm³
+= 2
+~ Five terms from 2 to 10 in an AP have common difference (10 − 2)/4 = 2, so the heights are 2, 4, 6, 8, 10 cm. Total height = n(a + l)/2 = 5 × (2 + 10)/2 = 30 cm. All sections share the radius 3 cm, so volume = πr²h = 3.14 × 9 × 30 = 847.8 cm³. The other options correspond to heights of 26.67, 33.33 and 40 cm.
+
+Q 66 | qa | Algebra
+Find slope of line 7x + 4y = 8.
+(1) −7/4
+(2) 7/4
+(3) −4/7
+(4) 4/7
+= 1
+~ Write the line in slope-intercept form y = mx + c: 4y = −7x + 8, so y = (−7/4)x + 2. Hence the slope m = −7/4. In general, the slope of ax + by + c = 0 is −a/b = −(coefficient of x)/(coefficient of y). The slope is negative here because both coefficients are positive. The option −4/7 inverts the ratio (b/a), and 4/7 is the slope of a line perpendicular to this one.
+
+Q 67 | qa | Geometry
+What is the total sum of the exterior angles of any polygon, one at each vertex?
+(1) 180°
+(2) 360°
+(3) Depends on the number of sides
+(4) 540°
+= 2
+~ At each vertex, interior angle + exterior angle = 180°. For an n-sided polygon the exterior angles add up to n × 180° − (n − 2) × 180° = 360°, whatever n is. Hence the sum is always 360°, which is why each exterior angle of a regular n-gon is 360°/n. It is the interior-angle sum, (n − 2) × 180°, that depends on the number of sides.
+
+Q 68 | qa | Geometry
+In triangle ABC, medians AD, BE, and CF intersect at the Centroid G. If the area of triangle ABC is 60 cm², what is the area of triangle GBC?
+(1) 10 cm²
+(2) 15 cm²
+(3) 20 cm²
+(4) 30 cm²
+= 3
+~ The centroid divides each median in the ratio 2 : 1, so GD = AD/3 and the height of △GBC from G to BC is one-third of the height of △ABC from A. With the same base BC, area of △GBC = (1/3) × 60 = 20 cm². In fact the three triangles GBC, GCA and GAB are equal, each one-third of △ABC. 10 cm² is the area of each of the six small triangles formed by the three medians.
+
+Q 69 | qa | Algebra
+Given, (√(5+x) + √(5−x))/(√(5+x) − √(5−x)) = 3, then what is the value of x?
+(1) 3
+(2) 4
+(3) 5
+(4) 2
+= 1
+~ Apply componendo and dividendo: if (a + b)/(a − b) = 3/1, then a/b = (3 + 1)/(3 − 1) = 2. So √(5 + x) = 2√(5 − x); squaring, 5 + x = 4(5 − x) = 20 − 4x, so 5x = 15 and x = 3. Check: √8 = 2√2 and √2, giving (3√2)/(√2) = 3. With x = 4 the ratio is 2, not 3.
+
+Q 70 | qa | Geometry
+Two circles have radii in the ratio 2 : 1. The length of a direct common tangent is 8 cm, and the distance between their centers is 10 cm. What is the radius of the smaller circle?
+(1) 3 cm
+(2) 4 cm
+(3) 5 cm
+(4) 6 cm
+= 4
+~ Length of a direct common tangent = √(d² − (R − r)²). With radii 2r and r, R − r = r, so 8 = √(10² − r²), giving r² = 100 − 64 = 36 and r = 6 cm (the larger radius is 12 cm). Check: √(100 − 6²) = √64 = 8. Here R + r = 18 cm is more than d = 10 cm, so the circles overlap and have no transverse common tangent; a direct common tangent still exists because d is more than R − r = 6 cm.
+
+Q 71 | qa | Geometry
+In a circle having a radius 10 cm, a chord is 6 cm away from the center. Find the length of the chord.
+(1) 16 cm
+(2) 12 cm
+(3) 14 cm
+(4) 18 cm
+= 1
+~ The perpendicular from the centre to a chord bisects it. In the right triangle formed by the radius (10 cm), the distance to the chord (6 cm) and half the chord, half chord = √(10² − 6²) = √(100 − 36) = √64 = 8 cm. So the chord is 2 × 8 = 16 cm. Forgetting to double the half-chord gives 8 cm, and 12 cm is just twice the distance.
+
+Q 72 | qa | Trigonometry & Heights
+If tan A + cot A = 4 and tan A · cot A = 1, find tan²A + sec²A.
+(1) 14 + 8√3
+(2) 15 + 8√3
+(3) 16 + 6√2
+(4) 13 + 4√3
+= 2
+~ Let t = tan A, so t + 1/t = 4, i.e. t² − 4t + 1 = 0 and t = 2 ± √3. Taking t = 2 + √3 (A = 75°), t² = 7 + 4√3. Since sec²A = 1 + tan²A, the expression is 2t² + 1 = 2(7 + 4√3) + 1 = 15 + 8√3. The other root, t = 2 − √3 (A = 15°), gives 15 − 8√3, which is not an option. The condition tan A · cot A = 1 is always true and adds nothing.
+
+Q 73 | qa | Trigonometry & Heights
+If sin A = 2x/(1+x²), what is cos A?
+(1) (1+x²)/(1−x²)
+(2) (1−x²)/(1+x²)
+(3) 2x/(1−x²)
+(4) (1−x²)/2x
+= 2
+~ Take sin A = opposite/hypotenuse = 2x/(1 + x²). Then adjacent² = (1 + x²)² − (2x)² = 1 + 2x² + x⁴ − 4x² = (1 − x²)², so adjacent = 1 − x² and cos A = (1 − x²)/(1 + x²) (taking A acute and 0 < x < 1, as intended). This is the standard identity with x = tan(A/2). Option (1 + x²)/(1 − x²) is sec A, and 2x/(1 − x²) is tan A.
+
+Q 74 | qa | Number System & Simplification
+Simplify: (0.25³ + 0.05³) ÷ (0.5³ + 0.1³)
+(1) 0.25
+(2) 0.125
+(3) 0.5
+(4) 0.75
+= 2
+~ Note that 0.25 = 0.5 × 0.5 and 0.05 = 0.1 × 0.5, so the numerator is 0.5³ × (0.5³ + 0.1³). Dividing by (0.5³ + 0.1³) leaves 0.5³ = 0.125. Directly: numerator = 0.015625 + 0.000125 = 0.01575 and denominator = 0.125 + 0.001 = 0.126, and 0.01575/0.126 = 0.125. Option 0.5 is the common factor 0.5 not cubed, and 0.25 only squares it.
+
+Q 75 | qa | Number System & Simplification
+Find the value of (0.05³ + 0.005³) ÷ (0.25³ + 0.025³)
+(1) 1/5
+(2) 1/25
+(3) 1/125
+(4) 1/625
+= 3
+~ Each term in the numerator is 1/5 of the matching term in the denominator: 0.05 = 0.25 × 1/5 and 0.005 = 0.025 × 1/5. So the numerator = (1/5)³ × (0.25³ + 0.025³), and the quotient is (1/5)³ = 1/125. Directly: 0.000125125 ÷ 0.015640625 = 0.008 = 1/125. Choosing 1/5 forgets to cube the common factor.
+
+Q 76 | eng | Vocabulary
+Select the most appropriate synonym of the given word: COMPLAISANT
+(1) Insecure
+(2) Anxious
+(3) Alert
+(4) Submissive
+= 4
+~ 'Complaisant' means willing to please others or to accept what they say or do without protest; obliging and compliant. Of the options, 'submissive' (ready to yield to the will of others) is the closest in meaning. Do not confuse it with 'complacent' (smugly self-satisfied). 'Insecure', 'anxious' and 'alert' describe uncertainty, worry or watchfulness, none of which conveys the readiness to oblige that complaisant expresses.
+
+Q 77 | eng | Vocabulary
+Select the most appropriate antonym of the given word. Opprobrium
+(1) Disgrace
+(2) Contempt
+(3) Honor
+(4) Censure
+= 3
+~ 'Opprobrium' means harsh public criticism, or the disgrace and shame that come from bad conduct, as in 'The decision drew international opprobrium.' Its antonym is 'honor' (high respect, esteem and good reputation). 'Disgrace' and 'contempt' are near-synonyms of opprobrium, and 'censure' (strong formal disapproval) is also similar in meaning, so none of them can be its opposite.
+
+Q 78 | eng | Idioms & One-word Substitution
+Choose the correct meaning of idiom:
+The sword of Damocles
+(1) A pleasant illusion
+(2) A constant threat hanging over someone
+(3) A royal invitation
+(4) A wise judgment
+= 2
+~ 'The sword of Damocles' means a constant threat or imminent danger hanging over someone, especially one that comes with power or good fortune. In the Greek story told by Cicero, the courtier Damocles envied the tyrant Dionysius of Syracuse, who seated him at a banquet beneath a sword hung by a single horsehair to show how precarious a ruler's happiness is. Example: Debt hung over the firm like the sword of Damocles.
+
+Q 79 | eng | Idioms & One-word Substitution
+Choose the correct meaning of idiom:
+Keeps a good table
+(1) Serves generous and high-quality meals
+(2) Maintains a disciplined home
+(3) Follows religious rules strictly
+(4) Provides food to the poor regularly
+= 1
+~ To 'keep a good table' means to regularly serve generous, good-quality food to one's family and guests; here 'table' stands for the meals served at it. Example: Their grandmother always kept a good table, so relatives loved visiting her. The idiom says nothing about running a disciplined household, following religious rules or feeding the poor; it praises the quality and abundance of the food a host provides.
+
+Q 80 | eng | Spelling
+Which is the correct spelling of a word meaning 'clever or skillful'?
+(1) Adept
+(2) Adapt
+(3) Addept
+(4) Adeptt
+= 1
+~ 'Adept' (a-d-e-p-t) is the correct spelling of the adjective meaning clever or skilful at something, as in 'She is adept at negotiation'; as a noun, an adept is an expert. 'Adapt' is a correctly spelt but different word meaning to adjust to new conditions, so it does not fit the meaning given. 'Addept' (double d) and 'Adeptt' (double t) are misspellings.
+
+Q 81 | eng | Idioms & One-word Substitution
+Choose the correct one-word substitution for: ‘One who lives entirely for pleasure’.
+(1) Hermit
+(2) Reveler
+(3) Glutton
+(4) Epicure
+= 4
+~ 'Epicure' comes from the Greek philosopher Epicurus, who taught that pleasure is the chief good of life. Merriam-Webster records its older sense, one devoted to sensual pleasure (a sybarite); today it usually means a person of refined taste in fine food and drink. 'Hedonist' and 'sybarite' are close synonyms. A 'hermit' lives alone in seclusion, a 'reveler' joins in a noisy celebration, and a 'glutton' simply eats and drinks too much, so none of them means one who lives for pleasure.
+
+Q 82 | eng | Idioms & One-word Substitution
+Choose the correct one-word substitution for: ‘A person who believes in fate or destiny’.
+(1) Dreamer
+(2) Realist
+(3) Idealist
+(4) Fatalist
+= 4
+~ A 'fatalist' is a person who believes that all events are decided in advance by fate or destiny and cannot be changed by human effort; the belief is called fatalism. A 'dreamer' lives in imagination or pursues unrealistic plans, a 'realist' accepts situations as they are and deals with them practically, and an 'idealist' is guided by high ideals. Only 'fatalist' refers to belief in fate.
+
+Q 83 | eng | Fill in the Blanks & Cloze Test
+Select the appropriate word form:
+The policy's lack of clarity led to widespread ______.
+(1) confuse
+(2) confusing
+(3) confusion
+(4) confused
+= 3
+~ The blank follows the adjective 'widespread' and is the object of 'led to', so it needs a noun. The noun 'confusion' gives 'The policy's lack of clarity led to widespread confusion.' 'Confuse' is a verb, and 'confusing' and 'confused' are participles used as adjectives (a confusing policy, confused citizens), so none of them can stand after 'widespread' as the thing that the lack of clarity led to.
+
+Q 84 | eng | Fill in the Blanks & Cloze Test
+Select the correct option:
+She arrived at the interview ten minutes early, ______ showed professionalism.
+(1) what
+(2) which
+(3) that
+(4) this
+= 2
+~ The blank begins a non-defining relative clause, after a comma, that refers to the whole previous clause (her arriving ten minutes early). Such a clause is introduced by 'which': 'She arrived at the interview ten minutes early, which showed professionalism.' 'That' cannot introduce a non-defining clause after a comma, 'what' means 'the thing that' and takes no antecedent, and 'this' would join two independent clauses with only a comma (a comma splice).
+
+Q 85 | eng | Error Spotting & Sentence Improvement
+Find the part of the sentence that contains an error:
+The CEO demanded that the report is submitted (1)/ to the board (2)/ not later than Wednesday afternoon (3)/ for immediate evaluation. (4)/
+(1) (1)
+(2) (2)
+(3) (3)
+(4) (4)
+= 1
+~ Verbs of demand, command and suggestion such as demand, insist, recommend and propose are followed by a that-clause in the subjunctive: the base form of the verb, or should + base form. So part (1) should read 'The CEO demanded that the report be submitted' (or 'should be submitted'), not 'is submitted'. The other parts, 'to the board', 'not later than Wednesday afternoon' and 'for immediate evaluation', are correct.
+
+Q 86 | eng | Error Spotting & Sentence Improvement
+Find the part of the sentence that contains an error:
+No sooner had the proposal been circulated (1)/ that objections were raised (2)/ regarding its feasibility and financial implications (3)/ across all departments. (4)
+(1) (1)
+(2) (2)
+(3) (3)
+(4) (4)
+= 2
+~ 'No sooner' is always paired with 'than', never with 'that' or 'when': No sooner + had + subject + past participle ... than + simple past. The inversion 'No sooner had the proposal been circulated' in part (1) is correct, so the error is in part (2), which should read 'than objections were raised'. Parts (3) and (4), 'regarding its feasibility and financial implications across all departments', are correct.
+
+Q 87 | eng | Voice & Narration
+Change the following from active to passive:
+They feed the animals twice a day.
+(1) The animals are fed twice a day.
+(2) The animals were fed twice a day.
+(3) The animals are being fed twice a day.
+(4) The animals have been fed twice a day.
+= 1
+~ 'They feed' is in the simple present, so the passive takes is/are + past participle: the object 'the animals' becomes the subject with 'are', and 'feed' becomes 'fed'. The vague subject 'they' is dropped as the agent, giving 'The animals are fed twice a day.' Option 2 (were fed) is simple past, option 3 (are being fed) is present continuous and option 4 (have been fed) is present perfect, so each changes the tense.
+
+Q 88 | eng | Vocabulary
+Select the sentence containing the homonym of the highlighted word:
+The cleric wore a silk "amice" over his alb during the liturgy.
+(1) The altar server retrieved the amice from the vestry.
+(2) The novelist described her protagonist's scarf as an amice.
+(3) The bishop adjusted the amice before the blessing.
+(4) The amice was embroidered with gold thread.
+= 2
+~ In the given sentence 'amice' is the liturgical vestment, a square of white linen worn by a priest on the neck and shoulders under the alb. A separate word 'amice' (a variant of almuce, from French aumusse) names a hood or hooded cape, an outer wrap. The novelist uses it in this sense for a scarf, so option 2 has the homonym. In options 1, 3 and 4 (the altar server, the bishop, the gold embroidery) it is still the church vestment.
+
+Q 89 | eng | Voice & Narration
+Convert the sentence provided below from its passive voice structure to an active voice structure:
+The draft is understood to have been reviewed by the legal department last week.
+(1) The legal department is understood to have reviewed the draft last week.
+(2) The draft was reviewed last week, as is understood.
+(3) It was understood the legal team is reviewing the draft.
+(4) The draft understood itself to be reviewed.
+= 1
+~ The doer, 'the legal department', becomes the subject and 'the draft' becomes the object. The framing verb 'is understood' stays, and only the passive perfect infinitive 'to have been reviewed' changes to the active 'to have reviewed': 'The legal department is understood to have reviewed the draft last week.' Option 2 drops the doer and stays passive, option 3 changes the doer to 'the legal team' and the tenses, and option 4 is illogical.
+
+Q 90 | eng | Error Spotting & Sentence Improvement
+Choose the most suitable option to replace the highlighted part of the sentence:
+He is "having a car" for five years.
+(1) has
+(2) had
+(3) has had
+(4) is having
+= 3
+~ 'For five years' shows a state that began in the past and continues to the present, which needs the present perfect: 'He has had a car for five years.' 'Have' meaning possess is a stative verb and is not used in continuous tenses, so 'is having' is wrong. The simple present 'has' cannot express duration up to now with 'for', and the simple past 'had' would mean he no longer owns the car.
+
+Q 91 | eng | Error Spotting & Sentence Improvement
+Choose the most suitable option to replace the highlighted part of the sentence:
+He worked very hard "lest he may fail".
+(1) in order that he does not fail
+(2) for not failing
+(3) lest he should fail
+(4) so that he did not fail
+= 3
+~ 'Lest' means 'for fear that' or 'in order that ... not'. It is already negative and is followed by 'should' + base verb (or the bare subjunctive, 'lest he fail'), never by may, might or not. So the correct form is 'He worked very hard lest he should fail.' 'In order that he does not fail' and 'so that he did not fail' do not suit a past purpose clause (they need 'might not' or 'would not'), and 'for not failing' is unidiomatic.
+
+Q 92 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+In the tapestry of human civilization, communication functions as the warp thread—a foundational axis around which all societal patterns are woven. Far from being a mere conduit of information, communication embodies the dynamic interplay of perception, cognition, intention, and empathy. The profound necessity of communication arises not solely from the need to disseminate knowledge or coordinate actions, but from the imperative to construct meaning, cultivate understanding, and negotiate the complex terrain of human relationships. Historically, communication has been the catalytic force behind societal transformation—from the oral traditions that preserved mythological cosmologies to the written word that enabled legal systems and codified morality. The printing press, the telegraph, and now digital media are not just technological milestones; they are paradigmatic shifts in the communicative capacity of humankind. Each advancement has not only expanded the velocity and reach of messages but has also redefined the epistemological contours of truth, authority, and discourse. At the interpersonal level, communication is far from unidirectional. It encompasses verbal, non-verbal, and paralinguistic dimensions that function in concert to convey nuance and intention. Eye contact, silence, body posture, and even prosody become carriers of latent meaning—often transcending the spoken word. The failure to decode or acknowledge these layers frequently leads to misapprehension, conflict, or alienation. Thus, effective communication is not merely the transmission of speech, but the art of calibrated expression and attentive reception. In professional and organizational contexts, the strategic deployment of communication is pivotal. It determines leadership efficacy, influences team cohesion, and governs decision-making processes. Hierarchical structures often obfuscate open communication, resulting in informational asymmetries and the erosion of institutional trust. In contrast, transparent, dialogic, and inclusive communication frameworks nurture a culture of accountability and innovation. Cultural semiotics also shape communication, embedding within language a constellation of values, assumptions, and power dynamics. What is deemed assertive in one cultural matrix may be interpreted as aggressive in another. Consequently, intercultural communication necessitates a heightened awareness of contextual sensitivity, linguistic pluralism, and implicit biases. In an era marked by algorithmic echo chambers and hyper-mediated realities, the ethical imperative of responsible communication becomes paramount. The virality of misinformation, the commodification of attention, and the erosion of discourse norms threaten the democratic fabric of societies. Hence, communicative competence today must be coupled with critical media literacy, epistemic humility, and ethical discernment. Ultimately, communication is not ancillary to human existence—it is constitutive of it. To communicate is to assert presence, to co-create reality, and to engage in the continuous reconstitution of the social world. In its highest form, communication becomes a moral act: a commitment to understanding, mutuality, and the transcendence of solipsism.
+Which of the following best encapsulates the primary thesis of the passage?
+(1) Communication is a tool for fast information delivery.
+(2) It is an act of linguistic persuasion.
+(3) Communication is foundational to constructing shared human realities.
+(4) It functions primarily as a cultural symbol across civilizations.
+= 3
+~ The passage argues that communication is not a mere channel for information but the basis of social life: it constructs meaning, shapes relationships and institutions, and 'is not ancillary to human existence—it is constitutive of it', since to communicate is 'to co-create reality'. So it is foundational to constructing shared human realities. Option 1 contradicts 'Far from being a mere conduit of information', option 2 is too narrow, and option 4 is never argued.
+
+Q 93 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+In the tapestry of human civilization, communication functions as the warp thread—a foundational axis around which all societal patterns are woven. Far from being a mere conduit of information, communication embodies the dynamic interplay of perception, cognition, intention, and empathy. The profound necessity of communication arises not solely from the need to disseminate knowledge or coordinate actions, but from the imperative to construct meaning, cultivate understanding, and negotiate the complex terrain of human relationships. Historically, communication has been the catalytic force behind societal transformation—from the oral traditions that preserved mythological cosmologies to the written word that enabled legal systems and codified morality. The printing press, the telegraph, and now digital media are not just technological milestones; they are paradigmatic shifts in the communicative capacity of humankind. Each advancement has not only expanded the velocity and reach of messages but has also redefined the epistemological contours of truth, authority, and discourse. At the interpersonal level, communication is far from unidirectional. It encompasses verbal, non-verbal, and paralinguistic dimensions that function in concert to convey nuance and intention. Eye contact, silence, body posture, and even prosody become carriers of latent meaning—often transcending the spoken word. The failure to decode or acknowledge these layers frequently leads to misapprehension, conflict, or alienation. Thus, effective communication is not merely the transmission of speech, but the art of calibrated expression and attentive reception. In professional and organizational contexts, the strategic deployment of communication is pivotal. It determines leadership efficacy, influences team cohesion, and governs decision-making processes. Hierarchical structures often obfuscate open communication, resulting in informational asymmetries and the erosion of institutional trust. In contrast, transparent, dialogic, and inclusive communication frameworks nurture a culture of accountability and innovation. Cultural semiotics also shape communication, embedding within language a constellation of values, assumptions, and power dynamics. What is deemed assertive in one cultural matrix may be interpreted as aggressive in another. Consequently, intercultural communication necessitates a heightened awareness of contextual sensitivity, linguistic pluralism, and implicit biases. In an era marked by algorithmic echo chambers and hyper-mediated realities, the ethical imperative of responsible communication becomes paramount. The virality of misinformation, the commodification of attention, and the erosion of discourse norms threaten the democratic fabric of societies. Hence, communicative competence today must be coupled with critical media literacy, epistemic humility, and ethical discernment. Ultimately, communication is not ancillary to human existence—it is constitutive of it. To communicate is to assert presence, to co-create reality, and to engage in the continuous reconstitution of the social world. In its highest form, communication becomes a moral act: a commitment to understanding, mutuality, and the transcendence of solipsism.
+In the context of intercultural communication, what is implied by the phrase “constellation of values”?
+(1) Cultures are astronomically defined.
+(2) Values are isolated and static in different cultures.
+(3) Communication patterns are random across cultures.
+(4) Communication carries embedded assumptions and norms shaped by culture.
+= 4
+~ The passage says cultural semiotics embed 'within language a constellation of values, assumptions, and power dynamics', and adds that what is assertive in one culture may seem aggressive in another. Like stars in a constellation, these values form an interlinked pattern, so communication carries embedded assumptions and norms shaped by culture. Option 1 takes the metaphor literally, option 2 contradicts the interlinked pattern the word suggests, and option 3 contradicts the idea that culture shapes communication.
+
+Q 94 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+In the tapestry of human civilization, communication functions as the warp thread—a foundational axis around which all societal patterns are woven. Far from being a mere conduit of information, communication embodies the dynamic interplay of perception, cognition, intention, and empathy. The profound necessity of communication arises not solely from the need to disseminate knowledge or coordinate actions, but from the imperative to construct meaning, cultivate understanding, and negotiate the complex terrain of human relationships. Historically, communication has been the catalytic force behind societal transformation—from the oral traditions that preserved mythological cosmologies to the written word that enabled legal systems and codified morality. The printing press, the telegraph, and now digital media are not just technological milestones; they are paradigmatic shifts in the communicative capacity of humankind. Each advancement has not only expanded the velocity and reach of messages but has also redefined the epistemological contours of truth, authority, and discourse. At the interpersonal level, communication is far from unidirectional. It encompasses verbal, non-verbal, and paralinguistic dimensions that function in concert to convey nuance and intention. Eye contact, silence, body posture, and even prosody become carriers of latent meaning—often transcending the spoken word. The failure to decode or acknowledge these layers frequently leads to misapprehension, conflict, or alienation. Thus, effective communication is not merely the transmission of speech, but the art of calibrated expression and attentive reception. In professional and organizational contexts, the strategic deployment of communication is pivotal. It determines leadership efficacy, influences team cohesion, and governs decision-making processes. Hierarchical structures often obfuscate open communication, resulting in informational asymmetries and the erosion of institutional trust. In contrast, transparent, dialogic, and inclusive communication frameworks nurture a culture of accountability and innovation. Cultural semiotics also shape communication, embedding within language a constellation of values, assumptions, and power dynamics. What is deemed assertive in one cultural matrix may be interpreted as aggressive in another. Consequently, intercultural communication necessitates a heightened awareness of contextual sensitivity, linguistic pluralism, and implicit biases. In an era marked by algorithmic echo chambers and hyper-mediated realities, the ethical imperative of responsible communication becomes paramount. The virality of misinformation, the commodification of attention, and the erosion of discourse norms threaten the democratic fabric of societies. Hence, communicative competence today must be coupled with critical media literacy, epistemic humility, and ethical discernment. Ultimately, communication is not ancillary to human existence—it is constitutive of it. To communicate is to assert presence, to co-create reality, and to engage in the continuous reconstitution of the social world. In its highest form, communication becomes a moral act: a commitment to understanding, mutuality, and the transcendence of solipsism.
+According to the passage, what role do non-verbal cues primarily serve in interpersonal communication?
+(1) They replace verbal communication entirely.
+(2) They act as secondary embellishments.
+(3) They convey subtle or latent meanings often missed by verbal speech.
+(4) They are irrelevant in professional contexts.
+= 3
+~ The passage says communication 'encompasses verbal, non-verbal, and paralinguistic dimensions that function in concert to convey nuance and intention', and that eye contact, silence, body posture and prosody 'become carriers of latent meaning—often transcending the spoken word'. So non-verbal cues convey subtle or latent meanings beyond words. Because they work together with speech, they neither replace it entirely nor are mere embellishments, and the passage never calls them irrelevant in professional contexts.
+
+Q 95 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+In the tapestry of human civilization, communication functions as the warp thread—a foundational axis around which all societal patterns are woven. Far from being a mere conduit of information, communication embodies the dynamic interplay of perception, cognition, intention, and empathy. The profound necessity of communication arises not solely from the need to disseminate knowledge or coordinate actions, but from the imperative to construct meaning, cultivate understanding, and negotiate the complex terrain of human relationships. Historically, communication has been the catalytic force behind societal transformation—from the oral traditions that preserved mythological cosmologies to the written word that enabled legal systems and codified morality. The printing press, the telegraph, and now digital media are not just technological milestones; they are paradigmatic shifts in the communicative capacity of humankind. Each advancement has not only expanded the velocity and reach of messages but has also redefined the epistemological contours of truth, authority, and discourse. At the interpersonal level, communication is far from unidirectional. It encompasses verbal, non-verbal, and paralinguistic dimensions that function in concert to convey nuance and intention. Eye contact, silence, body posture, and even prosody become carriers of latent meaning—often transcending the spoken word. The failure to decode or acknowledge these layers frequently leads to misapprehension, conflict, or alienation. Thus, effective communication is not merely the transmission of speech, but the art of calibrated expression and attentive reception. In professional and organizational contexts, the strategic deployment of communication is pivotal. It determines leadership efficacy, influences team cohesion, and governs decision-making processes. Hierarchical structures often obfuscate open communication, resulting in informational asymmetries and the erosion of institutional trust. In contrast, transparent, dialogic, and inclusive communication frameworks nurture a culture of accountability and innovation. Cultural semiotics also shape communication, embedding within language a constellation of values, assumptions, and power dynamics. What is deemed assertive in one cultural matrix may be interpreted as aggressive in another. Consequently, intercultural communication necessitates a heightened awareness of contextual sensitivity, linguistic pluralism, and implicit biases. In an era marked by algorithmic echo chambers and hyper-mediated realities, the ethical imperative of responsible communication becomes paramount. The virality of misinformation, the commodification of attention, and the erosion of discourse norms threaten the democratic fabric of societies. Hence, communicative competence today must be coupled with critical media literacy, epistemic humility, and ethical discernment. Ultimately, communication is not ancillary to human existence—it is constitutive of it. To communicate is to assert presence, to co-create reality, and to engage in the continuous reconstitution of the social world. In its highest form, communication becomes a moral act: a commitment to understanding, mutuality, and the transcendence of solipsism.
+What does the passage suggest is the consequence of informational asymmetry within hierarchical institutions?
+(1) Increased productivity due to streamlined authority.
+(2) Erosion of institutional trust and communication breakdown.
+(3) Faster decision-making due to lack of dissent.
+(4) Decentralization of organizational roles.
+= 2
+~ The passage states that 'Hierarchical structures often obfuscate open communication, resulting in informational asymmetries and the erosion of institutional trust', and contrasts this with transparent, dialogic frameworks that nurture accountability. So informational asymmetry goes with the erosion of trust and a breakdown of open communication. The passage does not credit hierarchy with higher productivity or faster decisions, and decentralisation is the opposite of the hierarchical structures it describes.
+
+Q 96 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+In the tapestry of human civilization, communication functions as the warp thread—a foundational axis around which all societal patterns are woven. Far from being a mere conduit of information, communication embodies the dynamic interplay of perception, cognition, intention, and empathy. The profound necessity of communication arises not solely from the need to disseminate knowledge or coordinate actions, but from the imperative to construct meaning, cultivate understanding, and negotiate the complex terrain of human relationships. Historically, communication has been the catalytic force behind societal transformation—from the oral traditions that preserved mythological cosmologies to the written word that enabled legal systems and codified morality. The printing press, the telegraph, and now digital media are not just technological milestones; they are paradigmatic shifts in the communicative capacity of humankind. Each advancement has not only expanded the velocity and reach of messages but has also redefined the epistemological contours of truth, authority, and discourse. At the interpersonal level, communication is far from unidirectional. It encompasses verbal, non-verbal, and paralinguistic dimensions that function in concert to convey nuance and intention. Eye contact, silence, body posture, and even prosody become carriers of latent meaning—often transcending the spoken word. The failure to decode or acknowledge these layers frequently leads to misapprehension, conflict, or alienation. Thus, effective communication is not merely the transmission of speech, but the art of calibrated expression and attentive reception. In professional and organizational contexts, the strategic deployment of communication is pivotal. It determines leadership efficacy, influences team cohesion, and governs decision-making processes. Hierarchical structures often obfuscate open communication, resulting in informational asymmetries and the erosion of institutional trust. In contrast, transparent, dialogic, and inclusive communication frameworks nurture a culture of accountability and innovation. Cultural semiotics also shape communication, embedding within language a constellation of values, assumptions, and power dynamics. What is deemed assertive in one cultural matrix may be interpreted as aggressive in another. Consequently, intercultural communication necessitates a heightened awareness of contextual sensitivity, linguistic pluralism, and implicit biases. In an era marked by algorithmic echo chambers and hyper-mediated realities, the ethical imperative of responsible communication becomes paramount. The virality of misinformation, the commodification of attention, and the erosion of discourse norms threaten the democratic fabric of societies. Hence, communicative competence today must be coupled with critical media literacy, epistemic humility, and ethical discernment. Ultimately, communication is not ancillary to human existence—it is constitutive of it. To communicate is to assert presence, to co-create reality, and to engage in the continuous reconstitution of the social world. In its highest form, communication becomes a moral act: a commitment to understanding, mutuality, and the transcendence of solipsism.
+The phrase “epistemic humility” in the passage most likely refers to which of the following?
+(1) Reluctance to speak in public discourse.
+(2) Acceptance of one’s cultural superiority.
+(3) Awareness of the limits of one’s knowledge in communicative contexts.
+(4) Dependence on traditional forms of communication.
+= 3
+~ 'Epistemic' means relating to knowledge, so 'epistemic humility' is the recognition that one's own knowledge and views are limited and may be wrong, with openness to other perspectives. The passage lists it with critical media literacy and ethical discernment as part of the communicative competence needed in an age of misinformation and echo chambers. Option 2 is the opposite of humility, option 1 confuses humility with silence, and option 4 is not discussed.
+
+Q 97 | eng | Voice & Narration
+Select the correct option for the Direct Speech conversion of the sentence below.
+He remarked that the sculpture would have commanded greater gravitas had the pedestal been proportionally austere.
+(1) He said, "The sculpture would have commanded greater gravitas had the pedestal been proportionally austere."
+(2) He said, "If the pedestal is proportionally austere, the sculpture commands greater gravitas."
+(3) He said, "The sculpture will command greater gravitas if the pedestal had been austere."
+(4) He said, "Had the pedestal been austere, the sculpture must have commanded greater gravitas."
+= 1
+~ The reported clause is an inverted third conditional: 'had the pedestal been proportionally austere' with 'would have commanded' in the main clause. Unreal past conditionals keep their tenses in reported speech, so the direct form puts the same words in quotation marks after 'He said'. Option 2 turns it into a real present condition, option 3 wrongly mixes 'will command' with 'had been', and option 4 uses 'must have' and drops 'proportionally'.
+
+Q 98 | eng | Voice & Narration
+A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech.
+She said, “Why did you lie to me?”
+(1) She asked why I lied to her.
+(2) She asked why I had lied to her.
+(3) She asked why had I lied to her.
+(4) She asked why did I lie to her.
+= 2
+~ In reporting a question, 'said' becomes 'asked', the question word 'why' joins the clauses, and question order changes to statement order (subject + verb), so the auxiliary 'did' goes. The simple past 'did lie' backshifts to the past perfect 'had lied', 'you' becomes 'I' (the person addressed is reporting) and 'me' becomes 'her': 'She asked why I had lied to her.' Option 1 lacks the backshift, and options 3 and 4 keep question word order.
+
+Q 99 | eng | Sentence Arrangement
+Rearrange the following sentences to form a meaningful passage:
+1. Machine learning models require large datasets to train.
+2. Data preprocessing ensures that the input is clean and formatted correctly.
+3. The model is tested to evaluate its accuracy.
+4. Once trained, the model can be deployed for real-world applications.
+(1) 2-1-3-4
+(2) 3-1-2-4
+(3) 1-2-3-4
+(4) 4-3-2-1
+= 1
+~ The key's order 2-1-3-4 follows the stages of a machine learning workflow: data preprocessing first prepares clean, correctly formatted input (2), the models are then trained on large datasets (1), the trained model is tested for accuracy (3), and finally it is deployed for real-world use (4). However, sentence 1 introduces the topic and the datasets that 'the input' in sentence 2 refers to, so 1-2-3-4 also reads naturally. (SSC key; some sources differ.)
+
+Q 100 | eng | Sentence Arrangement
+Rearrange the following sentences in correct order to make a logical passage.
+1. The first step is to recognize unhealthy patterns.
+2. Breaking bad habits requires discipline and self-awareness.
+3. Seeking support from friends or professionals can be helpful.
+4. Consistency in applying new behaviors is key to lasting change.
+(1) 2-1-3-4
+(2) 2-4-1-3
+(3) 3-4-2-1
+(4) 2-3-1-4
+= 1
+~ Sentence 2 introduces the topic: breaking bad habits requires discipline and self-awareness. Sentence 1, 'The first step is to recognize unhealthy patterns', begins the process and reflects that self-awareness. Sentence 3 adds a further aid, seeking support from friends or professionals, and sentence 4 concludes that consistency is the key to lasting change. The order is 2-1-3-4. Option 4 (2-3-1-4) fails because 'the first step' must come straight after the introduction.

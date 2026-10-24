@@ -1,0 +1,991 @@
+# SSC Combined Graduate Level Examination 2025, Tier-I, held 18 September 2025, Shift 2 (12:30 PM). 100 questions, 200 marks, 60 minutes.
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via AglaSem); answers are the options SSC marked correct on that sheet (answer-key stage). Explanations by Learn with Anil.
+
+Q 1 | rea | Series
+Select the letter-cluster from among the given options that can replace the question mark (?) in the following series.
+QAZ, RBY, SCX, TDW, ?
+(1) UBS
+(2) UEV
+(3) JKS
+(4) VSA
+= 2
+~ Track each position separately. First letters: Q, R, S, T move one step forward, so the next is U. Second letters: A, B, C, D move one step forward, so the next is E. Third letters: Z, Y, X, W move one step backward, so the next is V. The missing cluster is UEV. UBS has the right first letter but breaks the second and third patterns; JKS and VSA fit none of them.
+
+Q 2 | rea | Miscellaneous Reasoning
+Choose the address that is the same as the one given below.
+Flat No. 12B, Sunrise Towers,Park Street, Kolkata,West Bengal - 700016
+(1) Flat No. 12B, Sunrise Towers, Park Street, Kolkata, Bihar - 700016
+(2) Flat No. 12B, Sunrise Towers, Park Street, Kolkata, Jharkhand - 700016
+(3) Flat No. 12B, Sunrise Towers, Park Street, Kolkata, Odisha - 700016
+(4) Flat No. 12B, Sunrise Towers, Park Street, Kolkata, West Bengal - 700016
+= 4
+~ Compare the options part by part with the given address. Flat No. 12B, Sunrise Towers, Park Street, Kolkata and the PIN code 700016 are the same in all four options, so the state decides the answer. The given address says West Bengal; options 1, 2 and 3 change it to Bihar, Jharkhand and Odisha. Only option 4 keeps every element, including West Bengal, so it is the same address.
+
+Q 3 | rea | Miscellaneous Reasoning
+Choose the address that is the same as the one given below.
+Sample Address:#301, Galaxy Towers,Hinoo, Ranchi,Jharkhand - 834002
+(1) #301, Galaxy Towers, Hinoo, Ranchi, Jharkhand - 834002
+(2) #301, Galaxy Tower, Hinoo, Ranchi, Jharkhand - 834002
+(3) 301, Galaxy Towers, Hinoo, Ranchi, Jharkhand - 834002
+(4) #301, Galaxy Towers, Hinu, Ranchi, Jharkhand - 834002
+= 1
+~ Check every element of the given address: #301, Galaxy Towers, Hinoo, Ranchi, Jharkhand, 834002. Option 2 changes "Towers" to "Tower", option 3 drops the "#" before 301, and option 4 spells the locality "Hinu" instead of "Hinoo". Only option 1 matches the sample address in every element, so it is the same address. Such questions test careful letter-by-letter comparison.
+
+Q 4 | rea | Syllogism & Statements
+Consider the following statement and choose the option that follows.
+Statement: The railway authority decided to reduce ticket prices on long-distance trains.
+Assumptions:
+I. Lower prices will attract more passengers.
+II. The authority wants to compete with airlines.
+(1) Only I is implicit
+(2) Only II is implicit
+(3) Both are implicit
+(4) Neither is implicit
+= 1
+~ An assumption is what the decision-maker must take for granted. A fare cut makes sense only if the authority expects cheaper tickets to draw more passengers, so I is implicit. The statement says nothing about airlines; the cut could aim at buses, road travel or simply higher occupancy, so competing with airlines is only one possible motive and II is not implicit. Hence only I is implicit.
+
+Q 5 | rea | Syllogism & Statements
+Consider the following statement and choose the option that follows.
+Statements:
+I. Banks have increased staff training on cyber security.
+II. There has been a surge in cyber attacks.
+(1) I is the cause and II is the effect.
+(2) II is the cause and I is the effect.
+(3) Both are unrelated.
+(4) No relation.
+= 2
+~ A surge in cyber attacks is an event that pushes organisations to respond, and increasing staff training on cyber security is a natural response to it. So statement II (the surge in attacks) is the cause and statement I (more training) is the effect. The reverse is illogical, because training staff cannot cause a surge in cyber attacks; and the two are clearly linked, so options 3 and 4 are wrong.
+
+Q 6 | rea | Series
+Find the WRONG term in the given series.
+5, 10, 15, 26, 37, 50
+(1) 50
+(2) 26
+(3) 15
+(4) 5
+= 3
+~ The terms follow n² + 1: 2² + 1 = 5, 3² + 1 = 10, 4² + 1 = 17, 5² + 1 = 26, 6² + 1 = 37, 7² + 1 = 50. The third term should be 17, so 15 is wrong. Check with differences: the correct series 5, 10, 17, 26, 37, 50 has differences 5, 7, 9, 11, 13 (consecutive odd numbers), which 15 breaks.
+
+Q 7 | rea | Mathematical Operations
+Replace special characters with mathematical signs as given in options to make it meaningful equation.
+16 # 4 @ 2 = 62
+(1) ÷, −
+(2) −, ÷
+(3) ×, −
+(4) −, ×
+= 3
+~ Put each pair in place of # and @ and apply BODMAS. Option 1: 16 ÷ 4 − 2 = 2. Option 2: 16 − 4 ÷ 2 = 14. Option 3: 16 × 4 − 2 = 64 − 2 = 62, which matches. Option 4: 16 − 4 × 2 = 8. So # = × and @ = −, giving 16 × 4 − 2 = 62.
+
+Q 8 | rea | Mathematical Operations
+Which two signs should be swapped to correct the following?
+28 ÷ 4 × 3 − 5 + 7 = 19
+(1) ÷ and ×
+(2) × and −
+(3) ÷ and +
+(4) + and −
+= 4
+~ As given, 28 ÷ 4 × 3 − 5 + 7 = 21 − 5 + 7 = 23, not 19. Swap + and −: 28 ÷ 4 × 3 + 5 − 7 = 21 + 5 − 7 = 19, which is correct. Other swaps fail, for example × and − gives 28 ÷ 4 − 3 × 5 + 7 = 7 − 15 + 7 = −1, and ÷ and × gives 28 × 4 ÷ 3, which is not even a whole number.
+
+Q 9 | rea | Mathematical Operations
+By interchanging the given two signs which of the following equation will be NOT correct?
++ and −
+I. 18 ÷ 3 + 8 × 5 − 4 = 20
+II. 6 + 8 × 9 ÷ 3 − 4 = 14
+(1) Neither I nor II
+(2) Both I and II
+(3) Only II
+(4) Only I
+= 2
+~ Interchange + and − and solve using BODMAS. I becomes 18 ÷ 3 − 8 × 5 + 4 = 6 − 40 + 4 = −30, not 20. II becomes 6 − 8 × 9 ÷ 3 + 4 = 6 − 24 + 4 = −14, not 14 (a sign slip here is tempting). Neither equation becomes correct after the interchange, so both I and II are NOT correct.
+
+Q 10 | rea | Blood Relations & Directions
+In a family, there are 6 members P, Q, R, S, T and U.
+• P and Q are a married couple
+• R is the son of P
+• T is the sister of R
+• Q is the mother of S
+U is the brother of P
+Who is the father of S?
+(1) P
+(2) Q
+(3) U
+(4) R
+= 1
+~ Q is the mother of S, so Q is female. P and Q are a married couple, so P is Q's husband and therefore the father of S (R, T and S are the children of P and Q). U is P's brother, which makes him S's uncle, not father. Q is the mother, and R is S's brother, so neither can be the father.
+
+Q 11 | rea | Series
+What comes at the place of question mark: 2, 6, 12, 20, 30, ?
+(1) 42
+(2) 56
+(3) 38
+(4) 48
+= 1
+~ Each term is n × (n + 1): 1 × 2 = 2, 2 × 3 = 6, 3 × 4 = 12, 4 × 5 = 20, 5 × 6 = 30, so the next term is 6 × 7 = 42. Differences confirm it: 4, 6, 8, 10, so the next difference is 12 and 30 + 12 = 42. 56 (7 × 8) skips a step.
+
+Q 12 | rea | Syllogism & Statements
+Read the following statement carefully and identify the conclusion that follows.
+Statement: The library will remain closed on Sunday due to renovation.
+I. The renovation is planned for Sunday.
+II. People cannot use the library this Sunday.
+(1) Only Conclusion I follows
+(2) Only Conclusion II follows
+(3) Both I and II follow
+(4) Neither I nor II follows
+= 3
+~ The library is closed on Sunday because of renovation, which means renovation work is scheduled for that Sunday, so conclusion I follows. A closed library cannot be used, so people cannot use it this Sunday and conclusion II also follows. Both are direct consequences of the statement, so both I and II follow.
+
+Q 13 | rea | Syllogism & Statements
+Read the following statement carefully and identify the conclusion that follows.
+Statement: The price of petrol has increased due to international oil prices.
+Conclusions:
+I. Petrol prices are linked to global markets.
+II. The government has no control over fuel prices.
+(1) Only Conclusion I follows
+(2) Only Conclusion II follows
+(3) Both I and II follow
+(4) Neither I nor II follows
+= 1
+~ Since petrol became costlier because of international oil prices, domestic petrol prices clearly depend on global markets, so conclusion I follows. The statement does not say the government is powerless; governments can still influence fuel prices through taxes, duties or subsidies. Conclusion II is an extreme claim not supported by the statement. Hence only conclusion I follows.
+
+Q 14 | rea | Analogy & Classification
+Find the option that best completes the analogy. DP : XZ :: EN : ?
+(1) YZ
+(2) YB
+(3) ZB
+(4) YX
+= 4
+~ Use letter positions (A = 1 … Z = 26). In DP : XZ, D (4) + 20 = X (24) and P (16) + 10 = Z (26). Apply the same steps to EN: E (5) + 20 = Y (25) and N (14) + 10 = X (24). So EN : YX. YZ and YB begin with the right letter Y but do not apply +10 to N, and ZB fits neither step.
+
+Q 15 | rea | Coding-Decoding
+If "CANADA" is written as "ADANAC", what is "MEXICO" written as?
+(1) OCIXME
+(2) OCIXEM
+(3) OCXEIM
+(4) OCMXIE
+= 2
+~ ADANAC is CANADA written in reverse order (C-A-N-A-D-A read from the end gives A-D-A-N-A-C). Reversing MEXICO in the same way: M-E-X-I-C-O becomes O-C-I-X-E-M, that is OCIXEM. OCIXME looks close but swaps the last two letters, so it is not the exact reverse; OCXEIM and OCMXIE are jumbled.
+
+Q 16 | rea | Series
+What comes next?
+ZYX, YXW, XWV, WVU, ?
+(1) VUT
+(2) UVT
+(3) VTS
+(4) TUV
+= 1
+~ Each cluster is three consecutive letters in reverse alphabetical order, and each new cluster starts one letter earlier than the previous one: Z, Y, X, W, so the next starts with V. Three consecutive letters backward from V are V, U, T, giving VUT. UVT and TUV have the right letters in the wrong order, and VTS skips U.
+
+Q 17 | rea | Analogy & Classification
+Find the odd one out from the given alternatives:
+(1) Reuse
+(2) Reduce
+(3) Recycle
+(4) Refuel
+= 4
+~ Reduce, Reuse and Recycle are the well-known "3 Rs" of waste management, which aim to cut waste and conserve resources. Refuel means filling a vehicle or machine with fuel again; it is not a waste-management practice, so it is the odd one out. All four begin with "Re", so the prefix alone does not decide the answer.
+
+Q 18 | rea | Coding-Decoding
+Instruction: In a certain code language, Greek letters are used to represent English letters consistently. Using the provided code, decode the target sequence.
+If γ α λ α ξ ι α is coded as GALAXIA, σ τ α ρ is coded as STAR,
+Question: Then what does σ γ α λ α represent?
+(1) SGALA
+(2) SPALA
+(3) SRALA
+(4) SMALA
+= 1
+~ Match the codes letter by letter. From γ α λ α ξ ι α = GALAXIA: γ = G, α = A, λ = L, ξ = X, ι = I. From σ τ α ρ = STAR: σ = S, τ = T, ρ = R. Now decode σ γ α λ α: σ = S, γ = G, α = A, λ = L, α = A, giving SGALA. The other options put P, R or M in place of G.
+
+Q 19 | rea | Miscellaneous Reasoning
+In a 30 L mixture, milk: water = 3:2. How much water must be added to make the ratio 1:1?
+(1) 6 L
+(2) 10 L
+(3) 9 L
+(4) 12 L
+= 1
+~ Milk = 3/5 × 30 = 18 L and water = 2/5 × 30 = 12 L. Adding water does not change the milk, so for a 1:1 ratio water must also become 18 L. Water to be added = 18 − 12 = 6 L. Check: 18 : 18 = 1 : 1. Adding 10 L would give 18 : 22, which is not equal.
+
+Q 20 | rea | Miscellaneous Reasoning
+Find the LCM of 12, 18, 30?
+(1) 90
+(2) 180
+(3) 60
+(4) 120
+= 2
+~ Write prime factors: 12 = 2² × 3, 18 = 2 × 3², 30 = 2 × 3 × 5. The LCM takes the highest power of each prime: 2² × 3² × 5 = 4 × 9 × 5 = 180. The other options fail: 90 is not divisible by 12, and 60 and 120 are not divisible by 18.
+
+Q 21 | rea | Mathematical Operations
+If 10 @ 2 = 120 and 5 @ 5 = 100, what is 8 @ 3?
+(1) 80
+(2) 96
+(3) 108
+(4) 110
+= 4
+~ The rule is a @ b = (a + b) × 10. Check: 10 @ 2 = (10 + 2) × 10 = 120 and 5 @ 5 = (5 + 5) × 10 = 100. So 8 @ 3 = (8 + 3) × 10 = 110. A product rule does not fit both examples (10 × 2 = 20 and 5 × 5 = 25 would need different multipliers), so the sum rule is the consistent one.
+
+Q 22 | rea | Blood Relations & Directions
+If P is the brother of Q, R is the sister of Q, and S is the father of P, how is R related to S?
+(1) Daughter
+(2) Niece
+(3) Wife
+(4) Sister
+= 1
+~ P, Q and R are siblings: P is Q's brother and R is Q's sister. S is the father of P, so S is also the father of Q and R. R is female (a sister), so R is S's daughter. Niece would need R to be the child of S's brother or sister, and wife or sister would put R in S's generation.
+
+Q 23 | rea | Series
+Find the next number in the series: 10, 21, 43, 87, ?, 351
+(1) 175
+(2) 173
+(3) 177
+(4) 179
+= 1
+~ Each term is the previous term × 2 + 1: 10 × 2 + 1 = 21, 21 × 2 + 1 = 43, 43 × 2 + 1 = 87, 87 × 2 + 1 = 175, and 175 × 2 + 1 = 351, which confirms the last term. The differences 11, 22, 44, 88, 176 also double each time, giving 87 + 88 = 175.
+
+Q 24 | rea | Miscellaneous Reasoning
+If a man’s present age is twice what it was 10 years ago, what is his current age?
+(1) 20
+(2) 30
+(3) 40
+(4) 25
+= 1
+~ Let the present age be x. Ten years ago he was x − 10. Given x = 2(x − 10), so x = 2x − 20, which gives x = 20. Check: ten years ago he was 10, and 20 is twice 10. With 30, ten years ago he would be 20, and 30 is not twice 20, so 30 is wrong.
+
+Q 25 | rea | Series
+The series given below contains a sequence of numbers. Accordingly identify the incorrect combination 6, 7, 16, 51, 210
+(1) 210
+(2) 16
+(3) 7
+(4) 51
+= 1
+~ The pattern is × n + n with n = 1, 2, 3, 4: 6 × 1 + 1 = 7, 7 × 2 + 2 = 16, 16 × 3 + 3 = 51, and 51 × 4 + 4 = 208. The last term should be 208, so 210 is the incorrect term. The first four terms fit the rule exactly, so 7, 16 and 51 are correct.
+
+Q 26 | cur | Static GK & Culture
+The Nabanna (new rice) during the Nuakhai festival in Sambalpur, Odisha, is first offered to which deity?
+(1) Maa Samaleswari
+(2) Maa Mangala
+(3) Maa Bhubaneswari
+(4) Maa Budhi Thakurani
+= 1
+~ Nuakhai is the harvest festival of western Odisha, celebrated on Bhadrava Shukla Panchami, the day after Ganesh Chaturthi. In Sambalpur the nabanna (first new rice of the season) is first offered to Maa Samaleswari, the presiding deity of the town, at the auspicious moment (lagna) fixed by the temple priests, amid hulahuli and drums. Only after this offering do families eat the new rice. Maa Mangala is the deity of Kakatpur and Maa Budhi Thakurani of Berhampur.
+
+Q 27 | ih | Art & Culture
+Which of the following pairs of temple style & region are correctly matched?
+1. Vesara – Deccan
+2. Rekha-Deul – Odisha
+3. Bhumija – Malwa
+4. Kalinga – Tamil Nadu
+(1) 1 & 2 only
+(2) 1, 2 & 3 are correct
+(3) 2 & 4 only
+(4) only 1
+= 2
+~ Vesara, the hybrid style of the Chalukyas and Hoysalas, belongs to the Deccan (Karnataka region). The rekha deul, a tall curvilinear tower over the sanctum, is the hallmark of Odisha's temples (Lingaraja, Jagannatha). Bhumija, a Nagara sub-style with rows of miniature spires on the tower, developed in Malwa under the Paramaras (Udayeshvara temple, Udaypur). Pair 4 is wrong: Kalinga is the style of Odisha, while Tamil Nadu follows the Dravida style. So pairs 1, 2 and 3 are correct.
+
+Q 28 | ih | Ancient India
+According to the Gupta dynasty's administrative structure, which one of the following pairs of officer and role is correctly matched?
+(1) Prathamakulika – Public Works Supervisor
+(2) Gramika (Gramadhyaksha) – Village Headman
+(3) Talavataka – Military Paymaster
+(4) Pustapala – Tax-Collection Officer
+= 2
+~ In Gupta administration the gramika (gramadhyaksha) was the village headman, who ran village affairs with the help of elders. The other pairs are wrong: the prathama-kulika was the chief artisan, who represented the craftsmen on the district advisory board alongside the nagara-shreshthi, sarthavaha and prathama-kayastha; the pustapala was the keeper of land records; and the talavataka is generally described as a village accountant, not a military paymaster.
+
+Q 29 | cur | Static GK & Culture
+Which of the following is a folk song form of Jharkhand that reflects the lived experiences, social unity, and often accompanies dance and drama performances?
+(1) Lavani
+(2) Domkach
+(3) Bhavai
+(4) Baul
+= 2
+~ Domkach is a folk song-and-dance form of Jharkhand (especially the Nagpuri-speaking Chotanagpur region) and Bihar, performed at weddings. Women, notably of the groom's family on the night the baraat leaves, sing witty, teasing and joyful songs and dance in a circle, so it expresses shared experience and social bonding. The other options belong elsewhere: Lavani is from Maharashtra, Bhavai is a folk theatre of Gujarat (also a dance of Rajasthan), and Baul is the mystic minstrel song tradition of Bengal.
+
+Q 30 | cur | Sports
+What is the standard width of a singles badminton court as per international regulations?
+(1) 6.10 meters
+(2) 13.40 meters
+(3) 5.18 meters
+(4) 12.00 meters
+= 3
+~ Under the Badminton World Federation (BWF) Laws, the court is 13.40 m long. Its full width of 6.10 m is used for doubles, while the singles court is narrower at 5.18 m, bounded by the inner side lines. So 6.10 m is the doubles width (a common trap) and 13.40 m is the length of both courts; 12.00 m is not a badminton court dimension. The net is 1.55 m high at the posts and 1.524 m at the centre.
+
+Q 31 | ih | Art & Culture
+Who among the following Chola emperors constructed the grand temple at Gangaikonda Cholapuram?
+(1) Rajaraja Chola I
+(2) Rajendra Chola I
+(3) Rajadhiraja Chola I
+(4) Kulothunga Chola I
+= 2
+~ Rajendra Chola I (1014–1044 CE) founded Gangaikonda Cholapuram as his new capital after his northern campaign reached the Ganga, and built its great Brihadisvara (Gangaikondacholisvaram) temple there. It is part of the UNESCO World Heritage Site of the Great Living Chola Temples, along with the Brihadisvara temple at Thanjavur, built by his father Rajaraja I, and the Airavatesvara temple at Darasuram, built under Rajaraja II.
+
+Q 32 | ih | Modern India
+Read the following statements:
+Statement I: The Act of 1793 followed the tradition of personal rule without bringing in any legal reforms.
+Statement II: Judges were assigned to interpret laws rather than depend on the ruler's personal judgment.
+Which of the above statements is/are true?
+(1) Only 1 is true
+(2) Only 2 is true
+(3) Both Statement 1 and 2 are true
+(4) Neither 1 nor 2 is true
+= 2
+~ The Act of 1793 refers to Lord Cornwallis's Regulations (the Cornwallis Code), issued along with the Permanent Settlement of Bengal. It did bring legal reforms: revenue collection was separated from the administration of justice, a graded system of civil and criminal courts was set up, and judges were to decide cases according to written regulations. This introduced the rule of law in place of the personal rule of earlier rulers. So Statement I is false and Statement II is true.
+
+Q 33 | cur | Sports
+Consider the following statements about the high jump:
+1) The minimum length of the runway is 15 meters.
+2) The diameter of the crossbar ranges between 15 cm and 20 cm.
+Which of the statements is/are correct?
+(1) Only 1 is Correct
+(2) Only 2 is Correct
+(3) 1 and 2 are Correct
+(4) Neither 1 nor 2 are Correct
+= 1
+~ Under World Athletics rules for the high jump, the runway must be at least 15 m long (25 m where conditions permit), so Statement 1 is correct. The crossbar is a circular bar of fibreglass or metal about 4 m long with a diameter of only 30 mm (plus or minus 1 mm), not 15 to 20 cm, so Statement 2 is wrong. The athlete must take off from one foot, and three consecutive failures eliminate the jumper.
+
+Q 34 | eco | Agriculture, Industry & Trade
+Which of the following best reflects the strategic impact of the India–Australia Economic Cooperation and Trade Agreement (ECTA) after three years of implementation?
+(1) ECTA removed all tariffs on Australian farm goods unilaterally.
+(2) ECTA mainly benefitted old sectors like cotton, with little new growth.
+(3) ECTA led to 14% export growth (2022–24) and added new items like Air Liquefaction Machinery.
+(4) ECTA includes mutual defence procurement via an Indo-Pacific charter.
+= 3
+~ The India–Australia ECTA was signed on 2 April 2022 and came into force on 29 December 2022; the question's "three years" count from the signing, whose third anniversary fell in April 2025. On that anniversary the Commerce Ministry reported that India's exports to Australia grew 14% in 2023-24 over 2022-23, with new export lines such as air liquefaction machinery, calcined petroleum coke and high-capacity diesel generating sets. Tariff cuts were reciprocal, not unilateral; India kept sensitive farm products such as dairy out of its concessions; and the agreement has no defence provisions.
+
+Q 35 | cur | Awards, Books & Persons
+An Area of Darkness is a travelogue by which Indian author?
+(1) Raja Rao
+(2) V.S. Naipaul
+(3) R.K. Narayan
+(4) Vikram Seth
+= 2
+~ An Area of Darkness (1964) is V.S. Naipaul's account of his first visit to India, the land of his ancestors, based on a year-long stay that began in 1962. It forms an India trilogy with India: A Wounded Civilization (1977) and India: A Million Mutinies Now (1990). Naipaul was born in Trinidad to a family of Indian origin and was a British citizen, so "Indian author" here means of Indian descent; he won the 2001 Nobel Prize in Literature. Vikram Seth's travel book is From Heaven Lake; Raja Rao and R.K. Narayan are known chiefly for novels.
+
+Q 36 | cur | Sports
+Which Indian fencer secured the bronze medal in the women’s Cadet Epee category at the 2022 Asian Junior and Cadet Fencing Championships?
+(1) Bhavani Devi
+(2) Prachi Lohan
+(3) C.A. Bhavya
+(4) Kushi Chaudhary
+= 2
+~ Prachi Lohan won the bronze medal in the women's cadet (under-17) épée event at the 2022 Asian Junior and Cadet Fencing Championships held in Tashkent, Uzbekistan. She later became the women's épée national champion at the 33rd Senior National Fencing Championships in 2023. Bhavani Devi, the tempting option, is a sabre fencer and was the first Indian fencer to compete at the Olympics (Tokyo 2020); she was not a cadet in 2022.
+
+Q 37 | cur | Sports
+Which of the following statements about the Khelo India Youth Games (KIYG) 2023 is correct?
+(1) The KIYG 2023 were held in four cities of Maharashtra.
+(2) The games included 20 disciplines and no demo sport.
+(3) The event lasted for 13 days across 15 venues.
+(4) Only 4000 athletes participated in KIYG 2023.
+= 3
+~ The sixth Khelo India Youth Games (KIYG 2023) were held in Tamil Nadu, the first time in south India, from 19 to 31 January 2024: 13 days across 15 venues in four cities, namely Chennai, Madurai, Tiruchirappalli and Coimbatore. Over 5,600 athletes competed in 26 sports disciplines, with Silambam as the demonstration sport and squash included for the first time. Maharashtra topped the medal table, which may explain the Maharashtra distractor.
+
+Q 38 | pol | Government & Parliament
+Fill in the blanks:
+The Union Home Minister chairs a Zonal Council meeting as ______ chairman.
+(1) ex-officio
+(2) rotating
+(3) ceremonial
+(4) honorary
+= 1
+~ Zonal Councils are statutory bodies set up under the States Reorganisation Act, 1956, to promote Centre–State and inter-State cooperation. There are five of them (Northern, Central, Eastern, Western and Southern), and the Union Home Minister is the chairman of each by virtue of his office, that is, ex officio. The Chief Ministers of the member States take turns as vice-chairman, one year at a time, so the rotating post is that of vice-chairman, not chairman.
+
+Q 39 | sci | Biology
+Which of the following statements regarding human antibodies is/are accurate?
+1. IgG constitutes the largest proportion of antibodies in human blood.
+2. IgE plays a key role in allergic responses.
+3. IgA is primarily located in bodily secretions such as saliva and breast milk.
+(1) Only 1 and 2 are correct
+(2) Only 2 and 3 are correct
+(3) Only 1 and 3 are correct
+(4) 1, 2 and 3 all are correct
+= 4
+~ All three statements are correct. IgG is the most abundant antibody, about 75–80% of the antibodies in blood serum, and the only one that crosses the placenta. IgE binds to mast cells and basophils and triggers histamine release in allergic reactions; it also acts against parasitic worms. IgA is the main antibody of secretions such as saliva, tears, mucus and breast milk (especially colostrum), protecting mucous surfaces. IgM, a large pentamer, is the first antibody made in an infection.
+
+Q 40 | pol | Government & Parliament
+Arrange the following in chronological order:
+A) Sarkaria Commission report submitted
+B) Inter-State Council constituted
+C) Punchhi Commission constituted
+(1) A-B-C
+(2) A-C-B
+(3) B-C-A
+(4) C-B-A
+= 1
+~ The Sarkaria Commission on Centre–State relations was set up in 1983 and submitted its report in 1988. Acting on one of its recommendations, the government constituted the Inter-State Council under Article 263 by a Presidential Order of 28 May 1990. The second commission on Centre–State relations, headed by Justice M.M. Punchhi, was constituted in April 2007 and reported in 2010. So the correct order is A (1988), B (1990), C (2007).
+
+Q 41 | cur | Static GK & Culture
+Fill in the Blank:
+Tippani arises from the ______ region of Gujarat.
+(1) Kutch
+(2) Saurashtra
+(3) Surat
+(4) Vadodara
+= 2
+~ Tippani is a folk dance of the Chorwad and Veraval area of Saurashtra in Gujarat. It grew out of the work of Koli women labourers who beat lime-concrete floors with a tippani, a long wooden pole with a heavy block at the lower end, while singing in two facing rows to lighten the labour. Today it is performed at festivals and weddings to instruments such as the turi, thali, dhol and shehnai.
+
+Q 42 | eco | Planning, Growth & Budget
+Which of the following is a key economic role of the government in both developed and developing countries?
+(1) Only regulating private firms
+(2) Only promoting exports
+(3) Framing laws and delivering justice
+(4) Engaging in currency exchange
+= 3
+~ In every economy, developed or developing, the state provides the legal and institutional framework within which markets work: it frames laws, defines and protects property rights, enforces contracts and delivers justice, besides maintaining law and order. Without this framework private economic activity cannot run smoothly. The other options are too narrow or wrong: governments do much more than only regulating firms or only promoting exports, and currency exchange is mainly handled by central banks and markets.
+
+Q 43 | cur | International
+The 2025 Global Peace Index indicates that global peacefulness has generally shown a:
+(1) Consistent upward trend
+(2) Gradual downward trend
+(3) Significant improvement
+(4) Stable and unchanging state
+= 2
+~ The Global Peace Index 2025, released in June 2025 by the Institute for Economics and Peace (IEP), Sydney, found that the average level of global peacefulness fell by 0.36%. This was the 13th deterioration in the last 17 years, showing a gradual long-term decline rather than improvement or stability. Iceland remained the most peaceful country (a position it has held since 2008), Russia was ranked the least peaceful, and India was placed 115th.
+
+Q 44 | eco | Agriculture, Industry & Trade
+When was the first Industrial Policy announced in independent India?
+(1) 1948
+(2) 1950
+(3) 1951
+(4) 1952
+= 1
+~ The first Industrial Policy Resolution of independent India was announced on 6 April 1948. It laid the basis of a mixed economy by dividing industries into four groups: those reserved for the state (such as arms, atomic energy and railways), basic industries where only the state would set up new units, industries under government regulation, and the rest left to the private sector. It was replaced by the Industrial Policy Resolution of 1956.
+
+Q 45 | eco | Planning, Growth & Budget
+Read the following statements carefully and choose the correct option regarding Assertion (A) and Reason (R).
+Assertion (A): Globalization led to increased inequality in India.
+Reason (R): Growth was unevenly distributed, benefiting mostly urban elite and service sectors.
+(1) Both A and R are true and R is the correct explanation of A.
+(2) Both A and R are true but R is not the correct explanation of A.
+(3) A is true but R is false.
+(4) A is false but R is true.
+= 1
+~ After the 1991 reforms (liberalisation, privatisation and globalisation) India's growth speeded up, but the gains were uneven. Much of the growth came from services such as IT, finance and telecom, which mainly benefited skilled urban workers and higher-income groups, while agriculture and the informal sector lagged behind. Critics therefore argue that income and regional inequality widened. The uneven distribution of growth is exactly why inequality rose, so both statements are true and R explains A.
+
+Q 46 | eco | Planning, Growth & Budget
+Disinvestment involves selling stakes in?
+(1) NGOs
+(2) Private firms
+(3) Public enterprises
+(4) Trade unions
+= 3
+~ Disinvestment means the government selling part or all of its equity in public sector enterprises, such as central public sector enterprises and public sector banks, through IPOs, offers for sale or strategic sale to a private buyer. The proceeds are non-debt capital receipts in the Union Budget. The work is handled by the Department of Investment and Public Asset Management (DIPAM) in the Ministry of Finance. The strategic sale of Air India to the Tata group in 2022 is a well-known example.
+
+Q 47 | geo | Environment & Ecology
+Which one of the following National Park–State pairs is correctly matched?
+(1) Namdapha National Park – Nagaland
+(2) Similipal National Park – Odisha
+(3) Bandipur National Park – Andhra Pradesh
+(4) Vansda National Park – Rajasthan
+= 2
+~ Similipal is in Mayurbhanj district, Odisha, and is the core of the Similipal Tiger Reserve and Biosphere Reserve, known for its melanistic (black) tigers. In April 2025 the Odisha government formally notified about 845.70 sq km of it as a national park, the state's second after Bhitarkanika. The other pairs are wrong: Namdapha is in Arunachal Pradesh, Bandipur is in Karnataka, and Vansda is in Navsari district of Gujarat.
+
+Q 48 | pol | Constitution & Rights
+The concept of “Reasonable Classification” as a limitation to the Right to Equality (Article 14) was established in which case?
+(1) Kesavananda Bharati v. State of Kerala
+(2) State of West Bengal v. Anwar Ali Sarkar
+(3) Maneka Gandhi v. Union of India
+(4) Golaknath Case v. State of Punjab & Anrs.
+= 2
+~ In State of West Bengal v. Anwar Ali Sarkar (1952), a seven-judge bench of the Supreme Court held that Article 14 forbids class legislation but permits reasonable classification. A classification is valid only if it rests on an intelligible differentia and that differentia has a rational nexus with the object of the law. The idea was first noted in Chiranjit Lal Chowdhury (1950) and restated in Budhan Choudhry (1955); E.P. Royappa (1974) and Maneka Gandhi (1978) later added the test of non-arbitrariness.
+
+Q 49 | cur | Static GK & Culture
+Match the dance with its core tribe/community.
+Dance | Tribe/Community
+1. Kalbelia | A. Nomadic snake-charmers of Rajasthan
+2. Panthi | B. Satnami (Chhattisgarh)
+3. Dangi Nritya | C. Dang district Bhil-origin tribes
+4. Paika | D. Khandayat warrior caste of Odisha
+(1) 1-A 2-B 3-C 4-D
+(2) 1-B 2-A 3-D 4-C
+(3) 1-C 2-B 3-A 4-D
+(4) 1-A 2-C 3-B 4-D
+= 1
+~ Kalbelia is the dance of the Kalbelia community, traditionally nomadic snake-charmers of Rajasthan; it is on UNESCO's intangible cultural heritage list (2010). Panthi is the devotional dance of the Satnami community of Chhattisgarh, honouring Guru Ghasidas. Dangi Nritya belongs to the Bhil and other tribes of the Dang district of Gujarat. Paika is a martial dance of Odisha linked with the Paikas, the traditional peasant militia drawn largely from the Khandayat caste. So the match is 1-A, 2-B, 3-C, 4-D.
+
+Q 50 | sci | Science & Technology
+Identify the incorrect match of satellite type and application:
+(1) Weather satellite - Cyclone tracking
+(2) Communication satellite - TV broadcast
+(3) Navigation satellite - Forest fire monitoring
+(4) Remote sensing satellite - Land use mapping
+= 3
+~ Navigation satellites, such as India's NavIC (IRNSS) and the US GPS, provide position, navigation and timing services; they do not monitor forest fires. Forest fires are detected by earth-observation (remote sensing) and weather satellites using thermal and infrared sensors, as in the Forest Survey of India's fire alert system. The other pairs are correct: weather satellites (INSAT-3D series) track cyclones, communication satellites (GSAT series) carry TV and DTH broadcasts, and remote sensing satellites map land use.
+
+Q 51 | qa | Ratio, Average & Mixtures
+If 30% of m is equal to 18% of n, what is the ratio m: n?
+(1) 5 : 3
+(2) 2 : 3
+(3) 3 : 5
+(4) 3 : 2
+= 3
+~ Write the condition as an equation: 0.30m = 0.18n, so m/n = 0.18/0.30 = 18/30 = 3/5. Hence m : n = 3 : 5. Check: with m = 3 and n = 5, 30% of 3 = 0.9 and 18% of 5 = 0.9. The tempting 5 : 3 reverses the ratio; the larger percentage goes with the smaller quantity.
+
+Q 52 | qa | Number System & Simplification
+Find the value of √(388 + √(127 + √289))
+(1) 20
+(2) 30
+(3) 40
+(4) 50
+= 1
+~ Simplify nested roots from the innermost one outwards. √289 = 17, so the middle root is √(127 + 17) = √144 = 12. The outer root then becomes √(388 + 12) = √400 = 20. Taking the roots in any other order, or adding 388 + 127 first, gives a wrong value.
+
+Q 53 | qa | Number System & Simplification
+Identify the incorrect relationship(s) from the list below:
+(i) √6 + √2 = √5 + √3
+(ii) √6 + √2 < √5 + √3
+(iii) √6 + √2 > √5 + √3
+(1) (i)
+(2) (ii)
+(3) (i) and (iii)
+(4) (ii) and (iii)
+= 3
+~ Compare by squaring both positive sums. (√6 + √2)² = 6 + 2 + 2√12 = 8 + 2√12, and (√5 + √3)² = 5 + 3 + 2√15 = 8 + 2√15. Since √15 > √12, √5 + √3 is larger (about 3.968 against 3.864). So (ii) is true, and (i) and (iii) are the incorrect relationships. When two pairs have equal sums under the roots (6 + 2 = 5 + 3), the pair whose numbers are closer together gives the bigger sum.
+
+Q 54 | qa | Percentage, Profit & Interest
+A bookseller purchases 5 novels at the marked price of 4 novels from a distributor. If he then sells these novels to customers, offering a discount of 5% on the marked price, what is his profit percentage?
+(1) 15%
+(2) 18.75%
+(3) 20.26%
+(4) 25%
+= 2
+~ Let the marked price of one novel be ₹100. The bookseller pays the price of 4 novels for 5, so CP of 5 novels = ₹400. He sells each at 95% of ₹100, so SP of 5 novels = 5 × 95 = ₹475. Profit = 475 − 400 = ₹75, and profit % = 75/400 × 100 = 18.75%. Profit is reckoned on the cost (₹400), not on the marked value of the 5 novels.
+
+Q 55 | qa | Time, Work, Speed & Distance
+A and B can finish a certain job in 28 and 35 days, respectively. They started working together, but A left after a while, and B managed to complete the remaining work in 17 days. How many days did A work before leaving?
+(1) 8 days
+(2) 5 days
+(3) 6 7/2 days
+(4) 7 5/2 days
+= 1
+~ Take total work = LCM(28, 35) = 140 units. A does 140/28 = 5 units a day and B does 140/35 = 4 units a day. B alone works 17 days at the end, doing 17 × 4 = 68 units, so the two together did 140 − 68 = 72 units at 5 + 4 = 9 units a day. Hence they worked together for 72/9 = 8 days, which is how long A worked before leaving.
+
+Q 56 | qa | Algebra
+Given, x + 1/x = 4, Find the value of: x⁶ + 1/x⁶ − 3(x⁴ + 1/x⁴) + 4(x² + 1/x²)
+(1) 2176
+(2) 2087
+(3) 2562
+(4) 2476
+= 1
+~ From x + 1/x = 4: x² + 1/x² = 4² − 2 = 14; x⁴ + 1/x⁴ = 14² − 2 = 194; and x⁶ + 1/x⁶ = (x² + 1/x²)³ − 3(x² + 1/x²) = 14³ − 3 × 14 = 2744 − 42 = 2702. The expression is 2702 − 3 × 194 + 4 × 14 = 2702 − 582 + 56 = 2176. Each step uses (a + 1/a)² = a² + 1/a² + 2 or the cube identity (a + 1/a)³ = a³ + 1/a³ + 3(a + 1/a).
+
+Q 57 | qa | Percentage, Profit & Interest
+Reena borrowed Rs. 1200 at simple interest for a number of years equal to the rate of interest. At the end of the loan term, she paid Rs. 432 in interest. What was the interest rate?
+(1) 6%
+(2) 7%
+(3) 8%
+(4) 9%
+= 1
+~ Simple interest SI = P × R × T/100. Here T = R, so 432 = 1200 × R × R/100 = 12R². Then R² = 432/12 = 36 and R = 6. The rate is 6% per annum for 6 years. Check: 1200 × 6 × 6/100 = ₹432.
+
+Q 58 | qa | Percentage, Profit & Interest
+A person invested ₹20,000 in two different schemes. He invested one part for 4 years at 8% simple interest and the other part for the same duration at 10% simple interest. If the interest earned from the second part was ₹2,240 more than the interest earned from the first part, how much money was invested in the second scheme?
+(1) ₹8,000
+(2) ₹10,000
+(3) ₹12,000
+(4) ₹12,500
+= 3
+~ Let ₹x be invested at 10%; then ₹(20,000 − x) is at 8%. Over 4 years the interests are 40% of x and 32% of (20,000 − x). So 0.40x − 0.32(20,000 − x) = 2,240, giving 0.72x − 6,400 = 2,240, i.e. 0.72x = 8,640 and x = ₹12,000. Check: 4,800 − 2,560 = ₹2,240.
+
+Q 59 | qa | Trigonometry & Heights
+A rock climber uses a rope to ascend a cliff. If the vertical height of the cliff is 35 meters and the rope makes an angle of 30° with the level ground, what is the minimum length of the rope required to reach the top?
+(1) 35m
+(2) 40m
+(3) 60m
+(4) 70m
+= 4
+~ The rope is the hypotenuse of a right triangle whose side opposite the 30° angle is the cliff height. So sin 30° = height/rope, giving rope = 35/sin 30° = 35/(1/2) = 70 m. Using tan 30° instead would give the horizontal distance from the foot of the cliff (35√3 ≈ 60.6 m), not the rope length.
+
+Q 60 | qa | Mensuration
+A marble is spherical in shape with a radius of 4 cm. If the marble is placed inside a cube with side length 10 cm, what is the volume of the cube that is not occupied by the marble?
+(1) 100 cm³
+(2) 732.06 cm³
+(3) 300 cm³
+(4) 624.82 cm³
+= 2
+~ Volume of the cube = 10³ = 1000 cm³. Volume of the marble = (4/3)πr³ = (4/3) × 3.14 × 4³ = (4/3) × 3.14 × 64 = 267.946… cm³. Unoccupied volume = 1000 − 267.946 ≈ 732.05 cm³; the keyed 732.06 cm³ comes from cutting the marble volume to 267.94, and with exact π the value is about 731.92 cm³. Either way 732.06 cm³ is the only option near the true value. The sphere fits because its diameter, 8 cm, is less than the cube's side.
+
+Q 61 | qa | Mensuration
+Two hemispheres of radii 2 cm and 4 cm respectively are melted and recast into another hemisphere. What is the approximate total surface area of the newly formed hemisphere?
+(1) 163cm²
+(2) 142cm³
+(3) 150cm²
+(4) 138cm²
+= 1
+~ Volume is conserved: (2/3)πR³ = (2/3)π(2³ + 4³), so R³ = 8 + 64 = 72 and R ≈ 4.16 cm. Total surface area of a solid hemisphere = curved 2πR² + base πR² = 3πR² = 3 × 3.1416 × 17.31 ≈ 163 cm². Remember to include the flat circular face; using only 2πR² gives about 109 cm².
+
+Q 62 | qa | Mensuration
+If all three dimensions of a cuboid are increased by 10%, the volume increases by what percentage?
+(1) 10%
+(2) 21%
+(3) 30%
+(4) 33.1%
+= 4
+~ Volume = l × b × h. With each dimension multiplied by 1.1, the new volume is 1.1³ = 1.331 times the old one, an increase of 33.1%. Equivalently, apply successive change three times: 10% and 10% give 21%, then 21% and 10% give 21 + 10 + 2.1 = 33.1%. Simply adding (30%) ignores the compounding.
+
+Q 63 | qa | Mensuration
+A cone is sliced into two sections by a plane that is parallel to its base, with the upper section representing 1/8 of the overall volume. What is the ratio of the heights of the smaller cone to the original cone?
+(1) 1 : 2
+(2) 1 : 7
+(3) 5 : 1
+(4) 6 : 1
+= 1
+~ A cut parallel to the base gives a small cone similar to the original. For similar solids, volumes are in the ratio of the cubes of corresponding lengths, so (h/H)³ = 1/8 and h/H = 1/2. Hence the heights are in the ratio 1 : 2. The ratio 1 : 7 is that of the volumes of the small cone and the remaining frustum, not of heights.
+
+Q 64 | qa | Trigonometry & Heights
+If sin A = 3/5 and cos B = 12/13, A and B ∈ (0, π/2), find sin(A + B).
+(1) 56/65
+(2) 63/65
+(3) 33/65
+(4) 77/85
+= 1
+~ Both angles are acute, so all ratios are positive. From sin A = 3/5, cos A = 4/5 (3-4-5 triangle); from cos B = 12/13, sin B = 5/13 (5-12-13 triangle). Then sin(A + B) = sin A cos B + cos A sin B = (3/5)(12/13) + (4/5)(5/13) = 36/65 + 20/65 = 56/65. The value 16/65 would be sin(A − B).
+
+Q 65 | qa | Trigonometry & Heights
+A tower generates a shadow that is 40 meters long when the sun’s angle of elevation is 45 degrees. What is the height of the tower?
+(1) 50 m
+(2) 40 m
+(3) 20 m
+(4) 10 m
+= 2
+~ The tower, its shadow and the sun's ray form a right triangle with the angle of elevation at the tip of the shadow. tan 45° = height/shadow, and tan 45° = 1, so height = shadow = 40 m. Whenever the elevation is 45°, the height of the object equals the length of its shadow.
+
+Q 66 | qa | Algebra
+A line y = mx + 2 passes through (3,8). Find m.
+(1) 5
+(2) 4
+(3) 3
+(4) 2
+= 4
+~ A point lies on a line when its coordinates satisfy the equation. Put x = 3 and y = 8 in y = mx + 2: 8 = 3m + 2, so 3m = 6 and m = 2. Here m is the slope and 2 is the y-intercept, so the line rises 2 units for each unit moved to the right.
+
+Q 67 | qa | Mensuration
+A sector of a circle has a central angle of 120° and a radius of 5 cm. Another sector of the same circle has a central angle of 2π/3 radians. What is the ratio of the area of the first sector to the area of the second sector?
+(1) 1:1
+(2) 3:4
+(3) 2:3
+(4) 5:6
+= 1
+~ Convert radians to degrees: 2π/3 rad = (2/3) × 180° = 120°. Both sectors are in the same circle (radius 5 cm) and have the same central angle, so their areas, (θ/360°) × πr², are equal: each is (1/3) × π × 25 ≈ 26.2 cm². Hence the ratio is 1 : 1. The different units are the only trap in the question.
+
+Q 68 | qa | Geometry
+What is the measure of each interior angle in a regular eight-sided polygon?
+(1) 120°
+(2) 135°
+(3) 150°
+(4) 165°
+= 2
+~ The sum of the interior angles of an n-sided polygon is (n − 2) × 180°. For a regular octagon, n = 8, so the sum is 6 × 180° = 1080° and each angle is 1080°/8 = 135°. Alternatively, each exterior angle is 360°/8 = 45°, so each interior angle is 180° − 45° = 135°. 120° is the angle of a regular hexagon.
+
+Q 69 | qa | Mensuration
+In a trapezoid, the two parallel sides are in the ratio 3:5. If the height of the trapezoid is 10 cm and its total area is 240 cm², determine the lengths of the parallel sides.
+(1) 15 cm and 25 cm
+(2) 18 cm and 30 cm
+(3) 20 cm and 40 cm
+(4) 30 cm and 50 cm
+= 2
+~ Let the parallel sides be 3k and 5k. Area of a trapezium = ½ × (sum of parallel sides) × height, so 240 = ½ × 8k × 10 = 40k, giving k = 6. The sides are 3 × 6 = 18 cm and 5 × 6 = 30 cm. Check: ½ × 48 × 10 = 240 cm². Option 15 cm and 25 cm keeps the ratio but gives an area of only 200 cm².
+
+Q 70 | qa | Geometry
+△ABC has sides AB=5 cm, BC=6 cm, AC=7 cm. △XYZ is congruent to △ABC. What is the perimeter of △XYZ?
+(1) 13 cm
+(2) 18 cm
+(3) 20 cm
+(4) 24 cm
+= 2
+~ Congruent triangles have exactly the same size and shape, so their corresponding sides are equal. Hence △XYZ has sides 5 cm, 6 cm and 7 cm, and its perimeter equals that of △ABC: 5 + 6 + 7 = 18 cm. (Only for similar, not congruent, triangles would the perimeters be in a ratio other than 1 : 1.)
+
+Q 71 | qa | Algebra
+Given, √x + 1/√x = 4, then what is x + 1/x?
+(1) 15
+(2) 14
+(3) 16
+(4) 17
+= 2
+~ Square both sides: (√x + 1/√x)² = x + 1/x + 2 × √x × (1/√x) = x + 1/x + 2. So 4² = x + 1/x + 2, i.e. 16 = x + 1/x + 2, giving x + 1/x = 14. A common slip is to forget the middle term 2 and choose 16.
+
+Q 72 | qa | Trigonometry & Heights
+If cot A = 2, then sin A − cos A = ?
+(1) 2/√5
+(2) −1/√5
+(3) 0
+(4) 3/5
+= 2
+~ cot A = adjacent/opposite = 2/1, so take adjacent side 2, opposite side 1 and hypotenuse √(2² + 1²) = √5. Taking A as acute (the usual assumption), sin A = 1/√5 and cos A = 2/√5. Hence sin A − cos A = 1/√5 − 2/√5 = −1/√5. The result is negative because cot A > 1 means A < 45°, where cos A exceeds sin A. (If A were in the third quadrant, both ratios would be negative and the value +1/√5, which is not an option.)
+
+Q 73 | qa | Geometry
+A circle has radius 7 cm. A tangent is drawn from an external point P. If the length of the tangent is 24 cm, what is the distance from P to the center of the circle?
+(1) 17 cm
+(2) 25 cm
+(3) 31 cm
+(4) 576 cm
+= 2
+~ The radius drawn to the point of contact is perpendicular to the tangent, so the radius, the tangent and the line from P to the centre form a right triangle with that line as hypotenuse. Distance = √(7² + 24²) = √(49 + 576) = √625 = 25 cm. Option 576 cm is just 24², and 31 cm is the simple sum 7 + 24.
+
+Q 74 | qa | Geometry
+From a point outside a circle, two tangents are drawn to the circle. If one of the tangents measures 12 cm, what is the length of the other tangent?
+(1) 10 cm
+(2) 11 cm
+(3) 12 cm
+(4) 14 cm
+= 3
+~ The two tangents drawn to a circle from an external point are always equal in length. This follows from congruent right triangles: each has the line joining the point to the centre as hypotenuse and a radius as one leg, which is perpendicular to the tangent. Hence the other tangent is also 12 cm.
+
+Q 75 | qa | Number System & Simplification
+Evaluate: (0.04³ + 0.02³) ÷ (0.2³ + 0.1³)
+(1) 0.008
+(2) 0.004
+(3) 0.002
+(4) 0.016
+= 1
+~ Note that 0.04 = 0.2 × 0.2 and 0.02 = 0.1 × 0.2, so the numerator is 0.2³ × (0.2³ + 0.1³). Dividing by (0.2³ + 0.1³) leaves 0.2³ = 0.008. Directly: numerator = 0.000064 + 0.000008 = 0.000072 and denominator = 0.008 + 0.001 = 0.009, so the value is 0.000072/0.009 = 0.008.
+
+Q 76 | eng | Vocabulary
+Select the most appropriate synonym of the given word: INVECTIVE
+(1) Eulogy
+(2) Compliment
+(3) Praise
+(4) Tirade
+= 4
+~ 'Invective' means insulting, abusive or highly critical language, a violent verbal attack on someone. Its synonym is 'tirade', a long, angry speech of criticism or accusation, as in 'The leader launched a tirade against the government.' 'Eulogy' (a speech praising someone, especially after death), 'compliment' and 'praise' all express approval, so they are closer to antonyms of invective than synonyms.
+
+Q 77 | eng | Vocabulary
+Select the most appropriate synonym of the given word: EBULLIENT
+(1) Depressed
+(2) Dull
+(3) Enthusiastic
+(4) Calm
+= 3
+~ 'Ebullient' means cheerful and full of energy and excitement; it literally means 'boiling over' (Latin ebullire, to bubble out). So 'enthusiastic' is the closest synonym, as in 'an ebullient crowd'. 'Depressed' and 'dull' are its opposites, and 'calm' suggests quiet composure, which is the reverse of the bubbling excitement that ebullient describes.
+
+Q 78 | eng | Vocabulary
+Select the most appropriate antonym of the given word. Sagacious
+(1) Insightful
+(2) Wise
+(3) Foolish
+(4) Prudent
+= 3
+~ 'Sagacious' means having keen mental discernment and sound judgement; wise and shrewd (Latin sagax, 'of keen perception'). Its antonym is 'foolish', lacking good sense or judgement. 'Insightful', 'wise' and 'prudent' (careful and sensible about the future) are all synonyms or near-synonyms of sagacious, so none of them can be its opposite.
+
+Q 79 | eng | Idioms & One-word Substitution
+Choose the correct meaning of idiom:
+Gall and wormwood
+(1) Lingering curiosity
+(2) Harmless envy
+(3) Sudden realization or enlightenment
+(4) Deep frustration or resentment
+= 4
+~ 'Gall and wormwood' describes something extremely bitter and galling to a person, a source of deep frustration, bitterness or resentment. Gall (bile) and wormwood (a bitter herb) are both proverbially bitter, and the phrase comes from the Bible. Example: His rival's promotion was gall and wormwood to him. The idiom has nothing to do with curiosity, harmless envy or sudden enlightenment.
+
+Q 80 | eng | Spelling
+Choose the correct spelling of a word meaning 'a person of high rank or title'.
+(1) Nobble
+(2) Noblie
+(3) Noble
+(4) Nobel
+= 3
+~ The correct spelling is 'noble' (n-o-b-l-e). As a noun, a noble is a person who belongs to the aristocracy by birth or title, such as a duke or an earl; as an adjective it also means having fine moral qualities. 'Nobble' is a different, informal British verb meaning to tamper with or win over improperly, 'Noblie' is not a word, and 'Nobel' is the surname of Alfred Nobel, after whom the Nobel Prizes are named.
+
+Q 81 | eng | Spelling
+Choose the correctly spelt word for Expression of mild disapproval
+(1) Expostulation
+(2) Expossulation
+(3) Expostelation
+(4) Expostullation
+= 1
+~ 'Expostulation' (e-x-p-o-s-t-u-l-a-t-i-o-n) is the correct spelling. It means an expression of mild disapproval or an earnest, reasoned protest; the verb 'expostulate' means to argue with someone to dissuade them. Note the single s in 'st' and the single l in '-ulation'. 'Expossulation' (double s), 'Expostelation' (e in place of u) and 'Expostullation' (double l) are misspellings.
+
+Q 82 | eng | Idioms & One-word Substitution
+Choose the correct one-word substitution for: ‘A person who is excessively concerned with minor details’.
+(1) Critic
+(2) Grammarian
+(3) Scholar
+(4) Pedant
+= 4
+~ A 'pedant' is a person who is excessively concerned with minor details and rules, especially in learning or language; the adjective is 'pedantic'. A 'critic' judges the merits of books, films or works of art, a 'grammarian' is an expert in grammar, and a 'scholar' is a learned person. Only 'pedant' carries the sense of fussy, excessive attention to trivial details.
+
+Q 83 | eng | Idioms & One-word Substitution
+Choose the correct one-word substitute for: “To leave suddenly and hurriedly”.
+(1) Abscond
+(2) Perambulate
+(3) Circumambulate
+(4) Loiter
+= 1
+~ 'Abscond' means to leave suddenly and hurriedly, usually in secret, often to escape arrest or responsibility, as in 'The cashier absconded with the money.' 'Perambulate' means to walk through a place in a leisurely way, 'circumambulate' means to walk all the way round something such as a shrine, and 'loiter' means to stand or wait around idly. None of these suggests a sudden departure.
+
+Q 84 | eng | Fill in the Blanks & Cloze Test
+Fill in the Blanks :
+Had they submitted the proposal earlier, they ______ the funding.
+(1) would get
+(2) would have received
+(3) had received
+(4) will have received
+= 2
+~ 'Had they submitted' is an inverted third conditional (= 'If they had submitted'), which refers to an unreal past situation. The result clause of a third conditional takes would/could/might + have + past participle, so 'they would have received the funding'. 'Would get' belongs to the second conditional, 'had received' cannot stand in the result clause, and 'will have received' (future perfect) does not suit an unreal past.
+
+Q 85 | eng | Error Spotting & Sentence Improvement
+Find the part of the sentence that contains an error:
+The CEO along with his deputies (1)/ were present during the final negotiations (2)/ with the investors (3)/ and regulators. (4)/
+(1) (1)
+(2) (2)
+(3) (3)
+(4) (4)
+= 2
+~ The subject is 'The CEO', which is singular. A phrase introduced by 'along with', 'together with', 'as well as' or 'accompanied by' does not change the number of the subject, so the verb must agree with 'The CEO', not with 'his deputies'. Part (2) should read 'was present during the final negotiations'. The other parts, 'The CEO along with his deputies' and 'with the investors and regulators', are correct.
+
+Q 86 | eng | Voice & Narration
+Change the following from active to passive:
+The storm damaged many houses.
+(1) Many houses are damaged by the storm.
+(2) Many houses had been damaged by the storm.
+(3) Many houses were damaged by the storm.
+(4) Many houses have been damaged by the storm.
+= 3
+~ In the active sentence 'The storm' is the subject, 'damaged' is simple past and 'many houses' is the object. In the passive the object becomes the subject and the simple past takes was/were + past participle, with 'were' for the plural 'houses': 'Many houses were damaged by the storm.' Option 1 (are damaged) is present tense, option 2 (had been damaged) is past perfect and option 4 (have been damaged) is present perfect.
+
+Q 87 | eng | Error Spotting & Sentence Improvement
+Find the part of the sentence that contains an error:
+If the allegations were substantiated (1)/ and procedural lapses proven, the committee might have (2)/ had enough reason to initiate an internal probe (3)/ which never occurred. (4)
+(1) (1)
+(2) (2)
+(3) (3)
+(4) (4)
+= 2
+~ 'Which never occurred' shows the probe never took place, so this is an unreal past (third) conditional: If + had + past participle, with might/would + have + past participle in the result. The key marks part (2), taking 'and procedural lapses proven' as faulty: it should read 'and procedural lapses had been proven' to match 'might have had'. But part (1) 'were substantiated' has the same tense fault ('had been substantiated'), and once it is corrected the shortened 'procedural lapses proven' is acceptable, so part (1) is the stronger answer. (SSC key; some sources differ.)
+
+Q 88 | eng | Vocabulary
+Select the sentence containing the homonym of the highlighted word:
+The bishop wore a "mitre" embroidered with gold thread.
+(1) The welder fitted a steel mitre joint at a 45° angle.
+(2) The cardinal’s mitre was trimmed in crimson.
+(3) The procession displayed an ancient mitre in a glass case.
+(4) The children admired the sparkling mitre on the altar.
+= 1
+~ In the given sentence 'mitre' is the tall, pointed headdress worn by bishops. Its homonym (same spelling and sound, different meaning) is the 'mitre' of carpentry and metalwork: a joint made by cutting two pieces at an angle, usually 45°, so that they meet at a right angle, as in a picture frame. Option 1 uses this sense. Options 2, 3 and 4 (the cardinal's mitre, an ancient mitre, a mitre on the altar) all refer to the headdress.
+
+Q 89 | eng | Voice & Narration
+Convert the sentence provided below from its passive voice structure to an active voice structure:
+The findings were interpreted to have been misrepresented by the spokesperson in the official release.
+(1) It is believed that the spokesperson misrepresented the findings.
+(2) The official release was said to have misrepresented the spokesperson.
+(3) The spokesperson is believed to have misrepresented the findings.
+(4) It was believed that the spokesperson had misinterpreted the release.
+= 3
+~ 'The spokesperson' is the doer and 'the findings' the receiver of 'misrepresented'. No option keeps 'were interpreted', so judge by the inner clause: the passive perfect infinitive 'to have been misrepresented by the spokesperson' becomes the active 'the spokesperson ... to have misrepresented the findings', giving 'The spokesperson is believed to have misrepresented the findings.' Option 1 says much the same but recasts it as an 'It is believed that' clause, option 2 reverses the roles, and option 4 changes the verb to 'misinterpreted' and the object to 'the release'.
+
+Q 90 | eng | Error Spotting & Sentence Improvement
+Choose the most suitable option to replace the highlighted part of the sentence:
+I "am liking this movie" a lot.
+(1) have liked
+(2) like
+(3) liked
+(4) am enjoy this movie
+= 2
+~ 'Like' is a stative verb: it expresses a state of mind or feeling rather than an action. Stative verbs such as like, love, hate, know, believe and prefer are normally not used in the continuous tenses, so 'I am liking this movie a lot' should be 'I like this movie a lot' (simple present). 'Have liked' and 'liked' change the time reference to a completed or past experience, and 'am enjoy this movie' is ungrammatical.
+
+Q 91 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+In contemporary discourse, “free will” is often celebrated as the cornerstone of individual autonomy and democratic agency. Yet, a deeper examination reveals that this perceived freedom may be more constructed than authentic. Modern society, while outwardly championing liberty, subtly engineers conformity through systems of social conditioning, digital surveillance, and algorithmic manipulation. The choices we make—what to wear, what to consume, even what to believe—are frequently shaped less by volition than by invisible frameworks of control. Consumer behavior is a telling example. Market forces, armed with behavioral data and predictive analytics, sculpt preferences before individuals are even conscious of them. Personalization engines masquerade as facilitators of choice, but in reality, they nudge individuals toward decisions already engineered to optimize corporate profit. Similarly, social media platforms curate information ecosystems that reinforce existing biases, creating cognitive echo chambers that masquerade as informed choice. Even political decisions—arguably the most significant expression of agency—are susceptible to manipulation. Campaign strategies leveraging psychographic profiling can influence voting behavior by exploiting psychological vulnerabilities rather than rational deliberation. The illusion of participation, thus, replaces genuine engagement. Moreover, societal norms, instilled through education, media, and cultural traditions, define the boundaries within which ‘freedom’ operates. A person may “choose” a career path, but that choice is often filtered through expectations shaped by socioeconomic class, geography, and familial pressures. What appears voluntary is often a conditioned response disguised as self-determination. To be clear, this is not an argument for fatalism, but rather a call for awareness. Recognizing the architecture that underpins our choices is the first step toward reclaiming autonomy. True agency, therefore, is not the absence of influence but the conscious interrogation of it. Without such reflection, free will in modern society may remain a comforting mirage rather than an existential reality.
+What is the central argument of the passage?
+(1) Free will is incompatible with democracy
+(2) True freedom requires interrogation of influences
+(3) Modern society gives full autonomy to individuals
+(4) Autonomy is best achieved through capitalism
+= 2
+~ The passage shows how markets, algorithms, social media, campaigns and social norms shape our choices, but says this is 'not an argument for fatalism, but rather a call for awareness'. Its conclusion is that 'True agency ... is not the absence of influence but the conscious interrogation of it', so true freedom requires questioning those influences. Option 1 is never claimed, option 3 contradicts the view that society 'subtly engineers conformity', and option 4 is wrong because market forces are criticised, not praised.
+
+Q 92 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+In contemporary discourse, “free will” is often celebrated as the cornerstone of individual autonomy and democratic agency. Yet, a deeper examination reveals that this perceived freedom may be more constructed than authentic. Modern society, while outwardly championing liberty, subtly engineers conformity through systems of social conditioning, digital surveillance, and algorithmic manipulation. The choices we make—what to wear, what to consume, even what to believe—are frequently shaped less by volition than by invisible frameworks of control. Consumer behavior is a telling example. Market forces, armed with behavioral data and predictive analytics, sculpt preferences before individuals are even conscious of them. Personalization engines masquerade as facilitators of choice, but in reality, they nudge individuals toward decisions already engineered to optimize corporate profit. Similarly, social media platforms curate information ecosystems that reinforce existing biases, creating cognitive echo chambers that masquerade as informed choice. Even political decisions—arguably the most significant expression of agency—are susceptible to manipulation. Campaign strategies leveraging psychographic profiling can influence voting behavior by exploiting psychological vulnerabilities rather than rational deliberation. The illusion of participation, thus, replaces genuine engagement. Moreover, societal norms, instilled through education, media, and cultural traditions, define the boundaries within which ‘freedom’ operates. A person may “choose” a career path, but that choice is often filtered through expectations shaped by socioeconomic class, geography, and familial pressures. What appears voluntary is often a conditioned response disguised as self-determination. To be clear, this is not an argument for fatalism, but rather a call for awareness. Recognizing the architecture that underpins our choices is the first step toward reclaiming autonomy. True agency, therefore, is not the absence of influence but the conscious interrogation of it. Without such reflection, free will in modern society may remain a comforting mirage rather than an existential reality.
+What is meant by "cognitive echo chambers"?
+(1) Media echoing public opinions
+(2) Repetitive political slogans
+(3) Information environments reinforcing existing beliefs
+(4) Chatbots mimicking users
+= 3
+~ The passage says social media platforms 'curate information ecosystems that reinforce existing biases, creating cognitive echo chambers'. An echo chamber is an environment in which a person meets only views that repeat and confirm what he already believes, so the phrase means information environments that reinforce existing beliefs. The passage does not speak of the media echoing public opinion, repetitive political slogans or chatbots mimicking users.
+
+Q 93 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+In contemporary discourse, “free will” is often celebrated as the cornerstone of individual autonomy and democratic agency. Yet, a deeper examination reveals that this perceived freedom may be more constructed than authentic. Modern society, while outwardly championing liberty, subtly engineers conformity through systems of social conditioning, digital surveillance, and algorithmic manipulation. The choices we make—what to wear, what to consume, even what to believe—are frequently shaped less by volition than by invisible frameworks of control. Consumer behavior is a telling example. Market forces, armed with behavioral data and predictive analytics, sculpt preferences before individuals are even conscious of them. Personalization engines masquerade as facilitators of choice, but in reality, they nudge individuals toward decisions already engineered to optimize corporate profit. Similarly, social media platforms curate information ecosystems that reinforce existing biases, creating cognitive echo chambers that masquerade as informed choice. Even political decisions—arguably the most significant expression of agency—are susceptible to manipulation. Campaign strategies leveraging psychographic profiling can influence voting behavior by exploiting psychological vulnerabilities rather than rational deliberation. The illusion of participation, thus, replaces genuine engagement. Moreover, societal norms, instilled through education, media, and cultural traditions, define the boundaries within which ‘freedom’ operates. A person may “choose” a career path, but that choice is often filtered through expectations shaped by socioeconomic class, geography, and familial pressures. What appears voluntary is often a conditioned response disguised as self-determination. To be clear, this is not an argument for fatalism, but rather a call for awareness. Recognizing the architecture that underpins our choices is the first step toward reclaiming autonomy. True agency, therefore, is not the absence of influence but the conscious interrogation of it. Without such reflection, free will in modern society may remain a comforting mirage rather than an existential reality.
+According to the passage, how do personalization algorithms affect consumer choice?
+(1) They eliminate market competition
+(2) They empower user decisions
+(3) They manipulate preferences subtly
+(4) They increase data privacy
+= 3
+~ The passage says market forces using behavioural data 'sculpt preferences before individuals are even conscious of them', and that personalization engines 'masquerade as facilitators of choice' while they 'nudge individuals toward decisions already engineered to optimize corporate profit'. So they manipulate preferences subtly. Option 2 is the opposite of the author's view, since 'masquerade' shows the empowerment is only apparent, and market competition and data privacy are not discussed.
+
+Q 94 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+In contemporary discourse, “free will” is often celebrated as the cornerstone of individual autonomy and democratic agency. Yet, a deeper examination reveals that this perceived freedom may be more constructed than authentic. Modern society, while outwardly championing liberty, subtly engineers conformity through systems of social conditioning, digital surveillance, and algorithmic manipulation. The choices we make—what to wear, what to consume, even what to believe—are frequently shaped less by volition than by invisible frameworks of control. Consumer behavior is a telling example. Market forces, armed with behavioral data and predictive analytics, sculpt preferences before individuals are even conscious of them. Personalization engines masquerade as facilitators of choice, but in reality, they nudge individuals toward decisions already engineered to optimize corporate profit. Similarly, social media platforms curate information ecosystems that reinforce existing biases, creating cognitive echo chambers that masquerade as informed choice. Even political decisions—arguably the most significant expression of agency—are susceptible to manipulation. Campaign strategies leveraging psychographic profiling can influence voting behavior by exploiting psychological vulnerabilities rather than rational deliberation. The illusion of participation, thus, replaces genuine engagement. Moreover, societal norms, instilled through education, media, and cultural traditions, define the boundaries within which ‘freedom’ operates. A person may “choose” a career path, but that choice is often filtered through expectations shaped by socioeconomic class, geography, and familial pressures. What appears voluntary is often a conditioned response disguised as self-determination. To be clear, this is not an argument for fatalism, but rather a call for awareness. Recognizing the architecture that underpins our choices is the first step toward reclaiming autonomy. True agency, therefore, is not the absence of influence but the conscious interrogation of it. Without such reflection, free will in modern society may remain a comforting mirage rather than an existential reality.
+Why does the author mention career choices in the context of free will?
+(1) To show how education leads to autonomy
+(2) To highlight the irrelevance of family
+(3) To illustrate the illusion of self-determination shaped by societal filters
+(4) To argue that class no longer matters
+= 3
+~ The author says a person may "choose" a career path, but the choice is 'filtered through expectations shaped by socioeconomic class, geography, and familial pressures', and adds that what appears voluntary is often 'a conditioned response disguised as self-determination'. The quotation marks around 'choose' signal this irony, so the example illustrates the illusion of self-determination. Options 2 and 4 contradict the passage, which stresses family and class, and option 1 is not argued; education is listed among the conditioning forces.
+
+Q 95 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+In contemporary discourse, “free will” is often celebrated as the cornerstone of individual autonomy and democratic agency. Yet, a deeper examination reveals that this perceived freedom may be more constructed than authentic. Modern society, while outwardly championing liberty, subtly engineers conformity through systems of social conditioning, digital surveillance, and algorithmic manipulation. The choices we make—what to wear, what to consume, even what to believe—are frequently shaped less by volition than by invisible frameworks of control. Consumer behavior is a telling example. Market forces, armed with behavioral data and predictive analytics, sculpt preferences before individuals are even conscious of them. Personalization engines masquerade as facilitators of choice, but in reality, they nudge individuals toward decisions already engineered to optimize corporate profit. Similarly, social media platforms curate information ecosystems that reinforce existing biases, creating cognitive echo chambers that masquerade as informed choice. Even political decisions—arguably the most significant expression of agency—are susceptible to manipulation. Campaign strategies leveraging psychographic profiling can influence voting behavior by exploiting psychological vulnerabilities rather than rational deliberation. The illusion of participation, thus, replaces genuine engagement. Moreover, societal norms, instilled through education, media, and cultural traditions, define the boundaries within which ‘freedom’ operates. A person may “choose” a career path, but that choice is often filtered through expectations shaped by socioeconomic class, geography, and familial pressures. What appears voluntary is often a conditioned response disguised as self-determination. To be clear, this is not an argument for fatalism, but rather a call for awareness. Recognizing the architecture that underpins our choices is the first step toward reclaiming autonomy. True agency, therefore, is not the absence of influence but the conscious interrogation of it. Without such reflection, free will in modern society may remain a comforting mirage rather than an existential reality.
+What tone best describes the author’s perspective?
+(1) Fatalistic and passive
+(2) Neutral and historical
+(3) Reflective and critical
+(4) Optimistic and persuasive
+= 3
+~ The author reflects on whether free will is real and critically examines how markets, algorithms, campaigns and social norms shape our choices, so the tone is reflective and critical. It is not fatalistic or passive, because the author says 'this is not an argument for fatalism, but rather a call for awareness'. It is not neutral or historical, since it takes a clear stand on the present, and not optimistic, since free will 'may remain a comforting mirage'.
+
+Q 96 | eng | Voice & Narration
+A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech.
+Rita said, “I haven't eaten anything.”
+(1) Rita said that she didn’t eat anything.
+(2) Rita said that she hasn’t eaten anything.
+(3) Rita said that she hadn't eaten anything.
+(4) Rita said that she wasn't eating anything.
+= 3
+~ When the reporting verb is in the past tense ('said'), the present perfect of the direct speech shifts back to the past perfect in indirect speech: 'haven't eaten' becomes 'hadn't eaten', and the pronoun 'I' becomes 'she'. Hence: 'Rita said that she hadn't eaten anything.' Option 1 uses the simple past, option 2 keeps the present perfect without the required backshift, and option 4 wrongly changes it to the past continuous.
+
+Q 97 | eng | Voice & Narration
+A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech.
+They said, “We shall overcome this challenge together.”
+(1) They said they will overcome that challenge together.
+(2) They said they should overcome this challenge together.
+(3) They said they would overcome that challenge together.
+(4) They said they shall overcome that challenge together.
+= 3
+~ With a past reporting verb ('said'), 'shall' expressing a future intention changes to 'would' in indirect speech, the pronoun 'we' becomes 'they', and 'this' becomes 'that'. So: 'They said they would overcome that challenge together.' Option 1 keeps 'will' and option 4 keeps 'shall' without the backshift, while option 2 uses 'should', which suggests obligation, and also leaves 'this' unchanged.
+
+Q 98 | eng | Voice & Narration
+A sentence is provided in indirect speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding direct speech.
+The lawyer said that had the evidence not been tampered with, the verdict could have been different.
+(1) “If the evidence had not tampered with, the verdict could change,” said the lawyer.
+(2) “If the evidence were not tampered with, the verdict could have changed,” the lawyer said.
+(3) “Had the evidence not been tampered with, the verdict could have been different,” said the lawyer.
+(4) “Had not the evidence tampered, the verdict may differ,” said he.
+= 3
+~ The reported clause is an inverted third conditional: 'had the evidence not been tampered with, the verdict could have been different'. Unreal past conditionals keep the same tense in direct and indirect speech, so the direct form simply puts the same words in quotation marks. Option 1 drops 'been' (making the evidence the doer) and changes the result clause, option 2 uses 'were' instead of 'had been', and option 4 drops 'been ... with' and uses 'may differ'.
+
+Q 99 | eng | Sentence Arrangement
+Rearrange the following sentences to form a coherent paragraph:
+1. Artificial intelligence is a field of computer science focused on creating machines that can simulate human cognitive functions.
+2. This process is used in various applications, from self-driving cars to medical diagnosis systems.
+3. This is typically achieved by training machine learning models on vast datasets, allowing them to identify patterns and make predictions.
+4. Through this training, an AI system learns to perform specific tasks, such as recognizing objects in images or translating text.
+(1) 2, 3, 4, 1
+(2) 3, 1, 2, 4
+(3) 1, 3, 4, 2
+(4) 1, 4, 3, 2
+= 3
+~ Sentence 1 defines artificial intelligence and introduces the topic, so it comes first. Sentence 3, 'This is typically achieved by training machine learning models', explains how machines simulate cognition. Sentence 4 begins 'Through this training', referring back to sentence 3, and names the tasks AI learns. Sentence 2, 'This process is used in various applications', gives real-world uses and concludes. Order: 1, 3, 4, 2. Option 4 is wrong because 'this training' needs sentence 3 before it.
+
+Q 100 | eng | Sentence Arrangement
+Rearrange the following sentences in correct order to make a logical passage.
+1. Therefore, protecting them is a shared responsibility.
+2. Coral reefs are vital marine ecosystems.
+3. They provide habitats for countless species and protect coastlines.
+4. Pollution and climate change pose severe threats to their survival.
+(1) 2-1-3-4
+(2) 2-4-1-3
+(3) 3-4-2-1
+(4) 2-3-4-1
+= 4
+~ Sentence 2 introduces the topic, coral reefs as vital marine ecosystems. Sentence 3 explains why they are vital, with 'They' referring to coral reefs. Sentence 4 then states the threats from pollution and climate change. Sentence 1, beginning with 'Therefore', draws the conclusion that protecting them is a shared responsibility, so it must come last. The logical order is 2-3-4-1.

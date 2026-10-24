@@ -622,7 +622,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/upsc-capf-8ed41026a2.js"></script>
+<script src="data/upsc-capf-34deb5a7f9.js"></script>
 <script>
 (function(){
 "use strict";
@@ -744,10 +744,15 @@ async function refreshPasses(){
   try{ const r = await payCall({action:"passes", exam:PAYC.exam, phone:ST.phone, email:ST.email||"", device:DEVICE});
        if(r && r.ok){ UI.passChecked = true; setPasses(r.passes); if(GATE[current]) render(); } else if(r && r.error) toast(r.error); }catch(_){}
 }
+function mockKinds(m){   // "10 Tier-I + 3 Tier-II"
+  const c = {}; m.mocks.forEach(x=>{ const k = x.name.replace(/\s*Mock\s*\d+$/,""); c[k] = (c[k]||0) + 1; });
+  return Object.entries(c).map(([k,n])=>n+" "+k).join(" + ");
+}
 function payInfo(kind){
   const m = PAYC && PAYC.mock;
   return kind==="mock" && m ? {name: m.title, price: m.price, valid: m.valid || "Valid till the exam", btn: `Pay ₹${m.price} for ${m.name}`,
-      what: [`${m.n} full-length mock tests in English and Telugu, with explanations` + (m.live && m.live < m.n ? ` (Mock ${m.live===1 ? "1" : "1–"+m.live} now, the rest coming soon)` : ""), "Sectional mocks from every mock",
+      what: [(m.mocks && m.mocks.length ? `${m.n} full-length mock tests (${mockKinds(m)}) in ${L2.name==="Hindi"?"English and Hindi":"English and "+L2.name}, with explanations (${m.mocks.filter(x=>x.live).map(x=>x.name).join(" and ")} now, the rest coming soon)`
+               : `${m.n} full-length mock tests in English and Telugu, with explanations` + (m.live && m.live < m.n ? ` (Mock ${m.live===1 ? "1" : "1–"+m.live} now, the rest coming soon)` : "")), "Sectional mocks from every mock",
              `Mock tests only. Previous papers need the PYQ Pass (₹${PAYC.pyq.price}, all exams), bought separately.`]}
     : {name: "PYQ Pass · all exams", price: PAYC ? PAYC.pyq.price : 45, valid: "Valid for 12 months from the day you pay", btn: `Pay ₹${PAYC ? PAYC.pyq.price : 45} for all exams`,
       what: [`One payment for the whole website: the previous papers of every exam on Learn with Anil (${PAYC.pyq.exams || "all exams"}) and every exam added later, not just ${DATA.examShort || "this exam"}.`,
@@ -779,7 +784,7 @@ async function payBuy(kind){
 }
 async function payCheck(){
   await refreshPasses(); closePay();
-  if(passOK("pyq")){ toast("Unlocked. All the best!"); const p = UI.payPending; UI.payPending = null; if(p) startQuiz(p.ids, p.title, p.mode, p.source); else render(); }
+  if(passOK("pyq")){ toast("Unlocked. All the best!"); const p = UI.payPending; UI.payPending = null; if(p) startQuiz(p.ids, p.title, p.mode, p.source, p.mins); else render(); }
   else toast("No payment found for " + (ST.phone||"this phone") + " yet. If you just paid, wait a minute and check again.");
 }
 async function payReturn(params){
@@ -811,11 +816,18 @@ async function startMock(id, part){
       r.questions = JSON.parse(new TextDecoder().decode(plain)).questions;
     }
     const no = id.split("-").pop();
-    PMAP[id] = PMAP[id] || {id, short: PAYC.mock.name + " Mock " + no, title: PAYC.mock.name + " · Mock " + no, fmt:"mcq", paid:true, count:r.questions.length};
+    const mm = (PAYC.mock.mocks||[]).find(x=>x.id===id);   // packs with several kinds of mock (e.g. Mission CGL Tier-I / Tier-II)
+    const mname = mm? mm.name : "Mock " + no;
+    PMAP[id] = PMAP[id] || {id, short: PAYC.mock.name + " " + mname, title: PAYC.mock.name + " · " + mname, fmt:"mcq", paid:true, count:r.questions.length};
     r.questions.forEach(q=>{ QMAP[q.id] = q; });
-    let qs = r.questions;
-    if(part==="ari" || part==="rea") qs = qs.filter(q=>q.s===part); else if(part==="gs") qs = qs.filter(q=>q.s!=="ari" && q.s!=="rea");
-    startQuiz(qs.map(q=>q.id), PAYC.mock.name + " · Mock " + id.split("-").pop() + (PART_NAME[part]? " · " + PART_NAME[part] + " sectional" : ""), "test", "mock");
+    let qs = r.questions, pname = PART_NAME[part], mins;
+    if(mm){
+      const pt = (mm.parts||[]).find(x=>x[0]===part);
+      if(pt){ qs = qs.filter(q=>pt[2].includes(q.s)); pname = pt[1]; }
+      mins = Math.max(1, Math.round(mm.mins * qs.length / r.questions.length));   // a part gets its share of the real time limit
+    }
+    else if(part==="ari" || part==="rea") qs = qs.filter(q=>q.s===part); else if(part==="gs") qs = qs.filter(q=>q.s!=="ari" && q.s!=="rea");
+    startQuiz(qs.map(q=>q.id), PAYC.mock.name + " · " + mname + (pname? " · " + pname + " sectional" : ""), "test", "mock", mins);
   }catch(_){ toast("No connection. Please try again."); }
 }
 
@@ -1155,7 +1167,7 @@ function vPapers(){
       <p>${esc(p.blurb)}</p>
       <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.own?"Options by Learn with Anil":p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
       <div class="acts">
-        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":"🔒 "}Attempt this paper · ${p.count} min timer</button>
+        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":"🔒 "}Attempt this paper · ${p.mins||p.count} min timer</button>
       </div>
     </article>`;
   };
@@ -1231,14 +1243,14 @@ function quizTitle(){
   if(subs.length===1){ const tt = tops.filter(k=>k.startsWith(subs[0]+"|")); return base+" · "+(tt.length===1? tt[0].split("|")[1] : SUBJ[subs[0]].name); }
   return base+" · "+subs.length+" subjects";
 }
-function startQuiz(ids, title, mode, source){
+function startQuiz(ids, title, mode, source, mins){   // mins: the real time limit of a whole paper or mock (else 1 minute per question)
   if(!ids.length) return;
-  if(!ST.name){ UI.pending = {ids, title, mode, source}; go("join"); return; }   // one-time registration before the first quiz or test
+  if(!ST.name){ UI.pending = {ids, title, mode, source, mins}; go("join"); return; }   // one-time registration before the first quiz or test
   if(source!=="mock" && !passOK("pyq")){   // PYQs need the paid PYQ Pass
-    if(ST.phone && PAYC && PAYC.on && !UI.passChecked){ UI.passChecked = true; refreshPasses().then(()=>startQuiz(ids, title, mode, source)); return; }   // paid on another device? ask the payments script once
-    UI.payPending = {ids, title, mode, source}; openPay("pyq"); return; }
+    if(ST.phone && PAYC && PAYC.on && !UI.passChecked){ UI.passChecked = true; refreshPasses().then(()=>startQuiz(ids, title, mode, source, mins)); return; }   // paid on another device? ask the payments script once
+    UI.payPending = {ids, title, mode, source, mins}; openPay("pyq"); return; }
   track("quiz_start", {mode, exam: DATA.examShort||"", questions: ids.length});
-  QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: ids.length*60};   // every quiz and paper has a timer: 1 minute per question (the student can switch it off)
+  QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: (mins? mins*60 : ids.length*60)};   // every quiz and paper has a timer: 1 minute per question, or the paper's real time limit (the student can switch it off)
   UI.confirmSubmit = false;
   go("quiz");
 }
@@ -1800,8 +1812,8 @@ document.addEventListener("click", e=>{
     case "paybuy": { payBuy(b.dataset.kind); break; }
     case "paycheck": { payCheck(); break; }
     case "payclose": { closePay(); break; }
-    case "paperpractice": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id).map(q=>q.id), p.title, "practice", "paper"); break; }
-    case "papertest": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id && isMCQ(q)).map(q=>q.id), p.title+" · Timed test", "test", "paper"); break; }
+    case "paperpractice": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id).map(q=>q.id), p.title, "practice", "paper", p.mins); break; }
+    case "papertest": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id && isMCQ(q)).map(q=>q.id), p.title+" · Timed test", "test", "paper", p.mins); break; }
     case "pick": { const id=QZ.ids[QZ.i]; if(QZ.mode!=="test" && QZ.chk[id]) return; const j=+b.dataset.i; if(QZ.mode==="test" && QZ.ans[id]===j) delete QZ.ans[id]; else QZ.ans[id]=j; render(); break; }
     case "check": { const id=QZ.ids[QZ.i]; if(QZ.ans[id]===undefined) return; QZ.chk[id]=true; render(); break; }
     case "reveal": { QZ.rev[QZ.ids[QZ.i]]=true; render(); break; }
@@ -1876,7 +1888,7 @@ document.addEventListener("submit", async e=>{
     if(isNew) track("sign_up", {method: "form", exam: DATA.examShort||"", district});
     const trialMsg = "";
     if(PAYC && PAYC.on && PAYC.api){ toast("Saving your details…"); await refreshPasses(); }   // a pass already paid with this phone opens at once
-    if(p){ toast("Thanks, "+name.split(" ")[0]+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source); }
+    if(p){ toast("Thanks, "+name.split(" ")[0]+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source, p.mins); }
     else if(UI.pendingBuy){ const k = UI.pendingBuy; UI.pendingBuy = null; go("home"); payBuy(k); }
     else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; go("home"); startMock(m.id, m.part); }
     else { toast("Your details are saved." + trialMsg); const back = UI.afterJoin; UI.afterJoin = null; go(back && back!=="join" ? back : "about"); }
@@ -1947,10 +1959,10 @@ function start(data){
     const sj = sp.get("subj");   // ?subj=<subject id>: the quiz builder with that subject picked (from the PYQs page)
     if(sj && SUBJ[sj]){ history.replaceState(null, "", location.pathname); const s=SUBJ[sj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); syncLang(); go("practice"); return; }
     const pp = sp.get("practice");   // ?practice=<paper id>: that paper as a practice quiz, one question at a time with the answer
-    if(pp && PMAP[pp]){ history.replaceState(null, "", location.pathname); syncLang(); render(); startQuiz(QS.filter(q=>q.p===pp).map(q=>q.id), PMAP[pp].title, "practice", "paper"); return; }
+    if(pp && PMAP[pp]){ history.replaceState(null, "", location.pathname); syncLang(); render(); startQuiz(QS.filter(q=>q.p===pp).map(q=>q.id), PMAP[pp].title, "practice", "paper", PMAP[pp].mins); return; }
     const tp = sp.get("test");   // ?test=<paper id>: start that paper as a full timed mock test
     if(tp && PMAP[tp]){ history.replaceState(null, "", location.pathname); syncLang(); render();
-      startQuiz(QS.filter(q=>q.p===tp && isMCQ(q)).map(q=>q.id), PMAP[tp].title+" · Mock test", "test", "paper"); return; }
+      startQuiz(QS.filter(q=>q.p===tp && isMCQ(q)).map(q=>q.id), PMAP[tp].title+" · Mock test", "test", "paper", PMAP[tp].mins); return; }
     const h = location.hash.slice(1); if(h && isRoute(h)) history.replaceState(null, "", pathOf(h));
   }
   syncLang(); render();

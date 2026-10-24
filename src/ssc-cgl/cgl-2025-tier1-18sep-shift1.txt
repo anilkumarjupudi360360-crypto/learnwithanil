@@ -1,0 +1,979 @@
+# SSC Combined Graduate Level Examination 2025, Tier-I, held 18 September 2025, Shift 1 (9:00 AM). 100 questions, 200 marks, 60 minutes.
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via AglaSem); answers are the options SSC marked correct on that sheet (answer-key stage). Explanations by Learn with Anil.
+
+Q 1 | rea | Series
+Select the letter-cluster from among the given options that can replace the question mark (?) in the following series.
+CFJ, FIM, ILP, ?
+(1) LKN
+(2) LOS
+(3) NHS
+(4) KIS
+= 2
+~ Each letter of a cluster moves 3 places forward in the next cluster. First letters: C, F, I, L (+3 each). Second letters: F, I, L, O (+3 each). Third letters: J, M, P, S (+3 each). So the missing cluster is LOS. Within each cluster the gaps are also constant (+3, +4: C→F→J, F→I→M, I→L→P, L→O→S), which confirms LOS; LKN, NHS and KIS break this pattern.
+
+Q 2 | rea | Syllogism & Statements
+A statement is given followed by two conclusions. Find which conclusion is TRUE based on the given statement.
+Statement:
+C ≥ T ; A = D ≥ O; G ≥ D < S; T ≥ A
+Conclusions:
+I: A ≤ O
+II: C ≥ G
+(1) Either I or II
+(2) Only II
+(3) Only I
+(4) Neither I nor II
+= 4
+~ Combine the statements: C ≥ T ≥ A = D ≥ O, and G ≥ D. Conclusion I: we know A ≥ O, so A ≤ O is not definitely true (it holds only if A = O). Conclusion II: C ≥ D and G ≥ D, but both are only compared with D, so no definite relation exists between C and G. Neither conclusion is definitely true. "Either I or II" does not apply because the two conclusions are about different pairs.
+
+Q 3 | rea | Blood Relations & Directions
+A is the wife of B. B is the son of C. D is the daughter of A. How is D related to C?
+(1) Granddaughter
+(2) Daughter
+(3) Sister
+(4) Niece
+= 1
+~ B is the son of C, and A is B's wife, so A is C's daughter-in-law. D is the daughter of A; taking A and B as D's parents, D is the daughter of C's son, that is, C's granddaughter. D is two generations below C, so "Daughter" (one generation below) and "Sister" (same generation) are wrong, and "Niece" would need D to be the daughter of C's brother or sister.
+
+Q 4 | rea | Analogy & Classification
+Solve:
+LEAF : ? :: TIME : EMIT
+(1) FEAL
+(2) FAEL
+(3) LFAE
+(4) FELA
+= 2
+~ EMIT is TIME written in reverse order (T-I-M-E becomes E-M-I-T). Applying the same rule to LEAF: L-E-A-F reversed gives F-A-E-L, so the answer is FAEL. FEAL looks close but keeps E and A in their original order, so it is not the reverse of LEAF; LFAE and FELA are random rearrangements.
+
+Q 5 | rea | Series
+What comes next: 1, 2, 6, 24, 120, ?
+(1) 720
+(2) 504
+(3) 840
+(4) 600
+= 1
+~ Each term is the previous term multiplied by the next whole number: 1 × 2 = 2, 2 × 3 = 6, 6 × 4 = 24, 24 × 5 = 120, so the next term is 120 × 6 = 720. These are the factorials 1!, 2!, 3!, 4!, 5!, and the missing term is 6! = 720.
+
+Q 6 | rea | Syllogism & Statements
+Read the following statement carefully and identify the conclusion that follows.
+Statement: All citizens must abide by traffic laws.
+Conclusion I: Citizens who disobey traffic laws must be punished.
+Conclusion II: Obeying traffic laws shows civic responsibility.
+(1) Only I
+(2) Only II
+(3) Both follow
+(4) Neither follows
+= 3
+~ The word "must" makes obeying traffic laws a compulsory duty of every citizen. Fulfilling such a duty is an act of civic responsibility, so Conclusion II follows. A compulsory law implies enforcement, so those who break it are liable to penalty, which is the basis for Conclusion I. Hence the key takes both conclusions as following. Strictly, the statement says nothing about punishment, so many solvers would accept only II. (SSC key; some sources differ.)
+
+Q 7 | rea | Syllogism & Statements
+Instruction: Identify the assumptions that must hold for the statement to be valid, then choose the correct option.
+Statement: To reduce traffic congestion in urban areas, cities should invest in public transportation infrastructure, even though it requires significant initial investments.
+Assumptions:
+I. Public transportation can effectively reduce traffic congestion.
+II. The initial cost of building transportation infrastructure is high.
+III. People are willing to shift from private vehicles to public transportation.
+(1) Only I and II are implicit
+(2) Only II and III are implicit
+(3) All I, II and III are implicit
+(4) Only I is implicit
+= 1
+~ The advice to invest in public transport "to reduce traffic congestion" makes sense only if public transport can reduce congestion, so I is implicit. The phrase "even though it requires significant initial investments" takes for granted that the initial cost is high, so II is implicit. The statement says nothing about people's present willingness to leave private vehicles; better infrastructure may itself attract riders, so III is not a necessary assumption.
+
+Q 8 | rea | Syllogism & Statements
+Read the following statement carefully and identify the conclusion that follows.
+Statement: Thousands of students appeared for the entrance exam conducted across the country.
+Conclusions:
+I. The exam is popular and competitive.
+II. All students who appeared will get admission.
+(1) Only Conclusion I follows
+(2) Only Conclusion II follows
+(3) Both I and II follow
+(4) Neither I nor II follows
+= 1
+~ Thousands of candidates taking a nationwide entrance exam shows that the exam is popular, and so many applicants for limited seats make it competitive, so Conclusion I follows. An entrance exam is meant to select candidates; nothing in the statement suggests that every candidate will be admitted, so Conclusion II does not follow. Hence only Conclusion I follows.
+
+Q 9 | rea | Syllogism & Statements
+Read the following statement carefully and identify the conclusion that follows.
+Statement:
+All circles are shapes. Some shapes are squares. All squares are polygons.
+Conclusions:
+I. Some shapes are polygons.
+II. Some polygons are circles.
+(1) Only I follows
+(2) Only II follows
+(3) Both I and II follow
+(4) Neither I nor II follows
+= 1
+~ "Some shapes are squares" and "All squares are polygons" give "Some shapes are polygons" (Some + All = Some), so Conclusion I follows. Circles are linked only to shapes, and the shapes that are squares need not include any circle, so there is no definite link between circles and polygons. Conclusion II is only a possibility, so it does not follow. Hence only I follows.
+
+Q 10 | rea | Analogy & Classification
+Find the odd one out:
+Rose, Lotus, Sunflower, Oak, Tulip
+(1) Rose
+(2) Lotus
+(3) Oak
+(4) Tulip
+= 3
+~ Rose, Lotus, Sunflower and Tulip are all flowers. Oak is a large tree, valued for its hard timber and not grown for its flowers. Hence Oak is the odd one out. Lotus is an aquatic plant, but it is still a flower like the others, so it is not the odd one.
+
+Q 11 | rea | Analogy & Classification
+In each of the following questions, the second word is formed by applying a specific rearrangement or transformation to the first. Identify the same pattern and apply it to the third word to find the correct answer from the given alternatives. FLOWER : REWOLF :: FRUITS : ?
+(1) STUIRF
+(2) STIURF
+(3) STUIFR
+(4) STRUIF
+= 2
+~ REWOLF is FLOWER written backwards (F-L-O-W-E-R reversed gives R-E-W-O-L-F). Reversing FRUITS letter by letter: F-R-U-I-T-S becomes S-T-I-U-R-F, so the answer is STIURF. STUIRF looks similar but has U and I in the wrong order, and STUIFR and STRUIF are not reversals at all.
+
+Q 12 | rea | Coding-Decoding
+If LEMON is coded as KDNLN, how is MANGO written?
+(1) LZODO
+(2) LZLFP
+(3) LZMFQ
+(4) LZLFO
+= 1
+~ Compare LEMON with KDNLN letter by letter: L−1 = K, E−1 = D, M+1 = N, O−3 = L, N+0 = N. These shifts (−1, −1, +1, −3, 0) follow no regular pattern, so simply apply the same shift at each position of MANGO: M−1 = L, A−1 = Z (going back from A wraps round to Z), N+1 = O, G−3 = D, O+0 = O, giving LZODO. This matches the key, and LZODO is the only option with O in the third place.
+
+Q 13 | rea | Miscellaneous Reasoning
+Rearrange the letters of the word "LOVE" to form the name of an animal.
+(1) VOLE
+(2) VEOL
+(3) VLEO
+(4) OLEV
+= 1
+~ The letters L, O, V and E can be rearranged as VOLE. A vole is a small, mouse-like rodent with a short tail and rounded body that lives in fields and grasslands. VEOL, VLEO and OLEV use the same letters but are not meaningful English words, so VOLE is the only animal name.
+
+Q 14 | rea | Series
+Complete the series.
+3, 5, 10, 12, 24, 26, ?
+(1) 52
+(2) 54
+(3) 53
+(4) 50
+= 1
+~ The series alternately adds 2 and multiplies by 2: 3 + 2 = 5, 5 × 2 = 10, 10 + 2 = 12, 12 × 2 = 24, 24 + 2 = 26. The next step is multiplication by 2, so the missing term is 26 × 2 = 52. The other options (54, 53, 50) do not fit this alternating +2, ×2 pattern; for example, 54 would need 26 × 2 + 2, two steps at once.
+
+Q 15 | rea | Series
+What comes next?
+MOA, NPB, OQC, PRD, ?
+(1) QRE
+(2) QTE
+(3) RST
+(4) QSE
+= 4
+~ Each letter position moves one place forward in the alphabet. First letters: M, N, O, P, so next is Q. Second letters: O, P, Q, R, so next is S. Third letters: A, B, C, D, so next is E. The next term is therefore QSE. QRE repeats R in the middle position and QTE skips S, so both break the pattern.
+
+Q 16 | rea | Analogy & Classification
+Find the odd one out from the given alternatives
+(1) Lothal
+(2) Harappa
+(3) Mohenjodaro
+(4) Nalanda
+= 4
+~ Lothal (Gujarat), Harappa and Mohenjodaro (both now in Pakistan) are sites of the Harappan or Indus Valley Civilisation of the Bronze Age. Nalanda in Bihar is the site of a famous ancient Buddhist mahavihara (centre of learning) that flourished from the Gupta period, about the 5th century CE. Hence Nalanda is the odd one out.
+
+Q 17 | rea | Analogy & Classification
+Find the odd one out from the given alternatives.
+(1) Tabla
+(2) Mridangam
+(3) Pakhawaj
+(4) Sitar
+= 4
+~ Tabla, Mridangam and Pakhawaj are percussion instruments (avanaddha vadya) played by striking a stretched skin membrane with the hands. Tabla and Pakhawaj are used in Hindustani music and Mridangam in Carnatic music. The Sitar is a plucked string instrument (tata vadya). Hence Sitar is the odd one out.
+
+Q 18 | rea | Analogy & Classification
+Which of the following groups does not follow the same arithmetic rule?
+(1) 10, 20, 40
+(2) 5, 15, 45
+(3) 2, 6, 18
+(4) 3, 9, 27
+= 1
+~ In 5, 15, 45; 2, 6, 18 and 3, 9, 27 each number is 3 times the previous one (5 × 3 = 15, 15 × 3 = 45; 2 × 3 = 6, 6 × 3 = 18; 3 × 3 = 9, 9 × 3 = 27). In 10, 20, 40 each number is only 2 times the previous one (10 × 2 = 20, 20 × 2 = 40). So 10, 20, 40 does not follow the rule.
+
+Q 19 | rea | Mathematical Operations
+If 8 * 2 = 20 and 6 * 3 = 27, then what is 5 * 4 = ?
+(1) 32
+(2) 24
+(3) 36
+(4) 22
+= 3
+~ The rule is a * b = (a + b) × b. Check: 8 * 2 = (8 + 2) × 2 = 20 and 6 * 3 = (6 + 3) × 3 = 27. Therefore 5 * 4 = (5 + 4) × 4 = 9 × 4 = 36. The same rule can also be read as a × b + b²: 16 + 4 = 20, 18 + 9 = 27, and 20 + 16 = 36.
+
+Q 20 | rea | Coding-Decoding
+Instruction: In a code language, “The tree grows tall” is coded as “so mo no lo”, “The tree grows short” is coded as “so mo po lo”, “The plant grows tall” is coded as “to mo no lo”.
+Question: What is the code for “The plant grows short”?
+(1) to mo lo po
+(2) so lo to fo
+(3) po ko go jo
+(4) no ko mo no
+= 1
+~ Sentences 1 and 2 differ only in tall/short and in no/po, so tall = no and short = po. Sentences 1 and 3 differ only in tree/plant and in so/to, so tree = so and plant = to. The common words "The" and "grows" are coded as mo and lo. Hence "The plant grows short" = to + mo + lo + po, that is, "to mo lo po" (order of codes does not matter).
+
+Q 21 | rea | Miscellaneous Reasoning
+A boat travels 60 kilometers upstream in 3 hours and covers the same distance of 60 kilometers downstream in 2 hours. What is the speed of the boat in still water?
+(1) 20 km/h
+(2) 18 km/h
+(3) 25 km/h
+(4) 15 km/h
+= 3
+~ Upstream speed = 60 ÷ 3 = 20 km/h and downstream speed = 60 ÷ 2 = 30 km/h. Speed of the boat in still water = (downstream speed + upstream speed) ÷ 2 = (30 + 20) ÷ 2 = 25 km/h. The speed of the stream is (30 − 20) ÷ 2 = 5 km/h. Option 20 km/h is only the upstream speed.
+
+Q 22 | rea | Blood Relations & Directions
+A man says, “The son of my wife's brother is my ______.
+(1) Brother-in-law
+(2) Nephew
+(3) Cousin
+(4) Son-in-law
+= 2
+~ The man's wife's brother is his brother-in-law. In English, a nephew is the son of one's brother or sister, or of one's spouse's brother or sister, so the son of the wife's brother is the man's nephew. The boy would be a cousin only to the man's own children, and a son-in-law is a daughter's husband, so those options are wrong.
+
+Q 23 | rea | Mathematical Operations
+If '×' means '−', '−' means '+', '+' means '÷', then 12 + 6 × 2 − 4 = ?
+(1) 4
+(2) 8
+(3) 6
+(4) 10
+= 1
+~ Replace the signs as given: + becomes ÷, × becomes −, and − becomes +. So 12 + 6 × 2 − 4 becomes 12 ÷ 6 − 2 + 4. Following BODMAS, division first: 12 ÷ 6 = 2. Then 2 − 2 + 4 = 4. Hence the answer is 4. Always make all the substitutions first and only then apply BODMAS to the new expression.
+
+Q 24 | rea | Mathematical Operations
+If the sum of 31 and 19 is multiplied by 9, what is the result?
+(1) 423
+(2) 432
+(3) 441
+(4) 450
+= 4
+~ First find the sum: 31 + 19 = 50. Then multiply by 9: 50 × 9 = 450. A quick check: since the sum is a multiple of 10, the product must end in 0, which rules out 423, 432 and 441 at once. Hence the result is 450.
+
+Q 25 | rea | Series
+The series given below contains a sequence of numbers. Accordingly identify the incorrect combination 4, 5, 14, 14, 34, 36, 74, 68
+(1) 74
+(2) 34
+(3) 36
+(4) 68
+= 3
+~ The series is two alternating series. Odd places: 4, 14, 34, 74, each term × 2 + 6 (4 × 2 + 6 = 14, 14 × 2 + 6 = 34, 34 × 2 + 6 = 74), which is correct. Even places: 5, 14, ?, 68, each term × 2 + 4: 5 × 2 + 4 = 14, 14 × 2 + 4 = 32, 32 × 2 + 4 = 68. So the third even term should be 32, and 36 is the incorrect number.
+
+Q 26 | ih | Art & Culture
+Which of the following animals were NOT found on Mauryan stone pillars?
+(1) Lions
+(2) Bulls
+(3) Elephants
+(4) Eagle
+= 4
+~ Mauryan pillar capitals carry the lion (Sarnath, Vaishali, Lauriya Nandangarh), the bull (Rampurva) and the elephant (Sankissa), and the Sarnath abacus shows a lion, elephant, bull and horse. No eagle figure appears on any Mauryan pillar. The well-known Garuda pillar at Besnagar (Vidisha) was raised much later, around 113 BCE, by the Greek envoy Heliodorus during the Shunga period, so it is not a Mauryan pillar.
+
+Q 27 | cur | Static GK & Culture
+Fill in the blank:
+Ladakhi new year (Losar) is welcomed with symbolic dough models of ______, sun, and moon placed in households.
+(1) Ibex
+(2) Yak
+(3) Snow leopard
+(4) Buddha
+= 1
+~ Losar, the Ladakhi (Buddhist) New Year, is celebrated in winter. As described on the Government of India's festival portal, the new year is welcomed with dough models of the ibex, sun and moon kept in homes, and lucky signs are painted with flour on kitchen walls. Prayers are held in monasteries, lamps are lit, and songs and dances honouring the ibex continue for several days.
+
+Q 28 | ih | Ancient India
+What was the political significance of Bimbisara’s marriage to a Kosalan princess?
+(1) Spread of Buddhism
+(2) Peace with Kosala
+(3) Trade with South India
+(4) Fall of Pasenadi
+= 2
+~ Bimbisara of the Haryanka dynasty of Magadha strengthened his kingdom through marriage alliances. He married Kosala Devi, sister of King Prasenajit (Pasenadi) of Kosala, and received a revenue-yielding village of Kashi as dowry. The alliance secured friendly relations and peace with powerful Kosala, leaving Bimbisara free to expand eastwards, for example by annexing Anga. He also married Lichchhavi and Madra princesses for similar reasons.
+
+Q 29 | cur | Static GK & Culture
+Which of the following correctly describes the musical form Svarajati?
+(1) A bhajan form used only in temples
+(2) A dance item without fixed structure
+(3) A vocal form later adapted for dance
+(4) A film-based item with fast rhythm
+= 3
+~ Svarajati is a sung composition of Carnatic music with a fixed structure: a pallavi (often with an anupallavi) and charanams, each charanam having a svara (solfa) passage with matching sahitya (lyrics). Beginners learn simple svarajatis after geethams and before varnams, and Shyama Shastri's svarajatis in Bhairavi, Yadukula Kambhoji and Todi are concert classics. It is also an important item of the Bharatanatyam repertoire, so option 3 fits; it is not a temple-only bhajan, a structureless dance item or a film item.
+
+Q 30 | cur | Awards, Books & Persons
+Which of the following statements regarding the Dronacharya Award is/are correct?
+1) It carries a cash prize of ₹10 lakhs and features a gold statue of Guru Dronacharya.
+2) O.M. Nambiar was honored with the first Dronacharya Award in 1985 for outstanding coaching.
+(1) Only 1 is Correct
+(2) Only 2 is Correct
+(3) 1 and 2 are correct
+(4) Neither 1 nor 2 are Correct
+= 2
+~ The Dronacharya Award of the Ministry of Youth Affairs and Sports honours outstanding sports coaches. Statement 1 is wrong: the award has a bronze (not gold) statuette of Dronacharya, a certificate and a cash prize (₹10 lakh in the regular category and ₹15 lakh in the lifetime category since 2020). Statement 2 is correct: the award began in 1985, and its first recipients were O.M. Nambiar (athletics), Bhalchandra Bhaskar Bhagwat (wrestling) and Om Prakash Bhardwaj (boxing).
+
+Q 31 | ih | Medieval India
+What position did Hindu Beg hold during Humayun’s reign?
+(1) Rajput chief
+(2) Court scholar
+(3) Provincial governor
+(4) Spiritual guide
+= 3
+~ Hindu Beg was a senior Mughal noble who had served Babur. Alarmed by Sher Khan's victory over the Bengal army at Surajgarh (1534), Humayun appointed Hindu Beg governor (hakim) of Jaunpur to keep watch on the eastern region. Sher Khan (later Sher Shah Suri) assured him of his loyalty while he prepared, then sent him a threatening letter and attacked Bengal again in 1537, and Hindu Beg reported his hostile intentions to Humayun. So his post was that of a provincial governor.
+
+Q 32 | ih | Modern India
+Which of the following statements regarding the Government of India Act, 1919 is correctly matched with its constitutional implication?
+(1) Transferred and Reserved subjects – Created functional overlap between central and provincial powers
+(2) Creation of bicameralism – Introduced two houses at the central level for the first time
+(3) Establishment of Public Service Commission – Gave financial control to Indian members in the Viceroy’s Council
+(4) Introduction of diarchy in provinces – Empowered Indian ministers to control defence and foreign affairs
+= 2
+~ The Government of India Act, 1919 (Montagu–Chelmsford Reforms) made the central legislature bicameral for the first time, with a Legislative Assembly and a Council of State. Reserved and transferred subjects divided provincial subjects under diarchy; they did not create a central–provincial overlap. Ministers handled only transferred subjects such as education and health, never defence or foreign affairs. The Act merely provided for a Public Service Commission (set up in 1926) and gave no financial control to Indian members.
+
+Q 33 | cur | Sports
+Consider the following statements about Judo competition areas and contestants:
+1) The competition area is divided into an inner contest area (minimum 8m×8m) and an outer safety area (minimum 3m wide).
+2) The blue uniform contestant is called first, followed by the white uniform contestant.
+Which of the statements is/are correct?
+(1) Only 1 is Correct
+(2) Only 2 is Correct
+(3) 1 and 2 are Correct
+(4) Neither 1 nor 2 are Correct
+= 1
+~ Statement 1 is correct: under judo competition rules the competition area has an inner contest area of at least 8 m × 8 m (up to 10 m × 10 m) and an outer safety area at least 3 m wide (4 m where two competition areas adjoin). Statement 2 is wrong: the first contestant called wears the white judogi and the second wears the blue judogi, so the white-clad contestant is called first, not the blue one.
+
+Q 34 | cur | International
+Which country partners with India in the Maitri military exercise aimed at defence cooperation?
+(1) Bhutan
+(2) Sri Lanka
+(3) Bangladesh
+(4) Thailand
+= 4
+~ MAITREE (Maitri) is the joint military exercise between the armies of India and Thailand, focusing on counter-terrorism operations in semi-urban terrain under a UN mandate and on interoperability. Its 14th edition was held at the Joint Training Node, Umroi, Meghalaya, from 1 to 14 September 2025. Do not confuse it with Surya Kiran (Nepal), Mitra Shakti (Sri Lanka) or Sampriti (Bangladesh).
+
+Q 35 | cur | Awards, Books & Persons
+Who is the author of the book 'The Argumentative Indian'?
+(1) Amartya Sen
+(2) Shashi Tharoor
+(3) Ramachandra Guha
+(4) Arvind Subramanian
+= 1
+~ 'The Argumentative Indian: Writings on Indian History, Culture and Identity' (2005) is a collection of essays by Amartya Sen, winner of the 1998 Nobel Memorial Prize in Economic Sciences and the Bharat Ratna (1999). It highlights India's long tradition of public debate, scepticism and tolerance of differing views. Other books by Sen include 'Development as Freedom', 'The Idea of Justice' and 'Identity and Violence'.
+
+Q 36 | geo | World & Physical Geography
+Which of the following pairs is correctly matched with reference to limestone cave formations?
+(1) Stalactite – Rises from cave floor
+(2) Stalagmite – Hangs from cave roof
+(3) Pillar – Formed by union of stalactite and stalagmite
+(4) Stalagmite – Formed by water falling from floor
+= 3
+~ In limestone (karst) caves, water carrying dissolved calcium carbonate drips from the roof and deposits calcite. Deposits hanging from the roof are stalactites, and those rising from the floor where the drops land are stalagmites. When a stalactite and a stalagmite grow until they meet, they form a pillar or column. Options 1 and 2 swap the two definitions, and stalagmites form from water dripping onto the floor, not water falling from it.
+
+Q 37 | sci | Science & Technology
+Which instrument description on XPoSat is correct?
+(1) XSPECT extends POLIX’s polarimetry range to 0.5–20 keV.
+(2) POLIX performs X-ray spectroscopy and timing.
+(3) XSPECT measures X-ray polarization.
+(4) POLIX measures X-ray polarization (8–30 keV) to study black holes.
+= 4
+~ XPoSat, India's first dedicated X-ray polarimetry satellite, was launched by PSLV-C58 on 1 January 2024. Its POLIX payload, built by the Raman Research Institute, measures the polarisation of X-rays in the 8–30 keV band from bright sources such as black holes and neutron stars. The second payload, XSPECT (built by URSC), carries out X-ray spectroscopy and timing in the 0.8–15 keV band; it does not measure polarisation or extend POLIX's range.
+
+Q 38 | geo | Indian Geography
+Which of the following statements best explains why age-specific rates are used in demography?
+(1) They help identify regional literacy levels
+(2) They reflect age-wise variation in fertility or mortality
+(3) They show the economic condition of elderly people
+(4) They reduce the total number of indicators needed
+= 2
+~ Crude birth and death rates are worked out for the whole population, so they are affected by its age structure. Age-specific rates, such as age-specific fertility rates and age-specific death rates, are calculated separately for each age group (for example 20–24 years). They show how fertility and mortality vary with age and allow fair comparison between populations with different age compositions. The total fertility rate is built from age-specific fertility rates.
+
+Q 39 | pol | Government & Parliament
+"Amit Shah already has the key portfolios of Union Home Minister and Minister of Cooperation in 2025. Think of these statements:
+1. He remains Union Home Minister and Minister of Cooperation post the 2024 elections.
+2. The Home Ministry is responsible for internal security, borders, and disaster management.
+3. The Home Minister enjoys a constitutionalized fixed 6-year term.
+Which one of the above is/are true?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3 all are correct
+= 1
+~ Amit Shah has been Union Home Minister since 2019 and became India's first Minister of Cooperation when that ministry was created in July 2021; he kept both portfolios in the government formed in June 2024, so statement 1 is true. The Ministry of Home Affairs handles internal security, border management and disaster management, so statement 2 is true. Statement 3 is false: Union ministers hold office during the pleasure of the President (Article 75(2)) and have no fixed term.
+
+Q 40 | cur | Sports
+Which events were initially announced as demonstration sports but later became full-fledged medal events in the 38th National Games held at Uttrakhand?
+(1) Kho-Kho and Kabaddi
+(2) Yogasana and Mallakhamb
+(3) Shooting and Athletics
+(4) Kayaking and Rowing
+= 2
+~ The 38th National Games were held in Uttarakhand from 28 January to 14 February 2025. Yogasana and Mallakhamb were first listed by the Indian Olympic Association as demonstration sports, along with Kalaripayattu and rafting, but they were upgraded to full medal events during the Games. Kalaripayattu, a medal sport at the 37th Games in Goa, stayed only a demonstration sport, which its federation protested. Kho-kho, kabaddi, shooting, athletics, kayaking and rowing were regular medal sports.
+
+Q 41 | geo | Indian Geography
+The Kudremukh mines in Karnataka are primarily known for the extraction of which important mineral resource?
+(1) Bauxite
+(2) Limestone
+(3) Iron Ore
+(4) Copper
+= 3
+~ Kudremukh, in the Western Ghats of Chikkamagaluru district, Karnataka, is known for its iron ore (magnetite) deposits. They were mined by KIOCL (Kudremukh Iron Ore Company Limited), and the ore was sent as slurry through a pipeline to Mangaluru for pelletisation and export. Mining at Kudremukh stopped at the end of 2005 after a Supreme Court order to protect the Kudremukh National Park. Ballari–Hosapete is Karnataka's other major iron ore belt.
+
+Q 42 | pol | Judiciary & Constitutional Bodies
+Which of the following statements correctly applies the weighted voting mechanism under Article 279A(9) of the Indian Constitution?
+(1) The Centre holds 75% of the voting power in the GST Council.
+(2) A GST Council decision can be passed solely with the support of the Centre and one State.
+(3) The States collectively have twice the voting weight of the Centre in the GST Council.
+(4) Each State has equal weightage as the Centre in GST Council voting.
+= 3
+~ Under Article 279A(9), every decision of the GST Council needs a majority of at least three-fourths of the weighted votes of members present and voting. The Central Government's vote carries one-third of the total votes cast, and all the State Governments together carry two-thirds, so the States collectively have twice the Centre's weight. The Centre therefore holds about 33%, not 75%, and cannot pass a decision alone or with one State; equally, the States cannot pass one without the Centre.
+
+Q 43 | sci | Chemistry
+Consider the given statements regarding the behavior of ideal gases:
+1. Ideal gas molecules have negligible volume compared to the total volume of the container.
+2. There are strong intermolecular attractive forces between ideal gas molecules.
+3. Collisions between ideal gas molecules are perfectly elastic.
+Which of the statements given above is/are correct?
+(1) 1 and 2 only
+(2) 1 and 3 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 2
+~ The kinetic theory model of an ideal gas assumes that the actual volume of the molecules is negligible compared with the volume of the container (statement 1 correct), that there are no attractive or repulsive forces between the molecules (statement 2 wrong), and that collisions between molecules and with the container walls are perfectly elastic, so total kinetic energy is conserved (statement 3 correct). Real gases deviate from these assumptions at high pressure and low temperature.
+
+Q 44 | pol | Judiciary & Constitutional Bodies
+In Bharatiya Nagarik suraksha Samhita (BNSS), which court may grant default bail after time limit lapses?
+(1) District Court
+(2) Magistrate
+(3) High Court
+(4) Gram Nyayalaya
+= 2
+~ Section 187 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (which replaced Section 167 of the CrPC) allows a Magistrate to authorise detention of an accused during investigation for up to 60 or 90 days, depending on the offence. If the investigation is not completed and the charge sheet is not filed within that period, the accused must be released on bail if he is prepared to furnish it. This default (statutory) bail is granted by the Magistrate.
+
+Q 45 | eco | Schemes & Welfare
+Which of the following schemes or initiatives is conceptually different from the others in terms of its sectoral focus?
+(1) NSWS
+(2) LEADS
+(3) Gati Shakti
+(4) PMFBY
+= 4
+~ NSWS (National Single Window System, 2021) is a digital platform for investor and business approvals; LEADS (Logistics Ease Across Different States) ranks States and UTs on logistics performance; and PM Gati Shakti (2021) is a national master plan for integrated multimodal infrastructure. All three focus on industry, investment and logistics. PMFBY (Pradhan Mantri Fasal Bima Yojana, 2016) is a crop insurance scheme of the Ministry of Agriculture and Farmers Welfare, so its focus is agriculture.
+
+Q 46 | cur | Static GK & Culture
+Fill in the Blank:
+Ghoomar was listed among top local dances globally in ______ year.
+(1) 2010
+(2) 2013
+(3) 2015
+(4) 2018
+= 2
+~ Ghoomar is the traditional folk dance of Rajasthan, performed mainly by Bhil and Rajput women who swirl in long flowing ghagras; the Bhils first danced it in worship of Goddess Saraswati, and Rajput families later adopted it. In 2013, an online travel advisory survey ranked Ghoomar fourth among the world's top ten local dances, the only Indian dance on the list, with Hawaii's hula ranked first. It is performed at festivals, weddings and other special occasions.
+
+Q 47 | cur | International
+According to Transparency International, what is a major concern with EU golden passport and visa schemes?
+(1) They increase legal migration and help boost employment
+(2) They encourage cultural exchange across the EU
+(3) They enable the corrupt to exploit citizenship and residency systems for personal gain
+(4) They promote tourism through relaxed visa regulations
+= 3
+~ Golden passport (citizenship-by-investment) and golden visa (residence-by-investment) schemes grant citizenship or residence to wealthy foreigners in return for investment. Transparency International warns that weak checks let corrupt officials, money launderers and criminals buy access to the EU, exposing the whole bloc to corruption risks. On 29 April 2025 the Court of Justice of the European Union ruled that Malta's golden passport scheme breached EU law, a ruling Transparency International welcomed.
+
+Q 48 | cur | National
+Which Indian city topped the Swachh Vayu Sarvekshan 2024 in the category of cities with a population over 10 lakh?
+(1) Bengaluru
+(2) Indore
+(3) Mumbai
+(4) Ahmedabad
+= 2
+~ Swachh Vayu Survekshan, run by the Union Environment Ministry under the National Clean Air Programme, ranks cities on the steps they take to improve air quality. Indore, SSC's answer, topped the over-10-lakh category in the 2023 survey (announced on 7 September 2023) and in the 2025 survey (announced in September 2025, just before this exam). In the 2024 survey, announced at Jaipur on 7 September 2024, Surat ranked first, followed by Jabalpur and Agra, so the year printed does not fit the key. (SSC key; some sources differ.)
+
+Q 49 | sci | Science & Technology
+Aditya-L1 is placed in a halo orbit around which type of gravitationally balanced point in space?
+(1) Polar
+(2) Lagrangian
+(3) Sun-synchronous
+(4) Geostationary
+= 2
+~ Aditya-L1, India's first space-based solar observatory, was launched by PSLV-C57 on 2 September 2023 and placed in a halo orbit around Lagrange point 1 (L1) of the Sun–Earth system on 6 January 2024. L1 is about 1.5 million km from Earth towards the Sun; there the combined pull of the Sun and Earth lets a spacecraft keep pace with Earth, giving an uninterrupted view of the Sun without eclipses. Polar, sun-synchronous and geostationary are Earth orbits.
+
+Q 50 | pol | Constitution & Rights
+Consider the following statements:
+1. The GST Council makes binding recommendations on GST rates.
+2. Article 246A allows States to legislate on intra-state supply of goods and services.
+Which of the above is/are correct?
+(1) Only 1
+(2) Only 2
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ Statement 1 is wrong: in Union of India v. Mohit Minerals (2022) the Supreme Court held that GST Council recommendations under Article 279A are not binding; they have persuasive value, because Parliament and the State legislatures both have power to make GST laws. Statement 2 is correct: Article 246A, inserted by the 101st Amendment (2016), empowers Parliament and every State legislature to make laws on GST, while Parliament alone legislates on inter-State supply.
+
+Q 51 | qa | Number System & Simplification
+What will come in place of ? to satisfy the equation : (√3 + 2)² = ? + 4√3
+(1) 7
+(2) 6
+(3) 5
+(4) 4
+= 1
+~ Expand using (a + b)² = a² + 2ab + b². Here (√3 + 2)² = (√3)² + 2 × √3 × 2 + 2² = 3 + 4√3 + 4 = 7 + 4√3. Comparing 7 + 4√3 with ? + 4√3, the surd parts cancel and the rational part gives ? = 7. A common slip is forgetting the (√3)² = 3 term and choosing 4.
+
+Q 52 | qa | Number System & Simplification
+Solve: (√7225 − √1225) × (1/5)
+(1) 10
+(2) 20
+(3) 30
+(4) 40
+= 1
+~ Find the square roots first. 7225 ends in 25, so its root ends in 5: 85² = 7225, so √7225 = 85. Similarly 35² = 1225, so √1225 = 35. Then (85 − 35) × 1/5 = 50 × 1/5 = 10. Note that √7225 − √1225 is not √(7225 − 1225); the roots must be taken separately before subtracting.
+
+Q 53 | qa | Ratio, Average & Mixtures
+If 25% of (P + Q) = 75% of (P − Q), then find the ratio P: Q.
+(1) 1 : 2
+(2) 2 : 1
+(3) 1 : 3
+(4) 3 : 1
+= 2
+~ Write the percentages as fractions: (1/4)(P + Q) = (3/4)(P − Q). Multiplying by 4 gives P + Q = 3P − 3Q, so 4Q = 2P, i.e. P = 2Q. Hence P : Q = 2 : 1. Check: with P = 2, Q = 1, 25% of 3 = 0.75 and 75% of 1 = 0.75, so both sides match.
+
+Q 54 | qa | Ratio, Average & Mixtures
+A bag contains ₹5, ₹2, and ₹1 coins in the ratio 2 : 3 : 4. If the total amount of money in the bag is ₹200, find the number of coins of each kind.
+(1) 16 coins of ₹5, 24 coins of ₹2, and 32 coins of ₹1
+(2) 20 coins of ₹5, 30 coins of ₹2, and 40 coins of ₹1
+(3) 25 coins of ₹5, 35 coins of ₹2, and 45 coins of ₹1
+(4) 18 coins of ₹5, 27 coins of ₹2, and 36 coins of ₹1
+= 2
+~ The ratio 2 : 3 : 4 is of the number of coins, so let the counts be 2k, 3k and 4k. Their value is 5(2k) + 2(3k) + 1(4k) = 10k + 6k + 4k = 20k. Setting 20k = 200 gives k = 10, so there are 20 coins of ₹5, 30 coins of ₹2 and 40 coins of ₹1. Check: 100 + 60 + 40 = ₹200.
+
+Q 55 | qa | Percentage, Profit & Interest
+A shopkeeper marked a watch at ₹800. He sold it after allowing a 15% discount. If his profit on the sale was 20%, what was the cost price of the watch?
+(1) ₹542.36
+(2) ₹536.47
+(3) ₹566.67
+(4) ₹596.34
+= 3
+~ Selling price = marked price × (100 − discount)% = 800 × 85/100 = ₹680. A 20% profit means SP = 120% of CP, so CP = 680 × 100/120 = 680/1.2 = ₹566.67. Note that the profit percentage is always reckoned on the cost price, not on the marked price, so the discount and profit cannot simply be added or subtracted.
+
+Q 56 | qa | Percentage, Profit & Interest
+A product is sold at a 20% discount on its marked price. This transaction results in a profit of 10% on its cost price. If the profit earned is ₹300, what would have been the selling price if the product was sold at a 30% discount on its marked price?
+(1) ₹2887.50
+(2) ₹3000.26
+(3) ₹3300
+(4) ₹3150
+= 1
+~ Profit of 10% on CP is ₹300, so CP = 300 × 100/10 = ₹3000 and SP = 3000 + 300 = ₹3300. This SP is 80% of the marked price, so MP = 3300/0.8 = ₹4125. At a 30% discount the selling price would be 70% of 4125 = ₹2887.50. Option ₹3300 is the actual selling price at the 20% discount, not the one asked for.
+
+Q 57 | qa | Algebra
+If the cubic equation a³ − 4a² + 5a − 2 = 0 has the root x, y, z then find the value of x + y + z.
+(1) 5
+(2) 6
+(3) 7
+(4) 4
+= 4
+~ For a cubic pa³ + qa² + ra + s = 0, the sum of the roots is −q/p. Here p = 1 and q = −4, so x + y + z = −(−4)/1 = 4. Check by factorising: a³ − 4a² + 5a − 2 = (a − 1)²(a − 2), so the roots are 1, 1 and 2, whose sum is 4.
+
+Q 58 | qa | Percentage, Profit & Interest
+C borrowed ₹6000 from D on 15 March 2023 at a simple interest rate of 10% per annum. C decided to repay the loan on 15 September 2023. How much total amount must C return to D?
+(1) ₹6300
+(2) ₹6500
+(3) ₹5400
+(4) ₹5800
+= 1
+~ From 15 March 2023 to 15 September 2023 is exactly 6 months, i.e. T = 1/2 year. Simple interest = P × R × T/100 = 6000 × 10 × (1/2)/100 = ₹300. The total amount to be returned = principal + interest = 6000 + 300 = ₹6300. ₹6600 would be the amount for a full year, which is not the period here.
+
+Q 59 | qa | Percentage, Profit & Interest
+A person invested a total sum of ₹2200 in three different schemes of simple interest at 4%, 5%, and 10% per annum. At the end of one year, he got the same interest from all three schemes. What was the amount (in ₹) invested at 5%?
+(1) ₹1000
+(2) ₹800
+(3) ₹600
+(4) ₹400
+= 2
+~ Let the equal one-year interest be k. Then the sums are k/0.04 = 25k, k/0.05 = 20k and k/0.10 = 10k, so they are in the ratio 25 : 20 : 10 = 5 : 4 : 2. Total 55k = 2200 gives k = 40, so the amount at 5% = 20 × 40 = ₹800. Check: 4% of 1000, 5% of 800 and 10% of 400 are all ₹40.
+
+Q 60 | qa | Trigonometry & Heights
+A man standing on the top of a 120 m high tower observes the angles of depression of two cars on opposite sides of the tower to be 30° and 45°. What is the distance between the two cars?
+(1) 120(√3 − 1) m
+(2) 120√3 m
+(3) 120 (1 + 1/√3) m
+(4) 120(√3 + 1) m
+= 4
+~ The angle of depression equals the angle of elevation from each car. For 30°: distance = 120/tan 30° = 120√3 m. For 45°: distance = 120/tan 45° = 120 m. As the cars are on opposite sides, the distances add: 120√3 + 120 = 120(√3 + 1) m ≈ 327.8 m. The difference 120(√3 − 1) m would apply only if both cars were on the same side.
+
+Q 61 | qa | Trigonometry & Heights
+A vertical pole TF has its base F on the ground. From a point A, 25 meters from F, the angle of elevation of T is x°. From another point B, 75 meters from F (and in the same line as A), the angle of elevation of T is y°. If the height of the pole is 25√3 meters, what is the value of x° + y°?
+(1) 60°
+(2) 75°
+(3) 90°
+(4) 120°
+= 3
+~ In right triangle TFA, tan x = TF/FA = 25√3/25 = √3, so x = 60°. In right triangle TFB, tan y = TF/FB = 25√3/75 = 1/√3, so y = 30°. Therefore x° + y° = 60° + 30° = 90°. Remember tan 60° = √3 and tan 30° = 1/√3; the nearer point always gives the larger angle of elevation.
+
+Q 62 | qa | Mensuration
+Two identical solid hemispheres, each with a radius of 21 cm, are melted and recast into a single sphere. What is the radius of the new sphere formed?
+(1) 18 cm
+(2) 21 cm
+(3) 24 cm
+(4) 27 cm
+= 2
+~ Volume is conserved on melting and recasting. Volume of one hemisphere = (2/3)πr³, so two hemispheres give 2 × (2/3)π(21)³ = (4/3)π(21)³. Setting (4/3)πR³ = (4/3)π(21)³ gives R³ = 21³, so R = 21 cm. Two identical hemispheres of radius r together make exactly one sphere of the same radius r.
+
+Q 63 | qa | Mensuration
+Creating a frustum, a right circular cone is sliced parallel to its base. The height of the original cone is 30 cm, and the cut is made 10 cm from the vertex. What is the ratio of the volumes of the frustum to that of the entire cone?
+(1) 26:27
+(2) 11:18
+(3) 16:19
+(4) 14:15
+= 1
+~ The small cone cut off at the top (height 10 cm) is similar to the whole cone (height 30 cm), with scale factor 10/30 = 1/3. Volumes of similar solids vary as the cube of the scale factor, so the small cone has (1/3)³ = 1/27 of the full volume. The frustum therefore has 1 − 1/27 = 26/27 of the volume, giving frustum : cone = 26 : 27.
+
+Q 64 | qa | Mensuration
+The side of a regular octagon is half the side of a regular quadrilateral (square). If the perimeter of the quadrilateral is 20cm, what is the perimeter of the octagon?
+(1) 10 cm
+(2) 20 cm
+(3) 30 cm
+(4) 40 cm
+= 2
+~ The square's side = perimeter/4 = 20/4 = 5 cm. The octagon's side is half of this, i.e. 2.5 cm. A regular octagon has 8 equal sides, so its perimeter = 8 × 2.5 = 20 cm. Shortcut: twice as many sides, each half as long, keeps the perimeter the same as the square's.
+
+Q 65 | qa | Mensuration
+A decorative column is made in the shape of a regular hexagonal prism. The side length of its base is 10 cm. The column is built from multiple sections, and their heights form an arithmetic progression: the first section is 5 cm tall, and each subsequent section is 2 cm taller than the previous one. If the column has 4 sections in total, what is the total volume of the column?
+(1) 4500√3 cm³
+(2) 4800√3 cm³
+(3) 5100√3 cm³
+(4) 5400√3 cm³
+= 2
+~ Area of a regular hexagon = (3√3/2)a² = (3√3/2) × 100 = 150√3 cm². The section heights are 5, 7, 9 and 11 cm, so the total height = (4/2)[2 × 5 + 3 × 2] = 32 cm. Volume of the prism = base area × height = 150√3 × 32 = 4800√3 cm³.
+
+Q 66 | qa | Geometry
+Find the midpoint of segment joining (3,4) and (7,8).
+(1) (3, 4)
+(2) (5, 6)
+(3) (4, 5)
+(4) (6, 7)
+= 2
+~ The midpoint of the segment joining (x₁, y₁) and (x₂, y₂) is ((x₁ + x₂)/2, (y₁ + y₂)/2). Here it is ((3 + 7)/2, (4 + 8)/2) = (10/2, 12/2) = (5, 6). Option (3, 4) is just one of the end points. A quick check: the midpoint must lie halfway, 2 units from each end in both x and y.
+
+Q 67 | qa | Geometry
+The number of diagonals in a hexagon is:
+(1) 6
+(2) 9
+(3) 12
+(4) 15
+= 2
+~ A polygon with n sides has n(n − 3)/2 diagonals, because each vertex joins to n − 3 non-adjacent vertices and each diagonal is counted twice. For a hexagon n = 6, so the number of diagonals = 6 × 3/2 = 9. The answer 15 is ⁶C₂, which counts the 6 sides as well as the 9 diagonals.
+
+Q 68 | qa | Geometry
+Triangle ABC has its centroid at point G(4, 5), and vertex A is located at (2, 3). If point D is the midpoint of side BC, what are the coordinates of D?
+(1) (5, 6)
+(2) (5, 8)
+(3) (6, 7)
+(4) (6, 8)
+= 1
+~ AD is a median, and the centroid divides it in the ratio AG : GD = 2 : 1, so G = (A + 2D)/3. Hence D = (3G − A)/2 = ((12 − 2)/2, (15 − 3)/2) = (5, 6). Check: from A(2, 3) to G(4, 5) the step is (2, 2), and from G to D(5, 6) it is (1, 1), exactly half, as required.
+
+Q 69 | qa | Algebra
+Given, √(x + 3) + √(x − 2) = 5, then find the value of x.
+(1) 5
+(2) 6
+(3) 7
+(4) 8
+= 2
+~ Let a = √(x + 3) and b = √(x − 2). Then a + b = 5 and a² − b² = (x + 3) − (x − 2) = 5, so a − b = 5/5 = 1. Adding gives 2a = 6, a = 3, so x + 3 = 9 and x = 6. Check: √9 + √4 = 3 + 2 = 5.
+
+Q 70 | qa | Geometry
+A common internal tangent connecting two circles is 9 cm long. The distance between the circles' centers is 15 cm. If the larger circle has a radius of 8 cm, what is the radius of the smaller circle?
+(1) 4 cm
+(2) 1 cm
+(3) 6 cm
+(4) 7 cm
+= 1
+~ Length of a common internal (transverse) tangent = √[d² − (r₁ + r₂)²]. So 9² = 15² − (8 + r)², giving (8 + r)² = 225 − 81 = 144, so 8 + r = 12 and r = 4 cm. Using the direct-tangent formula √[d² − (r₁ − r₂)²] instead would give r = 20, which is not smaller, so the internal formula is the right one.
+
+Q 71 | qa | Geometry
+In a cyclic quadrilateral ABCD, AB is the diameter of the circle. If angle ACD is 40°, what is the measure of angle BAD?
+(1) 40°
+(2) 50°
+(3) 80°
+(4) 90°
+= 2
+~ Angles in the same segment are equal, so ∠ABD = ∠ACD = 40° (both stand on chord AD). Since AB is a diameter, ∠ADB = 90° (angle in a semicircle). In triangle ABD, ∠BAD = 180° − 90° − 40° = 50°. Choosing 40° confuses ∠BAD with ∠ABD.
+
+Q 72 | qa | Trigonometry & Heights
+If sin²A − cos²A = 1/2, find the value of cos²A.
+(1) 1/2
+(2) 1/4
+(3) 3/4
+(4) 2/3
+= 2
+~ Use the identity sin²A = 1 − cos²A. Then (1 − cos²A) − cos²A = 1/2, i.e. 1 − 2cos²A = 1/2, so 2cos²A = 1/2 and cos²A = 1/4. Then sin²A = 3/4, and indeed 3/4 − 1/4 = 1/2. Option 3/4 is the value of sin²A, not cos²A.
+
+Q 73 | qa | Trigonometry & Heights
+If cot A = x + 1/x, find cosec²A.
+(1) x² + 1/x² + 1
+(2) x² + 1/x² + 1
+(3) x² + 1/x² + 3
+(4) x² + 1/x² − 1
+= 3
+~ Use the identity cosec²A = 1 + cot²A. Here cot²A = (x + 1/x)² = x² + 2 + 1/x², so cosec²A = 1 + x² + 2 + 1/x² = x² + 1/x² + 3. Forgetting the middle term 2 of the square gives x² + 1/x² + 1, which is wrong. (Options 1 and 2 are printed identically on the sheet.)
+
+Q 74 | qa | Number System & Simplification
+What is the value of (0.12³ + 0.06³) ÷ (0.24³ + 0.12³)?
+(1) 0.125
+(2) 0.5
+(3) 0.25
+(4) 1
+= 1
+~ Each term of the numerator is half the matching term of the denominator: 0.12 = ½ × 0.24 and 0.06 = ½ × 0.12. So the numerator = (½)³ × (0.24³ + 0.12³), and the ratio = (½)³ = 1/8 = 0.125. Taking the ratio of the bases, 0.5, forgets that the terms are cubed.
+
+Q 75 | qa | Number System & Simplification
+Simplify: ((0.5)³ + (0.05)³ + (0.005)³) ÷ ((0.1)³ + (0.01)³ + (0.001)³)
+(1) 5
+(2) 25
+(3) 125
+(4) 625
+= 3
+~ Each numerator term is 5 times the matching denominator term: 0.5 = 5 × 0.1, 0.05 = 5 × 0.01, 0.005 = 5 × 0.001. Hence the numerator = 5³ × ((0.1)³ + (0.01)³ + (0.001)³), and the ratio = 5³ = 125. Answer 5 forgets the cube on each term.
+
+Q 76 | eng | Vocabulary
+Select the most appropriate synonym of the given word: COGENT
+(1) Weak
+(2) Dubious
+(3) Convincing
+(4) Unclear
+= 3
+~ 'Cogent' describes an argument or reason that is clear, logical and persuasive, so its synonym is 'convincing' (a cogent argument convinces the listener). 'Weak', 'dubious' (doubtful) and 'unclear' all describe arguments that fail to persuade, so they are closer to antonyms. The word comes from Latin cogere, 'to compel', which suggests reasoning that compels agreement.
+
+Q 77 | eng | Vocabulary
+Select the most appropriate antonym of the given word. Lassitude
+(1) Exhaustion
+(2) Apathy
+(3) Vigor
+(4) Lethargy
+= 3
+~ 'Lassitude' means a state of physical or mental tiredness and lack of energy. Its opposite is 'vigor' (British 'vigour'), meaning strength, energy and enthusiasm. 'Exhaustion' and 'lethargy' are near-synonyms of lassitude, and 'apathy' (lack of interest or concern) is closely related, so none of these can be the antonym.
+
+Q 78 | eng | Idioms & One-word Substitution
+Choose the correct meaning of idiom:
+Won his laurels
+(1) Achieved distinction or fame
+(2) Lost everything
+(3) Changed his opinion
+(4) Saved money
+= 1
+~ To 'win (or gain) one's laurels' means to achieve honour, distinction or fame through one's achievements. In ancient Greece and Rome a wreath of laurel leaves was placed on the heads of victors and poets, so laurels became a symbol of glory. A related idiom, 'rest on one's laurels', means to be satisfied with past success and stop trying.
+
+Q 79 | eng | Idioms & One-word Substitution
+Choose the correct meaning of idiom:
+Came of age
+(1) Reached adulthood legally or socially
+(2) Understood morality for the first time
+(3) Abandoned earlier beliefs
+(4) Inherited property
+= 1
+~ To 'come of age' means to reach the age at which a person is legally regarded as an adult (the age of majority, 18 in India) or to become socially mature. Figuratively it also means that something has become fully developed, as in 'the industry has come of age'. Inheriting property may happen on coming of age, but that is not the meaning of the idiom.
+
+Q 80 | eng | Spelling
+Select the correct spelling of a word meaning 'cheerfully optimistic, especially in difficult times'.
+(1) Sanguine
+(2) Sangwine
+(3) Sanguin
+(4) Sangueenm
+= 1
+~ The correct spelling is 'sanguine' (s-a-n-g-u-i-n-e), meaning optimistic and positive, especially in a difficult situation, as in 'He remained sanguine about the result'. It comes from Latin sanguis, 'blood', because a 'blood-dominant' temperament was believed to make people cheerful. 'Sangwine' and 'Sanguin' are misspellings, and 'Sangueenm' is not a word.
+
+Q 81 | eng | Idioms & One-word Substitution
+Choose the correct one-word substitution for: ‘A loud and confused noise’.
+(1) Cacophony
+(2) Soliloquy
+(3) Racket
+(4) Roar
+= 1
+~ 'Cacophony' (Greek kakos 'bad' + phone 'sound') is a harsh, discordant and confused mixture of loud sounds. 'Soliloquy' is a speech made by a character alone on stage. 'Racket' is an informal word for a loud, unpleasant noise and 'roar' is a deep, loud sound; cacophony is the standard one-word substitute when the stress is on a confused, jarring mixture of sounds.
+
+Q 82 | eng | Idioms & One-word Substitution
+Choose the correct one-word substitute for: 'One who writes traditional poems'.
+(1) Bard
+(2) Lyricist
+(3) Dramatist
+(4) Essayist
+= 1
+~ A 'bard' is a poet, originally one who composed and recited traditional epic or heroic verse; Shakespeare is called 'the Bard of Avon'. A 'lyricist' writes the words of songs, a 'dramatist' writes plays, and an 'essayist' writes essays (short prose pieces). Only 'bard' matches a writer of traditional poems.
+
+Q 83 | eng | Fill in the Blanks & Cloze Test
+Fill in the blank with the right phrasal verb:
+The investigation was ______ after new evidence emerged.
+(1) called off
+(2) picked up
+(3) taken up
+(4) revived up
+= 3
+~ 'Take up' means to begin dealing with or to start working on a matter, so 'The investigation was taken up after new evidence emerged' shows the fresh evidence led to the case being started or reopened. 'Called off' means cancelled, which does not follow from new evidence emerging. 'Picked up' is used for things gaining speed or for collecting, and 'revived up' is not an accepted phrasal verb (the verb is simply 'revived').
+
+Q 84 | eng | Fill in the Blanks & Cloze Test
+Select the correct option:
+The biochemist insisted ______ conducting a double-blind trial before publication.
+(1) with
+(2) on
+(3) to
+(4) about
+= 2
+~ The verb 'insist' takes the preposition 'on' (or 'upon') before a noun or gerund: insist on doing something. Hence 'The biochemist insisted on conducting a double-blind trial before publication.' 'Insist with', 'insist to' and 'insist about' are not idiomatic. Alternatively, insist can take a that-clause: 'insisted that a double-blind trial be conducted'.
+
+Q 85 | eng | Error Spotting & Sentence Improvement
+Find the part of the sentence that contains an error:
+The interns were asked (1)/ to complete the assignment quickly (2)/ and submit it (3)/ with neat handwriting. (4)/
+(1) (1)
+(2) (2)
+(3) (3)
+(4) (4)
+= 4
+~ The error is in part (4). Something is written 'in' a particular handwriting, so the correct phrase is 'in neat handwriting' (just as we say 'in ink', 'in capital letters'). The rest is correct: 'were asked to complete' is a proper passive with an infinitive, and 'to complete... and submit it' keeps the two infinitives parallel.
+
+Q 86 | eng | Error Spotting & Sentence Improvement
+Find the part of the sentence that contains an error:
+It was at the summit in Vienna (1)/ where the treaty was officially ratified, (2)/ thereby bringing to an end (3)/ decades of political uncertainty in the region. (4)
+(1) (1)
+(2) (2)
+(3) (3)
+(4) (4)
+= 2
+~ The sentence is a cleft sentence, 'It was ... that ...', used to emphasise a phrase. When the emphasised part is an adverbial phrase of place such as 'at the summit in Vienna', it is followed by 'that', not 'where', because 'at' already expresses the place. So part (2) should read 'that the treaty was officially ratified'. 'Bringing to an end decades of...' in part (3) is correct.
+
+Q 87 | eng | Voice & Narration
+Change the following from active to passive:
+They had been negotiating the deal for months.
+(1) The deal had been negotiating for months.
+(2) The deal had been being negotiated for months.
+(3) The deal has been being negotiated for months.
+(4) The deal was being negotiated for months.
+= 2
+~ The active verb 'had been negotiating' is past perfect continuous. Its passive form is had been + being + past participle, so the object 'the deal' becomes the subject: 'The deal had been being negotiated for months.' Option 1 keeps the active -ing form, option 3 wrongly changes the tense to present perfect, and option 4 changes it to past continuous. The agent 'by them' is dropped as it is vague.
+
+Q 88 | eng | Vocabulary
+Select the sentence containing the homonym of the highlighted word:
+The nobleman received a ceremonial "fief" from the sovereign.
+(1) The farmer leased the fief to a local tenant.
+(2) The law student confused fief with deed transfer.
+(3) The engineer calibrated the hydraulic fief for flow control.
+(4) The archives recorded the transfer of fief in Latin.
+= 3
+~ A homonym is a word with the same spelling or sound as another but a different meaning. In the given sentence 'fief' has its feudal sense: land granted by a lord in return for loyal service. Options 1, 2 and 4 use 'fief' in this same land-tenure sense, so they are ruled out. Only option 3 puts 'fief' in an unrelated, mechanical context, so it is the intended answer by elimination. Strictly, dictionaries record no engineering sense of 'fief' (its only other meaning is figurative: an area under one person's control), so the question is loosely framed.
+
+Q 89 | eng | Voice & Narration
+Convert the sentence provided below from its passive voice structure to an active voice structure:
+The possibility of the files being leaked before the official release was not ruled out.
+(1) Officials ruled out the leak before the files were released.
+(2) The leak of the files was ruled out before the release.
+(3) Someone did not rule out the possibility that the files were leaked before release.
+(4) The release happened before ruling out the leak possibility.
+= 3
+~ The passive 'was not ruled out' is simple past with no agent, so a general subject such as 'someone' is supplied and the verb becomes 'did not rule out', with 'the possibility' as the object: 'Someone did not rule out the possibility that the files were leaked before release.' Option 1 reverses the meaning (ruled out instead of not ruled out), option 2 is still passive, and option 4 changes the meaning entirely.
+
+Q 90 | eng | Error Spotting & Sentence Improvement
+Choose the most suitable option to replace the highlighted part of the sentence:
+The manager "is angry on" the clerk.
+(1) is angry at
+(2) is annoyed by
+(3) is angry with
+(4) is angry over
+= 3
+~ 'Angry on' is never correct. The traditional rule taught for exams is: angry with a person, angry at or about a thing or situation. Since the clerk is a person, 'The manager is angry with the clerk' is the answer. 'Angry over' is used for an issue (angry over the delay), and 'is annoyed by' changes the expression. Modern dictionaries also allow 'angry at somebody', but SSC follows the traditional rule. (SSC key; some sources differ.)
+
+Q 91 | eng | Error Spotting & Sentence Improvement
+Choose the most suitable option to replace the highlighted part of the sentence:
+He was "accused for stealing" the documents.
+(1) accused of stealing
+(2) accused to steal
+(3) accused with stealing
+(4) charged for steal
+= 1
+~ The verb 'accuse' always takes the preposition 'of' followed by a noun or gerund: accuse someone of something. So 'He was accused of stealing the documents' is correct. 'Accused for', 'accused to steal' and 'accused with' are wrong. Note the related verb 'charge', which takes 'with': 'He was charged with stealing'; 'charged for steal' is wrong in both preposition and verb form.
+
+Q 92 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+The accelerating depletion of fossil fuels, coupled with mounting ecological degradation, has propelled renewable energy from a peripheral concern to a central component of global energy discourse. Yet, the conversation often fixates on production rather than application. A nuanced understanding of renewable energy must include not only its sources—solar, wind, hydro, geothermal, and biomass—but also the multifaceted domains in which it can transform economies, decentralize power structures, and promote environmental justice. In the domain of electricity generation, renewables have already begun to displace conventional energy systems. Solar photovoltaic installations now power not only urban rooftops but remote rural hamlets long excluded from centralized grids. Micro-hydel projects have enabled mountain communities to harness perennial streams for electricity without the ecological upheaval of large dams. Similarly, wind energy has emerged as a significant contributor in coastal and arid zones, transforming local economies by creating decentralized, sustainable employment ecosystems. Beyond electricity, renewable energy finds compelling applications in transportation, industrial heating, and agriculture. The rise of biofuels—especially second-generation variants derived from agricultural waste—offers a pathway to decarbonize aviation and freight transport, sectors that have traditionally been resistant to electrification. In agrarian contexts, solar-powered pumps have reduced farmers’ dependence on erratic grid supply and diesel generators, enhancing irrigation autonomy while mitigating carbon emissions. Industries, often vilified for their carbon intensity, are also experimenting with renewable alternatives. Concentrated solar thermal technologies, for instance, are being employed in textile processing, food dehydration, and even metallurgy, demonstrating that clean energy need not be confined to low-intensity applications. Furthermore, geothermal energy is increasingly being harnessed for space heating in colder regions and for cooling through absorption chillers—thereby offsetting conventional HVAC loads. However, the significance of renewable energy transcends utility. At a deeper level, it challenges existing geopolitical hierarchies shaped by fossil fuel dependency. While oil-rich nations have historically wielded disproportionate influence, renewable resources—abundant yet diffuse—enable energy sovereignty for resource-scarce regions. This democratization of energy, if properly managed, can catalyze more equitable development paradigms. Nevertheless, integration challenges persist. Intermittency, storage limitations, land use conflicts, and upfront costs are not insignificant barriers. A hasty transition without resilient infrastructure or community consent could replicate the very injustices renewables seek to redress. Therefore, the question is not merely how to produce renewable energy, but how to embed it meaningfully across sectors, geographies, and social hierarchies.
+What primary argument does the author make about renewable energy?
+(1) It can only replace fossil fuels in electricity generation
+(2) It has limited potential beyond solar energy
+(3) Its transformative use lies across multiple sectors
+(4) It is primarily a Western innovation
+= 3
+~ The author says the discussion fixates on production rather than application and stresses 'the multifaceted domains' where renewables can transform economies. Examples follow from electricity, transport, agriculture, industry, heating and cooling, and the passage ends by asking how to embed renewables 'across sectors, geographies, and social hierarchies'. Option 1 contradicts 'Beyond electricity...', option 2 ignores wind, hydro, biofuels and geothermal, and option 4 is never mentioned.
+
+Q 93 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+The accelerating depletion of fossil fuels, coupled with mounting ecological degradation, has propelled renewable energy from a peripheral concern to a central component of global energy discourse. Yet, the conversation often fixates on production rather than application. A nuanced understanding of renewable energy must include not only its sources—solar, wind, hydro, geothermal, and biomass—but also the multifaceted domains in which it can transform economies, decentralize power structures, and promote environmental justice. In the domain of electricity generation, renewables have already begun to displace conventional energy systems. Solar photovoltaic installations now power not only urban rooftops but remote rural hamlets long excluded from centralized grids. Micro-hydel projects have enabled mountain communities to harness perennial streams for electricity without the ecological upheaval of large dams. Similarly, wind energy has emerged as a significant contributor in coastal and arid zones, transforming local economies by creating decentralized, sustainable employment ecosystems. Beyond electricity, renewable energy finds compelling applications in transportation, industrial heating, and agriculture. The rise of biofuels—especially second-generation variants derived from agricultural waste—offers a pathway to decarbonize aviation and freight transport, sectors that have traditionally been resistant to electrification. In agrarian contexts, solar-powered pumps have reduced farmers’ dependence on erratic grid supply and diesel generators, enhancing irrigation autonomy while mitigating carbon emissions. Industries, often vilified for their carbon intensity, are also experimenting with renewable alternatives. Concentrated solar thermal technologies, for instance, are being employed in textile processing, food dehydration, and even metallurgy, demonstrating that clean energy need not be confined to low-intensity applications. Furthermore, geothermal energy is increasingly being harnessed for space heating in colder regions and for cooling through absorption chillers—thereby offsetting conventional HVAC loads. However, the significance of renewable energy transcends utility. At a deeper level, it challenges existing geopolitical hierarchies shaped by fossil fuel dependency. While oil-rich nations have historically wielded disproportionate influence, renewable resources—abundant yet diffuse—enable energy sovereignty for resource-scarce regions. This democratization of energy, if properly managed, can catalyze more equitable development paradigms. Nevertheless, integration challenges persist. Intermittency, storage limitations, land use conflicts, and upfront costs are not insignificant barriers. A hasty transition without resilient infrastructure or community consent could replicate the very injustices renewables seek to redress. Therefore, the question is not merely how to produce renewable energy, but how to embed it meaningfully across sectors, geographies, and social hierarchies.
+What distinguishes second-generation biofuels, as mentioned in the passage?
+(1) They are made from animal fats
+(2) They derive from non-edible agricultural waste
+(3) They require petroleum additives
+(4) They emit more carbon than coal
+= 2
+~ The passage refers to 'second-generation variants derived from agricultural waste' that offer a pathway to decarbonise aviation and freight transport. Agricultural waste (crop residues such as stalks and husks) is non-edible, which is what separates second-generation biofuels from first-generation ones made from food crops. Animal fats and petroleum additives are not mentioned, and emitting more carbon than coal contradicts their decarbonising role.
+
+Q 94 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+The accelerating depletion of fossil fuels, coupled with mounting ecological degradation, has propelled renewable energy from a peripheral concern to a central component of global energy discourse. Yet, the conversation often fixates on production rather than application. A nuanced understanding of renewable energy must include not only its sources—solar, wind, hydro, geothermal, and biomass—but also the multifaceted domains in which it can transform economies, decentralize power structures, and promote environmental justice. In the domain of electricity generation, renewables have already begun to displace conventional energy systems. Solar photovoltaic installations now power not only urban rooftops but remote rural hamlets long excluded from centralized grids. Micro-hydel projects have enabled mountain communities to harness perennial streams for electricity without the ecological upheaval of large dams. Similarly, wind energy has emerged as a significant contributor in coastal and arid zones, transforming local economies by creating decentralized, sustainable employment ecosystems. Beyond electricity, renewable energy finds compelling applications in transportation, industrial heating, and agriculture. The rise of biofuels—especially second-generation variants derived from agricultural waste—offers a pathway to decarbonize aviation and freight transport, sectors that have traditionally been resistant to electrification. In agrarian contexts, solar-powered pumps have reduced farmers’ dependence on erratic grid supply and diesel generators, enhancing irrigation autonomy while mitigating carbon emissions. Industries, often vilified for their carbon intensity, are also experimenting with renewable alternatives. Concentrated solar thermal technologies, for instance, are being employed in textile processing, food dehydration, and even metallurgy, demonstrating that clean energy need not be confined to low-intensity applications. Furthermore, geothermal energy is increasingly being harnessed for space heating in colder regions and for cooling through absorption chillers—thereby offsetting conventional HVAC loads. However, the significance of renewable energy transcends utility. At a deeper level, it challenges existing geopolitical hierarchies shaped by fossil fuel dependency. While oil-rich nations have historically wielded disproportionate influence, renewable resources—abundant yet diffuse—enable energy sovereignty for resource-scarce regions. This democratization of energy, if properly managed, can catalyze more equitable development paradigms. Nevertheless, integration challenges persist. Intermittency, storage limitations, land use conflicts, and upfront costs are not insignificant barriers. A hasty transition without resilient infrastructure or community consent could replicate the very injustices renewables seek to redress. Therefore, the question is not merely how to produce renewable energy, but how to embed it meaningfully across sectors, geographies, and social hierarchies.
+Why is geothermal energy cited in the passage?
+(1) To highlight a rare and impractical solution
+(2) To show its political implications
+(3) To exemplify its industrial cooling and heating utility
+(4) To criticize its high cost
+= 3
+~ Geothermal energy appears in the list of practical applications beyond electricity: it 'is increasingly being harnessed for space heating in colder regions and for cooling through absorption chillers', offsetting conventional HVAC loads. Coming right after the industrial examples, it is cited to exemplify its heating and cooling utility; the passage names space heating and absorption chillers rather than factories, but option 3 is clearly the closest. It is described as growing, not rare or impractical; its political implications and cost are not discussed in connection with geothermal energy.
+
+Q 95 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+The accelerating depletion of fossil fuels, coupled with mounting ecological degradation, has propelled renewable energy from a peripheral concern to a central component of global energy discourse. Yet, the conversation often fixates on production rather than application. A nuanced understanding of renewable energy must include not only its sources—solar, wind, hydro, geothermal, and biomass—but also the multifaceted domains in which it can transform economies, decentralize power structures, and promote environmental justice. In the domain of electricity generation, renewables have already begun to displace conventional energy systems. Solar photovoltaic installations now power not only urban rooftops but remote rural hamlets long excluded from centralized grids. Micro-hydel projects have enabled mountain communities to harness perennial streams for electricity without the ecological upheaval of large dams. Similarly, wind energy has emerged as a significant contributor in coastal and arid zones, transforming local economies by creating decentralized, sustainable employment ecosystems. Beyond electricity, renewable energy finds compelling applications in transportation, industrial heating, and agriculture. The rise of biofuels—especially second-generation variants derived from agricultural waste—offers a pathway to decarbonize aviation and freight transport, sectors that have traditionally been resistant to electrification. In agrarian contexts, solar-powered pumps have reduced farmers’ dependence on erratic grid supply and diesel generators, enhancing irrigation autonomy while mitigating carbon emissions. Industries, often vilified for their carbon intensity, are also experimenting with renewable alternatives. Concentrated solar thermal technologies, for instance, are being employed in textile processing, food dehydration, and even metallurgy, demonstrating that clean energy need not be confined to low-intensity applications. Furthermore, geothermal energy is increasingly being harnessed for space heating in colder regions and for cooling through absorption chillers—thereby offsetting conventional HVAC loads. However, the significance of renewable energy transcends utility. At a deeper level, it challenges existing geopolitical hierarchies shaped by fossil fuel dependency. While oil-rich nations have historically wielded disproportionate influence, renewable resources—abundant yet diffuse—enable energy sovereignty for resource-scarce regions. This democratization of energy, if properly managed, can catalyze more equitable development paradigms. Nevertheless, integration challenges persist. Intermittency, storage limitations, land use conflicts, and upfront costs are not insignificant barriers. A hasty transition without resilient infrastructure or community consent could replicate the very injustices renewables seek to redress. Therefore, the question is not merely how to produce renewable energy, but how to embed it meaningfully across sectors, geographies, and social hierarchies.
+According to the author, how does renewable energy challenge global power structures?
+(1) By reducing electricity usage
+(2) By centralizing production
+(3) By enabling energy independence in diverse regions
+(4) By increasing oil exports
+= 3
+~ The author says renewable energy 'challenges existing geopolitical hierarchies shaped by fossil fuel dependency': while oil-rich nations have wielded disproportionate influence, renewable resources, abundant yet diffuse, 'enable energy sovereignty for resource-scarce regions'. Energy sovereignty means energy independence. Option 2 is the opposite of the decentralisation the passage describes, and options 1 and 4 are not stated.
+
+Q 96 | eng | Reading Comprehension
+Read the following passage and answer the questions based on the passage :
+The accelerating depletion of fossil fuels, coupled with mounting ecological degradation, has propelled renewable energy from a peripheral concern to a central component of global energy discourse. Yet, the conversation often fixates on production rather than application. A nuanced understanding of renewable energy must include not only its sources—solar, wind, hydro, geothermal, and biomass—but also the multifaceted domains in which it can transform economies, decentralize power structures, and promote environmental justice. In the domain of electricity generation, renewables have already begun to displace conventional energy systems. Solar photovoltaic installations now power not only urban rooftops but remote rural hamlets long excluded from centralized grids. Micro-hydel projects have enabled mountain communities to harness perennial streams for electricity without the ecological upheaval of large dams. Similarly, wind energy has emerged as a significant contributor in coastal and arid zones, transforming local economies by creating decentralized, sustainable employment ecosystems. Beyond electricity, renewable energy finds compelling applications in transportation, industrial heating, and agriculture. The rise of biofuels—especially second-generation variants derived from agricultural waste—offers a pathway to decarbonize aviation and freight transport, sectors that have traditionally been resistant to electrification. In agrarian contexts, solar-powered pumps have reduced farmers’ dependence on erratic grid supply and diesel generators, enhancing irrigation autonomy while mitigating carbon emissions. Industries, often vilified for their carbon intensity, are also experimenting with renewable alternatives. Concentrated solar thermal technologies, for instance, are being employed in textile processing, food dehydration, and even metallurgy, demonstrating that clean energy need not be confined to low-intensity applications. Furthermore, geothermal energy is increasingly being harnessed for space heating in colder regions and for cooling through absorption chillers—thereby offsetting conventional HVAC loads. However, the significance of renewable energy transcends utility. At a deeper level, it challenges existing geopolitical hierarchies shaped by fossil fuel dependency. While oil-rich nations have historically wielded disproportionate influence, renewable resources—abundant yet diffuse—enable energy sovereignty for resource-scarce regions. This democratization of energy, if properly managed, can catalyze more equitable development paradigms. Nevertheless, integration challenges persist. Intermittency, storage limitations, land use conflicts, and upfront costs are not insignificant barriers. A hasty transition without resilient infrastructure or community consent could replicate the very injustices renewables seek to redress. Therefore, the question is not merely how to produce renewable energy, but how to embed it meaningfully across sectors, geographies, and social hierarchies.
+What is the author’s caution about the rapid adoption of renewable energy?
+(1) It is economically unsustainable
+(2) It may repeat existing patterns of injustice
+(3) It leads to fossil fuel scarcity
+(4) It diminishes employment
+= 2
+~ The author warns that 'a hasty transition without resilient infrastructure or community consent could replicate the very injustices renewables seek to redress', so rapid adoption may repeat existing patterns of injustice. Upfront costs are listed only as one barrier, not as proof that renewables are economically unsustainable. Fossil fuel depletion is a cause of the shift, not a result, and the passage says wind energy creates employment.
+
+Q 97 | eng | Voice & Narration
+Select the correct option for the Direct Speech conversion of the sentence below.
+He confessed that the violin concerto would have remained fragmentary had the late maestro not bequeathed his annotated sketches.
+(1) He said, "The violin concerto would have remained fragmentary had the late maestro not bequeathed his annotated sketches."
+(2) He said, "The violin concerto would have remained fragmentary if the late maestro not bequeathed his annotated sketches."
+(3) He said, "The violin concerto will be remaining fragmentary had the late maestro not bequeathed his annotated sketches."
+(4) He said, "The violin concerto would be fragmentary if sketches had not been bequeathed."
+= 1
+~ The reported clause is a third conditional with inversion ('would have remained ... had the maestro not bequeathed'). Such unreal past conditionals cannot be shifted further back, so the words stay the same in direct speech. Option 2 is ungrammatical because 'if' needs 'had not bequeathed', option 3 uses an impossible tense ('will be remaining ... had'), and option 4 changes the meaning and drops 'the late maestro'.
+
+Q 98 | eng | Voice & Narration
+A sentence is provided in direct speech. From the four given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech.
+She said, “I didn’t see him at the station.”
+(1) She said that she hasn’t seen him at the station.
+(2) She said that she had not seen him at the station.
+(3) She said she didn’t saw him at the station.
+(4) She said that she was not seeing him at the station.
+= 2
+~ With a past reporting verb ('said'), the simple past 'didn't see' shifts back to the past perfect 'had not seen', and 'I' becomes 'she'. Hence: 'She said that she had not seen him at the station.' Option 1 uses the present perfect, option 3 wrongly combines 'didn't' with the past form 'saw' (did is followed by the base form) and keeps the tense, and option 4 changes it to past continuous.
+
+Q 99 | eng | Sentence Arrangement
+Rearrange the following sentences to form a coherent paragraph:
+1. This phenomenon is often referred to as a "network effect," where the value of a service increases with the number of its users.
+2. Consequently, they tend to dominate their respective markets, leading to the creation of powerful monopolies or oligopolies.
+3. The digital economy has given rise to new business models that rely on the accumulation of data and the scale of their user base.
+4. A prime example is the platform economy, where companies like social media networks and ride-sharing apps create value by connecting users.
+(1) 2, 3, 4, 1
+(2) 4, 1, 2, 3
+(3) 3, 4, 1, 2
+(4) 1, 3, 2, 4
+= 3
+~ Sentence 3 introduces the topic: the digital economy's new business models built on data and user base. Sentence 4 gives 'a prime example', the platform economy, where companies create value by connecting users. Sentence 1 names this phenomenon of value rising with users, the 'network effect'. Sentence 2 begins with 'Consequently' and gives the result, market dominance and monopolies. Order: 3, 4, 1, 2.
+
+Q 100 | eng | Sentence Arrangement
+Rearrange the following sentences in correct order to make a logical passage.
+1. This helps prevent nutrient depletion and soil erosion.
+2. Crop rotation is a sustainable agricultural practice.
+3. It involves planting different crops sequentially on the same land.
+4. It also reduces the need for synthetic fertilizers.
+(1) 2-3-1-4
+(2) 1-2-3-4
+(3) 2-4-1-3
+(4) 3-4-2-1
+= 1
+~ Sentence 2 introduces the subject, crop rotation, so it must come first. Sentence 3 explains what it involves, with 'It' referring to crop rotation. Sentence 1 begins 'This helps', giving the first benefit of the practice just described. Sentence 4 adds a further benefit with 'also', so it must follow sentence 1. The logical order is 2-3-1-4.

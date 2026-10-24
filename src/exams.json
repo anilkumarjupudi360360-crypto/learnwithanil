@@ -540,7 +540,8 @@
    "cat": "ssc",
    "b": "SSC",
    "t": "CGL",
-   "n": "Combined Graduate Level"
+   "n": "Combined Graduate Level",
+   "live": "ssc-cgl/"
   },
   {
    "id": "ssc-chsl",

@@ -49,7 +49,7 @@ async def main():
             tiles = await pg.locator('#hub-static .exam').count()
             assert tiles >= 90, f'expected the full exam list, got {tiles}'
             live = await pg.locator('#hub-static .exam.live').count()
-            built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
+            built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
             assert live == built, f'{built} exams are built but {live} tiles are live'
             await pg.fill('#examSearch', 'group 2'); await pg.wait_for_timeout(100)
             assert await pg.locator('#hub-static .exam:not([hidden])').count() == 2, 'search "group 2" should find APPSC and TGPSC Group-II'
@@ -63,7 +63,7 @@ async def main():
             assert await pg.evaluate('window.__same === 1'), 'moving between views should not reload the page'
             assert await pg.evaluate('!document.getElementById("home-static").hidden'), 'the live Group-II tile should open the Group-II page'
             if name == 'desk': await pg.screenshot(path=f'{SHOTS}/home-{name}.png', full_page=False)
-            for v in ['exams','exam/ssc-cgl','home','papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','join','notes']:
+            for v in ['exams','exam/ssc-chsl','home','papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','join','notes']:
                 await pg.evaluate(f'location.hash="{v}"'); await pg.wait_for_timeout(150)
                 sw = await pg.evaluate('document.documentElement.scrollWidth')
                 if sw > width: errors.append(f'{name}/{v}: horizontal overflow {sw}>{width}')
@@ -129,7 +129,7 @@ async def main():
                 await pg.evaluate('location.hash="home"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/home-phone.png', full_page=False)
         # exams in their own folders: APPSC Group-I (Telugu) and UPSC CAPF (Hindi)
-        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group 1', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi'), ('upsc-epfo', 'epfo', 'EPFO', 'hi'), ('ts-police-si', 'tssi', 'TS Police SI', 'te'), ('ts-police-constable', 'tspc', 'TS Police Constable', 'te'), ('tgpsc-hmwssb-manager', 'hmws', 'HMWSSB Manager', 'te')]:
+        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group 1', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi'), ('upsc-epfo', 'epfo', 'EPFO', 'hi'), ('ssc-cgl', 'cgl', 'SSC CGL', 'hi'), ('ts-police-si', 'tssi', 'TS Police SI', 'te'), ('ts-police-constable', 'tspc', 'TS Police Constable', 'te'), ('tgpsc-hmwssb-manager', 'hmws', 'HMWSSB Manager', 'te')]:
             if not os.path.exists(os.path.join(SITE, sub, 'index.html')): continue
             fp = URL + sub + '/'
             for width, name in [(1280, 'desk'), (390, 'phone')]:
@@ -175,7 +175,7 @@ async def main():
         checks = [('appsc-group-1/bank/', '/appsc-group-1/bank/', 'Search'), ('upsc-capf/practice/', '/upsc-capf/practice/', 'quiz'),
                   ('#home', '/appsc-group-2/', 'home'), ('appsc-group-1/#papers', '/appsc-group-1/papers/', 'question papers'),
                   ('upsc-capf/q/c2026a-3/', '/upsc-capf/quiz/', 'Raghu'), ('upsc-capf/?q=c2026a-4', '/upsc-capf/quiz/', 'Ol Chiki'),
-                  ('exam/ssc-cgl/', '/exam/ssc-cgl/', 'CGL'), ('appsc-group-2/papers/', '/appsc-group-2/papers/', 'question papers')]
+                  ('exam/ssc-chsl/', '/exam/ssc-chsl/', 'CHSL'), ('appsc-group-2/papers/', '/appsc-group-2/papers/', 'question papers')]
         for path, want, word in checks:
             await pg.goto(URL + path); await pg.wait_for_timeout(700)
             got = await pg.evaluate('location.pathname')
@@ -215,7 +215,7 @@ async def main():
                 if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')
         # every exam home: three tiles (PYQs, mock tests, sectional tests), each a page of its own; no question of the day there
         smx = open(os.path.join(SITE, 'sitemap.xml')).read()
-        for sub in ('ts-police-si', 'ts-police-constable', 'appsc-group-2', 'appsc-group-1', 'upsc-capf', 'upsc-epfo', 'tgpsc-hmwssb-manager'):
+        for sub in ('ts-police-si', 'ts-police-constable', 'appsc-group-2', 'appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'tgpsc-hmwssb-manager'):
             for rel in (f'{sub}/pyqs.html', f'{sub}/mock-test.html', f'{sub}/sectional-tests.html'):
                 if not os.path.isfile(os.path.join(SITE, rel)): errors.append(f'missing {rel}'); continue
                 if f'/{rel}</loc>' not in smx: errors.append(f'{rel} not in sitemap')

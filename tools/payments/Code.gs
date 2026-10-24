@@ -6,7 +6,8 @@
  *    from the day of payment. Stored with exam = 'all'.
  *  - Free trial: the same access as the PYQ Pass for 3 days, once per phone number, starting the first time a registered
  *    student's phone and email reach this script (right after they register on the site). Stored in the 'trials' tab.
- *  - Mock packs (Mission Khaki, ₹150): one exam's mock tests only (the PYQ Pass is separate). Valid till that exam.
+ *  - Mock packs (Mission Khaki ₹150, valid till that exam; Mission CGL ₹149, 12 months): one exam's mock tests only
+ *    (the PYQ Pass is separate).
  *
  * What it does
  *  - buy:     creates an Instamojo payment request for a pass (price fixed here, never taken from the browser)
@@ -28,8 +29,10 @@
 const SITE = 'https://learnwithanil.in/';
 const PYQ = {price: 45, months: 12, purpose: 'PYQ Pass - All Exams (1 yr)'};   // Instamojo allows 30 characters
 const TRIAL_DAYS = 0;   // free trial switched off (Anil, 23 Oct 2026: every PYQ needs the paid pass). Was 3.
-const MOCKS = {   // exam id: mock pack on sale (price, name shown at checkout, last day the pass is valid)
-  'ts-police-si': {price: 150, name: 'Mission Khaki TS SI Mocks', until: '2026-11-30'},
+const MOCKS = {   // exam id: mock pack on sale (price, name shown at checkout, last day the pass is valid or months from payment,
+                  // and the prefix every mock id of that pack starts with: a pass for one pack never opens another pack's mocks)
+  'ts-police-si': {price: 150, name: 'Mission Khaki TS SI Mocks', until: '2026-11-30', prefix: 'mk-si-'},
+  'ssc-cgl': {price: 149, name: 'Mission CGL SSC Mocks', months: 12, prefix: 'mk-cgl-'},   // Anil, 24 Oct 2026: ₹149
 };
 // Mock keys live in the 'keys' tab of this spreadsheet: mock_id | key (base64) | file | opens (yyyy-mm-dd, IST).
 const MAX_DEVICES = 3;   // one phone number's passes work on at most this many phones/computers
@@ -72,7 +75,7 @@ function today_() { return ymd_(new Date()); }
 function day_(v) { return v instanceof Date ? ymd_(v) : String(v || ''); }
 function inMonths_(n) { const d = new Date(); d.setMonth(d.getMonth() + n); return ymd_(d); }
 function inDays_(n) { const d = new Date(); d.setDate(d.getDate() + n); return ymd_(d); }
-function untilFor(kind, exam) { return kind === 'mock' ? MOCKS[exam].until : inMonths_(PYQ.months); }
+function untilFor(kind, exam) { return kind === 'mock' ? (MOCKS[exam].until || inMonths_(MOCKS[exam].months || 12)) : inMonths_(PYQ.months); }
 
 // ---------- Instamojo API v2 ----------
 function api_() { return (prop('INSTAMOJO_API') || 'https://api.instamojo.com').replace(/\/+$/, ''); }
@@ -246,6 +249,7 @@ function deviceOK_(phone, device) {
 
 function mock(b, exam) {   // the key of a sealed mock (the encrypted file is on the website), only for a valid mock pass
   const id = String(b.id || '');
+  if (!MOCKS[exam] || id.indexOf(MOCKS[exam].prefix) !== 0) return {ok: false, error: 'This mock is not part of this exam\'s test series.'};
   const v = sheet('keys', ['mock_id', 'key', 'file', 'opens']).getDataRange().getValues();
   let row = null;
   for (let i = 1; i < v.length; i++) if (String(v[i][0]) === id) row = v[i];

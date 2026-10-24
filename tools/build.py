@@ -189,6 +189,60 @@ EPFO_SUBJ_HI = {'eng': 'सामान्य अंग्रेज़ी', 'ih'
                 'pol': 'भारतीय राजव्यवस्था', 'eco': 'भारतीय अर्थव्यवस्था', 'acc': 'सामान्य लेखा सिद्धांत', 'lab': 'औद्योगिक संबंध और श्रम कानून',
                 'ss': 'भारत में सामाजिक सुरक्षा', 'sci': 'सामान्य विज्ञान और कंप्यूटर', 'qa': 'मात्रात्मक अभिरुचि (क्वांटिटेटिव एप्टीट्यूड)'}
 
+# ---------- SSC CGL (Combined Graduate Level): Tier-I and Tier-II, from SSC's own response sheets (SSC's key marked on them) ----------
+CGL_T1_BLURB = ('Tier-I: General Intelligence & Reasoning, General Awareness, Quantitative Aptitude and English Comprehension, '
+                '25 questions each: 100 questions, 200 marks, 60 minutes, −0.50 for a wrong answer.')
+CGL_T2_BLURB = ('Tier-II Paper I: Mathematical Abilities (30) and Reasoning & General Intelligence (30); English Language & Comprehension (45) '
+                'and General Awareness (25); Computer Knowledge (20, qualifying). 3 marks a question, −1 for a wrong answer.')
+def _cgl_t1(pid, year, day, shift, time_, file_):
+    return dict(id=pid, file=file_, year=year, stage='Tier-I', short=f'Tier-I {year} · {day} S{shift}',
+                title=f'SSC CGL {year} Tier-I, {day} {year}, Shift {shift}', notif=f'Shift {shift} ({time_}) · SSC key', held=f'{day} {year}',
+                key="SSC's answer key as marked on the candidate's response sheet", fmt='mcq',
+                slug=f'ssc-cgl-{year}-tier-1-{day.lower().replace(" ", "-")}-shift-{shift}-question-paper-with-answers',
+                alt='Prelims', kwname=f'SSC CGL {year} Tier 1 ({day} Shift {shift})', hi_paper=f'टियर-1 ({day}, पाली {shift})', blurb=CGL_T1_BLURB, mins=60)
+CGL_PAPERS = [
+  _cgl_t1('c25s1', 2025, '18 September', 1, '9:00 AM', 'cgl-2025-tier1-18sep-shift1.txt'),
+  _cgl_t1('c25s2', 2025, '18 September', 2, '12:30 PM', 'cgl-2025-tier1-18sep-shift2.txt'),
+  _cgl_t1('c25s3', 2025, '18 September', 3, '4:00 PM', 'cgl-2025-tier1-18sep-shift3.txt'),
+  dict(id='c25t2', file='cgl-2025-tier2-paper1.txt', year=2025, stage='Tier-II Paper I', short='Tier-II 2025 · Paper I',
+       title='SSC CGL 2025 Tier-II, Paper I', notif='Held January 2026 · SSC key', held='January 2026',
+       key="SSC's answer key as marked on the candidate's response sheet", fmt='mcq', slug='ssc-cgl-2025-tier-2-paper-1-question-paper-with-answers',
+       alt='Mains', kwname='SSC CGL 2025 Tier 2 Paper 1', hi_paper='टियर-2 पेपर-1', blurb=CGL_T2_BLURB, mins=135),
+  _cgl_t1('c24s1', 2024, '9 September', 1, '9:00 AM', 'cgl-2024-tier1-09sep-shift1.txt'),
+  _cgl_t1('c24s2', 2024, '9 September', 2, '12:30 PM', 'cgl-2024-tier1-09sep-shift2.txt'),
+  _cgl_t1('c24s3', 2024, '9 September', 3, '4:00 PM', 'cgl-2024-tier1-09sep-shift3.txt'),
+  dict(id='c24t2', file='cgl-2024-tier2-paper1.txt', year=2024, stage='Tier-II Paper I', short='Tier-II 2024 · Paper I',
+       title='SSC CGL 2024 Tier-II, Paper I', notif='Held 18 January 2025 · SSC key', held='18 January 2025',
+       key="SSC's answer key as marked on the candidate's response sheet", fmt='mcq', slug='ssc-cgl-2024-tier-2-paper-1-question-paper-with-answers',
+       alt='Mains', kwname='SSC CGL 2024 Tier 2 Paper 1', hi_paper='टियर-2 पेपर-1', blurb=CGL_T2_BLURB, mins=135),
+]
+CGL_SUBJECTS = [
+  ('rea', 'General Intelligence & Reasoning', 'reasoning', ['Analogy & Classification', 'Series', 'Coding-Decoding', 'Blood Relations & Directions', 'Arrangement & Puzzles', 'Syllogism & Statements', 'Mathematical Operations', 'Non-verbal Reasoning', 'Miscellaneous Reasoning']),
+  ('qa',  'Quantitative Aptitude', 'quantitative-aptitude', ['Number System & Simplification', 'Percentage, Profit & Interest', 'Ratio, Average & Mixtures', 'Time, Work, Speed & Distance', 'Algebra', 'Geometry', 'Mensuration', 'Trigonometry & Heights', 'Data Interpretation & Statistics']),
+  ('eng', 'English Comprehension', 'english', ['Vocabulary', 'Idioms & One-word Substitution', 'Spelling', 'Error Spotting & Sentence Improvement', 'Fill in the Blanks & Cloze Test', 'Voice & Narration', 'Sentence Arrangement', 'Reading Comprehension']),
+  ('ih',  'History & Culture', 'history', ['Ancient India', 'Medieval India', 'Modern India', 'Art & Culture']),
+  ('pol', 'Indian Polity', 'polity', ['Constitution & Rights', 'Government & Parliament', 'Judiciary & Constitutional Bodies', 'Local Government & Governance']),
+  ('geo', 'Geography', 'geography', ['Indian Geography', 'World & Physical Geography', 'Environment & Ecology']),
+  ('eco', 'Indian Economy', 'economy', ['Planning, Growth & Budget', 'Money, Banking & Finance', 'Agriculture, Industry & Trade', 'Schemes & Welfare']),
+  ('sci', 'General Science', 'general-science', ['Physics', 'Chemistry', 'Biology', 'Science & Technology']),
+  ('cur', 'Current Affairs & Static GK', 'current-affairs-static-gk', ['National', 'International', 'Sports', 'Awards, Books & Persons', 'Static GK & Culture']),
+  ('comp', 'Computer Knowledge', 'computer-knowledge', ['Computer Basics & Hardware', 'Software & Operating Systems', 'Internet, Networking & Security', 'MS Office & Applications']),
+]
+CGL_SUBJ_HI = {'rea': 'सामान्य बुद्धि और तर्कशक्ति (रीजनिंग)', 'qa': 'मात्रात्मक योग्यता (गणित)', 'eng': 'अंग्रेज़ी', 'ih': 'इतिहास और संस्कृति',
+               'pol': 'भारतीय राजव्यवस्था', 'geo': 'भूगोल', 'eco': 'भारतीय अर्थव्यवस्था', 'sci': 'सामान्य विज्ञान',
+               'cur': 'करेंट अफेयर्स और स्टैटिक जीके', 'comp': 'कंप्यूटर ज्ञान'}
+
+
+def cgl_text():
+    """Wording for the SSC CGL page that depends on which papers are on the site."""
+    have = [p for p in CGL_PAPERS if p['id'] in have_src('ssc-cgl', CGL_PAPERS)]
+    t1 = [p for p in have if p['stage'] == 'Tier-I']; t2 = [p for p in have if p['stage'].startswith('Tier-II')]
+    years = sorted({p['year'] for p in have}) or [2025]
+    yr = f'{years[0]}–{years[-1]}' if len(years) > 1 else str(years[0])
+    return dict(n=len(have), t1=len(t1), t2=len(t2), years=yr,
+                what=' and '.join(x for x in (f'{len(t1)} Tier-I shift paper{"s" if len(t1) != 1 else ""}' if t1 else '',
+                                               f'{len(t2)} Tier-II Paper I' if t2 else '') if x))
+
 # ---------- Telangana Police (TSLPRB, now TGPRB): SI and Constable Preliminary Written Tests ----------
 TS_SI_PAPERS = [
   dict(id='s2022', file='ts-si-2022-prelims.txt', year=2022, stage='Preliminary Written Test', short='SI Prelims 2022',
@@ -425,7 +479,7 @@ def load_exam(conf):
         if nown:
             if nown == len(qs): pp['fmt'], pp['own'] = 'mcq', 1   # four options now (ours + APPSC's answer); still PYQ Pass only
             else: print(f'  ! {conf["short"]} {p["id"]}: options for {nown} of {len(qs)} questions only; paper stays quick-recall')
-        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'en_only', 'kwname'):
+        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'en_only', 'kwname', 'mins'):
             if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p) if PUBLIC_PDFS else ''
         alt = paper_alt(conf, p)
@@ -472,6 +526,7 @@ def ts_text():
 def exam_confs():
     T = ts_text()
     E = epfo_text()
+    G = cgl_text()
     si_m, pc_m = bool(T['si']), bool(T['pc'])
     return [
       dict(id='appsc-group-2', dir='', src='', key='appsc-g2', name='APPSC Group-II', short='Group-II', seo='APPSC Group 2',
@@ -533,6 +588,21 @@ def exam_confs():
                         + (" and one (Q71) in the 2021 EO/AO paper, which is left out" if E['eo21'] else "")
                         + ". Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklets." if E['eo'] else
                         "Answers come from UPSC's official answer key (Series A), published on upsc.gov.in in August 2024; no question was dropped. Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklet.")),
+      dict(id='ssc-cgl', dir='ssc-cgl', src='ssc-cgl', key='ssc-cgl', name='SSC CGL', short='SSC CGL', seo='SSC CGL',
+           slugp='ssc-cgl', papers=CGL_PAPERS, subjects=CGL_SUBJECTS, faq=FAQ_CGL, board='SSC', l2=L2_HI, pb='/ssc-cgl/',
+           keyname="SSC's answer key", keyshort="SSC's answer key (as marked on the response sheets)",
+           hi_name='एसएससी सीजीएल', hi_paper='प्रश्न पत्र', subj_te=CGL_SUBJ_HI,
+           title=f"SSC CGL Previous Year Question Papers with Answers – Tier 1 & Tier 2 {G['years']}, English & Hindi | Learn with Anil",
+           h1='SSC CGL previous year question papers <em>with answers.</em>',
+           aka='SSC Combined Graduate Level Examination (CGLE): Tier-I (Prelims) shift-wise papers and Tier-II (Mains) Paper I, with SSC\'s answer key, subject-wise: reasoning, maths, English and general awareness.',
+           aka_short='SSC Combined Graduate Level (CGL) Tier 1 and Tier 2',
+           l2line='एसएससी सीजीएल टियर-1 और टियर-2 के पिछले वर्षों के प्रश्न पत्र, एसएससी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; रीजनिंग, गणित, अंग्रेज़ी और सामान्य जागरूकता।',
+           desc=lambda t: (f"SSC CGL previous year question papers with SSC's answer key and explanations: {G['what']} ({G['years']}), from SSC's own response sheets. "
+                           f"{t:,} questions in English and Hindi on reasoning, quantitative aptitude, English and general awareness; subject-wise practice and timed mock tests."),
+           eyebrow=f"SSC · Combined Graduate Level · Tier-I &amp; Tier-II · {G['years']}",
+           papers_note=("Every paper is SSC's own question paper as candidates print it from SSC's portal (the response sheet), with the answer SSC marked as correct. "
+                        "The Tier-I sheets are from the answer-key stage, so SSC's final key may differ for a few questions. "
+                        "Each shift had a different paper. English Comprehension is in English only; every other question is in English and Hindi, as printed.")),
       dict(id='ts-police-si', dir='ts-police-si', src='ts-police-si', key='ts-si', name='TS Police SI', short='TS Police SI', seo='TS Police SI',
            slugp='ts-police-si', papers=TS_SI_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('SI', T['si']), board='TSLPRB', l2=L2_TE, pb='/ts-police-si/',
            keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
@@ -817,11 +887,12 @@ def main():
         for f in os.listdir(static):
             shutil.copy(os.path.join(static, f), os.path.join(DIST, 'site', f))
     # sealed (encrypted) paid mocks: published as-is; the keys are only in Anil's private sheet (tools/mk_seal.py)
-    mkdir_ = os.path.join(SRC, 'mission-khaki')
-    if os.path.isdir(mkdir_):
-        os.makedirs(os.path.join(DIST, 'site', 'ts-police-si', 'mk'), exist_ok=True)
-        for f in os.listdir(mkdir_):
-            if f.endswith('.bin'): shutil.copy(os.path.join(mkdir_, f), os.path.join(DIST, 'site', 'ts-police-si', 'mk', f))
+    for exam_dir, src_dir in [('ts-police-si', 'mission-khaki')] + [(k, v['src']) for k, v in MOCK_PACKS.items() if v.get('src')]:
+        mkdir_ = os.path.join(SRC, src_dir)
+        if os.path.isdir(mkdir_):
+            os.makedirs(os.path.join(DIST, 'site', exam_dir, 'mk'), exist_ok=True)
+            for f in os.listdir(mkdir_):
+                if f.endswith('.bin'): shutil.copy(os.path.join(mkdir_, f), os.path.join(DIST, 'site', exam_dir, 'mk', f))
     open(os.path.join(DIST, 'site', '.nojekyll'), 'w').write('')
     print(f'  grand total {grand} questions, {len(all_pages)} static pages')
 
@@ -1130,6 +1201,27 @@ def FAQ_EPFO(total, npapers):
     ]
 
 
+def FAQ_CGL(total, npapers):
+    G = cgl_text()
+    return [
+      ('Where can I get SSC CGL previous year question papers with answers?',
+       f'This page has {total} questions from {G["what"]} of the SSC Combined Graduate Level Examination ({G["years"]}). Each is SSC\'s own question paper as candidates print it from SSC\'s portal, '
+       'with the answer SSC marked as correct, and every question has a short explanation. Practise a whole shift as a timed mock test, or by subject and topic.'),
+      ('Are the answers official?',
+       'Yes. Every answer is the one SSC marked as correct on the candidate\'s response sheet. The Tier-I sheets come from the answer-key stage, so SSC\'s final key can differ for a few questions; where a marked answer looks debatable, the explanation says "(SSC key; some sources differ.)". The explanations are written by Learn with Anil.'),
+      ('What is the SSC CGL exam pattern?',
+       'Tier-I has 100 questions (General Intelligence & Reasoning, General Awareness, Quantitative Aptitude and English Comprehension, 25 each) for 200 marks in 60 minutes, with 0.50 marks cut for a wrong answer. '
+       'Tier-II Paper I has Mathematical Abilities (30) and Reasoning & General Intelligence (30), English Language & Comprehension (45) and General Awareness (25), and Computer Knowledge (20, qualifying), '
+       'each question worth 3 marks with 1 mark cut for a wrong answer, plus a data-entry speed test. Tier-I is a qualifying screening; the merit list is made from Tier-II.'),
+      ('Why are there so many SSC CGL papers for one year?',
+       'SSC holds Tier-I over many days and several shifts a day, and every shift gets a different question paper. This page gives whole shifts, so you can take each one as a real 60-minute test.'),
+      ('Is the SSC CGL question paper available in Hindi?',
+       'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, as printed in SSC\'s paper, with the explanation in Hindi. English Comprehension questions are in English only.'),
+      ('Is there an SSC CGL mock test?',
+       'Yes. Every shift paper here can be taken as a timed mock test with the real time limit. Mission CGL, Learn with Anil\'s series of new full-length Tier-I and Tier-II mock tests in English and Hindi, is sold separately.'),
+    ]
+
+
 def FAQ_HM(total, npapers):
     return [
       ('Where can I get TGPSC HMWSSB Manager (Engineering) previous question papers with answers?',
@@ -1286,7 +1378,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){{
 document.querySelectorAll(".lk").forEach(function(e){{e.textContent="✓ ";e.className="lk ok"}});
 document.querySelectorAll("[data-paidtxt]").forEach(function(e){{e.textContent=e.getAttribute("data-paidtxt")}});
@@ -1493,7 +1585,7 @@ def practice_links(conf, papers, questions):
     scount = {}
     for q in questions: scount[q['s']] = scount.get(q['s'], 0) + 1
     rows = ''.join(
-        f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {p["count"]} min timer{" · answer from APPSC's key, options by Learn with Anil" if p.get("own") else "" if p["fmt"] == "mcq" else " · answer-only key (quick-recall cards)"}</div>'
+        f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {p.get("mins") or p["count"]} min timer{" · answer from APPSC's key, options by Learn with Anil" if p.get("own") else "" if p["fmt"] == "mcq" else " · answer-only key (quick-recall cards)"}</div>'
         f'<p><a href="/{base}papers/{p["slug"]}.html">{esc(paper_kw(conf, p))} question paper with answers</a>'
         + f' · <a href="{conf["pb"]}?practice={p["id"]}">Attempt it with a timer</a></p></li>'
         for p in sorted(papers, key=lambda p: (-p['year'], p['id'])))
@@ -1622,7 +1714,27 @@ MOCK_PACKS = {
                        summary='10 full-length TS SI Prelims mock tests, 200 questions each (Arithmetic & Reasoning 100, General Studies 100), '
                                'in English and Telugu, with an explanation for every answer. Each mock\'s sections can also be taken on their own as sectional tests.',
                        sections=['Arithmetic', 'Reasoning & Mental Ability', 'General Studies']),
+  # packs with a 'mocks' list (several kinds of mock, each with its own parts and time limit): generic pages and app code
+  'ssc-cgl': dict(id='mk-cgl', name='Mission CGL', price=149, src='mission-cgl', langs='English &amp; Hindi',   # Anil, 24 Oct 2026: ₹149, 10 Tier-I + 3 Tier-II
+                  title='Mission CGL – SSC CGL Mock Test Series (Tier-I & Tier-II)',
+                  summary='10 full-length Tier-I and 3 full-length Tier-II (Paper I) SSC CGL mock tests in the latest pattern, in English and Hindi, '
+                          'with an explanation for every answer. Each mock\'s sections can also be taken on their own as sectional tests.',
+                  about=['New questions written for this series in the SSC CGL pattern, not copied from coaching material or previous papers.',
+                         'Tier-I mocks: Reasoning, General Awareness, Quantitative Aptitude and English, 25 questions each, 60 minutes. '
+                         'Tier-II mocks (Paper I): Mathematical Abilities 30, Reasoning 30, English 45, General Awareness 25 and Computer Knowledge 20, 135 minutes.',
+                         'Every question is in English and Hindi (English Comprehension in English only), with an explanation in both. '
+                         'Your score, accuracy and topic-wise analysis come after each mock.'],
+                  mocks=[dict(id=f'mk-cgl-t1-{i}', name=f'Tier-I Mock {i}', qn=100, mins=60, live=(i == 1),
+                              parts=[('rea', 'Reasoning', ['rea']), ('ga', 'General Awareness', ['ih', 'pol', 'geo', 'eco', 'sci', 'cur']),
+                                     ('qa', 'Quantitative Aptitude', ['qa']), ('eng', 'English', ['eng'])]) for i in range(1, 11)]
+                        + [dict(id=f'mk-cgl-t2-{i}', name=f'Tier-II Mock {i}', qn=150, mins=135, live=(i == 1),
+                                parts=[('qa', 'Mathematical Abilities', ['qa']), ('rea', 'Reasoning', ['rea']), ('eng', 'English', ['eng']),
+                                       ('ga', 'General Awareness', ['ih', 'pol', 'geo', 'eco', 'sci', 'cur']), ('comp', 'Computer Knowledge', ['comp'])]) for i in range(1, 4)]),
 }
+for _mk in MOCK_PACKS.values():   # n / live / qn / sections for packs described by a 'mocks' list
+    if 'mocks' in _mk:
+        _mk.update(n=len(_mk['mocks']), live=sum(m['live'] for m in _mk['mocks']), qn=_mk['mocks'][0]['qn'],
+                   sections=list(dict.fromkeys(x[1] for m in _mk['mocks'] for x in m['parts'])))
 
 # mock-test packs with a price but no mocks yet: shown as "coming soon", no Pay button and no checkout until Mock 1 is ready
 UPCOMING_PACKS = {
@@ -1638,6 +1750,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'ts-police-si': ('TS Police SI Preliminary Written Test', '2026-11-29', 'Tentative, TGPRB press note of 17 September 2026.'),
   'ts-police-constable': ('TS Police Constable Preliminary Written Test', '2026-12-20', 'Tentative, TGPRB press note of 17 September 2026.'),
   'upsc-capf': ('UPSC CAPF (Assistant Commandants) 2027', '2027-07-04', 'UPSC Calendar 2027.'),
+  'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
   'upsc-epfo': ('UPSC EPFO APFC / EO-AO Recruitment Test', None, 'UPSC holds this test only when EPFO posts are advertised; no new advertisement yet.'),
   'tgpsc-hmwssb-manager': ('TGPSC HMWSSB Manager (Engineering)', None, 'Tentatively December 2026; TGPSC has not announced the exact date yet.'),
 }
@@ -1658,6 +1771,10 @@ def exam_clock_html(conf):
 
 def live_text(mk):
     """'Mock 1 is available now; Mocks 2–10 are coming soon.' (all mocks are included in the pack price)"""
+    if 'mocks' in mk:
+        on = [m['name'] for m in mk['mocks'] if m['live']]
+        if len(on) == len(mk['mocks']): return f'All {len(on)} mocks are available now.'
+        return f'{" and ".join(on)} {"is" if len(on) == 1 else "are"} available now; the other {len(mk["mocks"]) - len(on)} mocks are coming soon (included in the price)'
     a, n = mk['live'], mk['n']
     if a >= n: return f'All {n} mocks are available now.'
     now = 'Mock 1 is' if a == 1 else f'Mocks 1–{a} are'
@@ -1684,7 +1801,8 @@ def pay_data(conf):
     return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'],
                 pyq=dict(price=PAY['pyq_price'], valid=PYQ_VALID, exams=PAY['exams'], trial=TRIAL_DAYS),
                 mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=mk['price'], n=mk['n'], live=mk['live'],
-                           valid=pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:]) if mk else None),
+                           valid=pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:],
+                           mocks=[dict(id=m['id'], name=m['name'], mins=m['mins'], live=m['live'], parts=m['parts']) for m in mk.get('mocks', [])]) if mk else None),
                 pages=dict(pyq=pb + 'pyqs.html', mock=pb + 'mock-test.html', sec=pb + 'sectional-tests.html'))
 
 
@@ -1698,8 +1816,9 @@ def tiles_html(conf, papers, questions, extra_links):
           f'One pass for every exam.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 ₹{PAY["pyq_price"]} · all exams · 12 months</span></a>')
     if mk:
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
-              f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>'
-              f'<span class="etile-price">₹{mk["price"]} · mock tests only</span></a>')
+              + (f'<span class="etile-p">{esc(mk["summary"].split(". ")[0])}. {live_text(mk)}.</span>' if 'mocks' in mk else
+                 f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>')
+              + f'<span class="etile-price">₹{mk["price"]} · mock tests only</span></a>')
     elif BB_URL and conf['id'] == 'appsc-group-2':
         t2 = (f'<a class="etile" href="{BB_URL}"><span class="etile-k">02 · Mock tests</span><b>Bahubali Test Series</b>'
               f'<span class="etile-p">24 full-length Group-II Mains mocks, 12 for Paper I and 12 for Paper II: 150 questions each, English and Telugu, with explanations.</span>'
@@ -1871,7 +1990,7 @@ def pyq_page(conf, papers, questions):
                 else " · official key gives the answer only: quick-recall cards" if recall else "")
         return (f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions{note}</div>'
                 f'<b>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</b>'
-                f'<div class="cacts"><a class="cta" href="{pb}?practice={p["id"]}">Attempt this paper · {p["count"]} min timer</a></div></li>')
+                f'<div class="cacts"><a class="cta" href="{pb}?practice={p["id"]}">Attempt this paper · {p.get("mins") or p["count"]} min timer</a></div></li>')
     allp = ps + sorted(extra, key=lambda p: (-p['year'], p['id']))
     others = [(x, h) for x, h in PAY.get('exam_links', []) if x != seo]
     sample = free_sample(conf, papers, questions)
@@ -1913,7 +2032,11 @@ def sectional_page(conf, papers, questions):
             + (f', and sectional mocks from the {mk["name"]} test series' if mk else '') + ', with answers and explanations.')
     rows = ''.join(f'<li class="q"><div class="meta">{cnt[s[0]]} previous questions · all in one test · one minute per question</div><p>{esc(s[1])}</p>'
                    f'<a class="cta" href="{pb}?sec={s[0]}">Start {esc(s[1])} sectional</a></li>' for s in subs)
-    secrows = (''.join((f'<li class="q"><div class="meta">Available now</div><p>Mock {i + 1} sections</p>'
+    secrows = (''.join((f'<li class="q"><div class="meta">Available now · {m["name"]}</div><p>{esc(m["name"])} sections</p>'
+                        + ''.join(f'<a class="cta alt" href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}</a>' for k, v, _ in m['parts']) + '</li>')
+                       if m['live'] else f'<li class="q"><div class="meta">Coming soon</div><p>{esc(m["name"])} sections</p></li>'
+                       for m in mk['mocks']) if mk and 'mocks' in mk else
+               ''.join((f'<li class="q"><div class="meta">Available now</div><p>Mock {i + 1} sections</p>'
                         + ''.join(f'<a class="cta alt" href="{pb}?mock={mk["id"]}-{i + 1}&amp;part={k}">{v}</a>' for k, v in (('ari', 'Arithmetic'), ('rea', 'Reasoning'), ('gs', 'General Studies')))
                         + '</li>') if i < mk['live'] else f'<li class="q"><div class="meta">Coming soon</div><p>Mock {i + 1} sections</p></li>'
                        for i in range(mk['n'])) if mk else '')
@@ -1929,6 +2052,16 @@ def sectional_page(conf, papers, questions):
                + (f', and sectional mocks from {mk["name"]}.' if mk else '.'))
     return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} sectional tests', lede, body,
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Sectional tests', can)], conf)
+
+
+def dur_text(p):
+    """'60 minutes' for a paper with a real time limit, else 'about 2 hours' (one minute per question)."""
+    return f'{p["mins"]} minutes' if p.get('mins') else f'about {round(p["count"] / 60 * 4) / 4:g} hours'
+
+
+def part_links(pb, m):
+    """'Reasoning · General Awareness · …' links that open one part of a released mock as a sectional test."""
+    return ' · '.join(f'<a href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}</a>' for k, v, _ in m['parts'])
 
 
 MOCK_INFO = {}   # exam dates removed at Anil's request (23 Oct 2026): no exam dates on the site
@@ -1948,13 +2081,21 @@ def mock_page(conf, papers, questions):
             + f'take the real {", ".join(paper_kw(conf, p).replace(seo + " ", "") for p in mcq)} question paper{"s" if len(mcq) > 1 else ""} as timed tests, '
             f'in English and {l2["name"]}, with your score, official answers and an explanation for every question.')
     rows = ''.join(
-        f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · about {round(p["count"] / 60 * 4) / 4:g} hours</div>'
+        f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {dur_text(p)}</div>'
         f'<p>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</p>'
         f'<p style="font-weight:400">{esc(p["blurb"])}</p>'
         f'<a class="cta" href="{pb}?test={p["id"]}">Start the mock test</a><a class="cta alt" href="/{conf["dir"] + "/" if conf["dir"] else ""}papers/{p["slug"]}.html">See the questions</a></li>'
         for p in mcq)
     info = MOCK_INFO.get(conf['id'], '')
-    if mk:
+    if mk and 'mocks' in mk:
+        sched = ''.join((f'<tr><td>{esc(m["name"])}</td><td>Available now</td><td>{m["qn"]} questions · {m["mins"]} min · <a href="{pb}?mock={m["id"]}">Start</a></td>'
+                         f'<td>{part_links(pb, m)}</td></tr>') if m['live'] else
+                        f'<tr><td>{esc(m["name"])}</td><td>Coming soon</td><td>{m["qn"]} questions · {m["mins"]} min</td><td>{" · ".join(esc(v) for _, v, _ in m["parts"])}</td></tr>'
+                        for m in mk['mocks'])
+        pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
+                + f'<table class="facts"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
+                + '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in mk['about']) + '</ul>')
+    elif mk:
         mid = lambda i: f'{mk["id"]}-{i + 1}'
         sched = ''.join((f'<tr><td>Mock {i + 1}</td><td>Available now</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">Start</a></td>'
                          f'<td><a href="{pb}?mock={mid(i)}&amp;part=ari">Arithmetic</a> · <a href="{pb}?mock={mid(i)}&amp;part=rea">Reasoning</a> · '
@@ -2035,8 +2176,8 @@ def build_static(conf, papers, subjects, questions, subj):
                else f'All four options with the answer from {pkey}' if p['fmt'] == 'mcq'
                else f'Each question with its official answer from {conf["keyname"]} (the key lists the correct answer only)')
         kw, alt = paper_kw(conf, p), paper_alt(conf, p)
-        if conf['board'] == 'UPSC':
-            title = f'{kw} Question Paper with Answer Key, English & Hindi | Learn with Anil'
+        if conf['board'] in ('UPSC', 'SSC'):
+            title = f'{kw} Question Paper with Answer Key{f" ({alt})" if alt and conf["board"] == "SSC" else ""}, English & Hindi | Learn with Anil'
         else:
             title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – Final Key, {"English" if p.get("en_only") else "Telugu & English"} | Learn with Anil'
         kdesc = ("answers from APPSC's final key" if conf['board'] == 'APPSC' else 'compiled answers' if p.get('key', '').startswith('answers compiled')
@@ -2049,7 +2190,7 @@ def build_static(conf, papers, subjects, questions, subj):
         toc = '<nav class="toc">' + ''.join(
             f'<a href="../subjects/{slugp}-{subj[s][2]}-pyqs.html">{esc(subj[s][1])} ({c})</a>' for s, c in subs.items()) + '</nav>'
         body = (f'<p lang="{conf["l2"]["code"]}" style="margin:0 0 6px">{esc(paper_kw_l2(conf, p))}</p>'
-                f'<a class="cta" href="{conf["pb"]}?practice={p["id"]}">Attempt this paper · {len(qs)} min timer</a>' +
+                f'<a class="cta" href="{conf["pb"]}?practice={p["id"]}">Attempt this paper · {p.get("mins") or len(qs)} min timer</a>' +
                 f'<a class="cta alt" href="{conf["pb"]}practice/">Make a topic-wise quiz</a>'
                 f'<p class="note">The answers and explanations of the first {min(SAMPLE_N, len(qs))} questions are free on this page. For all {len(qs)}, practise the paper in the app '
                 f'with the ₹{PAY["pyq_price"]} PYQ Pass, one payment for every exam on the site.</p>'
@@ -2134,7 +2275,7 @@ def not_found_page():
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <script>
 (function(){
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);
@@ -2148,7 +2289,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <h1>This page does not exist</h1>
 <p>The address may be mistyped, or the page has moved. Try one of these:</p>
 <ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
-<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li>
+<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li></ul>
 </main></body></html>
