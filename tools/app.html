@@ -297,6 +297,8 @@ div.feature:hover{border-color:var(--line)}
 .pay-dlg .pay-in{padding:20px 22px;display:flex;flex-direction:column;gap:12px}
 .pay-dlg h2{font-size:21px;font-weight:800}.pay-dlg .price{font-size:30px;font-weight:800;color:var(--accent-text)}
 .pay-dlg ul{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px}.pay-dlg .small{color:var(--muted);font-size:13.5px}
+.pay-dlg .pay-note{background:var(--bad-soft);color:var(--ink);border-left:4px solid var(--bad);border-radius:8px;padding:10px 12px;font-size:14px;line-height:1.5}
+.pay-dlg .pay-hint{background:var(--warn-soft);color:var(--ink);border-radius:8px;padding:8px 12px}
 .qotd{display:flex;flex-direction:column;gap:14px;padding:20px 22px}
 .qotd-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
 .qotd-head .eyebrow{color:var(--accent-text);font-weight:600}
@@ -776,29 +778,55 @@ function payInfo(kind){
              "Every answer and explanation, practice quizzes and timed tests, PYQ sectionals, topic-wise quizzes, Smart Quiz and Mistakes revision",
              "Mock-test packs such as Mission Khaki are separate"]};
 }
-function openPay(kind){
+/* Instagram / Facebook open links in their own in-app browser, where UPI apps often fail to open */
+const INAPP = /Instagram|FBAN|FBAV|FB_IAB|FBIOS/i.test(navigator.userAgent || "");
+function payHelpHTML(kind, failed){
+  const te = P.lang === "te", what = kind==="mock" && PAYC.mock ? PAYC.mock.name : "PYQ Pass";
+  const note = failed ? `<div class="pay-note" role="alert"><b>Your payment didn't go through.</b> Please try again: choosing a different UPI app or payment method usually works. If money was deducted, WhatsApp us a screenshot and we'll sort it out.`
+      + (te ? `<br><span lang="te">మీ చెల్లింపు పూర్తి కాలేదు. దయచేసి మళ్లీ ప్రయత్నించండి: వేరే UPI యాప్ లేదా వేరే చెల్లింపు పద్ధతి ఎంచుకుంటే సాధారణంగా పని చేస్తుంది. డబ్బు కట్ అయితే, స్క్రీన్‌షాట్‌తో మాకు WhatsApp చేయండి.</span>` : "") + `</div>` : "";
+  const hint = INAPP ? `<p class="small pay-hint">Opened from Instagram or Facebook? If your UPI app doesn't open, tap <b>⋮</b> at the top right, choose <b>Open in Chrome</b> (or your browser) and pay there.`
+      + (te ? `<br><span lang="te">Instagram/Facebook నుంచి తెరిచారా? UPI యాప్ ఓపెన్ కాకపోతే, పైన కుడివైపు <b>⋮</b> నొక్కి <b>Open in Chrome</b> ఎంచుకుని అక్కడ చెల్లించండి.</span>` : "") + `</p>` : "";
+  const help = DATA.wa ? `<p class="small"><a href="${waLink(`Hi Anil sir, I'm trying to buy the ${what} on Learn with Anil and the payment is not working. My registered phone: ${ST.phone || ""}`)}" target="_blank" rel="noopener">Trouble paying? WhatsApp us →</a>`
+      + (te ? ` <span lang="te">(చెల్లింపులో సమస్యా? WhatsApp చేయండి)</span>` : "") + `</p>` : "";
+  return {note, hint, help};
+}
+function openPay(kind, why){
   if(!PAYC) return;
-  const x = payInfo(kind), open = PAYC.on && PAYC.api;
+  const x = payInfo(kind), open = PAYC.on && PAYC.api, hp = payHelpHTML(kind, why==="failed");
   let d = document.getElementById("payDlg");
   if(!d){ d = document.createElement("dialog"); d.id = "payDlg"; d.className = "pay-dlg"; document.body.appendChild(d); d.addEventListener("click", e=>{ if(e.target===d) d.close(); }); }
-  d.innerHTML = `<div class="pay-in"><h2>${esc(x.name)}</h2><div class="price">₹${x.price}</div>
+  d.innerHTML = `<div class="pay-in"><h2>${esc(x.name)}</h2><div class="price">₹${x.price}</div>${hp.note}
     <ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
     <p class="small"><b>${esc(x.valid)}.</b>${!ST.name ? " Register once with your phone number, then pay." : ""}</p>
     ${kind!=="mock" && PAYC.sample && PAYC.pages && PAYC.pages.pyq ? `<p class="small"><a href="${PAYC.pages.pyq}#free-sample">Not sure yet? Try ${PAYC.sample} free questions first →</a></p>` : ""}
     ${open ? `<p class="small">The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}, on up to 3 devices. Pay by UPI, card or net banking on Instamojo's secure page.</p>
-      <div class="row"><button class="btn btn-primary" type="button" data-act="paybuy" data-kind="${kind}" autofocus>${esc(x.btn)}</button><button class="btn btn-secondary" type="button" data-act="paycheck">I have paid · check</button><button class="btn btn-ghost" type="button" data-act="payclose">Close</button></div>`
+      ${hp.hint}<div class="row"><button class="btn btn-primary" type="button" data-act="paybuy" data-kind="${kind}" autofocus>${esc(why==="failed" ? "Try again · " + x.btn : x.btn)}</button><button class="btn btn-secondary" type="button" data-act="paycheck">I have paid · check</button><button class="btn btn-ghost" type="button" data-act="payclose">Close</button></div>${hp.help}`
     : `<p class="small"><b>Online payment is being switched on.</b> Please check back shortly.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}</div>`;
   if(d.showModal) d.showModal(); else d.setAttribute("open","");
+  if(why==="failed") requestAnimationFrame(()=>{ d.scrollTop = 0; });   // show the "didn't go through" note first, not the focused button
 }
 function closePay(){ const d = document.getElementById("payDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } }
-async function payBuy(kind){
+function payBusy(btn, on){
+  payBuy.busy = on;
+  if(!btn) return;
+  if(on){ btn.dataset.label = btn.textContent; btn.disabled = true; btn.textContent = "Opening the payment page…"; }
+  else { btn.disabled = false; if(btn.dataset.label) btn.textContent = btn.dataset.label; }
+}
+async function payBuy(kind, btn){
   if(!PAYC || !PAYC.on || !PAYC.api){ toast("Online payment is being switched on. Please check back shortly."); return; }
   if(!ST.name){ UI.pendingBuy = kind; closePay(); go("join"); return; }
+  if(payBuy.busy) return;   // a second tap used to make a second Instamojo payment request
+  payBusy(btn, true);
   toast("Opening the secure payment page…"); track("begin_checkout", {exam: PAYC.exam, kind});
+  try{ sessionStorage.setItem("lwa-paykind", kind); }catch(_){}
+  let going = false;
   try{ const r = await payCall({action:"buy", exam:PAYC.exam, kind, name:ST.name, phone:ST.phone, email:ST.email, back: location.origin + PB});
-       if(r && r.ok && r.url) location.href = r.url; else toast((r && r.error) || "Could not open the payment page. Please try again."); }
+       if(r && r.ok && r.url){ going = true; location.href = r.url; setTimeout(()=>payBusy(btn, false), 15000); }
+       else toast((r && r.error) || "Could not open the payment page. Please try again."); }
   catch(_){ toast("No connection. Please try again."); }
+  finally{ if(!going) payBusy(btn, false); }
 }
+addEventListener("pageshow", e=>{ if(e.persisted) payBusy(document.querySelector('[data-act="paybuy"][disabled]'), false); });   // back from Instamojo with the browser's Back button
 async function payCheck(){
   await refreshPasses(); closePay();
   if(passOK("pyq")){ toast("Unlocked. All the best!"); const p = UI.payPending; UI.payPending = null; if(p) startQuiz(p.ids, p.title, p.mode, p.source); else render(); }
@@ -806,11 +834,13 @@ async function payCheck(){
 }
 async function payReturn(params){
   const req = params.get("payment_request_id"); if(!req || !PAYC || !PAYC.api) return false;
-  const pid = params.get("payment_id") || "";
+  const pid = params.get("payment_id") || "", st = (params.get("payment_status") || "").toLowerCase();
+  let kind = "pyq"; try{ kind = sessionStorage.getItem("lwa-paykind") === "mock" && PAYC.mock ? "mock" : "pyq"; }catch(_){}
   history.replaceState(null, "", location.pathname);
   toast("Checking your payment…");
-  try{ const r = await payCall({action:"verify", exam:PAYC.exam, request:req, payment:pid, phone:ST.phone||"", email:ST.email||"", device:DEVICE});
+  try{ const r = await payCall({action:"verify", exam:PAYC.exam, request:req, payment:pid, status:st, phone:ST.phone||"", email:ST.email||"", device:DEVICE});
        if(r && r.ok){ setPasses(r.passes); track("purchase", {exam: PAYC.exam}); toast("Payment received. Unlocked!"); render(); }
+       else if(st === "failed"){ track("payment_failed", {exam: PAYC.exam, kind}); $("#toast").hidden = true; openPay(kind, "failed"); }
        else toast((r && r.error) || "The payment is not complete yet."); }
   catch(_){ toast("Could not check the payment now. Open the pass again and tap “I have paid”."); }
   return true;
@@ -1819,7 +1849,7 @@ document.addEventListener("click", e=>{
     case "count": P.count = b.dataset.count==="all"? "all" : +b.dataset.count; savePrefs(); render(); break;
     case "mode": P.mode=b.dataset.mode; savePrefs(); render(); break;
     case "start": { const pl=shuffle(pool()); const n=P.count==="all"?pl.length:Math.min(P.count,pl.length); startQuiz(pl.slice(0,n).map(q=>q.id), quizTitle(), P.mode, "custom"); break; }
-    case "paybuy": { payBuy(b.dataset.kind); break; }
+    case "paybuy": { payBuy(b.dataset.kind, b); break; }
     case "paycheck": { payCheck(); break; }
     case "payclose": { closePay(); break; }
     case "paperpractice": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id).map(q=>q.id), p.title, "practice", "paper"); break; }

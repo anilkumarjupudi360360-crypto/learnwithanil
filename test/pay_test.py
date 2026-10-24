@@ -113,6 +113,40 @@ async def main():
         if not state['pyq']: errors.append(f'PYQ Pass payment not verified, calls {state["calls"]}')
         await pg.goto(url + 'appsc-group-1/?sec=pol'); await pg.wait_for_timeout(1200)
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('PYQ Pass bought on TS SI does not open APPSC Group 1 PYQs')
+        # C. a payment that fails at Instamojo: the student comes back to the checkout with a clear note, a Try again
+        #    button and a WhatsApp help line; a double tap on Pay makes only one payment request
+        state.update(trial='expired', calls=[], mock=False, pyq=False, kind='')
+        async def api_fail(route):
+            bb = json.loads(route.request.post_data or '{}'); state['calls'].append(bb['action'])
+            if bb['action'] == 'buy':
+                await asyncio.sleep(1.2)   # the real script takes a few seconds
+                r = dict(ok=True, url=url + 'ts-police-si/?payment_id=MOJO2&payment_status=Failed&payment_request_id=REQ2')
+            elif bb['action'] == 'verify': state['vstatus'] = bb.get('status'); r = dict(ok=False, error='The payment is not complete yet.')
+            else: r = dict(ok=True, passes={})
+            await route.fulfill(status=200, content_type='application/json', body=json.dumps(r))
+        pg = await b.new_page()
+        pg.on('pageerror', lambda e: errors.append(f'pageerror: {e}'))
+        await pg.add_init_script(REG)
+        await pg.route('https://pay.test/**', api_fail)
+        await pg.goto(url + 'ts-police-si/?buy=pyq'); await pg.wait_for_timeout(800)
+        if not await pg.locator('#payDlg[open]').count(): errors.append('?buy=pyq did not open the checkout')
+        else:
+            if not await pg.locator('#payDlg a[href*="wa.me"]').count(): errors.append('checkout has no WhatsApp help link')
+            await pg.click('[data-act="paybuy"]'); await pg.wait_for_timeout(150)
+            if not await pg.evaluate('!!(document.querySelector("[data-act=paybuy]")||{}).disabled'): errors.append('Pay button stays tappable while the payment page opens')
+            await pg.evaluate('document.querySelector("[data-act=paybuy]").click()')
+            await pg.wait_for_timeout(3500)
+            if state['calls'].count('buy') != 1: errors.append(f'double tap made {state["calls"].count("buy")} payment requests')
+            if state.get('vstatus') != 'failed': errors.append(f'verify was not told the payment failed: {state.get("vstatus")!r}')
+            txt = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
+            if "didn't go through" not in txt or 'Try again' not in txt: errors.append(f'no clear failed-payment checkout: {txt[:160]!r}')
+        await pg.close()
+        # D. Instagram's in-app browser gets the "Open in Chrome" hint; a normal browser does not
+        ig = await b.new_page(user_agent='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/129.0 Mobile Safari/537.36 Instagram 350.0.0.0 Android')
+        await ig.add_init_script(REG); await ig.route('https://pay.test/**', api_fail)
+        await ig.goto(url + 'ts-police-si/?buy=pyq'); await ig.wait_for_timeout(800)
+        if 'Open in Chrome' not in (await ig.inner_text('#payDlg') if await ig.locator('#payDlg[open]').count() else ''): errors.append('no in-app browser hint on Instagram')
+        await ig.close()
         await b.close()
     srv.shutdown()
     print('PAY TEST ERRORS:', errors or 'none')

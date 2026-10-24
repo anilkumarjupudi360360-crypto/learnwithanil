@@ -148,11 +148,21 @@ function confirmPaid_(req, id, pid, source) {
   return true;
 }
 
+// A payment attempt that Instamojo says failed: 'failed' instead of 'created' in the requests tab (never over 'paid'),
+// so the Payments dashboard can tell "tried and failed" from "left the payment page".
+function markFailed_(id) {
+  const req = requestRow_(id);
+  if (req && String(req.sh.getRange(req.row, 9).getValue()) === 'created') req.sh.getRange(req.row, 9).setValue('failed');
+}
+
 function verify(b, exam) {
   const id = String(b.request || '');
   const req = requestRow_(id);
   if (!req || (req.exam !== exam && req.exam !== 'all')) return {ok: false, error: 'Payment not found.'};
-  if (!confirmPaid_(req, id, String(b.payment || ''), 'verify')) return {ok: false, error: 'The payment is not complete yet. If money was taken, it will show here within a few minutes.'};
+  if (!confirmPaid_(req, id, String(b.payment || ''), 'verify')) {
+    if (String(b.status || '').toLowerCase() === 'failed') markFailed_(id);   // Instamojo sent the student back with payment_status=Failed
+    return {ok: false, error: 'The payment is not complete yet. If money was taken, it will show here within a few minutes.'};
+  }
   return passesFor(req.phone, exam, b.device, req.email, false);
 }
 
@@ -191,6 +201,9 @@ function webhook(p) {
     const req = requestRow_(id);
     if (req) { req.request = id; grant_(req, p.payment_id, p.amount, 'webhook'); }
     else log_('webhook-unknown-request', id);
+  } else if (id) {   // a signed webhook for a failed payment: keep a record of it
+    markFailed_(id);
+    log_('webhook-' + String(p.status || 'unknown').toLowerCase(), JSON.stringify({payment_id: p.payment_id, request: id}));
   }
   return out({ok: true});
 }
