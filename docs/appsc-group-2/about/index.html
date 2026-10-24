@@ -311,6 +311,9 @@ div.feature:hover{border-color:var(--line)}
 .pay-dlg .pay-in{padding:20px 22px;display:flex;flex-direction:column;gap:12px}
 .pay-dlg h2{font-size:21px;font-weight:800}.pay-dlg .price{font-size:30px;font-weight:800;color:var(--accent-text)}
 .pay-dlg ul{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px}.pay-dlg .small{color:var(--muted);font-size:13.5px}
+.pay-note{display:flex;flex-direction:column;gap:4px;padding:12px 14px;border-radius:10px;font-size:14px;line-height:1.45}
+.pay-note b{font-size:15.5px}.pay-note.bad{background:var(--bad-soft);color:var(--bad)}.pay-note.warn{background:var(--warn-soft);color:var(--warn)}
+.pay-dlg button:disabled{opacity:.7;cursor:progress}
 .qotd{display:flex;flex-direction:column;gap:14px;padding:20px 22px}
 .qotd-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
 .qotd-head .eyebrow{color:var(--accent-text);font-weight:600}
@@ -778,28 +781,80 @@ function payInfo(kind){
              "Every answer and explanation, practice quizzes and timed tests, PYQ sectionals, topic-wise quizzes, Smart Quiz and Mistakes revision",
              "Mock-test packs such as Mission Khaki are separate"]};
 }
-function openPay(kind){
+/* After a student leaves for Instamojo and comes back without a finished payment (the payment failed, they pressed
+   back, or Instamojo is still confirming), the checkout opens again with a note that stays on screen, a Try again
+   button and a WhatsApp link, instead of a message that disappears after a few seconds. */
+const PAY_NOTE = {
+  failed: {cls:"bad", title:"Your payment didn't go through", body:"The pass was not added. UPI payments sometimes fail the first time, so please try again. If money was taken from your account, message us on WhatsApp with your registered phone number.",
+           l2:{te:"పేమెంట్ పూర్తి కాలేదు. దయచేసి మళ్లీ ప్రయత్నించండి.", hi:"भुगतान पूरा नहीं हुआ। कृपया फिर से कोशिश करें।"}},
+  back:   {cls:"warn", title:"Your payment isn't finished", body:"You came back before paying. You can try again now; it takes less than a minute by UPI.",
+           l2:{te:"పేమెంట్ ఇంకా పూర్తి కాలేదు. మళ్లీ ప్రయత్నించండి.", hi:"भुगतान अभी पूरा नहीं हुआ। फिर से कोशिश करें।"}},
+  pending:{cls:"warn", title:"We are still confirming your payment", body:"If money was taken from your account, tap “I have paid · check” in a minute. If it still doesn't open, message us on WhatsApp and we will unlock it.",
+           l2:{te:"మీ పేమెంట్‌ను ఇంకా నిర్ధారిస్తున్నాం. ఒక నిమిషం తర్వాత “I have paid · check” నొక్కండి.", hi:"हम आपका भुगतान जाँच रहे हैं। एक मिनट बाद “I have paid · check” दबाएँ।"}}
+};
+const PAYKEY = "lwa-pay";   // sessionStorage: {kind, t} while a student is away on Instamojo
+function payHelpLink(kind){
+  const what = kind==="mock" && PAYC && PAYC.mock ? PAYC.mock.name : "the PYQ Pass";
+  return waLink(`Hi Anil sir, I tried to pay for ${what} on Learn with Anil and it did not go through. My registered phone: ${ST.phone||""}`);
+}
+function openPay(kind, note){
   if(!PAYC) return;
-  const x = payInfo(kind), open = PAYC.on && PAYC.api;
+  const x = payInfo(kind), open = PAYC.on && PAYC.api, n = note && PAY_NOTE[note];
   let d = document.getElementById("payDlg");
   if(!d){ d = document.createElement("dialog"); d.id = "payDlg"; d.className = "pay-dlg"; document.body.appendChild(d); d.addEventListener("click", e=>{ if(e.target===d) d.close(); }); }
-  d.innerHTML = `<div class="pay-in"><h2>${esc(x.name)}</h2><div class="price">₹${x.price}</div>
+  const buttons = `<div class="row"><button class="btn btn-primary" type="button" data-act="paybuy" data-kind="${kind}" autofocus>${esc(n && note!=="pending" ? "Try again · ₹"+x.price : x.btn)}</button><button class="btn btn-secondary" type="button" data-act="paycheck">I have paid · check</button><button class="btn btn-ghost" type="button" data-act="payclose">Close</button></div>`;
+  // with a note, the note and the buttons come first, so a phone shows both without scrolling
+  d.innerHTML = open && n
+    ? `<div class="pay-in"><div class="pay-note ${n.cls}" role="alert"><b>${esc(n.title)}</b><span>${esc(n.body)}</span>${n.l2[L2.code] ? `<span lang="${L2.code}">${esc(n.l2[L2.code])}</span>` : ""}</div>
+      ${buttons}<p class="small"><a href="${payHelpLink(kind)}" target="_blank" rel="noopener">Need help? Message us on WhatsApp →</a></p>
+      <h2>${esc(x.name)} · ₹${x.price}</h2><ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
+      <p class="small"><b>${esc(x.valid)}.</b> The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}. Pay by UPI, card or net banking on Instamojo's secure page.</p></div>`
+    : `<div class="pay-in"><h2>${esc(x.name)}</h2><div class="price">₹${x.price}</div>
     <ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
     <p class="small"><b>${esc(x.valid)}.</b>${!ST.name ? " Register once with your phone number, then pay." : ""}</p>
     ${kind!=="mock" && PAYC.sample && PAYC.pages && PAYC.pages.pyq ? `<p class="small"><a href="${PAYC.pages.pyq}#free-sample">Not sure yet? Try ${PAYC.sample} free questions first →</a></p>` : ""}
     ${open ? `<p class="small">The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}, on up to 3 devices. Pay by UPI, card or net banking on Instamojo's secure page.</p>
-      <div class="row"><button class="btn btn-primary" type="button" data-act="paybuy" data-kind="${kind}" autofocus>${esc(x.btn)}</button><button class="btn btn-secondary" type="button" data-act="paycheck">I have paid · check</button><button class="btn btn-ghost" type="button" data-act="payclose">Close</button></div>`
+      ${buttons}`
     : `<p class="small"><b>Online payment is being switched on.</b> Please check back shortly.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}</div>`;
   if(d.showModal) d.showModal(); else d.setAttribute("open","");
+  d.scrollTop = 0;
 }
 function closePay(){ const d = document.getElementById("payDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } }
+/* One payment link per tap: while a link is being made (and while the browser is leaving for Instamojo) further taps
+   on Pay do nothing. Before this, two or three quick taps made two or three Instamojo links and the page jumped to
+   the checkout again and again (Niharika, Purna Chandra and Karthik Nakka, 24 Oct 2026). */
+let payBusy = false;
+function payButtons(busy){
+  document.querySelectorAll('[data-act="paybuy"]').forEach(b=>{
+    if(busy){ if(b.dataset.label===undefined) b.dataset.label = b.textContent; b.disabled = true; b.textContent = "Opening the payment page…"; }
+    else { b.disabled = false; if(b.dataset.label!==undefined){ b.textContent = b.dataset.label; delete b.dataset.label; } }
+  });
+}
+function payRelease(){ payBusy = false; payButtons(false); }
 async function payBuy(kind){
   if(!PAYC || !PAYC.on || !PAYC.api){ toast("Online payment is being switched on. Please check back shortly."); return; }
   if(!ST.name){ UI.pendingBuy = kind; closePay(); go("join"); return; }
+  if(payBusy) return;
+  payBusy = true; payButtons(true);
   toast("Opening the secure payment page…"); track("begin_checkout", {exam: PAYC.exam, kind});
   try{ const r = await payCall({action:"buy", exam:PAYC.exam, kind, name:ST.name, phone:ST.phone, email:ST.email, back: location.origin + PB});
-       if(r && r.ok && r.url) location.href = r.url; else toast((r && r.error) || "Could not open the payment page. Please try again."); }
-  catch(_){ toast("No connection. Please try again."); }
+       if(r && r.ok && r.url){
+         try{ sessionStorage.setItem(PAYKEY, JSON.stringify({kind, t: Date.now()})); }catch(_){}
+         location.href = r.url;
+         setTimeout(payRelease, 15000);   // the page normally unloads first; this only matters if the redirect never happens
+       }
+       else { payRelease(); toast((r && r.error) || "Could not open the payment page. Please try again."); } }
+  catch(_){ payRelease(); toast("No connection. Please try again."); }
+}
+function payAway(){   // {kind} if this tab left for Instamojo in the last 30 minutes; forgets it
+  let s = null; try{ s = JSON.parse(sessionStorage.getItem(PAYKEY) || "null"); sessionStorage.removeItem(PAYKEY); }catch(_){}
+  return s && s.kind && Date.now() - (s.t||0) < 30*60*1000 ? s : null;
+}
+const payDone = kind => kind==="mock" ? passOK("mock") : passOK("pyq");
+async function payResume(){   // back from Instamojo by the back button (no payment details in the address): offer to try again
+  const s = payAway(); if(!s || !PAYC || !PAYC.on) return;
+  await refreshPasses();
+  if(!payDone(s.kind)) openPay(s.kind, "back");
 }
 async function payCheck(){
   await refreshPasses(); closePay();
@@ -808,13 +863,14 @@ async function payCheck(){
 }
 async function payReturn(params){
   const req = params.get("payment_request_id"); if(!req || !PAYC || !PAYC.api) return false;
-  const pid = params.get("payment_id") || "";
+  const pid = params.get("payment_id") || "", status = String(params.get("payment_status") || "").toLowerCase();
+  const kind = (payAway() || {}).kind || "pyq";
   history.replaceState(null, "", location.pathname);
   toast("Checking your payment…");
   try{ const r = await payCall({action:"verify", exam:PAYC.exam, request:req, payment:pid, phone:ST.phone||"", email:ST.email||"", device:DEVICE});
        if(r && r.ok){ setPasses(r.passes); track("purchase", {exam: PAYC.exam}); toast("Payment received. Unlocked!"); render(); }
-       else toast((r && r.error) || "The payment is not complete yet."); }
-  catch(_){ toast("Could not check the payment now. Open the pass again and tap “I have paid”."); }
+       else { track("payment_failed", {exam: PAYC.exam, kind, status: status || "unknown"}); openPay(kind, status==="credit" ? "pending" : "failed"); } }
+  catch(_){ openPay(kind, "pending"); }
   return true;
 }
 
@@ -1958,6 +2014,9 @@ function bindReset(){ $("#resetBtn").onclick = ()=>{
 bindReset();
 
 /* ---------- boot ---------- */
+// Phones often restore the page from memory when the student presses back on Instamojo: unlock the Pay button
+// (it was locked while leaving) and offer to try again.
+addEventListener("pageshow", e=>{ if(e.persisted){ payRelease(); if(!new URLSearchParams(location.search).get("payment_request_id")) payResume(); } });
 function start(data){
   if(data && data.QZ) QZ = data.QZ; if(data && data.LAST) LAST = data.LAST;
   refreshPasses();   // on every page load, so a pass bought (or ended) elsewhere shows here
@@ -1968,6 +2027,7 @@ function start(data){
     if(qp && QMAP[qp]) history.replaceState(null, "", pathOf("q/"+qp));
     const sp = new URLSearchParams(location.search);
     if(sp.get("payment_request_id")){ syncLang(); render(); payReturn(sp); return; }   // back from Instamojo
+    setTimeout(payResume, 500);   // back from Instamojo by the back button, without paying
     const bk = sp.get("buy");   // ?buy=pyq|mock: open the pass checkout
     if(bk==="pyq" || bk==="mock"){ history.replaceState(null, "", location.pathname); syncLang(); render(); openPay(bk); return; }
     const mk = sp.get("mock");  // ?mock=<mock id>[&part=ari|rea|gs]: a Mission Khaki mock or one of its sections

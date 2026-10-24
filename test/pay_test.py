@@ -40,9 +40,13 @@ async def main():
     async def api(route):
         b = json.loads(route.request.post_data or '{}'); state['calls'].append(b['action'])
         if b['action'] == 'passes': r = dict(ok=True, passes=passes())
-        elif b['action'] == 'buy': state['kind'] = b.get('kind'); r = dict(ok=True, url=url + 'ts-police-si/?payment_id=MOJO1&payment_status=Credit&payment_request_id=REQ1')
+        elif b['action'] == 'buy':
+            state['kind'] = b.get('kind')
+            if state.get('slowbuy'): await asyncio.sleep(0.8); r = dict(ok=True, url=url + 'robots.txt')   # stays away, like a slow Instamojo
+            else: r = dict(ok=True, url=url + 'ts-police-si/?payment_id=MOJO1&payment_status=Credit&payment_request_id=REQ1')
         elif b['action'] == 'verify':
-            state['mock' if state['kind'] == 'mock' else 'pyq'] = True; r = dict(ok=True, passes=passes())
+            if state.get('verifyfail'): r = dict(ok=False, error='The payment is not complete yet.')
+            else: state['mock' if state['kind'] == 'mock' else 'pyq'] = True; r = dict(ok=True, passes=passes())
         elif b['action'] == 'mock': r = dict(ok=True, id=b['id'], key=TKEY, file=TFILE) if state['mock'] else dict(ok=False, need='mock', error='needs pass')
         else: r = dict(ok=False)
         await route.fulfill(status=200, content_type='application/json', body=json.dumps(r))
@@ -113,6 +117,59 @@ async def main():
         if not state['pyq']: errors.append(f'PYQ Pass payment not verified, calls {state["calls"]}')
         await pg.goto(url + 'appsc-group-1/?sec=pol'); await pg.wait_for_timeout(1200)
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('PYQ Pass bought on TS SI does not open APPSC Group 1 PYQs')
+        await pg.close()
+        # C. a registered student without a pass, on a phone: what happens around Instamojo (24 Oct 2026)
+        state.update(mock=False, pyq=False, trial='expired', calls=[], kind='')
+        pg = await b.new_page(viewport={'width': 390, 'height': 800})
+        pg.on('pageerror', lambda e: errors.append(f'pageerror: {e}'))
+        await pg.add_init_script(REG)
+        await pg.route('https://pay.test/**', api)
+        await pg.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
+        # 1. three quick taps on Pay make ONE payment link, and the button says it is opening
+        state['slowbuy'] = True
+        await pg.goto(url + 'ts-police-si/?buy=pyq'); await pg.wait_for_timeout(800)
+        await pg.evaluate('for(let i=0;i<3;i++) document.querySelector(\'[data-act="paybuy"]\').click()')
+        await pg.wait_for_timeout(150)
+        btn = await pg.evaluate('(b=>b&&[b.disabled,b.textContent])(document.querySelector(\'[data-act="paybuy"]\'))')
+        if not btn or not btn[0] or 'Opening' not in btn[1]: errors.append(f'Pay button not locked while the payment page opens: {btn}')
+        await pg.wait_for_timeout(1500)
+        if state['calls'].count('buy') != 1: errors.append(f'3 quick taps made {state["calls"].count("buy")} payment links, not 1')
+        state['slowbuy'] = False
+        # 2. back from Instamojo with a FAILED payment: the checkout stays open with a lasting note, Try again and WhatsApp help
+        state['verifyfail'] = True
+        await pg.goto(url + 'ts-police-si/?payment_id=MOJO9&payment_status=Failed&payment_request_id=REQ9'); await pg.wait_for_timeout(1500)
+        if not await pg.locator('#payDlg[open]').count(): errors.append('no checkout after a failed payment')
+        else:
+            t = await pg.inner_text('#payDlg')
+            if "didn't go through" not in t: errors.append(f'failed payment note missing: {t[:160]!r}')
+            if 'Try again' not in await pg.inner_text('#payDlg [data-act="paybuy"]'): errors.append('no Try again button after a failed payment')
+            if not await pg.locator('#payDlg a[href^="https://wa.me/"]').count(): errors.append('no WhatsApp help link after a failed payment')
+            if 'payment_request_id' in await pg.evaluate('location.search'): errors.append('payment details left in the address bar')
+            await pg.wait_for_timeout(9000)   # a toast would be gone by now; the note must still be there
+            if "didn't go through" not in await pg.inner_text('#payDlg'): errors.append('failed payment note disappeared')
+            # Try again makes a new payment link
+            n = state['calls'].count('buy'); state['slowbuy'] = True
+            await pg.click('#payDlg [data-act="paybuy"]'); await pg.wait_for_timeout(1300)
+            if state['calls'].count('buy') != n + 1: errors.append('Try again did not open the payment page')
+            state['slowbuy'] = False
+        # 3. back from Instamojo saying Credit, but not confirmed yet: "still confirming", not "failed"
+        await pg.goto(url + 'ts-police-si/?payment_id=MOJO8&payment_status=Credit&payment_request_id=REQ8'); await pg.wait_for_timeout(1500)
+        t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
+        if 'still confirming' not in t or "didn't go through" in t: errors.append(f'unconfirmed payment shows the wrong note: {t[:160]!r}')
+        state['verifyfail'] = False
+        # 4. back from Instamojo with the back button (no payment details): offered once to try again
+        await pg.goto(url + 'ts-police-si/'); await pg.wait_for_timeout(700)
+        await pg.evaluate('sessionStorage.setItem("lwa-pay", JSON.stringify({kind:"pyq", t: Date.now()}))')
+        await pg.reload(); await pg.wait_for_timeout(1500)
+        t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
+        if "isn't finished" not in t: errors.append(f'no "payment isn\'t finished" note after coming back without paying: {t[:160]!r}')
+        await pg.reload(); await pg.wait_for_timeout(1500)
+        if await pg.locator('#payDlg[open]').count(): errors.append('the "try again" checkout opens again on every page load')
+        # 5. a student who did pay and comes back with the back button is not asked to pay again
+        state['pyq'] = True
+        await pg.evaluate('sessionStorage.setItem("lwa-pay", JSON.stringify({kind:"pyq", t: Date.now()}))')
+        await pg.reload(); await pg.wait_for_timeout(1500)
+        if await pg.locator('#payDlg[open]').count(): errors.append('a student who already paid was asked to pay again')
         await b.close()
     srv.shutdown()
     print('PAY TEST ERRORS:', errors or 'none')
