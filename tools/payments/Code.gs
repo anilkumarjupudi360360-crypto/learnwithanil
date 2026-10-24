@@ -39,7 +39,7 @@ function doGet() { return out({ok: true, service: 'Learn with Anil passes'}); }
 
 function doPost(e) {
   try {
-    if (e && e.parameter && e.parameter.mac) return webhook(e.parameter);   // Instamojo → form-encoded, signed
+    if (e && e.parameter && e.parameter.mac) return webhook(formParams_(e));   // Instamojo → form-encoded, signed
     const b = JSON.parse((e && e.postData && e.postData.contents) || '{}');
     const exam = String(b.exam || '');
     if (!/^[a-z0-9-]{2,40}$/.test(exam)) return out({ok: false, error: 'Unknown exam.'});
@@ -135,34 +135,62 @@ function grant_(req, paymentId, amount, source) {
   } finally { lock.releaseLock(); }
 }
 
-function verify(b, exam) {
-  const id = String(b.request || '');
-  const req = requestRow_(id);
-  if (!req || (req.exam !== exam && req.exam !== 'all')) return {ok: false, error: 'Payment not found.'};
+// Asks Instamojo itself whether payment request `id` was paid and, if so, records the pass. Returns true when paid.
+function confirmPaid_(req, id, pid, source) {
   const pr = im_('get', '/v2/payment_requests/' + encodeURIComponent(id) + '/');
-  const paid = String(pr.status || '').toLowerCase() === 'completed';
-  if (!paid) return {ok: false, error: 'The payment is not complete yet. If money was taken, it will show here within a few minutes.'};
-  let pid = String(b.payment || '');
+  if (String(pr.status || '').toLowerCase() !== 'completed') return false;
   if (pid) {   // make sure that payment really belongs to this request and was credited
     const p = im_('get', '/v2/payments/' + encodeURIComponent(pid) + '/');
     if (!p.status || String(p.payment_request || '').indexOf(id) < 0) pid = '';
   }
   req.request = id;
-  grant_(req, pid || ('req-' + id), pr.amount, 'verify');
+  grant_(req, pid || ('req-' + id), pr.amount, source);
+  return true;
+}
+
+function verify(b, exam) {
+  const id = String(b.request || '');
+  const req = requestRow_(id);
+  if (!req || (req.exam !== exam && req.exam !== 'all')) return {ok: false, error: 'Payment not found.'};
+  if (!confirmPaid_(req, id, String(b.payment || ''), 'verify')) return {ok: false, error: 'The payment is not complete yet. If money was taken, it will show here within a few minutes.'};
   return passesFor(req.phone, exam, b.device, req.email, false);
+}
+
+// Instamojo's webhook fields, decoded from the raw body as UTF-8 (so Telugu or Hindi buyer names keep their exact
+// characters for the signature check); falls back to Apps Script's own decoding.
+function formParams_(e) {
+  const raw = e.postData && e.postData.contents;
+  if (!raw || String(e.postData.type || '').indexOf('application/x-www-form-urlencoded') < 0) return e.parameter;
+  try {
+    const dec = s => decodeURIComponent(s.replace(/\+/g, ' '));
+    const p = {};
+    raw.split('&').forEach(kv => {
+      if (!kv) return;
+      const i = kv.indexOf('=');
+      p[dec(i < 0 ? kv : kv.slice(0, i))] = i < 0 ? '' : dec(kv.slice(i + 1));
+    });
+    return p.mac ? p : e.parameter;
+  } catch (err) { return e.parameter; }
 }
 
 function webhook(p) {
   const salt = prop('INSTAMOJO_SALT');
+  const id = String(p.payment_request_id || '');
   const keys = Object.keys(p).filter(k => k !== 'mac').sort((a, b) => a.toLowerCase() < b.toLowerCase() ? -1 : 1);
   const msg = keys.map(k => p[k]).join('|');
-  const mac = Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_1, msg, salt)
+  const mac = Utilities.computeHmacSignature(Utilities.MacAlgorithm.HMAC_SHA_1, msg, salt, Utilities.Charset.UTF_8)
     .map(x => ('0' + (x & 0xff).toString(16)).slice(-2)).join('');
-  if (!salt || mac !== String(p.mac)) { log_('webhook-bad-mac', JSON.stringify({payment_id: p.payment_id, request: p.payment_request_id})); return out({ok: false}); }
+  if (!salt || mac !== String(p.mac)) {
+    // Never trust an unsigned message, but don't lose a real payment either: ask Instamojo directly.
+    const req = requestRow_(id);
+    const paid = !!req && confirmPaid_(req, id, String(p.payment_id || ''), 'webhook-checked');
+    log_('webhook-bad-mac', JSON.stringify({payment_id: p.payment_id, request: id, paid_per_instamojo: paid}));
+    return out({ok: paid});
+  }
   if (String(p.status).toLowerCase() === 'credit') {
-    const req = requestRow_(p.payment_request_id);
-    if (req) { req.request = p.payment_request_id; grant_(req, p.payment_id, p.amount, 'webhook'); }
-    else log_('webhook-unknown-request', p.payment_request_id);
+    const req = requestRow_(id);
+    if (req) { req.request = id; grant_(req, p.payment_id, p.amount, 'webhook'); }
+    else log_('webhook-unknown-request', id);
   }
   return out({ok: true});
 }
