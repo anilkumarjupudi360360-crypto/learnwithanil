@@ -209,6 +209,7 @@ CGL_PAPERS = [
        key="SSC's answer key as marked on the candidate's response sheet", fmt='mcq', slug='ssc-cgl-2025-tier-2-paper-1-question-paper-with-answers',
        alt='Mains', kwname='SSC CGL 2025 Tier 2 Paper 1', hi_paper='टियर-2 पेपर-1', blurb=CGL_T2_BLURB, mins=135),
   _cgl_t1('c24s1', 2024, '9 September', 1, '9:00 AM', 'cgl-2024-tier1-09sep-shift1.txt'),
+  _cgl_t1('c23s1', 2023, '14 July', 1, '9:00 AM', 'cgl-2023-tier1-14jul-shift1.txt'),
   _cgl_t1('c24s2', 2024, '9 September', 2, '12:30 PM', 'cgl-2024-tier1-09sep-shift2.txt'),
   _cgl_t1('c24s3', 2024, '9 September', 3, '4:00 PM', 'cgl-2024-tier1-09sep-shift3.txt'),
   dict(id='c24t2', file='cgl-2024-tier2-paper1.txt', year=2024, stage='Tier-II Paper I', short='Tier-II 2024 · Paper I',

@@ -1,0 +1,998 @@
+# SSC Combined Graduate Level Examination 2023, Tier-I, held 14 July 2023, Shift 1 (9:00 AM). 100 questions, 200 marks, 60 minutes.
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via AglaSem); answers are the options SSC ticked as correct on that sheet (answer-key stage). The Hindi text is from a second candidate's sheet of the same exam, with the options put in the English order. Explanations by Learn with Anil.
+
+Q 1 | rea | Non-verbal Reasoning
+Select the option figure which is embedded in the given figure. (Rotation is NOT allowed).
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/c23s1-q1.png
+~ Look for the option whose every line and arc can be traced in the given figure without turning it. Option 2 is the right-hand part of the figure cut along a slanting line: the top and right edges of the outer hexagon with its slanting lines, arcs of the big and the small circle, and between them part of the inner hexagon. Option 1 has the two arcs with no hexagon edge between them, option 4 shows three concentric arcs though the figure has only two circles, and option 3's lines around its arc match no part.
+
+Q 2 | rea | Arrangement & Puzzles
+Select the option that represents the correct order of the given words as they would appear in an English dictionary.
+1. Warriors
+2. Warehouse
+3. Warcraft
+4. Warranty
+5. Wardrobe
+6. Wardenship
+(1) 3, 6, 5, 2, 1, 4
+(2) 3, 5, 6, 2, 1, 4
+(3) 3, 5, 6, 2, 4, 1
+(4) 3, 6, 5, 2, 4, 1
+= 4
+~ All six words begin with "War", so compare the fourth letter: c (Warcraft) comes before d (Wardenship, Wardrobe), then e (Warehouse), then r (Warranty, Warriors). Wardenship comes before Wardrobe because e comes before r in the fifth place, and Warranty comes before Warriors because a comes before i. The order is Warcraft, Wardenship, Wardrobe, Warehouse, Warranty, Warriors = 3, 6, 5, 2, 4, 1. Option 1 wrongly puts Warriors before Warranty.
+
+Q 3 | rea | Syllogism & Statements
+Three statements are given, followed by four conclusions numbered I, II, III and IV. Assuming the statements to be true, even if they seem to be at variance with commonly known facts, decide which of the conclusions logically follow(s) from the statements.
+Statements:
+Some desks are trays.
+Some trays are plates.
+Some plates are desks.
+Conclusions:
+I. All desks are plates.
+II. All plates are desks.
+III. Some plates are trays.
+IV. All trays are desks.
+(1) Only conclusion III follows
+(2) Only conclusion IV follows
+(3) Only conclusion II follows
+(4) Only conclusion I follows
+= 1
+~ A "some" statement can be reversed: "Some trays are plates" gives "Some plates are trays", so conclusion III follows. All three statements are particular ("some"), and particular statements can never prove a universal ("all") conclusion. So "All desks are plates", "All plates are desks" and "All trays are desks" are only possibilities, not certainties. Hence only conclusion III follows.
+
+Q 4 | rea | Analogy & Classification
+Select the option that is related to the third word in the same way as the second word is related to the first word.
+(The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.)
+Skin : Touch :: Nose : ?
+(1) Smell
+(2) Taste
+(3) Nose ring
+(4) Sweat
+= 1
+~ The skin is the sense organ through which we feel touch. In the same way, the nose is the sense organ through which we smell, so Nose : Smell. Taste is the sense of the tongue, not the nose. A nose ring is only an ornament worn on the nose, and sweat is given out by the skin, so neither keeps the organ-and-sense relation of the first pair.
+
+Q 5 | rea | Blood Relations & Directions
+Ganesh was taking a walk with his mother’s brother’s father’s granddaughter. Who was he walking with?
+(1) Daughter
+(2) Mother
+(3) Cousin
+(4) Granddaughter
+= 3
+~ Ganesh's mother's brother's father is his mother's father, that is, Ganesh's maternal grandfather. A granddaughter of this grandfather is a daughter of one of his children, for example of Ganesh's maternal uncle, which makes her Ganesh's cousin. (She could also be Ganesh's own sister, but Sister is not an option.) Daughter and Granddaughter belong to younger generations than Ganesh, and Mother is the grandfather's daughter, not his granddaughter, so Cousin is the answer.
+
+Q 6 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown below.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/c23s1-q6.png
+~ The mirror MN is horizontal and lies below the figure, so the image is a top-to-bottom reflection: the characters keep their left-to-right order T, e, 2, 9, E, K, P, and each one is turned upside down without being reversed sideways. Option 4 shows exactly this. Option 3 is the image in a vertical mirror (order reversed), option 2 reverses K sideways, and option 1 turns the 2 half a turn instead of flipping it.
+
+Q 7 | rea | Series
+Which of the following letter-clusters will replace the question mark (?) in the given series?
+UV, OY, IB, EE, ?
+(1) ZK
+(2) AH
+(3) BI
+(4) BH
+= 2
+~ First letters: U, O, I, E are the vowels taken in reverse order (U, O, I, E, A), so the next first letter is A. Second letters move 3 places forward each time: V + 3 = Y, Y + 3 = B (counting on past Z), B + 3 = E, so the next is E + 3 = H. The missing cluster is AH. BH and BI have the wrong first letter, and ZK fits neither pattern.
+
+Q 8 | rea | Analogy & Classification
+The second number in the given number-pairs is obtained by performing certain mathematical operation(s) on the first number. The same operation(s) is/are followed in all the number-pairs except one. Find that odd number-pair.
+(1) 20 : 11
+(2) 6 : 4
+(3) 15 : 9
+(4) 12 : 7
+= 3
+~ The rule is: second number = first number ÷ 2 + 1. Check: 20 ÷ 2 + 1 = 11, 6 ÷ 2 + 1 = 4 and 12 ÷ 2 + 1 = 7. For 15, the rule gives 15 ÷ 2 + 1 = 8.5, not 9, so the pair 15 : 9 does not follow the pattern. It is also the only pair whose first number is odd.
+
+Q 9 | rea | Non-verbal Reasoning
+Select the figure that will replace the question mark (?) in the following figure series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+! img/c23s1-q9.png
+~ Two moves alternate. Figure 1 to 2 (and 3 to 4): top-left → top-right → centre → bottom-left → middle-left → top-left, while middle-right and bottom-right swap. Figure 2 to 3: top-left → bottom-left → middle-left → top-left and top-right → middle-right → bottom-right → top-right, and the centre symbol is replaced by a new one (the circle became a star). This second move on figure 4 gives = top-left, ▽ top-right, star middle-left, □ middle-right, 3 bottom-left, 9 bottom-right and a new centre symbol in place of D: option 3 (C). Option 4 wrongly keeps D.
+
+Q 10 | rea | Non-verbal Reasoning
+Three different positions of the same dice are shown. Find the number on the face opposite the face showing ‘1’.
+(1) 6
+(2) 2
+(3) 3
+(4) 4
+= 3
+! img/c23s1-q10.png
+~ The face showing 1 is on top in all three positions, and the side faces seen next to it are 2 and 6, then 6 and 5, then 5 and 4. So 1 is adjacent to 2, 4, 5 and 6. A face can never be seen next to its opposite face, so the only number left, 3, must be on the face opposite 1.
+
+Q 11 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(55, 11, 25)
+(64,16, 16)
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is NOT allowed)
+(1) (33, 11, 9)
+(2) (33, 11, 22)
+(3) (33, 11, 3)
+(4) (33, 11, 10)
+= 1
+~ In each set, divide the first number by the second and square the result to get the third: (55 ÷ 11)² = 5² = 25 and (64 ÷ 16)² = 4² = 16. For the options, 33 ÷ 11 = 3 and 3² = 9, so (33, 11, 9) follows the same rule. 22 is 33 − 11, 3 is only the quotient without squaring, and 10 fits no rule.
+
+Q 12 | rea | Analogy & Classification
+Select the option that is related to the sixth letter-cluster in the same way as the first letter-cluster is related to the second letter-cluster and the third letter-cluster is related to the fourth letter-cluster.
+HMD : KOE : : BNQ : EPR :: ? : FLV
+(1) SJE
+(2) UJC
+(3) EJS
+(4) CJU
+= 4
+~ From the first cluster to the second, the letters move +3, +2, +1: H + 3 = K, M + 2 = O, D + 1 = E; likewise B + 3 = E, N + 2 = P, Q + 1 = R. So the fifth cluster becomes FLV in the same way. Working back from FLV: F − 3 = C, L − 2 = J, V − 1 = U, giving CJU. UJC is CJU reversed, and SJE and EJS do not fit.
+
+Q 13 | rea | Non-verbal Reasoning
+Select the figure from the options that can replace the question mark (?) and complete the given pattern.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/c23s1-q13.png
+~ Each figure has four corner places and two inner places on the diagonal from top-left to bottom-right. Two moves alternate. From figure 1 to 2 (and 3 to 4) the corner symbols move one corner anticlockwise and the two inner symbols swap. From figure 2 to 3, top-left swaps with the upper inner place, bottom-right with the lower inner place, and top-right with bottom-left. Applying this to figure 4 gives ↑ top-left, △ top-right, D upper inner, Z lower inner, E bottom-left and S bottom-right, which is option 4.
+
+Q 14 | rea | Miscellaneous Reasoning
+Select the Venn diagram that best illustrates the relationship between the following classes.
+Ticket, Aeroplane, Rail
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/c23s1-q14.png
+~ Some tickets are aeroplane tickets and some are rail tickets, so the Ticket circle overlaps both the Aeroplane circle and the Rail circle. Nothing is both an aeroplane and a rail, so those two circles do not overlap each other. Three circles in a chain with Ticket in the middle, option 1, show this. Option 4 would wrongly give aeroplane and rail a common part, and option 2 leaves one class unconnected to tickets.
+
+Q 15 | rea | Analogy & Classification
+Four letter-clusters have been given, out of which three are alike in some manner and one is different. Select the odd letter-cluster.
+(1) BFJN
+(2) DHLP
+(3) HJKP
+(4) JNRV
+= 3
+~ Use letter positions. BFJN = 2, 6, 10, 14; DHLP = 4, 8, 12, 16; JNRV = 10, 14, 18, 22. In each of these the letters go up by 4 every time (+4, +4, +4). HJKP = 8, 10, 11, 16 goes up by 2, 1 and 5, so it does not follow the pattern and is the odd letter-cluster.
+
+Q 16 | rea | Analogy & Classification
+Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number.
+5 : 45::3 : 3::6 : ?
+(1) 90
+(2) 106
+(3) 110
+(4) 96
+= 4
+~ The second number = first number × (first number − 2)². Check: 5 × (5 − 2)² = 5 × 9 = 45 and 3 × (3 − 2)² = 3 × 1 = 3. So for 6: 6 × (6 − 2)² = 6 × 16 = 96. Simple rules such as multiplying by a fixed number fail, since 5 gives 45 (× 9) while 3 gives 3 (× 1); 90, 106 and 110 do not fit the rule.
+
+Q 17 | rea | Series
+Which of the following numbers will replace the question mark (?) in the given series?
+8, 15, 26, ? , 56, 75
+(1) 39
+(2) 41
+(3) 35
+(4) 43
+= 1
+~ The differences between terms are consecutive prime numbers: 15 − 8 = 7 and 26 − 15 = 11, so the next differences are 13, 17 and 19. Then 26 + 13 = 39, 39 + 17 = 56 and 56 + 19 = 75, which matches the last two terms. With 41 the differences would be 15 and 15, which breaks the pattern.
+
+Q 18 | rea | Analogy & Classification
+Select the option that is related to the third term in the same way as the second term is related to the first term and the sixth term is related to the fifth term.
+7183 : 3850 :: 6957 : ? :: 8972 : 5639
+(1) 3426
+(2) 3624
+(3) 3246
+(4) 3642
+= 2
+~ In each pair the second number is 3333 less than the first: 7183 − 3850 = 3333 and 8972 − 5639 = 3333. So the missing term is 6957 − 3333 = 3624. The other options use the same digits in a different order: 6957 − 3426 = 3531, 6957 − 3246 = 3711 and 6957 − 3642 = 3315, none of which is 3333.
+
+Q 19 | rea | Non-verbal Reasoning
+Three different positions of the same dice are shown. Find the number on the face opposite the face showing ‘4’.
+(1) 5
+(2) 6
+(3) 2
+(4) 3
+= 4
+! img/c23s1-q19.png
+~ 6 is seen next to 4 and 5 (figure 1), 3 and 2 (figure 2), and 5 and 3 (figure 3), so 6 touches 2, 3, 4 and 5 and is opposite 1. 5 is seen next to 4, 6 and 3, so its opposite must be 1 or 2; 1 is already opposite 6, so 5 is opposite 2. The remaining pair is 3 and 4, so 3 is on the face opposite 4.
+
+Q 20 | rea | Analogy & Classification
+Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number.
+625 : 5 :: 2560 : 8 :: 5000 : ?
+(1) 9
+(2) 12
+(3) 10
+(4) 15
+= 3
+~ The first number = 5 × (second number)³. Check: 5 × 5³ = 5 × 125 = 625 and 5 × 8³ = 5 × 512 = 2560. For 5000: 5000 ÷ 5 = 1000 = 10³, so the missing number is 10. The other options fail: 5 × 9³ = 3645, 5 × 12³ = 8640 and 5 × 15³ = 16875.
+
+Q 21 | rea | Coding-Decoding
+In a certain code language, ‘ASK’ is written as ‘62’ and ‘BYE’ is written as ‘64’. How will ‘CRY’ be written in that language?
+(1) 68
+(2) 72
+(3) 86
+(4) 92
+= 4
+~ The code is twice the sum of the letter positions. ASK: A (1) + S (19) + K (11) = 31, and 31 × 2 = 62. BYE: B (2) + Y (25) + E (5) = 32, and 32 × 2 = 64. CRY: C (3) + R (18) + Y (25) = 46, and 46 × 2 = 92. So CRY is written as 92.
+
+Q 22 | rea | Mathematical Operations
+Select the correct combination of mathematical signs that can sequentially replace the * signs and balance the given equation.
+256 * 4 * 9 * 3 * 14 = 51
+(1) × + − ÷
+(2) ÷ × − +
+(3) × ÷ + −
+(4) ÷ − × +
+= 4
+~ Put each set of signs in order and solve using BODMAS. Option 4: 256 ÷ 4 − 9 × 3 + 14 = 64 − 27 + 14 = 51, which balances the equation. Option 2 gives 256 ÷ 4 × 9 − 3 + 14 = 576 − 3 + 14 = 587. Options 1 and 3 begin with 256 × 4 = 1024 and cannot come down to 51 (they give about 1032.8 and 102.8).
+
+Q 23 | rea | Series
+Select the option that represents the letters that, when placed from left to right in the following blanks, will complete the letter-series.
+C L _ V E C _ _ W E C L O _ _ C _ O _ E
+(1) O L P X E L Y
+(2) O L O Y E L Z
+(3) O L O X F M Y
+(4) O L O X E L Y
+= 4
+~ The series is made of five-letter groups of the form C L O _ E, with the fourth letter moving one step forward each time. Filling O, L, O, X, E, L, Y gives CLOVE, CLOWE, CLOXE, CLOYE: the fourth letters V, W, X, Y are consecutive. Option 2 would give CLOVE, CLOWE, CLOYE, CLOZE, skipping X, while options 1 and 3 break the C L O _ E frame.
+
+Q 24 | rea | Coding-Decoding
+In a certain code language, ‘TABLE’ is coded as ELEAT and ‘SWING’ is coded as GNLWS. How will ‘FRAME’ be coded in the same language?
+(1) EMERF
+(2) EMDRF
+(3) ERMDF
+(4) MEDFR
+= 2
+~ The word is written in reverse order and then the middle letter is moved 3 places forward. TABLE reversed is ELBAT, and B + 3 = E gives ELEAT. SWING reversed is GNIWS, and I + 3 = L gives GNLWS. FRAME reversed is EMARF, and A + 3 = D gives EMDRF. EMERF moves the middle letter 4 places, and ERMDF and MEDFR change the letter order.
+
+Q 25 | rea | Mathematical Operations
+Which two signs should be interchanged to make the given equation correct?
+588 ÷ 28 × 32 + 72 − 160 = 760
+(1) − and +
+(2) ÷ and −
+(3) + and ×
+(4) ÷ and +
+= 1
+~ As given, 588 ÷ 28 × 32 + 72 − 160 = 21 × 32 + 72 − 160 = 672 + 72 − 160 = 584, not 760. Interchange − and +: 588 ÷ 28 × 32 − 72 + 160 = 672 − 72 + 160 = 760, which is correct. The other swaps do not work; for example, interchanging ÷ and + gives 588 + 28 × 32 ÷ 72 − 160, which is not even a whole number.
+
+Q 26 | cur | Sports
+The length of the badminton court for singles is:
+(1) 13.44 m
+(2) 13.55 m
+(3) 14 m
+(4) 13.40 m
+= 4
+~ Under the Badminton World Federation's Laws of Badminton, the court is 13.40 m (44 feet) long for both singles and doubles; only the width differs, 5.18 m for singles and 6.10 m for doubles. The net is 1.524 m high at the centre and 1.55 m at the posts. In singles the long service line is the back boundary line, while in doubles it is 0.76 m inside it. The other options are distractors close to 13.40 m.
+
+Q 27 | pol | Judiciary & Constitutional Bodies
+Who is the Administrative Head of the Indian Audit and Accounts Department?
+(1) Accountant General
+(2) Principal Accountant General
+(3) Director General
+(4) The Comptroller and Auditor General
+= 4
+~ The Comptroller and Auditor General of India (CAG), a constitutional authority under Article 148, heads the Indian Audit and Accounts Department. Appointed by the President by warrant under his hand and seal, the CAG holds office for six years or until the age of 65, whichever is earlier, and can be removed only in the manner of a Supreme Court judge. Accountants General, Principal Accountants General and Directors General head the department's field offices and work under the CAG, who audits the accounts of the Union and the states.
+
+Q 28 | eco | Schemes & Welfare
+Which of the following is the largest pan-India scheme to strengthen health care infrastructure across the country with focus on primary, secondary and tertiary care services?
+(1) LaQshya
+(2) AB-PMJAY
+(3) PM-ABHIM
+(4) PM-MI
+= 3
+~ The Pradhan Mantri Ayushman Bharat Health Infrastructure Mission (PM-ABHIM), announced in the Union Budget 2021-22 and launched by the Prime Minister at Varanasi on 25 October 2021 with an outlay of about ₹64,180 crore, is described by the government as the largest pan-India scheme for health infrastructure. It strengthens primary, secondary and tertiary care, critical care blocks, public health laboratories and disease surveillance. AB-PMJAY is a health assurance scheme (cover of ₹5 lakh per family a year), and LaQshya improves the quality of care in labour rooms.
+
+Q 29 | cur | Static GK & Culture
+Which of the following festivals is associated with the term ‘ties of protection’?
+(1) Baisakhi
+(2) Karwa Chauth
+(3) Chhath Pooja
+(4) Raksha Bandhan
+= 4
+~ Raksha Bandhan literally means "the tie (bond) of protection" (raksha = protection, bandhan = tie). Celebrated on the full-moon day (Purnima) of the month of Shravan, it marks the bond between brothers and sisters: the sister ties a rakhi, a sacred thread, on her brother's wrist and he promises to protect her. Baisakhi is the spring harvest festival of Punjab, Karwa Chauth is a fast kept by married women for their husbands, and Chhath Puja is devoted to the Sun god, mainly in Bihar and eastern Uttar Pradesh.
+
+Q 30 | cur | Sports
+In October 2021, 19-year-old ________ won the silver medal at the World Wrestling Championship.
+(1) Anshu Malik
+(2) Seema Bisla
+(3) Sanju Devi
+(4) Sonam Malik
+= 1
+~ Anshu Malik of Haryana won silver in the women's 57 kg freestyle category at the 2021 World Wrestling Championships in Oslo, Norway (October 2021), losing the final to Helen Maroulis of the USA, the 2016 Olympic champion. She became the first Indian woman wrestler to reach a World Championship final and win silver; earlier Indian women had won only bronze medals. At the same championships Sarita Mor won bronze in the 59 kg category. Sonam Malik and Seema Bisla are also Indian women wrestlers.
+
+Q 31 | eco | Planning, Growth & Budget
+________ emerged as the poorest state as per the first-ever Multi-dimensional Poverty Index (MPI) prepared by Niti Aayog and launched in November 2021.
+(1) Bihar
+(2) Madhya Pradesh
+(3) Uttar Pradesh
+(4) Mizoram
+= 1
+~ NITI Aayog's National Multidimensional Poverty Index: Baseline Report (November 2021), based on NFHS-4 (2015-16) data, found 51.91% of Bihar's population multidimensionally poor, the highest of any state, followed by Jharkhand (42.16%), Uttar Pradesh (37.79%) and Madhya Pradesh (36.65%); Kerala had the lowest share (0.71%). The index follows the global Alkire-Foster method and covers three equally weighted dimensions, health, education and standard of living, through 12 indicators such as nutrition, years of schooling, cooking fuel, sanitation, housing and bank accounts.
+
+Q 32 | eco | Planning, Growth & Budget
+The consumption of fixed capital is also known as _________.
+(1) depreciation
+(2) net investment
+(3) appreciation
+(4) gross investment
+= 1
+~ Fixed capital such as machinery and buildings wears out through use and age; the value of this wear and tear during a year is called depreciation, which national income accounting (NCERT Macroeconomics) also calls consumption of fixed capital. It links gross and net measures: net investment = gross investment − depreciation, and NDP = GDP − depreciation. Appreciation is a rise in an asset's value, the opposite idea, while gross investment is the total addition to the capital stock before depreciation is deducted.
+
+Q 33 | ih | Ancient India
+The Vedic Aryans lived in the area called Sapt-Sindhu, which means area drained by seven rivers. One of the rivers among the seven is Jhelum. What was its ancient name?
+(1) Askini
+(2) Parushni
+(3) Vipash
+(4) Vitasta
+= 4
+~ In the Rig Veda the Jhelum is called Vitasta. The other rivers of the Sapta Sindhu region carry similar Vedic names: Sindhu (Indus), Askini or Asikni (Chenab), Parushni (Ravi), Vipash or Vipasha (Beas), Shutudri (Sutlej) and Saraswati. The Parushni (Ravi) is remembered as the scene of the Battle of Ten Kings (Dasharajna), in which Sudas of the Bharata tribe defeated a confederacy of ten tribes. The Jhelum rises in Kashmir and joins the Chenab in Pakistan.
+
+Q 34 | ih | Medieval India
+In Chola administration, ________ was the assembly in the villages which were inhabited predominantly by the Brahmanas.
+(1) Ur
+(2) Khilya
+(3) Nagaram
+(4) Sabha
+= 4
+~ Under the Cholas, brahmadeya villages, granted to and settled mainly by Brahmanas, were run by an assembly called the sabha (or mahasabha) of prominent Brahmana landholders, which worked through committees for irrigation tanks, gardens, temples and justice; the Uttaramerur inscriptions of Parantaka I describe how committee members were chosen by drawing palm-leaf tickets from a pot. The ur was the assembly of ordinary peasant villages, and the nagaram was an association of traders that managed affairs in towns. "Khilya" is not a Chola assembly.
+
+Q 35 | geo | Indian Geography
+Which of the following states is NOT a part of the Tapi Basin?
+(1) Rajasthan
+(2) Maharashtra
+(3) Madhya Pradesh
+(4) Gujarat
+= 1
+~ The Tapi (Tapti) rises at Multai in Betul district of Madhya Pradesh and flows west for about 724 km, between the Satpura range and the Satmala-Ajanta hills, to the Gulf of Khambhat near Surat. According to the Central Water Commission, its basin of about 65,145 sq km lies in Maharashtra (about 79%), Madhya Pradesh (15%) and Gujarat (6%); the Purna is its main tributary. Rajasthan has no part of the basin: its rivers drain to the Chambal (Ganga system), the Luni, or the Mahi and Sabarmati.
+
+Q 36 | sci | Chemistry
+Which of the following is used as a cooling medium for the Large Hadron Collider (LHC) and the superconducting magnets in MRI scanners and NMR spectrometers?
+(1) Neon
+(2) Chlorine
+(3) Argon
+(4) Helium
+= 4
+~ Liquid helium, which boils at about 4.2 K (−269 °C), is used to keep the superconducting magnets of MRI scanners and NMR spectrometers below the temperature at which they lose all electrical resistance. CERN's Large Hadron Collider cools its superconducting magnets to 1.9 K (−271.3 °C) with superfluid helium, colder than outer space. Helium is an inert noble gas that does not solidify at normal pressure. Neon and argon are also noble gases but liquefy at much higher temperatures (about 27 K and 87 K), and chlorine is a reactive, toxic halogen.
+
+Q 37 | cur | Awards, Books & Persons
+In 2018, Google Doodle celebrated the 100th birthday of Mrinalini Sarabhai. She is an exponent of which of the following dance forms?
+(1) Bharatanatyam and Kathakali
+(2) Odissi and Kathak
+(3) Kuchipudi and Bharatanatyam
+(4) Yakshagana
+= 1
+~ Mrinalini Sarabhai (11 May 1918 – 21 January 2016), dancer, choreographer and wife of space scientist Vikram Sarabhai, trained in Bharatanatyam under Meenakshisundaram Pillai and in Kathakali under Thakazhi Kunchu Kurup, and was an exponent of both. She founded the Darpana Academy of Performing Arts in Ahmedabad and received the Padma Shri (1965) and Padma Bhushan (1992). Google marked her 100th birth anniversary with a Doodle on 11 May 2018. Her daughter Mallika Sarabhai is also a noted dancer.
+
+Q 38 | cur | Static GK & Culture
+Bharatanatyam expresses South Indian religious themes and spiritual ideas of _______.
+(1) Sufism
+(2) Shaivism
+(3) Buddhism
+(4) Jainism
+= 2
+~ Bharatanatyam, the classical dance of Tamil Nadu that grew out of the temple dance (Sadir) of the devadasis, expresses South Indian religious themes and spiritual ideas, particularly of Shaivism, along with Vaishnavism and Shaktism. Shiva as Nataraja, the cosmic dancer, is its presiding image, and its technique follows Bharata's Natyashastra and Nandikeshvara's Abhinaya Darpana. It was revived and renamed in the 20th century by E. Krishna Iyer and Rukmini Devi Arundale, who founded Kalakshetra in Chennai in 1936.
+
+Q 39 | cur | Awards, Books & Persons
+Who among the following musicians is popular for his mastery over the musical instrument Sitar?
+(1) Ali Akbar Khan
+(2) Vilayat Khan
+(3) Bahadur Khan
+(4) Amjad Ali Khan
+= 2
+~ Ustad Vilayat Khan (1928–2004) of the Imdadkhani (Etawah) gharana is regarded as one of the greatest sitar players; he developed the gayaki ang, a style that imitates the human voice on the sitar. He famously declined the Padma Shri, Padma Bhushan and Padma Vibhushan. The other three were sarod players: Ali Akbar Khan, son of Allauddin Khan of the Maihar gharana; Bahadur Khan, Allauddin Khan's nephew and Ali Akbar Khan's cousin; and Amjad Ali Khan of the Senia Bangash gharana.
+
+Q 40 | cur | Sports
+Which of the following countries was the host of AFC Women's Asia Cup Football–2022?
+(1) Japan
+(2) Bangladesh
+(3) India
+(4) China
+= 3
+~ India hosted the 2022 AFC Women's Asian Cup from 20 January to 6 February 2022, with matches in Mumbai, Navi Mumbai and Pune in Maharashtra; the tournament was also the final Asian qualifying stage for the 2023 FIFA Women's World Cup. China won a record ninth title by beating South Korea 3–2 in the final. The hosts had to withdraw during the group stage after a COVID-19 outbreak left the Indian team without the minimum number of players.
+
+Q 41 | cur | Sports
+Ms Bhakti Pradip Kulkarni was conferred with the Arjuna Award 2022 for her outstanding contribution in which of the following sports?
+(1) Table Tennis
+(2) Chess
+(3) Badminton
+(4) Wrestling
+= 2
+~ Bhakti Kulkarni of Goa, a Woman Grandmaster and International Master and a former Asian women's champion, received the Arjuna Award 2022 for chess along with Grandmaster R. Praggnanandhaa. The National Sports Awards 2022 were presented by President Droupadi Murmu at Rashtrapati Bhavan on 30 November 2022, when table tennis player Achanta Sharath Kamal received the Major Dhyan Chand Khel Ratna. She was also part of India's bronze-winning women's team at the 44th Chess Olympiad (Chennai, 2022).
+
+Q 42 | ih | Modern India
+Who among the following was the founder of ‘Tiger Legion' or ‘Free India Legion'?
+(1) Vinayak Damodar Savarkar
+(2) Subhas Chandra Bose
+(3) Sohan Singh Bhakhna
+(4) Lala Hardayal
+= 2
+~ After escaping from house arrest in Calcutta in January 1941, Subhas Chandra Bose reached Berlin and, with German support, raised the Indian Legion or Free India Legion (Legion Freies Indien), mainly from Indian prisoners of war captured in North Africa. Its badge showed a springing tiger on a tricolour, giving it the name Tiger Legion. In Germany Bose also set up the Free India Centre and Azad Hind Radio, and was first hailed as "Netaji" there. Sohan Singh Bhakna and Lala Har Dayal founded the Ghadar Party (1913).
+
+Q 43 | sci | Biology
+Name a reproductive strategy in which parasites take advantage of the care of other individuals of the same species or different species to raise their young.
+(1) Brood parasitism
+(2) Sexual parasitism
+(3) Klepto parasitism
+(4) Competitive parasitism
+= 1
+~ In brood parasitism the parasite leaves the rearing of its young to a host. NCERT Class 12 Biology's example is the cuckoo (koel), which lays its eggs in a crow's nest and lets the crow incubate them and feed the chicks; the parasite's eggs have evolved to resemble the host's in size and colour. Brood parasites may exploit other species or members of their own species. Kleptoparasitism is stealing food caught by another animal, and sexual parasitism is the fusion of dwarf males with females, as in some anglerfish.
+
+Q 44 | geo | Indian Geography
+On the basis of tribal population (2011), identify the option that arranges the following states in ascending order.
+A. Madhya Pradesh
+B. Maharashtra
+C. Odisha
+(1) (C), (B), (A)
+(2) (B), (A), (C),
+(3) (C), (A), (B)
+(4) (B), (C), (A)
+= 1
+~ Census 2011 counted about 10.43 crore Scheduled Tribe people (8.6% of India's population). Madhya Pradesh has the largest ST population (about 1.53 crore, 14.7% of India's tribals), followed by Maharashtra (about 1.05 crore) and Odisha (about 95.9 lakh), with Rajasthan and Gujarat next. In ascending order this gives Odisha (C) < Maharashtra (B) < Madhya Pradesh (A). By share of the state's own population, however, Odisha (22.8%) is well ahead of Maharashtra (9.4%).
+
+Q 45 | eco | Agriculture, Industry & Trade
+In which industrial policy was the investment limit for tiny industry/unit increased to ₹2 lakh?
+(1) 1977
+(2) 1991
+(3) 1980
+(4) 1956
+= 3
+~ The Industrial Policy of 1977 first defined the tiny sector as units with investment in machinery and equipment up to ₹1 lakh located in towns with a population below 50,000, and set up District Industries Centres. The Industrial Policy Statement of 1980 raised the limits: tiny units from ₹1 lakh to ₹2 lakh, small-scale units from ₹10 lakh to ₹20 lakh and ancillary units from ₹15 lakh to ₹25 lakh. The 1991 small-sector policy raised the tiny-unit limit to ₹5 lakh, and 1956 is the year of the second Industrial Policy Resolution.
+
+Q 46 | geo | World & Physical Geography
+Which scientist thought of the concept of steady state of the universe?
+(1) Harold Jeffrey
+(2) Edwin Hubble
+(3) Fred Hoyle
+(4) Pierre-Simon Laplace
+= 3
+~ The steady state theory was put forward in 1948 by Fred Hoyle with Hermann Bondi and Thomas Gold; NCERT's Fundamentals of Physical Geography calls it "Hoyle's concept of steady state". It held that the universe is roughly the same at any point of time, new matter being created continuously as it expands. The Big Bang theory, backed by Edwin Hubble's evidence (1920s) that the universe is expanding, has replaced it. Laplace gave the nebular hypothesis (1796) of the solar system's origin, and Sir Harold Jeffreys (spelt Jeffrey in NCERT) supported the binary (tidal) theories.
+
+Q 47 | sci | Biology
+Match the columns.
+Colum-A (Class) | Column-B (Common name)
+i. Chlorophyceae | a. Brown algae
+ii. Phaeophyceae | b. Green algae
+iii. Rhodophyceae | c. Blue-green algae
+iv. Cyanophyceae | d. Red algae
+(1) i-b, ii-c, iii-a, iv-d
+(2) i-b, ii-a, iii-d, iv-c
+(3) i-d, ii-c, iii-b, iv-a
+(4) i-a, ii-b, iii-c, iv-d
+= 2
+~ Algae are classified mainly by their pigments (NCERT Class 11, Plant Kingdom). Chlorophyceae are green algae, coloured by chlorophyll a and b (Chlamydomonas, Spirogyra); Phaeophyceae are brown algae, with fucoxanthin (Ectocarpus, Laminaria, Sargassum); Rhodophyceae are red algae, with r-phycoerythrin (Polysiphonia, Gelidium, Gracilaria); and Cyanophyceae are blue-green algae (Nostoc, Anabaena), now treated as cyanobacteria in kingdom Monera. So the match is i-b, ii-a, iii-d, iv-c.
+
+Q 48 | ih | Modern India
+Ryotwari system of revenue collection in India, introduced by the British, was based on the _______.
+(1) Smith’s theory of rent
+(2) Ricardian theory of rent
+(3) Malthusian theory of rent
+(4) Marx’s theory of rent
+= 2
+~ The Ryotwari system, begun by Alexander Read and Thomas Munro in Baramahal (1792), extended over Madras Presidency from 1820 and later to Bombay, settled revenue directly with each cultivator (ryot) without intermediaries. It was justified by David Ricardo's theory of rent (1817), popularised by Utilitarians such as James Mill: the state, as the ultimate landlord, could claim the "rent", the surplus left after the costs of cultivation and normal profit. R.K. Pringle's Bombay survey of the 1820s explicitly tried to assess this net produce field by field.
+
+Q 49 | sci | Chemistry
+Who received the Nobel Prize in 1901 for ‘recognition of the extraordinary services rendered by the discovery of the laws of chemical dynamics and osmotic pressure in solutions’?
+(1) Hermann Emil Fischer
+(2) Jacobus Henricus van 't Hoff
+(3) Svante August Arrhenius
+(4) Henri Moissan
+= 2
+~ The Dutch chemist Jacobus Henricus van 't Hoff received the first Nobel Prize in Chemistry (1901) "in recognition of the extraordinary services he has rendered by the discovery of the laws of chemical dynamics and osmotic pressure in solutions". His osmotic pressure equation, π = iCRT (with the van 't Hoff factor i), is studied under colligative properties. The other options won soon after: Emil Fischer (1902, sugar and purine syntheses), Svante Arrhenius (1903, electrolytic dissociation) and Henri Moissan (1906, isolation of fluorine).
+
+Q 50 | pol | Constitution & Rights
+Which of the following Articles of the Indian Constitution are related to citizenship?
+(1) Articles 15 to 21
+(2) Articles 5 to 11
+(3) Articles 2 to 4
+(4) Articles 25 to 31
+= 2
+~ Part II of the Constitution, Articles 5 to 11, deals with citizenship: it identifies who became citizens at the commencement of the Constitution, including migrants from and to Pakistan (Articles 6 and 7) and persons of Indian origin living abroad (Article 8), denies citizenship to those who voluntarily acquire a foreign one (Article 9), and lets Parliament regulate citizenship by law (Article 11), under which the Citizenship Act, 1955 was passed. Articles 2 to 4 concern new states, while 15 to 21 and 25 to 31 are Fundamental Rights in Part III.
+
+Q 51 | qa | Percentage, Profit & Interest
+If A is 95% of B, then what per cent of A is B?
+(1) 110 3/19%
+(2) 104 7/19%
+(3) 108 17/19%
+(4) 105 5/19%
+= 4
+~ Take B = 100, so A = 95. B as a percentage of A = 100/95 × 100 = 2000/19 = 105 5/19%. Check: 105 5/19% of 95 = (2000/19) × 95/100 = 100 = B. The base of the new percentage is A (95), not B, so B exceeds A by 5/95 × 100 = 5 5/19%, not by 5%. Simply reversing "95%" into 105% is the usual trap.
+
+Q 52 | qa | Percentage, Profit & Interest
+The marked price of mustard oil is 25% more than its cost price. At what percentage less than the marked price should it be sold to have no profit and no loss?
+(1) 15%
+(2) 20%
+(3) 18%
+(4) 22%
+= 2
+~ Let CP = 100, so MP = 125. For no profit and no loss the selling price must equal the cost price, 100, so the reduction is 125 − 100 = 25 on a marked price of 125. Discount % = 25/125 × 100 = 20%. Shortcut: an increase of r% is cancelled by a decrease of r/(100 + r) × 100 = 25/125 × 100 = 20%. A 25% discount would cause a loss, because the base is now the larger marked price.
+
+Q 53 | qa | Time, Work, Speed & Distance
+A can complete a piece of work in 25 days while B can complete the same work in 30 days. They work on alternate basis, starting with A. Both A and B follow this pattern for 5 days and then A leaves the work. In how many days will B finish the remaining work?
+(1) 24 2/5
+(2) 5 2/5
+(3) 5 3/5
+(4) 24 3/5
+= 1
+~ Take total work = LCM(25, 30) = 150 units: A does 6 units a day and B 5 units a day. In the first 5 days the order is A, B, A, B, A, so A works 3 days and B 2 days: 3 × 6 + 2 × 5 = 28 units. Remaining work = 150 − 28 = 122 units, which B alone finishes in 122/5 = 24 2/5 days. The 5-day options forget that B still has most of the work left.
+
+Q 54 | qa | Time, Work, Speed & Distance
+As part of his journey, a person travels 120 km at 80 km/h, the next 100 km at 40 km/h, and comes back to the starting point at 75 km/h. The average speed of the person throughout the journey (approximately) is:
+(1) 63.46 km/h
+(2) 58.74 km/h
+(3) 68.15 km/h
+(4) 49.58 km/h
+= 1
+~ Average speed = total distance ÷ total time. Going out he covers 120 + 100 = 220 km and comes back the same 220 km, so the distance is 440 km. Time = 120/80 + 100/40 + 220/75 = 1.5 + 2.5 + 2.933 = 6.933 h (exactly 104/15 h). Average speed = 440 ÷ 104/15 = 6600/104 ≈ 63.46 km/h. Averaging the three speeds is wrong because different times are spent at each speed.
+
+Q 55 | qa | Time, Work, Speed & Distance
+8 men can complete a work in 45 days. 8 women can complete the same work in 18 days. In how many days will 5 men and 8 women, together, complete the same work?
+(1) 13 1/5
+(2) 12 4/5
+(3) 14 2/5
+(4) 15 3/5
+= 3
+~ Total work = 8 × 45 = 360 man-days, so one man does 1/360 of the work a day; likewise 8 × 18 = 144 woman-days, so one woman does 1/144 a day. Together 5 men and 8 women do 5/360 + 8/144 = 1/72 + 4/72 = 5/72 of the work a day. Time = 72/5 = 14 2/5 days. Sense check: 8 women alone need 18 days, so adding 5 men must bring the time below 18 days.
+
+Q 56 | qa | Number System & Simplification
+6²⁵ + 6²⁶ + 6²⁷ + 6²⁸ is divisible by:
+(1) 256
+(2) 254
+(3) 255
+(4) 259
+= 4
+~ Take out the smallest power: 6²⁵ + 6²⁶ + 6²⁷ + 6²⁸ = 6²⁵(1 + 6 + 6² + 6³) = 6²⁵(1 + 6 + 36 + 216) = 6²⁵ × 259, so the sum is divisible by 259, the intended answer. Strictly, 6²⁵ = 2²⁵ × 3²⁵ also contains 2⁸ = 256, so 256 divides the sum as well, while 254 and 255 do not. The question therefore has two correct options and SSC keyed 259. (SSC key; some sources differ.)
+
+Q 57 | qa | Data Interpretation & Statistics
+Study the given table and answer the question that follows.
+The table shows the classification of 100 students based on the marks obtained by them in History and Geography in an examination.
+Marks out of 50
+Subject | 40 and above | 30 and above | 20 and above | 10 and above | 0 and above
+History | 9 | 32 | 80 | 92 | 100
+Geography | 4 | 21 | 66 | 81 | 100
+Average (Aggregate) | 7 | 27 | 73 | 87 | 100
+Based on the table, what is the number of students scoring less than 20% marks in aggregate?
+(1) 13
+(2) 11
+(3) 10
+(4) 12
+= 1
+~ The marks are out of 50, so 20% marks = 20% of 50 = 10 marks. The table is cumulative: in the Average (Aggregate) row, 87 students scored 10 and above, and all 100 scored 0 and above. So the students scoring less than 10 marks (less than 20%) in aggregate = 100 − 87 = 13. Reading the History row (100 − 92 = 8) or the Geography row (100 − 81 = 19) answers a different question.
+
+Q 58 | qa | Geometry
+Two concentric circles are of radii 10 cm and 6 cm. Find the length of the chord of the larger circle which touches the smaller circle.
+(1) 8 cm
+(2) 16 cm
+(3) 12 cm
+(4) 9 cm
+= 2
+~ The chord touches the smaller circle, so it is a tangent to it: the smaller radius (6 cm) meets the chord at right angles at its midpoint. In the right triangle formed by the centre, this midpoint and one end of the chord, the hypotenuse is the larger radius, 10 cm. Half-chord = √(10² − 6²) = √64 = 8 cm, so the chord = 2 × 8 = 16 cm. 8 cm is only half the chord.
+
+Q 59 | qa | Trigonometry & Heights
+If sin (a + b) = 1 and cos (a − b) = 1/2, then find a.
+(1) 75°
+(2) 30°
+(3) 15°
+(4) 45°
+= 1
+~ sin 90° = 1, so a + b = 90°. cos 60° = 1/2, so a − b = 60° (taking acute angles). Adding the two equations gives 2a = 150°, so a = 75°; subtracting gives b = 15°. Check: sin (75° + 15°) = sin 90° = 1 and cos (75° − 15°) = cos 60° = 1/2. Option 15° is the value of b, not a.
+
+Q 60 | qa | Time, Work, Speed & Distance
+A train 900 m long is running at 108 km/h. How long will it take to clear a 900 m long platform completely?
+(1) 60 s
+(2) 45 s
+(3) 30 s
+(4) 18 s
+= 1
+~ To clear a platform completely the train must cover its own length plus the platform's length: 900 + 900 = 1800 m. Speed = 108 km/h = 108 × 5/18 = 30 m/s. Time = 1800/30 = 60 s. Using only one length (900/30 = 30 s) is the common mistake; that is only the time for the engine to reach the far end of the platform.
+
+Q 61 | qa | Algebra
+If 7b − 1/(4b) = 7, then what is the value of 16b² + 1/(49b²)?
+(1) 80/49
+(2) 104/7
+(3) 120/7
+(4) 7/2
+= 3
+~ Multiply the given equation by 4/7 to get the pair of terms needed: 4b − 1/(7b) = 4. Square both sides: 16b² − 2 × 4b × 1/(7b) + 1/(49b²) = 16, i.e. 16b² − 8/7 + 1/(49b²) = 16. So 16b² + 1/(49b²) = 16 + 8/7 = 120/7. Check: b ≈ 1.0345 satisfies 7b − 1/(4b) = 7 and gives 16b² + 1/(49b²) ≈ 17.143 = 120/7. 104/7 comes from subtracting 8/7 instead of adding it.
+
+Q 62 | qa | Geometry
+If m∠C=m∠Z and AC=XZ, then which of the following conditions is necessary for ΔABC and ΔXYZ to be congruent?
+(1) AB=AC
+(2) BC=YZ
+(3) AB=XY
+(4) BC=AB
+= 2
+~ One angle and one side are already equal: ∠C = ∠Z and AC = XZ. For SAS congruence the equal angle must lie between the two pairs of equal sides. ∠C is formed by CA and CB, and ∠Z by ZX and ZY, so the second pair needed is BC = YZ; then ΔABC ≅ ΔXYZ by SAS. AB = XY would give two sides and a non-included angle (SSA), which does not guarantee congruence, and AB = AC or BC = AB concern only one triangle.
+
+Q 63 | qa | Geometry
+In the given figure, PAB is a secant and PT is a tangent to the circle from P. If PT = 8 cm, PA = 6 cm and AB = x cm, then the value of x is:
+(1) 14/9
+(2) 1/3
+(3) 14/3
+(4) 4/3
+= 3
+! img/c23s1-q63.png
+~ By the tangent–secant theorem, the square of the tangent from an external point equals the product of the whole secant and its external part: PT² = PA × PB. Here PB = PA + AB = 6 + x, so 8² = 6(6 + x), i.e. 64 = 36 + 6x, which gives 6x = 28 and x = 14/3 cm. Check: 6 × (6 + 14/3) = 6 × 32/3 = 64 = 8². Using PT² = PA × AB would wrongly give 32/3.
+
+Q 64 | qa | Percentage, Profit & Interest
+A shopkeeper offers the following two discount schemes.
+A) Buy 3 get 4 free
+B) Buy 5 get 6 free
+Which scheme has the maximum discount percentage?
+(1) A
+(2) A does not give any discount
+(3) A and B both have the same discount percentage
+(4) B
+= 1
+~ In "buy x get y free" the customer pays for x items but receives x + y, so the discount % = y/(x + y) × 100. Scheme A: pay for 3, get 7, discount = 4/7 × 100 ≈ 57.14%. Scheme B: pay for 5, get 11, discount = 6/11 × 100 ≈ 54.55%. So scheme A gives the bigger discount. Note that B gives more free items (6) but also needs more items to be bought, so its percentage is lower.
+
+Q 65 | qa | Data Interpretation & Statistics
+The following bar chart represents the gross amount (in ₹ lakhs) and total cost (in ₹ lakhs) of a firm.
+In order to make a profit of 25%, what should the gross amount have been (in ₹ [rest of the question cut off on the SSC sheet; editorial completion from the Hindi version: crores) in 2019-2020?]
+(1) 7800
+(2) 8000
+(3) 8250
+(4) 8125
+= 4
+! img/c23s1-q65.png
+~ The end of the question is cut off on SSC's sheet; the bracketed words complete it. In the chart the hatched bars ("Total") show the total cost and the plain bars the gross amount. Profit is reckoned on cost, so for a 25% profit the gross amount must be 125% of the total cost. In 2019-20 the total cost is 6500, so the required gross amount = 6500 × 125/100 = 8125. The actual gross amount that year was 7500, a profit of only about 15.4%; 7800 would give 20%.
+
+Q 66 | qa | Percentage, Profit & Interest
+In what time will ₹10,000 at 4% per annum, produce the same interest as ₹8,000 does in 4 years at 5% simple interest?
+(1) 5 years
+(2) 3 years
+(3) 4 years
+(4) 6 years
+= 3
+~ Simple interest = P × R × T/100. Interest on ₹8,000 at 5% for 4 years = 8000 × 5 × 4/100 = ₹1,600. ₹10,000 at 4% per annum earns 10000 × 4/100 = ₹400 a year, so the time needed = 1600/400 = 4 years. Shortcut: P₁R₁T₁ = P₂R₂T₂ gives 10000 × 4 × T = 8000 × 5 × 4, so T = 160000/40000 = 4 years.
+
+Q 67 | qa | Time, Work, Speed & Distance
+A man, a boy and a woman can finish a work in 10 days, 15 days and 30 days, respectively. In how many days can the work be finished by a man, a woman and a boy when all of them work together?
+(1) 10
+(2) 5
+(3) 8
+(4) 6
+= 2
+~ One day's work: man 1/10, boy 1/15, woman 1/30. Together they do 1/10 + 1/15 + 1/30 = (3 + 2 + 1)/30 = 6/30 = 1/5 of the work a day, so they finish it in 5 days. With LCM units: total work = 30 units, combined rate = 3 + 2 + 1 = 6 units a day, time = 30/6 = 5 days. The answer must be less than 10 days, the time of the fastest worker alone.
+
+Q 68 | qa | Trigonometry & Heights
+If cos θ = √3/2, then tan²θ cos²θ =?
+(1) 1/√3
+(2) 1/4
+(3) 1/2
+(4) √3
+= 2
+~ Since tan θ = sin θ/cos θ, tan²θ cos²θ = sin²θ. With cos θ = √3/2, sin²θ = 1 − cos²θ = 1 − 3/4 = 1/4. Equivalently θ = 30°, and tan²30° × cos²30° = 1/3 × 3/4 = 1/4. Option 1/2 is sin θ itself, not sin²θ, and 1/√3 is tan 30°.
+
+Q 69 | qa | Algebra
+What is the value of (3x³ + 5x²y + 12xy² + 7y³), when x = −4 and y = −1?
+(1) −329
+(2) −359
+(3) −361
+(4) −327
+= 4
+~ Substitute term by term, minding the signs: 3x³ = 3 × (−64) = −192; 5x²y = 5 × 16 × (−1) = −80; 12xy² = 12 × (−4) × 1 = −48; 7y³ = 7 × (−1) = −7. Sum = −192 − 80 − 48 − 7 = −327. Even powers of a negative number are positive (x² = 16, y² = 1) and odd powers stay negative (x³ = −64, y³ = −1).
+
+Q 70 | qa | Ratio, Average & Mixtures
+If the four numbers, 39, 117, 17 and y are in proportion, then find the value of y.
+(1) 49
+(2) 51
+(3) 57
+(4) 85
+= 2
+~ Four numbers a, b, c, d are in proportion when a : b = c : d, i.e. a × d = b × c (product of extremes = product of means). So 39 : 117 = 17 : y gives 39y = 117 × 17 = 1989, and y = 1989/39 = 51. Faster: 39 : 117 = 1 : 3, so y = 3 × 17 = 51. Here y is the fourth proportional to 39, 117 and 17.
+
+Q 71 | qa | Mensuration
+The volume of a sphere of radius 4.2 cm is: (Use π = 22/7)
+(1) 278.234 cm³
+(2) 312.725 cm³
+(3) 297.824 cm³
+(4) 310.464 cm³
+= 4
+~ Volume of a sphere = (4/3)πr³. With r = 4.2 cm, r³ = 4.2 × 4.2 × 4.2 = 17.64 × 4.2 = 74.088 cm³. Volume = 4/3 × 22/7 × 74.088 = 88 × 74.088/21 = 88 × 3.528 = 310.464 cm³. Since 4.2 = 6 × 0.7, the factor 7 cancels neatly with π = 22/7, so the answer comes out exact. The other options are close distractors, so the cube must be worked out carefully.
+
+Q 72 | qa | Algebra
+If (a + b + c) = 16, and (a² + b² + c²) = 90, find the value of (ab + bc + ca).
+(1) 84
+(2) 83
+(3) 82
+(4) 81
+= 2
+~ Use the identity (a + b + c)² = a² + b² + c² + 2(ab + bc + ca). So 16² = 90 + 2(ab + bc + ca), i.e. 256 = 90 + 2(ab + bc + ca). Then 2(ab + bc + ca) = 256 − 90 = 166, and ab + bc + ca = 83. Remember to halve the difference: 166 is the value of 2(ab + bc + ca), not of ab + bc + ca.
+
+Q 73 | qa | Trigonometry & Heights
+If {(3 sin θ − cos θ) / (cos θ + sin θ)} = 1, then the value of cot θ is:
+(1) 3
+(2) 0
+(3) 1
+(4) 2
+= 3
+~ Cross-multiply: 3 sin θ − cos θ = cos θ + sin θ, so 2 sin θ = 2 cos θ, i.e. sin θ = cos θ. Hence cot θ = cos θ/sin θ = 1 (θ = 45°). Another way: divide the numerator and denominator by sin θ to get (3 − cot θ)/(cot θ + 1) = 1, so 3 − cot θ = cot θ + 1 and cot θ = 1. Check with θ = 45°: (3 − 1)/(1 + 1) = 1.
+
+Q 74 | qa | Time, Work, Speed & Distance
+Two runners, Sony and Mony, start running on a circular track of length 200 m at speeds of 18 and 24 km/h, respectively, in the same direction. After how much time from the start will they meet again at the starting point?
+(1) 120 sec
+(2) 110 sec
+(3) 100 sec
+(4) 90 sec
+= 1
+~ They are together at the starting point when each has completed a whole number of laps, i.e. after the LCM of their lap times. Speeds: 18 km/h = 18 × 5/18 = 5 m/s and 24 km/h = 24 × 5/18 = 20/3 m/s. Lap times: 200/5 = 40 s and 200 ÷ 20/3 = 30 s. LCM(40, 30) = 120 s. In 120 s Sony runs 3 laps and Mony 4 laps.
+
+Q 75 | qa | Number System & Simplification
+What will be the remainder when (265)⁴⁰⁸¹+9 is divided by 266?
+(1) 8
+(2) 6
+(3) 1
+(4) 9
+= 1
+~ 265 = 266 − 1, so 265 leaves a remainder of −1 when divided by 266. Hence 265⁴⁰⁸¹ leaves (−1)⁴⁰⁸¹ = −1, because 4081 is odd; in positive terms the remainder is 265. Then 265⁴⁰⁸¹ + 9 leaves −1 + 9 = 8 (or 265 + 9 = 274 = 266 + 8). Option 9 ignores the power, and an even power would have given 1 + 9 = 10.
+
+Q 76 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains an error.
+Neetu have been / waiting for me / since 10 o’clock / in the morning.
+(1) Neetu have been
+(2) in the morning
+(3) since 10 o’clock
+(4) waiting for me
+= 1
+~ In the present perfect continuous tense the auxiliary must agree with the subject. 'Neetu' is a singular proper noun (third person singular), so it takes 'has been', not 'have been': 'Neetu has been waiting for me since 10 o'clock in the morning.' The other segments are correct: 'since' is rightly used with a point of time (10 o'clock), and 'waiting for me' and 'in the morning' need no change.
+
+Q 77 | eng | Vocabulary
+Select the most appropriate ANTONYM of the underlined word.
+Her dog can climb "under" the fence.
+(1) Over
+(2) Sink
+(3) Behind
+(4) Beneath
+= 1
+~ 'Under' means in or to a position below something, so 'climb under the fence' means to get past it by going below it. Its opposite is 'over', meaning above or across the top of something: the dog could climb over the fence. 'Beneath' is a synonym of under, 'behind' means at the back of, and 'sink' is a verb meaning to go down below a surface, so none of them is the opposite.
+
+Q 78 | eng | Spelling
+Select the INCORRECTLY spelt word in the given sentence.
+The village beggars, no longer ill at ease in the gathering of gliterring dignitaries, sat in their assigned rows and joked with vegetarian Brahmin apprentices.
+(1) assigned
+(2) apprentices
+(3) beggars
+(4) gliterring
+= 4
+~ The misspelt word is 'gliterring'; the correct spelling is 'glittering' (g-l-i-t-t-e-r-i-n-g), from the verb glitter, to shine with a bright, shimmering light. It has a double t in the middle and a single r: the stress in 'glitter' falls on the first syllable, so the final r is not doubled before -ing, as in 'offering' and 'entering'. 'Assigned', 'apprentices' and 'beggars' are spelt correctly.
+
+Q 79 | eng | Voice & Narration
+Select the option that expresses the given sentence in passive voice.
+The company's board of directors will announce the financial results at the annual meeting tomorrow.
+(1) The financial results will have been announced by the company's board of directors at the annual meeting tomorrow.
+(2) The financial results are being announced by the company's board of directors at the annual meeting tomorrow.
+(3) The company's board of directors announced the financial results at the annual meeting tomorrow.
+(4) The financial results will be announced by the company's board of directors at the annual meeting tomorrow.
+= 4
+~ The active sentence is in the simple future tense (will announce). In the passive, the object 'the financial results' becomes the subject and the verb becomes will be + past participle: 'The financial results will be announced by the company's board of directors at the annual meeting tomorrow.' Option 1 uses the future perfect (will have been announced), option 2 the present continuous (are being announced), and option 3 is still in active voice and wrongly in the past tense.
+
+Q 80 | eng | Error Spotting & Sentence Improvement
+Select the grammatically correct sentence.
+(1) The participants of the competition are waiting for their turn curiously.
+(2) The participants of the competition has been waiting for their turn curiously.
+(3) A participants of the competition is waiting for their turn curiously.
+(4) The participants of the competition is waiting for their turn curiously.
+= 1
+~ A plural subject takes a plural verb. In 'The participants of the competition' the head noun is 'participants' (plural); the phrase 'of the competition' does not change its number. So the verb must be 'are waiting', and 'their turn' agrees with it. Option 2 uses singular 'has been' with a plural subject, option 3 puts the singular article 'A' before the plural noun 'participants', and option 4 uses singular 'is' with a plural subject.
+
+Q 81 | eng | Vocabulary
+Select the most appropriate ANTONYM of the underlined word in the given sentence.
+Henry is so "servile" that other people take advantage of him.
+(1) Arrogant
+(2) Sheepish
+(3) Bickering
+(4) Cunning
+= 1
+~ 'Servile' means excessively eager to serve or please others, slavishly submissive and lacking self-respect, which is why people take advantage of Henry. Its opposite is 'arrogant', meaning having an exaggerated sense of one's own importance and behaving in a proud, overbearing way. 'Sheepish' means embarrassed or meek, which is close to servile, 'bickering' means quarrelling over petty things, and 'cunning' means clever in a deceitful way.
+
+Q 82 | eng | Idioms & One-word Substitution
+Select the option that can be used as a one-word substitute for the given group of words.
+A thing fit to eat.
+(1) Eligible
+(2) Digestible
+(3) Curable
+(4) Edible
+= 4
+~ 'Edible' means fit or safe to be eaten (Latin edere, to eat), as in 'edible mushrooms'; its opposite is inedible. 'Eligible' means qualified or entitled to be chosen, 'digestible' means easily broken down by the body (a food may be edible yet hard to digest), and 'curable' means able to be cured. So a thing fit to eat is edible.
+
+Q 83 | eng | Idioms & One-word Substitution
+Select the most appropriate meaning of the given idiom.
+Lily-livered
+(1) Brave
+(2) Comical
+(3) Not brave
+(4) Naughty
+= 3
+~ 'Lily-livered' means cowardly, lacking courage. The expression comes from the old belief that the liver was the seat of courage: a pale, bloodless liver, white as a lily, was thought to show a lack of courage. So the meaning is 'not brave'. 'Brave' is the exact opposite, while 'comical' (funny) and 'naughty' (badly behaved) are unrelated. Similar expressions are chicken-hearted and faint-hearted.
+
+Q 84 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Zealous
+(1) Enthusiastic
+(2) Detached
+(3) Apathetic
+(4) Indifferent
+= 1
+~ 'Zealous' means full of zeal, that is, showing great energy and enthusiasm in pursuit of a cause or objective, as in 'a zealous supporter of reform'. Its synonym is 'enthusiastic'. 'Detached', 'apathetic' and 'indifferent' all mean showing little or no interest or concern, so they are opposites of zealous rather than synonyms.
+
+Q 85 | eng | Vocabulary
+Select the most appropriate option that can substitute the underlined word in the given sentence.
+She had an ability to "persuade" others.
+(1) halt
+(2) suppress
+(3) outrage
+(4) impress
+= 4
+~ To 'persuade' is to make someone believe or do something by reasoning or appeal. None of the options is an exact synonym, but 'impress' comes closest: to impress others is to influence them by winning their admiration and respect, and to impress an idea on someone is to fix it firmly in their mind. 'Halt' means to stop, 'suppress' means to put down by force or hold back, and 'outrage' means to make very angry, none of which carries the sense of influencing others.
+
+Q 86 | eng | Vocabulary
+Select the most appropriate option that can substitute the underlined segment in the given sentence.
+We must remember that what we teach our children is what we "inculcate" in them.
+(1) endanger
+(2) inspire
+(3) instil
+(4) import
+= 3
+~ To 'inculcate' is to fix an idea, attitude or habit in someone's mind by persistent instruction or repetition, as parents and teachers do with children. Its exact substitute is 'instil' (instill in American English), meaning to establish an idea or feeling gradually but firmly in a person's mind. 'Inspire' means to fill someone with the urge or ability to do something, 'endanger' means to put at risk, and 'import' means to bring goods in from another country.
+
+Q 87 | eng | Voice & Narration
+Select the option that expresses the given sentence in passive voice.
+He won’t receive any better choice than this from anywhere.
+(1) Any better choice won’t be received by him than this from anywhere.
+(2) Any better choice wouldn’t have received by him than this from anywhere.
+(3) Any better choice shouldn’t be received by him than this from anywhere.
+(4) Any better choice won’t have been be received by him than this from anywhere.
+= 1
+~ The active sentence is a negative in the simple future (won't = will not + receive) with the object 'any better choice'. In the passive the object becomes the subject and the verb becomes will not be + past participle: 'Any better choice won't be received by him than this from anywhere.' Option 2 uses 'wouldn't have received', which lacks 'been' and is not passive, option 3 changes the modal to 'shouldn't', and option 4 has the ungrammatical 'have been be received'.
+
+Q 88 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Feeble
+(1) Unheedful
+(2) Strong
+(3) Weak
+(4) Baneful
+= 3
+~ 'Feeble' means lacking physical strength, especially through age or illness, or lacking force and effectiveness, as in 'a feeble excuse'. Its synonym is 'weak'. 'Strong' is its opposite, 'unheedful' means careless or not paying attention (heedless), and 'baneful' means harmful or destructive, so neither of the last two is related in meaning to feeble.
+
+Q 89 | eng | Spelling
+Select the correct spelling of the underline word.
+They denied having any "associasion" with the terrorists.
+(1) asociation
+(2) asocciation
+(3) assosiation
+(4) association
+= 4
+~ The correct spelling is 'association' (a-s-s-o-c-i-a-t-i-o-n), the noun from the verb 'associate', meaning a connection or link with someone. It has a double s after the first a, a c (not s) in the third syllable, and the ending -tion. The printed 'associasion' wrongly ends in -sion, 'asociation' has a single s, 'asocciation' has a single s and a double c, and 'assosiation' replaces the c with s.
+
+Q 90 | eng | Idioms & One-word Substitution
+Select the most appropriate meaning of the underlined idiom in the given sentence.
+Pooja tried to explain the problem, but soon she "tied herself up in knots".
+(1) Be forced to explain your actions and (probably) punished
+(2) Become very confused when you are trying to explain something
+(3) Make no progress in an argument or discussion
+(4) Won’t modify an opinion or agree to even small changes that another person wants
+= 2
+~ To 'tie oneself (up) in knots' means to become very confused and muddled while trying to explain or deal with something, as Pooja did when her explanation of the problem only made things more confusing. Option 1 is the sense of being called to account, option 3 is the sense of going round in circles in a discussion, and option 4 is the sense of refusing to budge an inch, so they are meanings of other idioms.
+
+Q 91 | eng | Sentence Arrangement
+Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.
+A. In Bihar and Central India, in particular, every district had smelters that used local deposits of ore to produce iron which was widely used for the manufacture of implements and tools of daily use.
+B. The smelting was done by men while women worked on the bellows, pumping air that kept the charcoal burning.
+C. But iron smelting in India was extremely common till the end of the nineteenth century.
+D. Production of Wootz steel required a highly specialised technique of refining iron.
+(1) ACDB
+(2) DCAB
+(3) BCDA
+(4) CBDA
+= 2
+~ D opens with the highly specialised technique needed to produce Wootz steel. C, beginning with 'But', contrasts this with ordinary iron smelting, which was extremely common in India till the end of the nineteenth century. A gives the example of Bihar and Central India, where every district had smelters, and B, with 'The smelting', describes how that smelting was done, men at the furnace and women at the bellows. So the order is DCAB.
+
+Q 92 | eng | Sentence Arrangement
+Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.
+A. He repeated the experiment, increasing the amount until he had weighed up to a thousand pounds.
+B. During the spring of 1717, the iron foundries in a remote district were often visited by a thin, middle-aged man with a notebook.
+C. Three cauldrons were next prepared under his directions.
+D. He would weigh out two pounds of iron, have them heated till they were red-hot and then weigh them again.
+(1) BDAC
+(2) ABDC
+(3) BCAD
+(4) CABD
+= 1
+~ B opens the paragraph by setting the time and place and introducing the person, a thin, middle-aged man visiting iron foundries in the spring of 1717. D tells what he did (weighed two pounds of iron, heated it red-hot and weighed it again). A follows because 'He repeated the experiment' refers to D, now with larger amounts up to a thousand pounds. C ends with the next step, signalled by 'next': three cauldrons were prepared. So the order is BDAC.
+
+Q 93 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+She is ______ a peacock in the blue satin saree.
+(1) very beautiful as
+(2) so beautiful as
+(3) as beautiful as
+(4) beautiful like
+= 3
+~ A comparison of equality uses the pattern as + adjective + as: 'She is as beautiful as a peacock in the blue satin saree.' Similes such as 'as brave as a lion' follow the same pattern. 'So ... as' is used mainly in negative comparisons (not so beautiful as), 'very beautiful as' is ungrammatical, and 'beautiful like' drops the first 'as' and is not the standard form of the comparison.
+
+Q 94 | eng | Sentence Arrangement
+Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.
+A. The top band is made of saffron, which symbolises power and courage.
+B. The constituent assembly adopted our national flag, Tiranga, which means tricolour, on 22 July 1947.
+C. As a symbol of nationalism and freedom, it is fashioned from khadi, which is domestically spun Indian cotton.
+D. It features three horizontal stripes that are all the same width.
+(1) CBAD
+(2) CBDA
+(3) BCDA
+(4) BDCA
+= 3
+~ B introduces the topic: the Constituent Assembly adopted the national flag, the Tiranga, on 22 July 1947. C refers to the flag as 'it' and describes the material, khadi, as a symbol of nationalism and freedom. D then describes the design, three horizontal stripes of equal width, and A picks out the first of these stripes, the top saffron band. So the order is BCDA. CBAD and CBDA fail because the 'it' in C needs the flag to be named first, and BDCA fails because A, on the top band, must directly follow D's three stripes.
+
+Q 95 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate homonym to fill in the blank.
+The hunter dogs followed the hyena’s ______.
+(1) sense
+(2) scent
+(3) cense
+(4) cents
+= 2
+~ 'Scent' is the characteristic smell of an animal, or the trail of smell it leaves behind, which hunting dogs track: 'The hunter dogs followed the hyena's scent.' Sense, scent, cense and cents sound alike or nearly alike but differ in spelling and meaning. 'Sense' is a faculty such as sight or hearing, or good judgement, 'cense' means to perfume with burning incense, and 'cents' are coins worth one-hundredth of a dollar.
+
+Q 96 | eng | Fill in the Blanks & Cloze Test
+In the following passage some words have been deleted. Fill in the blanks with the help of the alternatives given. Select the most appropriate option for each number.
+Human life is (1) ______ a unique blessing, which in turn depends on the (2) ______ of the Self. He who is not aware of the Self can neither have peace nor can he foster peaceful co-existence. We have to link our soul with God and body with the physical world for substance. (3) ______ the formless God is invisible to the naked eye, our mind often wanders wherever it goes. (4) ______, we are unable to develop any love for the Divine. And religion like the white light of heavens (5) ______ multi-coloured fragmentations by the prisms of men and loses its gravity. Instead of uniting, it becomes a major dividing force. French philosopher Tail hard de Chardin, thinking deeply on meaning of our existence and relationship with the Divine, expounds, “we are not human beings having a spiritual experience, we are spiritual beings having a human experience”.
+Select the most appropriate option to fill in blank no. 1.
+(1) considering
+(2) to consider
+(3) considered
+(4) consider
+= 3
+~ The blank needs a passive form after 'is': 'Human life is considered a unique blessing', meaning that human life is regarded as a unique blessing. 'Is considered' is the simple present passive (is + past participle). 'Considering' and 'to consider' are active forms that would make human life the one doing the considering (the passive infinitive would be 'is to be considered'), and the base form 'consider' cannot follow 'is'.
+
+Q 97 | eng | Fill in the Blanks & Cloze Test
+In the following passage some words have been deleted. Fill in the blanks with the help of the alternatives given. Select the most appropriate option for each number.
+Human life is (1) ______ a unique blessing, which in turn depends on the (2) ______ of the Self. He who is not aware of the Self can neither have peace nor can he foster peaceful co-existence. We have to link our soul with God and body with the physical world for substance. (3) ______ the formless God is invisible to the naked eye, our mind often wanders wherever it goes. (4) ______, we are unable to develop any love for the Divine. And religion like the white light of heavens (5) ______ multi-coloured fragmentations by the prisms of men and loses its gravity. Instead of uniting, it becomes a major dividing force. French philosopher Tail hard de Chardin, thinking deeply on meaning of our existence and relationship with the Divine, expounds, “we are not human beings having a spiritual experience, we are spiritual beings having a human experience”.
+Select the most appropriate option to fill in blank no. 2.
+(1) witness
+(2) known
+(3) awareness
+(4) aware
+= 3
+~ After the article 'the' and before 'of the Self' the blank needs a noun. 'Awareness', meaning knowledge or consciousness of something, fits, and the next sentence confirms it: 'He who is not aware of the Self can neither have peace...'. 'Aware' is an adjective, 'known' is a past participle, and 'witness' is a noun but means a person who sees an event, which makes no sense with 'of the Self'.
+
+Q 98 | eng | Fill in the Blanks & Cloze Test
+In the following passage some words have been deleted. Fill in the blanks with the help of the alternatives given. Select the most appropriate option for each number.
+Human life is (1) ______ a unique blessing, which in turn depends on the (2) ______ of the Self. He who is not aware of the Self can neither have peace nor can he foster peaceful co-existence. We have to link our soul with God and body with the physical world for substance. (3) ______ the formless God is invisible to the naked eye, our mind often wanders wherever it goes. (4) ______, we are unable to develop any love for the Divine. And religion like the white light of heavens (5) ______ multi-coloured fragmentations by the prisms of men and loses its gravity. Instead of uniting, it becomes a major dividing force. French philosopher Tail hard de Chardin, thinking deeply on meaning of our existence and relationship with the Divine, expounds, “we are not human beings having a spiritual experience, we are spiritual beings having a human experience”.
+Select the most appropriate option to fill in blank no. 3.
+(1) Since
+(2) From
+(3) As per
+(4) For
+= 1
+~ The clause after the blank gives the reason for the main clause: because the formless God cannot be seen with the naked eye, our mind wanders wherever it goes. 'Since', used as a conjunction meaning 'because', introduces such a reason clause at the start of a sentence. 'From' and 'As per' (according to) are prepositions and cannot introduce a clause, and 'For' meaning 'because' cannot begin a sentence with the reason placed before the main clause.
+
+Q 99 | eng | Fill in the Blanks & Cloze Test
+In the following passage some words have been deleted. Fill in the blanks with the help of the alternatives given. Select the most appropriate option for each number.
+Human life is (1) ______ a unique blessing, which in turn depends on the (2) ______ of the Self. He who is not aware of the Self can neither have peace nor can he foster peaceful co-existence. We have to link our soul with God and body with the physical world for substance. (3) ______ the formless God is invisible to the naked eye, our mind often wanders wherever it goes. (4) ______, we are unable to develop any love for the Divine. And religion like the white light of heavens (5) ______ multi-coloured fragmentations by the prisms of men and loses its gravity. Instead of uniting, it becomes a major dividing force. French philosopher Tail hard de Chardin, thinking deeply on meaning of our existence and relationship with the Divine, expounds, “we are not human beings having a spiritual experience, we are spiritual beings having a human experience”.
+Select the most appropriate option to fill in blank no. 4.
+(1) As a result
+(2) As a reaction
+(3) Causing
+(4) As a reason
+= 1
+~ The blank links a cause and its effect: our mind wanders because God is invisible, and as a consequence we are unable to develop any love for the Divine. 'As a result' introduces such a consequence. 'As a reason' would wrongly present the sentence as the cause, 'As a reaction' suggests a response to someone's action, and 'Causing' is a participle that cannot be used to open the sentence followed by a comma and a new clause.
+
+Q 100 | eng | Fill in the Blanks & Cloze Test
+In the following passage some words have been deleted. Fill in the blanks with the help of the alternatives given. Select the most appropriate option for each number.
+Human life is (1) ______ a unique blessing, which in turn depends on the (2) ______ of the Self. He who is not aware of the Self can neither have peace nor can he foster peaceful co-existence. We have to link our soul with God and body with the physical world for substance. (3) ______ the formless God is invisible to the naked eye, our mind often wanders wherever it goes. (4) ______, we are unable to develop any love for the Divine. And religion like the white light of heavens (5) ______ multi-coloured fragmentations by the prisms of men and loses its gravity. Instead of uniting, it becomes a major dividing force. French philosopher Tail hard de Chardin, thinking deeply on meaning of our existence and relationship with the Divine, expounds, “we are not human beings having a spiritual experience, we are spiritual beings having a human experience”.
+Select the most appropriate option to fill in blank no. 5.
+(1) break into
+(2) breaks to
+(3) break from
+(4) breaks into
+= 4
+~ The subject 'religion' is singular, so the verb must be singular, 'breaks', just like 'loses' later in the same sentence. 'Break into' means to split into parts, as white light breaks into the colours of the spectrum when it passes through a prism; likewise religion 'breaks into multi-coloured fragmentations by the prisms of men'. 'Break into' and 'break from' lack the singular -s, and 'breaks to' uses the wrong preposition.

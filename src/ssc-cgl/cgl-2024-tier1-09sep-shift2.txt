@@ -1,0 +1,1003 @@
+# SSC Combined Graduate Level Examination 2024, Tier-I, held 9 September 2024, Shift 2 (12:30 PM). 100 questions, 200 marks, 60 minutes.
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via AglaSem); answers are the options SSC ticked as correct on that sheet (answer-key stage). The Hindi text is from a second candidate's sheet of the same exam, with the options put in the English order. Explanations by Learn with Anil.
+
+Q 1 | rea | Non-verbal Reasoning
+How many triangles are there in the given figure?
+(1) 4
+(2) 6
+(3) 3
+(4) 5
+= 1
+! img/c24s2-q1.png
+~ Name the square's corners top T, left L, bottom B and right R. The line TB splits the square into two triangles, TLB and TBR. The short vertical line inside TLB cuts off a small triangle at corner L. Below B, side LB is extended and a vertical line drops from side BR, forming one more small triangle. The semicircle on TR and the strip between the two vertical lines are not triangles, and no other three lines meet to close a triangle. Total = 4.
+
+Q 2 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/c24s2-q2.png
+~ The mirror MN stands vertically to the right, so the image is a left-right reversal: the letters appear in reverse order and each letter is flipped sideways. MJXWU therefore becomes U W X J M. U, W, X and M are symmetrical about a vertical axis and look unchanged, but J turns into a back-to-front J (hook opening to the right). Option 4 shows exactly this. The other options put M in place of W, distort the M, or leave the J unreversed.
+
+Q 3 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown below.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/c24s2-q3.png
+~ With a vertical mirror on the right, the order of the characters is reversed and each one is laterally inverted. 9 / 3 > 4 2 is seen as 2 4 > 3 / 9 written back to front: the 2 and 4 are reversed, '>' becomes '<', the 3 opens to the left, '/' becomes '\' and the 9 is reversed. Option 2 shows all of these. Options 1 and 4 keep '/' unchanged (option 1 also keeps the 3; option 4 has a 6 for the reversed 9), and option 3 turns 2 and 4 upside down.
+
+Q 4 | rea | Analogy & Classification
+Select the triad in which the numbers are related in the same way as are the numbers of the following triads.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g., 13 – Operations on 13 such as adding/deleting/multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(2, 3, 17)
+(5, 2, 21)
+(1) (3, 4, 23)
+(2) (5, 6, 72)
+(3) (2, 5, 42)
+(4) (1, 4, 17)
+= 1
+~ The rule is (first number × second number) + 11 = third number. Check: 2 × 3 + 11 = 17 and 5 × 2 + 11 = 21. Apply it to the options: 3 × 4 + 11 = 23, which matches (3, 4, 23). For the others, 5 × 6 + 11 = 41 (not 72), 2 × 5 + 11 = 21 (not 42) and 1 × 4 + 11 = 15 (not 17). So only (3, 4, 23) follows the same rule.
+
+Q 5 | rea | Series
+Select the option that represents the letters that when placed from left to right in the blanks below will complete the given letter series.
+N _ B A N A _ A _ A N A N A B _ N A N A B A _ A N A
+(1) ANANB
+(2) NANAB
+(3) ANABN
+(4) ANBAN
+= 4
+~ Putting A, N, B, A, N in the blanks gives NABANA NABANA NABANA NABANA NA, i.e. the block "NABANA" repeated. The blanks fall at the 2nd letter of the first block (A), the 1st and 3rd letters of the second block (N, B), the 4th letter of the third block (A) and the 5th letter of the fourth block (N). Any other option breaks the repeating block, for example ANANB puts A where B is needed.
+
+Q 6 | rea | Coding-Decoding
+In a certain code language, ‘let it go’ is coded as ‘vc nt ap’ and ‘this is it’ is coded as ‘mq vc lh’. What is the code for ‘it’ in that language?
+(1) nt
+(2) lh
+(3) vc
+(4) mq
+= 3
+~ Compare the two sentences. The only word common to 'let it go' and 'this is it' is 'it', and the only code common to 'vc nt ap' and 'mq vc lh' is 'vc'. So 'it' is coded as 'vc'; the position of a code need not match the position of its word. The codes 'nt' and 'ap' stand for 'let' and 'go', while 'mq' and 'lh' stand for 'this' and 'is'.
+
+Q 7 | rea | Syllogism & Statements
+In this question, three statements are given, followed by three conclusions numbered I, II and III. Assuming the statements to be true, even if they seem to be at variance with commonly known facts, decide which of the conclusions logically follow(s) from the statements.
+Statements:
+All fans are brown.
+Some brown are chairs.
+Some chairs are plastic.
+Conclusions:
+I. Some brown are fans.
+II. Some chairs are brown.
+III. No chair is plastic.
+(1) Only conclusions II and III follow.
+(2) Only conclusion III follows.
+(3) None of the conclusions follows.
+(4) Only conclusions I and II follow.
+= 4
+~ Conclusion I: "All fans are brown" can be converted to "Some brown are fans", so I follows. Conclusion II: "Some brown are chairs" converts directly to "Some chairs are brown", so II follows. Conclusion III, "No chair is plastic", contradicts the statement "Some chairs are plastic", so it cannot follow. Hence only conclusions I and II follow.
+
+Q 8 | rea | Non-verbal Reasoning
+Select the figure from among the given options that can replace the question mark (?) and logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/c24s2-q8.png
+~ At each step the four corner symbols move one corner clockwise, and the symbol that reaches the top-left corner is turned upside down (arrow up to down, P to b, ▽ to △). The central symbol is alternately upright and inverted. So in the fifth figure A moves to the top-left and becomes ∀, △ goes to the top-right, b to the bottom-right, the down-arrow to the bottom-left, and the central symbol is upright. Option 1 matches; option 4 has an up-arrow, and options 2 and 3 keep A upright.
+
+Q 9 | rea | Blood Relations & Directions
+In a certain code language,
+R + T means ‘R is the sister of T’.
+R − T means ‘R is the father of T’.
+R * T means ‘R is the wife of T’.
+R ÷ T means ‘R is the mother of T’.
+Based on the above, how is F related to C if ‘A + B − C ÷ D * E − F ÷ G’?
+(1) Wife
+(2) Daughter
+(3) Daughter’s daughter
+(4) Mother
+= 3
+~ Decode step by step: B is the father of C; C is the mother of D; D is the wife of E; E is the father of F; F is the mother of G. Since D is E's wife and E is F's father, D is F's mother. F is the mother of G, so F is female, a daughter of D. D (a wife, hence female) is C's daughter. So F is C's daughter's daughter, i.e. C's granddaughter.
+
+Q 10 | rea | Analogy & Classification
+Select the word-pair that best represents a similar relationship to the one expressed in the pair of words given below.
+(The words must be considered as meaningful English words and must NOT be related to each other based on the number of letters/number of consonants/vowels in the word)
+Egypt : Nile
+(1) South Korea : Mekong
+(2) Brazil : Colorado
+(3) Russia : Mississippi
+(4) Myanmar : Irrawaddy
+= 4
+~ The Nile is the principal river of Egypt, flowing through the length of the country. In the same way, the Irrawaddy is Myanmar's main river, flowing from north to south through the country into the Andaman Sea. The other pairs are wrong: the Mekong flows through China, Myanmar, Laos, Thailand, Cambodia and Vietnam, not South Korea; the Colorado flows through the USA and Mexico, not Brazil; and the Mississippi is in the USA, not Russia.
+
+Q 11 | rea | Coding-Decoding
+In a certain code language, ‘It’s your life’ is written as ‘Ao Bo Co’ and ‘It’s your food’ is written as ‘Ba Co Bo’. How will ‘food’ be written in that language?
+(1) Ba
+(2) Bo
+(3) Ao
+(4) Co
+= 1
+~ The words 'It’s' and 'your' occur in both sentences, and the codes common to both are 'Bo' and 'Co', so these two words take Bo and Co (in some order). The remaining word of the first sentence, 'life', must be 'Ao'. The remaining word of the second sentence, 'food', must therefore be 'Ba'. Bo and Co cannot be 'food' because they appear in both sentences.
+
+Q 12 | rea | Miscellaneous Reasoning
+The position of how many letters will change, if each of the letters in the word ‘SYSTEM’ is arranged in the English alphabetical order?
+(1) Three
+(2) Five
+(3) Four
+(4) Six
+= 2
+~ Arrange the letters of SYSTEM alphabetically: E, M, S, S, T, Y. Compare position by position with S, Y, S, T, E, M: 1st S becomes E (changes), 2nd Y becomes M (changes), 3rd S stays S (no change), 4th T becomes S (changes), 5th E becomes T (changes), 6th M becomes Y (changes). Only the third position keeps the same letter, so the positions of five letters change.
+
+Q 13 | rea | Non-verbal Reasoning
+Identify the figure given in the options which when put in place of the question mark (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/c24s2-q13.png
+~ The arrow, with a double bar at its tail, turns 45° anticlockwise at every step: it points up, then up-left, then left, then down-left. One more 45° anticlockwise turn makes it point straight down, with the double bar at the top. Option 2 shows this. Option 4 simply repeats the first figure (pointing up), while option 1 (pointing right) and option 3 (pointing down-right) would need turns of 135° and 90° instead of 45°.
+
+Q 14 | rea | Series
+Select the number from among the given options that can replace the question mark (?) in the following series.
+99, 123, 150, 180, 213, ?
+(1) 248
+(2) 258
+(3) 259
+(4) 249
+= 4
+~ Find the differences between consecutive terms: 123 − 99 = 24, 150 − 123 = 27, 180 − 150 = 30 and 213 − 180 = 33. The difference increases by 3 each time, so the next difference is 36. The missing term is 213 + 36 = 249. 248 is one short, and 258 or 259 would need a jump of 45 or 46, which does not fit the pattern.
+
+Q 15 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. You have to decide which conclusion(s) logically follow(s) from the given statements
+Statements:
+No river is a mountain.
+Some rivers are animals.
+Some birds are mountains.
+Conclusions:
+I: No animal is a mountain.
+II: No river is a bird.
+(1) Both conclusions (I) and (II) follow
+(2) Neither conclusion (I) nor (II) follows
+(3) Only conclusion (I) follows
+(4) Only conclusion (II) follows
+= 2
+~ Only the animals that are rivers are known not to be mountains; other animals may or may not be mountains, so "No animal is a mountain" is not certain and I does not follow. Likewise, only the birds that are mountains are known not to be rivers; other birds may be rivers, so "No river is a bird" is not certain and II does not follow. Hence neither conclusion follows.
+
+Q 16 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /deleting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(18, 378, 7)
+(14, 210, 5)
+(1) (17, 272, 8)
+(2) (17, 204, 6)
+(3) (23, 230, 5)
+(4) (15, 405, 9)
+= 4
+~ The middle number equals first × third × 3: 18 × 7 × 3 = 378 and 14 × 5 × 3 = 210. Check the options: 15 × 9 × 3 = 405, which matches (15, 405, 9). The others use × 2 instead: 17 × 8 × 2 = 272, 17 × 6 × 2 = 204 and 23 × 5 × 2 = 230, while the rule would give 408, 306 and 345. So (15, 405, 9) is related in the same way.
+
+Q 17 | rea | Analogy & Classification
+Select the triad in which the numbers are related in the same way as are the numbers of the given triads.
+(16, 33, 67), (19, 39, 79)
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /deleting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(1) (22, 45, 91)
+(2) (14, 27, 53)
+(3) (18, 36, 80)
+(4) (21, 45, 90)
+= 1
+~ Each number is twice the previous one plus 1: 16 × 2 + 1 = 33 and 33 × 2 + 1 = 67; 19 × 2 + 1 = 39 and 39 × 2 + 1 = 79. In (22, 45, 91): 22 × 2 + 1 = 45 and 45 × 2 + 1 = 91, so it fits. (14, 27, 53) follows "× 2 − 1" instead, and (18, 36, 80) and (21, 45, 90) follow neither pattern.
+
+Q 18 | rea | Analogy & Classification
+The same operation(s) are followed in all the given number pairs except one. Find that odd number pair.
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /deleting /multiplying etc., to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(1) 15 : 48
+(2) 12 : 39
+(3) 13 : 42
+(4) 11 : 35
+= 4
+~ In the regular pairs the second number is the first × 3 + 3, i.e. 3 × (first + 1): 15 × 3 + 3 = 48, 12 × 3 + 3 = 39 and 13 × 3 + 3 = 42. For 11 the rule gives 11 × 3 + 3 = 36, but the pair shows 35. So 11 : 35 does not follow the common operation and is the odd number pair.
+
+Q 19 | rea | Non-verbal Reasoning
+A paper is folded and cut as shown below. How will it appear when unfolded?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/c24s2-q19.png
+~ The sheet is folded right to left and then top to bottom, so unfold in reverse. The small square cut at the corner where both folds meet (the centre of the sheet) opens into one square in the middle. The rectangle at the bottom edge touching the vertical fold opens into one long rectangle at the bottom, and opening the other fold copies it to the top. The oval near the outer edge appears near all four corners. Option 4 shows a central square, long rectangles at top and bottom and four ovals.
+
+Q 20 | rea | Non-verbal Reasoning
+A square sheet of paper is folded along the dotted lines successively in the directions shown and is then punched in the last. How would the paper look when unfolded?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/c24s2-q20.png
+~ The sheet is folded top half down, then left half over to the right, leaving the bottom-right quarter with four layers. One hole is punched near the centre of the sheet and one near the bottom-right corner. Each hole passes through all four layers, so unfolding gives 2 × 4 = 8 holes, symmetrical about both fold lines: four around the centre and one near each corner. Only option 2 shows this pattern; the others have too few holes or holes only along a diagonal.
+
+Q 21 | rea | Analogy & Classification
+Three of the following four letter-cluster pairs are alike in a certain way and thus form a group. Which is the letter-cluster pair that does NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their positions in the letter-cluster.)
+(1) EJ - OT
+(2) KP - UZ
+(3) PF - OI
+(4) CH - MR
+= 3
+~ Use alphabet positions. EJ - OT: E(5), J(10), O(15), T(20); KP - UZ: K(11), P(16), U(21), Z(26); CH - MR: C(3), H(8), M(13), R(18). In each, every letter is 5 places after the one before it. In PF - OI: P(16), F(6), O(15), I(9), so the +5 pattern breaks completely. Hence PF - OI is the pair that does not belong to the group.
+
+Q 22 | rea | Mathematical Operations
+What will come in place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+1604 × 4 − 525 ÷ 5 + 73 = ?
+(1) 2953
+(2) 2935
+(3) 2539
+(4) 2395
+= 1
+~ After interchanging the signs the expression becomes 1604 ÷ 4 + 525 × 5 − 73. By BODMAS, do the division and multiplication first: 1604 ÷ 4 = 401 and 525 × 5 = 2625. Then 401 + 2625 − 73 = 3026 − 73 = 2953. The other options use the same digits in a different order, so careful arithmetic is what decides the answer.
+
+Q 23 | rea | Series
+Select the letter-cluster from among the given options that can replace the question mark (?) to complete the given series.
+BVTO, DTVM, ?, HPZI, JNBG
+(1) RFXK
+(2) RXFK
+(3) FKXR
+(4) FRXK
+= 4
+~ Take each letter position separately. First letters B, D, _, H, J go up by 2, so the missing one is F. Second letters V, T, _, P, N go down by 2, giving R. Third letters T, V, _, Z, B go up by 2 (Z + 2 wraps round to B), giving X. Fourth letters O, M, _, I, G go down by 2, giving K. So the missing cluster is FRXK.
+
+Q 24 | rea | Series
+Select the option that can replace the question mark (?) in the following series.
+VO39, TM35, RK31, PI27, ?
+(1) OH24
+(2) MG22
+(3) NG23
+(4) MH24
+= 3
+~ The first letters V, T, R, P move back 2 places each time, so the next is N. The second letters O, M, K, I also move back 2 places, giving G. The numbers 39, 35, 31, 27 decrease by 4, giving 23. So the next term is NG23. MG22 has the wrong first letter and number, while MH24 and OH24 fit none of the three patterns.
+
+Q 25 | rea | Mathematical Operations
+What will come in the place of ‘?’ in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+4 ÷ 6 + 91 × 7 − 5 = ?
+(1) 12
+(2) 21
+(3) 16
+(4) 17
+= 3
+~ Interchanging the signs gives 4 × 6 − 91 ÷ 7 + 5. Apply BODMAS: first 4 × 6 = 24 and 91 ÷ 7 = 13, then work left to right with subtraction and addition: 24 − 13 + 5 = 11 + 5 = 16. Swapping only one pair of signs, or adding before subtracting, gives a wrong value, so both interchanges and the order of operations matter.
+
+Q 26 | geo | Indian Geography
+In which part of India does the hot wind ‘Loo’ blow?
+(1) South and Southwestern
+(2) East and Northeastern
+(3) West and Southwestern
+(4) North and Northwestern
+= 4
+~ The loo is a strong, gusty, hot and dry wind that blows during the day over north and north-western India (Punjab, Haryana, Rajasthan, Delhi, Uttar Pradesh and Bihar) in May and June, before the monsoon arrives. It raises day temperatures to 45°C or more and can cause heat stroke. Evening dust storms in the north-west and the kalbaisakhi thunderstorms of West Bengal are other features of India's hot weather season, while the south and east stay more humid.
+
+Q 27 | ih | Medieval India
+The first southern campaign of Alauddin Khilji in 1307-08 AD was led to which of the following regions?
+(1) Madura
+(2) Warangal
+(3) Dwar Samudra
+(4) Devagiri
+= 4
+~ Alauddin Khalji's southern campaigns were led by his general Malik Kafur. The first, in 1307–08, was against the Yadava king Ramachandra Deva of Devagiri, who had stopped paying tribute; he submitted, was taken to Delhi and sent back as a vassal. Kafur then attacked Warangal of the Kakatiyas (1309–10), Dwarasamudra of the Hoysalas (1310–11) and the Pandya lands around Madurai (1311). Alauddin himself had raided Devagiri earlier, in 1296, before becoming sultan.
+
+Q 28 | geo | Environment & Ecology
+Which of the following can be represented as a functional unit of nature?
+(1) Ecosystem
+(2) Humans
+(3) Vehicles
+(4) Plants
+= 1
+~ NCERT describes an ecosystem as a functional unit of nature, where living organisms interact among themselves and with the surrounding physical environment. Its biotic parts (producers, consumers, decomposers) and abiotic parts work together through productivity, decomposition, energy flow and nutrient cycling. The term was coined by A.G. Tansley in 1935. Humans and plants are only components of an ecosystem, and vehicles are not natural units at all.
+
+Q 29 | geo | Indian Geography
+At what latitude does the easterly jet stream blow over peninsular India during the summer months?
+(1) 30°N
+(2) 24°N
+(3) 28°N
+(4) 14°N
+= 4
+~ In summer the subtropical westerly jet stream shifts north of the Himalayas with the apparent movement of the sun. An easterly jet stream, the tropical easterly jet, then blows over peninsular India at about 14°N, as the NCERT geography textbook states, and it is linked to the onset and strength of the south-west monsoon. In winter the westerly jet lies south of the Himalayas and steers western disturbances into north-western India.
+
+Q 30 | cur | Sports
+The inaugural match of the Women Premier League 2023 cricket was played in which of the following venues?
+(1) Chennai
+(2) Kolkata
+(3) Delhi
+(4) Mumbai
+= 4
+~ The first season of the BCCI's Women's Premier League (WPL) in 2023 was played entirely in Mumbai, at the DY Patil Stadium in Navi Mumbai and the Brabourne Stadium. In the opening match on 4 March 2023 at the DY Patil Stadium, Mumbai Indians, captained by Harmanpreet Kaur, beat Gujarat Giants by 143 runs. Mumbai Indians went on to win the first title by beating Delhi Capitals in the final at the Brabourne Stadium.
+
+Q 31 | sci | Chemistry
+When electricity is passed through water, what kind of chemical reaction occurs?
+(1) Decomposition
+(2) Double displacement
+(3) Combination
+(4) Displacement
+= 1
+~ An electric current passed through water (with a little acid or salt added so that it conducts) splits it into its elements: 2H₂O → 2H₂ + O₂. One substance breaking into simpler substances is a decomposition reaction; when electricity supplies the energy it is called electrolytic decomposition or electrolysis. Hydrogen collects at the cathode and oxygen at the anode in a 2 : 1 ratio by volume, as shown in the NCERT Class 10 activity.
+
+Q 32 | cur | Awards, Books & Persons
+Which music-composer duo was honoured with the National Lata Mangeshkar Award for the year 2020?
+(1) Jatin-Lalit
+(2) Anand-Milind
+(3) Salim–Sulaiman
+(4) Sachin–Jigar
+= 2
+~ The National Lata Mangeshkar Award is given every year by the Madhya Pradesh government's culture department for excellence in light music, with ₹2 lakh and a citation. In September 2022 the department named the composer duo Anand-Milind (brothers Anand and Milind Shrivastav, sons of composer Chitragupt) for the 2020 award and singer Shailendra Singh for 2019. Both awards were presented in Indore on 28 September 2022, Lata Mangeshkar's birth anniversary.
+
+Q 33 | cur | Static GK & Culture
+In which of the following states is Govindji Nartanalaya located?
+(1) Assam
+(2) Nagaland
+(3) Tripura
+(4) Manipur
+= 4
+~ Govindji Nartanalaya is a Manipuri dance institution in Imphal, Manipur, founded by Guru Bipin Singh, the dancer, choreographer and scholar who did much to revive and spread Manipuri dance; he later set up the Manipuri Nartanalaya in Kolkata in 1972. Its name recalls Shri Govindajee, the Vaishnava deity of the royal temple at Imphal, where Ras Lila is performed. Manipuri is one of India's classical dance forms.
+
+Q 34 | geo | Indian Geography
+In which state of India is Kund or Tanka used for water harvesting?
+(1) Uttar Pradesh
+(2) Punjab
+(3) Rajasthan
+(4) Andhra Pradesh
+= 3
+~ In the dry Thar region of western Rajasthan, rainwater is stored for drinking in kunds or kundis (a saucer-shaped catchment draining into a covered underground pit) and tankas (underground tanks, often inside houses or courtyards, fed by pipes from the rooftop). NCERT mentions tankas in Bikaner, Phalodi and Barmer; this 'palar pani' stays cool and lasts through the dry months. Johads, khadins and baoris are other traditional systems of the state.
+
+Q 35 | pol | Judiciary & Constitutional Bodies
+When was the High Court and Supreme Court Judges (Salaries and Conditions of Service) Amendment Bill, 2021 introduced in Lok Sabha?
+(1) 30 November 2021
+(2) 27 September 2021
+(3) 29 March 2021
+(4) 28 April 2021
+= 1
+~ Law Minister Kiren Rijiju introduced the Bill in Lok Sabha on 30 November 2021, early in the Winter Session. It amended the High Court Judges Act of 1954 and the Supreme Court Judges Act of 1958 to make clear that the additional pension due to retired judges on reaching ages such as 80, 85, 90, 95 and 100 starts from the first day of the month in which they complete that age. Lok Sabha passed it on 8 December and Rajya Sabha on 13 December 2021.
+
+Q 36 | sci | Biology
+Which condition, also known as icterus, causes a yellowing of your skin and the whites of your eyes?
+(1) Pemphigus
+(2) Ichthyosis
+(3) Eczema
+(4) Jaundice
+= 4
+~ Jaundice (icterus) is the yellow colour of the skin, the whites of the eyes and mucous membranes caused by excess bilirubin, a yellow pigment formed when old red blood cells are broken down. It appears when the liver cannot process or excrete bilirubin (as in hepatitis), when bile flow is blocked, or when red cells break down too fast. Pemphigus is an autoimmune blistering disease, ichthyosis causes dry scaly skin, and eczema is itchy, inflamed skin.
+
+Q 37 | ih | Ancient India
+Which of the following inscriptions of Rudradaman happened to be the first royal inscription of early India composed in chaste Sanskrit?
+(1) Mehrauli
+(2) Prayag
+(3) Chirand
+(4) Girnar
+= 4
+~ The Junagadh (Girnar) rock inscription of the Shaka (Western Kshatrapa) ruler Rudradaman I, of about 150 CE, is the first long royal inscription of early India in chaste Sanskrit. It records his repair of the Sudarshana lake, first built under Chandragupta Maurya and improved under Ashoka, after a storm breached its dam. The same rock carries Ashoka's major rock edicts. The Prayag pillar inscription is Samudragupta's, and the Mehrauli iron pillar inscription names a king Chandra.
+
+Q 38 | geo | Indian Geography
+According to Census of India 2011, in rural India, which state has the maximum female workforce participation rate?
+(1) Andhra Pradesh
+(2) Arunachal Pradesh
+(3) Uttar Pradesh
+(4) Himachal Pradesh
+= 4
+~ The work participation rate is the share of people who are workers (main or marginal). Census 2011 figures compiled by MoSPI give a rural female rate of 47.4% for Himachal Pradesh, against 44.6% for Andhra Pradesh, 39.5% for Arunachal Pradesh, 18.3% for Uttar Pradesh and 30.0% for rural India as a whole, so Himachal is highest among the options. Its overall female rate (44.8%) was the highest of any state; in rural areas alone Nagaland (52.3%) was higher still, but it is not an option.
+
+Q 39 | cur | Static GK & Culture
+Which of the following celebrations is dedicated to Sun God and his wife Usha to thank them for sustaining life on earth and for granting wishes?
+(1) Vishwakarma Puja
+(2) Madai Festival
+(3) Sorath Sabha
+(4) Chhath Puja
+= 4
+~ Chhath Puja, celebrated mainly in Bihar, Jharkhand, eastern Uttar Pradesh and the Terai of Nepal, honours the Sun God (Surya) and his consort Usha. Devotees fast, bathe in rivers and offer arghya to the setting and the rising sun; the main day is the sixth day of the bright half of Kartik, six days after Diwali. Madai is a tribal festival of Chhattisgarh, Sorath Sabha is the Maithil marriage gathering at Saurath in Bihar, and Vishwakarma Puja honours the divine architect.
+
+Q 40 | cur | Sports
+At which Olympics did Gagan Narang win a bronze medal?
+(1) Beijing 2008
+(2) London 2012
+(3) Athens 2004
+(4) Rio 2016
+= 2
+~ Gagan Narang won bronze in the men's 10 m air rifle at the London 2012 Olympics, India's first medal of those Games. He also competed at Athens 2004, Beijing 2008 and Rio 2016 but did not win a medal there. A multiple Commonwealth Games gold medallist, he received the Rajiv Gandhi Khel Ratna in 2011. India's only other Olympic shooting medals before Paris 2024 were Rajyavardhan Rathore's silver (2004), Abhinav Bindra's gold (2008) and Vijay Kumar's silver (2012).
+
+Q 41 | ih | Modern India
+When was a Madrasa opened in Kolkata to promote the study of Arabic, Persian and Islamic law?
+(1) 1772 C.E.
+(2) 1783 C.E.
+(3) 1781 C.E.
+(4) 1774 C.E.
+= 3
+~ Warren Hastings set up the Calcutta Madrasa (Madrasa Aliya) in 1781 to promote the study of Arabic, Persian and Islamic law, which the Company needed in its courts. It reflected the early Orientalist policy of patronising Indian learning, like the Asiatic Society of Bengal founded by William Jones in 1784 and the Sanskrit College set up at Benaras in 1791. The years 1772 and 1774 are when Hastings became Governor of Bengal and then Governor-General.
+
+Q 42 | sci | Chemistry
+What is the IUPAC name of tertiarybutyl alcohol?
+(1) 1-propylpropan-3-ol
+(2) 1-ethylpropan-3-ol
+(3) 1-Methylpropan-3-ol
+(4) 2-Methylpropan-2-ol
+= 4
+~ tert-Butyl alcohol is (CH₃)₃C–OH: one carbon carrying the –OH group and three methyl groups. The longest chain containing the –OH carbon has three carbons (propane), with the –OH and a methyl group both on carbon 2, so the name is 2-methylpropan-2-ol, a tertiary alcohol. The other names are invalid, because an alkyl group on carbon 1 only lengthens the chain: "1-methylpropan-3-ol" is really butan-1-ol and "1-ethylpropan-3-ol" is pentan-1-ol.
+
+Q 43 | pol | Constitution & Rights
+Which Article of the Constitution explains that the executive power of every state shall be so exercised as not to impede or prejudice the exercise of the executive power of the Union, and the executive power of the union shall extend to the giving of such directions to a state as may appear to the Government of India to be necessary for that purpose?
+(1) Article 123
+(2) Article 261
+(3) Article 257
+(4) Article 247
+= 3
+~ Article 257(1), "Control of the Union over States in certain cases", says exactly this: a State's executive power must not impede or prejudice the Union's, and the Union may give the State such directions as the Government of India finds necessary. It belongs to the administrative relations in Part XI, along with Article 256 on the States' duty to comply with Union laws. Article 123 covers ordinances, Article 247 additional courts and Article 261 full faith and credit.
+
+Q 44 | ih | Modern India
+Under the leadership of which of the following revolutionaries was Chittagong Armoury Raid conducted?
+(1) Rash Behari Bose
+(2) Surya Sen
+(3) Hemu Kalani
+(4) Badal Gupta
+= 2
+~ On 18 April 1930, members of the Indian Republican Army led by Surya Sen ("Masterda") raided the police and auxiliary force armouries at Chittagong (now in Bangladesh), cut communications and proclaimed a provisional revolutionary government. Women such as Pritilata Waddedar and Kalpana Dutt later joined his group. Surya Sen was captured in 1933 and hanged in January 1934. Badal Gupta took part in the Writers' Building attack in Calcutta (1930), and Hemu Kalani was a young Sindhi revolutionary.
+
+Q 45 | eco | Money, Banking & Finance
+What is the relationship between interest rate and demand for money?
+(1) Inverse
+(2) Direct
+(3) No relationship exists
+(4) Proportionate
+= 1
+~ The rate of interest is the opportunity cost of holding money, because cash earns nothing while bonds and deposits earn interest. When the interest rate rises, people hold less money and more interest-earning assets, so the (speculative) demand for money falls; when it falls, they hold more money. The demand for money curve therefore slopes downward against the interest rate. The transaction demand for money, by contrast, depends mainly on income and rises with it.
+
+Q 46 | eco | Schemes & Welfare
+The government of which of the following states created a draft policy in 2022 for senior citizens on the basis of article 41, which aims to form a directorate for the welfare of senior citizens?
+(1) Karnataka
+(2) Kerala
+(3) Telangana
+(4) Tamil Nadu
+= 4
+~ Tamil Nadu's Department of Social Welfare and Women Empowerment released a draft State Policy for Senior Citizens in 2022. The draft states that it is based on Article 41 of the Constitution, the Directive Principle asking the State to make effective provision for public assistance in old age, sickness, disablement and unemployment, and it proposes a separate Directorate for the Welfare of Senior Citizens to implement and monitor the policy. Nationally, the Maintenance and Welfare of Parents and Senior Citizens Act, 2007 protects the elderly.
+
+Q 47 | cur | Awards, Books & Persons
+In the year 1952, who among the following lent his voice for the film ‘Amar Bhupali’, which was being produced in two languages simultaneously and he sang in both Bengali and Marathi?
+(1) Hemanta Mukherjee
+(2) Debabrata Biswas
+(3) Kishore Kumar
+(4) Manna Dey
+= 4
+~ Manna Dey (Prabodh Chandra Dey) sang in 1952 for Amar Bhupali, a film made in both Bengali and Marathi with the same name and story, and this established him as a leading playback singer in Bengali films. Known for classically based songs such as "Laga chunari mein daag", he sang in many languages and received the Padma Shri (1971), the Padma Bhushan (2005) and the Dadasaheb Phalke Award (2007). He died in 2013.
+
+Q 48 | eco | Agriculture, Industry & Trade
+Which of the following statements correctly defines the green revolution?
+(1) It is a new strategy to use green colour for all purposes.
+(2) It is a new strategy to increase the share of the forest.
+(3) It is a new strategy in agriculture to produce food grains, especially wheat and rice.
+(4) It is a new strategy to use only herbal products.
+= 3
+~ The Green Revolution was the new agricultural strategy of the mid-1960s that combined high-yielding variety (HYV) seeds with chemical fertilisers, pesticides and assured irrigation to raise food-grain output, especially of wheat and later rice. Led in India by scientists such as M.S. Swaminathan using Norman Borlaug's dwarf wheat, it spread first in Punjab, Haryana and western Uttar Pradesh and made India self-sufficient in food grains. It has nothing to do with colour, forests or herbal products.
+
+Q 49 | cur | National
+In 2021, in which of the following states did the Prime Minister lay the foundation stone for the Raja Mahendra Pratap Singh State University?
+(1) Gujarat
+(2) Himachal Pradesh
+(3) Nagaland
+(4) Uttar Pradesh
+= 4
+~ Prime Minister Narendra Modi laid the foundation stone of the Raja Mahendra Pratap Singh State University at Aligarh, Uttar Pradesh, on 14 September 2021. The State Government is building it on over 92 acres in Lodha and Musepur Kareem Jarauli villages, and it will affiliate 395 colleges of the Aligarh Division. Raja Mahendra Pratap Singh was a freedom fighter, educationist and social reformer who headed the Provisional Government of India set up in Kabul in 1915.
+
+Q 50 | pol | Constitution & Rights
+Which of the following is NOT correct about Directive Principles of State Policy?
+(1) They provide guidelines for the governance of the country.
+(2) They are justiciable in nature.
+(3) They are morally binding on the government.
+(4) They ensure social and economic development.
+= 2
+~ Directive Principles of State Policy (Part IV, Articles 36–51) are non-justiciable: Article 37 says they shall not be enforceable by any court, yet they are fundamental in the governance of the country and the State must apply them in making laws. So statement 2 is the incorrect one. They guide governance, bind governments morally rather than legally, and aim at social and economic democracy and a welfare state. Fundamental Rights in Part III, by contrast, are justiciable.
+
+Q 51 | qa | Trigonometry & Heights
+What is the value of sec (t), if tan(t) = 1/3?
+(1) √3/3
+(2) 2√2/3
+(3) √10/3
+(4) √10/9
+= 3
+~ Use the identity sec²t = 1 + tan²t = 1 + (1/3)² = 1 + 1/9 = 10/9, so sec t = √10/3 (taking t acute, where sec t is positive). Check with a right triangle: opposite side 1, adjacent side 3, hypotenuse √(1 + 9) = √10, so sec t = hypotenuse/adjacent = √10/3. Option √10/9 forgets to take the square root of the 9 in the denominator.
+
+Q 52 | qa | Geometry
+The points P and S are on the same side of the line segment QR, such that ∠PQR = 90°, ∠SRQ = 90° and PQ = SR. Select the correct statement.
+(1) ΔPQR ≅ ΔSRQ by RHS
+(2) ΔPQR ≅ ΔSRQ by SAS
+(3) ΔPQR ≅ ΔSQR by SAS
+(4) ΔPQR ≅ ΔSQR by RHS
+= 2
+~ Compare triangles PQR and SRQ: PQ = SR (given), ∠PQR = ∠SRQ = 90° (given) and QR = RQ (common side). The equal angles lie between the equal sides, so ΔPQR ≅ ΔSRQ by SAS, with P↔S, Q↔R and R↔Q; writing ΔSQR breaks this correspondence. RHS would need the hypotenuses PR and SQ to be given equal, which they are not; they become equal only as a result of the congruence.
+
+Q 53 | qa | Algebra
+Simplify
+[(8.3)³ + (9.2)³ + (6.1)³ − 3 × 8.3 × 9.2 × 6.1]/[(8.3)² + (9.2)² + (6.1)² − 8.3 × 9.2 − 9.2 × 6.1 − 6.1 × 8.3]
+(1) 30.2
+(2) 25.5
+(3) 28.7
+(4) 23.6
+= 4
+~ Use the identity a³ + b³ + c³ − 3abc = (a + b + c)(a² + b² + c² − ab − bc − ca). With a = 8.3, b = 9.2 and c = 6.1, the numerator is exactly (a + b + c) times the denominator, and the denominator is not zero because a, b and c are not all equal. So the expression equals a + b + c = 8.3 + 9.2 + 6.1 = 23.6, with no need to work out any cubes or squares.
+
+Q 54 | qa | Data Interpretation & Statistics
+The pie chart given below shows the expenditure (in percentage) of Aditya. The monthly income of Aditya is ₹54,000.
+How much does he spend (in ₹) on Food?
+(1) 12,420
+(2) 13,420
+(3) 12,240
+(4) 11,240
+= 1
+! img/c24s2-q54.png
+~ The pie chart splits the spending as Rent 27%, Transport 15%, Food 23%, Fuel 15% and Miscellaneous 20% (total 100%), and the whole monthly income of ₹54,000 is taken as the amount spent. Food = 23% of 54,000 = 0.23 × 54,000 = ₹12,420. Quick check: 20% of 54,000 = 10,800 and 3% = 1,620, which add up to 12,420. Option 12,240 merely swaps two digits.
+
+Q 55 | qa | Percentage, Profit & Interest
+Madhav purchased an item for ₹42,000 and sold it at a loss of 20%. With that amount, he purchased another item and sold it at a gain of 30%. What is the overall gain (in ₹)?
+(1) 6720
+(2) 4200
+(3) 2520
+(4) 1680
+= 4
+~ First item: SP = 80% of ₹42,000 = ₹33,600 (loss ₹8,400). He buys the second item for ₹33,600 and sells it at a 30% gain: SP = 1.3 × 33,600 = ₹43,680 (gain ₹10,080). He began with ₹42,000 and ends with ₹43,680, so the overall gain = ₹1,680 (= 10,080 − 8,400). In one step: 42,000 × 0.8 × 1.3 = 42,000 × 1.04, a 4% gain. Option 4200 wrongly takes a net 30 − 20 = 10%.
+
+Q 56 | qa | Ratio, Average & Mixtures
+Seven years ago, Prachi was four times as old as her daughter was at that time. Four years from now, Prachi will be two-and-a-half times as old as her daughter would then be. Find the sum of the present ages (in years) of Prachi and her daughter.
+(1) 77
+(2) 49
+(3) 72
+(4) 69
+= 4
+~ Let the present ages of Prachi and her daughter be p and d. Seven years ago: p − 7 = 4(d − 7), so p = 4d − 21. Four years from now: p + 4 = 2.5(d + 4). Substituting, 4d − 17 = 2.5d + 10, so 1.5d = 27 and d = 18; then p = 51. Check: seven years ago 44 = 4 × 11; four years on 55 = 2.5 × 22. Sum of present ages = 51 + 18 = 69 years.
+
+Q 57 | qa | Percentage, Profit & Interest
+If a sum of ₹5,000 is taken at a simple rate of interest of 15% per annum for 3 years and another sum of ₹8,000 is taken at a simple interest of 12% per annum for 4 years, the positive difference of the interests paid is:
+(1) ₹1,286
+(2) ₹1,378
+(3) ₹1,643
+(4) ₹1,590
+= 4
+~ Simple interest = P × R × T/100. First sum: 5,000 × 15 × 3/100 = ₹2,250. Second sum: 8,000 × 12 × 4/100 = ₹3,840. Positive difference = 3,840 − 2,250 = ₹1,590. Comparing only one year's interest (₹750 and ₹960, a difference of ₹210) is a common slip; the question asks for the total interest paid over each loan's full period.
+
+Q 58 | qa | Geometry
+Let C be a circle with centre O and P be an external point to C. Let PA and PB be two tangents to C with A and B being the points of tangency, respectively. If PA and PB are inclined to each other at an angle of 60°, then find ∠POA.
+(1) 80°
+(2) 30°
+(3) 40°
+(4) 60°
+= 4
+~ The line OP joining the centre to the external point bisects the angle between the two tangents, so ∠APO = 60°/2 = 30°. The radius is perpendicular to the tangent at the point of contact, so ∠OAP = 90°. In triangle OAP, ∠POA = 180° − 90° − 30° = 60°. Equivalently, ∠AOB = 180° − 60° = 120° and OP bisects it. The option 30° is ∠APO, not ∠POA.
+
+Q 59 | qa | Ratio, Average & Mixtures
+The average temperature of a city for the first sixteen days of January is 22°C, and the average temperature for the last sixteen days of the same month is 26°C. If the average temperature for the entire month is 24°C, what is the temperature on the sixteenth day?
+(1) 23°C
+(2) 24°C
+(3) 25°C
+(4) 22°C
+= 2
+~ January has 31 days, so the first sixteen days (1–16) and the last sixteen days (16–31) overlap on day 16. Sum for days 1–16 = 16 × 22 = 352; sum for days 16–31 = 16 × 26 = 416; sum for the month = 31 × 24 = 744. Adding the two parts counts day 16 twice, so the temperature on the 16th = 352 + 416 − 744 = 24°C.
+
+Q 60 | qa | Data Interpretation & Statistics
+The monthly wages (in ₹) of three mess workers, Rahul, Sunil and Vipin, of a boy’s hostel for three months are given in the following table. Study the table carefully and answer the question given below.
+Mess workers/Month | October | November | December
+Rahul | 10800 | 11500 | 12000
+Sunil | 10000 | 10500 | 11500
+Vipin | 10400 | 11600 | 12200
+In November, the wages of Sunil is what percentage of the wages of Rahul? (Correct up to two decimal places.)
+(1) 91.30%
+(2) 90.23%
+(3) 89.30%
+(4) 88.23%
+= 1
+~ In November Sunil earns ₹10,500 and Rahul ₹11,500. Sunil's wages as a percentage of Rahul's = 10,500/11,500 × 100 = 2100/23 = 91.304…% ≈ 91.30%. The base is Rahul's wage, because the question asks for a percentage "of the wages of Rahul". Reversing the ratio (11,500/10,500 × 100 ≈ 109.52%) is a common slip. The October and December columns are not needed.
+
+Q 61 | qa | Ratio, Average & Mixtures
+At present, A is thrice as old as B. C is 5 years elder than B. The sum of the ages of A, B, C is 75 years. The ratio of the age of B five years ago to the age of A three years from now is:
+(1) 1 : 4
+(2) 2 : 3
+(3) 1 : 5
+(4) 4 : 7
+= 3
+~ Let B's present age be x years. Then A = 3x and C = x + 5. Sum: 3x + x + (x + 5) = 75, so 5x = 70 and x = 14. Hence B = 14, A = 42 and C = 19 years. B's age five years ago = 14 − 5 = 9 years; A's age three years from now = 42 + 3 = 45 years. Required ratio = 9 : 45 = 1 : 5.
+
+Q 62 | qa | Trigonometry & Heights
+Simplify the following. (sin³A − cos³A)/(sin A − cos A), where A is an acute angle.
+(1) 3 cosA − 1
+(2) 1 − 3 sinA
+(3) sinA + cosA
+(4) 1 + sinA cosA
+= 4
+~ Use a³ − b³ = (a − b)(a² + ab + b²) with a = sin A and b = cos A. Cancelling sin A − cos A (valid for A ≠ 45°) leaves sin²A + sin A cos A + cos²A = 1 + sin A cos A, since sin²A + cos²A = 1. Check with A = 30°: the given expression and 1 + sin 30° cos 30° = 1 + √3/4 both equal about 1.433. Option sinA + cosA would come from a difference of squares, not cubes.
+
+Q 63 | qa | Geometry
+A right-angled isosceles triangle has an area of 50 square units. Its hypotenuse is (in units):
+(1) 5√5
+(2) 10√3
+(3) 5√2
+(4) 10√2
+= 4
+~ In a right-angled isosceles triangle the two sides containing the right angle are equal, say a. Area = ½ × a × a = 50, so a² = 100 and a = 10 units. By Pythagoras, hypotenuse = √(a² + a²) = a√2 = 10√2 units (about 14.14). The option 5√2 is what one gets for a side by forgetting the ½ in the area formula (a² = 50), and it is a side, not the hypotenuse.
+
+Q 64 | qa | Mensuration
+What is the volume (in cm³) of a cylinder if the radius of the cylinder is 8 cm and the height is 14 cm? (Take π = 22/7)
+(1) 2816
+(2) 2686
+(3) 2784
+(4) 2456
+= 1
+~ Volume of a cylinder = πr²h. With r = 8 cm and h = 14 cm: V = (22/7) × 8² × 14 = (22/7) × 64 × 14. Since 14/7 = 2, this is 22 × 64 × 2 = 44 × 64 = 2816 cm³. Cancelling the 7 against the 14 first keeps the arithmetic simple. Do not confuse the volume with the curved surface area 2πrh, which here is 704 cm².
+
+Q 65 | qa | Percentage, Profit & Interest
+A person earns ₹16,000 per month and spends 80% of his income and saves the remaining amount. If his income increases by 20% and expenditure by 10%, find the percentage of increase in his savings.
+(1) 90%
+(2) 120%
+(3) 140%
+(4) 60%
+= 4
+~ Income ₹16,000; expenditure 80% = ₹12,800; savings = ₹3,200. New income = 1.2 × 16,000 = ₹19,200; new expenditure = 1.1 × 12,800 = ₹14,080; new savings = 19,200 − 14,080 = ₹5,120. Increase = 5,120 − 3,200 = ₹1,920, which is 1,920/3,200 × 100 = 60% of the old savings. With income taken as 100: savings rise from 20 to 120 − 88 = 32, again a 60% rise.
+
+Q 66 | qa | Percentage, Profit & Interest
+The marked price of an article is 26% more than its cost price. If a discount of 32% is given, what will be the loss percentage?
+(1) 12.26%
+(2) 15.25%
+(3) 18.64%
+(4) 14.32%
+= 4
+~ Let the cost price be 100. Marked price = 126. After a 32% discount the selling price = 68% of 126 = 85.68. Loss = 100 − 85.68 = 14.32 on a cost price of 100, i.e. 14.32%. By the successive-change formula: 26 − 32 + (26 × −32)/100 = −6 − 8.32 = −14.32%. Simply subtracting (32 − 26 = 6%) ignores that the discount is taken on the higher marked price.
+
+Q 67 | qa | Time, Work, Speed & Distance
+Varun and Sandeep started for a car race from the same point, in the same direction and at the same time on a circular track of length 1635 m with the speeds of 90 km/h and 108 km/h, respectively. After how much time (in s) will they meet again for the first time?
+(1) 327
+(2) 325
+(3) 324
+(4) 326
+= 1
+~ Convert to m/s: 90 km/h = 90 × 5/18 = 25 m/s and 108 km/h = 108 × 5/18 = 30 m/s. Moving in the same direction, Sandeep gains 30 − 25 = 5 m/s on Varun. They meet again when he has gained one full lap of 1635 m, which takes 1635/5 = 327 s. Check: in 327 s Varun covers 8175 m (5 laps) and Sandeep 9810 m (6 laps).
+
+Q 68 | qa | Geometry
+The angles of triangle are such that one is average of other two, then the angles are:
+1) π/6, π/3, π/2
+2) π/3, π/3, π/2
+3) π/6, π/3, π/4
+4) π/2, π/2, π/3
+(1) 3
+(2) 1
+(3) 4
+(4) 2
+= 2
+~ If one angle is the average of the other two, those two add up to twice it, so the three angles total three times it; as the angles of a triangle add up to π, that angle must be π/3 (60°). Set 1 fits: π/6 + π/3 + π/2 = π and π/3 = (π/6 + π/2)/2, i.e. 30°, 60° and 90°. Set 2 adds up to 7π/6, set 3 to 3π/4 and set 4 to 4π/3, so none of them can be the angles of a triangle. Hence the answer is 1 (set 1).
+
+Q 69 | qa | Mensuration
+From a circle with the radius of 15.75 cm, a sector with the arc length of 11 cm is cut off. Find the area (in cm²) of this sector.
+(1) 86.625
+(2) 86.875
+(3) 86.525
+(4) 86.125
+= 1
+~ Area of a sector = ½ × arc length × radius, because the area is (θ/2)r² and the arc length is l = rθ (θ in radians). Here area = ½ × 11 × 15.75 = 5.5 × 15.75 = 86.625 cm². Neither the central angle nor a value of π is needed. Check: θ = 11/15.75 radian, and (θ/2) × 15.75² = 5.5 × 15.75 = 86.625 cm².
+
+Q 70 | qa | Data Interpretation & Statistics
+The given bar graph shows the number of students enrolled in Institutes A and B during 5 years (2018 to 2022).
+What is the ratio of the total students enrolled in Institute B in 2019, 2020 and 2022 to that of the total students enrolled in Institute A in 2018, 2020 and 2021?
+(1) 11 : 28
+(2) 28 : 37
+(3) 37 : 28
+(4) 28 : 11
+= 3
+! img/c24s2-q70.png
+~ Read the bars: Institute A has 150, 275, 300, 250 and 225 students and Institute B has 210, 350, 375, 300 and 200 students in 2018–2022. B in 2019, 2020 and 2022 = 350 + 375 + 200 = 925. A in 2018, 2020 and 2021 = 150 + 300 + 250 = 700. Ratio = 925 : 700 = 37 : 28 (dividing by 25). The order matters: B's total comes first, so the reverse 28 : 37 is the trap.
+
+Q 71 | qa | Data Interpretation & Statistics
+The given chart shows the production of different types of cars in the year 2021. Study the given chart and answer the question that follows.
+If the total production in the year 2021 was 2,00,00,000, then what will be the central angle of the sector representing the production of type D cars in 2021?
+(1) 50°
+(2) 42°
+(3) 36°
+(4) 72°
+= 4
+! img/c24s2-q71.png
+~ The pie chart gives the shares A 10%, B 20%, C 10%, D 20% and E 40%. In a pie chart the central angle of a sector = (percentage/100) × 360°. Type D has 20%, so its angle = 20/100 × 360° = 72°. The total production of 2,00,00,000 is not needed, because the angle depends only on the share (D = 40,00,000 cars). 36° would be the angle for a 10% type such as A or C.
+
+Q 72 | qa | Ratio, Average & Mixtures
+If x varies inversely as y and x = 2 when y = 6, then the value of y when x = 3 is:
+(1) 3
+(2) 4
+(3) 2
+(4) 6
+= 2
+~ If x varies inversely as y, their product is constant: xy = k. From x = 2 and y = 6, k = 12. When x = 3, y = 12/3 = 4. Check: x grows from 2 to 3 (× 1.5) while y falls from 6 to 4 (÷ 1.5), as inverse variation requires. Direct variation (y/x constant) would instead give y = 9, which is not among the options.
+
+Q 73 | qa | Number System & Simplification
+Without doing the actual division, find the remainder when 28735429 is divided by 9.
+(1) 4
+(2) 8
+(3) 2
+(4) 9
+= 1
+~ A number leaves the same remainder on division by 9 as the sum of its digits. Digit sum of 28735429 = 2 + 8 + 7 + 3 + 5 + 4 + 2 + 9 = 40, and 40 = 4 × 9 + 4, so the remainder is 4 (again, 4 + 0 = 4). Check: 9 × 3192825 = 28735425, and 28735429 − 28735425 = 4. Option 9 is impossible, since a remainder on division by 9 must be less than 9.
+
+Q 74 | qa | Number System & Simplification
+Simplify the following:
+21 − 4.9 ÷ 7 + 3.9 × 0.4 + 0.9
+(1) 26.32
+(2) 18.23
+(3) 22.76
+(4) 24.12
+= 3
+~ Follow BODMAS: division and multiplication come before addition and subtraction. 4.9 ÷ 7 = 0.7 and 3.9 × 0.4 = 1.56. The expression becomes 21 − 0.7 + 1.56 + 0.9 = 20.3 + 1.56 + 0.9 = 22.76. Working strictly from left to right, for example (21 − 4.9) ÷ 7, ignores the order of operations and gives a wrong value.
+
+Q 75 | qa | Time, Work, Speed & Distance
+Pipes M, N and S can fill a tank in 25, 50 and 100 minutes, respectively. Initially, pipes N and S are kept open for 10 minutes, and then pipe N is shut while pipe M is opened. Pipe S is closed 15 minutes before the tank overflows. How much time (in minutes) will it take to fill the tank if the three pipes work in this pattern?
+(1) 27
+(2) 42
+(3) 30
+(4) 33
+= 1
+~ Take the tank as 100 units (LCM of 25, 50 and 100): M fills 4, N 2 and S 1 unit per minute. First 10 minutes, N + S: 10 × 3 = 30 units. Last 15 minutes, M alone: 15 × 4 = 60 units. In between, M + S fill the remaining 100 − 30 − 60 = 10 units at 5 units per minute, which takes 2 minutes. Total time = 10 + 2 + 15 = 27 minutes.
+
+Q 76 | eng | Voice & Narration
+Select the option that expresses the given sentence in active voice.
+The homework must be done by you.
+(1) You will do the homework.
+(2) You should have done the homework.
+(3) You must do the homework.
+(4) You do the homework.
+= 3
+~ In the passive sentence 'The homework' receives the action and 'you' (after 'by') is the doer. The verb 'must be done' is a modal passive (modal + be + past participle), so the active form keeps the same modal with the base form of the verb: 'You must do the homework.' Option 1 changes the modal to 'will', option 2 changes it to 'should have done', and option 4 drops the modal altogether, so all three alter the meaning of obligation.
+
+Q 77 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option to substitute the underlined word in the given sentence.
+Pollution levels have increased so "largely" that they are almost killing us.
+(1) primarily
+(2) slowly
+(3) highly
+(4) chiefly
+= 3
+~ 'Largely' means mainly or for the most part, as in 'The audience was largely young'; it does not describe how much something has risen. The sentence needs an adverb of degree with 'so ... that', and 'highly' (to a high degree) gives this sense: 'Pollution levels have increased so highly that they are almost killing us.' 'Primarily' and 'chiefly' also mean mainly, the same flaw as largely, and 'slowly' contradicts the idea of a rise that is almost killing us.
+
+Q 78 | eng | Sentence Arrangement
+Parts of a sentence are given below in jumbled order. Arrange the parts in the correct order to form a meaningful sentence.
+(a) the use of animal research
+(b) throughout the past century
+(c) and it continues to be used to understand many diseases
+(d) has been of considerable importance
+(e) in the field of scientific and medical advancements
+(1) edcba
+(2) aecdb
+(3) ecdba
+(4) adebc
+= 4
+~ The subject is (a) 'the use of animal research', followed by its verb (d) 'has been of considerable importance'. (e) 'in the field of scientific and medical advancements' says where, and (b) 'throughout the past century' says when. (c) 'and it continues to be used to understand many diseases' adds a second clause in which 'it' refers back to the use of animal research, so it comes last: adebc. Options 1 and 3 begin with (e), which cannot be a subject, and option 2 puts (c) before the main verb (d).
+
+Q 79 | eng | Idioms & One-word Substitution
+Select the most appropriate meaning of the given idiom.
+Break a leg
+(1) Give advice on maintaining physical health.
+(2) Wish someone good luck before a performance.
+(3) Suggest taking a short break during work.
+(4) Encourage someone to engage in risky activities.
+= 2
+~ 'Break a leg' is an informal expression used to wish someone good luck, especially a performer about to go on stage, as in 'Break a leg tonight!' It comes from the theatre, where wishing 'good luck' directly was traditionally thought to bring bad luck, so performers wished each other the opposite. It has nothing to do with physical health, taking a break from work or encouraging risky activities; those options read the words literally.
+
+Q 80 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the underlined segment in the given sentence. If there is no need to substitute it, select ‘No substitution’.
+Spreading awareness about the rights of the consumers and the relief open to them in case they "did not get their money’s worth" of goods and service has rightly been identified as the first priority.
+(1) were unable to get their money’s worth
+(2) did not getting their money’s worth
+(3) will not get their money’s worth
+(4) No substitution
+= 1
+~ The underlined part describes the situation in which relief is open to consumers: when they fail to receive full value for what they paid. 'Were unable to get their money's worth' states this failure most clearly, stressing that the consumers could not obtain the value they paid for. Option 2 is ungrammatical, since 'did' must be followed by the base form 'get', and option 3 is wrong because a clause with 'in case' does not take 'will'. The printed 'did not get' is itself grammatical, which is why 'No substitution' is also argued. (SSC key; some sources differ.)
+
+Q 81 | eng | Spelling
+Select the INCORRECTLY spelt word.
+(1) Allocation
+(2) Abismal
+(3) Aversion
+(4) Allegation
+= 2
+~ The incorrectly spelt word is 'Abismal'; the correct spelling is 'abysmal' (a-b-y-s-m-a-l), with a y, as in 'abyss', a very deep chasm. It means extremely bad or appalling, as in 'an abysmal performance'. The other words are spelt correctly: 'allocation' (double l, the distribution of resources), 'aversion' (a strong dislike) and 'allegation' (double l, a claim of wrongdoing made without proof).
+
+Q 82 | eng | Vocabulary
+Select the most appropriate ANTONYM of the underlined word.
+If you want to be a good detective, it helps to have an "inquisitive" nature.
+(1) Comprehensive
+(2) Itemised
+(3) Intrusive
+(4) Disinterested
+= 4
+~ 'Inquisitive' means curious, eager to know or learn, and fond of asking questions, a useful quality in a detective. Its antonym here is 'disinterested', used in the sense of not interested or indifferent (in careful usage this sense is expressed by 'uninterested', while disinterested means impartial). 'Intrusive' (prying, unwelcomely interfering) is close to inquisitive rather than opposite, 'comprehensive' means complete or including everything, and 'itemised' means listed item by item.
+
+Q 83 | eng | Idioms & One-word Substitution
+Select the option that can be used as a one-word substitute for the given group of words.
+One who does not show response to good or bad
+(1) Cynic
+(2) Phobic
+(3) Sceptic
+(4) Stoic
+= 4
+~ A 'stoic' is a person who endures pain, hardship, good fortune or bad fortune calmly, without showing feelings or complaining. The word comes from the Stoic philosophers of ancient Greece, who taught that one should be free from passion and unmoved by pleasure or pain. A 'cynic' believes that people act only out of self-interest, a 'phobic' person has an irrational fear of something, and a 'sceptic' doubts accepted opinions or claims.
+
+Q 84 | eng | Sentence Arrangement
+Given below are four jumbled sentences. Select the option that gives their correct logical sequence.
+A. These can turn around to track stars with the rotation of Earth.
+B. Observatories are places to study place.
+C. They are mostly built on the mountain tops.
+D. Telescopes are placed in the dome-shaped roof of the building.
+(1) DCBA
+(2) CBDA
+(3) BCDA
+(4) ACDB
+= 3
+~ B introduces the topic, observatories, so it comes first (the sheet prints 'study place', evidently for 'study space'). C follows, its 'They' standing for observatories. D then describes the building, saying telescopes are placed in its dome-shaped roof, and A comes last because 'These' refers to the telescopes, which turn to track stars as the Earth rotates. So the order is BCDA. The other options begin with C, D or A, each of which depends on an earlier sentence.
+
+Q 85 | eng | Spelling
+Select the correctly spelled sentence.
+(1) I will definitely attend the conference.
+(2) I will definetely attend the conference.
+(3) I will definately attend the conference.
+(4) I will definitly attend the conference.
+= 1
+~ The correct spelling is 'definitely' (d-e-f-i-n-i-t-e-l-y), formed from 'definite' + -ly; it means without doubt or certainly. A useful tip is that the word contains 'finite'. 'Definetely' wrongly uses e in place of the second i, 'definately' wrongly uses a, which is the most common misspelling of the word, and 'definitly' drops the e of 'definite' before -ly.
+
+Q 86 | eng | Sentence Arrangement
+Parts of a sentence are given below in jumbled order. Arrange the parts in the correct order to form a meaningful sentence.
+(O) as it was the last one of the evening
+(P) the city bus was overcrowded
+(Q) and this gave an opportunity
+(R) to the pickpockets
+(S) to try their skill
+(1) PSORQ
+(2) SRPOQ
+(3) SROPQ
+(4) POQRS
+= 4
+~ The main clause is (P) 'the city bus was overcrowded'; (O) 'as it was the last one of the evening' gives the reason. (Q) 'and this gave an opportunity' adds the result, (R) 'to the pickpockets' says who got the opportunity, and (S) 'to try their skill' says what it was for. The sentence reads: 'The city bus was overcrowded as it was the last one of the evening and this gave an opportunity to the pickpockets to try their skill.' Options beginning with S cannot start the sentence, and PSORQ separates 'to try their skill' from 'opportunity'.
+
+Q 87 | eng | Idioms & One-word Substitution
+Select the most appropriate option to substitute the underlined segment in the given sentence.
+Raju’s job as a clerk seemed to be "bad at first because of the low salary, but resulted in something good happening later" because it saved him from being unemployed.
+(1) a blessing in disguise
+(2) a boon in disguise
+(3) a jolt in disguise
+(4) a gift in disguise
+= 1
+~ 'A blessing in disguise' is an idiom for something that seems bad or unlucky at first but later turns out to be good. Raju's clerk job looked bad because of the low salary but proved good because it saved him from unemployment, so the idiom replaces the underlined description: 'Raju's job as a clerk seemed to be a blessing in disguise because it saved him from being unemployed.' Idioms have a fixed form, so 'boon', 'jolt' or 'gift' cannot take the place of 'blessing'.
+
+Q 88 | eng | Vocabulary
+Identify the most appropriate antonym of the given word.
+Scary
+(1) awful
+(2) bright
+(3) comforting
+(4) Pristine
+= 3
+~ 'Scary' means frightening, causing fear or alarm, as in 'a scary film'. Its antonym among the options is 'comforting', meaning soothing, giving a feeling of ease, reassurance and safety. 'Awful' (very bad or unpleasant) is close to scary in tone rather than opposite, 'bright' (shining, or cheerful) is not a direct opposite, and 'pristine' means in its original, unspoiled condition, which is unrelated to fear.
+
+Q 89 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Abundant
+(1) Ample
+(2) Difficult
+(3) Scarce
+(4) Barren
+= 1
+~ 'Abundant' means existing or available in large quantities, more than enough, as in 'abundant rainfall' or 'abundant natural resources'. Its synonym is 'ample', meaning enough or more than enough, plentiful. 'Scarce' (in short supply) is its antonym, 'barren' (unable to produce crops or fruit, bare) is opposite in sense, and 'difficult' (not easy) is unrelated in meaning.
+
+Q 90 | eng | Vocabulary
+Select the most appropriate synonym of the underlined word.
+I would love to "organise" the farewell party at my house.
+(1) Arrange
+(2) Derange
+(3) Disorder
+(4) Confuse
+= 1
+~ To 'organise' an event means to plan it and make the necessary preparations so that it takes place, as in organising a farewell party. Its synonym is 'arrange', which means to plan or put things in order in advance. 'Derange' means to throw into disorder or make insane, 'disorder' means a lack of order or confusion, and 'confuse' means to bewilder or mix up; all three are closer to the opposite of organise.
+
+Q 91 | eng | Error Spotting & Sentence Improvement
+Parts of the following sentence have been given as options. Select the option that contains an error.
+Every students in the hostel decided to travel to Delhi to witness the Republic Day parade.
+(1) Republic Day Parade.
+(2) to witness the
+(3) Every students in the hostel
+(4) decided to travel to Delhi
+= 3
+~ 'Every' is followed by a singular countable noun, as in 'every student', 'every day' or 'every book', and it takes a singular verb. So 'Every students in the hostel' is wrong and should read 'Every student in the hostel': 'Every student in the hostel decided to travel to Delhi to witness the Republic Day parade.' 'All the students' or 'Each of the students' would also be correct. The other parts, 'decided to travel to Delhi', 'to witness the' and 'Republic Day Parade', contain no error.
+
+Q 92 | eng | Voice & Narration
+Select the option that expresses the given sentence in active voice.
+The meal was not prepared by us.
+(1) We did not preparing the meal.
+(2) We did prepare the meal.
+(3) We did not prepare the meal.
+(4) We had not prepare the meal.
+= 3
+~ The passive 'The meal was not prepared by us' is in the simple past negative (was not + past participle). In the active voice the doer 'us' becomes the subject 'We', the object 'the meal' follows the verb, and the negative simple past is did not + base form: 'We did not prepare the meal.' Option 1 wrongly uses 'preparing' after 'did', option 2 drops 'not' and reverses the meaning, and option 4 uses 'had not prepare', where 'had' needs the participle 'prepared'.
+
+Q 93 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Berserk
+(1) Stubborn
+(2) Demented
+(3) Absurd
+(4) Lazy
+= 2
+~ 'Berserk' means wild, frenzied or out of control, especially with anger or excitement; to 'go berserk' is to become violently uncontrollable. The word comes from the berserkers, Norse warriors said to fight in a wild frenzy. Its closest synonym here is 'demented', meaning behaving irrationally or wildly, as if mad. 'Stubborn' means obstinate, 'absurd' means ridiculous or unreasonable, and 'lazy' means unwilling to work, so none of them fits.
+
+Q 94 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a grammatical error.
+By this time next year / I will had graduated from college / and starting my first job / in the field of marketing.
+(1) in the field of marketing
+(2) By this time next year
+(3) I will had graduated from college
+(4) and starting my first job
+= 3
+~ 'By this time next year' refers to an action that will be completed before a point in the future, which needs the future perfect tense: will + have + past participle. 'Will had graduated' is wrong because a modal such as 'will' must be followed by the base form 'have', never by 'had'. Corrected: 'By this time next year I will have graduated from college and (will be) starting my first job in the field of marketing.' 'And starting my first job' is only loosely parallel, but the clear error is 'will had'.
+
+Q 95 | eng | Vocabulary
+Select the most appropriate ANTONYM of the word in bold.
+Elisabeth stood at the piano, which did nothing to "allay" his anxiety.
+(1) aggravate
+(2) mitigate
+(3) simplify
+(4) mollify
+= 1
+~ The sheet prints the whole sentence in bold, so the tested word is not marked; it can only be 'allay', the word whose synonyms and antonym appear in the options. 'Allay' means to reduce or put to rest a fear, worry or suspicion, as in 'to allay his anxiety'. Its antonym is 'aggravate', meaning to make a problem or feeling worse or more serious. 'Mitigate' (make less severe) and 'mollify' (calm or soothe) are synonyms of allay, and 'simplify' (make easier) is unrelated.
+
+Q 96 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+From the beginning (1)______ the eighteenth century, the ladies of European cities covered (2)______ faces in layers of paint and powder. This particular fashion was largely brought (3) ______ by the urgent need to disguise the ravages of smallpox, (4)______ left their faces pitted and scarred. During this same period, the ‘beauty spot’ was introduced to cover (5) ______ a facial defect.
+Select the most appropriate option to fill in blank number 1.
+(1) about
+(2) in
+(3) on
+(4) of
+= 4
+~ 'The beginning of the eighteenth century' uses 'of' to link the beginning to the period it belongs to, just as in 'the end of the year' or 'the start of the war'. So 'From the beginning of the eighteenth century' means from the early 1700s onwards. 'About' (concerning or approximately), 'in' and 'on' cannot link 'beginning' to the century: 'the beginning about, in or on the eighteenth century' is not idiomatic English.
+
+Q 97 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+From the beginning (1)______ the eighteenth century, the ladies of European cities covered (2)______ faces in layers of paint and powder. This particular fashion was largely brought (3) ______ by the urgent need to disguise the ravages of smallpox, (4)______ left their faces pitted and scarred. During this same period, the ‘beauty spot’ was introduced to cover (5) ______ a facial defect.
+Select the most appropriate option to fill in blank number 2.
+(1) they’re
+(2) their
+(3) there
+(4) them
+= 2
+~ The blank stands before the noun 'faces', so it needs a possessive determiner; the ladies covered their own faces, so 'their' (belonging to them) is correct: 'the ladies of European cities covered their faces in layers of paint and powder.' 'They're' is the contraction of 'they are', 'there' is an adverb of place or an introductory word (there is), and 'them' is an object pronoun that cannot qualify a noun. Their, they're and there sound alike and are often confused.
+
+Q 98 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+From the beginning (1)______ the eighteenth century, the ladies of European cities covered (2)______ faces in layers of paint and powder. This particular fashion was largely brought (3) ______ by the urgent need to disguise the ravages of smallpox, (4)______ left their faces pitted and scarred. During this same period, the ‘beauty spot’ was introduced to cover (5) ______ a facial defect.
+Select the most appropriate option to fill in blank number 3.
+(1) within
+(2) about
+(3) around
+(4) to
+= 2
+~ 'Bring about' is a phrasal verb meaning to cause something to happen. In the passive, 'This particular fashion was largely brought about by the urgent need to disguise the ravages of smallpox' means the fashion of painted faces was caused mainly by the need to hide smallpox scars. 'Brought within' and 'brought to' make no sense here, and 'bring around' means to persuade someone or to revive a person who has fainted, which does not fit a fashion.
+
+Q 99 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+From the beginning (1)______ the eighteenth century, the ladies of European cities covered (2)______ faces in layers of paint and powder. This particular fashion was largely brought (3) ______ by the urgent need to disguise the ravages of smallpox, (4)______ left their faces pitted and scarred. During this same period, the ‘beauty spot’ was introduced to cover (5) ______ a facial defect.
+Select the most appropriate option to fill in blank number 4.
+(1) which
+(2) that
+(3) when
+(4) who
+= 1
+~ The blank begins a relative clause about 'smallpox', the disease that left the ladies' faces pitted and scarred. Because the clause follows a comma and only adds information (a non-defining relative clause), and smallpox is a thing, the relative pronoun must be 'which': '...the ravages of smallpox, which left their faces pitted and scarred.' 'That' is not used after a comma in a non-defining clause, 'who' is used for people, and 'when' refers to time.
+
+Q 100 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+From the beginning (1)______ the eighteenth century, the ladies of European cities covered (2)______ faces in layers of paint and powder. This particular fashion was largely brought (3) ______ by the urgent need to disguise the ravages of smallpox, (4)______ left their faces pitted and scarred. During this same period, the ‘beauty spot’ was introduced to cover (5) ______ a facial defect.
+Select the most appropriate option to fill in blank number 5.
+(1) to
+(2) for
+(3) up
+(4) on
+= 3
+~ 'Cover up' is a phrasal verb meaning to hide or conceal something completely, especially a fault, mark or mistake. The 'beauty spot', a small dark patch worn on the face, was introduced to cover up a facial defect such as a smallpox scar, in keeping with the passage's theme of disguising the ravages of smallpox. 'Cover for' means to stand in for someone or to make excuses for them, while 'cover to' and 'cover on' are not used in this sense.

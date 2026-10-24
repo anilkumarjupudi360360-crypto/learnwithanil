@@ -1,0 +1,1011 @@
+# SSC Combined Graduate Level Examination 2024, Tier-I, held 9 September 2024, Shift 1 (9:00 AM). 100 questions, 200 marks, 60 minutes.
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via AglaSem); answers are the options SSC ticked as correct on that sheet (answer-key stage). The Hindi text is from a second candidate's sheet of the same exam, with the options put in the English order. Explanations by Learn with Anil.
+
+Q 1 | rea | Mathematical Operations
+What will come in place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+4515 × 5 − 431 ÷ 3 + 821 = ?
+(1) 1335
+(2) 1775
+(3) 1575
+(4) 1375
+= 4
+~ Make the interchanges first: × becomes ÷, − becomes +, ÷ becomes × and + becomes −. The equation reads 4515 ÷ 5 + 431 × 3 − 821. By BODMAS, do division and multiplication first: 4515 ÷ 5 = 903 and 431 × 3 = 1293. Then 903 + 1293 = 2196, and 2196 − 821 = 1375. A common slip is to change only one pair of signs, which gives a different total.
+
+Q 2 | rea | Analogy & Classification
+31 is related to 152 by certain logic. Following the same logic, 47 is related to 168. To which of the following is 66 related, following the same logic? (NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /deleting /multiplying etc., to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(1) 180
+(2) 187
+(3) 185
+(4) 190
+= 2
+~ Find the difference in each given pair: 152 − 31 = 121 and 168 − 47 = 121. So the rule is "add 121" (121 = 11²) to the first number. Applying it to 66: 66 + 121 = 187. The other options give differences of 114 (180), 119 (185) and 124 (190), which do not fit the rule.
+
+Q 3 | rea | Non-verbal Reasoning
+Six letters Q, Z, V, T, L and A are written on different faces of a dice. Two positions of this dice are shown in the figures below. Find the letter on the face opposite to Q.
+(1) Z
+(2) T
+(3) V
+(4) A
+= 2
+! img/c24s1-q3.png
+~ V is common to both positions and sits on the same (right) face in both, so the dice has only been turned about the axis through V. When the common face is in the same position, the faces in matching positions are opposite: top Q is opposite top T, and left Z is opposite left L. V touches Q, Z, T and L, so V is opposite A. Hence the letter opposite Q is T.
+
+Q 4 | rea | Analogy & Classification
+In the following number-pairs, the second number is obtained by applying certain mathematical operations to the first number. In three of the four pairs, the same pattern is applied and hence they form a group. Select the number-pair that DOES NOT belong to this group.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding/subtracting/multiplying to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(1) 335 - 119
+(2) 358 - 152
+(3) 317 - 101
+(4) 308 - 92
+= 2
+~ Subtract the second number from the first in each pair. 335 − 119 = 216, 317 − 101 = 216 and 308 − 92 = 216, so the rule is "subtract 216" (216 = 6³). For 358 − 152 the difference is 206, not 216; following the rule, 358 should give 142. So the pair 358 - 152 does not belong to the group.
+
+Q 5 | rea | Coding-Decoding
+In a certain code language, 'NAME’ is written as 'FNBO' and 'NANO' is written as 'POBO’. How will 'NAIL’ be written in that language?
+(1) MOBJ
+(2) MJOB
+(3) MOJB
+(4) MJBO
+= 4
+~ Write the word in reverse order and then move each letter one step forward. NAME reversed is EMAN; +1 gives FNBO. NANO reversed is ONAN; +1 gives POBO. So NAIL reversed is LIAN, and +1 on each letter gives L→M, I→J, A→B, N→O, that is MJBO. The other options use the right letters in a wrong order.
+
+Q 6 | rea | Analogy & Classification
+The question contains pairs of words that are related to each other in a certain way. Three of the following four word pairs are alike as these have the same relationship and thus form a group. Which word pair is the one that DOES NOT belong to that group?
+(The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/vowels in the word.)
+(1) Pentagon - 5 sides
+(2) Hexagon - 8 sides
+(3) Triangle - 3 sides
+(4) Square - 4 sides
+= 2
+~ Each pair matches a polygon with its number of sides. A pentagon has 5 sides, a triangle 3 and a square 4, so these three pairs are correct. A hexagon has 6 sides (hexa = six); 8 sides belong to an octagon. So "Hexagon - 8 sides" breaks the relationship and is the odd pair.
+
+Q 7 | rea | Miscellaneous Reasoning
+The position of how many letters will remain unchanged if each of the letters in the word ‘NIGHTMARES’ is re-arranged in the English alphabetical order from left to right?
+(1) One
+(2) Four
+(3) Two
+(4) Three
+= 2
+~ Write the word and its letters in alphabetical order one under the other. NIGHTMARES: N I G H T M A R E S. Alphabetical: A E G H I M N R S T. Compare position by position: 3rd G = G, 4th H = H, 6th M = M and 8th R = R; all other positions differ. So the positions of four letters (G, H, M and R) remain unchanged.
+
+Q 8 | rea | Mathematical Operations
+What will come in the place of ‘?’ in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+5 − 4 ÷ 9 + 80 × 10 = ?
+(1) 31
+(2) 33
+(3) 35
+(4) 30
+= 2
+~ After the interchanges, − becomes +, ÷ becomes ×, + becomes − and × becomes ÷. The equation becomes 5 + 4 × 9 − 80 ÷ 10. Apply BODMAS: 4 × 9 = 36 and 80 ÷ 10 = 8. Then 5 + 36 − 8 = 33. Solving without following BODMAS (left to right) would give a wrong value.
+
+Q 9 | rea | Analogy & Classification
+Select the option in which the numbers share the same relationship as that shared by the given pair of numbers.
+(149, 213)
+(168, 232)
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding/deleting/multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(1) (162, 222)
+(2) (153, 217)
+(3) (137, 211)
+(4) (144, 198)
+= 2
+~ In both given pairs the second number is the first plus 64: 149 + 64 = 213 and 168 + 64 = 232. Check the options: 162 + 60 = 222, 153 + 64 = 217, 137 + 74 = 211 and 144 + 54 = 198. Only (153, 217) has a difference of 64, so it shares the same relationship.
+
+Q 10 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown below.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/c24s1-q10.png
+~ With a vertical mirror MN on the right, the image is a left-right reversal: the order of characters reverses (n, 3, 9, r, f, T, y) and each character is flipped sideways, while nothing turns upside down. Option 2 shows exactly this, with T unchanged because it is symmetric. Option 1 turns f and T upside down, option 3 leaves 9 and 3 unflipped, and option 4 leaves n, r and y unflipped.
+
+Q 11 | rea | Analogy & Classification
+Select the option that is related to the fifth letter-cluster in the same way as the second letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related to the third letter-cluster.
+MEK: NVP :: GYT: TBG :: JWH:?
+(1) QDS
+(2) PCR
+(3) QDT
+(4) PCS
+= 1
+~ Each letter is replaced by its opposite letter in the alphabet (the two positions add up to 27). M(13)→N(14), E(5)→V(22), K(11)→P(16) gives NVP; G→T, Y→B, T→G gives TBG. For JWH: J(10)→Q(17), W(23)→D(4), H(8)→S(19), giving QDS. PCR, QDT and PCS each break the rule in at least one letter.
+
+Q 12 | rea | Syllogism & Statements
+Three statements are given followed by three conclusions numbered I, II and III. Assuming the statements to be true, even if they seem to be at variance with commonly known facts, decide which of the conclusions logically follow(s) from the statements.
+Statements:
+No card is a parcel.
+All cards are envelopes.
+Some envelopes are bags.
+Conclusions:
+I. All envelopes can never be parcels.
+II. No card is a bag.
+III. At least some bags are postcards.
+(1) Only I follows
+(2) Only II follows
+(3) Only I and III follow
+(4) Only II and III follow
+= 1
+~ All cards are envelopes and no card is a parcel, so some envelopes (the cards) are definitely not parcels; therefore "all envelopes are parcels" is impossible and I follows. Cards and bags have no definite relation (some cards may or may not be bags), so II does not follow. Postcards are not mentioned in the statements, so III does not follow. Only I follows.
+
+Q 13 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/c24s1-q13.png
+~ The mirror MN is vertical and on the right, so the image reverses left and right: the order becomes l, g, F, c, b and every letter is laterally inverted. l stays l, g and F appear reversed, c becomes ɔ and b becomes d. Option 1 shows all five changes. Option 2 keeps c and b unchanged, option 3 keeps g and c unchanged, and option 4 keeps g, F and b unchanged.
+
+Q 14 | rea | Non-verbal Reasoning
+Identify the option figure that when put in place of the question mark (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/c24s1-q14.png
+~ Every element moves one step along the path top-left → bottom-left → bottom-right → top-right → centre → top-left, keeping its own direction. For example, the circle goes top-left, bottom-left, bottom-right, top-right, so it comes to the centre next. From figure 4: square (top-left) → bottom-left, down-arrow (bottom-left) → bottom-right, up-arrow (bottom-right) → top-right, circle → centre, triangle (centre) → top-left. Option 2 matches.
+
+Q 15 | rea | Series
+Which of the four options will replace the question mark (?) in the following series?
+UE 88, VG 84, WI 80, XK76, ?
+(1) ZM72
+(2) ZN71
+(3) YN73
+(4) YM72
+= 4
+~ Treat the three parts separately. First letters U, V, W, X move +1, so next is Y. Second letters E, G, I, K move +2, so next is M. The numbers 88, 84, 80, 76 decrease by 4, so next is 72. The missing term is YM72. ZM72 has the wrong first letter, and ZN71 and YN73 break the letter and number patterns.
+
+Q 16 | rea | Series
+Select the option that represents the letters that when placed from left to right in the blanks below will complete the letter series.
+L_P_QS_K_P_S_KP_Q_L_ _PQS
+(1) KPLPLQLSPK
+(2) PKLPQPLSKP
+(3) KPLPQQLPSK
+(4) KPLPQLPSKP
+= 4
+~ Filling the blanks with K, P, L, P, Q, L, P, S, K, P gives L K P P Q S / L K P P Q S / L K P P Q S / L K P P Q S. The series is the group "LKPPQS" repeated four times. Every other option breaks this repetition at some blank, for example option 1 puts L in the fifth blank where Q is needed.
+
+Q 17 | rea | Non-verbal Reasoning
+Identify the figure from the given options, which when put in place of the question mark (?), will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/c24s1-q17.png
+~ Read each figure in the order top-left, top-right, bottom-right, bottom-left, centre: A B C D E, then E A B C D, then D E A B C, then C D E A B. Each time every letter moves one step along this path. The next figure is B C D E A: B top-left, C top-right, D bottom-right, E bottom-left and A in the centre, which is option 2. Options 3 and 4 use mirrored letters, and option 1 has wrong positions.
+
+Q 18 | rea | Non-verbal Reasoning
+Six numbers 21, 22, 23, 24, 25 and 26 are written on different faces of a dice. Three positions of this dice are shown in the figure. Find the number on the face opposite to 24.
+(1) 26
+(2) 25
+(3) 22
+(4) 21
+= 4
+! img/c24s1-q18.png
+~ From the figures, 25 appears with 21, 23, 22 and 24, so the only number left for its opposite face is 26. 21 appears with 23, 25 and 22, and 26 is already opposite 25, so 21 must be opposite 24. The remaining pair is 22 and 23. Hence the number opposite 24 is 21.
+
+Q 19 | rea | Non-verbal Reasoning
+How many triangles are there in the given figure?
+(1) 21
+(2) 20
+(3) 18
+(4) 19
+= 1
+! img/c24s1-q19.png
+~ Top-left square: 4 corner triangles plus the upper-left half of the small overlapping square = 5. V under the top edge: two halves and the whole V = 3. Lower-left: four triangles meeting at the left-edge point, including the tall one made by both slanting lines, plus two halves of the next square = 6. Bottom zig-zag: two small, their combination and the one standing on the bottom edge = 4. Right side: two halves of a small square and one at the right edge = 3. Total 5 + 3 + 6 + 4 + 3 = 21.
+
+Q 20 | rea | Coding-Decoding
+In a certain code language, ‘what where how’ is written as ‘aa dd ff’; ‘where there that’ is written as ‘dd zz pp’ and ‘which what here’ is written as ‘ff kk ll’. How is ‘how’ written in that language?
+(1) aa
+(2) kk
+(3) zz
+(4) ff
+= 1
+~ Compare sentences that share a word. "where" is common to the first two sentences and "dd" is common to their codes, so where = dd. "what" is common to the first and third, and "ff" is common to their codes, so what = ff. In the first sentence the remaining word "how" must take the remaining code "aa". So how = aa.
+
+Q 21 | rea | Syllogism & Statements
+Three statements are given followed by three conclusions numbered I, II and III. Assuming the statements to be true, even if they seem to be at variance with commonly known facts, decide which of the conclusions logically follow(s) from the statements.
+Statements:
+Some tears are drops.
+Some drops are streams.
+All streams are rivers.
+Conclusions:
+I. All tears can never be rivers.
+II. Some drops are rivers.
+III. All tears being streams is a possibility.
+(1) Only conclusion I follows
+(2) Both II and III conclusion follow
+(3) Only conclusion III follows
+(4) Both I and II conclusion follow
+= 2
+~ Some drops are streams and all streams are rivers, so those drops are rivers: II follows. Tears and streams have no definite relation, so all tears being streams is possible: III follows. Since all tears could be streams (and so rivers), "all tears can never be rivers" is false, so I does not follow. Hence both II and III follow.
+
+Q 22 | rea | Series
+Which of the following terms will replace the question mark (?) in the given series?
+YZUW, ?, QTQU, MQOT, INMS
+(1) UWSV
+(2) UWVS
+(3) USWV
+(4) WUSV
+= 1
+~ Follow each letter position separately. First letters: Y, ?, Q, M, I fall by 4, so Y − 4 = U. Second: Z, ?, T, Q, N fall by 3, so Z − 3 = W. Third: U, ?, Q, O, M fall by 2, so U − 2 = S. Fourth: W, ?, U, T, S fall by 1, so W − 1 = V. The missing term is UWSV; the other options contain the same letters in a wrong order.
+
+Q 23 | rea | Blood Relations & Directions
+In a certain code language,
+‘A + B’ means ‘A is the mother of B’,
+‘A − B’ means ‘A is the father of B’,
+‘A $ B’ means ‘A is the son of B’,
+‘A % B’ means ‘A is the sister of B’,
+‘A / B’ means ‘A is the wife of B’ and
+‘A = B’ means ‘A is the brother of B’.
+Which of the following means A is the daughter of K?
+i. A + K / J − P = D
+ii. J % P = K + A = D
+iii. K + A / P − D % J
+iv. D + K = A / P − J
+(1) i
+(2) iii
+(3) ii
+(4) iv
+= 2
+~ Decode iii: K + A means K is the mother of A, and A / P means A is the wife of P, so A is female. Hence A is the daughter of K. In i, A is the mother of K. In ii, K + A = D makes A the brother of D, so A is K's son. In iv, D is the mother of K and A, and K is A's brother, so A is D's daughter, not K's.
+
+Q 24 | rea | Analogy & Classification
+19 is related to 209 following a certain logic. Following the same logic, 27 is related to 297. To which of the following is 61 related, following the same logic?
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /deleting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(1) 653
+(2) 600
+(3) 571
+(4) 671
+= 4
+~ The second number is 11 times the first: 19 × 11 = 209 and 27 × 11 = 297. Applying the same rule, 61 × 11 = 671. A quick check for multiplying a two-digit number by 11: write the digits apart and put their sum in between (6, 6 + 1, 1 = 671), but the rule itself works on the whole number.
+
+Q 25 | rea | Series
+Which of the following numbers will replace the question mark (?) in the given series?
+1, 3, 10, 41, ?, 1237
+(1) 202
+(2) 210
+(3) 200
+(4) 206
+= 4
+~ Each term is the previous term multiplied by an increasing number, plus 1: 1 × 2 + 1 = 3, 3 × 3 + 1 = 10, 10 × 4 + 1 = 41, 41 × 5 + 1 = 206, and 206 × 6 + 1 = 1237. The last term confirms the rule, so the missing number is 206.
+
+Q 26 | geo | Environment & Ecology
+In which year was Project Tiger launched in India?
+(1) 1973
+(2) 1970
+(3) 1972
+(4) 1985
+= 1
+~ Project Tiger, a centrally sponsored scheme of the Union environment ministry, was launched on 1 April 1973 with nine tiger reserves, including Jim Corbett National Park, Kanha, Manas and the Sundarbans. The Wildlife (Protection) Act had been passed a year earlier, in 1972, which makes 1972 a tempting option. Since 2006 the scheme has been run by the statutory National Tiger Conservation Authority (NTCA), and the network has grown to more than 50 tiger reserves.
+
+Q 27 | cur | Static GK & Culture
+Lathmar Holi is primarily celebrated in the state of:
+(1) Karnataka
+(2) Himachal Pradesh
+(3) Arunachal Pradesh
+(4) Uttar Pradesh
+= 4
+~ Lathmar Holi is played in the Braj region of Uttar Pradesh, at Barsana (Radha's village) and Nandgaon (Krishna's village) in Mathura district, a few days before the main Holi festival. Recalling the legend of Krishna and his friends teasing Radha and the gopis, the women of Barsana playfully beat the visiting men of Nandgaon with lathis (sticks) while the men protect themselves with shields; the next day the roles are repeated at Nandgaon. Songs, colours and sweets accompany the festivities.
+
+Q 28 | cur | Awards, Books & Persons
+Which of the following awards was won by Lata Mangeshkar in the year 2001?
+(1) Dadasaheb Phalke Award
+(2) Padma Vibhushan
+(3) Bharat Ratna
+(4) Filmfare Lifetime Achievement Award
+= 3
+~ Lata Mangeshkar, the "Nightingale of India", received the Bharat Ratna, India's highest civilian honour, in 2001, the same year as shehnai maestro Ustad Bismillah Khan; she was the second singer to receive it after M.S. Subbulakshmi (1998). Her other honours came earlier: Padma Bhushan (1969), Dadasaheb Phalke Award (1989), Filmfare Lifetime Achievement Award (1993) and Padma Vibhushan (1999). She died in February 2022.
+
+Q 29 | ih | Ancient India
+Details about Sudarshana lake is given in a rock inscription at Girnar (Junagarh), which was composed to record the achievements of the Shaka ruler ______.
+(1) Chashtana
+(2) Rudradaman I
+(3) Rudrasimha III
+(4) Maues
+= 2
+~ The Junagadh (Girnar) rock inscription of Rudradaman I, the Western Kshatrapa (Shaka) ruler, is dated Saka year 72 (150 CE) and is the earliest long inscription in chaste Sanskrit. It records that the Sudarshana lake, built by Chandragupta Maurya's governor Pushyagupta and provided with conduits under Ashoka, was breached in a storm and repaired by Rudradaman's governor Suvishakha. Chashtana, his grandfather, founded this Kshatrapa line, and Maues was an Indo-Scythian king of the north-west.
+
+Q 30 | eco | Money, Banking & Finance
+______ is an industry association and self-regulatory organisation (SRO) whose primary objective is to work towards the robust development of the microfinance sector.
+(1) NABARD
+(2) Self-help Group Association
+(3) Microfinance and Investments Regulatory Authority
+(4) Microfinance Institutions Network
+= 4
+~ The Microfinance Institutions Network (MFIN), set up in 2009 as the association of NBFC-MFIs, became in June 2014 the first industry association recognised by the Reserve Bank of India as a self-regulatory organisation (SRO) for the microfinance sector; Sa-Dhan was also recognised in 2015. MFIN frames a code of conduct, monitors members' compliance, handles grievances and works with regulators for responsible growth of microfinance. NABARD is a statutory development bank for agriculture and rural development, not an industry SRO.
+
+Q 31 | pol | Judiciary & Constitutional Bodies
+Which article has a similar provision to that of Article 32 and deals with writ jurisdiction?
+(1) Article 228
+(2) Article 227
+(3) Article 226
+(4) Article 225
+= 3
+~ Article 32 lets a person move the Supreme Court to enforce Fundamental Rights through writs such as habeas corpus, mandamus, prohibition, certiorari and quo warranto. Article 226 gives every High Court a similar power to issue these writs, and it is wider, since High Courts can issue them for Fundamental Rights and "for any other purpose", that is, other legal rights. Article 227 gives High Courts superintendence over subordinate courts, Article 228 lets them withdraw cases involving substantial constitutional questions, and Article 225 continues their existing jurisdiction.
+
+Q 32 | pol | Government & Parliament
+Which of the following is NOT a condition for the President’s office in India?
+(1) He shall not hold any office of profit.
+(2) The allowances shall not be diminished during his term of office.
+(3) He shall not be entitled, without payment of rent, to use his official residence.
+(4) He shall not be a member of either House of the Parliament.
+= 3
+~ Article 59 lays down the conditions of the President's office: he shall not be a member of either House of Parliament or of a State Legislature, shall not hold any other office of profit, shall be entitled without payment of rent to the use of his official residences along with emoluments and allowances fixed by Parliament, and these emoluments and allowances shall not be diminished during his term of office. Option 3 reverses the rent-free residence provision, so it is not a condition.
+
+Q 33 | sci | Biology
+Which of the following statements best defines the monoecious?
+(1) A flower with gynoecium only
+(2) A flower with androecium only
+(3) A flower with both androecium and gynoecium
+(4) A flower with dithecous
+= 3
+~ Monoecious ("one house") means that male and female reproductive organs are borne on the same individual; NCERT equates it with the bisexual condition, and option 3, a flower with both androecium (stamens) and gynoecium (carpels), is the only choice showing both. Strictly, botanists call such a flower bisexual or perfect and use "monoecious" for a plant bearing separate male and female flowers, as in maize, cucurbits and coconut. Options 1 and 2 are unisexual (pistillate, staminate) flowers, and "dithecous" describes a typical angiosperm anther (with two thecae), not a type of flower.
+
+Q 34 | cur | Awards, Books & Persons
+Mohan Veena player, Pandit Vishwa Mohan Bhatt won the ______ Award in the year 1994.
+(1) Grammy
+(2) Sangita Kalanidhi
+(3) Oscar
+(4) Sangeet Natak Akademi
+= 1
+~ Pandit Vishwa Mohan Bhatt, a disciple of Pandit Ravi Shankar, created the Mohan veena, a modified slide guitar with added sympathetic and drone strings, played in the Hindustani style. In 1994 he won the Grammy Award for Best World Music Album for "A Meeting by the River", recorded with the American guitarist Ry Cooder. He later received the Padma Shri (2002) and the Padma Bhushan (2017). Sangita Kalanidhi is the Madras Music Academy's title for Carnatic musicians.
+
+Q 35 | cur | National
+Who is Union Minister of State (Independent Charge) for Science and Technology as of July 2023?
+(1) Dharmendra Pradhan
+(2) Jitendra Singh
+(3) Ashwini Vaishnaw
+(4) Ramesh Pokhriyal
+= 2
+~ Dr Jitendra Singh has been Minister of State (Independent Charge) for Science and Technology and for Earth Sciences since the July 2021 reshuffle, and is also Minister of State in the PMO and for Personnel, Atomic Energy and Space; he kept these posts in the government formed in June 2024. In July 2023 Dharmendra Pradhan was Education Minister, Ashwini Vaishnaw held Railways and Electronics & IT, and Ramesh Pokhriyal 'Nishank' was a former Education Minister.
+
+Q 36 | sci | Chemistry
+Which of the following decomposition reactions is NOT a redox reaction?
+(1) Decomposition of sodium hydride
+(2) Decomposition of calcium carbonate
+(3) Decomposition of potassium chlorate
+(4) Decomposition of dihydrogen monoxide
+= 2
+~ A reaction is redox only if oxidation numbers change. In CaCO₃ → CaO + CO₂, calcium stays +2, carbon +4 and oxygen −2, so nothing is oxidised or reduced; NCERT cites it as a decomposition that is not a redox reaction. The others are redox: 2NaH → 2Na + H₂ (Na +1 to 0, H −1 to 0), 2KClO₃ → 2KCl + 3O₂ (Cl +5 to −1, O −2 to 0) and 2H₂O → 2H₂ + O₂ (H +1 to 0, O −2 to 0); dihydrogen monoxide is water.
+
+Q 37 | ih | Modern India
+Who among the following has authored the play ‘Nil Darpan’?
+(1) Chittaranjan Das
+(2) Motilal Nehru
+(3) Dinabandhu Mitra
+(4) Sarojini Naidu
+= 3
+~ Nil Darpan ("The Mirror of Indigo"), a Bengali play by Dinabandhu Mitra published in 1860, portrayed the oppression of indigo cultivators by European planters in Bengal and won wide sympathy for the Indigo Revolt of 1859–60. Its English translation, attributed to Michael Madhusudan Dutt, was published by Rev. James Long, who was tried and punished for it. Chittaranjan Das and Motilal Nehru founded the Swaraj Party in 1923, and Sarojini Naidu was a poet and Congress leader.
+
+Q 38 | ih | Modern India
+Who among the following formed the Bihar Provincial Kisan Sabha in 1929?
+(1) Jayprakash Narayan
+(2) JM Sengupta
+(3) Kunwar Singh
+(4) Swami Sahajanand Saraswati
+= 4
+~ Swami Sahajanand Saraswati founded the Bihar Provincial Kisan Sabha in 1929 to mobilise peasants against zamindari oppression and to protect tenants' occupancy rights. He later became the first President of the All India Kisan Sabha, formed at Lucknow in 1936 with N.G. Ranga as general secretary. Kunwar Singh led the 1857 revolt in Bihar, J.M. Sengupta was a Bengal Congress leader, and Jayaprakash Narayan was a founder of the Congress Socialist Party (1934).
+
+Q 39 | geo | Indian Geography
+Which plateaus are very fertile because they are rich in black soil that is very good for farming?
+(1) Deccan lava plateau
+(2) African plateau
+(3) Ethiopian plateau
+(4) Katanga plateau
+= 1
+~ The Deccan lava plateau of north-western peninsular India, spread over Maharashtra and parts of Gujarat, Madhya Pradesh and neighbouring states, was built by fissure eruptions of basalt lava, the Deccan Traps. Weathering of this basalt produced black soil, or regur, which is clayey, rich in lime, iron, magnesia and potash and holds moisture well, so it is ideal for cotton and is called black cotton soil. NCERT cites lava plateaus as rich in fertile black soil, whereas the African plateau is known mainly for gold and diamonds and the Katanga plateau for copper.
+
+Q 40 | sci | Chemistry
+Which of the following is a correct order of basicity?
+(1) LiOH>NaOH>KOH>CsOH
+(2) KOH>CsOH>NaOH>LiOH
+(3) LiOH>KOH>CsOH>NaOH
+(4) CsOH>KOH>NaOH>LiOH
+= 4
+~ Alkali metal hydroxides are strong bases, and their basic strength increases down group 1: LiOH < NaOH < KOH < RbOH < CsOH. Going down the group, the atomic size increases and the ionisation enthalpy decreases, so the M–OH bond becomes more ionic and weaker and releases OH⁻ ions more readily in water. Hence CsOH is the strongest base and LiOH, with the small, highly polarising Li⁺ ion, is the weakest. Option 1 gives the exact reverse order.
+
+Q 41 | sci | Biology
+Which of the following pairs is INCORRECT regarding the grade of organisation and its example?
+(1) Cell-tissue grade organisation - Jellyfish
+(2) Cellular grade organisation - Sycon
+(3) Protoplasmic grade organisation - Paramecium
+(4) Tissue-organ grade organisation - Euplectella
+= 4
+~ Animals are grouped by grade of organisation: protoplasmic grade in protozoans such as Paramecium and Amoeba, where a single cell does all functions; cellular grade in sponges (Porifera) such as Sycon, with loose aggregates of cells; cell-tissue grade in cnidarians such as Hydra and jellyfish; tissue-organ grade in flatworms such as Planaria and tapeworm; and organ-system grade in higher animals. Euplectella (Venus's flower basket) is a glass sponge, so it belongs to the cellular grade, not the tissue-organ grade.
+
+Q 42 | cur | Sports
+The head office of Board of Control for Cricket in India (BCCI) is located in ______.
+(1) Kolkata
+(2) Chennai
+(3) Mumbai
+(4) New Delhi
+= 3
+~ The Board of Control for Cricket in India (BCCI), formed in December 1928, has its headquarters at the Cricket Centre, Wankhede Stadium, Churchgate, in Mumbai. It is registered as a society under the Tamil Nadu Societies Registration Act, which makes Chennai a tempting option, and it is a full member of the International Cricket Council. Kolkata's Eden Gardens is the home of the Cricket Association of Bengal, not the BCCI's head office.
+
+Q 43 | geo | Indian Geography
+When the analysis of population density is done by calculating it through net cultivated area, then the measure is termed as:
+(1) Net density
+(2) Gross density
+(3) Agricultural density
+(4) Physiological density
+= 4
+~ NCERT (India: People and Economy) defines physiological density as total population divided by net cultivated area; it shows the pressure of population on the land actually under crops. Agricultural density is different: it divides only the agricultural population (cultivators, agricultural labourers and their families) by net cultivable area. Arithmetic or gross density is total population per unit of total area, so only physiological density uses total population over net cultivated area.
+
+Q 44 | ih | Ancient India
+Mahendravarman I was the ruler of which of the following dynasties?
+(1) Pallava
+(2) Pandya
+(3) Chalukya
+(4) Chola
+= 1
+~ Mahendravarman I (c. 600–630 CE), son of Simhavishnu, was a Pallava king of Kanchipuram. A patron of art and letters, he wrote the Sanskrit satirical play Mattavilasa Prahasana, introduced rock-cut temples in the Tamil region, such as the one at Mandagapattu, and bore titles like Vichitrachitta. Under the influence of the saint Appar he turned from Jainism to Shaivism. He fought the Chalukya king Pulakeshin II, a rivalry continued by his son Narasimhavarman I.
+
+Q 45 | eco | Agriculture, Industry & Trade
+What challenge does foreign investment often face in India?
+(1) Excessive foreign competition
+(2) Lack of skilled labour
+(3) Lack of consumer base
+(4) Inconsistent regulatory environment
+= 4
+~ Foreign investors in India often cite an inconsistent or unpredictable regulatory environment: frequent changes in rules, differing Central and state requirements, complex approvals and slow contract enforcement. A well-known example is the 2012 retrospective tax amendment that followed the Vodafone case, withdrawn only in 2021. India's large consumer market and big pool of workers attract investors rather than deter them, and foreign competition is not the main hurdle, so option 4 fits.
+
+Q 46 | eco | Agriculture, Industry & Trade
+Which of the following states is the biggest producer of Pulses?
+(1) Bihar
+(2) Madhya Pradesh
+(3) Punjab
+(4) Haryana
+= 2
+~ Madhya Pradesh is India's largest producer of pulses: in 2023-24 it produced about 6.2 million tonnes, roughly a quarter (25%) of national output, followed by Maharashtra (16%) and Rajasthan (15%). It leads in gram (chickpea), the most important pulse crop, and is also a leading producer of urad and masoor. Pulses are mostly rainfed crops grown on drylands in both the kharif and rabi seasons; Punjab and Haryana mainly grow irrigated wheat and rice, and Bihar produces far less.
+
+Q 47 | ih | Modern India
+Who founded the Prarthana Samaj in Mumbai in 1867?
+(1) Gopal Krishna Gokhale
+(2) Shri Ram Bajpai
+(3) Atmaram Pandurang
+(4) Ram Mohan Roy
+= 3
+~ The Prarthana Samaj ("prayer society") was founded in Bombay in 1867 by Dr Atmaram Pandurang, inspired by Keshab Chandra Sen of the Brahmo Samaj. It preached worship of one God and worked for social reform: inter-caste dining and marriage, widow remarriage, women's education and an end to child marriage. M.G. Ranade and R.G. Bhandarkar later became its leading figures. Raja Ram Mohan Roy founded the Brahmo Sabha (1828) in Calcutta, and Gokhale founded the Servants of India Society (1905).
+
+Q 48 | cur | National
+Who is the Chief Minister of Tamil Nadu as of July 2023?
+(1) KN Nehru
+(2) Pinarayi Vijayan
+(3) M Yedurappa
+(4) MK Stalin
+= 4
+~ M.K. Stalin, president of the Dravida Munnetra Kazhagam (DMK) and son of former Chief Minister M. Karunanidhi, has been Chief Minister of Tamil Nadu since 7 May 2021, after the DMK-led alliance won the 2021 Assembly election, and he was still in office in September 2024. K.N. Nehru is a DMK minister in his cabinet, Pinarayi Vijayan is Chief Minister of Kerala, and B.S. Yediyurappa ("M Yedurappa" as printed) is a former Chief Minister of Karnataka.
+
+Q 49 | cur | Sports
+In which city was the first golf club of India situated?
+(1) Kolkata
+(2) Mysore
+(3) Shimla
+(4) Gulmarg
+= 1
+~ India's first golf club, the Royal Calcutta Golf Club, was founded in 1829 at Dum Dum in Calcutta (Kolkata), and it is regarded as the first golf club established outside the British Isles. It later moved to its present course at Tollygunge in south Kolkata. Hill-station courses such as Naldehra near Shimla and Gulmarg in Kashmir are famous, but they were laid out decades later, and Mysore's course is also a later one.
+
+Q 50 | cur | Awards, Books & Persons
+Which Indian among the following has his name in Time Magazine’s list of ‘100 most influential people of 2021’?
+(1) Amit Shah
+(2) Narendra Modi
+(3) Neeraj Chopra
+(4) Virat Kohli
+= 2
+~ TIME magazine's list of the 100 most influential people of 2021, released in September 2021, named three Indians: Prime Minister Narendra Modi, West Bengal Chief Minister Mamata Banerjee and Serum Institute of India CEO Adar Poonawalla. Modi has featured on the list several times. Neeraj Chopra won India's first Olympic gold in athletics at Tokyo in August 2021 but was not on that list, and neither were Amit Shah nor Virat Kohli.
+
+Q 51 | qa | Percentage, Profit & Interest
+A grocer professes to sell rice at the cost price, but uses a fake weight of 870 g for 1 kg. Find his profit percentage (correct to two decimal places).
+(1) 11.11%
+(2) 14.94%
+(3) 15.11%
+(4) 18.21%
+= 2
+~ A dealer who sells at cost price but uses a false weight gains the weight he holds back. He hands over 870 g but charges for 1000 g, so he gains 130 g on goods that cost him 870 g. Profit % = 130/870 × 100 = 14.942… ≈ 14.94%. The base is the weight actually given (870 g); dividing by 1000 g would give only 13%.
+
+Q 52 | qa | Trigonometry & Heights
+The value of cos²29° + cos²61° is:
+(1) √3/2
+(2) 2
+(3) 0
+(4) 1
+= 4
+~ The angles are complementary: 29° + 61° = 90°, so cos 61° = cos(90° − 29°) = sin 29°. The expression becomes cos²29° + sin²29°, which equals 1 by the identity sin²θ + cos²θ = 1. The same idea works for any pair of angles adding up to 90°, for example sin²20° + sin²70° = 1.
+
+Q 53 | qa | Time, Work, Speed & Distance
+In a circular race of 840 m, A and B start running in the same direction at the same time from the same point at the speeds of 6 m/s and 12 m/s, respectively. After how much time will they meet next?
+(1) 140 s
+(2) 40 s
+(3) 70 s
+(4) 20 s
+= 1
+~ Running in the same direction, B gains on A at the relative speed 12 − 6 = 6 m/s. They meet again when B has gained one full lap of 840 m, which takes 840/6 = 140 s. Check: in 140 s A runs 840 m (1 lap) and B runs 1680 m (2 laps), so both are together again at the start. 70 s is only the time B needs for one lap.
+
+Q 54 | qa | Geometry
+Let O be the centre of the circle and AB and CD are two parallel chords on the same side of the radius. OP is perpendicular to AB and OQ is perpendicular to CD. If AB = 10 cm, CD = 24 cm and PQ = 7 cm, then the diameter (in cm) of the circle is equal to:
+(1) 24
+(2) 13
+(3) 12
+(4) 26
+= 4
+~ The perpendicular from the centre bisects a chord, so AP = 5 cm and CQ = 12 cm. "Same side of the radius" here means the same side of the centre; the longer chord is nearer the centre, so if OP = x then OQ = x − 7. Then r² = 5² + x² = 12² + (x − 7)², so 25 + x² = 144 + x² − 14x + 49, which gives x = 12. Radius = √(25 + 144) = 13 cm, so the diameter = 26 cm (13, the radius, is the trap).
+
+Q 55 | qa | Geometry
+Which of the following statements is sufficient to conclude that two triangles are congruent?
+(1) One side and one angle of both triangles are equal.
+(2) These have two equal sides and the same perimeter.
+(3) These have the same area and the same base.
+(4) These have the same base and the same height.
+= 2
+~ Congruence needs one of the standard tests: SSS, SAS, ASA/AAS or RHS. If two sides of one triangle equal two sides of the other and the perimeters are equal, the third sides are also equal (perimeter minus the two equal sides), so the triangles are congruent by SSS. One side and one angle are not enough. The same base with the same area, or the same base and height, only gives triangles of equal area, which can have different shapes.
+
+Q 56 | qa | Data Interpretation & Statistics
+The given table shows the percentage of marks obtained by three students in three different subjects in an institute.
+(maximum marks are given in brackets)
+Student/Subject | History (175) | Geography (200) | Botany (125)
+Ram | 54 | 87 | 71
+Mohan | 51 | 79 | 78
+Shyam | 75 | 49 | 76
+If in order to pass the exam, a minimum of 105 marks are needed in History, how many students pass in the exam?
+(1) 2
+(2) 3
+(3) 1
+(4) 0
+= 3
+~ The table gives percentages, so convert the pass mark into a percentage: 105 out of 175 = 105/175 × 100 = 60%. In History, Ram has 54%, Mohan 51% and Shyam 75%. Only Shyam reaches 60% (75% of 175 = 131.25 marks), while Ram gets 94.5 and Mohan 89.25 marks. So only 1 student passes. The Geography and Botany columns are not needed for this condition.
+
+Q 57 | qa | Time, Work, Speed & Distance
+Fill pipe P is 21 times faster than fill pipe Q. If Q can fill a cistern in 110 minutes, find the time it takes to fill the cistern when both fill pipes are opened together.
+(1) 3 minutes
+(2) 5 minutes
+(3) 4 minutes
+(4) 6 minutes
+= 2
+~ Here "21 times faster" is taken, as SSC intends, to mean that P's rate of filling is 21 times Q's rate. Q fills 1/110 of the cistern per minute, so P fills 21/110 per minute. Together they fill 1/110 + 21/110 = 22/110 = 1/5 of the cistern per minute, so the cistern is full in 5 minutes. Reading "21 times faster" strictly as 22 times as fast would give 110/23 ≈ 4.8 minutes, which is not an option.
+
+Q 58 | qa | Data Interpretation & Statistics
+The following table shows the marks (out of 100) obtained by five students in five different subjects.
+Student/Subject | Maths | Physics | Chemistry | English | Physical Education
+Tarun | 65 | 80 | 75 | 85 | 90
+Rohit | 69 | 76 | 80 | 88 | 94
+Mohit | 73 | 84 | 77 | 90 | 95
+Shobhit | 76 | 85 | 76 | 86 | 78
+Sumit | 90 | 88 | 78 | 82 | 68
+Who obtained 79% marks in all the subjects taken together?
+(1) Rohit
+(2) Tarun
+(3) Mohit
+(4) Sumit
+= 2
+~ Each subject is out of 100, so the overall percentage is the total of the five marks out of 500. Tarun: 65 + 80 + 75 + 85 + 90 = 395, and 395/500 × 100 = 79%. The others score more: Rohit 407 (81.4%), Mohit 419 (83.8%), Sumit 406 (81.2%) and Shobhit 401 (80.2%). Hence Tarun is the student with 79%.
+
+Q 59 | qa | Algebra
+R pays ₹100 to P with ₹5, ₹2 and ₹1 coins. The total number of coins used for paying are 40. What is the number of coins of denomination ₹5 in the payment?
+(1) 13
+(2) 17
+(3) 16
+(4) 18
+= 1
+~ Let the numbers of ₹5, ₹2 and ₹1 coins be a, b and c. Then a + b + c = 40 and 5a + 2b + c = 100. Subtracting gives 4a + b = 60, so b = 60 − 4a and c = 3a − 20. Neither can be negative, so 7 ≤ a ≤ 15. For 16, 17 or 18, b would be negative, so 13 is the only possible option: b = 8, c = 19 (65 + 16 + 19 = ₹100). The data also allow values not offered, such as 10.
+
+Q 60 | qa | Mensuration
+The radii of the two cones are in the ratio of 2 : 5 and their volumes are in the ratio of 3 : 5. What is the ratio of their heights?
+(1) 13 : 11
+(2) 4 : 11
+(3) 11 : 15
+(4) 15 : 4
+= 4
+~ Volume of a cone = (1/3)πr²h, so h is proportional to V/r². Hence h₁ : h₂ = (V₁/V₂) ÷ (r₁/r₂)² = (3/5) ÷ (2/5)² = (3/5) ÷ (4/25) = (3/5) × (25/4) = 15/4. The heights are in the ratio 15 : 4. A common slip is to divide by the ratio of the radii without squaring it, which gives 3 : 2.
+
+Q 61 | qa | Number System & Simplification
+Which of the following can be the value of ‘k’ so that the number 217924k is divisible by 6?
+(1) 2
+(2) 6
+(3) 0
+(4) 4
+= 1
+~ A number is divisible by 6 when it is divisible by both 2 and 3. For 2, the last digit k must be even. For 3, the digit sum 2 + 1 + 7 + 9 + 2 + 4 + k = 25 + k must be a multiple of 3, so k = 2, 5 or 8. The even values are 2 and 8, and only 2 is offered (2179242 = 6 × 363207). For k = 6, 0 and 4 the digit sums 31, 25 and 29 are not multiples of 3.
+
+Q 62 | qa | Percentage, Profit & Interest
+In an election between two candidates, y% of the voters did not vote. 10% of the votes cast were declared invalid, while all the valid votes were cast in favour of either of the two candidates. The candidate who got 59.375% of the valid votes cast was declared elected by 2484 votes. If the number of people eligible to vote in that election was 16,000, what is the value of y?
+(1) 8
+(2) 8.4
+(3) 7.5
+(4) 7.2
+= 1
+~ The winner got 59.375% of the valid votes and the loser 100 − 59.375 = 40.625%, so the margin is 18.75% of the valid votes = 2484. Valid votes = 2484/0.1875 = 13,248. These are 90% of the votes cast, so votes cast = 13,248/0.9 = 14,720. People who did not vote = 16,000 − 14,720 = 1,280, which is 1,280/16,000 × 100 = 8% of those eligible. Hence y = 8.
+
+Q 63 | qa | Percentage, Profit & Interest
+An article is marked at ₹550. If it is sold at a discount of 40%, then the selling price becomes 10% more than its cost price. What is the cost price (in ₹)?
+(1) 330
+(2) 220
+(3) 300
+(4) 200
+= 3
+~ Selling price after a 40% discount = 60% of ₹550 = ₹330. This is 10% more than the cost price, so SP = 110% of CP and CP = 330/1.1 = ₹300. Check: 300 + 10% of 300 = 300 + 30 = ₹330. The option 330 is the selling price, not the cost price; 220 is only the amount of the discount.
+
+Q 64 | qa | Geometry
+If the sum of two sides of an equilateral triangle is 16 cm, then find the third side.
+(1) Cannot be found
+(2) 16 cm
+(3) 4 cm
+(4) 8 cm
+= 4
+~ All three sides of an equilateral triangle are equal. If two sides together measure 16 cm, each side is 16/2 = 8 cm, so the third side is also 8 cm (perimeter 24 cm). "Cannot be found" would be right for a general triangle, where the third side can only be bounded between the difference and the sum of the other two, but not for an equilateral one.
+
+Q 65 | qa | Algebra
+Simplify (x² − 9)/(x + 3)
+(1) x − 9
+(2) x + 3
+(3) x − 3
+(4) √(x² − 9)
+= 3
+~ Factorise the numerator as a difference of squares: x² − 9 = x² − 3² = (x − 3)(x + 3). Then (x² − 9)/(x + 3) = (x − 3)(x + 3)/(x + 3) = x − 3, for x ≠ −3. Only common factors can be cancelled; dividing the terms separately or taking a square root, as in the other options, is not a valid step.
+
+Q 66 | qa | Data Interpretation & Statistics
+The following table shows the total candidates appeared and number of candidates present, in different exam centres – P, Q and R.
+Study the table and answer the question that follows.
+Year | P Total | P Present | Q Total | Q Present | R Total | R Present
+2016 | 45 | 42 | 56 | 45 | 55 | 50
+2017 | 50 | 45 | 75 | 55 | 45 | 40
+2018 | 64 | 60 | 65 | 45 | 65 | 55
+2019 | 80 | 69 | 84 | 72 | 70 | 62
+2020 | 55 | 44 | 80 | 66 | 90 | 85
+‘Total’ denotes total candidates applied for the centre, ‘Present’ denotes the candidates appeared.
+In which year was the number of absentees the second highest in total of all centres?
+(1) 2018
+(2) 2019
+(3) 2020
+(4) 2017
+= 2
+~ Absentees = Total − Present at each centre, added over P, Q and R. 2016: 3 + 11 + 5 = 19; 2017: 5 + 20 + 5 = 30; 2018: 4 + 20 + 10 = 34; 2019: 11 + 12 + 8 = 31; 2020: 11 + 14 + 5 = 30. The highest is 2018 (34) and the second highest is 2019 (31). Option 2018 is the trap for anyone who answers "highest" instead of "second highest".
+
+Q 67 | qa | Geometry
+The distance between the centres of two circles of radii 22 cm and 10 cm is 37 cm. If the points of contact of a direct common tangent to these circles are M and Q, then find the length of the line segment MQ.
+(1) 39 cm
+(2) 29 cm
+(3) 35 cm
+(4) 25 cm
+= 3
+~ Length of a direct common tangent = √(d² − (r₁ − r₂)²), where d is the distance between the centres. Here d = 37 cm and r₁ − r₂ = 22 − 10 = 12 cm, so MQ = √(37² − 12²) = √(1369 − 144) = √1225 = 35 cm. A transverse common tangent would use (r₁ + r₂)² instead, giving √(1369 − 1024) = √345 ≈ 18.6 cm, which is not what is asked.
+
+Q 68 | qa | Trigonometry & Heights
+The value of sin²30 − sin²40 + sin²45 − sin²55 − sin²35 + sin²45 − sin²50 + sin²60 is:
+(1) 4
+(2) 0
+(3) 1
+(4) 2
+= 2
+~ The angles are in degrees. Use sin²θ + sin²(90° − θ) = sin²θ + cos²θ = 1 and regroup the terms into complementary pairs: (sin²30 + sin²60) + (sin²45 + sin²45) − (sin²40 + sin²50) − (sin²55 + sin²35). Each bracket equals 1 (sin²45 = 1/2, taken twice, also gives 1). So the value is 1 + 1 − 1 − 1 = 0.
+
+Q 69 | qa | Ratio, Average & Mixtures
+The average marks (out of 100) of boys and girls in an examination are 75 and 80, respectively. If the average marks of all the students in that examination are 78. Find the ratio of the number of boys to the number of girls.
+(1) 1 : 3
+(2) 2 : 3
+(3) 1 : 2
+(4) 3 : 4
+= 2
+~ Use alligation. Boys average 75, girls 80 and all students 78, so boys : girls = (80 − 78) : (78 − 75) = 2 : 3. Check: with 2 boys and 3 girls the total is 2 × 75 + 3 × 80 = 150 + 240 = 390, and 390/5 = 78. The overall average lies nearer the girls' 80, so there are more girls than boys; the other ratios fail the check.
+
+Q 70 | qa | Time, Work, Speed & Distance
+Rajesh, in his printing press, got an order to print some books, out of which he completed 17/27 of the order in 34 days. In how many days did he complete the entire order of printing?
+(1) 54
+(2) 60
+(3) 56
+(4) 20
+= 1
+~ At a constant rate of work, 17/27 of the order takes 34 days, so 1/27 of the order takes 34/17 = 2 days. The whole order (27/27) therefore takes 27 × 2 = 54 days. Equivalently, total time = 34 ÷ (17/27) = 34 × 27/17 = 54 days. The remaining 10/27 of the order took 20 days, which is why 20 appears as a distractor.
+
+Q 71 | qa | Algebra
+Simplify (x³ + 15x² + 75x + 125)/(x² − 25) × (x − 5).
+(1) x² + 5x + 25
+(2) x² − 25
+(3) x² + 10x + 25
+(4) x² + 25
+= 3
+~ The numerator is a perfect cube: x³ + 15x² + 75x + 125 = x³ + 3·x²·5 + 3·x·5² + 5³ = (x + 5)³. The denominator is x² − 25 = (x − 5)(x + 5). So the expression = (x + 5)³/[(x − 5)(x + 5)] × (x − 5) = (x + 5)² = x² + 10x + 25. Option x² + 25 forgets the middle term 2 × x × 5 = 10x.
+
+Q 72 | qa | Trigonometry & Heights
+If cosec θ = 5/3, then evaluate (sec²θ − 1) × cot²θ × (1 + cot²θ).
+(1) 9/16
+(2) 25/9
+(3) 25/16
+(4) 4/5
+= 2
+~ Use the identities sec²θ − 1 = tan²θ and 1 + cot²θ = cosec²θ. The expression becomes tan²θ × cot²θ × cosec²θ, and since tan θ × cot θ = 1 it reduces to cosec²θ = (5/3)² = 25/9. Check with sin θ = 3/5: tan²θ = 9/16, cot²θ = 16/9 and cosec²θ = 25/9, whose product is 25/9.
+
+Q 73 | qa | Algebra
+Which of the following can be the value of k, if (88 ÷ 8 × k − 3 × 3)/(6² − 7 × 5 + k²) = 1?
+(1) 2,7
+(2) 4,7
+(3) 3,10
+(4) 1,10
+= 4
+~ Apply BODMAS (÷ and × from left to right before − and +). Numerator: 88 ÷ 8 × k − 3 × 3 = 11k − 9. Denominator: 6² − 7 × 5 + k² = 36 − 35 + k² = 1 + k². Setting the fraction equal to 1 gives 11k − 9 = 1 + k², i.e. k² − 11k + 10 = 0, so (k − 1)(k − 10) = 0 and k = 1 or 10. Check k = 10: (110 − 9)/(1 + 100) = 101/101 = 1.
+
+Q 74 | qa | Data Interpretation & Statistics
+Read the given information and answer the question that follows.
+The following table gives the percentage of marks obtained by seven students in six different subjects in an examination.
+The number in the brackets give the maximum marks in each subject.
+Student | Maths (150) | Chemistry (130) | Physics (120) | Geography (100) | History (60) | Computer Science (40)
+Ayush | 90 | 50 | 90 | 60 | 70 | 80
+Aman | 100 | 80 | 80 | 40 | 80 | 70
+Sajal | 90 | 60 | 70 | 70 | 90 | 70
+Rohit | 80 | 65 | 80 | 80 | 60 | 60
+Muskan | 80 | 65 | 85 | 95 | 50 | 90
+Tanvi | 70 | 75 | 65 | 85 | 40 | 60
+Tarun | 65 | 35 | 50 | 77 | 80 | 80
+If someone secured all the highest scores that have been obtained by some student or the other in the six subjects [rest of the question cut off on the SSC sheet; editorial completion: as given in the table above, what would be the exact overall percentage score obtained by that student?]
+(1) 90 5/6%
+(2) 91 1/6%
+(3) 95.16%
+(4) 91%
+= 2
+~ The last line of the question is cut off on SSC's sheet; the bracketed words complete it. Convert the highest percentage in each subject into marks: Maths 100% of 150 = 150; Chemistry 80% of 130 = 104; Physics 90% of 120 = 108; Geography 95% of 100 = 95; History 90% of 60 = 54; Computer Science 90% of 40 = 36. Total = 547 out of 600, so the percentage = 547/600 × 100 = 91.166…% = 91 1/6%. Simply averaging the six percentages (545/6 = 90 5/6%) ignores the different maximum marks.
+
+Q 75 | qa | Percentage, Profit & Interest
+Mohan borrows a sum of ₹4,22,092 at the rate of 20% per annum simple interest. At the end of the first year, he repays ₹21,679 towards return of principal amount borrowed. If Mohan clears all pending dues at the end of the second year, including interest payment that accrued during the first year, how much does he pay (in ₹) at the end of the second year?
+(1) 561347
+(2) 564914
+(3) 558380
+(4) 556367
+= 2
+~ Interest for year 1 = 20% of ₹4,22,092 = ₹84,418.40. After the repayment of ₹21,679, all of it towards principal, the principal is 4,22,092 − 21,679 = ₹4,00,413. Interest for year 2 = 20% of 4,00,413 = ₹80,082.60. At the end of year 2 he pays the remaining principal plus both years' interest: 4,00,413 + 84,418.40 + 80,082.60 = ₹5,64,914.
+
+Q 76 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Fatal
+(1) Additional
+(2) Easy
+(3) Deadly
+(4) Jovial
+= 3
+~ 'Fatal' means causing death or capable of causing death, as in 'a fatal accident' or 'a fatal disease'; it can also describe something that leads to failure or disaster, as in 'a fatal mistake'. Its synonym is 'deadly'. 'Additional' means extra, 'easy' means not difficult, and 'jovial' means cheerful and friendly, so none of them is related in meaning to fatal.
+
+Q 77 | eng | Voice & Narration
+Select the option that expresses the given sentence in active voice.
+Lovely tunes are composed by Domnica.
+(1) Domnica composes tunes lovely.
+(2) Domnica will compose lovely tunes.
+(3) Domnica composes lovely tunes.
+(4) Domnica composed lovely tunes.
+= 3
+~ In the passive sentence 'Lovely tunes' is the subject that receives the action and 'Domnica' (after 'by') is the doer. The verb 'are composed' is simple present passive, so the active form keeps the simple present: 'Domnica composes lovely tunes.' Option 1 misplaces the adjective ('tunes lovely'), option 2 changes the tense to simple future (will compose), and option 4 changes it to simple past (composed).
+
+Q 78 | eng | Vocabulary
+Select the option that expresses the opposite meaning of the underlined word.
+The explosive used is of my own formulation, and I can "vouch" for its efficiency.
+(1) Invalidate
+(2) Maintain
+(3) Witness
+(4) Certify
+= 1
+~ To 'vouch for' something is to confirm or guarantee its truth or quality from one's own knowledge, as the speaker does for an explosive he made himself. The opposite is 'invalidate', which means to show something to be unsound or false, or to deprive it of legal force. 'Certify' and 'witness' (attest) are close to vouch in meaning, and 'maintain' (assert or keep up) is not an opposite either.
+
+Q 79 | eng | Error Spotting & Sentence Improvement
+The following sentence has been divided into four segments. Identify the segment that contains an error.
+Mr. Abhilash and his family / have received / no informations / about the incident.
+(1) about the incident.
+(2) Mr. Abhilash and his family
+(3) have received
+(4) no informations
+= 4
+~ 'Information' is an uncountable (mass) noun, so it has no plural form and cannot take -s. The segment 'no informations' should read 'no information' (or 'no pieces of information'). Other uncountable nouns that behave the same way include advice, furniture, luggage, equipment and news. 'Mr. Abhilash and his family' is a compound subject that correctly takes 'have received', and 'about the incident' is correct.
+
+Q 80 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Toxic
+(1) Lethal
+(2) Licit
+(3) Laudatory
+(4) Lanky
+= 1
+~ 'Toxic' means poisonous, capable of causing serious harm or death, as in 'toxic fumes' or 'toxic waste'. Its closest synonym here is 'lethal', meaning sufficient to cause death. 'Licit' means lawful or permitted, 'laudatory' means expressing praise, and 'lanky' means tall, thin and awkward-looking. All four options begin with L, but only lethal shares the meaning of toxic.
+
+Q 81 | eng | Idioms & One-word Substitution
+Select the word which means the same as the group of words given.
+Unit of weight for precious stones
+(1) Pure
+(2) Accurate
+(3) Reliable
+(4) Carat
+= 4
+~ A 'carat' is the unit of weight for precious stones and pearls; one metric carat equals 200 milligrams (0.2 gram), so a 2-carat diamond weighs 0.4 gram. The same word (spelt karat in American English) also measures the purity of gold, 24 carats being pure gold. 'Pure', 'accurate' and 'reliable' are adjectives describing quality, not units of weight.
+
+Q 82 | eng | Idioms & One-word Substitution
+Select the option that can be used as a one-word substitute for the underlined group of words.
+She is "proficient in speaking many languages".
+(1) Heterolinguistic
+(2) Bilingual
+(3) Multilingual
+(4) Monolithic
+= 3
+~ A person who is proficient in speaking many languages is 'multilingual' (multi = many, lingua = tongue or language); such a person is also called a polyglot. 'Bilingual' means able to speak two languages only, and 'monolithic' means formed of a single large block of stone, or uniform and rigid, which has nothing to do with language. 'Heterolinguistic' is not the standard word for such a person.
+
+Q 83 | eng | Voice & Narration
+Select the option that expresses the given sentence in passive voice.
+Ishika saw the tiger in the forest.
+(1) The tiger saw by Ishika in the forest.
+(2) The tiger sees Ishika in the forest.
+(3) The tiger was seen by Ishika in the forest.
+(4) The tiger was seen by the forest in Ishika.
+= 3
+~ In the active sentence 'Ishika' is the subject, 'saw' is simple past and 'the tiger' is the object. In the passive the object becomes the subject and the simple past becomes was/were + past participle: 'The tiger was seen by Ishika in the forest.' Option 1 lacks 'was' and uses 'saw' instead of the participle 'seen', option 2 changes both meaning and tense, and option 4 swaps 'the forest' and 'Ishika'.
+
+Q 84 | eng | Idioms & One-word Substitution
+Select the option that can be used as a one-word substitute for the given group of words.
+A person who likes to argue about anything
+(1) Veracious
+(2) Reticent
+(3) Contentious
+(4) Coward
+= 3
+~ 'Contentious' describes a person who is fond of arguing and likely to cause disputes, or an issue that causes heated disagreement (Latin contentio, a struggle). So a person who likes to argue about anything is contentious, that is, quarrelsome or argumentative. 'Veracious' means truthful, 'reticent' means reserved and unwilling to speak, nearly the opposite, and a 'coward' is a person who lacks courage.
+
+Q 85 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the underlined segment in the given sentence.
+‘Spy Family’ is a graphic novel that is a narrative work in which the story is conveyed to the reader using "uninterrupted art in a traditional" comics format.
+(1) sedimental art in a traditional
+(2) longitudinal art in a traditional
+(3) existential art in a traditional
+(4) sequential art in a traditional
+= 4
+~ A graphic novel tells its story through 'sequential art', a series of images (panels) arranged in order so that, read one after another, they narrate a story; the term was popularised by the cartoonist Will Eisner. The underlined 'uninterrupted art' does not express this. 'Sedimental' (a rare form of sedimentary) relates to sediment, 'longitudinal' means running lengthwise or over a long period, and 'existential' relates to existence.
+
+Q 86 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a grammatical error.
+My brother performed / extremely good / in the class test / held yesterday.
+(1) held yesterday
+(2) extremely good
+(3) in the class test
+(4) My brother performed
+= 2
+~ The verb 'performed' must be modified by an adverb, not an adjective. 'Good' is an adjective; the matching adverb is 'well'. So the segment 'extremely good' should read 'extremely well': 'My brother performed extremely well in the class test held yesterday.' 'Extremely' is correctly an adverb qualifying 'well'. The other segments, 'My brother performed', 'in the class test' and 'held yesterday', are correct.
+
+Q 87 | eng | Spelling
+Select the INCORRECTLY spelt word.
+(1) Bureaucracy
+(2) Embarrass
+(3) Connoisseur
+(4) Relevent
+= 4
+~ The incorrectly spelt word is 'Relevent'; the correct spelling is 'relevant' (r-e-l-e-v-a-n-t), ending in -ant, as in 'relevance'. The other words are spelt correctly: 'bureaucracy' (b-u-r-e-a-u-c-r-a-c-y), 'embarrass' (double r and double s) and 'connoisseur' (double n, double s and the ending -eur), which means an expert judge in matters of taste.
+
+Q 88 | eng | Vocabulary
+Select the most appropriate synonym to replace the underlined word in the given sentence.
+No "altruistic" act is truly sincere.
+(1) phenomenal
+(2) phonotypical
+(3) philanthropic
+(4) phantasmal
+= 3
+~ 'Altruistic' means showing unselfish concern for the welfare of others (altruism is the opposite of selfishness). Its closest synonym among the options is 'philanthropic', which means seeking to promote the welfare of others, especially through generous help or donations. 'Phenomenal' means remarkable or extraordinary, 'phantasmal' means ghostly or illusory, and 'phonotypical' relates to phonotypy, a phonetic system of printing, so none of them fits.
+
+Q 89 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Innuendo
+(1) Crude
+(2) Prose
+(3) Ragged
+(4) Insinuation
+= 4
+~ An 'innuendo' is an indirect or subtle remark that hints at something, usually unpleasant or critical, without saying it openly, as in 'a campaign of rumour and innuendo'. Its synonym is 'insinuation', a sly suggestion of something bad. 'Crude' means rough or vulgar, 'prose' is ordinary written language as opposed to verse, and 'ragged' means torn or worn out, so none of them fits.
+
+Q 90 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+Vinod had a ______ escape in the car accident.
+(1) comfortable
+(2) full
+(3) narrow
+(4) wide
+= 3
+~ 'A narrow escape' is a fixed expression (collocation) for a situation in which one only just avoids danger, injury or death; it is also called a close shave. So 'Vinod had a narrow escape in the car accident' means he was very nearly hurt but survived. 'Comfortable', 'full' and 'wide' do not collocate with 'escape' in this sense, and English never speaks of 'a wide escape'.
+
+Q 91 | eng | Idioms & One-word Substitution
+Select the option that can be used as a one-word substitute for the given phrase.
+A short interesting story about a real person or event
+(1) Anecdote
+(2) Sketch
+(3) Poem
+(4) Narrative
+= 1
+~ An 'anecdote' is a short, interesting or amusing story about a real person or incident, often told to illustrate a point. A 'sketch' is a brief description or a short comic scene, a 'poem' is a piece of writing in verse, and a 'narrative' is any spoken or written account of connected events, real or imagined, without the sense of being short and about a real incident.
+
+Q 92 | eng | Vocabulary
+Select the most appropriate synonym of the word in bold.
+We’d better watch our step and not give him any excuse to "harass" us further.
+(1) betray
+(2) intimidate
+(3) relish
+(4) soothe
+= 2
+~ The sheet prints the whole sentence in bold, so the tested word is not marked; it can only be 'harass', since no other word in the sentence has a synonym among the options. 'Harass' means to trouble, pressure or torment someone repeatedly, as in 'harassed by creditors'; its closest synonym here is 'intimidate', to frighten or threaten someone, especially to make them do or not do something. 'Betray' means to be disloyal, 'relish' means to enjoy greatly, and 'soothe' means to calm or comfort, almost the opposite of harass.
+
+Q 93 | eng | Idioms & One-word Substitution
+Select the most appropriate meaning of the given idiom.
+To have bigger fish to fry
+(1) To have bigger things to take care of than the menial task at hand
+(2) To take calculated risks
+(3) To know different kinds of fishing techniques
+(4) To have an interest in cooking
+= 1
+~ 'To have bigger fish to fry' means to have more important matters to deal with than the trivial one at hand, as in 'I cannot worry about a parking ticket; I have bigger fish to fry.' It is used to dismiss something as not worth one's time. The idiom has nothing to do with taking calculated risks, fishing techniques or cooking; those options read the words literally.
+
+Q 94 | eng | Spelling
+In the following sentence, four words are underlined out of which one word is misspelt. Identify the INCORRECTLY spelt word.
+After the "recapture" (A) of Tololing and the adjacent features, "evacting" (B) the enemy from this "well-fortified" (C) position became a "priority".(D)
+(1) B
+(2) D
+(3) C
+(4) A
+= 1
+~ Underlined word B, 'evacting', is misspelt; the intended word is 'evicting' (e-v-i-c-t-i-n-g), meaning forcing the enemy out of the position. The other underlined words are spelt correctly: 'recapture' (A), meaning capturing again, 'well-fortified' (C), meaning strongly defended, and 'priority' (D). Tololing is a ridge in the Dras sector of Kargil that the Indian Army recaptured in June 1999 during the Kargil War.
+
+Q 95 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option to substitute the underlined segment in the given sentence.
+She has been "studying for two o’clock".
+(1) study from two o’clock
+(2) studying since two o’clock
+(3) studying two o’clock
+(4) study for two o’clock
+= 2
+~ 'Since' is used with a point of time (since two o'clock, since Monday, since 2020), while 'for' is used with a period of time (for two hours, for three days). 'Two o'clock' is a point of time, so the present perfect continuous 'has been studying' needs 'since': 'She has been studying since two o'clock.' Options 1 and 4 wrongly change 'studying' to 'study' after 'has been', and option 3 drops the preposition.
+
+Q 96 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+There is a saying that coming events cast their shadows before. (1)______, it is not universally true. Something can happen within a second, and one may not (2)______ it. (3)______, some instances show that predictions based on certain signs have gone wrong. People generally say that natural calamities can be predicted by observing the animals. But what if animals are suffering from some disease and don’t show any signs before the event appears? They may fail to make peculiar sounds or actions about the events which are going to take place. (4)______, some unnatural calamities that are likely to appear may forecast their shadows by some bad omens. (5)______, we should not completely cancel out the possibilities that animals can sense certain unnatural happenings.
+Select the most appropriate option to fill in blank number 1.
+(1) Therefore
+(2) Furthermore
+(3) Moreover
+(4) However
+= 4
+~ The first sentence states the saying that coming events cast their shadows before, and the clause after the blank, 'it is not universally true', contradicts it. A contrast between two ideas is introduced by 'However'. 'Therefore' would introduce a result, while 'Furthermore' and 'Moreover' add a point in the same direction, so none of them can introduce a statement that limits or opposes the saying.
+
+Q 97 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+There is a saying that coming events cast their shadows before. (1)______, it is not universally true. Something can happen within a second, and one may not (2)______ it. (3)______, some instances show that predictions based on certain signs have gone wrong. People generally say that natural calamities can be predicted by observing the animals. But what if animals are suffering from some disease and don’t show any signs before the event appears? They may fail to make peculiar sounds or actions about the events which are going to take place. (4)______, some unnatural calamities that are likely to appear may forecast their shadows by some bad omens. (5)______, we should not completely cancel out the possibilities that animals can sense certain unnatural happenings.
+Select the most appropriate option to fill in blank number 2.
+(1) rescind
+(2) foresee
+(3) legalise
+(4) affect
+= 2
+~ The writer argues that the saying is not always true because 'something can happen within a second', that is, without any warning, so one may not be able to 'foresee' it, meaning to know beforehand that it will happen. This fits the passage's theme of predicting events. 'Rescind' means to cancel a law or order, 'legalise' means to make lawful, and 'affect' means to influence, none of which suits an unexpected event.
+
+Q 98 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+There is a saying that coming events cast their shadows before. (1)______, it is not universally true. Something can happen within a second, and one may not (2)______ it. (3)______, some instances show that predictions based on certain signs have gone wrong. People generally say that natural calamities can be predicted by observing the animals. But what if animals are suffering from some disease and don’t show any signs before the event appears? They may fail to make peculiar sounds or actions about the events which are going to take place. (4)______, some unnatural calamities that are likely to appear may forecast their shadows by some bad omens. (5)______, we should not completely cancel out the possibilities that animals can sense certain unnatural happenings.
+Select the most appropriate option to fill in blank number 3.
+(1) Therefore
+(2) Moreover
+(3) However
+(4) Nevertheless
+= 2
+~ The sentence 'some instances show that predictions based on certain signs have gone wrong' adds a further reason in support of the same point, that the saying is not universally true. An additional supporting point is introduced by 'Moreover'. 'However' and 'Nevertheless' signal a contrast, which is not needed here, and 'Therefore' would wrongly present the sentence as a result of the one before it.
+
+Q 99 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+There is a saying that coming events cast their shadows before. (1)______, it is not universally true. Something can happen within a second, and one may not (2)______ it. (3)______, some instances show that predictions based on certain signs have gone wrong. People generally say that natural calamities can be predicted by observing the animals. But what if animals are suffering from some disease and don’t show any signs before the event appears? They may fail to make peculiar sounds or actions about the events which are going to take place. (4)______, some unnatural calamities that are likely to appear may forecast their shadows by some bad omens. (5)______, we should not completely cancel out the possibilities that animals can sense certain unnatural happenings.
+Select the most appropriate option to fill in blank number 4.
+(1) Therefore
+(2) Secondly
+(3) Besides
+(4) Despite
+= 3
+~ After saying that sick animals may fail to give signs of coming events, the writer adds a separate idea: some unnatural calamities may forecast their shadows through bad omens. An additional point is introduced by 'Besides', meaning 'in addition'. 'Despite' is a preposition and must be followed by a noun or pronoun ('despite this'), 'Secondly' needs a 'firstly' before it, and 'Therefore' would wrongly show a result.
+
+Q 100 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+There is a saying that coming events cast their shadows before. (1)______, it is not universally true. Something can happen within a second, and one may not (2)______ it. (3)______, some instances show that predictions based on certain signs have gone wrong. People generally say that natural calamities can be predicted by observing the animals. But what if animals are suffering from some disease and don’t show any signs before the event appears? They may fail to make peculiar sounds or actions about the events which are going to take place. (4)______, some unnatural calamities that are likely to appear may forecast their shadows by some bad omens. (5)______, we should not completely cancel out the possibilities that animals can sense certain unnatural happenings.
+Select the most appropriate option to fill in blank number 5.
+(1) Therefore
+(2) However
+(3) Nevertheless
+(4) Moreover
+= 1
+~ The last sentence draws a conclusion from what precedes it: since some calamities may announce themselves through omens, we should not completely rule out the possibility that animals sense unusual happenings. A conclusion or result is introduced by 'Therefore'. 'However' and 'Nevertheless' express contrast, and 'Moreover' merely adds another point instead of concluding the argument.
