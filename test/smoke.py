@@ -249,6 +249,11 @@ async def main():
                     if await pg.inner_text('#timer') != t1 or not await pg.locator('#timer.off').count(): errors.append(f'{path}: timer kept running after switching it off')
                     await pg.click('[data-act="timertoggle"]'); await pg.wait_for_timeout(2200)
                     if await pg.inner_text('#timer') == t1: errors.append(f'{path}: timer did not restart after switching it on')
+        # study material (APPSC Mains books) only on the APPSC Group 1 / Group 2 pages
+        for sub, want in (('appsc-group-2', True), ('appsc-group-1', True), ('upsc-epfo', False), ('ts-police-si', False), ('upsc-capf', False)):
+            raw = open(os.path.join(SITE, sub, 'index.html'), encoding='utf-8').read()
+            has = 'class="card notes-promo"' in raw or 'data-v="notes"' in raw
+            if has != want: errors.append(f'{sub}: study material {"missing" if want else "shown"}')
         epm = open(os.path.join(SITE, 'upsc-epfo', 'mock-test.html'), encoding='utf-8').read()
         if '₹199' not in epm or 'coming soon' not in epm or '?buy=mock' in epm: errors.append('upsc-epfo/mock-test.html: no "₹199 · coming soon" pack, or it can be bought already')
         await pg.goto(URL + 'ts-police-si/?sec=ari'); await pg.wait_for_timeout(600)

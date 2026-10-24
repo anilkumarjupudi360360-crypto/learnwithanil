@@ -635,7 +635,7 @@ def main():
         subjects = [dict(id=s[0], name=s[1], slug=s[2], topics=s[3]) for s in conf['subjects']]
         subj = {s[0]: s for s in conf['subjects']}
         def upath(x): return x if (is_root or re.match(r'(https?:|data:|/)', x)) else up + x
-        enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])]) for b in notes]
+        enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])]) for b in notes] if conf['id'] in NOTES_EXAMS else []
         for q in questions:
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
         data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=enotes, wa=WHATSAPP,
@@ -685,7 +685,9 @@ def main():
                      .replace('{{EYEBROW}}', conf['eyebrow']).replace('{{H1}}', conf['h1'])
                      .replace('{{L2LINE}}', f'<span lang="{l2["code"]}">{esc(conf["l2line"])}</span>')
                      .replace('{{AKA}}', esc(conf.get('aka', '')))
-                     .replace('{{TILES}}', tiles))
+                     .replace('{{TILES}}', tiles)
+                     .replace('{{NOTES_NAV}}', '<a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>' if enotes else '')
+                     .replace('{{NOTES_FOOT}}', '<a href="#notes">Study material</a> · ' if enotes else ''))
         root_title = 'PYQs with Answers – APPSC Group 1 & Group 2, TS Police SI & Constable, UPSC CAPF Previous Papers | Learn with Anil'
         root_desc = (f'Previous year question papers (PYQs) with answers: APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
                      f'(Telangana police, TSLPRB / TGPRB) and UPSC CAPF AC. {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
@@ -745,6 +747,7 @@ def main():
                    + '\n</head>\n<body>\n' + fill(body_, up + 'anil.jpg', title, seo, desc) + '\n</body>\n</html>\n')
             return site_links(doc.replace('href="{{HUBHREF}}"', 'href="/"').replace(f'href="{hubhref}"', 'href="/"'), pb)
 
+        if not enotes: views.pop('notes', None)   # no study-material page outside APPSC Group 1 / Group 2
         site_pages = {}   # path under the site root -> html
         if is_root:
             os.makedirs(os.path.join(DIST, 'artifact', 'papers')); os.makedirs(os.path.join(DIST, 'artifact', 'subjects'))
@@ -1541,6 +1544,9 @@ def notif_page(loaded, rel):
                 f'always check the official website psc.ap.gov.in before applying. Learn with Anil is not connected with APPSC.</p>')
     return static_page(0, N['title'], N['desc'], can, N['h1'], esc(N['lede']), ''.join(body),
                        [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + conf['pb']), (N['crumb'], can)], conf, at_root=True)
+
+
+NOTES_EXAMS = {'appsc-group-2', 'appsc-group-1'}   # Anil, 24 Oct 2026: the APPSC Mains books are shown only on the APPSC Group 1 and Group 2 pages
 
 
 # ---------- paid passes: Instamojo checkout through the Learn with Anil payments script (Google Apps Script) ----------

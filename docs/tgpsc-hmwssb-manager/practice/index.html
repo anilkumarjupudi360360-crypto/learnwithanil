@@ -555,7 +555,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
       <a href="/" data-v="exams">All Exams</a>
       <a href="/tgpsc-hmwssb-manager/" data-v="home">HMWSSB Manager</a>
       <a href="/tgpsc-hmwssb-manager/papers/" data-v="papers" data-g2>Previous Papers</a>
-      <a href="/tgpsc-hmwssb-manager/notes/" data-v="notes">Study Material <span class="new">NEW</span></a>
+      
       <a href="/tgpsc-hmwssb-manager/practice/" data-v="practice" data-g2>Create Quiz</a>
       <a href="/tgpsc-hmwssb-manager/bank/" data-v="bank" data-g2>Question Bank</a>
       <a href="/tgpsc-hmwssb-manager/mistakes/" data-v="mistakes" data-g2>Mistakes <span class="count" id="mcount" hidden></span></a>
@@ -601,14 +601,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
   </section>
 
 
-  <section class="wrap section">
-    <a class="card notes-promo" href="/tgpsc-hmwssb-manager/notes/">
-      <div class="np-copy"><p class="eyebrow">New · Study material</p><h2>Study material 2026-27</h2>
-      <p>AP Economy and Science and Technology for APPSC Mains, with the latest 2026 data and APPSC's own previous questions inside. From ₹49.</p>
-      <span class="btn btn-primary">See the books</span></div>
-      <div class="np-covers" aria-hidden="true"><img src="../notes-apeco-en-cover.jpg" alt="" width="140" height="198" loading="lazy"><img src="../notes-apeco-te-cover.jpg" alt="" width="140" height="198" loading="lazy"><img src="../notes-stfull-en-cover.jpg" alt="" width="140" height="198" loading="lazy"></div>
-    </a>
-  </section>
+  
 
   <section class="wrap section" id="recent" hidden></section>
 
@@ -623,13 +616,13 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 
 <footer class="foot">
   <div class="wrap">
-    <span>Questions are from TGPSC's official question paper; answers from TSPSC's final key. Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. <a href="/tgpsc-hmwssb-manager/notes/">Study material</a> · <a href="../appsc-pyqs.html">APPSC PYQs</a> · <a href="../ts-police-pyqs.html">TS Police PYQs</a></span>
+    <span>Questions are from TGPSC's official question paper; answers from TSPSC's final key. Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. <a href="../appsc-pyqs.html">APPSC PYQs</a> · <a href="../ts-police-pyqs.html">TS Police PYQs</a></span>
     <span id="resetBox"><button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button></span>
   </div>
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/tg-hmws-4a11e5572c.js"></script>
+<script src="data/tg-hmws-367f29eab1.js"></script>
 <script>
 (function(){
 "use strict";
@@ -909,6 +902,7 @@ function route(){
     UI.confirmSubmit = false; history.replaceState(null, "", PATHMODE ? pathOf("quiz") : "#quiz"); v = "quiz";
   }
   if(!VIEWS.includes(v)) v = DATA.hub ? "exams" : "home";
+  if(v==="notes" && !(DATA.notes||[]).length) v = "home";   // study material is only for the APPSC Group 1 / Group 2 pages
   if(v==="quiz" && !QZ) v = LAST? "result" : "practice";
   if(v==="result" && !LAST) v="home";
   return v;
@@ -1617,7 +1611,7 @@ function vAbout(){
           <a href="mailto:anilkumarjupudi360360@gmail.com"><span>Email</span>anilkumarjupudi360360@<wbr>gmail.com</a>
         </div>
         <p class="muted" style="font-size:14px;margin:14px 0 0">${ST.name? `Timed-test scores are saved as <b>${esc(ST.name)}</b> (${esc(ST.district||"")}). <a href="/tgpsc-hmwssb-manager/join/">Edit your details</a>` : "Before your first timed test you'll be asked for your name, phone, email and district, so your scores can be saved."}</p>
-        <p style="margin:16px 0 0"><a href="/tgpsc-hmwssb-manager/notes/"><b>Crisp Notes study material →</b></a></p>
+        ${(DATA.notes||[]).length ? `<p style="margin:16px 0 0"><a href="/tgpsc-hmwssb-manager/notes/"><b>Crisp Notes study material →</b></a></p>` : ""}
         <div class="handle">Follow on Instagram for daily current affairs: <a href="https://www.instagram.com/${ig}/" target="_blank" rel="noopener"><code>@${ig}</code></a><button class="btn btn-ghost btn-sm" type="button" data-act="copyig">Copy handle</button></div>
       </div>
     </section>

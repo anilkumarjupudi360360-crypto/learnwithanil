@@ -538,7 +538,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
       <a href="{{HUBHREF}}" data-v="exams">All Exams</a>
       <a href="#home" data-v="home">{{EXAMSHORT}}</a>
 {{NAV_EXTRA}}      <a href="#papers" data-v="papers" data-g2>Previous Papers</a>
-      <a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>
+      {{NOTES_NAV}}
       <a href="#practice" data-v="practice" data-g2>Create Quiz</a>
       <a href="#bank" data-v="bank" data-g2>Question Bank</a>
       <a href="#mistakes" data-v="mistakes" data-g2>Mistakes <span class="count" id="mcount" hidden></span></a>
@@ -638,7 +638,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 
 <footer class="foot">
   <div class="wrap">
-    <span>{{FOOTSRC}} Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. <a href="#notes">Study material</a> · <a href="{{ROOTUP}}appsc-pyqs.html">APPSC PYQs</a> · <a href="{{ROOTUP}}ts-police-pyqs.html">TS Police PYQs</a></span>
+    <span>{{FOOTSRC}} Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. {{NOTES_FOOT}}<a href="{{ROOTUP}}appsc-pyqs.html">APPSC PYQs</a> · <a href="{{ROOTUP}}ts-police-pyqs.html">TS Police PYQs</a></span>
     <span id="resetBox"><button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button></span>
   </div>
 </footer>
@@ -924,6 +924,7 @@ function route(){
     UI.confirmSubmit = false; history.replaceState(null, "", PATHMODE ? pathOf("quiz") : "#quiz"); v = "quiz";
   }
   if(!VIEWS.includes(v)) v = DATA.hub ? "exams" : "home";
+  if(v==="notes" && !(DATA.notes||[]).length) v = "home";   // study material is only for the APPSC Group 1 / Group 2 pages
   if(v==="quiz" && !QZ) v = LAST? "result" : "practice";
   if(v==="result" && !LAST) v="home";
   return v;
@@ -1632,7 +1633,7 @@ function vAbout(){
           <a href="mailto:anilkumarjupudi360360@gmail.com"><span>Email</span>anilkumarjupudi360360@<wbr>gmail.com</a>
         </div>
         <p class="muted" style="font-size:14px;margin:14px 0 0">${ST.name? `Timed-test scores are saved as <b>${esc(ST.name)}</b> (${esc(ST.district||"")}). <a href="#join">Edit your details</a>` : "Before your first timed test you'll be asked for your name, phone, email and district, so your scores can be saved."}</p>
-        <p style="margin:16px 0 0"><a href="#notes"><b>Crisp Notes study material →</b></a></p>
+        ${(DATA.notes||[]).length ? `<p style="margin:16px 0 0"><a href="#notes"><b>Crisp Notes study material →</b></a></p>` : ""}
         <div class="handle">Follow on Instagram for daily current affairs: <a href="https://www.instagram.com/${ig}/" target="_blank" rel="noopener"><code>@${ig}</code></a><button class="btn btn-ghost btn-sm" type="button" data-act="copyig">Copy handle</button></div>
       </div>
     </section>

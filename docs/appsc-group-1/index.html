@@ -916,6 +916,7 @@ function route(){
     UI.confirmSubmit = false; history.replaceState(null, "", PATHMODE ? pathOf("quiz") : "#quiz"); v = "quiz";
   }
   if(!VIEWS.includes(v)) v = DATA.hub ? "exams" : "home";
+  if(v==="notes" && !(DATA.notes||[]).length) v = "home";   // study material is only for the APPSC Group 1 / Group 2 pages
   if(v==="quiz" && !QZ) v = LAST? "result" : "practice";
   if(v==="result" && !LAST) v="home";
   return v;
@@ -1624,7 +1625,7 @@ function vAbout(){
           <a href="mailto:anilkumarjupudi360360@gmail.com"><span>Email</span>anilkumarjupudi360360@<wbr>gmail.com</a>
         </div>
         <p class="muted" style="font-size:14px;margin:14px 0 0">${ST.name? `Timed-test scores are saved as <b>${esc(ST.name)}</b> (${esc(ST.district||"")}). <a href="/appsc-group-1/join/">Edit your details</a>` : "Before your first timed test you'll be asked for your name, phone, email and district, so your scores can be saved."}</p>
-        <p style="margin:16px 0 0"><a href="/appsc-group-1/notes/"><b>Crisp Notes study material →</b></a></p>
+        ${(DATA.notes||[]).length ? `<p style="margin:16px 0 0"><a href="/appsc-group-1/notes/"><b>Crisp Notes study material →</b></a></p>` : ""}
         <div class="handle">Follow on Instagram for daily current affairs: <a href="https://www.instagram.com/${ig}/" target="_blank" rel="noopener"><code>@${ig}</code></a><button class="btn btn-ghost btn-sm" type="button" data-act="copyig">Copy handle</button></div>
       </div>
     </section>
