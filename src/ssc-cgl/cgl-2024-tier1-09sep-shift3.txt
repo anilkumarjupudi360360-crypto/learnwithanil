@@ -1,0 +1,993 @@
+# SSC Combined Graduate Level Examination 2024, Tier-I, held 9 September 2024, Shift 3 (4:00 PM). 100 questions, 200 marks, 60 minutes.
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via AglaSem); answers are the options SSC ticked as correct on that sheet (answer-key stage). The Hindi text is from a second candidate's sheet of the same exam, with the options put in the English order. Explanations by Learn with Anil.
+
+Q 1 | rea | Analogy & Classification
+Select the option that is related to the fifth letter-cluster in the same way as the second letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related to the third letter-cluster.
+CWE:ZFX ::PYT:MDI :: KIL:?
+(1) PRO
+(2) RTQ
+(3) PQO
+(4) STQ
+= 2
+~ Each letter of the second cluster is the opposite letter of the first cluster's letter (A↔Z, B↔Y …, positions adding to 27) moved 2 places forward. CWE: C → X → Z, W → D → F, E → V → X gives ZFX. PYT: P → K → M, Y → B → D, T → G → I gives MDI. Apply the same to KIL: K → P → R, I → R → T, L → O → Q. So KIL is related to RTQ.
+
+Q 2 | rea | Series
+Which of the following terms will replace the question mark (?) in the given series?
+MFT, NIS, PLQ, SON, WRJ, ?
+(1) BUP
+(2) BVD
+(3) BUE
+(4) RUE
+= 3
+~ Take each letter position separately. First letters M, N, P, S, W move +1, +2, +3, +4, so the next move is +5: W + 5 = B (counting on past Z). Second letters F, I, L, O, R move +3 each: R + 3 = U. Third letters T, S, Q, N, J move −1, −2, −3, −4, so the next is J − 5 = E. The missing term is BUE; BUP and BVD fail in the second or third letter and RUE in the first.
+
+Q 3 | rea | Non-verbal Reasoning
+Six letters P, Q, R, S, T and U are written on different faces of a dice. Two positions of this dice are shown in the figure below. Find the letter on the face opposite to R.
+(1) U
+(2) Q
+(3) S
+(4) T
+= 3
+! img/c24s3-q3.png
+~ R is on the front face in both positions, so every letter seen beside it is on a face adjacent to R: P and T in the first position, Q and U in the second. A face is never adjacent to its own opposite face. Of the six letters, only S has not appeared next to R, so S is on the face opposite R. U, Q and T are all adjacent to R and cannot be opposite it.
+
+Q 4 | rea | Analogy & Classification
+Three of the following numbers are alike in a certain way and one is different. Pick the odd one out.
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /deleting /multiplying etc., to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(1) 36 – 84
+(2) 33 – 72
+(3) 66 – 154
+(4) 72 – 168
+= 2
+~ In three pairs the numbers are in the ratio 3 : 7, i.e. second number = first number × 7/3. 36 = 12 × 3 and 84 = 12 × 7; 66 = 22 × 3 and 154 = 22 × 7; 72 = 24 × 3 and 168 = 24 × 7. For 33 – 72, 33 = 11 × 3 would need 11 × 7 = 77, not 72. So 33 – 72 is the odd one out.
+
+Q 5 | rea | Non-verbal Reasoning
+Six letters A, M, R, S, Y and Q are written on different faces of a dice. Two positions of this dice are shown in the figures below. Find the letter on the face opposite to S.
+(1) Y
+(2) M
+(3) Q
+(4) A
+= 4
+! img/c24s3-q5.png
+~ R is on the right face in both positions, so the dice has only been turned about the axis through R. The other two visible faces are all different (A, M in the first view; S, Y in the second), so it has been given a half-turn, and faces in matching positions are opposite: top A is opposite top S, and left M is opposite left Y. The remaining pair is R and Q. Hence the letter opposite S is A.
+
+Q 6 | rea | Non-verbal Reasoning
+Select the option figure in which the given figure (X) is embedded (rotation is NOT allowed).
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+! img/c24s3-q6.png
+~ Figure (X) is a horizontal line carrying three loops that hang below it. In option 3 the horizontal line across the circle carries exactly three downward-hanging loops, so (X) is embedded there in the same size and orientation. Option 1 has only two loops, option 2 shows the loops along a vertical line (a rotation, which is not allowed) and option 4 has the loops rising above its line, i.e. the figure turned upside down.
+
+Q 7 | rea | Mathematical Operations
+Which two numbers (not digits) should be interchanged to make the given equation correct?
+24 ÷ 3 − 4 × 2 + 6 × 5 + 12 = 50
+(1) 4 and 3
+(2) 5 and 4
+(3) 3 and 2
+(4) 24 and 12
+= 4
+~ Interchange 24 and 12: 12 ÷ 3 − 4 × 2 + 6 × 5 + 24 = 4 − 8 + 30 + 24 = 50, which is correct (division and multiplication first, by BODMAS). The given form equals 8 − 8 + 30 + 12 = 42. The other swaps also fail: 4 and 3 gives 6 − 6 + 30 + 12 = 42, 3 and 2 gives 12 − 12 + 30 + 12 = 42, and 5 and 4 gives 8 − 10 + 24 + 12 = 34.
+
+Q 8 | rea | Non-verbal Reasoning
+How many triangles are there in the given figure?
+(1) 6
+(2) 8
+(3) 4
+(4) 5
+= 2
+! img/c24s3-q8.png
+~ Count part by part. Left part: the small triangle with two short vertical lines gives 3 (the whole small triangle and the two corner triangles cut off at its ends; the middle strip is not a triangle), and the triangle just below it, down to the lowest vertex, gives 1 more. Right part: the large right-angled triangle on the base is split by a vertical line, giving 2 small triangles plus the whole one. Finally, the slanted side, the hypotenuse and the upper vertical line enclose 1 more. Total = 4 + 3 + 1 = 8.
+
+Q 9 | rea | Miscellaneous Reasoning
+Study the given diagram carefully and answer the question that follows. The numbers in different sections indicate the number of persons who have applied for different posts.
+What is the total number of persons who have applied for more than one post?
+(1) 21
+(2) 15
+(3) 113
+(4) 18
+= 1
+! img/c24s3-q9.png
+~ A person who applied for more than one post is in a region where circles overlap. The overlaps hold 4 (Teacher and Engineer only), 6 (Teacher and Accountant only), 8 (Engineer and Accountant only) and 3 (all three posts). Total = 4 + 6 + 8 + 3 = 21. The numbers 35, 42 and 56 are people who applied for one post only, and 18 forgets the 3 people in the centre who applied for all three posts.
+
+Q 10 | rea | Non-verbal Reasoning
+Select the option that will replace the question mark (?) in the figure given below to complete the pattern.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/c24s3-q10.png
+~ The figure is symmetrical about the vertical diameter (the top-left quarter mirrors the top-right one), so the missing bottom-right quarter mirrors the bottom-left one: a square, the diagonal from the centre to its outer corner, the chord joining the ends of the two radii and a line from that outer corner to the midpoint of the square's side on the horizontal radius. Only option 1 has all these. Options 2 and 3 stop the diagonal at the chord and start the extra line at the wrong corner; option 4 ends it at the wrong corner, with the square's outer side incomplete.
+
+Q 11 | rea | Miscellaneous Reasoning
+The following Venn diagram shows Men’s profession as Doctors and Chess Players.
+How many men are doctors?
+(1) 47
+(2) 34
+(3) 23
+(4) 24
+= 1
+! img/c24s3-q11.png
+~ Men who are doctors lie in the overlap of the Men and Doctors circles. This overlap has two parts: 23 (men who are doctors but not chess players) and 24 (the central region: men who are doctors and also chess players). So the number of men who are doctors = 23 + 24 = 47. Taking only 23 or only 24 misses one of the parts, and 34 counts doctors who are chess players but not men.
+
+Q 12 | rea | Miscellaneous Reasoning
+The position of how many letters will remain unchanged if each of the letter in the word ‘JANITOR’ is arranged in English alphabetical order?
+(1) Zero
+(2) Three
+(3) One
+(4) Two
+= 1
+~ The letters of JANITOR in alphabetical order are A, I, J, N, O, R, T. Compare position by position with J, A, N, I, T, O, R: 1st J/A, 2nd A/I, 3rd N/J, 4th I/N, 5th T/O, 6th O/R and 7th R/T. No position holds the same letter before and after the arrangement, so the number of letters whose position remains unchanged is zero.
+
+Q 13 | rea | Analogy & Classification
+Four letter-clusters have been given, out of which three are alike in some manner and one is different. Select the letter-cluster that is different.
+Note: The odd one out is not based on the number of consonants/vowels or their position in the letter cluster.
+(1) PSUV
+(2) BEHI
+(3) FIKL
+(4) TWYZ
+= 2
+~ Look at the gaps between consecutive letters. PSUV: P + 3 = S, S + 2 = U, U + 1 = V. FIKL: F + 3 = I, I + 2 = K, K + 1 = L. TWYZ: T + 3 = W, W + 2 = Y, Y + 1 = Z. These three follow the pattern +3, +2, +1. BEHI: B + 3 = E, E + 3 = H, H + 1 = I, i.e. +3, +3, +1. So BEHI is the odd one out.
+
+Q 14 | rea | Series
+Select the combination of letters that when sequentially placed in the blanks of the given series will complete the series.
+P _ A A _ _ Z A _ V _ _ A _ _
+(1) ZVPAPZAV
+(2) ZPVVAPVZ
+(3) VZAAPVPZ
+(4) VPZZPVAP
+= 1
+~ Putting Z, V, P, A, P, Z, A, V in the blanks gives P Z A A V | P Z A A V | P Z A A V, the block PZAAV repeated three times. The printed letters fit this block: P in place 1, A A in places 3–4, Z A in places 7–8, V in place 10 and A in place 13. Any other option breaks the repetition; for example ZPVVAPVZ gives P Z A A P V Z A V …, which has no repeating block.
+
+Q 15 | rea | Series
+Which of the four options will replace the question mark (?) in the following series?
+XF 11, YI 15, ZL 19, AO 23, ?
+(1) BR 27
+(2) CQ 25
+(3) CR 25
+(4) BP 26
+= 1
+~ Treat each part separately. First letters X, Y, Z, A move one step forward each time (Z is followed by A), so the next is B. Second letters F, I, L, O move +3 each, so the next is R. The numbers 11, 15, 19, 23 increase by 4, so the next is 27. The missing term is BR 27. CQ 25 and CR 25 break the first-letter and number patterns, and BP 26 breaks the second letter and the number.
+
+Q 16 | rea | Coding-Decoding
+In a certain code language, ‘SILK’ is written as ‘TIML’ and ‘INSECT’ is written as ‘IOTEDU’. How will ‘CHANGE’ be written in that language?
+(1) DEIHAO
+(2) DOIHAE
+(3) DIAOHE
+(4) DEIOHA
+= 3
+~ Compare letter by letter. SILK → TIML: S → T, L → M, K → L (+1 each) while I stays I. INSECT → IOTEDU: N → O, S → T, C → D, T → U (+1 each) while I and E stay unchanged. So every vowel is kept and every consonant moves one letter forward. CHANGE: C → D, H → I, A stays, N → O, G → H, E stays, giving DIAOHE.
+
+Q 17 | rea | Mathematical Operations
+What will come in place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+321 − 371 ÷ 22 + 216 × 6 = ?
+(1) 7848
+(2) 7884
+(3) 8747
+(4) 8447
+= 4
+~ After interchanging the signs, the expression becomes 321 + 371 × 22 − 216 ÷ 6. By BODMAS, do the multiplication and division first: 371 × 22 = 8162 and 216 ÷ 6 = 36. Then 321 + 8162 − 36 = 8483 − 36 = 8447. Hence 8447 comes in place of the question mark; the other options are look-alike numbers built from the digits 4, 7 and 8.
+
+Q 18 | rea | Analogy & Classification
+In the following number-pairs, the second number is obtained by applying certain mathematical operations to the first number. Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /deleting /multiplying etc., to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(12, 145)
+(9, 82)
+(1) (22, 483)
+(2) (16, 256)
+(3) (14, 197)
+(4) (8, 69)
+= 3
+~ The rule is second number = (first number)² + 1. Check: 12² + 1 = 144 + 1 = 145 and 9² + 1 = 81 + 1 = 82. In the options, 14² + 1 = 196 + 1 = 197, so (14, 197) follows the rule. The others fail: 22² + 1 = 485 (not 483), 16² + 1 = 257 (not 256) and 8² + 1 = 65 (not 69).
+
+Q 19 | rea | Blood Relations & Directions
+In a certain code language,
+A + B means ‘A is the son of B’,
+A − B means ‘A is the sister of B’,
+A × B means ‘A is the brother of B’ and
+A ÷ B means ‘A is the mother of B’.
+Based on the above, how is T related to P if ‘P ÷ Q × R − M + T’?
+(1) Brother
+(2) Husband
+(3) Father
+(4) Son
+= 2
+~ Decode step by step. P ÷ Q: P is the mother of Q. Q × R: Q is the brother of R. R − M: R is the sister of M. M + T: M is the son of T. So Q, R and M are siblings and P is their mother, while T is also a parent of M. Since P is the mother, T must be the father of M, which makes T the husband of P.
+
+Q 20 | rea | Series
+Select the number from the given options to complete the series.
+35, 38, 43, 50, 59, ______
+(1) 68
+(2) 70
+(3) 62
+(4) 78
+= 2
+~ Find the differences between consecutive terms: 38 − 35 = 3, 43 − 38 = 5, 50 − 43 = 7 and 59 − 50 = 9. They are consecutive odd numbers, so the next difference is 11 and the next term is 59 + 11 = 70. Equivalently, the terms are 34 + 1², 34 + 2², 34 + 3², 34 + 4², 34 + 5², so the sixth term is 34 + 6² = 70.
+
+Q 21 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /deleting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(19, 456, 6)
+(16, 320, 5)
+(1) (18, 648, 9)
+(2) (14, 210, 5)
+(3) (21, 504, 8)
+(4) (18, 378, 7)
+= 1
+~ The rule is second number = first number × third number × 4. Check: 19 × 6 × 4 = 456 and 16 × 5 × 4 = 320. In the options, 18 × 9 × 4 = 648, so (18, 648, 9) fits. The others fail: 14 × 5 × 4 = 280 (not 210), 21 × 8 × 4 = 672 (not 504) and 18 × 7 × 4 = 504 (not 378); these three use × 3 instead of × 4.
+
+Q 22 | rea | Non-verbal Reasoning
+Which figure should replace the question mark (?) if the following series were to be continued?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+! img/c24s3-q22.png
+~ Each figure has six places: top right (TR), middle row (ML, MR) and bottom row (BL, BM, BR). Figures 1→2 and 3→4 use the same move (the symbol leaving ML is replaced at TR by a new one: B by 8, U by △), so 4→? repeats the 2→3 move: TR→BL, BL→TR, ML→MR, MR→BM, BM→BR and BR→ML. Figure 4 has TR △, ML 8, MR T, BL =, BM 9, BR 2. After the move: TR =, ML 2, MR 8, BL △, BM T, BR 9, which is option 3.
+
+Q 23 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(34, 47, 62)
+(119, 142, 167)
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /deleting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(1) (64, 78, 99)
+(2) (48, 65, 82)
+(3) (27, 38, 51)
+(4) (79, 98, 119)
+= 4
+~ Each set is three consecutive squares minus 2: 34 = 6² − 2, 47 = 7² − 2, 62 = 8² − 2; 119 = 11² − 2, 142 = 12² − 2, 167 = 13² − 2. Option 4 fits exactly: 79 = 9² − 2, 98 = 10² − 2, 119 = 11² − 2. Gaps growing by 2 (13, 15; 23, 25) merely reflect consecutive squares, so (27, 38, 51) also has them (11, 13), but it is 5² + 2, 6² + 2, 7² + 2: +2 instead of −2. The other two sets fit neither pattern.
+
+Q 24 | rea | Non-verbal Reasoning
+Identify the figure given in the options which when put in place of the question mark (?) will logically complete the series?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/c24s3-q24.png
+~ The pair of circles travels clockwise round the rectangle, half a side at a time: at the two top corners, then both at the top-right corner, then at the two corners of the right side, then both at the bottom-right corner. The next step puts them at the two corners of the bottom edge, which is option 1. Option 2 places the second circle at the middle of the bottom edge, option 3 jumps ahead to the bottom-left corner, and option 4 repeats the third figure.
+
+Q 25 | rea | Coding-Decoding
+In a certain code language, ‘SET’ is coded as ‘37’ and ‘MIX’ is coded as ‘35’. How will ‘WAR’ be coded in that language?
+(1) 29
+(2) 39
+(3) 21
+(4) 32
+= 2
+~ Each letter is given its reverse alphabetical position (A = 26, B = 25, …, Z = 1) and the values are added. SET: S = 8, E = 22, T = 7, total 37. MIX: M = 14, I = 18, X = 3, total 35. WAR: W = 4, A = 26, R = 9, total 39. With ordinary positions SET would give 19 + 5 + 20 = 44, which does not match the code.
+
+Q 26 | geo | Indian Geography
+What is the length of Indian Railways network, according to Railway Yearbook 2019-20?
+(1) 67,956 km
+(2) 2,402 km
+(3) 63,950 km
+(4) 1,604 km
+= 1
+~ According to the Ministry of Railways' figures for 2019-20 (as on 31 March 2020), Indian Railways had a route length of 67,956 km, a running track of 99,235 km and a total track of 1,26,366 km including yards and sidings. Route length is the distance between stations measured along the line, whatever the number of tracks. Indian Railways is one of the largest railway networks in the world under a single management, and broad gauge makes up most of its route length.
+
+Q 27 | geo | World & Physical Geography
+Which of the following is the largest crustal plate on Earth with an area of over 103,000,000 km²?
+(1) African plate
+(2) South American plate
+(3) Eurasian plate
+(4) Pacific plate
+= 4
+~ The Pacific plate is the largest of the Earth's major lithospheric plates, at about 103 million km². It is almost entirely oceanic and is bordered by the Pacific "Ring of Fire", a belt of subduction zones, volcanoes and earthquakes. The Eurasian, African, North American, South American, Indo-Australian and Antarctic plates are the other major plates, and the Eurasian and African plates are each much smaller, at roughly 60–68 million km².
+
+Q 28 | cur | Static GK & Culture
+‘Nuakhai’ is the state festival of:
+(1) Odisha
+(2) Tamil Nadu
+(3) Meghalaya
+(4) Bihar
+= 1
+~ Nuakhai ("nua" = new, "khai" = eat) is the harvest festival of Odisha, celebrated most widely in western Odisha around Sambalpur. It falls on the fifth day of the bright fortnight of Bhadrapada (August–September), the day after Ganesh Chaturthi. Families first offer the newly harvested rice (nabanna) to the deity, Goddess Samaleswari in Sambalpur, then eat it together, and the festival ends with Nuakhai Juhar, greetings exchanged with elders and friends.
+
+Q 29 | sci | Chemistry
+Which of the following is a straight-chain alkyl carboxylic acid with the chemical formula CH₃CH₂CH₂CO₂H?
+(1) Methanoic acid
+(2) Ethanoic acid
+(3) Propionic acid
+(4) Butyric acid
+= 4
+~ CH₃CH₂CH₂CO₂H has four carbon atoms in a straight chain ending in a –COOH group, so it is butanoic acid, commonly called butyric acid (C₃H₇COOH). It gives rancid butter and vomit their unpleasant smell. The other acids have fewer carbons: methanoic (formic) acid is HCOOH, ethanoic (acetic) acid is CH₃COOH, and propionic (propanoic) acid is CH₃CH₂COOH. In IUPAC names the parent alkane gives the stem and the suffix is "-oic acid".
+
+Q 30 | cur | Awards, Books & Persons
+Who among the following was the youngest instrumentalist to be awarded the Padma Bhushan, the third highest civilian award of India in 2002?
+(1) Ustad Zakir Hussain
+(2) Pandit Ravi Shankar
+(3) Pandit Bhimsen Joshi
+(4) Ustad Bismillah Khan
+= 1
+~ Tabla maestro Ustad Zakir Hussain, son of tabla player Ustad Alla Rakha, received the Padma Bhushan in 2002, after the Padma Shri in 1988; his biography describes him as the youngest percussionist to receive these honours, and he later got the Padma Vibhushan in 2023. The others were honoured earlier: sitarist Ravi Shankar got the Padma Bhushan in 1967, shehnai player Bismillah Khan in 1968 and Hindustani vocalist Bhimsen Joshi, who is not an instrumentalist, in 1985.
+
+Q 31 | pol | Constitution & Rights
+Which Article of the Indian Constitution prohibits providing of any religious instruction in the educational institutions maintained by the State?
+(1) Article 29
+(2) Article 28
+(3) Article 30
+(4) Article 31
+= 2
+~ Article 28(1) says no religious instruction shall be provided in any educational institution wholly maintained out of State funds. It does not apply to an institution administered by the State but set up under a trust or endowment that requires such instruction, and no one attending a State-recognised or State-aided institution can be compelled to take part. Articles 29 and 30 protect the cultural and educational rights of minorities, while Article 31 (right to property) was repealed by the 44th Amendment.
+
+Q 32 | pol | Government & Parliament
+Article 77 of the Indian Constitution deals with the ______.
+(1) Vice-President of India
+(2) oath of office by the Vice-President
+(3) conduct of business of the Government of India
+(4) term of office of the Vice-President
+= 3
+~ Article 77 covers the conduct of business of the Government of India. All executive action of the Union is expressed to be taken in the name of the President, orders are authenticated as the President's rules specify, and the President makes rules for the more convenient transaction of the Government's business and its allocation among Ministers (the Allocation and Transaction of Business Rules). The Vice-President options belong to Article 63 (office), Article 67 (term of office) and Article 69 (oath).
+
+Q 33 | pol | Constitution & Rights
+The Muslim Women (Protection of Rights on Marriage) Act, 2019 deals with subsistence allowance in which of the following Sections?
+(1) Section 7
+(2) Section 5
+(3) Section 4
+(4) Section 6
+= 2
+~ Under Section 5 of the Muslim Women (Protection of Rights on Marriage) Act, 2019, a married Muslim woman on whom talaq is pronounced may claim a subsistence allowance for herself and her dependent children, in an amount fixed by the Magistrate. The Act declares instant triple talaq void and illegal (Section 3), punishes it with up to three years' imprisonment and a fine (Section 4), gives the woman custody of minor children (Section 6) and makes the offence cognizable and compoundable with bail conditions (Section 7).
+
+Q 34 | sci | Biology
+Which of the following Illustrations shows the mitochondrion’s structural details?
+(1) c
+(2) a
+(3) b
+(4) d
+= 3
+! img/c24s3-q34.png
+~ Illustration b shows a mitochondrion cut open: a smooth outer membrane and an inner membrane folded into finger-like cristae, which increase the surface area for the reactions of cellular respiration. Mitochondria release energy as ATP, so they are called the powerhouses of the cell, and they have their own DNA and ribosomes. Illustrations a, c and d are only patterns and a lattice-like network, not cell organelles.
+
+Q 35 | cur | National
+In which year was the 'Naye Bharat Ke Sapne' campaign launched by Meta and the Ministry of Women?
+(1) 2022
+(2) 2021
+(3) 2023
+(4) 2020
+= 3
+~ Meta and the Ministry of Women and Child Development launched the "Amrit Generation" campaign on the theme "Naye Bharat Ke Sapne" (dreams of a new India) on 7 June 2023, with Union Minister Smriti Zubin Irani. Young people were invited to share their aspirations for the country through Reels on Instagram and Facebook with the hashtag #AmritGeneration, and selected creators were to be invited to New Delhi to meet policymakers and industry leaders.
+
+Q 36 | sci | Chemistry
+Which of the following statements is INCORRECT?
+(1) Fats and oils get reduced over time and smell bad.
+(2) Antioxidants are added to foods containing fats and oil to prevent oxidation.
+(3) Chips manufacturers usually flush bags of chips with Nitrogen to prevent the chips from getting ranicid.
+(4) Fats and oils are oxidised, they become rancid.
+= 1
+~ Fats and oils left exposed to air are oxidised, not reduced, and become rancid: their smell and taste change. This is why statement 1 is the incorrect one. As the NCERT Class 10 chapter on chemical reactions explains, antioxidants are added to foods containing fats and oils, airtight containers slow down oxidation, and chips manufacturers flush packets with an unreactive gas such as nitrogen to keep oxygen out and prevent rancidity.
+
+Q 37 | ih | Modern India
+Under which of the following Acts was the power to rule India, transferred from the English East India Company to the British Crown?
+(1) Regulating Act 1773
+(2) Pitt's India Act 1784
+(3) Government of India Act 1858
+(4) Charter Act of 1833
+= 3
+~ After the Revolt of 1857, the Government of India Act 1858 ended Company rule and transferred the power to govern India to the British Crown. A Secretary of State for India, assisted by a 15-member Council of India, took charge, and the Governor-General also became the Viceroy, Lord Canning being the first. The Regulating Act 1773 began parliamentary control, Pitt's India Act 1784 set up the Board of Control, and the Charter Act 1833 ended the Company's trade.
+
+Q 38 | cur | Sports
+Which of the following countries won the first men’s Asian Hockey Championship trophy?
+(1) Japan
+(2) China
+(3) Pakistan
+(4) India
+= 4
+~ The first men's Asian Champions Trophy in hockey was held at Ordos, China, in 2011, and India won it, beating Pakistan 4–2 on penalties after a goalless final. India also won the title in 2016, 2018 (shared with Pakistan after the final was rained off) and 2023, making it the most successful team. The older men's Hockey Asia Cup, first held in Karachi in 1982, was won by Pakistan, so the question refers to the Champions Trophy. (SSC key; some sources differ.)
+
+Q 39 | ih | Ancient India
+Silappathikaram (the Jewelled Anklet), the earliest epic poem in Tamil was written in the 5th - 6th Century CE by ______.
+(1) Tolkappiyar
+(2) Tirumalisai Alwar
+(3) Ilango Adigal
+(4) Sittalai Sattanar
+= 3
+~ Silappatikaram, the story of Kovalan, his wife Kannagi and the dancer Madhavi, was composed by Ilango Adigal, traditionally a Chera prince who became an ascetic. Its sequel Manimekalai, about the daughter of Kovalan and Madhavi, was written by Sittalai Sattanar; the two are counted among the five great Tamil epics. Tolkappiyar wrote the Tolkappiyam, the oldest Tamil grammar, and Tirumalisai Alvar was one of the twelve Vaishnava Alvar saints.
+
+Q 40 | eco | Planning, Growth & Budget
+Which of the following statements is correct?.
+(1) The five-year plan focuses mostly on private intervention in the economy.
+(2) The five-year plan permits long-term intervention by the government in the economy.
+(3) The five-year plan always focused on the growth of the tertiary sector.
+(4) A five-year plan always stresses market-oriented activities.
+= 2
+~ Five-year plans were India's tool of state-led planning: the government set goals of growth, modernisation, self-reliance and equity and used public investment and the public sector to steer the economy over the long term, so statement 2 is correct. Priorities changed from plan to plan (agriculture in the First Plan, heavy industry in the Second), not always the tertiary sector, and the plans did not rely mainly on private or market-led activity. Twelve plans ran from 1951 to 2017; NITI Aayog replaced the Planning Commission in 2015.
+
+Q 41 | eco | Schemes & Welfare
+In Pradhan Mantri Gramin Awaas yojana, the cost of unit assistance is shared between Central and State Governments in the ratio ______ in plain areas.
+(1) 30 : 70
+(2) 90 : 10
+(3) 60 : 40
+(4) 40 : 60
+= 3
+~ Under the Pradhan Mantri Awaas Yojana – Gramin, the cost of unit assistance is shared between the Centre and the States in the ratio 60:40 in plain areas. The ratio is 90:10 for the North-Eastern States, Himachal Pradesh, Uttarakhand and Jammu & Kashmir, and the Centre bears the full cost in other Union Territories. The unit assistance is ₹1.20 lakh in plains and ₹1.30 lakh in hilly states, difficult areas and IAP districts. PMAY-G replaced the Indira Awaas Yojana in 2016.
+
+Q 42 | ih | Medieval India
+Who was the revenue minister during the reign of Akbar?
+(1) Todar Mal
+(2) Abdul Rahim
+(3) Mulla Do-Piyaza
+(4) Tansen
+= 1
+~ Raja Todar Mal was Akbar's finance and revenue minister (diwan) and one of the "navaratnas" of his court. He reorganised land revenue through the zabt system and the dahsala (ten-year) assessment of 1580, based on measuring land and averaging produce and prices over ten years. Abdul Rahim Khan-i-Khanan was a general and poet who translated the Baburnama into Persian, Tansen was the court musician, and Mulla Do-Piyaza is remembered as a witty courtier of popular tales.
+
+Q 43 | geo | Indian Geography
+Hot local wind that flows over north India in summer is known as:
+(1) Purga
+(2) Loo
+(3) Chinook
+(4) Mango showers
+= 2
+~ The loo is a strong, hot and dry local wind that blows during the afternoon over the northern plains of India, from Punjab and Rajasthan to Bihar, in May and June. It can raise temperatures above 45°C and cause heat stroke. Mango showers are pre-monsoon showers of Kerala and coastal Karnataka that help the mangoes ripen, the chinook is a warm, dry wind on the eastern slopes of the Rockies, and the purga is a cold, snow-laden wind of Siberia.
+
+Q 44 | geo | Indian Geography
+As per the definition of Census of India, a ‘marginal worker’ is a person who works for:
+(1) more than 183 days (or six months) in a year
+(2) less than 183 days (or six months) in a year
+(3) eight months in a year
+(4) 83 days in a year
+= 2
+~ The Census of India divides workers by how long they worked in the reference year. Main workers worked for the major part of the year, that is 183 days (six months) or more. Marginal workers worked for less than 183 days (six months); Census 2011 further split them into those who worked for 3 to 6 months and those who worked for less than 3 months. Persons who did not work at all are non-workers.
+
+Q 45 | cur | Static GK & Culture
+In which of the following states is the Nrityagram, an Odissi dance institution, located?
+(1) Karnataka
+(2) Tamil Nadu
+(3) Kerala
+(4) Maharashtra
+= 1
+~ Nrityagram is a residential dance village at Hesaraghatta, about 30 km from Bengaluru in Karnataka. It was founded by the Odissi dancer Protima Gauri (Protima Bedi) and formally inaugurated in 1990 as a modern gurukul where students live with their gurus and train intensively. It is best known for Odissi, and its Nrityagram Dance Ensemble has performed widely in India and abroad. The buildings, designed by architect Gerard da Cunha, use local materials and styles.
+
+Q 46 | cur | Sports
+At which Olympics was Kho-Kho featured in an exhibition in the main stadium?
+(1) 2008
+(2) 2016
+(3) 1932
+(4) 1936
+= 4
+~ Kho-kho was demonstrated at the 1936 Berlin Olympics, along with kabaddi and mallakhamb, by a team from the Hanuman Vyayam Prasarak Mandal of Amravati (Maharashtra). These indigenous sports were shown as an exhibition and were not part of the official competition. Kho-kho is a tag game played by two teams of 12 players, nine of whom take the field; the chasers sit in a line in alternate directions and a chaser gives "kho" to a teammate to pass on the chase.
+
+Q 47 | eco | Planning, Growth & Budget
+Which of the following goods needs further transformation in the economic process?
+(1) Capital goods
+(2) Intermediate goods
+(3) Finished goods
+(4) Consumer durable goods
+= 2
+~ Intermediate goods, such as steel bought by a car maker or flour bought by a baker, are used up as inputs in producing other goods and undergo further transformation in the economic process. Final goods, both consumption goods and capital goods, do not; capital goods like machines are used repeatedly without being transformed. To avoid double counting, only the value of final goods, or the value added at each stage, is counted in national income.
+
+Q 48 | ih | Modern India
+Who among the following devised the system of ‘Subsidiary Alliance’?
+(1) Lord William Bentinck
+(2) Lord Wellesley
+(3) Lord Dalhousie
+(4) Lord Canning
+= 2
+~ Lord Wellesley, Governor-General from 1798 to 1805, devised the Subsidiary Alliance. An Indian ruler had to keep British troops in his state and pay for them, accept a British Resident at his court, and make no war or alliance without the Company's approval. Hyderabad was the first to accept it (1798), followed by Mysore, Awadh and the Peshwa (Treaty of Bassein, 1802). Dalhousie is known for the Doctrine of Lapse, Bentinck for social reforms and Canning as the first Viceroy.
+
+Q 49 | sci | Biology
+Which of the following is an inactivated (killed) polio vaccine developed in 1952?
+(1) HDCV vaccine
+(2) Salk vaccine
+(3) TAB vaccine
+(4) Imvanex vaccine
+= 2
+~ Jonas Salk developed the inactivated (killed) polio vaccine, IPV, in 1952; it was tested in large field trials in 1954 and licensed in 1955. It is given by injection, while Albert Sabin's oral polio vaccine (OPV) uses live, weakened virus. The other options are different vaccines: HDCV (human diploid cell vaccine) protects against rabies, TAB against typhoid and paratyphoid A and B, and Imvanex against smallpox and mpox.
+
+Q 50 | cur | Awards, Books & Persons
+Which of the following personalities is a Padma Shri awardee folk singer from the state of Uttar Pradesh?
+(1) Ajita Srivastava
+(2) Teejan Bai
+(3) Ila Arun
+(4) Gurmeet Bawa
+= 1
+~ Ajita Srivastava, a folk singer of Mirzapur known for Kajari songs of the rainy season, received the Padma Shri in 2022 in the field of art from Uttar Pradesh; she died in August 2024. Teejan Bai is the Pandavani singer from Chhattisgarh, Ila Arun is a Rajasthani folk and playback singer, and Punjabi folk singer Gurmeet Bawa was given the Padma Bhushan posthumously in 2022.
+
+Q 51 | qa | Percentage, Profit & Interest
+A number is first increased by 12% and then increased by 23%. The number, so obtained, is now decreased by 34%. What is the net increase or decrease percent in the original number (nearest to an integer)?
+(1) 9% increase
+(2) 10% decrease
+(3) 9% decrease
+(4) 10% increase
+= 3
+~ Take the number as 100. After a 12% increase it becomes 112; after a 23% increase, 112 × 1.23 = 137.76; after a 34% decrease, 137.76 × 0.66 = 90.9216. Net change = 90.9216 − 100 = −9.08, i.e. a decrease of about 9.08% ≈ 9% decrease. In one step: 1.12 × 1.23 × 0.66 = 0.909216. Simply adding 12 + 23 − 34 = +1% is wrong, because each change acts on a different base.
+
+Q 52 | qa | Data Interpretation & Statistics
+The given table shows the number of pages printed by four printers in three days.
+Days/Printers | L | M | N | O
+Friday | 10,230 | 9580 | 7560 | 9600
+Saturday | 8540 | 11,230 | 6580 | 7890
+Sunday | 9235 | 8264 | 7546 | 10,325
+If the total number of pages printed by all the given printers together on Wednesday was 15% more than the total number of pages printed by all the given printers together on Saturday, what was the total number of pages printed by all the [rest of the question cut off on the SSC sheet; editorial completion from the Hindi version: given printers together on Wednesday?]
+(1) 42,577
+(2) 38,450
+(3) 39,376
+(4) 40,263
+= 3
+~ The end of the question is cut off on SSC's sheet; the bracketed words complete it. Only the Saturday row is needed. Saturday total = 8540 + 11,230 + 6580 + 7890 = 34,240 pages. Wednesday's total is 15% more: 34,240 × 1.15 = 34,240 + 5,136 = 39,376 pages. Quick check: 10% of 34,240 is 3,424 and 5% is 1,712, which add up to 5,136. The Friday and Sunday rows are not needed, and the 15% must be added to Saturday's total, not to any single printer's figure.
+
+Q 53 | qa | Ratio, Average & Mixtures
+A stock portfolio consists of four stocks. Stock A represents 20% of the portfolio and has a return of 6%. Stock B represents 30% of the portfolio and has a return of 8%. Stock C represents 20% of the portfolio and has a return of 4%. Stock D represents the remaining 30% of the portfolio and has a negative-return of 5%. What is the average return of the portfolio?
+(1) 2.6%
+(2) 3.4%
+(3) 2.9%
+(4) 3.2%
+= 3
+~ The portfolio return is the weighted average of the stock returns, with each stock's share of the portfolio as its weight: 0.20 × 6 + 0.30 × 8 + 0.20 × 4 + 0.30 × (−5) = 1.2 + 2.4 + 0.8 − 1.5 = 2.9%. The weights already add up to 100%, so no further division is needed. A simple average of the four returns, (6 + 8 + 4 − 5)/4 = 3.25%, ignores the weights, and treating D's return as +5% would give 5.9%.
+
+Q 54 | qa | Data Interpretation & Statistics
+Study the given graph and answer the question that follows.
+The graph shows the production of refrigerators by three companies in 2018.
+The refrigerators produced by company C form what percentage of the total production?
+(1) 34.35%
+(2) 31.25%
+(3) 32.56%
+(4) 30.25%
+= 2
+! img/c24s3-q54.png
+~ Read the orange bars (production in year 2018), not the blue production-capacity bars: Company A = 140, B = 190 and C = 150 thousand. Total production = 140 + 190 + 150 = 480 thousand. Company C's share = 150/480 × 100 = 31.25%. Using the capacity bars instead (180 out of 170 + 200 + 180 = 550) would give about 32.7%, which is not what the question asks.
+
+Q 55 | qa | Algebra
+If x, y and z are positive numbers and x + y + z = 1, then the least value of 1/x + 1/y + 1/z is:
+(1) 11
+(2) 7
+(3) 5
+(4) 9
+= 4
+~ For positive numbers, AM ≥ HM gives (x + y + z)/3 ≥ 3/(1/x + 1/y + 1/z), i.e. (x + y + z)(1/x + 1/y + 1/z) ≥ 9. Since x + y + z = 1, the sum 1/x + 1/y + 1/z ≥ 9. Equality holds when x = y = z = 1/3, giving 3 + 3 + 3 = 9, so the least value is 9. Unequal values give more; for example, x = 1/2 and y = z = 1/4 give 2 + 4 + 4 = 10.
+
+Q 56 | qa | Time, Work, Speed & Distance
+A thief noticed a policeman at a distance of 600 metres. The thief started running and the policeman chased him. The thief and policeman are running at speeds of 12 km/h and 15 km/h, respectively. Find the time (in minutes) required for the policeman to catch the thief.
+(1) 8
+(2) 10
+(3) 12
+(4) 15
+= 3
+~ Both run in the same direction, so the policeman gains on the thief at the relative speed 15 − 12 = 3 km/h = 3000 m per 60 minutes = 50 m per minute. He must close the 600 m gap, so time = 600/50 = 12 minutes. In hours: 0.6 km ÷ 3 km/h = 0.2 hour = 12 minutes. Adding the speeds (27 km/h) would be correct only if they ran towards each other.
+
+Q 57 | qa | Mensuration
+What is the perimeter (in cm, rounded off to one decimal place) of the sector of a circle with a radius of 10 cm and of angle 30°?
+(Use π = 3.14)
+(1) 82.8
+(2) 25.2
+(3) 20.4
+(4) 35.7
+= 2
+~ Perimeter of a sector = 2r + arc length, where arc length = (θ/360°) × 2πr. Here arc length = (30/360) × 2 × 3.14 × 10 = 62.8/12 ≈ 5.23 cm. Perimeter = 10 + 10 + 5.23 = 25.23 ≈ 25.2 cm. Forgetting the two radii leaves only the arc (about 5.2 cm), while option 82.8 wrongly adds the whole circumference (62.8 cm) to the two radii.
+
+Q 58 | qa | Algebra
+Let a + b = 2c, then which of the following expressions is true?
+(1) a² − ac = b² − bc
+(2) a² + 2ac = b² + 2bc
+(3) a² − 2bc = b² − 2ac
+(4) a² + 2bc = b² + 2ac
+= 4
+~ Use a + b = 2c in the difference of squares: a² − b² = (a − b)(a + b) = 2c(a − b) = 2ac − 2bc. Moving terms across gives a² + 2bc = b² + 2ac, which is option 4. Check with a = 3, b = 1, c = 2: 9 + 4 = 13 and 1 + 12 = 13. The other options fail for these values, e.g. option 1 gives 9 − 6 = 3 on the left but 1 − 2 = −1 on the right.
+
+Q 59 | qa | Number System & Simplification
+If 7845K854 is divisible by 11, then what is the value of K?
+(1) 9
+(2) 8
+(3) 6
+(4) 7
+= 1
+~ A number is divisible by 11 when the difference between the sums of its digits in odd and even places (counted from the right) is 0 or a multiple of 11. Digits of 7845K854 from the right: 4, 5, 8, K, 5, 4, 8, 7. Odd places: 4 + 8 + 5 + 8 = 25; even places: 5 + K + 4 + 7 = 16 + K. Difference = 9 − K, which must be 0 for a single digit K, so K = 9. Check: 78459854 = 11 × 7132714.
+
+Q 60 | qa | Mensuration
+Find the area (in cm²) of the sector whose perimeter is 64/3 cm and central angle is 60°. (Use π = 22/7.)
+(1) 47/3
+(2) 85/3
+(3) 68/3
+(4) 77/3
+= 4
+~ Perimeter of a sector = 2r + (θ/360°) × 2πr. With θ = 60°, this is 2r + (1/6) × 2 × (22/7) × r = 2r + 22r/21 = 64r/21. Setting 64r/21 = 64/3 gives r = 7 cm. Area of the sector = (θ/360°) × πr² = (1/6) × (22/7) × 49 = 154/6 = 77/3 cm² (about 25.67 cm²). Remember that the perimeter includes both radii, not just the arc.
+
+Q 61 | qa | Data Interpretation & Statistics
+Study the given table and answer the question that follows.
+The given table shows the production of T-shirts by four companies i.e., C1, C2, C3 and C4 over the four years.
+Production (in thousands)
+Year | C1 | C2 | C3 | C4
+2019 | 243 | 244 | 244 | 240
+2020 | 248 | 239 | 236 | 230
+2021 | 232 | 240 | 235 | 248
+2022 | 242 | 244 | 230 | 242
+Which company had the maximum average production of T-shirts during these four years?
+(1) C4
+(2) C1
+(3) C2
+(4) C3
+= 3
+~ Every company is averaged over the same four years, so it is enough to compare totals (in thousands). C1: 243 + 248 + 232 + 242 = 965; C2: 244 + 239 + 240 + 244 = 967; C3: 244 + 236 + 235 + 230 = 945; C4: 240 + 230 + 248 + 242 = 960. C2 has the largest total, so the highest average, 967/4 = 241.75 thousand. C1 is a close second at 241.25 thousand; its single best year (248) does not decide the average.
+
+Q 62 | qa | Ratio, Average & Mixtures
+The mean proportional of 8a² and 18/a⁴, where a is a positive number, is ______.
+(1) 12/a²
+(2) 12a²
+(3) 12/a
+(4) 12a
+= 3
+~ The mean proportional of two quantities x and y is √(xy). Here √(8a² × 18/a⁴) = √(144/a²) = 12/a, taking the positive root because a > 0. Check: 8a² : 12/a and 12/a : 18/a⁴ are equal ratios, since 8a² ÷ (12/a) = 2a³/3 and (12/a) ÷ (18/a⁴) = 2a³/3. Remember to simplify a²/a⁴ = 1/a² before taking the square root.
+
+Q 63 | qa | Geometry
+In a ΔPQR, the bisectors of ∠Q and ∠R meet at point O, inside the triangle. If ∠QOR = 107°, then the measure of ∠P is:
+(1) 23°
+(2) 40°
+(3) 34°
+(4) 17°
+= 3
+~ The internal bisectors of ∠Q and ∠R meet at the incentre O. In ΔQOR, ∠QOR = 180° − (∠Q + ∠R)/2 = 180° − (180° − ∠P)/2 = 90° + ∠P/2. So 90° + ∠P/2 = 107°, giving ∠P/2 = 17° and ∠P = 34°. The option 17° is only half of ∠P. (For the external bisectors the angle would be 90° − ∠P/2 instead.)
+
+Q 64 | qa | Trigonometry & Heights
+If (7sinθ + 4cosθ)/(9sinθ − 2cosθ) = 5/4, then the value of (tan²θ + 5)/(tan²θ − 5) is:
+(1) −769/2121
+(2) 769/2121
+(3) 2121/769
+(4) −2121/769
+= 4
+~ Divide numerator and denominator by cosθ: (7tanθ + 4)/(9tanθ − 2) = 5/4. Cross-multiplying, 28tanθ + 16 = 45tanθ − 10, so 17tanθ = 26 and tanθ = 26/17, giving tan²θ = 676/289. Then (tan²θ + 5)/(tan²θ − 5) = (676 + 1445)/(676 − 1445) = 2121/(−769) = −2121/769. Since tan²θ < 5, the denominator is negative, which rules out the two positive options.
+
+Q 65 | qa | Algebra
+If the equations 4x + (k − 2)y + 3 = 0 and (k − 2)x + 9y − 5 = 0 (k > 0) are parallel, then find the value of k² + 6.
+(1) 72
+(2) 68
+(3) 70
+(4) 64
+= 3
+~ Lines a₁x + b₁y + c₁ = 0 and a₂x + b₂y + c₂ = 0 are parallel when a₁/a₂ = b₁/b₂ ≠ c₁/c₂. So 4/(k − 2) = (k − 2)/9, giving (k − 2)² = 36 and k − 2 = ±6, i.e. k = 8 or k = −4. As k > 0, k = 8; the lines 4x + 6y + 3 = 0 and 6x + 9y − 5 = 0 are then distinct and parallel, since 3/(−5) ≠ 2/3. Hence k² + 6 = 64 + 6 = 70.
+
+Q 66 | qa | Number System & Simplification
+Simplify:
+13 − [7 − (4 + 7) − {7 − (7 − 4 + 7)} + 14]
+(1) 9
+(2) 13
+(3) 26
+(4) 0
+= 4
+~ Follow BODMAS and open the innermost brackets first: (4 + 7) = 11 and (7 − 4 + 7) = 10. Then {7 − 10} = −3. Inside the square bracket: 7 − 11 − (−3) + 14 = 7 − 11 + 3 + 14 = 13. Finally 13 − 13 = 0. Ignoring the minus sign in front of the square bracket would give 13 + 13 = 26, a tempting wrong option.
+
+Q 67 | qa | Percentage, Profit & Interest
+A dishonest shopkeeper claims to sell salt at a rate of ₹25/kg. The cost price of the salt is ₹25/kg. Not satisfied with this, he tries to make profit by removing 200 gm from each kg. What is the shopkeeper’s gain percentage?
+(1) 20%
+(2) 25%
+(3) 30%
+(4) 15%
+= 2
+~ For every "kg" he charges for 1000 g but actually gives 1000 − 200 = 800 g. Gain % = error/(true quantity given) × 100 = 200/800 × 100 = 25%. In money: he receives ₹25 for salt that cost him 0.8 × 25 = ₹20, a gain of ₹5 on ₹20, which is 25%. Taking 200 out of 1000 (20%) is the usual slip; profit is measured on the cost of what he actually gives.
+
+Q 68 | qa | Percentage, Profit & Interest
+Ramesh has ₹18,000. He deposited ₹7,000 in a bank at the rate of 5% per annum and ₹6,000 in other bank at the rate of 6% per annum simple interest. If he received ₹1,160 as simple interest at the end of one year, then the rate of interest per annum on rest of the capital is equal to:
+(1) 10%
+(2) 9%
+(3) 8%
+(4) 11%
+= 2
+~ One year's simple interest on ₹7,000 at 5% = ₹350, and on ₹6,000 at 6% = ₹360, together ₹710. The rest of the capital is 18,000 − 7,000 − 6,000 = ₹5,000, and it must have earned 1,160 − 710 = ₹450 in the year. Rate = 450/5,000 × 100 = 9% per annum. Check: 350 + 360 + 450 = ₹1,160.
+
+Q 69 | qa | Trigonometry & Heights
+If A is an acute angle, which of the following is equal to sinA/(1 + cos A)?
+(1) (1 + sinA)/cos A
+(2) (1 − sinA)/cos A
+(3) (1 + cosA)/sin A
+(4) (1 − cosA)/sin A
+= 4
+~ Multiply numerator and denominator by (1 − cos A): sin A(1 − cos A)/(1 − cos²A) = sin A(1 − cos A)/sin²A = (1 − cos A)/sin A, which is valid because sin A ≠ 0 for an acute angle. Check with A = 60°: (√3/2)/(3/2) = 1/√3, and (1 − 1/2)/(√3/2) = 1/√3 too. Option (1 + cosA)/sin A is the reciprocal of the given expression, a common trap.
+
+Q 70 | qa | Percentage, Profit & Interest
+In a clearance sale, a sari whose marked price was ₹10,490 is now sold for ₹9,441. What is the discount percentage on the sari?
+(1) 12%
+(2) 10%
+(3) 18%
+(4) 15%
+= 2
+~ Discount = marked price − selling price = 10,490 − 9,441 = ₹1,049. Discount percentage is always calculated on the marked price: 1,049/10,490 × 100 = 10%. Quick check: 90% of ₹10,490 = ₹9,441, exactly the sale price. Dividing the discount by the selling price instead (1,049/9,441 ≈ 11.1%) is a common error.
+
+Q 71 | qa | Geometry
+Two triangles EFG and HIJ are congruent. If the area of ΔEFG is 124 cm², then the area of ΔHIJ will be:
+(1) 31 cm²
+(2) 248 cm²
+(3) 124 cm²
+(4) 62 cm²
+= 3
+~ Congruent triangles are identical in shape and size: all corresponding sides and angles are equal, so one can be placed exactly over the other. Hence their areas are equal, and the area of ΔHIJ = area of ΔEFG = 124 cm². Options such as half, double or a quarter of the area could arise only for similar triangles with a side ratio other than 1 : 1; congruence means the ratio of sides, and so of areas, is 1 : 1.
+
+Q 72 | qa | Trigonometry & Heights
+If (sec α + tan α)/(sec α − tan α) = 7/4, then find the value of cosec α.
+(1) 1/3
+(2) 1/11
+(3) 11/3
+(4) 3/11
+= 3
+~ Apply componendo and dividendo: [(sec α + tan α) + (sec α − tan α)]/[(sec α + tan α) − (sec α − tan α)] = (7 + 4)/(7 − 4), i.e. 2sec α/2tan α = 11/3. Now sec α/tan α = (1/cos α) × (cos α/sin α) = 1/sin α = cosec α, so cosec α = 11/3. This is valid since cosec α ≥ 1; the option 3/11 is sin α, not cosec α.
+
+Q 73 | qa | Time, Work, Speed & Distance
+A pipe can fill an overhead tank in 12 hours. But due to a leak at the bottom, it is filled in 18 hours. If the tank is full, how much time will the leak take to empty it?
+(1) 36 hours
+(2) 7.2 hours
+(3) 63 hours
+(4) 3.6 hours
+= 1
+~ The pipe fills 1/12 of the tank per hour, but with the leak the net filling is only 1/18 per hour. So the leak empties 1/12 − 1/18 = (3 − 2)/36 = 1/36 of the tank per hour, and on its own it empties a full tank in 36 hours. Shortcut: leak time = (12 × 18)/(18 − 12) = 216/6 = 36 hours. Option 7.2 hours comes from wrongly dividing by the sum (216/30).
+
+Q 74 | qa | Data Interpretation & Statistics
+The following table shows the sale (in thousands) of different types of helmets by a shop over the given years.
+Type of Helmet/Year | 1998 | 1999 | 2000 | 2001 | 2002
+A | 78 | 45 | 56 | 63 | 88
+B | 58 | 64 | 78 | 60 | 68
+C | 46 | 54 | 58 | 64 | 68
+D | 76 | 65 | 72 | 78 | 82
+E | 87 | 66 | 74 | 80 | 84
+What was the percentage increase in the sale of Helmets C in 2002 as compared to that in 1999?
+(1) 25.93%
+(2) 27.62%
+(3) 26.39%
+(4) 28.26%
+= 1
+~ From row C: the sale in 1999 was 54 thousand and in 2002 it was 68 thousand. Increase = 68 − 54 = 14 thousand. A percentage increase is taken on the earlier (base) year: 14/54 × 100 = 25.925…% ≈ 25.93%. Dividing by the later value (14/68 ≈ 20.6%) would be wrong, and the other years and helmet types are not needed.
+
+Q 75 | qa | Mensuration
+If the length, breadth, and height of a cuboid is 8 cm, 4 cm, and 6 cm, respectively, then the volume (in cm³) of the cuboid is:
+(1) 192
+(2) 96
+(3) 218
+(4) 172
+= 1
+~ The volume of a cuboid is the product of its three dimensions: V = length × breadth × height = 8 × 4 × 6 = 192 cm³. The option 96 is half of this value, as if the solid were a triangular prism. Do not confuse volume with total surface area, 2(lb + bh + hl) = 2(32 + 24 + 48) = 208 cm², which is a different quantity measured in cm².
+
+Q 76 | eng | Spelling
+Identify the INCORRECTLY spelt word in the following sentence and select its correct spelling from the given options.
+I receieved a parcel in the mail today.
+(1) recieved
+(2) recived
+(3) receaved
+(4) received
+= 4
+~ The misspelt word is 'receieved', which has an extra e; the correct spelling is 'received' (r-e-c-e-i-v-e-d). It follows the rule 'i before e, except after c': after c the order is e-i, as in receive, receipt, deceive and ceiling. 'Recieved' breaks this rule by putting i before e after c, 'recived' drops the e altogether, and 'receaved' wrongly uses ea in place of ei.
+
+Q 77 | eng | Idioms & One-word Substitution
+Select the option that can be used as a one-word substitute for the given group of words.
+An order of law requiring people to remain indoors
+(1) Curfew
+(2) Check in
+(3) Restriction
+(4) Limit
+= 1
+~ A 'curfew' is an order issued by the authorities requiring people to remain indoors, usually during specified hours such as at night, as in 'A curfew was imposed after the riots.' 'Check in' means to register on arrival at a hotel or airport, 'restriction' is any rule or condition that limits what one may do, and 'limit' is a point beyond which something cannot go; neither restriction nor limit specifically means an order to stay indoors.
+
+Q 78 | eng | Idioms & One-word Substitution
+Which of the following idioms means ‘to steal from a shop’?
+(1) Golden opportunity
+(2) Five-finger discount
+(3) Black sheep
+(4) Green thumb
+= 2
+~ 'Five-finger discount' is an informal, humorous idiom for shoplifting, that is, stealing goods from a shop: the item is 'paid for' only with the five fingers that pick it up, as in 'He got that watch with a five-finger discount.' A 'golden opportunity' is an excellent chance that should not be missed, a 'black sheep' is a member of a family or group regarded as a disgrace, and a 'green thumb' is a natural talent for gardening.
+
+Q 79 | eng | Error Spotting & Sentence Improvement
+Parts of the following sentence have been given as options. Select the option that contains an error.
+The tea at this café is best than at the Costa Café in our office.
+(1) in our office
+(2) at the Costa Café
+(3) The tea at this café
+(4) is best than
+= 4
+~ When two things are compared with 'than', the comparative degree of the adjective is required, not the superlative. 'Best' is the superlative of 'good' (used with 'the' when comparing three or more), so 'is best than' is wrong; it should be 'is better than': 'The tea at this café is better than at the Costa Café in our office.' The other parts, 'The tea at this café', 'at the Costa Café' and 'in our office', contain no error.
+
+Q 80 | eng | Vocabulary
+Select the most appropriate meaning of the given word.
+Edible
+(1) noxious
+(2) noisome
+(3) mortal
+(4) nutritive
+= 4
+~ 'Edible' means fit or safe to be eaten, as in 'edible mushrooms'. Of the options, the closest in meaning is 'nutritive', meaning providing nourishment, that is, suitable as food. 'Noxious' means harmful or poisonous and 'noisome' means having an extremely offensive smell or being harmful, so both are nearly the opposite of edible. 'Mortal' means subject to death or causing death, which is unrelated.
+
+Q 81 | eng | Idioms & One-word Substitution
+Select the option that can be used as a one-word substitute for the given group of words.
+Morbid compulsion to consume alcohol continuously
+(1) Maniac
+(2) Dipsomania
+(3) Kleptomania
+(4) Satyromania
+= 2
+~ 'Dipsomania' is a morbid, uncontrollable craving to drink alcohol continuously; a person with this condition is a dipsomaniac. The word comes from Greek 'dipsa' (thirst) + 'mania' (madness). 'Kleptomania' is a compulsive urge to steal, 'satyromania' (satyriasis) is excessive sexual desire in a man, and a 'maniac' is a person who behaves in a wild or violent way, not a compulsion at all.
+
+Q 82 | eng | Sentence Arrangement
+Parts of a sentence are given below in jumbled order. Arrange the parts in the correct order to form a meaningful sentence.
+P. having the opportunity of observing people’s
+Q. we respect and appreciate their point of views
+R. the advantage of travelling different places and
+S. culture, custom and lifestyle, is that
+(1) SQPR
+(2) PSQR
+(3) RQPS
+(4) RPSQ
+= 4
+~ R 'the advantage of travelling different places and' opens the subject, and its 'and' adds a second phrase, P 'having the opportunity of observing people's'. The possessive people's needs its nouns from S 'culture, custom and lifestyle', which also brings the verb 'is that', and Q 'we respect and appreciate their point of views' completes the that-clause: RPSQ. SQPR begins with a stray list, PSQR ends on a dangling 'and', and RQPS puts the that-clause before 'is that'. (Printed slips: standard English is 'points of view' and 'travelling to different places'.)
+
+Q 83 | eng | Vocabulary
+Select the most appropriate synonym of the bracketed word in the following sentence to fill in the blank.
+The elaborate syllabi had to be ______(summarised) to make a presentation in the UGC assessment meeting.
+(1) recapitulated
+(2) expanded
+(3) prolonged
+(4) lengthened
+= 1
+~ To 'summarise' is to give a brief statement of the main points. Its synonym is 'recapitulate', meaning to restate the main points briefly, the source of the short form 'recap': 'The elaborate syllabi had to be recapitulated to make a presentation in the UGC assessment meeting.' 'Expanded', 'prolonged' and 'lengthened' all mean made larger or longer, which is the opposite of shortening a long syllabus into a summary.
+
+Q 84 | eng | Idioms & One-word Substitution
+Select the option that can be used as a one-word substitute for the underlined group of words.
+The question papers are placed in the lockers of the school in a way that they "can’t be reached".
+(1) are affable
+(2) are irrepressible
+(3) are affordable
+(4) are inaccessible
+= 4
+~ 'Inaccessible' means unable to be reached or approached, so 'can't be reached' is replaced by 'are inaccessible': 'The question papers are placed in the lockers of the school in a way that they are inaccessible.' The prefix in- (not) is added to 'accessible' (able to be reached). 'Affable' means friendly and easy to talk to, 'irrepressible' means impossible to control or restrain, and 'affordable' means cheap enough to buy; none of them describes something that cannot be reached.
+
+Q 85 | eng | Spelling
+Select the INCORRECTLY spelt word.
+(1) Privilege
+(2) Accommodate
+(3) Mischievious
+(4) Millennium
+= 3
+~ The incorrectly spelt word is 'Mischievious'; the correct spelling is 'mischievous' (m-i-s-c-h-i-e-v-o-u-s), with no i between v and o. It has three syllables (MIS-chi-vus) and comes from 'mischief'; the extra i reflects a common mispronunciation. The other words are spelt correctly: 'privilege' (no d, ends in -lege), 'accommodate' (double c and double m) and 'millennium' (double l and double n).
+
+Q 86 | eng | Voice & Narration
+Select the option that expresses the given sentence in active voice.
+The painting was admired by art enthusiasts from around the world.
+(1) Art enthusiasts from around the world have admired the painting.
+(2) Art enthusiasts from around the world admired the painting.
+(3) The painting was being admired by art enthusiasts from around the world.
+(4) The painting has been admired by art enthusiasts from around the world.
+= 2
+~ 'Was admired' is the simple past passive (was/were + past participle). In the active voice the doer, 'art enthusiasts from around the world', becomes the subject, the verb takes the simple past form 'admired', and 'the painting' becomes the object: 'Art enthusiasts from around the world admired the painting.' Option 1 changes the tense to present perfect ('have admired'), while options 3 and 4 are still in the passive voice, in the past continuous and present perfect tenses.
+
+Q 87 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Miserable
+(1) Restrained
+(2) Cheerful
+(3) Settled
+(4) Melodious
+= 2
+~ 'Miserable' means very unhappy or wretched, as in 'He felt miserable after losing the match.' Its antonym is 'cheerful', meaning noticeably happy and optimistic. 'Restrained' means controlled or reserved in manner, 'settled' means stable or not likely to change, and 'melodious' means pleasant-sounding or tuneful; none of these is the opposite of feeling unhappy.
+
+Q 88 | eng | Idioms & One-word Substitution
+Select the most appropriate meaning of the underlined idiom.
+Fatima was "at her wits’ end" trying to decide on a serene place for spending the holidays in.
+(1) So worried, confused or annoyed that she became unconscious
+(2) So calm and composed that she knows what to do next
+(3) So worried, confused or annoyed that she does not know what to do next
+(4) So worried, confused or annoyed that she insulted others for no reason
+= 3
+~ To be 'at one's wits' end' means to be so worried, confused or annoyed that one does not know what to do next; one's wits (powers of thinking) have run out. Fatima could not decide on a serene holiday spot, so she was at a loss. Option 2 is the opposite meaning, while options 1 and 4 add consequences, fainting and insulting others, that the idiom does not imply.
+
+Q 89 | eng | Error Spotting & Sentence Improvement
+Select the word segment that can substitute the bracketed word segment correctly and complete the sentence meaningfully.
+(Each participant have) performed well.
+(1) Each participant has
+(2) Each participant were
+(3) Each participant was
+(4) Each participant have been
+= 1
+~ 'Each' refers to every member of a group taken one by one, so it takes a singular verb. 'Have performed' must become the singular present perfect 'has performed': 'Each participant has performed well.' 'Were' and 'have' are plural forms, so options 2 and 4 are wrong. Option 3 gives 'was performed', a passive form meaning that the participant was performed by someone, which makes no sense; option 4 'have been performed' is also passive.
+
+Q 90 | eng | Voice & Narration
+Select the option that expresses the given sentence in active voice.
+He will be made President by the people.
+(1) He will be made President by the people.
+(2) By the people, he shall be made the President.
+(3) The people will make him President.
+(4) People will be making him the President.
+= 3
+~ 'Will be made' is the simple future passive (will be + past participle). In the active voice the doer 'the people' becomes the subject, the verb becomes 'will make', and the subject pronoun 'he' becomes the object 'him': 'The people will make him President.' Option 1 simply repeats the passive sentence, option 2 is still passive (shall be made), and option 4 wrongly changes the tense to the future continuous 'will be making'.
+
+Q 91 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Taut
+(1) Torn
+(2) Slack
+(3) Tight
+(4) Flaccid
+= 3
+~ 'Taut' means stretched or pulled tight, not slack, as in 'a taut rope'; it can also describe tense nerves or a concise, well-controlled style. Its synonym is 'tight'. 'Slack' (loose, not tightly stretched) and 'flaccid' (soft and limp, hanging loosely) are its antonyms, and 'torn' (pulled apart or ripped) is unrelated in meaning.
+
+Q 92 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Confiscate
+(1) Titivate
+(2) Restock
+(3) Seize
+(4) Destroy
+= 3
+~ To 'confiscate' means to take or seize someone's property with authority, as when customs officers confiscate smuggled goods or a teacher confiscates a phone. Its synonym is 'seize', meaning to take hold of or take possession of something by force or legal authority. 'Titivate' means to make small improvements to one's appearance, 'restock' means to refill with fresh supplies, and 'destroy' means to ruin completely; confiscated goods are taken away, not necessarily destroyed.
+
+Q 93 | eng | Vocabulary
+Select the most appropriate homophone to fill in the blank.
+He has the ______ to express his thoughts.
+(1) write
+(2) ride
+(3) rite
+(4) right
+= 4
+~ Homophones are words that sound alike but differ in meaning and spelling. Right, write and rite are all pronounced the same. The sentence needs a noun meaning a moral or legal entitlement, which is 'right': 'He has the right to express his thoughts.' 'Write' is a verb meaning to put words on paper, a 'rite' is a religious or ceremonial act, and 'ride' (to travel on a horse or vehicle) is not even a homophone of the others.
+
+Q 94 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option to substitute the underlined segment in the given sentence.
+There are many factories in the "operative" area of the city.
+(1) industrious
+(2) mechanical
+(3) industrial
+(4) serviceable
+= 3
+~ An area with many factories is an 'industrial area', so 'operative' (functioning, in force) is replaced by 'industrial', meaning relating to industry: 'There are many factories in the industrial area of the city.' The tempting 'industrious' means hard-working and describes people, as in 'an industrious student'. 'Mechanical' means relating to machines or done automatically, and 'serviceable' means usable or in working order, neither of which describes a factory zone.
+
+Q 95 | eng | Error Spotting & Sentence Improvement
+Parts of the following sentence have been given as options. Select the option that contains an error.
+I are dancing with my husband at my sister’s wedding.
+(1) husband at my
+(2) I are dancing
+(3) with my
+(4) sister’s wedding
+= 2
+~ The verb must agree with its subject. The first-person singular pronoun 'I' takes 'am' in the present continuous tense, never 'are', which is used with you, we and they. So 'I are dancing' should be 'I am dancing': 'I am dancing with my husband at my sister's wedding.' The other parts, 'with my', 'husband at my' and 'sister's wedding' (a correct singular possessive), contain no error.
+
+Q 96 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Tea prices in the domestic (1)______ continue to rule high in the current year despite the expectation of a higher production as compared to the previous year. During the past three months, tea prices have been (2)______ with the prices of other companies. Unlike last year, tea prices have generally shown (3) ______, when tea prices rose dramatically, this year, prices seem to have (4) ______ at a rather high level. In the subsequent four months, the (5)______ average price showed a downtrend.
+Select the most appropriate option to fill in blank number 1.
+(1) field
+(2) zone
+(3) market
+(4) area
+= 3
+~ Prices are set in a market, and 'domestic market' is the standard collocation for buying and selling within a country, as opposed to the export or international market: 'Tea prices in the domestic market continue to rule high...' The passage is about prices, production and trends, all market terms. 'Field', 'zone' and 'area' refer to a region or a sphere of activity and are not used with 'domestic' to describe where prices are fixed.
+
+Q 97 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Tea prices in the domestic (1)______ continue to rule high in the current year despite the expectation of a higher production as compared to the previous year. During the past three months, tea prices have been (2)______ with the prices of other companies. Unlike last year, tea prices have generally shown (3) ______, when tea prices rose dramatically, this year, prices seem to have (4) ______ at a rather high level. In the subsequent four months, the (5)______ average price showed a downtrend.
+Select the most appropriate option to fill in blank number 2.
+(1) aligning
+(2) encountering
+(3) favouring
+(4) countering
+= 1
+~ The blank is followed by 'with', and 'align with' means to come into line or move in step with something: 'tea prices have been aligning with the prices of other companies' means they have been moving in line with those prices. 'Encountering' (meeting, facing) takes a direct object and is not followed by 'with'. 'Countering' (opposing or answering) and 'favouring' (preferring, supporting) give no sense of prices moving together, so they do not fit.
+
+Q 98 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Tea prices in the domestic (1)______ continue to rule high in the current year despite the expectation of a higher production as compared to the previous year. During the past three months, tea prices have been (2)______ with the prices of other companies. Unlike last year, tea prices have generally shown (3) ______, when tea prices rose dramatically, this year, prices seem to have (4) ______ at a rather high level. In the subsequent four months, the (5)______ average price showed a downtrend.
+Select the most appropriate option to fill in blank number 3.
+(1) an innate
+(2) a reduction
+(3) an uptrend
+(4) an inflow
+= 3
+~ The passage says tea prices 'continue to rule high', so the prices have shown 'an uptrend', a general upward movement, which also contrasts with the 'downtrend' mentioned at the end. 'An innate' is an adjective (inborn) with no noun after it, so it cannot fill the blank. 'A reduction' contradicts prices ruling high, and 'an inflow' refers to money, goods or people coming in, not to the movement of prices.
+
+Q 99 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Tea prices in the domestic (1)______ continue to rule high in the current year despite the expectation of a higher production as compared to the previous year. During the past three months, tea prices have been (2)______ with the prices of other companies. Unlike last year, tea prices have generally shown (3) ______, when tea prices rose dramatically, this year, prices seem to have (4) ______ at a rather high level. In the subsequent four months, the (5)______ average price showed a downtrend.
+Select the most appropriate option to fill in blank number 4.
+(1) abated
+(2) moderated
+(3) stabilised
+(4) equated
+= 3
+~ The sentence contrasts this year with last year, when prices 'rose dramatically': this year prices have stopped rising sharply and settled 'at a rather high level'. 'Stabilised at a level' is the natural collocation, meaning became steady and stopped changing. 'Abated' (became less intense) and 'moderated' (became less extreme) suggest a fall, which does not fit 'rule high' or 'at a rather high level', and 'equated' (regarded as equal) makes no sense here.
+
+Q 100 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Tea prices in the domestic (1)______ continue to rule high in the current year despite the expectation of a higher production as compared to the previous year. During the past three months, tea prices have been (2)______ with the prices of other companies. Unlike last year, tea prices have generally shown (3) ______, when tea prices rose dramatically, this year, prices seem to have (4) ______ at a rather high level. In the subsequent four months, the (5)______ average price showed a downtrend.
+Select the most appropriate option to fill in blank number 5.
+(1) yearly
+(2) monthly
+(3) half yearly
+(4) weekly
+= 2
+~ The sentence speaks of 'the subsequent four months', so the trend is measured month by month: 'the monthly average price showed a downtrend' means the average price for each month kept falling. A yearly or half-yearly average cannot show a trend within a span of only four months, and 'weekly' does not match the period of months that the passage uses throughout ('the past three months', 'four months').

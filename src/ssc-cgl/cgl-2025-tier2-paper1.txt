@@ -1,0 +1,1552 @@
+# SSC Combined Graduate Level Examination 2025, Tier-II, Paper I, held 19 January 2026 (11:00 AM - 1:15 PM). 150 questions, 450 marks, 2 hours 15 minutes.
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via AglaSem); answers are the options SSC ticked as correct on that sheet (answer-key stage). The Hindi text is from a second candidate's sheet of the same exam, with the options put in the English order. Explanations by Learn with Anil.
+
+Q 1 | qa | Mensuration
+The diagonals of three faces of a rectangular parallelepiped that meet at a single corner measure √5 cm, √10 cm, and √13 cm. What is the volume of this parallelepiped?
+(1) 12 cm³
+(2) 24 cm³
+(3) 6 cm³
+(4) 18 cm³
+= 3
+~ Let the edges be a, b, c. The face diagonals give a² + b² = 5, b² + c² = 10 and c² + a² = 13. Adding, 2(a² + b² + c²) = 28, so a² + b² + c² = 14. Then c² = 14 − 5 = 9, a² = 14 − 10 = 4 and b² = 14 − 13 = 1, so a = 2, b = 1, c = 3 cm. Volume = abc = 2 × 1 × 3 = 6 cm³.
+
+Q 2 | qa | Geometry
+In a triangle ΔPQR, ∠R = 62°. The perpendicular bisector of PQ at S meets QR at T. If ∠TPR = 38°, what is the measure of ∠PQR?
+(1) 60°
+(2) 80°
+(3) 35°
+(4) 40°
+= 4
+~ Every point on the perpendicular bisector of PQ is equidistant from P and Q, so TP = TQ and triangle TPQ is isosceles: ∠TPQ = ∠TQP = ∠PQR. Hence ∠P = ∠TPQ + ∠TPR = ∠Q + 38°. Angle sum in ΔPQR: (∠Q + 38°) + ∠Q + 62° = 180°, so 2∠Q = 80° and ∠PQR = 40°. Check: ∠P = 78°, and 78° + 40° + 62° = 180°.
+
+Q 3 | qa | Data Interpretation & Statistics
+A number is chosen at random from the set {1, 2, 3, ..., 120}. What is the probability that the number chosen is divisible by 6 or 8 but not divisible by 24?
+(1) 25/120
+(2) 19/120
+(3) 21/120
+(4) 23/120
+= 4
+~ From 1 to 120 there are 20 multiples of 6, 15 multiples of 8 and 5 multiples of both (that is, of LCM 24). Divisible by 6 or 8 = 20 + 15 − 5 = 30. All 5 multiples of 24 are in this group, so removing them leaves 25 numbers (6, 8, 12, 16, 18, 30, …, 114), which gives 25/120 = 5/24. SSC's key marks 23/120, which this count does not support. (SSC key; some sources differ.)
+
+Q 4 | qa | Geometry
+In an equilateral triangle, the circumcenter coincides with which of the following?
+(1) A point outside the triangle
+(2) The midpoint of one of its sides
+(3) The centroid of the triangle
+(4) One of the vertices
+= 3
+~ In an equilateral triangle the perpendicular bisector of each side passes through the opposite vertex, so it is also a median, an altitude and an angle bisector. Hence the circumcentre, centroid, orthocentre and incentre all fall at one point, two-thirds of the way along each median from the vertex. The circumcentre lies outside only in an obtuse triangle and at the midpoint of the hypotenuse in a right triangle.
+
+Q 5 | qa | Trigonometry & Heights
+What is the value of 3/2 (cos 39°/sin 51°) − √(sin²39° + sin²51°)?
+(1) 3/2
+(2) 7/8
+(3) 5/6
+(4) 1/2
+= 4
+~ The angles are complementary: 39° + 51° = 90°, so sin 51° = sin(90° − 39°) = cos 39°. Then cos 39°/sin 51° = 1 and the first term is 3/2 × 1 = 3/2. Also sin²39° + sin²51° = sin²39° + cos²39° = 1, whose square root is 1. Value = 3/2 − 1 = 1/2.
+
+Q 6 | qa | Data Interpretation & Statistics
+A set of n values x₁,x₂,...,xₙ has a standard deviation of 5. The standard deviation of n values x₁−7,x₂−7,...,xₙ−7 will be:
+(1) 5
+(2) 0
+(3) 10
+(4) 7
+= 1
+~ Standard deviation measures the spread of values about their mean. Subtracting the same constant 7 from every value lowers the mean by 7 as well, so each deviation (xᵢ − 7) − (x̄ − 7) = xᵢ − x̄ is unchanged. Hence the SD stays 5 (and the variance stays 25). SD changes only when every value is multiplied or divided by a constant k; it then gets multiplied by |k|.
+
+Q 7 | qa | Data Interpretation & Statistics
+The given table shows the number of people in different age groups. Find the mean age of the given number of people.
+Class interval of age (in years) | Number of people (f)
+25 – 29 | 10
+30 – 34 | 12
+35 – 39 | 8
+40 – 44 | 5
+45 – 49 | 15
+50 – 54 | 10
+55 – 59 | 15
+(1) 38.6 years
+(2) 32.4 years
+(3) 54.2 years
+(4) 43.2 years
+= 4
+~ Use the class marks (midpoints) 27, 32, 37, 42, 47, 52 and 57. Σf = 10 + 12 + 8 + 5 + 15 + 10 + 15 = 75. Σfx = 270 + 384 + 296 + 210 + 705 + 520 + 855 = 3240. Mean = Σfx/Σf = 3240/75 = 43.2 years. The large frequencies in the upper classes (45–59) pull the mean above the middle of the range.
+
+Q 8 | qa | Mensuration
+A rectangle is such that its area is 48 cm² and its perimeter is 28 cm. If a rhombus is formed by joining the midpoints of the sides of this rectangle, what is the area of the rhombus?
+(1) 12 cm²
+(2) 24 cm²
+(3) 48 cm²
+(4) 20 cm²
+= 2
+~ From the perimeter, l + b = 14, and lb = 48, so the sides are 8 cm and 6 cm. Joining the midpoints of a rectangle's sides gives a rhombus whose diagonals equal the rectangle's sides, 8 cm and 6 cm. Area of rhombus = ½ × d₁ × d₂ = ½ × 8 × 6 = 24 cm². In general this rhombus always has half the area of the rectangle (48/2 = 24).
+
+Q 9 | qa | Geometry
+If a chord of a circle subtends an angle of 60° at the circumference of the circle, then what is the ratio of the radius of the circle and the length of the chord respectively?
+(1) 1:2
+(2) 3:4
+(3) 2 : √5
+(4) 1 : √3
+= 4
+~ The angle at the centre is twice the angle at the circumference, so the chord subtends 120° at the centre. In the isosceles triangle formed by the centre and the chord's ends, chord = 2r sin(120°/2) = 2r sin 60° = 2r × √3/2 = r√3. So radius : chord = r : r√3 = 1 : √3. (Equivalently, chord = 2R × sine of the inscribed angle.)
+
+Q 10 | qa | Mensuration
+A hemispherical tank is full of water. It is connected to a pipe that empties it at a rate of 7 litres per second. How much approximate time (in minutes) will it take to empty half the tank if the internal radius of the tank is 2.1 meters? (Use π = 22/7 and 1 m³=1000 liters)
+(1) 16 minutes
+(2) 11 minutes
+(3) 46 minutes
+(4) 23 minutes
+= 4
+~ Volume of the hemisphere = (2/3)πr³ = (2/3) × (22/7) × 2.1³ = 19.404 m³ = 19,404 litres. Half the tank = 9,702 litres. At 7 litres per second this takes 9702/7 = 1386 seconds = 1386/60 = 23.1 minutes, that is about 23 minutes. Emptying the whole tank would take about 46 minutes, which is the trap option.
+
+Q 11 | qa | Geometry
+In a right-angled triangle ABC, the angle at B is 90°. If AB = 6 cm and BC = 8 cm, what is the distance between the centroid G and the orthocenter H?
+(1) 5 cm
+(2) 10/3 cm
+(3) 8 cm
+(4) 20/3 cm
+= 2
+~ In a right-angled triangle the altitudes meet at the right-angle vertex, so the orthocentre H is B. Hypotenuse AC = √(6² + 8²) = 10 cm, and the median from B to the midpoint M of AC equals half the hypotenuse, BM = 5 cm. The centroid lies on this median two-thirds of the way from the vertex: BG = (2/3) × 5 = 10/3 cm. So GH = 10/3 cm (5 cm is the distance to the circumcentre M).
+
+Q 12 | qa | Algebra
+If 3x − ky + 8 = 0 and 9x − 18y + 20 = 0 have no solution, find k.
+(1) 9
+(2) 10
+(3) 2
+(4) 6
+= 4
+~ A pair a₁x + b₁y + c₁ = 0, a₂x + b₂y + c₂ = 0 has no solution (parallel lines) when a₁/a₂ = b₁/b₂ ≠ c₁/c₂. Here a₁/a₂ = 3/9 = 1/3 and b₁/b₂ = (−k)/(−18) = k/18, so k/18 = 1/3 and k = 6. Check: c₁/c₂ = 8/20 = 2/5, which is not 1/3, so the lines are parallel and distinct and the system has no solution.
+
+Q 13 | qa | Mensuration
+A sphere of radius 21 cm is cut into 8 identical pieces by making three mutually perpendicular cuts through its center (one along each axis). Find the total surface area of each piece in cm².
+(1) 625.25π cm²
+(2) 560π cm²
+(3) 450.75π cm²
+(4) 551.25π cm²
+= 4
+~ Each piece is one-eighth of the sphere. Its curved part = 4πr²/8 = πr²/2 = 441π/2 = 220.5π cm². Each cut also exposes flat faces: every piece has three quarter-circles of radius 21 cm, area 3 × πr²/4 = 3 × 441π/4 = 330.75π cm². Total surface area = 220.5π + 330.75π = 551.25π cm². Forgetting the flat faces gives only 220.5π.
+
+Q 14 | qa | Algebra
+If x + 1/x = 2√3, then find the value of x³ + 1/x³.
+(1) 10√3
+(2) 6√3
+(3) 24√3
+(4) 18√3
+= 4
+~ Use the identity x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x). Here (2√3)³ = 8 × 3√3 = 24√3 and 3 × 2√3 = 6√3. So x³ + 1/x³ = 24√3 − 6√3 = 18√3. The option 24√3 is the trap: it is only the cube of (x + 1/x), without subtracting 3(x + 1/x).
+
+Q 15 | qa | Ratio, Average & Mixtures
+The expenditure of a company on five heads A, B, C, D and E is in proportion to 3:5:7:11:? respectively. The expenditure on E is equal to the arithmetic mean of the expenditures on A and D. If the expenditure on C exceeds that on B by ₹18,000, find the total expenditure (₹) of the company.
+(1) ₹2,40,000
+(2) ₹2,97,000
+(3) ₹1,80,000
+(4) ₹2,52,000
+= 2
+~ E is the mean of A and D: (3 + 11)/2 = 7 parts, so the ratio is 3 : 5 : 7 : 11 : 7 and the total is 33 parts. C exceeds B by 7 − 5 = 2 parts = ₹18,000, so one part = ₹9,000. Total expenditure = 33 × 9,000 = ₹2,97,000.
+
+Q 16 | qa | Ratio, Average & Mixtures
+A, B, and C invest in a business in the ratio 2:3:5. After 4 months, A increases his capital by 50%, B decreases his capital by 1/3, and C leaves the capital unchanged. At the end of the year, if the total profit is Rs. 33,000, find the share of B.
+(1) Rs. 7,700
+(2) Rs. 8,000
+(3) Rs. 9,000
+(4) Rs. 10,500
+= 1
+~ Profit is shared in the ratio of capital × time. A: 2 for 4 months, then 3 (50% more) for 8 months = 8 + 24 = 32. B: 3 for 4 months, then 2 (one-third less) for 8 months = 12 + 16 = 28. C: 5 × 12 = 60. Ratio 32 : 28 : 60 = 8 : 7 : 15 (total 30). B's share = 7/30 × 33,000 = Rs. 7,700.
+
+Q 17 | qa | Trigonometry & Heights
+Simplify: (tan²θ − sin²θ)/(2 + tan²θ + cot²θ)
+(1) sec⁶θ
+(2) sin⁶θ
+(3) cos²θ
+(4) sin²θ
+= 2
+~ Numerator: tan²θ − sin²θ = sin²θ(1/cos²θ − 1) = sin²θ × tan²θ = sin⁴θ/cos²θ. Denominator: 2 + tan²θ + cot²θ = (tanθ + cotθ)², and tanθ + cotθ = 1/(sinθ cosθ), so it equals 1/(sin²θ cos²θ). Dividing: (sin⁴θ/cos²θ) × sin²θ cos²θ = sin⁶θ. Check with θ = 45°: (1 − ½)/(2 + 1 + 1) = 1/8 = (1/√2)⁶.
+
+Q 18 | qa | Number System & Simplification
+(0.1667×0.8333×0.3333)/(0.2222×0.6667×0.1250) is approximately equal to:
+(1) 4.5
+(2) 2.5
+(3) 0.25
+(4) 0.5
+= 2
+~ Read the decimals as fractions: 0.1667 ≈ 1/6, 0.8333 ≈ 5/6, 0.3333 ≈ 1/3, 0.2222 ≈ 2/9, 0.6667 ≈ 2/3 and 0.1250 = 1/8. Numerator = 1/6 × 5/6 × 1/3 = 5/108. Denominator = 2/9 × 2/3 × 1/8 = 4/216 = 1/54. Value = 5/108 × 54 = 5/2 = 2.5 (direct multiplication gives 2.5003).
+
+Q 19 | qa | Time, Work, Speed & Distance
+P and Q can do a piece of work in 20 days and 30 days, respectively. They work together for 6 days, and then Q is replaced by R. If the rest of the work is completed by P and R in 8 more days, in how many days can R alone complete 60% of the work?
+(1) 28 days
+(2) 34 days
+(3) 64 days
+(4) 48 days
+= 4
+~ P does 1/20 and Q 1/30 of the work per day, together 1/12. In 6 days they finish 6/12 = 1/2. P and R finish the other 1/2 in 8 days, so P + R = 1/16 per day and R = 1/16 − 1/20 = 1/80 per day. R alone needs 80 days for the whole work, so 60% of it takes 0.6 × 80 = 48 days.
+
+Q 20 | qa | Mensuration
+The base of a right pyramid is an equilateral triangle with side 10 cm, and its vertical height is 24 cm. Find the volume (in cm³) of the pyramid.
+(1) 100√3 cm³
+(2) 400√3 cm³
+(3) 150√3 cm³
+(4) 200√3 cm³
+= 4
+~ Area of the equilateral-triangle base = (√3/4) × side² = (√3/4) × 100 = 25√3 cm². Volume of a pyramid = ⅓ × base area × height = ⅓ × 25√3 × 24 = 200√3 cm³ (about 346.4 cm³). Remember the factor ⅓ for any pyramid or cone; without it the answer would be 600√3 cm³, the volume of a prism on the same base.
+
+Q 21 | qa | Percentage, Profit & Interest
+At what rate of interest per annum will a sum of ₹15,625 amount to ₹19,683 in 1 year 6 months, if the interest is compounded half-yearly?
+(1) 20%
+(2) 8%
+(3) 16%
+(4) 18%
+= 3
+~ Compounded half-yearly for 1½ years means 3 conversion periods. 19683/15625 = 27³/25³ = (27/25)³, so the growth factor per half-year is 27/25 = 1.08, that is 8% per half-year. The annual rate is twice the half-yearly rate: 2 × 8% = 16% per annum. The option 8% is only the half-yearly rate.
+
+Q 22 | qa | Data Interpretation & Statistics
+If the marks scored by the students in a class test out of 50 then, Find the Median of the following data:
+Marks | Frequency
+0-10 | 5
+10-20 | 8
+20-30 | 6
+30-40 | 6
+40-50 | 5
+(1) 38.9
+(2) 18.8
+(3) 14.1
+(4) 23.3
+= 4
+~ N = 5 + 8 + 6 + 6 + 5 = 30, so N/2 = 15. Cumulative frequencies are 5, 13, 19, 25, 30, so the 15th value lies in the class 20–30 (l = 20, cf before it = 13, f = 6, h = 10). Median = l + [(N/2 − cf)/f] × h = 20 + (15 − 13)/6 × 10 = 20 + 3.33 = 23.33 ≈ 23.3.
+
+Q 23 | qa | Data Interpretation & Statistics
+The marks obtained by 9 students in a test are: 5, 8, 7, 9, 6, 7, 8, 7, 10.
+Determine: (i) Mode of the marks, (ii) Number of students scoring above average.
+(1) Mode = 7, Number of students scoring above average = 4
+(2) Mode = 7, Number of students scoring above average = 3
+(3) Mode = 8, Number of students scoring above average = 4
+(4) Mode = 8, Number of students scoring above average = 3
+= 1
+~ The mark 7 occurs three times, more than any other (8 occurs twice), so the mode is 7. Sum of marks = 5 + 8 + 7 + 9 + 6 + 7 + 8 + 7 + 10 = 67, so the average = 67/9 ≈ 7.44. Marks above 7.44 are 8, 9, 8 and 10, so 4 students score above average.
+
+Q 24 | qa | Mensuration
+The height of a pyramid is 8 m, and the base of the pyramid is a square whose diagonal is √512 m. Find the approximate volume of the pyramid.
+(1) 683 m³
+(2) 982 m³
+(3) 1092 m³
+(4) 782 m³
+= 1
+~ Area of a square from its diagonal d = d²/2 = 512/2 = 256 m² (side 16 m). Volume of the pyramid = ⅓ × base area × height = ⅓ × 256 × 8 = 2048/3 ≈ 682.67 m³, which is about 683 m³.
+
+Q 25 | qa | Mensuration
+The base of a right prism is an isosceles trapezium with parallel sides measuring 10 cm and 20 cm, and non-parallel sides measuring 13 cm each. The volume of the prism is 3240 cm³. What is the total surface area of the prism?
+(1) 1940 cm²
+(2) 1368 cm²
+(3) 1620 cm²
+(4) 2120 cm²
+= 2
+~ Each slant side overhangs by (20 − 10)/2 = 5 cm, so the trapezium's height = √(13² − 5²) = 12 cm. Base area = ½ × (10 + 20) × 12 = 180 cm², so the prism's length = 3240/180 = 18 cm. Perimeter of the base = 10 + 20 + 13 + 13 = 56 cm. Total surface area = perimeter × length + 2 × base = 56 × 18 + 2 × 180 = 1008 + 360 = 1368 cm².
+
+Q 26 | qa | Number System & Simplification
+How many integers in the set {1, 2, 3......, 100} have exactly 3 divisors?
+(1) 2
+(2) 8
+(3) 4
+(4) 6
+= 3
+~ If n = p₁^a × p₂^b × …, it has (a + 1)(b + 1)… divisors. This equals 3 only when n = p² for a prime p, with divisors 1, p and p². Squares of primes up to 100 are 4, 9, 25 and 49 (the next, 11² = 121, is too large). So 4 integers have exactly 3 divisors.
+
+Q 27 | qa | Data Interpretation & Statistics
+If the mode of the data set {a, a + 2, a + 4, a + 6, a + 6, a + 6, a + 8} is 26, find a.
+(1) 40
+(2) 20
+(3) 30
+(4) 10
+= 2
+~ The mode is the value that occurs most often. In this set a + 6 occurs three times and every other value only once, so the mode is a + 6. Then a + 6 = 26, giving a = 20. Check: the data are 20, 22, 24, 26, 26, 26, 28, whose mode is 26.
+
+Q 28 | qa | Ratio, Average & Mixtures
+A sum of Rs. 4800 is divided among A, B, and C in the ratio 3 : 4 : 5. The share of B is how much more than that of A?
+(1) Rs. 500
+(2) Rs. 200
+(3) Rs. 400
+(4) Rs. 300
+= 3
+~ Total parts = 3 + 4 + 5 = 12, so one part = 4800/12 = Rs. 400. A gets 3 × 400 = Rs. 1200 and B gets 4 × 400 = Rs. 1600. B's share exceeds A's by 4 − 3 = 1 part = Rs. 400.
+
+Q 29 | qa | Data Interpretation & Statistics
+The weekly expenditure (in dollars) of 5 families on groceries is: Family A = 250, Family B = 400, Family C = 350, Family D = 500, Family E = 300.
+Determine: (i) Average expenditure, (ii) Family spending above average, (iii) Difference between highest and lowest expenditure.
+(1) Average = $350, Families above average = B,D, Difference = $250
+(2) Average = $360, Families above average = C,D, Difference = $250
+(3) Average = $360, Families above average = B,D, Difference = $200
+(4) Average = $360, Families above average = B,D, Difference = $250
+= 4
+~ Total = 250 + 400 + 350 + 500 + 300 = 1800, so the average = 1800/5 = $360. Families spending more than $360 are B ($400) and D ($500); C ($350) is below average. Highest − lowest = 500 − 250 = $250. Only option 4 has all three parts right.
+
+Q 30 | qa | Trigonometry & Heights
+If sinθ/x = cosθ/y, then sinθ − cosθ is:
+(1) (x − y)/√(x² + y²)
+(2) (5x − y)/(3√(x² + y²))
+(3) (x − y)/(2√(x² + y²))
+(4) (x − y)/√(3x² + 5y²)
+= 1
+~ Let sinθ/x = cosθ/y = k, so sinθ = kx and cosθ = ky. Since sin²θ + cos²θ = 1, k²(x² + y²) = 1 and k = 1/√(x² + y²) (taking θ acute, as usual). Then sinθ − cosθ = k(x − y) = (x − y)/√(x² + y²). Equivalently, tanθ = x/y gives sinθ = x/√(x² + y²) and cosθ = y/√(x² + y²).
+
+Q 31 | rea | Mathematical Operations
+If P denotes ‘+’, Q means ‘÷’, R means ‘−’ and S means ‘×’, then which of the following equations is correct?
+(1) 16 S 5 R 10 P 4 Q 3 = 9
+(2) 16 P 5 R 10 S 4 Q 3 = 19
+(3) 16 Q 5 P 10 S 4 R 3 = 12
+(4) 16 S 5 Q 10 P 4 R 3 = 9
+= 4
+~ Replace the letters: P = +, Q = ÷, R = − and S = ×, then apply BODMAS. Option 4 becomes 16 × 5 ÷ 10 + 4 − 3 = 80 ÷ 10 + 4 − 3 = 8 + 4 − 3 = 9, which is correct. Option 1 gives 16 × 5 − 10 + 4 ÷ 3 ≈ 71.3, option 2 gives 16 + 5 − 10 × 4 ÷ 3 ≈ 7.7 and option 3 gives 16 ÷ 5 + 10 × 4 − 3 = 40.2, so none of them balances.
+
+Q 32 | rea | Coding-Decoding
+In a certain language, COMPUTER is coded as OCPMTURE. How is KEYBOARD coded in that code?
+(1) EKYOBARD
+(2) EKBYAODR
+(3) KYEOBARD
+(4) KYEOBADR
+= 2
+~ Split the word into pairs of letters and swap the two letters of each pair: CO → OC, MP → PM, UT → TU, ER → RE, which gives OCPMTURE. Split KEYBOARD the same way into KE, YB, OA, RD and swap each pair: EK, BY, AO, DR. So KEYBOARD is coded as EKBYAODR. EKYOBARD swaps only the first pair correctly, and the other two options do not follow the pair rule.
+
+Q 33 | rea | Coding-Decoding
+If in a certain code, ALMIRAH is written as BNPMWGO, which word would be written as DNRWLUA?
+(1) CLOSGOT
+(2) TOGSOLC
+(3) COSGOLT
+(4) TOGCLOS
+= 1
+~ The letters of ALMIRAH move forward by 1, 2, 3, 4, 5, 6 and 7 places in turn: A+1 = B, L+2 = N, M+3 = P, I+4 = M, R+5 = W, A+6 = G, H+7 = O. To decode DNRWLUA, move each letter back by the same amounts: D−1 = C, N−2 = L, R−3 = O, W−4 = S, L−5 = G, U−6 = O and A−7 = T (counting back past A to Z). The word is CLOSGOT.
+
+Q 34 | rea | Non-verbal Reasoning
+In each of the following problem, a square transparent sheet with a pattern is given. How the pattern would appear when the transparent sheet is folded at the dotted line.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+! img/c25t2-q34.png
+~ The right half folds over onto the left half, so every line on the right is reflected in the dotted line, and the transparent sheet shows both halves. The triangle's right side and the right part of its base fall exactly on its left side and base. The semicircle drawn on the right side therefore lands on the outer (left) side of the slanting line. Result: a slanting line from the top of the fold to the bottom left, the base line, and the semicircle bulging to the left, as in option 3. Option 2 is this shape upside down.
+
+Q 35 | rea | Non-verbal Reasoning
+How many squares are present in the following figure?
+(1) 19
+(2) 21
+(3) 17
+(4) 23
+= 1
+! img/c25t2-q35.png
+~ The figure is redrawn from a faint scan of SSC's sheet. It is a square divided into a 3 × 3 grid, with a small separate square drawn inside each of the four corner cells and inside the centre cell. Count the grid squares by size: 9 single cells, 4 squares made of 2 × 2 cells (one at each corner of the grid) and 1 outer square, which makes 14. Adding the 5 small squares inside the cells gives 14 + 5 = 19. Forgetting the 2 × 2 squares is the usual slip.
+
+Q 36 | rea | Miscellaneous Reasoning
+Identify the word that cannot be constructed using the letters of the given word.
+PROCRASTINATE
+(1) PRINTED
+(2) PAINTER
+(3) TRACTOR
+(4) PATTERN
+= 1
+~ PROCRASTINATE has the letters P, R, R, O, C, A, A, S, T, T, I, N, E. PAINTER uses P, A, I, N, T, E, R; TRACTOR needs two Ts and two Rs, which are available; PATTERN needs two Ts, also available. PRINTED needs the letter D, which does not occur in PROCRASTINATE, so PRINTED cannot be formed.
+
+Q 37 | rea | Analogy & Classification
+Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number:
+4 : 49 :: 6 : 81 :: 8 : ?
+(1) 187
+(2) 176
+(3) 145
+(4) 121
+= 4
+~ Add 3 to the first number and square the result: (4 + 3)² = 7² = 49 and (6 + 3)² = 9² = 81. Applying the same rule to 8 gives (8 + 3)² = 11² = 121. The other options cannot be correct because 187, 176 and 145 are not even perfect squares.
+
+Q 38 | rea | Series
+In the following letter sequence, each group follows a specific pattern. Identify the group of letters that should come next in the sequence.
+ZYA, WVD, TSG, QPJ, ?
+(1) MNM
+(2) MON
+(3) NMM
+(4) OMN
+= 3
+~ Treat each position separately. First letters Z, W, T, Q go back 3 places each time, so the next is N. Second letters Y, V, S, P also go back 3 places, so the next is M. Third letters A, D, G, J go forward 3 places, so the next is M. The next group is therefore NMM; MNM has the right letters in the wrong order.
+
+Q 39 | rea | Series
+From the given options, select the group of letters that, when inserted in order from left to right into the blanks of the incomplete series, will logically complete it.
+cd_fc_efcdefcde_cdefcde_cdef
+(1) fcde
+(2) cddf
+(3) edff
+(4) efdf
+= 3
+~ The visible letters suggest the block "cdef" repeated. Filling the blanks with e, d, f, f gives cdef cdef cdef cdef cdef cdef cdef, that is, cdef written seven times without a break. The other options put a wrong letter in at least one blank (for example fcde gives "cdffc" at the start), so edff is the only group that completes the pattern.
+
+Q 40 | rea | Blood Relations & Directions
+P is married to M. W is the wife of S. G is the daughter of A. M is the mother of S. A is the sister of P. How is P related to W?
+(1) Daughter-in-law
+(2) Son-in-law
+(3) Father-in-law
+(4) Mother-in-law
+= 3
+~ M is the mother of S, and P is married to M, so P is M's husband and S's father. W is the wife of S, so W is P's son's wife, that is, P's daughter-in-law. Hence P is W's father-in-law. The facts about A (P's sister) and G (A's daughter) are extra information and do not affect the answer.
+
+Q 41 | rea | Non-verbal Reasoning
+Two positions of the same dice are shown. Select the number that will be on the face opposite to the one showing the number 6?
+(1) 1
+(2) 4
+(3) 3
+(4) 5
+= 1
+! img/c25t2-q41.png
+~ 5 is on the right face in both positions, so the dice has only been turned about the axis through 5. In the first position 3 is on top and 1 in front; in the second, 3 has moved to the front. So the dice rolled forward: top went to front, front (1) went to the bottom, and the back face came to the top. That face shows 6, so 6 was at the back while 1 was in front. Front and back are opposite, hence 1 is opposite 6.
+
+Q 42 | rea | Mathematical Operations
+Which two numbers need to be swapped to make this equation correct?
+20 ÷ 5 × 3 + 10 − 4 = 20
+(1) 5 and 10
+(2) 3 and 4
+(3) 20 and 10
+(4) 4 and 5
+= 4
+~ As it stands, 20 ÷ 5 × 3 + 10 − 4 = 4 × 3 + 6 = 18, not 20. Swapping 4 and 5 gives 20 ÷ 4 × 3 + 10 − 5 = 5 × 3 + 10 − 5 = 15 + 5 = 20, which is correct. The other swaps give 7 (5 and 10), 23 (3 and 4) and 22 (20 and 10), so only 4 and 5 work.
+
+Q 43 | rea | Syllogism & Statements
+Directions: In the following question, two statements are given, followed by two conclusions (I and II). Assume the statements to be true even if they appear to contradict general facts. Determine which conclusion(s) logically follow(s) from the statements.
+Statements:
+All televisions are radios.
+Some radios are transistors.
+Conclusions:
+I. All radios are televisions.
+II. Some televisions are transistors.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Both conclusion I and II follows.
+(4) Neither conclusion I nor II follows.
+= 4
+~ "All televisions are radios" can be reversed only as "Some radios are televisions", so "All radios are televisions" does not follow and conclusion I fails. The radios that are transistors need not be among the radios that are televisions, so "Some televisions are transistors" is only a possibility, not a certainty; conclusion II also fails. Hence neither conclusion follows.
+
+Q 44 | rea | Series
+The following series of numbers is given. One number is missing. Study the pattern and find the missing number.
+8, 32, 72, 128, ?
+(1) 228
+(2) 200
+(3) 250
+(4) 300
+= 2
+~ Each term is 8 times a perfect square: 8 × 1² = 8, 8 × 2² = 32, 8 × 3² = 72 and 8 × 4² = 128. So the next term is 8 × 5² = 8 × 25 = 200. Check with differences: 24, 40, 56 increase by 16 each time, so the next difference is 72 and 128 + 72 = 200.
+
+Q 45 | rea | Coding-Decoding
+Two matrices are provided: Matrix I uses row and column numbers 0 to 4. Matrix II uses row and column numbers 5 to 9. A letter is represented by row number, column number (for example, 23 means row 2, column 3 in Matrix I; 66 means row 6, column 6 in Matrix II). From the matrices, find the row-column codes for each letter in DUNG in sequence, and select the correct option from the given alternatives.
+Matrix-I
+| 0 | 1 | 2 | 3 | 4
+0 | M | A | E | L | M
+1 | C | G | M | J | K
+2 | F | B | I | C | F
+3 | F | A | L | J | I
+4 | C | L | D | K | F
+Matrix-II
+| 5 | 6 | 7 | 8 | 9
+5 | V | Y | U | S | S
+6 | P | X | Q | O | R
+7 | N | V | V | O | Q
+8 | S | Q | U | T | U
+9 | Q | X | S | V | Z
+(1) 33, 68, 31, 75
+(2) 31, 76, 24, 96
+(3) 20, 59, 41, 88
+(4) 42, 57, 75, 11
+= 4
+~ Write the row number and then the column number of each letter. D is in Matrix I at row 4, column 2, so 42. U is in Matrix II at row 5, column 7, so 57 (it also appears as 87 and 89). N is at row 7, column 5, so 75. G is in Matrix I at row 1, column 1, so 11. DUNG = 42, 57, 75, 11. Option 1 fails at once: 33 is J, not D.
+
+Q 46 | rea | Series
+From the given options, select the group of letters that, when inserted in order from left to right into the blanks of the incomplete series, will logically complete it.
+S_ _KB_FH_BSF_K_SF_ _B
+(1) FHSKHKHK
+(2) FHSHKBHK
+(3) FHSKBHHK
+(4) FHSKHBHK
+= 4
+~ Filling the blanks with F, H, S, K, H, B, H, K gives SFHKB SFHKB SFHKB SFHKB, the block SFHKB repeated four times. All options start with FHS, which fits the first three blanks; the differences come later. FHSKHKHK puts K where the third block needs B, and the other two wrong options mix up the H and B or K positions, so only FHSKHBHK keeps every block as SFHKB.
+
+Q 47 | rea | Mathematical Operations
+If ‘+’ means ‘division’, ‘×’ means ‘addition’, ‘−’ means ‘multiplication’, and ‘÷’ means ‘subtraction’, then find the value of the following expression:
+36 − 2 + 4 × 10 ÷ 5
+(1) 23
+(2) 34
+(3) 11
+(4) 41
+= 1
+~ Replace the signs first: − becomes ×, + becomes ÷, × becomes + and ÷ becomes −. The expression 36 − 2 + 4 × 10 ÷ 5 becomes 36 × 2 ÷ 4 + 10 − 5. By BODMAS, 36 × 2 = 72 and 72 ÷ 4 = 18; then 18 + 10 − 5 = 23. Without changing the signs the expression would give 36 − 2 + 8 = 42, which is not an option.
+
+Q 48 | rea | Non-verbal Reasoning
+There is a definite relationship between figures A and B. Establish a similar relationship between figures C and D by selecting a suitable figure from the answer set that would replace the question mark (?) in figure D.
+(1) 3
+(2) 1
+(3) 4
+(4) 2
+= 3
+! img/c25t2-q48.png
+~ From A to B the first two symbols change places and each is flipped (C becomes Ɔ, T becomes ⊥), the fourth symbol S moves to third place turned through 90°, and the third symbol () is replaced by a new solid shape (★) at the end. Applying this to C: Ɔ flipped gives C, ↓ flipped gives ↑, + turned 90° is still +, and the two-dash symbol is replaced by a solid shape. So D is C ↑ + ●, answer figure 4. Figures 2 and 3 show × instead of +.
+
+Q 49 | rea | Non-verbal Reasoning
+The question consists of a set of three figures X, Y and Z showing a sequence of folding of a piece of paper. Figure Z shows the manner in which the folded paper has been cut. Choose a figure which would most closely resemble the unfolded form of figure Z.
+(1) A
+(2) C
+(3) D
+(4) B
+= 4
+! img/c25t2-q49.png
+~ The paper is folded in half from top to bottom (X) and then from left to right (Y), leaving a quarter whose top and left edges are folds. In Z the cut is a slot along the top fold, starting at the left fold. Opening the second fold mirrors it to the left, so the slot runs along the whole first fold line; opening the first fold reflects it upwards, giving a slot along the centre line in two halves joined at the middle, as in B. A, C and D show cuts that were never made.
+
+Q 50 | rea | Blood Relations & Directions
+Pointing to Sakshi, I said, ‘She is the daughter of the brother of the son of my wife.’ How am I related to Sakshi?
+(1) Granddaughter
+(2) Grandson
+(3) Grandmother
+(4) Grandfather
+= 4
+~ Work from the end of the sentence. The son of my wife is my son. The brother of my son is also my son. Sakshi is the daughter of my son, so she is my granddaughter. The speaker has a wife, so the speaker is a man, and a man is his granddaughter's grandfather. Hence I am Sakshi's grandfather; Grandmother would need a female speaker.
+
+Q 51 | rea | Non-verbal Reasoning
+What is the mirror image of the given question figure, when mirror is placed at the right side of the question figure as shown in the figure?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/c25t2-q51.png
+~ A mirror on the right side reverses the figure left to right; top and bottom do not change. In the question figure the long thin hand points to the right, a little above 3, and the short thick hand points down to the left, between 7 and 8. In the image the thin hand points to the left, a little above 9, and the thick hand points down to the right, between 4 and 5. Option 1 shows exactly this. Option 3 is the unchanged figure and option 2 swaps the two hands.
+
+Q 52 | rea | Mathematical Operations
+Observe the following table and determine the missing number in the last cell:
+A | B | C | D | Result
+5 | 2 | 3 | 10 | 40
+4 | 3 | 5 | 8 | 40
+6 | 4 | 2 | 12 | ?
+(1) 72
+(2) 48
+(3) 50
+(4) 25
+= 2
+~ Add the four numbers in a row and double the sum. Row 1: 5 + 2 + 3 + 10 = 20 and 20 × 2 = 40. Row 2: 4 + 3 + 5 + 8 = 20 and 20 × 2 = 40. Row 3: 6 + 4 + 2 + 12 = 24, so the missing number is 24 × 2 = 48. A rule such as A × B × C + D fits row 1 (30 + 10 = 40) but fails row 2, so it must be rejected.
+
+Q 53 | rea | Coding-Decoding
+Each letter in a word is assigned a specific number. From the four given arrangements of these numbers, identify which one represents a meaningful word when the numbers are translated back to their corresponding letters.
+N, D, I, O, I, T, C, A, R
+1 2 3 4 5 6 7 8 9
+(1) 4, 9, 1, 3, 2, 8, 6, 7, 5
+(2) 2, 5, 1, 8, 7, 3, 4, 6, 9
+(3) 5, 1, 2, 3, 7, 8, 6, 4, 9
+(4) 5, 2, 1, 9, 8, 4, 3, 7, 6
+= 3
+~ Replace each number by its letter: 1 = N, 2 = D, 3 = I, 4 = O, 5 = I, 6 = T, 7 = C, 8 = A, 9 = R. Option 3 (5, 1, 2, 3, 7, 8, 6, 4, 9) gives I, N, D, I, C, A, T, O, R, that is, INDICATOR, a meaningful word. Option 1 gives ORNIDATCI, option 2 DINACIOTR and option 4 IDNRAOICT, none of which is a word.
+
+Q 54 | rea | Non-verbal Reasoning
+Select the option in which the given figure is embedded. (Rotation is not allowed)
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+! img/c25t2-q54.png
+~ The given figure is a horizontal line with two upright posts joined by a V whose point rests on the line. In option 3 the upper halves of the vertical lines inside the two diamonds are the posts, the two slanting sides that meet where the diamonds touch form the V, and the horizontal line through the middle of the figure is the base (its left half is very faint on SSC's scan). In option 2 the right arm of the V is missing, and options 1 and 4 have no such upright posts on a common base line.
+
+Q 55 | rea | Analogy & Classification
+Instructions: In each of the following, the first and second pair of letters have a specific relationship. Apply the same logic to complete the third pair.
+WOODLAND : ZIRXOUQX :: PERIODIC : SYUCRXLW :: MAGAZINE : ?
+(1) LOWXSYCZ
+(2) HERDWBMO
+(3) NUCAQOLP
+(4) PUJUCCQY
+= 4
+~ The letters are shifted alternately +3 and −6, counting round the alphabet. WOODLAND: W+3 = Z, O−6 = I, O+3 = R, D−6 = X, L+3 = O, A−6 = U, N+3 = Q, D−6 = X, giving ZIRXOUQX; PERIODIC gives SYUCRXLW in the same way. MAGAZINE: M+3 = P, A−6 = U, G+3 = J, A−6 = U, Z+3 = C, I−6 = C, N+3 = Q, E−6 = Y, so the answer is PUJUCCQY.
+
+Q 56 | rea | Syllogism & Statements
+In the following question, one statement is given, followed by certain inferences. Consider the statement to be true even if it seems to contradict commonly known facts. Read the inferences carefully and decide which of them logically follow(s) from the given statement.
+Statement:
+Humans cannot match the data processing speed of supercomputers, which perform billions of calculations per second.
+Inferences:
+I. Humans are less efficient than supercomputers in data processing.
+II. Humans and supercomputers differ in their capabilities.
+(1) Only I follows
+(2) Neither I nor II follows
+(3) Only II follows
+(4) Both I and II follows
+= 4
+~ The statement says humans cannot match the data processing speed of supercomputers. Being slower at processing data means humans are less efficient than supercomputers at that task, so inference I follows. The statement itself shows one ability (speed of calculation) in which the two are not equal, so inference II, that humans and supercomputers differ in their capabilities, also follows. Hence both I and II follow.
+
+Q 57 | rea | Series
+In the following letter sequence, one term is missing. Choose the correct option that will replace the question mark.
+EV, GT, JQ, OL, ?
+(1) VE
+(2) RI
+(3) KP
+(4) UF
+= 1
+~ First letters E, G, J, O move forward by 2, 3 and 5 places (prime numbers), so the next step is 7: O + 7 = V. Second letters V, T, Q, L move back by 2, 3 and 5, so the next is L − 7 = E. The missing term is VE. Check: the two letters of every term are opposite letters of the alphabet (E–V, G–T, J–Q, O–L), and V–E is such a pair too.
+
+Q 58 | rea | Analogy & Classification
+Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number:
+3 : 30 :: 4 : 68 :: 5 : ?
+(1) 175
+(2) 145
+(3) 130
+(4) 126
+= 3
+~ The rule is: cube the first number and add the number itself (n³ + n). Check: 3³ + 3 = 27 + 3 = 30 and 4³ + 4 = 64 + 4 = 68. So for 5: 5³ + 5 = 125 + 5 = 130. 126 would be 5³ + 1, which does not fit the other pairs, and 175 and 145 follow no rule that matches both given pairs.
+
+Q 59 | rea | Non-verbal Reasoning
+How many squares are present in the following figure?
+(1) 12
+(2) 18
+(3) 14
+(4) 16
+= 4
+! img/c25t2-q59.png
+~ The figure is redrawn from a faint scan of SSC's sheet. It is a square divided into a 3 × 3 grid, with a small separate square drawn inside the top-left cell and inside the centre cell. Count the grid squares by size: 9 single cells, 4 squares made of 2 × 2 cells (one at each corner of the grid) and 1 outer square, which makes 14. Adding the 2 small squares inside the cells gives 14 + 2 = 16. Stopping at 14 misses the two small squares.
+
+Q 60 | rea | Miscellaneous Reasoning
+Which figure best represents the relation among Fathers, Teacher, Males?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/c25t2-q60.png
+~ Every father is a male, so the Fathers circle lies completely inside the Males circle. Some teachers are fathers, some are males who are not fathers, and some are not males at all (women teachers). So the Teacher circle must cut across the Fathers circle and the Males circle and also go outside Males. Option 1 shows exactly this: a small circle inside a big one, with a third circle overlapping both. Option 2 wrongly shows some fathers who are not males.
+
+Q 61 | eng | Voice & Narration
+Select the correct indirect form of the given sentence.
+“Do you suppose you know better than your own father?” jeered his angry mother.
+(1) His angry mother jeered and asked if you suppose you know better than your own father.
+(2) His angry mother jeered and asked whether he had supposed he has known better than his own father.
+(3) His angry mother jeered that did he suppose he knew better than his own father.
+(4) His angry mother jeered and asked whether he supposed he knew better than his own father.
+= 4
+~ A yes/no question in direct speech is reported with 'if' or 'whether', the question order becomes statement order, and the past reporting verb shifts the tenses back: 'suppose' becomes 'supposed' and 'know' becomes 'knew'. 'You' and 'your' become 'he' and 'his'. Option 1 keeps 'you' and the present tense, option 2 uses the wrong tenses (had supposed, has known), and option 3 keeps the question form 'did he suppose' after 'that'.
+
+Q 62 | eng | Voice & Narration
+Select the correct active form of the given sentence.
+The massive exterior wall of the old mansion was being painted by the skilled laborers when it suddenly started raining heavily.
+(1) The skilled laborers had been painting the massive exterior wall of the old mansion when it suddenly started raining heavily.
+(2) The skilled laborers are painting the massive exterior wall of the old mansion when it suddenly started raining heavily.
+(3) The skilled laborers were painting the massive exterior wall of the old mansion when it suddenly started raining heavily.
+(4) The skilled laborers painted the massive exterior wall of the old mansion when it suddenly started raining heavily.
+= 3
+~ 'Was being painted' is the past continuous passive (was/were + being + past participle). In the active voice the doer 'the skilled laborers' becomes the subject and the tense stays past continuous: 'were painting'. Option 1 changes it to past perfect continuous (had been painting), option 2 to present continuous (are painting), which clashes with 'started', and option 4 to simple past (painted), which loses the sense of an action in progress when the rain began.
+
+Q 63 | eng | Fill in the Blanks & Cloze Test
+Choose the most appropriate option to fill the blank in the given sentence.
+Radium ______ rays that can damage the eyes.
+(1) gives over
+(2) gives up
+(3) gives off
+(4) gives away
+= 3
+~ The phrasal verb 'give off' means to emit or send out something such as heat, light, rays, smoke or a smell, as in 'The fire gave off a lot of smoke'. Radium is a radioactive element that emits radiation, so 'Radium gives off rays' is correct. 'Give over' means to hand over or stop, 'give up' means to quit or abandon, and 'give away' means to donate something or reveal a secret; none of them means to emit.
+
+Q 64 | eng | Voice & Narration
+Select the correct direct form of the given sentence.
+I asked Mary if she would lend me a pencil.
+(1) I said, “Mary, will she lend me a pencil?”
+(2) I said to Mary, “Can you lent me a pencil?”
+(3) I asked to Mary, “Would you lend me a pencil?”
+(4) I said, “Mary, will you lend me a pencil?”
+= 4
+~ To change a reported question back into direct speech, 'asked' becomes 'said', the question goes inside inverted commas with a question mark, 'if' is dropped, 'she' (Mary) becomes 'you' because Mary is addressed directly, and 'would' goes back to 'will'. Mary is named as the person addressed: I said, “Mary, will you lend me a pencil?” Option 1 keeps 'she', option 2 has 'lent' after 'can', and option 3 uses the wrong structure 'asked to Mary'.
+
+Q 65 | eng | Voice & Narration
+Select the correct passive form of the given sentence.
+The burglar destroyed several items in the room. Even the carpet has been torn.
+(1) The burglar, being destroyed several items in the room, also carpet has torn.
+(2) Several items in the room were destroyed by the burglar. Even the carpet has been torn.
+(3) Including the carpet, several items in the room have been torn by the burglar.
+(4) Several items destroyed in the room by the burglar. Even the carpet he has torn.
+= 2
+~ The first sentence is in the simple past active ('destroyed'), so its passive is was/were + past participle: 'Several items in the room were destroyed by the burglar.' The second sentence is already passive ('has been torn') and stays unchanged. Option 1 is ungrammatical, option 3 changes the verb to 'torn' and the tense to present perfect, and option 4 lacks the helping verb 'were' and turns the second sentence back into the active.
+
+Q 66 | eng | Idioms & One-word Substitution
+In the following question, out of the four alternatives, choose the one which gives the meaning of the given idiom or phrase.
+A stitch in time saves nine
+(1) Tailoring is a valuable skill
+(2) Drunk or intoxicated
+(3) Timely action prevents more work
+(4) Saving money for the future
+= 3
+~ The proverb 'a stitch in time saves nine' means that dealing with a problem promptly, while it is still small, saves much more work later: one stitch to mend a small tear now saves many stitches when the tear grows. So it means timely action prevents more work. It is not about tailoring as a skill or saving money, and 'drunk or intoxicated' is the meaning of a different idiom such as 'three sheets to the wind'.
+
+Q 67 | eng | Sentence Arrangement
+Given below are four jumbled parts of a sentence. Select the option that gives their correct order.
+A) has been attributed by many climate scientists
+B) the unprecedented frequency of extreme weather events
+C) to the steady rise in global atmospheric temperatures
+D) observed across various continents over the last decade
+(1) CBAD
+(2) BDAC
+(3) ADBC
+(4) ABCD
+= 2
+~ The subject is B, 'the unprecedented frequency of extreme weather events', and D, 'observed across various continents over the last decade', qualifies those events, so it follows B directly. The verb A, 'has been attributed by many climate scientists', comes next, and the structure 'attribute something to a cause' is completed by C, 'to the steady rise in global atmospheric temperatures'. So the sentence reads BDAC. Options starting with A or C leave the sentence without a subject at the start.
+
+Q 68 | eng | Sentence Arrangement
+Given below are four jumbled parts of a sentence. Select the option that gives their correct order.
+A) by the intricate tapestry of
+B) the philosopher was captivated
+C) that define human existence
+D) moral and ethical dilemmas
+(1) DBAC
+(2) BADC
+(3) ABCD
+(4) CBAD
+= 2
+~ B, 'the philosopher was captivated', gives the subject and the passive verb. 'Captivated' is followed by the agent 'by', so A, 'by the intricate tapestry of', comes next. The preposition 'of' needs an object, which is D, 'moral and ethical dilemmas', and C, 'that define human existence', is a relative clause describing those dilemmas. The sentence: The philosopher was captivated by the intricate tapestry of moral and ethical dilemmas that define human existence (BADC).
+
+Q 69 | eng | Spelling
+Select the wrongly spelt word out of the four alternatives.
+(1) Impetuous
+(2) Impetunent
+(3) Implication
+(4) Imperial
+= 2
+~ 'Impetunent' is not an English word, so it is the wrongly spelt one; it most resembles 'impertinent' (i-m-p-e-r-t-i-n-e-n-t), meaning rude or not showing proper respect. The other words are spelt correctly: 'impetuous' (acting quickly without thinking, ending -uous), 'implication' (a possible effect or suggestion) and 'imperial' (relating to an empire or emperor).
+
+Q 70 | eng | Idioms & One-word Substitution
+In the following question, out of the four alternatives, choose the one which gives the meaning of the given idiom or phrase.
+To strain at a gnat and swallow a camel
+(1) To fuss over trifles while ignoring big issues
+(2) To have a very large appetite
+(3) To be meticulous in everything
+(4) To be extremely physically weak
+= 1
+~ The phrase comes from the Bible (Matthew 23:24), where people carefully strain a tiny gnat out of their drink yet swallow a whole camel. It describes someone who fusses over trifles while ignoring or accepting much bigger wrongs or issues. It is not about appetite or physical weakness, and 'meticulous in everything' misses the point that the person is careless about the important matters.
+
+Q 71 | eng | Voice & Narration
+Select the correct indirect form of the given sentence.
+“Call the first witness,” said the judge.
+(1) The judge ordered them to call the first witness.
+(2) The judge asked if they would call the first witness.
+(3) The judge ordered that called the first witness.
+(4) The judge said that the first witness should be called.
+= 1
+~ An imperative sentence (a command) is reported with a verb of command such as ordered, told or commanded, followed by the person addressed and 'to' + the base verb. Since the judge is giving a command to those present, it becomes 'The judge ordered them to call the first witness.' Option 2 turns the command into a question, option 3 is ungrammatical (that called), and option 4 changes the command into a statement with 'said that'.
+
+Q 72 | eng | Vocabulary
+Choose the option that contains the homonym of the highlighted word in the given sentence.
+Please make sure to write your full home "address", including the apartment number and zip code, on the top of the application form.
+(1) After living in the city for ten years, Sarah had to notify the post office that her permanent address was changing to a rural farmhouse.
+(2) The celebrity requested that her residential address be kept private and removed from all public search directories for security reasons.
+(3) Millions of people tuned in to watch the president’s televised address regarding the new economic policies.
+(4) The delivery driver called me because he was having trouble finding my address on the GPS due to the new construction in the neighborhood.
+= 3
+~ Homonyms are words with the same spelling and sound but different meanings. In the given sentence 'address' means the details of where someone lives. In option 3 'address' means a formal speech delivered to an audience, as in the president's televised address, so it is the homonym. In options 1, 2 and 4 'address' still means the place where someone lives or receives mail, which is the same meaning as in the given sentence.
+
+Q 73 | eng | Vocabulary
+Choose the appropriate antonym of the given word.
+Gullibility
+(1) Naviety
+(2) Innocence
+(3) Trust
+(4) Skepticism
+= 4
+~ 'Gullibility' is the tendency to believe things too easily and so be easily deceived or cheated. Its opposite is 'skepticism', an attitude of doubting or questioning claims before accepting them. 'Naviety' (as printed; the word is naivety), 'innocence' and 'trust' are all close to gullibility in meaning, since each suggests a lack of suspicion, so none of them can be its antonym.
+
+Q 74 | eng | Vocabulary
+Choose the appropriate synonym of the given word.
+Erroneous
+(1) Fallacious
+(2) Right
+(3) Vital
+(4) Accurate
+= 1
+~ 'Erroneous' means wrong or incorrect, containing errors, as in 'an erroneous belief'. Its synonym is 'fallacious', meaning based on a mistaken belief or unsound reasoning. 'Right' and 'accurate' are its opposites, and 'vital' means absolutely necessary or full of life, which has nothing to do with being mistaken.
+
+Q 75 | eng | Idioms & One-word Substitution
+In the following question, out of the four alternatives, choose the one which can be substituted for the given words/sentence.
+Fear of ugliness.
+(1) Arachnophobia
+(2) Cacophobia
+(3) Hydrophobia
+(4) Acrophobia
+= 2
+~ 'Cacophobia' is the fear of ugliness, from the Greek kakos, meaning bad or ugly, and phobos, meaning fear (the same root appears in cacophony, a harsh, ugly sound). The other phobias are 'arachnophobia', the fear of spiders, 'hydrophobia', the fear of water (also an old name for rabies), and 'acrophobia', the fear of heights.
+
+Q 76 | eng | Spelling
+Select the correctly spelt word out of the four alternatives.
+(1) Grosteasque
+(2) Grostasque
+(3) Growtesque
+(4) Grotesque
+= 4
+~ The correct spelling is 'grotesque' (g-r-o-t-e-s-q-u-e), meaning comically or repulsively ugly or distorted, as in 'a grotesque mask'. The word comes from the Italian grottesca, the style of painting found in grottoes, so it keeps 'grot-' followed by the French-style ending '-esque' (as in picturesque). 'Grosteasque', 'Grostasque' and 'Growtesque' insert or change letters and are wrong.
+
+Q 77 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option to substitute the highlighted segment in the given sentence. If there is no need to substitute it, select ‘No improvement’.
+Come quickly "if you will" catch the train.
+(1) No improvement
+(2) If you will have
+(3) If you have
+(4) If you want to
+= 4
+~ The sentence advises someone to hurry in order to catch the train, so the condition must express a wish or purpose: 'Come quickly if you want to catch the train.' 'If you will catch' wrongly uses the future 'will' in an if-clause of condition and makes catching the train sound certain. 'If you will have catch' and 'if you have catch' are ungrammatical, since the base verb 'catch' cannot follow 'have' directly.
+
+Q 78 | eng | Error Spotting & Sentence Improvement
+The following sentence has been divided into four parts. Identify the part which contains a grammatical error. If there is no error in the sentence, then select 'No Error'.
+The company will invest more(A) six hundred crores(B) in the next five years to expand(C) its operations in Britain (D).
+(1) B
+(2) C
+(3) D
+(4) A
+= 4
+~ 'More' used before a number to mean 'exceeding' must be followed by 'than': 'more than six hundred crores'. Without 'than', 'invest more six hundred crores' is ungrammatical, so part A contains the error. Part B, 'six hundred crores', is correct (hundred stays singular after a number), 'to expand' (C) correctly expresses purpose, and 'its operations in Britain' (D) is correct.
+
+Q 79 | eng | Sentence Arrangement
+Given below are four jumbled sentences. Select the option that gives their correct order.
+A. Faced with the high cost and scarcity of Indian indigo; European manufacturers were forced to rely on the woad plant for their dyeing needs.
+B. However, cloth dyers still preferred indigo, as it produced a significantly richer and more vibrant blue than woad ever could.
+C. Since woad thrived in temperate climates, it was readily available and easily cultivated throughout Europe.
+D. Indian indigo was prohibitively expensive, and only meager quantities ever reached European markets.
+(1) BCAD
+(2) DACB
+(3) CBAD
+(4) ABCD
+= 2
+~ D introduces the problem: Indian indigo was very expensive and scarce in Europe. A follows as the consequence, picking up 'high cost and scarcity' to say that European manufacturers had to rely on woad. C explains why woad was a practical substitute, since it grew easily in Europe's temperate climate. B, beginning with 'However', gives the contrast that dyers still preferred indigo for its richer blue, which makes a natural conclusion. Hence DACB.
+
+Q 80 | eng | Fill in the Blanks & Cloze Test
+Choose the most appropriate option to fill the blank in the given sentence.
+The tiny deer stood looking at them with ______ eyes.
+(1) Luminous
+(2) Arid
+(3) Stationary
+(4) Transparent
+= 1
+~ 'Luminous' means shining or glowing, and 'luminous eyes' is a common descriptive phrase for large, bright, shining eyes, which suits a tiny deer gazing at people. 'Arid' means very dry and is used for land or climate, 'stationary' means not moving and describes objects or vehicles rather than eyes, and 'transparent' means see-through, so none of them fits the sentence.
+
+Q 81 | eng | Voice & Narration
+Select the correct active form of the given sentence.
+Why was such a letter written by your brother?
+(1) Why was your brother writing such a letter?
+(2) Why did your brother write such a letter?
+(3) Why does your brother write such a letter?
+(4) Why had your brother written such a letter?
+= 2
+~ 'Was written' is the simple past passive. In the active voice the doer 'your brother' becomes the subject, and a simple past question with a question word takes 'did' + base verb: 'Why did your brother write such a letter?' Option 1 changes the tense to past continuous (was writing), option 3 to simple present (does write), and option 4 to past perfect (had written), so only option 2 keeps the original tense.
+
+Q 82 | eng | Error Spotting & Sentence Improvement
+The following sentence has been divided into four parts. Identify the part which contains a grammatical error. If there is no error in the sentence, then select 'No Error'.
+The whole family (A)/ would burst into (B)/ peals for laughter. (C)/ No Error (D)
+(1) B
+(2) A
+(3) D
+(4) C
+= 4
+~ The fixed expression is 'peals of laughter', meaning loud, repeated bursts of laughter (a peal is a loud ringing sound, as of bells), and the idiom is 'burst into peals of laughter'. The preposition 'for' in part C is wrong; the correct sentence is 'The whole family would burst into peals of laughter.' Parts A, 'The whole family', and B, 'would burst into', are correct, so the answer is C, not 'No Error'.
+
+Q 83 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option to substitute the highlighted segment in the given sentence. If there is no need to substitute it, select ‘No improvement’.
+Tom was "standing besides the schoolhouse poster", when the ball rolled towards him.
+(1) standing beside the schoolhouse poster
+(2) No improvement
+(3) stood beside the schoolhouse poster
+(4) stand beside the schoolhouse poster
+= 1
+~ 'Beside' is a preposition meaning next to or at the side of ('standing beside the poster'), while 'besides' means in addition to or apart from ('Besides English, he speaks French'). Tom was next to the poster, so 'besides' must change to 'beside'. The past continuous 'was standing' is correct for an action in progress when the ball rolled, so options 3 and 4 ('was stood', 'was stand') are ungrammatical, and 'No improvement' keeps the error.
+
+Q 84 | eng | Voice & Narration
+Select the correct direct form of the given sentence.
+He inquired whether the boy's name was Ahmed.
+(1) He asked, “The boy's name is Ahmed?”
+(2) He asked, “Is the boy's name Ahmed?”
+(3) He asked, “Whether the boy's name was Ahmed?”
+(4) He asked, “Was the boy's name Ahmed?”
+= 2
+~ 'Inquired whether' reports a yes/no question. In direct speech the reporting verb becomes 'asked', 'whether' is dropped, the question takes interrogative order with the auxiliary before the subject, and the past 'was' goes back to the present 'is': He asked, “Is the boy's name Ahmed?” Option 1 keeps statement order, option 3 wrongly keeps 'whether' and 'was', and option 4 keeps the past tense 'was' that belongs only to reported speech.
+
+Q 85 | eng | Sentence Arrangement
+Given below are four jumbled sentences. Select the option that gives their correct order.
+A. Here, the picture-perfect French Quarter and heritage laden Tamil streets blend into one another.
+B. Across many metropolitan cities, there exists a visible conflict in how the old and the new coexist.
+C. The old and new, like two different worlds, surviving side by side yet never crossing that chasm.
+D. However, Puducherry stands as a striking exception, where these very contrasts are celebrated rather than endured.
+(1) ABCD
+(2) DABC
+(3) BACD
+(4) BDAC
+= 4
+~ B opens with the general idea: in many cities the old and the new coexist in visible conflict. D, beginning with 'However', introduces Puducherry as the exception, and A's 'Here' must refer to a place already named, so A follows D. C, a verbless phrase, then sums up old and new as two worlds surviving side by side. Strictly, C ('never crossing that chasm') fits best straight after B, but BCDA is not offered; A cannot open ('Here' has no reference) and D cannot open ('However' needs a preceding idea), so BDAC is the best option.
+
+Q 86 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+Pride and Prejudice by Jane Austen is a classic known for its humor and complex characters. The famous first sentence of the book, "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife," begins to set up all of the major themes of money, status, and marrying well that are prevalent in 19th-century England. The Bennet family, particularly Elizabeth Bennet, a smart and strong-willed heroine, is the subject of Austen’s commentary on the societal imperative for women to marry well and thereby have a stable income.
+The title itself is quite meaningful, as it first indicates the character flaws that drive much of the conflict in this novel, namely Darcy’s pride and Elizabeth’s prejudice. In fact, Mr. Fitzwilliam Darcy, being a rich and high-ranking person, first of all shows a haughty character, thereby being very superior by virtue of his class. Elizabeth, having been offended by his initial lack of warmth, as well as having been misled by the deceiving Mr. Wickham, very quickly showed prejudice against him.
+Traces the story of each as they navigate these weaknesses. Darcy needs to lower his pride to appreciate the value of Elizabeth’s inferior standing, though she must see the strength of his superior qualities.
+Austen employs irony and satire liberally to point out the absurdities of the class structure. Personages like the obsequious Mr. Collins and the imperious Lady Catherine de Bourgh symbolize the hard and silly aspects of class consciousness. The sojourn at Darcy’s grand estate, Pemberley, is an important defining instance in which the splendor of the property and the favorable reports of his servants compel Elizabeth to revise her earlier opinion and realize the truth of Darcy’s goodness.
+In the final analysis, the novel promotes love marriages, couples like Jane and Bingley, and Elizabeth and Darcy, who have successful marriages because of love, in contrast to couples who marry for convenience (Charlotte Collins and Mr. Collins) or those who are full of passion but irresponsible (Lydia and Wickham).
+What are the major themes expressed by the first line of the novel?
+(1) Nature and the countryside
+(2) Love & War
+(3) Wealth, status, and marriage
+(4) Education and morality
+= 3
+~ The passage says the famous first sentence, about a single man in possession of a good fortune being in want of a wife, 'begins to set up all of the major themes of money, status, and marrying well'. Money is wealth and marrying well is marriage, so the themes are wealth, status and marriage. Nature, war, education and morality are not mentioned as themes of the first line.
+
+Q 87 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+Pride and Prejudice by Jane Austen is a classic known for its humor and complex characters. The famous first sentence of the book, "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife," begins to set up all of the major themes of money, status, and marrying well that are prevalent in 19th-century England. The Bennet family, particularly Elizabeth Bennet, a smart and strong-willed heroine, is the subject of Austen’s commentary on the societal imperative for women to marry well and thereby have a stable income.
+The title itself is quite meaningful, as it first indicates the character flaws that drive much of the conflict in this novel, namely Darcy’s pride and Elizabeth’s prejudice. In fact, Mr. Fitzwilliam Darcy, being a rich and high-ranking person, first of all shows a haughty character, thereby being very superior by virtue of his class. Elizabeth, having been offended by his initial lack of warmth, as well as having been misled by the deceiving Mr. Wickham, very quickly showed prejudice against him.
+Traces the story of each as they navigate these weaknesses. Darcy needs to lower his pride to appreciate the value of Elizabeth’s inferior standing, though she must see the strength of his superior qualities.
+Austen employs irony and satire liberally to point out the absurdities of the class structure. Personages like the obsequious Mr. Collins and the imperious Lady Catherine de Bourgh symbolize the hard and silly aspects of class consciousness. The sojourn at Darcy’s grand estate, Pemberley, is an important defining instance in which the splendor of the property and the favorable reports of his servants compel Elizabeth to revise her earlier opinion and realize the truth of Darcy’s goodness.
+In the final analysis, the novel promotes love marriages, couples like Jane and Bingley, and Elizabeth and Darcy, who have successful marriages because of love, in contrast to couples who marry for convenience (Charlotte Collins and Mr. Collins) or those who are full of passion but irresponsible (Lydia and Wickham).
+Which defects in character does the name "Pride and Prejudice" primarily refer to?
+(1) Arrogance of Lady Catherine and Mr. Collins’s servility
+(2) Darcy’s pride and Elizabeth’s prejudice
+(3) Lydia's erratic behavior and Wickham's deceits
+(4) Mr. Bennet’s wit and Mrs. Bennet’s fussiness
+= 2
+~ The second paragraph states that the title 'indicates the character flaws that drive much of the conflict in this novel, namely Darcy’s pride and Elizabeth’s prejudice'. Darcy's haughtiness comes from his wealth and rank, and Elizabeth's prejudice from his initial coldness and Wickham's lies. Lady Catherine, Mr. Collins, Lydia, Wickham and Mr. and Mrs. Bennet are minor characters, not the subject of the title.
+
+Q 88 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+Pride and Prejudice by Jane Austen is a classic known for its humor and complex characters. The famous first sentence of the book, "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife," begins to set up all of the major themes of money, status, and marrying well that are prevalent in 19th-century England. The Bennet family, particularly Elizabeth Bennet, a smart and strong-willed heroine, is the subject of Austen’s commentary on the societal imperative for women to marry well and thereby have a stable income.
+The title itself is quite meaningful, as it first indicates the character flaws that drive much of the conflict in this novel, namely Darcy’s pride and Elizabeth’s prejudice. In fact, Mr. Fitzwilliam Darcy, being a rich and high-ranking person, first of all shows a haughty character, thereby being very superior by virtue of his class. Elizabeth, having been offended by his initial lack of warmth, as well as having been misled by the deceiving Mr. Wickham, very quickly showed prejudice against him.
+Traces the story of each as they navigate these weaknesses. Darcy needs to lower his pride to appreciate the value of Elizabeth’s inferior standing, though she must see the strength of his superior qualities.
+Austen employs irony and satire liberally to point out the absurdities of the class structure. Personages like the obsequious Mr. Collins and the imperious Lady Catherine de Bourgh symbolize the hard and silly aspects of class consciousness. The sojourn at Darcy’s grand estate, Pemberley, is an important defining instance in which the splendor of the property and the favorable reports of his servants compel Elizabeth to revise her earlier opinion and realize the truth of Darcy’s goodness.
+In the final analysis, the novel promotes love marriages, couples like Jane and Bingley, and Elizabeth and Darcy, who have successful marriages because of love, in contrast to couples who marry for convenience (Charlotte Collins and Mr. Collins) or those who are full of passion but irresponsible (Lydia and Wickham).
+How is the character of Lady Catherine de Bourgh employed in the novel as a criticism of society?
+(1) She symbolizes ideal maternal love and wisdom.
+(2) She represents the struggle of the working class against the landed gentry.
+(3) She is purely comic relief and has no other significance.
+(4) She represents social tyranny and class prejudice.
+= 4
+~ The passage calls Lady Catherine de Bourgh 'imperious', meaning arrogant and domineering, and says that she and Mr. Collins 'symbolize the hard and silly aspects of class consciousness' as Austen satirises the class structure. So she stands for social tyranny and class prejudice. She is not an ideal of maternal love, she belongs to the aristocracy rather than the working class, and she is not 'purely comic relief', since she carries Austen's social criticism.
+
+Q 89 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+Pride and Prejudice by Jane Austen is a classic known for its humor and complex characters. The famous first sentence of the book, "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife," begins to set up all of the major themes of money, status, and marrying well that are prevalent in 19th-century England. The Bennet family, particularly Elizabeth Bennet, a smart and strong-willed heroine, is the subject of Austen’s commentary on the societal imperative for women to marry well and thereby have a stable income.
+The title itself is quite meaningful, as it first indicates the character flaws that drive much of the conflict in this novel, namely Darcy’s pride and Elizabeth’s prejudice. In fact, Mr. Fitzwilliam Darcy, being a rich and high-ranking person, first of all shows a haughty character, thereby being very superior by virtue of his class. Elizabeth, having been offended by his initial lack of warmth, as well as having been misled by the deceiving Mr. Wickham, very quickly showed prejudice against him.
+Traces the story of each as they navigate these weaknesses. Darcy needs to lower his pride to appreciate the value of Elizabeth’s inferior standing, though she must see the strength of his superior qualities.
+Austen employs irony and satire liberally to point out the absurdities of the class structure. Personages like the obsequious Mr. Collins and the imperious Lady Catherine de Bourgh symbolize the hard and silly aspects of class consciousness. The sojourn at Darcy’s grand estate, Pemberley, is an important defining instance in which the splendor of the property and the favorable reports of his servants compel Elizabeth to revise her earlier opinion and realize the truth of Darcy’s goodness.
+In the final analysis, the novel promotes love marriages, couples like Jane and Bingley, and Elizabeth and Darcy, who have successful marriages because of love, in contrast to couples who marry for convenience (Charlotte Collins and Mr. Collins) or those who are full of passion but irresponsible (Lydia and Wickham).
+What is the key event that marks a turning point in making Elizabeth change her view of Darcy?
+(1) Her visit to Pemberley and her reception of Darcy's letter
+(2) Rejection of Mr. Collins’s Proposal
+(3) The Netherfield Ball
+(4) Lydia's elopement with Wickham
+= 1
+~ The passage calls the sojourn at Darcy’s estate, Pemberley, 'an important defining instance' in which the splendour of the property and his servants' favourable reports make Elizabeth revise her earlier opinion and realise his goodness. In the novel, Darcy's letter explaining his conduct also begins this change. The Netherfield Ball, the rejection of Mr. Collins and Lydia's elopement are not described in the passage as changing her view of Darcy.
+
+Q 90 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+Pride and Prejudice by Jane Austen is a classic known for its humor and complex characters. The famous first sentence of the book, "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife," begins to set up all of the major themes of money, status, and marrying well that are prevalent in 19th-century England. The Bennet family, particularly Elizabeth Bennet, a smart and strong-willed heroine, is the subject of Austen’s commentary on the societal imperative for women to marry well and thereby have a stable income.
+The title itself is quite meaningful, as it first indicates the character flaws that drive much of the conflict in this novel, namely Darcy’s pride and Elizabeth’s prejudice. In fact, Mr. Fitzwilliam Darcy, being a rich and high-ranking person, first of all shows a haughty character, thereby being very superior by virtue of his class. Elizabeth, having been offended by his initial lack of warmth, as well as having been misled by the deceiving Mr. Wickham, very quickly showed prejudice against him.
+Traces the story of each as they navigate these weaknesses. Darcy needs to lower his pride to appreciate the value of Elizabeth’s inferior standing, though she must see the strength of his superior qualities.
+Austen employs irony and satire liberally to point out the absurdities of the class structure. Personages like the obsequious Mr. Collins and the imperious Lady Catherine de Bourgh symbolize the hard and silly aspects of class consciousness. The sojourn at Darcy’s grand estate, Pemberley, is an important defining instance in which the splendor of the property and the favorable reports of his servants compel Elizabeth to revise her earlier opinion and realize the truth of Darcy’s goodness.
+In the final analysis, the novel promotes love marriages, couples like Jane and Bingley, and Elizabeth and Darcy, who have successful marriages because of love, in contrast to couples who marry for convenience (Charlotte Collins and Mr. Collins) or those who are full of passion but irresponsible (Lydia and Wickham).
+What kind of marriage does Jane Austen appear to prize the most, according to the conclusion of the novel?
+(1) Marriage contracts entered into by reason of romantic love alone
+(2) Marriages for convenience and connections to family
+(3) Based on mutual respect, love, and understanding in marriage
+(4) Marriages based solely on financial security
+= 3
+~ The last paragraph says the novel promotes love marriages such as Jane and Bingley and Elizabeth and Darcy, couples who overcome pride and prejudice and come to understand and respect each other. It contrasts them with marriages for convenience (Charlotte and Mr. Collins) and with couples full of passion but irresponsible (Lydia and Wickham). So Austen prizes marriage based on mutual respect, love and understanding, not convenience, money or romantic passion alone.
+
+Q 91 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+The Viksit Bharat - Guarantee for Rozgar and Ajeevika Mission (Gramin) Act (VB-GRAM G), 2025, has been replaced by the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA). The goal of this modification is to improve Article 21 of the Indian Constitution, which protects the right to life. MGNREGA has improved socioeconomic conditions by facilitating wage payments, providing unemployment benefits, and promoting equal earnings. There has been sustainable development, and research has confirmed the impact of this program to raise earnings, alleviate poverty, and encourage school enrollment. In the past five years, women have comprised 58% of the workforce, significantly contributing to rural development, particularly during the COVID-19 pandemic. Given these factors, it is important to assess both the benefits and current challenges of the system.
+Despite MGNREGA’s successes, the program has faced implementation challenges, mainly due to inadequate funding, as acknowledged by the Ministry of Finance. Delays in wage payments and fewer work opportunities have resulted from this lack of funds. Recent rules, such as introducing an attendance application that uses photos, have created new problems and made corruption easier. Due to these issues, the VB-GRAM G Act has introduced important changes, including sections 5(1) and 4(5), which give the Union Government greater control over the public works program.
+What might be the author’s overall purpose for discussing the development from MGNREGA to the VB-GRAM G Act?
+(1) Argue that a transition from a rights-based framework to an AI-based system is necessary to achieve efficient results for rural communities.
+(2) Argue that technology-based interventions will necessarily increase the levels of transparency and accountability associated with public programs
+(3) Emphasize how institutional reforms try to maintain constitutionally provided rights while recognizing administrative weaknesses
+(4) Argue that a decrease in the role of government can logically solve the inherent shortcomings in rural employment patterns
+= 3
+~ The author links the change to Article 21 (the right to life), lists MGNREGA's benefits, then admits its weaknesses (inadequate funding, delayed wages, fewer jobs, an attendance app that eased corruption) and describes the new Act's changes. So the purpose is to show reform trying to protect constitutional rights while recognising administrative weaknesses. AI is never mentioned, the photo app is shown creating problems rather than transparency, and the new Act gives the Union Government more control, not less.
+
+Q 92 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+The Viksit Bharat - Guarantee for Rozgar and Ajeevika Mission (Gramin) Act (VB-GRAM G), 2025, has been replaced by the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA). The goal of this modification is to improve Article 21 of the Indian Constitution, which protects the right to life. MGNREGA has improved socioeconomic conditions by facilitating wage payments, providing unemployment benefits, and promoting equal earnings. There has been sustainable development, and research has confirmed the impact of this program to raise earnings, alleviate poverty, and encourage school enrollment. In the past five years, women have comprised 58% of the workforce, significantly contributing to rural development, particularly during the COVID-19 pandemic. Given these factors, it is important to assess both the benefits and current challenges of the system.
+Despite MGNREGA’s successes, the program has faced implementation challenges, mainly due to inadequate funding, as acknowledged by the Ministry of Finance. Delays in wage payments and fewer work opportunities have resulted from this lack of funds. Recent rules, such as introducing an attendance application that uses photos, have created new problems and made corruption easier. Due to these issues, the VB-GRAM G Act has introduced important changes, including sections 5(1) and 4(5), which give the Union Government greater control over the public works program.
+The author's tone regarding new rules (e.g., photo-based attendance) is best described as?
+(1) Cautiously critical, admitting the benefits of innovation while pointing out the dangers of abuse in bureaucracies
+(2) It is a direct rejection that states tech solutions do not work in rural welfare activities because the officials are illiterate
+(3) Detachedly descriptive, outlining reforms to procedures without evaluative judgments.
+(4) Digital interventions will resolve longstanding governance issues.
+= 1
+~ The author says rules such as the photo-based attendance application 'have created new problems and made corruption easier', a critical judgement stated in measured language without rejecting technology outright. The passage does not actually spell out any benefits of the innovation, but option 1 is still the closest description of the tone. Nothing is said about officials being illiterate (option 2), the author clearly evaluates the rules rather than merely describing them (option 3), and option 4 is a claim the passage contradicts, not a tone.
+
+Q 93 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+The Viksit Bharat - Guarantee for Rozgar and Ajeevika Mission (Gramin) Act (VB-GRAM G), 2025, has been replaced by the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA). The goal of this modification is to improve Article 21 of the Indian Constitution, which protects the right to life. MGNREGA has improved socioeconomic conditions by facilitating wage payments, providing unemployment benefits, and promoting equal earnings. There has been sustainable development, and research has confirmed the impact of this program to raise earnings, alleviate poverty, and encourage school enrollment. In the past five years, women have comprised 58% of the workforce, significantly contributing to rural development, particularly during the COVID-19 pandemic. Given these factors, it is important to assess both the benefits and current challenges of the system.
+Despite MGNREGA’s successes, the program has faced implementation challenges, mainly due to inadequate funding, as acknowledged by the Ministry of Finance. Delays in wage payments and fewer work opportunities have resulted from this lack of funds. Recent rules, such as introducing an attendance application that uses photos, have created new problems and made corruption easier. Due to these issues, the VB-GRAM G Act has introduced important changes, including sections 5(1) and 4(5), which give the Union Government greater control over the public works program.
+What can be reasonably inferred about the relationship between women's participation and rural resilience during the pandemic?
+(1) The fact that they were active seemingly led to the acceleration of the community's fiscal problems because it resulted in program expenditure being amplified during a time of uncertainty.
+(2) Their significant involvement contributed to the continuation of the community through the maintenance of the local economy in spite of the general economic disruptions that were happening.
+(3) Their involvement could have led to a decrease in total program productivity owing to the fact that the local populace was heavily burdened with expanded caregiving during the pandemic.
+(4) Their intensified appearance might have worsened the existing support structures that were failing in the health crisis.
+= 2
+~ The passage says women made up 58% of the workforce in the past five years, 'significantly contributing to rural development, particularly during the COVID-19 pandemic'. It is therefore reasonable to infer that their work helped sustain the local economy and the community despite the wider economic disruption. The passage gives no hint that their participation raised fiscal problems, lowered productivity or weakened support structures, so options 1, 3 and 4 contradict its positive tone.
+
+Q 94 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+The Viksit Bharat - Guarantee for Rozgar and Ajeevika Mission (Gramin) Act (VB-GRAM G), 2025, has been replaced by the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA). The goal of this modification is to improve Article 21 of the Indian Constitution, which protects the right to life. MGNREGA has improved socioeconomic conditions by facilitating wage payments, providing unemployment benefits, and promoting equal earnings. There has been sustainable development, and research has confirmed the impact of this program to raise earnings, alleviate poverty, and encourage school enrollment. In the past five years, women have comprised 58% of the workforce, significantly contributing to rural development, particularly during the COVID-19 pandemic. Given these factors, it is important to assess both the benefits and current challenges of the system.
+Despite MGNREGA’s successes, the program has faced implementation challenges, mainly due to inadequate funding, as acknowledged by the Ministry of Finance. Delays in wage payments and fewer work opportunities have resulted from this lack of funds. Recent rules, such as introducing an attendance application that uses photos, have created new problems and made corruption easier. Due to these issues, the VB-GRAM G Act has introduced important changes, including sections 5(1) and 4(5), which give the Union Government greater control over the public works program.
+What does the author’s discussion of lack of funding primarily indicate?
+(1) Local administrations limit opportunities so as to have control over the release of finances.
+(2) Administrative inefficiencies and implementation challenges due to a shortage of funding.
+(3) Resource allocation practices are highly effective but seem problematic due to certain short-term fiscal fluctuations
+(4) Decentralized authority has caused divergent effects that will certainly lead to a reduction in job guarantees.
+= 2
+~ The second paragraph says the programme 'has faced implementation challenges, mainly due to inadequate funding', and that delays in wage payments and fewer work opportunities 'have resulted from this lack of funds'. So the discussion points to administrative inefficiencies and implementation problems caused by a shortage of funds. The passage does not say local administrations limit work deliberately, does not call allocation 'highly effective', and does not blame decentralised authority.
+
+Q 95 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+The Viksit Bharat - Guarantee for Rozgar and Ajeevika Mission (Gramin) Act (VB-GRAM G), 2025, has been replaced by the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA). The goal of this modification is to improve Article 21 of the Indian Constitution, which protects the right to life. MGNREGA has improved socioeconomic conditions by facilitating wage payments, providing unemployment benefits, and promoting equal earnings. There has been sustainable development, and research has confirmed the impact of this program to raise earnings, alleviate poverty, and encourage school enrollment. In the past five years, women have comprised 58% of the workforce, significantly contributing to rural development, particularly during the COVID-19 pandemic. Given these factors, it is important to assess both the benefits and current challenges of the system.
+Despite MGNREGA’s successes, the program has faced implementation challenges, mainly due to inadequate funding, as acknowledged by the Ministry of Finance. Delays in wage payments and fewer work opportunities have resulted from this lack of funds. Recent rules, such as introducing an attendance application that uses photos, have created new problems and made corruption easier. Due to these issues, the VB-GRAM G Act has introduced important changes, including sections 5(1) and 4(5), which give the Union Government greater control over the public works program.
+What does "sustainable development” mean most nearly in the context of the passage?
+(1) Outcomes that emphasize the creation of jobs in the short term, even if there are uncertain long-term consequences for individual welfare
+(2) Discusses advancements that are characterized by fast infrastructure development without consideration of administrative viability.
+(3) Improvements relating to long-term socioeconomic benefits for rural households via stable program design
+(4) Strategies that place emphasis mainly on technological diffusion as a principal means of rural transformation
+= 3
+~ In the passage 'sustainable development' is followed by research showing that the programme raised earnings, alleviated poverty and encouraged school enrolment, all lasting socioeconomic gains for rural households brought about by a steady programme. So it means improvements in long-term socioeconomic benefits through stable programme design. Sustainable is the opposite of short-term (option 1), and fast infrastructure building or technological diffusion are not what the passage describes.
+
+Q 96 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+"Bank failures raise serious concerns about supervisory oversight." The case studies of Credit Suisse and Silicon Valley Bank highlight the deficiencies in supervisory supervision. In many instances, supervisors are hesitant to come into conflict with bank management when weaknesses are identified, preferring to do nothing rather than take corrective action at a point in time when key issues are building into a problem.
+Regulators must adopt an attitude change in which they place more emphasis on the results rather than the details. Overemphasis on trivial matters might lead regulators to overlook more fundamental issues, such as whether financial institutions have adequate capital in case of a shock. Regulating requirements must be simplified. Complex regulation requirements in relation to capital may overlook systemic risk in their approaches when stress tests result in activities gravitating towards less heavily regulated institutions in the non-bank sector.
+Improved supervisory and bank communications would promote better supervision as a tool for managing risk. Recommendations include being up front about supervisory goals, openness to change within the bank organization, and increased transparency in supervisory contracts as a way of promoting swift problem resolution. These would aid shareholders as well as the overall economy. In conclusion, rather than pursuing a micro-management strategy, a move towards a clearly defined regulation that supports positive incentives is what is needed to ensure that banks behave within frameworks that promote financial stability.
+Which of the following is most true in regard to stating the structure of logic found in the author's conclusion?
+(1) It proposes that bank managers should be given more freedom in setting.
+(2) It suggests a complete deregulation of the banking system to promote a competitive world economy.
+(3) It urges a transition from procedural pedantry towards a results-oriented strategic framework.
+(4) It suggests that the responsibility for assurance should lie with organizations rather than with outsiders.
+= 3
+~ The conclusion says that 'rather than pursuing a micro-management strategy', regulators should move towards clearly defined regulation with positive incentives, echoing the earlier call to emphasise 'results rather than the details'. Its logic is therefore a shift from procedural pedantry (fussing over trivial rules) to a results-oriented strategic framework. The author wants clearer regulation, not deregulation or more freedom for bank managers, and keeps supervisors responsible for oversight.
+
+Q 97 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+"Bank failures raise serious concerns about supervisory oversight." The case studies of Credit Suisse and Silicon Valley Bank highlight the deficiencies in supervisory supervision. In many instances, supervisors are hesitant to come into conflict with bank management when weaknesses are identified, preferring to do nothing rather than take corrective action at a point in time when key issues are building into a problem.
+Regulators must adopt an attitude change in which they place more emphasis on the results rather than the details. Overemphasis on trivial matters might lead regulators to overlook more fundamental issues, such as whether financial institutions have adequate capital in case of a shock. Regulating requirements must be simplified. Complex regulation requirements in relation to capital may overlook systemic risk in their approaches when stress tests result in activities gravitating towards less heavily regulated institutions in the non-bank sector.
+Improved supervisory and bank communications would promote better supervision as a tool for managing risk. Recommendations include being up front about supervisory goals, openness to change within the bank organization, and increased transparency in supervisory contracts as a way of promoting swift problem resolution. These would aid shareholders as well as the overall economy. In conclusion, rather than pursuing a micro-management strategy, a move towards a clearly defined regulation that supports positive incentives is what is needed to ensure that banks behave within frameworks that promote financial stability.
+The use of "stress tests" by the author is an example of illustrating which of the following consequences?
+(1) The failure of financial institutions to report their internal capital requirements accurately.
+(2) The movement of risk-related financial activities into industries that are less heavily regulated.
+(3) The direct relationship between complex regulatory obligations and long-term stability.
+(4) The enhanced clarity of communication between shareholders and bank managers.
+= 2
+~ The passage says complex capital requirements may overlook systemic risk 'when stress tests result in activities gravitating towards less heavily regulated institutions in the non-bank sector'. Stress tests are thus cited to illustrate an unintended consequence: risky financial activity moving into less regulated areas. The passage does not mention inaccurate reporting, it argues that complex rules can harm rather than secure stability, and stress tests have nothing to do with shareholder communication.
+
+Q 98 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+"Bank failures raise serious concerns about supervisory oversight." The case studies of Credit Suisse and Silicon Valley Bank highlight the deficiencies in supervisory supervision. In many instances, supervisors are hesitant to come into conflict with bank management when weaknesses are identified, preferring to do nothing rather than take corrective action at a point in time when key issues are building into a problem.
+Regulators must adopt an attitude change in which they place more emphasis on the results rather than the details. Overemphasis on trivial matters might lead regulators to overlook more fundamental issues, such as whether financial institutions have adequate capital in case of a shock. Regulating requirements must be simplified. Complex regulation requirements in relation to capital may overlook systemic risk in their approaches when stress tests result in activities gravitating towards less heavily regulated institutions in the non-bank sector.
+Improved supervisory and bank communications would promote better supervision as a tool for managing risk. Recommendations include being up front about supervisory goals, openness to change within the bank organization, and increased transparency in supervisory contracts as a way of promoting swift problem resolution. These would aid shareholders as well as the overall economy. In conclusion, rather than pursuing a micro-management strategy, a move towards a clearly defined regulation that supports positive incentives is what is needed to ensure that banks behave within frameworks that promote financial stability.
+Why are supervisors often slow to act when banks have problems?
+(1) They use a secret strategy to keep their contracts private.
+(2) They are confused because modern bank rules are too simple.
+(3) They do not have the legal power to stop a financial crash.
+(4) They prefer to avoid conflict instead of fixing risks early.
+= 4
+~ The first paragraph states that supervisors 'are hesitant to come into conflict with bank management when weaknesses are identified, preferring to do nothing rather than take corrective action' while problems are building up. So they are slow because they avoid conflict instead of fixing risks early. The passage calls for more transparency, not secrecy, it complains that rules are too complex rather than too simple, and it never says supervisors lack legal power.
+
+Q 99 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+"Bank failures raise serious concerns about supervisory oversight." The case studies of Credit Suisse and Silicon Valley Bank highlight the deficiencies in supervisory supervision. In many instances, supervisors are hesitant to come into conflict with bank management when weaknesses are identified, preferring to do nothing rather than take corrective action at a point in time when key issues are building into a problem.
+Regulators must adopt an attitude change in which they place more emphasis on the results rather than the details. Overemphasis on trivial matters might lead regulators to overlook more fundamental issues, such as whether financial institutions have adequate capital in case of a shock. Regulating requirements must be simplified. Complex regulation requirements in relation to capital may overlook systemic risk in their approaches when stress tests result in activities gravitating towards less heavily regulated institutions in the non-bank sector.
+Improved supervisory and bank communications would promote better supervision as a tool for managing risk. Recommendations include being up front about supervisory goals, openness to change within the bank organization, and increased transparency in supervisory contracts as a way of promoting swift problem resolution. These would aid shareholders as well as the overall economy. In conclusion, rather than pursuing a micro-management strategy, a move towards a clearly defined regulation that supports positive incentives is what is needed to ensure that banks behave within frameworks that promote financial stability.
+What would "positive incentives" do for the banking system?
+(1) Make bank rules much more complicated and harder to follow.
+(2) Bring back micro-management and focus on tiny details.
+(3) Stop banks and regulators from talking to each other often.
+(4) Help banks behave in a way that keeps the economy stable.
+= 4
+~ The conclusion says a clearly defined regulation 'that supports positive incentives is what is needed to ensure that banks behave within frameworks that promote financial stability'. So positive incentives would help banks behave in a way that keeps the financial system and economy stable. The author wants simpler rules, rejects micro-management and recommends better communication between supervisors and banks, so options 1, 2 and 3 contradict the passage.
+
+Q 100 | eng | Reading Comprehension
+Read the following passage carefully and answer the questions based on the passage:
+"Bank failures raise serious concerns about supervisory oversight." The case studies of Credit Suisse and Silicon Valley Bank highlight the deficiencies in supervisory supervision. In many instances, supervisors are hesitant to come into conflict with bank management when weaknesses are identified, preferring to do nothing rather than take corrective action at a point in time when key issues are building into a problem.
+Regulators must adopt an attitude change in which they place more emphasis on the results rather than the details. Overemphasis on trivial matters might lead regulators to overlook more fundamental issues, such as whether financial institutions have adequate capital in case of a shock. Regulating requirements must be simplified. Complex regulation requirements in relation to capital may overlook systemic risk in their approaches when stress tests result in activities gravitating towards less heavily regulated institutions in the non-bank sector.
+Improved supervisory and bank communications would promote better supervision as a tool for managing risk. Recommendations include being up front about supervisory goals, openness to change within the bank organization, and increased transparency in supervisory contracts as a way of promoting swift problem resolution. These would aid shareholders as well as the overall economy. In conclusion, rather than pursuing a micro-management strategy, a move towards a clearly defined regulation that supports positive incentives is what is needed to ensure that banks behave within frameworks that promote financial stability.
+The tone with which the author approaches the current situation of "complex regulation" is best described as:
+(1) Hopeful that it will eventually help find hidden money problems.
+(2) Uninterested in how these rules change where money is stored.
+(3) Critical because complicated rules can actually cause more risk.
+(4) Impressed by how much attention supervisors pay to tiny details.
+= 3
+~ The author insists that 'Regulating requirements must be simplified' and warns that complex capital requirements 'may overlook systemic risk' by pushing activity towards less heavily regulated non-bank institutions. This is a critical tone: complicated rules can actually increase risk. The author is not hopeful about complex rules, clearly cares about where financial activity moves, and criticises rather than admires overemphasis on trivial details.
+
+Q 101 | eng | Fill in the Blanks & Cloze Test
+In the following question, some of the words in the passage have been left out. Read the passage carefully and choose the correct word for each blank, out of the four alternatives and fill in the blanks.
+After falling consistently ______ (1) the U.S. dollar for a major part of the year, the rupee has ______ (2) somewhat over the last few weeks. It has risen by almost 5% from its lowest levels ______ (3) in October. Even with this recent improvement, the rupee is still down about 11% since the start of the year. The rupee's performance has been closely ______ (4) to global crude oil prices. This makes sense, as imported oil accounts for about 80% of India's total demand. The value of the rupee dropped when oil prices climbed earlier this year, a trend that lasted until early October. Since then, as global crude prices have fallen, the rupee has ______ (5) against the dollar.
+What should come in blank (1)?
+(1) for
+(2) against
+(3) of
+(4) with
+= 2
+~ Exchange rates compare one currency with another, so a currency is said to rise or fall 'against' another currency: 'After falling consistently against the U.S. dollar'. The passage itself uses the same preposition at the end ('the rupee has strengthened against the dollar'). 'Falling for' means being deceived by or falling in love with, while 'falling of' and 'falling with' do not express a comparison between two currencies.
+
+Q 102 | eng | Fill in the Blanks & Cloze Test
+In the following question, some of the words in the passage have been left out. Read the passage carefully and choose the correct word for each blank, out of the four alternatives and fill in the blanks.
+After falling consistently ______ (1) the U.S. dollar for a major part of the year, the rupee has ______ (2) somewhat over the last few weeks. It has risen by almost 5% from its lowest levels ______ (3) in October. Even with this recent improvement, the rupee is still down about 11% since the start of the year. The rupee's performance has been closely ______ (4) to global crude oil prices. This makes sense, as imported oil accounts for about 80% of India's total demand. The value of the rupee dropped when oil prices climbed earlier this year, a trend that lasted until early October. Since then, as global crude prices have fallen, the rupee has ______ (5) against the dollar.
+What should come in blank (2)?
+(1) admire
+(2) energy
+(3) ground
+(4) recovered
+= 4
+~ After 'has' the blank needs a past participle to form the present perfect, and the next sentence says the rupee 'has risen by almost 5% from its lowest levels', calling this a 'recent improvement'. So the rupee 'has recovered somewhat', meaning it has regained part of its lost value. 'Admire' is a base verb and 'energy' a noun, so neither fits after 'has'; 'ground' (as in 'has ground') makes no sense here, and the idiom 'gain ground' would need 'gained'.
+
+Q 103 | eng | Fill in the Blanks & Cloze Test
+In the following question, some of the words in the passage have been left out. Read the passage carefully and choose the correct word for each blank, out of the four alternatives and fill in the blanks.
+After falling consistently ______ (1) the U.S. dollar for a major part of the year, the rupee has ______ (2) somewhat over the last few weeks. It has risen by almost 5% from its lowest levels ______ (3) in October. Even with this recent improvement, the rupee is still down about 11% since the start of the year. The rupee's performance has been closely ______ (4) to global crude oil prices. This makes sense, as imported oil accounts for about 80% of India's total demand. The value of the rupee dropped when oil prices climbed earlier this year, a trend that lasted until early October. Since then, as global crude prices have fallen, the rupee has ______ (5) against the dollar.
+What should come in blank (3)?
+(1) behind
+(2) render
+(3) reached
+(4) admire
+= 3
+~ The blank needs a past participle describing the 'lowest levels': the levels 'reached in October', that is, the lowest point the rupee touched that month. 'Reached' works as a reduced passive clause ('levels which were reached in October'). 'Behind' gives 'lowest levels behind in October', which makes no sense, while 'render' and 'admire' are base verbs that cannot qualify the noun 'levels' here.
+
+Q 104 | eng | Fill in the Blanks & Cloze Test
+In the following question, some of the words in the passage have been left out. Read the passage carefully and choose the correct word for each blank, out of the four alternatives and fill in the blanks.
+After falling consistently ______ (1) the U.S. dollar for a major part of the year, the rupee has ______ (2) somewhat over the last few weeks. It has risen by almost 5% from its lowest levels ______ (3) in October. Even with this recent improvement, the rupee is still down about 11% since the start of the year. The rupee's performance has been closely ______ (4) to global crude oil prices. This makes sense, as imported oil accounts for about 80% of India's total demand. The value of the rupee dropped when oil prices climbed earlier this year, a trend that lasted until early October. Since then, as global crude prices have fallen, the rupee has ______ (5) against the dollar.
+What should come in blank (4)?
+(1) tightly
+(2) morally
+(3) tied
+(4) amicably
+= 3
+~ 'Has been closely tied to' means has been closely linked to or dependent on something. The next sentences explain the link: imported oil accounts for about 80% of India's demand, so the rupee fell when oil prices rose and recovered when they fell. The blank needs a past participle after 'has been closely', so 'tied' fits. 'Tightly', 'morally' and 'amicably' are adverbs, and 'closely tightly to' would be ungrammatical.
+
+Q 105 | eng | Fill in the Blanks & Cloze Test
+In the following question, some of the words in the passage have been left out. Read the passage carefully and choose the correct word for each blank, out of the four alternatives and fill in the blanks.
+After falling consistently ______ (1) the U.S. dollar for a major part of the year, the rupee has ______ (2) somewhat over the last few weeks. It has risen by almost 5% from its lowest levels ______ (3) in October. Even with this recent improvement, the rupee is still down about 11% since the start of the year. The rupee's performance has been closely ______ (4) to global crude oil prices. This makes sense, as imported oil accounts for about 80% of India's total demand. The value of the rupee dropped when oil prices climbed earlier this year, a trend that lasted until early October. Since then, as global crude prices have fallen, the rupee has ______ (5) against the dollar.
+What should come in blank (5)?
+(1) strengthened
+(2) tandem
+(3) culture
+(4) relating
+= 1
+~ The passage says the rupee fell when oil prices climbed; 'since then, as global crude prices have fallen', the opposite has happened, so the rupee 'has strengthened against the dollar', meaning it has gained value. This also matches the earlier statement that it has risen by almost 5%. 'Tandem' and 'culture' are nouns and 'relating' is a present participle, so none of them can follow 'has' to form the present perfect.
+
+Q 106 | pol | Constitution & Rights
+Read the following statements regarding the 'Doctrine of Repugnancy' (Article 254):
+Statement I: If a ‘State law’ on a "Concurrent List" subject conflict with a ‘Union law’, then the Union law prevails, and the State law becomes 'void' to the extent of the repugnancy.
+Statement II: A State law on a Concurrent subject that conflicts with a Union law can still prevail within that State if it has been reserved for and received the assent of the President.
+Which of the above statements is/are correct?
+(1) Only Statement II is correct
+(2) Both Statements I and II are correct
+(3) Only Statement I is correct
+(4) Neither Statement I nor II is correct
+= 2
+~ Article 254(1) lays down the doctrine of repugnancy: if a State law on a Concurrent List matter conflicts with a law made by Parliament on the same matter, the Union law prevails and the State law is void to the extent of the repugnancy. Article 254(2) is the exception: such a State law prevails in that State if it was reserved for the President's consideration and received his assent, though Parliament can later amend or repeal it by a fresh law. So both statements are correct.
+
+Q 107 | eco | Planning, Growth & Budget
+The Second Five Year Plan (1956-1961), often associated with the Mahalanobis Model, marked a significant shift in India's development strategy. What was the primary focus of this plan?
+(1) Maximizing the role of the private sector in the 'commanding heights' of the economy.
+(2) Achieving immediate self-sufficiency in food grain production through the Green Revolution.
+(3) Establishing an export-oriented economy to integrate rapidly with global trade markets.
+(4) Rapid industrialization with a particular emphasis on the development of basic and heavy industries.
+= 4
+~ The Second Five Year Plan (1956–61), based on the model of statistician P.C. Mahalanobis, aimed at rapid industrialisation with emphasis on basic and heavy industries, such as the Bhilai, Rourkela and Durgapur steel plants, largely in the public sector. The Industrial Policy Resolution of 1956 gave the State, not private business, the "commanding heights" of the economy. The Green Revolution came only in the mid-1960s, and an export-oriented, globally integrated economy is associated with the 1991 reforms.
+
+Q 108 | cur | International
+The 'Fortaleza Declaration' of 2014 is most famous in BRICS history for the creation of which of the following?
+(1) The BRICS Space Agency
+(2) A common BRICS currency called 'R5'
+(3) The Contingent Reserve Arrangement (CRA)
+(4) A permanent BRICS Secretariat in Brazil
+= 3
+~ The Fortaleza Declaration was adopted at the 6th BRICS summit at Fortaleza, Brazil, in July 2014. There the five members signed agreements creating the New Development Bank, headquartered in Shanghai, and the Contingent Reserve Arrangement (CRA), a 100 billion dollar pool of reserves that members can draw on to meet short-term balance-of-payments pressures. BRICS has no space agency, no common currency and no permanent secretariat; it works through a rotating chairship.
+
+Q 109 | ih | Medieval India
+Which of the following was a primary objective of Alauddin Khilji's ‘Market Control’ (Zawabit) regulations?
+(1) To expand treasury revenue by encouraging unrestricted trade with neighboring regions.
+(2) To replace religious taxation with a uniform system of commercial levies across markets.
+(3) To keep essential commodity prices low so soldiers could be maintained on fixed salaries.
+(4) To promote overseas trade by encouraging Indian textile exports to foreign empires.
+= 3
+~ Alauddin Khalji (1296–1316) needed a large standing army to repel the Mongols and paid his soldiers fixed cash salaries. To make those salaries enough, his market regulations (zawabit) fixed low prices for grain, cloth, horses, cattle and slaves, stored grain in royal granaries, collected land revenue in kind from the Doab and set up separate markets under a Shahna-i-Mandi, with spies and harsh punishments for traders who cheated. Ziauddin Barani describes them in his Tarikh-i-Firuz Shahi.
+
+Q 110 | eco | Planning, Growth & Budget
+From a macroeconomic perspective, which indicator best captures the government’s borrowing requirement excluding interest payments on past debt?
+(1) Revenue deficit
+(2) Fiscal deficit
+(3) Primary deficit
+(4) Budget deficit
+= 3
+~ The fiscal deficit (total expenditure minus revenue receipts and non-debt capital receipts) measures the government's total borrowing requirement. Part of that borrowing goes to pay interest on past loans, so the primary deficit, which is fiscal deficit minus interest payments, shows the borrowing needed for current policies alone. Revenue deficit is revenue expenditure minus revenue receipts, and budget deficit (total expenditure minus total receipts) is no longer used in India's budgets.
+
+Q 111 | sci | Biology
+Which of the following biological processes explains why human muscles often feel sore or "cramped" after a sudden, intense bout of physical exercise?
+(1) Accumulation of Ethyl Alcohol
+(2) Excessive release of Carbon Dioxide
+(3) Depletion of Vitamin C
+(4) Accumulation of Lactic Acid
+= 4
+~ During sudden vigorous exercise the oxygen supply to muscle cells falls short, so they partly switch to anaerobic respiration, in which glucose is broken down to pyruvate and then to lactic acid. NCERT (Class 10, Life Processes) explains that this build-up of lactic acid causes muscle cramps. Ethyl alcohol and carbon dioxide are the products of anaerobic respiration in yeast (fermentation), not in human muscle. Modern physiology links delayed soreness more to tiny muscle injuries, but the textbook answer is lactic acid.
+
+Q 112 | geo | Indian Geography
+Read the below statements:
+Statement I: The 'Zoji La pass' serves as a very important link between the Kashmir Valley and the Ladakh region, cutting through the Great Himalayan Range.
+Statement II: The 'Shipki La pass' is located in Arunachal Pradesh and serves as a primary gateway for the river Brahmaputra to enter India from Tibet.
+Which of the above statements is/are correct?
+(1) Both Statement I and II are correct
+(2) Neither Statement I nor II is correct
+(3) Only Statement I is correct
+(4) Only Statement II is correct
+= 3
+~ Zoji La, about 3,500 m high on the Srinagar–Leh highway, crosses the Great Himalaya between the Kashmir Valley and Drass–Kargil in Ladakh, and the all-weather Zojila tunnel is being built under it. Statement II is wrong: Shipki La is in Kinnaur district of Himachal Pradesh, and it is the Sutlej that enters India from Tibet near it. The Brahmaputra (Tsangpo) enters India in Arunachal Pradesh, where it is called the Siang or Dihang.
+
+Q 113 | geo | Environment & Ecology
+Regarding the legal protection of Dugong (Sea Cow) in India, consider the following statements:
+Statement 1: The Dugong is protected under Schedule I of the Wildlife (Protection) Act, 1972.
+Statement 2: This classification provides the Dugong with the highest level of legal protection, similar to that of the Tiger.
+Which of the statements given above is/are correct?
+(1) Both Statement 1 and Statement 2
+(2) Only Statement 2
+(3) Only Statement 1
+(4) Neither Statement 1 nor Statement 2
+= 1
+~ The dugong (Dugong dugon), or sea cow, is the only strictly marine herbivorous mammal and grazes on seagrass in the Gulf of Mannar, Palk Bay, the Gulf of Kachchh and the Andaman and Nicobar Islands. It is listed in Schedule I of the Wildlife (Protection) Act, 1972, which gives the highest legal protection, the same as for the tiger, with the heaviest penalties. It is Vulnerable on the IUCN Red List, and Tamil Nadu notified India's first Dugong Conservation Reserve in Palk Bay in 2022.
+
+Q 114 | cur | Sports
+In a standard FIBA (International) game, how many quarters are played, and how long is each quarter?
+(1) Four 10-minute quarters
+(2) Four 12-minute quarters
+(3) Two 20-minute halves
+(4) Four 8-minute quarters
+= 1
+~ Under FIBA (International Basketball Federation) rules, used in the Olympics and the World Cup, a game has four quarters of 10 minutes each, with 5-minute overtime periods if the scores are level. The American NBA plays four 12-minute quarters, and US college (NCAA) men's basketball is played in two 20-minute halves, which is why those options are tempting. FIBA was founded in 1932 at Geneva and has its headquarters at Mies, Switzerland.
+
+Q 115 | sci | Science & Technology
+Which of the following correctly describes the NISAR mission?
+(1) ISRO-only mission for X-band radar mapping
+(2) NASA-only mission for ultraviolet astronomy
+(3) Optical imaging mission for exoplanet detection
+(4) Joint ISRO–NASA mission using L and S-band radar
+= 4
+~ NISAR (NASA-ISRO Synthetic Aperture Radar) is a joint Earth-observation satellite launched by ISRO's GSLV-F16 from Sriharikota on 30 July 2025 into a 747 km sun-synchronous orbit. It is the first satellite to carry dual-frequency radar: an L-band SAR supplied by NASA and an S-band SAR built by ISRO, sharing a 12 m unfurlable reflector. Working day and night through clouds, it maps almost all land and ice every 12 days to track earthquakes, landslides, glaciers, crops and forests.
+
+Q 116 | cur | Sports
+Read the below statements regarding Aman Sehrawat's performance at the Paris 2024 Olympics:
+Statement I: Aman Sehrawat won the bronze medal in the Men's 57kg freestyle wrestling event by defeating Darian Cruz of Puerto Rico.
+Statement II: With this win, at the age of 21 years and 24 days, he surpassed PV Sindhu to become India's youngest-ever individual Olympic medalist.
+Which of the following is correct?
+(1) Neither statement I nor II is correct
+(2) Only statement I is correct
+(3) Only statement II is correct
+(4) Both statements I and II are correct
+= 4
+~ Aman Sehrawat, born on 16 July 2003, beat Darian Toi Cruz of Puerto Rico 13–5 in the men's 57 kg freestyle bronze-medal bout at Paris on 9 August 2024, winning India's only wrestling medal at those Games. Aged 21 years and 24 days, he became India's youngest individual Olympic medallist, beating the record of badminton player P.V. Sindhu, who won silver at Rio 2016 aged 21 years, 1 month and 14 days.
+
+Q 117 | cur | National
+What constitutes the primary objective of the Gyan Bharatam Mission?
+(1) Promoting Indian languages globally
+(2) Developing new libraries across India
+(3) Translating classical texts into modern languages
+(4) Preserving, digitizing, and disseminating India's manuscript heritage
+= 4
+~ Gyan Bharatam is a mission of the Union Ministry of Culture, announced in the Union Budget 2025-26 and built on the National Mission for Manuscripts of 2003. It aims to survey, document, conserve and digitise more than one crore manuscripts held by academic institutions, museums, libraries and private collectors, and to make this knowledge accessible through a national digital repository. Prime Minister Modi launched the Gyan Bharatam portal at an international conference in New Delhi on 12 September 2025.
+
+Q 118 | eco | Planning, Growth & Budget
+Which indicator is used to measure the 'Knowledge' dimension of the Human Development Index?
+(1) Adult literacy rate and primary school enrollment
+(2) Mean years of schooling and Expected years of schooling
+(3) Student-to-teacher ratio in secondary education
+(4) Number of universities and research publications
+= 2
+~ UNDP's Human Development Index has three dimensions: a long and healthy life (life expectancy at birth), knowledge, and a decent standard of living (gross national income per capita in PPP dollars). Knowledge is measured by mean years of schooling of adults aged 25 and above and expected years of schooling for children of school-entering age. Adult literacy and gross enrolment were used before the 2010 revision, which makes option 1 a trap.
+
+Q 119 | ih | Modern India
+Regarding the 'Subsidiary Alliance' system introduced by Lord Wellesley (1798–1805), which of the following statements is INCORRECT?
+(1) The ruler was free to employ any European (French, Portuguese, etc.) as long as they were not in active conflict with the British.
+(2) If the ruler failed to make payments for the maintenance of the British force, a portion of his territory was ceded as a penalty.
+(3) The Indian ruler was required to disband his own military and maintain a permanent British contingent within his territory.
+(4) The British promised not to interfere in the internal administrative affairs of the allied state.
+= 1
+~ Under Lord Wellesley's Subsidiary Alliance, first accepted by the Nizam of Hyderabad in 1798, an Indian ruler could not keep an independent army and had to pay for a British force stationed in his state; if he failed to pay, part of his territory was taken away, as happened with Awadh in 1801. He also had to accept a British Resident and could not employ other Europeans or deal with other rulers without British approval. In return the Company promised protection and non-interference in internal affairs.
+
+Q 120 | pol | Government & Parliament
+Consider the following statements regarding the current Vice President of India:
+Statement 1: Chandrapuram Ponnusami (C.P.) Radhakrishnan is the Vice President of India, took charge on 12th September 2025.
+Statement 2: Unlike the Presidential election, the electoral college for the Vice President includes nominated members of both Houses of Parliament.
+Which of the statements above is/are correct?
+(1) Both Statements 1 and 2 are correct
+(2) Only statement 1 is correct
+(3) Neither Statement 1 nor 2 is correct
+(4) Only statement 2 is correct
+= 1
+~ After Jagdeep Dhankhar resigned in July 2025, C.P. Radhakrishnan, then Governor of Maharashtra, won the Vice-Presidential election of 9 September 2025 against B. Sudershan Reddy and took the oath from President Droupadi Murmu at Rashtrapati Bhavan on 12 September 2025, becoming the 15th Vice President. Under Article 66, the Vice President is elected by all members of both Houses of Parliament, elected and nominated, whereas the President's electoral college (Article 54) has only elected MPs and elected MLAs.
+
+Q 121 | eco | Agriculture, Industry & Trade
+Which of the following was a primary objective of ‘Liberalization’ within the New Economic Policy (NEP) of 1991?
+(1) Strengthening the MRTP Act to restrict the expansion of large business houses.
+(2) Expanding the list of industries reserved exclusively for the public sector.
+(3) Increasing the peak customs duty on imports to protect domestic industries.
+(4) Abolishing industrial licensing for most industries to encourage private entry.
+= 4
+~ The New Industrial Policy of July 1991 abolished industrial licensing for all but 18 industries (now only a handful, such as defence items, hazardous chemicals, tobacco products and alcoholic drinks), so that private firms could enter and expand freely. Liberalisation also cut the industries reserved for the public sector from 17 to 8, removed the asset limits of the MRTP Act and steadily lowered peak customs duties. Options 1 to 3 describe the opposite of these reforms.
+
+Q 122 | geo | Indian Geography
+Which of the following pairs of minerals and its leading producing state in India is correctly matched?
+(1) Bauxite – Odisha
+(2) Copper – Uttar Pradesh
+(3) Mica – Rajasthan
+(4) Limestone – Jharkhand
+= 1
+~ Odisha is India's leading bauxite producer, with about three-quarters of output according to the Indian Bureau of Mines, from deposits such as Panchpatmali in Koraput worked by NALCO. Copper comes mainly from Balaghat (Malanjkhand) in Madhya Pradesh, Khetri in Rajasthan and Singhbhum in Jharkhand, not Uttar Pradesh. NCERT names the Koderma–Gaya–Hazaribagh belt of Jharkhand as the leading mica area, with Ajmer and Nellore also important, and Rajasthan, not Jharkhand, leads in limestone.
+
+Q 123 | pol | Constitution & Rights
+Match List-I (Schedules) with List-II (Provisions/Functionaries) and select the correct answer using the codes given below:
+List-I (Schedule) | List-II (Specific Provisions/Functionaries)
+A. Second Schedule | 1. Forms of Oaths for Union Ministers and Judges of SC/HC
+B. Third Schedule | 2. Emoluments and Privileges of the President and Governors
+C. Fourth Schedule | 3. Allocation of seats in the Council of States (Rajya Sabha)
+D. Seventh Schedule | 4. Division of legislative powers between the Union and State governments
+(1) A-2, B-1, C-3, D-4
+(2) A-2, B-3, C-1, D-4
+(3) A-4, B-1, C-3, D-2
+(4) A-1, B-2, C-4, D-3
+= 1
+~ The Second Schedule lists the emoluments, allowances and privileges of the President, Governors, Speakers and Chairmen, judges and the CAG (A-2). The Third Schedule gives the forms of oaths or affirmations for Union and State ministers, MPs, MLAs, judges of the Supreme Court and High Courts and the CAG (B-1). The Fourth Schedule allocates Rajya Sabha seats to states and Union Territories (C-3), and the Seventh Schedule divides legislative powers through the Union, State and Concurrent Lists (D-4).
+
+Q 124 | cur | Awards, Books & Persons
+Who was awarded the 2025 Pulitzer Prize for Fiction for a novel that serves as a provocative and satirical reimagining of the life of Jim from Mark Twain’s 'Adventures of Huckleberry Finn'?
+(1) Percival Everett
+(2) Colson Whitehead
+(3) Paul Lynch
+(4) Hernan Diaz
+= 1
+~ The American writer Percival Everett won the 2025 Pulitzer Prize for Fiction, announced on 5 May 2025, for his novel "James" (2024). It retells Mark Twain's Adventures of Huckleberry Finn from the point of view of Jim, the enslaved man who flees with Huck, and the book also won the 2024 National Book Award for Fiction. Colson Whitehead won the fiction Pulitzer in 2017 and 2020, Hernan Diaz shared it in 2023, and Paul Lynch won the 2023 Booker Prize.
+
+Q 125 | ih | Art & Culture
+Which historical process is best reflected by the evolution of temple architecture in India?
+(1) Decline of indigenous art
+(2) Continuous interaction of religion and regional styles
+(3) Sudden cultural change
+(4) Foreign architectural dominance
+= 2
+~ Indian temple architecture grew gradually from the small flat-roofed shrines of the Gupta age, such as Sanchi Temple 17 and the Dashavatara temple at Deogarh, into regional styles: the Nagara of the north, the Dravida of the south and the mixed Vesara of the Deccan under the Chalukyas and Hoysalas. Each style reflects the interplay of religious traditions (Shaiva, Vaishnava, Jain), royal patrons, local materials and craftsmen over centuries, not a sudden change or a foreign model.
+
+Q 126 | cur | Sports
+India hosted the 2025 Men's FIH Hockey Junior World Cup. Which of the following correctly states the location, host city name, and timing of this event?
+(1) Bhubaneswar, Odisha, from November 15 to November 30, 2025
+(2) Lucknow, Uttar Pradesh, from December 1 to December 15, 2025
+(3) Chennai and Madurai, Tamil Nadu, from November 28 to December 10, 2025
+(4) New Delhi, at Major Dhyan Chand National Stadium, from December 20 to December 31, 2025
+= 3
+~ The 14th Men's FIH Hockey Junior World Cup was held in Tamil Nadu from 28 November to 10 December 2025, at the Mayor Radhakrishnan Stadium in Chennai and the new international hockey stadium in Madurai, and was the first edition with 24 teams. Germany won a record eighth title by beating Spain in a shoot-out in the final at Chennai, and India took the bronze by beating Argentina. India had earlier hosted the event at New Delhi (2013), Lucknow (2016, when India won) and Bhubaneswar (2021).
+
+Q 127 | sci | Science & Technology
+Read the below statements:
+1. NASA launched a space telescope, SPHEREx, to study the universe's "cosmic glow".
+2. The Major Atmospheric Cherenkov Experiment (MACE) telescope was inaugurated at Hanle, Ladakh.
+Which of the above statements is/are correct?
+(1) Only statement 2
+(2) Neither statement 1 nor 2
+(3) Statement 1 and 2 both
+(4) Only statement 1
+= 3
+~ NASA's SPHEREx infrared space telescope was launched on a Falcon 9 rocket from Vandenberg, California, on 11 March 2025; it maps the whole sky in 102 colours to study the faint total glow of all galaxies, cosmic inflation and interstellar ices. The Major Atmospheric Cherenkov Experiment (MACE), Asia's largest and the world's highest imaging Cherenkov telescope, built by BARC with ECIL, was inaugurated by the Department of Atomic Energy at Hanle, Ladakh, about 4,300 m high, on 4 October 2024 to study high-energy gamma rays.
+
+Q 128 | cur | Static GK & Culture
+Which of the following statements regarding 'Navroz' (Nowruz) is correct?
+(1) It is a lunar-based festival celebrated exclusively by the Buddhist community in the Himalayan belt.
+(2) It marks the start of the harvest season in Southern India and is dedicated to the Sun God.
+(3) It is a monsoon festival commemorating the victory of Good over Evil in the Mughal courts.
+(4) It is the Persian New Year celebrated on the Spring Equinox, introduced in India by Ghiyasuddin Balban.
+= 4
+~ Navroz (Nowruz, "new day") is the Persian New Year, celebrated at the spring (vernal) equinox around 21 March, and in India it is observed especially by the Parsi community; it is on UNESCO's intangible cultural heritage list. In the Delhi Sultanate, Ghiyasuddin Balban introduced the Persian festival of Nauroz at his court, along with sijda and paibos, to enhance royal prestige. Option 1 suits Losar and option 2 Pongal or Makar Sankranti.
+
+Q 129 | pol | Judiciary & Constitutional Bodies
+Regarding 'Hit and Run' cases under Section 106(2) of the Bharatiya Nyaya Sanhita, 2023 (BNS), what is the maximum punishment if an offender causes death by rash and negligent driving and fails to inform a 'police officer' or 'Magistrate'?
+(1) Imprisonment up to 10 years and a fine
+(2) Life imprisonment
+(3) Imprisonment up to 7 years and a fine
+(4) Imprisonment up to 5 years and a fine
+= 1
+~ Section 106(2) of the Bharatiya Nyaya Sanhita says that a person who causes death by rash and negligent driving not amounting to culpable homicide, and escapes without reporting it to a police officer or Magistrate soon after, faces imprisonment of up to 10 years and a fine. Section 106(1) punishes causing death by any rash or negligent act with up to five years. After the truckers' protests of January 2024, sub-section (2) was left out when the BNS came into force on 1 July 2024, and it was still not notified when this exam was held.
+
+Q 130 | cur | Awards, Books & Persons
+Dr. Bhupen Hazarika is famously known by which of the following titles, reflecting his deep connection to the geography and spirit of Assam?
+(1) Bard of Brahmaputra
+(2) Son of Brahmaputra
+(3) Kala Guru of Assam
+(4) Voice of Brahmaputra
+= 1
+~ Bhupen Hazarika (1926–2011), the Assamese singer, lyricist, composer and filmmaker from Sadiya, is called the "Bard of the Brahmaputra" because so many of his songs celebrate the river and the people living along it; Assamese admirers also call him "Sudhakantha" (nectar-voiced). He received the Dadasaheb Phalke Award and, posthumously, the Bharat Ratna (2019), and the Dhola–Sadiya bridge is named after him. "Kalaguru" is the title of Bishnu Prasad Rabha.
+
+Q 131 | comp | Software & Operating Systems
+Which mechanism handles the "Object Linking" in OLE by maintaining a persistent connection to a remote server's CLSID?
+(1) Binary Large Object (BLOB) indexing
+(2) Abstract Window Toolkit (AWT)
+(3) Simple Mail Transfer Protocol (SMTP)
+(4) Component Object Model (COM)
+= 4
+~ OLE (Object Linking and Embedding), Microsoft's technology for placing content made in one program (an Excel chart, say) inside another (a Word document), is built on the Component Object Model (COM). Each OLE server application registers a class identifier (CLSID), which COM uses to find and start it; a linked object keeps a reference (moniker) to its source file, so it can be updated or edited in the source program. BLOB is a database data type, AWT is a Java GUI toolkit and SMTP is an e-mail protocol.
+
+Q 132 | comp | Software & Operating Systems
+In Windows 10/11, which shortcut key combination allows a user to cycle through apps on the Taskbar in the order they are pinned?
+(1) Windows Key + T
+(2) Alt + Tab
+(3) Windows Key + Tab
+(4) Ctrl + Alt + Tab
+= 1
+~ Microsoft lists Windows logo key + T as "cycle through apps in the taskbar": each press moves the focus to the next taskbar button from left to right (Windows + Shift + T moves back), and Enter opens the selected app; Windows key + a number opens the app pinned at that position. Alt + Tab switches between open windows, Windows key + Tab opens Task View, and Ctrl + Alt + Tab shows thumbnails of open apps that stay on screen so you can pick one with the arrow keys.
+
+Q 133 | comp | Internet, Networking & Security
+In the OSI model, which layer is responsible for routing packets across different networks using logical addressing?
+(1) Data Link Layer
+(2) Session Layer
+(3) Network Layer
+(4) Transport Layer
+= 3
+~ The Network layer (Layer 3) of the seven-layer OSI model moves packets from source to destination across interconnected networks; it uses logical addresses such as IP addresses and chooses paths through routers. The Data Link layer (Layer 2) delivers frames within one network using physical (MAC) addresses, the Transport layer (Layer 4) gives end-to-end delivery, segmentation and error control using port numbers (TCP/UDP), and the Session layer (Layer 5) sets up, manages and ends dialogues between applications.
+
+Q 134 | comp | MS Office & Applications
+In Excel, which function would you use to count the number of cells in a range that meet a specific condition?
+(1) =COUNTIF(A1:A10, ">10")
+(2) =COUNTBLANK(A1:A10)
+(3) =COUNT(A1:A10)
+(4) =SUMIF(A1:A10, ">10")
+= 1
+~ COUNTIF(range, criteria) counts the cells in a range that satisfy one condition, so =COUNTIF(A1:A10, ">10") returns how many cells in A1:A10 hold values greater than 10 (COUNTIFS handles several conditions). COUNTBLANK counts empty cells, COUNT counts every cell that contains a number without any condition, and SUMIF(A1:A10, ">10") adds up the qualifying values instead of counting them, so it returns a total, not a count.
+
+Q 135 | comp | Internet, Networking & Security
+Which of the following is a secure method for encrypting emails to protect the content from unauthorized access?
+(1) S/MIME
+(2) IMAP
+(3) SSL
+(4) SMTP
+= 1
+~ S/MIME (Secure/Multipurpose Internet Mail Extensions) uses public-key certificates to encrypt the body and attachments of an e-mail and to add a digital signature, so only the intended recipient, who holds the private key, can read it; PGP is a similar standard. SSL/TLS encrypts only the connection between mail client and server while the message travels, not the message itself. IMAP is a protocol for retrieving mail from a server and SMTP is the protocol for sending it; neither encrypts content by itself.
+
+Q 136 | comp | Computer Basics & Hardware
+During the Instruction Cycle, which specific register holds the instruction that is currently being decoded and executed by the CPU?
+(1) Memory Address Register (MAR)
+(2) Program Counter (PC)
+(3) Instruction Register (IR)
+(4) Accumulator (AC)
+= 3
+~ In the fetch-decode-execute cycle, the instruction fetched from memory is placed in the Instruction Register (IR), where the control unit decodes it and generates the signals to execute it. The Program Counter (PC) holds the address of the next instruction to be fetched, the Memory Address Register (MAR) holds the address of the memory location being read or written, and the Accumulator (AC) holds data and intermediate results of arithmetic and logic operations.
+
+Q 137 | comp | MS Office & Applications
+A text box moves out of place when content is edited during a presentation. Which design mistake MOST likely caused this?
+(1) Using default layout
+(2) Not using placeholders
+(3) Using placeholders instead of text boxes
+(4) Slide Master modification
+= 2
+~ In PowerPoint, placeholders are the content boxes defined by the slide layout and Slide Master; their position, size and formatting come from the layout, and overflowing text is auto-fitted inside them. Content typed into separately drawn text boxes is not tied to the layout, so such a box can grow, shift or overlap other objects when its text is edited. Using placeholders is therefore good practice (option 3 is the remedy, not the mistake), and default layouts and Slide Master changes keep slides consistent.
+
+Q 138 | comp | Computer Basics & Hardware
+What is the primary architectural advantage of a Microprogrammed Control Unit over a Hardwired one?
+(1) Lower power consumption
+(2) Ease of instruction set updates
+(3) Faster execution speed
+(4) Reduced physical gate count
+= 2
+~ A microprogrammed control unit generates control signals from microinstructions stored in a control memory (ROM), so instructions can be added or changed simply by rewriting the microprogram; this flexibility suits complex (CISC) instruction sets. A hardwired control unit produces the signals with fixed logic circuits (decoders, gates, flip-flops); it is faster, which is why RISC processors favour it, but changing the instruction set means redesigning the circuit. Faster execution is thus the hardwired unit's advantage, not the microprogrammed one's.
+
+Q 139 | comp | MS Office & Applications
+A teacher wants to view only students who scored above 75 marks without deleting other records. Which Excel tool is best?
+(1) Remove Duplicates
+(2) Freeze Panes
+(3) Sort
+(4) Filter
+= 4
+~ Filter (Data > Filter, also called AutoFilter) temporarily hides the rows that do not meet a condition, for example a Number Filter "Greater Than 75" on the marks column; the hidden records stay in the sheet and reappear when the filter is cleared. Sort only rearranges all the rows in order, Freeze Panes keeps header rows or columns visible while scrolling, and Remove Duplicates permanently deletes repeated rows, so only Filter shows the required students without losing other data.
+
+Q 140 | comp | MS Office & Applications
+In Excel’s "Edit Mode," which keyboard shortcut allows you to insert a manual line break within a single cell to manage long text strings or multi-line formulas?
+(1) Ctrl + Enter
+(2) Shift + Enter
+(3) Alt + Enter
+(4) Tab + Enter
+= 3
+~ Microsoft's list of Excel shortcuts gives Alt + Enter as "start a new line in the same cell": while typing or editing a cell, it inserts a manual line break, which helps to display long text or to split a long formula into readable lines. Ctrl + Enter fills all the selected cells with the current entry, Shift + Enter completes the entry and moves to the cell above, and Tab completes the entry and moves one cell to the right; Tab + Enter is not an Excel shortcut.
+
+Q 141 | comp | Internet, Networking & Security
+What is the main purpose of a Trojan horse in network and information security?
+(1) To steal or delete files and create a backdoor for hackers
+(2) To intercept network traffic by flooding communication channels
+(3) To block network traffic by overwhelming servers
+(4) To silently copy itself to other systems using network vulnerabilities
+= 1
+~ A Trojan horse is malware disguised as useful or legitimate software; once the user installs it, it carries out hidden harmful actions such as stealing passwords and files, deleting or altering data, or opening a backdoor (a remote-access Trojan) that lets attackers control the system. Unlike a virus or worm it does not replicate itself. Copying itself across a network through vulnerabilities (option 4) describes a worm, and flooding channels or overwhelming servers (options 2 and 3) describes denial-of-service attacks.
+
+Q 142 | comp | Computer Basics & Hardware
+In asynchronous serial communication, what is the role of "Hardware Handshaking" (e.g., using RTS/CTS lines)?
+(1) To synchronize the internal clocks of both devices
+(2) To encrypt data before transmission
+(3) To provide error detection using parity bits
+(4) To prevent data loss by managing buffer overflow
+= 4
+~ Hardware handshaking is flow control done over extra wires of a serial (RS-232) interface. The sender raises RTS (Request To Send) and transmits only while the receiver raises CTS (Clear To Send); when the receiver's buffer is nearly full it drops CTS and the sender pauses, so no characters are lost to buffer overrun. Asynchronous links use start and stop bits rather than a shared clock, parity bits handle error detection, and handshaking does no encryption. Software flow control (XON/XOFF) does the same job with special characters.
+
+Q 143 | comp | Software & Operating Systems
+What is the main purpose of using a file compression technique before uploading to cloud storage?
+(1) To convert the file into a secure format
+(2) To reduce the file size and save storage space
+(3) To encrypt the file
+(4) To make the file readable across different devices
+= 2
+~ Compression (for example ZIP, RAR or 7z archives, or lossy formats such as JPEG and MP3) encodes data in fewer bits by removing redundancy, so the file becomes smaller: it takes less of the cloud storage quota, uploads and downloads faster and uses less bandwidth. Compression by itself is not encryption or a security measure (some archive tools merely add optional password protection), and it does not make a file readable on more devices, since the receiver needs a tool to decompress it.
+
+Q 144 | comp | MS Office & Applications
+When a user creates a 'Section Break (Next Page)' in a long document, which of the following attributes can be uniquely modified for the new section without affecting the previous one?
+(1) The 'AutoCorrect' replacement list
+(2) Page orientation and margin settings
+(3) The font face of the 'Normal' style
+(4) The document’s 'Properties' metadata
+= 2
+~ A section break divides a Word document into parts that can have their own page layout. A Next Page break starts the new section on a new page, and that section can be given its own orientation (portrait or landscape), margins, paper size, columns, headers and footers and page numbering, for example a landscape page for a wide table. The AutoCorrect list is an application-wide setting, the Normal style belongs to the whole document or template, and Properties metadata (title, author) describes the entire file, so none of them can differ by section.
+
+Q 145 | comp | Internet, Networking & Security
+What is the primary benefit of enabling encryption for data in transit on a network?
+(1) It ensures that data is unreadable to attackers during transmission
+(2) It protects against physical theft of devices
+(3) It improves the overall speed of data transfer
+(4) It prevents unauthorized users from accessing the network
+= 1
+~ Encrypting data in transit, for example with TLS (HTTPS), SSH or a VPN, turns it into ciphertext while it travels, so anyone who intercepts the packets by eavesdropping or a man-in-the-middle attack cannot read it, and integrity checks reveal tampering. It does not stop people from joining the network (authentication and access control do that), theft of a device is addressed by encrypting data at rest such as full-disk encryption, and encryption adds a little processing overhead rather than speeding up transfers.
+
+Q 146 | comp | MS Office & Applications
+You are editing a 50-page thesis. The heading font size changes automatically whenever you modify one heading. You want only the selected heading to change, not all similar headings. What should you do?
+(1) Apply Direct Formatting
+(2) Use Format Painter
+(3) Modify the Style
+(4) Change the Theme
+= 1
+~ Word headings use styles (Heading 1, Heading 2 and so on), so changing a style changes every heading that uses it; here a change to one heading is being carried into the style, usually because its "Automatically update" option is on. Direct (manual) formatting, such as changing the font size from the Home tab for the selected text only, affects that heading alone and overrides the style there (clear "Automatically update" in Modify Style first if it is ticked). Modify the Style and Change the Theme affect all headings, and Format Painter only copies existing formatting.
+
+Q 147 | comp | Computer Basics & Hardware
+When comparing HDMI and DisplayPort, which feature is unique to the DisplayPort architecture?
+(1) Daisy Chaining (MST)
+(2) Ethernet over cable
+(3) TMDS signaling
+(4) Uncompressed audio
+= 1
+~ DisplayPort 1.2 introduced Multi-Stream Transport (MST), which sends several independent video streams down one cable so that monitors can be daisy-chained from a single port; HDMI has no equivalent. TMDS (Transition-Minimized Differential Signaling) is the signalling used by DVI and HDMI, whereas DisplayPort sends its data in packets. The HDMI Ethernet Channel (from HDMI 1.4) carries Ethernet over an HDMI cable, and both interfaces carry uncompressed multichannel digital audio.
+
+Q 148 | comp | Computer Basics & Hardware
+A computer system has a memory capacity of 4K × 8 bits. How many address lines are required on the address bus to identify every byte in this memory uniquely?
+(1) 12 lines
+(2) 8 lines
+(3) 10 lines
+(4) 16 lines
+= 1
+~ 4K × 8 means 4K locations, each 8 bits (1 byte) wide. 4K = 4 × 1024 = 4096 = 2¹² locations, and n address lines can select 2ⁿ different locations, so 12 address lines are needed (2¹² = 4096). The "× 8" is the word size, which fixes the width of the data bus (8 data lines), not the number of address lines. For comparison, 10 lines address 1K (1024) locations and 16 lines address 64K locations.
+
+Q 149 | comp | Software & Operating Systems
+In enterprise storage, how does a "Copy-on-Write" (CoW) snapshot differ from a traditional backup?
+(1) It only stores pointers to data blocks until those blocks are modified.
+(2) It is stored on a physically separate secondary device.
+(3) It requires the system to be offline during the process.
+(4) It creates a full bit-by-bit clone of the data immediately.
+= 1
+~ A copy-on-write snapshot is created almost instantly by recording metadata (pointers) to the existing data blocks instead of copying them. Only when a block is about to be changed is its original content copied to the snapshot area first, so the snapshot uses space only for changed blocks and can be taken while the system stays online. A traditional backup copies the full data to separate media such as tape, another disk or the cloud; because a snapshot depends on the original volume, it is not a substitute for a real backup.
+
+Q 150 | comp | Internet, Networking & Security
+Which of the following is a limitation of using symmetric encryption for securing communications?
+(1) It requires more computational resources than asymmetric encryption
+(2) The encryption and decryption process is too slow
+(3) Key distribution and management become challenging
+(4) It cannot be used for data at rest
+= 3
+~ Symmetric encryption (AES, DES) uses one shared secret key for both encryption and decryption, so the key must reach every party over a secure channel, and n users need n(n−1)/2 separate keys; this key distribution and management problem is its main limitation. It is actually much faster and lighter than asymmetric (public-key) encryption, which is why TLS uses public-key methods only to exchange a symmetric session key, and it is widely used for data at rest, such as disk encryption.

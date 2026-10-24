@@ -1,0 +1,1537 @@
+# SSC Combined Graduate Level Examination 2024, Tier-II, Paper I, held 18 January 2025 (9:00 AM - 12:00 PM). 150 questions, 450 marks, 2 hours 15 minutes.
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via AglaSem); answers are the options SSC ticked as correct on that sheet (answer-key stage). The Hindi text is from a second candidate's sheet of the same exam, with the options put in the English order. Explanations by Learn with Anil.
+
+Q 1 | qa | Algebra
+Find the value of Y, if X − 2Y + 2Z = 16, X − Y + Z = 9 and 2X − 3Y − Z = 9.
+(1) 2
+(2) −3
+(3) −4
+(4) 4
+= 2
+~ Subtract the second equation from the first: (X − 2Y + 2Z) − (X − Y + Z) = 16 − 9, so −Y + Z = 7, i.e. Z = Y + 7. Put this in the second equation: X − Y + (Y + 7) = 9, so X = 2. Now the third equation: 2(2) − 3Y − (Y + 7) = 9 gives −4Y = 12, so Y = −3 (and Z = 4). Check in the first: 2 + 6 + 8 = 16.
+
+Q 2 | qa | Algebra
+(a⁷ × b⁸ × c⁷)/(a⁹ × b⁵ × c⁴) in simplified form is:
+(1) (a⁰) × (b²) × (c¹)
+(2) (a⁻⁷) × (b²) × (c⁻⁴)
+(3) (a⁻²) × (b³) × (c³)
+(4) (a⁻⁵) × (b⁻⁸) × (c⁰)
+= 3
+~ When powers of the same base are divided, subtract the exponents: aᵐ/aⁿ = aᵐ⁻ⁿ. So a⁷/a⁹ = a⁷⁻⁹ = a⁻², b⁸/b⁵ = b⁸⁻⁵ = b³ and c⁷/c⁴ = c⁷⁻⁴ = c³. The expression is therefore (a⁻²) × (b³) × (c³), which can also be written b³c³/a². Only option 3 has all three exponents right.
+
+Q 3 | qa | Percentage, Profit & Interest
+A man buys 10 identical articles for a total of ₹15. If he sells each of them for ₹1.7, then his profit percentage will be ______% (rounded off to two decimal place).
+(1) 14.33
+(2) 12.76
+(3) 13.33
+(4) 11.76
+= 3
+~ Cost price of one article = ₹15/10 = ₹1.50 and selling price = ₹1.70, so the profit on each article = ₹0.20. Profit % = (profit/CP) × 100 = (0.20/1.50) × 100 = 40/3 = 13.33%. In totals: SP of 10 articles = ₹17, profit = ₹2 on a cost of ₹15, again 13.33%. Option 11.76 is the slip of dividing the profit by the selling price (2/17) instead of the cost price.
+
+Q 4 | qa | Time, Work, Speed & Distance
+Rani and Adya, working separately, can finish a task in 12 days and 16 hours, respectively. They work in stretches of one day alternately. If Rani starts working first, then the task will be completed in
+(1) 12 1/3 days
+(2) 13 2/3 days
+(3) 13 1/3 days
+(4) 12 2/3 days
+= 2
+~ The keyed answer works only if Adya's time is 16 days; with 16 hours as printed, the task would end on day 2 (after 1 11/18 days), which is not an option. Taking 16 days: Rani does 1/12 and Adya 1/16 of the task per day, so each two-day pair does 1/12 + 1/16 = 7/48. After 6 pairs (12 days), 42/48 is done. Day 13 (Rani) adds 4/48, leaving 2/48; Adya does 3/48 a day, so she needs 2/3 of day 14. Total = 13 2/3 days. (SSC key; some sources differ.)
+
+Q 5 | qa | Trigonometry & Heights
+Let ABC be a right-angled triangle with a right angle at B. If tan A = √3, then find the value of sin A cos C + cos A sin C and cos A cos C − sin A sin C.
+(1) √3/2, 1/2
+(2) √3/2, √3/2
+(3) 1/2, 1/2
+(4) 1, 0
+= 4
+~ tan A = √3 gives A = 60°, and since B = 90°, C = 180° − 90° − 60° = 30°. The first expression is sin(A + C) = sin 90° = 1 and the second is cos(A + C) = cos 90° = 0. Direct check: sin A cos C + cos A sin C = (√3/2)(√3/2) + (1/2)(1/2) = 3/4 + 1/4 = 1, and cos A cos C − sin A sin C = (1/2)(√3/2) − (√3/2)(1/2) = 0. So the values are 1, 0.
+
+Q 6 | qa | Percentage, Profit & Interest
+Find the simple interest (in ₹) on ₹2000 at 6.5% per annum rate of interest for the period from 14 February 2023 to 28 April 2023
+(1) 24
+(2) 27
+(3) 26
+(4) 25
+= 3
+~ Count the days, leaving out the starting day and counting the last day: February 14 days (15th to 28th; 2023 is not a leap year), March 31 days, April 28 days, total 73 days. Time = 73/365 = 1/5 year. Simple interest = P × R × T/100 = 2000 × 6.5 × (1/5)/100 = ₹26. The usual SSC rule is to count either the first day or the last day, not both.
+
+Q 7 | qa | Data Interpretation & Statistics
+Let A and B be two players who are playing the game to hit the target. The probabilities of hitting the target by A and B is 2/3 and 3/4, respectively. What is the probability that exactly one of them hit the target?
+(1) 7/12
+(2) 1/4
+(3) 1/12
+(4) 5/12
+= 4
+~ Exactly one hits in two ways, which cannot happen together: A hits and B misses, or A misses and B hits. P = (2/3)(1 − 3/4) + (1 − 2/3)(3/4) = (2/3)(1/4) + (1/3)(3/4) = 2/12 + 3/12 = 5/12. For comparison, both hit = 6/12 = 1/2 and both miss = 1/12 (option 3); together with 5/12 these add up to 1.
+
+Q 8 | qa | Trigonometry & Heights
+If tan(x + y)tan(x − y) = 1, then find the value of tanx.
+(1) √3
+(2) 1/√3
+(3) 1
+(4) 1/(2√3)
+= 3
+~ tan(x + y)tan(x − y) = 1 means tan(x + y) = 1/tan(x − y) = cot(x − y) = tan(90° − (x − y)). For acute angles, x + y = 90° − x + y, so 2x = 90° and x = 45°. Hence tan x = tan 45° = 1, whatever the value of y. (This uses the rule that if tan P × tan Q = 1, then P + Q = 90°.)
+
+Q 9 | qa | Percentage, Profit & Interest
+The population of a place increased to 50,000 from 2016 to 2018 at the rate of 6% per annum, and continued the same trend for the next 3 years. If A is the population in 2016 and B is the population in 2020, both are approximated to the next possible integers, then the value of B − A is:
+(1) 11680
+(2) 16270
+(3) 13220
+(4) 12850
+= 1
+~ From 2016 to 2018 is two years of 6% compound growth: A × (1.06)² = 50,000, so A = 50,000/1.1236 = 44,499.8…, which rounds up to 44,500. The same growth continues for two more years to 2020: B = 50,000 × (1.06)² = 50,000 × 1.1236 = 56,180. B − A = 56,180 − 44,500 = 11,680. (The third year of the trend, 2021, is not needed.)
+
+Q 10 | qa | Percentage, Profit & Interest
+By how much is 60% of 75 greater than 1/5 of 25?
+(1) 37
+(2) 38
+(3) 40
+(4) 34
+= 3
+~ 60% of 75 = (60/100) × 75 = 0.6 × 75 = 45. One-fifth of 25 = 25/5 = 5. The difference = 45 − 5 = 40. So 60% of 75 exceeds 1/5 of 25 by 40. A quick check: 60% of 75 is the same as 75% of 60, which is 45.
+
+Q 11 | qa | Data Interpretation & Statistics
+Find the median of the following data. (Rounded off to 2 decimal places.)
+Class interval | 0-5 | 5-10 | 10-15 | 15-20 | 20-25 | 25-30 | 30-35
+Frequency | 3 | 5 | 4 | 2 | 7 | 6 | 5
+(1) 21.43
+(2) 23.40
+(3) 20.53
+(4) 18.64
+= 1
+~ Total frequency N = 3 + 5 + 4 + 2 + 7 + 6 + 5 = 32, so N/2 = 16. Cumulative frequencies: 3, 8, 12, 14, 21, 27, 32; the 16th value lies in class 20-25. Median = L + [(N/2 − cf)/f] × h, with L = 20, cf = 14 (before the class), f = 7 and h = 5. Median = 20 + (16 − 14)/7 × 5 = 20 + 10/7 = 21.43.
+
+Q 12 | qa | Data Interpretation & Statistics
+Using empirical formula, calculate the mode for the following data.
+17, 20, 21, 18, 25, 28, 24, 22, 16, 24, 25, 24
+(1) 25.8
+(2) 32
+(3) 25
+(4) 30.6
+= 3
+~ The empirical relation is Mode = 3 Median − 2 Mean. The 12 values add up to 264, so mean = 22. In order: 16, 17, 18, 20, 21, 22, 24, 24, 24, 25, 25, 28; the median is the average of the 6th and 7th values = (22 + 24)/2 = 23. Mode = 3 × 23 − 2 × 22 = 69 − 44 = 25. (The most frequent value is actually 24, but the question asks for the empirical formula.)
+
+Q 13 | qa | Percentage, Profit & Interest
+On the occasion of Republic Day, a retail store offers a scheme where customers can avail a discount of 26% on their total purchase. If Manish buys items worth ₹2,050, how much money (in ₹) will he save through the scheme discount?
+(1) 533
+(2) 544
+(3) 522
+(4) 511
+= 1
+~ The money saved is the discount itself: 26% of ₹2,050 = 0.26 × 2,050 = ₹533. A quick way: 25% of 2,050 = 512.50 and 1% = 20.50, so 26% = 512.50 + 20.50 = ₹533. He would then pay 2,050 − 533 = ₹1,517.
+
+Q 14 | qa | Geometry
+ΔABC is inscribed in a circle with Centre O. If AB = 21 cm, BC = 20 cm and AC = 29 cm, then what is the length of the circumradius of the triangle?
+(1) 32.5 cm
+(2) 13.5 cm
+(3) 21.5 cm
+(4) 14.5 cm
+= 4
+~ AB² + BC² = 21² + 20² = 441 + 400 = 841 = 29² = AC², so the triangle is right-angled at B (a 20-21-29 Pythagorean triple). The hypotenuse of a right triangle is a diameter of its circumcircle (angle in a semicircle), so the circumradius = AC/2 = 29/2 = 14.5 cm. Check with R = abc/(4 × area) = (21 × 20 × 29)/(4 × 210) = 14.5 cm.
+
+Q 15 | qa | Number System & Simplification
+The value of 4³ − 0² + (22/2)² − 8 + 7 × 6 = ______
+(1) 224
+(2) 229
+(3) 219
+(4) 218
+= 3
+~ Follow BODMAS: first the bracket, 22/2 = 11; then the powers, 4³ = 64, 0² = 0 and 11² = 121; then the multiplication, 7 × 6 = 42. Finally add and subtract from left to right: 64 − 0 + 121 − 8 + 42 = 219. Taking 0² as 1 by mistake gives 218, one of the nearby wrong options.
+
+Q 16 | qa | Ratio, Average & Mixtures
+A sum of money is to be distributed among 3 friends P, Q and R in the proportion of 5 : 3 : 4. If P gets ₹1,500 more than R, what is Q's share?
+(1) ₹4,950
+(2) ₹4,680
+(3) ₹5,100
+(4) ₹4,500
+= 4
+~ Let the shares be P = 5k, Q = 3k and R = 4k. P gets more than R by 5k − 4k = k, so k = ₹1,500. Q's share = 3k = 3 × 1,500 = ₹4,500. The whole sum is 12k = ₹18,000, with P = ₹7,500 and R = ₹6,000 (difference ₹1,500, as given).
+
+Q 17 | qa | Ratio, Average & Mixtures
+The average of first 91 even numbers is
+(1) 92
+(2) 90
+(3) 91
+(4) 93
+= 1
+~ The first 91 even numbers are 2, 4, 6, …, 182 (the last is 2 × 91). They form an arithmetic progression, so the average = (first + last)/2 = (2 + 182)/2 = 92. In general, the sum of the first n even numbers is n(n + 1), so their average is n + 1 = 91 + 1 = 92. Option 91 would be the average of the first 91 odd numbers (1 to 181), not of the even numbers.
+
+Q 18 | qa | Ratio, Average & Mixtures
+If the average age of three persons is 56 years and their ages are in the ratio 2 : 5 : 7, then find the age of the youngest person.
+(1) 20 years
+(2) 22 years
+(3) 24 years
+(4) 26 years
+= 3
+~ Total of the three ages = 3 × 56 = 168 years. The ratio 2 : 5 : 7 has 2 + 5 + 7 = 14 parts, so one part = 168/14 = 12 years. The youngest person has the smallest share, 2 parts = 2 × 12 = 24 years (the others are 60 and 84 years). Check: (24 + 60 + 84)/3 = 168/3 = 56.
+
+Q 19 | qa | Trigonometry & Heights
+If (secθ − tanθ)/(secθ + tanθ) = 1/9, θ lies in the first quadrant, then the value of (sinθ − tan²θ)/(sinθ + tan²θ) is:
+(1) −13/27
+(2) −11/29
+(3) 13/27
+(4) 11/29
+= 2
+~ Since sec²θ − tan²θ = 1, (secθ − tanθ)(secθ + tanθ) = 1. Let secθ + tanθ = s; then secθ − tanθ = 1/s, and the ratio is 1/s² = 1/9, so s = 3. Then secθ = (3 + 1/3)/2 = 5/3 and tanθ = (3 − 1/3)/2 = 4/3, so sinθ = tanθ/secθ = 4/5 and tan²θ = 16/9. Value = (4/5 − 16/9)/(4/5 + 16/9) = (36 − 80)/(36 + 80) = −44/116 = −11/29.
+
+Q 20 | qa | Geometry
+If the areas of two similar triangles are in the ratio 121 : 225, what would be the ratio of the corresponding sides?
+(1) 9 : 11
+(2) 11 : 15
+(3) 15 : 13
+(4) 11 : 13
+= 2
+~ For similar triangles, the ratio of their areas equals the square of the ratio of their corresponding sides. So the ratio of the sides = √121 : √225 = 11 : 15. Check: 11² : 15² = 121 : 225. Note that the order is kept: the first triangle has the smaller area, so it also has the shorter sides; 15 : 13 and 11 : 13 do not square to the given ratio.
+
+Q 21 | qa | Mensuration
+A toy is in the form of a cone mounted on a hemisphere. The radius of the hemisphere and that of the cone is 36 cm and height of the cone is 105 cm. The total surface area (in cm²) of the toy is:
+(1) 6588 π
+(2) 5240 π
+(3) 6025 π
+(4) 5799 π
+= 1
+~ Slant height of the cone l = √(36² + 105²) = √(1296 + 11025) = √12321 = 111 cm. The outer surface of the toy is the curved surface of the cone plus the curved surface of the hemisphere (the joined circular faces are hidden): πrl + 2πr² = π × 36 × 111 + 2π × 36² = 3996π + 2592π = 6588π cm².
+
+Q 22 | qa | Ratio, Average & Mixtures
+Anil and Beena are friends, and the difference between their ages is 5 years. Anil’s father Dinesh is three times as old as Anil, and Beena is twice as old as her sister Charu. The ages of Dinesh and Charu differ by 45 years. If Beena is older than Anil, then find the sum of the present ages of both Dinesh and Charu.
+(1) 78 years
+(2) 69 years
+(3) 91 years
+(4) 100 years
+= 2
+~ Let Anil be A years old. Beena is older, so Beena = A + 5 and Charu = (A + 5)/2; Dinesh = 3A. Dinesh is the older of Dinesh and Charu, so 3A − (A + 5)/2 = 45, i.e. 6A − A − 5 = 90 and A = 19. Then Dinesh = 57, Beena = 24 and Charu = 12. Check: 57 − 12 = 45. Sum of the ages of Dinesh and Charu = 57 + 12 = 69 years.
+
+Q 23 | qa | Time, Work, Speed & Distance
+On a 2200 m long circular track, Sarita and Kavita drove their cycles from the same point but in opposite direction with the speeds 20 km/hr and 16 km/hr, respectively. After how much time will they meet again for the first time?
+(1) 2 minutes 20 seconds
+(2) 3 minutes 20 seconds
+(3) 2 minutes 50 seconds
+(4) 3 minutes 40 seconds
+= 4
+~ Moving in opposite directions, they close the gap at the sum of their speeds: 20 + 16 = 36 km/hr = 36 × 5/18 = 10 m/s. They meet for the first time when together they have covered one full round of 2200 m. Time = 2200/10 = 220 seconds = 3 minutes 40 seconds. (Riding in the same direction would use the difference, 4 km/hr, and take much longer.)
+
+Q 24 | qa | Algebra
+If x = 8 + √5 and y = 8 − √5 then the value of x² + y² is:
+(1) 138
+(2) 143
+(3) 140
+(4) 124
+= 1
+~ (8 + √5)² = 64 + 16√5 + 5 and (8 − √5)² = 64 − 16√5 + 5; adding, the √5 terms cancel and x² + y² = 2(64 + 5) = 138. Another way: x + y = 16 and xy = 8² − (√5)² = 64 − 5 = 59, so x² + y² = (x + y)² − 2xy = 256 − 118 = 138.
+
+Q 25 | qa | Ratio, Average & Mixtures
+Vessel A contains milk and water in the ratio 4 : 5. Vessel B contains milk and water in the ratio 2 : 1. If x litres mixture of A is mixed with y litres mixture of B, then the ratio of milk to water in the mixture becomes 8 : 5. Find the ratio x : y.
+(1) 3 : 10
+(2) 5 : 6
+(3) 2 : 5
+(4) 3 : 4
+= 1
+~ Fraction of milk: A = 4/9, B = 2/3, final mixture = 8/13. By alligation, x : y = (2/3 − 8/13) : (8/13 − 4/9) = (2/39) : (20/117) = (6/117) : (20/117) = 3 : 10. Check with x = 3 litres and y = 10 litres: milk = 4/3 + 20/3 = 8 litres and water = 5/3 + 10/3 = 5 litres, giving 8 : 5.
+
+Q 26 | qa | Mensuration
+Find the volume (in cm³, rounded off to 2 decimal places) of a right circular cone of diameter 12 cm and height 5 cm. [Use π = 22/7]
+(1) 188.57
+(2) 197.25
+(3) 147.23
+(4) 156.39
+= 1
+~ The radius is half the diameter: r = 12/2 = 6 cm, and h = 5 cm. Volume of a cone = (1/3)πr²h = (1/3) × (22/7) × 6² × 5 = (1/3) × (22/7) × 180 = 1320/7 = 188.571… ≈ 188.57 cm³. Taking 12 cm as the radius by mistake would give four times this value, which is not among the options.
+
+Q 27 | qa | Mensuration
+The height of a right circular cone is 63 cm and the area of its curved surface is five times the area of its base. What is the volume (in cm³) of the cone? (Use π = 22/7)
+(1) 12589.10
+(2) 13540.25
+(3) 11234.65
+(4) 10914.75
+= 4
+~ Curved surface = 5 × base area: πrl = 5πr², so the slant height l = 5r. Then h² = l² − r² = 25r² − r² = 24r², so r² = 63²/24 = 3969/24 = 165.375. Volume = (1/3)πr²h = (1/3) × (22/7) × 165.375 × 63 = 22 × 165.375 × 3 = 10914.75 cm³ (the 63 cancels with 3 × 7).
+
+Q 28 | qa | Number System & Simplification
+(∛6859/∜1296) × (3/57) × 42 = ?
+(1) 7
+(2) 16
+(3) −3
+(4) 17
+= 1
+~ 19³ = 6859, so ∛6859 = 19; 6⁴ = 1296, so ∜1296 = 6. The expression becomes (19/6) × (3/57) × 42. Since 57 = 3 × 19, the factor 3/57 equals 1/19 and cancels the 19, leaving (1/6) × 42 = 7. In full: (19 × 3 × 42)/(6 × 57) = 2394/342 = 7.
+
+Q 29 | qa | Geometry
+In a triangle HJK, HJ = HK. G is a point on HJ such that HG = GK = JK. What is the degree measure of two-third of (∠HGK + ∠GKJ)?
+(1) 96°
+(2) 136°
+(3) 84°
+(4) 90°
+= 1
+~ Let ∠H = x. HG = GK gives ∠GKH = x, so the exterior angle ∠KGJ = 2x. GK = JK gives ∠GJK = ∠KGJ = 2x. HJ = HK gives ∠HKJ = ∠HJK = 2x. Angle sum in ΔHJK: x + 2x + 2x = 180°, so x = 36°. Then ∠HGK = 180° − 2x = 108° and ∠GKJ = ∠HKJ − ∠HKG = 72° − 36° = 36°. Two-thirds of (108° + 36°) = (2/3) × 144° = 96°.
+
+Q 30 | qa | Algebra
+Simplify (5z − 12y)² + (12z + 5y)² − 144z²
+(1) 25z² + 169y²
+(2) 23z² + 174y²
+(3) 30z² + 170y²
+(4) 23z² + 177y²
+= 1
+~ Expand each square: (5z − 12y)² = 25z² − 120yz + 144y² and (12z + 5y)² = 144z² + 120yz + 25y². Adding them, the ±120yz terms cancel: 169z² + 169y². Subtracting 144z² leaves 25z² + 169y². Shortcut: (pz − qy)² + (qz + py)² = (p² + q²)(z² + y²), here 169(z² + y²).
+
+Q 31 | rea | Non-verbal Reasoning
+Six letters P, Q, S, T, U and V are written on different faces of a dice. Two positions of this dice are shown in the figure. Find the letter on the face opposite to T.
+(1) V
+(2) P
+(3) S
+(4) U
+= 2
+! img/c24t2-q31.png
+~ T is shown in both positions: first with V and Q, then with S and U. Every face seen together with T is adjacent to it, so V, Q, S and U are the four faces next to T. Of the six letters only P is left, so P must be on the face opposite T. V, S and U touch T in one of the two views, so none of them can be opposite it.
+
+Q 32 | rea | Miscellaneous Reasoning
+Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.
+1. Design 2. Test 3. Conceptualize 4. Develop 5. Implement
+(1) 1, 4, 5, 3, 2
+(2) 3, 1, 4, 2, 5
+(3) 3, 5, 2, 4, 1
+(4) 3, 1, 5, 4, 2
+= 2
+~ A product or project moves through fixed stages: first the idea is conceptualized (3), then it is designed (1), then it is developed or built (4), then what has been built is tested (2), and finally it is implemented (5). So the logical order is 3, 1, 4, 2, 5. Option 4 (3, 1, 5, 4, 2) is wrong because it implements the product before developing and testing it.
+
+Q 33 | rea | Non-verbal Reasoning
+Four of the following five figures are alike in a certain way and thus form a group. Which is the one that does NOT belong to that group?
+(1) A
+(2) B
+(3) C
+(4) D
+= 3
+! img/c24t2-q33.png
+~ Each figure has a symbol on the left and two copies of it on the right. In A, B, D and E both right-hand copies are the left symbol turned 90° clockwise, so they are identical: T becomes ⊣, the arrow → becomes ↓, the A points to the right and the cup opens to the right. In C the dot-and-fork symbol is turned clockwise at the top right (dot above, fork below) but anticlockwise at the bottom right (fork above, dot below). So C does not belong.
+
+Q 34 | rea | Analogy & Classification
+Which of the following letter-clusters should replace # and % so that the pattern and relationship followed between the letter-cluster pair on the left side of :: is the same as that on the right side of ::?
+# : XAF :: SVA : %
+(1) # = BBJ % = ORW
+(2) # = BEJ % = QRW
+(3) # = BEJ % = ORP
+(4) # = BEJ % = ORW
+= 4
+~ With # = BEJ, each letter moves 4 places back to give the second cluster: B − 4 = X, E − 4 = A and J − 4 = F, giving XAF. Apply the same rule to SVA: S − 4 = O, V − 4 = R and A − 4 = W (counting back past A to Z). So % = ORW. BBJ would give XXF, and QRW and ORP do not follow the −4 rule, so the answer is # = BEJ, % = ORW.
+
+Q 35 | rea | Series
+Select the number from among the given options that can replace the question mark (?) in the following series.
+9, 5, 6, 10.5, 23, ?
+(1) 80
+(2) 90
+(3) 60
+(4) 50
+= 3
+~ Each term is multiplied by a number and the same number is then added, and this number rises by 0.5 at every step: 9 × 0.5 + 0.5 = 5; 5 × 1 + 1 = 6; 6 × 1.5 + 1.5 = 10.5; 10.5 × 2 + 2 = 23. So the next term is 23 × 2.5 + 2.5 = 57.5 + 2.5 = 60.
+
+Q 36 | rea | Non-verbal Reasoning
+Identify the figure given in the options which when put in place of the question mark (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/c24t2-q36.png
+~ The symbols *, ● and ⊥ sit at the top-left, top-middle and centre, and each moves one step every time: top-left → top-middle → centre → top-left. Figures 1 to 4 read (*, ●, ⊥), (⊥, *, ●), (●, ⊥, *), (*, ●, ⊥). The arrow alternates between ↓ at the bottom-right and ↑ at the top-right. So the fifth figure has ⊥ at the top-left, * at the top-middle, ● at the centre and ↓ at the bottom-right, which is option 4.
+
+Q 37 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given combination when the mirror is placed at line MN as shown.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+! img/c24t2-q37.png
+~ With the mirror MN on the right, the image reverses the order of the characters and flips each one sideways. Y57nBe2 is therefore seen as 2, e, B, n, 7, 5, Y from left to right, with the 2, e, B, 7 and 5 reversed (n and Y look the same). Option 3 shows exactly this. Option 1 turns the n into a u, option 2 turns the 7 upside down, and option 4 leaves the 2 and the B unreversed.
+
+Q 38 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding / subtracting / multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(215, 185, 135)
+(276, 246, 196)
+(1) (238, 208, 158)
+(2) (269, 229, 199)
+(3) (294, 264, 224)
+(4) (255, 235, 205)
+= 1
+~ In each given set the second number is 30 less than the first and the third is 50 less than the second: 215 − 30 = 185, 185 − 50 = 135; 276 − 30 = 246, 246 − 50 = 196. For (238, 208, 158): 238 − 30 = 208 and 208 − 50 = 158, so it fits. The others fail: 269 − 229 = 40, 264 − 224 = 40, and 255 − 235 = 20.
+
+Q 39 | rea | Miscellaneous Reasoning
+Each of the digits in the number 5238641 is arranged in ascending order from left to right. The position(s) of how many digits will remain unchanged as compared to that/those in the original number?
+(1) None
+(2) One
+(3) Two
+(4) Three
+= 3
+~ The original number is 5 2 3 8 6 4 1. Arranged in ascending order, the digits read 1 2 3 4 5 6 8. Compare place by place: 5/1, 2/2, 3/3, 8/4, 6/5, 4/6, 1/8. Only the 2nd digit (2) and the 3rd digit (3) are in the same place in both numbers, so the positions of two digits remain unchanged.
+
+Q 40 | rea | Arrangement & Puzzles
+O, P, Q, R, S and T are sitting around a circular table facing the centre (but not necessarily in the same order). P sits second to the left of T. S sits third to the right of Q. Q is not an immediate neighbour of P. O sits second to the right of S. Which of the following represents the position of O with respect of R?
+(1) Third to the left
+(2) Second to the left
+(3) Immediate right
+(4) Third to the right
+= 2
+~ Number the six seats 0–5 so that one step to a person's right adds 1. Put T at 0; P, second to the left of T, is at 4. S is third to the right of Q, i.e. opposite Q. Q cannot be next to P (seats 3, 5), and Q at 1 would put S on P's seat, so Q = 2 and S = 5. O, second to the right of S, is at 1, and R takes seat 3. Moving left from R: Q, then O. So O is second to the left of R.
+
+Q 41 | rea | Syllogism & Statements
+Given below is a statement (Cause) followed by possible effects numbered I, II and III. Read the ‘Cause’ carefully and decide which of the three can be possible effect/s.
+Cause – Many people in City X have reported receiving two electricity bills this month, instead of one.
+Effect I – The Electricity Board has published the details of areas where power shutdowns are expected tomorrow in City X.
+Effect II – The municipal commissioner of City X has clarified that the technical glitch which led to multiple electricity bills being generated would be resolved within 48 hours.
+Effect III – Long queues were seen outside the electricity board offices in many localities.
+(1) Only II is a possible effect.
+(2) Both I and II are possible effects.
+(3) Only I is a possible effect.
+(4) Both II and III are possible effects.
+= 4
+~ An effect must arise from the cause, the double billing. The commissioner explaining that a technical glitch produced the extra bills and will be fixed within 48 hours (II) is a direct official response to it. Confused consumers queueing at electricity board offices to sort out their bills (III) is also a natural result. Effect I, a list of areas facing power shutdowns tomorrow, concerns scheduled outages and has nothing to do with duplicate bills. So both II and III are possible effects.
+
+Q 42 | rea | Syllogism & Statements
+In this question, two statements are followed by four conclusions given as options. Decide which conclusion is definitely true, based on the given statements.
+Statements:
+A < B ≥ C > D
+C > E ≥ F = G
+(1) G > C
+(2) D < F
+(3) A < E
+(4) B > G
+= 4
+~ Join the two statements through C: B ≥ C > E ≥ F = G, so B > G is definitely true. G > C is false, since C > E ≥ G. D < F cannot be decided, because D and F are each known only to be less than C. A < E cannot be decided either, because A is only less than B and E is only less than C, so A and E are not linked. Hence only B > G is definitely true.
+
+Q 43 | rea | Coding-Decoding
+A question is given, followed by two statements labelled I and II. Identify which of the statements is/are sufficient/necessary to answer the question.
+Question:
+In a certain code language, ‘fire in mountain’ is coded as ‘si ph bo’. What is code for ‘fire’?
+Statements:
+(I) ‘mountain’ is coded as ‘bo’.
+(II) ‘ice and fire’ is coded as ‘si yu ca’.
+(1) Data in Statement I alone is sufficient to answer the question while data in Statement II is not
+(2) Data in Statement II alone is sufficient to answer the question while data in Statement I is not
+(3) Data in Statements I and II together is not sufficient to answer the question
+(4) Data in Statements I and II together is sufficient to answer the question
+= 2
+~ Statement I tells us 'mountain' = 'bo', which still leaves 'fire' and 'in' to share 'si' and 'ph', so the code for 'fire' cannot be fixed. Statement II, 'ice and fire' = 'si yu ca', has only the word 'fire' in common with 'fire in mountain' and only the code 'si' in common with 'si ph bo', so 'fire' = 'si'. Hence Statement II alone is sufficient, while Statement I alone is not.
+
+Q 44 | rea | Miscellaneous Reasoning
+How many meaningful English words can be formed using first, third, sixth and seventh letters of the word RECOGNIZE (when counted from left to right) using all the letters but each letter only once in each word?
+(1) None
+(2) Two
+(3) Three
+(4) One
+= 1
+~ Number the letters of RECOGNIZE: R(1) E(2) C(3) O(4) G(5) N(6) I(7) Z(8) E(9). The first, third, sixth and seventh letters are R, C, N and I. These four letters have only one vowel, and none of their arrangements, such as CRIN, RINC or NICR, is a meaningful English word. So no word can be formed, and the answer is None.
+
+Q 45 | rea | Coding-Decoding
+In a certain code language, ‘POSE’ is coded as ‘3517’ and ‘SILK’ is coded as ‘4638’. What is the code for ‘S’ in the given code language?
+(1) 3
+(2) 1
+(3) 8
+(4) 4
+= 1
+~ Compare the two words and their codes. The only letter common to POSE and SILK is S, and the only digit common to 3517 and 4638 is 3. So S is coded as 3; the digits need not follow the order of the letters. The remaining digits 5, 1, 7 belong to P, O, E, and 4, 6, 8 belong to I, L, K.
+
+Q 46 | rea | Blood Relations & Directions
+In a certain code language,
+A + B means ‘A is the mother of B’,
+A − B means ‘A is the brother of B’,
+A × B means ‘A is the wife of B’ and
+A ÷ B means ‘A is the father of B’.
+Based on the above, how is U related to Z if ‘U + V ÷ W − Y × Z’?
+(1) Wife's Father's Sister
+(2) Wife's Mother's Mother
+(3) Wife's Mother's Sister
+(4) Wife's Father's Mother
+= 4
+~ Decode step by step. U + V: U is the mother of V. V ÷ W: V is the father of W. W − Y: W is the brother of Y, so Y is also V's child. Y × Z: Y is the wife of Z. So Y is Z's wife, V is the wife's father and U is V's mother. Hence U is Z's wife's father's mother.
+
+Q 47 | rea | Syllogism & Statements
+Read the following information and answer the question which follows.
+“Similar to expert puzzle solvers, Solver S employs systematic problem-solving approaches, ensuring efficient and accurate resolutions to complex challenges."
+Which of the following can be inferred from the given statement? (An inference is something which is not directly stated but can be derived from the given facts/information in the statement)
+1. The efficiency and accuracy of Solver S in resolving complex challenges may be attributed to their systematic problem-solving methods.
+2. Solver S utilizes systematic problem-solving approaches, similar to expert puzzle solvers.
+(1) Neither (I) nor (II) can be inferred.
+(2) Only (II) can be inferred.
+(3) Both (I) and (II) can be inferred.
+(4) Only (I) can be inferred.
+= 3
+~ The options call the two numbered sentences (I) and (II). Sentence (I) follows because the statement links the systematic approach to "ensuring efficient and accurate resolutions", so Solver S's efficiency and accuracy can be credited to those methods. Sentence (II) is not copied word for word: it rephrases the statement (Solver S uses systematic approaches, like expert puzzle solvers), and in SSC's inference questions a sentence fully supported by the statement in this way counts as derivable. Hence both (I) and (II) can be inferred.
+
+Q 48 | rea | Analogy & Classification
+The following contains two pairs of words which are related to each other in a certain way. Three of the following four word-pairs are alike as these have the same relationship and thus form a group. Which word-pair does NOT belong to that group?
+(The words must be considered as meaningful English words and must not be grouped based on the number of letters/number of consonants/vowels in the word)
+(1) Temple - Pray
+(2) Theatre - Movies
+(3) Park - Swim
+(4) Restaurant - Dinner
+= 3
+~ In three pairs the first word is a place and the second is what people go there to do or have: people pray in a temple, watch movies in a theatre and eat dinner in a restaurant. A park is not a place for swimming; swimming is done in a pool. So 'Park - Swim' does not share the relationship and is the odd pair.
+
+Q 49 | rea | Syllogism & Statements
+A statement is followed by two arguments I and II. Read the statement and the arguments carefully and select the appropriate answer from the given options.
+Statement:
+Hydroelectricity is a cleaner and greener energy than other forms of power generation.
+Arguments:
+(I) Hydroelectric plants almost have nil CO₂ emissions.
+(II) Hydroelectric power projects submerge huge amounts under water thereby affecting local flora and fauna.
+(1) Both I and II weaken the statement.
+(2) I weakens while II strengthens the statement.
+(3) II weakens while I strengthens the statement.
+(4) Both I and II strengthen the statement.
+= 3
+~ An argument strengthens the statement if it supports the claim that hydroelectricity is cleaner and greener than other power sources. Argument I says hydroelectric plants have almost nil CO₂ emissions, which directly supports the claim, so it strengthens the statement. Argument II says hydro projects submerge large areas and harm local flora and fauna, an environmental cost that goes against calling it 'greener', so it weakens the statement. Hence II weakens while I strengthens.
+
+Q 50 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statement(s) is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).
+Statements:
+All sheeps are cows.
+Some cows are horses.
+All horses are jackals.
+Conclusion:
+(I) Some jackals are cows.
+(II) Some horses are sheeps.
+(1) Both Conclusions (I) and (II) follow.
+(2) Only Conclusion (II) follows.
+(3) Only Conclusion (I) follows.
+(4) Neither Conclusion (I) nor (II) follows.
+= 3
+~ Conclusion I: some cows are horses, and all horses are jackals, so those cows are jackals; hence some cows are jackals, i.e. some jackals are cows. I follows. Conclusion II: sheep and horses are linked only through cows, and the cows that are horses need not include any of the cows that are sheep, so 'Some horses are sheeps' is only a possibility. II does not follow. Hence only Conclusion (I) follows.
+
+Q 51 | rea | Non-verbal Reasoning
+Select the option figure that will replace the question mark (?) in the figure given below to complete the pattern.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/c24t2-q51.png
+~ The figure repeats the same design round the centre: each side of the frame carries a black triangle pointing outwards, and a circle arc runs round the middle. The missing bottom-right quarter must hold the lower half of the right-hand triangle, the right half of the bottom triangle (both black, meeting at the inner corner) and the last quarter of the arc, with no extra line. Only option 4 shows this. Options 1 and 3 have a diagonal line through the arc and wrong shading, and option 2 has no shading.
+
+Q 52 | rea | Non-verbal Reasoning
+Select the option figure in which the given figure is embedded as its part (rotation is NOT allowed).
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/c24t2-q52.png
+~ The given figure is an open frame: a top line with two short sides; the left side ends in a circle and the right side bends inwards to a diamond beside the circle. In option 4, the inner vertical line on the left (ending in the circle), the top edge of the large rectangle and its right side, which meets the line running into the diamond, trace exactly this shape in the same orientation. In the other options the circle and diamond do not sit at the ends of such a frame.
+
+Q 53 | rea | Arrangement & Puzzles
+Each of P, Q, R, S, T, U and V has an exam on a different day of a week, starting from Monday and ending on Sunday of the same week.
+Q has the exam on Saturday. Only two people have exams between S and Q. R has the exam before S, but after P. U has the exam immediately after T.
+On which of the following days does V have the exam?
+(1) Saturday
+(2) Sunday
+(3) Friday
+(4) Thursday
+= 2
+~ Q is on Saturday. With exactly two exams between S and Q, S must be on Wednesday (three days after Saturday would go past Sunday). R is before S but after P, so P is on Monday and R on Tuesday. U is immediately after T; of the free days Thursday, Friday and Sunday, only Thursday and Friday are consecutive, so T is on Thursday and U on Friday. The only day left, Sunday, is V's.
+
+Q 54 | rea | Analogy & Classification
+In the following number-pairs, the second number is obtained by applying certain mathematical operations to the first number. In three of the four pairs, the same pattern is applied and hence they form a group. Select the number-pair that does NOT belong to this group.
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(1) 18 - 198
+(2) 13 - 144
+(3) 31 - 341
+(4) 22 - 242
+= 2
+~ In three pairs the second number is the first multiplied by 11: 18 × 11 = 198, 31 × 11 = 341 and 22 × 11 = 242. For 13 the same rule gives 13 × 11 = 143, not 144. So the pair 13 - 144 does not follow the pattern and does not belong to the group.
+
+Q 55 | rea | Blood Relations & Directions
+U is the father of N. N is the sister of T. T is the wife of I. I is son of L. How is U related to L?
+(1) Son's wife's sister
+(2) Son's wife's father
+(3) Son's wife
+(4) Son's wife's mother
+= 2
+~ U is the father of N, and N is the sister of T, so U is also T's father. T is the wife of I, and I is the son of L, so T is L's son's wife (daughter-in-law). U, being T's father, is therefore L's son's wife's father. U is male, so the options 'sister', 'wife' and 'mother' are ruled out at once.
+
+Q 56 | rea | Non-verbal Reasoning
+Figure A is related to B in a certain pattern. Following the same pattern, figure C is related to D. Study the pattern and select the figure which should be in place of D.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/c24t2-q56.png
+~ B is A turned 90° clockwise: the top-left circle moves to the top-right, the diamond on the left moves to the top, and the square with the black circle moves from bottom-right to bottom-left. Turning C 90° clockwise puts its left strip with the circle along the top, the black rectangle just below that strip, the long line vertical, the right-pointing triangle as a V on the right and the other triangle as an inverted V at the bottom: option 2. Option 1 is a mirror image, option 3 an anticlockwise turn and option 4 a half turn.
+
+Q 57 | rea | Miscellaneous Reasoning
+A question is given, followed by two statements labelled I and II. Identify which of the statements is/are sufficient/necessary to answer the question.
+Question:
+Arvind has blue, green and white marbles. What is the percentage of white marbles out of all the marbles he has?
+Statements:
+(I) The sum of blue and green marbles he has is 7.
+(II) He has 3 white marbles out of 10 marbles.
+(1) Data in Statement II alone is sufficient to answer the question while data in Statement I is not
+(2) Data in Statements I and II together is not sufficient to answer the question
+(3) Data in Statement I alone is sufficient to answer the question while data in Statement II is not
+(4) Data in Statements I and II together is sufficient to answer the question
+= 1
+~ The percentage needs the number of white marbles and the total number of marbles. Statement I gives only blue + green = 7 and says nothing about white marbles, so it is not sufficient. Statement II says 3 of his 10 marbles are white, so the percentage is 3/10 × 100 = 30%. Hence Statement II alone is sufficient, while Statement I alone is not.
+
+Q 58 | rea | Coding-Decoding
+In a certain code language, ‘she gardens daily’ is coded as ‘ak jb mp’ and ‘where is she’ is coded as ‘mp pt kt’. How is ‘she’ coded in the given language?
+(1) mp
+(2) ak
+(3) kt
+(4) pt
+= 1
+~ Compare the two sentences. The only word common to 'she gardens daily' and 'where is she' is 'she', and the only code common to 'ak jb mp' and 'mp pt kt' is 'mp'. So 'she' is coded as 'mp'; the position of a code need not match the position of its word. The codes 'ak' and 'jb' stand for 'gardens' and 'daily', and 'pt' and 'kt' for 'where' and 'is'.
+
+Q 59 | rea | Miscellaneous Reasoning
+Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.
+1. Delivery
+2. Finished Paper
+3. Dry
+4. Pulp
+5. Press
+(1) 4, 5, 3, 2, 1
+(2) 2, 5, 4, 3, 1
+(3) 4, 1, 2, 5, 3
+(4) 5, 4, 2, 3, 1
+= 1
+~ The words follow the steps of paper making. Wood is first turned into Pulp (4); the pulp is then Pressed (5) to squeeze out water and form sheets; the sheets are Dried (3); this gives the Finished Paper (2), which is finally sent for Delivery (1). So the logical order is 4, 5, 3, 2, 1. Option 2 begins with the finished paper, option 3 delivers before the paper is made, and option 4 presses before any pulp exists.
+
+Q 60 | rea | Mathematical Operations
+If ‘A’ stands for ‘÷’, ‘B’ stands for ‘×’, ‘C’ stands for ‘+’ and ‘D’ stands for ‘−’, what will be come in place of the question mark (?) in the following equation?
+55 B 5 D 13 B 2 C 14 A 7 D 15 B 5 C 102 A 2 C 15 = ?
+(1) 291
+(2) 203
+(3) 177
+(4) 242
+= 4
+~ Replace the letters: 55 × 5 − 13 × 2 + 14 ÷ 7 − 15 × 5 + 102 ÷ 2 + 15. Do division and multiplication first (BODMAS): 275 − 26 + 2 − 75 + 51 + 15. Then add and subtract from left to right: 275 − 26 = 249; 249 + 2 = 251; 251 − 75 = 176; 176 + 51 = 227; 227 + 15 = 242.
+
+Q 61 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+Rashid was not able to ______ the pain after the accident.
+(1) beer
+(2) bare
+(3) buyer
+(4) bear
+= 4
+~ 'Bear' as a verb means to endure or tolerate, so 'Rashid was not able to bear the pain' means he could not endure it. The other options sound alike but do not fit: 'beer' is an alcoholic drink, 'bare' means uncovered or to uncover (as in 'bare one's head'), and 'buyer' is a person who buys something. Bear and bare are homophones, the same sound with different spellings and meanings, and are often tested together.
+
+Q 62 | eng | Voice & Narration
+Select the option that expresses the given sentence in passive voice.
+Did you hear that noise?
+(1) Has that noise been heard by you?
+(2) Wasn't that noise heard by you?
+(3) Is that noise heard by you?
+(4) Was that noise heard by you?
+= 4
+~ The sentence is a question in the simple past (Did + subject + base verb). Its passive form is Was/Were + new subject + past participle + by + agent: the object 'that noise' becomes the subject, 'hear' becomes 'heard' and 'you' becomes 'by you', giving 'Was that noise heard by you?' Option 1 changes the tense to the present perfect (has been heard), option 3 to the simple present (Is ... heard), and option 2 adds a negative that is not in the original question.
+
+Q 63 | eng | Idioms & One-word Substitution
+Select the option that can be used as a one-word substitute for the given group of words.
+One who cannot make a mistake
+(1) Inevitable
+(2) Infallible
+(3) Impregnable
+(4) Inimitable
+= 2
+~ 'Infallible' means incapable of making mistakes or being wrong, as in 'No human being is infallible'. 'Inevitable' means certain to happen and unavoidable, 'impregnable' means impossible to capture or break into (an impregnable fortress), and 'inimitable' means so good or unusual that it cannot be copied. All four begin with the negative prefix in-/im-, but only infallible refers to the inability to err.
+
+Q 64 | eng | Vocabulary
+Select the most appropriate ANTONYM of the word given below.
+Enhance
+(1) Enrich
+(2) Impair
+(3) Miracle
+(4) Relevance
+= 2
+~ 'Enhance' means to improve or increase the quality, value or extent of something, as in 'to enhance one's skills'. Its antonym is 'impair', meaning to weaken, damage or make worse, as in 'Lack of sleep impairs concentration'. 'Enrich' (to improve the quality of something, to make richer) is close to a synonym, while 'miracle' (a wonderful, extraordinary event) and 'relevance' (connection with the matter in hand) are nouns unrelated in meaning.
+
+Q 65 | eng | Error Spotting & Sentence Improvement
+Parts of the following sentence have been given as options. Select the option that contains an error.
+It takes me an hour to get to work at the moment, but when the new road is finished it be much quicker.
+(1) It takes me an hour to get to work
+(2) but when the new road is finished
+(3) at the moment
+(4) it be much quicker
+= 4
+~ The second half of the sentence refers to the future. In a time clause beginning with 'when', the simple present ('is finished') expresses a future idea, but the main clause needs the future tense 'will be'. 'It be much quicker' has no proper finite verb, because the base form 'be' cannot follow a subject on its own; it should read 'it will be much quicker'. The other parts, 'It takes me an hour to get to work', 'at the moment' and 'but when the new road is finished', are correct.
+
+Q 66 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+No other book in the series captivated readers as ______ as the final installment.
+(1) much
+(2) many
+(3) most
+(4) more
+= 1
+~ A comparison of equality uses 'as ... as', and the word between them must suit the verb 'captivated'. 'As much as' compares the degree of an action: 'No other book in the series captivated readers as much as the final installment' means that the final book captivated readers most of all. 'Many' qualifies plural countable nouns and cannot describe the extent of an action, while 'more' and 'most' are comparative and superlative forms that cannot be placed inside an as ... as comparison.
+
+Q 67 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Generous
+(1) Magnanimous
+(2) Altruistic
+(3) Selfish
+(4) Benevolent
+= 3
+~ 'Generous' means willing to give money, help or time freely, more than is expected. Its antonym is 'selfish', meaning concerned chiefly with one's own advantage and without thought for others. 'Magnanimous' (generous and forgiving, especially towards a rival or someone less powerful), 'altruistic' (unselfishly concerned for the welfare of others) and 'benevolent' (kind and well-meaning) are all synonyms of generous, not opposites.
+
+Q 68 | eng | Voice & Narration
+Select the option that expresses the given sentence in reported speech.
+'I am determined to publish my findings,' the scientist asserted confidently.
+(1) The scientist confidently asserted that she is determined to publish her findings.
+(2) The scientist confidently asserted that she would be determined to publish her findings.
+(3) The scientist confidently asserted that she was determined to publish her findings.
+(4) The scientist confidently asserted that she had determined to publish her findings.
+= 3
+~ When the reporting verb is in the past tense ('asserted'), the reported clause moves one tense back: the simple present 'I am determined' becomes the simple past 'she was determined'. The first-person pronouns change to the third person ('I' to 'she', 'my' to 'her') and 'that' introduces the clause: 'The scientist confidently asserted that she was determined to publish her findings.' Option 1 keeps the present 'is', option 2 wrongly adds 'would be', and option 4 changes the meaning with 'had determined'.
+
+Q 69 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+Luck does not always favour us, so we must always depend ______ our own efforts for success.
+(1) in
+(2) for
+(3) at
+(4) upon
+= 4
+~ The verb 'depend' takes the preposition 'on' or its more formal form 'upon' when it means to rely on or be supported by something: 'we must always depend upon our own efforts for success'. 'Depend in', 'depend for' and 'depend at' are not idiomatic in this sense. Since luck does not always favour us, the sentence advises relying on our own efforts, which is exactly what 'depend upon' expresses.
+
+Q 70 | eng | Spelling
+Select the correct spelling of the incorrectly spelt word in the given sentence.
+All criminal attitudes must be niped at the bud.
+(1) Nipedd
+(2) Nipped
+(3) Nipeed
+(4) Niiped
+= 2
+~ The incorrectly spelt word is 'niped'. 'Nip' is a one-syllable verb ending in a single vowel followed by a single consonant, so the final consonant is doubled before -ed or -ing: nip, nipped, nipping (like stop, stopped, stopping). So the correct spelling is 'Nipped'. 'Nipedd', 'Nipeed' and 'Niiped' double the wrong letter. The fixed idiom is 'nip in the bud', meaning to stop something at an early stage; the sheet prints 'at the bud'.
+
+Q 71 | eng | Sentence Arrangement
+Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.
+A. Psychotherapy is a voluntary relationship between the one seeking treatment or the client and the one who treats or the therapist.
+B. The relationship is conducive for building the trust of the client so that problems may be freely discussed.
+C. The purpose of the relationship is to help the client to solve the psychological problems being faced by her or him.
+D. Psychotherapies aim at changing the maladaptive behaviours, decreasing the sense of personal distress and helping the client to adapt better to her/his environment.
+E. Inadequate marital, occupational and social adjustment also requires that major changes be made in an individual’s personal environment.
+(1) DCABE
+(2) CDEBA
+(3) EDACB
+(4) ACBDE
+= 4
+~ A introduces the topic by defining psychotherapy as a voluntary relationship between the client and the therapist. C follows with 'The purpose of the relationship', and B describes another feature of 'The relationship', that it builds the client's trust so problems can be discussed freely. D then states what psychotherapies aim at, changing maladaptive behaviour and helping the client adapt to the environment, and E, with 'also', adds that poor marital, occupational and social adjustment calls for changes in the personal environment. So the order is ACBDE.
+
+Q 72 | eng | Voice & Narration
+Select the option that expresses the given sentence in passive voice.
+The explosion caused serious damage in Ukraine.
+(1) Serious damage has been caused by the explosion in Ukraine.
+(2) Serious damage was caused by the explosion in Ukraine.
+(3) Serious damage in Ukraine has been caused by the explosion.
+(4) In Ukraine, serious damage had been caused by the explosion.
+= 2
+~ The active sentence is in the simple past: subject 'The explosion' + verb 'caused' + object 'serious damage'. In the passive the object becomes the subject, the verb becomes was/were + past participle, and the doer follows 'by': 'Serious damage was caused by the explosion in Ukraine.' Options 1 and 3 change the tense to the present perfect (has been caused) and option 4 to the past perfect (had been caused), so they do not keep the simple past of the original.
+
+Q 73 | eng | Idioms & One-word Substitution
+Complete the dialogue for Person B using the correct idiom.
+Person A: I am so nervous. I don’t think I should make the speech tomorrow.
+Person B: No. You are just getting ______. You have prepared for this.
+(1) hot feet
+(2) cold feet
+(3) cold hand
+(4) cold foot
+= 2
+~ 'To get cold feet' is an idiom meaning to become nervous or lose courage just before doing something one has planned, such as giving a speech or getting married. Person A is nervous about tomorrow's speech, so Person B reassures A that this is just cold feet and that A has prepared well. 'Hot feet', 'cold hand' and 'cold foot' are not idioms; idioms have a fixed form, and only the plural 'cold feet' carries this meaning.
+
+Q 74 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+The mango is the______ fruit.
+(1) sweetly
+(2) sweet
+(3) sweeter
+(4) sweetest
+= 4
+~ The definite article 'the' before the blank and the idea of comparing the mango with all other fruits call for the superlative degree of the adjective 'sweet' (sweet, sweeter, sweetest): 'The mango is the sweetest fruit.' 'Sweeter' is the comparative degree, used when comparing two things, usually with 'than'; 'sweet' is the positive degree and makes no comparison; and 'sweetly' is an adverb, which cannot qualify the noun 'fruit'.
+
+Q 75 | eng | Idioms & One-word Substitution
+Select the option that can be used as a one-word substitute for the given group of words.
+A sudden and violent change or upheaval
+(1) Tranquility
+(2) Turbulence
+(3) Serenity
+(4) Equanimity
+= 2
+~ 'Turbulence' means a state of violent disturbance, conflict or confusion, as in 'political turbulence' or 'a period of economic turbulence'; it is also used for the violent, irregular movement of air or water. Of the options, only it conveys a sudden and violent change or upheaval. 'Tranquility' (calm and peace), 'serenity' (the state of being calm and untroubled) and 'equanimity' (mental calmness, especially in a difficult situation) all mean the opposite.
+
+Q 76 | eng | Sentence Arrangement
+Parts of a sentence are given below in jumbled order. Select the option that gives their correct logical sequence to form a meaningful sentence.
+a. it requires constant sustenance
+b. in order for life to be liveable,
+c. that enable it to grow and develop
+d. and favourable circumstances
+(1) a, b, c, d
+(2) d, c, b, a
+(3) b, a, d, c
+(4) b, d, a, c
+= 3
+~ Part b 'in order for life to be liveable,' ends with a comma, so it is an introductory phrase that comes first. Part a 'it requires constant sustenance' is the main clause, 'it' standing for life. Part d 'and favourable circumstances' adds a second object of 'requires', and part c 'that enable it to grow and develop' describes those circumstances. The sentence reads: 'In order for life to be liveable, it requires constant sustenance and favourable circumstances that enable it to grow and develop.' Option 4 wrongly puts d before the main clause.
+
+Q 77 | eng | Voice & Narration
+Select the option that expresses the given sentence in direct speech.
+The teacher informed that the exam had been postponed.
+(1) The teacher informed, “The exam has been postponed.”
+(2) The teacher informs, “The exam has been postponed.”
+(3) The teacher informed, “The exam was being postponed.”
+(4) The teacher informs, “The exam had been postponed.”
+= 1
+~ To turn indirect speech into direct speech, the reporting verb keeps its past tense ('informed'), a comma and inverted commas enclose the actual words, and the tense of the reported clause moves one step forward: the past perfect 'had been postponed' becomes the present perfect 'has been postponed'. Hence: The teacher informed, 'The exam has been postponed.' Options 2 and 4 wrongly change the reporting verb to the present 'informs', and option 3 uses the past continuous 'was being postponed', which changes the meaning.
+
+Q 78 | eng | Vocabulary
+Select the most appropriate meaning of the underlined word.
+He walked "leisurely" towards the entrance.
+(1) reassuringly
+(2) hastily
+(3) without haste
+(4) with a kickstart
+= 3
+~ 'Leisurely' means in an unhurried, relaxed way, without haste. 'He walked leisurely towards the entrance' means he walked slowly and calmly, taking his time. 'Hastily' (quickly, in a hurry) is its opposite, 'reassuringly' means in a way that removes someone's fear or doubt, and 'with a kickstart' (with a sudden, forceful start) suggests speed rather than ease. So 'without haste' gives the meaning of the underlined word.
+
+Q 79 | eng | Voice & Narration
+Select the option that expresses the given sentence in direct speech.
+The District Magistrate ordered the police to work all night and put an end to those riots.
+(1) The District Magistrate told the police, "Work all night and put an end to their riots."
+(2) The District Magistrate told the police, "Work all night and put to end these riots."
+(3) The District Magistrate told the police, "Work all night and put an end to these riots."
+(4) The District Magistrate told the police, "Work all night to put an end these riots."
+= 3
+~ An order reported as 'ordered' + object + to-infinitive becomes an imperative in direct speech: the reporting verb 'ordered' becomes 'told', the to-infinitives become the commands 'Work' and 'put', and words of remoteness change back to nearness, so 'those' becomes 'these'. Hence: The District Magistrate told the police, 'Work all night and put an end to these riots.' Option 1 wrongly uses 'their riots', option 2 garbles 'put an end to' into 'put to end', and option 4 drops 'and' and the 'to' after 'end'.
+
+Q 80 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate pronoun to fill in the blank.
+Mr. Amit Kumar, Proprietor of Xyling Pens is known for ______ honesty and decent behaviour in the business arena.
+(1) her
+(2) it
+(3) his
+(4) they
+= 3
+~ The blank needs a possessive determiner before the noun 'honesty' that refers back to the subject 'Mr. Amit Kumar', a single man. The possessive form for a singular male is 'his': 'Mr. Amit Kumar ... is known for his honesty and decent behaviour in the business arena.' 'Her' refers to a woman, 'it' is used for things and is not a possessive (its possessive would be 'its'), and 'they' is a plural subject pronoun, not a possessive form.
+
+Q 81 | eng | Idioms & One-word Substitution
+Select the most appropriate meaning of the underlined idiom.
+The team decided to "pull out all the stops" for their upcoming presentation.
+(1) To do everything to make something successful
+(2) Give up easily and without thinking much
+(3) Keep things simple and straightforward
+(4) Wait patiently for a more favourable time
+= 1
+~ 'To pull out all the stops' means to make every possible effort and use all available resources to make something successful. It comes from the pipe organ, where pulling out all the stops (the knobs that control the sets of pipes) makes the instrument play at full power. So the team decided to do everything possible for its presentation. Giving up easily, keeping things simple and waiting for a better time all suggest the opposite of an all-out effort.
+
+Q 82 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Accumulated
+(1) Bunched
+(2) Garnered
+(3) Spared
+(4) Scattered
+= 4
+~ 'Accumulated' means gathered together or collected gradually over time, as in 'accumulated wealth' or 'accumulated dust'. Its antonym is 'scattered', meaning spread or thrown about over a wide area, separated rather than gathered together. 'Bunched' (gathered into a bunch) and 'garnered' (collected or gathered) are synonyms of accumulated, and 'spared' (saved from harm, or given because one can afford it) is unrelated in meaning.
+
+Q 83 | eng | Voice & Narration
+Select the option that expresses the given sentence in passive voice.
+Everyone was surprised at his speech.
+(1) His speech surprise everyone.
+(2) His speech surprised everyone.
+(3) His speech was surprising to everyone.
+(4) His speech is surprising everyone.
+= 2
+~ The given sentence 'Everyone was surprised at his speech' is already in the passive voice (was + past participle 'surprised', with the agent introduced by 'at'), so the option that expresses it in the other voice is its active form. The agent 'his speech' becomes the subject, the simple past is kept, and 'everyone' becomes the object: 'His speech surprised everyone.' Option 1 uses the wrong verb form 'surprise', and options 3 and 4 change the structure and tense. The instruction evidently means active voice.
+
+Q 84 | eng | Sentence Arrangement
+A sentence has been split up into segments and given below in jumbled order. While the first and the last segments of the sentence (1 and 6) are in the correct order, the segments in between are jumbled up. Arrange the segments in the correct order to form a meaningful and coherent sentence.
+1) India has been a land
+P) and the learned man has been held in higher esteem
+Q) of learning through the ages
+R) but in the sense that learning has always been very highly valued
+S) not indeed in the sense that education has been universal
+6) than the warrior or the administrator.
+(1) S, R, Q, P
+(2) Q, S, R, P
+(3) P, S, Q, R
+(4) R, Q, S, P
+= 2
+~ Segment 1 'India has been a land' is completed by Q 'of learning through the ages'. S 'not indeed in the sense that education has been universal' qualifies this claim, and R 'but in the sense that learning has always been very highly valued' completes the 'not ... but' pair. P 'and the learned man has been held in higher esteem' comes last because the comparative 'higher' needs the 'than' of segment 6: '... higher esteem than the warrior or the administrator.' So the order is Q, S, R, P; starting with S, P or R leaves 'a land' incomplete.
+
+Q 85 | eng | Sentence Arrangement
+Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.
+A. As cost of raw materials cannot be reduced, exporters try to cut labour costs.
+B. Large MNCs in the garment industry in Europe and America order their products from Indian exporters.
+C. These large MNCs with worldwide network look for the cheapest goods in order to maximise their profits.
+D. To get these large orders, Indian garment exporters try hard to cut their own costs.
+E. Where earlier a factory used to employ workers on a permanent basis, now they employ workers only on a temporary basis so that they do not have to pay workers for the whole year.
+(1) DCABE
+(2) BCDAE
+(3) CDAEB
+(4) ADECB
+= 2
+~ B introduces the situation: large MNCs in Europe and America order garments from Indian exporters. C, beginning 'These large MNCs', says they look for the cheapest goods to maximise profits. D follows: 'To get these large orders', Indian exporters try to cut their own costs. A explains how: since raw-material costs cannot be reduced, they cut labour costs. E gives the example of this cut, hiring workers only on a temporary basis. So the order is BCDAE. The other options begin with C, D or A, each of which refers back to something not yet mentioned.
+
+Q 86 | eng | Sentence Arrangement
+Sentences of a paragraph are given below in jumbled order. Arrange the sentences in the correct order to form a meaningful and coherent paragraph.
+A. It consists of a terracotta army of approximately 8000 life-sized men and horses.
+B. Each of the horses and men is individually sculpted by a 3-inch-thick terracotta clay and looks unique.
+C. Shi Huangdi was the founder of Qin Dynasty and was the first ruler of unified China in 221 BC.
+D. His mausoleum was recently discovered in 1974 by Chinese peasants who were drilling a well.
+(1) CDAB
+(2) CABD
+(3) CADB
+(4) CBAD
+= 1
+~ C introduces the person, Shi Huangdi, founder of the Qin dynasty and first ruler of unified China in 221 BC. D follows with 'His mausoleum', found in 1974 by peasants drilling a well. A, beginning 'It consists of', describes the mausoleum: a terracotta army of about 8000 life-sized men and horses. B adds detail about 'the horses and men', each sculpted individually and unique. So the order is CDAB. In the other options 'It' in A would come before the mausoleum is mentioned, or B would describe the horses and men before the army is introduced.
+
+Q 87 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate homophone from the options to fill in the blank.
+We should ______ away all prejudices to live in harmony.
+(1) cast
+(2) caste
+(3) coast
+(4) cost
+= 1
+~ 'Cast away' means to throw away or get rid of something, so 'We should cast away all prejudices to live in harmony' means we should discard all our prejudices. The options sound alike or nearly alike: 'caste' (with an e) is a hereditary social class, 'coast' is the land next to the sea, and 'cost' is the price paid for something or, as a verb, to have a price. Only 'cast' combines with 'away' to give the required sense.
+
+Q 88 | eng | Spelling
+Select the correct spelling of the incorrectly spelt word in the given sentence.
+The trainer tried to guage the learners' understanding of the subject by asking several new questions.
+(1) Gaaug
+(2) Gaugg
+(3) Gauge
+(4) Gaage
+= 3
+~ The incorrectly spelt word is 'guage'; the correct spelling is 'gauge' (g-a-u-g-e), with the a before the u. As a verb it means to estimate, judge or measure, as in 'to gauge the learners' understanding'; as a noun it means a measuring instrument or the distance between the rails of a railway track. Swapping the a and the u is a very common misspelling. 'Gaaug', 'Gaugg' and 'Gaage' are not English words.
+
+Q 89 | eng | Sentence Arrangement
+Parts of a sentence are given below in jumbled order. Arrange the parts in the correct order to form a meaningful sentence.
+a. beginning in the 19th century,
+b. was long a mystery, and
+c. the origin of the Moon
+d. three competing theories emerged to solve it
+(1) dcab
+(2) bdca
+(3) abdc
+(4) cbad
+= 4
+~ The subject c 'the origin of the Moon' takes the verb in b 'was long a mystery, and', whose 'and' signals a second clause. Part a 'beginning in the 19th century,' sets the time for that clause, and d 'three competing theories emerged to solve it' completes it, 'it' referring to the mystery. The sentence reads: 'The origin of the Moon was long a mystery, and beginning in the 19th century, three competing theories emerged to solve it.' In the other options the verb part b does not directly follow its subject c, so cbad is correct.
+
+Q 90 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Climate change (1)______ an imminent threat to our planet, demanding urgent global action. The rise in greenhouse gas emissions, deforestation and unsustainable practices contribute to extreme weather events, rising sea levels and disruptions in ecosystems. To (2)______ these effects, a collaborative international effort is essential. Nations (3)______ commit to reducing carbon emissions, transitioning to renewable energy sources and implementing sustainable practices. Cooperation on technological advancements and sharing resources will foster a collective resilience against the impacts of climate change. The urgency of this issue calls for a united front, where governments, businesses and individuals work together to create a sustainable and resilient future for the (4)______ to come.
+Select the most appropriate option to fill in blank number 1.
+(1) will pose
+(2) poses
+(3) posed
+(4) will be posing
+= 2
+~ The passage describes a present, continuing situation that is 'demanding urgent global action', and the rest of it is in the present tense (contribute, is essential, calls for). So the blank needs the simple present 'poses', which agrees with the singular subject: 'Climate change poses an imminent threat to our planet.' 'Posed' places the threat in the past, while 'will pose' and 'will be posing' place it wholly in the future, which does not suit a passage about action needed now.
+
+Q 91 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Climate change (1)______ an imminent threat to our planet, demanding urgent global action. The rise in greenhouse gas emissions, deforestation and unsustainable practices contribute to extreme weather events, rising sea levels and disruptions in ecosystems. To (2)______ these effects, a collaborative international effort is essential. Nations (3)______ commit to reducing carbon emissions, transitioning to renewable energy sources and implementing sustainable practices. Cooperation on technological advancements and sharing resources will foster a collective resilience against the impacts of climate change. The urgency of this issue calls for a united front, where governments, businesses and individuals work together to create a sustainable and resilient future for the (4)______ to come.
+Select the most appropriate option to fill in blank number 2.
+(1) widen
+(2) inflate
+(3) mitigate
+(4) maximise
+= 3
+~ 'Mitigate' means to make something less severe, serious or harmful. The passage lists harmful effects of climate change, such as extreme weather events, rising sea levels and disrupted ecosystems, and says a collaborative international effort is essential 'To mitigate these effects', that is, to reduce them. 'Widen', 'inflate' and 'maximise' all mean to increase or enlarge, which would make the harmful effects worse and contradict the purpose of the effort described.
+
+Q 92 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Climate change (1)______ an imminent threat to our planet, demanding urgent global action. The rise in greenhouse gas emissions, deforestation and unsustainable practices contribute to extreme weather events, rising sea levels and disruptions in ecosystems. To (2)______ these effects, a collaborative international effort is essential. Nations (3)______ commit to reducing carbon emissions, transitioning to renewable energy sources and implementing sustainable practices. Cooperation on technological advancements and sharing resources will foster a collective resilience against the impacts of climate change. The urgency of this issue calls for a united front, where governments, businesses and individuals work together to create a sustainable and resilient future for the (4)______ to come.
+Select the most appropriate option to fill in blank number 3.
+(1) must
+(2) would
+(3) might
+(4) could
+= 1
+~ The sentence states what nations are obliged to do in view of the 'imminent threat' and the 'urgent global action' the passage speaks of. The modal 'must' expresses necessity or obligation: 'Nations must commit to reducing carbon emissions, transitioning to renewable energy sources and implementing sustainable practices.' 'Would' expresses a conditional or habitual action, while 'might' and 'could' express only possibility or ability, which are too weak for the urgency the passage stresses.
+
+Q 93 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Climate change (1)______ an imminent threat to our planet, demanding urgent global action. The rise in greenhouse gas emissions, deforestation and unsustainable practices contribute to extreme weather events, rising sea levels and disruptions in ecosystems. To (2)______ these effects, a collaborative international effort is essential. Nations (3)______ commit to reducing carbon emissions, transitioning to renewable energy sources and implementing sustainable practices. Cooperation on technological advancements and sharing resources will foster a collective resilience against the impacts of climate change. The urgency of this issue calls for a united front, where governments, businesses and individuals work together to create a sustainable and resilient future for the (4)______ to come.
+Select the most appropriate option to fill in blank number 4.
+(1) generations
+(2) businessmen
+(3) poor people
+(4) backward nations
+= 1
+~ 'For the generations to come' is a fixed expression meaning for future people, for a long time ahead. The passage ends by calling for a sustainable and resilient future, which is naturally a future for the generations to come. 'Businessmen', 'poor people' and 'backward nations' are too narrow, since the passage concerns the whole planet and all of humanity, and none of them combines naturally with 'to come' to refer to people of the future.
+
+Q 94 | eng | Fill in the Blanks & Cloze Test
+Read the given passage and answer the questions that follow.
+The French Revolution is a revolutionary movement that occurred in France between 1787 and 1799 and reached to its (1)______ in 1789. This revolution had many causes but the most important of all was (2)______ of bourgeoisie, who were merchants, manufacturers and professionals. The peasants, many of them landowners, wanted to get rid of the practices of absolute monarchy and feudalism. Another factor was an increase in population due to decreased mortality rates. It was followed by economic predicament and minor revolts were common. This led to a clarion call for social reforms. Intellectuals like Rene Descartes wrote about new things about political, social and economic matters. A fundamental political and societal change was to occur. The French Revolution played a critical role in shaping modern nations by showing the world the power inherent in the will of the people.
+Select the most appropriate option to fill in blank no. 2.
+(1) sorrow
+(2) joy
+(3) killing
+(4) hankering
+= 4
+~ 'Hankering' means a strong desire or longing for something. The sentence says that the most important cause of the revolution was the hankering of the bourgeoisie (merchants, manufacturers and professionals), that is, their strong desire for change and for a greater share in power. 'Sorrow' (sadness), 'joy' (happiness) and 'killing' do not explain why a class of people would be the chief cause of a revolution, so hankering is the only word that fits the idea of a cause.
+
+Q 95 | eng | Reading Comprehension
+Read the given passage and answer the questions that follow.
+The French Revolution is a revolutionary movement that occurred in France between 1787 and 1799 and reached to its (1)______ in 1789. This revolution had many causes but the most important of all was (2)______ of bourgeoisie, who were merchants, manufacturers and professionals. The peasants, many of them landowners, wanted to get rid of the practices of absolute monarchy and feudalism. Another factor was an increase in population due to decreased mortality rates. It was followed by economic predicament and minor revolts were common. This led to a clarion call for social reforms. Intellectuals like Rene Descartes wrote about new things about political, social and economic matters. A fundamental political and societal change was to occur. The French Revolution played a critical role in shaping modern nations by showing the world the power inherent in the will of the people.
+What is the meaning of the phrase ‘a clarion call’ in the passage?
+(1) A strongly expressed demand
+(2) A call for forces
+(3) Declaration of war
+(4) Beginning of a new phase
+= 1
+~ A clarion was a medieval trumpet with a clear, shrill sound used to call soldiers, so 'a clarion call' is a strong, urgent appeal or demand for people to act. In the passage, economic hardship and minor revolts 'led to a clarion call for social reforms', meaning that people strongly demanded reforms. The phrase is used figuratively here, so it does not mean a call for forces or a declaration of war, and it is a demand for change, not the beginning of a new phase itself.
+
+Q 96 | eng | Fill in the Blanks & Cloze Test
+Read the given passage and answer the questions that follow.
+The French Revolution is a revolutionary movement that occurred in France between 1787 and 1799 and reached to its (1)______ in 1789. This revolution had many causes but the most important of all was (2)______ of bourgeoisie, who were merchants, manufacturers and professionals. The peasants, many of them landowners, wanted to get rid of the practices of absolute monarchy and feudalism. Another factor was an increase in population due to decreased mortality rates. It was followed by economic predicament and minor revolts were common. This led to a clarion call for social reforms. Intellectuals like Rene Descartes wrote about new things about political, social and economic matters. A fundamental political and societal change was to occur. The French Revolution played a critical role in shaping modern nations by showing the world the power inherent in the will of the people.
+Select the most appropriate option to fill in blank no. 1.
+(1) foundation
+(2) middle
+(3) pinnacle
+(4) fall
+= 3
+~ 'Pinnacle' means the highest point or peak of something, so the revolution 'reached to its pinnacle in 1789' means it reached its peak in that year. 'Foundation' (base) and 'middle' are not points a movement 'reaches' as a climax, and 'fall' (decline or collapse) would mean the revolution ended in 1789, which contradicts the period up to 1799 given in the same sentence. The printed 'reached to' is unusual; the standard form is 'reached its pinnacle'.
+
+Q 97 | eng | Reading Comprehension
+Read the given passage and answer the questions that follow.
+The French Revolution is a revolutionary movement that occurred in France between 1787 and 1799 and reached to its (1)______ in 1789. This revolution had many causes but the most important of all was (2)______ of bourgeoisie, who were merchants, manufacturers and professionals. The peasants, many of them landowners, wanted to get rid of the practices of absolute monarchy and feudalism. Another factor was an increase in population due to decreased mortality rates. It was followed by economic predicament and minor revolts were common. This led to a clarion call for social reforms. Intellectuals like Rene Descartes wrote about new things about political, social and economic matters. A fundamental political and societal change was to occur. The French Revolution played a critical role in shaping modern nations by showing the world the power inherent in the will of the people.
+Select the most appropriate synonym of the word ‘Inherent’.
+(1) Artificial
+(2) Incited
+(3) Natural
+(4) Borrowed
+= 3
+~ 'Inherent' means existing in something as a natural, permanent or essential quality, as in the passage's 'the power inherent in the will of the people', that is, power that naturally belongs to the people's will. Its synonym is 'natural', present by nature rather than acquired from outside. 'Artificial' (made by people, not natural) and 'borrowed' (taken from someone else) are opposite in sense, and 'incited' (stirred up or provoked) is unrelated in meaning.
+
+Q 98 | eng | Reading Comprehension
+Read the given passage and answer the questions that follow.
+Algae are photosynthetic creatures that have pigments that aid in photosynthesis, such as chlorophyll. They do not, however, have the actual stems, roots or leaves found in vascular plants. While some of them have many cells, others are unicellular. They might establish colonies as well. The majority of algae are aquatic. Some are terrestrial, and they can be found on rocks, trees and moist soil. Certain algae species coexist well with other living things. For instance, lichens are a symbiotic relationship between green (and often blue-green) algae and fungi. Algae are members of a multiphyletic group. This indicates that there is no common ancestor and that the species in this category are not necessarily closely related. They do not have other morphoanatomical characteristics typical of vascular plants, but they do have one thing in common: they are eukaryotes with the principal pigment being chlorophyll, which allows them to perform photosynthesis. Phycology is the scientific name for the study of algae. The blue-green algae is one example of a reference. But some sources do not classify them as algae because they are prokaryotes.
+According to the passage, which is the main pigment in algae for photosynthesis?
+(1) Chlorophyll
+(2) Xanthophyll
+(3) Carotenoid
+(4) Melanin
+= 1
+~ The passage says algae have pigments 'such as chlorophyll' that aid photosynthesis, and adds that they 'are eukaryotes with the principal pigment being chlorophyll, which allows them to perform photosynthesis'. So the main pigment is chlorophyll, the green pigment that absorbs light energy. Xanthophyll and carotenoids are accessory pigments that the passage does not mention, and melanin is a pigment of animal skin and hair that plays no part in photosynthesis.
+
+Q 99 | eng | Reading Comprehension
+Read the given passage and answer the questions that follow.
+Algae are photosynthetic creatures that have pigments that aid in photosynthesis, such as chlorophyll. They do not, however, have the actual stems, roots or leaves found in vascular plants. While some of them have many cells, others are unicellular. They might establish colonies as well. The majority of algae are aquatic. Some are terrestrial, and they can be found on rocks, trees and moist soil. Certain algae species coexist well with other living things. For instance, lichens are a symbiotic relationship between green (and often blue-green) algae and fungi. Algae are members of a multiphyletic group. This indicates that there is no common ancestor and that the species in this category are not necessarily closely related. They do not have other morphoanatomical characteristics typical of vascular plants, but they do have one thing in common: they are eukaryotes with the principal pigment being chlorophyll, which allows them to perform photosynthesis. Phycology is the scientific name for the study of algae. The blue-green algae is one example of a reference. But some sources do not classify them as algae because they are prokaryotes.
+What is the central theme of the passage?
+(1) The anatomy of vascular plants
+(2) The diversity and characteristics of algae
+(3) The prokaryotic nature of blue-green algae
+(4) The symbiotic relationship between algae and fungi
+= 2
+~ The passage covers many features of algae: they photosynthesise, lack true stems, roots and leaves, may be unicellular or multicellular, live in water or on land, form symbioses such as lichens, belong to a multiphyletic group and are studied in phycology. So its central theme is the diversity and characteristics of algae. Vascular plants are mentioned only for comparison, and the prokaryotic blue-green algae and the algae-fungi symbiosis are single details, too narrow to be the main theme.
+
+Q 100 | eng | Reading Comprehension
+Read the given passage and answer the questions that follow.
+Algae are photosynthetic creatures that have pigments that aid in photosynthesis, such as chlorophyll. They do not, however, have the actual stems, roots or leaves found in vascular plants. While some of them have many cells, others are unicellular. They might establish colonies as well. The majority of algae are aquatic. Some are terrestrial, and they can be found on rocks, trees and moist soil. Certain algae species coexist well with other living things. For instance, lichens are a symbiotic relationship between green (and often blue-green) algae and fungi. Algae are members of a multiphyletic group. This indicates that there is no common ancestor and that the species in this category are not necessarily closely related. They do not have other morphoanatomical characteristics typical of vascular plants, but they do have one thing in common: they are eukaryotes with the principal pigment being chlorophyll, which allows them to perform photosynthesis. Phycology is the scientific name for the study of algae. The blue-green algae is one example of a reference. But some sources do not classify them as algae because they are prokaryotes.
+Which statement accurately describes vascular plants based on the information in the passage?
+(1) Vascular plants have true stems, roots and leaves, unlike algae.
+(2) Vascular plants are unicellular in structure.
+(3) Algae and vascular plants share the same morphoanatomical characteristics.
+(4) Vascular plants lack stems, roots and leaves.
+= 1
+~ The passage says algae 'do not, however, have the actual stems, roots or leaves found in vascular plants', which implies that vascular plants have true stems, roots and leaves, unlike algae. Option 4 states the reverse. Option 2 is wrong because the passage says some algae, not vascular plants, are unicellular, and option 3 contradicts the statement that algae do not have the other morphoanatomical characteristics typical of vascular plants.
+
+Q 101 | eng | Reading Comprehension
+Read the given passage and answer the questions that follow.
+Algae are photosynthetic creatures that have pigments that aid in photosynthesis, such as chlorophyll. They do not, however, have the actual stems, roots or leaves found in vascular plants. While some of them have many cells, others are unicellular. They might establish colonies as well. The majority of algae are aquatic. Some are terrestrial, and they can be found on rocks, trees and moist soil. Certain algae species coexist well with other living things. For instance, lichens are a symbiotic relationship between green (and often blue-green) algae and fungi. Algae are members of a multiphyletic group. This indicates that there is no common ancestor and that the species in this category are not necessarily closely related. They do not have other morphoanatomical characteristics typical of vascular plants, but they do have one thing in common: they are eukaryotes with the principal pigment being chlorophyll, which allows them to perform photosynthesis. Phycology is the scientific name for the study of algae. The blue-green algae is one example of a reference. But some sources do not classify them as algae because they are prokaryotes.
+What does the term 'multiphyletic group' mean in the context of algae?
+(1) Being closely related species
+(2) No common ancestor, not closely related
+(3) Having diverse morphoanatomical characteristics
+(4) Having a common ancestor
+= 2
+~ The passage explains the term directly: 'Algae are members of a multiphyletic group. This indicates that there is no common ancestor and that the species in this category are not necessarily closely related.' So the term means having no common ancestor and not being closely related. Options 1 and 4 state the opposite, and option 3, though algae do vary in form, is not what the term is said to mean. Biologists usually call such a group polyphyletic.
+
+Q 102 | eng | Reading Comprehension
+Read the given passage and answer the questions that follow.
+Subhas Chandra Bose, a prominent Indian nationalist leader, was convinced that India could not achieve independence without the use of force, and he believed that a military campaign was necessary to achieve this goal. In 1942, Bose formed the Indian National Army (INA) with the help of the Japanese.
+Bose travelled to Japan in 1941 to seek their support in the struggle against British rule in India. The Japanese were interested in having Bose’s help in their own efforts to expand their influence in Southeast Asia. Bose’s vision was to create a military force to fight against the British in India with the help of Japanese weapons and training. The INA was formed in Singapore in September 1942 with the slogan ‘Jai Hind’ (Victory to India). The INA consisted of soldiers who were primarily from the Indian community in Southeast Asia. They were trained by Japanese officers and were equipped with Japanese weapons. The INA fought alongside Japanese forces in Burma and other parts of Southeast Asia during World War II. Bose’s leadership of the INA and his military campaigns against the British in India made him a popular figure among many Indians. The consequences of the formation of the INA were significant. The INA’s campaigns against the British in India and the Indian soldiers’ role in the Burma campaign had a psychological impact on the British forces. The British were shocked that Indian soldiers had turned against them, undermining their confidence in maintaining control over India. The INA also had a significant impact on the Indian independence movement. Bose’s vision of a socialist India with equal rights for all citizens inspired many Indians. The INA became a symbol of the struggle against British colonialism, and Bose’s slogan of ‘Jai Hind’ became a rallying cry for the independence movement.
+However, the INA’s military campaigns were not successful in achieving their goal of freeing India from British rule. The INA suffered significant losses in battles, and their efforts were undermined by the Japanese surrender in 1945.
+What ultimately undermined the INA’s efforts to free India from British rule?
+(1) The Japanese surrender in 1945
+(2) The lack of support from the Indian and British people
+(3) Gandhi’s death
+(4) The inferior military tactics of the British forces
+= 1
+~ The last paragraph says the INA's campaigns did not free India from British rule: it 'suffered significant losses in battles, and their efforts were undermined by the Japanese surrender in 1945'. Since the INA depended on Japanese weapons, training and support, Japan's defeat in the Second World War ended its campaign. The passage says nothing about a lack of public support or inferior British tactics, and Gandhi's death came later, in January 1948, after independence.
+
+Q 103 | eng | Reading Comprehension
+Read the given passage and answer the questions that follow.
+Subhas Chandra Bose, a prominent Indian nationalist leader, was convinced that India could not achieve independence without the use of force, and he believed that a military campaign was necessary to achieve this goal. In 1942, Bose formed the Indian National Army (INA) with the help of the Japanese.
+Bose travelled to Japan in 1941 to seek their support in the struggle against British rule in India. The Japanese were interested in having Bose’s help in their own efforts to expand their influence in Southeast Asia. Bose’s vision was to create a military force to fight against the British in India with the help of Japanese weapons and training. The INA was formed in Singapore in September 1942 with the slogan ‘Jai Hind’ (Victory to India). The INA consisted of soldiers who were primarily from the Indian community in Southeast Asia. They were trained by Japanese officers and were equipped with Japanese weapons. The INA fought alongside Japanese forces in Burma and other parts of Southeast Asia during World War II. Bose’s leadership of the INA and his military campaigns against the British in India made him a popular figure among many Indians. The consequences of the formation of the INA were significant. The INA’s campaigns against the British in India and the Indian soldiers’ role in the Burma campaign had a psychological impact on the British forces. The British were shocked that Indian soldiers had turned against them, undermining their confidence in maintaining control over India. The INA also had a significant impact on the Indian independence movement. Bose’s vision of a socialist India with equal rights for all citizens inspired many Indians. The INA became a symbol of the struggle against British colonialism, and Bose’s slogan of ‘Jai Hind’ became a rallying cry for the independence movement.
+However, the INA’s military campaigns were not successful in achieving their goal of freeing India from British rule. The INA suffered significant losses in battles, and their efforts were undermined by the Japanese surrender in 1945.
+How did Subhas Chandra Bose view India’s fight for independence?
+(1) Through political negotiations
+(2) Through economic sanctions
+(3) Through military campaigns
+(4) Through non-violent means
+= 3
+~ The opening sentence says Bose 'was convinced that India could not achieve independence without the use of force, and he believed that a military campaign was necessary to achieve this goal'. So he saw India's freedom as something to be won through military campaigns, which is why he led the INA against the British. Non-violent means are the opposite of this view, and political negotiations and economic sanctions are not mentioned in the passage as Bose's approach.
+
+Q 104 | eng | Reading Comprehension
+Read the given passage and answer the questions that follow.
+Subhas Chandra Bose, a prominent Indian nationalist leader, was convinced that India could not achieve independence without the use of force, and he believed that a military campaign was necessary to achieve this goal. In 1942, Bose formed the Indian National Army (INA) with the help of the Japanese.
+Bose travelled to Japan in 1941 to seek their support in the struggle against British rule in India. The Japanese were interested in having Bose’s help in their own efforts to expand their influence in Southeast Asia. Bose’s vision was to create a military force to fight against the British in India with the help of Japanese weapons and training. The INA was formed in Singapore in September 1942 with the slogan ‘Jai Hind’ (Victory to India). The INA consisted of soldiers who were primarily from the Indian community in Southeast Asia. They were trained by Japanese officers and were equipped with Japanese weapons. The INA fought alongside Japanese forces in Burma and other parts of Southeast Asia during World War II. Bose’s leadership of the INA and his military campaigns against the British in India made him a popular figure among many Indians. The consequences of the formation of the INA were significant. The INA’s campaigns against the British in India and the Indian soldiers’ role in the Burma campaign had a psychological impact on the British forces. The British were shocked that Indian soldiers had turned against them, undermining their confidence in maintaining control over India. The INA also had a significant impact on the Indian independence movement. Bose’s vision of a socialist India with equal rights for all citizens inspired many Indians. The INA became a symbol of the struggle against British colonialism, and Bose’s slogan of ‘Jai Hind’ became a rallying cry for the independence movement.
+However, the INA’s military campaigns were not successful in achieving their goal of freeing India from British rule. The INA suffered significant losses in battles, and their efforts were undermined by the Japanese surrender in 1945.
+What was the primary reason for the Japanese to support Subhas Chandra Bose and the formation of the INA?
+(1) They believed in Bose’s vision of a communist India.
+(2) They wanted to expand their influence in Southeast Asia.
+(3) They were looking for allies in their fight against the British Empire.
+(4) They believed in India’s right to self-determination.
+= 2
+~ The passage states that 'The Japanese were interested in having Bose's help in their own efforts to expand their influence in Southeast Asia.' So their primary reason for backing Bose and the INA was their own aim of extending influence in the region. The passage calls Bose's vision socialist, not communist; it never says Japan believed in India's right to self-determination; and it gives expansion of influence, not a search for allies against Britain, as the motive.
+
+Q 105 | eng | Reading Comprehension
+Read the given passage and answer the questions that follow.
+Subhas Chandra Bose, a prominent Indian nationalist leader, was convinced that India could not achieve independence without the use of force, and he believed that a military campaign was necessary to achieve this goal. In 1942, Bose formed the Indian National Army (INA) with the help of the Japanese.
+Bose travelled to Japan in 1941 to seek their support in the struggle against British rule in India. The Japanese were interested in having Bose’s help in their own efforts to expand their influence in Southeast Asia. Bose’s vision was to create a military force to fight against the British in India with the help of Japanese weapons and training. The INA was formed in Singapore in September 1942 with the slogan ‘Jai Hind’ (Victory to India). The INA consisted of soldiers who were primarily from the Indian community in Southeast Asia. They were trained by Japanese officers and were equipped with Japanese weapons. The INA fought alongside Japanese forces in Burma and other parts of Southeast Asia during World War II. Bose’s leadership of the INA and his military campaigns against the British in India made him a popular figure among many Indians. The consequences of the formation of the INA were significant. The INA’s campaigns against the British in India and the Indian soldiers’ role in the Burma campaign had a psychological impact on the British forces. The British were shocked that Indian soldiers had turned against them, undermining their confidence in maintaining control over India. The INA also had a significant impact on the Indian independence movement. Bose’s vision of a socialist India with equal rights for all citizens inspired many Indians. The INA became a symbol of the struggle against British colonialism, and Bose’s slogan of ‘Jai Hind’ became a rallying cry for the independence movement.
+However, the INA’s military campaigns were not successful in achieving their goal of freeing India from British rule. The INA suffered significant losses in battles, and their efforts were undermined by the Japanese surrender in 1945.
+What was the significance of Bose’s slogan ‘Jai Hind’?
+(1) It symbolised the struggle against British colonialism.
+(2) It was a call to arms for the Indian and British Army.
+(3) It represented Bose’s vision of a capitalist India.
+(4) It manifests the vision of selected communities.
+= 1
+~ The passage says the INA became a symbol of the struggle against British colonialism and that Bose's slogan Jai Hind (Victory to India) became a rallying cry for the independence movement. So the slogan stood for, and inspired, the struggle against British colonial rule. It was not addressed to the British Army, which the INA fought against; the passage calls Bose's vision socialist, not capitalist; and the slogan united Indians in general rather than selected communities.
+
+Q 106 | eco | Agriculture, Industry & Trade
+What was the status of the agricultural sector in India before the Green Revolution?
+(1) Use of old technology and the absence of required infrastructure
+(2) Use of advanced technology and high productivity
+(3) Use of advanced technology and dependency on rainfall
+(4) Use of traditional technology and the abundance of required infrastructure
+= 1
+~ Before the Green Revolution of the mid-1960s, Indian farming used old technology (traditional seeds, wooden ploughs, organic manure) and lacked the required infrastructure such as assured irrigation, institutional credit, storage and markets. Most crops depended on the monsoon, yields were low and India imported food grains under the US PL-480 programme. From 1966–67 high-yielding variety seeds, chemical fertilisers, pesticides and irrigation raised output, first of wheat in Punjab, Haryana and western Uttar Pradesh. Options 2 and 3 wrongly speak of advanced technology, and option 4 of abundant infrastructure.
+
+Q 107 | sci | Chemistry
+What is the name of the ion with a charge of −1?
+(1) Monovalent ion
+(2) Polyvalent ion
+(3) Anion
+(4) Cation
+= 3
+~ An atom or group of atoms that gains electrons becomes negatively charged and is called an anion; one that loses electrons becomes a positively charged cation. An ion with a charge of −1, such as chloride (Cl⁻), fluoride (F⁻), hydroxide (OH⁻) or nitrate (NO₃⁻), is therefore an anion. 'Monovalent' only says the charge has a size of 1 and fits Na⁺ or K⁺ equally, so it does not name a negative ion; polyvalent ions carry charges of 2 or more.
+
+Q 108 | geo | Environment & Ecology
+Who mentioned ecosystem as 'the basic unit in ecology' in 1956?
+(1) Francis Evans
+(2) Aldo Leopold
+(3) John Harper
+(4) Rachel Carson
+= 1
+~ The American ecologist Francis C. Evans, in his 1956 paper in the journal Science titled 'Ecosystem as the basic unit in ecology', argued that the ecosystem, the living organisms of a place together with their physical environment, should be treated as the basic unit of ecology. The word 'ecosystem' had been coined by A.G. Tansley in 1935. Aldo Leopold is known for 'A Sand County Almanac' and the land ethic, Rachel Carson for 'Silent Spring' (1962), and John Harper for plant population biology.
+
+Q 109 | pol | Constitution & Rights
+In which of the following cases did the Supreme Court direct that, 'the Parliament cannot take away or abridge any of the fundamental rights for the Implementation of Directive Principles'?
+(1) Indira Sawhney Case, 1992
+(2) Keshvanand Bharti Case, 1973
+(3) Golak Nath Case, 1967
+(4) Minerva Mills Case, 1980
+= 3
+~ In I.C. Golak Nath v. State of Punjab (1967) an 11-judge bench ruled 6:5 that fundamental rights hold a 'transcendental' position and that a constitutional amendment is 'law' under Article 13, so Parliament cannot take away or abridge any fundamental right, even to implement the Directive Principles. Parliament answered with the 24th Amendment (1971). Kesavananda Bharati (1973) overruled Golak Nath and laid down the basic structure doctrine, Minerva Mills (1980) stressed the balance between Parts III and IV, and Indra Sawhney (1992) dealt with OBC reservation.
+
+Q 110 | ih | Ancient India
+Mathura was the second capital of ________ dynasty.
+(1) Maukhri
+(2) Gupta
+(3) Maurya
+(4) Kushana
+= 4
+~ The Kushanas ruled an empire stretching from Central Asia to the Gangetic plain in the first to third centuries CE. Under Kanishka their main capital was Purushapura (Peshawar), and Mathura was their second capital in the east. Mathura was also a great centre of Kushana art: its school carved red sandstone images of the Buddha, Jain tirthankaras and Hindu deities, and the headless statue of Kanishka was found at Mat near Mathura. The Mauryas and Guptas ruled from Pataliputra and the Maukharis from Kannauj.
+
+Q 111 | sci | Biology
+In which year did Walter Fleming stain the chromosomes to see them clearly and describe the entire process of mitosis?
+(1) 1956
+(2) 1780
+(3) 1901
+(4) 1882
+= 4
+~ The German biologist Walther Flemming used aniline dyes to stain the thread-like material in cell nuclei, which he named chromatin, and followed its behaviour through cell division in salamander cells. In his 1882 book 'Zellsubstanz, Kern und Zelltheilung' (Cell substance, nucleus and cell division) he described the whole process of nuclear division and coined the term 'mitosis'. The word 'chromosome' was introduced later, by Wilhelm Waldeyer in 1888.
+
+Q 112 | ih | Medieval India
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+A. The first battle of Panipat was one of the decisive battles of India.
+R. It brought into power a new band of invaders called Mughals.
+(1) Statements A and R are true, but R is not the correct explanation of A.
+(2) Statements A and R are true, and R is the correct explanation of A.
+(3) R is true, but A is false.
+(4) A is true, but R is false.
+= 2
+~ The First Battle of Panipat (21 April 1526) between Babur and Ibrahim Lodi, the last Lodi Sultan of Delhi, was one of India's decisive battles: Babur's field artillery and tulughma flanking tactics won it in a day, ending the Delhi Sultanate. It is called decisive precisely because it brought a new ruling power, the Mughals, to the throne of Delhi, so R explains A. Babur secured his hold by defeating Rana Sanga at Khanwa (1527) and the Afghans at Ghaghra (1529).
+
+Q 113 | cur | National
+Who urged political parties to engage in discussions that inspire unity rather than division and promote ideas instead of personal attacks in the address on the eve of National Voters Day in January 2024?
+(1) President Droupadi Murmu
+(2) Chief Election Commissioner Rajiv Kumar
+(3) Union Home Minister Amit Shah
+(4) Prime Minister Narendra Modi
+= 2
+~ On 24 January 2024, the eve of the 14th National Voters' Day, Chief Election Commissioner Rajiv Kumar said it was imperative that political parties engage in discussions that inspire rather than divide and promote ideas instead of personal attacks, ahead of the 2024 Lok Sabha elections. He also warned that any use of deepfakes or AI to mislead voters would be met with swift action. National Voters' Day is observed on 25 January, the foundation day of the Election Commission (1950). Rajiv Kumar was CEC from May 2022 to February 2025.
+
+Q 114 | sci | Physics
+Which of the following statements is/are correct?
+Statements:
+1) Ampere's Law describes the relationship between electric current and the magnetic field it produces.
+2) Maxwell's equations are a set of four fundamental equations governing electric and magnetic fields in the absence of charges and currents.
+(1) Only Statement 2
+(2) Neither Statement 1 nor 2
+(3) Both Statements 1 and 2
+(4) Only Statement 1
+= 4
+~ Statement 1 is correct: Ampère's circuital law relates the magnetic field around a closed loop to the electric current passing through it (∮B·dl = μ₀I). Statement 2 is wrong: Maxwell's four equations (Gauss's law for electricity, Gauss's law for magnetism, Faraday's law and the Ampère–Maxwell law) govern electric and magnetic fields in general, with charges and currents as their sources; only their special free-space form assumes there are no charges or currents. Hence only Statement 1 is correct.
+
+Q 115 | sci | Chemistry
+Identify the naturally occurring aluminum oxide mineral that usually forms hexagonal barrel-shaped prisms.
+(1) Corundum
+(2) Chalcopyrite
+(3) Olivine
+(4) Dolomite
+= 1
+~ Corundum is naturally occurring aluminium oxide (Al₂O₃). It crystallises in the hexagonal system and commonly forms pyramidal or barrel-shaped crystals. With a hardness of 9 on the Mohs scale, next only to diamond, it is used as an abrasive; emery is corundum mixed with iron oxides, and its gem varieties are ruby (red) and sapphire. Chalcopyrite is a copper iron sulphide (CuFeS₂), the main copper ore; olivine is a magnesium iron silicate; and dolomite is calcium magnesium carbonate.
+
+Q 116 | eco | Agriculture, Industry & Trade
+In December 1991, which act was amended to bring public enterprises under the purview of the Board for Industrial and Financial Reconstruction (BIFR) as part of the country's economic reforms program?
+(1) Industries Act
+(2) Financial Rehabilitation Act
+(3) Companies Act
+(4) Sick Industrial Companies Act
+= 4
+~ The Sick Industrial Companies (Special Provisions) Act, 1985 (SICA) set up the Board for Industrial and Financial Reconstruction (BIFR), which began work in 1987 to revive or wind up sick industrial companies. The Act originally left out government companies. As part of the 1991 reforms, Finance Minister Manmohan Singh moved an amendment in Parliament in December 1991 so that public sector enterprises also came under SICA and could be referred to the BIFR. SICA was later repealed with effect from December 2016, the BIFR was dissolved and such cases now go to the NCLT.
+
+Q 117 | eco | Planning, Growth & Budget
+Which of the following sentences is/are true?
+i. All isoclines are expansion paths but all expansion paths are not isoclines.
+ii. Short-run production functions involve adjusting all inputs, including fixed inputs like land or capital, to affect output.
+iii. Stock resources are the resources which are not used in one period of production but can be stored for a later period.
+(1) Only i
+(2) Only iii
+(3) Only ii and iii
+(4) Only ii
+= 2
+~ Statement i is reversed: an isocline joins points of equal slope (marginal rate of technical substitution) on successive isoquants, and the expansion path is the particular isocline along which that slope equals the input-price ratio, so all expansion paths are isoclines but not all isoclines are expansion paths. Statement ii describes the long run; in the short run at least one input, such as land or capital, stays fixed. Statement iii is correct: stock resources are not used up in one production period and can be stored for later, unlike flow resources such as labour.
+
+Q 118 | pol | Government & Parliament
+Which of the following Constitutional Amendment Acts made the president bound by the advice of the council of ministers headed by the prime minister?
+(1) 46th
+(2) 42nd
+(3) 48th
+(4) 40th
+= 2
+~ The 42nd Constitutional Amendment Act, 1976 amended Article 74(1) to say that the President 'shall' act in accordance with the advice of the Council of Ministers headed by the Prime Minister, making the advice binding. The 44th Amendment (1978) then let the President return the advice once for reconsideration, but he must act on the advice given after reconsideration. The 46th Amendment (1982) dealt with sales tax, the 48th (1984) with President's Rule in Punjab, and the 40th (1976) with maritime zones and Ninth Schedule laws.
+
+Q 119 | sci | Biology
+Charcot-Marie-Tooth disease is caused by duplication of the peripheral myelin protein-22 (PMP22) gene on which chromosome?
+(1) chromosome 15
+(2) chromosome 17
+(3) chromosome 21
+(4) chromosome 8
+= 2
+~ Charcot-Marie-Tooth disease is a group of inherited disorders of the peripheral nerves that cause weakness and wasting of the feet, legs and hands, often with high-arched feet. Its commonest form, CMT type 1A, is caused by a duplication of the PMP22 gene on the short arm of chromosome 17 (17p12); the extra copy disturbs the myelin sheath of the nerves and slows nerve conduction. A deletion of the same region causes a different disorder, hereditary neuropathy with liability to pressure palsies (HNPP).
+
+Q 120 | geo | Indian Geography
+Which Indian city experiences the LEAST difference in average temperature between its hottest and coldest months?
+(1) Bhopal
+(2) Delhi
+(3) Mumbai
+(4) Srinagar
+= 3
+~ Mumbai lies on the west coast, and the moderating influence of the Arabian Sea gives it a maritime or equable climate: its warmest and coolest months differ in mean temperature by only about 6°C. Places far from the sea have a continental climate with a large annual range of temperature; Delhi's monthly means differ by nearly 20°C between January and June, Srinagar has cold winters and warm summers with a range of over 20°C, and Bhopal in central India also has a wide range.
+
+Q 121 | ih | Modern India
+Match the books in List 1 with their authors in List 2.
+List 1 | List 2
+A. The Philosophy of the Bomb | 1. Sachindranath Sanyal
+B. Bandi Jiwan | 2. Bankim Chandra Chattopadhyay
+C. Pather Dabi | 3. Bhagwati Charan Vohra
+D. Anandmath | 4. Sarat Chandra Chattopadhyay
+(1) A-4, B-3, C-2, D-1
+(2) A-3, B-1, C-2, D-4
+(3) A-3, B-1, C-4, D-2
+(4) A-1, B-3, C-4, D-2
+= 3
+~ 'The Philosophy of the Bomb' (1930) was written by Bhagwati Charan Vohra of the Hindustan Socialist Republican Association, with Chandrashekhar Azad, as a reply to Gandhi's article 'The Cult of the Bomb'. 'Bandi Jiwan' is the prison memoir of the revolutionary Sachindranath Sanyal, founder of the Hindustan Republican Association. 'Pather Dabi' (1926), a novel about a revolutionary society banned by the British, was by Sarat Chandra Chattopadhyay, and 'Anandamath' (1882), which contains 'Vande Mataram', was by Bankim Chandra Chattopadhyay. So A-3, B-1, C-4, D-2.
+
+Q 122 | sci | Chemistry
+Which of the following is a monoatomic gas?
+(1) Oxygen
+(2) Hydrogen
+(3) Xenon
+(4) Chlorin
+= 3
+~ The noble gases helium, neon, argon, krypton, xenon and radon have completely filled outer electron shells, so their atoms do not bond with one another and exist as single atoms; they are monoatomic gases, and xenon is one of them. Oxygen (O₂), hydrogen (H₂) and chlorine (Cl₂) exist as diatomic molecules in which two atoms share electrons. ('Chlorin' in option 4 is SSC's spelling of chlorine.)
+
+Q 123 | geo | World & Physical Geography
+The rotating columns of air that occur over water bodies and are generally less severe than land tornadoes are known as:
+(1) waterspouts
+(2) hurricanes
+(3) typhoons
+(4) squalls
+= 1
+~ A waterspout is a rotating column of air and spray, usually seen as a funnel-shaped cloud, that forms over a lake or the sea. Most are 'fair-weather' waterspouts that develop from the water surface upward under cumulus clouds and are weaker and shorter-lived than land tornadoes; 'tornadic' waterspouts are true tornadoes over water. Hurricanes and typhoons are tropical cyclones hundreds of kilometres across (the names used in the Atlantic and the north-west Pacific), and squalls are sudden, short-lived increases in wind speed.
+
+Q 124 | geo | Indian Geography
+Select the most appropriate answer from the options given below regarding Census 2011.
+Statement 1. The population of India has increased by more than 181 million during the decade 2001-2011.
+Statement 2. The percentage decadal growth during 2001-2011 has registered the sharpest decline since Independence.
+(1) Both statements 1 and 2 are not correct.
+(2) Both statements 1 and 2 are correct.
+(3) Only statement 1 is correct.
+(4) Only statement 2 is correct.
+= 2
+~ Census 2011 counted about 121 crore (1,210.8 million) people. Between 2001 and 2011 India added more than 181 million people (about 182 million in the final figures), slightly fewer than the population of Brazil. Yet the decadal growth rate fell from 21.54% in 1991–2001 to 17.64% in 2001–2011 (provisional figures), a drop of 3.9 percentage points, which the Census described as the sharpest decline since Independence. So both statements are correct.
+
+Q 125 | eco | Schemes & Welfare
+The Bharatmala project of the Government of India comes under which of the following Ministries of India?
+(1) Ministry of Ports Shipping and Waterways
+(2) Ministry of Environment and Forest and Climate Change
+(3) Ministry of Home Affairs
+(4) Ministry of Road Transport and Highways
+= 4
+~ Bharatmala Pariyojana is the Ministry of Road Transport and Highways' umbrella programme for national highways, approved by the Union Cabinet in October 2017. Phase I aimed at about 34,800 km of roads, including economic corridors, inter-corridor and feeder routes, border and international connectivity roads, coastal and port connectivity roads and expressways, built mainly through NHAI, NHIDCL and state agencies. Its port-sector counterpart, Sagarmala, belongs to the Ministry of Ports, Shipping and Waterways, which makes option 1 a tempting wrong choice.
+
+Q 126 | cur | National
+Which portal allowed stakeholders seamless access to information related to funding, documentation, project monitoring, and approval through four efficient ways of logging in for monitoring the implementation of Centrally Sponsored Schemes in 2023?
+(1) Nyaya Vikas Portal
+(2) Viksit Bharat Portal
+(3) Digital India Portal
+(4) Pradhan Mantri Jan bhagidari Yojana Portal
+= 1
+~ The Nyaya Vikas portal of the Department of Justice (Ministry of Law and Justice) monitors the Centrally Sponsored Scheme for Development of Infrastructure Facilities for the Judiciary, run since 1993-94 to build court halls, judges' residences, lawyers' halls, toilet complexes and digital computer rooms for district and subordinate courts. Through it stakeholders reach information on funding, documents, project progress and approvals, with four ways of logging in, and projects are geo-tagged on ISRO's Bhuvan maps. The Centre and states share the cost 60:40 (90:10 in north-eastern and Himalayan states).
+
+Q 127 | cur | Sports
+Who won the title at the World Chess Armageddon Asia & Oceania event in April 2023?
+(1) P Harikrishna
+(2) Viswanathan Anand
+(3) Koneru Humpy
+(4) D Gukesh
+= 4
+~ In April 2023 the Indian grandmaster D. Gukesh won the Asia & Oceania event of World Chess's Armageddon Championship Series, beating Uzbekistan's Nodirbek Abdusattorov in the final and earning a place in the series' Grand Final. In an Armageddon game White gets more time but must win, while a draw counts as a win for Black. Gukesh went on to win the 2024 Candidates tournament and, in December 2024 at Singapore, beat Ding Liren to become, at 18, the youngest undisputed world chess champion.
+
+Q 128 | cur | National
+In the year 2020, National Digital Health Mission was launched on which of the following occasions?
+(1) Gandhi Jayanti
+(2) Diwali
+(3) Independence Day
+(4) Republic Day
+= 3
+~ Prime Minister Narendra Modi announced the National Digital Health Mission (NDHM) in his Independence Day address from the Red Fort on 15 August 2020, and it began as a pilot in six Union Territories. It aims to give every citizen a digital health ID and to link doctors, hospitals, laboratories and health records in one digital health ecosystem. On 27 September 2021 it was launched nationwide as the Ayushman Bharat Digital Mission (ABDM), implemented by the National Health Authority.
+
+Q 129 | ih | Modern India
+Who among the following was the first Home Minister of Independent India?
+(1) Maulana Abdul Kalam Azad
+(2) Baldev Singh
+(3) Sardar Vallabh Bhai Patel
+(4) Humayun Kabir
+= 3
+~ Sardar Vallabhbhai Patel was the first Home Minister and Deputy Prime Minister of independent India (1947–1950) in Jawaharlal Nehru's cabinet. Holding the States portfolio as well, he led the integration of more than 560 princely states, which earned him the title 'Iron Man of India'; his birthday, 31 October, is observed as Rashtriya Ekta Diwas. Maulana Abul Kalam Azad was the first Education Minister and Baldev Singh the first Defence Minister, while Humayun Kabir became a Union minister later.
+
+Q 130 | sci | Chemistry
+Which theory, independently introduced in 1923, led to the concept of acid-base conjugate pairs?
+(1) Lewi's theory
+(2) Brønsted-Lowry theory
+(3) Arrhenius theory
+(4) Davy's theory
+= 2
+~ In 1923 Johannes Brønsted of Denmark and Thomas Lowry of England independently defined an acid as a proton (H⁺) donor and a base as a proton acceptor. When an acid gives up a proton, what remains is its conjugate base, and a base that takes a proton becomes its conjugate acid; in HCl + H₂O → H₃O⁺ + Cl⁻, Cl⁻ is the conjugate base of HCl. Arrhenius (1880s) defined acids and bases by H⁺ and OH⁻ ions in water, and Lewis (also 1923) by accepting or donating an electron pair.
+
+Q 131 | comp | MS Office & Applications
+What is the primary advantage of being able to insert and delete slides in an MS PowerPoint presentation?
+(1) To apply different templates to individual slides
+(2) To enable the addition of multimedia content
+(3) To allow for dynamic content adjustment and organisation
+(4) To enhance slide transitions
+= 3
+~ Inserting and deleting slides lets the presenter adjust and reorganise the content of a PowerPoint presentation as it develops: a new slide (Home > New Slide, or Ctrl+M) can be added wherever a point needs more space, an unwanted slide can be selected and deleted, and the order can be rearranged in Slide Sorter view or the thumbnail pane. Themes and templates (Design tab), multimedia (Insert tab) and transitions (Transitions tab) are separate features that do not depend on adding or removing slides.
+
+Q 132 | comp | Internet, Networking & Security
+Which of the following technologies allows real-time communication over the Internet, such as voice and video calls, without requiring additional software or hardware beyond a web browser?
+(1) FTP
+(2) Email
+(3) VoIP
+(4) WebRTC
+= 4
+~ WebRTC (Web Real-Time Communication) is an open W3C and IETF standard built into modern browsers such as Chrome, Firefox, Safari and Edge. Through JavaScript APIs it lets a web page use the camera and microphone and exchange audio, video and data directly between users in real time, with no plug-in or separate app; browser-based video meetings use it. VoIP is the general technique of carrying voice over IP networks and usually needs a softphone app or an IP phone, FTP transfers files, and e-mail is not real-time.
+
+Q 133 | comp | Internet, Networking & Security
+Which type of virus infects the boot sector of floppy disks or the Master Boot Record (MBR) of hard disks?
+(1) Macro Virus
+(2) Resident Virus
+(3) Direct Action Virus
+(4) Boot Sector Virus
+= 4
+~ A boot sector virus infects the boot sector of a floppy disk or the Master Boot Record (MBR) of a hard disk, so it is loaded into memory before the operating system every time the computer starts from that disk; Brain (1986), the first IBM PC virus, was of this type. A macro virus hides in documents as Word or Excel macros, a resident virus stays in RAM and infects files as they are opened, and a direct action virus attaches to executable files and acts only when that file is run.
+
+Q 134 | comp | MS Office & Applications
+What is the main purpose of using a template when creating a presentation in MS PowerPoint?
+(1) To ensure consistency and professionalism
+(2) To automatically insert multimedia content
+(3) To create interactive quizzes within slides
+(4) To add complex animations easily
+= 1
+~ A PowerPoint template (.potx file) is a ready-made pattern of slide masters, layouts, theme colours, fonts, backgrounds and placeholders. Building a presentation from a template gives every slide the same design and formatting, so the deck looks consistent and professional and the user can concentrate on the content; organisations often use one template so that all their presentations carry the same branding. Multimedia, quizzes and animations are added separately through the Insert and Animations tabs, not by the template itself.
+
+Q 135 | comp | Internet, Networking & Security
+Which device is commonly used to connect computers within a LAN?
+(1) Router
+(2) Repeater
+(3) Switch
+(4) Modem
+= 3
+~ A switch is the standard device for connecting computers within a local area network. It works at the data link layer (Layer 2), learns the MAC address of the device on each port and forwards each frame only to the port of the intended recipient, unlike a hub, which repeats data to every port. A router joins different networks (for example the LAN and the Internet) using IP addresses, a repeater only regenerates a weakening signal to extend its reach, and a modem converts digital data into signals for telephone or cable lines and back.
+
+Q 136 | comp | Internet, Networking & Security
+Which method is used to protect sensitive information during data transmission?
+(1) Decryption
+(2) Hashing
+(3) Secure Socket Layer (SSL)
+(4) Compression
+= 3
+~ Secure Sockets Layer (SSL), now replaced by its successor Transport Layer Security (TLS), encrypts the data travelling between a client and a server, so passwords, card numbers and other sensitive information cannot be read if intercepted; it also authenticates the server with a digital certificate and checks that data is not altered. HTTPS is HTTP over SSL/TLS (the browser padlock). Decryption is the receiver's step of turning ciphertext back into plain text, hashing gives a one-way digest used to check integrity, and compression only reduces size.
+
+Q 137 | comp | Computer Basics & Hardware
+Which of the following statements about computer memory is/are correct?
+RAM is volatile memory, meaning it loses data when power is turned off.
+ROM is used to store essential instructions required for the computer to boot.
+(1) Both 1 and 2
+(2) Neither 1 nor 2
+(3) Only 2
+(4) Only 1
+= 1
+~ Both statements are correct (statement 1 is the RAM sentence, statement 2 the ROM sentence). RAM (Random Access Memory) is volatile: it holds the programs and data in current use only while power is on, and its contents are lost when the computer is switched off. ROM (Read Only Memory) is non-volatile and stores firmware such as the BIOS or UEFI, whose start-up instructions run the power-on self-test (POST) and load the operating system, that is, boot the computer.
+
+Q 138 | comp | Software & Operating Systems
+Match the file locating features in column A with their corresponding functionalities in column B.
+Column A | Column B
+1. Search Bar | a) Displays files and folders recently accessed
+2. Quick Access | b) Allows grouping and sorting of files by attributes
+3. Wildcards | c) Refines searches for files with partial names
+4. File Sorting | d) Locates files and folders by typing keywords
+(1) 1-b, 2-d, 3-a, 4-c
+(2) 1-c, 2-b, 3-a, 4-d
+(3) 1-a, 2-c, 3-b, 4-d
+(4) 1-d, 2-a, 3-c, 4-b
+= 4
+~ In Windows File Explorer: the Search Bar (1-d) finds files and folders that match a typed keyword; Quick Access (2-a) shows pinned and frequently used folders and recently accessed files (in Windows 11 it sits on the Home page); Wildcards (3-c) widen a search when a name is only partly known, * standing for any characters and ? for one character, as in report*.docx; File Sorting (4-b) arranges and groups files by attributes such as name, date modified, type or size. Hence 1-d, 2-a, 3-c, 4-b.
+
+Q 139 | comp | MS Office & Applications
+Which feature in MS Word allows the user to apply a consistent look across text elements such as headings, titles and subtitles?
+(1) Macros
+(2) Table
+(3) Styles
+(4) Template
+= 3
+~ A style in Microsoft Word is a named set of formatting (font, size, colour, spacing, indentation) applied in one click from the Styles gallery on the Home tab. Using built-in styles such as Title, Subtitle, Heading 1 and Heading 2 gives every such element the same look; changing a style updates all text that uses it, and heading styles also feed the Navigation Pane and an automatic table of contents. Macros record and replay tasks, tables arrange data in rows and columns, and a template is a pattern for a whole document.
+
+Q 140 | comp | Computer Basics & Hardware
+Which of the following is an example of a type of ROM that can be electronically erased and reprogrammed multiple times?
+(1) Mask ROM
+(2) EPROM
+(3) PROM
+(4) EEPROM
+= 4
+~ EEPROM (Electrically Erasable Programmable Read-Only Memory) can be erased and rewritten electrically, byte by byte, many times without being removed from the circuit; flash memory, used in BIOS chips, pen drives and SSDs, is a faster block-erasable form of it. EPROM can also be reprogrammed, but it must be taken out and erased with ultraviolet light through a quartz window. PROM can be programmed only once by the user, and mask ROM has its contents fixed during manufacture.
+
+Q 141 | comp | MS Office & Applications
+Which keyboard shortcut is used for adding bullets in MS Word 2010?
+(1) Ctrl + Shift + L
+(2) Ctrl + L
+(3) Ctrl + Alt + L
+(4) Shift + L
+= 1
+~ In Microsoft Word for Windows, Ctrl+Shift+L turns the selected paragraph into a bulleted item; Microsoft's support pages give it as the shortcut to add a bullet, and the same key worked in Word 2010 and earlier versions, with Ctrl+Shift+N returning the text to the Normal style. Ctrl+L aligns the paragraph to the left, Ctrl+Alt+L inserts a LISTNUM field, and Shift+L just types a capital L. Bullets can also be added with the Bullets button in the Paragraph group of the Home tab.
+
+Q 142 | comp | MS Office & Applications
+Which is the correct keyboard shortcut for adjusting the column width in MS Excel?
+(1) Alt + H + O + W
+(2) Ctrl + O + W + H
+(3) Shift + H + O + W
+(4) Ctrl + H + O + W
+= 1
+~ In ribbon versions of Excel (2007 onwards) this is an access-key sequence, pressed one key after another: Alt shows the Key Tips, H opens the Home tab, O opens the Format menu of the Cells group and W opens the Column Width box, where a width of up to 255 characters can be typed. In the same way Alt, H, O, I autofits the column and Alt, H, O, H sets the row height. Ctrl+O opens a file and Ctrl+H opens Find and Replace, so the other options do not work.
+
+Q 143 | comp | Computer Basics & Hardware
+Select which of the given statement(s) is/are True or False for the Central Processing Unit (CPU) of the Computer Systems.
+(i) The CPU's clock speed controls the timing and execution speed of instructions.
+(ii) The CPU's cache memory provides high-speed access to frequently used instructions and data.
+(1) (i) True, (ii) True
+(2) (i) False, (ii) True
+(3) (i) True, (ii) False
+(4) (i) False, (ii) False
+= 1
+~ Both statements are true. The clock speed of a CPU, measured in hertz (now gigahertz, billions of cycles per second), sets the pace of the internal clock that times and synchronises the fetch-decode-execute cycle, so a higher clock speed generally means faster execution of instructions. Cache memory is a small, very fast SRAM memory on or close to the processor (levels L1, L2, L3) that keeps copies of frequently used instructions and data, so the CPU need not wait for slower main memory each time.
+
+Q 144 | comp | Software & Operating Systems
+Which operation can one directly perform using File Explorer in Windows?
+(1) Manage user accounts
+(2) Move, copy, or delete files
+(3) Modify system settings
+(4) Run diagnostic tests
+= 2
+~ File Explorer (called Windows Explorer in older versions; opened with Windows key + E) is the file-management tool of Windows. In it a user directly creates, opens, renames, moves, copies and deletes files and folders, using Cut, Copy and Paste, drag-and-drop or the Delete key. User accounts are managed in Settings > Accounts or the Control Panel, system settings are changed in the Settings app or Control Panel, and diagnostic tests are run with tools such as Windows Memory Diagnostic, not from File Explorer.
+
+Q 145 | comp | Internet, Networking & Security
+What security mechanism ensures that system updates are installed without user intervention?
+(1) Intrusion Detection System
+(2) Secure Boot
+(3) Firewall
+(4) Patch management software
+= 4
+~ Patch management software automatically finds, downloads and installs updates (patches) for the operating system and applications on a schedule, without the user having to act, so known security holes are closed quickly; automatic Windows Update, or WSUS and Microsoft Intune in organisations, are examples. An intrusion detection system only monitors activity and raises alerts about suspicious behaviour, a firewall filters incoming and outgoing traffic by rules, and Secure Boot, a UEFI feature, lets only trusted, digitally signed software load at start-up.
+
+Q 146 | comp | Computer Basics & Hardware
+What is the primary reason DRAM needs to be refreshed periodically?
+(1) To clear unused data
+(2) To allow the CPU to access new data
+(3) To prevent data corruption caused by magnetic fields
+(4) To recharge the capacitors storing data bits
+= 4
+~ Dynamic RAM stores each bit as an electric charge in a tiny capacitor paired with a transistor. The charge leaks away within milliseconds, so a stored 1 would fade into a 0; the memory controller therefore reads and rewrites every row at regular intervals (typically within 64 ms) to recharge the capacitors, which is why the memory is called dynamic. Static RAM, used for cache, keeps bits in flip-flops and needs no refresh while power is on. Magnetic fields concern hard disks, not DRAM.
+
+Q 147 | comp | Internet, Networking & Security
+Which of the following best describes Electronic Mail (E-mail)?
+(1) A type of secure online transaction system.
+(2) A method of sending messages electronically over a computer network.
+(3) A system for storing digital files on the cloud.
+(4) A service used to make phone calls over the internet.
+= 2
+~ Electronic mail (e-mail) is a method of sending messages, with attachments such as documents and pictures, electronically from one user to another over a computer network, usually the Internet. Each user has an address of the form name@domain; messages are sent with SMTP and wait on a mail server until the recipient retrieves them with POP3 or IMAP, so the recipient need not be online at the time. Ray Tomlinson sent the first network e-mail on ARPANET in 1971 and introduced the @ sign.
+
+Q 148 | comp | MS Office & Applications
+What is the maximum length of characters that can be accommodated in a column in MS Excel 2003?
+(1) 512 characters
+(2) 1064 characters
+(3) 255 characters
+(4) 65536 characters
+= 3
+~ The stem means the maximum column width. An Excel column can be at most 255 characters wide, the width being measured in characters of the standard font; the limit was 255 in Excel 2003 and is the same in current versions. It should not be confused with other limits: an Excel 2003 worksheet had 65,536 rows and 256 columns (A to IV) and a cell could hold 32,767 characters, while from Excel 2007 a sheet has 1,048,576 rows and 16,384 columns (A to XFD). 512 and 1064 are not Excel limits.
+
+Q 149 | comp | Software & Operating Systems
+Match the Task Manager tabs in column A with their respective functionalities in column B.
+Column A | Column B
+1. Processes | a) Monitors overall CPU, memory, disk, and network usage
+2. Performance | b) Displays active applications and background processes
+3. Startup | c) Manages programs that run during system startup
+4. App History | d) Shows resource usage for Windows Store apps
+(1) 1-d, 2-b, 3-a, 4-c
+(2) 1-a, 2-c, 3-b, 4-d
+(3) 1-c, 2-b, 3-d, 4-a
+(4) 1-b, 2-a, 3-c, 4-d
+= 4
+~ In Windows Task Manager (Ctrl+Shift+Esc): Processes (1-b) lists the running apps and background processes with the resources each uses; Performance (2-a) shows live graphs of overall CPU, memory, disk, network and GPU use; Startup (3-c, called Startup apps in Windows 11) lets the user enable or disable programs that run when Windows starts; App history (4-d) shows the resource usage of Windows Store (UWP) apps over the past 30 days. Hence 1-b, 2-a, 3-c, 4-d.
+
+Q 150 | comp | MS Office & Applications
+Which action should be taken in Microsoft Outlook to send a received email to another person, while keeping the original message for your records?
+(1) Use the 'Archive' option and create a new email.
+(2) Click on 'Reply All' and select 'Forward' from the options.
+(3) Open the email, click on 'Forward', and enter the recipient's email address.
+(4) Click on 'Reply' and add the new recipient's email address.
+= 3
+~ Forward sends a copy of a received message, together with its attachments, to someone else: open or select the email, click Forward (Ctrl+F in Outlook), type the recipient's address in the To box, add a note if needed and click Send. The original message stays in the Inbox and the forwarded copy is saved in Sent Items. Reply and Reply All answer only the sender or all the original recipients and leave out attachments, while Archive just moves the message out of the Inbox into the Archive folder.

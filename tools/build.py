@@ -205,7 +205,7 @@ CGL_PAPERS = [
   _cgl_t1('c25s2', 2025, '18 September', 2, '12:30 PM', 'cgl-2025-tier1-18sep-shift2.txt'),
   _cgl_t1('c25s3', 2025, '18 September', 3, '4:00 PM', 'cgl-2025-tier1-18sep-shift3.txt'),
   dict(id='c25t2', file='cgl-2025-tier2-paper1.txt', year=2025, stage='Tier-II Paper I', short='Tier-II 2025 · Paper I',
-       title='SSC CGL 2025 Tier-II, Paper I', notif='Held January 2026 · SSC key', held='January 2026',
+       title='SSC CGL 2025 Tier-II, Paper I', notif='Held 19 January 2026 · SSC key', held='19 January 2026',
        key="SSC's answer key as marked on the candidate's response sheet", fmt='mcq', slug='ssc-cgl-2025-tier-2-paper-1-question-paper-with-answers',
        alt='Mains', kwname='SSC CGL 2025 Tier 2 Paper 1', hi_paper='टियर-2 पेपर-1', blurb=CGL_T2_BLURB, mins=135),
   _cgl_t1('c24s1', 2024, '9 September', 1, '9:00 AM', 'cgl-2024-tier1-09sep-shift1.txt'),
@@ -1999,7 +1999,8 @@ def pyq_page(conf, papers, questions):
               f'<h2>Every previous paper, one pass</h2>'
               f'<p>One payment of ₹{PAY["pyq_price"]} for the whole website, valid for 12 months. Every answer and explanation in English and {esc(l2["name"])}, '
               f'practice question by question, timed tests, PYQ sectionals, subject and topic quizzes, and all study tools. '
-              f'Every paper runs with a timer (1 minute per question) that you can switch off and on at the top of the screen.</p></div>'
+              + ('Every paper runs with its real time limit (' + ', '.join(f'{m} minutes for {esc(st)}' for st, m in dict.fromkeys((p['stage'], p['mins']) for p in allp if p.get('mins'))) + ') on a timer that you can switch off and on at the top of the screen.</p></div>'
+                 if allp and allp[0].get('mins') else 'Every paper runs with a timer (1 minute per question) that you can switch off and on at the top of the screen.</p></div>') +
               f'<div class="cbuy"><a class="cta" href="{pb}?buy=pyq">Get it for ₹{PAY["pyq_price"]}</a>'
               + (f'<a class="try" href="#free-sample">Try {len(sample)} free questions first ↓</a>' if sample else '') + '</div></div>'
               f'<h3>{esc(seo)} papers in this course ({len(allp)} papers, {len(questions):,} questions)</h3><ol class="clist">' + ''.join(row(p) for p in allp) + '</ol>'
