@@ -689,9 +689,9 @@ def main():
                      .replace('{{TILES}}', tiles)
                      .replace('{{NOTES_NAV}}', '<a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>' if enotes else '')
                      .replace('{{NOTES_FOOT}}', '<a href="#notes">Study material</a> · ' if enotes else ''))
-        root_title = 'PYQs with Answers – APPSC Group 1 & Group 2, TS Police SI & Constable, UPSC CAPF Previous Papers | Learn with Anil'
+        root_title = 'PYQs with Answers – APPSC Group 1 & 2, TS Police SI & Constable, UPSC CAPF & EPFO Previous Papers | Learn with Anil'
         root_desc = (f'Previous year question papers (PYQs) with answers: APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
-                     f'(Telangana police, TSLPRB / TGPRB) and UPSC CAPF AC. {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
+                     f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO) and TGPSC HMWSSB Manager. {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
                      f'One ₹45 PYQ Pass for every exam; TGPSC, UPSC, SSC, banking and railway exams are being added.')
         home_title = conf['title']
         ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
@@ -810,6 +810,7 @@ def main():
     sm.append('</urlset>')
     open(os.path.join(DIST, 'site', 'sitemap.xml'), 'w').write('\n'.join(sm) + '\n')
     open(os.path.join(DIST, 'site', 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n')
+    open(os.path.join(DIST, 'site', 'llms.txt'), 'w', encoding='utf-8').write(llms_txt(loaded, sum(len(q) for _, _, q in loaded)))
     # extra files served as-is at the site root (search-engine verification files etc.)
     static = os.path.join(SRC, 'static')
     if os.path.isdir(static):
@@ -1368,6 +1369,43 @@ def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None, unlock=No
         return ''.join(parts)
     parts.append(f'<details><summary>Show answer</summary><p class="ans">Answer: {esc(ans)}</p>{te_ans}<p class="why">{esc(q["w"])}</p>{wt}</details></li>')
     return ''.join(parts)
+
+
+def llms_txt(loaded, grand):
+    """/llms.txt: a plain summary of the site for AI assistants (ChatGPT, Claude, Perplexity …) that cite pages when people
+    ask where to find previous papers. ChatGPT was the biggest source of visitors on 24 Oct 2026."""
+    exams = [c for c, _, _ in loaded]
+    L = [f'# Learn with Anil PYQs (learnwithanil.in)', '',
+         f'> Previous year question papers (PYQs) of Indian government recruitment exams with answers from the official final keys, '
+         f'a short explanation for every question, and online practice: question-by-question practice with a timer, timed tests, '
+         f'subject-wise (sectional) tests and topic-wise quizzes. Made by Jupudi Anil Kumar, a civil-services educator in Hyderabad.', '',
+         'Key facts:',
+         f'- {grand:,} questions from the official papers of {len(exams)} exams: ' + ', '.join(c['name'] for c in exams) + '.',
+         '- Answers come only from the official keys published by the recruiting body (APPSC, TSLPRB/TGPRB, UPSC, TSPSC/TGPSC). '
+         'For a few old APPSC papers (Group 1 2019 and 2023, Group 2 2019) APPSC printed only the correct answer; there the other three options are written by Learn with Anil and labelled.',
+         '- Languages: English with Telugu for APPSC, TS Police and TGPSC exams; English with Hindi for UPSC exams.',
+         '- Free: every question is public on the paper and question pages, with the answers and explanations of the first 10 questions of each paper, and a daily question of the day.',
+         f'- PYQ Pass: ₹{PAY["pyq_price"]} once for 12 months, covering every previous paper of every exam on the site (and exams added later): all answers and explanations, practice, timed tests, sectionals and study tools.']
+    for c in exams:
+        mk = MOCK_PACKS.get(c['id']); up = UPCOMING_PACKS.get(c['id'])
+        if mk: L.append(f'- {mk["title"]}: ₹{mk["price"]} for {mk["n"]} full-length mock tests ({live_text(mk).replace(" (included in the price)", "").rstrip(".")}, all included in the price). {SITE_URL}{c["pb"]}mock-test.html')
+        elif up: L.append(f'- {up["name"]}: ₹{up["price"]} for {up["n"]} mock tests, coming soon. {SITE_URL}{c["pb"]}mock-test.html')
+    if BB_URL: L.append(f'- Bahubali Test Series (APPSC Group 2 Mains): ₹250 for 24 full-length tests. {SITE_URL}{BB_URL}')
+    L += ['- Not affiliated with APPSC, TSLPRB, UPSC, TGPSC or any recruiting body.', '', '## Exams and their previous papers']
+    for c, papers, questions in loaded:
+        base = c['dir'] + '/' if c['dir'] else ''
+        L.append(f'- [{c["name"]} previous year question papers with answers]({SITE_URL}{c["pb"]}): {len(questions):,} questions, '
+                 f'English and {c["l2"]["name"]}. PYQs: {SITE_URL}{c["pb"]}pyqs.html · Sectional tests: {SITE_URL}{c["pb"]}sectional-tests.html')
+        for p in sorted(papers, key=lambda p: (-p['year'], p['id'])):
+            L.append(f'  - [{paper_kw(c, p)} question paper with answers]({SITE_URL}/{base}papers/{p["slug"]}.html) — held {p["held"]}, {p["count"]} questions')
+    L += ['', '## Pages for each recruiting board']
+    for rel, X in LANDINGS.items():
+        if any(c['board'] == X['board'] for c in exams): L.append(f'- [{X["title"].split(" | ")[0]}]({SITE_URL}/{rel})')
+    for rel, N in NOTIFS.items():
+        if any(c['id'] == N['exam'] for c in exams): L.append(f'- [{re.sub("<[^>]+>", "", N["h1"])}]({SITE_URL}/{rel})')
+    L += ['', '## About', f'- [About Jupudi Anil Kumar]({SITE_URL}/appsc-group-2/about/): civil-services educator, 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants.',
+          f'- Instagram: https://www.instagram.com/{INSTAGRAM}/ · Telegram: https://t.me/learn_with_anil06', f'- Sitemap: {SITE_URL}/sitemap.xml', '']
+    return '\n'.join(L)
 
 
 LANDINGS = {

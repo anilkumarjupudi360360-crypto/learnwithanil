@@ -254,6 +254,11 @@ async def main():
             raw = open(os.path.join(SITE, sub, 'index.html'), encoding='utf-8').read()
             has = 'class="card notes-promo"' in raw or 'data-v="notes"' in raw
             if has != want: errors.append(f'{sub}: study material {"missing" if want else "shown"}')
+        # llms.txt (summary for AI assistants) lists every exam, and every link in it is a real page
+        lt = open(os.path.join(SITE, 'llms.txt'), encoding='utf-8').read()
+        for h in _re.findall(r'https://learnwithanil\.in/([^\s)]*)', lt):
+            f = os.path.join(SITE, h)
+            if h and not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'llms.txt: broken link /{h}')
         epm = open(os.path.join(SITE, 'upsc-epfo', 'mock-test.html'), encoding='utf-8').read()
         if '₹199' not in epm or 'coming soon' not in epm or '?buy=mock' in epm: errors.append('upsc-epfo/mock-test.html: no "₹199 · coming soon" pack, or it can be bought already')
         await pg.goto(URL + 'ts-police-si/?sec=ari'); await pg.wait_for_timeout(600)
