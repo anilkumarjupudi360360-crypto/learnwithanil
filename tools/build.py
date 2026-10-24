@@ -641,7 +641,8 @@ def main():
         data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
-                    base=prefix, qotd=qotd_pool(loaded, 120) if is_root else [], pay=pay_data(conf),
+                    base=prefix, qotd=qotd_pool(loaded, 120) if is_root else [],
+                    pay=dict(pay_data(conf), sample=len(free_sample(conf, papers, questions)) if any(p['fmt'] == 'mcq' for p in papers) else 0),
                     exams=catalog['exams'] if is_root else [], cats=catalog['cats'] if is_root else [],
                     timers=catalog.get('timers', []) if (is_root and SHOW_TIMERS) else [])
         data_json = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
@@ -1220,6 +1221,15 @@ footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-
 .course .ck{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--accent-text);text-transform:uppercase;letter-spacing:.04em;margin:0 0 4px}
 .course h2{margin:0 0 6px}.course h3{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-size:18px;margin:18px 0 8px}
 .course .chead .cta{margin:4px 0 0;white-space:nowrap}
+.cbuy{display:flex;flex-direction:column;align-items:flex-start;gap:8px}.cbuy .try{font-weight:700;font-size:15.5px;white-space:nowrap}
+:root{--bad:#B42318;--bad-soft:#FDECEA}@media (prefers-color-scheme:dark){:root{--bad:#FF8A80;--bad-soft:#3B1C1C}}
+.q ol.sopts{list-style:none;padding:0;margin:4px 0 10px;display:flex;flex-direction:column;gap:8px}
+.sopts button{width:100%;display:flex;gap:10px;align-items:flex-start;text-align:left;font:inherit;font-weight:600;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;overflow-wrap:anywhere}
+.sopts button:hover:not(:disabled){border-color:var(--accent)}.sopts button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sopts button:disabled{cursor:default;color:var(--ink)}.sopts .on{font:14px/1.6 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);flex:none}
+.sopts button.right{border-color:var(--good);background:var(--good-soft)}.sopts button.right .on{color:var(--good)}
+.sopts button.wrong{border-color:var(--bad);background:var(--bad-soft)}.sopts button.wrong .on{color:var(--bad)}
+.sscore{background:var(--good-soft);color:var(--good);border-radius:10px;padding:10px 14px;margin:14px 0 0;font-weight:700}
 ol.clist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
 ol.clist li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg)}
 .cmeta{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);margin-bottom:4px}.cacts .cta{margin:8px 8px 0 0}
@@ -1733,6 +1743,79 @@ def subjects_html(conf, questions):
                                            for s in conf['subjects'] if cnt.get(s[0])) + '</div>'
 
 
+FREE_SAMPLE_N = 10   # Anil, 24 Oct 2026: 10 free questions to try on each exam's PYQs page, where the ₹45 PYQ Pass is sold
+
+
+def free_sample(conf, papers, questions, n=FREE_SAMPLE_N):
+    """The questions to try for free on the PYQs page: only from the free sample (answers already public on the paper pages),
+    four-option questions with an explanation, papers with the board's own options first. The papers take turns (newest
+    first), and each paper gives its first question in the subject picked least so far, so the sample mixes papers and subjects."""
+    free = sample_ids(questions)
+    order = {p['id']: i for i, p in enumerate(sorted(papers, key=lambda p: (-p['year'], p['id'])))}
+    num = lambda q: int(re.sub(r'\D', '', str(q['n'])) or 0)
+    ok = sorted((q for q in questions if q['id'] in free and q.get('o') and q.get('a') and q.get('w')), key=lambda q: (order.get(q['p'], 99), num(q)))
+    picked, used = [], {}
+    for own in (False, True):
+        groups = {}
+        for q in ok:
+            if bool(q.get('lwo')) == own: groups.setdefault(q['p'], []).append(q)
+        while len(picked) < n and any(groups.values()):
+            for lst in groups.values():
+                if len(picked) >= n: break
+                if not lst: continue
+                q = min(lst, key=lambda x: (used.get(x['s'], 0), lst.index(x)))
+                picked.append(q); lst.remove(q); used[q['s']] = used.get(q['s'], 0) + 1
+    return picked
+
+
+def free_sample_html(conf, papers, questions, qs):
+    """'Try 10 free questions': tap an option to check it, then see the answer and explanation (works without JavaScript too)."""
+    if not qs: return ''
+    pb, l2, seo = conf['pb'], conf['l2'], conf['seo']
+    pmap = {p['id']: p for p in papers}
+    subj = {s[0]: s for s in conf['subjects']}
+    items = []
+    for i, q in enumerate(qs, 1):
+        p = pmap[q['p']]
+        parts = [f'<li class="q sq" data-a="{",".join(str(a) for a in q["a"])}"><div class="meta">{i} of {len(qs)} · {esc(paper_kw(conf, p))} · Q{esc(str(q["n"]))}'
+                 f'{" · " + esc(subj[q["s"]][1]) if q["s"] in subj else ""}</div>', qtext_html(q['q'])]
+        if q.get('img'):
+            parts.append(f'<img src="{q["img"]}" alt="Figure for this question" loading="lazy">')
+        parts.append('<ol class="sopts">' + ''.join(f'<li><button type="button" data-i="{k}"><span class="on">({k + 1})</span><span>{esc(o)}</span></button></li>'
+                                                    for k, o in enumerate(q['o'])) + '</ol>')
+        if q.get('lwo'):
+            parts.append('<p class="muted" style="font-size:13px;margin:4px 0 0;font-weight:400">APPSC\'s key printed only the answer: the correct option is APPSC\'s, the other three are written by Learn with Anil.</p>')
+        if q.get('qt'):
+            te = qtext_html(q['qt']) + ('<ol>' + ''.join(f'<li>{esc(o)}</li>' for o in q['ot']) + '</ol>' if q.get('ot') else '')
+            parts.append(f'<div class="te" lang="{l2["code"]}">{te}</div>')
+        ans = ' / '.join(f'({a + 1}) {q["o"][a]}' for a in q['a'])
+        ans_te = ' / '.join(f'({a + 1}) {q["ot"][a]}' for a in q['a']) if q.get('ot') else q.get('at', '')
+        parts.append('<details><summary>Show answer</summary>'
+                     f'<p class="ans">Answer: {esc(ans)}</p>'
+                     + (f'<p class="ans" lang="{l2["code"]}">{l2["ans"]}: {esc(ans_te)}</p>' if ans_te else '')
+                     + f'<p class="why">{esc(q["w"])}</p>'
+                     + (f'<p class="why" lang="{l2["code"]}" style="margin-top:6px">{esc(q["wt"])}</p>' if q.get('wt') else '')
+                     + '</details></li>')
+        items.append(''.join(parts))
+    return (f'<section id="free-sample" class="sample"><h2>Try {len(qs)} free questions</h2>'
+            f'<p>Real {esc(seo)} questions from the official papers, with the official answer and an explanation. '
+            f'Tap an option to check your answer. No registration needed.</p>'
+            '<ol class="qs">' + ''.join(items) + '</ol>'
+            '<p class="sscore" aria-live="polite" hidden></p>'
+            f'<div class="buy"><div><b>Liked these? Practise all {len(questions):,} {esc(seo)} questions</b>'
+            f'<p>One ₹{PAY["pyq_price"]} PYQ Pass opens every previous paper of every exam on Learn with Anil for 12 months, with answers, explanations, quizzes and timed tests.</p></div>'
+            f'<a class="cta" href="{pb}?buy=pyq">Get it for ₹{PAY["pyq_price"]}</a></div></section>' + SAMPLE_JS)
+
+
+SAMPLE_JS = """<script>(function(){var s=document.getElementById("free-sample");if(!s)return;var sc=s.querySelector(".sscore"),tot=s.querySelectorAll(".sq").length,got=0,done=0;
+s.addEventListener("click",function(e){var b=e.target.closest(".sopts button");if(!b)return;var q=b.closest(".sq");if(!q||q.classList.contains("done"))return;
+q.classList.add("done");var a=q.getAttribute("data-a").split(","),ok=a.indexOf(b.getAttribute("data-i"))>=0;
+q.querySelectorAll(".sopts button").forEach(function(x){x.disabled=true;if(a.indexOf(x.getAttribute("data-i"))>=0)x.classList.add("right")});
+if(!ok)b.classList.add("wrong");var d=q.querySelector("details");if(d)d.open=true;done++;if(ok)got++;
+sc.textContent=(done<tot?"Your score so far: ":"Your score: ")+got+" / "+done+(done<tot?" · "+(tot-done)+" more to go":(got>=Math.ceil(tot*0.7)?" · well done!":" · the PYQ Pass has every paper for more practice"));sc.hidden=false;
+try{if(done===tot&&window.gtag)gtag("event","sample_done",{score:got})}catch(_){}});})();</script>"""
+
+
 def pyq_page(conf, papers, questions):
     """Tile 1: PYQs — a sample of answers on the public pages; everything with the PYQ Pass (all exams)."""
     pb, seo, l2 = conf['pb'], conf['seo'], conf['l2']
@@ -1753,17 +1836,19 @@ def pyq_page(conf, papers, questions):
                 f'<div class="cacts"><a class="cta" href="{pb}?practice={p["id"]}">Attempt this paper · {p["count"]} min timer</a></div></li>')
     allp = ps + sorted(extra, key=lambda p: (-p['year'], p['id']))
     others = [(x, h) for x, h in PAY.get('exam_links', []) if x != seo]
+    sample = free_sample(conf, papers, questions)
     course = (f'<section class="course"><div class="chead"><div><p class="ck">₹{PAY["pyq_price"]} course · PYQ Pass · all exams</p>'
               f'<h2>Every previous paper, one pass</h2>'
               f'<p>One payment of ₹{PAY["pyq_price"]} for the whole website, valid for 12 months. Every answer and explanation in English and {esc(l2["name"])}, '
               f'practice question by question, timed tests, PYQ sectionals, subject and topic quizzes, and all study tools. '
               f'Every paper runs with a timer (1 minute per question) that you can switch off and on at the top of the screen.</p></div>'
-              f'<a class="cta" href="{pb}?buy=pyq">Get it for ₹{PAY["pyq_price"]}</a></div>'
+              f'<div class="cbuy"><a class="cta" href="{pb}?buy=pyq">Get it for ₹{PAY["pyq_price"]}</a>'
+              + (f'<a class="try" href="#free-sample">Try {len(sample)} free questions first ↓</a>' if sample else '') + '</div></div>'
               f'<h3>{esc(seo)} papers in this course ({len(allp)} papers, {len(questions):,} questions)</h3><ol class="clist">' + ''.join(row(p) for p in allp) + '</ol>'
               + (f'<h3>Also in the same ₹{PAY["pyq_price"]} pass</h3><p>Every paper of these exams, and of every exam added to the site later:</p>'
                  '<nav class="toc">' + ''.join(f'<a href="{h}pyqs.html">{esc(x)}</a>' for x, h in others) + '</nav>' if others else '')
               + '</section>')
-    body = (course
+    body = (course + free_sample_html(conf, papers, questions, sample)
             + '<h2>Practise by subject and topic</h2><p>With the PYQ Pass: pick a subject to build a quiz from every paper, or build your own topic-wise quiz.</p>'
             + subjects_html(conf, questions) + features_html(pb, ('practice',))
             + f'<h2>Study tools</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))

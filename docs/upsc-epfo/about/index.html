@@ -621,7 +621,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/upsc-epfo-d98c5f0e1c.js"></script>
+<script src="data/upsc-epfo-43d7ccaf62.js"></script>
 <script>
 (function(){
 "use strict";
@@ -757,8 +757,9 @@ function openPay(kind){
   d.innerHTML = `<div class="pay-in"><h2>${esc(x.name)}</h2><div class="price">₹${x.price}</div>
     <ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
     <p class="small"><b>${esc(x.valid)}.</b>${!ST.name ? " Register once with your phone number, then pay." : ""}</p>
+    ${kind!=="mock" && PAYC.sample && PAYC.pages && PAYC.pages.pyq ? `<p class="small"><a href="${PAYC.pages.pyq}#free-sample">Not sure yet? Try ${PAYC.sample} free questions first →</a></p>` : ""}
     ${open ? `<p class="small">The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}, on up to 3 devices. Pay by UPI, card or net banking on Instamojo's secure page.</p>
-      <div class="row"><button class="btn btn-primary" type="button" data-act="paybuy" data-kind="${kind}">${esc(x.btn)}</button><button class="btn btn-secondary" type="button" data-act="paycheck">I have paid · check</button><button class="btn btn-ghost" type="button" data-act="payclose">Close</button></div>`
+      <div class="row"><button class="btn btn-primary" type="button" data-act="paybuy" data-kind="${kind}" autofocus>${esc(x.btn)}</button><button class="btn btn-secondary" type="button" data-act="paycheck">I have paid · check</button><button class="btn btn-ghost" type="button" data-act="payclose">Close</button></div>`
     : `<p class="small"><b>Online payment is being switched on.</b> Please check back shortly.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}</div>`;
   if(d.showModal) d.showModal(); else d.setAttribute("open","");
 }
