@@ -680,8 +680,12 @@ function postRecord(rec){
   Object.keys(FORM.f).forEach(k=>{ if(rec[k]!=null && rec[k]!=="") body.append(FORM.f[k], String(rec[k])); });
   return fetch(FORM.url, {method:"POST", mode:"no-cors", body, keepalive:true});
 }
+let lastRec = {key:"", t:0};
 function sendRecord(extra){
   const rec = Object.assign({name:ST.name, phone:ST.phone, email:ST.email, district:ST.district}, extra);
+  const key = JSON.stringify(rec), now = Date.now();
+  if(key===lastRec.key && now-lastRec.t < 60000) return;   // the same row again within a minute is a double tap, not new information
+  lastRec = {key, t:now};
   try{
     postRecord(rec).catch(()=>{ ST.pending.push(rec); ST.pending = ST.pending.slice(-20); saveST(); });
   }catch(e){ ST.pending.push(rec); saveST(); }
@@ -1846,9 +1850,11 @@ document.addEventListener("click", e=>{
     case "copyig": { const h="@"+DATA.instagram; try{ navigator.clipboard.writeText(h).then(()=>toast("Copied "+h), ()=>toast("Handle: "+h)); }catch(_){ toast("Handle: "+h); } break; }
   }
 });
+let joinBusy = false;   // true while the details are being saved, so extra taps on the button don't send them again
 document.addEventListener("submit", async e=>{
   if(e.target.id!=="joinForm") return;
   e.preventDefault();
+  if(joinBusy) return;
   const f = e.target, val = n=> (f.elements[n].value||"").trim();
   const name = val("name").replace(/\s+/g," "), email = val("email"), district = val("district").replace(/\s+/g," "), help = val("help");
   let phone = val("phone").replace(/\D/g,""); if(phone.length>10 && (phone.startsWith("91")||phone.startsWith("0"))) phone = phone.slice(-10);
@@ -1860,16 +1866,26 @@ document.addEventListener("submit", async e=>{
   const box = $("#joinErr");
   if(err){ box.textContent = err; box.hidden = false; box.scrollIntoView({block:"nearest"}); return; }
   const isNew = !ST.name;
-  Object.assign(ST, {name, phone, email, district, joined: ST.joined || Date.now()}); saveST();
-  const p = UI.pending; UI.pending = null;
-  sendRecord({help, test: isNew? "Registered" + (p? " · before "+p.title : "") : "Updated details"});
-  if(isNew) track("sign_up", {method: "form", exam: DATA.examShort||"", district});
-  const trialMsg = "";
-  if(PAYC && PAYC.on && PAYC.api){ toast("Saving your details…"); await refreshPasses(); }   // a pass already paid with this phone opens at once
-  if(p){ toast("Thanks, "+name.split(" ")[0]+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source); }
-  else if(UI.pendingBuy){ const k = UI.pendingBuy; UI.pendingBuy = null; go("home"); payBuy(k); }
-  else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; go("home"); startMock(m.id, m.part); }
-  else { toast("Your details are saved." + trialMsg); const back = UI.afterJoin; UI.afterJoin = null; go(back && back!=="join" ? back : "about"); }
+  // Only new information goes to the sheet: a first registration, changed details, or a new help message.
+  const changed = isNew || name!==ST.name || phone!==ST.phone || email!==ST.email || district!==ST.district || (!!help && help!==ST.lastHelp);
+  joinBusy = true;
+  const btn = f.querySelector('button[type="submit"]'), label = btn ? btn.textContent : "";
+  if(btn){ btn.disabled = true; btn.textContent = "Saving…"; }
+  try{
+    Object.assign(ST, {name, phone, email, district, joined: ST.joined || Date.now()}); if(help) ST.lastHelp = help; saveST();
+    const p = UI.pending; UI.pending = null;
+    if(changed) sendRecord({help, test: isNew? "Registered" + (p? " · before "+p.title : "") : "Updated details"});
+    if(isNew) track("sign_up", {method: "form", exam: DATA.examShort||"", district});
+    const trialMsg = "";
+    if(PAYC && PAYC.on && PAYC.api){ toast("Saving your details…"); await refreshPasses(); }   // a pass already paid with this phone opens at once
+    if(p){ toast("Thanks, "+name.split(" ")[0]+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source); }
+    else if(UI.pendingBuy){ const k = UI.pendingBuy; UI.pendingBuy = null; go("home"); payBuy(k); }
+    else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; go("home"); startMock(m.id, m.part); }
+    else { toast("Your details are saved." + trialMsg); const back = UI.afterJoin; UI.afterJoin = null; go(back && back!=="join" ? back : "about"); }
+  } finally {
+    joinBusy = false;
+    if(btn && btn.isConnected){ btn.disabled = false; btn.textContent = label; }
+  }
 });
 window.addEventListener("online", flushRecords);
 setTimeout(flushRecords, 1500);
