@@ -1009,7 +1009,8 @@ function route(){
   return v;
 }
 function render(){
-  const v = route(); const changed = v!==current; current = v;
+  const v = route(); const changed = v!==current, prevView = current; current = v;
+  if(QZ){ if(v==="quiz"){ if(awayResume() && prevView!=="quiz") setTimeout(()=>toast("Welcome back. The timer was paused while you were away."), 300); } else if(prevView==="quiz") awayPause(); }
   if(v!=="join") UI.pending = null;
   if(v!=="quiz") stopTimer();
   const hubCtx = v==="exams" || v==="exam";
@@ -1416,6 +1417,14 @@ function vQuiz(){
 }
 // seconds on the clock: time since the start, minus the time the student had the timer switched off
 const qzSecs = ()=> QZ ? (Date.now() - QZ.t0 - (QZ.pausedMs||0) - (QZ.timerOff && QZ.offAt ? Date.now() - QZ.offAt : 0))/1000 : 0;
+// Away from the test (another app or tab, phone locked, or another page of this site): the clock pauses and starts again on return,
+// so a test is never submitted while the student is not looking (Dheeraj sir, 25 Oct 2026). A timer the student switched off stays off.
+function awayPause(){ if(QZ && !QZ.timerOff){ QZ.timerOff = true; QZ.offAt = Date.now(); QZ.away = true; saveQZ(); } }
+function awayResume(){ if(QZ && QZ.away){ QZ.pausedMs = (QZ.pausedMs||0) + (Date.now() - (QZ.offAt||Date.now())); QZ.timerOff = false; QZ.offAt = 0; QZ.away = false; saveQZ(); return true; } return false; }
+document.addEventListener("visibilitychange", ()=>{
+  if(document.hidden){ if(current==="quiz") awayPause(); }
+  else if(current==="quiz" && awayResume()){ render(); toast("Welcome back. The timer was paused while you were away."); }
+});
 function toggleTimer(){
   if(!QZ || QZ.source==="mock") return;
   if(QZ.timerOff){ QZ.pausedMs = (QZ.pausedMs||0) + (Date.now() - (QZ.offAt||Date.now())); QZ.timerOff = false; QZ.offAt = 0; toast("Timer on"); }
