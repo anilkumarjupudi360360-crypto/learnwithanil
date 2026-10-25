@@ -659,7 +659,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/appsc-g2-bba4bc2c68.js"></script>
+<script src="data/appsc-g2-7d7a185b18.js"></script>
 <script>
 (function(){
 "use strict";
@@ -786,12 +786,14 @@ async function refreshPasses(){
 }
 function mockKinds(m){   // "10 Tier-I + 3 Tier-II"
   const c = {}; m.mocks.forEach(x=>{ const k = x.name.replace(/\s*Mock\s*\d+$/,""); c[k] = (c[k]||0) + 1; });
-  return Object.entries(c).map(([k,n])=>n+" "+k).join(" + ");
+  return Object.entries(c).filter(([k])=>k).map(([k,n])=>n+" "+k).join(" + ");   // "" when every mock is just "Mock N"
 }
 function payInfo(kind){
-  const m = PAYC && PAYC.mock;
+  const m = PAYC && PAYC.mock, cb = PAYC && PAYC.combo;
+  if(kind==="combo" && cb) return {name: cb.title, price: cb.price, valid: cb.valid, btn: `Pay ₹${cb.price} for both`,
+      what: [cb.what, "Sectional mocks from every mock of both packs", `Mock tests only. Previous papers need the PYQ Pass (₹${PAYC.pyq.price}, all exams), bought separately.`]};
   return kind==="mock" && m ? {name: m.title, price: m.price, valid: m.valid || "Valid till the exam", btn: `Pay ₹${m.price} for ${m.name}`,
-      what: [(m.mocks && m.mocks.length ? `${m.n} full-length mock tests (${mockKinds(m)}) in ${L2.name==="Hindi"?"English and Hindi":"English and "+L2.name}, with explanations (${m.mocks.filter(x=>x.live).map(x=>x.name).join(" and ")} now, the rest coming soon)`
+      what: [(m.mocks && m.mocks.length ? `${m.n} full-length mock tests${mockKinds(m) ? " ("+mockKinds(m)+")" : ""} in ${L2.name==="Hindi"?"English and Hindi":"English and "+L2.name}, with explanations (${m.mocks.filter(x=>x.live).map(x=>x.name + (x.free ? " (free)" : "")).join(" and ")} now, the rest coming soon)`
                : `${m.n} full-length mock tests in English and Telugu, with explanations` + (m.live && m.live < m.n ? ` (Mock ${m.live===1 ? "1" : "1–"+m.live} now, the rest coming soon)` : "")), "Sectional mocks from every mock",
              `Mock tests only. Previous papers need the PYQ Pass (₹${PAYC.pyq.price}, all exams), bought separately.`]}
     : {name: "PYQ Pass · all exams", price: PAYC ? PAYC.pyq.price : 45, valid: "Valid for 12 months from the day you pay", btn: `Pay ₹${PAYC ? PAYC.pyq.price : 45} for all exams`,
@@ -812,7 +814,7 @@ const PAY_NOTE = {
 };
 const PAYKEY = "lwa-pay";   // sessionStorage: {kind, t} while a student is away on Instamojo
 function payHelpLink(kind){
-  const what = kind==="mock" && PAYC && PAYC.mock ? PAYC.mock.name : "the PYQ Pass";
+  const what = kind==="combo" && PAYC && PAYC.combo ? PAYC.combo.title : kind==="mock" && PAYC && PAYC.mock ? PAYC.mock.name : "the PYQ Pass";
   return waLink(`Hi Anil sir, I tried to pay for ${what} on Learn with Anil and it did not go through. My registered phone: ${ST.phone||""}`);
 }
 function openPay(kind, note){
@@ -830,7 +832,7 @@ function openPay(kind, note){
     : `<div class="pay-in"><h2>${esc(x.name)}</h2><div class="price">₹${x.price}</div>
     <ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
     <p class="small"><b>${esc(x.valid)}.</b>${!ST.name ? " Register once with your phone number, then pay." : ""}</p>
-    ${kind!=="mock" && PAYC.sample && PAYC.pages && PAYC.pages.pyq ? `<p class="small"><a href="${PAYC.pages.pyq}#free-sample">Not sure yet? Try ${PAYC.sample} free questions first →</a></p>` : ""}
+    ${kind==="pyq" && PAYC.sample && PAYC.pages && PAYC.pages.pyq ? `<p class="small"><a href="${PAYC.pages.pyq}#free-sample">Not sure yet? Try ${PAYC.sample} free questions first →</a></p>` : ""}
     ${open ? `<p class="small">The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}, on up to 3 devices. Pay by UPI, card or net banking on Instamojo's secure page.</p>
       ${buttons}`
     : `<p class="small"><b>Online payment is being switched on.</b> Please check back shortly.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}<p class="small" style="margin-top:10px">Problem with a payment or your pass? <a href="/help.html">Help &amp; grievances</a> (reply within 48 hours).</p></div>`;
@@ -868,7 +870,7 @@ function payAway(){   // {kind} if this tab left for Instamojo in the last 30 mi
   let s = null; try{ s = JSON.parse(sessionStorage.getItem(PAYKEY) || "null"); sessionStorage.removeItem(PAYKEY); }catch(_){}
   return s && s.kind && Date.now() - (s.t||0) < 30*60*1000 ? s : null;
 }
-const payDone = kind => kind==="mock" ? passOK("mock") : passOK("pyq");
+const payDone = kind => kind==="mock" || kind==="combo" ? passOK("mock") : passOK("pyq");
 async function payResume(){   // back from Instamojo by the back button (no payment details in the address): offer to try again
   const s = payAway(); if(!s || !PAYC || !PAYC.on) return;
   await refreshPasses();
@@ -877,6 +879,7 @@ async function payResume(){   // back from Instamojo by the back button (no paym
 async function payCheck(){
   await refreshPasses(); closePay();
   if(passOK("pyq")){ toast("Unlocked. All the best!"); const p = UI.payPending; UI.payPending = null; if(p) startQuiz(p.ids, p.title, p.mode, p.source, p.mins); else render(); }
+  else if(passOK("mock")){ toast("Your mock-test pass is active. All the best!"); render(); }
   else toast("No payment found for " + (ST.phone||"this phone") + " yet. If you just paid, wait a minute and check again.");
 }
 async function payReturn(params){
@@ -1909,7 +1912,7 @@ document.addEventListener("click", e=>{
     case "excat": { UI.exCat = b.dataset.cat; applyHub(); break; }
     case "hubscroll": { const t=$("#exams-list"); if(t) t.scrollIntoView({behavior:"smooth", block:"start"}); const s=$("#examSearch"); if(s) setTimeout(()=>s.focus({preventScroll:true}), 400); break; }
     case "unlockpyq": if(!ST.name){ UI.afterJoin = current; go("join"); } else openPay("pyq"); break;
-    case "openpay": openPay(b.dataset.kind==="mock" ? "mock" : "pyq"); break;
+    case "openpay": openPay(b.dataset.kind==="mock" || (b.dataset.kind==="combo" && PAYC && PAYC.combo) ? b.dataset.kind : "pyq"); break;
     case "presubj": { const s=SUBJ[b.dataset.subj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); go("practice"); break; }
     case "paper": { const ps=selPapers(), id=b.dataset.paper; ps.has(id)?ps.delete(id):ps.add(id); P.papers=[...ps]; savePrefs(); render(); break; }
     case "allpapers": P.papers=null; savePrefs(); render(); break;
@@ -2066,8 +2069,8 @@ function start(data){
     const sp = new URLSearchParams(location.search);
     if(sp.get("payment_request_id")){ syncLang(); render(); payReturn(sp); return; }   // back from Instamojo
     setTimeout(payResume, 500);   // back from Instamojo by the back button, without paying
-    const bk = sp.get("buy");   // ?buy=pyq|mock: open the pass checkout
-    if(bk==="pyq" || bk==="mock"){ history.replaceState(null, "", location.pathname); syncLang(); render(); openPay(bk); return; }
+    const bk = sp.get("buy");   // ?buy=pyq|mock|combo: open the pass checkout
+    if(bk==="pyq" || bk==="mock" || (bk==="combo" && PAYC && PAYC.combo)){ history.replaceState(null, "", location.pathname); syncLang(); render(); openPay(bk); return; }
     const mk = sp.get("mock");  // ?mock=<mock id>[&part=ari|rea|gs]: a Mission Khaki mock or one of its sections
     if(mk && /^[a-z0-9-]+$/.test(mk)){ history.replaceState(null, "", location.pathname); syncLang(); render(); startMock(mk, sp.get("part")||""); return; }
     const sec = sp.get("sec");  // ?sec=<subject id>: a PYQ sectional test (every previous question from one subject)

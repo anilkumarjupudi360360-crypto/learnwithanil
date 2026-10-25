@@ -22,6 +22,20 @@ def seal_test_mock():   # a sealed test mock exactly as tools/mk_seal.py makes t
 
 
 TKEY, TFILE = seal_test_mock()
+PCMOCK = [dict(q, id=q['id'].replace('mk-si-1', 'mk-pc-1'), p='mk-pc-1', s=('eng' if q['n'] == 1 else q['s'])) for q in MOCK]
+
+
+def seal_pc_mock():   # a sealed test Constable mock (Mock 1 is free)
+    import base64
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    key, nonce = os.urandom(32), os.urandom(12)
+    blob = nonce + AESGCM(key).encrypt(nonce, json.dumps({'id': 'mk-pc-1', 'questions': PCMOCK}).encode(), b'mk-pc-1')
+    d = os.path.join(SITE, 'ts-police-constable', 'mk'); os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, 'test-pc-mock.bin'), 'wb').write(blob)
+    return base64.b64encode(key).decode(), 'test-pc-mock.bin'
+
+
+PKEY, PFILE = seal_pc_mock()
 
 
 async def main():
@@ -47,6 +61,7 @@ async def main():
         elif b['action'] == 'verify':
             if state.get('verifyfail'): r = dict(ok=False, error='The payment is not complete yet.')
             else: state['mock' if state['kind'] == 'mock' else 'pyq'] = True; r = dict(ok=True, passes=passes())
+        elif b['action'] == 'mock' and b['id'] == 'mk-pc-1': r = dict(ok=True, id=b['id'], key=PKEY, file=PFILE, free=True)   # free for registered students
         elif b['action'] == 'mock': r = dict(ok=True, id=b['id'], key=TKEY, file=TFILE) if state['mock'] else dict(ok=False, need='mock', error='needs pass')
         else: r = dict(ok=False)
         await route.fulfill(status=200, content_type='application/json', body=json.dumps(r))
@@ -170,6 +185,25 @@ async def main():
         await pg.evaluate('sessionStorage.setItem("lwa-pay", JSON.stringify({kind:"pyq", t: Date.now()}))')
         await pg.reload(); await pg.wait_for_timeout(1500)
         if await pg.locator('#payDlg[open]').count(): errors.append('a student who already paid was asked to pay again')
+        # D. Mission Khaki – Constable (25 Oct 2026): Mock 1 is free for a registered student, Mock 2 asks for the pack, the combo checkout says ₹199
+        state.update(mock=False, pyq=False, trial='expired', calls=[], kind='')
+        await pg.goto(url + 'ts-police-constable/?mock=mk-pc-1'); await pg.wait_for_timeout(1500)
+        if await pg.locator('#payDlg[open]').count(): errors.append('free Constable Mock 1 asked for payment')
+        body = await pg.inner_text('body')
+        if 'Mock 1' not in body or 'Test question' not in body: errors.append(f'free Constable Mock 1 did not open: {body[:200]!r}')
+        await pg.goto(url + 'ts-police-constable/?mock=mk-pc-1&part=eng'); await pg.wait_for_timeout(1500)
+        body = await pg.inner_text('body')
+        if 'English sectional' not in body: errors.append(f'Constable English sectional did not open: {body[:200]!r}')
+        await pg.goto(url + 'ts-police-constable/?mock=mk-pc-2'); await pg.wait_for_timeout(1500)
+        t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
+        if '₹99' not in t: errors.append(f'Constable Mock 2 did not ask for the ₹99 pack: {t[:160]!r}')
+        await pg.goto(url + 'ts-police-constable/?buy=combo'); await pg.wait_for_timeout(1000)
+        t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
+        if '₹199' not in t or 'Constable' not in t: errors.append(f'combo checkout wrong: {t[:200]!r}')
+        state['slowbuy'] = True
+        await pg.click('#payDlg [data-act="paybuy"]'); await pg.wait_for_timeout(1300)
+        if state['kind'] != 'combo': errors.append(f'combo checkout sent kind {state["kind"]!r}')
+        state['slowbuy'] = False
         await b.close()
     srv.shutdown()
     print('PAY TEST ERRORS:', errors or 'none')

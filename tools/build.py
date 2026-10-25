@@ -1303,6 +1303,8 @@ def FAQ_HM(total, npapers):
 def FAQ_TS(post, mains=()):
     si = post == 'SI'
     name = 'TS Police SI' if si else 'TS Police Constable'
+    mkp = MOCK_PACKS.get('ts-police-si' if si else 'ts-police-constable')
+    mkt = mkp and (mkp['name'] + (' (SI)' if si else ''))
     def faq(total, npapers):
         if mains:
             fwe = (' and '.join(x for i, x in (('s2023c', 'Paper III, Arithmetic & Reasoning, on 8 April'), ('s2023d', 'Paper IV, General Studies, on 9 April')) if i in mains)
@@ -1327,6 +1329,10 @@ def FAQ_TS(post, mains=()):
           (f'Are the {name} questions available in Telugu?',
            'Yes. Every question that the booklet printed in Telugu is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu.'),
           (f'Is there a {name} mock test?',
+           (f'Yes. {mkt}: {mkp["n"]} full-length mocks of 200 questions in the real pattern, in English and Telugu, with explanations and sectional tests, for ₹{mkp["price"]}'
+            + (' (Mock 1 is free for registered students)' if any(m.get('free') for m in mkp.get('mocks', [])) else '')
+            + f'; the SI + Constable combo is ₹{COMBO["price"]}. You can also take the real TSLPRB previous papers as timed tests, or tap Create a quiz for a timed test from chosen subjects, with the PYQ Pass.')
+           if mkp else
            f'Yes. Tap Create a quiz, choose subjects or topics, and pick Timed test: you get a mock test made of real TSLPRB questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.'),
           ('Do I need to register?',
            'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password.'),
@@ -1848,7 +1854,24 @@ MOCK_PACKS = {
                         + [dict(id=f'mk-cgl-t2-{i}', name=f'Tier-II Mock {i}', qn=150, mins=135, live=(i == 1),
                                 parts=[('qa', 'Mathematical Abilities', ['qa']), ('rea', 'Reasoning', ['rea']), ('eng', 'English', ['eng']),
                                        ('ga', 'General Awareness', ['ih', 'pol', 'geo', 'eco', 'sci', 'cur']), ('comp', 'Computer Knowledge', ['comp'])]) for i in range(1, 4)]),
+  'ts-police-constable': dict(id='mk-pc', name='Mission Khaki – Constable', price=99, src='mission-khaki-pc', langs='English &amp; Telugu',   # Anil, 25 Oct 2026
+                  title='Mission Khaki – Constable: TS Police Constable Prelims Test Series',
+                  summary='10 full-length TS Police Constable Prelims mock tests, 200 questions each (English 25, Arithmetic 25, Reasoning 25, General Studies 125), '
+                          'in English and Telugu, with an explanation for every answer. Each mock\'s sections can also be taken on their own as sectional tests.',
+                  about=['New questions written for this series in the Constable Prelims pattern, at Intermediate level, not copied from coaching material or previous papers.',
+                         'Each mock: English 25 (in English only, as in the real exam), Arithmetic 25, Reasoning & Mental Ability 25 and General Studies 125 '
+                         '(history, Telangana, science, geography, polity, economy, society and current affairs), 3 hours.',
+                         'Every other question is in English and Telugu, with an explanation in both. Your score, accuracy and topic-wise analysis come after each mock.',
+                         'Mock 1 is free: register once and take it. Writing the SI exam too? Mission Khaki SI + Constable combo for ₹199.'],
+                  mocks=[dict(id=f'mk-pc-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i == 1), free=(i == 1),
+                              parts=[('eng', 'English', ['eng']), ('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning', ['rea']),
+                                     ('gs', 'General Studies', ['ih', 'tg', 'soc', 'sci', 'eco', 'geo', 'pol', 'cur'])]) for i in range(1, 11)]),
 }
+# SI + Constable together (the payments script records one mock pass for each exam)
+COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
+             title='Mission Khaki combo: TS Police SI + Constable mock tests',
+             what='Both test series in one payment: Mission Khaki for the SI Prelims (10 mocks, 200 questions each) and Mission Khaki – Constable '
+                  '(10 mocks, 200 questions each), in English and Telugu, with explanations and sectional tests. Each pack is valid till its exam.')
 for _mk in MOCK_PACKS.values():   # n / live / qn / sections for packs described by a 'mocks' list
     if 'mocks' in _mk:
         _mk.update(n=len(_mk['mocks']), live=sum(m['live'] for m in _mk['mocks']), qn=_mk['mocks'][0]['qn'],
@@ -1890,7 +1913,7 @@ def exam_clock_html(conf):
 def live_text(mk):
     """'Mock 1 is available now; Mocks 2–10 are coming soon.' (all mocks are included in the pack price)"""
     if 'mocks' in mk:
-        on = [m['name'] for m in mk['mocks'] if m['live']]
+        on = [m['name'] + (' (free)' if m.get('free') else '') for m in mk['mocks'] if m['live']]
         if len(on) == len(mk['mocks']): return f'All {len(on)} mocks are available now.'
         return f'{" and ".join(on)} {"is" if len(on) == 1 else "are"} available now; the other {len(mk["mocks"]) - len(on)} mocks are coming soon (included in the price)'
     a, n = mk['live'], mk['n']
@@ -1920,7 +1943,8 @@ def pay_data(conf):
                 pyq=dict(price=PAY['pyq_price'], valid=PYQ_VALID, exams=PAY['exams'], trial=TRIAL_DAYS),
                 mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=mk['price'], n=mk['n'], live=mk['live'],
                            valid=pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:],
-                           mocks=[dict(id=m['id'], name=m['name'], mins=m['mins'], live=m['live'], parts=m['parts']) for m in mk.get('mocks', [])]) if mk else None),
+                           mocks=[dict(id=m['id'], name=m['name'], mins=m['mins'], live=m['live'], free=bool(m.get('free')), parts=m['parts']) for m in mk.get('mocks', [])]) if mk else None),
+                combo=(dict(price=COMBO['price'], title=COMBO['title'], what=COMBO['what'], valid='Each pack valid till its exam') if conf['id'] in COMBO['exams'] else None),
                 pages=dict(pyq=pb + 'pyqs.html', mock=pb + 'mock-test.html', sec=pb + 'sectional-tests.html'))
 
 
@@ -1936,7 +1960,7 @@ def tiles_html(conf, papers, questions, extra_links):
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
               + (f'<span class="etile-p">{esc(mk["summary"].split(". ")[0])}. {live_text(mk)}.</span>' if 'mocks' in mk else
                  f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>')
-              + f'<span class="etile-price">₹{mk["price"]} · mock tests only</span></a>')
+              + f'<span class="etile-price">₹{mk["price"]} · mock tests only{" · Mock 1 free" if any(m.get("free") for m in mk.get("mocks", [])) else ""}</span></a>')
     elif BB_URL and conf['id'] == 'appsc-group-2':
         t2 = (f'<a class="etile" href="{BB_URL}"><span class="etile-k">02 · Mock tests</span><b>Bahubali Test Series</b>'
               f'<span class="etile-p">24 full-length Group-II Mains mocks, 12 for Paper I and 12 for Paper II: 150 questions each, English and Telugu, with explanations.</span>'
@@ -1968,6 +1992,12 @@ def buy_box(conf, kind):
                 f'({esc(PAY["exams"])}) and every exam added later, not just {esc(conf["seo"])}. Every answer and explanation, practice quizzes and timed tests, '
                 f'PYQ sectionals, topic-wise quizzes, Smart Quiz and your Mistakes notebook.')
         valid = PYQ_VALID
+    elif kind == 'combo':
+        price, name = COMBO['price'], COMBO['title']
+        si, pc = MOCK_PACKS['ts-police-si'], MOCK_PACKS['ts-police-constable']
+        what = (esc(COMBO['what']) + f' ₹{si["price"] + pc["price"]} if bought separately. Mock tests only: previous papers need the PYQ Pass '
+                f'(₹{PAY["pyq_price"]}, all exams), bought separately.')
+        valid = 'each pack valid till its exam'
     else:
         mk = MOCK_PACKS[conf['id']]
         price, name = mk['price'], mk['title']
@@ -1986,8 +2016,13 @@ def plans_html(conf):
     if up:
         rows.append((esc(up['name']), f'₹{up["price"]} (coming soon)', f'{up["n"]} full-length {esc(conf["seo"])} mock tests, {up["qn"]} questions each, with explanations. Previous papers are not included (that is the PYQ Pass). Payment opens when Mock 1 is ready.', 'Till the exam'))
     if mk:
-        rows.append((esc(mk['name']), f'₹{mk["price"]}', f'{mk["n"]} full-length {esc(conf["seo"])} mock tests and their sectional tests, with explanations, and the study tools for your mock results. Previous papers are not included (that is the PYQ Pass).',
+        free = [m['name'] for m in mk.get('mocks', []) if m.get('free')]
+        rows.append((esc(mk['name']), f'₹{mk["price"]}', f'{mk["n"]} full-length {esc(conf["seo"])} mock tests and their sectional tests, with explanations, and the study tools for your mock results. Previous papers are not included (that is the PYQ Pass).'
+                     + (f' {" and ".join(free)} {"is" if len(free) == 1 else "are"} free for registered students.' if free else ''),
                      esc(pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:])))
+    if conf['id'] in COMBO['exams']:
+        rows.append((esc(COMBO['name']), f'₹{COMBO["price"]}', 'Mission Khaki (SI) and Mission Khaki – Constable together: both mock-test packs and their sectional tests. Previous papers are not included (that is the PYQ Pass).',
+                     'Each pack till its exam'))
     return ('<table class="facts plans"><tr><th style="width:17%">Plan</th><th style="width:17%">Price</th><th>What you get</th><th style="width:19%">Valid</th></tr>'
             + ''.join(f'<tr><td><b>{a}</b></td><td>{b}</td><td>{c}</td><td>{d}</td></tr>' for a, b, c, d in rows) + '</table>'
             f'<p>Open to everyone without a plan: the question of the day, the correct answer to every question on the paper pages, and the explanations of the first {SAMPLE_N} questions of each paper. '
@@ -2151,7 +2186,7 @@ def sectional_page(conf, papers, questions):
             + (f', and sectional mocks from the {mk["name"]} test series' if mk else '') + ', with answers and explanations.')
     rows = ''.join(f'<li class="q"><div class="meta">{cnt[s[0]]} previous questions · all in one test · one minute per question</div><p>{esc(s[1])}</p>'
                    f'<a class="cta" href="{pb}?sec={s[0]}">Start {esc(s[1])} sectional</a></li>' for s in subs)
-    secrows = (''.join((f'<li class="q"><div class="meta">Available now · {m["name"]}</div><p>{esc(m["name"])} sections</p>'
+    secrows = (''.join((f'<li class="q"><div class="meta">{"Free now" if m.get("free") else "Available now"} · {m["name"]}</div><p>{esc(m["name"])} sections</p>'
                         + ''.join(f'<a class="cta alt" href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}</a>' for k, v, _ in m['parts']) + '</li>')
                        if m['live'] else f'<li class="q"><div class="meta">Coming soon</div><p>{esc(m["name"])} sections</p></li>'
                        for m in mk['mocks']) if mk and 'mocks' in mk else
@@ -2162,6 +2197,7 @@ def sectional_page(conf, papers, questions):
     mock_part = (f'<h2>{esc(mk["name"])} sectional mocks</h2><ol class="qs">{secrows}</ol><p>Each {esc(mk["name"])} mock\'s sections — '
                  + ', '.join(esc(x) for x in mk['sections']) + ' — open as separate timed tests as the mocks are released '
                  f'({live_text(mk)}). They come with the {esc(mk["name"])} pack.</p>' + buy_box(conf, 'mock')
+                 + (buy_box(conf, 'combo') if conf['id'] in COMBO['exams'] else '')
                  if mk else (f'<h2>Sectional mocks</h2><p>Sectional mocks will come with the {esc(UPCOMING_PACKS[conf["id"]]["name"])} '
                              f'(₹{UPCOMING_PACKS[conf["id"]]["price"]}, coming soon).</p>' if conf['id'] in UPCOMING_PACKS else
                              '<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack. Its price will be announced soon.</p>'))
@@ -2207,13 +2243,14 @@ def mock_page(conf, papers, questions):
         for p in mcq)
     info = MOCK_INFO.get(conf['id'], '')
     if mk and 'mocks' in mk:
-        sched = ''.join((f'<tr><td>{esc(m["name"])}</td><td>Available now</td><td>{m["qn"]} questions · {m["mins"]} min · <a href="{pb}?mock={m["id"]}">Start</a></td>'
+        sched = ''.join((f'<tr><td>{esc(m["name"])}</td><td>{"<b>Free</b> · register and start" if m.get("free") else "Available now"}</td><td>{m["qn"]} questions · {m["mins"]} min · <a href="{pb}?mock={m["id"]}">{"Start free" if m.get("free") else "Start"}</a></td>'
                          f'<td>{part_links(pb, m)}</td></tr>') if m['live'] else
                         f'<tr><td>{esc(m["name"])}</td><td>Coming soon</td><td>{m["qn"]} questions · {m["mins"]} min</td><td>{" · ".join(esc(v) for _, v, _ in m["parts"])}</td></tr>'
                         for m in mk['mocks'])
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
                 + f'<table class="facts"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
-                + '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in mk['about']) + '</ul>')
+                + '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in mk['about']) + '</ul>'
+                + (buy_box(conf, 'combo') if conf['id'] in COMBO['exams'] else ''))
     elif mk:
         mid = lambda i: f'{mk["id"]}-{i + 1}'
         sched = ''.join((f'<tr><td>Mock {i + 1}</td><td>Available now</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">Start</a></td>'
@@ -2225,7 +2262,8 @@ def mock_page(conf, papers, questions):
                 + f'<table class="facts"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
                 '<ul><li>Fresh questions written for this series in the TS SI Prelims pattern, not copied from coaching material: Arithmetic &amp; Reasoning (100) and General Studies (100), in English and Telugu.</li>'
                 '<li>Every question has an explanation in English and Telugu. Your score, accuracy and topic-wise analysis come after each mock.</li>'
-                '<li>Each mock\'s sections can also be taken on their own as sectional tests.</li></ul>')
+                '<li>Each mock\'s sections can also be taken on their own as sectional tests.</li></ul>'
+                + (buy_box(conf, 'combo') if conf['id'] in COMBO['exams'] else ''))
     elif BB_URL and conf['id'] == 'appsc-group-2':
         pack = (f'<h2>Bahubali Test Series</h2><p>24 full-length APPSC Group-II Mains mock tests, 12 for Paper I and 12 for Paper II: 150 questions each, '
                 f'English and Telugu, with explanations and PDFs. ₹250 for the whole series.</p><p><a class="cta" href="{BB_URL}">See the Bahubali tests</a></p>')
