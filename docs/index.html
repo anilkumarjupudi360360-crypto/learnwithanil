@@ -259,8 +259,22 @@ div.feature:hover{border-color:var(--line)}
 .progress i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .25s}
 .timer{font-family:var(--f-mono);font-weight:600;font-size:15px;padding:5px 11px;border-radius:8px;background:var(--surface-2)}
 .timer.low{background:var(--bad-soft);color:var(--bad)}
-.timer.off{opacity:.55}
-.tmtog[aria-pressed="true"]{color:var(--accent)}
+.timer.off{background:var(--warn-soft);color:var(--warn)}
+/* timer on/off switch: green with the knob on the right = ON; amber with the knob on the left = OFF (Anil, 25 Oct 2026) */
+.tmsw{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--line);border-radius:999px;padding:4px 12px 4px 5px;background:var(--surface);cursor:pointer;font:inherit;color:var(--ink);min-height:40px}
+.tmsw:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.tmsw-track{position:relative;flex:none;width:40px;height:23px;border-radius:999px;background:var(--none-soft);border:1.5px solid var(--warn);transition:background .2s}
+.tmsw-knob{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--warn);box-shadow:0 1px 3px rgba(0,0,0,.25);transition:left .2s,background .2s}
+.tmsw-txt{display:flex;flex-direction:column;line-height:1.15;text-align:left}
+.tmsw-txt b{font-size:13px;letter-spacing:.03em}
+.tmsw-txt small{font-size:11px;color:var(--muted);font-weight:500}
+.tmsw.on{border-color:var(--good);background:var(--good-soft)}
+.tmsw.on .tmsw-track{background:var(--good);border-color:var(--good)}
+.tmsw.on .tmsw-knob{left:19px;background:#fff}
+.tmsw.on b{color:var(--good)}
+.tmsw.off{border-color:var(--warn);background:var(--warn-soft)}
+.tmsw.off b{color:var(--warn)}
+@media (max-width:560px){.tmsw-txt small{display:none}.tmsw{padding-right:10px}}
 .qcard{padding:24px;display:flex;flex-direction:column;gap:16px}
 @media (max-width:600px){.qcard{padding:18px}}
 .qhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap}
@@ -1390,6 +1404,7 @@ function startQuiz(ids, title, mode, source, mins){   // mins: the real time lim
   QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: (mins? mins*60 : ids.length*60)};   // every quiz and paper has a timer: 1 minute per question, or the paper's real time limit (the student can switch it off)
   UI.confirmSubmit = false;
   go("quiz");
+  try{ if(source!=="mock" && !localStorage.getItem("lwa-tm-hint")){ localStorage.setItem("lwa-tm-hint","1"); setTimeout(()=>toast("Tip: the green TIMER switch at the top turns the timer off, and on again."), 900); } }catch(_){}   // shown once per device
 }
 
 /* ---------- quiz player ---------- */
@@ -1445,7 +1460,7 @@ function vQuiz(){
   return `<div class="wrap view">
     <div style="display:flex;flex-direction:column;gap:10px">
       <div class="qbar"><div><p class="eyebrow">${test?"Timed test":QZ.source==="paper"?"Previous paper · timed":"Practice"}${QZ.source==="smart"?" · Smart quiz":""}</p><h1>${esc(QZ.title)}</h1></div>
-        <div class="row">${QZ.source!=="mock" ? `<button class="btn btn-ghost btn-sm tmtog" type="button" data-act="timertoggle" aria-pressed="${!QZ.timerOff}" title="${QZ.timerOff?"Switch the timer on":"Switch the timer off"}">⏱ Timer ${QZ.timerOff?"off":"on"}</button>` : ""}<span class="timer${QZ.timerOff?" off":""}" id="timer">${QZ.limit? fmtTime(QZ.limit - qzSecs()) : "0:00"}</span><button class="btn btn-ghost btn-sm" type="button" data-act="${test?"asksubmit":"finish"}">${test?"Submit":"End quiz"}</button></div></div>
+        <div class="row">${QZ.source!=="mock" ? `<button class="tmsw ${QZ.timerOff?"off":"on"}" type="button" role="switch" aria-checked="${!QZ.timerOff}" data-act="timertoggle" title="${QZ.timerOff?"The timer is off: tap to switch it on":"The timer is on: tap to switch it off"}"><span class="tmsw-track" aria-hidden="true"><span class="tmsw-knob"></span></span><span class="tmsw-txt"><b>⏱ TIMER ${QZ.timerOff?"OFF":"ON"}</b><small>${QZ.timerOff?"Tap to switch on":"Tap to switch off"}</small></span></button>` : ""}<span class="timer${QZ.timerOff?" off":""}" id="timer">${QZ.timerOff?"Paused ":""}${QZ.limit? fmtTime(QZ.limit - qzSecs()) : "0:00"}</span><button class="btn btn-ghost btn-sm" type="button" data-act="${test?"asksubmit":"finish"}">${test?"Submit":"End quiz"}</button></div></div>
       <div class="progress" aria-hidden="true"><i style="width:${prog}%"></i></div>
     </div>
     <div class="player">
@@ -1487,7 +1502,7 @@ function startTimer(){
   const tick = ()=>{
     if(!QZ){ stopTimer(); return; }
     const el = $("#timer"), el2 = qzSecs();
-    if(QZ.timerOff){ if(el) el.textContent = QZ.limit ? fmtTime(QZ.limit - el2) : fmtTime(el2); return; }   // paused: the time stays where it was
+    if(QZ.timerOff){ if(el) el.textContent = "Paused " + (QZ.limit ? fmtTime(QZ.limit - el2) : fmtTime(el2)); return; }   // paused: the time stays where it was
     if(QZ.limit){ const left = QZ.limit - el2;
       if(el){ el.textContent = left >= 0 ? fmtTime(left) : "+" + fmtTime(-left); el.classList.toggle("low", left<60); }   // practice past the time: extra time shown as +m:ss
       if(left<=0){

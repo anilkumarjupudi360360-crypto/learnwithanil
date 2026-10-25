@@ -243,7 +243,7 @@ async def main():
                 t = await pg.inner_text('#timer')
                 if t.count(':') != 2: errors.append(f'{path}: no countdown timer (shows {t})')
                 # the student can switch the timer off (the clock pauses) and on again
-                if not await pg.locator('[data-act="timertoggle"][aria-pressed="true"]').count(): errors.append(f'{path}: no timer on/off button')
+                if not await pg.locator('[data-act="timertoggle"][aria-checked="true"].on').count(): errors.append(f'{path}: no timer on/off button')
                 else:
                     await pg.click('[data-act="timertoggle"]'); t1 = await pg.inner_text('#timer'); await pg.wait_for_timeout(2200)
                     if await pg.inner_text('#timer') != t1 or not await pg.locator('#timer.off').count(): errors.append(f'{path}: timer kept running after switching it off')
