@@ -288,6 +288,14 @@ async def main():
             await tp.click('[data-act="pick"][data-i="1"]'); await tp.click('[data-act="finish"]'); await tp.wait_for_timeout(800)
             if not (await tp.evaluate('location.pathname')).endswith('/result/'): errors.append('End quiz after picking one answer did not show the result')
         await tp.evaluate('localStorage.removeItem("lwa-appsc-g2-quiz-v1")')
+        # the last question always has a Submit button below it
+        await tp.goto(URL + 'appsc-group-2/?practice=s2024'); await tp.wait_for_timeout(1500)
+        n = await tp.locator('[data-act="jump"]').count()
+        if n:
+            await tp.click(f'[data-act="jump"][data-i="{n-1}"]'); await tp.wait_for_timeout(300)
+            if not await tp.locator('.qnav [data-act="finish"]').count(): errors.append('last question has no Submit button below it')
+            await tp.click('.qnav [data-act="finish"]'); await tp.wait_for_timeout(600)
+        await tp.evaluate('localStorage.removeItem("lwa-appsc-g2-quiz-v1")')
         # leaving the test (other app/tab) pauses the clock; coming back starts it again from the same time
         await tp.goto(URL + 'ts-police-si/?sec=ari'); await tp.wait_for_timeout(1500)
         t1 = await tp.inner_text('#timer')
