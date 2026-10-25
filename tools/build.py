@@ -1110,7 +1110,7 @@ def FAQ(total, npapers):
       ('Where can I get APPSC Group 2 previous year question papers with answers?',
        f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024, Mains 2025 Paper I and Paper II, and the 2019 Screening and Mains papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
-       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
+       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('Are the APPSC Group 2 previous papers available in Telugu?',
        'Yes. Almost every question has APPSC\'s own Telugu text, as printed in the question booklet. Tap తెలుగు at the top of the page to practise in Telugu.'),
       ('Is there a APPSC Group 2 mock test?',
@@ -1131,7 +1131,7 @@ def FAQ_G1(total, npapers):
       ('Where can I get APPSC Group 1 previous year question papers with answers?',
        f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam, and the 2023 and 2019 Prelims papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
-       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
+       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('Where is the APPSC Group 1 Prelims 2024 answer key?',
        'Each question on this site shows the answer from APPSC\'s final key, for Paper 1 (General Studies) and Paper 2 (General Aptitude) of the 2024 Prelims, and for the 2023 and 2019 Prelims. Open a paper to see every question with its answer.'),
       ('Is there a APPSC Group 1 mock test?',
@@ -1152,7 +1152,7 @@ def FAQ_CAPF(total, npapers):
       ('Where can I get UPSC CAPF AC previous year question papers with answers?',
        f'This page has {total} questions from {npapers} UPSC CAPF (Assistant Commandants) Paper I papers, General Ability and Intelligence (2024, 2025 and 2026), in English and Hindi as printed in the official question booklets. Every question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
-       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day and the answers to the first 10 questions of each paper.'),
+       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('Where is the CAPF AC 2026 answer key?',
        'Every 2026 question on this site shows the answer from UPSC\'s provisional answer key (Series A booklet), published three days after the exam on 19 July 2026. UPSC\'s final key can differ for a few questions.'),
       ('Is there a CAPF AC mock test?',
@@ -1393,12 +1393,12 @@ var b=document.querySelector(".passon");if(b){{b.textContent="✓ Your PYQ Pass 
 
 
 def lock_html(unlock):
-    return (f'<p class="lock">Answer and explanation: <a href="{unlock}">open it in the practice app</a>. '
+    return (f'<p class="lock">Explanation: <a href="{unlock}">open it in the practice app</a>. '
             f'It needs the ₹{PAY["pyq_price"]} PYQ Pass: one payment for every exam on the site.</p>')
 
 
 def sample_ids(questions):
-    """The questions whose answers stay public: the first SAMPLE_N of each paper."""
+    """The questions whose explanations stay public: the first SAMPLE_N of each paper (every answer is public since 25 Oct 2026)."""
     seen, out = {}, set()
     for q in questions:
         seen[q['p']] = seen.get(q['p'], 0) + 1
@@ -1459,10 +1459,11 @@ def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None, unlock=No
     elif q.get('at'): ans_te = q['at']
     te_ans = f'<p class="ans" lang="{l2["code"]}">{l2["ans"]}: {esc(ans_te)}</p>' if ans_te else ''
     wt = f'<p class="why" lang="{l2["code"]}" style="margin-top:6px">{esc(q["wt"])}</p>' if q.get('wt') else ''
-    if unlock:   # outside the free sample: no answer on the public page
-        parts.append(lock_html(unlock) + '</li>')
+    shown = f'<details><summary>Show answer</summary><p class="ans">Answer: {esc(ans)}</p>{te_ans}'
+    if unlock:   # outside the free sample: the answer is public (Anil, 25 Oct 2026, so ChatGPT and Google can read it); the explanation needs the PYQ Pass
+        parts.append(f'{shown}</details>' + lock_html(unlock) + '</li>')
         return ''.join(parts)
-    parts.append(f'<details><summary>Show answer</summary><p class="ans">Answer: {esc(ans)}</p>{te_ans}<p class="why">{esc(q["w"])}</p>{wt}</details></li>')
+    parts.append(f'{shown}<p class="why">{esc(q["w"])}</p>{wt}</details></li>')
     return ''.join(parts)
 
 
@@ -1479,8 +1480,8 @@ def llms_txt(loaded, grand):
          '- Answers come only from the official keys published by the recruiting body (APPSC, TSLPRB/TGPRB, UPSC, TSPSC/TGPSC). '
          'For a few old APPSC papers (Group 1 2019 and 2023, Group 2 2019) APPSC printed only the correct answer; there the other three options are written by Learn with Anil and labelled.',
          '- Languages: English with Telugu for APPSC, TS Police and TGPSC exams; English with Hindi for UPSC exams.',
-         '- Free: every question is public on the paper and question pages, with the answers and explanations of the first 10 questions of each paper, and a daily question of the day.',
-         f'- PYQ Pass: ₹{PAY["pyq_price"]} once for 12 months, covering every previous paper of every exam on the site (and exams added later): all answers and explanations, practice, timed tests, sectionals and study tools.']
+         f'- Free: every question and its correct answer from the official key are public on the paper, subject and question pages, with the explanations of the first {SAMPLE_N} questions of each paper, and a daily question of the day.',
+         f'- PYQ Pass: ₹{PAY["pyq_price"]} once for 12 months, covering every previous paper of every exam on the site (and exams added later): every explanation, practice in the app, timed tests, sectionals and study tools.']
     for c in exams:
         mk = MOCK_PACKS.get(c['id']); up = UPCOMING_PACKS.get(c['id'])
         if mk: L.append(f'- {mk["title"]}: ₹{mk["price"]} for {mk["n"]} full-length mock tests ({live_text(mk).replace(" (included in the price)", "").rstrip(".")}, all included in the price). {SITE_URL}{c["pb"]}mock-test.html')
@@ -1760,7 +1761,7 @@ PAY = dict(
 )
 PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
 TRIAL_DAYS = 0   # Anil, 23 Oct 2026: no free trial; every PYQ needs the paid PYQ Pass (was 3)
-SAMPLE_N = 10        # public paper / question pages show the answers of the first SAMPLE_N questions of each paper; the rest need the PYQ Pass
+SAMPLE_N = 10        # public paper / question pages show every correct answer (since 25 Oct 2026) and the explanations of the first SAMPLE_N questions of each paper; the other explanations need the PYQ Pass
 PUBLIC_PDFS = False  # Anil, 23 Oct 2026: no free PDF downloads (tools/pdfs.py makes nothing while this is False)
 if os.environ.get('PAY_TEST'):   # test builds only (test/pay_test.py): payments on, against a fake script address
     PAY.update(on=True, api='https://pay.test/exec')
@@ -1934,7 +1935,7 @@ def plans_html(conf):
                      esc(pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:])))
     return ('<table class="facts plans"><tr><th style="width:17%">Plan</th><th style="width:17%">Price</th><th>What you get</th><th style="width:19%">Valid</th></tr>'
             + ''.join(f'<tr><td><b>{a}</b></td><td>{b}</td><td>{c}</td><td>{d}</td></tr>' for a, b, c, d in rows) + '</table>'
-            f'<p>Open to everyone without a plan: the question of the day, and the answers to the first {SAMPLE_N} questions of each paper on the paper pages. '
+            f'<p>Open to everyone without a plan: the question of the day, the correct answer to every question on the paper pages, and the explanations of the first {SAMPLE_N} questions of each paper. '
             'Plans are linked to the phone number and email you register with, on up to 3 devices; pay with the same details.</p>')
 
 
@@ -2211,7 +2212,8 @@ def public_only(papers, questions):
     """Papers and questions that get public pages: all of them. Answer-only papers (no four options) were kept off the public pages
     on 23 Oct 2026; on 24 Oct Anil chose to give them the same free-sample pages as the other papers (questions public, first
     SAMPLE_N answers free, the rest with the PYQ Pass), because Google had already indexed their pages. Since 24 Oct those papers
-    also have four options (APPSC's answer + three by Learn with Anil), labelled on every page."""
+    also have four options (APPSC's answer + three by Learn with Anil), labelled on every page. Since 25 Oct every answer is public on
+    these pages and only the explanations keep the SAMPLE_N split."""
     return list(papers), list(questions)
 
 
@@ -2255,7 +2257,7 @@ def build_static(conf, papers, subjects, questions, subj):
         body = (f'<p lang="{conf["l2"]["code"]}" style="margin:0 0 6px">{esc(paper_kw_l2(conf, p))}</p>'
                 f'<a class="cta" href="{conf["pb"]}?practice={p["id"]}">Attempt this paper · {p.get("mins") or len(qs)} min timer</a>' +
                 f'<a class="cta alt" href="{conf["pb"]}practice/">Make a topic-wise quiz</a>'
-                f'<p class="note">The answers and explanations of the first {min(SAMPLE_N, len(qs))} questions are free on this page. For all {len(qs)}, practise the paper in the app '
+                f'<p class="note">The correct answer to every question is free on this page, and so are the explanations of the first {min(SAMPLE_N, len(qs))}. For all {len(qs)} explanations, practise the paper in the app '
                 f'with the ₹{PAY["pyq_price"]} PYQ Pass, one payment for every exam on the site.</p>'
                 f'<h2>Subjects in this paper</h2>{toc}<h2>All {len(qs)} questions</h2><ol class="qs">'
                 + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html', unl(q)) for q in qs) + '</ol>')
@@ -2324,7 +2326,7 @@ def question_pages(conf, papers, questions, subj):
                     f'<p><a class="cta" href="{pb}?q={q["id"]}">Answer it in the practice app</a>'
                     f'<a class="cta alt" href="{pb}practice/">Make a topic-wise quiz</a></p>' + nav)
             lede = esc(f'Question {q["n"]} of the {p["title"]} ({p["held"]}). '
-                       + ('Try it first, then check your answer and the explanation in the practice app.' if locked else 'Try it first, then open the answer and explanation.'))
+                       + ('Try it first, then open the answer. The explanation is in the practice app with the PYQ Pass.' if locked else 'Try it first, then open the answer and explanation.'))
             crumbs = [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), (p['title'], SITE_URL + paper_url), (f'Q{q["n"]}', can)]
             pages[rel] = static_page(depth, title, desc, can, f'{kw} · Question {q["n"]}', lede, body, crumbs, conf)
     return pages
