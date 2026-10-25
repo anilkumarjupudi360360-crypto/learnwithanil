@@ -281,6 +281,8 @@ async def main():
         await tp.evaluate('(()=>{const k=Object.keys(localStorage).find(k=>k.endsWith("-quiz-v1")); const v=JSON.parse(localStorage.getItem(k)); v.QZ.t0-=1e7; localStorage.setItem(k, JSON.stringify(v));})()')
         await tp.reload(); await tp.wait_for_timeout(2500)
         if not (await tp.evaluate('location.pathname')).endswith('/quiz/') or not (await tp.inner_text('#timer')).startswith('+'): errors.append('practice paper closed at time-up (should stay open with +extra time)')
+        await tp.evaluate('localStorage.clear()'); await tp.goto(URL + 'upsc-epfo/quiz/'); await tp.wait_for_timeout(1200)
+        if not (await tp.evaluate('location.pathname')).endswith('/papers/'): errors.append('quiz page with no open test should show the papers list')
         await tp.close()
         # llms.txt (summary for AI assistants) lists every exam, and every link in it is a real page
         lt = open(os.path.join(SITE, 'llms.txt'), encoding='utf-8').read()

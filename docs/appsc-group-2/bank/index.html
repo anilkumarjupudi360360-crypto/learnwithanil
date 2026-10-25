@@ -999,7 +999,10 @@ function route(){
   }
   if(!VIEWS.includes(v)) v = DATA.hub ? "exams" : "home";
   if(v==="notes" && !(DATA.notes||[]).length) v = "home";   // study material is only for the APPSC Group 1 / Group 2 pages
-  if(v==="quiz" && !QZ) v = LAST? "result" : "practice";
+  if(v==="quiz" && !QZ){   // the quiz page with no test open (e.g. an old tab, or one closed more than 24 hours ago): say so, and show the papers
+    if(LAST) v = "result";
+    else { v = "papers"; history.replaceState(null, "", PATHMODE ? pathOf("papers") : "#papers"); setTimeout(()=>toast("That test is no longer open on this device. Start it again from the list below."), 300); }
+  }
   if(v==="result" && !LAST) v="home";
   return v;
 }
