@@ -177,7 +177,6 @@ EPFO_PAPERS = [
        blurb='General Ability Test for Enforcement Officer / Accounts Officer of the 2016 recruitment, held on 26 February 2017 (120 questions, 100 marks, 2 hours). UPSC\'s website carries neither this paper nor its key; the questions are from a candidate\'s copy of the printed booklet and the answers are worked out and checked by Learn with Anil.'),
 ]
 
-NOKEY_LABEL = {p['id']: p['alabel'] for p in EPFO_PAPERS if p.get('alabel')}   # answer label on papers without an official key
 
 
 def epfo_text():
@@ -308,7 +307,28 @@ TS_PC_PAPERS = [
        key="TSLPRB's final key", fmt='mcq', slug='ts-police-constable-mains-2023-question-paper-with-answers',
        alt='Final Written Exam', te_paper='ఫైనల్ రాత పరీక్ష',
        blurb='Final Written Examination (General Studies): English, arithmetic, reasoning, science, history, geography, polity and economy, current events, personality test and Telangana, 200 questions, 200 marks, 3 hours.'),
+  # older papers (Anil, 25 Oct 2026: "add other pyqs of constable paper also"); question booklets from tsstudies / universityupdates copies
+  dict(id='p2019f', file='ts-pc-2019-fwe.txt', year=2019, stage='Final Written Examination', short='PC Mains 2019',
+       title='TSLPRB Police Constable Final Written Examination 2019 (General Studies)', notif='SCT PC (Civil) & equivalent · booklet A · preliminary key', held='28 April 2019',
+       key="TSLPRB's preliminary key (the final key could not be found)", fmt='mcq', slug='ts-police-constable-mains-2019-question-paper-with-answers',
+       alt='Final Written Exam', te_paper='ఫైనల్ రాత పరీక్ష', alabel="Answer (TSLPRB's preliminary key)",
+       blurb='Final Written Examination of the 2018 recruitment (General Studies): English, arithmetic, reasoning, science, history, geography, polity and economy, current events and Telangana, 200 questions, 200 marks, 3 hours. Answers are from TSLPRB\'s preliminary key; the final key may differ for a few questions.'),
+  dict(id='p2018', file='ts-pc-2018-prelims.txt', year=2018, stage='Preliminary Written Test', short='PC Prelims 2018',
+       title='TSLPRB Police Constable Preliminary Written Test 2018', notif='SCT PC (Civil) & equivalent · booklet B', held='30 September 2018',
+       key="TSLPRB's final key", fmt='mcq', slug='ts-police-constable-prelims-2018-question-paper-with-answers',
+       blurb='English, Arithmetic, Reasoning / Mental Ability and General Studies: 200 questions, 200 marks, 3 hours.'),
+  dict(id='p2016f', file='ts-pc-2016-fwe.txt', year=2016, stage='Final Written Examination', short='PC Mains 2016',
+       title='TSLPRB Police Constable Final Written Examination 2016', notif='SCT PC (Civil) & equivalent · booklet A', held='23 October 2016',
+       key="TSLPRB's final key", fmt='mcq', slug='ts-police-constable-mains-2016-question-paper-with-answers',
+       alt='Final Written Exam', te_paper='ఫైనల్ రాత పరీక్ష',
+       blurb='Final Written Examination of the 2015–16 recruitment: English, arithmetic, reasoning, science, history, Telangana, geography, polity and economy, and current events, 200 questions, 200 marks, 3 hours.'),
+  dict(id='p2016', file='ts-pc-2016-prelims.txt', year=2016, stage='Preliminary Written Test', short='PC Prelims 2016',
+       title='TSLPRB Police Constable Preliminary Written Test 2016', notif='SCT PCs, SPF constables & firemen · booklet A · preliminary key', held='24 April 2016',
+       key="TSLPRB's preliminary key (the final key could not be found)", fmt='mcq', slug='ts-police-constable-prelims-2016-question-paper-with-answers',
+       alabel="Answer (TSLPRB's preliminary key)",
+       blurb='Preliminary Written Test of the 2015–16 recruitment (SCT PCs Civil/AR/SAR CPL/TSSP, constables in SPF and firemen): English, Arithmetic, Reasoning and General Studies, 200 questions, 200 marks, 3 hours. Answers are from TSLPRB\'s preliminary key; the final key may differ for a few questions.'),
 ]
+NOKEY_LABEL = {p['id']: p['alabel'] for p in EPFO_PAPERS + TS_PC_PAPERS if p.get('alabel')}   # answer label on papers without an official final key
 # ---------- TGPSC (formerly TSPSC): Manager (Engineering) in HMWSSB, Hyderabad's water board ----------
 HM_PAPERS = [
   dict(id='m15a', file='tgpsc-hmwssb-manager-2015-paper1-gs.txt', year=2015, stage='Written Examination Paper I', short='Manager 2015 Paper 1 (GS)',
@@ -558,7 +578,16 @@ def ts_text():
     si = [i for i in have_src('ts-police-si', TS_SI_PAPERS) if i != 's2022']
     pc = [i for i in have_src('ts-police-constable', TS_PC_PAPERS) if i != 'p2022']
     si_fwe = 'Papers III and IV' if len(si) > 1 else {'s2023c': 'Paper III, Arithmetic & Reasoning', 's2023d': 'Paper IV, General Studies'}.get(si[0], '') if si else ''
-    return dict(si=si, pc=pc, si_fwe=si_fwe)
+    have = have_src('ts-police-constable', TS_PC_PAPERS)
+    pcs = sorted([p for p in TS_PC_PAPERS if p['id'] in have], key=lambda p: (-p['year'], p['id']))
+    def yrs(stage): return sorted({p['year'] for p in pcs if p['stage'] == stage})
+    def ands(xs): xs = [str(x) for x in xs]; return ', '.join(xs[:-1]) + ' & ' + xs[-1] if len(xs) > 1 else (xs[0] if xs else '')
+    prelim = [p for p in pcs if 'preliminary key' in p.get('key', '')]
+    return dict(si=si, pc=pc, si_fwe=si_fwe, pcs=pcs, pcmany=len(pcs) > 2,
+                pc_pre=ands(yrs('Preliminary Written Test')), pc_fwe=ands(yrs('Final Written Examination')),
+                pc_years=f"{pcs[-1]['year']}–{pcs[0]['year']}" if pcs else '',
+                pc_prelim=[p['short'] for p in prelim],
+                pc_list=ands([f"{p['short']} (held {p['held']}, booklet {p['notif'].split('booklet ')[1].split(' ')[0]})" for p in pcs]).replace(' & ', ' and '))
 
 
 def exam_confs():
@@ -670,21 +699,28 @@ def exam_confs():
                         "Answers come from TSLPRB's final key for booklet A, released on 21 October 2022. Questions the key deleted, or for which it accepted three or four options, are left out. Every question is in English and Telugu, as printed in the booklet.")),
       dict(id='ts-police-constable', dir='ts-police-constable', src='ts-police-constable', key='ts-pc', name='TS Police Constable', short='TS Constable', seo='TS Police Constable',
            slugp='ts-police-constable', papers=TS_PC_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('PC', T['pc']), board='TSLPRB', l2=L2_TE, pb='/ts-police-constable/',
-           keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
+           keyname="TSLPRB's final key", keyshort=("TSLPRB's keys" if T['pc_prelim'] else "TSLPRB's final key"), bits=True,
            te_name='తెలంగాణ పోలీస్ కానిస్టేబుల్', te_paper='ప్రిలిమినరీ పరీక్ష',
-           title=('TS Police Constable Previous Question Papers with Answers – Telangana Constable Prelims 2022 & Mains 2023 (TSLPRB), English & Telugu | Learn with Anil' if pc_m else
+           title=(f"TS Police Constable Previous Question Papers with Answers – Telangana Constable Prelims & Mains {T['pc_years']} (TSLPRB), English & Telugu | Learn with Anil" if T['pcmany'] else
+                  'TS Police Constable Previous Question Papers with Answers – Telangana Constable Prelims 2022 & Mains 2023 (TSLPRB), English & Telugu | Learn with Anil' if pc_m else
                   'TS Police Constable Previous Question Papers with Answers – Telangana Constable (TSLPRB) Prelims 2022, English & Telugu | Learn with Anil'),
            h1='TS Police Constable previous year question papers <em>with answers.</em>',
            l2line=('తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.' if pc_m else
                    'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.'),
            aka='Also known as the Telangana (TG) Police Constable or TS PC exam: SCT PC (Civil) and equivalent posts, conducted by TSLPRB, now TGPRB.',
            aka_short='Telangana Police Constable (TSLPRB / TGPRB)',
-           desc=lambda t: (("TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question papers: Prelims 2022 and Mains 2023 (Final Written Examination, 30 April 2023) with answers from TSLPRB's final keys. " if pc_m else
+           desc=lambda t: ((f"TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question papers: Prelims ({T['pc_pre'].replace(' & ', ' and ')}) and Mains / Final Written Examination ({T['pc_fwe'].replace(' & ', ' and ')}) with answers from TSLPRB's keys. " if T['pcmany'] else
+                            "TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question papers: Prelims 2022 and Mains 2023 (Final Written Examination, 30 April 2023) with answers from TSLPRB's final keys. " if pc_m else
                             "TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. ")
                            + f"{t:,} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
-           eyebrow=('TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Prelims 2022 &amp; Final Written Exam 2023' if pc_m else
+           eyebrow=(f"TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Prelims &amp; Final Written Exams {T['pc_years']}" if T['pcmany'] else
+                    'TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Prelims 2022 &amp; Final Written Exam 2023' if pc_m else
                     'TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Preliminary Written Test'),
-           papers_note=("Answers come from TSLPRB's final keys for booklet A of the 2022 Preliminary Written Test (key released on 21 October 2022) and of the 2023 Final Written Examination. "
+           papers_note=(("Answers come from TSLPRB's final keys for the booklet shown with each paper"
+                         + (f"; for {' and '.join(T['pc_prelim'])} TSLPRB's final key could not be found, so the answers are from its preliminary key and a few may differ from the final key" if T['pc_prelim'] else '')
+                         + ". Questions the key deleted, or for which it accepted three or four options, are left out, as are the few that cannot be read cleanly in the booklet copies or have no correct option as printed; where a key also gave the mark for a blank answer, the explanation says so. "
+                         "The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet.") if T['pcmany'] else
+                        "Answers come from TSLPRB's final keys for booklet A of the 2022 Preliminary Written Test (key released on 21 October 2022) and of the 2023 Final Written Examination. "
                         "Questions the key deleted, or for which it accepted three or four options, are left out, as are the few that cannot be read cleanly in the photographed booklet. The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet." if pc_m else
                         "Answers come from TSLPRB's final key for booklet A, released on 21 October 2022. Questions the key deleted, or for which it accepted three or four options, are left out. The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet.")),
       dict(id='tgpsc-hmwssb-manager', dir='tgpsc-hmwssb-manager', src='tgpsc-hmwssb-manager', key='tg-hmws', name='TGPSC HMWSSB Manager (Engineering)',
@@ -785,7 +821,8 @@ def main():
                      .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf'])
                      .replace('{{LANGS}}', 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
                      .replace('{{BOARD}}', conf['board'])
-                     .replace('{{FOOTSRC}}', 'Questions and answers are from the official final keys.' if conf['board'] in ('APPSC', 'TSLPRB')
+                     .replace('{{FOOTSRC}}', ('Questions and answers are from the official final keys, or the preliminary key where the final key could not be found.'
+                                              if any('preliminary key' in x.get('key', '') for x in papers) else 'Questions and answers are from the official final keys.') if conf['board'] in ('APPSC', 'TSLPRB')
                               else f'Questions are from {conf["board"]}\'s official question paper; answers from {conf["keyshort"]}.')
                      .replace('{{FROMPAPERS}}', f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {esc(papers[0]["stage"])} question paper')
                      .replace('{{PAPERSK}}', f'Official {conf["board"]} paper' + ('s' if len(papers) > 1 else ''))
@@ -1306,7 +1343,13 @@ def FAQ_TS(post, mains=()):
     mkp = MOCK_PACKS.get('ts-police-si' if si else 'ts-police-constable')
     mkt = mkp and (mkp['name'] + (' (SI)' if si else ''))
     def faq(total, npapers):
-        if mains:
+        T = ts_text()
+        if not si and T['pcmany']:
+            where = (f'This page has {total:,} questions from {npapers} TSLPRB Police Constable papers: {T["pc_list"]}, in English and Telugu as printed. '
+                     'Every answer is taken from TSLPRB\'s final key for that paper'
+                     + (f' (for {" and ".join(T["pc_prelim"])} only the preliminary key could be found, so a few answers may differ from the final key)' if T['pc_prelim'] else '')
+                     + ', and each question has a short explanation. You can practise each paper as a quiz or a mock test, with answers and explanations, with one ₹45 PYQ Pass for every exam.')
+        elif mains:
             fwe = (' and '.join(x for i, x in (('s2023c', 'Paper III, Arithmetic & Reasoning, on 8 April'), ('s2023d', 'Paper IV, General Studies, on 9 April')) if i in mains)
                    + ' 2023, booklet D') if si else '30 April 2023, booklet A'
             where = (f'This page has {total:,} questions from {npapers} TSLPRB papers: the {"SI" if si else "Police Constable"} Preliminary Written Test of {"7 August" if si else "28 August"} 2022 (booklet A) '
@@ -1337,7 +1380,10 @@ def FAQ_TS(post, mains=()):
           ('Do I need to register?',
            'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password.'),
           ('Which questions are left out?',
-           'Questions that TSLPRB deleted in the final key, and questions for which the final key accepted three or four options, are left out. Where the key accepted two options, both are shown as correct, and where it also gave the mark for leaving a question blank, the explanation says so.'),
+           ('Questions that TSLPRB deleted in its key, questions for which the key accepted three or four options, and the few that have no correct option as printed in the booklet are left out. '
+            if not si and T['pcmany'] else
+            'Questions that TSLPRB deleted in the final key, and questions for which the final key accepted three or four options, are left out. ')
+           + 'Where the key accepted two options, both are shown as correct, and where it also gave the mark for leaving a question blank, the explanation says so.'),
         ]
     return faq
 
@@ -1645,12 +1691,12 @@ LANDINGS = {
   'ts-police-pyqs.html': dict(
       board='TSLPRB', ename='TS Police', crumb='TS Police PYQs',
       title='TS Police Previous Question Papers with Answers – SI & Constable PYQs (TSLPRB / TGPRB), English & Telugu | Learn with Anil',
-      desc='Telangana Police SI and Constable previous question papers in one place: the TSLPRB Preliminary Written Test 2022 and Final Written Examination 2023 papers, '
-           '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations with one ₹45 PYQ Pass for every exam.',
+      desc='Telangana Police SI and Constable previous question papers in one place: TSLPRB Preliminary Written Test and Final Written Examination papers from 2016 to 2023, '
+           '{n} questions with answers from TSLPRB\'s keys and explanations in English and Telugu. Practise them online with answers and explanations with one ₹45 PYQ Pass for every exam.',
       h1='TS Police SI & Constable previous question papers with answers',
       lede="Every Telangana Police SI and Constable question paper on Learn with Anil, {n} questions in all. "
-           "Answers come from TSLPRB's final key, and every question has a short explanation, in English and Telugu.",
-      intro='<p>Looking for TS Police SI previous papers, the TS SI or Constable mains 2023 question paper, the TS Constable question paper 2022, TSLPRB / TGPRB previous question papers with answers, '
+           "Answers come from TSLPRB's keys (the final key wherever it could be found), and every question has a short explanation, in English and Telugu.",
+      intro='<p>Looking for TS Police SI previous papers, the TS SI or Constable mains 2023 question paper, the TS Constable question paper 2022, the older Constable papers of 2016, 2018 and 2019, TSLPRB / TGPRB previous question papers with answers, '
             'or a Telangana police mock test? They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
             '<p lang="te">తెలంగాణ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) TSLPRB ఫైనల్ కీ సమాధానాలు, తెలుగులో వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.</p>'
             '<p class="note">2026 prelims are tentatively on 29 November (SI) and 20 December (Constable). Full mock tests with a timer: '
@@ -2340,7 +2386,7 @@ def build_static(conf, papers, subjects, questions, subj):
         elif conf['board'] in ('UPSC', 'SSC'):
             title = f'{kw} Question Paper with Answer Key{f" ({alt})" if alt and conf["board"] == "SSC" else ""}, English & Hindi | Learn with Anil'
         else:
-            title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – Final Key, {"English" if p.get("en_only") else "Telugu & English"} | Learn with Anil'
+            title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – {"Preliminary Key" if "preliminary key" in pkey else "Final Key"}, {"English" if p.get("en_only") else "Telugu & English"} | Learn with Anil'
         kdesc = ("answers from APPSC's final key" if conf['board'] == 'APPSC' else 'compiled answers' if p.get('key', '').startswith('answers compiled')
                  else pkey if p.get('nokey')
                  else f'answers from {pkey}')
