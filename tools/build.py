@@ -145,6 +145,16 @@ CAPF_SUBJECTS = [
 
 # ---------- UPSC EPFO: Assistant Provident Fund Commissioner (APFC) and Enforcement Officer / Accounts Officer (EO/AO) ----------
 EPFO_PAPERS = [
+  dict(id='epfo25', file='apfc-eoao-2025.txt', year=2025, stage='APFC & EO/AO Recruitment Test', short='APFC & EO/AO 2025',
+       title='UPSC EPFO APFC & EO/AO Recruitment Test 2025 (General Ability Test, common paper)', notif='Advt. 52/2025 · Series A · provisional answers by Learn with Anil', held='30 November 2025',
+       key="answers worked out and checked by Learn with Anil (provisional: UPSC has not yet published its key)", fmt='mcq', slug='upsc-epfo-apfc-eo-ao-2025-question-paper-with-answers', alt='Assistant Provident Fund Commissioner & Enforcement Officer / Accounts Officer', kwname='UPSC EPFO APFC EO/AO 2025',
+       hi_paper='एपीएफसी और प्रवर्तन अधिकारी/लेखा अधिकारी भर्ती परीक्षा', nokey=1, alabel='Provisional answer (Learn with Anil; UPSC key not yet out)',
+       blurb='The first common General Ability Test for Assistant Provident Fund Commissioner and Enforcement Officer / Accounts Officer: General English, history and freedom struggle, current events, polity and economy, accounting, labour laws, social security, general science and computers, and quantitative aptitude (120 questions, 300 marks, 2 hours). UPSC has not yet published the answer key, so the answers are by Learn with Anil and will be replaced by the official key when it comes out.'),
+  dict(id='pa24', file='pa-2024.txt', year=2024, stage='PA Recruitment Test', short='PA 2024',
+       title='UPSC EPFO Personal Assistant Recruitment Test 2024 (General Ability Test)', notif='Advt. 51/2024 · Series A · official key', held='7 July 2024',
+       key="UPSC's official answer key", fmt='mcq', slug='upsc-epfo-personal-assistant-2024-question-paper-with-answers', alt='Personal Assistant', kwname='UPSC EPFO PA 2024',
+       hi_paper='वैयक्तिक सहायक (PA) भर्ती परीक्षा',
+       blurb='General Ability Test for Personal Assistant in EPFO: 50 General English questions, then Indian polity and economy, current events, freedom struggle, general science and computers, and reasoning and quantitative aptitude (120 questions, 300 marks, 2 hours).'),
   dict(id='apfc23', file='apfc-2023.txt', year=2023, stage='APFC Recruitment Test', short='APFC 2023',
        title='UPSC EPFO APFC Recruitment Test 2023 (General Studies)', notif='Advt. 51/2023 · Series A · official key', held='2 July 2023',
        key="UPSC's official answer key", fmt='mcq', slug='upsc-epfo-apfc-2023-question-paper-with-answers', alt='Assistant Provident Fund Commissioner', kwname='UPSC EPFO APFC 2023',
@@ -160,18 +170,45 @@ EPFO_PAPERS = [
        key="UPSC's official answer key", fmt='mcq', slug='upsc-epfo-eo-ao-2021-question-paper-with-answers', alt='Enforcement Officer / Accounts Officer', kwname='UPSC EPFO EO/AO 2021',
        hi_paper='प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) भर्ती परीक्षा',
        blurb='General Ability Test for Enforcement Officer / Accounts Officer (advertisement of 2020, test held in 2021): General English, Indian freedom struggle, current events, polity and economy, accounting, labour laws, social security, general science and computers, and quantitative aptitude (119 questions; UPSC dropped Q71).'),
+  dict(id='eoao17', file='eoao-2017.txt', year=2017, stage='EO/AO Recruitment Test', short='EO/AO 2017',
+       title='UPSC EPFO EO/AO Recruitment Test 2017 (General Ability Test, 2016 recruitment)', notif='2016 recruitment · Series A · answers by Learn with Anil', held='26 February 2017',
+       key="answers worked out and checked by Learn with Anil (UPSC has published no key for this paper)", fmt='mcq', slug='upsc-epfo-eo-ao-2017-question-paper-with-answers', alt='Enforcement Officer / Accounts Officer', kwname='UPSC EPFO EO/AO 2017',
+       hi_paper='प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) भर्ती परीक्षा', nokey=1, alabel='Answer by Learn with Anil (no official key)',
+       blurb='General Ability Test for Enforcement Officer / Accounts Officer of the 2016 recruitment, held on 26 February 2017 (120 questions, 100 marks, 2 hours). UPSC\'s website carries neither this paper nor its key; the questions are from a candidate\'s copy of the printed booklet and the answers are worked out and checked by Learn with Anil.'),
 ]
+
+NOKEY_LABEL = {p['id']: p['alabel'] for p in EPFO_PAPERS if p.get('alabel')}   # answer label on papers without an official key
 
 
 def epfo_text():
-    """Wording for the EPFO page that depends on which EO/AO papers are on the site."""
+    """Wording for the EPFO page that depends on which papers are on the site."""
     have = have_src('upsc-epfo', EPFO_PAPERS)
+    ps = [p for p in EPFO_PAPERS if p['id'] in have]
     eo23, eo21 = 'eoao23' in have, 'eoao21' in have
     eoy = ' & '.join(y for y, h in (('2023', eo23), ('2021', eo21)) if h)          # '2023 & 2021'
-    return dict(eo=eo23 or eo21, eo21=eo21, eoy=eoy, n=len(have),
-                papers=('APFC 2023, EO/AO ' + eoy) if (eo23 and eo21) else ('APFC 2023 & EO/AO ' + eoy) if eoy else 'APFC 2023',
-                years='2021–2023' if eo21 else '2023',
+    official = [p['short'] for p in ps if not p.get('nokey')]
+    nokey = [p for p in ps if p.get('nokey')]
+    def ands(xs): return ', '.join(xs[:-1]) + ' and ' + xs[-1] if len(xs) > 1 else (xs[0] if xs else '')
+    ys = sorted({p['year'] for p in ps}) or [2023]
+    return dict(eo=eo23 or eo21 or len(ps) > 1, eo21=eo21, eoy=eoy, n=len(ps), many=len(ps) > 3,
+                papers=', '.join(p['short'] for p in ps) if len(ps) > 3 else (('APFC 2023, EO/AO ' + eoy) if (eo23 and eo21) else ('APFC 2023 & EO/AO ' + eoy) if eoy else 'APFC 2023'),
+                years=f'{ys[0]}–{ys[-1]}' if len(ys) > 1 else str(ys[0]),
+                pa='pa24' in have,
+                official=ands(official), nokey=[(p['short'], p['held'], p['id']) for p in nokey],
+                nokeyy=' and '.join(str(p['year']) for p in nokey),
+                tests=ands([f"{p['short']} (held {p['held']})" for p in ps]),
                 eodates=' and '.join(d for d, h in (('2 July 2023', eo23), ('5 September 2021', eo21)) if h))
+
+
+def epfo_keynote(E):
+    """Where the EPFO answers come from (papers page note and FAQ)."""
+    t = f"Answers come from UPSC's official answer keys (Series A) on upsc.gov.in for {E['official']}." if E['official'] else ''
+    if E['eo21']: t += ' UPSC dropped Q71 of the 2021 EO/AO paper, which is left out.'
+    for short, held, pid in E['nokey']:
+        if pid == 'epfo25': t += f" For {short} (held {held}) UPSC has not yet published its key, so the answers are worked out and double-checked by Learn with Anil and marked provisional; they will be replaced by the official key when it is out."
+        else: t += f" For {short} (held {held}) UPSC's website carries neither the paper nor a key: the questions are from a candidate's copy of the printed booklet and the answers are worked out and double-checked by Learn with Anil."
+    return t.strip()
+
 
 EPFO_SUBJECTS = [
   ('eng', 'General English', 'general-english', ['Sentence Arrangement', 'Vocabulary & Idioms', 'Reading Comprehension', 'Grammar & Usage']),
@@ -480,7 +517,7 @@ def load_exam(conf):
         if nown:
             if nown == len(qs): pp['fmt'], pp['own'] = 'mcq', 1   # four options now (ours + APPSC's answer); still PYQ Pass only
             else: print(f'  ! {conf["short"]} {p["id"]}: options for {nown} of {len(qs)} questions only; paper stays quick-recall')
-        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'en_only', 'kwname', 'mins'):
+        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel'):
             if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p) if PUBLIC_PDFS else ''
         alt = paper_alt(conf, p)
@@ -566,26 +603,34 @@ def exam_confs():
                            f"subject-wise practice and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
            papers_note="2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. 2024: UPSC's official answer key (Series A). Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
-      dict(id='upsc-epfo', dir='upsc-epfo', src='upsc-epfo', key='upsc-epfo', name='UPSC EPFO (APFC, EO/AO)', short='EPFO', seo=('UPSC EPFO' if E['eo'] else 'UPSC EPFO APFC'),
+      dict(id='upsc-epfo', dir='upsc-epfo', src='upsc-epfo', key='upsc-epfo', name=('UPSC EPFO (APFC, EO/AO, PA)' if E.get('pa') else 'UPSC EPFO (APFC, EO/AO)'), short='EPFO', seo=('UPSC EPFO' if E['eo'] else 'UPSC EPFO APFC'),
            slugp='upsc-epfo', papers=EPFO_PAPERS, subjects=EPFO_SUBJECTS, faq=FAQ_EPFO, board='UPSC', l2=L2_HI, pb='/upsc-epfo/',
-           keyname="UPSC's official answer key", keyshort="UPSC's official answer keys",
+           keyname="UPSC's official answer key", keyshort=("UPSC's official answer keys (" + E['nokeyy'] + ": answers by Learn with Anil, as UPSC has published no key)" if E['nokey'] else "UPSC's official answer keys"),
            hi_name='यूपीएससी ईपीएफओ', hi_paper='भर्ती परीक्षा', subj_te=EPFO_SUBJ_HI,
            title=(f"UPSC EPFO Previous Year Question Papers with Answers – {E['papers']}, English & Hindi | Learn with Anil" if E['eo'] else
                   'UPSC EPFO APFC Previous Year Question Paper with Answers – APFC 2023, English & Hindi | Learn with Anil'),
-           h1=('UPSC EPFO APFC &amp; EO/AO previous year question papers <em>with answers.</em>' if E['eo'] else
+           h1=('UPSC EPFO APFC, EO/AO &amp; PA previous year question papers <em>with answers.</em>' if E['pa'] else
+               'UPSC EPFO APFC &amp; EO/AO previous year question papers <em>with answers.</em>' if E['eo'] else
                'UPSC EPFO APFC previous year question paper <em>with answers.</em>'),
-           aka=('Also known as the EPFO Assistant Provident Fund Commissioner (APFC) and Enforcement Officer / Accounts Officer (EO/AO) recruitment tests. ' if E['eo'] else
+           aka=('Also known as the EPFO Assistant Provident Fund Commissioner (APFC), Enforcement Officer / Accounts Officer (EO/AO) and Personal Assistant (PA) recruitment tests. ' if E['pa'] else
+                'Also known as the EPFO Assistant Provident Fund Commissioner (APFC) and Enforcement Officer / Accounts Officer (EO/AO) recruitment tests. ' if E['eo'] else
                 'Also known as the EPFO Assistant Provident Fund Commissioner (APFC) recruitment test. ')
-               + 'PYQs with UPSC\'s official answer key, subject-wise: labour laws, social security, accounting, polity, economy, history, science, aptitude and English.',
-           aka_short=('UPSC EPFO APFC and EO/AO (Enforcement Officer / Accounts Officer)' if E['eo'] else 'UPSC EPFO Assistant Provident Fund Commissioner (APFC)'),
-           l2line=('यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) और प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) भर्ती परीक्षाओं के पिछले वर्षों के प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 PYQ पास।' if E['eo'] else
+               + ('PYQs with answers (UPSC\'s official key wherever UPSC has published one), subject-wise: labour laws, social security, accounting, polity, economy, history, science, aptitude and English.' if E['many'] else
+                  'PYQs with UPSC\'s official answer key, subject-wise: labour laws, social security, accounting, polity, economy, history, science, aptitude and English.'),
+           aka_short=('UPSC EPFO APFC, EO/AO (Enforcement Officer / Accounts Officer) and PA (Personal Assistant)' if E['pa'] else
+                      'UPSC EPFO APFC and EO/AO (Enforcement Officer / Accounts Officer)' if E['eo'] else 'UPSC EPFO Assistant Provident Fund Commissioner (APFC)'),
+           l2line=('यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC), प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) और वैयक्तिक सहायक (PA) भर्ती परीक्षाओं के पिछले वर्षों के प्रश्न पत्र, उत्तर सहित (जहाँ यूपीएससी ने कुंजी जारी की है, वहाँ आधिकारिक उत्तर कुंजी से) — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 PYQ पास।' if E['pa'] and E['nokey'] else
+                   'यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) और प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) भर्ती परीक्षाओं के पिछले वर्षों के प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 PYQ पास।' if E['eo'] else
                    'यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) भर्ती परीक्षा का पिछले वर्ष का प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 PYQ पास।'),
-           desc=lambda t: ((f"UPSC EPFO previous year question papers with UPSC's official answer keys and explanations: the APFC 2023 recruitment test and the EO/AO (Enforcement Officer / Accounts Officer) {E['eoy'].replace(' & ', ' and ')} test{'s' if E['eo21'] else ''}. " if E['eo'] else
+           desc=lambda t: ((f"UPSC EPFO previous year question papers with answers and explanations: {E['papers']} (APFC, Enforcement Officer / Accounts Officer and Personal Assistant recruitment tests). " if E['many'] else
+                            f"UPSC EPFO previous year question papers with UPSC's official answer keys and explanations: the APFC 2023 recruitment test and the EO/AO (Enforcement Officer / Accounts Officer) {E['eoy'].replace(' & ', ' and ')} test{'s' if E['eo21'] else ''}. " if E['eo'] else
                             f"UPSC EPFO APFC (Assistant Provident Fund Commissioner) previous year question paper: the 2023 recruitment test with UPSC's official answer key and explanations. ")
                            + f"{t:,} questions in English and Hindi on labour laws, social security, accounting, polity, economy, history, science, aptitude and English; "
                            f"subject-wise practice and timed mock tests with the ₹45 PYQ Pass."),
-           eyebrow=(f"UPSC · EPFO APFC &amp; EO/AO · Recruitment Tests {E['years']}" if E['eo'] else 'UPSC · EPFO Assistant Provident Fund Commissioner · Recruitment Test 2023'),
-           papers_note=("Answers come from UPSC's official answer keys (Series A) on upsc.gov.in. UPSC dropped no question in the two 2023 papers"
+           eyebrow=(f"UPSC · EPFO APFC, EO/AO &amp; PA · Recruitment Tests {E['years']}" if E['pa'] else
+                    f"UPSC · EPFO APFC &amp; EO/AO · Recruitment Tests {E['years']}" if E['eo'] else 'UPSC · EPFO Assistant Provident Fund Commissioner · Recruitment Test 2023'),
+           papers_note=(epfo_keynote(E) + " Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklets." if E['many'] else
+                        "Answers come from UPSC's official answer keys (Series A) on upsc.gov.in. UPSC dropped no question in the two 2023 papers"
                         + (" and one (Q71) in the 2021 EO/AO paper, which is left out" if E['eo21'] else "")
                         + ". Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklets." if E['eo'] else
                         "Answers come from UPSC's official answer key (Series A), published on upsc.gov.in in August 2024; no question was dropped. Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklet.")),
@@ -967,7 +1012,7 @@ def paper_kw_l2(conf, p):
     if conf.get('te_name'):
         return f'{conf["te_name"]} {p.get("te_paper") or conf["te_paper"]} {p["year"]} ప్రశ్నపత్రం సమాధానాలతో'
     if conf.get('hi_name'):
-        return f'{conf["hi_name"]} {p.get("hi_paper") or conf["hi_paper"]} {p["year"]} प्रश्न पत्र, उत्तर कुंजी सहित'
+        return f'{conf["hi_name"]} {p.get("hi_paper") or conf["hi_paper"]} {p["year"]} प्रश्न पत्र, ' + ('उत्तर सहित' if p.get('nokey') else 'उत्तर कुंजी सहित')
     if conf['l2']['code'] == 'te':
         g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
         stage = 'ప్రిలిమ్స్' if p['stage'].startswith(('Screening', 'Prelims')) else 'మెయిన్స్'
@@ -1173,18 +1218,27 @@ def FAQ_EPFO(total, npapers):
     return [
       (('Where can I get UPSC EPFO previous year question papers with answers?' if eo else
         'Where can I get the UPSC EPFO APFC previous year question paper with answers?'),
-       (f'This page has {total} questions from {npapers} UPSC recruitment tests for EPFO: Assistant Provident Fund Commissioner (APFC), held on 2 July 2023, and Enforcement Officer / Accounts Officer (EO/AO), held on {E["eodates"]}. ' if eo else
+       (f'This page has {total} questions from {npapers} UPSC recruitment tests for EPFO: {E["tests"]}. ' if E['many'] else
+        f'This page has {total} questions from {npapers} UPSC recruitment tests for EPFO: Assistant Provident Fund Commissioner (APFC), held on 2 July 2023, and Enforcement Officer / Accounts Officer (EO/AO), held on {E["eodates"]}. ' if eo else
         f'This page has {total} questions from the UPSC recruitment test for Assistant Provident Fund Commissioner (APFC) in EPFO, held on 2 July 2023. ')
-       + 'Every question is in English and Hindi as printed in the official booklet (Series A), apart from the General English part. Every answer is taken from UPSC\'s official answer key and every question has a short explanation. '
-       'You can practise each paper question by question, subject-wise or as a timed test with one ₹45 PYQ Pass for every exam.'),
+       + ('Every question is in English and Hindi as printed in the booklet (Series A), apart from the General English part. Answers are from UPSC\'s official answer keys where UPSC has published one (see the next answer), and every question has a short explanation. ' if E['many'] else
+          'Every question is in English and Hindi as printed in the official booklet (Series A), apart from the General English part. Every answer is taken from UPSC\'s official answer key and every question has a short explanation. ')
+       + 'You can practise each paper question by question, subject-wise or as a timed test with one ₹45 PYQ Pass for every exam.'),
       ('Are the answers official?',
+       ('For most papers, yes. ' if E['nokey'] else '') + (epfo_keynote(E) + ' ' if E['many'] else '') + ('' if E['many'] else
        ('Yes. They come from UPSC\'s official answer keys for Series A, published on upsc.gov.in after each recruitment was completed. UPSC dropped no question in the 2023 papers'
         + ('; in the 2021 EO/AO paper it dropped Q71, which is left out. ' if E['eo21'] else '. ') if eo else
-        'Yes. They come from UPSC\'s official answer key for Series A, published on upsc.gov.in in August 2024 after the recruitment was completed. UPSC dropped no question in this paper. ')
-       + 'Where a keyed answer is debatable, the explanation says "(Official key; some sources differ.)". The explanations are written by Learn with Anil.'),
+        'Yes. They come from UPSC\'s official answer key for Series A, published on upsc.gov.in in August 2024 after the recruitment was completed. UPSC dropped no question in this paper. '))
+       + 'Where a keyed answer is debatable, the explanation says "(Official key; some sources differ.)"'
+       + ('; where one of our own answers is, it says "(No official key; some sources differ.)"' if E['nokey'] else '')
+       + '. The explanations are written by Learn with Anil.'),
       ('What is the UPSC EPFO exam pattern?' if eo else 'What is the UPSC EPFO APFC exam pattern?',
        'The recruitment test is one objective paper of 120 questions for 300 marks in two hours, in English and Hindi (the General English part in English only). '
-       'A wrong answer costs one-third of the marks for that question. Candidates who qualify are called for an interview; the test and the interview are weighted 75:25. '
+       + ('(The 2017 EO/AO paper had the same 120 questions for 100 marks.) ' if any(n[2] == 'eoao17' for n in E['nokey']) else '')
+       + 'A wrong answer costs one-third of the marks for that question. '
+       + ('Candidates who qualify for APFC or EO/AO are called for an interview; the test and the interview are weighted 75:25. ' if E['pa'] else
+          'Candidates who qualify are called for an interview; the test and the interview are weighted 75:25. ')
+       + 
        'The syllabus covers General English, Indian freedom struggle, history and culture, current events and developmental issues, Indian polity and economy, general accounting principles, '
        'industrial relations and labour laws, social security in India, general science and computer applications, and general mental ability and quantitative aptitude. '
        + ('APFC and EO/AO have had separate papers on the same syllabus; in 2025 UPSC set one common paper for both posts.' if eo else '')),
@@ -1197,8 +1251,9 @@ def FAQ_EPFO(total, npapers):
       ('Is the EPFO question paper available in Hindi?' if eo else 'Is the APFC question paper available in Hindi?',
        'Yes. Tap हिंदी at the top of the page to see every question and option of Part B in Hindi, exactly as printed in UPSC\'s booklet, with the explanation in Hindi. Part A (General English) is in English only.'),
       ('Is there an EPFO mock test?' if eo else 'Is there an EPFO APFC mock test?',
-       ('Yes. Open the mock test page and take a real APFC or EO/AO paper with a timer, ' if eo else 'Yes. Open the mock test page and take the real 2023 paper with a timer, ')
-       + 'or tap Create a quiz to choose subjects such as Labour Laws, Social Security or Accounting. You get your score, the official answer and an explanation for every question.'),
+       ('Yes. Open the mock test page and take a real APFC, EO/AO or PA paper with a timer, ' if E['pa'] else
+        'Yes. Open the mock test page and take a real APFC or EO/AO paper with a timer, ' if eo else 'Yes. Open the mock test page and take the real 2023 paper with a timer, ')
+       + 'or tap Create a quiz to choose subjects such as Labour Laws, Social Security or Accounting. You get your score, the ' + ('' if E['nokey'] else 'official ') + 'answer and an explanation for every question.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
@@ -1459,7 +1514,7 @@ def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None, unlock=No
     elif q.get('at'): ans_te = q['at']
     te_ans = f'<p class="ans" lang="{l2["code"]}">{l2["ans"]}: {esc(ans_te)}</p>' if ans_te else ''
     wt = f'<p class="why" lang="{l2["code"]}" style="margin-top:6px">{esc(q["wt"])}</p>' if q.get('wt') else ''
-    shown = f'<details><summary>Show answer</summary><p class="ans">Answer: {esc(ans)}</p>{te_ans}'
+    shown = f'<details><summary>Show answer</summary><p class="ans">{esc(NOKEY_LABEL.get(q.get("p"), "Answer"))}: {esc(ans)}</p>{te_ans}'
     if unlock:   # outside the free sample: the answer is public (Anil, 25 Oct 2026, so ChatGPT and Google can read it); the explanation needs the PYQ Pass
         parts.append(f'{shown}</details>' + lock_html(unlock) + '</li>')
         return ''.join(parts)
@@ -1814,7 +1869,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'ts-police-constable': ('TS Police Constable Preliminary Written Test', '2026-12-20', 'Tentative, TGPRB press note of 17 September 2026.'),
   'upsc-capf': ('UPSC CAPF (Assistant Commandants) 2027', '2027-07-04', 'UPSC Calendar 2027.'),
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
-  'upsc-epfo': ('UPSC EPFO APFC / EO-AO Recruitment Test', None, 'UPSC holds this test only when EPFO posts are advertised; no new advertisement yet.'),
+  'upsc-epfo': ('UPSC EPFO APFC Recruitment Test 2026', '2026-12-20', 'UPSC Special Advertisement 52/2026 (80 APFC posts): pen-and-paper Recruitment Test on 20 December 2026.'),
   'tgpsc-hmwssb-manager': ('TGPSC HMWSSB Manager (Engineering)', None, 'Tentatively December 2026; TGPSC has not announced the exact date yet.'),
 }
 
@@ -2011,7 +2066,7 @@ def free_sample_html(conf, papers, questions, qs):
         ans = ' / '.join(f'({a + 1}) {q["o"][a]}' for a in q['a'])
         ans_te = ' / '.join(f'({a + 1}) {q["ot"][a]}' for a in q['a']) if q.get('ot') else q.get('at', '')
         parts.append('<details><summary>Show answer</summary>'
-                     f'<p class="ans">Answer: {esc(ans)}</p>'
+                     f'<p class="ans">{esc(NOKEY_LABEL.get(q.get("p"), "Answer"))}: {esc(ans)}</p>'
                      + (f'<p class="ans" lang="{l2["code"]}">{l2["ans"]}: {esc(ans_te)}</p>' if ans_te else '')
                      + f'<p class="why">{esc(q["w"])}</p>'
                      + (f'<p class="why" lang="{l2["code"]}" style="margin-top:6px">{esc(q["wt"])}</p>' if q.get('wt') else '')
@@ -2238,14 +2293,18 @@ def build_static(conf, papers, subjects, questions, subj):
         can = base + rel
         pkey = p.get('key', conf['keyname'])
         fmt = (f'Each question with its official answer from {conf["keyname"]}; the key printed only the answer, so the other three options are written by Learn with Anil' if p.get('own')
+               else f'All four options, with {pkey}' if p.get('nokey')
                else f'All four options with the answer from {pkey}' if p['fmt'] == 'mcq'
                else f'Each question with its official answer from {conf["keyname"]} (the key lists the correct answer only)')
         kw, alt = paper_kw(conf, p), paper_alt(conf, p)
-        if conf['board'] in ('UPSC', 'SSC'):
+        if p.get('nokey'):
+            title = f'{kw} Question Paper with Answers, English & Hindi | Learn with Anil'
+        elif conf['board'] in ('UPSC', 'SSC'):
             title = f'{kw} Question Paper with Answer Key{f" ({alt})" if alt and conf["board"] == "SSC" else ""}, English & Hindi | Learn with Anil'
         else:
             title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – Final Key, {"English" if p.get("en_only") else "Telugu & English"} | Learn with Anil'
         kdesc = ("answers from APPSC's final key" if conf['board'] == 'APPSC' else 'compiled answers' if p.get('key', '').startswith('answers compiled')
+                 else pkey if p.get('nokey')
                  else f'answers from {pkey}')
         desc = (f'{kw} question paper{f" ({alt})" if alt else ""}, held {p["held"]}: all {len(qs)} questions in {"English" if p.get("en_only") else "English and " + conf["l2"]["name"]} '
                 f'with {kdesc} and explanations. Practise it online as a quiz or a timed mock test with the ₹45 PYQ Pass.'
@@ -2315,7 +2374,8 @@ def question_pages(conf, papers, questions, subj):
             kw = paper_kw(conf, p)
             title = f'{short} – {kw} Q{q["n"]} | Learn with Anil'
             desc = (f'{kw} question paper, Q{q["n"]}: {text[:140].rsplit(" ", 1)[0]}… '
-                    f'Answer from {p.get("key") or conf["keyname"]}, with explanation, in English and {l2["name"]}.')
+                    + (f'Answer worked out by Learn with Anil (no official key), with explanation, in English and {l2["name"]}.' if p.get('nokey') else
+                       f'Answer from {p.get("key") or conf["keyname"]}, with explanation, in English and {l2["name"]}.'))
             prev_q, next_q = (qs[i - 1] if i else None), (qs[i + 1] if i + 1 < len(qs) else None)
             nav = ('<nav class="toc">'
                    + (f'<a href="{prev_q["id"]}.html">← Q{prev_q["n"]}</a>' if prev_q else '')

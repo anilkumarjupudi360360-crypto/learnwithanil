@@ -1060,7 +1060,7 @@ function qtextHTML(text){
 }
 function stemHTML(q){ const t=QT(q), tag = t.split("\n").filter(tblRow).length>=2 ? "div" : "p"; return `<${tag} class="qtext"${langAttr(q)}>${qtextHTML(t)}</${tag}>` + (q.img? `<img class="qimg" src="${q.img}" alt="Figure for this question">` : ""); }
 function answerText(q){ const o=OPTS(q); return isMCQ(q) ? q.a.map(i=>`(${LET[i]}) ${o[i]}`).join("  or  ") : ANS(q); }
-function answerBox(q){ const te = isMCQ(q)? (P.lang===L2.code&&!!q.ot) : (P.lang===L2.code&&!!q.at); return `<div class="answer"${te?LATTR:""}><small lang="en">Official answer</small>${esc(answerText(q))}</div>`; }
+function answerBox(q){ const te = isMCQ(q)? (P.lang===L2.code&&!!q.ot) : (P.lang===L2.code&&!!q.at); return `<div class="answer"${te?LATTR:""}><small lang="en">${esc((PMAP[q.p]||{}).alabel||"Official answer")}</small>${esc(answerText(q))}</div>`; }
 function videoBtn(q){ return q.v? `<button class="video-btn" type="button" data-act="video" data-id="${q.id}"><span class="play" aria-hidden="true">▶</span><span><b lang="te">వీడియో వివరణ చూడండి</b><small>Watch the video explanation · ${esc(q.v.dur||"1 min")} · Telugu</small></span></button>` : ""; }
 const WHY_L2 = {te:"వివరణ", hi:"व्याख्या"}, EN_TOO = {te:"English లో చదవండి", hi:"अंग्रेज़ी में पढ़ें"};
 function whyBox(w, wt, l){   // the explanation in the reader's language, with the English one a tap away
