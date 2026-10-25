@@ -282,6 +282,12 @@ async def main():
         await tp.evaluate('(()=>{const k=Object.keys(localStorage).find(k=>k.endsWith("-quiz-v1")); const v=JSON.parse(localStorage.getItem(k)); v.QZ.t0-=1e7; localStorage.setItem(k, JSON.stringify(v));})()')
         await tp.goto(URL + 'appsc-group-2/quiz/'); await tp.wait_for_timeout(2500)
         if not (await tp.evaluate('location.pathname')).endswith('/quiz/') or not (await tp.inner_text('#timer')).startswith('+'): errors.append('practice paper closed at time-up (should stay open with +extra time)')
+        # pick one answer without pressing "Check answer", then End quiz: the result page, not some other page
+        await tp.goto(URL + 'appsc-group-2/?practice=s2024'); await tp.wait_for_timeout(1500)
+        if await tp.locator('[data-act="pick"]').count():
+            await tp.click('[data-act="pick"][data-i="1"]'); await tp.click('[data-act="finish"]'); await tp.wait_for_timeout(800)
+            if not (await tp.evaluate('location.pathname')).endswith('/result/'): errors.append('End quiz after picking one answer did not show the result')
+        await tp.evaluate('localStorage.removeItem("lwa-appsc-g2-quiz-v1")')
         # leaving the test (other app/tab) pauses the clock; coming back starts it again from the same time
         await tp.goto(URL + 'ts-police-si/?sec=ari'); await tp.wait_for_timeout(1500)
         t1 = await tp.inner_text('#timer')

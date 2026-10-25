@@ -1469,9 +1469,9 @@ function stopTimer(){ if(timer){ clearInterval(timer); timer=null; } }
 function finishQuiz(){
   if(!QZ) return;
   stopTimer();
-  // Practice: only questions you actually answered or skipped count. Timed test: every question counts, as in the exam.
-  const done = QZ.mode==="test" ? QZ.ids.slice() : QZ.ids.filter(id=>QZ.chk[id]);
-  if(!done.length){ QZ = null; toast("Quiz closed. Nothing was answered, so nothing was saved."); go(LAST? "practice" : "practice"); return; }
+  // Practice: every question you answered counts, whether or not you pressed "Check answer" (Anil, 25 Oct 2026). Timed test: every question counts, as in the exam.
+  const done = QZ.mode==="test" ? QZ.ids.slice() : QZ.ids.filter(id=>QZ.chk[id] || QZ.ans[id]!==undefined || QZ.rev[id]);
+  if(!done.length){ QZ = null; toast("Quiz ended. No question was answered, so nothing was saved."); go("papers"); return; }   // back to the papers list, not the quiz builder
   const res = {title:QZ.title, mode:QZ.mode, source:QZ.source, ids:done, total:QZ.ids.length, ans:Object.assign({},QZ.ans), secs:Math.round(qzSecs()), c:0,w:0,k:0, added:0, mastered:0, at:Date.now()};
   done.forEach(id=>{
     const q = QMAP[id], a = QZ.ans[id];
