@@ -254,6 +254,34 @@ async def main():
             raw = open(os.path.join(SITE, sub, 'index.html'), encoding='utf-8').read()
             has = 'class="card notes-promo"' in raw or 'data-v="notes"' in raw
             if has != want: errors.append(f'{sub}: study material {"missing" if want else "shown"}')
+        # help & grievance page: exists, in the sitemap, linked from footers, form posts a grievance and shows the ticket
+        if '/help.html</loc>' not in open(os.path.join(SITE, 'sitemap.xml')).read(): errors.append('help.html not in sitemap')
+        if 'href="/help.html"' not in open(os.path.join(SITE, 'appsc-group-1', 'index.html'), encoding='utf-8').read(): errors.append('app footer has no Help & grievances link')
+        hp = await b.new_page(viewport={'width': 390, 'height': 900})
+        async def griev(route):
+            import json as _j
+            body = _j.loads(route.request.post_data or '{}')
+            ok = body.get('action') == 'grievance' and body.get('category') and len(body.get('message', '')) >= 10
+            await route.fulfill(status=200, content_type='application/json', body=_j.dumps({'ok': True, 'ticket': 'LWA-261025-001'} if ok else {'ok': False, 'error': 'bad'}))
+        await hp.route(PAY_API, griev)
+        await hp.goto(URL + 'help.html'); await hp.wait_for_timeout(300)
+        await hp.fill('#gForm [name=name]', 'Test Student'); await hp.fill('#gForm [name=phone]', '9876543210')
+        await hp.fill('#gForm [name=message]', 'My pass did not open after paying.'); await hp.click('#gForm button[type=submit]'); await hp.wait_for_timeout(800)
+        if 'LWA-261025-001' not in await hp.inner_text('#gMsg'): errors.append('help.html: grievance form did not show a ticket number')
+        sw = await hp.evaluate('document.documentElement.scrollWidth')
+        if sw > 390: errors.append(f'help.html overflow {sw}')
+        await hp.close()
+        # practice papers do not close at time-up; a test in progress survives a reload
+        tp = await b.new_page(viewport={'width': 1280, 'height': 900}); await tp.add_init_script(REGISTERED)
+        await tp.goto(URL + 'appsc-group-2/?practice=s2024'); await tp.wait_for_timeout(1200)
+        await tp.click('[data-act="pick"][data-i="0"]'); await tp.click('[data-act="check"]'); await tp.wait_for_timeout(200)
+        await tp.reload(); await tp.wait_for_timeout(1500)
+        if not (await tp.evaluate('location.pathname')).endswith('/quiz/') or 'Question' not in await tp.inner_text('main'): errors.append('reload during a practice paper lost the paper')
+        # pretend the paper's time ran out long ago: a practice paper stays open, the extra time shows as +m:ss
+        await tp.evaluate('(()=>{const k=Object.keys(localStorage).find(k=>k.endsWith("-quiz-v1")); const v=JSON.parse(localStorage.getItem(k)); v.QZ.t0-=1e7; localStorage.setItem(k, JSON.stringify(v));})()')
+        await tp.reload(); await tp.wait_for_timeout(2500)
+        if not (await tp.evaluate('location.pathname')).endswith('/quiz/') or not (await tp.inner_text('#timer')).startswith('+'): errors.append('practice paper closed at time-up (should stay open with +extra time)')
+        await tp.close()
         # llms.txt (summary for AI assistants) lists every exam, and every link in it is a real page
         lt = open(os.path.join(SITE, 'llms.txt'), encoding='utf-8').read()
         for h in _re.findall(r'https://learnwithanil\.in/([^\s)]*)', lt):

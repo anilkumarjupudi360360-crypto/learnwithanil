@@ -129,6 +129,7 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
 .pad{padding:20px}
 .pill{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;padding:2px 9px;border-radius:999px;background:var(--surface-2);color:var(--muted);white-space:nowrap}
+.pill{max-width:100%}@media (max-width:560px){.pill{white-space:normal;text-align:left}}   /* long exam names (e.g. HMWSSB) wrap on phones instead of widening the page */
 .pill.blue{background:var(--accent-soft);color:var(--accent-text)}
 .pill.good{background:var(--good-soft);color:var(--good)}
 .pill.bad{background:var(--bad-soft);color:var(--bad)}
@@ -621,7 +622,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 
 <footer class="foot">
   <div class="wrap">
-    <span>Questions are from UPSC's official question paper; answers from UPSC's answer keys (2025: compiled from published keys). Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. <a href="../appsc-pyqs.html">APPSC PYQs</a> · <a href="../ts-police-pyqs.html">TS Police PYQs</a></span>
+    <span>Questions are from UPSC's official question paper; answers from UPSC's answer keys (2025: compiled from published keys). Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. <a href="../appsc-pyqs.html">APPSC PYQs</a> · <a href="../ts-police-pyqs.html">TS Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a></span>
     <span id="resetBox"><button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button></span>
   </div>
 </footer>
@@ -664,6 +665,9 @@ let S = readLS(KEY, blank());
 let P = readLS(PKEY, {papers:null, topics:null, count:10, mode:"practice", recall:true, lang:"en"});
 try{ const gl = localStorage.getItem("lwa-lang"); if(gl && ["en","hi","te"].includes(gl)) P.lang = gl; }catch(_){}
 const save = ()=>writeLS(KEY, S), savePrefs = ()=>writeLS(PKEY, P);
+const QKEY = "lwa-"+EKEY+"-quiz-v1";   // the quiz or test in progress, so a reload (or a phone closing the tab in the background) does not lose it
+function saveQZ(){ try{ if(QZ && QZ.source!=="mock") localStorage.setItem(QKEY, JSON.stringify({QZ, at:Date.now()})); else localStorage.removeItem(QKEY); }catch(_){} }
+function loadQZ(){ try{ const v = JSON.parse(localStorage.getItem(QKEY)||"null"); if(v && v.QZ && Date.now()-v.at < 24*3600e3 && v.QZ.ids.every(id=>QMAP[id])) return v.QZ; }catch(_){} return null; }
 
 /* ---------- visit statistics (Google Analytics, only when the site is built with an id) ---------- */
 function track(name, params){ try{ if(typeof gtag==="function") gtag("event", name, params||{}); }catch(_){} }
@@ -798,7 +802,7 @@ function openPay(kind, note){
     ${kind!=="mock" && PAYC.sample && PAYC.pages && PAYC.pages.pyq ? `<p class="small"><a href="${PAYC.pages.pyq}#free-sample">Not sure yet? Try ${PAYC.sample} free questions first →</a></p>` : ""}
     ${open ? `<p class="small">The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}, on up to 3 devices. Pay by UPI, card or net banking on Instamojo's secure page.</p>
       ${buttons}`
-    : `<p class="small"><b>Online payment is being switched on.</b> Please check back shortly.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}</div>`;
+    : `<p class="small"><b>Online payment is being switched on.</b> Please check back shortly.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}<p class="small" style="margin-top:10px">Problem with a payment or your pass? <a href="/help.html">Help &amp; grievances</a> (reply within 48 hours).</p></div>`;
   if(d.showModal) d.showModal(); else d.setAttribute("open","");
   d.scrollTop = 0;
 }
@@ -1001,6 +1005,7 @@ function render(){
   }
   if(v==="quiz") startTimer();
   markLocks();
+  saveQZ();
   if(changed) window.scrollTo(0,0);
   fixLinks(); document.title = viewTitle(v); syncLang();
   if(v==="exams") applyHubLang();
@@ -1401,7 +1406,12 @@ function startTimer(){
     if(!QZ){ stopTimer(); return; }
     const el = $("#timer"), el2 = qzSecs();
     if(QZ.timerOff){ if(el) el.textContent = QZ.limit ? fmtTime(QZ.limit - el2) : fmtTime(el2); return; }   // paused: the time stays where it was
-    if(QZ.limit){ const left = QZ.limit - el2; if(el){ el.textContent = fmtTime(Math.max(0, left)); el.classList.toggle("low", left<60); } if(left<=0){ toast(QZ.mode==="test" ? "Time is up. Your test has been submitted." : "Time is up. Here is how you did."); finishQuiz(); } }
+    if(QZ.limit){ const left = QZ.limit - el2;
+      if(el){ el.textContent = left >= 0 ? fmtTime(left) : "+" + fmtTime(-left); el.classList.toggle("low", left<60); }   // practice past the time: extra time shown as +m:ss
+      if(left<=0){
+        if(QZ.mode==="test"){ toast("Time is up. Your test has been submitted."); finishQuiz(); }   // timed tests end like the real exam
+        else if(!QZ.overtime){ QZ.overtime = true; saveQZ(); toast("Time is up for this paper. Carry on: the extra time is shown in red, and nothing is lost."); }   // practice never closes by itself
+      } }
     else if(el){ el.textContent = fmtTime(el2); }
   };
   tick(); timer = setInterval(tick, 1000);
@@ -2002,6 +2012,7 @@ bindReset();
 addEventListener("pageshow", e=>{ if(e.persisted){ payRelease(); if(!new URLSearchParams(location.search).get("payment_request_id")) payResume(); } });
 function start(data){
   if(data && data.QZ) QZ = data.QZ; if(data && data.LAST) LAST = data.LAST;
+  if(!QZ){ QZ = loadQZ(); if(QZ) setTimeout(()=>{ if(current==="quiz") toast("Welcome back: your test is just where you left it."); }, 400); }
   refreshPasses();   // on every page load, so a pass bought (or ended) elsewhere shows here
   if(PATHMODE){
     let red = null; try{ red = sessionStorage.getItem("lwa-path"); sessionStorage.removeItem("lwa-path"); }catch(_){}

@@ -871,6 +871,8 @@ def main():
     if bb_live: mocks[bahubali.page(os.path.join(DIST, 'site'))] = None
     all_pages = {**notifs, **mocks, **all_pages}
 
+    open(os.path.join(DIST, 'site', 'help.html'), 'w', encoding='utf-8').write(help_page(loaded))
+    all_pages = {**all_pages, 'help.html': None}
     open(os.path.join(DIST, 'site', '404.html'), 'w', encoding='utf-8').write(not_found_page())
 
     # sitemap + robots (site only)
@@ -1379,7 +1381,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){{
 document.querySelectorAll(".lk").forEach(function(e){{e.textContent="✓ ";e.className="lk ok"}});
 document.querySelectorAll("[data-paidtxt]").forEach(function(e){{e.textContent=e.getAttribute("data-paidtxt")}});
@@ -1499,6 +1501,65 @@ def llms_txt(loaded, grand):
     L += ['', '## About', f'- [About Jupudi Anil Kumar]({SITE_URL}/appsc-group-2/about/): civil-services educator, 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants.',
           f'- Instagram: https://www.instagram.com/{INSTAGRAM}/ · Telegram: https://t.me/learn_with_anil06', f'- Sitemap: {SITE_URL}/sitemap.xml', '']
     return '\n'.join(L)
+
+
+GRIEVANCE_OFFICER = 'Jupudi Anil Kumar'
+CONTACT_PHONE, CONTACT_EMAIL = '+91 94947 92739', 'anilkumarjupudi360360@gmail.com'
+
+
+def help_page(loaded):
+    """/help.html: Help & Grievance Redressal Cell (Anil, 25 Oct 2026). Common doubts answered first, then a complaint form that
+    records a ticket in the private payments sheet ('grievances' tab), the grievance officer's contact details and the time limits
+    of the Consumer Protection (E-Commerce) Rules, 2020 (acknowledge within 48 hours, redress within one month)."""
+    can = SITE_URL + '/help.html'
+    exams = ''.join(f'<option value="{c["id"]}">{esc(c["name"])}</option>' for c, _, _ in loaded)
+    cats = ['Payment or PYQ Pass', 'Mock test pack', 'A question or answer', 'Website not working', 'Refund', 'Other']
+    faq = [
+        ('I paid, but the PYQ Pass or mock pack has not opened.',
+         'Open any previous paper and tap "I have paid · check". The pass is linked to the mobile number and email you registered with, so use the same ones you paid with. One pass works on up to 3 phones or computers. If it still does not open, send the form below with your Instamojo payment ID (it starts with MOJO).'),
+        ('Money was taken from my account, but the payment failed.',
+         'A failed payment is returned automatically by Instamojo and your bank, usually within 5–7 working days. If it is not back by then, send the form with the payment ID or the UPI reference number.'),
+        ('I think an answer is wrong.',
+         'Answers come from the official final key of the recruiting body. Where sources disagree, the explanation says so. Send the form with the paper and question number, and we will check it and reply.'),
+        ('My test closed, or the page went back to the start.',
+         'Practice papers ("Attempt this paper") never close by themselves: when the time is up, the extra time is shown in red and you can carry on. Timed tests and mock tests submit when the time is up, as in the real exam. A test in progress is kept on your device for 24 hours, so reopening the page brings you back to it.'),
+        ('Refunds.',
+         'If you paid and the pass or test pack does not work, and we cannot fix it within 7 days of your complaint, you get the full amount back to the account you paid from.'),
+    ]
+    faq_html = ''.join(f'<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for q, a in faq)
+    body = f"""<p><b>We acknowledge every complaint within 48 hours and resolve it within 30 days</b> (most are sorted out within 3 working days).
+Every complaint gets a ticket number, so you can refer to it later.</p>
+<h2>Quick answers</h2>{faq_html}
+<h2>Send a complaint or a doubt</h2>
+<form id="gForm" class="buy" style="display:block" novalidate>
+<p><label>Your name<br><input name="name" required maxlength="80" autocomplete="name" style="width:100%;padding:9px;font-size:16px"></label></p>
+<p><label>Mobile number (the one you registered or paid with)<br><input name="phone" required inputmode="numeric" maxlength="14" autocomplete="tel" style="width:100%;padding:9px;font-size:16px"></label></p>
+<p><label>Email (optional)<br><input name="email" type="email" maxlength="100" autocomplete="email" style="width:100%;padding:9px;font-size:16px"></label></p>
+<p><label>Exam<br><select name="exam" style="width:100%;padding:9px;font-size:16px"><option value="site">Not about one exam</option>{exams}</select></label></p>
+<p><label>What is it about?<br><select name="category" style="width:100%;padding:9px;font-size:16px">{''.join(f'<option>{esc(c)}</option>' for c in cats)}</select></label></p>
+<p><label>Payment ID, if it is about a payment (optional)<br><input name="payment_id" maxlength="60" placeholder="MOJO… or UPI reference" style="width:100%;padding:9px;font-size:16px"></label></p>
+<p><label>Your complaint or doubt<br><textarea name="message" required maxlength="2000" rows="5" style="width:100%;padding:9px;font-size:16px"></textarea></label></p>
+<p class="muted" style="font-size:14px">Your details are used only to answer this complaint.</p>
+<button class="cta" type="submit" style="border:0;cursor:pointer;font-size:16px">Send</button>
+<p id="gMsg" role="status" style="font-weight:600;margin:12px 0 0"></p>
+</form>
+<h2>Grievance officer</h2>
+<p><b>{esc(GRIEVANCE_OFFICER)}</b>, Learn with Anil (learnwithanil.in)<br>
+Email: <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a><br>
+Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(' ', '')}">{CONTACT_PHONE}</a> (10 am – 7 pm, Monday to Saturday)</p>
+<p>If you are not satisfied with our reply, you can also contact the National Consumer Helpline: call 1915 or visit <a href="https://consumerhelpline.gov.in/" rel="nofollow">consumerhelpline.gov.in</a>.</p>
+<script>(function(){{var f=document.getElementById('gForm'),m=document.getElementById('gMsg');if(!f)return;
+try{{var st=JSON.parse(localStorage.getItem('lwa-appsc-g2-student-v1')||'{{}}');['name','phone','email'].forEach(function(k){{if(st[k])f.elements[k].value=st[k];}});}}catch(e){{}}
+f.addEventListener('submit',function(e){{e.preventDefault();var v={{}};['name','phone','email','exam','category','payment_id','message'].forEach(function(k){{v[k]=f.elements[k].value.trim();}});
+if(!v.name||!/^[6-9]\\d{{9}}$/.test(v.phone.replace(/\\D/g,'').slice(-10))){{m.textContent='Please give your name and a valid 10-digit mobile number.';return;}}
+if(v.message.length<10){{m.textContent='Please describe the problem in a sentence or two.';return;}}
+var b=f.querySelector('button');b.disabled=true;m.textContent='Sending…';v.action='grievance';
+fetch({json.dumps(PAY['api'])},{{method:'POST',headers:{{'Content-Type':'text/plain;charset=utf-8'}},body:JSON.stringify(v)}}).then(function(r){{return r.json();}}).then(function(r){{
+if(r&&r.ok){{f.reset();m.textContent='Received. Your ticket number is '+r.ticket+'. We will reply within 48 hours on your phone or email.';}}else{{m.textContent=(r&&r.error)||'Could not send. Please WhatsApp {CONTACT_PHONE}.';b.disabled=false;}}
+}}).catch(function(){{m.textContent='No connection. Please try again, or WhatsApp {CONTACT_PHONE}.';b.disabled=false;}});}});}})();</script>"""
+    return static_page(0, 'Help & Grievance Redressal Cell | Learn with Anil', 'Help with payments, the PYQ Pass, mock tests and answers on learnwithanil.in: quick answers, a complaint form with a ticket number, and the grievance officer\'s contact details.',
+                       can, 'Help & Grievance Redressal Cell', esc('Questions about a payment, your PYQ Pass, a mock test or an answer? Find a quick answer below, or send us a complaint.'),
+                       body, [('Home', SITE_URL + '/'), ('Help & grievances', can)], None, ename='every exam', at_root=True)
 
 
 LANDINGS = {

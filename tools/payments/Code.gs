@@ -51,12 +51,37 @@ function doPost(e) {
       case 'verify': return out(verify(b, exam));
       case 'passes': return out(passesFor(phoneOf(b.phone), exam, b.device, b.email, true));
       case 'mock': return out(mock(b, exam));
+      case 'grievance': return out(grievance(b, exam));
       default: return out({ok: false, error: 'Unknown action.'});
     }
   } catch (err) {
     log_('error', String(err && err.stack || err));
     return out({ok: false, error: 'Something went wrong. Please try again in a minute.'});
   }
+}
+
+// ---------- grievance redressal cell (learnwithanil.in/help.html): every complaint gets a ticket in the 'grievances' tab ----------
+// Consumer Protection (E-Commerce) Rules 2020: acknowledge within 48 hours, redress within one month.
+const GRIEV_HEAD = ['time', 'ticket', 'name', 'phone', 'email', 'exam', 'category', 'payment_id', 'message', 'status', 'reply'];
+const GRIEV_CATS = ['Payment or PYQ Pass', 'Mock test pack', 'A question or answer', 'Website not working', 'Refund', 'Other'];
+function cell_(s) { s = String(s || '').trim(); return /^[=+\-@]/.test(s) ? "'" + s : s; }   // never let text act as a sheet formula
+function grievance(b, exam) {
+  const phone = phoneOf(b.phone), name = String(b.name || '').trim().slice(0, 80), email = String(b.email || '').trim().slice(0, 100);
+  const msg = String(b.message || '').trim().slice(0, 2000), cat = GRIEV_CATS.indexOf(String(b.category)) >= 0 ? String(b.category) : 'Other';
+  if (!name || !phone) return {ok: false, error: 'Please give your name and a valid 10-digit mobile number.'};
+  if (msg.length < 10) return {ok: false, error: 'Please describe the problem in a sentence or two.'};
+  const sh = sheet('grievances', GRIEV_HEAD);
+  const lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    const v = sh.getDataRange().getValues(), today = today_();
+    let n = 0, mine = 0;
+    for (let i = 1; i < v.length; i++) if (v[i][0] && ymd_(new Date(v[i][0])) === today) { n++; if (String(v[i][3]) === phone) mine++; }
+    if (mine >= 5) return {ok: false, error: 'You have already sent 5 complaints today. We will reply to them soon.'};
+    if (n >= 300) return {ok: false, error: 'Too many complaints today. Please WhatsApp +91 94947 92739.'};
+    const ticket = 'LWA-' + today.replace(/-/g, '').slice(2) + '-' + String(n + 1).padStart(3, '0');
+    sh.appendRow([new Date(), ticket, cell_(name), phone, cell_(email), exam, cat, cell_(String(b.payment_id || '').slice(0, 60)), cell_(msg), 'new', '']);
+    return {ok: true, ticket: ticket};
+  } finally { lock.releaseLock(); }
 }
 
 function out(o) { return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON); }
