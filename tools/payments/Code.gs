@@ -6,8 +6,9 @@
  *    from the day of payment. Stored with exam = 'all'.
  *  - Free trial: the same access as the PYQ Pass for 3 days, once per phone number, starting the first time a registered
  *    student's phone and email reach this script (right after they register on the site). Stored in the 'trials' tab.
- *  - Mock packs (Mission Khaki ₹150, valid till that exam; Mission CGL ₹149, 12 months): one exam's mock tests only
- *    (the PYQ Pass is separate).
+ *  - Mock packs (Mission Khaki ₹150 and Mission Khaki – Constable ₹99, valid till that exam; Mission CGL ₹149, 12 months):
+ *    one exam's mock tests only (the PYQ Pass is separate). The SI + Constable combo (₹199) records one mock pass for each.
+ *  - Free mocks (FREE_MOCKS): open to every registered student, no pass needed; each opening is logged in the 'free' tab.
  *
  * What it does
  *  - buy:     creates an Instamojo payment request for a pass (price fixed here, never taken from the browser)
@@ -17,7 +18,7 @@
  *  - webhook: Instamojo also calls this script when a payment succeeds (checked with the private salt), so a pass
  *             is recorded even if the student closes the page.
  *  - passes:  which passes (and free trial) a registered phone number has; starts the free trial the first time.
- *  - mock:    the key of a released Mission Khaki mock (its encrypted file is on the website), only for a valid mock pass.
+ *  - mock:    the key of a released mock (its encrypted file is on the website), only for a valid mock pass (or a free mock).
  *
  * Settings are NOT in this file. They live under Project Settings → Script properties:
  *   SHEET_ID                                       the ID of the "Learn with Anil – Passes" spreadsheet (the only sheet this script opens)
@@ -33,7 +34,11 @@ const MOCKS = {   // exam id: mock pack on sale (price, name shown at checkout, 
                   // and the prefix every mock id of that pack starts with: a pass for one pack never opens another pack's mocks)
   'ts-police-si': {price: 150, name: 'Mission Khaki TS SI Mocks', until: '2026-11-30', prefix: 'mk-si-'},
   'ssc-cgl': {price: 149, name: 'Mission CGL SSC Mocks', months: 12, prefix: 'mk-cgl-'},   // Anil, 24 Oct 2026: ₹149
+  'ts-police-constable': {price: 99, name: 'Mission Khaki TS PC Mocks', until: '2026-12-21', prefix: 'mk-pc-'},   // Anil, 25 Oct 2026: ₹99
 };
+// SI + Constable in one payment (Anil, 25 Oct 2026): recorded as a mock pass for each exam, each valid till its own exam
+const COMBO = {price: 199, name: 'Mission Khaki SI+PC Mocks', exams: ['ts-police-si', 'ts-police-constable']};
+const FREE_MOCKS = {'mk-pc-1': true};   // free for every registered student (Anil, 25 Oct 2026: Constable Mock 1)
 // Mock keys live in the 'keys' tab of this spreadsheet: mock_id | key (base64) | file | opens (yyyy-mm-dd, IST).
 const MAX_DEVICES = 3;   // one phone number's passes work on at most this many phones/computers
 
@@ -127,14 +132,15 @@ function im_(method, path, payload) {
 const REQ_HEAD = ['time', 'request_id', 'phone', 'exam', 'kind', 'amount', 'name', 'email', 'status'];
 
 function buy(b, exam) {
-  const kind = b.kind === 'mock' ? 'mock' : 'pyq';
+  const kind = b.kind === 'mock' ? 'mock' : b.kind === 'combo' ? 'combo' : 'pyq';
   if (kind === 'mock' && !MOCKS[exam]) return {ok: false, error: 'This mock test pack is not on sale yet.'};
+  if (kind === 'combo' && COMBO.exams.indexOf(exam) < 0) return {ok: false, error: 'This combo is not on sale for this exam.'};
   const phone = phoneOf(b.phone);
   if (!phone) return {ok: false, error: 'Please register with a valid 10-digit mobile number first.'};
   if (!prop('INSTAMOJO_CLIENT_ID') || !prop('INSTAMOJO_CLIENT_SECRET')) return {ok: false, error: 'Online payment opens in a few hours. Please try again later today.'};
-  const amount = kind === 'mock' ? MOCKS[exam].price : PYQ.price;
-  const purpose = (kind === 'mock' ? MOCKS[exam].name : PYQ.purpose).slice(0, 30);
-  const passExam = kind === 'mock' ? exam : 'all';
+  const amount = kind === 'mock' ? MOCKS[exam].price : kind === 'combo' ? COMBO.price : PYQ.price;
+  const purpose = (kind === 'mock' ? MOCKS[exam].name : kind === 'combo' ? COMBO.name : PYQ.purpose).slice(0, 30);
+  const passExam = kind === 'mock' ? exam : kind === 'combo' ? 'combo' : 'all';
   let back = String(b.back || '');
   if (back.indexOf(SITE) !== 0) back = SITE;
   const pr = im_('post', '/v2/payment_requests/', {
@@ -157,8 +163,13 @@ function grant_(req, paymentId, amount, source) {
   try {
     const sh = sheet('passes', PASS_HEAD);
     const v = sh.getDataRange().getValues();
-    for (let i = 1; i < v.length; i++) if (paymentId && String(v[i][5]) === String(paymentId)) return;   // already recorded
-    sh.appendRow([new Date(), req.phone, req.exam, req.kind, untilFor(req.kind, req.exam), paymentId || '', req.request || '', amount || req.amount, source, req.email.toLowerCase()]);
+    // a combo is one payment recorded as a mock pass for each of its exams (the amount goes on the first row)
+    const rows = req.kind === 'combo' ? COMBO.exams.map(ex => [ex, 'mock']) : [[req.exam, req.kind]];
+    rows.forEach(([ex, kind], k) => {
+      for (let i = 1; i < v.length; i++) if (paymentId && String(v[i][5]) === String(paymentId) && String(v[i][2]) === ex) return;   // already recorded
+      sh.appendRow([new Date(), req.phone, ex, kind, untilFor(kind, ex), paymentId || '', req.request || '', k ? 0 : (amount || req.amount),
+                    req.kind === 'combo' ? source + ' (combo)' : source, req.email.toLowerCase()]);
+    });
     if (req.sh) req.sh.getRange(req.row, 9).setValue('paid');
   } finally { lock.releaseLock(); }
 }
@@ -179,7 +190,7 @@ function confirmPaid_(req, id, pid, source) {
 function verify(b, exam) {
   const id = String(b.request || '');
   const req = requestRow_(id);
-  if (!req || (req.exam !== exam && req.exam !== 'all')) return {ok: false, error: 'Payment not found.'};
+  if (!req || !(req.exam === exam || req.exam === 'all' || (req.kind === 'combo' && COMBO.exams.indexOf(exam) >= 0))) return {ok: false, error: 'Payment not found.'};
   if (!confirmPaid_(req, id, String(b.payment || ''), 'verify')) return {ok: false, error: 'The payment is not complete yet. If money was taken, it will show here within a few minutes.'};
   return passesFor(req.phone, exam, b.device, req.email, false);
 }
@@ -281,6 +292,12 @@ function mock(b, exam) {   // the key of a sealed mock (the encrypted file is on
   if (!row) return {ok: false, error: 'This mock is not ready yet.'};
   const opens = day_(row[3]);
   if (opens > today_()) return {ok: false, error: 'This mock opens on ' + opens + '.'};
+  if (FREE_MOCKS[id]) {   // free mock: any registered student
+    const phone = phoneOf(b.phone);
+    if (!phone) return {ok: false, error: 'Please register first (it is free): your name, phone and email.'};
+    try { sheet('free', ['time', 'phone', 'email', 'mock']).appendRow([new Date(), phone, cell_(String(b.email || '').slice(0, 100)), id]); } catch (e) {}
+    return {ok: true, id: id, key: String(row[1]), file: String(row[2]), free: true};
+  }
   const ps = passesFor(phoneOf(b.phone), exam, b.device, b.email, false);
   if (!ps.ok) return ps;
   if (!ps.passes.mock) return {ok: false, error: 'This mock needs the ' + (MOCKS[exam] ? MOCKS[exam].name : 'mock test') + ' pass.', need: 'mock'};
