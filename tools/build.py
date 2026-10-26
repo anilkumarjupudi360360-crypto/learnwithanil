@@ -1853,10 +1853,15 @@ def funders_page(loaded):
     goal = 100000
     pct = min(100, nq * 100 / goal)
     NQ, PCT = f'{nq:,}', f'{pct:.0f}'
-    # Applications in one recruitment cycle for exams on the site (checked 26 Oct 2026): SSC CGL 2025 28,15,445 registered (Adda247, 6 Aug 2025);
-    # UPSC EPFO 2023 9,52,605 (RTI reply, via Physics Wallah); TGPRB SI + Constable 2026 5,77,064 (TGPRB press note 17 Sep 2026);
-    # APPSC Group 2 (Notif. 11/2023) about 4.83 lakh (Deccan Chronicle). CAPF, Group 1, AMVI, HMWSSB not counted (no reliable figure).
-    REACH = '48 lakh+'
+    # Applications for each exam on the site in its latest recruitment with a published figure (checked 26 Oct 2026):
+    # SSC CGL 2025 28,15,445 registered (Adda247, 6 Aug 2025); UPSC EPFO EO/AO + APFC 2023 9,52,605 (RTI reply, via Physics Wallah);
+    # TGPRB 2026 (press note 17 Sep 2026): PC (Civil/equivalent) 3,89,356, SI (Civil/equivalent) 1,60,756; APPSC Group 2 (Notif. 11/2023) about 4.83 lakh
+    # (Deccan Chronicle); APPSC Group 1 screening of 8 Jan 2023: 1,26,449 registered (Sakshi Education, 9 Jan 2023).
+    # UPSC CAPF (AC), TGPSC HMWSSB Manager, APPSC AMVI, TGPSC AMVI: no published applicant count found -> shown as 'not published'.
+    REACH_ROWS = [('SSC CGL', '28.15 lakh', '2025'), ('UPSC EPFO (EO/AO, APFC)', '9.53 lakh', '2023'), ('APPSC Group 2', '4.83 lakh', '2023'),
+                  ('TS Police Constable', '3.89 lakh', '2026'), ('TS Police SI', '1.61 lakh', '2026'), ('APPSC Group 1', '1.26 lakh', '2023'),
+                  ('UPSC CAPF (AC)', '', ''), ('TGPSC HMWSSB Manager (Engineering)', '', ''), ('APPSC AMVI', '', ''), ('TGPSC AMVI', '', '')]
+    REACH = '49 lakh+'   # 28,15,445 + 9,52,605 + 4,83,000 + 3,89,356 + 1,60,756 + 1,26,449 = 49,27,611
     wa = f'https://wa.me/{WHATSAPP}?text=' + quote('Hi Learn_with_anil Team, I am interested in funding Learn with Anil.')
     mail = f'mailto:{CONTACT_EMAIL}?subject=' + quote('Funding Learn with Anil')
     share = 'https://wa.me/?text=' + quote('Learn with Anil: 1 lakh PYQs of government exams under one roof, for ₹45. Anil is building it alone and needs funders: https://learnwithanil.in/funders')
@@ -1876,15 +1881,28 @@ def funders_page(loaded):
       'f2': ('The goal: 1 lakh PYQs', 'लक्ष्य: 1 लाख PYQs', 'లక్ష్యం: 1 లక్ష PYQs'),
       'f3': ('Aspirants apply for these exams in one cycle', 'अभ्यर्थी एक भर्ती चक्र में इन परीक्षाओं के लिए आवेदन करते हैं', 'అభ్యర్థులు ఒక్క నియామక చక్రంలో ఈ పరీక్షలకు దరఖాస్తు చేస్తారు'),
       'reachT': ('How many students it can help', 'यह कितने विद्यार्थियों की मदद कर सकता है', 'ఇది ఎంతమంది విద్యార్థులకు ఉపయోగపడుతుంది'),
-      'reachP': ('The exams already on the site draw <b>more than 48 lakh applications in a single recruitment cycle</b>: SSC CGL 2025 (28.15 lakh), UPSC EPFO 2023 (9.53 lakh), '
-                 'TS Police SI and Constable 2026 (5.77 lakh) and APPSC Group 2 (about 4.83 lakh), not counting UPSC CAPF, APPSC Group 1 and the other exams. '
-                 'With 1 lakh PYQs covering many more exams, the number of students it can help will grow far beyond this.',
-                 'साइट पर पहले से मौजूद परीक्षाओं के लिए <b>एक ही भर्ती चक्र में 48 लाख से अधिक आवेदन</b> आते हैं: SSC CGL 2025 (28.15 लाख), UPSC EPFO 2023 (9.53 लाख), '
-                 'TS पुलिस SI और कांस्टेबल 2026 (5.77 लाख) और APPSC ग्रुप 2 (लगभग 4.83 लाख); इसमें UPSC CAPF, APPSC ग्रुप 1 और अन्य परीक्षाएँ शामिल नहीं हैं। '
-                 'जब 1 लाख PYQs और कई परीक्षाओं को कवर करेंगे, तो इससे मदद पाने वाले विद्यार्थियों की संख्या इससे कहीं आगे बढ़ जाएगी।',
-                 'సైట్‌లో ఇప్పటికే ఉన్న పరీక్షలకు <b>ఒక్క నియామక చక్రంలోనే 48 లక్షలకు పైగా దరఖాస్తులు</b> వస్తాయి: SSC CGL 2025 (28.15 లక్షలు), UPSC EPFO 2023 (9.53 లక్షలు), '
-                 'TS పోలీస్ SI, కానిస్టేబుల్ 2026 (5.77 లక్షలు), APPSC గ్రూప్ 2 (సుమారు 4.83 లక్షలు); UPSC CAPF, APPSC గ్రూప్ 1, ఇతర పరీక్షలు ఇందులో లెక్కించలేదు. '
-                 '1 లక్ష PYQs మరిన్ని పరీక్షలను కవర్ చేసినప్పుడు, ఇది సహాయపడే విద్యార్థుల సంఖ్య ఇంతకంటే ఎంతో ఎక్కువవుతుంది.'),
+      'reachP': ('Students who applied for each exam on the site in its latest recruitment. Together, <b>more than 49 lakh applications</b> in one recruitment cycle, '
+                 'and the number will grow with every new exam on the way to 1 lakh PYQs.',
+                 'साइट पर मौजूद हर परीक्षा की पिछली भर्ती में आवेदन करने वाले विद्यार्थी। कुल मिलाकर, एक भर्ती चक्र में <b>49 लाख से अधिक आवेदन</b>, '
+                 'और 1 लाख PYQs की ओर हर नई परीक्षा के साथ यह संख्या बढ़ती जाएगी।',
+                 'సైట్‌లో ఉన్న ప్రతి పరీక్షకు దాని తాజా నియామకంలో దరఖాస్తు చేసిన విద్యార్థులు. మొత్తం కలిపి, ఒక్క నియామక చక్రంలో <b>49 లక్షలకు పైగా దరఖాస్తులు</b>; '
+                 '1 లక్ష PYQs వైపు ప్రతి కొత్త పరీక్ష చేరినప్పుడు ఈ సంఖ్య పెరుగుతూనే ఉంటుంది.'),
+      'applied': ('applied', 'आवेदन', 'దరఖాస్తులు'),
+      'lakh': ('lakh', 'लाख', 'లక్షలు'),
+      'np': ('Number not published', 'संख्या प्रकाशित नहीं', 'సంఖ్య ప్రచురించలేదు'),
+      'reachNote': ('Figures from the TGPRB press note of 17 Sep 2026, an RTI reply on UPSC EPFO 2023 and news reports (Adda247, Deccan Chronicle, Sakshi Education). '
+                    'An aspirant who applies for two exams is counted twice.',
+                    'आँकड़े: TGPRB प्रेस नोट (17 सितंबर 2026), UPSC EPFO 2023 पर RTI उत्तर और समाचार रिपोर्ट (Adda247, Deccan Chronicle, Sakshi Education)। '
+                    'दो परीक्षाओं के लिए आवेदन करने वाले अभ्यर्थी को दो बार गिना गया है।',
+                    'ఆధారాలు: TGPRB ప్రెస్ నోట్ (17 సెప్టెంబర్ 2026), UPSC EPFO 2023పై RTI సమాధానం, వార్తా కథనాలు (Adda247, Deccan Chronicle, Sakshi Education). '
+                    'రెండు పరీక్షలకు దరఖాస్తు చేసిన అభ్యర్థిని రెండుసార్లు లెక్కించాం.'),
+      'expandT': ('Next: exams of other states too', 'आगे: दूसरे राज्यों की परीक्षाएँ भी', 'తరువాత: ఇతర రాష్ట్రాల పరీక్షలు కూడా'),
+      'expandP': ('Learn with Anil will not stop at Andhra Pradesh, Telangana and the central exams. It will expand to the public service commission, police and other recruitment exams of other states too, '
+                  'so that aspirants across India can find their exam here, all under the same ₹45 PYQ Pass.',
+                  'Learn with Anil आंध्र प्रदेश, तेलंगाना और केंद्रीय परीक्षाओं तक ही सीमित नहीं रहेगा। यह दूसरे राज्यों के लोक सेवा आयोग, पुलिस और अन्य भर्ती परीक्षाओं तक भी विस्तार करेगा, '
+                  'ताकि पूरे भारत के अभ्यर्थियों को अपनी परीक्षा यहीं मिले, सब कुछ उसी ₹45 PYQ पास में।',
+                  'Learn with Anil ఆంధ్రప్రదేశ్, తెలంగాణ, కేంద్ర పరీక్షల వద్దే ఆగిపోదు. ఇతర రాష్ట్రాల పబ్లిక్ సర్వీస్ కమిషన్, పోలీస్, ఇతర నియామక పరీక్షలకు కూడా విస్తరిస్తుంది, '
+                  'తద్వారా దేశవ్యాప్తంగా అభ్యర్థులు తమ పరీక్షను ఇక్కడే, అదే ₹45 PYQ పాస్‌లో పొందగలరు.'),
       'f4': ('One PYQ Pass for every exam · 12 months', 'सभी परीक्षाओं के लिए एक PYQ पास · 12 महीने', 'అన్ని పరీక్షలకు ఒకే PYQ పాస్ · 12 నెలలు'),
       'progT': ('Progress to 1 lakh', '1 लाख की ओर प्रगति', '1 లక్ష వైపు ప్రగతి'),
       'progP': (f'So far: <b>{NQ}</b> of 1,00,000 questions ({PCT}%). Your support helps me reach the goal sooner.',
@@ -1914,9 +1932,9 @@ def funders_page(loaded):
                'వెబ్‌సైట్‌ను కూడా నిర్మించి, నడుపుతూ ఉండాలి. ప్రతి అభ్యర్థి కొనగలిగేలా ధరను ₹45గా ఉంచుతున్నాను, అందుకే కేవలం ఫీజులతో ఈ పని నడవదు.'),
       'helpT': ('What your support will help me do', 'आपका सहयोग मुझे क्या करने में मदद करेगा', 'మీ సహాయం దేనికి ఉపయోగపడుతుంది'),
       'h1t': ('Reach 1 lakh PYQs sooner', '1 लाख PYQs तक जल्दी पहुँचना', '1 లక్ష PYQsను త్వరగా చేరుకోవడం'),
-      'h1p': ('Add the remaining government exams (state PSCs, SSC, banks, railways and defence), so that every aspirant finds their exam here.',
-              'बाकी सरकारी परीक्षाएँ (राज्य PSC, SSC, बैंक, रेलवे और रक्षा) जोड़ना, ताकि हर अभ्यर्थी को यहाँ अपनी परीक्षा मिले।',
-              'మిగిలిన ప్రభుత్వ పరీక్షలను (రాష్ట్ర PSCలు, SSC, బ్యాంకులు, రైల్వేలు, రక్షణ రంగం) చేర్చడం, తద్వారా ప్రతి అభ్యర్థికి తన పరీక్ష ఇక్కడ దొరుకుతుంది.'),
+      'h1p': ('Add the remaining government exams, including other states’ exams (state PSCs, police, SSC, banks, railways and defence), so that every aspirant finds their exam here.',
+              'दूसरे राज्यों की परीक्षाओं समेत बाकी सरकारी परीक्षाएँ (राज्य PSC, पुलिस, SSC, बैंक, रेलवे और रक्षा) जोड़ना, ताकि हर अभ्यर्थी को यहाँ अपनी परीक्षा मिले।',
+              'ఇతర రాష్ట్రాల పరీక్షలతో సహా మిగిలిన ప్రభుత్వ పరీక్షలను (రాష్ట్ర PSCలు, పోలీస్, SSC, బ్యాంకులు, రైల్వేలు, రక్షణ రంగం) చేర్చడం, తద్వారా ప్రతి అభ్యర్థికి తన పరీక్ష ఇక్కడ దొరుకుతుంది.'),
       'h2t': ('More explanations and translations', 'और व्याख्याएँ और अनुवाद', 'మరిన్ని వివరణలు, అనువాదాలు'),
       'h2p': ('Explain and translate more papers in English, Telugu and Hindi.', 'अंग्रेज़ी, तेलुगु और हिंदी में और प्रश्न पत्रों की व्याख्या और अनुवाद करना।', 'ఇంగ్లీష్, తెలుగు, హిందీలో మరిన్ని ప్రశ్నపత్రాలకు వివరణలు, అనువాదాలు.'),
       'h3t': ('Keep it at ₹45', 'कीमत ₹45 ही रखना', 'ధర ₹45గానే ఉంచడం'),
@@ -1956,12 +1974,15 @@ def funders_page(loaded):
     }
     def svg(k): return f'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ic[k]}</svg>'
     def card(k, a, b): return f'<div class="card feature"><span class="ic">{svg(k)}</span><span>{t(a, "h3")}{t(b, "p")}</span></div>'
+    reach_cells = ''.join(
+        f'<div><span class="v">{num.replace(" lakh", "")} {t("lakh")}</span><span class="n">{esc(name)}</span><span class="y">{yr} · {t("applied")}</span></div>' if num else
+        f'<div><span class="v np">{t("np")}</span><span class="n">{esc(name)}</span></div>' for name, num, yr in REACH_ROWS)
     nav = ''.join(f'<a href="{c["pb"]}">{esc(c["short"])}</a>' for c, _, _ in loaded)
     app = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
     css = app[app.index('<style>') + 7: app.index('</style>')]
     title = 'Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45'
     desc = ('Fund Learn with Anil, a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, '
-            'with answers and explanations, for ₹45, for the 48 lakh+ aspirants who apply for these exams. Individuals and organisations can sponsor or partner.')
+            'with answers and explanations, for ₹45, for the 49 lakh+ aspirants who apply for these exams, expanding to other states. Individuals and organisations can sponsor or partner.')
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": can, "image": SITE_URL + '/og-funders.jpg', "inLanguage": ["en", "hi", "te"],
           "keywords": "fund education India, sponsor students, support free exam preparation, government exam PYQs, Learn with Anil, democratise learning",
           "about": {"@type": "EducationalOrganization", "name": "Learn with Anil", "url": SITE_URL + '/', "founder": {"@type": "Person", "name": "Jupudi Anil Kumar"}},
@@ -1990,6 +2011,11 @@ def funders_page(loaded):
 .fund-note{{border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:15px}}
 .fund-poster{{display:block;width:100%;max-width:720px;height:auto;border-radius:var(--r);border:1px solid var(--line)}}
 .hero .mentor b{{display:block}}
+.reach-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}}
+.reach-grid>div{{background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:2px}}
+.reach-grid .v{{font-family:var(--f-display);font-weight:800;font-size:24px;line-height:1.15}}
+.reach-grid .v.np{{font-size:15px;font-weight:600;color:var(--muted);font-family:var(--f-body)}}
+.reach-grid .n{{font-weight:700}}.reach-grid .y{{font-size:13.5px;color:var(--muted)}}
 </style>
 {ICONS}{ga_tag()}
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
@@ -2034,7 +2060,15 @@ def funders_page(loaded):
 
   <section class="wrap section">
     <div class="section-title">{t('reachT', 'h2')}</div>
-    <div class="card fund-box">{t('reachP', 'p')}</div>
+    <div class="card fund-box">{t('reachP', 'p')}
+      <div class="reach-grid">{reach_cells}</div>
+      {t('reachNote', 'p', 'class="muted" style="font-size:14px"')}
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title">{t('expandT', 'h2')}</div>
+    <div class="card fund-box">{t('expandP', 'p')}</div>
   </section>
 
   <section class="wrap section">
