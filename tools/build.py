@@ -367,6 +367,88 @@ HM_SUBJ_TE = {'cur': 'కరెంట్ అఫైర్స్', 'sci': 'జన�
               'ih': 'భారతదేశ చరిత్ర', 'tg': 'తెలంగాణ చరిత్ర, ఉద్యమం', 'pol': 'భారత రాజ్యాంగం (పాలిటీ)', 'eco': 'భారత, తెలంగాణ ఆర్థిక వ్యవస్థ',
               'rea': 'రీజనింగ్, డేటా ఇంటర్‌ప్రిటేషన్', 'eng': 'ఇంగ్లీష్'}
 
+# ---------- AMVI (Assistant Motor Vehicle Inspector): APPSC and TGPSC (formerly TSPSC); Anil, 26 Oct 2026 ----------
+AMVI_AUTO = [
+  ('thm', 'Thermodynamics & Heat Transfer', 'thermodynamics-heat-transfer', ['Thermodynamics', 'Heat Transfer', 'Refrigeration & Air Conditioning']),
+  ('ice', 'IC Engines, Fuels & Emissions', 'ic-engines', ['Engine Fundamentals & Cycles', 'Fuel Supply & Combustion', 'Cooling & Lubrication', 'Fuels, Lubricants & Emissions']),
+  ('chs', 'Automobile Chassis & Transmission', 'automobile-chassis-transmission', ['Chassis & Body', 'Clutch & Gearbox', 'Drive Line, Axles & Differential', 'Brakes', 'Steering & Suspension', 'Wheels & Tyres']),
+  ('ael', 'Automotive Electrical & Electronics', 'automotive-electrical-electronics', ['Batteries & Charging', 'Starting & Ignition', 'Lighting, Instruments & Wiring', 'Electronics, Sensors & ECU']),
+  ('mec', 'Engineering Mechanics & Machine Design', 'mechanics-machine-design', ['Engineering Mechanics', 'Strength of Materials', 'Theory of Machines', 'Machine Design']),
+  ('mfg', 'Materials, Manufacturing & Metrology', 'materials-manufacturing', ['Engineering Materials', 'Manufacturing & Workshop', 'Metrology & Measurement']),
+  ('flu', 'Fluid Mechanics & Hydraulics', 'fluid-mechanics', ['Fluid Mechanics', 'Hydraulic Machines & Pneumatics']),
+  ('mva', 'Motor Vehicles Act, Transport & Maintenance', 'motor-vehicles-act-transport', ['Motor Vehicles Act & Rules', 'Transport Management', 'Vehicle Maintenance & Testing', 'Road Safety']),
+  ('emv', 'Electric, Hybrid & Alternative-Fuel Vehicles', 'electric-alternative-vehicles', ['Electric & Hybrid Vehicles', 'Alternative Fuels']),
+]
+AMVI_AP_SUBJECTS = [
+  ('cur', 'Current Affairs', 'current-affairs', ['National', 'International', 'AP Affairs', 'Sports & Awards', 'Reports & Indices']),
+  ('sci', 'General Science & Technology', 'general-science', ['Physics', 'Chemistry', 'Biology & Health', 'Science & Technology']),
+  ('ih',  'History & Culture', 'history-culture', ['Ancient India', 'Medieval India', 'Modern India & Freedom Struggle', 'Art & Culture', 'Andhra History']),
+  ('geo', 'Geography & Environment', 'geography-environment', ['Indian Geography', 'AP Geography', 'World Geography', 'Environment & Ecology', 'Disaster Management']),
+  ('pol', 'Indian Polity & Governance', 'indian-polity', ['Constitution & Rights', 'Union & State Government', 'Local Government', 'Governance & Schemes']),
+  ('eco', 'Indian & AP Economy', 'indian-ap-economy', ['Indian Economy', 'AP Economy']),
+  ('apr', 'AP Reorganisation & Issues', 'ap-reorganisation', ['AP Reorganisation Act & Issues']),
+  ('men', 'Mental Ability & Data Interpretation', 'mental-ability-reasoning', ['Reasoning', 'Arithmetic', 'Data Interpretation']),
+] + AMVI_AUTO
+AMVI_TG_SUBJECTS = [s for s in HM_SUBJECTS if s[0] in ('cur', 'sci', 'env', 'geo', 'ih', 'tg', 'pol', 'eco', 'rea', 'eng')] + AMVI_AUTO
+AMVI_AP_SUBJ_TE = {'cur': 'కరెంట్ అఫైర్స్', 'sci': 'జనరల్ సైన్స్', 'ih': 'చరిత్ర, సంస్కృతి', 'geo': 'భూగోళశాస్త్రం, పర్యావరణం', 'pol': 'భారత రాజ్యాంగం (పాలిటీ)',
+                   'eco': 'భారత, ఏపీ ఆర్థిక వ్యవస్థ', 'apr': 'ఏపీ పునర్వ్యవస్థీకరణ', 'men': 'మెంటల్ ఎబిలిటీ'}
+AMVI_TG_SUBJ_TE = dict(HM_SUBJ_TE)
+AMVI_AP_PAPERS = [
+  dict(id='a2026a', file='appsc-amvi-2026-paper1-gsma.txt', year=2026, stage='Written Examination Paper I', short='AMVI 2026 Paper 1 (GS & MA)',
+       kwname='APPSC AMVI 2026 Paper 1 General Studies & Mental Ability',
+       title='APPSC Assistant Motor Vehicle Inspector 2026: Paper I (General Studies & Mental Ability)', notif='Notification 21/2025 · Series A', held='27 January 2026',
+       key="APPSC's final key", fmt='mcq', slug='appsc-amvi-2026-paper-1-general-studies-mental-ability-question-paper-with-answers',
+       alt='General Studies & Mental Ability', te_paper='పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ',
+       blurb='Paper I: General Studies & Mental Ability (current affairs, science, history, geography, polity, economy, AP affairs and mental ability), the common paper for AMVI and other APPSC posts, 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
+  dict(id='a2026b', file='appsc-amvi-2026-paper2-automobile.txt', year=2026, stage='Written Examination Paper II', short='AMVI 2026 Paper 2 (Automobile)',
+       kwname='APPSC AMVI 2026 Paper 2 Automobile Engineering',
+       title='APPSC Assistant Motor Vehicle Inspector 2026: Paper II (Automobile Engineering)', notif='Notification 21/2025 · Series A', held='28 January 2026',
+       key="APPSC's final key", fmt='mcq', slug='appsc-amvi-2026-paper-2-automobile-engineering-question-paper-with-answers',
+       alt='Automobile Engineering', te_paper='పేపర్-2 ఆటోమొబైల్ ఇంజనీరింగ్', en_only=True,
+       blurb='Paper II: Automobile Engineering (diploma standard: thermodynamics, IC engines, chassis and transmission, auto electricals, mechanics and machine design, manufacturing, Motor Vehicles Act and transport), 150 questions, 300 marks, 150 minutes, in English.'),
+  dict(id='a2023a', file='appsc-amvi-2023-paper1-gsma.txt', year=2023, stage='Written Examination Paper I', short='AMVI 2023 Paper 1 (GS & MA)',
+       kwname='APPSC AMVI 2023 Paper 1 General Studies & Mental Ability',
+       title='APPSC Assistant Motor Vehicle Inspector 2023: Paper I (General Studies & Mental Ability)', notif='Notification 12/2022 (Suppl. 08/2023) · CBT', held='6 October 2023',
+       key="APPSC's final key", fmt='mcq', slug='appsc-amvi-2023-paper-1-general-studies-mental-ability-question-paper-with-answers',
+       alt='General Studies & Mental Ability', te_paper='పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ',
+       blurb='Paper I: General Studies & Mental Ability, computer-based test, 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
+  dict(id='a2023b', file='appsc-amvi-2023-paper2-automobile.txt', year=2023, stage='Written Examination Paper II', short='AMVI 2023 Paper 2 (Automobile)',
+       kwname='APPSC AMVI 2023 Paper 2 Automobile Engineering',
+       title='APPSC Assistant Motor Vehicle Inspector 2023: Paper II (Automobile Engineering)', notif='Notification 12/2022 (Suppl. 08/2023) · CBT', held='6 October 2023',
+       key="APPSC's final key", fmt='mcq', slug='appsc-amvi-2023-paper-2-automobile-engineering-question-paper-with-answers',
+       alt='Automobile Engineering', te_paper='పేపర్-2 ఆటోమొబైల్ ఇంజనీరింగ్', en_only=True,
+       blurb='Paper II: Automobile Engineering (diploma standard), computer-based test, 150 questions, 300 marks, 150 minutes, in English.'),
+  dict(id='a2019a', file='appsc-amvi-2019-paper1-gsma.txt', year=2019, stage='Written Examination Paper I', short='AMVI 2019 Paper 1 (GS & MA)',
+       kwname='APPSC AMVI 2019 Paper 1 General Studies & Mental Ability',
+       title='APPSC Assistant Motor Vehicle Inspector 2019: Paper I (General Studies & Mental Ability)', notif='Notification 11/2018 · answer-only key', held='April 2019',
+       key="APPSC's final key", fmt='recall', slug='appsc-amvi-2019-paper-1-general-studies-mental-ability-questions-with-answers',
+       alt='General Studies & Mental Ability', te_paper='పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ', en_only=True,
+       blurb="Paper I: General Studies & Mental Ability, the common paper for AMVI, Agriculture Officer and Assistant Electrical Inspector. APPSC's final key prints each question with only its correct answer, so these are quick-recall questions, in English."),
+  dict(id='a2019b', file='appsc-amvi-2019-paper2-automobile.txt', year=2019, stage='Written Examination Paper II', short='AMVI 2019 Paper 2 (Automobile)',
+       kwname='APPSC AMVI 2019 Paper 2 Automobile Engineering',
+       title='APPSC Assistant Motor Vehicle Inspector 2019: Paper II (Automobile Engineering)', notif='Notification 11/2018 · answer-only key', held='17 April 2019',
+       key="APPSC's final key", fmt='recall', slug='appsc-amvi-2019-paper-2-automobile-engineering-questions-with-answers',
+       alt='Automobile Engineering', te_paper='పేపర్-2 ఆటోమొబైల్ ఇంజనీరింగ్', en_only=True,
+       blurb="Paper II: Automobile Engineering. APPSC's final key prints each question with only its correct answer, so these are quick-recall questions, in English."),
+]
+AMVI_TG_PAPERS = [
+  dict(id='t2023a', file='tgpsc-amvi-2023-paper1-gs.txt', year=2023, stage='Written Examination Paper I', short='AMVI 2023 Paper 1 (GS & GA)',
+       kwname='TGPSC AMVI 2023 Paper 1 General Studies & General Abilities',
+       title='TSPSC Assistant Motor Vehicles Inspector 2023: Paper I (General Studies & General Abilities)', notif='Notification 31/2022 · CBRT · preliminary key', held='28 June 2023',
+       key="TSPSC's preliminary key (the final key was released only on candidates' response sheets)", fmt='mcq', alabel="Answer (TSPSC's preliminary key)",
+       slug='tgpsc-amvi-2023-paper-1-general-studies-question-paper-with-answers',
+       alt='General Studies & General Abilities', te_paper='పేపర్-1 జనరల్ స్టడీస్ & జనరల్ ఎబిలిటీస్',
+       blurb="Paper I: General Studies & General Abilities, computer-based test, 150 questions, 150 marks, 150 minutes, in English and Telugu. Answers are from TSPSC's preliminary key; the final key may differ for a few questions."),
+  dict(id='t2023b', file='tgpsc-amvi-2023-paper2-automobile.txt', year=2023, stage='Written Examination Paper II', short='AMVI 2023 Paper 2 (Automobile)',
+       kwname='TGPSC AMVI 2023 Paper 2 Automobile Engineering',
+       title='TSPSC Assistant Motor Vehicles Inspector 2023: Paper II (Automobile Engineering)', notif='Notification 31/2022 · CBRT · preliminary key', held='28 June 2023',
+       key="TSPSC's preliminary key (the final key was released only on candidates' response sheets)", fmt='mcq', alabel="Answer (TSPSC's preliminary key)",
+       slug='tgpsc-amvi-2023-paper-2-automobile-engineering-question-paper-with-answers',
+       alt='Automobile Engineering', te_paper='పేపర్-2 ఆటోమొబైల్ ఇంజనీరింగ్', en_only=True,
+       blurb="Paper II: Automobile Engineering, computer-based test, 150 questions, 300 marks, 150 minutes, in English. Answers are from TSPSC's preliminary key; the final key may differ for a few questions."),
+]
+NOKEY_LABEL.update({p['id']: p['alabel'] for p in AMVI_TG_PAPERS if p.get('alabel')})
+
 TS_SUBJECTS = [
   ('ari', 'Arithmetic', 'arithmetic', ['Numbers & Simplification', 'Percentage, Profit & Loss', 'Ratio, Average & Ages', 'Interest', 'Time & Work', 'Time, Speed & Distance', 'Mensuration', 'Data Interpretation']),
   ('rea', 'Reasoning & Mental Ability', 'reasoning-mental-ability', ['Series & Analogies', 'Coding-Decoding', 'Blood Relations & Directions', 'Calendar & Clocks', 'Venn Diagrams & Syllogisms', 'Puzzles & Arrangements', 'Non-verbal Reasoning', 'Logical Reasoning']),
@@ -736,6 +818,32 @@ def exam_confs():
                            f"and Paper 2 Civil Engineering with answers from TSPSC's final key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow='TGPSC (TSPSC) · Manager (Engineering), HMWSSB · Notification 13/2015',
            papers_note="Answers come from TSPSC's final key for booklet Series A (Notification 13/2015, written test held on 1 November 2015). Questions for which TSPSC gave the mark to every candidate are left out. Paper 1 is in English and Telugu as printed (its English-language questions in English only); Paper 2 (Civil Engineering) is in English only."),
+      dict(id='appsc-amvi', dir='appsc-amvi', src='appsc-amvi', key='ap-amvi', name='APPSC AMVI (Assistant Motor Vehicle Inspector)',
+           short='APPSC AMVI', seo='APPSC AMVI', slugp='appsc-amvi', papers=AMVI_AP_PAPERS, subjects=AMVI_AP_SUBJECTS, faq=FAQ_AMVI('AP'),
+           board='APPSC', l2=L2_TE, pb='/appsc-amvi/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
+           te_name='ఏపీపీఎస్సీ అసిస్టెంట్ మోటార్ వెహికల్ ఇన్‌స్పెక్టర్ (AMVI)', te_paper='రాత పరీక్ష', subj_te=AMVI_AP_SUBJ_TE,
+           title='APPSC AMVI Previous Question Papers with Answers – Assistant Motor Vehicle Inspector 2019, 2023 & 2026, GS & Automobile Engineering | Learn with Anil',
+           h1='APPSC AMVI previous question papers <em>with answers.</em>',
+           l2line='ఏపీపీఎస్సీ అసిస్టెంట్ మోటార్ వెహికల్ ఇన్‌స్పెక్టర్ (AMVI) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), ఆటోమొబైల్ ఇంజనీరింగ్; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.',
+           aka='Assistant Motor Vehicle Inspector (AMVI) in the A.P. Transport Subordinate Service, recruited by the Andhra Pradesh Public Service Commission.',
+           aka_short='APPSC Assistant Motor Vehicle Inspector (AP Transport Department)',
+           desc=lambda t: (f"APPSC AMVI (Assistant Motor Vehicle Inspector) previous question papers: Paper I General Studies & Mental Ability (English and Telugu) and Paper II Automobile Engineering "
+                           f"of 2026, 2023 and 2019 with answers from APPSC's final keys. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
+           eyebrow='APPSC · Assistant Motor Vehicle Inspector · Transport Department · 2019, 2023 &amp; 2026',
+           papers_note="Answers come from APPSC's final keys: the boxed answers of the 2026 Series A booklets (Notification 21/2025), the APOnline final key of the 6 October 2023 computer-based test (Notification 12/2022) and the 2019 final and revised keys (Notification 11/2018). Questions APPSC deleted or ignored for all candidates are left out. APPSC's 2019 keys print only the correct answer, so the 2019 papers are quick-recall questions. Paper I is in English and Telugu as printed (2019: English only); Paper II (Automobile Engineering) is in English only."),
+      dict(id='tgpsc-amvi', dir='tgpsc-amvi', src='tgpsc-amvi', key='tg-amvi', name='TGPSC AMVI (Assistant Motor Vehicles Inspector)',
+           short='TGPSC AMVI', seo='TGPSC AMVI', slugp='tgpsc-amvi', papers=AMVI_TG_PAPERS, subjects=AMVI_TG_SUBJECTS, faq=FAQ_AMVI('TG'),
+           board='TGPSC', l2=L2_TE, pb='/tgpsc-amvi/', keyname="TSPSC's preliminary key", keyshort="TSPSC's preliminary key", bits=True,
+           te_name='టీజీపీఎస్సీ అసిస్టెంట్ మోటార్ వెహికల్స్ ఇన్‌స్పెక్టర్ (AMVI)', te_paper='రాత పరీక్ష', subj_te=AMVI_TG_SUBJ_TE,
+           title='TGPSC (TSPSC) AMVI Previous Question Papers with Answers – Assistant Motor Vehicles Inspector 2023, GS & Automobile Engineering | Learn with Anil',
+           h1='TGPSC AMVI previous question papers <em>with answers.</em>',
+           l2line='టీజీపీఎస్సీ (టీఎస్‌పీఎస్సీ) అసిస్టెంట్ మోటార్ వెహికల్స్ ఇన్‌స్పెక్టర్ (AMVI) 2023 ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), ఆటోమొబైల్ ఇంజనీరింగ్; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.',
+           aka='Assistant Motor Vehicles Inspector (AMVI) in the Telangana Transport Department, recruited by TGPSC, formerly TSPSC.',
+           aka_short='TGPSC (TSPSC) Assistant Motor Vehicles Inspector (Telangana Transport Department)',
+           desc=lambda t: (f"TGPSC (TSPSC) AMVI (Assistant Motor Vehicles Inspector) previous question papers: the 2023 Paper I General Studies & General Abilities (English and Telugu) and Paper II Automobile Engineering "
+                           f"with answers from TSPSC's preliminary key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
+           eyebrow='TGPSC (TSPSC) · Assistant Motor Vehicles Inspector · Notification 31/2022',
+           papers_note="Answers come from TSPSC's preliminary key on the master question papers of the computer-based test held on 28 June 2023 (Notification 31/2022). TSPSC released its final key on 7 February 2024 only on candidates' individual response sheets, so a few answers may differ from the final key; doubtful ones are marked in the explanations. Paper I is in English and Telugu as printed; Paper II (Automobile Engineering) is in English only."),
     ]
 
 
@@ -1098,6 +1206,7 @@ def exam_terms(e, cat):
         words += [f'group {d}', f'group{d}', f'group-{d}', f'group {m.group(1)}']
     if e['cat'] == 'tg': words += ['tspsc', 'tgpsc', 'telangana']
     if 'police' in e['id']: words += ['ts police', 'tg police', 'tslprb', 'tgprb', 'si', 'constable']
+    if 'amvi' in e['id']: words += ['amvi', 'motor vehicle inspector', 'mvi', 'rto', 'transport department', 'automobile engineering', 'automobile']
     if 'hmwssb' in e['id']: words += ['hmwssb', 'water board', 'jalamandali', 'metro water', 'manager engineering', 'civil engineering', 'hmws']
     if 'civil-judge' in e['id']: words += ['civil judge', 'junior civil judge', 'jcj', 'judiciary', 'high court', 'llb', 'law']
     if e['cat'] == 'ap': words += ['appsc', 'andhra'] + ([f'ap group {ROMAN[m.group(1)]}'] if m else [])
@@ -1335,6 +1444,40 @@ def FAQ_HM(total, npapers):
       ('Which questions are left out?',
        'In Paper 2 (Civil Engineering), TSPSC\'s final key gave the mark to every candidate for five questions (Q3, 37, 64, 95 and 128 in Series A); they are left out. The Mechanical, Electrical, ECE and CSE papers are not on the site yet.'),
     ]
+
+
+
+def FAQ_AMVI(state):
+    ap = state == 'AP'
+    name = 'APPSC AMVI' if ap else 'TGPSC AMVI'
+    def faq(total, npapers):
+        if ap:
+            where = (f'This page has {total:,} questions from {npapers} APPSC Assistant Motor Vehicle Inspector papers: Paper I General Studies & Mental Ability and Paper II Automobile Engineering '
+                     'of the 2026 (Notification 21/2025, held 27 and 28 January 2026), 2023 (Notification 12/2022, computer-based test of 6 October 2023) and 2019 (Notification 11/2018) exams. '
+                     'Every answer is taken from APPSC\'s final key, and each question has a short explanation. You can practise each paper as a quiz or a timed mock test, with answers and explanations, with one ₹45 PYQ Pass for every exam.')
+        else:
+            where = (f'This page has {total:,} questions from the TSPSC (now TGPSC) Assistant Motor Vehicles Inspector computer-based test of 28 June 2023 (Notification 31/2022): Paper I General Studies & General Abilities in English and Telugu, and Paper II Automobile Engineering. '
+                     'The answers are from TSPSC\'s preliminary key, because the final key was released only on candidates\' individual response sheets; a few answers may differ from the final key. Each question has a short explanation. '
+                     'You can practise each paper as a quiz or a timed mock test, with answers and explanations, with one ₹45 PYQ Pass for every exam.')
+        return [
+          (f'Where can I get {name} previous year question papers with answers?', where),
+          (f'What is the {name} exam pattern?',
+           ('Two objective papers: Paper I General Studies & Mental Ability (degree standard, 150 questions, 150 marks, 150 minutes, in English and Telugu) and Paper II Automobile Engineering (diploma standard, 150 questions, 300 marks, 150 minutes, in English), 450 marks in all, with a one-third negative mark for a wrong answer. '
+            if ap else
+            'Two objective papers: Paper I General Studies & General Abilities (150 questions, 150 marks, 150 minutes, in English and Telugu) and Paper II Automobile Engineering (150 questions, 300 marks, 150 minutes, in English), 450 marks in all. ')
+           + 'Check the latest notification for the posts, eligibility and dates.'),
+          (f'Are the {name} questions available in Telugu?',
+           'Yes. Paper I is printed in English and Telugu, and every question is here as printed; tap తెలుగు at the top of the page to practise in Telugu. Paper II (Automobile Engineering) is printed in English only.'),
+          (f'Is there a {name} mock test?',
+           'Yes. Open the mock test page and take a real AMVI paper with a timer, or tap Create a quiz to choose subjects such as IC Engines, Brakes, the Motor Vehicles Act or Current Affairs. You get your score, the answer and an explanation for every question.'),
+          ('Do I need to register?',
+           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass opens the previous papers of every exam for 12 months. There is no password.'),
+          ('Which questions are left out?',
+           ('Questions that APPSC deleted or ignored for all candidates are left out. APPSC\'s 2019 keys print only the correct answer, so the 2019 papers are quick-recall questions (question and answer), and a few 2019 questions whose answer makes no sense without the options are left out.'
+            if ap else
+            'Questions that cannot be answered as printed are left out; the explanations point out where TSPSC\'s final key may have changed the preliminary answer.')),
+        ]
+    return faq
 
 
 def FAQ_TS(post, mains=()):
@@ -2484,7 +2627,7 @@ def not_found_page():
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <script>
 (function(){
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);
