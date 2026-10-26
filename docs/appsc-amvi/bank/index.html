@@ -327,7 +327,7 @@ div.feature:hover{border-color:var(--line)}
 .pay-dlg h2{font-size:21px;font-weight:800}.pay-dlg .price{font-size:30px;font-weight:800;color:var(--accent-text)}
 .pay-dlg ul{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px}.pay-dlg .small{color:var(--muted);font-size:13.5px}
 .pay-note{display:flex;flex-direction:column;gap:4px;padding:12px 14px;border-radius:10px;font-size:14px;line-height:1.45}
-.pay-note b{font-size:15.5px}.pay-note.bad{background:var(--bad-soft);color:var(--bad)}.pay-note.warn{background:var(--warn-soft);color:var(--warn)}
+.pay-note b{font-size:15.5px}.pay-note.bad{background:var(--bad-soft);color:var(--bad)}.pay-note.warn{background:var(--warn-soft);color:var(--warn)}.pay-note.good{background:var(--good-soft);color:var(--good)}
 .pay-dlg button:disabled{opacity:.7;cursor:progress}
 .qotd{display:flex;flex-direction:column;gap:14px;padding:20px 22px}
 .qotd-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
@@ -806,6 +806,8 @@ function payInfo(kind){   // Anil, 26 Oct 2026: one ₹45 PYQ Pass for everythin
    back, or Instamojo is still confirming), the checkout opens again with a note that stays on screen, a Try again
    button and a WhatsApp link, instead of a message that disappears after a few seconds. */
 const PAY_NOTE = {
+  joined: {cls:"good", title:"You are registered. One last step:", body:`Pay ₹${PAYC ? PAYC.pyq.price : 45} for the PYQ Pass. It opens every previous paper of every exam on the site, every mock test series and the study books, for 12 months.`,
+           l2:{te:`నమోదు పూర్తయింది. ఇప్పుడు ₹${PAYC ? PAYC.pyq.price : 45} చెల్లించి PYQ Pass పొందండి.`, hi:`पंजीकरण हो गया। अब ₹${PAYC ? PAYC.pyq.price : 45} देकर PYQ Pass लें।`}},
   failed: {cls:"bad", title:"Your payment didn't go through", body:"The pass was not added. UPI payments sometimes fail the first time, so please try again. If money was taken from your account, message us on WhatsApp with your registered phone number.",
            l2:{te:"పేమెంట్ పూర్తి కాలేదు. దయచేసి మళ్లీ ప్రయత్నించండి.", hi:"भुगतान पूरा नहीं हुआ। कृपया फिर से कोशिश करें।"}},
   back:   {cls:"warn", title:"Your payment isn't finished", body:"You came back before paying. You can try again now; it takes less than a minute by UPI.",
@@ -821,10 +823,12 @@ function payHelpLink(kind){
 function openPay(kind, note){
   if(!PAYC) return;
   kind = "pyq";   // the only thing on sale (26 Oct 2026)
+  if(!note && UI.justJoined && Date.now() - UI.justJoined < 30000) note = "joined";   // the first checkout after registering says so
+  UI.justJoined = 0;
   const x = payInfo(kind), open = PAYC.on && PAYC.api, n = note && PAY_NOTE[note];
   let d = document.getElementById("payDlg");
   if(!d){ d = document.createElement("dialog"); d.id = "payDlg"; d.className = "pay-dlg"; document.body.appendChild(d); d.addEventListener("click", e=>{ if(e.target===d) d.close(); }); }
-  const buttons = `<div class="row"><button class="btn btn-primary" type="button" data-act="paybuy" data-kind="${kind}" autofocus>${esc(n && note!=="pending" ? "Try again · ₹"+x.price : x.btn)}</button><button class="btn btn-secondary" type="button" data-act="paycheck">I have paid · check</button><button class="btn btn-ghost" type="button" data-act="payclose">Close</button></div>`;
+  const buttons = `<div class="row"><button class="btn btn-primary" type="button" data-act="paybuy" data-kind="${kind}" autofocus>${esc(n && note!=="pending" && note!=="joined" ? "Try again · ₹"+x.price : x.btn)}</button><button class="btn btn-secondary" type="button" data-act="paycheck">I have paid · check</button><button class="btn btn-ghost" type="button" data-act="payclose">Close</button></div>`;
   // with a note, the note and the buttons come first, so a phone shows both without scrolling
   d.innerHTML = open && n
     ? `<div class="pay-in"><div class="pay-note ${n.cls}" role="alert"><b>${esc(n.title)}</b><span>${esc(n.body)}</span>${n.l2[L2.code] ? `<span lang="${L2.code}">${esc(n.l2[L2.code])}</span>` : ""}</div>
@@ -902,7 +906,7 @@ async function payReturn(params){
    a phone with a valid PYQ Pass, and the PDF is decrypted here in the browser and saved. */
 async function bookDownload(id, btn){
   const b = (DATA.notes||[]).find(x=>x.id===id); if(!b || !PAYC || !PAYC.api) return;
-  if(!ST.name){ UI.afterJoin = current; go("join"); return; }
+  if(!ST.name){ UI.pendingBook = id; go("join"); return; }
   if(!passOK("pyq")){ openPay("pyq"); return; }
   const label = btn ? btn.textContent : ""; if(btn){ btn.disabled = true; btn.textContent = "Preparing your PDF…"; }
   try{
@@ -1007,11 +1011,17 @@ function routeFromPath(p){   // the view a path on this site belongs to, or null
 }
 const href = v => PATHMODE ? pathOf(v) : "#" + v;
 function go(v, replace){
+  if(v==="join"){ const r = curRoute(); if(r!=="join") UI.beforeJoin = r; }   // where to come back to after registering
   if(!PATHMODE){ if(location.hash.slice(1)!==v){ location.hash=v; } else { render(); } return; }
   const u = pathOf(v);
   if(!HUBPAGE && (v==="exams" || /^exam\//.test(v))){ location.href = u; return; }   // the exam list is another page
   if(location.pathname!==u || location.search || location.hash) history[replace? "replaceState" : "pushState"](null, "", u);
   render();
+}
+function leaveJoin(fallback){   // close the registration form: back to the page the student came from
+  let b = UI.beforeJoin; UI.beforeJoin = null;
+  if(!b || b==="join" || b==="quiz" || b==="result") b = fallback || (HUBPAGE ? "exams" : "home");   // never a route on another page: that would reload and lose the checkout
+  if(curRoute()==="join") go(b, true); else render();
 }
 function curRoute(){
   if(!PATHMODE) return location.hash.slice(1);
@@ -1663,12 +1673,12 @@ function vHeatmap(){
 
 /* ---------- about ---------- */
 function vJoin(){
-  const p = UI.pending, s = ST;
-  const intro = p
-    ? "Registration is only once. Then one ₹45 PYQ Pass opens every previous paper of every exam on the site for 12 months."
+  const p = UI.pending, s = ST, fresh = !s.name, pay = PAYC && PAYC.on && !UI.pendingMock, price = PAYC ? PAYC.pyq.price : 45;
+  const intro = p || fresh
+    ? (pay ? `Registration is only once. Next you pay ₹${price} for the PYQ Pass, which opens every previous paper of every exam on the site for 12 months.` : "Registration is only once, and it is free.")
     : "Your test scores are saved with these details, so Anil can follow your progress and help you.";
   return `<div class="wrap view">
-    ${head(p? "One-time registration" : "Your details", p? "Register once to start practising" : "Update your details", intro)}
+    ${head(p || fresh ? "One-time registration" : "Your details", p ? "Register once to start practising" : fresh ? (pay ? "Register to get the PYQ Pass" : "Register once") : "Update your details", intro)}
     <form class="card join" id="joinForm" novalidate>
       ${p? `<p class="join-test"><span class="mono">Next</span> ${esc(p.title)} · ${p.ids.length} questions</p>` : ""}
       <div class="join-grid">
@@ -1680,7 +1690,7 @@ function vJoin(){
       <label><span>Anything you need help with? <span class="muted" style="font-weight:500">(optional)</span></span><textarea name="help" rows="3" maxlength="600" placeholder="For example: I find AP Economy hard to revise. How should I plan it?"></textarea></label>
       <label class="consent"><input type="checkbox" name="ok" ${s.name?"checked":""}> <span>I agree to share these details and my test scores with Learn with Anil. They are not shown publicly.</span></label>
       <p class="err" id="joinErr" role="alert" hidden></p>
-      <div class="row"><button class="btn btn-primary" type="submit">${p? "Register and start" : "Save details"}</button><a class="btn btn-secondary" href="#${p? "papers" : "about"}">Cancel</a></div>
+      <div class="row"><button class="btn btn-primary" type="submit">${p || UI.pendingMock ? "Register and start" : fresh ? (pay ? "Register and go to payment" : "Register") : "Save details"}</button><a class="btn btn-secondary" href="#${p? "papers" : fresh ? "home" : "about"}">Cancel</a></div>
       <p class="muted" style="font-size:13.5px;margin:0">You register only once. Your attempts, mistakes notebook and bookmarks stay on this phone or computer.</p>
     </form>
   </div>`;
@@ -1979,7 +1989,7 @@ document.addEventListener("click", e=>{
     case "bm": { const id=b.dataset.id; if(S.bm[id]) delete S.bm[id]; else S.bm[id]=true; save(); toast(S.bm[id]?"Saved to bookmarks":"Removed from bookmarks"); render(); break; }
     case "excat": { UI.exCat = b.dataset.cat; applyHub(); break; }
     case "hubscroll": { const t=$("#exams-list"); if(t) t.scrollIntoView({behavior:"smooth", block:"start"}); const s=$("#examSearch"); if(s) setTimeout(()=>s.focus({preventScroll:true}), 400); break; }
-    case "unlockpyq": if(!ST.name){ UI.afterJoin = current; go("join"); } else openPay("pyq"); break;
+    case "unlockpyq": if(!ST.name){ UI.pendingPay = true; go("join"); } else openPay("pyq"); break;
     case "kitdl": track("kit_download", {paper: b.dataset.paper}); return;
     case "bookdl": bookDownload(b.dataset.id, b); return;
     case "openpay": openPay(b.dataset.kind==="mock" || (b.dataset.kind==="combo" && PAYC && PAYC.combo) ? b.dataset.kind : "pyq"); break;
@@ -2073,10 +2083,20 @@ document.addEventListener("submit", async e=>{
     if(isNew) track("sign_up", {method: "form", exam: DATA.examShort||"", district});
     const trialMsg = "";
     if(PAYC && PAYC.on && PAYC.api){ toast("Saving your details…"); await refreshPasses(); }   // a pass already paid with this phone opens at once
-    if(p){ toast("Thanks, "+name.split(" ")[0]+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source, p.mins); }
-    else if(UI.pendingBuy){ const k = UI.pendingBuy; UI.pendingBuy = null; go("home"); payBuy(k); }
-    else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; go("home"); startMock(m.id, m.part); }
-    else { toast("Your details are saved." + trialMsg); const back = UI.afterJoin; UI.afterJoin = null; go(back && back!=="join" ? back : "about"); }
+    /* Anil, 26 Oct 2026: a new student who registered from "Register to get the PYQ Pass" was sent back to the page with
+       no checkout, and one who registered before a test saw the checkout over the registration page. Now the form always
+       closes (back to the page they came from, replacing the form in the history) and the checkout opens there, with a
+       "You are registered" note and the Pay button, unless the phone already has a pass. */
+    const pay = PAYC && PAYC.on && PAYC.api, book = UI.pendingBook, wantPay = UI.pendingPay;
+    UI.pendingBook = null; UI.pendingPay = false;
+    if(isNew) UI.justJoined = Date.now();
+    const first = name.split(" ")[0];
+    if(p){ leaveJoin(); toast("Thanks, "+first+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source, p.mins); }
+    else if(UI.pendingBuy){ UI.pendingBuy = null; leaveJoin(); openPay("pyq"); payBuy("pyq"); }   // they had already tapped Pay: straight on to Instamojo
+    else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; leaveJoin(); startMock(m.id, m.part); }
+    else if(book){ leaveJoin(); bookDownload(book); }
+    else if(pay && (isNew || wantPay) && !passOK("pyq")){ leaveJoin(); toast("Thanks, "+first+". Your details are saved."); openPay("pyq"); }
+    else { toast(passOK("pyq") && pay && isNew ? "Welcome back, "+first+". Your PYQ Pass is active." : "Your details are saved." + trialMsg); leaveJoin(isNew || wantPay ? null : "about"); }
   } finally {
     joinBusy = false;
     if(btn && btn.isConnected){ btn.disabled = false; btn.textContent = label; }

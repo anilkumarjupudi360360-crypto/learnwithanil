@@ -83,6 +83,7 @@ async def main():
             for k, v in (('name', 'New Student'), ('phone', '9123456780'), ('email', 'n@example.com'), ('district', 'Warangal')): await pg.fill(f'#joinForm [name="{k}"]', v)
             await pg.check('#joinForm [name="ok"]'); await pg.click('#joinForm [type="submit"]'); await pg.wait_for_timeout(1500)
             if (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'PYQ test opened without payment (calls {state["calls"]})')
+            elif (await pg.evaluate('location.pathname')).endswith('/join/'): errors.append('the checkout opened over the registration form (26 Oct 2026)')
             elif not await pg.locator('#payDlg[open]').count(): errors.append('no PYQ Pass checkout after registering')
             elif 'days free' in (await pg.inner_text('body')) or 'free trial' in (await pg.inner_text('body')).lower(): errors.append('the page still mentions a free trial')
         await pg.close()
@@ -202,6 +203,42 @@ async def main():
         await pg.click('#payDlg [data-act="paybuy"]'); await pg.wait_for_timeout(1300)
         if state['kind'] != 'pyq': errors.append(f'old combo link checkout sent kind {state["kind"]!r} (want pyq)')
         state['slowbuy'] = False
+        # E. a new visitor taps "Register to get the PYQ Pass" (Anil, 26 Oct 2026: after registering, the page went back
+        #    with no Pay button). After the form: back on the same page, with the checkout and its Pay button open.
+        async def fresh_page():
+            q = await b.new_page(viewport={'width': 390, 'height': 800})
+            q.on('pageerror', lambda e: errors.append(f'pageerror: {e}'))
+            await q.route('https://pay.test/**', api)
+            await q.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
+            return q
+        async def register(q):
+            for k, v in (('name', 'Ravi Kumar'), ('phone', '9876501234'), ('email', 'ravi@example.com'), ('district', 'Guntur')): await q.fill(f'#joinForm [name="{k}"]', v)
+            await q.check('#joinForm [name="ok"]'); await q.click('#joinForm [type="submit"]'); await q.wait_for_timeout(1500)
+        state.update(mock=False, pyq=False, trial='expired', calls=[], kind='')
+        pg = await fresh_page()
+        await pg.goto(url + 'appsc-group-2/bank/'); await pg.wait_for_timeout(900)
+        await pg.click('[data-act="unlockpyq"]'); await pg.wait_for_timeout(500)
+        if not await pg.locator('#joinForm').count(): errors.append('"Register to get the PYQ Pass" did not open the registration form')
+        else:
+            if 'Register to get the PYQ Pass' not in await pg.inner_text('main'): errors.append('registration form for a new student still says "Update your details"')
+            await register(pg)
+            path = await pg.evaluate('location.pathname')
+            t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
+            if not path.endswith('/bank/'): errors.append(f'after registering from the question bank the student landed on {path}')
+            if 'You are registered' not in t or not await pg.locator('#payDlg[open] [data-act="paybuy"]').count(): errors.append(f'no checkout with a Pay button after registering from the question bank: {t[:120]!r}')
+            await pg.go_back(); await pg.wait_for_timeout(500)
+            if await pg.locator('#joinForm').count(): errors.append('Back after registering reopened the registration form')
+        await pg.close()
+        # a new visitor who tapped Pay first: registers, then goes straight on to Instamojo
+        state.update(calls=[], kind='')
+        pg = await fresh_page()
+        await pg.goto(url + 'ts-police-si/?buy=pyq'); await pg.wait_for_timeout(900)
+        await pg.click('#payDlg [data-act="paybuy"]'); await pg.wait_for_timeout(500)
+        if not await pg.locator('#joinForm').count(): errors.append('Pay by a new visitor did not ask for registration')
+        else:
+            await register(pg)
+            if state['kind'] != 'pyq' or 'buy' not in state['calls']: errors.append(f'after registering, Pay did not go on to Instamojo (calls {state["calls"]})')
+        await pg.close()
         await b.close()
     srv.shutdown()
     print('PAY TEST ERRORS:', errors or 'none')
