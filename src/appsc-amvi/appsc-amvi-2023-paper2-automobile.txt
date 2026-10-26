@@ -1,0 +1,1483 @@
+# APPSC Assistant Motor Vehicle Inspectors (Supplemental Notification 08/2023 to Notification 12/2022), Paper II: Automobile Engineering, computer-based test held 6 October 2023 (Shift 2).
+# Answers: APPSC final key (the APOnline master question paper with the correct options marked). Explanations by Learn with Anil.
+# Left out (APPSC found a discrepancy and ignored the question for all candidates): 6, 27.
+
+Q 1 | thm | Refrigeration & Air Conditioning
+Which of the following is NOT a part of the air conditioning system used in cars?
+(1) Compressor
+(2) Refrigerant
+(3) Turbo charger
+(4) Condenser
+= 3
+~ A car air-conditioning system is a vapour-compression refrigeration circuit: the compressor (belt- or motor-driven), condenser, receiver-drier, expansion valve or orifice tube and evaporator, with a refrigerant such as R-134a or R-1234yf circulating through them. A turbocharger is an exhaust-driven turbine and compressor that boosts intake air pressure to raise engine power; it is part of the air-induction system, not the air conditioner.
+
+Q 2 | thm | Refrigeration & Air Conditioning
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): The COP of an air-conditioning plant is lower than that of an ice plant.
+Reason (R): The temperatures required in the ice plant are lower than those required for an air-conditioning plant.
+(1) Both A and R are individually true, and R is the correct explanation of A.
+(2) Both A and R are individually true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 4
+~ COP falls as the evaporator temperature falls, because the compressor has to lift heat through a larger temperature difference (Carnot COP = T_L/(T_H − T_L)). An ice plant evaporates below 0 °C, while an air-conditioning plant evaporates at about 5–10 °C, so R is true. For example, with a 45 °C condenser the Carnot COP is about 7.0 at 5 °C but only 4.3 at −15 °C. Hence an air-conditioning plant has the higher COP and A is false.
+
+Q 3 | ice | Fuels, Lubricants & Emissions
+Match the following points with their definitions.
+List I | List II
+(A) Flash point | (i) The lowest temperature at which the vapours of volatile materials ignite when an ignition source is provided
+(B) Fire point | (ii) The lowest temperature at which the vapour of fuel can continue to burn for at least five seconds after the ignition has started
+C) Flash point value | (iii) Always lower than the fire point
+(D) Fire point value | (iv) Always higher than the flash point
+(1) (A)-(ii), (B)-(iv), (C)-(iii) and (D)-(i)
+(2) (A)-(i), (B)-(ii), (C)-(iii) and (D)-(iv)
+(3) (A)-(ii), (B)-(iv), (C)-(i) and (D)-(iii)
+(4) (A)-(iii), (B)-(i), (C)-(iv) and (D)-(ii)
+= 2
+~ The flash point is the lowest temperature at which a fuel or oil gives off enough vapour to flash momentarily when a flame is applied. The fire point is the lowest temperature at which the vapour keeps burning (for at least about five seconds) after ignition. More vapour is needed for sustained burning, so the flash point is always lower than the fire point, and the fire point is always higher than the flash point.
+
+Q 4 | mec | Machine Design
+Read the given statement and conclusions carefully and select the correct option.
+Statement:
+Self-locking screw jack means when the rotational force on the screw is removed, it will remain motionless and will not rotate backwards.
+Conclusions:
+I. Self-locking screw jacks are safer compared to hydraulic jack which is not self-locking.
+II. Single start trapezoidal type screws are typically self-locking.
+III. All screw jacks with double start lifting screws are also considered self-locking.
+(1) Statement and all the conclusions I, II and III are true.
+(2) Statement is incorrect, but conclusions I and II are true.
+(3) Statement is true, but conclusions I, II and III are false.
+(4) Only statement and conclusions I and II are true.
+= 4
+~ A screw is self-locking when the friction angle is at least equal to the helix (lead) angle, so the load cannot turn it back once the effort is removed; the statement is true. Single-start square or trapezoidal screws have a small lead angle and are normally self-locking, which makes such jacks safe to leave under load (I and II). A double-start screw has twice the lead and a larger helix angle, so it is often not self-locking; III is false.
+
+Q 5 | ice | Engine Fundamentals & Cycles
+Match the following four internally reversible processes used in a four-stroke Otto cycle as shown in figure.
+List I | List II
+(A) Isentropic compression | (i) 2-3
+(B) Constant-volume heat addition | (ii) 1-2
+(C) Isentropic expansion | (iii) 4-1
+(D) Constant-volume heat rejection | (iv) 3-4
+(1) (A)-(i), (B)-(ii), (C)-(iii) and (D)-(iv)
+(2) (A)-(iv), (B)-(iii), (C)-(ii) and (D)-(i)
+(3) (A)-(ii), (B)-(i), (C)-(iv) and (D)-(iii)
+(4) (A)-(ii), (B)-(iv), (C)-(i) and (D)-(iii)
+= 3
+! img/a23a-q5.png
+~ On the P–V diagram of the air-standard Otto cycle, 1–2 is isentropic (constant-entropy) compression as the volume falls, 2–3 is heat addition at constant volume (vertical rise in pressure), 3–4 is isentropic expansion (power stroke), and 4–1 is heat rejection at constant volume (vertical drop in pressure). So A–(ii), B–(i), C–(iv) and D–(iii).
+
+Q 7 | ice | Engine Fundamentals & Cycles
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): The C.I. engine is found to be more efficient than the S.I. engine.
+Reason (R): Modern C.I. engines operate on a dual-cycle, which has efficiency greater than the Otto cycle.
+(1) Both A and R are individually true, and R is the correct explanation of A.
+(2) Both A and R are individually true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 2
+~ C.I. engines are more efficient mainly because they run at much higher compression ratios (about 14–22 against 8–12 for S.I. engines), with lean mixtures and no throttling losses. Modern high-speed C.I. engines are modelled by the dual (limited-pressure) cycle, which is more efficient than the Otto cycle when both work to the same peak pressure; for the same compression ratio, however, the Otto cycle is the most efficient. So R holds only for the same peak pressure; the real reason for A is the higher compression ratio, and R does not explain A.
+
+Q 8 | ice | Engine Fundamentals & Cycles
+Match the following air standard cycles with their working fluids
+List I | List II
+(A) Air standard cycle | (i) A mixture of air and fuel is a working fluid
+(B) Actual cycle | (ii) Generation of energy by burning of fuel with air
+ | (iii) Air is working fluid
+ | (iv) No internal heat generation
+ | (v) This cycle is completely closed
+ | (vi) Energy is generated inside of the engine
+(1) (A)-(iii), (iv) and (v); (B)-(i), (ii) and (vi)
+(2) (A)-(i), (ii) and (vi); (B)-(iii), (iv) and (v)
+(3) (A)-(ii), (i) and (iv); (B)-(iii), (v) and (vi)
+(4) (A)-(i), (ii) and (iii); (B)-(iv), (v) and (vi)
+= 1
+~ The air-standard cycle is an idealisation: the working fluid is air alone, treated as a perfect gas, heat is added from an external source instead of by combustion (no internal heat generation), and the same air is recirculated in a closed cycle. In the actual engine cycle the working fluid is an air–fuel mixture, energy is released by burning the fuel with air, and this happens inside the engine cylinder.
+
+Q 9 | chs | Wheels & Tyres
+Which of the following statements is INCORRECT about wire wheels?
+(1) This type of wheel can be used for tubed tyres only.
+(2) This type of wheel is used in racing cars only now a days.
+(3) Heat dissipation takes place to the surroundings by means of spokes fitted in the rim.
+(4) Tubeless tyres cannot be fitted over wire wheels.
+= 2
+~ Wire (spoke) wheels have a hub joined to the rim by tensioned steel spokes. They are light and let air circulate past the hub and brake drum, aiding cooling, but the spoke nipples pierce the rim, so conventional wire wheels need tubed tyres. They are not confined to racing cars today: they are widely used on motorcycles and bicycles and on some vintage and sports cars, so statement (2) is the incorrect one.
+
+Q 10 | chs | Wheels & Tyres
+Which of the following symptoms is NOT due to low tyre pressure in a vehicle?
+(1) Increase in rolling resistance
+(2) Increased fuel consumption due to rolling resistance, which makes the engine work harder
+(3) Uneven tread wear - the edges of the tyre wear out faster
+(4) Smaller contact area with the road
+= 4
+~ An under-inflated tyre flexes more and flattens out, so its contact patch with the road becomes larger, not smaller. The extra flexing raises rolling resistance and heat build-up, which increases fuel consumption, and the load is carried on the shoulders, so both edges of the tread wear faster than the centre. A smaller contact patch with centre wear is a symptom of over-inflation.
+
+Q 11 | chs | Steering & Suspension
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Caster angle is concerned with mending the angular proportions between the wheels’ vertical axis and the vertical axis of the car when viewed from the front.
+Reason (R): This is concerned with maintaining stability and balance while steering the car. The mechanic tends to find the fine balance between positive caster angle and negative caster angle to correct misalignment.
+(1) Both A and R are individually true, and R is the correct explanation of A.
+(2) Both A and R are individually true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 4
+~ The tilt of the wheel from the vertical seen from the front of the car is camber, not caster, so A is false. Caster is the forward or backward tilt of the steering (kingpin) axis seen from the side. It provides directional stability and the self-centring of the steering after a turn, and adjusting caster to the correct positive or negative value is part of wheel alignment, which is what R describes.
+
+Q 12 | chs | Steering & Suspension
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Toe is the alignment of the tyres in relation to being parallel to each other when viewed from directly above the vehicle. Tyres could face in (toe-in) or outwards (toe-out).
+Reason (R): Tires are ‘feathered’ when the tread is smooth on one side and sharp on the other. This is usually a sign of poor toe alignment.
+(1) Both A and R are individually true, and R is the correct explanation of A.
+(2) Both A and R are individually true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 2
+~ Toe is the difference in the distances between the front and rear edges of a pair of wheels seen from above; if the fronts point inwards it is toe-in, if outwards, toe-out, so A is true. Feathering, where each tread rib is smooth on one edge and sharp on the other, results from the tyre being dragged sideways and is a typical sign of incorrect toe, so R is true. But R describes a symptom of wrong toe; it does not explain what toe is.
+
+Q 13 | thm | Thermodynamics
+Match the following thermodynamic systems with their properties.
+List I | List II
+(A) Open system | (i) The system which can exchange only energy but not mass with surroundings
+(B) Closed system | (ii) The system in which neither energy nor matter can be exchanged with surroundings
+(C) Isolated system | (iii) The system which can exchange both matter and energy with surroundings
+(1) (A)-(i), (B)-(ii) and (C)-(iii)
+(2) (A)-(iii), (B)-(ii) and (C)-(i)
+(3) (A)-(iii), (B)-(i) and (C)-(ii)
+(4) (A)-(ii), (B)-(i) and (C)-(iii)
+= 3
+~ An open system (control volume), such as an engine cylinder during intake or a compressor, exchanges both mass and energy with its surroundings. A closed system (control mass), such as gas trapped in a cylinder with the valves shut, exchanges energy as heat and work but no mass. An isolated system exchanges neither mass nor energy; the universe as a whole is the usual example.
+
+Q 14 | thm | Thermodynamics
+Read the given statement and conclusions carefully and select the correct option.
+Statement (A):
+If there is no tendency to change the microscopic properties or inner properties of the system even when the system is isolated from surroundings, then it is considered the thermodynamic equilibrium.
+Conclusion:
+I. When any unbalanced force is absent in the system, then it is called chemical equilibrium.
+II. Thermal equilibrium means there is no change of any property of the system.
+III. If a system can undergo a chemical reaction, then it is called a chemically equilibrium system.
+(1) Statement A is correct, but conclusions I, II and III are not true explanations of A.
+(2) Statement A and conclusions I, II and III are individually true.
+(3) Only statement A and conclusion II are true.
+(4) Statement A is correct, and conclusions I, II and III are true explanations of A.
+= 3
+~ A system is in thermodynamic equilibrium when, isolated from its surroundings, its macroscopic properties (printed "microscopic") show no tendency to change; this needs mechanical, thermal and chemical equilibrium together. The absence of unbalanced forces is mechanical equilibrium, not chemical, so I is false. Chemical equilibrium means no chemical reaction or transfer of matter takes place, so III is false. In thermal equilibrium the temperature is uniform and the properties do not change, which the key accepts as II.
+
+Q 15 | thm | Thermodynamics
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Zeroth Law of Thermodynamics states that when two bodies are in thermal equilibrium with another third body, then the two bodies are also in thermal equilibrium with each other.
+Reason (R): If we take three bodies A, B and C, then if A and B are in thermal equilibrium and B and C are in thermal equilibrium separately, then A and C are also considered to be in thermal equilibrium.
+(1) Both A and R are individually true, and R is the correct explanation of A.
+(2) Both A and R are individually true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 1
+~ The zeroth law states that two bodies each in thermal equilibrium with a third body are in thermal equilibrium with each other. The reason restates this with three bodies: if A is in equilibrium with B and C is in equilibrium with B, then A and C are in equilibrium. Here B plays the role of a thermometer, which is why the law is the basis of temperature measurement. R illustrates and explains A.
+
+Q 16 | thm | Thermodynamics
+Match the following laws with their correct explanation.
+List I | List II
+A) First law of thermodynamic system | (i) It says that heat always moves from hotter objects to colder ones.
+(B) Second law of thermodynamic system | (ii) It states that at absolute zero temperature of a system, the entropy becomes constant.
+(C) Zeroth law of thermodynamic system | (iii) It states that energy cannot be created or destroyed, only converted from one form to another.
+(D) Third law of thermodynamic system | (iv) If two systems are in thermal equilibrium with a third system, they must be in thermal equilibrium with each other.
+(1) (A)-(i), (B)-(ii), (C)-(iii) and (D)-(iv)
+(2) (A)-(iii), (B)-(i), (C)-(iv) and (D)-(ii)
+(3) (A)-(ii), (B)-(iii), (C)-(i) and (D)-(iv)
+(4) (A)-(iv), (B)-(iii), (C)-(ii) and (D)-(i)
+= 2
+~ The first law is the conservation of energy: energy can only change form, so heat supplied equals the rise in internal energy plus work done. The second law (Clausius statement) says heat flows by itself only from a hotter to a colder body. The zeroth law concerns thermal equilibrium with a third system and underlies temperature measurement. The third law says that as the temperature approaches absolute zero the entropy approaches a constant (zero for a perfect crystal).
+
+Q 17 | thm | Thermodynamics
+Read the given statement and conclusions carefully and select the correct option.
+Statement (A):
+The Mollier diagram is a tool used by engineers to predict, theoretically, the performance of systems and installations.
+Conclusions:
+I. The Mollier diagram is also called the enthalpy (h)–entropy (s) chart.
+II. Typically, the Mollier chart covers pressure in the range of 1.0 to 10 bar and up to 100°C temperature and plotted for only water.
+(1) Statement A is correct, and conclusions I and II are not correct explanations of A.
+(2) Statement A is correct, and conclusions I and II are correct explanations of A.
+(3) Statement A is correct, and conclusion I is the only correct explanation of A.
+(4) Statement A correct, and conclusion II is the only correct explanation of A.
+= 3
+~ The Mollier diagram plots enthalpy against entropy (h–s chart); because enthalpy changes give the work and heat directly, engineers use it to predict the theoretical performance of turbines, compressors and steam plant, so A and I are correct. II is wrong: steam Mollier charts cover a wide range of pressures and superheat temperatures far above 10 bar and 100 °C, and h–s or p–h charts are also drawn for refrigerants and other fluids.
+
+Q 18 | thm | Thermodynamics
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): The performance of a simple Rankine cycle is not sensitive to the efficiency of the feed pump.
+Reason (R): The network ratio is practically unit for a Rankine cycle.
+(1) Both A and R are individually true, but R is not the correct explanation of A.
+(2) A is true, but R is not the correct explanation of A.
+(3) A is false, but R is the correct explanation of A.
+(4) Both A and R are individually true, and R is the correct explanation of A.
+= 4
+~ "Network ratio ... unit" is a misprint for "work ratio ... unity". In a Rankine cycle the feed pump compresses liquid water, whose specific volume is tiny, so the pump work is only about 1% of the turbine work and the work ratio (net work ÷ turbine work) is close to 1. Even a poor pump efficiency therefore changes the net work and cycle efficiency very little, so R correctly explains A.
+
+Q 19 | chs | Brakes
+Which of the following statements is INCORRECT about mechanical brakes?
+(1) Brakes absorb energy and convert it to heat.
+(2) The capacity of a brake depends largely on the surface area of frictional surfaces but independent of the actuation force applied.
+(3) The durability of a brake or service life between maintenance depends heavily on the type of material used to line the shoe.
+(4) Mechanical brakes all act by generating frictional forces as two surfaces rub against each other.
+= 2
+~ A friction brake converts the kinetic energy of the vehicle into heat by rubbing a lining against a drum or disc. The braking torque equals the coefficient of friction × the normal (actuating) force × the effective radius, so the capacity depends directly on the force applied, as well as on the lining area and the heat it can dissipate. Lining material largely decides wear life. Statement (2) is therefore incorrect.
+
+Q 20 | chs | Brakes
+Which of the following is NOT the main part of your vehicle’s hydraulic brake system?
+(1) Brake pad leaf spring
+(2) Brake line
+(3) Brake disc
+(4) Leaf spring
+= 4
+~ A hydraulic brake system consists of the pedal, master cylinder and reservoir, brake lines and hoses, wheel cylinders or calipers, and drums or discs with shoes or pads; the brake pad spring (anti-rattle spring) holds the pads in the caliper. A leaf spring is a suspension component that supports the axle and absorbs road shocks, so it is not a part of the brake system.
+
+Q 21 | chs | Brakes
+Which of the following types of brakes is shown in the figure?
+(1) External expanding brake
+(2) Internal expanding brake
+(3) Centrifugal brake
+(4) Hydraulic brake
+= 2
+! img/a23a-q21.png
+~ The figure shows two brake shoes (S1, S2) pivoted at O1 and O2 inside a drum, held together by a return spring and spread apart by a cam. When the cam turns, the shoes expand outwards and press their linings against the inner surface of the rotating drum. This is the internal expanding shoe (drum) brake used on vehicle wheels; here it is mechanically (cam) operated.
+
+Q 22 | chs | Brakes
+What is the principle of hydraulic brake system?
+(1) Zeroth law hydraulics
+(2) Newton's law of friction
+(3) Pascal's law pressure
+(4) Fourier's law of conduction
+= 3
+~ Hydraulic brakes work on Pascal's law: pressure applied to a confined liquid is transmitted equally in all directions. The force on the brake pedal creates pressure in the master cylinder, and the brake fluid carries this same pressure through the lines to every wheel cylinder or caliper, where larger pistons multiply the force and apply the shoes or pads evenly.
+
+Q 23 | chs | Brakes
+A braking system commonly used in heavy commercial vehicles and trucks that requires a heavy braking effort that can be applied by the driver’s leg alone is known as:
+(1) Hydraulic brake system
+(2) Internal expanding brake system
+(3) Band brake system
+(4) Air brake system
+= 4
+~ Heavy commercial vehicles need a braking effort far greater than a driver's leg can produce, so they use air (pneumatic) brakes. An engine-driven compressor stores air at about 7–8 bar in reservoirs; the driver's pedal only works a brake valve that admits this compressed air to the brake chambers, which apply the shoes. Air brakes also allow easy coupling of trailer brakes.
+
+Q 24 | ice | Fuel Supply & Combustion
+Match the following circuits of carburettor with their individual functions correctly.
+List I | List II
+(A) Main circuit | (i) Provides just enough fuel for fuel-efficient cruising
+(B) Idle circuit | (ii) Provides just enough fuel to keep the engine idling
+(C) Power enrichment circuit | (iii) Provides extra fuel when the car is going up a hill or towing a trailer
+(D) Choke | (iv) Provides extra fuel when the engine is cold so that it will start
+(1) (A)-(i), (B)-(ii), (C)-(iii) and (D)-(iv)
+(2) (A)-(ii), (B)-(iii), (C)-(i) and (D)-(iv)
+(3) (A)-(iv), (B)-(iii), (C)-(ii) and (D)-(i)
+(4) (A)-(ii), (B)-(iii), (C)-(iv) and (D)-(i)
+= 1
+~ In a carburettor the main metering circuit supplies an economical, slightly lean mixture for part-throttle cruising. The idle (low-speed) circuit supplies a small, rich mixture past the nearly closed throttle so the engine keeps idling. The power enrichment circuit (power valve or metering rod) adds fuel under heavy load such as hill climbing or towing. The choke restricts the air to give a very rich mixture for cold starting.
+
+Q 25 | mec | Theory of Machines
+Match the following type gear trains with their functions.
+Gear type | Functions
+(A) Simple gear train | (i) The gear train in which axis of first gear and last gear is co-axial.
+(B) Compound gear train | (ii) The gear train which consists of more than one gear on any shaft.
+(C) Epi-cyclic gear train | (iii) The gear train in which the axis of one or more gear moves relative to the fixed axis of another gear.
+(D) Reverted gear train | (iv) The gear train which consists of only one gear on each shaft.
+(1) (A). - (i), (B). - (iii), (C).- (ii) and (D). - (iv)
+(2) (A). - (iii), (B). - (ii), (C).- (iv) and (D). - (i)
+(3) (A). - (iv), (B). - (ii), (C).- (iii) and (D). - (i)
+(4) (A). - (iv), (B). - (i), (C).- (iii) and (D). - (ii)
+= 3
+~ A simple gear train has only one gear on each shaft. A compound gear train has two or more gears on an intermediate shaft, giving a large speed ratio in a small space. In an epicyclic (planetary) gear train the axis of at least one gear (the planet) moves around a fixed axis. In a reverted gear train the first and last gears are on the same axis (co-axial), as in a lathe back-gear or a sliding-mesh gearbox.
+
+Q 26 | chs | Brakes
+In a master cylinder of a hydraulic brake system, the primary piston is the piston that is:
+(1) near the front end of the car
+(2) directly operated by the brake pedal
+(3) hydraulically operated by the secondary piston
+(4) operated by the return springs
+= 2
+~ A tandem master cylinder has two pistons in one bore. The primary piston is at the rear, next to the push rod, and is moved directly by the brake pedal (through the booster); it pressurises the first circuit. The pressure it builds, together with a spring, then moves the secondary piston, which pressurises the second circuit, so one circuit still works if the other fails.
+
+Q 28 | chs | Clutch & Gearbox
+A single plate clutch has outer and inner diameters as 300 mm and 200 mm, respectively. The total force acting on the friction surface is 6000 N. If the coefficient of friction is 0.2, the power transmitted by the clutch at an angular speed of 300 rad/s is:
+(1) 36 kW
+(2) 90 kW
+(3) 45 kW
+(4) 30 kW
+= 3
+~ Assuming uniform wear, the mean radius = (150 + 100)/2 = 125 mm = 0.125 m. Torque on one friction surface T = μWr = 0.2 × 6000 × 0.125 = 150 N·m, so power P = Tω = 150 × 300 = 45,000 W = 45 kW (uniform pressure gives 45.6 kW, also about 45 kW). The key takes the single friction surface named in the question; if both faces of the plate were counted (n = 2), the answer would be 90 kW.
+
+Q 29 | chs | Clutch & Gearbox
+Which of the following is NOT a type of clutch?
+(1) Single plate type clutch
+(2) Multiple plate clutch
+(3) Centrifugal type clutch
+(4) Governor type clutch
+= 4
+~ Automobile friction clutches include the single-plate clutch (cars), the multi-plate clutch (motorcycles, heavy vehicles, automatic transmissions), the cone clutch and the centrifugal clutch, which engages automatically as engine speed rises (mopeds, scooters); fluid couplings and electromagnetic clutches are other types. A governor controls engine speed by regulating the fuel supply; there is no "governor type" clutch.
+
+Q 30 | chs | Clutch & Gearbox
+Which of the following statements about the multi-plate clutch is INCORRECT?
+(1) Multi-plate consists of a number of clutch plates.
+(2) Multi-plate clutch has higher friction surface, which is a multiple of the number of clutch plates.
+(3) The capacity of the multiple clutch to transmit torque however remains same as single plate clutch due to lower pressure between various friction plates.
+(4) Wet multiple clutches are normally smaller in size, and the noise is also much less compared with dry clutches.
+= 3
+~ A multi-plate clutch stacks several driving and driven plates, so the number of friction surfaces, and hence the torque capacity (T = nμWR), rises in proportion. That is why it can transmit more torque than a single-plate clutch of the same diameter, or the same torque from a smaller clutch, which suits motorcycles and automatic transmissions. Wet clutches running in oil are compact, smooth and quiet. Statement (3) is incorrect.
+
+Q 31 | mfg | Metrology & Measurement
+A force transducer works on the __________.
+(1) Hall effect principle
+(2) Piezoelectric principle
+(3) Laser principle
+(4) Magneto Rheological principle
+= 2
+~ A force transducer converts force into an electrical signal. Piezoelectric crystals such as quartz produce an electric charge proportional to the force applied to them, so they are widely used in force and pressure transducers and knock sensors. The Hall effect is used for magnetic position and speed sensing, and the magneto-rheological effect is used in variable dampers, not for measuring force.
+
+Q 32 | mfg | Metrology & Measurement
+The tachogenerator is a device used to measure which of the following quantities?
+(1) Force
+(2) Torque
+(3) Angular velocity
+(4) Liquid level of the tank
+= 3
+~ A tachogenerator is a small DC or AC generator coupled to a rotating shaft. Its output voltage (and, for an AC type, its frequency) is proportional to the speed of rotation, so it measures angular velocity (speed in rpm) and is used in tachometers and speed-control feedback systems.
+
+Q 33 | ice | Fuel Supply & Combustion
+Which of the following types of combustion chambers is NOT used in the spark ignition engine?
+(1) T-head type chamber
+(2) L-head chamber
+(3) I-head type chamber
+(4) Shallow depth chamber
+= 4
+~ S.I. engine combustion chambers are named after the valve layout: T-head (valves on both sides of the cylinder), L-head (side-valve), I-head (overhead valves) and F-head (one valve in the head, one in the block). The shallow depth chamber is an open (direct-injection) chamber of C.I. engines, where fuel is sprayed into a shallow bowl in the piston crown with little swirl.
+
+Q 34 | ice | Fuel Supply & Combustion
+Which combustion chamber is shown in the figure, and in which type of engine is it used?
+(1) Cylindrical chamber used in compression ignition engine
+(2) Semi-spherical chamber used in spark ignition engine
+(3) Toroidal chamber used in compression ignition engine
+(4) Shallow depth combustion chamber used in spark ignition chamber
+= 1
+! img/a23a-q34.png
+~ The figure shows an injector spraying fuel directly into a deep cup formed in the piston crown, its sides tapering slightly towards a flat bottom. Such a cavity, a cylinder modified into a truncated cone, forms the cylindrical open (direct-injection) combustion chamber of a compression ignition engine. A toroidal chamber would show a raised central cone in the bowl, and a semi-spherical chamber belongs to S.I. engines with a spark plug.
+
+Q 35 | ice | Fuel Supply & Combustion
+Which of the following types of combustion chambers is shown in the figure?
+(1) Swirl combustion chamber
+(2) Shallow chamber
+(3) F-head type chamber
+(4) T-head type chamber
+= 1
+! img/a23a-q35.png
+~ The figure shows a spherical chamber in the cylinder head, joined to the main cylinder by a tangential throat, with the injection nozzle and a glow plug in it. During compression, air enters the chamber through the throat and swirls strongly; fuel injected into this swirl burns and the gases rush back into the cylinder. This is the swirl chamber (such as the Ricardo Comet) of indirect-injection diesel engines.
+
+Q 36 | ice | Fuel Supply & Combustion
+Which of the following operating variables is NOT affected due to ignition delay during compression ignition combustion?
+(1) Injection pressure
+(2) Compression temperature
+(3) Air velocity in combustion chambers
+(4) Suction air temperature
+= 4
+~ The ignition delay in a C.I. engine is governed by the conditions in the cylinder when fuel is injected: the temperature and pressure at the end of compression, the injection pressure and fineness of atomisation, the air motion (turbulence) and the fuel's cetane number. Suction air temperature acts only indirectly, by raising the compression temperature, which is presumably why the key picks it. (Official final key; some sources differ: textbooks list higher intake air temperature as shortening the delay.)
+
+Q 37 | ice | Fuel Supply & Combustion
+The phenomenon of excessive turbulence increases combustion rapidly and leads to ________.
+(1) high power generation
+(2) low flame velocity
+(3) detonation
+(4) incomplete combustion
+= 3
+~ Turbulence breaks up the flame front and raises the flame speed, so moderate turbulence gives quick, complete combustion. When it is excessive, the charge burns so rapidly that the pressure rises very steeply, giving rough, knocking combustion, which the key calls detonation. (Official final key; some sources differ: in S.I. engines turbulence normally lowers the tendency to knock, and excessive turbulence is mostly linked to heat loss and rough running.)
+
+Q 38 | ice | Fuel Supply & Combustion
+The process of preparing a combustible fuel-air mixture outside the engine cylinder is known as:
+(1) Knocking
+(2) Vaporisation
+(3) Carburation
+(4) Compression
+= 3
+~ Carburation is the process of metering, atomising and vaporising petrol and mixing it with air in the correct proportion outside the cylinder, in the carburettor and intake manifold, to form a combustible mixture for an S.I. engine. Vaporisation is only one step of this process, and knocking is abnormal combustion inside the cylinder.
+
+Q 39 | ael | Lighting, Instruments & Wiring
+What is the maximum voltage range used in electrical circuits for two-wheeler vehicles?
+(1) 24 V
+(2) 12 V
+(3) 6 V
+(4) 4 V
+= 2
+~ Two-wheelers use low-voltage DC electrical systems. Older mopeds and motorcycles used 6 V systems, while modern scooters and motorcycles use a 12 V battery with a charging system of about 13.5–14.5 V. The 24 V system is used in heavy commercial vehicles such as buses and trucks, so 12 V is the highest system voltage normally used in two-wheelers.
+
+Q 40 | ael | Lighting, Instruments & Wiring
+What is voltage and power rating of rear, turn left signal lamp used in four-wheeler vehicles?
+(1) 24 V and 12 watt
+(2) 12 V and 5 watt
+(3) 20 V and 10 watt
+(4) 12 V and 10 watt
+= 4
+~ Cars and light four-wheelers have a 12 V electrical system, so indicator lamps are rated at 12 V. The key gives 10 W for the rear turn-signal lamp; 5 W is the usual rating of a parking or tail lamp and 24 V belongs to heavy vehicles. (Official final key; some sources differ: the standard filament bulb for a car's turn signal is 12 V 21 W (P21W/PY21W), while 10 W indicators are typical of two-wheelers.)
+
+Q 41 | ael | Starting & Ignition
+Which of the following is NOT a part of the capacitor discharge ignition unit?
+(1) Charging coil
+(2) Potentiometer
+(3) Hall sensor
+(4) Flywheel
+= 2
+~ In a capacitor discharge ignition (CDI) system, the flywheel magnets induce current in the charging (exciter) coil, which charges a capacitor to a few hundred volts. A trigger, such as a pulser coil or Hall-effect sensor, then fires a thyristor (SCR) that discharges the capacitor through the ignition coil to produce the spark. A potentiometer is a variable resistor used in sensors such as the throttle position sensor, not in the CDI unit.
+
+Q 42 | ael | Starting & Ignition
+An electrical device which is a combination of a distributor and generator built as one unit, making it different from the conventional distributor that creates spark energy without external voltage is known as:
+(1) Voltage Regulator
+(2) Alternator
+(3) Capacitor Discharge Ignition
+(4) Magneto
+= 4
+~ A magneto generates its own electrical energy from rotating permanent magnets and steps it up in its built-in coil; in multi-cylinder versions it also carries the contact breaker and distributor in the same unit. It therefore produces the ignition spark without a battery or any other external voltage, which is why it is used on many motorcycles, small engines and aircraft engines.
+
+Q 43 | ice | Engine Fundamentals & Cycles
+Which of the following is NOT a function of piston rings?
+(1) Sealing the combustion chamber
+(2) Controlling the thickness of the oil film on the cylinder wall
+(3) Carrying the heat away from the cylinder into the piston
+(4) Providing hydrodynamic lubrication
+= 3
+~ Piston rings seal the combustion chamber against loss of gas pressure (blow-by), control the oil film on the cylinder wall and scrape excess oil back to the sump, and run on a hydrodynamic oil film. They also transfer heat, but in the opposite direction: from the hot piston to the cylinder wall, which is cooled by the coolant. Carrying heat from the cylinder into the piston is not their function.
+
+Q 44 | ice | Engine Fundamentals & Cycles
+Which of the following types of piston rings located in the ring groove is closest to the crankcase?
+(1) Oil ring
+(2) Compression ring
+(3) Wiper ring
+(4) Heat transfer ring
+= 1
+~ A typical piston carries two compression rings in the upper grooves, the top one nearest the combustion chamber, and an oil control (oil scraper) ring in the lowest groove, closest to the crankcase. The oil ring scrapes excess oil off the cylinder wall and returns it through drain holes in the piston to the sump. The second compression ring is sometimes called a wiper ring.
+
+Q 45 | ice | Engine Fundamentals & Cycles
+The piston is not parallel sided but tapered, usually with a barrel form as shown in the figure. The correct position for piston ______ measurement (point x) should be verified with the product supplier, as the exact point will vary by application.
+(1) bottom dead centre
+(2) skirt diameter
+(3) top dead centre
+(4) Gudgeon pin thickness
+= 2
+! img/a23a-q45.png
+~ A piston is ground slightly tapered and barrel-shaped (and oval), because the crown runs hotter and expands more than the skirt. Its diameter for checking piston-to-cylinder clearance is therefore measured on the skirt, at right angles to the gudgeon pin and at a specified distance (point x) from the bottom of the skirt, which varies with the design. Hence this is the skirt diameter measurement.
+
+Q 46 | mfg | Manufacturing & Workshop
+Which of the following manufacturing methods will produce the strongest piston using aluminium alloys?
+(1) Marching processes
+(2) Casting method
+(3) Forging method
+(4) Welding method
+= 3
+~ Forging hot-works the aluminium alloy under great pressure, refining the grain, aligning the grain flow with the shape and removing porosity. Forged pistons are therefore stronger and tougher than cast pistons and are used in high-performance, racing and heavily loaded engines, though they cost more. Most ordinary pistons are cast. Machining only finishes the piston, and welding is not used to make pistons.
+
+Q 47 | ice | Engine Fundamentals & Cycles
+Which of the following parts of an engine is shown in the figure?
+(1) Piston cylinder
+(2) Cylinder head
+(3) Cylinder block
+(4) Crankcase
+= 3
+! img/a23a-q47.png
+~ The photograph shows a single casting with four cylinder bores machined in it, a flat top deck with bolt holes, coolant passages and mounting bosses. This is the cylinder block, the main structure of the engine, which houses the cylinders and carries the cylinder head on top and the crankshaft in its lower part. The cylinder head would show valve seats and ports instead of open bores.
+
+Q 48 | ice | Engine Fundamentals & Cycles
+Which of the following types of pistons is shown in the figure?
+(1) Domed piston
+(2) Flat top piston
+(3) Dished piston
+(4) Relief valve piston
+= 3
+! img/a23a-q48.png
+~ The piston crown in the figure is recessed below a raised outer rim, forming a shallow bowl. A piston with such a concave crown is a dished piston; the dish increases the clearance volume and so lowers the compression ratio, as used in turbocharged engines. A domed piston has a crown that rises above the rim, and a flat-top piston has a plain level crown.
+
+Q 49 | mec | Theory of Machines
+The maximum magnitude of the unbalanced force perpendicular to the line of stroke of an engine to cause the variation in pressure between the wheel and the rail such that the vehicle vibrates vigorously is known as:
+(1) Swaying Couple
+(2) Hammer Blow
+(3) Resonance
+(4) Natural Vibration
+= 2
+~ In locomotives the balance masses fitted to the driving wheels to balance the reciprocating parts leave an unbalanced centrifugal force perpendicular to the line of stroke. Its maximum value is called the hammer blow; it alternately increases and reduces the wheel's pressure on the rail and can make the wheel lift and strike the rail. The swaying couple is the couple of the unbalanced forces along the line of stroke about the engine's centre line.
+
+Q 50 | ice | Engine Fundamentals & Cycles
+The firing order in an engine is important because a correct firing order can cause ________.
+(1) low pollution
+(2) minimum vibration
+(3) good air cooling
+(4) low fuel consumption
+= 2
+~ The firing order is the sequence in which the cylinders fire, such as 1-3-4-2 for an in-line four-cylinder engine. A correctly chosen firing order spaces the power impulses evenly along the crankshaft, so the engine runs with balance and minimum vibration, lower torsional stress on the crankshaft and bearings, and even distribution of mixture and heat between cylinders.
+
+Q 51 | chs | Drive Line, Axles & Differential
+Which of the following statements about torque tube drive is INCORRECT?
+(1) The propeller shaft is enclosed by a hollow torque tube.
+(2) Two universal joints are used.
+(3) Load-carrying capability is very low.
+(4) There is no slip joint in torque tube drive.
+= 2
+~ In a torque tube drive the propeller shaft runs inside a hollow tube rigidly fixed to the rear-axle casing, and the tube's front end pivots on a ball joint around a single universal joint. Because the axle swings about that same centre, no slip joint is needed, and the tube takes the driving thrust and torque reaction. Two universal joints and a slip joint belong to the Hotchkiss drive, so statement 2 is the incorrect one.
+
+Q 52 | chs | Steering & Suspension
+Which of the following steering mechanisms is shown in the figure?
+(1) Rack and pinion steering linkage
+(2) Relay type steering linkage
+(3) Gearbox steering linage
+(4) Sliding steering linkage
+= 1
+! img/a23a-q52.png
+~ The figure shows the steering column ending in a pinion housed in a transverse rack housing. The rack is joined directly to the tie rods and steering arms of both front wheels. Turning the steering wheel turns the pinion, which slides the rack sideways and steers the wheels. There is no steering box, drop arm or relay rod, so this is a rack and pinion steering linkage, the type used in most cars today.
+
+Q 53 | chs | Steering & Suspension
+Which of the following equations represents the basic condition for the steering mechanism for perfect rolling of all wheels?
+Consider φ = angle of inside lock; θ = angle of outside lock; b and c are the distances between real and front wheels and distance between front wheels, respectively.
+(1) cot φ + cotθ = c/b
+(2) cot φ − cotθ = c/b
+(3) tan φ + tanθ = c/b
+(4) tan φ − cotθ = c/b
+= 2
+~ For true rolling, the axes of all four wheels must meet at one point on the rear-axle line. The geometry then gives the Ackermann condition: cot(outer angle) − cot(inner angle) = c/b, where c is the distance between the front pivots and b is the wheelbase ("real" is a misprint for rear). Textbooks write it as cot φ − cot θ = c/b, with φ as the outer angle. The paper calls φ the inside lock, which reverses the sign, but option 2 is the intended relation.
+
+Q 54 | ice | Cooling & Lubrication
+The part of a lubrication system in piston engine whereby the crankcase sump is used as an integral oil reservoir is known as:
+(1) dry sump reservoir
+(2) dual lubrication sump reservoir
+(3) wet sump reservoir
+(4) cylinder case sump reservoir
+= 3
+~ In a wet-sump system, the oil pan (sump) bolted under the crankcase stores the engine oil, and the pump draws from it and returns oil to it. Most car engines use this arrangement. A dry-sump system keeps the sump nearly empty: scavenge pumps send the oil to a separate external tank. Dry sumps are used in racing cars, aircraft and some motorcycles.
+
+Q 55 | ice | Cooling & Lubrication
+In which of the following types of engines is petroil lubrication system employed?
+(1) Four-stroke diesel engine
+(2) Four-stroke petrol engine
+(3) Steam engine
+(4) Two-stroke engines
+= 4
+~ Crankcase-scavenged two-stroke petrol engines (scooters, mopeds, small motorcycles) cannot keep oil in the crankcase, because the fresh charge passes through it. Lubricating oil is therefore mixed with the petrol, typically about 2–3 percent, and this is called petroil or mist lubrication. The oil mist lubricates the bearings, piston and cylinder walls, and the oil is then burnt with the fuel. Four-stroke engines use a sump and an oil pump instead.
+
+Q 56 | ice | Cooling & Lubrication
+Which of the following types of lubrication systems is shown in the figure?
+(1) Petroil lubrication system
+(2) Pressure lubrication system
+(3) Pump lubrication system
+(4) Dry lubrication system
+= 2
+! img/a23a-q56.png
+~ The figure shows a pump drawing oil from the oil pan and forcing it through a filter into a main gallery. An overflow (bypass) valve lets oil pass round the filter, a pressure-relief valve limits the pressure, and branches from the gallery feed the bearings, with oil dripping back to the pan. Oil delivered under pump pressure to the bearings is the pressure (forced-feed) lubrication system, which is standard in modern four-stroke engines.
+
+Q 57 | ice | Cooling & Lubrication
+The metal fins on the internal combustion engine's cylinder head as shown in the figure are used for which of the following purposes?
+(1) To heat the air during suction stroke
+(2) To dissipate the exhaust gases during exhaust stroke
+(3) To increase heat dissipation rate of the cylinder head by air cooling
+(4) To increase the heat dissipation rate of the cylinder head by water cooling
+= 3
+! img/a23a-q57.png
+~ Air-cooled engines, such as motorcycle and scooter engines, have fins cast on the outside of the cylinder and cylinder head. The fins greatly enlarge the surface area exposed to the air stream, so heat is carried away faster by convection, and fans or ram air increase the effect. Water-cooled engines use water jackets and a radiator instead of fins. The fins play no part in handling the intake air or the exhaust gases.
+
+Q 58 | ice | Cooling & Lubrication
+Which of the following types of internal combustion cooling system is shown in the figure?
+(1) Air syphon cooling system
+(2) Gravitational water cooling system
+(3) Buoyant syphon water cooling system
+(4) Thermo-syphon water cooling system
+= 4
+! img/a23a-q58.png
+~ The figure shows an engine linked to a radiator by an upper and a lower hose, with no pump. Water heated in the engine jacket becomes lighter and rises to the radiator's top tank. As it cools while flowing down the tubes it becomes denser and returns through the bottom hose to the engine. Circulation driven only by this density difference is the thermo-syphon system. It is simple but slow, so modern engines add a pump.
+
+Q 59 | chs | Clutch & Gearbox
+A type of manual transmission system in which transmission changes occur between gears rotating at the same speed is known as:
+(1) Differential transmission system
+(2) Automatic transmission system
+(3) Synchromesh transmission system
+(4) Reverted gear transmission system
+= 3
+~ In a synchromesh gearbox the gears stay in constant mesh. Before the dog teeth engage, conical synchronizer rings rub on the gear cone and bring the gear and the main shaft to the same speed. The gear therefore engages without clashing and the driver need not double-declutch. Synchromesh is the usual manual gearbox in today's cars. A sliding-mesh gearbox has no such equalising device.
+
+Q 60 | chs | Clutch & Gearbox
+Which of the following is the primary objective of an automatic transmission system?
+(1) Allow the engine to operate in its narrow range of speeds while providing a wide range of output speeds.
+(2) Allow the engine to operate at constant speeds while providing a wide range of output speeds.
+(3) Allow the engine to operate in its wide range of speeds while providing a narrow range of output speeds.
+(4) Allow the engine to operate in its wide range of speeds while providing a constant output speed.
+= 1
+~ An engine gives useful torque and good economy only within a fairly narrow band of speeds, but a vehicle must run from standstill to top speed. An automatic transmission uses a torque converter and planetary gear sets (or a CVT) to change ratios by itself. This keeps the engine within its narrow efficient speed range while the output shaft gets a wide range of speeds and torques.
+
+Q 61 | chs | Clutch & Gearbox
+Which of the following statements is correct for the constant mesh gear box?
+(1) It has the simplest design of gear box.
+(2) It consists of helical gear.
+(3) The size of the gearbox is large.
+(4) It has more chance to damage the gear teeth during meshing.
+= 2
+~ In a constant-mesh gearbox all the gear pairs stay in mesh all the time, and ratios are selected by sliding dog clutches. Because the gears never slide in or out of mesh, quieter helical (or double-helical) gears can be used. Damage to gear teeth during shifting is reduced. The simplest design, with the greatest risk of tooth damage, is the sliding-mesh gearbox, which uses spur gears.
+
+Q 62 | thm | Refrigeration & Air Conditioning
+Identify the odd one in terms of components of a car air conditioner.
+(1) Compressor
+(2) Condenser
+(3) Evaporator
+(4) Rectifier
+= 4
+~ A car air conditioner works on the vapour-compression cycle. Its main parts are the engine-driven compressor, the condenser in front of the radiator, a receiver-drier or accumulator, an expansion valve or orifice tube, and the evaporator inside the dashboard. A rectifier is an electrical device that converts AC to DC. In a car it is found in the alternator (diode rectifier), not in the air-conditioning circuit.
+
+Q 63 | thm | Refrigeration & Air Conditioning
+Match the columns.
+Refrigeration | Applications
+(i) Domestic refrigeration | (a) Holding and displaying frozen and fresh food in retail outlets
+(ii) Commercial refrigeration | (b) Appliances used for keeping food in dwelling units
+(iii) Industrial refrigeration | (c)Large equipment, typically 25 Kw to 30 MW
+(iv) Transport refrigeration | (d) Used during transportation by road, rail, air and sea
+(1) (i)-b, (ii)-c, (iii)-a, (iv)-d
+(2) (i)-c, (ii)-b, (iii)-a, (iv)-d
+(3) (i)-d, (ii)-b, (iii)-a, (iv)-c
+(4) (i)-b, (ii)-a, (iii)-c, (iv)-d
+= 4
+~ Domestic refrigeration covers household refrigerators and freezers in dwelling units. Commercial refrigeration covers the display cases and storage used in shops and supermarkets to hold frozen and fresh food. Industrial refrigeration means large plants, such as food processing, cold storage, ice plants and chemical industries, typically from about 25 kW to 30 MW. Transport refrigeration covers refrigerated trucks, rail wagons, ships and air cargo. So the matching is (i)-b, (ii)-a, (iii)-c, (iv)-d.
+
+Q 64 | thm | Thermodynamics
+Which gas CANNOTbe used in a sterling engine?
+(1) Air
+(2) Hydrogen
+(3) Helium
+(4) Neon
+= 4
+~ A Stirling ("sterling" in the paper) engine is a closed-cycle, external-combustion engine whose sealed working gas is heated and cooled in turn through a regenerator. Practical engines use air, nitrogen, helium or hydrogen; helium and hydrogen are preferred for high power because their low molecular weight cuts flow losses and their high thermal conductivity speeds heat transfer. Neon is not one of the usual working gases, so the key gives it as the answer. (Official final key; some sources differ: in principle any gas, neon included, can work in a Stirling cycle.)
+
+Q 65 | ice | Engine Fundamentals & Cycles
+Which of the following options about the given assertion and reason is correct?
+Assertion (A): The air standard efficiency of the diesel cycle decreases as the load is increased.
+Reason (R): With increase of load, cut-off ratio increases.
+(1) Both A and R are individually true and R is the correct explanation of A.
+(2) Both A and R are individually true but R is not the correct explanation of A.
+(3) A is true but R is false.
+(4) A is false but R is true.
+= 1
+~ Diesel cycle efficiency is η = 1 − (1/r^(γ−1))·(ρ^γ − 1)/(γ(ρ − 1)), where ρ is the cut-off ratio. A larger load needs more fuel injected for longer, so ρ rises, the bracketed factor grows and η falls. For r = 16 and γ = 1.4, η is 61.4% at ρ = 2 but 56.9% at ρ = 3. Both statements are true, and R explains A.
+
+Q 66 | chs | Steering & Suspension
+The main purpose of a wheel alignment is to:
+(1) control vehicle direction
+(2) stop the vehicle
+(3) reduce tyre wear
+(4) support vehicle weight
+= 1,3
+~ Wheel alignment means setting camber, castor, toe and kingpin inclination to the specified values. This lets the wheels roll straight with the least scrubbing. Correct alignment gives directional control and stability (the vehicle tracks straight, does not pull, and the steering self-centres) and also minimises tyre wear. APPSC's final key notes an ambiguity and accepts both option 1 and option 3. Brakes stop the vehicle, and the suspension and tyres support its weight.
+
+Q 67 | chs | Steering & Suspension
+Which of the following angles consists of the camber angle and steering axis angle?
+(1) Toe-out
+(2) Point of intersection
+(3) Included angle
+(4) Caster angle
+= 3
+~ The included angle is the sum of the camber angle and the steering axis (kingpin) inclination, both measured from the vertical when the vehicle is viewed from the front. It is fixed by the design of the stub axle or steering knuckle, so an included angle that differs from the specification points to a bent part. Caster is the fore-and-aft tilt of the steering axis seen from the side, and toe-out describes the wheels' direction when turning.
+
+Q 68 | chs | Steering & Suspension
+Which of the following is a sign of bad wheel alignment?
+(1) Good cornering effect
+(2) Neutral steer
+(3) The steering wheel returns to the centre
+(4) The vehicle pulls to one side
+= 4
+~ When camber, castor or toe is wrong, or differs between the left and right wheels, the vehicle drifts or pulls to one side on a straight, level road. The driver has to hold a correction on the steering wheel, which may sit off-centre. Uneven or feathered tyre wear and tyre squeal are other signs. Good cornering, neutral steer and a steering wheel that returns to the centre are signs of good alignment.
+
+Q 69 | chs | Steering & Suspension
+Match the columns.
+Wheel Alignment terms | Functions
+(i) Castor | (a) Measures whether the front of a pair of wheels turns in or out, viewed from the front
+(ii) Camber | (b) Measures the vertical tilt of the wheel
+(iii) Toe | (c) Compares the steering axis to the vertical axis, when the car is viewed from the side
+(iv) Thrust | (d) The imaginary line drawn perpendicular to the rear axles centre line
+(1) (i) - c, (ii) - b, (iii) - a, (iv) - d
+(2) (i) - d, (ii) - a, (iii) - b, (iv) - c
+(3) (i) - b, (ii) - c, (iii) - d, (iv) - a
+(4) (i) - c, (ii) - d, (iii) - b, (iv) - a
+= 1
+~ Castor is the fore-and-aft tilt of the steering axis from the vertical, seen from the side (c). Camber is the inward or outward tilt of the wheel from the vertical, seen from the front (b). Toe-in or toe-out tells whether the fronts of a pair of wheels point towards or away from each other (a). The thrust line is the line perpendicular to the rear-axle centre line, showing where the rear wheels point (d).
+
+Q 70 | thm | Thermodynamics
+During the throttling process ________ does not change.
+(1) pressure
+(2) internal energy
+(3) entropy
+(4) enthalpy
+= 4
+~ Throttling is the flow of a fluid through a restriction such as a partly open valve, porous plug or the expansion valve of a refrigerator. It happens with no heat transfer, no work and negligible change in kinetic energy, so the steady-flow energy equation gives h₁ = h₂: enthalpy stays constant. Pressure falls sharply, the process is irreversible so entropy rises, and internal energy and temperature may change (for an ideal gas the temperature stays the same).
+
+Q 71 | chs | Brakes
+In a disc brake, which component provides the pad-to-disc adjustment?
+(1) Bleed screw
+(2) Piston
+(3) Caliper
+(4) Piston seal
+= 4
+~ The square-section rubber seal in the caliper bore grips the piston. When the brake is applied the seal flexes slightly as the piston moves out, and on release it springs back and pulls the piston back by that small amount, leaving a tiny pad-to-disc clearance. As the pads wear, the piston slides further through the seal and takes up a new position. The seal thus makes disc brakes self-adjusting.
+
+Q 72 | chs | Brakes
+Which of the following parts will face maximum wear?
+(1) Brake drum
+(2) Friction lining
+(3) Wheel cylinders
+(4) Retracting lever
+= 2
+~ The friction lining (or disc-brake pad) is made of a softer material than the cast-iron drum or disc, so that it, and not the costly drum, wears during braking. Every brake application rubs the lining against the drum, turning kinetic energy into heat, so the lining wears fastest. It is inspected regularly and replaced when it reaches the minimum thickness. The drum wears far more slowly, and the wheel cylinders and retracting lever see little wear.
+
+Q 73 | chs | Brakes
+Read the given statement and conclusions carefully. Which of the given conclusions logically follow(s) from the statement?
+Statement:
+An air brake or, more formally, a compressed-air-brake system, is a type of friction brake for vehicles in which compressed air pressing on a piston is used to apply the pressure to the brake pad to stop the vehicle. Air brakes are used in large heavy vehicles.
+Conclusions:
+I) Air brakes are used in cars.
+II) Air brakes are used in trucks, buses, trailers and semi-trailers.
+(1) Only Conclusion I follows
+(2) Only Conclusion II follows
+(3) Both conclusions follow
+(4) Statement is true, both conclusions are false
+= 2
+~ The statement says air brakes are used in large heavy vehicles. Trucks, buses, trailers and semi-trailers are large heavy vehicles, so conclusion II follows. Cars are light vehicles, and the statement says nothing about them, so conclusion I does not follow. In practice cars use hydraulic brakes, while heavy commercial vehicles use compressed air, which a compressor driven by the engine can supply in large amounts and which leaves no fluid to leak.
+
+Q 74 | chs | Brakes
+What is the pressure on air brakes?
+(1) 100 to 120 psi
+(2) 80 to 90psi
+(3) 150 to 200 psi
+(4) 32 to 40 psi
+= 1
+~ In a truck or bus air-brake system, the engine-driven compressor charges the reservoirs. The governor keeps the system pressure roughly between about 100 psi (cut-in) and 120 psi (cut-out), that is about 690–830 kPa or 7–8 bar. This stored air applies the brake chambers. A low-pressure warning comes on well below this range, and spring brakes apply if the pressure is lost.
+
+Q 75 | chs | Brakes
+Match the columns.
+Braking Terms | Definition
+(i) Bleeding | (a) Vacuum device that multiplies pedal effort
+(ii) Bluing | (b) Discolouring of cast iron rotors due to heat
+(iii) Brake booster | (c) Hydraulic pressure within the brake line
+(iv) Brake line pressure | (d) Process of removing overheated fluid and air
+(1) (i)-b, (ii)-d, (iii)-c, (iv)-a
+(2) (i)-c, (ii)-a, (iii)-b, (iv)-d
+(3) (i)-d, (ii)-c, (iii)-b, (iv)-a
+(4) (i)-d, (ii)-b, (iii)-a, (iv)-c
+= 4
+~ Bleeding means opening the bleed screws to drive out trapped air, and old or overheated fluid, from a hydraulic brake system (d). Bluing is the blue discolouration of cast-iron discs or drums after severe overheating (b). The brake booster (servo) uses engine vacuum to multiply the driver's pedal effort (a). Brake line pressure is the hydraulic pressure developed in the brake lines (c). So the matching is (i)-d, (ii)-b, (iii)-a, (iv)-c.
+
+Q 76 | chs | Brakes
+Which of the following options about the given assertion and reason is correct?
+Assertion (A): Eddy current brakes use the drag force created by eddy currents as a brake to slow or stop moving objects.
+Reason (R): Mechanical energy is converted into resistive heat energy by the principle of energy conservation.
+(1) Both A and R are correct and R is the correct explanation for A.
+(2) Both A and R are correct but R is not the correct explanation for A.
+(3) A is correct but R is incorrect.
+(4) Both A and R are incorrect.
+= 1
+~ In an eddy-current brake (retarder), a metal disc or drum turns through a magnetic field set up by electromagnets. This induces eddy currents in the metal, and their field opposes the motion (Lenz's law), producing a drag force with no rubbing contact. The kinetic energy taken from the vehicle is not lost: it appears as Joule (resistive) heat in the disc, in line with conservation of energy. The key treats R as explaining A.
+
+Q 77 | chs | Clutch & Gearbox
+Which of the following is NOT a friction clutch?
+(1) Torque converter
+(2) Centrifugal clutch
+(3) Cone clutch
+(4) Disc clutch
+= 1
+~ Cone, disc (single- or multi-plate) and centrifugal clutches all transmit torque through friction between surfaces pressed together. The centrifugal clutch uses flyweight shoes thrown out against a drum. A torque converter is a hydrodynamic (fluid) drive: an impeller pumps oil onto a turbine, and a stator multiplies the torque. There is no rubbing contact between them, so it is not a friction clutch. It is used with automatic transmissions.
+
+Q 78 | chs | Clutch & Gearbox
+What is the best word to describethe assembled parts of a clutch?
+(1) Welded
+(2) Bolted
+(3) Riveted
+(4) Solder
+= 3
+~ A clutch's parts are mostly held together by rivets. The friction facings are riveted to the cushioning segments of the clutch plate, these are riveted to the steel disc, and the disc is riveted to the splined hub through the damper springs. Pressure-plate and diaphragm assemblies are also riveted. Rivets allow worn linings to be drilled out and replaced and do not distort the parts with heat as welding does, so the key answer is riveted.
+
+Q 79 | chs | Clutch & Gearbox
+A clutch that consists of thin plates immersed in a bath of oil and has grooved surfaces for permitting the oil to flow through these plates is called:
+(1) Multiple dry clutch
+(2) Multiple wet clutch
+(3) Semi-centrifugal clutch
+(4) Centrifugal clutch
+= 2
+~ A multi-plate wet clutch has several thin friction and steel plates running in oil. Grooves cut in the plate surfaces let the oil flow between them, carrying heat away and giving smooth, gradual engagement with less wear. It is used in motorcycles and in automatic transmissions. A dry multi-plate clutch works without oil, and centrifugal and semi-centrifugal clutches are engaged by flyweights.
+
+Q 80 | chs | Clutch & Gearbox
+_______ is a type of clutch used in motorcycles.
+(1) Single plate
+(2) Multi-plate
+(3) Diaphragm
+(4) Centrifugal
+= 2
+~ Most motorcycles use a multi-plate clutch, usually a wet one running in the engine-gearbox oil. Several small friction and steel plates are stacked together, so a compact clutch of small diameter can transmit the engine torque, and the oil cools it. Single-plate and diaphragm-spring clutches are normal in cars. Centrifugal clutches are found mainly in mopeds and automatic scooters.
+
+Q 81 | chs | Clutch & Gearbox
+A pilot bearing that is worn or lacks lubricant will produce noise in the clutch when which condition exists?
+(1) Transmission is in gear
+(2) Clutch is disengaged
+(3) Vehicle is standing still
+(4) Clutch is engaged
+= 2
+~ The pilot bearing in the end of the crankshaft (or flywheel) supports the front end of the gearbox input shaft. With the clutch engaged, the crankshaft and input shaft turn together, so the bearing has no relative motion and stays quiet. With the clutch disengaged, the crankshaft keeps turning while the input shaft slows or stops. The bearing then actually rotates, and a worn or dry pilot bearing squeals or grinds.
+
+Q 82 | chs | Clutch & Gearbox
+Match the columns.
+Parts Name | Functions
+(i)Torque converter | (a) Produces pressure
+(ii) Input shaft | (b) Actuate the bands and clutches
+(iii) Oil pump | (c) Produces pressure fluid coupling that connects and disconnects the engine and transmission
+(iv) Piston and servos | (d) Transfers power from torque converter to internal drive member
+(1) (i)-c, (ii)-d, (iii)-a, (iv)-b
+(2) (i)-d, (ii)-c, (iii)-b, (iv)-a
+(3) (i)-b, (ii)-c, (iii)-d, (iv)-a
+(4) (i)-b, (ii)-a, (iii)-c, (iv)-d
+= 1
+~ In an automatic transmission, the torque converter is the fluid coupling between the engine and the gearbox, so it connects and disconnects drive smoothly (c). The input (turbine) shaft carries power from the converter to the internal drive members and gear sets (d). The oil pump produces the hydraulic pressure (a). Pistons and servos use that pressure to apply the clutches and bands that select each gear (b).
+
+Q 83 | ice | Fuel Supply & Combustion
+Which ofthe givenstatements are correct?
+1. In the SI engines, detonation occurs near the end of combustion; whereas in CI engines, knocking occurs near the beginning of combustion.
+2. In SI engines, no problems are encountered on account of pre-ignition.
+3. Low inlet pressure and temperature reduce knocking tendency in SI engines but increase the knocking tendency in CI engines.
+(1) 1, 2 and 3
+(2) Only 1 and 2
+(3) Only 2 and 3
+(4) Only 1 and 3
+= 4
+~ Statement 1 is true: SI knock is auto-ignition of the end gas late in combustion, while CI knock comes from a long ignition delay at the start of combustion. Statement 3 is true: conditions that lower SI knock (low inlet pressure and temperature) lengthen the delay and raise CI knock. Statement 2 is false: pre-ignition from hot spots is a serious problem in SI engines, causing power loss, overheating and possible piston damage.
+
+Q 84 | ael | Batteries & Charging
+Which component is used to charge the battery driven by the engine?
+(1) Condenser
+(2) Rectifier
+(3) Alternator
+(4) Relay
+= 3
+~ The alternator is belt-driven from the crankshaft. It generates alternating current in its stator, and built-in diodes rectify this to direct current. A voltage regulator holds the output at about 13.8–14.5 V for a 12 V system, so the alternator recharges the battery and supplies the electrical loads while the engine runs. A rectifier is only one part inside the alternator, and a condenser and a relay do not generate any charge.
+
+Q 85 | ael | Starting & Ignition
+The output of an ignition coil is connected to which of the following parts?
+(1) Battery
+(2) Ammeter
+(3) Distributor cap
+(4) Spark plug
+= 3
+~ In a conventional battery (coil) ignition system, the battery feeds the coil's primary winding. The high-tension output from the secondary winding goes by the coil lead to the centre terminal of the distributor cap. The rotor then sends each spark through the cap's side terminals and the HT leads to the spark plugs in firing order. Only distributorless and coil-on-plug systems, common in modern cars, connect the coil output directly to the plug.
+
+Q 86 | ice | Engine Fundamentals & Cycles
+What is the temperature of the intake valve?
+(1) 200°C to 300°C
+(2) 300°C to 400°C
+(3) 400°C to 500°C
+(4) 500°C to 600°C
+= 1
+~ The intake valve is cooled every cycle by the fresh, relatively cool charge flowing past it, so it runs much cooler than the exhaust valve, which is swept by hot exhaust gases and can run at red heat, often 700 °C or more. Actual figures vary with the engine and load. The official key takes the intake valve temperature as 200°C to 300°C, the lowest range among the options. (Official final key; some sources differ: a valve maker quotes 300–500 °C for intake valves.)
+
+Q 87 | ice | Engine Fundamentals & Cycles
+During a power stroke, the downward moment of the piston isdone due to which pressure or force?
+(1) Fuel pressure
+(2) Gas pressure
+(3) Solid pressure
+(4) Liquid pressure
+= 2
+~ At the end of compression, the charge is ignited by a spark in petrol engines or by injection into hot air in diesel engines. The burning gases reach high temperature and pressure and push the piston down. The connecting rod turns this force into torque on the crankshaft. So the power stroke is driven by gas pressure ("moment" in the question is a misprint for movement). Fuel pressure applies only in the injection system.
+
+Q 88 | ice | Engine Fundamentals & Cycles
+Match the columns.
+IC Engine Terminology | Function
+(i) Bore | (a) Distance between TDC and BDC
+(ii) Stroke | (b) Combined volume of all engines
+(iii) Engine displacement | (c) SI engine
+(iv) Spark plug | (d) Internal diameter of cylinder
+(1) (i)-c, (ii)-d, (iii)-a, (iv)-b
+(2) (i)-d, (ii)-a, (iii)-b, (iv)-c
+(3) (i)-a, (ii)-b, (iii)-c, (iv)-d
+(4) (i)-c, (ii)-a, (iii)-d, (iv)-b
+= 2
+~ Bore is the internal diameter of the cylinder (d). Stroke is the distance the piston travels between TDC and BDC (a). Engine displacement is the swept volume of all the cylinders added together, (π/4)·D²·L·n ("all engines" in the paper is a misprint for all cylinders) (b). A spark plug belongs to the spark-ignition (SI) engine (c). So the matching is (i)-d, (ii)-a, (iii)-b, (iv)-c.
+
+Q 89 | ice | Engine Fundamentals & Cycles
+Read the given statement and conclusions carefully. Which of the given conclusions logically follow(s) from the statement?
+Statement:
+A piston is a component of reciprocating engines, reciprocating pumps, gas compressors, hydraulic cylinders and pneumatic cylinders, among other similar mechanisms.
+Conclusions:
+I) It is the moving component that is contained by a cylinder and is made gas-tight by piston rings.
+II) Its purpose is to transfer force from expanding gas in the cylinder to the crankshaft via a piston rod.
+(1) Only Conclusion I follows
+(2) Only Conclusion II follows
+(3) Both conclusions follow
+(4) The statement is true but the conclusions are false
+= 3
+~ The statement and both conclusions come from the standard definition of a piston. A piston is the moving part enclosed by a cylinder and made gas-tight by piston rings, and in an engine it transfers the force of expanding gas to the crankshaft through a piston rod and/or connecting rod. The conclusions are true descriptions that agree with the statement, so the official key treats both as following.
+
+Q 90 | mec | Theory of Machines
+In balancing of single cylinder engine, the rotating unbalance is:
+(1) Completely made zero and so also the reciprocating unbalance
+(2) Completely made zero and the reciprocating unbalance is partially reduced
+(3) Partially reduced and the reciprocating unbalance is completely made zero
+(4) Partially reduced and so also the reciprocating unbalance
+= 2
+~ The rotating masses (crank pin, crank web, rotating part of the connecting rod) can be fully balanced by a counterweight opposite the crank. The reciprocating mass gives a varying force along the line of stroke. A rotating counterweight can balance only part of it, usually 2/3 to 3/4, and in doing so sets up an unbalanced force of the same size at right angles to the line of stroke. So the reciprocating unbalance is only partially reduced.
+
+Q 91 | ice | Cooling & Lubrication
+The air cooling system helps to dissipate the heat from which of the following parts?
+(1) Engine piston
+(2) Engine crank shaft
+(3) Exhaust pipe
+(4) Cylinder and head fins
+= 4
+~ In an air-cooled engine, heat from combustion passes through the cylinder and cylinder-head walls to the fins cast on their outer surfaces. Air flowing over the fins, from vehicle motion or a cooling fan with cowling, carries the heat away by convection. The fins enlarge the heat-transfer area. The piston loses its heat mainly through the rings and cylinder walls and to the oil, not directly to the cooling air.
+
+Q 92 | ice | Fuels, Lubricants & Emissions
+What is the main purpose of a lubricant?
+(1) To minimise the friction
+(2) To increase the friction
+(3) To increase the weariness
+(4) To increase the noise
+= 1
+~ A lubricant puts a thin film of oil between moving surfaces such as bearings, pistons and cylinder walls, and gears. This film replaces metal-to-metal contact with fluid friction, so the lubricant's main job is to minimise friction and wear and the power lost to friction. Engine oil also cools, cleans, seals the piston rings and protects against corrosion. A lubricant reduces noise and wear rather than increasing them.
+
+Q 93 | ice | Fuels, Lubricants & Emissions
+Identify the INCORRECT statement related to the properties of a lubricant.
+(1) It should have low viscosity.
+(2) It should remain stable under changing temperatures.
+(3) It should keep lubricated pans clean.
+(4) It should not corrode metallic surfaces.
+= 1
+~ A good lubricant should have the right viscosity for the job, not simply a low one. If the viscosity is too low, the oil film breaks down under load and metal touches metal. It should also have a high viscosity index (stable viscosity as temperature changes) and good oxidation and thermal stability. It should keep the lubricated parts ("pans" in the paper is a misprint for parts) clean through detergency and should not corrode metal surfaces.
+
+Q 94 | ice | Fuels, Lubricants & Emissions
+Identify the multi-grade oil.
+(1) SAE 10W 30
+(2) SAE 25W
+(3) SAE 10
+(4) SAE 20W
+= 1
+~ A multigrade oil carries two SAE grades. SAE 10W-30 meets the 10W ("winter") limits for cold cranking and pumping at low temperature, and the SAE 30 viscosity at 100 °C. Viscosity-index improvers make this possible, so the engine starts easily in cold weather and is still protected when hot. SAE 25W, SAE 20W and SAE 10 each carry a single grade, so they are monograde oils.
+
+Q 95 | ice | Cooling & Lubrication
+The pressure feed lubrication system does NOT lubricate which of the following parts?
+(1) Timing gears
+(2) Valve rods and push rods
+(3) Rocker arms
+(4) Main bearings of crankshaft
+= 2
+~ In the usual textbook pressure-feed system, the pump sends oil through the main gallery and drilled passages to the crankshaft main bearings, big-end bearings, camshaft bearings, timing gears and the rocker-arm shaft. Cylinder walls, piston pins, valve stems (rods) and push rods are not fed directly; they get oil from splash, mist or oil draining back. Some overhead-valve engines do pass oil up hollow push rods to the rockers, but the key follows the textbook answer: valve rods and push rods.
+
+Q 96 | ael | Lighting, Instruments & Wiring
+The temperature gauge, which is most often located on your dashboard, indicates the temperature of:
+(1) lubricating oil
+(2) engine cylinder
+(3) jacket cooling water
+(4) engine piston
+= 3
+~ The dashboard temperature gauge is worked by a temperature sender, a thermistor screwed into the water jacket, usually near the thermostat in the cylinder head. It shows the temperature of the engine coolant (jacket cooling water). In normal running the coolant stays at about 85–105 °C, and a reading in the red warns of overheating. Oil temperature has a separate gauge, fitted only on some vehicles.
+
+Q 97 | ice | Fuel Supply & Combustion
+______ is typically sucked into the cylinder during the suction stroke in the fuel supply system.
+(1) Diesel
+(2) Air
+(3) Water
+(4) Oil
+= 2
+~ During the suction stroke, the descending piston lowers the cylinder pressure and the atmosphere pushes in the charge through the open inlet valve. In a diesel (CI) engine this charge is air alone, and the fuel is injected near the end of compression. In a carburetted petrol engine the charge is an air-petrol mixture, which is still mostly air. Diesel, water and oil are not drawn in as the charge.
+
+Q 98 | ice | Engine Fundamentals & Cycles
+In which stroke of the petrol engine, ‘exhaust gases’ is released to the atmosphere?
+(1) Exhaust stroke
+(2) Power stroke
+(3) Compression stroke
+(4) Intake stroke
+= 1
+~ In a four-stroke petrol engine the strokes are intake (suction), compression, power (expansion) and exhaust. During the exhaust stroke the exhaust valve is open and the rising piston pushes the burnt gases out through the exhaust port, manifold, catalytic converter and silencer to the atmosphere. The exhaust valve actually opens slightly before BDC at the end of the power stroke, but the gases are expelled in the exhaust stroke.
+
+Q 99 | ice | Fuel Supply & Combustion
+Which of the following components of the engine system cleans the air before it enters the cylinder of the engine?
+(1) Crank
+(2) Piston ring
+(3) Filter
+(4) Spark plug
+= 3
+~ The air filter (air cleaner) is fitted at the start of the intake system, before the carburettor or throttle body. It traps dust and grit so they do not enter the cylinders and wear the cylinder walls, piston rings and valves. A clogged filter restricts airflow and reduces power. The crank converts motion, piston rings seal the piston, and the spark plug ignites the charge, so none of them cleans the air.
+
+Q 100 | ice | Fuel Supply & Combustion
+______ atomizes the fuel and mixes it with air in an I.C. engine.
+(1) Camshaft
+(2) Spark plug
+(3) Piston
+(4) Carburetor
+= 4
+~ In a carburettor, air flowing through the venturi creates a depression that draws petrol from the jet. The fast-moving air breaks the fuel into fine droplets (atomisation) and mixes it with air in the right ratio for an SI engine. The throttle valve then controls the flow of this mixture. Modern petrol vehicles mostly use electronic fuel injection instead, but the carburettor is the classic device for this job.
+
+Q 101 | ice | Fuel Supply & Combustion
+What condition does the engine require while idling in a spark ignition (SI) engine?
+(1) Maximum power output
+(2) Heavy load demand
+(3) Overheating
+(4) No power demand
+= 4
+~ At idle the throttle is almost closed and the engine runs without any external load, developing only enough power to overcome its own friction and drive its accessories, so there is practically no power demand. Because the small charge is diluted by residual exhaust gas at low manifold pressure, a somewhat rich mixture is supplied to keep combustion steady. Maximum power output and heavy load demand describe full-throttle running, and overheating is a fault, not a requirement.
+
+Q 102 | ice | Fuel Supply & Combustion
+When all the air supplied is fully utilized, a spark ignition (SI) engine produce ______?
+(1) minimum power
+(2) maximum power
+(3) no power
+(4) average power
+= 2
+~ An SI engine develops its maximum power when all the oxygen in the air drawn in takes part in combustion. This needs a slightly rich mixture (about 12–13:1 air–fuel ratio for petrol, against the chemically correct 14.7:1), so that no air is left unused. A slightly lean mixture (about 16:1) instead burns all the fuel and gives the best economy. Full use of the air therefore corresponds to maximum power, not minimum or average power.
+
+Q 103 | ice | Engine Fundamentals & Cycles
+In which type of engine, petrol is used as fuel?
+(1) Steam engine
+(2) Spark ignition engine
+(3) Diesel engine
+(4) Turbine engine
+= 2
+~ Petrol (gasoline) is the fuel of spark ignition engines, which work on the Otto cycle: a petrol–air mixture is compressed to a moderate ratio (about 8–12:1) and ignited by a spark plug. Diesel engines are compression ignition engines burning diesel oil, steam engines are external combustion engines that burn coal, wood or oil to raise steam, and gas turbines normally use kerosene-type fuels or natural gas.
+
+Q 104 | ice | Fuels, Lubricants & Emissions
+Which of the following statements is correct regarding the fuel properties in an automobile
+system?
+I. The volatile fuels are always preferred due to presence of constituents providing easiness in
+starting of engine in cold weather.
+II. The vaporization of fuel immediately after the engine starts is affected by the speed with which
+it is warmed up.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Both statements describe volatility, a key property of petrol. A fuel containing enough highly volatile (low-boiling) constituents vaporises readily even in a cold intake, so the engine starts easily in cold weather; the limit is vapour lock in hot weather. After starting, the engine runs on a cold manifold until it warms up, so how well the fuel vaporises in this period depends on how quickly the engine is warmed up.
+
+Q 105 | ice | Fuels, Lubricants & Emissions
+To get petrol from crude oil, it is primarily ______ in a refinery.
+(1) filtered
+(2) compressed
+(3) distilled
+(4) oxidized
+= 3
+~ Crude oil is a mixture of hydrocarbons with different boiling points, so a refinery first separates it by fractional distillation: the heated crude enters a distillation column and fractions such as LPG, petrol (naphtha), kerosene, diesel and lubricating oil condense at different heights. The straight-run petrol obtained is then upgraded by processes such as cracking and reforming. Filtering, compressing or oxidising cannot separate petrol from crude oil.
+
+Q 106 | ice | Fuels, Lubricants & Emissions
+What is the primary source of most of the petrol used in automobiles?
+(1) Natural gas
+(2) Coal
+(3) Crude oil
+(4) Biofuels
+= 3
+~ Almost all the petrol used in vehicles is refined from crude oil (petroleum) by fractional distillation, followed by cracking, reforming and blending. Natural gas is mainly methane and is used directly as CNG, and coal can be turned into liquid fuel only by costly conversion processes. Biofuels such as ethanol are blended with petrol under India's ethanol blending programme (target E20, 20% ethanol), but they are only an additive share, not the main source.
+
+Q 107 | ice | Fuels, Lubricants & Emissions
+Which method improves the antiknock qualities of the straight run gasoline by changing their
+molecular structure?
+(1) Reforming
+(2) Alkylation
+(3) Cracking
+(4) Polymerization
+= 1
+~ Reforming, usually catalytic reforming over a platinum catalyst, rearranges the molecules of low-octane straight-run gasoline (naphtha): straight-chain paraffins and naphthenes are converted into aromatics and branched isomers, which resist knocking much better, so the octane number rises without much change in boiling range. Cracking breaks large molecules into smaller ones, while alkylation and polymerization build larger gasoline molecules by joining small gaseous ones.
+
+Q 108 | ice | Fuels, Lubricants & Emissions
+What calorific value of fuel is necessary for efficient operation in an automobile?
+(1) High calorific value
+(2) Low calorific value
+(3) Average calorific value
+(4) Fuel power does not depend upon its calorific value
+= 1
+~ The calorific value is the heat released by burning unit mass of fuel. A fuel with a high calorific value supplies more energy per kilogram or litre, so the engine develops more power, the vehicle runs farther per tankful and less fuel has to be carried; petrol and diesel give roughly 43–47 MJ/kg. A high calorific value is therefore an essential property of a good automobile fuel, and power output clearly depends on it.
+
+Q 109 | ice | Fuels, Lubricants & Emissions
+What are the primary components of LPG used as fuel in an automobile?
+(1) Methane and ethane
+(2) Hydrogen and helium
+(3) Butane and propane
+(4) Oxygen and nitrogen
+= 3
+~ Liquefied petroleum gas is mainly a mixture of propane (C₃H₈) and butane (C₄H₁₀), obtained from natural gas processing and crude oil refining. These gases liquefy under moderate pressure, so auto LPG is carried as a liquid in a pressurised tank and vaporised before it enters the engine. Methane, with some ethane, makes up natural gas used as CNG, while hydrogen, helium, oxygen and nitrogen are not LPG components.
+
+Q 110 | chs | Drive Line, Axles & Differential
+______ connects the transmission main or output shaft of the gear box to the differential of the rear
+axle.
+(1) Propeller shaft
+(2) Radiator
+(3) Airbags
+(4) Alternator
+= 1
+~ In a front-engine, rear-wheel-drive vehicle the propeller shaft carries the drive from the main (output) shaft of the gearbox to the differential pinion in the rear axle. Because the rear axle moves up and down on its springs, the shaft has universal joints to allow changes of angle and a slip joint to allow changes of length. Radiators cool the engine, airbags protect occupants and alternators charge the battery.
+
+Q 111 | chs | Drive Line, Axles & Differential
+The ‘Drive shaft’ in a vehicle is also called ______.
+(1) Propeller shaft
+(2) Steering wheel
+(3) Seat belt
+(4) Axle beam
+= 1
+~ The drive shaft running from the gearbox to the rear-axle differential is called the propeller shaft, or propshaft; "driveshaft" is the usual American term for it. It is normally a hollow steel tube fitted with universal joints and a slip joint, and it transmits engine torque along the length of the vehicle. The steering wheel, seat belt and axle beam are unrelated parts with entirely different functions.
+
+Q 112 | chs | Drive Line, Axles & Differential
+What is provided to accommodate changes in the length of the propeller shaft?
+(1) Coupling
+(2) Universal joint
+(3) Slip joint
+(4) Drive belt
+= 3
+~ As the rear axle moves up and down with spring deflection, the distance between the gearbox and the differential changes. A slip joint, consisting of a splined shaft sliding inside a matching splined sleeve, lets the propeller shaft change its effective length while it continues to transmit torque. Universal joints, by contrast, allow changes in the angle of the shaft, and a coupling simply joins two shafts.
+
+Q 113 | chs | Drive Line, Axles & Differential
+What is added in an automobile to provide relative motion to both the rear wheels when the
+vehicle is turning?
+(1) Radiator
+(2) Differential
+(3) Gear box
+(4) Steering wheel
+= 2
+~ On a turn the outer rear wheel travels a longer arc than the inner wheel and must rotate faster. If both wheels were fixed to one solid axle, one of them would have to skid, causing tyre wear and poor handling. The differential, fitted in the rear axle, divides the drive between the two half shafts while allowing them to rotate at different speeds, thus providing relative motion between the wheels when turning.
+
+Q 114 | chs | Drive Line, Axles & Differential
+What is that principle which is similar to the principle of ‘differential’?
+(1) Spring balance
+(2) Thermometer
+(3) Pressure cooker
+(4) Weighing beam
+= 4
+~ The differential is commonly explained by comparing it with a weighing (balance) beam pivoted at its centre. If equal resistance acts at both ends, a push at the pivot moves both ends equally, just as both wheels turn at the same speed on a straight road. If one end is held back, the other end moves farther, just as the outer wheel speeds up while the inner wheel slows down on a turn.
+
+Q 115 | chs | Drive Line, Axles & Differential
+In addition of its primary function, the ‘rear axle’ also serves as what in a vehicle’s chassis?
+(1) A hydraulic pump
+(2) A fuel tank
+(3) A cooling system
+(4) A beam subjected to a bending load
+= 4
+~ Besides housing the final drive, differential and half shafts that drive the wheels, the rear axle casing carries the weight of the vehicle. The load comes down through the springs mounted on the casing while the supporting reactions act at the wheels, so the casing works as a beam subjected to a bending load. It also resists the reactions of driving and braking torque. It is not a pump, fuel tank or cooling system.
+
+Q 116 | chs | Drive Line, Axles & Differential
+Which of the following statements is correct regarding the types of rear axle of an automobile?
+I. Dead axles do not rotate with the wheels but the wheels rotate on it.
+II. Live axles are those axles which are attached to the wheel so that both of them rotate together.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Both statements are correct. A dead axle transmits no power: it stays stationary and carries the load while the wheels rotate on bearings mounted on it, as in a trailer axle or the rear axle of a front-wheel-drive car. A live axle transmits driving torque; its shafts are fixed to the wheels so that shafts and wheels rotate together, as in the rear axle of a rear-wheel-drive vehicle.
+
+Q 117 | chs | Drive Line, Axles & Differential
+Which of the following types of vehicles typically has a dead rear axle?
+(1) Sports cars
+(2) Horse-drawn vehicles
+(3) Motorcycles
+(4) Electric scooters
+= 2
+~ A dead axle only supports load; the wheels turn freely on it and no power passes through it. Horse-drawn carts and carriages are pulled by the animal, so none of their axles is driven and the rear axle is a dead axle. Sports cars are commonly rear-wheel drive, motorcycles drive the rear wheel by chain, belt or shaft, and most electric scooters drive the rear wheel through a hub motor or belt.
+
+Q 118 | chs | Clutch & Gearbox
+______ allows a clutch to function in a vehicle’s transmission system?
+(1) Magnetic force
+(2) Friction
+(3) Electrical current
+(4) Hydraulic pressure
+= 2
+~ The usual automobile clutch is a friction clutch: springs clamp the friction-lined clutch plate between the flywheel and the pressure plate, and engine torque passes by friction. Its torque capacity is T = μ·W·R·n, where μ is the coefficient of friction, W the axial spring force, R the mean radius of the lining and n the number of friction surfaces. Hydraulic or electric systems may operate the clutch, but the drive itself is carried by friction.
+
+Q 119 | ice | Engine Fundamentals & Cycles
+Which process is responsible for expelling the exhaust gases from the cylinder during the exhaust
+stroke of the engine?
+(1) Knocking
+(2) Combustion
+(3) Scavenging
+(4) Ignition
+= 3
+~ Scavenging is the process of clearing the burnt exhaust gases out of the cylinder so that the fresh charge can take their place. In a four-stroke engine it is done mainly by the piston on the exhaust stroke, helped during valve overlap by the incoming charge; in a two-stroke engine the incoming fresh charge itself sweeps out the burnt gases. Knocking is abnormal combustion, while ignition and combustion take place around the end of compression.
+
+Q 120 | ice | Engine Fundamentals & Cycles
+Exhaust gases are pushed out of the cylinder by the motion of what component in an engine?
+(1) Spark plug
+(2) Carburettor
+(3) Piston
+(4) Crankshaft
+= 3
+~ During the exhaust stroke the exhaust valve is open and the piston moves up from bottom dead centre to top dead centre, pushing the burnt gases out of the cylinder into the exhaust manifold. The crankshaft drives the piston on this stroke using energy stored in the flywheel, but it is the piston that displaces the gases. The spark plug ignites the charge and the carburettor prepares the air–fuel mixture.
+
+Q 121 | ice | Engine Fundamentals & Cycles
+Which of the following statements is correct regarding the exhaust stroke in Four-stroke Otto
+Cycle Engine?
+I. The suction valve remains closed and exhaust valve is open.
+II. As the piston moves from BDC to TDC, it pushes the gases out through exhaust valves.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Both statements are correct. During the exhaust stroke of a four-stroke Otto cycle (petrol) engine the suction (inlet) valve stays closed and the exhaust valve is open. The piston moves from bottom dead centre to top dead centre and pushes the burnt gases out through the exhaust valve at slightly above atmospheric pressure. In a real engine the valves open and close a little before and after the dead centres to improve breathing.
+
+Q 122 | ice | Engine Fundamentals & Cycles
+In a four-stroke diesel engine cycle, when does the exhaust valve typically open?
+(1) At the beginning of the compression stroke
+(2) Just before the end of expansion
+(3) During the intake stroke
+(4) At the start of the power stroke
+= 2
+~ In a four-stroke diesel engine the exhaust valve opens just before the end of the expansion (power) stroke, typically about 30–50° of crank angle before bottom dead centre. Opening early lets the still-pressurised gases rush out (blowdown), so the cylinder pressure is already low when the piston begins the exhaust stroke, which reduces pumping work. The valve closes a little after top dead centre, overlapping with the opening of the inlet valve.
+
+Q 123 | ice | Fuels, Lubricants & Emissions
+What is the most important gas produced during combustion in an automobile engine that
+increases the atmospheric temperature?
+(1) O₂
+(2) CO₂
+(3) N₂
+(4) SO₂
+= 2
+~ Complete combustion of hydrocarbon fuels produces mainly carbon dioxide (CO₂) and water vapour. CO₂, emitted by vehicles in very large quantities, is the most important greenhouse gas: it traps outgoing infrared radiation and raises the atmospheric temperature (global warming). Oxygen and nitrogen come from the intake air and are not greenhouse gases, and SO₂ from fuel sulphur is now very small, since BS-VI fuel (from April 2020) has at most 10 ppm sulphur.
+
+Q 124 | ice | Fuels, Lubricants & Emissions
+In the automobile engine, which two gases in the exhaust vary opposite to each other?
+(1) SO₂ and O₂
+(2) O₂ and CO
+(3) CO₂ and CO
+(4) SO₂ and N₂
+= 3
+~ CO₂ and CO in the exhaust vary in opposite directions as the air–fuel ratio changes. With a rich mixture there is not enough oxygen to burn all the carbon to CO₂, so CO rises and CO₂ falls; as the mixture approaches the chemically correct ratio (about 14.7:1 for petrol), CO drops to a minimum and CO₂ reaches its maximum of about 14–15%. Exhaust gas analysers use this relation to judge mixture strength.
+
+Q 125 | ice | Engine Fundamentals & Cycles
+The exhaust of spent gases from the cylinder of an automobile engine is done so that ______.
+(1) the engine can run silently
+(2) fuel efficiency is improved
+(3) fresh charge may be sucked in
+(4) the exhaust note becomes louder
+= 3
+~ The burnt gases left after the power stroke can do no further work and only occupy the cylinder. They are expelled during the exhaust stroke so that the cylinder is cleared and a fresh charge (air–fuel mixture in a petrol engine, air alone in a diesel engine) can be sucked in during the next suction stroke. Burnt gas left behind dilutes the fresh charge and lowers volumetric efficiency and power.
+
+Q 126 | ice | Engine Fundamentals & Cycles
+In a four stroke diesel cycle engine, during which piston movement does it push gases through
+the exhaust valves?
+(1) From TDC towards BDC
+(2) From BDC towards TDC
+(3) From TDC to BDC and back to TDC
+(4) No piston movement required
+= 2
+~ In the exhaust stroke of a four-stroke diesel engine the exhaust valve is open and the inlet valve closed, and the piston moves from bottom dead centre (BDC) towards top dead centre (TDC), pushing the burnt gases out through the exhaust valve. The piston moves from TDC towards BDC during the suction and power strokes, and each stroke is a single movement between the dead centres, not a movement there and back.
+
+Q 127 | mva | Vehicle Maintenance & Testing
+What equipment is called ‘a tray on wheels for mechanics to lie down on’?
+(1) Wrench
+(2) Creeper
+(3) Sinter
+(4) Hacksaw
+= 2
+~ A creeper is a low, flat board or padded tray mounted on small castor wheels. The mechanic lies on it and rolls easily under the vehicle to work on the underside, such as the exhaust system, propeller shaft, brakes and oil sump. A wrench is a tightening tool and a hacksaw cuts metal, while sinter (the product of sintering metal powders) is not workshop equipment at all.
+
+Q 128 | chs | Wheels & Tyres
+Where is the tyre-tube assembly mounted in a vehicle?
+(1) Over the wheel rim
+(2) On the rear axle
+(3) On the gear box
+(4) On the differential
+= 1
+~ In a tubed tyre the inner tube, which holds the air, is fitted inside the tyre casing and the whole assembly is mounted over the wheel rim, with the tyre beads seated against the rim flanges and the tube valve passing through a hole in the rim. The wheel carrying the tyre is then bolted to the hub on the axle. The tyre-tube assembly is never fitted directly on the axle, gearbox or differential.
+
+Q 129 | chs | Wheels & Tyres
+______ is the final contact point between the road and the vehicle.
+(1) Gear box
+(2) Tyres
+(3) Wheel hubs
+(4) Differential
+= 2
+~ The tyres are the only parts of a vehicle in contact with the road. The weight of the vehicle and all driving, braking and cornering forces pass through the small contact patches of the tyres, which also cushion road shocks. The gearbox and differential are parts of the transmission, and the wheel hubs carry the wheels but never touch the road surface.
+
+Q 130 | chs | Wheels & Tyres
+In an automobile, what is the ‘tread’?
+(1) The engine compartment
+(2) The steering wheel
+(3) Automobile’s dashboard
+(4) The outer portion of the tyre that makes contact with the road surface
+= 4
+~ The tread is the thick outer rubber portion of the tyre that makes contact with the road surface. Its pattern of grooves, ribs and blocks gives grip for traction, braking and cornering, and channels water out of the contact patch to prevent aquaplaning. A tyre whose tread has worn down to the tread-wear indicators must be replaced. The engine compartment, steering wheel and dashboard have nothing to do with the tread.
+
+Q 131 | chs | Wheels & Tyres
+What are the rings that fit on the rim of the wheel and connect the tyre to the rim called?
+(1) Beads
+(2) Hubs
+(3) Valves
+(4) Axles
+= 1
+~ The beads are the inner edges of a tyre, each reinforced with a ring of high-tensile steel wire. They fit tightly against the bead seats and flanges of the rim, holding the tyre on the rim and, in a tubeless tyre, sealing in the air. Hubs carry the wheel on the axle, the valve admits air, and axles support the wheels; none of these connects the tyre to the rim.
+
+Q 132 | chs | Drive Line, Axles & Differential
+In an automobile system, transmission system is also called ______.
+(1) Differential
+(2) Gear box
+(3) Power train
+(4) Wheel rim
+= 3
+~ The transmission system, which carries engine power to the driving wheels, is also called the power train (or drive train). It includes the clutch, gearbox, propeller shaft with its universal and slip joints, final drive, differential and axle shafts. The gearbox and the differential are only parts of this system, and the wheel rim is part of the road wheel, not the transmission.
+
+Q 133 | chs | Drive Line, Axles & Differential
+What system transmits the power developed by the engine of the automobile to the driving
+wheels?
+(1) Brake System
+(2) Transmission System
+(3) Steering System
+(4) Ignition System
+= 2
+~ The transmission system carries the power developed by the engine to the driving wheels through the clutch, gearbox, propeller shaft, final drive, differential and axle shafts. It also lets the driver vary torque and speed, reverse the vehicle and disconnect the drive. The brake system slows and stops the vehicle, the steering system controls its direction, and the ignition system fires the charge in a petrol engine.
+
+Q 134 | chs | Clutch & Gearbox
+______ enables the driver to disconnect the drive from the road wheels instantaneously and to
+engage drive from the engine to the road wheels gradually.
+(1) Gear box
+(2) Spark plug
+(3) Crown wheel
+(4) Clutch
+= 4
+~ The clutch, placed between the engine flywheel and the gearbox, lets the driver disconnect the engine from the road wheels instantly by pressing the pedal, for starting, stopping and changing gears. When the pedal is released slowly, the clutch plate is clamped progressively, so the drive is taken up gradually without jerks. The gearbox changes the torque ratio, the crown wheel is part of the final drive, and the spark plug ignites the charge.
+
+Q 135 | chs | Clutch & Gearbox
+Which of the following component in an automobile provides the necessary leverage variation
+between the engine and road wheels?
+(1) Differential
+(2) Gear box
+(3) Brakes
+(4) Steering wheel
+= 2
+~ The gearbox provides the necessary leverage (torque) variation between the engine and the road wheels. An engine gives limited torque over a narrow speed range, while the vehicle needs a large tractive effort for starting and climbing and less at high speed. Low gears multiply torque and reduce speed, high gears do the opposite, and a reverse gear is also provided. The differential only lets the wheels turn at different speeds.
+
+Q 136 | chs | Clutch & Gearbox
+In an automobile, under what condition is the clutch typically disengaged?
+(1) When accelerating
+(2) When idling at a stoplight
+(3) When shifting gears
+(4) Clutch is never disengaged
+= 3
+~ In a manual-transmission vehicle the clutch is disengaged by pressing the pedal whenever gears are changed, so that the gearbox is freed from engine torque and the gears or synchronisers can be shifted without clashing. It is also disengaged while moving off and stopping. During acceleration the clutch must be fully engaged, and while idling at a signal the gearbox is normally put in neutral with the clutch pedal released.
+
+Q 137 | chs | Clutch & Gearbox
+How should the clutch be engaged to avoid a sudden jerk?
+(1) Keep it disengaged at all times
+(2) Should engage gradually
+(3) Only engage it when coming to a complete stop
+(4) Engage it quickly
+= 2
+~ The clutch should be engaged gradually by releasing the pedal smoothly, so that the clutch plate slips briefly while the speeds of the engine and the gearbox input shaft equalise. This takes up the drive without a sudden jerk, protects the transmission from shock loads and avoids stalling. Engaging it quickly causes a jerk, keeping it disengaged transmits no drive, and the clutch is disengaged, not engaged, when coming to a stop.
+
+Q 138 | chs | Steering & Suspension
+What to do if steering becomes hard due to low tyre inflation?
+(1) Increase the engine’s RPM
+(2) Replace the whole steering wheel
+(3) Inflate the tyres to the specified pressure
+(4) Ignore the problem, it will correct itself
+= 3
+~ An under-inflated tyre has a larger, flatter contact patch, so the rolling resistance and the friction between tyre and road increase and the steering becomes hard to turn. The remedy is to inflate the tyres to the pressure specified by the manufacturer and to check the pressure regularly. Raising engine speed or replacing the steering wheel will not help, and ignoring low pressure leads to tyre damage and poor control.
+
+Q 139 | chs | Steering & Suspension
+In an automobile, which system’s primary function is to achieve angular motion of the front
+wheels to negotiate a turn?
+(1) Steering system
+(2) Brake system
+(3) Ignition system
+(4) Transmission system
+= 1
+~ The primary function of the steering system is to give angular motion to the front wheels so that the vehicle can negotiate turns. Its linkage, laid out on the Ackermann principle, turns the inner wheel through a larger angle than the outer one so that both roll about a common centre without slipping. It also gives directional stability and keeps road shocks from reaching the driver. Brakes, ignition and transmission serve other purposes.
+
+Q 140 | mec | Machine Design
+In an automobile, what type of stress induced in the shafts due to the transmission of torque?
+(1) Bending stress
+(2) Shear stress
+(3) Principle stress
+(4) Torsional stress
+= 2
+~ A shaft transmitting torque is twisted, and this produces shear stress in its cross-section, varying from zero at the axis to a maximum τ = 16T/(πd³) at the surface of a solid shaft. Standard machine design texts list "shear stresses due to the transmission of torque" separately from bending stresses due to gears and pulleys. Option 4, "torsional stress", names the same torsional shear stress, so it is also defensible. (Official final key; some sources differ.)
+
+Q 141 | mec | Machine Design
+In an automobile, what type of stress induced in the shafts due to the forces acting upon machine
+elements like gears, pulleys etc.?
+(1) Bending stress
+(2) Shear stress
+(3) Principle stress
+(4) Hoop stress
+= 1
+~ Forces from gears, pulleys and sprockets mounted on a shaft, together with its own weight, act across the shaft and bend it like a beam, inducing bending stress (tension on one side, compression on the other) with a maximum of σ = 32M/(πd³) for a solid shaft. Shear stress comes from the transmitted torque, hoop stress acts in cylinders under internal pressure, and "principle stress" (misprint for principal stress) refers to combined stress.
+
+Q 142 | mec | Machine Design
+In an automobile, what is the typical cross-sectional shape of the shaft?
+(1) Circular
+(2) Rectangular
+(3) Triangular
+(4) Tubular
+= 4
+~ The key takes the propeller shaft view: automobile drive shafts are usually tubular, made of hollow steel tube. For the same weight a tube has a far larger polar moment of inertia than a solid bar, so it carries more torque, is stiffer in bending and has a higher whirling speed. A tube is, however, still circular in section, and solid circular shafts are used for gearbox and axle shafts. (Official final key; some sources differ.)
+
+Q 143 | chs | Drive Line, Axles & Differential
+What is the primary function of a Universal Joint in the shaft of an automobile?
+(1) To steer the vehicle
+(2) To connect the engine to the wheels
+(3) To provide power to the lights
+(4) For up and down movements of the rear axle when the vehicle is running
+= 4
+~ The rear axle is mounted on springs and moves up and down relative to the gearbox as the vehicle runs over an uneven road, so the angle between the gearbox output shaft and the propeller shaft keeps changing. Universal joints at the ends of the propeller shaft transmit the drive through these changing angles, permitting the axle's up and down movement. Changes in length are taken up by the slip joint.
+
+Q 144 | mec | Theory of Machines
+How can the critical whirling speed of a shaft be increased?
+(1) Reducing its length
+(2) Reducing its diameter
+(3) Increasing its diameter
+(4) Increasing its weight
+= 3
+~ For a uniform solid shaft the critical (whirling) speed is ω = (π/L)²√(EI/(ρA)); since I/A = d²/16, ω varies as d/L². Increasing the diameter therefore raises the whirling speed, which is why propeller shafts use large-diameter tubes, while extra weight alone lowers it. Reducing the length raises it even more strongly (halving L quadruples ω), so option 1 is also correct. (Official final key; some sources differ.)
+
+Q 145 | chs | Drive Line, Axles & Differential
+Which of the following statements is correct regarding the ‘half shafts’ of an automobile?
+I. It is called half shafts because it normally transmits half of the available power from the
+differential to the wheel to which it is connected.
+II. Each half shaft uses a constant velocity joint at both the inboard (differential) and outboard
+(wheel) end.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Half shafts carry the drive from the differential to the driving wheels. An open differential divides the torque equally, so on a straight road each carries half the power, which the paper gives as the reason for the name. In front-wheel-drive and independently sprung layouts each half shaft has a constant velocity joint at its inboard (differential) and outboard (wheel) end, as statement II says. (Official final key; some sources differ: the name is usually explained by each shaft being one half of a divided axle, and the half shafts of a rigid live axle have no CV joints.)
+
+Q 146 | chs | Chassis & Body
+______ is commonly used for making the windscreen of a vehicle.
+(1) Laminated safety glass
+(2) Aluminium
+(3) Wrought iron
+(4) Plastic
+= 1
+~ Windscreens are made of laminated safety glass: two layers of glass bonded to a tough plastic interlayer of polyvinyl butyral. On impact the glass cracks but the pieces stick to the interlayer instead of flying at the occupants, and the driver can still see through it. Rule 100 of the Central Motor Vehicles Rules, 1989 requires safety glass for windscreens. Aluminium and wrought iron are opaque, and ordinary plastic scratches easily.
+
+Q 147 | chs | Wheels & Tyres
+What function does ‘Sulphur’ perform in relation to tyre material in the production of rubber?
+(1) Speed enhancer
+(2) Vulcanizing agent
+(3) Helps in better gripping on the road
+(4) Helps in better turning on the road
+= 2
+~ Sulphur is the vulcanizing agent for tyre rubber. When raw rubber compounded with sulphur and accelerators is heated in the tyre mould, sulphur forms cross-links between the long rubber molecules. Vulcanized rubber is stronger, more elastic, resistant to wear and heat and no longer sticky, which makes it fit for tyres; Charles Goodyear discovered the process in 1839. Grip and cornering depend mainly on the tread compound and pattern, not on sulphur.
+
+Q 148 | chs | Chassis & Body
+Which of the following statements is correct regarding the materials used in body work of an
+automobile?
+I. Steel is still used in majority of the cases being the cheapest along with the case with which it
+can be stamped out to form various shapes.
+II. Thermoplastics are quite often used for components like boot coves, grills etc.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Both statements are correct. Steel sheet remains the main car body material because it is the cheapest and can easily be stamped (pressed) into panels of various shapes, besides being strong and easy to weld and repair. Thermoplastics such as polypropylene and ABS are widely used for parts like boot covers, radiator grilles and bumpers, being light, rust-free and easily moulded. The paper prints "case" for "ease" and "boot coves" for "boot covers".
+
+Q 149 | mfg | Manufacturing & Workshop
+______ is commonly used to tighten or loosen screws in a machine element of an automobile.
+(1) Screw driver
+(2) Pliers
+(3) Reamer
+(4) Sinter
+= 1
+~ A screwdriver is the hand tool for tightening or loosening screws: its tip (flat, Phillips cross-point or another type) engages the recess in the screw head and the handle provides the turning torque. Pliers are used to grip, bend or cut wire, a reamer finishes an already drilled hole to an accurate size, and sinter is a product of powder metallurgy, not a tool.
+
+Q 150 | mfg | Manufacturing & Workshop
+What tool is used for cutting metal with a hammer in an automobile maintenance workshop?
+(1) Pliers
+(2) Chisels
+(3) Hacksaw
+(4) Solder
+= 2
+~ A cold chisel, struck with a ball-peen hammer, is used to cut metal: shearing off rivet heads and seized nuts or bolts, cutting sheet metal and chipping surfaces. It is made of hardened and tempered tool steel so that its edge can cut softer metals. A hacksaw cuts metal by sawing without a hammer, pliers only grip or cut wire, and solder is a filler alloy for joining metals.

@@ -197,7 +197,8 @@
    "cat": "ap",
    "b": "APPSC",
    "t": "AMVI",
-   "n": "Assistant Motor Vehicle Inspector"
+   "n": "Assistant Motor Vehicle Inspector",
+   "live": "appsc-amvi/"
   },
   {
    "id": "appsc-hwo",
@@ -360,7 +361,8 @@
    "cat": "tg",
    "b": "TGPSC",
    "t": "AMVI",
-   "n": "Assistant Motor Vehicle Inspector"
+   "n": "Assistant Motor Vehicle Inspector",
+   "live": "tgpsc-amvi/"
   },
   {
    "id": "tgpsc-fbo",

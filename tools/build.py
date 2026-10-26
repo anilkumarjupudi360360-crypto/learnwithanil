@@ -952,7 +952,7 @@ def main():
                      .replace('{{NOTES_FOOT}}', '<a href="#notes">Study material</a> · ' if enotes else ''))
         root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: APPSC Group 1 & 2, TS Police SI & Constable, UPSC CAPF & EPFO'
         root_desc = (f'Learn with Anil (learnwithanil.in): previous year question papers (PYQs) with answers for APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
-                     f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO) and TGPSC HMWSSB Manager. {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
+                     f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO) and TGPSC HMWSSB Manager, and APPSC & TGPSC AMVI (Assistant Motor Vehicle Inspector). {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
                      f'One ₹45 PYQ Pass for every exam; TGPSC, UPSC, SSC, banking and railway exams are being added.')
         home_title = conf['title']
         ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
@@ -1631,7 +1631,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){{
 document.querySelectorAll(".lk").forEach(function(e){{e.textContent="✓ ";e.className="lk ok"}});
 document.querySelectorAll("[data-paidtxt]").forEach(function(e){{e.textContent=e.getAttribute("data-paidtxt")}});
@@ -1817,20 +1817,20 @@ LANDINGS = {
   # file: what the page covers. People search "APPSC PYQs", "TS police previous papers", "TSLPRB previous question papers" ...
   'appsc-pyqs.html': dict(
       board='APPSC', ename='APPSC', crumb='APPSC PYQs',
-      title='APPSC Previous Year Question Papers with Answers – Group 1 & Group 2 PYQs | Learn with Anil',
-      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024 and Group 2 Prelims & Mains 2019–2025, '
+      title='APPSC Previous Year Question Papers with Answers – Group 1, Group 2 & AMVI PYQs | Learn with Anil',
+      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024, Group 2 Prelims & Mains 2019–2025 and AMVI (Assistant Motor Vehicle Inspector) 2019, 2023 & 2026, '
            '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations with one ₹45 PYQ Pass for every exam.',
       h1='APPSC previous year question papers with answers',
-      lede="Every APPSC Group 1 and Group 2 previous question paper on Learn with Anil, {n} questions in all. "
-           "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu.",
-      intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC old question papers with the key, or an APPSC mock test? '
+      lede="Every APPSC Group 1, Group 2 and AMVI previous question paper on Learn with Anil, {n} questions in all. "
+           "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu (AMVI Automobile Engineering papers in English).",
+      intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC AMVI (Assistant Motor Vehicle Inspector) previous papers, APPSC old question papers with the key, or an APPSC mock test? '
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
             '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.</p>'
             '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (686 posts, apply 10–30 November) and '
             '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts). Timed mock tests: '
             '<a href="/appsc-group-2/mock-test.html">Group 2</a> · <a href="/appsc-group-1/mock-test.html">Group 1</a>.</p>',
-      te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు'},
-      order=lambda c: c['short']),   # Group-I first, then Group-II
+      te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు', 'APPSC AMVI': 'APPSC AMVI ప్రశ్నాపత్రాలు'},
+      order=lambda c: {'Group-I': 0, 'Group-II': 1}.get(c['short'], 2)),   # Group-I, Group-II, then AMVI
   'ts-police-pyqs.html': dict(
       board='TSLPRB', ename='TS Police', crumb='TS Police PYQs',
       title='TS Police Previous Question Papers with Answers – SI & Constable PYQs (TSLPRB / TGPRB), English & Telugu | Learn with Anil',

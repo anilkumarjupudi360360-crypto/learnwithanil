@@ -1,0 +1,763 @@
+# APPSC Assistant Motor Vehicle Inspector (Notification 11/2018), Paper II: Automobile Engineering, held 17 April 2019. Source: APPSC final key and revised key (answers only; options are not printed).
+# Deleted by APPSC: 122, 131. Left out: 99 (its answer, 'None of the given options', means nothing without the options).
+
+Q 1 | thm | Thermodynamics
+Which of the following is true for open system?
+= Mass can transfer, energy can transfer
+~ An open system (control volume) is one whose boundary allows both mass and energy (heat and work) to cross, for example an engine cylinder during intake and exhaust, a compressor, a turbine or a nozzle. A closed system allows only energy transfer with a fixed mass (a piston-cylinder with the valves shut), and an isolated system allows neither mass nor energy to cross its boundary.
+
+Q 2 | thm | Thermodynamics
+A piston cylinder contains air at 600 kPa, 290 K and a volume of 0.01m^3. A constant pressure process gives 60 kJ of work out. Find the final volume of the air.
+= 0.11 m^3
+~ In a constant-pressure process the boundary work is W = p(V₂ − V₁). So 60 kJ = 600 kPa × (V₂ − 0.01) m³, giving V₂ − 0.01 = 60/600 = 0.1 m³ and V₂ = 0.11 m³. The temperature (290 K) is not needed for the volume; it would be used to find the mass of air, m = pV/RT = 600 × 0.01/(0.287 × 290) ≈ 0.072 kg.
+
+Q 3 | thm | Thermodynamics
+As per kinetic theory of gases, value of gamma for monoatomic gases, diatomic gases and polyatomic gases are
+= 5/3, 7/5, 4/3
+~ Kinetic theory gives γ = cp/cv = 1 + 2/f, where f is the number of degrees of freedom of the molecule. A monatomic gas (He, Ar) has 3 translational degrees, so γ = 5/3 ≈ 1.67; a diatomic gas (O₂, N₂, air) has 5 (3 translational + 2 rotational), so γ = 7/5 = 1.4; a non-linear polyatomic gas has 6, so γ = 8/6 = 4/3 ≈ 1.33 (vibrational modes neglected).
+
+Q 4 | ice | Engine Fundamentals & Cycles
+__________ is the compression ratio for positive ignition (PI) engine.
+= 6 to 10
+~ Positive (spark) ignition engines are usually given compression ratios of about 6 to 10, because a higher ratio raises the temperature and pressure of the end gas and causes knock (detonation) with ordinary petrol. Compression ignition (diesel) engines use about 16 to 22, since they need hot compressed air for self-ignition of the fuel. Modern petrol engines with knock sensors and direct injection often run above 10:1.
+
+Q 5 | thm | Thermodynamics
+The ratio of specific heat at constant volume (cv) and specific heat at constant pressure (cp) is
+= < 1
+~ cp − cv = R, so cp is always larger than cv: at constant pressure part of the heat supplied does expansion work, while at constant volume all of it raises the internal energy. Hence cp/cv = γ > 1 (1.4 for air), and the ratio asked, cv/cp = 1/γ, is less than 1 (about 0.714 for air).
+
+Q 6 | ice | Fuel Supply & Combustion
+One kg of hydrogen requires __________ kg of oxygen to produce ---- kg water.
+= 8,9
+~ The combustion equation is 2H₂ + O₂ → 2H₂O. By mass, 4 kg of hydrogen combines with 32 kg of oxygen to form 36 kg of water. Dividing by 4, 1 kg of hydrogen needs 8 kg of oxygen and produces 9 kg of water. This 9 kg per kg figure is used to find the water in the products when working out the higher and lower calorific values of a fuel.
+
+Q 7 | flu | Fluid Mechanics
+The value of 1 cm of Hg is equal to
+= 1333 N/m²
+~ The pressure of a liquid column is p = ρgh. For mercury (ρ ≈ 13,600 kg/m³), 1 cm Hg = 13,600 × 9.81 × 0.01 ≈ 1334 N/m²; with the standard values (13,595 kg/m³ and 9.80665 m/s²) it is 1333.2 N/m², i.e. about 1333 Pa. Hence 76 cm Hg, the standard atmosphere, is 1.013 × 10⁵ N/m².
+
+Q 8 | flu | Fluid Mechanics
+Which of the following is correct pressure co-relation?
+= Absolute pressure = Gauge pressure + Atmospheric pressure
+~ A pressure gauge reads pressure relative to the local atmosphere, so absolute pressure = gauge pressure + atmospheric pressure. Below atmospheric pressure, absolute pressure = atmospheric pressure − vacuum pressure. Thermodynamic relations such as pV = mRT always use absolute pressure; for example, a tyre inflated to 2 bar gauge holds air at about 3.01 bar absolute.
+
+Q 9 | thm | Thermodynamics
+Availability of a system is depending on the
+= State of a system and surrounding
+~ Availability (exergy) is the maximum useful work obtainable as a system is brought into equilibrium with its surroundings (the dead state). It therefore depends both on the state of the system (p, T, composition) and on the state of the surroundings (p₀, T₀); for a closed system, availability = (U − U₀) + p₀(V − V₀) − T₀(S − S₀). A system already at the dead state has zero availability.
+
+Q 10 | thm | Thermodynamics
+Calculate the enthalpy of 25 kg of fluid that occupies a volume of 12000 litre, if the internal energy is 28000000 J /kg and the pressure is 0.3 MN/m²
+= 703.6 MJ
+~ Enthalpy H = U + pV. The internal energy U = 25 kg × 28,000,000 J/kg = 700 MJ. The volume is 12,000 litres = 12 m³, so pV = 0.3 × 10⁶ N/m² × 12 m³ = 3.6 MJ. Therefore H = 700 + 3.6 = 703.6 MJ, and the specific enthalpy is 703.6/25 = 28.144 MJ/kg.
+
+Q 11 | ice | Engine Fundamentals & Cycles
+The process of cleaning the cylinder, after the expansion stroke, is called
+= Scavenging
+~ Scavenging is the clearing of burnt exhaust gases from the cylinder at the end of the expansion stroke and their replacement by fresh charge (air or air-fuel mixture). It is essential in two-stroke engines, where the incoming charge from the crankcase or a blower pushes the exhaust out through the ports (cross, loop or uniflow scavenging); in four-stroke engines the valve overlap gives a similar effect.
+
+Q 12 | ice | Fuel Supply & Combustion
+Which of the following is an advantage of a compression swirl?
+= All of the given options
+~ Compression swirl is produced in indirect-injection diesel engines (for example the Ricardo Comet swirl chamber) when air is forced through a tangential passage into the chamber during compression. Advantages given in textbooks include a very strong, organised swirl for rapid mixing and combustion, suitability for high speeds, a low injection pressure with a single-hole (pintle) nozzle, smoother running and no loss of volumetric efficiency, unlike intake-generated swirl; the answer means every option listed was such an advantage. Its drawbacks are higher heat loss, poor cold starting (glow plugs needed) and higher fuel consumption.
+
+Q 13 | ice | Fuel Supply & Combustion
+In a 4- stroke compression ignition (CI), the fuel is injected about
+= 15° before top dead centre
+~ In a four-stroke CI engine, fuel injection begins towards the end of the compression stroke, typically about 10–20° of crank angle (commonly quoted as 15°) before TDC, so that the ignition delay is over and combustion begins near TDC; injection continues a little past TDC. Injecting too early lengthens the delay and causes diesel knock, while injecting too late reduces power and increases smoke and fuel consumption.
+
+Q 14 | ice | Fuels, Lubricants & Emissions
+A cetane number of C₁₀H₇CH₃is __________
+= 0
+~ Cetane number rates the ignition quality of diesel fuel against two reference fuels: n-cetane (n-hexadecane, C₁₆H₃₄), given 100, and alpha-methylnaphthalene (C₁₀H₇CH₃), an aromatic with very poor self-ignition, given 0. A fuel's cetane number is the percentage of cetane in the reference blend that matches it in a standard engine. In the current ASTM D613 test, heptamethylnonane (cetane number 15) has replaced alpha-methylnaphthalene as the low-reference fuel.
+
+Q 15 | ice | Fuel Supply & Combustion
+In S.I. engine, Raising the coolant temperature__________
+= Decreases delay period
+~ Ignition delay (lag) in an SI engine is the time from the spark to a noticeable pressure rise, and it is shortened by a higher charge temperature. Raising the coolant temperature keeps the cylinder walls hotter, so the charge is hotter at the time of the spark and the delay period decreases; the same effect increases the knock tendency. A higher compression ratio and a slightly rich mixture also shorten the delay.
+
+Q 16 | ice | Engine Fundamentals & Cycles
+The ratio of the actual volume of gas taken into the cylinder during suction stroke to the piston displacement volume is called
+= Volumetric efficiency
+~ Volumetric efficiency is the actual volume of charge drawn in during the suction stroke (measured at ambient or reference conditions) divided by the swept (piston displacement) volume. It is below 1 in naturally aspirated engines, typically about 70–90%, because of intake restrictions, heating of the charge and residual exhaust gas, and can exceed 1 with supercharging or turbocharging. It largely decides the power an engine of a given size can produce.
+
+Q 17 | ice | Engine Fundamentals & Cycles
+Morse test is used to calculate __________
+= Brake Power
+~ The Morse test is used on multi-cylinder engines. With the engine at constant speed, each cylinder is cut out in turn, the dynamometer load is reduced to restore the speed, and the brake power is measured each time. The indicated power of the cut cylinder = BP with all cylinders firing − BP with that cylinder cut; their sum gives the engine's IP, and hence friction power (IP − BP) and mechanical efficiency. Brake power is what the test measures, but most texts say it is used to find indicated power. (Official final key; some sources differ.)
+
+Q 18 | ice | Fuel Supply & Combustion
+__________ is not an integral part of a carburettor
+= Fuel Pump
+~ A carburettor meters petrol and mixes it with air. Its integral parts include the float chamber with float and needle valve, the venturi (choke tube), the main jet and discharge nozzle, the idling and accelerating systems, the choke valve and the throttle valve. The fuel pump (mechanical, driven from the camshaft, or electric) is a separate unit of the fuel supply system that lifts petrol from the tank to the float chamber.
+
+Q 19 | ice | Engine Fundamentals & Cycles
+Usually crankcase is made of -------
+= both Aluminium and Cast iron
+~ The crankcase houses the crankshaft and forms the oil sump; in most engines its upper part is cast in one piece with the cylinder block. Grey cast iron, cheap, rigid and wear-resistant, is the traditional material and is still used in heavy commercial-vehicle engines, while aluminium alloy is used in most modern car and two-wheeler engines to save weight and dissipate heat better. The lower oil pan is often pressed steel.
+
+Q 20 | ice | Engine Fundamentals & Cycles
+Inside a cylinder, dissociation is __________ temperature.
+= Increases with
+~ Dissociation is the breaking up of combustion products at high temperature, mainly CO₂ ⇌ CO + ½O₂ and H₂O ⇌ H₂ + ½O₂. These reactions absorb heat, so dissociation increases with temperature and becomes significant at the peak cylinder temperatures reached with near-stoichiometric mixtures. It lowers the maximum temperature and pressure and hence the work and efficiency of the cycle. Higher pressure suppresses it, because dissociation increases the number of moles.
+
+Q 21 | mec | Theory of Machines
+__________ is used to connect non-intersecting and non-parallel shafts
+= Spiral gears
+~ Shafts that neither intersect nor are parallel (skew shafts) are connected by spiral gears, that is, crossed helical gears, which have point contact and suit light loads such as an oil-pump or distributor drive taken off the camshaft. Worm and worm-wheel and hypoid gears also connect skew shafts. Parallel shafts use spur or helical gears, and intersecting shafts use bevel gears.
+
+Q 22 | mec | Machine Design
+__________ is the advantage of gear drive as compared to belt, rope and chain drives
+= All of the given options
+~ Compared with belt, rope and chain drives, a gear drive transmits an exact (positive) velocity ratio without slip, can transmit large power, suits small centre distances with a compact layout, has high efficiency and gives reliable service; the key's "All of the given options" means the choices listed were such advantages. Its drawbacks are higher cost, the need for precise manufacture and proper lubrication, and noise or vibration if the teeth are cut inaccurately.
+
+Q 23 | mec | Theory of Machines
+The diametral pitch of a gear is given by,
+Where, D=Pitch circle diameter T= Number of teeth,
+= T/D
+~ Diametral pitch is the number of teeth per unit length of pitch-circle diameter: Pd = T/D (teeth per inch in the British system). It is the reciprocal of the module m = D/T (in mm), and the circular pitch is pc = πD/T, so pc × Pd = π. Two gears can mesh only if they have the same diametral pitch (or module).
+
+Q 24 | mec | Theory of Machines
+Contact ratio is known as __________
+= Length of arc of contact / the circular pitch of a gear
+~ Contact ratio = length of the arc of contact ÷ circular pitch; it equals the average number of pairs of teeth in contact. It must be greater than 1 so that a new pair of teeth engages before the previous pair separates, giving smooth, continuous transmission, and designers normally keep it well above 1. A higher contact ratio shares the load between more teeth and reduces noise.
+
+Q 25 | mec | Theory of Machines
+Mitre gears are used for
+= equal speed
+~ Mitre gears are bevel gears of equal size (the same number of teeth) connecting two intersecting shafts at right angles. With equal teeth the speed ratio is 1:1, so they turn the drive through 90° without changing the speed. Bevel gears of unequal size are used when a change of speed is also wanted, as in the crown wheel and pinion of a vehicle's final drive.
+
+Q 26 | mec | Theory of Machines
+In worm and wheel, the shaft axes are
+= Perpendicular to each other
+~ In a worm and worm-wheel drive the shafts do not intersect, and their axes are normally at right angles (perpendicular) in different planes. A single-start worm advances the wheel by one tooth per revolution, so a high reduction ratio is obtained in one stage and the drive can be self-locking. Automobile uses include worm-type steering gears and worm-drive rear axles.
+
+Q 27 | mec | Theory of Machines
+The number of teeth on each of the two equal spur gears in mesh are 35 and the module is 6 mm then, __________ is the circular pitch.
+= 18.8
+~ Circular pitch pc = πD/T = π × module. With m = 6 mm, pc = π × 6 = 18.85 mm (the key prints 18.8 mm). The number of teeth is not needed for the circular pitch; it gives each gear's pitch-circle diameter, D = mT = 6 × 35 = 210 mm, so the centre distance of the two equal gears is also 210 mm.
+
+Q 28 | ice | Fuels, Lubricants & Emissions
+The following is the chemical formula of is o-octane
+= C₈H₁₈
+~ The question means iso-octane (printed "is o-octane"). Iso-octane is 2,2,4-trimethylpentane, an isomer of octane with the alkane formula CₙH₂ₙ₊₂, i.e. C₈H₁₈. It has excellent anti-knock quality and is given octane number 100, while normal heptane (C₇H₁₆) is given 0; a petrol's octane number is the percentage of iso-octane in the iso-octane–heptane blend that knocks like it.
+
+Q 29 | mec | Engineering Mechanics
+Fluid friction between two lubricated surfaces are due to
+= Viscosity and Oiliness
+~ Friction between lubricated surfaces depends on the film. With a thick film the surfaces are fully separated and the resistance comes from shearing the oil, so it depends on its viscosity (fluid or hydrodynamic friction). When the film becomes thin (boundary lubrication), friction depends on oiliness, the oil's ability to cling to the metal and form an adsorbed layer. The key takes both properties together.
+
+Q 30 | mec | Engineering Mechanics
+Coefficient of Friction is,__________
+= limiting friction (F) / Normal reaction (R_N) between the two bodies
+~ The coefficient of friction μ = F/R_N is the ratio of the limiting force of friction (the maximum friction, just before sliding begins) to the normal reaction between the surfaces. It also equals tan φ, where φ is the angle of friction between the resultant reaction and the normal. It depends on the materials and the condition of the surfaces, not on the area of contact.
+
+Q 31 | mec | Machine Design
+Nominal diameter and core diameter of the screw thread is denoted by d₀ and dc respectively, then the mean diameter of the screw is given by __________
+= (d0 + dc)/2
+~ For a screw thread with nominal (major) diameter d₀ and core (minor) diameter dc, the mean diameter is their average, d = (d₀ + dc)/2. For a square thread of pitch p, dc = d₀ − p, so d = d₀ − p/2. The mean diameter is used to find the helix angle (tan α = p/πd) and the effort and torque in screw-jack and power-screw calculations.
+
+Q 32 | mec | Theory of Machines
+In a screw jack, the effort required to lift the load S is __________
+Where, A = Helix angle, and B = Angle of friction
+= P = S tan (A+ B)
+~ Lifting a load with a screw jack is like pushing it up an inclined plane whose angle is the helix angle α. With friction angle φ (tan φ = μ), the effort applied horizontally at the mean radius of the screw is P = W tan(α + φ), written here as P = S tan(A + B). For lowering, P = W tan(φ − α), and the efficiency is tan α/tan(α + φ), neglecting collar friction.
+
+Q 33 | mec | Machine Design
+The capacity of a brake depends upon __________
+= All of the given options
+~ The capacity of a brake, the rate at which it can absorb energy, depends on the unit pressure between the braking surfaces, the coefficient of friction between them, the peripheral speed of the brake drum, the projected area of the friction surfaces, and the ability of the braking surfaces to dissipate the heat produced. The key's "All of the given options" means the choices listed were such factors.
+
+Q 34 | chs | Brakes
+A vehicle’s brake efficiency is affected by
+= Both Vehicle weight and braking effort
+~ Brake efficiency is the retarding (braking) force produced, expressed as a percentage of the vehicle's weight: η = (F/W) × 100, which also equals (deceleration/g) × 100. It is therefore affected both by the vehicle weight, including its load, and by the braking effort developed at the wheels; a deceleration of 0.5 g, for instance, means 50% brake efficiency. APPSC's revised key confirms this answer.
+
+Q 35 | ice | Engine Fundamentals & Cycles
+The Indicated power of an engine is __________ the brake power
+= >
+~ Indicated power is the power developed by the gases on the pistons, while brake power is the power delivered at the crankshaft. Part of the IP is used to overcome friction and drive the accessories (friction power), so IP = BP + FP and IP is greater than BP. Mechanical efficiency ηm = BP/IP, typically about 80–90% at full load.
+
+Q 36 | ice | Engine Fundamentals & Cycles
+Petrol car engine has four cylinders of 75 mm bore and 85 mm stroke with 8 compression ratios, __________ is the cubic capacity of the engine
+= 376
+~ The swept volume of one cylinder = (π/4)d²L = (π/4) × 7.5² × 8.5 = 375.5 cm³ ≈ 376 cc, the key's answer. The compression ratio is not needed; it gives the clearance volume, 375.5/7 ≈ 53.6 cc per cylinder. The cubic capacity of the whole four-cylinder engine is 4 × 375.5 ≈ 1502 cc (1.5 litres), so the key's 376 cc is really the capacity of one cylinder. (Official final key; some sources differ.)
+
+Q 37 | ice | Fuels, Lubricants & Emissions
+The calorific value of diesel is about
+= 42.5 MJ/kg
+~ Diesel (high-speed diesel) has a lower (net) calorific value of about 42.5–43 MJ/kg and a higher (gross) value of about 45.5 MJ/kg; petrol's net value is about 44 MJ/kg. The usual figure in IC engine problems is about 42–43 MJ/kg, matching the key. Per litre, diesel gives more energy than petrol because of its higher density (about 0.83 kg/L).
+
+Q 38 | ice | Engine Fundamentals & Cycles
+4 cylinder in-line engine has a __________ firing order
+= 1-3-4-2
+~ In a four-cylinder in-line engine the crank throws of cylinders 1 and 4 are at 180° to those of cylinders 2 and 3, so one cylinder fires every 180° of crank rotation. The possible firing orders are 1-3-4-2 (the most common) and 1-2-4-3. Both avoid firing adjacent cylinders one after the other, giving better balance and spreading the load on the main bearings.
+
+Q 39 | thm | Thermodynamics
+__________is known as entropy principle
+= Second law of thermodynamics
+~ The second law of thermodynamics leads to the principle of increase of entropy: the entropy of an isolated system (system plus surroundings) can never decrease. It increases in every real (irreversible) process and stays constant only in a reversible one (ΔS_isolated ≥ 0). The principle follows from the Clausius inequality, ∮δQ/T ≤ 0, and fixes the direction in which natural processes occur.
+
+Q 40 | ice | Fuels, Lubricants & Emissions
+The specific gravity of the engine lube oils varies between __________
+= 0.85 to 0.96
+~ The specific gravity (relative density) of mineral engine lubricating oils usually lies between about 0.85 and 0.96, depending on the crude source and viscosity grade: paraffinic oils are lighter and naphthenic oils heavier. It is measured with a hydrometer (often reported as API gravity) and serves as a quality-control check rather than a measure of lubricating performance, which depends mainly on viscosity, viscosity index and additives.
+
+Q 41 | ice | Engine Fundamentals & Cycles
+__________ torque is required to produce 500 HP at 3000 rpm
+= 1187 N-m
+~ Power P = 2πNT/60, so T = 60P/(2πN). With 1 HP ≈ 746 W, 500 HP = 373 kW and T = 60 × 373,000/(2π × 3000) ≈ 1187 N·m. Using the metric horsepower (735.5 W) would give about 1171 N·m, so the key uses the British horsepower.
+
+Q 42 | ice | Fuels, Lubricants & Emissions
+In a vehicle, Permeation through the walls of plastics tanks is controlled by __________
+= All of the given options
+~ Plastic (high-density polyethylene) fuel tanks let hydrocarbons diffuse slowly through their walls, a source of evaporative emissions. Permeation is controlled by treating the tank surface, for example by fluorination or sulfonation, or by co-extruded multilayer walls with a barrier layer (usually EVOH) between polyethylene layers, together with low-permeation hoses and seals. The key's "All of the given options" means every choice listed was such a control method.
+
+Q 43 | ice | Fuels, Lubricants & Emissions
+Diesel NOₓ is __________ with cetane number and __________ as aromatic content is lowered
+= increases, decreases
+~ Diesel NOₓ comes from high flame temperatures. Lowering the aromatic content lowers the flame temperature and hence NOₓ, which matches the key's second blank. A higher cetane number shortens the ignition delay, so less fuel burns in the rapid premixed phase; fuel-effect studies generally find NOₓ slightly lower, not higher, with higher cetane, though the effect is small in modern engines, so the key's first blank is doubtful. (Official final key; some sources differ.)
+
+Q 44 | ice | Fuel Supply & Combustion
+__________ (TBFI) are a substitution of electromechanical replacement for the carburettor
+= Throttle Body Fuel Injector
+~ Throttle body fuel injection (TBFI or TBI, a single-point system) replaced the carburettor with one or two electronically controlled solenoid injectors mounted in a throttle body above the throttle valve. The ECU sets the injector opening time from sensor signals, giving more precise mixture control than a carburettor. It was later superseded by multi-point (port) and direct injection, which were needed to meet stricter emission norms.
+
+Q 45 | ice | Fuels, Lubricants & Emissions
+Complete a catalytic reaction: NO + CO = __________ + CO₂
+= ½ N₂
+~ In a three-way catalytic converter, rhodium promotes the reduction of NO by CO: NO + CO → ½N₂ + CO₂ (or 2NO + 2CO → N₂ + 2CO₂). The equation balances: the single nitrogen atom gives ½N₂, and the two oxygen atoms end up in CO₂. Platinum and palladium mainly oxidise CO and HC, and all three reactions need an air-fuel ratio close to stoichiometric (λ ≈ 1).
+
+Q 46 | ice | Fuels, Lubricants & Emissions
+Which of the following material is not used in three way catalytic converter as a catalyst?
+= Iron
+~ A three-way catalytic converter uses precious (noble) metals as catalysts: platinum and palladium to oxidise CO and HC, and rhodium to reduce NOₓ. They are coated on an alumina wash-coat containing ceria for oxygen storage, carried on a ceramic (cordierite) or metal honeycomb. Iron is not used as the catalyst; it appears only in the steel shell and in some metal substrates.
+
+Q 47 | ice | Fuels, Lubricants & Emissions
+__________ is used to control the particulates from a diesel engine
+= Diesel Particulate Filter
+~ A diesel particulate filter (DPF), usually a wall-flow ceramic (cordierite or silicon carbide) honeycomb with alternately plugged channels, traps the soot particles in diesel exhaust and removes over 90% of the particulate mass. The trapped soot is burnt off periodically (regeneration) by raising the exhaust temperature or with the help of a catalyst. Since BS-VI emission norms came into force on 1 April 2020, DPFs have become standard on Indian diesel vehicles.
+
+Q 48 | thm | Thermodynamics
+An Isobaric process is a
+= Constant pressure process
+~ An isobaric process takes place at constant pressure (Greek isos, equal, and baros, weight). For an ideal gas V/T stays constant (Charles's law), the work done is W = p(V₂ − V₁), and the heat supplied Q = mcp(T₂ − T₁) equals the change in enthalpy. Isochoric means constant volume, isothermal constant temperature and isentropic constant entropy (reversible adiabatic).
+
+Q 49 | mec | Strength of Materials
+1 MPa (Mega Pascal): __________ N/mm²
+= 1 ×10^0
+~ 1 MPa = 10⁶ Pa = 10⁶ N/m². Since 1 m² = 10⁶ mm², 10⁶ N/m² = 10⁶ N ÷ 10⁶ mm² = 1 N/mm², i.e. 1 × 10⁰ N/mm². That is why stresses and pressures in machine design are quoted interchangeably in MPa or N/mm²; for example, a yield stress of 250 MPa is 250 N/mm².
+
+Q 50 | mec | Strength of Materials
+__________ is correct expression for Poisson’s ratio
+= Lateral strain / Longitudinal strain
+~ Poisson's ratio (μ or ν) is the ratio of lateral strain to longitudinal (linear) strain within the elastic limit, taken as a positive number because the two strains have opposite signs. It is about 0.25–0.33 for most metals (about 0.3 for steel) and cannot exceed 0.5 for an isotropic material. It links the elastic constants, for example E = 2G(1 + μ).
+
+Q 51 | mec | Strength of Materials
+Hook’s law holds good up to
+= Elastic Limit
+~ Hooke's law states that, within the elastic limit, stress is directly proportional to strain (σ = Eε, E being Young's modulus). Strictly, proportionality holds up to the limit of proportionality, which for most metals lies very close to (just below) the elastic limit, so textbooks usually say Hooke's law holds good up to the elastic limit. Beyond it the material no longer returns fully to its original shape.
+
+Q 52 | mec | Strength of Materials
+Normal Strain may be
+= All of the given options
+~ Normal strain is the change in length per unit original length (ε = δL/L) produced by a normal (direct) stress acting perpendicular to a section. It may be tensile strain (increase in length) or compressive strain (decrease in length), and it occurs both as longitudinal strain along the load and as lateral strain across it. The key's "All of the given options" means every choice listed (not printed in the key) was a valid kind of normal strain.
+
+Q 53 | thm | Thermodynamics
+Which of the following property is dependent on a mass of a thermodynamic
+system?
+= Volume
+~ Properties that depend on the mass (size) of a system are extensive properties, such as volume, total energy, internal energy, enthalpy and entropy. Properties independent of mass, such as pressure, temperature and density, are intensive. Dividing an extensive property by the mass gives a specific (intensive) property, e.g. specific volume v = V/m. Volume is therefore the mass-dependent property.
+
+Q 54 | thm | Thermodynamics
+Law: “The change of internal energy of a perfect gas is directly proportional to the
+change of temperature” is known as
+= Joule’s law
+~ Joule's law states that the internal energy of a perfect gas is a function of temperature only, so its change is directly proportional to the change of temperature: dU = m·Cv·dT. Joule showed this with his free-expansion experiment, in which a gas expanding into a vacuum showed no change of temperature, so internal energy does not depend on pressure or volume.
+
+Q 55 | thm | Thermodynamics
+Which of the following is the correct expression to corelate gas constant (R) and
+constant volume specific heat (CV)?
+= γ = 1 + R/CV
+~ For a perfect gas the gas constant is the difference of the specific heats, R = Cp − Cv, and the ratio of specific heats is γ = Cp/Cv. Dividing R = Cp − Cv by Cv gives R/Cv = γ − 1, i.e. γ = 1 + R/Cv, or Cv = R/(γ − 1). For air, R = 0.287 kJ/kg K and Cv = 0.718 kJ/kg K, giving γ ≈ 1.4.
+
+Q 56 | thm | Thermodynamics
+Efficiency of a cycle is considered as
+= Workdone / Heat Supplied
+~ The efficiency of a heat-engine cycle (thermal efficiency) is the ratio of the net work done to the heat supplied: η = W/Q₁ = (Q₁ − Q₂)/Q₁, where Q₂ is the heat rejected. Because some heat must always be rejected (second law), the efficiency of any cycle is less than 1; the Carnot cycle gives the highest possible value between two temperatures, 1 − T₂/T₁.
+
+Q 57 | ice | Engine Fundamentals & Cycles
+The volumetric efficiency of the SI engine is comparatively
+= Lower than CI engine
+~ Volumetric efficiency is the ratio of the charge actually drawn in to the swept volume at intake conditions. In an SI engine the throttle valve restricts the intake, the carburettor venturi adds resistance and the mixture is often preheated, so less charge enters; an unthrottled CI engine draws in air only, through less restriction. Hence the volumetric efficiency of an SI engine is generally lower than that of a CI engine.
+
+Q 58 | ice | Engine Fundamentals & Cycles
+Working cycle of a 4- stroke engine is complete in
+= Two revolution of the crankshaft
+~ In a four-stroke engine the four strokes (suction, compression, power and exhaust) each take half a revolution, so one working cycle is completed in two revolutions (720°) of the crankshaft, with one power stroke per cylinder every two revolutions; the camshaft therefore runs at half crankshaft speed. A two-stroke engine completes its cycle in one revolution.
+
+Q 59 | ice | Fuel Supply & Combustion
+Stoichiometric fuel- air ratio of a gasoline is
+= 1: 15
+~ The chemically correct (stoichiometric) mixture for gasoline is about 14.7 kg of air per kg of fuel, i.e. a fuel-air ratio of roughly 1:15 (about 0.068). Mixtures richer than this have excess fuel (more CO and HC); leaner ones have excess air. Three-way catalytic converters work best when the engine is held close to this stoichiometric ratio.
+
+Q 60 | mfg | Engineering Materials
+Which of the following is not a types of cast iron?
+= Permanent cast iron
+~ The recognised types of cast iron are grey, white, malleable, nodular (spheroidal-graphite or ductile), mottled, chilled and alloy cast irons. There is no "permanent cast iron"; the word belongs to permanent-mould casting, a casting process that uses a reusable metal mould. Grey cast iron, with its flake graphite, is the most widely used type, for example for engine cylinder blocks.
+
+Q 61 | mfg | Engineering Materials
+__________ has a maximum ductility
+= Copper
+~ Ductility is the ability of a material to be drawn into wires, undergoing large plastic deformation in tension without breaking. Copper is highly ductile, which is why it is drawn into fine electrical wires; precious metals such as gold, silver and platinum are even more ductile. Brittle materials such as cast iron have very low ductility.
+
+Q 62 | mfg | Engineering Materials
+Medium carbon steel is used to make
+= Crankshafts
+~ Medium carbon steel (about 0.3–0.6% carbon) combines strength, toughness and wear resistance and responds well to heat treatment. It is used for crankshafts, connecting rods, axles, gears, shafts and forgings. Low (mild) carbon steel is used for body panels, sheets and wires, while high carbon steel (above about 0.6% carbon) is used for springs, cutting tools and dies.
+
+Q 63 | mfg | Engineering Materials
+__________ property is necessary in stamping images on coins
+= Plasticity
+~ Coining (stamping images on coins) is a cold, closed-die squeezing operation in which the metal must flow into the fine details of the die and keep the new shape permanently. This requires plasticity, the property of a material to undergo permanent deformation without fracture. The related properties malleability and ductility describe plasticity under compression and under tension respectively.
+
+Q 64 | mfg | Engineering Materials
+__________ is a measure of the ability of a material to absorb energy up to
+fracture
+= Toughness
+~ Toughness is the ability of a material to absorb energy, by elastic and plastic deformation, before it fractures; it is given by the total area under the stress-strain curve and is measured by impact tests such as Izod and Charpy. Resilience, by contrast, is the energy absorbed only up to the elastic limit. Tough materials such as mild steel resist shock loads well.
+
+Q 65 | ice | Fuel Supply & Combustion
+Carburettor is commonly used in
+= Spark Ignition (S.I.)
+~ A carburettor meters and atomises petrol into the incoming air to give a combustible air-fuel mixture, which is then ignited by a spark plug, so it is used in spark ignition (petrol) engines. Compression ignition (diesel) engines draw in air only and inject the fuel through a fuel injection pump and injectors. Modern petrol vehicles mostly use electronic fuel injection instead of carburettors.
+
+Q 66 | ice | Engine Fundamentals & Cycles
+The end of the connecting rod is attached to the piston using
+= Wrist pin and Piston pin
+~ The small end of the connecting rod is joined to the piston by the gudgeon pin, also called the wrist pin or piston pin: three names for the same hardened steel pin passing through the piston bosses. It lets the connecting rod swing as the crank turns. The big end of the connecting rod is attached to the crankpin of the crankshaft.
+
+Q 67 | chs | Steering & Suspension
+__________ is the angle between the vertical axis of the wheels used for steering
+and the vertical axis of the vehicle when viewed from the front or rear.
+= Camber Angle
+~ The definition given is that of camber: the inward or outward tilt of the wheel from the vertical when viewed from the front or rear. Outward tilt at the top is positive camber and inward tilt is negative camber; it is kept small. Correct camber helps easy steering and even tyre wear, while excessive camber wears one shoulder of the tyre.
+
+Q 68 | chs | Wheels & Tyres
+For a Tyre designation- P265/70 R17, 265 stands for
+= Section width
+~ In the P-metric designation P265/70 R17, P means a passenger-car tyre, 265 is the section width (sidewall to sidewall) in millimetres, 70 is the aspect ratio (section height is 70% of the width, about 185.5 mm), R denotes radial construction and 17 is the rim diameter in inches.
+
+Q 69 | chs | Wheels & Tyres
+Tyre provides a cushion between
+= Vehicle and road
+~ The pneumatic tyre is the only part of the vehicle in contact with the road. Its compressed air and flexible rubber casing act as a cushion between the vehicle and the road, absorbing small road shocks and vibrations before they reach the suspension. The tyre also carries the vehicle load and provides the grip needed for traction, braking and steering.
+
+Q 70 | chs | Wheels & Tyres
+Which of the following is a type of tyre tread designs?
+= All of the given options
+~ Tyre treads are moulded in several standard patterns: rib (circumferential grooves), lug (lateral grooves), rib-lug and block patterns, and, by layout, symmetric, asymmetric and directional (unidirectional) treads. Since the key accepts every option, the options, not printed in the key, must all have been such recognised tread designs. Tread grooves expel water, give grip and reduce the risk of aquaplaning.
+
+Q 71 | chs | Wheels & Tyres
+The carbon black is added to the rubber during tyre construction to
+= Increase strength and Increase Toughness
+~ Carbon black is a reinforcing filler mixed with natural or synthetic rubber in tyre compounds. It greatly increases the tensile strength, toughness and abrasion (wear) resistance of the tread, helps conduct heat away and protects the rubber from ultraviolet light, which is also why tyres are black. Sulphur, by contrast, is added for vulcanisation.
+
+Q 72 | ice | Fuels, Lubricants & Emissions
+Incomplete combustion is responsible for
+= Unburned Hydrocarbon
+~ When fuel does not burn completely, through lack of oxygen, poor mixing or flame quenching at the cool cylinder walls and crevices, part of it leaves the engine unburned, giving unburned hydrocarbon (HC) emissions; partial oxidation also produces carbon monoxide. NOx, by contrast, comes from high combustion temperatures and is highest when combustion is complete and hot.
+
+Q 73 | ael | Batteries & Charging
+For a Lead acid battery: PbO₂ + Pb + 2H₂SO₄ = _________ + 2H₂O
+= 2PbSO₄
+~ During discharge of a lead-acid battery, the lead peroxide (PbO₂) of the positive plate and the spongy lead (Pb) of the negative plate both react with sulphuric acid to form lead sulphate: PbO₂ + Pb + 2H₂SO₄ → 2PbSO₄ + 2H₂O. As water forms, the specific gravity of the electrolyte falls; charging reverses the reaction.
+
+Q 74 | ice | Fuels, Lubricants & Emissions
+Which of the following is a not a Diesel smoke?
+= Green smoke
+~ Diesel exhaust smoke is classified by colour: black smoke (carbon soot from overloading, a rich mixture or poor injection), blue smoke (burning lubricating oil passing worn rings or valve guides) and white smoke (unburned fuel droplets or water vapour, typically at cold starts or with coolant leaks). Green is not a type of diesel smoke.
+
+Q 75 | ice | Fuels, Lubricants & Emissions
+Researcher wants to decrease a NOx in SI engine then, Air fuel ratio is
+= < 13:1 and >17:1
+~ NOx formation needs a high combustion temperature together with available oxygen, so it peaks with mixtures slightly leaner than stoichiometric (around 16:1). A rich mixture (below about 13:1) has too little oxygen, and a very lean mixture (above about 17:1) burns at a lower temperature, so both reduce NOx. Rich mixtures, however, increase CO and HC emissions.
+
+Q 76 | ice | Fuels, Lubricants & Emissions
+Commonly, source of pollutants from a vehicle is
+= All of the given options
+~ A petrol vehicle emits pollutants from three main sources: the exhaust (tailpipe) gases, carrying CO, HC, NOx and particulates; crankcase blow-by gases escaping past the piston rings; and evaporative losses of fuel vapour from the fuel tank and carburettor. The options, not printed in the key, must have listed such sources. A PCV valve and a charcoal canister control the last two.
+
+Q 77 | ice | Fuels, Lubricants & Emissions
+The inherent oxygen content in gasoline is
+= 0 %
+~ Petrol (gasoline) is a blend of hydrocarbons, compounds of carbon and hydrogen only, so pure gasoline has no inherent oxygen (0%); all the oxygen for combustion comes from the air. Oxygen is present only when oxygenates are blended in, such as ethanol (in E10 or E20 petrol) or MTBE. Alcohols and biodiesel, by contrast, contain oxygen in their molecules.
+
+Q 78 | thm | Thermodynamics
+Match list I with List II and select the correct answer according to it.
+List I | List II
+a. Two constant volumes and two adiabatics | P Ericsson
+b. Two constant pressure and two adiabatics | Q Stirling
+c. Two constant volumes and two isothermals | R Joule
+d. Two constant pressures and two isothermal | S Otto
+= a-S, b-R, c-Q, d-P
+~ The Otto cycle has two adiabatic (isentropic) and two constant-volume processes (a-S). The Joule or Brayton cycle has two adiabatics and two constant-pressure processes (b-R). The Stirling cycle has two isothermals and two constant-volume processes, with regeneration (c-Q). The Ericsson cycle has two isothermals and two constant-pressure processes, also with regeneration (d-P). With ideal regeneration, Stirling and Ericsson reach the Carnot efficiency.
+
+Q 79 | thm | Thermodynamics
+Thermometer works on
+= Zeroth law of thermodynamics
+~ A thermometer works on the zeroth law of thermodynamics: if two bodies are each in thermal equilibrium with a third body, they are in thermal equilibrium with each other. The thermometer is the third body; once it reaches equilibrium with the object, its reading gives the object's temperature. This law is the basis of all temperature measurement.
+
+Q 80 | ice | Engine Fundamentals & Cycles
+For same maximum pressure and output, which of the following sequence of cycle
+is correct?
+= Diesel cycle, Dual cycle, Otto cycle
+~ The sequence is in decreasing order of efficiency. When cycles are compared for the same maximum pressure (and temperature), the Otto cycle must use a much lower compression ratio than the Diesel cycle to keep within that peak pressure, so its efficiency is the lowest: η Diesel > η Dual > η Otto. For the same compression ratio and heat input the order reverses: Otto > Dual > Diesel.
+
+Q 81 | thm | Thermodynamics
+Which of the following parameter changes during throttling process?
+= Pressure
+~ Throttling is the expansion of a fluid through a restriction, such as a partly open valve or a porous plug, with no work and negligible heat transfer. The pressure drops considerably while the enthalpy remains constant (h₁ = h₂), so it is an isenthalpic, irreversible process. For a perfect gas the temperature stays constant; for real gases and vapours it changes (Joule-Thomson effect).
+
+Q 82 | thm | Thermodynamics
+1 Kcal = __________
+= 4.184 KJ
+~ One kilocalorie is the heat needed to raise the temperature of 1 kg of water by 1 °C, which equals about 4.18 kJ: 4.184 kJ for the thermochemical calorie and 4.1868 kJ for the International Table calorie. Conversely, 1 kJ ≈ 0.239 kcal. This is the mechanical equivalent of heat (about 4.18 kJ/kcal, or 427 kgf·m per kcal).
+
+Q 83 | thm | Thermodynamics
+The term N.T.P stands for
+= Normal Temperature and Pressure
+~ N.T.P. stands for Normal Temperature and Pressure, a reference condition for stating gas volumes. Engineering textbooks usually take it as 0 °C (273 K) and 760 mm of mercury (1.013 bar), though some standards, such as NIST's, use 20 °C and 1 atm. It is distinct from S.T.P. (standard temperature and pressure), which different bodies define differently.
+
+Q 84 | thm | Thermodynamics
+Work is called a __________ and Heat is called a __________
+= Path functions, Path functions
+~ Work and heat are both path functions: their values depend on the process (path) followed between two states, not only on the end states, so they are inexact differentials (δW, δQ) and not properties of a system. Point (state) functions such as pressure, temperature, internal energy and enthalpy depend only on the state. The work done equals the area under the p-V curve of the path.
+
+Q 85 | thm | Thermodynamics
+The equation (p + (a/v²)) (v-b) = R is known as
+= Van der Waal’s equation
+~ Van der Waals' equation of state for a real gas is (p + a/v²)(v − b) = RT, where a/v² corrects for intermolecular attraction and b for the finite volume of the molecules. The paper prints "= R", omitting T; the right-hand side should be RT. At low pressure and high temperature the equation approaches the ideal gas law pv = RT.
+
+Q 86 | thm | Thermodynamics
+Carnot cycle is a hypothetical cycle in which all cycles are
+= Reversible
+~ The Carnot cycle is an ideal, hypothetical cycle of two reversible isothermal and two reversible adiabatic (isentropic) processes; the paper's "all cycles" means all processes. Because every process is reversible, it has the highest efficiency possible between two temperatures, η = 1 − T₂/T₁, but it cannot be realised in practice because of friction, heat transfer across finite temperature differences and the very slow isothermal processes it would need.
+
+Q 87 | thm | Thermodynamics
+Efficiency of a Carnot engine with T₁ = 200 °C, T₂ = 30 °C is
+= 36 %
+~ Carnot efficiency uses absolute temperatures: T₁ = 200 + 273 = 473 K and T₂ = 30 + 273 = 303 K. η = 1 − T₂/T₁ = 1 − 303/473 = 0.359, i.e. about 36%. Using the Celsius values directly (1 − 30/200 = 85%) is a common mistake. The efficiency depends only on the two reservoir temperatures, not on the working substance.
+
+Q 88 | thm | Thermodynamics
+Brayton cycle is used in?
+= Gas turbines
+~ The Brayton (Joule) cycle, with two isentropic and two constant-pressure processes, is the ideal cycle for gas turbines: air is compressed in a compressor, heated at constant pressure in the combustion chamber, expanded through the turbine and exhausted at constant pressure. It is used in jet engines and gas turbine power plants; its efficiency is η = 1 − 1/rp^((γ−1)/γ), where rp is the pressure ratio.
+
+Q 89 | ice | Engine Fundamentals & Cycles
+In a four stroke SI engine --------- is compressed.
+= Air and Fuel
+~ In a four-stroke SI (petrol) engine with a carburettor or port fuel injection, a mixture of air and fuel is drawn in during the suction stroke and compressed during the compression stroke, to a moderate ratio limited by knocking, and is then ignited by the spark plug. In a CI (diesel) engine only air is compressed, to a much higher ratio, and fuel is injected at the end of compression.
+
+Q 90 | ice | Fuel Supply & Combustion
+Incomplete combustion is a result of?
+= Cool metal surfaces of the combustion chamber and Imperfect mixture ratio
+~ Combustion is incomplete when the flame is quenched near the cool metal surfaces of the combustion chamber and in crevices, leaving a layer of unburned mixture, and when the air-fuel ratio is wrong or the mixture is poorly mixed: a rich mixture lacks oxygen and a very lean one burns poorly or misfires. The result is unburned hydrocarbons and carbon monoxide in the exhaust.
+
+Q 91 | ice | Fuels, Lubricants & Emissions
+Cloud point of a fuel is
+= Temperature at which it solidifies
+~ The cloud point is the temperature at which wax (paraffin) crystals first separate from a fuel or oil as it is cooled, making it look cloudy; the wax can then clog fuel filters. It marks only the beginning of solidification: on further cooling the fuel stops flowing at the lower pour point, so the key's "temperature at which it solidifies" is a loose description. (Official final key; some sources differ.)
+
+Q 92 | ice | Engine Fundamentals & Cycles
+Bad Scavenging gives
+= Low mean indicated pressure
+~ Scavenging, in two-stroke engines, is the clearing of burnt gases from the cylinder by the incoming fresh charge. With bad scavenging, exhaust gas remains and dilutes the fresh charge, so less fresh charge is trapped and burnt, cylinder pressures during the power stroke are lower and the mean indicated pressure, and hence the power output, falls; some fresh charge may also escape with the exhaust (short-circuiting).
+
+Q 93 | ice | Fuels, Lubricants & Emissions
+Viscosity of a lubrication oil is
+= decreases with increase in temperature
+~ The viscosity of lubricating oil decreases as temperature rises: the oil becomes thinner, and too thin an oil film may break down at high engine temperatures, while at low temperatures the oil is thick and makes cold starting hard. The rate of change is expressed by the viscosity index; multigrade oils such as SAE 10W-30 have a high viscosity index, i.e. less change of viscosity with temperature.
+
+Q 94 | ice | Engine Fundamentals & Cycles
+Which of the following statement is correct for Opposed piston diesel engine?
+= Combustion chamber is located between the pistons
+~ In an opposed-piston diesel engine each cylinder has two pistons moving towards and away from each other, and the combustion chamber is formed between the two piston crowns, so no cylinder head or valves are needed. These engines usually work on the two-stroke cycle, one piston uncovering the inlet ports and the other the exhaust ports (uniflow scavenging), and the pistons drive two crankshafts geared together or one crankshaft through rocking levers. APPSC's revised key confirms this answer.
+
+Q 95 | ice | Fuel Supply & Combustion
+The delay period in petrol engine is __________ compared to diesel engine
+= Long
+~ A petrol engine's fuel must resist self-ignition: high-octane petrol has a long ignition delay, so the unburned end gas does not auto-ignite before the flame front reaches it (which would cause knocking). In a diesel engine combustion starts by self-ignition of the injected fuel, so the delay period must be short (high-cetane fuel); a long delay lets fuel accumulate and burn suddenly, causing diesel knock. Hence the delay in a petrol engine is long compared with a diesel engine.
+
+Q 96 | ice | Engine Fundamentals & Cycles
+The firing order in an inline six-cylinder engine is
+= All of the given options
+~ Inline six-cylinder engines typically fire 1-5-3-6-2-4, the answer printed in APPSC's final key; 1-2-4-6-5-3 is common on medium-speed marine engines, and orders such as 1-4-2-6-3-5 and 1-3-2-6-4-5 are also valid. Each fires the two cylinders sharing a crank throw (1 and 6, 2 and 5, 3 and 4) 360° apart, with a power stroke every 120°. The revised key changed the answer to "All of the given options", meaning every option listed was such a valid firing order.
+
+Q 97 | ice | Fuels, Lubricants & Emissions
+Exhaust have 2000 ppm NOx concentration then, NOx in % is
+= 0.2
+~ Parts per million (ppm) is a fraction of 10⁶ and per cent a fraction of 10², so 1% = 10,000 ppm. Therefore 2000 ppm = 2000/10,000 = 0.2% NOx by volume. Exhaust gas analysers commonly report HC and NOx in ppm, and CO, CO₂ and O₂ in per cent by volume.
+
+Q 98 | mec | Engineering Mechanics
+Which of the following is not the unit of a power?
+= kcal/kg sec
+~ Power is the rate of doing work or transferring energy, so its units are energy per unit time: watt (J/s), kW, N·m/s, kcal/s, kcal/h and horsepower. kcal/kg sec is energy per unit mass per unit time; the extra "per kg" makes it a specific quantity, not a unit of power. For reference, 1 metric hp = 735.5 W and 1 kcal/s = 4.1868 kW.
+
+Q 100 | mec | Machine Design
+Factor of safety is defined as
+= Ultimate stress / Permissible stress
+~ Factor of safety is the ratio of the ultimate (failure) stress to the permissible (working or allowable) stress: FoS = ultimate stress / permissible stress, always greater than 1. For ductile materials it is often based on the yield stress instead (yield stress / working stress). Its value depends on the reliability of the material, the type of load (steady, shock or fatigue) and the consequences of failure.
+
+Q 101 | mec | Strength of Materials
+__________ is the property by virtue of which certain material return back to their
+original position after the removal of the external force
+= Elasticity
+~ Elasticity is the property by which a material regains its original shape and size when the deforming force is removed. Within the elastic limit, stress is proportional to strain (Hooke's law) and the deformation disappears completely on unloading. Beyond the elastic limit the material takes a permanent set; the property of retaining such permanent deformation is called plasticity.
+
+Q 102 | mec | Strength of Materials
+The dimensions of Young’s modulus of elasticity are given by
+= M¹L⁻¹T⁻²
+~ Young's modulus E = stress/strain. Strain is a ratio of two lengths and has no dimensions, so E has the dimensions of stress, i.e. force per unit area: [MLT⁻²]/[L²] = [M¹L⁻¹T⁻²]. Its SI unit is N/m² (pascal); for steel E is about 200 GPa (2 × 10⁵ N/mm²). The modulus of rigidity and the bulk modulus have the same dimensions.
+
+Q 103 | mec | Strength of Materials
+Modulus of rigidity is defined as the ratio of
+= Shear stress to shear strain
+~ The modulus of rigidity (shear modulus, G or C) is the ratio of shear stress τ to the shear strain φ it produces within the elastic limit: G = τ/φ. It is used in the torsion equation of shafts (T/J = Gθ/L) and in the design of helical springs. For steel G is about 80 GPa, roughly 0.4 times Young's modulus.
+
+Q 104 | mec | Strength of Materials
+The relationship between modulus of elasticity E, bulk modulus K and Poisson’s
+Ratio μ = is,
+= E = 3K (1 - 2μ)
+~ For a homogeneous isotropic material the elastic constants are related by E = 3K(1 − 2μ) and E = 2G(1 + μ), which together give E = 9KG/(3K + G). Since K must be positive, Poisson's ratio cannot exceed 0.5. For steel (E ≈ 200 GPa, μ ≈ 0.3), K = E/[3(1 − 2μ)] ≈ 167 GPa.
+
+Q 105 | mec | Strength of Materials
+Two shafts A and B are made of the same material. The diameter of the shaft A
+is twice as that of shaft B. The power transmitted by the shaft A will be __________
+of shaft B.
+= Eight times
+~ The torque a solid shaft can transmit at a given maximum shear stress is T = (π/16)τd³, and the power is P = 2πNT/60. For shafts of the same material (same permissible shear stress) running at the same speed, P is proportional to d³. Doubling the diameter therefore increases the power transmitted by 2³ = 8 times.
+
+Q 106 | mec | Strength of Materials
+Section modulus Z is expresses as, where, I = Moment of inertia of the cross-
+section about the neutral axis, Y = Distance from the neutral axis to the extreme
+fibre
+= I/Y
+~ The section modulus is the moment of inertia of the section about the neutral axis divided by the distance of the extreme fibre from it: Z = I/y. From the bending equation M/I = σ/y, the maximum bending stress is σ = M/Z, so a section with a larger Z is stronger in bending. For a rectangle b × d, Z = bd²/6; for a solid circular section, Z = πd³/32.
+
+Q 107 | mec | Strength of Materials
+The maximum energy that can be stored in a body due to external loading up to
+the elastic limit is called
+= proof resilience
+~ Resilience is the strain energy stored in a body loaded within the elastic limit. The maximum strain energy that can be stored up to the elastic limit is the proof resilience; for a bar under direct stress it equals (σ²/2E) × volume, where σ is the stress at the elastic limit. Proof resilience per unit volume is called the modulus of resilience.
+
+Q 108 | mfg | Engineering Materials
+The stable form of Pure iron at room temperature is
+= Ferrite
+~ At room temperature pure iron exists as α-iron, i.e. ferrite, with a body-centred cubic (BCC) structure. On heating it changes to face-centred cubic γ-iron (austenite) at 912 °C and to BCC δ-iron at 1394 °C, melting at 1538 °C. Ferrite is soft and ductile, and it is magnetic below its Curie temperature of 768 °C.
+
+Q 109 | mfg | Engineering Materials
+Case hardening is a technique whereby both __________ and __________ is
+enhanced for steel alloys
+= Surface hardness, fatigue life
+~ Case hardening gives a steel part a hard, wear-resistant surface layer (the case) over a tough, ductile core. Processes such as carburising, nitriding and cyaniding raise the surface hardness, and the compressive residual stresses set up in the case also improve fatigue life. It is used for gears, camshafts, gudgeon pins and crankshaft journals.
+
+Q 110 | ice | Fuel Supply & Combustion
+The path taken by the petrol is
+= Fuel tank- Float Chamber-Jets- Throat
+~ In a carburettor fuel system, the fuel pump lifts petrol from the tank through a filter to the float chamber, where the float and needle valve keep a constant fuel level. From the float chamber petrol flows through the metering (main) jet to the discharge nozzle, where the depression at the venturi throat draws it into the air stream and atomises it to form the air–fuel mixture.
+
+Q 111 | ice | Fuels, Lubricants & Emissions
+SAE stands for
+= Society of Automotive Engineers
+~ SAE stands for the Society of Automotive Engineers, now called SAE International, the US-based professional body that publishes automotive and aerospace standards. Its best-known standard for vehicles is the SAE J300 viscosity grading of engine oils (e.g. SAE 30, or multigrade SAE 10W-30, where W means a winter grade); SAE also sets standards for engine power measurement, fasteners and test procedures.
+
+Q 112 | ice | Engine Fundamentals & Cycles
+Which of the following is a method to determine the friction power of an engine?
+= All of the given options
+~ Friction power is the difference between indicated power and brake power. It is found by Willan's line method (extrapolating the fuel consumption versus brake power line of a diesel engine to zero fuel), the Morse test (cutting out one cylinder at a time in a multi-cylinder engine), the motoring test (driving the engine with an electric dynamometer), the retardation test, or by measuring indicated and brake power separately. The options must have been such methods.
+
+Q 113 | ice | Cooling & Lubrication
+Which of the following is an important function of a lubrication system?
+= All of the given options
+~ The lubrication system maintains an oil film between moving parts. Its functions are to reduce friction and wear, cool parts such as pistons and bearings by carrying away heat, seal the gap between piston rings and cylinder walls, clean the engine by carrying carbon and metal particles to the filter, protect parts against corrosion and cushion shock loads in bearings. The options must have been such functions.
+
+Q 114 | ice | Fuels, Lubricants & Emissions
+NOₓ can be control by
+= All of the given options
+~ NOx forms when nitrogen and oxygen combine at high combustion temperatures, so it is controlled by lowering peak temperature and by exhaust after-treatment: exhaust gas recirculation (EGR), retarding ignition or injection timing, water injection, charge-air cooling, and catalytic converters (three-way catalysts in petrol engines; selective catalytic reduction with urea, or lean NOx traps, in diesels). The options must have listed such methods.
+
+Q 115 | ice | Fuel Supply & Combustion
+Relative fuel air ratio is?
+= Actual F/A to Stoichiometric F/A
+~ The relative fuel–air ratio (equivalence ratio, φ) is the actual fuel–air ratio divided by the stoichiometric (chemically correct) fuel–air ratio. φ = 1 for a stoichiometric mixture, φ > 1 for a rich mixture and φ < 1 for a lean mixture. For petrol the stoichiometric air–fuel ratio is about 14.7:1, i.e. a fuel–air ratio of about 0.068.
+
+Q 116 | ice | Fuels, Lubricants & Emissions
+EGR stands for
+= Exhaust Gas Recirculation
+~ EGR is Exhaust Gas Recirculation: a controlled part of the exhaust gas is led back into the intake through an EGR valve. The inert gases (mainly CO₂ and water vapour) dilute the fresh charge and absorb heat, lowering the peak combustion temperature and so reducing NOx formation. Too much EGR causes rough running and higher HC and smoke emissions.
+
+Q 117 | ice | Fuels, Lubricants & Emissions
+Which of the following is a function of detergent engine oil additive?
+= Control of high temperature deposits
+~ Detergent additives (metallic sulphonates, phenates and salicylates of calcium or magnesium) keep hot engine surfaces such as the piston ring grooves and lands clean by preventing high-temperature deposits of carbon and lacquer, and their alkaline reserve neutralises acids formed by combustion. Dispersants, by contrast, keep low-temperature sludge and soot suspended in the oil so that it drains out at the oil change.
+
+Q 118 | ice | Engine Fundamentals & Cycles
+During suction stroke, the in-cylinder pressure is
+= < 1.013 bar
+~ During the suction stroke the descending piston creates a partial vacuum, and the charge flows in only because the cylinder pressure is below atmospheric pressure (1.013 bar). The pressure drop comes from the resistance of the air cleaner, throttle (in SI engines), manifold and intake valve. Intake pressures above atmospheric occur only in supercharged or turbocharged engines.
+
+Q 119 | ice | Fuel Supply & Combustion
+Choke is used to provide
+= Rich mixture during idling condition
+~ The choke is a butterfly valve above the venturi of the carburettor. When it is closed, a high depression acts on the main jet and a very rich mixture is supplied. This is needed when a cold engine is started and while it warms up at cranking and idling speeds, because little petrol vaporises in a cold manifold. Strictly, the normal warm idling mixture comes from the idling circuit; textbooks describe the choke as a cold-starting device. (Official final key; some sources differ.)
+
+Q 120 | chs | Steering & Suspension
+Shock absorber is also known as
+= Damper
+~ A shock absorber is a damper: usually a telescopic hydraulic unit fitted between the axle or wheel carrier and the frame or body. The spring absorbs the road shock, and the damper forces oil through small valves, turning the energy of spring oscillation into heat so that bouncing dies out quickly. This improves ride comfort, road holding and tyre contact.
+
+Q 121 | ael | Starting & Ignition
+Which of the following is not a component of primary circuit of a battery ignition
+system?
+= Ignition cables
+~ In battery (coil) ignition, the primary (low-tension) circuit carries battery current through the ignition switch, ballast resistor, primary winding of the ignition coil and the contact breaker, with the condenser across the points. The secondary (high-tension) circuit consists of the coil's secondary winding, the distributor rotor and cap, the high-tension ignition cables and the spark plugs. Ignition cables are therefore not part of the primary circuit.
+
+Q 123 | ice | Engine Fundamentals & Cycles
+The brake power of an IC engine having speed 1500 rpm with torque 20 Nm is:
+= 1000 π watts
+~ Brake power P = 2πNT/60, with N in rpm and T in N·m. Here P = 2π × 1500 × 20/60 = 1000π W, about 3142 W or 3.14 kW. The factor 2πN/60 converts the speed from rpm into angular velocity in rad/s (2π × 1500/60 = 50π rad/s), and power = torque × angular velocity = 20 × 50π = 1000π W.
+
+Q 124 | chs | Steering & Suspension
+__________ mean a mechanism that links the wheel directly to the body or to a
+frame attached to the it.
+= Suspension
+~ The suspension system links the wheels to the body (in integral or monocoque construction) or to the chassis frame. It consists of springs (leaf, coil, torsion bar or air), dampers (shock absorbers) and linkages such as wishbones, links and anti-roll bars. It isolates the body from road shocks, keeps the tyres in contact with the road and controls the vehicle's attitude during braking, acceleration and cornering.
+
+Q 125 | chs | Clutch & Gearbox
+Transmission system provides:
+= All of the given options
+~ The transmission system (clutch, gearbox, propeller shaft, final drive, differential and axle shafts) carries engine power to the driving wheels. It provides variable torque and speed through different gear ratios (high torque for starting and climbing, lower ratios for speed), reverse drive, a neutral position to disconnect the engine, smooth engagement through the clutch, and differential action so that the wheels can turn at different speeds on curves. The options must have been such functions.
+
+Q 126 | ice | Cooling & Lubrication
+In engine __________ requires lubrication
+= All of the given options
+~ Every engine part that slides or rotates against another needs lubrication: the main and big-end bearings of the crankshaft, the pistons, rings and cylinder walls, the gudgeon pins, the camshaft and its bearings, the tappets, rocker arms, valve stems and guides, and the timing gears or chain. The options must have been such parts, so all of them require lubrication.
+
+Q 127 | ice | Cooling & Lubrication
+Methods of Water Cooling is
+= All of the given options
+~ In water cooling, coolant circulates through jackets around the cylinders and cylinder head and gives up its heat to air in the radiator. The methods are thermosyphon cooling (natural circulation due to density difference), forced or pump circulation, pressurised cooling (a pressure cap raises the boiling point), and evaporative or steam cooling. The options must have listed such methods.
+
+Q 128 | ice | Fuel Supply & Combustion
+Which of the following is a component of a Fuel supply system of diesel engine?
+= All of the given options
+~ A diesel engine fuel supply system consists of the fuel tank, the fuel feed (lift or transfer) pump, primary and secondary fuel filters with a water separator, the high-pressure fuel injection pump with its governor (or a common-rail pump and rail), high-pressure delivery pipes, the injectors (nozzles) and the leak-off or return lines. The options must have been such components.
+
+Q 129 | ael | Lighting, Instruments & Wiring
+A relay can be thought of as a:
+= remote controlled switch
+~ A relay is an electromagnetic switch: a small current through its coil, controlled by a light-duty switch, pulls an armature that closes contacts carrying a much larger current. It works like a remote-controlled switch, so heavy loads such as horns, headlamps, the cooling fan and the fuel pump can be switched by small switches, with short heavy cables, less voltage drop and less wear of the switch contacts.
+
+Q 130 | emv | Alternative Fuels
+In addition to electricity, fuel cells produce -------------------
+= All of the given options
+~ A fuel cell converts the chemical energy of a fuel directly into electricity. In a hydrogen fuel cell, hydrogen at the anode and oxygen from air at the cathode combine (2H₂ + O₂ → 2H₂O), giving electrical energy and heat. So besides electricity a fuel cell produces water and heat; cells running on methanol or reformed hydrocarbons also give out carbon dioxide. The options must have covered such by-products.
+
+Q 132 | ael | Starting & Ignition
+Cruising conditions require the ignition timing to be:
+= advanced
+~ At cruising (part throttle, light load) the manifold vacuum is high and the charge is lean and diluted with residual exhaust gas, so it burns slowly. The spark must therefore occur earlier, i.e. the ignition timing is advanced; this is done by the vacuum advance unit in conventional distributors and by the ECU map in electronic ignition. At full throttle the vacuum falls and the advance is reduced to avoid knocking.
+
+Q 133 | ael | Electronics, Sensors & ECU
+An injector pulse width, in milliseconds, is commonly:
+= 2.0–3.50
+~ Injector pulse width is the time for which the ECU energises a solenoid injector and holds it open, so at a constant fuel pressure the pulse width sets the quantity of fuel injected. It is only a few milliseconds, and the key takes 2.0–3.5 ms as the common value. The ECU lengthens the pulse for higher load, acceleration and cold starting, and shortens it or cuts it off on overrun.
+
+Q 134 | ice | Fuels, Lubricants & Emissions
+Exhaust gas products in case of complete combustion are:
+= carbon dioxide and water
+~ Complete combustion of a hydrocarbon fuel turns all its carbon into carbon dioxide and all its hydrogen into water vapour, for example C₈H₁₈ + 12.5 O₂ → 8 CO₂ + 9 H₂O. The nitrogen of the air and any excess oxygen pass through unchanged. Carbon monoxide, unburnt hydrocarbons and soot appear only when combustion is incomplete.
+
+Q 135 | ice | Fuel Supply & Combustion
+The type of fuel injection system in which fuel is injected at each intake port
+= multi-point system
+~ In multi-point fuel injection (MPFI), each cylinder has its own injector in the intake manifold just upstream of the intake valve (port injection), controlled by the ECU. This gives even mixture distribution between cylinders and better economy and emissions. In single-point (throttle body) injection one or two injectors at the throttle body serve all cylinders, while in direct injection (GDI) petrol is sprayed into the combustion chamber.
+
+Q 136 | ice | Fuels, Lubricants & Emissions
+At temperature higher than __________ nitrogen reacts with oxygen and forms
+NOₓ
+= 1000 ⁰C
+~ Nitrogen in the intake air is normally inert, but at the high temperatures of combustion it combines with oxygen to form nitric oxide (NO) and some nitrogen dioxide (NO₂), together called NOx (the thermal or Zeldovich mechanism). The key takes 1000 °C as the temperature above which this happens; the reaction rate rises very steeply with temperature, so most NOx forms at the peak combustion temperatures, far above this figure. That is why EGR, retarded timing and charge cooling, which lower peak temperature, reduce NOx.
+
+Q 137 | ice | Fuels, Lubricants & Emissions
+Measurement of exhaust emissions, just after starting the engine from cold, gives
+a higher than specification reading. The reason for this is:
+= the temperature of the catalyst is low
+~ A catalytic converter works only after it reaches its light-off temperature (roughly 250–300 °C); below this, CO and HC pass through largely unconverted. Just after a cold start the catalyst is cold, and the engine also runs on a richer cold-start mixture, so tailpipe readings are above specification. Emission tests are therefore made with the engine and catalyst at normal operating temperature.
+
+Q 138 | ael | Lighting, Instruments & Wiring
+The instrument which uses pulses from the ignition primary circuit is a:
+= Tachometer
+~ An electronic tachometer counts the pulses produced each time the contact breaker or ignition module interrupts the coil primary current. A four-stroke engine gives (number of cylinders ÷ 2) pulses per crankshaft revolution, so the pulse frequency indicates engine rpm. The speedometer is driven from the gearbox output (cable or vehicle speed sensor). The final key's "Both Speedometer and Tachometer" was revised by APPSC to Tachometer.
+
+Q 139 | ael | Lighting, Instruments & Wiring
+One characteristic of a thermal type fuel gauge is its:
+= slow moving needle
+~ A thermal (bimetal) fuel gauge has a heater winding on a bimetal strip linked to the needle; the float-operated rheostat in the tank unit varies the current and hence the heating and bending of the strip. Because the strip heats and cools slowly, the needle moves slowly and does not swing with fuel surge on bends or braking. Such gauges need a voltage stabiliser so that readings do not vary with system voltage.
+
+Q 140 | thm | Refrigeration & Air Conditioning
+Which of the following is not an essential part of a refrigeration system?
+= Fuel injector
+~ A vapour compression refrigeration or vehicle air-conditioning system has four essential parts: the compressor, the condenser, the expansion device (expansion valve or capillary or orifice tube) and the evaporator, usually with a receiver-drier or accumulator. A fuel injector belongs to the engine fuel system and has no role in refrigeration.
+
+Q 141 | ice | Fuels, Lubricants & Emissions
+NMHC stands for
+= Non-methane hydrocarbon
+~ NMHC stands for non-methane hydrocarbons: the total hydrocarbons in the exhaust minus methane. Methane is relatively unreactive in forming photochemical smog, so emission norms limit NMHC separately. Euro 6 and Bharat Stage VI norms (in force in India from 1 April 2020, after this exam) specify both total HC and NMHC limits for petrol vehicles.
+
+Q 142 | ice | Fuels, Lubricants & Emissions
+General formula of olefin is
+= CₙH₂ₙ
+~ Olefins (alkenes) are unsaturated open-chain hydrocarbons with one carbon–carbon double bond and the general formula CₙH₂ₙ, e.g. ethylene C₂H₄ and propylene C₃H₆. Paraffins (alkanes) are CₙH₂ₙ₊₂, naphthenes are ring compounds that are also CₙH₂ₙ, and aromatics are CₙH₂ₙ₋₆. Olefins have fairly good antiknock quality but tend to form gum in storage.
+
+Q 143 | ice | Fuel Supply & Combustion
+Increase in jacket water temperature __________ the delay period
+= Decreases
+~ The delay period is the time between the start of fuel injection and the start of combustion in a CI engine. A higher jacket water temperature raises the temperature of the cylinder walls and of the compressed air, so the fuel droplets vaporise and reach self-ignition sooner; the delay period therefore decreases, giving smoother combustion and less diesel knock. A higher compression ratio, intake temperature and cetane number also shorten it.
+
+Q 144 | chs | Clutch & Gearbox
+__________ are designed to engage and disengage the transmission system as
+per driver requirement
+= Clutches
+~ A clutch connects and disconnects the engine and the transmission at the driver's will. It allows the engine to be started and to idle without moving the vehicle, lets gears be changed without shock, and allows the vehicle to start smoothly through gradual engagement. Types include single-plate and multi-plate friction clutches, cone clutches, centrifugal clutches and fluid couplings.
+
+Q 145 | chs | Clutch & Gearbox
+Clutch friction materials must have
+= All of the given options
+~ Clutch friction linings (organic, woven, sintered metal or ceramic) must have a high and stable coefficient of friction, good wear resistance, the ability to withstand high temperatures without fading, good heat conductivity, enough strength to resist centrifugal force and no tendency to grab or judder. The options must have been such properties, so all of them are required.
+
+Q 146 | chs | Chassis & Body
+Road resistance opposing the motion of the vehicle is
+= All of the given options
+~ The total resistance opposing the motion of a vehicle has three parts: rolling resistance between the tyres and the road (proportional to vehicle weight), air or aerodynamic resistance (proportional to frontal area and the square of speed) and gradient resistance on slopes (W sin θ). The tractive effort at the driving wheels must overcome their sum. The options must have been such resistances.
+
+Q 147 | chs | Clutch & Gearbox
+Ratio span for gear box is
+= Road speed in highest gear / Road speed in lowest gear
+~ The ratio span (spread) of a gearbox compares its extreme ratios. At the same engine speed, road speed is inversely proportional to the overall gear ratio, so ratio span = road speed in highest gear ÷ road speed in lowest gear = first-gear ratio ÷ top-gear ratio. For example, a first gear of 3.5:1 and a top gear of 0.8:1 give a span of about 4.4.
+
+Q 148 | chs | Wheels & Tyres
+One-side tyre wear is caused by--------------------
+= excessive camber
+~ Camber is the outward or inward tilt of the wheel from the vertical, seen from the front. Excessive positive camber loads the outer shoulder of the tyre and excessive negative camber the inner shoulder, so the tread wears on one side only. Wear on both shoulders points to under-inflation, centre wear to over-inflation, and feathered wear to incorrect toe-in or toe-out.
+
+Q 149 | chs | Wheels & Tyres
+For wheel balancing, Centrifugal force is calculated by
+= ((Out of balance mass) * (Linear wheel speed) ^2) / (radius from the axis of rotation)
+~ An out-of-balance mass m on a rotating wheel produces a centrifugal force F = mv²/r = mω²r, where v is the linear speed of the mass and r its radius from the axis of rotation. Because the force rises with the square of speed, a small imbalance causes large vibrating forces (wheel tramp or shimmy) at high speed; balance weights are fitted on the rim to cancel it.
+
+Q 150 | chs | Wheels & Tyres
+As per Suspension terminology contact patch is
+= Flattened crown area of a tyre which contacts the ground
+~ The contact patch (tyre footprint) is the flattened part of the tread crown in contact with the road at any instant. All the traction, braking and cornering forces of the vehicle are transmitted through these four small areas. Its size and shape depend on load, inflation pressure, tyre construction and width; under-inflation lengthens it and causes shoulder wear.

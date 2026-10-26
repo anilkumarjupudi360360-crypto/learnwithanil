@@ -49,7 +49,7 @@ async def main():
             tiles = await pg.locator('#hub-static .exam').count()
             assert tiles >= 90, f'expected the full exam list, got {tiles}'
             live = await pg.locator('#hub-static .exam.live').count()
-            built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
+            built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager', 'appsc-amvi', 'tgpsc-amvi') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
             assert live == built, f'{built} exams are built but {live} tiles are live'
             await pg.fill('#examSearch', 'group 2'); await pg.wait_for_timeout(100)
             assert await pg.locator('#hub-static .exam:not([hidden])').count() == 2, 'search "group 2" should find APPSC and TGPSC Group-II'
@@ -129,7 +129,7 @@ async def main():
                 await pg.evaluate('location.hash="home"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/home-phone.png', full_page=False)
         # exams in their own folders: APPSC Group-I (Telugu) and UPSC CAPF (Hindi)
-        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group 1', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi'), ('upsc-epfo', 'epfo', 'EPFO', 'hi'), ('ssc-cgl', 'cgl', 'SSC CGL', 'hi'), ('ts-police-si', 'tssi', 'TS Police SI', 'te'), ('ts-police-constable', 'tspc', 'TS Police Constable', 'te'), ('tgpsc-hmwssb-manager', 'hmws', 'HMWSSB Manager', 'te')]:
+        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group 1', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi'), ('upsc-epfo', 'epfo', 'EPFO', 'hi'), ('ssc-cgl', 'cgl', 'SSC CGL', 'hi'), ('ts-police-si', 'tssi', 'TS Police SI', 'te'), ('ts-police-constable', 'tspc', 'TS Police Constable', 'te'), ('tgpsc-hmwssb-manager', 'hmws', 'HMWSSB Manager', 'te'), ('appsc-amvi', 'apamvi', 'APPSC AMVI', 'te'), ('tgpsc-amvi', 'tgamvi', 'TGPSC AMVI', 'te')]:
             if not os.path.exists(os.path.join(SITE, sub, 'index.html')): continue
             fp = URL + sub + '/'
             for width, name in [(1280, 'desk'), (390, 'phone')]:
@@ -215,7 +215,7 @@ async def main():
                 if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')
         # every exam home: three tiles (PYQs, mock tests, sectional tests), each a page of its own; no question of the day there
         smx = open(os.path.join(SITE, 'sitemap.xml')).read()
-        for sub in ('ts-police-si', 'ts-police-constable', 'appsc-group-2', 'appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'tgpsc-hmwssb-manager'):
+        for sub in ('ts-police-si', 'ts-police-constable', 'appsc-group-2', 'appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'tgpsc-hmwssb-manager', 'appsc-amvi', 'tgpsc-amvi'):
             for rel in (f'{sub}/pyqs.html', f'{sub}/mock-test.html', f'{sub}/sectional-tests.html'):
                 if not os.path.isfile(os.path.join(SITE, rel)): errors.append(f'missing {rel}'); continue
                 if f'/{rel}</loc>' not in smx: errors.append(f'{rel} not in sitemap')

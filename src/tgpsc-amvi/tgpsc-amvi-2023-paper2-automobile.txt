@@ -1,0 +1,1583 @@
+# TSPSC Assistant Motor Vehicles Inspector (Transport Department), Notification 31/2022, Paper II: Automobile Engineering (Diploma Standard), computer-based test held 28 June 2023 (afternoon session).
+# Answers: TSPSC PRELIMINARY key, from the master question paper (the final key was released only on candidates' individual response sheets). Explanations by Learn with Anil.
+
+Q 1 | thm | Thermodynamics
+Which of the following laws provides the basis for the temperature measurement?
+(1) Zeroth law of thermodynamics
+(2) First law of thermodynamics
+(3) Second law of thermodynamics
+(4) Boyle’s law
+= 1
+~ The zeroth law states that if two bodies are each in thermal equilibrium with a third body, they are in thermal equilibrium with each other. This lets a thermometer (the third body) compare temperatures, so it is the basis of temperature measurement. The first law deals with conservation of energy, the second with the direction of heat flow and entropy, and Boyle's law with the P–V relation of a gas at constant temperature.
+
+Q 2 | thm | Thermodynamics
+For an isothermal process, which of the following is correct based on first law of thermodynamics?
+(1) Heat added or rejected by the system equals to the work done by the system or work done on the system
+(2) Work done by the system or work done on the system equals to the change in internal energy
+(3) Heat added or rejected equals to the change in internal energy
+(4) Heat added or rejected is equals to the sum of change in internal energy (not equal to zero) and work done by a system or work done on a system
+= 1
+~ By the first law, Q = ΔU + W. For an ideal gas the internal energy depends only on temperature, so in an isothermal process ΔU = 0 and Q = W: the heat added equals the work done by the system, and the work done on it is rejected as heat. Option 2 describes an adiabatic process (Q = 0), option 3 a constant-volume process (W = 0), and option 4 wrongly assumes ΔU ≠ 0.
+
+Q 3 | ice | Engine Fundamentals & Cycles
+In context of I.C. engines, what is the ratio of shaft energy to the energy available at the piston is called?
+(1) Brake thermal efficiency
+(2) Indicated thermal efficiency
+(3) Mechanical efficiency
+(4) Volumetric efficiency
+= 3
+~ Mechanical efficiency ηm = brake power / indicated power, i.e. the useful output at the shaft divided by the power developed by the gases on the piston; the difference is lost in friction and pumping. Brake thermal efficiency compares brake power with the fuel energy supplied, indicated thermal efficiency compares indicated power with the fuel energy, and volumetric efficiency compares the charge actually inducted with the swept volume.
+
+Q 4 | ice | Engine Fundamentals & Cycles
+For the I.C. engine, the ratio of total volume of the cylinder to clearance volume is called ______.
+(1) clearance ratio
+(2) efficiency
+(3) expansion ratio
+(4) compression ratio
+= 4
+~ Compression ratio r = total cylinder volume / clearance volume = (Vs + Vc)/Vc, where Vs is the swept (stroke) volume and Vc the clearance volume left above the piston at TDC. Typical values are about 6–10 for petrol (SI) engines and 14–22 for diesel (CI) engines. The clearance ratio is Vc/Vs, and a higher compression ratio raises the air-standard efficiency.
+
+Q 5 | ice | Engine Fundamentals & Cycles
+Which of the following is an advantage of reciprocating internal combustion engines over external combustion engines?
+(1) Starting torque is high
+(2) Weight to power ratio is generally low
+(3) Require more space
+(4) Cheaper fuel can be used
+= 2
+~ Because the fuel burns inside the cylinder, an IC engine needs no boiler, condenser or separate furnace, so it is compact, with a low weight-to-power ratio and higher overall efficiency, which suits vehicles. External combustion engines such as steam engines give high starting torque and can burn cheaper fuels like coal or wood, but they need more space; these are not advantages of IC engines.
+
+Q 6 | ice | Engine Fundamentals & Cycles
+Which of the following is a function of Gudgeon pin in internal combustion engines?
+(1) It acts as a face to receive gas pressure and transmits the thrust to connecting rod
+(2) Provide a good sealing fit between the piston and cylinder
+(3) It supports and allows the swivel of the connecting rod
+(4) It reduces friction and takes care of the fluctuations of speed during a cycle
+= 3
+~ The gudgeon (piston or wrist) pin joins the piston to the small end of the connecting rod and acts as a pivot, supporting the rod and allowing it to swivel as the crank turns. The piston crown receives the gas pressure, the piston rings give the seal between piston and cylinder, and the flywheel takes care of speed fluctuations during a cycle.
+
+Q 7 | ice | Engine Fundamentals & Cycles
+During which of the following stroke, the flywheel stores energy so that it can supply the energy during the idle strokes?
+(1) Suction stroke
+(2) Expansion stroke
+(3) Compression stroke
+(4) Exhaust stroke
+= 2
+~ In a four-stroke engine only the expansion (power) stroke produces work. During this stroke the flywheel absorbs the surplus energy as kinetic energy, its speed rising slightly, and gives it back during the idle suction, compression and exhaust strokes, keeping the crankshaft speed nearly uniform. A multi-cylinder engine overlaps power strokes and so needs a lighter flywheel.
+
+Q 8 | ice | Engine Fundamentals & Cycles
+To allow the fresh charge to enter the cylinder, the inlet valve is opened in advance of the T.D.C position. The inlet valve is opened in advance by ______.
+(1) 10° to 30°
+(2) 50° to 60°
+(3) 30° to 70°
+(4) 0° to 10°
+= 1
+~ In the actual valve timing of a four-stroke engine the inlet valve opens about 10°–30° of crank rotation before TDC, so that it is fully open when the suction stroke begins and the fresh charge can enter without restriction. It closes some degrees after BDC, using the inertia of the incoming charge to improve volumetric efficiency. The period when both valves are open near TDC is the valve overlap.
+
+Q 9 | ice | Fuel Supply & Combustion
+Which one of the following factors affect the ignition timing of an internal combustion engine?
+(1) Type of fuel
+(2) Flywheel
+(3) Piston material
+(4) Cylinder material
+= 1
+~ The spark must occur early enough for the flame to burn the charge near TDC, and the time needed depends on the fuel: its octane rating (knock resistance) and burning rate decide how much spark advance can be used. Engine speed, load and mixture strength also affect the timing, which is why distributors have centrifugal and vacuum advance. The flywheel and the piston or cylinder materials do not decide ignition timing.
+
+Q 10 | ice | Engine Fundamentals & Cycles
+In a two-stroke engine, the process of clearing the cylinder after the expansion stroke is called ______.
+(1) expansion
+(2) scavenging
+(3) compressing
+(4) knocking
+= 2
+~ Scavenging is the sweeping out of the burnt gases from the cylinder of a two-stroke engine by the fresh charge or air entering through the transfer ports at the end of the expansion stroke. Common methods are cross-flow, loop (reverse-flow) and uniflow scavenging. Knocking is abnormal combustion, while expansion and compression are the normal working processes.
+
+Q 11 | ice | Engine Fundamentals & Cycles
+What is the difference between indicated power and brake power of internal combustion engine?
+(1) Total power
+(2) Total available energy
+(3) Total engine friction loss
+(4) Total clearance
+= 3
+~ Indicated power is the power developed by the gases on the piston, and brake power is the useful power available at the crankshaft. Their difference, friction power = IP − BP, is the power lost in friction of pistons, rings and bearings, in pumping the charge and in driving accessories. The ratio BP/IP is the mechanical efficiency; friction power can be measured by the Morse or motoring test.
+
+Q 12 | ice | Fuels, Lubricants & Emissions
+The lowest temperature at which lubricating oil changes from a liquid state to plastic or solid state is called ______.
+(1) cloud point
+(2) emulsification point
+(3) flash point
+(4) pour point
+= 1
+~ As an oil is cooled it reaches its cloud point when wax and other dissolved solids begin to separate and make it hazy, the start of its change from a liquid towards a plastic or solid state; the key takes this as the answer. On further cooling it reaches the pour point, the lowest temperature at which it will still flow, and the word "lowest" in the question fits the pour point better. The flash point concerns ignition of the oil's vapour. (Preliminary key; some sources differ.)
+
+Q 13 | ice | Cooling & Lubrication
+Which of the following is correct about cooling system of engines?
+I. The cooling system is provided on an engine because high temperatures reduce strength of piston and cylinder liner.
+II. The cooling system is provided on an engine because the overheated cylinder may lead to ignition lag in spark ignition engines.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ Statement I is correct: at high temperatures the piston, cylinder liner and valves lose strength and the oil film breaks down, so the cooling system removes roughly a third of the fuel's heat. Statement II is wrong: an overheated cylinder causes pre-ignition and detonation (knocking) in spark ignition engines, not ignition lag, which is the short delay between the spark and a noticeable pressure rise.
+
+Q 14 | ice | Fuel Supply & Combustion
+Which of the following is correct regarding the diesel engines?
+I. Diesel engines uses an injector.
+II. There is no pre-ignition in diesel engines.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Both statements are correct. A diesel (CI) engine uses a fuel injection pump and an injector that sprays fuel into the hot compressed air, instead of a carburettor and spark plug. Since only air is compressed and fuel is admitted only at the end of the compression stroke, there is no charge in the cylinder that could ignite early, so pre-ignition does not occur.
+
+Q 15 | ice | Fuels, Lubricants & Emissions
+Which of the following is correct about grease?
+I. Grease is only used where there is a low bearing and shock loads.
+II. Lubricating grease is a solid to semi solid dispersion of a thickening agent in liquid lubricant.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ Statement II is the standard definition: a lubricating grease is a solid to semi-solid dispersion of a thickening agent, usually a metallic soap, in a liquid lubricant. Statement I is wrong: grease is used where bearing pressures are high, where shock loads occur, at low speeds and where oil cannot be retained or would leak away, as in wheel bearings and chassis joints.
+
+Q 16 | ice | Fuels, Lubricants & Emissions
+Which of the following is correct about lubricating oils?
+I. Fatty oils exhibit less oiliness than mineral oils of the same viscosity.
+II. Multigrade oil are not required to change as per ambient temperature.
+III. Multigrade oil has short warming up period.
+(1) Only I and II
+(2) Only II
+(3) Only II and III
+(4) Only I and III
+= 3
+~ Statement I is wrong: fatty (animal and vegetable) oils show greater oiliness, that is, stronger adherence to metal surfaces, than mineral oils of the same viscosity. Statements II and III are correct: a multigrade oil such as SAE 20W-40 meets both a low-temperature and a high-temperature grade, so it need not be changed with the season, and it flows freely when cold, giving a short warming-up period.
+
+Q 17 | ice | Fuel Supply & Combustion
+Which of the following is correct about the fuel injection system?
+I. It controls the rate of fuel injection.
+II. It filters the fuel.
+III. It controls the quantity of fuel to be injected.
+(1) Only I and II
+(2) Only II and III
+(3) All I, II and III
+(4) Only I and III
+= 3
+~ A diesel fuel injection system must filter the fuel, meter the correct quantity of fuel for each cycle according to the load, time the injection, control the rate of injection, atomise the fuel finely and distribute it properly in the combustion chamber. The fuel filters form part of the system, so all three statements describe its functions.
+
+Q 18 | ice | Fuel Supply & Combustion
+Which of the following statement is correct regarding the effects of the air fuel mixtures in SI engine?
+I. If the air fuel mixture is slightly richer, mean effective pressure reaches its maximum value.
+II. The rate of fuel consumption is lowest for rich air fuel mixtures.
+III. By decreasing the richness of air fuel mixture, the proportion of CO₂ will decrease while those of CO with certain traces of unburnt H₂ will increase.
+(1) Only I
+(2) Only II and III
+(3) Only I and III
+(4) Only II
+= 1
+~ Only I is correct: maximum power, and so maximum mean effective pressure, is obtained with a slightly rich mixture of about 12.5:1. II is wrong because the lowest specific fuel consumption is obtained with a slightly lean mixture. III is reversed: as the mixture is made less rich, more oxygen is available, so the proportion of CO₂ increases while CO and unburnt H₂ decrease.
+
+Q 19 | ice | Fuel Supply & Combustion
+Match the following statements in context of Spark Ignition engine.
+Effect | Cause
+I. Results in lowering of efficiency | 1. Running on the weakest air fuel mixture
+II. Results in high efficiency | 2. Running on the richest air fuel mixture
+III. Results in complete burning of the fuel | 3. During the cruising the air fuel mixture is approximately 16.5: 1 so that
+(1) I-1, II-2, III-3
+(2) I-2, II-1, III-3
+(3) I-3, II-2, III-1
+(4) I-2, II-3, III-1
+= 2
+~ With the richest mixture part of the fuel cannot find oxygen and leaves as CO and unburnt hydrocarbons, so efficiency falls: I-2. The weakest mixture that still burns gives the best economy and the highest efficiency: II-1. In the cruising range the carburettor supplies a slightly lean mixture of about 16.5:1 so that the excess air ensures complete burning of the fuel: III-3. Hence I-2, II-1, III-3.
+
+Q 20 | ice | Fuels, Lubricants & Emissions
+Match the following fuel standard to its specialty.
+Standard | Specialty
+I. Iso-octane | 1. Very prone to knock
+II. Normal heptane | 2. Measure of ignition quality of diesel
+III. Cetane number | 3. Very high resistance to knock
+| 4. Anti knock performance under severe operating conditions
+(1) I-4, II-2, III-3
+(2) I-3, II-1, III-2
+(3) I-1, II-3, III-4
+(4) I-2, II-4, III-1
+= 2
+~ Octane numbers are fixed with two reference fuels: iso-octane (2,2,4-trimethylpentane), which has very high resistance to knock and is rated 100, and normal heptane, which is very prone to knock and is rated 0. The cetane number measures the ignition quality of diesel fuel, using cetane (100) and alpha-methylnaphthalene (0) as references. Hence I-3, II-1, III-2.
+
+Q 21 | thm | Thermodynamics
+Which of the following is correctly matched pair regarding Clausius Inequality?
+(1) δQ/T > 0 : Reversible cycle
+(2) δQ/T = 0 : Irreversible cycle
+(3) δQ/T < 0 : Irreversible cycle
+(4) ΔS < 0 : Isolated system
+= 3
+~ The Clausius inequality states that for any cycle ∮δQ/T ≤ 0 (the cyclic integral sign is not printed in the options). The equality holds for a reversible cycle, ∮δQ/T < 0 for an irreversible cycle, and ∮δQ/T > 0 is impossible. For an isolated system the entropy change is ΔS ≥ 0 (principle of increase of entropy), so ΔS < 0 cannot occur. Only "δQ/T < 0 : Irreversible cycle" is correctly matched.
+
+Q 22 | ice | Engine Fundamentals & Cycles
+For same compression ratio and same heat input, which of the following order of efficiency is correct?
+(1) η_duel > η_otto > η_diesel
+(2) η_diesel > η_duel > η_otto
+(3) η_duel > η_diesel > η_otto
+(4) η_otto > η_duel > η_diesel
+= 4
+~ For the same compression ratio and heat input, the Otto cycle adds all its heat at constant volume at TDC, so it rejects the least heat and is the most efficient; the Diesel cycle adds heat at constant pressure during part of the expansion and is the least efficient; the dual cycle, with part of each, lies in between. So η_Otto > η_Dual > η_Diesel ("duel" is printed for dual). For the same maximum pressure and temperature the order is reversed.
+
+Q 23 | thm | Thermodynamics
+Arrange the following in an increasing order of value of n in PVⁿ = C.
+I. Constant pressure process
+II. Reversible adiabatic process
+III. Constant volume process
+IV. Isothermal process
+(1) I, II, III, IV
+(2) II, I, III, IV
+(3) II, III, I, IV
+(4) I, IV, II, III
+= 4
+~ In the polytropic relation PVⁿ = C, n = 0 for a constant pressure process (P = C), n = 1 for an isothermal process of an ideal gas (PV = C), n = γ (about 1.4 for air) for a reversible adiabatic process, and n = ∞ for a constant volume process. The increasing order is therefore constant pressure, isothermal, reversible adiabatic, constant volume: I, IV, II, III.
+
+Q 24 | ice | Engine Fundamentals & Cycles
+For the four stroke otto engines, arrange the following in the correct order (first to last).
+I. The piston moves T.D.C. to B.D.C. and work is obtained after fuel is ignited.
+II. The piston moves B.D.C. to T.D.C. and compresses the air fuel mixture.
+III. The piston moves T.D.C. to B.D.C. and the inlet valve opens and air fuel mixture is sucked in.
+IV. The piston moves B.D.C. to T.D.C. and gases are made to escape through exhaust value.
+(1) I, III, IV, II
+(2) III, II, I, IV
+(3) IV, II, I, III
+(4) III, I, IV, II
+= 2
+~ A four-stroke Otto (petrol) engine completes its cycle in two crankshaft revolutions: suction, with the piston moving from TDC to BDC and the charge drawn in (III); compression from BDC to TDC (II); power or expansion after the spark ignites the charge, TDC to BDC (I); and exhaust, BDC to TDC, pushing the burnt gases out through the exhaust valve (IV; "value" is printed for valve). Order: III, II, I, IV.
+
+Q 25 | ice | Fuel Supply & Combustion
+For a simple or elementary carburettor, arrange the following in a correct order (first to last).
+I. The velocity of air increases as it passes through the constriction at the venturi.
+II. Pressure decreases due to conversion of a portion of pressure head into kinetic energy.
+III. The piston moves down and the suction is produced in the cylinder and the induction manifold.
+IV. Due to pressure difference the jet issues fuel oil into air stream which vapourise forming air fuel mixture.
+V. The air flows through the carburettor.
+(1) III, V, I, II, IV
+(2) II, V, III, I, IV
+(3) III, II, I, IV, V
+(4) II, IV, III, V, I
+= 1
+~ In a simple carburettor the piston's suction stroke creates a depression in the cylinder and induction manifold (III), so air flows through the carburettor (V). Its velocity rises at the venturi throat (I), where the pressure falls as part of the pressure head becomes kinetic energy (II). The pressure difference between the float chamber and the throat makes the jet discharge fuel, which vaporises in the air stream to form the mixture (IV). Order: III, V, I, II, IV.
+
+Q 26 | chs | Chassis & Body
+Which one of the following is an advantage of chassis with engine at front and drive is given to the wheels from rear of a vehicle?
+(1) Increased efficiency of cooling system
+(2) Inadequate space behind the rear seat for the luggage
+(3) Elimination of propeller shaft
+(4) The clutch, gear box and differential are usually made as one unit results in cost reduction
+= 1
+~ In the conventional layout, with the engine at the front driving the rear wheels, the radiator faces the oncoming air, so cooling is more efficient; weight is also well distributed and the front wheels only steer. Elimination of the propeller shaft and a combined clutch, gearbox and differential unit are advantages of front-wheel-drive or rear-engine layouts, and inadequate luggage space is a drawback, not an advantage.
+
+Q 27 | chs | Chassis & Body
+Which one of the following is a defect that may be found in chassis body of an automobile?
+(1) Build up edges
+(2) Broken welds
+(3) Heat affected zone
+(4) Toe out
+= 2
+~ The chassis frame and body are inspected for cracks, bent or twisted members, loose rivets and broken welds, which develop from fatigue, overloading, accidents and road shocks. A built-up edge forms on a cutting tool during machining, the heat-affected zone is the metallurgically altered region beside any weld, and toe-out is a wheel-alignment setting of the front wheels, not a chassis defect.
+
+Q 28 | chs | Chassis & Body
+For an automotive body, the magnitude of the drag force depends on ______.
+(1) shear strength of automotive body
+(2) magnitude of gravity
+(3) velocity of automotive body
+(4) strength of automotive body
+= 3
+~ The aerodynamic drag on a vehicle is F = ½ ρ C_d A V², where ρ is the air density, C_d the drag coefficient set by the body shape, A the frontal area and V the speed relative to the air. Drag therefore grows with the square of the velocity, and the power needed to overcome it with the cube. It does not depend on the strength of the body or on gravity.
+
+Q 29 | chs | Chassis & Body
+Which one of the following load acts on a chassis when a vehicle crosses a broken patch of road?
+(1) Inertia load
+(2) Short duration load
+(3) Overload
+(4) Impact load
+= 2
+~ Automobile engineering textbooks classify the loads on a chassis frame as static loads (weight of body, passengers and cargo), short-duration loads (while crossing a broken patch of road), momentary loads (while taking a curve), impact loads (from collisions), inertia loads (on sudden acceleration or braking) and overloads (beyond the design capacity). Crossing a broken patch is thus a short-duration load.
+
+Q 30 | chs | Steering & Suspension
+In which of the following the carriage unit of a car rolls about a transverse axis?
+(1) Rolling
+(2) Yawing
+(3) Pitching
+(4) Bending
+= 3
+~ The sprung body (carriage unit) of a car can rotate about three axes. Rolling is rotation about the longitudinal axis, as on cornering; pitching is rotation about the transverse axis, the nose diving under braking or rising under acceleration and over bumps; and yawing is rotation about the vertical axis. So rotation about a transverse axis is pitching; bending is a frame deformation, not a body motion.
+
+Q 31 | chs | Steering & Suspension
+Which one of the following is a function of the shackle in the context of a leaf spring?
+(1) It helps in accommodating the change in the length of the spring.
+(2) It is used to keep leaf spring in position on the axle.
+(3) It is used to provide progressive stiffness against increasing load.
+(4) It provides lubrication between the leaf spring.
+= 1
+~ A semi-elliptic leaf spring straightens and becomes longer as it deflects under load. Its front eye is pinned to a fixed bracket on the frame, while the rear eye is connected through a swinging shackle that allows this change in length. The spring is held on the axle by U-bolts and a centre bolt, progressive stiffness comes from graduated or helper leaves, and the leaves are lubricated with grease or graphite.
+
+Q 32 | chs | Clutch & Gearbox
+Which one of the following is a formula of the effective mean radius of a clutch for uniform pressure condition? (Where r₁ is inner radius and r₂ is outer radius).
+(1) (1/3)[(r₂³ − r₁³)/(r₂² − r₁²)]
+(2) (2/3)[(r₂³ − r₁³)/(r₂² − r₁²)]
+(3) (r₂ + r₁)/2
+(4) (2/3)[(r₁³ − r₂³)/(r₂² − r₁²)]
+= 2
+~ With uniform pressure p on the annular friction face, the axial load is W = πp(r₂² − r₁²) and the friction torque is T = (2/3)πμp(r₂³ − r₁³), so T = μWR with mean radius R = (2/3)(r₂³ − r₁³)/(r₂² − r₁²). With the uniform-wear assumption, used for worn clutches, the mean radius is (r₁ + r₂)/2 (option 3), giving a slightly smaller and safer torque estimate. Option 4 gives a negative value.
+
+Q 33 | chs | Clutch & Gearbox
+In gear box, the device that is used to lock collar into the gear is called ______.
+(1) reverse gear
+(2) dog clutch
+(3) electromagnetic clutch
+(4) diaphragm clutch
+= 2
+~ In constant-mesh and synchromesh gearboxes the gears turn freely on the main shaft, and a toothed sliding collar splined to the shaft, moved by the selector fork, engages dog teeth on the side of the chosen gear to lock it to the shaft. This arrangement is the dog clutch. Diaphragm and electromagnetic clutches are main clutches between engine and gearbox, and reverse gear is only a gear ratio.
+
+Q 34 | chs | Drive Line, Axles & Differential
+The terms used for a combination of transmission and rear axles as a unit of a vehicle is ______.
+(1) live axle
+(2) tandem axle
+(3) split axle
+(4) trans axle
+= 4
+~ A transaxle combines the gearbox (transmission) with the final drive and differential of the driving axle in a single housing. It is used in rear-engine rear-wheel-drive and front-engine front-wheel-drive vehicles and does away with a long propeller shaft. A live axle is one that transmits drive to the wheels, and a tandem axle is a pair of closely spaced axles used on heavy vehicles.
+
+Q 35 | chs | Wheels & Tyres
+If vehicle is taking a turn, what is the ratio of side force sustained to slip angle called?
+(1) Camber force
+(2) Cornering power
+(3) Frictional power
+(4) Camber angle
+= 2
+~ When a vehicle turns, the tyre deforms and runs at a slip angle to the plane of the wheel, developing a side or cornering force. The ratio of this side force to the slip angle, in newtons per degree, is the cornering power (cornering stiffness) of the tyre; it depends on inflation pressure, load, tyre construction and rim width. Camber force arises from the tilt of the wheel.
+
+Q 36 | chs | Drive Line, Axles & Differential
+Which of the following statement is correct about front axles of a vehicle?
+I. The front wheels are mounted on stub axles which are connected to the front axle by king pin.
+II. When brakes are provided at the front wheels the front axle withstand bending stresses only.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ Statement I is correct: the front wheels run on stub axles pivoted to the ends of the axle beam by king pins, so that they can be steered. Statement II is wrong: with brakes on the front wheels, the axle beam must resist bending due to the vehicle's weight and also torsion due to the braking torque. For this reason the beam has an I-section in the middle and a round or elliptical section near the ends.
+
+Q 37 | chs | Steering & Suspension
+Which of the following is correct regarding steering mechanism of a vehicle?
+I. In order to avoid skidding, the two front wheels instantaneous centre should not coincide with the two rear wheels instantaneous centre.
+II. The fundamental equation for correct steering is cot φ − cot θ = c/b.
+Where, c = distance between the pivots of front axle.
+b = wheel base
+θ = inner wheel turning angle
+φ = outer wheel turning angle
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ For true rolling without skidding, the axes of all four wheels must meet at one instantaneous centre lying on the line of the rear axle, so the front wheels' centre must coincide with that of the rear wheels; statement I is wrong. Statement II is the condition for correct steering, cot φ − cot θ = c/b, with φ the outer and θ the inner wheel angle; the Ackermann linkage satisfies it closely, and the Davis gear exactly.
+
+Q 38 | chs | Drive Line, Axles & Differential
+Which of the following statement is correct regarding transmission system of automobiles?
+I. The main advantage of an overdrive is prolonged engine life since the engine turns slower.
+II. A slip joint is attached to the driven yoke in order to increase or decrease the propeller shaft.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Both statements are correct. An overdrive makes the propeller shaft turn faster than the engine, so at cruising speed the engine runs slower, reducing wear and fuel consumption and prolonging engine life. A slip (sliding) joint, with splines between the shaft and a universal-joint yoke, lets the effective length of the propeller shaft increase or decrease as the rear axle moves up and down (statement II omits the word "length").
+
+Q 39 | chs | Drive Line, Axles & Differential
+Which of the following statement is correct regarding rear axles of a vehicle?
+I. The Banjo axle arrangement is a central housing that contains the final drive and it is fitted with a tube on each side to carry the half axles and bearings.
+II. The main advantage of three-quarter floating rear axle over the half floating axle is that the major part of the load is taken by the axle and not by the axle casing.
+III. A full floating rear axle is not supported by bearing at either end, is very strong and used for heavy duty vehicles.
+(1) Only II
+(2) I and II
+(3) Only III
+(4) II and III
+= 3
+~ Only III is correct. Statement I describes the Salisbury (carrier) type; a banjo casing is a one-piece housing with a large central opening, shaped like a banjo, into which a separate final-drive carrier is bolted. Statement II is reversed: in a three-quarter floating axle the hub bearing sits on the axle casing, so most of the load is taken by the casing, not the shaft. In a full-floating axle the hub runs on two bearings on the casing, so the shaft itself needs no bearing and only transmits torque; it suits heavy vehicles.
+
+Q 40 | chs | Drive Line, Axles & Differential
+Which of the following is correct regarding causes of axle failure of a vehicle?
+I. Lubricant is not maintained at the required level.
+II. The vehicle is over loaded.
+III. Using of lubricant of correct grade.
+(1) Only I
+(2) II and III
+(3) I and II
+(4) Only III
+= 3
+~ Axle failures commonly result from a low lubricant level, which leads to wear, overheating and seizure of bearings and gears, and from overloading the vehicle, which overstresses the shafts and casing. Wrong lubricant grade, poor adjustment and shock loads from snatching the clutch are other causes. Using a lubricant of the correct grade prevents failure, so III is not a cause.
+
+Q 41 | chs | Clutch & Gearbox
+Match the following symptoms with their causes for troubleshooting of gear box.
+Symptoms | Causes
+I. Oil leaks | 1. Excessive wear on gear shift control
+II. Gear jumps out | 2. Defective synchronizer
+III. Gears clash while they are shifted | 3. Broken gaskets
+| 4. Heavy heat contact on the ring gear
+(1) I-1, II-2, III-3
+(2) I-3, II-1, III-2
+(3) I-2, II-1, III-4
+(4) I-4, II-3, III-1
+= 2
+~ Oil leaks from a gearbox are mainly due to broken gaskets or worn oil seals (I-3). A gear that jumps out of mesh usually points to excessive wear in the gear-shift control, such as worn selector forks, weak detent springs or worn bearings (II-1). Gears that clash while shifting indicate a defective synchronizer or a dragging clutch (III-2). Hence I-3, II-1, III-2; contact marking on the ring gear concerns the final drive.
+
+Q 42 | chs | Drive Line, Axles & Differential
+Which of the following is a correctly matched pair universal joint of a vehicle with their classification?
+(1) Tracta type : Variable velocity joints
+(2) Rzeppa type : Variable velocity joint
+(3) Ball and Trunion type : Variable velocity joints
+(4) Ring type : Constant velocity joint
+= 3
+~ Universal joints are classed as variable-velocity joints, whose output speed fluctuates when they work at an angle, such as the cross or spider (Hooke's) type, the ring type and the ball-and-trunnion type; and constant-velocity joints such as the Tracta, Rzeppa and Bendix-Weiss types, which transmit uniform speed and are used in front-wheel drives. So ball and trunnion with variable velocity is correctly matched ("Trunion" is printed for trunnion).
+
+Q 43 | chs | Wheels & Tyres
+Which of the following is correctly matched pair regarding the tyres?
+(1) Ply : The cross grooved tyre tread
+(2) Carcass : An aunclar torridal shaped inflatable envelope made of an elastic material
+(3) Ribs : The layer of rubber coated parallel cords
+(4) Bead : Part which is shaped to fit the rim and hold the tyre on it
+= 4
+~ The bead is the stiff edge of the tyre, reinforced with steel wires, that is shaped to fit the rim and hold the tyre on it. A ply is a layer of rubber-coated parallel cords, the carcass is the body of the tyre built from these plies, and ribs and grooves make up the tread pattern. An annular toroidal inflatable envelope of elastic material describes the tyre itself ("aunclar torridal" is printed for annular toroidal).
+
+Q 44 | chs | Clutch & Gearbox
+Arrange the following position in decreasing order of power transmission based on the position of gear shift lever of a vehicle.
+I. Low position
+II. Reverse position
+III. Neutral position
+(1) I, II, III
+(2) II, I, III
+(3) III, I, II
+(4) III, II, I
+= 1
+~ In the low (first) position the gearbox gives a large reduction, so the greatest torque reaches the wheels for starting and climbing. The reverse position also gives a large reduction, but the drive passes through an extra idler gear, adding one more gear mesh and its friction loss, and is used only for slow manoeuvring. In neutral no gear on the main shaft is engaged, so no power is transmitted. The key's decreasing order is therefore low, reverse, neutral.
+
+Q 45 | chs | Brakes
+Arrange the following in a correct order (first to last) for air brakes of a vehicle.
+I. The air pressure act on a diaphragm of brake chamber.
+II. Brake shoes expands outwards and hold the moving brake drums.
+III. The foot pedal is pressed down.
+IV. The diaphragm is pushed outward in the brake chamber causing movement of brake shoe operating cam.
+(1) III, IV, I, II
+(2) III, I, IV, II
+(3) III, IV, II, I
+(4) III, II, IV, I
+= 2
+~ In an air brake system, pressing the foot pedal (III) opens the brake valve, admitting compressed air from the reservoir to the brake chambers, where it acts on the diaphragm (I). The diaphragm is pushed outward and, through the push rod and slack adjuster, turns the brake-shoe operating cam (IV), which expands the shoes against the rotating drums (II). Order: III, I, IV, II.
+
+Q 46 | chs | Clutch & Gearbox
+Arrange the following statements in correct order (first to last) regarding fluid coupling.
+I. The prime mover starts rotating.
+II. The oil is thrown outwards by centrifugal action by pump impeller.
+III. The oil then enters the impeller pump again.
+IV. The pump impeller starts rotating.
+V. The oil enters the turbine runner and exerts force on runner blades.
+VI. The torque increases results in rotation of turbine runner after overcoming inertia effects.
+(1) I, V, II, IV, III, VI
+(2) I, II, III, V, IV, VI
+(3) I, IV, II, V, VI, III
+(4) II, III, I, VI, IV, V
+= 3
+~ In a fluid coupling the prime mover (engine) starts rotating (I) and turns the pump impeller fixed to the driving shaft (IV). The impeller throws the oil outwards by centrifugal action (II) into the turbine runner, where it strikes the runner blades (V). As the torque builds up it overcomes inertia and the runner rotates (VI), and the oil returns to the impeller to circulate again (III). Order: I, IV, II, V, VI, III.
+
+Q 47 | mva | Vehicle Maintenance & Testing
+Which of the following is correct for improving fuel economy of vehicle?
+(1) Under inflated tyre consume less fuel
+(2) Check and maintain low engine oil level
+(3) Replace the brake fluid to avoid extra fuel consumption
+(4) Keep a constant speed as road traffic situation permit
+= 4
+~ Driving at a steady, moderate speed, as traffic permits, avoids repeated acceleration and braking, which waste fuel. Under-inflated tyres raise rolling resistance and consume more fuel, a low engine oil level increases friction and wear, and replacing brake fluid is a safety task that does not affect fuel consumption. Correct tyre pressures, timely servicing and avoiding needless idling also improve economy.
+
+Q 48 | ice | Engine Fundamentals & Cycles
+Which of the following is a standard operating condition for an automotive engine as per Indian Standard Institute?
+(1) Intake air temperature is 25°C
+(2) Water vapour pressure of 150 mm of Hg of mercury, corresponding to a relative humidity of 40 percent at 25°C
+(3) Mean barometric pressure of 736 mm Hg corresponding to an altitude of 300 metres above mean sea level
+(4) Intake temperature is 45°C
+= 3
+~ The "Indian Standard Institute" is the Indian Standards Institution, now the Bureau of Indian Standards. As keyed, its reference conditions for testing automotive engines include a mean barometric pressure of 736 mm Hg, corresponding to about 300 m above mean sea level; this agrees with the standard atmosphere, which gives about 733 mm Hg at 300 m. Option 2 is impossible, since the saturation vapour pressure of water at 25°C is only about 24 mm Hg, and the key accepts neither 25°C nor 45°C as the reference intake temperature.
+
+Q 49 | mva | Vehicle Maintenance & Testing
+Which of the following information is conveyed by the lubrication chart of the vehicle?
+(1) The type of lubricant needed for a particular point
+(2) The battery acid level
+(3) Carbon deposition on sparkplug
+(4) Type of engine oil needed
+= 1
+~ A lubrication chart, supplied by the vehicle manufacturer, shows each point on the vehicle that needs lubrication, the type or grade of lubricant for that point (engine oil, gear oil or grease) and the interval in kilometres or months. Battery electrolyte level and spark-plug deposits are checked in routine maintenance, and "type of engine oil" covers only one of the many points on the chart.
+
+Q 50 | ael | Batteries & Charging
+Which of the following is a part of charging system of the automotive electrical system?
+(1) Horns
+(2) Alternator
+(3) Electronic ignition systems
+(4) Lighting
+= 2
+~ The charging system consists of the battery, the alternator (the dynamo in older vehicles) with its rectifier and voltage regulator, and the charge warning lamp. The belt-driven alternator recharges the battery and supplies the electrical load while the engine runs. Horns, lighting and the ignition system are consumers of electrical energy, not parts of the charging system.
+
+Q 51 | ael | Batteries & Charging
+Which of the following test is conducted to ascertain the conditions of a battery of an automobile?
+(1) Hydrometer testing
+(2) Morse testing
+(3) Motoring test
+(4) Static brake testing
+= 1
+~ The state of charge of a lead-acid battery is checked by measuring the specific gravity of its electrolyte with a hydrometer: about 1.26–1.28 when fully charged, falling to about 1.12 when discharged. The Morse test finds the indicated power of each cylinder of a multi-cylinder engine, the motoring test finds friction power, and a static brake test checks brakes, so none of them tells the battery's condition.
+
+Q 52 | ael | Starting & Ignition
+Which of the following is a merit of transistorized coil ignition systems over conventional ignition system of a vehicle?
+(1) Better working of contact breaker at high speeds
+(2) Less costly
+(3) Increased service life of spark plug
+(4) Improves life of contact breaker
+= 3
+~ In a transistorised coil ignition system a power transistor switches the coil primary current, triggered by breaker points carrying only a tiny control current or by a breakerless pulse generator. The higher, steadier secondary voltage at all speeds reduces misfiring and plug fouling, so spark plugs last longer; the system costs more, not less. Because the version that keeps breaker points also lengthens their life, option 4 is also argued. (Preliminary key; some sources differ.)
+
+Q 53 | ael | Lighting, Instruments & Wiring
+According to Lucas, what is the colour of wiring cables for dynamo circuit of a car?
+(1) Red
+(2) Black
+(3) Green
+(4) Yellow
+= 4
+~ The Lucas (British) cable colour code identifies each circuit by the colour of its insulation, and yellow is used for the dynamo (charging) circuit. In the same code brown is the main battery feed, red is for side and tail lamps, green for fused accessories switched through the ignition, and black for earth connections.
+
+Q 54 | ael | Lighting, Instruments & Wiring
+The lights which indicate the direction the vehicle is about to turn are ______.
+(1) side lights
+(2) trafficators
+(3) tail light
+(4) reverse light
+= 2
+~ Trafficators, or direction indicators, show the direction in which the vehicle is about to turn; early ones were illuminated semaphore arms, and modern vehicles use flashing amber lamps worked by a flasher unit. Side lights mark the width of a parked or moving vehicle, tail lights are red lamps at the rear, and the reverse light is a white lamp lit when reverse gear is engaged.
+
+Q 55 | thm | Refrigeration & Air Conditioning
+Which of the following is correct regarding hot water liquid heater in an automobile?
+(1) It consists of a combustion chamber and re-ignitor.
+(2) Outside air made to flow through the passage between the covering and exhaust manifold and air then circulated inside the car.
+(3) The heat from the coolant circulating inside the engine is converted into hot air.
+(4) A mixture of air and fuel is drawn from carburetor and burns inside the combustion chamber.
+= 3
+~ A hot-water heater passes hot engine coolant through a small radiator (heater core) behind the dashboard, and a blower fan drives air through it into the passenger compartment, so the coolant's heat becomes hot air. Options 1 and 4 describe a combustion heater, which burns fuel in its own chamber, and option 2 describes an exhaust-manifold (exhaust) heater.
+
+Q 56 | mva | Vehicle Maintenance & Testing
+Which of the following is correct regarding the preventive maintenance of a car?
+(1) The horsepower improves more than the rated level
+(2) Fuel mileage is increased dramatically
+(3) There is no replacement of parts
+(4) It leads to sharp drop in performance of vehicle
+= 2
+~ Preventive maintenance is scheduled inspection, adjustment, lubrication and replacement of wearing parts such as filters, plugs and belts before they fail. A well-tuned engine with clean filters and correct tyre pressures gives better fuel mileage, the keyed option, though "dramatically" overstates the gain. It cannot raise power above the rated level, it does involve planned replacement of parts, and it prevents rather than causes a drop in performance.
+
+Q 57 | mva | Vehicle Maintenance & Testing
+Which of the following is a correct about preventive maintenance of piston and piston rings of a car?
+I. Piston rings are to be checked for tension and scratches.
+II The carbon is removed and piston is cleaned using caustic cleaning solution and wire brush.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ During servicing, piston rings are checked for tension, wear, scratches and end gap, so statement I is correct. Pistons are usually of aluminium alloy, which is attacked by caustic (alkaline) cleaning solutions and scored by a wire brush; carbon is therefore removed with a suitable solvent and a soft scraper, and ring grooves with a groove cleaner. Statement II is wrong, so only I is correct.
+
+Q 58 | ael | Starting & Ignition
+Which of the following is correct about vacuum spark advance mechanism of an engine?
+I. It contains a spring loaded diaphragm which is connected with the distributor by means of a link and damp.
+II. When distributor body is rotated opposite to the rotation of the rotor ignition is advanced.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ The vacuum advance unit has a spring-loaded diaphragm whose chamber is piped to the inlet manifold near the throttle; a link connects the diaphragm to the contact-breaker plate of the distributor. At part throttle the high vacuum pulls the diaphragm and turns the plate against the direction of cam (rotor) rotation, so the points open earlier and ignition is advanced, which is also why turning the distributor body against rotor rotation advances timing. Both statements are correct.
+
+Q 59 | ael | Starting & Ignition
+Which of the following statements is correct regarding starting motor of an automobile?
+I. Bendix drive is known as overrunning clutch drive.
+II. The pole shoes hold the field coils and become magnetized when current flows through the coil.
+III. The purpose of the solenoid switch is to shift the drive pinion magnetically into mesh with the flywheel to complete the circuit.
+IV. If the starter works but does not crank the engine then the solenoid switch may be defective.
+(1) I, II
+(2) I, II and III
+(3) II, IV
+(4) II, III
+= 4
+~ The Bendix drive is an inertia drive in which the pinion runs along a screwed sleeve into mesh; the overrunning (roller) clutch drive is a different type, so I is wrong. Pole shoes carry the field coils and become electromagnets (II), and the solenoid shifts the pinion into mesh with the flywheel ring gear and closes the main circuit (III). A motor that spins without cranking points to a slipping drive or overrunning clutch, not the solenoid, so IV is wrong.
+
+Q 60 | ael | Batteries & Charging
+Match the following.
+Function | Components
+I. Convert mechanical energy from engine into electrical energy | 1. Regulator
+II. Control the amount of electrical energy produced | 2. Relay
+III. Converts electrical energy into mechanical energy | 3. Dynamo
+| 4. Starting motor
+(1) I-3, II-1, III-4
+(2) I-1, II-4, III-3
+(3) I-2, II-1, III-4
+(4) I-1, II-2, III-3
+= 1
+~ The dynamo (generator), driven by the engine, converts mechanical energy into electrical energy (I-3). The regulator controls the dynamo's output voltage and current, and so the amount of electrical energy produced (II-1). The starting motor converts electrical energy from the battery into mechanical energy to crank the engine (III-4). A relay is only an electrically operated switch, so it is the extra item.
+
+Q 61 | ael | Starting & Ignition
+Which of the following is a correctly matched pair regarding troubles in spark plug and ignition system with their cause?
+I. Engine misfires on one cylinder : Detached high tension cable
+II. External insulator broken : Defective ignition coil
+III. Engine gets unduly hot : Loose contact screws
+(1) Only III
+(2) Only I and II
+(3) Only I
+(4) Only I and III
+= 3
+~ A detached or broken high-tension lead stops the spark reaching one plug, so that cylinder misfires: pair I is correct. A broken external insulator is mechanical damage from careless handling or a wrong or slipping spanner during fitting, not a coil defect. Undue engine heating is traced to causes such as wrong ignition timing, a plug of the wrong heat range or a cooling fault, not loose contact screws. Only pair I is correctly matched.
+
+Q 62 | ael | Lighting, Instruments & Wiring
+Arrange the following in decreasing order of total value of resistance.
+I. V = 200 V, I = 10 Amp
+II. R₁ = 5.5 Ω, R₂ = 10 Ω and R₃ = 6.5 Ω arranged in series circuit
+III. R₁ = 5 Ω, R₂ = 12 Ω and R₃ = 6 Ω arranged in parallel circuit
+(1) I, II, III
+(2) I, III, II
+(3) II, III, I
+(4) II, I, III
+= 4
+~ By Ohm's law, I gives R = V/I = 200/10 = 20 Ω. In series, resistances add: II gives 5.5 + 10 + 6.5 = 22 Ω. In parallel, reciprocals add: for III, 1/R = 1/5 + 1/12 + 1/6 = 0.45, so R ≈ 2.22 Ω, smaller than the smallest single resistor. The decreasing order is II (22 Ω), I (20 Ω), III (2.22 Ω).
+
+Q 63 | mva | Vehicle Maintenance & Testing
+Arrange the following in a correct order (first to last) for washing the car.
+I. Wash all body panels.
+II. Lift the car on a car lift.
+III. Dry the car using a clean chamois.
+IV. Complete the washing with a sponge using running water.
+V. Wash the bottom of the car wheels included.
+VI. Rub a polishing compound of good commercial grade with a cloth.
+(1) II, V, VI, III, I, IV
+(2) I, IV, III, VI, V, II
+(3) III, II, V, IV, I, VI
+(4) II, V, I, IV, III, VI
+= 4
+~ The car is first raised on a lift so that the underbody and wheels, the dirtiest parts, can be washed before the panels; mud splashed from below would otherwise spoil cleaned panels. The body panels are then washed, the washing is finished with a sponge under running water, the car is dried with a clean chamois, and the polishing compound is applied last on the dry, clean surface: II, V, I, IV, III, VI.
+
+Q 64 | mec | Engineering Mechanics
+What is the value of TAB and TAC in the given diagram? (where sin165° = 0.26)
+(1) TAB = 4950 N, TAC = 3005 N
+(2) TAC = 1810 N, TAB = 4950 N
+(3) TAB = 1810 N, TAB = 3500 N
+(4) TAB = 3500 N, TAC = 1810 N
+= 2
+! img/t23a-q64.png
+~ Three concurrent forces in equilibrium obey Lami's theorem. The angles between the forces are 150° (TAB and TAC), 45° (TAC and the 3500 N weight) and 165° (weight and TAB). So TAB = 3500 × sin 45°/sin 150° = 3500 × 0.7071/0.5 ≈ 4950 N and TAC = 3500 × sin 165°/sin 150° ≈ 1812 N, about 1810 N (1820 N with the rounded 0.26). Option 3 prints TAB twice, a misprint.
+
+Q 65 | mfg | Metrology & Measurement
+The prefix used to show multiplying factor of 10⁻¹² is ______.
+(1) tera
+(2) nano
+(3) pico
+(4) fermi
+= 3
+~ The SI prefix pico (symbol p) stands for 10⁻¹², as in picofarad (pF). Tera (T) is 10¹² and nano (n) is 10⁻⁹. The fermi is not a prefix at all but an old name for the femtometre, a unit of length equal to 10⁻¹⁵ m; the prefix for 10⁻¹⁵ is femto (f).
+
+Q 66 | mec | Engineering Mechanics
+What is the total load acting on the beam AB?
+(1) 14400 N
+(2) 7200 N
+(3) 720 N
+(4) 1440 N
+= 3
+! img/t23a-q66.png
+~ The beam carries a uniformly varying (triangular) load rising from zero at A to 120 N/m at B over 12 m. The total load equals the area of the load diagram: ½ × 12 m × 120 N/m = 720 N, acting through the centroid of the triangle, 8 m from A. 1440 N is the value for a uniform 120 N/m load over the full span.
+
+Q 67 | mec | Engineering Mechanics
+The ratio of the limiting force of friction (F) to the normal reaction (R) between two bodies is called ______.
+(1) Coefficient of repose
+(2) Angle of repose
+(3) Frictional power
+(4) Coefficient of friction
+= 4
+~ The coefficient of friction is μ = F/R, the ratio of the limiting friction force to the normal reaction between the surfaces. The angle of repose is the angle of an inclined plane at which a body resting on it just begins to slide; it equals the angle of friction, with tan φ = μ. "Coefficient of repose" is not a standard term.
+
+Q 68 | mec | Strength of Materials
+The change in length (elongation) of bar due to self-weight is given by ______. (P = Load, ρ = density, E = Young’s Modulus, d₁ and d₂ are diameters)
+(1) ρgl/(3E)
+(2) ρgl²/(2E)
+(3) 4PL/(πd₁d₂E)
+(4) ρgL/(2πd₁d₂G)
+= 2
+~ For a bar of length l hanging under its own weight, the weight below a section at distance x from the free end is ρgAx, so the stress there is ρgx. Integrating the strain ρgx/E over the length gives δ = ρgl²/(2E), which equals WL/(2AE) with W the total weight. The expression 4PL/(πd₁d₂E) is the elongation of a tapering circular bar under an axial load P.
+
+Q 69 | mec | Strength of Materials
+Which of the following is a correct relation between the material properties? (where (1/m) is poission ratio, K is bulk modulus, E is Young’s modulus)
+(1) K = mE/(3(m − 2))
+(2) K = E/(2(1/m + 1))
+(3) K = 2mE/(m + 2)
+(4) K = mE/(2m + 1)
+= 1
+~ Young's modulus and bulk modulus are related by E = 3K(1 − 2μ), where μ is Poisson's ratio. Putting μ = 1/m gives E = 3K(m − 2)/m, so K = mE/(3(m − 2)). Option 2, E/(2(1/m + 1)) = mE/(2(m + 1)), is the modulus of rigidity C, not the bulk modulus.
+
+Q 70 | mec | Strength of Materials
+Which of the following is a possible shear force diagram for an inclined beam under uniformly distributed load and a point load as shown in a diagram?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+! img/t23a-q70.png
+~ A uniformly distributed load makes the shear force change linearly along the loaded length, and a point load makes it jump suddenly at the point where it acts. The beam is loaded by the UDL throughout and by P near its lower end, so the shear force diagram is a sloping straight line with a vertical step at P, as in Figure 3. Figure 2 has only steps (point loads alone), Figure 1 has a constant part, and Figure 4 is curved.
+
+Q 71 | mec | Strength of Materials
+The maximum deflection for a simply supported beam with a uniformly distributed load is given by ______. (Where w is weight per unit length)
+(1) wl³/(584El)
+(2) 5wl⁴/(384El)
+(3) wl³/(16El)
+(4) wl⁴/(48El)
+= 2
+~ For a simply supported beam of span l carrying a uniformly distributed load w per unit length, the maximum deflection occurs at mid-span and is 5wl⁴/(384EI), where EI is the flexural rigidity (printed "El" in the options). The similar form Wl³/(48EI) is the central deflection under a single central point load W, so the other options mix up the two cases.
+
+Q 72 | mec | Strength of Materials
+Which of the following is a bending moment diagram for a cantilever beam with a uniformly distributed load?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/t23a-q72.png
+~ For a cantilever carrying a uniformly distributed load w, the bending moment at distance x from the free end is wx²/2. The diagram is therefore a parabola (second-degree curve), zero at the free end and rising to wL²/2 at the fixed end, as in Figure 4. A triangle (Figure 1) is the diagram for a point load at the free end, and a rectangle (Figure 2) for a pure couple.
+
+Q 73 | mec | Strength of Materials
+The ratio of lateral strain to linear strain of a body is called ______.
+(1) Resilience
+(2) Deflection
+(3) Poisson's ratio
+(4) Young’s modulus
+= 3
+~ Within the elastic limit, the ratio of lateral strain to linear (longitudinal) strain is constant for a material and is called Poisson's ratio, about 0.25–0.33 for most metals. Young's modulus is the ratio of stress to linear strain, resilience is the strain energy stored in a body, and deflection is the displacement of a beam under load.
+
+Q 74 | mec | Strength of Materials
+Which of the following is correct about strain in a body?
+I. Shear strain is defined as the ratio between change in volume and original volume of the body.
+II. The ratio between the compressing stress and compressive strain is called modulus of elasticity.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ The ratio of change in volume to original volume is volumetric strain, not shear strain; shear strain is the angular distortion (in radians) produced by shear stress. Within the elastic limit, the ratio of compressive stress to compressive strain is the modulus of elasticity (Young's modulus), just as for tension. So only statement II is correct.
+
+Q 75 | mec | Strength of Materials
+Which of the following is correct regarding load?
+I. For a bar with different section subjected to axial load P, the resultant deformation will be summation of change of length of every section.
+II. For the above diagram the value of P₁ is 52 N.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 1
+! img/t23a-q75.png
+~ For a bar made of sections of different areas, the total change in length is the sum of the changes of the individual sections, δ = Σ PᵢLᵢ/(AᵢEᵢ), so I is correct. In the diagram, 40 N acts to the left at A, while 12 N and P₁ act to the right. For equilibrium P₁ + 12 = 40, giving P₁ = 28 N, not 52 N, so II is wrong.
+
+Q 76 | mec | Strength of Materials
+A 1 m long rod is fixed at both ends. What is the temperature through which rod can be heated to NOT exceed the thermal stress of 90 MPa? The value of α is 2 × 10⁻⁵ K⁻¹ and E is 90 GPa.
+(1) 90 K
+(2) 180 K
+(3) 50 K
+(4) 100 K
+= 3
+~ When a rod fixed at both ends is heated, its free expansion is fully prevented and the thermal stress is σ = EαΔT, independent of the length. So ΔT = σ/(Eα) = 90 × 10⁶/(90 × 10⁹ × 2 × 10⁻⁵) = 50 K. Heating it by more than 50 K would raise the stress above 90 MPa.
+
+Q 77 | mec | Strength of Materials
+Which of the following is correct regarding thermal stress?
+I. If the supports yield by an amount Δ, the change in length will be summation of l α T and Δ.
+II. The stress of the supports yield by an amount Δ is (αt − Δ/l) E.
+(where l = length of the original body, α = coefficient of thermal expansion)
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ Free thermal expansion is lαT. If the supports yield by Δ, part of this expansion is allowed, so the expansion prevented is the difference lαT − Δ, not the sum; statement I is wrong. The thermal stress is then (lαT − Δ)E/l = (αT − Δ/l)E, which is statement II (printed with a small t for the temperature rise T).
+
+Q 78 | mec | Strength of Materials
+Which of the following is correct regarding elasticity of a body?
+I. In elasticity, the body regains its shape after force is removed.
+II. The resistance force remains even after load is removed.
+III. The body can regain its original shape after load removed upto elastic limit.
+(1) Only I
+(2) II and III only
+(3) I and III only
+(4) I and II only
+= 3
+~ Elasticity is the property by which a body returns to its original shape and size when the deforming force is removed, and this holds only up to the elastic limit; beyond it some permanent set remains. So I and III are correct. The internal resisting force exists only while the load acts and vanishes when the load is removed, so II is wrong.
+
+Q 79 | mec | Strength of Materials
+Which of the following is correct regarding shearing force, bending moment and loading condition on the beam?
+I. A point load at a section on the beam will cause sudden change in shear force.
+II. A point load at a section on the beam will results in sudden change in bending moment.
+III. When there is no load between two point, then shear force does not change.
+(1) Only I
+(2) II and III only
+(3) I and III only
+(4) II only
+= 3
+~ Since dF/dx = −w, a point load makes the shear force jump suddenly by the value of the load (I correct), and over a length with no load the shear force stays constant (III correct). Because dM/dx = F, a point load only changes the slope of the bending moment diagram; a sudden change in bending moment is caused by a concentrated couple, so II is wrong.
+
+Q 80 | mec | Strength of Materials
+Match the following bending moment diagram with the conditions.
+(1) I-1, II-2, III-3, IV-4
+(2) I-2, II-1, III-3, IV-4
+(3) I-2, II-3, III-4, IV-1
+(4) I-1, II-4, III-2, IV-3
+= 4
+! img/t23a-q80.png
+~ For a cantilever, a point load at the free end gives a bending moment varying linearly from zero to WL, a triangle (I-1). A moment alone gives a constant bending moment, a rectangle (II-4). A uniformly distributed load over the whole length gives a parabola (III-2). A load over only part of the length gives a curve over the loaded part joined to a straight line over the unloaded part (IV-3).
+
+Q 81 | mec | Strength of Materials
+Which of the following is a correctly matched pair regarding section modulus of different section?
+(1) Hollow circular section : Z = (π/32)(D⁴ − d⁴)/(D/2)
+(2) Solid circular section : Z = (π/32)d³
+(3) Solid semi-circular section : Z = (3π/64)d³
+(4) Hollow circular section : Z = (π/14)(D⁴ − d⁴)
+= 2
+~ The section modulus is Z = I/y(max). For a solid circle, I = πd⁴/64 and y(max) = d/2, so Z = πd³/32. For a hollow circle, I = π(D⁴ − d⁴)/64 and y(max) = D/2, so Z = π(D⁴ − d⁴)/(32D); option 1 uses π/32 instead of π/64 and doubles this. For a semicircle, Z is only about 0.024d³, far below 3πd³/64.
+
+Q 82 | mec | Strength of Materials
+Arrange the following in the increasing order of maximum bending moment for the given loading condition.
+(1) I, II, III
+(2) II, III, I
+(3) III, II, I
+(4) III, I, II
+= 4
+! img/t23a-q82.png
+~ I: the 10 kN load acts on a bracket at 2 m from A, so R(A) = 10 × 3/5 = 6 kN; just left of the bracket joint at 3 m, M = 6 × 3 = 18 kN·m. II: a cantilever with 10 kN at the free end has M(max) = 10 × 3 = 30 kN·m at the support. III: the 24 kN·m couple at mid-span gives reactions of 24/4 = 6 kN and M(max) = 6 × 2 = 12 kN·m. So III < I < II.
+
+Q 83 | mec | Engineering Mechanics
+Arrange the following in a decreasing order of the moment of inertia of the given geometric shapes.
+I. Circle
+II. Quarter circle
+III. Semi-circle
+(1) I, II, III
+(2) II, III, I
+(3) I, III, II
+(4) II, I, III
+= 3
+~ For the same radius r, a full circle has I = πr⁴/4 about a diameter. A semicircle is half of it, πr⁴/8 about its diameter, and a quarter circle is a quarter, πr⁴/16 about either straight edge, because each is a part of the full circle about the same axis. About their own centroidal axes the order is the same (about 0.785r⁴, 0.110r⁴ and 0.055r⁴). So the decreasing order is circle, semicircle, quarter circle: I, III, II.
+
+Q 84 | mec | Engineering Mechanics
+Arrange the following steps of analysis of machines in a correct order (first to last).
+I. Dismember the machine and draw a free body diagram of each member.
+II. Draw a free body diagram of the whole machine.
+III. Equilibrium equations can be written and solved.
+IV. Consider multiforce member and show all the forces acting on the member.
+V. Finally check your solution.
+(1) I, III, IV, II, V
+(2) II, I, III, IV, V
+(3) II, I, IV, III, V
+(4) IV, I, II, III, V
+= 3
+~ A machine (or frame) is analysed by first drawing the free-body diagram of the whole machine to relate the external forces and reactions. It is then dismembered and a free-body diagram of each member is drawn; the multiforce members are considered with all the forces acting on them, equal and opposite forces being shown at the connections. The equilibrium equations are then written and solved, and the solution is finally checked: II, I, IV, III, V.
+
+Q 85 | mfg | Metrology & Measurement
+For the limit system, what is the difference between the basic dimensions of the mating parts is called?
+(1) Allowance
+(2) Fundamental deviation
+(3) Tolerance
+(4) Mean deviation
+= 1
+~ In the system of limits and fits, allowance is the intentional difference between the basic dimensions of the mating parts, that is, the minimum clearance or the maximum interference between a hole and a shaft. Tolerance is the difference between the upper and lower limits of one dimension, and the fundamental deviation is the deviation closest to the zero line that fixes the position of the tolerance zone.
+
+Q 86 | mec | Machine Design
+The ratio of maximum stress to the working stress of a material is called ______.
+(1) Strain
+(2) Poisson’s ratio
+(3) Factor of safety
+(4) Young modulus
+= 3
+~ The factor of safety is the ratio of the maximum stress a material can bear (ultimate stress for brittle materials, yield stress for ductile ones) to the working or permissible stress used in design. It allows for uncertain loads, material defects and errors of analysis. Strain is deformation per unit length, and Poisson's ratio and Young's modulus are elastic constants.
+
+Q 87 | mec | Machine Design
+The stresses which vary from one value of tensile to same value of compressive or vice versa of the beam are known as ______.
+(1) repeated stress
+(2) bending stress
+(3) fluctuating stress
+(4) completely reversed stress
+= 4
+~ A completely reversed (alternating) stress swings between equal tensile and compressive values, so its mean stress is zero; a rotating shaft under bending is the usual example. A repeated stress varies from zero to a maximum of the same kind, and a fluctuating stress varies between two unequal values. Bending stress names the cause of the stress, not how it varies with time.
+
+Q 88 | mfg | Manufacturing & Workshop
+What does the weld symbol ‘—’ represents according to IS : 813 – 1961?
+(1) Field weld
+(2) Chipping finish
+(3) Flush contour
+(4) Flash welding
+= 3
+~ IS 813 (Scheme of symbols for welding; the 1961 edition has since been replaced by its first revision, IS 813:1986) uses supplementary contour symbols placed with the weld symbol. A straight line means a flush (flat) contour, the weld face finished level with the plate surface; a convex arc means convex contour and a concave arc concave contour. Field (site) welds and finishing methods such as chipping are shown by other marks or letters, and flash welding is a resistance welding process.
+
+Q 89 | mec | Machine Design
+The surface joining the crest and root of the screw threads is called ______.
+(1) pitch
+(2) slope
+(3) lead
+(4) flank
+= 4
+~ The flank of a screw thread is the surface joining the crest (the top of the thread) to the root (the bottom of the groove). Pitch is the axial distance between corresponding points on adjacent threads, and lead is the axial distance the nut advances in one turn, equal to the pitch multiplied by the number of starts.
+
+Q 90 | mec | Engineering Mechanics
+The ratio of load lifted to the effort applied for a lever is called ______.
+(1) Notch sensitivity
+(2) Moment
+(3) Mechanical advantage
+(4) Mechanical efficiency
+= 3
+~ Mechanical advantage is the ratio of the load lifted (W) to the effort applied (P); for an ideal lever it equals the effort arm divided by the load arm. Mechanical efficiency is the ratio of mechanical advantage to velocity ratio, a moment is a force multiplied by its perpendicular distance from a point, and notch sensitivity is a term from fatigue design.
+
+Q 91 | mec | Machine Design
+The perpendicular distance between the centre lines of the successive rows in riveted joints is called ______.
+(1) pitch
+(2) marginal pitch
+(3) back pitch
+(4) diagonal pitch
+= 3
+~ In a riveted joint, the back pitch (row pitch) is the perpendicular distance between the centre lines of successive rows of rivets. The pitch is the distance between centres of adjacent rivets in the same row, the diagonal pitch is between centres of rivets in adjacent rows of a zig-zag joint, and the margin or marginal pitch is the distance from a rivet hole centre to the plate edge.
+
+Q 92 | mec | Machine Design
+Which one of the following is related to the crushing of the rivets? (where, α = coefficient of thermal expansion, ΔT = change in temperature, σc = crushing stress, p = pitch of rivets, d = diameter of rivet hole, t = thickness of the plate and n = number rivets, Pc = crushing resistance)
+(1) Pc = n.d.t.σc
+(2) Pc = n(π/4).d². σc
+(3) Pc = (p − d)t. σc
+(4) Pc = α ΔT
+= 1
+~ The crushing (bearing) resistance of the rivets is the projected bearing area of each rivet, d × t, times the permissible crushing stress, times the number of rivets per pitch length: Pc = n·d·t·σc. The form n(π/4)d² goes with shear stress in the shearing resistance of rivets, (p − d)t goes with tensile stress in the tearing resistance of the plate, and αΔT is a thermal strain.
+
+Q 93 | mec | Theory of Machines
+Which of the following gives the coefficient of fluctuation of speed of a flywheel? (where N₁ = Maximum speed during cycle and N₂ is minimum speed during the cycle)
+(1) Cₛ = (N₁ + N₂)/(N₁ − N₂)
+(2) Cₛ = (N₁ − N₂)/(2(N₁ + N₂))
+(3) Cₛ = 2(N₁ − N₂)/(N₁ + N₂)
+(4) Cₛ = 2(N₁ + N₂)/(N₁ − N₂)
+= 3
+~ The coefficient of fluctuation of speed is the maximum fluctuation of speed divided by the mean speed: Cₛ = (N₁ − N₂)/N, where the mean speed N = (N₁ + N₂)/2. Substituting gives Cₛ = 2(N₁ − N₂)/(N₁ + N₂). A heavier flywheel lowers this value; its reciprocal is called the coefficient of steadiness.
+
+Q 94 | mec | Machine Design
+Which of the following is correct regarding leaf spring?
+(1) It consists of a number of flat plates of varying lengths.
+(2) In this spring, fluid behave as a compressive spring.
+(3) This type of springs are helical in shape and used under compressive load only.
+(4) It is made of a wire coiled in the form of a helix.
+= 1
+~ A leaf (laminated or carriage) spring is built up from a number of flat steel plates (leaves) of graded lengths held together by a centre bolt and clips; it is widely used in vehicle suspensions. Options 3 and 4 describe helical (coil) springs, and option 2 describes a fluid or gas spring, as in air or hydropneumatic suspension.
+
+Q 95 | chs | Clutch & Gearbox
+Which of the following is correct regarding clutches?
+I. The material used as a friction surface of clutch should have low heat conductivity.
+II. The material used as a friction surface for clutches should have high and uniform coefficient of friction.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ A clutch friction material should have a high and uniform coefficient of friction so that it transmits torque smoothly (II correct). It should also have high heat conductivity, to carry away the heat produced during slipping, and should withstand high temperature, resist wear and not be affected by moisture or oil. Low heat conductivity would let the lining overheat and fade, so I is wrong.
+
+Q 96 | mec | Machine Design
+Which of the following is the advantage of rolling contact bearings over sliding contact bearings?
+I. They have high resistance to shock loading.
+II. They have low starting and running friction except at very high speeds.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ Rolling contact (ball and roller) bearings have low starting and running friction except at very high speeds, which is their main advantage over sliding (journal) bearings (II correct). Because the load is carried at very small contact areas, they have low resistance to shock loading, which textbooks list as a disadvantage, and they are noisier at high speeds and costlier. Sliding bearings with an oil film take shocks better, so I is wrong.
+
+Q 97 | mec | Theory of Machines
+Which of the following is the advantage of the involute gears?
+I. The centre distance for a pair of involute gear can be varied within limits without changing the velocity ratio.
+II. The interference does not occur at all in this type of gears.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ The great advantage of involute gears is that the centre distance can vary within limits without changing the velocity ratio, since the base circles and the common normal stay the same; they are also easy to cut. Interference, however, can occur in involute gears when the number of teeth on the pinion is small; it is cycloidal gears that are free from interference. So only I is correct.
+
+Q 98 | mec | Machine Design
+Which of the following is correct regarding springs?
+I. For the springs connected in series, the total deflection of the springs is summation of the deflection of each spring.
+II. For the springs connected in series, the combined stiffness of the spring is sum of the stiffness of each spring.
+III. For the springs connected in parallel, the total load acting on it is the sum of the loads acting on individual springs.
+(1) I and II
+(2) II and III
+(3) I and III
+(4) Only III
+= 3
+~ Springs in series carry the same load, so the total deflection is the sum of the individual deflections (I correct) and the combined stiffness follows 1/k = 1/k₁ + 1/k₂, which is less than either stiffness, so II is wrong. Springs in parallel deflect by the same amount, the total load is the sum of the loads on the individual springs (III correct), and their stiffnesses add.
+
+Q 99 | mec | Machine Design
+Which of the following is correct regarding the sunk keys?
+I. A rectangular sunk key with a head at one end is called splines.
+II. A key attached as one member of a pair and which permits relative axial movement is known as woodruff key.
+III. Woodruff key’s advantage is it accommodates itself to any taper in the hub or boss of the mating piece.
+(1) Only I
+(2) II and III
+(3) Only III
+(4) I and III only
+= 3
+~ A rectangular sunk key with a head at one end is a gib-head key; splines are keys made integral with the shaft. A key fixed to one member that allows relative axial movement is a feather key. A Woodruff key is a semicircular disc fitted in a curved seat, and it can tilt to accommodate itself to any taper in the hub or boss of the mating piece. So only III is correct.
+
+Q 100 | mec | Machine Design
+Match the following method with the equation for combination of stresses. (where σv = variable stress, σm = mean stress, σu = ultimate stress, σe = endurance limit for reversed loading, Kf = fatigue stress concentration factor, F.S. = factor of safety, σy = yielding stress)
+Equation for combination of stress | Method
+I. 1/F.S. = (σm/σu)² F.S. + σv.Kf/σe | 1. Soderberg method
+II. 1/F.S. = σm/σu + σv.Kf/σe | 2. Gerber method
+III. 1/F.S. = σm/σy + σv.Kf/σe | 3. Goodman method
+(1) I-1, II-3, III-2
+(2) I-2, II-1, III-3
+(3) I-3, II-2, III-1
+(4) I-2, II-3, III-1
+= 4
+~ For combined mean and variable stresses, the Gerber method uses a parabola, so the mean-stress term is squared: 1/F.S. = (σm/σu)² F.S. + σv·Kf/σe (I-2). The Goodman method uses a straight line through the ultimate stress: 1/F.S. = σm/σu + σv·Kf/σe (II-3). The Soderberg method uses a straight line through the yield stress, the most conservative: 1/F.S. = σm/σy + σv·Kf/σe (III-1).
+
+Q 101 | mec | Theory of Machines
+Which of the following is a correctly matched pair regarding the classification of gears based on the position of axes of shafts?
+(1) Mitres : Intersecting and non-parallel
+(2) Spur gear : Non-parallel and non-intersecting
+(3) Helical gear : Intersecting and non-parallel
+(4) Spiral gear : Parallel and non-intersecting
+= 1
+~ Mitre gears are bevel gears of equal size whose shaft axes intersect, usually at right angles, so they connect intersecting and non-parallel shafts. Spur gears and ordinary helical gears connect parallel shafts, while spiral (crossed helical) gears connect shafts that are non-parallel and non-intersecting, so the other three pairs are wrongly matched.
+
+Q 102 | mec | Strength of Materials
+Which one of the following is a correctly matched pair?
+Section | Distance from the neutral axis to the extreme fibre
+I. Triangle | h/2
+II. Hollow rectangle | h/2
+III. I-section | h/3
+IV. Hollow circle | (d − d₁)/2, (where d = outer diameter and d₁ = inner diameter)
+(1) Only I
+(2) Only II
+(3) II and III
+(4) Only IV
+= 2
+~ The neutral axis passes through the centroid. In a hollow rectangle of overall depth h it lies at mid-depth, so the extreme fibre is h/2 away and pair II is correct. In a triangle the centroid is h/3 from the base, so the extreme fibre (apex) is 2h/3 away; a symmetrical I-section gives h/2, not h/3; and a hollow circle gives d/2 (half the outer diameter), not (d − d₁)/2. Hence only II.
+
+Q 103 | mec | Machine Design
+For a same tensile load, arrange the following in an increasing order of maximum stress, given the theoretical stress concentration factor is (1 + 2a/b). (where r = radius of the circle)
+(1) I, II, III
+(2) II, I, III
+(3) II, III, I
+(4) I, III, II
+= 3
+! img/t23a-q103.png
+~ For an elliptical hole Kt = 1 + 2a/b, where a is the semi-axis at right angles to the load and b the semi-axis along it. In II the long axis lies along the load (a < b), so Kt < 3; in III the hole is a circle (a = b = r), so Kt = 3; in I the long axis lies across the load (a > b), so Kt > 3. For the same load the maximum stress rises with Kt: II, III, I.
+
+Q 104 | mec | Machine Design
+Arrange the following steps of procedure to solve design problem in a correct order (first to last).
+I. Synthesis
+II. Material selection
+III. Recognition of need
+IV. Detailed drawing
+V. Modification
+VI. Production
+VII. Analysis of forces
+VIII. Design of elements (size and stresses)
+(1) III, I, VII, II, VIII, V, IV, VI
+(2) II, III, V, VI, I, VIII, VII, IV
+(3) VI, I, II, III, V, IV, VIII, VII
+(4) IV, II, III, I, VII, VIII, V, VI
+= 1
+~ The standard machine-design flow chart begins with recognition of the need, followed by synthesis of a suitable mechanism, analysis of the forces acting on it, selection of material, and design of the elements for size and stresses. The design is then modified where needed, detailed drawings are prepared, and finally the part goes into production. This gives the order III, I, VII, II, VIII, V, IV, VI.
+
+Q 105 | mec | Machine Design
+Arrange the following steps in a correct order (first to last) of design procedure for journal bearing.
+I. Determine the bearing length by choosing ratio of l/d.
+II. Check the bearing pressure for a probable satisfactory value.
+III. Determine the heat generated.
+IV. Determine the operating value of ZN/p for the assumed bearing temperature and check this value.
+V. Determine the thermal equilibrium to see that the heat dissipated at least equal to heat generated.
+VI. Determine the coefficient of friction.
+VII. In case the heat generated is more than the heat dissipated than bearing is artificially cooled by water.
+(1) I, II, IV, VI, III, V, VII
+(2) II, I, III, V, VI, IV, VII
+(3) I, II, VII, IV, VI, V, III
+(4) III, V, VI, II, I, IV, VII
+= 1
+~ In the standard procedure for a journal bearing, the length is first fixed from a chosen l/d ratio and the bearing pressure is checked. The operating ZN/p for the assumed temperature is then found and checked, the coefficient of friction is determined and from it the heat generated. Heat dissipated is compared with heat generated for thermal equilibrium, and if generation exceeds dissipation the bearing is cooled artificially. Order: I, II, IV, VI, III, V, VII.
+
+Q 106 | mfg | Manufacturing & Workshop
+Which of the following is a finishing process of manufacturing?
+(1) Soldering
+(2) Extrusion
+(3) Burnishing
+(4) Milling
+= 3
+~ Burnishing is a finishing process in which a hard, smooth tool or rollers are pressed against a machined surface so that the peaks of the surface roughness are plastically flattened, giving a smooth, work-hardened surface without removing metal. Soldering is a joining process, extrusion is a forming process and milling is a primary metal-removal (machining) process.
+
+Q 107 | mfg | Manufacturing & Workshop
+Which of the following is a permanent mould casting process?
+(1) Investment casting process
+(2) Die casting
+(3) Sand casting
+(4) Lost foam casting
+= 2
+~ In die casting, molten metal is forced under pressure into a reusable metal (steel) die, so the mould is permanent and serves for thousands of castings. Investment casting, sand casting and lost foam casting all use expendable moulds or patterns that are destroyed or broken up to remove each casting.
+
+Q 108 | mfg | Engineering Materials
+Nylon is a ______.
+(1) thermoplastic
+(2) resin
+(3) thermoset
+(4) elastomer
+= 1
+~ Nylon (a polyamide) is a thermoplastic: it softens on heating and hardens on cooling, and can be remelted and reshaped repeatedly, which is why it is injection-moulded into gears, bushes and fasteners. Thermosets such as Bakelite cure irreversibly into a cross-linked network, and elastomers such as rubber are highly elastic polymers.
+
+Q 109 | mfg | Engineering Materials
+The property which allows material to undergo plastic deformation under tensile load before fracture is ______.
+(1) brittleness
+(2) ductility
+(3) fatigue
+(4) resilience
+= 2
+~ Ductility is the ability of a material to undergo large plastic deformation under tensile load before fracture, so that it can be drawn into wire; it is measured by percentage elongation or reduction in area. Brittleness is the opposite (fracture with little deformation), fatigue is failure under repeated loading and resilience is the strain energy stored within the elastic limit.
+
+Q 110 | mfg | Engineering Materials
+Which of the following is a test used to measure hardness of the material?
+(1) Disk test
+(2) Izod test
+(3) Charpy test
+(4) Vickers test
+= 4
+~ The Vickers hardness test presses a square-based diamond pyramid (136° between opposite faces) into the surface and calculates hardness from the load and the diagonal of the indentation. Izod and Charpy tests are impact tests that measure toughness, the energy absorbed in breaking a notched specimen, and a disk test is not a standard hardness test.
+
+Q 111 | mfg | Engineering Materials
+The permanent elongation of a component under a static load maintained for a long period of time is called ______.
+(1) Plasticity
+(2) Creep
+(3) Fatigue fracture
+(4) Residual stress
+= 2
+~ Creep is the slow, time-dependent permanent deformation of a material under a constant (static) load maintained for a long time; it becomes significant at high temperatures, as in turbine blades and boiler tubes. Plasticity is permanent deformation without time dependence, fatigue fracture results from fluctuating loads, and residual stresses are locked-in stresses present without external load.
+
+Q 112 | mfg | Engineering Materials
+When white cast iron is annealed in an atmosphere of carbon monoxide and carbon dioxide, at temperature between 800°C and 900°C for several hours depending on size, we obtain ______.
+(1) compacted graphite iron
+(2) nodular iron
+(3) gray cast iron
+(4) malleable iron
+= 4
+~ Malleable iron is produced by long annealing (malleabilising) of white cast iron at about 800–900 °C in a controlled atmosphere; the cementite breaks down into irregular nodules (rosettes) of temper carbon, making the iron tough and ductile. Nodular iron is made by adding magnesium or cerium to the molten iron, and grey and compacted graphite irons form their graphite directly on solidification.
+
+Q 113 | mfg | Engineering Materials
+The heating process by which hardness is reduced and toughness is improved is called ______.
+(1) quenching
+(2) cyaniding
+(3) tempering
+(4) carburizing
+= 3
+~ Tempering is reheating a hardened (quenched) steel to a temperature below the lower critical temperature, holding it and then cooling it; it relieves internal stresses, reduces hardness and brittleness and improves toughness. Quenching increases hardness, while cyaniding and carburizing are case-hardening processes that increase surface hardness.
+
+Q 114 | mfg | Manufacturing & Workshop
+The machining process of making a hole by removing a disk shaped piece from a flat plate is called ______.
+(1) trepanning
+(2) gun drilling
+(3) boring
+(4) tapping
+= 1
+~ Trepanning cuts a narrow annular groove through a plate with a tool rotating about the hole centre, so the central disc (core) comes out in one piece; it is economical for large holes in plates because little metal is turned into chips. Gun drilling makes deep holes, boring enlarges an existing hole and tapping cuts internal threads.
+
+Q 115 | mfg | Manufacturing & Workshop
+Which of the following is a correct relation of material removal rate for milling? (l = length of cut, w = width of the cut, d = depth of cut, t = cutting time, f = feed per tooth, v = feed rate)
+(1) MRR = (l × w)/(d × t)
+(2) MRR = (f × d × t)/l
+(3) MRR = (w × d)/v
+(4) MRR = (l × w × d)/t
+= 4
+~ Material removal rate is the volume of metal removed per unit time. A milling cut of length l, width w and depth d removes a volume l × w × d in the cutting time t, so MRR = l × w × d/t; since the feed rate v = l/t, this also equals w × d × v. The other expressions do not even have the units of volume per unit time.
+
+Q 116 | mfg | Manufacturing & Workshop
+The phenomenon of wandering of arc that occurs in DC welding is called ______.
+(1) Arc blow
+(2) Spattering
+(3) Underfilling
+(4) Lamellar tears
+= 1
+~ Arc blow is the wandering or deflection of the welding arc from its intended path caused by unbalanced magnetic fields around the arc and the work; it is serious in DC welding, especially near the ends of joints and in corners. It is reduced by using AC, shifting the earth connection or using a short arc. Spatter, underfill and lamellar tearing are other weld defects.
+
+Q 117 | mfg | Manufacturing & Workshop
+Which of the following is correct regarding the process of reaming?
+I. Reaming is an operation used to achieve a high grade of surface finish on a hole.
+II. The tool used in reaming operation has multiple cutting edges.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Reaming is a finishing (sizing) operation done on an already drilled hole to bring it to accurate size and give it a good surface finish, removing only a small amount of metal. The reamer is a multi-tooth tool with several straight or helical cutting edges. Both statements are therefore correct.
+
+Q 118 | mfg | Manufacturing & Workshop
+Which of the following is correct regarding the lathe operations?
+I. Process of reducing the diameter of a workpiece over a very narrow surface is called knurling.
+II. Knurling is done at the slowest speed available in a lathe.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ Reducing the diameter of a workpiece over a very narrow width is grooving (necking), not knurling, so statement I is wrong. Knurling embosses a straight or diamond pattern on a surface by pressing hardened knurling wheels against the rotating work; being a forming operation that needs high pressure, it is done at the slowest spindle speed with plenty of lubricant, so statement II is correct.
+
+Q 119 | mfg | Manufacturing & Workshop
+Which of the following is correct about broaching?
+I. It is a process of machining a surface with a special multipoint tool.
+II. Gears cannot be manufactured using a broaching process.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ Broaching machines a surface by pulling or pushing a long multipoint tool (broach) whose successive teeth are slightly higher, so statement I is correct. Broaching is widely used to cut internal gears, splines and keyways, and even external gear teeth, so statement II, that gears cannot be made by broaching, is wrong. Hence only I.
+
+Q 120 | mfg | Manufacturing & Workshop
+Which of the following is correct regarding forging?
+I. Upsetting is a process of increasing cross sectional dimensions when forging.
+II. Process of cutting large holes of various shapes by using a chisel over a hole in the sewage block is called setting down.
+III. One of the advantages of open die forging is, it can be employed for long run production.
+(1) Only I
+(2) I and II only
+(3) II and III only
+(4) Only III
+= 1
+~ Upsetting increases the cross-section of a bar while reducing its length, so I is correct. Setting down is the local thinning or shouldering of a bar with a set hammer; cutting holes in the work with a chisel over the hole of a swage block (printed "sewage block") is a hole-making operation, not setting down, so II is wrong. Open die forging suits small quantities, while long production runs use closed (impression) dies, so III is wrong.
+
+Q 121 | mfg | Manufacturing & Workshop
+Which of the following is correct regarding electron beam machining?
+I. It can be used on all materials.
+II. Material removal rate is low and vacuum is needed for operation.
+III. The voltage required for electron beam machining is 1150 kV.
+(1) I and III only
+(2) I and II only
+(3) II and III only
+(4) Only III
+= 2
+~ Electron beam machining uses a focused beam of high-velocity electrons that melts and vaporises the work, so it can machine practically any material, whatever its hardness or conductivity (I correct). Its material removal rate is very low and it must be done in a vacuum so that the electrons are not scattered (II correct). Accelerating voltages are typically about 50–200 kV, not 1150 kV (III wrong).
+
+Q 122 | mfg | Manufacturing & Workshop
+Which of the following is correct regarding advantages of cold working?
+I. Ductility of metal is improved.
+II. Minimum contamination during cold working compare to hot working.
+III. Good surface finish and better dimensional accuracy than hot working.
+(1) Only I
+(2) Only II
+(3) II and III only
+(4) I and II only
+= 3
+~ Cold working, done below the recrystallisation temperature, strain-hardens the metal: strength and hardness rise but ductility falls, so I is wrong. Since the metal is not heated there is no scaling or oxidation and little contamination (II correct), and cold-worked parts have a better surface finish and closer dimensional accuracy than hot-worked ones (III correct). Hence II and III only.
+
+Q 123 | mfg | Engineering Materials
+Match the following elements with its effect on the steel.
+Elements | Effect on the steel
+I. Calcium | 1. Improves hardenability
+II. Boron | 2. Improves resistance to atmospheric corrosion
+III. Lead | 3. Improves toughness and formability
+IV. Copper | 4. Improves machinability
+(1) I-3, II-4, III-1, IV-2
+(2) I-2, II-1, III-4, IV-3
+(3) I-3, II-1, III-4, IV-2
+(4) I-2, II-4, III-1, IV-3
+= 3
+~ Calcium treatment changes the shape of sulphide inclusions, improving toughness and formability (I-3). Very small additions of boron, a few thousandths of a per cent, greatly raise hardenability (II-1). Lead in free-cutting steels breaks up the chips and lubricates the tool, improving machinability (III-4). Copper, about 0.2–0.5 %, improves resistance to atmospheric corrosion, as in weathering steels (IV-2).
+
+Q 124 | mfg | Engineering Materials
+Which one of the following is a correctly matched pair?
+(1) Grey cast iron : Graphite exists largely in form of flakes
+(2) White cast iron : Graphite in a spherical form
+(3) Ductile iron : Graphite in form of short, thick interconnected flakes
+(4) Compacted graphite iron : Do not have any carbon flakes
+= 1
+~ In grey cast iron most of the carbon is present as graphite flakes, which give the grey fracture, so pair 1 is correct. White cast iron has its carbon combined as cementite with no free graphite; ductile (nodular) iron has graphite in spherical form; and compacted graphite iron has short, thick, interconnected (vermicular) flakes, so pairs 2, 3 and 4 are wrong.
+
+Q 125 | mfg | Manufacturing & Workshop
+Arrange the following brazing alloys in order of their increasing melting point.
+I. Copper = 50 percent, Zinc = 50 percent
+II. Copper = 70 percent, Zinc = 30 percent
+III. Copper = 60 percent, Zinc = 40 percent
+(1) I, II, III
+(2) II, III, I
+(3) III, II, I
+(4) I, III, II
+= 4
+~ Brazing brasses melt at lower temperatures as their zinc content rises, because zinc (melting point about 420 °C) lowers the melting point of copper (about 1083 °C). So the 50 % copper–50 % zinc alloy melts lowest, the 60–40 alloy next and the 70–30 alloy highest, giving the increasing order I, III, II.
+
+Q 126 | mfg | Manufacturing & Workshop
+Arrange the following three region in decreasing order of percentage of heat generated during metal cutting.
+I. The shear zone
+II. The chip tool interface region
+III. The tool-work interface region
+(1) III, II, I
+(2) I, II, III
+(3) II, III, I
+(4) II, I, III
+= 2
+~ In metal cutting most of the heat is generated in the primary shear zone, where the metal is plastically deformed to form the chip. The next largest share comes from friction and deformation at the chip–tool interface (secondary zone), and the least from rubbing of the tool flank on the machined surface (tool–work interface). Hence the decreasing order is I, II, III.
+
+Q 127 | mfg | Manufacturing & Workshop
+Arrange the following steps in a correct order (first to last) regarding thermit welding.
+I. After cutting, pouring and heating gates and risers a flame is directed into heating oven to drain out wax.
+II. Molten iron run into the mould which fuses with part to be welded.
+III. Wax pattern of desired size and shape is prepared around joint.
+IV. The thermit mixture packed in the crucible of conical shape formed from sheet iron casting lined with heat resisting cement is ignited.
+(1) I, II, IV, III
+(2) III, I, IV, II
+(3) II, IV, III, I
+(4) IV, III, II, I
+= 2
+~ In thermit welding a wax pattern of the required shape is first built around the joint (III). The mould is rammed round it and, after the pouring and heating gates and risers are cut, a flame is directed in to melt out the wax and preheat the joint (I). The thermit mixture in a conical, refractory-lined crucible is then ignited (IV), and the molten iron runs into the mould and fuses with the parts (II).
+
+Q 128 | mfg | Manufacturing & Workshop
+Arrange the following steps in a correct order (first to last) of greens and mouldings.
+I. Making the mould
+II. Closing and weighing
+III. Core setting
+IV. Preparation of the pattern
+(1) II, I, III, IV
+(2) IV, I, III, II
+(3) III, II, IV, I
+(4) II, IV, I, III
+= 2
+~ In green sand moulding (printed "greens and mouldings") the pattern is prepared first, the mould is then made by ramming sand round it and withdrawing the pattern, the cores are set in place, and finally the mould halves are closed and weighted down to resist the pressure of the metal before pouring. The order is therefore IV, I, III, II.
+
+Q 129 | chs | Chassis & Body
+The actual average rate of coverage by the farm machine, based upon total field time is called ______.
+(1) effective operating time
+(2) theoretical field capacity
+(3) field efficiency
+(4) effective field capacity
+= 4
+~ Effective field capacity is the actual average rate at which a farm machine covers a field (for example in hectares per hour), based on the total field time including turning and other lost time. Theoretical field capacity is the rate at full width and speed with no lost time, field efficiency is the ratio of effective to theoretical field capacity, and effective operating time is only the time actually spent working.
+
+Q 130 | chs | Chassis & Body
+An assemblage of one or more winding drums mounted on a frame of a crane is called ______.
+(1) Main clutch
+(2) Winch
+(3) Boom
+(4) Flange
+= 2
+~ A winch consists of one or more winding drums mounted on a frame, on which the hoisting rope is wound to lift or pull loads; cranes use winches for hoisting and for raising the boom. The boom is the long arm that carries the load rope, the main clutch transmits engine power to the drums, and a flange is a projecting rim, not an assembly of drums.
+
+Q 131 | flu | Fluid Mechanics
+A fluid in which shear stress is more than the yield value and shear stress is proportional to the rate of shear strain is called ______.
+(1) Newtonian fluid
+(2) Ideal fluid
+(3) Ideal plastic fluid
+(4) Real fluid
+= 3
+~ An ideal plastic (Bingham plastic) fluid does not flow until the shear stress exceeds a yield value; beyond it the shear stress increases linearly with the rate of shear strain, τ = τy + μ(du/dy). A Newtonian fluid has no yield stress (τ = μ du/dy), an ideal fluid has no viscosity, and a real fluid is any fluid that has viscosity.
+
+Q 132 | flu | Fluid Mechanics
+What is the ratio of dynamic viscosity to the density of the fluid?
+(1) Mass
+(2) Kinematic viscosity
+(3) Specific gravity
+(4) Specific volume
+= 2
+~ Kinematic viscosity ν is the ratio of dynamic viscosity μ to density ρ, ν = μ/ρ. Its SI unit is m²/s and its CGS unit is the stoke (1 stoke = 1 cm²/s = 10⁻⁴ m²/s). Specific gravity is a ratio of densities, specific volume is the reciprocal of density, and mass is not a ratio of fluid properties at all.
+
+Q 133 | flu | Hydraulic Machines & Pneumatics
+The ratio of weight lifted to the force applied on the plunger of a hydraulic press is called ______.
+(1) Volumetric efficiency
+(2) Mechanical advantage
+(3) Rankine efficiency
+(4) Effort
+= 2
+~ In a hydraulic press a small effort F on the plunger of area a creates a pressure that acts on the large ram of area A, lifting a weight W = F × A/a. The ratio W/F, the load lifted per unit effort, is the mechanical advantage. Volumetric and Rankine efficiencies relate to pumps and steam cycles, and effort is the applied force itself.
+
+Q 134 | flu | Hydraulic Machines & Pneumatics
+The ratio of power given by water to the runner of a turbine to the power supplied by the water at the inlet of the turbine is called ______.
+(1) Overall efficiency
+(2) Mechanical efficiency
+(3) Hydraulic efficiency
+(4) Volumetric efficiency
+= 3
+~ Hydraulic efficiency of a turbine is the ratio of the power given by the water to the runner (runner power) to the power supplied by the water at the inlet (water power, ρgQH). Mechanical efficiency is shaft power divided by runner power, overall efficiency is shaft power divided by water power (the product of the two), and volumetric efficiency compares the water acting on the runner with that supplied.
+
+Q 135 | flu | Hydraulic Machines & Pneumatics
+The axial flow reaction turbine which vanes on the hub are adjustable is called ______.
+(1) Propeller turbine
+(2) Francis turbine
+(3) Pelton turbine
+(4) Kaplan turbine
+= 4
+~ A Kaplan turbine is an axial flow reaction turbine whose runner vanes on the hub are adjustable, so their angle can be changed with the load to keep the efficiency high at part load. A propeller turbine is also axial flow but its vanes are fixed to the hub; the Francis turbine is a radial (mixed) flow reaction turbine and the Pelton wheel is an impulse turbine.
+
+Q 136 | flu | Fluid Mechanics
+The flow in which the velocity at any given time changes with respect to space are called ______.
+(1) Non-uniform flow
+(2) Steady flow
+(3) Uniform flow
+(4) Unsteady flow
+= 1
+~ Non-uniform flow is flow in which the velocity at a given instant changes from point to point along the flow (∂V/∂s ≠ 0), as in a tapering pipe. In uniform flow the velocity is the same at every point at a given time, while steady and unsteady flows are defined by whether the conditions at a point change with time.
+
+Q 137 | chs | Chassis & Body
+Which of the following vehicle have rotating beam attached to a vertical mast and supporting a hoist?
+(1) Bulldozer
+(2) Fork lift truck
+(3) Loaders
+(4) Jib Crane
+= 4
+~ A jib crane has a horizontal beam (jib) attached to a vertical mast or pillar; the jib can rotate (slew) about the mast and carries a trolley and hoist that lift and move loads within the circle it sweeps. Bulldozers push earth with a front blade, fork lift trucks raise loads on forks along a vertical mast, and loaders scoop and load material with a bucket.
+
+Q 138 | chs | Chassis & Body
+Which of the following vehicle designed for transporting large quantities of bulk material like gravel over short distance?
+(1) Fork lift truck
+(2) Loaders
+(3) Dumpers
+(4) Bulldozer
+= 3
+~ A dumper is a vehicle designed to carry large quantities of bulk material such as sand, gravel or earth over short distances on construction and mining sites, and to unload it by tipping its skip or body. Fork lift trucks handle palletised loads, loaders scoop material and load it into other vehicles, and bulldozers push earth with a blade.
+
+Q 139 | flu | Hydraulic Machines & Pneumatics
+Which of the following is correct regarding the Francis turbine?
+I. It is an inward flow reaction turbine having radial discharge at outlet.
+II. The work done by water on the runner per second is ρQ(Vw₁u₁). (where Q is discharge, Vw₁ = Whirl velocity at inlet, u₁ is blade velocity of wheel at inlet, ρ = density of fluid)
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Textbooks define the Francis turbine as an inward flow reaction turbine having radial discharge at outlet (modern Francis runners are in fact mixed flow, discharging axially). With radial discharge the whirl velocity at outlet Vw₂ is zero, so the Euler expression ρQ(Vw₁u₁ − Vw₂u₂) for the work done per second reduces to ρQVw₁u₁. Hence both statements are correct as given.
+
+Q 140 | flu | Fluid Mechanics
+Which of the following is correct regarding the surface tension?
+I. The pressure intensity of soap bubble is twice of a liquid droplet for same diameter and surface tension.
+II. Surface tension is a shear force acting on the surface of a liquid.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ The excess pressure inside a liquid droplet is p = 4σ/d, while a soap bubble has two surfaces, so p = 8σ/d: twice that of a droplet of the same diameter and surface tension (I correct). Surface tension is a tensile force per unit length acting in the surface of a liquid, not a shear force (II wrong). Hence only I.
+
+Q 141 | flu | Hydraulic Machines & Pneumatics
+Match the following turbines with their classification based on the direction of flow through runner.
+Turbine | Direction of flow
+I. Pelton | 1. Axial flow reaction turbine
+II. Francis | 2. Tangential flow turbine
+III. Kaplan | 3. Inward flow reaction turbine
+(1) I-1, II-2, III-3
+(2) I-3, II-1, III-2
+(3) I-3, II-2, III-1
+(4) I-2, II-3, III-1
+= 4
+~ In a Pelton wheel the jet strikes the buckets tangentially at the rim of the wheel, so it is a tangential flow (impulse) turbine (I-2). The Francis turbine is an inward (radial) flow reaction turbine (II-3), and the Kaplan turbine is an axial flow reaction turbine in which the water flows parallel to the shaft (III-1). The match is I-2, II-3, III-1.
+
+Q 142 | flu | Fluid Mechanics
+Arrange the following in an increasing order of shear stress.
+I. Shear stress of oil with oil viscosity 12 poise, velocity of 2.5 m/s and clearance of 1.25 cm.
+II. Shear stress of oil having dynamic viscosity 0.1 Ns/m², clearance of 2 mm and velocity 2500 mm/s⁻¹.
+III. Shear stress of oil on an inclined plane having viscosity 2 poise, velocity 1.5 m/s and clearance of 3 cm.
+(1) II, III, I
+(2) I, II, III
+(3) III, I, II
+(4) III, II, I
+= 4
+~ Use Newton's law of viscosity, τ = μu/y, with 1 poise = 0.1 N·s/m². I: τ = 1.2 × 2.5/0.0125 = 240 N/m². II: τ = 0.1 × 2.5/0.002 = 125 N/m² (2500 mm/s = 2.5 m/s; the unit is misprinted as mm/s⁻¹). III: τ = 0.2 × 1.5/0.03 = 10 N/m². The increasing order is III (10), II (125), I (240).
+
+Q 143 | flu | Fluid Mechanics
+Which of the following is correct about flow of fluids through pipes?
+I. Hydraulic gradient line gives the sum of pressure head and kinetic head.
+II. Total energy line gives the sum of pressure head, kinetic head and datum head.
+III. The Chezy’s formula for loss of head due to friction in pipes is h_f = 4.f.L.V²/(d2g)
+(where f = co-efficient of friction, L = length of pipe, V = mean velocity of flow, d = diameter of pipe)
+(1) I and II
+(2) Only II
+(3) II and III
+(4) I and III
+= 2
+~ The hydraulic gradient line shows the piezometric head, the sum of pressure head and datum head (p/ρg + z), not kinetic head, so I is wrong. The total energy line adds the velocity head, p/ρg + V²/2g + z, so II is correct. h_f = 4fLV²/(2gd) is the Darcy–Weisbach formula; Chezy's formula is V = C√(mi), so III is wrong. Hence only II.
+
+Q 144 | flu | Hydraulic Machines & Pneumatics
+Which of the following is correctly matched?
+Types of turbine | Specific speed in MKS units
+I. Francis turbine | 300 to 600
+II. Pelton wheel with single jet | 10 to 35
+III. Pelton wheel with two or more jets | 100 to 800
+IV. Kalpan Propeller turbine | 300 to 1000
+(1) Only I and II
+(2) Only I, II and III
+(3) Only II and IV
+(4) Only III and IV
+= 3
+~ In MKS units the usual ranges of specific speed are: Pelton wheel with a single jet 10–35, Pelton wheel with two or more jets 35–60, Francis turbine 60–300 and Kaplan or propeller turbine 300–1000. So pairs II and IV are correct, while the ranges given for the Francis turbine (300–600) and the multi-jet Pelton wheel (100–800) are wrong. "Kalpan" is a misprint for Kaplan.
+
+Q 145 | mva | Motor Vehicles Act & Rules
+A registration code of a vehicle is given as:
+UP 26 B 9126.
+What does the value 26 represents?
+(1) Series
+(2) State code
+(3) District or town code
+(4) Village code
+= 3
+~ Indian registration marks follow the pattern state code, district (RTO) code, series and number. In UP 26 B 9126, "UP" is the state code for Uttar Pradesh, "26" identifies the district registering authority (RTO) where the vehicle is registered, "B" is the series and 9126 is the vehicle's own number. Since 2021 vehicles may also take the separate BH (Bharat) series mark, which has no state or district code.
+
+Q 146 | mva | Motor Vehicles Act & Rules
+Section 3 of The Motor Vehicles Act, 1988 deals with ______.
+(1) Grant of learner’s licence
+(2) Grant of driving licence
+(3) Endorsement
+(4) Necessity for driving licence
+= 4
+~ Section 3 of the Motor Vehicles Act, 1988 is headed "Necessity for driving licence": no person shall drive a motor vehicle in any public place unless he holds an effective driving licence authorising him to drive that vehicle. Grant of learner's licence and grant of driving licence are covered by Sections 8 and 9. Section 3 continues in force after the Motor Vehicles (Amendment) Act, 2019.
+
+Q 147 | mva | Transport Management
+Which of the following is correct regarding continuous flow production model?
+I. In this model, facility should be flexible to handle a wide variety of products.
+II. In this model a standard set of processes and sequence of processes can be adopted.
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ Continuous (flow or mass) production makes large volumes of standardised products, so a standard set of processes in a fixed sequence, with special-purpose machines and a product layout, can be adopted (II correct). Flexibility to handle a wide variety of products is a feature of job-shop or intermittent production, not of continuous flow production, so I is wrong. Hence only II.
+
+Q 148 | mva | Transport Management
+Which of the following is correct regarding principle for personnel management?
+I. People are to be dealt with as a complete individual.
+II. There should be fairness in dealing with the employees to win their confidence.
+III. All the employees doing the same type of work are not needed to pay the same.
+(1) Only I
+(2) I and II only
+(3) II and III only
+(4) III and I only
+= 2
+~ Accepted principles of personnel management include dealing with each employee as a whole individual with personal needs (I) and treating employees fairly so as to win their confidence and co-operation (II). Another principle is equal pay for equal work, so the statement that employees doing the same type of work need not be paid the same (III) is wrong. Hence I and II only.
+
+Q 149 | mva | Transport Management
+Which of the following is a correct pair regarding the types of communication in an organization?
+I. Downward communication : The transmission of feedback, orientation, complaints, suggestions for improvements etc. from lowest grade employee to top executive
+II. Horizontal communication : Transmission of information between persons having the same level of authority in the organization
+III. Upward communication : The transmission of instructions and information from top executive downwards to the lowest grade employee.
+(1) Only I
+(2) Only II
+(3) II and III only
+(4) I and III only
+= 2
+~ Horizontal (lateral) communication is the flow of information between persons at the same level of authority, so II is correct. The descriptions in I and III are interchanged: downward communication carries instructions and information from top executives to lower employees, while upward communication carries feedback, complaints and suggestions from the lowest grades to the top. Hence only II.
+
+Q 150 | mva | Road Safety
+Match the following.
+Signs | Symbols
+I. Railway crossing (Guarded) | 1. Symbol 1
+II. Narrow bridge | 2. Symbol 2
+III. Cross roads | 3. Symbol 3
+IV. Steep hills | 4. Symbol 4
+(1) I-1, II-2, III-4, IV-3
+(2) I-2, II-3, III-1, IV-4
+(3) I-2, II-4, III-1, IV-3
+(4) I-3, II-1, III-2, IV-4
+= 2
+! img/t23a-q150.png
+~ The guarded railway crossing sign shows a gate or fence in a red-bordered triangle (I-2). The narrow bridge sign shows two lines closing in towards each other like bridge parapets (II-3). The crossroads sign shows two roads crossing, the X of symbol 1 (III-1), which leaves the sloping wedge of symbol 4 for steep hills (IV-4). The match is I-2, II-3, III-1, IV-4.

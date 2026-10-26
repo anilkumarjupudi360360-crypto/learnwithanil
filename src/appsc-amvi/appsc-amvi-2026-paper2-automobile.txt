@@ -1,0 +1,1354 @@
+# APPSC Assistant Motor Vehicle Inspector (Notification 21/2025), Paper II: Automobile Engineering (booklet Series A), held 28 January 2026.
+# Answers: APPSC final key (the boxed answers in the final-key booklet, Series A). Explanations by Learn with Anil.
+
+Q 1 | thm | Thermodynamics
+A system is in thermodynamic equilibrium when
+(1) It exchanges mass but not energy with its surroundings
+(2) It exchanges both mass and energy with its surroundings
+(3) Macroscopic variables like pressure, volume and temperature do not change with time
+(4) It exchanges energy but not mass with its surroundings
+= 3
+~ A system is in thermodynamic equilibrium when it is at the same time in thermal, mechanical and chemical equilibrium, so its macroscopic properties such as pressure, volume and temperature are uniform and do not change with time, with no net internal flows. Whether a system exchanges mass, energy or both with its surroundings only tells us whether it is open or closed; it does not decide whether the system is in equilibrium.
+
+Q 2 | thm | Thermodynamics
+The Zeroth Law of Thermodynamics states that if two systems are each in thermal equilibrium with a third system, then
+(1) They are in mechanical equilibrium
+(2) They are in chemical equilibrium
+(3) They are in thermal equilibrium with each other
+(4) They are in a state of total thermodynamic equilibrium
+= 3
+~ The Zeroth Law says that if bodies A and B are each in thermal equilibrium with a third body C, then A and B are in thermal equilibrium with each other: there is no net heat flow when they are brought into contact, because they are at the same temperature. It is the basis of temperature measurement, the third body being the thermometer. It says nothing about mechanical or chemical equilibrium.
+
+Q 3 | thm | Thermodynamics
+Which of the following is not an example of a pure substance ?
+(1) Water (H₂O)
+(2) Nitrogen (N₂)
+(3) Air (a mixture of gases like O₂, N₂, Ar)
+(4) Helium (He)
+= 3
+~ A pure substance has a fixed and uniform chemical composition throughout. Water, nitrogen and helium are single chemical species and qualify. Air is a mixture of nitrogen, oxygen, argon and other gases. It behaves like a pure substance only while it remains a gas of uniform composition; when it is partly liquefied, its components condense at different temperatures and the liquid and vapour have different compositions, so air is not a true pure substance.
+
+Q 4 | thm | Thermodynamics
+The Mollier diagram is a plot of
+(1) Temperature and entropy
+(2) Temperature and enthalpy
+(3) Pressure and enthalpy
+(4) Enthalpy and entropy
+= 4
+~ The Mollier diagram, devised by Richard Mollier, plots enthalpy (h) on the vertical axis against entropy (s) on the horizontal axis, usually for steam. On this h–s chart an isentropic expansion is a vertical line and the enthalpy drop can be read directly, which makes it convenient for nozzle and turbine calculations. The temperature–entropy plot is the T–s diagram, and the pressure–enthalpy (p–h) chart is mainly used for refrigerants.
+
+Q 5 | ice | Engine Fundamentals & Cycles
+For a fixed amount of heat supplied and a fixed compression ratio, the thermal efficiency of the air-standard cycle follows the order
+(1) Otto > Diesel > Dual
+(2) Otto > Dual > Diesel
+(3) Diesel > Otto > Dual
+(4) Dual > Otto > Diesel
+= 2
+~ For the same compression ratio and the same heat input, the Otto cycle adds all its heat at constant volume at the end of compression, so the gas then expands through the full ratio, rejects the least heat and is the most efficient. The Diesel cycle adds heat at constant pressure while the gas expands, so it rejects the most heat. The dual cycle adds part at constant volume and part at constant pressure and lies between: η Otto > η Dual > η Diesel.
+
+Q 6 | ice | Engine Fundamentals & Cycles
+The Stirling cycle consists of
+(1) Two isothermal and two constant pressure processes
+(2) Two isothermal and two constant volume processes
+(3) Two isothermal and two adiabatic processes
+(4) Two adiabatic processes and one constant volume processes
+= 2
+~ The Stirling cycle consists of isothermal compression, constant-volume heat addition, isothermal expansion and constant-volume heat rejection. With a perfect regenerator, which stores the heat rejected at constant volume and returns it later, its efficiency equals that of the Carnot cycle working between the same temperatures. Two isothermal and two constant-pressure processes make the Ericsson cycle, and two isothermal and two adiabatic processes make the Carnot cycle.
+
+Q 7 | ice | Engine Fundamentals & Cycles
+The diagram factor is defined as the ratio of
+(1) Brake power to indicated power
+(2) Indicated work done to brake work done
+(3) Area of the actual indicator diagram to the area of the theoretical indicator diagram
+(4) Thermal efficiency to mechanical efficiency
+= 3
+~ Diagram factor = area of the actual indicator diagram ÷ area of the theoretical (hypothetical) indicator diagram, which equals the ratio of the actual to the theoretical mean effective pressure. It allows for losses such as valve throttling, heat transfer and the rounding of the diagram's corners, and it is always less than 1. The ratio of brake power to indicated power (option 1) is the mechanical efficiency.
+
+Q 8 | mec | Theory of Machines
+The radial distance from the pitch circle to the root of the tooth is known as the
+(1) Addendum
+(2) Clearance
+(3) Dedendum
+(4) Whole depth
+= 3
+~ In gear terminology the dedendum is the radial distance from the pitch circle to the root (dedendum) circle, while the addendum is the radial distance from the pitch circle to the tip (addendum) circle. The whole depth is addendum plus dedendum. Clearance is the radial gap between the tip of a tooth and the root of the mating gear, equal to the dedendum minus the addendum.
+
+Q 9 | mec | Theory of Machines
+What is the correct mathematical formula for the module of a gear ?
+(Where D is the pitch circle diameter and N is the number of teeth)
+(1) D/N
+(2) D/(2N)
+(3) 2D/N
+(4) 3D/N
+= 1
+~ The module m is the pitch circle diameter divided by the number of teeth, m = D/N, usually expressed in millimetres. It is the reciprocal of the diametral pitch (N/D). The circular pitch is π times the module, p = πD/N = πm, and two gears can mesh only if they have the same module. For example, a gear with a pitch circle diameter of 100 mm and 50 teeth has a module of 2 mm.
+
+Q 10 | mec | Theory of Machines
+In a simple gear train, how is the driven gear's motion related to the driver gear if there is an odd number of gears ?
+(1) Opposite direction
+(2) Same direction
+(3) Does not depends on gear ratio
+(4) Depends on gear ratio
+= 2
+~ Each external mesh reverses the direction of rotation. With an odd number of gears in a simple train (for example driver, one idler and driven) there is an even number of meshes, so the driven gear turns in the same direction as the driver; with an even number of gears it turns the opposite way. Idlers change only the direction, not the speed ratio, which depends only on the teeth of the driver and the driven gear.
+
+Q 11 | mec | Theory of Machines
+In an epicyclic gear train, what is the purpose of the arm (or carrier) ?
+(1) It is a fixed, stationary gear
+(2) It carries the planet gears and rotates
+(3) It is the primary output shaft
+(4) It fixes the sun gear's position
+= 2
+~ In an epicyclic (planetary) gear train the arm, or planet carrier, holds the spindles of the planet gears and rotates about the common axis of the sun and ring (annulus) gears, so the planets spin on their own axes and also revolve round the sun gear. Holding one member and driving another gives different speed ratios, which is how automatic gearboxes and differentials use it. The carrier is not a gear, and it need not be fixed or be the output.
+
+Q 12 | mec | Strength of Materials
+What is the primary factor that distinguishes the torsional shear stress distribution in a solid shaft compared to a hollow shaft of the same outer diameter, when subjected to the same torque ?
+(1) Shear stress is zero at the center of both shafts
+(2) Shear stress is maximum at the center of the hollow shaft but zero at the center of the solid shaft
+(3) Shear stress is zero at the inner surface of the hollow shaft but uniform across the solid shaft
+(4) Shear stress is highest at the outer surface of the hollow shaft, while the solid shaft's stress increases linearly from the center to the outer surface
+= 4
+~ By the torsion equation τ/r = T/J, shear stress is proportional to the radius in both shafts. In a solid shaft it is zero at the axis and rises linearly to a maximum at the outer surface. A hollow shaft has no material near the axis, so its stress rises from a non-zero minimum at the inner surface to its maximum at the outer surface; for the same torque and outer diameter that maximum is higher, because the hollow shaft's J is smaller.
+
+Q 13 | mec | Strength of Materials
+For a solid shaft under pure torsion, how does the angle of twist (θ) change if the shaft's length (L) is doubled, while the polar moment of inertia (J) and modulus of rigidity (G) remain constant ?
+(1) It remains the same
+(2) It is halved
+(3) It doubles
+(4) It is quadrupled
+= 3
+~ From the torsion equation T/J = Gθ/L, the angle of twist is θ = TL/(GJ). With the same torque and with G and J unchanged, θ is directly proportional to the length, so doubling L doubles the angle of twist. In other words, the torsional stiffness of the shaft, GJ/L, is halved when its length is doubled.
+
+Q 14 | mec | Machine Design
+When a shaft experiences both a bending moment (M) and torque (T) simultaneously, what is the nature of the stresses induced ?
+(1) Only shear stress due to torque is present
+(2) Only normal stress due to bending is present
+(3) Only shear stress due to bending is present
+(4) Both normal stress (from bending) and shear stress (from torque) are developed in the shaft
+= 4
+~ The bending moment produces normal (tensile and compressive) bending stress, σ = 32M/(πd³) at the surface of a solid shaft, and the torque produces torsional shear stress, τ = 16T/(πd³). Shafts under this combined loading are designed using equivalent values: by the maximum shear stress theory the equivalent torque is Te = √(M² + T²), and by the maximum normal stress theory the equivalent bending moment is Me = ½[M + √(M² + T²)].
+
+Q 15 | mec | Engineering Mechanics
+A body slides down a 45° inclined plane in twice the time it would take on a frictionless surface.
+What is the coefficient of kinetic friction, μₖ ?
+(1) 0.33
+(2) 0.75
+(3) 0.5
+(4) 1.0
+= 2
+~ For the same distance from rest, s = ½at², so taking twice the time means the acceleration is one quarter of the frictionless value: a = (g sin 45°)/4. With friction, a = g(sin θ − μₖ cos θ). Equating, sin θ − μₖ cos θ = ¼ sin θ, so μₖ = ¾ tan θ = 0.75 × tan 45° = 0.75.
+
+Q 16 | mec | Machine Design
+A screw is considered self-locking if
+(1) The friction angle is less than the lead angle
+(2) The friction angle is greater than the lead angle
+(3) The friction angle is equal to the lead angle
+(4) The friction angle is half the lead angle
+= 2
+~ For a square-threaded screw the effort needed to lower the load is P = W tan(φ − α), where φ is the friction angle (tan φ = μ) and α the lead (helix) angle. If φ > α this effort is positive, so the load cannot run down by itself when the effort is removed: the screw is self-locking. If φ < α the screw overhauls. A self-locking screw always has an efficiency below 50 %.
+
+Q 17 | mec | Machine Design
+What is the primary function of a screw jack ?
+(1) To convert linear motion into rotary motion
+(2) To convert rotary motion into linear motion to lift or lower heavy loads
+(3) To measure the pitch of a screw
+(4) To create a locking mechanism for a nut
+= 2
+~ A screw jack is a power screw: turning the handle (rotary motion) makes the screw or nut move axially, so a heavy load such as a vehicle can be lifted or lowered with a small effort. Square or trapezoidal threads are used, and the screw is made self-locking so that the load stays up when the effort is removed. Converting linear motion into rotary motion is the reverse of what it does.
+
+Q 18 | ice | Fuels, Lubricants & Emissions
+Which statement correctly compares flash point and fire point ?
+(1) The fire point is always lower than the flash point.
+(2) The flash point and fire point are the same temperature.
+(3) The fire point is typically higher than the flash point.
+(4) The flash point is higher than fire point.
+= 3
+~ The flash point is the lowest temperature at which an oil or fuel gives off enough vapour to flash momentarily when a small flame is applied. The fire point is the lowest temperature at which the vapour, once ignited, keeps burning (for at least about five seconds). Sustained burning needs more vapour, and so a higher temperature, so the fire point is higher than the flash point.
+
+Q 19 | ice | Fuels, Lubricants & Emissions
+Which of the following fuels has the highest calorific value ?
+(1) Wood
+(2) Coal
+(3) LPG
+(4) Petrol
+= 3
+~ Typical gross calorific values are roughly: wood 15–20 MJ/kg, coal 25–35 MJ/kg, petrol about 46 MJ/kg and LPG (propane–butane) about 50 MJ/kg. Hydrocarbon fuels with a higher hydrogen-to-carbon ratio release more heat per kilogram, and the light molecules of LPG (C₃H₈, C₄H₁₀) contain more hydrogen than petrol, so LPG has the highest calorific value per unit mass among these.
+
+Q 20 | thm | Thermodynamics
+A device used for measuring heat exchange is called a
+(1) Thermometer
+(2) Joule meter
+(3) Calorimeter
+(4) Pressure gauge
+= 3
+~ A calorimeter measures the quantity of heat exchanged in a process, such as a heat of combustion, specific heat or latent heat, from the temperature change of a known mass of water or another medium. The bomb calorimeter (solid and liquid fuels) and the Junkers gas calorimeter (gaseous fuels) are used to find the calorific value of fuels. A thermometer measures only temperature and a pressure gauge only pressure.
+
+Q 21 | ice | Fuels, Lubricants & Emissions
+Which of the following is the chemical that is used as the reference standard for a Cetane number of 100 ?
+(1) Heptane
+(2) Octane
+(3) Hexadecane (Cetane)
+(4) Naphthalene
+= 3
+~ The cetane number of a diesel fuel is found by comparing its ignition delay in a test engine with blends of reference fuels. Normal hexadecane (C₁₆H₃₄, cetane), which ignites very readily, is rated 100; the low reference was originally alpha-methylnaphthalene (0) and is now heptamethylnonane (15). Normal heptane (0) and iso-octane (100) are the reference fuels for the octane number of petrol.
+
+Q 22 | ice | Engine Fundamentals & Cycles
+Which of the following is an advantage of a multi-cylinder engine over a single-cylinder engine of the same total displacement ?
+(1) Higher low-end torque
+(2) Simpler construction and lower manufacturing costs
+(3) Smoother operation with less vibration
+(4) Better fuel efficiency at low power demands
+= 3
+~ Splitting the same displacement among several cylinders gives more frequent, overlapping power strokes, so the torque is more uniform and a lighter flywheel is enough, and the inertia forces of the cylinders can be arranged to cancel, giving better balance and less vibration. Smaller cylinders also permit higher speeds. The price is more parts, higher cost and more friction, so simplicity, low cost and economy at light loads favour the single-cylinder engine.
+
+Q 23 | ice | Fuel Supply & Combustion
+The primary function of a pre-whirl chamber is to
+(1) Increase the engine's compression ratio
+(2) Create a high-velocity, swirling motion to improve fuel-air mixing
+(3) Cool the incoming air charge
+(4) Allow for the use of a high-pressure common-rail fuel system
+= 2
+~ A pre-whirl (swirl) chamber, such as the Ricardo Comet design, is a roughly spherical chamber in the cylinder head of an indirect-injection diesel engine, joined to the cylinder by a tangential passage. During compression the air is forced into it and set into a strong, fast swirl; the fuel injected into this swirling air mixes quickly and starts to burn, and the burning mixture then rushes into the main chamber. This allows lower injection pressures and simpler pintle nozzles.
+
+Q 24 | ice | Fuel Supply & Combustion
+Which of the following factors increases the ignition delay period in a CI engine ?
+(1) Increased compression ratio
+(2) Increased air turbulence
+(3) Supercharging
+(4) Lower cetane number fuel
+= 4
+~ Ignition delay is the interval between the start of injection and the start of combustion. A fuel with a lower cetane number has poorer self-ignition quality, so the delay becomes longer. A higher compression ratio and supercharging raise the temperature and pressure of the compressed air, and greater air turbulence speeds up the evaporation and mixing of the fuel; all three shorten the ignition delay.
+
+Q 25 | ice | Fuel Supply & Combustion
+Which of the following factors can increase the tendency of knocking in a Compression Ignition (CI) engine ?
+(1) A longer ignition delay period
+(2) Using a fuel with a higher cetane number
+(3) A lower compression ratio
+(4) A lower temperature of the unburnt fuel-air mixture
+= 1
+~ Diesel knock is caused by a long ignition delay: fuel keeps accumulating in the chamber during the delay and then burns all at once, giving a very rapid pressure rise. A higher-cetane fuel shortens the delay and reduces knock. In a CI engine a lower compression ratio and a lower charge temperature also lengthen the delay (they reduce knock only in SI engines), but they act through the delay itself, so the key takes the longer ignition delay as the answer.
+
+Q 26 | ice | Engine Fundamentals & Cycles
+What is the typical firing order for a four-cylinder inline engine ?
+(1) 1-2-3-4
+(2) 1-3-2-4
+(3) 1-3-4-2
+(4) 4-3-2-1
+= 3
+~ In an inline four-cylinder engine the crankpins of cylinders 1 and 4 are in line and 180° from those of cylinders 2 and 3, and one cylinder fires every 180° of crank rotation. After cylinder 1 fires, the next must be 2 or 3, and the third must be 4, so the only possible orders are 1-3-4-2 (the usual one) and 1-2-4-3. Orders such as 1-2-3-4 and 1-3-2-4 cannot occur with this crankshaft.
+
+Q 27 | ice | Engine Fundamentals & Cycles
+Why is the firing order of an engine so important ?
+(1) It determines the engine's horsepower rating
+(2) It ensures the engine's balance, efficiency and performance by distributing power strokes evenly
+(3) It is a purely aesthetic choice in engine design
+(4) It affects the fuel type the engine can use
+= 2
+~ The firing order is chosen so that the power impulses are spaced evenly through the cycle and alternate between the ends of the crankshaft. This gives smoother torque and better balance, reduces vibration and the torsional stresses on the crankshaft and main bearings, avoids overloading neighbouring cylinders and improves the distribution of the mixture. It does not set the horsepower rating or the type of fuel the engine can use.
+
+Q 28 | ice | Engine Fundamentals & Cycles
+Which of the following is not a function of piston rings ?
+(1) To seal high-pressure gases
+(2) To help in detonation
+(3) To maintain sufficient lubrication
+(4) To transfer heat to the cylinder wall
+= 2
+~ Piston rings seal the high-pressure combustion gases (compression rings), control the oil on the cylinder wall, scraping off the surplus while leaving a thin lubricating film (oil control ring), and conduct heat from the piston to the cylinder wall and on to the coolant. Detonation is abnormal, uncontrolled combustion of the end gas in an SI engine that causes knocking and damage; piston rings play no part in producing it.
+
+Q 29 | ice | Engine Fundamentals & Cycles
+Piston rings are commonly made from which material ?
+(1) Aluminum alloy
+(2) Brass
+(3) Cast iron or alloy cast iron
+(4) Steel
+= 3
+~ Piston rings are usually made of fine-grained grey cast iron or alloy cast iron, because it keeps its elasticity at high temperature, wears well against the cylinder bore and its graphite helps lubrication. Top compression rings are often chrome-plated or molybdenum-coated, and some modern engines use steel rings, but cast iron remains the common material. Aluminium alloy is used for the piston itself, not its rings.
+
+Q 30 | ice | Engine Fundamentals & Cycles
+During normal operation of an internal combustion engine, where is the highest temperature typically found on the piston ?
+(1) Piston pin boss
+(2) Skirt of the piston
+(3) Top ring groove
+(4) Center of the piston crown
+= 4
+~ The piston crown faces the burning gases directly, and heat from the centre of the crown has the longest path to flow outward through the rings to the cylinder wall, so the centre of the crown is the hottest part of the piston. The temperature falls toward the edge of the crown, the top ring groove, the pin bosses and the skirt, which is the coolest part. Heavily loaded pistons are therefore often cooled by oil jets under the crown.
+
+Q 31 | ice | Fuel Supply & Combustion
+Which type of injection is considered the most accurate ?
+(1) Throttle body injection
+(2) Manifold injection
+(3) Direct injection
+(4) Port injection
+= 3
+~ In direct injection the injector sprays fuel straight into the combustion chamber at high pressure, so the ECU controls exactly how much fuel enters each cylinder and when, with no fuel wetting the manifold or port walls. Throttle body (single-point) injection feeds all cylinders from one point, and manifold or port injection meters fuel for each cylinder but outside it, where some fuel lags in wall films. Direct injection is therefore the most precise.
+
+Q 32 | ice | Fuel Supply & Combustion
+What is the purpose of the venturi in a carburetor ?
+(1) To increase the fuel flow
+(2) To decrease the pressure and draw fuel into the airstream
+(3) To regulate the amount of air entering the engine
+(4) To provide a consistent air-fuel ratio
+= 2
+~ The venturi is a narrowed section of the carburettor barrel. As air passes through it, its velocity rises and its pressure falls (Bernoulli's principle). The main fuel nozzle opens at the throat, so the pressure difference between the float chamber, which is at atmospheric pressure, and the throat draws fuel into the airstream, where it is atomised and mixed with the air. The throttle valve, not the venturi, regulates the amount of air entering the engine.
+
+Q 33 | ice | Fuel Supply & Combustion
+What is the purpose of internal baffles inside a fuel tank ?
+(1) To increase the tank's volume
+(2) To reduce fuel sloshing during movement
+(3) To allow for easier fuel delivery
+(4) To help the fuel pump run cooler
+= 2
+~ Baffles are perforated partitions inside the fuel tank that divide it into connected compartments. They stop the fuel from surging or sloshing from end to end when the vehicle accelerates, brakes or corners, which keeps the fuel pickup covered so the supply is not interrupted, reduces noise and loads on the tank, and steadies the fuel-gauge reading. They also stiffen the tank, but they do not increase its volume.
+
+Q 34 | mec | Theory of Machines
+The unbalanced mass in a single-cylinder engine is balanced by counteracting the centrifugal force of the disturbing mass with the centrifugal force of a balancing mass. This is done for which of the following ?
+(1) Dynamic balancing
+(2) Neither static nor dynamic balancing
+(3) Both static and dynamic balancing
+(4) Static balancing
+= 4
+~ When a balancing mass is placed opposite the disturbing mass so that their centrifugal forces cancel (m₁r₁ = m₂r₂), the resultant force on the shaft is zero and the shaft stays at rest in any angular position; this force balance is static balancing. Dynamic balancing additionally requires the couples produced by masses in different planes to cancel. The question describes only the cancelling of centrifugal forces, so the key gives static balancing.
+
+Q 35 | mec | Theory of Machines
+The primary unbalanced force in a single-cylinder engine is maximum when the crank angle (θ) is
+(1) 0° and 90°
+(2) 0° and 180°
+(3) 90° and 180°
+(4) 180° and 360°
+= 2
+~ The primary unbalanced force of the reciprocating mass m is F = mω²r cos θ, where r is the crank radius and θ the crank angle from inner dead centre. cos θ has its largest magnitude, 1, at θ = 0° and 180° (the two dead centres), so the primary force is maximum there (mω²r) and zero at 90° and 270°. The secondary force, mω²r cos 2θ/n, is maximum at 0°, 90°, 180° and 270°. (A crank angle of 360° is the same position as 0°, so option 4 names the same dead centres; the key is option 2.)
+
+Q 36 | mec | Theory of Machines
+What is the purpose of a balancing mass in a single-cylinder engine ?
+(1) To increase the speed of the engine
+(2) To balance the rotating parts and reduce vibration
+(3) To provide torque to the engine
+(4) To reduce the engine's stroke
+= 2
+~ A single-cylinder engine has rotating parts (crankpin, crank webs, big end of the connecting rod) and reciprocating parts (piston, gudgeon pin, small end) whose inertia forces shake the engine. Counterweights on the crank webs, opposite the crankpin, balance the rotating mass and part of the reciprocating mass, reducing vibration and bearing loads. They do not raise the speed, add torque or change the stroke.
+
+Q 37 | ice | Cooling & Lubrication
+Which type of lubrication system is most commonly used in two-stroke engines ?
+(1) Splash lubrication system
+(2) Wet sump lubrication system
+(3) Pressure lubrication system
+(4) Mist lubrication system
+= 4
+~ Small crankcase-scavenged two-stroke petrol engines cannot keep a pool of oil in the crankcase, because the crankcase handles the incoming charge. They use mist (petroil) lubrication: oil is mixed with the petrol in a small proportion of a few per cent, or metered by a separate oil pump. When the fuel evaporates, the oil mist lubricates the cylinder walls, piston, bearings and crankpin. Splash, wet-sump and pressure systems are used in four-stroke engines.
+
+Q 38 | ice | Cooling & Lubrication
+Which of the following is a component of a pressure lubrication system ?
+(1) Scoop on the connecting rod
+(2) Oil mixed with fuel
+(3) Oil pump that forces oil through channels
+(4) Oil splashed onto components from a reservoir
+= 3
+~ In a pressure (forced-feed) lubrication system an oil pump, usually a gear pump, draws oil from the sump through a strainer and forces it through a filter into the main oil gallery. Drilled passages carry it to the main, connecting-rod and camshaft bearings, and a relief valve limits the pressure. A scoop on the connecting rod and oil splashed from a trough belong to the splash system, and oil mixed with fuel to petroil (mist) lubrication.
+
+Q 39 | ice | Cooling & Lubrication
+Which of the following is a key advantage of the liquid cooling system ?
+(1) It is very cheap
+(2) It provides even cooling throughout the engine
+(3) It is dependent only on the supply of water
+(4) It absorbs a considerable amount of power from the engine
+= 2
+~ In liquid cooling, coolant circulated by the water pump through jackets around the cylinders and head picks up heat from all the hot areas and carries it to the radiator, so the engine is cooled evenly and its temperature is held steady by the thermostat; the jackets also damp engine noise. Its drawbacks are higher cost and weight, dependence on the coolant and pump, and the power absorbed by the pump and fan.
+
+Q 40 | ice | Cooling & Lubrication
+In an air-cooled engine, what component helps to increase the surface area for heat dissipation ?
+(1) Radiator fan
+(2) Pressure cap
+(3) Extended fins
+(4) Circulating air
+= 3
+~ Air-cooled engines, as in most motorcycles and scooters, have thin extended fins cast on the cylinder barrel and head. The fins enlarge the area exposed to the air, so more heat is carried away by convection, either by the air rushing past the moving vehicle or by a fan and cowling. The radiator fan and pressure cap belong to liquid cooling, and circulating air is the cooling medium rather than a component.
+
+Q 41 | chs | Clutch & Gearbox
+What is the role of the dog clutch in a synchromesh gearbox after synchronization ?
+(1) To initiate the speed matching process
+(2) To provide the final positive engagement between the gear and the shaft
+(3) To disengage the gears during a shift
+(4) To absorb vibrations during operation
+= 2
+~ In a synchromesh gearbox the cone clutch (synchroniser ring) first uses friction to bring the gear and the main shaft to the same speed. Once the speeds match, the sliding sleeve moves further and its internal teeth engage the dog teeth on the gear, locking the gear positively to the shaft so that torque passes without slip. The cone only matches the speeds; the dog clutch provides the final positive engagement.
+
+Q 42 | chs | Clutch & Gearbox
+What is the primary function of a torque converter in an automatic transmission ?
+(1) To engage and disengage the engine from the transmission
+(2) To transmit power from the engine to the transmission
+(3) To provide a fluid coupling to transmit torque from the engine to the transmission
+(4) To control the gear selection and shift points
+= 3
+~ A torque converter takes the place of the friction clutch in an automatic transmission. Its impeller, driven by the engine, throws oil onto the turbine, which drives the gearbox input shaft, so torque is transmitted through the fluid and the vehicle can stand in gear with the engine idling. Unlike a simple fluid coupling, it also has a stator that multiplies torque at low speeds. Gear selection and shift points are controlled by the valve body or the transmission control unit.
+
+Q 43 | chs | Clutch & Gearbox
+Which of the following is a basic component of most automatic transmissions ?
+(1) Flywheel
+(2) Planetary gear set
+(3) Friction clutch
+(4) Clutch pedal
+= 2
+~ Conventional automatic transmissions use one or more planetary (epicyclic) gear sets, each with a sun gear, planet gears on a carrier and a ring gear. Holding or driving different members of the set with hydraulically applied multi-plate clutches and brake bands gives the various ratios and reverse without sliding gears in and out of mesh. The clutch pedal and driver-operated main friction clutch belong to manual gearboxes; the torque converter replaces them.
+
+Q 44 | chs | Drive Line, Axles & Differential
+What is the purpose of a slip joint in a propeller shaft ?
+(1) To allow the shaft to bend sideways
+(2) To transfer torque at an angle
+(3) To transmit torque when the shafts are not parallel
+(4) To allow the shaft to change length due to expansion or contraction
+= 4
+~ A slip joint is a splined sleeve and shaft at one end of the propeller shaft. As the rear axle moves up and down on its springs, the distance between the gearbox and the axle changes, and the slip joint lets the propeller shaft lengthen or shorten, the "expansion or contraction" of the option, while still transmitting torque. Transmitting torque at an angle, between shafts that are not in line, is the job of the universal joints.
+
+Q 45 | chs | Drive Line, Axles & Differential
+Which type of joint is used to allow the propeller shaft to transmit torque at an angle ?
+(1) Universal joint
+(2) Hinge joint
+(3) Ball and socket joint
+(4) Pivot joint
+= 1
+~ A universal joint (Hooke's joint), made of two yokes connected by a cross or spider with needle bearings, joins two shafts whose axes meet at an angle and lets the angle vary as the rear axle moves on its springs. Because a single Hooke's joint causes speed fluctuation, propeller shafts use two joints arranged in phase, and front-wheel-drive shafts use constant-velocity joints. Hinge and pivot joints allow movement but cannot drive the shaft.
+
+Q 46 | chs | Drive Line, Axles & Differential
+A differential allows the rear wheels to rotate at different speeds. This is essential for
+(1) Starting the vehicle on a hill
+(2) Increasing the vehicle's horsepower
+(3) Proper steering during a turn
+(4) Applying the brakes
+= 3
+~ On a turn the outer driving wheel travels a longer arc than the inner wheel in the same time, so it must turn faster. The differential divides the drive between the two half-shafts, letting the outer wheel speed up while the inner one slows down by the same amount, so the vehicle can turn smoothly without the wheels scrubbing or slipping and without straining the axle. Without it, cornering would cause tyre wear and make steering difficult.
+
+Q 47 | chs | Clutch & Gearbox
+Which type of clutch does not require a clutch pedal ?
+(1) Single plate
+(2) Multi-plate
+(3) Centrifugal
+(4) Cone
+= 3
+~ A centrifugal clutch engages automatically according to engine speed: weighted shoes or flyweights on the driving member are thrown outward by centrifugal force as the speed rises and press against the drum, while springs pull them back at idle so that the drive is disengaged. No pedal is needed, which is why it is used in mopeds, automatic scooters and other small vehicles. Single-plate, multi-plate and cone clutches are released by a pedal or lever.
+
+Q 48 | chs | Clutch & Gearbox
+In a single plate clutch, what is the function of the pressure plate ?
+(1) To apply friction to the clutch disc
+(2) To disengage the clutch disc from the flywheel when the pedal is depressed
+(3) To hold the clutch disc between the flywheel and itself when the pedal is released
+(4) To absorb heat generated during engagement
+= 3
+~ In a single-plate clutch the pressure plate is pushed towards the flywheel by the clutch springs (coil or diaphragm), clamping the friction-lined clutch disc between the flywheel and itself when the pedal is released, so engine torque passes to the gearbox input shaft. When the pedal is pressed, the release bearing and levers pull the pressure plate back against the springs and free the disc. Its main job is this clamping.
+
+Q 49 | chs | Clutch & Gearbox
+Why are multi-plate clutches used instead of single plate clutches ?
+(1) To reduce torque transmission capacity
+(2) To increase the torque transmission capacity
+(3) To operate as a wet clutch only
+(4) To increase the overall size of the clutch
+= 2
+~ The torque a plate clutch can transmit is T = nμWR, where n is the number of pairs of contact surfaces, μ the coefficient of friction, W the axial spring force and R the mean radius of the friction surfaces. Adding plates raises n, so a multi-plate clutch transmits more torque within a smaller diameter; that is why it is used in motorcycles, heavy vehicles and automatic transmissions. It can run dry or wet, and it keeps the size down, not up.
+
+Q 50 | chs | Brakes
+In a disc brake, which component is responsible for applying pressure to the pads ?
+(1) Brake drum
+(2) Piston in the caliper
+(3) Brake fluid
+(4) Bleed screw
+= 2
+~ In a hydraulic disc brake the master cylinder sends fluid pressure to the caliper, where it acts on one or more pistons. The pistons push the friction pads against the faces of the rotating disc, and the friction slows the wheel; the piston seals pull the pistons back slightly on release. Brake fluid only transmits the pressure, the bleed screw is for removing air from the system, and the drum belongs to drum brakes.
+
+Q 51 | chs | Brakes
+What is the main advantage of disc brakes over drum brakes ?
+(1) They are generally less expensive
+(2) They are less prone to brake fade due to better heat dissipation
+(3) They are simpler in design and require less maintenance
+(4) They are more effective when the vehicle is in reverse gear
+= 2
+~ In a disc brake the rotor is exposed to the air (and is often ventilated), so the heat produced by braking is shed quickly. Friction therefore stays steady during long or repeated braking, and brake fade is much less than in an enclosed drum, which also expands away from the shoes when hot. Disc brakes also dry out quickly after getting wet. They usually cost more than drums and work equally well in forward and reverse.
+
+Q 52 | chs | Brakes
+Which of these is an advantage of hydraulic brakes over mechanical brakes ?
+(1) They require more pedal effort for the same braking effect
+(2) They require less pedal effort for the same braking effect
+(3) They only provide uniform braking force to one wheel
+(4) They are less effective at high speeds
+= 2
+~ In a hydraulic brake the pedal pushes a piston in the master cylinder, and the fluid pressure is transmitted equally to every wheel cylinder (Pascal's law). Because the wheel-cylinder pistons are larger than the master-cylinder piston, the force is multiplied, so less pedal effort gives the same braking effect. Hydraulic brakes also apply equal pressure at all wheels, have fewer rods and joints to wear or adjust, and work well at all speeds.
+
+Q 53 | chs | Brakes
+Which vehicle type typically uses air brakes due to their size and weight ?
+(1) Passenger cars
+(2) Motorcycles
+(3) Trucks, buses and semi-trailers
+(4) Electric scooters
+= 3
+~ Heavy vehicles such as trucks, buses and semi-trailers need very large braking forces that the driver's foot cannot supply through a simple hydraulic system. Air brakes use compressed air from an engine-driven compressor, stored in reservoirs, to apply the brakes through brake chambers. Air is freely available, small leaks do not make the system fail at once, and trailer brakes can be coupled easily. Cars, motorcycles and scooters use hydraulic or mechanical brakes.
+
+Q 54 | chs | Steering & Suspension
+When a vehicle turns, the inner front wheel must
+(1) Turn at a smaller angle than the outer wheel
+(2) Turn at the same angle as the outer wheel
+(3) Turn at a greater angle than the outer wheel
+(4) Have a negative steering angle
+= 3
+~ When a vehicle turns, the inner front wheel runs on a smaller circle than the outer wheel about the same turning centre. To roll without side-slip it must therefore be steered through a larger angle than the outer wheel. Steering linkages such as the Ackermann mechanism, whose steering arms are angled inward towards the rear axle, give the inner wheel this larger angle automatically.
+
+Q 55 | chs | Steering & Suspension
+The condition for correct steering is that all four wheels of a vehicle must
+(1) Turn at the same angle
+(2) Turn about the same instantaneous center
+(3) Have the same turning radius
+(4) Be perfectly aligned at all times
+= 2
+~ Correct steering means that all wheels roll without lateral slip. This happens only when the axes of all four wheels, produced, meet at one point (the instantaneous centre) on the line of the rear axle, so that every wheel moves on a circle about the same centre. The wheels then turn at different angles and on different radii, which rules out options 1 and 3. The Ackermann condition, cot(outer angle) − cot(inner angle) = pivot distance/wheelbase, expresses this.
+
+Q 56 | chs | Steering & Suspension
+What is the primary function of the Ackermann steering mechanism ?
+(1) To make all four wheels turn at the same angle
+(2) To achieve true rolling by ensuring the wheels turn at different angles when cornering
+(3) To provide power steering assist to the driver
+(4) To improve fuel efficiency
+= 2
+~ The Ackermann steering mechanism is a four-bar linkage formed by the front axle, the two steering arms and the track rod. Its geometry turns the inner wheel through a larger angle than the outer wheel, so that the axes of the wheels meet near one point on the rear-axle line and the wheels roll truly, without side-slip, while cornering. It satisfies the correct-steering condition exactly in only three positions (straight ahead and one on each side) and gives no power assistance.
+
+Q 57 | ael | Batteries & Charging
+What is the function of the alternator in a vehicle ?
+(1) To provide the initial power to start the engine
+(2) To recharge the battery and power the electrical accessories
+(3) To convert electrical energy to mechanical energy
+(4) To regulate the oil pressure
+= 2
+~ The alternator, driven by the engine through a belt, converts mechanical energy into electrical energy. Its AC output is rectified to DC by diodes, and a voltage regulator holds it at about 14 V in a 12 V system, so it recharges the battery and supplies the lights, ignition and other accessories while the engine runs. Starting the engine is the job of the battery and the starter motor, which converts electrical energy into mechanical energy.
+
+Q 58 | ael | Batteries & Charging
+Which component converts mechanical energy into electrical energy to charge the battery and power the electrical system ?
+(1) Starter motor
+(2) Alternator
+(3) Regulator
+(4) Ignition coil
+= 2
+~ The alternator converts the engine's mechanical energy into electrical energy. A belt from the crankshaft pulley spins its rotor (field winding) inside the stator windings, inducing alternating current, which built-in diodes rectify to DC for charging the battery and running the electrical system. The starter motor does the opposite (electrical to mechanical), the regulator only controls the output voltage, and the ignition coil steps up the voltage for the spark plugs.
+
+Q 59 | ael | Lighting, Instruments & Wiring
+What is the purpose of a relay in an automotive electrical circuit ?
+(1) To reduce the voltage in the circuit
+(2) To increase the resistance of the circuit
+(3) To act as a remote-controlled switch, allowing a low-current circuit to control a high-current circuit
+(4) To store electrical charge for later use
+= 3
+~ A relay is an electromagnetic switch. A small current from a dashboard switch or the ECU energises the relay coil, whose magnetic pull closes contacts in a separate heavy-current circuit, for example for the headlamps, horn, fuel pump or starter solenoid. This lets thin wires and small switches control large loads, reducing voltage drop and switch wear. A relay does not reduce voltage, add resistance or store charge; storing charge is the job of a capacitor or battery.
+
+Q 60 | ice | Fuels, Lubricants & Emissions
+What is the impact of high concentrations of pollutants like sulfur dioxide on the environment ?
+(1) Causes a cooling effect in the atmosphere
+(2) Is the primary cause of acid rain
+(3) Do not cause the formation of smog
+(4) Neutralizes acid in water bodies
+= 2
+~ Sulfur dioxide, released by burning sulfur-containing fuels such as coal and high-sulfur diesel, is oxidised in the air and dissolves in water droplets to form sulfuric acid. This falls as acid rain, together with nitric acid formed from nitrogen oxides, acidifying lakes and soils, damaging forests and crops, and corroding buildings. SO₂ also helps form the classical "London" smog and adds acid rather than neutralising it. Its sulfate aerosols do cool the air slightly by reflecting sunlight, but acid rain is its chief environmental impact.
+
+Q 61 | ice | Fuels, Lubricants & Emissions
+What is a major exhaust emission from CI (diesel) engines compared to SI (petrol) engines ?
+(1) Carbon Monoxide (CO)
+(2) Particulates
+(3) Sulphur
+(4) Unburnt Hydrocarbons (HC)
+= 2
+~ Diesel engines run with excess air, so their CO and unburnt HC emissions are lower than those of petrol engines. Their characteristic pollutants are particulates (soot or black smoke) and NOₓ. Soot forms in fuel-rich zones of the diesel spray, where fuel droplets burn incompletely. This is why BS-VI diesel vehicles (BS-VI in force from 1 April 2020) generally use diesel particulate filters. Sulphur is a fuel impurity that leaves the engine as SO₂, not a main emission.
+
+Q 62 | ice | Fuels, Lubricants & Emissions
+Which of the following factors increases the tendency for NOₓ formation in an SI engine ?
+(1) Decreasing the air-fuel ratio
+(2) Increasing the peak combustion temperature
+(3) Increasing the ignition delay
+(4) Lowering the engine’s compression ratio
+= 2
+~ Nitric oxide forms when the nitrogen and oxygen of the air combine at very high temperatures, roughly above 1800 K, and the rate rises steeply with temperature. Anything that raises the peak combustion temperature, such as a higher compression ratio, advanced spark timing or a mixture slightly lean of stoichiometric, increases NOₓ. Lowering the compression ratio reduces it, and exhaust gas recirculation (EGR) controls NOₓ by lowering the peak temperature.
+
+Q 63 | ice | Fuels, Lubricants & Emissions
+Odor emissions from diesel engines are mainly caused by
+(1) Oxides of nitrogen (NOₓ)
+(2) Carbon monoxide (CO)
+(3) Particulate matter (soot)
+(4) Unburnt or partially burnt hydrocarbons, including aldehydes
+= 4
+~ The typical smell of diesel exhaust comes mainly from unburnt and partially oxidised hydrocarbons, especially aldehydes such as formaldehyde and acrolein. These form in the over-lean outer zones of the fuel spray and where the flame is quenched during expansion. NOₓ, CO and soot are important diesel pollutants, but they are not the main cause of the odour. Good combustion and an oxidation catalytic converter reduce the odour.
+
+Q 64 | ice | Fuels, Lubricants & Emissions
+Aldehydes in diesel engine exhaust are a type of
+(1) Sulfur oxide compound
+(2) Particulate matter
+(3) Unburnt hydrocarbon (HC)
+(4) Inert gas
+= 3
+~ Aldehydes, for example formaldehyde (HCHO) and acetaldehyde, are oxygenated organic compounds formed by partial oxidation of the fuel. Engine textbooks class them with the unburnt or partially burnt hydrocarbon (HC) emissions, and they cause the pungent odour and eye irritation of diesel exhaust. They are not sulfur compounds, not solid particulates and not inert gases. An oxidation catalytic converter turns them into carbon dioxide and water.
+
+Q 65 | ice | Fuels, Lubricants & Emissions
+Which of the following operating conditions is a primary cause for high NOₓ emissions in a diesel engine ?
+(1) Low combustion temperature
+(2) Insufficient oxygen supply
+(3) High combustion pressure and temperature with sufficient reaction time
+(4) Delayed injection timing
+= 3
+~ NOₓ (mainly NO) forms by the thermal (Zeldovich) mechanism, which needs high temperature, oxygen and time. In a diesel engine the high compression and combustion pressures give very high flame temperatures around the burning spray, where excess oxygen is present, and if the hot gases stay at that temperature long enough much NO forms. Low combustion temperature, a shortage of oxygen and retarded (delayed) injection timing all reduce NOₓ, which is why retarded timing and EGR are used to control it.
+
+Q 66 | ice | Fuels, Lubricants & Emissions
+Diesel engine exhaust primarily contains which forms of nitrogen oxides ?
+(1) N₂O and NO₂
+(2) N₂O₄ and N₂O₃
+(3) Pure N₂ and O₂
+(4) NO and NO₂
+= 4
+~ The nitrogen oxides in diesel exhaust are mainly nitric oxide (NO), which forms in the hot burning gases, and nitrogen dioxide (NO₂), formed by further oxidation of NO; NO₂ forms a larger share of the total in diesels than in petrol engines. Together they are reported as NOₓ. Nitrous oxide (N₂O) occurs only in traces, N₂O₄ and N₂O₃ are not significant exhaust products, and N₂ and O₂ are not nitrogen oxides at all.
+
+Q 67 | thm | Refrigeration & Air Conditioning
+What is the function of the condenser in an automotive air-conditioning system ?
+(1) It cools the refrigerant
+(2) It compresses the refrigerant
+(3) It expands the refrigerant
+(4) It removes moisture from the refrigerant
+= 1
+~ In a car air-conditioner the compressor sends hot, high-pressure refrigerant vapour to the condenser, mounted in front of the radiator. Air flowing through the condenser fins removes heat, so the refrigerant cools and condenses into a high-pressure liquid. The expansion valve or orifice tube then lowers its pressure, and the evaporator inside the cabin absorbs heat. Compression is the compressor's job, and the receiver-drier (or accumulator) removes moisture.
+
+Q 68 | thm | Refrigeration & Air Conditioning
+What is the purpose of the recirculating mode in a car’s air-conditioning ?
+(1) To pull in outside air
+(2) To increase the use of the AC system
+(3) To recycle air already inside the cabin
+(4) To turn the AC system off
+= 3
+~ In recirculation mode a flap closes the outside-air inlet, so the blower draws air from inside the cabin, passes it over the evaporator and returns it to the cabin. Because this air is already cooler and drier than the outside air, the cabin cools faster and the AC works less hard. It also keeps out dust, smoke and fumes, for example in heavy traffic. Fresh-air mode should be used at intervals to avoid stale air and misted windows.
+
+Q 69 | chs | Steering & Suspension
+The outward or inward tilt of a wheel from the vertical is known as
+(1) Caster
+(2) Toe
+(3) Camber
+(4) Kingpin inclination
+= 3
+~ Camber is the inward or outward tilt of the wheel from the vertical, seen from the front of the vehicle. When the top of the wheel tilts outward it is positive camber; when it tilts inward it is negative camber. Camber affects tyre wear and cornering grip. Caster is the fore-and-aft tilt of the steering axis, toe is the difference between the distances across the front and rear of the wheels, and kingpin inclination is the inward tilt of the kingpin.
+
+Q 70 | chs | Steering & Suspension
+Which of the following steering geometry components is the lateral inward tilt of the steering axis from the vertical ?
+(1) Caster angle
+(2) Camber
+(3) Kingpin inclination
+(4) Toe-in
+= 3
+~ Kingpin inclination (also called steering axis inclination) is the inward tilt of the kingpin or steering axis from the vertical, seen from the front of the vehicle. It reduces the scrub radius, so steering is lighter, and because the front of the vehicle is lifted slightly when the wheels are turned, it helps return them to the straight-ahead position. Camber is the tilt of the wheel itself, caster is the fore-and-aft tilt of the steering axis, and toe-in is the inward pointing of the wheels.
+
+Q 71 | chs | Steering & Suspension
+A vehicle set with “toe-out” on the front wheels will typically exhibit which handling characteristic ?
+(1) Increased straight-line stability at high speeds
+(2) Slower and smoother steering response
+(3) Enhanced steering sensitivity and quicker turn-in to corners
+(4) Reduced tyre wear over time
+= 3
+~ With toe-out, the front edges of the front wheels point slightly away from each other. When the steering is turned, the inner wheel already points into the corner, so the car responds sharply and turns in quickly; some racing set-ups use toe-out for this reason. The cost is poorer straight-line stability, as the vehicle tends to wander, and extra tyre wear from scrubbing. Toe-in has the opposite effect: more stability and slower response.
+
+Q 72 | chs | Wheels & Tyres
+Where will an underinflated tyre wear the tread most ?
+(1) Near the center
+(2) Near the edge (both edges)
+(3) In the cross direction
+(4) Evenly across the surface
+= 2
+~ In an underinflated tyre the centre of the tread sags inward and the load is carried mainly by the shoulders, so both outer edges of the tread wear faster than the centre. Overinflation does the reverse and wears the centre. Underinflation also increases flexing, heat build-up, rolling resistance and fuel consumption. Wear on only one edge usually points to wrong camber or toe rather than to tyre pressure.
+
+Q 73 | chs | Wheels & Tyres
+Grooves (tread) are made in the tyres of vehicles to
+(1) Allow the tyre to fit the rim better
+(2) Make the tyre look more appealing
+(3) Improve traction and grip on the road, especially in wet conditions
+(4) Reduce the weight of the tyre
+= 3
+~ Tread grooves give the tyre biting edges for grip and, on wet roads, channel water out from under the contact patch. Without them a film of water would lift the tyre off the road (aquaplaning) and grip would be lost. Tread patterns also help on mud and loose surfaces. Tread-wear indicator bars moulded into the grooves show when the tyre must be replaced. The grooves have nothing to do with fitting the rim or with appearance.
+
+Q 74 | mfg | Engineering Materials
+Which of the following is a common crystal structure for metals ?
+(1) Simple Cubic
+(2) Body-Centered Cubic (BCC)
+(3) Octagonal
+(4) Triangular
+= 2
+~ Most metals crystallise in one of three structures: body-centred cubic (BCC), face-centred cubic (FCC) or hexagonal close-packed (HCP). BCC is found in α-iron (ferrite), chromium, tungsten and molybdenum; FCC in aluminium, copper, nickel and γ-iron; HCP in zinc, magnesium and titanium. Among the elements, simple cubic occurs only in polonium, so it is not a common metal structure, and "octagonal" and "triangular" are not crystal structures at all.
+
+Q 75 | mfg | Engineering Materials
+Which of the following non-ferrous metals is known for its high electrical and thermal conductivity ?
+(1) Lead
+(2) Zinc
+(3) Aluminum
+(4) Tin
+= 3
+~ Aluminium is a light non-ferrous metal with high electrical conductivity (about 61 percent of copper's for the same cross-section, but about twice copper's for the same mass) and high thermal conductivity (about 237 W/m·K). It is therefore used for power-transmission conductors, radiators, pistons and cylinder heads. Lead, zinc and tin are much poorer conductors. Copper and silver conduct better than aluminium but are not among the options.
+
+Q 76 | mfg | Engineering Materials
+Which element is the main component in ferrous metals ?
+(1) Zinc
+(2) Tin
+(3) Copper
+(4) Iron
+= 4
+~ Ferrous metals are those whose main constituent is iron (Latin ferrum), such as cast iron, wrought iron, carbon steels and alloy steels. Carbon and alloying elements such as manganese, chromium and nickel are added in smaller amounts. Zinc, tin and copper are non-ferrous metals and are the basis of non-ferrous alloys such as brass and bronze; zinc is also used to galvanise steel against rusting.
+
+Q 77 | mfg | Engineering Materials
+The ability of a material to be drawn into wires is called
+(1) Malleability
+(2) Ductility
+(3) Toughness
+(4) Hardness
+= 2
+~ Ductility is the property that allows a material to be drawn into thin wires under tension without breaking, as with copper, aluminium and mild-steel wire. It is measured by the percentage elongation and reduction in area in a tensile test. Malleability is the ability to be hammered or rolled into thin sheets, toughness is the ability to absorb energy before fracture, and hardness is resistance to indentation, scratching and wear.
+
+Q 78 | mfg | Metrology & Measurement
+A thermocouple is a type of transducer used to measure
+(1) Force
+(2) Pressure
+(3) Displacement
+(4) Temperature
+= 4
+~ A thermocouple is made of two wires of dissimilar metals joined at a junction. When this junction is at a different temperature from the reference (cold) junction, a small voltage is produced (the Seebeck effect) that depends on the temperature difference. It is thus a self-generating temperature transducer, used in vehicles for example to measure exhaust-gas temperature. Force and pressure are measured with load cells, strain gauges or pressure transducers.
+
+Q 79 | ael | Electronics, Sensors & ECU
+An automatic cruise control system in a car is an example of a
+(1) Open-loop system
+(2) Closed-loop system
+(3) Simple control system
+(4) Feedforward control system
+= 2
+~ Cruise control holds the vehicle at a set speed. A speed sensor continuously measures the actual speed and feeds it back to the controller, which compares it with the set speed and opens or closes the throttle (or changes the fuel injected) to correct the error, for example on slopes. This use of feedback makes it a closed-loop control system. An open-loop system acts without measuring its output, as a simple timer does.
+
+Q 80 | mfg | Metrology & Measurement
+Which of the following is commonly used in automobiles and other applications to measure force or weight by converting it into an electrical signal ?
+(1) Thermistor
+(2) Load cell (Force Transducer)
+(3) Thermocouple
+(4) Potentiometer
+= 2
+~ A load cell is a force transducer that converts force or weight into an electrical signal. The common type has strain gauges bonded to an elastic element and wired as a Wheatstone bridge: the load strains the element, changing the gauges' resistance and giving an output voltage proportional to the force. Load cells are used in weighbridges and in brake and engine test rigs. Thermistors and thermocouples sense temperature, and potentiometers sense position or displacement.
+
+Q 81 | thm | Thermodynamics
+What is the highest possible theoretical efficiency of a heat engine operating with a hot reservoir of furnace gases at 2100 °C when the cooling water available is at 15 °C ?
+(1) 0.678 or 67.8%
+(2) 0.778 or 77.8%
+(3) 0.878 or 87.8%
+(4) 0.978 or 97.8%
+= 3
+~ The highest possible efficiency of a heat engine working between two temperatures is the Carnot efficiency, which depends only on the absolute temperatures of the source and the sink: η = 1 − T₂/T₁. Here T₁ = 2100 + 273 = 2373 K and T₂ = 15 + 273 = 288 K, so η = 1 − 288/2373 = 0.8786, or about 87.8 percent. No real engine working between these temperatures can exceed this value.
+
+Q 82 | thm | Thermodynamics
+The specific volume of water when heated at 0 °C
+(1) First increases and then decreases
+(2) First decreases and then increases
+(3) Increases steadily
+(4) Decreases steadily
+= 2
+~ Water behaves anomalously. When heated from 0 °C, its specific volume first decreases, reaching a minimum (maximum density, about 1000 kg/m³) at about 4 °C, and only then increases like that of other liquids. The reason is that the open, hydrogen-bonded, ice-like clusters left at 0 °C collapse as the water warms. This anomaly is why lakes freeze from the top while the water at the bottom stays near 4 °C.
+
+Q 83 | thm | Thermodynamics
+What is the value of absolute zero scale of temperature ?
+(1) 273 °C
+(2) 273 °K
+(3) − 273 °K
+(4) 0° K
+= 4
+~ Absolute zero is the lowest possible temperature, at which molecular motion is at its minimum. On the absolute (Kelvin) scale it is 0 K, which equals −273.15 °C (about −273 °C). The paper prints "0° K"; in SI the degree sign is not used with the kelvin, so it is written 0 K. 273 K is the ice point (0 °C), and since nothing can be colder than 0 K, "−273 °K" is meaningless.
+
+Q 84 | ice | Engine Fundamentals & Cycles
+The efficiency of an Otto Cycle is 60% and γ = 1.5. What is the compression ratio ?
+(1) 4.25
+(2) 5.25
+(3) 6.25
+(4) 7.25
+= 3
+~ The air-standard efficiency of the Otto cycle is η = 1 − 1/r^(γ−1). Here 0.6 = 1 − 1/r^0.5, so r^0.5 = 1/0.4 = 2.5 and r = 2.5² = 6.25. The compression ratio is therefore 6.25. The working also shows that the Otto-cycle efficiency depends only on the compression ratio and on γ, not on the heat supplied.
+
+Q 85 | ice | Engine Fundamentals & Cycles
+Mean effective pressure of the Otto Cycle is
+(1) Inversely proportional to pressure ratio
+(2) Directly proportional to pressure ratio
+(3) Proportional to square root of pressure ratio
+(4) Does not vary with pressure ratio
+= 2
+~ The mean effective pressure of the air-standard Otto cycle is pm = p₁ r (rp − 1)(r^(γ−1) − 1)/[(γ − 1)(r − 1)], where r is the compression ratio and rp = p₃/p₂ is the pressure ratio during constant-volume heat addition. For given values of r and γ, pm rises linearly with (rp − 1), so textbooks state that the mean effective pressure is directly proportional to the pressure ratio. A higher pressure ratio means more heat added and more work per cycle.
+
+Q 86 | mec | Theory of Machines
+The product of diametral pitch (P) and circular pitch (p) is
+(1) π
+(2) 2π
+(3) 1
+(4) 0
+= 1
+~ Diametral pitch is the number of teeth per unit of pitch-circle diameter, P = T/D. Circular pitch is the distance from a point on one tooth to the same point on the next tooth, measured along the pitch circle, p = πD/T. Multiplying them gives P × p = (T/D) × (πD/T) = π. The module, m = D/T, is the reciprocal of the diametral pitch, so the circular pitch can also be written p = πm.
+
+Q 87 | mec | Machine Design
+A single reduction gear of 120 kW with a pinion 250 mm pitch circle diameter and 650 r.p.m. is supported in bearings on either side. Calculate the torque transmitted in N-m.
+(1) 1765
+(2) 1675
+(3) 1567
+(4) 1176
+= 1
+~ Torque T = P × 60/(2πN). With P = 120 kW = 120 000 W and N = 650 r.p.m., T = 120 000 × 60/(2π × 650) ≈ 1763 N·m. The nearest option, 1765 N-m, is the official answer. The pinion diameter (250 mm) is not needed for the torque; it is used next to find the tangential tooth load on the pinion, Ft = T/r = 1763/0.125 ≈ 14.1 kN, for designing the gear and its bearings.
+
+Q 88 | mec | Theory of Machines
+The train value of a gear train is
+(1) equal to velocity ratio of a gear train
+(2) reciprocal of velocity ratio of a gear train
+(3) always greater than unity
+(4) always less than unity
+= 2
+~ The velocity (speed) ratio of a gear train is the speed of the driver divided by the speed of the last driven gear. The train value is its reciprocal: the speed of the driven gear divided by the speed of the driver, which equals the product of the numbers of teeth on the driving gears divided by the product of those on the driven gears. It can be more or less than unity, depending on whether the train steps the speed up or down.
+
+Q 89 | ice | Fuels, Lubricants & Emissions
+Flash point and fire point are characteristics primarily related to the
+(1) Low-temperature behaviour of the fuel
+(2) High-temperature behaviour and volatility of the fuel
+(3) Purity of the fuel
+(4) Viscosity of the fuel
+= 2
+~ The flash point is the lowest temperature at which a fuel or oil gives off enough vapour to flash momentarily when a small flame is applied, and the fire point is the slightly higher temperature at which the vapour keeps burning. Both depend on how readily the fuel vaporises when heated, that is, on its volatility and behaviour at raised temperatures, and they indicate the fire hazard in storage and handling. Low-temperature behaviour is shown by the cloud point and pour point.
+
+Q 90 | ice | Fuels, Lubricants & Emissions
+The fire point of a fuel is the lowest temperature at which its vapor will continue to burn for at least how many seconds after ignition ?
+(1) 1 second
+(2) 2 seconds
+(3) 4 seconds
+(4) 5 seconds
+= 4
+~ The fire point is the lowest temperature at which the vapour of a fuel or oil, once ignited by a test flame, continues to burn for at least 5 seconds. It is a little higher than the flash point, at which the vapour only flashes and goes out at once. Both are found by heating the sample at a steady rate in a standard apparatus, such as the Cleveland open cup, and passing a small flame over it.
+
+Q 91 | mec | Machine Design
+A line shaft rotating at 200 r.p.m. is to transmit 20 kW. The shaft may be assumed to be made of mild steel with an allowable shear stress of 42 MPa. Determine the torque transmitted by the shaft, neglecting the bending moment on the shaft in N-m.
+(1) 80 mm
+(2) 90 mm
+(3) 70 mm
+(4) 50 mm
+= 4
+~ The torque is T = P × 60/(2πN) = 20 000 × 60/(2π × 200) ≈ 955 N·m. For a solid shaft in pure torsion, T = (π/16) τ d³, so d = [16 × 955 000/(π × 42)]^(1/3) ≈ 48.7 mm, which is rounded up to the standard size of 50 mm. The question as printed asks for the torque in N-m, but the options are shaft diameters; the key's 50 mm is the required shaft diameter.
+
+Q 92 | mec | Machine Design
+Which of the following loading is considered for the design of axles ?
+(1) Bending moment only
+(2) Twisting moment only
+(3) Combined bending moment and torsion
+(4) Combined action of bending moment, twisting moment and axial thrust
+= 1
+~ In machine design an axle, as distinct from a shaft, is a member that supports rotating parts such as wheels or pulleys but does not transmit useful torque. It is treated as a beam carrying transverse loads and is therefore designed for bending moment only. Shafts that transmit power are designed for combined bending and torsion, and propeller shafts or rotor shafts carrying thrust for bending, torsion and axial load together.
+
+Q 93 | mec | Machine Design
+When a shaft is subjected to a bending moment M and a twisting moment T, then the equivalent twisting moment is equal to
+(1) M + T
+(2) M² + T²
+(3) √(M² + T²)
+(4) √(M² − T²)
+= 3
+~ For a shaft carrying both a bending moment M and a twisting moment T, the maximum shear stress theory (Guest's theory) gives the equivalent twisting moment Te = √(M² + T²). This single twisting moment produces the same maximum shear stress as M and T acting together, so the shaft diameter is found from Te = (π/16) τ d³. The equivalent bending moment, from the maximum normal stress theory, is Me = ½[M + √(M² + T²)].
+
+Q 94 | mec | Machine Design
+Screws used for power transmission should have
+(1) low efficiency
+(2) high efficiency
+(3) very fine threads
+(4) strong teeth
+= 2
+~ Power screws, such as those in screw jacks, lathe lead screws and screw presses, convert rotary motion into linear motion and transmit power. They should have high efficiency, so that little of the input work is lost in thread friction, and they use strong square, Acme (trapezoidal) or buttress threads rather than fine V-threads. There is a trade-off: a screw whose efficiency is above 50 percent cannot be self-locking, so screw jacks accept a lower efficiency.
+
+Q 95 | mec | Theory of Machines
+A screw jack has square threads and the lead angle of the thread is α. The screw jack will be self locking when the coefficient of friction (μ) is
+(1) μ > tan α
+(2) μ = sin α
+(3) μ = cot α
+(4) μ = cosec α
+= 1
+~ For a square-threaded screw with helix (lead) angle α and friction angle φ, where tan φ = μ, the effort needed to lower the load is P = W tan(φ − α). If φ > α this effort is positive, meaning the load cannot run down by itself and must be driven down, so the screw is self-locking. The condition φ > α is the same as μ > tan α. A self-locking square-threaded screw always has an efficiency below 50 percent.
+
+Q 96 | mec | Engineering Mechanics
+What force would be required to slide it down if the coefficient of friction between body and plane is 0.3 ?
+(1) 0 kg
+(2) 2 kg
+(3) 3 kg
+(4) 5 kg
+= 1
+~ As printed, the question gives neither the weight of the body nor the angle of the plane, so it cannot be worked out from the paper alone. The key's 0 kg follows from the rule for an inclined plane: if the plane is inclined at more than the angle of friction, here tan⁻¹ 0.3 ≈ 16.7°, the component of the weight down the plane exceeds the limiting friction and the body slides down by itself, so no force is needed.
+
+Q 97 | ice | Fuel Supply & Combustion
+In a C.I. engine squish is created
+(1) towards end of compression stroke
+(2) at the end of suction stroke
+(3) at the beginning of suction stroke
+(4) during combustion
+= 1
+~ Squish is the radially inward movement of the charge as the piston approaches top dead centre near the end of the compression stroke. Air trapped between the flat outer part of the piston crown and the cylinder head is pushed into the combustion bowl in the piston, creating strong turbulence that helps the injected fuel mix with the air. Swirl, by contrast, is mainly generated during the induction (suction) stroke by shaped inlet ports.
+
+Q 98 | ice | Fuel Supply & Combustion
+Detonation in S.I. engines occurs due to
+(1) Preignition of charge before the spark
+(2) Sudden ignition of charge before the spark
+(3) Autoignition of the charge after the spark is struck
+(4) Non availability of fuel
+= 3
+~ Detonation (knock) in an SI engine happens after the spark has ignited the charge. As the flame front advances, it compresses and heats the remaining unburnt mixture (the end gas). If the end gas reaches its self-ignition temperature before the flame arrives, it autoignites almost instantly, producing pressure waves and the knocking sound. Ignition of the charge before the spark, by a hot spot, is pre-ignition, a different phenomenon, though it can lead to knock.
+
+Q 99 | ice | Fuels, Lubricants & Emissions
+The ratings of C.I. engine fuel is given by
+(1) Octane Number
+(2) Performance Number
+(3) Cetane Number
+(4) Bearing Number
+= 3
+~ The ignition quality of diesel (CI engine) fuel is rated by its cetane number: the percentage by volume of cetane (n-hexadecane, rated 100) in a blend with α-methylnaphthalene (rated 0) that has the same ignition delay as the fuel. A higher cetane number means a shorter ignition delay, easier cold starting and less diesel knock; Indian diesel specifications set a minimum cetane number. Octane and performance numbers rate SI engine and aviation fuels.
+
+Q 100 | ice | Fuels, Lubricants & Emissions
+Bomb Calorimeter is used to find the calorific value of ________ fuel.
+(1) Solid
+(2) Gaseous
+(3) Solid and gaseous
+(4) Nuclear
+= 3
+~ A bomb calorimeter burns a weighed fuel sample in oxygen at about 25 atm inside a sealed steel "bomb" immersed in water, and the rise in water temperature gives the higher calorific value. Solid fuels such as coal are its main use, and liquid fuels can also be tested in it, but liquid fuels are not among the options. The key accepts solid and gaseous fuels. (Official final key; some sources differ: textbooks use the bomb calorimeter for solid and liquid fuels and the Junkers gas calorimeter for gaseous fuels, which would make option 1 the answer.)
+
+Q 101 | ice | Fuel Supply & Combustion
+In C.I. engines knocking tendency increases with
+(1) Increases in compression ratio
+(2) Increasing inlet temperature of air
+(3) Decrease in compression ratio
+(4) Increasing the coolant temperature
+= 3
+~ Diesel knock is caused by a long ignition delay: fuel injected during the delay accumulates and then burns all at once, giving a sudden pressure rise. A lower compression ratio means lower air temperature and pressure at injection, so the delay lengthens and the knocking tendency increases. Raising the compression ratio, the inlet air temperature or the coolant temperature heats the charge and shortens the delay, reducing knock; these are the opposite of the remedies for SI-engine knock.
+
+Q 102 | ice | Fuel Supply & Combustion
+In C.I. engines with increase in compression ratio the delay period
+(1) Increases
+(2) Decreases
+(3) First increases and then decreases
+(4) Remains unaffected
+= 2
+~ A higher compression ratio raises the temperature and pressure of the compressed air at the moment fuel is injected, so the fuel droplets heat up, vaporise and reach their self-ignition temperature sooner. The ignition delay period therefore decreases as the compression ratio increases, which is why high-compression diesel engines run with less knock. The delay does not first increase and then decrease, and it is not unaffected by compression ratio.
+
+Q 103 | ice | Engine Fundamentals & Cycles
+The top ring nearest to the piston crown is known as
+(1) Compression ring
+(2) Oil ring
+(3) Scrapper ring
+(4) Groove ring
+= 1
+~ The top ring, nearest the piston crown, is a compression ring: it seals the combustion gases in the cylinder and carries much of the piston's heat to the cylinder wall. A piston usually has two compression rings at the top and an oil-control (scraper) ring below them, which scrapes surplus oil off the cylinder wall and returns it to the sump. "Groove ring" is not a type of piston ring. Option 3 is printed "Scrapper ring".
+
+Q 104 | ice | Engine Fundamentals & Cycles
+For reducing wear and eliminate scuffling, the piston rings are
+(1) Lubricated
+(2) Made of cast iron
+(3) Provided with stepped groove
+(4) Plated with chromium or cadmium
+= 4
+~ The top rings work at the highest temperature with the poorest lubrication, so piston rings, usually of fine-grained cast iron, are surface-treated. Chromium plating gives a hard, wear-resistant face that greatly increases ring life, while soft or porous coatings such as cadmium, tin or phosphate help the ring bed in and resist scuffing (local welding and tearing against the bore) during running-in. Being made of cast iron or being lubricated is normal for all rings and is not the specific remedy asked for.
+
+Q 105 | ice | Engine Fundamentals & Cycles
+IC engine pistons are usually made of
+(1) Cast Steel
+(2) Forged Steel
+(3) Phosphor Bronze
+(4) Aluminium Alloy
+= 4
+~ Most IC engine pistons are cast or forged from aluminium–silicon alloys. Aluminium is light, so it lowers the inertia forces of the reciprocating parts and permits higher engine speeds, and its high thermal conductivity keeps the crown cooler. Its drawbacks, higher thermal expansion and lower strength at high temperature, are offset by the silicon content and by piston design. Cast-iron or steel pistons are used mainly in some heavy-duty diesel engines, and phosphor bronze is a bearing and gear material.
+
+Q 106 | ice | Fuel Supply & Combustion
+The venturi in carburetor results in
+(1) Decrease in air velocity
+(2) Increase in air velocity
+(3) Decrease in fuel flow
+(4) Increase in manifold vacuum
+= 2
+~ The venturi is a narrowed throat in the carburettor's air passage. As the same mass of air passes through the smaller area its velocity rises and, by Bernoulli's principle, its pressure falls below atmospheric. This depression at the throat draws petrol from the float chamber through the main jet, and the fast air stream atomises it. So the venturi increases air velocity; it increases rather than decreases fuel flow, and manifold vacuum is governed mainly by the throttle opening.
+
+Q 107 | ice | Fuel Supply & Combustion
+Precise petrol injection system is
+(1) Direct injection
+(2) Sequential injection
+(3) Throttle body injection
+(4) Port injection
+= 3
+~ Throttle body injection (single-point injection) replaced the carburettor with one or two electronically controlled injectors in a throttle body above the throttle valve, spraying a precisely metered quantity of petrol into the intake air for all cylinders; it was the simplest early form of electronic petrol injection. Port (multi-point), sequential and direct injection, however, meter fuel separately for each cylinder and are generally regarded as more precise, so the key's choice is credited to the paper. (Official final key; some sources differ.)
+
+Q 108 | ice | Fuel Supply & Combustion
+The fuel injection pressure in solid injection system is around
+(1) Less than 10 bar
+(2) 10 – 20 bar
+(3) 30 – 50 bar
+(4) 200 – 250 bar
+= 4
+~ In solid (airless) injection, a fuel pump raises the fuel itself to a high pressure and forces it through the injector nozzle, so that it atomises into fine droplets without the help of compressed air. In conventional jerk-pump systems this pressure is of the order of a couple of hundred bar, the key's 200–250 bar. Pressures of a few tens of bar could not even overcome the compression pressure of a diesel engine and atomise the fuel; modern common-rail systems use far higher pressures.
+
+Q 109 | ice | Fuel Supply & Combustion
+________ regulates the pressure strokes in the fuel injection pump of a diesel engine.
+(1) Pump shaft
+(2) Control rack
+(3) Lift of plunger
+(4) Needle valve
+= 2
+~ In a jerk-type (Bosch) fuel injection pump each plunger has a helical groove. The control rack, moved by the accelerator linkage and the governor, rotates the plungers through toothed control sleeves and so changes the point at which the helix uncovers the spill port. This alters the effective pressure stroke and hence the quantity of fuel delivered per stroke. The plunger lift is fixed by the cam on the pump shaft, and the needle valve belongs to the injector nozzle.
+
+Q 110 | mec | Theory of Machines
+The primary unbalanced force is maximum when the angle of inclination of the crank with the line of stroke is
+(1) 60°
+(2) 90°
+(3) 180°
+(4) 360°
+= 3
+~ The primary unbalanced force of a reciprocating engine is F = m r ω² cos θ, where θ is the angle of the crank from the inner dead centre. Its magnitude is greatest when cos θ = ±1, that is at θ = 0° and 180° (the dead centres), and it is zero at 90°. The key chooses 180°; 360° is the same crank position as 0°, so it gives the same maximum. (Official final key; some sources differ.)
+
+Q 111 | mec | Theory of Machines
+The partial balancing means
+(1) Balancing partially the revolving masses
+(2) Balancing partially the reciprocating masses
+(3) Best balancing of engines
+(4) All of the above
+= 2
+~ The reciprocating masses of an engine cannot be fully balanced by a rotating counterweight: a mass at crank radius cancels the primary force along the line of stroke but introduces an equal unbalanced force at right angles to it. In practice only a fraction, commonly between one-half and three-quarters, of the reciprocating mass is balanced, sharing the unbalance between the two directions. This is called partial balancing. Revolving masses, by contrast, can be balanced completely.
+
+Q 112 | ice | Fuels, Lubricants & Emissions
+Detergents are oil additives used to
+(1) Reduce viscosity
+(2) Increase fire point
+(3) Prevent sludge formation
+(4) Prevent foaming
+= 3
+~ Detergent additives in engine oil are metallic compounds such as sulphonates and phenates that keep engine surfaces clean. They neutralise acids formed by combustion and, together with dispersants, hold soot, carbon and oxidation products in fine suspension so that they are drained with the oil instead of settling as sludge and varnish. Viscosity is controlled by viscosity-index improvers, foaming by anti-foam (silicone) additives, and the fire point is a property of the base oil.
+
+Q 113 | ice | Cooling & Lubrication
+Friction that occurs between the layers of oil film is called
+(1) Viscous friction
+(2) Greasy friction
+(3) Dry friction
+(4) Boundary friction
+= 1
+~ When two surfaces are fully separated by a lubricant film (thick-film or hydrodynamic lubrication), the only resistance to motion is the shearing of the oil layers over one another. This is viscous (fluid) friction, and it depends on the oil's viscosity, the sliding speed and the area. Dry friction occurs between unlubricated surfaces, while boundary or greasy friction occurs when only a very thin film separates the surfaces so that the high spots touch.
+
+Q 114 | ice | Cooling & Lubrication
+The main purpose of thermostat in an engine cooling system is to
+(1) Allow the engine to warm quickly
+(2) Prevent the coolant from boiling
+(3) Pressurise the system
+(4) Indicate to the driver the coolant temperature
+= 1
+~ The thermostat valve, fitted at the coolant outlet of the cylinder head, stays closed while the coolant is cold, so the coolant circulates only through the engine and not through the radiator. The engine therefore reaches its working temperature (about 80–90 °C) quickly, which reduces wear, fuel consumption and emissions; the valve then opens and keeps the temperature steady. Boiling is prevented by the pressure cap, which pressurises the system, and the temperature gauge informs the driver.
+
+Q 115 | chs | Clutch & Gearbox
+Two advantages of using helical gears rather than spur gears in a transmission are
+(1) Strength and cost
+(2) Strength and less end thrust
+(3) Noise level and strength
+(4) Noise level and economy
+= 3
+~ In helical gears the teeth are cut at an angle to the axis, so each tooth engages gradually and several teeth share the load at a time. This gives smoother, quieter running and greater load-carrying strength than spur gears of the same size, which is why constant-mesh and synchromesh gearboxes use them. Their drawbacks are higher cost and an axial end thrust that must be taken by thrust bearings, so options mentioning cost, economy or less end thrust are wrong.
+
+Q 116 | chs | Drive Line, Axles & Differential
+The adjustment for backlash in a differential is provided between
+(1) Crown wheel and sun gear
+(2) Sun gear and planet gear
+(3) Crown wheel and the drive pinion
+(4) Crown wheel and planet gear
+= 3
+~ In the final drive the bevel (or hypoid) drive pinion meshes with the crown wheel. Their backlash and tooth-contact pattern are set during assembly by moving the crown wheel sideways with adjusting nuts or shims at the differential-case bearings, and the pinion depth with shims. Wrong backlash causes noise and tooth damage. The sun (side) gears and planet pinions inside the differential cage are not adjusted for backlash in this way.
+
+Q 117 | chs | Drive Line, Axles & Differential
+Central portion of the propeller shaft is made from
+(1) steel shaft
+(2) gun metal shaft
+(3) steel tube
+(4) cast iron rod
+= 3
+~ The propeller shaft must transmit high torque at high speed while being light and having a high whirling (critical) speed. A hollow steel tube has a much higher strength-to-weight ratio and stiffness than a solid shaft of the same weight, so the central portion of the propeller shaft is made of a seamless or welded steel tube, with the universal-joint yokes and the sliding joint welded or splined to its ends. Gun metal and cast iron are unsuitable for such a shaft.
+
+Q 118 | chs | Drive Line, Axles & Differential
+The smallest gears inside the differential casing are
+(1) pinion gears
+(2) sun gears
+(3) side gears
+(4) ring gears
+= 1
+~ An automotive differential contains two side (sun) gears splined to the axle half-shafts and two or four small differential pinions (planet or star gears) carried on a cross-pin in the cage, which mesh with both side gears. The differential pinions are the smallest gears, while the crown (ring) wheel bolted to the cage is the largest. The pinions spin on their pin only when the two wheels turn at different speeds, as on a curve.
+
+Q 119 | chs | Steering & Suspension
+The primary function of a ball and socket joint is to
+(1) Allow rotation in one plane only
+(2) Allow linear motion only
+(3) Allow movement in almost all directions
+(4) Restrict all movements
+= 3
+~ A ball-and-socket joint (a spherical pair) lets the connected parts swivel about any axis through the centre of the ball, allowing angular movement in almost all directions while holding the parts together. In vehicles, ball joints connect the steering arms and tie rods and attach the suspension arms to the steering knuckle, so the wheel can be steered and move up and down at the same time. A hinge (pin) joint allows rotation in one plane only.
+
+Q 120 | chs | Drive Line, Axles & Differential
+Two-piece propeller shaft requires
+(1) One universal joint
+(2) A centre support bearing
+(3) The shaft to be solid
+(4) None of the above
+= 2
+~ When the distance between the gearbox and the rear axle is long, as in trucks and buses, a single propeller shaft would be too long and would whirl at speed. It is therefore divided into two shorter shafts joined by a universal joint, and the rear end of the front shaft is carried in a centre support bearing, mounted in rubber on a chassis cross-member. Such a drive line needs three universal joints, not one, and its shafts are tubular.
+
+Q 121 | mec | Machine Design
+A single dry plate clutch is to be designed to transmit 7.5 kW at 900 r.p.m. Find the diameter of the shaft.
+(1) 21.6 mm
+(2) 26.6 mm
+(3) 32.6 mm
+(4) 36.6 mm
+= 1
+~ Torque T = P × 60/(2πN) = 7500 × 60/(2π × 900) = 79.6 N·m = 79,577 N·mm. For a solid shaft in torsion, T = (π/16) τ d³, so d³ = 16T/(π τ). Taking the usual allowable shear stress τ = 40 N/mm², d³ = 16 × 79,577/(π × 40) ≈ 10,132 mm³ and d ≈ 21.6 mm. The question does not state the shear stress; the keyed 21.6 mm corresponds to τ = 40 N/mm².
+
+Q 122 | chs | Clutch & Gearbox
+In case of a multiple disc clutch, if n₁ are the number of discs on the driving shaft and n₂ are the number of the discs on the driven shaft, then the number of pairs of contact surfaces will be
+(1) n₁ + n₂
+(2) n₁ + n₂ − 1
+(3) n₁ + n₂ + 1
+(4) n₁ − n₂ − 1
+= 2
+~ In a multi-plate clutch the driving and driven discs alternate, and each interface between neighbouring discs is one pair of contact surfaces. With n₁ discs on the driving shaft and n₂ on the driven shaft the stack has n₁ + n₂ discs and therefore n₁ + n₂ − 1 interfaces; for example, 3 driving and 2 driven discs give 4 pairs. The torque transmitted is proportional to this number: T = n μ W R, where R is the mean friction radius.
+
+Q 123 | chs | Clutch & Gearbox
+The coefficient of friction for the clutch facing is approximately
+(1) 0.1
+(2) 0.4
+(3) 0.8
+(4) 1.2
+= 2
+~ Dry clutch facings of organic (moulded or woven) friction material have a coefficient of friction of roughly 0.3 to 0.4, which is why clutch design problems usually take μ = 0.3–0.4 for dry clutches. Values near 0.1 or less apply to wet, oil-immersed plates, while 0.8 and 1.2 are unrealistically high for normal facings. Sintered-metal and ceramic facings, used for heavy duty, have somewhat higher friction but are not the usual case.
+
+Q 124 | chs | Clutch & Gearbox
+The maximum value of axial force at the clutch which a driver can apply while driving without getting fatigued is approximately
+(1) 10N
+(2) 100N
+(3) 500N
+(4) 5000N
+= 2
+~ A driver has to work the clutch many times in traffic, so the force he can apply repeatedly without tiring is limited; the key takes it as about 100 N (roughly 10 kgf). Clutch springs exert clamping loads of several kilonewtons, so the release mechanism uses pedal and lever leverage, or hydraulic or servo assistance, to bring the effort needed down to this level. Forces of 500 N or 5000 N are far more than a driver could apply repeatedly without tiring, and 10 N is far too small.
+
+Q 125 | chs | Brakes
+In drum type brakes the fluid on releasing return to the master cylinder due to the action of the piston returns spring and
+(1) bypass port
+(2) wheel cylinder spring
+(3) compensating port
+(4) brake shoe retractor spring
+= 2
+~ When the brake pedal is released, the master-cylinder piston is pushed back by its return spring, and the fluid in the lines flows back to the master cylinder as the wheel-cylinder pistons move inwards. The key credits the wheel-cylinder spring, the light spring between the wheel-cylinder cups, which only keeps the cups pressed outwards against the pistons; most textbooks give the main return force as the brake-shoe retractor (pull-off) springs, which pull the shoes off the drum and push the pistons in. The ports only connect the cylinder to the reservoir. (Official final key; some sources differ.)
+
+Q 126 | chs | Brakes
+The hand brake usually operates on
+(1) Rear wheels
+(2) Front wheels
+(3) Right side wheels
+(4) Left side wheels
+= 1
+~ The hand (parking) brake is a mechanically operated brake, independent of the hydraulic foot brake, used to hold the vehicle when parked and as an emergency brake. In most cars it acts through a lever, rods and cables on the rear-wheel brakes, either the drum shoes or a mechanism in the rear disc calipers, while the front wheels are left free for steering. It acts on both rear wheels, not on the wheels of one side; some older vehicles used a transmission brake instead.
+
+Q 127 | chs | Brakes
+What is the efficiency of hydraulic braking system ?
+(1) 20% – 30%
+(2) 40% – 50%
+(3) 65% – 75%
+(4) About 90%
+= 4
+~ A hydraulic brake transmits the pedal force through practically incompressible brake fluid, so very little effort is lost: the only losses are the friction of the cups and seals and slight expansion of the hoses. Its mechanical efficiency is therefore high, about 90%, and noticeably better than that of mechanical brakes, which lose effort in friction at pins, rods, cables and levers. Equal pressure throughout the fluid also gives equal braking force at all the wheels.
+
+Q 128 | chs | Brakes
+________ is not a part of hydraulic braking system.
+(1) Wheel Cylinder
+(2) Master Cylinder
+(3) Steering Mechanism
+(4) Brake Pedal
+= 3
+~ A hydraulic braking system consists of the brake pedal and push rod, the master cylinder with its fluid reservoir, the brake pipes and hoses, the wheel cylinders (or disc calipers) and the brake shoes or pads. The pressure produced in the master cylinder by the pedal is transmitted through the fluid to the wheel cylinders, which apply the brakes. The steering mechanism is a separate system that turns the front wheels and plays no part in braking.
+
+Q 129 | chs | Brakes
+The brake employed in cars are usually operated
+(1) mechanically
+(2) hydraulically
+(3) by means of engine vacuum
+(4) by compressed air
+= 2
+~ Cars and light vehicles use hydraulic brakes, usually with a vacuum servo: the pedal force is transmitted through brake fluid from the master cylinder to the wheel cylinders and calipers, giving equal pressure at all wheels with high efficiency. Compressed-air brakes are used on heavy trucks and buses, mechanical linkage is now used mainly for the parking brake, and engine vacuum only assists the hydraulic system through the servo; it does not operate car brakes by itself.
+
+Q 130 | chs | Brakes
+Fading of brake occurs
+(1) at high speed
+(2) at low speed
+(3) during continuous application
+(4) when brake lining
+= 3
+~ Brake fade is the temporary loss of braking effectiveness when the brakes become very hot through continuous or repeated hard application, for example on a long downhill descent. The heat lowers the coefficient of friction of the lining, expands the drum away from the shoes and can even boil the brake fluid, so the same pedal effort gives less braking. Braking recovers as the brakes cool. Option 4 is printed incomplete ("when brake lining").
+
+Q 131 | chs | Brakes
+The brake bleeding process removes from the system
+(1) Air
+(2) Vacuum
+(3) Excess fluid
+(4) Excess pressure
+= 1
+~ Bleeding removes air trapped in the hydraulic brake system after repairs, a fluid change or a low reservoir level. Air is compressible, so it makes the pedal spongy and reduces the pressure reaching the wheel cylinders. The bleed screw at each wheel cylinder or caliper is opened in turn, usually starting from the wheel farthest from the master cylinder, while the pedal is pumped or the system is pressure-fed, until fluid free of bubbles comes out; the reservoir is then topped up.
+
+Q 132 | chs | Steering & Suspension
+The steering ratio for manual steering of cars is approximately
+(1) 5
+(2) 15
+(3) 50
+(4) 100
+= 2
+~ The steering ratio is the angle turned by the steering wheel for each degree of turn of the road wheels. Manual steering of cars needs a fairly high ratio, of the order of 15:1 to 20:1, to keep the steering effort low, while power-steered cars can use quicker ratios and heavy vehicles use higher ones. A ratio of 5 would make manual steering very heavy, and 50 or 100 would need an impractical number of turns of the steering wheel.
+
+Q 133 | chs | Steering & Suspension
+The turning circle for a car is approximately
+(1) 1 metre
+(2) 2 metres
+(3) 10 metres
+(4) 30 metres
+= 3
+~ The turning circle is the diameter of the smallest circle traced by the outer front wheel (or the outermost point of the vehicle) with the steering on full lock. For ordinary cars it is about 9 to 11 metres, so 10 metres is the approximate value; buses and long trucks need much larger circles. One or two metres is less than the length of a car itself, and 30 metres is far too large for a car.
+
+Q 134 | chs | Steering & Suspension
+A vehicle has a wheelbase (L) of 2 meters and a wheel track (W, distance between front wheel pivots) of 1.5 meters. Calculate the required turning angle for the outer front wheel (ϕ) if the inner front wheel is steered to an angle (θ) of 30 degrees.
+(1) Approximately 25 degrees
+(2) Approximately 22 degrees
+(3) Approximately 20 degrees
+(4) Approximately 28 degrees
+= 2
+~ For correct (Ackermann) steering, cot ϕ − cot θ = W/L, where ϕ is the outer and θ the inner wheel angle. Here W/L = 1.5/2 = 0.75 and cot 30° = 1.732, so cot ϕ = 1.732 + 0.75 = 2.482 and ϕ = tan⁻¹(1/2.482) ≈ 21.9°, i.e. approximately 22 degrees. The outer wheel always turns through a smaller angle than the inner wheel because it moves on a larger circle about the same centre.
+
+Q 135 | ael | Starting & Ignition
+Three components of primary ignition circuit are
+(1) Contact breaker, condenser and distributor cap
+(2) Contact breaker, ignition coil and spark plugs
+(3) Contact breaker, ignition switch and condenser
+(4) Contact breaker, ignition switch and rotor
+= 3
+~ The primary (low-tension) circuit of a battery coil ignition system consists of the battery, ignition switch, ballast resistor (if fitted), primary winding of the ignition coil, contact breaker points and the condenser connected across them. The secondary (high-tension) circuit consists of the coil's secondary winding, the distributor cap and rotor, the high-tension leads and the spark plugs. So the contact breaker, ignition switch and condenser all belong to the primary circuit.
+
+Q 136 | ael | Starting & Ignition
+The contact breaker points are opened by the cam and closed by the
+(1) Same cam
+(2) Centrifugal force
+(3) Magnetic force
+(4) Spring tension
+= 4
+~ The contact breaker has a fixed contact and a movable contact on a pivoted arm. As the distributor cam rotates, each lobe pushes the rubbing block and opens the points, breaking the primary current so that the coil induces a high voltage. When the lobe has passed, a leaf spring on the moving arm snaps the points closed again, and the primary current builds up for the next spark. The spring tension must be correct to prevent point bounce at high speed.
+
+Q 137 | ael | Lighting, Instruments & Wiring
+The two quantities used for specifying electrical wire are
+(1) The colour and length
+(2) The length and diameter
+(3) The diameter and number of strands
+(4) The colour and diameter
+= 3
+~ Automotive cables are made of stranded copper for flexibility and are specified by the number of strands and the diameter of each strand; for example, 14/0.30 means 14 strands each 0.30 mm in diameter. These two figures fix the conductor's cross-sectional area and hence its current rating. The length is decided by the routing of the cable, and the insulation colour only identifies the circuit under a colour code, so neither specifies the wire.
+
+Q 138 | ael | Batteries & Charging
+The frequency of a vibrating contact type for d.c. generator is
+(1) 20 per second
+(2) 200 per second
+(3) 20 per minute
+(4) 200 per minute
+= 2
+~ The vibrating-contact regulator of a d.c. generator (dynamo) controls its output by rapidly opening and closing contacts that insert a resistance into the field circuit and cut it out again, so that the average field current, and hence the voltage, stays nearly constant. The contacts vibrate very fast; the key gives about 200 times per second, and rates per minute would be far too slow. The question omits the word "regulator"; alternators with electronic regulators have since replaced this system.
+
+Q 139 | ice | Engine Fundamentals & Cycles
+The carbon accumulation in an engine cylinder results in
+(1) Increase of effective compression ratio
+(2) Increase of volumetric efficiency
+(3) Increase of clearance volume
+(4) Increase of ignition time
+= 1
+~ Carbon deposits on the piston crown and in the combustion chamber occupy part of the clearance volume. Since the compression ratio is (swept volume + clearance volume)/clearance volume, a smaller clearance volume raises the effective compression ratio, which increases the tendency to detonation and, from glowing deposits, pre-ignition in SI engines. Carbon reduces rather than increases the clearance volume, lowers volumetric efficiency by heating the incoming charge, and does not change the ignition timing.
+
+Q 140 | ice | Engine Fundamentals & Cycles
+Due to which of the following reasons the piston rings are plated with chromium, cadmium or phosphate ?
+(1) To prevent clogging
+(2) To improve heat transfer
+(3) To reduce wear and eliminate scuffing
+(4) To improve surface finish
+= 3
+~ Piston rings, especially the top ring, rub against the cylinder wall at high temperature with poor lubrication. Chromium plating gives a very hard, wear-resistant surface that greatly increases ring life, while cadmium and phosphate coatings form soft or porous layers that hold oil and help the rings bed in without scuffing, the local welding and tearing of ring and bore surfaces during running-in. The coatings are not meant to prevent clogging or to improve heat transfer.
+
+Q 141 | ice | Fuels, Lubricants & Emissions
+Carbon Monoxide emission from S.I. engine are higher when the engine is
+(1) Idling
+(2) Cruising
+(3) Accelerating
+(4) Decelerating
+= 1
+~ Carbon monoxide comes from incomplete combustion of rich mixtures, so CO emission is highest when the SI engine runs on its richest mixture. At idling a rich mixture is supplied because the small charge is diluted by residual exhaust gas at low manifold pressure, so CO is highest; it is lowest when cruising, when a lean economy mixture is used. It is hydrocarbon (HC) emission, rather than CO, that rises sharply during deceleration.
+
+Q 142 | ice | Fuels, Lubricants & Emissions
+Orsat flue gas analysis gives
+(1) Mass analysis of wet products of combustion
+(2) Volumetric analysis of dry products of combustion
+(3) Mass analysis of dry products of combustion
+(4) Volumetric analysis of wet products of combustion
+= 2
+~ The Orsat apparatus absorbs the gases of a measured sample (usually 100 cm³) one by one in chemical reagents, CO₂ in potassium hydroxide, O₂ in alkaline pyrogallol and CO in cuprous chloride solution, and measures the fall in volume each time; the remainder is taken as nitrogen. Because the sample is measured over water at room temperature, its water vapour condenses, so the result is a volumetric analysis of the dry products of combustion.
+
+Q 143 | ice | Fuels, Lubricants & Emissions
+Flame Ionisation Detector is used for measuring
+(1) CO
+(2) HC
+(3) NOₓ
+(4) CO₂
+= 2
+~ The flame ionisation detector (FID) is the standard instrument for measuring unburnt hydrocarbons in exhaust gas. The sample is burnt in a small hydrogen–air flame; hydrocarbons produce ions roughly in proportion to the number of carbon atoms present, and the resulting current between two electrodes gives the HC concentration. CO and CO₂ are measured by non-dispersive infrared (NDIR) analysers and NOₓ by chemiluminescence analysers.
+
+Q 144 | ice | Fuels, Lubricants & Emissions
+Chemiluminescence technique is used to measure
+(1) NOₓ
+(2) CO
+(3) CO₂
+(4) Smoke intensity
+= 1
+~ The chemiluminescence analyser measures oxides of nitrogen. Nitric oxide in the sample reacts with ozone to form excited NO₂, which emits light as it returns to its normal state; a photomultiplier measures this light, which is proportional to the NO concentration. NO₂ is first converted to NO in a converter, so total NOₓ is obtained. CO and CO₂ are measured by NDIR analysers, and smoke intensity by smoke (opacity) meters.
+
+Q 145 | ice | Fuels, Lubricants & Emissions
+Non-dispersive infra-red analyser is widely accepted instrument for measuring
+(1) NOₓ
+(2) HC
+(3) CO
+(4) CO₂
+= 3
+~ The non-dispersive infrared (NDIR) analyser measures how much infrared radiation of a particular band the exhaust sample absorbs; each gas absorbs in its own band, so the absorption gives its concentration. It is the standard method for measuring CO in exhaust emission testing, while NOₓ is measured by chemiluminescence and HC normally by flame ionisation. CO₂ is, however, also measured by NDIR analysers, so option 4 is equally defensible. (Official final key; some sources differ.)
+
+Q 146 | mfg | Engineering Materials
+What is depth of hardened layer by flame hardening of steel wheel ?
+(1) 0.15 mm
+(2) 0.8 mm
+(3) 0.35 mm
+(4) 1.2 mm
+= 2
+~ Flame hardening heats the surface of a medium-carbon or alloy steel part, such as a wheel rim, gear or shaft, with an oxy-acetylene flame and quenches it at once with a water spray, so that only a surface layer turns into hard martensite while the core stays tough. The hardened depth depends on the heating time and the speed of the flame and is commonly quoted from about 0.8 mm upwards to several millimetres; the key takes 0.8 mm for this question.
+
+Q 147 | mfg | Engineering Materials
+By what process maximum hardness is obtained for a steel part ?
+(1) Carburizing
+(2) Nitriding
+(3) Cyaniding
+(4) Same hardness in all processes
+= 2
+~ Nitriding heats a finished alloy-steel part containing nitride-forming elements such as aluminium, chromium and molybdenum in ammonia gas at about 500–550 °C, forming very hard nitrides in a thin surface layer. It gives the highest surface hardness of the case-hardening processes, about 900–1100 HV, and needs no quenching, so distortion is small. Carburized and cyanided cases, hardened by quenching to martensite, reach only about 60–65 HRC (roughly 700–850 HV), so the hardness is not the same in all processes.
+
+Q 148 | mfg | Engineering Materials
+The ratio of E of a whisker of mild steel to E of a bulk material is
+(1) 4
+(2) 5
+(3) 40
+(4) 50
+= 2
+~ Whiskers are very thin, almost defect-free single-crystal filaments. Because they contain practically no dislocations, their strength approaches the theoretical strength of the metal and is many times that of ordinary bulk mild steel. Young's modulus, however, depends on the interatomic bonding and is structure-insensitive, so the elastic modulus of a whisker is essentially the same as that of the bulk metal; the ratio of 5 is credited to the key. (Official final key; some sources differ.)
+
+Q 149 | thm | Refrigeration & Air Conditioning
+Which of the following is a possible reason for flushing an A/C condenser ?
+(1) To replace the old refrigerant with new refrigerant
+(2) To remove sludge and debris
+(3) To remove moisture
+(4) To improve cooling efficiency
+= 2
+~ After the refrigerant has been recovered, the condenser of a vehicle A/C system is flushed with an approved flushing solvent to remove sludge, metal debris and degraded oil, typically after a compressor failure or contamination; otherwise the debris would block the condenser passages and the expansion valve and damage the new compressor. Moisture is removed by evacuating the system with a vacuum pump and by the receiver-drier, and replacing the refrigerant needs only recovery and recharging, not flushing.
+
+Q 150 | chs | Wheels & Tyres
+The disadvantage of radial ply tyre compared to cross ply tyre is
+(1) uncomfortable tried at low speeds
+(2) uncomfortable ride at high speeds
+(3) higher corning power
+(4) lower rolling resistance
+= 1
+~ Radial-ply tyres have their body cords running radially from bead to bead with a stiff belt under the tread, which gives lower rolling resistance, higher cornering power, longer tread life and good high-speed behaviour. Their main disadvantage is a harsher, less comfortable ride at low speeds on rough roads, along with higher cost and more easily damaged sidewalls. Higher cornering power and lower rolling resistance are advantages. Option 1 is printed "tried" (ride) and option 3 "corning" (cornering).
