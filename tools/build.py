@@ -849,12 +849,13 @@ def exam_confs():
 
 def main():
     confs = exam_confs()
-    PAY['exams'] = ', '.join(c['seo'] for c in confs)   # the PYQ Pass covers every one of these
-    PAY['exam_links'] = [(c['seo'], c['pb']) for c in confs]
     loaded = []
     for c in confs:
         papers, questions = load_exam(c)
         if questions: loaded.append((c, papers, questions))
+    # only exams whose papers are built (an exam configured before its paper sources are added, e.g. AMVI, stays out of the lists and links)
+    PAY['exams'] = ', '.join(c['seo'] for c, _, _ in loaded)   # the PYQ Pass covers every one of these
+    PAY['exam_links'] = [(c['seo'], c['pb']) for c, _, _ in loaded]
     counts = {c['id']: len(qs) for c, _, qs in loaded}
     grand = sum(counts.values())
 
@@ -896,9 +897,11 @@ def main():
         subj = {s[0]: s for s in conf['subjects']}
         def upath(x): return x if (is_root or re.match(r'(https?:|data:|/)', x)) else up + x
         enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])]) for b in notes] if conf['id'] in NOTES_EXAMS else []
+        emains = mains_kit(conf)
         for q in questions:
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
         data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=enotes, wa=WHATSAPP,
+                    mains=emains, mainsP5=MAINS_P5 if emains else None,
                     key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
                     base=prefix, qotd=qotd_pool(loaded, 120) if is_root else [],
@@ -922,7 +925,7 @@ def main():
 
         links = [(N['h1'], '/' + rel) for rel, N in NOTIFS.items() if N['exam'] == conf['id']]
         if bb_url and conf['id'] == 'appsc-group-2': links.insert(0, ('New: Bahubali Test Series – Group 2 Mains full-length tests', bb_url))
-        tiles = tiles_html(conf, papers, questions, links)
+        tiles = tiles_html(conf, papers, questions, links, emains)
 
         def fill(s, photo, title, seo, desc=''):
             return (s.replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title).replace('{{DESC}}', esc(desc))
@@ -948,7 +951,8 @@ def main():
                      .replace('{{L2LINE}}', f'<span lang="{l2["code"]}">{esc(conf["l2line"])}</span>')
                      .replace('{{AKA}}', esc(conf.get('aka', '')))
                      .replace('{{TILES}}', tiles)
-                     .replace('{{NOTES_NAV}}', '<a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>' if enotes else '')
+                     .replace('{{NOTES_NAV}}', ('<a href="#mains" data-v="mains">Mains Tool Kit <span class="new">NEW</span></a>' if emains else '')
+                              + ('<a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>' if enotes else ''))
                      .replace('{{NOTES_FOOT}}', '<a href="#notes">Study material</a> · ' if enotes else ''))
         root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: APPSC Group 1 & 2, TS Police SI & Constable, UPSC CAPF & EPFO'
         root_desc = (f'Learn with Anil (learnwithanil.in): previous year question papers (PYQs) with answers for APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
@@ -1010,6 +1014,11 @@ def main():
             return site_links(doc.replace('href="{{HUBHREF}}"', 'href="/"').replace(f'href="{hubhref}"', 'href="/"'), pb)
 
         if not enotes: views.pop('notes', None)   # no study-material page outside APPSC Group 1 / Group 2
+        if emains:
+            views['mains'] = ('APPSC Group 1 Mains Answer Writing Tool Kit – Previous Questions of Papers I to IV by Syllabus | Learn with Anil',
+                              'APPSC Group 1 Mains previous questions of 2020, 2023 and 2025 for Paper I (Essay), II (History & Geography), III (Polity & Ethics) '
+                              'and IV (Economy), sorted by syllabus, with practice questions: four PDF books by Jupudi Anil Kumar, part of the ₹45 PYQ Pass.',
+                              pb + 'mains/', True)
         site_pages = {}   # path under the site root -> html
         if is_root:
             os.makedirs(os.path.join(DIST, 'artifact', 'papers')); os.makedirs(os.path.join(DIST, 'artifact', 'subjects'))
@@ -1074,7 +1083,8 @@ def main():
     for u in urls: sm.append(f'  <url><loc>{esc(u)}</loc><lastmod>{today}</lastmod></url>')
     sm.append('</urlset>')
     open(os.path.join(DIST, 'site', 'sitemap.xml'), 'w').write('\n'.join(sm) + '\n')
-    open(os.path.join(DIST, 'site', 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n')
+    kit_dirs = ''.join(f'Disallow: /{c["dir"]}/{MAINS_DIR}/\n' for c, _, _ in loaded if c['id'] in MAINS_EXAMS)   # the paid tool-kit PDFs
+    open(os.path.join(DIST, 'site', 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n{kit_dirs}\nSitemap: {SITE_URL}/sitemap.xml\n')
     open(os.path.join(DIST, 'site', 'llms.txt'), 'w', encoding='utf-8').write(llms_txt(loaded, sum(len(q) for _, _, q in loaded)))
     # extra files served as-is at the site root (search-engine verification files etc.)
     static = os.path.join(SRC, 'static')
@@ -1212,6 +1222,7 @@ def exam_terms(e, cat):
     if 'hmwssb' in e['id']: words += ['hmwssb', 'water board', 'jalamandali', 'metro water', 'manager engineering', 'civil engineering', 'hmws']
     if 'civil-judge' in e['id']: words += ['civil judge', 'junior civil judge', 'jcj', 'judiciary', 'high court', 'llb', 'law']
     if e['cat'] == 'ap': words += ['appsc', 'andhra'] + ([f'ap group {ROMAN[m.group(1)]}'] if m else [])
+    if e['id'] in MAINS_EXAMS and MAINS_KIT: words += ['mains', 'answer writing', 'tool kit', 'toolkit', 'essay']
     return ' '.join(w.lower() for w in words if w)
 
 
@@ -1248,6 +1259,7 @@ def hub_html(catalog, counts, grand):
             href = live_href(e) if live else '#exam/' + e['id']
             status = f'Live · {counts.get(e["id"], 0):,} questions' if live else 'Upcoming'
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
+            if live and e['id'] in MAINS_EXAMS and MAINS_KIT: sub += '<span class="ex-x">+ Mains Answer Writing Tool Kit</span>'
             tiles.append(f'<a class="card exam{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-s="{esc(exam_terms(e, c))}">'
                          f'<span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></a>')
         te = f' <span class="te-sub" lang="te">{esc(c["te"])}</span>' if c.get('te') else ''
@@ -1261,7 +1273,20 @@ def hub_html(catalog, counts, grand):
             f'<div id="hubCats">{"".join(secs)}</div>'
             f'<div class="card empty" id="hubEmpty" hidden><h3 data-i18n="emptyT">No exam matches your search</h3>'
             f'<p data-i18n="emptyP">Tell Anil which exam you are preparing for, and it will be added to the list.</p>'
-            f'<div class="row" style="justify-content:center"><a class="btn btn-primary" id="hubAsk" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></div>')
+            f'<div class="row" style="justify-content:center"><a class="btn btn-primary" id="hubAsk" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></div>'
+            + p5_card('hubP5'))
+
+
+def p5_card(el_id):
+    """Shown when a student searches for Paper V: the Group-1 Mains Paper V book is not on the site, so they message Anil."""
+    if not MAINS_KIT: return ''
+    from urllib.parse import quote
+    text = f'Hi Anil sir, I need the APPSC Group-1 Mains Paper V ({MAINS_P5["name"]}) Answer Writing Tool Kit.'
+    return (f'<div class="card p5-card" id="{el_id}" hidden><p class="eyebrow">APPSC Group-1 Mains · Paper V</p>'
+            f'<h3>Looking for Paper V ({esc(MAINS_P5["name"])})?</h3>'
+            f'<p>The Paper V tool kit is not on the website. Message Anil on WhatsApp and he will help you get it.</p>'
+            f'<div class="row"><a class="btn btn-primary" href="https://wa.me/{WHATSAPP}?text={quote(text)}" target="_blank" rel="noopener">Message Anil on WhatsApp</a>'
+            f'<a class="btn btn-secondary" href="/appsc-group-1/mains/">Papers I–IV tool kit</a></div></div>')
 
 
 def timers_html(catalog):
@@ -2054,6 +2079,52 @@ def notif_page(loaded, rel):
 
 NOTES_EXAMS = {'appsc-group-2', 'appsc-group-1'}   # Anil, 24 Oct 2026: the APPSC Mains books are shown only on the APPSC Group 1 and Group 2 pages
 
+# APPSC Group-I Mains · Answer Writing Tool Kit (Anil, 26 Oct 2026): one PDF book per Mains paper (Papers I-IV) with every
+# previous question of 2020, 2023 and 2025 sorted by syllabus part, and practice questions on each part. Part of the ₹45
+# PYQ Pass: the app shows the download buttons only on a device with the paid pass. Paper V is not on the site: students
+# message Anil on WhatsApp. Source files: src/appsc-group-1/mains/<file>.pdf and <file>-cover.jpg; published under
+# /appsc-group-1/mains/kit/ with a content hash in the name (robots.txt keeps search engines out of that folder).
+MAINS_EXAMS = {'appsc-group-1'}
+MAINS_KIT = [
+    dict(paper='I', name='General Essay', file='g1-mains-paper-1-essay', n=27, unit='essay topics', parts=7, practice=42, pages=12),
+    dict(paper='II', name='History, Culture & Geography of India and AP', file='g1-mains-paper-2-history-geography', n=90, unit='questions', parts=9, practice=54, pages=20),
+    dict(paper='III', name='Polity, Constitution, Governance, Law & Ethics', file='g1-mains-paper-3-polity-ethics', n=90, unit='questions', parts=9, practice=54, pages=20),
+    dict(paper='IV', name='Economy & Development of India and AP', file='g1-mains-paper-4-economy', n=90, unit='questions', parts=8, practice=48, pages=20),
+]
+MAINS_P5 = dict(paper='V', name='Science, Technology & Environmental Issues')
+MAINS_DIR = 'mains/kit'   # under the exam's folder
+
+
+def mains_kit(conf):
+    """The tool-kit books for an exam's data (paths on the site), copying the files into dist/site."""
+    if conf['id'] not in MAINS_EXAMS: return []
+    import hashlib
+    src = os.path.join(SRC, conf['src'], 'mains')
+    out = os.path.join(DIST, 'site', conf['dir'], MAINS_DIR)
+    os.makedirs(out, exist_ok=True)
+    books = []
+    for b in MAINS_KIT:
+        pdf = open(os.path.join(src, b['file'] + '.pdf'), 'rb').read()
+        h = hashlib.sha256(pdf).hexdigest()[:8]
+        names = (f'{b["file"]}-{h}.pdf', f'{b["file"]}-{h}-cover.jpg')
+        open(os.path.join(out, names[0]), 'wb').write(pdf)
+        shutil.copy(os.path.join(src, b['file'] + '-cover.jpg'), os.path.join(out, names[1]))
+        base = conf['pb'] + MAINS_DIR + '/'
+        books.append(dict(b, pdf=base + names[0], cover=base + names[1]))
+    return books
+
+
+def mains_section(conf, books):
+    """'Group-1 Mains' on the exam's home page: the Answer Writing Tool Kit, part of the PYQ Pass."""
+    if not books: return ''
+    covers = ''.join(f'<img src="{esc(b["cover"])}" alt="" width="120" height="170" loading="lazy">' for b in books)
+    return (f'<div class="section-title" style="margin-top:28px"><h2>Group-1 Mains</h2><span class="muted" style="font-size:14px">Answer Writing Tool Kit · Papers I–IV</span></div>'
+            f'<a class="card notes-promo" href="#mains"><div class="np-copy"><p class="eyebrow">New · Group-1 Mains</p><h2>Answer Writing Tool Kit</h2>'
+            f'<p>Every Mains question of 2020, 2023 and 2025 for Papers I to IV, sorted by syllabus: how many came from each part, the exact questions, '
+            f'and {sum(b["practice"] for b in books)} practice questions including recent news. Four PDF books by Jupudi Anil Kumar.</p>'
+            f'<span class="etile-price" data-paidtxt="✓ Included in your PYQ Pass · tap to download">🔒 Included in the ₹{PAY["pyq_price"]} PYQ Pass</span></div>'
+            f'<div class="np-covers" aria-hidden="true">{covers}</div></a>')
+
 
 # ---------- paid passes: Instamojo checkout through the Learn with Anil payments script (Google Apps Script) ----------
 PAY = dict(
@@ -2190,7 +2261,7 @@ def pay_data(conf):
                 pages=dict(pyq=pb + 'pyqs.html', mock=pb + 'mock-test.html', sec=pb + 'sectional-tests.html'))
 
 
-def tiles_html(conf, papers, questions, extra_links):
+def tiles_html(conf, papers, questions, extra_links, mains=()):
     """The three tiles on an exam's home page (PYQs, mock tests, sectional tests), each opening its own page, plus link tiles."""
     pb, mk = conf['pb'], MOCK_PACKS.get(conf['id'])
     n = len(questions)
@@ -2222,7 +2293,7 @@ def tiles_html(conf, papers, questions, extra_links):
     links = ''.join(f'<a class="etile etile-sm" href="{h}"><b>{esc(x)}</b><span class="etile-go">→</span></a>' for x, h in extra_links)
     note = ''
     return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + exam_clock_html(conf)
-            + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
+            + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + mains_section(conf, mains) + '</section>')
 
 
 def buy_box(conf, kind):
@@ -2534,7 +2605,7 @@ def mock_page(conf, papers, questions):
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Mock test', can)], conf)
 
 
-VIEW_CRUMB = {'papers': 'Previous papers', 'practice': 'Topic-wise quiz', 'bank': 'Question bank', 'notes': 'Study material', 'about': 'About'}
+VIEW_CRUMB = {'papers': 'Previous papers', 'practice': 'Topic-wise quiz', 'bank': 'Question bank', 'notes': 'Study material', 'about': 'About', 'mains': 'Group-1 Mains Tool Kit'}
 
 
 def crumb_ld(items):

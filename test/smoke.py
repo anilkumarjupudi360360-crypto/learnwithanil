@@ -383,6 +383,31 @@ async def main():
         r = await pg.goto(URL + 'no-such-page/'); await pg.wait_for_timeout(200)
         if r.status != 404 or 'does not exist' not in await pg.inner_text('body'): errors.append('404 page missing')
         await pg.close()
+        # APPSC Group-I Mains tool kit: locked without the PYQ Pass, four downloads with it, Paper V on WhatsApp;
+        # a "paper 5" search on the start page points to WhatsApp too
+        if os.path.exists(os.path.join(SITE, 'appsc-group-1', 'mains', 'index.html')):
+            for passes, paid in [({}, False), (PAID, True)]:
+                mp = await b.new_page(passes=passes, viewport={'width': 390, 'height': 900})
+                await mp.add_init_script(REGISTERED)
+                mp.on('pageerror', lambda e: errors.append(f'mains pageerror: {e}'))
+                await mp.goto(URL + 'appsc-group-1/mains/'); await mp.wait_for_timeout(800)
+                dl = await mp.locator('[data-act="kitdl"]').count()
+                if not paid and (dl or not await mp.locator('[data-act="unlockpyq"]').count()): errors.append('mains: the tool kit is not locked without the PYQ Pass')
+                if paid:
+                    if dl != 4: errors.append(f'mains: {dl} download links with the PYQ Pass (want 4)')
+                    for h in await mp.eval_on_selector_all('[data-act="kitdl"]', 'es=>es.map(e=>e.getAttribute("href"))'):
+                        if not os.path.exists(os.path.join(SITE, h.lstrip('/'))): errors.append(f'mains: missing file {h}')
+                    await mp.screenshot(path=f'{SHOTS}/mains-phone.png', full_page=True)
+                if await mp.locator('.kit-p5 a[href*="wa.me"]').count() != 1: errors.append('mains: Paper V WhatsApp card missing')
+                sw = await mp.evaluate('document.documentElement.scrollWidth')
+                if sw > 390: errors.append(f'mains: horizontal overflow {sw}>390')
+                await mp.close()
+            hp = await b.new_page(passes={}); await hp.goto(URL); await hp.wait_for_timeout(400)
+            await hp.fill('#examSearch', 'group 1 paper 5'); await hp.wait_for_timeout(200)
+            if not await hp.is_visible('#hubP5'): errors.append('hub: a Paper V search does not point to WhatsApp')
+            await hp.fill('#examSearch', 'group 1 mains'); await hp.wait_for_timeout(200)
+            if await hp.is_visible('#hubP5') or not await hp.locator('#hub-static .exam:not([hidden])').count(): errors.append('hub: "group 1 mains" search is wrong')
+            await hp.close()
         await b.close()
         srv.shutdown()
         print('ERRORS:', errors if errors else 'none')
