@@ -1853,15 +1853,31 @@ def funders_page(loaded):
     goal = 100000
     pct = min(100, nq * 100 / goal)
     NQ, PCT = f'{nq:,}', f'{pct:.0f}'
-    # Applications for each exam on the site in its latest recruitment with a published figure (checked 26 Oct 2026):
-    # SSC CGL 2025 28,15,445 registered (Adda247, 6 Aug 2025); UPSC EPFO EO/AO + APFC 2023 9,52,605 (RTI reply, via Physics Wallah);
-    # TGPRB 2026 (press note 17 Sep 2026): PC (Civil/equivalent) 3,89,356, SI (Civil/equivalent) 1,60,756; APPSC Group 2 (Notif. 11/2023) about 4.83 lakh
-    # (Deccan Chronicle); APPSC Group 1 screening of 8 Jan 2023: 1,26,449 registered (Sakshi Education, 9 Jan 2023).
-    # UPSC CAPF (AC), TGPSC HMWSSB Manager, APPSC AMVI, TGPSC AMVI: no published applicant count found -> shown as 'not published'.
-    REACH_ROWS = [('SSC CGL', '28.15 lakh', '2025'), ('UPSC EPFO (EO/AO, APFC)', '9.53 lakh', '2023'), ('APPSC Group 2', '4.83 lakh', '2023'),
-                  ('TS Police Constable', '3.89 lakh', '2026'), ('TS Police SI', '1.61 lakh', '2026'), ('APPSC Group 1', '1.26 lakh', '2023'),
-                  ('UPSC CAPF (AC)', '', ''), ('TGPSC HMWSSB Manager (Engineering)', '', ''), ('APPSC AMVI', '', ''), ('TGPSC AMVI', '', '')]
-    REACH = '49 lakh+'   # 28,15,445 + 9,52,605 + 4,83,000 + 3,89,356 + 1,60,756 + 1,26,449 = 49,27,611
+    # Applicants per exam on the site's exam list (src/exams.json, live and coming soon): src/reach.json, one entry per exam id with the
+    # number who applied (or appeared, where that is the only published figure) in its latest recruitment, the cycle and the source.
+    # Researched 26 Oct 2026 at Anil's request ("add all other exams' numbers that I mentioned on the website").
+    catalog = json.load(open(os.path.join(ROOT, 'src', 'exams.json'), encoding='utf-8'))
+    reach = json.load(open(os.path.join(ROOT, 'src', 'reach.json'), encoding='utf-8'))
+    live_ids = {c['id'] for c, _, _ in loaded}
+    UNITS = {'lakh': ('lakh', 'लाख', 'లక్షలు'), 'crore': ('crore', 'करोड़', 'కోట్లు')}
+    def amount(n, floor=False):   # Indian units: 28,15,445 -> ('28.15', 'lakh'); 1,26,30,885 -> ('1.26', 'crore')
+        import math
+        for base, unit in ((10**7, 'crore'), (10**5, 'lakh')):
+            if n >= base:
+                v = n / base
+                if floor: v = math.floor(v * 10) / 10
+                return (f'{v:.1f}' if floor else f'{v:.2f}').rstrip('0').rstrip('.'), unit
+        return f'{n:,}', ''
+    def amount_lang(n, li, floor=False):
+        v, u = amount(n, floor)
+        return f'{v} {UNITS[u][li]}' if u else v
+    nums = {k: r['applied'] for k, r in reach.items() if r.get('applied')}
+    total = sum(nums.values())
+    live_total = sum(v for k, v in nums.items() if k in live_ids)
+    n_with = sum(1 for e in catalog['exams'] if e['id'] in nums)
+    n_all = len(catalog['exams'])
+    TOT = [amount_lang(total, li, True) for li in range(3)]
+    LIVE_TOT = [amount_lang(live_total, li, True) for li in range(3)]
     wa = f'https://wa.me/{WHATSAPP}?text=' + quote('Hi Learn_with_anil Team, I am interested in funding Learn with Anil.')
     mail = f'mailto:{CONTACT_EMAIL}?subject=' + quote('Funding Learn with Anil')
     share = 'https://wa.me/?text=' + quote('Learn with Anil: 1 lakh PYQs of government exams under one roof, for ₹45. Anil is building it alone and needs funders: https://learnwithanil.in/funders')
@@ -1881,21 +1897,26 @@ def funders_page(loaded):
       'f2': ('The goal: 1 lakh PYQs', 'लक्ष्य: 1 लाख PYQs', 'లక్ష్యం: 1 లక్ష PYQs'),
       'f3': ('Aspirants apply for these exams in one cycle', 'अभ्यर्थी एक भर्ती चक्र में इन परीक्षाओं के लिए आवेदन करते हैं', 'అభ్యర్థులు ఒక్క నియామక చక్రంలో ఈ పరీక్షలకు దరఖాస్తు చేస్తారు'),
       'reachT': ('How many students it can help', 'यह कितने विद्यार्थियों की मदद कर सकता है', 'ఇది ఎంతమంది విద్యార్థులకు ఉపయోగపడుతుంది'),
-      'reachP': ('Students who applied for each exam on the site in its latest recruitment. Together, <b>more than 49 lakh applications</b> in one recruitment cycle, '
-                 'and the number will grow with every new exam on the way to 1 lakh PYQs.',
-                 'साइट पर मौजूद हर परीक्षा की पिछली भर्ती में आवेदन करने वाले विद्यार्थी। कुल मिलाकर, एक भर्ती चक्र में <b>49 लाख से अधिक आवेदन</b>, '
-                 'और 1 लाख PYQs की ओर हर नई परीक्षा के साथ यह संख्या बढ़ती जाएगी।',
-                 'సైట్‌లో ఉన్న ప్రతి పరీక్షకు దాని తాజా నియామకంలో దరఖాస్తు చేసిన విద్యార్థులు. మొత్తం కలిపి, ఒక్క నియామక చక్రంలో <b>49 లక్షలకు పైగా దరఖాస్తులు</b>; '
-                 '1 లక్ష PYQs వైపు ప్రతి కొత్త పరీక్ష చేరినప్పుడు ఈ సంఖ్య పెరుగుతూనే ఉంటుంది.'),
+      'reachV': (TOT[0] + '+', TOT[1] + '+', TOT[2] + '+'),
+      'reachP': (f'Here is every exam on the Learn with Anil list, with the number of students who applied in its latest recruitment. The exams marked "Coming soon" will get their previous-year questions in future. '
+                 f'Together, these exams draw <b>more than {TOT[0]} applications</b> in a single recruitment cycle, {LIVE_TOT[0]}+ of them for the {len(live_ids)} exams that are already live.',
+                 f'यहाँ Learn with Anil की सूची की हर परीक्षा है, उसकी पिछली भर्ती में आवेदन करने वाले विद्यार्थियों की संख्या के साथ। "जल्द आ रहा है" वाली परीक्षाओं के पिछले वर्षों के प्रश्न आगे जोड़े जाएँगे। '
+                 f'कुल मिलाकर, इन परीक्षाओं में एक ही भर्ती चक्र में <b>{TOT[1]} से अधिक आवेदन</b> आते हैं, जिनमें से {LIVE_TOT[1]}+ उन {len(live_ids)} परीक्षाओं के हैं जो पहले से उपलब्ध हैं।',
+                 f'Learn with Anil జాబితాలోని ప్రతి పరీక్ష, దాని తాజా నియామకంలో దరఖాస్తు చేసిన విద్యార్థుల సంఖ్యతో ఇక్కడ ఉంది. "త్వరలో" అని ఉన్న పరీక్షల గత ప్రశ్నలు భవిష్యత్తులో చేరుస్తాం. '
+                 f'మొత్తం కలిపి, ఈ పరీక్షలకు ఒక్క నియామక చక్రంలోనే <b>{TOT[2]}కు పైగా దరఖాస్తులు</b> వస్తాయి; వాటిలో {LIVE_TOT[2]}+ ఇప్పటికే అందుబాటులో ఉన్న {len(live_ids)} పరీక్షలవి.'),
       'applied': ('applied', 'आवेदन', 'దరఖాస్తులు'),
-      'lakh': ('lakh', 'लाख', 'లక్షలు'),
+      'appeared': ('appeared', 'परीक्षा में बैठे', 'హాజరు'),
+      'lakh': UNITS['lakh'], 'crore': UNITS['crore'],
+      'live': ('Live', 'उपलब्ध', 'అందుబాటులో'),
+      'soon': ('Coming soon', 'जल्द आ रहा है', 'త్వరలో'),
       'np': ('Number not published', 'संख्या प्रकाशित नहीं', 'సంఖ్య ప్రచురించలేదు'),
-      'reachNote': ('Figures from the TGPRB press note of 17 Sep 2026, an RTI reply on UPSC EPFO 2023 and news reports (Adda247, Deccan Chronicle, Sakshi Education). '
-                    'An aspirant who applies for two exams is counted twice.',
-                    'आँकड़े: TGPRB प्रेस नोट (17 सितंबर 2026), UPSC EPFO 2023 पर RTI उत्तर और समाचार रिपोर्ट (Adda247, Deccan Chronicle, Sakshi Education)। '
-                    'दो परीक्षाओं के लिए आवेदन करने वाले अभ्यर्थी को दो बार गिना गया है।',
-                    'ఆధారాలు: TGPRB ప్రెస్ నోట్ (17 సెప్టెంబర్ 2026), UPSC EPFO 2023పై RTI సమాధానం, వార్తా కథనాలు (Adda247, Deccan Chronicle, Sakshi Education). '
-                    'రెండు పరీక్షలకు దరఖాస్తు చేసిన అభ్యర్థిని రెండుసార్లు లెక్కించాం.'),
+      'reachNote': (f'Numbers are for the latest recruitment with a published figure ({n_with} of {n_all} exams); "appeared" is shown where only the number who sat the exam was published. '
+                    'Sources: official press notes, annual reports and RTI replies where available, otherwise news and education websites (listed below). An aspirant who applies for two exams is counted twice.',
+                    f'संख्याएँ उस पिछली भर्ती की हैं जिसका आँकड़ा प्रकाशित हुआ है ({n_all} में से {n_with} परीक्षाएँ); जहाँ केवल परीक्षा में बैठने वालों की संख्या प्रकाशित हुई, वहाँ वही दी गई है। '
+                    'स्रोत: जहाँ उपलब्ध हों, आधिकारिक प्रेस नोट, वार्षिक रिपोर्ट और RTI उत्तर, अन्यथा समाचार और शिक्षा वेबसाइटें (नीचे सूची)। दो परीक्षाओं के लिए आवेदन करने वाले अभ्यर्थी को दो बार गिना गया है।',
+                    f'సంఖ్యలు ప్రచురించిన తాజా నియామకానివి ({n_all}లో {n_with} పరీక్షలు); హాజరైన వారి సంఖ్య మాత్రమే ప్రచురించిన చోట అదే ఇచ్చాం. '
+                    'ఆధారాలు: అందుబాటులో ఉన్నచోట అధికారిక ప్రెస్ నోట్లు, వార్షిక నివేదికలు, RTI సమాధానాలు; లేకపోతే వార్తా, విద్యా వెబ్‌సైట్లు (కింద జాబితా). రెండు పరీక్షలకు దరఖాస్తు చేసిన అభ్యర్థిని రెండుసార్లు లెక్కించాం.'),
+      'srcT': ('Sources for every number', 'हर संख्या के स्रोत', 'ప్రతి సంఖ్యకు ఆధారం'),
       'expandT': ('Next: exams of other states too', 'आगे: दूसरे राज्यों की परीक्षाएँ भी', 'తరువాత: ఇతర రాష్ట్రాల పరీక్షలు కూడా'),
       'expandP': ('Learn with Anil will not stop at Andhra Pradesh, Telangana and the central exams. It will expand to the public service commission, police and other recruitment exams of other states too, '
                   'so that aspirants across India can find their exam here, all under the same ₹45 PYQ Pass.',
@@ -1974,15 +1995,31 @@ def funders_page(loaded):
     }
     def svg(k): return f'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ic[k]}</svg>'
     def card(k, a, b): return f'<div class="card feature"><span class="ic">{svg(k)}</span><span>{t(a, "h3")}{t(b, "p")}</span></div>'
-    reach_cells = ''.join(
-        f'<div><span class="v">{num.replace(" lakh", "")} {t("lakh")}</span><span class="n">{esc(name)}</span><span class="y">{yr} · {t("applied")}</span></div>' if num else
-        f'<div><span class="v np">{t("np")}</span><span class="n">{esc(name)}</span></div>' for name, num, yr in REACH_ROWS)
+    def ename(e): return e['t'] if e['t'].startswith(e['b']) else f"{e['b']} {e['t']}"
+    def cell(e):
+        r = reach.get(e['id'], {})
+        chip = f'<span class="chip live">{t("live")}</span>' if e['id'] in live_ids else f'<span class="chip">{t("soon")}</span>'
+        if r.get('applied'):
+            v, u = amount(r['applied'])
+            yr = (re.search(r'(19|20)\d\d', r.get('cycle', '')) or [''])[0]
+            return (f'<div><span class="v">{v}{(" " + t(u)) if u else ""}</span><span class="n">{esc(ename(e))}</span>'
+                    f'<span class="y">{yr}{" · " if yr else ""}{t(r.get("kind", "applied"))}</span>{chip}</div>')
+        return f'<div><span class="v np">{t("np")}</span><span class="n">{esc(ename(e))}</span>{chip}</div>'
+    reach_cells = ''
+    for cid, cname in catalog['cats'].items() if isinstance(catalog['cats'], dict) else [(c['id'], c['name']) for c in catalog['cats']]:
+        ex = [e for e in catalog['exams'] if e['cat'] == cid]
+        ex.sort(key=lambda e: (e['id'] not in live_ids, -(reach.get(e['id'], {}).get('applied') or 0)))
+        sub = sum(nums.get(e['id'], 0) for e in ex)
+        reach_cells += (f'<h3 class="reach-cat">{esc(cname)} <span>{(amount(sub)[0] + " " + (t(amount(sub)[1]) if amount(sub)[1] else "")) if sub else ""}</span></h3>'
+                        f'<div class="reach-grid">{"".join(cell(e) for e in ex)}</div>')
+    srcs = ''.join(f'<li>{esc(ename(e))}: <a href="{esc(reach[e["id"]]["source"])}" rel="nofollow noopener" target="_blank">{esc(reach[e["id"]].get("source_name") or "source")}</a> ({esc(reach[e["id"]].get("cycle", ""))})</li>'
+                   for e in catalog['exams'] if reach.get(e['id'], {}).get('applied') and reach[e['id']].get('source'))
     nav = ''.join(f'<a href="{c["pb"]}">{esc(c["short"])}</a>' for c, _, _ in loaded)
     app = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
     css = app[app.index('<style>') + 7: app.index('</style>')]
     title = 'Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45'
     desc = ('Fund Learn with Anil, a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, '
-            'with answers and explanations, for ₹45, for the 49 lakh+ aspirants who apply for these exams, expanding to other states. Individuals and organisations can sponsor or partner.')
+            f'with answers and explanations, for ₹45, for the {TOT[0]}+ aspirants who apply for these exams, expanding to other states. Individuals and organisations can sponsor or partner.')
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": can, "image": SITE_URL + '/og-funders.jpg', "inLanguage": ["en", "hi", "te"],
           "keywords": "fund education India, sponsor students, support free exam preparation, government exam PYQs, Learn with Anil, democratise learning",
           "about": {"@type": "EducationalOrganization", "name": "Learn with Anil", "url": SITE_URL + '/', "founder": {"@type": "Person", "name": "Jupudi Anil Kumar"}},
@@ -2011,11 +2048,15 @@ def funders_page(loaded):
 .fund-note{{border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:15px}}
 .fund-poster{{display:block;width:100%;max-width:720px;height:auto;border-radius:var(--r);border:1px solid var(--line)}}
 .hero .mentor b{{display:block}}
-.reach-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}}
-.reach-grid>div{{background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:2px}}
+.reach-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface)}}
+.reach-grid>div{{background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:2px;box-shadow:inset -1px -1px 0 var(--line)}}
 .reach-grid .v{{font-family:var(--f-display);font-weight:800;font-size:24px;line-height:1.15}}
 .reach-grid .v.np{{font-size:15px;font-weight:600;color:var(--muted);font-family:var(--f-body)}}
 .reach-grid .n{{font-weight:700}}.reach-grid .y{{font-size:13.5px;color:var(--muted)}}
+.reach-grid .chip{{align-self:flex-start;margin-top:6px;font-size:12px;font-weight:700;border-radius:999px;padding:2px 9px;background:var(--none-soft);color:var(--muted)}}
+.reach-grid .chip.live{{background:var(--good-soft);color:var(--good)}}
+.reach-cat{{font-size:17px;font-weight:800;margin-top:6px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}}.reach-cat span{{color:var(--accent-text);font-family:var(--f-display)}}
+.reach-src summary{{cursor:pointer;font-weight:700;color:var(--accent-text)}}.reach-src ul{{margin:10px 0 0;padding-left:20px;font-size:14px;color:var(--muted)}}.reach-src li{{margin:3px 0}}
 </style>
 {ICONS}{ga_tag()}
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
@@ -2053,7 +2094,7 @@ def funders_page(loaded):
     <div class="figures">
       <div class="figure"><div class="v">{NQ}</div>{t('f1', 'div', 'class="k"')}</div>
       <div class="figure"><div class="v">1,00,000</div>{t('f2', 'div', 'class="k"')}</div>
-      <div class="figure"><div class="v">{REACH}</div>{t('f3', 'div', 'class="k"')}</div>
+      <div class="figure">{t('reachV', 'div', 'class="v"')}{t('f3', 'div', 'class="k"')}</div>
       <div class="figure"><div class="v">₹45</div>{t('f4', 'div', 'class="k"')}</div>
     </div>
   </section>
@@ -2061,8 +2102,9 @@ def funders_page(loaded):
   <section class="wrap section">
     <div class="section-title">{t('reachT', 'h2')}</div>
     <div class="card fund-box">{t('reachP', 'p')}
-      <div class="reach-grid">{reach_cells}</div>
+      {reach_cells}
       {t('reachNote', 'p', 'class="muted" style="font-size:14px"')}
+      <details class="reach-src"><summary>{t('srcT')}</summary><ul>{srcs}</ul></details>
     </div>
   </section>
 
