@@ -2170,8 +2170,8 @@ def funders_page(loaded):
     <div class="section-title">{t('shareT', 'h2')}</div>
     <div class="card fund-box">
       {t('shareP', 'p', 'class="muted"')}
-      <img class="fund-poster" src="/og-funders.jpg" alt="Learn with Anil: 1 lakh PYQs under one roof, for ₹45. Fund this project." width="1200" height="630" loading="lazy">
-      <div class="row"><a class="btn btn-primary" href="{share}" target="_blank" rel="noopener">{t('shareWa')}</a><a class="btn btn-secondary" href="/og-funders.jpg" download="LearnWithAnil-Fund-poster.jpg">{t('poster')}</a></div>
+      <img class="fund-poster" src="/og-funders.jpg" data-lsrc-en="/og-funders.jpg" data-lsrc-hi="/og-funders-hi.jpg" data-lsrc-te="/og-funders-te.jpg" alt="Learn with Anil: 1 lakh PYQs under one roof, for ₹45, plus a mock test series for every exam. Fund this project." width="1200" height="630" loading="lazy">
+      <div class="row"><a class="btn btn-primary" href="{share}" target="_blank" rel="noopener">{t('shareWa')}</a><a class="btn btn-secondary" href="/og-funders.jpg" data-lhref-en="/og-funders.jpg" data-lhref-hi="/og-funders-hi.jpg" data-lhref-te="/og-funders-te.jpg" download="LearnWithAnil-Fund-poster.jpg">{t('poster')}</a></div>
     </div>
   </section>
 
@@ -2187,7 +2187,8 @@ def funders_page(loaded):
 </footer>
 <script>(function(){{var T={tj};
 function apply(l){{document.documentElement.lang=l;document.querySelectorAll('[data-t]').forEach(function(el){{var x=T[el.getAttribute('data-t')];if(!x)return;el.innerHTML=x[l]||x.en;if(l==='en')el.removeAttribute('lang');else el.setAttribute('lang',l);}});
-document.querySelectorAll('.lang button').forEach(function(b){{b.setAttribute('aria-pressed',String(b.getAttribute('data-l')===l));}});}}
+document.querySelectorAll('.lang button').forEach(function(b){{b.setAttribute('aria-pressed',String(b.getAttribute('data-l')===l));}});
+document.querySelectorAll('[data-lsrc-'+l+']').forEach(function(e){{e.src=e.getAttribute('data-lsrc-'+l);}});document.querySelectorAll('[data-lhref-'+l+']').forEach(function(e){{e.href=e.getAttribute('data-lhref-'+l);}});}}
 document.querySelectorAll('.lang button').forEach(function(b){{b.addEventListener('click',function(){{var l=b.getAttribute('data-l');apply(l);try{{localStorage.setItem('lwa-lang',l);}}catch(e){{}}}});}});
 try{{var g=localStorage.getItem('lwa-lang');if(g==='hi'||g==='te')apply(g);}}catch(e){{}}}})();</script>
 </body>
