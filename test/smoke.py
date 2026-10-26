@@ -1,4 +1,4 @@
-import asyncio, sys, os, threading, functools
+import asyncio, sys, os, threading, functools, json
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,12 +21,23 @@ srv = ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(Pages, directory=S
 threading.Thread(target=srv.serve_forever, daemon=True).start()
 URL = f'http://127.0.0.1:{srv.server_address[1]}/'
 PAY_API = 'https://script.google.com/macros/**'
-def fake_pay(passes):   # the payments script: a student with the given passes
+# private keys (never in the repo): the sealed books' keys and the Bahubali code, if this machine has them
+BOOK_KEYS = json.load(open(os.environ.get('BOOKS_PRIV', '/home/claude/lwa-books/paid') + '/keys.json')) if os.path.exists(os.environ.get('BOOKS_PRIV', '/home/claude/lwa-books/paid') + '/keys.json') else {}
+_bbc = os.path.join(os.environ.get('BAHUBALI_SRC', '/home/claude/bahubali'), 'secret', 'code.txt')
+BB_CODE = open(_bbc).read().strip() if os.path.exists(_bbc) else os.environ.get('BAHUBALI_CODE', '')
+BOOKS = json.load(open(os.path.join(ROOT, 'src', 'books', 'books.json'))) if os.path.exists(os.path.join(ROOT, 'src', 'books', 'books.json')) else {}
+def fake_pay(passes):   # the payments script: a student with the given passes (the PYQ Pass opens mocks, books and Bahubali)
     import json
     async def h(route):
-        try: act = json.loads(route.request.post_data or '{}').get('action')
-        except Exception: act = ''
-        r = {'ok': True, 'passes': passes} if act in ('passes', 'verify') else {'ok': False, 'error': 'test'}
+        try: body = json.loads(route.request.post_data or '{}')
+        except Exception: body = {}
+        act, iid = body.get('action'), str(body.get('id', ''))
+        if act in ('passes', 'verify'): r = {'ok': True, 'passes': passes}
+        elif act == 'mock' and iid.startswith('bk-'):
+            bk = BOOKS.get(iid[3:])
+            r = ({'ok': True, 'id': iid, 'key': BOOK_KEYS.get(iid, ''), 'file': bk['file']} if passes.get('paid') and bk else {'ok': False, 'error': 'test', 'need': 'pyq'})
+        elif act == 'mock' and iid == 'bb-code': r = {'ok': True, 'id': iid, 'key': BB_CODE} if passes.get('paid') and BB_CODE else {'ok': False, 'error': 'test', 'need': 'pyq'}
+        else: r = {'ok': False, 'error': 'test'}
         await route.fulfill(status=200, content_type='application/json', body=json.dumps(r))
     return h
 PAID = {'pyq': '2099-12-31', 'paid': True}
@@ -321,11 +332,24 @@ async def main():
             f = os.path.join(SITE, h)
             if h and not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'llms.txt: broken link /{h}')
         epm = open(os.path.join(SITE, 'upsc-epfo', 'mock-test.html'), encoding='utf-8').read()
-        if '₹199' not in epm or 'coming soon' not in epm or '?buy=mock' in epm: errors.append('upsc-epfo/mock-test.html: no "₹199 · coming soon" pack, or it can be bought already')
+        if 'Included in the ₹45 PYQ Pass' not in epm or 'coming soon' not in epm.lower() or '?buy=mock' in epm or '₹199' in epm: errors.append('upsc-epfo/mock-test.html: EPFO pack should be "coming soon, included in the ₹45 PYQ Pass" with no separate price')
+        # one ₹45 PYQ Pass for everything (Anil, 26 Oct 2026): no page sells a mock pack, combo, Bahubali or a book separately
+        for dp, _, fs in os.walk(SITE):
+            for f in fs:
+                rel_ = os.path.relpath(os.path.join(dp, f), SITE)
+                if not f.endswith('.html') or _re.search(r'(^|/)(q|papers|subjects)/', rel_): continue   # question text can mention ₹ amounts
+                t = open(os.path.join(dp, f), encoding='utf-8', errors='ignore').read()
+                for bad in ('₹150', '₹149', '₹199', '₹250 for', 'for ₹250', '₹250 once', '?buy=mock', '?buy=combo', 'myinstamojo.com/product', 'bought separately', 'sold separately'):
+                    if bad in t: errors.append(f'{rel_}: still sells something separately ({bad})'); break
+        bks = os.path.join(SITE, 'books')
+        for f in (os.listdir(bks) if os.path.isdir(bks) else []):
+            if b'%PDF' in open(os.path.join(bks, f), 'rb').read(2048): errors.append(f'books/{f} is not encrypted')
+        if BOOKS and 'Disallow: /books/' not in open(os.path.join(SITE, 'robots.txt')).read(): errors.append('robots.txt does not keep /books/ out')
         await pg.goto(URL + 'ts-police-si/?sec=ari'); await pg.wait_for_timeout(600)
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('?sec=ari did not open a sectional test')
         await pg.goto(URL + 'ts-police-si/?buy=mock'); await pg.wait_for_timeout(500)
-        if not await pg.evaluate('!!document.querySelector("#payDlg[open]")') or 'Mission Khaki' not in await pg.inner_text('#payDlg'): errors.append('?buy=mock did not open the Mission Khaki checkout')
+        pdt = await pg.inner_text('#payDlg') if await pg.evaluate('!!document.querySelector("#payDlg[open]")') else ''
+        if 'PYQ Pass' not in pdt or 'Mission Khaki' not in pdt or '₹45' not in pdt or '₹150' in pdt: errors.append('?buy=mock (old link) did not open the ₹45 PYQ Pass checkout that lists Mission Khaki')
         # site icon: the files exist and the pages point to them
         for f in ('favicon.ico', 'icon-192.png', 'apple-touch-icon.png', 'icon-512.png'):
             if not os.path.isfile(os.path.join(SITE, f)): errors.append(f'missing {f}')
@@ -346,6 +370,18 @@ async def main():
                 await pg.goto(URL + 'appsc-group-2/bahubali-test-series/'); await pg.wait_for_timeout(300)
                 if await pg.locator('[data-test]').count() < 1: errors.append('Bahubali: no live test cards')
                 if await pg.locator('#unlockForm').count() != 1: errors.append('Bahubali: no unlock form')
+                if BB_CODE:   # a registered student with the PYQ Pass: the tests open by themselves
+                    bp = await b.new_page(viewport={'width': 390, 'height': 900}); await bp.add_init_script(REGISTERED)
+                    bp.on('pageerror', lambda e: errors.append(f'bahubali pageerror: {e}'))
+                    await bp.goto(URL + 'appsc-group-2/bahubali-test-series/'); await bp.wait_for_timeout(2500)
+                    if not await bp.locator('[data-act="start"]').count() or await bp.is_visible('#unlockBox'): errors.append('Bahubali: the PYQ Pass did not open the tests')
+                    if 'PDF password' not in await bp.inner_text('#pdfPass'): errors.append('Bahubali: no PDF password shown to a pass holder')
+                    await bp.close()
+                    bp = await b.new_page(passes={}, viewport={'width': 390, 'height': 900}); await bp.add_init_script(REGISTERED)
+                    await bp.goto(URL + 'appsc-group-2/bahubali-test-series/'); await bp.wait_for_timeout(1500)
+                    if await bp.locator('[data-act="start"]').count(): errors.append('Bahubali: open without a pass')
+                    if '?buy=pyq' not in await bp.inner_html('#buy'): errors.append('Bahubali: no "Get the PYQ Pass" button')
+                    await bp.close()
                 if '/appsc-group-2/bahubali-test-series/</loc>' not in sm: errors.append('Bahubali page not in sitemap')
                 for d, bad in (('data', b'"q":'), ('pdf', None)):
                     for f in os.listdir(os.path.join(bbdir, d)):
@@ -404,6 +440,22 @@ async def main():
                 sw = await mp.evaluate('document.documentElement.scrollWidth')
                 if sw > 390: errors.append(f'mains: horizontal overflow {sw}>390')
                 await mp.close()
+            # study books: part of the PYQ Pass, locked without it, a decrypted PDF download with it
+            for passes, paid in [({}, False), (PAID, True)]:
+                bp = await b.new_page(passes=passes, viewport={'width': 1280, 'height': 900}, accept_downloads=True)
+                await bp.add_init_script(REGISTERED); bp.on('pageerror', lambda e: errors.append(f'books pageerror: {e}'))
+                await bp.goto(URL + 'appsc-group-2/notes/'); await bp.wait_for_timeout(900)
+                n_dl, n_lock = await bp.locator('[data-act="bookdl"]').count(), await bp.locator('.note [data-act="unlockpyq"]').count()
+                if await bp.locator('.note a[href*="instamojo"]').count(): errors.append('books: an Instamojo "Buy now" link is still shown')
+                if not paid and (n_dl or n_lock != len(BOOKS)): errors.append(f'books: without a pass {n_dl} downloads and {n_lock} locks')
+                if paid:
+                    if n_dl != len(BOOKS): errors.append(f'books: {n_dl} downloads with the pass (want {len(BOOKS)})')
+                    elif BOOK_KEYS:
+                        async with bp.expect_download(timeout=20000) as di: await bp.locator('[data-act="bookdl"]').first.click()
+                        d = await di.value; fpath = await d.path()
+                        head = open(fpath, 'rb').read(5)
+                        if head != b'%PDF-' or not d.suggested_filename.endswith('.pdf'): errors.append(f'books: the download is not a PDF ({d.suggested_filename}, {head!r})')
+                await bp.close()
             hp = await b.new_page(passes={}); await hp.goto(URL); await hp.wait_for_timeout(400)
             await hp.fill('#examSearch', 'group 1 paper 5'); await hp.wait_for_timeout(200)
             if not await hp.is_visible('#hubP5'): errors.append('hub: a Paper V search does not point to WhatsApp')

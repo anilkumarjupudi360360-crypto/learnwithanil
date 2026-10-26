@@ -297,21 +297,24 @@ body.locked{overflow:hidden}
   </div>
   <div class="buy" id="buy">
     <p class="eyebrow muted">Whole series · Paper I + Paper II</p>
-    <div class="price"><b>₹{{PRICE}}</b><span>for all {{TOTAL_TESTS}} tests</span></div>
+    <div class="price"><b>₹{{PRICE}}</b><span>PYQ Pass: all {{TOTAL_TESTS}} tests + everything else on the site</span></div>
     <ul>
       <li>{{NLIVE}} live now ({{LIVE_DESC}}); the rest are upcoming and unlock free as they are added</li>
       <li>Online exam with timer, OMR-style palette and instant score</li>
       <li>Question booklet and answer PDFs for every live test</li>
+      <li>The same pass opens every previous paper of every exam, the other mock series and the study books, for 12 months</li>
     </ul>
     {{BUY_BUTTON}}
     <div class="unlock" id="unlockBox">
-      <label for="code">Already bought? Enter your access code</label>
+      <p class="msg" id="passMsg" role="status"></p>
+      <label for="code">Bought the series earlier? Enter your access code</label>
       <form class="row" id="unlockForm" autocomplete="off"><input id="code" name="code" placeholder="BAHU-XXXX-XXXX" maxlength="24" spellcheck="false" autocapitalize="characters"><button class="btn btn-primary" type="submit">Unlock</button></form>
       <p class="msg" id="unlockMsg" role="status"></p>
     </div>
     <div class="unlock" id="unlockedBox" hidden>
       <div class="unlocked-box">✓ Series unlocked on this device</div>
-      <p class="msg muted">Your code is saved in this browser. To use another phone or computer, enter the same code there. <button class="btn btn-quiet btn-sm" type="button" data-act="forget">Remove code</button></p>
+      <p class="msg muted" id="pdfPass"></p>
+      <p class="msg muted">Unlocked with your PYQ Pass or your access code, saved in this browser. On another phone or computer, register with the same phone number and email (or enter the same code). <button class="btn btn-quiet btn-sm" type="button" data-act="forget">Remove from this browser</button></p>
     </div>
   </div>
 </div></section>
@@ -349,11 +352,11 @@ body.locked{overflow:hidden}
 {{SAMPLE_HTML}}
 
 <section class="blk"><div class="wrap">
-  <h2>How to buy</h2>
+  <h2>How to get it</h2>
   <div class="steps">
-    <div class="card"><span class="n">1</span><div><b>Pay ₹{{PRICE}} once</b><p>Tap “Buy now”. Secure payment by UPI, card or net banking on Instamojo.</p></div></div>
-    <div class="card"><span class="n">2</span><div><b>Get your access code</b><p>Your access card (PDF) downloads right after payment and is also emailed to you. It has your code.</p></div></div>
-    <div class="card"><span class="n">3</span><div><b>Unlock and write</b><p>Enter the code on this page. All live tests open; new tests open automatically when they are added.</p></div></div>
+    <div class="card"><span class="n">1</span><div><b>Get the ₹{{PRICE}} PYQ Pass</b><p>Tap “Get the PYQ Pass”, register with your phone number and email, and pay by UPI, card or net banking on Instamojo.</p></div></div>
+    <div class="card"><span class="n">2</span><div><b>Come back to this page</b><p>On the same phone or computer, the tests open by themselves. If not, tap “I have the PYQ Pass · open the tests”.</p></div></div>
+    <div class="card"><span class="n">3</span><div><b>Write the tests</b><p>All live tests open; new tests open automatically when they are added. The same pass opens everything else on the site.</p></div></div>
   </div>
 </div></section>
 
@@ -522,7 +525,7 @@ async function startFlow(id){
 }
 function needCode(){
   const box = $("#buy"); box.scrollIntoView({behavior:"smooth", block:"center"}); setTimeout(()=>$("#code").focus(), 350);
-  const m=$("#unlockMsg"); m.className="msg"; m.textContent="Enter the access code from your Bahubali access card, or buy the series first.";
+  const m=$("#unlockMsg"); m.className="msg"; m.textContent="Get the ₹" + (CONF.pay ? CONF.pay.price : 45) + " PYQ Pass to open every test (or enter the access code from an earlier purchase).";
 }
 
 /* ---------- exam ---------- */
@@ -718,7 +721,8 @@ document.addEventListener("click", e=>{
   else if(act==="close") closeDialog();
   else if(act==="result") showResult(b.dataset.id);
   else if(act==="home") goHome();
-  else if(act==="forget"){ setStr(CKEY, ""); KEY = null; renderCards(); toast("Code removed from this browser"); }
+  else if(act==="forget"){ setStr(CKEY, ""); KEY = null; renderCards(); showPdfPass(); toast("Removed from this browser"); }
+  else if(act==="passcheck"){ passUnlock(true).then(ok=>{ if(ok){ renderCards(); showPdfPass(); toast("Bahubali unlocked. All the best!"); document.getElementById("tests").scrollIntoView({behavior:"smooth"}); } }); }
   else if(act==="lang"){ LANG = b.dataset.l; setStr("lwa-lang", LANG); if(EX) drawExam(); else if(RV.D && !$("#screen").hidden) drawReview(); }
   else if(act==="rvf"){ RV.f = b.dataset.f; drawReview(); }
   else if(act==="toreview"){ const r=$("#review"); if(r) r.scrollIntoView({behavior:"smooth"}); }
@@ -751,14 +755,32 @@ $("#unlockForm").addEventListener("submit", async e=>{
   if(norm(code).length < 8){ m.className="msg err"; m.textContent="Please type the full code, e.g. BAHU-XXXX-XXXX."; return; }
   if(!window.crypto || !crypto.subtle){ m.className="msg err"; m.textContent="This browser cannot unlock the tests. Please use the latest Chrome."; return; }
   m.className="msg"; m.innerHTML = `<span class="spin"></span> Checking…`;
-  try{ await tryCode(code); setStr(CKEY, norm(code)); m.className="msg ok"; m.textContent="Unlocked!"; renderCards(); track("bahubali_unlock", {}); toast("Bahubali unlocked. All the best!"); document.getElementById("tests").scrollIntoView({behavior:"smooth"}); }
+  try{ await tryCode(code); setStr(CKEY, norm(code)); m.className="msg ok"; m.textContent="Unlocked!"; renderCards(); showPdfPass(); track("bahubali_unlock", {}); toast("Bahubali unlocked. All the best!"); document.getElementById("tests").scrollIntoView({behavior:"smooth"}); }
   catch(err){ m.className="msg err"; m.textContent="That code is not right. Check it on your access card (letters and numbers only)."; }
 });
+
+/* ---------- the ₹45 PYQ Pass opens the series (26 Oct 2026): the payments script gives the access code to a phone with a valid pass ---------- */
+function showPdfPass(){ const c = getStr(CKEY), el = $("#pdfPass"); if(el) el.innerHTML = c ? `PDF password: <b class="mono">${esc(c.replace(/^(BAHU)(\w{4})(\w{4})$/, "$1-$2-$3"))}</b> (type it with the hyphens)` : ""; }
+function device(){ try{ return localStorage.getItem("lwa-device") || ""; }catch(_){ return ""; } }
+async function passUnlock(manual){
+  const m = $("#passMsg"), P = CONF.pay;
+  if(!P || !P.api || !window.crypto || !crypto.subtle) return false;
+  if(!ST.phone || !ST.email){ if(manual){ m.className = "msg"; m.innerHTML = `Register on Learn with Anil first (phone and email), then pay: <a href="${P.app}?buy=pyq">get the PYQ Pass</a>.`; } return false; }
+  if(manual){ m.className = "msg"; m.innerHTML = `<span class="spin"></span> Checking your PYQ Pass…`; }
+  try{
+    const r = await (await fetch(P.api, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"},
+      body: JSON.stringify({action:"mock", exam:P.exam, id:"bb-code", phone:ST.phone, email:ST.email||"", device:device()})})).json();
+    if(r && r.ok && r.key){ await tryCode(r.key); setStr(CKEY, norm(r.key)); if(manual){ m.className = "msg ok"; m.textContent = "Unlocked with your PYQ Pass!"; } track("bahubali_unlock", {via:"pass"}); return true; }
+    if(manual){ m.className = "msg err"; m.innerHTML = (r && r.need) ? `No active PYQ Pass for ${esc(ST.phone)} yet. <a href="${P.app}?buy=pyq">Get it for ₹${P.price}</a>; if you just paid, wait a minute and try again.` : esc((r && r.error) || "Could not check. Please try again."); }
+  }catch(_){ if(manual){ m.className = "msg err"; m.textContent = "No connection. Please try again."; } }
+  return false;
+}
 
 (async function init(){
   const saved = getStr(CKEY);
   if(saved && window.crypto && crypto.subtle){ try{ await tryCode(saved); }catch(e){ setStr(CKEY, ""); } }
-  renderCards();
+  if(!KEY) await passUnlock(false);
+  renderCards(); showPdfPass();
   const h = location.hash.slice(1), m = h.match(/^(exam|result)\/(\w+)$/);
   if(m && TESTS[m[2]] && KEY){ if(m[1]==="exam" && testState(m[2]).cur) startExam(m[2]); else if(m[1]==="result") showResult(m[2]); }
   if(ST.pending && ST.pending.length && navigator.onLine){ const l = ST.pending.slice(); ST.pending=[]; saveST(); l.forEach(r=>{ try{ postRecord(r).catch(()=>{ ST.pending.push(r); saveST(); }); }catch(_){} }); }

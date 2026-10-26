@@ -2,12 +2,13 @@
  * Learn with Anil — passes and payments (Google Apps Script; its data lives in the private "Learn with Anil – Passes" spreadsheet).
  *
  * Passes
- *  - PYQ Pass (₹45): every previous paper on the whole website, all exams (including exams added later), for 12 months
- *    from the day of payment. Stored with exam = 'all'.
+ *  - PYQ Pass (₹45): EVERYTHING on the website for 12 months from the day of payment (Anil, 26 Oct 2026: "one ₹45 =
+ *    everything"): every previous paper of every exam (including exams added later), every mock test series
+ *    (Mission Khaki SI and Constable, Mission CGL, Bahubali, and later series) and the study books. Stored with exam = 'all'.
  *  - Free trial: the same access as the PYQ Pass for 3 days, once per phone number, starting the first time a registered
  *    student's phone and email reach this script (right after they register on the site). Stored in the 'trials' tab.
- *  - Mock packs (Mission Khaki ₹150 and Mission Khaki – Constable ₹99, valid till that exam; Mission CGL ₹149, 12 months):
- *    one exam's mock tests only (the PYQ Pass is separate). The SI + Constable combo (₹199) records one mock pass for each.
+ *  - Mock packs are no longer sold on their own (they were ₹150 / ₹99 / ₹149, combo ₹199, until 26 Oct 2026; nobody bought
+ *    one). Old 'mock' rows in the passes tab still work; a 'buy' for a mock or combo now opens the ₹45 PYQ Pass checkout.
  *  - Free mocks (FREE_MOCKS): open to every registered student, no pass needed; each opening is logged in the 'free' tab.
  *
  * What it does
@@ -18,7 +19,9 @@
  *  - webhook: Instamojo also calls this script when a payment succeeds (checked with the private salt), so a pass
  *             is recorded even if the student closes the page.
  *  - passes:  which passes (and free trial) a registered phone number has; starts the free trial the first time.
- *  - mock:    the key of a released mock (its encrypted file is on the website), only for a valid mock pass (or a free mock).
+ *  - mock:    the key of a released mock (its encrypted file is on the website), for a valid PYQ Pass or mock pass (or a free
+ *             mock). Also 'bk-<book id>' (key of an encrypted study book) and 'bb-code' (the Bahubali access code) for any
+ *             exam, PYQ Pass only. These keys live in the 'keys' tab like the mock keys.
  *
  * Settings are NOT in this file. They live under Project Settings → Script properties:
  *   SHEET_ID                                       the ID of the "Learn with Anil – Passes" spreadsheet (the only sheet this script opens)
@@ -30,14 +33,16 @@
 const SITE = 'https://learnwithanil.in/';
 const PYQ = {price: 45, months: 12, purpose: 'PYQ Pass - All Exams (1 yr)'};   // Instamojo allows 30 characters
 const TRIAL_DAYS = 0;   // free trial switched off (Anil, 23 Oct 2026: every PYQ needs the paid pass). Was 3.
-const MOCKS = {   // exam id: mock pack on sale (price, name shown at checkout, last day the pass is valid or months from payment,
-                  // and the prefix every mock id of that pack starts with: a pass for one pack never opens another pack's mocks)
+const MOCKS = {   // exam id: that exam's mock series (old price and checkout name, last day an old mock pass is valid or months
+                  // from payment, and the prefix every mock id of that pack starts with). Since 26 Oct 2026 the ₹45 PYQ Pass opens
+                  // every pack; add a new series here (e.g. 'upsc-epfo') when its Mock 1 is ready.
   'ts-police-si': {price: 150, name: 'Mission Khaki TS SI Mocks', until: '2026-11-30', prefix: 'mk-si-'},
   'ssc-cgl': {price: 149, name: 'Mission CGL SSC Mocks', months: 12, prefix: 'mk-cgl-'},   // Anil, 24 Oct 2026: ₹149
   'ts-police-constable': {price: 99, name: 'Mission Khaki TS PC Mocks', until: '2026-12-21', prefix: 'mk-pc-'},   // Anil, 25 Oct 2026: ₹99
 };
 // SI + Constable in one payment (Anil, 25 Oct 2026): recorded as a mock pass for each exam, each valid till its own exam
-const COMBO = {price: 199, name: 'Mission Khaki SI+PC Mocks', exams: ['ts-police-si', 'ts-police-constable']};
+const COMBO = {price: 199,   // no longer sold (26 Oct 2026); kept so old combo rows still read
+                name: 'Mission Khaki SI+PC Mocks', exams: ['ts-police-si', 'ts-police-constable']};
 const FREE_MOCKS = {'mk-pc-1': true};   // free for every registered student (Anil, 25 Oct 2026: Constable Mock 1)
 // Mock keys live in the 'keys' tab of this spreadsheet: mock_id | key (base64) | file | opens (yyyy-mm-dd, IST).
 const MAX_DEVICES = 3;   // one phone number's passes work on at most this many phones/computers
@@ -132,9 +137,7 @@ function im_(method, path, payload) {
 const REQ_HEAD = ['time', 'request_id', 'phone', 'exam', 'kind', 'amount', 'name', 'email', 'status'];
 
 function buy(b, exam) {
-  const kind = b.kind === 'mock' ? 'mock' : b.kind === 'combo' ? 'combo' : 'pyq';
-  if (kind === 'mock' && !MOCKS[exam]) return {ok: false, error: 'This mock test pack is not on sale yet.'};
-  if (kind === 'combo' && COMBO.exams.indexOf(exam) < 0) return {ok: false, error: 'This combo is not on sale for this exam.'};
+  const kind = 'pyq';   // Anil, 26 Oct 2026: one ₹45 PYQ Pass for everything; a 'mock' or 'combo' buy from an old page opens it too
   const phone = phoneOf(b.phone);
   if (!phone) return {ok: false, error: 'Please register with a valid 10-digit mobile number first.'};
   if (!prop('INSTAMOJO_CLIENT_ID') || !prop('INSTAMOJO_CLIENT_SECRET')) return {ok: false, error: 'Online payment opens in a few hours. Please try again later today.'};
@@ -266,6 +269,7 @@ function passesFor(phone, exam, device, email, startTrial) {
     if (kind === 'pyq' && ex === 'all') { if (!res.pyq || res.pyq < u) res.pyq = u; res.paid = true; }
     else if (kind === 'mock' && ex === exam) { if (!res.mock || res.mock < u) res.mock = u; }
   }
+  if (res.paid && res.pyq && (!res.mock || res.mock < res.pyq)) res.mock = res.pyq;   // the PYQ Pass opens every mock series too
   const t = TRIAL_DAYS > 0 ? trialFor_(phone, email, startTrial) : '';
   if (t && t >= now) { res.trial = t; if (!res.pyq || res.pyq < t) res.pyq = t; }
   if ((res.pyq || res.mock) && device && !deviceOK_(phone, String(device))) return {ok: false, error: 'These passes are already in use on ' + MAX_DEVICES + ' devices.', passes: {}};
@@ -283,16 +287,17 @@ function deviceOK_(phone, device) {
   return true;
 }
 
-function mock(b, exam) {   // the key of a sealed mock (the encrypted file is on the website), only for a valid mock pass
+function mock(b, exam) {   // the key of a sealed mock, book or the Bahubali code (the encrypted file is on the website), for a valid pass
   const id = String(b.id || '');
-  if (!MOCKS[exam] || id.indexOf(MOCKS[exam].prefix) !== 0) return {ok: false, error: 'This mock is not part of this exam\'s test series.'};
+  const item = /^(bk-[a-z0-9-]{2,40}|bb-code)$/.test(id);   // study books and the Bahubali access code: any exam, PYQ Pass only
+  if (!item && (!MOCKS[exam] || id.indexOf(MOCKS[exam].prefix) !== 0)) return {ok: false, error: 'This mock is not part of this exam\'s test series.'};
   const v = sheet('keys', ['mock_id', 'key', 'file', 'opens']).getDataRange().getValues();
   let row = null;
   for (let i = 1; i < v.length; i++) if (String(v[i][0]) === id) row = v[i];
-  if (!row) return {ok: false, error: 'This mock is not ready yet.'};
+  if (!row) return {ok: false, error: item ? 'This is not ready yet.' : 'This mock is not ready yet.'};
   const opens = day_(row[3]);
   if (opens > today_()) return {ok: false, error: 'This mock opens on ' + opens + '.'};
-  if (FREE_MOCKS[id]) {   // free mock: any registered student
+  if (!item && FREE_MOCKS[id]) {   // free mock: any registered student
     const phone = phoneOf(b.phone);
     if (!phone) return {ok: false, error: 'Please register first (it is free): your name, phone and email.'};
     try { sheet('free', ['time', 'phone', 'email', 'mock']).appendRow([new Date(), phone, cell_(String(b.email || '').slice(0, 100)), id]); } catch (e) {}
@@ -300,7 +305,8 @@ function mock(b, exam) {   // the key of a sealed mock (the encrypted file is on
   }
   const ps = passesFor(phoneOf(b.phone), exam, b.device, b.email, false);
   if (!ps.ok) return ps;
-  if (!ps.passes.mock) return {ok: false, error: 'This mock needs the ' + (MOCKS[exam] ? MOCKS[exam].name : 'mock test') + ' pass.', need: 'mock'};
+  if (item ? !(ps.passes.paid && ps.passes.pyq) : !ps.passes.mock)
+    return {ok: false, error: 'This needs the ₹' + PYQ.price + ' PYQ Pass (everything on the site, 12 months).', need: 'pyq'};
   return {ok: true, id: id, key: String(row[1]), file: String(row[2])};
 }
 

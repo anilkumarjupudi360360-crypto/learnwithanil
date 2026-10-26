@@ -42,14 +42,15 @@ async def main():
     srv = http.server.ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(http.server.SimpleHTTPRequestHandler, directory=SITE))
     threading.Thread(target=srv.serve_forever, daemon=True).start()
     url = f'http://127.0.0.1:{srv.server_port}/'
-    # fake payments script: the PYQ Pass covers every exam ('all'), the free trial too; Mission Khaki is separate
+    # fake payments script: the ₹45 PYQ Pass covers every exam ('all') and, since 26 Oct 2026, every mock series too
+    # (the script reports mock = the PYQ Pass date); a 'buy' of any kind is the PYQ Pass
     state = {'mock': False, 'pyq': False, 'trial': 'expired', 'calls': [], 'kind': ''}
     def passes():
         p = {}
         if state['mock']: p['mock'] = '2026-11-30'
         if state['trial'] == 'start': state['trial'] = 'active'
         if state['trial'] == 'active': p['trial'] = p['pyq'] = '2099-01-03'
-        if state['pyq']: p['pyq'] = '2099-12-31'; p['paid'] = True
+        if state['pyq']: p['pyq'] = '2099-12-31'; p['paid'] = True; p['mock'] = max(p.get('mock', ''), '2099-12-31')
         return p
     async def api(route):
         b = json.loads(route.request.post_data or '{}'); state['calls'].append(b['action'])
@@ -60,9 +61,9 @@ async def main():
             else: r = dict(ok=True, url=url + 'ts-police-si/?payment_id=MOJO1&payment_status=Credit&payment_request_id=REQ1')
         elif b['action'] == 'verify':
             if state.get('verifyfail'): r = dict(ok=False, error='The payment is not complete yet.')
-            else: state['mock' if state['kind'] == 'mock' else 'pyq'] = True; r = dict(ok=True, passes=passes())
+            else: state['pyq'] = True; r = dict(ok=True, passes=passes())
         elif b['action'] == 'mock' and b['id'] == 'mk-pc-1': r = dict(ok=True, id=b['id'], key=PKEY, file=PFILE, free=True)   # free for registered students
-        elif b['action'] == 'mock': r = dict(ok=True, id=b['id'], key=TKEY, file=TFILE) if state['mock'] else dict(ok=False, need='mock', error='needs pass')
+        elif b['action'] == 'mock': r = dict(ok=True, id=b['id'], key=TKEY, file=TFILE) if (state['mock'] or state['pyq']) else dict(ok=False, need='pyq', error='needs pass')
         else: r = dict(ok=False)
         await route.fulfill(status=200, content_type='application/json', body=json.dumps(r))
     errors = []
@@ -104,32 +105,28 @@ async def main():
         for view in ('mistakes', 'smart', 'heatmap', 'bookmarks', 'practice'):
             await pg.goto(url + f'ts-police-si/{view}/'); await pg.wait_for_timeout(700)
             if not await pg.locator('[data-act="openpay"]').count(): errors.append(f'{view} is open without any plan')
-        # 2. a mock without a pass opens the mock checkout (mocks only)
+        # 2. a mock without a pass opens the ₹45 PYQ Pass checkout, which includes Mission Khaki (no mock-only pack any more)
         await pg.goto(url + 'ts-police-si/?mock=mk-si-1'); await pg.wait_for_timeout(800)
         txt = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
-        if 'Mission Khaki' not in txt or 'Mock tests only' not in txt: errors.append('no Mission Khaki (mocks only) checkout for a mock without a pass')
+        if 'Mission Khaki' not in txt or 'PYQ Pass' not in txt or '₹45' not in txt or 'Mock tests only' in txt or '₹150' in txt: errors.append(f'a mock without a pass should open the ₹45 PYQ Pass checkout listing Mission Khaki: {txt[:200]!r}')
         # 3. pay: buy -> (fake Instamojo) -> back with payment_request_id -> verify -> unlocked
         await pg.click('[data-act="paybuy"]'); await pg.wait_for_timeout(1500)
-        if not state['mock']: errors.append(f'payment not verified, calls {state["calls"]}')
-        if 'mock' not in await pg.evaluate('JSON.stringify(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{}"))'): errors.append('pass not saved after payment')
-        # 4. the mock and a sectional now open
+        if not state['pyq']: errors.append(f'payment not verified, calls {state["calls"]}')
+        if state['kind'] != 'pyq': errors.append(f'the app asked to buy "{state["kind"]}", not the PYQ Pass')
+        if 'pyq' not in await pg.evaluate('JSON.stringify(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{}"))'): errors.append('pass not saved after payment')
+        # 4. the mock and a sectional now open with the PYQ Pass
         await pg.goto(url + 'ts-police-si/?mock=mk-si-1'); await pg.wait_for_timeout(1200)
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/') or '6' not in await pg.inner_text('main'): errors.append('mock did not open after payment')
         if await pg.locator('[data-act="qchal"]').count(): errors.append('paid mock question offers "challenge a friend"')
         await pg.goto(url + 'ts-police-si/?mock=mk-si-1&part=rea'); await pg.wait_for_timeout(1200)
         if 'of 2' not in await pg.inner_text('main'): errors.append('reasoning sectional should have 2 questions')
-        # 4b. Mission Khaki opens the study tools but not the PYQ quiz builder
-        await pg.goto(url + 'ts-police-si/mistakes/'); await pg.wait_for_timeout(700)
-        if await pg.locator('[data-act="openpay"]').count(): errors.append('Mistakes notebook locked although Mission Khaki was bought')
-        await pg.goto(url + 'ts-police-si/practice/'); await pg.wait_for_timeout(700)
-        if not await pg.locator('[data-act="openpay"]').count(): errors.append('PYQ quiz builder open with only Mission Khaki')
-        # 5. Mission Khaki does not include the PYQ Pass
+        # 4b. the same pass opens the study tools and the PYQ quiz builder
+        for view in ('mistakes', 'practice'):
+            await pg.goto(url + f'ts-police-si/{view}/'); await pg.wait_for_timeout(700)
+            if await pg.locator('[data-act="openpay"]').count(): errors.append(f'{view} locked although the PYQ Pass was bought')
+        # 5. PYQ tests open, here and on another exam
         await pg.goto(url + 'ts-police-si/?test=s2022'); await pg.wait_for_timeout(900)
-        if (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('PYQ test opened with only the Mission Khaki pass')
-        # 6. buy the PYQ Pass on one exam: PYQs of another exam open too
-        if await pg.locator('#payDlg[open]').count():
-            await pg.click('[data-act="paybuy"]'); await pg.wait_for_timeout(1500)
-        if not state['pyq']: errors.append(f'PYQ Pass payment not verified, calls {state["calls"]}')
+        if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('PYQ test did not open with the PYQ Pass')
         await pg.goto(url + 'appsc-group-1/?sec=pol'); await pg.wait_for_timeout(1200)
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('PYQ Pass bought on TS SI does not open APPSC Group 1 PYQs')
         await pg.close()
@@ -185,7 +182,8 @@ async def main():
         await pg.evaluate('sessionStorage.setItem("lwa-pay", JSON.stringify({kind:"pyq", t: Date.now()}))')
         await pg.reload(); await pg.wait_for_timeout(1500)
         if await pg.locator('#payDlg[open]').count(): errors.append('a student who already paid was asked to pay again')
-        # D. Mission Khaki – Constable (25 Oct 2026): Mock 1 is free for a registered student, Mock 2 asks for the pack, the combo checkout says ₹199
+        # D. Mission Khaki – Constable (25 Oct 2026): Mock 1 is free for a registered student; Mock 2 and an old ?buy=combo link
+        #    open the ₹45 PYQ Pass checkout (26 Oct 2026: no separate packs or combo)
         state.update(mock=False, pyq=False, trial='expired', calls=[], kind='')
         await pg.goto(url + 'ts-police-constable/?mock=mk-pc-1'); await pg.wait_for_timeout(1500)
         if await pg.locator('#payDlg[open]').count(): errors.append('free Constable Mock 1 asked for payment')
@@ -196,13 +194,13 @@ async def main():
         if 'English sectional' not in body: errors.append(f'Constable English sectional did not open: {body[:200]!r}')
         await pg.goto(url + 'ts-police-constable/?mock=mk-pc-2'); await pg.wait_for_timeout(1500)
         t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
-        if '₹99' not in t: errors.append(f'Constable Mock 2 did not ask for the ₹99 pack: {t[:160]!r}')
+        if '₹45' not in t or '₹99' in t: errors.append(f'Constable Mock 2 did not ask for the ₹45 PYQ Pass: {t[:160]!r}')
         await pg.goto(url + 'ts-police-constable/?buy=combo'); await pg.wait_for_timeout(1000)
         t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
-        if '₹199' not in t or 'Constable' not in t: errors.append(f'combo checkout wrong: {t[:200]!r}')
+        if '₹45' not in t or '₹199' in t or 'Mission Khaki' not in t: errors.append(f'old combo link should open the ₹45 PYQ Pass checkout: {t[:200]!r}')
         state['slowbuy'] = True
         await pg.click('#payDlg [data-act="paybuy"]'); await pg.wait_for_timeout(1300)
-        if state['kind'] != 'combo': errors.append(f'combo checkout sent kind {state["kind"]!r}')
+        if state['kind'] != 'pyq': errors.append(f'old combo link checkout sent kind {state["kind"]!r} (want pyq)')
         state['slowbuy'] = False
         await b.close()
     srv.shutdown()

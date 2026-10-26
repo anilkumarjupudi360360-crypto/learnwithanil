@@ -863,6 +863,10 @@ def main():
     videos = json.load(open(vpath, encoding='utf-8')) if os.path.exists(vpath) else {}
     npath = os.path.join(SRC, 'notes.json')
     notes = json.load(open(npath, encoding='utf-8')) if os.path.exists(npath) else []
+    # sealed books (tools/books_seal.py): the app downloads /books/<file> and gets its key with the PYQ Pass
+    bpath = os.path.join(SRC, 'books', 'books.json')
+    sealed = json.load(open(bpath)) if os.path.exists(bpath) else {}
+    notes = [dict(b, dl=sealed[b['id']]['pdf'], buy='') if b['id'] in sealed else b for b in notes]
     epath = os.path.join(SRC, 'exams.json')
     catalog = json.load(open(epath, encoding='utf-8')) if os.path.exists(epath) else dict(cats=[], exams=[])
     # an exam tile is live only if its questions were built
@@ -1084,13 +1088,16 @@ def main():
     sm.append('</urlset>')
     open(os.path.join(DIST, 'site', 'sitemap.xml'), 'w').write('\n'.join(sm) + '\n')
     kit_dirs = ''.join(f'Disallow: /{c["dir"]}/{MAINS_DIR}/\n' for c, _, _ in loaded if c['id'] in MAINS_EXAMS)   # the paid tool-kit PDFs
-    open(os.path.join(DIST, 'site', 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n{kit_dirs}\nSitemap: {SITE_URL}/sitemap.xml\n')
+    open(os.path.join(DIST, 'site', 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n{kit_dirs}Disallow: /books/\n\nSitemap: {SITE_URL}/sitemap.xml\n')
     open(os.path.join(DIST, 'site', 'llms.txt'), 'w', encoding='utf-8').write(llms_txt(loaded, sum(len(q) for _, _, q in loaded)))
     # extra files served as-is at the site root (search-engine verification files etc.)
     static = os.path.join(SRC, 'static')
     if os.path.isdir(static):
         for f in os.listdir(static):
             shutil.copy(os.path.join(static, f), os.path.join(DIST, 'site', f))
+    # sealed (encrypted) study books, part of the PYQ Pass (tools/books_seal.py); keys only in Anil's private sheet
+    os.makedirs(os.path.join(DIST, 'site', 'books'), exist_ok=True)
+    for bid, bk in sealed.items(): shutil.copy(os.path.join(SRC, 'books', bk['file']), os.path.join(DIST, 'site', 'books', bk['file']))
     # sealed (encrypted) paid mocks: published as-is; the keys are only in Anil's private sheet (tools/mk_seal.py)
     for exam_dir, src_dir in [('ts-police-si', 'mission-khaki')] + [(k, v['src']) for k, v in MOCK_PACKS.items() if v.get('src')]:
         mkdir_ = os.path.join(SRC, src_dir)
@@ -1105,7 +1112,7 @@ def main():
 def bahubali_promo(url):
     return f'''<a class="card notes-promo bb-promo" href="{url}">
       <div class="np-copy"><p class="eyebrow">New · APPSC Group-II Mains 2026</p><h2>Bahubali Test Series</h2>
-      <p>24 full-length mock tests for Paper I and Paper II (12 each): 150 questions per test, English and Telugu, ⅓ negative marking, explanations from official sources and PDFs. ₹250 for the whole series.</p>
+      <p>24 full-length mock tests for Paper I and Paper II (12 each): 150 questions per test, English and Telugu, ⅓ negative marking, explanations from official sources and PDFs. {INCL}.</p>
       <span class="btn btn-primary">See the tests</span></div>
       <div class="bb-mark" aria-hidden="true"><b>150</b><span>Qs · 150 min</span></div>
     </a>'''
@@ -1118,7 +1125,7 @@ def home_notes(notes, bb_url=''):
     return f'''<section class="wrap section">{bahubali_promo(bb_url) if bb_url else ''}
     <a class="card notes-promo" href="#notes">
       <div class="np-copy"><p class="eyebrow">New · Study material</p><h2>Study material 2026-27</h2>
-      <p>{esc(" and ".join(dict.fromkeys(b.get("subject_label", b["subject"]) for b in notes)))} for APPSC Mains, with the latest 2026 data and APPSC's own previous questions inside. From ₹{min(b["price"] for b in notes)}.</p>
+      <p>{esc(" and ".join(dict.fromkeys(b.get("subject_label", b["subject"]) for b in notes)))} for APPSC Mains, with the latest 2026 data and APPSC's own previous questions inside. {INCL}.</p>
       <span class="btn btn-primary">See the books</span></div>
       <div class="np-covers" aria-hidden="true">{covers}</div>
     </a>
@@ -1328,7 +1335,7 @@ def FAQ(total, npapers):
       ('Where can I get APPSC Group 2 previous year question papers with answers?',
        f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024, Mains 2025 Paper I and Paper II, and the 2019 Screening and Mains papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
-       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
+       'One plan: the ₹45 PYQ Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series (Mission Khaki, Mission CGL, Bahubali and the ones still to come) and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('Are the APPSC Group 2 previous papers available in Telugu?',
        'Yes. Almost every question has APPSC\'s own Telugu text, as printed in the question booklet. Tap తెలుగు at the top of the page to practise in Telugu.'),
       ('Is there a APPSC Group 2 mock test?',
@@ -1349,7 +1356,7 @@ def FAQ_G1(total, npapers):
       ('Where can I get APPSC Group 1 previous year question papers with answers?',
        f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam, and the 2023 and 2019 Prelims papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
-       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
+       'One plan: the ₹45 PYQ Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series (Mission Khaki, Mission CGL, Bahubali and the ones still to come) and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('Where is the APPSC Group 1 Prelims 2024 answer key?',
        'Each question on this site shows the answer from APPSC\'s final key, for Paper 1 (General Studies) and Paper 2 (General Aptitude) of the 2024 Prelims, and for the 2023 and 2019 Prelims. Open a paper to see every question with its answer.'),
       ('Is there a APPSC Group 1 mock test?',
@@ -1370,7 +1377,7 @@ def FAQ_CAPF(total, npapers):
       ('Where can I get UPSC CAPF AC previous year question papers with answers?',
        f'This page has {total} questions from {npapers} UPSC CAPF (Assistant Commandants) Paper I papers, General Ability and Intelligence (2024, 2025 and 2026), in English and Hindi as printed in the official question booklets. Every question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
-       'There are two plans. PYQ Pass, ₹45: every previous paper of every exam on the website, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, for 12 months. Mock-test packs such as Mission Khaki are sold separately. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
+       'One plan: the ₹45 PYQ Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series (Mission Khaki, Mission CGL, Bahubali and the ones still to come) and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('Where is the CAPF AC 2026 answer key?',
        'Every 2026 question on this site shows the answer from UPSC\'s provisional answer key (Series A booklet), published three days after the exam on 19 July 2026. UPSC\'s final key can differ for a few questions.'),
       ('Is there a CAPF AC mock test?',
@@ -1449,7 +1456,7 @@ def FAQ_CGL(total, npapers):
       ('Is the SSC CGL question paper available in Hindi?',
        'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, as printed in SSC\'s paper, with the explanation in Hindi. English Comprehension questions are in English only.'),
       ('Is there an SSC CGL mock test?',
-       'Yes. Every shift paper here can be taken as a timed mock test with the real time limit. Mission CGL, Learn with Anil\'s series of new full-length Tier-I and Tier-II mock tests in English and Hindi, is sold separately.'),
+       'Yes. Every shift paper here can be taken as a timed mock test with the real time limit. Mission CGL, Learn with Anil\'s series of new full-length Tier-I and Tier-II mock tests in English and Hindi, is included in the same ₹45 PYQ Pass.'),
     ]
 
 
@@ -1542,9 +1549,9 @@ def FAQ_TS(post, mains=()):
           (f'Are the {name} questions available in Telugu?',
            'Yes. Every question that the booklet printed in Telugu is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu.'),
           (f'Is there a {name} mock test?',
-           (f'Yes. {mkt}: {mkp["n"]} full-length mocks of 200 questions in the real pattern, in English and Telugu, with explanations and sectional tests, for ₹{mkp["price"]}'
+           (f'Yes. {mkt}: {mkp["n"]} full-length mocks of 200 questions in the real pattern, in English and Telugu, with explanations and sectional tests, included in the ₹{PAY["pyq_price"]} PYQ Pass with every previous paper'
             + (' (Mock 1 is free for registered students)' if any(m.get('free') for m in mkp.get('mocks', [])) else '')
-            + f'; the SI + Constable combo is ₹{COMBO["price"]}. You can also take the real TSLPRB previous papers as timed tests, or tap Create a quiz for a timed test from chosen subjects, with the PYQ Pass.')
+            + f'; the same pass opens Mission Khaki for both SI and Constable. You can also take the real TSLPRB previous papers as timed tests, or tap Create a quiz for a timed test from chosen subjects, with the PYQ Pass.')
            if mkp else
            f'Yes. Tap Create a quiz, choose subjects or topics, and pick Timed test: you get a mock test made of real TSLPRB questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.'),
           ('Do I need to register?',
@@ -1758,12 +1765,12 @@ def llms_txt(loaded, grand):
          'For a few old APPSC papers (Group 1 2019 and 2023, Group 2 2019) APPSC printed only the correct answer; there the other three options are written by Learn with Anil and labelled.',
          '- Languages: English with Telugu for APPSC, TS Police and TGPSC exams; English with Hindi for UPSC exams.',
          f'- Free: every question and its correct answer from the official key are public on the paper, subject and question pages, with the explanations of the first {SAMPLE_N} questions of each paper, and a daily question of the day.',
-         f'- PYQ Pass: ₹{PAY["pyq_price"]} once for 12 months, covering every previous paper of every exam on the site (and exams added later): every explanation, practice in the app, timed tests, sectionals and study tools.']
+         f'- PYQ Pass: ₹{PAY["pyq_price"]} once for 12 months, covering everything on the site: every previous paper of every exam (and exams added later) with every explanation, practice in the app, timed tests, sectionals and study tools, every mock test series and the study books. Nothing else is sold.']
     for c in exams:
         mk = MOCK_PACKS.get(c['id']); up = UPCOMING_PACKS.get(c['id'])
-        if mk: L.append(f'- {mk["title"]}: ₹{mk["price"]} for {mk["n"]} full-length mock tests ({live_text(mk).replace(" (included in the price)", "").rstrip(".")}, all included in the price). {SITE_URL}{c["pb"]}mock-test.html')
-        elif up: L.append(f'- {up["name"]}: ₹{up["price"]} for {up["n"]} mock tests, coming soon. {SITE_URL}{c["pb"]}mock-test.html')
-    if BB_URL: L.append(f'- Bahubali Test Series (APPSC Group 2 Mains): ₹250 for 24 full-length tests. {SITE_URL}{BB_URL}')
+        if mk: L.append(f'- {mk["title"]}: {mk["n"]} full-length mock tests ({live_text(mk).replace(" (included in the price)", "").rstrip(".")}), included in the ₹{PAY["pyq_price"]} PYQ Pass. {SITE_URL}{c["pb"]}mock-test.html')
+        elif up: L.append(f'- {up["name"]}: {up["n"]} mock tests, coming soon, included in the ₹{PAY["pyq_price"]} PYQ Pass. {SITE_URL}{c["pb"]}mock-test.html')
+    if BB_URL: L.append(f'- Bahubali Test Series (APPSC Group 2 Mains): 24 full-length tests, included in the ₹{PAY["pyq_price"]} PYQ Pass. {SITE_URL}{BB_URL}')
     L += ['- Not affiliated with APPSC, TSLPRB, UPSC, TGPSC or any recruiting body.', '', '## Exams and their previous papers']
     for c, papers, questions in loaded:
         base = c['dir'] + '/' if c['dir'] else ''
@@ -2439,6 +2446,13 @@ PAY = dict(
     exams='',   # names of every live exam, for the pay dialog ("one payment for the whole website"); set in main()
 )
 PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
+# Anil, 26 Oct 2026: "one ₹45 = everything". The ₹45 PYQ Pass opens every previous paper, every mock test series
+# (Mission Khaki SI & Constable, Mission CGL, Bahubali, and the series still to come) and the study books. Mock packs,
+# the combo, the Bahubali series and the books are no longer sold on their own (nobody had bought one).
+INCL = 'Included in the ₹45 PYQ Pass'   # price line on every mock pack, test series and book (₹45 = PAY["pyq_price"])
+EVERYTHING = ('every previous paper of every exam on the site (and exams added later), every mock test series '
+              '(Mission Khaki for TS SI and Constable, Mission CGL, the Bahubali Group-II Mains tests, and new series as they come) '
+              'and the study books (AP Economy notes, Science &amp; Technology for Mains, the Group-1 Mains tool kit)')
 TRIAL_DAYS = 0   # Anil, 23 Oct 2026: no free trial; every PYQ needs the paid PYQ Pass (was 3)
 SAMPLE_N = 10        # public paper / question pages show every correct answer (since 25 Oct 2026) and the explanations of the first SAMPLE_N questions of each paper; the other explanations need the PYQ Pass
 PUBLIC_PDFS = False  # Anil, 23 Oct 2026: no free PDF downloads (tools/pdfs.py makes nothing while this is False)
@@ -2480,7 +2494,7 @@ MOCK_PACKS = {
                          'Each mock: English 25 (in English only, as in the real exam), Arithmetic 25, Reasoning & Mental Ability 25 and General Studies 125 '
                          '(history, Telangana, science, geography, polity, economy, society and current affairs), 3 hours.',
                          'Every other question is in English and Telugu, with an explanation in both. Your score, accuracy and topic-wise analysis come after each mock.',
-                         'Mock 1 is free: register once and take it. Writing the SI exam too? Mission Khaki SI + Constable combo for ₹199.'],
+                         'Mock 1 is free: register once and take it. Writing the SI exam too? Mission Khaki (SI) is included in the same ₹45 PYQ Pass.'],
                   mocks=[dict(id=f'mk-pc-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i == 1), free=(i == 1),
                               parts=[('eng', 'English', ['eng']), ('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning', ['rea']),
                                      ('gs', 'General Studies', ['ih', 'tg', 'soc', 'sci', 'eco', 'geo', 'pol', 'cur'])]) for i in range(1, 11)]),
@@ -2559,10 +2573,10 @@ def pay_data(conf):
     mk = MOCK_PACKS.get(conf['id'])
     return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'],
                 pyq=dict(price=PAY['pyq_price'], valid=PYQ_VALID, exams=PAY['exams'], trial=TRIAL_DAYS),
-                mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=mk['price'], n=mk['n'], live=mk['live'],
+                mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=PAY['pyq_price'], n=mk['n'], live=mk['live'],
                            valid=pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:],
                            mocks=[dict(id=m['id'], name=m['name'], mins=m['mins'], live=m['live'], free=bool(m.get('free')), parts=m['parts']) for m in mk.get('mocks', [])]) if mk else None),
-                combo=(dict(price=COMBO['price'], title=COMBO['title'], what=COMBO['what'], valid='Each pack valid till its exam') if conf['id'] in COMBO['exams'] else None),
+                combo=None,   # no longer sold (26 Oct 2026): the ₹45 PYQ Pass opens both Mission Khaki packs
                 pages=dict(pyq=pb + 'pyqs.html', mock=pb + 'mock-test.html', sec=pb + 'sectional-tests.html'))
 
 
@@ -2578,23 +2592,23 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
               + (f'<span class="etile-p">{esc(mk["summary"].split(". ")[0])}. {live_text(mk)}.</span>' if 'mocks' in mk else
                  f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>')
-              + f'<span class="etile-price">₹{mk["price"]} · mock tests only{" · Mock 1 free" if any(m.get("free") for m in mk.get("mocks", [])) else ""}</span></a>')
+              + f'<span class="etile-price" data-paidtxt="✓ Included in your PYQ Pass">🔒 {INCL}{" · Mock 1 free" if any(m.get("free") for m in mk.get("mocks", [])) else ""}</span></a>')
     elif BB_URL and conf['id'] == 'appsc-group-2':
         t2 = (f'<a class="etile" href="{BB_URL}"><span class="etile-k">02 · Mock tests</span><b>Bahubali Test Series</b>'
               f'<span class="etile-p">24 full-length Group-II Mains mocks, 12 for Paper I and 12 for Paper II: 150 questions each, English and Telugu, with explanations.</span>'
-              f'<span class="etile-price">₹250 for all 24 tests</span></a>')
+              f'<span class="etile-price" data-paidtxt="✓ Included in your PYQ Pass">🔒 {INCL}</span></a>')
     elif conf['id'] in UPCOMING_PACKS:
         up = UPCOMING_PACKS[conf['id']]
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(up["name"])}</b>'
               f'<span class="etile-p">{up["n"]} full-length mocks, {up["qn"]} questions each, {up["langs"]}, with explanations. Coming soon.</span>'
-              f'<span class="etile-price">₹{up["price"]} · coming soon</span></a>')
+              f'<span class="etile-price">Coming soon · {INCL.lower()}</span></a>')
     else:
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>Mock test pack</b>'
               f'<span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span>'
               f'<span class="etile-price">Upcoming</span></a>')
     t3 = (f'<a class="etile" href="{pb}sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b>'
           f'<span class="etile-p">PYQ sectionals in {nsub} subjects{", plus sectional mocks from " + esc(mk["name"]) if mk else ""}. '
-          f'Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">{"🔒 With the PYQ Pass or " + esc(mk["name"]) if mk else "🔒 With the PYQ Pass"}</span></a>')
+          f'Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 With the PYQ Pass</span></a>')
     links = ''.join(f'<a class="etile etile-sm" href="{h}"><b>{esc(x)}</b><span class="etile-go">→</span></a>' for x, h in extra_links)
     note = ''
     return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + exam_clock_html(conf)
@@ -2606,48 +2620,41 @@ def buy_box(conf, kind):
     pb = conf['pb']
     if kind == 'pyq':
         price, name = PAY['pyq_price'], 'PYQ Pass · all exams'
-        what = (f'<b>One payment of ₹{PAY["pyq_price"]} for the whole website:</b> the previous papers of every exam on Learn with Anil '
-                f'({esc(PAY["exams"])}) and every exam added later, not just {esc(conf["seo"])}. Every answer and explanation, practice quizzes and timed tests, '
-                f'PYQ sectionals, topic-wise quizzes, Smart Quiz and your Mistakes notebook.')
+        what = (f'<b>One payment of ₹{PAY["pyq_price"]} for the whole website:</b> {EVERYTHING}, not just {esc(conf["seo"])}. '
+                f'Every answer and explanation, practice quizzes and timed tests, PYQ sectionals, topic-wise quizzes, Smart Quiz and your Mistakes notebook.')
         valid = PYQ_VALID
     elif kind == 'combo':
-        price, name = COMBO['price'], COMBO['title']
-        si, pc = MOCK_PACKS['ts-police-si'], MOCK_PACKS['ts-police-constable']
-        what = (esc(COMBO['what']) + f' ₹{si["price"] + pc["price"]} if bought separately. Mock tests only: previous papers need the PYQ Pass '
-                f'(₹{PAY["pyq_price"]}, all exams), bought separately.')
-        valid = 'each pack valid till its exam'
+        return ''   # no longer sold (26 Oct 2026): the PYQ Pass opens both Mission Khaki packs
     else:
         mk = MOCK_PACKS[conf['id']]
-        price, name = mk['price'], mk['title']
-        what = esc(mk['summary']) + f' Mock tests only: previous papers need the PYQ Pass (₹{PAY["pyq_price"]}, all exams), bought separately.'
-        valid = pass_until_text(conf)
-    status = ''
+        price, name = PAY['pyq_price'], mk['title']
+        what = (esc(mk['summary']) + f' <b>{INCL}</b>, together with every previous paper of every exam, the other mock test series and the study books. '
+                'Nothing else to buy.')
+        valid = PYQ_VALID
     return (f'<div class="buy"><div><b>{esc(name)}</b><p>{what}</p><p class="muted">₹{price} · {valid} · pay by UPI, card or net banking (Instamojo)</p></div>'
-            f'<a class="cta" href="{pb}?buy={kind}">Get it for ₹{price}</a></div>{status}')
+            f'<a class="cta" href="{pb}?buy=pyq">Get it for ₹{price}</a></div>')
 
 
 def plans_html(conf):
     """Every plan in one table, so there is no doubt about what is free and what is paid."""
     mk = MOCK_PACKS.get(conf['id'])
-    rows = [('PYQ Pass', f'₹{PAY["pyq_price"]}', f'Every previous paper of every exam on the site ({esc(PAY["exams"])}) and every exam added later: answers and explanations, practice quizzes, timed tests, PYQ sectionals and all study tools', '12 months from payment')]
+    rows = [('PYQ Pass', f'₹{PAY["pyq_price"]}', f'Everything on the site: every previous paper of every exam ({esc(PAY["exams"])}) and every exam added later, with answers and explanations, practice quizzes, timed tests, PYQ sectionals and all study tools; '
+             'every mock test series (Mission Khaki for TS SI and Constable, Mission CGL, the Bahubali Group-II Mains tests, and new series as they come); and the study books', '12 months from payment')]
     up = UPCOMING_PACKS.get(conf['id'])
     if up:
-        rows.append((esc(up['name']), f'₹{up["price"]} (coming soon)', f'{up["n"]} full-length {esc(conf["seo"])} mock tests, {up["qn"]} questions each, with explanations. Previous papers are not included (that is the PYQ Pass). Payment opens when Mock 1 is ready.', 'Till the exam'))
+        rows.append((esc(up['name']), 'Included (coming soon)', f'{up["n"]} full-length {esc(conf["seo"])} mock tests, {up["qn"]} questions each, with explanations. They open for PYQ Pass holders as each mock is released.', 'With the PYQ Pass'))
     if mk:
         free = [m['name'] for m in mk.get('mocks', []) if m.get('free')]
-        rows.append((esc(mk['name']), f'₹{mk["price"]}', f'{mk["n"]} full-length {esc(conf["seo"])} mock tests and their sectional tests, with explanations, and the study tools for your mock results. Previous papers are not included (that is the PYQ Pass).'
-                     + (f' {" and ".join(free)} {"is" if len(free) == 1 else "are"} free for registered students.' if free else ''),
-                     esc(pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:])))
-    if conf['id'] in COMBO['exams']:
-        rows.append((esc(COMBO['name']), f'₹{COMBO["price"]}', 'Mission Khaki (SI) and Mission Khaki – Constable together: both mock-test packs and their sectional tests. Previous papers are not included (that is the PYQ Pass).',
-                     'Each pack till its exam'))
+        rows.append((esc(mk['name']), 'Included', f'{mk["n"]} full-length {esc(conf["seo"])} mock tests and their sectional tests, with explanations.'
+                     + (f' {" and ".join(free)} {"is" if len(free) == 1 else "are"} free for every registered student.' if free else ''),
+                     'With the PYQ Pass'))
     return ('<table class="facts plans"><tr><th style="width:17%">Plan</th><th style="width:17%">Price</th><th>What you get</th><th style="width:19%">Valid</th></tr>'
             + ''.join(f'<tr><td><b>{a}</b></td><td>{b}</td><td>{c}</td><td>{d}</td></tr>' for a, b, c, d in rows) + '</table>'
             f'<p>Open to everyone without a plan: the question of the day, the correct answer to every question on the paper pages, and the explanations of the first {SAMPLE_N} questions of each paper. '
             'Plans are linked to the phone number and email you register with, on up to 3 devices; pay with the same details.</p>')
 
 
-TOOLS_NOTE = 'Included with every plan: the PYQ Pass and mock-test packs such as Mission Khaki.'
+TOOLS_NOTE = 'Included in the ₹45 PYQ Pass, with every previous paper and every mock test series.'
 
 
 FEATURES = {   # how the practice tools work (shown on the PYQs and mock-test pages; the app pages are /<exam>/<view>/)
@@ -2814,12 +2821,11 @@ def sectional_page(conf, papers, questions):
                        for i in range(mk['n'])) if mk else '')
     mock_part = (f'<h2>{esc(mk["name"])} sectional mocks</h2><ol class="qs">{secrows}</ol><p>Each {esc(mk["name"])} mock\'s sections — '
                  + ', '.join(esc(x) for x in mk['sections']) + ' — open as separate timed tests as the mocks are released '
-                 f'({live_text(mk)}). They come with the {esc(mk["name"])} pack.</p>' + buy_box(conf, 'mock')
-                 + (buy_box(conf, 'combo') if conf['id'] in COMBO['exams'] else '')
+                 f'({live_text(mk)}). {INCL}.</p>'
                  if mk else (f'<h2>Sectional mocks</h2><p>Sectional mocks will come with the {esc(UPCOMING_PACKS[conf["id"]]["name"])} '
-                             f'(₹{UPCOMING_PACKS[conf["id"]]["price"]}, coming soon).</p>' if conf['id'] in UPCOMING_PACKS else
-                             '<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack. Its price will be announced soon.</p>'))
-    body = (f'<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. 🔒 Opens only with the ₹{PAY["pyq_price"]} PYQ Pass.</p>'
+                             f'(coming soon, {INCL.lower()}).</p>' if conf['id'] in UPCOMING_PACKS else
+                             f'<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack, coming soon and {INCL.lower()}.</p>'))
+    body = (f'<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. 🔒 Opens with the ₹{PAY["pyq_price"]} PYQ Pass, which also opens every mock test series and the study books.</p>'
             '<ol class="qs">' + rows + '</ol>' + buy_box(conf, 'pyq') + mock_part + '<h2>Plans</h2>' + plans_html(conf))
     lede = esc(f'Practise {seo} one section at a time: timed tests from real previous questions in every subject'
                + (f', and sectional mocks from {mk["name"]}.' if mk else '.'))
@@ -2848,9 +2854,9 @@ def mock_page(conf, papers, questions):
     mcq = [p for p in sorted(papers, key=lambda p: (-p['year'], p['id'])) if p['fmt'] == 'mcq' and not p.get('own')]
     l2 = conf['l2']
     mk = MOCK_PACKS.get(conf['id'])
-    title = (f'{seo} Mock Test – {mk["name"]} Test Series (₹{mk["price"]}) & Previous Papers with Timer | Learn with Anil' if mk else
+    title = (f'{seo} Mock Test – {mk["name"]} Test Series & Previous Papers with Timer | Learn with Anil' if mk else
              f'{seo} Mock Test – Full Previous Papers with Timer, English & {l2["name"]} | Learn with Anil')
-    desc = ((f'{mk["title"]}: {mk["summary"]} ₹{mk["price"]}. ' if mk else f'{seo} mock tests online: ')
+    desc = ((f'{mk["title"]}: {mk["summary"]} {INCL}. ' if mk else f'{seo} mock tests online: ')
             + f'take the real {", ".join(paper_kw(conf, p).replace(seo + " ", "") for p in mcq)} question paper{"s" if len(mcq) > 1 else ""} as timed tests, '
             f'in English and {l2["name"]}, with your score, official answers and an explanation for every question.')
     rows = ''.join(
@@ -2868,7 +2874,7 @@ def mock_page(conf, papers, questions):
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
                 + f'<table class="facts"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
                 + '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in mk['about']) + '</ul>'
-                + (buy_box(conf, 'combo') if conf['id'] in COMBO['exams'] else ''))
+)
     elif mk:
         mid = lambda i: f'{mk["id"]}-{i + 1}'
         sched = ''.join((f'<tr><td>Mock {i + 1}</td><td>Available now</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">Start</a></td>'
@@ -2881,26 +2887,26 @@ def mock_page(conf, papers, questions):
                 '<ul><li>Fresh questions written for this series in the TS SI Prelims pattern, not copied from coaching material: Arithmetic &amp; Reasoning (100) and General Studies (100), in English and Telugu.</li>'
                 '<li>Every question has an explanation in English and Telugu. Your score, accuracy and topic-wise analysis come after each mock.</li>'
                 '<li>Each mock\'s sections can also be taken on their own as sectional tests.</li></ul>'
-                + (buy_box(conf, 'combo') if conf['id'] in COMBO['exams'] else ''))
+)
     elif BB_URL and conf['id'] == 'appsc-group-2':
         pack = (f'<h2>Bahubali Test Series</h2><p>24 full-length APPSC Group-II Mains mock tests, 12 for Paper I and 12 for Paper II: 150 questions each, '
-                f'English and Telugu, with explanations and PDFs. ₹250 for the whole series.</p><p><a class="cta" href="{BB_URL}">See the Bahubali tests</a></p>')
+                f'English and Telugu, with explanations and PDFs. {INCL}, with every previous paper and the study books.</p><p><a class="cta" href="{BB_URL}">See the Bahubali tests</a></p>')
     elif conf['id'] in UPCOMING_PACKS:
         up = UPCOMING_PACKS[conf['id']]
-        pack = (f'<h2>{esc(up["name"])} · ₹{up["price"]} · coming soon</h2>'
-                f'<div class="buy"><div><b>{esc(up["name"])}</b><p>{esc(up["summary"])} Mock tests only: previous papers need the PYQ Pass '
-                f'(₹{PAY["pyq_price"]}, all exams), bought separately.</p><p class="muted">₹{up["price"]} · coming soon: payment opens when Mock 1 is ready</p></div>'
+        pack = (f'<h2>{esc(up["name"])} · coming soon</h2>'
+                f'<div class="buy"><div><b>{esc(up["name"])}</b><p>{esc(up["summary"])} <b>{INCL}</b>: nothing extra to pay. '
+                f'Each mock opens for PYQ Pass holders as soon as it is ready.</p><p class="muted">Coming soon · {INCL.lower()}</p></div>'
                 f'<span class="cta alt" aria-disabled="true">Coming soon</span></div>'
                 '<p>Until then, take the real previous papers below as timed mocks (with the PYQ Pass).</p>')
     else:
-        pack = '<h2>Mock test pack</h2><p>Full-length mock tests for this exam are being prepared; the price will be announced soon. Until then, take the real previous papers below as timed mocks.</p>'
+        pack = f'<h2>Mock test pack</h2><p>Full-length mock tests for this exam are being prepared; they will be {INCL.lower()}. Until then, take the real previous papers below as timed mocks.</p>'
     body = (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
             + '<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>'
             + '<h2>How the mock test works</h2><ul>'
             f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>'
             '<li>The timer gives you one minute per question. You can move between questions and change answers until you submit.</li>'
             '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question. Wrong answers go to your Mistakes notebook.</li>'
-            f'<li>Previous papers as tests need the PYQ Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months){"; " + esc(mk["name"]) + " is separate" if mk else ""}. Register once with your phone number and use the same number when you pay.</li></ul>'
+            f'<li>Previous papers as tests need the PYQ Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months){"; the same pass opens " + esc(mk["name"]) if mk else ""}. Register once with your phone number and use the same number when you pay.</li></ul>'
             + f'<h2>Study tools after every test</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
             + '<h2>Plans</h2>' + plans_html(conf)
             + f'<p><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a><a class="cta alt" href="{pb}pyqs.html">All {esc(seo)} PYQs</a></p>')
