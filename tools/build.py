@@ -1852,7 +1852,8 @@ def funders_page(loaded):
     pct = min(100, nq * 100 / goal)
     wa = f'https://wa.me/{WHATSAPP}?text=' + quote('Hi Learn_with_anil Team, I am interested in funding Learn with Anil.')
     mail = f'mailto:{CONTACT_EMAIL}?subject=' + quote('Funding Learn with Anil')
-    body = f"""<p lang="te">నా లక్ష్యం: వివిధ ప్రభుత్వ పరీక్షల 1 లక్ష పాత ప్రశ్నలను (PYQs) సమాధానాలతో ఒకే చోట, కేవలం ₹45కే అందించడం. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఒక్కడినే ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. దీనికి నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది. సహాయం చేయాలనుకునే వారు నన్ను సంప్రదించండి.</p>
+    body = f"""<p><img src="/og-funders.jpg" alt="Learn with Anil: 1 lakh PYQs under one roof, for ₹45. Fund this project." width="1200" height="630" style="display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line)"></p>
+<p lang="te">నా లక్ష్యం: వివిధ ప్రభుత్వ పరీక్షల 1 లక్ష పాత ప్రశ్నలను (PYQs) సమాధానాలతో ఒకే చోట, కేవలం ₹45కే అందించడం. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఒక్కడినే ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. దీనికి నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది. సహాయం చేయాలనుకునే వారు నన్ను సంప్రదించండి.</p>
 <p><a class="cta" href="{wa}" target="_blank" rel="noopener">WhatsApp me</a><a class="cta" href="{mail}">Email me</a></p>
 <h2>My goal: 1 lakh PYQs under one roof, for ₹45</h2>
 <p>The goal of Learn with Anil is to bring <b>1 lakh (1,00,000) previous-year questions from various government exams under one roof</b>, each with its answer and a short explanation, and to open all of them with one ₹45 PYQ Pass.</p>

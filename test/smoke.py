@@ -261,6 +261,7 @@ async def main():
         if 'href="/funders.html"' not in open(os.path.join(SITE, 'index.html'), encoding='utf-8').read(): errors.append('home page has no Fund this project link')
         _fp = open(os.path.join(SITE, 'funders.html'), encoding='utf-8').read()
         if 'wa.me/' not in _fp or 'mailto:' not in _fp: errors.append('funders.html: no WhatsApp/email contact')
+        if '<img src="/og-funders.jpg"' not in _fp: errors.append('funders.html: poster not shown on the page')
         if '/og-funders.jpg"' not in _fp or not os.path.exists(os.path.join(SITE, 'og-funders.jpg')): errors.append('funders.html: no og:image')
         hp = await b.new_page(viewport={'width': 390, 'height': 900})
         async def griev(route):
