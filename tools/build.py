@@ -1858,7 +1858,12 @@ Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(' ', '')}">{CONTACT_PHONE}
                        'should be able to practise real exam questions with answers they can trust. <b>I am the only person developing this project, and I need help from funders.</b> '
                        'Your support in turn helps me help the students. If you would like to support it, please get in touch.',
                        body, [('Home', SITE_URL + '/'), ('Fund Learn with Anil', can)], None, ename='every exam', at_root=True
-                       ).replace('<p class="passon" hidden></p>', '', 1)   # the "your PYQ Pass is active" note means nothing on this page
+                       ).replace('<p class="passon" hidden></p>', '', 1                   # the "your PYQ Pass is active" note means nothing on this page
+                       ).replace(f'<meta property="og:url" content="{esc(can)}">',            # link preview for WhatsApp / LinkedIn / X shares
+                                 f'<meta property="og:url" content="{esc(can)}"><meta property="og:image" content="{SITE_URL}/og-funders.jpg">'
+                                 '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+                                 '<meta property="og:image:alt" content="Fund student-friendly learning: Learn with Anil">'
+                                 '<meta name="twitter:card" content="summary_large_image">', 1)
 
 
 LANDINGS = {
