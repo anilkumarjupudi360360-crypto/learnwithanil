@@ -1063,6 +1063,8 @@ def main():
 
     open(os.path.join(DIST, 'site', 'help.html'), 'w', encoding='utf-8').write(help_page(loaded))
     all_pages = {**all_pages, 'help.html': None}
+    open(os.path.join(DIST, 'site', 'funders.html'), 'w', encoding='utf-8').write(funders_page(loaded))
+    all_pages = {**all_pages, 'funders.html': None}
     open(os.path.join(DIST, 'site', '404.html'), 'w', encoding='utf-8').write(not_found_page())
 
     # sitemap + robots (site only)
@@ -1631,7 +1633,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){{
 document.querySelectorAll(".lk").forEach(function(e){{e.textContent="✓ ";e.className="lk ok"}});
 document.querySelectorAll("[data-paidtxt]").forEach(function(e){{e.textContent=e.getAttribute("data-paidtxt")}});
@@ -1750,6 +1752,7 @@ def llms_txt(loaded, grand):
     for rel, N in NOTIFS.items():
         if any(c['id'] == N['exam'] for c in exams): L.append(f'- [{re.sub("<[^>]+>", "", N["h1"])}]({SITE_URL}/{rel})')
     L += ['', '## About', f'- [About Jupudi Anil Kumar]({SITE_URL}/appsc-group-2/about/): civil-services educator, 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants.',
+          f'- [Fund Learn with Anil]({SITE_URL}/funders.html): a one-person project built to be student-friendly and to democratise learning; Anil needs help from funders, which in turn helps him help the students. Individuals and organisations who want to support it can get in touch.',
           f'- Instagram: https://www.instagram.com/{INSTAGRAM}/ · Telegram: https://t.me/learn_with_anil06 · YouTube: https://www.youtube.com/@learn_with_anil06', f'- Sitemap: {SITE_URL}/sitemap.xml', '']
     return '\n'.join(L)
 
@@ -1811,6 +1814,50 @@ if(r&&r.ok){{f.reset();m.textContent='Received. Your ticket number is '+r.ticket
     return static_page(0, 'Help & Grievance Redressal Cell | Learn with Anil', 'Help with payments, the PYQ Pass, mock tests and answers on learnwithanil.in: quick answers, a complaint form with a ticket number, and the grievance officer\'s contact details.',
                        can, 'Help & Grievance Redressal Cell', esc('Questions about a payment, your PYQ Pass, a mock test or an answer? Find a quick answer below, or send us a complaint.'),
                        body, [('Home', SITE_URL + '/'), ('Help & grievances', can)], None, ename='every exam', at_root=True)
+
+
+def funders_page(loaded):
+    """/funders.html: Fund Learn with Anil (Anil, 26 Oct 2026): the site is built to be student-friendly and to democratise learning;
+    the project needs funding and interested people can get in touch. No money is taken through this page."""
+    from urllib.parse import quote
+    can = SITE_URL + '/funders.html'
+    nq = sum(len(qs) for _, _, qs in loaded)
+    wa = f'https://wa.me/{WHATSAPP}?text=' + quote('Hi Learn_with_anil Team, I am interested in funding Learn with Anil.')
+    mail = f'mailto:{CONTACT_EMAIL}?subject=' + quote('Funding Learn with Anil')
+    body = f"""<p lang="te">విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఒక్కడినే ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. దీనికి నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది. సహాయం చేయాలనుకునే వారు నన్ను సంప్రదించండి.</p>
+<p><a class="cta" href="{wa}" target="_blank" rel="noopener">WhatsApp us</a><a class="cta" href="{mail}">Email us</a></p>
+<h2>What is already built</h2>
+<ul>
+<li><b>{nq:,} previous-year questions from {len(loaded)} government exams</b>, each with the answer from the official key and a short explanation.</li>
+<li>In English, తెలుగు and हिंदी, on any phone.</li>
+<li>Practice by topic, timed mock tests and a mistakes notebook, so a student can prepare without a coaching fee.</li>
+<li>Every question and its correct answer can be read free, with the explanations of the first 10 questions of every paper. One ₹45 PYQ Pass opens every explanation and all the online practice and tests on the site for 12 months.</li>
+</ul>
+<h2>Why the project needs funding</h2>
+<p>I am the only person developing Learn with Anil. Every paper has to be found, typed from the official question booklet, checked against the official answer key, explained and translated, and then kept up to date when keys change, and the site itself has to be built and kept running. I keep the price at ₹45 so that every aspirant can afford it, which means fees alone cannot pay for this work.</p>
+<h2>What your support will help me do</h2>
+<ul>
+<li>Add the remaining government exams (state PSCs, SSC, banks, railways and defence) so that every aspirant finds their exam here.</li>
+<li>Explain and translate more papers in English, Telugu and Hindi.</li>
+<li>Keep the price within reach of every student.</li>
+</ul>
+<h2>Who can fund</h2>
+<p>Individuals, alumni, teachers, institutions, companies and foundations who believe that good exam preparation should not depend on how much a student can pay. Support can take the form of a grant, a sponsorship or a partnership; I will work out the details with you.</p>
+<h2>Get in touch</h2>
+<p><b>{esc(GRIEVANCE_OFFICER)}</b>, Founder, Learn with Anil (learnwithanil.in)<br>
+Email: <a href="{mail}">{CONTACT_EMAIL}</a><br>
+Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(' ', '')}">{CONTACT_PHONE}</a> (10 am – 7 pm, Monday to Saturday)</p>
+<p class="note">Please do not send money through this page or to anyone claiming to collect it for me. I agree every contribution directly with you, in writing.</p>
+<h2>About me</h2>
+<p>I am Jupudi Anil Kumar, a civil-services educator with 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants. Learn with Anil is my independent initiative. <a href="/appsc-group-2/about/">Read more about me</a>.</p>"""
+    return static_page(0, 'Fund Learn with Anil – Help Democratise Exam Preparation | Learn with Anil',
+                       'Learn with Anil is a one-person project building a student-friendly, affordable way to practise previous year questions for every government exam, in English, Telugu and Hindi. '
+                       'It needs help from funders: individuals and organisations who want to support it can get in touch.',
+                       can, 'Fund Learn with Anil',
+                       'I am building this website to be student-friendly and to democratise learning: every aspirant, wherever they live and whatever they can pay, '
+                       'should be able to practise real exam questions with answers they can trust. <b>I am the only person developing this project, and I need help from funders.</b> '
+                       'Your support in turn helps me help the students. If you would like to support it, please get in touch.',
+                       body, [('Home', SITE_URL + '/'), ('Fund Learn with Anil', can)], None, ename='every exam', at_root=True)
 
 
 LANDINGS = {

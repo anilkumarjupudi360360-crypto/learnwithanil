@@ -655,7 +655,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 
 <footer class="foot">
   <div class="wrap">
-    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Questions and answers are from the official final keys. Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. <a href="/appsc-group-2/notes/">Study material</a> · <a href="appsc-pyqs.html">APPSC PYQs</a> · <a href="ts-police-pyqs.html">TS Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a></span>
+    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Questions and answers are from the official final keys. Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. <a href="/appsc-group-2/notes/">Study material</a> · <a href="appsc-pyqs.html">APPSC PYQs</a> · <a href="ts-police-pyqs.html">TS Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></span>
     <span id="resetBox"><button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button></span>
   </div>
 </footer>
@@ -1185,6 +1185,11 @@ const HUBT = {
   w6p:{en:'Register once, free, with no password to remember. Your practice, mistakes and bookmarks are saved on your own phone.',
        hi:'केवल एक बार निःशुल्क पंजीकरण, कोई पासवर्ड याद रखने की ज़रूरत नहीं। आपका अभ्यास, गलतियाँ और बुकमार्क आपके अपने फ़ोन में सहेजे जाते हैं।',
        te:'ఒక్కసారి ఉచితంగా రిజిస్టర్ అవ్వండి, పాస్‌వర్డ్ గుర్తుంచుకోవాల్సిన పని లేదు. మీ ప్రాక్టీస్, తప్పులు, బుక్‌మార్క్‌లు మీ ఫోన్‌లోనే సేవ్ అవుతాయి.'},
+  fundT:{en:'Support Learn with Anil', hi:'Learn with Anil का साथ दें', te:'Learn with Anil‌కు తోడ్పడండి'},
+  fundP:{en:'I am building this site alone, to be student-friendly and to democratise learning. I need help from funders: your support in turn helps me help the students.',
+         hi:'मैं यह साइट अकेले बना रहा हूँ, ताकि यह विद्यार्थियों के अनुकूल हो और शिक्षा सबके लिए सुलभ हो। मुझे फंड देने वालों की मदद चाहिए: आपका सहयोग मुझे विद्यार्थियों की मदद करने में सहायता करता है।',
+         te:'విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఒక్కడినే ఈ సైట్‌ను నిర్మిస్తున్నాను. నాకు నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.'},
+  fundB:{en:'Fund this project', hi:'इस परियोजना को सहयोग दें', te:'ఈ ప్రాజెక్ట్‌కు నిధులు ఇవ్వండి'},
 };
 const HT = (k, L)=> { const t = HUBT[k]; return t ? (t[L||hubLang()] || t.en) : ""; };
 function setLangAttr(el, L){ if(L==="en") el.removeAttribute("lang"); else el.setAttribute("lang", L); }

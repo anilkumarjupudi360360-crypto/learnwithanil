@@ -257,6 +257,10 @@ async def main():
         # help & grievance page: exists, in the sitemap, linked from footers, form posts a grievance and shows the ticket
         if '/help.html</loc>' not in open(os.path.join(SITE, 'sitemap.xml')).read(): errors.append('help.html not in sitemap')
         if 'href="/help.html"' not in open(os.path.join(SITE, 'appsc-group-1', 'index.html'), encoding='utf-8').read(): errors.append('app footer has no Help & grievances link')
+        if '/funders.html</loc>' not in open(os.path.join(SITE, 'sitemap.xml')).read(): errors.append('funders.html not in sitemap')
+        if 'href="/funders.html"' not in open(os.path.join(SITE, 'index.html'), encoding='utf-8').read(): errors.append('home page has no Fund this project link')
+        _fp = open(os.path.join(SITE, 'funders.html'), encoding='utf-8').read()
+        if 'wa.me/' not in _fp or 'mailto:' not in _fp: errors.append('funders.html: no WhatsApp/email contact')
         hp = await b.new_page(viewport={'width': 390, 'height': 900})
         async def griev(route):
             import json as _j
