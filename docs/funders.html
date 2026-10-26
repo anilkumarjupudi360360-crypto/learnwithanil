@@ -6,64 +6,575 @@
 <title>Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45</title>
 <meta name="description" content="Learn with Anil is a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, with answers and explanations, for ₹45. Individuals and organisations who would like to help fund it can get in touch.">
 <link rel="canonical" href="https://learnwithanil.in/funders.html">
-<meta property="og:type" content="article"><meta property="og:title" content="Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45"><meta property="og:description" content="Learn with Anil is a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, with answers and explanations, for ₹45. Individuals and organisations who would like to help fund it can get in touch."><meta property="og:url" content="https://learnwithanil.in/funders.html"><meta property="og:image" content="https://learnwithanil.in/og-funders.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Learn with Anil: 1 lakh PYQs under one roof for ₹45"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Learn with Anil"><meta property="og:title" content="Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45"><meta property="og:description" content="Learn with Anil is a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, with answers and explanations, for ₹45. Individuals and organisations who would like to help fund it can get in touch."><meta property="og:url" content="https://learnwithanil.in/funders.html"><meta property="og:image" content="https://learnwithanil.in/og-funders.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Learn with Anil: 1 lakh PYQs under one roof, for ₹45"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap">
 <style>
+/* Layout: sticky app bar + one 1120px column; views swap inside <main>. Ink-blue band for the hero; OMR answer-bubbles are the recurring motif. */
+:root{
+  --bg:#F3F6FB; --surface:#FFFFFF; --surface-2:#EAF0F9; --ink:#0D1830; --muted:#55627C; --line:#D6DFEC;
+  --accent:#1846C7; --accent-ink:#FFFFFF; --accent-soft:#E2EAFC; --accent-text:#1440B8;
+  --band:#0C2266; --band-ink:#EEF3FF; --band-muted:#AFC1EE; --band-line:rgba(255,255,255,.16);
+  --good:#12804A; --good-soft:#DDF3E7; --bad:#C2352C; --bad-soft:#FBE3E0; --warn:#9A620B; --warn-soft:#FBEFD6; --none-soft:#EDF1F7;
+  --shadow:0 1px 2px rgba(13,24,48,.06),0 8px 22px rgba(13,24,48,.06);
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --r:12px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0A1020; --surface:#111A2E; --surface-2:#17223A; --ink:#E5ECF8; --muted:#9AA8C3; --line:#26334F;
+  --accent:#6F95FF; --accent-ink:#06102A; --accent-soft:#1A2A52; --accent-text:#9DB7FF;
+  --band:#0F1F4E; --band-ink:#EEF3FF; --band-muted:#A3B6E8; --band-line:rgba(255,255,255,.13);
+  --good:#41C080; --good-soft:#123426; --bad:#F2766D; --bad-soft:#3B1A1A; --warn:#E6A846; --warn-soft:#3A2C12; --none-soft:#16203A;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 22px rgba(0,0,0,.25); color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0A1020; --surface:#111A2E; --surface-2:#17223A; --ink:#E5ECF8; --muted:#9AA8C3; --line:#26334F;
+  --accent:#6F95FF; --accent-ink:#06102A; --accent-soft:#1A2A52; --accent-text:#9DB7FF;
+  --band:#0F1F4E; --band-ink:#EEF3FF; --band-muted:#A3B6E8; --band-line:rgba(255,255,255,.13);
+  --good:#41C080; --good-soft:#123426; --bad:#F2766D; --bad-soft:#3B1A1A; --warn:#E6A846; --warn-soft:#3A2C12; --none-soft:#16203A;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 22px rgba(0,0,0,.25); color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{margin:0;color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+button,input,select{font:inherit;color:inherit}
+a{color:var(--accent-text)}
+img{max-width:100%}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+[hidden]{display:none!important}
+
+/* App bar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:18px;min-height:62px;flex-wrap:wrap;max-width:1320px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.brand-mark{width:36px;height:36px;border-radius:50%;border:2.5px solid var(--accent);display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:14px;color:var(--accent-text);position:relative;letter-spacing:-.02em}
+.brand-mark::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--accent);opacity:.14}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-text b{font-family:var(--f-display);font-size:18px;font-weight:800;letter-spacing:-.01em}
+.brand-text span{font-family:var(--f-mono);font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.nav{display:flex;gap:2px;overflow-x:auto;flex:1;min-width:0;scrollbar-width:none;justify-content:flex-end;justify-content:safe flex-end}
+.nav::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px;padding:8px 9px;border-radius:8px;display:flex;align-items:center;gap:6px}
+.nav a:hover{color:var(--ink);background:var(--surface-2)}
+.nav a[aria-current="page"]{color:var(--accent-text);background:var(--accent-soft)}
+.lang{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;padding:2px;flex-shrink:0;background:var(--surface)}
+.lang button{border:0;background:transparent;color:var(--muted);font:inherit;font-weight:700;font-size:13.5px;padding:5px 11px;border-radius:999px;cursor:pointer;line-height:1.2}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.lang button[lang="te"]{font-family:"Noto Sans Telugu",var(--f-body)}
+.lang button[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body)}
+.lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lang button.na{opacity:.45}
+@media (max-width:420px){.lang button{padding:5px 8px;font-size:13px}}
+[lang="te"]{font-family:"Noto Sans Telugu",var(--f-body);line-height:1.8}
+[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body);line-height:1.75}
+.lang button[lang="te"],.lang button[lang="hi"]{line-height:1.2}
+.pill.en-only{background:var(--none-soft);color:var(--muted)}
+.nav .count{font-family:var(--f-mono);font-size:11px;background:var(--bad);color:#fff;border-radius:999px;padding:0 6px;line-height:18px}
+@media (max-width:1360px){
+  .topbar .wrap{gap:4px;padding-block:8px 0}
+  .nav{flex-basis:100%;justify-content:flex-start;padding-bottom:6px;order:3}
+  .lang{order:2;margin-left:auto}
+}
+
+main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
+.view{display:flex;flex-direction:column;gap:28px}
+.page-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px}
+.page-head h1{font-size:clamp(26px,4vw,34px);font-weight:800}
+.page-head p{color:var(--muted);max-width:62ch;margin-top:6px}
+
+/* Buttons & controls */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:10px;padding:10px 18px;font-weight:700;font-size:15px;border:1.5px solid transparent;cursor:pointer;text-decoration:none;line-height:1.2;transition:background .15s,border-color .15s,transform .1s}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{filter:brightness(1.08)}
+.btn-secondary{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.btn-secondary:hover{border-color:var(--accent)}
+.btn-ghost{background:transparent;color:var(--accent-text);padding-inline:10px}
+.btn-ghost:hover{background:var(--accent-soft)}
+.btn-good{background:var(--good);color:#fff}
+.btn-bad{background:var(--bad);color:#fff}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none}
+.btn-sm{padding:7px 12px;font-size:14px;border-radius:8px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:600;cursor:pointer;color:var(--ink);text-decoration:none}
+.chip .n{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-weight:500}
+.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-text)}
+.chip[aria-pressed="true"] .n{color:var(--accent-text)}
+.chip[disabled]{opacity:.45;cursor:not-allowed}
+.seg{display:inline-flex;background:var(--surface-2);border-radius:11px;padding:4px;gap:4px;flex-wrap:wrap}
+.seg button{border:0;background:transparent;border-radius:8px;padding:8px 14px;font-weight:700;font-size:14px;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--accent-text);box-shadow:var(--shadow)}
+.seg button[disabled]{opacity:.45;cursor:not-allowed}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.pad{padding:20px}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;padding:2px 9px;border-radius:999px;background:var(--surface-2);color:var(--muted);white-space:nowrap}
+.pill{max-width:100%}@media (max-width:560px){.pill{white-space:normal;text-align:left}}   /* long exam names (e.g. HMWSSB) wrap on phones instead of widening the page */
+.pill.blue{background:var(--accent-soft);color:var(--accent-text)}
+.pill.good{background:var(--good-soft);color:var(--good)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+
+/* Hero */
+.hero{background:var(--band);color:var(--band-ink);position:relative;overflow:hidden;margin-top:-28px}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(circle,transparent 0 6px,var(--band-line) 6.5px 8px,transparent 8.5px);
+  background-size:28px 28px;background-position:right 12px top 14px;
+  -webkit-mask-image:linear-gradient(90deg,transparent 40%,#000 80%);mask-image:linear-gradient(90deg,transparent 40%,#000 80%)}
+.hero .wrap{position:relative;z-index:1;padding-block:44px 40px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:36px;align-items:center}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:24px}}
+.hero-copy{display:flex;flex-direction:column;gap:18px;min-width:0}
+.hero h1{font-size:clamp(30px,5vw,50px);font-weight:800;max-width:17ch;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--band-muted)}
+.hero p{max-width:56ch;color:var(--band-muted);font-size:18px}
+.hero .btn-primary{background:var(--band-ink);color:var(--band)}
+.hero .btn-secondary{background:transparent;color:var(--band-ink);border-color:var(--band-line)}
+.hero .btn-secondary:hover{border-color:var(--band-ink)}
+.hero .eyebrow{color:var(--band-muted)}
+.mentor{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px}
+.mentor .ph{width:210px;height:210px;max-width:100%;border-radius:50%;padding:6px;border:2.5px solid var(--band-line);position:relative}
+.mentor .ph img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;background:var(--band)}
+.mentor .ph::after{content:"";position:absolute;right:10px;bottom:14px;width:34px;height:34px;border-radius:50%;background:var(--band-ink);box-shadow:0 0 0 5px var(--band)}
+.mentor b{font-family:var(--f-display);font-size:20px;font-weight:800;color:var(--band-ink)}
+.mentor span{color:var(--band-muted);font-size:14.5px;line-height:1.4}
+@media (max-width:860px){.mentor{flex-direction:row;text-align:left}.mentor .ph{width:96px;height:96px;flex-shrink:0;padding:4px}.mentor .ph::after{display:none}}
+
+.figures{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+@media (max-width:700px){.figures{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{background:var(--surface);padding:16px 18px}
+.figure .v{font-family:var(--f-display);font-weight:800;font-size:30px;font-variant-numeric:tabular-nums;line-height:1.1}
+.figure .k{font-size:14px;color:var(--muted)}
+.hub-figs{padding-top:24px}
+.hero h1[lang]{line-height:1.3}
+.hero p.hero-l2{font-size:16px;margin-top:-4px}
+.hero p.hero-news{font-size:15px;margin-top:-8px}.hero p.hero-news:empty{display:none}.hero p.hero-news a{color:inherit;font-weight:700}
+.hero p.hero-aka{font-size:15px;color:var(--band-muted);opacity:.85;margin-top:-4px}.hero p.hero-aka:empty{display:none}
+.why h4[lang="te"],.why-en summary[lang="te"]{font-family:"Noto Sans Telugu",var(--f-body)}.why h4[lang="hi"],.why-en summary[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body)}
+.why-en{margin-top:6px}.why-en summary{cursor:pointer;font-size:13.5px;font-weight:700;color:var(--accent-text)}.why-en p{margin:6px 0 0}
+#home-static .hero h1{max-width:20ch}
+#hub-static .hero h1{max-width:21ch}
+div.feature:hover{border-color:var(--line)}
+.section{display:flex;flex-direction:column;gap:14px}
+.section-title{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.section-title h2{font-size:22px;font-weight:800}
+
+/* Paper cards */
+.papers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:980px){.papers{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.papers{grid-template-columns:1fr}}
+.paper{display:flex;flex-direction:column;gap:12px;padding:18px 20px}
+.paper .yr{font-family:var(--f-mono);font-size:13px;color:var(--accent-text);font-weight:600}
+.paper h3{font-size:19px;font-weight:800}
 .nw{white-space:nowrap}
-[lang="te"]{font-family:"Noto Sans Telugu",sans-serif;line-height:1.8}
-[lang="hi"]{font-family:"Noto Sans Devanagari",sans-serif;line-height:1.75}
-.q .te{border-left:3px solid var(--line);padding-left:12px;margin:8px 0 4px}
-:root{--bg:#F3F6FB;--surface:#fff;--ink:#0D1830;--muted:#55627C;--line:#D6DFEC;--accent:#1846C7;--accent-soft:#E2EAFC;--accent-text:#1440B8;--band:#0C2266;--band-ink:#EEF3FF;--good:#12804A;--good-soft:#DDF3E7}
-@media (prefers-color-scheme:dark){:root{--bg:#0A1020;--surface:#111A2E;--ink:#E5ECF8;--muted:#9AA8C3;--line:#26334F;--accent:#6F95FF;--accent-soft:#1A2A52;--accent-text:#9DB7FF;--band:#0F1F4E;--band-ink:#EEF3FF;--good:#41C080;--good-soft:#123426;color-scheme:dark}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-a{color:var(--accent-text)}.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-header{background:var(--band);color:var(--band-ink)}header .wrap{padding-block:14px;display:flex;overflow-wrap:anywhere;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
-header a{color:var(--band-ink);text-decoration:none;font-weight:700}h1,h2{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;line-height:1.2;text-wrap:balance}
-h1{font-size:clamp(26px,4vw,36px);margin:28px 0 8px}h2{font-size:22px;margin:32px 0 10px}.lede{color:var(--muted);max-width:65ch}
-.cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;margin:8px 8px 0 0}
-.cta.alt{background:transparent;color:var(--accent-text);border:1.5px solid var(--line)}
-ol.qs{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
-.q{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
-.q .meta{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);margin-bottom:6px}
-.q p{margin:0 0 8px;white-space:pre-line;font-weight:600;overflow-wrap:anywhere}.qtbl-wrap{overflow-x:auto;margin:0 0 10px}.qtbl{border-collapse:collapse;font-size:15px}.qtbl th,.qtbl td{border:1px solid var(--line);padding:4px 10px;text-align:left;vertical-align:top}.qtbl th{background:var(--accent-soft);font-weight:700}.qtbl .num{text-align:right;white-space:nowrap}.q ol{margin:0 0 8px;padding-left:28px}.q li{overflow-wrap:anywhere}
-.q img{max-width:100%;background:#fff;border-radius:6px}
-details summary{cursor:pointer;color:var(--accent-text);font-weight:700}
-.buy{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--surface);border:1.5px solid var(--accent);border-radius:14px;padding:16px 18px;margin:12px 0}
-.buy b{font-size:18px}.buy p{margin:6px 0 0}.buy .muted{color:var(--muted);font-size:14.5px}.buy .cta{margin:0;white-space:nowrap}
-table.facts{border-collapse:collapse;width:100%;margin:8px 0 16px;background:var(--surface);font-size:16px}
-table.facts th,table.facts td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;overflow-wrap:anywhere}
-table.facts th{background:var(--accent-soft);font-weight:700;overflow-wrap:normal}table.facts td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-.note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;margin:16px 0}
-.ans{color:var(--good);font-weight:700;margin:8px 0 4px}.why{color:var(--muted);margin:0}
-.lock{background:var(--accent-soft);border-radius:10px;padding:10px 12px;margin:8px 0 0;font-size:15.5px}
-.passon{background:#E6F4EC;color:#0B5E36;border:1px solid #9FD3B5;border-radius:10px;padding:10px 12px;margin:10px 0;font-weight:600}
-nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}nav.toc a{background:var(--accent-soft);padding:4px 10px;border-radius:999px;text-decoration:none;font-size:15px}
-footer{margin-top:40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}footer .wrap{padding-block:18px}
-.course{background:var(--surface);border:2px solid var(--accent);border-radius:16px;padding:18px 20px;margin:16px 0 8px}
-.course .chead{display:flex;gap:16px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}.course .chead>div{flex:1 1 380px}
-.course .ck{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--accent-text);text-transform:uppercase;letter-spacing:.04em;margin:0 0 4px}
-.course h2{margin:0 0 6px}.course h3{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-size:18px;margin:18px 0 8px}
-.course .chead .cta{margin:4px 0 0;white-space:nowrap}
-.cbuy{display:flex;flex-direction:column;align-items:flex-start;gap:8px}.cbuy .try{font-weight:700;font-size:15.5px;white-space:nowrap}
-:root{--bad:#B42318;--bad-soft:#FDECEA}@media (prefers-color-scheme:dark){:root{--bad:#FF8A80;--bad-soft:#3B1C1C}}
-.q ol.sopts{list-style:none;padding:0;margin:4px 0 10px;display:flex;flex-direction:column;gap:8px}
-.sopts button{width:100%;display:flex;gap:10px;align-items:flex-start;text-align:left;font:inherit;font-weight:600;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;overflow-wrap:anywhere}
-.sopts button:hover:not(:disabled){border-color:var(--accent)}.sopts button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.sopts button:disabled{cursor:default;color:var(--ink)}.sopts .on{font:14px/1.6 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);flex:none}
-.sopts button.right{border-color:var(--good);background:var(--good-soft)}.sopts button.right .on{color:var(--good)}
-.sopts button.wrong{border-color:var(--bad);background:var(--bad-soft)}.sopts button.wrong .on{color:var(--bad)}
-.sscore{background:var(--good-soft);color:var(--good);border-radius:10px;padding:10px 14px;margin:14px 0 0;font-weight:700}
-ol.clist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
-ol.clist li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg)}
-.cmeta{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);margin-bottom:4px}.cacts .cta{margin:8px 8px 0 0}
-.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:8px 0}
-.sgrid a{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--ink);font-weight:700}
-.sgrid a:hover,.fgrid a:hover{border-color:var(--accent)}.sgrid .n{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);font-weight:400;white-space:nowrap}
-.fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:8px 0}@media (max-width:640px){.fgrid{grid-template-columns:1fr}}
-.fgrid:has(> a:only-child){grid-template-columns:1fr}
-.fgrid a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}
-.fgrid b{display:block;font-size:17px;margin-bottom:2px}.fgrid span{color:var(--muted);font-size:15px}
+.paper p{color:var(--muted);font-size:14.5px}
+.paper .meta{display:flex;flex-wrap:wrap;gap:6px}
+.paper .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px}
+.subjects{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.subj-card{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px;text-align:left;cursor:pointer;color:var(--ink);font-weight:700;font-size:15.5px}
+.subj-card:hover{border-color:var(--accent);color:var(--accent-text)}
+.subj-card .mono{font-size:13px;color:var(--muted);font-weight:500}
+
+.features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:700px){.features{grid-template-columns:1fr}}
+.feature{display:flex;gap:16px;padding:20px;text-decoration:none;color:var(--ink);transition:border-color .15s}
+.feature:hover{border-color:var(--accent)}
+.feature .ic{width:44px;height:44px;flex-shrink:0;border-radius:10px;background:var(--accent-soft);color:var(--accent-text);display:grid;place-items:center}
+.feature h3{font-size:18px;font-weight:700;margin-bottom:3px}
+.feature p{color:var(--muted);font-size:15px}
+.hist{list-style:none;margin:0;padding:0}
+.hist li{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:16px;align-items:center;padding:12px 18px;border-top:1px solid var(--line)}
+.hist li:first-child{border-top:0}
+.hist .t{font-weight:600;min-width:0;overflow-wrap:anywhere}
+.hist .d{font-size:13px;color:var(--muted)}
+.faq{display:flex;flex-direction:column}
+.faq details{border-top:1px solid var(--line);padding:14px 20px}
+.faq details:first-child{border-top:0}
+.faq summary{cursor:pointer;font-weight:700;font-size:16px}
+.faq details p{color:var(--muted);margin-top:8px;max-width:75ch}
+
+/* About */
+.about{display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;padding:24px;align-items:start}
+@media (max-width:760px){.about{grid-template-columns:1fr}}
+.about img{width:100%;max-width:260px;aspect-ratio:1;object-fit:cover;border-radius:16px;display:block}
+.about h2{font-size:28px;font-weight:800}
+.about .role{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-text);margin-top:4px}
+.about .bio{margin-top:14px;max-width:68ch;display:flex;flex-direction:column;gap:10px}
+.about dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:12px;margin:18px 0 0}
+.about dl div{background:var(--surface-2);border-radius:10px;padding:10px 12px}
+.about dt{font-family:var(--f-display);font-size:22px;font-weight:800}
+.about dd{margin:0;font-size:13.5px;color:var(--muted)}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.contact a{display:flex;flex-direction:column;gap:2px;min-width:0;max-width:100%;padding:10px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none;font-weight:600;overflow-wrap:break-word}
+.contact a:hover{border-color:var(--accent)}
+@media (max-width:480px){.contact a{font-size:14.5px;padding:9px 12px}}
+.contact a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.contact span{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.handle{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:16px}
+.handle code{font-family:var(--f-mono);background:var(--surface-2);padding:6px 10px;border-radius:8px;font-size:14px;user-select:all}
+
+/* Builder */
+.builder{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;align-items:start}
+@media (max-width:900px){.builder{grid-template-columns:1fr}}
+.step{padding:20px;display:flex;flex-direction:column;gap:14px}
+.step-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.step-h h2{font-size:18px;font-weight:700}
+.subj{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:10px}
+.subj:first-of-type{border-top:0;padding-top:0}
+.subj-h{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.subj-h label{display:flex;align-items:center;gap:10px;font-weight:700;cursor:pointer}
+.subj-h input{width:18px;height:18px;accent-color:var(--accent)}
+.summary{position:sticky;top:calc(env(safe-area-inset-top,0px) + 80px);padding:20px;display:flex;flex-direction:column;gap:14px}
+.summary .big{font-family:var(--f-display);font-size:44px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.summary dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;font-size:14px}
+.summary dt{color:var(--muted)}
+.summary dd{margin:0;text-align:right;font-weight:600}
+.modehelp{font-size:14px;color:var(--muted)}
+
+/* Quiz */
+.player{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:24px;align-items:start}
+@media (max-width:900px){.player{grid-template-columns:1fr}}
+.qbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.qbar h1{font-size:20px;font-weight:800}
+.progress{height:6px;background:var(--surface-2);border-radius:999px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .25s}
+.timer{font-family:var(--f-mono);font-weight:600;font-size:15px;padding:5px 11px;border-radius:8px;background:var(--surface-2)}
+.timer.low{background:var(--bad-soft);color:var(--bad)}
+.timer.off{background:var(--warn-soft);color:var(--warn)}
+/* timer on/off switch: green with the knob on the right = ON; amber with the knob on the left = OFF (Anil, 25 Oct 2026) */
+.tmsw{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--line);border-radius:999px;padding:4px 12px 4px 5px;background:var(--surface);cursor:pointer;font:inherit;color:var(--ink);min-height:40px}
+.tmsw:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.tmsw-track{position:relative;flex:none;width:40px;height:23px;border-radius:999px;background:var(--none-soft);border:1.5px solid var(--warn);transition:background .2s}
+.tmsw-knob{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--warn);box-shadow:0 1px 3px rgba(0,0,0,.25);transition:left .2s,background .2s}
+.tmsw-txt{display:flex;flex-direction:column;line-height:1.15;text-align:left}
+.tmsw-txt b{font-size:13px;letter-spacing:.03em}
+.tmsw-txt small{font-size:11px;color:var(--muted);font-weight:500}
+.tmsw.on{border-color:var(--good);background:var(--good-soft)}
+.tmsw.on .tmsw-track{background:var(--good);border-color:var(--good)}
+.tmsw.on .tmsw-knob{left:19px;background:#fff}
+.tmsw.on b{color:var(--good)}
+.tmsw.off{border-color:var(--warn);background:var(--warn-soft)}
+.tmsw.off b{color:var(--warn)}
+@media (max-width:560px){.tmsw-txt small{display:none}.tmsw{padding-right:10px}}
+.qcard{padding:24px;display:flex;flex-direction:column;gap:16px}
+@media (max-width:600px){.qcard{padding:18px}}
+.qhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.qmeta{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.qnum{font-family:var(--f-mono);font-weight:600;font-size:14px;color:var(--accent-text)}
+.qtext{font-size:17.5px;font-weight:600;line-height:1.55;white-space:pre-line;overflow-wrap:anywhere}
+.qtbl-wrap{overflow-x:auto;margin:6px 0 8px;white-space:normal}.qtbl{border-collapse:collapse;font-size:15px;font-weight:500}.qtbl th,.qtbl td{border:1px solid var(--line);padding:4px 10px;text-align:left;vertical-align:top}.qtbl th{background:var(--accent-soft);font-weight:700}.qtbl .num{text-align:right;white-space:nowrap}
+.qimg{max-width:100%;border-radius:8px;background:#fff;padding:6px;border:1px solid var(--line);align-self:flex-start}
+.opts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.opt{width:100%;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;cursor:pointer;font-size:16.5px;color:var(--ink)}
+.opt:hover:not([disabled]){border-color:var(--accent)}
+.opt[disabled]{cursor:default}
+.bub{width:30px;height:30px;border-radius:50%;border:2px solid var(--muted);display:grid;place-items:center;font-family:var(--f-mono);font-weight:600;font-size:13px;color:var(--muted);flex-shrink:0}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.opt[aria-pressed="true"] .bub{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.opt.is-right{border-color:var(--good);background:var(--good-soft)}
+.opt.is-right .bub{background:var(--good);border-color:var(--good);color:#fff}
+.opt.is-wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.is-wrong .bub{background:var(--bad);border-color:var(--bad);color:#fff}
+.opt .tag{font-size:12.5px;font-weight:700}
+.opt > span:nth-child(2){min-width:0;overflow-wrap:anywhere}
+.answer,.why p{overflow-wrap:anywhere}
+.opt.is-right .tag{color:var(--good)}
+.opt.is-wrong .tag{color:var(--bad)}
+.recall-box{border:1.5px dashed var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.answer{border:1.5px solid var(--good);background:var(--good-soft);border-radius:10px;padding:12px 14px;font-weight:700;font-size:16.5px;width:100%}
+.answer small{display:block;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--good);font-weight:600;margin-bottom:2px}
+.why{border-left:3px solid var(--accent);background:var(--surface-2);border-radius:0 10px 10px 0;padding:14px 16px;font-size:16px}
+.why h4{font-family:var(--f-body);font-size:14px;font-weight:700;margin-bottom:4px;color:var(--accent-text)}
+.verdict{font-family:var(--f-display);font-weight:800;font-size:18px}
+.verdict.good{color:var(--good)} .verdict.bad{color:var(--bad)} .verdict.skip{color:var(--warn)}
+.qnav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.iconbtn{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:14px;font-weight:600;color:var(--muted)}
+.iconbtn[aria-pressed="true"]{color:var(--accent-text);border-color:var(--accent);background:var(--accent-soft)}
+.iconbtn svg{width:16px;height:16px}
+.qacts{display:flex;gap:8px;flex-wrap:wrap}
+.iconbtn.wa{color:#0B7A3E;border-color:#BFE6CF}
+.iconbtn.wa:hover{background:#E7F7EE}
+.etiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.etile{display:flex;flex-direction:column;gap:8px;padding:20px 22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);color:inherit;text-decoration:none;transition:border-color .15s,transform .15s}
+.etile:hover{border-color:var(--accent);transform:translateY(-2px)}
+.etile-k{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-text);font-weight:600}
+.etile b{font-size:20px;font-weight:800;line-height:1.2}.etile-p{color:var(--muted);font-size:14.5px}
+.etile-price{margin-top:auto;padding-top:6px;font-weight:700;color:var(--accent-text)}
+.etiles-links{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:12px}
+.etile-sm{flex-direction:row;align-items:center;justify-content:space-between;padding:14px 18px}.etile-sm b{font-size:15.5px;font-weight:700}.etile-go{color:var(--accent-text);font-weight:700}
+.etiles-note{color:var(--muted);font-size:14px;margin:10px 0 0}
+@media (max-width:860px){.etiles{grid-template-columns:1fr}}
+.pay-dlg{max-width:min(520px,calc(100vw - 32px));border:1px solid var(--line);border-radius:var(--r);padding:0;background:var(--surface);color:var(--ink)}
+.pay-dlg::backdrop{background:rgba(8,14,32,.55)}
+.pay-dlg .pay-in{padding:20px 22px;display:flex;flex-direction:column;gap:12px}
+.pay-dlg h2{font-size:21px;font-weight:800}.pay-dlg .price{font-size:30px;font-weight:800;color:var(--accent-text)}
+.pay-dlg ul{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px}.pay-dlg .small{color:var(--muted);font-size:13.5px}
+.pay-note{display:flex;flex-direction:column;gap:4px;padding:12px 14px;border-radius:10px;font-size:14px;line-height:1.45}
+.pay-note b{font-size:15.5px}.pay-note.bad{background:var(--bad-soft);color:var(--bad)}.pay-note.warn{background:var(--warn-soft);color:var(--warn)}
+.pay-dlg button:disabled{opacity:.7;cursor:progress}
+.qotd{display:flex;flex-direction:column;gap:14px;padding:20px 22px}
+.qotd-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+.qotd-head .eyebrow{color:var(--accent-text);font-weight:600}
+.share-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.share-row .muted{font-size:14px}
+.btn-wa{background:#128C4B;color:#fff;border-color:#128C4B}
+.btn-wa:hover{background:#0E7A40}
+.btn-wa svg,.btn svg.ic{width:18px;height:18px}
+.share-card{display:flex;flex-direction:column;gap:12px;padding:18px 20px;border:1.5px dashed var(--accent);background:linear-gradient(160deg,var(--accent-soft),var(--surface) 70%)}
+.share-card h3{font-size:18px}
+.palette{padding:18px;display:flex;flex-direction:column;gap:14px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 80px)}
+.palette h3{font-size:16px;font-weight:700}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(36px,1fr));gap:8px;max-height:320px;overflow:auto;padding:3px}
+.pb{aspect-ratio:1;max-width:100%;border-radius:50%;border:2px solid var(--line);background:var(--surface);font-family:var(--f-mono);font-size:12.5px;font-weight:600;cursor:pointer;color:var(--muted);display:grid;place-items:center;padding:0}
+.pb.ans{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.pb.right{background:var(--good);border-color:var(--good);color:#fff}
+.pb.wrong{background:var(--bad);border-color:var(--bad);color:#fff}
+.pb.mark{box-shadow:0 0 0 3px var(--warn-soft);border-color:var(--warn)}
+.pb.cur{outline:2.5px solid var(--ink);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:50%;display:inline-block;border:2px solid var(--line)}
+.join{padding:22px;display:flex;flex-direction:column;gap:16px;max-width:760px}
+.join label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:15px;min-width:0}
+.join input:not([type=checkbox]),.join textarea{font:inherit;font-weight:500;font-size:16px;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;width:100%;min-width:0}
+.join input:focus,.join textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.join textarea{resize:vertical}
+.join-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.join .consent{flex-direction:row;align-items:flex-start;gap:10px;font-weight:500;cursor:pointer}
+.join .consent input{width:18px;height:18px;margin-top:2px;flex:none;accent-color:var(--accent)}
+.join-test{margin:0;padding:10px 12px;border-radius:10px;background:var(--accent-soft);color:var(--accent-text);font-weight:600}
+.join-test .mono{font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin-right:6px}
+.join .err{margin:0;color:var(--bad);font-weight:600}
+.confirm{border:1.5px solid var(--warn);background:var(--warn-soft);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:12px}
+
+/* Result */
+.score{display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center;padding:24px}
+@media (max-width:640px){.score{grid-template-columns:1fr}}
+.ring{width:132px;height:132px;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .lbl{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+.ring .lbl b{font-family:var(--f-display);font-size:30px;font-weight:800;display:block;line-height:1;font-variant-numeric:tabular-nums}
+.ring .lbl span{font-size:12px;color:var(--muted)}
+.tally{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.tally{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tally div{border-radius:10px;padding:10px 12px;background:var(--surface-2)}
+.tally b{display:block;font-family:var(--f-display);font-size:24px;font-weight:800;font-variant-numeric:tabular-nums}
+.tally span{font-size:13px;color:var(--muted)}
+.tally .g b{color:var(--good)} .tally .r b{color:var(--bad)} .tally .s b{color:var(--warn)}
+.tbl-wrap{overflow-x:auto}
+table.tbl{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+.tbl th{text-align:left;font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:500;padding:10px 16px;border-bottom:1px solid var(--line)}
+.tbl td{padding:11px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+.tbl tr:last-child td{border-bottom:0}
+.tbl .num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:right}
+.bar{height:8px;border-radius:999px;background:var(--surface-2);overflow:hidden;min-width:90px}
+.bar i{display:block;height:100%;border-radius:999px}
+
+.list{display:flex;flex-direction:column;gap:14px}
+details.ans summary{cursor:pointer;font-weight:700;color:var(--accent-text);list-style:none;display:inline-flex;align-items:center;gap:6px}
+details.ans summary::-webkit-details-marker{display:none}
+details.ans summary::before{content:"+";font-family:var(--f-mono);width:18px;height:18px;border-radius:50%;border:1.5px solid currentColor;display:grid;place-items:center;font-size:12px;line-height:1}
+details.ans[open] summary::before{content:"−"}
+details.ans[open] summary{margin-bottom:12px}
+details.ans[open]{display:flex;flex-direction:column;gap:12px}
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.search{flex:1;min-width:200px;display:flex;align-items:center;gap:8px;border:1.5px solid var(--line);background:var(--surface);border-radius:10px;padding:0 12px}
+.search input{border:0;background:transparent;outline:none;padding:10px 0;width:100%;min-width:0}
+.search:focus-within{border-color:var(--accent)}
+select.sel{border:1.5px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 12px;font-weight:600;max-width:100%}
+.empty{padding:36px 24px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.empty .bubbles{display:flex;gap:8px}
+.empty .bubbles i{width:22px;height:22px;border-radius:50%;border:2px solid var(--line)}
+.empty .bubbles i.f{background:var(--accent);border-color:var(--accent)}
+.empty h3{font-size:20px;font-weight:800}
+.empty p{color:var(--muted);max-width:48ch}
+.steps3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:s;margin:0;padding:0}
+@media (max-width:760px){.steps3{grid-template-columns:1fr}}
+.steps3 li{list-style:none;padding:18px;counter-increment:s;display:flex;flex-direction:column;gap:6px}
+.steps3 li::before{content:counter(s);font-family:var(--f-mono);font-weight:600;width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:13px}
+.steps3 h3{font-size:17px;font-weight:700}
+.steps3 p{font-size:15px;color:var(--muted)}
+.recall{display:inline-flex;gap:4px;align-items:center}
+.recall i{width:10px;height:10px;border-radius:50%;border:1.5px solid var(--good)}
+.recall i.on{background:var(--good)}
+.heat-exam{display:flex;flex-direction:column;gap:14px}
+.heat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+.tile{border:1.5px solid transparent;border-radius:10px;padding:12px 14px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:6px;min-height:96px;color:var(--ink);background:var(--none-soft)}
+.tile:hover:not([disabled]){border-color:var(--accent)}
+.tile[disabled]{opacity:.5;cursor:default}
+.tile .tn{font-weight:700;font-size:15px;line-height:1.3}
+.tile .tv{font-family:var(--f-display);font-weight:800;font-size:24px;font-variant-numeric:tabular-nums;margin-top:auto}
+.tile .ts{font-size:12.5px;color:var(--muted)}
+.tile.h-good{background:var(--good-soft)} .tile.h-good .tv{color:var(--good)}
+.tile.h-warn{background:var(--warn-soft)} .tile.h-warn .tv{color:var(--warn)}
+.tile.h-bad{background:var(--bad-soft)} .tile.h-bad .tv{color:var(--bad)}
+.tile.h-none .tv{color:var(--muted);font-size:15px;font-family:var(--f-body);font-weight:600}
+.hlegend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;color:var(--muted);align-items:center}
+.hlegend span{display:inline-flex;gap:6px;align-items:center}
+.hlegend i{width:14px;height:14px;border-radius:4px;display:inline-block}
+
+footer.foot{border-top:1px solid var(--line);background:var(--surface)}
+footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;z-index:50;box-shadow:var(--shadow);max-width:calc(100% - 32px)}
+
+/* Study material (Crisp Notes) */
+.nav a .new{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.06em;background:#F2B705;color:#0C2266;border-radius:4px;padding:0 5px;line-height:16px}
+.notes-promo{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:22px 24px;text-decoration:none;color:var(--ink);transition:border-color .15s}
+.notes-promo:hover{border-color:var(--accent)}
+.notes-promo h2{font-size:24px;font-weight:800;margin:4px 0 6px}
+.notes-promo p{color:var(--muted);max-width:56ch}
+.notes-promo .btn{margin-top:14px}
+.np-covers{display:flex}
+.np-covers img{width:92px;height:auto;border-radius:4px;box-shadow:0 6px 16px rgba(13,24,48,.25);margin-left:-26px;border:1px solid rgba(255,255,255,.4)}
+.np-covers img:first-child{margin-left:0}
+@media (max-width:760px){.notes-promo{grid-template-columns:1fr}.np-covers{order:-1}.np-covers img{width:72px;margin-left:-18px}}
+.bb-promo{margin-bottom:14px;border-color:#E8A317;background:linear-gradient(120deg,var(--surface) 55%,rgba(232,163,23,.12))}
+.bb-mark{width:120px;height:120px;border-radius:50%;background:var(--band);color:var(--band-ink);display:grid;place-content:center;text-align:center;box-shadow:0 0 0 6px rgba(232,163,23,.35)}
+.bb-mark b{font-family:var(--f-display);font-size:34px;font-weight:800;line-height:1;color:#F2B840}
+.bb-mark span{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em}
+@media (max-width:760px){.bb-mark{display:none}}
+.notes-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+@media (max-width:760px){.notes-steps{grid-template-columns:1fr}}
+.notes-steps>div{display:flex;gap:12px;align-items:flex-start;padding:14px 16px}
+.notes-steps b{font-family:var(--f-display);font-size:15px;display:block}
+.notes-steps p{color:var(--muted);font-size:14.5px}
+.notes-steps .n{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent-text);display:grid;place-items:center;font-family:var(--f-mono);font-weight:600;font-size:14px}
+.notes-sub{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:28px}
+.notes-sub h2{font-size:21px;font-weight:800}
+.notes-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:12px}
+@media (max-width:860px){.notes-grid{grid-template-columns:1fr}}
+.note{display:grid;grid-template-columns:140px minmax(0,1fr);gap:18px;padding:18px}
+@media (max-width:420px){.note{grid-template-columns:96px minmax(0,1fr);gap:14px;padding:14px}}
+.note-cover{padding:0;border:0;background:none;cursor:zoom-in;align-self:start;border-radius:6px;overflow:hidden;box-shadow:0 4px 14px rgba(13,24,48,.18);display:block}
+.note-cover img{display:block;width:100%;height:auto}
+.note .pills{display:flex;gap:6px;flex-wrap:wrap}
+.note h3{font-size:20px;font-weight:800;margin:8px 0 0}
+.note h3[lang=te]{font-family:"Noto Sans Telugu",var(--f-body);font-weight:700;line-height:1.4;font-size:19px;letter-spacing:0}
+.note .en{color:var(--muted);font-size:14.5px}
+.note-meta{font-size:13px;color:var(--muted);margin-top:6px}
+.note-toc{margin-top:8px;font-size:14.5px}
+.note-toc summary{cursor:pointer;color:var(--accent-text);font-weight:700}
+.note-toc ol{margin:6px 0 0;padding-left:20px;color:var(--muted)}
+.note-toc ol[lang=te]{font-family:"Noto Sans Telugu",var(--f-body);font-size:14px}
+.note-buy{display:flex;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
+.note-buy .price{font-family:var(--f-display);font-weight:800;font-size:26px;line-height:1}
+.btn[disabled]{opacity:.55;cursor:not-allowed}
+.note-links{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px;margin-left:-10px}
+.notes-foot{margin-top:24px;padding:18px 20px;color:var(--muted);font-size:15px}
+.kit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}
+@media (max-width:860px){.kit-grid{grid-template-columns:1fr}}
+.kit{display:grid;grid-template-columns:120px minmax(0,1fr);gap:18px;padding:18px}
+@media (max-width:420px){.kit{grid-template-columns:88px minmax(0,1fr);gap:14px;padding:14px}}
+.kit-cover{width:100%;height:auto;border-radius:6px;box-shadow:0 4px 14px rgba(13,24,48,.18);align-self:start;display:block}
+.kit-cover-v{aspect-ratio:120/170;background:var(--band);color:#F5B301;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--f-display)}
+.kit-cover-v b{font-size:44px;line-height:1}.kit-cover-v span{color:var(--band-ink);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.kit h3{font-size:19px;font-weight:800;margin:4px 0 8px}
+.kit .pills{display:flex;gap:6px;flex-wrap:wrap}
+.kit-meta{font-size:13.5px;color:var(--muted);margin-top:8px}
+.kit-buy{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.kit-buy .btn svg{width:18px;height:18px;vertical-align:-3px;margin-right:4px}
+.kit-p5{border-style:dashed}
+.kit-lock{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 18px;margin-top:16px;border-color:var(--accent)}
+.kit-lock p{color:var(--muted);font-size:14.5px;margin-top:2px;max-width:60ch}
+.kit-note{margin-top:16px;font-weight:700;color:var(--good,#12804A)}
+.p5-card{padding:18px 20px;margin:12px 0;border-left:4px solid #25D366}
+.p5-card h3{font-size:19px;font-weight:800;margin:4px 0 6px}.p5-card p{color:var(--muted)}.p5-card .row{margin-top:12px}
+.ex-x{display:block;font-size:12.5px;font-weight:700;color:var(--accent-text);margin-top:4px}
+.notes-foot b{color:var(--ink)}
+.sample-dlg{border:0;padding:0;border-radius:14px;width:min(900px,calc(100vw - 20px));max-height:calc(100dvh - 20px);background:var(--surface);color:var(--ink);overflow:auto}
+.sample-dlg::backdrop{background:rgba(5,10,25,.72)}
+.sample-dlg header{position:sticky;top:0;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;background:var(--surface);border-bottom:1px solid var(--line)}
+.sample-dlg header b{font-family:var(--f-display);font-size:17px}
+.sample-dlg .imgs{display:grid;gap:14px;padding:14px;background:var(--surface-2)}
+.sample-dlg .imgs img{width:100%;height:auto;display:block;border-radius:6px;box-shadow:var(--shadow)}
+.sample-dlg .imgs p{font-size:14px;color:var(--muted);text-align:center}
+.foot a{color:var(--accent-text);font-weight:600}
+.video-btn{display:flex;align-items:center;gap:14px;width:100%;margin-top:14px;padding:12px 16px;border-radius:14px;border:0;cursor:pointer;text-align:left;color:#fff;background:linear-gradient(120deg,#0C2266,#1846C7);box-shadow:0 6px 18px rgba(24,70,199,.28)}
+.video-btn:hover{filter:brightness(1.08)}
+.video-btn .play{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:#F2B705;color:#0C2266;display:grid;place-items:center;font-size:18px;padding-left:3px}
+.video-btn b{display:block;font-family:"Noto Sans Telugu",var(--f-body);font-size:17px;line-height:1.35}
+.video-btn small{display:block;font-size:13px;opacity:.85;margin-top:1px}
+.video-dlg{width:min(460px,calc(100vw - 20px))}
+.video-dlg header b{font-family:"Noto Sans Telugu",var(--f-body);letter-spacing:0;font-weight:700;font-size:16px}
+.video-dlg .vwrap{background:#000;display:flex;justify-content:center}
+.video-dlg video{display:block;width:100%;max-height:calc(100dvh - 130px);aspect-ratio:9/16;background:#000}
+.video-dlg .vcredit{font-size:12.5px;color:var(--muted);padding:8px 14px}
+/* Exam hub (start page) */
+.hub-tools{display:flex;flex-direction:column;gap:12px}
+.hub-tools .search{flex:none;max-width:560px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+#hubCats{display:flex;flex-direction:column;gap:34px}
+.exam-cat{display:flex;flex-direction:column;gap:12px}
+.exam-cat h2 .te-sub{font-size:17px;font-weight:600;color:var(--muted);margin-left:6px;letter-spacing:0;line-height:1.2}
+.exams{display:grid;grid-template-columns:repeat(auto-fill,minmax(186px,1fr));gap:12px}
+@media (max-width:520px){.exams{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+.exam{display:flex;flex-direction:column;gap:3px;padding:14px 16px;text-decoration:none;color:inherit;min-height:122px;transition:border-color .15s,transform .15s,box-shadow .15s}
+.exam:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow)}
+.exam:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.exam .ex-b{font-family:var(--f-mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.exam .ex-t{font-family:var(--f-display);font-weight:800;font-size:18px;line-height:1.2;overflow-wrap:anywhere}
+.exam .ex-n{font-size:13.5px;color:var(--muted);line-height:1.35}
+.exam .ex-st{margin-top:auto;padding-top:10px;font-size:12.5px;font-weight:700;color:var(--muted);display:flex;align-items:center;gap:6px}
+.exam .ex-st::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--line);flex-shrink:0}
+.exam.live{border:2px solid var(--accent);background:linear-gradient(160deg,var(--accent-soft),var(--surface) 70%)}
+.exam.live .ex-b{color:var(--accent-text)}
+.exam.live .ex-st{color:var(--good)}
+.exam.live .ex-st::before{background:var(--good);box-shadow:0 0 0 3px var(--good-soft)}
+@media (max-width:520px){.exam{padding:12px 13px;min-height:112px}.exam .ex-t{font-size:16.5px}}
+.crumb{color:var(--band-muted);font-weight:600;font-size:14.5px;text-decoration:none;align-self:flex-start}
+.crumb:hover{color:var(--band-ink)}
+.nav.hub a[data-g2]{display:none}
+.topbar.g2 .nav a[data-hubonly]{display:none}
+@media (max-width:480px){.nav.hub .new{display:none}.nav.hub a{padding-inline:8px}}
+/* the Group-II menu has 11 links: give it its own row on every screen width */
+.topbar.g2 .wrap{gap:4px;padding-block:8px 0}
+.topbar.g2 .nav{flex-basis:100%;justify-content:flex-start;padding-bottom:6px;order:3}
+.topbar.g2 .lang{order:2;margin-left:auto}
+.timers-wrap{display:flex;flex-direction:column;gap:10px;margin-top:-6px}
+.timers-wrap + .hero{margin-top:0}
+.timers-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px}
+.timers-head .eyebrow{color:var(--accent-text);font-weight:600}
+.tm-note{font-size:12.5px}
+.timers{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+@media (max-width:1100px){.timers{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.timers{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;padding-bottom:4px;margin-inline:-16px;padding-inline:16px}.cdown{flex:0 0 72%;scroll-snap-align:start}}
+.cdown{display:flex;flex-direction:column;gap:2px;padding:12px 14px;text-decoration:none;color:inherit;border-top:3px solid var(--accent);transition:border-color .15s,transform .15s}
+.cdown:hover{transform:translateY(-2px);border-color:var(--accent)}
+.tm-label{font-weight:700;font-size:14.5px;line-height:1.3}
+.tm-date{font-size:12.5px;color:var(--muted)}
+.tm-count{margin-top:auto;padding-top:8px;font-size:13px;color:var(--muted);display:grid;grid-template-columns:auto 1fr;align-items:baseline;column-gap:5px}
+.tm-count .tm-d{font-family:var(--f-display);font-weight:800;font-size:26px;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.tm-count .tm-hms{grid-column:1/-1;font-size:13px;color:var(--ink);font-family:var(--f-mono)}
+.cdown.soon-7{border-top-color:var(--bad)}
+.cdown.soon-7 .tm-d{color:var(--bad)}
+.eclock{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;margin-top:16px;padding:16px 20px;border-top:3px solid var(--accent)}
+.eclock:hover{transform:none}
+.eclock .ec-l{display:flex;flex-direction:column;gap:2px;min-width:0}
+.eclock .ec-k{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text)}
+.eclock b{font-size:18px;line-height:1.3}.eclock .ec-date{font-weight:600}
+.eclock .ec-src{font-size:13px;color:var(--muted)}
+.eclock .ec-r.tm-count{margin:0;padding:0;display:grid;grid-template-columns:auto auto;align-items:baseline;column-gap:8px;font-size:15px}
+.eclock .tm-count .tm-d{font-size:44px}
+.eclock .tm-count .tm-hms{font-size:16px}
+.eclock .ec-tba{font-weight:700;color:var(--muted)}
+.soon{display:flex;flex-direction:column;gap:14px;padding:24px;max-width:760px}
+.soon p{color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.fund-bar{background:var(--surface-2);border-radius:999px;height:14px;overflow:hidden;border:1px solid var(--line)}
+.fund-bar i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.fund-box{padding:20px 22px;display:flex;flex-direction:column;gap:12px}
+.fund-box p{max-width:75ch}
+.fund-note{border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:15px}
+.fund-poster{display:block;width:100%;max-width:720px;height:auto;border-radius:var(--r);border:1px solid var(--line)}
+.hero .mentor b{display:block}
 </style>
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
@@ -71,50 +582,108 @@ ol.clist li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;ba
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PN0QCDCJBL"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-PN0QCDCJBL");</script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45", "description": "Learn with Anil is a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, with answers and explanations, for ₹45. Individuals and organisations who would like to help fund it can get in touch.", "url": "https://learnwithanil.in/funders.html", "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": "https://learnwithanil.in/"}, "author": {"@type": "Person", "name": "Jupudi Anil Kumar"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learnwithanil.in/"}, {"@type": "ListItem", "position": 2, "name": "Fund Learn with Anil", "item": "https://learnwithanil.in/funders.html"}]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45", "description": "Learn with Anil is a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, with answers and explanations, for ₹45. Individuals and organisations who would like to help fund it can get in touch.", "url": "https://learnwithanil.in/funders.html", "image": "https://learnwithanil.in/og-funders.jpg", "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": "https://learnwithanil.in/"}, "author": {"@type": "Person", "name": "Jupudi Anil Kumar", "url": "https://learnwithanil.in/appsc-group-2/about/"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learnwithanil.in/"}, {"@type": "ListItem", "position": 2, "name": "Fund Learn with Anil", "item": "https://learnwithanil.in/funders.html"}]}}</script>
 </head>
 <body>
-<header><div class="wrap"><a href="/">Learn with Anil · every exam PYQs</a><a href="/appsc-group-2/practice/">Practise online →</a></div></header>
-<main class="wrap">
-<h1>Fund Learn with Anil</h1>
-<p class="lede">I am building this website to be student-friendly and to democratise learning: every aspirant, wherever they live and whatever they can pay, should be able to practise real exam questions with answers they can trust. <b>My goal is to bring 1 lakh PYQs of various government exams under one roof, for ₹45.</b> <b>I am the only person developing this project, and I need help from funders.</b> Your support, in turn, helps me help the students. If you would like to help, please get in touch.</p>
-<p><img src="/og-funders.jpg" alt="Learn with Anil: 1 lakh PYQs under one roof, for ₹45. Fund this project." width="1200" height="630" style="display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line)"></p>
-<p lang="te">నా లక్ష్యం: వివిధ ప్రభుత్వ పరీక్షల 1 లక్ష పాత ప్రశ్నలను (PYQs) సమాధానాలతో ఒకే చోట, కేవలం ₹45కే అందించడం. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఒక్కడినే ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. దీనికి నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది. సహాయం చేయాలనుకునే వారు నన్ను సంప్రదించండి.</p>
-<p><a class="cta" href="https://wa.me/919494792739?text=Hi%20Learn_with_anil%20Team%2C%20I%20am%20interested%20in%20funding%20Learn%20with%20Anil." target="_blank" rel="noopener">WhatsApp me</a><a class="cta" href="mailto:anilkumarjupudi360360@gmail.com?subject=Funding%20Learn%20with%20Anil">Email me</a></p>
-<h2>My goal: 1 lakh PYQs under one roof, for ₹45</h2>
-<p>The goal of Learn with Anil is to bring <b>1 lakh (1,00,000) previous-year questions from various government exams under one roof</b>, each with its answer and a short explanation, and to open all of them with one ₹45 PYQ Pass.</p>
-<div role="img" aria-label="7,009 of 1,00,000 questions so far" style="background:var(--line);border-radius:8px;height:14px;overflow:hidden;margin:14px 0 6px"><div style="width:7.0%;height:14px;background:var(--accent)"></div></div>
-<p class="muted" style="margin-top:0">So far: <b>7,009</b> of 1,00,000 questions (7%). Your support helps me reach the goal sooner.</p>
-<h2>What is already built</h2>
-<ul>
-<li><b>7,009 previous-year questions from 10 government exams</b>, each with its answer (from the official key wherever one has been published) and a short explanation.</li>
-<li>Questions and explanations in English, తెలుగు and हिंदी (each exam in the languages of its own paper), on any phone.</li>
-<li>Topic-wise practice, timed mock tests and a mistakes notebook, so that a student can prepare without paying a coaching fee.</li>
-<li>Every question and its correct answer can be read for free, along with the explanations for the first 10 questions of every paper. One ₹45 PYQ Pass unlocks every explanation and all the online practice and tests on the site for 12 months.</li>
-</ul>
-<h2>Why the project needs funding</h2>
-<p>I am the only person developing Learn with Anil. Every paper has to be found, typed from the official question booklet, checked against the official answer key, explained and translated, and then kept up to date whenever the keys change. The website itself also has to be built and kept running. I keep the price at ₹45 so that every aspirant can afford it, which means that fees alone cannot pay for this work.</p>
-<h2>What your support will help me do</h2>
-<ul>
-<li>Reach 1 lakh PYQs sooner by adding the remaining government exams (state PSCs, SSC, banks, railways and defence), so that every aspirant finds their exam here.</li>
-<li>Explain and translate more papers in English, Telugu and Hindi.</li>
-<li>Keep all of it at ₹45, within reach of every student.</li>
-</ul>
-<h2>Who can fund</h2>
-<p>I welcome support from individuals, alumni, teachers, institutions, companies and foundations who believe that good exam preparation should not depend on how much a student can pay. Support can take the form of a grant, a sponsorship or a partnership, and I will work out the details with you.</p>
-<h2>Get in touch</h2>
-<p><b>Jupudi Anil Kumar</b>, Founder, Learn with Anil (learnwithanil.in)<br>
-Email: <a href="mailto:anilkumarjupudi360360@gmail.com?subject=Funding%20Learn%20with%20Anil">anilkumarjupudi360360@gmail.com</a><br>
-Phone / WhatsApp: <a href="tel:+919494792739">+91 94947 92739</a> (10 am – 7 pm, Monday to Saturday)</p>
-<p class="note">Please do not send money to anyone who claims to be collecting it for me. I agree on every contribution directly with you, in writing.</p>
-<h2>About me</h2>
-<p>I am Jupudi Anil Kumar, a civil-services educator with more than 1,000 hours of teaching UPSC, APPSC and TGPSC aspirants. Learn with Anil is my independent initiative. <a href="/appsc-group-2/about/">Read more about me</a>.</p>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Learn with Anil, all exams">
+      <span class="brand-mark" aria-hidden="true">LA</span>
+      <span class="brand-text"><b>Learn with Anil</b> <span>PYQs for every exam</span></span>
+    </a>
+    <nav class="nav hub" aria-label="Main"><a href="/">All Exams</a><a href="/appsc-group-2/">Group-II</a><a href="/appsc-group-1/">Group-I</a><a href="/upsc-capf/">CAPF (AC)</a><a href="/upsc-epfo/">EPFO</a><a href="/ssc-cgl/">SSC CGL</a><a href="/ts-police-si/">TS Police SI</a><a href="/ts-police-constable/">TS Constable</a><a href="/tgpsc-hmwssb-manager/">HMWSSB Manager</a><a href="/appsc-amvi/">APPSC AMVI</a><a href="/tgpsc-amvi/">TGPSC AMVI</a><a href="/funders.html" aria-current="page">Fund</a></nav>
+    <div class="lang" role="group" aria-label="Page language">
+      <button type="button" data-l="en" aria-pressed="true">EN</button>
+      <button type="button" data-l="hi" lang="hi" aria-pressed="false">हिंदी</button>
+      <button type="button" data-l="te" lang="te" aria-pressed="false">తెలుగు</button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero"><div class="wrap">
+    <div class="hero-copy">
+      <p data-t="eyebrow" class="eyebrow">Fund Learn with Anil</p>
+      <h1 data-t="h1">1 lakh PYQs under one roof, <em>for just ₹45.</em></h1>
+      <p data-t="lede">That is the goal of Learn with Anil. I am building this website to be student-friendly and to democratise learning. I am the only person developing it, and I need help from funders: your support, in turn, helps me help the students.</p>
+      <div class="row"><a class="btn btn-primary" href="https://wa.me/919494792739?text=Hi%20Learn_with_anil%20Team%2C%20I%20am%20interested%20in%20funding%20Learn%20with%20Anil." target="_blank" rel="noopener"><span data-t="wa">WhatsApp me</span></a><a class="btn btn-secondary" href="mailto:anilkumarjupudi360360@gmail.com?subject=Funding%20Learn%20with%20Anil"><span data-t="mail">Email me</span></a></div>
+    </div>
+    <a class="mentor" href="/appsc-group-2/about/" style="color:inherit;text-decoration:none">
+      <span class="ph"><img src="/anil.jpg" alt="Jupudi Anil Kumar" width="210" height="210"></span>
+      <span><b>Jupudi Anil Kumar</b><span data-t="mentor">Founder, Learn with Anil · UPSC faculty &amp; mentor</span></span>
+    </a>
+  </div></section>
+
+  <section class="wrap section hub-figs">
+    <div class="figures">
+      <div class="figure"><div class="v">7,009</div><div data-t="f1" class="k">Previous-year questions so far</div></div>
+      <div class="figure"><div class="v">1,00,000</div><div data-t="f2" class="k">The goal: 1 lakh PYQs</div></div>
+      <div class="figure"><div class="v">10</div><div data-t="f3" class="k">Government exams live</div></div>
+      <div class="figure"><div class="v">₹45</div><div data-t="f4" class="k">One PYQ Pass for every exam · 12 months</div></div>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2 data-t="progT">Progress to 1 lakh</h2></div>
+    <div class="card fund-box">
+      <div class="fund-bar" role="img" aria-label="7,009 of 1,00,000 questions so far"><i style="width:7.0%"></i></div>
+      <p data-t="progP" class="muted">So far: <b>7,009</b> of 1,00,000 questions (7%). Your support helps me reach the goal sooner.</p>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2 data-t="builtT">What is already built</h2></div>
+    <div class="features"><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 14l2 2 4-4"/></svg></span><span><h3 data-t="b1t">Real papers, official answers</h3><p data-t="b1p">7,009 previous-year questions from 10 government exams, each with its answer (from the official key wherever one has been published) and a short explanation.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c1 4 4 7 7 8M11 5c-1 4-4 7-7 8"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg></span><span><h3 data-t="b2t">In your language</h3><p data-t="b2p">Questions and explanations in English, Telugu and Hindi (each exam in the languages of its own paper), on any phone.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/><path d="M9 12l2 2 4-4"/></svg></span><span><h3 data-t="b3t">Prepare without a coaching fee</h3><p data-t="b3p">Topic-wise practice, timed mock tests and a mistakes notebook.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h11M7 9h11M7 4c5 0 7 2 7 5s-3 5-7 5l8 6"/></svg></span><span><h3 data-t="b4t">Free to read, ₹45 to practise</h3><p data-t="b4p">Every question and its correct answer can be read for free, along with the explanations for the first 10 questions of every paper. One ₹45 PYQ Pass unlocks every explanation and all the online practice and tests for 12 months.</p></span></div></div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2 data-t="whyT">Why the project needs funding</h2></div>
+    <div class="card fund-box"><p data-t="whyP">I am the only person developing Learn with Anil. Every paper has to be found, typed from the official question booklet, checked against the official answer key, explained and translated, and then kept up to date whenever the keys change. The website itself also has to be built and kept running. I keep the price at ₹45 so that every aspirant can afford it, which means that fees alone cannot pay for this work.</p></div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2 data-t="helpT">What your support will help me do</h2></div>
+    <div class="features"><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18l6-6 4 4 6-8"/><path d="M15 8h5v5"/></svg></span><span><h3 data-t="h1t">Reach 1 lakh PYQs sooner</h3><p data-t="h1p">Add the remaining government exams (state PSCs, SSC, banks, railways and defence), so that every aspirant finds their exam here.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c1 4 4 7 7 8M11 5c-1 4-4 7-7 8"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg></span><span><h3 data-t="h2t">More explanations and translations</h3><p data-t="h2p">Explain and translate more papers in English, Telugu and Hindi.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span><span><h3 data-t="h3t">Keep it at ₹45</h3><p data-t="h3p">Keep all of it within reach of every student.</p></span></div></div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2 data-t="whoT">Who can fund</h2></div>
+    <div class="card fund-box"><p data-t="whoP">I welcome support from individuals, alumni, teachers, institutions, companies and foundations who believe that good exam preparation should not depend on how much a student can pay. Support can take the form of a grant, a sponsorship or a partnership, and I will work out the details with you.</p></div>
+  </section>
+
+  <section class="wrap section" id="contact">
+    <div class="section-title"><h2 data-t="contactT">Get in touch</h2></div>
+    <div class="card fund-box">
+      <p><b>Jupudi Anil Kumar</b>, <span data-t="founder">Founder, Learn with Anil</span><br>
+      Email: <a href="mailto:anilkumarjupudi360360@gmail.com?subject=Funding%20Learn%20with%20Anil">anilkumarjupudi360360@gmail.com</a><br>
+      Phone / WhatsApp: <a href="tel:+919494792739">+91 94947 92739</a> (<span data-t="hours">10 am – 7 pm, Monday to Saturday</span>)</p>
+      <div class="row"><a class="btn btn-primary" href="https://wa.me/919494792739?text=Hi%20Learn_with_anil%20Team%2C%20I%20am%20interested%20in%20funding%20Learn%20with%20Anil." target="_blank" rel="noopener"><span data-t="wa">WhatsApp me</span></a><a class="btn btn-secondary" href="mailto:anilkumarjupudi360360@gmail.com?subject=Funding%20Learn%20with%20Anil"><span data-t="mail">Email me</span></a></div>
+      <p data-t="note" class="fund-note">Please do not send money to anyone who claims to be collecting it for me. I agree on every contribution directly with you, in writing.</p>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2 data-t="shareT">Help spread the word</h2></div>
+    <div class="card fund-box">
+      <p data-t="shareP" class="muted">Share this page or the poster with someone who might want to help.</p>
+      <img class="fund-poster" src="/og-funders.jpg" alt="Learn with Anil: 1 lakh PYQs under one roof, for ₹45. Fund this project." width="1200" height="630" loading="lazy">
+      <div class="row"><a class="btn btn-primary" href="https://wa.me/?text=Learn%20with%20Anil%3A%201%20lakh%20PYQs%20of%20government%20exams%20under%20one%20roof%2C%20for%20%E2%82%B945.%20Anil%20is%20building%20it%20alone%20and%20needs%20funders%3A%20https%3A//learnwithanil.in/funders" target="_blank" rel="noopener"><span data-t="shareWa">Share on WhatsApp</span></a><a class="btn btn-secondary" href="/og-funders.jpg" download="LearnWithAnil-Fund-poster.jpg"><span data-t="poster">Download the poster</span></a></div>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title"><h2 data-t="aboutT">About me</h2></div>
+    <div class="card fund-box"><p><span data-t="aboutP">I am Jupudi Anil Kumar, a civil-services educator with more than 1,000 hours of teaching UPSC, APPSC and TGPSC aspirants. Learn with Anil is my independent initiative.</span> <a href="/appsc-group-2/about/"><span data-t="aboutL">Read more about me</span></a></p></div>
+  </section>
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>Questions and answers are taken from APPSC's official final keys. Explanations are by Jupudi Anil Kumar, Learn with Anil (Instagram: @learn_with_anil06). Not affiliated with APPSC. Visits are counted with Google Analytics.</div></footer>
-<script>try{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{}").all)||{};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){
-document.querySelectorAll(".lk").forEach(function(e){e.textContent="✓ ";e.className="lk ok"});
-document.querySelectorAll("[data-paidtxt]").forEach(function(e){e.textContent=e.getAttribute("data-paidtxt")});
-document.querySelectorAll('a[href*="?buy=pyq"]').forEach(function(e){e.textContent="✓ PYQ Pass active"});
-var b=document.querySelector(".passon");if(b){b.textContent="✓ Your PYQ Pass is active until "+new Date(a.pyq+"T12:00:00+05:30").toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"})+": every previous paper, sectional and quiz of every exam is unlocked on this device. Students without the pass see a lock (🔒) on these buttons.";b.hidden=false}}}catch(e){}</script>
+<footer class="foot">
+  <div class="wrap">
+    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></span>
+  </div>
+</footer>
+<script>(function(){var T={"eyebrow": {"en": "Fund Learn with Anil", "hi": "Learn with Anil को सहयोग दें", "te": "Learn with Anil‌కు నిధులు ఇవ్వండి"}, "h1": {"en": "1 lakh PYQs under one roof, <em>for just ₹45.<\/em>", "hi": "1 लाख PYQs एक ही जगह, <em>सिर्फ़ ₹45 में।<\/em>", "te": "1 లక్ష PYQs ఒకే చోట, <em>కేవలం ₹45కే.<\/em>"}, "lede": {"en": "That is the goal of Learn with Anil. I am building this website to be student-friendly and to democratise learning. I am the only person developing it, and I need help from funders: your support, in turn, helps me help the students.", "hi": "यही Learn with Anil का लक्ष्य है। मैं यह वेबसाइट विद्यार्थियों के अनुकूल बनाने और शिक्षा को सबके लिए सुलभ बनाने के लिए बना रहा हूँ। इसे बनाने वाला मैं अकेला व्यक्ति हूँ, और मुझे फंड देने वालों की मदद चाहिए: आपका सहयोग मुझे विद्यार्थियों की मदद करने में सहायता करता है।", "te": "ఇదే Learn with Anil లక్ష్యం. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. దీన్ని అభివృద్ధి చేస్తున్నది నేను ఒక్కడినే, అందుకే నాకు నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది."}, "wa": {"en": "WhatsApp me", "hi": "WhatsApp पर संपर्क करें", "te": "WhatsAppలో సంప్రదించండి"}, "mail": {"en": "Email me", "hi": "ईमेल करें", "te": "ఈమెయిల్ చేయండి"}, "mentor": {"en": "Founder, Learn with Anil · UPSC faculty &amp; mentor", "hi": "संस्थापक, Learn with Anil · UPSC शिक्षक और मार्गदर्शक", "te": "వ్యవస్థాపకులు, Learn with Anil · UPSC అధ్యాపకులు, మెంటార్"}, "f1": {"en": "Previous-year questions so far", "hi": "अब तक के पिछले वर्षों के प्रश्न", "te": "ఇప్పటివరకు ఉన్న గత సంవత్సరాల ప్రశ్నలు"}, "f2": {"en": "The goal: 1 lakh PYQs", "hi": "लक्ष्य: 1 लाख PYQs", "te": "లక్ష్యం: 1 లక్ష PYQs"}, "f3": {"en": "Government exams live", "hi": "उपलब्ध सरकारी परीक्षाएँ", "te": "అందుబాటులో ఉన్న ప్రభుత్వ పరీక్షలు"}, "f4": {"en": "One PYQ Pass for every exam · 12 months", "hi": "सभी परीक्षाओं के लिए एक PYQ पास · 12 महीने", "te": "అన్ని పరీక్షలకు ఒకే PYQ పాస్ · 12 నెలలు"}, "progT": {"en": "Progress to 1 lakh", "hi": "1 लाख की ओर प्रगति", "te": "1 లక్ష వైపు ప్రగతి"}, "progP": {"en": "So far: <b>7,009<\/b> of 1,00,000 questions (7%). Your support helps me reach the goal sooner.", "hi": "अब तक: 1,00,000 में से <b>7,009<\/b> प्रश्न (7%)। आपका सहयोग मुझे लक्ष्य तक जल्दी पहुँचने में मदद करता है।", "te": "ఇప్పటివరకు: 1,00,000లో <b>7,009<\/b> ప్రశ్నలు (7%). మీ సహాయంతో లక్ష్యాన్ని త్వరగా చేరుకోగలను."}, "builtT": {"en": "What is already built", "hi": "अब तक क्या बना है", "te": "ఇప్పటికే ఏమి సిద్ధమైంది"}, "b1t": {"en": "Real papers, official answers", "hi": "असली प्रश्न पत्र, आधिकारिक उत्तर", "te": "అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు"}, "b1p": {"en": "7,009 previous-year questions from 10 government exams, each with its answer (from the official key wherever one has been published) and a short explanation.", "hi": "10 सरकारी परीक्षाओं के 7,009 पिछले वर्षों के प्रश्न, हर प्रश्न का उत्तर (जहाँ आधिकारिक कुंजी प्रकाशित हुई है, वहाँ उसी से) और एक संक्षिप्त व्याख्या के साथ।", "te": "10 ప్రభుత్వ పరీక్షల 7,009 గత సంవత్సరాల ప్రశ్నలు, ప్రతి ప్రశ్నకు సమాధానం (అధికారిక కీ ప్రచురించిన చోట దాని నుంచే) మరియు చిన్న వివరణతో."}, "b2t": {"en": "In your language", "hi": "आपकी भाषा में", "te": "మీ భాషలో"}, "b2p": {"en": "Questions and explanations in English, Telugu and Hindi (each exam in the languages of its own paper), on any phone.", "hi": "प्रश्न और व्याख्याएँ अंग्रेज़ी, तेलुगु और हिंदी में (हर परीक्षा उसके अपने प्रश्न पत्र की भाषाओं में), किसी भी फ़ोन पर।", "te": "ప్రశ్నలు, వివరణలు ఇంగ్లీష్, తెలుగు, హిందీలో (ప్రతి పరీక్ష దాని ప్రశ్నపత్రం భాషల్లో), ఏ ఫోన్‌లోనైనా."}, "b3t": {"en": "Prepare without a coaching fee", "hi": "बिना कोचिंग फ़ीस के तैयारी", "te": "కోచింగ్ ఫీజు లేకుండా సన్నద్ధత"}, "b3p": {"en": "Topic-wise practice, timed mock tests and a mistakes notebook.", "hi": "विषयवार अभ्यास, समयबद्ध मॉक टेस्ट और गलतियों की नोटबुक।", "te": "అంశాలవారీ ప్రాక్టీస్, సమయబద్ధ మాక్ టెస్ట్‌లు, తప్పుల నోట్‌బుక్."}, "b4t": {"en": "Free to read, ₹45 to practise", "hi": "पढ़ना मुफ़्त, अभ्यास ₹45 में", "te": "చదవడం ఉచితం, ప్రాక్టీస్ ₹45కే"}, "b4p": {"en": "Every question and its correct answer can be read for free, along with the explanations for the first 10 questions of every paper. One ₹45 PYQ Pass unlocks every explanation and all the online practice and tests for 12 months.", "hi": "हर प्रश्न और उसका सही उत्तर मुफ़्त में पढ़ा जा सकता है, साथ ही हर प्रश्न पत्र के पहले 10 प्रश्नों की व्याख्याएँ भी। एक ₹45 PYQ पास 12 महीनों के लिए सभी व्याख्याएँ और सारा ऑनलाइन अभ्यास व टेस्ट खोल देता है।", "te": "ప్రతి ప్రశ్న, దాని సరైన సమాధానం ఉచితంగా చదవొచ్చు; ప్రతి ప్రశ్నపత్రంలోని మొదటి 10 ప్రశ్నల వివరణలు కూడా ఉచితం. ఒకే ₹45 PYQ పాస్‌తో 12 నెలల పాటు అన్ని వివరణలు, ఆన్‌లైన్ ప్రాక్టీస్, టెస్ట్‌లు తెరుచుకుంటాయి."}, "whyT": {"en": "Why the project needs funding", "hi": "इस परियोजना को धन की ज़रूरत क्यों है", "te": "ఈ ప్రాజెక్ట్‌కు నిధులు ఎందుకు అవసరం"}, "whyP": {"en": "I am the only person developing Learn with Anil. Every paper has to be found, typed from the official question booklet, checked against the official answer key, explained and translated, and then kept up to date whenever the keys change. The website itself also has to be built and kept running. I keep the price at ₹45 so that every aspirant can afford it, which means that fees alone cannot pay for this work.", "hi": "Learn with Anil को बनाने वाला मैं अकेला व्यक्ति हूँ। हर प्रश्न पत्र को खोजना, आधिकारिक प्रश्न पुस्तिका से टाइप करना, आधिकारिक उत्तर कुंजी से मिलाना, समझाना और अनुवाद करना पड़ता है, और जब भी कुंजी बदले, उसे अपडेट रखना पड़ता है। वेबसाइट को भी बनाना और चलाते रहना पड़ता है। मैं कीमत ₹45 रखता हूँ ताकि हर अभ्यर्थी इसे ले सके, इसलिए सिर्फ़ फ़ीस से यह काम नहीं चल सकता।", "te": "Learn with Anil‌ను అభివృద్ధి చేస్తున్నది నేను ఒక్కడినే. ప్రతి ప్రశ్నపత్రాన్ని వెతకాలి, అధికారిక ప్రశ్నాపత్రం నుంచి టైప్ చేయాలి, అధికారిక సమాధాన కీతో సరిచూడాలి, వివరణ రాయాలి, అనువదించాలి, కీ మారినప్పుడల్లా అప్‌డేట్ చేయాలి. వెబ్‌సైట్‌ను కూడా నిర్మించి, నడుపుతూ ఉండాలి. ప్రతి అభ్యర్థి కొనగలిగేలా ధరను ₹45గా ఉంచుతున్నాను, అందుకే కేవలం ఫీజులతో ఈ పని నడవదు."}, "helpT": {"en": "What your support will help me do", "hi": "आपका सहयोग मुझे क्या करने में मदद करेगा", "te": "మీ సహాయం దేనికి ఉపయోగపడుతుంది"}, "h1t": {"en": "Reach 1 lakh PYQs sooner", "hi": "1 लाख PYQs तक जल्दी पहुँचना", "te": "1 లక్ష PYQsను త్వరగా చేరుకోవడం"}, "h1p": {"en": "Add the remaining government exams (state PSCs, SSC, banks, railways and defence), so that every aspirant finds their exam here.", "hi": "बाकी सरकारी परीक्षाएँ (राज्य PSC, SSC, बैंक, रेलवे और रक्षा) जोड़ना, ताकि हर अभ्यर्थी को यहाँ अपनी परीक्षा मिले।", "te": "మిగిలిన ప్రభుత్వ పరీక్షలను (రాష్ట్ర PSCలు, SSC, బ్యాంకులు, రైల్వేలు, రక్షణ రంగం) చేర్చడం, తద్వారా ప్రతి అభ్యర్థికి తన పరీక్ష ఇక్కడ దొరుకుతుంది."}, "h2t": {"en": "More explanations and translations", "hi": "और व्याख्याएँ और अनुवाद", "te": "మరిన్ని వివరణలు, అనువాదాలు"}, "h2p": {"en": "Explain and translate more papers in English, Telugu and Hindi.", "hi": "अंग्रेज़ी, तेलुगु और हिंदी में और प्रश्न पत्रों की व्याख्या और अनुवाद करना।", "te": "ఇంగ్లీష్, తెలుగు, హిందీలో మరిన్ని ప్రశ్నపత్రాలకు వివరణలు, అనువాదాలు."}, "h3t": {"en": "Keep it at ₹45", "hi": "कीमत ₹45 ही रखना", "te": "ధర ₹45గానే ఉంచడం"}, "h3p": {"en": "Keep all of it within reach of every student.", "hi": "सब कुछ हर विद्यार्थी की पहुँच में रखना।", "te": "అన్నింటినీ ప్రతి విద్యార్థికి అందుబాటులో ఉంచడం."}, "whoT": {"en": "Who can fund", "hi": "कौन सहयोग कर सकता है", "te": "ఎవరు నిధులు ఇవ్వవచ్చు"}, "whoP": {"en": "I welcome support from individuals, alumni, teachers, institutions, companies and foundations who believe that good exam preparation should not depend on how much a student can pay. Support can take the form of a grant, a sponsorship or a partnership, and I will work out the details with you.", "hi": "मैं उन व्यक्तियों, पूर्व छात्रों, शिक्षकों, संस्थानों, कंपनियों और फ़ाउंडेशनों के सहयोग का स्वागत करता हूँ जो मानते हैं कि अच्छी परीक्षा तैयारी इस पर निर्भर नहीं होनी चाहिए कि विद्यार्थी कितना खर्च कर सकता है। सहयोग अनुदान, प्रायोजन या साझेदारी के रूप में हो सकता है, और विवरण मैं आपके साथ मिलकर तय करूँगा।", "te": "మంచి పరీక్షా సన్నద్ధత విద్యార్థి ఎంత ఖర్చు చేయగలడనే దానిపై ఆధారపడకూడదని నమ్మే వ్యక్తులు, పూర్వ విద్యార్థులు, ఉపాధ్యాయులు, సంస్థలు, కంపెనీలు, ఫౌండేషన్ల సహాయాన్ని స్వాగతిస్తున్నాను. సహాయం గ్రాంట్, స్పాన్సర్‌షిప్ లేదా భాగస్వామ్య రూపంలో ఉండవచ్చు; వివరాలను మీతో కలిసి నిర్ణయిస్తాను."}, "contactT": {"en": "Get in touch", "hi": "संपर्क करें", "te": "సంప్రదించండి"}, "founder": {"en": "Founder, Learn with Anil", "hi": "संस्थापक, Learn with Anil", "te": "వ్యవస్థాపకులు, Learn with Anil"}, "hours": {"en": "10 am – 7 pm, Monday to Saturday", "hi": "सुबह 10 बजे – शाम 7 बजे, सोमवार से शनिवार", "te": "ఉదయం 10 – సాయంత్రం 7, సోమవారం నుంచి శనివారం"}, "note": {"en": "Please do not send money to anyone who claims to be collecting it for me. I agree on every contribution directly with you, in writing.", "hi": "कृपया किसी ऐसे व्यक्ति को पैसे न भेजें जो मेरे नाम पर पैसे इकट्ठा करने का दावा करे। हर सहयोग मैं सीधे आपके साथ, लिखित रूप में तय करता हूँ।", "te": "నా తరఫున డబ్బు వసూలు చేస్తున్నామని చెప్పే ఎవరికీ డబ్బు పంపవద్దు. ప్రతి సహాయాన్ని నేరుగా మీతో, లిఖితపూర్వకంగా ఒప్పందం చేసుకుంటాను."}, "shareT": {"en": "Help spread the word", "hi": "यह बात आगे बढ़ाएँ", "te": "ఈ విషయాన్ని అందరికీ తెలియజేయండి"}, "shareP": {"en": "Share this page or the poster with someone who might want to help.", "hi": "यह पेज या पोस्टर किसी ऐसे व्यक्ति के साथ साझा करें जो मदद करना चाहे।", "te": "సహాయం చేయాలనుకునే వారితో ఈ పేజీని లేదా పోస్టర్‌ను పంచుకోండి."}, "shareWa": {"en": "Share on WhatsApp", "hi": "WhatsApp पर साझा करें", "te": "WhatsAppలో పంచుకోండి"}, "poster": {"en": "Download the poster", "hi": "पोस्टर डाउनलोड करें", "te": "పోస్టర్ డౌన్‌లోడ్ చేయండి"}, "aboutT": {"en": "About me", "hi": "मेरे बारे में", "te": "నా గురించి"}, "aboutP": {"en": "I am Jupudi Anil Kumar, a civil-services educator with more than 1,000 hours of teaching UPSC, APPSC and TGPSC aspirants. Learn with Anil is my independent initiative.", "hi": "मैं जुपुडी अनिल कुमार हूँ, एक सिविल सेवा शिक्षक। मैंने UPSC, APPSC और TGPSC अभ्यर्थियों को 1,000 से अधिक घंटे पढ़ाया है। Learn with Anil मेरी स्वतंत्र पहल है।", "te": "నేను జూపూడి అనిల్ కుమార్, సివిల్ సర్వీసెస్ అధ్యాపకుడిని. UPSC, APPSC, TGPSC అభ్యర్థులకు 1,000 గంటలకు పైగా బోధించాను. Learn with Anil నా స్వతంత్ర కార్యక్రమం."}, "aboutL": {"en": "Read more about me", "hi": "मेरे बारे में और पढ़ें", "te": "నా గురించి మరింత చదవండి"}};
+function apply(l){document.documentElement.lang=l;document.querySelectorAll('[data-t]').forEach(function(el){var x=T[el.getAttribute('data-t')];if(!x)return;el.innerHTML=x[l]||x.en;if(l==='en')el.removeAttribute('lang');else el.setAttribute('lang',l);});
+document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-l')===l));});}
+document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){var l=b.getAttribute('data-l');apply(l);try{localStorage.setItem('lwa-lang',l);}catch(e){}});});
+try{var g=localStorage.getItem('lwa-lang');if(g==='hi'||g==='te')apply(g);}catch(e){}})();</script>
 </body>
 </html>

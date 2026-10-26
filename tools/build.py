@@ -1842,62 +1842,246 @@ if(r&&r.ok){{f.reset();m.textContent='Received. Your ticket number is '+r.ticket
 
 
 def funders_page(loaded):
-    """/funders.html: Fund Learn with Anil (Anil, 26 Oct 2026). The site is built to be student-friendly and to democratise learning;
-    its goal is 1 lakh PYQs of various government exams under one roof for ₹45; Anil is the only person developing it and needs help
-    from funders, which in turn helps him help the students. No money is taken through this page."""
+    """/funders.html: Fund Learn with Anil (Anil, 26 Oct 2026). Goal: 1 lakh PYQs of various government exams under one roof for ₹45;
+    Anil is the only person developing the site and needs help from funders, which in turn helps him help the students.
+    Built in the start page's own style (app.html CSS, top bar, blue hero, figures, feature cards) with the EN / हिंदी / తెలుగు switch
+    (remembered in localStorage 'lwa-lang', shared with the rest of the site). No money is taken through this page."""
     from urllib.parse import quote
     can = SITE_URL + '/funders.html'
     nq = sum(len(qs) for _, _, qs in loaded)
+    nex = len(loaded)
     goal = 100000
     pct = min(100, nq * 100 / goal)
+    NQ, PCT = f'{nq:,}', f'{pct:.0f}'
     wa = f'https://wa.me/{WHATSAPP}?text=' + quote('Hi Learn_with_anil Team, I am interested in funding Learn with Anil.')
     mail = f'mailto:{CONTACT_EMAIL}?subject=' + quote('Funding Learn with Anil')
-    body = f"""<p><img src="/og-funders.jpg" alt="Learn with Anil: 1 lakh PYQs under one roof, for ₹45. Fund this project." width="1200" height="630" style="display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line)"></p>
-<p lang="te">నా లక్ష్యం: వివిధ ప్రభుత్వ పరీక్షల 1 లక్ష పాత ప్రశ్నలను (PYQs) సమాధానాలతో ఒకే చోట, కేవలం ₹45కే అందించడం. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఒక్కడినే ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. దీనికి నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది. సహాయం చేయాలనుకునే వారు నన్ను సంప్రదించండి.</p>
-<p><a class="cta" href="{wa}" target="_blank" rel="noopener">WhatsApp me</a><a class="cta" href="{mail}">Email me</a></p>
-<h2>My goal: 1 lakh PYQs under one roof, for ₹45</h2>
-<p>The goal of Learn with Anil is to bring <b>1 lakh (1,00,000) previous-year questions from various government exams under one roof</b>, each with its answer and a short explanation, and to open all of them with one ₹45 PYQ Pass.</p>
-<div role="img" aria-label="{nq:,} of 1,00,000 questions so far" style="background:var(--line);border-radius:8px;height:14px;overflow:hidden;margin:14px 0 6px"><div style="width:{max(pct, 1.5):.1f}%;height:14px;background:var(--accent)"></div></div>
-<p class="muted" style="margin-top:0">So far: <b>{nq:,}</b> of 1,00,000 questions ({pct:.0f}%). Your support helps me reach the goal sooner.</p>
-<h2>What is already built</h2>
-<ul>
-<li><b>{nq:,} previous-year questions from {len(loaded)} government exams</b>, each with its answer (from the official key wherever one has been published) and a short explanation.</li>
-<li>Questions and explanations in English, తెలుగు and हिंदी (each exam in the languages of its own paper), on any phone.</li>
-<li>Topic-wise practice, timed mock tests and a mistakes notebook, so that a student can prepare without paying a coaching fee.</li>
-<li>Every question and its correct answer can be read for free, along with the explanations for the first 10 questions of every paper. One ₹45 PYQ Pass unlocks every explanation and all the online practice and tests on the site for 12 months.</li>
-</ul>
-<h2>Why the project needs funding</h2>
-<p>I am the only person developing Learn with Anil. Every paper has to be found, typed from the official question booklet, checked against the official answer key, explained and translated, and then kept up to date whenever the keys change. The website itself also has to be built and kept running. I keep the price at ₹45 so that every aspirant can afford it, which means that fees alone cannot pay for this work.</p>
-<h2>What your support will help me do</h2>
-<ul>
-<li>Reach 1 lakh PYQs sooner by adding the remaining government exams (state PSCs, SSC, banks, railways and defence), so that every aspirant finds their exam here.</li>
-<li>Explain and translate more papers in English, Telugu and Hindi.</li>
-<li>Keep all of it at ₹45, within reach of every student.</li>
-</ul>
-<h2>Who can fund</h2>
-<p>I welcome support from individuals, alumni, teachers, institutions, companies and foundations who believe that good exam preparation should not depend on how much a student can pay. Support can take the form of a grant, a sponsorship or a partnership, and I will work out the details with you.</p>
-<h2>Get in touch</h2>
-<p><b>{esc(GRIEVANCE_OFFICER)}</b>, Founder, Learn with Anil (learnwithanil.in)<br>
-Email: <a href="{mail}">{CONTACT_EMAIL}</a><br>
-Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(' ', '')}">{CONTACT_PHONE}</a> (10 am – 7 pm, Monday to Saturday)</p>
-<p class="note">Please do not send money to anyone who claims to be collecting it for me. I agree on every contribution directly with you, in writing.</p>
-<h2>About me</h2>
-<p>I am Jupudi Anil Kumar, a civil-services educator with more than 1,000 hours of teaching UPSC, APPSC and TGPSC aspirants. Learn with Anil is my independent initiative. <a href="/appsc-group-2/about/">Read more about me</a>.</p>"""
-    return static_page(0, 'Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45',
-                       'Learn with Anil is a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, '
-                       'with answers and explanations, for ₹45. Individuals and organisations who would like to help fund it can get in touch.',
-                       can, 'Fund Learn with Anil',
-                       'I am building this website to be student-friendly and to democratise learning: every aspirant, wherever they live and whatever they can pay, '
-                       'should be able to practise real exam questions with answers they can trust. <b>My goal is to bring 1 lakh PYQs of various government exams under one roof, for ₹45.</b> '
-                       '<b>I am the only person developing this project, and I need help from funders.</b> Your support, in turn, helps me help the students. '
-                       'If you would like to help, please get in touch.',
-                       body, [('Home', SITE_URL + '/'), ('Fund Learn with Anil', can)], None, ename='every exam', at_root=True
-                       ).replace('<p class="passon" hidden></p>', '', 1                   # the "your PYQ Pass is active" note means nothing on this page
-                       ).replace(f'<meta property="og:url" content="{esc(can)}">',            # link preview for WhatsApp / LinkedIn / X shares
-                                 f'<meta property="og:url" content="{esc(can)}"><meta property="og:image" content="{SITE_URL}/og-funders.jpg">'
-                                 '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
-                                 '<meta property="og:image:alt" content="Learn with Anil: 1 lakh PYQs under one roof for ₹45">'
-                                 '<meta name="twitter:card" content="summary_large_image">', 1)
+    share = 'https://wa.me/?text=' + quote('Learn with Anil: 1 lakh PYQs of government exams under one roof, for ₹45. Anil is building it alone and needs funders: https://learnwithanil.in/funders')
+    T = {
+      'eyebrow': ('Fund Learn with Anil', 'Learn with Anil को सहयोग दें', 'Learn with Anil‌కు నిధులు ఇవ్వండి'),
+      'h1': ('1 lakh PYQs under one roof, <em>for just ₹45.</em>', '1 लाख PYQs एक ही जगह, <em>सिर्फ़ ₹45 में।</em>', '1 లక్ష PYQs ఒకే చోట, <em>కేవలం ₹45కే.</em>'),
+      'lede': ('That is the goal of Learn with Anil. I am building this website to be student-friendly and to democratise learning. '
+               'I am the only person developing it, and I need help from funders: your support, in turn, helps me help the students.',
+               'यही Learn with Anil का लक्ष्य है। मैं यह वेबसाइट विद्यार्थियों के अनुकूल बनाने और शिक्षा को सबके लिए सुलभ बनाने के लिए बना रहा हूँ। '
+               'इसे बनाने वाला मैं अकेला व्यक्ति हूँ, और मुझे फंड देने वालों की मदद चाहिए: आपका सहयोग मुझे विद्यार्थियों की मदद करने में सहायता करता है।',
+               'ఇదే Learn with Anil లక్ష్యం. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. '
+               'దీన్ని అభివృద్ధి చేస్తున్నది నేను ఒక్కడినే, అందుకే నాకు నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.'),
+      'wa': ('WhatsApp me', 'WhatsApp पर संपर्क करें', 'WhatsAppలో సంప్రదించండి'),
+      'mail': ('Email me', 'ईमेल करें', 'ఈమెయిల్ చేయండి'),
+      'mentor': ('Founder, Learn with Anil · UPSC faculty &amp; mentor', 'संस्थापक, Learn with Anil · UPSC शिक्षक और मार्गदर्शक', 'వ్యవస్థాపకులు, Learn with Anil · UPSC అధ్యాపకులు, మెంటార్'),
+      'f1': ('Previous-year questions so far', 'अब तक के पिछले वर्षों के प्रश्न', 'ఇప్పటివరకు ఉన్న గత సంవత్సరాల ప్రశ్నలు'),
+      'f2': ('The goal: 1 lakh PYQs', 'लक्ष्य: 1 लाख PYQs', 'లక్ష్యం: 1 లక్ష PYQs'),
+      'f3': ('Government exams live', 'उपलब्ध सरकारी परीक्षाएँ', 'అందుబాటులో ఉన్న ప్రభుత్వ పరీక్షలు'),
+      'f4': ('One PYQ Pass for every exam · 12 months', 'सभी परीक्षाओं के लिए एक PYQ पास · 12 महीने', 'అన్ని పరీక్షలకు ఒకే PYQ పాస్ · 12 నెలలు'),
+      'progT': ('Progress to 1 lakh', '1 लाख की ओर प्रगति', '1 లక్ష వైపు ప్రగతి'),
+      'progP': (f'So far: <b>{NQ}</b> of 1,00,000 questions ({PCT}%). Your support helps me reach the goal sooner.',
+                f'अब तक: 1,00,000 में से <b>{NQ}</b> प्रश्न ({PCT}%)। आपका सहयोग मुझे लक्ष्य तक जल्दी पहुँचने में मदद करता है।',
+                f'ఇప్పటివరకు: 1,00,000లో <b>{NQ}</b> ప్రశ్నలు ({PCT}%). మీ సహాయంతో లక్ష్యాన్ని త్వరగా చేరుకోగలను.'),
+      'builtT': ('What is already built', 'अब तक क्या बना है', 'ఇప్పటికే ఏమి సిద్ధమైంది'),
+      'b1t': ('Real papers, official answers', 'असली प्रश्न पत्र, आधिकारिक उत्तर', 'అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు'),
+      'b1p': (f'{NQ} previous-year questions from {nex} government exams, each with its answer (from the official key wherever one has been published) and a short explanation.',
+              f'{nex} सरकारी परीक्षाओं के {NQ} पिछले वर्षों के प्रश्न, हर प्रश्न का उत्तर (जहाँ आधिकारिक कुंजी प्रकाशित हुई है, वहाँ उसी से) और एक संक्षिप्त व्याख्या के साथ।',
+              f'{nex} ప్రభుత్వ పరీక్షల {NQ} గత సంవత్సరాల ప్రశ్నలు, ప్రతి ప్రశ్నకు సమాధానం (అధికారిక కీ ప్రచురించిన చోట దాని నుంచే) మరియు చిన్న వివరణతో.'),
+      'b2t': ('In your language', 'आपकी भाषा में', 'మీ భాషలో'),
+      'b2p': ('Questions and explanations in English, Telugu and Hindi (each exam in the languages of its own paper), on any phone.',
+              'प्रश्न और व्याख्याएँ अंग्रेज़ी, तेलुगु और हिंदी में (हर परीक्षा उसके अपने प्रश्न पत्र की भाषाओं में), किसी भी फ़ोन पर।',
+              'ప్రశ్నలు, వివరణలు ఇంగ్లీష్, తెలుగు, హిందీలో (ప్రతి పరీక్ష దాని ప్రశ్నపత్రం భాషల్లో), ఏ ఫోన్‌లోనైనా.'),
+      'b3t': ('Prepare without a coaching fee', 'बिना कोचिंग फ़ीस के तैयारी', 'కోచింగ్ ఫీజు లేకుండా సన్నద్ధత'),
+      'b3p': ('Topic-wise practice, timed mock tests and a mistakes notebook.', 'विषयवार अभ्यास, समयबद्ध मॉक टेस्ट और गलतियों की नोटबुक।', 'అంశాలవారీ ప్రాక్టీస్, సమయబద్ధ మాక్ టెస్ట్‌లు, తప్పుల నోట్‌బుక్.'),
+      'b4t': ('Free to read, ₹45 to practise', 'पढ़ना मुफ़्त, अभ्यास ₹45 में', 'చదవడం ఉచితం, ప్రాక్టీస్ ₹45కే'),
+      'b4p': ('Every question and its correct answer can be read for free, along with the explanations for the first 10 questions of every paper. One ₹45 PYQ Pass unlocks every explanation and all the online practice and tests for 12 months.',
+              'हर प्रश्न और उसका सही उत्तर मुफ़्त में पढ़ा जा सकता है, साथ ही हर प्रश्न पत्र के पहले 10 प्रश्नों की व्याख्याएँ भी। एक ₹45 PYQ पास 12 महीनों के लिए सभी व्याख्याएँ और सारा ऑनलाइन अभ्यास व टेस्ट खोल देता है।',
+              'ప్రతి ప్రశ్న, దాని సరైన సమాధానం ఉచితంగా చదవొచ్చు; ప్రతి ప్రశ్నపత్రంలోని మొదటి 10 ప్రశ్నల వివరణలు కూడా ఉచితం. ఒకే ₹45 PYQ పాస్‌తో 12 నెలల పాటు అన్ని వివరణలు, ఆన్‌లైన్ ప్రాక్టీస్, టెస్ట్‌లు తెరుచుకుంటాయి.'),
+      'whyT': ('Why the project needs funding', 'इस परियोजना को धन की ज़रूरत क्यों है', 'ఈ ప్రాజెక్ట్‌కు నిధులు ఎందుకు అవసరం'),
+      'whyP': ('I am the only person developing Learn with Anil. Every paper has to be found, typed from the official question booklet, checked against the official answer key, explained and translated, and then kept up to date whenever the keys change. '
+               'The website itself also has to be built and kept running. I keep the price at ₹45 so that every aspirant can afford it, which means that fees alone cannot pay for this work.',
+               'Learn with Anil को बनाने वाला मैं अकेला व्यक्ति हूँ। हर प्रश्न पत्र को खोजना, आधिकारिक प्रश्न पुस्तिका से टाइप करना, आधिकारिक उत्तर कुंजी से मिलाना, समझाना और अनुवाद करना पड़ता है, और जब भी कुंजी बदले, उसे अपडेट रखना पड़ता है। '
+               'वेबसाइट को भी बनाना और चलाते रहना पड़ता है। मैं कीमत ₹45 रखता हूँ ताकि हर अभ्यर्थी इसे ले सके, इसलिए सिर्फ़ फ़ीस से यह काम नहीं चल सकता।',
+               'Learn with Anil‌ను అభివృద్ధి చేస్తున్నది నేను ఒక్కడినే. ప్రతి ప్రశ్నపత్రాన్ని వెతకాలి, అధికారిక ప్రశ్నాపత్రం నుంచి టైప్ చేయాలి, అధికారిక సమాధాన కీతో సరిచూడాలి, వివరణ రాయాలి, అనువదించాలి, కీ మారినప్పుడల్లా అప్‌డేట్ చేయాలి. '
+               'వెబ్‌సైట్‌ను కూడా నిర్మించి, నడుపుతూ ఉండాలి. ప్రతి అభ్యర్థి కొనగలిగేలా ధరను ₹45గా ఉంచుతున్నాను, అందుకే కేవలం ఫీజులతో ఈ పని నడవదు.'),
+      'helpT': ('What your support will help me do', 'आपका सहयोग मुझे क्या करने में मदद करेगा', 'మీ సహాయం దేనికి ఉపయోగపడుతుంది'),
+      'h1t': ('Reach 1 lakh PYQs sooner', '1 लाख PYQs तक जल्दी पहुँचना', '1 లక్ష PYQsను త్వరగా చేరుకోవడం'),
+      'h1p': ('Add the remaining government exams (state PSCs, SSC, banks, railways and defence), so that every aspirant finds their exam here.',
+              'बाकी सरकारी परीक्षाएँ (राज्य PSC, SSC, बैंक, रेलवे और रक्षा) जोड़ना, ताकि हर अभ्यर्थी को यहाँ अपनी परीक्षा मिले।',
+              'మిగిలిన ప్రభుత్వ పరీక్షలను (రాష్ట్ర PSCలు, SSC, బ్యాంకులు, రైల్వేలు, రక్షణ రంగం) చేర్చడం, తద్వారా ప్రతి అభ్యర్థికి తన పరీక్ష ఇక్కడ దొరుకుతుంది.'),
+      'h2t': ('More explanations and translations', 'और व्याख्याएँ और अनुवाद', 'మరిన్ని వివరణలు, అనువాదాలు'),
+      'h2p': ('Explain and translate more papers in English, Telugu and Hindi.', 'अंग्रेज़ी, तेलुगु और हिंदी में और प्रश्न पत्रों की व्याख्या और अनुवाद करना।', 'ఇంగ్లీష్, తెలుగు, హిందీలో మరిన్ని ప్రశ్నపత్రాలకు వివరణలు, అనువాదాలు.'),
+      'h3t': ('Keep it at ₹45', 'कीमत ₹45 ही रखना', 'ధర ₹45గానే ఉంచడం'),
+      'h3p': ('Keep all of it within reach of every student.', 'सब कुछ हर विद्यार्थी की पहुँच में रखना।', 'అన్నింటినీ ప్రతి విద్యార్థికి అందుబాటులో ఉంచడం.'),
+      'whoT': ('Who can fund', 'कौन सहयोग कर सकता है', 'ఎవరు నిధులు ఇవ్వవచ్చు'),
+      'whoP': ('I welcome support from individuals, alumni, teachers, institutions, companies and foundations who believe that good exam preparation should not depend on how much a student can pay. '
+               'Support can take the form of a grant, a sponsorship or a partnership, and I will work out the details with you.',
+               'मैं उन व्यक्तियों, पूर्व छात्रों, शिक्षकों, संस्थानों, कंपनियों और फ़ाउंडेशनों के सहयोग का स्वागत करता हूँ जो मानते हैं कि अच्छी परीक्षा तैयारी इस पर निर्भर नहीं होनी चाहिए कि विद्यार्थी कितना खर्च कर सकता है। '
+               'सहयोग अनुदान, प्रायोजन या साझेदारी के रूप में हो सकता है, और विवरण मैं आपके साथ मिलकर तय करूँगा।',
+               'మంచి పరీక్షా సన్నద్ధత విద్యార్థి ఎంత ఖర్చు చేయగలడనే దానిపై ఆధారపడకూడదని నమ్మే వ్యక్తులు, పూర్వ విద్యార్థులు, ఉపాధ్యాయులు, సంస్థలు, కంపెనీలు, ఫౌండేషన్ల సహాయాన్ని స్వాగతిస్తున్నాను. '
+               'సహాయం గ్రాంట్, స్పాన్సర్‌షిప్ లేదా భాగస్వామ్య రూపంలో ఉండవచ్చు; వివరాలను మీతో కలిసి నిర్ణయిస్తాను.'),
+      'contactT': ('Get in touch', 'संपर्क करें', 'సంప్రదించండి'),
+      'founder': ('Founder, Learn with Anil', 'संस्थापक, Learn with Anil', 'వ్యవస్థాపకులు, Learn with Anil'),
+      'hours': ('10 am – 7 pm, Monday to Saturday', 'सुबह 10 बजे – शाम 7 बजे, सोमवार से शनिवार', 'ఉదయం 10 – సాయంత్రం 7, సోమవారం నుంచి శనివారం'),
+      'note': ('Please do not send money to anyone who claims to be collecting it for me. I agree on every contribution directly with you, in writing.',
+               'कृपया किसी ऐसे व्यक्ति को पैसे न भेजें जो मेरे नाम पर पैसे इकट्ठा करने का दावा करे। हर सहयोग मैं सीधे आपके साथ, लिखित रूप में तय करता हूँ।',
+               'నా తరఫున డబ్బు వసూలు చేస్తున్నామని చెప్పే ఎవరికీ డబ్బు పంపవద్దు. ప్రతి సహాయాన్ని నేరుగా మీతో, లిఖితపూర్వకంగా ఒప్పందం చేసుకుంటాను.'),
+      'shareT': ('Help spread the word', 'यह बात आगे बढ़ाएँ', 'ఈ విషయాన్ని అందరికీ తెలియజేయండి'),
+      'shareP': ('Share this page or the poster with someone who might want to help.', 'यह पेज या पोस्टर किसी ऐसे व्यक्ति के साथ साझा करें जो मदद करना चाहे।', 'సహాయం చేయాలనుకునే వారితో ఈ పేజీని లేదా పోస్టర్‌ను పంచుకోండి.'),
+      'shareWa': ('Share on WhatsApp', 'WhatsApp पर साझा करें', 'WhatsAppలో పంచుకోండి'),
+      'poster': ('Download the poster', 'पोस्टर डाउनलोड करें', 'పోస్టర్ డౌన్‌లోడ్ చేయండి'),
+      'aboutT': ('About me', 'मेरे बारे में', 'నా గురించి'),
+      'aboutP': ('I am Jupudi Anil Kumar, a civil-services educator with more than 1,000 hours of teaching UPSC, APPSC and TGPSC aspirants. Learn with Anil is my independent initiative.',
+                 'मैं जुपुडी अनिल कुमार हूँ, एक सिविल सेवा शिक्षक। मैंने UPSC, APPSC और TGPSC अभ्यर्थियों को 1,000 से अधिक घंटे पढ़ाया है। Learn with Anil मेरी स्वतंत्र पहल है।',
+                 'నేను జూపూడి అనిల్ కుమార్, సివిల్ సర్వీసెస్ అధ్యాపకుడిని. UPSC, APPSC, TGPSC అభ్యర్థులకు 1,000 గంటలకు పైగా బోధించాను. Learn with Anil నా స్వతంత్ర కార్యక్రమం.'),
+      'aboutL': ('Read more about me', 'मेरे बारे में और पढ़ें', 'నా గురించి మరింత చదవండి'),
+    }
+    def t(k, tag='span', attrs=''):
+        return f'<{tag} data-t="{k}"{(" " + attrs) if attrs else ""}>{T[k][0]}</{tag}>'
+    ic = {   # the start page's feature-card icons
+      'doc': '<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 14l2 2 4-4"/>',
+      'lang': '<path d="M4 5h9M8.5 3v2M6 5c1 4 4 7 7 8M11 5c-1 4-4 7-7 8"/><path d="M13 21l4-9 4 9M14.5 18h5"/>',
+      'loop': '<path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/><path d="M9 12l2 2 4-4"/>',
+      'rupee': '<path d="M7 4h11M7 9h11M7 4c5 0 7 2 7 5s-3 5-7 5l8 6"/>',
+      'up': '<path d="M4 18l6-6 4 4 6-8"/><path d="M15 8h5v5"/>',
+      'heart': '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+    }
+    def svg(k): return f'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ic[k]}</svg>'
+    def card(k, a, b): return f'<div class="card feature"><span class="ic">{svg(k)}</span><span>{t(a, "h3")}{t(b, "p")}</span></div>'
+    nav = ''.join(f'<a href="{c["pb"]}">{esc(c["short"])}</a>' for c, _, _ in loaded)
+    app = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
+    css = app[app.index('<style>') + 7: app.index('</style>')]
+    title = 'Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45'
+    desc = ('Learn with Anil is a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, '
+            'with answers and explanations, for ₹45. Individuals and organisations who would like to help fund it can get in touch.')
+    ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": can, "image": SITE_URL + '/og-funders.jpg',
+          "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": SITE_URL + '/'},
+          "author": {"@type": "Person", "name": "Jupudi Anil Kumar", "url": SITE_URL + '/appsc-group-2/about/'},
+          "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL + '/'},
+              {"@type": "ListItem", "position": 2, "name": "Fund Learn with Anil", "item": can}]}}
+    tj = json.dumps({k: {'en': v[0], 'hi': v[1], 'te': v[2]} for k, v in T.items()}, ensure_ascii=False).replace('</', '<\\/')
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{esc(title)}</title>
+<meta name="description" content="{esc(desc)}">
+<link rel="canonical" href="{can}">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Learn with Anil"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{can}"><meta property="og:image" content="{SITE_URL}/og-funders.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Learn with Anil: 1 lakh PYQs under one roof, for ₹45"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap">
+<style>{css}
+.fund-bar{{background:var(--surface-2);border-radius:999px;height:14px;overflow:hidden;border:1px solid var(--line)}}
+.fund-bar i{{display:block;height:100%;background:var(--accent);border-radius:999px}}
+.fund-box{{padding:20px 22px;display:flex;flex-direction:column;gap:12px}}
+.fund-box p{{max-width:75ch}}
+.fund-note{{border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:15px}}
+.fund-poster{{display:block;width:100%;max-width:720px;height:auto;border-radius:var(--r);border:1px solid var(--line)}}
+.hero .mentor b{{display:block}}
+</style>
+{ICONS}{ga_tag()}
+<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Learn with Anil, all exams">
+      <span class="brand-mark" aria-hidden="true">LA</span>
+      <span class="brand-text"><b>Learn with Anil</b> <span>PYQs for every exam</span></span>
+    </a>
+    <nav class="nav hub" aria-label="Main"><a href="/">All Exams</a>{nav}<a href="/funders.html" aria-current="page">Fund</a></nav>
+    <div class="lang" role="group" aria-label="Page language">
+      <button type="button" data-l="en" aria-pressed="true">EN</button>
+      <button type="button" data-l="hi" lang="hi" aria-pressed="false">हिंदी</button>
+      <button type="button" data-l="te" lang="te" aria-pressed="false">తెలుగు</button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero"><div class="wrap">
+    <div class="hero-copy">
+      {t('eyebrow', 'p', 'class="eyebrow"')}
+      {t('h1', 'h1')}
+      {t('lede', 'p')}
+      <div class="row"><a class="btn btn-primary" href="{wa}" target="_blank" rel="noopener">{t('wa')}</a><a class="btn btn-secondary" href="{mail}">{t('mail')}</a></div>
+    </div>
+    <a class="mentor" href="/appsc-group-2/about/" style="color:inherit;text-decoration:none">
+      <span class="ph"><img src="/anil.jpg" alt="Jupudi Anil Kumar" width="210" height="210"></span>
+      <span><b>Jupudi Anil Kumar</b>{t('mentor')}</span>
+    </a>
+  </div></section>
+
+  <section class="wrap section hub-figs">
+    <div class="figures">
+      <div class="figure"><div class="v">{NQ}</div>{t('f1', 'div', 'class="k"')}</div>
+      <div class="figure"><div class="v">1,00,000</div>{t('f2', 'div', 'class="k"')}</div>
+      <div class="figure"><div class="v">{nex}</div>{t('f3', 'div', 'class="k"')}</div>
+      <div class="figure"><div class="v">₹45</div>{t('f4', 'div', 'class="k"')}</div>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title">{t('progT', 'h2')}</div>
+    <div class="card fund-box">
+      <div class="fund-bar" role="img" aria-label="{NQ} of 1,00,000 questions so far"><i style="width:{max(pct, 1.5):.1f}%"></i></div>
+      {t('progP', 'p', 'class="muted"')}
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title">{t('builtT', 'h2')}</div>
+    <div class="features">{card('doc', 'b1t', 'b1p')}{card('lang', 'b2t', 'b2p')}{card('loop', 'b3t', 'b3p')}{card('rupee', 'b4t', 'b4p')}</div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title">{t('whyT', 'h2')}</div>
+    <div class="card fund-box">{t('whyP', 'p')}</div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title">{t('helpT', 'h2')}</div>
+    <div class="features">{card('up', 'h1t', 'h1p')}{card('lang', 'h2t', 'h2p')}{card('heart', 'h3t', 'h3p')}</div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title">{t('whoT', 'h2')}</div>
+    <div class="card fund-box">{t('whoP', 'p')}</div>
+  </section>
+
+  <section class="wrap section" id="contact">
+    <div class="section-title">{t('contactT', 'h2')}</div>
+    <div class="card fund-box">
+      <p><b>{esc(GRIEVANCE_OFFICER)}</b>, {t('founder')}<br>
+      Email: <a href="{mail}">{CONTACT_EMAIL}</a><br>
+      Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(' ', '')}">{CONTACT_PHONE}</a> ({t('hours')})</p>
+      <div class="row"><a class="btn btn-primary" href="{wa}" target="_blank" rel="noopener">{t('wa')}</a><a class="btn btn-secondary" href="{mail}">{t('mail')}</a></div>
+      {t('note', 'p', 'class="fund-note"')}
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title">{t('shareT', 'h2')}</div>
+    <div class="card fund-box">
+      {t('shareP', 'p', 'class="muted"')}
+      <img class="fund-poster" src="/og-funders.jpg" alt="Learn with Anil: 1 lakh PYQs under one roof, for ₹45. Fund this project." width="1200" height="630" loading="lazy">
+      <div class="row"><a class="btn btn-primary" href="{share}" target="_blank" rel="noopener">{t('shareWa')}</a><a class="btn btn-secondary" href="/og-funders.jpg" download="LearnWithAnil-Fund-poster.jpg">{t('poster')}</a></div>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title">{t('aboutT', 'h2')}</div>
+    <div class="card fund-box"><p>{t('aboutP')} <a href="/appsc-group-2/about/">{t('aboutL')}</a></p></div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></span>
+  </div>
+</footer>
+<script>(function(){{var T={tj};
+function apply(l){{document.documentElement.lang=l;document.querySelectorAll('[data-t]').forEach(function(el){{var x=T[el.getAttribute('data-t')];if(!x)return;el.innerHTML=x[l]||x.en;if(l==='en')el.removeAttribute('lang');else el.setAttribute('lang',l);}});
+document.querySelectorAll('.lang button').forEach(function(b){{b.setAttribute('aria-pressed',String(b.getAttribute('data-l')===l));}});}}
+document.querySelectorAll('.lang button').forEach(function(b){{b.addEventListener('click',function(){{var l=b.getAttribute('data-l');apply(l);try{{localStorage.setItem('lwa-lang',l);}}catch(e){{}}}});}});
+try{{var g=localStorage.getItem('lwa-lang');if(g==='hi'||g==='te')apply(g);}}catch(e){{}}}})();</script>
+</body>
+</html>
+"""
 
 
 LANDINGS = {
