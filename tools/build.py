@@ -1137,7 +1137,7 @@ def paper_kw(conf, p):
 
 def paper_alt(conf, p):
     """The paper's other name, if students also search by it."""
-    if p.get('alt'): return p['alt']
+    if p.get('alt'): return '' if p['alt'] in p.get('kwname', '') else p['alt']   # AMVI: the name already says it
     if p['stage'].startswith('Screening'): return 'Screening Test'
     if p['stage'].startswith('Preliminary'): return 'Preliminary Written Test'
     if conf['board'] == 'UPSC': return 'General Ability and Intelligence'
@@ -2549,7 +2549,7 @@ def build_static(conf, papers, subjects, questions, subj):
                 + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html', unl(q)) for q in qs) + '</ol>')
         held = f'{p["notif"]}, held on {p["held"]}' if conf['board'] == 'APPSC' else f'Held on {p["held"]} ({p["notif"].replace(" · ", ", ")})'
         lede = esc(f'{p["title"]}{f" ({alt_shown(alt, p['title'])})" if alt_shown(alt, p['title']) else ""}. {p["blurb"]} {held}. {fmt}, plus a short explanation for every question (the first {SAMPLE_N} here, all of them in the app). '
-                   + ('' if p.get('en_only') else f'Each question is shown in English and {conf["l2"]["name"]}, as printed in the booklet.'))
+                   + ('' if p.get('en_only') else f'Each question is shown in English and {conf["l2"]["name"]}, as printed in the ' + ('question paper.' if 'CBT' in p['notif'] or 'CBRT' in p['notif'] else 'booklet.')))
         pages[rel] = static_page(1, title, desc, can, f'{kw} question paper with answers', lede, body,
                                  home_crumbs + [(p['title'], can)], conf)
     by_s = {}
