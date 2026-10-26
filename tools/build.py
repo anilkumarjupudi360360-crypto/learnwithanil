@@ -1884,20 +1884,23 @@ def funders_page(loaded):
     T = {
       'eyebrow': ('Fund Learn with Anil', 'Learn with Anil को सहयोग दें', 'Learn with Anil‌కు నిధులు ఇవ్వండి'),
       'h1': ('1 lakh PYQs under one roof, <em>for just ₹45.</em>', '1 लाख PYQs एक ही जगह, <em>सिर्फ़ ₹45 में।</em>', '1 లక్ష PYQs ఒకే చోట, <em>కేవలం ₹45కే.</em>'),
-      'lede': ('That is the goal of Learn with Anil. I am building this website to be student-friendly and to democratise learning. '
+      'lede': ('That is the goal of Learn with Anil, along with a mock test series for every exam. I am building this website to be student-friendly and to democratise learning. '
                'I am the only person developing it, and I need help from funders: your support, in turn, helps me help the students.',
-               'यही Learn with Anil का लक्ष्य है। मैं यह वेबसाइट विद्यार्थियों के अनुकूल बनाने और शिक्षा को सबके लिए सुलभ बनाने के लिए बना रहा हूँ। '
+               'यही Learn with Anil का लक्ष्य है, साथ ही हर परीक्षा के लिए एक मॉक टेस्ट सीरीज़। मैं यह वेबसाइट विद्यार्थियों के अनुकूल बनाने और शिक्षा को सबके लिए सुलभ बनाने के लिए बना रहा हूँ। '
                'इसे बनाने वाला मैं अकेला व्यक्ति हूँ, और मुझे फंड देने वालों की मदद चाहिए: आपका सहयोग मुझे विद्यार्थियों की मदद करने में सहायता करता है।',
-               'ఇదే Learn with Anil లక్ష్యం. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. '
+               'ఇదే Learn with Anil లక్ష్యం, దానితో పాటు ప్రతి పరీక్షకు ఒక మాక్ టెస్ట్ సిరీస్. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. '
                'దీన్ని అభివృద్ధి చేస్తున్నది నేను ఒక్కడినే, అందుకే నాకు నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.'),
       'wa': ('WhatsApp me', 'WhatsApp पर संपर्क करें', 'WhatsAppలో సంప్రదించండి'),
       'mail': ('Email me', 'ईमेल करें', 'ఈమెయిల్ చేయండి'),
       'mentor': ('Founder, Learn with Anil · UPSC faculty &amp; mentor', 'संस्थापक, Learn with Anil · UPSC शिक्षक और मार्गदर्शक', 'వ్యవస్థాపకులు, Learn with Anil · UPSC అధ్యాపకులు, మెంటార్'),
       'f1': ('Previous-year questions so far', 'अब तक के पिछले वर्षों के प्रश्न', 'ఇప్పటివరకు ఉన్న గత సంవత్సరాల ప్రశ్నలు'),
-      'f2': ('The goal: 1 lakh PYQs', 'लक्ष्य: 1 लाख PYQs', 'లక్ష్యం: 1 లక్ష PYQs'),
+      'f2': ('The goal: 1 lakh PYQs + a mock test series for every exam', 'लक्ष्य: 1 लाख PYQs + हर परीक्षा के लिए मॉक टेस्ट सीरीज़', 'లక్ష్యం: 1 లక్ష PYQs + ప్రతి పరీక్షకు మాక్ టెస్ట్ సిరీస్'),
       'f3': ('Aspirants apply for these exams in one cycle', 'अभ्यर्थी एक भर्ती चक्र में इन परीक्षाओं के लिए आवेदन करते हैं', 'అభ్యర్థులు ఒక్క నియామక చక్రంలో ఈ పరీక్షలకు దరఖాస్తు చేస్తారు'),
       'reachT': ('How many students it can help', 'यह कितने विद्यार्थियों की मदद कर सकता है', 'ఇది ఎంతమంది విద్యార్థులకు ఉపయోగపడుతుంది'),
       'reachV': (TOT[0] + '+', TOT[1] + '+', TOT[2] + '+'),
+      'bigL': (f'applications from aspirants for the {n_all} government exams on my list, in a single recruitment cycle. That is how many students this work can reach.',
+               f'मेरी सूची की {n_all} सरकारी परीक्षाओं के लिए एक ही भर्ती चक्र में अभ्यर्थियों के आवेदन। इतने विद्यार्थियों तक यह काम पहुँच सकता है।',
+               f'నా జాబితాలోని {n_all} ప్రభుత్వ పరీక్షలకు ఒక్క నియామక చక్రంలో వచ్చే దరఖాస్తులు. ఇంతమంది విద్యార్థులకు ఈ పని చేరగలదు.'),
       'reachP': (f'Here is every exam on the Learn with Anil list, with the number of students who applied in its latest recruitment. The exams marked "Coming soon" will get their previous-year questions in future. '
                  f'Together, these exams draw <b>more than {TOT[0]} applications</b> in a single recruitment cycle, {LIVE_TOT[0]}+ of them for the {len(live_ids)} exams that are already live.',
                  f'यहाँ Learn with Anil की सूची की हर परीक्षा है, उसकी पिछली भर्ती में आवेदन करने वाले विद्यार्थियों की संख्या के साथ। "जल्द आ रहा है" वाली परीक्षाओं के पिछले वर्षों के प्रश्न आगे जोड़े जाएँगे। '
@@ -1961,8 +1964,12 @@ def funders_page(loaded):
               'ఇతర రాష్ట్రాల పరీక్షలతో సహా మిగిలిన ప్రభుత్వ పరీక్షలను (రాష్ట్ర PSCలు, పోలీస్, SSC, బ్యాంకులు, రైల్వేలు, రక్షణ రంగం) చేర్చడం, తద్వారా ప్రతి అభ్యర్థికి తన పరీక్ష ఇక్కడ దొరుకుతుంది.'),
       'h2t': ('More explanations and translations', 'और व्याख्याएँ और अनुवाद', 'మరిన్ని వివరణలు, అనువాదాలు'),
       'h2p': ('Explain and translate more papers in English, Telugu and Hindi.', 'अंग्रेज़ी, तेलुगु और हिंदी में और प्रश्न पत्रों की व्याख्या और अनुवाद करना।', 'ఇంగ్లీష్, తెలుగు, హిందీలో మరిన్ని ప్రశ్నపత్రాలకు వివరణలు, అనువాదాలు.'),
+      'h4t': ('A mock test series for every exam', 'हर परीक्षा के लिए मॉक टेस्ट सीरीज़', 'ప్రతి పరీక్షకు మాక్ టెస్ట్ సిరీస్'),
+      'h4p': ('Write full-length mock tests in each exam’s own pattern, like Mission Khaki for TS Police SI and Mission CGL for SSC CGL, so that every aspirant can practise for their exam, not just read old papers.',
+              'हर परीक्षा के अपने पैटर्न में पूरी लंबाई के मॉक टेस्ट तैयार करना, जैसे TS पुलिस SI के लिए Mission Khaki और SSC CGL के लिए Mission CGL, ताकि हर अभ्यर्थी केवल पुराने प्रश्न पत्र पढ़े नहीं, अपनी परीक्षा का अभ्यास भी करे।',
+              'ప్రతి పరీక్ష సొంత నమూనాలో పూర్తి నిడివి మాక్ టెస్ట్‌లు రాయడం, TS పోలీస్ SIకి Mission Khaki, SSC CGLకి Mission CGL లాగా, తద్వారా ప్రతి అభ్యర్థి పాత ప్రశ్నపత్రాలు చదవడమే కాకుండా తన పరీక్షకు ప్రాక్టీస్ కూడా చేయగలరు.'),
       'h3t': ('Keep it at ₹45', 'कीमत ₹45 ही रखना', 'ధర ₹45గానే ఉంచడం'),
-      'h3p': ('Keep all of it within reach of every student.', 'सब कुछ हर विद्यार्थी की पहुँच में रखना।', 'అన్నింటినీ ప్రతి విద్యార్థికి అందుబాటులో ఉంచడం.'),
+      'h3p': ('Keep the PYQ Pass at ₹45 and the mock test series affordable, within reach of every student.', 'PYQ पास ₹45 पर और मॉक टेस्ट सीरीज़ किफ़ायती रखना, हर विद्यार्थी की पहुँच में।', 'PYQ పాస్‌ను ₹45కే, మాక్ టెస్ట్ సిరీస్‌ను తక్కువ ధరకే ఉంచడం, ప్రతి విద్యార్థికి అందుబాటులో.'),
       'whoT': ('Who can fund', 'कौन सहयोग कर सकता है', 'ఎవరు నిధులు ఇవ్వవచ్చు'),
       'whoP': ('I welcome support from individuals, alumni, teachers, institutions, companies and foundations who believe that good exam preparation should not depend on how much a student can pay. '
                'Support can take the form of a grant, a sponsorship or a partnership, and I will work out the details with you.',
@@ -2020,9 +2027,9 @@ def funders_page(loaded):
     nav = ''.join(f'<a href="{c["pb"]}">{esc(c["short"])}</a>' for c, _, _ in loaded)
     app = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
     css = app[app.index('<style>') + 7: app.index('</style>')]
-    title = 'Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45'
-    desc = ('Fund Learn with Anil, a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, '
-            f'with answers and explanations, for ₹45, for the {TOT[0]}+ aspirants who apply for these exams, expanding to other states. Individuals and organisations can sponsor or partner.')
+    title = 'Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45 + Mock Tests for Every Exam'
+    desc = ('Fund Learn with Anil, a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof '
+            f'with answers and explanations for ₹45, plus a mock test series for every exam, for the {TOT[0]}+ aspirants who apply for these exams, expanding to other states. Individuals and organisations can sponsor or partner.')
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": can, "image": SITE_URL + '/og-funders.jpg', "inLanguage": ["en", "hi", "te"],
           "keywords": "fund education India, sponsor students, support free exam preparation, government exam PYQs, Learn with Anil, democratise learning",
           "about": {"@type": "EducationalOrganization", "name": "Learn with Anil", "url": SITE_URL + '/', "founder": {"@type": "Person", "name": "Jupudi Anil Kumar"}},
@@ -2051,6 +2058,9 @@ def funders_page(loaded):
 .fund-note{{border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:15px}}
 .fund-poster{{display:block;width:100%;max-width:720px;height:auto;border-radius:var(--r);border:1px solid var(--line)}}
 .hero .mentor b{{display:block}}
+.bigstat{{display:flex;flex-direction:column;gap:2px;border-left:4px solid #FFD54A;padding:4px 0 4px 14px}}
+.hero .bigstat b{{font-family:var(--f-display);font-weight:800;font-size:clamp(40px,7vw,64px);line-height:1;color:#FFD54A;letter-spacing:-.02em}}
+.hero .bigstat span{{color:var(--band-ink);font-size:16px;max-width:52ch}}
 .reach-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface)}}
 .reach-grid>div{{background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:2px;box-shadow:inset -1px -1px 0 var(--line)}}
 .reach-grid .v{{font-family:var(--f-display);font-weight:800;font-size:24px;line-height:1.15}}
@@ -2085,6 +2095,7 @@ def funders_page(loaded):
       {t('eyebrow', 'p', 'class="eyebrow"')}
       {t('h1', 'h1')}
       {t('lede', 'p')}
+      <p class="bigstat">{t('reachV', 'b')}{t('bigL', 'span')}</p>
       <div class="row"><a class="btn btn-primary" href="{wa}" target="_blank" rel="noopener">{t('wa')}</a><a class="btn btn-secondary" href="{mail}">{t('mail')}</a></div>
     </div>
     <a class="mentor" href="/appsc-group-2/about/" style="color:inherit;text-decoration:none">
@@ -2136,7 +2147,7 @@ def funders_page(loaded):
 
   <section class="wrap section">
     <div class="section-title">{t('helpT', 'h2')}</div>
-    <div class="features">{card('up', 'h1t', 'h1p')}{card('lang', 'h2t', 'h2p')}{card('heart', 'h3t', 'h3p')}</div>
+    <div class="features">{card('up', 'h1t', 'h1p')}{card('loop', 'h4t', 'h4p')}{card('lang', 'h2t', 'h2p')}{card('heart', 'h3t', 'h3p')}</div>
   </section>
 
   <section class="wrap section">
