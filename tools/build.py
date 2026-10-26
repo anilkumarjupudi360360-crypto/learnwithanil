@@ -1871,10 +1871,10 @@ def funders_page(loaded):
     def amount_lang(n, li, floor=False):
         v, u = amount(n, floor)
         return f'{v} {UNITS[u][li]}' if u else v
-    nums = {k: r['applied'] for k, r in reach.items() if r.get('applied')}
+    nums = {k: r['applied'] for k, r in reach.items() if r.get('applied') and r.get('in_total', True)}   # IFoS shares the CSE prelims: shown, not added
     total = sum(nums.values())
     live_total = sum(v for k, v in nums.items() if k in live_ids)
-    n_with = sum(1 for e in catalog['exams'] if e['id'] in nums)
+    n_with = sum(1 for e in catalog['exams'] if reach.get(e['id'], {}).get('applied'))
     n_all = len(catalog['exams'])
     TOT = [amount_lang(total, li, True) for li in range(3)]
     LIVE_TOT = [amount_lang(live_total, li, True) for li in range(3)]
@@ -1910,11 +1910,14 @@ def funders_page(loaded):
       'live': ('Live', 'उपलब्ध', 'అందుబాటులో'),
       'soon': ('Coming soon', 'जल्द आ रहा है', 'త్వరలో'),
       'np': ('Number not published', 'संख्या प्रकाशित नहीं', 'సంఖ్య ప్రచురించలేదు'),
-      'reachNote': (f'Numbers are for the latest recruitment with a published figure ({n_with} of {n_all} exams); "appeared" is shown where only the number who sat the exam was published. '
+      'reachNote': (f'Numbers are for the latest recruitment with a published figure ({n_with} of {n_all} exams); "appeared" is shown, and counted, where only the number who sat the exam was published. '
+                    'UPSC IFoS shares the Civil Services prelims, so it is not added again to the total. '
                     'Sources: official press notes, annual reports and RTI replies where available, otherwise news and education websites (listed below). An aspirant who applies for two exams is counted twice.',
-                    f'संख्याएँ उस पिछली भर्ती की हैं जिसका आँकड़ा प्रकाशित हुआ है ({n_all} में से {n_with} परीक्षाएँ); जहाँ केवल परीक्षा में बैठने वालों की संख्या प्रकाशित हुई, वहाँ वही दी गई है। '
+                    f'संख्याएँ उस पिछली भर्ती की हैं जिसका आँकड़ा प्रकाशित हुआ है ({n_all} में से {n_with} परीक्षाएँ); जहाँ केवल परीक्षा में बैठने वालों की संख्या प्रकाशित हुई, वहाँ वही दी और गिनी गई है। '
+                    'UPSC IFoS की प्रारंभिक परीक्षा सिविल सेवा के साथ होती है, इसलिए इसे कुल में दोबारा नहीं जोड़ा गया। '
                     'स्रोत: जहाँ उपलब्ध हों, आधिकारिक प्रेस नोट, वार्षिक रिपोर्ट और RTI उत्तर, अन्यथा समाचार और शिक्षा वेबसाइटें (नीचे सूची)। दो परीक्षाओं के लिए आवेदन करने वाले अभ्यर्थी को दो बार गिना गया है।',
-                    f'సంఖ్యలు ప్రచురించిన తాజా నియామకానివి ({n_all}లో {n_with} పరీక్షలు); హాజరైన వారి సంఖ్య మాత్రమే ప్రచురించిన చోట అదే ఇచ్చాం. '
+                    f'సంఖ్యలు ప్రచురించిన తాజా నియామకానివి ({n_all}లో {n_with} పరీక్షలు); హాజరైన వారి సంఖ్య మాత్రమే ప్రచురించిన చోట అదే ఇచ్చి, లెక్కించాం. '
+                    'UPSC IFoS ప్రిలిమ్స్ సివిల్ సర్వీసెస్‌తో కలిసే జరుగుతుంది, అందుకే మొత్తంలో మళ్లీ కలపలేదు. '
                     'ఆధారాలు: అందుబాటులో ఉన్నచోట అధికారిక ప్రెస్ నోట్లు, వార్షిక నివేదికలు, RTI సమాధానాలు; లేకపోతే వార్తా, విద్యా వెబ్‌సైట్లు (కింద జాబితా). రెండు పరీక్షలకు దరఖాస్తు చేసిన అభ్యర్థిని రెండుసార్లు లెక్కించాం.'),
       'srcT': ('Sources for every number', 'हर संख्या के स्रोत', 'ప్రతి సంఖ్యకు ఆధారం'),
       'expandT': ('Next: exams of other states too', 'आगे: दूसरे राज्यों की परीक्षाएँ भी', 'తరువాత: ఇతర రాష్ట్రాల పరీక్షలు కూడా'),

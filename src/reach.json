@@ -1,17 +1,45 @@
 {
- "ssc-cgl": {
-  "applied": 2815445,
+ "ap-dsc": {
+  "applied": 336307,
   "kind": "applied",
-  "cycle": "2025",
-  "source": "https://www.adda247.com/exams/ssc/ssc-received-28-lakh-applications-for-cgl-posts-against-14582-vacancies/",
-  "source_name": "Adda247, 6 Aug 2025"
+  "cycle": "2025 (Mega DSC)",
+  "source": "https://www.business-standard.com/education/news/ap-dsc-results-2025-declared-at-apdsc-apcfss-in-check-scorecard-more-nc-125081200561_1.html",
+  "source_name": "Business Standard, 12 Aug 2025"
  },
- "upsc-epfo": {
-  "applied": 952605,
+ "ap-police-constable": {
+  "applied": 459182,
+  "kind": "appeared",
+  "cycle": "2023 prelims (SLPRB Notif. 2022)",
+  "source": "https://news.careers360.com/ap-police-constable-exam-schedule-out-for-physical-efficiency-test-download-call-letter-from-december-18",
+  "source_name": "Careers360, 13 Dec 2024"
+ },
+ "ap-police-si": {
+  "applied": 151000,
+  "kind": "appeared",
+  "cycle": "2023 prelims (SLPRB Notif. 2022)",
+  "source": "https://scroll.in/announcements/1044761/ap-police-si-results-2023-declared-check-direct-link-cut-off-marks-here",
+  "source_name": "Scroll.in, 28 Feb 2023 (about 1.51 lakh)"
+ },
+ "ap-sachivalayam": {
+  "applied": 1056931,
   "kind": "applied",
-  "cycle": "2023 (EO/AO + APFC)",
-  "source": "https://www.pw.live/upsc/exams/candidates-applied-for-upsc-epfo",
-  "source_name": "RTI reply, via Physics Wallah"
+  "cycle": "2020 (2nd Sachivalayam recruitment)",
+  "source": "https://businessworld.in/article/recruitment-tests-for-posts-in-ap-village-and-ward-secretariats-to-be-held-from-sept-20-321366",
+  "source_name": "BusinessWorld, 17 Sep 2020"
+ },
+ "ap-tet": {
+  "applied": 214486,
+  "kind": "applied",
+  "cycle": "2026 (AP TET June 2026)",
+  "source": "https://www.thehansindia.com/andhra-pradesh/ap-tet-june-2026-results-released-1121662",
+  "source_name": "The Hans India, 14 Sep 2026"
+ },
+ "appsc-group-1": {
+  "applied": 126449,
+  "kind": "applied",
+  "cycle": "2023 screening test (8 Jan 2023)",
+  "source": "https://education.sakshi.com/en/appsc/education-news/87718-candidates-appear-group-1-prelims-123166",
+  "source_name": "Sakshi Education, 9 Jan 2023 (registered)"
  },
  "appsc-group-2": {
   "applied": 483000,
@@ -19,6 +47,209 @@
   "cycle": "2023 (Notification 11/2023)",
   "source": "https://deccanchronicle.com/nation/appsc-releases-hall-tickets-for-group-2-preliminary-examinations-882208",
   "source_name": "Deccan Chronicle (about 4.83 lakh)"
+ },
+ "appsc-group-3": {
+  "applied": 495526,
+  "kind": "applied",
+  "cycle": "2019 (Panchayat Secretary, Notif. 05/2018)",
+  "source": "https://competition.careers360.com/articles/appsc-panchayat-secretary-result",
+  "source_name": "Careers360 (registered)"
+ },
+ "appsc-group-4": {
+  "applied": 211341,
+  "kind": "appeared",
+  "cycle": "2022 (Junior Assistant, Notif. 23/2021)",
+  "source": "https://results.amarujala.com/results-alert/appsc-junior-assistant-results-2022-released-know-how-to-check-here-psc-ap-gov-in",
+  "source_name": "Amar Ujala, 13 Oct 2022"
+ },
+ "ibps-po": {
+  "applied": 1100000,
+  "kind": "applied",
+  "cycle": "2026 (CRP PO/MT-XVI)",
+  "source": "https://english.dainikjagranmpcg.com/education/ibps-pomt-xvi-2026-prelims-confirmed-for-august-22-23-around/article-24252",
+  "source_name": "Dainik Jagran, 30 Jul 2026 (about 11 lakh)"
+ },
+ "rbi-assistant": {
+  "applied": 521087,
+  "kind": "applied",
+  "cycle": "2026 (650 posts; count 3 days before closing)",
+  "source": "https://www.oliveboard.in/blog/how-many-candidates-have-applied-for-rbi-assistant/",
+  "source_name": "Oliveboard, 5 Mar 2026"
+ },
+ "rbi-grade-b": {
+  "applied": 107045,
+  "kind": "applied",
+  "cycle": "2025 (DR General)",
+  "source": "https://www.bankersadda.com/over-1-lakh-applications-received-for-rbi-grade-b-2025/",
+  "source_name": "Bankersadda, 29 Oct 2025"
+ },
+ "rpf": {
+  "applied": 6077009,
+  "kind": "applied",
+  "cycle": "2024 (CEN RPF 01 & 02/2024, SI + Constable)",
+  "source": "https://rrbsecunderabad.gov.in/wp-content/uploads/2025/07/Notice-on-details-of-Application-count_RPF-CENs.pdf",
+  "source_name": "RRB official notice, 16 Jul 2025"
+ },
+ "rrb-alp": {
+  "applied": 840944,
+  "kind": "applied",
+  "cycle": "2026 (CEN 01/2026)",
+  "source": "https://www.pw.live/railway/exams/rrb-alp-2026-total-form-fill-up",
+  "source_name": "PW, 16 Jul 2026"
+ },
+ "rrb-group-d": {
+  "applied": 5239760,
+  "kind": "applied",
+  "cycle": "2025 (CEN 09/2025)",
+  "source": "https://www.pw.live/railway/exams/rrb-group-d-2026-total-form-fill-up",
+  "source_name": "PW, citing RRB notice of Aug 2026"
+ },
+ "rrb-je": {
+  "applied": 574402,
+  "kind": "applied",
+  "cycle": "2025 (CEN 05/2025 JE/DMS/CMA)",
+  "source": "https://www.rrbkolkata.gov.in/file/JE_DMS_CMA_5_2025_applications%20E.pdf",
+  "source_name": "RRB official notice, 24 Mar 2026"
+ },
+ "rrb-ntpc": {
+  "applied": 2589978,
+  "kind": "applied",
+  "cycle": "2025 (CEN 06/2025, Graduate level)",
+  "source": "https://www.adda247.com/exams/railway/rrb-ntpc-total-form-fill-up/",
+  "source_name": "Adda247, citing RRB notice of 4 Aug 2026"
+ },
+ "rrb-technician": {
+  "applied": 841524,
+  "kind": "applied",
+  "cycle": "2026 count (Technician Gr-I + Gr-III)",
+  "source": "https://www.oliveboard.in/blog/rrb-technician-application-data/",
+  "source_name": "Oliveboard, 5 Aug 2026"
+ },
+ "sbi-clerk": {
+  "applied": 1301367,
+  "kind": "applied",
+  "cycle": "2026 (Junior Associates)",
+  "source": "https://www.adda247.com/exams/bank/sbi-clerk-13-lakh-candidates-registered-against-vacancies/",
+  "source_name": "Adda247, 2 Sep 2026"
+ },
+ "sbi-po": {
+  "applied": 1214076,
+  "kind": "applied",
+  "cycle": "2026 (1,500 posts)",
+  "source": "https://www.bankersadda.com/sbi-po-2026-record-12-lakh-applications-double-of-last-year/",
+  "source_name": "Bankersadda, 9 Jul 2026"
+ },
+ "ssc-cgl": {
+  "applied": 2815445,
+  "kind": "applied",
+  "cycle": "2025",
+  "source": "https://www.adda247.com/exams/ssc/ssc-received-28-lakh-applications-for-cgl-posts-against-14582-vacancies/",
+  "source_name": "Adda247, 6 Aug 2025"
+ },
+ "ssc-chsl": {
+  "applied": 1571342,
+  "kind": "applied",
+  "cycle": "2026",
+  "source": "https://www.adda247.com/exams/ssc/how-many-application-forms-received-for-ssc-chsl-recruitment/",
+  "source_name": "Adda247 (RTI), 19 Oct 2026"
+ },
+ "ssc-cpo": {
+  "applied": 422917,
+  "kind": "applied",
+  "cycle": "2026",
+  "source": "https://www.adda247.com/exams/ssc/ssc-cpo-notification-2026-out/",
+  "source_name": "Adda247, Oct 2026"
+ },
+ "ssc-gd": {
+  "applied": 4883309,
+  "kind": "applied",
+  "cycle": "2026",
+  "source": "https://www.adda247.com/exams/ssc/ssc-gd-result-2026-out/",
+  "source_name": "Adda247 (SSC result data), Oct 2026"
+ },
+ "ssc-mts": {
+  "applied": 3619834,
+  "kind": "applied",
+  "cycle": "2025 (MTS & Havaldar)",
+  "source": "https://news.careers360.com/ssc-mts-havaldar-cbic-cbn-exam-result-2025-ssc-gov-in-8071-shortlisted-pet-pst",
+  "source_name": "Careers360, 4 Aug 2026 (SSC result data)"
+ },
+ "tg-panchayat": {
+  "applied": 450000,
+  "kind": "appeared",
+  "cycle": "2018 (Junior Panchayat Secretary)",
+  "source": "https://scroll.in/announcements/906262/telangana-junior-panchayat-secretary-results-declared",
+  "source_name": "Scroll.in (about 4.5 lakh appeared)"
+ },
+ "tg-tet": {
+  "applied": 153752,
+  "kind": "applied",
+  "cycle": "2026 (TG TET June 2026)",
+  "source": "https://telanganatoday.com/tg-tet-2026-results-to-be-declared-on-july-13",
+  "source_name": "Telangana Today, 12 Jul 2026"
+ },
+ "tg-trt": {
+  "applied": 279957,
+  "kind": "applied",
+  "cycle": "2024 (TG DSC 2024)",
+  "source": "https://krishijagran.com/news/tg-dsc-2024-results-announced-check-updates-and-direct-link-here/?amp=1",
+  "source_name": "Krishi Jagran, 30 Sep 2024 (Deccan Chronicle also 2.79 lakh)"
+ },
+ "tgpsc-ae": {
+  "applied": 74000,
+  "kind": "applied",
+  "cycle": "2022 notification (AE/JTO/Technical Officer)",
+  "source": "https://education.sakshi.com/tspsc/jobs/tspsc-exam-reschedule-2023-telugu-news-127664",
+  "source_name": "Sakshi Education, 25 Mar 2023 (about 74,000)"
+ },
+ "tgpsc-aee": {
+  "applied": 81000,
+  "kind": "applied",
+  "cycle": "2022 notification",
+  "source": "https://education.sakshi.com/tspsc/jobs/tspsc-exam-reschedule-2023-telugu-news-127664",
+  "source_name": "Sakshi Education, 25 Mar 2023 (about 81,000)"
+ },
+ "tgpsc-dao": {
+  "applied": 106253,
+  "kind": "applied",
+  "cycle": "2024 exam (2022 notification)",
+  "source": "https://www.tgnns.com/telangana/tspsc-hostel-welfare-officer-and-dao-exam-2024-attendance-report/2024/07/04/",
+  "source_name": "TSPSC attendance data via tgnns.com, 4 Jul 2024"
+ },
+ "tgpsc-group-1": {
+  "applied": 403000,
+  "kind": "applied",
+  "cycle": "2024 (Notification 02/2024)",
+  "source": "https://telanganatoday.com/tspsc-receives-4-lakh-applications-for-group-i",
+  "source_name": "Telangana Today, 16 Mar 2024 (4.03 lakh)"
+ },
+ "tgpsc-group-2": {
+  "applied": 551943,
+  "kind": "applied",
+  "cycle": "2024 exam (Notification 28/2022)",
+  "source": "https://deccanchronicle.com/southern-states/telangana/tgpsc-group-2-exam-to-begin-tomorrow-1846675",
+  "source_name": "Deccan Chronicle, 14 Dec 2024"
+ },
+ "tgpsc-group-3": {
+  "applied": 536400,
+  "kind": "applied",
+  "cycle": "2024 exam (2022 notification)",
+  "source": "https://telanganatoday.com/tgpsc-to-release-group-iii-exam-general-ranking-list-and-final-keys-from-march-14",
+  "source_name": "Telangana Today, Mar 2025 (5.36 lakh)"
+ },
+ "tgpsc-group-4": {
+  "applied": 951321,
+  "kind": "applied",
+  "cycle": "2023 exam (Notification 19/2022)",
+  "source": "https://deccanchronicle.com/southern-states/telangana/tspsc-publishes-provision-list-of-group-iv-1838348",
+  "source_name": "Deccan Chronicle, 15 Nov 2024"
+ },
+ "tgpsc-hwo": {
+  "applied": 145359,
+  "kind": "applied",
+  "cycle": "2024 exam (Notification 25/2022)",
+  "source": "https://education.sakshi.com/en/results/education-news/tspsc-hostel-welfare-officer-selection-list-173644",
+  "source_name": "Sakshi Education, 17 Mar 2025"
  },
  "ts-police-constable": {
   "applied": 389356,
@@ -34,11 +265,33 @@
   "source": "https://www.adda247.com/jobs/wp-content/uploads/sites/22/2026/09/17181317/Press-Note-dated-17-09-2026.pdf",
   "source_name": "TGPRB press note, 17 Sep 2026"
  },
- "appsc-group-1": {
-  "applied": 126449,
+ "upsc-capf": {
+  "applied": 244087,
   "kind": "applied",
-  "cycle": "2023 screening test (8 Jan 2023)",
-  "source": "https://education.sakshi.com/en/appsc/education-news/87718-candidates-appear-group-1-prelims-123166",
-  "source_name": "Sakshi Education, 9 Jan 2023 (registered)"
+  "cycle": "2021",
+  "source": "https://dataful.in/datasets/19013/",
+  "source_name": "Dataful, from UPSC Annual Report 2023-24"
+ },
+ "upsc-cse": {
+  "applied": 819732,
+  "kind": "applied",
+  "cycle": "2026 (Civil Services + IFoS common prelims)",
+  "source": "https://www.tribuneindia.com/news/exam-mentor/over-5-lakh-candidates-appear-in-civil-services-preliminary-exam/",
+  "source_name": "The Tribune (PTI, quoting UPSC), 24 May 2026"
+ },
+ "upsc-epfo": {
+  "applied": 952605,
+  "kind": "applied",
+  "cycle": "2023 (EO/AO + APFC)",
+  "source": "https://www.pw.live/upsc/exams/candidates-applied-for-upsc-epfo",
+  "source_name": "RTI reply, via Physics Wallah"
+ },
+ "upsc-ifos": {
+  "applied": 270592,
+  "kind": "applied",
+  "cycle": "2022",
+  "source": "https://dataful.in/datasets/19022/",
+  "source_name": "Dataful, from UPSC Annual Report data",
+  "in_total": false
  }
 }
