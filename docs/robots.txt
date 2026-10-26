@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /appsc-group-1/mains/kit/
 
 Sitemap: https://learnwithanil.in/sitemap.xml

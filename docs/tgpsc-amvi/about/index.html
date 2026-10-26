@@ -477,6 +477,25 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .btn[disabled]{opacity:.55;cursor:not-allowed}
 .note-links{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px;margin-left:-10px}
 .notes-foot{margin-top:24px;padding:18px 20px;color:var(--muted);font-size:15px}
+.kit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}
+@media (max-width:860px){.kit-grid{grid-template-columns:1fr}}
+.kit{display:grid;grid-template-columns:120px minmax(0,1fr);gap:18px;padding:18px}
+@media (max-width:420px){.kit{grid-template-columns:88px minmax(0,1fr);gap:14px;padding:14px}}
+.kit-cover{width:100%;height:auto;border-radius:6px;box-shadow:0 4px 14px rgba(13,24,48,.18);align-self:start;display:block}
+.kit-cover-v{aspect-ratio:120/170;background:var(--band);color:#F5B301;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--f-display)}
+.kit-cover-v b{font-size:44px;line-height:1}.kit-cover-v span{color:var(--band-ink);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.kit h3{font-size:19px;font-weight:800;margin:4px 0 8px}
+.kit .pills{display:flex;gap:6px;flex-wrap:wrap}
+.kit-meta{font-size:13.5px;color:var(--muted);margin-top:8px}
+.kit-buy{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.kit-buy .btn svg{width:18px;height:18px;vertical-align:-3px;margin-right:4px}
+.kit-p5{border-style:dashed}
+.kit-lock{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 18px;margin-top:16px;border-color:var(--accent)}
+.kit-lock p{color:var(--muted);font-size:14.5px;margin-top:2px;max-width:60ch}
+.kit-note{margin-top:16px;font-weight:700;color:var(--good,#12804A)}
+.p5-card{padding:18px 20px;margin:12px 0;border-left:4px solid #25D366}
+.p5-card h3{font-size:19px;font-weight:800;margin:4px 0 6px}.p5-card p{color:var(--muted)}.p5-card .row{margin-top:12px}
+.ex-x{display:block;font-size:12.5px;font-weight:700;color:var(--accent-text);margin-top:4px}
 .notes-foot b{color:var(--ink)}
 .sample-dlg{border:0;padding:0;border-radius:14px;width:min(900px,calc(100vw - 20px));max-height:calc(100dvh - 20px);background:var(--surface);color:var(--ink);overflow:auto}
 .sample-dlg::backdrop{background:rgba(5,10,25,.72)}
@@ -639,7 +658,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/tg-amvi-f809586367.js"></script>
+<script src="data/tg-amvi-773b7ac63e.js"></script>
 <script>
 (function(){
 "use strict";
@@ -762,7 +781,7 @@ async function payCall(body){
 async function refreshPasses(){
   if(!PAYC || !PAYC.on || !PAYC.api || !ST.phone) return;
   try{ const r = await payCall({action:"passes", exam:PAYC.exam, phone:ST.phone, email:ST.email||"", device:DEVICE});
-       if(r && r.ok){ UI.passChecked = true; setPasses(r.passes); if(GATE[current]) render(); } else if(r && r.error) toast(r.error); }catch(_){}
+       if(r && r.ok){ UI.passChecked = true; setPasses(r.passes); if(GATE[current] || current==="mains") render(); } else if(r && r.error) toast(r.error); }catch(_){}
 }
 function mockKinds(m){   // "10 Tier-I + 3 Tier-II"
   const c = {}; m.mocks.forEach(x=>{ const k = x.name.replace(/\s*Mock\s*\d+$/,""); c[k] = (c[k]||0) + 1; });
@@ -779,6 +798,7 @@ function payInfo(kind){
     : {name: "PYQ Pass · all exams", price: PAYC ? PAYC.pyq.price : 45, valid: "Valid for 12 months from the day you pay", btn: `Pay ₹${PAYC ? PAYC.pyq.price : 45} for all exams`,
       what: [`One payment for the whole website: the previous papers of every exam on Learn with Anil (${PAYC.pyq.exams || "all exams"}) and every exam added later, not just ${DATA.examShort || "this exam"}.`,
              "Every answer and explanation, practice quizzes and timed tests, PYQ sectionals, topic-wise quizzes, Smart Quiz and Mistakes revision",
+             ...((DATA.mains||[]).length ? ["The APPSC Group-1 Mains Answer Writing Tool Kit: four PDF books for Papers I–IV"] : []),
              "Mock-test packs such as Mission Khaki are separate"]};
 }
 /* After a student leaves for Instamojo and comes back without a finished payment (the payment failed, they pressed
@@ -941,12 +961,12 @@ function topicStats(){
 const band = acc=>acc===null? "none" : acc>=75? "good" : acc>=50? "warn" : "bad";
 
 /* ---------- routing ---------- */
-const VIEWS = ["exams","exam","home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes"];
+const VIEWS = ["exams","exam","home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes","mains"];
 let current = "";
 // On the website each view has its own address (/appsc-group-1/bank/); in a single-file copy the old #bank links are used.
 const HUBPAGE = !!DATA.hub && !!document.getElementById("hub-static");   // the exam list is only on the start page
 const PB = DATA.pb || "", PATHMODE = !!PB && /^https?:$/.test(location.protocol), HUBP = "/";
-const ROUTES = new Set(["home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes","exams"]);
+const ROUTES = new Set(["home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes","mains","exams"]);
 const isRoute = h => ROUTES.has(h) || /^(exam|q)\/[\w-]+$/.test(h) || h==="appsc-group-2";
 function pathOf(v){
   if(v==="exams" || v==="") return HUBP;
@@ -996,6 +1016,7 @@ function route(){
   }
   if(!VIEWS.includes(v)) v = DATA.hub ? "exams" : "home";
   if(v==="notes" && !(DATA.notes||[]).length) v = "home";   // study material is only for the APPSC Group 1 / Group 2 pages
+  if(v==="mains" && !(DATA.mains||[]).length) v = "home";   // the Mains tool kit is only on the APPSC Group 1 page
   if(v==="quiz" && !QZ){   // the quiz page with no test open (e.g. an old tab, or one closed more than 24 hours ago): say so, and show the papers
     if(LAST) v = "result";
     else { v = "papers"; history.replaceState(null, "", PATHMODE ? pathOf("papers") : "#papers"); setTimeout(()=>toast("That test is no longer open on this device. Start it again from the list below."), 300); }
@@ -1018,7 +1039,7 @@ function render(){
   else if(v==="home"){ host.hidden=true; host.innerHTML=""; renderHomeDynamic(); }
   else {
     host.hidden=false;
-    host.innerHTML = gateOK(v) ? ({exam:vExam,papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,notes:vNotes})[v]() : vLocked(v);
+    host.innerHTML = gateOK(v) ? ({exam:vExam,papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,notes:vNotes,mains:vMains})[v]() : vLocked(v);
     host.querySelectorAll("[data-mixed]").forEach(el=>{ el.indeterminate = true; });
   }
   if(v==="quiz") startTimer();
@@ -1034,7 +1055,7 @@ function viewTitle(v){
   if((v==="home" || v==="exam") && DATA.homeTitle) return DATA.homeTitle;
   const x = DATA.examSeo || DATA.examShort || "";
   const t = {papers:`${x} Previous Question Papers`, practice:`Create a ${x} Quiz`, bank:`${x} Question Bank`, mistakes:"Mistakes Notebook", smart:"Smart Quiz",
-             bookmarks:"Bookmarks", heatmap:"Topic Heatmap", about:"About Jupudi Anil Kumar", notes:"Study Material 2026-27", quiz:"Quiz", result:"Your Result", join:"Your Details"}[v];
+             bookmarks:"Bookmarks", heatmap:"Topic Heatmap", about:"About Jupudi Anil Kumar", notes:"Study Material 2026-27", mains:"Group-1 Mains Answer Writing Tool Kit", quiz:"Quiz", result:"Your Result", join:"Your Details"}[v];
   return t ? `${t} | Learn with Anil` : BASE_TITLE;
 }
 window.addEventListener("hashchange", ()=>{ if(PATHMODE){ const h = location.hash.slice(1); if(isRoute(h)){ history.replaceState(null, "", pathOf(h)); } else return; } render(); });
@@ -1187,7 +1208,9 @@ function applyHub(){
   document.querySelectorAll('#hub-static [data-act="excat"]').forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.cat===cat)));
   const live = [...document.querySelectorAll("#hub-static .exam.live:not([hidden])")].length;
   const cnt = $("#hubCount"); if(cnt) cnt.textContent = n ? HT("count").replace("{n}", n).replace("{l}", live) : "";
-  const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Learn_with_anil Team, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
+  const p5 = $("#hubP5"), isP5 = !!p5 && P5_RE.test(q);   // "paper 5": the Group-1 Mains Paper V book is on WhatsApp
+  if(p5) p5.hidden = !isP5;
+  const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0 || isP5; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Learn_with_anil Team, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
   const s = $("#examSearch"); if(s && s.value!==(UI.exQ||"")) s.value = UI.exQ||"";
 }
 /* countdown cards on the start page (and one exam's countdown on its page) */
@@ -1527,7 +1550,8 @@ function bankFilter(){
 }
 function bankResults(){
   const list = bankFilter(), shown = list.slice(0, bankLimit);
-  return `<p class="muted" style="font-size:14px">${list.length} question${list.length===1?"":"s"} found</p>
+  const p5 = DATA.mainsP5 && P5_RE.test(UI.bankQ||"") ? `<div class="card p5-card"><p class="eyebrow">Group-1 Mains · Paper V</p><h3>Looking for Paper V (${esc(DATA.mainsP5.name)})?</h3><p>The Paper V tool kit is not on the website. Message Anil on WhatsApp and he will help you get it.</p><div class="row"><a class="btn btn-primary" href="${p5Link()}" target="_blank" rel="noopener">Message Anil on WhatsApp</a><a class="btn btn-secondary" href="#mains">Papers I–IV tool kit</a></div></div>` : "";
+  return p5 + `<p class="muted" style="font-size:14px">${list.length} question${list.length===1?"":"s"} found</p>
     <div class="list">${shown.length? shown.map(q=>reviewCard(q, q.n, {hideAnswer:true})).join("") : emptyHTML("No questions match","Try a shorter search or clear a filter.", `<button class="btn btn-secondary" type="button" data-act="bankclear">Clear filters</button>`)}</div>
     ${list.length>shown.length? `<div class="row" style="justify-content:center"><button class="btn btn-secondary" type="button" data-act="bankmore">Show ${Math.min(20,list.length-shown.length)} more</button></div>`:""}`;
 }
@@ -1677,6 +1701,37 @@ function vNotes(){
     <a class="card notes-promo bb-promo" href="${esc(DATA.bahubali)}" style="margin-top:12px"><div class="np-copy"><p class="eyebrow">New · ₹250 for all 24 tests</p><h2>Bahubali Test Series</h2><p>Full-length APPSC Group-II Mains mock tests: 150 questions, 150 minutes, ⅓ negative marking, English and Telugu, with explanations and PDFs. 12 tests for Paper I and 12 for Paper II.</p><span class="btn btn-primary">See the tests</span></div><div class="bb-mark" aria-hidden="true"><b>150</b><span>Qs · 150 min</span></div></a>` : ""}
     ${groups}
     <div class="card notes-foot"><b>Previous papers: one ₹45 PYQ Pass for every exam.</b> The notes are optional and priced low so that any aspirant can afford them. Questions about the books? Call or WhatsApp <a href="tel:+919494792739">+91 94947 92739</a> or email <a href="mailto:anilkumarjupudi360360@gmail.com">anilkumarjupudi360360@<wbr>gmail.com</a>.</div>
+  </div>`;
+}
+/* ---------- APPSC Group-1 Mains · Answer Writing Tool Kit: four PDF books, part of the PYQ Pass; Paper V on WhatsApp ---------- */
+const P5_RE = /\bpaper\s*[-–.]?\s*(5|v)\b|\bpaper\s*five\b|\bp\s*-?\s*5\b|పేపర్\s*[-–]?\s*(5|v)\b/i;
+function p5Link(){ const p = DATA.mainsP5 || {name:"Science, Technology & Environmental Issues"}; return waLink(`Hi Anil sir, I need the APPSC Group-1 Mains Paper V (${p.name}) Answer Writing Tool Kit.`); }
+function p5Card(){
+  const p = DATA.mainsP5 || {name:"Science, Technology & Environmental Issues"};
+  return `<article class="card kit kit-p5"><div class="kit-cover kit-cover-v" aria-hidden="true"><b>V</b><span>Paper</span></div><div style="min-width:0">
+    <p class="eyebrow">Paper V</p><h3>${esc(p.name)}</h3>
+    <p class="kit-meta">Not on the website. Message Anil on WhatsApp to get the Paper V tool kit.</p>
+    <div class="kit-buy"><a class="btn btn-primary" href="${p5Link()}" target="_blank" rel="noopener">${WA_ICON} Message Anil on WhatsApp</a></div></div></article>`;
+}
+function vMains(){
+  const K = DATA.mains||[], ok = passOK("pyq"), price = PAYC ? PAYC.pyq.price : 45;
+  const card = b=>`<article class="card kit"><img class="kit-cover" src="${esc(b.cover)}" alt="Paper ${esc(b.paper)} cover" width="120" height="170" loading="lazy"><div style="min-width:0">
+    <p class="eyebrow">Paper ${esc(b.paper)}</p><h3>${esc(b.name)}</h3>
+    <div class="pills"><span class="pill blue">${b.n} ${esc(b.unit)}</span><span class="pill">${b.parts} syllabus parts</span><span class="pill good">${b.practice} practice</span></div>
+    <p class="kit-meta">PDF · ${b.pages} pages · 2020, 2023 &amp; 2025 papers</p>
+    <div class="kit-buy">${ok ? `<a class="btn btn-primary" href="${esc(b.pdf)}" target="_blank" rel="noopener" download data-act="kitdl" data-paper="${esc(b.paper)}">⬇ Download PDF</a>`
+                            : `<button class="btn btn-primary" type="button" data-act="unlockpyq">🔒 Unlock with the ₹${price} PYQ Pass</button>`}</div></div></article>`;
+  return `<div class="wrap view">
+    ${head("Group-1 Mains · Answer Writing Tool Kit","APPSC Group-1 Mains: Answer Writing Tool Kit", `Every Mains question of 2020, 2023 and 2025 for Papers I to IV, sorted by syllabus: how many came from each part, the exact questions, and practice questions on every part, including recent news. Four PDF books by Jupudi Anil Kumar, part of the ₹${price} PYQ Pass.`)}
+    <div class="notes-steps">
+      <div class="card"><span class="n">1</span><div><b>See what is asked most</b><p>Each book opens with a one-page table: how many questions came from each part of the syllabus.</p></div></div>
+      <div class="card"><span class="n">2</span><div><b>Read the real questions</b><p>The exact questions of all three papers, grouped topic by topic, newest first.</p></div></div>
+      <div class="card"><span class="n">3</span><div><b>Write the practice questions</b><p>Six practice questions on every part, many on 2025–26 news, to build your answer writing.</p></div></div>
+    </div>
+    ${ok ? `<p class="kit-note good">✓ Your PYQ Pass is active: download all four books below.</p>`
+         : `<div class="card kit-lock"><div><b>Included in the ₹${price} PYQ Pass</b><p>One payment opens the previous papers of every exam on the site and these four Mains books, for 12 months. Already paid? Tap Unlock and then “I have paid · check”.</p></div><button class="btn btn-primary" type="button" data-act="unlockpyq">🔒 Unlock for ₹${price}</button></div>`}
+    <div class="kit-grid">${K.map(card).join("")}${p5Card()}</div>
+    <div class="card notes-foot"><b>For your personal study only.</b> Please don't share the PDFs. Questions about the tool kit? Call or WhatsApp <a href="tel:+919494792739">+91 94947 92739</a>.</div>
   </div>`;
 }
 function openVideo(id){
@@ -1898,6 +1953,7 @@ document.addEventListener("click", e=>{
     case "excat": { UI.exCat = b.dataset.cat; applyHub(); break; }
     case "hubscroll": { const t=$("#exams-list"); if(t) t.scrollIntoView({behavior:"smooth", block:"start"}); const s=$("#examSearch"); if(s) setTimeout(()=>s.focus({preventScroll:true}), 400); break; }
     case "unlockpyq": if(!ST.name){ UI.afterJoin = current; go("join"); } else openPay("pyq"); break;
+    case "kitdl": track("kit_download", {paper: b.dataset.paper}); return;
     case "openpay": openPay(b.dataset.kind==="mock" || (b.dataset.kind==="combo" && PAYC && PAYC.combo) ? b.dataset.kind : "pyq"); break;
     case "presubj": { const s=SUBJ[b.dataset.subj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); go("practice"); break; }
     case "paper": { const ps=selPapers(), id=b.dataset.paper; ps.has(id)?ps.delete(id):ps.add(id); P.papers=[...ps]; savePrefs(); render(); break; }
