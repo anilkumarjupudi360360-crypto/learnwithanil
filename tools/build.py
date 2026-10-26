@@ -1909,7 +1909,7 @@ def funders_page(loaded):
       'reachT': ('How many students it can help', 'यह कितने विद्यार्थियों की मदद कर सकता है', 'ఇది ఎంతమంది విద్యార్థులకు ఉపయోగపడుతుంది'),
       'reachV': (TOT[0] + '+', TOT[1] + '+', TOT[2] + '+'),
       # letter to funders (Anil approved the English text, 26 Oct 2026 14:53 IST)
-      'msgHi': ('Dear friend,', 'प्रिय मित्र,', 'ప్రియమైన మిత్రమా,'),
+      'msgHi': ('Respected Sir/Madam,', 'आदरणीय महोदय/महोदया,', 'గౌరవనీయులైన అయ్యా/అమ్మా,'),
       'msgP1': ('Lakhs of aspirants in our towns and villages prepare for government jobs without the money for coaching. All they need is the real questions, the right answers and simple explanations, in their own language.',
                 'हमारे कस्बों और गाँवों के लाखों अभ्यर्थी कोचिंग के पैसे के बिना सरकारी नौकरियों की तैयारी करते हैं। उन्हें बस असली प्रश्न, सही उत्तर और अपनी भाषा में सरल व्याख्याएँ चाहिए।',
                 'మన పట్టణాలు, గ్రామాల్లో లక్షలాది అభ్యర్థులు కోచింగ్‌కు డబ్బు లేకుండానే ప్రభుత్వ ఉద్యోగాలకు సిద్ధమవుతున్నారు. వారికి కావలసింది అసలు ప్రశ్నలు, సరైన సమాధానాలు, తమ భాషలో సులభమైన వివరణలు మాత్రమే.'),
