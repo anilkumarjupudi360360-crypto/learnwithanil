@@ -1905,6 +1905,18 @@ def funders_page(loaded):
       'f3': ('Aspirants apply for these exams in one cycle', 'अभ्यर्थी एक भर्ती चक्र में इन परीक्षाओं के लिए आवेदन करते हैं', 'అభ్యర్థులు ఒక్క నియామక చక్రంలో ఈ పరీక్షలకు దరఖాస్తు చేస్తారు'),
       'reachT': ('How many students it can help', 'यह कितने विद्यार्थियों की मदद कर सकता है', 'ఇది ఎంతమంది విద్యార్థులకు ఉపయోగపడుతుంది'),
       'reachV': (TOT[0] + '+', TOT[1] + '+', TOT[2] + '+'),
+      # letter to funders (Anil approved the English text, 26 Oct 2026 14:53 IST)
+      'msgHi': ('Dear friend,', 'प्रिय मित्र,', 'ప్రియమైన మిత్రమా,'),
+      'msgP1': ('Lakhs of aspirants in our towns and villages prepare for government jobs without the money for coaching. All they need is the real questions, the right answers and simple explanations, in their own language.',
+                'हमारे कस्बों और गाँवों के लाखों अभ्यर्थी कोचिंग के पैसे के बिना सरकारी नौकरियों की तैयारी करते हैं। उन्हें बस असली प्रश्न, सही उत्तर और अपनी भाषा में सरल व्याख्याएँ चाहिए।',
+                'మన పట్టణాలు, గ్రామాల్లో లక్షలాది అభ్యర్థులు కోచింగ్‌కు డబ్బు లేకుండానే ప్రభుత్వ ఉద్యోగాలకు సిద్ధమవుతున్నారు. వారికి కావలసింది అసలు ప్రశ్నలు, సరైన సమాధానాలు, తమ భాషలో సులభమైన వివరణలు మాత్రమే.'),
+      'msgP2': (f'My dream: <b>1 lakh PYQs of every government exam, with a mock test series for each, under one roof for just ₹45 a year</b>, for the <b>{TOT[0]}+</b> aspirants who apply.',
+                f'मेरा सपना: <b>हर सरकारी परीक्षा के 1 लाख PYQs, हर परीक्षा के लिए एक मॉक टेस्ट सीरीज़ के साथ, एक ही जगह, सिर्फ़ ₹45 प्रति वर्ष में</b>, आवेदन करने वाले <b>{TOT[1]}+</b> अभ्यर्थियों के लिए।',
+                f'నా కల: <b>ప్రతి ప్రభుత్వ పరీక్షకు 1 లక్ష PYQs, ప్రతి పరీక్షకు ఒక మాక్ టెస్ట్ సిరీస్‌తో, ఒకే చోట, సంవత్సరానికి కేవలం ₹45కే</b>, దరఖాస్తు చేసే <b>{TOT[2]}+</b> అభ్యర్థుల కోసం.'),
+      'msgP3': ('I am building this alone. <b>Your support, in turn, helps me help the students.</b> Please stand with me.',
+                'मैं यह अकेले बना रहा हूँ। <b>आपका सहयोग मुझे विद्यार्थियों की मदद करने में सहायता करता है।</b> कृपया मेरा साथ दें।',
+                'దీన్ని నేను ఒక్కడినే నిర్మిస్తున్నాను. <b>మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.</b> దయచేసి నాకు తోడుగా నిలవండి.'),
+      'msgSig': ('Jupudi Anil Kumar, Founder, Learn with Anil', 'जुपुडी अनिल कुमार, संस्थापक, Learn with Anil', 'జూపూడి అనిల్ కుమార్, వ్యవస్థాపకులు, Learn with Anil'),
       'bigL': (f'applications from aspirants for the {n_all} government exams on my list, in a single recruitment cycle. That is how many students this work can reach.',
                f'मेरी सूची की {n_all} सरकारी परीक्षाओं के लिए एक ही भर्ती चक्र में अभ्यर्थियों के आवेदन। इतने विद्यार्थियों तक यह काम पहुँच सकता है।',
                f'నా జాబితాలోని {n_all} ప్రభుత్వ పరీక్షలకు ఒక్క నియామక చక్రంలో వచ్చే దరఖాస్తులు. ఇంతమంది విద్యార్థులకు ఈ పని చేరగలదు.'),
@@ -2065,6 +2077,7 @@ def funders_page(loaded):
 .fund-note{{border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:15px}}
 .fund-poster{{display:block;width:100%;max-width:720px;height:auto;border-radius:var(--r);border:1px solid var(--line)}}
 .hero .mentor b{{display:block}}
+.fund-letter{{border-left:5px solid #FFD54A;font-size:17.5px;line-height:1.65;background:linear-gradient(180deg,var(--accent-soft),var(--surface) 60%)}}.fund-letter .hi{{font-weight:700;font-size:19px}}.fund-letter .sig{{font-family:var(--f-display);font-weight:700;color:var(--accent-text)}}
 .bigstat{{display:flex;flex-direction:column;gap:2px;border-left:4px solid #FFD54A;padding:4px 0 4px 14px}}
 .hero .bigstat b{{font-family:var(--f-display);font-weight:800;font-size:clamp(40px,7vw,64px);line-height:1;color:#FFD54A;letter-spacing:-.02em}}
 .hero .bigstat span{{color:var(--band-ink);font-size:16px;max-width:52ch}}
@@ -2111,7 +2124,18 @@ def funders_page(loaded):
     </a>
   </div></section>
 
-  <section class="wrap section hub-figs" id="why">
+  <section class="wrap section hub-figs" id="letter">
+    <div class="card fund-box fund-letter">
+      {t('msgHi', 'p', 'class="hi"')}
+      {t('msgP1', 'p')}
+      {t('msgP2', 'p')}
+      {t('msgP3', 'p')}
+      <p class="sig">— {t('msgSig')}</p>
+      <div class="row"><a class="btn btn-primary" href="{wa}" target="_blank" rel="noopener">{t('wa')}</a><a class="btn btn-secondary" href="{mail}">{t('mail')}</a></div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="why">
     <div class="section-title">{t('whyT', 'h2')}</div>
     <div class="card fund-box">{t('whyP', 'p')}</div>
   </section>
