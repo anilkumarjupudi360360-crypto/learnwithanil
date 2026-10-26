@@ -1891,11 +1891,11 @@ def funders_page(loaded):
     T = {
       'eyebrow': ('Fund Learn with Anil', 'Learn with Anil को सहयोग दें', 'Learn with Anil‌కు నిధులు ఇవ్వండి'),
       'h1': ('1 lakh PYQs under one roof, <em>for just ₹45.</em>', '1 लाख PYQs एक ही जगह, <em>सिर्फ़ ₹45 में।</em>', '1 లక్ష PYQs ఒకే చోట, <em>కేవలం ₹45కే.</em>'),
-      'lede': ('That is the goal of Learn with Anil, along with a mock test series for every exam. I am building this website to be student-friendly and to democratise learning. '
+      'lede': ('That is the goal of Learn with Anil, along with a mock test series for every exam, all in the same ₹45 pass. I am building this website to be student-friendly and to democratise learning. '
                'I am the only person developing it, and I need help from funders: your support, in turn, helps me help the students.',
-               'यही Learn with Anil का लक्ष्य है, साथ ही हर परीक्षा के लिए एक मॉक टेस्ट सीरीज़। मैं यह वेबसाइट विद्यार्थियों के अनुकूल बनाने और शिक्षा को सबके लिए सुलभ बनाने के लिए बना रहा हूँ। '
+               'यही Learn with Anil का लक्ष्य है, साथ ही हर परीक्षा के लिए एक मॉक टेस्ट सीरीज़, सब उसी ₹45 पास में। मैं यह वेबसाइट विद्यार्थियों के अनुकूल बनाने और शिक्षा को सबके लिए सुलभ बनाने के लिए बना रहा हूँ। '
                'इसे बनाने वाला मैं अकेला व्यक्ति हूँ, और मुझे फंड देने वालों की मदद चाहिए: आपका सहयोग मुझे विद्यार्थियों की मदद करने में सहायता करता है।',
-               'ఇదే Learn with Anil లక్ష్యం, దానితో పాటు ప్రతి పరీక్షకు ఒక మాక్ టెస్ట్ సిరీస్. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. '
+               'ఇదే Learn with Anil లక్ష్యం, దానితో పాటు ప్రతి పరీక్షకు ఒక మాక్ టెస్ట్ సిరీస్, అన్నీ అదే ₹45 పాస్‌లో. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. '
                'దీన్ని అభివృద్ధి చేస్తున్నది నేను ఒక్కడినే, అందుకే నాకు నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.'),
       'wa': ('WhatsApp me', 'WhatsApp पर संपर्क करें', 'WhatsAppలో సంప్రదించండి'),
       'mail': ('Email me', 'ईमेल करें', 'ఈమెయిల్ చేయండి'),
@@ -1937,7 +1937,7 @@ def funders_page(loaded):
                   'ताकि पूरे भारत के अभ्यर्थियों को अपनी परीक्षा यहीं मिले, सब कुछ उसी ₹45 PYQ पास में।',
                   'Learn with Anil ఆంధ్రప్రదేశ్, తెలంగాణ, కేంద్ర పరీక్షల వద్దే ఆగిపోదు. ఇతర రాష్ట్రాల పబ్లిక్ సర్వీస్ కమిషన్, పోలీస్, ఇతర నియామక పరీక్షలకు కూడా విస్తరిస్తుంది, '
                   'తద్వారా దేశవ్యాప్తంగా అభ్యర్థులు తమ పరీక్షను ఇక్కడే, అదే ₹45 PYQ పాస్‌లో పొందగలరు.'),
-      'f4': ('One PYQ Pass for every exam · 12 months', 'सभी परीक्षाओं के लिए एक PYQ पास · 12 महीने', 'అన్ని పరీక్షలకు ఒకే PYQ పాస్ · 12 నెలలు'),
+      'f4': ('One pass for every exam, PYQs and mock tests · 12 months', 'हर परीक्षा, PYQs और मॉक टेस्ट के लिए एक पास · 12 महीने', 'అన్ని పరీక్షలు, PYQs, మాక్ టెస్ట్‌లకు ఒకే పాస్ · 12 నెలలు'),
       'progT': ('Progress to 1 lakh', '1 लाख की ओर प्रगति', '1 లక్ష వైపు ప్రగతి'),
       'progP': (f'So far: <b>{NQ}</b> of 1,00,000 questions ({PCT}%). Your support helps me reach the goal sooner.',
                 f'अब तक: 1,00,000 में से <b>{NQ}</b> प्रश्न ({PCT}%)। आपका सहयोग मुझे लक्ष्य तक जल्दी पहुँचने में मदद करता है।',
@@ -1954,9 +1954,9 @@ def funders_page(loaded):
       'b3t': ('Prepare without a coaching fee', 'बिना कोचिंग फ़ीस के तैयारी', 'కోచింగ్ ఫీజు లేకుండా సన్నద్ధత'),
       'b3p': ('Topic-wise practice, timed mock tests and a mistakes notebook.', 'विषयवार अभ्यास, समयबद्ध मॉक टेस्ट और गलतियों की नोटबुक।', 'అంశాలవారీ ప్రాక్టీస్, సమయబద్ధ మాక్ టెస్ట్‌లు, తప్పుల నోట్‌బుక్.'),
       'b4t': ('Free to read, ₹45 to practise', 'पढ़ना मुफ़्त, अभ्यास ₹45 में', 'చదవడం ఉచితం, ప్రాక్టీస్ ₹45కే'),
-      'b4p': ('Every question and its correct answer can be read for free, along with the explanations for the first 10 questions of every paper. One ₹45 PYQ Pass unlocks every explanation and all the online practice and tests for 12 months.',
-              'हर प्रश्न और उसका सही उत्तर मुफ़्त में पढ़ा जा सकता है, साथ ही हर प्रश्न पत्र के पहले 10 प्रश्नों की व्याख्याएँ भी। एक ₹45 PYQ पास 12 महीनों के लिए सभी व्याख्याएँ और सारा ऑनलाइन अभ्यास व टेस्ट खोल देता है।',
-              'ప్రతి ప్రశ్న, దాని సరైన సమాధానం ఉచితంగా చదవొచ్చు; ప్రతి ప్రశ్నపత్రంలోని మొదటి 10 ప్రశ్నల వివరణలు కూడా ఉచితం. ఒకే ₹45 PYQ పాస్‌తో 12 నెలల పాటు అన్ని వివరణలు, ఆన్‌లైన్ ప్రాక్టీస్, టెస్ట్‌లు తెరుచుకుంటాయి.'),
+      'b4p': ('Every question and its correct answer can be read for free, along with the explanations for the first 10 questions of every paper. One ₹45 PYQ Pass, for 12 months, opens everything: every explanation, all the online practice and tests, every mock test series and the study books.',
+              'हर प्रश्न और उसका सही उत्तर मुफ़्त में पढ़ा जा सकता है, साथ ही हर प्रश्न पत्र के पहले 10 प्रश्नों की व्याख्याएँ भी। एक ₹45 PYQ पास 12 महीनों के लिए सब कुछ खोल देता है: सभी व्याख्याएँ, सारा ऑनलाइन अभ्यास व टेस्ट, हर मॉक टेस्ट सीरीज़ और अध्ययन पुस्तकें।',
+              'ప్రతి ప్రశ్న, దాని సరైన సమాధానం ఉచితంగా చదవొచ్చు; ప్రతి ప్రశ్నపత్రంలోని మొదటి 10 ప్రశ్నల వివరణలు కూడా ఉచితం. ఒకే ₹45 PYQ పాస్‌తో 12 నెలల పాటు అన్నీ తెరుచుకుంటాయి: అన్ని వివరణలు, ఆన్‌లైన్ ప్రాక్టీస్, టెస్ట్‌లు, ప్రతి మాక్ టెస్ట్ సిరీస్, స్టడీ పుస్తకాలు.'),
       'whyT': ('Why the project needs funding', 'इस परियोजना को धन की ज़रूरत क्यों है', 'ఈ ప్రాజెక్ట్‌కు నిధులు ఎందుకు అవసరం'),
       'whyP': ('I am the only person developing Learn with Anil. Every paper has to be found, typed from the official question booklet, checked against the official answer key, explained and translated, and then kept up to date whenever the keys change. '
                'The website itself also has to be built and kept running. I keep the price at ₹45 so that every aspirant can afford it, which means that fees alone cannot pay for this work.',
@@ -1976,7 +1976,7 @@ def funders_page(loaded):
               'हर परीक्षा के अपने पैटर्न में पूरी लंबाई के मॉक टेस्ट तैयार करना, जैसे TS पुलिस SI के लिए Mission Khaki और SSC CGL के लिए Mission CGL, ताकि हर अभ्यर्थी केवल पुराने प्रश्न पत्र पढ़े नहीं, अपनी परीक्षा का अभ्यास भी करे।',
               'ప్రతి పరీక్ష సొంత నమూనాలో పూర్తి నిడివి మాక్ టెస్ట్‌లు రాయడం, TS పోలీస్ SIకి Mission Khaki, SSC CGLకి Mission CGL లాగా, తద్వారా ప్రతి అభ్యర్థి పాత ప్రశ్నపత్రాలు చదవడమే కాకుండా తన పరీక్షకు ప్రాక్టీస్ కూడా చేయగలరు.'),
       'h3t': ('Keep it at ₹45', 'कीमत ₹45 ही रखना', 'ధర ₹45గానే ఉంచడం'),
-      'h3p': ('Keep the PYQ Pass at ₹45 and the mock test series affordable, within reach of every student.', 'PYQ पास ₹45 पर और मॉक टेस्ट सीरीज़ किफ़ायती रखना, हर विद्यार्थी की पहुँच में।', 'PYQ పాస్‌ను ₹45కే, మాక్ టెస్ట్ సిరీస్‌ను తక్కువ ధరకే ఉంచడం, ప్రతి విద్యార్థికి అందుబాటులో.'),
+      'h3p': ('Keep everything (every PYQ, every mock test series and the study books) in one ₹45 pass, within reach of every student.', 'सब कुछ (हर PYQ, हर मॉक टेस्ट सीरीज़ और अध्ययन पुस्तकें) एक ही ₹45 पास में रखना, हर विद्यार्थी की पहुँच में।', 'అన్నింటినీ (ప్రతి PYQ, ప్రతి మాక్ టెస్ట్ సిరీస్, స్టడీ పుస్తకాలు) ఒకే ₹45 పాస్‌లో ఉంచడం, ప్రతి విద్యార్థికి అందుబాటులో.'),
       'whoT': ('Who can fund', 'कौन सहयोग कर सकता है', 'ఎవరు నిధులు ఇవ్వవచ్చు'),
       'whoP': ('I welcome support from individuals, alumni, teachers, institutions, companies and foundations who believe that good exam preparation should not depend on how much a student can pay. '
                'Support can take the form of a grant, a sponsorship or a partnership, and I will work out the details with you.',
@@ -2036,7 +2036,7 @@ def funders_page(loaded):
     css = app[app.index('<style>') + 7: app.index('</style>')]
     title = 'Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45 + Mock Tests for Every Exam'
     desc = ('Fund Learn with Anil, a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof '
-            f'with answers and explanations for ₹45, plus a mock test series for every exam, for the {TOT[0]}+ aspirants who apply for these exams, expanding to other states. Individuals and organisations can sponsor or partner.')
+            f'with answers and explanations, plus a mock test series for every exam, all for ₹45, for the {TOT[0]}+ aspirants who apply for these exams, expanding to other states. Individuals and organisations can sponsor or partner.')
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": can, "image": SITE_URL + '/og-funders.jpg', "inLanguage": ["en", "hi", "te"],
           "keywords": "fund education India, sponsor students, support free exam preparation, government exam PYQs, Learn with Anil, democratise learning",
           "about": {"@type": "EducationalOrganization", "name": "Learn with Anil", "url": SITE_URL + '/', "founder": {"@type": "Person", "name": "Jupudi Anil Kumar"}},
@@ -2111,7 +2111,12 @@ def funders_page(loaded):
     </a>
   </div></section>
 
-  <section class="wrap section hub-figs">
+  <section class="wrap section hub-figs" id="why">
+    <div class="section-title">{t('whyT', 'h2')}</div>
+    <div class="card fund-box">{t('whyP', 'p')}</div>
+  </section>
+
+  <section class="wrap section">
     <div class="figures">
       <div class="figure"><div class="v">{NQ}</div>{t('f1', 'div', 'class="k"')}</div>
       <div class="figure"><div class="v">1,00,000</div>{t('f2', 'div', 'class="k"')}</div>
@@ -2145,11 +2150,6 @@ def funders_page(loaded):
   <section class="wrap section">
     <div class="section-title">{t('builtT', 'h2')}</div>
     <div class="features">{card('doc', 'b1t', 'b1p')}{card('lang', 'b2t', 'b2p')}{card('loop', 'b3t', 'b3p')}{card('rupee', 'b4t', 'b4p')}</div>
-  </section>
-
-  <section class="wrap section">
-    <div class="section-title">{t('whyT', 'h2')}</div>
-    <div class="card fund-box">{t('whyP', 'p')}</div>
   </section>
 
   <section class="wrap section">
