@@ -1853,6 +1853,10 @@ def funders_page(loaded):
     goal = 100000
     pct = min(100, nq * 100 / goal)
     NQ, PCT = f'{nq:,}', f'{pct:.0f}'
+    # Applications in one recruitment cycle for exams on the site (checked 26 Oct 2026): SSC CGL 2025 28,15,445 registered (Adda247, 6 Aug 2025);
+    # UPSC EPFO 2023 9,52,605 (RTI reply, via Physics Wallah); TGPRB SI + Constable 2026 5,77,064 (TGPRB press note 17 Sep 2026);
+    # APPSC Group 2 (Notif. 11/2023) about 4.83 lakh (Deccan Chronicle). CAPF, Group 1, AMVI, HMWSSB not counted (no reliable figure).
+    REACH = '48 lakh+'
     wa = f'https://wa.me/{WHATSAPP}?text=' + quote('Hi Learn_with_anil Team, I am interested in funding Learn with Anil.')
     mail = f'mailto:{CONTACT_EMAIL}?subject=' + quote('Funding Learn with Anil')
     share = 'https://wa.me/?text=' + quote('Learn with Anil: 1 lakh PYQs of government exams under one roof, for ₹45. Anil is building it alone and needs funders: https://learnwithanil.in/funders')
@@ -1870,7 +1874,17 @@ def funders_page(loaded):
       'mentor': ('Founder, Learn with Anil · UPSC faculty &amp; mentor', 'संस्थापक, Learn with Anil · UPSC शिक्षक और मार्गदर्शक', 'వ్యవస్థాపకులు, Learn with Anil · UPSC అధ్యాపకులు, మెంటార్'),
       'f1': ('Previous-year questions so far', 'अब तक के पिछले वर्षों के प्रश्न', 'ఇప్పటివరకు ఉన్న గత సంవత్సరాల ప్రశ్నలు'),
       'f2': ('The goal: 1 lakh PYQs', 'लक्ष्य: 1 लाख PYQs', 'లక్ష్యం: 1 లక్ష PYQs'),
-      'f3': ('Government exams live', 'उपलब्ध सरकारी परीक्षाएँ', 'అందుబాటులో ఉన్న ప్రభుత్వ పరీక్షలు'),
+      'f3': ('Aspirants apply for these exams in one cycle', 'अभ्यर्थी एक भर्ती चक्र में इन परीक्षाओं के लिए आवेदन करते हैं', 'అభ్యర్థులు ఒక్క నియామక చక్రంలో ఈ పరీక్షలకు దరఖాస్తు చేస్తారు'),
+      'reachT': ('How many students it can help', 'यह कितने विद्यार्थियों की मदद कर सकता है', 'ఇది ఎంతమంది విద్యార్థులకు ఉపయోగపడుతుంది'),
+      'reachP': ('The exams already on the site draw <b>more than 48 lakh applications in a single recruitment cycle</b>: SSC CGL 2025 (28.15 lakh), UPSC EPFO 2023 (9.53 lakh), '
+                 'TS Police SI and Constable 2026 (5.77 lakh) and APPSC Group 2 (about 4.83 lakh), not counting UPSC CAPF, APPSC Group 1 and the other exams. '
+                 'With 1 lakh PYQs covering many more exams, the number of students it can help will grow far beyond this.',
+                 'साइट पर पहले से मौजूद परीक्षाओं के लिए <b>एक ही भर्ती चक्र में 48 लाख से अधिक आवेदन</b> आते हैं: SSC CGL 2025 (28.15 लाख), UPSC EPFO 2023 (9.53 लाख), '
+                 'TS पुलिस SI और कांस्टेबल 2026 (5.77 लाख) और APPSC ग्रुप 2 (लगभग 4.83 लाख); इसमें UPSC CAPF, APPSC ग्रुप 1 और अन्य परीक्षाएँ शामिल नहीं हैं। '
+                 'जब 1 लाख PYQs और कई परीक्षाओं को कवर करेंगे, तो इससे मदद पाने वाले विद्यार्थियों की संख्या इससे कहीं आगे बढ़ जाएगी।',
+                 'సైట్‌లో ఇప్పటికే ఉన్న పరీక్షలకు <b>ఒక్క నియామక చక్రంలోనే 48 లక్షలకు పైగా దరఖాస్తులు</b> వస్తాయి: SSC CGL 2025 (28.15 లక్షలు), UPSC EPFO 2023 (9.53 లక్షలు), '
+                 'TS పోలీస్ SI, కానిస్టేబుల్ 2026 (5.77 లక్షలు), APPSC గ్రూప్ 2 (సుమారు 4.83 లక్షలు); UPSC CAPF, APPSC గ్రూప్ 1, ఇతర పరీక్షలు ఇందులో లెక్కించలేదు. '
+                 '1 లక్ష PYQs మరిన్ని పరీక్షలను కవర్ చేసినప్పుడు, ఇది సహాయపడే విద్యార్థుల సంఖ్య ఇంతకంటే ఎంతో ఎక్కువవుతుంది.'),
       'f4': ('One PYQ Pass for every exam · 12 months', 'सभी परीक्षाओं के लिए एक PYQ पास · 12 महीने', 'అన్ని పరీక్షలకు ఒకే PYQ పాస్ · 12 నెలలు'),
       'progT': ('Progress to 1 lakh', '1 लाख की ओर प्रगति', '1 లక్ష వైపు ప్రగతి'),
       'progP': (f'So far: <b>{NQ}</b> of 1,00,000 questions ({PCT}%). Your support helps me reach the goal sooner.',
@@ -1946,9 +1960,11 @@ def funders_page(loaded):
     app = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
     css = app[app.index('<style>') + 7: app.index('</style>')]
     title = 'Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45'
-    desc = ('Learn with Anil is a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, '
-            'with answers and explanations, for ₹45. Individuals and organisations who would like to help fund it can get in touch.')
-    ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": can, "image": SITE_URL + '/og-funders.jpg',
+    desc = ('Fund Learn with Anil, a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof, '
+            'with answers and explanations, for ₹45, for the 48 lakh+ aspirants who apply for these exams. Individuals and organisations can sponsor or partner.')
+    ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": can, "image": SITE_URL + '/og-funders.jpg', "inLanguage": ["en", "hi", "te"],
+          "keywords": "fund education India, sponsor students, support free exam preparation, government exam PYQs, Learn with Anil, democratise learning",
+          "about": {"@type": "EducationalOrganization", "name": "Learn with Anil", "url": SITE_URL + '/', "founder": {"@type": "Person", "name": "Jupudi Anil Kumar"}},
           "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": SITE_URL + '/'},
           "author": {"@type": "Person", "name": "Jupudi Anil Kumar", "url": SITE_URL + '/appsc-group-2/about/'},
           "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
@@ -2011,9 +2027,14 @@ def funders_page(loaded):
     <div class="figures">
       <div class="figure"><div class="v">{NQ}</div>{t('f1', 'div', 'class="k"')}</div>
       <div class="figure"><div class="v">1,00,000</div>{t('f2', 'div', 'class="k"')}</div>
-      <div class="figure"><div class="v">{nex}</div>{t('f3', 'div', 'class="k"')}</div>
+      <div class="figure"><div class="v">{REACH}</div>{t('f3', 'div', 'class="k"')}</div>
       <div class="figure"><div class="v">₹45</div>{t('f4', 'div', 'class="k"')}</div>
     </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-title">{t('reachT', 'h2')}</div>
+    <div class="card fund-box">{t('reachP', 'p')}</div>
   </section>
 
   <section class="wrap section">
