@@ -1857,7 +1857,8 @@ Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(' ', '')}">{CONTACT_PHONE}
                        'I am building this website to be student-friendly and to democratise learning: every aspirant, wherever they live and whatever they can pay, '
                        'should be able to practise real exam questions with answers they can trust. <b>I am the only person developing this project, and I need help from funders.</b> '
                        'Your support in turn helps me help the students. If you would like to support it, please get in touch.',
-                       body, [('Home', SITE_URL + '/'), ('Fund Learn with Anil', can)], None, ename='every exam', at_root=True)
+                       body, [('Home', SITE_URL + '/'), ('Fund Learn with Anil', can)], None, ename='every exam', at_root=True
+                       ).replace('<p class="passon" hidden></p>', '', 1)   # the "your PYQ Pass is active" note means nothing on this page
 
 
 LANDINGS = {
