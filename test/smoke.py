@@ -418,6 +418,11 @@ async def main():
         await pp.goto(URL + 'upsc-epfo/'); await pp.wait_for_timeout(800)
         if 'Unlocked' not in await pp.inner_text('#home-static .etiles') or '🔒' in await pp.inner_text('#home-static .etiles'): errors.append('paid: exam tiles not marked unlocked')
         await pp.close()
+        # old free-PDF addresses (still in Google) open the paper page
+        for old, new in (('pdf/appsc-group-2-prelims-2024-question-paper-with-answers.pdf', '/papers/appsc-group-2-screening-test-2024-question-paper-with-answers.html'),
+                         ('ts-police-si/pdf/ts-police-si-mains-2023-paper-3-question-paper-with-answers.pdf', '/ts-police-si/papers/ts-police-si-mains-2023-paper-3-arithmetic-reasoning-question-paper-with-answers.html')):
+            await pg.goto(URL + old); await pg.wait_for_timeout(700)
+            if await pg.evaluate('location.pathname') != new: errors.append(f'old PDF link {old} did not open {new}')
         r = await pg.goto(URL + 'no-such-page/'); await pg.wait_for_timeout(200)
         if r.status != 404 or 'does not exist' not in await pg.inner_text('body'): errors.append('404 page missing')
         await pg.close()

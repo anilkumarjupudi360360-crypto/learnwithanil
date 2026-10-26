@@ -1078,7 +1078,10 @@ def main():
     all_pages = {**all_pages, 'help.html': None}
     open(os.path.join(DIST, 'site', 'funders.html'), 'w', encoding='utf-8').write(funders_page(loaded))
     all_pages = {**all_pages, 'funders.html': None}
-    open(os.path.join(DIST, 'site', '404.html'), 'w', encoding='utf-8').write(not_found_page())
+    # the free paper PDFs were removed on 23 Oct 2026, but Google still shows their addresses: send those visitors to the paper page
+    old_pdfs = {f'/{c["dir"] + "/" if c["dir"] else ""}pdf/{pdf_name(c, p)}': f'/{c["dir"] + "/" if c["dir"] else ""}papers/{p["slug"]}.html'
+                for c, papers, _ in loaded for p in papers}
+    open(os.path.join(DIST, 'site', '404.html'), 'w', encoding='utf-8').write(not_found_page(old_pdfs))
 
     # sitemap + robots (site only)
     today = date.today().isoformat()
@@ -2878,7 +2881,8 @@ def mock_page(conf, papers, questions):
     mcq = [p for p in sorted(papers, key=lambda p: (-p['year'], p['id'])) if p['fmt'] == 'mcq' and not p.get('own')]
     l2 = conf['l2']
     mk = MOCK_PACKS.get(conf['id'])
-    title = (f'{seo} Mock Test – {mk["name"]} Test Series & Previous Papers with Timer | Learn with Anil' if mk else
+    tseo = seo.replace('TS Police', 'TS (Telangana) Police') if conf['id'].startswith('ts-police') else seo
+    title = (f'{tseo} Mock Test 2026 – {mk["name"]} Test Series & Previous Papers with Timer | Learn with Anil' if mk else
              f'{seo} Mock Test – Full Previous Papers with Timer, English & {l2["name"]} | Learn with Anil')
     desc = ((f'{mk["title"]}: {mk["summary"]} {INCL}. ' if mk else f'{seo} mock tests online: ')
             + f'take the real {", ".join(paper_kw(conf, p).replace(seo + " ", "") for p in mcq)} question paper{"s" if len(mcq) > 1 else ""} as timed tests, '
@@ -3078,14 +3082,17 @@ def question_pages(conf, papers, questions, subj):
     return pages
 
 
-def not_found_page():
-    """GitHub Pages serves this for any unknown address. Practice-app links such as /upsc-capf/q/c2026a-3/ are sent to the app."""
+def not_found_page(old_pdfs=None):
+    """GitHub Pages serves this for any unknown address. Practice-app links such as /upsc-capf/q/c2026a-3/ are sent to the app,
+    and the old free-PDF addresses (/…/pdf/<paper>.pdf, removed 23 Oct 2026) to that paper's page."""
     return """<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Page not found | Learn with Anil</title><meta name="robots" content="noindex">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <script>
 (function(){
+  var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
+  if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
   var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
