@@ -2649,7 +2649,8 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
     n = len(questions)
     nsub = len({q['s'] for q in questions})
     t1 = (f'<a class="etile" href="{pb}pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b>'
-          f'<span class="etile-p">{n:,} questions from {len(papers)} official paper{"s" if len(papers) > 1 else ""}, with answers and explanations, as quizzes and timed tests. '
+          f'<span class="etile-p">{n:,} questions from {len(papers)} official paper{"s" if len(papers) > 1 else ""}, with answers and explanations, as quizzes and timed tests'
+          f'{", and as PDFs to download" if BOOKLETS.get(conf["id"]) else ""}. '
           f'One pass for every exam.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 ₹{PAY["pyq_price"]} · all exams · 12 months</span></a>')
     if mk:
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
@@ -2832,7 +2833,7 @@ def pyq_page(conf, papers, questions):
         return (f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions{note}</div>'
                 f'<b>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</b>'
                 f'<div class="cacts"><a class="cta" href="{pb}?practice={p["id"]}">Attempt this paper · {p.get("mins") or p["count"]} min timer</a>'
-                + (f'<a class="cta alt" href="{pb}?pdf={p["id"]}">Download PDF · {BOOKLETS[conf["id"]][p["id"]]["pages"]} pages</a>' if p['id'] in BOOKLETS.get(conf['id'], {}) else '')
+                + (f'<a class="cta" style="background:#0E7A43;border-color:#0E7A43;color:#fff" href="{pb}?pdf={p["id"]}">⬇ Download PDF · {BOOKLETS[conf["id"]][p["id"]]["pages"]} pages</a>' if p['id'] in BOOKLETS.get(conf['id'], {}) else '')
                 + '</div></li>')
     allp = ps + sorted(extra, key=lambda p: (-p['year'], p['id']))
     others = [(x, h) for x, h in PAY.get('exam_links', []) if x != seo]
@@ -2845,6 +2846,9 @@ def pyq_page(conf, papers, questions):
                  if allp and allp[0].get('mins') else 'Every paper runs with a timer (1 minute per question) that you can switch off and on at the top of the screen.</p></div>') +
               f'<div class="cbuy"><a class="cta" href="{pb}?buy=pyq">Get it for ₹{PAY["pyq_price"]}</a>'
               + (f'<a class="try" href="#free-sample">Try {len(sample)} free questions first ↓</a>' if sample else '') + '</div></div>'
+              + (f'<p style="margin:10px 0;padding:10px 12px;border-radius:10px;background:#E8F6EE;border:1px solid #9FD8B8"><b>📄 New: download every paper as a PDF</b> — '
+                 f'exam-booklet style, English &amp; {esc(l2["name"])}, with the official answer key and explanations. Tap <b>⬇ Download PDF</b> under any paper below (with the PYQ Pass).</p>'
+                 if BOOKLETS.get(conf['id']) else '') +
               f'<h3>{esc(seo)} papers in this course ({len(allp)} papers, {len(questions):,} questions)</h3><ol class="clist">' + ''.join(row(p) for p in allp) + '</ol>'
               + (f'<h3>Also in the same ₹{PAY["pyq_price"]} pass</h3><p>Every paper of these exams, and of every exam added to the site later:</p>'
                  '<nav class="toc">' + ''.join(f'<a href="{h}pyqs.html">{esc(x)}</a>' for x, h in others) + '</nav>' if others else '')

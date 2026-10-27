@@ -1331,12 +1331,13 @@ function vPapers(){
       <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.own?"Options by Learn with Anil":p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
       <div class="acts">
         <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":"🔒 "}Attempt this paper · ${p.mins||p.count} min timer</button>
-        ${p.bk ? `<button class="btn btn-secondary btn-sm" type="button" data-act="paperpdf" data-paper="${p.id}">${passOK("pyq")?"⬇ ":"🔒 "}Download PDF · ${p.bk.pages} pages</button>` : ""}
+        ${p.bk ? `<button class="btn btn-good btn-sm" type="button" data-act="paperpdf" data-paper="${p.id}">${passOK("pyq")?"⬇ ":"🔒 "}Download PDF · ${p.bk.pages} pages</button>` : ""}
       </div>
     </article>`;
   };
   return `<div class="wrap view">
     ${head("Previous papers", esc(DATA.examSeo||DATA.exam||"APPSC Group-II")+" previous year question papers", esc(DATA.papersNote||""))}
+    ${PAPERS.some(p=>p.bk) ? `<p class="card" style="padding:12px 14px;background:var(--good-soft,#E8F6EE)"><b>📄 Every paper as a PDF:</b> exam-booklet style with the official answer key and explanations. Tap <b>Download PDF</b> under any paper${passOK("pyq") ? "." : " (with the ₹" + (PAYC ? PAYC.pyq.price : 45) + " PYQ Pass)."}</p>` : ""}
     ${years.map(y=>`<section class="section"><div class="section-title"><h2>${y}</h2></div><div class="papers">${PAPERS.filter(p=>p.year===y).map(card).join("")}</div></section>`).join("")}
   </div>`;
 }
