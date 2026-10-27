@@ -2361,18 +2361,37 @@ NOTIFS = {
     ]),
   'appsc-group-1-notification-2026.html': dict(
     exam='appsc-group-1', crumb='Group 1 Notification 2026',
-    title='APPSC Group 1 Notification 2026 – 166 Posts, Last Date 27 October, Prelims Pattern & Previous Papers | Learn with Anil',
-    desc='APPSC Group 1 Notification 2026 (No. 07/2026): 166 posts including Deputy Collector, DSP and Divisional Development Officer, applications till 27 October 2026, '
-         'screening test tentatively on 24 January 2027, prelims and mains pattern, and APPSC Group 1 previous year question papers with answers.',
-    h1='APPSC Group 1 Notification 2026: 166 posts',
+    # Anil, 27 Oct 2026 (last day): candidates face a slow APPSC website and failed payments; APPSC may extend the date (it did for the
+    # previous Group 1, to 28 Jan 2024) but no extension was announced as of 27 Oct, 3 pm. Update these lines if APPSC extends the date.
+    title='APPSC Group 1 Last Date 27 October 2026 – Extension?, Website Slow & Payment Problems, 166 Posts | Learn with Anil',
+    desc='APPSC Group 1 Notification 2026 (No. 07/2026): the last date to apply is 27 October 2026. Candidates are facing a slow website and failed fee payments. '
+         'APPSC may extend the date, as it did for the previous Group 1, but no extension has been announced yet. Step-by-step help, 166 posts, exam pattern and previous papers.',
+    h1='APPSC Group 1 Notification 2026: last date 27 October',
     lede='APPSC Notification No. 07/2026 is for 166 Group-I Services posts, from Deputy Collector and DSP to Divisional Development Officer. '
-         'Online applications close on 27 October 2026, and the screening test is tentatively on 24 January 2027. Here are the dates, the posts, the exam pattern, and the Group 1 previous papers to practise.',
-    te='APPSC గ్రూప్ 1 నోటిఫికేషన్ 2026 (నం. 07/2026): 166 పోస్టులు — దరఖాస్తుకు చివరి తేదీ అక్టోబర్ 27, ప్రిలిమ్స్ (స్క్రీనింగ్ టెస్ట్) తాత్కాలికంగా 2027 జనవరి 24. పరీక్ష విధానం, పాత ప్రశ్నాపత్రాలు సమాధానాలతో.',
+         'Online applications close on 27 October 2026, and the screening test is tentatively on 24 January 2027. On the last day the APPSC website is very slow and many fee payments are failing; '
+         'below is what to do, followed by the posts, the exam pattern and the Group 1 previous papers to practise.',
+    te='APPSC గ్రూప్ 1 నోటిఫికేషన్ 2026 (నం. 07/2026): 166 పోస్టులు — దరఖాస్తుకు చివరి తేదీ అక్టోబర్ 27. వెబ్‌సైట్ నెమ్మదిగా ఉంది, ఫీజు చెల్లింపులు విఫలమవుతున్నాయి. గడువు పొడిగించే అవకాశం ఉంది, కానీ ఇంకా ప్రకటించలేదు — ఈరోజే దరఖాస్తు పూర్తి చేయండి. ప్రిలిమ్స్ తాత్కాలికంగా 2027 జనవరి 24.',
     pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_I_07_2026.pdf', pdfname='APPSC Notification No. 07/2026 (Group-I Services)',
     sections=[
+      ('Last day today: website slow, payments failing (27 October 2026)', 'p',
+       '27 October 2026 is the last date to apply. On the last day candidates are finding the APPSC website very slow, the OTPR password page hanging and fee payments '
+       'failing. There is a chance that APPSC extends the last date: it extended the previous Group 1 registration till 28 January 2024, and it has extended other '
+       'recruitments before. But no extension has been announced as of 27 October 2026, 3 pm, so do not wait for one. Finish your application today, and watch psc.ap.gov.in for any notice.'),
+      ('What to do if you are stuck', 'list', [
+        'No password after the OTPR? APPSC does not send one. Create it once at portal-psc.ap.gov.in/CandidateLoginPages/UserRegistration.aspx with your OTPR ID '
+        '(AP followed by 10 digits) and mobile number. The password needs 8 to 12 characters with a capital letter, a number and a special character ($ @ ! % * #).',
+        'Page hanging: click Submit only once and wait a minute or two. If it stays stuck, refresh, type the new captcha and submit once more. Another browser, or your phone on mobile data, often works better.',
+        'Payment failed: first check whether money left your account. If it did, do not pay again; the payment usually shows up on the APPSC site within a few hours, '
+        'and the bank refunds a failed payment on its own in about 5 to 7 days. If no money left your account, try again.',
+        'No SBI in the net-banking list? Look for "State Bank of India" under S, or pay with your SBI debit card (switch on online use in the YONO app) or by UPI.',
+        'Fee: ₹370 (₹250 application fee + ₹120 examination fee); candidates exempt from the examination fee pay only the ₹250 application fee. '
+        'Candidates from other states, including Telangana, apply in the open category and pay ₹370.',
+        'BC certificate: the form accepts a BC non-creamy-layer certificate issued on or after 1 April 2026.',
+        'Photo: JPG under 50 KB, 3.5 cm × 4.5 cm, with your name and the date of the photograph printed at the bottom. Signature: JPG under 30 KB, 3.5 cm × 1.5 cm.',
+        'Exam centre: Vijayawada appears as "Ntr" (NTR district) in the list; "Krishna" now means Machilipatnam.']),
       ('Important dates', 'table', [
         ('Notification (No. 07/2026)', '6 October 2026'),
-        ('Online applications', '6 October to 27 October 2026 (till 11:59 pm)'),
+        ('Online applications', '6 October to 27 October 2026 (till 11:59 pm) · no extension announced as of 27 October, 3 pm'),
         ('Screening test (prelims)', 'Tentatively 24 January 2027'),
         ('Mains and interview', 'To be announced'),
         ('Official website', 'psc.ap.gov.in')]),
