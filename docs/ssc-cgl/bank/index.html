@@ -660,7 +660,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ssc-cgl-61c642a40d.js"></script>
+<script src="data/ssc-cgl-1022d3d910.js"></script>
 <script>
 (function(){
 "use strict";
@@ -747,6 +747,17 @@ function passOK(kind){
   const pyq = live((PASSES.all||{}).pyq) && !!(PASSES.all||{}).paid;   // paid PYQ Pass only (old free-trial dates no longer count)
   return kind==="pyq" ? pyq : (pyq || live((PASSES[PAYC.exam]||{}).mock));   // since 26 Oct 2026 the ₹45 PYQ Pass opens every mock series too
 }
+/* Anil, 28 Oct 2026: TS Police papers are free to attempt (DATA.pay.freePyq): every paper, practice and the question bank, with
+   the answers and the score. Explanations (sealed, see exLoad), mocks from Mock 2, PDFs and the study tools stay in the PYQ Pass. */
+const FREEPYQ = !!(PAYC && PAYC.freePyq);
+const pyqOpen = ()=> FREEPYQ || passOK("pyq");
+function upsellCard(){   // after a free test: the PYQ Pass for the explanations and the mocks
+  if(!FREEPYQ || passOK("pyq") || !PAYC || !PAYC.on) return "";
+  const price = PAYC.pyq.price;
+  return `<section class="card pad" style="background:var(--good-soft,#E8F6EE);border-color:var(--good,#0E7A43)"><h2 style="font-size:18px;font-weight:800;margin:0 0 6px">Want the explanations and full mock tests?</h2>
+    <p style="margin:0 0 10px">This paper was free. The ₹${price} PYQ Pass adds the explanation for every question in English and Telugu, the Mission Khaki mock tests, the PDF booklets and every other exam on the site, for 12 months.</p>
+    <button class="btn btn-primary" type="button" data-act="openpay" data-kind="pyq">Get the PYQ Pass · ₹${price}</button></section>`;
+}
 function setPasses(p){   // from the payments script: {pyq, trial, paid, mock}
   p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses(); markLocks();
   if(passOK("pyq")) exLoad();
@@ -791,7 +802,7 @@ function anyPlan(){
   return passOK("pyq") || Object.keys(PASSES).some(k=>k!=="all" && live((PASSES[k]||{}).mock));
 }
 const GATE = {practice:"pyq", bank:"pyq", mistakes:"any", smart:"any", bookmarks:"any", heatmap:"any"};
-function gateOK(v){ const g = GATE[v]; return !g || (g==="pyq" ? passOK("pyq") : anyPlan()); }
+function gateOK(v){ const g = GATE[v]; return !g || (g==="pyq" ? pyqOpen() : anyPlan()); }
 function vLocked(v){
   const pyq = GATE[v]==="pyq", price = PAYC ? PAYC.pyq.price : 45, a = PASSES.all || {};
   const name = {practice:"Topic-wise quiz", bank:"Question bank", mistakes:"Mistakes notebook", smart:"Smart Quiz", bookmarks:"Bookmarks", heatmap:"Memory heatmap"}[v];
@@ -1090,7 +1101,7 @@ function route(){
   const dq = v.match(/^q\/([\w-]+)$/);   // shareable link to one question: #q/m2025p2-117
   if(dq && QMAP[dq[1]]){
     const q = QMAP[dq[1]], ids = QS.filter(x=>x.p===q.p).map(x=>x.id), k = ids.indexOf(q.id), order = ids.slice(k).concat(ids.slice(0,k));
-    if(!ST.name || !passOK("pyq")){   // no pass: the paper list, then registration or the PYQ Pass checkout
+    if(!ST.name || !pyqOpen()){   // no pass (and not a free exam): the paper list, then registration or the PYQ Pass checkout
       history.replaceState(null, "", PATHMODE ? pathOf("papers") : "#papers"); setTimeout(()=>startQuiz(order, PMAP[q.p].title, "practice", "paper"), 0); return "papers"; }
     QZ = {title: PMAP[q.p].title, mode:"practice", source:"paper", ids: order, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: order.length*60};
     UI.confirmSubmit = false; history.replaceState(null, "", PATHMODE ? pathOf("quiz") : "#quiz"); v = "quiz";
@@ -1208,7 +1219,7 @@ function reviewCard(q, n, opts={}){
   const reveal = !hideAnswer;
   const body = mcq ? optsStatic(q, chosen, reveal) : "";
   const ansBlock = hideAnswer
-    ? (passOK("pyq") ? `<details class="ans"><summary>Show answer &amp; explanation</summary>${answerBox(q)}${whyHTML(q)}</details>`
+    ? (pyqOpen() ? `<details class="ans"><summary>Show answer &amp; explanation</summary>${answerBox(q)}${whyHTML(q)}</details>`
        : `<p class="muted" style="margin-top:10px">Answer &amp; explanation: <button class="btn btn-secondary btn-sm" type="button" data-act="unlockpyq">Unlock with the PYQ Pass: ₹${PAYC ? PAYC.pyq.price : 45} for all exams</button></p>`)
     : (mcq ? "" : answerBox(q)) + whyHTML(q);
   return `<article class="card qcard">
@@ -1364,7 +1375,7 @@ function vPapers(){
       <p>${esc(p.blurb)}</p>
       <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.own?"Options by Learn with Anil":p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
       <div class="acts">
-        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":"🔒 "}Attempt this paper · ${p.mins||p.count} min timer</button>
+        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":FREEPYQ?"Free · ":"🔒 "}Attempt this paper · ${p.mins||p.count} min timer</button>
         ${p.bk ? `<button class="btn btn-good btn-sm" type="button" data-act="paperpdf" data-paper="${p.id}">${passOK("pyq")?"⬇ ":"🔒 "}Download PDF · ${p.bk.pages} pages</button>` : ""}
       </div>
     </article>`;
@@ -1445,7 +1456,7 @@ function quizTitle(){
 function startQuiz(ids, title, mode, source, mins){   // mins: the real time limit of a whole paper or mock (else 1 minute per question)
   if(!ids.length) return;
   if(!ST.name){ UI.pending = {ids, title, mode, source, mins}; go("join"); return; }   // one-time registration before the first quiz or test
-  if(source!=="mock" && !passOK("pyq")){   // PYQs need the paid PYQ Pass
+  if(source!=="mock" && !pyqOpen()){   // PYQs need the paid PYQ Pass (TS Police papers are free)
     if(ST.phone && PAYC && PAYC.on && !UI.passChecked){ UI.passChecked = true; refreshPasses().then(()=>startQuiz(ids, title, mode, source, mins)); return; }   // paid on another device? ask the payments script once
     UI.payPending = {ids, title, mode, source, mins}; openPay("pyq"); return; }
   track("quiz_start", {mode, exam: DATA.examShort||"", questions: ids.length});
@@ -1619,6 +1630,7 @@ function vResult(){
         <p class="muted" style="font-size:15px">${r.total && r.total>n? `You answered ${n} of ${r.total} questions; the rest were not counted. `:""}${r.added?`<b style="color:var(--ink)">${r.added} question${r.added===1?"":"s"}</b> added to your mistakes notebook. `:""}${r.mastered? `<b style="color:var(--good)">${r.mastered}</b> cleared from the notebook after two correct recalls. `:""}${!r.added&&!r.mastered? "Nothing new for the mistakes notebook from this quiz.":""}</p>
       </div>
     </section>
+    ${upsellCard()}
     ${shareBlock()}
     <section class="card" style="overflow:hidden">
       <div class="pad" style="padding-bottom:6px"><h2 style="font-size:18px;font-weight:700">Topic-wise analysis</h2><p class="muted" style="font-size:14px">Weakest topics first.</p></div>

@@ -81,7 +81,7 @@ async def main():
         await pg.route('https://pay.test/**', api)
         await pg.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
         state['trial'] = 'start'
-        await pg.goto(url + 'ts-police-si/?test=s2022'); await pg.wait_for_timeout(900)
+        await pg.goto(url + 'appsc-group-2/?test=s2024'); await pg.wait_for_timeout(900)
         if not await pg.locator('#joinForm').count(): errors.append('no registration form for a new visitor')
         else:
             for k, v in (('name', 'New Student'), ('phone', '9123456780'), ('email', 'n@example.com'), ('district', 'Warangal')): await pg.fill(f'#joinForm [name="{k}"]', v)
@@ -98,17 +98,24 @@ async def main():
         await pg.add_init_script(REG)
         await pg.route('https://pay.test/**', api)
         await pg.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
+        # 0. TS Police papers are free (Anil, 28 Oct 2026): a test opens without a pass, the bank shows answers, the study tools stay locked
+        await pg.goto(url + 'ts-police-si/?test=s2022'); await pg.wait_for_timeout(1200)
+        if not (await pg.evaluate('location.pathname')).endswith('/quiz/') or await pg.locator('#payDlg[open]').count(): errors.append('free TS Police paper did not open without a pass')
+        await pg.goto(url + 'ts-police-constable/bank/'); await pg.wait_for_timeout(900)
+        if not await pg.locator('details.ans').count(): errors.append('free TS Police question bank hides the answers')
+        await pg.goto(url + 'ts-police-si/mistakes/'); await pg.wait_for_timeout(700)
+        if not await pg.locator('[data-act="openpay"]').count(): errors.append('TS Police mistakes notebook open without a pass')
         # 1. a PYQ test without a pass opens the PYQ Pass checkout, which says it covers every exam
-        await pg.goto(url + 'ts-police-si/?test=s2022'); await pg.wait_for_timeout(800)
+        await pg.goto(url + 'appsc-group-2/?test=s2024'); await pg.wait_for_timeout(800)
         txt = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
         if not txt: errors.append('no checkout when attempting a PYQ test without a pass')
         elif 'whole website' not in txt or '12 months' not in txt or 'all exams' not in txt: errors.append(f'PYQ Pass checkout does not say it covers every exam: {txt[:200]!r}')
         # 1b. the question bank hides answers
-        await pg.goto(url + 'ts-police-si/bank/'); await pg.wait_for_timeout(800)
+        await pg.goto(url + 'appsc-group-2/bank/'); await pg.wait_for_timeout(800)
         if await pg.locator('details.ans').count() or not await pg.locator('[data-act="openpay"],[data-act="unlockpyq"]').count(): errors.append('question bank shows answers without a pass')
         # 1c. no plan: the study tools and the quiz builder are locked, with a way to buy
         for view in ('mistakes', 'smart', 'heatmap', 'bookmarks', 'practice'):
-            await pg.goto(url + f'ts-police-si/{view}/'); await pg.wait_for_timeout(700)
+            await pg.goto(url + f'appsc-group-2/{view}/'); await pg.wait_for_timeout(700)
             if not await pg.locator('[data-act="openpay"]').count(): errors.append(f'{view} is open without any plan')
         # 2. a mock without a pass opens the ₹45 PYQ Pass checkout, which includes Mission Khaki (no mock-only pack any more)
         await pg.goto(url + 'ts-police-si/?mock=mk-si-1'); await pg.wait_for_timeout(800)

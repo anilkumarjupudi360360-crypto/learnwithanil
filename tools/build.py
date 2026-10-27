@@ -1569,7 +1569,7 @@ def FAQ_TS(post, mains=()):
            'Yes. Every question that the booklet printed in Telugu is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu.'),
           (f'Is there a {name} mock test?',
            (f'Yes. {mkt}: {mkp["n"]} full-length mocks of 200 questions in the real pattern, in English and Telugu, with explanations and sectional tests, included in the ₹{PAY["pyq_price"]} PYQ Pass with every previous paper'
-            + (' (Mock 1 is free for registered students)' if any(m.get('free') for m in mkp.get('mocks', [])) else '')
+            + (' (Mock 1 is free for registered students)' if mkp.get('free1') or any(m.get('free') for m in mkp.get('mocks', [])) else '')
             + f'; the same pass opens Mission Khaki for both SI and Constable. You can also take the real TSLPRB previous papers as timed tests, or tap Create a quiz for a timed test from chosen subjects, with the PYQ Pass.')
            if mkp else
            f'Yes. Tap Create a quiz, choose subjects or topics, and pick Timed test: you get a mock test made of real TSLPRB questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.'),
@@ -1656,7 +1656,8 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
         foot = (f'Questions are from {board}\'s official question paper and answers from {conf["keyshort"]}. Explanations are by '
                 f'Jupudi Anil Kumar, Learn with Anil (Instagram: @{INSTAGRAM}). Not affiliated with {board}.')
     if PAY.get('on'):   # PYQ buttons carry a lock; the small script at the end removes it once this device has a paid PYQ Pass
-        body_html = re.sub(r'(<a class="cta[^"]*" href="[^"]*\?(?:sec|practice|test|pdf)=[^"]*">)', r'\1<span class="lk" aria-hidden="true">🔒 </span>', body_html)
+        body_html = re.sub(r'(<a class="cta[^"]*" href="[^"]*\?(?:' + ('pdf' if conf and conf['id'] in FREE_PYQ else 'sec|practice|test|pdf') + r')=[^"]*">)',
+                           r'\1<span class="lk" aria-hidden="true">🔒 </span>', body_html)
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": canonical,
           "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": SITE_URL + '/'},
           "author": {"@type": "Person", "name": "Jupudi Anil Kumar"},
@@ -2544,6 +2545,11 @@ EVERYTHING = ('every previous paper of every exam on the site (and exams added l
               '(Mission Khaki for TS SI and Constable, Mission CGL, the Bahubali Group-II Mains tests, and new series as they come) '
               'and the study books (AP Economy notes, Science &amp; Technology for Mains, the Group-1 Mains tool kit)')
 TRIAL_DAYS = 0   # Anil, 23 Oct 2026: no free trial; every PYQ needs the paid PYQ Pass (was 3)
+# Anil, 28 Oct 2026: TS Police papers free to attempt (registration needed): questions, answers and score. The explanations
+# (Q11 onwards of each paper), the Mission Khaki mocks from Mock 2, the PDF booklets, the study tools and every other exam stay in the ₹45 PYQ Pass.
+FREE_PYQ = {'ts-police-si', 'ts-police-constable'}
+FREE_PYQ_NOTE = ('Free: attempt every {seo} paper online, as a practice quiz or a timed test, with the correct answers and your score. '
+                 'Register once (free); Mission Khaki Mock 1 is free too. The ₹{price} PYQ Pass adds the explanations, the other Mission Khaki mocks, the PDF booklets and every other exam.')
 SAMPLE_N = 10        # public paper / question pages show every correct answer (since 25 Oct 2026) and the explanations of the first SAMPLE_N questions of each paper; the other explanations need the PYQ Pass
 PUBLIC_PDFS = False  # Anil, 23 Oct 2026: no free PDF downloads (tools/pdfs.py makes nothing while this is False)
 if os.environ.get('PAY_TEST'):   # test builds only (test/pay_test.py): payments on, against a fake script address
@@ -2555,7 +2561,7 @@ PASS_UNTIL = {'ts-police-si': ('2026-11-30', 'TS Police SI Prelims on 29 Novembe
               'appsc-group-1': ('2027-01-25', 'APPSC Group 1 screening test on 24 January 2027')}
 # mock-test packs on sale (Anil sets the price per exam)
 MOCK_PACKS = {
-  'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, live=1, qn=200,   # live = mocks released so far (rest: coming soon)
+  'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, live=1, qn=200, free1=True,   # live = mocks released so far (rest: coming soon); free1: Mock 1 free for registered students (Anil, 28 Oct 2026; FREE_MOCKS in the payments script)
                        title='Mission Khaki – TS Police SI Prelims 2026 Test Series',
                        summary='10 full-length TS SI Prelims mock tests, 200 questions each (Arithmetic & Reasoning 100, General Studies 100), '
                                'in English and Telugu, with an explanation for every answer. Each mock\'s sections can also be taken on their own as sectional tests.',
@@ -2661,7 +2667,7 @@ def pay_data(conf):
     """What the app needs to show prices and sell passes for this exam."""
     pb = conf['pb']
     mk = MOCK_PACKS.get(conf['id'])
-    return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'],
+    return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'], freePyq=conf['id'] in FREE_PYQ,
                 pyq=dict(price=PAY['pyq_price'], valid=PYQ_VALID, exams=PAY['exams'], trial=TRIAL_DAYS),
                 mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=PAY['pyq_price'], n=mk['n'], live=mk['live'],
                            valid=pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:],
@@ -2678,12 +2684,14 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
     t1 = (f'<a class="etile" href="{pb}pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b>'
           f'<span class="etile-p">{n:,} questions from {len(papers)} official paper{"s" if len(papers) > 1 else ""}, with answers and explanations, as quizzes and timed tests'
           f'{", and as PDFs to download" if BOOKLETS.get(conf["id"]) else ""}. '
-          f'One pass for every exam.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 ₹{PAY["pyq_price"]} · all exams · 12 months</span></a>')
+          f'One pass for every exam.</span>'
+          + (f'<span class="etile-price">✓ Free to attempt · explanations with the ₹{PAY["pyq_price"]} PYQ Pass</span></a>' if conf['id'] in FREE_PYQ else
+             f'<span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 ₹{PAY["pyq_price"]} · all exams · 12 months</span></a>'))
     if mk:
         t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
               + (f'<span class="etile-p">{esc(mk["summary"].split(". ")[0])}. {live_text(mk)}.</span>' if 'mocks' in mk else
                  f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>')
-              + f'<span class="etile-price" data-paidtxt="✓ Included in your PYQ Pass">🔒 {INCL}{" · Mock 1 free" if any(m.get("free") for m in mk.get("mocks", [])) else ""}</span></a>')
+              + f'<span class="etile-price" data-paidtxt="✓ Included in your PYQ Pass">🔒 {INCL}{" · Mock 1 free" if mk.get("free1") or any(m.get("free") for m in mk.get("mocks", [])) else ""}</span></a>')
     elif BB_URL and conf['id'] == 'appsc-group-2':
         t2 = (f'<a class="etile" href="{BB_URL}"><span class="etile-k">02 · Mock tests</span><b>Bahubali Test Series</b>'
               f'<span class="etile-p">24 full-length Group-II Mains mocks, 12 for Paper I and 12 for Paper II: 150 questions each, English and Telugu, with explanations.</span>'
@@ -2850,8 +2858,12 @@ def pyq_page(conf, papers, questions):
     base = '/' + (conf['dir'] + '/' if conf['dir'] else '')
     extra = pass_only_papers(papers)
     ps = sorted(public_only(papers, questions)[0], key=lambda p: (-p['year'], p['id']))
-    title = f'{seo} PYQs with Answers – Previous Papers as Quizzes & Timed Tests | Learn with Anil'
-    desc = (f'{seo} previous year questions (PYQs): {len(questions):,} questions from {len(papers)} official papers with answers and explanations in English and {l2["name"]}, '
+    free = conf['id'] in FREE_PYQ
+    title = (f'{seo} Previous Papers – Free Online Tests with Answers (PYQs) | Learn with Anil' if free else
+             f'{seo} PYQs with Answers – Previous Papers as Quizzes & Timed Tests | Learn with Anil')
+    desc = (f'{seo} previous year question papers free: attempt all {len(papers)} official papers ({len(questions):,} questions) online as practice quizzes and timed tests, '
+            f'with the correct answers in English and {l2["name"]}. Explanations and Mission Khaki mock tests with the ₹{PAY["pyq_price"]} PYQ Pass.' if free else
+            f'{seo} previous year questions (PYQs): {len(questions):,} questions from {len(papers)} official papers with answers and explanations in English and {l2["name"]}, '
             f'as practice quizzes and timed tests, with one ₹{PAY["pyq_price"]} PYQ Pass for every exam on the site.')
     def row(p):
         recall = p['fmt'] != 'mcq'
@@ -2880,14 +2892,18 @@ def pyq_page(conf, papers, questions):
               + (f'<h3>Also in the same ₹{PAY["pyq_price"]} pass</h3><p>Every paper of these exams, and of every exam added to the site later:</p>'
                  '<nav class="toc">' + ''.join(f'<a href="{h}pyqs.html">{esc(x)}</a>' for x, h in others) + '</nav>' if others else '')
               + '</section>')
-    body = (course + free_sample_html(conf, papers, questions, sample)
-            + '<h2>Practise by subject and topic</h2><p>With the PYQ Pass: pick a subject to build a quiz from every paper, or build your own topic-wise quiz.</p>'
+    banner = (f'<p class="card" style="padding:14px 16px;margin:0 0 16px;background:#E8F6EE;border:1px solid #9FD8B8;font-size:16px"><b>🎉 {esc(FREE_PYQ_NOTE.format(seo=seo, price=PAY["pyq_price"]))}</b></p>'
+              if free else '')
+    body = (banner + course + free_sample_html(conf, papers, questions, sample)
+            + '<h2>Practise by subject and topic</h2><p>' + ('Free' if free else 'With the PYQ Pass') + ': pick a subject to build a quiz from every paper, or build your own topic-wise quiz.</p>'
             + subjects_html(conf, questions) + features_html(pb, ('practice',))
             + f'<h2>Study tools</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
             + '<h2>Plans</h2>' + plans_html(conf)
             + f'<p><a class="cta alt" href="{pb}mock-test.html">Mock tests</a><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a></p>'
             + (pdf_inline_js(conf) if BOOKLETS.get(conf['id']) else ''))
-    lede = esc(f'Every {seo} previous paper on Learn with Anil, with official answers and explanations, as practice quizzes and timed tests. '
+    lede = esc(f'Every {seo} previous paper on Learn with Anil, free to attempt online as practice quizzes and timed tests, with the official answers. '
+               f'The ₹{PAY["pyq_price"]} PYQ Pass adds the explanations, the mock tests and every other exam for 12 months.' if free else
+               f'Every {seo} previous paper on Learn with Anil, with official answers and explanations, as practice quizzes and timed tests. '
                f'One ₹{PAY["pyq_price"]} PYQ Pass opens every exam on the site for 12 months.')
     return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} PYQs with answers', lede, body,
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('PYQs', can)], conf)
@@ -2912,7 +2928,7 @@ def sectional_page(conf, papers, questions):
                         + ''.join(f'<a class="cta alt" href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}</a>' for k, v, _ in m['parts']) + '</li>')
                        if m['live'] else f'<li class="q"><div class="meta">Coming soon</div><p>{esc(m["name"])} sections</p></li>'
                        for m in mk['mocks']) if mk and 'mocks' in mk else
-               ''.join((f'<li class="q"><div class="meta">Available now</div><p>Mock {i + 1} sections</p>'
+               ''.join((f'<li class="q"><div class="meta">{"Free now" if mk.get("free1") and i == 0 else "Available now"}</div><p>Mock {i + 1} sections</p>'
                         + ''.join(f'<a class="cta alt" href="{pb}?mock={mk["id"]}-{i + 1}&amp;part={k}">{v}</a>' for k, v in (('ari', 'Arithmetic'), ('rea', 'Reasoning'), ('gs', 'General Studies')))
                         + '</li>') if i < mk['live'] else f'<li class="q"><div class="meta">Coming soon</div><p>Mock {i + 1} sections</p></li>'
                        for i in range(mk['n'])) if mk else '')
@@ -3010,7 +3026,7 @@ def mock_page(conf, papers, questions):
 )
     elif mk:
         mid = lambda i: f'{mk["id"]}-{i + 1}'
-        sched = ''.join((f'<tr><td>Mock {i + 1}</td><td>Available now</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">Start</a>{mock_pdf_link(conf, mid(i))}</td>'
+        sched = ''.join((f'<tr><td>Mock {i + 1}</td><td>{"<b>Free</b> · register and start" if mk.get("free1") and i == 0 else "Available now"}</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">{"Start free" if mk.get("free1") and i == 0 else "Start"}</a>{mock_pdf_link(conf, mid(i))}</td>'
                          f'<td><a href="{pb}?mock={mid(i)}&amp;part=ari">Arithmetic</a> · <a href="{pb}?mock={mid(i)}&amp;part=rea">Reasoning</a> · '
                          f'<a href="{pb}?mock={mid(i)}&amp;part=gs">General Studies</a></td></tr>') if i < mk['live'] else
                         f'<tr><td>Mock {i + 1}</td><td>Coming soon</td><td>{mk["qn"]} questions</td><td>Arithmetic · Reasoning · General Studies</td></tr>'

@@ -237,7 +237,9 @@ async def main():
                     errors.append(f'{rel}: says something is free or offers a free PDF')
                 if '<h2>Plans</h2>' not in body or 'PYQ Pass' not in body: errors.append(f'{rel}: no plans table')
                 if 'Free trial' in body or 'days free' in body.lower(): errors.append(f'{rel}: still offers a free trial')
-                if ('?sec=' in body or '?practice=' in body) and 'class="lk"' not in body: errors.append(f'{rel}: PYQ buttons show no lock')
+                free_ = rel.startswith(('ts-police-si/', 'ts-police-constable/'))   # TS Police papers are free to attempt (Anil, 28 Oct 2026)
+                if ('?sec=' in body or '?practice=' in body) and not free_ and 'class="lk"' not in body: errors.append(f'{rel}: PYQ buttons show no lock')
+                if free_ and rel.endswith('pyqs.html') and 'Free: attempt every' not in body: errors.append(f'{rel}: free TS Police papers not announced')
                 if rel.endswith('pyqs.html') and ('Attempt as a timed test' in body or 'Practise question by question' in body or 'min timer</a>' not in body): errors.append(f'{rel}: papers should have one "Attempt this paper" button')
                 for h in _re.findall(r'href="(/[^"#:?]*)', open(os.path.join(SITE, rel), encoding='utf-8').read()):
                     f = os.path.join(SITE, h.lstrip('/'))
@@ -399,11 +401,14 @@ async def main():
         np = await b.new_page(passes={'pyq': '2099-01-03', 'trial': '2099-01-03'}, viewport={'width': 1280, 'height': 900})
         await np.add_init_script(REGISTERED); await np.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
         np.on('pageerror', lambda e: errors.append(f'nopass pageerror: {e}'))
-        for path in ('ts-police-si/?test=s2022', 'ts-police-si/?sec=ari', 'upsc-capf/q/c2026a-3/', 'appsc-group-2/?practice=s2024'):
+        for path in ('appsc-group-1/?test=p2024a', 'appsc-group-1/?sec=pol', 'upsc-capf/q/c2026a-3/', 'appsc-group-2/?practice=s2024'):
             await np.goto(URL + path); await np.wait_for_timeout(900)
             if (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: {path} opened a quiz without a pass')
-        await np.goto(URL + 'ts-police-si/?test=s2022'); await np.wait_for_timeout(900)
+        await np.goto(URL + 'appsc-group-1/?test=p2024a'); await np.wait_for_timeout(900)
         if not await np.evaluate('!!document.querySelector("#payDlg[open]")') or 'PYQ Pass' not in await np.inner_text('#payDlg'): errors.append('nopass: ?test= did not open the PYQ Pass checkout')
+        for path in ('ts-police-si/?test=s2022', 'ts-police-constable/?sec=ari'):   # TS Police papers: free without a pass
+            await np.goto(URL + path); await np.wait_for_timeout(900)
+            if not (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: free {path} did not open')
         for v in ('bank', 'practice', 'mistakes'):
             await np.goto(URL + f'appsc-group-2/{v}/'); await np.wait_for_timeout(600)
             if 'Unlock' not in await np.inner_text('#view'): errors.append(f'nopass: {v} is open without a plan')

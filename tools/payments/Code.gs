@@ -43,7 +43,7 @@ const MOCKS = {   // exam id: that exam's mock series (old price and checkout na
 // SI + Constable in one payment (Anil, 25 Oct 2026): recorded as a mock pass for each exam, each valid till its own exam
 const COMBO = {price: 199,   // no longer sold (26 Oct 2026); kept so old combo rows still read
                 name: 'Mission Khaki SI+PC Mocks', exams: ['ts-police-si', 'ts-police-constable']};
-const FREE_MOCKS = {'mk-pc-1': true};   // free for every registered student (Anil, 25 Oct 2026: Constable Mock 1)
+const FREE_MOCKS = {'mk-pc-1': true, 'mk-si-1': true};   // free for every registered student (Anil: Constable Mock 1, 25 Oct 2026; SI Mock 1, 28 Oct 2026)
 // Mock keys live in the 'keys' tab of this spreadsheet: mock_id | key (base64) | file | opens (yyyy-mm-dd, IST).
 const MAX_DEVICES = 3;   // one phone number's passes work on at most this many phones/computers
 
