@@ -924,6 +924,29 @@ async function bookDownload(id, btn){
   finally{ if(btn){ btn.disabled = false; btn.textContent = label; } }
 }
 
+/* Exam-booklet PDF of a previous paper (tools/booklets.py, 27 Oct 2026): /books/<file> is encrypted; the payments script gives
+   its key ("bk-<exam>-<paper>") only to a phone with a valid PYQ Pass, and the PDF is decrypted here and saved. */
+async function paperPdf(pid, btn){
+  const p = PAPERS.find(x=>x.id===pid); if(!p || !p.bk || !PAYC || !PAYC.api) return;
+  if(!ST.name){ UI.pendingPdf = pid; go("join"); return; }
+  if(!passOK("pyq")){ openPay("pyq"); return; }
+  const label = btn ? btn.textContent : ""; if(btn){ btn.disabled = true; btn.textContent = "Preparing your PDF…"; } else toast("Preparing your PDF…");
+  try{
+    const kid = p.bk.key;
+    const r = await payCall({action:"mock", exam:PAYC.exam, id:kid, phone:ST.phone, email:ST.email||"", device:DEVICE});
+    if(!r || !r.ok){ if(r && r.need) openPay("pyq"); else toast((r && r.error) || "Could not get the PDF. Please try again."); return; }
+    const res = await fetch("/books/" + r.file); if(!res.ok) throw new Error("download");
+    const blob = new Uint8Array(await res.arrayBuffer());
+    const key = await crypto.subtle.importKey("raw", Uint8Array.from(atob(r.key), c=>c.charCodeAt(0)), "AES-GCM", false, ["decrypt"]);
+    const pdf = await crypto.subtle.decrypt({name:"AES-GCM", iv: blob.slice(0,12), additionalData: new TextEncoder().encode(kid)}, key, blob.slice(12));
+    const url = URL.createObjectURL(new Blob([pdf], {type:"application/pdf"}));
+    const a = document.createElement("a"); a.href = url; a.download = p.bk.name; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url), 60000);
+    track("paper_pdf_download", {paper: pid}); toast("Your PDF is downloading. For your personal study only.");
+  }catch(_){ toast("No connection. Please try again."); }
+  finally{ if(btn){ btn.disabled = false; btn.textContent = label; } }
+}
+
 /* Mission Khaki and other mock packs: the questions are served by the payments script only to a phone with a valid pass (the ₹45 PYQ Pass since 26 Oct 2026) */
 const PART_NAME = {ari:"Arithmetic", rea:"Reasoning & Mental Ability", gs:"General Studies"};
 async function startMock(id, part){
@@ -1312,6 +1335,7 @@ function vPapers(){
       <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.own?"Options by Learn with Anil":p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
       <div class="acts">
         <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":"🔒 "}Attempt this paper · ${p.mins||p.count} min timer</button>
+        ${p.bk ? `<button class="btn btn-secondary btn-sm" type="button" data-act="paperpdf" data-paper="${p.id}">${passOK("pyq")?"⬇ ":"🔒 "}Download PDF · ${p.bk.pages} pages</button>` : ""}
       </div>
     </article>`;
   };
@@ -1992,6 +2016,7 @@ document.addEventListener("click", e=>{
     case "unlockpyq": if(!ST.name){ UI.pendingPay = true; go("join"); } else openPay("pyq"); break;
     case "kitdl": track("kit_download", {paper: b.dataset.paper}); return;
     case "bookdl": bookDownload(b.dataset.id, b); return;
+    case "paperpdf": paperPdf(b.dataset.paper, b); return;
     case "openpay": openPay(b.dataset.kind==="mock" || (b.dataset.kind==="combo" && PAYC && PAYC.combo) ? b.dataset.kind : "pyq"); break;
     case "presubj": { const s=SUBJ[b.dataset.subj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); go("practice"); break; }
     case "paper": { const ps=selPapers(), id=b.dataset.paper; ps.has(id)?ps.delete(id):ps.add(id); P.papers=[...ps]; savePrefs(); render(); break; }
@@ -2095,6 +2120,7 @@ document.addEventListener("submit", async e=>{
     else if(UI.pendingBuy){ UI.pendingBuy = null; leaveJoin(); openPay("pyq"); payBuy("pyq"); }   // they had already tapped Pay: straight on to Instamojo
     else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; leaveJoin(); startMock(m.id, m.part); }
     else if(book){ leaveJoin(); bookDownload(book); }
+    else if(UI.pendingPdf){ const pid = UI.pendingPdf; UI.pendingPdf = null; leaveJoin(); paperPdf(pid); }
     else if(pay && (isNew || wantPay) && !passOK("pyq")){ leaveJoin(); toast("Thanks, "+first+". Your details are saved."); openPay("pyq"); }
     else { toast(passOK("pyq") && pay && isNew ? "Welcome back, "+first+". Your PYQ Pass is active." : "Your details are saved." + trialMsg); leaveJoin(isNew || wantPay ? null : "about"); }
   } finally {
@@ -2162,6 +2188,8 @@ function start(data){
     const bk = sp.get("buy");   // ?buy=pyq|mock|combo: open the pass checkout
     // old links with buy=mock or buy=combo open the ₹45 PYQ Pass checkout too (26 Oct 2026)
     if(bk==="pyq" || bk==="mock" || bk==="combo"){ history.replaceState(null, "", location.pathname); syncLang(); render(); openPay(bk); return; }
+    const pd = sp.get("pdf");   // ?pdf=<paper id>: that paper's booklet PDF (PYQ Pass), from the PYQs page
+    if(pd && PAPERS.some(p=>p.id===pd && p.bk)){ history.replaceState(null, "", location.pathname); syncLang(); go("papers"); setTimeout(()=>paperPdf(pd), 300); return; }
     const mk = sp.get("mock");  // ?mock=<mock id>[&part=ari|rea|gs]: a Mission Khaki mock or one of its sections
     if(mk && /^[a-z0-9-]+$/.test(mk)){ history.replaceState(null, "", location.pathname); syncLang(); render(); startMock(mk, sp.get("part")||""); return; }
     const sec = sp.get("sec");  // ?sec=<subject id>: a PYQ sectional test (every previous question from one subject)

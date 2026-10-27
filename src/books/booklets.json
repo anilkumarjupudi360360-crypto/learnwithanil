@@ -1,0 +1,69 @@
+{
+ "ts-police-constable": {
+  "p2016": {
+   "bytes": 1184880,
+   "file": "ts-police-constable-p2016-0369209008.bin",
+   "key": "bk-ts-police-constable-p2016",
+   "name": "LearnWithAnil-TS-Police-Constable-Prelims-2016-Preliminary-Written-Test-Question-Paper.pdf",
+   "pages": 57
+  },
+  "p2016f": {
+   "bytes": 1108388,
+   "file": "ts-police-constable-p2016f-d852f9baaa.bin",
+   "key": "bk-ts-police-constable-p2016f",
+   "name": "LearnWithAnil-TS-Police-Constable-Mains-2016-Final-Written-Exam-Question-Paper.pdf",
+   "pages": 50
+  },
+  "p2018": {
+   "bytes": 1296785,
+   "file": "ts-police-constable-p2018-846e9b85be.bin",
+   "key": "bk-ts-police-constable-p2018",
+   "name": "LearnWithAnil-TS-Police-Constable-Prelims-2018-Preliminary-Written-Test-Question-Paper.pdf",
+   "pages": 59
+  },
+  "p2019f": {
+   "bytes": 1278666,
+   "file": "ts-police-constable-p2019f-3c0ecaf5e3.bin",
+   "key": "bk-ts-police-constable-p2019f",
+   "name": "LearnWithAnil-TS-Police-Constable-Mains-2019-Final-Written-Exam-Question-Paper.pdf",
+   "pages": 54
+  },
+  "p2022": {
+   "bytes": 976809,
+   "file": "ts-police-constable-p2022-95671116fd.bin",
+   "key": "bk-ts-police-constable-p2022",
+   "name": "LearnWithAnil-TS-Police-Constable-Prelims-2022-Preliminary-Written-Test-Question-Paper.pdf",
+   "pages": 39
+  },
+  "p2023": {
+   "bytes": 987549,
+   "file": "ts-police-constable-p2023-89e5f332d5.bin",
+   "key": "bk-ts-police-constable-p2023",
+   "name": "LearnWithAnil-TS-Police-Constable-Mains-2023-Final-Written-Exam-Question-Paper.pdf",
+   "pages": 44
+  }
+ },
+ "ts-police-si": {
+  "s2022": {
+   "bytes": 1285937,
+   "file": "ts-police-si-s2022-af7de9678d.bin",
+   "key": "bk-ts-police-si-s2022",
+   "name": "LearnWithAnil-TS-Police-SI-Prelims-2022-Preliminary-Written-Test-Question-Paper.pdf",
+   "pages": 45
+  },
+  "s2023c": {
+   "bytes": 1833140,
+   "file": "ts-police-si-s2023c-508ad11292.bin",
+   "key": "bk-ts-police-si-s2023c",
+   "name": "LearnWithAnil-TS-Police-SI-Mains-2023-Paper-3-Final-Written-Exam-Arithmetic-Reasoning-Question-Paper.pdf",
+   "pages": 53
+  },
+  "s2023d": {
+   "bytes": 970510,
+   "file": "ts-police-si-s2023d-953685d6c1.bin",
+   "key": "bk-ts-police-si-s2023d",
+   "name": "LearnWithAnil-TS-Police-SI-Mains-2023-Paper-4-Final-Written-Exam-General-Studies-Question-Paper.pdf",
+   "pages": 43
+  }
+ }
+}

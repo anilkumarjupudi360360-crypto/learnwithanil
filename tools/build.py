@@ -866,6 +866,10 @@ def main():
     # sealed books (tools/books_seal.py): the app downloads /books/<file> and gets its key with the PYQ Pass
     bpath = os.path.join(SRC, 'books', 'books.json')
     sealed = json.load(open(bpath)) if os.path.exists(bpath) else {}
+    # exam-booklet PDFs of the previous papers (tools/booklets.py), PYQ Pass only: exam -> paper -> key, file, name, pages
+    kpath_ = os.path.join(SRC, 'books', 'booklets.json')
+    booklets = json.load(open(kpath_)) if os.path.exists(kpath_) else {}
+    BOOKLETS.clear(); BOOKLETS.update(booklets)
     notes = [dict(b, dl=sealed[b['id']]['pdf'], buy='') if b['id'] in sealed else b for b in notes]
     epath = os.path.join(SRC, 'exams.json')
     catalog = json.load(open(epath, encoding='utf-8')) if os.path.exists(epath) else dict(cats=[], exams=[])
@@ -904,6 +908,8 @@ def main():
         emains = mains_kit(conf)
         for q in questions:
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
+        bks = booklets.get(conf['id'], {})
+        papers = [dict(p, bk=dict(key=bks[p['id']]['key'], name=bks[p['id']]['name'], pages=bks[p['id']]['pages'])) if p['id'] in bks else p for p in papers]
         data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     mains=emains, mainsP5=MAINS_P5 if emains else None,
                     key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
@@ -1101,6 +1107,8 @@ def main():
     # sealed (encrypted) study books, part of the PYQ Pass (tools/books_seal.py); keys only in Anil's private sheet
     os.makedirs(os.path.join(DIST, 'site', 'books'), exist_ok=True)
     for bid, bk in sealed.items(): shutil.copy(os.path.join(SRC, 'books', bk['file']), os.path.join(DIST, 'site', 'books', bk['file']))
+    for ex in booklets.values():
+        for bk in ex.values(): shutil.copy(os.path.join(SRC, 'books', bk['file']), os.path.join(DIST, 'site', 'books', bk['file']))
     # sealed (encrypted) paid mocks: published as-is; the keys are only in Anil's private sheet (tools/mk_seal.py)
     for exam_dir, src_dir in [('ts-police-si', 'mission-khaki')] + [(k, v['src']) for k, v in MOCK_PACKS.items() if v.get('src')]:
         mkdir_ = os.path.join(SRC, src_dir)
@@ -1640,7 +1648,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
         foot = (f'Questions are from {board}\'s official question paper and answers from {conf["keyshort"]}. Explanations are by '
                 f'Jupudi Anil Kumar, Learn with Anil (Instagram: @{INSTAGRAM}). Not affiliated with {board}.')
     if PAY.get('on'):   # PYQ buttons carry a lock; the small script at the end removes it once this device has a paid PYQ Pass
-        body_html = re.sub(r'(<a class="cta[^"]*" href="[^"]*\?(?:sec|practice|test)=[^"]*">)', r'\1<span class="lk" aria-hidden="true">🔒 </span>', body_html)
+        body_html = re.sub(r'(<a class="cta[^"]*" href="[^"]*\?(?:sec|practice|test|pdf)=[^"]*">)', r'\1<span class="lk" aria-hidden="true">🔒 </span>', body_html)
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": canonical,
           "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": SITE_URL + '/'},
           "author": {"@type": "Person", "name": "Jupudi Anil Kumar"},
@@ -2823,7 +2831,9 @@ def pyq_page(conf, papers, questions):
                 else " · official key gives the answer only: quick-recall cards" if recall else "")
         return (f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions{note}</div>'
                 f'<b>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</b>'
-                f'<div class="cacts"><a class="cta" href="{pb}?practice={p["id"]}">Attempt this paper · {p.get("mins") or p["count"]} min timer</a></div></li>')
+                f'<div class="cacts"><a class="cta" href="{pb}?practice={p["id"]}">Attempt this paper · {p.get("mins") or p["count"]} min timer</a>'
+                + (f'<a class="cta alt" href="{pb}?pdf={p["id"]}">Download PDF · {BOOKLETS[conf["id"]][p["id"]]["pages"]} pages</a>' if p['id'] in BOOKLETS.get(conf['id'], {}) else '')
+                + '</div></li>')
     allp = ps + sorted(extra, key=lambda p: (-p['year'], p['id']))
     others = [(x, h) for x, h in PAY.get('exam_links', []) if x != seo]
     sample = free_sample(conf, papers, questions)
@@ -2899,6 +2909,7 @@ def part_links(pb, m):
 
 
 MOCK_INFO = {}   # exam dates removed at Anil's request (23 Oct 2026): no exam dates on the site
+BOOKLETS = {}   # exam id -> paper id -> booklet PDF (key, file, name, pages); filled by main() from src/books/booklets.json
 
 
 def mock_page(conf, papers, questions):

@@ -26,6 +26,8 @@ BOOK_KEYS = json.load(open(os.environ.get('BOOKS_PRIV', '/home/claude/lwa-books/
 _bbc = os.path.join(os.environ.get('BAHUBALI_SRC', '/home/claude/bahubali'), 'secret', 'code.txt')
 BB_CODE = open(_bbc).read().strip() if os.path.exists(_bbc) else os.environ.get('BAHUBALI_CODE', '')
 BOOKS = json.load(open(os.path.join(ROOT, 'src', 'books', 'books.json'))) if os.path.exists(os.path.join(ROOT, 'src', 'books', 'books.json')) else {}
+BOOKLETS = json.load(open(os.path.join(ROOT, 'src', 'books', 'booklets.json'))) if os.path.exists(os.path.join(ROOT, 'src', 'books', 'booklets.json')) else {}
+BOOKLET_FILES = {v['key']: v['file'] for ex in BOOKLETS.values() for v in ex.values()}
 def fake_pay(passes):   # the payments script: a student with the given passes (the PYQ Pass opens mocks, books and Bahubali)
     import json
     async def h(route):
@@ -34,8 +36,8 @@ def fake_pay(passes):   # the payments script: a student with the given passes (
         act, iid = body.get('action'), str(body.get('id', ''))
         if act in ('passes', 'verify'): r = {'ok': True, 'passes': passes}
         elif act == 'mock' and iid.startswith('bk-'):
-            bk = BOOKS.get(iid[3:])
-            r = ({'ok': True, 'id': iid, 'key': BOOK_KEYS.get(iid, ''), 'file': bk['file']} if passes.get('paid') and bk else {'ok': False, 'error': 'test', 'need': 'pyq'})
+            f = (BOOKS.get(iid[3:]) or {}).get('file') or BOOKLET_FILES.get(iid)
+            r = ({'ok': True, 'id': iid, 'key': BOOK_KEYS.get(iid, ''), 'file': f} if passes.get('paid') and f else {'ok': False, 'error': 'test', 'need': 'pyq'})
         elif act == 'mock' and iid == 'bb-code': r = {'ok': True, 'id': iid, 'key': BB_CODE} if passes.get('paid') and BB_CODE else {'ok': False, 'error': 'test', 'need': 'pyq'}
         else: r = {'ok': False, 'error': 'test'}
         await route.fulfill(status=200, content_type='application/json', body=json.dumps(r))
@@ -461,6 +463,26 @@ async def main():
                         head = open(fpath, 'rb').read(5)
                         if head != b'%PDF-' or not d.suggested_filename.endswith('.pdf'): errors.append(f'books: the download is not a PDF ({d.suggested_filename}, {head!r})')
                 await bp.close()
+            # exam-booklet PDFs of the previous papers (PYQ Pass only): a button per paper, a real PDF after decryption
+            for eid, ex in BOOKLETS.items():
+                pyq = open(os.path.join(SITE, eid, 'pyqs.html'), encoding='utf-8').read()
+                if pyq.count('?pdf=') != len(ex): errors.append(f'{eid}/pyqs.html: {pyq.count("?pdf=")} PDF links for {len(ex)} booklets')
+                for passes, paid in [({}, False), (PAID, True)]:
+                    bp = await b.new_page(passes=passes, viewport={'width': 1280, 'height': 900}, accept_downloads=True)
+                    await bp.add_init_script(REGISTERED); bp.on('pageerror', lambda e: errors.append(f'booklet pageerror: {e}'))
+                    await bp.goto(URL + eid + '/papers/'); await bp.wait_for_timeout(900)
+                    btns = bp.locator('[data-act="paperpdf"]')
+                    if await btns.count() != len(ex): errors.append(f'{eid}: {await btns.count()} PDF buttons for {len(ex)} booklets'); await bp.close(); continue
+                    if not paid:
+                        await btns.first.click(); await bp.wait_for_timeout(600)
+                        if not await bp.locator('#payDlg[open]').count(): errors.append(f'{eid}: PDF button without a pass did not open the checkout')
+                    elif BOOK_KEYS:
+                        async with bp.expect_download(timeout=20000) as di: await btns.first.click()
+                        d = await di.value
+                        if open(await d.path(), 'rb').read(5) != b'%PDF-' or not d.suggested_filename.endswith('.pdf'): errors.append(f'{eid}: booklet download is not a PDF ({d.suggested_filename})')
+                    await bp.close()
+            for f in os.listdir(os.path.join(SITE, 'books')):
+                if b'%PDF' in open(os.path.join(SITE, 'books', f), 'rb').read(4096): errors.append(f'books/{f} readable without a key')
             hp = await b.new_page(passes={}); await hp.goto(URL); await hp.wait_for_timeout(400)
             await hp.fill('#examSearch', 'group 1 paper 5'); await hp.wait_for_timeout(200)
             if not await hp.is_visible('#hubP5'): errors.append('hub: a Paper V search does not point to WhatsApp')
