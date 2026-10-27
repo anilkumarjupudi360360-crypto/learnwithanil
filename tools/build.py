@@ -2833,7 +2833,7 @@ def pyq_page(conf, papers, questions):
         return (f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions{note}</div>'
                 f'<b>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</b>'
                 f'<div class="cacts"><a class="cta" href="{pb}?practice={p["id"]}">Attempt this paper · {p.get("mins") or p["count"]} min timer</a>'
-                + (f'<a class="cta" style="background:#0E7A43;border-color:#0E7A43;color:#fff" href="{pb}?pdf={p["id"]}">⬇ Download PDF · {BOOKLETS[conf["id"]][p["id"]]["pages"]} pages</a>' if p['id'] in BOOKLETS.get(conf['id'], {}) else '')
+                + (f'<a class="cta" style="background:#0E7A43;border-color:#0E7A43;color:#fff" href="{pb}?pdf={p["id"]}"{pdf_attrs(conf, p["id"])}>⬇ Download PDF · {BOOKLETS[conf["id"]][p["id"]]["pages"]} pages</a>' if p['id'] in BOOKLETS.get(conf['id'], {}) else '')
                 + '</div></li>')
     allp = ps + sorted(extra, key=lambda p: (-p['year'], p['id']))
     others = [(x, h) for x, h in PAY.get('exam_links', []) if x != seo]
@@ -2858,7 +2858,8 @@ def pyq_page(conf, papers, questions):
             + subjects_html(conf, questions) + features_html(pb, ('practice',))
             + f'<h2>Study tools</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
             + '<h2>Plans</h2>' + plans_html(conf)
-            + f'<p><a class="cta alt" href="{pb}mock-test.html">Mock tests</a><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a></p>')
+            + f'<p><a class="cta alt" href="{pb}mock-test.html">Mock tests</a><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a></p>'
+            + (pdf_inline_js(conf) if BOOKLETS.get(conf['id']) else ''))
     lede = esc(f'Every {seo} previous paper on Learn with Anil, with official answers and explanations, as practice quizzes and timed tests. '
                f'One ₹{PAY["pyq_price"]} PYQ Pass opens every exam on the site for 12 months.')
     return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} PYQs with answers', lede, body,
@@ -2919,7 +2920,35 @@ BOOKLETS = {}   # exam id -> paper id -> booklet PDF (key, file, name, pages); f
 def mock_pdf_link(conf, mock_id):
     """' · 🔒 PDF' link for a released mock that has a booklet PDF (PYQ Pass), else ''."""
     hit = [k for k, v in BOOKLETS.get(conf['id'], {}).items() if v.get('mock') == mock_id]
-    return f' · <a href="{conf["pb"]}?pdf={hit[0]}"><span class="lk" aria-hidden="true">🔒 </span>Download PDF</a>' if hit else ''
+    return f' · <a href="{conf["pb"]}?pdf={hit[0]}"{pdf_attrs(conf, hit[0])}><span class="lk" aria-hidden="true">🔒 </span>Download PDF</a>' if hit else ''
+
+
+def pdf_attrs(conf, pid):
+    """data-* for a booklet PDF link, so PDF_INLINE_JS can save it right on this page (the link opens the app only as a fallback)."""
+    b = BOOKLETS.get(conf['id'], {}).get(pid)
+    return f' data-pdf="{esc(b["key"])}" data-name="{esc(b["name"])}" data-paper="{esc(pid)}"' if b else ''
+
+
+def pdf_inline_js(conf):
+    """Anil, 27 Oct 2026: tapping Download PDF on a static page must not take the student to another page. A registered
+    student on this browser gets the PDF right here: the payments script gives the key only to a valid PYQ Pass, the
+    encrypted booklet (/books/<file>) is decrypted in the browser and saved. Not registered, no pass, or an old browser:
+    the link opens the app, which handles registration and the checkout."""
+    if not PAY.get('api'): return ''
+    return ("""<script>(function(){var API=""" + json.dumps(PAY['api']) + ',EXAM=' + json.dumps(conf['id']) + """;
+function J(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
+function dev(){try{var d=localStorage.getItem('lwa-device');if(!d){d=Math.random().toString(36).slice(2)+Date.now().toString(36);localStorage.setItem('lwa-device',d)}return d}catch(e){return ''}}
+function say(a,t,bad){var n=a.parentNode.querySelector('.pdfmsg');if(!n){n=document.createElement('p');n.className='pdfmsg';n.style.cssText='margin:6px 0 0;font-size:14px;width:100%';a.parentNode.appendChild(n)}n.style.color=bad?'#B42318':'#0E7A43';n.textContent=t}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-pdf]');if(!a||e.button!==0||e.ctrlKey||e.metaKey||e.shiftKey)return;
+var s=J('lwa-appsc-g2-student-v1');if(!s||!s.name||!s.phone||!window.crypto||!crypto.subtle||!window.TextEncoder)return;
+e.preventDefault();if(a.getAttribute('aria-busy')==='true')return;var html=a.innerHTML,kid=a.getAttribute('data-pdf');a.setAttribute('aria-busy','true');a.textContent='Preparing your PDF…';
+fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'mock',exam:EXAM,id:kid,phone:s.phone,email:s.email||'',device:dev()})}).then(function(r){return r.json()}).then(function(r){
+if(!r||!r.ok){if(r&&r.need){location.href=a.href;return}throw new Error((r&&r.error)||'')}
+return fetch('/books/'+r.file).then(function(x){if(!x.ok)throw new Error('');return x.arrayBuffer()}).then(function(buf){var b=new Uint8Array(buf);
+return crypto.subtle.importKey('raw',Uint8Array.from(atob(r.key),function(c){return c.charCodeAt(0)}),'AES-GCM',false,['decrypt']).then(function(k){return crypto.subtle.decrypt({name:'AES-GCM',iv:b.slice(0,12),additionalData:new TextEncoder().encode(kid)},k,b.slice(12))})}).then(function(pdf){
+var u=URL.createObjectURL(new Blob([pdf],{type:'application/pdf'})),d=document.createElement('a');d.href=u;d.download=a.getAttribute('data-name')||'LearnWithAnil.pdf';document.body.appendChild(d);d.click();d.remove();setTimeout(function(){URL.revokeObjectURL(u)},60000);
+try{if(window.gtag)gtag('event','paper_pdf_download',{paper:a.getAttribute('data-paper'),from:'pyqs_page'})}catch(_){}
+say(a,'✓ Your PDF is downloading (saved in Downloads). For your personal study only.')})}).catch(function(err){say(a,(err&&err.message)||'Could not get the PDF. Please check your connection and try again.',true)}).then(function(){a.innerHTML=html;a.removeAttribute('aria-busy')})});})();</script>""")
 
 
 def mock_page(conf, papers, questions):
@@ -2986,7 +3015,8 @@ def mock_page(conf, papers, questions):
             f'<li>Previous papers as tests need the PYQ Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months){"; the same pass opens " + esc(mk["name"]) if mk else ""}. Register once with your phone number and use the same number when you pay.</li></ul>'
             + f'<h2>Study tools after every test</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
             + '<h2>Plans</h2>' + plans_html(conf)
-            + f'<p><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a><a class="cta alt" href="{pb}pyqs.html">All {esc(seo)} PYQs</a></p>')
+            + f'<p><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a><a class="cta alt" href="{pb}pyqs.html">All {esc(seo)} PYQs</a></p>'
+            + (pdf_inline_js(conf) if BOOKLETS.get(conf['id']) else ''))
     lede = esc((f'{mk["title"]}, plus every real {seo} previous paper as a timed mock test.') if mk else
                f'Take a real {seo} previous paper as a full mock test with a timer, then see your score and an explanation for every answer.')
     return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} mock tests', lede, body,
