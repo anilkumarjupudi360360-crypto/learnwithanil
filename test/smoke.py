@@ -466,13 +466,19 @@ async def main():
             # exam-booklet PDFs of the previous papers (PYQ Pass only): a button per paper, a real PDF after decryption
             for eid, ex in BOOKLETS.items():
                 pyq = open(os.path.join(SITE, eid, 'pyqs.html'), encoding='utf-8').read()
-                if pyq.count('?pdf=') != len(ex): errors.append(f'{eid}/pyqs.html: {pyq.count("?pdf=")} PDF links for {len(ex)} booklets')
+                papers_ex = {k: v for k, v in ex.items() if not v.get('mock')}
+                if pyq.count('?pdf=') != len(papers_ex): errors.append(f'{eid}/pyqs.html: {pyq.count("?pdf=")} PDF links for {len(papers_ex)} paper booklets')
+                mocks_ex = [k for k, v in ex.items() if v.get('mock')]
+                if mocks_ex:
+                    mt = open(os.path.join(SITE, eid, 'mock-test.html'), encoding='utf-8').read()
+                    for k in mocks_ex:
+                        if f'?pdf={k}' not in mt: errors.append(f'{eid}/mock-test.html: no PDF link for {k}')
                 for passes, paid in [({}, False), (PAID, True)]:
                     bp = await b.new_page(passes=passes, viewport={'width': 1280, 'height': 900}, accept_downloads=True)
                     await bp.add_init_script(REGISTERED); bp.on('pageerror', lambda e: errors.append(f'booklet pageerror: {e}'))
                     await bp.goto(URL + eid + '/papers/'); await bp.wait_for_timeout(900)
                     btns = bp.locator('[data-act="paperpdf"]')
-                    if await btns.count() != len(ex): errors.append(f'{eid}: {await btns.count()} PDF buttons for {len(ex)} booklets'); await bp.close(); continue
+                    if await btns.count() != len(papers_ex): errors.append(f'{eid}: {await btns.count()} PDF buttons for {len(papers_ex)} paper booklets'); await bp.close(); continue
                     if not paid:
                         await btns.first.click(); await bp.wait_for_timeout(600)
                         if not await bp.locator('#payDlg[open]').count(): errors.append(f'{eid}: PDF button without a pass did not open the checkout')

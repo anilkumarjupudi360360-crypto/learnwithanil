@@ -659,7 +659,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/tg-hmws-f0e326f625.js"></script>
+<script src="data/tg-hmws-f0e2077451.js"></script>
 <script>
 (function(){
 "use strict";
@@ -921,12 +921,13 @@ async function bookDownload(id, btn){
 /* Exam-booklet PDF of a previous paper (tools/booklets.py, 27 Oct 2026): /books/<file> is encrypted; the payments script gives
    its key ("bk-<exam>-<paper>") only to a phone with a valid PYQ Pass, and the PDF is decrypted here and saved. */
 async function paperPdf(pid, btn){
-  const p = PAPERS.find(x=>x.id===pid); if(!p || !p.bk || !PAYC || !PAYC.api) return;
+  const p = PAPERS.find(x=>x.id===pid) || {}, bk = p.bk || (DATA.pdfs||{})[pid];   // a paper, or a released mock (DATA.pdfs)
+  if(!bk || !PAYC || !PAYC.api) return;
   if(!ST.name){ UI.pendingPdf = pid; go("join"); return; }
   if(!passOK("pyq")){ openPay("pyq"); return; }
   const label = btn ? btn.textContent : ""; if(btn){ btn.disabled = true; btn.textContent = "Preparing your PDF…"; } else toast("Preparing your PDF…");
   try{
-    const kid = p.bk.key;
+    const kid = bk.key;
     const r = await payCall({action:"mock", exam:PAYC.exam, id:kid, phone:ST.phone, email:ST.email||"", device:DEVICE});
     if(!r || !r.ok){ if(r && r.need) openPay("pyq"); else toast((r && r.error) || "Could not get the PDF. Please try again."); return; }
     const res = await fetch("/books/" + r.file); if(!res.ok) throw new Error("download");
@@ -934,7 +935,7 @@ async function paperPdf(pid, btn){
     const key = await crypto.subtle.importKey("raw", Uint8Array.from(atob(r.key), c=>c.charCodeAt(0)), "AES-GCM", false, ["decrypt"]);
     const pdf = await crypto.subtle.decrypt({name:"AES-GCM", iv: blob.slice(0,12), additionalData: new TextEncoder().encode(kid)}, key, blob.slice(12));
     const url = URL.createObjectURL(new Blob([pdf], {type:"application/pdf"}));
-    const a = document.createElement("a"); a.href = url; a.download = p.bk.name; document.body.appendChild(a); a.click(); a.remove();
+    const a = document.createElement("a"); a.href = url; a.download = bk.name; document.body.appendChild(a); a.click(); a.remove();
     setTimeout(()=>URL.revokeObjectURL(url), 60000);
     track("paper_pdf_download", {paper: pid}); toast("Your PDF is downloading. For your personal study only.");
   }catch(_){ toast("No connection. Please try again."); }
@@ -2183,7 +2184,7 @@ function start(data){
     // old links with buy=mock or buy=combo open the ₹45 PYQ Pass checkout too (26 Oct 2026)
     if(bk==="pyq" || bk==="mock" || bk==="combo"){ history.replaceState(null, "", location.pathname); syncLang(); render(); openPay(bk); return; }
     const pd = sp.get("pdf");   // ?pdf=<paper id>: that paper's booklet PDF (PYQ Pass), from the PYQs page
-    if(pd && PAPERS.some(p=>p.id===pd && p.bk)){ history.replaceState(null, "", location.pathname); syncLang(); go("papers"); setTimeout(()=>paperPdf(pd), 300); return; }
+    if(pd && (DATA.pdfs||{})[pd]){ history.replaceState(null, "", location.pathname); syncLang(); if(PAPERS.some(p=>p.id===pd)) go("papers"); else render(); setTimeout(()=>paperPdf(pd), 300); return; }
     const mk = sp.get("mock");  // ?mock=<mock id>[&part=ari|rea|gs]: a Mission Khaki mock or one of its sections
     if(mk && /^[a-z0-9-]+$/.test(mk)){ history.replaceState(null, "", location.pathname); syncLang(); render(); startMock(mk, sp.get("part")||""); return; }
     const sec = sp.get("sec");  // ?sec=<subject id>: a PYQ sectional test (every previous question from one subject)

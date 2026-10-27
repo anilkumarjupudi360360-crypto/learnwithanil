@@ -910,7 +910,7 @@ def main():
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
         bks = booklets.get(conf['id'], {})
         papers = [dict(p, bk=dict(key=bks[p['id']]['key'], name=bks[p['id']]['name'], pages=bks[p['id']]['pages'])) if p['id'] in bks else p for p in papers]
-        data = dict(papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=enotes, wa=WHATSAPP,
+        data = dict(pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     mains=emains, mainsP5=MAINS_P5 if emains else None,
                     key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
@@ -2912,6 +2912,12 @@ MOCK_INFO = {}   # exam dates removed at Anil's request (23 Oct 2026): no exam d
 BOOKLETS = {}   # exam id -> paper id -> booklet PDF (key, file, name, pages); filled by main() from src/books/booklets.json
 
 
+def mock_pdf_link(conf, mock_id):
+    """' · 🔒 PDF' link for a released mock that has a booklet PDF (PYQ Pass), else ''."""
+    hit = [k for k, v in BOOKLETS.get(conf['id'], {}).items() if v.get('mock') == mock_id]
+    return f' · <a href="{conf["pb"]}?pdf={hit[0]}"><span class="lk" aria-hidden="true">🔒 </span>Download PDF</a>' if hit else ''
+
+
 def mock_page(conf, papers, questions):
     """Tile 2: mock tests — the exam's mock-test pack (if on sale) and the real previous papers as full timed tests."""
     pb, seo = conf['pb'], conf['seo']
@@ -2934,7 +2940,7 @@ def mock_page(conf, papers, questions):
         for p in mcq)
     info = MOCK_INFO.get(conf['id'], '')
     if mk and 'mocks' in mk:
-        sched = ''.join((f'<tr><td>{esc(m["name"])}</td><td>{"<b>Free</b> · register and start" if m.get("free") else "Available now"}</td><td>{m["qn"]} questions · {m["mins"]} min · <a href="{pb}?mock={m["id"]}">{"Start free" if m.get("free") else "Start"}</a></td>'
+        sched = ''.join((f'<tr><td>{esc(m["name"])}</td><td>{"<b>Free</b> · register and start" if m.get("free") else "Available now"}</td><td>{m["qn"]} questions · {m["mins"]} min · <a href="{pb}?mock={m["id"]}">{"Start free" if m.get("free") else "Start"}</a>{mock_pdf_link(conf, m["id"])}</td>'
                          f'<td>{part_links(pb, m)}</td></tr>') if m['live'] else
                         f'<tr><td>{esc(m["name"])}</td><td>Coming soon</td><td>{m["qn"]} questions · {m["mins"]} min</td><td>{" · ".join(esc(v) for _, v, _ in m["parts"])}</td></tr>'
                         for m in mk['mocks'])
@@ -2944,7 +2950,7 @@ def mock_page(conf, papers, questions):
 )
     elif mk:
         mid = lambda i: f'{mk["id"]}-{i + 1}'
-        sched = ''.join((f'<tr><td>Mock {i + 1}</td><td>Available now</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">Start</a></td>'
+        sched = ''.join((f'<tr><td>Mock {i + 1}</td><td>Available now</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">Start</a>{mock_pdf_link(conf, mid(i))}</td>'
                          f'<td><a href="{pb}?mock={mid(i)}&amp;part=ari">Arithmetic</a> · <a href="{pb}?mock={mid(i)}&amp;part=rea">Reasoning</a> · '
                          f'<a href="{pb}?mock={mid(i)}&amp;part=gs">General Studies</a></td></tr>') if i < mk['live'] else
                         f'<tr><td>Mock {i + 1}</td><td>Coming soon</td><td>{mk["qn"]} questions</td><td>Arithmetic · Reasoning · General Studies</td></tr>'

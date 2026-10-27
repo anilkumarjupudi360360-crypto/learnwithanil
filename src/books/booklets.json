@@ -1,66 +1,177 @@
 {
+ "appsc-group-1": {
+  "p2019a": {
+   "bytes": 625119,
+   "file": "appsc-group-1-p2019a-6bc8393831.bin",
+   "key": "bk-appsc-group-1-p2019a",
+   "name": "LearnWithAnil-APPSC-Group-1-Prelims-2019-Paper-1-General-Studies-Question-Paper.pdf",
+   "pages": 26
+  },
+  "p2019b": {
+   "bytes": 576350,
+   "file": "appsc-group-1-p2019b-c61b848f7f.bin",
+   "key": "bk-appsc-group-1-p2019b",
+   "name": "LearnWithAnil-APPSC-Group-1-Prelims-2019-Paper-2-General-Aptitude-Question-Paper.pdf",
+   "pages": 24
+  },
+  "p2023a": {
+   "bytes": 721478,
+   "file": "appsc-group-1-p2023a-58b4f7c760.bin",
+   "key": "bk-appsc-group-1-p2023a",
+   "name": "LearnWithAnil-APPSC-Group-1-Prelims-2023-Paper-1-General-Studies-Question-Paper.pdf",
+   "pages": 32
+  },
+  "p2023b": {
+   "bytes": 758888,
+   "file": "appsc-group-1-p2023b-859eea3107.bin",
+   "key": "bk-appsc-group-1-p2023b",
+   "name": "LearnWithAnil-APPSC-Group-1-Prelims-2023-Paper-2-General-Aptitude-Question-Paper.pdf",
+   "pages": 34
+  },
+  "p2024a": {
+   "bytes": 1046905,
+   "file": "appsc-group-1-p2024a-e4ece87224.bin",
+   "key": "bk-appsc-group-1-p2024a",
+   "name": "LearnWithAnil-APPSC-Group-1-Prelims-2024-Paper-1-General-Studies-Question-Paper.pdf",
+   "pages": 53
+  },
+  "p2024b": {
+   "bytes": 903993,
+   "file": "appsc-group-1-p2024b-18e9d20d1c.bin",
+   "key": "bk-appsc-group-1-p2024b",
+   "name": "LearnWithAnil-APPSC-Group-1-Prelims-2024-Paper-2-General-Aptitude-Question-Paper.pdf",
+   "pages": 38
+  }
+ },
+ "appsc-group-2": {
+  "m2019p1": {
+   "bytes": 612766,
+   "file": "appsc-group-2-m2019p1-87de9345a3.bin",
+   "key": "bk-appsc-group-2-m2019p1",
+   "name": "LearnWithAnil-APPSC-Group-2-Mains-2019-Paper-1-Question-Paper.pdf",
+   "pages": 25
+  },
+  "m2019p2": {
+   "bytes": 576413,
+   "file": "appsc-group-2-m2019p2-ac9a8c1185.bin",
+   "key": "bk-appsc-group-2-m2019p2",
+   "name": "LearnWithAnil-APPSC-Group-2-Mains-2019-Paper-2-Question-Paper.pdf",
+   "pages": 24
+  },
+  "m2019p3": {
+   "bytes": 582988,
+   "file": "appsc-group-2-m2019p3-54ac7caeb6.bin",
+   "key": "bk-appsc-group-2-m2019p3",
+   "name": "LearnWithAnil-APPSC-Group-2-Mains-2019-Paper-3-Question-Paper.pdf",
+   "pages": 23
+  },
+  "m2025p1": {
+   "bytes": 716829,
+   "file": "appsc-group-2-m2025p1-e3d178f730.bin",
+   "key": "bk-appsc-group-2-m2025p1",
+   "name": "LearnWithAnil-APPSC-Group-2-Mains-2025-Paper-1-Question-Paper.pdf",
+   "pages": 34
+  },
+  "m2025p2": {
+   "bytes": 780257,
+   "file": "appsc-group-2-m2025p2-d836771d72.bin",
+   "key": "bk-appsc-group-2-m2025p2",
+   "name": "LearnWithAnil-APPSC-Group-2-Mains-2025-Paper-2-Question-Paper.pdf",
+   "pages": 34
+  },
+  "s2019": {
+   "bytes": 553192,
+   "file": "appsc-group-2-s2019-2abe80436e.bin",
+   "key": "bk-appsc-group-2-s2019",
+   "name": "LearnWithAnil-APPSC-Group-2-Prelims-2019-Screening-Test-Question-Paper.pdf",
+   "pages": 22
+  },
+  "s2024": {
+   "bytes": 929349,
+   "file": "appsc-group-2-s2024-a6a1c6a1d2.bin",
+   "key": "bk-appsc-group-2-s2024",
+   "name": "LearnWithAnil-APPSC-Group-2-Prelims-2024-Screening-Test-Question-Paper.pdf",
+   "pages": 34
+  }
+ },
  "ts-police-constable": {
+  "mkpc1": {
+   "bytes": 1181952,
+   "file": "ts-police-constable-mkpc1-94ee348001.bin",
+   "key": "bk-ts-police-constable-mkpc1",
+   "mock": "mk-pc-1",
+   "name": "LearnWithAnil-Mission-Khaki-Constable-Mock-1-Mock-Test.pdf",
+   "pages": 51
+  },
   "p2016": {
    "bytes": 1184880,
-   "file": "ts-police-constable-p2016-0369209008.bin",
+   "file": "ts-police-constable-p2016-4c451aee91.bin",
    "key": "bk-ts-police-constable-p2016",
    "name": "LearnWithAnil-TS-Police-Constable-Prelims-2016-Preliminary-Written-Test-Question-Paper.pdf",
    "pages": 57
   },
   "p2016f": {
-   "bytes": 1108388,
-   "file": "ts-police-constable-p2016f-d852f9baaa.bin",
+   "bytes": 1114130,
+   "file": "ts-police-constable-p2016f-89ac640bf8.bin",
    "key": "bk-ts-police-constable-p2016f",
    "name": "LearnWithAnil-TS-Police-Constable-Mains-2016-Final-Written-Exam-Question-Paper.pdf",
    "pages": 50
   },
   "p2018": {
    "bytes": 1296785,
-   "file": "ts-police-constable-p2018-846e9b85be.bin",
+   "file": "ts-police-constable-p2018-5471da5f21.bin",
    "key": "bk-ts-police-constable-p2018",
    "name": "LearnWithAnil-TS-Police-Constable-Prelims-2018-Preliminary-Written-Test-Question-Paper.pdf",
    "pages": 59
   },
   "p2019f": {
    "bytes": 1278666,
-   "file": "ts-police-constable-p2019f-3c0ecaf5e3.bin",
+   "file": "ts-police-constable-p2019f-346973f0bb.bin",
    "key": "bk-ts-police-constable-p2019f",
    "name": "LearnWithAnil-TS-Police-Constable-Mains-2019-Final-Written-Exam-Question-Paper.pdf",
    "pages": 54
   },
   "p2022": {
    "bytes": 976809,
-   "file": "ts-police-constable-p2022-95671116fd.bin",
+   "file": "ts-police-constable-p2022-2a53c0ea9b.bin",
    "key": "bk-ts-police-constable-p2022",
    "name": "LearnWithAnil-TS-Police-Constable-Prelims-2022-Preliminary-Written-Test-Question-Paper.pdf",
    "pages": 39
   },
   "p2023": {
-   "bytes": 987549,
-   "file": "ts-police-constable-p2023-89e5f332d5.bin",
+   "bytes": 987047,
+   "file": "ts-police-constable-p2023-d162efc781.bin",
    "key": "bk-ts-police-constable-p2023",
    "name": "LearnWithAnil-TS-Police-Constable-Mains-2023-Final-Written-Exam-Question-Paper.pdf",
    "pages": 44
   }
  },
  "ts-police-si": {
+  "mksi1": {
+   "bytes": 978339,
+   "file": "ts-police-si-mksi1-11573e3f2a.bin",
+   "key": "bk-ts-police-si-mksi1",
+   "mock": "mk-si-1",
+   "name": "LearnWithAnil-Mission-Khaki-Mock-1-Mock-Test.pdf",
+   "pages": 45
+  },
   "s2022": {
    "bytes": 1285937,
-   "file": "ts-police-si-s2022-af7de9678d.bin",
+   "file": "ts-police-si-s2022-c49d923cbd.bin",
    "key": "bk-ts-police-si-s2022",
    "name": "LearnWithAnil-TS-Police-SI-Prelims-2022-Preliminary-Written-Test-Question-Paper.pdf",
    "pages": 45
   },
   "s2023c": {
    "bytes": 1833140,
-   "file": "ts-police-si-s2023c-508ad11292.bin",
+   "file": "ts-police-si-s2023c-be3497cd9d.bin",
    "key": "bk-ts-police-si-s2023c",
    "name": "LearnWithAnil-TS-Police-SI-Mains-2023-Paper-3-Final-Written-Exam-Arithmetic-Reasoning-Question-Paper.pdf",
    "pages": 53
   },
   "s2023d": {
    "bytes": 970510,
-   "file": "ts-police-si-s2023d-953685d6c1.bin",
+   "file": "ts-police-si-s2023d-f0f0a6fd78.bin",
    "key": "bk-ts-police-si-s2023d",
    "name": "LearnWithAnil-TS-Police-SI-Mains-2023-Paper-4-Final-Written-Exam-General-Studies-Question-Paper.pdf",
    "pages": 43

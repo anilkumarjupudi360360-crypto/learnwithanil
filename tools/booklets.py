@@ -27,8 +27,19 @@ SEALED = os.path.join(ROOT, 'src', 'books')
 DEFAULT = ['ts-police-si', 'ts-police-constable']
 esc = B.esc
 LOGO = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(ROOT, 'src', 'static', 'icon-192.png'), 'rb').read()).decode()
-# board: (long name, time allowed, maximum marks) as printed on its booklets
-BOARD = {'TSLPRB': ('TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', '3 Hours', 200)}
+BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC': 'ANDHRA PRADESH PUBLIC SERVICE COMMISSION'}
+# booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
+SERIES = {'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'}}
+# released mocks with a booklet: exam -> [(mock id, pack, mock name)]; their keys are in BOOKS_PRIV/mock-keys.json
+MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-constable': [('mk-pc-1', 'Mission Khaki – Constable', 'Mock 1')]}
+
+
+def time_marks(conf, p):
+    """(time allowed, maximum marks) as printed on the board's booklet."""
+    if conf['board'] == 'TSLPRB': return '3 Hours', 200
+    if conf['id'] == 'appsc-group-1': return '120 Minutes', 120   # each Prelims paper: 120 questions, 120 marks
+    if conf['id'] == 'appsc-group-2': return '150 Minutes', 150   # Screening and each Mains paper: 150 questions, 150 marks
+    return (f'{p["mins"]} Minutes' if p.get('mins') else ''), ''
 
 CSS = """
 *{box-sizing:border-box}
@@ -99,23 +110,30 @@ def ans_html(q, l2):
     return f'<div class="ans"><b>{q["n"]}. {esc(ans)}</b>{two}<p class="why">{esc(q.get("w", ""))}</p>{wt}</div>'
 
 
-def paper_doc(conf, p, qs):
+def paper_doc(conf, p, qs, mock=None):
     l2 = conf['l2']
-    board, time_allowed, marks = BOARD.get(conf['board'], (conf['board'], f'{p["mins"]} Minutes' if p.get('mins') else '', ''))
-    m = re.search(r'booklet ([A-Z])\b', p.get('notif', ''))
+    board = BOARD_NAME.get(conf['board'], conf['board'])
+    time_allowed, marks = time_marks(conf, p)
+    m = re.search(r'booklet ([A-Z])\b', p.get('notif', '')) or (re.match(r'([A-Z])$', SERIES.get(conf['id'], {}).get(p['id'], '')))
     series = (f'<div class="s">BOOKLET<b>{m.group(1)}</b>SERIES</div>' if m else '<div class="s lwa">LEARN<br>WITH<br>ANIL</div>')
     sub = re.sub(r'\s*·\s*booklet [A-Z]\b.*$', '', p.get('notif', ''))
-    key = p.get('key') or conf.get('keyname') or 'the official key'
+    key = p.get('key') or ("APPSC's final key" if conf['board'] == 'APPSC' else conf.get('keyname') or 'the official key')
     title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC)\s+', '', p['title'])
-    l2name = l2['name'] if not p.get('en_only') else ''
+    l2name = l2['name'] if not p.get('en_only') and any(q.get('qt') for q in qs) else ''
+    when = f' · Held on {esc(p["held"])}' if p.get('held') else ''
+    if mock: board = 'LEARN WITH ANIL · ' + mock.upper() + ' TEST SERIES'
     head = (f'<div class="hd"><img src="{LOGO}" alt="Learn with Anil"><div class="t"><b>{esc(board)}</b><span>{esc(title)}</span>'
-            f'<i>{esc(sub)} · Held on {esc(p["held"])}</i></div>{series}</div>'
+            f'<i>{esc(sub)}{when}</i></div>{series}</div>'
             f'<div class="meta"><span>{"Time Allowed: " + esc(time_allowed) if time_allowed else ""}</span><span>Questions in this booklet: {len(qs)}</span>'
             f'<span>{"Maximum Marks: " + str(marks) if marks else ""}</span></div>'
-            f'<div class="note">Questions as printed in {esc(conf["board"])}\'s official booklet (English'
-            + (f' &amp; <span lang="{l2["code"]}">{esc(l2["label"])}</span>' if l2name and l2.get('label') else (f' &amp; {esc(l2name)}' if l2name else ''))
-            + f'); answers from {esc(key)}. Questions deleted by {esc(conf["board"])} are left out. '
-            'The answer key and answers with explanations are at the end of this booklet.</div>')
+            + (f'<div class="note">New questions written by Learn with Anil for the {esc(mock)} test series in the {esc(conf["board"])} pattern (not previous-year questions), '
+               'with an explanation for every answer. The answer key and answers with explanations are at the end of this booklet.</div>' if mock else
+               f'<div class="note">Questions as printed in {esc(conf["board"])}\'s official booklet (English'
+               + (f' &amp; <span lang="{l2["code"]}">{esc(l2["label"])}</span>' if l2name and l2.get('label') else (f' &amp; {esc(l2name)}' if l2name else ''))
+               + f'); answers from {esc(key)}. Questions deleted by {esc(conf["board"])} are left out. '
+               + (f'{esc(conf["board"])}\'s key for this paper printed only the correct answer and the original options were never published, '
+                  'so in every question the other three options are written by Learn with Anil (the correct answer is always APPSC\'s). ' if p.get('own') else '')
+               + 'The answer key and answers with explanations are at the end of this booklet.</div>'))
     mcq = [q for q in qs if q.get('o')]
     body = ''.join(q_html(q, l2['code']) for q in qs)
     keygrid = ''.join(f'<span>{q["n"]}-({",".join(str(i + 1) for i in q["a"])})</span>' for q in mcq)
@@ -160,6 +178,7 @@ def main(exams):
     manifest = json.load(open(mpath)) if os.path.exists(mpath) else {}
     confs = {c['id']: c for c in B.exam_confs()}
     jobs, todo = [], []
+    mkeys = json.load(open(os.path.join(PRIV, 'mock-keys.json'))) if os.path.exists(os.path.join(PRIV, 'mock-keys.json')) else {}
     for eid in exams:
         conf = confs[eid]
         papers, qs = B.load_exam(conf)[:2]
@@ -167,23 +186,39 @@ def main(exams):
             pq = [q for q in qs if q['p'] == p['id']]
             if not pq: continue
             out = os.path.join(OUTDIR, f'{eid}-{p["id"]}.pdf')
-            jobs.append((out, paper_doc(conf, p, pq)))
-            todo.append((eid, conf, p, out))
+            doc = paper_doc(conf, p, pq)
+            jobs.append((out, doc))
+            todo.append((eid, conf, p, out, hashlib.sha256(doc.encode()).hexdigest()[:10]))
+        for mid, pack, mname in MOCKS.get(eid, []):   # released Mission Khaki mocks: decrypt the sealed file with its private key
+            import glob
+            from cryptography.hazmat.primitives.ciphers.aead import AESGCM as _A
+            f = sorted(glob.glob(os.path.join(ROOT, 'docs', conf['dir'], 'mk', f'{mid}-*.bin')))
+            if not f or mid not in mkeys: print('  no sealed file or key for', mid); continue
+            raw = open(f[-1], 'rb').read()
+            mq = json.loads(_A(base64.b64decode(mkeys[mid])).decrypt(raw[:12], raw[12:], mid.encode()))['questions']
+            mk = B.MOCK_PACKS[eid]
+            p = dict(id=mid.replace('-', ''), mock=mid, title=f'{mk["title"].split(":")[-1].split("–")[-1].strip()} · {mname}', notif=f'{pack} · {mname}', held='',
+                     kw=f'{pack} {mname}', key='Learn with Anil')
+            p['title'] = f'{conf["seo"]} Prelims 2026 · {mname}'
+            out = os.path.join(OUTDIR, f'{eid}-{p["id"]}.pdf')
+            doc = paper_doc(conf, p, mq, mock=pack)
+            jobs.append((out, doc))
+            todo.append((eid, conf, p, out, hashlib.sha256(doc.encode()).hexdigest()[:10]))
     asyncio.run(render(jobs))
     rows, today = [], datetime.date.today().isoformat()
-    for eid, conf, p, out in todo:
+    for eid, conf, p, out, dhash in todo:   # file name from the booklet's content, so an unchanged booklet keeps its name (and its keys-tab row)
         pdf = open(out, 'rb').read()
         pages = len(pikepdf.open(out).pages)
         kid = f'bk-{eid}-{p["id"]}'
         if kid not in keys: keys[kid] = base64.b64encode(os.urandom(32)).decode()
-        name = f'{eid}-{p["id"]}-{hashlib.sha256(pdf).hexdigest()[:10]}.bin'
+        name = f'{eid}-{p["id"]}-{dhash}.bin'
         if not os.path.exists(os.path.join(SEALED, name)):
             for f in os.listdir(SEALED):
                 if f.startswith(f'{eid}-{p["id"]}-') and f.endswith('.bin'): os.remove(os.path.join(SEALED, f))
             iv = os.urandom(12)
             open(os.path.join(SEALED, name), 'wb').write(iv + AESGCM(base64.b64decode(keys[kid])).encrypt(iv, pdf, kid.encode()))
-        dl = re.sub(r'[^A-Za-z0-9]+', '-', f'LearnWithAnil {p.get("kw") or p["title"]} Question Paper').strip('-') + '.pdf'
-        manifest.setdefault(eid, {})[p['id']] = dict(key=kid, file=name, name=dl, pages=pages, bytes=len(pdf))
+        dl = re.sub(r'[^A-Za-z0-9]+', '-', f'LearnWithAnil {p.get("kw") or p["title"]} {"Mock Test" if p.get("key") == "Learn with Anil" else "Question Paper"}').strip('-') + '.pdf'
+        manifest.setdefault(eid, {})[p['id']] = dict(key=kid, file=name, name=dl, pages=pages, bytes=len(pdf), **({'mock': p['mock']} if p.get('mock') else {}))
         rows.append('\t'.join([kid, keys[kid], name, today]))
         print(f'  {kid}: {pages} pages, {len(pdf) // 1024} KB -> src/books/{name}')
     json.dump(keys, open(kpath, 'w'), indent=1)
