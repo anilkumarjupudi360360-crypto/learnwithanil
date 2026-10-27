@@ -662,7 +662,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/upsc-epfo-836582e337.js"></script>
+<script src="data/upsc-epfo-8556f07fa0.js"></script>
 <script>
 (function(){
 "use strict";
@@ -751,6 +751,33 @@ function passOK(kind){
 }
 function setPasses(p){   // from the payments script: {pyq, trial, paid, mock}
   p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses(); markLocks();
+  if(passOK("pyq")) exLoad();
+}
+/* Paid explanations (tools/ex_seal.py, 27 Oct 2026). The public data has every question and answer, and the explanations of
+   the free sample; the others (questions marked "wx") are in an encrypted bundle, /books/<DATA.exb.file>. With a valid PYQ
+   Pass the payments script gives its key (the 'mock' action, id DATA.exb.key) and the bundle is decrypted here, once per
+   tab (kept in sessionStorage), then the explanations are put back on the questions. */
+let EXS = 0;   // 0 not loaded, 1 loading, 2 loaded, 3 failed (tried again on the next view that needs it)
+async function exLoad(){
+  const x = DATA.exb;
+  if(!x || EXS===1 || EXS===2 || !PAYC || !PAYC.api || !ST.phone || !passOK("pyq")) return;
+  EXS = 1;
+  try{
+    let txt = ""; try{ txt = sessionStorage.getItem("lwa-ex-" + x.file) || ""; }catch(_){}
+    if(!txt){
+      const r = await payCall({action:"mock", exam:PAYC.exam, id:x.key, phone:ST.phone, email:ST.email||"", device:DEVICE});
+      if(!r || !r.ok || !r.key){ EXS = 3; if(r && r.need) markLocks(); return; }
+      const res = await fetch("/books/" + x.file); if(!res.ok) throw new Error("bundle");
+      const blob = new Uint8Array(await res.arrayBuffer());
+      const key = await crypto.subtle.importKey("raw", Uint8Array.from(atob(r.key), c=>c.charCodeAt(0)), "AES-GCM", false, ["decrypt"]);
+      txt = new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM", iv: blob.slice(0,12), additionalData: new TextEncoder().encode(x.key)}, key, blob.slice(12)));
+      try{ sessionStorage.setItem("lwa-ex-" + x.file, txt); }catch(_){}
+    }
+    const j = JSON.parse(txt);
+    for(const id in j){ const q = QMAP[id]; if(q && !q.w){ q.w = j[id][0]; if(j[id][1]) q.wt = j[id][1]; delete q.wx; } }
+    EXS = 2;
+    if(["quiz","result","bank","mistakes","smart","bookmarks"].includes(current)) render();
+  }catch(_){ EXS = 3; }
 }
 function markLocks(){   // 🔒 on PYQ buttons and tiles without the PYQ Pass; "✓ Unlocked" with it
   if(!PAYC || !PAYC.on) return; const ok = passOK("pyq");
@@ -1160,7 +1187,14 @@ function whyBox(w, wt, l){   // the explanation in the reader's language, with t
     + (w? `<details class="why-en"><summary lang="${l}">${EN_TOO[l]||"Read in English"}</summary><p>${esc(w)}</p></details>` : "") + `</div>`;
   return w? `<div class="why"><h4>Explanation</h4><p>${esc(w)}</p></div>` : "";
 }
-function whyHTML(q){ return whyBox(q.w, q.wt, P.lang===L2.code ? L2.code : "en") + videoBtn(q); }
+function whyHTML(q){
+  if(!q.w && q.wx){   // a paid explanation that is not loaded yet (see exLoad)
+    const ok = passOK("pyq"); if(ok) exLoad();
+    const msg = !ok ? `The explanation comes with the ₹${PAYC ? PAYC.pyq.price : 45} PYQ Pass.` : EXS===3 ? "Could not load the explanation. Check your connection and open this question again." : "Loading the explanation…";
+    return `<div class="why"><h4>Explanation</h4><p class="muted">${esc(msg)}</p></div>` + videoBtn(q);
+  }
+  return whyBox(q.w, q.wt, P.lang===L2.code ? L2.code : "en") + videoBtn(q);
+}
 function optsStatic(q, chosen, reveal){
   return `<ul class="opts"${(P.lang===L2.code&&q.ot)?LATTR:""}>${OPTS(q).map((o,i)=>{
     let cls="", tag="";

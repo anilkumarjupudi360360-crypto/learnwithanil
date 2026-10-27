@@ -870,6 +870,9 @@ def main():
     kpath_ = os.path.join(SRC, 'books', 'booklets.json')
     booklets = json.load(open(kpath_)) if os.path.exists(kpath_) else {}
     BOOKLETS.clear(); BOOKLETS.update(booklets)
+    # sealed paid explanations (tools/ex_seal.py): exam id -> key, file, n, h; the app gets them with the PYQ Pass
+    xpath_ = os.path.join(SRC, 'books', 'explanations.json')
+    exsealed = json.load(open(xpath_, encoding='utf-8')) if os.path.exists(xpath_) else {}
     notes = [dict(b, dl=sealed[b['id']]['pdf'], buy='') if b['id'] in sealed else b for b in notes]
     epath = os.path.join(SRC, 'exams.json')
     catalog = json.load(open(epath, encoding='utf-8')) if os.path.exists(epath) else dict(cats=[], exams=[])
@@ -910,7 +913,11 @@ def main():
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
         bks = booklets.get(conf['id'], {})
         papers = [dict(p, bk=dict(key=bks[p['id']]['key'], name=bks[p['id']]['name'], pages=bks[p['id']]['pages'])) if p['id'] in bks else p for p in papers]
-        data = dict(pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=questions, instagram=INSTAGRAM, site=SITE_URL, notes=enotes, wa=WHATSAPP,
+        exb = exsealed.get(conf['id'])
+        pub_qs, stale = public_questions(questions, exb)
+        if stale: print(f'  NOTE {conf["id"]}: {stale} paid explanations are not sealed yet and stay in the public app data; run tools/ex_seal.py {conf["id"]}')
+        data = dict(pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=pub_qs, instagram=INSTAGRAM,
+                    exb=dict(key=exb['key'], file=exb['file']) if exb else None, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     mains=emains, mainsP5=MAINS_P5 if emains else None,
                     key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
@@ -1109,6 +1116,7 @@ def main():
     for bid, bk in sealed.items(): shutil.copy(os.path.join(SRC, 'books', bk['file']), os.path.join(DIST, 'site', 'books', bk['file']))
     for ex in booklets.values():
         for bk in ex.values(): shutil.copy(os.path.join(SRC, 'books', bk['file']), os.path.join(DIST, 'site', 'books', bk['file']))
+    for ex in exsealed.values(): shutil.copy(os.path.join(SRC, 'books', ex['file']), os.path.join(DIST, 'site', 'books', ex['file']))
     # sealed (encrypted) paid mocks: published as-is; the keys are only in Anil's private sheet (tools/mk_seal.py)
     for exam_dir, src_dir in [('ts-police-si', 'mission-khaki')] + [(k, v['src']) for k, v in MOCK_PACKS.items() if v.get('src')]:
         mkdir_ = os.path.join(SRC, src_dir)
@@ -1690,6 +1698,25 @@ var b=document.querySelector(".passon");if(b){{b.textContent="✓ Your PYQ Pass 
 def lock_html(unlock):
     return (f'<p class="lock">Explanation: <a href="{unlock}">open it in the practice app</a>. '
             f'It needs the ₹{PAY["pyq_price"]} PYQ Pass: one payment for every exam on the site.</p>')
+
+
+def ex_hash(w, wt=''):
+    """Short hash of one explanation (English + Telugu/Hindi), to know whether the sealed bundle still has its current text (tools/ex_seal.py)."""
+    return hashlib.sha256((w + '\x00' + (wt or '')).encode()).hexdigest()[:8]
+
+
+def public_questions(questions, sealed):
+    """The questions for the public app data: an explanation that is in the exam's sealed bundle (tools/ex_seal.py; paid,
+    outside the free sample) is left out and the question is marked "wx": 1, so the app fetches it with the PYQ Pass.
+    Returns (questions, number of paid explanations still public because they were added or changed after sealing)."""
+    if not sealed: return questions, 0
+    h, free, out, stale = sealed['h'], sample_ids(questions), [], 0
+    for q in questions:
+        if q.get('w') and q['id'] in h and h[q['id']] == ex_hash(q['w'], q.get('wt', '')):
+            q = {k: v for k, v in q.items() if k not in ('w', 'wt')}; q['wx'] = 1
+        elif q.get('w') and q['id'] not in free: stale += 1
+        out.append(q)
+    return out, stale
 
 
 def sample_ids(questions):

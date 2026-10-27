@@ -36,6 +36,8 @@ def seal_pc_mock():   # a sealed test Constable mock (Mock 1 is free)
 
 
 PKEY, PFILE = seal_pc_mock()
+_xk = os.path.join(os.environ.get('BOOKS_PRIV', '/home/claude/lwa-books/paid'), 'ex-keys.json')
+EXKEYS = json.load(open(_xk)) if os.path.exists(_xk) else {}   # the real bundle keys, only on the machine that sealed them
 
 
 async def main():
@@ -62,6 +64,8 @@ async def main():
         elif b['action'] == 'verify':
             if state.get('verifyfail'): r = dict(ok=False, error='The payment is not complete yet.')
             else: state['pyq'] = True; r = dict(ok=True, passes=passes())
+        elif b['action'] == 'mock' and b['id'].startswith('bk-ex-'):   # sealed paid explanations (tools/ex_seal.py): PYQ Pass only
+            r = dict(ok=True, id=b['id'], key=EXKEYS.get(b['id'], ''), file='') if state['pyq'] else dict(ok=False, need='pyq', error='needs pass')
         elif b['action'] == 'mock' and b['id'] == 'mk-pc-1': r = dict(ok=True, id=b['id'], key=PKEY, file=PFILE, free=True)   # free for registered students
         elif b['action'] == 'mock': r = dict(ok=True, id=b['id'], key=TKEY, file=TFILE) if (state['mock'] or state['pyq']) else dict(ok=False, need='pyq', error='needs pass')
         else: r = dict(ok=False)
@@ -130,6 +134,17 @@ async def main():
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('PYQ test did not open with the PYQ Pass')
         await pg.goto(url + 'appsc-group-1/?sec=pol'); await pg.wait_for_timeout(1200)
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('PYQ Pass bought on TS SI does not open APPSC Group 1 PYQs')
+        # 6. paid explanations (27 Oct 2026): not in the public data; with the pass they load from the sealed bundle
+        if EXKEYS:
+            await pg.goto(url + 'appsc-group-2/bank/'); await pg.wait_for_timeout(2500)
+            x = await pg.evaluate('(async()=>{const t=await (await fetch(document.querySelector("script[src*=\'data/\']").src)).text(); return {wx: (t.match(/"wx":1/g)||[]).length, exb: /"exb":\\{/.test(t)};})()')
+            if not x['exb'] or x['wx'] < 100: errors.append(f'paid explanations still in the public app data: {x}')
+            txt = await pg.inner_text('main')
+            if 'Loading the explanation' in txt or 'Could not load the explanation' in txt: errors.append('paid explanations did not load with the PYQ Pass')
+            n = await pg.evaluate('document.querySelectorAll("main .why p:not(.muted)").length')
+            if n < 15: errors.append(f'only {n} explanations shown in the question bank with the PYQ Pass')
+            if not await pg.evaluate('(()=>{const q=window.LWA_DATA.questions.find(q=>q.id==="m2019p1-100");return !!(q&&q.w&&!q.wx)})()'): errors.append('a paid explanation was not put back after loading')
+        else: print('  (no ex-keys.json here: paid-explanation test skipped)')
         await pg.close()
         # C. a registered student without a pass, on a phone: what happens around Instamojo (24 Oct 2026)
         state.update(mock=False, pyq=False, trial='expired', calls=[], kind='')

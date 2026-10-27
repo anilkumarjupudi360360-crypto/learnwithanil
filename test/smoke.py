@@ -497,5 +497,20 @@ async def main():
             await hp.close()
         await b.close()
         srv.shutdown()
+        # paid explanations (tools/ex_seal.py, 27 Oct 2026): no sealed explanation in any public app data file, every bundle published
+        xm = os.path.join(ROOT, 'src', 'books', 'explanations.json')
+        if os.path.exists(xm):
+            man = json.load(open(xm, encoding='utf-8'))
+            for ex in man.values():
+                if not os.path.exists(os.path.join(SITE, 'books', ex['file'])): errors.append(f'sealed explanations books/{ex["file"]} not published')
+            for dp, _, fs in os.walk(SITE):
+                for f in fs:
+                    if not (os.path.basename(dp) == 'data' and f.endswith('.js')): continue
+                    d = json.loads(open(os.path.join(dp, f), encoding='utf-8').read()[len('window.LWA_DATA='):].rstrip().rstrip(';'))
+                    ex = man.get((d.get('pay') or {}).get('exam', ''))
+                    if not ex: continue
+                    leak = [q['id'] for q in d['questions'] if q['id'] in ex['h'] and q.get('w')]
+                    if leak: errors.append(f'{f}: {len(leak)} paid explanations in the public app data (e.g. {leak[0]})')
+                    if (d.get('exb') or {}).get('file') != ex['file']: errors.append(f'{f}: app data does not point to the sealed explanations')
         print('ERRORS:', errors if errors else 'none')
 asyncio.run(main())
