@@ -2244,7 +2244,7 @@ LANDINGS = {
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
             '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.</p>'
             '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (686 posts, apply 10–30 November) and '
-            '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts). Timed mock tests: '
+            '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts, last date extended to 9 November 2026). Timed mock tests: '
             '<a href="/appsc-group-2/mock-test.html">Group 2</a> · <a href="/appsc-group-1/mock-test.html">Group 1</a>.</p>',
       te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు', 'APPSC AMVI': 'APPSC AMVI ప్రశ్నాపత్రాలు'},
       order=lambda c: {'Group-I': 0, 'Group-II': 1}.get(c['short'], 2)),   # Group-I, Group-II, then AMVI
@@ -2361,22 +2361,29 @@ NOTIFS = {
     ]),
   'appsc-group-1-notification-2026.html': dict(
     exam='appsc-group-1', crumb='Group 1 Notification 2026',
-    # Anil, 27 Oct 2026 (last day): candidates face a slow APPSC website and failed payments; APPSC may extend the date (it did for the
-    # previous Group 1, to 28 Jan 2024) but no extension was announced as of 27 Oct, 3 pm. Update these lines if APPSC extends the date.
-    title='APPSC Group 1 Last Date 27 October 2026 – Extension?, Website Slow & Payment Problems, 166 Posts | Learn with Anil',
-    desc='APPSC Group 1 Notification 2026 (No. 07/2026): the last date to apply is 27 October 2026. Candidates are facing a slow website and failed fee payments. '
-         'APPSC may extend the date, as it did for the previous Group 1, but no extension has been announced yet. Step-by-step help, 166 posts, exam pattern and previous papers.',
-    h1='APPSC Group 1 Notification 2026: last date 27 October',
-    lede='APPSC Notification No. 07/2026 is for 166 Group-I Services posts, from Deputy Collector and DSP to Divisional Development Officer. '
-         'Online applications close on 27 October 2026, and the screening test is tentatively on 24 January 2027. On the last day the APPSC website is very slow and many fee payments are failing; '
-         'below is what to do, followed by the posts, the exam pattern and the Group 1 previous papers to practise.',
-    te='APPSC గ్రూప్ 1 నోటిఫికేషన్ 2026 (నం. 07/2026): 166 పోస్టులు — దరఖాస్తుకు చివరి తేదీ అక్టోబర్ 27. వెబ్‌సైట్ నెమ్మదిగా ఉంది, ఫీజు చెల్లింపులు విఫలమవుతున్నాయి. గడువు పొడిగించే అవకాశం ఉంది, కానీ ఇంకా ప్రకటించలేదు — ఈరోజే దరఖాస్తు పూర్తి చేయండి. ప్రిలిమ్స్ తాత్కాలికంగా 2027 జనవరి 24.',
+    # Anil, 27 Oct 2026: APPSC web note of 27 Oct 2026 extended the last date for Notifications 07, 08, 19, 25 and 26/2026 to
+    # 9 Nov 2026, 11:59 pm ("no further extension"; Group-I screening test date unchanged). Source: Extension_Webnote_27102026.pdf
+    title='APPSC Group 1 Last Date Extended to 9 November 2026 – Apply Online, 166 Posts, Fee & Help | Learn with Anil',
+    desc='APPSC has extended the last date for Group 1 (Notification 07/2026) online applications to 9 November 2026, 11:59 pm, with no further extension; '
+         'the screening test date is unchanged. Also extended: AEE (Pollution Control Board), Horticulture Officer, Hostel Welfare Officer and ATWO/ASWO. Step-by-step help, posts, pattern and previous papers.',
+    h1='APPSC Group 1 last date extended to 9 November 2026',
+    lede='APPSC has extended the last date for Group-I Services (Notification No. 07/2026, 166 posts) to 9 November 2026, 11:59 pm, after requests from aspirants. '
+         'APPSC says there will be no further extension and no change in the screening test date (tentatively 24 January 2027). Below: what to do if the website or payment gets stuck, '
+         'the posts, the exam pattern and the Group 1 previous papers to practise.',
+    te='APPSC గ్రూప్ 1 (నోటిఫికేషన్ నం. 07/2026, 166 పోస్టులు) దరఖాస్తు గడువు 2026 నవంబర్ 9 రాత్రి 11:59 వరకు పొడిగించారు. ఇక పొడిగింపు ఉండదు; స్క్రీనింగ్ టెస్ట్ తేదీలో మార్పు లేదు. చివరి రోజు వరకు ఆగకుండా ముందే దరఖాస్తు చేయండి.',
     pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_I_07_2026.pdf', pdfname='APPSC Notification No. 07/2026 (Group-I Services)',
+    more_src=[('https://psc.ap.gov.in/Documents/NotificationDocuments/Extension_Webnote_27102026.pdf', 'APPSC web note on the extension of the last date, 27 October 2026')],
     sections=[
-      ('Last day today: website slow, payments failing (27 October 2026)', 'p',
-       '27 October 2026 is the last date to apply. On the last day candidates are finding the APPSC website very slow, the OTPR password page hanging and fee payments '
-       'failing. There is a chance that APPSC extends the last date: it extended the previous Group 1 registration till 28 January 2024, and it has extended other '
-       'recruitments before. But no extension has been announced as of 27 October 2026, 3 pm, so do not wait for one. Finish your application today, and watch psc.ap.gov.in for any notice.'),
+      ('Last date extended to 9 November 2026', 'p',
+       'On 27 October 2026, the last day, the APPSC website was very slow, the OTPR password page kept hanging and many fee payments failed. The same day APPSC issued a web note: '
+       '"In view of requests received from the aspirants", the last date for online applications is extended to 9 November 2026, up to 11:59 pm. APPSC says there shall be no further '
+       'extension, and the Group-I screening test date does not change. If you could not finish on 27 October, apply now; do not leave it for the last day again.'),
+      ('All APPSC notifications extended to 9 November 2026', 'table+', (['Notification', 'Posts'], [
+        ('07/2026 (6 October 2026)', 'Group-I Services'),
+        ('08/2026 (6 October 2026)', 'Assistant Environmental Engineer, A.P. Pollution Control Board'),
+        ('19/2026 (6 October 2026)', 'Horticulture Officer, A.P. Horticulture Service'),
+        ('25/2026 (9 October 2026)', 'Hostel Welfare Officer Grade-II, BC Welfare, Social Welfare and Tribal Welfare Departments'),
+        ('26/2026 (9 October 2026)', 'Assistant Tribal Welfare Officer and Assistant Social Welfare Officer')])),
       ('What to do if you are stuck', 'list', [
         'No password after the OTPR? APPSC does not send one. Create it once at portal-psc.ap.gov.in/CandidateLoginPages/UserRegistration.aspx with your OTPR ID '
         '(AP followed by 10 digits) and mobile number. The password needs 8 to 12 characters with a capital letter, a number and a special character ($ @ ! % * #).',
@@ -2391,8 +2398,9 @@ NOTIFS = {
         'Exam centre: Vijayawada appears as "Ntr" (NTR district) in the list; "Krishna" now means Machilipatnam.']),
       ('Important dates', 'table', [
         ('Notification (No. 07/2026)', '6 October 2026'),
-        ('Online applications', '6 October to 27 October 2026 (till 11:59 pm) · no extension announced as of 27 October, 3 pm'),
-        ('Screening test (prelims)', 'Tentatively 24 January 2027'),
+        ('Online applications', '6 October to 9 November 2026, 11:59 pm (extended from 27 October; no further extension)'),
+        ('Extension web note', '27 October 2026'),
+        ('Screening test (prelims)', 'Tentatively 24 January 2027 (unchanged by the extension)'),
         ('Mains and interview', 'To be announced'),
         ('Official website', 'psc.ap.gov.in')]),
       ('Posts', 'list', ['Deputy Collector (A.P. Civil Service, Executive Branch)', 'Assistant Commissioner of State Tax', 'Deputy Superintendent of Police (Civil)',
@@ -2429,7 +2437,8 @@ def notif_page(loaded, rel):
         else: body.append(f'<p>{esc(data)}</p>')
     body.append(f'<h2>Start with the previous papers</h2><p>Every {esc(conf["name"])} paper on this site comes with the answers from APPSC\'s final key and a short '
                 f'explanation in English and Telugu. Practise a paper online or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
-    body.append(f'<p class="note">Source: <a href="{N["pdf"]}" rel="nofollow">{esc(N["pdfname"])}</a>. Dates and vacancies can change with corrigenda; '
+    more = ''.join(f'; <a href="{u}" rel="nofollow">{esc(nm)}</a>' for u, nm in N.get('more_src', []))
+    body.append(f'<p class="note">Source: <a href="{N["pdf"]}" rel="nofollow">{esc(N["pdfname"])}</a>{more}. Dates and vacancies can change with corrigenda; '
                 f'always check the official website psc.ap.gov.in before applying. Learn with Anil is not connected with APPSC.</p>')
     return static_page(0, N['title'], N['desc'], can, N['h1'], esc(N['lede']), ''.join(body),
                        [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + conf['pb']), (N['crumb'], can)], conf, at_root=True)
