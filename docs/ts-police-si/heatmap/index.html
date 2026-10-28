@@ -96,6 +96,11 @@ img{max-width:100%}
 
 main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .view{display:flex;flex-direction:column;gap:28px}
+/* Anil, 28 Oct 2026: pages felt stuck while the exam data downloads on a phone: show this until the app draws the page */
+.boot{display:flex;align-items:center;justify-content:center;gap:12px;min-height:55vh;color:var(--muted,#55627C);font-size:15px}
+#hub-static:not([hidden]) ~ .boot{display:none}
+.boot .spin,.chk .spin{width:22px;height:22px;border-radius:50%;border:3px solid #D6DFEC;border-top-color:#1846C7;animation:lwaspin .8s linear infinite;flex:none}
+@keyframes lwaspin{to{transform:rotate(360deg)}}
 .page-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px}
 .page-head h1{font-size:clamp(26px,4vw,34px);font-weight:800}
 .page-head p{color:var(--muted);max-width:62ch;margin-top:6px}
@@ -648,6 +653,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
   </section>
 </div>
 
+<div id="boot" class="boot" role="status"><span class="spin" aria-hidden="true"></span><span>Loading… <span lang="te">లోడ్ అవుతోంది…</span></span></div>
 <div id="view" class="view" hidden></div>
 </main>
 
@@ -659,7 +665,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ts-si-13ad497adb.js"></script>
+<script src="data/ts-si-e2e77b4e9f.js"></script>
 <script>
 (function(){
 "use strict";
@@ -760,6 +766,7 @@ function upsellCard(){   // after a free test: the PYQ Pass for the explanations
 function setPasses(p){   // from the payments script: {pyq, trial, paid, mock}
   p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses(); markLocks();
   if(passOK("pyq")) exLoad();
+  else try{ Object.keys(localStorage).filter(k=>k.startsWith("lwa-exk-")).forEach(k=>localStorage.removeItem(k)); }catch(_){}
 }
 /* Paid explanations (tools/ex_seal.py, 27 Oct 2026). The public data has every question and answer, and the explanations of
    the free sample; the others (questions marked "wx") are in an encrypted bundle, /books/<DATA.exb.file>. With a valid PYQ
@@ -773,12 +780,20 @@ async function exLoad(){
   try{
     let txt = ""; try{ txt = sessionStorage.getItem("lwa-ex-" + x.file) || ""; }catch(_){}
     if(!txt){
-      const r = await payCall({action:"mock", exam:PAYC.exam, id:x.key, phone:ST.phone, email:ST.email||"", device:DEVICE});
-      if(!r || !r.ok || !r.key){ EXS = 3; if(r && r.need) markLocks(); return; }
-      const res = await fetch("/books/" + x.file); if(!res.ok) throw new Error("bundle");
+      const KK = "lwa-exk-" + x.file;   // the bundle's key, saved on this phone after the first unlock (cleared if the pass ends)
+      let k64 = ""; try{ k64 = localStorage.getItem(KK) || ""; }catch(_){}
+      const resP = fetch("/books/" + x.file);   // download the bundle while the key is fetched
+      if(!k64){
+        const r = await payCall({action:"mock", exam:PAYC.exam, id:x.key, phone:ST.phone, email:ST.email||"", device:DEVICE});
+        if(!r || !r.ok || !r.key){ EXS = 3; if(r && r.need) markLocks(); return; }
+        k64 = r.key;
+      }
+      const res = await resP; if(!res.ok) throw new Error("bundle");
       const blob = new Uint8Array(await res.arrayBuffer());
-      const key = await crypto.subtle.importKey("raw", Uint8Array.from(atob(r.key), c=>c.charCodeAt(0)), "AES-GCM", false, ["decrypt"]);
-      txt = new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM", iv: blob.slice(0,12), additionalData: new TextEncoder().encode(x.key)}, key, blob.slice(12)));
+      const key = await crypto.subtle.importKey("raw", Uint8Array.from(atob(k64), c=>c.charCodeAt(0)), "AES-GCM", false, ["decrypt"]);
+      try{ txt = new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM", iv: blob.slice(0,12), additionalData: new TextEncoder().encode(x.key)}, key, blob.slice(12))); }
+      catch(e){ try{ localStorage.removeItem(KK); }catch(_){} throw e; }   // an old saved key: ask again next time
+      try{ localStorage.setItem(KK, k64); }catch(_){}
       try{ sessionStorage.setItem("lwa-ex-" + x.file, txt); }catch(_){}
     }
     const j = JSON.parse(txt);
@@ -803,6 +818,8 @@ function anyPlan(){
 const GATE = {practice:"pyq", bank:"pyq", mistakes:"any", smart:"any", bookmarks:"any", heatmap:"any"};
 function gateOK(v){ const g = GATE[v]; return !g || (g==="pyq" ? pyqOpen() : anyPlan()); }
 function vLocked(v){
+  // a registered phone whose pass is still being looked up (new phone, or bought on another device): don't flash the pay screen
+  if(ST.phone && PAYC && PAYC.on && PAYC.api && !UI.passChecked) return `<div class="wrap view"><div class="boot chk" role="status"><span class="spin" aria-hidden="true"></span><span>Checking your PYQ Pass…</span></div></div>`;
   const pyq = GATE[v]==="pyq", price = PAYC ? PAYC.pyq.price : 45, a = PASSES.all || {};
   const name = {practice:"Topic-wise quiz", bank:"Question bank", mistakes:"Mistakes notebook", smart:"Smart Quiz", bookmarks:"Bookmarks", heatmap:"Memory heatmap"}[v];
   const body = pyq
@@ -817,10 +834,13 @@ async function payCall(body){
   const r = await fetch(PAYC.api, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(body)});
   return r.json();
 }
-async function refreshPasses(){
+async function refreshPasses(force){
   if(!PAYC || !PAYC.on || !PAYC.api || !ST.phone) return;
+  let last = 0; try{ last = +localStorage.getItem("lwa-pass-checked") || 0; }catch(_){}
+  if(!force && passOK("pyq") && Date.now() - last < 30*60*1000){ UI.passChecked = true; return; }
   try{ const r = await payCall({action:"passes", exam:PAYC.exam, phone:ST.phone, email:ST.email||"", device:DEVICE});
-       if(r && r.ok){ UI.passChecked = true; setPasses(r.passes); if(GATE[current] || current==="mains" || current==="notes") render(); } else if(r && r.error) toast(r.error); }catch(_){}
+       if(r && r.ok){ UI.passChecked = true; try{ localStorage.setItem("lwa-pass-checked", String(Date.now())); }catch(_){} setPasses(r.passes); if(GATE[current] || current==="mains" || current==="notes") render(); } else if(r && r.error) toast(r.error); }catch(_){}
+  if(!UI.passChecked){ UI.passChecked = true; if(GATE[current]) render(); }   // no answer: stop showing "Checking your PYQ Pass"
 }
 function mockKinds(m){   // "10 Tier-I + 3 Tier-II"
   const c = {}; m.mocks.forEach(x=>{ const k = x.name.replace(/\s*Mock\s*\d+$/,""); c[k] = (c[k]||0) + 1; });
@@ -912,11 +932,11 @@ function payAway(){   // {kind} if this tab left for Instamojo in the last 30 mi
 const payDone = kind => kind==="mock" || kind==="combo" ? passOK("mock") : passOK("pyq");
 async function payResume(){   // back from Instamojo by the back button (no payment details in the address): offer to try again
   const s = payAway(); if(!s || !PAYC || !PAYC.on) return;
-  await refreshPasses();
+  await refreshPasses(true);
   if(!payDone(s.kind)) openPay(s.kind, "back");
 }
 async function payCheck(){
-  await refreshPasses(); closePay();
+  await refreshPasses(true); closePay();
   if(passOK("pyq")){ toast("Unlocked. All the best!"); const p = UI.payPending; UI.payPending = null; if(p) startQuiz(p.ids, p.title, p.mode, p.source, p.mins); else render(); }
   else if(passOK("mock")){ toast("Your mock-test pass is active. All the best!"); render(); }   // old mock-only passes
   else toast("No payment found for " + (ST.phone||"this phone") + " yet. If you just paid, wait a minute and check again.");
@@ -1116,6 +1136,7 @@ function route(){
   return v;
 }
 function render(){
+  const bt = document.getElementById("boot"); if(bt) bt.remove();
   const v = route(); const changed = v!==current, prevView = current; current = v;
   if(QZ){ if(v==="quiz"){ if(awayResume() && prevView!=="quiz") setTimeout(()=>toast("Welcome back. The timer was paused while you were away."), 300); } else if(prevView==="quiz") awayPause(); }
   if(v!=="join") UI.pending = null;
@@ -2150,7 +2171,7 @@ document.addEventListener("submit", async e=>{
     if(changed) sendRecord({help, test: isNew? "Registered" + (p? " · before "+p.title : "") : "Updated details"});
     if(isNew) track("sign_up", {method: "form", exam: DATA.examShort||"", district});
     const trialMsg = "";
-    if(PAYC && PAYC.on && PAYC.api){ toast("Saving your details…"); await refreshPasses(); }   // a pass already paid with this phone opens at once
+    if(PAYC && PAYC.on && PAYC.api){ toast("Saving your details…"); await refreshPasses(true); }   // a pass already paid with this phone opens at once
     /* Anil, 26 Oct 2026: a new student who registered from "Register to get the PYQ Pass" was sent back to the page with
        no checkout, and one who registered before a test saw the checkout over the registration page. Now the form always
        closes (back to the page they came from, replacing the form in the history) and the checkout opens there, with a
@@ -2219,7 +2240,8 @@ addEventListener("pageshow", e=>{ if(e.persisted){ payRelease(); if(!new URLSear
 function start(data){
   if(data && data.QZ) QZ = data.QZ; if(data && data.LAST) LAST = data.LAST;
   if(!QZ){ QZ = loadQZ(); if(QZ) setTimeout(()=>{ if(current==="quiz") toast("Welcome back: your test is just where you left it."); }, 400); }
-  refreshPasses();   // on every page load, so a pass bought (or ended) elsewhere shows here
+  if(passOK("pyq")) setTimeout(exLoad, 0);   // a pass saved on this phone: open the paid explanations at once
+  setTimeout(refreshPasses, 0);   // a pass bought (or ended) elsewhere shows here (at most every 30 minutes while a pass is live)
   if(PATHMODE){
     let red = null; try{ red = sessionStorage.getItem("lwa-path"); sessionStorage.removeItem("lwa-path"); }catch(_){}
     if(red && routeFromPath(red)!==null) history.replaceState(null, "", red);

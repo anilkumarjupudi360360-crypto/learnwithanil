@@ -87,6 +87,11 @@ img{max-width:100%}
 
 main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .view{display:flex;flex-direction:column;gap:28px}
+/* Anil, 28 Oct 2026: pages felt stuck while the exam data downloads on a phone: show this until the app draws the page */
+.boot{display:flex;align-items:center;justify-content:center;gap:12px;min-height:55vh;color:var(--muted,#55627C);font-size:15px}
+#hub-static:not([hidden]) ~ .boot{display:none}
+.boot .spin,.chk .spin{width:22px;height:22px;border-radius:50%;border:3px solid #D6DFEC;border-top-color:#1846C7;animation:lwaspin .8s linear infinite;flex:none}
+@keyframes lwaspin{to{transform:rotate(360deg)}}
 .page-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px}
 .page-head h1{font-size:clamp(26px,4vw,34px);font-weight:800}
 .page-head p{color:var(--muted);max-width:62ch;margin-top:6px}
