@@ -1168,6 +1168,9 @@ def main():
     all_pages = {**all_pages, 'help.html': None}
     open(os.path.join(DIST, 'site', 'funders.html'), 'w', encoding='utf-8').write(funders_page(loaded))
     all_pages = {**all_pages, 'funders.html': None}
+    # free sample chapters of the study books (public PDFs; Anil, 28 Oct 2026) go in the sitemap so search engines and AI assistants find them
+    for b in notes:
+        if b.get('free'): all_pages[b['free'].lstrip('/')] = None
     # the free paper PDFs were removed on 23 Oct 2026, but Google still shows their addresses: send those visitors to the paper page
     old_pdfs = {f'/{c["dir"] + "/" if c["dir"] else ""}pdf/{pdf_name(c, p)}': f'/{c["dir"] + "/" if c["dir"] else ""}papers/{p["slug"]}.html'
                 for c, papers, _ in loaded for p in papers}
@@ -1918,6 +1921,18 @@ def llms_txt(loaded, grand):
                  f'English and {c["l2"]["name"]}. PYQs: {SITE_URL}{c["pb"]}pyqs.html · Sectional tests: {SITE_URL}{c["pb"]}sectional-tests.html')
         for p in sorted(papers, key=lambda p: (-p['year'], p['id'])):
             L.append(f'  - [{paper_kw(c, p)} question paper with answers]({SITE_URL}/{base}papers/{p["slug"]}.html) — held {p["held"]}, {p["count"]} questions')
+    npath_ = os.path.join(SRC, 'notes.json')
+    books = json.load(open(npath_, encoding='utf-8')) if os.path.exists(npath_) else []
+    ids = {c['id']: c for c in exams}
+    bl = []
+    for b in books:
+        page = (ids[b['exams'][0]]['pb'] + 'notes/') if b.get('exams') and b['exams'][0] in ids else '/appsc-group-2/notes/'
+        if b.get('exams') and b['exams'][0] not in ids: continue
+        line = (f'- [{b.get("product_en") or b["product"]}]({SITE_URL}{page}): {b["pages"]}-page PDF by Jupudi Anil Kumar'
+                + (f', {b["chapters_label"]}' if b.get('chapters_label') else '') + f'. Chapters: {"; ".join(b["chapters"])}. Included in the ₹{PAY["pyq_price"]} PYQ Pass.')
+        if b.get('free'): line += f' Free sample chapter (PDF, shareable): {SITE_URL}{b["free"]}'
+        bl.append(line)
+    if bl: L += ['', '## Study material (PDF books)'] + bl
     L += ['', '## Pages for each recruiting board']
     for rel, X in LANDINGS.items():
         if any(c['board'] == X['board'] for c in exams): L.append(f'- [{X["title"].split(" | ")[0]}]({SITE_URL}/{rel})')
