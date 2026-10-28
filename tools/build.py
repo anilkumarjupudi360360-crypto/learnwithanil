@@ -958,7 +958,7 @@ def main():
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
                      .replace('{{HOME_NOTES}}', home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '')).replace('{{HUB}}', hub)
-                     .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}')
+                     .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}').replace('{{NLIVE}}', str(len(loaded)))
                      .replace('{{LIVE_SUMMARY}}', esc(live_summary))
                      .replace('{{HUB_CTAS}}', hub_ctas)
                      .replace('{{NAV_EXTRA}}', nav_extra if is_root else '')
