@@ -341,11 +341,21 @@ div.feature:hover{border-color:var(--line)}
 .qotd-head .eyebrow{color:var(--accent-text);font-weight:600}
 .share-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .share-row .muted{font-size:14px}
+.share-row .btn svg{width:18px;height:18px;flex:none}
 .btn-wa{background:#128C4B;color:#fff;border-color:#128C4B}
 .btn-wa:hover{background:#0E7A40}
 .btn-wa svg,.btn svg.ic{width:18px;height:18px}
 .share-card{display:flex;flex-direction:column;gap:12px;padding:18px 20px;border:1.5px dashed var(--accent);background:linear-gradient(160deg,var(--accent-soft),var(--surface) 70%)}
 .share-card h3{font-size:18px}
+.askshare{position:fixed;left:50%;bottom:calc(12px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:min(520px,calc(100% - 24px));z-index:45;background:var(--surface);border:1.5px solid var(--accent);border-radius:16px;box-shadow:var(--shadow);padding:18px 18px 8px;display:flex;flex-direction:column;gap:10px;animation:askup .35s ease-out}
+.askshare h3{font-size:17px;font-weight:700;padding-right:30px;margin:0}
+.askshare p{font-size:14.5px;line-height:1.55;margin:0}
+.askshare-x{position:absolute;top:6px;right:6px;width:40px;height:40px;border:0;background:transparent;font-size:18px;color:var(--muted);cursor:pointer;border-radius:10px}
+.askshare-x:hover{background:var(--surface-2)}
+.askshare-foot{display:flex;gap:14px;justify-content:flex-end}
+.linkbtn{background:none;border:0;padding:8px 2px;color:var(--muted);font-size:13.5px;text-decoration:underline;cursor:pointer;font-family:inherit}
+@keyframes askup{from{transform:translate(-50%,24px);opacity:0}to{transform:translate(-50%,0);opacity:1}}
+@media (prefers-reduced-motion:reduce){.askshare{animation:none}}
 .palette{padding:18px;display:flex;flex-direction:column;gap:14px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 80px)}
 .palette h3{font-size:16px;font-weight:700}
 .pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(36px,1fr));gap:8px;max-height:320px;overflow:auto;padding:3px}
@@ -2143,10 +2153,95 @@ async function shareCanvas(c, name, text){
   toast("Image saved. Attach it on WhatsApp or Instagram; the caption is copied.");
 }
 function scoreText(r){ const n=r.ids.length; return `🎯 I scored ${r.c}/${n} (${pct(r.c,n)||0}%) in "${r.title}" on Learn with Anil.\nCan you beat me? Practise real ${DATA.board||"APPSC"} previous questions 👉 ${DATA.site}/${DATA.base||""}`; }
-function shareBlock(){ return `<section class="card share-card">
-    <h3>Share your score</h3>
-    <p class="muted" style="font-size:15px">Challenge your friends to beat it. Practising together is how toppers stay consistent.</p>
-    <div class="share-row"><button class="btn btn-wa" type="button" data-act="scorewa">${WA_ICON}Send on WhatsApp</button><button class="btn btn-secondary" type="button" data-act="scoreimg">${IMG_ICON}Share score card (image)</button></div>
+/* ---------- "help this community grow" (Anil, 28 Oct 2026) ----------
+   Fees are low and there is no ad budget, so students are asked, politely and never compulsorily, to share the site with a
+   friend: once after registering (a small card at the bottom of the screen, never during a test or over the checkout) and
+   on every result page (a card with the score-sharing buttons). Tapping share, or "Don't ask again", ends the after-registration
+   card for good. GA events: share_ask, share_site {from, via}, share_ask_later, share_ask_never. Shared links carry
+   utm_source=friend&utm_medium=<whatsapp|share|copy>&utm_campaign=community. */
+const ASK = {
+  en:{h:"🙏 A small request from Anil",
+      p:"Learn with Anil keeps its fees very low (₹45 opens everything), so we cannot spend money on ads. This community grows only when students like you tell their friends. If the site helps you, please share it with one friend who is preparing. It is completely optional.",
+      r:"🙏 Did this test help you? Help one more aspirant",
+      rp:"We keep fees low and spend nothing on ads, so students sharing with friends is how this community grows. If this test was useful, please share the website with one friend who is preparing. Completely optional.",
+      wa:"Share on WhatsApp", site:"Share the website", more:"Other apps", copy:"Copy link", later:"Not now", never:"Don't ask again",
+      yours:"Or challenge your friends with your score:", score:"Send my score", card:"Score card (image)",
+      thanks:"Thank you for helping this community grow! 🙏", copied:"Link copied. Paste it in any group or chat. Thank you! 🙏"},
+  te:{h:"🙏 అనిల్ నుంచి ఒక చిన్న విన్నపం",
+      p:"Learn with Anil ఫీజు చాలా తక్కువ (₹45తో అన్నీ), అందుకే ప్రకటనలకు డబ్బు ఖర్చు పెట్టలేం. మీలాంటి విద్యార్థులు తమ స్నేహితులకు చెబితేనే ఈ కమ్యూనిటీ పెరుగుతుంది. సైట్ మీకు ఉపయోగపడితే, ప్రిపేర్ అవుతున్న ఒక్క స్నేహితుడికైనా షేర్ చేయండి. ఇది పూర్తిగా మీ ఇష్టం.",
+      r:"🙏 ఈ టెస్ట్ ఉపయోగపడిందా? ఇంకో అభ్యర్థికి సహాయం చేయండి",
+      rp:"ఫీజు తక్కువ, ప్రకటనలకు ఖర్చు లేదు. విద్యార్థులు స్నేహితులతో పంచుకోవడం వల్లే ఈ కమ్యూనిటీ పెరుగుతుంది. ఈ టెస్ట్ మీకు ఉపయోగపడితే, వెబ్‌సైట్‌ను ప్రిపేర్ అవుతున్న ఒక్క స్నేహితుడికైనా షేర్ చేయండి. ఇది పూర్తిగా మీ ఇష్టం.",
+      wa:"WhatsApp లో షేర్ చేయండి", site:"వెబ్‌సైట్ షేర్ చేయండి", more:"ఇతర యాప్స్", copy:"లింక్ కాపీ", later:"ఇప్పుడు కాదు", never:"మళ్లీ అడగవద్దు",
+      yours:"లేదా మీ స్కోర్‌తో స్నేహితులకు ఛాలెంజ్ చేయండి:", score:"నా స్కోర్ పంపండి", card:"స్కోర్ కార్డ్ (ఇమేజ్)",
+      thanks:"ఈ కమ్యూనిటీని పెంచుతున్నందుకు ధన్యవాదాలు! 🙏", copied:"లింక్ కాపీ అయింది. ఏ గ్రూప్‌లో లేదా చాట్‌లోనైనా పేస్ట్ చేయండి. ధన్యవాదాలు! 🙏"},
+  hi:{h:"🙏 अनिल की ओर से एक छोटा-सा अनुरोध",
+      p:"Learn with Anil की फ़ीस बहुत कम है (₹45 में सब कुछ), इसलिए हम विज्ञापनों पर पैसा खर्च नहीं कर पाते। आप जैसे छात्र अपने दोस्तों को बताते हैं, तभी यह समुदाय बढ़ता है। अगर साइट आपके काम आए, तो तैयारी कर रहे किसी एक दोस्त के साथ ज़रूर शेयर करें। यह पूरी तरह आपकी मर्ज़ी है।",
+      r:"🙏 यह टेस्ट काम आया? एक और अभ्यर्थी की मदद कीजिए",
+      rp:"फ़ीस कम है और विज्ञापनों पर कोई खर्च नहीं, इसलिए छात्रों का दोस्तों से शेयर करना ही इस समुदाय को बढ़ाता है। अगर यह टेस्ट आपके काम आया, तो वेबसाइट किसी एक दोस्त के साथ शेयर करें। यह पूरी तरह आपकी मर्ज़ी है।",
+      wa:"WhatsApp पर शेयर करें", site:"वेबसाइट शेयर करें", more:"दूसरे ऐप", copy:"लिंक कॉपी करें", later:"अभी नहीं", never:"दोबारा न पूछें",
+      yours:"या अपने स्कोर से दोस्तों को चुनौती दें:", score:"मेरा स्कोर भेजें", card:"स्कोर कार्ड (इमेज)",
+      thanks:"इस समुदाय को बढ़ाने में मदद के लिए धन्यवाद! 🙏", copied:"लिंक कॉपी हो गया। किसी भी ग्रुप या चैट में पेस्ट करें। धन्यवाद! 🙏"}
+};
+function askLang(){ return ASK[P.lang] ? P.lang : "en"; }
+function askOnHub(){ return HUBPAGE && current==="exams"; }
+function shareSiteURL(via){ return `${DATA.site}${askOnHub()? "/" : (PB||"/")}?utm_source=friend&utm_medium=${via}&utm_campaign=community`; }
+function shareSiteText(via){
+  const s = askOnHub()? "" : (DATA.examShort||""), ex = s && /^(Group|CAPF|EPFO)/.test(s) ? (DATA.board||"")+" "+s : s, u = shareSiteURL(via);
+  const l = askLang();
+  if(l==="te") return `Learn with Anil చూడండి 📚${ex? ` (${ex})` : ""}: APPSC, TGPSC, TS పోలీస్, SSC, UPSC పరీక్షల అసలైన పాత ప్రశ్నలు, సమాధానాలు, వివరణలతో, ఇంగ్లీష్ & తెలుగులో. మాక్ టెస్టులు, స్టడీ మెటీరియల్ కూడా. ఒక్క ₹45 పాస్‌తో 12 నెలల పాటు అన్నీ.\n👉 ${u}`;
+  if(l==="hi") return `Learn with Anil देखिए 📚${ex? ` (${ex})` : ""}: APPSC, TGPSC, TS पुलिस, SSC और UPSC परीक्षाओं के असली पिछले वर्षों के प्रश्न, उत्तर और व्याख्या के साथ, अंग्रेज़ी और हिंदी/तेलुगु में। मॉक टेस्ट और स्टडी मटीरियल भी। ₹45 का एक पास, 12 महीने सब कुछ।\n👉 ${u}`;
+  return `Have a look at Learn with Anil 📚${ex? ` (${ex})` : ""}: real previous-year questions of APPSC, TGPSC, TS Police, SSC and UPSC exams with answers and explanations, in English and Telugu/Hindi, plus mock tests and study material. One ₹45 pass opens everything for 12 months.\n👉 ${u}`;
+}
+const ASKKEY = "lwa-share-v1";
+function askGet(){ try{ return JSON.parse(localStorage.getItem(ASKKEY)||"{}") || {}; }catch(_){ return {}; } }
+function askSet(o){ try{ localStorage.setItem(ASKKEY, JSON.stringify(o)); }catch(_){} }
+function askQueue(from){ const a = askGet(); if(a.never || a.shared) return; a.pending = from; askSet(a); askWatch(); }
+let askTimer = null, askCalm = 0;
+function askWatch(){   // waits until the student is not in a test, not on the form and no dialog (checkout) is open
+  if(askTimer) return;
+  askCalm = 0;
+  askTimer = setInterval(()=>{
+    const a = askGet();
+    if(!a.pending || a.never || a.shared){ clearInterval(askTimer); askTimer = null; return; }
+    if(current==="quiz" || current==="join" || document.querySelector("dialog[open]") || document.getElementById("askshare")){ askCalm = 0; return; }
+    if(current==="result"){ a.pending = null; askSet(a); clearInterval(askTimer); askTimer = null; return; }   // the result page has its own card
+    if(++askCalm < 2) return;   // a quiet moment of ~3 s first, so it never pops up mid-tap
+    clearInterval(askTimer); askTimer = null; showAsk(a.pending);
+  }, 1500);
+}
+function showAsk(from){
+  const a = askGet(); a.pending = null; a.shown = Date.now(); a.n = (a.n||0) + 1; askSet(a);
+  const l = askLang(), t = ASK[l];
+  const el = document.createElement("div");
+  el.id = "askshare"; el.className = "askshare"; el.setAttribute("role", "dialog"); el.setAttribute("aria-labelledby", "askshare-h");
+  if(l!=="en") el.lang = l;
+  el.innerHTML = `<button class="askshare-x" type="button" data-act="askclose" aria-label="${esc(t.later)}">✕</button>
+    <h3 id="askshare-h">${t.h}</h3><p>${t.p}</p>
+    <div class="share-row"><button class="btn btn-wa" type="button" data-act="sitewa" data-from="${esc(from)}">${WA_ICON}${t.wa}</button><button class="btn btn-secondary" type="button" data-act="sitemore" data-from="${esc(from)}">${navigator.share? t.more : t.copy}</button></div>
+    <div class="askshare-foot"><button class="linkbtn" type="button" data-act="askclose">${t.later}</button><button class="linkbtn" type="button" data-act="asknever">${t.never}</button></div>`;
+  document.body.appendChild(el);
+  track("share_ask", {from});
+}
+function closeAsk(){ const el = document.getElementById("askshare"); if(el) el.remove(); }
+function askDone(from, via, quiet){
+  const a = askGet(); a.shared = Date.now(); a.pending = null; askSet(a); closeAsk();
+  track("share_site", {from: from||"", via});
+  if(!quiet) setTimeout(()=>toast(ASK[askLang()].thanks), 600);
+}
+function shareSiteMore(from){
+  if(navigator.share){ navigator.share({title:"Learn with Anil", text: shareSiteText("share")}).then(()=>askDone(from, "share"), ()=>{}); return; }
+  const tx = shareSiteText("copy");
+  try{ navigator.clipboard.writeText(tx).then(()=>{ askDone(from, "copy", true); toast(ASK[askLang()].copied); }, ()=>toast(shareSiteURL("copy"))); }
+  catch(_){ toast(shareSiteURL("copy")); }
+}
+function shareBlock(){
+  const l = askLang(), t = ASK[l];
+  return `<section class="card share-card"${l==="en"? "" : ` lang="${l}"`}>
+    <h3>${t.r}</h3>
+    <p class="muted" style="font-size:15px">${t.rp}</p>
+    <div class="share-row"><button class="btn btn-wa" type="button" data-act="sitewa" data-from="result">${WA_ICON}${t.site}</button><button class="btn btn-secondary" type="button" data-act="sitemore" data-from="result">${navigator.share? t.more : t.copy}</button></div>
+    <p class="muted" style="font-size:14px;margin:4px 0 0">${t.yours}</p>
+    <div class="share-row"><button class="btn btn-secondary btn-sm" type="button" data-act="scorewa">${WA_ICON}${t.score}</button><button class="btn btn-secondary btn-sm" type="button" data-act="scoreimg">${IMG_ICON}${t.card}</button></div>
   </section>`; }
 
 /* ---------- events ---------- */
@@ -2220,6 +2315,10 @@ document.addEventListener("click", e=>{
       questionCard(x, !!x.qt&&(x.l2||"te")===P.lang).then(c=>shareCanvas(c, `question-of-the-day-${new Date().toISOString().slice(0,10)}.png`, challengeText(x.q, x.exName, x.paper, null, qURL(x.id, x.base, x.pb), x.o))); break; }
     case "qchal": { const q = QMAP[b.dataset.id]; if(q) shareWA(challengeText(QT(q), DATA.exam||"APPSC", PMAP[q.p].short, q.n, qURL(q.id), isMCQ(q)? OPTS(q) : null)); break; }
     case "scorewa": if(LAST) shareWA(scoreText(LAST)); break;
+    case "sitewa": shareWA(shareSiteText("whatsapp")); askDone(b.dataset.from, "whatsapp"); break;
+    case "sitemore": shareSiteMore(b.dataset.from); break;
+    case "askclose": closeAsk(); track("share_ask_later"); break;
+    case "asknever": { const a = askGet(); a.never = 1; a.pending = null; askSet(a); closeAsk(); track("share_ask_never"); break; }
     case "scoreimg": if(LAST){ toast("Making your score card…"); scoreCard(LAST).then(c=>shareCanvas(c, "my-score-learnwithanil.png", scoreText(LAST))); } break;
     case "copyig": { const h="@"+DATA.instagram; try{ navigator.clipboard.writeText(h).then(()=>toast("Copied "+h), ()=>toast("Handle: "+h)); }catch(_){ toast("Handle: "+h); } break; }
   }
@@ -2258,7 +2357,7 @@ document.addEventListener("submit", async e=>{
        "You are registered" note and the Pay button, unless the phone already has a pass. */
     const pay = PAYC && PAYC.on && PAYC.api, book = UI.pendingBook, wantPay = UI.pendingPay;
     UI.pendingBook = null; UI.pendingPay = false;
-    if(isNew) UI.justJoined = Date.now();
+    if(isNew){ UI.justJoined = Date.now(); askQueue("join"); }   // the "please share with a friend" card, once things are calm
     const first = name.split(" ")[0];
     if(p){ leaveJoin(); toast("Thanks, "+first+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source, p.mins); }
     else if(UI.pendingBuy){ UI.pendingBuy = null; leaveJoin(); openPay("pyq"); payBuy("pyq"); }   // they had already tapped Pay: straight on to Instamojo
@@ -2322,6 +2421,7 @@ function start(data){
   if(!QZ){ QZ = loadQZ(); if(QZ) setTimeout(()=>{ if(current==="quiz") toast("Welcome back: your test is just where you left it."); }, 400); }
   if(passOK("pyq")) setTimeout(exLoad, 0);   // a pass saved on this phone: open the paid explanations at once
   setTimeout(refreshPasses, 0);   // a pass bought (or ended) elsewhere shows here (at most every 30 minutes while a pass is live)
+  if(askGet().pending) askWatch();   // the share request queued at registration survives the trip to the payment page
   if(PATHMODE){
     let red = null; try{ red = sessionStorage.getItem("lwa-path"); sessionStorage.removeItem("lwa-path"); }catch(_){}
     if(red && routeFromPath(red)!==null) history.replaceState(null, "", red);
