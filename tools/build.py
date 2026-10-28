@@ -1083,10 +1083,22 @@ def main():
         sdata = dict(data, pb=pb, qpages=True, examSeo=seo_name, homeTitle=home_title, hubTitle=root_title)
         sjson = json.dumps(sdata, ensure_ascii=False, separators=(',', ':'))
         import hashlib
-        dfile = f'data/{conf["key"]}-{hashlib.sha1(sjson.encode()).hexdigest()[:10]}.js'
         outdir = os.path.join(DIST, 'site', conf['dir'])
         os.makedirs(os.path.join(outdir, 'data'), exist_ok=True)
+        # figures go to their own files (loaded only when a question with a figure is on screen), so the
+        # data file the app waits for stays small: SSC CGL 2.1 MB -> ~0.7 MB, TS SI 1.2 MB -> ~0.4 MB
+        os.makedirs(os.path.join(outdir, 'qimg'), exist_ok=True)
+
+        def _fig(m):
+            raw = base64.b64decode(m.group(2))
+            name = f'qimg/{hashlib.sha1(raw).hexdigest()[:12]}.{m.group(1)}'
+            fp = os.path.join(outdir, name)
+            if not os.path.exists(fp): open(fp, 'wb').write(raw)
+            return '/' + (conf['dir'] + '/' if conf['dir'] else '') + name
+        sjson = re.sub(r'data:image/(png|jpeg);base64,([A-Za-z0-9+/=]+)', _fig, sjson)
+        dfile = f'data/{conf["key"]}-{hashlib.sha1(sjson.encode()).hexdigest()[:10]}.js'
         open(os.path.join(outdir, dfile), 'w', encoding='utf-8').write('window.LWA_DATA=' + sjson + ';\n')
+        DATA_FILES[conf['id']] = (conf['dir'], dfile)
         sbody = body.replace('<script type="application/json" id="lwa-data">{{DATA}}</script>', f'<script src="{dfile}"></script>')
         assert sbody != body
 
@@ -1167,6 +1179,17 @@ def main():
     open(os.path.join(DIST, 'site', 'help.html'), 'w', encoding='utf-8').write(help_page(loaded))
     all_pages = {**all_pages, 'help.html': None}
     open(os.path.join(DIST, 'site', 'funders.html'), 'w', encoding='utf-8').write(funders_page(loaded))
+    # Anil, 28 Oct 2026: tapping Practise / Start on the PYQs, mock-test and sectional pages felt slow on phones, because the app
+    # page then downloads the exam's question data (0.2-2.3 MB). These pages are where students go next into the app, so they
+    # ask the browser to fetch that file quietly in the background (low priority, used from the cache on the next page).
+    for eid, (edir, dfile) in DATA_FILES.items():
+        href = '/' + (edir + '/' if edir else '') + dfile
+        for name in ('pyqs.html', 'mock-test.html', 'sectional-tests.html'):
+            fp = os.path.join(DIST, 'site', edir, name) if edir else os.path.join(DIST, 'site', 'appsc-group-2', name)
+            if not os.path.exists(fp): continue
+            h = open(fp, encoding='utf-8').read()
+            if 'rel="prefetch"' not in h:
+                open(fp, 'w', encoding='utf-8').write(h.replace('</head>', f'<link rel="prefetch" href="{href}" as="script">\n</head>', 1))
     all_pages = {**all_pages, 'funders.html': None}
     # free sample chapters of the study books (public PDFs; Anil, 28 Oct 2026) go in the sitemap so search engines and AI assistants find them
     for b in notes:
@@ -2725,6 +2748,7 @@ SAMPLE_N = 10        # public paper / question pages show every correct answer (
 PUBLIC_PDFS = False  # Anil, 23 Oct 2026: no free PDF downloads (tools/pdfs.py makes nothing while this is False)
 if os.environ.get('PAY_TEST'):   # test builds only (test/pay_test.py): payments on, against a fake script address
     PAY.update(on=True, api='https://pay.test/exec')
+DATA_FILES = {}   # exam id -> (folder, data file), filled while building (for the prefetch links)
 BB_URL = ''   # the Bahubali Test Series page (APPSC Group 2 Mains), set by main() once its tests are sealed
 # when an exam's passes run out (the day after the exam); None = 12 months from purchase
 PASS_UNTIL = {'ts-police-si': ('2026-11-30', 'TS Police SI Prelims on 29 November 2026'),
