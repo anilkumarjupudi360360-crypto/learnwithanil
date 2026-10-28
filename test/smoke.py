@@ -313,6 +313,12 @@ async def main():
         if await tp.locator('[data-act="pick"]').count():
             await tp.click('[data-act="pick"][data-i="1"]'); await tp.click('[data-act="finish"]'); await tp.wait_for_timeout(800)
             if not (await tp.evaluate('location.pathname')).endswith('/result/'): errors.append('End quiz after picking one answer did not show the result')
+            # the result page asks (optionally) to share the website with a friend (Anil, 28 Oct 2026)
+            if not await tp.locator('.share-card [data-act="sitewa"]').count(): errors.append('result page: no "share the website" button')
+            await tp.evaluate('window.open=(u)=>{window.__wa=u;return null}')
+            await tp.click('.share-card [data-act="sitewa"]')
+            wa = await tp.evaluate('window.__wa||""')
+            if 'utm_source%3Dfriend' not in wa and 'utm_source=friend' not in wa: errors.append(f'share-the-website link has no utm tag: {wa[:120]}')
         await tp.evaluate('localStorage.removeItem("lwa-appsc-g2-quiz-v1")')
         # the last question always has a Submit button below it
         await tp.goto(URL + 'appsc-group-2/?practice=s2024'); await tp.wait_for_timeout(1500)
