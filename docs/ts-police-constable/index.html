@@ -662,7 +662,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ts-pc-bba7977086.js"></script>
+<script src="data/ts-pc-7bbb4c34f1.js"></script>
 <script>
 (function(){
 "use strict";
@@ -1784,7 +1784,7 @@ function noteCard(b){
       <p class="note-meta mono">${b.pages} pages · ${b.chapters_label? esc(b.chapters_label) : `${b.chapters.length-1} chapters + practice · ${b.pyqs} PYQs`}</p>
       <details class="note-toc"><summary>What's inside</summary><ol${te?' lang="te"':""}>${b.chapters.map(c=>`<li>${esc(c)}</li>`).join("")}</ol></details>
       <div class="note-buy">${b.dl ? `<span class="note-incl">${ok ? "✓ Included in your PYQ Pass" : `Included in the ₹${price} PYQ Pass`}</span>` : `<span class="price">₹${b.price}</span>`}${buy}</div>
-      <div class="note-links"><button class="btn btn-ghost btn-sm" type="button" data-act="sample" data-id="${b.id}">See sample pages</button>${b.buy || b.dl ? "" : `<a class="btn btn-ghost btn-sm" href="${waLink(`Hi Learn_with_anil Team, please tell me when "${name}" is available to buy.`)}" target="_blank" rel="noopener">Notify me on WhatsApp</a>`}</div>
+      <div class="note-links"><button class="btn btn-ghost btn-sm" type="button" data-act="sample" data-id="${b.id}">See sample pages</button>${b.free ? `<a class="btn btn-ghost btn-sm" href="${esc(b.free)}" target="_blank" rel="noopener">⬇ Free sample chapter (PDF)</a>` : ""}${b.buy || b.dl ? "" : `<a class="btn btn-ghost btn-sm" href="${waLink(`Hi Learn_with_anil Team, please tell me when "${name}" is available to buy.`)}" target="_blank" rel="noopener">Notify me on WhatsApp</a>`}</div>
     </div>
   </article>`;
 }
@@ -1797,7 +1797,7 @@ function vNotes(){
   }).join("");
   const price = PAYC ? PAYC.pyq.price : 45, ok = passOK("pyq"), allDl = N.length && N.every(b=>b.dl);
   return `<div class="wrap view">
-    ${head("Study material · 2026-27","Study material for APPSC Mains", "Exam-focused books by Jupudi Anil Kumar: Crisp Notes on AP Economy, and a full Science & Technology book for Group-I and Group-II. Every book has the latest 2026 data, a Prelims/Mains tag on every topic, memes that make tricky facts stick, practice questions and APPSC's own previous questions with the official answers.")}
+    ${head("Study material · 2026-27", DATA.notesTitle || "Study material for APPSC Mains", DATA.notesLede || "Exam-focused books by Jupudi Anil Kumar: Crisp Notes on AP Economy, and a full Science & Technology book for Group-I and Group-II. Every book has the latest 2026 data, a Prelims/Mains tag on every topic, memes that make tricky facts stick, practice questions and APPSC's own previous questions with the official answers.")}
     <div class="notes-steps">
       <div class="card"><span class="n">1</span><div><b>See the sample pages</b><p>Tap a cover to look inside.</p></div></div>
       <div class="card"><span class="n">2</span><div><b>${ok ? "Your PYQ Pass is active" : `Get the ₹${price} PYQ Pass`}</b><p>${allDl ? `Every book is included in the PYQ Pass, with every previous paper and every mock test series. Nothing else to pay.` : anyBuy? "Secure online payment by UPI or card." : "Online payment opens soon. Tap “Notify me” to get a WhatsApp message when it does."}</p></div></div>
@@ -1876,7 +1876,7 @@ function vAbout(){
         <div class="bio">
           <p>I am a civil-services educator with more than 1,000 hours of classroom teaching for UPSC, APPSC and TGPSC aspirants. I teach Indian Polity, Governance and Ethics, build test series and study material, and have evaluated more than 2,000 Mains answer copies.</p>
           <p>As Course Coordinator, faculty and mentor, I plan the Group-1 and Group-2 programmes and their test series, coordinate the UPSC mock interview programme in Delhi, and mentor Group-1, Group-2 and UPSC aspirants. I have headed several Prelims and Mains test series.</p>
-          <p>I built Learn with Anil so that every aspirant can practise the real previous questions of their exam, topic by topic, as practice quizzes or timed tests in English and their own language, and see clearly where they are losing marks. Today it has 7,009 questions from 10 exams (APPSC, TGPSC, TS Police, UPSC and SSC), and one ₹${PAYC ? PAYC.pyq.price : 45} PYQ Pass opens all of them for 12 months: less than the price of one guide book.</p>
+          <p>I built Learn with Anil so that every aspirant can practise the real previous questions of their exam, topic by topic, as practice quizzes or timed tests in English and their own language, and see clearly where they are losing marks. Today it has 7,733 questions from 11 exams (APPSC, TGPSC, TS Police, UPSC and SSC), and one ₹${PAYC ? PAYC.pyq.price : 45} PYQ Pass opens all of them for 12 months: less than the price of one guide book.</p>
           <p>Our goal is 1 lakh previous questions of government exams under one roof, with a mock test series for every exam, all in the same ₹${PAYC ? PAYC.pyq.price : 45} pass. I am building it alone, one exam at a time. If you would like to help, see <a href="/funders.html">Fund this project</a>.</p>
         </div>
         <dl>
