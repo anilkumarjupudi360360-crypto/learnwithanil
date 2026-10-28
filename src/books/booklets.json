@@ -1,4 +1,34 @@
 {
+ "appsc-eo": {
+  "e2023a": {
+   "bytes": 863902,
+   "file": "appsc-eo-e2023a-dcc9b16651.bin",
+   "key": "bk-appsc-eo-e2023a",
+   "name": "LearnWithAnil-APPSC-EO-Grade-3-Mains-2023-Paper-1-General-Studies-Mental-Ability-Question-Paper.pdf",
+   "pages": 40
+  },
+  "e2023b": {
+   "bytes": 679544,
+   "file": "appsc-eo-e2023b-b75c92732e.bin",
+   "key": "bk-appsc-eo-e2023b",
+   "name": "LearnWithAnil-APPSC-EO-Grade-3-Mains-2023-Paper-2-Hindu-Philosophy-Temple-System-Question-Paper.pdf",
+   "pages": 28
+  },
+  "e2025a": {
+   "bytes": 842632,
+   "file": "appsc-eo-e2025a-c5ac7a7fd4.bin",
+   "key": "bk-appsc-eo-e2025a",
+   "name": "LearnWithAnil-APPSC-EO-Grade-3-2026-Paper-1-General-Studies-Mental-Ability-Question-Paper.pdf",
+   "pages": 37
+  },
+  "e2025b": {
+   "bytes": 719544,
+   "file": "appsc-eo-e2025b-d916ca8684.bin",
+   "key": "bk-appsc-eo-e2025b",
+   "name": "LearnWithAnil-APPSC-EO-Grade-3-2026-Paper-2-Hindu-Philosophy-Temple-System-Question-Paper.pdf",
+   "pages": 31
+  }
+ },
  "appsc-group-1": {
   "p2019a": {
    "bytes": 625119,

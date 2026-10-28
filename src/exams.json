@@ -201,6 +201,14 @@
    "live": "appsc-amvi/"
   },
   {
+   "id": "appsc-eo",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Endowments EO",
+   "n": "Executive Officer Grade-III",
+   "live": "appsc-endowment-officer/"
+  },
+  {
    "id": "appsc-hwo",
    "cat": "ap",
    "b": "APPSC",

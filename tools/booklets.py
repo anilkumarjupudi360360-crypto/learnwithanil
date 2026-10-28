@@ -29,7 +29,8 @@ esc = B.esc
 LOGO = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(ROOT, 'src', 'static', 'icon-192.png'), 'rb').read()).decode()
 BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC': 'ANDHRA PRADESH PUBLIC SERVICE COMMISSION'}
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
-SERIES = {'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'}}
+SERIES = {'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
+          'appsc-eo': {'e2025a': 'A', 'e2025b': 'A'}}
 # released mocks with a booklet: exam -> [(mock id, pack, mock name)]; their keys are in BOOKS_PRIV/mock-keys.json
 MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-constable': [('mk-pc-1', 'Mission Khaki – Constable', 'Mock 1')]}
 
@@ -39,6 +40,7 @@ def time_marks(conf, p):
     if conf['board'] == 'TSLPRB': return '3 Hours', 200
     if conf['id'] == 'appsc-group-1': return '120 Minutes', 120   # each Prelims paper: 120 questions, 120 marks
     if conf['id'] == 'appsc-group-2': return '150 Minutes', 150   # Screening and each Mains paper: 150 questions, 150 marks
+    if conf['id'] == 'appsc-eo': return '150 Minutes', 150   # EO Grade-III: each paper 150 questions, 150 marks
     return (f'{p["mins"]} Minutes' if p.get('mins') else ''), ''
 
 CSS = """
@@ -184,7 +186,7 @@ def main(exams):
         papers, qs = B.load_exam(conf)[:2]
         for p in papers:
             pq = [q for q in qs if q['p'] == p['id']]
-            if not pq: continue
+            if not pq or p.get('fmt') == 'recall': continue   # answer-only papers without options: no booklet
             out = os.path.join(OUTDIR, f'{eid}-{p["id"]}.pdf')
             doc = paper_doc(conf, p, pq)
             jobs.append((out, doc))

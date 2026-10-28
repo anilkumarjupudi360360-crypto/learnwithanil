@@ -27,6 +27,10 @@ _bbc = os.path.join(os.environ.get('BAHUBALI_SRC', '/home/claude/bahubali'), 'se
 BB_CODE = open(_bbc).read().strip() if os.path.exists(_bbc) else os.environ.get('BAHUBALI_CODE', '')
 BOOKS = json.load(open(os.path.join(ROOT, 'src', 'books', 'books.json'))) if os.path.exists(os.path.join(ROOT, 'src', 'books', 'books.json')) else {}
 BOOKLETS = json.load(open(os.path.join(ROOT, 'src', 'books', 'booklets.json'))) if os.path.exists(os.path.join(ROOT, 'src', 'books', 'booklets.json')) else {}
+# books shown on the APPSC Group-II study-material page (a book with an 'exams' list shows only on those exams' pages)
+_NOTES = json.load(open(os.path.join(ROOT, 'src', 'notes.json'), encoding='utf-8')) if os.path.exists(os.path.join(ROOT, 'src', 'notes.json')) else []
+G2_BOOKS = {k: v for k, v in BOOKS.items() if not next((b.get('exams') for b in _NOTES if b['id'] == k), None)}
+EXAM_DIR = {'appsc-eo': 'appsc-endowment-officer'}   # exam id -> folder, where they differ
 BOOKLET_FILES = {v['key']: v['file'] for ex in BOOKLETS.values() for v in ex.values()}
 def fake_pay(passes):   # the payments script: a student with the given passes (the PYQ Pass opens mocks, books and Bahubali)
     import json
@@ -62,7 +66,7 @@ async def main():
             tiles = await pg.locator('#hub-static .exam').count()
             assert tiles >= 90, f'expected the full exam list, got {tiles}'
             live = await pg.locator('#hub-static .exam.live').count()
-            built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager', 'appsc-amvi', 'tgpsc-amvi') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
+            built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager', 'appsc-amvi', 'tgpsc-amvi', 'appsc-endowment-officer') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
             assert live == built, f'{built} exams are built but {live} tiles are live'
             await pg.fill('#examSearch', 'group 2'); await pg.wait_for_timeout(100)
             assert await pg.locator('#hub-static .exam:not([hidden])').count() == 2, 'search "group 2" should find APPSC and TGPSC Group-II'
@@ -142,7 +146,7 @@ async def main():
                 await pg.evaluate('location.hash="home"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/home-phone.png', full_page=False)
         # exams in their own folders: APPSC Group-I (Telugu) and UPSC CAPF (Hindi)
-        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group 1', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi'), ('upsc-epfo', 'epfo', 'EPFO', 'hi'), ('ssc-cgl', 'cgl', 'SSC CGL', 'hi'), ('ts-police-si', 'tssi', 'TS Police SI', 'te'), ('ts-police-constable', 'tspc', 'TS Police Constable', 'te'), ('tgpsc-hmwssb-manager', 'hmws', 'HMWSSB Manager', 'te'), ('appsc-amvi', 'apamvi', 'APPSC AMVI', 'te'), ('tgpsc-amvi', 'tgamvi', 'TGPSC AMVI', 'te')]:
+        for sub, tag, h1word, l2 in [('appsc-group-1', 'g1', 'Group 1', 'te'), ('upsc-capf', 'capf', 'CAPF', 'hi'), ('upsc-epfo', 'epfo', 'EPFO', 'hi'), ('ssc-cgl', 'cgl', 'SSC CGL', 'hi'), ('ts-police-si', 'tssi', 'TS Police SI', 'te'), ('ts-police-constable', 'tspc', 'TS Police Constable', 'te'), ('tgpsc-hmwssb-manager', 'hmws', 'HMWSSB Manager', 'te'), ('appsc-amvi', 'apamvi', 'APPSC AMVI', 'te'), ('appsc-endowment-officer', 'apeo', 'Endowment Officer', 'te'), ('tgpsc-amvi', 'tgamvi', 'TGPSC AMVI', 'te')]:
             if not os.path.exists(os.path.join(SITE, sub, 'index.html')): continue
             fp = URL + sub + '/'
             for width, name in [(1280, 'desk'), (390, 'phone')]:
@@ -228,7 +232,7 @@ async def main():
                 if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')
         # every exam home: three tiles (PYQs, mock tests, sectional tests), each a page of its own; no question of the day there
         smx = open(os.path.join(SITE, 'sitemap.xml')).read()
-        for sub in ('ts-police-si', 'ts-police-constable', 'appsc-group-2', 'appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'tgpsc-hmwssb-manager', 'appsc-amvi', 'tgpsc-amvi'):
+        for sub in ('ts-police-si', 'ts-police-constable', 'appsc-group-2', 'appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'tgpsc-hmwssb-manager', 'appsc-amvi', 'tgpsc-amvi', 'appsc-endowment-officer'):
             for rel in (f'{sub}/pyqs.html', f'{sub}/mock-test.html', f'{sub}/sectional-tests.html'):
                 if not os.path.isfile(os.path.join(SITE, rel)): errors.append(f'missing {rel}'); continue
                 if f'/{rel}</loc>' not in smx: errors.append(f'{rel} not in sitemap')
@@ -452,6 +456,15 @@ async def main():
                 sw = await mp.evaluate('document.documentElement.scrollWidth')
                 if sw > 390: errors.append(f'mains: horizontal overflow {sw}>390')
                 await mp.close()
+            # an exam's own book (notes.json "exams") is only in that exam's data; its free sample PDF is published
+            import glob as _g
+            for bk in [x for x in _NOTES if x.get('exams')]:
+                for eid in bk['exams']:
+                    dfs = _g.glob(os.path.join(SITE, EXAM_DIR.get(eid, eid), 'data', '*.js'))
+                    if not dfs or f'"{bk["id"]}"' not in open(dfs[0], encoding='utf-8').read(): errors.append(f'book {bk["id"]} missing from {eid} data')
+                g2 = _g.glob(os.path.join(SITE, 'data', '*.js')) + _g.glob(os.path.join(SITE, 'appsc-group-1', 'data', '*.js'))
+                if any(f'"{bk["id"]}"' in open(f, encoding='utf-8').read() for f in g2): errors.append(f'book {bk["id"]} shown on Group 1/2 pages')
+                if bk.get('free') and not os.path.isfile(os.path.join(SITE, bk['free'].lstrip('/'))): errors.append(f'free sample {bk["free"]} not published')
             # study books: part of the PYQ Pass, locked without it, a decrypted PDF download with it
             for passes, paid in [({}, False), (PAID, True)]:
                 bp = await b.new_page(passes=passes, viewport={'width': 1280, 'height': 900}, accept_downloads=True)
@@ -459,9 +472,9 @@ async def main():
                 await bp.goto(URL + 'appsc-group-2/notes/'); await bp.wait_for_timeout(900)
                 n_dl, n_lock = await bp.locator('[data-act="bookdl"]').count(), await bp.locator('.note [data-act="unlockpyq"]').count()
                 if await bp.locator('.note a[href*="instamojo"]').count(): errors.append('books: an Instamojo "Buy now" link is still shown')
-                if not paid and (n_dl or n_lock != len(BOOKS)): errors.append(f'books: without a pass {n_dl} downloads and {n_lock} locks')
+                if not paid and (n_dl or n_lock != len(G2_BOOKS)): errors.append(f'books: without a pass {n_dl} downloads and {n_lock} locks')
                 if paid:
-                    if n_dl != len(BOOKS): errors.append(f'books: {n_dl} downloads with the pass (want {len(BOOKS)})')
+                    if n_dl != len(G2_BOOKS): errors.append(f'books: {n_dl} downloads with the pass (want {len(G2_BOOKS)})')
                     elif BOOK_KEYS:
                         async with bp.expect_download(timeout=20000) as di: await bp.locator('[data-act="bookdl"]').first.click()
                         d = await di.value; fpath = await d.path()
@@ -470,18 +483,19 @@ async def main():
                 await bp.close()
             # exam-booklet PDFs of the previous papers (PYQ Pass only): a button per paper, a real PDF after decryption
             for eid, ex in BOOKLETS.items():
-                pyq = open(os.path.join(SITE, eid, 'pyqs.html'), encoding='utf-8').read()
+                edir = EXAM_DIR.get(eid, eid)
+                pyq = open(os.path.join(SITE, edir, 'pyqs.html'), encoding='utf-8').read()
                 papers_ex = {k: v for k, v in ex.items() if not v.get('mock')}
                 if pyq.count('?pdf=') != len(papers_ex): errors.append(f'{eid}/pyqs.html: {pyq.count("?pdf=")} PDF links for {len(papers_ex)} paper booklets')
                 mocks_ex = [k for k, v in ex.items() if v.get('mock')]
                 if mocks_ex:
-                    mt = open(os.path.join(SITE, eid, 'mock-test.html'), encoding='utf-8').read()
+                    mt = open(os.path.join(SITE, edir, 'mock-test.html'), encoding='utf-8').read()
                     for k in mocks_ex:
                         if f'?pdf={k}' not in mt: errors.append(f'{eid}/mock-test.html: no PDF link for {k}')
                 for passes, paid in [({}, False), (PAID, True)]:
                     bp = await b.new_page(passes=passes, viewport={'width': 1280, 'height': 900}, accept_downloads=True)
                     await bp.add_init_script(REGISTERED); bp.on('pageerror', lambda e: errors.append(f'booklet pageerror: {e}'))
-                    await bp.goto(URL + eid + '/papers/'); await bp.wait_for_timeout(900)
+                    await bp.goto(URL + edir + '/papers/'); await bp.wait_for_timeout(900)
                     btns = bp.locator('[data-act="paperpdf"]')
                     if await btns.count() != len(papers_ex): errors.append(f'{eid}: {await btns.count()} PDF buttons for {len(papers_ex)} paper booklets'); await bp.close(); continue
                     if not paid:

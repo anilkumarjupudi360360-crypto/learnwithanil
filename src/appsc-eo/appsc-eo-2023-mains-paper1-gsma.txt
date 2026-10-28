@@ -1,0 +1,1540 @@
+# APPSC Executive Officer Grade-III Main Examination (Notification 24/2021), Paper I: General Studies & Mental Ability, computer-based test, February 2023.
+# Answers: APPSC final key (the master question paper with the correct options ticked). Explanations by Learn with Anil.
+# Left out (deleted or ignored by APPSC, or not typeable): 71.
+
+Q 1 | sci | Biology & Health
+Which of the following statements is/are correct about branches of Life Sciences?
+A.Astrobiology is the study of bacteria.
+B.Anatomy, a field in the biological sciences concerned with the identification and description of the body structures of living things.
+C.Biotechnology uses living cells to develop or manipulate products for specific purposes, such as genetically modified foods.
+(1) Both A and B
+(2) Both B and C
+(3) Only A
+(4) Only C
+= 2
+~ Astrobiology studies the origin, evolution and distribution of life in the universe; the study of bacteria is bacteriology, so A is wrong. Anatomy deals with identifying and describing the body structures of living things, and biotechnology uses living cells or organisms to make or modify products such as genetically modified foods, so B and C are correct.
+
+Q 2 | sci | Biology & Health
+The following item consist of two Statements: one labelled as the ‘Assertion (A)’ and the other as ‘Reason (R)’. You are to examine these two statements carefully and select the answers to these items using the codes given below:
+Assertion (A): Spirogyra, Ulothrix, Cladophora and Chara are grouped under Thallophyta.
+Reason (R): Spirogyra, Ulothrix, Cladophora and Chara lack roots, stem, leaves, and vascular system.
+(1) Both A and R are individually true and R is the correct explanation of A
+(2) Both A and R are individually true but R is NOT the correct explanation of A
+(3) A is true but R is false
+(4) A is false but R is true.
+= 1
+~ Spirogyra, Ulothrix, Cladophora and Chara are green algae, which are placed in the division Thallophyta. Thallophytes have a plant body (thallus) that is not differentiated into root, stem and leaves and has no vascular tissue, so the feature stated in R is exactly the basis of the grouping in A.
+
+Q 3 | geo | Environment & Ecology
+The following item consist of two Statements: one labelled as the ‘Assertion (A)’ and the other as ‘Reason (R)’. You are to examine these two statements carefully and select the answers to these items using the codes given below:
+Assertion (A): Ozone depletion refers to the phenomenon of reductions in the amount of ozone in the stratosphere.
+Reason (R): There are high levels of chlorine and bromine compounds in the stratosphere, the origins of these compounds are chlorofluorocarbons (CFC), used as cooling substances in air-conditioners and refrigerators, or as aerosol propellants, and bromo-fluorocarbons (halons), used in fire extinguishers.
+(1) Both A and R are individually true and R is the correct explanation of A
+(2) Both A and R are individually true but R is NOT the correct explanation of A
+(3) A is true but R is false
+(4) A is false but R is true.
+= 1
+~ Ozone depletion is the thinning of the ozone layer in the stratosphere. It is caused mainly by chlorine and bromine released there from chlorofluorocarbons (used in refrigerators, air-conditioners and aerosol sprays) and halons (used in fire extinguishers), so R correctly explains A.
+
+Q 4 | cur | International
+Which of the following statements is /are correct about the World Economic Forum meeting between 16–20 January 2023?
+A.The WEF 2023 meeting was held at Davos in Switzerland.
+B.The theme of the WEF 2023 meeting was ‘Cooperation in a Fragmented World’.
+C. The WEF 2023 meeting was chaired by Gita Gopinath, the Deputy Managing Director of the International Monetary Fund (IMF).
+(1) Only A
+(2) Only B
+(3) Only A and B
+(4) Only B and C
+= 3
+~ The WEF Annual Meeting 2023 was held at Davos, Switzerland, from 16 to 20 January 2023 under the theme ‘Cooperation in a Fragmented World’, so A and B are correct. The meeting is convened by the World Economic Forum itself and was not chaired by Gita Gopinath (whose post is First Deputy Managing Director of the IMF), so C is wrong.
+
+Q 5 | cur | International
+Match the roles in international associations in list-I with the countries in list-II.
+List I (International Associations) | List II (Countries)
+(A) BRICS (2023) Chair | (i) India
+(B) G20 (2023) Presidency | (ii) South Africa
+(C) ASEAN (2023) Chair | (iii) United Arab Emirates
+(D) COP 28 (2023) Host | (iv) Indonesia
+(1) A-iii, B-i, C-iv, D-ii
+(2) A-ii, B-i, C-iv, D-iii
+(3) A-ii, B-iv, C-i, D-iii
+(4) A-ii, B-i, C-iii, D-iv
+= 2
+~ South Africa chaired BRICS in 2023, India held the G20 Presidency (1 December 2022 to 30 November 2023), Indonesia was the ASEAN Chair for 2023, and the United Arab Emirates hosted COP 28 at Dubai. This gives A-ii, B-i, C-iv, D-iii.
+
+Q 6 | cur | National
+The following item consist of two Statements: one labelled as the ‘Assertion (A)’ and the other as ‘Reason (R)’. You are to examine these two statements carefully and select the answers to these items using the codes given below:
+Assertion (A): 5G services were launched in India on 1st October 2022.
+Reason (R): Keeping in view India’s specific requirements and to take lead in 5G deployment, Department of Telecommunications (DOT) approved financial grant for multi-institute collaborative project to set up ‘Indigenous 5G Test Bed’ at five locations
+(1) Both A and R are individually true and R is the correct explanation of A
+(2) Both A and R are individually true but R is NOT the correct explanation of A
+(3) A is true but R is false
+(4) A is false but R is true
+= 2
+~ The Prime Minister launched 5G services in India on 1 October 2022 at the India Mobile Congress, New Delhi, so A is true. R is also true: DoT funded a multi-institute research project, led by IIT Madras, to build an indigenous 5G test bed. That R&D test bed does not explain the commercial launch, which followed the 5G spectrum auction of 2022, so R is not the explanation of A.
+
+Q 7 | cur | Sports & Awards
+Which one of the following statements is/are correct about Indian Premier League (IPL) 2022?
+A. Gujarat Titans have been crowned champions of the Indian Premier League (IPL) 2022.
+B. Mumbai Indians Finished Second in IPL 2022.
+C. Yuzvendra Chahal claimed the Orange Cap in IPL 2022.
+(1) Only A and B
+(2) Only B and C
+(3) Only C
+(4) Only A
+= 4
+~ Gujarat Titans won IPL 2022 in their first season, beating Rajasthan Royals in the final, so A is correct. Mumbai Indians finished last (10th), not second, and the Orange Cap for most runs went to Jos Buttler; Yuzvendra Chahal won the Purple Cap for most wickets. So only A is correct.
+
+Q 8 | cur | Sports & Awards
+Match the Indian Sports Events held in 2022 in List I to the Winners in List II:
+List I (Sports Event-2022) | List II (Winner)
+(A) Ranji Trophy 2021-22 | (i) Madhya Pradesh
+(B) Duleep Trophy | (ii) Kerala
+(C) Durand Cup | (iii) Bengaluru
+(D) Santosh Trophy | (iv) West Zone
+(1) A-ii, B-iv, C-iii, D-i
+(2) A-i, B-iii, C-iv, D-ii
+(3) A-i, B-iv, C-iii, D-ii
+(4) A-iv, B-i, C-iii, D-ii
+= 3
+~ Madhya Pradesh won the Ranji Trophy 2021-22 by beating Mumbai, West Zone won the Duleep Trophy 2022, Bengaluru FC won the Durand Cup 2022, and Kerala won the Santosh Trophy (final played in May 2022). This gives A-i, B-iv, C-iii, D-ii.
+
+Q 9 | cur | Sports & Awards
+Match the Sportsperson in news during the year 2022 in List I with the Name of Sport he/she plays in List II.
+List I (Sports Person) | List II (Sport)
+(A) Neeraj Chopra | (i) Steeplechase
+(B) Avinash Sable | (ii) Badminton
+(C) HS Prannoy | (iii) Boxing
+(D) Nikhat Zareen | (iv) Javelin
+(1) A-i, B-iv, C-ii, D-iii
+(2) A-iv, B-i, C-iii, D-ii
+(3) A-iii, B-i, C-ii, D-iv
+(4) A-iv, B-i, C-ii, D-iii
+= 4
+~ Neeraj Chopra is a javelin thrower, Avinash Sable runs the 3000 m steeplechase, H.S. Prannoy is a badminton player and Nikhat Zareen is a boxer (2022 World Champion). This gives A-iv, B-i, C-ii, D-iii.
+
+Q 10 | sci | Chemistry
+Which of the following statements is/are correct about the chemical process in baking a cake?
+A. Baking soda is used to chemically leaven doughs and batters when it is mixed with an acid.
+B. Cream of Tarter is one of the powdery acids used in baking powder to help leaven products.
+C. Baking powder makes cakes rise by releasing carbon dioxide gas.
+(1) Only A and B
+(2) Only B and C
+(3) A, B and C
+(4) Only A and C
+= 3
+~ Baking soda (sodium bicarbonate) reacts with an acid to release carbon dioxide, which leavens doughs and batters. Cream of tartar (potassium bitartrate) is a powdery acid used in baking powder, and baking powder makes cakes rise by releasing carbon dioxide gas. All three statements are correct.
+
+Q 11 | sci | Biology & Health
+Match the Name of Scientists in List I to their fields of expertise Subject in List II.
+List I (Scientist) | List II (Subject)
+(A) Pier Antonio Micheli | (i) Plant physiology
+(B) George Cuvier | (ii) Pathology
+(C) Rudolf Virchow | (iii) Palaeontology
+(D) Stephen Hales | (iv) Mycology
+(1) A-iii, B-iv, C-ii, D-i
+(2) A-iv, B-iii, C-ii, D-i
+(3) A-iv, B-iii, C-i, D-ii
+(4) A-ii, B-iii, C-iv, D-i
+= 2
+~ Pier Antonio Micheli is called the father of mycology, Georges Cuvier founded palaeontology, Rudolf Virchow is the father of modern pathology, and Stephen Hales is known as the father of plant physiology. This gives A-iv, B-iii, C-ii, D-i.
+
+Q 12 | geo | Indian Geography
+Match the Hill Stations in List I and Indian States in List II.
+List I (Hill Station) | List II (State)
+(A) Munnar | (i) Uttarakhand
+(B) Kodaikanal | (ii) Kerala
+(C) Champawat | (iii) West Bengal
+(D) Kurseong | (iv) Tamil Nadu
+(1) A-i, B-iv, C-ii, D-iii
+(2) A-iv, B-ii, C-i, D-iii
+(3) A-ii, B-iv, C-iii, D-i
+(4) A-ii, B-iv, C-i, D-iii
+= 4
+~ Munnar is in Kerala, Kodaikanal is in Tamil Nadu (Palani Hills), Champawat is in the Kumaon region of Uttarakhand, and Kurseong is in the Darjeeling district of West Bengal. This gives A-ii, B-iv, C-i, D-iii.
+
+Q 13 | pol | Governance & Schemes
+Which one of the statement/statements is/are CORRECT related to POSHAN (Prime Minister’s Overarching Scheme for Holistic Nutrition)?
+1. The Ministry of Women and Child Development celebrated the 5th Rashtriya Poshan Maah 2022 from 1 to 30 September 2022.
+2.The objective was to celebrate Poshan Maah through Gram Panchayats as Poshan Panchayats.
+3. Land will also be identified for establishment of pre-schools for young children in the panchayat.
+4.All pregnant and lactating women, children below six years, and adolescent girls to receive basic Integrated Child Development services.
+(1) Only 1, 2 and 4
+(2) Only 1, 3 and 4
+(3) Only 1, 2 and 3
+(4) Only 2 and 4
+= 1
+~ The Ministry of Women and Child Development celebrated the 5th Rashtriya Poshan Maah from 1 to 30 September 2022, with the aim of taking it to the Gram Panchayats as ‘Poshan Panchayats’. Under the ICDS, pregnant and lactating women, children below six years and adolescent girls receive the basic services. Statement 3 is wrong: the land to be identified during the Maah was for nutri-gardens (Poshan Vatikas) at or near anganwadis, not for pre-schools. So the answer is 1, 2 and 4.
+
+Q 14 | geo | Environment & Ecology
+The following item consist of two Statements: one labelled as the ‘Assertion (A)’ and the other as ‘Reason (R)’. You are to examine these two statements carefully and select the answers to these items using the codes given below:
+(A): Global warming is a gradual increase in the average temperature of the earth’s lower atmosphere as a result of the increase in greenhouse gases since the Industrial Revolution.
+(R): During the past century, the atmospheric temperature has risen and fallen alternately by 1.1°F (0.6°C) and sea level has risen several inches.
+(1) Both A and R are individually true and R is the correct explanation of A
+(2) Both A and R are individually true but R is NOT the correct explanation of A
+(3) A is true but R is false
+(4) A is false but R is true
+= 3
+~ Global warming is the gradual rise in the average temperature of the earth's lower atmosphere caused by the increase in greenhouse gases since the Industrial Revolution, so A is true. R is false because during the past century the atmospheric temperature has risen by about 1.1°F (0.6°C); it has not risen and fallen alternately. Sea level has also risen by several inches.
+
+Q 15 | geo | Indian Geography
+Which one of the statement/statements is/are CORRECT related to various rivers of India?
+1.The Mahanadi, the Krishna, the Kaveri and the Godavari form deltas before entering into the Bay of Bengal.
+2.The rivers Ravi, the Beas and the Sutlej are tributaries of the Jhelum.
+3. The tributaries of Ganga flowing through Himachal and Uttarakhand Himalayas region include the Yamuna and the Ghaghara.
+4.Brahmaputra flows through a deep gorge after crossing Namcha Barwa.
+(1) Only 1, 2 and 3
+(2) Only 1, 3 and 4
+(3) Only 1, 2 and 4
+(4) Only 2, 3 and 4
+= 2
+~ The Mahanadi, Godavari, Krishna and Kaveri form deltas before entering the Bay of Bengal, so 1 is correct. The Ravi, Beas and Sutlej are tributaries of the Indus, not of the Jhelum, so 2 is wrong. NCERT (India: Physical Environment) states that the Ganga tributaries draining the Himachal and Uttarakhand Himalaya include the Yamuna and the Ghaghara, and that the Brahmaputra takes a U-turn at Namcha Barwa and enters India through a deep gorge, so 3 and 4 are correct.
+
+Q 16 | geo | Indian Geography
+The following item consist of two Statements: one labelled as the ‘Assertion (A)’ and the other as ‘Reason (R)’. You are to examine these two statements carefully and select the answers to these items using the codes given below:
+(A): The Himalayan rivers are fed both by melting of snow and precipitation, so rivers of this system are perennial.
+(R): River Kosi, also known as the ‘sorrow of Bihar’, is notorious for frequently changing its course due to sedimentation.
+(1) Both A and R are individually true and R is the correct explanation of A
+(2) Both A and R are individually true but R is NOT the correct explanation of A
+(3) A is true but R is false
+(4) A is false but R is true
+= 2
+~ Himalayan rivers get water from both melting snow and rainfall, so they flow throughout the year (perennial). The Kosi, called the ‘sorrow of Bihar’, often shifts its course because of its heavy silt load. Both statements are true, but the Kosi's shifting course does not explain why Himalayan rivers are perennial.
+
+Q 17 | cur | International
+As proposed by India, the United Nations General Assembly (UNGA) has declared 2023 as the ‘International Year of ________’.
+(1) Cotton
+(2) Milk
+(3) Millets
+(4) Tea
+= 3
+~ On India's proposal, the UN General Assembly adopted a resolution in March 2021 declaring 2023 the International Year of Millets. India used the year to promote millets (‘Shree Anna’) as nutritious and climate-resilient crops.
+
+Q 18 | cur | Sports & Awards
+_____ ranked first on the 19th annual list of Forbes ‘World’s 100 Most Powerful Women’ of 2022.
+(1) Kathy Warden
+(2) Shari Redstone
+(3) Thasunda Brown Duckett
+(4) Ursula von der Leyen
+= 4
+~ European Commission President Ursula von der Leyen topped Forbes' 19th annual list of the World's 100 Most Powerful Women, released in December 2022. Kathy Warden, Shari Redstone and Thasunda Brown Duckett are US business leaders who were placed lower on the list.
+
+Q 19 | cur | Sports & Awards
+Time magazine named the President of _________ as its 2022 ‘Person of the Year’, in December 2022.
+(1) France
+(2) Italy
+(3) Mexico
+(4) Ukraine
+= 4
+~ In December 2022 Time magazine named Ukrainian President Volodymyr Zelensky, together with ‘the spirit of Ukraine’, its Person of the Year for 2022, for leading resistance to the Russian invasion.
+
+Q 20 | cur | National
+The 108th Indian Science Congress was held in _________ in January 2023.
+(1) Imphal
+(2) Jalandhar
+(3) Nagpur
+(4) Bengaluru
+= 3
+~ The 108th Indian Science Congress was held from 3 to 7 January 2023 at Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur. Its theme was ‘Science and Technology for Sustainable Development with Women Empowerment’.
+
+Q 21 | cur | National
+Broadly speaking, the ‘e-SCR’ portal launched in India in January 2023 is related to ________.
+(1) engineering
+(2) medicine
+(3) law
+(4) agriculture
+= 3
+~ e-SCR (electronic Supreme Court Reports) is a Supreme Court of India initiative launched in January 2023 that gives free online access to the Court's reported judgments. It therefore relates to law.
+
+Q 22 | cur | National
+In September 2022, India exported its first consignment of plant-based meat products under Vegan food category, from ________ in Gujarat to California in the United States of America (USA).
+(1) Porbandar
+(2) Jamnagar
+(3) Morbi
+(4) Nadiad
+= 4
+~ In September 2022 APEDA flagged off India's first consignment of plant-based meat products (vegan food category) from Nadiad in Kheda district, Gujarat, to California in the USA.
+
+Q 23 | pol | Governance & Schemes
+The Digital Health Incentive Scheme launched by NHA (National Health Authority) in December 2022, to support all healthcare facilities to adopt ABDM (Ayushman Bharat Digital Mission), came into effect from ________.
+(1) 1 January 2023
+(2) 26 January 2023
+(3) 1 March 2023
+(4) 1 April 2023
+= 1
+~ The National Health Authority's Digital Health Incentive Scheme (DHIS), announced in December 2022 to encourage hospitals, laboratories, pharmacies and digital health companies to adopt ABDM, came into effect from 1 January 2023.
+
+Q 24 | sci | Biology & Health
+In August 2022, scientists from the Jawaharlal Nehru Centre for Advanced Scientific Research (JNCASR), Bangalore, and the Institut Pasteur, Paris, identified a gene called ________ in Candida albicans, a fungal species known for causing high rates of morbidity and mortality under certain immuno-compromised conditions such as AIDS or during cancer treatment.
+(1) CSA8
+(2) CSA2
+(3) CSA4
+(4) CSA6
+= 4
+~ In August 2022 scientists of JNCASR, Bengaluru, and Institut Pasteur, Paris, identified the gene CSA6 in the fungus Candida albicans. The gene plays a key role in the cell cycle (cell division) of the fungus and is seen as a possible target for anti-fungal drugs.
+
+Q 25 | cur | National
+What is the theme for National Science Day 2023?
+(1) Global Science for Global Wellbeing
+(2) Integrated Approach in S&T for Sustainable Future
+(3) Future of STI: Impact on Education Skills and Work
+(4) Radiation and Radioisotopes in Healthcare
+= 1
+~ The theme of National Science Day 2023 (28 February) was ‘Global Science for Global Wellbeing’. ‘Integrated Approach in S&T for Sustainable Future’ was the 2022 theme and ‘Future of STI: Impact on Education, Skills and Work’ was the 2021 theme.
+
+Q 26 | cur | National
+In which of the following cities is ‘Dr. Syama Prasad Mookerjee National Institute of Water and Sanitation (SPM-NIWAS)’ located?
+(1) Howrah
+(2) Siliguri
+(3) Kolkata
+(4) Malda
+= 3
+~ The Dr. Syama Prasad Mookerjee National Institute of Water and Sanitation (SPM-NIWAS), under the Ministry of Jal Shakti, is located at Joka in Kolkata, West Bengal. It trains people and builds capacity in drinking water, sanitation and hygiene.
+
+Q 27 | pol | Governance & Schemes
+In September 2022, the Union Cabinet announced an extension of the Pradhan Mantri Garib Kalyan Ann Yojana (PMGKAY) by ________ month(s) from its stipulated deadline of 30 September 2022.
+(1) one
+(2) three
+(3) six
+(4) twelve
+= 2
+~ In September 2022 the Union Cabinet extended PMGKAY by three months, from October to December 2022 (Phase VII), beyond its deadline of 30 September 2022. From January 2023 free foodgrains were given under the National Food Security Act instead.
+
+Q 28 | sci | Science & Technology
+The ‘Scientific Social Responsibility (SSR) Guidelines’ were released by the _____ on 11 May 2022.
+(1) Ministry of Science and Technology
+(2) Ministry of Health and Family Welfare
+(3) Ministry of Rural Development
+(4) Ministry of Social Justice and Empowerment
+= 1
+~ The Scientific Social Responsibility (SSR) Guidelines 2022 were released on 11 May 2022 (National Technology Day) by the Ministry of Science and Technology through its Department of Science and Technology. They encourage scientists and institutions to share their knowledge and resources with society.
+
+Q 29 | cur | National
+The Energy Conservation (Amendment) Bill was passed by the Indian Parliament in _________.
+(1) January 2023
+(2) December 2022
+(3) November 2022
+(4) October 2022
+= 2
+~ The Energy Conservation (Amendment) Bill, 2022 was passed by the Lok Sabha in August 2022 and by the Rajya Sabha on 12 December 2022, completing its passage through Parliament in December 2022. It amends the Energy Conservation Act, 2001 and provides for a carbon credit trading scheme.
+
+Q 30 | pol | Governance & Schemes
+The online portal _________, developed by the National Commission for Protection of Child Rights (NCPCR) in 2015 for redressal of grievances against violation of child rights, was updated in September 2022.
+(1) E-BaalAashray
+(2) E-BaalNidan
+(3) E-BaalKalyan
+(4) E-BaalUpchar
+= 2
+~ E-Baal Nidan is NCPCR's online complaint portal, started in 2015, for registering and redressing complaints about violations of child rights. An updated version of the portal was launched in September 2022.
+
+Q 31 | cur | Sports & Awards
+Which of the following Indian states won the UN World Habitat Award 2023, for its land titling and slum upgrading programme aimed at empowering lives of slum dwellers?
+(1) Manipur
+(2) Nagaland
+(3) Sikkim
+(4) Odisha
+= 4
+~ Odisha's Jaga Mission, which gives land titles to slum dwellers and upgrades slums with basic services, won the World Habitat Award 2023, given by World Habitat in partnership with UN-Habitat.
+
+Q 32 | pol | Governance & Schemes
+The Integrated Pensioners’ Portal, _________, was launched at Vigyan Bhawan New Delhi on 18 October 2022.
+(1) Bhavishya 6.0 version
+(2) Bhavishya 2.0 version
+(3) Bhavishya 9.0 version
+(4) Bhavishya 3.0 version
+= 3
+~ The Department of Pension and Pensioners' Welfare launched the single Integrated Pensioners' Portal, the Bhavishya 9.0 version, at Vigyan Bhawan, New Delhi, on 18 October 2022. It gives pensioners one place to see pension slips, life certificate status and Form-16 from the pension-disbursing banks.
+
+Q 33 | sci | Biology & Health
+In September 2022, India announced its first indigenously developed quadrivalent Human Papilloma Virus (qHPV) vaccine for the prevention of ________.
+(1) whooping cough
+(2) cervical cancer
+(3) diphtheria
+(4) influenza
+= 2
+~ In September 2022 India announced Cervavac, its first indigenous quadrivalent HPV vaccine, developed by the Serum Institute of India with support from DBT-BIRAC. HPV infection is the main cause of cervical cancer, so the vaccine is meant to prevent cervical cancer.
+
+Q 34 | sci | Biology & Health
+The ________ vaccine from Bharat Biotech International Limited is the world’s first intranasal vaccine for COVID, to receive approval for the primary 2-dose schedule, and as a heterologous booster dose.
+(1) AKS-452
+(2) iNCOVACC
+(3) Corbevax
+(4) HGCO19
+= 2
+~ iNCOVACC (BBV154) of Bharat Biotech became the world's first intranasal COVID-19 vaccine approved both for the primary 2-dose schedule and as a heterologous booster dose (November 2022). Corbevax, by contrast, is Biological E's injectable protein sub-unit vaccine.
+
+Q 35 | sci | Science & Technology
+The indigenously developed AUM Photonic system is used for real-time remote monitoring of _____.
+(1) traffic violations
+(2) air quality
+(3) noise pollution
+(4) land subsidence
+= 2
+~ AUM (Air Unique-quality Monitoring) is an indigenous photonic system developed with support from the Department of Science and Technology. It is used for real-time remote monitoring of air-quality parameters.
+
+Q 36 | cur | Reports & Indices
+As per a collaborated report between RAISG and MapBiomas (a network of Brazilian nonprofits, universities and technology start-ups) released in 2022, the Amazon region has lost _________ of its native vegetation, mostly tropical rainforest, in almost four decades.
+(1) 25%
+(2) 40%
+(3) 20%
+(4) 10%
+= 4
+~ The 2022 report of RAISG (Amazonian Network of Georeferenced Socio-Environmental Information) and MapBiomas found that the Amazon lost about 10% of its native vegetation, mostly tropical rainforest, between 1985 and 2021. Scientists warn that a loss of 20–25% could push the forest towards a tipping point.
+
+Q 37 | sci | Science & Technology
+_____________ is an indigenously developed technology system in India that digitises vaccine stocks and monitors the temperature of the cold chain through a smartphone application.
+(1) eVIN
+(2) V-Guardian
+(3) V Band
+(4) V-Guard
+= 1
+~ eVIN (Electronic Vaccine Intelligence Network), developed by the Ministry of Health and Family Welfare with UNDP support, digitises vaccine stocks and monitors cold-chain temperatures through a smartphone application. It supports the Universal Immunisation Programme across India.
+
+Q 38 | sci | Biology & Health
+With respect to digestion in the human body, what are mucous, chief and parietal cells?
+(1) Major types of cells in gastric glands
+(2) Types of intestinal mucosal goblet cells
+(3) Major types of cells in pancreas
+(4) Major cells in lobes of liver
+= 1
+~ The gastric glands in the stomach wall have three major types of cells: mucous neck cells (secrete mucus), chief or peptic cells (secrete pepsinogen) and parietal or oxyntic cells (secrete HCl and intrinsic factor), as described in NCERT Class XI Biology. Goblet cells of the intestine and the cells of the pancreas and liver are different.
+
+Q 39 | sci | Biology & Health
+Plants in which the ovules are not enclosed by any ovary wall and remain exposed, both before and after fertilisation, are called _________.
+(1) Angiosperms
+(2) Gymnosperms
+(3) Pteridophytes
+(4) Bryophytes
+= 2
+~ In gymnosperms (‘naked seeds’), such as Cycas and Pinus, the ovules are not enclosed by an ovary wall and remain exposed before and after fertilisation. In angiosperms the ovules are enclosed in an ovary, while pteridophytes and bryophytes do not form seeds at all.
+
+Q 40 | geo | Environment & Ecology
+To which of the following trophic levels do phytoplankton in oceans, bacteria living in active volcanoes and seaweeds belong?
+(1) First Trophic Level
+(2) Second Trophic Level
+(3) Third Trophic Level
+(4) Fourth Trophic Level
+= 1
+~ Phytoplankton and seaweeds make their food by photosynthesis, and bacteria living in active volcanoes make their food by chemosynthesis. All of them are producers (autotrophs), which occupy the first trophic level of a food chain.
+
+Q 41 | geo | Disaster Management
+Which of the following are mitigation strategies for disasters that can occur due to Landslides?
+A-Adopting area-specific measures to deal with landslides.
+B-limiting agriculture to valleys and areas with moderate slopes
+C-Promoting large-scale afforestation programmes and construction of bunds to reduce the flow of water.
+(1) Only A and C
+(2) Only A and B
+(3) Only B and C
+(4) A, B and C
+= 4
+~ NCERT (Class XI, ‘Natural Hazards and Disasters’) lists area-specific measures, limiting agriculture to valleys and areas with moderate slopes, and large-scale afforestation with construction of bunds to reduce the flow of water as mitigation strategies for landslides. So all three are correct.
+
+Q 42 | geo | Disaster Management
+Which of the following organisations publishes the ‘Vulnerability Atlas of India’, a tool for natural disaster prevention, preparedness and mitigation for housing and related infrastructure?
+(1) Central Relief Management Agency
+(2) Earthquake Risk Evaluation Centre
+(3) Building Materials and Technology Promotion Council
+(4) Climate Monitoring and Prediction Group
+= 3
+~ The Vulnerability Atlas of India is published by the Building Materials and Technology Promotion Council (BMTPC) under the Ministry of Housing and Urban Affairs. It maps earthquake, cyclone, flood and other hazard zones together with the vulnerability of housing, district by district.
+
+Q 43 | geo | Disaster Management
+The following statements correctly describe which of the methods of landslide monitoring?
+I.Capable of temporal monitoring of slope deformation
+II.Requires repetitive measurement of same location on landslide mass to determine rate of movement
+III.Can be carried out at initial stage of deformation or at vulnerable slopes without any visible sign of failure
+IV.Suitable for long term monitoring without building any instrument network at any site of interest
+(1) Slope Deformation Monitoring Using Dynamic Modelling
+(2) Slope Deformation Monitoring Using GNSS
+(3) Slope Deformation Monitoring Using Terrestrial Laser Scanner
+(4) Slope Deformation Monitoring Using DInSAR
+= 2
+~ The official key matches these statements to slope deformation monitoring using GNSS, in which receivers repeatedly measure the same points on the landslide mass over time to find the rate and direction of movement. Statements III and IV (monitoring slopes that show no visible sign of failure, without building an instrument network) are features often described for satellite radar interferometry (DInSAR). (Official final key; some sources differ.)
+
+Q 44 | geo | Disaster Management
+Fire hotspots detected by MODIS and SNPP-VIIRS sensors are received at which of the following Earth stations in India?
+(1) Delhi Earth Station
+(2) Ahmedabad Earth station
+(3) Shadnagar Earth Station
+(4) Balanagar Earth Station
+= 3
+~ Fire hotspots detected by the MODIS sensors (on NASA's Terra and Aqua satellites) and by SNPP-VIIRS are received at the NRSC (ISRO) earth station at Shadnagar near Hyderabad. The Forest Survey of India uses these data for its near-real-time forest fire alerts.
+
+Q 45 | geo | Disaster Management
+According to the Compendium of Task Force Sub Group Reports on National Landslide Risk Management Strategy published by National Disaster Management Authority in 2019, if the rock falls from natural cliffs or rock cut slope (number/annum/km) of an area is between 0.1 and 1.0, then the area lies on which of the following landslide frequency zones?
+(1) Very high
+(2) High
+(3) Moderate
+(4) Very low
+= 3
+~ In the landslide frequency classification of the NDMA's 2019 Compendium of Task Force Sub Group Reports, a rate of 0.1 to 1.0 rock falls per annum per km of natural cliff or rock-cut slope places an area in the Moderate zone. Higher rates put an area in the High or Very high zones, and lower rates in the low zones.
+
+Q 46 | geo | Disaster Management
+Which of the following is of great help in monitoring the movement of tectonic plates?
+(1) Geographical Positioning System
+(2) Geographic information systems
+(3) WSR-88D radars
+(4) GIDMaPS data
+= 1
+~ Satellite positioning (GPS) stations measure the position of points on the earth's surface to millimetre accuracy, so repeated readings show how tectonic plates move. GIS is a mapping and analysis tool, WSR-88D are Doppler weather radars, and GIDMaPS is a drought monitoring and prediction system.
+
+Q 47 | geo | Disaster Management
+Very Long Baseline Interferometry (VLBI), Satellite Laser Ranging (SLR) and the Global Positioning System (GPS) are most commonly used space-based techniques for monitoring which of the following?
+A- Mapping of flood inundations
+B- Near real time depiction of cyclone track
+C- Movement of tectonic plates
+(1) Only A
+(2) Only A and B
+(3) Only C
+(4) Only B and C
+= 3
+~ VLBI, SLR and GPS are space geodetic techniques that measure positions and distances on the earth very precisely, and they are mainly used to track the movement of tectonic plates. Flood inundation is mapped with optical and radar imagery, and cyclone tracks with meteorological satellites, so only C is correct.
+
+Q 48 | geo | Disaster Management
+Where was the first seismological observatory of the country established in December 1898?
+(1) Calcutta (Kolkata)
+(2) Madras (Chennai)
+(3) Bombay (Mumbai)
+(4) Mysore (Mysuru)
+= 1
+~ India's first seismological observatory was set up at Calcutta (Alipore) on 1 December 1898. This marked the start of instrumental recording of earthquakes in the country.
+
+Q 49 | geo | Disaster Management
+Which of the following is the nodal agency of the Government of India for monitoring earthquake activity and conduct seismological research in the country?
+(1) National Centre for Seismology
+(2) National Seismic Telemetry Network
+(3) National Seismological Database Centre
+(4) National Seismological Network
+= 1
+~ The National Centre for Seismology (NCS), under the Ministry of Earth Sciences, is the nodal agency of the Government of India for monitoring earthquake activity and conducting seismological research. It runs the National Seismological Network of observatories across the country.
+
+Q 50 | geo | Disaster Management
+DROP, COVER and HOLD' are the most effective ways to save yourself in case of which of the following disasters?
+(1) Earthquakes
+(2) Cyclones
+(3) Landslide
+(4) Flash floods
+= 1
+~ ‘Drop, Cover and Hold On’ is the standard safety action during an earthquake: drop to the ground, take cover under a sturdy table, and hold on until the shaking stops. It protects people from falling objects and debris.
+
+Q 51 | geo | Disaster Management
+As per information given by the Minister of Earth Sciences, Dr. Jitendra Singh, in Lok Sabha in July 2021 and in December 2022, what is the approximate percentage of India’s land mass susceptible to seismic hazard?
+(1) 40%
+(2) 49%
+(3) 50%
+(4) 59%
+= 4
+~ The Minister of Earth Sciences, Dr. Jitendra Singh, informed the Lok Sabha that about 59% of India's land mass is prone to earthquakes of different intensities. The seismic zoning map in use at that time (IS 1893:2002) divided the country into four zones, II to V.
+
+Q 52 | geo | Disaster Management
+In India, out of the total geographical area of 329 million hectares (mha), more than__________ mha is flood prone.
+(1) 25
+(2) 30
+(3) 35
+(4) 40
+= 4
+~ The Rashtriya Barh Ayog (National Flood Commission, 1980) assessed that more than 40 million hectares, about 12% of India's 329 mha geographical area, is flood prone. The NDMA flood guidelines use the same figure.
+
+Q 53 | cur | Reports & Indices
+From 60 in 2019-20, India’s overall score improved to _________ in NITI Aayog SDG India Index and Dashboard 2020-21.
+(1) 63
+(2) 64
+(3) 65
+(4) 66
+= 4
+~ In the third edition of the NITI Aayog SDG India Index and Dashboard (2020-21), India's overall score rose to 66 from 60 in 2019-20. Kerala topped the index with a score of 75.
+
+Q 54 | cur | Reports & Indices
+As per the SDG India Index 2020-2021, which of the following two goals demand special attention, as the overall country score is below 50?
+(1) Goal 1: No Poverty and Goal 2: Zero Hunger
+(2) Goal 1: No Poverty and Goal 4: Quality Education
+(3) Goal 2: Zero Hunger and Goal 5: Gender Equality
+(4) Goal 9: Industry, Innovation and Infrastructure and Goal 8: Decent Work and Economic Growth
+= 3
+~ In the SDG India Index 2020-21 the country's overall score was below 50 only for Goal 2, Zero Hunger (47), and Goal 5, Gender Equality (48), so the report said these two goals demand special attention. Goals 1, 4, 8 and 9 had national scores above 50.
+
+Q 55 | geo | Environment & Ecology
+As per the Economic Survey of India 2021-2022, forests covered 24 per cent of India’s total geographical area accounting for ________ per cent of the world’s total forest area in 2020.
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 2
+~ The Economic Survey 2021-22 noted that forests covered about 24% of India's geographical area and that India accounted for 2% of the world's total forest area in 2020. India is among the top ten countries in the world by forest area.
+
+Q 56 | geo | Environment & Ecology
+Activities undertaken as part of the Namami Gange Mission rest upon ‘four pillars’. Which of the following options are included in these ‘four pillars’?
+A. Nirmal Ganga
+B. Aviral Flow
+C.Swatch Ganga
+(1) Only A and B
+(2) Only B and C
+(3) Only A and C
+(4) A, B and C
+= 1
+~ The work of the Namami Gange Programme rests on four pillars: Nirmal Ganga (unpolluted flow), Aviral Ganga (uninterrupted flow), Jan Ganga (people–river connect) and Gyan Ganga (research and knowledge management). ‘Swachh Ganga’ is not one of the pillars, so only A and B are correct.
+
+Q 57 | geo | Environment & Ecology
+In August 2022, the United States National Aeronautics and Space Administration (NASA) highlighted the loss of mangrove cover on which of the following islands, which is a part of India’s Nicobar archipelago?
+(1) Car Nicobar
+(2) Katchal Island
+(3) Camorta Island
+(4) Chowra Island
+= 2
+~ In August 2022 NASA's Earth Observatory released satellite images showing the loss of mangrove cover on Katchal Island in the Nicobar group. Car Nicobar, Camorta and Chowra are other islands of the same archipelago.
+
+Q 58 | cur | Sports & Awards
+Which of the following awards of the Bureau of Energy Efficiency (BEE), Ministry of Power, were announced for the first time during ANGAN 2022?
+(1) National Energy Efficiency Roadmap for Movement towards Affordable and Natural Habitat Awards
+(2) The Special Meritorious Awards for Engineering Innovation
+(3) Electric Sustainability Impact Awards
+(4) The Spotlight on New Technology Small Business Awards
+= 1
+~ At ANGAN 2022 (Augmenting Nature by Green Affordable New-habitat), the Bureau of Energy Efficiency under the Ministry of Power announced, for the first time, the NEERMAN Awards (National Energy Efficiency Roadmap for Movement towards Affordable and Natural Habitat). They recognise energy-efficient building designs.
+
+Q 59 | geo | Environment & Ecology
+_________ implies that the resource extraction is NOT above the rate of regeneration of the resource and the wastes generated are within the assimilating capacity of the environment.
+(1) Carrying capacity
+(2) Biotic potential
+(3) Environmental capacity
+(4) Absorptive capacity
+= 1
+~ In the context of sustainable development, carrying capacity means that resources are not extracted faster than they regenerate and that the wastes produced stay within the assimilating capacity of the environment. Biotic potential, in contrast, is the maximum rate at which a species can reproduce under ideal conditions.
+
+Q 60 | geo | Environment & Ecology
+Which of the following statements about the Nokrek Biosphere Reserve are true?
+A. The Nokrek Biosphere Reserve is located in the northeast of India on the Tura Range, Meghalaya.
+B.UNESCO added the Nokrek National park to its list of Biosphere Reserves in May 2009.
+C.Nokrek is the highest peak of the Garo Hills, rising up 1,412 metres.
+(1) Only A and B
+(2) Only B and C
+(3) Only A and C
+(4) A, B and C
+= 4
+~ Nokrek Biosphere Reserve lies in the Garo Hills on the Tura Range of Meghalaya in north-east India. UNESCO included it in its World Network of Biosphere Reserves in May 2009, and Nokrek peak (1,412 m) is the highest point of the Garo Hills, so all three statements are correct.
+
+Q 61 | geo | Indian Geography
+Which of the following rivers are tributaries of the Godavari river?
+A. Pranhita
+B.Indravati
+C.Amaravati
+(1) A and B
+(2) B and C
+(3) A and C
+(4) A, B and C
+= 1
+~ The Pranhita (formed by the Wardha and the Wainganga) and the Indravati are major tributaries of the Godavari. The Amaravati is a tributary of the Kaveri in Tamil Nadu, so only A and B are correct.
+
+Q 62 | geo | AP Geography
+Which of the following lakes is situated between the deltas of the Godavari and Krishna rivers?
+(1) Pulicat Lake
+(2) Wular Lake
+(3) Vembanad Lake
+(4) Kolleru lake
+= 4
+~ Kolleru Lake, one of India's largest freshwater lakes, lies between the deltas of the Godavari and the Krishna in Andhra Pradesh. Pulicat is a lagoon on the Andhra Pradesh–Tamil Nadu border, Wular is in Jammu and Kashmir and Vembanad is in Kerala.
+
+Q 63 | geo | Indian Geography
+Which of the following lakes is located in the Indian state of Mizoram?
+(1) Loktak Lake
+(2) Haflong Lake
+(3) Tam Dil Lake
+(4) Osudu Lake
+= 3
+~ Tam Dil is a natural lake in Saitual district of Mizoram. Loktak Lake is in Manipur, Haflong Lake is in Assam and Osudu (Ousteri) Lake is in Puducherry.
+
+Q 64 | geo | Indian Geography
+Which of the following passes, located at an altitude of 19,300 ft., became the highest motorable road in the world in November 2021?
+(1) Khardung La Pass
+(2) Umling La Pass
+(3) Dungri La Pass
+(4) Marsimik La Pass
+= 2
+~ The road built by the Border Roads Organisation through Umling La pass in eastern Ladakh, at over 19,000 ft, was recognised by Guinness World Records in November 2021 as the highest motorable road in the world. Khardung La, once called the highest motorable pass, is much lower.
+
+Q 65 | geo | Indian Geography
+The Narmada, Son (Sone) and Johila rivers originate from _________.
+(1) Satpura Range
+(2) Amarkantak Region
+(3) Badrinath
+(4) Vindhya Range
+= 2
+~ The Narmada, the Son and the Johila rise from the Amarkantak plateau (Maikal Range) in Anuppur district of Madhya Pradesh. The Vindhya and Satpura ranges lie on either side of the Narmada valley but are not the source of these rivers.
+
+Q 66 | geo | Indian Geography
+Where is the Kumbhalgarh Hill located?
+(1) Rajasthan
+(2) Punjab
+(3) Madhya Pradesh
+(4) Uttar Pradesh
+= 1
+~ Kumbhalgarh is in the Aravalli hills of Rajsamand district, Rajasthan, and is known for the Kumbhalgarh fort built by Rana Kumbha of Mewar. The fort is part of the UNESCO World Heritage site ‘Hill Forts of Rajasthan’.
+
+Q 67 | geo | Indian Geography
+Which of the following islands contains mud volcanoes of the Indian sub-continent?
+(1) Baratang Island
+(2) Barren island
+(3) Havelock Island
+(4) North bay Island
+= 1
+~ Baratang Island in the Middle Andaman group is the best-known site of mud volcanoes in India (smaller ones also occur at Diglipur in North Andaman). Barren Island is different: it has India's only active lava volcano.
+
+Q 68 | geo | Indian Geography
+Where is the Kaliasot Dam located?
+(1) Jabalpur
+(2) Udaipur
+(3) Bhopal
+(4) Cochin
+= 3
+~ The Kaliasot Dam is built on the Kaliasot river in Bhopal, Madhya Pradesh. It is one of the water bodies of the ‘city of lakes’.
+
+Q 69 | ih | Andhra History
+What is the name of first Telugu library established in Hyderabad by Komarraju Lakshmana Rao?
+(1) Sri Krishnadevaraya Andhra Bhasha Nilayam
+(2) Saraswata Niketanam
+(3) Sarasvati Mahal Andhra Bhasha Nilayam
+(4) Sri Rajaraja Andhra Bhasha Nilayam
+= 1
+~ Komarraju Venkata Lakshmana Rao founded the Sri Krishnadevaraya Andhra Bhasha Nilayam at Hyderabad in 1901; it was the first Telugu library in the city. He later started the Vignana Chandrika Granthamandali to publish books in Telugu.
+
+Q 70 | ih | Andhra History
+In which year was Chittoor constituted as a separate district of Andhra Pradesh?
+(1) 1911
+(2) 1882
+(3) 1858
+(4) 1800
+= 1
+~ Chittoor district was formed on 1 April 1911 in the Madras Presidency from the Chittoor, Palamaner and Chandragiri taluks of North Arcot district, the Madanapalle and Vayalpad taluks of Cuddapah district, and some former zamindari estates.
+
+Q 72 | ih | Andhra History
+Which place in Andhra Pradesh was famous for carpets during the 19th century?
+(1) Eluru
+(2) Kurnool
+(3) Berhampur
+(4) Peddapuram
+= 1
+~ Eluru was well known in the 19th century for its hand-knotted woollen pile carpets. The craft is said to have been introduced by Persian weavers in the medieval period, and carpet weaving continues in Eluru today.
+
+Q 73 | ih | Andhra History
+After coming to India, where did the Dutch establish their first factory in Andhra Pradesh?
+(1) Nizapatnam
+(2) Masulipatnam
+(3) Tenganapatnam
+(4) Poppacamal
+= 2
+~ The Dutch established their first factory in India at Masulipatnam (Machilipatnam) in 1605. Their factory at Nizampatnam (Pettapoli) followed in 1606.
+
+Q 74 | ih | Andhra History
+Machilipatnam of the Golconda Kingdom was famous for the trade of which precious material during the 1600s?
+(1) Silver
+(2) Gold
+(3) Diamonds
+(4) Platinum
+= 3
+~ In the 1600s Machilipatnam was the chief port of the Golconda kingdom and was famous for the trade in Golconda diamonds, mined at Kollur and other places in the Krishna valley. It was also known for its painted and printed cotton cloth.
+
+Q 75 | ih | Medieval India
+Which Mughal emperor acquired the kingdom of Golconda in 1687?
+(1) Muhammad Azam Shah
+(2) Aurangzeb
+(3) Shah Jahan
+(4) Bahadur Shah I
+= 2
+~ Aurangzeb annexed the Golconda kingdom in 1687 after an eight-month siege and captured the last Qutb Shahi ruler, Abul Hasan (Tana Shah). Bijapur had been annexed a year earlier, in 1686.
+
+Q 76 | ih | Andhra History
+In which year was the journal named as Vivekavardhini established by Kandukuri Veeresalingam?
+(1) 1825
+(2) 1885
+(3) 1848
+(4) 1874
+= 4
+~ Kandukuri Veeresalingam started the journal Vivekavardhini in 1874 to campaign for social reform, especially widow remarriage and women's education, and against corruption. 1848 is the year of his birth, not of the journal.
+
+Q 77 | ih | Andhra History
+In which year was the Krishna District Association formed to fight against the British rule on many social issues?
+(1) 1892
+(2) 1898
+(3) 1865
+(4) 1845
+= 1
+~ The Krishna District Association (Krishna Zilla Sangham) was formed in 1892 at Machilipatnam. It was one of the earliest political associations of coastal Andhra and took up public issues against British administration. Its annual conferences later helped the growth of the Andhra movement.
+
+Q 78 | ih | Andhra History
+In which year did the British establish their factory in Nellore district of Andhra Pradesh?
+(1) 1611
+(2) 1621
+(3) 1615
+(4) 1626
+= 4
+~ The English East India Company set up its factory at Armagaon (Durgarayapatnam) on the Nellore coast in 1626. 1611 is the year of the earlier English factory at Masulipatnam, which is the tempting wrong choice.
+
+Q 79 | ih | Andhra History
+Who among the following French governors was appointed as the viceroy of all the territory south of River Krishna by Muzaffar Jang after he became the Nizam?
+(1) Pierre Dulivier
+(2) Francois Martin
+(3) Joseph Dupleix
+(4) Bellanger
+= 3
+~ Muzaffar Jang became Nizam of Hyderabad in 1750 with French help. In return he made the French governor Joseph Francois Dupleix governor (viceroy) of the Mughal territories south of the Krishna. Francois Martin founded Pondicherry in the 17th century, long before this event.
+
+Q 80 | ih | Andhra History
+Name the well-known social reformer from Andhra Pradesh who wrote the first novel in Telugu?
+(1) Desiraju Peda Bapayya
+(2) Kandukuri Veeresalingam
+(3) Gurajada Venkata Apparao
+(4) Raghupathi Venkataratnam Naidu
+= 2
+~ Kandukuri Veeresalingam wrote Rajasekhara Charitramu (1878), generally regarded as the first novel in Telugu. Gurajada Apparao is famous for the play Kanyasulkam, and Raghupathi Venkataratnam Naidu was a Brahmo social reformer, not a novelist.
+
+Q 81 | apr | AP Reorganisation Act & Issues
+As per the Andhra Pradesh Reorganisation Act, 2014, Hyderabad, in the existing State of Andhra Pradesh, shall be the common capital of the State of Telangana and the State of Andhra Pradesh up to maximum of ________.
+(1) 10 years
+(2) 5 years
+(3) 15 years
+(4) 7 years
+= 1
+~ Section 5(1) of the Andhra Pradesh Reorganisation Act, 2014 makes Hyderabad the common capital of Telangana and Andhra Pradesh for a period not exceeding ten years from the appointed day (2 June 2014). After that period Hyderabad is the capital of Telangana alone (Section 5(2)).
+
+Q 82 | pol | Governance & Schemes
+In which year was Janmabhoomi (a rural development programme) launched in Andhra Pradesh?
+(1) 2005
+(2) 1999
+(3) 1995
+(4) 1997
+= 4
+~ Janmabhoomi, a people's participation programme for rural development, was launched by the N. Chandrababu Naidu government on 1 January 1997. Under it, village-level Janmabhoomi Gram Sabhas identified local needs and works were taken up with community contribution.
+
+Q 83 | pol | Governance & Schemes
+Which e-governance platform was aimed at the complete computerisation of the land registration process in Andhra Pradesh?
+(1) Spandana
+(2) Mee-Seva
+(3) CARD
+(4) OWMS
+= 3
+~ CARD (Computer-aided Administration of Registration Department), launched in 1998, computerised the registration of land and property documents in Andhra Pradesh. Mee-Seva is a general citizen-service delivery platform and Spandana is a grievance redressal system, not registration systems.
+
+Q 84 | apr | AP Reorganisation Act & Issues
+The Andhra Pradesh Reorganisation Act of Parliament received the assent of the President on:
+(1) 1 March 2014
+(2) 31 March 2014
+(3) 1 March 2013
+(4) 31 March 2013
+= 1
+~ The Andhra Pradesh Reorganisation Bill was passed by Parliament in February 2014 and received the President's assent on 1 March 2014, becoming Act 6 of 2014. The appointed day on which the State was actually divided was later notified as 2 June 2014.
+
+Q 85 | eco | AP Economy
+Under the World Bank’s Andhra Pradesh Economic Restructuring Project, in how many educationally disadvantaged districts was the district primary education to be reformed?
+(1) 12
+(2) 16
+(3) 14
+(4) 10
+= 3
+~ The World Bank-assisted Andhra Pradesh Economic Restructuring Project (1998) had a primary education component meant to reform district primary education in 14 educationally disadvantaged districts. Its other components covered primary health, nutrition, rural roads, irrigation and public enterprise reform.
+
+Q 86 | pol | Governance & Schemes
+Under the Rs. 2 per kg rice scheme of Andhra Pradesh during the 1980s, how much rice was distributed per household?
+(1) 35 kg
+(2) 15 kg
+(3) 30 kg
+(4) 25 kg
+= 4
+~ The Rs. 2-a-kg rice scheme was launched by the N.T. Rama Rao government in 1983. Poor families could buy rice at Rs. 2 per kg at 5 kg per member, subject to a ceiling of 25 kg per household per month.
+
+Q 87 | pol | Governance & Schemes
+What is the name of the e-governance initiative to provide one-stop public grievance redressal platform for the citizens of Andhra Pradesh?
+(1) Prajavani
+(2) CPGRAMS
+(3) Samvedna
+(4) Spandana
+= 4
+~ Spandana, launched by the Andhra Pradesh government in 2019, is the single platform where citizens file grievances at village, mandal, district or state level and track them online. CPGRAMS is the Government of India's central grievance portal, and Prajavani is a grievance programme associated with Telangana.
+
+Q 88 | eco | AP Economy
+By which year will Andhra Pradesh’s new IT policy for 2021-24 be in force?
+(1) 31 March 2024
+(2) 31 December 2024
+(3) 31 July 2024
+(4) 31 January 2024
+= 1
+~ The Andhra Pradesh IT Policy 2021-24 covers the financial years 2021-22 to 2023-24, so it remains in force up to 31 March 2024, the last day of financial year 2023-24.
+
+Q 89 | pol | Local Government
+When did the Andhra Pradesh Municipalities Act come into effect?
+(1) 2 April 1965
+(2) 2 April 1956
+(3) 2 April 2014
+(4) 2 April 1953
+= 1
+~ The Andhra Pradesh Municipalities Act, 1965 (Act 6 of 1965) came into force on 2 April 1965. It replaced the separate municipal laws of the Andhra and Telangana regions with one law for all municipalities of the State.
+
+Q 90 | ih | Andhra History
+When did the merging of the Andhra Pradesh State and the Telegu-speaking districts of the then Hyderabad State take place?
+(1) 1 October 1956
+(2) 1 November 1956
+(3) 1 November 1958
+(4) 1 October 1958
+= 2
+~ Under the States Reorganisation Act, 1956, the Telugu-speaking districts of Hyderabad State were merged with Andhra State to form Andhra Pradesh on 1 November 1956. 1 October is the date on which Andhra State itself had been formed earlier, in 1953.
+
+Q 91 | eco | AP Economy
+In which year did Andhra Pradesh become the first Indian state that negotiated an independent loan from the World Bank in the form of the AP Economic Restructuring Project?
+(1) 1998
+(2) 1995
+(3) 1996
+(4) 2000
+= 1
+~ The Andhra Pradesh Economic Restructuring Project was approved by the World Bank in 1998, making Andhra Pradesh the first Indian state to negotiate a loan directly for its own reform programme. The loan funded district primary education, primary health, nutrition, rural roads, irrigation and public enterprise reform.
+
+Q 92 | pol | Governance & Schemes
+APSWAN (Andhra Pradesh State Wide Area Network) was launched with an initial capacity of ________.
+(1) 20 Mbps
+(2) 100 Mbps
+(3) 4 Mbps
+(4) 2 Mbps
+= 4
+~ APSWAN, the state-wide data network connecting the State headquarters with district and mandal offices for e-governance, was launched with an initial bandwidth of 2 Mbps per link. Its capacity was increased later as e-governance services grew.
+
+Q 93 | geo | AP Geography
+What is the position of Andhra Pradesh in terms of the length of coast line in the country?
+(1) 2nd
+(2) 1st
+(3) 3rd
+(4) 4th
+= 3
+~ On the official figures in use at the time of the exam (India's coastline 7,516.6 km), Andhra Pradesh's coast of about 974 km came after the Andaman and Nicobar Islands (about 1,962 km) and Gujarat (about 1,215 km, often quoted as 1,600 km). So it is 3rd when Union Territories are counted, though among states alone it is usually ranked 2nd. In the 2023-24 re-measurement (Gujarat 2,340 km, Tamil Nadu 1,069 km, Andhra Pradesh 1,053 km) it is 3rd among the states. (Official final key; some sources differ.)
+
+Q 94 | geo | AP Geography
+Which of the following minor minerals’ resource is found in the Nellore district of Andhra Pradesh?
+(1) Mica
+(2) Calcite
+(3) Soapstone
+(4) Black Granite
+= 1
+~ Nellore district has the well-known Nellore mica belt (around Gudur, Sydapuram and Kalichedu), the main mica-producing area of Andhra Pradesh. Black granite is mainly quarried in Prakasam district, which makes it the tempting wrong choice.
+
+Q 95 | geo | AP Geography
+Which of the following is the smallest district in Andhra Pradesh in terms of area?
+(1) Visakhapatnam
+(2) West Godavari
+(3) Konaseema
+(4) Srikakulam
+= 1
+~ After the reorganisation of districts in April 2022, the new Visakhapatnam district (about 1,048 sq km), made up mostly of the Visakhapatnam city area, became the smallest district of Andhra Pradesh by area. Konaseema, West Godavari and Srikakulam are all larger.
+
+Q 96 | geo | AP Geography
+With which national code is the area between the Godavari river basin and the Mahanadi river basin encompassing the eastern ghats designated?
+(1) D
+(2) E
+(3) F
+(4) I
+= 3
+~ India's national watershed codification (Watershed Atlas of India, All India Soil and Land Use Survey) gives letter codes to the river basins that drain into the Bay of Bengal. As per the official key, the area between the Mahanadi and Godavari basins, drained by Eastern Ghats rivers such as the Vamsadhara and Nagavali, carries the code F.
+
+Q 97 | eco | AP Economy
+As of August 2022, what is the approximate total installed power generation capacity in Andhra Pradesh?
+(1) 25.7 GW
+(2) 44.3 GW
+(3) 38.4 GW
+(4) 8.9 GW
+= 1
+~ According to Central Electricity Authority data, Andhra Pradesh's total installed power generation capacity, counting state, private and central-share plants and renewables, was about 25.7 GW in August 2022. 44.3 GW and 38.4 GW are far above the State's capacity.
+
+Q 98 | geo | AP Geography
+There are how many sub-groups of red soil in Andhra Pradesh?
+(1) Four
+(2) Two
+(3) Three
+(4) Six
+= 4
+~ Red soils are the most widespread soils of Andhra Pradesh. Soil surveys of the State divide them into six sub-groups, such as red sandy soils (dubbas) and red loamy soils (chalkas), based on texture and depth.
+
+Q 99 | geo | AP Geography
+Which of the following tree species is the most in numbers in Trees Outside Forests in rural Andhra Pradesh as per the India State of Forest Report 2019?
+(1) Cocos nucifera
+(2) Azadirachta indica
+(3) Borassus flabelliformis
+(4) Mangifera indica
+= 4
+~ The India State of Forest Report 2019 lists Mangifera indica (mango) as the most numerous tree species among Trees Outside Forests (TOF) in rural Andhra Pradesh. Coconut, neem and palmyra palm are also common TOF species but come after mango.
+
+Q 100 | geo | AP Geography
+According to the Indian State of Forest Report 2019, what is the total carbon stock of forest in Andhra Pradesh including Trees Outside Forests (TOF) patches?
+(1) 3.08% of total forest carbon stock of the country
+(2) 4.08% of total forest carbon stock of the country
+(3) 5.08% of total forest carbon stock of the country
+(4) 6.08% of total forest carbon stock of the country
+= 1
+~ As per the India State of Forest Report 2019 (Forest Survey of India), the forest carbon stock of Andhra Pradesh, including TOF patches, is about 3.08% of the total forest carbon stock of India.
+
+Q 101 | geo | AP Geography
+What is the rank of Andhra Pradesh in terms of the Recorded Forest Area (RFA) which is 37,2585 square kilometers, as per India State of Forest Report 2019?
+(1) 8th
+(2) 7th
+(3) 6th
+(4) 5th
+= 1
+~ ISFR 2019 records Andhra Pradesh's Recorded Forest Area as 37,258 sq km (printed as "37,2585"). Madhya Pradesh, Maharashtra, Odisha, Chhattisgarh, Arunachal Pradesh, Karnataka and Uttarakhand have larger RFAs, so Andhra Pradesh ranks 8th.
+
+Q 102 | geo | Indian Geography
+Dindi River is the left bank tributary of which river?
+(1) Krishna
+(2) Kaveri
+(3) Penna
+(4) Godavari
+= 1
+~ The Dindi river rises in the Mahabubnagar–Nalgonda plateau of Telangana and joins the Krishna from the left (north) bank. The Penna and Godavari are separate river systems.
+
+Q 103 | geo | AP Geography
+Which of the following soils primarily found in the district of Rayalaseema make up approx. 66% of the cultivated regions across Andhra Pradesh?
+(1) Black soil
+(2) Red soil
+(3) Laterite soil
+(4) Alluvial soil
+= 2
+~ Red soils, found mostly in the Rayalaseema districts, cover about two-thirds (around 66%) of the cultivated area of Andhra Pradesh. Black soils occupy a smaller share, and alluvial soils are confined mainly to the Godavari and Krishna deltas.
+
+Q 104 | geo | AP Geography
+Which of the following soils of Andhra Pradesh are mostly the end products of weathering formed under high temperature conditions and heavy rainfall?
+(1) Laterite soil
+(2) Red soil
+(3) Loamy soil
+(4) Skeletal soil
+= 1
+~ Laterite soils form when high temperature and heavy rainfall leach away silica and bases, leaving iron and aluminium oxides as the end products of weathering. In Andhra Pradesh they occur in patches in the Eastern Ghats region. Red soils form from weathering of crystalline rocks under lower rainfall.
+
+Q 105 | apr | AP Reorganisation Act & Issues
+Who among the following will hold the responsibility to protect the residents of the common capital of Andhra Pradesh and Telangana (Hyderabad)?
+(1) President
+(2) Governor
+(3) Chief Minister
+(4) Home Minister
+= 2
+~ Section 8 of the Andhra Pradesh Reorganisation Act, 2014 gives the Governor special responsibility, during the common-capital period, for the security of life, liberty and property of all residents of Hyderabad. The Governor acts after consulting the Telangana Council of Ministers but uses his individual judgment.
+
+Q 106 | apr | AP Reorganisation Act & Issues
+Which of the following was notified as the appointed day on which the state of Andhra Pradesh was bifurcated into the state Telangana and the residuary state of Andhra Pradesh?
+(1) 2 June 2014
+(2) 3 August 2014
+(3) 5 September 2014
+(4) 2 May 2014
+= 1
+~ The Central Government notified 2 June 2014 as the appointed day under the Andhra Pradesh Reorganisation Act, 2014. On that day Telangana came into existence as a separate state and the rest continued as the residuary state of Andhra Pradesh.
+
+Q 107 | apr | AP Reorganisation Act & Issues
+According to which Section of the Reorganisation Act should Krishna River Management Board have its headquarters in Andhra Pradesh?
+(1) Section 95
+(2) Section 85
+(3) Section 80
+(4) Section 60
+= 2
+~ Section 85 of the Andhra Pradesh Reorganisation Act, 2014 constitutes the Godavari River Management Board and the Krishna River Management Board. It provides that the Godavari Board will be headquartered in Telangana and the Krishna Board in Andhra Pradesh.
+
+Q 108 | apr | AP Reorganisation Act & Issues
+Sericulture development fund of the 7th Schedule of the Andhra Pradesh Reorganisation Act 2014 comes under which category?
+(1) Industrial Development Fund
+(2) Electricity Development Fund
+(3) Depriciation Development Fund
+(4) State Development Subsidy Fund for Small and Marginal Farmers
+= 1
+~ The Seventh Schedule of the Andhra Pradesh Reorganisation Act, 2014 lists the funds of the undivided state that were to be apportioned between the two successor states. In that list the Sericulture Development Fund is grouped under the Industrial Development Fund category.
+
+Q 109 | cur | AP Affairs
+Chief Minister YS Jagan Mohan Reddy has a goal of ‘higher score than other states’ by May 2024 on which index?
+(1) Safety Index
+(2) Human Development Index
+(3) GDP
+(4) Happiness Index
+= 2
+~ Chief Minister Y.S. Jagan Mohan Reddy set the goal that Andhra Pradesh should score higher than other states on the Human Development Index by May 2024. The aim linked welfare spending on education, health and incomes to measurable human development outcomes.
+
+Q 110 | pol | Governance & Schemes
+Andhra Pradesh is one of the states that approached NITI Aayog seeking help to set up their own public policy institution to boost development and drive inclusive growth. What is the name of the institution?
+(1) State Integral institute for Growth
+(2) Andhra Aayog
+(3) State Institution for Transformation
+(4) State Public Service Commission
+= 3
+~ NITI Aayog encourages each state to set up a State Institution for Transformation (SIT), a state-level think tank modelled on NITI Aayog, to guide policy for faster and inclusive growth. Andhra Pradesh was among the states that sought NITI Aayog's help for this. A State Public Service Commission is a recruitment body, not a policy institution.
+
+Q 111 | eco | Indian Economy
+In addition to state’s own tax and state’s non-tax and share of Central taxes, what contributes to a state’s revenues?
+(1) Rural development
+(2) Social welfare and nutrition
+(3) Grants in aid from Centre
+(4) Police
+= 3
+~ A state's revenue receipts are its own tax revenue, its own non-tax revenue, its share in Central taxes and grants-in-aid from the Centre. Rural development, social welfare and police are heads of expenditure, not sources of revenue.
+
+Q 112 | eco | AP Economy
+What is the full form of APCPDCL?
+(1) Andhra Pradesh Council Point Distance Company Limited
+(2) Andhra Pradesh Central Power Distribution Corporation Limited
+(3) Andhra Pradesh Centre for Power Demand Corporation Limited
+(4) Andhra Pradesh Council for Power Distribution Corporation Limited
+= 2
+~ APCPDCL is the Andhra Pradesh Central Power Distribution Corporation Limited, a power distribution company formed in 2020 for the central districts (Krishna, Guntur and Prakasam). The State's other discoms are APEPDCL (Eastern) and APSPDCL (Southern).
+
+Q 113 | cur | AP Affairs
+AP Airports Development Corporation Limited (APADCL) plans to construct a customs airport, around 50 km from Visakhapatnam. What is the name of this airport?
+(1) Narsipatnam
+(2) Anakapalle
+(3) Yarada
+(4) Bhogapuram
+= 4
+~ The greenfield international airport being developed through APADCL is at Bhogapuram in Vizianagaram district, about 45–50 km from Visakhapatnam. It is planned to take over traffic from the existing Visakhapatnam airport, which is a naval air station.
+
+Q 114 | eco | AP Economy
+What is the name of the one-stop resource and support centre for investors in Andhra Pradesh?
+(1) YSR AP United
+(2) YSR AP One
+(3) YSR AP Single Window
+(4) YR AP Win
+= 2
+~ YSR AP One is the one-stop resource and business support centre set up by the Andhra Pradesh government to help investors with information, approvals, incentives and after-care services. The other names are not the official name of this centre.
+
+Q 115 | cur | Reports & Indices
+Which place has Andhra Pradesh secured in the overall ranking as per the Export Preparedness Index 2021 released by NITI Aayog?
+(1) 8th place
+(2) 9th place
+(3) 2nd place
+(4) 10th place
+= 2
+~ In NITI Aayog's Export Preparedness Index 2021, Andhra Pradesh was ranked 9th in the overall ranking of states. Gujarat was ranked 1st in that index.
+
+Q 116 | pol | Governance & Schemes
+YSR Crop Insurance Scheme 2022 covers losses due to natural calamities for how many notified crops?
+(1) 26
+(2) 24
+(3) 20
+(4) 22
+= 4
+~ Under the Dr. Y.S.R. Free Crop Insurance Scheme the State Government pays the whole premium, so farmers' notified crops are insured against losses from natural calamities. As per the official key, 22 notified crops were covered in 2022.
+
+Q 117 | eco | AP Economy
+______________ is the initiative in natural farming by the Department of Agriculture of Andhra Pradesh state government.
+(1) AP Centralised Marginal Natural Farming
+(2) AP Collective Marginal Natural Farming
+(3) AP Correct Managed Natural Farming
+(4) AP Community Managed Natural Farming
+= 4
+~ AP Community Managed Natural Farming (APCNF) is the State's natural farming programme under the Department of Agriculture, implemented through Rythu Sadhikara Samstha. It spreads chemical-free farming through farmers' groups and community resource persons.
+
+Q 118 | eco | AP Economy
+In 2022-23, the state of Andhra Pradesh is expected to have a revenue deficit of approximately how many crores?
+(1) 15,000
+(2) 16,000
+(3) 18,000
+(4) 17,000
+= 4
+~ The Andhra Pradesh Budget 2022-23 estimated a revenue deficit of about Rs. 17,036 crore, which is approximately Rs. 17,000 crore.
+
+Q 119 | eco | AP Economy
+Revenue deficit in 2022-23 is estimated to be what percentage of GSDP in Andhra Pradesh?
+(1) 1.27%
+(2) 1.63%
+(3) 2.37%
+(4) 3.17%
+= 1
+~ The revenue deficit of about Rs. 17,036 crore in the 2022-23 Budget Estimates of Andhra Pradesh works out to about 1.27% of GSDP. The fiscal deficit, which is larger, was estimated at about 3.6% of GSDP.
+
+Q 120 | eco | AP Economy
+What was Andhra Pradesh’s debt to GSPD ratio in December 2022?
+(1) 22%
+(2) 27%
+(3) 43%
+(4) 32%
+= 4
+~ Andhra Pradesh's 2022-23 Budget estimated its outstanding debt at about 32.8% of GSDP by the end of March 2023, so 32% is the matching option ("GSPD" in the question is a misprint for GSDP). 43% and 22% are well away from the State's reported debt ratio.
+
+Q 121 | men | Reasoning
+Seven boys, A, B, C, D, E, F and G, are sitting around a circular table facing the centre but not necessarily in the same order. Only D is sitting between E and G. C is third to the right of D. Only F is sitting between B and C. G is third to the right of C. Match each of the boys in column I to his neighbour to the immediate left in Column II and select the correct answer from the given options.
+Column I (Boy) | Column II (Neighbour to his immediate left)
+(i) A | (W) B
+(ii) G | (X) A
+(iii) B | (Y) E
+(iv) C | (Z) F
+(1) i-Y, ii-Z, iii-X, iv-W
+(2) i-Y, ii-W, iii-Z, iv-X
+(3) i-W, ii-Y, iii-Z, iv-X
+(4) i-X, ii-W, iii-Z, iv-Y
+= 2
+~ Going to the right (anticlockwise for people facing the centre) from D, the order is D, E, A, C, F, B, G. G is next to D, E is on D's other side, C is third to the right of D and G is third to the right of C, and F alone sits between C and B. The immediate left neighbours are then A–E, G–B, B–F and C–A, i.e. i-Y, ii-W, iii-Z, iv-X.
+
+Q 122 | men | Reasoning
+Six boxes numbered 1 to 6 are kept one above the other but not necessarily in the same order. Only two boxes are kept below box 6. Box 2 is the third box from the top. Box 5 is kept just above box 4. Box 1 is kept just below box 3. Box 4 is kept just above box 2. Which box is kept at the bottom-most position?
+(1) Box 4
+(2) Box 1
+(3) Box 2
+(4) Box 5
+= 2
+~ Box 6 has two boxes below it, so it is 4th from the top, and box 2 is 3rd. Box 4 is just above box 2 (2nd) and box 5 just above box 4 (1st). Boxes 3 and 1 fill the 5th and 6th places, and since 1 is just below 3, box 1 is at the bottom.
+
+Q 123 | men | Reasoning
+Harleen was born on Wednesday, 11 January 1995. On which day of the week will she celebrate her 31st birthday?
+(1) Monday
+(2) Tuesday
+(3) Thursday
+(4) Sunday
+= 4
+~ Her 31st birthday falls on 11 January 2026. From 1995 to 2026 there are 31 years including 8 leap years (1996 to 2024), giving 31 + 8 = 39 odd days, and 39 leaves remainder 4 when divided by 7. Wednesday + 4 days = Sunday.
+
+Q 124 | men | Reasoning
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+A. Some cats are hens.
+B. Some hens are fawns.
+C. All fawns are ducks.
+Conclusions:
+I. Some cats are fawns.
+II. All fawns are hens.
+III. No cat is a fawn.
+(1) Only conclusion I follows.
+(2) Both conclusions II and III follow.
+(3) All conclusions, I, II and III, follow.
+(4) Either conclusion I or III follows.
+= 4
+~ The statements link cats and fawns only through hens with two "some" statements, so neither I nor III follows definitely. But I and III are a complementary pair (one of them must be true), so "either I or III" follows. II does not follow, because only some hens are fawns.
+
+Q 125 | men | Reasoning
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+A. Some televisions are machines.
+B. All machines are geysers.
+Conclusions:
+I. Some geysers are machines.
+II. Some geysers are televisions.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Both conclusions I and II follow.
+(4) Neither conclusion I nor II follows.
+= 3
+~ "All machines are geysers" gives "Some geysers are machines" by conversion, so I follows. The televisions that are machines are also geysers, so some geysers are televisions and II follows too.
+
+Q 126 | men | Reasoning
+In this question, certain statements are given, followed by three conclusions. Select the conclusion(s) which is/are true based on the information given in the statements.
+Statements:
+i. There are six rods, A, B, C, D, E and F .
+ii. F is the heaviest.
+iii. C is lighter than E.
+iv. B is heavier than E.
+v. D is lighter than A.
+vi. B is lighter than D.
+Conclusions:
+A.Rod C is the lightest .
+B.D is heavier than only two rods.
+C.A is heavier than B but lighter than E.
+(1) Only B is true.
+(2) Only C is true.
+(3) Both A and C are true.
+(4) Only A is true.
+= 4
+~ The statements give the order C < E < B < D < A < F. So C is the lightest (A is true). D is heavier than three rods (C, E, B), so B is false, and A is heavier than E, so C is false.
+
+Q 127 | men | Reasoning
+Select the combination of letters that when sequentially placed in the blanks of the given series will complete the series.
+F H _ P _ A _ H N _ W A F _ N P _ A
+(1) N W F P H W
+(2) N W F P H P
+(3) N W F A H W
+(4) N H F P H W
+= 1
+~ The series is the group "F H N P W A" repeated three times: FHNPWA FHNPWA FHNPWA. Filling the blanks in order gives N, W, F, P, H, W.
+
+Q 128 | men | Reasoning
+How many such pairs of letters are there in the word PROCTOR which have as many letters between them as in the English alphabetical series? (Count both in the forward and backward directions.)
+(1) None
+(2) One
+(3) Two
+(4) Three
+= 3
+~ P and T have three letters between them in the word (R, O, C) and in the alphabet (Q, R, S). T and the last R have one letter between them in the word (O) and in the alphabet (S). No other pair qualifies, so there are two pairs.
+
+Q 129 | men | Reasoning
+Refer to the given number, letter series and answer the question that follows.
+(Left) N 3 E 4 A S 2 A 5 U M K L 8 E 5 4 K L 3 Y A 5 D 4 C E 5 U K M N A 3 U 5 (Right)
+How many numbers in the above string are immediately followed and preceded by a vowel? (Count from left to right only.)
+(1) Three
+(2) Four
+(3) Five
+(4) Six
+= 2
+~ The numbers with a vowel on both sides are E 4 A, A 5 U, E 5 U and A 3 U. All other numbers have a consonant or another number next to them, so the count is four.
+
+Q 130 | men | Reasoning
+In a certain code language, ‘SORE’ is written as ‘FSPT’, and ‘TANE’ is written as ‘FOBU’. Which of the following are correct matches as per the given code language?
+WORD | CODE
+(i) COSY | (W) UTJG
+(ii) FIST | (X) MNBO
+(iii) PALM | (Y) EFTW
+(iv) USED | (Z) ZTPD
+(1) Only i-Z and ii-W
+(2) Only i-Z, iii-X and iv-Y
+(3) Only ii-W
+(4) Only iii-Z and iv-Y
+= 1
+~ Each letter is moved one step forward and the result is written in reverse: SORE → TPSF → FSPT. So COSY → DPTZ → ZTPD (i-Z) and FIST → GJTU → UTJG (ii-W) are correct. PALM gives NMBQ and USED gives EFTV, so iii-X and iv-Y are wrong.
+
+Q 131 | men | Reasoning
+In a certain code language, ‘CLOSE’ is written as ‘DMPTF’, and ‘MUTED’ is written as ‘NVUFE’. Following the same pattern, all the given options represent correct matches except one. Find the option with the incorrect match.
+WORD | CODE
+(i) PRISM | (W) QSJNT
+(ii) PRIMS | (X) QSJTN
+(iii) MIRPS | (Y) TSJNQ
+(iv) SRIMP | (Z) NJSQT
+(1) i-X, iii-Z
+(2) ii-W, iv-Y
+(3) i-X, ii-W
+(4) iii-W, iv-Z
+= 4
+~ Each letter is moved one step forward: PRISM → QSJTN (X), PRIMS → QSJNT (W), MIRPS → NJSQT (Z) and SRIMP → TSJNQ (Y). Options 1, 2 and 3 use only these correct pairs, but option 4 pairs MIRPS with W and SRIMP with Z, which is wrong.
+
+Q 132 | men | Reasoning
+Himani walks 120 m towards the north direction from her home, and then she turns right and walks 60 m. After that, she turns right and walks 160 m to stop at Point A.
+Based on the above information, which of the following statements can be the reason(s) behind the assertion made below .
+Assertion – Himani is 30m away from her home.
+Reason A – Himani takes a right from Point A and walks 60 m. She takes a right turn again, walks 10 m and stops.
+Reason B – Himani takes a left from Point A, walks 10 m, takes a left again, walks 180 m and stops.
+Reason C – Himani takes a right from Point A and walks 90 m. She takes a right again, walks for 40 m and stops.
+(1) Only A and B are the reasons behind the assertion.
+(2) Only A is the reason behind the assertion .
+(3) Only A and C are the reasons behind the assertion.
+(4) Only C is the reason behind the assertion .
+= 3
+~ Taking home as (0, 0), Point A is 60 m east and 40 m south of home, and she is facing south. Reason A takes her 60 m west and 10 m north, to 30 m due south of home; Reason C takes her 90 m west and 40 m north, to 30 m due west of home. Reason B takes her 70 m east and 140 m north of home, far more than 30 m.
+
+Q 133 | men | Reasoning
+‘A & B’ means ‘A is the son of B’
+‘A % B’ means ‘A is the father of B’
+‘A @ B’ means ‘A is the sister of B’
+‘A # B’ means ‘A is the daughter of B’
+it is given that ‘E % M @ K & U # H’
+If an Assertion is made that ‘H is the grandmother of M’, which of the given reasons A, B, C would prove the assertion to be correct?
+Reason A – L @ H , L # Q
+Reason B – R & H, R % W
+Reason C – U @ R, Y % R
+(1) Both A and B together prove that H is the grandmother of M
+(2) Only A proves that H is the grandmother of M
+(3) Only B proves that H is the grandmother of M
+(4) Only C proves that H is the grandmother of M
+= 4
+~ From the given expression, M and K are children of U, and U is the daughter of H, so H is a grandparent of M; only H's gender is unknown. Reason C says U is the sister of R and Y is the father of R, so Y is U's father and H must be U's mother, i.e. M's grandmother. Reasons A and B say nothing about H's gender.
+
+Q 134 | men | Arithmetic
+Which two numbers should be interchanged to make the following equation correct?
+18 + 36 ÷ 6 – 12 × 3 = 3
+(1) 18 and 3
+(2) 12 and 6
+(3) 12 and 18
+(4) 36 and 12
+= 2
+~ Interchanging 12 and 6 gives 18 + 36 ÷ 12 – 6 × 3 = 18 + 3 – 18 = 3, which is correct. With the other pairs the left side does not equal 3.
+
+Q 135 | men | Arithmetic
+Which two numbers should be interchanged to make the following equation correct?
+135 ÷ 3 + 36 – 44 × 9 = –81
+(1) 36 and 3
+(2) 3 and 9
+(3) 135 and 9
+(4) 3 and 44
+= 2
+~ Interchanging 3 and 9 gives 135 ÷ 9 + 36 – 44 × 3 = 15 + 36 – 132 = –81, which is correct. The other interchanges do not give –81.
+
+Q 136 | men | Arithmetic
+Rohith is an aspiring entrepreneur wanting to set up a CPU manufacturing unit. Since technology is changing very fast, he wanted to carefully gauge the demand and the likely profits before investing. Market survey indicated that he would be able to sell 2 lakh units before customers shifted to different gadgets. Rohith realised that he had to incur two kinds of costs - fixed costs (the cost which does not change, irrespective of the number of units of CPU produced) and variable costs (= variable cost per unit multiplied by number of units). Rohith expected fixed cost to be ₹50 lakhs and variable cost to be ₹150 per unit. He expected each CPU to be sold at ₹200.
+Rohith was sceptical that per unit variable cost might increase by 5% though the demand might remain the same. What will be the expected decrease in profit?
+(1) 25%
+(2) 21%
+(3) 22%
+(4) 30%
+= 4
+~ Expected profit = 2,00,000 × (200 – 150) – 50,00,000 = ₹50 lakh. With a 5% rise, variable cost becomes ₹157.50, so profit = 2,00,000 × 42.50 – 50,00,000 = ₹35 lakh. The fall of ₹15 lakh is 15/50 = 30% of the expected profit.
+
+Q 137 | men | Data Interpretation
+The following pie chart shows the distribution of investments generated for mutual funds from different categories of investors.
+[Pie chart] Fund | Share of investments
+Kotak flexi cup fund | 15%
+Axis Blue chit fund | 17%
+SBI liquid fund | 28%
+ICICI Pro liquid | 20%
+UTI Asset Management | 10%
+Adithya Birla S.L liquid fund | 10%
+If the investments by Axis Blue chit fund is ₹3,400 crores, then match the following investments (Column A) with their correct funds (in ₹ crores; Column B).
+Column A | Column B
+P) ICICI pro liquid | 1) 4000
+Q) UTI Asset Management | 2) 2000
+R) Kotak flexi cup fund | 3) 3000
+(1) P-1; Q-2; R-3
+(2) P-2; Q-1; R-3
+(3) P-3; Q-2; R-1
+(4) P-2; Q-3; R-1
+= 1
+~ Axis Blue chit fund's 17% equals ₹3,400 crore, so the total is 3,400 ÷ 0.17 = ₹20,000 crore. ICICI Pro liquid (20%) = ₹4,000 crore, UTI Asset Management (10%) = ₹2,000 crore and Kotak flexi cup fund (15%) = ₹3,000 crore, giving P-1, Q-2, R-3.
+
+Q 138 | men | Data Interpretation
+The following bar chart shows the trends of total foreign direct investment (FDI) into a country XYZ from all over the world.
+[Bar chart] Years | XYZ’s FDI (Million Euros)
+2017 | 6.5
+2018 | 10.12
+2019 | 11.15
+2020 | 10.32
+2021 | 25.23
+If XYZ’s total FDI from European countries was proportionately the same as total FDI into country XYZ from all over the world in 2017 and 2021, and the total FDI from the European countries was 3 million Euros in 2017, then match the following questions in column A with their correct values given (in million Euros) in column B.
+Column A | Column B
+P) XYZ’s total amount of FDI from European countries in 2021 (rounded off to two decimal place) | 1) 8.54
+Q) XYZ’s average FDI from European countries in 2017 and 2021 (rounded off to two decimal place) | 2) 11.65
+R) The average FDI from non-European countries in 2017 and 2021 (rounded off to two decimal place) | 3) 7.32
+(1) P-1; Q-2; R-3
+(2) P-2; Q-1; R-3
+(3) P-3; Q-2; R-1
+(4) P-2; Q-3; R-1
+= 4
+~ European FDI in 2021 = 25.23 × 3/6.5 ≈ 11.64, which Column B prints as 11.65 (P-2). The European average = (3 + 11.64)/2 ≈ 7.32 (Q-3). Non-European FDI was 3.5 in 2017 and about 13.59 in 2021, average ≈ 8.54 (R-1).
+
+Q 139 | men | Data Interpretation
+In an Engineering college, the minor examinations were held for every second month. In a session during July 2020 - May 2021, Akash of B.Tech. 2nd year appeared for each of the minor exams. The aggregate marks obtained by him in each minor exam are represented in the line graph below. Study the graph and answer the question based on it.
+[Line graph] Month | Total Marks
+July | 390
+Sep | 415
+NOV | 450
+Jan | 420
+Mar | 510
+May | 520
+In which minor exam (in month) did Akash obtain the highest percentage increase in marks over the previous minor exam?
+(1) November
+(2) May
+(3) March
+(4) September
+= 3
+~ The increases are: September 25/390 ≈ 6.4%, November 35/415 ≈ 8.4%, January a fall, March 90/420 ≈ 21.4% and May 10/510 ≈ 2%. The highest percentage increase is in March.
+
+Q 140 | men | Data Interpretation
+The bar graph provided below gives the data of the production of pipes (in lakh tonnes) by three different companies A, B and C over the years. Study the graph and answer the question that follows.
+[Bar graph] Year | A | B | C
+2015 | 45 | 52 | 40
+2016 | 56 | 65 | 52
+2017 | 75 | 76 | 79
+2018 | 85 | 86 | 74
+2019 | 81 | 92 | 90
+In which year was the percentage of production by company C to the production by company B the maximum?
+(1) 2015
+(2) 2016
+(3) 2017
+(4) 2018
+= 3
+~ C as a percentage of B is: 2015 – 40/52 ≈ 76.9%, 2016 – 52/65 = 80%, 2017 – 79/76 ≈ 103.9%, 2018 – 74/86 ≈ 86.0% (and 2019 – 90/92 ≈ 97.8%). It is the highest in 2017, the only year in which C produced more than B.
+
+Q 141 | men | Data Interpretation
+A table is given, followed by two statements labelled Assertion and Reason. Study the given in the table, Assertion and Reason, and select the correct option with respect to the data given in them.
+The following table shows the number of different types of courier services (X, Y and Z) handled by ABC General Courier Services in the year 2010.
+Month | X | Y | Z
+Jan | 230 | 715 | 630
+Feb | 250 | 985 | 1750
+Mar | 1820 | 948 | 745
+Apr | 295 | 1085 | 3680
+May | 229 | 723 | 1468
+Jun | 241 | 1032 | 1084
+Assertion: If all couriers sent are of X type costing ₹101 per courier, then the total revenue through X over the period shown is ₹3,09,565.
+Reason: 3055 is the total number of couriers sent of X type.
+(1) Both Assertion and Reason are true, and Reason is the correct explanation for the Assertion.
+(2) Both Assertion and Reason are false, and Reason is not the correct explanation for Assertion.
+(3) Assertion is true but Reason is false.
+(4) Both Assertion and Reason are false.
+= 3
+~ Total X couriers = 230 + 250 + 1820 + 295 + 229 + 241 = 3,065, not 3,055, so the Reason is false. Revenue = 3,065 × ₹101 = ₹3,09,565, so the Assertion is true.
+
+Q 142 | men | Data Interpretation
+Calculate the mean deviation from the median for the given observations (correct to two decimal places).
+3, 7, 14, 18, 20, 25, 30
+(1) 7.04
+(2) 7.12
+(3) 7.14
+(4) 7.29
+= 4
+~ The median of the seven ordered observations is 18. The absolute deviations from 18 are 15, 11, 4, 0, 2, 7 and 12, totalling 51. Mean deviation = 51/7 ≈ 7.29.
+
+Q 143 | men | Data Interpretation
+Find the value of the first quartile for the given observations.
+23, 10, 12, 19, 22, 7, 9, 54
+(1) 9.5
+(2) 10.5
+(3) 11.5
+(4) 12.5
+= 1
+~ Arranged in order: 7, 9, 10, 12, 19, 22, 23, 54. The first quartile is the median of the lower half (7, 9, 10, 12), i.e. (9 + 10)/2 = 9.5.
+
+Q 144 | men | Data Interpretation
+Find the standard deviation of a distribution whose variance is 49.
+(1) 49²
+(2) √7
+(3) 7
+(4) 49
+= 3
+~ Standard deviation is the positive square root of the variance, so SD = √49 = 7. 49 is the variance itself, and √7 is the square root of the wrong number.
+
+Q 145 | men | Data Interpretation
+A table is given, followed by two statements labelled Assertion and Reason. Study the given in the table, Assertion and Reason, and select the correct option with respect to the data given in them.
+The table given below shows the monthly incomes (in ₹) of 10 employees (E1 to E10) in an office.
+E1 | E2 | E3 | E4 | E5 | E6 | E7 | E8 | E9 | E10
+4630 | 5420 | 6100 | 7250 | 4640 | 4720 | 5980 | 7680 | 6946 | 6875
+Assertion: ₹6,014.1 is the arithmetic mean of the monthly incomes of all the 10 employees.
+Reason: Mean = total sum of observations in a data set / total number of observations in the data set
+(1) Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.
+(2) Both Assertion and Reason are false, and Reason is not the correct explanation for Assertion.
+(3) Assertion is false but Reason is true.
+(4) Both Assertion and Reason are false.
+= 3
+~ The ten incomes add up to ₹60,241, so the mean is 60,241/10 = ₹6,024.10, not ₹6,014.1; the Assertion is false. The Reason correctly states the formula for the arithmetic mean, so it is true.
+
+Q 146 | men | Arithmetic
+The geometric mean of two numbers 4 and q is 8. Find the values of q.
+(1) 16
+(2) 8
+(3) 4
+(4) 2
+= 1
+~ The geometric mean of 4 and q is √(4q) = 8, so 4q = 64 and q = 16.
+
+Q 147 | men | Data Interpretation
+A statement is given, followed by two statements labelled Assertion and Reason. Read the given in statement, Assertion and Reason, and select the correct option with respect to the data given in them.
+The mode and median of a moderately asymmetrical series are 163.5 and 124.5, respectively.
+Assertion: Mean of the given moderately asymmetrical series is 105.
+Reason: Mean – Mode = 3 (Mean – Median)
+(1) Both Assertion and Reason are true, and Reason is the correct explanation for the Assertion.
+(2) Both Assertion and Reason are false, and Reason is not the correct explanation for Assertion.
+(3) Assertion is true but Reason is false.
+(4) Both Assertion and Reason are false.
+= 1
+~ For a moderately asymmetrical distribution, Mean – Mode = 3 (Mean – Median), i.e. Mode = 3 Median – 2 Mean (Karl Pearson's empirical relation). So 163.5 = 3 × 124.5 – 2 × Mean, giving Mean = (373.5 – 163.5)/2 = 105. Both are true and the Reason explains the Assertion.
+
+Q 148 | men | Data Interpretation
+A statement is given, followed by two statements labelled Assertion and Reason. Read the given in statement, Assertion and Reason, and select the correct option with respect to the data given in them.
+The median of the following observations, 10, 11, 12, 13, K, K + 2, 68, 79, 81, 82, arranged in ascending order is 63.
+Assertion: The value of K is 62.
+Reason: Median of n even observations is (((n)/2)th term +(n/2+1)th term)/2
+(1) Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.
+(2) Both Assertion and Reason are false, and Reason is not the correct explanation for Assertion.
+(3) Assertion is true but Reason is false.
+(4) Both Assertion and Reason are false.
+= 1
+~ With n = 10 observations, the median is the average of the 5th and 6th terms: (K + K + 2)/2 = K + 1. Setting K + 1 = 63 gives K = 62, so the Assertion is true, and it follows directly from the formula stated in the Reason.
+
+Q 149 | men | Data Interpretation
+Calculate the mode of the following data.
+Size of Shirt (in cm) | 25 | 26 | 28 | 30 | 32 | 34 | 36
+No. of Persons | 16 | 18 | 23 | 58 | 76 | 48 | 23
+(1) 30
+(2) 31
+(3) 32
+(4) 33
+= 3
+~ The mode of a discrete frequency distribution is the value with the highest frequency. The largest number of persons (76) wear size 32, so the mode is 32.
+
+Q 150 | men | Arithmetic
+A student’s final scores in Mathematics, Physics, English and Chemistry are 82, 86, 85 and 75, respectively. If the respective credits received for those courses are 3, 4, 3 and 1, find the appropriate weighted average grade (correct to 2 decimal places).
+(1) 83.64
+(2) 85.52
+(3) 85.96
+(4) 86.23
+= 1
+~ Weighted average = (82 × 3 + 86 × 4 + 85 × 3 + 75 × 1)/(3 + 4 + 3 + 1) = (246 + 344 + 255 + 75)/11 = 920/11 ≈ 83.64.

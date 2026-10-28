@@ -449,6 +449,61 @@ AMVI_TG_PAPERS = [
 ]
 NOKEY_LABEL.update({p['id']: p['alabel'] for p in AMVI_TG_PAPERS if p.get('alabel')})
 
+# APPSC Executive Officer Grade-III, A.P. Endowments Subordinate Service (Anil, 28 Oct 2026: Notification 23/2026, 104 posts,
+# apply 16 Oct to 5 Nov 2026). Paper I General Studies & Mental Ability + Paper II Hindu Philosophy & Temple System, 150 Q each.
+EO_HP_SUBJECTS = [
+  ('ram', 'Ramayanam', 'ramayanam', ['Characters', 'Kandas & Places', 'Dynasties & Events']),
+  ('mbh', 'Mahabharatham', 'mahabharatham', ['Characters', 'Parvas & Places', 'Bhagavad Gita & Events']),
+  ('bhg', 'Bhagavatham', 'bhagavatham', ['Characters', 'Skandhas & Avatars', 'Places & Events']),
+  ('pur', 'Puranas & Itihasa', 'puranas', ['Puranas', 'Tirthas & Kshetras', 'Deities & Legends']),
+  ('aga', 'Temple Agamas & Worship', 'temple-agamas', ['Vaikhanasa & Pancharatra', 'Saiva & Sakta Agamas', 'Temple Rituals & Architecture']),
+  ('fes', 'Festivals & Fine Arts', 'hindu-festivals-fine-arts', ['Hindu Festivals', 'Classical Arts']),
+  ('ved', 'Vedic Culture', 'vedic-culture', ['Vedas & Upavedas', 'Upanishads', 'Yajnas & Ashramas']),
+  ('phi', 'Philosophies, Cults & Gurus', 'hindu-philosophies-gurus', ['Advaita, Visishtadvaita & Dvaita', 'Alwars & Nayanars', 'Veerasaiva & Other Cults']),
+  ('fam', 'Hindu Family Law', 'hindu-family-adoption-succession', ['Family Structure', 'Adoption', 'Succession & Marriage']),
+  ('inc', 'Temple Income & Funds', 'temple-income-funds', ['Sources of Income', 'Allocation of Funds (Sec. 57)']),
+  ('eod', 'Executive Officer & Endowments Act', 'executive-officer-endowments-act', ['Duties & Powers of EO (Sec. 29)', 'Endowments Administration']),
+  ('lan', 'Endowment Lands & Records', 'endowment-lands-land-records', ['Land Records & ROR Act', 'Endowment Lands (Secs. 75–86)']),
+]
+EO_SUBJECTS = EO_HP_SUBJECTS + [s for s in AMVI_AP_SUBJECTS if s not in AMVI_AUTO]
+EO_SUBJ_TE = dict(AMVI_AP_SUBJ_TE, ram='రామాయణం', mbh='మహాభారతం', bhg='భాగవతం', pur='పురాణాలు', aga='ఆగమాలు, ఆలయ పూజా విధానం',
+                  fes='పండుగలు, లలిత కళలు', ved='వైదిక సంస్కృతి', phi='తత్వాలు, సంప్రదాయాలు, గురువులు', fam='హిందూ కుటుంబం, దత్తత, వారసత్వం',
+                  inc='ఆలయ ఆదాయం, నిధులు', eod='కార్యనిర్వహణాధికారి, దేవాదాయ చట్టం', lan='దేవాదాయ భూములు, భూ రికార్డులు')
+EO_TE_P2 = 'పేపర్-2 హిందూ తత్వశాస్త్రం & దేవాలయ వ్యవస్థ'
+EO_TE_P1 = 'పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ'
+EO_PAPERS = [
+  dict(id='e2025b', file='appsc-eo-2026-paper2-hindu-philosophy.txt', year=2026, stage='Written Examination Paper II', short='EO 2026 Paper 2 (Hindu Philosophy)',
+       kwname='APPSC EO Grade 3 2026 Paper 2 Hindu Philosophy & Temple System',
+       title='APPSC Executive Officer Grade-III 2026: Paper II (Hindu Philosophy & Temple System)', notif='Notification 10/2025 · Series A', held='11 February 2026',
+       key="APPSC's final key", fmt='mcq', slug='appsc-eo-grade-3-2026-paper-2-hindu-philosophy-temple-system-question-paper-with-answers',
+       alt='Hindu Philosophy & Temple System', te_paper=EO_TE_P2,
+       blurb='Paper II: Hindu Philosophy & Temple System (Ramayanam, Mahabharatham, Bhagavatham, Puranas, Agamas, festivals, Vedic culture, philosophies and gurus, Hindu family law, temple income, duties of the Executive Officer and endowment lands), 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
+  dict(id='e2025a', file='appsc-eo-2026-paper1-gsma.txt', year=2026, stage='Written Examination Paper I', short='EO 2026 Paper 1 (GS & MA)',
+       kwname='APPSC EO Grade 3 2026 Paper 1 General Studies & Mental Ability',
+       title='APPSC Executive Officer Grade-III 2026: Paper I (General Studies & Mental Ability)', notif='Notification 10/2025 · Series A', held='11 February 2026',
+       key="APPSC's final key", fmt='mcq', slug='appsc-eo-grade-3-2026-paper-1-general-studies-mental-ability-question-paper-with-answers',
+       alt='General Studies & Mental Ability', te_paper=EO_TE_P1,
+       blurb='Paper I: General Studies & Mental Ability (current affairs, science, history, geography, polity, economy, AP affairs and mental ability), 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
+  dict(id='e2023b', file='appsc-eo-2023-mains-paper2-hindu-philosophy.txt', year=2023, stage='Main Examination Paper II', short='EO Mains 2023 Paper 2 (Hindu Philosophy)',
+       kwname='APPSC EO Grade 3 Mains 2023 Paper 2 Hindu Philosophy & Temple System',
+       title='APPSC Executive Officer Grade-III Mains 2023: Paper II (Hindu Philosophy & Temple System)', notif='Notification 24/2021 · CBT', held='17 February 2023',
+       key="APPSC's final key", fmt='mcq', slug='appsc-eo-grade-3-mains-2023-paper-2-hindu-philosophy-temple-system-question-paper-with-answers',
+       alt='Hindu Philosophy & Temple System', te_paper=EO_TE_P2,
+       blurb='Mains Paper II: Hindu Philosophy & Temple System, computer-based test, 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
+  dict(id='e2023a', file='appsc-eo-2023-mains-paper1-gsma.txt', year=2023, stage='Main Examination Paper I', short='EO Mains 2023 Paper 1 (GS & MA)',
+       kwname='APPSC EO Grade 3 Mains 2023 Paper 1 General Studies & Mental Ability',
+       title='APPSC Executive Officer Grade-III Mains 2023: Paper I (General Studies & Mental Ability)', notif='Notification 24/2021 · CBT', held='February 2023',
+       key="APPSC's final key", fmt='mcq', slug='appsc-eo-grade-3-mains-2023-paper-1-general-studies-mental-ability-question-paper-with-answers',
+       alt='General Studies & Mental Ability', te_paper=EO_TE_P1,
+       blurb='Mains Paper I: General Studies & Mental Ability, computer-based test, 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
+  dict(id='e2022s', file='appsc-eo-2022-screening-test.txt', year=2022, stage='Screening Test', short='EO Screening 2022',
+       kwname='APPSC EO Grade 3 Screening Test 2022',
+       title='APPSC Executive Officer Grade-III Screening Test 2022 (GS & Mental Ability + Hindu Philosophy & Temple System)', notif='Notification 24/2021 · answer-only key', held='2022',
+       key="APPSC's final key", fmt='recall', slug='appsc-eo-grade-3-screening-test-2022-questions-with-answers',
+       alt='GS & Mental Ability, Hindu Philosophy & Temple System', te_paper='స్క్రీనింగ్ టెస్ట్',
+       blurb="Screening Test: Section A General Studies & Mental Ability (Q1–50) and Section B Hindu Philosophy & Temple System (Q51–150). APPSC's final key prints each question with only its correct answer, so these are quick-recall questions, in English and Telugu."),
+]
+
 TS_SUBJECTS = [
   ('ari', 'Arithmetic', 'arithmetic', ['Numbers & Simplification', 'Percentage, Profit & Loss', 'Ratio, Average & Ages', 'Interest', 'Time & Work', 'Time, Speed & Distance', 'Mensuration', 'Data Interpretation']),
   ('rea', 'Reasoning & Mental Ability', 'reasoning-mental-ability', ['Series & Analogies', 'Coding-Decoding', 'Blood Relations & Directions', 'Calendar & Clocks', 'Venn Diagrams & Syllogisms', 'Puzzles & Arrangements', 'Non-verbal Reasoning', 'Logical Reasoning']),
@@ -844,6 +899,24 @@ def exam_confs():
                            f"with answers from TSPSC's preliminary key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow='TGPSC (TSPSC) · Assistant Motor Vehicles Inspector · Notification 31/2022',
            papers_note="Answers come from TSPSC's preliminary key on the master question papers of the computer-based test held on 28 June 2023 (Notification 31/2022). TSPSC released its final key on 7 February 2024 only on candidates' individual response sheets, so a few answers may differ from the final key; doubtful ones are marked in the explanations. Paper I is in English and Telugu as printed; Paper II (Automobile Engineering) is in English only."),
+      dict(id='appsc-eo', dir='appsc-endowment-officer', src='appsc-eo', key='ap-eo', name='APPSC Executive Officer Grade-III (Endowments)',
+           short='APPSC EO Grade-III', seo='APPSC EO Grade 3', slugp='appsc-eo-grade-3', papers=EO_PAPERS, subjects=EO_SUBJECTS, faq=FAQ_EO,
+           board='APPSC', l2=L2_TE, pb='/appsc-endowment-officer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
+           te_name='ఏపీపీఎస్సీ ఎగ్జిక్యూటివ్ ఆఫీసర్ గ్రేడ్-III (దేవాదాయ శాఖ)', te_paper='రాత పరీక్ష', subj_te=EO_SUBJ_TE,
+           title='APPSC Endowment Officer (EO Grade 3) Previous Question Papers with Answers – Hindu Philosophy & Temple System, GS, 2022–2026 | Learn with Anil',
+           h1='APPSC Endowment Officer (EO Grade-III) previous question papers <em>with answers.</em>',
+           l2line='ఏపీపీఎస్సీ దేవాదాయ శాఖ ఎగ్జిక్యూటివ్ ఆఫీసర్ గ్రేడ్-III పాత ప్రశ్నాపత్రాలు సమాధానాలతో — హిందూ తత్వశాస్త్రం & దేవాలయ వ్యవస్థ, జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్); స్టడీ నోట్స్‌తో పాటు అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.',
+           aka='Executive Officer Grade-III in the A.P. Endowments Subordinate Service (temple Executive Officer, Endowments Department), recruited by the Andhra Pradesh Public Service Commission.',
+           aka_short='APPSC Executive Officer Grade-III (AP Endowments Department)',
+           desc=lambda t: (f"APPSC Endowment Officer (Executive Officer Grade-III, AP Endowments) previous question papers: Paper II Hindu Philosophy & Temple System and Paper I General Studies & Mental Ability "
+                           f"of 2026 and the 2023 Mains, and the 2022 Screening Test, with answers from APPSC's final keys. {t:,} questions in English and Telugu with explanations; practice quizzes, timed mock tests and study notes with the ₹45 PYQ Pass."),
+           eyebrow='APPSC · Executive Officer Grade-III · Endowments Department · 2022–2026',
+           notes_title='Study material: Hindu Philosophy & Temple System',
+           notes_seo=('Hindu Philosophy & Temple System Notes – APPSC EO Grade 3 (Endowment Officer) Paper II Study Material | Learn with Anil',
+                      'APPSC Endowment Officer (EO Grade-III) Paper II study material by Jupudi Anil Kumar: Hindu Philosophy & Temple System notes from Ramayanam to the Endowments Act, with meme breaks and 291 previous questions with official answers. Free sample chapter.'),
+           notes_lede='Exam notes by Jupudi Anil Kumar for Paper II of the APPSC Executive Officer Grade-III exam: every syllabus topic from Ramayanam to the Endowments Act, written from what APPSC actually asks, with key-fact tables, quick-revision boxes and APPSC\'s own previous questions with the official answers.',
+           notes_line='Hindu Philosophy & Temple System notes for EO Grade-III Paper II, built on APPSC\'s own previous questions.',
+           papers_note="Answers come from APPSC's final keys: the boxed answers of the 2026 Series A booklets (Notification 10/2025, held 11 February 2026), the final key on the master question papers of the 2023 Mains computer-based test (Notification 24/2021) and the 2022 Screening Test final key. Questions APPSC deleted or ignored for all candidates are left out. The 2022 key prints only the correct answer, so that paper is quick-recall questions. Every paper is in English and Telugu as printed."),
     ]
 
 
@@ -907,7 +980,9 @@ def main():
         subjects = [dict(id=s[0], name=s[1], slug=s[2], topics=s[3]) for s in conf['subjects']]
         subj = {s[0]: s for s in conf['subjects']}
         def upath(x): return x if (is_root or re.match(r'(https?:|data:|/)', x)) else up + x
-        enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])]) for b in notes] if conf['id'] in NOTES_EXAMS else []
+        # a book with an 'exams' list shows only on those exams' pages; the others (APPSC Mains books) on NOTES_EXAMS
+        enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])]) for b in notes
+                  if (conf['id'] in b['exams'] if b.get('exams') else conf['id'] in NOTES_EXAMS)]
         emains = mains_kit(conf)
         for q in questions:
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
@@ -919,6 +994,7 @@ def main():
         data = dict(pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=pub_qs, instagram=INSTAGRAM,
                     exb=dict(key=exb['key'], file=exb['file']) if exb else None, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     mains=emains, mainsP5=MAINS_P5 if emains else None,
+                    notesTitle=conf.get('notes_title', ''), notesLede=conf.get('notes_lede', ''),
                     key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
                     base=prefix, qotd=qotd_pool(loaded, 120) if is_root else [],
@@ -957,7 +1033,7 @@ def main():
                      .replace('{{HOME_PAPERS}}', home_papers).replace('{{PYQPAGE}}', conf['pb'] + 'pyqs.html').replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
-                     .replace('{{HOME_NOTES}}', home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '')).replace('{{HUB}}', hub)
+                     .replace('{{HOME_NOTES}}', home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}').replace('{{NLIVE}}', str(len(loaded)))
                      .replace('{{LIVE_SUMMARY}}', esc(live_summary))
                      .replace('{{HUB_CTAS}}', hub_ctas)
@@ -973,7 +1049,7 @@ def main():
                      .replace('{{NOTES_FOOT}}', '<a href="#notes">Study material</a> · ' if enotes else ''))
         root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: APPSC Group 1 & 2, TS Police SI & Constable, UPSC CAPF & EPFO'
         root_desc = (f'Learn with Anil (learnwithanil.in): previous year question papers (PYQs) with answers for APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
-                     f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO) and TGPSC HMWSSB Manager, and APPSC & TGPSC AMVI (Assistant Motor Vehicle Inspector). {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
+                     f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO) and TGPSC HMWSSB Manager, APPSC & TGPSC AMVI (Assistant Motor Vehicle Inspector) and APPSC Endowment Officer (EO Grade-III). {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
                      f'One ₹45 PYQ Pass for every exam; TGPSC, UPSC, SSC, banking and railway exams are being added.')
         home_title = conf['title']
         ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
@@ -994,8 +1070,9 @@ def main():
                        f'choose papers, subjects and topics, then practise with answers or take a timed test.', pb + 'practice/', True),
           'bank': (f'{seo_name} Question Bank – Search All {total:,} PYQs{" & Practice Bits" if conf["board"] == "APPSC" or conf.get("bits") else ""} | Learn with Anil',
                    f'Search every {seo_name} previous year question by keyword, paper or topic, with answers from {conf["keyshort"]} and explanations.', pb + 'bank/', True),
-          'notes': ('Study Material 2026-27 – Crisp Notes by Jupudi Anil Kumar | Learn with Anil',
-                    'Exam-focused study material by Jupudi Anil Kumar: Crisp Notes on AP Economy and Science & Technology for APPSC Mains, with the latest 2026 data.', '/appsc-group-2/notes/', True),
+          'notes': ((conf['notes_seo'][0], conf['notes_seo'][1], pb + 'notes/', True) if conf.get('notes_seo') else
+                    ('Study Material 2026-27 – Crisp Notes by Jupudi Anil Kumar | Learn with Anil',
+                     'Exam-focused study material by Jupudi Anil Kumar: Crisp Notes on AP Economy and Science & Technology for APPSC Mains, with the latest 2026 data.', '/appsc-group-2/notes/', True)),
           'about': ('About Jupudi Anil Kumar – Learn with Anil',
                     'Jupudi Anil Kumar is a civil-services educator with 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants. He built Learn with Anil to make previous-year questions easy and affordable to practise for every aspirant.', '/appsc-group-2/about/', True),
           'mistakes': (f'Mistakes Notebook – {seo_name} | Learn with Anil', 'Your mistakes notebook on Learn with Anil.', pb + 'mistakes/', False),
@@ -1137,14 +1214,14 @@ def bahubali_promo(url):
     </a>'''
 
 
-def home_notes(notes, bb_url=''):
+def home_notes(notes, bb_url='', line=''):
     if not notes and not bb_url: return ''
     if not notes: return f'<section class="wrap section">{bahubali_promo(bb_url)}</section>'
     covers = ''.join(f'<img src="{esc(b["cover"])}" alt="" width="140" height="198" loading="lazy">' for b in notes)
     return f'''<section class="wrap section">{bahubali_promo(bb_url) if bb_url else ''}
     <a class="card notes-promo" href="#notes">
       <div class="np-copy"><p class="eyebrow">New · Study material</p><h2>Study material 2026-27</h2>
-      <p>{esc(" and ".join(dict.fromkeys(b.get("subject_label", b["subject"]) for b in notes)))} for APPSC Mains, with the latest 2026 data and APPSC's own previous questions inside. {INCL}.</p>
+      <p>{esc(line) if line else esc(" and ".join(dict.fromkeys(b.get("subject_label", b["subject"]) for b in notes))) + " for APPSC Mains, with the latest 2026 data and APPSC's own previous questions inside."} {INCL}.</p>
       <span class="btn btn-primary">See the books</span></div>
       <div class="np-covers" aria-hidden="true">{covers}</div>
     </a>
@@ -1245,6 +1322,7 @@ def exam_terms(e, cat):
     if e['cat'] == 'tg': words += ['tspsc', 'tgpsc', 'telangana']
     if 'police' in e['id']: words += ['ts police', 'tg police', 'tslprb', 'tgprb', 'si', 'constable']
     if 'amvi' in e['id']: words += ['amvi', 'motor vehicle inspector', 'mvi', 'rto', 'transport department', 'automobile engineering', 'automobile']
+    if e['id'] == 'appsc-eo': words += ['endowments', 'endowment officer', 'eo grade 3', 'eo grade iii', 'executive officer', 'temple', 'devadaya', 'dharmadaya', 'hindu philosophy']
     if 'hmwssb' in e['id']: words += ['hmwssb', 'water board', 'jalamandali', 'metro water', 'manager engineering', 'civil engineering', 'hmws']
     if 'civil-judge' in e['id']: words += ['civil judge', 'junior civil judge', 'jcj', 'judiciary', 'high court', 'llb', 'law']
     if e['cat'] == 'ap': words += ['appsc', 'andhra'] + ([f'ap group {ROMAN[m.group(1)]}'] if m else [])
@@ -1533,6 +1611,29 @@ def FAQ_AMVI(state):
     return faq
 
 
+def FAQ_EO(total, npapers):
+    return [
+      ('Where can I get APPSC Executive Officer Grade-III previous question papers with answers?',
+       f'This page has {total:,} questions from {npapers} APPSC Executive Officer Grade-III (Endowments) papers: Paper I General Studies & Mental Ability and Paper II Hindu Philosophy & Temple System '
+       'of the 2026 exam (Notification 10/2025, held 11 February 2026) and the 2023 Mains (Notification 24/2021, computer-based test), plus the 2022 Screening Test. '
+       "Every answer is taken from APPSC's final key, and each question has a short explanation in English and Telugu. Practise each paper as a quiz or a timed mock test with one ₹45 PYQ Pass for every exam."),
+      ('What is the APPSC EO Grade-III exam pattern?',
+       'Two objective papers of degree standard: Paper I General Studies & Mental Ability (150 questions, 150 marks, 150 minutes) and Paper II Hindu Philosophy & Temple System '
+       '(150 questions, 150 marks, 150 minutes), 300 marks in all, computer-based, with one-third of a mark deducted for each wrong answer, followed by a qualifying Computer Proficiency Test. '
+       'Notification 23/2026 has 104 posts; online applications run from 16 October to 5 November 2026.'),
+      ('What is in the Hindu Philosophy & Temple System syllabus?',
+       'Ramayanam, Mahabharatham, Bhagavatham and the Puranas (characters, parts, dynasties and places); temple Agamas (Vaikhanasa, Pancharatra, Saiva and Sakta); Hindu festivals and classical arts; '
+       'Vedic culture; philosophies and gurus (Alwars, Nayanars, Sankara, Ramanuja, Madhva, Basava); family structure, adoption and succession; temple income and Section 57, duties of the Executive Officer '
+       '(Section 29) and endowment lands (Sections 75–86) of the A.P. Endowments Act, 1987, and the ROR Act. Learn with Anil\'s study notes on this paper are part of the PYQ Pass.'),
+      ('Are the questions available in Telugu?',
+       'Yes. Both papers are printed in English and Telugu, and every question is here as printed; tap తెలుగు at the top of the page to practise in Telugu. The explanations are in Telugu too.'),
+      ('Is there an APPSC EO mock test?',
+       'Yes. Open the mock test page and take a real paper with a timer, or tap Create a quiz to choose subjects such as Ramayanam, Temple Agamas or the Endowments Act. You get your score, the answer and an explanation for every question.'),
+      ('Which questions are left out?',
+       'Questions that APPSC deleted or ignored for all candidates are left out. APPSC\'s 2022 Screening Test key prints only the correct answer, so that paper is given as quick-recall questions (question and answer).'),
+    ]
+
+
 def FAQ_TS(post, mains=()):
     si = post == 'SI'
     name = 'TS Police SI' if si else 'TS Police Constable'
@@ -1685,7 +1786,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){{
 document.querySelectorAll(".lk").forEach(function(e){{e.textContent="✓ ";e.className="lk ok"}});
 document.querySelectorAll("[data-paidtxt]").forEach(function(e){{e.textContent=e.getAttribute("data-paidtxt")}});
@@ -2270,20 +2371,21 @@ LANDINGS = {
   # file: what the page covers. People search "APPSC PYQs", "TS police previous papers", "TSLPRB previous question papers" ...
   'appsc-pyqs.html': dict(
       board='APPSC', ename='APPSC', crumb='APPSC PYQs',
-      title='APPSC Previous Year Question Papers with Answers – Group 1, Group 2 & AMVI PYQs | Learn with Anil',
-      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024, Group 2 Prelims & Mains 2019–2025 and AMVI (Assistant Motor Vehicle Inspector) 2019, 2023 & 2026, '
+      title='APPSC Previous Year Question Papers with Answers – Group 1, Group 2, AMVI & Endowment Officer PYQs | Learn with Anil',
+      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024, Group 2 Prelims & Mains 2019–2025 AMVI (Assistant Motor Vehicle Inspector) 2019, 2023 & 2026 and Endowment Officer (EO Grade-III) 2022–2026, '
            '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations with one ₹45 PYQ Pass for every exam.',
       h1='APPSC previous year question papers with answers',
-      lede="Every APPSC Group 1, Group 2 and AMVI previous question paper on Learn with Anil, {n} questions in all. "
+      lede="Every APPSC Group 1, Group 2, AMVI and Endowment Officer (EO Grade-III) previous question paper on Learn with Anil, {n} questions in all. "
            "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu (AMVI Automobile Engineering papers in English).",
-      intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC AMVI (Assistant Motor Vehicle Inspector) previous papers, APPSC old question papers with the key, or an APPSC mock test? '
+      intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC AMVI (Assistant Motor Vehicle Inspector) or Endowment Officer (EO Grade-III) previous papers, APPSC old question papers with the key, or an APPSC mock test? '
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
             '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.</p>'
             '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (686 posts, apply 10–30 November) and '
-            '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts, last date extended to 9 November 2026). Timed mock tests: '
+            '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts, last date extended to 9 November 2026) and '
+            '<a href="/appsc-eo-grade-3-notification-2026.html">APPSC EO Grade-III Notification 2026</a> (104 Endowments Executive Officer posts, apply by 5 November). Timed mock tests: '
             '<a href="/appsc-group-2/mock-test.html">Group 2</a> · <a href="/appsc-group-1/mock-test.html">Group 1</a>.</p>',
-      te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు', 'APPSC AMVI': 'APPSC AMVI ప్రశ్నాపత్రాలు'},
-      order=lambda c: {'Group-I': 0, 'Group-II': 1}.get(c['short'], 2)),   # Group-I, Group-II, then AMVI
+      te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు', 'APPSC AMVI': 'APPSC AMVI ప్రశ్నాపత్రాలు', 'APPSC EO Grade-III': 'APPSC దేవాదాయ శాఖ EO గ్రేడ్-III ప్రశ్నాపత్రాలు'},
+      order=lambda c: {'Group-I': 0, 'Group-II': 1, 'APPSC EO Grade-III': 3}.get(c['short'], 2)),   # Group-I, Group-II, AMVI, then EO Grade-III
   'ts-police-pyqs.html': dict(
       board='TSLPRB', ename='TS Police', crumb='TS Police PYQs',
       title='TS Police Previous Question Papers with Answers – SI & Constable PYQs (TSLPRB / TGPRB), English & Telugu | Learn with Anil',
@@ -2455,6 +2557,59 @@ NOTIFS = {
       ('', 'note', 'In the screening test, one-third of a mark is deducted for each wrong answer, and about 50 candidates per post go through to the Mains. '
                    'Screening marks are not counted in the final merit (Mains merit papers 750 + interview 75 = 825). The 2024 Prelims papers below follow this same pattern.'),
     ]),
+  'appsc-eo-grade-3-notification-2026.html': dict(
+    exam='appsc-eo', crumb='EO Grade-III Notification 2026',
+    # Anil, 28 Oct 2026: APPSC Notification 23/2026 dated 16 Oct 2026 (EO_Grade_III_DetailedNotification_232026.pdf)
+    title='APPSC Endowment Officer (EO Grade 3) Notification 2026 – 104 Posts, Apply by 5 November, Syllabus & Previous Papers | Learn with Anil',
+    desc='APPSC Executive Officer Grade-III (Endowments) Notification 2026 (No. 23/2026): 104 district posts, online applications 16 October to 5 November 2026, '
+         'eligibility, fee, the Paper I and Paper II (Hindu Philosophy & Temple System) pattern and syllabus, and EO Grade-III previous question papers with answers.',
+    h1='APPSC Endowment Officer (EO Grade-III) Notification 2026: 104 posts',
+    lede='APPSC Notification No. 23/2026 (16 October 2026) invites online applications for 104 posts of Executive Officer Grade-III in the A.P. Endowments Subordinate Service, '
+         'the officers who run temples and charitable institutions under the Endowments Department. Apply by 5 November 2026. Below: dates, eligibility, the exam pattern and syllabus, '
+         'and the previous papers to start practising.',
+    te='ఏపీపీఎస్సీ దేవాదాయ శాఖ ఎగ్జిక్యూటివ్ ఆఫీసర్ గ్రేడ్-III నోటిఫికేషన్ (నం. 23/2026): 104 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు అక్టోబర్ 16 నుంచి నవంబర్ 5, 2026 వరకు. పేపర్-1 జనరల్ స్టడీస్, పేపర్-2 హిందూ తత్వశాస్త్రం & దేవాలయ వ్యవస్థ; పాత ప్రశ్నాపత్రాలు సమాధానాలతో కింద.',
+    pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/EO_Grade_III_DetailedNotification_232026.pdf', pdfname='APPSC Notification No. 23/2026, dated 16 October 2026',
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification (No. 23/2026)', '16 October 2026'),
+        ('Online applications', '16 October to 5 November 2026 (till 11:59 pm)'),
+        ('Written examination', 'Computer-based (CBRT); date to be announced by APPSC'),
+        ('Official website', 'psc.ap.gov.in')]),
+      ('Posts, pay and age', 'table', [
+        ('Post', 'Executive Officer Grade-III, A.P. Endowments Subordinate Service (district-wise post)'),
+        ('Vacancies', '104 (district-wise break-up in Annexure-I of the notification)'),
+        ('Pay scale', '₹25,220 – ₹80,910'),
+        ('Age', '18 to 44 years as on 1 July 2026, with the usual relaxations for reserved categories')]),
+      ('Who can apply', 'p', 'A bachelor\'s degree from a recognised university (any discipline) or an equivalent qualification. Under Section 29(3) of the A.P. Charitable and Hindu Religious '
+                          'Institutions and Endowments Act, 1987 (as amended by Act 33 of 2007), the Executive Officer must be a person professing the Hindu religion. '
+                          'Fee: ₹250 application processing fee plus ₹80 examination fee; SC, ST, BC, PwBD and ex-service candidates, white-card families and unemployed youth of AP are exempt from the ₹80 examination fee.'),
+      ('Exam pattern', 'table+', (['Paper', 'Subject', 'Questions · marks · time'], [
+        ('Paper I (objective, degree standard)', 'General Studies & Mental Ability', '150 · 150 · 150 min'),
+        ('Paper II (objective, degree standard)', 'Hindu Philosophy & Temple System', '150 · 150 · 150 min'),
+        ('Computer Proficiency Test', 'Office automation with computers; qualifying (OC 40, BC 35, SC/ST/PwBD 30 out of 100), 60 minutes', '—')])),
+      ('', 'note', 'One-third of a mark is deducted for each wrong answer. Selection is on the 300 marks of the written examination, after the qualifying Computer Proficiency Test.'),
+      ('Paper II syllabus: Hindu Philosophy & Temple System', 'list', [
+        'Ramayanam: characters, Kandas, dynasties and places.',
+        'Mahabharatham: characters, Parvas, dynasties and places.',
+        'Bhagavatham: characters, Skandhas and places.',
+        'Hindu Puranams and the places in them.',
+        'Temple Agamas: Vaishnavam (Vaikhanasam, Pancharathram, Chattada Srivaishnavam), Saivam (Smardham, Adi Saiva, Veera Saiva, Jangama, Kapalika) and Sakteyam.',
+        'Hindu festivals in different parts of India; classical fine arts of Indian origin.',
+        'Vedic culture: Yagnas and Yagams, Vedas, Upavedas, Upanishads, dharmas of the stages of life.',
+        'Philosophies, cults and gurus: Alwars, Nayanars, Sankaracharya (Advaita), Ramanujacharya (Visishtadvaita), Madhwacharya (Dvaita), Basava (Veera Saiva).',
+        'Family structure in Hindu society: adoption and succession.',
+        'Sources of income of temples and charitable institutions; allocation of funds (Section 57 of Act 30 of 1987).',
+        'Duties of Executive Officers (Section 29 of Act 30 of 1987).',
+        'Land records; law on endowment lands: ROR Act and Sections 75 to 86 of Act 30 of 1987.']),
+      ('Study material for Paper II', 'html',
+       '<p>Learn with Anil\'s <b>Hindu Philosophy &amp; Temple System</b> notes cover every Paper II topic, from Ramayanam to the Endowments Act, '
+       'written from the questions APPSC has actually asked, with APPSC\'s 2023 and 2026 Paper II questions and official answers at the end. '
+       '<a href="/LearnWithAnil-EO-Grade-3-Hindu-Philosophy-Temple-System-Free-Sample.pdf">Download the free sample chapter (PDF)</a>; '
+       'the full book is part of the ₹45 PYQ Pass, under <a href="/appsc-endowment-officer/#notes">Study Material</a>.</p>'),
+      ('Paper I syllabus: General Studies & Mental Ability', 'p',
+       'Current events (international, national, Andhra Pradesh); general science and technology; history of India with a focus on AP and the national movement; geography of India and AP; '
+       'Indian polity and governance; Indian economy and planning; sustainable development and environment; disaster management; logical reasoning; data analysis.'),
+    ]),
 }
 
 
@@ -2470,6 +2625,7 @@ def notif_page(loaded, rel):
         elif kind == 'table+': body.append(facts_table(data[1], data[0]))
         elif kind == 'list': body.append('<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in data) + '</ul>')
         elif kind == 'note': body.append(f'<p class="note">{esc(data)}</p>')
+        elif kind == 'html': body.append(data)   # trusted markup written here (links)
         else: body.append(f'<p>{esc(data)}</p>')
     body.append(f'<h2>Start with the previous papers</h2><p>Every {esc(conf["name"])} paper on this site comes with the answers from APPSC\'s final key and a short '
                 f'explanation in English and Telugu. Practise a paper online or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
@@ -3215,7 +3371,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);
