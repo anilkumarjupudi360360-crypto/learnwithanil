@@ -565,6 +565,8 @@ function drawExam(){
   const T = qText(q);
   const counts = {a:0, m:0, am:0, v:0, "":0}; D.q.forEach(x=>counts[qState(x.n)]++);
   const pal = D.sections.map(sc=>`<h3>${esc(sc.name)} · ${esc(sc.sub)}</h3><div class="grid">${D.q.filter(x=>x.n>=sc.from&&x.n<=sc.to).map(x=>`<button type="button" class="pb ${qState(x.n)}${x.n===n?" cur":""}" data-act="jump" data-n="${x.n}" aria-label="Question ${x.n}">${x.n}</button>`).join("")}</div>`).join("");
+  // re-drawing after an answer or a jump must not send the palette (or the page) back to question 1 (Anil, 29 Oct 2026)
+  const scr = $("#screen"), pal0 = scr.querySelector(".pal"), palTop = pal0 ? pal0.scrollTop : 0, scrTop = scr.scrollTop;
   $("#screen").innerHTML = `<div class="ex">
     <div class="ex-bar"><div class="in">
       <div class="t"><small>Bahubali · ${esc(D.paper_name)}</small>${esc(D.label)}</div>
@@ -596,6 +598,11 @@ function drawExam(){
       <button class="btn btn-primary" type="button" data-act="next">${s.i===D.q.length-1? "Save" : "Save &amp; next →"}</button>
     </div></div>
   </div>`;
+  const pal1 = scr.querySelector(".pal");
+  if(pal1){ pal1.scrollTop = palTop; const c = pal1.querySelector(".pb.cur");
+    if(c){ const pr = pal1.getBoundingClientRect(), cr = c.getBoundingClientRect();
+      if(cr.top < pr.top || cr.bottom > pr.bottom) pal1.scrollTop += (cr.top - pr.top) - (pal1.clientHeight - c.offsetHeight)/2; } }
+  if(Math.abs(scr.scrollTop - scrTop) > 1) scr.scrollTop = scrTop;
   saveA();
 }
 function move(d){ const L = EX.D.q.length; EX.s.i = Math.max(0, Math.min(L-1, EX.s.i + d)); EX.pal=false; drawExam(); $("#screen").scrollTo(0,0); }
@@ -727,7 +734,7 @@ document.addEventListener("click", e=>{
   else if(act==="rvf"){ RV.f = b.dataset.f; drawReview(); }
   else if(act==="toreview"){ const r=$("#review"); if(r) r.scrollIntoView({behavior:"smooth"}); }
   else if(EX){
-    if(act==="jump"){ const i = EX.D.q.findIndex(q=>q.n===+b.dataset.n); if(i>=0){ EX.s.i=i; EX.pal=false; drawExam(); } }
+    if(act==="jump"){ const i = EX.D.q.findIndex(q=>q.n===+b.dataset.n); if(i>=0){ EX.s.i=i; EX.pal=false; drawExam(); $("#screen").scrollTo(0,0); } }
     else if(act==="next") move(1);
     else if(act==="prev") move(-1);
     else if(act==="clear"){ delete EX.s.ans[EX.D.q[EX.s.i].n]; drawExam(); }

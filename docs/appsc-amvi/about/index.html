@@ -1185,8 +1185,13 @@ function render(){
   else if(v==="home"){ host.hidden=true; host.innerHTML=""; renderHomeDynamic(); }
   else {
     host.hidden=false;
+    // same view re-drawn (an option picked, a question jumped to): keep the page and the question palette where they were,
+    // so a student on question 35 or 100 is not sent back to the top / to question 1 (Anil, 29 Oct 2026)
+    const pg0 = host.querySelector(".pgrid"), keepY = changed ? null : window.scrollY, keepPg = (!changed && pg0) ? pg0.scrollTop : null;
     host.innerHTML = gateOK(v) ? ({exam:vExam,papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,notes:vNotes,mains:vMains,mocks:vMocks,sectionals:vSectionals})[v]() : vLocked(v);
     host.querySelectorAll("[data-mixed]").forEach(el=>{ el.indeterminate = true; });
+    if(v==="quiz") keepPalette(keepPg);
+    if(keepY!==null && Math.abs(window.scrollY - keepY) > 1) window.scrollTo(0, keepY);
   }
   if(v==="quiz") startTimer();
   markLocks();
@@ -1654,6 +1659,18 @@ function startTimer(){
     else if(el){ el.textContent = fmtTime(el2); }
   };
   tick(); timer = setInterval(tick, 1000);
+}
+function keepPalette(prev){   // the palette scrolls by itself: keep its place, and keep the current question's number in sight
+  const g = $(".pgrid"); if(!g) return;
+  if(prev!==null && prev!==undefined) g.scrollTop = prev;
+  const c = g.querySelector(".pb.cur"); if(!c) return;
+  const gr = g.getBoundingClientRect(), cr = c.getBoundingClientRect();
+  if(cr.top < gr.top || cr.bottom > gr.bottom) g.scrollTop += (cr.top - gr.top) - (g.clientHeight - c.offsetHeight)/2;
+}
+function showQ(){   // after moving to another question: if the question is out of sight (phones: the palette is below it), bring it up
+  const qc = $(".qcard"); if(!qc) return;
+  const tb = ($(".topbar")||{}).offsetHeight || 0, r = qc.getBoundingClientRect();
+  if(r.top < tb || r.top > window.innerHeight * 0.5) window.scrollTo({top: Math.max(0, window.scrollY + r.top - tb - 12), behavior: "smooth"});
 }
 function stopTimer(){ if(timer){ clearInterval(timer); timer=null; } }
 function finishQuiz(){
@@ -2249,10 +2266,10 @@ document.addEventListener("click", e=>{
     case "check": { const id=QZ.ids[QZ.i]; if(QZ.ans[id]===undefined) return; QZ.chk[id]=true; render(); break; }
     case "reveal": { QZ.rev[QZ.ids[QZ.i]]=true; render(); break; }
     case "self": { const id=QZ.ids[QZ.i]; QZ.ans[id]=b.dataset.v; QZ.chk[id]=true; render(); break; }
-    case "skip": { const id=QZ.ids[QZ.i]; delete QZ.ans[id]; QZ.chk[id]=true; QZ.rev[id]=true; if(QZ.i<QZ.ids.length-1){ QZ.i++; } render(); break; }
-    case "next": if(QZ.i<QZ.ids.length-1){ QZ.i++; UI.confirmSubmit=false; render(); } break;
-    case "prev": if(QZ.i>0){ QZ.i--; UI.confirmSubmit=false; render(); } break;
-    case "jump": QZ.i=+b.dataset.i; UI.confirmSubmit=false; render(); break;
+    case "skip": { const id=QZ.ids[QZ.i]; delete QZ.ans[id]; QZ.chk[id]=true; QZ.rev[id]=true; if(QZ.i<QZ.ids.length-1){ QZ.i++; } render(); showQ(); break; }
+    case "next": if(QZ.i<QZ.ids.length-1){ QZ.i++; UI.confirmSubmit=false; render(); showQ(); } break;
+    case "prev": if(QZ.i>0){ QZ.i--; UI.confirmSubmit=false; render(); showQ(); } break;
+    case "jump": QZ.i=+b.dataset.i; UI.confirmSubmit=false; render(); showQ(); break;
     case "markrev": { const id=QZ.ids[QZ.i]; if(QZ.mark[id]) delete QZ.mark[id]; else QZ.mark[id]=true; render(); break; }
     case "asksubmit": UI.confirmSubmit=true; render(); setTimeout(()=>{ const c=$(".confirm"); if(c) c.scrollIntoView({block:"center",behavior:"smooth"}); },0); break;
     case "cancelsubmit": UI.confirmSubmit=false; render(); break;
@@ -2368,12 +2385,12 @@ document.addEventListener("keydown", e=>{
     const idx = LET.indexOf(k) >= 0 ? LET.indexOf(k) : ["1","2","3","4"].indexOf(k);
     if(idx>=0){ if(QZ.mode!=="test" && QZ.chk[id]) return; if(QZ.mode==="test" && QZ.ans[id]===idx) delete QZ.ans[id]; else QZ.ans[id]=idx; render(); e.preventDefault(); return; }
   }
-  if(e.key==="ArrowRight" && QZ.i<QZ.ids.length-1 && (QZ.mode==="test"||QZ.chk[id])){ QZ.i++; render(); }
-  else if(e.key==="ArrowLeft" && QZ.i>0){ QZ.i--; render(); }
+  if(e.key==="ArrowRight" && QZ.i<QZ.ids.length-1 && (QZ.mode==="test"||QZ.chk[id])){ QZ.i++; render(); showQ(); }
+  else if(e.key==="ArrowLeft" && QZ.i>0){ QZ.i--; render(); showQ(); }
   else if(e.key==="Enter" && QZ.mode!=="test" && isMCQ(q)){
     if(e.target.closest && e.target.closest("button")) return;
     if(!QZ.chk[id] && QZ.ans[id]!==undefined){ QZ.chk[id]=true; render(); }
-    else if(QZ.chk[id]){ if(QZ.i<QZ.ids.length-1){ QZ.i++; render(); } else finishQuiz(); }
+    else if(QZ.chk[id]){ if(QZ.i<QZ.ids.length-1){ QZ.i++; render(); showQ(); } else finishQuiz(); }
   }
 });
 function restoreReset(){ $("#resetBox").innerHTML=`<button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button>`; bindReset(); }
