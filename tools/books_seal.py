@@ -27,7 +27,9 @@ def main():
     kpath = os.path.join(PRIV, 'keys.json')
     keys = json.load(open(kpath)) if os.path.exists(kpath) else {}
     os.makedirs(OUT, exist_ok=True)
-    manifest, rows = {}, []
+    # keep the entries of books whose PDF is not in BOOKS_PRIV this time (e.g. sealing one new book on another machine)
+    mpath = os.path.join(OUT, 'books.json')
+    manifest, rows = (json.load(open(mpath)) if os.path.exists(mpath) else {}), []
     today = datetime.date.today().isoformat()
     for b in books:
         src = os.path.join(PRIV, b['id'] + '.pdf')

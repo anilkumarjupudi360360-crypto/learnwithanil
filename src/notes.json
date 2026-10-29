@@ -1,5 +1,47 @@
 [
  {
+  "id": "g2micro-en",
+  "lang": "en",
+  "vol": null,
+  "series": "Group-II · Screening + Mains",
+  "subject": "Micro-Syllabus",
+  "title": "APPSC Group-II Micro-Syllabus",
+  "title_en": "APPSC Group-II Micro-Syllabus",
+  "subtitle": "All nine subjects of the Screening Test and Mains, broken into topics and sub-topics from every APPSC Group-II question (2019–2025), with 2025–26 current affairs",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "APPSC Group-II Micro-Syllabus: Screening + Mains, 2026-27 (English Medium)",
+  "pages": 47,
+  "chapters": [
+   "Indian History",
+   "Geography: World, India and Andhra Pradesh",
+   "Indian Society",
+   "Current Affairs",
+   "Mental Ability",
+   "Social and Cultural History of Andhra Pradesh",
+   "Indian Constitution",
+   "Indian and Andhra Pradesh Economy",
+   "Science and Technology"
+  ],
+  "pyqs": 1004,
+  "price": 45,
+  "syllabus": "Group-II Screening Test + Mains Papers I and II",
+  "badge": "Group-II",
+  "subject_label": "Micro-Syllabus",
+  "chapters_label": "9 subjects · 267 sub-topics · 1,004 PYQs mapped · 112 current affairs",
+  "product_en": "APPSC Group-II Micro-Syllabus: Screening + Mains, 2026-27 (English Medium)",
+  "cover": "notes-g2micro-en-cover.jpg",
+  "samples": [
+   "notes-g2micro-en-p1.jpg",
+   "notes-g2micro-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "appsc-group-2"
+  ],
+  "free": "/LearnWithAnil-APPSC-Group-2-Micro-Syllabus-Free-Sample.pdf"
+ },
+ {
   "id": "apeco-en",
   "lang": "en",
   "vol": 1,
