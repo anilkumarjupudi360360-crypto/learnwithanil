@@ -29,7 +29,10 @@ BOOKS = json.load(open(os.path.join(ROOT, 'src', 'books', 'books.json'))) if os.
 BOOKLETS = json.load(open(os.path.join(ROOT, 'src', 'books', 'booklets.json'))) if os.path.exists(os.path.join(ROOT, 'src', 'books', 'booklets.json')) else {}
 # books shown on the APPSC Group-II study-material page (a book with an 'exams' list shows only on those exams' pages)
 _NOTES = json.load(open(os.path.join(ROOT, 'src', 'notes.json'), encoding='utf-8')) if os.path.exists(os.path.join(ROOT, 'src', 'notes.json')) else []
-G2_BOOKS = {k: v for k, v in BOOKS.items() if not next((b.get('exams') for b in _NOTES if b['id'] == k), None)}
+def _g2book(k):   # no 'exams' list (the APPSC Mains books) or a Group-II book (the Micro-Syllabus, 29 Oct 2026)
+    ex = next((b.get('exams') for b in _NOTES if b['id'] == k), None)
+    return not ex or 'appsc-group-2' in ex
+G2_BOOKS = {k: v for k, v in BOOKS.items() if _g2book(k)}
 EXAM_DIR = {'appsc-eo': 'appsc-endowment-officer'}   # exam id -> folder, where they differ
 BOOKLET_FILES = {v['key']: v['file'] for ex in BOOKLETS.values() for v in ex.values()}
 def fake_pay(passes):   # the payments script: a student with the given passes (the PYQ Pass opens mocks, books and Bahubali)
@@ -466,22 +469,22 @@ async def main():
             import glob as _g
             for bk in [x for x in _NOTES if x.get('exams')]:
                 for eid in bk['exams']:
-                    dfs = _g.glob(os.path.join(SITE, EXAM_DIR.get(eid, eid), 'data', '*.js'))
+                    dfs = _g.glob(os.path.join(SITE, {'appsc-group-2': ''}.get(eid, EXAM_DIR.get(eid, eid)), 'data', '*.js'))
                     if not dfs or f'"{bk["id"]}"' not in open(dfs[0], encoding='utf-8').read(): errors.append(f'book {bk["id"]} missing from {eid} data')
                 g2 = _g.glob(os.path.join(SITE, 'data', '*.js')) + _g.glob(os.path.join(SITE, 'appsc-group-1', 'data', '*.js'))
-                if any(f'"{bk["id"]}"' in open(f, encoding='utf-8').read() for f in g2): errors.append(f'book {bk["id"]} shown on Group 1/2 pages')
+                if not {'appsc-group-1', 'appsc-group-2'} & set(bk['exams']) and any(f'"{bk["id"]}"' in open(f, encoding='utf-8').read() for f in g2): errors.append(f'book {bk["id"]} shown on Group 1/2 pages')
                 if bk.get('free') and not os.path.isfile(os.path.join(SITE, bk['free'].lstrip('/'))): errors.append(f'free sample {bk["free"]} not published')
             # study books: part of the PYQ Pass, locked without it, a decrypted PDF download with it
             for passes, paid in [({}, False), (PAID, True)]:
                 bp = await b.new_page(passes=passes, viewport={'width': 1280, 'height': 900}, accept_downloads=True)
                 await bp.add_init_script(REGISTERED); bp.on('pageerror', lambda e: errors.append(f'books pageerror: {e}'))
-                await bp.goto(URL + 'appsc-group-2/notes/'); await bp.wait_for_timeout(900)
+                await bp.goto(URL + 'appsc-group-2/notes/'); await bp.wait_for_timeout(1500)   # the pass check runs in the background, then the page re-renders
                 n_dl, n_lock = await bp.locator('[data-act="bookdl"]').count(), await bp.locator('.note [data-act="unlockpyq"]').count()
                 if await bp.locator('.note a[href*="instamojo"]').count(): errors.append('books: an Instamojo "Buy now" link is still shown')
                 if not paid and (n_dl or n_lock != len(G2_BOOKS)): errors.append(f'books: without a pass {n_dl} downloads and {n_lock} locks')
                 if paid:
                     if n_dl != len(G2_BOOKS): errors.append(f'books: {n_dl} downloads with the pass (want {len(G2_BOOKS)})')
-                    elif BOOK_KEYS:
+                    elif BOOK_KEYS.get('bk-' + (await bp.locator('[data-act="bookdl"]').first.get_attribute('data-id') or '')):   # only the keys this machine has
                         async with bp.expect_download(timeout=20000) as di: await bp.locator('[data-act="bookdl"]').first.click()
                         d = await di.value; fpath = await d.path()
                         head = open(fpath, 'rb').read(5)
@@ -507,7 +510,7 @@ async def main():
                     if not paid:
                         await btns.first.click(); await bp.wait_for_timeout(600)
                         if not await bp.locator('#payDlg[open]').count(): errors.append(f'{eid}: PDF button without a pass did not open the checkout')
-                    elif BOOK_KEYS:
+                    elif all(v['key'] in BOOK_KEYS for v in papers_ex.values()):   # only when this machine has the booklet keys
                         async with bp.expect_download(timeout=20000) as di: await btns.first.click()
                         d = await di.value
                         if open(await d.path(), 'rb').read(5) != b'%PDF-' or not d.suggested_filename.endswith('.pdf'): errors.append(f'{eid}: booklet download is not a PDF ({d.suggested_filename})')

@@ -744,6 +744,14 @@ def exam_confs():
                            f"practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            eyebrow='APPSC Group-II · Prelims (Screening) &amp; Mains · 2019–2025',
+           # Group-II Micro-Syllabus book added 29 Oct 2026 (Anil); the AP Economy and S&T books stay on this page too
+           notes_title='Study material for APPSC Group-II',
+           notes_seo=('APPSC Group 2 Micro Syllabus 2026 (Notification 37/2026) – Topic-wise Syllabus with PYQs, Free PDF Sample | Learn with Anil',
+                      'APPSC Group-II micro-syllabus by Jupudi Anil Kumar for Notification 37/2026: all 9 Screening and Mains subjects in 267 sub-topics, '
+                      'each tagged with the papers that asked it, 1,004 previous questions mapped and 112 current affairs of 2025–26. Free sample PDF; '
+                      'plus AP Economy Crisp Notes and the Science & Technology book.'),
+           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-II: the new Micro-Syllabus, which breaks every Screening and Mains subject into sub-topics and shows which papers asked each one, Crisp Notes on AP Economy, and a full Science & Technology book. Every book has APPSC\'s own previous questions inside.',
+           notes_line='The new Group-II Micro-Syllabus (Notification 37/2026), Crisp Notes on AP Economy and a full Science & Technology book, built on APPSC\'s own previous questions.',
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer: there the answer is APPSC's and the other three options are written by Learn with Anil (inside the PYQ Pass)."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
            slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE, pb='/appsc-group-1/',
