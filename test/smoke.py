@@ -159,7 +159,7 @@ async def main():
                 assert h1word in await pg.inner_text('#home-static h1')
                 assert await pg.locator(f'[data-act="lang"][data-l="{l2}"]').count() == 1, f'{tag}: {l2} language button missing'
                 await pg.screenshot(path=f'{SHOTS}/{tag}-home-{name}.png', full_page=False)
-                for v in ['papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','notes']:
+                for v in ['papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','notes','mocks','sectionals']:
                     await pg.evaluate(f'location.hash="{v}"'); await pg.wait_for_timeout(150)
                     sw = await pg.evaluate('document.documentElement.scrollWidth')
                     if sw > width: errors.append(f'{tag} {name}/{v}: horizontal overflow {sw}>{width}')

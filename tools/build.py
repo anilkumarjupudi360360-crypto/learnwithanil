@@ -991,7 +991,8 @@ def main():
         exb = exsealed.get(conf['id'])
         pub_qs, stale = public_questions(questions, exb)
         if stale: print(f'  NOTE {conf["id"]}: {stale} paid explanations are not sealed yet and stay in the public app data; run tools/ex_seal.py {conf["id"]}')
-        data = dict(pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=pub_qs, instagram=INSTAGRAM,
+        data = dict(mockHtml=inapp_mocks(conf, papers), secHtml=inapp_sectionals(conf, papers, questions),
+                    pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=pub_qs, instagram=INSTAGRAM,
                     exb=dict(key=exb['key'], file=exb['file']) if exb else None, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     mains=emains, mainsP5=MAINS_P5 if emains else None,
                     notesTitle=conf.get('notes_title', ''), notesLede=conf.get('notes_lede', ''),
@@ -1079,6 +1080,8 @@ def main():
           'smart': (f'Smart Quiz – {seo_name} | Learn with Anil', 'Re-attempt the questions you got wrong.', pb + 'smart/', False),
           'bookmarks': (f'Bookmarks – {seo_name} | Learn with Anil', 'Your saved questions on Learn with Anil.', pb + 'bookmarks/', False),
           'heatmap': (f'Topic Heatmap – {seo_name} | Learn with Anil', 'Your topic-wise accuracy on Learn with Anil.', pb + 'heatmap/', False),
+          'mocks': (f'{seo_name} Mock Tests | Learn with Anil', f'{seo_name} mock tests with a timer, answers and explanations.', pb + 'mocks/', False),
+          'sectionals': (f'{seo_name} Sectional Tests | Learn with Anil', f'{seo_name} subject-wise sectional tests with a timer.', pb + 'sectionals/', False),
         }
         sdata = dict(data, pb=pb, qpages=True, examSeo=seo_name, homeTitle=home_title, hubTitle=root_title)
         sjson = json.dumps(sdata, ensure_ascii=False, separators=(',', ':'))
@@ -2872,7 +2875,7 @@ def pay_data(conf):
 
 
 def tiles_html(conf, papers, questions, extra_links, mains=()):
-    """The three tiles on an exam's home page (PYQs, mock tests, sectional tests), each opening its own page, plus link tiles."""
+    """The three tiles on an exam's home page (PYQs, mock tests, sectional tests), tiles 2 and 3 open the app's own Mock tests and Sectional tests views in place (Anil, 29 Oct 2026), plus link tiles."""
     pb, mk = conf['pb'], MOCK_PACKS.get(conf['id'])
     n = len(questions)
     nsub = len({q['s'] for q in questions})
@@ -2883,7 +2886,7 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
           + (f'<span class="etile-price">✓ Free to attempt · explanations with the ₹{PAY["pyq_price"]} PYQ Pass</span></a>' if conf['id'] in FREE_PYQ else
              f'<span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 ₹{PAY["pyq_price"]} · all exams · 12 months</span></a>'))
     if mk:
-        t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
+        t2 = (f'<a class="etile" href="{pb}mocks/"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
               + (f'<span class="etile-p">{esc(mk["summary"].split(". ")[0])}. {live_text(mk)}.</span>' if 'mocks' in mk else
                  f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>')
               + f'<span class="etile-price" data-paidtxt="✓ Included in your PYQ Pass">🔒 {INCL}{" · Mock 1 free" if mk.get("free1") or any(m.get("free") for m in mk.get("mocks", [])) else ""}</span></a>')
@@ -2893,14 +2896,14 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
               f'<span class="etile-price" data-paidtxt="✓ Included in your PYQ Pass">🔒 {INCL}</span></a>')
     elif conf['id'] in UPCOMING_PACKS:
         up = UPCOMING_PACKS[conf['id']]
-        t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>{esc(up["name"])}</b>'
+        t2 = (f'<a class="etile" href="{pb}mocks/"><span class="etile-k">02 · Mock tests</span><b>{esc(up["name"])}</b>'
               f'<span class="etile-p">{up["n"]} full-length mocks, {up["qn"]} questions each, {up["langs"]}, with explanations. Coming soon.</span>'
               f'<span class="etile-price">Coming soon · {INCL.lower()}</span></a>')
     else:
-        t2 = (f'<a class="etile" href="{pb}mock-test.html"><span class="etile-k">02 · Mock tests</span><b>Mock test pack</b>'
+        t2 = (f'<a class="etile" href="{pb}mocks/"><span class="etile-k">02 · Mock tests</span><b>Mock test pack</b>'
               f'<span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span>'
               f'<span class="etile-price">Upcoming</span></a>')
-    t3 = (f'<a class="etile" href="{pb}sectional-tests.html"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b>'
+    t3 = (f'<a class="etile" href="{pb}sectionals/"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b>'
           f'<span class="etile-p">PYQ sectionals in {nsub} subjects{", plus sectional mocks from " + esc(mk["name"]) if mk else ""}. '
           f'Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 With the PYQ Pass</span></a>')
     links = ''.join(f'<a class="etile etile-sm" href="{h}"><b>{esc(x)}</b><span class="etile-go">→</span></a>' for x, h in extra_links)
@@ -3141,6 +3144,26 @@ def sectional_page(conf, papers, questions):
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Sectional tests', can)], conf)
 
 
+def inapp_mocks(conf, papers):
+    """HTML of the app's Mock tests view (/<exam>/mocks/): the same content as the static mock-test page, without the page frame."""
+    pack, rows, info = mock_parts(conf, papers, app=True)
+    l2, mk = conf['l2'], MOCK_PACKS.get(conf['id'])
+    return (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
+            + '<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>'
+            + '<h2>How the mock test works</h2><ul>'
+            f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>'
+            '<li>You can move between questions and change answers until you submit. The timer pauses while you are away from the test.</li>'
+            '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question. Wrong answers go to your Mistakes notebook.</li>'
+            f'<li>Everything here opens with the PYQ Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months){"; the same pass opens " + esc(mk["name"]) if mk else ""}.</li></ul>')
+
+
+def inapp_sectionals(conf, papers, questions):
+    """HTML of the app's Sectional tests view (/<exam>/sectionals/): PYQ sectionals by subject and the mock pack's sectional mocks."""
+    _rel, html_ = sectional_page(conf, papers, questions)
+    m = re.search(r'<h2>PYQ sectionals</h2>.*?(?=<h2>Plans</h2>)', html_, flags=re.S)
+    return m.group(0) if m else ''
+
+
 def dur_text(p):
     """'60 minutes' for a paper with a real time limit, else 'about 2 hours' (one minute per question)."""
     return f'{p["mins"]} minutes' if p.get('mins') else f'about {round(p["count"] / 60 * 4) / 4:g} hours'
@@ -3189,25 +3212,17 @@ try{if(window.gtag)gtag('event','paper_pdf_download',{paper:a.getAttribute('data
 say(a,'✓ Your PDF is downloading (saved in Downloads). For your personal study only.')})}).catch(function(err){say(a,(err&&err.message)||'Could not get the PDF. Please check your connection and try again.',true)}).then(function(){a.innerHTML=html;a.removeAttribute('aria-busy')})});})();</script>""")
 
 
-def mock_page(conf, papers, questions):
-    """Tile 2: mock tests — the exam's mock-test pack (if on sale) and the real previous papers as full timed tests."""
+def mock_parts(conf, papers, app=False):
+    """The mock-pack box and the previous papers as timed tests: shared by the static mock-test page and, with app=True,
+    the app's own Mock tests view (Anil, 29 Oct 2026: the exam tile must open the test series in place, not another page)."""
     pb, seo = conf['pb'], conf['seo']
-    rel = pb.strip('/') + '/mock-test.html'
-    can = SITE_URL + '/' + rel
     mcq = [p for p in sorted(papers, key=lambda p: (-p['year'], p['id'])) if p['fmt'] == 'mcq' and not p.get('own')]
-    l2 = conf['l2']
     mk = MOCK_PACKS.get(conf['id'])
-    tseo = seo.replace('TS Police', 'TS (Telangana) Police') if conf['id'].startswith('ts-police') else seo
-    title = (f'{tseo} Mock Test 2026 – {mk["name"]} Test Series & Previous Papers with Timer | Learn with Anil' if mk else
-             f'{seo} Mock Test – Full Previous Papers with Timer, English & {l2["name"]} | Learn with Anil')
-    desc = ((f'{mk["title"]}: {mk["summary"]} {INCL}. ' if mk else f'{seo} mock tests online: ')
-            + f'take the real {", ".join(paper_kw(conf, p).replace(seo + " ", "") for p in mcq)} question paper{"s" if len(mcq) > 1 else ""} as timed tests, '
-            f'in English and {l2["name"]}, with your score, official answers and an explanation for every question.')
     rows = ''.join(
         f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {dur_text(p)}</div>'
         f'<p>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</p>'
         f'<p style="font-weight:400">{esc(p["blurb"])}</p>'
-        f'<a class="cta" href="{pb}?test={p["id"]}">Start the mock test</a><a class="cta alt" href="/{conf["dir"] + "/" if conf["dir"] else ""}papers/{p["slug"]}.html">See the questions</a></li>'
+        f'<a class="cta" href="{pb}?test={p["id"]}">Start the mock test</a>' + (f'<a class="cta alt" href="{pb}?practice={p["id"]}">Practise with answers</a></li>' if app else f'<a class="cta alt" href="/{conf["dir"] + "/" if conf["dir"] else ""}papers/{p["slug"]}.html">See the questions</a></li>')
         for p in mcq)
     info = MOCK_INFO.get(conf['id'], '')
     if mk and 'mocks' in mk:
@@ -3244,6 +3259,24 @@ def mock_page(conf, papers, questions):
                 '<p>Until then, take the real previous papers below as timed mocks (with the PYQ Pass).</p>')
     else:
         pack = f'<h2>Mock test pack</h2><p>Full-length mock tests for this exam are being prepared; they will be {INCL.lower()}. Until then, take the real previous papers below as timed mocks.</p>'
+    return pack, rows, info
+
+
+def mock_page(conf, papers, questions):
+    """Tile 2: mock tests — the exam's mock-test pack (if on sale) and the real previous papers as full timed tests."""
+    pb, seo = conf['pb'], conf['seo']
+    rel = pb.strip('/') + '/mock-test.html'
+    can = SITE_URL + '/' + rel
+    mcq = [p for p in sorted(papers, key=lambda p: (-p['year'], p['id'])) if p['fmt'] == 'mcq' and not p.get('own')]
+    l2 = conf['l2']
+    mk = MOCK_PACKS.get(conf['id'])
+    tseo = seo.replace('TS Police', 'TS (Telangana) Police') if conf['id'].startswith('ts-police') else seo
+    title = (f'{tseo} Mock Test 2026 – {mk["name"]} Test Series & Previous Papers with Timer | Learn with Anil' if mk else
+             f'{seo} Mock Test – Full Previous Papers with Timer, English & {l2["name"]} | Learn with Anil')
+    desc = ((f'{mk["title"]}: {mk["summary"]} {INCL}. ' if mk else f'{seo} mock tests online: ')
+            + f'take the real {", ".join(paper_kw(conf, p).replace(seo + " ", "") for p in mcq)} question paper{"s" if len(mcq) > 1 else ""} as timed tests, '
+            f'in English and {l2["name"]}, with your score, official answers and an explanation for every question.')
+    pack, rows, info = mock_parts(conf, papers)
     body = (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
             + '<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>'
             + '<h2>How the mock test works</h2><ul>'
