@@ -3152,7 +3152,9 @@ def inapp_mocks(conf, papers):
             + '<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>'
             + '<h2>How the mock test works</h2><ul>'
             f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>'
-            '<li>You can move between questions and change answers until you submit. The timer pauses while you are away from the test.</li>'
+            '<li><b>Start</b> is the exam-style test: answer, mark for review, and see your score with every answer and explanation when you submit. '
+            '<b>Practice mode</b> checks each answer as you go, with its explanation, like the previous papers.</li>'
+            '<li>The green <b>TIMER</b> switch at the top turns the timer off and on again. The timer also pauses while you are away from the test.</li>'
             '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question. Wrong answers go to your Mistakes notebook.</li>'
             f'<li>Everything here opens with the PYQ Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months){"; the same pass opens " + esc(mk["name"]) if mk else ""}.</li></ul>')
 
@@ -3226,7 +3228,7 @@ def mock_parts(conf, papers, app=False):
         for p in mcq)
     info = MOCK_INFO.get(conf['id'], '')
     if mk and 'mocks' in mk:
-        sched = ''.join((f'<tr><td>{esc(m["name"])}</td><td>{"<b>Free</b> · register and start" if m.get("free") else "Available now"}</td><td>{m["qn"]} questions · {m["mins"]} min · <a href="{pb}?mock={m["id"]}">{"Start free" if m.get("free") else "Start"}</a>{mock_pdf_link(conf, m["id"])}</td>'
+        sched = ''.join((f'<tr><td>{esc(m["name"])}</td><td>{"<b>Free</b> · register and start" if m.get("free") else "Available now"}</td><td>{m["qn"]} questions · {m["mins"]} min · <a href="{pb}?mock={m["id"]}">{"Start free" if m.get("free") else "Start"}</a>{f' · <a href="{pb}?mock={m["id"]}&amp;mode=practice">Practice mode</a>' if app else ''}{mock_pdf_link(conf, m["id"])}</td>'
                          f'<td>{part_links(pb, m)}</td></tr>') if m['live'] else
                         f'<tr><td>{esc(m["name"])}</td><td>Coming soon</td><td>{m["qn"]} questions · {m["mins"]} min</td><td>{" · ".join(esc(v) for _, v, _ in m["parts"])}</td></tr>'
                         for m in mk['mocks'])
@@ -3236,7 +3238,7 @@ def mock_parts(conf, papers, app=False):
 )
     elif mk:
         mid = lambda i: f'{mk["id"]}-{i + 1}'
-        sched = ''.join((f'<tr><td>Mock {i + 1}</td><td>{"<b>Free</b> · register and start" if mk.get("free1") and i == 0 else "Available now"}</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">{"Start free" if mk.get("free1") and i == 0 else "Start"}</a>{mock_pdf_link(conf, mid(i))}</td>'
+        sched = ''.join((f'<tr><td>Mock {i + 1}</td><td>{"<b>Free</b> · register and start" if mk.get("free1") and i == 0 else "Available now"}</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">{"Start free" if mk.get("free1") and i == 0 else "Start"}</a>{f' · <a href="{pb}?mock={mid(i)}&amp;mode=practice">Practice mode</a>' if app else ''}{mock_pdf_link(conf, mid(i))}</td>'
                          f'<td><a href="{pb}?mock={mid(i)}&amp;part=ari">Arithmetic</a> · <a href="{pb}?mock={mid(i)}&amp;part=rea">Reasoning</a> · '
                          f'<a href="{pb}?mock={mid(i)}&amp;part=gs">General Studies</a></td></tr>') if i < mk['live'] else
                         f'<tr><td>Mock {i + 1}</td><td>Coming soon</td><td>{mk["qn"]} questions</td><td>Arithmetic · Reasoning · General Studies</td></tr>'

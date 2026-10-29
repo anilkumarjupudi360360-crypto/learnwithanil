@@ -696,7 +696,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ssc-cgl-4d409344ca.js"></script>
+<script src="data/ssc-cgl-1e34fe3289.js"></script>
 <script>
 (function(){
 "use strict";
@@ -1033,9 +1033,9 @@ async function paperPdf(pid, btn){
 
 /* Mission Khaki and other mock packs: the questions are served by the payments script only to a phone with a valid pass (the ₹45 PYQ Pass since 26 Oct 2026) */
 const PART_NAME = {ari:"Arithmetic", rea:"Reasoning & Mental Ability", gs:"General Studies"};
-async function startMock(id, part){
+async function startMock(id, part, mode){   // mode "practice": check each answer as you go (like the previous papers); else the exam-style test
   if(!PAYC || !PAYC.mock) return;
-  if(!ST.name){ UI.pendingMock = {id, part}; go("join"); return; }
+  if(!ST.name){ UI.pendingMock = {id, part, mode}; go("join"); return; }
   if(!PAYC.on || !PAYC.api){ openPay("pyq"); return; }
   toast("Loading the mock…");
   try{
@@ -1059,7 +1059,8 @@ async function startMock(id, part){
       mins = Math.max(1, Math.round(mm.mins * qs.length / r.questions.length));   // a part gets its share of the real time limit
     }
     else if(part==="ari" || part==="rea") qs = qs.filter(q=>q.s===part); else if(part==="gs") qs = qs.filter(q=>q.s!=="ari" && q.s!=="rea");
-    startQuiz(qs.map(q=>q.id), PAYC.mock.name + " · " + mname + (pname? " · " + pname + " sectional" : ""), "test", "mock", mins);
+    const practice = mode==="practice";
+    startQuiz(qs.map(q=>q.id), PAYC.mock.name + " · " + mname + (pname? " · " + pname + " sectional" : "") + (practice ? " · Practice" : ""), practice ? "practice" : "test", "mock", mins);
   }catch(_){ toast("No connection. Please try again."); }
 }
 
@@ -1436,7 +1437,7 @@ function vSectionals(){
 function linkAction(sp){   // a link to this exam with ?buy / ?pdf / ?mock / ?sec / ?practice / ?test: do it here (same as on page load)
   const bk = sp.get("buy"); if(bk==="pyq" || bk==="mock" || bk==="combo"){ openPay(bk); return true; }
   const pd = sp.get("pdf"); if(pd && (DATA.pdfs||{})[pd]){ paperPdf(pd); return true; }
-  const mk = sp.get("mock"); if(mk && /^[a-z0-9-]+$/.test(mk)){ startMock(mk, sp.get("part")||""); return true; }
+  const mk = sp.get("mock"); if(mk && /^[a-z0-9-]+$/.test(mk)){ startMock(mk, sp.get("part")||"", sp.get("mode")||""); return true; }
   const sec = sp.get("sec"); if(sec && SUBJ[sec]){ startQuiz(shuffle(QS.filter(q=>q.s===sec && isMCQ(q)).map(q=>q.id)), SUBJ[sec].name+" · PYQ sectional", "test", "sectional"); return true; }
   const pp = sp.get("practice"); if(pp && PMAP[pp]){ startQuiz(QS.filter(q=>q.p===pp).map(q=>q.id), PMAP[pp].title, "practice", "paper", PMAP[pp].mins); return true; }
   const tp = sp.get("test"); if(tp && PMAP[tp]){ startQuiz(QS.filter(q=>q.p===tp && isMCQ(q)).map(q=>q.id), PMAP[tp].title+" · Mock test", "test", "paper", PMAP[tp].mins); return true; }
@@ -1598,8 +1599,8 @@ function vQuiz(){
   const prog = Math.round(100*(test?answered:Object.keys(QZ.chk).length)/total);
   return `<div class="wrap view">
     <div style="display:flex;flex-direction:column;gap:10px">
-      <div class="qbar"><div><p class="eyebrow">${test?"Timed test":QZ.source==="paper"?"Previous paper · timed":"Practice"}${QZ.source==="smart"?" · Smart quiz":""}</p><h1>${esc(QZ.title)}</h1></div>
-        <div class="row">${QZ.source!=="mock" ? `<button class="tmsw ${QZ.timerOff?"off":"on"}" type="button" role="switch" aria-checked="${!QZ.timerOff}" data-act="timertoggle" title="${QZ.timerOff?"The timer is off: tap to switch it on":"The timer is on: tap to switch it off"}"><span class="tmsw-track" aria-hidden="true"><span class="tmsw-knob"></span></span><span class="tmsw-txt"><b>⏱ TIMER ${QZ.timerOff?"OFF":"ON"}</b><small>${QZ.timerOff?"Tap to switch on":"Tap to switch off"}</small></span></button>` : ""}<span class="timer${QZ.timerOff?" off":""}" id="timer">${QZ.timerOff?"Paused ":""}${QZ.limit? fmtTime(QZ.limit - qzSecs()) : "0:00"}</span><button class="btn btn-ghost btn-sm" type="button" data-act="${test?"asksubmit":"finish"}">Submit</button></div></div>
+      <div class="qbar"><div><p class="eyebrow">${QZ.source==="mock" ? (test ? "Mock test · timed" : "Mock test · practice") : test?"Timed test":QZ.source==="paper"?"Previous paper · timed":"Practice"}${QZ.source==="smart"?" · Smart quiz":""}</p><h1>${esc(QZ.title)}</h1></div>
+        <div class="row"><button class="tmsw ${QZ.timerOff?"off":"on"}" type="button" role="switch" aria-checked="${!QZ.timerOff}" data-act="timertoggle" title="${QZ.timerOff?"The timer is off: tap to switch it on":"The timer is on: tap to switch it off"}"><span class="tmsw-track" aria-hidden="true"><span class="tmsw-knob"></span></span><span class="tmsw-txt"><b>⏱ TIMER ${QZ.timerOff?"OFF":"ON"}</b><small>${QZ.timerOff?"Tap to switch on":"Tap to switch off"}</small></span></button><span class="timer${QZ.timerOff?" off":""}" id="timer">${QZ.timerOff?"Paused ":""}${QZ.limit? fmtTime(QZ.limit - qzSecs()) : "0:00"}</span><button class="btn btn-ghost btn-sm" type="button" data-act="${test?"asksubmit":"finish"}">Submit</button></div></div>
       <div class="progress" aria-hidden="true"><i style="width:${prog}%"></i></div>
     </div>
     <div class="player">
@@ -1631,7 +1632,7 @@ document.addEventListener("visibilitychange", ()=>{
   else if(current==="quiz" && awayResume()){ render(); toast("Welcome back. The timer was paused while you were away."); }
 });
 function toggleTimer(){
-  if(!QZ || QZ.source==="mock") return;
+  if(!QZ) return;   // every test has the switch, the Mission Khaki and other mocks too (Anil, 29 Oct 2026)
   if(QZ.timerOff){ QZ.pausedMs = (QZ.pausedMs||0) + (Date.now() - (QZ.offAt||Date.now())); QZ.timerOff = false; QZ.offAt = 0; toast("Timer on"); }
   else { QZ.timerOff = true; QZ.offAt = Date.now(); toast("Timer off. The clock is paused; switch it on any time."); }
   render();
@@ -2330,7 +2331,7 @@ document.addEventListener("submit", async e=>{
     const first = name.split(" ")[0];
     if(p){ leaveJoin(); toast("Thanks, "+first+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source, p.mins); }
     else if(UI.pendingBuy){ UI.pendingBuy = null; leaveJoin(); openPay("pyq"); payBuy("pyq"); }   // they had already tapped Pay: straight on to Instamojo
-    else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; leaveJoin(); startMock(m.id, m.part); }
+    else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; leaveJoin(); startMock(m.id, m.part, m.mode); }
     else if(book){ leaveJoin(); bookDownload(book); }
     else if(UI.pendingPdf){ const pid = UI.pendingPdf; UI.pendingPdf = null; leaveJoin(); paperPdf(pid); }
     else if(pay && (isNew || wantPay) && !passOK("pyq")){ leaveJoin(); toast("Thanks, "+first+". Your details are saved."); openPay("pyq"); }
@@ -2405,7 +2406,7 @@ function start(data){
     const pd = sp.get("pdf");   // ?pdf=<paper id>: that paper's booklet PDF (PYQ Pass), from the PYQs page
     if(pd && (DATA.pdfs||{})[pd]){ history.replaceState(null, "", location.pathname); syncLang(); if(PAPERS.some(p=>p.id===pd)) go("papers"); else render(); setTimeout(()=>paperPdf(pd), 300); return; }
     const mk = sp.get("mock");  // ?mock=<mock id>[&part=ari|rea|gs]: a Mission Khaki mock or one of its sections
-    if(mk && /^[a-z0-9-]+$/.test(mk)){ history.replaceState(null, "", location.pathname); syncLang(); render(); startMock(mk, sp.get("part")||""); return; }
+    if(mk && /^[a-z0-9-]+$/.test(mk)){ history.replaceState(null, "", location.pathname); syncLang(); render(); startMock(mk, sp.get("part")||"", sp.get("mode")||""); return; }
     const sec = sp.get("sec");  // ?sec=<subject id>: a PYQ sectional test (every previous question from one subject)
     if(sec && SUBJ[sec]){ history.replaceState(null, "", location.pathname); syncLang(); render();
       startQuiz(shuffle(QS.filter(q=>q.s===sec && isMCQ(q)).map(q=>q.id)), SUBJ[sec].name+" · PYQ sectional", "test", "sectional"); return; }
