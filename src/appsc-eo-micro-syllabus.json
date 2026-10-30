@@ -1,0 +1,612 @@
+[
+ {
+  "no": 1,
+  "title": "Ramayanam",
+  "subjects": [
+   "ram"
+  ],
+  "sections": [
+   {
+    "no": "1.1",
+    "title": "Valmiki and the epic",
+    "subs": []
+   },
+   {
+    "no": "1.2",
+    "title": "The seven Kandas",
+    "subs": []
+   },
+   {
+    "no": "1.3",
+    "title": "The Ikshvaku (Surya) dynasty",
+    "subs": [
+     "Dasharatha's family",
+     "The next generation"
+    ]
+   },
+   {
+    "no": "1.4",
+    "title": "Janaka's family: Mithila and the four marriages",
+    "subs": []
+   },
+   {
+    "no": "1.5",
+    "title": "Sages and gurus in the Ramayana",
+    "subs": []
+   },
+   {
+    "no": "1.6",
+    "title": "Vanaras, rakshasas and others",
+    "subs": [
+     "Vanaras and allies",
+     "Rakshasas",
+     "Epithets often asked"
+    ]
+   },
+   {
+    "no": "1.7",
+    "title": "Astras, weapons and who killed whom",
+    "subs": []
+   },
+   {
+    "no": "1.8",
+    "title": "Places in the Ramayana",
+    "subs": []
+   },
+   {
+    "no": "1.9",
+    "title": "Famous sayings, numbers and episodes",
+    "subs": []
+   },
+   {
+    "no": "1.10",
+    "title": "Telugu and other Ramayanas",
+    "subs": []
+   }
+  ]
+ },
+ {
+  "no": 2,
+  "title": "Mahabharatham",
+  "subjects": [
+   "mbh"
+  ],
+  "sections": [
+   {
+    "no": "2.1",
+    "title": "Vyasa and the epic",
+    "subs": []
+   },
+   {
+    "no": "2.2",
+    "title": "The 18 Parvas",
+    "subs": []
+   },
+   {
+    "no": "2.3",
+    "title": "The Kuru (Chandra) dynasty",
+    "subs": [
+     "Shantanu to the Pandavas"
+    ]
+   },
+   {
+    "no": "2.4",
+    "title": "Characters and relationships",
+    "subs": [
+     "The Pandavas and Draupadi",
+     "The Kaurava side",
+     "Others"
+    ]
+   },
+   {
+    "no": "2.5",
+    "title": "The Kurukshetra war",
+    "subs": []
+   },
+   {
+    "no": "2.6",
+    "title": "The Bhagavad Gita",
+    "subs": []
+   },
+   {
+    "no": "2.7",
+    "title": "Astras and weapons",
+    "subs": []
+   },
+   {
+    "no": "2.8",
+    "title": "Places in the Mahabharata",
+    "subs": []
+   },
+   {
+    "no": "2.9",
+    "title": "The Telugu Mahabharatam: Kavitrayam",
+    "subs": []
+   }
+  ]
+ },
+ {
+  "no": 3,
+  "title": "Bhagavatham and the Puranas",
+  "subjects": [
+   "bhg",
+   "pur"
+  ],
+  "sections": [
+   {
+    "no": "3.1",
+    "title": "Bhagavatham: the text and its frame",
+    "subs": [
+     "Parikshit, Kali and the curse"
+    ]
+   },
+   {
+    "no": "3.2",
+    "title": "The twelve Skandhas",
+    "subs": []
+   },
+   {
+    "no": "3.3",
+    "title": "Avataras of Vishnu",
+    "subs": []
+   },
+   {
+    "no": "3.4",
+    "title": "Key stories of the Bhagavatham",
+    "subs": [
+     "Gods, sages and their families"
+    ]
+   },
+   {
+    "no": "3.5",
+    "title": "Pothana's Telugu Bhagavatam",
+    "subs": []
+   },
+   {
+    "no": "3.6",
+    "title": "What is a Purana?",
+    "subs": []
+   },
+   {
+    "no": "3.7",
+    "title": "The 18 Mahapuranas",
+    "subs": []
+   },
+   {
+    "no": "3.8",
+    "title": "Tirthas and kshetras in the Puranas",
+    "subs": [
+     "The seven Khandas of the Skanda Purana",
+     "Which Purana describes which tirtha",
+     "Kshetras of Andhra Pradesh"
+    ]
+   },
+   {
+    "no": "3.9",
+    "title": "Shakti Peethas and Jyotirlingas",
+    "subs": []
+   }
+  ]
+ },
+ {
+  "no": 4,
+  "title": "Temple Agamas and Worship",
+  "subjects": [
+   "aga"
+  ],
+  "sections": [
+   {
+    "no": "4.1",
+    "title": "What the Agamas are",
+    "subs": []
+   },
+   {
+    "no": "4.2",
+    "title": "Vaishnava Agamas",
+    "subs": [
+     "Vaikhanasam (Vaikhanasa Agama)",
+     "Pancharathram (Pancharatra Agama)",
+     "Chattada Srivaishnavam"
+    ]
+   },
+   {
+    "no": "4.3",
+    "title": "Saiva traditions (Saivam)",
+    "subs": [
+     "Smardham (Smarta tradition)",
+     "Adi Saiva and Saiva Siddhanta",
+     "Veera Saiva (Lingayat)",
+     "Jangama",
+     "Pashupata, Kalamukha, Kapalika and Kashmir Shaivism"
+    ]
+   },
+   {
+    "no": "4.4",
+    "title": "Sakteyam (Shakta tradition)",
+    "subs": [
+     "Shakti Peethas",
+     "Srividya, Mahavidyas and village goddesses"
+    ]
+   },
+   {
+    "no": "4.5",
+    "title": "Temple rituals",
+    "subs": [
+     "Daily worship",
+     "Utsavams (festivals)",
+     "Consecration and renovation"
+    ]
+   },
+   {
+    "no": "4.6",
+    "title": "Parts of a temple and architectural styles",
+    "subs": []
+   },
+   {
+    "no": "4.7",
+    "title": "Archakas and temple servants",
+    "subs": []
+   }
+  ]
+ },
+ {
+  "no": 5,
+  "title": "Hindu Festivals and Classical Arts",
+  "subjects": [
+   "fes"
+  ],
+  "sections": [
+   {
+    "no": "5.1",
+    "title": "The Telugu calendar",
+    "subs": []
+   },
+   {
+    "no": "5.2",
+    "title": "Festivals through the Telugu year",
+    "subs": [
+     "Notes on the major festivals"
+    ]
+   },
+   {
+    "no": "5.3",
+    "title": "Festivals across India",
+    "subs": [
+     "Kumbh Mela and Pushkaralu"
+    ]
+   },
+   {
+    "no": "5.4",
+    "title": "Classical dance",
+    "subs": []
+   },
+   {
+    "no": "5.5",
+    "title": "Music",
+    "subs": [
+     "Carnatic composers"
+    ]
+   },
+   {
+    "no": "5.6",
+    "title": "Temple and traditional arts of AP",
+    "subs": []
+   }
+  ]
+ },
+ {
+  "no": 6,
+  "title": "Vedic Culture",
+  "subjects": [
+   "ved"
+  ],
+  "sections": [
+   {
+    "no": "6.1",
+    "title": "The Veda: names, division and layers",
+    "subs": []
+   },
+   {
+    "no": "6.2",
+    "title": "The four Vedas",
+    "subs": [
+     "Rigveda",
+     "Yajurveda",
+     "Samaveda",
+     "Atharvaveda"
+    ]
+   },
+   {
+    "no": "6.3",
+    "title": "Upavedas, Vedangas and the Vidyas",
+    "subs": [
+     "Upavedas (4)",
+     "Vedangas (6)",
+     "Fourteen and eighteen Vidyas"
+    ]
+   },
+   {
+    "no": "6.4",
+    "title": "The Upanishads",
+    "subs": [
+     "Famous stories and dialogues"
+    ]
+   },
+   {
+    "no": "6.5",
+    "title": "Yajnas and Yagas",
+    "subs": [
+     "Panchamahayajnas (five daily duties of the householder)"
+    ]
+   },
+   {
+    "no": "6.6",
+    "title": "Dharma in the stages of life",
+    "subs": [
+     "Purusharthas and the three debts",
+     "The four Ashramas",
+     "Shodasha Samskaras (16 sacraments)"
+    ]
+   }
+  ]
+ },
+ {
+  "no": 7,
+  "title": "Philosophies, Cults and Gurus",
+  "subjects": [
+   "phi"
+  ],
+  "sections": [
+   {
+    "no": "7.1",
+    "title": "The six Darshanas and the schools of Vedanta",
+    "subs": []
+   },
+   {
+    "no": "7.2",
+    "title": "Adi Shankaracharya and Advaita",
+    "subs": []
+   },
+   {
+    "no": "7.3",
+    "title": "Ramanujacharya and Visishtadvaita",
+    "subs": []
+   },
+   {
+    "no": "7.4",
+    "title": "Madhvacharya and Dvaita",
+    "subs": []
+   },
+   {
+    "no": "7.5",
+    "title": "Nimbarka, Vallabha and Chaitanya",
+    "subs": []
+   },
+   {
+    "no": "7.6",
+    "title": "The twelve Alwars",
+    "subs": []
+   },
+   {
+    "no": "7.7",
+    "title": "The 63 Nayanars",
+    "subs": []
+   },
+   {
+    "no": "7.8",
+    "title": "Basava and Veerasaivism",
+    "subs": []
+   },
+   {
+    "no": "7.9",
+    "title": "Bhakti saints and teachers of Andhra Pradesh",
+    "subs": []
+   }
+  ]
+ },
+ {
+  "no": 8,
+  "title": "Hindu Family: Structure, Adoption and Succession",
+  "subjects": [
+   "fam"
+  ],
+  "sections": [
+   {
+    "no": "8.1",
+    "title": "The Hindu joint family",
+    "subs": [
+     "Mitakshara and Dayabhaga",
+     "Coparcenary and Karta",
+     "Matrilineal systems",
+     "Stridhan"
+    ]
+   },
+   {
+    "no": "8.2",
+    "title": "Who is a \"Hindu\" for the codified Acts",
+    "subs": []
+   },
+   {
+    "no": "8.3",
+    "title": "Hindu marriage and the Hindu Marriage Act, 1955",
+    "subs": [
+     "The eight traditional forms of marriage",
+     "Key sections of the Hindu Marriage Act, 1955"
+    ]
+   },
+   {
+    "no": "8.4",
+    "title": "Adoption under the Hindu Adoptions and Maintenance Act, 1956",
+    "subs": [
+     "Sections 5–17 at a glance"
+    ]
+   },
+   {
+    "no": "8.5",
+    "title": "Adoption under the Juvenile Justice Act, 2015 and CARA",
+    "subs": [
+     "CARA"
+    ]
+   },
+   {
+    "no": "8.6",
+    "title": "The Hindu Succession Act, 1956",
+    "subs": [
+     "Definitions and general sections",
+     "Section 6: coparcenary property (as substituted in 2005)",
+     "Succession to a male Hindu (Sections 8–13)",
+     "Succession to a female Hindu (Sections 14–16)",
+     "Other rules and disqualifications"
+    ]
+   },
+   {
+    "no": "8.7",
+    "title": "The Hindu Minority and Guardianship Act, 1956",
+    "subs": []
+   }
+  ]
+ },
+ {
+  "no": 9,
+  "title": "The A.P. Endowments Act, 1987: Administration, Income and the Executive Officer",
+  "subjects": [
+   "inc",
+   "eod"
+  ],
+  "sections": [
+   {
+    "no": "9.1",
+    "title": "The Act at a glance",
+    "subs": [
+     "Important amendments"
+    ]
+   },
+   {
+    "no": "9.2",
+    "title": "Key definitions (Section 2)",
+    "subs": []
+   },
+   {
+    "no": "9.3",
+    "title": "Classification of institutions (Section 6)",
+    "subs": []
+   },
+   {
+    "no": "9.4",
+    "title": "The authorities under the Act",
+    "subs": [
+     "The Department",
+     "Board of Trustees (Sections 14–28)",
+     "Dharmika Parishad (Section 152)",
+     "Endowments Tribunal (Section 162)"
+    ]
+   },
+   {
+    "no": "9.5",
+    "title": "The Executive Officer: Section 29",
+    "subs": [
+     "Section 29(1): who gets an EO and who appoints",
+     "Section 29(2): grades and appointments",
+     "Section 29(3): Hindu religion and the duties of the EO",
+     "Other sections that give the EO power",
+     "The EO of Tirumala Tirupathi Devasthanams"
+    ]
+   },
+   {
+    "no": "9.6",
+    "title": "Sources of income of temples and charitable institutions",
+    "subs": []
+   },
+   {
+    "no": "9.7",
+    "title": "Budget, accounts and audit (Chapter VII: Sections 57–64)",
+    "subs": [
+     "Section 57: Budget of the institution",
+     "Section 58 onward: accounts and audit"
+    ]
+   },
+   {
+    "no": "9.8",
+    "title": "Contributions and funds (Chapters VIII–IX and Section 161)",
+    "subs": [
+     "Section 65: contribution and audit fees",
+     "The funds",
+     "Section 70: Common Good Fund (CGF)",
+     "Section 72: surplus funds (Chapter IX)"
+    ]
+   },
+   {
+    "no": "9.9",
+    "title": "Other sections worth knowing",
+    "subs": []
+   }
+  ]
+ },
+ {
+  "no": 10,
+  "title": "Land Records and Endowment Lands",
+  "subjects": [
+   "lan"
+  ],
+  "sections": [
+   {
+    "no": "10.1",
+    "title": "The basic land records",
+    "subs": [
+     "Webland and Meebhoomi",
+     "Resurvey and recent reforms in AP"
+    ]
+   },
+   {
+    "no": "10.2",
+    "title": "The A.P. Rights in Land and Pattadar Pass Books Act, 1971",
+    "subs": [
+     "Key definitions (Section 2)",
+     "Section by section"
+    ]
+   },
+   {
+    "no": "10.3",
+    "title": "Inam lands and the Inams Abolition Act, 1956",
+    "subs": []
+   },
+   {
+    "no": "10.4",
+    "title": "Chapter X of Act 30 of 1987: Sections 75–86 at a glance",
+    "subs": []
+   },
+   {
+    "no": "10.5",
+    "title": "Inam lands of institutions: Sections 75–78",
+    "subs": []
+   },
+   {
+    "no": "10.6",
+    "title": "Buying and selling temple property: Sections 79–81",
+    "subs": [
+     "Section 79: purchase",
+     "Section 80: alienation of immovable property",
+     "Section 81: invalidation of unauthorised sale"
+    ]
+   },
+   {
+    "no": "10.7",
+    "title": "Leases of agricultural lands: Section 82",
+    "subs": []
+   },
+   {
+    "no": "10.8",
+    "title": "Encroachments: Section 83 and the 2023 amendment",
+    "subs": [
+     "The scheme from 2007 to 2023",
+     "The present scheme: Act 36 of 2023"
+    ]
+   },
+   {
+    "no": "10.9",
+    "title": "Disputes, appeals and compromise: Sections 87–89",
+    "subs": []
+   }
+  ]
+ }
+]

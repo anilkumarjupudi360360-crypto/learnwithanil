@@ -2662,6 +2662,11 @@ NOTIFS = {
 }
 
 
+MSY_STYLE = ('<style>.msy h3{font-size:16.5px;margin:16px 0 6px}.msy ol{margin:0 0 6px;padding-left:0;list-style:none;columns:2 300px;column-gap:28px}'
+             '.msy li{margin:0 0 4px;break-inside:avoid}.msy .no{font:12.5px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);margin-right:4px}'
+             '.msy .hy{color:#B7791F;font-weight:700}.msy .nw,.msy .sub{font-size:13px;color:var(--muted)}.msy .sm{color:var(--muted);font-size:14.5px;margin:-4px 0 6px}</style>')
+
+
 # APPSC Group 2 syllabus page (Anil, 30 Oct 2026: "add micro listing of group-2 syllabus"): the topic-wise outline of his
 # Group-II Micro-Syllabus book (src/appsc-group-2-micro-syllabus.json: 9 subjects, units, 267 sub-topic names; star = asked
 # 4+ times in the 2019-2025 Group-II papers, new = not asked yet). Which papers asked each sub-topic, the notes and the
@@ -2673,9 +2678,7 @@ def g2_syllabus_notif():
     ntop = sum(len(u['topics']) for s in subs for u in s['units'])
     nstar = sum(t['star'] for s in subs for u in s['units'] for t in u['topics'])
     sample = '/LearnWithAnil-APPSC-Group-2-Micro-Syllabus-Free-Sample.pdf'
-    style = ('<style>.msy h3{font-size:16.5px;margin:16px 0 6px}.msy ol{margin:0 0 6px;padding-left:0;list-style:none;columns:2 300px;column-gap:28px}'
-             '.msy li{margin:0 0 4px;break-inside:avoid}.msy .no{font:12.5px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);margin-right:4px}'
-             '.msy .hy{color:#B7791F;font-weight:700}.msy .nw{font-size:12.5px;color:var(--muted)}.msy .sm{color:var(--muted);font-size:14.5px;margin:-4px 0 6px}</style>')
+    style = MSY_STYLE
     book = (f'<div class="note"><b>Get the full Micro-Syllabus (47-page PDF).</b> For every sub-topic below it shows which Group-II papers (2019–2025) asked it '
             f'and how many times, with short exam notes, 1,004 previous questions mapped and 112 current-affairs points of 2025–26 attached to their subjects. '
             f'<a href="{sample}">Download the free sample (PDF)</a>: cover, exam pattern, contents and the whole Indian History unit. '
@@ -2718,13 +2721,84 @@ def g2_syllabus_notif():
 
 
 
+# APPSC EO Grade-III syllabus page (Anil, 30 Oct 2026: "also add Endowment officer too", after the Group 2 micro syllabus page):
+# Paper II in the chapters and sections of his Hindu Philosophy & Temple System book (src/appsc-eo-micro-syllabus.json: 10
+# chapters, 81 sections and their sub-headings), Paper I by the site's subject topics; every part shows how many questions
+# APPSC asked from it, counted from the EO papers on the site at build time (2022 Screening, 2023 Mains, 2026).
+def eo_syllabus_notif():
+    path = os.path.join(SRC, 'appsc-eo-micro-syllabus.json')
+    if not os.path.exists(path): return None
+    chs = json.load(open(path, encoding='utf-8'))
+    nsec = sum(len(c['sections']) for c in chs)
+    sample = '/LearnWithAnil-EO-Grade-3-Hindu-Philosophy-Temple-System-Free-Sample.pdf'
+
+    def sections(conf, papers, questions):
+        subj = {x[0]: x for x in conf['subjects']}
+        cnt, tcnt = {}, {}
+        for q in questions:
+            cnt[q['s']] = cnt.get(q['s'], 0) + 1
+            tcnt[(q['s'], q.get('t'))] = tcnt.get((q['s'], q.get('t')), 0) + 1
+        surl = lambda sid: f'{conf["pb"]}subjects/{conf["slugp"]}-{subj[sid][2]}-pyqs.html'
+        p2 = {sid for c in chs for sid in c['subjects']}
+        n2 = sum(cnt.get(sid, 0) for sid in p2)
+        n1 = sum(v for k, v in cnt.items() if k not in p2)
+        book = (f'<div class="note"><b>Study material for Paper II.</b> Each chapter below is a chapter of Learn with Anil\'s <b>Hindu Philosophy &amp; Temple System</b> notes '
+                f'(167 pages), written from the questions APPSC has actually asked, with APPSC\'s 2023 and 2026 Paper II questions and official answers at the end. '
+                f'<a href="{sample}">Download the free sample chapter (PDF)</a>; the full book is included in the ₹{PAY["pyq_price"]} PYQ Pass: '
+                f'<a href="{conf["pb"]}notes/">EO study material</a>.</div>')
+        secs = [('Exam pattern', 'table+', (['Paper', 'Subject', 'Questions · marks · time'], [
+                    ('Paper I (objective, degree standard)', 'General Studies & Mental Ability', '150 · 150 · 150 min'),
+                    ('Paper II (objective, degree standard)', 'Hindu Philosophy & Temple System', '150 · 150 · 150 min'),
+                    ('Computer Proficiency Test', 'Office automation with computers; qualifying', '—')])),
+                ('', 'note', 'One-third of a mark is deducted for each wrong answer. Selection is on the 300 marks of the written examination, after the qualifying '
+                             'Computer Proficiency Test. The counts below are the questions APPSC asked from each part in the 2022 Screening Test, the 2023 Mains and the 2026 exam.'),
+                ('', 'html', MSY_STYLE + book)]
+        h = [f'<div class="msy"><h2>Paper II: Hindu Philosophy &amp; Temple System</h2>'
+             f'<p class="sm">150 marks · {len(chs)} chapters · {nsec} sub-topics · {n2} previous questions on this site</p>']
+        for c in chs:
+            k = sum(cnt.get(sid, 0) for sid in c['subjects'])
+            tops = ' · '.join(f'{esc(t)} {tcnt[(sid, t)]}' for sid in c['subjects'] for t in subj[sid][3] if tcnt.get((sid, t)))
+            links = ', '.join(f'<a href="{surl(sid)}">{esc(subj[sid][1])} questions</a>' for sid in c['subjects'] if cnt.get(sid))
+            items = ''.join(f'<li><span class="no">{esc(x["no"])}</span>{esc(x["title"])}'
+                            + (f' <span class="sub">({esc("; ".join(x["subs"]))})</span>' if x['subs'] else '') + '</li>' for x in c['sections'])
+            h.append(f'<h3>{c["no"]:02d}. {esc(c["title"])}</h3><p class="sm">{k} PYQs{": " + tops if tops else ""}'
+                     f'{" · Practise: " + links if links else ""}</p><ol>{items}</ol>')
+        secs.append(('', 'html', ''.join(h) + '</div>'))
+        h = [f'<div class="msy"><h2>Paper I: General Studies &amp; Mental Ability</h2>'
+             f'<p class="sm">150 marks · {n1} previous questions on this site, by topic</p>']
+        for sid, name, slug, topics in conf['subjects']:
+            if sid in p2 or not cnt.get(sid): continue
+            items = ''.join(f'<li>{esc(t)} <span class="sub">({tcnt[(sid, t)]} PYQs)</span></li>' for t in topics if tcnt.get((sid, t)))
+            h.append(f'<h3>{esc(name)}</h3><p class="sm">{cnt[sid]} PYQs · <a href="{surl(sid)}">Practise {esc(name)} questions</a></p><ol>{items}</ol>')
+        secs.append(('', 'html', ''.join(h) + '</div>'))
+        secs.append(('How to use this syllabus', 'list', [
+            'Paper II is the paper special to this post and half of the 300 marks: read it chapter by chapter, starting with the chapters APPSC asks most from.',
+            'APPSC\'s Paper II questions are short and factual (which Kanda, Parva, Purana, Agama or section of the Act), so revise from tables and one-line facts.',
+            'For Paper I, practise the previous questions topic by topic, then take full timed tests of the 2026 and 2023 papers.']))
+        return secs
+
+    return dict(
+        exam='appsc-eo', crumb='EO Grade-III Syllabus 2026',
+        title='APPSC EO Grade 3 Syllabus 2026 – Topic-wise Micro Syllabus, Paper I & Paper II (Hindu Philosophy & Temple System) | Learn with Anil',
+        desc=(f'APPSC Endowment Officer (EO Grade-III) syllabus 2026, topic by topic: Paper II Hindu Philosophy & Temple System in {len(chs)} chapters and {nsec} sub-topics, '
+              'Paper I General Studies & Mental Ability by topic, with how many previous questions APPSC asked from each part (2022–2026). Free sample notes PDF.'),
+        h1='APPSC EO Grade 3 syllabus 2026: topic-wise micro syllabus',
+        lede=(f'The APPSC Executive Officer Grade-III syllabus (Notification 23/2026), broken into topics: Paper II, Hindu Philosophy & Temple System, in {len(chs)} chapters '
+              f'and {nsec} sub-topics, and Paper I, General Studies & Mental Ability, by topic. Each part shows how many questions APPSC asked from it in the 2022 Screening Test, '
+              'the 2023 Mains and the 2026 exam, so you know where to start. Built by Jupudi Anil Kumar.'),
+        te=(f'ఏపీపీఎస్సీ ఎండోమెంట్ ఆఫీసర్ (EO గ్రేడ్-III) సిలబస్ 2026 — పేపర్-2 హిందూ తత్వశాస్త్రం & దేవాలయ వ్యవస్థ {len(chs)} అధ్యాయాలు, {nsec} ఉప-అంశాలుగా; '
+            'పేపర్-1 జనరల్ స్టడీస్ అంశాల వారీగా, ప్రతి అంశం నుంచి అడిగిన పాత ప్రశ్నల సంఖ్యతో.'),
+        pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/EO_Grade_III_DetailedNotification_232026.pdf',
+        pdfname='APPSC Notification No. 23/2026 (syllabus in Annexure-II); topic breakdown: Learn with Anil',
+        sections=[], sections_fn=sections)
+
 def notif_page(loaded, rel):
     N = NOTIFS[rel]
     conf, papers, questions = next(x for x in loaded if x[0]['id'] == N['exam'])
     can = f'{SITE_URL}/{rel}'
     body = [f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>',
             f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>']
-    for head, kind, data in N['sections']:
+    for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
         if kind == 'table': body.append(facts_table(data))
         elif kind == 'table+': body.append(facts_table(data[1], data[0]))
@@ -2800,6 +2874,8 @@ PAY = dict(
 PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
 _g2s = g2_syllabus_notif()   # the APPSC Group 2 syllabus page (needs PAY, so it is added here)
 if _g2s: NOTIFS['appsc-group-2-syllabus-2026.html'] = _g2s
+_eos = eo_syllabus_notif()   # the APPSC EO Grade-III syllabus page
+if _eos: NOTIFS['appsc-eo-grade-3-syllabus-2026.html'] = _eos
 # Anil, 26 Oct 2026: "one ₹45 = everything". The ₹45 PYQ Pass opens every previous paper, every mock test series
 # (Mission Khaki SI & Constable, Mission CGL, Bahubali, and the series still to come) and the study books. Mock packs,
 # the combo, the Bahubali series and the books are no longer sold on their own (nobody had bought one).
