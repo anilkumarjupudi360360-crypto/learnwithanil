@@ -1,0 +1,1994 @@
+[
+ {
+  "no": 1,
+  "name": "Indian History",
+  "stage": "Screening Test",
+  "marks": 30,
+  "units": [
+   {
+    "no": 1,
+    "title": "Ancient India",
+    "topics": [
+     {
+      "no": "1.1",
+      "title": "Indus Valley Civilisation",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.2",
+      "title": "Vedic Age",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.3",
+      "title": "Buddhism and Jainism",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.4",
+      "title": "Mauryan Empire",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.5",
+      "title": "Gupta Empire",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.6",
+      "title": "Harshavardhana",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "title": "Medieval India",
+    "topics": [
+     {
+      "no": "2.1",
+      "title": "Chola administrative system",
+      "star": false,
+      "new": true
+     },
+     {
+      "no": "2.2",
+      "title": "Delhi Sultanate",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.3",
+      "title": "Mughal Empire",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.4",
+      "title": "Bhakti and Sufi movements",
+      "star": false,
+      "new": true
+     },
+     {
+      "no": "2.5",
+      "title": "Shivaji and the Marathas",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.6",
+      "title": "Advent of the Europeans",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "title": "Modern India",
+    "topics": [
+     {
+      "no": "3.1",
+      "title": "Rise and consolidation of British power",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.2",
+      "title": "Administrative and economic changes",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.3",
+      "title": "Education and social policy",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.4",
+      "title": "The 1857 revolt",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.5",
+      "title": "Social and religious reform",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.6",
+      "title": "Indian National Movement",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.7",
+      "title": "Post-independence consolidation",
+      "star": true,
+      "new": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 2,
+  "name": "Geography: World, India and Andhra Pradesh",
+  "stage": "Screening Test",
+  "marks": 30,
+  "units": [
+   {
+    "no": 1,
+    "title": "The Earth, atmosphere and oceans",
+    "topics": [
+     {
+      "no": "1.1",
+      "title": "Earth in the solar system",
+      "star": false,
+      "new": true
+     },
+     {
+      "no": "1.2",
+      "title": "Interior of the Earth and rocks",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.3",
+      "title": "Landforms",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.4",
+      "title": "Atmosphere and climate",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.5",
+      "title": "Oceans",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.6",
+      "title": "World regions",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "title": "India: physiography, climate, drainage, soils and vegetation",
+    "topics": [
+     {
+      "no": "2.1",
+      "title": "Location and size",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.2",
+      "title": "Himalayas and the northern mountains",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.3",
+      "title": "Plains, plateau, coasts and islands",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.4",
+      "title": "Drainage",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.5",
+      "title": "Climate",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.6",
+      "title": "Soils and natural vegetation",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "title": "Andhra Pradesh: physical geography",
+    "topics": [
+     {
+      "no": "3.1",
+      "title": "Location, regions and relief",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.2",
+      "title": "Rivers and water",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.3",
+      "title": "Soils",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.4",
+      "title": "Climate, forests and protected areas",
+      "star": false,
+      "new": true
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "title": "Natural hazards and disaster management",
+    "topics": [
+     {
+      "no": "4.1",
+      "title": "Earthquakes, tsunamis and volcanoes",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "4.2",
+      "title": "Cyclones, floods and droughts",
+      "star": false,
+      "new": true
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "title": "Economic geography of India and Andhra",
+    "topics": [
+     {
+      "no": "5.1",
+      "title": "Natural resources and minerals",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.2",
+      "title": "Agriculture and plantations",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.3",
+      "title": "Industries",
+      "star": false,
+      "new": true
+     },
+     {
+      "no": "5.4",
+      "title": "Transport, communication, tourism and trade",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "title": "Human geography of India and Andhra Pradesh",
+    "topics": [
+     {
+      "no": "6.1",
+      "title": "Human development and demographics",
+      "star": false,
+      "new": true
+     },
+     {
+      "no": "6.2",
+      "title": "Urbanisation and migration",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "6.3",
+      "title": "Racial, tribal, religious and linguistic groups",
+      "star": false,
+      "new": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 3,
+  "name": "Indian Society",
+  "stage": "Screening Test",
+  "marks": 30,
+  "units": [
+   {
+    "no": 1,
+    "title": "Structure of Indian society",
+    "topics": [
+     {
+      "no": "1.1",
+      "title": "Family, marriage and kinship",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.2",
+      "title": "Caste and stratification",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.3",
+      "title": "Tribes",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.4",
+      "title": "Religion and ethnicity",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.5",
+      "title": "Women in Indian society",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "title": "Social issues",
+    "topics": [
+     {
+      "no": "2.1",
+      "title": "Casteism, communalism and regionalism",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.2",
+      "title": "Crime against women",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.3",
+      "title": "Personal laws and gender justice",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.4",
+      "title": "Child abuse, child labour and child marriage",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.5",
+      "title": "Youth unrest, agitation and new crimes",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "title": "Welfare mechanisms",
+    "topics": [
+     {
+      "no": "3.1",
+      "title": "Programmes for women and children",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.2",
+      "title": "Education and child development",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.3",
+      "title": "Food security and consumer protection",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.4",
+      "title": "Provisions for SCs and STs",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.5",
+      "title": "Provisions for minorities and BCs",
+      "star": false,
+      "new": true
+     },
+     {
+      "no": "3.6",
+      "title": "Provisions for women, the disabled and children",
+      "star": false,
+      "new": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 4,
+  "name": "Current Affairs",
+  "stage": "Screening Test",
+  "marks": 30,
+  "units": [
+   {
+    "no": 1,
+    "title": "International",
+    "topics": [
+     {
+      "no": "1.1",
+      "title": "Summits, groupings and alliances",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.2",
+      "title": "International organisations, days and reports",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.3",
+      "title": "World politics and leaders",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.4",
+      "title": "Places, environment and phenomena in news",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "title": "National",
+    "topics": [
+     {
+      "no": "2.1",
+      "title": "Government initiatives and rankings",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.2",
+      "title": "Defence and security",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.3",
+      "title": "States, laws and courts in news",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.4",
+      "title": "Infrastructure, energy and firsts",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "title": "Andhra Pradesh",
+    "topics": [
+     {
+      "no": "3.1",
+      "title": "AP schemes, e-governance and policies",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.2",
+      "title": "Investment, industry and infrastructure in AP",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "title": "Awards, persons and appointments",
+    "topics": [
+     {
+      "no": "4.1",
+      "title": "National awards",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "4.2",
+      "title": "International awards",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "4.3",
+      "title": "Persons and appointments",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "title": "Sports",
+    "topics": [
+     {
+      "no": "5.1",
+      "title": "Cricket",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.2",
+      "title": "Multi-sport events and championships",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.3",
+      "title": "Sports awards",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.4",
+      "title": "Football, chess and world sport",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "title": "Books, days, organisations and media (GK)",
+    "topics": [
+     {
+      "no": "6.1",
+      "title": "Important days",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "6.2",
+      "title": "Organisations and official publications",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "6.3",
+      "title": "Media and communication concepts",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "6.4",
+      "title": "Broadcasting, cinema and media bodies",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "6.5",
+      "title": "Miscellaneous GK",
+      "star": false,
+      "new": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 5,
+  "name": "Mental Ability",
+  "stage": "Screening Test",
+  "marks": 30,
+  "units": [
+   {
+    "no": 1,
+    "title": "Logical reasoning",
+    "topics": [
+     {
+      "no": "1.1",
+      "title": "Statement and assumptions / conclusions",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.2",
+      "title": "Statement and argument; courses of action",
+      "star": false,
+      "new": true
+     },
+     {
+      "no": "1.3",
+      "title": "Analytical puzzles",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.4",
+      "title": "Directions and distance",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "title": "Mental ability",
+    "topics": [
+     {
+      "no": "2.1",
+      "title": "Number and letter series; odd one out; analogy",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.2",
+      "title": "Coding–decoding",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.3",
+      "title": "Blood relations",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.4",
+      "title": "Shapes, figures and symbol puzzles",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "title": "Basic numeracy",
+    "topics": [
+     {
+      "no": "3.1",
+      "title": "Number system and order of magnitude",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.2",
+      "title": "Averages",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.3",
+      "title": "Ratio and proportion; ages",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.4",
+      "title": "Percentage",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.5",
+      "title": "Simple and compound interest",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.6",
+      "title": "Time and work; time and distance",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "title": "Data analysis",
+    "topics": [
+     {
+      "no": "4.1",
+      "title": "Tables, bar, line and pie charts",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "4.2",
+      "title": "Basic statistics",
+      "star": true,
+      "new": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 6,
+  "name": "Social and Cultural History of Andhra Pradesh",
+  "stage": "Mains Paper I",
+  "marks": 75,
+  "units": [
+   {
+    "no": 1,
+    "title": "Prehistoric cultures and early dynasties",
+    "topics": [
+     {
+      "no": "1.1",
+      "title": "Prehistoric and megalithic Andhra",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.2",
+      "title": "Early Andhra, Buddhism and Jainism",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.3",
+      "title": "Satavahanas: polity and economy",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.4",
+      "title": "Satavahanas: society and culture",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.5",
+      "title": "Ikshvakus of Vijayapuri",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.6",
+      "title": "Pallavas, Salankayanas and Vishnukundins",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.7",
+      "title": "Eastern Chalukyas of Vengi",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.8",
+      "title": "Chalukya–Cholas and Nannaya",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "title": "Medieval Andhra, 11th–16th centuries",
+    "topics": [
+     {
+      "no": "2.1",
+      "title": "Kakatiyas: rulers and polity",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.2",
+      "title": "Kakatiya society, economy and religion",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.3",
+      "title": "Kakatiya art and architecture",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.4",
+      "title": "Nellore Chodas, Velamas and Musunuri Nayakas",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.5",
+      "title": "Reddi kingdoms",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.6",
+      "title": "Vijayanagara rule in Andhra",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.7",
+      "title": "Vijayanagara art and entertainment",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.8",
+      "title": "Telugu literature, 11th–16th centuries",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.9",
+      "title": "Qutb Shahis of Golconda",
+      "star": false,
+      "new": true
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "title": "Europeans, the Company and British rule",
+    "topics": [
+     {
+      "no": "3.1",
+      "title": "Coming of the Europeans",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.2",
+      "title": "Company’s expansion in Andhra",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.3",
+      "title": "Company administration and economy",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.4",
+      "title": "The 1857 revolt and Andhra",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "title": "Socio-cultural awakening and the national movement",
+    "topics": [
+     {
+      "no": "4.1",
+      "title": "Social reform",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "4.2",
+      "title": "Press in Andhra",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "4.3",
+      "title": "Modern Telugu literature",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "4.4",
+      "title": "Justice Party and non-Brahmin movement",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "4.5",
+      "title": "Vandemataram and Home Rule in Andhra",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "4.6",
+      "title": "Non-Cooperation in Andhra",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "4.7",
+      "title": "Simon boycott, Salt Satyagraha and Quit India",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "4.8",
+      "title": "Rampa, peasant and left movements",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "title": "Andhra Movement and Andhra State (1953)",
+    "topics": [
+     {
+      "no": "5.1",
+      "title": "Origin and Andhra Mahasabhas",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.2",
+      "title": "Library movement",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.3",
+      "title": "Road to Andhra State",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "5.4",
+      "title": "Andhra State, 1953",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.5",
+      "title": "Folk, tribal and performing arts",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "title": "Formation of Andhra Pradesh and 1956–2014",
+    "topics": [
+     {
+      "no": "6.1",
+      "title": "Visalandhra and the Telangana question",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "6.2",
+      "title": "Gentlemen’s Agreement and formation of AP",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "6.3",
+      "title": "Agitations, 1969–73",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "6.4",
+      "title": "Political and cultural milestones, 1956–2014",
+      "star": true,
+      "new": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 7,
+  "name": "Indian Constitution",
+  "stage": "Mains Paper I",
+  "marks": 75,
+  "units": [
+   {
+    "no": 1,
+    "title": "Constitutional development and salient features",
+    "topics": [
+     {
+      "no": "1.1",
+      "title": "Historical background",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.2",
+      "title": "Making of the Constitution",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.3",
+      "title": "Salient features and sources",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.4",
+      "title": "Preamble",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.5",
+      "title": "Parts and Schedules at a glance",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "title": "Fundamental Rights, Directive Principles and Fundamental Duties",
+    "topics": [
+     {
+      "no": "2.1",
+      "title": "Fundamental Rights: general",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.2",
+      "title": "Right to equality (Art. 14–18)",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.3",
+      "title": "Freedoms and personal liberty (Art. 19–22)",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.4",
+      "title": "Against exploitation; religion and minorities",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.5",
+      "title": "Constitutional remedies and writs",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.6",
+      "title": "Right to property",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.7",
+      "title": "Directive Principles of State Policy",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.8",
+      "title": "Fundamental Duties",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "title": "Amendment of the Constitution and basic structure",
+    "topics": [
+     {
+      "no": "3.1",
+      "title": "Amendment procedure (Art. 368)",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.2",
+      "title": "Basic structure doctrine",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.3",
+      "title": "Landmark amendments",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "title": "Union Executive",
+    "topics": [
+     {
+      "no": "4.1",
+      "title": "President: election and tenure",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "4.2",
+      "title": "President: powers",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "4.3",
+      "title": "Vice-President",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "4.4",
+      "title": "Prime Minister and Council of Ministers",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "4.5",
+      "title": "Attorney General",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "title": "Parliament and State Legislature",
+    "topics": [
+     {
+      "no": "5.1",
+      "title": "Composition of Parliament",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.2",
+      "title": "Parliamentary proceedings and accountability",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.3",
+      "title": "Parliamentary committees and delegated legislation",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.4",
+      "title": "State Legislature",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "5.5",
+      "title": "State Executive",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "title": "Judiciary",
+    "topics": [
+     {
+      "no": "6.1",
+      "title": "Supreme Court",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "6.2",
+      "title": "High Courts",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "6.3",
+      "title": "Judicial review, activism and PIL",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "title": "Centre–State relations and federalism",
+    "topics": [
+     {
+      "no": "7.1",
+      "title": "Federal and unitary features",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "7.2",
+      "title": "Legislative relations",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "7.3",
+      "title": "Administrative relations",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "7.4",
+      "title": "Financial relations",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "7.5",
+      "title": "Commissions on Centre–State relations",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "7.6",
+      "title": "Emergency provisions",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "7.7",
+      "title": "Special areas and Union Territories",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "title": "Constitutional and statutory bodies",
+    "topics": [
+     {
+      "no": "8.1",
+      "title": "Finance Commission and UPSC",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "8.2",
+      "title": "Constitutional, statutory and executive bodies",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "8.3",
+      "title": "National Human Rights Commission",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "8.4",
+      "title": "Right to Information",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "8.5",
+      "title": "Lokpal and Lokayukta",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "8.6",
+      "title": "Other statutory authorities",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 9,
+    "title": "Political parties, elections and electoral reforms",
+    "topics": [
+     {
+      "no": "9.1",
+      "title": "Election Commission and elections",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "9.2",
+      "title": "Electoral reforms",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "9.3",
+      "title": "Party system and recognition",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 10,
+    "title": "Decentralisation and local governance",
+    "topics": [
+     {
+      "no": "10.1",
+      "title": "Evolution and committees",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "10.2",
+      "title": "73rd Amendment: Panchayats",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "10.3",
+      "title": "74th Amendment: Municipalities",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "10.4",
+      "title": "Local bodies in Andhra Pradesh",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 11,
+    "title": "Andhra Pradesh Reorganisation Act, 2014",
+    "topics": [
+     {
+      "no": "11.1",
+      "title": "Key sections",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "11.2",
+      "title": "Water, territory and institutions",
+      "star": true,
+      "new": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 8,
+  "name": "Indian and Andhra Pradesh Economy",
+  "stage": "Mains Paper II",
+  "marks": 75,
+  "units": [
+   {
+    "no": 1,
+    "title": "Indian economy, planning and policy",
+    "topics": [
+     {
+      "no": "1.1",
+      "title": "Structure of the Indian economy",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.2",
+      "title": "National income: concepts and measurement",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.3",
+      "title": "Basic macroeconomic concepts",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.4",
+      "title": "Growth trends and data",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.5",
+      "title": "Planning in India",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.6",
+      "title": "NITI Aayog and cooperative federalism",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.7",
+      "title": "Economic reforms since 1991",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "1.8",
+      "title": "Development goals and indices",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "title": "Money, banking and public finance",
+    "topics": [
+     {
+      "no": "2.1",
+      "title": "Money supply, RBI and monetary policy",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.2",
+      "title": "Inflation",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.3",
+      "title": "Banking sector and reforms",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.4",
+      "title": "Financial inclusion and markets",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.5",
+      "title": "Fiscal policy, budget and deficits",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.6",
+      "title": "Taxation, GST and Finance Commissions",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.7",
+      "title": "Balance of payments and exchange rate",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.8",
+      "title": "Foreign trade and investment",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "title": "Agriculture, industry and services",
+    "topics": [
+     {
+      "no": "3.1",
+      "title": "Agricultural production and cropping pattern",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.2",
+      "title": "Agricultural policy, irrigation and risk",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.3",
+      "title": "Agricultural credit, marketing, MSP and procurement",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.4",
+      "title": "Industrial policy and development",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.5",
+      "title": "Disinvestment, ease of doing business and industrial health",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.6",
+      "title": "Entrepreneurship and MSMEs",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.7",
+      "title": "Infrastructure, energy and services",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "title": "Andhra Pradesh economy and public finance",
+    "topics": [
+     {
+      "no": "4.1",
+      "title": "Structure and growth of the AP economy",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "4.2",
+      "title": "Bifurcation and central assistance",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "4.3",
+      "title": "State finances and budget",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "4.4",
+      "title": "Development strategy and indicators",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "title": "Agriculture and allied sectors in Andhra Pradesh",
+    "topics": [
+     {
+      "no": "5.1",
+      "title": "Land use, irrigation and cropping",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "5.2",
+      "title": "Farmer support, credit and marketing",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "5.3",
+      "title": "Horticulture and GI products",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.4",
+      "title": "Animal husbandry",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.5",
+      "title": "Fisheries and aquaculture",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "5.6",
+      "title": "Forestry and tribal economy",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "title": "Industries and services in Andhra",
+    "topics": [
+     {
+      "no": "6.1",
+      "title": "Industrial policies",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "6.2",
+      "title": "Electronics, IT and communications",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "6.3",
+      "title": "Corridors, SEZs and industrial clusters",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "6.4",
+      "title": "Minerals, services and urban economy",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "title": "Poverty, employment, rural development and welfare",
+    "topics": [
+     {
+      "no": "7.1",
+      "title": "Poverty and inequality",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "7.2",
+      "title": "Employment and labour",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "7.3",
+      "title": "Population and human development",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "7.4",
+      "title": "Rural development: approaches and institutions",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "7.5",
+      "title": "Rural development schemes",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "7.6",
+      "title": "Poverty alleviation and SHGs in AP",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "7.7",
+      "title": "Welfare schemes of AP",
+      "star": true,
+      "new": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "no": 9,
+  "name": "Science and Technology",
+  "stage": "Mains Paper II",
+  "marks": 75,
+  "units": [
+   {
+    "no": 1,
+    "title": "Science and technology policies, missions and emerging technologies",
+    "topics": [
+     {
+      "no": "1.1",
+      "title": "S&T and innovation policies",
+      "star": false,
+      "new": true
+     },
+     {
+      "no": "1.2",
+      "title": "National technology missions",
+      "star": false,
+      "new": true
+     },
+     {
+      "no": "1.3",
+      "title": "Emerging technologies",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.4",
+      "title": "Biotechnology",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "1.5",
+      "title": "General science basics",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "title": "Space, defence, ICT and nuclear technology",
+    "topics": [
+     {
+      "no": "2.1",
+      "title": "Launch vehicles and space centres",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.2",
+      "title": "Satellites and space missions",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.3",
+      "title": "Defence technology",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.4",
+      "title": "ICT, Digital India and e-governance",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "2.5",
+      "title": "Cyber security",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "2.6",
+      "title": "Nuclear technology",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "title": "Energy management",
+    "topics": [
+     {
+      "no": "3.1",
+      "title": "Energy demand and policy",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.2",
+      "title": "Solar and wind energy",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "3.3",
+      "title": "Biofuels, hydrogen and emission norms",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "3.4",
+      "title": "Non-renewable and nuclear power",
+      "star": false,
+      "new": true
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "title": "Ecosystem and biodiversity",
+    "topics": [
+     {
+      "no": "4.1",
+      "title": "Ecosystem structure and function",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "4.2",
+      "title": "Cycles and population ecology",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "4.3",
+      "title": "Forests and biomes",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "4.4",
+      "title": "Biodiversity and conservation",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "4.5",
+      "title": "Environmental laws and institutions",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "title": "Waste management and pollution control",
+    "topics": [
+     {
+      "no": "5.1",
+      "title": "Solid waste: types and disposal",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "5.2",
+      "title": "Waste rules and hazardous waste",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "5.3",
+      "title": "Pollution: types, sources, effects",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "5.4",
+      "title": "Bioremediation",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "5.5",
+      "title": "Eco-friendly agriculture and transgenics",
+      "star": true,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "title": "Environment and climate change",
+    "topics": [
+     {
+      "no": "6.1",
+      "title": "Global warming",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "6.2",
+      "title": "Ozone depletion, acid rain, ocean acidification",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "6.3",
+      "title": "International conventions",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "6.4",
+      "title": "India’s climate action",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "6.5",
+      "title": "Sustainable development",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "6.6",
+      "title": "Disasters",
+      "star": false,
+      "new": false
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "title": "Health and public health",
+    "topics": [
+     {
+      "no": "7.1",
+      "title": "Disease burden",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "7.2",
+      "title": "Nutrition",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "7.3",
+      "title": "Health indicators",
+      "star": false,
+      "new": false
+     },
+     {
+      "no": "7.4",
+      "title": "Health programmes",
+      "star": true,
+      "new": false
+     },
+     {
+      "no": "7.5",
+      "title": "Epidemics and pandemics",
+      "star": false,
+      "new": true
+     }
+    ]
+   }
+  ]
+ }
+]
