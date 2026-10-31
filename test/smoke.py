@@ -1,4 +1,4 @@
-import asyncio, sys, os, threading, functools, json
+import asyncio, sys, os, threading, functools, json, re
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -253,10 +253,11 @@ async def main():
                     if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')
             await pg.goto(URL + sub + '/'); await pg.wait_for_timeout(400)
             nt = await pg.locator('#home-static .etiles .etile:not(.etile-sm)').count()
-            if nt != 3: errors.append(f'{sub}: {nt} main tiles on the exam home, expected 3')
+            if nt != (6 if sub == 'appsc-group-1' else 3): errors.append(f'{sub}: {nt} main tiles on the exam home, expected {6 if sub == "appsc-group-1" else 3} (Group-1: Prelims 3 + Mains 3)')
             if await pg.locator('#qotd-home').count(): errors.append(f'{sub}: question of the day should only be on the start page')
             for h in await pg.eval_on_selector_all('#home-static .etiles a', 'els => els.map(e => e.getAttribute("href"))'):
-                f = os.path.join(SITE, h.lstrip('/'))
+                if h.startswith('#'): continue
+                f = os.path.join(SITE, h.split('#')[0].lstrip('/'))
                 if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{sub}: tile links to missing {h}')
         # every previous paper runs with a countdown timer (1 minute per question), also question by question
         for path in ('appsc-group-2/?practice=s2024', 'appsc-group-1/?practice=p2023a'):
@@ -540,5 +541,15 @@ async def main():
                     leak = [q['id'] for q in d['questions'] if q['id'] in ex['h'] and q.get('w')]
                     if leak: errors.append(f'{f}: {len(leak)} paid explanations in the public app data (e.g. {leak[0]})')
                     if (d.get('exb') or {}).get('file') != ex['file']: errors.append(f'{f}: app data does not point to the sealed explanations')
+        # APPSC Group-1 Mains PYQs (tools/g1mains.py): 9 year-paper pages with 30 questions each, part pages, links resolve
+        md_ = os.path.join(SITE, 'appsc-group-1', 'mains-pyqs')
+        if os.path.isdir(md_):
+            yp = [f for f in os.listdir(md_) if re.fullmatch(r'20\d\d-paper-\d\.html', f)]
+            nq = sum(open(os.path.join(md_, f), encoding='utf-8').read().count('<li class="q"') for f in yp)
+            if len(yp) != 9 or nq != 270: errors.append(f'mains-pyqs: {len(yp)} year pages, {nq} questions (expected 9 and 270)')
+            for f in os.listdir(md_):
+                for h in re.findall(r'href="([^"#?]+\.html)"', open(os.path.join(md_, f), encoding='utf-8').read()):
+                    if '/' not in h and not os.path.isfile(os.path.join(md_, h)): errors.append(f'mains-pyqs/{f}: broken link {h}')
+            print(f'mains pyqs: {len(yp)} year pages, {nq} questions, {len(os.listdir(md_)) - len(yp) - 1} part pages')
         print('ERRORS:', errors if errors else 'none')
 asyncio.run(main())

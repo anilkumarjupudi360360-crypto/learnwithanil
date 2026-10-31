@@ -1159,6 +1159,12 @@ def main():
             open(os.path.join(outdir, rel), 'w', encoding='utf-8').write(content)
             if is_root: open(os.path.join(DIST, 'artifact', rel), 'w', encoding='utf-8').write(content)
         for rel in pages: all_pages[prefix + rel] = None
+        if conf['id'] in MAINS_EXAMS:   # APPSC Group-1 Mains previous questions with model answers (tools/g1mains.py)
+            import g1mains
+            for rel, content in g1mains.pages(sys.modules[__name__], conf).items():
+                fp = os.path.join(outdir, rel); os.makedirs(os.path.dirname(fp), exist_ok=True)
+                open(fp, 'w', encoding='utf-8').write(content)
+                all_pages[prefix + (rel[:-len('index.html')] if rel.endswith('index.html') else rel)] = None
         # one page per question
         qpages = question_pages(conf, papers, questions, subj)
         qdir = os.path.join(DIST, 'site', pb.strip('/'), 'q'); os.makedirs(qdir, exist_ok=True)
@@ -1400,7 +1406,7 @@ def hub_html(catalog, counts, grand):
             href = live_href(e) if live else '#exam/' + e['id']
             status = f'Live · {counts.get(e["id"], 0):,} questions' if live else 'Upcoming'
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
-            if live and e['id'] in MAINS_EXAMS and MAINS_KIT: sub += '<span class="ex-x">+ Mains Answer Writing Tool Kit</span>'
+            if live and e['id'] in MAINS_EXAMS and MAINS_KIT: sub += '<span class="ex-x">Prelims + Mains PYQs with model answers</span>'
             tiles.append(f'<a class="card exam{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-s="{esc(exam_terms(e, c))}">'
                          f'<span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></a>')
         te = f' <span class="te-sub" lang="te">{esc(c["te"])}</span>' if c.get('te') else ''
@@ -1955,6 +1961,9 @@ def llms_txt(loaded, grand):
                  f'English and {c["l2"]["name"]}. PYQs: {SITE_URL}{c["pb"]}pyqs.html · Sectional tests: {SITE_URL}{c["pb"]}sectional-tests.html')
         for p in sorted(papers, key=lambda p: (-p['year'], p['id'])):
             L.append(f'  - [{paper_kw(c, p)} question paper with answers]({SITE_URL}/{base}papers/{p["slug"]}.html) — held {p["held"]}, {p["count"]} questions')
+        if c['id'] in MAINS_EXAMS and os.path.exists(os.path.join(SRC, c['src'], 'mains-pyqs', 'questions.json')):   # descriptive Mains PYQs (tools/g1mains.py)
+            L.append(f'  - [APPSC Group 1 Mains previous year questions with model answers, year-wise and subject-wise]({SITE_URL}{c["pb"]}mains-pyqs/) — '
+                     f'Papers II, III and IV of the 2020, 2023 and 2025 Mains, 270 questions; questions free, model answers with the PYQ Pass')
     npath_ = os.path.join(SRC, 'notes.json')
     books = json.load(open(npath_, encoding='utf-8')) if os.path.exists(npath_) else []
     ids = {c['id']: c for c in exams}
@@ -3050,6 +3059,15 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
           f'Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 With the PYQ Pass</span></a>')
     links = ''.join(f'<a class="etile etile-sm" href="{h}"><b>{esc(x)}</b><span class="etile-go">→</span></a>' for x, h in extra_links)
     note = ''
+    if conf['id'] in MAINS_EXAMS:   # Anil, 31 Oct 2026: APPSC Group-1 page has Prelims tiles and Mains tiles (Mains PYQs year-wise and subject-wise)
+        import g1mains
+        mq, _ = g1mains.load(SRC)
+        if mq:
+            hd = lambda h, s: f'<div class="section-title" style="margin:{"0" if h == "Prelims" else "26px"} 0 12px"><h2>{h}</h2><span class="muted" style="font-size:14px">{s}</span></div>'
+            return (f'<section class="wrap section">' + hd('Prelims', 'Screening test: previous papers, mock tests, sectional tests')
+                    + f'<div class="etiles">{t1}{t2}{t3}</div>' + hd('Mains', 'Descriptive papers: previous questions with model answers')
+                    + f'<div class="etiles">{g1mains.tiles(conf, len(mq))}</div>' + exam_clock_html(conf)
+                    + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
     return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + exam_clock_html(conf)
             + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + mains_section(conf, mains) + '</section>')
 
