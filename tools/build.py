@@ -3573,7 +3573,7 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
             hd = lambda h, s: f'<div class="section-title" style="margin:{"0" if h == "Prelims" else "26px"} 0 12px"><h2>{h}</h2><span class="muted" style="font-size:14px">{s}</span></div>'
             return (f'<section class="wrap section">' + hd('Prelims', 'Screening test: previous papers, mock tests, sectional tests')
                     + f'<div class="etiles">{t1}{t2}{t3}</div>' + hd('Mains', 'Descriptive papers: previous questions with model answers')
-                    + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + exam_clock_html(conf)
+                    + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + g1mains.tiles_credit() + exam_clock_html(conf)
                     + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
     return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + exam_clock_html(conf)
             + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + mains_section(conf, mains) + '</section>')
