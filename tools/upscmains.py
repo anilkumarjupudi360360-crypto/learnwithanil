@@ -263,24 +263,30 @@ def pages(B):
     def course_card(code, kick, h2, lead, d):
         C = COURSES[code]
         ph = ''.join(f'<a href="{d["dir"]}/{y}-{C["pp"]}{C["papers"][p][0]}.html" aria-label="{esc(C["papers"][p][1])}, {y}"{D.pv(p)}>'
-                     f'{D.img(D.LOOK[p][0], small=True, alt="")}<span class="tag">{esc(tag_of(C, p).replace("GS Paper", "GS"))}</span></a>' for p, y in d['latest'].items())
+                     f'{D.img(D.LOOK[p][0], small=True, alt="")}<span class="tag">{esc(tag_of(C, p).replace("GS Paper", "GS"))}</span>{D.go(f"Open {y} paper")}</a>'
+                     for p, y in d['latest'].items())
         return (f'<section class="ccard"><div class="ph">{ph}</div><div class="cb"><p class="kick">{kick}</p><h2>{h2}</h2><p class="lead">{lead}</p>'
                 f'<div class="row"><a class="cta" href="{d["dir"]}/#year">Year-wise</a><a class="cta alt" href="{d["dir"]}/#subject">Subject-wise</a></div></div></section>')
     def prelims_card():
         pl = getattr(B, 'PRE_LIVE', None)
         if not pl: return '<section class="ccard plain"><div class="cb"><p class="kick">Prelims</p><h2>Prelims PYQs</h2><p class="lead">Upcoming.</p></div></section>'
-        n, ys, np_ = pl
+        n, ys, np_, latest = pl
         y_ = f'{ys[0]}–{ys[-1]}' if len(ys) > 1 else str(ys[0])
-        return (f'<section class="ccard plain"><div class="cb"><p class="kick">Prelims · objective</p><h2>Prelims PYQs with answers</h2>'
+        # Anil, 2 Nov 2026: "where is photo here ?" - a photo per paper, like the Mains cards: Sanchi for GS Paper I, Jantar Mantar for CSAT
+        ph = ''.join(f'<a href="/upsc-prelims/papers/{slug}.html" aria-label="{"General Studies Paper I" if k == "gs" else "CSAT (Paper II)"}, {y}"{D.pv(pk)}>'
+                     f'{D.img(D.LOOK[pk][0], small=True, alt="")}<span class="tag">{"GS Paper I" if k == "gs" else "CSAT"}</span>{D.go(f"Open {y} paper")}</a>'
+                     for k, pk in (('gs', 'PGS'), ('csat', 'PCSAT')) if k in latest for y, slug in [latest[k]])
+        return (f'<section class="ccard"><div class="ph">{ph}</div><div class="cb"><p class="kick">Prelims · objective</p><h2>Prelims PYQs with answers</h2>'
                 f'<p class="lead">General Studies Paper I and CSAT, {y_}: {n} questions in {np_} papers from UPSC\'s official papers with UPSC\'s answer keys and explanations, in English and Hindi. '
-                f'Practise them as quizzes, timed tests or subject-wise.</p>'
+                f'Practise them as quizzes, timed tests or subject-wise. Tap a photo for the latest paper.</p>'
                 f'<div class="row"><a class="cta" href="/upsc-prelims/pyqs.html">Papers</a><a class="cta alt" href="/upsc-prelims/">Practice app</a></div></div></section>')
     gsc = course_card('gs', 'Mains · General Studies', 'Mains GS PYQs with model answers',
                       f'General Studies Papers I–IV, {yr(gs["years"])}: {gs["n"]} questions from UPSC\'s official papers, each with a model answer on its own page. '
                       f'Tap a photo for the latest paper.', gs)
     anc = (course_card('an', 'Mains · Optional', 'Anthropology optional PYQs with model answers',
                        f'Anthropology Papers I and II, {yr(an["years"])}: {an["n"]} question parts, each with a model answer on its own page.', an) if an else '')
-    keys = [D.LOOK[p][0] for p in PAPERS] + ([D.LOOK[p][0] for p in AN_PAPERS] if an else [])
+    keys = ([D.LOOK[p][0] for p in PAPERS] + ([D.LOOK[p][0] for p in AN_PAPERS] if an else [])
+            + ([D.LOOK['PGS'][0], D.LOOK['PCSAT'][0]] if getattr(B, 'PRE_LIVE', None) else []))
     hub = (CSS + gsc + f'<div class="cpair">{anc}{prelims_card()}</div>'
            + (gs['buy'].replace('Every GS question', 'Every GS and Anthropology optional question') if an else gs['buy']) + flip_js() + D.credits(keys))
     page = B.static_page(0, 'UPSC Civil Services (CSE) PYQs – Mains GS 1–4' + (' & Anthropology' if an else '') + ' Model Answers, Prelims GS & CSAT | Learn with Anil',

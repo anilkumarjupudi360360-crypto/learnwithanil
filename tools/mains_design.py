@@ -41,12 +41,17 @@ PHOTOS = {
                     C + 'A.P_Legislative_Assembly.jpg', 'center'),
     'paddy': (1200, 800, 'Paddy fields near Eluru, Andhra Pradesh, at sunrise', 'Paddy fields near Eluru', 'iMahesh', 'CC BY-SA 4.0',
               C + 'Paddy_Fields_near_Eluru.jpg', 'center 45%'),
+    'sanchi': (1200, 800, 'The Great Stupa at Sanchi, Madhya Pradesh', 'Great Stupa, Sanchi', 'Suyash Dwivedi', 'CC BY-SA 4.0',
+               C + 'Great_Sanchi_Stupa_(3).jpg', 'center 40%'),
+    'jantar': (1200, 801, 'The Vrihat Samrat Yantra sundial at Jantar Mantar, Jaipur', 'Jantar Mantar, Jaipur', 'Mustang Joe', 'CC0',
+               C + 'Vrihat_Samrat_Yantra,_Jantar_Mantar,_Jaipur_(54358376655).jpg', 'center 60%'),
     'lvm3': (1200, 799, 'LVM3 lifting off with Chandrayaan-3 from Sriharikota, Andhra Pradesh', 'LVM3 launch, Sriharikota', 'ISRO', 'GODL-India',
              C + 'LVM3_M4,_Chandrayaan-3_-_Launch_vehicle_lifting_off_from_the_Second_Launch_Pad_(SLP)_of_SDSC-SHAR,_Sriharikota_01.webp', 'center 55%'),
 }
 # paper -> (photo, colour)
 LOOK = {'GS1': ('konark', '#8A5A2B'), 'GS2': ('parliament', '#A23B2A'), 'GS3': ('vikrant', '#1D4E89'), 'GS4': ('charkha', '#75611C'),
         'AN1': ('bhimbetka', '#9A4E22'), 'AN2': ('warli', '#7E2F35'),
+        'PGS': ('sanchi', '#0E6B5C'), 'PCSAT': ('jantar', '#B4530F'),   # UPSC Prelims GS Paper I and CSAT (the UPSC hub card)
         'I': ('prakasam', '#0D6772'), 'II': ('lepakshi', '#80653A'), 'III': ('ap-assembly', '#6F3B1F'), 'IV': ('paddy', '#3A7428'), 'V': ('lvm3', '#2A5AA0')}
 
 SANS = '"Source Sans 3",system-ui,sans-serif'
@@ -133,6 +138,22 @@ CSS = ('a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;borde
        '.ccard h2{margin:0 0 10px}.ccard .lead{color:var(--muted);margin:0}.ccard .row{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 0}.ccard .row .cta{margin:0}'
        '.cpair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:24px 0}.cpair .ccard{margin:0}@media (max-width:700px){.cpair{grid-template-columns:1fr}.ccard .ph{height:140px;gap:6px;padding:8px 8px 0}.ccard .ph a{border-radius:9px}.ccard .cb{padding:18px 18px 20px}}'
        '.ccard.plain{border:2px solid var(--accent)}'
+       # photo links look clickable (Anil, 2 Nov 2026: "if the cursor is on them...then it should show click on it....it just looks like a image"):
+       # an arrow badge on every photo link; on hover (or keyboard focus) it opens out to "Open 2026 paper", the photo zooms a little
+       # and a ring in the paper's colour goes round it
+       '.ccard .ph a,.pcard .pimg{cursor:pointer;isolation:isolate;transition:box-shadow .2s ease,transform .2s ease}'
+       '.ccard .ph img,.pcard .pimg img,.etile-ph img{transition:transform .4s ease}'
+       '.ccard .ph a::after,.pcard .pimg::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(to top,rgba(0,0,0,.38),rgba(0,0,0,0) 55%);opacity:.7;transition:opacity .2s ease,box-shadow .2s ease;pointer-events:none}'
+       '.ccard .ph .tag,.pcard .pimg .tag{z-index:1}'
+       '.go{position:absolute;right:8px;top:8px;z-index:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;height:30px;min-width:30px;padding:0 8px;border-radius:999px;'
+       'background:rgba(255,255,255,.94);color:#0B1B3F;font-weight:700;font-size:13.5px;line-height:1;box-shadow:0 2px 8px rgba(0,0,0,.28);transition:padding .2s ease,background .2s ease}'
+       '.go .gt{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .25s ease}.go svg{width:14px;height:14px;flex:none}'
+       'a:hover>.go,a:focus-visible>.go{padding:0 12px;background:#fff}a:hover>.go .gt,a:focus-visible>.go .gt{max-width:170px}'
+       '.ccard .ph a:hover,.ccard .ph a:focus-visible{box-shadow:0 0 0 3px var(--pc),0 10px 22px rgba(0,0,0,.2);transform:translateY(-2px)}'
+       '.ccard .ph a:hover::after,.pcard .pimg:hover::after{opacity:1}.pcard .pimg:hover::after{box-shadow:inset 0 0 0 3px var(--pc)}'
+       '.ccard .ph a:hover img,.pcard .pimg:hover img,.etile:hover .etile-ph img{transform:scale(1.06)}'
+       '@media (max-width:700px){.go{right:6px;top:6px;height:26px;min-width:26px;padding:0 6px}.go .gt{display:none}a:hover>.go{padding:0 6px}}'
+       '@media (prefers-reduced-motion:reduce){.ccard .ph a,.ccard .ph img,.pcard .pimg img,.etile-ph img,.go,.go .gt{transition:none}.ccard .ph a:hover,.ccard .ph a:hover img,.pcard .pimg:hover img,.etile:hover .etile-ph img{transform:none}}'
        # the price box on these pages
        '.buy.mbuy{background:var(--band);border-color:var(--band);color:#fff;border-radius:16px;padding:22px 24px;margin:28px 0 16px}'
        '.buy.mbuy .muted{color:rgba(255,255,255,.78)}.buy.mbuy .cta{background:#fff;color:var(--band)}'
@@ -153,6 +174,15 @@ def img(key, small=False, eager=False, sizes='(max-width: 880px) 100vw, 860px', 
     load = ' fetchpriority="high"' if eager else ' loading="lazy"'
     return (f'<img src="{src}"{srcset} width="{ws}" height="{hs}" alt="{esc(a if alt is None else alt)}"{load} decoding="async"'
             + (f' style="object-position:{pos}"' if pos != 'center' else '') + '>')
+
+
+GO_SVG = ('<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9.5M8.5 3.8 12.7 8l-4.2 4.2" fill="none" stroke="currentColor" '
+          'stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+
+
+def go(label):
+    """The arrow badge on a photo link; on hover it opens out to the label (e.g. "Open 2026 paper")."""
+    return f'<span class="go" aria-hidden="true"><span class="gt">{esc(label)}</span>{GO_SVG}</span>'
 
 
 def credit(key, prefix='Photo: '):
@@ -191,7 +221,8 @@ def chips(items, cls='ychips'):
 def paper_card(paper, tag, title, href, meta, years, sub=None):
     """Index card for one paper: photo, tag, title, one line, a chip per year. years: [(year, href)], newest first."""
     key = LOOK[paper][0]
-    return (f'<article class="pcard"{pv(paper)}><a class="pimg" href="{href}" tabindex="-1" aria-hidden="true">{img(key, small=True)}<span class="tag">{esc(tag)}</span></a>'
+    return (f'<article class="pcard"{pv(paper)}><a class="pimg" href="{href}" tabindex="-1" aria-hidden="true">{img(key, small=True)}<span class="tag">{esc(tag)}</span>'
+            f'{go(f"Open {years[0][0]} paper" if years else "Open")}</a>'
             f'<div class="pb"><h3><a href="{href}">{esc(title)}</a></h3><p class="pm">{esc(meta)}</p>'
             + chips([(str(y), h, i == 0) for i, (y, h) in enumerate(years)])
             + (f'<a class="sub" href="{sub[1]}">{esc(sub[0])}</a>' if sub else '') + '</div></article>')

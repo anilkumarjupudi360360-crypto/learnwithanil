@@ -28,8 +28,8 @@
   ],
   "pyqs": 30,
   "price": 45,
-  "syllabus": "Group-I Mains · Paper III · Section B",
-  "badge": "Group-I Mains",
+  "syllabus": "Group-I Mains · Paper III · Section B · Group-II Mains",
+  "badge": "Group-I & II",
   "subject_label": "Public Administration and Governance",
   "chapters_label": "12 chapters · 24 cartoon meme breaks · all 30 Section B questions (2020–2025) with answer pointers",
   "product_en": "Public Administration and Governance for APPSC Group-I Mains (Paper III, Section B), 2026-27 (English Medium)",
@@ -40,7 +40,8 @@
   ],
   "buy": "",
   "exams": [
-   "appsc-group-1"
+   "appsc-group-1",
+   "appsc-group-2"
   ]
  },
  {
@@ -75,8 +76,8 @@
   ],
   "pyqs": 30,
   "price": 45,
-  "syllabus": "Group-I Mains · Paper III · Section C",
-  "badge": "Group-I Mains",
+  "syllabus": "Group-I Mains · Paper III · Section C · Group-II Mains",
+  "badge": "Group-I & II",
   "subject_label": "Ethics and Laws",
   "chapters_label": "15 chapters (9 ethics + 6 law) · 30 cartoon meme breaks · all 30 Section C questions (2020–2025) with answer pointers",
   "product_en": "Ethics in Public Service and Basic Knowledge of Laws for APPSC Group-I Mains (Paper III, Section C), 2026-27 (English Medium)",
@@ -87,7 +88,8 @@
   ],
   "buy": "",
   "exams": [
-   "appsc-group-1"
+   "appsc-group-1",
+   "appsc-group-2"
   ]
  },
  {

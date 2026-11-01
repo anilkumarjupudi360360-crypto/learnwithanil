@@ -83,6 +83,8 @@ img{max-width:100%}
 .lang button[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body)}
 .lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .lang button.na{opacity:.45}
+.lang button.lang-soon{font-size:12px;font-weight:700;padding:5px 8px;color:var(--muted);border-left:1px solid var(--line);border-radius:0 999px 999px 0;margin-left:2px}
+.hero-float .soonl{display:block;font-size:11px;font-weight:600;color:#64748b;margin-top:2px}
 @media (max-width:420px){.lang button{padding:5px 8px;font-size:13px}}
 [lang="te"]{font-family:"Noto Sans Telugu",var(--f-body);line-height:1.8}
 [lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body);line-height:1.75}
@@ -124,6 +126,17 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .chip .n{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-weight:500}
 .chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-text)}
 .chip[aria-pressed="true"] .n{color:var(--accent-text)}
+/* My Revision: one tab per study tool, each with a line saying what it is (Anil, 2 Nov 2026: the six menu items "are creating some confusion") */
+.revtabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:20px 0 4px}
+.revtabs a{display:flex;flex-direction:column;gap:3px;min-width:0;padding:10px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);text-decoration:none}
+.revtabs a:hover{border-color:var(--accent)}
+.revtabs a[aria-current="page"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 -3px 0 var(--accent)}
+.revtabs b{display:flex;align-items:center;gap:6px;font-size:15.5px}
+.revtabs .n{font-family:var(--f-mono);font-size:12px;font-weight:600;color:var(--muted);background:var(--surface-2);border-radius:999px;padding:1px 7px}
+.revtabs a[aria-current="page"] .n{color:var(--accent-text);background:var(--surface)}
+.revtabs small{color:var(--muted);font-size:13.5px;line-height:1.35}
+.revtabs .rl{grid-column:1/-1;margin:0 0 -2px;font-family:var(--f-mono);font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:640px){.revtabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.revtabs a{padding:9px 11px}}
 .chip[disabled]{opacity:.45;cursor:not-allowed}
 .seg{display:inline-flex;background:var(--surface-2);border-radius:11px;padding:4px;gap:4px;flex-wrap:wrap}
 .seg button{border:0;background:transparent;border-radius:8px;padding:8px 14px;font-weight:700;font-size:14px;color:var(--muted);cursor:pointer}
@@ -472,7 +485,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;z-index:50;box-shadow:var(--shadow);max-width:calc(100% - 32px)}
 
 /* Study material (Crisp Notes) */
-.nav a.nav-fund{color:#9A3412;background:#FFF1E6;margin-left:4px}.nav a.nav-fund:hover{background:#FFE2CC;color:#7C2D12}.nav a.nav-fund svg{flex:none}@media (min-width:1361px){.nav a.nav-fund .nf-x{display:none}}   /* one-row top bar: "Fund" fits, the long label does not */
+.nav a.nav-fund{color:#9A3412;background:#FFF1E6;margin-left:4px}.nav a.nav-fund:hover{background:#FFE2CC;color:#7C2D12}.nav a.nav-fund svg{flex:none}@media (min-width:1361px){.nav a.nav-fund .nf-x{display:none}.topbar .nav a{padding:8px 7.5px}}   /* one-row top bar: "Fund" fits, the long label does not */
 @media (prefers-color-scheme:dark){.nav a.nav-fund{color:#FDBA8C;background:#3A2414}.nav a.nav-fund:hover{background:#4A2E19;color:#FFD3B0}}
 .nav a .new{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.06em;background:#F2B705;color:#0C2266;border-radius:4px;padding:0 5px;line-height:16px}
 .notes-promo{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:22px 24px;text-decoration:none;color:var(--ink);transition:border-color .15s}
@@ -714,18 +727,16 @@ details.upc .exams{margin-top:8px}
       <a href="/ts-police-si/" data-v="home" data-g2>TS Police SI</a>
       <a href="/ts-police-si/papers/" data-v="papers" data-g2>Previous Papers</a>
       
-      <a href="/ts-police-si/practice/" data-v="practice" data-g2>Create Quiz</a>
+      <a href="/ts-police-si/practice/" data-v="practice" data-g2>Practice</a>
       <a href="/ts-police-si/bank/" data-v="bank" data-g2>Question Bank</a>
-      <a href="/ts-police-si/mistakes/" data-v="mistakes" data-g2>Mistakes <span class="count" id="mcount" hidden></span></a>
-      <a href="/ts-police-si/smart/" data-v="smart" data-g2>Smart Quiz</a>
-      <a href="/ts-police-si/bookmarks/" data-v="bookmarks" data-g2>Bookmarks</a>
-      <a href="/ts-police-si/heatmap/" data-v="heatmap" data-g2>Heatmap</a>
+      <a href="/ts-police-si/mistakes/" data-v="mistakes" data-rev data-g2>My Revision</a>
       <a href="/ts-police-si/about/" data-v="about">About</a>
     </nav>
     <div class="lang" role="group" aria-label="Question language">
       <button type="button" data-act="lang" data-l="en" aria-pressed="true">EN</button>
       <button type="button" data-act="lang" data-l="hi" lang="hi" aria-pressed="false">हिंदी</button>
       <button type="button" data-act="lang" data-l="te" lang="te" aria-pressed="false">తెలుగు</button>
+      <button type="button" class="lang-soon" data-act="langsoon" title="Coming soon: தமிழ், ಕನ್ನಡ, മലയാളം, मराठी" aria-label="More languages coming soon: தமிழ், ಕನ್ನಡ, മലയാളം, मराठी">+4</button>
     </div>
   </div>
 </header>
@@ -805,7 +816,7 @@ const LATTR = ' lang="'+L2.code+'"';
 const langAttr = q => teOn(q) ? LATTR : "";
 function syncLang(){
   const av = availLangs(), eff = av.includes(P.lang) ? P.lang : "en";
-  document.querySelectorAll('.lang button').forEach(b=>{ const na = !av.includes(b.dataset.l);
+  document.querySelectorAll('.lang button[data-l]').forEach(b=>{ const na = !av.includes(b.dataset.l);
     b.setAttribute("aria-pressed", String(b.dataset.l===eff)); b.classList.toggle("na", na);
     if(na) b.title = `${LANGS[b.dataset.l]} is not available for ${DATA.exam} yet`; else b.removeAttribute("title"); });
 }
@@ -814,7 +825,9 @@ function syncLang(){
 function readLS(k, d){ try{ const v = localStorage.getItem(k); if(v){ const o = JSON.parse(v); if(o && typeof o==="object") return Object.assign(d, o); } }catch(e){} return d; }
 function writeLS(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 const blank = ()=>({qs:{}, mistakes:{}, bm:{}, history:[]});
+const REV = ["mistakes","smart","bookmarks","heatmap"];   // the four pages under "My Revision" in the top menu
 let S = readLS(KEY, blank());
+(()=>{ let n = 0; for(const [id, m] of Object.entries(S.mistakes||{})) if(m && m.reason==="k" && (m.miss||1)<=1){ delete S.mistakes[id]; n++; } if(n) writeLS(KEY, S); })();   // skipped-only entries (old rule)
 let P = readLS(PKEY, {papers:null, topics:null, count:10, mode:"practice", recall:true, lang:"en"});
 try{ const gl = localStorage.getItem("lwa-lang"); if(gl && ["en","hi","te"].includes(gl)) P.lang = gl; }catch(_){}
 const save = ()=>writeLS(KEY, S), savePrefs = ()=>writeLS(PKEY, P);
@@ -944,7 +957,7 @@ function vLocked(v){
   const trialLine = !ST.name ? " Register once with your phone number, then pay." : "";
   const btns = (!ST.name ? `<button class="btn btn-primary" type="button" data-act="unlockpyq">Register to get the PYQ Pass</button>`
                          : `<button class="btn btn-primary" type="button" data-act="openpay" data-kind="pyq">Get the PYQ Pass · ₹${price}</button>`);
-  return `<div class="wrap view">${head(pyq ? "PYQ Pass" : "Included with every plan", esc(name), "")}${emptyHTML("Unlock " + esc(name), esc(body + trialLine), btns)}</div>`;
+  return `<div class="wrap view">${REV.includes(v)? revTabs(v) : ""}${head(pyq ? "PYQ Pass" : "Included with every plan", esc(name), "")}${emptyHTML("Unlock " + esc(name), esc(body + trialLine), btns)}</div>`;
 }
 async function payCall(body){
   const r = await fetch(PAYC.api, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(body)});
@@ -1260,8 +1273,9 @@ function render(){
   if(v!=="quiz") stopTimer();
   const hubCtx = v==="exams" || v==="exam";
   $("#nav").classList.toggle("hub", hubCtx); $(".topbar").classList.toggle("g2", !hubCtx);
-  document.querySelectorAll("#nav a").forEach(a=>{ const on = a.dataset.v===v || (v==="exam"&&a.dataset.v==="exams") || ((v==="quiz"||v==="result")&&a.dataset.v==="practice"); if(on || (v==="join"&&a.dataset.v==="practice"&&UI.pending)) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
-  const mc = mistakeIds().length, mEl=$("#mcount"); mEl.hidden = !mc; mEl.textContent = mc;
+  document.querySelectorAll("#nav a").forEach(a=>{ const on = a.dataset.v===v || (a.dataset.rev!==undefined && REV.includes(v)) || (v==="exam"&&a.dataset.v==="exams") || ((v==="quiz"||v==="result")&&a.dataset.v==="practice"); if(on || (v==="join"&&a.dataset.v==="practice"&&UI.pending)) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+  { const nv = $("#nav"), cur = nv.querySelector('a[aria-current="page"]:not([data-v="exams"])');   // on a phone the menu scrolls sideways: keep the open page's item in view
+    if(cur && nv.scrollWidth > nv.clientWidth){ const r = cur.getBoundingClientRect(), n = nv.getBoundingClientRect(); if(r.left < n.left || r.right > n.right) nv.scrollLeft += r.left - n.left - 16; } }
   const hub = $("#hub-static"), home = $("#home-static"), host = $("#view");
   if(hub) hub.hidden = v!=="exams"; if(home) home.hidden = v!=="home";
   if(v==="exams"){ host.hidden=true; host.innerHTML=""; applyHub(); tickTimers(); renderQotd("#qotd-hub","all"); }
@@ -1390,21 +1404,26 @@ function emptyHTML(title, body, actions){ return `<div class="card empty"><div c
 function head(eyebrow, title, desc, right){ return `<div class="page-head"><div><p class="eyebrow">${eyebrow}</p><h1>${title}</h1>${desc?`<p>${desc}</p>`:""}</div>${right||""}</div>`; }
 
 
-/* ---------- languages: English, हिंदी, తెలుగు (one choice for the whole site) ---------- */
-const LANGS = {en:"English", hi:"हिंदी", te:"తెలుగు"};
-const availLangs = ()=> (DATA.hub && (current==="exams" || current==="")) ? ["en","hi","te"] : ["en", L2.code];
+/* ---------- languages (one choice for the whole site) ----------
+   SITE_LANGS comes from SITE_LANGS in tools/build.py: the hero line, the badge, the counts, the "+N" chip in the switcher and the score
+   card follow it, so a language marked live there shows up everywhere (Anil, 2 Nov 2026: "update them...as new languages are added"). */
+const SITE_LANGS = [{"c": "en", "self": "English", "hi": "अंग्रेज़ी", "te": "ఇంగ్లీష్", "live": true}, {"c": "te", "self": "తెలుగు", "hi": "तेलुगु", "te": "తెలుగు", "live": true}, {"c": "hi", "self": "हिंदी", "hi": "हिंदी", "te": "హిందీ", "live": true}, {"c": "ta", "self": "தமிழ்", "hi": "तमिल", "te": "తమిళం", "live": false}, {"c": "kn", "self": "ಕನ್ನಡ", "hi": "कन्नड़", "te": "కన్నడ", "live": false}, {"c": "ml", "self": "മലയാളം", "hi": "मलयालम", "te": "మలయాళం", "live": false}, {"c": "mr", "self": "मराठी", "hi": "मराठी", "te": "మరాఠీ", "live": false}];
+const LANGS = Object.fromEntries(SITE_LANGS.filter(x=>x.live).map(x=>[x.c, x.self]));
+const availLangs = ()=> (DATA.hub && (current==="exams" || current==="")) ? SITE_LANGS.filter(x=>x.live).map(x=>x.c) : ["en", L2.code];
+function langNames(L, live){ return SITE_LANGS.filter(x=>!!x.live===live).map(x=> L==="en" ? x.self : (x[L] || x.self)); }
+function langJoin(xs, L){ if(xs.length<2) return xs.join(""); if(L==="te") return xs.join(", "); return xs.slice(0,-1).join(", ") + (L==="hi" ? " और " : " and ") + xs[xs.length-1]; }
 const hubLang = ()=> ["hi","te"].includes(P.lang) ? P.lang : "en";
 const HUBT = {
   h1:{en:'Previous year question papers for <em>every government exam.</em>', hi:'हर सरकारी परीक्षा के <em>पिछले वर्षों के प्रश्न पत्र।</em>', te:'ప్రతి ప్రభుత్వ పరీక్షకు <em>మునుపటి సంవత్సరాల ప్రశ్నపత్రాలు.</em>'},
-  lede:{en:'Real question papers with official answers and short explanations, in English, తెలుగు and हिंदी. One ₹45 PYQ Pass for every exam.',
-        hi:'असली प्रश्न पत्र, आधिकारिक उत्तर और संक्षिप्त व्याख्या के साथ, अंग्रेज़ी, तेलुगु और हिंदी में। सभी परीक्षाओं के लिए एक ₹45 PYQ पास।',
-        te:'అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు, చిన్న వివరణలతో, ఇంగ్లీష్, తెలుగు, హిందీలో. అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.'},
+  lede:{en:'Real question papers with official answers and short explanations, in {L}. One ₹45 PYQ Pass for every exam.',
+        hi:'असली प्रश्न पत्र, आधिकारिक उत्तर और संक्षिप्त व्याख्या के साथ, {L} में। सभी परीक्षाओं के लिए एक ₹45 PYQ पास।',
+        te:'అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు, చిన్న వివరణలతో, {L}లో. అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.'},
   find:{en:'Find your exam', hi:'अपनी परीक्षा खोजें', te:'మీ పరీక్షను వెతకండి'},
   today:{en:"Today's question", hi:'आज का प्रश्न', te:'నేటి ప్రశ్న'},
   mentor:{en:'UPSC faculty &amp; mentor · 2.5 years of UPSC, APPSC &amp; TGPSC teaching and mentorship', hi:'UPSC शिक्षक और मार्गदर्शक · UPSC, APPSC और TGPSC अध्यापन व मार्गदर्शन में 2.5 वर्ष', te:'UPSC అధ్యాపకులు, మెంటార్ · UPSC, APPSC, TGPSC బోధన, మెంటార్‌షిప్‌లో 2.5 సంవత్సరాలు'},
   f1:{en:'Previous-year questions', hi:'पिछले वर्षों के प्रश्न', te:'గత సంవత్సరాల ప్రశ్నలు'},
   f2:{en:'Government exams on the list', hi:'सूची में सरकारी परीक्षाएँ', te:'జాబితాలో ప్రభుత్వ పరీక్షలు'},
-  f3:{en:'Languages: English, తెలుగు, हिंदी', hi:'भाषाएँ: अंग्रेज़ी, तेलुगु, हिंदी', te:'భాషలు: ఇంగ్లీష్, తెలుగు, హిందీ'},
+  f3:{en:'Languages: {D} · coming soon: {S}', hi:'भाषाएँ: {D} · जल्द: {S}', te:'భాషలు: {D} · త్వరలో: {S}'},
   f4:{en:'One PYQ Pass for every exam · 12 months', hi:'सभी परीक्षाओं के लिए एक PYQ पास · 12 महीने', te:'అన్ని పరీక్షలకు ఒకే PYQ పాస్ · 12 నెలలు'},
   f5:{en:'Mock test questions in our test series', hi:'हमारी टेस्ट सीरीज़ में मॉक टेस्ट प्रश्न', te:'మా టెస్ట్ సిరీస్‌లో మాక్ టెస్ట్ ప్రశ్నలు'},
   g1:{en:'1 lakh', hi:'1 लाख', te:'1 లక్ష'},
@@ -1430,9 +1449,9 @@ const HUBT = {
        hi:'हर प्रश्न आधिकारिक प्रश्न-पुस्तिका से टाइप किया गया है और प्रकाशित होने से पहले दो बार जाँचा गया है। हर प्रश्नपत्र पर लिखा है कि उसके उत्तर कहाँ से लिए गए हैं।',
        te:'ప్రతి ప్రశ్నను అధికారిక ప్రశ్నపత్రం నుంచి టైప్ చేసి, ప్రచురించే ముందు రెండుసార్లు తనిఖీ చేశాం. సమాధానాలు ఎక్కడి నుంచి తీసుకున్నామో ప్రతి పేపర్‌పై రాసి ఉంటుంది.'},
   w2t:{en:'Read it in your language', hi:'अपनी भाषा में पढ़ें', te:'మీ భాషలో చదవండి'},
-  w2p:{en:'Switch between English, తెలుగు and हिंदी with one tap at the top. The translation is the one printed in the exam paper, not a machine translation.',
-       hi:'ऊपर एक टैप से अंग्रेज़ी, तेलुगु और हिंदी के बीच बदलें। अनुवाद वही है जो परीक्षा के प्रश्नपत्र में छपा था, मशीन अनुवाद नहीं।',
-       te:'పైన ఒక్క ట్యాప్‌తో ఇంగ్లీష్, తెలుగు, హిందీ మధ్య మారండి. అనువాదం పరీక్ష ప్రశ్నపత్రంలో ముద్రించినదే, మెషీన్ అనువాదం కాదు.'},
+  w2p:{en:'Switch between {L} with one tap at the top. The translation is the one printed in the exam paper, not a machine translation.',
+       hi:'ऊपर एक टैप से {L} के बीच बदलें। अनुवाद वही है जो परीक्षा के प्रश्नपत्र में छपा था, मशीन अनुवाद नहीं।',
+       te:'పైన ఒక్క ట్యాప్‌తో {L} మధ్య మారండి. అనువాదం పరీక్ష ప్రశ్నపత్రంలో ముద్రించినదే, మెషీన్ అనువాదం కాదు.'},
   w3t:{en:'Your mistakes come back', hi:'आपकी गलतियाँ लौटकर आती हैं', te:'మీ తప్పులు మళ్లీ వస్తాయి'},
   w3p:{en:'Every question you get wrong goes into your Mistakes notebook. The Smart Quiz keeps asking it until you get it right twice.',
        hi:'हर गलत प्रश्न आपकी गलतियों की नोटबुक में चला जाता है। स्मार्ट क्विज़ उसे तब तक पूछता है जब तक आप उसे दो बार सही न कर लें।',
@@ -1455,7 +1474,8 @@ const HUBT = {
          te:'నా లక్ష్యం: వివిధ ప్రభుత్వ పరీక్షల 1 లక్ష PYQs ఒకే చోట, కేవలం ₹45కే. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఒక్కడినే ఈ సైట్‌ను నిర్మిస్తున్నాను. నాకు నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.'},
   fundB:{en:'Fund this project', hi:'इस परियोजना को सहयोग दें', te:'ఈ ప్రాజెక్ట్‌కు నిధులు ఇవ్వండి'},
 };
-const HT = (k, L)=> { const t = HUBT[k]; return t ? (t[L||hubLang()] || t.en) : ""; };
+const HT = (k, L)=> { const t = HUBT[k]; if(!t) return ""; L = L || hubLang(); const x = t[L] || t.en;
+  return x.indexOf("{")<0 ? x : x.replace("{L}", langJoin(langNames(L, true), L)).replace("{D}", langNames(L, true).join(", ")).replace("{S}", langNames(L, false).join(", ")); };
 function setLangAttr(el, L){ if(L==="en") el.removeAttribute("lang"); else el.setAttribute("lang", L); }
 function applyHubLang(){   // the start page's own text follows the language buttons
   if(!DATA.hub) return; const L = hubLang();
@@ -1615,7 +1635,7 @@ function vPractice(){
   };
   const hasRecallSel = PAPERS.some(p=>ps.has(p.id) && p.fmt==="recall");
   return `<div class="wrap view">
-    ${head("Create quiz","Build your own quiz","Choose papers and topics. Questions are drawn at random from what you select.")}
+    ${head("Practice","Build your own quiz","Choose papers and topics. Questions are drawn at random from what you select.")}
     <div class="builder">
       <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
         <section class="card step">
@@ -1808,8 +1828,10 @@ function finishQuiz(){
     x.last=r; x.at=res.at;
     const m = S.mistakes[id];
     if(r==="c"){ if(m){ m.recall=(m.recall||0)+1; if(m.recall>=2){ delete S.mistakes[id]; res.mastered++; } } }
-    else if(!m){ S.mistakes[id]={reason:r, added:res.at, recall:0, miss:1}; res.added++; }
-    else { m.recall=0; m.reason=r; m.miss=(m.miss||0)+1; }
+    // Anil, 2 Nov 2026 ("these things are creating some confusion"): only a wrong answer goes into the mistakes notebook. A question you
+    // skipped, or never reached in a timed test, is not a mistake: it shows under "Skipped" on the result page and counts on the heatmap.
+    else if(r==="w"){ if(!m){ S.mistakes[id]={reason:r, added:res.at, recall:0, miss:1}; res.added++; } else { m.recall=0; m.reason=r; m.miss=(m.miss||0)+1; } }
+    else if(m){ m.recall=0; }
   });
   S.history.unshift({at:res.at,title:res.title,n:res.ids.length,c:res.c,w:res.w,k:res.k,secs:res.secs});
   S.history = S.history.slice(0,12);
@@ -1891,16 +1913,25 @@ function vBank(){
   </div>`;
 }
 
+/* ---------- My Revision tabs (on the Mistakes, Smart Quiz, Bookmarks and Heatmap pages) ---------- */
+function revTabs(v){
+  const T = [["mistakes","Mistakes", mistakeIds().length, "Questions you answered wrongly"],
+             ["smart","Smart Quiz", null, "A quiz on your mistakes only"],
+             ["bookmarks","Bookmarks", bmIds().length, "Questions you saved"],
+             ["heatmap","Heatmap", null, "Your strong and weak topics"]];
+  return `<nav class="revtabs" aria-label="My Revision"><p class="rl">My Revision</p>${T.map(([k,l,n,d])=>`<a href="#${k}"${k===v?' aria-current="page"':""}><b>${l}${n!==null?` <span class="n">${n}</span>`:""}</b><small>${d}</small></a>`).join("")}</nav>`;
+}
+
 /* ---------- mistakes ---------- */
 function recallDots(m){ const r=m.recall||0; return `<span class="recall" title="Correct recalls: ${r} of 2"><i class="${r>=1?"on":""}"></i><i class="${r>=2?"on":""}"></i></span>`; }
 function vMistakes(){
   const ids = mistakeIds();
-  if(!ids.length) return `<div class="wrap view">${head("Mistakes notebook","Your mistakes notebook","Questions you answer wrongly or skip are filed here automatically.")}${emptyHTML("Nothing to revise yet","Take a quiz. Every question you get wrong or skip will appear here, ready for the Smart Quiz.",`<a class="btn btn-primary" href="/ts-police-si/practice/">Create a quiz</a>`)}</div>`;
+  if(!ids.length) return `<div class="wrap view">${revTabs("mistakes")}${head("Mistakes notebook","Your mistakes notebook","Every question you answer wrongly is filed here automatically. Skipped questions are not mistakes, so they are not added.")}${emptyHTML("Nothing to revise yet","Take a quiz. Every question you get wrong will appear here, ready for the Smart Quiz.",`<a class="btn btn-primary" href="/ts-police-si/practice/">Start a practice quiz</a>`)}</div>`;
   const subs = [...new Set(ids.map(id=>QMAP[id].s))];
   if(UI.mFilter!=="all" && !subs.includes(UI.mFilter)) UI.mFilter="all";
   const list = ids.filter(id=>UI.mFilter==="all"||QMAP[id].s===UI.mFilter).sort((a,b)=>(S.mistakes[b].miss||1)-(S.mistakes[a].miss||1) || S.mistakes[b].added-S.mistakes[a].added);
-  return `<div class="wrap view">
-    ${head("Mistakes notebook", ids.length+" question"+(ids.length===1?"":"s")+" to revise", "Filed automatically when you answer wrongly or skip. A question leaves the notebook after you get it right twice in a row.", `<a class="btn btn-primary" href="/ts-police-si/smart/">Start Smart Quiz</a>`)}
+  return `<div class="wrap view">${revTabs("mistakes")}
+    ${head("Mistakes notebook", ids.length+" question"+(ids.length===1?"":"s")+" to revise", "Filed automatically when you answer wrongly. A question leaves the notebook after you get it right twice in a row.", `<a class="btn btn-primary" href="/ts-police-si/smart/">Start Smart Quiz</a>`)}
     <div class="row"><button type="button" class="chip" data-act="mfilter" data-f="all" aria-pressed="${UI.mFilter==="all"}">All subjects <span class="n">${ids.length}</span></button>${subs.map(s=>`<button type="button" class="chip" data-act="mfilter" data-f="${s}" aria-pressed="${UI.mFilter===s}">${esc(SUBJ[s].name)} <span class="n">${ids.filter(id=>QMAP[id].s===s).length}</span></button>`).join("")}</div>
     <div class="list">${list.map(id=>{ const m=S.mistakes[id], q=QMAP[id];
       const extra = `<div class="row" style="justify-content:space-between"><div class="row" style="gap:8px"><span class="pill ${m.reason==="k"?"warn":"bad"}">${m.reason==="k"?"Skipped last time":"Answered wrongly"}</span><span class="pill">Missed ${m.miss||1}×</span><span class="pill">Recall ${recallDots(m)}</span></div><button class="btn btn-ghost btn-sm" type="button" data-act="learnt" data-id="${id}">I've learnt this</button></div>`;
@@ -1916,12 +1947,12 @@ function vSmart(){
   const avail = ids.filter(id=>UI.smartSubj==="all"||QMAP[id].s===UI.smartSubj);
   const n = UI.smartCount==="all"? avail.length : Math.min(UI.smartCount, avail.length);
   const how = `<ol class="steps3">
-      <li class="card"><h3>Pulled from your notebook</h3><p>Questions come only from the ones you missed or skipped, the most-missed first.</p></li>
+      <li class="card"><h3>Pulled from your notebook</h3><p>Questions come only from the ones you answered wrongly, the most-missed first.</p></li>
       <li class="card"><h3>Answer from memory</h3><p>Read the question and recall the answer before you look at the options.</p></li>
       <li class="card"><h3>Two in a row clears it</h3><p>Get a question right twice running and it leaves the notebook. A miss resets the count.</p></li>
     </ol>`;
-  if(!ids.length) return `<div class="wrap view">${head("Smart quiz","Re-attempt your mistakes","")}${how}${emptyHTML("Your notebook is empty","The Smart Quiz runs on the questions you get wrong or skip. Take a quiz first.",`<a class="btn btn-primary" href="/ts-police-si/practice/">Create a quiz</a>`)}</div>`;
-  return `<div class="wrap view">
+  if(!ids.length) return `<div class="wrap view">${revTabs("smart")}${head("Smart quiz","Re-attempt your mistakes","")}${how}${emptyHTML("Your notebook is empty","The Smart Quiz runs on the questions you get wrong. Take a quiz first.",`<a class="btn btn-primary" href="/ts-police-si/practice/">Start a practice quiz</a>`)}</div>`;
+  return `<div class="wrap view">${revTabs("smart")}
     ${head("Smart quiz","Re-attempt your mistakes","Active recall on the questions that tripped you up, until they stop tripping you up.")}
     ${how}
     <section class="card step">
@@ -1937,8 +1968,8 @@ function vSmart(){
 /* ---------- bookmarks ---------- */
 function vBookmarks(){
   const ids = bmIds();
-  if(!ids.length) return `<div class="wrap view">${head("Bookmarks","Saved questions","Save any question with the bookmark button to revise it later.")}${emptyHTML("No saved questions yet","Tap Save on any question in a quiz or in the question bank.",`<a class="btn btn-secondary" href="/ts-police-si/bank/">Open question bank</a>`)}</div>`;
-  return `<div class="wrap view">
+  if(!ids.length) return `<div class="wrap view">${revTabs("bookmarks")}${head("Bookmarks","Saved questions","Save any question with the bookmark button to revise it later.")}${emptyHTML("No saved questions yet","Tap Save on any question in a quiz or in the question bank.",`<a class="btn btn-secondary" href="/ts-police-si/bank/">Open question bank</a>`)}</div>`;
+  return `<div class="wrap view">${revTabs("bookmarks")}
     ${head("Bookmarks", ids.length+" saved question"+(ids.length===1?"":"s"), "Your hand-picked questions for revision.", `<button class="btn btn-primary" type="button" data-act="bmquiz">Practise saved questions</button>`)}
     <div class="list">${ids.map(id=>reviewCard(QMAP[id], QMAP[id].n, {hideAnswer:true})).join("")}</div>
   </div>`;
@@ -1950,8 +1981,8 @@ function vHeatmap(){
   const tile = (s,t)=>{ const k=s.id+"|"+t, e=ts[k]; if(!e) return ""; const tot=e.c+e.w+e.k, acc=pct(e.c,tot), b=band(acc);
     return `<button type="button" class="tile h-${b}" data-act="topicquiz" data-key="${esc(k)}" aria-label="${esc(t)}: ${acc===null?"not attempted":acc+" percent accuracy"}. Start a quiz on this topic.">
       <span class="tn">${esc(t)}</span><span class="tv">${acc===null?"Not attempted":acc+"%"}</span><span class="ts">${tot? `${tot} attempt${tot===1?"":"s"} · `:""}${e.seen}/${e.n} questions seen</span></button>`; };
-  return `<div class="wrap view">
-    ${head("Memory heatmap","Topic-wise accuracy","Every attempt counts; skipped questions count as misses. Tap a topic to practise it.", `<div class="figures" style="grid-template-columns:repeat(2,minmax(0,1fr));min-width:min(100%,320px)"><div class="figure"><div class="v">${o.acc===null?"—":o.acc+"%"}</div><div class="k">Overall accuracy</div></div><div class="figure"><div class="v">${o.c+o.w+o.k}</div><div class="k">Total attempts</div></div></div>`)}
+  return `<div class="wrap view">${revTabs("heatmap")}
+    ${head("Memory heatmap","Topic-wise accuracy","Each topic is coloured by how many of its questions you got right: red topics need revision first. Skipped questions count as misses. Tap a topic to practise it.", `<div class="figures" style="grid-template-columns:repeat(2,minmax(0,1fr));min-width:min(100%,320px)"><div class="figure"><div class="v">${o.acc===null?"—":o.acc+"%"}</div><div class="k">Overall accuracy</div></div><div class="figure"><div class="v">${o.c+o.w+o.k}</div><div class="k">Total attempts</div></div></div>`)}
     <div class="hlegend"><span><i style="background:var(--good-soft);border:1.5px solid var(--good)"></i>75% and above</span><span><i style="background:var(--warn-soft);border:1.5px solid var(--warn)"></i>50–74%</span><span><i style="background:var(--bad-soft);border:1.5px solid var(--bad)"></i>Below 50%</span><span><i style="background:var(--none-soft);border:1.5px solid var(--line)"></i>Not attempted</span></div>
     ${SUBJECTS.map(s=>{ const tiles=s.topics.map(t=>tile(s,t)).join(""); return tiles? `<section class="card pad heat-exam"><h2 style="font-size:19px;font-weight:800">${esc(s.name)}</h2><div class="heat-grid">${tiles}</div></section>` : ""; }).join("")}
   </div>`;
@@ -2201,7 +2232,7 @@ function footer(ctx, W, H, line1){
   ctx.fillStyle="#EEF3FF"; rrect(ctx, 60, H-150, W-120, 96, 18); ctx.fill();
   ctx.fillStyle="#0C2266"; ctx.font='700 30px "Source Sans 3", sans-serif'; ctx.fillText(line1, 92, H-108);
   ctx.font='600 30px "IBM Plex Mono", monospace'; ctx.fillText(SITE_HOST, 92, H-70);
-  ctx.textAlign="right"; ctx.font='700 26px "Source Sans 3", "Noto Sans Telugu", "Noto Sans Devanagari", sans-serif'; ctx.fillStyle="#12804A"; ctx.fillText("PYQs · English · తెలుగు · हिंदी", W-92, H-70); ctx.textAlign="left";
+  ctx.textAlign="right"; ctx.font='700 26px "Source Sans 3", "Noto Sans Telugu", "Noto Sans Devanagari", sans-serif'; ctx.fillStyle="#12804A"; ctx.fillText("PYQs · " + langNames("en", true).join(" · "), W-92, H-70); ctx.textAlign="left";
 }
 async function scoreCard(r){
   await FONTS_READY();
@@ -2417,6 +2448,7 @@ document.addEventListener("click", e=>{
     case "lang": { const l = b.dataset.l; P.lang = l; savePrefs(); try{ localStorage.setItem("lwa-lang", l); }catch(_){}
       if(!availLangs().includes(l)) toast(`${LANGS[l]} is not available for ${DATA.exam} yet. Showing English.`);
       syncLang(); render(); break; }
+    case "langsoon": { const L = hubLang(), xs = langNames("en", false); toast(xs.join(" · ") + ({hi:": जल्द आ रही हैं", te:": త్వరలో"}[L] || ": coming soon")); break; }
     case "qotdscroll": { const t=$("#qotd-hub"); if(t && !t.hidden) t.scrollIntoView({behavior:"smooth", block:"start"}); break; }
     case "sample": openSample(b.dataset.id); break;
     case "video": openVideo(b.dataset.id); break;

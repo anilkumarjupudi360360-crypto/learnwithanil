@@ -948,7 +948,7 @@ def exam_confs():
                       'each tagged with the papers that asked it, 1,004 previous questions mapped and 112 current affairs of 2025–26. Free sample PDF; '
                       'plus AP Economy Crisp Notes and the Science & Technology book.'),
            notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-II: the new Micro-Syllabus, which breaks every Screening and Mains subject into sub-topics and shows which papers asked each one, Crisp Notes on AP Economy, and a full Science & Technology book. Every book has APPSC\'s own previous questions inside.',
-           notes_line='The new Group-II Micro-Syllabus (Notification 37/2026), Crisp Notes on AP Economy and a full Science & Technology book, built on APPSC\'s own previous questions.',
+           notes_line='The new Group-II Micro-Syllabus (Notification 37/2026), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book, built on APPSC\'s own previous questions.',
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer: there the answer is APPSC's and the other three options are written by Learn with Anil (inside the PYQ Pass)."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
            slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE, pb='/appsc-group-1/',
@@ -1213,7 +1213,10 @@ def main():
     if upm_qs: counts[upscmains.EXAM] = len(upm_qs) + len(upa_qs)
     global PRE_LIVE   # the UPSC CSE hub's Prelims box: (questions, years, papers) of the built Prelims app
     pre = [(ps, qs) for c, ps, qs in loaded if c['id'] == 'upsc-prelims']
-    PRE_LIVE = (len(pre[0][1]), sorted({p['year'] for p in pre[0][0]}), len(pre[0][0])) if pre else None
+    PRE_LIVE = ((len(pre[0][1]), sorted({p['year'] for p in pre[0][0]}), len(pre[0][0]),
+                 # the newest GS Paper I and CSAT pages, for the photo links on the hub card: {'gs': (year, slug), 'csat': (year, slug)}
+                 {k: max((p['year'], p['slug']) for p in pre[0][0] if p['id'].startswith(k)) for k in ('gs', 'csat') if any(p['id'].startswith(k) for p in pre[0][0])})
+                if pre else None)
 
     vpath = os.path.join(SRC, 'videos.json')
     videos = json.load(open(vpath, encoding='utf-8')) if os.path.exists(vpath) else {}
@@ -1266,8 +1269,9 @@ def main():
         subj = {s[0]: s for s in conf['subjects']}
         def upath(x): return x if (is_root or re.match(r'(https?:|data:|/)', x)) else up + x
         # a book with an 'exams' list shows only on those exams' pages; the others (APPSC Mains books) on NOTES_EXAMS
+        # the start page's Study Material shows every book (Anil, 2 Nov 2026: "in study material only this 3 books are showing")
         enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])]) for b in notes
-                  if (conf['id'] in b['exams'] if b.get('exams') else conf['id'] in NOTES_EXAMS)]
+                  if is_root or (conf['id'] in b['exams'] if b.get('exams') else conf['id'] in NOTES_EXAMS)]
         emains = mains_kit(conf)
         for q in questions:
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
@@ -1280,7 +1284,7 @@ def main():
                     pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=pub_qs, instagram=INSTAGRAM,
                     exb=dict(key=exb['key'], file=exb['file']) if exb else None, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     mains=emains, mainsP5=MAINS_P5 if emains else None,
-                    notesTitle=conf.get('notes_title', ''), notesLede=conf.get('notes_lede', ''),
+                    notesTitle=ROOT_NOTES[0] if is_root else conf.get('notes_title', ''), notesLede=ROOT_NOTES[1] if is_root else conf.get('notes_lede', ''),
                     key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
                     base=prefix, qotd=qotd_pool(loaded, 120) if is_root else [],
@@ -1319,7 +1323,7 @@ def main():
                      .replace('{{HOME_PAPERS}}', home_papers).replace('{{PYQPAGE}}', conf['pb'] + 'pyqs.html').replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
-                     .replace('{{HOME_NOTES}}', '' if is_root else home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
+                     .replace('{{HUB_NOTES}}', '').replace('{{HOME_NOTES}}', home_notes([b for b in enotes if not b.get('exams') or conf['id'] in b['exams']], bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}').replace('{{NLIVE}}', str(len(loaded)))
                      .replace('{{NLIVEX}}', str(sum(1 for e in catalog['exams'] if e.get('live')))).replace('{{HERO_NEW}}', HERO_NEW)
                      .replace('{{MOCKQ}}', f'{mock_questions():,}')
@@ -1339,6 +1343,11 @@ def main():
                      .replace('{{NOTES_NAV}}', ('<a href="#mains" data-v="mains">Mains Tool Kit <span class="new">NEW</span></a>' if emains else '')
                               + ('<a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>' if enotes else ''))
                      .replace('{{NOTES_FOOT}}', '<a href="#notes">Study material</a> · ' if enotes else ''))
+        _fill0, LF = fill, lang_fills()
+        def fill(s, photo, title, seo, desc=''):   # then the site's languages (SITE_LANGS)
+            s = _fill0(s, photo, title, seo, desc)
+            for k, v in LF.items(): s = s.replace(k, v)
+            return s
         root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: UPSC Prelims, Mains & Anthropology, APPSC Group 1 & 2, TS Police, SSC CGL'
         pre_y = (lambda ys: f' ({ys[0]}–{ys[-1]})' if len(ys) > 1 else f' ({ys[0]})')(PRE_LIVE[1]) if PRE_LIVE else ''   # Anil, 2 Nov 2026: home title/description name UPSC Prelims and Anthropology
         root_desc = (f'Learn with Anil (learnwithanil.in): previous year question papers (PYQs) with answers for UPSC Civil Services Prelims GS Paper I & CSAT{pre_y} in English & Hindi, '
@@ -1781,6 +1790,24 @@ def exam_photo(eid, kind='t'):
 def photo_credit(eid, prefix='Photo: '):
     t, a, lic, url = EXAM_PHOTO[eid]
     return f'{prefix}<a href="{url}" target="_blank" rel="noopener">{esc(t)}</a>, {esc(a)}, <a href="{CCL[lic]}" target="_blank" rel="noopener license">{lic}</a>' if lic != 'public domain' else f'{prefix}<a href="{url}" target="_blank" rel="noopener">{esc(t)}</a>, {esc(a)}, public domain'
+
+
+# The site's languages in one list (Anil, 2 Nov 2026: "update them...as new languages are added"): (code, own name, in Hindi, in Telugu, live).
+# Live ones are named in the hero line, the badge, the counts and the score card; the others show as "coming soon" (the "+N" chip in the
+# language switcher, the badge, the figures). A language goes live only when questions exist in it; the switcher then needs its own button.
+SITE_LANGS = [('en', 'English', 'अंग्रेज़ी', 'ఇంగ్లీష్', True), ('te', 'తెలుగు', 'तेलुगु', 'తెలుగు', True), ('hi', 'हिंदी', 'हिंदी', 'హిందీ', True),
+              ('ta', 'தமிழ்', 'तमिल', 'తమిళం', False), ('kn', 'ಕನ್ನಡ', 'कन्नड़', 'కన్నడ', False), ('ml', 'മലയാളം', 'मलयालम', 'మలయాళం', False),
+              ('mr', 'मराठी', 'मराठी', 'మరాఠీ', False)]
+
+
+def lang_fills():
+    live = [x[1] for x in SITE_LANGS if x[4]]; soon = [x[1] for x in SITE_LANGS if not x[4]]
+    and_ = ', '.join(live[:-1]) + ' and ' + live[-1] if len(live) > 1 else live[0]
+    js = json.dumps([dict(c=c, self=n, hi=h, te=te_, live=lv) for c, n, h, te_, lv in SITE_LANGS], ensure_ascii=False)
+    chip = (f'      <button type="button" class="lang-soon" data-act="langsoon" title="Coming soon: {esc(", ".join(soon))}" '
+            f'aria-label="More languages coming soon: {esc(", ".join(soon))}">+{len(soon)}</button>\n') if soon else ''
+    return {'{{SITE_LANGS}}': js, '{{LANGS_EN}}': and_, '{{LANGS_DOT}}': ' · '.join(live), '{{NLANGS}}': str(len(live)),
+            '{{LANGS_LIST}}': ', '.join(live), '{{LANGS_SOON_DOT}}': ' · '.join(soon), '{{LANGS_SOON_LIST}}': ', '.join(soon), '{{LANG_SOON_BTN}}': chip}
 
 
 NAV_FUND = ('      <a class="nav-fund" href="/funders.html" title="Fund this project" data-hubonly><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'
@@ -3576,6 +3603,10 @@ def notif_page(loaded, rel):
                        [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + conf['pb']), (N['crumb'], can)], conf, at_root=True)
 
 
+ROOT_NOTES = ('Study material: every book on the site',   # the start page's Study Material lists every book, for every exam
+              'Exam-focused books by Jupudi Anil Kumar for APPSC Group-I and Group-II Mains and the EO Grade-III exam: Public Administration and Governance, '
+              'Ethics and Laws, the Group-II Micro-Syllabus, Crisp Notes on AP Economy, Science and Technology, and Hindu Philosophy & Temple System. '
+              'Every book has the exam\'s own previous questions inside.')
 NOTES_EXAMS = {'appsc-group-2', 'appsc-group-1'}   # Anil, 24 Oct 2026: the APPSC Mains books are shown only on the APPSC Group 1 and Group 2 pages
 
 # APPSC Group-I Mains · Answer Writing Tool Kit (Anil, 26 Oct 2026): one PDF book per Mains paper (Papers I-IV) with every
