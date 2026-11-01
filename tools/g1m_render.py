@@ -203,10 +203,16 @@ def render(t):
                 mk, _, title = rest.partition(' ')
                 out.append(d_map(mk, title, rows))
             continue
-        if all(l.startswith('- ') for l in lines):
-            out.append('<ul>' + ''.join(f'<li>{inline(l[2:])}</li>' for l in lines) + '</ul>')
-        else:
-            out.append(f'<p>{inline(" ".join(lines))}</p>')
+        # runs of "- " lines become a list, other lines a paragraph (robust to a missing blank line)
+        run, kind_ = [], None
+        def flush():
+            if not run: return
+            out.append('<ul>' + ''.join(f'<li>{inline(l[2:])}</li>' for l in run) + '</ul>' if kind_ == 'ul' else f'<p>{inline(" ".join(run))}</p>')
+        for l in lines:
+            k_ = 'ul' if l.startswith('- ') else 'p'
+            if k_ != kind_ or (k_ == 'p' and re.match(r'\*\*\d+\.', l)): flush(); run, kind_ = [], k_
+            run.append(l)
+        flush()
     return keys + ''.join(out)
 
 
