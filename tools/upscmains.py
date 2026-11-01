@@ -64,6 +64,7 @@ def load(src, code='gs'):
 
 def qkey(q): return (int(re.match(r'\d+', q['qno']).group()), q['qno'])
 def aslug(q): return q['qno'].replace('(', '').replace(')', '').lower()
+def n_of(p): return {**PAPERS, **AN_PAPERS}[p][0]   # module-level for build.py's llms.txt
 
 
 def helpers(C):
