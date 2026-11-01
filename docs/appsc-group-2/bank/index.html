@@ -579,6 +579,29 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .ex-art{position:relative;display:flex;align-items:center;justify-content:center;height:74px;color:#fff;background:linear-gradient(135deg,var(--g1,#334155),var(--g2,#64748b))}
 .ex-art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 15%,rgba(255,255,255,.18) 0 16%,transparent 17%),radial-gradient(circle at 95% 115%,rgba(255,255,255,.14) 0 32%,transparent 33%)}
 .ex-art svg{position:relative;height:66px;width:118px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.18))}
+.ex-ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ex-art.has-ph::before{display:none}.ex-art.has-ph svg{display:none}
+.ex-art.has-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 50%,rgba(0,0,0,.25)),linear-gradient(135deg,var(--g1),transparent 65%);opacity:.5}
+.hero.hero-ph{background:linear-gradient(90deg,rgba(9,22,72,.97) 0%,rgba(9,22,72,.9) 40%,rgba(9,22,72,.55) 75%,rgba(9,22,72,.35) 100%),var(--hero-ph) center/cover no-repeat}
+.hero.hero-ph::after{display:none}
+.hero .hero-cr{position:absolute;right:12px;bottom:6px;margin:0;font-size:11px;line-height:1.4;max-width:none;color:rgba(255,255,255,.7);z-index:1}.hero-cr a{color:inherit}
+@media (max-width:860px){.hero.hero-ph{background:linear-gradient(180deg,rgba(9,22,72,.45) 0,rgba(9,22,72,.9) 260px,rgba(9,22,72,.97) 100%),var(--hero-ph) center top/auto 300px no-repeat,var(--band)}.hero .hero-cr{position:static;padding:0 16px 10px;text-align:right}}
+.etile.fx{padding:0 0 18px;overflow:hidden;gap:8px}
+.etile.fx>:not(.etile-hd){margin-inline:22px}
+.etile-hd{display:flex;align-items:center;gap:12px;padding:14px 22px;color:#fff;background:linear-gradient(135deg,var(--g1),var(--g2))}
+.etile-hd.eh1{--g1:#1e3a8a;--g2:#3b82f6}.etile-hd.eh2{--g1:#c2410c;--g2:#fb923c}.etile-hd.eh3{--g1:#047857;--g2:#34d399}
+.etile-hd .etile-k{color:#fff}
+.etile-ic{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.18);flex-shrink:0}.etile-ic svg{width:22px;height:22px}
+.etile-btn{align-self:flex-start;display:inline-flex;padding:9px 16px;border-radius:999px;background:var(--accent);color:#fff;font-weight:700;font-size:14.5px}
+.etile.fx:hover .etile-btn{filter:brightness(1.08)}
+.mbtns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.mbtn{display:inline-flex;align-items:center;gap:5px;padding:6px 13px;border-radius:999px;border:1.5px solid var(--accent);color:var(--accent-text);background:var(--surface);font-weight:700;font-size:14px;text-decoration:none;line-height:1.2}
+.mbtn:hover{background:var(--accent-soft)}
+.mbtn.go{background:var(--accent);color:#fff}.mbtn.go:hover{filter:brightness(1.08);background:var(--accent)}
+.mbtn.mpdf{border-color:#0E7A43;color:#0E7A43}
+.mchips{display:flex;flex-wrap:wrap;gap:6px}
+.mchip{display:inline-block;padding:4px 11px;border-radius:999px;background:var(--accent-soft);color:var(--accent-text);font-weight:600;font-size:13.5px;text-decoration:none}
+table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
 .ex-body{display:flex;flex-direction:column;gap:3px;padding:12px 14px 14px;flex:1}
 .card.exam:not(.live) .ex-art{filter:saturate(.35);opacity:.8}
 @media (max-width:520px){.ex-art{height:62px}.ex-art svg{height:56px;width:100px}.ex-body{padding:10px 11px 12px}}
@@ -713,7 +736,7 @@ details.upc .exams{margin-top:8px}
 
 <main>
 <div id="home-static" class="view" hidden>
-  <section class="hero"><div class="wrap">
+  <section class="hero hero-ph" style="--hero-ph:url(/ex-appsc-group-2-h.webp)"><div class="wrap">
     <div class="hero-copy">
       <a class="crumb" href="/">← All exams</a>
       <p class="eyebrow">APPSC Group-II · Prelims (Screening) &amp; Mains · 2019–2025</p>
@@ -726,9 +749,9 @@ details.upc .exams{margin-top:8px}
       <span class="ph"><img src="anil.jpg" alt="Jupudi Anil Kumar" width="210" height="210"></span>
       <span><b>Jupudi Anil Kumar</b><br><span>UPSC faculty &amp; mentor · 2.5 years of UPSC, APPSC &amp; TGPSC teaching and mentorship</span></span>
     </a>
-  </div></section>
+  </div><p class="hero-cr">Photo: <a href="https://commons.wikimedia.org/wiki/File:Prakasam_Barrage,_Vijayawada_2016_(7).jpg" target="_blank" rel="noopener">Prakasam Barrage, Vijayawada</a>, Deensonu, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a></p></section>
 
-  <section class="wrap section"><div class="etiles"><a class="etile" href="/appsc-group-2/pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b><span class="etile-p">1,004 questions from 7 official papers, with answers and explanations, as quizzes and timed tests, and as PDFs to download. One pass for every exam.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 ₹45 · all exams · 12 months</span></a><a class="etile" href="/appsc-group-2/bahubali-test-series/"><span class="etile-k">02 · Mock tests</span><b>Bahubali Test Series</b><span class="etile-p">24 full-length Group-II Mains mocks, 12 for Paper I and 12 for Paper II: 150 questions each, English and Telugu, with explanations.</span><span class="etile-price" data-paidtxt="✓ Included in your PYQ Pass">🔒 Included in the ₹45 PYQ Pass</span></a><a class="etile" href="/appsc-group-2/sectionals/"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 10 subjects. Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 With the PYQ Pass</span></a></div><div class="card eclock eclock-tba"><div class="ec-l"><span class="ec-k">Exam clock</span><b>APPSC Group 2 Screening Test</b><span class="ec-src">Applications 10–30 November 2026 (Notification 37/2026); APPSC has not announced the exam date yet.</span></div><div class="ec-r"><span class="ec-tba">Date not announced yet</span></div></div><div class="etiles etiles-links"><a class="etile etile-sm" href="/appsc-group-2/bahubali-test-series/"><b>New: Bahubali Test Series – Group 2 Mains full-length tests</b><span class="etile-go">→</span></a><a class="etile etile-sm" href="/appsc-group-2-notification-2026.html"><b>APPSC Group 2 Notification 2026: 686 posts</b><span class="etile-go">→</span></a><a class="etile etile-sm" href="/appsc-group-2-syllabus-2026.html"><b>APPSC Group 2 syllabus 2026: topic-wise micro syllabus</b><span class="etile-go">→</span></a></div></section>
+  <section class="wrap section"><div class="etiles"><a class="etile fx" href="/appsc-group-2/pyqs.html"><span class="etile-hd eh1"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6"/><path d="m9 16 2 2 4-4"/></svg></span><span class="etile-k">01 · Previous papers</span></span><b>PYQs with answers</b><span class="etile-p">1,004 questions from 7 official papers, with answers and explanations, as quizzes and timed tests, and as PDFs to download. One pass for every exam.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 ₹45 · all exams · 12 months</span><span class="etile-btn">Open the PYQs →</span></a><a class="etile fx" href="/appsc-group-2/bahubali-test-series/"><span class="etile-hd eh2"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M10 2h4M12 2v3"/></svg></span><span class="etile-k">02 · Mock tests</span></span><b>Bahubali Test Series</b><span class="etile-p">24 full-length Group-II Mains mocks, 12 for Paper I and 12 for Paper II: 150 questions each, English and Telugu, with explanations.</span><span class="etile-price" data-paidtxt="✓ Included in your PYQ Pass">🔒 Included in the ₹45 PYQ Pass</span><span class="etile-btn">See the mock tests →</span></a><a class="etile fx" href="/appsc-group-2/sectionals/"><span class="etile-hd eh3"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span><span class="etile-k">03 · Sectional tests</span></span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 10 subjects. Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 With the PYQ Pass</span><span class="etile-btn">Practise a subject →</span></a></div><div class="card eclock eclock-tba"><div class="ec-l"><span class="ec-k">Exam clock</span><b>APPSC Group 2 Screening Test</b><span class="ec-src">Applications 10–30 November 2026 (Notification 37/2026); APPSC has not announced the exam date yet.</span></div><div class="ec-r"><span class="ec-tba">Date not announced yet</span></div></div><div class="etiles etiles-links"><a class="etile etile-sm" href="/appsc-group-2/bahubali-test-series/"><b>New: Bahubali Test Series – Group 2 Mains full-length tests</b><span class="etile-go">→</span></a><a class="etile etile-sm" href="/appsc-group-2-notification-2026.html"><b>APPSC Group 2 Notification 2026: 686 posts</b><span class="etile-go">→</span></a><a class="etile etile-sm" href="/appsc-group-2-syllabus-2026.html"><b>APPSC Group 2 syllabus 2026: topic-wise micro syllabus</b><span class="etile-go">→</span></a></div></section>
 
   <section class="wrap section">
     <div class="figures">
@@ -1465,6 +1488,7 @@ function applyHub(){
   const q = (UI.exQ||"").trim().toLowerCase().replace(/\s+/g," "), cat = UI.exCat||"all", browsing = cat==="all" && !q;
   const hh = $("#hubHome"), hb = $("#hubBack"), hc = $("#hubCats");
   if(hh) hh.hidden = !browsing; if(hb) hb.hidden = cat==="all"; if(hc) hc.hidden = browsing; hubRecent(browsing);
+  const xc = $("#exCredits"); if(xc) xc.hidden = browsing;
   let n = 0;
   document.querySelectorAll("#hub-static .exam").forEach(a=>{ const ok = (cat==="all"||a.dataset.cat===cat) && (!q || a.dataset.s.includes(q)); a.hidden = !ok; if(ok) n++; });
   document.querySelectorAll("#hub-static .exam-cat").forEach(s=>{ s.hidden = !s.querySelector(".exam:not([hidden])"); });
