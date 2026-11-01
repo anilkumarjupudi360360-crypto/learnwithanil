@@ -1,4 +1,29 @@
 {
+ "ap-police-constable": {
+  "a2023pc": {
+   "bytes": 893827,
+   "file": "ap-police-constable-a2023pc-d4ca8a1307.bin",
+   "key": "bk-ap-police-constable-a2023pc",
+   "name": "LearnWithAnil-AP-Police-Constable-Prelims-2023-Preliminary-Written-Test-Question-Paper.pdf",
+   "pages": 41
+  }
+ },
+ "ap-police-si": {
+  "a2023s1": {
+   "bytes": 743081,
+   "file": "ap-police-si-a2023s1-74c0253366.bin",
+   "key": "bk-ap-police-si-a2023s1",
+   "name": "LearnWithAnil-AP-Police-SI-Prelims-2023-Paper-1-Prelims-Paper-I-Arithmetic-Reasoning-Question-Paper.pdf",
+   "pages": 28
+  },
+  "a2023s2": {
+   "bytes": 597169,
+   "file": "ap-police-si-a2023s2-93200ad7a5.bin",
+   "key": "bk-ap-police-si-a2023s2",
+   "name": "LearnWithAnil-AP-Police-SI-Prelims-2023-Paper-2-Prelims-Paper-II-General-Studies-Question-Paper.pdf",
+   "pages": 24
+  }
+ },
  "appsc-analyst": {
   "n2025b": {
    "bytes": 390094,
