@@ -1658,6 +1658,26 @@ def exam_art(e, cat):
     return BOARD_ART.get(cat, BOARD_ART['upsc'])   # PSC groups and posts: the board's own drawing (gopuram, Charminar, building)
 
 
+BOARD_PHOTO = {   # free-licence photos from Wikimedia Commons, cropped to 640x250 WebP in src/static (Anil approved the download, 2 Nov 2026)
+    'upsc': ('North Block, Delhi', 'Atulburnwal', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:North_Block,_Delhi.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
+    'ap': ('Tirumala gopurams', 'Vimalkalyan', 'public domain', 'https://commons.wikimedia.org/wiki/File:Tirumala_gopurams.JPG', ''),
+    'tg': ('Charminar, Hyderabad', 'Craftofolio.media', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Charminar,_Hyderabad,_Telangana,_India.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),
+    'ssc': ('Writing an exam', 'Alison wood', 'CC BY 3.0', 'https://commons.wikimedia.org/wiki/File:Hand-writing-exam-classroom.jpg', 'https://creativecommons.org/licenses/by/3.0/'),
+    'rail': ('Vijayawada–Chennai Vande Bharat Express', 'Ravi Dwivedi', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Vijayawada_-_Chennai_Central_Vande_Bharat_Express.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),
+    'bank': ('Rupee coins', 'Ravi Kumar', 'CC BY 3.0', 'https://commons.wikimedia.org/wiki/File:Coin_(127690727).jpeg', 'https://creativecommons.org/licenses/by/3.0/'),
+}
+
+
+def photo_credits(ids):
+    bits = []
+    for k in ids:
+        if k not in BOARD_PHOTO: continue
+        t, a, lic, url, lurl = BOARD_PHOTO[k]
+        bits.append(f'<a href="{url}" target="_blank" rel="noopener">{esc(t)}</a> by {esc(a)} ('
+                    + (f'<a href="{lurl}" target="_blank" rel="noopener">{lic}</a>' if lurl else lic) + ')')
+    return f'<p class="ph-credit">Photos (cropped) via Wikimedia Commons: {" · ".join(bits)}.</p>' if bits else ''
+
+
 BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
 
 
@@ -1678,7 +1698,9 @@ def hub_html(catalog, counts, grand):
         badge = f'<span class="bd-badge"><i></i>{len(lv)} exam{"s" if len(lv) != 1 else ""} live</span>' if lv else '<span class="bd-badge bd-soon">Coming soon</span>'
         foot = f'{nq:,} questions' if lv else f'{len(ex)} exams listed'
         boards.append(f'<button type="button" class="card board b-{c["id"]}{"" if lv else " soon"}" data-act="excat" data-cat="{c["id"]}" title="{esc(c["desc"])}">'
-                      f'<span class="bd-art"><svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{art}</svg>{badge}</span>'
+                      f'<span class="bd-art{" has-ph" if c["id"] in BOARD_PHOTO and os.path.exists(os.path.join(SRC, "static", "board-" + c["id"] + ".webp")) else ""}">'
+                      + (f'<img class="bd-ph" src="/board-{c["id"]}.webp" alt="" width="640" height="250" loading="lazy" decoding="async">' if c['id'] in BOARD_PHOTO and os.path.exists(os.path.join(SRC, 'static', f'board-{c["id"]}.webp')) else '')
+                      + f'<svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{art}</svg>{badge}</span>'
                       f'<span class="bd-body"><span class="bd-n">{esc(c["name"])}</span>{te}'
                       + (f'<span class="bd-pills">{pills}</span>' if pills else f'<span class="bd-d">{esc(c["desc"])}</span>')
                       + f'<span class="bd-ft"><span>{foot}</span><span class="bd-go">{"Open" if lv else "See list"} →</span></span></span></button>')
@@ -1705,7 +1727,8 @@ def hub_html(catalog, counts, grand):
     return (f'<div class="hub-tools">{search}</div>'
             f'<div id="hubRecent" class="hub-row" hidden><span class="hub-k" data-i18n="contT">Continue where you left off</span><div class="chips" id="hubRecentL"></div></div>'
             f'<div id="hubHome"><div class="boards" role="list">{"".join(boards)}</div>'
-            f'<div class="hub-row"><span class="hub-k" data-i18n="popT">Popular exams</span><div class="chips">{pop}</div></div></div>'
+            f'<div class="hub-row"><span class="hub-k" data-i18n="popT">Popular exams</span><div class="chips">{pop}</div></div>'
+            + photo_credits([c['id'] for c in cats]) + '</div>'
             f'<div id="hubBack" hidden><button type="button" class="btn btn-secondary btn-sm" data-act="excat" data-cat="all" data-i18n="allB">← All exam boards</button></div>'
             f'<p class="muted" id="hubCount" style="font-size:14px"></p>'
             f'<div id="hubCats">{"".join(secs)}</div>'

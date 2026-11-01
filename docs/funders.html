@@ -555,6 +555,12 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .bd-art{position:relative;display:flex;align-items:center;justify-content:center;height:104px;color:#fff;background:linear-gradient(135deg,var(--g1),var(--g2))}
 .bd-art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 12% 20%,rgba(255,255,255,.18) 0 18%,transparent 19%),radial-gradient(circle at 92% 110%,rgba(255,255,255,.14) 0 30%,transparent 31%)}
 .bd-art svg{position:relative;width:150px;height:88px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.18))}
+.bd-ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bd-art.has-ph::before{display:none}
+.bd-art.has-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.28)),linear-gradient(135deg,var(--g1),transparent 70%);opacity:.55}
+.bd-art.has-ph svg{display:none}
+.bd-badge{z-index:1}
+.ph-credit{font-size:11.5px;color:var(--muted);margin:14px 0 0;line-height:1.5}.ph-credit a{color:inherit}
 .bd-badge{position:absolute;left:12px;top:10px;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;background:rgba(255,255,255,.95);color:#065f46;border-radius:999px;padding:3px 10px}
 .bd-badge i{width:7px;height:7px;border-radius:50%;background:#16a34a}
 .bd-badge.bd-soon{color:#475569}
