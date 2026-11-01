@@ -98,7 +98,8 @@ def pages(B):
            f'model answer: key words and an introduction, every part of the question in numbered points, diagrams, flowcharts or tables, and a conclusion. '
            f'Included in the ₹{price} PYQ Pass, with every previous paper, mock test series and study book on the site.</p>'
            f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{buyurl}">Get it for ₹{price}</a></div>')
-    status = (f'Model answers are ready for {", ".join(map(str, done))}; the other years are being added, newest first.' if done
+    status = ('Model answers are ready for every paper.' if set(done) >= set(years)
+              else f'Model answers are ready for {", ".join(map(str, done))}; the other years are being added, newest first.' if done
               else 'Model answers are being added year by year, newest first.')
     howto = (f'<p class="note">Tap a question to open its model answer on its own page. Q1 and Q2 of every paper are free; the rest open with the ₹{price} PYQ Pass '
              f'on the phone you registered in the app. The model answers are fuller than UPSC\'s 150/250-word limits so that you learn the content; '
