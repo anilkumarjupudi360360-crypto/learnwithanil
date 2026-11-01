@@ -1268,6 +1268,12 @@ document.addEventListener("click", e=>{   // remember the exams a student opens 
   const a = e.target.closest("#hub-static a.exam.live, #hub-static a.pop"); if(!a || !a.dataset.id) return;
   try{ const r = JSON.parse(localStorage.getItem("lwa_recent")||"[]").filter(x=>x!==a.dataset.id); r.unshift(a.dataset.id); localStorage.setItem("lwa_recent", JSON.stringify(r.slice(0,3))); }catch(_){}
 }, true);
+document.addEventListener("click", e=>{   // "All Exams", the logo or "← All exams" always come back to the board tiles, not the last board opened
+  if(!HUBPAGE) return; const a = e.target.closest && e.target.closest("a[href]"); if(!a || a.dataset.act) return;
+  const raw = a.getAttribute("href"); let home = raw==="#exams";
+  if(!home){ try{ const u = new URL(a.href, location.href); home = u.origin===location.origin && /^\/(index\.html)?$/.test(u.pathname) && !u.hash; }catch(_){} }
+  if(home){ UI.exCat = "all"; UI.exQ = ""; }
+}, true);
 document.addEventListener("click", e=>{   // move between views without reloading the page
   if(!PATHMODE || e.defaultPrevented || e.button!==0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
   const a = e.target.closest && e.target.closest("a[href]"); if(!a || (a.target && a.target!=="_self") || a.hasAttribute("download")) return;
