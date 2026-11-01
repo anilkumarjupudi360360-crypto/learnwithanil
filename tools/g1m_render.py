@@ -218,7 +218,7 @@ def render(t):
 
 CSS = ('.dg{margin:12px 0 14px;padding:0}.dg figcaption{font-size:13.5px;color:var(--muted);margin-top:6px;text-align:center}'
        '.dg svg{width:100%;height:auto;display:block;background:var(--surface);border:1px solid var(--line);border-radius:10px}'
-       '.dg-flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px}.dg-step{flex:1 1 120px;background:var(--accent-soft);border:1.5px solid var(--accent);'
+       '.dg-flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px}.dg-step{flex:1 1 90px;min-width:0;background:var(--accent-soft);border:1.5px solid var(--accent);'
        'border-radius:9px;padding:7px 9px;font-size:14.5px;line-height:1.35;font-weight:600;text-align:center}'
        '.dg-arr{flex:0 0 18px;height:18px;position:relative}.dg-arr::before{content:"\\2192";position:absolute;inset:0;text-align:center;color:var(--accent);font-weight:800;font-size:18px;line-height:18px}'
        '@media (max-width:640px){.dg-flow{flex-direction:column;align-items:stretch}.dg-step{flex:none}.dg-arr::before{content:"\\2193"}.dg-arr{flex:none;width:100%}}'
