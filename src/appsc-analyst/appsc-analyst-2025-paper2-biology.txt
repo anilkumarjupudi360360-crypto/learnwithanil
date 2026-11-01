@@ -1,0 +1,1372 @@
+# appsc-analyst-2025-paper2-biology.txt: APPSC official paper, answers from APPSC's final key (APOnline master question paper, correct option ticked).
+# Typed from /home/claude/afro/raw/afro-an24-p2-biology-final.pdf; checked by a second reader. Questions APPSC ignored for all candidates are left out.
+
+Q 1 | bio | Bacteria & Viruses
+Bacterial cell walls contain which of the following types of structural polysaccharides?
+(1) Chitin
+(2) Hyaluronic acid
+(3) Peptidoglycan
+(4) Cellulose
+= 3
+~ Peptidoglycan (murein), made of alternating N-acetylglucosamine and N-acetylmuramic acid units cross-linked by short peptides, is the structural polysaccharide of bacterial cell walls. Chitin occurs in fungal walls and arthropod exoskeletons, cellulose in plant cell walls, and hyaluronic acid in animal connective tissue.
+
+Q 2 | bio | Bacteria & Viruses
+Select the option that is correct regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Some bacteria demonstrate chemolithotrophy, which allows them to oxidise inorganic substances for energy production.
+Reason (R): Bacteria lack mitochondria; hence they completely rely on glycolysis for ATP synthesis.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A .
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 3
+~ The assertion is true: chemolithotrophs such as Nitrosomonas, Nitrobacter and Thiobacillus oxidise inorganic substances (NH3, NO2-, H2S, Fe2+) to obtain energy. The reason is false: bacteria do lack mitochondria, but they make ATP by respiration on the plasma membrane, by photophosphorylation or by fermentation, so they do not depend on glycolysis alone.
+
+Q 3 | bio | Bacteria & Viruses
+Match the following names of bacteria in Column A with their uses/harmful effects in column B.
+Column A (Bacteria) | Column B (Use/Harmful Effect)
+1. Mycobacterium sp. | a. Food poisoning
+2. Lactobacillus sp. | b. Antibiotics production
+3. Staphylococcus sp. | c. Yoghurt preparation
+4. Streptomyces sp. | d. Causes tuberculosis
+(1) 1-d; 2-c; 3-a; 4-b
+(2) 1-a; 2-c; 3-b; 4-d
+(3) 1-b; 2-a; 3-d; 4-c
+(4) 1-c; 2-a; 3-d; 4-b
+= 1
+~ Mycobacterium tuberculosis causes tuberculosis (1-d), Lactobacillus ferments milk into yoghurt (2-c), Staphylococcus aureus toxins cause food poisoning (3-a), and Streptomyces is the main source of antibiotics such as streptomycin (4-b).
+
+Q 4 | bio | Bacteria & Viruses
+Which of the following Eubacteria is an example of a species that can survive in extreme environments through the formation of endospores?
+(1) Bacillus subtilis
+(2) Escherichia coli
+(3) Staphylococcus aureus
+(4) Pseudomonas aeruginosa
+= 1
+~ Bacillus subtilis (like other Bacillus and Clostridium species) forms endospores that resist heat, drying, radiation and chemicals, so it survives extreme conditions. E. coli, Staphylococcus aureus and Pseudomonas aeruginosa do not form endospores.
+
+Q 5 | bio | Bacteria & Viruses
+What is the term for the classification of Archaea based on their membrane property?
+(1) Glycerol ether lipid classification
+(2) Sugar classification
+(3) Glycolipid classification
+(4) Phospholipid classification
+= 1
+~ Archaeal membranes contain glycerol ether lipids, in which isoprenoid chains are joined to glycerol by ether bonds (diethers and tetraethers). Bacteria and eukaryotes instead have ester-linked fatty-acid phospholipids, so phospholipid is not the archaeal feature.
+
+Q 6 | bio | Bacteria & Viruses
+Match the following archaea groups with their respective characteristics.
+Archaea Group | Characteristics
+1. Methanogenic archaea | a. Thermoacidophilic and chemoorganotrophic
+2. Cell wall less archaea | b. Extremely thermophilic
+3. Archaeal sulphate reducer | c. Can use light energy to produce ATP
+4. Extremely halophilic archaea | d. Methane is the major metabolic end product
+(1) 1-d, 2-a, 3-b, 4-c
+(2) 1-a, 2-b, 3-c, 4-d
+(3) 1-d, 2-a, 3-c, 4-b
+(4) 1-c, 2-b, 3-a, 4-d
+= 1
+~ Methanogens produce methane as the main end product (1-d). Cell-wall-less archaea such as Thermoplasma are thermoacidophilic chemoorganotrophs (2-a), the sulphate reducer Archaeoglobus is extremely thermophilic (3-b), and extreme halophiles such as Halobacterium use bacteriorhodopsin to make ATP from light (4-c).
+
+Q 7 | bio | Bacteria & Viruses
+Match the terms in Column A with their correct description in Column B.
+Column A | Column B
+1. Acetobacter aceti | a. Methane formation
+2. Methanobacterium | b. Butyric acid formation
+3. Clostridium butylicum | c. Acetic acid formation
+4. Azotobacter | d. Biofertiliser formation
+(1) 1-a, 2-b, 3-d, 4-c
+(2) 1-c, 2-a, 3-b, 4-d
+(3) 1-b, 2-d, 3-a, 4-c
+(4) 1-a, 2-d, 3-b, 4-c
+= 2
+~ Acetobacter aceti oxidises ethanol to acetic acid (1-c), Methanobacterium forms methane (2-a), Clostridium butylicum (butyricum) ferments sugars to butyric acid (3-b), and Azotobacter is a free-living nitrogen fixer used as a biofertiliser (4-d).
+
+Q 8 | bio | Bacteria & Viruses
+Which of the following types of inclusions is typically found in Eubacterial cells and serves as a storage site for carbon and energy?
+(1) Glycogen granules
+(2) Lipid inclusions
+(3) Polyphosphate granules
+(4) Carboxysomes
+= 1
+~ Glycogen granules are the carbon and energy reserve most commonly found in eubacteria such as E. coli and Bacillus. Polyphosphate (volutin) granules store phosphate and carboxysomes hold RuBisCO for CO2 fixation. Poly-beta-hydroxybutyrate (lipid) inclusions also store carbon and energy in some bacteria, which makes option 2 the tempting alternative. (Official key; some sources differ.)
+
+Q 9 | bio | Bacteria & Viruses
+Read the following statement and select the correct conclusion about the mode of nutrition of the bacterium without making assumptions.
+Statement: A bacterium is only able to grow in a medium containing CO2, H2O and inorganic salts.
+(1) It is a heterotroph.
+(2) It is an autotroph.
+(3) It is a mixotroph.
+(4) It is a saprotroph.
+= 2
+~ A bacterium that grows on CO2, water and inorganic salts alone builds all its organic compounds from CO2, which is the definition of an autotroph (photo- or chemoautotroph). Heterotrophs and saprotrophs need ready-made organic carbon, and mixotrophs use both organic and inorganic sources, which the statement does not say.
+
+Q 10 | bio | Bacteria & Viruses
+Which of the following is a distinct group within the domain Archaea?
+(1) Methanogens
+(2) Cyanobacteria
+(3) Chloroxybacteria
+(4) Green sulphur bacteria
+= 1
+~ Methanogens (Methanobacterium, Methanococcus) form a distinct group of Archaea, along with extreme halophiles and thermoacidophiles. Cyanobacteria, chloroxybacteria (prochlorophytes) and green sulphur bacteria are all members of domain Bacteria.
+
+Q 14 | bio | Bacteria & Viruses
+What is the term for the process by which bacteria become temporarily dormant to resist the effect of antibiotics?
+(1) Sporulation
+(2) Stationary phase
+(3) Persister cell formation
+(4) Quorum sensing
+= 3
+~ Persister cells are a small fraction of a bacterial population that enter a temporary, non-growing dormant state and tolerate antibiotics without being genetically resistant; they resume growth once the drug is removed. Sporulation is a different, specialised survival process, stationary phase is a growth stage, and quorum sensing is cell-density signalling.
+
+Q 15 | bio | Bacteria & Viruses
+Which of the following is a nitrogen-fixing heterotrophic soil bacteria?
+(1) Clostridium butyricum
+(2) Pseudomonas aeruginosa
+(3) Nitrosococcus nitrosus
+(4) Nostoc commune
+= 1
+~ Clostridium butyricum is a free-living, anaerobic, heterotrophic soil bacterium that fixes atmospheric nitrogen. Nitrosococcus is a chemolithotrophic ammonia oxidiser, Nostoc is a photosynthetic nitrogen-fixing cyanobacterium (an autotroph), and Pseudomonas aeruginosa is not a significant nitrogen fixer.
+
+Q 16 | bio | Bacteria & Viruses
+Which of the following pairs of bacteria are used in the production of yogurt?
+(1) Streptococcus thermophilus and Lactobacillus delbrueckii subsp. bulgaricus
+(2) Lactobacillus acidophilus and Streptococcus thermophilus
+(3) Bifidobacterium bifidum and Streptococcus thermophilus
+(4) Escherichia coli and Streptococcus thermophilus
+= 1,2
+~ Yogurt is traditionally made with a starter of Streptococcus thermophilus and Lactobacillus delbrueckii subsp. bulgaricus (option 1). Lactobacillus acidophilus is also used with S. thermophilus in acidophilus-type yogurt, so APPSC treated the question as ambiguous and accepted options 1 and 2. E. coli is not a food starter, and Bifidobacterium is mainly added as a probiotic.
+
+Q 17 | bio | Bacteria & Viruses
+Read the statement carefully and determine which conclusion logically follows without making assumptions.
+Statement: Eubacteria such as Bacillus and Pseudomonas are used in the production of various industrial products such as detergents and textiles
+Which of the following conclusion is correct?
+(1) The microbes are used for fermentation to produce detergents.
+(2) The microbes are used for extraction of the enzymes to produce detergents.
+(3) The microbes are used for membrane properties to produce detergents.
+(4) The microbes are used for mucilage to produce detergents.
+= 2
+~ Bacillus (for example subtilisin proteases and amylases) and Pseudomonas (lipases) are used as sources of enzymes that are extracted and added to detergents and textile-processing baths. The statement says nothing about fermentation, membrane properties or mucilage, so only the enzyme-extraction conclusion follows without extra assumptions.
+
+Q 18 | bio | Bacteria & Viruses
+What type of virus infects bacteria?
+(1) Virion
+(2) Prion
+(3) Bacteriophage
+(4) Viroid
+= 3
+~ A bacteriophage is a virus that infects bacteria, for example T4 or lambda phage. A virion is any complete virus particle, a prion is an infectious protein, and a viroid is a naked RNA that infects plants.
+
+Q 20 | bio | Bacteria & Viruses
+Which of the following types of viral replication involves the synthesis of a complementary RNA strand from a DNA template?
+(1) Positive-sense RNA replication
+(2) Negative-sense RNA replication
+(3) Reverse transcription
+(4) Transcriptional activation
+= 3
+~ Reverse transcription is the distinctive replication step of retroviruses such as HIV, in which a DNA copy is made from the viral RNA, and it is the only listed option that involves both DNA and RNA in this way. Strictly, reverse transcriptase makes DNA from an RNA template, while making RNA from a DNA template is ordinary transcription, so the wording of the question is flawed. (Official key; some sources differ.)
+
+Q 21 | bio | Bacteria & Viruses
+What is the primary characteristic that distinguishes viruses from other microorganisms?
+(1) Host-mediated replication
+(2) DNA as genetic material
+(3) RNA signalling
+(4) Diverse speciation
+= 1
+~ Viruses are acellular and have no ribosomes or metabolism of their own, so they can multiply only inside a living host cell using the host's machinery. DNA as genetic material is not unique, since many viruses have RNA and all cellular microbes have DNA.
+
+Q 22 | bio | Bacteria & Viruses
+Match the plant/animal viruses in Column A with their characters in Column B.
+Column A (Virus) | Column B (Character)
+1. Tobacco Mosaic Virus (TMV) | a. AIDS
+2. Human Immunodeficiency Virus (HIV) | b. Haemorrhagic fever in humans
+3. Tomato Spotted Wilt Virus (TSWV) | c. Transmitted by thrips
+4. Ebola Virus | d. Chlorosis in leaves
+(1) 1-d; 2-a; 3-c; 4-b
+(2) 1-d; 2-c; 3-a; 4-b
+(3) 1-c; 2-a; 3-b; 4-d
+(4) 1-d; 2-a; 3-b; 4-c
+= 1
+~ Tobacco mosaic virus causes mosaic and chlorosis in leaves (1-d), HIV causes AIDS (2-a), Tomato spotted wilt virus is transmitted by thrips (3-c), and Ebola virus causes haemorrhagic fever in humans (4-b).
+
+Q 23 | bio | Bacteria & Viruses
+Match the terms in Column A with their correct description in Column B.
+Column A | Column B
+1. Tobacco mosaic virus | a. Associated with cervical cancer
+2. Papilloma virus | b. Associated with common cold
+3. HIV | c. Detected by ELISA method
+4. Rhino virus | d. Genetic material is RNA
+(1) 1-d, 2-a, 3-c, 4-b
+(2) 1-d, 2-c, 3-a, 4-b
+(3) 1-a, 2-d, 3-c, 4-b
+(4) 1-b, 2-c, 3-d, 4-a
+= 1
+~ Tobacco mosaic virus has an RNA genome (1-d), human papilloma virus is associated with cervical cancer (2-a), HIV infection is detected by ELISA for antibodies or antigen (3-c), and rhinoviruses cause the common cold (4-b).
+
+Q 24 | bio | Bacteria & Viruses
+What is the term used to describe the viral genome that has been integrated into the host cell's genome?
+(1) Prophage
+(2) Lysogen
+(3) Retrovirus
+(4) Virusoid
+= 1
+~ A prophage is the genome of a bacteriophage integrated into the host bacterial chromosome during the lysogenic cycle and replicated along with it. A lysogen is the bacterium carrying the prophage, a retrovirus is a type of virus, and a virusoid is a small satellite RNA.
+
+Q 25 | bio | Bacteria & Viruses
+Which of the following terms indicates the state of specificity of a virus to a particular cell type, species or host?
+(1) Antigenecity
+(2) Viral tropism
+(3) Retro-transcription
+(4) Virulence
+= 2
+~ Viral tropism is the specificity of a virus for a particular host species, tissue or cell type, determined mainly by host receptors and cellular factors. Virulence is the degree of disease caused, and antigenicity is the ability to provoke an immune response.
+
+Q 26 | bio | Bacteria & Viruses
+What is the name of the viral enzyme produced by the Influenza A Virus that is responsible for the cleavage of the host cell's haemagglutinin protein?
+(1) Neuraminidase
+(2) Peptidase
+(3) Lipase
+(4) Serine dehydrogenase
+= 1
+~ Neuraminidase is the second major surface glycoprotein of influenza A (besides haemagglutinin); it cleaves sialic acid from host-cell glycoproteins, including haemagglutinin, so new virions can be released, and it is the target of oseltamivir and zanamivir. Peptidase, lipase and serine dehydrogenase are not influenza A enzymes. Strictly, cleavage of HA into HA1 and HA2 is done by host proteases, so the wording is loose. (Official key; some sources differ.)
+
+Q 27 | bio | Bacteria & Viruses
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+A: The viral envelope of the Human Cytomegalovirus (HCMV) contains glycoproteins.
+R: The viral envelope of HCMV contains glycoproteins necessary for the virus to attach to and enter host cells.
+(1) Both A and R are correct.
+(2) A is correct but R is incorrect.
+(3) Both A and R are incorrect.
+(4) A is incorrect but R is correct.
+= 1
+~ The envelope of the enveloped Human Cytomegalovirus carries glycoproteins (gB, gH/gL and others), and these glycoproteins bind host-cell receptors and mediate fusion and entry. Both statements are therefore correct.
+
+Q 28 | bio | Bacteria & Viruses
+One distinguishing feature of eukaryotic viruses is that:
+(1) they can only replicate inside the host cell nucleus
+(2) they are infected by bacteriophage
+(3) they do not have capsid
+(4) they do not have DNA
+= 1
+~ The keyed statement reflects the textbook view that many eukaryotic (animal) DNA viruses replicate their genome in the host nucleus. The other options are plainly false: bacteriophages infect bacteria, and viruses have a capsid and a DNA or RNA genome. Note that poxviruses and most RNA viruses replicate in the cytoplasm, so the statement is not universally true. (Official key; some sources differ.)
+
+Q 29 | bio | Bacteria & Viruses
+During infection, eukaryotic viruses attach themselves to certain _____ found on the surface of host cells.
+(1) enzymes
+(2) receptors
+(3) DNA
+(4) ribosomes
+= 2
+~ Viruses begin infection by binding their surface proteins to specific receptor molecules on the host-cell surface, which is also what decides host and tissue range. Enzymes, DNA and ribosomes are not the attachment sites.
+
+Q 30 | bio | Bacteria & Viruses
+Which of the following is a primary characteristic that defines a virus?
+(1) Obligate parasitism
+(2) Symbionts
+(3) Endoparasitism
+(4) Endosymbionts
+= 1
+~ The defining feature of a virus is obligate intracellular parasitism: it cannot reproduce outside a living host cell. Symbionts and endosymbionts live in mutually beneficial association, and endoparasitism is not unique to viruses because many bacteria, protozoa and worms also live inside hosts.
+
+Q 31 | bio | Bacteria & Viruses
+What structural components are found in an icosahedral capsid?
+(1) Pentameres and tetrameres
+(2) Hexameres and octameres
+(3) Pentameres and hexameres
+(4) Tetrameres and octameres
+= 3
+~ An icosahedral capsid has 20 triangular faces, 12 vertices and 30 edges and is built from capsomeres. The 12 vertices are occupied by pentamers (five subunits) while hexamers (six subunits) fill the faces and edges.
+
+Q 32 | bio | Bacteria & Viruses
+Which of the following chromatography techniques is commonly used for the purification of viruses?
+(1) Ion exchange chromatography
+(2) Size exclusion chromatography
+(3) Affinity chromatography
+(4) Hydrophobic interaction chromatography
+= 1,2
+~ Ion-exchange and size-exclusion (gel filtration) chromatography are both widely used to purify viruses and viral vectors, usually after ultracentrifugation or filtration. Affinity and hydrophobic-interaction chromatography are also used for some viruses, but APPSC treated the question as ambiguous and gave credit only for option 1 or option 2. (Official key; some sources differ.)
+
+Q 33 | bio | Bacteria & Viruses
+What is the mechanism of action of the viral reverse transcriptase?
+(1) The viral reverse transcriptase synthesizes double-stranded DNA from a single-stranded RNA template.
+(2) The viral reverse transcriptase synthesizes single-stranded RNA from a single-stranded DNA template.
+(3) The viral reverse transcriptase synthesizes double-stranded DNA from a single-stranded DNA template.
+(4) The viral reverse transcriptase synthesizes double-stranded RNA from a single-stranded RNA template.
+= 1
+~ Reverse transcriptase (an RNA-dependent DNA polymerase) of retroviruses such as HIV copies the single-stranded RNA genome into complementary DNA, removes the RNA with its RNase H activity and then makes the second DNA strand. The result is double-stranded DNA that can integrate into the host genome; the enzyme does not make RNA.
+
+Q 34 | bio | Cell Biology
+Which part of the cell contains ecto-enzymes?
+(1) Cell wall
+(2) Mitochondria
+(3) Centrosome
+(4) Plasma membrane
+= 4
+~ Ecto-enzymes have their active site on the outer face of the plasma membrane, where they act on substances outside the cell (for example 5'-nucleotidase and ecto-ATPases). Mitochondria and the centrosome are intracellular, and the cell wall is not a membrane.
+
+Q 35 | bio | Cell Biology
+Which of the following is majorly present as the primary component in the middle lamella?
+(1) Calcium pectate
+(2) Arabinogalactans
+(3) Cellulose micelles
+(4) Glucan units
+= 1
+~ The middle lamella is the cementing layer between neighbouring plant cells and is made chiefly of calcium (and magnesium) pectate. Cellulose micelles, arabinogalactans and glucan units belong to the primary or secondary wall layers, not to the main body of the middle lamella.
+
+Q 36 | bio | Cell Biology
+What is the name of the protein complex that mediates the transport of proteins from the endoplasmic reticulum to the Golgi apparatus?
+(1) COPII
+(2) COPI
+(3) SNARE
+(4) Clathrin
+= 1
+~ COPII-coated vesicles bud from ER exit sites and carry cargo forward to the ER-Golgi intermediate compartment and the cis-Golgi. COPI mediates retrograde transport back to the ER, clathrin acts at the trans-Golgi network and plasma membrane, and SNAREs control vesicle fusion rather than forming the coat.
+
+Q 37 | bio | Cell Biology
+What is the primary function of the plasmalemma in plant cells, and how does it differ from the tonoplast?
+(1) The plasmalemma regulates ion transport and signaling, while the tonoplast regulates vacuolar pH and ion homeostasis.
+(2) The plasmalemma regulates vacuolar pH and ion homeostasis, while the tonoplast regulates ion transport and signaling.
+(3) The plasmalemma regulates cell wall synthesis and deposition, while the tonoplast regulates vacuolar protein degradation.
+(4) The plasmalemma regulates vacuolar protein degradation, while the tonoplast regulates cell wall synthesis and deposition.
+= 1
+~ The plasmalemma (plasma membrane) controls exchange between the cell and its surroundings, including ion transport and signal reception. The tonoplast bounds the vacuole and, with H+ pumps such as V-ATPase, regulates vacuolar pH and ion homeostasis. The other options swap or misassign these roles.
+
+Q 38 | bio | Cell Biology
+Which of the following elements is NOT present in a primary cell wall?
+(1) Pectin
+(2) Microfibril
+(3) Hemicellulose
+(4) Lignin
+= 4
+~ The primary cell wall consists of cellulose microfibrils embedded in a matrix of hemicellulose and pectin. Lignin is laid down later in the secondary wall of xylem and sclerenchyma cells to give rigidity and waterproofing.
+
+Q 39 | bio | Cell Biology
+Which cell organelle is responsible for lysosome formation?
+(1) Endoplasmic reticulum
+(2) Plasma membrane
+(3) Golgi apparatus
+(4) Cytoplasmic vacuoles
+= 3
+~ Lysosomal hydrolases are made on the rough ER, tagged with mannose-6-phosphate in the Golgi apparatus, and packaged into vesicles that bud from the trans-Golgi network to become lysosomes. The ER makes the enzymes but does not form the lysosomes.
+
+Q 40 | bio | Cell Biology
+Which of the following routes of cellular transport in plant cells involve the function of plasmodesmata?
+(1) Symplastic route
+(2) Apoplastic route
+(3) Transmembrane route
+(4) Extracellular route
+= 1
+~ Plasmodesmata are membrane-lined cytoplasmic channels that pass through the walls of adjacent plant cells, so they provide the symplastic route, from cytoplasm to cytoplasm. The apoplastic route runs through cell walls and intercellular spaces without crossing membranes.
+
+Q 41 | bio | Cell Biology
+What is the primary function of the tonoplast in plant cells?
+(1) To regulate the transport of ions and metabolites across the vacuolar membrane
+(2) To regulate protein folding in the ER
+(3) To provide structural support and maintain cell shape
+(4) To induce cytosolic trafficking
+= 1
+~ The tonoplast is the single membrane around the central vacuole of a plant cell. Its pumps, channels and carriers (V-ATPase, H+-pyrophosphatase, antiporters) control the movement of ions and metabolites into and out of the vacuole. It does not fold ER proteins or provide structural support.
+
+Q 42 | bio | Cell Biology
+What is the function of the cristae in mitochondria?
+(1) The cristae are involved in the synthesis of ATP and provide increased surface area of inner membrane.
+(2) The cristae are involved in the synthesis of NADH, and they increase the surface area of the inner membrane.
+(3) The cristae are involved in the citric acid cycle, and they increase the surface area of the inner membrane.
+(4) The cristae are involved in the electron transport chain, and they increase the surface area of the outer membrane.
+= 1
+~ Cristae are folds of the inner mitochondrial membrane that carry the electron transport chain and ATP synthase, so they enlarge the surface for ATP synthesis. NADH is produced mainly in the matrix by the citric acid cycle, and the area increased is that of the inner, not the outer, membrane.
+
+Q 43 | bio | Cell Biology
+Which of the following enzymes is NOT typically found in lysosomes?
+(1) Acid phosphatase
+(2) Cathepsin D
+(3) Lysosomal acid lipase
+(4) Alkaline phosphatase
+= 4
+~ Lysosomal enzymes are acid hydrolases that work at about pH 4.5 to 5, such as acid phosphatase, cathepsins and lysosomal acid lipase. Alkaline phosphatase works at alkaline pH and is found mainly on cell membranes, not in lysosomes.
+
+Q 44 | bio | Cell Biology
+Which of the following enzymes is typically found in the Golgi body?
+(1) Protease
+(2) Glycosidase
+(3) Phospholipase
+(4) ATPase
+= 2
+~ The Golgi body modifies glycoproteins with glycosyltransferases and glycosidases (for example mannosidases that trim N-linked sugar chains). Phospholipases and general proteases are characteristic of lysosomes, and ATPase is typical of mitochondria and membrane pumps.
+
+Q 45 | bio | Cell Biology
+Read the statement carefully and determine which conclusion logically follows without making assumptions.
+Statement: The plasma membrane is dynamic and can change its shape and structure in response to various stimuli.
+Which of the conclusion is correct?
+(1) This involves the movement of molecules across the membrane in response to various stimuli.
+(2) The components of the membrane are rigid and do not reform in response to external signal.
+(3) The components of the membrane are broken down by degrading enzymes.
+(4) The component lipids and proteins of the membrane can change in response to external signal.
+= 1,4
+~ A dynamic plasma membrane (fluid mosaic model) means that its lipids and proteins can rearrange, and that molecules move across or within it, in response to signals. Both conclusions 1 and 4 follow from this, so APPSC accepted either. Rigid, non-reforming components (2) contradict the statement, and enzymatic breakdown (3) is not implied.
+
+Q 46 | bio | Cell Biology
+Ribophorins I and II present in the rough endoplasmic reticulum (RER) are __________.
+(1) phospholipids
+(2) glycoproteins
+(3) polypeptides
+(4) steroids
+= 2
+~ Ribophorins I and II are integral glycoproteins of the rough ER membrane that bind the large ribosomal subunit and help hold ribosomes on the ER during translation. They are proteins, not phospholipids or steroids.
+
+Q 47 | bio | Cell Biology
+Match Column A with Column B.
+Column A | Column B
+1. Tonoplast | a. formed when the food particles are engulfed during phagocytosis
+2. Contractile vacuole | b. present in photosynthetic bacteria
+3. Food vacuoles | c. membrane surrounding the vacuole
+4. Gas vacuoles | d. associated with osmoregulation and excretion
+(1) 1-c, 2-d, 3-a, 4-b
+(2) 1-c, 2-b, 3-d, 4-a
+(3) 1-d, 2-a, 3-c, 4-b
+(4) 1-a, 2-d, 3-b, 4-c
+= 1
+~ The tonoplast is the membrane surrounding the vacuole (1-c), the contractile vacuole handles osmoregulation and excretion in protozoa (2-d), food vacuoles form by phagocytosis (3-a), and gas vacuoles give buoyancy in photosynthetic bacteria (4-b).
+
+Q 48 | bio | Cell Biology
+What is the primary function of the Arp2/3 complex in the regulation of actin filament dynamics?
+(1) To stabilise existing actin filaments
+(2) To nucleate branched actin filaments
+(3) To enhance Rho GTPase activity
+(4) To enhance actin-tubulin interaction
+= 2
+~ The Arp2/3 complex binds to the side of an existing actin filament and nucleates a new filament at about 70 degrees, producing branched actin networks such as those in lamellipodia. Formins, not Arp2/3, nucleate unbranched filaments, and stabilisation is done by other proteins.
+
+Q 49 | bio | Cell Biology
+What is the function of nucleosomes?
+(1) To unwind DNA
+(2) To condense DNA
+(3) To denature DNA
+(4) To replicate DNA
+= 2
+~ A nucleosome is about 146 bp of DNA wrapped around a histone octamer (two each of H2A, H2B, H3 and H4), and it is the basic unit of chromatin packaging that condenses DNA. Unwinding is done by helicases and replication by DNA polymerases, and nucleosomes do neither.
+
+Q 50 | bio | Cell Biology
+During what stage of the cell cycle, does the size of each daughter centriole reach maturity?
+(1) Metaphase
+(2) Late prophase
+(3) Anaphase
+(4) Telophase
+= 2
+~ Centrioles duplicate once per cycle: a daughter procentriole appears next to each mother centriole in S phase, lengthens through G2 and is generally described as reaching full size by late prophase, when the duplicated centrosomes move apart to form the spindle poles. Textbooks vary on whether this is late G2 or late prophase. (Official key; some sources differ.)
+
+Q 51 | bio | Cell Biology
+Which of the following types of chromatin is characterised by a high degree of compaction and a low gene expression?
+(1) Euchromatin
+(2) Heterochromatin
+(3) Chromatin fibres
+(4) Nucleosomes
+= 2
+~ Heterochromatin is densely compacted, stains darkly and is mostly transcriptionally silent, whereas euchromatin is loosely packed and active. Chromatin fibres and nucleosomes are general structural terms, not compaction states linked with low gene expression.
+
+Q 52 | bio | Molecular Biology
+Based on the given statement, which of the following conclusions is correct?
+Statement: Nucleosomes can be modified by the addition of histone modifications
+(1) Nucleosomes are important for regulating gene expression.
+(2) Nucleosomes are non-active regions of chromosome.
+(3) Nucleosomes are important for mitosis.
+(4) Nucleosomes do not undergo gene silencing.
+= 1
+~ Histone modifications such as acetylation, methylation and phosphorylation change how tightly nucleosomes pack DNA and which regulatory proteins can bind, so nucleosomes help regulate gene expression. Nucleosomes occur along all chromatin (not only inactive regions) and can take part in gene silencing, so options 2 and 4 are wrong.
+
+Q 53 | bio | Cell Biology
+What is the primary function of the nuclear lamina in the nuclear membrane?
+(1) To regulate gene expression
+(2) To facilitate DNA replication
+(3) To maintain the structure of the nucleus
+(4) To control the movement of molecules in and out of the nucleus
+= 3
+~ The nuclear lamina is a meshwork of lamin intermediate filaments beneath the inner nuclear membrane. It gives the nucleus its shape and mechanical strength and anchors chromatin, while movement of molecules is controlled by the nuclear pore complexes.
+
+Q 54 | bio | Cell Biology
+Two distinct components of chromatin can be differentiated by staining with _____-specific dyes.
+(1) chromosome
+(2) genes
+(3) RNA
+(4) DNA
+= 4
+~ Chromatin appears as lightly stained euchromatin and darkly stained heterochromatin when treated with DNA-specific dyes such as Feulgen stain or DAPI. The differential staining reflects the different packing of the DNA, not any difference in chromosomes, genes or RNA.
+
+Q 55 | bio | Cell Biology
+_____ refers to areas of chromatin that are extremely densely packed with fibres.
+(1) Euchromatin
+(2) Heterochromatin
+(3) Chromosome territories
+(4) Nucleosome
+= 2
+~ Heterochromatin consists of regions of chromatin that are highly condensed and densely packed with fibres, and it stains darkly. Euchromatin is the loosely packed form, a chromosome territory is the nuclear region occupied by one chromosome, and the nucleosome is the basic unit of chromatin.
+
+Q 58 | bio | Cell Biology
+Which of the following statements is INCORRECT about interphase nucleus?
+(1) It has one or more spherical nucleoli.
+(2) It has chromosomes, which are extremely long and complex nucleoprotein fibres.
+(3) The nuclear envelope consists of two parallel membranes separated by the perinuclear space.
+(4) The outer membrane of the nucleus contains ribosomes.
+= 2
+~ In interphase the genetic material is dispersed as thin chromatin fibres; distinct condensed chromosomes appear only during cell division, so statement 2 is the incorrect one. The other statements are correct: nucleoli are spherical, the envelope has two membranes with a perinuclear space, and the outer membrane is continuous with the rough ER and bears ribosomes.
+
+Q 59 | bio | Molecular Biology
+Select the option that is correct regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Heterochromatin is a dynamic structure that can undergo changes in response to environmental cues.
+Reasoning (R): Heterochromatin is regulated by chromatin-modifying enzymes that can respond to environmental signals, such as DNA damage or nutrient availability.
+(1) A is true but R is false.
+(2) Both A and R are true and R is the correct reason for A.
+(3) A is false but R is true.
+(4) Both A and R are true but R is not the correct reason for A.
+= 2
+~ Heterochromatin, especially facultative heterochromatin, is not fixed: histone-modifying enzymes (methyltransferases, deacetylases, demethylases, kinases) respond to signals such as DNA damage or nutrient availability and remodel it. The reason therefore explains the assertion, so both are true and R is the correct reason.
+
+Q 60 | bio | Cell Biology
+What is the main function of euchromatin?
+(1) To regulate gene expression
+(2) To maintain chromosome stability
+(3) To facilitate DNA replication
+(4) To repair DNA damage
+= 1
+~ Euchromatin is loosely packed, gene-rich chromatin that is accessible to the transcription machinery, so its main role is to allow and regulate gene expression. Chromosome stability is maintained largely by heterochromatin at centromeres and telomeres.
+
+Q 61 | bio | Cell Biology
+What is the average number of base pairs present in a nucleosome?
+(1) 85 bp
+(2) 75 bp
+(3) 125 bp
+(4) 200 bp
+= 4
+~ A nucleosome core particle has about 146 bp of DNA around the histone octamer, and linker DNA of roughly 50 to 60 bp is added, giving an average nucleosome repeat of about 200 bp. The 75, 85 and 125 bp options do not fit this.
+
+Q 62 | bio | Molecular Biology
+Which of the following conclusions is correct for the given statement?
+Euchromatin is a type of chromatin that is highly sensitive to micrococcal nuclease digestion and gets regulated by chromatin remodelling.
+(1) Euchromatin is a type of chromatin that is highly compacted.
+(2) Euchromatin is a type of chromatin that is only found in prokaryotic cells.
+(3) Euchromatin is a type of chromatin that is highly accessible to transcription factors.
+(4) Euchromatin does not involve in gene expression.
+= 3
+~ Euchromatin is loosely packed, gene-rich and sensitive to micrococcal nuclease, so its DNA is accessible to transcription factors and RNA polymerase. Option 1 describes heterochromatin, option 2 is wrong because euchromatin is a feature of eukaryotic chromatin, and option 4 reverses its role in gene expression.
+
+Q 63 | bio | Molecular Biology
+What is the primary function of the telomere repeat-binding factor (TRF) in telomere organisation?
+(1) To recruit telomerase to the telomere
+(2) To regulate the length of the telomere repeat
+(3) To stabilise the telomere loop structure
+(4) To recruit chromatin-modifying enzymes to the telomere
+= 2,3
+~ TRF1 and TRF2 are the duplex telomeric-DNA-binding proteins of the shelterin complex. TRF1 acts as a negative regulator of telomere length (option 2), and TRF2 promotes the t-loop and protects chromosome ends (option 3), so APPSC accepted both. Telomerase is recruited mainly through TPP1 and POT1 rather than by the TRFs.
+
+Q 64 | bio | Genetics & Evolution
+Which of the following plants has an XX/XY sex chromosome system?
+(1) Melandrium album
+(2) Helianthus annuus
+(3) Catharanthus roseus
+(4) Cannabis sativa
+= 1,4
+~ Silene latifolia (formerly Melandrium album) and Cannabis sativa are dioecious plants with an XX (female) / XY (male) sex chromosome system, so APPSC accepted options 1 and 4. Sunflower (Helianthus annuus) and Catharanthus roseus bear bisexual flowers and have no sex chromosomes.
+
+Q 65 | bio | Genetics & Evolution
+Match the columns (A) and (B) for the characters of sex chromosome in plants.
+Column A | Column B
+1. Heterogamety | a. Chromosomes that do not determine sex
+2. Homogamety | b. Chromosomes that determine sex
+3. Sex chromosomes | c. Production of only one type of gamete
+4. Autosomes | d. Production of two types of gametes
+(1) 1-d; 2-c; 3-b; 4-a
+(2) 1-c; 2-b; 3-d; 4-a
+(3) 1-d; 2-b; 3-c; 4-a
+(4) 1-a; 2-d; 3-c; 4-b
+= 1
+~ Heterogamety means producing two types of gametes (1-d), homogamety means producing one type of gamete (2-c), sex chromosomes determine sex (3-b), and autosomes do not determine sex (4-a).
+
+Q 66 | bio | Genetics & Evolution
+Having an additional copy of chromosome number 21 causes the hereditary disorder known as _____.
+(1) Down’s syndrome
+(2) thalassemia
+(3) phenylketonuria
+(4) Turner’s syndrome
+= 1
+~ Trisomy 21, an extra copy of chromosome 21 (47 chromosomes), causes Down's syndrome. Thalassaemia and phenylketonuria are single-gene recessive disorders, and Turner's syndrome is monosomy of the X chromosome (45,X).
+
+Q 67 | bio | Genetics & Evolution
+What exactly does tetrad analysis mean in genetics?
+(1) To analyse three products produced by meiosis
+(2) To analyse four products produced by meiosis
+(3) To analyse three products produced by mitosis
+(4) To analyse four products produced by mitosis
+= 2
+~ Tetrad analysis studies the four haploid products of a single meiosis (for example the spores of yeast, Neurospora or Chlamydomonas) kept together, which lets segregation and crossing over be observed directly. Meiosis yields four products, not three, and mitosis does not give tetrads.
+
+Q 68 | bio | Genetics & Evolution
+Match Column A with Column B.
+Column A | Column B
+1. Conjugation | a. When a virus mediates the transfer of genes between bacteria
+2. Plasmids | b. The unidirectional transport of DNA across cells via a cytoplasmic bridge
+3. Transduction | c. Contains the genes essential for bacterial conjugation.
+4. F plasmid | d. Extra chromosomal genetic material
+(1) 1-b, 2-d, 3-a, 4-c
+(2) 1-a, 2-d, 3-c, 4-b
+(3) 1-c, 2-b, 3-a, 4-d
+(4) 1-b, 2-a, 3-c, 4-d
+= 1
+~ Conjugation is the one-way transfer of DNA through a cytoplasmic bridge (1-b), plasmids are extrachromosomal DNA (2-d), transduction is virus-mediated gene transfer between bacteria (3-a), and the F plasmid carries the genes essential for conjugation (4-c).
+
+Q 69 | bio | Genetics & Evolution
+Which of the following conclusions is correct for the given statement?
+A cross between two mice, one with black fur (B) and one with white fur (b), produces an F1 generation with grey fur.
+(1) The black fur trait is dominant.
+(2) The white fur trait is dominant.
+(3) The grey fur trait is the result of incomplete dominance.
+(4) The grey fur trait is the result of codominance.
+= 3
+~ When the heterozygote shows an intermediate phenotype (grey) between black and white parents, neither allele is dominant, which is incomplete dominance. In codominance both parental traits would appear side by side (for example black and white patches), not a blend.
+
+Q 70 | bio | Genetics & Evolution
+What is the primary purpose of using transformation to map genes?
+(1) To determine the dominance or recessiveness of a gene
+(2) To identify the chromosomal location of a gene
+(3) To study the expression of a gene in different tissues
+(4) To determine the function of a gene
+= 2
+~ In transformation mapping, genes that lie close together on the bacterial chromosome are often carried on the same DNA fragment and transform the cell together (co-transformation). The frequency of co-transformation therefore shows linkage, that is, the chromosomal location of genes relative to each other. Dominance, tissue expression and gene function are not determined by this method.
+
+Q 71 | bio | Genetics & Evolution
+A geneticist performs a tetrad analysis on a cross between two strains of yeast, one with the genotype ABC and the other with the genotype abc. The results show that the genes A, B, and C are linked and are located on the same chromosome. What type of tetrad analysis is this?
+(1) Two-point cross
+(2) Three-point cross
+(3) Four-point cross
+(4) Five-point cross
+= 2
+~ Following three linked genes (A, B and C) together in a cross of ABC with abc is a three-point analysis, which gives gene order and distances. A two-point cross follows only two genes, and no four-point or five-point cross is involved here.
+
+Q 72 | bio | Genetics & Evolution
+What is the term for the bacterial plasmid that is responsible for initiating conjugation?
+(1) F plasmid
+(2) R plasmid
+(3) Col plasmid
+(4) Ti plasmid
+= 1
+~ The F (fertility) plasmid carries the tra genes for pilus formation and DNA transfer, so cells with it (F+) start conjugation. R plasmids carry antibiotic resistance, Col plasmids code for colicins, and the Ti plasmid of Agrobacterium causes crown-gall tumours in plants.
+
+Q 73 | bio | Genetics & Evolution
+What is the phenomenon where the presence of one crossover event affects the frequency of another crossover event?
+(1) Interference
+(2) Linkage
+(3) Crossing over
+(4) Genetic drift
+= 1
+~ Interference is the effect by which one crossover reduces (positive interference) the chance of another crossover nearby. It is measured by the coefficient of coincidence, where interference = 1 - coincidence. Linkage and crossing over are different phenomena, and genetic drift concerns allele frequencies in populations.
+
+Q 74 | bio | Genetics & Evolution
+What is the fundamental principle of Mendelian genetics that states that each pair of alleles separates from each other during gamete formation?
+(1) Law of segregation
+(2) Law of independent assortment
+(3) Law of dominance
+(4) Law of epistasis
+= 1
+~ Mendel's law of segregation states that the two alleles of a gene separate during gamete formation so that each gamete receives only one. Independent assortment concerns different genes, dominance concerns which allele is expressed, and epistasis is not one of Mendel's laws.
+
+Q 75 | bio | Genetics & Evolution
+Identify the Mendelian Law from the following statement.
+‘Two copies of genetic factors separate during gamete formation, allowing children to inherit a single factor from each parent.’
+(1) Law of dominance
+(2) Law of independent assortment
+(3) Law of segregation
+(4) Law of chromosomal inheritance
+= 3
+~ The statement describes the law of segregation (Mendel's first law, or law of purity of gametes): the two copies of a factor separate during gamete formation, so each offspring gets one from each parent. The chromosomal theory of inheritance is Sutton and Boveri's later proposal, not a Mendelian law.
+
+Q 76 | bio | Genetics & Evolution
+Match column A with column B.
+Column A | Column B
+1. Yeast | a. Ustilago hordei
+2. Neurospora | b. Chlamydomonas rheinhardi
+3. Ordered tetrads | c. Four spores are present in tetrad
+4. Unordered tetrads | d. Eight spores are present in tetrad
+(1) 1-c, 2-d, 3-a, 4-b
+(2) 1-c, 2-b, 3-a, 4-d
+(3) 1-a, 2-b, 3-c, 4-d
+(4) 1-a, 2-d, 3-c, 4-b
+= 1
+~ Yeast gives four spores per ascus (c), while Neurospora gives eight ascospores because the four meiotic products undergo one post-meiotic mitosis (d). Ustilago hordei is a standard example of ordered tetrads (a) and Chlamydomonas reinhardtii of unordered tetrads (b), which gives 1-c, 2-d, 3-a, 4-b.
+
+Q 78 | bio | Genetics & Evolution
+Which of the following best describes 'cytoplasmic inheritance'?
+(1) Mitochondrial inheritance
+(2) X-linked recessive inheritance
+(3) Autosomal inheritance
+(4) X-linked dominant inheritance
+= 1
+~ Cytoplasmic (extranuclear) inheritance is the transmission of traits through genes carried by cytoplasmic organelles, mainly mitochondrial DNA (and chloroplast DNA in plants), usually through the egg from the mother. X-linked and autosomal inheritance involve nuclear genes on chromosomes and follow Mendelian patterns.
+
+Q 79 | bio | Genetics & Evolution
+What does transformation-based gene mapping help to determine?
+(1) Relative positions of genes on a chromosome
+(2) Distance between two genes on a chromosome
+(3) Rate of replication
+(4) Type of mutation
+= 1,2
+~ In transformation mapping, genes that lie close together on a DNA fragment are taken up and incorporated together (co-transformation) far more often than distant genes. The co-transformation frequency therefore shows how close genes are and in what order they lie, so both relative position and distance can be derived, and APPSC accepted options 1 and 2. It says nothing about the rate of replication or the type of mutation.
+
+Q 80 | bio | Genetics & Evolution
+Two genomic units that exhibit cis-trans phenomena are regarded to be the same functional unit, known as a/an _____.
+(1) intron
+(2) cistron
+(3) cristae
+(4) muton
+= 2
+~ In Benzer's cis-trans (complementation) test, two mutations that fail to complement when placed on different chromosomes (trans) lie in the same functional unit, which he called a cistron. A muton is the smallest unit of mutation, an intron is a non-coding intervening sequence, and cristae are folds of the inner mitochondrial membrane.
+
+Q 81 | bio | Genetics & Evolution
+Two genes, X and Y, are located on the same chromosome. The distance between the two genes is 10 map units. A geneticist performs a cross between two parents with the genotypes XxYY and xxYY. What is the expected frequency of non-recombinant offspring?
+(1) 80%
+(2) 90%
+(3) 10%
+(4) 99%
+= 2
+~ One map unit equals 1% recombination, so genes 10 map units apart give about 10% recombinant and 90% non-recombinant progeny. The cross as printed (XxYY x xxYY) is homozygous YY in both parents, so recombination cannot actually be detected in it and the question is loosely framed; the keyed 90% follows the map-unit definition. (Official key; some sources differ.)
+
+Q 82 | bio | Genetics & Evolution
+A _____________ epistasis occurs when one gene's dominant allele (B) inhibits the expression of another gene's dominant allele (A) at a ratio of 13 : 3.
+(1) dominant suppression
+(2) recessive suppression
+(3) dominant phenotype
+(4) dominant regression
+= 1
+~ In dominant suppression (inhibitory gene action) a dominant allele at one locus masks the effect of the other gene, so an F2 from a dihybrid cross shows 13 suppressed to 3 expressing phenotypes. A classic example is feather colour in fowl, where dominant I suppresses the colour gene C: 13 white (9 C_I_, 3 ccI_, 1 ccii) to 3 coloured (C_ii). Recessive epistasis gives a different ratio, 9:3:4.
+
+Q 83 | bio | Genetics & Evolution
+According to gene mapping, what does a three-point test cross indicate?
+(1) The genotype of the parent
+(2) The sequencing of genes
+(3) The distance between genes
+(4) The speed of replication
+= 2,3
+~ A three-point test cross follows three linked genes at once: the rarest (double-crossover) class reveals which gene lies in the middle, giving the gene order, and the recombination frequencies between adjacent genes give the map distances. Because both order and distance are obtained, APPSC accepted options 2 and 3. It does not measure replication speed, and the parental genotype is already known in a test cross.
+
+Q 84 | bio | Genetics & Evolution
+A researcher observes that a strain of bacteria has acquired antibiotic resistance through the transfer of a plasmid. What is the most likely mechanism by which this occurred?
+(1) Conjugation
+(2) Transduction
+(3) Transformation
+(4) Mutation
+= 1
+~ Resistance (R) plasmids pass directly from one bacterium to another through a sex pilus during conjugation, which is the commonest route for spread of plasmid-borne resistance. Transduction (phage-carried DNA) and transformation (uptake of free DNA) can also move DNA, but they are less typical for plasmid transfer, and mutation does not transfer a plasmid at all.
+
+Q 85 | bio | Genetics & Evolution
+A geneticist performs a tetrad analysis on a cross between two yeast strains, one with the genotype AB and the other with the genotype ab. The results show that 50% of the tetrads are parental ditype (AB and ab), 25% are non-parental ditype (Ab and aB), and 25% are tetratype (AB, Ab, aB, and ab). What can be concluded from these results?
+(1) The genes A and B are linked and are located on the same chromosome.
+(2) The genes A and B are unlinked and are located on different chromosomes.
+(3) The genes A and B are located on the same chromosome, but are not linked.
+(4) The genes A and B are located on different chromosomes, but are linked.
+= 2
+~ The keyed answer treats the genes as unlinked and on different chromosomes, where parental and non-parental ditypes arise by independent assortment and tetratypes come from a crossover between a gene and its centromere. However, independent assortment normally gives equal PD and NPD, whereas here PD (50%) is twice NPD (25%), which most textbooks read as linkage (option 1). (Official key; some sources differ.)
+
+Q 86 | bio | Genetics & Evolution
+A geneticist identifies a mutation in a gene that results in no change to the amino acid sequence of the protein. What type of mutation is this?
+(1) Missense mutation
+(2) Nonsense mutation
+(3) Frameshift mutation
+(4) Silent mutation
+= 4
+~ A silent mutation changes a codon to a synonymous codon (the genetic code is degenerate), so the same amino acid is inserted and the protein is unchanged. A missense mutation replaces one amino acid with another, a nonsense mutation creates a stop codon, and a frameshift alters the reading frame.
+
+Q 87 | bio | Genetics & Evolution
+What is the primary mechanism by which UV radiation causes DNA damage and mutations?
+(1) Formation of pyrimidine dimers
+(2) Formation of purine dimers
+(3) Breakage of DNA strands
+(4) Alkylation of DNA bases
+= 1
+~ UV light (about 260 nm) is absorbed by adjacent pyrimidines, mostly thymines, on the same strand and joins them covalently as cyclobutane pyrimidine dimers (and 6-4 photoproducts). These distort the helix, block replication and cause mutations if repaired wrongly. Strand breaks are the main lesion of ionising radiation, and alkylation is caused by chemicals such as EMS.
+
+Q 88 | bio | Genetics & Evolution
+What is the effect of a frameshift mutation on protein synthesis?
+(1) It results in the synthesis of a normal protein.
+(2) It results in the synthesis of a protein with a different amino acid sequence.
+(3) It always results in absolute premature termination of protein synthesis.
+(4) It results in the synthesis of a protein with a different function.
+= 2,4
+~ A frameshift (insertion or deletion of a number of nucleotides not divisible by three) shifts the reading frame, so every codon after the mutation is read differently and the amino acid sequence changes from that point, usually giving a protein that no longer works normally. APPSC accepted options 2 and 4 for this reason. Option 3 is wrong because a premature stop codon is common but not guaranteed, and option 1 is clearly wrong.
+
+Q 89 | bio | Genetics & Evolution
+What is the primary mechanism by which ionizing radiation, such as X-rays and gamma rays, causes mutations?
+(1) Base pair substitution
+(2) Frameshift mutation
+(3) DNA strand breakage
+(4) Epigenetic modification
+= 3
+~ X-rays and gamma rays carry enough energy to ionise molecules, directly or through free radicals formed from water, and this produces single- and double-strand breaks in DNA. Base substitutions and frameshifts can arise later from faulty repair of these breaks, but strand breakage is the primary damage. UV, by contrast, mainly forms pyrimidine dimers.
+
+Q 90 | bio | Genetics & Evolution
+Read the following statement and answer the question based on Assertion (A) and Reason (R).
+Assertion: Mitochondrial DNA is responsible for the transmission of traits through cytoplasmic inheritance.
+Reason: Mitochondrial DNA inheritance does not follow mendelian principle.
+(1) Both assertion and reason are correct and the reason is a correct explanation of the assertion.
+(2) Both assertion and reason are correct, but the reason is not a correct explanation of the assertion.
+(3) Assertion is correct but reason is incorrect.
+(4) Assertion is incorrect but reason is correct.
+= 1
+~ Mitochondrial DNA lies outside the nucleus and carries genes passed on through the egg cytoplasm, so it is the basis of cytoplasmic inheritance (A is true). Because it is not distributed by meiotic segregation of chromosomes and comes mostly from the mother, it does not obey Mendel's laws (R is true), and this is exactly why cytoplasmic inheritance differs from nuclear inheritance.
+
+Q 91 | bio | Genetics & Evolution
+According to ‘Panspermia’ theory, the unit of life is termed as _____.
+(1) cells
+(2) spores
+(3) pores
+(4) RNA
+= 2
+~ Panspermia, revived by Svante Arrhenius in the early 1900s, proposes that life reached Earth from space as tiny resistant spores (germs of life) carried between planets. In this theory the unit of life is therefore the spore, not the cell or RNA; 'pores' is not a biological unit of life.
+
+Q 92 | bio | Genetics & Evolution
+Who among the following is NOT a pioneer of the synthetic theory of evolution?
+(1) Huxley
+(2) Stebbins
+(3) Mendel
+(4) Mayr
+= 3
+~ The modern (synthetic) theory of evolution was built in the 1930s-40s by Dobzhansky, Julian Huxley, Ernst Mayr, G. G. Simpson, G. L. Stebbins and others. Gregor Mendel, who discovered the laws of inheritance in the 1860s, supplied the genetic basis but was not one of its architects.
+
+Q 93 | bio | Genetics & Evolution
+What is the term for the hypothetical RNA molecule that is thought to have played a central role in the origin of life on Earth, serving as both genetic material and catalyst?
+(1) Ribozyme
+(2) Aptamer
+(3) Ribosome
+(4) Protocell
+= 1
+~ The RNA world hypothesis proposes that early life used RNA both to store information and to catalyse reactions, and catalytic RNA molecules are called ribozymes. An aptamer is an RNA that binds a ligand, a ribosome is an RNA-protein machine for translation, and a protocell is a membrane-enclosed precursor of cells, not an RNA molecule.
+
+Q 94 | bio | Genetics & Evolution
+Match the following types of speciation (column A) and their description (column B).
+Column A (Speciation) | Column B (Description)
+1. Allopatric speciation | a. Occurs when a single species colonizes a new geographic area and rapidly adapts to different environments, resulting in the formation of multiple new species
+2. Sympatric speciation | b. Occurs when a new species emerges in a geographic area that is adjacent to, but not overlapping with, the ancestral species
+3. Parapatric speciation | c. Occurs when a new species emerges in the same geographic area as the ancestral species
+4. Adaptive radiation | d. Occurs when a new species emerges in a geographic area that is separate from the ancestral species
+(1) 1-D; 2-C; 3-B; 4-A
+(2) 1-C; 2-D; 3-B; 4-A
+(3) 1-B; 2-C; 3-D; 4-A
+(4) 1-A; 2-B; 3-C; 4-D
+= 1
+~ Allopatric speciation occurs in a separate geographic area (d), sympatric in the same area as the ancestor (c), and parapatric in an adjacent, non-overlapping area (b). Adaptive radiation is the rapid diversification of one colonising species into many species in different environments (a), giving 1-D, 2-C, 3-B, 4-A.
+
+Q 95 | bio | Genetics & Evolution
+What is the driving force behind Adaptive Radiation?
+(1) Genetic drift
+(2) Natural selection
+(3) Gene pool
+(4) Gene flow
+= 2
+~ In adaptive radiation one ancestral species diversifies into many forms that occupy different niches, as in Darwin's finches. Natural selection drives this by favouring different adaptations in different environments. Genetic drift is a chance process, gene flow tends to keep populations alike, and the gene pool is simply the sum of alleles in a population, not a force.
+
+Q 96 | bio | Genetics & Evolution
+Speciation occurs when populations of a species become reproductively isolated due to __________.
+(1) lack of genetic variations
+(2) different climatic conditions
+(3) geographical and physiological barriers
+(4) similar environmental changes
+= 3
+~ Speciation needs reproductive isolation. Geographical barriers (mountains, water bodies) and physiological or reproductive barriers stop gene flow between populations, which then diverge independently. Lack of variation would hinder evolution, and similar environments would tend to keep populations alike rather than divide them.
+
+Q 97 | bio | Genetics & Evolution
+Which of the following best describes the centre of genetic diversity for a species?
+(1) Region of origin
+(2) Unusual habitat
+(3) Population density
+(4) Domestication area
+= 1
+~ In N. I. Vavilov's concept, the centre of genetic diversity of a crop or species is generally its centre of origin, where it has evolved longest and shows the greatest variety of forms and alleles. Habitat type, population density or the place of domestication do not by themselves define it.
+
+Q 98 | bio | Genetics & Evolution
+Read the given Assertion (A) and Reason (R) carefully and select the correct option.
+(A): The peppered moth evolved from a light-coloured to a dark-coloured morph in response to the industrial revolution.
+(R): This is an example of natural selection, where the dark-coloured morph had a selective advantage in a polluted environment.
+(1) Both A and R are correct and R is the correct reason of A
+(2) A is incorrect and R is correct
+(3) A and R are correct, but R is not the correct reason for A
+(4) A is correct, but R is incorrect
+= 1
+~ In industrial Britain, soot darkened tree trunks and Kettlewell's experiments on Biston betularia showed that the dark (carbonaria) form survived better because birds more easily spotted the light form. The population thus shifted towards the dark morph by natural selection, so R correctly explains A.
+
+Q 99 | bio | Genetics & Evolution
+A population of birds is found to have a variation in beak size. During a drought, the birds with larger beaks are better able to crack open tough seeds and survive. What is the outcome of this scenario?
+(1) The population of birds will evolve to have smaller beaks.
+(2) The population of birds will evolve to have larger beaks.
+(3) The population of birds will not change.
+(4) The population of birds will become extinct.
+= 2
+~ Beak size is a heritable trait, and survivors with larger beaks leave more offspring, so the average beak size of the next generation increases. This is directional selection, as seen in Darwin's finches on Daphne Major after the 1977 drought. The population does not go extinct because some individuals survive and reproduce.
+
+Q 100 | bio | Genetics & Evolution
+Which of the following is an example of sympatric speciation?
+(1) The formation of the Grand Canyon, which separated two populations of squirrels and led to the formation of two distinct species.
+(2) The evolution of two distinct species of apple maggots, one that infests apples and another that infests hawthorns, in the same geographic area.
+(3) The formation of a new species of finch on the Galapagos Islands, which is reproductively isolated from other finch species.
+(4) The evolution of antibiotic resistance in bacteria.
+= 2
+~ Sympatric speciation happens without geographic separation. The apple maggot fly (Rhagoletis pomonella) has split into host races that feed and mate on hawthorn or on apple in the same area, the classic example. The Grand Canyon squirrels and island finches were separated by geographic barriers (allopatric), and antibiotic resistance is adaptation, not speciation.
+
+Q 101 | bio | Genetics & Evolution
+Match the following terms in column A with their descriptions in column B.
+Column A (Term) | Column B (Description)
+1. Mutation | a. A change in the frequency of a gene due to random events
+2. Genetic Drift | b. The movement of individuals with different genes into a population
+3. Gene Flow | c. A change in the frequency of a gene due to errors during DNA replication
+4. Natural Selection | d. The process by which the best-adapted individuals in a population are more likely to survive and reproduce
+(1) 1-c; 2-a; 3-b; 4-d
+(2) 1-c; 2-b; 3-d; 4-a
+(3) 1-d; 2-c; 3-a; 4-b
+(4) 1-a; 2-c; 3-b; 4-d
+= 1
+~ Mutation arises from errors in DNA replication (c), genetic drift is a chance change in gene frequency (a), gene flow is the movement of individuals or their genes into a population (b), and natural selection is the better survival and reproduction of the best-adapted individuals (d). This gives 1-c; 2-a; 3-b; 4-d.
+
+Q 102 | bio | Genetics & Evolution
+Who among the following proposed the theory of punctuated equilibrium?
+(1) Charles Darwin
+(2) Niles Eldredge and Stephen Jay Gould
+(3) Jean-Baptiste Lamarck
+(4) Gregor Mendel
+= 2
+~ Niles Eldredge and Stephen Jay Gould proposed punctuated equilibrium in 1972: species remain almost unchanged (stasis) for long periods, interrupted by short bursts of rapid speciation. Darwin and Lamarck favoured gradual change, and Mendel worked on the laws of inheritance.
+
+Q 103 | bio | Genetics & Evolution
+Which of the following best describes an evolutionary prezygotic isolating mechanism?
+(1) Hybrid sterility
+(2) Behavioural isolation
+(3) Gametic isolation
+(4) Hybrid breakdown
+= 2,3
+~ Prezygotic mechanisms prevent a zygote from forming: habitat, temporal, behavioural, mechanical and gametic isolation. Behavioural isolation (different courtship signals) and gametic isolation (incompatible gametes) both qualify, so APPSC accepted options 2 and 3. Hybrid sterility and hybrid breakdown act after the zygote forms and are postzygotic.
+
+Q 104 | bio | Genetics & Evolution
+Which of the following is a primitive wild ancestor of wheat?
+(1) Triticum aestivum
+(2) Triticum durum
+(3) Triticum monococcum
+(4) Aegilops tauschii
+= 3,4
+~ Triticum monococcum (einkorn, diploid AA, domesticated from wild T. boeoticum) is the primitive diploid wheat, while the wild goat grass Aegilops tauschii donated the D genome to hexaploid bread wheat; APPSC accepted both options 3 and 4. T. aestivum (bread wheat) and T. durum (macaroni wheat) are cultivated polyploid wheats, not primitive ancestors.
+
+Q 105 | bio | Genetics & Evolution
+What is the primary mechanism of Natural Selection?
+(1) Genetic drift
+(2) Mutation
+(3) Gene flow
+(4) Differential reproduction
+= 4
+~ Natural selection works because individuals with favourable heritable traits leave more offspring than others, which is differential reproduction (differential reproductive success). Mutation only supplies the variation, while genetic drift and gene flow are separate evolutionary forces.
+
+Q 106 | bio | Molecular Biology
+Which of the following enzymes is responsible for sealing the gaps between nucleotides during DNA replication?
+(1) DNA polymerase
+(2) RNA polymerase
+(3) DNA ligase
+(4) Topoisomerase
+= 3
+~ DNA ligase forms the phosphodiester bond between the 3'-OH of one fragment and the 5'-phosphate of the next, sealing the nicks left between Okazaki fragments on the lagging strand. DNA polymerase adds nucleotides, RNA polymerase makes RNA, and topoisomerase relieves supercoiling ahead of the fork.
+
+Q 107 | bio | Molecular Biology
+Read the following and answer the question on the basis of Assertion (A) and Reason (R).
+Assertion (A): Helicase is responsible for unwinding the DNA double helix during replication.
+Reason (R): Helicase has ATPase activity.
+(1) Both assertion and reason are correct and reason is the correct explanation for assertion.
+(2) Both assertion and reason are correct, but reason is not the correct explanation for assertion.
+(3) Assertion is correct, but reason is incorrect.
+(4) Assertion is incorrect, but reason is correct.
+= 1
+~ Helicase separates the two strands at the replication fork by breaking the hydrogen bonds between base pairs. It is an ATP-driven motor protein: the energy released by its ATPase activity powers the unwinding, so R explains A.
+
+Q 108 | bio | Molecular Biology
+What is the structure of the DNA double helix?
+(1) A left-handed helix with 10 base pairs per turn
+(2) A right-handed helix with 10 base pairs per turn
+(3) A left-handed helix with 20 base pairs per turn
+(4) A right-handed helix with 20 base pairs per turn
+= 2
+~ The Watson-Crick (B-form) DNA double helix is right-handed with about 10 base pairs (about 3.4 nm) per turn. The left-handed form is Z-DNA, which has about 12 base pairs per turn, and no DNA form has 20 base pairs per turn.
+
+Q 109 | bio | Molecular Biology
+What is the definition of a replication bubble?
+(1) It is when the unwinding of the double helix produces a loop.
+(2) It is the unwinding point at which the double-stranded DNA helix separates into two single nucleotide strands.
+(3) It is the point at which the two single strands of nucleotides condense.
+(4) It is when the replication forks move outward in both directions.
+= 2,4
+~ A replication bubble is the region at an origin where the double helix has opened into two single strands, with a replication fork at each end moving outward in opposite directions (bidirectional replication). Options 2 and 4 both describe this and were accepted by APPSC. Condensation of single strands (option 3) is the opposite of unwinding.
+
+Q 110 | bio | Molecular Biology
+Which functional group is found at the 2'-position of every nucleotide residue in RNA?
+(1) -OH
+(2) -COOH
+(3) -CHO
+(4) -CH3
+= 1
+~ The sugar in RNA is ribose, which carries a hydroxyl (-OH) group on carbon 2', whereas deoxyribose in DNA has only a hydrogen there. This 2'-OH makes RNA more reactive and easier to hydrolyse than DNA.
+
+Q 111 | bio | Molecular Biology
+What is the word used to refer to the DNA replication process in which each newly created DNA molecule comprises one parental strand and one newly synthesised strand?
+(1) Semiconservative
+(2) Conservative
+(3) Continuous
+(4) Disruptive
+= 1
+~ Meselson and Stahl (1958) showed that each daughter DNA duplex keeps one old strand and gets one new strand, which is semiconservative replication. In conservative replication the parental duplex would stay intact and an entirely new duplex would be made.
+
+Q 112 | bio | Cell Biology
+Identify the FALSE statement.
+(1) In prokaryotic cells, introns are not present in genes.
+(2) DNA is linked to basic proteins (histones) in eukaryotic cells.
+(3) A eukaryotic nucleoid contains 60% DNA and small quantities of RNA and protein.
+(4) Prokaryotic genome is circular in shape.
+= 3
+~ A nucleoid is the DNA-containing region of a prokaryotic cell, and eukaryotes have a membrane-bound nucleus instead, so there is no 'eukaryotic nucleoid'; statement 3 is false. The other statements are true: prokaryotic genes are generally intron-free, eukaryotic DNA is complexed with basic histone proteins, and the bacterial genome is typically a circular chromosome.
+
+Q 113 | bio | Molecular Biology
+Which of the following types of RNA is responsible for carrying genetic information from DNA to the ribosome during protein synthesis?
+(1) Messenger RNA (mRNA)
+(2) Transfer RNA (tRNA)
+(3) Ribosomal RNA (rRNA)
+(4) Small nuclear RNA (snRNA)
+= 1
+~ mRNA is the transcript copied from a gene, and its codon sequence is read by the ribosome to build the protein. tRNA brings amino acids, rRNA is a structural and catalytic part of the ribosome, and snRNA takes part in splicing.
+
+Q 114 | bio | Molecular Biology
+Which of the following is a step in the initiation of replication at the origin of replication?
+(1) Synthesis of the leading strand
+(2) Synthesis of the lagging strand
+(3) Binding of the origin recognition complex (ORC)
+(4) Unwinding of the DNA double helix
+= 3
+~ Replication begins when the origin recognition complex (ORC) binds the origin and recruits the proteins that load the helicase. Unwinding by helicase and the synthesis of leading and lagging strands follow only after this initiation (licensing) step.
+
+Q 115 | bio | Molecular Biology
+Which of the following type of repairs corrects errors after replication is complete?
+(1) Proofreading
+(2) Mismatch repair
+(3) Error-prone repair
+(4) Base pair mechanism
+= 2
+~ Mismatch repair scans the newly made DNA after replication, finds wrongly paired bases that escaped proofreading and replaces them on the new strand. Proofreading is done by the 3' to 5' exonuclease of DNA polymerase during synthesis, so it is not a post-replication repair.
+
+Q 116 | bio | Molecular Biology
+What is the primary difference between DNA replication in prokaryotes and eukaryotes?
+(1) Prokaryotes have a single origin of replication and eukaryotes also have single origin of replication.
+(2) Prokaryotes have a linear chromosome, while eukaryotes have a circular chromosome.
+(3) Prokaryotes use RNA polymerase for replication, while eukaryotes use DNA polymerase.
+(4) Prokaryotes have a shorter replication time, while eukaryotes have a longer replication time.
+= 4
+~ Only option 4 is a true statement: replication is faster in prokaryotes (E. coli copies its genome in about 40 minutes, with forks moving at about 1000 nucleotides per second) than in eukaryotes (S phase lasts several hours, with slower forks). Option 1 is false because eukaryotes have many origins, option 2 is reversed, and option 3 is wrong because both use DNA polymerases.
+
+Q 117 | bio | Molecular Biology
+A replication fork DOES NOT include which of the following enzymes?
+(1) DNA helicase
+(2) Primase
+(3) DNA polymerase
+(4) Endonuclease
+= 4
+~ The core replication fork machinery consists of helicase (unwinds the duplex), primase (makes RNA primers) and DNA polymerase (synthesises DNA), helped by topoisomerase and ligase. Endonuclease is the odd one out in this list, since endonucleases act mainly in DNA repair and recombination, although flap endonuclease (FEN1) and RNase H do trim primers and flaps behind the fork. (Official key; some sources differ.)
+
+Q 118 | bio | Molecular Biology
+Which of the following is a characteristic of RNAs but NOT of DNAs?
+(1) They have the power to direct the duplications.
+(2) They are capable of mutating.
+(3) They have the ability to synthesise proteins.
+(4) They can operate as genetic material.
+= 3
+~ Only RNA takes part directly in protein synthesis: mRNA is translated, tRNA carries amino acids, and rRNA of the ribosome catalyses peptide bond formation. DNA can duplicate, mutate and act as genetic material, and so can RNA (in many viruses), so options 1, 2 and 4 are not unique to RNA.
+
+Q 119 | bio | Molecular Biology
+Which of the following is a characteristic of the unit of replication in prokaryotic cells?
+(1) It is a single, circular chromosome with bidirectional replication.
+(2) t is a single, linear chromosome.
+(3) It is a group of genes that are replicated together.
+(4) It is a single gene that is replicated independently.
+= 1
+~ The unit of replication (replicon) in bacteria is the whole single circular chromosome, which starts at one origin (oriC) and is copied in both directions from there. The bacterial chromosome is circular, not linear, and replication is of the whole chromosome, not of single genes or gene groups.
+
+Q 120 | bio | Cell Biology
+Which of the following checkpoints is responsible for ensuring that DNA replication is complete and accurate before the cell enters mitosis?
+(1) G1/S checkpoint
+(2) G2/M checkpoint
+(3) Mitotic spindle checkpoint
+(4) DNA damage checkpoint
+= 2
+~ The G2/M checkpoint verifies that DNA replication is complete and the DNA is undamaged before the cell is allowed into mitosis. The G1/S checkpoint checks the cell and its DNA before DNA synthesis begins, and the spindle checkpoint checks chromosome attachment to the spindle at metaphase.
+
+Q 121 | bio | Cell Biology
+Match the levels of chromatin organisation (Column A) and their characters (Column B).
+Column A (Level of Chromatin Organisation) | Column B (Characteristic)
+1. Nucleosome | A. 30-nanometer fibre
+2. Chromatin fibre | B. Series of loops attached to a scaffold
+3. Loop domain | C. Most compact form of chromatin
+4. Chromonema fibre | D. Primary level of chromatin organisation
+(1) 1-D; 2-A; 3-B; 4-C
+(2) 1-C; 2-A; 3-B; 4-D
+(3) 1-B; 2-C; 3-A; 4-D
+(4) 1-D; 2-A; 3-C; 4-B
+= 1
+~ The nucleosome (DNA wound around a histone octamer) is the primary level of chromatin organisation (D). The nucleosome string coils into the 30-nm chromatin fibre (A), which forms loop domains attached to a protein scaffold (B), and the chromonema fibre is the highest, most compact level in this list (C). This gives 1-D; 2-A; 3-B; 4-C.
+
+Q 122 | bio | Molecular Biology
+Read the following statement and select the correct conclusion without making assumptions.
+Statement: It is essential to add a methylated guanine nucleotide to the 5' end of a eukaryotic mRNA and is called capping.
+(1) Capping helps to stabilise the mRNA molecule and prevent degradation.
+(2) Capping is only found in prokaryotic mRNA.
+(3) Capping is involved in the initiation of translation.
+(4) Capping is a post-transcriptional modification that occurs in the cytoplasm.
+= 1
+~ The 5' cap (7-methylguanosine) protects eukaryotic mRNA from 5' exonucleases, so it stabilises the transcript and prevents degradation. Capping is a eukaryotic, nuclear process, so options 2 and 4 are wrong. The cap also helps the ribosome to bind, so option 3 is also biologically true. (Official key; some sources differ.)
+
+Q 123 | bio | Molecular Biology
+What is the primary function of the sigma factor in prokaryotic transcription?
+(1) To bind to the promoter region and recruit RNA polymerase
+(2) To unwind the DNA double helix and initiate transcription
+(3) To synthesise the first few nucleotides of the RNA transcript
+(4) To terminate transcription and release the RNA transcript
+= 1
+~ The sigma factor joins the core RNA polymerase to form the holoenzyme and directs it to the promoter by recognising the -10 and -35 elements. It is released soon after initiation. Strand unwinding and RNA synthesis are done by the polymerase itself, and termination depends on terminator sequences or rho factor.
+
+Q 124 | bio | Molecular Biology
+Identify the FALSE statement about transcription factors.
+(1) Multiple transcription factors constitute a transcription complex necessary for transcription initiation.
+(2) DNA polymerases are thought to have their own transcription factors.
+(3) All three RNA polymerases require TF II D or a part of it.
+(4) Transcription factors are generally protein in nature.
+= 2
+~ Transcription factors are proteins that help RNA polymerases (I, II and III) start transcription, and the TATA-binding protein of TFIID, or its equivalents in the Pol I and Pol III systems, is needed by all three. DNA polymerases, which copy DNA during replication, are not described as having transcription factors, so statement 2 is false.
+
+Q 126 | bio | Molecular Biology
+Select the option that is correct regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): RNA polymerase synthesises RNA in the 5' to 3' direction.
+Reason (R): RNA polymerase requires a primer to initiate transcription.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 3
+~ RNA polymerase adds ribonucleotides to the 3' end of the growing chain, so RNA is made in the 5' to 3' direction (A is true). Unlike DNA polymerase, it can start a new chain de novo and needs no primer (R is false).
+
+Q 127 | bio | Molecular Biology
+Which of the following is an example of RNA editing in humans?
+(1) The correction of genetic errors in the CFTR gene.
+(2) The modification of the apolipoprotein B gene to change its function.
+(3) The insertion of nucleotides into the HIV genome.
+(4) The degradation of the p53 tumour suppressor gene.
+= 2
+~ The classic human example of RNA editing is apolipoprotein B: in the intestine, a C-to-U deamination in the mRNA (by APOBEC1) creates a stop codon and gives the short ApoB-48 instead of the liver's ApoB-100. Correcting the CFTR gene would be gene therapy, and neither the HIV genome nor p53 degradation is a human RNA-editing event.
+
+Q 128 | bio | Molecular Biology
+Which of the following features of the genetic code refers to the fact that more than one codon can specify the same amino acid?
+(1) Localised
+(2) Degeneracy
+(3) Commalessness
+(4) Non-overlapping
+= 2
+~ Degeneracy (redundancy) means that most of the 20 amino acids are coded by more than one codon, as 61 sense codons code for only 20 amino acids. Commalessness means there are no punctuation gaps between codons, and non-overlapping means each nucleotide belongs to one codon only.
+
+Q 129 | bio | Molecular Biology
+What is the term for the feature of the genetic code that states that the sequence of nucleotides is read in a specific sequence of three nucleotides (codons) that specify one of the 20 amino acids?
+(1) Triplet code
+(2) Degeneracy
+(3) Commalessness
+(4) Non-overlapping
+= 1
+~ The genetic code is a triplet code: each codon is made of three consecutive nucleotides and specifies one amino acid (or a stop signal). Degeneracy, commalessness and non-overlapping describe other properties of the code.
+
+Q 130 | bio | Molecular Biology
+Which of the following is the correct reason for polyadenylation of mRNA?
+(1) Polyadenylation helps to stabilise the mRNA molecule and prevent degradation.
+(2) Polyadenylation is meant to protect prokaryotic mRNA.
+(3) Polyadenylation is involved in the initiation of translation.
+(4) Polyadenylation is a post-translational modification that occurs in the cytoplasm.
+= 1
+~ The poly(A) tail of about 200 adenines is added to the 3' end of eukaryotic pre-mRNA in the nucleus, where it protects the mRNA from exonucleases and so stabilises it. It is a eukaryotic, post-transcriptional (not post-translational) modification, and it is not a feature of ordinary prokaryotic mRNA.
+
+Q 131 | bio | Molecular Biology
+Which of the following types of RNA is involved in the regulation of gene expression by binding to specific mRNA molecules?
+(1) Messenger RNA (mRNA)
+(2) Small interfering RNA (siRNA)
+(3) Transfer RNA (tRNA)
+(4) Ribosomal RNA (rRNA)
+= 2
+~ siRNA is a short double-stranded RNA that is loaded into the RISC complex; its guide strand pairs with a complementary mRNA and leads to its cleavage, silencing the gene (RNA interference). mRNA is the target itself, while tRNA and rRNA work in translation.
+
+Q 132 | bio | Molecular Biology
+Which of the following enzymes is/are responsible for adding the 5' cap to eukaryotic mRNA?
+(1) RNA polymerase
+(2) Guanylyl and methyl transferase
+(3) Phosphatase
+(4) Adenylase and ligase
+= 2
+~ Guanylyltransferase attaches a GMP to the 5' end of the transcript through a 5'-5' triphosphate bond, and methyltransferase then methylates this guanine (at N7) to complete the cap. RNA polymerase makes the transcript but not the cap, and a phosphatase only removes a phosphate from the 5' end beforehand.
+
+Q 133 | bio | Molecular Biology
+Which of the following mechanisms is involved in the regulation of microRNA (miRNA) biogenesis through the Drosha complex?
+(1) Phosphorylation of Drosha
+(2) Ubiquitination of DGCR8
+(3) Sumoylation of Drosha
+(4) Acetylation of the Drosha complex
+= 3
+~ The Drosha-DGCR8 microprocessor, which cuts the pri-miRNA to pre-miRNA in the nucleus, is regulated by post-translational modifications, and the official key names sumoylation of Drosha. Phosphorylation and acetylation of Drosha have also been reported in the literature, so the other options are not clearly wrong. (Official key; some sources differ.)
+
+Q 134 | bio | Molecular Biology
+What is the function of the sigma factor in RNA polymerase?
+(1) To unwind DNA during transcription
+(2) To synthesise RNA from the DNA template
+(3) To recognise and bind to specific promoter sequences
+(4) To terminate transcription
+= 3
+~ The sigma subunit of bacterial RNA polymerase recognises and binds the promoter sequences (the -10 and -35 boxes), positioning the enzyme at the correct start site. The core enzyme synthesises the RNA, and termination is by rho-dependent or intrinsic terminators, not sigma.
+
+Q 135 | bio | Molecular Biology
+Which enzyme is responsible for attaching amino acids to tRNA?
+(1) Amino acyl tRNA synthetase
+(2) Amino acyl tRNA kinase
+(3) Amino acyl tRNA dehydrogenase
+(4) Amino acyl tRNA ligase
+= 1
+~ Aminoacyl-tRNA synthetase attaches the correct amino acid to the 3' end of its tRNA using ATP, and there is one for each amino acid. Kinases transfer phosphate and dehydrogenases remove hydrogen, so neither charges tRNA. The IUBMB class name of these enzymes is amino acid-tRNA ligases, so option 4 is arguably the same enzyme. (Official key; some sources differ.)
+
+Q 136 | bio | Molecular Biology
+Which of the following is an unusual base found in eukaryotic tRNA?
+(1) Cytosine
+(2) Adenine
+(3) Uracil
+(4) Inosine
+= 4
+~ tRNA is rich in modified (unusual) bases such as inosine, dihydrouridine, pseudouridine and ribothymidine. Inosine, formed from adenosine, often occupies the wobble position of the anticodon. Cytosine, adenine and uracil are the standard bases of RNA.
+
+Q 137 | bio | Molecular Biology
+What is the primary purpose of tRNA aminoacylation?
+(1) Activating an amino acid before binding to its tRNA
+(2) Releases of amino acid from its tRNA
+(3) ATP generation
+(4) Amino acid assembly in ribosome
+= 1
+~ In aminoacylation, the amino acid is first activated with ATP as aminoacyl-AMP and is then linked to the 3' end of its own tRNA; the high-energy ester bond later drives peptide bond formation. ATP is used up, not generated, and joining amino acids into a chain is the work of the ribosome.
+
+Q 138 | bio | Molecular Biology
+Which of the following is NOT a codon for termination?
+(1) UAA
+(2) AAU
+(3) UAG
+(4) UGA
+= 2
+~ The three termination (stop) codons are UAA (ochre), UAG (amber) and UGA (opal), which are read by release factors and have no tRNA. AAU is a sense codon that codes for asparagine.
+
+Q 139 | chm | Amino Acids & Proteins
+The presence of hydrogen bonding in proteins typically stabilises which of the following secondary structures?
+(1) Alpha helix and Beta pleated sheet
+(2) Beta pleated sheet and Collagen helix
+(3) Only Alpha helix
+(4) Only Collagen helix
+= 1
+~ Hydrogen bonds between backbone C=O and N-H groups hold together both the alpha helix (within one chain, between residues i and i+4) and the beta pleated sheet (between neighbouring strands), so option 1 is complete. Options 2, 3 and 4 each leave out the alpha helix or the beta sheet. The collagen triple helix is also helped by hydrogen bonds between its chains, but its distinctive stability comes from repeating glycine, proline and hydroxyproline residues.
+
+Q 140 | bio | Cell Biology
+Which of the following statements is TRUE about ribosomes?
+(1) All eukaryotic and prokaryotic cells have membrane-bound ribosomes.
+(2) Mitoribosomes is the name given to the 55S ribosomes.
+(3) About equal amounts of proteins and DNA are found in ribosomes.
+(4) They are made up of the 50S and 80S subunits.
+= 2
+~ Mammalian mitochondria contain 55S ribosomes (28S and 39S subunits), called mitoribosomes. Ribosomes are not always membrane-bound (many float free in the cytoplasm), they contain rRNA and protein but no DNA, and the 70S ribosome is made of 50S and 30S subunits while the 80S ribosome has 60S and 40S subunits.
+
+Q 141 | bio | Molecular Biology
+How do initiation factors function throughout the process of protein synthesis?
+(1) They play a role in ribosome assembly on messenger RNA.
+(2) They help in folding of proteins.
+(3) They help in unwinding DNA.
+(4) They play a role in ribosome assembly on transfer RNA.
+= 1
+~ Initiation factors (IFs in bacteria, eIFs in eukaryotes) help the small ribosomal subunit bind the mRNA and the initiator tRNA at the start codon, after which the large subunit joins to form the complete ribosome. They have no role in protein folding (chaperones) or DNA unwinding (helicase), and ribosomes assemble on mRNA, not on tRNA.
+
+Q 142 | bio | Molecular Biology
+Read the following statement and select the correct conclusion without making assumptions.
+Statement: The aminoacylation reaction involves the attachment of an amino acid to the 3' end of a tRNA molecule.
+(1) The aminoacylation reaction is an energy-requiring process.
+(2) The aminoacylation reaction is a spontaneous process.
+(3) The aminoacylation reaction involves the attachment of an amino acid to the 5' end of a tRNA molecule.
+(4) The aminoacylation reaction is not essential for protein synthesis.
+= 1
+~ Aminoacylation uses ATP (amino acid + ATP + tRNA gives aminoacyl-tRNA + AMP + PPi) to form a high-energy ester bond, so it is an energy-requiring, not spontaneous, reaction. Option 3 contradicts the statement (3' end, not 5'), and option 4 is wrong because charged tRNAs are essential for translation.
+
+Q 143 | bio | Molecular Biology
+Which of the following is a component of the large subunit of the eukaryotic ribosome?
+(1) 15S rRNA
+(2) 16S rRNA
+(3) 23S rRNA
+(4) 28S rRNA
+= 4
+~ The eukaryotic 80S ribosome has a 60S large subunit containing 28S, 5.8S and 5S rRNA, and a 40S small subunit containing 18S rRNA. The 16S and 23S rRNAs belong to the 30S and 50S subunits of prokaryotic (70S) ribosomes.
+
+Q 144 | bio | Molecular Biology
+What is the energy source that drives translational proofreading during protein synthesis?
+(1) ATP hydrolysis
+(2) GTP hydrolysis
+(3) Peptide bond formation
+(4) Translation initiation
+= 1,2
+~ Translational accuracy has two proofreading steps: aminoacyl-tRNA synthetases use ATP (and have editing sites) to charge the correct amino acid, and at the ribosome the GTP hydrolysis by EF-Tu gives a delay in which wrong aminoacyl-tRNAs are rejected (kinetic proofreading). APPSC accepted both options 1 and 2. Peptide bond formation and initiation are not energy sources for proofreading.
+
+Q 145 | bio | Molecular Biology
+Which of the following is an essential component of the transcription initiation complex in prokaryotes?
+(1) mRNA
+(2) Sigma factor
+(3) IF 2
+(4) IF 4
+= 2
+~ In bacteria the sigma factor binds the core RNA polymerase to form the holoenzyme that recognises the promoter, so it is an essential part of the transcription initiation complex. mRNA is the product of transcription, and IF 2 and IF 4 are translation initiation factors.
+
+Q 146 | bch | Biomolecules & Metabolism
+Which motif has between 30 to 50 amino acids?
+(1) Zinc finger motif
+(2) Helix-turn-helix motif
+(3) αα motif
+(4) EF hand motif
+= 1
+~ The zinc finger is a small DNA-binding motif of roughly 30 amino acids (textbooks give a range of about 30 to 50), in which a Zn2+ ion held by Cys and His residues stabilises the fold. The helix-turn-helix motif is shorter, about 20 residues, and the EF hand is a Ca2+-binding helix-loop-helix of about 30 residues. (Official key; some sources differ.)
+
+Q 147 | bio | Molecular Biology
+Read the given assertion (A) and reason (R) carefully and select the correct option.
+(A): Aminoacyl-tRNA synthetases are important for the fidelity of translation.
+(R): Aminoacyl-tRNA synthetases have evolved to recognise and correct errors in aminoacyl-tRNA pairing, ensuring the accuracy of protein synthesis.
+(1) A is correct, but R is incorrect
+(2) Both A and R are correct and R is the proper reason for A
+(3) A is incorrect, but R is correct
+(4) Both A and R are correct, but R is not the proper reason for A
+= 2
+~ Aminoacyl-tRNA synthetases pair each amino acid with its correct tRNA, and many have an editing (proofreading) site that hydrolyses wrongly charged amino acids. This error correction is what keeps translation accurate, so R explains A.
+
+Q 148 | bio | Molecular Biology
+Which of the following elongation factors is responsible for translocating the ribosome along the mRNA during translation elongation?
+(1) EF-Tu
+(2) EF-G
+(3) EF-Ts
+(4) EF-4
+= 2
+~ EF-G (eEF2 in eukaryotes) uses GTP hydrolysis to move the ribosome one codon along the mRNA, which is translocation. EF-Tu delivers aminoacyl-tRNA to the A site and EF-Ts regenerates EF-Tu by exchanging GDP for GTP; EF-4 (LepA) is not the normal translocase.
+
+Q 149 | bio | Molecular Biology
+Which of the following post-translational modifications involves proteins with ubiquitin-like modifiers?
+(1) Glycosylation
+(2) Ubiquitination
+(3) SUMOylation
+(4) Palmitoylation
+= 3
+~ SUMO (small ubiquitin-like modifier) is a ubiquitin-like protein that is covalently attached to lysine residues of target proteins in SUMOylation. Ubiquitination uses ubiquitin itself rather than a ubiquitin-like modifier, while glycosylation and palmitoylation attach sugars and fatty acids.
+
+Q 150 | bch | Biomolecules & Metabolism
+Match the following functions of protein domains in column A with their examples in column B.
+Column A (Domain Function) | Column B (Example)
+1. Enzymatic activity | a. SH2 and SH3 domains
+2. Protein-protein interactions | b. Transmembrane domains
+3. Membrane anchoring | c. Zinc finger domains
+4. DNA binding | d. Kinases and phosphatases
+(1) 1-d; 2-a; 3-b; 4-c
+(2) 1-d; 2-a; 3-c; 4-b
+(3) 1-d; 2-b; 3-a; 4-c
+(4) 1-d; 2-c; 3-b; 4-a
+= 1
+~ Kinases and phosphatases are enzymes (d), SH2 and SH3 domains bind other proteins (a), transmembrane domains anchor proteins in the membrane (b), and zinc finger domains bind DNA (c). This gives 1-d; 2-a; 3-b; 4-c.

@@ -1,0 +1,1431 @@
+# appsc-fro-2023-mains-general-forestry-2.txt: APPSC official paper, answers from APPSC's final key (APOnline master question paper, correct option ticked).
+# Typed from /home/claude/afro/raw/afro-fro22-gf2-final.pdf; checked by a second reader. Questions APPSC ignored for all candidates are left out.
+
+Q 1 | ecw | Ecosystem Concepts
+Select the correct option based on the following assertion (A) and reason (R).
+Assertion (A): The pyramid of energy in an ecosystem is always upright.
+Reason (R): The flow of energy from one trophic level to the next is unidirectional.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) Both A and R are false.
+= 2
+~ The pyramid of energy is always upright because a large part of the energy (roughly 90%) is lost as heat in respiration at each trophic transfer, so every higher level receives less. Energy flow is indeed unidirectional (it cannot be recycled), so R is true, but the narrowing of the pyramid is explained by the loss at each step, not by the direction of flow alone.
+
+Q 2 | ecw | Ecosystem Concepts
+In the forest ecosystem, maximum biomass accumulates at which trophic level?
+(1) Producers
+(2) Herbivores
+(3) Primary consumers
+(4) Secondary consumers
+= 1
+~ In a forest the producers (trees) form the first trophic level and hold the largest standing biomass, because only a fraction of the energy and matter is passed to each higher level. The pyramid of biomass in a forest is therefore upright, with producers at the base. Herbivores and carnivores carry far less biomass.
+
+Q 3 | ecw | Types of Ecosystems
+The anthropogenic activity that poses a threat to grassland ecosystems is:
+(1) planting more trees to increase biodiversity
+(2) promoting controlled grazing by herbivores
+(3) overgrazing by livestock
+(4) implementing conservation measures
+= 3
+~ Overgrazing by livestock removes the vegetative cover faster than it can regrow, compacts and erodes the soil, and lets unpalatable weeds replace good grasses, which degrades the grassland. Controlled grazing and conservation measures are management tools that help grasslands, and planting trees is not a typical threat in the sense asked here.
+
+Q 4 | ecw | Types of Ecosystems
+What is the primary factor responsible for the formation of grasslands?
+(1) High annual precipitation
+(2) Rich soil with high organic content
+(3) Extreme temperature fluctuations
+(4) Insufficient rainfall to support tree growth
+= 4
+~ Grasslands occur where rainfall is too low and too erratic (typically about 250-750 mm a year) for forests to establish, but high enough to prevent desert. High annual rainfall favours forests, so option 1 is wrong, and soil richness is a result of grassland rather than its cause.
+
+Q 5 | ecw | Wildlife & Protected Areas
+Which of the following national parks is a UNESCO World Heritage Site?
+(1) Jim Corbett National Park
+(2) Keoladeo National Park
+(3) Namdapha National Park
+(4) Bhitarkanika National Park
+= 2
+~ Keoladeo National Park (Bharatpur, Rajasthan) was inscribed as a UNESCO World Heritage Site in 1985 for its wetland bird habitat. Jim Corbett, Namdapha and Bhitarkanika are important protected areas but are not inscribed World Heritage Sites (Bhitarkanika is a Ramsar site).
+
+Q 6 | ecw | Wildlife & Protected Areas
+Which sanctuary/national park is known for its population of the Great Indian bustard?
+(1) Dachigam Wildlife Sanctuary
+(2) Mudumalai Wildlife Sanctuary
+(3) Desert National Park
+(4) Ranthambore National Park
+= 3
+~ Desert National Park near Jaisalmer, Rajasthan, is the main stronghold of the critically endangered Great Indian Bustard (Ardeotis nigriceps), which prefers open arid grassland. Dachigam is known for the hangul, Mudumalai for elephants and tigers, and Ranthambore for tigers.
+
+Q 7 | ecw | Wildlife & Protected Areas
+Which of the following is the oldest national park in India?
+(1) Bandipur National Park
+(2) Kaziranga National Park
+(3) Jim Corbett National Park
+(4) Kanha National Park
+= 3
+~ Jim Corbett National Park in Uttarakhand was established in 1936 as Hailey National Park and is India's oldest national park. Kanha became a national park in 1955, while Kaziranga and Bandipur were notified as national parks in 1974.
+
+Q 8 | ecw | Ecosystem Concepts
+The ultradian rhythm refers to a cycle that lasts:
+(1) less than 24 hours
+(2) exactly 24 hours
+(3) more than 24 hours
+(4) varies in duration
+= 1
+~ Ultradian rhythms are biological cycles shorter than 24 hours and so repeat more than once a day, for example the heartbeat, breathing or the roughly 90-minute sleep cycle. A cycle of about 24 hours is circadian and one longer than 24 hours is infradian.
+
+Q 9 | ecw | Ecosystem Concepts
+The term ‘entrainment’ refers to the process of:
+(1) synchronisation of biological rhythms to external cues
+(2) disruption of biological rhythms due to jet lag
+(3) altering the duration of the sleep-wake cycle
+(4) regulating hormonal fluctuations during puberty
+= 1
+~ Entrainment is the synchronisation of an organism's internal biological clock to external time cues (zeitgebers) such as the light-dark cycle. Jet lag is the opposite situation, a temporary mismatch between the internal clock and the new local time.
+
+Q 10 | ecw | Ecosystem Concepts
+The menstrual cycle in monkeys is an example of:
+(1) ultradian rhythm
+(2) circadian rhythm
+(3) infradian rhythm
+(4) diurnal rhythm
+= 3
+~ The menstrual cycle of monkeys lasts about a month, much longer than 24 hours, so it is an infradian rhythm. Circadian rhythms last about 24 hours and ultradian rhythms are shorter than a day, while 'diurnal' describes day-time activity rather than a rhythm type.
+
+Q 11 | ecw | Ecosystem Concepts
+The term ‘free-running’ refers to a biological rhythm that:
+(1) is unaffected by external cues
+(2) is only present in animals
+(3) oscillates at a fixed frequency
+(4) is synchronised with the lunar cycle
+= 1
+~ A free-running rhythm is one that continues under constant conditions (for example constant darkness) with no external time cues, so it runs on the internal clock alone. Its period is usually slightly different from exactly 24 hours. Option 2 is wrong because free-running rhythms occur in plants and other organisms too, and option 3 misses the defining feature, which is the absence of external time cues rather than a fixed frequency.
+
+Q 12 | ecw | Wildlife & Protected Areas
+Which of the following is a critically endangered species of Indian vulture?
+(1) Gyps bengalensis
+(2) Gyps himalayensis
+(3) Gyps indicus
+(4) Neophron percnopterus
+= 1
+~ Gyps bengalensis (white-rumped vulture) is Critically Endangered on the IUCN Red List after a population crash of over 95% caused mainly by diclofenac poisoning. The Himalayan griffon (G. himalayensis) is Near Threatened and the Egyptian vulture (Neophron percnopterus) is Endangered. The Indian vulture (G. indicus) is also listed as Critically Endangered, so the question has more than one defensible answer. (Official key; some sources differ.)
+
+Q 13 | ecw | Wildlife & Protected Areas
+Which of the following is listed as vulnerable species of turtle found in the rivers of India?
+(1) Lepidochelys olivacea
+(2) Lissemys punctata
+(3) Dermochelys coriacea
+(4) Eretmochelys imbricata
+= 2
+~ Lissemys punctata, the Indian flapshell turtle, is a freshwater turtle of rivers, ponds and lakes and is listed as Vulnerable by the IUCN. The other three (olive ridley, leatherback and hawksbill) are sea turtles that nest on coasts rather than live in rivers.
+
+Q 14 | ecw | Ecosystem Concepts
+The ecosystem which has high carbon use efficiency will also have high:
+(1) NPP to GPP ratio
+(2) GPP to NPP ratio
+(3) Respiration to GPP ratio
+(4) GPP to biomass ratio
+= 1
+~ Carbon use efficiency is the fraction of the carbon fixed in photosynthesis (GPP) that remains as new biomass after plant respiration, that is CUE = NPP/GPP. A high CUE therefore means a high NPP to GPP ratio, and necessarily a low respiration to GPP ratio.
+
+Q 15 | ecw | Ecosystem Concepts
+Which of the following terrestrial ecosystems has highest GPP?
+(1) Tropical savannah and grasslands
+(2) Croplands
+(3) Tropical forest
+(4) Deserts
+= 3
+~ Tropical forests have the highest gross primary productivity among land ecosystems because warmth, abundant water and a large leaf area allow year-round photosynthesis; they account for roughly a third of global terrestrial GPP. Savannas, croplands and deserts have lower productivity per unit area.
+
+Q 16 | fpt | Pests & Diseases
+Which insect is known to attack and damage the bark of trees, leading to tree decline?
+(1) Leaf miners
+(2) Sawflies
+(3) Bark beetles
+(4) Fire ants
+= 3
+~ Bark beetles (Scolytinae, such as Ips and Dendroctonus) bore through the bark and feed on the phloem and cambium, girdling the tree and introducing fungi that lead to decline and death. Leaf miners and sawflies are foliage feeders, and fire ants are not bark pests.
+
+Q 17 | fpt | Forest Fire
+Which of the following is a natural method of preventing forest fires?
+(1) Controlled burning
+(2) Smokey bear campaigns
+(3) Fire-fighting helicopters
+(4) Fire-resistant tree species
+= 1
+~ Controlled (prescribed) burning imitates natural low-intensity fires and removes accumulated litter and dry fuel, so that a later accidental fire is less intense and spreads less. Smokey Bear campaigns are awareness efforts and helicopters are a suppression tool. Fire-resistant species could also be called natural, so the wording is open to debate. (Official key; some sources differ.)
+
+Q 18 | fpt | Forest Fire
+What is the most effective way to prevent human-caused forest fires?
+(1) Enforcing strict penalties for arson
+(2) Promoting fire safety education
+(3) Increasing forest patrols
+(4) Planting fire-resistant tree species
+= 2
+~ Most forest fires are started by people through carelessness, for example by campfires, cigarettes or clearing, so educating communities about fire safety removes the cause at its source. Penalties and patrols are enforcement measures that act only after or around the act, and fire-resistant species reduce damage but do not stop ignition.
+
+Q 19 | fpt | Forest Fire
+Which layer of the forest typically experiences the most intense burning during a fire?
+(1) Canopy
+(2) Understory
+(3) Tree roots
+(4) Forest floor
+= 1
+~ A crown fire, which burns through the canopy, is the most intense and destructive type of forest fire; it spreads rapidly, driven by wind, and is very hard to control. Ground fires smoulder in humus and roots, while surface fires burn litter and understory on the forest floor with lower intensity.
+
+Q 20 | slv | Silvicultural Principles & Regeneration
+What is the main objective of afforestation?
+(1) Increase urban green spaces
+(2) Improve soil fertility
+(3) Restore and expand forest cover
+(4) Provide timber for commercial purposes
+= 3
+~ Afforestation is the establishment of forest by planting or seeding on land that was not forest before (or has long lacked tree cover), so its main aim is to expand forest cover. Soil improvement, timber and urban greenery can be side benefits but are not its central objective.
+
+Q 21 | slv | Silvicultural Principles & Regeneration
+Afforestation is a long-term solution to:
+(1) urbanisation
+(2) desertification
+(3) overfishing
+(4) industrialisation
+= 2
+~ Desertification is land degradation in arid and semi-arid areas, and tree cover helps by binding soil, checking wind erosion, adding organic matter and improving the micro-climate (for example shelterbelts and green belts). Afforestation does not address urbanisation, overfishing or industrialisation.
+
+Q 22 | slv | Nursery & Planting
+Which type of trees is commonly planted in afforestation projects?
+(1) Exotic and invasive species
+(2) Endangered and rare species
+(3) Native and indigenous species
+(4) Fruit-bearing trees
+= 3
+~ Native (indigenous) species are the preferred choice because they are adapted to local climate and soil, support local wildlife and carry little risk of becoming invasive. Exotic and invasive species can damage the ecosystem, and rare species are planted only in special conservation programmes.
+
+Q 23 | fpt | Grazing & Human Impacts
+What is the primary benefit of rotational grazing?
+(1) Increased forage production
+(2) Increased animal reproduction
+(3) Reduced infectious disease in animals
+(4) Improved soil texture
+= 1
+~ In rotational grazing animals are moved between paddocks so that each pasture gets a rest period to regrow, which raises forage yield and quality over the season. Lower parasite load and better soil cover are secondary benefits.
+
+Q 24 | fpt | Grazing & Human Impacts
+The primary purpose of controlled grazing is to:
+(1) improve livestock socialisation
+(2) maximise forage utilisation
+(3) minimise the need for feed supplement
+(4) control invasive plant species
+= 2
+~ Controlled grazing regulates the number of animals and the timing and duration of grazing so that the available forage is used efficiently without damaging the pasture. Reduced supplementary feeding or weed control may follow, but the primary purpose is making the best use of forage.
+
+Q 25 | fpt | Grazing & Human Impacts
+Which of the following statements is true about rotational grazing?
+(1) It requires large amount of land.
+(2) It leads to overgrazing of certain areas.
+(3) It can help control parasites in livestock.
+(4) It is not suitable for maximising forage utilisation.
+= 3
+~ Moving animals from paddock to paddock breaks the life cycle of many internal parasites, because larvae on a resting pasture die before animals return, so parasite load in livestock falls. Rotational grazing is in fact designed to prevent patchy overgrazing and to improve forage utilisation, and it does not necessarily need more land.
+
+Q 26 | nrs | Forest & Water Resources
+The term ‘forest degradation’ refers to:
+(1) the process of natural forest recovery after disturbance
+(2) the reduction in forest area due to urbanisation
+(3) the decline in forest health and productivity over time
+(4) the intentional planting of fast-growing tree species
+= 3
+~ Forest degradation is the gradual reduction in a forest's density, structure, species composition and productivity, so that it supplies fewer goods and services while the land remains forest. Loss of forest area to urban use (option 2) is deforestation, and natural recovery is regeneration.
+
+Q 27 | bdc | Biodiversity & Hotspots
+The fragmentation of forest ecosystems due to human activities can lead to:
+(1) increased species diversity
+(2) enhanced gene flow between fragmented areas
+(3) decreased habitat quality and loss of biodiversity
+(4) improved ecosystem resilience and stability
+= 3
+~ Fragmentation splits continuous forest into small isolated patches, which increases edge effects, shrinks the interior habitat and isolates populations, causing inbreeding and local extinctions. Gene flow, species diversity and resilience therefore fall rather than rise.
+
+Q 28 | fut | Logging & Wood Technology
+The term ‘logging' refers to:
+(1) planting new trees in a deforested area
+(2) removing dead trees from a forest
+(3) cutting down trees for commercial purposes
+(4) using trees for landscaping in urban areas
+= 3
+~ Logging is the felling of trees and their conversion and removal from the forest, mainly for timber and other commercial use. Planting trees on cleared land is reforestation, and removal of dead trees is salvage or sanitation felling.
+
+Q 29 | ens | Climate & Global Issues
+What is the process by which forests help in carbon sequestration?
+(1) Photosynthesis
+(2) Respiration
+(3) Combustion
+(4) Decomposition
+= 1
+~ In photosynthesis trees absorb atmospheric carbon dioxide and fix it as sugars and then as wood, leaves and roots, thereby sequestering carbon. Respiration, combustion and decomposition all release carbon dioxide back to the atmosphere.
+
+Q 30 | ens | Climate & Global Issues
+Which type of forest tends to have the highest carbon sequestration potential?
+(1) Young and rapidly growing forests
+(2) Mature and stable forests
+(3) Deforested areas
+(4) Plantations with single-species trees
+= 2
+~ Mature forests hold the largest carbon stocks, in big trees, deadwood and soil, and keep it stored for a long time. Young forests take up carbon faster per year but hold much less in total, so some sources would choose option 1 if the question means rate of uptake. (Official key; some sources differ.)
+
+Q 31 | ens | Climate & Global Issues
+Which global initiative aims to reduce carbon emissions by incentivising forest conservation and restoration?
+(1) Kyoto Protocol
+(2) Paris Agreement
+(3) Clean Development Mechanism
+(4) REDD+
+= 4
+~ REDD+ (Reducing Emissions from Deforestation and forest Degradation, plus conservation, sustainable management and enhancement of forest carbon stocks) is the UNFCCC framework that gives results-based payments to developing countries for protecting and restoring forests. The Kyoto Protocol, Paris Agreement and CDM are broader climate instruments.
+
+Q 32 | ens | Climate & Global Issues
+Which is the most effective long-term strategy for carbon sequestration?
+(1) Planting trees on a small scale
+(2) Implementing large-scale reforestation projects
+(3) Focusing on technological advancements
+(4) Reducing overall carbon emissions
+= 4
+~ APPSC treats cutting emissions at the source as the most effective long-term strategy, because sequestration by forests can only offset emissions, is limited by available land and can be reversed by fire, pests or felling. Large-scale reforestation is the strongest sequestration option listed, so many sources would pick option 2. (Official key; some sources differ.)
+
+Q 33 | fut | Logging & Wood Technology
+The traditional Indian tool used for trimming branches and foliage from trees is:
+(1) pole pruner
+(2) loppers
+(3) billhook
+(4) hand saw
+= 3
+~ The billhook is a traditional hand tool with a curved or hooked blade and a short handle, widely used in India for lopping branches and cutting foliage, fuelwood and bushes. Pole pruners and loppers are modern pruning tools and a hand saw is for sawing.
+
+Q 34 | fut | Logging & Wood Technology
+Which Indian traditional tool is used for felling trees?
+(1) Crosscut saw
+(2) Chainsaw
+(3) Broadaxe
+(4) Handsaw
+= 3
+~ Felling by hand in India has traditionally been done with an axe, and the broadaxe is the only axe among the options. The chainsaw is a modern powered tool, while the crosscut saw and handsaw are saws, though a two-man crosscut saw is also widely used for felling. (Official key; some sources differ.)
+
+Q 35 | fut | Logging & Wood Technology
+The tool used for splitting logs into smaller pieces in Indian forestry is called:
+(1) splitting maul
+(2) wood splitting wedge
+(3) log splitter
+(4) wood mallet
+= 1
+~ A splitting maul is a heavy hammer-like tool with a wedge-shaped axe head that splits logs along the grain with one blow. A wedge needs to be driven by a hammer, a log splitter is a hydraulic machine and a mallet is only a striking tool.
+
+Q 36 | fut | Logging & Wood Technology
+The term ‘checking’ in wood refers to:
+(1) the process of inspecting wood for defects
+(2) the splitting or cracking of wood along its grain
+(3) the process of removing moisture from wood
+(4) the staining of wood due to exposure to sunlight
+= 2
+~ Checks are lengthwise cracks or splits along the grain, usually across the growth rings, caused by uneven drying and shrinkage, most often at the ends and surfaces of timber. Removal of moisture is seasoning, and staining is a discolouration defect.
+
+Q 37 | fut | Logging & Wood Technology
+In the process of kiln drying, what is the purpose of the conditioning phase?
+(1) To accelerate the drying process
+(2) To control the humidity within the kiln
+(3) To enhance the colour and grain of the wood
+(4) To prevent the growth of fungi and moulds
+= 2
+~ Conditioning is the final stage of a kiln schedule, in which steam or spray raises the humidity inside the kiln so that moisture differences and drying stresses (case hardening) in the timber are relieved. It is not meant to speed up drying, and it does not improve colour or grain.
+
+Q 38 | fut | Logging & Wood Technology
+Which type of wood typically requires longer seasoning periods due to its higher density?
+(1) Softwood
+(2) Medium-density fibreboard
+(3) Particleboard
+(4) Tropical hardwood
+= 4
+~ Dense tropical hardwoods have thick-walled cells and low permeability, so moisture moves out slowly and they need long, careful seasoning to avoid cracking and warping. Softwoods are less dense and dry faster, and MDF and particleboard are manufactured boards that are already dried.
+
+Q 39 | fut | Logging & Wood Technology
+Why is wood seasoning important?
+(1) To make wood resistant to termites
+(2) To increase the weight of the wood
+(3) To enhance the colour of the wood
+(4) To reduce moisture content and stabilise the wood
+= 4
+~ Seasoning lowers the moisture content of timber to a level suited to its use, which makes it dimensionally stable and reduces shrinkage, warping and decay by fungi. It makes the wood lighter, not heavier, and does not by itself make it termite-proof.
+
+Q 40 | fut | Wood Properties
+Which physical property of wood refers to its resistance to indentation?
+(1) Hardness
+(2) Elasticity
+(3) Durability
+(4) Grain pattern
+= 1
+~ Hardness is the resistance of wood to indentation and wear, and is measured by tests such as the Janka test, in which a steel ball is pressed into the surface. Elasticity is the ability to regain shape after loading and durability is resistance to decay.
+
+Q 41 | fut | Wood Properties
+The term ‘grain’ in wood refers to:
+(1) the growth rings visible in cross-sections
+(2) the weight of the wood
+(3) the density of the wood
+(4) the colour variations in the wood
+= 1
+~ In wood technology grain describes the arrangement and direction of the wood fibres, and the pattern it forms on a cut face is largely made visible by the growth rings seen in cross-section. This is the closest option, since weight, density and colour are separate properties. (Official key; some sources differ.)
+
+Q 42 | fut | Wood Properties
+The phenomenon of changing of the shape due to varying moisture content in wood is known as:
+(1) warping
+(2) fungus growth
+(3) shrinkage
+(4) expansion
+= 1
+~ Warping is the distortion of a piece of timber from its true shape (bow, cup, twist or crook) caused by uneven shrinkage as its moisture content changes. Shrinkage refers to the reduction in size, not the change of shape, and fungus growth is a biological defect.
+
+Q 43 | fut | Wood Properties
+Which physical property of wood determines its resistance to being split along its grain?
+(1) Hardness
+(2) Elasticity
+(3) Compression strength
+(4) Shear strength
+= 4
+~ Splitting along the grain happens when fibres slide past one another, so resistance to it is governed by the shear strength of wood parallel to the grain, which is low in all timbers. Hardness is resistance to indentation and compression strength is resistance to crushing.
+
+Q 44 | fut | Wood Properties
+The term ‘knots’ in wood refers to:
+(1) portions of branches embedded in the wood
+(2) colour variations in the wood
+(3) the age of the tree
+(4) the density of the wood
+= 1
+~ A knot is the base of a branch that has become enclosed in the stem as the tree grew, and it shows on sawn timber as a roughly round or oval patch with distorted grain. Knots are defects that reduce strength and affect appearance.
+
+Q 45 | fut | Wood Properties
+Which physical property of wood is responsible for its natural acoustic properties?
+(1) Thermal conductivity
+(2) Odour
+(3) Density
+(4) Colour
+= 3
+~ How fast sound travels through wood and how strongly it is damped depend mainly on its density together with its stiffness, which is why light, stiff woods are chosen for musical instruments. Thermal conductivity, odour and colour have no direct effect on sound.
+
+Q 46 | anm | Snakes & Venomous Animals
+Select the correct option based on the given statement and conclusions.
+Statement: The antivenom most commonly used for the treatment of neurotoxic snake venom are antibodies.
+Conclusions:
+i) The most common treatment against snake venom is antivenom.
+ii) Antivenom acts as antigen for the production of antibodies.
+(1) Only conclusion (i) is correct
+(2) Only conclusion (ii) is correct
+(3) Both the conclusions (i) and (ii) are correct
+(4) None of the conclusions are correct
+= 3
+~ Conclusion (i) is correct: antivenom, made of purified antibodies from immunised animals, is the standard treatment for snakebite envenoming. Conclusion (ii) is true only in the loose sense that antivenom is itself a foreign protein that can provoke an immune response in the patient; in making antivenom it is the venom that acts as the antigen. (Official key; some sources differ.)
+
+Q 47 | anm | Snakes & Venomous Animals
+Select the correct option based on the following assertion (A) and reason (R).
+Assertion (A): Polyvalent snake antivenom is effective against more than one venomous snake species.
+Reason (R): Polyvalent snake antivenom contains neutralizing antibodies raised against two or more species of snakes.
+(1) Both A and R are correct, and R is the correct explanation of A.
+(2) Both A and R are correct, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) Both A and R are false.
+= 1
+~ Polyvalent antivenom is prepared by immunising horses with the venoms of several species (in India the 'big four': cobra, common krait, Russell's viper and saw-scaled viper), so it carries antibodies against each of them. That is exactly why it is effective against more than one species, so R explains A.
+
+Q 48 | anm | Snakes & Venomous Animals
+Select the correct option based on the following assertion (A) and reason (R).
+Assertion (A): In India, available polyvalent anti-snake venom acts best in snakebites from the southern and western parts of India and not as well in the northern and eastern parts of the country.
+Reason (R): The venoms of the same snake species have shown significant differences in toxic profiles.
+(1) Both A and R are correct, and R is the correct explanation of A.
+(2) Both A and R are correct, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) Both A and R are false.
+= 2
+~ Both statements are accurate: Indian polyvalent antivenom is made from venoms collected mainly in southern India, and the venom of the same species varies from region to region. APPSC treats R as not the explanation of A, although geographic venom variation is the reason usually given for the weaker action in the north and east. (Official key; some sources differ.)
+
+Q 49 | anm | Snakes & Venomous Animals
+Select the correct option based on the following assertion (A) and reason (R).
+Assertion (A): Lyophilised Anti-snake venom (ASV) is more useful than liquid ASV.
+Reason (R): Liquid ASV requires a complete cold chain and refrigeration.
+(1) Both A and R are correct, and R is the correct explanation of A.
+(2) Both A and R are correct, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) Both A and R are false.
+= 1
+~ Lyophilised (freeze-dried) ASV can be stored at ordinary temperatures and has a longer shelf life, which is valuable in rural primary health centres where refrigeration is unreliable. Liquid ASV must be kept at 2-8 °C throughout, so R is the reason A holds.
+
+Q 50 | anm | Snakes & Venomous Animals
+Which of the following is the specific antidote for neurotoxic snake venom?
+(1) Antivenom
+(2) Polyvalent antivenom
+(3) Anticholinesterase agents
+(4) Atropine
+= 3
+~ Neurotoxic venoms of cobras and kraits block acetylcholine receptors at the neuromuscular junction, and anticholinesterases such as neostigmine (given with atropine) reverse that block and are the receptor-level antidote. Antivenom neutralises circulating venom and many texts call it the specific antidote for snakebite, so the key is debatable. (Official key; some sources differ.)
+
+Q 51 | fut | NTFPs & Medicinal Plants
+Which NTFP is commonly used in the production of traditional Bidriware handicrafts in Andhra Pradesh?
+(1) Wax
+(2) Bamboo
+(3) Sabai grass
+(4) Bell metal
+= 1
+~ Of the four options, wax (beeswax and other natural waxes collected as NTFP) is the only forest produce used in metal-casting handicrafts, where wax patterns are used in the lost-wax method. Bamboo and sabai grass are used for baskets, mats and paper, and bell metal is an alloy, not a forest product. Bidriware itself is a zinc-copper alloy craft of Bidar in Karnataka, so the question is loosely framed. (Official key; some sources differ.)
+
+Q 52 | fut | NTFPs & Medicinal Plants
+Adda leaves collected from Bauhinia vahlii in Andhra Pradesh is used primarily for:
+(1) bidi making
+(2) medicinal purpose
+(3) making eating plates
+(4) green manuring
+= 3
+~ The large leaves of the climber Bauhinia vahlii (adda or maloo creeper) are stitched into leaf plates and cups, which are a major source of income for tribal collectors in Andhra Pradesh. Bidi wrappers come mainly from tendu (Diospyros melanoxylon) leaves.
+
+Q 53 | fut | NTFPs & Medicinal Plants
+Which NTFP is commonly used in the production of high-quality handmade paper in Andhra Pradesh?
+(1) Sisal fibre
+(2) Eucalyptus leaves
+(3) Sabai grass
+(4) Karaya gum
+= 3
+~ Sabai (babui) grass, Eulaliopsis binata, has long strong fibres and is a traditional raw material for high-quality paper, as well as ropes and mats. Karaya gum is an exudate used in food and pharmaceuticals, and eucalyptus leaves are not a pulp source for handmade paper.
+
+Q 54 | fut | NTFPs & Medicinal Plants
+Which of the following statements is true about Girijan Cooperative Corporation?
+(1) It is the marketing wing of Andhra Pradesh Forest Department.
+(2) It is the main purchaser of Bamboo from Andhra Pradesh Forest Department.
+(3) It pays royalty to Andhra Pradesh Forest Department for collection and sale of non-timber forest product.
+(4) It has full right to collect and sale non-timber forest products in Andhra Pradesh.
+= 3
+~ The Girijan Cooperative Corporation (GCC) is a separate State tribal-welfare undertaking that buys NTFP from tribal gatherers and markets it, and it pays royalty to the Forest Department for the produce it collects and sells. It is not the Forest Department's marketing wing, and its right to deal in NTFP is limited to what the State grants it, not 'full'.
+
+Q 55 | anm | Animal Health & Nutrition
+Which viral infection affects wild boars and other suid species in India, causing reproductive issues and high mortality rates?
+(1) Hepatitis E
+(2) Porcine circovirus
+(3) Swine influenza
+(4) Classical swine fever
+= 1
+~ APPSC keys Hepatitis E, a virus that circulates widely in pigs and wild boar. In these animals, however, hepatitis E is usually silent and is mainly important as a zoonosis, whereas classical swine fever is the viral disease best known for abortion and stillbirths and high mortality in pigs and wild boar. The key therefore looks doubtful. (Official key; some sources differ.)
+
+Q 56 | anm | Animal Health & Nutrition
+Which of the following diseases is caused by a protozoan parasite (Plasmodium sp.) and affects several primate species in India?
+(1) Toxoplasmosis
+(2) Malaria
+(3) Leishmaniasis
+(4) Trypanosomiasis
+= 2
+~ Malaria is caused by protozoa of the genus Plasmodium, and species such as P. knowlesi and P. cynomolgi infect macaques and other primates. Toxoplasmosis, leishmaniasis and trypanosomiasis are caused by other protozoa (Toxoplasma, Leishmania and Trypanosoma).
+
+Q 57 | anm | Animal Health & Nutrition
+Which type of dentition is found in animals that have teeth of the same type and function throughout their mouth?
+(1) Heterodont dentition
+(2) Homodont dentition
+(3) Incisodont dentition
+(4) Caninodont dentition
+= 2
+~ In homodont dentition all teeth are alike in shape and function, as in dolphins, many fishes and reptiles. Heterodont dentition has different tooth types (incisors, canines, premolars, molars), as in most mammals; incisodont and caninodont are not standard dentition types.
+
+Q 58 | anm | Animal Health & Nutrition
+Which of the following is a non-infectious disease commonly observed in Indian wildlife?
+(1) Avian influenza
+(2) Tuberculosis
+(3) Anthrax
+(4) Lead poisoning
+= 4
+~ Lead poisoning is a toxic, non-infectious condition that wild animals get by eating lead shot, fishing weights or contaminated carcasses and water. Avian influenza (virus), tuberculosis and anthrax (bacteria) are infectious diseases.
+
+Q 59 | anm | Animal Health & Nutrition
+Which of the following non-infectious diseases is characterised by abnormal cell growth and the formation of tumours in wildlife?
+(1) Brucellosis
+(2) Leptospirosis
+(3) Cancer
+(4) Avian cholera
+= 3
+~ Cancer is a non-infectious disease of uncontrolled cell division that forms tumours (neoplasms), and it is recorded in wild animals as well. Brucellosis and leptospirosis are bacterial infections, and avian cholera is caused by the bacterium Pasteurella multocida.
+
+Q 60 | anm | Animal Health & Nutrition
+Which of the following non-infectious diseases is caused by malnutrition and vitamin deficiency in wildlife?
+(1) Tetanus
+(2) Rickets
+(3) Tularemia
+(4) Lyme disease
+= 2
+~ Rickets is a nutritional deficiency disease caused by too little vitamin D, calcium or phosphorus, leading to soft, deformed bones in young animals. Tetanus, tularemia and Lyme disease are bacterial infections.
+
+Q 61 | anm | Animal Health & Nutrition
+Which of the following non-infectious diseases affects the musculoskeletal system of wildlife?
+(1) Foot-and-mouth disease
+(2) Osteoporosis
+(3) Newcastle disease
+(4) Brucellosis
+= 2
+~ Osteoporosis is a non-infectious bone disease in which bone mass and strength decline, and it weakens the skeleton, which is why it is classed as a musculoskeletal disorder. Foot-and-mouth disease and Newcastle disease are viral, and brucellosis is bacterial, so they are infectious.
+
+Q 62 | anm | Birds
+What is the purpose of the keel in a bird's anatomy?
+(1) It helps in digestion.
+(2) It aids in flight by providing attachment for flight muscles.
+(3) It acts as a sensory organ.
+(4) It is responsible for egg production.
+= 2
+~ The keel (carina) is the ridge on the breastbone (sternum) that gives a large surface for the attachment of the powerful pectoral muscles that move the wings. Flightless birds such as the ostrich have a flat sternum without a keel.
+
+Q 63 | anm | Birds
+The primary function of feathers in flying birds is:
+(1) insulation
+(2) flight
+(3) attracting mates
+(4) protection
+= 2
+~ In flying birds the flight feathers of the wings and tail provide the lift, thrust and steering surface needed for flight, so this is their primary function. Insulation, display for mates and protection are secondary roles.
+
+Q 64 | anm | Birds
+What is the function of the gizzard in a bird's digestive system?
+(1) Breaking down food mechanically
+(2) Absorbing nutrients from food
+(3) Storing food temporarily
+(4) Producing digestive enzymes
+= 1
+~ The gizzard is a thick-walled muscular stomach that grinds food, often with the help of swallowed grit, because birds have no teeth. Food is stored temporarily in the crop, enzymes are produced by the proventriculus (glandular stomach), and nutrients are absorbed in the intestine.
+
+Q 65 | anm | Birds
+The unique feature that allows birds to produce sounds is the:
+(1) larynx
+(2) gizzard
+(3) syrinx
+(4) crop
+= 3
+~ Birds sing and call with the syrinx, a vocal organ at the base of the trachea where it divides into the two bronchi. The bird's larynx does not produce sound, and the gizzard and crop are parts of the digestive tract.
+
+Q 66 | anm | Birds
+Select the correct option based on the given assertion (A) and reason (R).
+Assertion (A): Birds are crucial for the survival of certain plant species.
+Reason (R): Birds act as primary pollinators of certain plant species.
+(1) Both A and R are correct, and R is the correct explanation of A.
+(2) Both A and R are correct, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) Both A and R are false.
+= 1
+~ Some plants, such as many that are pollinated by sunbirds and hummingbirds, depend mainly on birds to carry pollen, so they cannot set seed without them. R is therefore true and directly explains why those plant species depend on birds for survival.
+
+Q 67 | anm | Birds
+Select the correct option based on the given assertion (A) and reason (R).
+Assertion (A): Birds can act as indicators of environmental health.
+Reason (R): Birds play a vital role in controlling insect populations.
+(1) Both A and R are correct, and R is the correct explanation of A.
+(2) Both A and R are correct, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) Both A and R are false.
+= 2
+~ Birds are good indicators because they are sensitive to habitat change and pollution, easy to observe and found at many trophic levels. They also control insect numbers, so R is true, but that role does not explain why birds serve as indicators.
+
+Q 68 | anm | Birds
+What is the primary purpose of bird migration?
+(1) To escape predators
+(2) To find mates
+(3) To seek better nesting grounds
+(4) To find more abundant food resources
+= 4
+~ Birds migrate mainly to move between regions where food is plentiful in different seasons, for example leaving the cold north where insects and plants vanish in winter. Breeding and nesting benefits are secondary results of this movement.
+
+Q 69 | anm | Economic Zoology
+Select the correct option based on the following statement and conclusions.
+Statement:
+Aedes mosquito is primarily responsible for transmitting dengue fever.
+Conclusion:
+i) We can manage dengue fever by managing Aedes mosquito.
+ii) Aedes mosquitoes are also severely affected by dengue fever.
+(1) Only conclusion (i) is correct
+(2) Only conclusion (ii) is correct
+(3) Both the conclusions (i) and (ii) are correct
+(4) None of the conclusions are correct
+= 1
+~ Conclusion (i) follows because dengue spreads only through the bite of infected Aedes mosquitoes, so controlling the mosquito and its breeding sites reduces cases. Conclusion (ii) does not follow: the dengue virus multiplies in the mosquito without causing severe disease in it.
+
+Q 70 | anm | Economic Zoology
+Select the correct option based on the following statement and conclusions.
+Statement:
+Aedes mosquito is commonly associated with the transmission of yellow fever.
+Conclusions:
+i) Yellow fever is a contagious disease.
+ii) Aedes mosquito is not infected by the yellow fever in the process of transmission.
+(1) Only conclusion (i) is correct
+(2) Only conclusion (ii) is correct
+(3) Both the conclusions (i) and (ii) are correct
+(4) None of the conclusions are correct
+= 4
+~ Yellow fever is spread by the bite of infected mosquitoes (Aedes and Haemagogus) and not by direct contact between people, so it is not contagious in the strict sense. The mosquito does become infected: it picks up the virus from a patient's blood, the virus multiplies in it, and only then can it transmit the virus, so (ii) is false too.
+
+Q 71 | anm | Economic Zoology
+Select the correct option based on the following statement and conclusions.
+Statement:
+Some insects act as vectors of communicable diseases in humans.
+Conclusions:
+i) Vectors are unaffected by disease causing agents.
+ii) Insecticides can be used to control spread of communicable diseases.
+(1) Only conclusion (i) is correct
+(2) Only conclusion (ii) is correct
+(3) Both the conclusions (i) and (ii) are correct
+(4) None of the conclusions are correct
+= 3
+~ Conclusion (ii) is correct, since insecticides and larvicides kill vector insects and so cut transmission of diseases such as malaria and dengue. APPSC also accepts (i), taking vectors as carriers that are not made ill by the pathogen, although some pathogens, such as the plague bacillus in fleas, do harm their vectors. (Official key; some sources differ.)
+
+Q 72 | anm | Economic Zoology
+Select the correct option based on the following statement and conclusions.
+Statement:
+The disease sleeping sickness is transmitted by Tsetse fly.
+Conclusions:
+i) Tsetse fly is the causal agent of the disease sleeping sickness.
+ii) Sleeping sickness is a communicable disease.
+(1) Only conclusion (i) is correct
+(2) Only conclusion (ii) is correct
+(3) Both the conclusions (i) and (ii) are correct
+(4) None of the conclusions are correct
+= 2
+~ The tsetse fly is only the vector; the causal agent of sleeping sickness is the protozoan Trypanosoma brucei (T. b. gambiense or T. b. rhodesiense), so (i) is wrong. Sleeping sickness is an infectious disease that spreads between hosts through the vector, so it is communicable and (ii) is correct.
+
+Q 73 | anm | Economic Zoology
+Match the insect vector in column A with the human disease which it transmits in column B.
+Column A | Column B
+A) Anopheles mosquito | 1) Dengue fever
+B) Aedes mosquito | 2) Japanese encephalitis
+C) Culex mosquito | 3) Malaria
+(1) A-1; B-3; C-2
+(2) A-3; B-1; C-2
+(3) A-3; B-2; C-1
+(4) A-1; B-2; C-3
+= 2
+~ Anopheles transmits malaria (A-3), Aedes aegypti transmits dengue fever (B-1), and Culex (mainly Culex tritaeniorhynchus) transmits Japanese encephalitis (C-2). This gives A-3; B-1; C-2.
+
+Q 74 | anm | Economic Zoology
+Match the insect vector in column A with the human disease which it transmits in column B.
+Column A | Column B
+A) Sandfly | 1) Typhus
+B) Flea | 2) Leishmaniasis
+C) Body louse | 3) Bubonic plague
+(1) A-2; B-3; C-1
+(2) A-3; B-1; C-2
+(3) A-2; B-1; C-3
+(4) A-1; B-2; C-3
+= 1
+~ Sandflies (Phlebotomus) transmit leishmaniasis (A-2), the rat flea (Xenopsylla cheopis) transmits bubonic plague (B-3), and the body louse transmits epidemic typhus (C-1). This gives A-2; B-3; C-1.
+
+Q 75 | anm | Economic Zoology
+Which beneficial insect is known for its ability to control mosquito populations by feeding on their larvae in stagnant water?
+(1) Dragonflies
+(2) Fleas
+(3) Ticks
+(4) Crickets
+= 1
+~ Dragonfly nymphs live in still water and prey on mosquito larvae, and adult dragonflies also catch adult mosquitoes in flight, which makes them useful natural controllers. Fleas and ticks are blood-sucking parasites, and crickets are not mosquito predators.
+
+Q 76 | anm | Economic Zoology
+Match the beneficial insect in column A with its beneficial impact in column B.
+Column A | Column B
+A) Bees | 1) Aphid control
+B) Earthworms | 2) Pollination
+C) Wasps | 3) Soil fertility
+(1) A-1; B-2; C-3
+(2) A-3; B-1; C-2
+(3) A-2; B-1; C-3
+(4) A-2; B-3; C-1
+= 4
+~ Bees pollinate flowers (A-2), earthworms improve soil fertility by aerating and enriching the soil (B-3), and predatory and parasitic wasps keep aphids and other pests in check (C-1). The other options pair these roles wrongly. (Earthworms are annelids, not insects, but the question lists them with the beneficial insects.)
+
+Q 77 | anm | Economic Zoology
+Select the correct option based on the given assertion (A) and reason (R).
+Assertion (A): Insects are crucial for the survival of human species on this planet.
+Reason (R): All insects are beneficial for agriculture.
+(1) Both A and R are correct, and R is the correct explanation of A.
+(2) Both A and R are correct, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) Both A and R are false.
+= 3
+~ Insects pollinate crops and wild plants, recycle dead matter and form a key part of food webs, so A is true. R is false because many insects, such as locusts, stem borers and termites, are serious agricultural pests, so R cannot explain A.
+
+Q 78 | anm | Animal Health & Nutrition
+Which disease is caused by the accumulation of persistent organic pollutants in Indian wildlife?
+(1) Avian Influenza
+(2) Elephant Endotheliotropic Herpesvirus
+(3) Organochlorine Poisoning
+(4) Rabies
+= 3
+~ Organochlorine pesticides such as DDT and HCH are persistent organic pollutants that accumulate in body fat and biomagnify up the food chain, causing organochlorine poisoning in wildlife. Avian influenza, elephant endotheliotropic herpesvirus (EEHV) and rabies are viral infections, not the result of pollutant build-up.
+
+Q 79 | slv | Nursery & Planting
+Calculate the spacing of rows in which plants have to be 2.5 m apart and the plantation has 1000 plants per hectare.
+(1) 6 m
+(2) 4 m
+(3) 3.5 m
+(4) 5 m
+= 2
+~ One hectare is 10,000 m², so 1000 plants per hectare means each plant occupies 10,000 ÷ 1000 = 10 m². With plants 2.5 m apart within a row, the distance between rows = 10 ÷ 2.5 = 4 m.
+
+Q 80 | fel | Forest Economics
+Which of the following statements are correct about Benefit-Cost Ratio (BCR) analysis?
+1.If a project has a BCR greater than 1.0, the project is expected to deliver a positive net present value to a firm and its investors.
+2.If a project's BCR is less than 1.0, the project's costs outweigh the benefits, and it should not be considered.
+3.The BCR is an indicator showing the relationship between the relative costs and benefits of a proposed project, expressed in monetary or qualitative terms.
+4.BCR is a ratio used in a cost-benefit analysis to summarise the overall relationship between the relative costs and benefits of a proposed project.
+(1) Only 1 and 4
+(2) Only 1, 2 and 4
+(3) 1, 2, 3 and 4
+(4) Only 1, 2 and 3
+= 3
+~ BCR is the ratio of the present value of benefits to the present value of costs. A ratio above 1.0 means a positive net present value, and below 1.0 means costs exceed benefits so the project is normally rejected. Statements 3 and 4 both correctly describe BCR as a summary of the relationship between costs and benefits, so all four statements hold.
+
+Q 81 | fim | Sampling & Inventory
+Variance of a population is determined by which of the following?
+(1) v = s² = Σ(xi − x̄)²/(n − 1)
+(2) v = s² = πr²
+(3) v = s² = Σ[k = 0 to n] C(n, k) x^k a^(n−k)
+(4) v = s² = (−b ± √(b² − 4ac))/2a
+= 1
+~ Variance is the sum of squared deviations of the observations from their mean divided by (n − 1), s² = Σ(xi − x̄)²/(n − 1), the form used to estimate variance from a sample in forest inventory. The other options are the area of a circle (πr²), the binomial expansion and the quadratic formula, none of which gives a variance.
+
+Q 82 | fim | Sampling & Inventory
+In a population, the pattern of the distribution of many different kinds of variables is such that the most frequently occurring measurements are in the centre and there is a progressive falling of frequencies on either side of it. Such a distribution is known as:
+(1) Binomial distribution
+(2) Poisson distribution
+(3) Normal distribution
+(4) Abnormal distribution
+= 3
+~ A distribution with the most frequent values at the centre and frequencies falling off symmetrically on both sides is the normal (Gaussian) distribution, drawn as a bell-shaped curve. Binomial and Poisson distributions deal with discrete counts, and "abnormal distribution" is not a standard statistical term.
+
+Q 83 | fim | Sampling & Inventory
+For a population of size N, where A is the number of variables having a given attribute, the proportion of items in the population having this attribute is p=A/N and the proportion not having this attribute is 1-p=q. Hence p + q = ?
+(1) 1
+(2) 0
+(3) 2
+(4) 3
+= 1
+~ Every item either has the attribute (proportion p) or does not (proportion q), so together they make up the whole population: p + q = A/N + (N − A)/N = 1. This follows directly from q = 1 − p.
+
+Q 84 | fel | Forest & Environment Laws
+The forests of India at, at present, in 2023 are governed by:
+(1) National Forest Policy, 1988 and its amendment, State Forest Policies; Indian Forest Act, 1927 and its amendment, Wild Life (Protection) Act, 1972; and Biological Diversity Act, 2002
+(2) National Forest Policy, 2021, Indian Forest Act, 2000, Wild Life Protection Act, 2021 and Biological Diversity Act, 2022
+(3) National Forest Policy, 1998, Indian Forest Act, 1999, Wild Life Protection Act, 2000 and Biological Diversity Act, 2021
+(4) National Forest Policy, 1999 and its amendment, State Forest Policies; Indian Forest Act, 1997 and its amendments, Wild Life (Protection) Act, 1978 and Biological Diversity Act, 2022
+= 1
+~ In 2023 Indian forests are governed by the National Forest Policy, 1988, State forest policies, the Indian Forest Act, 1927, the Wild Life (Protection) Act, 1972 and the Biological Diversity Act, 2002, with their amendments. The other options quote policies, Acts and years that do not exist, such as an "Indian Forest Act, 2000".
+
+Q 85 | fel | Forest & Environment Laws
+As per Indian Forest Act 1927, the term ‘forest’ is defined as:
+(1) an area having dense vegetation of trees and shrubs
+(2) an area having tree density of 0.5
+(3) an area occupied by the Government of India for the conservation and management of biological and ecological resources
+(4) an area left for conservation of natural resources
+= 3
+~ The Indian Forest Act, 1927 does not actually define "forest"; the Supreme Court in T.N. Godavarman Thirumulpad (1996) held that the dictionary meaning applies. Among the four options, the keyed one, government-held land managed for biological and ecological resources, is the closest to the Act's idea of forest land, while a tree density of 0.5 or "dense vegetation" appears nowhere in the Act. (Official key; some sources differ.)
+
+Q 86 | fel | Forest & Environment Laws
+Section 2A of the Forest (Conservation) Act, 1980 states that any person, who is unhappy by an order or decision of the State Government or other authority, may file an appeal under Section 3 of the:
+(1) Indian Forest Act, 2010
+(2) National Forest Act, 2010
+(3) National Green Tribunal Act, 2010
+(4) National Biodiversity Act, 2000
+= 3
+~ Appeals against orders of the State Government or other authority under the Forest (Conservation) Act, 1980 lie to the National Green Tribunal, which was set up under the National Green Tribunal Act, 2010. The other three options name Acts that do not exist; the biodiversity law is the Biological Diversity Act, 2002. The NGT Act's appeal provision is Section 16, while Section 3 only establishes the Tribunal. (Official key; some sources differ.)
+
+Q 87 | fel | Forest Policy
+National Forest Policy of 1988 (NFP) represented a major paradigm shift from earlier policies and this shift began to take some shape through the introduction of:
+(1) ban on any non-forest activity or the de-reservation of forest land
+(2) Use of biological diversity subject to the approval of National Biodiversity Authority
+(3) Joint Forest Management (JFM) in India in 1990
+(4) Demarcation of over 500 National Parks and Sanctuaries termed as ‘protected areas’ (Pas)
+= 3
+~ The 1988 Policy shifted the emphasis from revenue and commercial exploitation to ecological stability and people's participation in protecting forests. This took shape through Joint Forest Management, which the MoEF circular of June 1990 put into practice. The National Biodiversity Authority did not exist until 2003, and the other options do not describe the policy's participatory shift.
+
+Q 88 | fel | Forest & Environment Laws
+Forests are included in the Concurrent List in the (Seventh Schedule) of the Constitution of India. This means that:
+(1) only the central government of India can enact the forest laws
+(2) forests are a state subject so state legislation can enact the laws
+(3) both, the Centre and States are competent to enact laws for forest conservation and use in India
+(4) the Centre can enact the laws and a State has to implement it
+= 3
+~ The 42nd Constitutional Amendment (1976) moved forests from the State List to the Concurrent List (Entry 17A of List III). On a Concurrent List subject both Parliament and the State legislatures can legislate, with the Central law prevailing in case of conflict. Option 2 describes the position before 1976.
+
+Q 89 | fim | Sampling & Inventory
+In forestry, ‘inventory sampling’ is defined as:
+(1) part of population which is homogeneous
+(2) part of population consisting of one or more sampling units, selected and examined as a representative of the whole
+(3) part of population taken from different corners in the area
+(4) part of population which dominates the area
+= 2
+~ A sample is a part of the population, made up of one or more sampling units, selected and examined as a representative of the whole population; the keyed option gives this definition. Being homogeneous, taken from corners of the area, or dominating the area does not make a part of the population a sample.
+
+Q 90 | fim | Sampling & Inventory
+Which of the following are two main kinds of sampling used in forest inventories?
+(1) Multiphase and multistage sampling
+(2) Stratified and un-stratified sampling
+(3) Regulated and un-regulated sampling
+(4) Random and non-random sampling
+= 4
+~ Sampling in forest inventories is broadly of two kinds: random (probability) sampling, in which units are chosen by chance, and non-random (purposive or subjective) sampling, in which they are chosen by judgement. Stratified, multistage and multiphase sampling are designs used within these, and "regulated" sampling is not a standard category.
+
+Q 91 | fim | Sampling & Inventory
+___________ is the percentage of the area of the population to be included in a sample.
+(1) Sampling error
+(2) Sampling intensity
+(3) Sampling estimate
+(4) Sampling confidence
+= 2
+~ Sampling intensity is the percentage of the total area of the population that is included in the sample; for example, 10 ha sampled out of 200 ha is 5%. Sampling error is the difference between the sample estimate and the true population value, not a share of the area.
+
+Q 92 | fim | Sampling & Inventory
+If a forest population of 1000 ha is subdivided on the basis of site quality into 4 strata with area 300 ha in I quality, 350 ha in II quality, 200 ha in III quality and 150 ha in IV quality and sampling units are of 0.1 ha, then, for 5% sampling, _______, _____, ________ & ______ will be selected with the help of the table of random numbers for quality I, II, III and IV, respectively.
+(1) 30, 35, 20, 15
+(2) 60, 70, 40, 30
+(3) 75, 87.5, 50, 37.5
+(4) 150, 175, 100, 75
+= 4
+~ The area to be sampled in each stratum is 5% of its area: 15, 17.5, 10 and 7.5 ha. Dividing by the 0.1 ha unit size gives 150, 175, 100 and 75 units. Options 1, 2 and 3 correspond to only 1%, 2% and 2.5% sampling.
+
+Q 93 | fim | Sampling & Inventory
+A forest to be inventoried might consist of numerous compartments that could be considered as primary units in design. Some compartments may be selected in the primary stage. They may be broken into plots, of which some would be selected at the secondary stage. Trees selected in these plots for volume measurement could be the third stage of sampling. This kind of sampling can be classified as:
+(1) simple random sampling
+(2) stratified random sampling
+(3) multistage sampling
+(4) multiphase sampling
+= 3
+~ Selecting compartments first, then plots within the chosen compartments, then trees within the chosen plots is sampling in successive stages, that is, multistage sampling. Multiphase sampling is different: the same units are sampled again at different intensities, for example a large sample for cheap data and a sub-sample for costly measurements.
+
+Q 94 | fim | Tree & Stand Measurement
+In a sample plot of 0.25 hectares, while viewing from a wedge prism with BAF 2, the following results were obtained.
+i. Trees with overlapping images: 8
+ii. Trees with margins just touching: 11
+Find out basal area per hectare.
+(1) 13.5 m² /ha
+(2) 27 m² /ha
+(3) 40.5 m² /ha
+(4) 19 m² /ha
+= 2
+~ In angle-count sampling, trees whose images overlap are counted fully and trees whose margins just touch are counted as half. Count = 8 + 11 × ½ = 13.5, so basal area per hectare = count × BAF = 13.5 × 2 = 27 m²/ha. The plot size of 0.25 ha is not needed in this method, and 13.5 is the count, not the basal area.
+
+Q 95 | fim | Tree & Stand Measurement
+Which of the following statements are true?
+i.The MAI, whether in a tree or in a stand, is the expression of the average yearly response in the past to the growth factors.
+ii.The CAI is the actual response of a tree or a stand in any one year to the growth factors.
+iii.The CAI is uniform throughout the life of a stand or a tree.
+iv.The MAI continues to rise towards the maximum even after the CAI has started falling.
+(1) i, ii, iii and iv
+(2) i, ii and iii
+(3) i and ii
+(4) i, ii and iv
+= 4
+~ MAI is the average yearly growth up to a given age, and CAI is the growth in one particular year, so statements i and ii are true. CAI is not uniform: it rises to a peak and then falls, and MAI keeps rising for some time after CAI starts to fall until CAI cuts it, so iv is true and iii is false.
+
+Q 96 | fim | Tree & Stand Measurement
+A time come in the life of a tree or stand when there may be no growth at all. At that time CAI will be:
+(1) maximum
+(2) minimum
+(3) Zero
+(4) equal to MAI
+= 3
+~ CAI is the growth put on in a single year, so in a year with no growth at all it is zero. MAI is total growth divided by age and therefore stays positive, and CAI equals MAI only at the point where MAI culminates.
+
+Q 97 | fim | Tree & Stand Measurement
+Pressler calculated increment percent by simple interest rate on the means of two diameters. Which of the following formulas did he use?
+(1) 100(√(D/d) − 1)
+(2) 200(D − d) / (n(D + d))
+(3) 400 / nD
+(4) (D − 1) / (d − 1)
+= 2
+~ Pressler's formula uses simple interest on the mean of the two diameters: P = 200(D − d) / [n(D + d)], where D and d are the diameters at the end and the start of n years. 400/(nD) is Schneider's formula, and option 1, with its square root of D/d, is a compound-interest (geometric) form, so neither is Pressler's simple-interest formula.
+
+Q 98 | fim | Tree & Stand Measurement
+Which of the following equipment can be used for measuring the height of trees?
+1.Christen’s hypsometer
+2.Wedge prism
+3.Abney level
+4.Digital calliper
+(1) 1, 2, 3 and 4
+(2) 1 and 3 only
+(3) 1, 3 and 4 only
+(4) 1 and 4 only
+= 2
+~ Christen's hypsometer and the Abney level are height-measuring instruments. A wedge prism is an angle gauge used to estimate basal area, and a digital calliper measures stem diameter, so only 1 and 3 are correct.
+
+Q 99 | fim | Tree & Stand Measurement
+Haga altimeter is an instrument that is used for measuring the ___________ of trees.
+(1) basal area
+(2) Height
+(3) bark thickness
+(4) Diameter
+= 2
+~ The Haga altimeter is a pocket hypsometer that gives tree height by a trigonometric principle, using scales set for fixed horizontal distances (15, 20, 25 and 30 m). Basal area is found with angle gauges or prisms, and diameter with callipers or tapes.
+
+Q 100 | fim | Tree & Stand Measurement
+When tree diameter is measured at _______ above ground level, measurement at this height is called diameter at breast height or DBH.
+(1) 1.37 m
+(2) 1.50 m
+(3) 1.39 m
+(4) 1.25 m
+= 1
+~ Diameter at breast height (DBH) is measured at 1.37 m (4.5 ft) above ground level, the standard breast height in Indian forestry. Some countries use 1.3 m, but none of the other options is a standard value.
+
+Q 101 | fim | Tree & Stand Measurement
+On a sloping ground, the DBH is measured on the uphill side; but on plain ground, the DBH of a leaning tree is measured:
+(1) on the opposite side of lean
+(2) In between lean and its opposite side
+(3) on the side of the lean
+(4) as far as it is convenient to measure
+= 3
+~ On a leaning tree growing on plain ground, the 1.37 m breast height is taken along the stem on the side of the lean. On sloping ground it is measured from the uphill side so that the slope does not alter the height of measurement.
+
+Q 102 | fim | Remote Sensing & GIS
+___________ is the technique of acquiring information about some property, object or phenomenon by recording devices – such as cameras, laser, radio, frequency, receivers, radar systems or magnetometers – without being in physical or intimate contact with the object under study.
+(1) Interpretation of imaginary things
+(2) Remote sensing or aerial photography
+(3) High end research on forest conservation
+(4) Suitability through conservation of resources
+= 2
+~ Remote sensing is gathering information about an object or phenomenon with recording devices such as cameras, lasers, radar or magnetometers, without physical contact with it; aerial photography is one form of it. The other options do not name any information-gathering technique.
+
+Q 103 | fim | Remote Sensing & GIS
+Which data structure in GIS uses line segments or points represented by their explicit X and Y coordinates to identify locations?
+(1) Raster
+(2) Vector
+(3) Pictorial
+(4) Graphical
+= 2
+~ The vector data model represents features as points, lines and polygons whose locations are given by explicit X and Y coordinates. The raster model instead stores data as a grid of cells (pixels) with values, and "pictorial" and "graphical" are not GIS data structures.
+
+Q 104 | fim | Remote Sensing & GIS
+Radar remote sensing can be best categorised as _________.
+(1) normal remote sensing
+(2) high remote sensing
+(3) active remote sensing
+(4) passive remote sensing
+= 3
+~ Radar sends out its own microwave pulses and records the echoes, so it does not depend on sunlight and is an active remote-sensing system. Passive sensors, such as optical cameras and most satellite scanners, record reflected sunlight or emitted heat.
+
+Q 105 | fim | Remote Sensing & GIS
+In an FCC (False Colour Composite) of a satellite image, forests and agriculture can be interpreted by___________ and ___________ tones.
+(1) yellow, red
+(2) red, cyan
+(3) orange, pink
+(4) red, pink
+= 4
+~ In a standard false colour composite the near-infrared band is displayed in red, and healthy vegetation reflects strongly in near-infrared. Forests therefore appear in red tones and agricultural crops in pink (bright red to pink) tones. Cyan and yellow are not typical vegetation tones in a standard FCC.
+
+Q 106 | nrs | Forest & Water Resources
+Two key findings of India State of Forest Report (ISFR) 2021 are given here. Select the most appropriate option to fill in the blanks.
+The Total forest and tree cover is _________ of the geographical area of the country.
+As compared to ISFR 2019, the current assessment shows an increase of _______ forest and tree cover put together at the national level.
+(1) 24.62% ; 0.28%
+(2) 19.62% ; 1.28%
+(3) 33% ; 2%
+(4) 21.25% ; 3%
+= 1
+~ ISFR 2021 reports forest cover of 21.71% and tree cover of 2.91%, giving total forest and tree cover of 24.62% of the geographical area. Compared with ISFR 2019, this is an increase of 2,261 sq km (0.28%). The 33% in option 3 is the target of the National Forest Policy, 1988, not the achieved figure.
+
+Q 107 | nrs | Forest & Water Resources
+Forest Survey of India (FSI) classifies forests as per canopy density. As per canopy density the forests of India are classified as:
+a.Very Dense Forests have a density of ___________
+b.Moderately Dense Forests have a density of _______________
+c.Open Forests have a density of _______
+d.Scrub Forests have a density of ________
+(1) a.100% and above 60%; b.40% to 60%; c. 30% to 40%; d. 10% to 30%
+(2) a.70% and above; b.40% and more but less than 70%; c.10% and more but less than 40%; d.less than 10%
+(3) a.90% to 60%; b.60% to 50%; c.50% to 40%; d.40% to 30%
+(4) a.80% and above; b.50% and above; c.30% and above; d.20% and above
+= 2
+~ FSI classes by canopy density: Very Dense Forest 70% and above; Moderately Dense Forest 40% to less than 70%; Open Forest 10% to less than 40%; and Scrub (degraded forest land) with canopy density below 10%. Only option 2 gives these limits.
+
+Q 108 | ecw | Types of Ecosystems
+______________, located in the northern Bay of Bengal, is the world's largest single patch of mangrove forests. It is spread over approximately 10,000 km2 in Bangladesh and India.
+(1) Oceania
+(2) Thar
+(3) Sundarbans
+(4) Swamp of Bengal
+= 3
+~ The Sundarbans, in the Ganges-Brahmaputra delta on the northern Bay of Bengal, is the world's largest single block of mangrove forest, shared by India and Bangladesh. Oceania is a world region and the Thar is a desert, while "Swamp of Bengal" is not a recognised name.
+
+Q 109 | fpt | Forest Fire
+In 2020, ____________ developed a cost-effective and time-efficient methodology for the rapid assessment of forest areas affected by fire. In this methodology, fire burnt forest areas show a conspicuous signature on satellite images.
+(1) Forest Survey of India
+(2) UNO
+(3) Forest fire prone States of India
+(4) IIT Delhi
+= 1
+~ The Forest Survey of India, which monitors forest fires through satellite-based alerts and assesses the country's forest cover, developed this rapid method for mapping burnt forest areas. Burnt patches stand out on satellite images because the reflectance of vegetation changes sharply after burning. The UN, individual States and IIT Delhi are not credited with it.
+
+Q 110 | ens | Pollution
+According to WHO and World Bank, indoor air pollution is the world’s most serious air pollution problem, especially for poor people. It is mainly caused by:
+(1) burning of fossil fuels in modern gadgets
+(2) burning of wood, charcoal, dung and crop residues in open fires
+(3) use of acids, air conditioners and detergents in our homes
+(4) burning of wood and coal in well ventilated houses
+= 2
+~ Indoor air pollution in poor households arises mainly from burning biomass fuels, that is wood, charcoal, dung and crop residues, in open fires and simple stoves. The smoke carries particulates and carbon monoxide. Modern gadgets and well-ventilated houses are not its main cause.
+
+Q 111 | ens | Pollution
+Legal, economic and technological tools can help us clean up air, but the best solution is:
+(1) resorting to use of old technology which does not produce pollutants
+(2) always using masks over nose and mouth
+(3) preventing air pollution
+(4) using oxygen concentrators in offices and other work places
+= 3
+~ Legal, economic and technological tools help clean up polluted air, but the most effective and cheapest approach is pollution prevention, that is, not releasing pollutants in the first place. Masks and oxygen concentrators only protect individuals, and going back to old technology is not a pollution-control strategy.
+
+Q 112 | ens | Climate & Global Issues
+The atmospheric concentration of CO2 rose from 285 ppm in 1850, shortly after the Industrial Revolution, to 390 ppm in 2010. If CO2 emissions continue to increase at their current rate, levels in the atmosphere are likely to rise to ___________ ppm in 2050 and could soar to __________ ppm by 2100 as per the climate models by various climate scientists.
+(1) 560 ppm, 1390 ppm
+(2) 695 ppm, 1390 ppm
+(3) 780 ppm, 1390 ppm
+(4) 500 ppm, 1390 ppm
+= 1
+~ The climate-model projections quoted in standard environmental-science texts put atmospheric CO2 at about 560 ppm in 2050 and about 1,390 ppm by 2100 if emissions keep rising at the current rate. All four options give the same 2100 figure, so the answer rests on the 2050 value, which is 560 ppm.
+
+Q 113 | ens | Climate & Global Issues
+Which of the following statements are true?
+a.Oceans remove about 25-30% of CO2 pumped into the lower atmosphere by human activities.
+b.As the oceans warm up, some of their dissolved CO2 is released into the lower atmosphere.
+c.The rising levels of CO2 in the oceans have increased the acidity of their surface waters.
+d.Ocean currents slowly transfer some of the CO2 to the deep sea where it is buried for several hundred million years.
+(1) a, b and c
+(2) a, b, c and d
+(3) a, b and d
+(4) b, c and d
+= 2
+~ Oceans absorb roughly 25-30% of human-made CO2, warmer water holds less dissolved gas so some CO2 is released again, the extra CO2 forms carbonic acid and acidifies surface waters, and currents carry some CO2 to the deep sea. The key treats all four as true, although the deep-sea storage time in statement d is usually quoted as centuries to thousands of years. (Official key; some sources differ.)
+
+Q 114 | ens | Climate & Global Issues
+What are some possible effects of a warmer atmosphere?
+(1) Higher production of crops, more rainfall and cheaper travel
+(2) Increased drought and flooding, rising sea levels and shifting in the locations of croplands and wildlife
+(3) Increased insect attacks, flooding and comfortable environment
+(4) More water in our waterbodies, increased production of food and changed ecosystems
+= 2
+~ A warmer atmosphere is expected to bring more frequent droughts and floods, rising sea levels from thermal expansion and melting ice, and shifts in where crops can be grown and where wildlife can live. The other options list benefits, such as higher crop output, cheaper travel or a comfortable environment, that are not the expected overall effects.
+
+Q 115 | ens | Climate & Global Issues
+As per IPCC Working Group III report climate scientists have given four prevention strategies that, by 2050, could reduce greenhouse gas emissions by 57-83%. These are:
+(1) population control, avoiding use of fossil fuels, resorting to traditional practices and scientific forestry
+(2) methanol as fuel, using solar energy, no methane production and more grasslands
+(3) using modern technology, increasing travel by air, space exploration and increasing consumption of seafood
+(4) improving energy efficiency, adopting a mix of low carbon renewable energy resources, stopping cutting tropical forests, planting more trees and shifting to climate-friendly agriculture
+= 4
+~ The keyed option lists the broad emission-cutting strategies: energy efficiency, a mix of low-carbon renewable energy, stopping tropical deforestation and planting trees, and climate-friendly agriculture. Option 3 includes more air travel and consumption, which would raise emissions, and options 1 and 2 are not the recognised mitigation strategies.
+
+Q 116 | ens | Pollution
+Noise pollution is unwanted or excessive sound that can have deleterious effects on human health, wildlife and environmental quality. Loudness (also called sound pressure level, or SPL) is measured in logarithmic units called ‘decibels’ (dB).The normal human ear can detect sounds that range between 0 dB (hearing threshold) and about 140 dB. The sounds which are above pain threshold range from _____ to ________.
+(1) 140 dB ; 160 dB
+(2) 105 dB ; 120 dB
+(3) 120 dB ; 130 dB
+(4) 120 dB ; 140 dB
+= 4
+~ The threshold of pain is about 120 dB, so sounds above it lie between 120 dB and the 140 dB upper limit of hearing given in the question, as with a jet engine or gunfire at close range. Option 1 lies beyond that 140 dB limit, option 2 starts below the pain threshold, and option 3 stops short of 140 dB.
+
+Q 117 | ens | Pollution
+Frequency of a sound wave is expressed in cycles per second (cps), but hertz (Hz) is more commonly used (1 cps = 1 Hz). The pitch of a human voice in normal conversation occurs at frequencies between 250 Hz and __________.
+(1) 2000 Hz
+(2) 1000 Hz
+(3) 3000 Hz
+(4) 4000 Hz
+= 1
+~ The pitch of the human voice in normal conversation lies between about 250 Hz and 2000 Hz, which is why speech sounds are most easily masked by noise in this band. The ear as a whole can hear a much wider range, roughly 20 Hz to 20,000 Hz.
+
+Q 118 | fse | Survey & Engineering
+A representative Factor (RF) on a map showing 1/2500 means:
+(1) distance of 2500 feet, inches or cm will be represented by 1 ft, 1 in or 1 cm, respectively
+(2) distance of 1 km = 2500 cm
+(3) distance of 1 cm on map = distance of 2500 km on ground
+(4) whole map is prepared on 2500 cm²
+= 1
+~ The representative fraction (RF) is the ratio of a distance on the map to the same distance on the ground, in the same units. An RF of 1/2500 therefore means 1 ft on the map stands for 2500 ft on the ground, and likewise 1 in for 2500 in or 1 cm for 2500 cm. Options 2 and 3 do not give a ratio of 1 : 2500 (1 km is 100,000 cm, and 1 cm to 2500 km is about 1 : 250 million), and option 4 confuses RF with map area.
+
+Q 119 | fse | Survey & Engineering
+The Vernier calliper is a device for measuring very accurately, fractional parts of a small division of the main scale.
+(1) It consists of primary scale and fixed Vernier scale.
+(2) It consists of only one scale which is further minutely divided.
+(3) It consists of main scale which has fractional parts.
+(4) It consists of circular scale and plain scale.
+= 1
+~ A vernier calliper has a main (primary) scale and a vernier scale; the vernier lets one read a fraction of the smallest main-scale division. Option 1 is the closest of the four, since the others describe a single scale or a circular scale (as in a micrometer screw gauge), although the vernier scale actually slides along the main scale. (Official key; some sources differ.)
+
+Q 120 | fse | Survey & Engineering
+The width of a river measured on ground is 50 m. How wide will it be indicated on a map of scale 1 : 50000?
+(1) 1.5 mm
+(2) 1.5 cm
+(3) 1 cm
+(4) 1 mm
+= 4
+~ The ground width is 50 m = 5,000 cm. On a 1:50,000 map the width is 5,000 ÷ 50,000 = 0.1 cm, which is 1 mm.
+
+Q 121 | fel | Forest & Environment Laws
+APWALTA is an Act that extends to:
+(1) the whole of India
+(2) only the States of India
+(3) only the State of Andhra Pradesh
+(4) only the Union Territories of India
+= 3
+~ APWALTA is the Andhra Pradesh Water, Land and Trees Act, 2002 (Act 10 of 2002). It is a State law, so it extends only to Andhra Pradesh and not to the rest of India. It regulates groundwater use and promotes water conservation and tree cover.
+
+Q 122 | fel | Forest & Environment Laws
+Andhra Pradesh Water, Land Trees Act, 2002 (APWALTA) came into force on:
+(1) 15th June 2002
+(2) 19th April 2002
+(3) 15th June 2004
+(4) 6th November 2002
+= 2
+~ APWALTA (Act 10 of 2002) is treated as having come into force on 19 April 2002, the date of its publication in the Andhra Pradesh Gazette. The Rules under it came later, in 2004 (G.O. Ms. No. 339 dated 6 November 2004).
+
+Q 123 | fse | Survey & Engineering
+Plane-tabling is a method of surveying, the peculiar feature of which is that the field observations, measurements and plotting proceed simultaneously. It consists of which of the following essentials?
+(1) Drawing board mounted on tripod stand, alidade and sheet of drawing paper
+(2) Compass, drawing board and drawing sheet
+(3) Mason's level, table and drawing sheet
+(4) Prismatic compass, drawing table and drawing sheet
+= 1
+~ The essentials of plane tabling are a drawing board mounted on a tripod, an alidade for sighting, and a sheet of drawing paper, so that observing and plotting go on together in the field. Accessories such as a spirit level, plumbing fork and trough compass assist, but a compass or Mason's level is not part of the basic set.
+
+Q 124 | fse | Survey & Engineering
+The instrument used for the enlargement or reduction of a given plan based on the principal of similar triangles is called ________________.
+(1) pantograph
+(2) compass
+(3) alidade
+(4) clinometer
+= 1
+~ A pantograph is a jointed parallelogram linkage that works on the principle of similar triangles and is used to copy plans and maps at an enlarged or reduced scale. An alidade is a sighting device on a plane table, and a clinometer measures slope angles.
+
+Q 125 | fse | Survey & Engineering
+What are benchmarks in levelling operations?
+(1) Benchmarks are the starting and end points of surveying.
+(2) Benchmarks are fixed points of reference, whose elevation with respect to definite datum is known.
+(3) Benchmarks are the fixed points in the Dumpy Level.
+(4) Benchmarks are starting points shown on a map.
+= 2
+~ A benchmark is a permanent fixed point whose elevation above a reference datum, usually mean sea level, is known, such as the Great Trigonometrical Survey benchmarks. Levelling starts from a benchmark and is checked on another, to find the reduced levels of other points. It is not a part of the level instrument.
+
+Q 126 | fse | First Aid
+How can one prevent a heatstroke?
+(1) Gradually letting one’s body acclimatise to warm temperatures over several weeks if one has to be in hot conditions for work or sports
+(2) Always carrying ice packs while outside
+(3) Wearing wet inner clothes
+(4) Keeping your head and shoes wet
+= 1
+~ Heatstroke is prevented by letting the body acclimatise gradually, over several weeks, to hot conditions, along with drinking plenty of fluids and avoiding heavy exertion in the midday heat. Carrying ice packs, wearing wet inner clothes or keeping the head and shoes wet are not recognised preventive measures.
+
+Q 127 | fel | Forest Administration
+When a forest is managed for a regular and continuous supply of forest products without impairing the capacity of land to support production, the key objective of this management is the achievement of an appropriate or normal distribution of size classes of trees within the area under management. This principle of management is termed as:
+(1) sustainable yield principle
+(2) principle of land regulation
+(3) forest regulation principle
+(4) forest working circle principle
+= 1
+~ Managing a forest for a regular, continuous supply of produce without harming the productive capacity of the land, by building a normal distribution of age or size classes, is the principle of sustained (sustainable) yield. Forest regulation is the set of methods used to reach sustained yield, and a working circle is a unit of management, not a principle.
+
+Q 128 | ens | Climate & Global Issues
+Governments around the world are investing in forests to restore the essential biodiversity and ecosystem services on which societies and economies depend. In this context, which of the following are correct?
+1.Businesses are under increasing pressure from governments, consumers and investors to avoid, reduce and mitigate their carbon emissions and reduce their impact on nature and biodiversity.
+2.No business is directly vulnerable to the effects of nature loss and climate change.
+3.Forest destruction and degradation is accelerating the climate and nature crises, with tropical tree cover loss generating almost 5 GtCO2 e in annual emissions.
+4. Business practices that contribute to nature and forest loss and climate change need to adopt new green technologies.
+(1) 1, 2, 3, and 4 are correct
+(2) 1, 2, and 3 are correct
+(3) 1, 3, and 4 are correct
+(4) 1 and 2 are correct
+= 3
+~ Statements 1, 3 and 4 are correct: businesses face growing pressure to cut emissions and nature impacts, forest loss and degradation are worsening the climate and nature crises, and damaging practices need to move to greener technologies. Statement 2 is false because businesses are directly exposed to nature loss and climate change, for example through supply chains, water and raw materials.
+
+Q 129 | fel | Forest & Environment Laws
+The Forest Conservation Rules 2022, are a set of regulations established by the Ministry of Environment, Forest and Climate Change (MoEFCC), to ensure that forest conservation is properly implemented. These include:
+(1) laws designed to strike a balance between the right to the environment and the right to life and livelihood
+(2) the rules provide for the formation of an Advisory Committee and a Project Screening Committee in each state/UT to advise or recommend on matters related to forest conservation
+(3) the rules to ensure that the management of forests is undertaken in a sustainable manner and that local/tribal communities are empowered and involved in their protection and development
+(4) the rules that recommended 33% of all land in India to be covered by forests or trees. They outlined comprehensive instructions for managing and preserving forests and wildlife.
+= 2
+~ The Forest (Conservation) Rules, 2022, made under the Forest (Conservation) Act, 1980, lay down the procedure for approving the diversion of forest land. They provide for committees, including an Advisory Committee and a Project Screening Committee in each State/UT, to examine and recommend proposals. The 33% goal belongs to the National Forest Policy, 1988, and community empowerment is the theme of the Forest Rights Act, 2006, not of these Rules.
+
+Q 130 | fim | Sampling & Inventory
+Forest inventory is synonymous with the term:
+(1) sampling of soil
+(2) counting branches
+(3) enumeration or total count
+(4) tabulation of data
+= 3
+~ A forest inventory in its simplest form is an enumeration, that is a complete (100%) count and measurement of the trees in an area, and the keyed option treats the two terms as synonyms. Soil sampling, counting branches and tabulating data are not what is meant by a forest inventory.
+
+Q 131 | fim | Tree & Stand Measurement
+Which is the proper definition of increment in trees?
+(1) It is exclusively, the increase in thickness of bark which a tree puts on in a single year.
+(2) It is the mean volume of a tree or a crop at the desired age.
+(3) The increase in girth, diameter, basal area, height, volume, quality, price or value of trees or crops during a given period.
+(4) It is the increase in diameter that a tree or a crop puts from origin up to the age at which the tree or crop is cut.
+= 3
+~ Increment is the increase in girth, diameter, basal area, height, volume, quality, price or value of trees or crops during a given period. Option 1 covers only bark, option 2 describes a mean volume at a given age (like MAI), and option 4 covers only diameter growth up to felling age.
+
+Q 132 | fim | Tree & Stand Measurement
+Which is the year of culmination of MAI?
+(1) When CAI begins to fall to such an extent that it is equal to the average or the entire life of the tree or stand.
+(2) When CAI = MAI
+(3) The year in which the growth factors are favourable
+(4) When CAI and MAI both begin to fall
+= 1
+~ MAI culminates, that is reaches its maximum, when the falling CAI cuts the MAI curve, so CAI has fallen to equal the average increment over the life of the tree or stand; this is what the keyed option says. Option 2 (CAI = MAI) describes the same point, but APPSC keyed option 1. (Official key; some sources differ.)
+
+Q 133 | fim | Remote Sensing & GIS
+Which sensor, spatial resolution, scale, minimum mappable unit (ha), and mode of interpretation were used by Forest Survey of India in 2019 to assess the forest cover?
+(1) LANDSAT-MSS; 80 m; 1 : 1 million; 400; Visual
+(2) IRS-Resourcesat-2LISS-III; 23.5 m; 1 : 50,000; 1; Digital
+(3) LANDSAT-TM; 30 m; 1 : 250,000; 25; Visual
+(4) IRS-1D LISS III; 23.5 m; 1 : 50,000; 1; Digital
+= 4
+~ In its 2019 cycle (ISFR 2019) FSI interpreted satellite data digitally at 1:50,000 with a 1 ha minimum mappable unit and 23.5 m resolution. Options 1 and 3 are the early visual cycles (Landsat MSS and TM). The 2019 assessment used Resourcesat-2 LISS-III data (option 2), and IRS-1D LISS-III was the sensor of earlier digital cycles, yet APPSC keyed option 4. (Official key; some sources differ.)
+
+Q 134 | fse | First Aid
+Which is the correct method for first aid in case a person is suffering difficulty in breathing, may be due to sunstroke?
+(1) As you are doing rescue breathing, perform chest compressions to keep the person’s blood circulating.
+(2) If you have cleared a person’s airway but they’re still not breathing, make him to stand and run.
+(3) If the person is breathing but is not responsive, then don’t touch the person.
+(4) If someone is not breathing, the first thing you need to do is beat his chest.
+= 1
+~ When a person is not breathing, rescue breaths are combined with chest compressions (CPR) so that blood keeps circulating to the brain and heart. Making a person stand and run, or beating the chest, is wrong and harmful, and an unresponsive person who is breathing should be checked and placed in the recovery position, not left untouched.
+
+Q 135 | fse | First Aid
+If you think someone is in cardiac arrest, may be due to sunstroke, the first aid should be:
+(1) wash your hands or put on disposable gloves if you have them. This will protect you from infectious diseases like viral hepatitis and HIV/AIDS that can be spread in a person’s blood.
+(2) apply direct pressure to stop the flow of blood and encourage clotting (when blood naturally thickens to stop blood loss).
+(3) use the Heimlich manoeuvre, a series of abdominal thrusts, that can help dislodge the thing the person maybe choking on
+(4) start doing chest compressions on the person who needs help. Using both your hands, push down hard and fast in the centre of the person’s chest. Let their chest come back up naturally between compressions. You may hear pops or snaps; this is normal.
+= 4
+~ In suspected cardiac arrest, chest compressions should start at once: push hard and fast (about 100-120 per minute) in the centre of the chest and let it recoil fully between pushes. Washing hands, direct pressure and the Heimlich manoeuvre are for infection control, bleeding and choking respectively, not for cardiac arrest.
+
+Q 136 | fse | First Aid
+Due to sunstroke someone is unconscious or unresponsive, the basic principle of first aid that you need to know is ABC which means the:
+(1) basic principles
+(2) airway, breathing, and circulation.
+(3) above, bottom and centre
+(4) aid, bleed and control
+= 2
+~ In first aid, ABC stands for Airway, Breathing and Circulation: first make sure the airway is open, then check that the person is breathing, then check circulation (pulse, bleeding) and give compressions if needed. The other expansions are not used in first aid.
+
+Q 137 | fel | Forest & Environment Laws
+Forest conservation act and Forest (Conservation) Amendment Bill was passed in the year
+(1) 1927 and 2001
+(2) 1857 and 1947
+(3) 1980 and 2023
+(4) 1865 and 2000
+= 3
+~ The Forest (Conservation) Act was passed in 1980, and the Forest (Conservation) Amendment Bill was passed by Parliament in 2023 (July-August 2023), so the pair is 1980 and 2023. The years 1927 and 1865 belong to the Indian Forest Acts.
+
+Q 138 | fel | Forest & Environment Laws
+The first forest act of India that was passed during the British rule in the year
+(1) 1799
+(2) 1865
+(3) 1947
+(4) 1946
+= 2
+~ The first forest Act of British India was the Indian Forest Act of 1865, which let the Government declare land covered with trees as Government forest. It was replaced by the Indian Forest Act, 1878 and then by the Indian Forest Act, 1927. The years 1946 and 1947 fall at the end of British rule.
+
+Q 139 | fim | Sampling & Inventory
+The systematic collection of data and forest information for assessment or analysis is termed as
+(1) Forest Inventory
+(2) Timber Inventory
+(3) Agroforestry
+(4) GIS Forestry
+= 1
+~ A forest inventory is the systematic collection of data and information on the forest, such as area, species, volume, growth and condition, for assessment or analysis. A timber inventory covers only the timber (growing stock), while agroforestry and "GIS forestry" are different subjects.
+
+Q 140 | fim | Sampling & Inventory
+Which of the following sampling methods of forest inventory described as the measurement of forest condition according to a fixed pattern
+(1) Random sampling
+(2) Systematic sampling
+(3) Probability sampling
+(4) Cluster sampling
+= 2
+~ In systematic sampling the sample units are placed at regular intervals along lines or on a grid (after a random start), so the forest is measured according to a fixed pattern. In random sampling the units are chosen purely by chance, and cluster sampling measures groups of nearby units.
+
+Q 141 | fel | Forest Administration
+Which of the following is responsible for surveying conducting survey and assessment of forest resources in the country
+(1) Forest Research Institute (FRI)
+(2) Forest Survey of India (FSI)
+(3) Agriculture Survey of India (ASI)
+(4) Agriculture and Forest Survey of India (AFSI)
+= 2
+~ The Forest Survey of India (FSI), Dehradun, under the MoEFCC, surveys and assesses the country's forest and tree resources and publishes the India State of Forest Report every two years. The Forest Research Institute is a research and training body, and the other two bodies named do not exist.
+
+Q 142 | fel | Forest Economics
+Calculate the present value of Net annual return in 8th year of a project discounted at 11%. During the 8th year Annual cost is Rs 20,435/-; annual return Rs59,500/- and Net annual return Rs 39,065/-
+(1) Rs 20,554/-
+(2) Rs 16,954/-
+(3) Rs 17,954/-
+(4) Rs 15,954/-
+= 2
+~ Present value = net annual return × discount factor, where the factor is 1/(1.11)^8 = 1/2.3045 ≈ 0.434. PV = 39,065 × 0.434 ≈ Rs 16,954 (exact division gives about Rs 16,951, and the keyed value uses the rounded factor). Discounting the annual cost or return alone would not give the net figure.
+
+Q 143 | fel | Forest Policy
+Forest policy of India 1894 has been updated twice in the years:
+(1) 1947 & 2001
+(2) 1952 & 1988
+(3) 1954 & 2014
+(4) 2000 & 2018
+= 2
+~ India's first forest policy, the Forest Policy of 1894, was revised in 1952 and again in 1988 (the National Forest Policy, 1988). The 1988 policy set a goal of one-third of the country under forest or tree cover and gave priority to ecological stability.
+
+Q 144 | fel | Forest & Environment Laws
+In response to India’s fast reduction in forest cover and also to meet the constitutional requirement under Article 48-A, the parliament adopted the Forest Conservation Act on :
+(1) October 25, 1980
+(2) December 6, 2001
+(3) April 6, 2011
+(4) May 11, 2019
+= 1
+~ The Forest (Conservation) Act, 1980 was enacted to check the diversion of forest land to non-forest uses and to give effect to Article 48A, which directs the State to protect forests and wildlife (inserted by the 42nd Amendment, 1976). The Act is deemed to have come into force on 25 October 1980.
+
+Q 145 | nrs | Forest & Water Resources
+The forest cover of India as per FSI report 2021 is 7,31,789 Sq. Km. As per this report what is the percentage of forest cover?
+(1) 33%
+(2) 25.71%
+(3) 21.71%
+(4) 30.71%
+= 3
+~ ISFR 2021 reports forest cover of 7,13,789 sq km, which is 21.71% of India's geographical area of 32,87,469 sq km. The question prints 7,31,789 sq km, apparently a transposition of digits; that figure would give about 22.3%, which is not an option, so 21.71% is the intended answer. 33% is the policy target, not the achieved figure.
+
+Q 146 | fim | Sampling & Inventory
+The total forest area is divided into stands of similar species and age classes and a number of sample plots measured at random points within each of the species-age class divisions. Such sampling is a standard type of sampling and is known as:
+(1) Systematic sampling
+(2) Stratified random sampling
+(3) Unrestricted random sampling
+(4) Subjective sampling
+= 2
+~ Dividing the forest into homogeneous strata (species-age classes) and then locating sample plots at random within each stratum is stratified random sampling, which improves precision by reducing variation within strata. In unrestricted random sampling the plots are drawn at random over the whole area without stratifying.
+
+Q 147 | fim | Sampling & Inventory
+To estimate volume of stand, a number of trees of average ht. and girth are sampled. The volume of these trees is taken as an estimate of the mean volume of the trees in the stand. Such type of sampling is:
+(1) Recognised type of sampling viz. systematic sampling
+(2) Non recognised sampling
+(3) Recognised type of sampling viz. sequential sapling
+(4) Recognised type of sampling viz. stratified random sampling
+= 2
+~ Picking trees of "average" height and girth by the surveyor's judgement is subjective (purposive) selection, which is not a recognised sampling method because it gives no valid estimate of sampling error and is likely to be biased. Systematic, sequential and stratified random sampling all follow a defined, objective selection procedure.
+
+Q 148 | fim | Sampling & Inventory
+The graphical representation of normal distribution of data is depicted by a curve which is:
+(1) J shaped curve
+(2) Bell shaped curve
+(3) Sigmoid shaped curve
+(4) Straight line
+= 2
+~ A normal distribution plots as a symmetrical bell-shaped curve with the mean, median and mode at the centre, which is why it is also called the Gaussian or bell curve. J-shaped and sigmoid curves describe other relationships, such as skewed distributions and cumulative growth, and the distribution is not a straight line.
+
+Q 149 | fse | Survey & Engineering
+Plane table surveying consists of:
+(1) Compass, chain and Table
+(2) Hypsometer, Chain and table
+(3) Drawing board, an alidade and sheet of paper
+(4) Prismatic compass, sextant and rods
+= 3
+~ A plane table survey uses a drawing board (mounted on a tripod), an alidade for sighting and a sheet of drawing paper, so observing and plotting are done together in the field. Compasses, chains, hypsometers and sextants are other instruments and not the plane-table set.
+
+Q 150 | fse | Survey & Engineering
+The most accurate and important category of levelling instruments is the Telescopic levels. It needs a set of two instruments which are:
+(1) Compass & Chain
+(2) Abney Level and rods
+(3) The level and the levelling staff
+(4) Tangent Clinometer & the Chain
+= 3
+~ A telescopic level (dumpy, tilting or automatic) gives a horizontal line of sight, and the levelling staff is read through it at each point to get differences in height. The set is therefore the level and the levelling staff; chains, compasses, the Abney level and clinometers are not used as the level-and-staff pair.

@@ -1,0 +1,1317 @@
+# appsc-fro-2020-mains-general-forestry-2.txt: APPSC official paper, answers from APPSC's final key (APOnline master question paper, correct option ticked).
+# Typed from /home/claude/afro/raw/afro-fro18-mains-gf2-final.pdf; checked by a second reader. Questions APPSC ignored for all candidates are left out.
+
+Q 1 | bdc | Biomes & Population Ecology
+The grasslands found in Argentina are called:
+(1) savannas
+(2) prairies
+(3) steppes
+(4) pampas
+= 4
+~ The pampas are the temperate grasslands of Argentina, extending into Uruguay and southern Brazil. Prairies are the North American temperate grasslands, steppes are the Eurasian ones, and savannas are tropical grasslands with scattered trees (as in Africa).
+
+Q 2 | bdc | Biomes & Population Ecology
+The various forms of a species to meet the challenges of changing environment that arise by reorganisation of their genes during sexual reproduction are called:
+(1) ecads
+(2) ecotypes
+(3) pioneers
+(4) seres
+= 2
+~ Ecotypes are genetically distinct local populations of a species adapted to particular habitats; their genetic variation arises through recombination of genes in sexual reproduction followed by natural selection. Ecads are environmentally induced, non-heritable forms, so they do not fit "reorganisation of genes". Pioneers and seres relate to ecological succession.
+
+Q 3 | ecw | Ecosystem Concepts
+A standing dead tree devoid of leaves and branches is called:
+(1) litter
+(2) down woody
+(3) talus
+(4) snag
+= 4
+~ A snag is a standing dead (or dying) tree that has lost its leaves and most branches; it is valuable habitat for cavity-nesting birds and other wildlife. Litter and down woody material lie on the ground, and talus is a slope of broken rock debris.
+
+Q 4 | ecw | Wildlife & Protected Areas
+Skinner's box is associated with which type of behaviour?
+(1) Operant conditioning
+(2) Trial and error learning
+(3) Classical conditioning
+(4) Habituation
+= 1
+~ B.F. Skinner's operant conditioning chamber (Skinner box) lets an animal such as a rat press a lever to obtain a reward, showing that behaviour is shaped by its consequences. Classical conditioning is associated with Pavlov, and trial and error learning with Thorndike's puzzle box.
+
+Q 5 | bdc | Biomes & Population Ecology
+In India, phytosociological approach to study plant communities in grasslands was used for the first time by:
+(1) Harry George Champion
+(2) Norman Loftus Bor
+(3) Jagat Singh
+(4) Shankar Purushottam Agharkar
+= 4
+~ APPSC's key is Shankar Purushottam Agharkar, the Indian botanist who is credited in this question with the first phytosociological (plant-community) approach to Indian grasslands. Champion is known for his forest-type classification and Bor for his work on grass taxonomy, so they are the tempting wrong options. (Official key; some sources differ.)
+
+Q 6 | bdc | Biomes & Population Ecology
+In age structure studies, an urn shaped figure indicates:
+(1) declining population
+(2) stable population
+(3) young population
+(4) clumped population
+= 1
+~ An urn-shaped age pyramid has a narrow base and a wider middle, meaning few young individuals are being added to replace the reproductive and older age classes, so the population is declining. A broad base indicates a young, expanding population, and a bell shape a stable one. "Clumped" describes spatial distribution, not age structure.
+
+Q 7 | ens | Climate & Global Issues
+Which of the following is NOT a man-made disaster in India?
+(1) Boat capsizing
+(2) Forest fire
+(3) Building collapse
+(4) Cyclones
+= 4
+~ Cyclones are natural, hydro-meteorological disasters caused by atmospheric and oceanic processes. In the High Powered Committee classification of disasters in India, boat capsizes, major building collapse and forest fires are listed among the accident-related (man-made) disasters.
+
+Q 8 | fpt | Pests & Diseases
+______ invades monoculture of Ailanthus excels causing defoliation.
+(1) Ascotis imparta
+(2) Tonica niviferana
+(3) Atteva fabriciella
+(4) Plecoptera reflexa
+= 3
+~ Atteva fabriciella (the ailanthus webworm moth) is the defoliator of Ailanthus excelsa; its larvae web and feed on the leaves, and outbreaks are common in pure plantations. Plecoptera reflexa, for example, is a known defoliator of Dalbergia sissoo, not Ailanthus.
+
+Q 9 | ecw | Wildlife & Protected Areas
+______ is an example of secondary hole nesters.
+(1) Indian pangolin
+(2) Rose ringed parakeet
+(3) Greater yellow naped woodpecker
+(4) Pygmy hog
+= 2
+~ Secondary hole nesters do not excavate their own cavities but use holes already made by others; the rose-ringed parakeet nests in existing tree hollows, often old woodpecker or barbet holes. The greater yellow-naped woodpecker is a primary excavator, while the pangolin and pygmy hog are mammals, not birds.
+
+Q 10 | fim | Remote Sensing & GIS
+What are the names of the satellite-based modules used for near real-time monitoring of forest fires by the Forest Survey of India?
+(1) MODIS and SNPP-VIIRS
+(2) MODIS and SNPV
+(3) LISS III and MODIS
+(4) LISS III and SNPV
+= 1
+~ The Forest Survey of India's Forest Fire Alert System detects active fires in near real time from the MODIS (Terra/Aqua) and SNPP-VIIRS (Suomi NPP) sensors. LISS III is a mapping sensor used for forest cover assessment, not for fire alerts, and "SNPV" is not a satellite sensor.
+
+Q 11 | anm | Animal Health & Nutrition
+Chloral hydrate used for wild animal restraint is an example of:
+(1) tranquilizers
+(2) neuroleptics
+(3) hypnotics and sedatives
+(4) dissociative anaesthetics
+= 3
+~ Chloral hydrate is an old hypnotic and sedative that depresses the central nervous system to induce sleep or calm. Tranquilizers and neuroleptics are drugs such as acepromazine, and dissociative anaesthetics are drugs such as ketamine.
+
+Q 12 | pls | Genetics & Plant Diseases
+Inheritance of blood group can be explained by which of the following?
+(1) Quantitative inheritance
+(2) Multiple alleles
+(3) Incomplete dominance
+(4) Gene linkage
+= 2
+~ ABO blood groups are controlled by a single gene locus with three alleles (IA, IB and i), which is the classic example of multiple alleles; IA and IB are also codominant. Quantitative inheritance involves many genes giving continuous variation, which does not apply to discrete blood groups.
+
+Q 13 | pls | Genetics & Plant Diseases
+A photographic image that shows the sum of all the chromosome information in an individual cell is called:
+(1) Southern blot
+(2) Idiotype
+(3) Cartomorph
+(4) Karyotype
+= 4
+~ A karyotype is the photograph or image of the complete chromosome set of a cell, with chromosomes arranged in pairs by size and centromere position. A Southern blot is a DNA hybridisation technique, and "cartomorph" is not a standard genetic term.
+
+Q 14 | anm | Economic Zoology
+In 2010, which institute cloned a buffalo calf named ‘Shresth’?
+(1) Indian Veterinary Research Institute, Bareilly
+(2) National Dairy Research Institute, Karnal
+(3) Tamil Nadu Veterinary and Animal Sciences University, Chennai
+(4) Lala Lajpat Rai University of Veterinary and Animal Sciences, Hisar
+= 2
+~ Shresth was a cloned buffalo calf produced at the National Dairy Research Institute (NDRI), Karnal, Haryana, which pioneered buffalo cloning in India using the handmade cloning technique.
+
+Q 15 | anm | Economic Zoology
+SI = D – b (M – A). D = daughter’s average; M = dam’s average; A = herd average; b = regression coefficient of daughters’ yield on dam’s yield.
+What is this index known as?
+(1) Simple Daughter Average Index
+(2) Krishna's Index
+(3) Heizer's Index
+(4) Gifford's Index
+= 2
+~ This is Krishna's index, also called the corrected daughter average: the daughters' average (D) is corrected for how far their dams were above or below the herd (M – A), using the regression coefficient b of daughters' yield on dam's yield. The Simple Daughter Average Index uses only D and ignores the dams' performance.
+
+Q 16 | anm | Economic Zoology
+Which of the following is a dual-purpose breed of India?
+(1) Red Sindhi
+(2) Sahiwal
+(3) Rathi
+(4) Gir
+= 3
+~ Rathi, from the arid tracts of Rajasthan, is listed in many textbooks as a dual-purpose breed, giving fair milk yield and useful draught bullocks. Red Sindhi, Sahiwal and Gir are classic milch (dairy) breeds of Indian zebu cattle. (Official key; some sources differ.)
+
+Q 17 | anm | Animal Health & Nutrition
+What is the percentage of crude protein in energy-rich concentrates?
+(1) Less than 25%
+(2) Less than 60%
+(3) Less than 35%
+(4) Less than 18%
+= 4
+~ Energy-rich concentrates (cereal grains, brans, molasses) are low in crude protein, and APPSC's key puts the limit at less than 18%. Protein-rich concentrates such as oilseed cakes are those with more than about 20% crude protein; 18% is the usual crude-fibre limit that separates concentrates from roughages. (Official key; some sources differ.)
+
+Q 18 | anm | Animal Health & Nutrition
+IGFRI-S-23-1 is a superior variety of which of the following legumes?
+(1) Atylosia scarabaeoides
+(2) Clitoria ternatea
+(3) Dolichos lablab
+(4) Pueraria thunbergiana
+= 2
+~ IGFRI (Indian Grassland and Fodder Research Institute, Jhansi) releases fodder varieties, and IGFRI-S-23-1 is listed, together with IGFRI-S-12, as a high-yielding fodder variety of Clitoria ternatea (butterfly pea), a perennial fodder legume. Dolichos lablab (lablab bean) is a different fodder legume.
+
+Q 19 | anm | Economic Zoology
+What is the technical standard of body weight (kg) at the market age for Turkey (female)?
+(1) 5.5
+(2) 9.5
+(3) 12.5
+(4) 13.5
+= 1
+~ APPSC's key gives 5.5 kg as the standard market body weight for a female turkey, which is lighter than the male (tom) at market age. The larger values in the other options are closer to the weights expected of males. (Official key; some sources differ.)
+
+Q 20 | anm | Animal Health & Nutrition
+Parakeratosis in pigs is due to the deficiency of which mineral?
+(1) Phosphorus
+(2) Iron
+(3) Calcium
+(4) Zinc
+= 4
+~ Parakeratosis in pigs (scaly, crusty skin lesions with poor growth) is caused by zinc deficiency, and is aggravated by excess dietary calcium, which reduces zinc availability. Iron deficiency causes anaemia in piglets.
+
+Q 21 | anm | Animal Health & Nutrition
+Perosis in young chicks is due to the deficiency of which mineral?
+(1) Magnesium
+(2) Cobalt
+(3) Selenium
+(4) Manganese
+= 4
+~ Perosis (slipped tendon) is a leg deformity of young chicks caused mainly by manganese deficiency, which impairs bone and cartilage development; choline and biotin deficiencies can also contribute. Selenium deficiency causes exudative diathesis, not perosis.
+
+Q 23 | anm | Animal Health & Nutrition
+Which of the following does Prosthogonimus species infect?
+(1) Bull
+(2) Steer
+(3) Male gallinaceous birds
+(4) female gallinaceous birds
+= 4
+~ Prosthogonimus is the oviduct fluke of birds; it lives in the oviduct and bursa of Fabricius of hens and other female domestic fowl, causing abnormal or shell-less eggs. Snails are the first intermediate host and dragonflies (nymphs or adults) the second, and cattle are not infected.
+
+Q 24 | anm | Animal Health & Nutrition
+Which of the following agents causes snotsiekte in wild ruminants?
+(1) Bacteria
+(2) Fungi
+(3) Phytoplasmas
+(4) Viruses
+= 4
+~ Snotsiekte is the African name for wildebeest-associated malignant catarrhal fever, caused by a virus (alcelaphine herpesvirus 1). Wildebeest carry it without illness, and it is fatal in susceptible cattle and other ruminants.
+
+Q 25 | anm | Animal Health & Nutrition
+With which of the following is the term modified Kirby Bauer method associated?
+(1) Protein analysis
+(2) Assisted parturition
+(3) Artificial insemination
+(4) Antimicrobial susceptibility
+= 4
+~ The Kirby-Bauer method is the disc diffusion test: antibiotic discs are placed on a bacterial lawn on agar, and the zone of inhibition shows whether the organism is susceptible. It is the standard antimicrobial susceptibility test.
+
+Q 26 | anm | Animal Health & Nutrition
+What is the causal agent of Mediterranean fever?
+(1) Entamoeba histolytica
+(2) Staphylococcal infection
+(3) Lyssa virus
+(4) Brucella melitensis
+= 4
+~ Mediterranean (Malta or undulant) fever is human brucellosis caused by Brucella melitensis, acquired mainly from goats and sheep. Entamoeba causes amoebiasis and the lyssavirus causes rabies.
+
+Q 27 | anm | Animal Health & Nutrition
+Zoonotic diseases transmitted from human beings to the lower vertebrate animals are called:
+(1) anthropozoonoses
+(2) zooanthroponoses
+(3) amphixenoses
+(4) amlinxoses
+= 2
+~ Zooanthroponoses (reverse zoonoses) are diseases passing from humans to animals. Anthropozoonoses pass from animals to humans, and amphixenoses can pass in either direction.
+
+Q 28 | anm | Economic Zoology
+What is the scientific name of rock bee?
+(1) Apis indica
+(2) Apis dorsata
+(3) Apis florea
+(4) Apis mellifera
+= 2
+~ The rock bee, or giant honey bee, is Apis dorsata; it builds a single large open comb on cliffs, rock overhangs and tall trees. Apis florea is the little bee, Apis indica (cerana) the Indian hive bee, and Apis mellifera the European bee.
+
+Q 29 | fut | NTFPs & Medicinal Plants
+Where is the Indian Institute of Natural Resins and Gums located?
+(1) Solan
+(2) Dehradun
+(3) Ranchi
+(4) Saharanpur
+= 3
+~ The Indian Institute of Natural Resins and Gums (IINRG, formerly the Indian Lac Research Institute) is an ICAR institute at Namkum, Ranchi, Jharkhand. It works on lac, natural gums and resins.
+
+Q 30 | anm | Economic Zoology
+Identify the species that produces Tasar silk.
+(1) Antherea proyeli
+(2) Antherea assama
+(3) Philosamia ricini
+(4) Bombyx mori
+= 1
+~ Antheraea proylei is an oak tasar silkworm (the Indo-French hybrid of A. roylei and A. pernyi) and is therefore a tasar silk producer. Antheraea assamensis gives muga silk, Philosamia ricini gives eri silk, and Bombyx mori gives mulberry silk.
+
+Q 31 | anm | Snakes & Venomous Animals
+Which of the following snake species produces haemotoxin?
+(1) Cobras
+(2) Sea snakes
+(3) Russell's viper
+(4) Common krait
+= 3
+~ Russell's viper is a viperid whose venom is mainly haemotoxic, damaging blood vessels and disturbing blood clotting. The venoms of cobras, kraits and sea snakes are predominantly neurotoxic.
+
+Q 32 | anm | Economic Zoology
+Where is the Central Silk Technological Research Institute situated?
+(1) Itanagar
+(2) Bengaluru
+(3) Pune
+(4) Mysuru
+= 2
+~ The Central Silk Technological Research Institute (CSTRI) of the Central Silk Board is located in Bengaluru, Karnataka, where the Central Silk Board is also headquartered.
+
+Q 33 | anm | Economic Zoology
+Who first translated the meaning of the waggle dance of bees?
+(1) Karl von Frisch
+(2) Edward Lorenze
+(3) Jürgen Tautz
+(4) Ernst Spitzner
+= 1
+~ Karl von Frisch decoded the waggle dance, showing that its direction and duration tell hive mates where and how far food lies; he shared the 1973 Nobel Prize in Physiology or Medicine for this work. Jürgen Tautz is a later bee researcher.
+
+Q 34 | anm | Economic Zoology
+Which of the following is the causal agent of milk shrimp disease?
+(1) Flavobacterium sp
+(2) Leucouthrix sp
+(3) Thelohania sp
+(4) Zoothamnium sp
+= 3
+~ Milk (or cotton) shrimp disease is a microsporidian infection caused by Thelohania, which turns the shrimp's muscle milky white and opaque. Leucothrix is a filamentous bacterium and Zoothamnium a protozoan, both gill or body foulers, while Flavobacterium is a bacterium.
+
+Q 35 | fim | Sampling & Inventory
+The ratio of sample size to study population size is known as:
+(1) stratum
+(2) sampling unit
+(3) sampling fraction
+(4) sampling fame
+= 3
+~ The sampling fraction is n/N, the sample size divided by the size of the population. A stratum is a subgroup of the population, and a sampling unit is an individual element that can be selected.
+
+Q 36 | fim | Sampling & Inventory
+Find the median of the following data set: 10, 11, 13, 11, 12, 10, 13, 11, 12, 15, 12
+(1) 6
+(2) 12
+(3) 11
+(4) 11.5
+= 2
+~ Arranged in order the 11 values are 10, 10, 11, 11, 11, 12, 12, 12, 13, 13, 15. The median is the (11 + 1)/2 = 6th value, which is 12. The mode is 11 and 12 (both occur three times), and 6 is the position of the median, not its value.
+
+Q 37 | fim | Sampling & Inventory
+Who coined the term null hypotheses?
+(1) Ronald Aylmer Fisher
+(2) Cyril Harold Goulden
+(3) Calyampudi Radhakrishna Rao
+(4) David Cox
+= 1
+~ The term "null hypothesis" was introduced by R.A. Fisher in his book The Design of Experiments (1935). C.R. Rao and David Cox are well-known statisticians but are not credited with coining it.
+
+Q 38 | fim | Sampling & Inventory
+A hypothesis that specifies all the parameters of a distribution is called:
+(1) composite hypothesis
+(2) simple hypothesis
+(3) parametric hypothesis
+(4) non-parametric hypothesis
+= 2
+~ A simple hypothesis completely specifies the population distribution, for example H0: mean = 50 with a known standard deviation. A composite hypothesis leaves at least one parameter unspecified, for example H1: mean > 50.
+
+Q 40 | fel | Forest & Environment Laws
+Schedule VI of Wildlife Protection Act (1972) deals with:
+(1) Beddomes cycad, blue vanda, Kuth, lady’s slipper orchid, pitcher plant, red vanda
+(2) Beddomes cycad, blue vanda, kuth, flame of the forest, pitcher plant, red vanda
+(3) Beddomes cycad, blue vanda, kuth, lady’s slipper orchid, venus fly trap, red vanda
+(4) calamus, blue vanda, kuth, lady’s slipper orchid, pitcher plant, red vanda
+= 1
+~ Schedule VI of the Wildlife (Protection) Act, 1972 lists specified plants whose cultivation and trade are regulated: Beddome's cycad, blue vanda, kuth, ladies slipper orchids, pitcher plant and red vanda. Flame of the forest, venus fly trap and calamus are not in the schedule.
+
+Q 41 | fel | Forest & Environment Laws
+______ of Wildlife Protection Act (1972) deals with the National Tiger Conservation Authority.
+(1) Chapter IIIB
+(2) Chapter VI B
+(3) Chapter IV B
+(4) Chapter VB
+= 3
+~ Chapter IVB, inserted by the Wildlife (Protection) Amendment Act, 2006, provides for the National Tiger Conservation Authority and the Tiger and Other Endangered Species Crime Control Bureau. Chapter IVA deals with the Central Zoo Authority.
+
+Q 42 | fel | Forest Administration
+Where is the Indian Institute of Forest Management situated?
+(1) Bhopal
+(2) Mumbai
+(3) Kozhikode
+(4) Indore
+= 1
+~ The Indian Institute of Forest Management (IIFM), an autonomous institute under the Ministry of Environment, Forest and Climate Change, is located in Bhopal, Madhya Pradesh. Kozhikode and Indore host IIMs, not IIFM.
+
+Q 43 | fel | Forest Economics
+Where is the Indian Society for Ecological Economics situated?
+(1) Delhi
+(2) Chennai
+(3) Bengaluru
+(4) Kolkata
+= 1
+~ The Indian Society for Ecological Economics (INSEE), founded in 1998 to promote research and teaching in ecological economics, is headquartered in New Delhi.
+
+Q 44 | ecw | Ecosystem Concepts
+Which of the following is NOT a provisioning service obtained from forests?
+(1) Fuel wood
+(2) Nutrient cycling
+(3) Fibre
+(4) Food
+= 2
+~ In the Millennium Ecosystem Assessment classification, provisioning services are the products people obtain from ecosystems, such as food, fibre, fuel wood and fresh water. Nutrient cycling is a supporting service that underpins all the other services.
+
+Q 45 | fel | Forest Economics
+The method employed to estimate recreational values of a national park is:
+(1) hedonic pricing
+(2) market value method
+(3) travel cost method
+(4) benefit transfer method
+= 3
+~ The travel cost method infers the recreational value of a site such as a national park from what visitors spend in travel cost and time to reach it. Hedonic pricing uses property prices, and benefit transfer borrows values from other studies rather than estimating them directly.
+
+Q 46 | fel | Forest & Environment Laws
+Which section of the Indian Forest Act,1927, deals with the following: ‘Persons enjoying benefits out of forests are bound to take steps to extinguish any forest fire’?
+(1) Section 33 (1) (d)
+(2) Section 33 (2)
+(3) Section 26 (1) (c)
+(4) Section 79 (1)
+= 4
+~ Section 79 of the Indian Forest Act, 1927 makes persons who exercise rights or receive forest produce in a forest bound to help Forest and Police officers, including by extinguishing any forest fire and preventing its spread. Sections 26 and 33 are penal provisions on acts such as setting fire in reserved and protected forests, not the duty to extinguish fires.
+
+Q 47 | fel | Forest & Environment Laws
+According to the Wildlife Protection Act, 1972, which section deals with the ‘declaration and management of a conservation reserve’?
+(1) Section 38 B
+(2) Section 12 A
+(3) Section 36 A
+(4) Section 34 A
+= 3
+~ Section 36A of the Wildlife (Protection) Act, 1972, inserted in 2002, empowers the State Government to declare areas adjoining national parks and sanctuaries, or connecting protected areas, as conservation reserves. Section 36C similarly deals with community reserves.
+
+Q 48 | fim | Tree & Stand Measurement
+In a tree, Christen hypsometer is used to measure which of the following?
+(1) Taper
+(2) Diameter
+(3) Volume
+(4) Height
+= 4
+~ A hypsometer is an instrument for measuring tree height, and the Christen hypsometer does so using similar triangles with a graduated staff held against the tree. Diameter is measured with a calliper or girth tape, and taper and volume are calculated from several measurements.
+
+Q 49 | slv | Silvicultural Principles & Regeneration
+The time that elapses between successive main fellings on the same area is known as:
+(1) felling interval
+(2) felling series
+(3) felling cycle
+(4) felling regime
+= 3
+~ The felling cycle is the planned time between two successive main fellings on the same area, as in the selection system. A felling series is a group of compartments worked as one unit for sustained yield, not a time period.
+
+Q 50 | fim | Tree & Stand Measurement
+The formula of glorious simplicity is also called:
+(1) Simmon's modification
+(2) Howard's modification
+(3) Masson's formula
+(4) Von Mantel's formula
+= 4
+~ Von Mantel's formula, which gives the annual yield as twice the growing stock divided by the rotation (Y = 2V/R), is known as the "formula of glorious simplicity" for its simple form. It is a method of yield regulation by volume.
+
+Q 51 | fim | Remote Sensing & GIS
+Which of the following satellites and sensors were used by the Forest Survey of India for the XVI cycle of assessment of forests in India?
+(1) IRS -ID and LISS III
+(2) IRS-Resourcesat-2 and LISS III
+(3) LANDSAT and MSS
+(4) IRS-P6 and LISS III
+= 2
+~ The 16th cycle of forest assessment (India State of Forest Report 2019) interpreted satellite data from the Resourcesat-2 satellite with its LISS III sensor, at 23.5 m resolution. Landsat MSS was used in the early assessments, and IRS-1D was used in earlier cycles.
+
+Q 52 | fel | Forest Economics
+The rotation that yields the highest net returns on the invested capital is called:
+(1) forest rental
+(2) soil expectation value
+(3) financial rotation
+(4) technical rotation
+= 3
+~ The financial rotation is the age at which the capital invested in the forest gives the highest financial return (net income on the capital). Technical rotation is based on the size or quality needed for a specific product. Forest rental and soil expectation value are measures of income or land value, not rotations.
+
+Q 53 | nrs | Forest & Water Resources
+Which of the following is a renewable resource?
+(1) Ore
+(2) Coal
+(3) Ground water
+(4) Petroleum
+= 3
+~ Ground water is renewable because rainfall and the hydrological cycle recharge it, provided extraction does not exceed recharge. Ore, coal and petroleum are non-renewable minerals and fossil fuels that form over geological time.
+
+Q 54 | wsm | Water Resources
+The Nagarjuna Sagar Project is built on which river?
+(1) Beas
+(2) Tapti
+(3) Satluj
+(4) Krishna
+= 4
+~ Nagarjuna Sagar is a masonry dam on the Krishna river on the Telangana-Andhra Pradesh border. The Beas (Pong, Pandoh) and Satluj (Bhakra) rivers are in north India, and the Tapti flows west to the Arabian Sea.
+
+Q 55 | ens | Climate & Global Issues
+Which of the following missions is NOT under the National Action Plan on Climate Change?
+(1) Sustainable Habitat
+(2) Water Mission
+(3) Green India
+(4) Green GDP
+= 4
+~ The National Action Plan on Climate Change (2008) has eight missions: Solar, Enhanced Energy Efficiency, Sustainable Habitat, Water, Sustaining the Himalayan Ecosystem, Green India, Sustainable Agriculture, and Strategic Knowledge for Climate Change. Green GDP is an accounting concept, not a mission.
+
+Q 56 | nrs | Mineral, Food & Energy Resources
+Which of the following plants does NOT yield bio-diesel?
+(1) Simarouba glauca
+(2) Pongamia pinnata
+(3) Calophyllum inophyllum
+(4) Xylia Xylocarpa
+= 4
+~ Simarouba glauca, Pongamia pinnata (karanj) and Calophyllum inophyllum (undi) are tree-borne oilseed species used as biodiesel feedstock. Xylia xylocarpa (iron wood or irul) is a hardwood timber tree, not an oil-yielding biodiesel species.
+
+Q 57 | fel | Forest Policy
+Dry Forest in Asia Process deals with:
+(1) developing criteria and indicators for forestry education
+(2) developing criteria and indicators for deforestation
+(3) developing protocols for forestry job creation
+(4) developing criteria and indicators for sustainable management
+= 4
+~ The Dry Forest in Asia Process is a regional initiative of Asian countries with dry forests to develop criteria and indicators for sustainable forest management, so that management can be monitored and reported. It is not about education, deforestation or jobs.
+
+Q 58 | ens | Environmental Laws & Ethics
+Who authored the book ‘Silent Spring’?
+(1) Rachel Carson
+(2) John Muir
+(3) Aldo Leopold
+(4) Valmik Thapar
+= 1
+~ Silent Spring (1962) by Rachel Carson exposed the ecological harm of pesticides such as DDT and helped launch the modern environmental movement. Aldo Leopold wrote A Sand County Almanac, and John Muir founded the Sierra Club.
+
+Q 59 | slv | Social & Community Forestry
+Who is the founder of the Appiko Movement?
+(1) Anil Jhoshi
+(2) Sunderlal Bahuguna
+(3) Panduranga Hegde
+(4) Vandana Shiva
+= 3
+~ The Appiko movement (1983) in the Western Ghats of Uttara Kannada, Karnataka, was started by Pandurang Hegde; the name means "to hug" in Kannada. Sunderlal Bahuguna is associated with the Chipko movement in the Himalaya.
+
+Q 60 | bdc | Biodiversity & Hotspots
+The Cartagena Protocol deals with:
+(1) oceanic temperature regimes
+(2) excessive pesticide usage
+(3) oil spills in oceans
+(4) living modified organisms
+= 4
+~ The Cartagena Protocol on Biosafety (2000) to the Convention on Biological Diversity regulates the safe handling, transport and transboundary movement of living modified organisms (LMOs) resulting from modern biotechnology.
+
+Q 61 | ens | Pollution
+Minamata disease is caused by:
+(1) lead contamination
+(2) phosphorus contamination
+(3) mercury contamination
+(4) fluorine contamination
+= 3
+~ Minamata disease is a neurological disorder caused by methylmercury poisoning, first recognised in 1956 in Minamata, Japan, from industrial discharge that contaminated fish and shellfish. Lead poisoning is called plumbism and fluoride poisoning causes fluorosis.
+
+Q 62 | ens | Pollution
+The Bhopal gas tragedy took place in the year:
+(1) 1981
+(2) 1982
+(3) 1983
+(4) 1984
+= 4
+~ The Bhopal gas tragedy occurred on the night of 2-3 December 1984, when methyl isocyanate gas leaked from the Union Carbide pesticide plant in Bhopal, Madhya Pradesh.
+
+Q 63 | ens | Climate & Global Issues
+The UN Climate Action Summit 2019 was held in:
+(1) New York
+(2) Davos
+(3) Hyderabad
+(4) Dehradun
+= 1
+~ The UN Climate Action Summit was convened by Secretary-General António Guterres at UN Headquarters in New York on 23 September 2019. Davos hosts the World Economic Forum, a different event.
+
+Q 64 | ens | Pollution
+Which of the following pollutants are regularly monitored by the National Air Quality Monitoring Programme?
+(1) PM10, carbon dioxide, fluorine, ozone, SOx and NOx
+(2) PM10, SOx, NOx, lead and respirable suspended particulate matter
+(3) PM10, ozone, SOx, NOx and lead
+(4) SOx, NOx, suspended particulate material and respirable suspended particulate matter
+= 4
+~ The National Air Quality Monitoring Programme (NAMP) of the Central Pollution Control Board regularly monitors sulphur dioxide, nitrogen dioxide, suspended particulate matter (SPM) and respirable suspended particulate matter (RSPM or PM10). Carbon dioxide, fluorine and ozone are not part of the regular NAMP parameters. (Official key; some sources differ.)
+
+Q 65 | ens | Environmental Laws & Ethics
+Eco-sensitive zones are declared under which act?
+(1) Wildlife (Protection) Act, 1972
+(2) Environmental (Protection) Act, 1986
+(3) Forest (Conservation) Act, 1980
+(4) Indian Forest Act, 1927
+= 2
+~ Eco-sensitive zones around protected areas are notified by the Ministry of Environment, Forest and Climate Change under the Environment (Protection) Act, 1986 (Section 3(2)(v) and Rule 5(1)(d) of the 1986 Rules). The Wildlife Act creates the protected areas themselves, not the surrounding zones.
+
+Q 66 | fse | Survey & Engineering
+Which of the following is the shortest highway in India?
+(1) NH6
+(2) NH7
+(3) NH34A
+(4) NH47A
+= 4
+~ NH 47A, about 6 km long from Kundannoor to Willingdon Island in Kochi, Kerala, was the shortest national highway in India (it has since been renumbered NH 966B). NH 6 and NH 7 were among the longest national highways, each about 2,000 km.
+
+Q 67 | fse | Survey & Engineering
+What is the design speed of arterial roads in India?
+(1) 130 km/h
+(2) 80 km/h
+(3) 45 km/h
+(4) 30 km/h
+= 2
+~ Arterial roads, the main through-traffic roads, are designed for a speed of about 80 km/h under Indian Roads Congress practice. 130 km/h is far above any normal road class, and 30 to 45 km/h are values for local or hilly roads.
+
+Q 68 | fse | Survey & Engineering
+In India, the cross-section of hairpin bends in hilly areas should be at the intervals of:
+(1) 20 to 25 m
+(2) 10 to 15 m
+(3) 30 to 35 m
+(4) 30 to 40 m
+= 1
+~ On the sharp curves of hilly roads the ground changes quickly, so cross-sections are taken at close intervals; APPSC's key is 20 to 25 m. (Official key; some sources differ.)
+
+Q 70 | fse | Survey & Engineering
+India’s first dedicated underpass for wild animals is in which national highway?
+(1) NH-7/44
+(2) NH-16/36
+(3) NH-11/44
+(4) NH-7/56
+= 1
+~ India's first dedicated wildlife underpasses were built on NH-7 (now NH-44) through the Pench tiger corridor in Maharashtra and Madhya Pradesh, so that tigers and other animals can cross under the highway. The other options are not the highway of this corridor.
+
+Q 71 | fse | Survey & Engineering
+The triaxial compression test is performed to determine:
+(1) soil texture
+(2) shrinkage limit of soil
+(3) shear strength parameters of soil
+(4) soil structure
+= 3
+~ In the triaxial test a cylindrical soil sample is loaded under a confining pressure to failure, giving the shear strength parameters: cohesion (c) and angle of internal friction (phi). Soil texture comes from sieve and hydrometer analysis, and shrinkage limit from a shrinkage test.
+
+Q 72 | fse | Survey & Engineering
+What is the use of Vicat apparatus?
+(1) To determine the hardness of bitumen
+(2) To determine the setting time of cement
+(3) To determine slope
+(4) To determine tipping point
+= 2
+~ The Vicat apparatus has a plunger and needles that measure the normal consistency and the initial and final setting times of cement paste. The hardness of bitumen is tested with a penetrometer.
+
+Q 73 | fel | Forest Economics
+A network diagramming technique in which activities are represented by arrows is called:
+(1) Venn diagram
+(2) Chapati diagram
+(3) A-O-A diagram
+(4) Time diagram
+= 3
+~ In an activity-on-arrow (A-O-A) network, also called the arrow diagramming method, each activity is drawn as an arrow between event nodes, as in PERT and CPM. A Venn diagram shows set relationships, not project activities.
+
+Q 74 | fel | Forest Economics
+The Program Evaluation and Review Technique was developed by:
+(1) Lockheed
+(2) William Taylor
+(3) Frederick Taylor
+(4) Blackwith Taylor
+= 3
+~ APPSC's key is Frederick Taylor. Most references, however, say PERT was developed in 1958 by the US Navy Special Projects Office with Booz Allen Hamilton and Lockheed for the Polaris missile programme, while Taylor is known for scientific management. (Official key; some sources differ.)
+
+Q 75 | fel | Forest Economics
+Which of the following techniques is used in business to determine the true cost difference between alternatives?
+(1) Integrated analysis
+(2) Factor analysis
+(3) Form analysis
+(4) Incremental analysis
+= 4
+~ Incremental (differential) analysis compares only the costs and revenues that differ between alternatives, which shows the true cost difference. Factor analysis is a statistical technique for reducing variables, not for comparing costs.
+
+Q 76 | fel | Forest Economics
+The precedence diagramming method is also called:
+(1) the marginal analysis method
+(2) the activity-on-node method
+(3) the cost transfer method
+(4) the differential cost method
+= 2
+~ In the precedence diagramming method (PDM) each activity is drawn as a node (box) and arrows show the dependencies between them, so it is also known as the activity-on-node (AON) method. It allows four dependency types: finish-to-start, start-to-start, finish-to-finish and start-to-finish. Marginal analysis, cost transfer and differential cost are costing terms, not network-diagram methods.
+
+Q 77 | fel | Forest Economics
+Critical path method was developed by:
+(1) William Walker and James Kelley
+(2) William Walker and Morgan Walker
+(3) Morgan Walker and James Kelley
+(4) Morgan Kelley and James Kelley
+= 3
+~ The Critical Path Method was developed in 1957 by Morgan R. Walker of DuPont and James E. Kelley Jr. of Remington Rand to schedule plant maintenance and construction work. PERT, in contrast, came from the US Navy's Polaris project in 1958. The other options mix up or invent first names.
+
+Q 78 | fel | Forest Economics
+The ABC analysis is similar to which of the following principles?
+(1) Epstein principle
+(2) Axtell principle
+(3) Sugarscape principle
+(4) Pareto principle
+= 4
+~ ABC analysis, used in inventory and materials management, ranks items by value so that a few "A" items account for most of the total value, which is the Pareto (80/20) principle. Epstein and Axtell are the authors of the Sugarscape agent-based model, so options 1 to 3 are distractors drawn from that source and are not management principles.
+
+Q 79 | slv | Social & Community Forestry
+Which of the following is NOT a participatory rural appraisal tool?
+(1) Seasonal calendar
+(2) Technology networking
+(3) Resource cards
+(4) Matrix ranking
+= 2
+~ Participatory rural appraisal (PRA) relies on visual, group-based exercises such as seasonal calendars, matrix ranking, resource mapping, transect walks, Venn diagrams and trend analysis. "Technology networking" is an information-technology or business term and is not a standard PRA tool.
+
+Q 80 | fse | Survey & Engineering
+In fibre communications, which of the following types of multiplexing is used?
+(1) Wavelength division multiplexing
+(2) Time division multiplexing
+(3) Frequency division multiplexing
+(4) Synchronous division multiplexing
+= 1
+~ Optical fibre systems carry several channels on one fibre by sending each on a different wavelength (colour) of light, which is wavelength division multiplexing (WDM). "Synchronous division multiplexing" is not a standard technique. Time division multiplexing is also used in digital links, so the question is loosely framed. (Official key; some sources differ.)
+
+Q 81 | fse | Survey & Engineering
+What is the frequency of sky waves?
+(1) 30 MHz to 300 MHz
+(2) 60 MHz to 300 MHz
+(3) 2 MHz to 30 MHz
+(4) 65 MHz to 300 MHz
+= 3
+~ Sky waves travel by refraction from the ionosphere and are effective in the HF band, roughly 2 MHz to 30 MHz, which allows long-distance short-wave radio. Above about 30 MHz (VHF and higher) waves usually pass through the ionosphere and travel as line-of-sight space waves instead.
+
+Q 82 | fim | Remote Sensing & GIS
+An orbit with an inclination of less than 90° is known as:
+(1) Hohmann transfer orbit
+(2) Prograde orbit
+(3) Retrograde orbit
+(4) Polar orbit
+= 2
+~ A prograde orbit has an inclination below 90°, so the satellite moves in the same direction as the Earth's rotation. An inclination above 90° is retrograde, and exactly 90° is a polar orbit. A Hohmann transfer is an orbital manoeuvre between two orbits, not a classification by inclination.
+
+Q 83 | fse | Survey & Engineering
+One-dimensional signal is a function of:
+(1) multiple independent variables
+(2) single independent variables
+(3) multiple dependent variables
+(4) single dependent variables
+= 2
+~ A one-dimensional signal depends on a single independent variable, usually time, as in a speech or ECG signal. A two-dimensional signal such as an image depends on two independent variables (the x and y positions).
+
+Q 84 | bdc | Biomes & Population Ecology
+Two species competing for the same resources cannot coexist indefinitely. One of them has to either adapt or become extinct. This hypothesis is known as:
+(1) Maxwell ’s hypothesis
+(2) Jardin's hypothesis
+(3) Gause's hypothesis
+(4) Whittaker’s hypothesis
+= 3
+~ This is Gause's competitive exclusion principle, based on G.F. Gause's 1934 experiments with Paramecium species, which states that two species competing for the same limiting resource cannot stably coexist. Whittaker is known for the biome classification and the other names are not linked to this principle.
+
+Q 85 | bdc | Biomes & Population Ecology
+Animals adapted to cold climates have shorter limbs and body appendages than animals adapted to warm climates. Who proposed this rule?
+(1) Valerius Geist
+(2) Richard Hesse
+(3) Carl Bergmann
+(4) Joel Asaph Allen
+= 4
+~ This is Allen's rule (1877) of Joel Asaph Allen: warm-blooded animals in cold regions have shorter limbs, ears and tails, which reduces heat loss. Bergmann's rule, the tempting option, is different, as it says that body size is larger in colder climates.
+
+Q 86 | anm | Birds
+Who is known as the birdman of India?
+(1) Richard Meinertzhagen
+(2) Sálim Moizuddin Abdul Ali
+(3) RC Morris
+(4) Norman Boyd Kinnear
+= 2
+~ Sálim Ali (1896-1987) is called the "Birdman of India" for his pioneering bird surveys and for books such as The Book of Indian Birds and the Handbook of the Birds of India and Pakistan. Meinertzhagen, Morris and Kinnear were British naturalists or ornithologists associated with Indian birds.
+
+Q 87 | ecw | Wildlife & Protected Areas
+Where is the Wildlife Institute of India situated?
+(1) Mussoorie
+(2) Haridwar
+(3) Bangalore
+(4) Dehradun
+= 4
+~ The Wildlife Institute of India, an autonomous institution under the Ministry of Environment, Forest and Climate Change, was set up in 1982 and is located at Chandrabani, Dehradun, Uttarakhand. Mussoorie hosts the civil-services academy (LBSNAA).
+
+Q 88 | ecw | Wildlife & Protected Areas
+Which of the following is the first conservation reserve of India?
+(1) Tiruppadaimarathur Conservation Reserve
+(2) Asan Barrage Conservation Reserve
+(3) Jhilmil Conservation Reserve
+(4) Goga beel Conservation Reserve
+= 1
+~ Conservation reserves were introduced by the Wildlife (Protection) Amendment Act, 2002 (Section 36A). Tiruppadaimarathur Conservation Reserve in Tirunelveli district, Tamil Nadu, notified in 2005, is listed as the first in India. Asan Barrage and Jhilmil Jheel are conservation reserves in Uttarakhand and Goga Beel is in Bihar, and they are not the ones listed as India's first.
+
+Q 90 | fpt | Forest Fire
+Fire triangle consists of which of the following?
+(1) Biotic factor, ignition and temperature
+(2) Hazard, oxygen and biotic factor
+(3) Fuel, biotic factor and oxygen
+(4) Fuel, oxygen and temperature
+= 4
+~ The fire triangle has three sides: fuel, oxygen (air) and heat, that is, temperature high enough for ignition. Removing any one side puts the fire out, which is the basis of fire-control methods such as fire lines (removing fuel) and beating or soil throwing (cutting off oxygen). Biotic factors are not a side of the triangle.
+
+Q 91 | fpt | Pests & Diseases
+Which of the following is also called the teak skeletoniser?
+(1) Hyblaea puera
+(2) Mycosphaerella pini
+(3) Eutectona machaeralis
+(4) Plecoptera reflexa
+= 3
+~ Eutectona machaeralis (also written Paliga machaeralis) is the teak skeletoniser: its larvae scrape the leaf tissue and leave the veins behind. Hyblaea puera, the tempting option, is the teak defoliator, which eats whole leaves. Mycosphaerella pini causes needle blight of pines.
+
+Q 92 | ecw | Wildlife & Protected Areas
+In which of the following national parks is dancing deer found?
+(1) Dachigam National Park
+(2) Keibul Lamjao National Park
+(3) Manas National Park
+(4) Great Himalayan National Park
+= 2
+~ The "dancing deer" is the sangai (brow-antlered deer, Rucervus eldii eldii), found only on the floating phumdis of Loktak Lake in Keibul Lamjao National Park, Manipur, the world's only floating national park. Dachigam is the home of the hangul and Manas is known for tiger and golden langur.
+
+Q 93 | ecw | Wildlife & Protected Areas
+What is the full form of CITES?
+(1) Conservation of International Trade in Endangered Species of Wild Fauna and Flora
+(2) Convention on International Trade in Endangered Species of Wild Fauna and Flora
+(3) Convention on International Trade in Extant Species of Wild Fauna and Flora
+(4) Conservation of International Trade in Extant Species of Wild Fauna and Flora
+= 2
+~ CITES is the Convention on International Trade in Endangered Species of Wild Fauna and Flora, signed in Washington in 1973 and in force from 1975. India has been a party since 1976, and the Wildlife (Protection) Act, 1972 is its main domestic law for implementing it.
+
+Q 94 | fpt | Pests & Diseases
+Pink disease in eucalyptus is caused by which of the following pathogens?
+(1) Corticium salmonicolor
+(2) Erwinia amylovora
+(3) Agrobacterium tumefaciens
+(4) Botrytis cinerea
+= 1
+~ Pink disease is a fungal stem and branch disease caused by Corticium salmonicolor (now Erythricium salmonicolor), which forms a pink encrustation on the bark of eucalyptus, rubber and other trees. Erwinia amylovora causes fire blight, Agrobacterium tumefaciens causes crown gall and Botrytis cinerea causes grey mould.
+
+Q 95 | ecw | Wildlife & Protected Areas
+Which of the following mammals does NOT belong to the order Carnivora?
+(1) Black bear
+(2) Stripped hyena
+(3) Smooth coated otter
+(4) Hangul
+= 4
+~ The hangul (Kashmir stag, Cervus hanglu hanglu) is a deer and belongs to the order Artiodactyla. The black bear (Ursidae), striped hyena (Hyaenidae) and smooth-coated otter (Mustelidae) are all Carnivora.
+
+Q 96 | pls | Reproduction & Propagation
+What is an ortet?
+(1) A stem cutting
+(2) A root cutting
+(3) A group of genetically identical individuals derived from one progenitor
+(4) The original single parent plant from which a clone is ultimately derived
+= 4
+~ In vegetative propagation the ortet is the original plant from which a clone is derived, and each propagated individual of that clone is a ramet. Option 3 describes the clone itself, not the ortet, and cuttings are only propagules.
+
+Q 97 | pls | Genetics & Plant Diseases
+Who introduced the term ‘genetics’?
+(1) Wilhelm Johannsen
+(2) William Bateson
+(3) Alfred Sturtevant
+(4) William thwart
+= 2
+~ William Bateson coined the term "genetics" in 1905 (in a letter) and used it publicly in 1906 for the study of heredity and variation. Wilhelm Johannsen, the tempting option, introduced the terms gene, genotype and phenotype, and Alfred Sturtevant made the first genetic linkage map.
+
+Q 98 | pls | Genetics & Plant Diseases
+Who proposed the theory of natural selection?
+(1) Carl Linnaeus
+(2) Regnier de Graaf
+(3) Charles Darwin
+(4) Eduard Strasburg
+= 3
+~ Charles Darwin proposed natural selection as the mechanism of evolution in On the Origin of Species (1859), a theory Alfred Russel Wallace also reached independently. Linnaeus is known for binomial nomenclature, de Graaf for ovarian follicles, and Strasburger for plant cytology and embryology.
+
+Q 99 | pls | Genetics & Plant Diseases
+Who was credited with the rediscovery of Mendel's work?
+(1) Hugo de Vries, Ronald Fisher and Erich von Tschermak
+(2) Hugo de Vries, Carl Correns and Ronald Fisher
+(3) Ronald Fisher, Carl Correns and Erich von Tschermak
+(4) Hugo de Vries, Carl Correns and Erich von Tschermak
+= 4
+~ In 1900 Hugo de Vries, Carl Correns and Erich von Tschermak independently rediscovered Mendel's laws of inheritance, 34 years after he published them in 1866. Ronald Fisher was a statistician who later re-analysed Mendel's data and was not one of the rediscoverers.
+
+Q 100 | anm | Animal Health & Nutrition
+Creeper condition in domestic fowl is due to:
+(1) Mineral deficiency
+(2) Vitamin deficiency
+(3) Genetic disorder
+(4) Pathogen attack
+= 3
+~ Creeper is an inherited condition caused by a dominant gene that shortens the legs and wing bones, and the gene is lethal when homozygous. It is therefore a genetic disorder and not a nutritional or infectious problem.
+
+Q 101 | pls | Genetics & Plant Diseases
+Any mutation that changes a codon into a codon that codes for a STOP signal (termination codon) is called:
+(1) Mis-sense mutation
+(2) Silent mutation
+(3) Nonsense mutation
+(4) Induced mutation
+= 3
+~ A nonsense mutation converts an amino-acid codon into a stop codon (UAA, UAG or UGA), so translation ends early and a truncated protein results. A missense mutation changes one amino acid to another, and a silent mutation changes the codon without changing the amino acid. "Induced" describes how a mutation arose, not its effect.
+
+Q 102 | anm | Animal Health & Nutrition
+Goose stepping gait in pig is due to the deficiency of which of the following vitamins?
+(1) B5
+(2) B2
+(3) B3
+(4) B6
+= 1
+~ Goose-stepping, a jerky high-stepping hind-leg gait, is a classic sign of pantothenic acid (vitamin B5) deficiency in pigs, along with poor growth and scouring. Riboflavin (B2) deficiency causes poor growth, eye lesions and sow reproductive failure instead.
+
+Q 103 | anm | Animal Health & Nutrition
+In adult ruminants, what is the condition associated with low blood levels of magnesium?
+(1) Grass staggers
+(2) Slipped tendon
+(3) Surrah
+(4) Chondrodystrophy
+= 1
+~ Grass staggers (grass tetany, hypomagnesaemia) occurs in adult cattle and sheep, often on lush spring pasture low in magnesium, and causes nervousness, staggering and convulsions. Slipped tendon (perosis) is a manganese or choline deficiency in poultry, and surra is a trypanosome infection (Trypanosoma evansi).
+
+Q 104 | anm | Animal Health & Nutrition
+What is the VIVAR technique?
+(1) A method of determining phosphorus
+(2) A method of determining calcium
+(3) A method of determining crude protein
+(4) A method of determining digestibility
+= 4
+~ The official key treats the VIVAR technique as a method of determining digestibility of feeds. Phosphorus, calcium and crude protein are normally estimated by colorimetric, titration and Kjeldahl nitrogen methods, not by a named digestibility technique. (Official key; some sources differ.)
+
+Q 105 | anm | Animal Health & Nutrition
+Which of the following is a cereal fodder?
+(1) Pennisetum clandestinum
+(2) Phalaris tuberosa
+(3) Lolium multiflorum
+(4) Zea mays
+= 4
+~ Zea mays (maize) is a cereal fodder, along with sorghum, oats and bajra. Pennisetum clandestinum (kikuyu), Phalaris tuberosa (Harding grass) and Lolium multiflorum (Italian ryegrass) are pasture or forage grasses rather than cereal crops.
+
+Q 106 | anm | Animal Health & Nutrition
+Which of the following is NOT a monogastric herbivore?
+(1) Horses
+(2) Rabbits
+(3) Hamsters
+(4) Goats
+= 4
+~ Goats are ruminants with a four-chambered stomach (rumen, reticulum, omasum and abomasum), so they are not monogastric. Horses, rabbits and hamsters have a single-chambered stomach and ferment fibre in the caecum or colon.
+
+Q 107 | anm | Economic Zoology
+The American buff, Chinese and Pilgrim are breeds of:
+(1) Emu
+(2) Turkey
+(3) Chicken
+(4) Goose
+= 4
+~ American Buff, Chinese and Pilgrim are well-known domestic goose breeds, along with Embden and Toulouse. Turkey breeds include Bronze and Beltsville White, and chicken breeds include Leghorn and Rhode Island Red.
+
+Q 108 | anm | Animal Health & Nutrition
+Antigens obtained after the disruption of the parasites are called:
+(1) Hidden antigens
+(2) Somatic antigens
+(3) Released antigens
+(4) Internal antigens
+= 4
+~ Antigens that become available only when the parasite is broken up are the internal antigens, unlike the released (excretory-secretory) antigens shed by the living parasite and the hidden antigens normally concealed from the host. Somatic antigens are often used as a near-synonym, which is why this key is open to question. (Official key; some sources differ.)
+
+Q 109 | anm | Economic Zoology
+Culturing of fish in tanks or enclosures (fish ponds) to obtain fish products as a food source is called:
+(1) Olericulture
+(2) Pisciculture
+(3) Aquaculture
+(4) Apiculture
+= 2,3
+~ Pisciculture is the rearing of fish in ponds and tanks, and aquaculture is the broader farming of aquatic organisms in controlled water. The definition fits both, so APPSC found the question ambiguous and gave full marks for either option. Olericulture is vegetable growing and apiculture is bee-keeping.
+
+Q 110 | anm | Snakes & Venomous Animals
+What is the chemical composition of snake venom?
+(1) Lipids
+(2) Carbohydrates
+(3) Proteins
+(4) Nucleic acids
+= 3
+~ Snake venom is a complex mixture in which proteins and polypeptides (enzymes such as phospholipases, proteases and hyaluronidase, plus neurotoxins and cytotoxins) make up most of the dry weight. Lipids, carbohydrates and nucleic acids occur only in small amounts.
+
+Q 111 | anm | Animal Health & Nutrition
+Which of the following is a vector of Japanese encephalitis that infects human beings?
+(1) Aedes
+(2) Anopheles
+(3) Culex
+(4) Sandflies
+= 3
+~ The Japanese encephalitis virus is spread by Culex mosquitoes, mainly Culex tritaeniorhynchus, which breed in rice fields; pigs and wading birds act as amplifying hosts. Aedes spreads dengue and chikungunya, Anopheles spreads malaria and sandflies spread leishmaniasis.
+
+Q 112 | fpt | Pests & Diseases
+Weed Parthenium hysterophorus can be killed using which of the following biotic agents?
+(1) Dactylopius opuntiae
+(2) Zygogramma bicolorata
+(3) Pareuchaetes pseudoinsulata
+(4) Cryptobagus singularis
+= 2
+~ The Mexican beetle Zygogramma bicolorata feeds on Parthenium leaves and has been released in India as a biological control agent since the 1980s. Dactylopius opuntiae is a cochineal insect used against prickly pear (Opuntia), and Pareuchaetes pseudoinsulata is used against Chromolaena odorata.
+
+Q 113 | fim | Sampling & Inventory
+The test that decides if in any sample, the observed frequencies are in agreement with the theoretical or expected frequencies is called:
+(1) Chi-square test
+(2) Student t-test
+(3) ANOVA
+(4) Z-test
+= 1
+~ The chi-square goodness-of-fit test compares observed frequencies with the frequencies expected from a theory, for example in checking Mendelian ratios. The t-test and Z-test compare means, and ANOVA compares the means of more than two groups.
+
+Q 114 | fim | Sampling & Inventory
+The difference between the highest and the lowest terms of a series of observations is called:
+(1) Absolute deviation
+(2) Mean deviation
+(3) Range
+(4) Standard deviations
+= 3
+~ Range is the difference between the largest and smallest observations, and it is the simplest measure of dispersion. The other options measure the spread of values around a central value such as the mean.
+
+Q 115 | fim | Sampling & Inventory
+If a frequency distribution is NOT symmetrical about the mean, then it is said to be:
+(1) Platykurtic
+(2) Kurtosis
+(3) Skewed
+(4) Leptokurtic
+= 3
+~ A distribution that is not symmetrical about its mean is skewed, either positively (long right tail) or negatively (long left tail). Kurtosis, with its platykurtic and leptokurtic forms, describes the peakedness of a distribution, not its asymmetry.
+
+Q 116 | ens | Environmental Laws & Ethics
+Where is the principal bench of the National Green Tribunal situated?
+(1) Pune
+(2) Bhopal
+(3) New Delhi
+(4) Kolkata
+= 3
+~ The National Green Tribunal, set up under the National Green Tribunal Act, 2010, has its principal bench in New Delhi. Its regional benches are at Pune, Bhopal, Kolkata and Chennai.
+
+Q 117 | fel | Forest & Environment Laws
+Which of the following litigations in the Honourable Supreme Court of India proved to be a landmark in forest conservation?
+(1) Godavarman Thirumulpad v Union of India
+(2) MC Mehta v Union of India
+(3) TC Mehta v Union of India
+(4) EC Richards v Forest Ranger Officer, Mettupalayam
+= 1
+~ In T.N. Godavarman Thirumulpad v Union of India (writ petition filed in 1995), the Supreme Court extended the meaning of "forest" to its dictionary sense, banned unauthorised felling and non-forest use, and kept the case under continuing supervision, shaping forest conservation in India. M.C. Mehta's cases are better known for pollution and the Ganga and Taj issues.
+
+Q 118 | ecw | Wildlife & Protected Areas
+Who approves the Tiger Conservation Plan in India?
+(1) NTCA
+(2) WII
+(3) IBWL
+(4) PCCF
+= 1
+~ Under Section 38V of the Wildlife (Protection) Act, 1972 a Tiger Conservation Plan is prepared for each tiger reserve, and it is appraised and approved by the National Tiger Conservation Authority (NTCA), the statutory body set up in 2006. The Wildlife Institute of India gives technical support, the Indian Board for Wildlife is advisory, and the PCCF heads a state forest department.
+
+Q 119 | fel | Forest Economics
+In which year was the National Agricultural Co-operative Marketing Federation (NAFED) established?
+(1) 1958
+(2) 1948
+(3) 1959
+(4) 1960
+= 1
+~ NAFED was established on 2 October 1958 as the apex organisation for the marketing of agricultural produce by co-operatives, and it has since also handled some forest and minor produce. It works as a multi-state co-operative society headquartered in New Delhi.
+
+Q 120 | fel | Forest Administration
+Which of the following is the latest National Working Plan Code?
+(1) 2012
+(2) 2014
+(3) 2011
+(4) 2009
+= 2
+~ The National Working Plan Code 2014, issued by the Ministry of Environment, Forest and Climate Change, revised the earlier 2004 code and was the latest at the time of this examination. It is the guideline for preparing forest working plans in all states.
+
+Q 121 | fim | Tree & Stand Measurement
+The sum (by number or volume) of all the trees growing in the forest, or a specified part of it, is called:
+(1) Stand
+(2) Increment
+(3) Yield table
+(4) Growing stock
+= 4
+~ Growing stock is the sum, by number or volume, of all the trees growing in a forest or a specified part of it. A stand is a group of trees of similar composition and age, an increment is the growth added over a period, and a yield table lists expected yields by age and site quality.
+
+Q 122 | fim | Tree & Stand Measurement
+Which of the following instruments is used for the measurement of the basal area of crops?
+(1) Abney's level
+(2) Haga altimeter
+(3) Spiegel relaskop
+(4) Topographical Abney's level
+= 3
+~ The Spiegel relaskop, devised by Walter Bitterlich on the angle-count principle, gives the basal area per hectare directly from a point without measuring each tree. Abney's level measures slope angles and the Haga altimeter measures tree height.
+
+Q 123 | bdc | Biodiversity & Hotspots
+A species chosen to raise support for biodiversity conservation in a given place or social context is known as:
+(1) Flagship
+(2) Keystone
+(3) Umbrella
+(4) Pioneer
+= 1
+~ A flagship species is a popular or charismatic species, such as the tiger or giant panda, chosen to win public support and funds for conservation. A keystone species has a disproportionate effect on its ecosystem, an umbrella species protects many others when its habitat is protected, and a pioneer species is an early colonizer of bare ground.
+
+Q 124 | nrs | Forest & Water Resources
+According to ISFR (2019), what is the percentage of the total forest cover in India?
+(1) 25.32%
+(2) 21.67%
+(3) 23.17%
+(4) 24.78%
+= 2
+~ ISFR 2019 reported forest cover of 7,12,249 sq km, which is 21.67% of India's geographical area. Tree cover adds a further 2.89%, taking the combined forest and tree cover to 24.56%, so 24.78% and 25.32% are not the forest-cover figure.
+
+Q 125 | nrs | Mineral, Food & Energy Resources
+Which of the following is a second-generation biofuel feedstock?
+(1) Sugarcane
+(2) Sugar beet
+(3) Corn
+(4) Woodchips
+= 4
+~ Second-generation biofuels are made from non-food lignocellulosic biomass such as woodchips, crop residues and energy grasses. Sugarcane, sugar beet and corn are food crops and are the feedstocks of first-generation ethanol.
+
+Q 126 | ens | Pollution
+Where is the headquarters of the CSIR-National Environmental Engineering Research Institute situated?
+(1) Indore
+(2) New Delhi
+(3) Nagpur
+(4) Chennai
+= 3
+~ CSIR-NEERI has its headquarters at Nagpur, Maharashtra, with zonal laboratories at Delhi, Chennai, Mumbai, Hyderabad and Kolkata. It began as the Central Public Health Engineering Research Institute in 1958.
+
+Q 127 | ens | Pollution
+The term safe water releaser (SWAS) is associated with:
+(1) Fishing nets
+(2) Mangrove saline detectors
+(3) Green crackers
+(4) Marine pollution detectors
+= 3
+~ SWAS (safe water releaser) is one of the green crackers developed by CSIR-NEERI, along with SAFAL and STAR. These crackers release water vapour or droplets on bursting, which suppresses dust and cuts particulate emissions.
+
+Q 128 | ens | Environmental Laws & Ethics
+The Niyamgiri movement against bauxite mining in Odisha is associated with which of the following tribes?
+(1) Dongria Kondh
+(2) Kols
+(3) Korkus
+(4) Gonds
+= 1
+~ The Dongria Kondh tribe of the Niyamgiri hills in Odisha resisted bauxite mining by Vedanta, and in 2013 the Supreme Court asked the gram sabhas to decide under the Forest Rights Act, 2006. All the gram sabhas that voted rejected the mining. Kols, Korkus and Gonds live in central India.
+
+Q 129 | ecw | Wildlife & Protected Areas
+The Bonn Convention is associated with:
+(1) An international agreement that aims to conserve ground water
+(2) An international agreement that aims to conserve migratory species within their migratory ranges
+(3) An international agreement that aims to prevent oil spill
+(4) An international agreement for occupational hazards
+= 2
+~ The Bonn Convention is the Convention on the Conservation of Migratory Species of Wild Animals (CMS), adopted in Bonn in 1979 and in force from 1983, which protects migratory species across their whole range. India is a party to it.
+
+Q 130 | ecw | Wildlife & Protected Areas
+What is the name of Maharashtra's first Ramsar site?
+(1) Keshopur-Miani
+(2) Nandur Madhmeshwar
+(3) Nangal
+(4) Renukaji
+= 2
+~ Nandur Madhmeshwar (Nandur Madhameshwar) in Nashik district, on the Godavari, became Maharashtra's first Ramsar site when it was designated in 2020. Keshopur-Miani and Nangal are in Punjab and Renuka is in Himachal Pradesh.
+
+Q 131 | ens | Pollution
+Black lung disease is an occupational hazard associated with which of the following?
+(1) Fisheries
+(2) Coal mining
+(3) Lime stone quarrying
+(4) Medical laboratories
+= 2
+~ Black lung, or coal workers' pneumoconiosis, is caused by breathing coal dust over many years. Limestone quarrying is linked with silica or lime dust problems instead, and neither fisheries nor medical laboratories involve coal dust.
+
+Q 132 | ecw | Wildlife & Protected Areas
+In January 2020, the Supreme Court allowed the central government to bring which large cat to suitable wildlife habitat in India?
+(1) African lynx
+(2) African lion
+(3) African cheetah
+(4) African caracal
+= 3
+~ In January 2020 the Supreme Court allowed the Centre, on a petition by the National Tiger Conservation Authority, to introduce African cheetahs on an experimental basis into a suitable habitat in India. The Asiatic cheetah has been extinct in India since 1952.
+
+Q 133 | ens | Environmental Laws & Ethics
+The United Nations Conference on the Human Environment was held in which year?
+(1) 1971
+(2) 1972
+(3) 1981
+(4) 1982
+= 2
+~ The UN Conference on the Human Environment was held at Stockholm from 5 to 16 June 1972. It led to the creation of the UN Environment Programme (UNEP), and 5 June is observed as World Environment Day.
+
+Q 134 | ens | Environmental Laws & Ethics
+The Central Board for Prevention and Control of Water Pollution was constituted in which year?
+(1) 1974
+(2) 1986
+(3) 1981
+(4) 1972
+= 1
+~ The Central Board for the Prevention and Control of Water Pollution was set up in 1974 under the Water (Prevention and Control of Pollution) Act, 1974. It was later given the powers of the air-pollution board and is now the Central Pollution Control Board (CPCB). 1981 is the year of the Air Act and 1986 that of the Environment (Protection) Act.
+
+Q 135 | fse | Survey & Engineering
+Which of the following instruments is used to study viscous and elastic behaviour of asphalt binders at medium to high temperatures?
+(1) Roughometer
+(2) Falling weight deflectometer
+(3) Ultrasonic pulse echo test system
+(4) Dynamic shear rheometer
+= 4
+~ The dynamic shear rheometer (DSR) measures the complex shear modulus and phase angle of asphalt binder, which describe its elastic and viscous behaviour at intermediate and high service temperatures (Superpave binder tests). A roughometer measures road roughness and a falling weight deflectometer tests the structural response of a pavement.
+
+Q 136 | fse | Survey & Engineering
+Where is the Central Road Research Institute situated?
+(1) Pune
+(2) New Delhi
+(3) Mumbai
+(4) Nagpur
+= 2
+~ The CSIR-Central Road Research Institute (CRRI), set up in 1952, is located on Mathura Road, New Delhi. It carries out research on highways, pavements and road transport.
+
+Q 137 | fse | Survey & Engineering
+What is 'Capheal' with respect to binder’s viscosity and asphalt heal?
+(1) Cement microcapsules
+(2) Sunflower oil microcapsules
+(3) Tar microcapsules
+(4) Grain microcapsules
+= 2
+~ Capheal refers to self-healing asphalt in which microcapsules filled with sunflower oil are mixed into the mix. When a crack breaks them, the oil is released, lowers the binder's viscosity and lets the crack close. The other options are not materials used in this technique.
+
+Q 138 | fse | Survey & Engineering
+___________ is a device that employs radio-frequency identification (RFID) technology for making toll payments.
+(1) PMIS
+(2) MoRTH
+(3) FASTag
+(4) NETC
+= 3
+~ FASTag is a prepaid tag fixed on the windscreen that uses RFID to pay road tolls electronically as the vehicle passes through a toll plaza. NETC is the National Electronic Toll Collection programme run by NPCI and is not the device, while MoRTH is the Ministry of Road Transport and Highways.
+
+Q 139 | fse | Survey & Engineering
+Which is India’s first smart and green highway?
+(1) Western Peripheral Expressway
+(2) Eastern Peripheral Expressway
+(3) Northern Peripheral Expressway
+(4) Southern Peripheral Expressway
+= 2
+~ The 135-km Eastern Peripheral Expressway (Kundli-Ghaziabad-Palwal) around Delhi, opened in May 2018, was billed as India's first smart and green highway because of its solar power, rainwater harvesting and roadside plantation. The Western Peripheral Expressway is the Kundli-Manesar-Palwal road, and there are no Northern or Southern Peripheral Expressways.
+
+Q 140 | fse | Survey & Engineering
+Who developed a process to build roads by recycling plastic waste in India?
+(1) Rajagopalan Vasudevan
+(2) Krishnamoorthy Namboodri
+(3) Gopikumar Menon
+(4) Krishnaswamy Moorthy
+= 1
+~ Prof. Rajagopalan Vasudevan of Thiagarajar College of Engineering, Madurai, developed the method of mixing shredded waste plastic with hot aggregate and bitumen for road construction. He is called the "Plastic Man of India" and received the Padma Shri in 2018.
+
+Q 141 | fel | Forest Economics
+Project formulation does NOT involve which of the following steps?
+(1) Opportunity study
+(2) Prefeasibility study
+(3) Techno-economic feasibility study
+(4) Tactile slope study
+= 4
+~ Project formulation normally moves through an opportunity study, a prefeasibility study and a techno-economic feasibility study before appraisal. A "tactile slope study" is not a stage of project formulation.
+
+Q 142 | fel | Forest Economics
+What is Return on Investment (ROI)?
+(1) The time required to recover the initial project investment out of the subsequent cash flow
+(2) The limit or the rate of discount at which the project’s total present value of returns equals to total present value of investments
+(3) Annual return as a percentage of the initial investment
+(4) The sum of discounted values of the stream of investments in different years of project implementation
+= 3
+~ Return on Investment is the annual return expressed as a percentage of the initial investment. Option 1 is the payback period, option 2 is the internal rate of return (IRR) and option 4 is the present value of the investment stream.
+
+Q 143 | fel | Forest Economics
+What is meant by the term project crashing?
+(1) Integrated analysis of HR management and time
+(2) Collapse of a project before being implemented
+(3) Collapse of a project due improper HR management
+(4) Exercise carried out to reduce the time of a project by investing more money
+= 4
+~ Project crashing is a time-cost trade-off technique in which extra resources, and so extra money, are put on critical-path activities to shorten the total project duration. It does not mean that a project has failed.
+
+Q 144 | fel | Forest Economics
+An event that gives rise to more than one activity is called:
+(1) mega event
+(2) merger event
+(3) burst event
+(4) critical activity
+= 3
+~ In PERT/CPM network analysis a burst event is an event from which more than one activity starts. A merge event is the opposite case, where more than one activity ends at the event. "Mega event" is not a network term, and a critical activity is one on the critical path.
+
+Q 145 | fse | Survey & Engineering
+Which type of switching network involves the establishment of a dedicated path between two stations?
+(1) Message switching
+(2) Packet switching
+(3) Circuit switching
+(4) Manual switching
+= 3
+~ In circuit switching a dedicated path is set up between the two stations for the whole duration of the communication, as in the traditional telephone network. Message and packet switching are store-and-forward methods that share the links and use no dedicated path.
+
+Q 146 | fse | Survey & Engineering
+In the Bartlett window, the triangular function resembles the tapering of the rectangular window sequence _______ from the middle to the ends.
+(1) Linearly
+(2) Elliptically
+(3) Hyperbolically
+(4) Parabolically
+= 1
+~ The Bartlett window is a triangular window that tapers the rectangular sequence linearly from its middle to the ends, where it falls to zero. Its straight-line slopes are what distinguish it from curved windows such as Hann or Hamming.
+
+Q 147 | fse | Survey & Engineering
+The norm or length of a signal is given by:
+(1) The square of the energy of the signal
+(2) The square root of the energy of the signal
+(3) The inverse of the energy of the signal
+(4) The cube root of the energy of the signal
+= 2
+~ The norm (length) of a signal x is ||x|| = sqrt(E), the square root of its energy, where the energy E is the integral (or sum) of the squared magnitude of the signal. Equivalently, the energy is the squared norm.
+
+Q 148 | fse | Survey & Engineering
+Which of the following types of injection lasers involves the use of geometry for fabrication of the multimode injection laser with a single or small number of lateral modes?
+(1) Gain guided laser
+(2) Index guided laser
+(3) Quantum well laser
+(4) Quantum dot laser
+= 1
+~ In gain-guided (stripe-geometry) lasers the lateral confinement comes from the geometry of the narrow contact stripe, which confines the current and gives a multimode laser with one or a few lateral modes. Index-guided lasers confine light by a built-in refractive-index step, while quantum-well and quantum-dot lasers are defined by the dimensions of the active layer.
+
+Q 149 | fse | Survey & Engineering
+Which of the following characteristics of laser light specifies the precise movement of all individual light waves together through time and space?
+(1) Monochromatic
+(2) Directional
+(3) Coherent
+(4) Brightness
+= 3
+~ Coherence means that all the light waves are in step, with a fixed phase relation in both time and space. Monochromatic means a single wavelength, directional means a narrow, low-divergence beam, and brightness is the power emitted per unit area and solid angle.
+
+Q 150 | fse | Survey & Engineering
+Which block of the discrete time systems requires memory to store the previous input?
+(1) Adder
+(2) Signal multiplier
+(3) Unit delay
+(4) Unit advance
+= 3
+~ A unit delay block outputs the previous input sample, x[n-1], so it must store that value in memory. An adder and a signal multiplier work on the current samples only, and a unit advance needs a future sample, so it cannot be built as a causal system.

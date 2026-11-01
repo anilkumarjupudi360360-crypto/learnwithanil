@@ -134,7 +134,7 @@ In mixed inhibition, which of the following represents the modified form of the 
 (3) 1/vo = Km (1+[I]/Km)/Vmax[S] + 1/Vmax (1+[I]/Km)
 (4) 1/vo = Km (1+[I] Ki')/Vmax[S] + 1/Vmax
 = 1
-~ In mixed inhibition the inhibitor binds both E and ES with different affinities, so the slope term is multiplied by (1+[I]/Ki) and the intercept term by (1+[I]/Ki'). That textbook form is the one written in option 2, whereas APPSC's key is option 1, which alters only the intercept term. (Official key; some sources differ.)
+~ In mixed inhibition the inhibitor binds both E and ES with different affinities (Ki and Ki'), so the full Lineweaver-Burk equation multiplies the slope term by (1+[I]/Ki) and the intercept term by (1+[I]/Ki'), as written in option 2. APPSC's key is option 1, in which only the intercept term carries the inhibitor factor. (Official key; some sources differ.)
 
 Q 15 | bch | Enzymes & Coenzymes
 Aspartate transcarbamoylase (ATCase) is regulated allosterically by ATP and CTP. Which of the following describes the specific effect of CTP binding on the kinetic properties of ATCase?
@@ -143,7 +143,7 @@ Aspartate transcarbamoylase (ATCase) is regulated allosterically by ATP and CTP.
 (3) CTP binding increases K0.5, resulting in a more sigmoidal substrate saturation curve.
 (4) CTP binding decreases K0.5, converting the enzyme to the R state.
 = 3
-~ CTP is the end-product (negative) allosteric effector of ATCase in pyrimidine synthesis. It stabilises the low-affinity T state, which raises K0.5 and makes the sigmoidal saturation curve steeper and shifted to the right, whereas ATP (the positive effector) does the opposite by favouring the R state.
+~ CTP is the end-product (negative) allosteric effector of ATCase in pyrimidine synthesis. It stabilises the low-affinity T state, which raises K0.5 and makes the saturation curve more sigmoidal and shifted to the right, whereas ATP (the positive effector) does the opposite by favouring the R state.
 
 Q 16 | bch | Nutrition & Vitamins
 The following statement is given followed by conclusions numbered I and II. You are to decide which of the given conclusions could be drawn definitely from the given statement.
@@ -370,7 +370,7 @@ N. Food processing | C. Pharmaceutical peptide synthesis
 (3) L-B, M-C, N-A
 (4) L-B, M-A, N-C
 = 2
-~ Chymotrypsin is a protease used to hydrolyse proteins in food processing (N-A), and the same enzyme can be used under controlled conditions to form peptide bonds for pharmaceutical peptide synthesis (L-C). That leaves leather production with textile fibre modification (M-B), giving option 2.
+~ Chymotrypsin is a protease used to hydrolyse proteins in food processing (N-A), and under controlled conditions it can also form peptide bonds, which is used in pharmaceutical peptide synthesis (L-C). The key pairs the remaining items as leather production with textile fibre modification (M-B), a pairing reached mainly by elimination. (Official key; some sources differ.)
 
 Q 38 | bch | Enzymes & Coenzymes
 Match the following.
@@ -642,7 +642,7 @@ What is the process of separating lymphocytes from whole blood called?
 (3) Lateletpheresis
 (4) Erythroporesis
 = 1,2
-~ Lymphapheresis (lymphocytapheresis) removes lymphocytes specifically. Leukapheresis separates white blood cells from whole blood, and it is the usual way of collecting lymphocytes. Hence APPSC accepted either option 1 or 2. Options 3 and 4 are misspelt and refer to platelets (plateletpheresis) and red cells.
+~ Lymphapheresis (lymphocytapheresis) removes lymphocytes specifically. Leukapheresis separates white blood cells from whole blood, and it is the usual way of collecting lymphocytes, so APPSC accepted either option 1 or 2. Options 3 and 4 are misspelt and refer to platelets (plateletpheresis) and red cells.
 
 Q 64 | bch | Immunology
 Which of the following is the primary mechanism by which convalescent plasma therapy aids in the treatment of infectious diseases like COVID-19?
@@ -772,7 +772,7 @@ D. Low platelet count | 4. Marker for hematologic involvement
 (3) A-4, B-3, C-1, D-2
 (4) A-3, B-4, C-2, D-1
 = 4
-~ The keyed option pairs a raised ESR with neonatal lupus and anti-Ro/SSA with systemic inflammation, which does not fit standard SLE teaching. The usual associations are: raised ESR with systemic inflammation, anti-phospholipid antibodies with thrombosis risk, anti-Ro/SSA with neonatal lupus (congenital heart block), and low platelets with haematological involvement, which is option 1. (Official key; some sources differ.)
+~ APPSC's key (A-3, B-4, C-2, D-1) pairs raised ESR with neonatal lupus, anti-phospholipid antibodies with haematological involvement, anti-Ro/SSA with systemic inflammation and low platelets with thrombosis risk. This does not fit standard SLE teaching, where raised ESR marks systemic inflammation, anti-phospholipid antibodies mean thrombosis risk, anti-Ro/SSA is linked to neonatal lupus (congenital heart block) and low platelets show haematological involvement, which is option 1. (Official key; some sources differ.)
 
 Q 77 | bch | Endocrinology
 Autoantibodies block thyroid cell stimulation by binding to which of the following receptors?
@@ -808,7 +808,7 @@ Which of the following statements is correct with respect to the nature and stru
 (3) Immunoglobulin molecules consist of three identical heavy chains and three light chains held together by disulphide linkages and covalent interactions.
 (4) The heavy chains of immunoglobulin are linked to carbohydrates, hence immunoglobulins are glycoproteins.
 = 4
-~ Oligosaccharides are covalently attached to the heavy chains, so immunoglobulins are glycoproteins. Options 1 and 2 are reversed: antibodies are mostly in the gamma-globulin fraction, and "immunoglobulin" is the functional term while "gamma globulin" describes electrophoretic mobility. Option 3 is wrong because a basic Ig has two, not three, heavy and light chains.
+~ Oligosaccharides are covalently attached to the heavy chains, so immunoglobulins are glycoproteins. Option 1 is false because most antibodies lie in the gamma-globulin fraction of plasma proteins. Option 2 is false because "immunoglobulin" is the functional term, while "gamma globulin" describes electrophoretic mobility. Option 3 is wrong because a basic Ig has two, not three, heavy and light chains.
 
 Q 81 | bch | Immunology
 Which of the following adjuvants is NOT used in the HPV vaccine?

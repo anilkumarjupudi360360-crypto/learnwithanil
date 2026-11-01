@@ -1,0 +1,1559 @@
+# appsc-analyst-2025-paper2-environmental-science.txt: APPSC official paper, answers from APPSC's final key (APOnline master question paper, correct option ticked).
+# Typed from /home/claude/afro/raw/afro-an24-p2-envsci-final.pdf; checked by a second reader. Questions APPSC ignored for all candidates are left out.
+
+Q 1 | evs | Natural Resources
+The optical efficiency of a solar thermal collector is defined as:
+(1) fraction of the rays reflected from the mirror to solar radiation absorbed in the absorber
+(2) ratio of solar radiation absorbed in the absorber to intercepted by the collector aperture
+(3) ratio of solar radiation transmitted from the absorber to intercepted by the collector aperture
+(4) transmittance of glass envelope of absorber to solar radiation absorbed in the absorber
+= 2
+~ Optical efficiency is the share of the radiation that falls on the collector aperture and is finally absorbed by the absorber: optical efficiency = radiation absorbed in the absorber / radiation intercepted by the aperture. It combines the mirror reflectance, the glass-cover transmittance and the absorber absorptance (Duffie and Beckman; Kalogirou). Options 1, 3 and 4 compare other pairs of quantities, such as only the glass transmittance.
+
+Q 2 | evs | Natural Resources
+Two statements are given, labelled as Assertion (A) and Reason (R). Select the correct option with reference to the statements.
+Assertion (A): Photovoltaic detectors normally use silicon solar cells measuring the short circuit current.
+Reason (R): Photovoltaic detectors generate a voltage proportional to the temperature difference between the hot and cold junctions.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true but R is not the correct explanation of A
+(3) A is true but R is false
+(4) A is false but R is true
+= 1
+~ Photovoltaic detectors such as silicon solar cells are normally read by measuring the short-circuit current, which is proportional to the incident radiation, so A is true. APPSC's key is option 1, which treats R as a correct explanation. However, a voltage proportional to the temperature difference between hot and cold junctions is the working principle of a thermopile (Seebeck effect), not of a photovoltaic cell, so many sources would take R as false (option 3). (Official key; some sources differ.)
+
+Q 3 | evs | Natural Resources
+Floating Drum Type Biogas Plants are ________ Type Biogas Plants.
+(1) Constant Volume
+(2) Constant Pressure
+(3) Constant Temperature
+(4) Constant Enthalpy
+= 2
+~ In a floating-drum (KVIC) plant the gas holder drum rises and falls as gas is stored and used, so the gas is supplied at a constant pressure fixed by the weight of the drum while the gas volume changes. In a fixed-dome plant the gas space has a fixed volume and the pressure varies, so that one is the constant-volume type.
+
+Q 4 | evs | Natural Resources
+In which biomass conversion technologies can pelletization, briquetting and the fuel extraction process be seen?
+(1) Direct Combustion
+(2) Physical Method
+(3) Bio-chemical Method
+(4) Thermo-chemical Method
+= 2
+~ Pelletisation and briquetting (densification) and the extraction of oil or fuel from seeds are mechanical, physical processes that change the form of the biomass but not its chemical nature, so they come under physical (mechanical) conversion. Direct combustion, gasification and pyrolysis are thermo-chemical routes, while anaerobic digestion and fermentation are bio-chemical routes.
+
+Q 5 | evs | Natural Resources
+The part of solar radiation that reaches the earth's surface with no change in direction is called:
+(1) beam radiation
+(2) diffuse radiation
+(3) arbitrary radiation
+(4) thermal radiation
+= 1
+~ Beam (direct) radiation is the part of sunlight that reaches the ground without being scattered by the atmosphere, so it keeps its direction from the sun's disc. The scattered part, which arrives from all directions of the sky, is diffuse radiation, and the two together make up global (total) radiation. "Arbitrary radiation" is not a standard term.
+
+Q 6 | evs | Natural Resources
+In a solar air heating system, the flow rate through an air collector and storage loop is a compromise between ________ and ________.
+(1) pressure drop; energy transfer to the air stream
+(2) temperature drop; energy transfer to the air stream
+(3) volume drop; energy transfer to the air stream
+(4) temperature drop; energy transfer to the water stream
+= 1
+~ A high air flow improves heat transfer from the collector to the air, but the pressure drop across the collector and storage bed rises steeply with flow and needs more fan power. A low flow saves fan power but transfers less energy. The design flow rate is therefore a compromise between pressure drop and energy transfer to the air stream; option 4 wrongly refers to a water stream.
+
+Q 7 | evs | Natural Resources
+____________ is a solar collector using the absorption of solar radiation at the bottom of a 2 m to 3 m deep body of water to generate low-temperature heat.
+(1) Non convecting solar pond
+(2) Solar photovoltaic
+(3) Solar desailation
+(4) Solar distillation
+= 1
+~ A non-convecting (salt-gradient) solar pond is a pond a few metres deep in which a salt gradient stops convection, so heat absorbed at the dark bottom is trapped in the lower layer and can be drawn off as low-temperature heat (up to about 80-90 degrees C). Solar photovoltaic produces electricity, and solar desalination and distillation are water-purification processes, not pond-type heat collectors.
+
+Q 8 | evs | Natural Resources
+Two statements are given, labelled as Assertion (A) and Reason (R). Select the correct option with reference to the given statements.
+Assertion A: Heliostats consist of several mirror panels supported on a steel structure.
+Reason R : The heliostat focal length is approximately equal to the distance of the heliostat from the receiver.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true but R is not the correct explanation of A
+(3) A is true but R is false
+(4) A is false but R is true
+= 1
+~ In a central-receiver (power tower) plant a heliostat is a large sun-tracking mirror built from several mirror panels (facets) on a steel structure, so A is true. R is also true: each heliostat is focused at roughly its distance (slant range) from the receiver, and APPSC's key accepts this as the explanation, because the facets are angled so that together they act as one concave mirror of that focal length. Some sources would call R true but not the reason for A (option 2). (Official key; some sources differ.)
+
+Q 9 | evs | Natural Resources
+Two statements are given, labelled as Assertion (A) and Reason (R). Select the correct option with reference to the given statements.
+Assertion A: PV devices are solid state.
+Reason R: Therefore, PV devices are rugged and simple in design and require very little maintenance.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true but R is not the correct explanation of A
+(3) A is true but R is false
+(4) A is false but R is true
+= 1
+~ Photovoltaic devices are solid-state semiconductor devices with no moving parts or working fluids. That is exactly why they are rugged, simple in design and need very little maintenance, so R follows from A and explains it.
+
+Q 10 | evs | Natural Resources
+Two statements are given below. Select the correct option with reference to the statements.
+Statement 1: Floating Drum Type Biogas Plant is also called Janata Model Biogas Plant.
+Statement 2: Fixed Dome Type Biogas Plant is also called Khadi Village Industries Commission.
+(1) Only Statement 1 is correct
+(2) Only Statement 2 is correct
+(3) Both Statement 1 and Statement 2 are correct
+(4) Both Statement 1 and Statement 2 are incorrect
+= 4
+~ The floating-drum plant is the KVIC model, whereas the Janata model is a fixed-dome plant, so Statement 1 is wrong. Statement 2 is also wrong: "Khadi and Village Industries Commission" is the body that popularised the floating-drum design, and the fixed-dome type is known as the Janata (or Deenbandhu) model.
+
+Q 11 | evs | Natural Resources
+What is the role of an insulator in Liquid flat plate collector (LFPC)?
+(1) To minimise heat loss from the back and the sides
+(2) To facilitate the flow of heat-transfer fluid
+(3) To maximise heat loss from the back and the sides
+(4) To facilitate the incident solar radiation
+= 1
+~ In a liquid flat-plate collector the insulation (glass wool, mineral wool and similar) is placed behind and at the sides of the absorber plate to cut conduction losses, so more of the absorbed heat goes into the fluid. The tubes carry the fluid and the transparent cover admits the sunlight, so options 2 and 4 describe other components.
+
+Q 12 | evs | Natural Resources
+Photovoltaic (PV) conversion is the direct conversion of:
+(1) sunlight into electricity
+(2) sunlight into heat energy
+(3) sunlight into latent heat storage energy
+(4) kinetic energy into mechanical energy
+= 1
+~ Photovoltaic conversion changes sunlight directly into electricity in a semiconductor such as a silicon p-n junction, through the photovoltaic effect. Conversion of sunlight into heat is photothermal conversion, which is how solar thermal collectors work.
+
+Q 13 | evs | Natural Resources
+Match the following columns.
+List I | List II
+A. Direct Solar Radiation | P. Instrument used to measure solar radiation
+B. Diffuse Solar Radiation | Q. Combination of beam radiation and diffuse radiation
+C. Solar Insolation | R. Radiation undergoes solar attenuation
+D. Pyranometer | S. Radiation does not undergo solar attenuation
+(1) A-S, B-R, C-Q, D-P
+(2) A-P, B-R, C-Q, D-S
+(3) A-S, B-P, C-Q, D-R
+(4) A-Q, B-R, C-S, D-P
+= 1
+~ Direct (beam) radiation reaches the surface without being scattered (S), whereas diffuse radiation has been scattered by the atmosphere (R). Solar insolation is the total of beam and diffuse radiation received on a surface (Q), and a pyranometer is the instrument that measures it (P). The question uses "attenuation" loosely to mean scattering that changes the direction of the rays.
+
+Q 14 | evs | Natural Resources
+Two statements are given, labelled as Assertion (A) and Reason (R). Select the correct option with reference to the given statements.
+Assertion (A): A pyranometer (solar radiation measurement instrument) has a hemispherical view of the surroundings.
+Reason (R): Therefore, pyranometer is used to measure the total, direct, and diffuse solar radiation on a surface.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true but R is not the correct explanation of A
+(3) A is true but R is false
+(4) A is false but R is true
+= 1
+~ A pyranometer sees the whole sky hemisphere, so it receives radiation from every direction and measures the global (total) radiation on a surface. With a shading ring or disc it measures diffuse radiation, and the direct component can then be found by difference, so the hemispherical view is why it is used for all three. (Direct beam radiation on its own is measured by a pyrheliometer.)
+
+Q 15 | evs | Environmental Assessment & Planning
+Which of the following best defines eco-planning?
+(1) Economic planning for industries
+(2) Social welfare planning
+(3) Systematic approach to environmental resource management
+(4) Political boundary planning
+= 3
+~ Eco-planning is a systematic, planned approach to managing and using environmental resources such as land, water, forests and energy so that development stays ecologically sustainable. It is not economic, social-welfare or political-boundary planning, although it interacts with all of them.
+
+Q 16 | evs | Natural Resources
+Which soil horizon is characterised by maximum biological activity?
+(1) A horizon (topsoil)
+(2) B horizon (subsoil)
+(3) C horizon (parent material)
+(4) E horizon (eluviated layer)
+= 1
+~ The A horizon (topsoil) is rich in humus, roots, bacteria, fungi and earthworms, so biological activity is highest there. The B horizon only accumulates clay and minerals washed down from above, the C horizon is weathered parent material with little life, and the E horizon is a leached layer poor in organic matter.
+
+Q 17 | evs | Natural Resources
+Which of the following best describes the role of soil organic matter in ecosystems?
+(1) Reducing soil erosion exclusively in arid regions
+(2) Serving as a habitat for deep-sea organisms
+(3) Enhancing soil fertility and water retention
+(4) Promoting the growth of salt-tolerant plant species
+= 3
+~ Soil organic matter (humus) stores and slowly releases plant nutrients, improves soil structure and acts like a sponge that raises the water-holding capacity, so it enhances fertility and water retention. It helps to control erosion in all climates, not only in arid regions, and has no link with deep-sea organisms.
+
+Q 18 | evs | Natural Resources
+Which soil texture classification has the highest water retention capacity?
+(1) Sandy loam
+(2) Clay
+(3) Silt
+(4) Pure sand
+= 2
+~ Clay has the finest particles, the largest surface area and many very small pores, so it holds the most water, although much of it is held so tightly that plants cannot use it. Sand has large pores and drains freely, so it has the lowest retention, and silt and sandy loam are in between.
+
+Q 19 | evs | Natural Resources
+Match the following environmental strategies with their corresponding benefits.
+Strategy | Benefit
+A) Organic farming | 1) Reduces pesticide usage
+B) Water conservation | 2) Ensures sustainable irrigation
+C) Crop rotation | 3) Prevents soil degradation
+D) Use of biofertilisers | 4) Enhances soil microbial activity
+(1) A-1, B-2, C-3, D-4
+(2) A-4, B-3, C-1, D-2
+(3) A-2, B-1, C-4, D-3
+(4) A-3, B-4, C-2, D-1
+= 1
+~ Organic farming avoids synthetic pesticides, so it reduces pesticide usage (A-1). Water conservation ensures sustainable irrigation (B-2), crop rotation restores nutrients and soil structure and so prevents soil degradation (C-3), and biofertilisers such as Rhizobium and Azotobacter enhance soil microbial activity (D-4). The other options mix these up, for example linking water conservation with pesticide use.
+
+Q 20 | evs | Natural Resources
+What is the primary goal of eco-friendly soil management programs?
+(1) To maximise short-term agricultural yields
+(2) To preserve soil fertility for long-term productivity
+(3) To eliminate the use of all fertilisers
+(4) To promote rapid urbanisation
+= 2
+~ Eco-friendly soil management aims to keep the soil fertile and productive over the long term, through organic manuring, crop rotation, conservation tillage and balanced fertiliser use. It does not aim at short-term yield maximisation, and it reduces fertiliser dependence rather than necessarily eliminating all fertilisers.
+
+Q 21 | evs | Environmental Assessment & Planning
+Match the environmental factors (Column-I) with their roles in cost-benefit analysis (Column-II).
+Column-I | Column-II
+1. Air quality | A. Reduces resource depletion
+2. Water conservation | B. Improves public health
+3. Land resources | C. Affects agricultural yield
+4. Energy use | D. Enhances sustainability
+(1) 1-A, 2-B, 3-C, 4-D
+(2) 1-A, 2-D, 3-C, 4-B
+(3) 1-B, 2-D, 3-C, 4-A
+(4) 1-D, 2-A, 3-B, 4-A
+= 3
+~ In a cost-benefit analysis, better air quality brings its benefit mainly as improved public health (1-B). Water conservation enhances sustainability (2-D), land resources affect agricultural yield (3-C), and efficient energy use reduces resource depletion (4-A). Option 3 is the only one in which all four pairs fit this logic.
+
+Q 22 | evs | Ecology & Ecosystems
+Match the column A for the components of food web with their characteristics in column B.
+Column A (Components of food web) | Column B (characteristics)
+1. Apex predator | a. Breaks down dead organic matter
+2. Keystone species | b. Energy harnessing
+3. Decomposer | c. Maintains ecosystem structure and function
+4. Primary producer | d. Regulates population sizes of other species
+(1) 1-d; 2-c; 3-a; 4-b
+(2) 1-c; 2-d; 3-b; 4-a
+(3) 1-b; 2-d; 3-a; 4-c
+(4) 1-a; 2-d; 3-b; 4-c
+= 1
+~ An apex predator regulates the population sizes of the species below it (1-d). A keystone species has an effect on its community far out of proportion to its numbers and so maintains ecosystem structure and function (2-c). Decomposers break down dead organic matter (3-a), and primary producers harness solar energy by photosynthesis (4-b).
+
+Q 23 | evs | Ecology & Ecosystems
+Which of the following is the most significant example of a keystone species in a food chain?
+(1) Apex predator
+(2) Decomposer
+(3) Producer
+(4) Mesopredator
+= 1
+~ A keystone species is one whose removal changes a whole community far more than its numbers would suggest. The classic examples, such as the sea star Pisaster (R. T. Paine) and sea otters, are apex predators that keep herbivore populations in check. Producers and decomposers are foundational but are not usually called keystone species, and a mesopredator is itself controlled by the apex predator.
+
+Q 24 | evs | Natural Resources
+How does the depletion of soil nutrients directly affect global food security?
+(1) It reduces the carrying capacity of soil for crops.
+(2) It enhances the growth of invasive species.
+(3) It increases water availability in agricultural regions.
+(4) It promotes biodiversity in farmland ecosystems.
+= 1
+~ When soil nutrients are depleted, the soil can support less crop growth, which means its carrying capacity for crops falls, yields drop and food security is threatened. Options 2, 3 and 4 describe effects that are unrelated to, or the opposite of, what nutrient depletion causes.
+
+Q 25 | evs | Ecology & Ecosystems
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, decide which of the given conclusion(s) logically follow(s) from the statement.
+Statement: Soil microbes are critical for nutrient cycling but are highly sensitive to chemical inputs in agriculture.
+Conclusions:
+I: Reducing chemical fertilisers can enhance microbial health in soils.
+II: Without soil microbes, nutrient cycling is halted, leading to soil infertility.
+(1) Only Conclusion I follows.
+(2) Only Conclusion II follows.
+(3) Both Conclusions I and II follow.
+(4) Neither Conclusion I nor II follows.
+= 3
+~ Conclusion I follows because if soil microbes are highly sensitive to chemical inputs, cutting back on chemical fertilisers should reduce the harm to them. Conclusion II follows because if microbes are critical for nutrient cycling, losing them would stop the cycling and leave the soil infertile. Both are supported by the statement.
+
+Q 26 | evs | Natural Resources
+What is the primary reason for decreased soil fertility in intensive farming areas?
+(1) Disruption of mycorrhizal associations
+(2) Increased soil compaction
+(3) Loss of organic matter
+(4) Change in soil pH
+= 3
+~ Repeated cropping, removal of crop residues and heavy tillage speed up the oxidation of soil organic carbon, so organic matter declines. Because organic matter holds nutrients and water and feeds soil life, its loss is the main cause of falling fertility. Compaction, pH change and damage to mycorrhizae occur too, but they are secondary factors.
+
+Q 27 | evs | Climate Change & Global Issues
+Select the option that is correct regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Eco-friendly agricultural programs reduce greenhouse gas emissions.
+Reason (R): Such programs minimise the dependency on synthetic fertilisers and promote carbon sequestration.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 1
+~ Eco-friendly agriculture (organic manuring, conservation tillage, agroforestry) lowers nitrous oxide and carbon dioxide emissions linked to making and using synthetic fertilisers, and it builds up carbon in the soil, so A is true. R gives exactly these two mechanisms, so it correctly explains A.
+
+Q 28 | evs | Ecology & Ecosystems
+Which of the following is a characteristic of a mature ecosystem?
+(1) High species diversity
+(2) Absence of keystone species
+(3) Simple food web
+(4) Primary succession
+= 1
+~ A mature (climax) ecosystem has high species diversity, complex food webs, stable energy flow and well-developed nutrient cycles. Simple food webs belong to early successional stages, and primary succession is the colonisation of bare ground, not a feature of a mature community.
+
+Q 29 | evs | Ecology & Ecosystems
+Which of the following ecosystem functions is most closely related to the concept of 'tipping points', where small changes can lead to abrupt and irreversible changes in ecosystem behaviour?
+(1) Non-linear dynamics
+(2) Catastrophic shifts
+(3) Threshold effects
+(4) Feedback loops
+= 3
+~ A tipping point is a critical threshold: once a small change in a driver crosses it, the system moves abruptly, and often irreversibly, to a new state. The key therefore picks threshold effects. Non-linear dynamics, catastrophic shifts and feedback loops are closely related ideas, so the question is ambiguous. (Official key; some sources differ.)
+
+Q 30 | evs | Environmental Assessment & Planning
+Which land use pattern is considered most sustainable for a developing urban periphery?
+(1) High-density residential development with integrated green spaces
+(2) Single-use commercial zones with extensive parking
+(3) Scattered low-density housing developments
+(4) Industrial parks without buffer zones
+= 3
+~ Compact, high-density development with integrated green space is normally regarded as the sustainable pattern for an urban periphery, because it limits sprawl and loss of farmland and eases transport and service needs. APPSC's key, however, is the scattered low-density option, which planning texts treat as urban sprawl. (Official key; some sources differ.)
+
+Q 31 | evs | Environmental Assessment & Planning
+Given below are an Assertion (A) and a Reason (R). Carefully analyse the two statements and select the correct option.
+Assertion (A): India's land use policy prioritises agricultural land preservation.
+Reason (R): Food security is considered a national priority in environmental planning.
+(1) Assertion and reason are both true, and reason explains the assertion.
+(2) Assertion and reason are both true, but reason does not explain the assertion.
+(3) Assertion is true but reason is false.
+(4) Both assertion and reason are false.
+= 1
+~ Indian land-use planning, for example the draft National Land Utilisation Policy (2013), stresses protecting good agricultural land from conversion, and food security is treated as a national priority. The priority on food security is the reason farmland is protected, so R explains A.
+
+Q 32 | evs | Climate Change & Global Issues
+Which of the following is a limitation of the 'Limits to Growth' model?
+(1) Lack of inclusion of technology’s role in resource management
+(2) Overestimation of renewable resources
+(3) Focus only on rural ecosystems
+(4) Ignoring economic factors like GDP growth
+= 1
+~ "The Limits to Growth" (Club of Rome, 1972) used the World3 computer model to project overshoot and collapse from exponential growth in a finite world. The main criticism is that it did not adequately allow for technological progress, substitution and market adjustment in the use of resources. It was a global model that did include economic variables such as industrial output, so options 3 and 4 are wrong.
+
+Q 33 | evs | Ecology & Ecosystems
+Which of the following ecosystems exhibits highest net primary production?
+(1) Temperate grassland
+(2) Arctic tundra
+(3) Tropical rainforest
+(4) Coral reef
+= 3
+~ Of the major terrestrial biomes, tropical rainforests have the highest net primary production per unit area (about 2,200 g/m2/yr in Whittaker's estimates), thanks to year-round warmth, rainfall and sunlight. Temperate grassland and Arctic tundra are far less productive. Some tables give coral reefs and algal beds a slightly higher figure (about 2,500 g/m2/yr), so the question is arguable. (Official key; some sources differ.)
+
+Q 34 | evs | Environmental Assessment & Planning
+Which of the following is a primary objective of urban planning in India?
+(1) Enhancing biodiversity in forests
+(2) Reducing air pollution in rural areas
+(3) Managing land use for sustainable development
+(4) Promoting industrial growth without restrictions
+= 3
+~ A central aim of urban planning in India is to regulate land use (residential, commercial, industrial, open space) so that cities grow in an orderly and sustainable way, as in master plans prepared under state town-planning laws. Forests and rural air quality are outside its scope, and "growth without restrictions" is the opposite of planning.
+
+Q 35 | evs | Environmental Assessment & Planning
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusion(s) logically follow(s) from the statement.
+Statement: Urbanisation affects land use patterns.
+Conclusions:
+I: Urban expansion reduces agricultural land.
+II: Land use changes have no impact on biodiversity.
+(1) Only Conclusion I follows.
+(2) Only Conclusion II follows.
+(3) Both Conclusions I and II follows.
+(4) Neither Conclusion I nor II follows.
+= 1
+~ If urbanisation changes land use, then the spread of cities taking over farmland (Conclusion I) is a direct example of such a change. Conclusion II, that land use changes have no impact on biodiversity, is not supported by the statement and is false, since land conversion is a main cause of habitat loss.
+
+Q 36 | evs | Natural Resources
+Match the soil components (Column-I) with their ecological functions (Column-II).
+Column-I | Column-II
+1. Organic matter | A. Enhances plant growth
+2. Microbes | B. Retains nutrients
+3. Minerals | C. Decomposes waste
+4. Water | D. Regulates moisture
+(1) 1-C, 2-B, 3-A, 4-D
+(2) 1-B, 2-A, 3-C, 4-D
+(3) 1-D, 2-C, 3-A, 4-B
+(4) 1-B, 2-C, 3-A, 4-D
+= 4
+~ Organic matter (humus) holds on to nutrients (1-B). Microbes decompose wastes and organic residues (2-C), minerals supply the nutrients that enhance plant growth (3-A), and soil water regulates moisture availability to plants (4-D).
+
+Q 37 | evs | Ecology & Ecosystems
+Select the correct conclusion for the following statement.
+Statement: Decomposers play a crucial role in nutrient cycling in an ecosystem.
+(1) Decomposers are the primary consumers of an ecosystem
+(2) Nutrient cycling is unnecessary for ecosystem function
+(3) Decomposers compete with producers for resources
+(4) Decomposers facilitate nutrient availability for producers
+= 4
+~ Decomposers break down dead matter and release mineral nutrients into the soil and water, where producers can take them up again, so they facilitate nutrient availability for producers. They are not primary consumers (those are herbivores), and options 2 and 3 contradict the statement.
+
+Q 38 | evs | Ecology & Ecosystems
+Which of the following options is an appropriate conclusion for the given statement with reference to ecosystem energetics?
+Statement: The second law of thermodynamics deals with changes in total entropy.
+(1) Energy is effectively created in ecosystems through photosynthesis
+(2) Energy is dissipated as heat in ecosystems, but entropy decreases
+(3) Energy is conserved in ecosystems, but entropy increases
+(4) Energy is transferred efficiently between trophic levels without loss
+= 3
+~ The first law says energy is conserved, and the second law says that every energy transformation increases total entropy because part of the energy is degraded to heat. So in an ecosystem energy is conserved but entropy increases. Option 2 is wrong because entropy increases, not decreases, and options 1 and 4 break the laws (energy cannot be created, and transfer between trophic levels always loses energy).
+
+Q 39 | evs | Environmental Assessment & Planning
+Match the planning concepts with their primary objectives.
+Planning Concepts | Objectives
+1. Green Belt | a) Reducing vehicle dependency
+2. Mixed Land Use | b) Limiting urban sprawl
+3. Transit Oriented Development | c) Preserving farming activities
+4. Agricultural Zoning | d) Enhancing community vibrancy
+(1) 1-a, 2-c, 3-b, 4-d
+(2) 1-c, 2-a, 3-d, 4-b
+(3) 1-b, 2-d, 3-a, 4-c
+(4) 1-d, 2-b, 3-c, 4-a
+= 3
+~ A green belt limits urban sprawl (1-b). Mixed land use puts homes, shops and workplaces close together and so enhances community vibrancy (2-d). Transit-oriented development concentrates activity around public-transport stations and so reduces vehicle dependency (3-a), and agricultural zoning reserves land for farming (4-c).
+
+Q 40 | evs | Natural Resources
+What role do soil microbes play in maintaining soil health?
+(1) Decreasing soil porosity
+(2) Facilitating nutrient cycling and decomposition
+(3) Promoting waterlogging
+(4) Reducing biodiversity in the soil ecosystem
+= 2
+~ Soil bacteria, fungi and actinomycetes decompose organic matter and mineralise nutrients, so they drive nutrient cycling, and their products help bind soil particles into aggregates that improve porosity and aeration. They do not decrease porosity, cause waterlogging or reduce soil biodiversity.
+
+Q 41 | evs | Ecology & Ecosystems
+In the context of global biogeochemical cycles, which of the following processes represents the most complex and least understood nutrient transformation mechanism?
+(1) Nitrogen fixation by symbiotic bacteria
+(2) Phosphorus weathering and sedimentation
+(3) Microbial mediated sulphur reduction in anaerobic environments
+(4) Mercury biomagnification in aquatic ecosystems
+= 1
+~ APPSC's key is symbiotic nitrogen fixation, which is a complex process involving the nitrogenase enzyme and signalling between the host plant and Rhizobium. However, many sources count it among the best-studied nutrient transformations, so the key looks doubtful. (Official key; some sources differ.)
+
+Q 42 | evs | Environmental Assessment & Planning
+Which of the following is a primary characteristic of successful eco-friendly programmes in India?
+(1) Maximising economic growth at any environmental cost
+(2) Community participation and local ecosystem understanding
+(3) Exclusive government-led initiatives without stakeholder involvement
+(4) Focusing solely on urban environmental challenges
+= 2
+~ Successful Indian programmes such as Joint Forest Management and participatory watershed development depend on community participation and knowledge of the local ecosystem. Programmes that ignore stakeholders, put growth above the environment or look only at urban issues do not last.
+
+Q 43 | evs | Natural Resources
+This question consists of a statement, followed by a conclusion. You are required to determine whether or not the given conclusion logically follows from the statement.
+Statement: Soil profile consists of distinct layers, each with unique characteristics.
+Conclusion: Each layer plays a specific role in soil fertility and ecological balance.
+(1) Only statement is true.
+(2) Only conclusion is true.
+(3) Both statement and conclusion are true.
+(4) Neither statement nor conclusion is true.
+= 3
+~ A soil profile is a vertical section made up of horizons (O, A, E, B, C) that differ in colour, texture and composition, so the statement is true. Each horizon has its own function, for example the A horizon for organic matter and biological activity, the B horizon for accumulation of clay and minerals and the C horizon as parent material, so the conclusion is also true.
+
+Q 44 | evs | Pollution & Waste Management
+Match the following pollutants with their primary effects on the environment.
+Pollutants | Effects
+A) Particulate matter | 1) Respiratory issues in humans
+B) Heavy metals | 2) Bioaccumulation and toxicity
+C) Eutrophication agents | 3) Algal blooms and oxygen depletion
+D) Persistent Organic Pollutants (POPs) | 4) Long-term contamination of ecosystems
+(1) A-4, B-3, C-2, D-1
+(2) A-2, B-1, C-4, D-3
+(3) A-1, B-2, C-3, D-4
+(4) A-3, B-4, C-1, D-2
+= 3
+~ Fine particulate matter is inhaled and causes respiratory problems (A-1). Heavy metals are not degraded and accumulate in organisms, giving bioaccumulation and toxicity (B-2). Eutrophication agents such as nitrates and phosphates cause algal blooms and oxygen depletion (C-3), and persistent organic pollutants (DDT, PCBs, dioxins) resist breakdown and contaminate ecosystems for a long time (D-4).
+
+Q 45 | evs | Pollution & Waste Management
+Statement: Excessive use of chemical fertilisers can lead to soil degradation.
+Which of the following conclusions best reflects/supports this statement?
+(1) Soil health improves with chemical fertiliser application.
+(2) Chemical fertilisers cause acidification, reducing soil fertility.
+(3) Chemical fertilisers promote biodiversity in the soil ecosystem.
+(4) Soil properties remain unchanged despite continuous fertiliser use.
+= 2
+~ Continued heavy use of ammonium- and urea-based fertilisers acidifies the soil (nitrification releases hydrogen ions) and upsets the nutrient balance and soil life, so fertility falls. This supports the statement about degradation, whereas options 1, 3 and 4 say soil health improves, biodiversity rises or nothing changes, all of which contradict it.
+
+Q 46 | evs | Pollution & Waste Management
+How do plastic pollutants affect marine ecosystems?
+(1) They enhance coral reef growth.
+(2) They increase oxygen levels in water.
+(3) They disrupt food chains and harm aquatic organisms.
+(4) They promote the growth of beneficial algae.
+= 3
+~ Plastic waste in the sea entangles animals, is swallowed by fish, turtles and seabirds, and breaks down into microplastics that enter the food chain, so it disrupts food chains and harms aquatic life. It does not help corals, raise oxygen levels or benefit algae.
+
+Q 47 | evs | Pollution & Waste Management
+What is a major consequence of heavy metal contamination in soil?
+(1) Increased crop yield
+(2) Enhanced microbial activity
+(3) Reduced soil fertility and toxicity to plants
+(4) Promotion of water infiltration
+= 3
+~ Heavy metals such as lead, cadmium, mercury, arsenic and chromium are toxic to plants and soil microbes, so they reduce soil fertility and crop growth and can pass into the food chain. They do not raise yield or microbial activity, and they have no role in improving water infiltration.
+
+Q 48 | evs | Pollution & Waste Management
+Which emerging contaminant poses the greatest threat to aquatic ecosystems due to its endocrine-disrupting properties?
+(1) Microplastics
+(2) Pharmaceutical residues
+(3) Perfluoroalkyl Substances (PFAS)
+(4) Nanomaterials
+= 3
+~ PFAS are extremely persistent ("forever chemicals"), build up in aquatic organisms and are known endocrine disruptors, which is why APPSC's key picks them. Pharmaceutical residues, such as synthetic oestrogens that feminise fish, are also strong endocrine disruptors, so the question is arguable. (Official key; some sources differ.)
+
+Q 49 | evs | Pollution & Waste Management
+Statement: Biological treatment processes are essential for effective wastewater treatment.
+Which of the following conclusions best supports the given statement?
+(1) Biological treatment removes physical debris from water.
+(2) It relies on microorganisms to degrade organic pollutants.
+(3) Biological processes are ineffective for nutrient removal.
+(4) Advanced oxidation is the primary biological treatment method.
+= 2
+~ Biological treatment (activated sludge, trickling filters, lagoons) uses microorganisms to break down biodegradable organic pollutants into carbon dioxide, water and new biomass, which is why it is essential. Removing physical debris is done by screening and sedimentation, biological processes can remove nutrients (nitrification-denitrification), and advanced oxidation is a chemical rather than a biological process.
+
+Q 50 | evs | Pollution & Waste Management
+How does acid rain primarily affect plant ecosystems?
+(1) It increases chlorophyll production.
+(2) It lowers soil pH, affecting nutrient availability.
+(3) It enhances root growth and water absorption.
+(4) It promotes rapid decomposition of organic matter.
+= 2
+~ Acid rain (pH below about 5.6) acidifies the soil, leaches nutrients such as calcium, magnesium and potassium and releases toxic aluminium, so nutrient availability falls and plants are damaged. It harms leaf tissue and chlorophyll rather than increasing it, and it slows, not speeds up, decomposition by hurting soil microbes.
+
+Q 51 | evs | Pollution & Waste Management
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, decide which of the given conclusion(s) logically follow(s) from the statement.
+Statement: Carbon monoxide (CO) is a dangerous air pollutant.
+Conclusions:
+I: CO binds with haemoglobin in the blood, reducing oxygen transport.
+II: CO emissions are primarily from natural sources like volcanoes.
+(1) Only Conclusion I follows.
+(2) Only Conclusion II follows.
+(3) Both Conclusions I and II follow.
+(4) Neither Conclusion I nor II follows.
+= 1
+~ Carbon monoxide binds to haemoglobin over 200 times more strongly than oxygen, forming carboxyhaemoglobin and cutting oxygen transport, which is why it is dangerous, so Conclusion I follows. Conclusion II is wrong because most CO comes from incomplete combustion of fuels in vehicles, industry and burning, which are human sources, not volcanoes.
+
+Q 52 | evs | Pollution & Waste Management
+Match the water pollutants (Column-I) with their primary sources (Column-II).
+Column-I | Column-II
+1. Nitrates | A. Industrial discharge
+2. Mercury | B. Agricultural runoff
+3. Oil and grease | C. Marine shipping
+4. Plastic debris | D. Improper waste disposal
+(1) 1-A, 2-D, 3-C, 4-B
+(2) 1-B, 2-C, 3-A, 4-D
+(3) 1-B, 2-A, 3-C, 4-D
+(4) 1-C, 2-A, 3-B, 4-D
+= 3
+~ Nitrates reach water mainly through agricultural runoff of fertilisers (1-B). Mercury comes mainly from industrial discharge, for example chlor-alkali plants and mining (2-A). Oil and grease come from marine shipping and spills (3-C), and plastic debris enters water through improper waste disposal (4-D).
+
+Q 53 | evs | Pollution & Waste Management
+Which radioactive isotope presents the greatest concern in nuclear power plant emissions?
+(1) Cesium-137
+(2) Iodine-131
+(3) Strontium-90
+(4) Tritium
+= 3
+~ APPSC's key is strontium-90, a long-lived (half-life about 29 years) beta emitter that behaves like calcium and is deposited in bone. In accident releases, however, iodine-131 (thyroid, short-lived) and cesium-137 are usually cited as the main concerns, so the question is arguable. (Official key; some sources differ.)
+
+Q 54 | evs | Pollution & Waste Management
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, decide which of the given conclusion(s) logically follow(s) from the statement.
+Statement: Nuclear accidents are the leading cause of radiation pollution.
+Conclusions:
+I: All radiation pollution stems from human activities.
+II: Radiation from natural sources like radon gas also contributes to pollution.
+(1) Only Conclusion I follows.
+(2) Only Conclusion II follows.
+(3) Both Conclusions I and II follow.
+(4) Neither Conclusions I nor II follows.
+= 2
+~ Conclusion I goes beyond the statement: calling nuclear accidents the "leading" cause does not say that all radiation pollution is human-made. Conclusion II is accepted because "leading" leaves room for other causes, and radon gas from rocks and soil is a major natural source of radiation exposure.
+
+Q 55 | evs | Pollution & Waste Management
+What is the term for the process by which excess nutrients enter water bodies?
+(1) Eutrophication
+(2) Sedimentation
+(3) Acidification
+(4) Nutrient cycling
+= 1
+~ Eutrophication is the enrichment of a water body with excess nutrients, mainly nitrates and phosphates from fertilisers and sewage, leading to algal blooms and oxygen depletion. Sedimentation is the settling of particles, acidification is a fall in pH, and nutrient cycling is the natural movement of nutrients through an ecosystem.
+
+Q 56 | evs | Pollution & Waste Management
+What is the primary mechanism of arsenic mobilisation from Fe-oxide in groundwater, leading to its increased concentration?
+(1) Oxidative dissolution
+(2) Reductive dissolution
+(3) Complexation
+(4) Chelation
+= 2
+~ In oxygen-poor aquifers, such as those of the Bengal delta, microbes decompose organic matter and use iron(III) oxyhydroxides as the electron acceptor. The iron oxides therefore undergo reductive dissolution and release the arsenic that was adsorbed on them into the groundwater. Under oxidising conditions iron stays as Fe(III) oxide and arsenic remains bound.
+
+Q 57 | evs | Pollution & Waste Management
+Which compound is used as the catalyst in COD determination?
+(1) Silver sulphate
+(2) Mercuric sulphate
+(3) Copper sulphate
+(4) Zinc sulphate
+= 1
+~ In the dichromate reflux method for COD, silver sulphate is the catalyst that helps oxidise straight-chain aliphatic compounds, which otherwise resist oxidation. Mercuric sulphate is added for a different purpose, to bind chloride ions and stop them from interfering (Standard Methods).
+
+Q 58 | evs | Pollution & Waste Management
+What does Dissolved Oxygen (DO) in water indicate?
+(1) Level of microbial contamination
+(2) Availability of oxygen for aquatic organisms
+(3) Presence of heavy metals in water
+(4) Alkalinity of water
+= 2
+~ Dissolved oxygen is the amount of oxygen gas dissolved in water, so it shows whether enough oxygen is available for fish and other aquatic organisms (generally more than about 5 mg/L is needed). It is not a direct measure of microbial contamination, heavy metals or alkalinity, although low DO is often a sign of organic pollution.
+
+Q 59 | evs | Pollution & Waste Management
+Which of the following is a significant source of water pollution due to the release of heavy metals?
+(1) Agricultural activity
+(2) Smelting and refining in mining
+(3) Dam functioning
+(4) Urban effluent system
+= 2
+~ Smelting and refining of ores release metals such as lead, zinc, copper, cadmium and arsenic in effluents and tailings that reach water bodies. Agricultural runoff mainly brings nutrients and pesticides, and dams and ordinary urban effluent are not the typical major sources of heavy metals.
+
+Q 60 | evs | Pollution & Waste Management
+Which of the following options is the appropriate conclusion to the below mentioned statement?
+The toxicity of heavy metals can be reduced through chemical treatment.
+(1) Chemical treatment derivatises and reduces heavy metal toxicity.
+(2) Chemical treatment can immobilise heavy metals in soil and water
+(3) Heavy metals cannot be removed from the environment
+(4) Chemical treatment volatalises heavy metals
+= 1,2
+~ APPSC found the question ambiguous and gave full marks for either option 1 or option 2. Chemical treatment can change a metal into a less toxic form, for example reduction of Cr(VI) to Cr(III) (option 1), and it can immobilise metals by precipitation or stabilisation in soil and water (option 2). Option 3 is wrong because metals can be removed by precipitation, adsorption or ion exchange, and option 4 is wrong because most metals do not volatilise.
+
+Q 61 | evs | Pollution & Waste Management
+This question consists of a statement, followed by a conclusion. You are required to determine whether or not the given conclusion logically follows from the statement.
+Statement: 4-Aminoantipyrine method is used for phenol determination.
+Conclusion: The method can detect all phenolic compounds equally.
+(1) Statement is true, conclusion is false
+(2) Both statement and conclusion are false
+(3) Statement is false, conclusion is true
+(4) Both statement and conclusion are true but are not related
+= 1
+~ The 4-aminoantipyrine method is the standard colorimetric method for phenols, so the statement is true. The conclusion is false, because the reagent does not respond equally to all phenolic compounds: some para-substituted phenols (for example with alkyl, aryl or nitro groups) react poorly or not at all, so results are expressed as phenol equivalents.
+
+Q 62 | evs | Pollution & Waste Management
+Which method is primarily used to determine the hardness of water?
+(1) Gravimetric analysis
+(2) EDTA titration
+(3) Spectrophotometry
+(4) Atomic absorption spectroscopy
+= 2
+~ Total hardness (calcium plus magnesium) is determined by complexometric titration with EDTA at pH 10 using Eriochrome Black T as the indicator; the colour changes from wine red to blue at the end point. Gravimetry, spectrophotometry and atomic absorption can measure individual metals but are not the standard routine method for hardness.
+
+Q 63 | evs | Pollution & Waste Management
+Why are high phosphate levels in water bodies a concern?
+(1) Because they promote the growth of pathogenic bacteria
+(2) Because they lead to eutrophication and algal blooms
+(3) Because they increase the water's salinity
+(4) Because they enhance the water's oxygen-carrying capacity
+= 2
+~ Phosphate is often the limiting nutrient in fresh water, so high levels from detergents, fertilisers and sewage cause eutrophication and algal blooms, and the dying algae use up dissolved oxygen as they decompose. Phosphate does not raise salinity, and it reduces rather than enhances the oxygen available.
+
+Q 64 | evs | Pollution & Waste Management
+Select the option that is correct regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Oil-spills severely affect aquatic life.
+Reason (R): Oil reduces oxygen availability in water.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 1
+~ An oil film on the surface cuts gas exchange and light penetration, and the breakdown of oil consumes oxygen, so dissolved oxygen falls and aquatic organisms suffer. Oil also coats and poisons birds and fish directly. The reduced oxygen availability is one main reason for the damage, so R is accepted as the explanation of A.
+
+Q 65 | evs | Pollution & Waste Management
+What is the primary mechanism of mercury methylation in aquatic environments, leading to the formation of methylmercury?
+(1) Abiotic methylation through interaction with sediments
+(2) Biotic methylation through interaction with sulphate-reducing bacteria
+(3) Photolytic methylation through interaction with sunlight
+(4) Hydrolytic methylation through interaction with water molecules
+= 2
+~ Inorganic mercury is converted into toxic methylmercury mainly by anaerobic microbes in sediments, chiefly sulphate-reducing bacteria (and also iron-reducing bacteria and methanogens that carry the hgcAB genes). It is a biological process; sunlight tends to break methylmercury down instead (photodemethylation).
+
+Q 66 | evs | Pollution & Waste Management
+Which of the following groundwater chemical processes is responsible for the formation of hard water?
+(1) Calcite dissolution
+(2) Halite dissolution
+(3) Fluoride dissolution
+(4) Silicate dissolution
+= 1
+~ Hardness is caused by dissolved calcium and magnesium. Dissolution of calcite (CaCO3), helped by carbonic acid, releases Ca2+ and bicarbonate into groundwater and makes it hard. Halite (NaCl) dissolution adds sodium and chloride (salinity), fluoride minerals add fluoride, and silicate weathering mainly adds silica, sodium and potassium.
+
+Q 67 | evs | Pollution & Waste Management
+What is the primary interference in Winkler's method for Dissolved Oxygen (DO) determination?
+(1) Nitrite presence
+(2) High turbidity
+(3) Dissolved iron
+(4) Organic matter
+= 1
+~ In the Winkler (iodometric) method nitrite is the main interference, because in acid it oxidises iodide to iodine and so gives a falsely high DO; the azide modification removes it. Ferrous iron, suspended solids and organic matter can interfere too, but they are handled by other modifications (permanganate, alum flocculation) and are less commonly cited as the primary interference.
+
+Q 68 | evs | Pollution & Waste Management
+What is the primary impact of heavy metal contamination on aquatic ecosystems?
+(1) Enhanced microbial activity
+(2) Biomagnification in the food chain
+(3) Improved water clarity
+(4) Increased oxygen levels
+= 2
+~ Heavy metals are not degraded, so they accumulate in organisms and become more concentrated at each higher trophic level, which is biomagnification (for example mercury in fish, as in Minamata disease). They tend to reduce, not enhance, microbial activity, and they do not improve clarity or oxygen levels.
+
+Q 69 | evs | Pollution & Waste Management
+Which of the following options is an appropriate conclusion for the following statement?
+The concentration of nitrates in groundwater has increased due to excessive use of fertilisers
+(1) The groundwater is safe for human consumption.
+(2) The groundwater is not safe for human consumption.
+(3) The concentration of nitrates will have no impact on human health.
+(4) The concentration of nitrates will only affect aquatic life.
+= 2
+~ Nitrate above the BIS drinking-water limit of 45 mg/L (WHO guideline 50 mg/L) can cause methaemoglobinaemia, or "blue baby syndrome", in infants. So rising nitrate in groundwater makes the water unsafe to drink without treatment. Options 3 and 4 are wrong because nitrate clearly affects human health, not only aquatic life.
+
+Q 70 | evs | Pollution & Waste Management
+What is the significance of measuring total suspended solids (TSS) in water?
+(1) It indicates microbial activity in water.
+(2) It measures organic matter decomposition.
+(3) It assesses clarity and sediment load.
+(4) It determines water temperature.
+= 3
+~ Total suspended solids are the particles (silt, clay, algae, organic debris) that do not dissolve and are retained by a filter. Measuring TSS therefore shows how cloudy the water is and how much sediment it carries. It is not a measure of microbial activity, decomposition or temperature.
+
+Q 71 | evs | Pollution & Waste Management
+Which of the following is a method for controlling eutrophication?
+(1) Adding nutrients to the water
+(2) Introducing invasive species
+(3) Reducing nutrient runoff from agricultural fields
+(4) Increasing water circulation
+= 3
+~ Eutrophication is controlled mainly by cutting the supply of nitrogen and phosphorus, for example by reducing fertiliser runoff from farm fields, treating sewage and restricting phosphate detergents. Adding nutrients or invasive species would make the problem worse. Increased circulation or aeration can ease some symptoms in lakes but does not deal with the nutrient source.
+
+Q 72 | evs | Pollution & Waste Management
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, decide which of the given conclusion(s) logically follow(s) from the statement.
+Statement: High levels of fluoride in drinking water can have adverse health effects.
+Conclusions:
+I: Excessive fluoride intake causes dental fluorosis.
+II: Fluoride contamination in water is always due to human activities.
+(1) Only Conclusion I follows.
+(2) Only Conclusion II follows.
+(3) Both Conclusions I and II follow.
+(4) Neither Conclusion I nor II follows.
+= 1
+~ Excess fluoride (above the BIS acceptable limit of 1.0 mg/L and the 1.5 mg/L permissible limit) causes dental fluorosis, and skeletal fluorosis with prolonged high intake, so Conclusion I follows. Conclusion II is wrong because fluoride in groundwater is often natural, from fluoride-bearing rocks such as granite, as in parts of Andhra Pradesh and Telangana.
+
+Q 73 | evs | Pollution & Waste Management
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, decide which of the given conclusion(s) logically follow(s) from the statement.
+Statement: Water discoloration can indicate contamination by organic or inorganic substances.
+Conclusions:
+I: Greenish water always suggests the presence of algae.
+II: Dark brown water indicates high levels of iron or organic pollutants.
+(1) Only Conclusion I follows.
+(2) Only Conclusion II follows.
+(3) Both Conclusions I and II follow.
+(4) Neither Conclusion I nor II follows.
+= 2
+~ Dark brown water commonly results from dissolved or oxidised iron or from organic matter such as humic and tannin compounds, so Conclusion II follows from the statement. Conclusion I does not follow because of the word "always": green water can also be caused by other substances, such as copper compounds, and not only by algae.
+
+Q 74 | evs | Pollution & Waste Management
+How is turbidity commonly measured in water samples?
+(1) Using a colorimeter
+(2) Using a Nephelometer
+(3) By evaporation and residue analysis
+(4) By measuring pH
+= 2
+~ Turbidity, the cloudiness caused by suspended particles, is commonly measured with a nephelometer (turbidimeter), which records light scattered at 90 degrees from the sample and reports it in Nephelometric Turbidity Units (NTU). A colorimeter measures light absorbed by coloured solutions, and evaporation and residue analysis measures solids, not turbidity.
+
+Q 75 | evs | Pollution & Waste Management
+Match the column A (types of water pollutants) and their characters in column B.
+Column A (Types of water pollutants) | Column B (Characteristics)
+1. Heavy metals | a. Eutrophication and harmful algal blooms
+2. Pesticides | b. Bioaccumulation and biomagnification
+3. Nutrient pollutants | c. Groundwater contamination and soil pollution
+4. Volatile organic compounds (VOCs) | d. Aquatic toxicity and habitat destruction
+(1) 1-b; 2-d; 3-a; 4-c
+(2) 1-b; 2-d; 3-c; 4-a
+(3) 1-d; 2-c; 3-a; 4-b
+(4) 1-b; 2-a; 3-d; 4-c
+= 1
+~ Heavy metals persist and build up in organisms, causing bioaccumulation and biomagnification (1-b). Pesticides cause aquatic toxicity and habitat destruction (2-d). Nutrient pollutants such as nitrate and phosphate cause eutrophication and harmful algal blooms (3-a), and VOCs such as solvents and petroleum products are linked to groundwater and soil contamination (4-c).
+
+Q 76 | evs | Pollution & Waste Management
+Which method is used for analysing fluoride concentration in air samples?
+(1) X-ray diffraction
+(2) Ion-selective electrode
+(3) UV-visible spectroscopy
+(4) Gas chromatography
+= 2
+~ Fluoride in air is collected in an alkaline absorbing solution or on a treated filter, and the dissolved fluoride is then measured directly with a fluoride ion-selective electrode (a potentiometric method). X-ray diffraction identifies crystalline solids and gas chromatography separates volatile organic compounds, so neither measures dissolved fluoride. UV-visible spectrophotometry (SPADNS colour method) can also be used for fluoride, but the electrode is the standard direct method.
+
+Q 77 | evs | Pollution & Waste Management
+Which of the following pollutants is primarily formed due to incomplete combustion in vehicle engines?
+(1) Nitrogen oxides (NOx)
+(2) Carbon monoxide (CO)
+(3) Hydrocarbons (HCs)
+(4) Particulate matter (PM)
+= 2
+~ Carbon monoxide forms when the carbon in the fuel burns with too little oxygen (a rich air-fuel mixture), so it is the classic product of incomplete combustion. Nitrogen oxides form under the opposite conditions, when high combustion temperatures make atmospheric nitrogen and oxygen combine. Unburnt hydrocarbons and soot are also partly products of incomplete combustion, but CO is the pollutant most directly identified with it.
+
+Q 78 | evs | Pollution & Waste Management
+What does the Ringelmann Smoke Chart help to determine in relation to emissions?
+(1) The speed of smoke rising
+(2) The colour of smoke
+(3) The density of smoke
+(4) The temperature of smoke
+= 3
+~ The Ringelmann chart is a set of shade cards (No. 0 to 5, from clear to solid black) that an observer holds at arm's length and compares with the smoke from a chimney. The matching shade number gives the density (opacity) of the smoke, with No. 1 about 20% and No. 4 about 80%. It does not measure the speed or temperature of the plume.
+
+Q 79 | evs | Pollution & Waste Management
+Match the following.
+Type of Pollutant | Source of Pollutant
+A. Biological Pollutants | 1. Cigarette Smoke
+B. Chemical Pollutants | 2. Air Fresheners
+C. Particulate Pollutants | 3. Wood Stoves
+D. Combustion Products | 4. Mold and Dust
+E. Volatile Organic Compounds (VOCs) | 5. Cleaning Products
+(1) A - 4; B - 5; C - 1; D - 3; E - 2
+(2) A - 4; B - 1; C - 3; D - 2; E - 5
+(3) A - 3; B - 2; C - 4; D - 1; E - 5
+(4) A - 2; B - 4; C - 1; D - 3; E - 5
+= 1
+~ Mold and dust carry biological material (spores, allergens), cleaning products release chemical pollutants, and cigarette smoke is rich in fine particles. Wood stoves give combustion products (CO, NOx, soot), and air fresheners emit volatile organic compounds. This gives A-4, B-5, C-1, D-3, E-2.
+
+Q 80 | evs | Pollution & Waste Management
+Read the given statement and conclusions carefully. Without making any assumptions, decide which of the given conclusions logically follow(s) from the statements.
+Statement:
+In a venturi scrubber, the reduced-pressure region helps cool the exhaust gas and facilitates the condensation of vapour from the liquid initially evaporated in the hot waste gas.
+Conclusions:
+I. The cooling effect in a venturi scrubber contributes to better scrubbing efficiency.
+II. Condensation in a venturi scrubber reduces the scrubbing efficiency.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Neither conclusion I nor II follows.
+(4) Both conclusions I and II follow.
+= 1
+~ In a venturi scrubber the gas is accelerated through a narrow throat, so its pressure falls and it cools. The vapour then condenses on the dust particles, making them larger and heavier and so easier to capture by the scrubbing liquid, which supports conclusion I. Conclusion II says the opposite, and nothing in the statement suggests that condensation lowers efficiency.
+
+Q 81 | evs | Pollution & Waste Management
+Which absorption technique is the most commonly used for the quantitative analysis of SO₂ in air?
+(1) Gas chromatography
+(2) UV-Vis spectroscopy
+(3) Infrared spectroscopy
+(4) Thermal conductivity detector
+= 2
+~ SO₂ in ambient air is usually absorbed in a liquid (tetrachloromercurate in the improved West-Gaeke method, listed in the CPCB National Ambient Air Quality Standards) and the coloured pararosaniline complex is measured by UV-visible spectrophotometry. Gas chromatography and a thermal conductivity detector are separation and detection tools not normally used for routine SO₂ monitoring, and infrared absorption is mainly used for CO and CO2.
+
+Q 82 | evs | Pollution & Waste Management
+Which of the following is a significant challenge in reducing particulate matter emissions from diesel vehicles despite the use of particulate filters?
+(1) Increased use of gasoline as fuel
+(2) High sulphur content in diesel fuel
+(3) Lack of efficient combustion technology
+(4) Increased engine wear due to cleaner fuels
+= 2
+~ Sulphur in diesel burns to SO2, which forms fine sulphate particles in the exhaust and poisons the oxidation catalysts that work together with the filter, so emissions stay high even with a particulate filter. This is why ultra-low-sulphur diesel (10 ppm in Bharat Stage VI) is required. Using more gasoline is not a cause, and modern combustion technology is available.
+
+Q 83 | evs | Pollution & Waste Management
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): High volume sampling is an effective technique for collecting particulate matter in the atmosphere.
+Reason (R): High volume samplers can filter large amounts of air, trapping particulate matter in the process, which is ideal for environmental studies.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, and R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 1
+~ A high volume sampler draws about 1.1 to 1.7 cubic metres of air per minute through a glass-fibre filter, and the dust collected is weighed (gravimetric method). Because it handles such a large air volume, enough particulate matter is trapped for mass and chemical analysis, so R explains why the technique is effective (A).
+
+Q 84 | evs | Pollution & Waste Management
+Read the given statement and conclusions carefully. Without making any assumptions, decide which of the given conclusions logically follow(s) from the statements.
+Statement:
+Studies have shown that poor ventilation in homes, combined with indoor activities such as cooking with solid fuels or smoking, leads to the accumulation of respirable particulates in indoor air. This has been linked to a significant increase in respiratory health issues, especially in children.
+Conclusions:
+I. Improving ventilation in homes can help reduce the concentration of harmful particulates.
+II. Children living in poorly ventilated homes are at higher risk of developing respiratory problems due to indoor air pollution.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Neither conclusion I nor II follows.
+(4) Both conclusion I and II follows.
+= 4
+~ The statement says poor ventilation causes particulates to accumulate, so better ventilation reduces their concentration (conclusion I). It also links the accumulation to more respiratory illness, especially in children, which is exactly conclusion II. Both are direct readings of the statement.
+
+Q 85 | evs | Pollution & Waste Management
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Proper design of building materials can help mitigate indoor air pollution.
+Reason (R): Materials like low-VOC paints, non-toxic insulation and natural flooring can reduce the release of harmful substances indoors.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, and R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 1
+~ Many building materials give off volatile organic compounds and other harmful substances indoors. Choosing low-VOC paints, non-toxic insulation and natural flooring cuts these emissions at source, which is exactly how material selection mitigates indoor air pollution, so R explains A.
+
+Q 86 | evs | Pollution & Waste Management
+What is one of the major issues when using impingers for particle analysis?
+(1) They do not allow size segregation.
+(2) They may cause the break-up of particles into smaller pieces.
+(3) They do not collect enough large particles.
+(4) They have a low retention efficiency.
+= 2
+~ In an impinger, air is forced through a jet at high velocity into a liquid, and the violent impact can shatter agglomerates and break particles into smaller pieces. This changes the size distribution that the analysis is meant to measure. Impingers collect large particles well, so option 3 is wrong.
+
+Q 87 | evs | Pollution & Waste Management
+Read the given statement and conclusions carefully. Without making any assumptions, decide which of the given conclusions logically follow(s) from the statements.
+Statement:
+Emission monitoring systems rely on real-time sensor data to detect pollutant levels. However, false positives or inaccuracies may arise due to sensor malfunctions or interference from external factors.
+Conclusions:
+I. Sensor accuracy is critical for the reliability of emission monitoring systems.
+II. Emission monitoring systems cannot detect pollutants if external factors interfere with sensor readings.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Neither conclusion I nor II follows.
+(4) Both conclusions I and II follow.
+= 1
+~ The systems depend on sensor data and errors in that data produce false results, so sensor accuracy is critical to their reliability (conclusion I). The statement only says interference may cause inaccuracies, not that detection becomes impossible, so conclusion II goes too far.
+
+Q 88 | evs | Pollution & Waste Management
+Read the given statement and conclusions carefully. Without making any assumptions, decide which of the given conclusions logically follow(s) from the statements.
+Statement:
+The analysis of particulate matter in automobile emissions involves collecting samples using various devices like filter samplers and gravimetric techniques. These methods help quantify the mass and composition of the particulate matter, providing insights into the environmental impact of different types of vehicles.
+Conclusions:
+I. Filter samplers and gravimetric techniques are essential for quantifying particulate matter from automobile emissions.
+II. The analysis of particulate matter has no significance in understanding the environmental impact of automobile emissions.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Neither conclusion I nor II follows.
+(4) Both conclusions I and II follow.
+= 1
+~ The statement presents filter sampling and gravimetric methods as the means of quantifying the mass and composition of particulate matter, which supports conclusion I. Conclusion II directly contradicts the statement, which says the analysis gives insight into the environmental impact of vehicles.
+
+Q 89 | evs | Pollution & Waste Management
+What is the primary reason for high indoor air pollution levels when unprocessed solid fuels are used, even in well-ventilated spaces?
+(1) Poor combustion efficiency and high emission factors
+(2) Lack of awareness regarding the dangers of indoor pollution
+(3) Limited availability of alternative fuel sources
+(4) Inefficient cooking and heating systems
+= 1
+~ Unprocessed solid fuels such as firewood, dung, crop residue and coal burn incompletely in simple stoves, giving high emission factors (kg of pollutant per kg of fuel) for particulates and carbon monoxide. Since the pollution comes from the fuel and its combustion itself, it stays high even with good ventilation. Awareness and fuel availability are social factors, not the physical cause.
+
+Q 90 | evs | Environmental Assessment & Planning
+What is the term for the process of analysing the environmental impacts of forest management practices?
+(1) Environmental impact assessment
+(2) Forest ecology
+(3) Ecological agronomy
+(4) Sustainable forest management
+= 1
+~ Environmental impact assessment (EIA) is the systematic process of identifying, predicting and evaluating the environmental effects of a proposed activity before decisions are taken, and it can be applied to forest management operations. Sustainable forest management is the goal or management approach, not the analysis process, and forest ecology is the study of forest ecosystems.
+
+Q 91 | evs | Environmental Assessment & Planning
+What is the term for the process of urban decay and decline?
+(1) Urban blight
+(2) Urban renewal
+(3) Gentrification
+(4) Urbanisation
+= 1
+~ Urban blight is the deterioration of an urban area into decay, with abandoned buildings, neglected infrastructure and falling investment. Urban renewal is the opposite process of redevelopment, gentrification is the influx of wealthier residents into an older area, and urbanisation is the growth of the urban share of population.
+
+Q 92 | evs | Pollution & Waste Management
+What is the term for the process by which mining activities release heavy metals into the environment?
+(1) Leaching
+(2) Weathering
+(3) Erosion
+(4) Sedimentation
+= 1
+~ Water percolating through exposed ore, waste rock and tailings dissolves metals and carries them into soil and water, a process called leaching; it is made worse by acid mine drainage. Weathering is the natural breakdown of rock, erosion is the removal of solid material, and sedimentation is the settling of suspended solids.
+
+Q 93 | evs | Climate Change & Global Issues
+Which of the following gases contributes most significantly to global warming?
+(1) Oxygen (O2)
+(2) Carbon Dioxide (CO2)
+(3) Nitrogen (N2)
+(4) Argon (Ar)
+= 2
+~ Carbon dioxide absorbs outgoing infrared radiation and is the largest contributor to human-caused warming (IPCC). Oxygen, nitrogen and argon are not greenhouse gases because they do not absorb infrared radiation in the atmosphere.
+
+Q 94 | evs | Climate Change & Global Issues
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, decide which of the given conclusion(s) is/are correct.
+Statement: Climate change is causing shifts in species distributions, with many species moving toward the poles or higher elevations.
+Conclusions:
+I. Species are unable to adapt to climate change and are facing extinction.
+II. Some species are adapting to climate change by relocating to more suitable habitats.
+(1) Both Conclusions I and II are correct.
+(2) Only Conclusion 2 is correct.
+(3) Only Conclusion 1 is correct.
+(4) Neither Conclusion I nor II is correct.
+= 2
+~ The statement says many species are moving poleward or uphill, which is a way of tracking suitable climate, so conclusion II is supported. Conclusion I is too sweeping, because the statement does not say species cannot adapt or that they face extinction.
+
+Q 95 | evs | Pollution & Waste Management
+Which of the following industrial processes is responsible for the largest share of particulate matter emissions?
+(1) Steel production
+(2) Pulp and paper production
+(3) Mining and smelting
+(4) Cement production
+= 3,4
+~ Mining and smelting operations (drilling, blasting, crushing, haul-road dust, furnace fume) and cement production (raw-material grinding, kiln and clinker cooler) are both among the biggest industrial sources of particulate matter. APPSC treated the question as ambiguous and accepted either option 3 or 4. Steel and pulp and paper are significant sources but are not usually ranked at the top.
+
+Q 96 | evs | Climate Change & Global Issues
+Which of the following practices is most effective in restoring the global climate?
+(1) Increasing industrial emissions
+(2) Large-scale afforestation
+(3) Expanding urban areas
+(4) Utilising non-renewable energy sources
+= 2
+~ Growing new forests removes carbon dioxide from the air through photosynthesis and stores it in biomass and soil, so large-scale afforestation helps bring the climate back toward balance. The other three options raise greenhouse gas emissions or remove carbon sinks.
+
+Q 97 | evs | Climate Change & Global Issues
+Select the option that is correct regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Ocean acidification leads to the extinction of certain marine species.
+Reason (R): Acidification causes a complete depletion of oxygen in marine ecosystems.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 3
+~ Dissolved CO2 forms carbonic acid, which lowers ocean pH and the carbonate ions that corals, molluscs and some plankton need to build shells, so acidification can drive such species towards extinction (A is true). It does not cause a complete loss of oxygen; oxygen decline (deoxygenation) is a separate problem linked mainly to warming and nutrient pollution, so R is false.
+
+Q 98 | evs | Environmental Assessment & Planning
+Which parameter is commonly measured in aquatic environmental assessments?
+(1) Air particulate matter
+(2) Dissolved oxygen
+(3) Noise levels
+(4) Soil pH
+= 2
+~ Dissolved oxygen (DO) is a basic indicator of the health of a water body and is measured along with pH, BOD, turbidity and temperature in aquatic assessments. Air particulate matter, noise and soil pH belong to the air, noise and soil components of an assessment.
+
+Q 99 | evs | Environmental Assessment & Planning
+Match the column A for types of industrialisation with column B for its social impact.
+Column A (Types of industrialisation) | Column B (Social Impact)
+1. Capital-Intensive Industry | a. Increased opportunities for entrepreneurship and innovation
+2. Labor-Intensive Industry | b. Increased demand for skilled labour and education
+3. High-Tech Industry | c. Job creation and economic growth in rural areas
+4. Creative Industry | d. Increased income inequality and social stratification
+(1) 1-b; 2-a; 3-c; 4-d
+(2) 1-d; 2-a; 3-c; 4-b
+(3) 1-d; 2-c; 3-b; 4-a
+(4) 1-c; 2-b; 3-a; 4-d
+= 3
+~ Capital-intensive industry rewards owners of capital more than workers, widening income inequality (1-d). Labour-intensive industry creates many jobs and growth in rural areas (2-c), high-tech industry needs skilled workers and education (3-b), and creative industry supports entrepreneurship and innovation (4-a).
+
+Q 100 | evs | Environmental Assessment & Planning
+What is the term for the process of urban planning that prioritises community engagement?
+(1) Collaborative planning
+(2) Participatory planning
+(3) Inclusive planning
+(4) Sustainable planning
+= 2
+~ Participatory planning is the approach in which residents and other stakeholders take part directly in identifying problems and making planning decisions. Collaborative planning stresses consensus-building among stakeholder groups, inclusive planning stresses equity of access, and sustainable planning stresses long-term environmental balance.
+
+Q 101 | evs | Environmental Assessment & Planning
+Which of the following tools is commonly used to assess visual impacts in Environmental Impact Assessments (EIA)?
+(1) Geographic Information Systems (GIS)
+(2) Noise level meters
+(3) Water quality testing kits
+(4) Soil pH meters
+= 1
+~ Visual impact assessment uses GIS to map the area from which a project can be seen (viewshed or zone of visual influence) and to overlay it on settlements, roads and scenic areas. Noise meters, water quality kits and soil pH meters measure other environmental components, not visibility.
+
+Q 102 | evs | Environmental Assessment & Planning
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusion(s) logically follow(s) from the statements.
+Statement: Public participation is an essential component of environmental decision-making.
+Conclusions:
+I: It ensures transparency and accountability in environmental projects.
+II: Public involvement is mandatory for all environmental assessments globally.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Both conclusions I and II follow.
+(4) Neither conclusion I nor II follows.
+= 1
+~ If the public takes part in decisions, the process is open to scrutiny, which gives transparency and accountability, so conclusion I follows. The statement calls participation essential but says nothing about it being legally mandatory in every assessment worldwide, so conclusion II does not follow.
+
+Q 103 | evs | Environmental Assessment & Planning
+Match the key indicators of aquatic assessment (Column-I) with their associated impacts (Column-II).
+Column-I | Column-II
+1. pH levels | A. Affects survival of aquatic organisms
+2. Dissolved oxygen (DO) | B. Measures water body’s ability to support life
+3. Turbidity | C. Determines sediment and pollutant load
+4. Heavy metal presence | D. Indicates toxic contamination
+(1) 1-B, 2-A, 3-D, 4-C
+(2) 1-A, 2-B, 3-C, 4-D
+(3) 1-D, 2-C, 3-B, 4-A
+(4) 1-C, 2-D, 3-A, 4-B
+= 2
+~ Water that is too acidic or alkaline stresses or kills aquatic organisms (1-A). Dissolved oxygen shows whether the water can support life (2-B). Turbidity reflects the suspended sediment and pollutant load (3-C), and the presence of heavy metals indicates toxic contamination (4-D).
+
+Q 104 | evs | Climate Change & Global Issues
+Which of the following is an example of an indirect driver of environmental change?
+(1) Global warming
+(2) Pollution increase
+(3) Climate change
+(4) Economic inequality
+= 4
+~ In the Millennium Ecosystem Assessment framework, indirect drivers are underlying demographic, economic, social, political and cultural forces that work by changing the direct drivers. Global warming, pollution and climate change act physically on ecosystems and are direct drivers, whereas economic inequality is an indirect driver.
+
+Q 105 | evs | Climate Change & Global Issues
+Which ecosystem shows the earliest detectable response to climate change?
+(1) Alpine tundra
+(2) Coral reefs
+(3) Temperate forests
+(4) Grasslands
+= 1
+~ Cold, high-elevation ecosystems such as alpine tundra are regarded as sentinels of climate change because small rises in temperature quickly shift snow cover, treelines and the upslope movement of species. Temperate forests and grasslands change more slowly, though coral reefs also respond quickly through bleaching. (Official key; some sources differ.)
+
+Q 106 | evs | Ecology & Ecosystems
+Which statistical method best accounts for detection probability in animal population estimates?
+(1) Simple random sampling
+(2) Mark-recapture
+(3) Distance sampling
+(4) Stratified sampling
+= 3
+~ In distance sampling, observers record the distance to each animal seen along a transect or from a point, and a detection function fitted to these distances corrects for animals that were present but missed. Simple random and stratified sampling are only ways of choosing sample units and do not model detection. Mark-recapture also estimates capture probability, so it is a tempting alternative. (Official key; some sources differ.)
+
+Q 107 | evs | Pollution & Waste Management
+Which gas is the primary cause of acid rain?
+(1) Carbon monoxide
+(2) Sulphur dioxide
+(3) Methane
+(4) Ozone
+= 2
+~ Sulphur dioxide, mainly from burning coal and from smelting, is oxidised in the atmosphere to sulphuric acid, which with nitric acid from nitrogen oxides makes rain more acidic than the natural pH of about 5.6. Carbon monoxide, methane and ozone are not the main acid-forming gases.
+
+Q 108 | evs | Environmental Assessment & Planning
+Which of the following is the most prominent consequence of urbanisation on land use?
+(1) Increased green spaces
+(2) Decreased impervious surfaces
+(3) Reduced urban heat island effect
+(4) Increased land fragmentation
+= 4
+~ As cities expand, continuous farmland, forest and open land is broken into smaller patches by roads and built-up areas, which is land fragmentation. Urbanisation also increases impervious surfaces and the urban heat island effect and reduces green space, so options 1 to 3 state the opposite of what happens.
+
+Q 109 | evs | Environmental Laws & Policy
+What is the term for the process of certifying sustainably harvested forest products?
+(1) Forest certification
+(2) Chain of custody
+(3) Eco-labeling
+(4) Sustainable forest management
+= 1
+~ Forest certification is the independent, third-party audit of a forest against a sustainability standard (for example FSC or PEFC), which allows its products to be sold as sustainably harvested. Chain of custody is the tracking of certified wood through the supply chain, eco-labelling is the label shown on the product, and sustainable forest management is the standard being certified.
+
+Q 110 | evs | Natural Resources
+What is the primary purpose of a stilling basin in a dam?
+(1) To reduce the pressure on the dam
+(2) To increase the water level upstream
+(3) To dissipate the kinetic energy of the water
+(4) To improve the water quality downstream
+= 3
+~ A stilling basin is a lined concrete basin at the foot of a spillway or outlet where a hydraulic jump forms. The jump destroys much of the kinetic energy of the fast-flowing water, which protects the downstream riverbed and the dam toe from scour.
+
+Q 111 | evs | Climate Change & Global Issues
+This question consists of an Assertion (A) and a Reason (R). Carefully analyse the two statements and select the correct option.
+(A): Arctic ice restoration is considered a critical climate intervention strategy.
+(R): Arctic ice loss accelerates global warming through positive feedback loops.
+(1) A is correct but R is incorrect.
+(2) Both A and R are correct but R does not explain A.
+(3) Both A and R are correct, and R explains A.
+(4) Both A and R are incorrect.
+= 2
+~ Both statements are true: loss of reflective sea ice exposes darker water that absorbs more heat (the ice-albedo feedback), and restoring Arctic ice is discussed as a possible climate intervention. APPSC's key is option 2, which treats R as a true statement that does not by itself explain A; the more common reading is that the feedback is the reason restoration matters (option 3). (Official key; some sources differ.)
+
+Q 112 | evs | Environmental Assessment & Planning
+What is the most effective stage for incorporating public participation in EIA?
+(1) Post-project monitoring
+(2) Impact prediction
+(3) Mitigation planning
+(4) Scoping phase
+= 4
+~ Scoping is the early stage in which the key issues and the terms of reference for the EIA are decided, so public concerns raised at this point can shape the whole study. Participation at later stages such as prediction, mitigation planning or post-project monitoring can only influence work that is already designed.
+
+Q 113 | evs | Climate Change & Global Issues
+Which of the following is a direct consequence of ocean acidification?
+(1) Increased oxygen content in oceans
+(2) Coral bleaching and reduced calcium carbonate availability
+(3) Enhanced growth of phytoplankton
+(4) Increased salinity in oceans
+= 2
+~ As the ocean absorbs more CO2, pH falls and carbonate ions become scarcer, so corals, shellfish and other calcifiers find it harder to build calcium carbonate skeletons and shells, and reefs are damaged. Bleaching itself is driven mainly by warming, but this is the only option that mentions the reduced carbonate availability caused by acidification. Acidification does not raise oxygen, boost phytoplankton growth or change salinity.
+
+Q 114 | evs | Climate Change & Global Issues
+Match the impacts of climate change (Column-I) with their corresponding effects (Column-II).
+Column-I | Column-II
+1. Melting glaciers | A. Rise in sea levels
+2. Extreme weather | B. Increased frequency of storms
+3. Ocean warming | C. Coral bleaching
+4. Deforestation | D. Loss of biodiversity
+(1) 1-A, 2-B, 3-C, 4-D
+(2) 1-B, 2-C, 3-A, 4-D
+(3) 1-A, 2-D, 3-B, 4-C
+(4) 1-C, 2-A, 3-D, 4-B
+= 1
+~ Meltwater from glaciers and ice sheets adds to the sea, so melting glaciers cause a rise in sea levels (1-A). Extreme weather appears as more frequent storms (2-B), and warmer seawater stresses corals and causes bleaching (3-C). Deforestation destroys habitat and so reduces biodiversity (4-D).
+
+Q 115 | evs | Environmental Assessment & Planning
+Which aspect is typically assessed in a plant survey conducted during an EIA?
+(1) Socioeconomic benefits of local flora
+(2) The medicinal value of plants in the area
+(3) Species composition and vulnerability to project activities
+(4) Carbon content in deforested areas
+= 3
+~ A plant survey in an EIA records which species occur (composition and abundance), including rare, endangered or threatened ones, and judges how clearing, construction or pollution from the project could affect them. Socioeconomic and medicinal uses or carbon content are side topics, not the main aim of the survey.
+
+Q 116 | evs | Environmental Assessment & Planning
+Which factor is typically considered in the economic environment assessment of an EIA?
+(1) Impact of project activities on global stock markets
+(2) Resource dependency and income generation for local communities
+(3) Technological advancements introduced by the project
+(4) Long-term inflation trends
+= 2
+~ The economic (socio-economic) part of an EIA looks at how the project will affect the livelihoods of the people around it, such as their dependence on local land, forest and water resources and the income and jobs generated. Stock markets and inflation are macro-economic matters outside the scope of a project-level assessment.
+
+Q 117 | evs | Climate Change & Global Issues
+Increasing greenhouse gas emissions directly lead to rising global temperatures.
+Which of the following conclusions best reflects/supports this statement?
+(1) Greenhouse gases have no role in temperature regulation.
+(2) Reducing greenhouse gases will stabilise global temperatures.
+(3) Greenhouse gases only affect polar regions.
+(4) Emissions do not impact the climate globally.
+= 2
+~ If more greenhouse gases raise temperatures, then cutting them should halt the rise, which is the logical consequence of the statement. Options 1, 3 and 4 deny or limit the role of greenhouse gases and so contradict it.
+
+Q 118 | evs | Environmental Assessment & Planning
+What is the primary objective of physical environment assessment in an EIA (Environmental Impact Assessment)?
+(1) Assessing biodiversity conservation strategies
+(2) Measuring the impact of human activities on soil, air, and water
+(3) Determining economic costs of environmental policies
+(4) Analysing the political aspects of environmental decisions
+= 2
+~ The physical environment component of an EIA covers the non-living parts of the surroundings, namely soil, air, water and noise, and measures how the project's activities will change them. Biodiversity belongs to the biological component, and economic and political aspects belong to the socio-economic part.
+
+Q 119 | evs | Environmental Assessment & Planning
+What is the primary purpose of aquatic environmental impact assessment?
+(1) To improve air quality
+(2) To assess water pollution levels
+(3) To reduce noise pollution
+(4) To monitor soil erosion
+= 2
+~ An aquatic impact assessment studies the quality of rivers, lakes, wetlands or coastal water and how a project may pollute or otherwise change it, using parameters such as DO, BOD, pH and turbidity. Air quality, noise and soil erosion are covered by other components of the assessment.
+
+Q 120 | evs | Environmental Assessment & Planning
+Match the column A (types of urbanization) with column B (environmental impacts).
+Column A (Types of urbanization | Column B (Environmental Impact)
+1. Urban Sprawl | a. Improved air quality and reduced traffic congestion
+2. Compact City | b. Displacement of low-income communities and increased social inequality
+3. Gentrification | c. Reduced energy consumption and increased green spaces
+4. Urban Renewal | d. Increased energy consumption and greenhouse gas emissions
+(1) 1-d; 2-c; 3-b; 4-a
+(2) 1-d; 2-b; 3-a; 4-c
+(3) 1-c; 2-d; 3-b; 4-a
+(4) 1-b; 2-c; 3-a; 4-d
+= 1
+~ Low-density urban sprawl means long car trips and larger buildings, so more energy use and greenhouse gas emissions (1-d). Compact cities cut energy use and can keep green space (2-c), gentrification displaces poorer residents (3-b), and renewal of older areas can improve air quality and ease congestion (4-a).
+
+Q 121 | evs | Climate Change & Global Issues
+What catalytic species is most effective in stratospheric ozone destruction?
+(1) Nitrogen dioxide
+(2) Chlorine monoxide
+(3) Hydroxyl radical
+(4) Bromine monoxide
+= 2
+~ In the stratosphere, chlorine released from CFCs destroys ozone in a catalytic cycle (Cl + O3 gives ClO + O2, then ClO + O gives Cl + O2), so the Cl/ClO pair is the main chain-carrying species. Bromine is more effective per atom but far less abundant, and NO2 and OH play smaller roles. (Official key; some sources differ.)
+
+Q 122 | evs | Pollution & Waste Management
+This question consists of an Assertion (A) and a Reason (R). Carefully analyse the two statements and select the correct option.
+(A): Acid rain damages aquatic ecosystems and buildings.
+(R): Acid rain is primarily caused by the deposition of sulphur dioxide (SO₂) and nitrogen oxides (NOₓ).
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, and R is true.
+= 1
+~ SO2 and NOx are converted in the air to sulphuric and nitric acids, which fall as acid deposition. These acids lower the pH of lakes and streams, harming fish and other aquatic life, and corrode limestone, marble and metal in buildings, so R explains A.
+
+Q 123 | evs | Climate Change & Global Issues
+Which chemical group is primarily responsible for the depletion of the ozone layer?
+(1) Chlorofluorocarbons (CFCs)
+(2) Carbon dioxide
+(3) Methane
+(4) Nitrogen oxides
+= 1
+~ CFCs are stable enough to reach the stratosphere, where ultraviolet light splits off chlorine atoms that destroy ozone catalytically. They were the main target of the Montreal Protocol (1987). Carbon dioxide and methane are greenhouse gases and nitrogen oxides play only a smaller role.
+
+Q 124 | evs | Environmental Assessment & Planning
+Match the steps in plant survey methodology (Column-I) with their description (Column-II).
+Column-I | Column-II
+1. Site reconnaissance | A. Preliminary survey of the project site
+2. Species documentation | B. Cataloguing plant species and locations
+3. Habitat assessment | C. Analysing ecosystem structure and roles
+4. Data analysis | D. Deriving insights from collected data
+(1) 1-A, 2-B, 3-C, 4-D
+(2) 1-D, 2-A, 3-B, 4-C
+(3) 1-C, 2-D, 3-A, 4-B
+(4) 1-B, 2-C, 3-D, 4-A
+= 1
+~ A plant survey begins with a reconnaissance visit to view the project site (1-A), then lists the species found and where they occur (2-B). Next the habitat is assessed for ecosystem structure and the role of species (3-C), and finally the collected data are analysed to draw conclusions (4-D).
+
+Q 125 | evs | Climate Change & Global Issues
+What is the primary driver of global climate change?
+(1) Volcanic eruptions
+(2) Greenhouse gases
+(3) Ocean currents
+(4) Solar flares
+= 2
+~ The IPCC concludes that the build-up of greenhouse gases (carbon dioxide, methane, nitrous oxide) from human activities is the dominant cause of the warming seen since the mid-20th century. Volcanic eruptions, ocean currents and solar variability cause natural, mostly short-term or regional, variations.
+
+Q 126 | evs | Climate Change & Global Issues
+What is the term for the process by which industrial activities alter the global water cycle?
+(1) Evapotranspiration
+(2) Precipitation
+(3) Urban hydrology
+(4) Hydrologic change
+= 4
+~ Hydrologic change means the alteration of natural flow and water-cycle processes by human activity, such as dams, water abstraction, land-use change and urbanisation. Evapotranspiration and precipitation are natural parts of the water cycle, and urban hydrology is the study of water in cities only.
+
+Q 127 | evs | Natural Resources
+Which of the following types of turbines is most suitable for a low-head dam?
+(1) Impulse turbine
+(2) Reaction turbine
+(3) Kaplan turbine
+(4) Francis turbine
+= 2
+~ Impulse turbines such as the Pelton wheel are used for high heads, while reaction turbines run fully submerged and suit low and medium heads with large flows. Kaplan (propeller) and Francis turbines are both reaction turbines, and the Kaplan is the type usually named for very low heads, but APPSC keyed the general class, reaction turbine. (Official key; some sources differ.)
+
+Q 128 | evs | Environmental Assessment & Planning
+Which technique is most effective for evaluating landscape character changes?
+(1) Zone of visual influence mapping
+(2) Photomontage analysis
+(3) Geographic information system overlay
+(4) Viewshed analysis
+= 3
+~ A GIS overlay stacks maps of land cover, land use, field patterns and other landscape elements from different dates (or with and without the project) so that changes in the character of the landscape can be measured. Zone of visual influence, viewshed and photomontage deal mainly with what can be seen of the project, not with change in landscape character as a whole.
+
+Q 129 | evs | Climate Change & Global Issues
+Match the following sources with their role in ozone depletion.
+Source | Effect
+A) CFCs | 1) Release(s) bromine atoms affecting ozone
+B) Halons | 2) Destroy(s) ozone molecules in the stratosphere
+C) Nitrous oxide (N2O) | 3) Persistent ozone-depleting chemical
+D) Carbon tetrachloride | 4) Contributes to ozone thinning
+(1) A-1, B-2, C-3, D-4
+(2) A-3, B-4, C-1, D-2
+(3) A-2, B-1, C-4, D-3
+(4) A-4, B-3, C-2, D-1
+= 3
+~ CFCs release chlorine that destroys ozone in the stratosphere (A-2), and halons contain bromine and release bromine atoms (B-1). Nitrous oxide gives nitrogen oxides in the stratosphere and so contributes to ozone thinning (C-4), and carbon tetrachloride is a long-lived ozone-depleting substance (D-3).
+
+Q 130 | evs | Pollution & Waste Management
+Which of the following best describes the focus of ecotoxicology?
+(1) Toxicity effects on individual organisms
+(2) Industrial and human health toxicology
+(3) Toxicity effects on natural ecosystems and nontarget species
+(4) Toxicology related to domestic animals and agricultural crops
+= 3
+~ Ecotoxicology studies how toxic chemicals affect populations, communities and whole ecosystems, including species that were never the intended target of the chemical. Effects on individual organisms, industrial and human-health toxicology, or toxicology of domestic animals and crops belong to other branches of the subject.
+
+Q 131 | evs | Pollution & Waste Management
+What is the term for the process by which the body converts a toxic substance into a less toxic form?
+(1) Biotransformation
+(2) Bioaccumulation
+(3) Biodegradation
+(4) Bioconcentration
+= 1
+~ Biotransformation is the chemical change of a foreign substance by enzymes in the body (for example cytochrome P450 and conjugation reactions), usually making it more water-soluble, less toxic and easier to excrete. Bioaccumulation and bioconcentration are build-up of the substance in tissues, and biodegradation is the breakdown of substances by microbes in the environment.
+
+Q 132 | evs | Pollution & Waste Management
+Match the following regarding Environmental Toxicology - Toxicity (LD50 and LC50).
+Toxicity Parameter | Description
+A. LD50 | 1. The lethal concentration of a substance in the air or water that causes death in…
+B. LC50 | 2. The amount of a substance that will cause death in 50% of a group of organisms…
+C. Acute Toxicity | 3. The concentration of a toxic substance that results in a significant adverse effect…
+D. Chronic Toxicity | 4. A relationship that shows how an organism's response to a substance change…
+E. Dose-response Relationship | 5. The harmful effects that result from long-term exposure to a low concentration…
+(1) A - 2; B - 1; C - 3; D - 5; E - 4
+(2) A - 1; B - 2; C - 3; D - 4; E - 5
+(3) A - 2; B - 3; C - 1; D - 4; E - 5
+(4) A - 3; B - 4; C - 2; D - 1; E - 5
+= 1
+~ LD50 is the amount (dose) that kills 50% of a test group (A-2), whereas LC50 is the concentration in air or water that does so (B-1). Acute toxicity is the adverse effect after a short exposure (C-3), chronic toxicity is the harm from long-term exposure to low concentrations (D-5), and a dose-response relationship shows how the response changes with dose (E-4).
+
+Q 133 | evs | Pollution & Waste Management
+Read the given statement and conclusions carefully. Without making any assumptions, decide which of the given conclusions logically follow(s) from the statements.
+Statement: The risk-benefit ratio is a critical factor in evaluating the safety of chemicals and processes. While the toxicity of a substance remains constant, the benefits of its use can justify the associated risks, provided that exposure is properly controlled.
+Conclusions:
+I. The risk-benefit ratio becomes irrelevant when the toxicity of a chemical cannot be altered.
+II. Risk assessments are essential to determine if the benefits of using a chemical outweigh its risks.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Neither conclusion I nor II follows.
+(4) Both conclusions I and II follow.
+= 2
+~ The statement says that fixed toxicity does not stop benefits from justifying risks when exposure is controlled, so weighing benefits against risks through risk assessment is essential (conclusion II). Conclusion I says the ratio becomes irrelevant, which contradicts the statement's claim that it is a critical factor.
+
+Q 134 | evs | Pollution & Waste Management
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): The toxic chemical nickel is a known carcinogen.
+Reason (R): Nickel can cause DNA damage and disrupt the balance of other essential elements in the body.
+(1) Both A and R are correct, and R is the correct explanation of A.
+(2) A is true but R is false.
+(3) A is false but R is true.
+(4) Both A and R are true, but R is not the correct explanation of A.
+= 1
+~ Nickel compounds are classed by IARC as carcinogenic to humans (Group 1), mainly causing lung and nasal cancers after inhalation. Nickel damages DNA and interferes with essential metals such as iron, zinc, calcium and magnesium, and this DNA damage is one of the mechanisms behind its carcinogenicity, so R explains A.
+
+Q 135 | evs | Pollution & Waste Management
+A substance that has a harmful effect on living organisms and is a discrete chemical, like lead chromate, is known as a:
+(1) Toxin
+(2) Poison
+(3) Toxicant
+(4) Corrosive Substance
+= 3
+~ In toxicology, a toxicant is a toxic substance that is a specific (often man-made) chemical, such as lead chromate or a pesticide. A toxin is a toxic substance produced by a living organism, for example snake venom or bacterial toxins, while poison is the general everyday word for any substance harmful in small amounts.
+
+Q 136 | evs | Pollution & Waste Management
+Which of the following dose-response models is characterised by a non-linear increase in response with increasing dose, with no apparent threshold?
+(1) Hormetic model
+(2) Heterogenous model
+(3) Non-linear model
+(4) Threshold model
+= 3
+~ In the non-linear model the response rises with dose but not in proportion to it, and there is no dose below which the response is absent. The threshold model has a dose below which no effect occurs, and the hormetic model shows stimulation at low doses and inhibition at high doses (a U-shaped or inverted-U curve).
+
+Q 137 | evs | Pollution & Waste Management
+What is the 'threshold value' of a toxic substance?
+(1) The highest level of a substance that is toxic
+(2) The lowest level at which a substance causes harm
+(3) The level at which a substance is safe for humans
+(4) The amount of a substance that causes no harm at all
+= 2
+~ The threshold value is the lowest dose or concentration at which a harmful effect first becomes detectable; below it no effect is seen. It is not a ceiling of toxicity, and it is not itself a guaranteed safe level, since safe levels are set lower with safety factors.
+
+Q 138 | evs | Pollution & Waste Management
+What is the term for the process by which acids and bases react with biological surfaces to form salts and water?
+(1) Hydrolysis
+(2) Polymerisation
+(3) Neutralisation
+(4) Derivatisation
+= 3
+~ Neutralisation is the reaction of an acid with a base that gives a salt and water. Hydrolysis is a reaction in which water splits a molecule, polymerisation joins small units into a large chain, and derivatisation chemically modifies a compound for analysis.
+
+Q 139 | evs | Pollution & Waste Management
+Match the following types of of acid-base reactions in column A and their applications in toxicology (column B).
+Column A (Reactions) | Column B (Applications)
+1. Adsorption of acids on metal oxide surfaces | a. Assessment of atmospheric particulate matter toxicity and human health risks
+2. Surface complexation of bases on clay mineral surfaces | b. Elucidation of mechanisms of toxicant uptake and accumulation in biological systems
+3. Ligand exchange reactions of acids on biological surfaces | c. Understanding of pesticide adsorption and desorption on soil and sediment surfaces
+4. Proton transfer reactions of bases on atmospheric particulate matter | d. Prediction of heavy metal mobility and bioavailability in soil and water
+(1) 1-c; 2-b; 3-a; 4-d
+(2) 1-b; 2-c; 3-d; 4-a
+(3) 1-c; 2-d; 3-a; 4-b
+(4) 1-d; 2-c; 3-b; 4-a
+= 4
+~ Acid adsorption on metal oxides controls how mobile and bioavailable heavy metals are in soil and water (1-d). Complexation on clay surfaces explains pesticide binding to soil and sediment (2-c), ligand exchange on biological surfaces explains toxicant uptake and accumulation (3-b), and proton transfer on atmospheric particles bears on the toxicity of particulate matter (4-a).
+
+Q 140 | evs | Pollution & Waste Management
+How is the Acceptable Daily Intake (ADI) typically determined?
+(1) By assessing the total environmental concentration of a substance
+(2) Through animal testing, using safety margins to account for human variability
+(3) By measuring the immediate effects of exposure in humans
+(4) By calculating the concentration of a substance in food and beverages
+= 2
+~ The ADI is usually derived from the no-observed-adverse-effect level (NOAEL) in animal studies, divided by a safety (uncertainty) factor, commonly 100, to allow for differences between species and between individual humans. It is expressed as mg per kg of body weight per day (JECFA/WHO approach).
+
+Q 141 | evs | Pollution & Waste Management
+What is the main difference between selective and non-selective herbicides?
+(1) Selective herbicides target only specific plants, while non-selective herbicides affect all plants.
+(2) Selective herbicides are chemical-based, while non-selective herbicides are natural.
+(3) Selective herbicides are more toxic than non-selective herbicides.
+(4) Non-selective herbicides are less effective than selective herbicides in controlling weeds.
+= 1
+~ A selective herbicide such as 2,4-D kills certain kinds of plants (for example broad-leaved weeds in a grass crop) and leaves others unharmed. A non-selective herbicide such as glyphosate or paraquat kills almost all vegetation it contacts. Both kinds are chemicals, so option 2 is wrong.
+
+Q 142 | evs | Pollution & Waste Management
+Which of the following chemicals is known to cause both immediate and long-term respiratory toxicity in humans?
+(1) Particulate matter (PM)
+(2) Arsenic
+(3) DDT
+(4) Pyrethrin
+= 1
+~ Inhaled fine particulate matter causes immediate effects such as coughing, wheeze and asthma attacks, and long-term effects such as chronic bronchitis, reduced lung function and lung cancer. Arsenic harms humans mainly through drinking water and skin or other cancers, DDT acts mainly on the nervous system, and pyrethrin is a comparatively low-toxicity insecticide.
+
+Q 143 | evs | Pollution & Waste Management
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): The reaction of hydrochloric acid with a concrete surface can lead to the formation of a chloride layer.
+Reason (R): The chloride layer is formed due to the reaction of hydrochloric acid with the concrete surface, which creates a barrier against further acid attack.
+(1) Both A and R are correct, and R is the correct explanation of A.
+(2) A is false but R is true.
+(3) A is true but R is false.
+(4) Both A and R are true, but R is not the correct explanation of A.
+= 1
+~ Hydrochloric acid reacts with the calcium compounds of cement (calcium hydroxide and calcium silicate hydrates) to form calcium chloride, so a chloride layer does form on the surface (A). APPSC's key accepts that this reaction layer acts as a barrier to further attack and so explains A. In practice calcium chloride is soluble and HCl is generally very damaging to concrete. (Official key; some sources differ.)
+
+Q 144 | evs | Pollution & Waste Management
+Match the following types of dose-relationship curves in column A and their characteristics in column B.
+Column A (Types of dose relationship curves) | Column B (Characteristics)
+1. Linear Dose-Response Curve | a. Increased response at low doses, followed by decreased response at high doses
+2. Non-Linear Dose-Response Curve | b. Presence of a threshold dose below which no effect is observed
+3. Threshold Dose-Response Curve | c. Non-proportional relationship between dose and response, with potential for saturation
+4. U-Shaped Dose-Response Curve | d. Directly proportional relationship between dose and response
+(1) 1-c; 2-b; 3-a; 4-d
+(2) 1-d; 2-c; 3-b; 4-a
+(3) 1-b; 2-a; 3-d; 4-c
+(4) 1-c; 2-a; 3-d; 4-b
+= 2
+~ A linear curve means response is directly proportional to dose (1-d), while a non-linear curve is non-proportional and may level off at saturation (2-c). A threshold curve has a dose below which no effect is seen (3-b), and a U-shaped (hormetic) curve shows increased response at low doses followed by a decrease at high doses (4-a).
+
+Q 145 | evs | Pollution & Waste Management
+Match the following types of toxicants in column A and their sources/fate in column B.
+Column A (Toxicants) | Column B (Sources/fate)
+1. Polychlorinated Biphenyls (PCBs) | a. Agricultural applications, soil contamination, and groundwater pollution
+2. Polycyclic Aromatic Hydrocarbons (PAHs) | b. Mining and smelting activities, water pollution, and bioaccumulation
+3. Heavy Metals (e.g., Lead, Mercury) | c. Fossil fuel combustion, atmospheric deposition, and soil contamination
+4. Pesticides (e.g., DDT, Chlorpyrifos) | d. Industrial processes, atmospheric deposition, and bioaccumulation
+(1) 1-d; 2-c; 3-a; 4-b
+(2) 1-c; 2-b; 3-a; 4-d
+(3) 1-a; 2-c; 3-d; 4-b
+(4) 1-d; 2-c; 3-b; 4-a
+= 4
+~ PCBs came from industrial uses (transformers, capacitors) and persist and bioaccumulate (1-d). PAHs are formed mainly by burning fossil fuels and other organic matter (2-c), heavy metals are released by mining and smelting (3-b), and pesticides are applied in agriculture and contaminate soil and groundwater (4-a).
+
+Q 146 | evs | Environmental Assessment & Planning
+How does the concept of risk management integrate with risk-benefit analysis?
+(1) Risk management eliminates the need for risk-benefit analysis.
+(2) Risk-benefit analysis is used to inform risk management decisions.
+(3) Risk-benefit analysis occurs only after risk management is implemented.
+(4) Risk management focuses solely on minimising costs.
+= 2
+~ Risk-benefit analysis compares what a chemical or activity gains with the risks it brings, and its results guide risk managers in deciding whether to allow, restrict or control it. It therefore comes before and feeds into risk management, rather than replacing it or following it, and risk management is not only about cost.
+
+Q 147 | evs | Pollution & Waste Management
+Match the types of resistance and their mechanisms
+Type of Resistance | Mechanism/Description
+A. Insecticide Resistance | 1. Resistance to herbicides in weeds
+B. Fungicide Resistance | 2. Evolution of pest immunity to pesticides
+C. Managing Resistance | 3. Developing resistant traits in plant pathogens
+D. Herbicide Resistance | 4. The development of new strategies to manage pesticide use
+E. Pesticide Resistance | 5. Adapting pests to survive chemical treatments
+(1) A - 5; B - 3; C - 4; D - 1; E - 2
+(2) A - 2; B - 3; C - 4; D - 1; E - 5
+(3) A - 1; B - 3; C - 2; D - 4; E - 5
+(4) A - 4; B - 1; C - 2; D - 5; E - 3
+= 1
+~ The clear pairs are fungicide resistance with resistant plant pathogens (B-3), herbicide resistance with weeds (D-1) and managing resistance with new strategies to manage pesticide use (C-4). APPSC pairs insecticide resistance with pests adapting to survive chemical treatments (A-5) and general pesticide resistance with the evolution of pest immunity (E-2); option 2 swaps these two. (Official key; some sources differ.)
+
+Q 148 | evs | Pollution & Waste Management
+Which of the following is the most specific and important physiological response to heavy metal toxicity?
+(1) Activation of metallotheins
+(2) Increased calcium levels
+(3) Increased blood pressure
+(4) Low blood pressure
+= 1
+~ Metallothioneins are small cysteine-rich proteins that the body makes in larger amounts when exposed to metals such as cadmium, zinc, copper and mercury; they bind and sequester the metal, which is the specific protective response. Changes in calcium level or blood pressure are non-specific and not a defence against metals as such.
+
+Q 149 | evs | Pollution & Waste Management
+Which of the given options is the most accurate conclusion of the following statement?
+Statement: LD50 is a measure of the acute toxicity of a substance.
+(1) LD50 is a measure of the dose that is lethal to 50% of test subjects.
+(2) LD50 is a measure of chronic toxicity.
+(3) LD50 is only applicable to carcinogenic chemicals.
+(4) LD50 is not relevant to risk assessment.
+= 1
+~ LD50 (median lethal dose) is defined as the dose that kills 50% of a group of test animals within a stated time, and it is the standard measure of acute toxicity. Option 2 contradicts the statement, and the LD50 applies to all chemicals, not only carcinogens, and is widely used in hazard and risk assessment.
+
+Q 150 | evs | Pollution & Waste Management
+Which of the given options is the most accurate conclusion to the following statement?
+Statement: The element selenium is an essential nutrient for humans, but excessive intake can cause toxicity.
+(1) Selenium toxicity is due to its ability to inhibit the activity of calmodulin.
+(2) Selenium toxicity is due to its ability to cause oxidative stress and damage to cellular components.
+(3) Selenium toxicity is due to its ability to inhibit the activity of enzymes involved in glucose metabolism.
+(4) Selenium toxicity is due to its ability to disrupt the balance of other essential elements in the body.
+= 2
+~ Selenium has a narrow margin between needed and toxic intake. In excess, selenium compounds react with cellular thiols and generate reactive oxygen species, causing oxidative stress that damages proteins, lipids and DNA, which is the mechanism usually cited for selenosis. Calmodulin inhibition and glucose-enzyme inhibition are not the recognised mechanisms.

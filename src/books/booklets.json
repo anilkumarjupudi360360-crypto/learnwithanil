@@ -1,4 +1,34 @@
 {
+ "appsc-analyst": {
+  "n2025b": {
+   "bytes": 390094,
+   "file": "appsc-analyst-n2025b-e9a5303a65.bin",
+   "key": "bk-appsc-analyst-n2025b",
+   "name": "LearnWithAnil-APPSC-Analyst-Grade-2-2025-Paper-2-Biochemistry-Question-Paper.pdf",
+   "pages": 21
+  },
+  "n2025c": {
+   "bytes": 449318,
+   "file": "appsc-analyst-n2025c-6412c64fc5.bin",
+   "key": "bk-appsc-analyst-n2025c",
+   "name": "LearnWithAnil-APPSC-Analyst-Grade-2-2025-Paper-2-Chemistry-Question-Paper.pdf",
+   "pages": 26
+  },
+  "n2025e": {
+   "bytes": 406029,
+   "file": "appsc-analyst-n2025e-d98523a2d8.bin",
+   "key": "bk-appsc-analyst-n2025e",
+   "name": "LearnWithAnil-APPSC-Analyst-Grade-2-2025-Paper-2-Environmental-Science-Question-Paper.pdf",
+   "pages": 23
+  },
+  "n2025g": {
+   "bytes": 347957,
+   "file": "appsc-analyst-n2025g-862b174393.bin",
+   "key": "bk-appsc-analyst-n2025g",
+   "name": "LearnWithAnil-APPSC-Analyst-Grade-2-2025-Paper-2-Biology-Question-Paper.pdf",
+   "pages": 19
+  }
+ },
  "appsc-eo": {
   "e2023a": {
    "bytes": 863902,
@@ -27,6 +57,36 @@
    "key": "bk-appsc-eo-e2025b",
    "name": "LearnWithAnil-APPSC-EO-Grade-3-2026-Paper-2-Hindu-Philosophy-Temple-System-Question-Paper.pdf",
    "pages": 31
+  }
+ },
+ "appsc-fro": {
+  "f2020c": {
+   "bytes": 337829,
+   "file": "appsc-fro-f2020c-da54f2573a.bin",
+   "key": "bk-appsc-fro-f2020c",
+   "name": "LearnWithAnil-APPSC-FRO-Mains-2020-General-Forestry-1-General-Forestry-I-Question-Paper.pdf",
+   "pages": 17
+  },
+  "f2020d": {
+   "bytes": 302648,
+   "file": "appsc-fro-f2020d-54a9918d0a.bin",
+   "key": "bk-appsc-fro-f2020d",
+   "name": "LearnWithAnil-APPSC-FRO-Mains-2020-General-Forestry-2-General-Forestry-II-Question-Paper.pdf",
+   "pages": 15
+  },
+  "f2023c": {
+   "bytes": 338838,
+   "file": "appsc-fro-f2023c-bc5c265fc1.bin",
+   "key": "bk-appsc-fro-f2023c",
+   "name": "LearnWithAnil-APPSC-FRO-Mains-2023-General-Forestry-1-General-Forestry-I-Question-Paper.pdf",
+   "pages": 19
+  },
+  "f2023d": {
+   "bytes": 375395,
+   "file": "appsc-fro-f2023d-0c29a8405a.bin",
+   "key": "bk-appsc-fro-f2023d",
+   "name": "LearnWithAnil-APPSC-FRO-Mains-2023-General-Forestry-2-General-Forestry-II-Question-Paper.pdf",
+   "pages": 20
   }
  },
  "appsc-group-1": {

@@ -1,0 +1,1534 @@
+# appsc-analyst-2025-paper2-chemistry.txt: APPSC official paper, answers from APPSC's final key (APOnline master question paper, correct option ticked).
+# Typed from /home/claude/afro/raw/afro-an24-p2-chemistry-final.pdf; checked by a second reader. Questions APPSC ignored for all candidates are left out.
+
+Q 1 | chm | Inorganic Chemistry
+A statement is given, followed by two conclusions numbered I and II. You have to consider the statement to be true, even if it seems to be at variance from commonly known facts. You are to decide which of the given conclusions can definitely be drawn from the given statement.
+Statement:
+Group 1 elements have lower ionization energies than Group 2 elements.
+Conclusions:
+I: Group 1 elements form +1 cations by losing one electron.
+II: Group 1 elements are more reactive than Group 2 elements.
+(1) Only conclusion I is correct
+(2) Only conclusion II is correct
+(3) Both conclusion I and conclusion II are correct
+(4) Neither conclusion I nor conclusion II is correct
+= 3
+~ A low ionization energy means an atom gives up an electron easily. Group 1 atoms have a single outer s electron, so they readily lose it to form M+ ions (I), and the same ease of electron loss makes them more reactive than Group 2 metals (II). Both conclusions are therefore accepted.
+
+Q 2 | chm | Inorganic Chemistry
+When aluminium carbide (Al4C3) reacts with water, the products formed are:
+(1) carbon dioxide and aluminium hydroxide
+(2) methane and aluminium oxide
+(3) ethane and aluminium hydroxide
+(4) methane and aluminium hydroxide
+= 4
+~ Aluminium carbide is a methanide containing C4- ions, so water protonates each carbon to give methane: Al4C3 + 12H2O → 4Al(OH)3 + 3CH4. The hydroxide (not the oxide) forms because the reaction takes place in excess water; ethane is not formed (calcium carbide, CaC2, is the one that gives ethyne).
+
+Q 3 | chm | Inorganic Chemistry
+Which of the following statements is FALSE about non-transition elements?
+(1) They have a full outermost electron shell.
+(2) Non-transition elements typically show multiple oxidation states.
+(3) Their compounds are usually colourless.
+(4) They include elements from Groups 1, 2, and 13-18.
+= 2
+~ In the keyed reading, non-transition (main-group) elements mostly show one characteristic oxidation state (+1 for Group 1, +2 for Group 2), and variable oxidation states are the hallmark of transition elements. Their compounds are usually colourless because they lack d-d transitions, and the group range in option 4 is correct. Note that "full outermost shell" in option 1 is true only of the noble gases, and p-block elements do show variable oxidation states, so this item is open to argument. (Official key; some sources differ.)
+
+Q 4 | chm | Inorganic Chemistry
+Borazine is often referred to as 'inorganic benzene'. Which of the following structural similarities does borazine share with benzene?
+(1) Borazine is a non-polar molecule.
+(2) Borazine has a six-membered ring structure with alternating bonds.
+(3) Borazine has identical bond lengths.
+(4) Borazine undergoes electrophilic substitution reactions similar to benzene.
+= 2
+~ Borazine, B3N3H6, is isoelectronic with benzene: a planar six-membered ring in which B and N alternate and the ring has delocalised pi bonding. Because the B-N bonds are polar (N is delta-minus, B is delta-plus), borazine is far more reactive than benzene and typically undergoes addition (for example with HCl or H2O) rather than benzene-type substitution, so option 4 is wrong. Electron-diffraction work shows equal B-N lengths and a zero dipole moment, so options 1 and 3 can also be argued. (Official key; some sources differ.)
+
+Q 5 | chm | Inorganic Chemistry
+In the given question two statements are provided: Assertion (A) and Reason (R). Read both statements carefully, determine their relationship and choose the most appropriate option.
+Assertion (A): Silicon dioxide (SiO2) is considered an acidic oxide.
+Reason (R): Silicon dioxide reacts readily with water to form silicic acid.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 3
+~ SiO2 is an acidic oxide because it reacts with bases (for example NaOH or Na2CO3 on fusion) to give silicates, so A is true. R is false: SiO2 is a giant covalent network that does not react with or dissolve in water, and silicic acid is prepared by acidifying a soluble silicate instead.
+
+Q 6 | chm | Inorganic Chemistry
+Select the correct option based on the Assertion (A) and Reason (R) given below.
+Assertion (A): P₂O₃ has a structure that includes P–O single bonds and P=P double bonds.
+Reason (R): The bonding in P₂O₃ allows phosphorus to attain the octet configuration.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, and R is false.
+= 4
+~ P2O3 is the empirical formula of P4O6, an adamantane-like cage in which every P is joined to three O atoms through P-O-P bridges. It contains only P-O single bonds and no P=P double bonds, so A is false. APPSC's key also treats R as false, although each P (three bonds plus a lone pair) does reach an octet, which is why the item is open to argument. (Official key; some sources differ.)
+
+Q 7 | chm | Inorganic Chemistry
+Match the following borazine structures with their corresponding descriptions.
+Borazine structure | Description
+P. C6H10B3N3 (Borazole) | A. A six-membered ring with alternating boron and nitrogen atoms, where certain atoms are bonded to aromatic groups that influence the molecule's resonance and steric properties.
+Q. B3N3H6 (Borazine) | B. A six-membered ring with alternating B and N atoms, where additional organic substituents modify the structure, reducing its resemblance to benzene.
+R. B3N3Cl6 (Chloroborazine) | C. A compound with a six-membered ring of alternating B and N atoms, where each N atom is bonded to a H atom, resembling the structure of benzene.
+S. C6H5B3N3 (Phenylborazine) | D. A boron-nitrogen ring with hydrogen atoms replaced by a set of electronegative atoms that affect the compound's reactivity.
+(1) P – B, Q – C, R – D, S – A
+(2) P – D, Q – A, R – B, S – C
+(3) P – D, Q – C, R – A, S – B
+(4) P – B, Q – A, R – D, S – C
+= 1
+~ Borazine B3N3H6 is the parent B3N3 ring with an H on each atom, closest to benzene (Q-C). The chloro compound has the ring hydrogens replaced by electronegative Cl (R-D), the phenyl derivative carries aromatic groups (S-A), and the organo-substituted "borazole" has alkyl/organic groups that reduce the benzene-like character (P-B). Note that some of the formulas printed in the question are not standard.
+
+Q 8 | chm | Inorganic Chemistry
+In the hydroboration reaction of diborane with alkene, the reaction proceeds as follows.
+(i) ½ B2H6 + 3 RCH=CHR → B(CH2-CH2R)3
+(ii) B(CH2-CH2R)3 + H2O2 → X
+Identify the product ‘X’ formed in this reaction.
+(1) RCH2CH2OH
+(2) RCH2COOH
+(3) RCH2COCH2R
+(4) RCH2CH3
+= 1
+~ In hydroboration-oxidation the trialkylborane is treated with alkaline H2O2, which replaces each B-C bond by a C-OH bond with retention of configuration, so the alkyl group becomes an alcohol. With the anti-Markovnikov boron placement shown in step (i), the product is the primary alcohol RCH2CH2OH. A carboxylic acid or ketone would need a stronger oxidant, and an alkane (RCH2CH3) forms when the borane is protonolysed with a carboxylic acid, not with H2O2.
+
+Q 9 | chm | Inorganic Chemistry
+Which of the following statements about the structure of closo-carboranes is correct?
+(1) Closo-carboranes consist of a cage-like structure where all vertices are occupied only by boron atoms.
+(2) Closo-carboranes have a polyhedral structure where carbon and boron atoms occupy vertices, and the structure follows the Wade–Mingos rules.
+(3) Closo-carboranes have a linear arrangement of boron and carbon atoms bonded alternately.
+(4) Closo-carboranes form a 2D honeycomb-like planar structure similar to graphene.
+= 2
+~ Closo-carboranes such as C2B10H12 are closed polyhedral cages (deltahedra) in which B-H and C-H units occupy the vertices; an n-vertex closo cage has n+1 skeletal electron pairs, as the Wade-Mingos rules predict. A cage with only boron vertices is a closo-borane anion (BnHn2-), not a carborane, and carboranes are neither linear nor planar.
+
+Q 10 | chm | Inorganic Chemistry
+Which of the following oxides would most likely exhibit acidic behaviour in aqueous solutions?
+(1) Na2O
+(2) P4O10
+(3) CaO
+(4) Al2O3
+= 2
+~ P4O10 is the oxide of a non-metal; it reacts vigorously with water to give phosphoric acid, P4O10 + 6H2O → 4H3PO4, so its solution is acidic. Na2O and CaO give strongly basic hydroxides, and Al2O3 is amphoteric and insoluble in water.
+
+Q 12 | chm | Inorganic Chemistry
+Which method is commonly used to synthesize ortho-carborane starting from boron hydride?
+(1) High-temperature reaction with acetylene
+(2) Hydrogenation reaction
+(3) Acid-catalyzed cyclisation
+(4) Oxidation of boron compounds
+= 1
+~ Ortho-carborane (1,2-C2B10H12) is made from decaborane(14), B10H14, by first forming a Lewis-base adduct such as B10H12(SEt2)2 and then heating it with acetylene (ethyne), which inserts the two carbon atoms into the boron cage and releases H2. Hydrogenation, acid-catalysed cyclisation and oxidation are not routes to the carborane cage.
+
+Q 13 | chm | Inorganic Chemistry
+Match the following type of bonding in the carbides with suitable examples.
+Bonding type | Example of carbides
+P. Ionic carbide | A. Silicon carbide (SiC)
+Q. Covalent carbide | B. Tungsten carbide (WC)
+R. Interstitial carbide | C. Iron carbide (Fe₃C)
+S. Metallic carbide | D. Sodium carbide (Na₂C)
+(1) P – B, Q – C, R – D, S – A
+(2) P – D, Q – A, R – B, S – C
+(3) P – D, Q – C, R – A, S – B
+(4) P – B, Q – A, R – D, S – C
+= 2
+~ Electropositive s-block metals form ionic (salt-like) carbides (P-D), silicon forms the giant covalent carbide SiC (Q-A), and tungsten carbide is the standard interstitial carbide, with C atoms in the metal lattice (R-B). Iron carbide, Fe3C, is the one assigned to the metallic class (S-C). Note that the common sodium carbide is Na2C2, so the formula printed in the question is not standard.
+
+Q 14 | chm | Inorganic Chemistry
+Read the given statement and conclusions and select the most appropriate option.
+Statement:
+Carboranes are polyhedral compounds consisting of boron, carbon, and hydrogen atoms, often used as precursors for designing boron-rich materials due to their unique stability and electronic properties.
+Conclusions:
+I. The stability of carboranes is a result of delocalised bonding involving multicenter bonding interactions.
+II. Carboranes can be functionalised at carbon and boron sites to create derivatives with tailored electronic and chemical properties.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both I and II are true
+(4) Neither I nor II is true
+= 3
+~ The cage skeleton of a carborane is held together by delocalised, three-dimensional multicentre bonding, which accounts for its very high thermal and chemical stability (I). The C-H vertices can be metallated and substituted, and the B-H vertices can be halogenated or otherwise substituted, giving tailored derivatives (II). Both conclusions are true.
+
+Q 15 | chm | Inorganic Chemistry
+Silicates have various structures due to the ways SiO₄⁴⁻ tetrahedra link together. Which of the following statements is correct regarding different types of silicate structures?
+(1) In orthosilicates, SiO₄⁴⁻ tetrahedra share all four oxygen atoms with neighbouring tetrahedra, forming a 3D network.
+(2) Pyrosilicates contain discrete Si₂O₇⁶⁻ units, SiO₄⁴⁻ tetrahedra are linked by sharing a single oxygen atom.
+(3) Sheet silicates consist of single chains of SiO₄⁴⁻ tetrahedra that are not connected to any other chains, resulting in a one-dimensional structure.
+(4) In ring silicates, all oxygen atoms in each SiO₄⁴⁻ tetrahedra are shared with adjacent tetrahedra, forming continuous 2D sheets.
+= 2
+~ Pyrosilicates (disilicates) contain Si2O7 6- units made of two SiO4 tetrahedra sharing one corner oxygen. In orthosilicates the tetrahedra are isolated and share no oxygen, sheet silicates share three oxygens per tetrahedron to give 2D layers (single chains are chain silicates), and ring silicates share two oxygens per tetrahedron to form closed rings rather than sheets.
+
+Q 16 | chm | Inorganic Chemistry
+Which of the following statements about polymorphic forms of phosphorus is correct?
+(1) Black phosphorus has a layered structure and is the most thermodynamically stable allotrope.
+(2) Red phosphorus is highly reactive in air and spontaneously ignites at room temperature.
+(3) White phosphorus is stable in air but ignites only when heated to around 400°C in the absence of oxygen.
+(4) White phosphorus consists of discrete P₄ tetrahedra, whereas red phosphorus is a polymeric form.
+= 1,4
+~ Both (1) and (4) are accurate: black phosphorus is the most stable allotrope and has a puckered layered structure, and white phosphorus is molecular P4 tetrahedra while red phosphorus is a polymeric network. APPSC noted an ambiguity and gave full marks for either option. Options 2 and 3 are wrong because red phosphorus is fairly stable in air, whereas white phosphorus is reactive and ignites spontaneously in air at about 30 °C (it is stored under water).
+
+Q 17 | chm | Inorganic Chemistry
+Which of the following is NOT a polymorphic structure of phosphorus?
+(1) White phosphorus
+(2) Black phosphorus
+(3) Red phosphorus
+(4) Blue phosphorus
+= 4
+~ Standard textbooks list white, red and black phosphorus (and violet or Hittorf's phosphorus) as the allotropes, so blue phosphorus is the keyed odd one out. Blue phosphorus, however, is a layered form of phosphorus predicted in 2014 and grown as a monolayer on Au(111) in 2016, so some sources do count it as an allotrope. (Official key; some sources differ.)
+
+Q 18 | chm | Inorganic Chemistry
+Which type of silicate structure does mica exhibit, contributing to its characteristic cleavage?
+(1) Three-dimensional framework
+(2) Double-chain silicate
+(3) Sheet silicate
+(4) Single-chain silicate
+= 3
+~ Mica is a sheet (phyllosilicate) mineral: each SiO4 tetrahedron shares three of its oxygens, forming two-dimensional layers that are held together only by weak ionic bonds through K+ ions. The layers therefore split apart easily, giving mica its perfect basal cleavage. Framework silicates (quartz, feldspar) and chain silicates (pyroxenes, amphiboles) do not cleave into thin sheets.
+
+Q 19 | chm | Inorganic Chemistry
+In the context of carbon polymorphism, which statement best explains why diamond has a much higher melting point than graphite?
+(1) Diamond’s carbon-carbon bonds are much weaker than those in graphite.
+(2) Diamond's 3D structure requires more energy to break the bonds, while graphite's 2D structure allows easier bond separation.
+(3) The absence of covalent bonds in diamond makes it less stable than graphite.
+(4) Graphite contains more delocalized electrons than diamond, making it more stable.
+= 2
+~ In diamond each carbon is sp3-bonded to four others in a rigid three-dimensional covalent network, so a great deal of energy is needed to break it down. Graphite has layers of sp2 carbon held together by only weak van der Waals forces, so the layers separate easily; this is the textbook reasoning behind option 2. Options 1 and 3 are wrong because diamond's bonds are strong and covalent. The premise itself is shaky, since graphite actually sublimes only at about 3600 °C, so option 2 is simply the one textbook-style answer.
+
+Q 20 | chm | Inorganic Chemistry
+Read the given statement and conclusions and select the most appropriate option.
+Statement:
+Silicates are compounds containing silicon, oxygen, and one or more metals, where the silicon atom is tetrahedrally coordinated by oxygen atoms.
+Conclusions:
+I. Silicates can form extended polymeric structures through the sharing of oxygen atoms between silicon-oxygen tetrahedra.
+II. Silicates exhibit a variety of physical properties, such as high melting points and low solubility in water, due to the strong covalent bonds between silicon and oxygen atoms.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both I and II are true
+(4) Neither I nor II is true
+= 3
+~ SiO4 tetrahedra share corner oxygens to build chains, rings, sheets and three-dimensional frameworks, so extended polymeric structures are formed (I). The strong Si-O covalent bonds explain the high melting points and very low water solubility of most silicates (II). Both conclusions are true.
+
+Q 21 | chm | Organic & Natural Products
+Which of the following methods is commonly used as the initial step for the isolation of terpenes from plant materials?
+(1) Steam distillation
+(2) Filtration
+(3) Simple distillation
+(4) Sublimation
+= 1
+~ Most mono- and sesquiterpenes are volatile, water-insoluble and heat-sensitive, so the plant material (peel, leaves, flowers) is first steam distilled to carry the essential oil over at a temperature below 100 °C. The oil is then separated into its components by fractional distillation or chromatography. Simple distillation would need a much higher temperature that could decompose terpenes, and filtration or sublimation cannot extract them from plant tissue.
+
+Q 22 | chm | Organic & Natural Products
+How are terpenoids classified?
+(1) Based on the number of carbon atoms
+(2) Based on the type of functional groups attached to the carbon chain
+(3) Based on the number of isoprene units in the molecule
+(4) Based on their colour and odour
+= 3
+~ Terpenoids are built from C5 isoprene units and are classified by how many of them they contain: monoterpenoids (2 units, C10), sesquiterpenoids (3, C15), diterpenoids (4, C20), triterpenoids (6, C30) and tetraterpenoids (8, C40). The carbon count follows from the unit count, but the isoprene-unit basis is the standard one; functional groups, colour and odour are not used.
+
+Q 23 | chm | Organic & Natural Products
+Which of the following fruits is a significant natural source of monoterpenoids?
+(1) Apple
+(2) Orange
+(3) Banana
+(4) Mango
+= 2
+~ Citrus fruits such as orange have peel oil that is mostly limonene, a monoterpene (C10H16), together with other monoterpenoids like citral and linalool. Apple, banana and mango are not noted as significant monoterpenoid sources.
+
+Q 24 | chm | Organic & Natural Products
+Read the given statement and conclusions and select the most appropriate option.
+Statement:
+Terpenoids are classified based on the number of isoprene units they contain.
+Conclusions:
+I. Monoterpenoids contain two isoprene units.
+II. Sesquiterpenoids contain four isoprene units.
+(1) Only Conclusion I is true
+(2) Only Conclusion II is true
+(3) Both I and II are true
+(4) Neither I nor II is true
+= 1
+~ Monoterpenoids are C10 compounds made of two isoprene units, so I is true. Sesquiterpenoids are C15 compounds made of three units (the "sesqui-" prefix means one and a half); four isoprene units (C20) make a diterpenoid, so II is false.
+
+Q 25 | chm | Organic & Natural Products
+Which of the following is true about the linkage of isoprene units in terpenoids?
+(1) The isoprene units are linked head-to-tail.
+(2) The isoprene units are linked tail-to-tail.
+(3) Isoprene units are not linked in terpenoids.
+(4) Isoprene units are linked through hydrogen bonds.
+= 1
+~ The isoprene rule (Wallach, refined by Ruzicka as the biogenetic isoprene rule) states that terpenoid skeletons are formed by joining isoprene units head-to-tail, that is, C1 of one unit to C4 of the next. Tail-to-tail linkage occurs only in a few exceptions such as squalene and the carotenoids, and the units are joined by covalent C-C bonds, not hydrogen bonds.
+
+Q 26 | chm | Organic & Natural Products
+A statement is given, followed by two conclusions numbered I and II. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions can be drawn definitely from the given statement.
+Statement
+Terpenoids can be structurally determined using a combination of spectroscopic techniques, chemical methods, and comparative analysis with known compounds.
+Conclusions
+I: Spectroscopic techniques like NMR, IR and Ultraviolet spectrophotometry provide detailed information about the molecular structure and functional groups in terpenoids.
+II: Chemical methods such as oxidation, reduction and degradation reactions help deduce the molecular framework and stereochemistry of terpenoids.
+(1) Only Conclusion I is correct.
+(2) Only Conclusion II is correct.
+(3) Both Conclusion I and Conclusion II are correct.
+(4) Neither Conclusion I nor Conclusion II is correct.
+= 3
+~ The statement says terpenoid structure is solved by combining spectroscopic and chemical methods. IR and UV identify functional groups and conjugation and NMR gives the carbon-hydrogen framework (I), while oxidation, reduction and degradation reactions break the molecule into known fragments that reveal the skeleton and stereochemistry (II). Both conclusions are in line with this.
+
+Q 27 | chm | Organic & Natural Products
+Match the following terpenes (Column I) with their molecular formula (Column II) and characteristic features (Column III).
+Column I (Terpene) | Column II (Molecular Formula) | Column III (Characteristic Feature)
+(i) Cadinene | (a) C15H24 | (p) Tricyclic diterpene with conjugated double bonds present in rings B and C
+(ii) Abietic acid | (b) C20H30O2 | (q) Bicyclic sesquiterpene with a fused system of four- and nine-membered rings
+ | (c) C20H34O2 | (r) Bicyclic sesquiterpene with two non-conjugated double bonds
+ | (d) C15H18 | (s) Tricyclic triterpene with conjugated double bonds present in rings B and C
+(1) (i) - (a, r), (ii) - (b, p)
+(2) (i) - (a, r), (ii) - (c, s)
+(3) (i) - (d, r), (ii) - (b, p)
+(4) (i) - (a, q), (ii) - (c, p)
+= 1
+~ Cadinene is a bicyclic sesquiterpene, C15H24, with two non-conjugated double bonds (a, r). Abietic acid is a tricyclic diterpene resin acid, C20H30O2, with a conjugated diene spread over rings B and C (b, p). A triterpene would have 30 carbons, so (s) cannot describe abietic acid, and C15H18 has too little hydrogen for a sesquiterpene hydrocarbon.
+
+Q 28 | chm | Organic & Natural Products
+Which of the following compounds is NOT synthesised from two isoprene units and also not a major component of essential oils?
+(1) Myrcene
+(2) Limonene
+(3) Linalool
+(4) Camphor
+= 4
+~ Myrcene, limonene and linalool are the classic monoterpenes and monoterpenoids that make up essential oils, and camphor is the keyed odd one out. Camphor (C10H16O), however, is also a bicyclic monoterpenoid built from two isoprene units and is the main constituent of camphor oil, so the question is open to argument. (Official key; some sources differ.)
+
+Q 29 | chm | Organic & Natural Products
+Read the given statement and conclusions and select the most appropriate option.
+Statement:
+Terpenoids, also known as isoprenoids, are a diverse class of naturally occurring organic compounds primarily derived from plants and some microorganisms.
+Conclusions:
+I. All terpenoids are exclusively found in plants.
+II. Terpenoids are biosynthesised through the assembly of isoprene units.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both I and II are true
+(4) Neither I nor II is true
+= 2
+~ Terpenoids are also made by animals, fungi and bacteria (for example cholesterol, squalene, retinol and ubiquinone), so I is false. All of them are built from the five-carbon units isopentenyl pyrophosphate and dimethylallyl pyrophosphate, the biological isoprene units, through the mevalonate or MEP pathway, so II is true.
+
+Q 30 | chm | Organic & Natural Products
+Read the given statements of Assertion (A) and Reason (R) carefully and select the correct option.
+(A): During fractional distillation to isolate terpenoids from essential oils, monoterpenoid hydrocarbons typically distill first.
+(R): Monoterpenoid hydrocarbons have lower boiling points, allowing them to separate earlier during distillation.
+(1) Both A and R are true, and R is the correct explanation for A.
+(2) Both A and R are true, but R is not the correct explanation for A.
+(3) A is true but R is false.
+(4) A is false but R is true.
+= 1
+~ Monoterpene hydrocarbons (C10, for example limonene and pinene) have the lowest molar mass and no polar groups, so they boil at about 150-180 °C, below oxygenated monoterpenoids and sesquiterpenes. In fractional distillation they therefore come over first, and their lower boiling point is exactly the reason.
+
+Q 31 | chm | Organic & Natural Products
+During the structure elucidation of Zingiberene, which of the following observations does NOT support that Zingiberene is a sesquiterpene hydrocarbon with a monocyclic structure?
+(1) Catalytic hydrogenation converts Zingiberene into hexahydrozingiberene.
+(2) The molecular refractivity index of Zingiberene corresponds to a monocyclic structure.
+(3) Ozonolysis of Zingiberene yields acetone, levulinic acid and succinic acid.
+(4) Reaction with ozone forms a tri-ketone, suggesting a moncyclic structure.
+= 4
+~ Zingiberene is C15H24, which has four degrees of unsaturation. Uptake of 3 mol H2 to give hexahydrozingiberene (C15H30) shows three C=C bonds, so the fourth unsaturation is a single ring, and molecular refractivity agrees. Ozonolysis of the three C=C bonds breaks the skeleton into smaller fragments such as acetone, levulinic acid and succinic acid, so one intact tri-ketone is not expected and option 4 is the observation that does not support the structure.
+
+Q 32 | chm | Organic & Natural Products
+Which reaction is commonly utilised to modify the carboxylic acid group in abietic acid to form its methyl ester derivative?
+(1) Friedel-Crafts acylation
+(2) Claisen rearrangement
+(3) Fischer esterification
+(4) Wolff-Kishner reduction
+= 3
+~ A carboxylic acid is converted into its methyl ester by Fischer esterification, which is heating the acid with methanol in the presence of an acid catalyst such as H2SO4 or HCl. Friedel-Crafts acylation acts on aromatic rings, Claisen rearrangement involves allyl vinyl ethers, and Wolff-Kishner reduction turns C=O into CH2.
+
+Q 33 | chm | Amino Acids & Proteins
+Which of the following is the correct IUPAC name of the given gamma amino acid?
+H2N-CH2-CH2-CH2-COOH
+(1) 4-aminopropanoic acid
+(2) 4-aminobutyric acid
+(3) 3-aminobutyric acid
+(4) 3-aminopropanoic acid
+= 2
+~ The compound has four carbons counting the COOH carbon as C1, so the parent is butanoic (butyric) acid, and the NH2 sits on C4, the gamma carbon. It is 4-aminobutanoic acid, the neurotransmitter GABA. A propanoic acid has only three carbons, and a 3-amino group would make it a beta-amino acid.
+
+Q 34 | chm | Amino Acids & Proteins
+Which of the following methods can be used for the synthesis of leucine?
+(1) Nitration of isoleucine
+(2) Friedel-Crafts acylation
+(3) Decarboxylation of valine
+(4) Strecker synthesis
+= 4
+~ Leucine is obtained by the Strecker synthesis: isovaleraldehyde (3-methylbutanal) is treated with NH3 and HCN to give an alpha-aminonitrile, which is hydrolysed to the alpha-amino acid. Nitration and Friedel-Crafts acylation do not build the leucine side chain, and decarboxylating valine would remove the carboxyl group and give an amine, not an amino acid.
+
+Q 35 | chm | Amino Acids & Proteins
+At physiological pH (around 7.4), the amino acid glycine predominantly exists in which form due to its amphoteric nature?
+(1) Fully protonated form (both amino and carboxyl groups protonated)
+(2) Fully deprotonated form (both amino and carboxyl groups deprotonated)
+(3) Zwitterionic form (amino group protonated and carboxyl group deprotonated)
+(4) Only as a carboxylate anion (carboxyl group deprotonated, amino group neutral)
+= 3
+~ Glycine has pKa values of about 2.3 (COOH) and 9.6 (NH3+), so at pH 7.4 the carboxyl group has lost its proton and the amino group still holds one. It therefore exists mainly as the zwitterion +H3N-CH2-COO-, with no net charge (its isoelectric point is about 6.0).
+
+Q 36 | chm | Amino Acids & Proteins
+Which of the following statements about amino acids is correct?
+(1) All amino acids have their amino group attached to the alpha carbon.
+(2) Amino acids are amphoteric molecules due to the presence of both acidic and basic groups.
+(3) Only non-polar amino acids are used in protein synthesis.
+(4) Amino acids cannot exist as zwitterions in solution.
+= 2
+~ Amino acids carry a basic -NH2 group and an acidic -COOH group, so they can react with both acids and bases, which makes them amphoteric. Option 1 is wrong because not all amino acids are alpha-amino acids (beta-alanine and GABA are not), option 3 is wrong because proteins also contain polar and charged residues, and option 4 is wrong because zwitterions are their usual form in solution near neutral pH.
+
+Q 37 | chm | Amino Acids & Proteins
+Alpha amino acids are classified based on the nature of their side chains. Which of the following amino acids is classified as a non-polar, aliphatic amino acid?
+(1) Glycine
+(2) Serine
+(3) Lysine
+(4) Glutamine
+= 1
+~ In the usual classification (for example in Lehninger) the non-polar aliphatic group is glycine, alanine, proline, valine, leucine, isoleucine and methionine. Serine and glutamine have polar uncharged side chains, and lysine has a positively charged side chain.
+
+Q 38 | chm | Amino Acids & Proteins
+Which functional groups are present in valine?
+(1) Amine and carboxylic acid
+(2) Ketone and carboxylic acid
+(3) Alcohol and amine
+(4) Amine and aldehyde
+= 1
+~ Valine is (CH3)2CH-CH(NH2)-COOH, 2-amino-3-methylbutanoic acid. Its only functional groups are the alpha primary amino group and the carboxylic acid group; the isopropyl side chain is a plain hydrocarbon with no ketone, alcohol or aldehyde.
+
+Q 39 | chm | Amino Acids & Proteins
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Glycine is an α-amino acid.
+Reason (R): The malonic ester synthesis involves a step where ammonia reacts with the α-bromoester intermediate.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 3
+~ A is true: glycine, H2N-CH2-COOH, has its amino group on the carbon next to the carboxyl group. APPSC keyed R as false, but in the textbook route to glycine from diethyl malonate, bromination gives the alpha-bromo malonate, which is aminated with ammonia (or phthalimide) and then hydrolysed and decarboxylated. On that reading R is true but does not explain why glycine is an alpha-amino acid, which would give option 2. (Official key; some sources differ.)
+
+Q 40 | chm | Amino Acids & Proteins
+Read the given statement and conclusions and select the most appropriate option.
+Statement:
+Amino acids can be classified based on the nature of their side chains into groups such as nonpolar, polar, acidic, and basic.
+Conclusions:
+I. Nonpolar amino acids have hydrophobic side chains that tend to avoid water.
+II. Acidic amino acids contain side chains that carry a positive charge at physiological pH.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both I and II are true
+(4) Neither I nor II is true
+= 1
+~ Nonpolar amino acids (valine, leucine, isoleucine, phenylalanine and others) have hydrophobic side chains that cluster away from water, so I is true. The acidic amino acids, aspartic acid and glutamic acid, have side-chain carboxyl groups that are deprotonated at pH 7.4 and carry a negative charge; the positively charged side chains belong to the basic amino acids (Lys, Arg, His). II is therefore false.
+
+Q 41 | chm | Amino Acids & Proteins
+A statement is given, followed by two conclusions numbered I and II. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions can be drawn definitely from the given statement.
+Statement
+Essential amino acids cannot be synthesised by the human body and must be obtained from dietary sources.
+Conclusions
+I: If a person’s diet lacks essential amino acids, protein synthesis in the body will be affected.
+II: All amino acids required for protein synthesis are essential.
+(1) Only Conclusion I is correct.
+(2) Only Conclusion II is correct.
+(3) Both Conclusion I and Conclusion II are correct.
+(4) Neither Conclusion I nor Conclusion II is correct.
+= 1
+~ If the body cannot make essential amino acids and the diet does not supply them, the building blocks for proteins are missing, so protein synthesis suffers (I). II does not follow: proteins also need non-essential amino acids, which the body can make itself, so not all required amino acids are essential.
+
+Q 42 | chm | Amino Acids & Proteins
+Which set includes only neutral amino acids?
+(1) Glycine, serine, threonine
+(2) Alanine, lysine, tyrosine
+(3) Phenylalanine, glutamate, arginine
+(4) Valine, histidine, cysteine
+= 1
+~ Neutral amino acids have one amino and one carboxyl group and a side chain that is not acidic or basic; glycine, serine and threonine all fit. The other sets each include a charged one: lysine (basic) in option 2, glutamate (acidic) and arginine (basic) in option 3, and histidine (basic) in option 4.
+
+Q 43 | chm | Amino Acids & Proteins
+Which of the following is the correct sequence of reactions in the Strecker synthesis of glycine?
+(1) Formaldehyde --[(i) HCN, (ii) NH3]--> α-Keto acid --[H+/H2O]--> Glycine
+(2) Formaldehyde --[(i) HCN, (ii) NH3]--> α-Amino nitrile --[H+/H2O]--> Glycine
+(3) Glyoxylic Acid --[NH3]--> Imines --[H2/Pd]--> Glycine
+(4) Acetic acid --[(i) Cl2/P, (ii) NH3]--> Glycine
+= 2
+~ In the Strecker synthesis an aldehyde reacts with HCN and NH3 to give an alpha-aminonitrile, whose -CN group is then hydrolysed with aqueous acid to -COOH. For glycine the aldehyde is formaldehyde: HCHO → H2N-CH2-CN → H2N-CH2-COOH. Option 1 is wrong because the intermediate is an aminonitrile, not a keto acid; option 3 is a reductive amination and option 4 is the Hell-Volhard-Zelinsky route, neither being a Strecker synthesis.
+
+Q 44 | chm | Amino Acids & Proteins
+Which of the following is the primary reason why amino acids generally have higher melting points than many organic compounds?
+(1) The high polarity of amino acids contributes to stronger van der Waals forces.
+(2) The peptide bond present in amino acids leads to higher melting points.
+(3) Amino acids are zwitterions in the solid state, which leads to strong ionic interactions.
+(4) Amino acids form strong hydrogen bonds due to their amino and carboxyl groups.
+= 3
+~ In the crystal, amino acids exist as zwitterions (+H3N-CHR-COO-), so the lattice is held by strong electrostatic attraction between opposite charges, as in a salt. This is why they melt (often with decomposition) at 200-300 °C. Hydrogen bonding also exists but is not the main cause, and free amino acids contain no peptide bonds.
+
+Q 45 | chm | Amino Acids & Proteins
+___________ is both a natural and an essential amino acid.
+(1) Alanine
+(2) Phenylalanine
+(3) Tyrosine
+(4) Proline
+= 2
+~ Phenylalanine is a natural (proteinogenic) amino acid and one of the nine essential amino acids, since humans cannot make its aromatic ring and must get it from the diet. Alanine and proline are non-essential, and tyrosine is made in the body from phenylalanine, so it is not essential.
+
+Q 46 | chm | Amino Acids & Proteins
+In the following question, a statement is provided, followed by two conclusions. Read the statements carefully to determine which of the given conclusion(s) logically follow(s) based on the information provided in the statement.
+Statement: Natural amino acids include both essential and non-essential amino acids found in proteins.
+Conclusion I: All natural amino acids are essential for human health.
+Conclusion II: Non-essential amino acids can be synthesised by the human body from other compounds.
+(1) Only Conclusion I is correct.
+(2) Only Conclusion II is correct.
+(3) Both Conclusions I and II are correct.
+(4) Neither Conclusion I nor II is correct.
+= 2
+~ The statement says natural amino acids come in two kinds, so not all of them can be essential, and I is false. Non-essential amino acids are, by definition, those the body can make from other compounds (for example from glucose-derived intermediates or other amino acids), so II follows.
+
+Q 47 | chm | Amino Acids & Proteins
+Which of the following statements correctly describes the secondary structure of proteins?
+(1) It refers to the sequence of amino acids in a protein.
+(2) It involves α-helices and β-pleated sheets formed by hydrogen bonding.
+(3) It is stabilised by disulfide bonds between amino acid residues.
+(4) It is the final three-dimensional structure of the protein.
+= 2
+~ Secondary structure is the regular local folding of the polypeptide backbone into alpha-helices and beta-pleated sheets, held by hydrogen bonds between backbone C=O and N-H groups. The amino acid sequence is the primary structure, and the overall 3D fold, stabilised partly by disulfide bonds, is the tertiary structure.
+
+Q 48 | chm | Amino Acids & Proteins
+Match the solubility of amino acids (Column A) with their isoelectric points (pI) (Column B).
+Amino Acid (Column A) | Solubility at pI (Column B)
+(A) Glycine | (1) Lowest solubility
+(B) Glutamate | (2) Variable solubility
+(C) Lysine | (3) Soluble in basic pH
+(D) Histidine | (4) Soluble in acidic pH variable solubility
+(1) A-1 ; B-4 ; C-3 ; D-2
+(2) A-4 ; B-3 ; C-1 ; D-2
+(3) A-3 ; B-4 ; C-2 ; D-1
+(4) A-2 ; B-1 ; C-4 ; D-3
+= 1
+~ The key pairs glycine, the classic neutral amino acid with pI near 6, with lowest solubility at its isoelectric point, where it is a net-neutral zwitterion. It pairs the acidic glutamate (pI about 3.2) with solubility in acidic pH, the basic lysine (pI about 9.7) with solubility in basic pH, and histidine with variable solubility. The wording of the question is loose, since every amino acid is least soluble at its own pI. (Official key; some sources differ.)
+
+Q 49 | chm | Amino Acids & Proteins
+Which aldehyde is used in Strecker’s synthesis to produce glycine?
+(1) Formaldehyde
+(2) Acetaldehyde
+(3) Benzaldehyde
+(4) Propionaldehyde
+= 1
+~ In the Strecker synthesis, RCHO + NH3 + HCN gives RCH(NH2)CN, which is hydrolysed to RCH(NH2)COOH, so the R group of the aldehyde becomes the side chain. Glycine has R = H, so the aldehyde is formaldehyde (HCHO). Acetaldehyde gives alanine, and benzaldehyde gives phenylglycine.
+
+Q 50 | chm | Amino Acids & Proteins
+Which of the following steps completes the conversion of α-aminonitrile to alanine in Strecker’s synthesis?
+(1) Oxidation
+(2) Reduction
+(3) Hydrolysis
+(4) Decarboxylation
+= 3
+~ In the Strecker synthesis acetaldehyde, NH3 and HCN give the alpha-aminonitrile CH3CH(NH2)CN. Heating it with aqueous acid (or base) hydrolyses the nitrile group to a carboxylic acid, giving alanine, CH3CH(NH2)COOH. No oxidation, reduction or decarboxylation step is involved.
+
+Q 51 | chm | Amino Acids & Proteins
+Match the amino acid with the characteristic of its side chain that affects its solubility in water.
+Amino acids | Characteristic of side chain
+P. Serine | A. Contains a sulfur atom in the side chain
+Q. Cysteine | B. Contains a polar hydroxyl group
+R. Isoleucine | C. Contains an amide group
+S. Glutamine | D. Branched, aliphatic, hydrophobic, non-polar side chain
+(1) P – B, Q – C, R – A, S – D
+(2) P – C, Q – A, R – D, S – B
+(3) P – D, Q – A, R – B, S – C
+(4) P – B, Q – A, R – D, S – C
+= 4
+~ Serine has a -CH2OH side chain with a polar hydroxyl group (P-B). Cysteine has -CH2SH, a sulfur-containing thiol (Q-A). Isoleucine has a branched, hydrophobic, aliphatic side chain (R-D), and glutamine has an amide group, -CH2CH2CONH2 (S-C).
+
+Q 52 | chm | Amino Acids & Proteins
+Which of the following statements is/are correct regarding acidic amino acids?
+A) Acidic amino acids contain two amino groups and one carboxyl group.
+B) Acidic amino acids have a net negative charge at physiological pH.
+C) Acidic amino acids are nonpolar due to their hydrophobic side chains.
+D) Glutamic acid and Arginine are classified as acidic amino acids.
+(1) Only B
+(2) Only B and C
+(3) Only B and D
+(4) Only A, B and C
+= 1
+~ The acidic amino acids, aspartic acid and glutamic acid, have two carboxyl groups and one amino group, and their side-chain carboxyl is ionised at pH 7.4, giving a net negative charge, so only B is correct. A is reversed (it describes basic amino acids), C is wrong because the charged side chain makes them polar, and D is wrong because arginine is a basic amino acid.
+
+Q 53 | chm | Amino Acids & Proteins
+What is the major product obtained when acetic acid undergoes bromination by the Hell-Volhard-Zelinsky (HVZ) reaction, followed by reaction with ammonia and subsequent hydrolysis of the intermediate ammonium salt?
+(1) Alanine
+(2) Glycine
+(3) Asparagine
+(4) Valine
+= 2
+~ The HVZ reaction (Br2 with red P) brominates acetic acid at the alpha carbon to give bromoacetic acid. Ammonia then replaces the bromine by nucleophilic substitution, and work-up of the ammonium salt gives H2N-CH2-COOH, glycine. Alanine would need propanoic acid as the starting material.
+
+Q 54 | chm | Amino Acids & Proteins
+Which of the following statements about the salt-like character of amino acids are correct?
+A. Amino acids exist as zwitterions at their isoelectric point, carrying both positive and negative charges.
+B. In the solid state, amino acids exhibit ionic interactions, resulting in high melting points.
+C. The salt-like character of amino acids makes them insoluble in polar solvents like water.
+D. Amino acids can react with each other in an acid-base neutralisation reaction to form a salt-like structure.
+(1) Only A and D
+(2) Only A and B
+(3) Only A, B and D
+(4) All the statements are correct
+= 3
+~ A and B are standard: at the isoelectric point an amino acid is a zwitterion with both a positive and a negative charge (and zero net charge), and the ionic lattice in the solid explains the high melting points. D is accepted in the key, since the acidic -COOH and basic -NH2 groups neutralise each other to give the internal salt. C is false because the salt-like character makes amino acids soluble in water and other polar solvents, and insoluble in non-polar ones.
+
+Q 55 | chm | Amino Acids & Proteins
+Match the following reactions of α-amino acids (Column I) with their products (Column II).
+Column I (Reactions) | Column II (Products)
+(i) α-Amino acid + Ninhydrin | (a) N-acyl aminoacids
+(ii) α-Amino acid + Alcohol + HCl | (b) Ruhemann’s purple
+(iii) α-Amino acid + Acetyl chloride | (c) Dinitrophenylamino acids
+(iv) Amino acid + Sanger's reagent | (d) Ester
+(1) (i)-(b); (ii)-(c); (iii)-(d); (iv)-(a)
+(2) (i)-(c); (ii)-(b); (iii)-(a); (iv)-(d)
+(3) (i)-(a); (ii)-(b); (iii)-(c); (iv)-(d)
+(4) (i)-(b); (ii)-(d); (iii)-(a); (iv)-(c)
+= 4
+~ Ninhydrin reacts with alpha-amino acids to give the purple dye Ruhemann's purple (i-b). An alcohol with HCl esterifies the carboxyl group (ii-d), and acetyl chloride acylates the amino group to give an N-acyl amino acid (iii-a). Sanger's reagent, 2,4-dinitrofluorobenzene, gives dinitrophenyl (DNP) amino acids (iv-c).
+
+Q 56 | chm | Amino Acids & Proteins
+Which of the following reactions is involved in the synthesis of glycine from chloroacetic acid?
+(1) Gabriel phthalimide synthesis
+(2) Hofmann bromamide reaction
+(3) Nucleophilic substitution with ammonia
+(4) Strecker synthesis
+= 3
+~ Chloroacetic acid reacts with an excess of ammonia in an SN2 reaction, in which NH3 displaces chloride, to give glycine: ClCH2COOH + 2NH3 → H2NCH2COOH + NH4Cl. The Gabriel synthesis would use potassium phthalimide, not ammonia, and the Strecker synthesis starts from an aldehyde, so neither is the reaction described. The Hofmann bromamide reaction converts an amide to an amine.
+
+Q 57 | chm | Amino Acids & Proteins
+For an amino acid with both an amino group (–NH₂) and a carboxyl group (–COOH), which of the following statements about its isoelectric point (pI) is correct?
+(1) The isoelectric point occurs at the pH where the amino acid exists solely as a zwitterion.
+(2) The isoelectric point is calculated as the average of the pKa values for the amino group and the carboxyl group.
+(3) The pI of an amino acid is the pH at which the molecule has the maximum net charge.
+(4) The pI depends only on the side chain functional group, not on the amino and carboxyl groups.
+= 2
+~ For an amino acid with no ionisable side chain, pI = (pKa1 + pKa2)/2, the mean of the carboxyl and ammonium pKa values; for glycine, (2.34 + 9.60)/2 ≈ 5.97. At the pI the net charge is zero, not maximum (option 3), and although the zwitterion predominates, small amounts of other species are still present, which makes "solely" in option 1 too strong.
+
+Q 58 | chm | Amino Acids & Proteins
+In the following questions, a statement is provided, followed by two conclusions. Read the statements carefully to determine which of the given conclusions logically follow based on the information provided in the statement.
+Statement: Arginine is considered a conditionally essential amino acid because it is synthesised in the human body but may require supplementation during periods of rapid growth or illness.
+Conclusion I: Arginine is always classified as a non-essential amino acid in adults.
+Conclusion II: In times of increased metabolic demand, dietary intake of arginine can become necessary.
+(1) Only Conclusion I is correct.
+(2) Only Conclusion II is correct.
+(3) Both Conclusions I and II are correct.
+(4) Neither Conclusion I nor II is correct.
+= 2
+~ A conditionally essential amino acid is normally made by the body (arginine through the urea cycle) but not in sufficient amounts at times of rapid growth, stress or illness. The statement therefore supports II, that diet may be needed during high demand. I does not follow, because the word "conditionally" means arginine is not always non-essential.
+
+Q 59 | chm | Amino Acids & Proteins
+Which reagent is used to synthesise α-amino acids from α-halo carboxylic acids?
+(1) Ammonia
+(2) Sodium hydroxide
+(3) Hydrogen peroxide
+(4) Sodium chloride
+= 1
+~ An alpha-halo carboxylic acid (made by the HVZ reaction) is treated with excess ammonia, which replaces the halogen by an amino group through nucleophilic substitution to give the alpha-amino acid. Sodium hydroxide would give an alpha-hydroxy acid instead, and hydrogen peroxide and sodium chloride do not introduce an amino group.
+
+Q 60 | chm | Amino Acids & Proteins
+Why does the solubility of an amino acid decrease at its isoelectric point?
+(1) The amino acid forms ions that aggregate.
+(2) The amino acid forms a zwitter ion, reducing its interaction with water molecules.
+(3) The amino acid becomes entirely nonpolar.
+(4) The amino acid completely dissociates.
+= 2
+~ At the isoelectric point the amino acid is a net-neutral zwitterion. Without a net charge it hydrates less strongly, and zwitterions attract one another in the crystal, so the molecules aggregate and the solubility is at its minimum. Away from the pI the molecules carry a net charge and are more strongly hydrated. It never becomes entirely nonpolar or "completely dissociated".
+
+Q 61 | chm | Green Chemistry
+In the context of solvent-free organic synthesis, which of the following techniques is NOT used?
+(1) Ball milling of solid reactants
+(2) Solid-state reactions on heating
+(3) Solid-state reactions using solid supports
+(4) Reactions involving liquid-phase solvents
+= 4
+~ Solvent-free (dry-media) synthesis uses ball milling or grinding of solid reactants, heating or microwave irradiation of solid mixtures, and reactions on solid supports such as alumina, silica or clay. Using a liquid-phase solvent is by definition not a solvent-free technique.
+
+Q 62 | chm | Green Chemistry
+Match the green oxidation reactions in Column I with their corresponding products in Column II:
+Column I (Oxidation Reactions) | Column II (Products)
+(i) Sonication of a secondary alcohol with KMnO₄ in hexane | (a) Carboxylic acid
+(ii) Microwave irradiation of benzaldehyde in air | (b) Benzoic acid
+(iii) Microwave irradiation of primary alcohols sodium tungstate in 30% aqueous hydrogen peroxide. | (c) Ketone
+(1) i - a, ii - b, iii - c
+(2) i - b, ii - a, iii - c
+(3) i - c, ii - a, iii - b
+(4) i - c, ii - b, iii - a
+= 4
+~ Oxidising a secondary alcohol stops at the ketone (i-c). Benzaldehyde oxidises by air under microwave irradiation to benzoic acid (ii-b), and a primary alcohol oxidised with sodium tungstate and 30% H2O2 goes all the way to the carboxylic acid (iii-a).
+
+Q 63 | chm | Green Chemistry
+In the microwave-assisted Sonogashira coupling reaction, which of the following is used as catalyst for carrying out solvent free reaction?
+(1) Palladium-doped alumina in the presenceof triphenyl phosphine
+(2) Pyrophosporic acid
+(3) MnO2 impregnated on silica
+(4) Diphenylcarbonate and tin catalyst
+= 1
+~ In the solvent-free microwave Sonogashira coupling of aryl halides with terminal alkynes (Kabalka's work), the reagents are adsorbed on alumina doped with palladium, with triphenylphosphine and CuI as additives. Pyrophosphoric acid, supported MnO2 and diphenyl carbonate with a tin catalyst belong to other reactions (such as oxidation or polycarbonate formation), not Sonogashira coupling.
+
+Q 64 | chm | Green Chemistry
+In the following questions, a statement is provided followed by a conclusion. Read the statement carefully to determine whether the conclusion logically follows based solely on the information given in the statement and choose the most appropriate option.
+Statement: Solvent-free Wittig reactions improve the reaction yield.
+Conclusion: The absence of solvent reduces side reactions and facilitates direct reactant interaction.
+(1) Only the statement is true.
+(2) Only the conclusion is true.
+(3) Both the statement and the conclusion are true.
+(4) Both the statement and the conclusion are false.
+= 3
+~ Solvent-free Wittig reactions, done by grinding or heating the phosphonium salt, base and aldehyde together, commonly give good yields. The reactants are at their highest concentration and in direct contact, and there are fewer solvent-related side reactions, so the conclusion also holds. Both are accepted as true.
+
+Q 65 | chm | Green Chemistry
+Which reducing agent is commonly used in solvent-free reduction of ketones to secondary alcohols?
+(1) Sodium borohydride
+(2) Lithium aluminium hydride
+(3) Zinc and hydrochloric acid
+(4) Palladium on carbon
+= 1
+~ Solid ketones can be reduced to secondary alcohols with solid sodium borohydride in the solid state (Toda's solvent-free method), because NaBH4 is stable and easy to handle. LiAlH4 reacts violently with moisture and needs dry ether, Zn/HCl (Clemmensen) reduces C=O to CH2, and Pd/C needs hydrogen gas.
+
+Q 66 | chm | Green Chemistry
+In the solvent-free Strecker reaction, which of the following is the key feature?
+(1) The reaction produces an imidazole intermediate.
+(2) An aldehyde or ketone reacts with ammonium cyanide and a cyanide salt.
+(3) A base is required to facilitate the reaction.
+(4) The reaction occurs exclusively in the presence of water.
+= 2
+~ The Strecker reaction combines a carbonyl compound (aldehyde or ketone), an ammonia or amine source and a cyanide source to give an alpha-aminonitrile; the solvent-free version simply runs this three-component condensation without solvent. The keyed option is the closest to this description. An imidazole intermediate is not formed, no base is needed, and "exclusively in water" contradicts solvent-free conditions.
+
+Q 67 | chm | Green Chemistry
+Select the correct answer option based on the following assertion and reasoning.
+Assertion (A): Ultrasound-assisted green synthesis is considered a sustainable approach for solvent-free reactions.
+Reason (R): The acoustic cavitation generated by ultrasound produces high-energy conditions that eliminate the need for solvents and high reaction temperatures.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both  A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 1
+~ Ultrasound drives bubbles to grow and collapse (acoustic cavitation), creating local hot spots of very high temperature and pressure while the bulk liquid stays near room temperature. These intense local conditions speed up reactions without bulk heating or large amounts of solvent, which is why the method is regarded as green, so R explains A.
+
+Q 68 | chm | Green Chemistry
+Which of the following statements about solid-state reactions using solid supports is correct?
+(1) Solvents like water, alcohol, or methylene chloride are used to dissolve reactants before adsorption onto solid supports.
+(2) Solid-state reactions do not require the use of adsorbents such as silica gel, alumina, or phyllosilicates.
+(3) Solid-state reactions are exclusively performed using solvents and cannot proceed under solvent-free conditions.
+(4) Solvents like water, alcohol, or methylene chloride are never used in solid-state reactions using solid supports.
+= 1
+~ In the supported (dry-media) technique the reactants are first dissolved in a volatile solvent such as water, alcohol or methylene chloride and mixed with the solid support (silica gel, alumina or clay). The solvent is then evaporated and the dry powder is reacted, often with microwaves. Options 2, 3 and 4 contradict this: supports are used, the reaction itself is solvent-free, and solvents are used only in the loading step.
+
+Q 69 | chm | Green Chemistry
+What is the main product of alkylating 2-thiopyridine with a phase-transfer catalyst?
+(1) N-alkylated product
+(2) S-alkylated product
+(3) N, S-dialkylated product
+(4) C-alkylated product
+= 2
+~ 2-Thiopyridine (pyridine-2-thione) forms an ambident anion, and the soft, highly polarisable sulfur atom is the more reactive nucleophile toward alkyl halides. Under phase-transfer conditions it is therefore alkylated mainly on sulfur, giving 2-(alkylthio)pyridine, rather than on nitrogen or carbon.
+
+Q 70 | chm | Green Chemistry
+Which of the following is a key advantage of solvent-free C-alkylation reactions?
+(1) Higher reaction temperatures
+(2) Reduced waste generation
+(3) Increased use of organic solvents
+(4) Longer reaction times
+= 2
+~ Omitting the solvent removes the main source of chemical waste (green chemistry principle of waste prevention) and also makes work-up simpler and cheaper. Higher temperatures, more organic solvent and longer reaction times are drawbacks, whereas solvent-free reactions are usually faster.
+
+Q 71 | chm | Green Chemistry
+In solvent-free conditions, what acts as the catalyst for the Biginelli reaction?
+(1) Lewis acids like FeCl3
+(2) Bases like NaOH
+(3) Organometallic compounds
+(4) Ionic liquids
+= 1
+~ The Biginelli reaction (an aldehyde, a beta-keto ester and urea condensing to a dihydropyrimidinone) is acid-catalysed. Under solvent-free conditions Lewis acids such as FeCl3 (and others like InCl3 or Yb(OTf)3) are used, usually with heating or microwaves. A strong base such as NaOH does not catalyse the reaction.
+
+Q 72 | chm | Green Chemistry
+In solvent-free C-alkylation reactions, which of the following factors primarily facilitates the reaction?
+(1) High-pressure gaseous environment
+(2) Use of a non-volatile liquid reagent to act as a pseudo-solvent
+(3) Introduction of an inert gas atmosphere to stabilise intermediates
+(4) Mechanical energy such as grinding or ball milling
+= 4
+~ With no solvent to bring the reactants together, solid reagents and bases have to be mixed intimately, and mechanical energy from grinding or ball milling provides this contact and the activation needed. Gas pressure and an inert atmosphere (options 1 and 3) are not what drives such alkylations, and option 2 still depends on a liquid medium, so APPSC took mechanical energy as the primary factor.
+
+Q 73 | chm | Green Chemistry
+In ultrasound-assisted solvent-free green synthesis, what is the primary mechanism by which ultrasound accelerates chemical reactions?
+(1) Direct transfer of ultrasonic energy to chemical bonds
+(2) Continuous agitation of reactants to ensure uniform mixing
+(3) Generation of high temperatures and pressures due to acoustic cavitation
+(4) Release of reactive radicals that directly attack reactants
+= 3
+~ Ultrasound works through acoustic cavitation: microscopic bubbles form, grow and collapse violently, producing local hot spots of several thousand kelvin and hundreds of atmospheres, which accelerate the reaction. The sound wave itself is far too long to couple directly with bonds (option 1). Mixing and radical formation can contribute, but they are secondary effects of cavitation.
+
+Q 74 | chm | Green Chemistry
+In solvent-free hydroboration, the anti-Markovnikov addition of boron to alkenes occurs primarily due to _____.
+(1) polarity
+(2) pressure
+(3) solvent
+(4) temperature
+= 1
+~ In hydroboration, B-H adds across C=C with boron, the electron-deficient end, attaching to the less substituted carbon and hydrogen to the more substituted one, which is anti-Markovnikov orientation. This regiochemistry arises from the polarity of the B-H bond and the electronic and steric preference of the addition, not from pressure, solvent or temperature.
+
+Q 75 | chm | Green Chemistry
+Which of the following statements is INCORRECT regarding the Stille reaction in the context of green synthesis?
+(1) The reaction involves the coupling of alkenyl and aryl halides with organostannanes in the presence of a palladium catalyst.
+(2) Replacing conventional solvents with ionic liquids or water can improve the reaction's sustainability while retaining high efficiency.
+(3) The use of organotin reagents in the Stille reaction aligns with green chemistry principles due to their low environmental impact.
+(4) Microwave-assisted Stille reactions contribute to greener practices by reducing energy consumption and reaction times.
+= 3
+~ Organotin (organostannane) reagents and their tin by-products are toxic and persistent in the environment, which is the main drawback of the Stille reaction, so claiming "low environmental impact" is incorrect. The other statements are accurate: Pd-catalysed coupling of alkenyl or aryl halides with organostannanes, greener media such as water or ionic liquids, and microwave heating that shortens reaction times.
+
+Q 76 | chm | Green Chemistry
+Which of the following statements regarding N-alkylation reactions in organic synthesis are correct?
+A. In these reactions, an alkyl group is transferred to a nitrogen atom, forming a carbon-nitrogen bond, commonly involving compounds like amines, amides, or nitrogenous bases.
+B. These reactions proceed efficiently under solvent-free, microwave, or sonication conditions when phase-transfer catalysts (PTCs) are used.
+C. Aziridines, which are prone to decomposition under conventional conditions, can undergo quantitative alkylation under phase-transfer catalytic (PTC) conditions.
+D. Adenine alkylation under PTC conditions (e.g., with methyltricaprylammonium chloride) selectively yields the N9-isomer, which is important in pharmaceutical synthesis.
+(1) Only A and B are correct.
+(2) Only A and C are correct.
+(3) Only A, B and C are correct.
+(4) All statements are correct.
+= 4
+~ All four statements are accepted as correct. N-alkylation attaches an alkyl group to nitrogen (amines, amides, N-heterocycles), and phase-transfer catalysts such as quaternary ammonium salts let it run efficiently without solvent under microwave or ultrasound. Sensitive aziridines can be alkylated quantitatively under PTC, and adenine alkylation with a quaternary ammonium salt such as methyltricaprylammonium chloride (Aliquat 336) is selective for N9, the isomer needed for nucleoside-type drugs.
+
+Q 77 | chm | Green Chemistry
+Which type of reaction is commonly enhanced by phase transfer catalysts in solvent-free conditions?
+(1) Nucleophilic substitution reactions involving ionic compounds
+(2) Radical polymerisation reactions
+(3) Homogeneous catalysis reactions
+(4) Photochemical reactions
+= 1
+~ A phase-transfer catalyst (for example a quaternary ammonium salt) carries an ionic nucleophile such as OH-, CN- or an enolate into the organic reactant, so substitutions involving ionic compounds (alkylations, Williamson ether synthesis) go smoothly even without solvent. Radical polymerisation, homogeneous catalysis and photochemical reactions do not depend on moving ions between phases.
+
+Q 78 | chm | Green Chemistry
+In a solvent-free Darzen's reaction, why is it advantageous to avoid the use of organic solvents?
+(1) It reduces the need for high temperatures.
+(2) It decreases the environmental impact by eliminating waste solvents.
+(3) It increases the rate of the reaction by providing more reactive intermediates.
+(4) It prevents side reactions from occurring.
+= 2
+~ The Darzens condensation (an alpha-halo ester or ketone plus a carbonyl compound and a base, giving an epoxide) is carried out solvent-free as a green-chemistry measure. Organic solvents are the largest source of chemical waste, toxicity and disposal cost in synthesis, so leaving them out reduces environmental impact. Lower temperature, faster rate or no side reactions are not the main reason and are not guaranteed.
+
+Q 79 | chm | Green Chemistry
+Which of the following substrates is the most challenging for a Suzuki reaction under solvent-free conditions?
+(1) Aryl iodides
+(2) Aryl bromides
+(3) Aryl chlorides
+(4) Vinyl boronic acids
+= 3
+~ In palladium-catalysed Suzuki coupling the oxidative-addition step follows the reactivity order Ar-I > Ar-Br >> Ar-Cl, because the C-Cl bond is the strongest and the least reactive towards Pd(0). Aryl chlorides therefore usually need special electron-rich ligands or harsher conditions, which is hardest to arrange without a solvent. Vinyl boronic acids are good coupling partners.
+
+Q 80 | chm | Green Chemistry
+In the solvent-free Darzens reaction, which of the following conditions is essential for epoxide formation?
+(1) A strong acid to catalyse the reaction
+(2) A base to generate the enolate intermediate
+(3) A Lewis acid to stabilise the carbonyl group
+(4) A solvent to dissolve the reactants
+= 2
+~ In the Darzens (glycidic ester) reaction a base removes the alpha-proton of the alpha-halo ester to give an enolate, which adds to the carbonyl compound; the resulting alkoxide then displaces the halide intramolecularly to close the epoxide ring. An acid or Lewis acid cannot generate the enolate, and a solvent is not needed in the solvent-free version.
+
+Q 81 | chm | Photochemistry & Spectroscopy
+Which of the following transitions typically requires the highest energy in a molecule?
+(1) π → π*
+(2) n → π*
+(3) σ → σ*
+(4) π → σ*
+= 3
+~ A sigma bond is the strongest bonding orbital, so the sigma to sigma-star gap is the largest of all electronic transitions and appears in the vacuum UV (below about 150 nm, e.g. alkanes). pi to pi-star and n to pi-star lie in the near-UV, and pi to sigma-star needs less energy than sigma to sigma-star. The usual energy order is sigma-sigma* > n-sigma* > pi-pi* > n-pi*.
+
+Q 82 | chm | Photochemistry & Spectroscopy
+Which property of manganese ions allows their quantification in UV-Vis spectroscopy?
+(1) Fluorescence
+(2) Paramagnetic behaviour
+(3) Characteristic absorption spectrum
+(4) High oxidation potential
+= 3
+~ Manganese is usually determined spectrophotometrically after oxidising it to the intensely purple permanganate ion, MnO4-, which has a characteristic absorption maximum near 525 nm; absorbance at that wavelength is proportional to concentration (Beer-Lambert law). Paramagnetism and oxidation potential are not what a UV-Vis instrument measures, and permanganate is not used for its fluorescence.
+
+Q 83 | chm | Photochemistry & Spectroscopy
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusion(s) can be drawn definitely from the given statement.
+Statements:
+A solution in a 1 cm cuvette has a transmittance of 25% when measured at 400 nm. Given: log 4 = 0.602.
+Conclusions:
+I. The absorbance of the solution is 0.60.
+II. The solution transmits 25% of the incident light intensity at the specified wavelength.
+(1) Only Conclusion I is correct.
+(2) Only Conclusion II is correct.
+(3) Both Conclusion I and Conclusion II are correct.
+(4) Neither Conclusion I nor Conclusion II is correct.
+= 3
+~ Absorbance A = -log T = -log(0.25) = log 4 = 0.602, which is 0.60 to two decimal places, so Conclusion I follows. Conclusion II simply restates the given 25% transmittance. Both are therefore correct.
+
+Q 84 | chm | Photochemistry & Spectroscopy
+Match the following spectrophotometer types (Column I) with their respective features (Column II).
+Column I (Spectrophotometer) | Column II (Features)
+(i) Single Beam Spectrophotometer | (a) Simultaneously compares sample and reference
+(ii) Double Beam Spectrophotometer | (b) Requires a single light path
+ | (c) Uses two detectors
+ | (d) Measures the sample and reference separately, one after the other
+(1) (i)-(d, c); (ii)-(a, b)
+(2) (i)-(a, c); (ii)-(b, d)
+(3) (i)-(b, d); (ii)-(a, c)
+(4) (i)-(a, b); (ii)-(c, d)
+= 3
+~ A single-beam instrument has one light path and measures the blank (reference) and the sample one after the other. A double-beam instrument splits the light and compares sample and reference simultaneously, in many designs using two detectors. So single beam is (b, d) and double beam is (a, c).
+
+Q 85 | chm | Photochemistry & Spectroscopy
+In the following questions, a statement is provided followed by a conclusion. Read the statement carefully to determine whether the conclusion logically follows based solely on the information given in the statement and choose the most appropriate option.
+Statement: In spectroscopic analysis, transmittance decreases with an increase in solute concentration.
+Conclusion: Higher solute concentrations lead to greater absorption of light.
+(1) Both statement and conclusion are true, and the conclusion explains the statement.
+(2) Both statement and conclusion are true, but the conclusion does not explain the statement.
+(3) The statement is true, but the conclusion is false.
+(4) Both statement and conclusion are false.
+= 1
+~ By the Beer-Lambert law, A = -log T = εcl, so a higher concentration gives higher absorbance and lower transmittance. The conclusion (more light is absorbed at higher concentration) is true, and it is exactly the reason why less light is transmitted.
+
+Q 86 | chm | Photochemistry & Spectroscopy
+In the given question two statements are provided: Assertion (A) and Reason (R). Read both statements carefully, determine their relationship and choose the most appropriate option.
+Assertion (A): The molar absorptivity of a compound changes with the solvent used.
+Reason (R): Solvent interactions can alter the energy levels of molecular orbitals involved in electronic transitions.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 1
+~ Solute-solvent interactions (polarity, hydrogen bonding) stabilise the ground and excited states to different extents, shifting the energies of the orbitals involved in the transition and so changing both the wavelength of maximum absorption and the molar absorptivity. R is true and is the reason for A.
+
+Q 87 | chm | Photochemistry & Spectroscopy
+Which of the following can cause deviations from the Beer-Lambert law?
+(1) Stray light in the spectrophotometer
+(2) Use of a standard quartz cuvette
+(3) A perfectly monochromatic light source
+(4) Dilute solutions
+= 1
+~ Real deviations from the Beer-Lambert law come from stray light, polychromatic radiation, high concentrations, chemical association or dissociation of the absorber, and refractive-index changes. A standard quartz cuvette is normal practice, a perfectly monochromatic source is the ideal condition for the law, and dilute solutions are where the law holds best.
+
+Q 88 | chm | Photochemistry & Spectroscopy
+If a solution has a transmittance of 50%, what is its absorbance?
+(1) 0.3
+(2) 0.5
+(3) 1.0
+(4) 2.0
+= 1
+~ A = -log10 T = -log10(0.50) = log10 2 = 0.301, which is about 0.3. Absorbance of 0.5 would correspond to a transmittance of about 32%, and an absorbance of 1.0 to 10%.
+
+Q 89 | chm | Photochemistry & Spectroscopy
+Which of the following statements regarding the electronic spectra of K₂Cr₂O₇ (potassium dichromate) is/are correct?
+A. The absorption in the UV-Vis region is primarily due to metal-to-ligand charge transfer (MLCT) transitions.
+B. The colour of K₂Cr₂O₇ is due to d-d transitions of chromium in the Cr₂O₇²⁻ ion.
+C. The electronic spectrum shows intense absorption peaks in the visible range due to chromium 3d–4s transitions.
+D. The absorption in the UV-Vis region is primarily due to ligand-to-metal charge transfer (LMCT) transitions.
+(1) A and B
+(2) B and D
+(3) A and C
+(4) Only D
+= 4
+~ Chromium in dichromate is Cr(VI), a d0 ion, so d-d transitions are impossible. Its orange colour comes from intense ligand-to-metal charge transfer (O to Cr) bands in the UV-visible region. MLCT would need an electron-rich, low-valent metal, and 3d-4s transitions are not a feature of its spectrum, so only D is correct.
+
+Q 90 | chm | Photochemistry & Spectroscopy
+A solution exhibits an absorbance of 0.6 at a wavelength of 400 nm in a 1 cm cuvette. The molar absorptivity (ε) of the compound at this wavelength is 3 × 10³ L mol⁻¹cm⁻¹. What is the concentration of the compound in the solution?
+(1) 2.0 × 10⁻³ mol/L
+(2) 2.0 × 10⁻⁴ mol/L
+(3) 6.0 × 10⁻³ mol/L
+(4) 6.0 × 10⁻⁴ mol/L
+= 2
+~ By the Beer-Lambert law A = εcl, so c = A/(εl) = 0.6 / (3 × 10³ × 1) = 2.0 × 10⁻⁴ mol/L. The other options are off by a factor of ten or ignore the 3 in ε.
+
+Q 91 | chm | Photochemistry & Spectroscopy
+What advantage does the use of a photodiode array detector provide in double-beam spectrophotometers?
+(1) Reduced cost of analysis
+(2) Simultaneous measurement across multiple wavelengths
+(3) Enhanced beam splitting efficiency
+(4) Improved mechanical stability
+= 2
+~ A photodiode array has many detector elements, each recording a different wavelength at the same moment, so a complete spectrum is captured in a fraction of a second without scanning the monochromator. That is its main advantage; it does not by itself make the analysis cheaper or improve beam splitting.
+
+Q 92 | chm | Photochemistry & Spectroscopy
+What is the molar absorptivity if a 0.01 M solution gives an absorbance of 0.2 in a 1 cm cuvette?
+(1) 10 L·mol⁻¹·cm⁻¹
+(2) 20 L·mol⁻¹·cm⁻¹
+(3) 200 L·mol⁻¹·cm⁻¹
+(4) 100 L·mol⁻¹·cm⁻¹
+= 2
+~ From A = εcl, ε = A/(cl) = 0.2 / (0.01 × 1) = 20 L mol⁻¹ cm⁻¹. The value 200 would result from dividing by 0.001 instead of 0.01.
+
+Q 93 | chm | Chromatography & Analytical Methods
+Which of the following materials is commonly used as the stationary phase in gas-liquid chromatography (GLC)?
+(1) Silica gel
+(2) Inert gas
+(3) A liquid coated on an inert solid support
+(4) Active carbon
+= 3
+~ In gas-liquid chromatography the stationary phase is a non-volatile liquid (for example a silicone oil or Carbowax) coated on an inert solid support such as diatomaceous earth, or on the wall of a capillary column. Silica gel and active carbon are solid adsorbents used in gas-solid chromatography, and the inert gas (He, N2) is the mobile phase.
+
+Q 94 | chm | Chromatography & Analytical Methods
+Which of the following acts as the stationary phase in paper chromatography?
+(1) The solvent
+(2) The paper itself
+(3) Water retained in the paper fibres
+(4) The solutes being separated
+= 3
+~ Cellulose fibres hold a layer of adsorbed water, and this bound water is the stationary phase; the separation is really a liquid-liquid partition between this water and the moving organic solvent. The paper is only the support, so option 2 is wrong, and the solvent is the mobile phase.
+
+Q 95 | chm | Chromatography & Analytical Methods
+Which of the following directly leads to an increase in the resolution of a chromatographic column?
+(1) Decreasing the particle size of the stationary phase
+(2) Decreasing the column length
+(3) Using a less polar solvent as the mobile phase
+(4) Decreasing the mobile phase flow rate
+= 1,4
+~ Resolution increases with the plate number N (Rs is proportional to the square root of N). Smaller particles lower the plate height, and reducing the flow rate towards the van Deemter optimum reduces band broadening from slow mass transfer, so both options 1 and 4 improve resolution and APPSC accepted either. A shorter column lowers N and resolution, and the effect of a less polar mobile phase depends on the system.
+
+Q 96 | chm | Chromatography & Analytical Methods
+Which of the following is most directly involved in the separation of components during the development of a chromatogram?
+(1) The solubility of the components in the mobile phase
+(2) The rate at which the components react with each other
+(3) The interaction between the components and the stationary phase
+(4) The colour of the components in the mixture
+= 3
+~ Components separate because they interact to different extents with the stationary phase (adsorption or partition), so some are held back more than others while the mobile phase carries them along. Solubility in the mobile phase also matters, but the differential interaction with the stationary phase is what decides the separation. Reactions between components and colour play no part.
+
+Q 97 | chm | Chromatography & Analytical Methods
+Which of the following is the primary principle behind the separation technique used in chromatography?
+(1) Components are separated based on their different boiling points.
+(2) Components are separated based on their difference in solubility in the mobile phase.
+(3) Components are separated based on their ability to form chemical bonds.
+(4) Components are separated based on their difference in colour.
+= 2
+~ Chromatography separates components by their differential distribution between a stationary and a mobile phase, which depends on how soluble each is in the mobile phase relative to its affinity for the stationary phase. Boiling point is the basis of distillation, and neither covalent bond formation nor colour is the principle of separation.
+
+Q 98 | chm | Chromatography & Analytical Methods
+What is the role of a mobile phase in chromatography?
+(1) To act as a solvent for the stationary phase
+(2) To carry the analytes through the stationary phase
+(3) To separate analytes chemically
+(4) To evaporate the solvent
+= 2
+~ The mobile phase (a liquid or a gas) flows over or through the stationary phase and carries the sample components along. The separation itself comes from their different retention on the stationary phase, not from any chemical action of the mobile phase, and the mobile phase does not dissolve the stationary phase.
+
+Q 99 | chm | Chromatography & Analytical Methods
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): The Van Deemter equation describes the relationship between plate height and the flow rate in a chromatography column.
+Reason (R): Plate height is inversely proportional to column efficiency.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 1
+~ The Van Deemter equation, H = A + B/u + Cu, relates plate height H to the linear flow rate u, so A is true. Since N = L/H, a smaller plate height means more plates and a more efficient column, so R is also true; APPSC treated R as the explanation of A, although R really describes efficiency rather than the equation. (Official key; some sources differ.)
+
+Q 100 | chm | Chromatography & Analytical Methods
+How is column chromatography applied in natural product research?
+(1) Estimation of protein concentration
+(2) Separation and isolation of bioactive compounds
+(3) Testing for toxicity of compounds
+(4) Determining the specific heat of a substance
+= 2
+~ Column chromatography on silica gel or alumina is the standard way to fractionate crude plant or microbial extracts and isolate pure bioactive compounds such as alkaloids, flavonoids and terpenoids. It is not a method for protein estimation, toxicity testing or measuring specific heat.
+
+Q 101 | chm | Chromatography & Analytical Methods
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusion(s) can be drawn definitely from the given statement.
+Statement:
+The retardation factor (Rf) in thin-layer chromatography (TLC) is defined as the ratio of the distance traveled by the solute spot to the distance traveled by the solvent front.
+Conclusions:
+I. The Rf value is always less than or equal to 1.
+II. A lower Rf value indicates greater affinity of the solute for the mobile phase compared to the stationary phase.
+(1) Only Conclusion I is correct.
+(2) Only Conclusion II is correct.
+(3) Both Conclusion I and Conclusion II are correct.
+(4) Neither Conclusion I nor Conclusion II is correct.
+= 1
+~ Rf = distance moved by the solute spot / distance moved by the solvent front, and a spot cannot travel farther than the front, so Rf is at most 1 (Conclusion I). A low Rf means the solute is held strongly by the stationary phase and moves little, which is the opposite of Conclusion II.
+
+Q 102 | chm | Chromatography & Analytical Methods
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusion(s) can be drawn definitely from the given statement.
+Statement:
+In thin-layer chromatography (TLC), sample application involves placing the sample in a small spot on the stationary phase.
+Conclusions:
+I. The sample should be applied using a fine capillary tube to achieve a small, concentrated spot.
+II. The sample should be applied in a large volume to ensure enough substance is available for detection.
+(1) Only Conclusion I is correct.
+(2) Only Conclusion II is correct.
+(3) Both Conclusion I and Conclusion II are correct.
+(4) Neither Conclusion I nor Conclusion II is correct.
+= 1
+~ A fine capillary or micropipette gives a small, concentrated starting spot and therefore sharp, well-resolved spots after development. Applying a large volume makes a broad spot that spreads and overlaps with neighbours, so Conclusion II is wrong; more material can be deposited by repeated small applications with drying in between.
+
+Q 103 | chm | Chromatography & Analytical Methods
+Match the components of a high-performance liquid chromatography (HPLC) system (Column A) with their primary functions (Column B).
+Column I Components | Column II Functions
+(i) Pump | (a) Introduces the sample into the mobile phase
+(ii) Injector | (b) Monitors the eluted analytes using signals
+(iii) Column | (c) Maintains a precise flow of the mobile phase
+(iv) Detector | (d) Separates analytes based on their affinities
+(1) (i)-(c); (ii)-(b); (iii)-(a); (iv)-(d)
+(2) (i)-(b); (ii)-(c); (iii)-(d); (iv)-(a)
+(3) (i)-(a); (ii)-(c); (iii)-(b); (iv)-(d)
+(4) (i)-(c); (ii)-(a); (iii)-(d); (iv)-(b)
+= 4
+~ The pump delivers a steady, precise flow of mobile phase; the injector introduces the sample into the mobile-phase stream; the column separates analytes according to their affinities for the stationary phase; and the detector monitors the eluted analytes and produces a signal. That gives (i)-(c), (ii)-(a), (iii)-(d), (iv)-(b).
+
+Q 104 | chm | Chromatography & Analytical Methods
+Which of the following statements are correct regarding the separation column of HPLC?
+A. Most column housings are made of stainless steel, as it is compatible with a wide range of solvents.
+B. Columns packed with smaller particles are more efficient but require higher operating pressures.
+C. The separation column is packed with fine silica or polymer particles to provide a large surface area for analyte interaction.
+D. Temperature control of the column enhances efficiency by improving analyte diffusivity.
+(1) Only A and C
+(2) Only B And C
+(3) Only A, C and D
+(4) All the statements are correct
+= 4
+~ All four are standard HPLC facts. Stainless steel tolerates most solvents and high pressure; smaller particles (for example 3-5 micrometres, or sub-2 micrometre in UHPLC) give higher plate counts but higher back-pressure; the packing is fine silica or polymer beads with a large surface area; and a column oven improves diffusion and the reproducibility of retention.
+
+Q 105 | chm | Chromatography & Analytical Methods
+During the development of a chromatographic plate, which of the following factors is most important in preventing the solvent from running off the top of the plate?
+(1) The type of stationary phase used
+(2) The amount of sample applied to the plate
+(3) The rate at which the solvent moves up the plate
+(4) The height of the solvent in the development chamber
+= 4
+~ In TLC the depth of solvent poured into the chamber fixes how much mobile phase is available and where the development starts; it must stay below the spotting line, and the plate is taken out before the front reaches the top edge. The type of stationary phase and the amount of sample do not control this. The question is loosely worded and option 3 is a competing choice. (Official key; some sources differ.)
+
+Q 106 | chm | Chromatography & Analytical Methods
+In thin-layer chromatography (TLC), if the Rf value of a compound is 0.75, what can be inferred about the compound's interaction with the stationary phase and the mobile phase?
+(1) The compound interacts strongly with the stationary phase and weakly with the mobile phase.
+(2) The compound interacts weakly with the stationary phase and strongly with the mobile phase.
+(3) The compound moves at the same rate as the solvent front.
+(4) The compound has a high solubility in the stationary phase.
+= 2
+~ An Rf of 0.75 means the compound travels three-quarters of the distance moved by the solvent front, so it is held only weakly by the stationary phase and is carried along readily because it has a good affinity for the mobile phase. Moving with the front would need Rf = 1, and strong retention on the stationary phase gives a low Rf.
+
+Q 107 | chm | Chromatography & Analytical Methods
+Which of the following applications is NOT typically associated with High-Performance Liquid Chromatography (HPLC)?
+(1) Determination of caffeine in beverages
+(2) Analysis of volatile organic compounds in air
+(3) Quantification of pharmaceutical drugs
+(4) Separation of proteins in biological samples
+= 2
+~ HPLC suits non-volatile or thermally unstable analytes that are in solution, such as caffeine in beverages, drugs in formulations and proteins. Volatile organic compounds in air are analysed by gas chromatography (GC), usually after thermal desorption or purge-and-trap sampling.
+
+Q 108 | chm | Chromatography & Analytical Methods
+During plate development in chromatography, why is it essential to maintain a closed system for the solvent and plate?
+(1) To minimise solvent evaporation
+(2) To allow faster separation
+(3) To reduce analyte degradation
+(4) To maintain constant temperature
+= 1
+~ The development tank is closed so that its atmosphere becomes saturated with solvent vapour. This minimises evaporation of solvent from the plate surface, which would otherwise make the solvent flow uneven and give irregular, non-reproducible Rf values.
+
+Q 109 | chm | Chromatography & Analytical Methods
+In high-performance liquid chromatography (HPLC), what is the primary function of a guard column?
+(1) To increase resolution
+(2) To remove impurities from the sample
+(3) To prevent damage to the main analytical column
+(4) To control the flow rate
+= 3
+~ A guard column is a short column fitted before the analytical column. It traps particulates and strongly retained or irreversibly adsorbed contaminants, protecting the more expensive analytical column and extending its life. It does not noticeably improve resolution or control the flow.
+
+Q 110 | chm | Chromatography & Analytical Methods
+What could be the primary reason for tailing spots in ascending chromatography?
+(1) High temperature in the development chamber
+(2) Uneven spotting of the sample
+(3) Use of a highly volatile mobile phase
+(4) Overloading the stationary phase
+= 4
+~ Tailing (a comet-shaped, smeared spot) is classically caused by applying more sample than the stationary phase can hold: the sorbent becomes saturated and the excess smears along the path of development. Uneven spotting gives irregular spot shapes, but overloading is the usual cause of tailing.
+
+Q 111 | chm | Chromatography & Analytical Methods
+In a gradient elution program, what is the potential consequence of having a steep gradient slope?
+(1) Decreased resolution between peaks
+(2) Increased retention time for all analytes
+(3) Uniform peak widths for all compounds
+(4) Enhanced detection sensitivity
+= 1
+~ In gradient elution the solvent strength changes during the run. If the gradient is too steep, the mobile phase becomes strong too quickly and analytes are pushed off the column close together, so peaks bunch up and resolution falls. Retention times become shorter, not longer.
+
+Q 112 | chm | Chromatography & Analytical Methods
+In gas-liquid chromatography (GLC), which of the following is correct regarding the effect of column temperatures on the resolution of the sample components?
+(1) Higher temperatures improve resolution by allowing components to spend more time in the gas phase.
+(2) Lower temperatures decrease resolution due to fast elution of components insufficient separation.
+(3) Higher temperatures reduce resolution due to faster elution and insufficient separation.
+(4) Lower temperatures improve resolution by allowing components to spend more time in the gas phase.
+= 3
+~ Raising the column temperature makes components spend more time in the gas phase and elute faster, so they have less time to interact with the liquid phase and resolution falls. Lowering the temperature increases retention and generally improves resolution, at the cost of a longer run. Options 1 and 4 wrongly link better resolution to more time in the gas phase, and option 2 reverses the effect of low temperature.
+
+Q 113 | chm | Chromatography & Analytical Methods
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): In radial paper chromatography, the development of the chromatogram occurs outward toward the periphery of the circular paper.
+Reason (R): In this technique, the sample is applied at the centre of the circular paper, and the mobile phase spreads radially outward, facilitating separation.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, and R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, and R is true.
+= 1
+~ In radial (circular) paper chromatography the sample is spotted at the centre of a circular filter paper and the solvent, fed to the centre through a wick, spreads outwards, so the components appear as concentric arcs or rings towards the periphery. R describes how the technique works and therefore explains A.
+
+Q 114 | chm | Chromatography & Analytical Methods
+In descending thin-layer chromatography (TLC), which of the following factors is primarily responsible for the rate of separation of the components of the sample?
+(1) The rate at which the solvent evaporates from the stationary phase
+(2) The partition coefficient of the components between the stationary phase and the solvent
+(3) The solubility of the components in the stationary phase
+(4) The temperature gradient across the stationary phase
+= 2
+~ How fast a component migrates relative to the solvent depends mainly on its distribution (partition) coefficient between the stationary phase and the mobile phase, whether development is ascending or descending. Solvent evaporation and temperature gradients are experimental nuisances, not the governing factor.
+
+Q 115 | chm | Chromatography & Analytical Methods
+Which of the following factors primarily determines the efficiency of a chromatographic column?
+(1) The particle size of the stationary phase
+(2) The temperature of the laboratory
+(3) The polarity of the stationary phase
+(4) The solvent's refractive index
+= 1
+~ Column efficiency is expressed as the number of theoretical plates, N = L/H. Smaller stationary-phase particles reduce the plate height H (through the eddy-diffusion and mass-transfer terms of the van Deemter equation), so particle size is the main determinant. Stationary-phase polarity affects selectivity rather than efficiency, and refractive index is a detector property.
+
+Q 116 | chm | Chromatography & Analytical Methods
+Which of the following statements correctly describes the role of the pump in a high-performance liquid chromatography (HPLC) delivery system?
+(1) It prevents fluctuations in the pressure of the stationary phase.
+(2) It ensures uniform mixing of the stationary phase with the mobile phase.
+(3) It provides a steady and precise flow of the mobile phase to the column, even under high pressures.
+(4) It controls the temperature of the mobile phase to maintain column efficiency.
+= 3
+~ The HPLC pump delivers the mobile phase to the column at a constant, pulse-free and accurately controlled flow rate against back-pressures of several hundred bar. The stationary phase is packed in the column and does not flow or mix, and temperature control is the job of the column oven.
+
+Q 117 | chm | Chromatography & Analytical Methods
+In thin-layer chromatography (TLC), why is it crucial to keep the solvent level below the sample spot during the experiment?
+(1) To prevent the sample from dissolving in the solvent
+(2) To allow proper capillary action of the mobile phase
+(3) To improve interaction with the stationary phase
+(4) To avoid streaking of the sample
+= 1
+~ The solvent in the chamber must be below the origin line. If the spots were immersed, the sample would dissolve into the solvent pool instead of being carried up the plate by capillary action, and the chromatogram would be lost. Capillary action works as long as the plate edge dips in the solvent.
+
+Q 118 | chm | Chromatography & Analytical Methods
+What is the function of a gradient elution program in liquid chromatography?
+(1) To maintain a constant flow rate of the mobile phase
+(2) To increase the polarity of the mobile phase gradually for better separation
+(3) To reduce the retention time of volatile analytes
+(4) To equilibrate the stationary phase during separation
+= 2
+~ Gradient elution changes the composition (strength) of the mobile phase during the run so that weakly and strongly retained analytes all elute as sharp peaks in a reasonable time. APPSC keyed 'gradually increasing polarity', which fits normal-phase work; in the commonly used reversed-phase mode the gradient lowers polarity by raising the organic solvent fraction. (Official key; some sources differ.)
+
+Q 119 | chm | Chromatography & Analytical Methods
+Match the sample introduction methods (Column A) with their key applications or advantages (Column B).
+Column A | Column B
+A. Headspace analysis | 1. Eliminates sample degradation for sensitive analytes
+B. Matrix-assisted laser desorption | 2. Sample introduction for MALDI-MS
+C. Cold on-column injection | 3. Analysis of volatile organic compounds (VOCs)
+D. Purge-and-trap | 4. Enhances detection of water-soluble volatile analytes
+(1) A - 4, B - 1, C - 3, D - 2
+(2) A - 3, B - 2, C - 1, D - 4
+(3) A - 1, B - 2, C - 3, D - 4
+(4) A - 2, B - 3, C - 1, D - 4
+= 2
+~ Headspace sampling analyses the vapour above a sample and is used for volatile organic compounds (A-3). Matrix-assisted laser desorption is the sample introduction and ionisation method for MALDI-MS (B-2). Cold on-column injection puts the liquid directly on a cool column, avoiding thermal degradation of sensitive analytes in a hot injector (C-1), and purge-and-trap strips volatiles from the sample with gas and concentrates them on a trap, improving detection of water-soluble volatiles (D-4).
+
+Q 120 | chm | Photochemistry & Spectroscopy
+In photosynthesis, how does chlorophyll transfer energy after absorbing light?
+(1) Chlorophyll molecules collide and transfer energy.
+(2) Chlorophyll absorbs light and transfers excited electrons to another molecule.
+(3) Chlorophyll emits light and transfers energy to another molecule.
+(4) Chlorophyll reacts with water to transfer energy.
+= 2
+~ When a chlorophyll molecule absorbs a photon, an electron is raised to a higher energy level; in the reaction centre of a photosystem this excited electron is handed to a primary electron acceptor and passes down the electron-transport chain. The energy is not passed on by collisions, and emission of light (fluorescence) is a loss pathway rather than the transfer step.
+
+Q 121 | chm | Photochemistry & Spectroscopy
+Quantum yield is defined as the ____________.
+(1) number of photons absorbed per mole of substance
+(2) number of molecules reacted per photon absorbed
+(3) number of photons emitted per mole of substance
+(4) number of photons absorbed per photon emitted
+= 2
+~ The quantum yield (Φ) of a photochemical reaction is the number of molecules reacted (or product molecules formed) per photon absorbed. It measures the efficiency of the photochemical process: it can be below 1 for reactions with deactivation losses and very large (10^4 to 10^6) for chain reactions such as H2 + Cl2.
+
+Q 122 | chm | Photochemistry & Spectroscopy
+What is the typical quantum yield for a phosphorescence process?
+(1) 0
+(2) 0.1 – 0.3
+(3) 1
+(4) Greater than 1
+= 2
+~ Phosphorescence is a spin-forbidden triplet to singlet emission with a long-lived excited state that is easily quenched, so its quantum yield is low and far below 1; values of the order of 0.1-0.3 are the figure quoted as typical. A luminescence quantum yield cannot exceed 1, and a value of exactly 0 would mean no emission at all.
+
+Q 123 | chm | Photochemistry & Spectroscopy
+Which of the following statements is correct regarding the Grotthuss-Draper law and the Stark-Einstein law?
+(1) Grotthuss-Draper law: only absorbed light causes a reaction; Stark-Einstein law: one photon excites one molecule to an activated state.
+(2) Grotthuss-Draper law: absorbed light is effective; Stark-Einstein law: multiple photons form one product molecule.
+(3) Grotthuss-Draper law: explains energy transfer; Stark-Einstein law: concerns absorption wavelength.
+(4) Grotthuss-Draper law: light intensity affects the rate; Stark-Einstein law: photons don't affect product yield.
+= 1
+~ The Grotthuss-Draper law (first law of photochemistry) says that only light that is absorbed can bring about a chemical change. The Stark-Einstein law (second law, law of photochemical equivalence) says that each absorbed photon activates one molecule in the primary step. Option 1 states both correctly, and the other options misstate them.
+
+Q 124 | chm | Photochemistry & Spectroscopy
+Which of the following statements about fluorescence is correct?
+(1) Fluorescence occurs when a molecule in the excited singlet state returns to the ground state by emitting radiation.
+(2) Fluorescence involves the transition of an electron from the triplet excited state to the singlet ground state.
+(3) Fluorescence emission always occurs at a shorter wavelength than the absorbed light.
+(4) Fluorescence requires intersystem crossing from the singlet excited state to the triplet excited state.
+= 1
+~ Fluorescence is the spin-allowed radiative return from the lowest excited singlet state (S1) to the ground state (S0), taking about 10^-9 to 10^-8 s. Emission from the triplet state is phosphorescence, and fluorescence usually appears at a longer wavelength than the absorbed light (Stokes shift), not a shorter one. It does not need intersystem crossing.
+
+Q 125 | chm | Photochemistry & Spectroscopy
+In this question, a statement is provided, followed by a conclusion. Read the statement carefully to determine whether the conclusion logically follows based solely on the information given in the statement and select the most appropriate option.
+Statement: The Stark–Einstein law is valid only for the primary photochemical step.
+Conclusion: Photochemical reactions with multiple intermediate steps follow the Stark–Einstein law at every step.
+(1) Only the statement is true.
+(2) Only the conclusion is true.
+(3) Both the statement and the conclusion are true.
+(4) Both the statement and the conclusion are false.
+= 1
+~ The Stark-Einstein law (one photon activates one molecule) applies only to the primary photochemical act, the absorption. The later secondary steps, such as chain propagation, are thermal reactions of intermediates and are not governed by it. The statement is therefore true and the conclusion, which extends the law to every step, is false.
+
+Q 126 | chm | Photochemistry & Spectroscopy
+In the photochemical hydrogen-chlorine reaction, the chain termination step occurs when:
+(1) two chlorine radicals combine to form a chlorine molecule
+(2) a chlorine radical reacts with a hydrogen radical to form hydrochloric acid
+(3) a chlorine radical reacts with a hydrogen molecule
+(4) a hydrogen radical combines with a hydrogen molecule
+= 1
+~ In the H2 + Cl2 chain, initiation is Cl2 + hv giving 2 Cl•; propagation is Cl• + H2 giving HCl + H• followed by H• + Cl2 giving HCl + Cl•. Hydrogen atoms are consumed almost at once by Cl2, so chlorine atoms are the main chain carriers and termination is mostly recombination, Cl• + Cl• (+ M) giving Cl2. Option 3 is a propagation step.
+
+Q 127 | chm | Photochemistry & Spectroscopy
+Match the following terms from the Jablonski diagram with their corresponding descriptions.
+Term | Description
+P. Fluorescence | A. Transition from an excited singlet state to the ground state with the release of energy as heat
+Q. Intersystem crossing | B. Transition between states of different multiplicity
+R. Phosphorescence | C. Radiative transition from the excited triplet state to the ground state
+S. Internal conversion | D. Radiative transition from an excited singlet state to the ground state
+(1) P - D, Q - B, R - C, S - A
+(2) P - A, Q - C, R - D, S - B
+(3) P - C, Q - A, R - B, S - D
+(4) P - B, Q - D, R - A, S – C
+= 1
+~ Fluorescence is the radiative S1 to S0 transition (D). Intersystem crossing is a non-radiative change between states of different multiplicity, such as S1 to T1 (B). Phosphorescence is the radiative T1 to S0 transition (C), and internal conversion is the non-radiative transition between states of the same multiplicity that releases the energy as heat (A).
+
+Q 128 | chm | Photochemistry & Spectroscopy
+Which of the following is NOT a step in a photochemical reaction mechanism?
+(1) Absorption of a photon to excite the molecule from the ground state
+(2) Transition from singlet excited state to triplet excited state via intersystem crossing
+(3) Thermal excitation of the molecule in the ground state before photon absorption
+(4) Chemical reaction in the excited state leading to product formation
+= 3
+~ A photochemical mechanism begins with absorption of a photon by a ground-state molecule, may include intersystem crossing, and ends with reaction from the excited state. Thermal excitation of the ground state before absorbing a photon is not part of it, because it is the light that supplies the excitation energy.
+
+Q 129 | chm | Photochemistry & Spectroscopy
+The hydrogen-bromide reaction is an example of a photochemical reaction. Consider the following assertion and reason statements and select the most appropriate option.
+Assertion (A): The photochemical reaction between hydrogen and bromine is slower compared to the reaction between hydrogen and chlorine.
+Reasoning (R): The bond dissociation energy of Br2 is lower than that of Cl2.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 2
+~ The H2 + Br2 reaction is much slower than H2 + Cl2 because the propagation step Br• + H2 giving HBr + H• is strongly endothermic (about +70 kJ/mol) and has a high activation energy, whereas Cl• + H2 is nearly thermoneutral. R is also true (Br-Br is about 193 kJ/mol and Cl-Cl about 243 kJ/mol), but a weaker Br-Br bond only makes bromine atoms easier to form, so it does not explain the slower rate.
+
+Q 130 | chm | Organic & Natural Products
+Which of the following is true regarding the hybridisation of all the ring atoms in pyrrole (4 carbons + 1 nitrogen)?
+(1) All the ring atoms (carbon and nitrogen) are sp2 hybridised
+(2) Carbon atoms are sp2 hybridised where as nitrogen atom is sp hybridised
+(3) Carbon atoms are sp hybridised where as nitrogen atom is sp2 hybridised
+(4) Carbon atoms are sp2 hybridised where as nitrogen atom is sp3 hybridised
+= 1
+~ All five ring atoms of pyrrole are sp2 hybridised, so the ring is planar. Each carbon contributes one electron from its p orbital and the nitrogen contributes its lone pair from its p orbital, giving the aromatic sextet of 6 π electrons. Nitrogen is neither sp nor sp3 in pyrrole.
+
+Q 131 | chm | Organic & Natural Products
+Match the reactants in Column I with their corresponding products in Column II based on the Paul-Knorr synthesis of heterocyclic compounds.
+Column I Reactants | Column II Product
+(i) 1,4-Diketone + Ammonia | (a) Thiophene
+(ii) 1,4-Diketone + excess source of Sulphur | (b) Furan
+(iii) 1,4-Diketone + Acid | (c) Pyrrole
+(1) (i) - (a), (ii) - (b), (iii) - (c)
+(2) (i) - (d), (ii) - (a), (iii) - (c)
+(3) (i) - (c), (ii) - (a), (iii) - (b)
+(4) (i) - (c), (ii) - (b), (iii) - (a)
+= 3
+~ In the Paal-Knorr synthesis a 1,4-diketone gives a pyrrole with ammonia (or a primary amine), a thiophene with a sulphur source such as P4S10 or Lawesson's reagent, and a furan on acid-catalysed cyclisation and dehydration. That is (i)-(c), (ii)-(a), (iii)-(b). The question spells the name 'Paul-Knorr'.
+
+Q 132 | chm | Organic & Natural Products
+In pyrrole, the major product of an electrophilic substitution reaction occurs at:
+(1) the 2-position because it is stabilised by three resonance structures
+(2) the 2-position because it is stabilised by two resonance structures
+(3) the 3-position because it is stabilised by three resonance structures
+(4) the 3-position because it is stabilised by two resonance structures
+= 1
+~ Electrophilic attack at C-2 (the alpha position) gives a cation stabilised by three resonance structures, with the positive charge spread over C-3, C-5 and nitrogen. Attack at C-3 gives an intermediate with only two resonance structures, so substitution occurs mainly at C-2.
+
+Q 133 | chm | Organic & Natural Products
+Which of the following statements is correct regarding heterocyclic compounds?
+(1) All heterocyclic compounds are non-aromatic.
+(2) A compound with oxygen, sulfur or nitrogen in its ring is always heterocyclic.
+(3) Heterocyclic compounds can have both aromatic and non-aromatic forms.
+(4) Only six-membered rings can form stable heterocyclic structures.
+= 3
+~ Heterocycles include aromatic members such as pyridine, pyrrole, furan and thiophene and non-aromatic (saturated) ones such as piperidine and tetrahydrofuran. Option 1 is therefore false, and option 4 is false because stable 3-, 5- and 7-membered heterocycles exist. Option 2 merely restates the definition, which is probably why it was not keyed. (Official key; some sources differ.)
+
+Q 134 | chm | Organic & Natural Products
+Match the following syntheses with the suitable chemicals used and select the correct option.
+Syntheses | Chemical species
+P. Reactants for furan synthesis | A. Furan or pyrrole
+Q. Reactants for pyrrole synthesis | B. Acid
+R. Catalyst for Paal-Knorr synthesis | C. 1,4-dicarbonyl compound + diol
+S. Product of Paal-Knorr synthesis | D. 1,4-dicarbonyl compound + NH₃
+(1) P – C, Q – A, R – D, S – B
+(2) P – B, Q – D, R – A, S – C
+(3) P – C, Q – D, R – B, S – A
+(4) P – B, Q – C, R – A, S – D
+= 3
+~ Pyrrole is made from a 1,4-dicarbonyl compound and NH3 (Q-D), the Paal-Knorr furan synthesis is acid-catalysed (R-B), and its products are furans or pyrroles (S-A). Option 3 is the only one with these three pairs right; its P-C pairing is the loosest, since furans form from a 1,4-dicarbonyl compound by acid-catalysed dehydration rather than with a diol. (Official key; some sources differ.)
+
+Q 135 | chm | Organic & Natural Products
+Read the given statement and conclusions and select the most appropriate option.
+Statement:
+Thiophene and pyrrole are five-membered heterocyclic aromatic compounds with sulfur and nitrogen atoms as heteroatoms, respectively.
+Conclusions:
+I. The lone pair on the nitrogen atom in pyrrole contributes to the aromaticity of the molecule.
+II. Thiophene and pyrrole exhibit similar aromaticity because both follow Hückel's rule for aromaticity.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both I and II are true
+(4) Neither I nor II is true
+= 3
+~ Both rings are planar and cyclic with six π electrons: four from the two C=C bonds plus a lone pair from the heteroatom, so both obey Hückel's 4n+2 rule with n = 1. In pyrrole the nitrogen lone pair is part of that sextet (Conclusion I). The degree of aromaticity is not identical (thiophene is more aromatic than pyrrole), but both are aromatic by Hückel's rule, which is what Conclusion II says.
+
+Q 136 | chm | Organic & Natural Products
+In this question, a statement of (A) is followed by a statement of (R). Which of the following is correct option?
+(A): Pyrroles can be synthesized by reacting 1,4-dicarbonyl compounds with ammonia or primary amines.
+(R): Successive nucleophilic addition, cyclisation, and dehydration lead to pyrrole formation.
+(1) Both A and R are true, and R is correct explanation of A
+(2) Both A and R are true, but R is not correct explanation of A
+(3) A is true but R is false
+(4) A is false and R is true
+= 1
+~ In the Paal-Knorr pyrrole synthesis the amine adds to one carbonyl group (nucleophilic addition), the resulting hemiaminal nitrogen attacks the second carbonyl (cyclisation), and loss of two molecules of water gives the aromatic pyrrole. R describes the mechanism of A and so explains it.
+
+Q 137 | chm | Organic & Natural Products
+Pyrrole is known to be a weak acid and a weak base. Which of the following statements does NOT support pyrrole's behaviour as both a weak acid and a weak base?
+(1) When pyrrole is heated with metallic potassium in n-heptane as a solvent, stable potassium pyrrolide is formed.
+(2) The lone pair on the nitrogen atom in pyrrole is delocalised, decreasing its availability for protonation.
+(3) The N-H bond in pyrrole is weak due to the delocalisation of the nitrogen lone pair.
+(4) The lone pair on nitrogen in pyrrole is localised, making it a weak base.
+= 4
+~ Pyrrole is a very weak base because the nitrogen lone pair is delocalised into the aromatic sextet and is not available for protonation, and it is a weak acid because loss of the N-H proton (for example with potassium) gives the resonance-stabilised pyrrolide anion. Statement 4 says the lone pair is localised, which contradicts this, so it is the one that does not support the behaviour.
+
+Q 138 | chm | Organic & Natural Products
+Which product is formed when pyrrole reacts with acetyl nitrate at low temperature?
+(1) 2-Nitropyrrole
+(2) 3-Nitropyrrole
+(3) 2-Acetylnitropyrrole
+(4) 3-Acetylnitropyrrole
+= 1
+~ Pyrrole is too reactive and acid-sensitive for nitration with HNO3/H2SO4, which polymerises it, so the mild reagent acetyl nitrate (HNO3 with acetic anhydride) is used at low temperature. It nitrates mainly at the 2-position, giving 2-nitropyrrole, with only a minor amount of the 3-isomer.
+
+Q 139 | chm | Organic & Natural Products
+Which position of the pyrrole ring is most reactive towards halogenation?
+(1) 2-position
+(2) 3-position
+(3) 4-position
+(4) 1-position
+= 1
+~ Pyrrole is very reactive towards halogens, reacting even without a catalyst and, with excess halogen, giving tetrahalopyrroles. Attack goes first at the 2-(alpha) position because the intermediate cation is better stabilised there than for attack at C-3. Position 1 is the nitrogen atom.
+
+Q 140 | chm | Organic & Natural Products
+Match the following observations related to the aromaticity of pyridine (Column A) with their consequences (Column B).
+Column A | Column B
+i) Nitrogen's electronegativity | (a) Acts as a weak base
+(ii) Planar structure of pyridine | (b) Stabilises the aromatic π-electron system
+(iii) Aromatic π-electron count | (c) Six π-electrons ensure aromaticity
+(iv) Lack of hydrogen bonding on nitrogen | (d) Enhances reactivity with electrophiles
+(1) (i)-a ; (ii)-b ; (iii)-c ; (iv)-d
+(2) (i)-b ; (ii)-a ; (iii)-d ; (iv)-c
+(3) (i)-c ; (ii)-b ; (iii)-a ; (iv)-d
+(4) (i)-a ; (ii)-d ; (iii)-c ; (iv)-b
+= 1
+~ Pyridine has six π electrons, which ensures aromaticity (iii-c), and its planar ring lets the p orbitals overlap and stabilise the π system (ii-b). The electronegative sp2 nitrogen holds its lone pair tightly, so pyridine is only a weak base (i-a). The remaining pairing (iv-d) is the loosest and not chemically meaningful. Options 2 and 3 pair the six-π-electron count with (d) or (a), and option 4 pairs planarity with reactivity towards electrophiles, all of which are less sensible than the keyed pairs. (Official key; some sources differ.)
+
+Q 141 | chm | Organic & Natural Products
+Which of the following statements correctly describes the aromatic character of heterocyclic compounds?
+(1) A compound is aromatic if it follows Huckel's rule, which requires 4n+2 π-electrons, where n is a whole number.
+(2) A compound is aromatic if it has alternating single and double bonds between atoms in a ring.
+(3) A compound is aromatic if it contains at least one heteroatom (such as nitrogen or oxygen) in the ring structure.
+(4) A compound is aromatic if it has a conjugated system but does not follow Huckel's rule.
+= 1
+~ A ring is aromatic when it is planar, cyclic and fully conjugated and has (4n+2) π electrons (Hückel's rule, n = 0, 1, 2 ...). Alternating single and double bonds alone, as in cyclooctatetraene, do not make a ring aromatic, and a heteroatom in the ring does not guarantee it either. A conjugated ring that violates Hückel's rule is non-aromatic or anti-aromatic.
+
+Q 142 | chm | Organic & Natural Products
+Pyridine is an aromatic heterocyclic compound. Which of the following statements about its aromaticity is true, considering the electronic structure and orbital contributions of its nitrogen atom?
+(1) Pyridine is aromatic because it satisfies Hückel's rule and all its π-electrons, including the lone pair on nitrogen, participate in the delocalised π-system.
+(2) Pyridine is aromatic because the sp2 hybridised nitrogen contributes 1 p-orbital electron to the π-system, and its lone pair resides in the same plane as the π-electron cloud.
+(3) Pyridine is aromatic because it satisfies Hückel's rule, with six π-electrons from the five carbon atoms and one electron from the nitrogen atom's p-orbital.
+(4) Pyridine is non-aromatic because the lone pair on nitrogen resides in an sp3 orbital, preventing conjugation.
+= 3
+~ Pyridine has six π electrons, one from the p orbital of each of the five carbons and one from the p orbital of the sp2 nitrogen, which satisfies Hückel's rule with n = 1. The nitrogen lone pair sits in an sp2 orbital in the plane of the ring, at right angles to the π cloud, so it is not part of the π system (this rules out option 1). Option 4 is wrong because pyridine is aromatic and its nitrogen is sp2, and option 2 wrongly says the lone pair lies in the same plane as the π cloud. Option 3 is loosely worded, since the six electrons are five from carbon plus one from nitrogen. (Official key; some sources differ.)
+
+Q 143 | chm | Organic & Natural Products
+Match the following heterocyclic compounds with the correct reagents or reaction conditions for nitration or sulfonation under mild conditions.
+Heterocyclic Compounds | Reagents/Reaction Conditions
+P. Nitration of pyridine | A. Fuming H2SO4 at low temperature
+Q. Sulfonation of thiphene | B. Dilute HNO3 at low temperature
+R. Nitration of pyrrole | C. H2SO4 and SO3 in mild conditions
+S. Sulfonation of furan | D. Acetic anhydride and HNO3
+(1) P – D, Q – A, R – B, S – C
+(2) P – B, Q – A, R – D, S – C
+(3) P – D, Q – C, R – A, S – B
+(4) P – B, Q – D, R – A, S – C
+= 2
+~ Acid-sensitive pyrrole is nitrated with acetyl nitrate (acetic anhydride + HNO3), thiophene sulphonates readily with sulphuric acid in the cold, and furan needs the mild SO3 (pyridine-SO3) type conditions. Pyridine is normally nitrated only under vigorous conditions (KNO3 in H2SO4 at about 300 °C), so P-B is chemically odd, but option 2 is the only one that pairs pyrrole and furan correctly. (Official key; some sources differ.)
+
+Q 144 | chm | Organic & Natural Products
+Select the option that is correct regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Pyridine undergoes electrophilic substitution reactions at the meta position with respect to nitrogen.
+Reason (R): The electron-withdrawing nature of the nitrogen atom deactivates the ortho and para positions.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, and R is true.
+= 1
+~ The electronegative nitrogen withdraws electron density, so pyridine is deactivated towards electrophiles and reacts only under drastic conditions. Attack at C-2 or C-4 (ortho, para) would put a positive charge on the electron-deficient nitrogen in one resonance form of the intermediate, whereas attack at C-3 (meta) avoids this, so substitution occurs at C-3. R therefore explains A.
+
+Q 145 | chm | Organic & Natural Products
+Which of the following correctly describes the site of reactivity in pyrrole and pyridine?
+(1) Pyrrole prefers electrophilic substitution at the 3-position, while pyridine prefers nucleophilic substitution at the 2-position.
+(2) Pyrrole prefers electrophilic substitution at the 2-position, while pyridine prefers nucleophilic substitution at the 2-position.
+(3) Pyrrole prefers nucleophilic substitution at the 2-position, while pyridine prefers electrophilic substitution at the 3-position.
+(4) Both pyrrole and pyridine react similarly at the 2-position.
+= 2
+~ Electron-rich pyrrole undergoes electrophilic substitution at C-2, via the best-stabilised cation. Electron-deficient pyridine undergoes nucleophilic substitution at C-2 (and C-4), as in the Chichibabin amination with NaNH2, because the negative charge in the intermediate can be carried by nitrogen. Options 1 and 3 get the pyrrole reactivity wrong, and option 4 ignores the different types of reaction.
+
+Q 146 | chm | Organic & Natural Products
+Which of the following reactions is INCORRECTLY matched with its product?
+(1) Pyridine + NaNH2 at 100°C → 2-Aminopyridine
+(2) Pyridine + NaOH at very high temperature → 2-Pyridone
+(3) Pyridine + C6H5Li at 100°C → 3-Phenyllithium
+(4) Pyridine + Br2 in oleum → 3-Bromopyridine
+= 3
+~ Phenyllithium attacks pyridine nucleophilically at C-2 and, after loss of LiH, gives 2-phenylpyridine; '3-phenyllithium' is not a pyridine product at all. The others are correct: the Chichibabin reaction with NaNH2 gives 2-aminopyridine, NaOH at very high temperature gives 2-pyridone, and bromination in oleum goes to the 3-position to give 3-bromopyridine.
+
+Q 147 | chm | Organic & Natural Products
+How does the nitrogen atom in pyridine affect its electron density compared to benzene?
+(1) Increases electron density in the ring
+(2) Decreases electron density in the ring
+(3) Does not affect electron density
+(4) Makes the ring neutral
+= 2
+~ Nitrogen is more electronegative than carbon and pulls π-electron density towards itself, so the pyridine ring is electron-deficient compared with benzene. That is why pyridine resists electrophilic substitution and is attacked by nucleophiles instead.
+
+Q 148 | chm | Organic & Natural Products
+The Diels-Alder reaction of furan (diene) and maleic anhydride (dienophile) yields a bicyclic adduct. Which of the following statements about the reaction is true?
+(1) The reaction proceeds through an anti-aromatic transition state.
+(2) The reaction product consists of a single regioisomer due to the symmetry of maleic anhydride.
+(3) The reaction is irreversible under mild conditions due to the high energy of the transition state.
+(4) Furan reacts sluggishly in Diels-Alder reactions because it has aromatic stabilisation.
+= 2,4
+~ APPSC accepted options 2 and 4. Furan and maleic anhydride are both symmetrical, so only one constitutional product forms and regioisomers cannot arise (option 2; endo and exo stereoisomers can). Furan is a sluggish diene because reaction costs it part of its aromatic stabilisation (option 4). Option 1 is wrong because the thermal [4+2] transition state is aromatic, and option 3 is wrong because the furan-maleic anhydride adduct readily reverts by retro-Diels-Alder.
+
+Q 149 | chm | Organic & Natural Products
+Pyridine is more basic than benzene because _____.
+(1) the lone pair on the nitrogen atom in pyridine is part of the aromatic system
+(2) the lone pair on the nitrogen atom in pyridine is not part of the aromatic system and is available for protonation
+(3) pyridine has a higher electron density due to resonance donation from nitrogen
+(4) pyridine is not aromatic, allowing the nitrogen to act as a stronger base
+= 2
+~ The nitrogen lone pair in pyridine lies in an sp2 orbital in the plane of the ring, outside the aromatic π system, so it is free to accept a proton (the pyridinium ion has pKa about 5.2). Benzene has no such lone pair. Option 1 describes pyrrole, not pyridine, and options 3 and 4 are wrong because pyridine is aromatic and its ring is electron-poor.
+
+Q 150 | chm | Organic & Natural Products
+Which of the following methods is used for synthesising a furan derivative?
+(1) Fischer Indole synthesis
+(2) Paal-Knorr synthesis
+(3) Ullmann coupling reaction
+(4) Wurtz reaction
+= 2
+~ The Paal-Knorr synthesis converts a 1,4-dicarbonyl compound into a furan under acid catalysis (with ammonia or amines it gives pyrroles and with P4S10 thiophenes). The Fischer synthesis makes indoles, the Ullmann reaction couples aryl halides to biaryls, and the Wurtz reaction couples alkyl halides to alkanes.
