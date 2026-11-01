@@ -271,7 +271,7 @@ def pages(B):
            + (course_box('UPSC Civil Services · Mains · Optional', 'Anthropology optional PYQs with model answers',
                          f'Anthropology Papers I and II, {yr(an["years"])}: {an["n"]} question parts from UPSC\'s official papers, each with a model answer on its own page.',
                          an, 'by Anthropology syllabus part') if an else '')
-           + prelims_box() + gs['buy'] + flip_js())
+           + prelims_box() + (gs['buy'].replace('Every GS question', 'Every GS and Anthropology optional question') if an else gs['buy']) + flip_js())
     out['index.html'] = B.static_page(0, 'UPSC Civil Services (CSE) PYQs – Mains GS 1–4' + (' & Anthropology' if an else '') + ' Model Answers, Prelims GS & CSAT | Learn with Anil',
                                       f'UPSC Civil Services previous year questions: Mains GS Papers I–IV ({yr(gs["years"])})'
                                       + (f', Anthropology optional Papers I–II ({yr(an["years"])})' if an else '')
