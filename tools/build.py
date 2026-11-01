@@ -824,6 +824,37 @@ def ts_text():
 
 
 
+# ---------- Andhra Pradesh Police (SLPRB AP): SI and Constable ----------
+# Anil, 2 Nov 2026: "pls also add APPSC SI Police & Constable PYQs...the notification is on" (SLPRB AP notifications of 16 Sep 2026:
+# Rc.No.81/SLPRB/Rect.1/2026 for SIs, Rc.No.91/SLPRB/Rect.2/2026 for PCs; 2,050 posts in all; application dates to be announced).
+# Papers: SLPRB's own booklet PDF (Constable PWT 2023) and scanned booklets (SI PWT 2023), answers from SLPRB's keys (column A).
+AP_SI_PAPERS = [
+  dict(id='a2023s1', file='ap-si-2023-prelims-paper1.txt', year=2023, stage='Preliminary Written Test Paper I', short='SI Prelims 2023 Paper I',
+       title='SLPRB AP SI Preliminary Written Test 2023, Paper I (Arithmetic & Reasoning)', notif='SCT SI (Civil) & RSI (APSP) · booklet A', held='19 February 2023',
+       key="SLPRB's final key", fmt='mcq', slug='ap-police-si-prelims-2023-paper-1-arithmetic-reasoning-question-paper-with-answers',
+       alt='Prelims Paper I, Arithmetic & Reasoning', te_paper='ప్రిలిమినరీ పేపర్-1 (అర్థమెటిక్, రీజనింగ్)',
+       blurb='Preliminary Written Test, Paper I: Arithmetic (SSC standard) and Test of Reasoning / Mental Ability, 100 questions, 100 marks, 3 hours.'),
+  dict(id='a2023s2', file='ap-si-2023-prelims-paper2.txt', year=2023, stage='Preliminary Written Test Paper II', short='SI Prelims 2023 Paper II',
+       title='SLPRB AP SI Preliminary Written Test 2023, Paper II (General Studies)', notif='SCT SI (Civil) & RSI (APSP) · booklet A · preliminary key', held='19 February 2023',
+       key="SLPRB's preliminary key (the final key could not be found)", fmt='mcq', alabel="Answer (SLPRB's preliminary key)",
+       slug='ap-police-si-prelims-2023-paper-2-general-studies-question-paper-with-answers',
+       alt='Prelims Paper II, General Studies', te_paper='ప్రిలిమినరీ పేపర్-2 (జనరల్ స్టడీస్)',
+       blurb="Preliminary Written Test, Paper II: General Studies (degree standard), 100 questions, 100 marks, 3 hours. Answers are from SLPRB's preliminary key; "
+             "SLPRB's final key changed only one question of this paper, to accept more than one answer."),
+]
+AP_PC_PAPERS = [
+  dict(id='a2023pc', file='ap-pc-2023-prelims.txt', year=2023, stage='Preliminary Written Test', short='PC Prelims 2023',
+       title='SLPRB AP Police Constable Preliminary Written Test 2023', notif='SCT PC (Civil) & PC (APSP) · booklet A', held='22 January 2023',
+       key="SLPRB's final key", fmt='mcq', slug='ap-police-constable-prelims-2023-question-paper-with-answers',
+       blurb='Preliminary Written Test (Intermediate standard): English, Arithmetic, Reasoning / Mental Ability and General Studies, 200 questions, 200 marks, 3 hours.'),
+]
+AP_SUBJECTS = [s if s[0] != 'tg' else
+               ('ap', 'Andhra Pradesh', 'andhra-pradesh', ['AP History & Culture', 'AP Geography & Economy', 'AP Schemes & Affairs']) for s in TS_SUBJECTS]
+AP_POLICE_SUBJ_TE = {'ari': 'అర్థమెటిక్ (అంకగణితం)', 'rea': 'రీజనింగ్, మెంటల్ ఎబిలిటీ', 'eng': 'ఇంగ్లీష్', 'sci': 'జనరల్ సైన్స్', 'ih': 'భారతదేశ చరిత్ర, సంస్కృతి',
+                     'ap': 'ఆంధ్రప్రదేశ్', 'geo': 'భూగోళశాస్త్రం (జాగ్రఫీ)', 'pol': 'భారత రాజ్యాంగం (పాలిటీ)', 'eco': 'భారత ఆర్థిక వ్యవస్థ',
+                     'cur': 'కరెంట్ అఫైర్స్', 'soc': 'నైతికత, సామాజిక స్పృహ'}
+
+
 # APPSC Analyst Grade-II, A.P. Pollution Control Board (Anil, 1 Nov 2026: Notification 21/2026, 18 posts, apply 13 Oct to 2 Nov 2026).
 # Previous papers: Notification 02/2024, computer-based test, March 2025; APPSC's final keys (APOnline master question papers,
 # correct option ticked). Paper II was one paper per degree subject in 2025 (Chemistry, Biochemistry, Biology, Environmental
@@ -1133,6 +1164,35 @@ def exam_confs():
                            f"{t:,} questions with explanations. Practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow='APPSC · Forest Range Officer · A.P. Forest Service · 2020 &amp; 2023 Mains',
            papers_note="Answers come from APPSC's final keys on the master question papers of the computer-based Main Examinations of September 2023 (Notification 21/2022) and March 2020 (Notification 10/2018): the option marked correct there is the answer. Questions APPSC ignored for all candidates are left out; where APPSC accepted two options, both are shown as correct. The General Forestry papers are in English only. APPSC has published only the initial key of the 2025 Mains (Notification 11/2024), so that paper is not here yet."),
+      dict(id='ap-police-si', dir='ap-police-si', src='ap-police-si', key='ap-si', name='AP Police SI', short='AP Police SI', seo='AP Police SI',
+           slugp='ap-police-si', papers=AP_SI_PAPERS, subjects=AP_SUBJECTS, faq=FAQ_AP('SI'), board='SLPRB', l2=L2_TE, pb='/ap-police-si/',
+           keyname="SLPRB's key", keyshort="SLPRB's keys", bits=True,
+           te_name='ఏపీ పోలీస్ ఎస్ఐ', te_paper='ప్రిలిమినరీ పరీక్ష', subj_te=AP_POLICE_SUBJ_TE,
+           title='AP Police SI Previous Question Papers with Answers – SLPRB AP SI Prelims 2023 Paper 1 & 2, English & Telugu | Learn with Anil',
+           h1='AP Police SI previous year question papers <em>with answers.</em>',
+           l2line='ఏపీ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రాలు (పేపర్-1 అర్థమెటిక్, రీజనింగ్; పేపర్-2 జనరల్ స్టడీస్) SLPRB కీ సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.',
+           aka='Also known as the Andhra Pradesh Police Sub-Inspector exam: SCT SI (Civil), RSI (AR) and SI (SPF) posts, conducted by the State Level Police Recruitment Board, Andhra Pradesh (SLPRB AP / APSLPRB).',
+           aka_short='Andhra Pradesh Police SI (SLPRB AP)',
+           desc=lambda t: (f"AP Police SI (SLPRB AP / APSLPRB) previous question papers: the Preliminary Written Test of 19 February 2023, Paper I Arithmetic & Reasoning and Paper II General Studies, "
+                           f"with answers from SLPRB's keys. {t:,} questions in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
+           eyebrow='SLPRB AP · SCT SI (Civil) &amp; RSI · Preliminary Written Test 2023',
+           papers_note=("Answers come from SLPRB AP's keys for booklet A of the Preliminary Written Test held on 19 February 2023. For Paper I the final key made no change to the preliminary key. "
+                        "For Paper II the final key accepted more than one answer for one question, but that file is no longer on SLPRB's website, so Paper II shows the preliminary key's answers. "
+                        "Every question is in English and Telugu, as printed in the booklet.")),
+      dict(id='ap-police-constable', dir='ap-police-constable', src='ap-police-constable', key='ap-pc', name='AP Police Constable', short='AP Constable', seo='AP Police Constable',
+           slugp='ap-police-constable', papers=AP_PC_PAPERS, subjects=AP_SUBJECTS, faq=FAQ_AP('PC'), board='SLPRB', l2=L2_TE, pb='/ap-police-constable/',
+           keyname="SLPRB's final key", keyshort="SLPRB's final key", bits=True,
+           te_name='ఏపీ పోలీస్ కానిస్టేబుల్', te_paper='ప్రిలిమినరీ పరీక్ష', subj_te=AP_POLICE_SUBJ_TE,
+           title='AP Police Constable Previous Question Papers with Answers – SLPRB AP Constable Prelims 2023, English & Telugu | Learn with Anil',
+           h1='AP Police Constable previous year question papers <em>with answers.</em>',
+           l2line='ఏపీ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) SLPRB ఫైనల్ కీ సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.',
+           aka='Also known as the Andhra Pradesh Police Constable (AP PC) exam: SCT PC (Civil), PC (AR), Firemen and Warders, conducted by the State Level Police Recruitment Board, Andhra Pradesh (SLPRB AP / APSLPRB).',
+           aka_short='Andhra Pradesh Police Constable (SLPRB AP)',
+           desc=lambda t: (f"AP Police Constable (SLPRB AP / APSLPRB) previous question paper: the Preliminary Written Test of 22 January 2023 with answers from SLPRB's final key. "
+                           f"{t:,} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
+           eyebrow='SLPRB AP · SCT PC (Civil) &amp; APSP · Preliminary Written Test 2023',
+           papers_note=("Answers come from SLPRB AP's final key for booklet A of the Preliminary Written Test held on 22 January 2023; the question booklet is SLPRB's own copy. "
+                        "The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet.")),
     ]
 
 
@@ -1250,7 +1310,7 @@ def main():
                      .replace('{{LANGS}}', 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
                      .replace('{{BOARD}}', conf['board'])
                      .replace('{{FOOTSRC}}', ('Questions and answers are from the official final keys, or the preliminary key where the final key could not be found.'
-                                              if any('preliminary key' in x.get('key', '') for x in papers) else 'Questions and answers are from the official final keys.') if conf['board'] in ('APPSC', 'TSLPRB')
+                                              if any('preliminary key' in x.get('key', '') for x in papers) else 'Questions and answers are from the official final keys.') if conf['board'] in ('APPSC', 'TSLPRB', 'SLPRB')
                               else f'Questions are from {conf["board"]}\'s official question paper; answers from {conf["keyshort"]}.')
                      .replace('{{FROMPAPERS}}', f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {esc(papers[0]["stage"])} question paper')
                      .replace('{{PAPERSK}}', f'Official {conf["board"]} paper' + ('s' if len(papers) > 1 else ''))
@@ -1587,7 +1647,8 @@ def exam_terms(e, cat):
         d = ROMAN[m.group(1)]
         words += [f'group {d}', f'group{d}', f'group-{d}', f'group {m.group(1)}']
     if e['cat'] == 'tg': words += ['tspsc', 'tgpsc', 'telangana']
-    if 'police' in e['id']: words += ['ts police', 'tg police', 'tslprb', 'tgprb', 'si', 'constable']
+    if 'police' in e['id'] and e['cat'] == 'tg': words += ['ts police', 'tg police', 'tslprb', 'tgprb', 'si', 'constable']
+    if 'police' in e['id'] and e['cat'] == 'ap': words += ['ap police', 'andhra police', 'slprb', 'apslprb', 'si', 'sub inspector', 'constable', 'pc', 'rsi', 'fireman', 'warder']
     if 'amvi' in e['id']: words += ['amvi', 'motor vehicle inspector', 'mvi', 'rto', 'transport department', 'automobile engineering', 'automobile']
     if e['id'] == 'appsc-analyst': words += ['analyst', 'analyst grade 2', 'analyst grade ii', 'pollution control board', 'appcb', 'chemistry', 'biochemistry', 'biology', 'environmental science']
     if e['id'] == 'appsc-fro': words += ['fro', 'forest range officer', 'forest', 'forestry', 'general forestry', 'range officer', 'forest department']
@@ -1915,6 +1976,44 @@ def FAQ_AMVI(state):
     return faq
 
 
+def FAQ_AP(post):
+    """FAQs of the AP Police (SLPRB AP) SI and Constable pages; facts from the 16 September 2026 notifications."""
+    si = post == 'SI'
+    name = 'AP Police SI' if si else 'AP Police Constable'
+    def faq(total, npapers):
+        return [
+          (f'Where can I get {name} previous year question papers with answers?',
+           (f'This page has {total:,} questions from the SLPRB AP SI Preliminary Written Test held on 19 February 2023 (booklet A): Paper I, Arithmetic and Test of Reasoning / Mental Ability, '
+            "and Paper II, General Studies, in English and Telugu as printed. Paper I's answers are from SLPRB's final key and Paper II's from its preliminary key, and every question has a short explanation. "
+            if si else
+            f'This page has {total:,} questions from the SLPRB AP Police Constable Preliminary Written Test held on 22 January 2023 (booklet A), in English and Telugu as printed, '
+            "with answers from SLPRB's final key and a short explanation for every question. ")
+           + 'Practise each paper as a quiz or a timed mock test with one ₹45 PYQ Pass for every exam.'),
+          (f'How many posts are in the AP Police {"SI" if si else "Constable"} 2026 notification?',
+           ('SLPRB AP notification Rc.No.81/SLPRB/Rect.1/2026 of 16 September 2026 has 378 posts: 253 SCT SI (Civil), 116 SCT RSI (AR) and 9 SI in the Special Protection Force; '
+            'a separate notification has 50 SI (Communications) and 10 SI (PTO) posts. SLPRB will announce the application and exam dates in a press note.'
+            if si else
+            'SLPRB AP notification Rc.No.91/SLPRB/Rect.2/2026 of 16 September 2026 has 1,156 posts: 542 SCT PC (Civil), 285 SCT PC (AR), 158 Firemen, 150 Warders (Men) and 21 Warders (Women); '
+            'separate notifications have 200 PC (Communications) and 213 PC (Mechanics and Drivers) posts. SLPRB will announce the application and exam dates in a press note.')),
+          (f'What is the {name} Preliminary Written Test pattern?',
+           ('Two objective papers of 100 questions each, 3 hours each: Paper I Arithmetic (SSC standard) and Test of Reasoning / Mental Ability, and Paper II General Studies (degree standard). '
+            'You must qualify in each paper: 40% for OC (and EWS), 35% for BC, 30% for SC and ST. Qualified candidates take the PMT/PET and then the Final Written Examination of four papers.'
+            if si else
+            'One objective paper of 200 questions for 200 marks in 3 hours (Intermediate standard): English, Arithmetic, Reasoning / Mental Ability, General Science, history and culture, '
+            'geography, polity and economy, and current events. The qualifying marks are 40% for OC (and EWS), 35% for BC and 30% for SC and ST. Qualified candidates take the PMT/PET and then the Final Written Examination.')),
+          ('Who can apply?',
+           ('A degree from a recognised university (SC and ST candidates who passed Intermediate and studied a degree are also eligible), age 21 to 27 years as on 1 July 2026 with the usual relaxations. '
+            'Height at least 167.6 cm for men and 152.5 cm for women (lower for Aboriginal ST candidates of the agency areas). Fee ₹600 (₹300 for SC and ST of AP).'
+            if si else
+            'Intermediate passed (SC and ST candidates who passed SSC and appeared for Intermediate are also eligible), age 18 to 24 years as on 1 July 2026 for SCT PC (Civil) and (AR) with the usual relaxations. '
+            'Height at least 167.6 cm for men and 152.5 cm for women (lower for Aboriginal ST candidates of the agency areas). Fee ₹300 (₹150 for SC and ST of AP).')),
+          (f'Are the {name} questions available in Telugu?',
+           'Yes. Every question that the booklet printed in Telugu is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu.'
+           + ('' if si else ' The English-language questions are printed in English only, as in the real paper.')),
+        ]
+    return faq
+
+
 def FAQ_ANALYST(total, npapers):
     return [
       ('Where can I get APPSC Analyst Grade-II previous question papers with answers?',
@@ -2137,7 +2236,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){{
 document.querySelectorAll(".lk").forEach(function(e){{e.textContent="✓ ";e.className="lk ok"}});
 document.querySelectorAll("[data-paidtxt]").forEach(function(e){{e.textContent=e.getAttribute("data-paidtxt")}});
@@ -2748,7 +2847,7 @@ def funders_page(loaded):
 </main>
 <footer class="foot">
   <div class="wrap">
-    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></span>
+    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/ap-police-pyqs.html">AP Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></span>
   </div>
 </footer>
 <script>(function(){{var T={tj};
@@ -2798,6 +2897,21 @@ LANDINGS = {
             '<a href="/ts-police-si/mock-test.html">TS Police SI mock test</a> · <a href="/ts-police-constable/mock-test.html">TS Police Constable mock test</a>.</p>',
       te={'TS Police SI': 'తెలంగాణ పోలీస్ ఎస్ఐ ప్రశ్నాపత్రాలు', 'TS Constable': 'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రశ్నాపత్రాలు'},
       order=lambda c: 0 if c['id'] == 'ts-police-si' else 1),
+  'ap-police-pyqs.html': dict(
+      board='SLPRB', ename='AP Police', crumb='AP Police PYQs',
+      title='AP Police Previous Question Papers with Answers – SI & Constable PYQs (SLPRB AP), English & Telugu | Learn with Anil',
+      desc='Andhra Pradesh Police SI and Constable previous question papers in one place: SLPRB AP Preliminary Written Test papers of 2023, '
+           '{n} questions with answers from SLPRB\'s keys and explanations, in English and Telugu. Practise them online with one ₹45 PYQ Pass for every exam.',
+      h1='AP Police SI & Constable previous question papers with answers',
+      lede="Every Andhra Pradesh Police SI and Constable question paper on Learn with Anil, {n} questions in all. "
+           "Answers come from SLPRB AP's keys, and every question has a short explanation, in English and Telugu.",
+      intro='<p>Looking for AP Police SI previous papers, the AP SI prelims 2023 Paper 1 or Paper 2, the AP Police Constable question paper 2023, SLPRB AP / APSLPRB previous question papers with answers, '
+            'or an AP police mock test? They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="te">ఏపీ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) SLPRB కీ సమాధానాలు, వివరణలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.</p>'
+            '<p class="note">New: <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> (378 posts) and '
+            '<a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> (1,156 posts); SLPRB will announce the application dates in a press note.</p>',
+      te={'AP Police SI': 'ఏపీ పోలీస్ ఎస్ఐ ప్రశ్నాపత్రాలు', 'AP Constable': 'ఏపీ పోలీస్ కానిస్టేబుల్ ప్రశ్నాపత్రాలు'},
+      order=lambda c: 0 if c['id'] == 'ap-police-si' else 1),
 }
 
 
@@ -3048,6 +3162,95 @@ NOTIFS = {
       ('Paper I and Paper II', 'p',
        'Paper I General Studies & Mental Ability follows the common APPSC syllabus (current events, science, history, geography, polity, economy, environment, disaster management, reasoning, data analysis). '
        'Paper II Mathematics is SSC standard: arithmetic, algebra, trigonometry, geometry, mensuration and statistics.'),
+    ]),
+  'ap-police-si-notification-2026.html': dict(
+    exam='ap-police-si', crumb='AP Police SI Notification 2026',
+    # Anil, 2 Nov 2026. SLPRB AP Rc.No.81/SLPRB/Rect.1/2026 and press note of 16 Sep 2026 (slprb.ap.gov.in/2026_PDFS/SLPRB_AP_SI_Notification_2026.pdf)
+    title='AP Police SI Notification 2026 – SLPRB AP, 378 SI Posts (Civil, AR, SPF), Eligibility, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='AP Police SI Notification 2026 (SLPRB AP Rc.No.81/2026, 16 September 2026): 378 posts of SCT SI (Civil), RSI (AR) and SI (SPF), eligibility, age, height, fee, the Preliminary and Final '
+         'Written Test pattern and syllabus, PMT/PET standards, and AP Police SI previous question papers with answers.',
+    h1='AP Police SI Notification 2026: 378 Sub-Inspector posts',
+    lede='The State Level Police Recruitment Board, Andhra Pradesh notified 378 Sub-Inspector posts on 16 September 2026: 253 SCT SI (Civil), 116 SCT Reserve SI (AR) and 9 SI in the Special Protection Force. '
+         'SLPRB will announce the online application dates and the Preliminary Written Test date in a press note. Below: posts, eligibility, the exam pattern and syllabus, and the previous papers to start practising.',
+    te='ఏపీ పోలీస్ ఎస్ఐ నోటిఫికేషన్ 2026 (SLPRB AP, 16 సెప్టెంబర్ 2026): 378 పోస్టులు — SCT ఎస్ఐ (సివిల్) 253, ఆర్ఎస్ఐ (AR) 116, ఎస్ఐ (SPF) 9. దరఖాస్తు, ప్రిలిమినరీ పరీక్ష తేదీలు త్వరలో ప్రెస్ నోట్ ద్వారా. అర్హత, పరీక్ష విధానం, సిలబస్, పాత ప్రశ్నాపత్రాలు సమాధానాలతో కింద.',
+    pdf='https://slprb.ap.gov.in/2026_PDFS/SLPRB_AP_SI_Notification_2026.pdf', pdfname='SLPRB AP Notification Rc.No.81/SLPRB/Rect.1/2026, dated 16 September 2026',
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification', '16 September 2026 (Rc.No.81/SLPRB/Rect.1/2026)'),
+        ('Online applications (Stage I)', 'Dates to be announced by SLPRB in a press note'),
+        ('Preliminary Written Test', 'Date to be announced'),
+        ('Official website', 'slprb.ap.gov.in')]),
+      ('Posts', 'table', [
+        ('SCT Sub-Inspectors of Police (Civil) (Men & Women), post code 11', '253 (zone-wise)'),
+        ('SCT Reserve Sub-Inspectors of Police (AR) (Men & Women), post code 12', '116 (zone-wise)'),
+        ('Sub-Inspectors (Men), Special Protection Force, post code 31', '9'),
+        ('Total', '378'),
+        ('Separate notification', '50 SI (Communications) and 10 SI (PTO)')]),
+      ('Who can apply', 'p', 'A degree from a university recognised in India, as on 1 July 2026; SC and ST candidates who passed Intermediate and studied a degree are also eligible. '
+                          'Age 21 to 27 years as on 1 July 2026 (born between 2 July 1999 and 1 July 2005), relaxed by up to 5 years for SC, ST, BC and EWS candidates and for AP government employees. '
+                          'Fee ₹600 (₹300 for SC and ST candidates of AP; non-local candidates pay ₹600 as open category).'),
+      ('Physical standards (PMT) and physical test (PET)', 'p',
+       'Height at least 167.6 cm and chest 86.3 cm with 5 cm expansion for men; height 152.5 cm and weight 40 kg for women (lower heights for Aboriginal ST candidates of the agency areas). '
+       'PET: 1,600 m run in 8 minutes (women 10 min 30 s), 100 m in 15 seconds (women 18 s), long jump 3.80 m (women 2.75 m). SI (Civil) candidates must pass the 1,600 m run and one of the other two; '
+       'RSI (AR) and SPF candidates must pass all three, and their PET carries 100 marks.'),
+      ('Exam pattern', 'table+', (['Stage', 'Paper', 'Questions · marks · time'], [
+        ('Preliminary Written Test', 'Paper I: Arithmetic (SSC standard) & Test of Reasoning / Mental Ability', '100 · 100 · 3 hours'),
+        ('Preliminary Written Test', 'Paper II: General Studies (degree standard)', '100 · 100 · 3 hours'),
+        ('Final Written Examination', 'Paper I English and Paper II Telugu or Urdu (descriptive, qualifying)', '100 + 100 marks'),
+        ('Final Written Examination', 'Paper III Arithmetic & Reasoning, Paper IV General Studies (objective, 200 questions each)', '200 + 200 marks for SI (Civil)')])),
+      ('', 'note', 'Each paper must be qualified: 40% for OC (and EWS), 35% for BC, 30% for SC and ST. SI (Civil) selection is on Papers III and IV of the Final Written Examination; '
+                   'for RSI (AR) and SPF the PET marks are added. No marks are deducted for wrong answers.'),
+      ('Syllabus', 'list', [
+        'Arithmetic: number system, simple and compound interest, ratio and proportion, average, percentage, profit and loss, time and work, work and wages, time and distance, clocks and calendars, partnership, mensuration.',
+        'Test of Reasoning / Mental Ability: verbal and non-verbal reasoning, analogies, similarities and differences, spatial visualisation and orientation, problem solving, analysis, judgement, decision making, visual memory.',
+        'General Studies: general science and contemporary developments in science, technology and the environment; current events of national and international importance; history of India and the Indian National Movement; '
+        'geography of India; Indian polity and economy, including rural development, planning and economic reforms.']),
+    ]),
+  'ap-police-constable-notification-2026.html': dict(
+    exam='ap-police-constable', crumb='AP Police Constable Notification 2026',
+    # Anil, 2 Nov 2026. SLPRB AP Rc.No.91/SLPRB/Rect.2/2026 and press note of 16 Sep 2026 (slprb.ap.gov.in/2026_PDFS/SLPRB_AP_PC_Notification_2026.pdf)
+    title='AP Police Constable Notification 2026 – SLPRB AP, 1,156 PC, Firemen & Warder Posts, Eligibility, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='AP Police Constable Notification 2026 (SLPRB AP Rc.No.91/2026, 16 September 2026): 1,156 posts of SCT PC (Civil), PC (AR), Firemen and Warders, eligibility, age, height, fee, '
+         'the Preliminary and Final Written Examination pattern and syllabus, PMT/PET standards, and AP Police Constable previous question papers with answers.',
+    h1='AP Police Constable Notification 2026: 1,156 posts',
+    lede='The State Level Police Recruitment Board, Andhra Pradesh notified 1,156 posts on 16 September 2026: 542 SCT Police Constables (Civil), 285 SCT Police Constables (AR), 158 Firemen, '
+         '150 Warders (Men) and 21 Warders (Women). SLPRB will announce the online application dates and the Preliminary Written Test date in a press note. Below: posts, eligibility, the exam pattern and syllabus, and the previous paper to start practising.',
+    te='ఏపీ పోలీస్ కానిస్టేబుల్ నోటిఫికేషన్ 2026 (SLPRB AP, 16 సెప్టెంబర్ 2026): 1,156 పోస్టులు — SCT పీసీ (సివిల్) 542, పీసీ (AR) 285, ఫైర్‌మెన్ 158, వార్డర్లు 171. దరఖాస్తు, ప్రిలిమినరీ పరీక్ష తేదీలు త్వరలో ప్రెస్ నోట్ ద్వారా. అర్హత, పరీక్ష విధానం, సిలబస్, పాత ప్రశ్నాపత్రం సమాధానాలతో కింద.',
+    pdf='https://slprb.ap.gov.in/2026_PDFS/SLPRB_AP_PC_Notification_2026.pdf', pdfname='SLPRB AP Notification Rc.No.91/SLPRB/Rect.2/2026, dated 16 September 2026',
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification', '16 September 2026 (Rc.No.91/SLPRB/Rect.2/2026)'),
+        ('Online applications (Stage I)', 'Dates to be announced by SLPRB in a press note'),
+        ('Preliminary Written Test', 'Date to be announced'),
+        ('Official website', 'slprb.ap.gov.in')]),
+      ('Posts', 'table', [
+        ('SCT Police Constables (Civil) (Men & Women), post code 21', '542 (district-wise)'),
+        ('SCT Police Constables (AR) (Men & Women), post code 22', '285'),
+        ('Firemen, State Disaster Response and Fire Services, post code 42', '158'),
+        ('Warders (Men), Prisons and Correctional Services, post code 53', '150'),
+        ('Warders (Women), Prisons and Correctional Services, post code 54', '21'),
+        ('Total', '1,156'),
+        ('Separate notifications', '200 PC (Communications) and 213 PC (Mechanics 15, Drivers 198)')]),
+      ('Who can apply', 'p', 'Intermediate or an equivalent examination passed as on 1 July 2026; SC and ST candidates who passed SSC and studied and appeared for both years of Intermediate are also eligible. '
+                          'Age for SCT PC (Civil) and (AR): 18 to 24 years as on 1 July 2026 (born between 2 July 2002 and 1 July 2008), with the usual relaxations (Home Guards up to 32). '
+                          'Fee ₹300 (₹150 for SC and ST candidates of AP; non-local candidates pay ₹300 as open category).'),
+      ('Physical standards (PMT) and physical test (PET)', 'p',
+       'Height at least 167.6 cm and chest 86.3 cm with 5 cm expansion for men; height 152.5 cm and weight 40 kg for women (lower heights for Aboriginal ST candidates of the agency areas). '
+       'PET: 1,600 m run in 8 minutes (women 10 min 30 s), 100 m in 15 seconds (women 18 s), long jump 3.80 m (women 2.75 m). PC (Civil), Firemen and Warders must pass the 1,600 m run and one of the other two; '
+       'PC (AR) candidates must pass all three, and their PET carries 100 marks.'),
+      ('Exam pattern', 'table+', (['Stage', 'Paper', 'Questions · marks · time'], [
+        ('Preliminary Written Test (qualifying)', 'One paper, Intermediate standard, objective', '200 · 200 · 3 hours'),
+        ('Physical tests', 'PMT and PET', 'qualifying (PC (AR): PET 100 marks)'),
+        ('Final Written Examination', 'One paper, same syllabus, objective', '200 · 200 (PC (AR): 100) · 3 hours')])),
+      ('', 'note', 'Qualifying marks in each written test: 40% for OC (and EWS), 35% for BC, 30% for SC and ST. Preliminary marks do not count for selection. No marks are deducted for wrong answers.'),
+      ('Syllabus (Preliminary and Final Written Examination)', 'list', [
+        'English (printed in English only, also in the Telugu and Urdu versions of the paper).',
+        'Arithmetic (SSC standard).',
+        'Test of Reasoning / Mental Ability.',
+        'General Science.',
+        'History of India, Indian culture and the Indian National Movement.',
+        'Indian geography, polity and economy.',
+        'Current events of national and international importance.']),
     ]),
   'appsc-eo-grade-3-notification-2026.html': dict(
     exam='appsc-eo', crumb='EO Grade-III Notification 2026',
@@ -3422,6 +3625,8 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'upsc-epfo': ('UPSC EPFO APFC Recruitment Test 2026', '2026-12-20', 'UPSC Special Advertisement 52/2026 (80 APFC posts): pen-and-paper Recruitment Test on 20 December 2026.'),
   'appsc-analyst': ('APPSC Analyst Grade-II written examination', None, 'Applications 13 October to 2 November 2026 (Notification 21/2026); APPSC has not announced the exam date yet.'),
   'appsc-fro': ('APPSC Forest Range Officer written examination', None, 'Applications 16 October to 5 November 2026 (Notification 16/2026); APPSC has not announced the exam date yet.'),
+  'ap-police-si': ('AP Police SI Preliminary Written Test', None, 'SLPRB AP notified 378 SI posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
+  'ap-police-constable': ('AP Police Constable Preliminary Written Test', None, 'SLPRB AP notified 1,156 posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
   'tgpsc-hmwssb-manager': ('TGPSC HMWSSB Manager (Engineering)', None, 'Tentatively December 2026; TGPSC has not announced the exact date yet.'),
 }
 
@@ -4057,7 +4262,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-forest-range-officer/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);
@@ -4073,7 +4278,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
-<li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li></ul>
+<li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li></ul>
 </main></body></html>
 """
 

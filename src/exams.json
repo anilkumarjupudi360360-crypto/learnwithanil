@@ -270,13 +270,15 @@
    "cat": "ap",
    "b": "APSLPRB",
    "t": "Police SI",
-   "n": "Sub-Inspector"
+   "n": "Sub-Inspector",
+   "live": "ap-police-si/"
   },
   {
    "id": "ap-police-constable",
    "cat": "ap",
    "b": "APSLPRB",
-   "t": "Police Constable"
+   "t": "Police Constable",
+   "live": "ap-police-constable/"
   },
   {
    "id": "ap-dsc",
