@@ -1184,7 +1184,9 @@ def main():
     tpl = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
     head, body = tpl.split('<!--BODY-->')
     live_names = [c['name'] for c, _, _ in loaded]
-    nav_extra = ''.join(f'      <a href="{c["dir"]}/" data-hubonly>{esc(c["short"])}</a>\n' for c, _, _ in loaded if c['dir'])
+    NAVB = {'upsc': 'UPSC', 'ap': 'APPSC', 'tg': 'TGPSC & TS Police', 'ssc': 'SSC', 'rail': 'Railways', 'bank': 'Banking'}   # Anil, 2 Nov 2026: the top bar lists boards, not every exam
+    nav_extra = ''.join(f'      <a href="/#exams-list" data-act="excat" data-cat="{cid}" data-hubonly>{lbl}</a>\n' for cid, lbl in NAVB.items()
+                        if any(c['id'] == cid for c in catalog['cats']))
     hub_ctas = ''.join(f'<a class="btn btn-primary" href="{"#home" if c["dir"] == "" else c["dir"] + "/"}">{esc(c["name"])}</a>' for c, _, _ in loaded)
     live_list = [c['name'] for c, _, _ in loaded]
     live_summary = (f'Live now: {", ".join(live_list[:-1]) + " and " + live_list[-1] if len(live_list) > 1 else live_list[0]} '
@@ -1303,7 +1305,7 @@ def main():
                     ('Study Material 2026-27 – Crisp Notes by Jupudi Anil Kumar | Learn with Anil',
                      'Exam-focused study material by Jupudi Anil Kumar: Crisp Notes on AP Economy and Science & Technology for APPSC Mains, with the latest 2026 data.', '/appsc-group-2/notes/', True)),
           'about': ('About Jupudi Anil Kumar – Learn with Anil',
-                    'Jupudi Anil Kumar is a civil-services educator with 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants. He built Learn with Anil to make previous-year questions easy and affordable to practise for every aspirant.', '/appsc-group-2/about/', True),
+                    'Jupudi Anil Kumar is a civil-services educator with 2.5 years of teaching and mentorship for UPSC, APPSC and TGPSC aspirants. He built Learn with Anil to make previous-year questions easy and affordable to practise for every aspirant.', '/appsc-group-2/about/', True),
           'mistakes': (f'Mistakes Notebook – {seo_name} | Learn with Anil', 'Your mistakes notebook on Learn with Anil.', pb + 'mistakes/', False),
           'smart': (f'Smart Quiz – {seo_name} | Learn with Anil', 'Re-attempt the questions you got wrong.', pb + 'smart/', False),
           'bookmarks': (f'Bookmarks – {seo_name} | Learn with Anil', 'Your saved questions on Learn with Anil.', pb + 'bookmarks/', False),
@@ -1631,6 +1633,30 @@ BOARD_ART = {   # line drawings for the board tiles (own artwork; no photos, no 
     'rail': '<rect x="56" y="12" width="48" height="54" rx="11"/><rect x="63" y="20" width="34" height="19" rx="3"/><circle cx="68" cy="53" r="3.5"/><circle cx="92" cy="53" r="3.5"/><path d="M74 53h12"/><path d="m63 66-9 13M97 66l9 13M48 79h64M52 73h56"/>',
     'bank': '<path d="M42 34 80 15l38 19Z"/><path d="M42 34h76"/><path d="M50 39v28M64 39v28M96 39v28M110 39v28"/><path d="M40 70h80M35 77h90"/><circle cx="80" cy="52" r="10"/><path d="M76 47h9M76 51h9M79 47c5 0 5 8 0 8h-3l7 7"/>',
 }
+EXAM_ICONS = [   # small line icons on the exam tiles (own drawings), chosen by words in the exam's id, title and note
+    (r'police|constable|\bsi\b', '<path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6Z"/><path d="m9 12 2 2 4-4"/>'),
+    (r'capf|\bcds\b|\bnda\b|defence|afcat|army|navy', '<path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6Z"/><path d="m12 8 1.2 2.5 2.8.4-2 1.9.5 2.7-2.5-1.3-2.5 1.3.5-2.7-2-1.9 2.8-.4Z"/>'),
+    (r'amvi|motor vehicle', '<path d="M5 16v-4l2-5h10l2 5v4"/><path d="M3 16h18v2H3z"/><circle cx="7.5" cy="18.5" r="1.5"/><circle cx="16.5" cy="18.5" r="1.5"/><path d="M6 12h12"/>'),
+    (r'endowment', '<path d="M7 21h10l-1-4H8Z"/><path d="M8.5 17h7l-1-4h-5Z"/><path d="M9.5 13h5l-1-4h-3Z"/><path d="M12 9V5M10.5 6.5h3"/>'),
+    (r'forest|\bfro\b|\bifos\b|\bfbo\b', '<path d="M12 3 6 11h3l-4 6h14l-4-6h3Z"/><path d="M12 17v4"/>'),
+    (r'analyst|chemist|drug|pharma|lab', '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6A2 2 0 0 0 19 18l-5-9V3"/><path d="M7.5 15h9"/>'),
+    (r'hmwssb|water', '<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11Z"/>'),
+    (r'teacher|\btet\b|\bdsc\b|lecturer|gurukul|\btgt\b|\bpgt\b', '<path d="M4 5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2Z"/><path d="M4 20a2 2 0 0 0 2 2h13v-4"/>'),
+    (r'rail|\brrb\b|ntpc|\balp\b', '<rect x="6" y="3" width="12" height="13" rx="3"/><path d="M6 10h12"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/><path d="m8 16-2 5M16 16l2 5"/>'),
+    (r'bank|ibps|\bsbi\b|\brbi\b|nabard|\blic\b|epfo|insurance|apfc|account|audit', '<circle cx="12" cy="12" r="9"/><path d="M9 7.5h6M9 10.5h6M11 7.5c3.5 0 3.5 6 0 6H9.5l5 4"/>'),
+    (r'health|nurs|medical|mphw|doctor', '<path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"/>'),
+    (r'prelims|csat', '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="m8 8 1.5 1.5L12 7M8 14l1.5 1.5L12 13M14 8.5h2M14 14.5h2"/>'),
+    (r'mains|civil services', '<path d="m4 20 4-1 11-11-3-3L5 16Z"/><path d="m14 6 3 3"/>'),
+    (r'ssc|cgl|chsl|\bmts\b|steno|clerk|secretariat', '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/>'),
+    (r'.', '<path d="M3 9 12 4l9 5Z"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/>'),
+]
+
+
+def exam_icon(e):
+    t = f'{e["id"]} {e["t"]} {e.get("n", "")}'.lower().replace('-', ' ')
+    return next(svg for rx, svg in EXAM_ICONS if re.search(rx, t))
+
+
 BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
 
 
@@ -1662,7 +1688,8 @@ def hub_html(catalog, counts, grand):
             status = f'Live · {counts.get(e["id"], 0):,} questions' if live else 'Upcoming'
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
             if live and e['id'] in MAINS_EXAMS and MAINS_KIT: sub += '<span class="ex-x">Prelims + Mains PYQs with model answers</span>'
-            tiles[live].append(f'<a class="card exam{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-id="{e["id"]}" data-s="{esc(exam_terms(e, c))}">'
+            tiles[live].append(f'<a class="card exam x-{c["id"]}{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-id="{e["id"]}" data-s="{esc(exam_terms(e, c))}">'
+                               f'<span class="ex-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{exam_icon(e)}</svg></span>'
                                f'<span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></a>')
         upc = (f'<details class="upc"{"" if lv else " open"}><summary>Upcoming exams in {esc(c["name"])} ({len(tiles[False])}) · being added one by one</summary>'
                f'<div class="exams">{"".join(tiles[False])}</div></details>' if tiles[False] else '')
@@ -2322,7 +2349,7 @@ def llms_txt(loaded, grand):
         if any(c['board'] == X['board'] for c in exams): L.append(f'- [{X["title"].split(" | ")[0]}]({SITE_URL}/{rel})')
     for rel, N in NOTIFS.items():
         if any(c['id'] == N['exam'] for c in exams): L.append(f'- [{re.sub("<[^>]+>", "", N["h1"])}]({SITE_URL}/{rel})')
-    L += ['', '## About', f'- [About Jupudi Anil Kumar]({SITE_URL}/appsc-group-2/about/): civil-services educator, 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants.',
+    L += ['', '## About', f'- [About Jupudi Anil Kumar]({SITE_URL}/appsc-group-2/about/): civil-services educator, 2.5 years of UPSC, APPSC and TGPSC teaching and mentorship.',
           f'- [Fund Learn with Anil]({SITE_URL}/funders.html): a one-person project built to be student-friendly and to democratise learning, with the goal of 1 lakh PYQs of various government exams under one roof for ₹45; Anil needs help from funders, which in turn helps him help the students.',
           f'- Instagram: https://www.instagram.com/{INSTAGRAM}/ · Telegram: https://t.me/learn_with_anil06 · YouTube: https://www.youtube.com/@learn_with_anil06', f'- Sitemap: {SITE_URL}/sitemap.xml', '']
     return '\n'.join(L)
@@ -2546,9 +2573,9 @@ def funders_page(loaded):
       'shareWa': ('Share on WhatsApp', 'WhatsApp पर साझा करें', 'WhatsAppలో పంచుకోండి'),
       'poster': ('Download the poster', 'पोस्टर डाउनलोड करें', 'పోస్టర్ డౌన్‌లోడ్ చేయండి'),
       'aboutT': ('About me', 'मेरे बारे में', 'నా గురించి'),
-      'aboutP': ('I am Jupudi Anil Kumar, a civil-services educator with more than 1,000 hours of teaching UPSC, APPSC and TGPSC aspirants. Learn with Anil is my independent initiative.',
-                 'मैं जुपुडी अनिल कुमार हूँ, एक सिविल सेवा शिक्षक। मैंने UPSC, APPSC और TGPSC अभ्यर्थियों को 1,000 से अधिक घंटे पढ़ाया है। Learn with Anil मेरी स्वतंत्र पहल है।',
-                 'నేను జూపూడి అనిల్ కుమార్, సివిల్ సర్వీసెస్ అధ్యాపకుడిని. UPSC, APPSC, TGPSC అభ్యర్థులకు 1,000 గంటలకు పైగా బోధించాను. Learn with Anil నా స్వతంత్ర కార్యక్రమం.'),
+      'aboutP': ('I am Jupudi Anil Kumar, a civil-services educator with 2.5 years of teaching and mentorship for UPSC, APPSC and TGPSC aspirants. Learn with Anil is my independent initiative.',
+                 'मैं जुपुडी अनिल कुमार हूँ, एक सिविल सेवा शिक्षक। मैंने 2.5 वर्षों तक UPSC, APPSC और TGPSC अभ्यर्थियों को पढ़ाया और उनका मार्गदर्शन किया है। Learn with Anil मेरी स्वतंत्र पहल है।',
+                 'నేను జూపూడి అనిల్ కుమార్, సివిల్ సర్వీసెస్ అధ్యాపకుడిని. UPSC, APPSC, TGPSC అభ్యర్థులకు 2.5 సంవత్సరాలుగా బోధన, మెంటార్‌షిప్ అందిస్తున్నాను. Learn with Anil నా స్వతంత్ర కార్యక్రమం.'),
       'aboutL': ('Read more about me', 'मेरे बारे में और पढ़ें', 'నా గురించి మరింత చదవండి'),
     }
     def t(k, tag='span', attrs=''):

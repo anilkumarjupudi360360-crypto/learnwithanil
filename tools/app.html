@@ -554,7 +554,15 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .bd-badge{position:absolute;left:12px;top:10px;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;background:rgba(255,255,255,.95);color:#065f46;border-radius:999px;padding:3px 10px}
 .bd-badge i{width:7px;height:7px;border-radius:50%;background:#16a34a}
 .bd-badge.bd-soon{color:#475569}
-.b-upsc{--g1:#1e3a8a;--g2:#3b82f6}.b-ap{--g1:#0f766e;--g2:#2dd4bf}.b-tg{--g1:#5b21b6;--g2:#a78bfa}.b-ssc{--g1:#c2410c;--g2:#fb923c}.b-rail{--g1:#7f1d1d;--g2:#dc2626}.b-bank{--g1:#065f46;--g2:#34d399}
+.b-upsc,.x-upsc{--g1:#1e3a8a;--g2:#3b82f6}.b-ap,.x-ap{--g1:#0f766e;--g2:#2dd4bf}.b-tg,.x-tg{--g1:#5b21b6;--g2:#a78bfa}.b-ssc,.x-ssc{--g1:#c2410c;--g2:#fb923c}.b-rail,.x-rail{--g1:#7f1d1d;--g2:#dc2626}.b-bank,.x-bank{--g1:#065f46;--g2:#34d399}
+.card.exam{position:relative;overflow:hidden;padding-top:18px}
+.card.exam::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--g1,#334155),var(--g2,#64748b))}
+.ex-ic{position:absolute;right:12px;top:14px;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--g1,#334155),var(--g2,#64748b));box-shadow:0 4px 12px rgba(15,23,42,.18)}
+.ex-ic svg{width:22px;height:22px}
+.card.exam .ex-b,.card.exam .ex-t{padding-right:46px}
+.card.exam:not(.live) .ex-ic{filter:grayscale(.85);opacity:.55;box-shadow:none}
+.card.exam:not(.live)::before{opacity:.35}
+@media (max-width:520px){.ex-ic{width:32px;height:32px;border-radius:10px;right:9px;top:12px}.ex-ic svg{width:18px;height:18px}.card.exam .ex-b,.card.exam .ex-t{padding-right:36px}}
 .card.board:not([class*=" b-"]) {--g1:#334155;--g2:#64748b}
 .board.soon .bd-art{filter:saturate(.45)}
 .bd-body{display:flex;flex-direction:column;gap:6px;padding:14px 16px 14px;flex:1}
@@ -656,7 +664,7 @@ details.upc .exams{margin-top:8px}
     </a>
     <nav class="nav hub" id="nav" aria-label="Main">
       <a href="{{HUBHREF}}" data-v="exams">All Exams</a>
-      <a href="#home" data-v="home">{{EXAMSHORT}}</a>
+      <a href="#home" data-v="home" data-g2>{{EXAMSHORT}}</a>
 {{NAV_EXTRA}}      <a href="#papers" data-v="papers" data-g2>Previous Papers</a>
       {{NOTES_NAV}}
       <a href="#practice" data-v="practice" data-g2>Create Quiz</a>
@@ -689,7 +697,7 @@ details.upc .exams{margin-top:8px}
     </div>
     <a class="mentor" href="#about" style="color:inherit;text-decoration:none">
       <span class="ph"><img src="{{PHOTO}}" alt="Jupudi Anil Kumar" width="210" height="210"><span class="hero-float f1">✓ Official answer keys</span><span class="hero-float f2">English · తెలుగు · हिंदी</span><span class="hero-float f3">Every answer explained</span></span>
-      <span><b>Jupudi Anil Kumar</b><br><span data-i18n="mentor">UPSC faculty &amp; mentor · 1000+ hours of civil-services teaching</span></span>
+      <span><b>Jupudi Anil Kumar</b><br><span data-i18n="mentor">UPSC faculty &amp; mentor · 2.5 years of UPSC, APPSC &amp; TGPSC teaching and mentorship</span></span>
     </a>
   </div></section>
 
@@ -737,7 +745,7 @@ details.upc .exams{margin-top:8px}
     </div>
     <a class="mentor" href="#about" style="color:inherit;text-decoration:none">
       <span class="ph"><img src="{{PHOTO}}" alt="Jupudi Anil Kumar" width="210" height="210"></span>
-      <span><b>Jupudi Anil Kumar</b><br><span>UPSC faculty &amp; mentor · 1000+ hours of civil-services teaching</span></span>
+      <span><b>Jupudi Anil Kumar</b><br><span>UPSC faculty &amp; mentor · 2.5 years of UPSC, APPSC &amp; TGPSC teaching and mentorship</span></span>
     </a>
   </div></section>
 
@@ -1384,7 +1392,7 @@ const HUBT = {
         te:'అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు, చిన్న వివరణలతో, ఇంగ్లీష్, తెలుగు, హిందీలో. అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.'},
   find:{en:'Find your exam', hi:'अपनी परीक्षा खोजें', te:'మీ పరీక్షను వెతకండి'},
   today:{en:"Today's question", hi:'आज का प्रश्न', te:'నేటి ప్రశ్న'},
-  mentor:{en:'UPSC faculty &amp; mentor · 1000+ hours of civil-services teaching', hi:'UPSC शिक्षक और मार्गदर्शक · सिविल सेवा में 1000+ घंटे का अध्यापन', te:'UPSC అధ్యాపకులు, మెంటార్ · సివిల్ సర్వీసెస్‌లో 1000+ గంటల బోధన'},
+  mentor:{en:'UPSC faculty &amp; mentor · 2.5 years of UPSC, APPSC &amp; TGPSC teaching and mentorship', hi:'UPSC शिक्षक और मार्गदर्शक · UPSC, APPSC और TGPSC अध्यापन व मार्गदर्शन में 2.5 वर्ष', te:'UPSC అధ్యాపకులు, మెంటార్ · UPSC, APPSC, TGPSC బోధన, మెంటార్‌షిప్‌లో 2.5 సంవత్సరాలు'},
   f1:{en:'Previous-year questions', hi:'पिछले वर्षों के प्रश्न', te:'గత సంవత్సరాల ప్రశ్నలు'},
   f2:{en:'Government exams on the list', hi:'सूची में सरकारी परीक्षाएँ', te:'జాబితాలో ప్రభుత్వ పరీక్షలు'},
   f3:{en:'Languages: English, తెలుగు, हिंदी', hi:'भाषाएँ: अंग्रेज़ी, तेलुगु, हिंदी', te:'భాషలు: ఇంగ్లీష్, తెలుగు, హిందీ'},
@@ -1465,6 +1473,8 @@ function applyHub(){
   document.querySelectorAll("#hub-static .exam-cat").forEach(s=>{ s.hidden = !s.querySelector(".exam:not([hidden])"); });
   if(q) document.querySelectorAll("#hub-static details.upc").forEach(d=>{ if(d.querySelector(".exam:not([hidden])")) d.open = true; });
   document.querySelectorAll('#hub-static [data-act="excat"]').forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.cat===cat)));
+  document.querySelectorAll('#nav a[data-act="excat"]').forEach(a=>{ if(a.dataset.cat===cat) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+  const allL = document.querySelector('#nav a[data-v="exams"]'); if(allL && cat!=="all") allL.removeAttribute("aria-current");
   const live = [...document.querySelectorAll("#hub-static .exam.live:not([hidden])")].length;
   const cnt = $("#hubCount"); if(cnt) cnt.textContent = n && !browsing ? HT("count").replace("{n}", n).replace("{l}", live) : "";
   const p5 = $("#hubP5"), isP5 = !!p5 && P5_RE.test(q);   // "paper 5": the Group-1 Mains Paper V book is on WhatsApp
@@ -2071,13 +2081,13 @@ function vAbout(){
         <h2>Jupudi Anil Kumar</h2>
         <p class="role">Course Coordinator · UPSC Faculty · Mentor</p>
         <div class="bio">
-          <p>I am a civil-services educator with more than 1,000 hours of classroom teaching for UPSC, APPSC and TGPSC aspirants. I teach Indian Polity, Governance and Ethics, build test series and study material, and have evaluated more than 2,000 Mains answer copies.</p>
+          <p>I am a civil-services educator with 2.5 years of teaching and mentorship for UPSC, APPSC and TGPSC aspirants. I teach Indian Polity, Governance and Ethics, build test series and study material, and have evaluated more than 2,000 Mains answer copies.</p>
           <p>As Course Coordinator, faculty and mentor, I plan the Group-1 and Group-2 programmes and their test series, coordinate the UPSC mock interview programme in Delhi, and mentor Group-1, Group-2 and UPSC aspirants. I have headed several Prelims and Mains test series.</p>
           <p>I built Learn with Anil so that every aspirant can practise the real previous questions of their exam, topic by topic, as practice quizzes or timed tests in English and their own language, and see clearly where they are losing marks. Today it has {{TOTALC}} questions from {{NLIVE}} exams (APPSC, TGPSC, TS Police, UPSC and SSC), and one ₹${PAYC ? PAYC.pyq.price : 45} PYQ Pass opens all of them for 12 months: less than the price of one guide book.</p>
           <p>Our goal is 1 lakh previous questions of government exams under one roof, with a mock test series for every exam, all in the same ₹${PAYC ? PAYC.pyq.price : 45} pass. I am building it alone, one exam at a time. If you would like to help, see <a href="/funders.html">Fund this project</a>.</p>
         </div>
         <dl>
-          <div><dt>1000+</dt><dd>Hours of classroom teaching</dd></div>
+          <div><dt>2.5 yrs</dt><dd>UPSC, APPSC &amp; TGPSC teaching and mentorship</dd></div>
           <div><dt>2000+</dt><dd>Mains answer copies evaluated</dd></div>
           <div><dt>70+</dt><dd>APPSC Group-1 mock interviews</dd></div>
           <div><dt>25</dt><dd>UPSC CSE mock interviews, Delhi</dd></div>
@@ -2340,7 +2350,7 @@ document.addEventListener("click", e=>{
   switch(act){
     case "bm": { const id=b.dataset.id; if(S.bm[id]) delete S.bm[id]; else S.bm[id]=true; save(); toast(S.bm[id]?"Saved to bookmarks":"Removed from bookmarks"); render(); break; }
     case "excat": {   // a board tile opens that board's exams; "All exam boards" (or the phone's back button) returns to the tiles
-      const c = b.dataset.cat, cur = UI.exCat||"all";
+      e.preventDefault(); const c = b.dataset.cat, cur = UI.exCat||"all";
       if(c==="all" && history.state && history.state.lwaBoard){ history.back(); break; }
       if(c!=="all" && cur==="all"){ try{ history.pushState(Object.assign({}, history.state, {lwaBoard:c}), ""); }catch(_){} track("board_open", {cat:c}); }
       UI.exCat = c; applyHub(); const t=$("#exams-list"); if(t) t.scrollIntoView({block:"start"}); break; }
