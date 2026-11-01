@@ -1,5 +1,275 @@
 [
  {
+  "paper": "I",
+  "year": 2020,
+  "qno": "I(a)",
+  "part_no": 1,
+  "part": "Current Affairs: Big News of the Year",
+  "topic": "New laws and policy drafts in the news",
+  "text": "The Draft Environment Impact Assessment (EIA) Notification of 2020: An Analysis",
+  "id": "g1m-2020-p1-1a"
+ },
+ {
+  "paper": "I",
+  "year": 2020,
+  "qno": "I(b)",
+  "part_no": 1,
+  "part": "Current Affairs: Big News of the Year",
+  "topic": "India's security and foreign relations",
+  "text": "Chinese Aggression and India: A Strategic Response",
+  "id": "g1m-2020-p1-1b"
+ },
+ {
+  "paper": "I",
+  "year": 2020,
+  "qno": "I(c)",
+  "part_no": 1,
+  "part": "Current Affairs: Big News of the Year",
+  "topic": "Pandemics and public-health alarms",
+  "text": "Measures to Combat Outbreak of Covid 19: The Role of the Government and the Individual",
+  "id": "g1m-2020-p1-1c"
+ },
+ {
+  "paper": "I",
+  "year": 2020,
+  "qno": "II(a)",
+  "part_no": 2,
+  "part": "Society, Politics and Governance",
+  "topic": "Women's rights and gender equality",
+  "text": "Should there be Reservation for Women in Politics?",
+  "id": "g1m-2020-p1-2a"
+ },
+ {
+  "paper": "I",
+  "year": 2020,
+  "qno": "II(b)",
+  "part_no": 3,
+  "part": "Economy, Jobs and Development",
+  "topic": "Economic growth, poverty and inequality",
+  "text": "Does the Rise or Fall of the Economic Growth Rate Really Make a Difference to the Poorest of the Poor?",
+  "id": "g1m-2020-p1-2b"
+ },
+ {
+  "paper": "I",
+  "year": 2020,
+  "qno": "II(c)",
+  "part_no": 4,
+  "part": "Environment, Water and Sustainability",
+  "topic": "Water stress and water conservation",
+  "text": "How to Maintain a Proper Balance Between Developmental Activities and Water Conservation?",
+  "id": "g1m-2020-p1-2c"
+ },
+ {
+  "paper": "I",
+  "year": 2020,
+  "qno": "III(a)",
+  "part_no": 5,
+  "part": "Culture, Heritage and History",
+  "topic": "Protecting cultural heritage",
+  "text": "The Role of the Youth in Preserving India's Cultural Heritage",
+  "id": "g1m-2020-p1-3a"
+ },
+ {
+  "paper": "I",
+  "year": 2020,
+  "qno": "III(b)",
+  "part_no": 6,
+  "part": "Civic Sense and Responsible Citizenship",
+  "topic": "Civic sense in public places",
+  "text": "Civic Sense and Public Spaces: An Urgent Need to Behave Responsibly",
+  "id": "g1m-2020-p1-3b"
+ },
+ {
+  "paper": "I",
+  "year": 2020,
+  "qno": "III(c)",
+  "part_no": 7,
+  "part": "Reflective and Philosophical Topics",
+  "topic": "Personal experiences and life lessons",
+  "text": "My First Public Speaking Experience",
+  "id": "g1m-2020-p1-3c"
+ },
+ {
+  "paper": "I",
+  "year": 2023,
+  "qno": "I(a)",
+  "part_no": 1,
+  "part": "Current Affairs: Big News of the Year",
+  "topic": "Digital money and new technology",
+  "text": "Is India's 'Digital Rupee' another version of Cryptocurrency? Examine India's progress on 'Central Bank Digital Currency' (CBDC) and its implications.",
+  "id": "g1m-2023-p1-1a"
+ },
+ {
+  "paper": "I",
+  "year": 2023,
+  "qno": "I(b)",
+  "part_no": 2,
+  "part": "Society, Politics and Governance",
+  "topic": "Governance reforms and public service delivery",
+  "text": "Andhra Pradesh is the first state in India to have established village secretariats and thereby, signalling a march towards achieving Gandhian ideals. In this connection, discuss the pioneering work of 'the Grama Sachivalayam' in revolutionizing governance.",
+  "id": "g1m-2023-p1-1b"
+ },
+ {
+  "paper": "I",
+  "year": 2023,
+  "qno": "I(c)",
+  "part_no": 3,
+  "part": "Economy, Jobs and Development",
+  "topic": "Agriculture, villages and co-operatives",
+  "text": "India has become the fifth largest economy in the world. Can India further aim to reach the top by actively engaging in the Co-operative Movement? Examine.",
+  "id": "g1m-2023-p1-1c"
+ },
+ {
+  "paper": "I",
+  "year": 2023,
+  "qno": "II(a)",
+  "part_no": 4,
+  "part": "Environment, Water and Sustainability",
+  "topic": "Clean energy and green transport",
+  "text": "\"The world is now in the middle of a new mobility revolution\" - Examine India's efforts at accelerating the deployment of electric vehicles (EVs).",
+  "id": "g1m-2023-p1-2a"
+ },
+ {
+  "paper": "I",
+  "year": 2023,
+  "qno": "II(b)",
+  "part_no": 1,
+  "part": "Current Affairs: Big News of the Year",
+  "topic": "India's security and foreign relations",
+  "text": "\"India possesses a countless number of soft power resources that could prove to be greatly beneficial if harnessed properly.\" In this connection, examine India's soft power - its challenges and opportunities.",
+  "id": "g1m-2023-p1-2b"
+ },
+ {
+  "paper": "I",
+  "year": 2023,
+  "qno": "II(c)",
+  "part_no": 2,
+  "part": "Society, Politics and Governance",
+  "topic": "Unity in diversity: religion, ethnicity and language",
+  "text": "Ek Bharat Shrestha Bharat is the call to forge national integration and the spirit of collective consciousness. Examine whether India has succeeded to rise above the forces of communal prejudice.",
+  "id": "g1m-2023-p1-2c"
+ },
+ {
+  "paper": "I",
+  "year": 2023,
+  "qno": "III(a)",
+  "part_no": 2,
+  "part": "Society, Politics and Governance",
+  "topic": "Women's rights and gender equality",
+  "text": "Examine the challenges and progress of gender equality and women's rights in the world since the 1995, 'Beijing Declaration and Platform for Action' (BPA).",
+  "id": "g1m-2023-p1-3a"
+ },
+ {
+  "paper": "I",
+  "year": 2023,
+  "qno": "III(b)",
+  "part_no": 3,
+  "part": "Economy, Jobs and Development",
+  "topic": "Cities and urbanisation",
+  "text": "India is the second largest urban system in the world. In this connection, examine whether India is equipped with adequate urban planning and governance.",
+  "id": "g1m-2023-p1-3b"
+ },
+ {
+  "paper": "I",
+  "year": 2023,
+  "qno": "III(c)",
+  "part_no": 7,
+  "part": "Reflective and Philosophical Topics",
+  "topic": "Famous quotations and big ideas",
+  "text": "'Beauty is Truth, Truth is Beauty'",
+  "id": "g1m-2023-p1-3c"
+ },
+ {
+  "paper": "I",
+  "year": 2025,
+  "qno": "I(a)",
+  "part_no": 2,
+  "part": "Society, Politics and Governance",
+  "topic": "Unity in diversity: religion, ethnicity and language",
+  "text": "Ethnic conflicts in India: A growing threat to national integration and inclusive development.",
+  "id": "g1m-2025-p1-1a"
+ },
+ {
+  "paper": "I",
+  "year": 2025,
+  "qno": "I(b)",
+  "part_no": 2,
+  "part": "Society, Politics and Governance",
+  "topic": "Unity in diversity: religion, ethnicity and language",
+  "text": "The Three-Language Formula under NEP: Balancing Regional Identity and National Unity in India.",
+  "id": "g1m-2025-p1-1b"
+ },
+ {
+  "paper": "I",
+  "year": 2025,
+  "qno": "I(c)",
+  "part_no": 3,
+  "part": "Economy, Jobs and Development",
+  "topic": "Population, jobs and workers' rights",
+  "text": "Demographic Dividend or Burden? Rethinking the Population Explosion Narrative.",
+  "id": "g1m-2025-p1-1c"
+ },
+ {
+  "paper": "I",
+  "year": 2025,
+  "qno": "II(a)",
+  "part_no": 2,
+  "part": "Society, Politics and Governance",
+  "topic": "Population, federalism and political representation",
+  "text": "Demographic Shifts in South India: Implications of Population Growth on Political Representation.",
+  "id": "g1m-2025-p1-2a"
+ },
+ {
+  "paper": "I",
+  "year": 2025,
+  "qno": "II(b)",
+  "part_no": 4,
+  "part": "Environment, Water and Sustainability",
+  "topic": "Development versus environment",
+  "text": "Andhra Pradesh's development push must balance industrial growth with environmental sustainability.",
+  "id": "g1m-2025-p1-2b"
+ },
+ {
+  "paper": "I",
+  "year": 2025,
+  "qno": "II(c)",
+  "part_no": 4,
+  "part": "Environment, Water and Sustainability",
+  "topic": "Water stress and water conservation",
+  "text": "Water Stress in India: The Silent Crisis Endangering Health, Agriculture, and Federal Stability.",
+  "id": "g1m-2025-p1-2c"
+ },
+ {
+  "paper": "I",
+  "year": 2025,
+  "qno": "III(a)",
+  "part_no": 3,
+  "part": "Economy, Jobs and Development",
+  "topic": "Andhra Pradesh's growth sectors (tourism, industry, IT)",
+  "text": "Tourism in Andhra Pradesh: Assessing Challenges and Unveiling Opportunities for Growth.",
+  "id": "g1m-2025-p1-3a"
+ },
+ {
+  "paper": "I",
+  "year": 2025,
+  "qno": "III(b)",
+  "part_no": 3,
+  "part": "Economy, Jobs and Development",
+  "topic": "Population, jobs and workers' rights",
+  "text": "Gig Economy in India: A Catalyst for Employment or a Challenge to Workers' Rights?",
+  "id": "g1m-2025-p1-3b"
+ },
+ {
+  "paper": "I",
+  "year": 2025,
+  "qno": "III(c)",
+  "part_no": 1,
+  "part": "Current Affairs: Big News of the Year",
+  "topic": "Pandemics and public-health alarms",
+  "text": "Obesity is a silent pandemic undermining India's public health gains.",
+  "id": "g1m-2025-p1-3c"
+ },
+ {
   "paper": "II",
   "year": 2020,
   "qno": "1(a)",
@@ -2698,5 +2968,908 @@
   "topic": "Paying for infrastructure: PPP and pricing of public utilities",
   "text": "What are the flaws in the existing Public Private Partnership (PPP) model of infrastructure development? What are the key points to focus on while restructuring the PPP model ?",
   "id": "g1m-2025-p4-15b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "1(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Health and diseases",
+  "text": "What is \"life expectancy at birth\"? Data shows that the global average life expectancy has more than doubled since 1900, and is now above 70 years. Describe three to five factors which have contributed to improvement in life expectancy.",
+  "id": "g1m-2020-p5-1a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "1(b)",
+  "part_no": 1,
+  "part": "Science and technology policy, institutions and IPR",
+  "topic": "Science and technology policy and institutions",
+  "text": "Telangana has several Central Government Institutions suitable for research funded by the Department of Science and Technology. These include BITS, CCMB, CDFD, CRIDA, DRDO, ICRISAT, IICT, NALSAR, NGRAU, and NIN. (i) How should these institutions contribute towards education of B.A./B.Com./B.Sc. students in TS? (ii) Write short notes about the mission and contributions of any two of these Institutions in Science/Technology in India.",
+  "id": "g1m-2020-p5-1b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "2(a)",
+  "part_no": 2,
+  "part": "Emerging technologies, ICT and cyber security",
+  "topic": "ICT, e-governance and cyber security",
+  "text": "What is the UIDAI? How has this government body harnessed IT to improve targeted delivery of government benefits (DBT)? How can the Aadhaar Card help in financial transactions?",
+  "id": "g1m-2020-p5-2a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "2(b)",
+  "part_no": 2,
+  "part": "Emerging technologies, ICT and cyber security",
+  "topic": "ICT, e-governance and cyber security",
+  "text": "What is cybercrime? Describe with examples any two of the following and explain how the government helps victims of cybercrime: Cyber bullying; Cyber stalking; Phishing; Ransomware.",
+  "id": "g1m-2020-p5-2b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "3(a)",
+  "part_no": 3,
+  "part": "Space, defence and nuclear technology",
+  "topic": "Space technology",
+  "text": "Write a brief account of the history of ISRO. Name any three ISRO centers and their location. Add a note about the Mangalyaan or Chandrayaan missions of ISRO.",
+  "id": "g1m-2020-p5-3a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "3(b)",
+  "part_no": 3,
+  "part": "Space, defence and nuclear technology",
+  "topic": "Space technology",
+  "text": "To date, ISRO has launched over 100 satellites. Explain what are GEO, LEO, MEO, and SSO. Use diagrams to illustrate your answer. Add a note on GSLV and PSLV launches.",
+  "id": "g1m-2020-p5-3b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "4(a)",
+  "part_no": 3,
+  "part": "Space, defence and nuclear technology",
+  "topic": "Nuclear technology and policy",
+  "text": "What is nuclear energy? At the end of 2019, seven nuclear reactors were under construction in India, with a combined capacity of 5.4 GW. What are the advantages and disadvantages of using nuclear energy in India? What is the NPT and how does this impact India which is not a member of the NPT?",
+  "id": "g1m-2020-p5-4a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "4(b)",
+  "part_no": 4,
+  "part": "Energy: conventional and renewable",
+  "topic": "Renewable energy",
+  "text": "What is \"Clean Energy\"? List the sources of clean energy and explain how they work. Which of these sources can be used or are already widely used in India?",
+  "id": "g1m-2020-p5-4b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "5(a)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Climate change and sustainable development",
+  "text": "All member states of the UN adopted 17 goals in the 2030 Agenda for Sustainable Development. Name any four of these goals and explain how India can reach them.",
+  "id": "g1m-2020-p5-5a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "5(b)",
+  "part_no": 7,
+  "part": "Environmental laws, EIA and disaster management",
+  "topic": "Environmental laws, EIA and disaster management",
+  "text": "What causes earthquakes? Can we prevent or predict where and when an earthquake will happen? What should relief agencies do after an earthquake occurs in an inland and a coastal region?",
+  "id": "g1m-2020-p5-5b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "6(a)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Pollution and waste management",
+  "text": "Classify solid waste in terms of source and types of solid wastes. Explain the steps to manage this waste. Add a note on advantages and disadvantages of landfills.",
+  "id": "g1m-2020-p5-6a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "6(b)",
+  "part_no": 5,
+  "part": "Ecology, biodiversity and natural resources",
+  "topic": "Natural resources, forests and mining",
+  "text": "What do you know about the agents, stages, and effects of soil erosion? What are the factors affecting soil erosion and measures to conserve soil?",
+  "id": "g1m-2020-p5-6b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "7(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Biotechnology",
+  "text": "Is there any difference between gene therapy, transgenic organisms, and gene enhancement/genome editing? With example, explain the ethical concerns in each of these approaches? When can genome editing be considered ethical?",
+  "id": "g1m-2020-p5-7a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "7(b)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Biotechnology",
+  "text": "In October 2020, the Nobel Prize for Chemistry was awarded to the CRISPR technology. Explain how CRISPR functions in nature and how it has been adapted for research and clinical applications.",
+  "id": "g1m-2020-p5-7b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "8(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Health and diseases",
+  "text": "Write short notes on the causes, treatment, and methods of prevention of any 3 of the following diseases: 1. Cholera; 2. Malaria; 3. Encephalitis; 4. Tuberculosis; and 5. Avian flu.",
+  "id": "g1m-2020-p5-8a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "8(b)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Biotechnology",
+  "text": "What is recombinant DNA? Draw a schematic to show the process of creating rDNA and explain the roles of restriction enzymes and vectors in this process. Give an example of rDNA technology.",
+  "id": "g1m-2020-p5-8b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "9(a)",
+  "part_no": 1,
+  "part": "Science and technology policy, institutions and IPR",
+  "topic": "Intellectual property rights",
+  "text": "What is Intellectual Property? Explain with examples the differences between copyrights, patents, and trademarks. What are the rights an inventor has on his invention, and how are these rights gained and enforced globally?",
+  "id": "g1m-2020-p5-9a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "9(b)",
+  "part_no": 1,
+  "part": "Science and technology policy, institutions and IPR",
+  "topic": "Intellectual property rights",
+  "text": "What is a patent? Give examples of patents. What is the difference between process patents and product patents? How are GI tags related to patents?",
+  "id": "g1m-2020-p5-9b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "10(a)",
+  "part_no": 4,
+  "part": "Energy: conventional and renewable",
+  "topic": "Renewable energy",
+  "text": "What is the status of utilization of Solar energy in India and the World? What are some factors hindering utilization of this green energy source?",
+  "id": "g1m-2020-p5-10a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "10(b)",
+  "part_no": 3,
+  "part": "Space, defence and nuclear technology",
+  "topic": "Space technology",
+  "text": "Traditional methods of in-person education have been disrupted by the Covid-19 pandemic. How can India's Space Program help in restoring and expanding access to education in India?",
+  "id": "g1m-2020-p5-10b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "11(a)",
+  "part_no": 2,
+  "part": "Emerging technologies, ICT and cyber security",
+  "topic": "ICT, e-governance and cyber security",
+  "text": "What do you know about the NeGP (National e-Governance Action Plan) operating under the aegis of Digital India? Explain about the role of any three of the following projects in this plan: 1. Jan-Dhan Yojana; 2. Digital Locker; 3. National Digital Literacy Mission; 4. E-Bhasha; and 5. BharatNet (National Optical Fibre Network).",
+  "id": "g1m-2020-p5-11a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "11(b)",
+  "part_no": 4,
+  "part": "Energy: conventional and renewable",
+  "topic": "Renewable energy",
+  "text": "What are biofuels and why are they important to India's economy? What do you know about the Indian National Policy on Biofuels?",
+  "id": "g1m-2020-p5-11b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "12(a)",
+  "part_no": 1,
+  "part": "Science and technology policy, institutions and IPR",
+  "topic": "Science and technology policy and institutions",
+  "text": "Please interpret the following data in terms of contribution by countries to Science and Engineering publications. Identify any one factor for the state of Indian Science and recommend a relevant policy measure to address the situation.",
+  "data": "a table, \"S&E articles in all fields, for 15 largest producing regions, countries, or economies: 2008 and 2018\" (articles in 2008 → 2018; average annual growth 2008–18; share of the 2018 world total; cumulative share): World 1,755,850 → 2,555,959 (3.83%); 1. China 249,049 → 528,263 (7.81%; 20.67%; 20.67%); 2. United States 393,979 → 422,808 (0.71%; 16.54%; 37.21%); 3. India 48,998 → 135,788 (10.73%; 5.31%; 42.52%); 4. Germany 91,904 → 104,396 (1.28%; 4.08%; 46.61%); 5. Japan 108,241 → 98,793 (−0.91%; 3.87%; 50.47%).",
+  "id": "g1m-2020-p5-12a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "12(b)",
+  "part_no": 5,
+  "part": "Ecology, biodiversity and natural resources",
+  "topic": "Natural resources, forests and mining",
+  "text": "Is there a difference between \"forest cover\" and \"forest area\"? What does the following graph show?",
+  "data": "a graph, \"Total forest cover and total forest area of India in sq.km (FSI, 2001-2017)\". Forest cover: 675,538 (2001), 678,333 (2003), 690,171 (2005), 690,899 (2007), 692,394 (2009), 692,027 (2011), 697,898 (2013), 701,495 (2015), 708,273 (2017). Forest area: 768,436 (2001), 774,740 (2003), 769,626 (2005), 769,512 (2007), 769,512 (2009), 769,538 (2011), 771,821 (2013), 764,566 (2015), 767,419 (2017).",
+  "id": "g1m-2020-p5-12b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "13(a)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Climate change and sustainable development",
+  "text": "What is Climate Justice? How is this matter covered by news media and influential publications like Time magazine? Suggest at least 2 measures that are aligned to this goal.",
+  "id": "g1m-2020-p5-13a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "13(b)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Climate change and sustainable development",
+  "text": "Explain what you see in the following graphic. (a) How does human activity affect the substance shown in the graphic? (b) How does this substance affect human health?",
+  "data": "a graphic of ozone concentration (parts per million, 0 to 9) against altitude (0 to 100 km), with the troposphere, stratosphere and mesosphere marked: ozone is very low near the ground, rises sharply above about 15 km, peaks at nearly 8 ppm at about 35 km in the stratosphere, and falls to almost nothing above about 70 km.",
+  "id": "g1m-2020-p5-13b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "14(a)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Pollution and waste management",
+  "text": "What are the most common and hazardous pollutants in outdoor and indoor air? Mention the health hazards from each of the pollutants. What is AQI (Air Quality Index)? Who monitors AQI in India? What is the contribution of PM to AQI?",
+  "id": "g1m-2020-p5-14a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "14(b)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Health and diseases",
+  "text": "What is Covid-19 and how is it spread? How are immuno-diagnostic methods used in context of the Covid-19 pandemic?",
+  "id": "g1m-2020-p5-14b"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "15(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Health and diseases",
+  "text": "Explain the mechanism of action of vaccines. Give two examples where vaccines have eradicated diseases in India. What do you know about the Global Vaccine Action Plan 2011-2020 and Mission Indradhanush?",
+  "id": "g1m-2020-p5-15a"
+ },
+ {
+  "paper": "V",
+  "year": 2020,
+  "qno": "15(b)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Health and diseases",
+  "text": "The 2020 Nobel Prize for Physiology and Medicine was awarded to three scientists for their work on HCV. What do you know about this virus and the disease it causes? Is there any vaccine available for this disease?",
+  "id": "g1m-2020-p5-15b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "1(a)",
+  "part_no": 1,
+  "part": "Science and technology policy, institutions and IPR",
+  "topic": "Science and technology policy and institutions",
+  "text": "Do you think the problem in India is 'not so much knowledge creation, as knowledge consumption' and Scientific Social Responsibility (SSR) will go a long way in remedying this situation? Justify your stand. Discuss the challenges associated with the implementation of Scientific Social Responsibility.",
+  "id": "g1m-2023-p5-1a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "1(b)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Health and diseases",
+  "text": "Technology plays a key role in transforming healthcare sector and in addressing India's healthcare challenges - Discuss.",
+  "id": "g1m-2023-p5-1b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "2(a)",
+  "part_no": 2,
+  "part": "Emerging technologies, ICT and cyber security",
+  "topic": "ICT, e-governance and cyber security",
+  "text": "Digital platforms dramatically improve the quality and accountability of public service and facilitate citizen centric governance - Elaborate. Explain various Technical, Economic and Social bottlenecks in the implementation of e-governance programmes in India.",
+  "id": "g1m-2023-p5-2a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "2(b)",
+  "part_no": 2,
+  "part": "Emerging technologies, ICT and cyber security",
+  "topic": "ICT, e-governance and cyber security",
+  "text": "Explain how 'Atmanirbhar Bharat' initiative is bringing a big change in India's IT sector. Suggest the steps to be taken to make India a Global technology hub.",
+  "id": "g1m-2023-p5-2b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "3(a)",
+  "part_no": 3,
+  "part": "Space, defence and nuclear technology",
+  "topic": "Space technology",
+  "text": "What is space junk? Discuss the challenges posed by increased space junk and the potential risk associated with it. What do you know about Project NETRA?",
+  "id": "g1m-2023-p5-3a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "3(b)",
+  "part_no": 3,
+  "part": "Space, defence and nuclear technology",
+  "topic": "Space technology",
+  "text": "Why is India's space industry looking for private sector investments even though ISRO is a successfully performing PSU?",
+  "id": "g1m-2023-p5-3b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "4(a)",
+  "part_no": 3,
+  "part": "Space, defence and nuclear technology",
+  "topic": "Nuclear technology and policy",
+  "text": "Though circumstances are strongly insisting for India to overturn decades of 'No first use' nuclear doctrine, still India is committed to No first use of nuclear weapons - Comment.",
+  "id": "g1m-2023-p5-4a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "4(b)",
+  "part_no": 4,
+  "part": "Energy: conventional and renewable",
+  "topic": "Renewable energy",
+  "text": "What is Green Energy? Discuss about the Green Energy corridors and their need in India.",
+  "id": "g1m-2023-p5-4b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "5(a)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Climate change and sustainable development",
+  "text": "Climate change is a global concern which needs urgent intervention to combat it - Explain why. Discuss how climate smart agriculture mitigates the devastating effects of climate change.",
+  "id": "g1m-2023-p5-5a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "5(b)",
+  "part_no": 5,
+  "part": "Ecology, biodiversity and natural resources",
+  "topic": "Natural resources, forests and mining",
+  "text": "What is meant by open cast mining? Discuss the impacts of open cast mining on environment and solutions to overcome them. Add a note on the importance of post mining reclamation.",
+  "id": "g1m-2023-p5-5b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "6(a)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Climate change and sustainable development",
+  "text": "What are various mitigation activities by the Government of India to lower CO2 emission for trading of carbon credits in the international market under Paris Agreement?",
+  "id": "g1m-2023-p5-6a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "6(b)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Pollution and waste management",
+  "text": "Explain various challenges associated with disposing of massive amounts of Municipal solid waste. Discuss action plan for municipal solid waste management in India for cities generating waste > 500 tonnes per day.",
+  "id": "g1m-2023-p5-6b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "7(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Biotechnology",
+  "text": "Biotechnology has unlocked a vast potential for improving human life, but the risks it poses are now a concern - Discuss throwing light on blessing and curse of Biotechnology.",
+  "id": "g1m-2023-p5-7a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "7(b)",
+  "part_no": 5,
+  "part": "Ecology, biodiversity and natural resources",
+  "topic": "Ecology and biodiversity",
+  "text": "Why is Ecotourism considered as a tool for conservation of Natural heritage? Discuss challenges associated with Ecotourism.",
+  "id": "g1m-2023-p5-7b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "8(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Health and diseases",
+  "text": "Why is antibiotic resistance getting worse in India? Discuss the strategies and action plans in India to deal with this.",
+  "id": "g1m-2023-p5-8a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "8(b)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Biotechnology",
+  "text": "Bio-pesticides are slower in action compared to conventional pesticides, with shorter persistence and susceptible to unfavourable environmental conditions, but still there is a need to shift towards Bio-pesticides - Explain why.",
+  "id": "g1m-2023-p5-8b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "9(a)",
+  "part_no": 1,
+  "part": "Science and technology policy, institutions and IPR",
+  "topic": "Intellectual property rights",
+  "text": "Why is the number of patents granted in India still a fraction compared to China and US, even though India's global position in innovations has been rising over the years?",
+  "id": "g1m-2023-p5-9a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "9(b)",
+  "part_no": 1,
+  "part": "Science and technology policy, institutions and IPR",
+  "topic": "Intellectual property rights",
+  "text": "What are the tools required for the successful commercialization of Intellectual Property Rights in India? Discuss the role of CIPAM in commercialization of Intellectual Property Rights.",
+  "id": "g1m-2023-p5-9b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "10(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Biotechnology",
+  "text": "Inefficient farming and poor distribution are reasons for the world's food shortage and the genetically modified crops are a bad answer to the wrong problem - Comment.",
+  "id": "g1m-2023-p5-10a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "10(b)",
+  "part_no": 3,
+  "part": "Space, defence and nuclear technology",
+  "topic": "Space technology",
+  "text": "Why is monitoring and weather forecasting crucial? Discuss the role of ISRO in the weather prediction and capabilities in Disaster management. Add a note on Mission NISAR.",
+  "id": "g1m-2023-p5-10b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "11(a)",
+  "part_no": 2,
+  "part": "Emerging technologies, ICT and cyber security",
+  "topic": "Emerging technologies",
+  "text": "Discuss how Artificial Intelligence manipulated digital media can impact privacy, democracy and national security of a country. Suggest solutions to tackle this infodemic.",
+  "id": "g1m-2023-p5-11a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "11(b)",
+  "part_no": 4,
+  "part": "Energy: conventional and renewable",
+  "topic": "Renewable energy",
+  "text": "What is the current scenario of renewable power generation in India? Discuss the factors responsible for the growing focus and shift towards Renewable energy.",
+  "id": "g1m-2023-p5-11b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "12(a)",
+  "part_no": 7,
+  "part": "Environmental laws, EIA and disaster management",
+  "topic": "Environmental laws, EIA and disaster management",
+  "text": "What is coastal erosion? Discuss factors causing coastal erosion. Why is erosion dominant in the Eastern coast than the Western coast in India?",
+  "id": "g1m-2023-p5-12a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "12(b)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Climate change and sustainable development",
+  "text": "Discuss how technology translated into a medium for the destruction of environment through human exploitation.",
+  "id": "g1m-2023-p5-12b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "13(a)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Climate change and sustainable development",
+  "text": "The most important climate goal is limiting the Earth's warming to 1.5° Celsius. What happens to the world if we pass the crucial 1.5° Celsius climate threshold?",
+  "id": "g1m-2023-p5-13a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "13(b)",
+  "part_no": 2,
+  "part": "Emerging technologies, ICT and cyber security",
+  "topic": "Emerging technologies",
+  "text": "Block chain technology is the doorway to transforming the agriculture sector in India - Discuss.",
+  "id": "g1m-2023-p5-13b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "14(a)",
+  "part_no": 3,
+  "part": "Space, defence and nuclear technology",
+  "topic": "Nuclear technology and policy",
+  "text": "What are the reasons behind the India's opposition to sign the Non-Proliferation of nuclear weapons (NPT)? Discuss the impact of the civil nuclear agreement with the Nuclear Supplier Group (NSG) on nuclear power generation in India.",
+  "id": "g1m-2023-p5-14a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "14(b)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Pollution and waste management",
+  "text": "What are e-waste recycling practices in India? Discuss the highlights of new e-waste management rules 2022 notified by the Government of India.",
+  "id": "g1m-2023-p5-14b"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "15(a)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Climate change and sustainable development",
+  "text": "Discuss why India did not sign the COP26 pledge to stop deforestation and cut methane gas emission by 2030.",
+  "id": "g1m-2023-p5-15a"
+ },
+ {
+  "paper": "V",
+  "year": 2023,
+  "qno": "15(b)",
+  "part_no": 5,
+  "part": "Ecology, biodiversity and natural resources",
+  "topic": "Ecology and biodiversity",
+  "text": "What are Gene Sanctuaries? How do they protect the genetic diversity of plants in India?",
+  "id": "g1m-2023-p5-15b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "1(a)",
+  "part_no": 1,
+  "part": "Science and technology policy, institutions and IPR",
+  "topic": "Science and technology policy and institutions",
+  "text": "Describe the research focus of the National Institute for Research on Commercial Agriculture (NIRCA) in Rajamahendravaram. How does it support India's agricultural sector?",
+  "id": "g1m-2025-p5-1a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "1(b)",
+  "part_no": 2,
+  "part": "Emerging technologies, ICT and cyber security",
+  "topic": "Emerging technologies",
+  "text": "Evaluate the impact of Internet of Things (IoT) technologies on the automation of household systems. Illustrate how everyday tasks have evolved due to IoT innovations.",
+  "id": "g1m-2025-p5-1b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "2(a)",
+  "part_no": 1,
+  "part": "Science and technology policy, institutions and IPR",
+  "topic": "Science and technology policy and institutions",
+  "text": "Discuss the discovery of Raman effect by Dr. C.V. Raman. How did his work impact the global scientific community?",
+  "id": "g1m-2025-p5-2a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "2(b)",
+  "part_no": 1,
+  "part": "Science and technology policy, institutions and IPR",
+  "topic": "Science and technology policy and institutions",
+  "text": "Which are the major scientific institutes located in Andhra Pradesh? Discuss the role of IISER Tirupati in the scientific and educational development of the state.",
+  "id": "g1m-2025-p5-2b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "3(a)",
+  "part_no": 2,
+  "part": "Emerging technologies, ICT and cyber security",
+  "topic": "ICT, e-governance and cyber security",
+  "text": "Discuss the evolution of e-governance in India, highlighting key initiatives. Analyze how these initiatives have transformed public service delivery and enhanced citizen engagement.",
+  "id": "g1m-2025-p5-3a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "3(b)",
+  "part_no": 2,
+  "part": "Emerging technologies, ICT and cyber security",
+  "topic": "ICT, e-governance and cyber security",
+  "text": "Define cybercrime. Discuss the major types of cybercrimes prevalent in India today.",
+  "id": "g1m-2025-p5-3b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "4(a)",
+  "part_no": 2,
+  "part": "Emerging technologies, ICT and cyber security",
+  "topic": "ICT, e-governance and cyber security",
+  "text": "Discuss the key objectives and features of the National Policy on Information Technology, 2012. How does it aim to transform India into a digitally empowered society?",
+  "id": "g1m-2025-p5-4a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "4(b)",
+  "part_no": 3,
+  "part": "Space, defence and nuclear technology",
+  "topic": "Defence technology",
+  "text": "Discuss the vision and mission of DRDO? Describe the role of DRDO in the contribution to national development.",
+  "id": "g1m-2025-p5-4b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "5(a)",
+  "part_no": 3,
+  "part": "Space, defence and nuclear technology",
+  "topic": "Space technology",
+  "text": "Describe the role of the Indian Remote Sensing (IRS) satellite programme. How do these satellites assist in natural resource management?",
+  "id": "g1m-2025-p5-5a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "5(b)",
+  "part_no": 5,
+  "part": "Ecology, biodiversity and natural resources",
+  "topic": "Natural resources, forests and mining",
+  "text": "Provide a comprehensive overview of the primary reasons for deforestation in Andhra Pradesh in the past two decades.",
+  "id": "g1m-2025-p5-5b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "6(a)",
+  "part_no": 5,
+  "part": "Ecology, biodiversity and natural resources",
+  "topic": "Natural resources, forests and mining",
+  "text": "Investigate the relationship between mining activities and the occurrence of earthquakes. Explain how mining operations can be regulated to minimize seismic risks.",
+  "id": "g1m-2025-p5-6a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "6(b)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Climate change and sustainable development",
+  "text": "Define sustainable development and critically evaluate its relevance in the context of modern industrialization.",
+  "id": "g1m-2025-p5-6b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "7(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Health and diseases",
+  "text": "Describe the relationship between deforestation and the emergence of infectious diseases.",
+  "id": "g1m-2025-p5-7a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "7(b)",
+  "part_no": 7,
+  "part": "Environmental laws, EIA and disaster management",
+  "topic": "Environmental laws, EIA and disaster management",
+  "text": "What is Environmental Impact Assessment (EIA)? Describe its key stages.",
+  "id": "g1m-2025-p5-7b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "8(a)",
+  "part_no": 5,
+  "part": "Ecology, biodiversity and natural resources",
+  "topic": "Natural resources, forests and mining",
+  "text": "Explain the different types of natural resources in India. How are they being conserved through government initiatives?",
+  "id": "g1m-2025-p5-8a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "8(b)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Pollution and waste management",
+  "text": "What are the key principles of Integrated Solid Waste Management (ISWM)? Discuss the role of waste hierarchy in ISWM.",
+  "id": "g1m-2025-p5-8b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "9(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Biotechnology",
+  "text": "Analyze the potential of plant-derived biopharmaceuticals in promoting sustainable healthcare. Explain how the application of green pharmacy principles can help minimize environmental harm at each stage of the pharmaceutical lifecycle.",
+  "id": "g1m-2025-p5-9a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "9(b)",
+  "part_no": 4,
+  "part": "Energy: conventional and renewable",
+  "topic": "Energy: conventional sources and security",
+  "text": "Differentiate between conventional and non-conventional energy resources. Explain their relevance in India's energy sector.",
+  "id": "g1m-2025-p5-9b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "10(a)",
+  "part_no": 7,
+  "part": "Environmental laws, EIA and disaster management",
+  "topic": "Environmental laws, EIA and disaster management",
+  "text": "Critically assess the effectiveness of major disaster management initiatives undertaken in India since the enactment of the Disaster Management Act, 2005.",
+  "id": "g1m-2025-p5-10a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "10(b)",
+  "part_no": 7,
+  "part": "Environmental laws, EIA and disaster management",
+  "topic": "Environmental laws, EIA and disaster management",
+  "text": "Discuss the legislative framework for controlling air and water pollution in India. Highlight the key provisions and limitations of relevant acts.",
+  "id": "g1m-2025-p5-10b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "11(a)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Climate change and sustainable development",
+  "text": "Define global warming, and differentiate it clearly from climate change. Explain the key natural and human-induced causes of global warming and briefly discuss which factors are currently dominant in driving global temperature rise.",
+  "id": "g1m-2025-p5-11a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "11(b)",
+  "part_no": 6,
+  "part": "Pollution, waste and climate change",
+  "topic": "Pollution and waste management",
+  "text": "Discuss the role of remote sensing in tracking the dispersion of environmental pollutants. Analyze its implications for human health in affected regions, highlighting limitations and future improvements.",
+  "id": "g1m-2025-p5-11b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "12(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Biotechnology",
+  "text": "Explain the regulatory framework governing genetically modified organisms in India and assess its adequacy in addressing modern challenges.",
+  "id": "g1m-2025-p5-12a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "12(b)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Biotechnology",
+  "text": "Trace the evolution of India's National Biotechnology Development Strategy (NBDS) and discuss its key objectives. Critically evaluate its impact on the growth of the biotechnology sector in India.",
+  "id": "g1m-2025-p5-12b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "13(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Health and diseases",
+  "text": "Describe the components and functioning of a vaccine.",
+  "id": "g1m-2025-p5-13a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "13(b)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Biotechnology",
+  "text": "Define genetic engineering. Explain its applications in agriculture and medicine.",
+  "id": "g1m-2025-p5-13b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "14(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Biotechnology",
+  "text": "Describe the integrated strategies used in biotechnology to monitor and control outbreaks of bacterial diseases in poultry farming.",
+  "id": "g1m-2025-p5-14a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "14(b)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Health and diseases",
+  "text": "Examine how urban infrastructure influences the implementation of preventive measures during microbial disease outbreaks. Suggest technology-driven solutions.",
+  "id": "g1m-2025-p5-14b"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "15(a)",
+  "part_no": 8,
+  "part": "Biotechnology and health",
+  "topic": "Health and diseases",
+  "text": "Discuss the transmission dynamics of respiratory tract infections in densely populated urban settings. Propose effective public health strategies for their prevention.",
+  "id": "g1m-2025-p5-15a"
+ },
+ {
+  "paper": "V",
+  "year": 2025,
+  "qno": "15(b)",
+  "part_no": 1,
+  "part": "Science and technology policy, institutions and IPR",
+  "topic": "Intellectual property rights",
+  "text": "Describe the importance of IPR in academic and industrial research collaborations.",
+  "id": "g1m-2025-p5-15b"
  }
 ]

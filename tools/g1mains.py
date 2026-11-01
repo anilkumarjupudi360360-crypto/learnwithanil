@@ -1,12 +1,14 @@
 """APPSC Group-1 Mains previous questions with model answers (Anil, 31 Oct 2026).
 
 Anil: "add group-1 PYQs mains questions and answers into website ... in group-1 tile add prelims and mains tiles ... in mains
-tile add pyqs year wise and subject wise". Papers II, III and IV of the 2020, 2023 and 2025 Mains (no essay paper; Paper V is
-not on the site), 270 questions. The questions are public (crawlable pages); the model answers, written by Learn with Anil,
+tile add pyqs year wise and subject wise". Papers II, III and IV of the 2020, 2023 and 2025 Mains, 270 questions; Anil (1 Nov
+2026): "ok do for paper 5...and only questions for essay": Paper V (90 questions, with answers) and Paper I (27 essay topics,
+questions only, no model essays). The questions are public (crawlable pages); the model answers, written by Learn with Anil,
 are in the ₹45 PYQ Pass, except the free sample (Q1(a) and Q1(b) of each paper).
 
 Data (src/appsc-group-1/mains-pyqs/):
-    questions.json   [{id, paper, year, qno, part_no, part, topic, text}]  (from the Answer Writing Tool Kit)
+    questions.json   [{id, paper, year, qno, part_no, part, topic, text}]  (Papers I-IV from the Answer Writing Tool Kit;
+                     Paper V from the official papers via the S&T book's PYQ chapter; essay qno is "II(b)" = Section II, topic (b))
     answers.json     {key: "bk-g1m-ans", file: "<sealed bundle in src/books>", n, free: {id: answer}}  (tools/g1m_seal.py)
 The sealed bundle (AES-256-GCM, additional data "bk-g1m-ans") holds {id: answer} for every question; a page asks the
 payments script for the key (action "mock", any bk- id needs a valid PYQ Pass) and fills the answers in place.
@@ -21,9 +23,13 @@ import html, json, os, re, shutil
 import g1m_render
 
 DIR = 'mains-pyqs'
-PAPERS = {'II': (2, 'History, Culture & Geography of India and Andhra Pradesh'),
+PAPERS = {'I': (1, 'General Essay'),
+          'II': (2, 'History, Culture & Geography of India and Andhra Pradesh'),
           'III': (3, 'Polity, Constitution, Governance, Law & Ethics'),
-          'IV': (4, 'Economy & Development of India and Andhra Pradesh')}
+          'IV': (4, 'Economy & Development of India and Andhra Pradesh'),
+          'V': (5, 'Science, Technology & Environmental Issues')}
+ESSAY = 'I'   # questions only: no model essays
+ROMAN = {'I': 1, 'II': 2, 'III': 3}
 YEARS = (2025, 2023, 2020)
 HELD = {2025: 'May 2025 (Notification 12/2023)', 2023: 'June 2023 (Notification 28/2022)', 2020: 'December 2020 (Notification 27/2018)'}
 esc = lambda s: html.escape(str(s), quote=True)
@@ -63,7 +69,16 @@ def part_pages(qs):
     return out
 
 
-def qkey(q): return (int(re.match(r'\d+', q['qno']).group()), q['qno'])
+def qkey(q):
+    m = re.match(r'(\d+)|(I{1,3})\(', q['qno'])
+    return (int(m.group(1)) if m.group(1) else ROMAN[m.group(2)], q['qno'])
+
+
+def qlabel(q):
+    if q['paper'] == ESSAY:
+        sec, x = q['qno'].rstrip(')').split('(')
+        return f'{q["year"]} · Paper I · Section {sec} ({x})'
+    return f'{q["year"]} · Paper {q["paper"]} · Q{q["qno"]}'
 
 
 CSS = ('<style>' + g1m_render.CSS + '.mans{margin:10px 0 0;border-top:1px dashed var(--line);padding-top:10px}.mans h3{font:700 13px/1.4 "IBM Plex Mono",ui-monospace,monospace;'
@@ -98,6 +113,7 @@ return crypto.subtle.importKey('raw',Uint8Array.from(atob(r.key),function(c){ret
 
 
 def ans_html(q, man, pb, price):
+    if q['paper'] == ESSAY: return ''
     free = man.get('free', {})
     if q['id'] in free:
         return f'<div class="mans"><h3>Model answer · free sample</h3>{free[q["id"]]}</div>'
@@ -110,7 +126,8 @@ def ans_html(q, man, pb, price):
 def q_html(q, man, pb, price, parts, label, show_topic=True):
     pslug = parts[(q['paper'], q['part_no'])][1]
     top = (f'<a class="qtopic" href="{pslug}.html">{esc(q["part"])} · {esc(q["topic"])}</a>' if show_topic else '')
-    return (f'<li class="q" id="{q["id"]}"><div class="meta">{esc(label)} · 10 marks</div>{top}<p>{esc(q["text"])}</p>'
+    note = (f'<p class="muted" style="font-size:14.5px">This question came with {esc(q["data"])}</p>' if q.get('data') else '')
+    return (f'<li class="q" id="{q["id"]}"><div class="meta">{esc(label)} · {50 if q["paper"] == ESSAY else 10} marks</div>{top}<p>{esc(q["text"])}</p>{note}'
             + ans_html(q, man, pb, price) + '</li>')
 
 
@@ -127,13 +144,19 @@ def pages(B, conf):
     parts = part_pages(qs)
     nfree = len(man.get('free', {}))
     js = unlock_js(B.PAY.get('api'), man)
-    buy = (f'<div class="buy"><div><b>Model answers for all {len(qs)} questions</b><p>Every Group-1 Mains question of 2020, 2023 and 2025 (Papers II, III and IV) '
+    nans = sum(q['paper'] != ESSAY for q in qs)
+    ap = [p for p in PAPERS if p != ESSAY and any(q['paper'] == p for q in qs)]
+    aps = ', '.join(ap[:-1]) + ' and ' + ap[-1]
+    buy = (f'<div class="buy"><div><b>Model answers for all {nans} questions</b><p>Every Group-1 Mains question of 2020, 2023 and 2025 (Papers {aps}) '
            f'with a model answer written the way a top APPSC candidate would: key words and an introduction, every part of the question in numbered points, diagrams, flowcharts, tables or maps, the Andhra Pradesh angle and a conclusion. '
            f'Included in the ₹{price} PYQ Pass, with every previous paper, mock test series and study book on the site.</p>'
            f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{pb}?buy=pyq">Get it for ₹{price}</a></div>')
     howto = (f'<p class="note">The questions are free to read. The model answers open on this page for students with the ₹{price} PYQ Pass '
              f'(register once in the app on this phone, with the same phone number you paid with). The answers to Q1(a) and Q1(b) of every paper are free samples. '
              f'Answers are by Learn with Anil (Jupudi Anil Kumar), not by APPSC; facts and data are as of October 2026.</p>')
+    howto_e = (f'<p class="note">Paper I is the essay paper: 9 topics in 3 sections of 3, and candidates write one essay from each section '
+               f'(50 marks each, 150 in all). These are the real topics only, with no model essays. Practice essay topics on every syllabus part are in the '
+               f'<a href="{pb}#mains">Answer Writing Tool Kit</a> (PDF, in the ₹{price} PYQ Pass).</p>')
     out = {}
     by_yp = {}
     for q in qs: by_yp.setdefault((q['year'], q['paper']), []).append(q)
@@ -143,17 +166,27 @@ def pages(B, conf):
         rel = f'{DIR}/{y}-paper-{n}.html'
         can = f'{B.SITE_URL}{pb}{rel}'
         L.sort(key=qkey)
-        title = f'APPSC Group 1 Mains {y} Paper {p} Questions with Model Answers ({pname}) | Learn with Anil'
-        desc = (f'All 30 questions of the APPSC Group 1 Mains {y} Paper {p} ({pname}), held {HELD[y]}, with model answers by Learn with Anil: '
-                f'year-wise, with each question\'s syllabus topic. Questions free; answers with the ₹{price} PYQ Pass.')
+        E = p == ESSAY
+        if E:
+            title = f'APPSC Group 1 Mains {y} Paper I Essay Topics (General Essay Question Paper) | Learn with Anil'
+            desc = (f'All 9 essay topics of the APPSC Group 1 Mains {y} Paper I (General Essay), held {HELD[y]}, section-wise, '
+                    f'with each topic\'s syllabus theme. Free to read.')
+        else:
+            title = f'APPSC Group 1 Mains {y} Paper {p} Questions with Model Answers ({pname}) | Learn with Anil'
+            desc = (f'All {len(L)} questions of the APPSC Group 1 Mains {y} Paper {p} ({pname}), held {HELD[y]}, with model answers by Learn with Anil: '
+                    f'year-wise, with each question\'s syllabus topic. Questions free; answers with the ₹{price} PYQ Pass.')
         other = ' · '.join(f'<a href="{yy}-paper-{n}.html">{yy}</a>' for yy in YEARS if yy != y)
         others = ' · '.join(f'<a href="{y}-paper-{PAPERS[pp][0]}.html">Paper {pp}</a>' for pp in PAPERS if pp != p)
         body = (CSS + f'<p>Same paper, other years: {other}. Same year, other papers: {others}. <a href="./">All Mains PYQs (year-wise and subject-wise)</a>.</p>'
-                + howto + f'<h2>All 30 questions with model answers</h2><ol class="qs">'
-                + ''.join(q_html(q, man, pb, price, parts, f'{y} · Paper {p} · Q{q["qno"]}') for q in L) + '</ol>' + buy + js)
-        lede = esc(f'APPSC Group-I Mains {y}, Paper {p}: {pname}. Held in {HELD[y]}. 15 questions with an internal choice (a) or (b), 10 marks each, '
-                   f'so 30 questions in all; every one is below with its syllabus topic and a model answer.')
-        out[rel] = B.static_page(1, title, desc, can, f'APPSC Group 1 Mains {y} Paper {p} with model answers', lede, body,
+                + (howto_e if E else howto) + (f'<h2>All 9 essay topics</h2><ol class="qs">' if E else f'<h2>All {len(L)} questions with model answers</h2><ol class="qs">')
+                + ''.join(q_html(q, man, pb, price, parts, qlabel(q)) for q in L) + '</ol>' + buy + ('' if E else js))
+        if E:
+            lede = esc(f'APPSC Group-I Mains {y}, Paper I: General Essay. Held in {HELD[y]}. Three sections of three topics each; '
+                       f'candidates write one essay from each section. All 9 topics are below with their syllabus theme.')
+        else:
+            lede = esc(f'APPSC Group-I Mains {y}, Paper {p}: {pname}. Held in {HELD[y]}. 15 questions with an internal choice (a) or (b), 10 marks each, '
+                       f'so 30 questions in all; every one is below with its syllabus topic and a model answer.')
+        out[rel] = B.static_page(1, title, desc, can, f'APPSC Group 1 Mains {y} Paper I essay topics' if E else f'APPSC Group 1 Mains {y} Paper {p} with model answers', lede, body,
                                  crumbs0 + [(f'{y} Paper {p}', can)], conf)
     # one page per syllabus part (subject-wise)
     by_part = {}
@@ -165,27 +198,36 @@ def pages(B, conf):
         can = f'{B.SITE_URL}{pb}{rel}'
         topics = {}
         for q in L: topics.setdefault(q['topic'], []).append(q)
-        title = f'APPSC Group 1 Mains {part} Questions with Answers (Paper {p}, 2020–2025) | Learn with Anil'
-        desc = (f'{len(L)} APPSC Group 1 Mains Paper {p} previous questions on {part}, from the 2020, 2023 and 2025 papers, grouped by topic, '
-                f'with model answers by Learn with Anil. Questions free; answers with the ₹{price} PYQ Pass.')
+        E = p == ESSAY
+        if E:
+            title = f'APPSC Group 1 Mains Essay Topics on {part} (Paper I, 2020–2025) | Learn with Anil'
+            desc = (f'{len(L)} APPSC Group 1 Mains Paper I essay topic{"s" if len(L) > 1 else ""} on {part}, from the 2020, 2023 and 2025 papers, grouped by theme. Free to read.')
+        else:
+            title = f'APPSC Group 1 Mains {part} Questions with Answers (Paper {p}, 2020–2025) | Learn with Anil'
+            desc = (f'{len(L)} APPSC Group 1 Mains Paper {p} previous questions on {part}, from the 2020, 2023 and 2025 papers, grouped by topic, '
+                    f'with model answers by Learn with Anil. Questions free; answers with the ₹{price} PYQ Pass.')
         sib = ' · '.join(f'<a href="{s}.html">{esc(nm)}</a>' for (pp, _), (nm, s) in sorted(parts.items(), key=lambda x: x[0][1]) if pp == p and s != ps)
         sec = []
         for t, TL in topics.items():
             TL.sort(key=lambda q: (-q['year'], qkey(q)))
             sec.append(f'<h2>{esc(t)} <span style="font-weight:400;color:var(--muted);font-size:16px">· asked {len(TL)} time{"s" if len(TL) > 1 else ""}</span></h2><ol class="qs">'
-                       + ''.join(q_html(q, man, pb, price, parts, f'{q["year"]} · Paper {p} · Q{q["qno"]}', False) for q in TL) + '</ol>')
+                       + ''.join(q_html(q, man, pb, price, parts, qlabel(q), False) for q in TL) + '</ol>')
         yc = {y: sum(q['year'] == y for q in L) for y in YEARS}
         body = (CSS + f'<p>Paper {p}: {esc(pname)}. Other parts of this paper: {sib}. <a href="./">All Mains PYQs</a>.</p>'
                 + f'<table class="facts"><tr><th>Year</th>' + ''.join(f'<th>{y}</th>' for y in YEARS) + '<th>Total</th></tr><tr><td>Questions</td>'
                 + ''.join(f'<td class="n">{yc[y]}</td>' for y in YEARS) + f'<td class="n"><b>{len(L)}</b></td></tr></table>'
-                + howto + ''.join(sec) + buy + js)
-        lede = esc(f'Every APPSC Group-I Mains question on {part} (Paper {p}) from the 2020, 2023 and 2025 papers: {len(L)} questions in {len(topics)} topics, '
-                   f'newest first, each with a model answer.')
-        out[rel] = B.static_page(1, title, desc, can, f'APPSC Group 1 Mains {part}: previous questions with answers', lede, body,
+                + (howto_e if E else howto) + ''.join(sec) + buy + ('' if E else js))
+        if E:
+            lede = esc(f'Every APPSC Group-I Mains essay topic on {part} (Paper I) from the 2020, 2023 and 2025 papers: {len(L)} topic{"s" if len(L) > 1 else ""}, newest first.')
+        else:
+            lede = esc(f'Every APPSC Group-I Mains question on {part} (Paper {p}) from the 2020, 2023 and 2025 papers: {len(L)} questions in {len(topics)} topics, '
+                       f'newest first, each with a model answer.')
+        out[rel] = B.static_page(1, title, desc, can, f'APPSC Group 1 Mains essay topics: {part}' if E else f'APPSC Group 1 Mains {part}: previous questions with answers', lede, body,
                                  crumbs0 + [(f'Paper {p} · {part}', can)], conf)
     # the index: year-wise and subject-wise
     yw = ''.join(f'<h3 style="margin:18px 0 4px">{y} Mains <span style="font-weight:400;color:var(--muted);font-size:15px">· held {HELD[y]}</span></h3><div class="yp">'
-                 + ''.join(f'<a href="{y}-paper-{PAPERS[p][0]}.html"><b>Paper {p}</b><span>{esc(PAPERS[p][1])} · 30 questions</span></a>' for p in PAPERS) + '</div>'
+                 + ''.join(f'<a href="{y}-paper-{PAPERS[p][0]}.html"><b>Paper {p}</b><span>{esc(PAPERS[p][1])} · '
+                           f'{"9 essay topics" if p == ESSAY else str(len(by_yp.get((y, p), []))) + " questions"}</span></a>' for p in PAPERS if (y, p) in by_yp) + '</div>'
                  for y in YEARS)
     sw = []
     for p, (n, pname) in PAPERS.items():
@@ -194,20 +236,22 @@ def pages(B, conf):
             if pp != p: continue
             L = by_part[(pp, pno)]
             tps = list(dict.fromkeys(q['topic'] for q in L))
-            items.append(f'<div class="ppart"><a href="{s}.html">{esc(nm)}</a> · {len(L)} questions<br><span>{esc("; ".join(tps))}</span></div>')
+            items.append(f'<div class="ppart"><a href="{s}.html">{esc(nm)}</a> · {len(L)} {("topic" if len(L) == 1 else "topics") if p == ESSAY else "questions"}<br><span>{esc("; ".join(tps))}</span></div>')
         sw.append(f'<h3 style="margin:22px 0 8px">Paper {p}: {esc(pname)}</h3>' + ''.join(items))
     body = (CSS + f'<a class="cta" href="#year">Year-wise</a><a class="cta alt" href="#subject">Subject-wise</a>'
             f'<a class="cta alt" href="{pb}#mains">Answer Writing Tool Kit (PDF)</a>' + howto
-            + f'<h2 id="year">Year-wise: 2025, 2023 and 2020 papers</h2><p>Each paper has 15 questions with an internal choice, (a) or (b), 10 marks each.</p>' + yw
-            + f'<h2 id="subject">Subject-wise: by syllabus part</h2><p>The same {len(qs)} questions sorted by the Notification 07/2026 syllabus, so you can see which parts APPSC asks most.</p>'
+            + f'<h2 id="year">Year-wise: 2025, 2023 and 2020 papers</h2><p>Papers II to V have 15 questions each with an internal choice, (a) or (b), 10 marks each. '
+              f'Paper I (Essay) has 9 topics in 3 sections; candidates write one essay from each.</p>' + yw
+            + f'<h2 id="subject">Subject-wise: by syllabus part</h2><p>The same {nans} questions and {len(qs) - nans} essay topics sorted by syllabus part, so you can see which parts APPSC asks most.</p>'
             + ''.join(sw)
-            + '<p class="note">Paper I (General Essay) topics are in the Answer Writing Tool Kit. Paper V (Science, Technology &amp; Environmental Issues) is not on the site yet.</p>'
+            + '<p class="note">Paper I (General Essay): the real topics only, with no model essays. Practice essay topics are in the Answer Writing Tool Kit.</p>'
             + buy)
     title = 'APPSC Group 1 Mains Previous Year Questions with Model Answers (2020, 2023, 2025) – Year-wise & Subject-wise | Learn with Anil'
-    desc = (f'All {len(qs)} APPSC Group 1 Mains questions of 2020, 2023 and 2025 for Paper II (History & Geography), Paper III (Polity & Ethics) and Paper IV (Economy), '
-            f'year-wise and subject-wise, with model answers by Learn with Anil. Questions free; answers with the ₹{price} PYQ Pass.')
-    lede = esc(f'{len(qs)} real APPSC Group-I Mains questions from the 2020, 2023 and 2025 papers (Papers II, III and IV), each with a model answer: '
-               f'pick a year and paper, or a syllabus part to see every question APPSC has asked on it.')
+    desc = (f'All {nans} APPSC Group 1 Mains questions of 2020, 2023 and 2025 for Paper II (History & Geography), Paper III (Polity & Ethics), Paper IV (Economy) '
+            f'and Paper V (Science, Technology & Environment), with model answers by Learn with Anil, plus the {len(qs) - nans} Paper I essay topics; '
+            f'year-wise and subject-wise. Questions free; answers with the ₹{price} PYQ Pass.')
+    lede = esc(f'{nans} real APPSC Group-I Mains questions from the 2020, 2023 and 2025 papers (Papers {aps}), each with a model answer, '
+               f'and the {len(qs) - nans} Paper I essay topics: pick a year and paper, or a syllabus part to see every question APPSC has asked on it.')
     out[f'{DIR}/index.html'] = B.static_page(1, title, desc, base, 'APPSC Group 1 Mains PYQs with model answers', lede, body, crumbs0, conf)
     return out
 
@@ -216,10 +260,10 @@ def tiles(conf, qs_n):
     """The Mains tiles on the APPSC Group-1 home page."""
     pb = conf['pb']
     return (f'<a class="etile" href="{pb}{DIR}/#year"><span class="etile-k">01 · Mains PYQs</span><b>Year-wise</b>'
-            f'<span class="etile-p">The 2025, 2023 and 2020 Mains papers II, III and IV: all {qs_n} questions, each with a model answer.</span>'
+            f'<span class="etile-p">The 2025, 2023 and 2020 Mains: all {qs_n} questions of Papers II–V, each with a model answer, and the Paper I essay topics.</span>'
             f'<span class="etile-price">✓ Questions free · answers in the pass</span></a>'
             f'<a class="etile" href="{pb}{DIR}/#subject"><span class="etile-k">02 · Mains PYQs</span><b>Subject-wise</b>'
-            f'<span class="etile-p">The same questions by syllabus part: history, AP history, geography, polity, ethics, economy and AP economy.</span>'
+            f'<span class="etile-p">The same questions by syllabus part: essay themes, history, geography, polity, ethics, economy, science, technology and environment.</span>'
             f'<span class="etile-price">✓ Questions free · answers in the pass</span></a>'
             f'<a class="etile" href="#mains"><span class="etile-k">03 · Answer writing</span><b>Answer Writing Tool Kit</b>'
             f'<span class="etile-p">Four PDF books (Papers I–IV): every previous question sorted by syllabus, with practice questions.</span>'

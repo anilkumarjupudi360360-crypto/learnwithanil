@@ -541,12 +541,17 @@ async def main():
                     leak = [q['id'] for q in d['questions'] if q['id'] in ex['h'] and q.get('w')]
                     if leak: errors.append(f'{f}: {len(leak)} paid explanations in the public app data (e.g. {leak[0]})')
                     if (d.get('exb') or {}).get('file') != ex['file']: errors.append(f'{f}: app data does not point to the sealed explanations')
-        # APPSC Group-1 Mains PYQs (tools/g1mains.py): 9 year-paper pages with 30 questions each, part pages, links resolve
+        # APPSC Group-1 Mains PYQs (tools/g1mains.py): 15 year-paper pages (Papers I-V), part pages, links resolve
         md_ = os.path.join(SITE, 'appsc-group-1', 'mains-pyqs')
         if os.path.isdir(md_):
             yp = [f for f in os.listdir(md_) if re.fullmatch(r'20\d\d-paper-\d\.html', f)]
             nq = sum(open(os.path.join(md_, f), encoding='utf-8').read().count('<li class="q"') for f in yp)
-            if len(yp) != 9 or nq != 270: errors.append(f'mains-pyqs: {len(yp)} year pages, {nq} questions (expected 9 and 270)')
+            if len(yp) != 15 or nq != 387: errors.append(f'mains-pyqs: {len(yp)} year pages, {nq} questions (expected 15 and 387: Papers II-V 360 + 27 essay topics)')
+            for f in yp:   # essay pages carry no answers; Paper V pages carry answers
+                h = open(os.path.join(md_, f), encoding='utf-8').read()
+                if f.endswith('-paper-1.html') and ('data-ans="' in h or 'class="mans' in h): errors.append(f'mains-pyqs/{f}: essay page shows answers')
+                if f.endswith('-paper-5.html') and (h.count('data-ans="') != 28 or h.count('free sample') != 2):
+                    errors.append(f'mains-pyqs/{f}: {h.count(chr(100) + "ata-ans=" + chr(34))} locked and {h.count("free sample")} free answers (expected 28 and 2)')
             for f in os.listdir(md_):
                 for h in re.findall(r'href="([^"#?]+\.html)"', open(os.path.join(md_, f), encoding='utf-8').read()):
                     if '/' not in h and not os.path.isfile(os.path.join(md_, h)): errors.append(f'mains-pyqs/{f}: broken link {h}')

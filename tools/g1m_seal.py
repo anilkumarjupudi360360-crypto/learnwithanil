@@ -21,7 +21,7 @@ priv = os.environ.get('G1M_PRIV', '/home/claude/g1m/secret')
 qs = json.load(open(os.path.join(ROOT, 'src', 'appsc-group-1', 'mains-pyqs', 'questions.json'), encoding='utf-8'))
 ans = {}
 for f in sorted(glob.glob(os.path.join(work, '20??-p?.json'))): ans.update(json.load(open(f, encoding='utf-8')))
-ids = [q['id'] for q in qs]
+ids = [q['id'] for q in qs if q['paper'] != 'I']   # Paper I (essay): questions only
 missing = [i for i in ids if not ans.get(i)]
 if missing and '--partial' not in sys.argv: sys.exit(f'{len(missing)} answers missing, e.g. {missing[:5]}')
 ans = {i: g1m_render.render(ans[i]) for i in ids if ans.get(i)}

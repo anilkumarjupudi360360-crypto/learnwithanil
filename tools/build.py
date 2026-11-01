@@ -1431,8 +1431,10 @@ def p5_card(el_id):
     text = f'Hi Anil sir, I need the APPSC Group-1 Mains Paper V ({MAINS_P5["name"]}) Answer Writing Tool Kit.'
     return (f'<div class="card p5-card" id="{el_id}" hidden><p class="eyebrow">APPSC Group-1 Mains · Paper V</p>'
             f'<h3>Looking for Paper V ({esc(MAINS_P5["name"])})?</h3>'
-            f'<p>The Paper V tool kit is not on the website. Message Anil on WhatsApp and he will help you get it.</p>'
-            f'<div class="row"><a class="btn btn-primary" href="https://wa.me/{WHATSAPP}?text={quote(text)}" target="_blank" rel="noopener">Message Anil on WhatsApp</a>'
+            f'<p>All 90 Paper V previous questions of 2020, 2023 and 2025 are on the site, with model answers in the PYQ Pass. '
+            f'The Paper V tool kit (PDF) is not on the website: message Anil on WhatsApp and he will help you get it.</p>'
+            f'<div class="row"><a class="btn btn-primary" href="/appsc-group-1/mains-pyqs/2025-paper-5.html">Paper V questions with answers</a>'
+            f'<a class="btn btn-secondary" href="https://wa.me/{WHATSAPP}?text={quote(text)}" target="_blank" rel="noopener">Message Anil on WhatsApp</a>'
             f'<a class="btn btn-secondary" href="/appsc-group-1/mains/">Papers I–IV tool kit</a></div></div>')
 
 
@@ -1963,7 +1965,7 @@ def llms_txt(loaded, grand):
             L.append(f'  - [{paper_kw(c, p)} question paper with answers]({SITE_URL}/{base}papers/{p["slug"]}.html) — held {p["held"]}, {p["count"]} questions')
         if c['id'] in MAINS_EXAMS and os.path.exists(os.path.join(SRC, c['src'], 'mains-pyqs', 'questions.json')):   # descriptive Mains PYQs (tools/g1mains.py)
             L.append(f'  - [APPSC Group 1 Mains previous year questions with model answers, year-wise and subject-wise]({SITE_URL}{c["pb"]}mains-pyqs/) — '
-                     f'Papers II, III and IV of the 2020, 2023 and 2025 Mains, 270 questions; questions free, model answers with the PYQ Pass')
+                     f'Papers II to V of the 2020, 2023 and 2025 Mains, 360 questions, plus the 27 Paper I essay topics; questions free, model answers with the PYQ Pass')
     npath_ = os.path.join(SRC, 'notes.json')
     books = json.load(open(npath_, encoding='utf-8')) if os.path.exists(npath_) else []
     ids = {c['id']: c for c in exams}
@@ -3066,7 +3068,7 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
             hd = lambda h, s: f'<div class="section-title" style="margin:{"0" if h == "Prelims" else "26px"} 0 12px"><h2>{h}</h2><span class="muted" style="font-size:14px">{s}</span></div>'
             return (f'<section class="wrap section">' + hd('Prelims', 'Screening test: previous papers, mock tests, sectional tests')
                     + f'<div class="etiles">{t1}{t2}{t3}</div>' + hd('Mains', 'Descriptive papers: previous questions with model answers')
-                    + f'<div class="etiles">{g1mains.tiles(conf, len(mq))}</div>' + exam_clock_html(conf)
+                    + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + exam_clock_html(conf)
                     + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
     return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + exam_clock_html(conf)
             + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + mains_section(conf, mains) + '</section>')
