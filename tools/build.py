@@ -2061,7 +2061,7 @@ def FAQ_AP(post):
             'Height at least 167.6 cm for men and 152.5 cm for women (lower for Aboriginal ST candidates of the agency areas). Fee ₹600 (₹300 for SC and ST of AP).'
             if si else
             'Intermediate passed (SC and ST candidates who passed SSC and appeared for Intermediate are also eligible), age 18 to 24 years as on 1 July 2026 for SCT PC (Civil) and (AR) with the usual relaxations. '
-            'Height at least 167.6 cm for men and 152.5 cm for women (lower for Aboriginal ST candidates of the agency areas). Fee ₹300 (₹150 for SC and ST of AP).')),
+            'Height at least 167.6 cm for men and 152.5 cm for women (lower for Aboriginal ST candidates of the agency areas). Fee ₹300 (half that for SC and ST candidates of AP).')),
           (f'Are the {name} questions available in Telugu?',
            'Yes. Every question that the booklet printed in Telugu is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu.'
            + ('' if si else ' The English-language questions are printed in English only, as in the real paper.')),
@@ -3288,7 +3288,7 @@ NOTIFS = {
         ('Separate notifications', '200 PC (Communications) and 213 PC (Mechanics 15, Drivers 198)')]),
       ('Who can apply', 'p', 'Intermediate or an equivalent examination passed as on 1 July 2026; SC and ST candidates who passed SSC and studied and appeared for both years of Intermediate are also eligible. '
                           'Age for SCT PC (Civil) and (AR): 18 to 24 years as on 1 July 2026 (born between 2 July 2002 and 1 July 2008), with the usual relaxations (Home Guards up to 32). '
-                          'Fee ₹300 (₹150 for SC and ST candidates of AP; non-local candidates pay ₹300 as open category).'),
+                          'Fee ₹300 (half that for SC and ST candidates of AP; non-local candidates pay ₹300 as open category).'),
       ('Physical standards (PMT) and physical test (PET)', 'p',
        'Height at least 167.6 cm and chest 86.3 cm with 5 cm expansion for men; height 152.5 cm and weight 40 kg for women (lower heights for Aboriginal ST candidates of the agency areas). '
        'PET: 1,600 m run in 8 minutes (women 10 min 30 s), 100 m in 15 seconds (women 18 s), long jump 3.80 m (women 2.75 m). PC (Civil), Firemen and Warders must pass the 1,600 m run and one of the other two; '
