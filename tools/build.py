@@ -835,7 +835,7 @@ AP_SI_PAPERS = [
        alt='Prelims Paper I, Arithmetic & Reasoning', te_paper='ప్రిలిమినరీ పేపర్-1 (అర్థమెటిక్, రీజనింగ్)',
        blurb='Preliminary Written Test, Paper I: Arithmetic (SSC standard) and Test of Reasoning / Mental Ability, 100 questions, 100 marks, 3 hours.'),
   dict(id='a2023s2', file='ap-si-2023-prelims-paper2.txt', year=2023, stage='Preliminary Written Test Paper II', short='SI Prelims 2023 Paper II',
-       title='SLPRB AP SI Preliminary Written Test 2023, Paper II (General Studies)', notif='SCT SI (Civil) & RSI (APSP) · booklet A · preliminary key', held='19 February 2023',
+       title='SLPRB AP SI Preliminary Written Test 2023, Paper II (General Studies)', notif='SCT SI (Civil) & RSI (APSP) · booklet C · preliminary key', held='19 February 2023',
        key="SLPRB's preliminary key (the final key could not be found)", fmt='mcq', alabel="Answer (SLPRB's preliminary key)",
        slug='ap-police-si-prelims-2023-paper-2-general-studies-question-paper-with-answers',
        alt='Prelims Paper II, General Studies', te_paper='ప్రిలిమినరీ పేపర్-2 (జనరల్ స్టడీస్)',
@@ -1176,7 +1176,7 @@ def exam_confs():
            desc=lambda t: (f"AP Police SI (SLPRB AP / APSLPRB) previous question papers: the Preliminary Written Test of 19 February 2023, Paper I Arithmetic & Reasoning and Paper II General Studies, "
                            f"with answers from SLPRB's keys. {t:,} questions in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
            eyebrow='SLPRB AP · SCT SI (Civil) &amp; RSI · Preliminary Written Test 2023',
-           papers_note=("Answers come from SLPRB AP's keys for booklet A of the Preliminary Written Test held on 19 February 2023. For Paper I the final key made no change to the preliminary key. "
+           papers_note=("Answers come from SLPRB AP's keys for the booklet code of each paper (Paper I booklet A, Paper II booklet C) of the Preliminary Written Test held on 19 February 2023. For Paper I the final key made no change to the preliminary key. "
                         "For Paper II the final key accepted more than one answer for one question, but that file is no longer on SLPRB's website, so Paper II shows the preliminary key's answers. "
                         "Every question is in English and Telugu, as printed in the booklet.")),
       dict(id='ap-police-constable', dir='ap-police-constable', src='ap-police-constable', key='ap-pc', name='AP Police Constable', short='AP Constable', seo='AP Police Constable',
@@ -1983,7 +1983,7 @@ def FAQ_AP(post):
     def faq(total, npapers):
         return [
           (f'Where can I get {name} previous year question papers with answers?',
-           (f'This page has {total:,} questions from the SLPRB AP SI Preliminary Written Test held on 19 February 2023 (booklet A): Paper I, Arithmetic and Test of Reasoning / Mental Ability, '
+           (f'This page has {total:,} questions from the SLPRB AP SI Preliminary Written Test held on 19 February 2023: Paper I, Arithmetic and Test of Reasoning / Mental Ability, '
             "and Paper II, General Studies, in English and Telugu as printed. Paper I's answers are from SLPRB's final key and Paper II's from its preliminary key, and every question has a short explanation. "
             if si else
             f'This page has {total:,} questions from the SLPRB AP Police Constable Preliminary Written Test held on 22 January 2023 (booklet A), in English and Telugu as printed, '

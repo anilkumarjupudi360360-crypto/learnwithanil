@@ -30,7 +30,7 @@ LOGO = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(ROOT, 'src'
 BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC': 'ANDHRA PRADESH PUBLIC SERVICE COMMISSION',
               'SLPRB': 'STATE LEVEL POLICE RECRUITMENT BOARD, ANDHRA PRADESH'}
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
-SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'A'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
+SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
           'appsc-eo': {'e2025a': 'A', 'e2025b': 'A'}}
 # released mocks with a booklet: exam -> [(mock id, pack, mock name)]; their keys are in BOOKS_PRIV/mock-keys.json
 MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-constable': [('mk-pc-1', 'Mission Khaki – Constable', 'Mock 1')]}
