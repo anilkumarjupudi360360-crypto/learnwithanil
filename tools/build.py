@@ -1259,6 +1259,7 @@ def main():
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
                      .replace('{{HOME_NOTES}}', home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}').replace('{{NLIVE}}', str(len(loaded)))
+                     .replace('{{NLIVEX}}', str(sum(1 for e in catalog['exams'] if e.get('live')))).replace('{{HERO_NEW}}', HERO_NEW)
                      .replace('{{MOCKQ}}', f'{mock_questions():,}')
                      .replace('{{GOALPCT}}', f'{grand * 100 / 100000:.0f}').replace('{{GOALW}}', f'{max(1.5, min(100, grand * 100 / 100000)):.1f}')
                      .replace('{{LIVE_SUMMARY}}', esc(live_summary))
@@ -1617,6 +1618,9 @@ def site_links(html_, pb):
 def live_href(e):
     """Where a live exam tile points: a hash in this page ('home') or another page ('appsc-group-1/')."""
     return e['live'] if '/' in e['live'] else '#' + e['live']
+
+
+HERO_NEW = ('<a class="hero-new" href="/upsc-cse/"><span>New</span> UPSC Prelims 2026 &amp; 2025 · Anthropology model answers <b aria-hidden="true">→</b></a>')   # start-page announcement pill; change with each big release
 
 
 BOARD_ART = {   # line drawings for the board tiles (own artwork; no photos, no maps, no emblems)

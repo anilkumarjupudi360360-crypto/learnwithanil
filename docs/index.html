@@ -183,6 +183,23 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .why-en{margin-top:6px}.why-en summary{cursor:pointer;font-size:13.5px;font-weight:700;color:var(--accent-text)}.why-en p{margin:6px 0 0}
 #home-static .hero h1{max-width:20ch}
 #hub-static .hero h1{max-width:21ch}
+.hub-hero{background:radial-gradient(900px 420px at 8% -10%,rgba(56,189,248,.28),transparent 60%),radial-gradient(700px 420px at 95% 110%,rgba(167,139,250,.32),transparent 60%),linear-gradient(135deg,#0b1d5c,#14287a 55%,#1a1f66)}
+.hub-hero .wrap{padding-block:40px 44px}
+.hero-new{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;max-width:100%;padding:5px 14px 5px 5px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;text-decoration:none;font-size:14px;font-weight:600;backdrop-filter:blur(6px)}
+.hero-new span{background:linear-gradient(135deg,#fbbf24,#f97316);color:#1f1300;font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;border-radius:999px;padding:3px 9px;flex-shrink:0}
+.hero-new:hover{background:rgba(255,255,255,.16)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:4px;color:var(--band-muted);font-size:14.5px}
+.hero-stats span{display:flex;align-items:baseline;gap:6px}
+.hero-stats b{font-family:var(--f-display);font-size:24px;font-weight:800;color:#fff}
+.hero-boards{display:flex;flex-wrap:wrap;gap:6px}
+.hero-boards span{font-size:12px;font-weight:700;letter-spacing:.03em;color:#dbeafe;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);border-radius:8px;padding:3px 9px}
+.hub-hero .mentor .ph{box-shadow:0 0 0 10px rgba(255,255,255,.05),0 0 0 22px rgba(255,255,255,.03),0 20px 50px rgba(0,0,0,.35)}
+.hub-hero .mentor .ph::after{display:none}
+.hero-float{position:absolute;white-space:nowrap;font-size:12.5px;font-weight:700;color:#0f172a;background:#fff;border-radius:12px;padding:6px 11px;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+.mentor .hero-float{color:#0f172a;line-height:1.2}
+.hero-float.f1{left:-74px;top:16px}.hero-float.f2{right:-104px;top:128px}.hero-float.f3{left:-50px;bottom:2px;background:#fde68a}
+@media (max-width:1100px){.hero-float.f2{right:-40px;top:150px}.hero-float.f1{left:-40px}.hero-float.f3{left:-20px}}
+@media (max-width:860px){.hero-float{display:none}.hero-stats b{font-size:20px}.hub-hero .mentor .ph{box-shadow:none}}
 div.feature:hover{border-color:var(--line)}
 .section{display:flex;flex-direction:column;gap:14px}
 .section-title{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
@@ -693,15 +710,17 @@ details.upc .exams{margin-top:8px}
 <main>
 <div id="hub-static" class="view">
   
-  <section class="hero"><div class="wrap">
+  <section class="hero hub-hero"><div class="wrap">
     <div class="hero-copy">
-      <p class="eyebrow">UPSC · State PSCs · SSC · Banks · Railways · Defence</p>
+      <a class="hero-new" href="/upsc-cse/"><span>New</span> UPSC Prelims 2026 &amp; 2025 · Anthropology model answers <b aria-hidden="true">→</b></a>
       <h1 data-i18n="h1">Previous year question papers for <em>every government exam.</em></h1>
       <p data-i18n="lede">Real question papers with official answers and short explanations, in English, తెలుగు and हिंदी. One ₹45 PYQ Pass for every exam.</p>
       <div class="row"><button class="btn btn-primary" type="button" data-act="hubscroll" data-i18n="find">Find your exam</button><button class="btn btn-secondary" type="button" data-act="qotdscroll" data-i18n="today">Today's question</button></div>
+      <div class="hero-stats"><span><b>9,277</b> PYQs</span><span><b>15</b> exams live</span><span><b>3</b> languages</span><span><b>₹45</b> one pass</span></div>
+      <div class="hero-boards" aria-hidden="true"><span>UPSC</span><span>APPSC</span><span>TGPSC</span><span>TS Police</span><span>SSC</span><span>Railways</span><span>Banks</span></div>
     </div>
     <a class="mentor" href="/appsc-group-2/about/" style="color:inherit;text-decoration:none">
-      <span class="ph"><img src="anil.jpg" alt="Jupudi Anil Kumar" width="210" height="210"></span>
+      <span class="ph"><img src="anil.jpg" alt="Jupudi Anil Kumar" width="210" height="210"><span class="hero-float f1">✓ Official answer keys</span><span class="hero-float f2">English · తెలుగు · हिंदी</span><span class="hero-float f3">Every answer explained</span></span>
       <span><b>Jupudi Anil Kumar</b><br><span data-i18n="mentor">UPSC faculty &amp; mentor · 1000+ hours of civil-services teaching</span></span>
     </a>
   </div></section>
