@@ -1176,10 +1176,10 @@ def main():
                      .replace('{{NOTES_NAV}}', ('<a href="#mains" data-v="mains">Mains Tool Kit <span class="new">NEW</span></a>' if emains else '')
                               + ('<a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>' if enotes else ''))
                      .replace('{{NOTES_FOOT}}', '<a href="#notes">Study material</a> · ' if enotes else ''))
-        root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: APPSC Group 1 & 2, TS Police SI & Constable, UPSC CAPF & EPFO'
+        root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: APPSC Group 1 & 2, UPSC Mains, TS Police SI & Constable, SSC CGL'
         root_desc = (f'Learn with Anil (learnwithanil.in): previous year question papers (PYQs) with answers for APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
-                     f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO) and TGPSC HMWSSB Manager, APPSC & TGPSC AMVI (Assistant Motor Vehicle Inspector) and APPSC Endowment Officer (EO Grade-III). {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
-                     f'One ₹45 PYQ Pass for every exam; TGPSC, UPSC, SSC, banking and railway exams are being added.')
+                     f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO), SSC CGL, TGPSC HMWSSB Manager, APPSC & TGPSC AMVI (Assistant Motor Vehicle Inspector) and APPSC Endowment Officer (EO Grade-III). {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
+                     f'UPSC Civil Services Mains GS 1–4 (2019–2026) and APPSC Group 1 Mains questions with model answers. One ₹45 PYQ Pass for every exam.')
         home_title = conf['title']
         ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
         home_desc = conf['desc'](total)
@@ -2093,6 +2093,24 @@ def llms_txt(loaded, grand):
         if c['id'] in MAINS_EXAMS and os.path.exists(os.path.join(SRC, c['src'], 'mains-pyqs', 'questions.json')):   # descriptive Mains PYQs (tools/g1mains.py)
             L.append(f'  - [APPSC Group 1 Mains previous year questions with model answers, year-wise and subject-wise]({SITE_URL}{c["pb"]}mains-pyqs/) — '
                      f'Papers II to V of the 2020, 2023 and 2025 Mains, 360 questions, plus the 27 Paper I essay topics; questions free, model answers with the PYQ Pass')
+            mdir = os.path.join(DIST, 'site', c['dir'], 'mains-pyqs')   # each year-paper page (SEO, 1 Nov 2026)
+            for y in (2025, 2023, 2020):
+                for n, nm in ((1, 'Paper I (Essay) topics'), (2, 'Paper II (History & Geography)'), (3, 'Paper III (Polity & Ethics)'), (4, 'Paper IV (Economy)'), (5, 'Paper V (Science, Technology & Environment)')):
+                    if os.path.exists(os.path.join(mdir, f'{y}-paper-{n}.html')):
+                        L.append(f'    - [APPSC Group 1 Mains {y} {nm}' + ('' if n == 1 else ' questions with model answers') + f']({SITE_URL}{c["pb"]}mains-pyqs/{y}-paper-{n}.html)')
+    try:   # UPSC CSE Mains GS 1-4 (tools/upscmains.py): its own pages, not an app exam
+        import upscmains
+        uq, _ = upscmains.load(SRC)
+    except Exception: uq = []
+    if uq:
+        ub = f'{SITE_URL}/{upscmains.EXAM}/mains-pyqs/'
+        L.append(f'- [UPSC Civil Services (CSE) Mains previous year questions with model answers, GS Papers 1–4]({ub}): {len(uq):,} questions of '
+                 f'{min(q["year"] for q in uq)}–{max(q["year"] for q in uq)}, year-wise and subject-wise, each with a model answer on its own page '
+                 f'(key words, points, diagrams); questions free, Q1 and Q2 of every paper answered free, the rest with the PYQ Pass. Hub: {SITE_URL}/{upscmains.EXAM}/')
+        for y in sorted({q['year'] for q in uq}, reverse=True):
+            for p in upscmains.PAPERS:
+                if any(q['year'] == y and q['paper'] == p for q in uq):
+                    L.append(f'  - [UPSC Mains {y} GS Paper {upscmains.n_of(p)} ({upscmains.PAPERS[p][2]}) questions with model answers]({ub}{y}-gs{upscmains.n_of(p)}.html)')
     npath_ = os.path.join(SRC, 'notes.json')
     books = json.load(open(npath_, encoding='utf-8')) if os.path.exists(npath_) else []
     ids = {c['id']: c for c in exams}
