@@ -23,5 +23,15 @@
   "file": "g2micro-en-8cdbffd5f7.bin",
   "bytes": 1680996,
   "pdf": "LearnWithAnil-APPSC-Group-2-Micro-Syllabus-2026.pdf"
+ },
+ "g1pa-en": {
+  "file": "g1pa-en-374f1a0936.bin",
+  "bytes": 2000304,
+  "pdf": "LearnWithAnil-Public-Administration-and-Governance-APPSC-Group-I-Mains-English-2026-27.pdf"
+ },
+ "g1eth-en": {
+  "file": "g1eth-en-19d50eb1ad.bin",
+  "bytes": 2363178,
+  "pdf": "LearnWithAnil-Ethics-and-Laws-APPSC-Group-I-Mains-English-2026-27.pdf"
  }
 }

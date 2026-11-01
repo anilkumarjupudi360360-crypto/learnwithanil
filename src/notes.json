@@ -1,5 +1,96 @@
 [
  {
+  "id": "g1pa-en",
+  "lang": "en",
+  "vol": null,
+  "series": "Group-I Mains · Paper III",
+  "subject": "Public Administration and Governance",
+  "title": "Public Administration and Governance",
+  "title_en": "Public Administration and Governance",
+  "subtitle": "for APPSC Group-I Mains Paper III (Section B), with Andhra Pradesh focus, answer frames, cartoon meme breaks and every official previous question with answer pointers",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "Public Administration and Governance for APPSC Group-I Mains (Paper III, Section B), 2026-27 (English Medium)",
+  "pages": 116,
+  "chapters": [
+   "Public Administration: Meaning, Nature and Scope",
+   "Administration in Ancient and Medieval India",
+   "Legacy of British Rule and the Evolution of the Civil Service",
+   "Government Policies, Interventions and Implementation",
+   "Development Administration and Development Processes",
+   "Civil Society, NGOs and Other Stakeholders",
+   "Statutory, Regulatory and Quasi-Judicial Authorities",
+   "Civil Services in a Democracy",
+   "Good Governance",
+   "E-Governance",
+   "Citizen's Charter, Right to Information and Public Service Acts",
+   "Social Audit"
+  ],
+  "pyqs": 30,
+  "price": 45,
+  "syllabus": "Group-I Mains · Paper III · Section B",
+  "badge": "Group-I Mains",
+  "subject_label": "Public Administration and Governance",
+  "chapters_label": "12 chapters · 24 cartoon meme breaks · all 30 Section B questions (2020–2025) with answer pointers",
+  "product_en": "Public Administration and Governance for APPSC Group-I Mains (Paper III, Section B), 2026-27 (English Medium)",
+  "cover": "notes-g1pa-en-cover.jpg",
+  "samples": [
+   "notes-g1pa-en-p1.jpg",
+   "notes-g1pa-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "appsc-group-1"
+  ]
+ },
+ {
+  "id": "g1eth-en",
+  "lang": "en",
+  "vol": null,
+  "series": "Group-I Mains · Paper III",
+  "subject": "Ethics in Public Service and Basic Knowledge of Laws",
+  "title": "Ethics in Public Service and Basic Knowledge of Laws",
+  "title_en": "Ethics in Public Service and Basic Knowledge of Laws",
+  "subtitle": "for APPSC Group-I Mains Paper III (Section C): ethics, AP reformers, the new criminal laws, Labour Codes, cyber, tax and company law, with answer frames and cartoon meme breaks",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "Ethics in Public Service and Basic Knowledge of Laws for APPSC Group-I Mains (Paper III, Section C), 2026-27 (English Medium)",
+  "pages": 141,
+  "chapters": [
+   "Ethics and Human Interface",
+   "Human Values: Harmony in Existence and Relationships",
+   "Gender Equality and the Agents of Value Education",
+   "Lessons from Great Leaders, Reformers and Administrators",
+   "Attitude, Social Influence and Persuasion",
+   "Emotional Intelligence",
+   "Public Service, Professional Ethics and Codes",
+   "Leadership Ethics, Work Culture and Ethics in Organisations",
+   "Ethics in International Relations; Corruption, Lokpal and Lokayukta",
+   "The Constitution as the Basic Law",
+   "Civil and Criminal Law",
+   "Labour Laws: Social Welfare Legislation and the Labour Codes",
+   "Cyber Law: The IT Act, Cyber Crime and Cyber Security",
+   "Tax Laws: Income, Profits, Wealth, Corporations and GST",
+   "Company Law Basics"
+  ],
+  "pyqs": 30,
+  "price": 45,
+  "syllabus": "Group-I Mains · Paper III · Section C",
+  "badge": "Group-I Mains",
+  "subject_label": "Ethics and Laws",
+  "chapters_label": "15 chapters (9 ethics + 6 law) · 30 cartoon meme breaks · all 30 Section C questions (2020–2025) with answer pointers",
+  "product_en": "Ethics in Public Service and Basic Knowledge of Laws for APPSC Group-I Mains (Paper III, Section C), 2026-27 (English Medium)",
+  "cover": "notes-g1eth-en-cover.jpg",
+  "samples": [
+   "notes-g1eth-en-p1.jpg",
+   "notes-g1eth-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "appsc-group-1"
+  ]
+ },
+ {
   "id": "g2micro-en",
   "lang": "en",
   "vol": null,
