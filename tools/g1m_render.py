@@ -96,13 +96,20 @@ def d_cycle(title, rows):
     n = len(rows); W, H = 640, 380; cx, cy, R = W / 2, H / 2 + 6, 140
     pts = [(cx + R * 1.45 * math.cos(-math.pi / 2 + 2 * math.pi * i / n), cy + R * math.sin(-math.pi / 2 + 2 * math.pi * i / n)) for i in range(n)]
     parts = ['<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker></defs>']
+    hh = [(14 + 16 * len(wrap(r, 18))) / 2 + 7 for r in rows]
+    def edge(i, ux, uy):   # distance from box i's centre to its edge along (ux, uy), plus a gap
+        return min(85 / abs(ux) if ux else 1e9, hh[i] / abs(uy) if uy else 1e9)
     for i in range(n):
-        (x1, y1), (x2, y2) = pts[i], pts[(i + 1) % n]
-        mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+        j = (i + 1) % n
+        (x1, y1), (x2, y2) = pts[i], pts[j]
+        L = math.hypot(x2 - x1, y2 - y1) or 1; ux, uy = (x2 - x1) / L, (y2 - y1) / L
+        e1, e2 = edge(i, ux, uy), edge(j, ux, uy)
+        if e1 + e2 > L - 16: e1 = e2 = max((L - 16) / 2, 0)
+        sx, sy = x1 + ux * e1, y1 + uy * e1
+        ex, ey = x2 - ux * e2, y2 - uy * e2
+        mx, my = (sx + ex) / 2, (sy + ey) / 2
         dx, dy = mx - cx, my - cy; d = math.hypot(dx, dy) or 1
-        qx, qy = mx + dx / d * 40, my + dy / d * 40
-        sx, sy = x1 + (x2 - x1) * 0.28, y1 + (y2 - y1) * 0.28
-        ex, ey = x1 + (x2 - x1) * 0.72, y1 + (y2 - y1) * 0.72
+        qx, qy = mx + dx / d * 18, my + dy / d * 18
         parts.append(f'<path d="M{sx:.1f} {sy:.1f} Q{qx:.1f} {qy:.1f} {ex:.1f} {ey:.1f}" fill="none" stroke="var(--accent)" stroke-width="2" marker-end="url(#ah)"/>')
     for (x, y), r in zip(pts, rows):
         lines = wrap(r, 18); h = 14 + 16 * len(lines)
