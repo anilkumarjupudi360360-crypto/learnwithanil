@@ -112,10 +112,10 @@ def flip_js():
             "if(a.paid&&new Date(a.pyq+'T23:59:59+05:30')>=new Date())document.querySelectorAll('[data-lk]').forEach(function(e){e.textContent='✓ Model answer →'})}catch(e){}})();</script>")
 
 
-def unlock_js(api, man, file):
+def unlock_js(api, man, file, exam='appsc-group-1'):
     """Fills the locked answer in place for a device with a valid PYQ Pass (registered student)."""
     if not api or not file: return ''
-    return ("<script>(function(){var API=" + json.dumps(api) + ",KID=" + json.dumps(man['key']) + ",FILE=" + json.dumps(file) + """;
+    return ("<script>(function(){var API=" + json.dumps(api) + ",KID=" + json.dumps(man['key']) + ",FILE=" + json.dumps(file) + ",EXAM=" + json.dumps(exam) + """;
 function J(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
 var els=document.querySelectorAll('[data-ans]');if(!els.length||!window.crypto||!crypto.subtle||!window.TextEncoder)return;
 var a=(J('lwa-passes-v1')||{}).all||{},s=J('lwa-appsc-g2-student-v1');if(!a.paid||!(new Date(a.pyq+'T23:59:59+05:30')>=new Date())||!s||!s.phone)return;
@@ -123,7 +123,7 @@ function dev(){try{var d=localStorage.getItem('lwa-device');if(!d){d=Math.random
 function msg(t){els.forEach(function(e){var l=e.querySelector('.mlock');if(l)l.textContent=t})}
 msg('Opening your model answer…');
 var ck='lwa-key-'+KID,c=J(ck);
-(c&&c.key?Promise.resolve(c):fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'mock',exam:'appsc-group-1',id:KID,phone:s.phone,email:s.email||'',device:dev()})}).then(function(r){return r.json()}).then(function(r){
+(c&&c.key?Promise.resolve(c):fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'mock',exam:EXAM,id:KID,phone:s.phone,email:s.email||'',device:dev()})}).then(function(r){return r.json()}).then(function(r){
 if(!r||!r.ok)throw new Error((r&&r.error)||'');try{localStorage.setItem(ck,JSON.stringify({key:r.key}))}catch(_){}return r}))
 .then(function(r){return fetch('/books/'+FILE).then(function(x){if(!x.ok)throw new Error('');return x.arrayBuffer()}).then(function(buf){var b=new Uint8Array(buf);
 return crypto.subtle.importKey('raw',Uint8Array.from(atob(r.key),function(c){return c.charCodeAt(0)}),'AES-GCM',false,['decrypt']).then(function(k){return crypto.subtle.decrypt({name:'AES-GCM',iv:b.slice(0,12),additionalData:new TextEncoder().encode(KID)},k,b.slice(12))})})})

@@ -939,6 +939,9 @@ def main():
     PAY['exam_links'] = [(c['seo'], c['pb']) for c, _, _ in loaded]
     counts = {c['id']: len(qs) for c, _, qs in loaded}
     grand = sum(counts.values())
+    import upscmains   # UPSC CSE Mains GS 1-4 previous questions with model answers (tools/upscmains.py): its own pages, no prelims app yet
+    upm_qs, _ = upscmains.load(SRC)
+    if upm_qs: counts[upscmains.EXAM] = len(upm_qs)
 
     vpath = os.path.join(SRC, 'videos.json')
     videos = json.load(open(vpath, encoding='utf-8')) if os.path.exists(vpath) else {}
@@ -1208,6 +1211,11 @@ def main():
             if 'rel="prefetch"' not in h:
                 open(fp, 'w', encoding='utf-8').write(h.replace('</head>', f'<link rel="prefetch" href="{href}" as="script">\n</head>', 1))
     all_pages = {**all_pages, 'funders.html': None}
+    # UPSC CSE: the hub and the Mains GS pages (tools/upscmains.py)
+    for rel, content in upscmains.pages(sys.modules[__name__]).items():
+        fp = os.path.join(DIST, 'site', upscmains.EXAM, rel); os.makedirs(os.path.dirname(fp), exist_ok=True)
+        open(fp, 'w', encoding='utf-8').write(content)
+        all_pages[upscmains.EXAM + '/' + (rel[:-len('index.html')] if rel.endswith('index.html') else rel)] = None
     # free sample chapters of the study books (public PDFs; Anil, 28 Oct 2026) go in the sitemap so search engines and AI assistants find them
     for b in notes:
         if b.get('free'): all_pages[b['free'].lstrip('/')] = None
@@ -1795,7 +1803,9 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
     pb = conf['pb'] if conf else '/appsc-group-2/'
     board = conf['board'] if conf else 'APPSC'
     gf = conf['l2']['gf'] if conf else ''
-    if board == 'APPSC':
+    if conf and conf.get('foot'):
+        foot = conf['foot']
+    elif board == 'APPSC':
         foot = (f'Questions and answers are taken from APPSC\'s official final keys. Explanations are by Jupudi Anil Kumar, '
                 f'Learn with Anil (Instagram: @{INSTAGRAM}). Not affiliated with APPSC.')
     else:
@@ -1825,7 +1835,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
-<header><div class="wrap"><a href="{pb if conf else '/'}">Learn with Anil · {nw(ename)} PYQs</a><a href="{pb}practice/">Practise online →</a></div></header>
+<header><div class="wrap"><a href="{pb if conf else '/'}">Learn with Anil · {nw(ename)} PYQs</a><a href="{(conf or {}).get('nav', ('', pb + 'practice/'))[1]}">{(conf or {}).get('nav', ('Practise online →', ''))[0]}</a></div></header>
 <main class="wrap">
 <h1>{nw(h1)}</h1>
 <p class="lede">{lede}</p>
