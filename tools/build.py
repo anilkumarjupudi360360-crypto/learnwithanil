@@ -1273,10 +1273,12 @@ def main():
                      .replace('{{NOTES_NAV}}', ('<a href="#mains" data-v="mains">Mains Tool Kit <span class="new">NEW</span></a>' if emains else '')
                               + ('<a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>' if enotes else ''))
                      .replace('{{NOTES_FOOT}}', '<a href="#notes">Study material</a> · ' if enotes else ''))
-        root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: APPSC Group 1 & 2, UPSC Mains, TS Police SI & Constable, SSC CGL'
-        root_desc = (f'Learn with Anil (learnwithanil.in): previous year question papers (PYQs) with answers for APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
+        root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: UPSC Prelims, Mains & Anthropology, APPSC Group 1 & 2, TS Police, SSC CGL'
+        pre_y = (lambda ys: f' ({ys[0]}–{ys[-1]})' if len(ys) > 1 else f' ({ys[0]})')(PRE_LIVE[1]) if PRE_LIVE else ''   # Anil, 2 Nov 2026: home title/description name UPSC Prelims and Anthropology
+        root_desc = (f'Learn with Anil (learnwithanil.in): previous year question papers (PYQs) with answers for UPSC Civil Services Prelims GS Paper I & CSAT{pre_y} in English & Hindi, '
+                     f'APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
                      f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO), SSC CGL, TGPSC HMWSSB Manager, APPSC & TGPSC AMVI (Assistant Motor Vehicle Inspector), APPSC Endowment Officer (EO Grade-III), APPSC Analyst Grade-II and APPSC Forest Range Officer (FRO). {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
-                     f'UPSC Civil Services Mains GS 1–4 (2019–2026) and APPSC Group 1 Mains questions with model answers. One ₹45 PYQ Pass for every exam.')
+                     f'UPSC Civil Services Mains GS 1–4 (2019–2026), UPSC Anthropology optional Papers I & II and APPSC Group 1 Mains questions with model answers. One ₹45 PYQ Pass for every exam.')
         home_title = conf['title']
         ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
         home_desc = conf['desc'](total)
@@ -1617,6 +1619,14 @@ def live_href(e):
     return e['live'] if '/' in e['live'] else '#' + e['live']
 
 
+BOARD_ART = {   # line drawings for the board tiles (own artwork; no photos, no maps, no emblems)
+    'upsc': '<path d="M40 34 80 15l40 19Z"/><path d="M38 34h84M42 39h76"/><path d="M50 43v26M63 43v26M76 43v26M89 43v26M102 43v26M114 43v26"/><path d="M40 71h80M35 77h90"/>',
+    'ap': '<path d="M54 78h52l-4-13H58Z"/><path d="M59 65h42l-4-12H63Z"/><path d="M64 53h32l-4-11H68Z"/><path d="M69 42h22l-4-10H73Z"/><path d="M73 32h14l-3-8H76Z"/><path d="M74 24c0-5 12-5 12 0"/><path d="M80 19v-7M77 15h6"/><path d="M75 78v-7a5 5 0 0 1 10 0v7"/>',
+    'tg': '<path d="M58 78V36h44v42"/><path d="M68 78V60a12 12 0 0 1 24 0v18"/><path d="M56 36h48M58 30h44"/><path d="M73 30c0-7 14-7 14 0"/><path d="M47 78V27h9v51M104 78V27h9v51"/><path d="M47 27c0-8 9-8 9 0M104 27c0-8 9-8 9 0"/><path d="M51.5 19v-5M108.5 19v-5"/><path d="M44 44h15M44 61h15M101 44h15M101 61h15"/>',
+    'ssc': '<rect x="56" y="14" width="44" height="62" rx="4"/><path d="M64 28h28M64 38h28M64 48h18"/><path d="m64 61 4 4 9-9"/><path d="m104 50 16-16 5 5-16 16-7 2Z"/>',
+    'rail': '<rect x="56" y="12" width="48" height="54" rx="11"/><rect x="63" y="20" width="34" height="19" rx="3"/><circle cx="68" cy="53" r="3.5"/><circle cx="92" cy="53" r="3.5"/><path d="M74 53h12"/><path d="m63 66-9 13M97 66l9 13M48 79h64M52 73h56"/>',
+    'bank': '<path d="M42 34 80 15l38 19Z"/><path d="M42 34h76"/><path d="M50 39v28M64 39v28M96 39v28M110 39v28"/><path d="M40 70h80M35 77h90"/><circle cx="80" cy="52" r="10"/><path d="M76 47h9M76 51h9M79 47c5 0 5 8 0 8h-3l7 7"/>',
+}
 BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
 
 
@@ -1632,11 +1642,15 @@ def hub_html(catalog, counts, grand):
         lv = sorted([e for e in ex if e.get('live')], key=lambda e: -counts.get(e['id'], 0))
         nq = sum(counts.get(e['id'], 0) for e in lv)
         te = f'<span class="bd-te" lang="te">{esc(c["te"])}</span>' if c.get('te') else ''
-        names = ' · '.join(f'{e["b"] + " " if e["b"] not in c["name"] else ""}{e["t"]}' for e in lv[:5]) + (' …' if len(lv) > 5 else '')
-        st = (f'<b>{len(lv)} exam{"s" if len(lv) != 1 else ""} live</b> · {nq:,} questions' if lv else f'<b>Coming soon</b> · {len(ex)} exams listed')
-        boards.append(f'<button type="button" class="card board{"" if lv else " soon"}" data-act="excat" data-cat="{c["id"]}">'
-                      f'<span class="bd-n">{esc(c["name"])}</span>{te}<span class="bd-d">{esc(c["desc"])}</span>'
-                      + (f'<span class="bd-l">{esc(names)}</span>' if names else '') + f'<span class="bd-st">{st}</span><span class="bd-go" aria-hidden="true">→</span></button>')
+        pills = ''.join(f'<span>{esc(e["t"])}</span>' for e in lv[:4]) + (f'<span class="more">+{len(lv) - 4} more</span>' if len(lv) > 4 else '')
+        art = BOARD_ART.get(c['id'], BOARD_ART['ssc'])
+        badge = f'<span class="bd-badge"><i></i>{len(lv)} exam{"s" if len(lv) != 1 else ""} live</span>' if lv else '<span class="bd-badge bd-soon">Coming soon</span>'
+        foot = f'{nq:,} questions' if lv else f'{len(ex)} exams listed'
+        boards.append(f'<button type="button" class="card board b-{c["id"]}{"" if lv else " soon"}" data-act="excat" data-cat="{c["id"]}" title="{esc(c["desc"])}">'
+                      f'<span class="bd-art"><svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{art}</svg>{badge}</span>'
+                      f'<span class="bd-body"><span class="bd-n">{esc(c["name"])}</span>{te}'
+                      + (f'<span class="bd-pills">{pills}</span>' if pills else f'<span class="bd-d">{esc(c["desc"])}</span>')
+                      + f'<span class="bd-ft"><span>{foot}</span><span class="bd-go">{"Open" if lv else "See list"} →</span></span></span></button>')
         tiles = {True: [], False: []}
         for e in lv + [e for e in ex if not e.get('live')]:
             live = bool(e.get('live'))
