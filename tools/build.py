@@ -1213,7 +1213,10 @@ def main():
     if upm_qs: counts[upscmains.EXAM] = len(upm_qs) + len(upa_qs)
     global PRE_LIVE   # the UPSC CSE hub's Prelims box: (questions, years, papers) of the built Prelims app
     pre = [(ps, qs) for c, ps, qs in loaded if c['id'] == 'upsc-prelims']
-    PRE_LIVE = (len(pre[0][1]), sorted({p['year'] for p in pre[0][0]}), len(pre[0][0])) if pre else None
+    PRE_LIVE = ((len(pre[0][1]), sorted({p['year'] for p in pre[0][0]}), len(pre[0][0]),
+                 # the newest GS Paper I and CSAT pages, for the photo links on the hub card: {'gs': (year, slug), 'csat': (year, slug)}
+                 {k: max((p['year'], p['slug']) for p in pre[0][0] if p['id'].startswith(k)) for k in ('gs', 'csat') if any(p['id'].startswith(k) for p in pre[0][0])})
+                if pre else None)
 
     vpath = os.path.join(SRC, 'videos.json')
     videos = json.load(open(vpath, encoding='utf-8')) if os.path.exists(vpath) else {}
