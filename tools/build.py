@@ -225,6 +225,102 @@ EPFO_SUBJ_HI = {'eng': 'सामान्य अंग्रेज़ी', 'ih'
                 'pol': 'भारतीय राजव्यवस्था', 'eco': 'भारतीय अर्थव्यवस्था', 'acc': 'सामान्य लेखा सिद्धांत', 'lab': 'औद्योगिक संबंध और श्रम कानून',
                 'ss': 'भारत में सामाजिक सुरक्षा', 'sci': 'सामान्य विज्ञान और कंप्यूटर', 'qa': 'मात्रात्मक अभिरुचि (क्वांटिटेटिव एप्टीट्यूड)'}
 
+# ---------- UPSC Civil Services (Preliminary): GS Paper I and CSAT (GS Paper II), 2019–2026 (Anil, 1 Nov 2026) ----------
+PRE_HELD = {2026: '24 May 2026', 2025: '25 May 2025', 2024: '16 June 2024', 2023: '28 May 2023', 2022: '5 June 2022',
+            2021: '10 October 2021', 2020: '4 October 2020', 2019: '2 June 2019'}
+PRE_PROVISIONAL = {2026}       # UPSC's provisional key (27 May 2026); the final key comes after the final result
+PRE_NOKEY = set()              # years whose official key could not be found: answers by Learn with Anil (sets nokey/alabel)
+
+
+def _pre_paper(y, gs):
+    prov, nokey = y in PRE_PROVISIONAL, y in PRE_NOKEY
+    key = ("answers worked out and checked by Learn with Anil (UPSC's key could not be found)" if nokey else
+           "UPSC's provisional answer key" if prov else "UPSC's official answer key")
+    d = dict(id=f'gs{y}' if gs else f'csat{y}', file=f'gs-{y}.txt' if gs else f'csat-{y}.txt', year=y,
+             stage='GS Paper I' if gs else 'CSAT (Paper II)', short=f'Prelims {y} · GS I' if gs else f'Prelims {y} · CSAT',
+             title=(f'UPSC Prelims {y} General Studies Paper I' if gs else f'UPSC Prelims {y} CSAT (General Studies Paper II)'),
+             notif='Series A · ' + ('answers by Learn with Anil' if nokey else 'provisional key' if prov else 'official key'), held=PRE_HELD[y],
+             key=key, fmt='mcq',
+             slug=(f'upsc-prelims-{y}-gs-paper-1-question-paper-with-answers' if gs else f'upsc-prelims-{y}-csat-paper-2-question-paper-with-answers'),
+             alt=('IAS Prelims General Studies Paper 1' if gs else 'IAS Prelims CSAT Paper 2'),
+             kwname=(f'UPSC Prelims {y} GS Paper 1' if gs else f'UPSC CSAT {y}'),
+             hi_paper=('सामान्य अध्ययन प्रश्न-पत्र I' if gs else 'सामान्य अध्ययन प्रश्न-पत्र II (सीसैट)'),
+             blurb=('General Studies Paper I: history and culture, geography, polity and governance, economy, environment, science and technology, '
+                    'and current affairs (100 questions, 200 marks, 2 hours). Its marks decide who qualifies for the Mains.' if gs else
+                    'General Studies Paper II (CSAT): reading comprehension, logical and analytical reasoning, basic numeracy and data interpretation '
+                    '(80 questions, 200 marks, 2 hours). It is qualifying: 33% (66 marks) is needed.'))
+    if nokey: d.update(nokey=1, alabel="Answer by Learn with Anil (UPSC's key not found)")
+    return d
+
+
+PRE_PAPERS = [_pre_paper(y, gs) for y in range(2026, 2018, -1) for gs in (True, False)]
+PRE_SUBJECTS = [
+  ('ih',  'History & Culture', 'history-culture', ['Ancient India', 'Medieval India', 'Modern India & Freedom Struggle', 'Art & Culture']),
+  ('geo', 'Geography', 'geography', ['Physical Geography', 'Indian Geography', 'World Geography']),
+  ('pol', 'Indian Polity & Governance', 'indian-polity-governance', ['Constitution & Rights', 'Union & State Government', 'Judiciary', 'Federalism & Local Government', 'Constitutional & Statutory Bodies', 'Governance & Policies']),
+  ('eco', 'Indian Economy', 'indian-economy', ['Growth & National Income', 'Money, Banking & Inflation', 'Public Finance & Taxation', 'Agriculture & Industry', 'External Sector & Trade', 'Poverty, Employment & Welfare']),
+  ('env', 'Environment & Ecology', 'environment-ecology', ['Ecology & Ecosystems', 'Biodiversity & Conservation', 'Climate Change & Pollution', 'Environmental Laws, Bodies & Conventions']),
+  ('sci', 'Science & Technology', 'science-technology', ['Biology & Health', 'Physics & Chemistry', 'Space & Defence', 'IT, Computers & Emerging Technology', 'Biotechnology']),
+  ('cur', 'Current Affairs & International Relations', 'current-affairs-international-relations', ['International Organisations & Groupings', 'India & the World', 'National Affairs & Schemes', 'Reports, Indices & Places in News']),
+  ('rc',  'CSAT: Reading Comprehension', 'csat-reading-comprehension', ['Passages']),
+  ('qa',  'CSAT: Quantitative Aptitude', 'csat-quantitative-aptitude', ['Number System', 'Arithmetic', 'Algebra', 'Geometry & Mensuration', 'Permutations, Combinations & Probability', 'Data Interpretation & Sufficiency']),
+  ('lr',  'CSAT: Logical & Analytical Reasoning', 'csat-logical-reasoning', ['Logical Reasoning', 'Analytical Reasoning', 'Puzzles & Arrangements', 'Series & Patterns', 'Directions, Clocks & Calendars']),
+]
+PRE_SUBJ_HI = {'ih': 'इतिहास और संस्कृति', 'geo': 'भूगोल', 'pol': 'भारतीय राजव्यवस्था और शासन', 'eco': 'भारतीय अर्थव्यवस्था',
+               'env': 'पर्यावरण और पारिस्थितिकी', 'sci': 'विज्ञान और प्रौद्योगिकी', 'cur': 'समसामयिकी और अंतरराष्ट्रीय संबंध',
+               'rc': 'सीसैट: बोधगम्यता', 'qa': 'सीसैट: मात्रात्मक अभिरुचि', 'lr': 'सीसैट: तार्किक और विश्लेषणात्मक तर्कशक्ति'}
+
+
+def pre_text():
+    """Wording for the UPSC Prelims page that depends on which papers are on the site."""
+    have = have_src('upsc-prelims', PRE_PAPERS)
+    ys = sorted({p['year'] for p in PRE_PAPERS if p['id'] in have}) or [2026]
+    yrs = f'{ys[0]}–{ys[-1]}' if len(ys) > 1 else str(ys[0])
+    def ands(xs): xs = [str(x) for x in xs]; return ', '.join(xs[:-1]) + ' and ' + xs[-1] if len(xs) > 1 else (xs[0] if xs else '')
+    prov = [y for y in ys if y in PRE_PROVISIONAL]; nokey = [y for y in ys if y in PRE_NOKEY]
+    official = [y for y in ys if y not in PRE_PROVISIONAL and y not in PRE_NOKEY]
+    keyshort = "UPSC's official answer keys" + (f" ({ands(prov)}: provisional key)" if prov else '') + (f"; {ands(nokey)}: answers by Learn with Anil" if nokey else '')
+    note = ((f"{ands(official)}: UPSC's official (final) answer key, Series A, published after the final result. " if official else '')
+            + (f"{ands(prov)}: UPSC's provisional answer key, published three days after the exam (the first time UPSC has done this); "
+               f"the final key, due after the final result, can differ for a few questions. " if prov else '')
+            + (f"{ands(nokey)}: UPSC's key could not be found, so the answers are worked out and checked by Learn with Anil. " if nokey else '')
+            + "Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the Series A booklet.")
+    return dict(years=yrs, n=len(have), ylist=ands(sorted(ys, reverse=True)), keyshort=keyshort, note=note)
+
+
+def FAQ_PRE(total, npapers):
+    P = pre_text()
+    return [
+      ('Where can I get UPSC Prelims previous year question papers with answers?',
+       f'This page has {total} questions from {npapers} UPSC Civil Services (Preliminary) papers, General Studies Paper I and CSAT (Paper II) of {P["ylist"]}, '
+       'in English and Hindi as printed in the official question booklets, with UPSC\'s answer keys. Every question has a short explanation. You can practise '
+       'each paper as a quiz or a timed test, or subject-wise (polity, history, geography, economy, environment, science, current affairs, CSAT), '
+       'with one ₹45 PYQ Pass for every exam.'),
+      ('What does it cost, and what does the ₹45 PYQ Pass cover?',
+       'One plan: the ₹45 PYQ Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, '
+       'with answers, explanations, quizzes, timed tests and all study tools, plus the UPSC Mains model answers, every mock test series and the study books. '
+       'Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 '
+       'questions of each paper.'),
+      ('Are the answers official?',
+       P['note'] + ' The explanations are written by Learn with Anil.'),
+      ('What is the UPSC Prelims exam pattern?',
+       'The Preliminary Examination has two objective papers on the same day, each of 200 marks and two hours, in English and Hindi. General Studies '
+       'Paper I has 100 questions and its marks alone decide who qualifies for the Mains. General Studies Paper II (CSAT) has 80 questions on comprehension, '
+       'reasoning and basic numeracy and is qualifying: you need 33% (66 marks). A wrong answer costs one-third of the marks for that question.'),
+      ('Is there a UPSC Prelims mock test?',
+       'Yes. Tap Create a quiz, choose papers or subjects such as Polity, Environment or CSAT Quantitative Aptitude, and pick Timed test: you get a mock '
+       'test made of real UPSC Prelims questions, in English or Hindi, with your score and a topic-wise analysis.'),
+      ('Is the UPSC Prelims question paper available in Hindi?',
+       'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, exactly as printed in UPSC\'s booklet, with the explanation in '
+       'Hindi. Tap EN to switch back.'),
+      ('Where are the UPSC Mains papers?',
+       'UPSC Mains General Studies Papers I–IV (2019–2026), with a model answer for every question, are on the UPSC Civil Services page: '
+       'learnwithanil.in/upsc-cse/.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 PYQ Pass '
+       'opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
 # ---------- SSC CGL (Combined Graduate Level): Tier-I and Tier-II, from SSC's own response sheets (SSC's key marked on them) ----------
 CGL_T1_BLURB = ('Tier-I: General Intelligence & Reasoning, General Awareness, Quantitative Aptitude and English Comprehension, '
                 '25 questions each: 100 questions, 200 marks, 60 minutes, −0.50 for a wrong answer.')
@@ -731,6 +827,7 @@ def exam_confs():
     T = ts_text()
     E = epfo_text()
     G = cgl_text()
+    P = pre_text()
     si_m, pc_m = bool(T['si']), bool(T['pc'])
     return [
       dict(id='appsc-group-2', dir='', src='', key='appsc-g2', name='APPSC Group-II', short='Group-II', seo='APPSC Group 2',
@@ -808,6 +905,22 @@ def exam_confs():
                         + (" and one (Q71) in the 2021 EO/AO paper, which is left out" if E['eo21'] else "")
                         + ". Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklets." if E['eo'] else
                         "Answers come from UPSC's official answer key (Series A), published on upsc.gov.in in August 2024; no question was dropped. Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklet.")),
+      dict(id='upsc-prelims', dir='upsc-prelims', src='upsc-prelims', key='upsc-prelims', name='UPSC CSE Prelims', short='UPSC Prelims', seo='UPSC Prelims',
+           slugp='upsc-prelims', papers=PRE_PAPERS, subjects=PRE_SUBJECTS, faq=FAQ_PRE, board='UPSC', l2=L2_HI, pb='/upsc-prelims/',
+           keyname="UPSC's official answer keys", keyshort=P['keyshort'],
+           hi_name='यूपीएससी सिविल सेवा प्रारंभिक परीक्षा', hi_paper='प्रश्न पत्र', subj_te=PRE_SUBJ_HI,
+           title=f"UPSC Prelims Previous Year Question Papers with Answers ({P['years']}) – GS Paper 1 & CSAT, English & Hindi | Learn with Anil",
+           h1='UPSC Prelims previous year question papers <em>with answers.</em>',
+           aka=('Also known as the UPSC Civil Services (Preliminary) Examination, CSE Prelims or IAS Prelims. PYQs of General Studies Paper I and '
+                'CSAT (Paper II), year-wise and subject-wise, with UPSC\'s answer keys.'),
+           aka_short='UPSC Civil Services (Preliminary) Examination: General Studies Paper I and CSAT',
+           l2line=('यूपीएससी सिविल सेवा प्रारंभिक परीक्षा (IAS Prelims) के पिछले वर्षों के प्रश्न पत्र — सामान्य अध्ययन प्रश्न-पत्र I और सीसैट, '
+                   'यूपीएससी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 PYQ पास।'),
+           desc=lambda t: (f"UPSC Prelims (IAS / CSE Prelims) previous year question papers with answers: General Studies Paper 1 and CSAT Paper 2, "
+                           f"{P['years']}, with UPSC's answer keys and explanations. {t:,} questions in English and Hindi; year-wise and subject-wise "
+                           f"practice and timed mock tests with the ₹45 PYQ Pass."),
+           eyebrow=f"UPSC Civil Services · Prelims · GS Paper I &amp; CSAT · {P['years']}",
+           papers_note=P['note']),
       dict(id='ssc-cgl', dir='ssc-cgl', src='ssc-cgl', key='ssc-cgl', name='SSC CGL', short='SSC CGL', seo='SSC CGL',
            slugp='ssc-cgl', papers=CGL_PAPERS, subjects=CGL_SUBJECTS, faq=FAQ_CGL, board='SSC', l2=L2_HI, pb='/ssc-cgl/',
            keyname="SSC's answer key", keyshort="SSC's answer key (as marked on the response sheets)",
@@ -939,9 +1052,12 @@ def main():
     PAY['exam_links'] = [(c['seo'], c['pb']) for c, _, _ in loaded]
     counts = {c['id']: len(qs) for c, _, qs in loaded}
     grand = sum(counts.values())
-    import upscmains   # UPSC CSE Mains GS 1-4 previous questions with model answers (tools/upscmains.py): its own pages, no prelims app yet
+    import upscmains   # UPSC CSE Mains GS 1-4 previous questions with model answers (tools/upscmains.py): its own pages; Prelims is the 'upsc-prelims' app
     upm_qs, _ = upscmains.load(SRC)
     if upm_qs: counts[upscmains.EXAM] = len(upm_qs)
+    global PRE_LIVE   # the UPSC CSE hub's Prelims box: (questions, years, papers) of the built Prelims app
+    pre = [(ps, qs) for c, ps, qs in loaded if c['id'] == 'upsc-prelims']
+    PRE_LIVE = (len(pre[0][1]), sorted({p['year'] for p in pre[0][0]}), len(pre[0][0])) if pre else None
 
     vpath = os.path.join(SRC, 'videos.json')
     videos = json.load(open(vpath, encoding='utf-8')) if os.path.exists(vpath) else {}
@@ -1841,7 +1957,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){{
 document.querySelectorAll(".lk").forEach(function(e){{e.textContent="✓ ";e.className="lk ok"}});
 document.querySelectorAll("[data-paidtxt]").forEach(function(e){{e.textContent=e.getAttribute("data-paidtxt")}});
@@ -2907,6 +3023,7 @@ EVERYTHING = ('every previous paper of every exam on the site (and exams added l
 TRIAL_DAYS = 0   # Anil, 23 Oct 2026: no free trial; every PYQ needs the paid PYQ Pass (was 3)
 # Anil, 28 Oct 2026: TS Police papers free to attempt (registration needed): questions, answers and score. The explanations
 # (Q11 onwards of each paper), the Mission Khaki mocks from Mock 2, the PDF booklets, the study tools and every other exam stay in the ₹45 PYQ Pass.
+PRE_LIVE = None
 FREE_PYQ = {'ts-police-si', 'ts-police-constable'}
 FREE_PYQ_NOTE = ('Free: attempt every {seo} paper online, as a practice quiz or a timed test, with the correct answers and your score. '
                  'Register once (free); Mission Khaki Mock 1 is free too. The ₹{price} PYQ Pass adds the explanations, the other Mission Khaki mocks, the PDF booklets and every other exam.')
@@ -2980,6 +3097,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'ts-police-si': ('TS Police SI Preliminary Written Test', '2026-11-29', 'Tentative, TGPRB press note of 17 September 2026.'),
   'ts-police-constable': ('TS Police Constable Preliminary Written Test', '2026-12-20', 'Tentative, TGPRB press note of 17 September 2026.'),
   'upsc-capf': ('UPSC CAPF (Assistant Commandants) 2027', '2027-07-04', 'UPSC Calendar 2027.'),
+  'upsc-prelims': ('UPSC Civil Services (Preliminary) Examination 2027', '2027-05-23', 'UPSC Calendar 2027.'),
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
   'upsc-epfo': ('UPSC EPFO APFC Recruitment Test 2026', '2026-12-20', 'UPSC Special Advertisement 52/2026 (80 APFC posts): pen-and-paper Recruitment Test on 20 December 2026.'),
   'tgpsc-hmwssb-manager': ('TGPSC HMWSSB Manager (Engineering)', None, 'Tentatively December 2026; TGPSC has not announced the exact date yet.'),
@@ -3617,7 +3735,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);
@@ -3631,7 +3749,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <h1>This page does not exist</h1>
 <p>The address may be mistyped, or the page has moved. Try one of these:</p>
 <ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
-<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li>
+<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li></ul>
 </main></body></html>

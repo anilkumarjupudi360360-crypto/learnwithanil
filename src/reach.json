@@ -293,5 +293,12 @@
   "source": "https://dataful.in/datasets/19022/",
   "source_name": "Dataful, from UPSC Annual Report data",
   "in_total": false
+ },
+ "upsc-prelims": {
+  "applied": 819732,
+  "kind": "applied",
+  "cycle": "2026 (Civil Services + IFoS common prelims)",
+  "source": "https://www.tribuneindia.com/news/exam-mentor/over-5-lakh-candidates-appear-in-civil-services-preliminary-exam/",
+  "source_name": "The Tribune (PTI, quoting UPSC), 24 May 2026"
  }
 }

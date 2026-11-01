@@ -208,13 +208,24 @@ def pages(B):
                f'or a syllabus part to see every question UPSC has asked on it.')
     out[f'{DIR}/index.html'] = B.static_page(1, title, desc, base, 'UPSC Mains PYQs with model answers', lede, body, crumbs0, conf)
     # the UPSC CSE hub
+    def prelims_box(B):
+        pl = getattr(B, 'PRE_LIVE', None)
+        if not pl: return '<section class="course"><p class="ck">UPSC Civil Services · Prelims</p><h2>Prelims PYQs</h2><p class="lead">Upcoming.</p></section>'
+        n, ys, np_ = pl
+        yr = f'{ys[0]}–{ys[-1]}' if len(ys) > 1 else str(ys[0])
+        return (f'<section class="course"><p class="ck">UPSC Civil Services · Prelims</p><h2>Prelims PYQs with answers</h2>'
+                f'<p class="lead">General Studies Paper I and CSAT, {yr}: {n} questions from UPSC\'s official papers with UPSC\'s answer keys and explanations, in English and Hindi.</p>'
+                f'<ol class="clist"><li><div class="cmeta">{np_} papers</div><a class="qlink" href="/upsc-prelims/pyqs.html"><b>Year-wise papers</b></a>'
+                f'<div class="cacts"><a class="cta" href="/upsc-prelims/pyqs.html">Open the papers →</a></div></li>'
+                f'<li><div class="cmeta">quizzes, timed tests, subject-wise</div><a class="qlink" href="/upsc-prelims/"><b>Practice app</b></a>'
+                f'<div class="cacts"><a class="cta" href="/upsc-prelims/">Open UPSC Prelims →</a></div></li></ol></section>')
     hub = (CSS + f'<section class="course"><p class="ck">UPSC Civil Services · Mains</p><h2>Mains PYQs with model answers</h2>'
            f'<p class="lead">General Studies Papers I–IV, {years[-1]}–{years[0]}: {len(qs)} questions from UPSC\'s official papers, each with a model answer on its own page.</p>'
            f'<ol class="clist"><li><div class="cmeta">{len(years)} years × 4 papers</div><a class="qlink" href="{DIR}/#year"><b>Year-wise</b></a>'
            f'<div class="cacts"><a class="cta" href="{DIR}/#year">Open year-wise →</a></div></li>'
            f'<li><div class="cmeta">by GS syllabus part</div><a class="qlink" href="{DIR}/#subject"><b>Subject-wise</b></a>'
            f'<div class="cacts"><a class="cta" href="{DIR}/#subject">Open subject-wise →</a></div></li></ol></section>'
-           f'<section class="course"><p class="ck">UPSC Civil Services · Prelims</p><h2>Prelims PYQs</h2><p class="lead">Upcoming.</p></section>' + buy + flip_js())
+           + prelims_box(B) + buy + flip_js())
     out['index.html'] = B.static_page(0, 'UPSC Civil Services (CSE) Mains PYQs with Model Answers – GS 1 to 4 | Learn with Anil',
                                       f'UPSC Civil Services Mains previous year questions {years[-1]}–{years[0]}: GS Papers I–IV, year-wise and subject-wise, each with a model answer by Learn with Anil.',
                                       B.SITE_URL + pb, 'UPSC Civil Services (CSE)', esc('Mains previous questions with model answers, year-wise and subject-wise.'),

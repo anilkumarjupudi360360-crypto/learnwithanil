@@ -39,8 +39,16 @@
    "cat": "upsc",
    "b": "UPSC",
    "t": "Civil Services",
-   "n": "CSE · Mains GS 1–4 PYQs with answers",
+   "n": "CSE Mains · GS 1–4 PYQs with model answers",
    "live": "upsc-cse/"
+  },
+  {
+   "id": "upsc-prelims",
+   "cat": "upsc",
+   "b": "UPSC",
+   "t": "CSE Prelims",
+   "n": "GS Paper I & CSAT PYQs with answers",
+   "live": "upsc-prelims/"
   },
   {
    "id": "upsc-ifos",
