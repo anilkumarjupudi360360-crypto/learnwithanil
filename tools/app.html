@@ -458,6 +458,8 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;z-index:50;box-shadow:var(--shadow);max-width:calc(100% - 32px)}
 
 /* Study material (Crisp Notes) */
+.nav a.nav-fund{color:#9A3412;background:#FFF1E6;margin-left:4px}.nav a.nav-fund:hover{background:#FFE2CC;color:#7C2D12}.nav a.nav-fund svg{flex:none}@media (min-width:1361px){.nav a.nav-fund .nf-x{display:none}}   /* one-row top bar: "Fund" fits, the long label does not */
+@media (prefers-color-scheme:dark){.nav a.nav-fund{color:#FDBA8C;background:#3A2414}.nav a.nav-fund:hover{background:#4A2E19;color:#FFD3B0}}
 .nav a .new{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.06em;background:#F2B705;color:#0C2266;border-radius:4px;padding:0 5px;line-height:16px}
 .notes-promo{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:22px 24px;text-decoration:none;color:var(--ink);transition:border-color .15s}
 .notes-promo:hover{border-color:var(--accent)}
@@ -560,7 +562,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .bd-badge{position:absolute;left:12px;top:10px;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;background:rgba(255,255,255,.95);color:#065f46;border-radius:999px;padding:3px 10px}
 .bd-badge i{width:7px;height:7px;border-radius:50%;background:#16a34a}
 .bd-badge.bd-soon{color:#475569}
-.b-upsc,.x-upsc{--g1:#1e3a8a;--g2:#3b82f6}.b-ap,.x-ap{--g1:#0f766e;--g2:#2dd4bf}.b-tg,.x-tg{--g1:#5b21b6;--g2:#a78bfa}.b-ssc,.x-ssc{--g1:#c2410c;--g2:#fb923c}.b-rail,.x-rail{--g1:#7f1d1d;--g2:#dc2626}.b-bank,.x-bank{--g1:#065f46;--g2:#34d399}
+.b-upsc,.x-upsc{--g1:#1e3a8a;--g2:#3b82f6}.b-ap,.x-ap{--g1:#0f766e;--g2:#2dd4bf}.b-tg,.x-tg{--g1:#5b21b6;--g2:#a78bfa}.b-ssc,.x-ssc{--g1:#c2410c;--g2:#fb923c}.b-rail,.x-rail{--g1:#7f1d1d;--g2:#dc2626}.b-bank,.x-bank{--g1:#065f46;--g2:#34d399}.b-tn,.x-tn{--g1:#9a3412;--g2:#f97316}.b-ka,.x-ka{--g1:#854d0e;--g2:#eab308}.b-kl,.x-kl{--g1:#166534;--g2:#4ade80}.b-mh,.x-mh{--g1:#9f1239;--g2:#fb7185}.b-up,.x-up{--g1:#3730a3;--g2:#818cf8}.b-br,.x-br{--g1:#0e7490;--g2:#22d3ee}
 .card.exam{position:relative;overflow:hidden;padding:0;gap:0}
 .ex-art{position:relative;display:flex;align-items:center;justify-content:center;height:74px;color:#fff;background:linear-gradient(135deg,var(--g1,#334155),var(--g2,#64748b))}
 .ex-art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 15%,rgba(255,255,255,.18) 0 16%,transparent 17%),radial-gradient(circle at 95% 115%,rgba(255,255,255,.14) 0 32%,transparent 33%)}
@@ -679,7 +681,7 @@ details.upc .exams{margin-top:8px}
       <a href="#bookmarks" data-v="bookmarks" data-g2>Bookmarks</a>
       <a href="#heatmap" data-v="heatmap" data-g2>Heatmap</a>
       <a href="#about" data-v="about">About</a>
-    </nav>
+{{NAV_FUND}}    </nav>
     <div class="lang" role="group" aria-label="Question language">
       <button type="button" data-act="lang" data-l="en" aria-pressed="true">EN</button>
       <button type="button" data-act="lang" data-l="hi" lang="hi" aria-pressed="false">हिंदी</button>
@@ -731,9 +733,6 @@ details.upc .exams{margin-top:8px}
     <div class="features"><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 14l2 2 4-4"/></svg></span><span><h3 data-i18n="w1t">Straight from the official paper</h3><p data-i18n="w1p">Every question is typed from the official question booklet and checked twice before it goes live. Each paper says where its answers come from.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c1 4 4 7 7 8M11 5c-1 4-4 7-7 8"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg></span><span><h3 data-i18n="w2t">Read it in your language</h3><p data-i18n="w2p">Switch between English, తెలుగు and हिंदी with one tap at the top. The translation is the one printed in the exam paper, not a machine translation.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/><path d="M9 12l2 2 4-4"/></svg></span><span><h3 data-i18n="w3t">Your mistakes come back</h3><p data-i18n="w3p">Every question you get wrong goes into your Mistakes notebook. The Smart Quiz keeps asking it until you get it right twice.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2" opacity=".35"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2" opacity=".6"/></svg></span><span><h3 data-i18n="w4t">See your weak topics</h3><p data-i18n="w4p">The heatmap colours every topic by your accuracy, so you know exactly what to revise first.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><span><h3 data-i18n="w5t">Every question has its own page</h3><p data-i18n="w5p">Send any question to a friend as a link. They see the question first, and the answer only when they tap.</p></span></div><div class="card feature"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/><path d="M10 9l1.5 1.5L14 8"/></svg></span><span><h3 data-i18n="w6t">Your practice stays with you</h3><p data-i18n="w6p">Register once, free, with no password to remember. Your practice, mistakes and bookmarks are saved on your own phone.</p></span></div></div>
   </section>
 
-  <section class="wrap section" id="fund-hub">
-    <div class="card" style="padding:20px 22px;border-left:4px solid var(--accent)"><h2 data-i18n="fundT" style="margin:0 0 8px">Support Learn with Anil</h2><p data-i18n="fundP" style="margin:0 0 14px">My goal: 1 lakh PYQs of various government exams under one roof, for ₹45. I am building this site alone, to be student-friendly and to democratise learning, and I need help from funders: your support, in turn, helps me help the students.</p><div class="row"><a class="btn btn-primary" href="/funders.html" data-i18n="fundB">Fund this project</a></div></div>
-  </section>
 
   {{HOME_NOTES}}
 </div>
