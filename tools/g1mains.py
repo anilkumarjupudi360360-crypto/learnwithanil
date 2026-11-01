@@ -189,7 +189,11 @@ def pages(B, conf):
            f'with a model answer written the way a top APPSC candidate would: key words and an introduction, every part of the question in numbered points, diagrams, flowcharts, tables or maps, the Andhra Pradesh angle and a conclusion. '
            f'Included in the ₹{price} PYQ Pass, with every previous paper, mock test series and study book on the site.</p>'
            f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{pb}?buy=pyq">Get it for ₹{price}</a></div>')
-    if ALL_FREE: buy = ''
+    if ALL_FREE:   # a small box under every free answer: what the pass still adds (Anil, 2 Nov 2026)
+        buy = (f'<div class="buy mbuy"><div><b>Write better answers: the Answer Writing Tool Kit</b><p>Every model answer on these pages is free to read. '
+               f'The Tool Kit adds four PDF books for Mains Papers I–IV: every previous question sorted by syllabus, with practice questions. '
+               f'It is in the ₹{price} PYQ Pass, with every previous paper of every exam on the site, practice quizzes, timed tests, mock test series and study books.</p>'
+               f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{pb}?buy=pyq">Get it for ₹{price}</a></div>')
     howto = (f'<p class="note">Tap a question to open its model answer on its own page. '
              + ('Every model answer is free. ' if ALL_FREE else f'Every 2020 answer is free, and so are Q1(a) and Q1(b) of the 2023 and 2025 papers; the rest open with the ₹{price} PYQ Pass on the phone you registered in the app. ')
              + f'Answers are by Learn with Anil (Jupudi Anil Kumar), not by APPSC; facts as of October 2026.</p>')
@@ -262,7 +266,7 @@ def pages(B, conf):
                                (f'Q{L[i + 1]["qno"]}', apage(L[i + 1]), short(L[i + 1]['text'], 70)) if i + 1 < len(L) else None)
             altbox = (f'<section class="osec"><h2>The other choice in Q{num}</h2><p class="qm">Answer either one in the exam.</p>'
                       f'<ol class="qrows">{card(alt, man, parts)}</ol></section>' if alt else '')
-            body = CSS + wrap(p, qbox + abox + nav + altbox + ('' if q['id'] in free else buy)) + js
+            body = CSS + wrap(p, qbox + abox + nav + altbox + ('' if q['id'] in free and not ALL_FREE else buy)) + js
             sq = short(q['text'], 70)
             title = f'{sq} – APPSC Group 1 Mains {y} Paper {p} Q{q["qno"]} Model Answer | Learn with Anil'
             desc = short(f'APPSC Group 1 Mains {y} Paper {p} Q{q["qno"]}: {q["text"]} Model answer with key words, points and diagrams by Learn with Anil.', 300)

@@ -298,7 +298,7 @@ def FAQ_PRE(total, npapers):
        'with one ₹45 PYQ Pass for every exam.'),
       ('What does it cost, and what does the ₹45 PYQ Pass cover?',
        'One plan: the ₹45 PYQ Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, '
-       'with answers, explanations, quizzes, timed tests and all study tools, plus the UPSC Mains model answers, every mock test series and the study books. '
+       'with answers, explanations, quizzes, timed tests and all study tools, every mock test series and the study books (the UPSC and APPSC Mains model answers are free to read). '
        'Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 '
        'questions of each paper.'),
       ('Are the answers official?',
@@ -1464,7 +1464,7 @@ def main():
         qdir = os.path.join(DIST, 'site', pb.strip('/'), 'q'); os.makedirs(qdir, exist_ok=True)
         for rel, content in qpages.items():
             open(os.path.join(DIST, 'site', pb.strip('/'), rel), 'w', encoding='utf-8').write(content)
-            all_pages[pb.lstrip('/') + rel] = None
+            if not GOOGLE_SKIP_QPAGES: all_pages[pb.lstrip('/') + rel] = None
         if PUBLIC_PDFS:
             for p in papers: all_pages[pdf_href(conf, p).lstrip('/')] = None   # the PDFs come from tools/pdfs.py
         print(f'  {conf["name"]}: {total} questions, {len(pages)} static pages, {len(qpages)} question pages, {len(site_pages)} app pages')
@@ -1884,7 +1884,7 @@ def p5_card(el_id):
     text = f'Hi Anil sir, I need the APPSC Group-1 Mains Paper V ({MAINS_P5["name"]}) Answer Writing Tool Kit.'
     return (f'<div class="card p5-card" id="{el_id}" hidden><p class="eyebrow">APPSC Group-1 Mains · Paper V</p>'
             f'<h3>Looking for Paper V ({esc(MAINS_P5["name"])})?</h3>'
-            f'<p>All 90 Paper V previous questions of 2020, 2023 and 2025 are on the site, with model answers in the PYQ Pass. '
+            f'<p>All 90 Paper V previous questions of 2020, 2023 and 2025 are on the site, each with a free model answer. '
             f'The Paper V tool kit (PDF) is not on the website: message Anil on WhatsApp and he will help you get it.</p>'
             f'<div class="row"><a class="btn btn-primary" href="/appsc-group-1/mains-pyqs/2025-paper-5.html">Paper V questions with answers</a>'
             f'<a class="btn btn-secondary" href="https://wa.me/{WHATSAPP}?text={quote(text)}" target="_blank" rel="noopener">Message Anil on WhatsApp</a>'
@@ -2537,7 +2537,7 @@ def llms_txt(loaded, grand):
         ab = f'{SITE_URL}/{upscmains.EXAM}/anthropology-pyqs/'
         L.append(f'- [UPSC Anthropology optional previous year questions with model answers, Papers I and II]({ab}): {len(aq):,} question parts of '
                  f'{min(q["year"] for q in aq)}–{max(q["year"] for q in aq)}, year-wise and syllabus-wise, each with a model answer on its own page '
-                 f'(key words, anthropologists and ethnographic examples, diagrams); questions free, Q1(a) and Q1(b) of every paper answered free, the rest with the PYQ Pass.')
+                 f'(key words, anthropologists and ethnographic examples, diagrams); questions and all written model answers free (answers for 2019–2022 are being added).')
         for y in sorted({q['year'] for q in aq}, reverse=True):
             for p in upscmains.AN_PAPERS:
                 if any(q['year'] == y and q['paper'] == p for q in aq):
@@ -4388,6 +4388,13 @@ def build_static(conf, papers, subjects, questions, subj):
     return pages
 
 
+# Anil, 2 Nov 2026 (SEO check): Google had dropped most of the site, even exam and paper pages that were getting clicks, as "Crawled -
+# currently not indexed", after ~10,000 near-identical one-question pages went up in two weeks. The one-question pages now tell Google only
+# (meta googlebot noindex; they stay open to Bing, which ChatGPT uses, and to visitors) not to index them, and leave the sitemap, so Google
+# judges the site on its exam, paper, subject, notification and Mains model-answer pages.
+GOOGLE_SKIP_QPAGES = True
+
+
 def question_pages(conf, papers, questions, subj):
     """One crawlable page per question (q/<id>.html in the exam's folder): question, options, answer, explanation, both languages."""
     papers, questions = public_only(papers, questions)
@@ -4424,7 +4431,9 @@ def question_pages(conf, papers, questions, subj):
             lede = esc(f'Question {q["n"]} of the {p["title"]} ({p["held"]}). '
                        + ('Try it first, then open the answer. The explanation is in the practice app with the PYQ Pass.' if locked else 'Try it first, then open the answer and explanation.'))
             crumbs = [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), (p['title'], SITE_URL + paper_url), (f'Q{q["n"]}', can)]
-            pages[rel] = static_page(depth, title, desc, can, f'{kw} · Question {q["n"]}', lede, body, crumbs, conf)
+            page = static_page(depth, title, desc, can, f'{kw} · Question {q["n"]}', lede, body, crumbs, conf)
+            if GOOGLE_SKIP_QPAGES: page = page.replace('<link rel="canonical"', '<meta name="googlebot" content="noindex,follow">\n<link rel="canonical"', 1)
+            pages[rel] = page
     return pages
 
 

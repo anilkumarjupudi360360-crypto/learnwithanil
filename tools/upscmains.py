@@ -121,7 +121,7 @@ def course_pages(B, code):
     crumbs0 = [('Home', B.SITE_URL + '/'), ('UPSC Civil Services', B.SITE_URL + pb), (C['crumb'], base)]
     parts = part_pages(qs)
     free = man.get('free', {})
-    allfree = code == 'gs' and len(free) >= man.get('n', 10 ** 9)   # Anil, 2 Nov 2026: "make both mains free" (GS answers all free; Anthropology stays in the pass)
+    allfree = len(free) >= man.get('n', 10 ** 9)   # Anil, 2 Nov 2026: "make both mains free" (GS), then "ok" to Anthropology too: every written answer free
     payline = 'Questions and model answers free.' if allfree else f'Questions free; answers with the ₹{price} PYQ Pass.'
     years = [y for y in YEARS if any(q['year'] == y for q in qs)]
     done = sorted({int(k[:4]) for k in files}, reverse=True)
@@ -130,7 +130,11 @@ def course_pages(B, code):
            f'model answer: key words and an introduction, every part of the question in numbered points, diagrams, flowcharts or tables, and a conclusion. '
            f'Included in the ₹{price} PYQ Pass, with every previous paper, mock test series and study book on the site.</p>'
            f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{buyurl}">Get it for ₹{price}</a></div>')
-    if allfree: buy = ''
+    if allfree:   # a small box under every free answer: what the pass still adds (Anil, 2 Nov 2026)
+        buy = (f'<div class="buy mbuy"><div><b>Every model answer here is free</b><p>The ₹{price} PYQ Pass opens the rest of the site for 12 months: '
+               f'UPSC Prelims GS Paper I and CSAT with explanations, practice quizzes and timed tests, UPSC CAPF and EPFO, the previous papers of every APPSC, '
+               f'TSPSC, police and SSC exam, every mock test series and the study books.</p>'
+               f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{buyurl}">Get it for ₹{price}</a></div>')
     status = ('Model answers are ready for every paper.' if set(done) >= set(years)
               else f'Model answers are ready for {", ".join(map(str, done))}; the other years are being added, newest first.' if done
               else 'Model answers are being added year by year, newest first.')
@@ -188,7 +192,7 @@ def course_pages(B, code):
                                (f'Q{L[i + 1]["qno"]}', apage(L[i + 1]), short(L[i + 1]['text'], 70)) if i + 1 < len(L) else None)
             sibbox = (f'<section class="osec"><h2>The other part{"s" if len(sib) > 1 else ""} of Q{num}</h2><ol class="qrows">'
                       + ''.join(card(x, man, parts=parts) for x in sib) + '</ol></section>' if sib else '')
-            body = CSS + wrap(p, qbox + abox + nav + sibbox + ('' if q['id'] in free else buy)) + js
+            body = CSS + wrap(p, qbox + abox + nav + sibbox + ('' if q['id'] in free and not allfree else buy)) + js
             title = f'{short(q["text"], 70)} – {C["seo"]} {y} {C["pfx"]} {n} Q{q["qno"]} Model Answer | Learn with Anil'
             desc = short(f'{C["seo"]} {y} {C["plabel"]} {n} Q{q["qno"]}: {q["text"]} Model answer with key words, points and diagrams by Learn with Anil.', 300)
             page = B.static_page(1, title, desc, acan, f'{C["seo"]} {y} {C["pfx"]} {n} · Q{q["qno"]}: model answer', esc(f'{long_} · {part}.'), body,

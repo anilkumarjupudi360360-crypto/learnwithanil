@@ -60,7 +60,7 @@ for f in os.listdir(bdir):
     if f.startswith(f'{PREFIX}-ans-') and f.endswith('.bin') and f not in files.values(): os.remove(os.path.join(bdir, f))
 # APPSC Group-1 (Anil, 2 Nov 2026): every answer of the oldest year (2020) is free; the other answers are also written into the
 # public pages behind the lock (paid content marked for Google, isAccessibleForFree false), so Google can read and rank them.
-FREE_YEARS = () if ANTHRO else (2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)   # Anil, 2 Nov 2026: "make both mains free" (Group-1 and UPSC GS: every answer)
+FREE_YEARS = (2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)   # Anil, 2 Nov 2026: "make both mains free" (Group-1 and UPSC GS), then "ok" to Anthropology too: every answer
 free = {q['id']: ans[q['id']] for q in qs if (q['qno'] in FREE or q['year'] in FREE_YEARS) and q['id'] in ans}
 json.dump({'key': KID, 'files': files, 'n': len(ans), 'free': free},
           open(os.path.join(SRCDIR, 'answers.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

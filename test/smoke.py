@@ -601,12 +601,21 @@ async def main():
             nfree = nlock = 0
             for f in ap_:
                 h = open(os.path.join(ad, f), encoding='utf-8').read()
-                fr = 'Model answer · free sample' in h; lk = re.search(r'FILE="(upa-ans-20\d\d-an[12]-[0-9a-f]{10}\.bin)"', h)
+                fr = 'Model answer · free' in h; lk = re.search(r'FILE="(upa-ans-20\d\d-an[12]-[0-9a-f]{10}\.bin)"', h)
                 nfree += bool(fr); nlock += bool(lk)
                 if lk and not os.path.isfile(os.path.join(SITE, 'books', lk.group(1))): errors.append(f'anthropology/{f}: sealed file {lk.group(1)} missing from /books/')
             for f in os.listdir(ad):
                 for h in re.findall(r'href="([^"#?]+\.html)"', open(os.path.join(ad, f), encoding='utf-8').read()):
                     if '/' not in h and not os.path.isfile(os.path.join(ad, h)): errors.append(f'upsc-cse/anthropology-pyqs/{f}: broken link {h}')
+            if nlock: errors.append(f'anthropology: {nlock} answer pages still sealed (every written answer is free since 2 Nov 2026)')
             print(f'upsc anthropology: {len(yp)} paper pages, {nq} question cards, {len(ap_)} answer pages ({nfree} free, {nlock} sealed)')
+        # SEO (2 Nov 2026): one-question MCQ pages tell Google not to index them and are not in the sitemap; the Mains answer pages are
+        smx = open(os.path.join(SITE, 'sitemap.xml')).read()
+        qp = os.path.join(SITE, 'upsc-capf', 'q', 'c2026a-3.html')
+        if '<meta name="googlebot" content="noindex,follow">' not in open(qp, encoding='utf-8').read(): errors.append('question pages: no googlebot noindex')
+        if re.search(r'<loc>[^<]*/q/[^<]*</loc>', smx): errors.append('question pages are still in the sitemap')
+        for rel in ('upsc-cse/mains-pyqs/2025-gs1-q1.html', 'appsc-group-1/mains-pyqs/2025-paper-2-q1a.html', 'upsc-cse/anthropology-pyqs/2025-paper-1-q1a.html'):
+            if f'/{rel}</loc>' not in smx: errors.append(f'{rel} not in sitemap')
+            if 'noindex' in open(os.path.join(SITE, rel), encoding='utf-8').read(): errors.append(f'{rel} has noindex')
         print('ERRORS:', errors if errors else 'none')
 asyncio.run(main())
