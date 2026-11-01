@@ -121,6 +121,8 @@ def course_pages(B, code):
     crumbs0 = [('Home', B.SITE_URL + '/'), ('UPSC Civil Services', B.SITE_URL + pb), (C['crumb'], base)]
     parts = part_pages(qs)
     free = man.get('free', {})
+    allfree = code == 'gs' and len(free) >= man.get('n', 10 ** 9)   # Anil, 2 Nov 2026: "make both mains free" (GS answers all free; Anthropology stays in the pass)
+    payline = 'Questions and model answers free.' if allfree else f'Questions free; answers with the ₹{price} PYQ Pass.'
     years = [y for y in YEARS if any(q['year'] == y for q in qs)]
     done = sorted({int(k[:4]) for k in files}, reverse=True)
     buyurl = '/upsc-epfo/?buy=pyq'   # the pass checkout lives in the exam apps (one ₹45 PYQ Pass for the whole site)
@@ -128,13 +130,15 @@ def course_pages(B, code):
            f'model answer: key words and an introduction, every part of the question in numbered points, diagrams, flowcharts or tables, and a conclusion. '
            f'Included in the ₹{price} PYQ Pass, with every previous paper, mock test series and study book on the site.</p>'
            f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{buyurl}">Get it for ₹{price}</a></div>')
+    if allfree: buy = ''
     status = ('Model answers are ready for every paper.' if set(done) >= set(years)
               else f'Model answers are ready for {", ".join(map(str, done))}; the other years are being added, newest first.' if done
               else 'Model answers are being added year by year, newest first.')
-    howto = (f'<p class="note">Tap a question to open its model answer on its own page. {C["free_note"][0].upper() + C["free_note"][1:]}; the rest open with the ₹{price} PYQ Pass '
-             f'on the phone you registered in the app. The model answers are fuller than UPSC\'s 150/250-word limits so that you learn the content; '
+    howto = (f'<p class="note">Tap a question to open its model answer on its own page. '
+             + ('Every model answer is free. ' if allfree else f'{C["free_note"][0].upper() + C["free_note"][1:]}; the rest open with the ₹{price} PYQ Pass on the phone you registered in the app. ')
+             + f'The model answers are fuller than UPSC\'s 150/250-word limits so that you learn the content; '
              f'write within the limit in the exam. {status} Answers are by Learn with Anil (Jupudi Anil Kumar), not by UPSC.</p>')
-    passbtn = f'<a class="cta" href="{buyurl}" data-buy style="margin:0">Get the PYQ Pass · ₹{price}</a>'
+    passbtn = '' if allfree else f'<a class="cta" href="{buyurl}" data-buy style="margin:0">Get the PYQ Pass · ₹{price}</a>'
     wrap = lambda p, h: f'<div{D.pv(p)}>{h}</div>'
     def head(h2, sub):
         return (f'<div style="display:flex;flex-wrap:wrap;gap:8px 16px;align-items:end;justify-content:space-between;margin:22px 0 0">'
@@ -149,7 +153,7 @@ def course_pages(B, code):
         can = f'{B.SITE_URL}{pb}{rel}'
         title = f'{C["seo"]} {y} {"GS " if code == "gs" else ""}Paper {n} Questions with Model Answers ({PAPERS[p][2]}) | Learn with Anil'
         desc = (f'All {len(L)} questions of the UPSC Civil Services (Main) {y} {C["subj"]} Paper {n} ({PAPERS[p][2]}), each with a model answer on its own page '
-                f'by Learn with Anil. Questions free; answers with the ₹{price} PYQ Pass.')
+                f'by Learn with Anil. {payline}')
         lede = esc(f'UPSC Civil Services (Main) Examination {y}, {long_}. {len(L)} {"questions" if code == "gs" else "question parts"}, 250 marks. Tap a question for its model answer.')
         sw = ('<div class="msw"><span class="lbl">Year</span>'
               + D.chips([(str(yy), f'{yy}-{C["pp"]}{n}.html', yy == y) for yy in years if (yy, p) in by_yp])
@@ -171,7 +175,7 @@ def course_pages(B, code):
             qbox = (f'<div class="mq"><div class="tags">' + ''.join(f'<span>{esc(t)}</span>' for t in tags) + f'</div><p class="mqt">{esc(q["text"])}</p>'
                     f'<p class="syl">Syllabus: <a href="{ps}.html">{esc(part)}</a> · {esc(q["topic"])}</p></div>')
             if q['id'] in free:
-                abox = f'<div class="ma"><div class="ah"><span>Model answer · free sample</span></div><div class="mans">{free[q["id"]]}</div></div>'
+                abox = f'<div class="ma"><div class="ah"><span>Model answer · free{"" if allfree else " sample"}</span></div><div class="mans">{free[q["id"]]}</div></div>'
             elif files.get(pkey(q)):
                 abox = (f'<div class="ma"><div class="ah"><span id="anshead">Model answer</span></div><div class="mans" data-ans="{q["id"]}"><div class="mlock">'
                         f'🔒 This model answer (key words, numbered points and diagrams) opens with the ₹{price} PYQ Pass. '
@@ -202,7 +206,7 @@ def course_pages(B, code):
         for q in sorted(L, key=lambda q: (-q['year'], qkey(q))): topics.setdefault(q['topic'], []).append(q)
         title = f'{C["seo"]} {part} Questions with Answers ({C["plabel"]} {n}, {years[-1]}–{years[0]}) | Learn with Anil'
         desc = (f'{len(L)} UPSC Civil Services Mains {C["plabel"]} {n} previous questions on {part}, {years[-1]}–{years[0]}, grouped by topic, '
-                f'each with a model answer by Learn with Anil. Questions free; answers with the ₹{price} PYQ Pass.')
+                f'each with a model answer by Learn with Anil. {payline}')
         lede = esc(f'Every {C["seo"]} question on {part} ({C["plabel"]} {n}) from {years[-1]} to {years[0]}: {len(L)} questions in {len(topics)} topics, newest first.')
         sw = (f'<div class="msw"><span class="lbl">{tag_of(C, p)} parts</span>'
               + D.chips([(nm, f'{s}.html', s == ps) for (pp, _), (nm, s) in sorted(parts.items(), key=lambda x: x[0][1]) if pp == p]) + '</div>')
@@ -233,13 +237,13 @@ def course_pages(B, code):
     if code == 'gs':
         title = f'UPSC Mains Previous Year Questions with Model Answers (GS 1–4, {years[-1]}–{years[0]}) – Year-wise & Subject-wise | Learn with Anil'
         desc = (f'All {len(qs)} UPSC Civil Services Mains General Studies questions of {years[-1]}–{years[0]} (GS Papers I, II, III and IV), year-wise and subject-wise, '
-                f'each with a model answer by Learn with Anil. Questions free; answers with the ₹{price} PYQ Pass.')
+                f'each with a model answer by Learn with Anil. {payline}')
         lede = esc(f'{len(qs)} real UPSC Mains GS questions from {years[-1]} to {years[0]}, each with a model answer on its own page: pick a year and paper, '
                    f'or a syllabus part to see every question UPSC has asked on it.')
     else:
         title = f'UPSC Anthropology Optional PYQs with Model Answers (Paper 1 & 2, {years[-1]}–{years[0]}) – Year-wise & Topic-wise | Learn with Anil'
         desc = (f'All {len(qs)} UPSC Civil Services Mains Anthropology optional question parts of {years[-1]}–{years[0]} (Papers I and II), year-wise and '
-                f'topic-wise, each with a model answer by Learn with Anil. Questions free; answers with the ₹{price} PYQ Pass.')
+                f'topic-wise, each with a model answer by Learn with Anil. {payline}')
         lede = esc(f'{len(qs)} real UPSC Anthropology optional question parts from {years[-1]} to {years[0]}, each with a model answer on its own page: '
                    f'pick a year and paper, or a syllabus part to see every question UPSC has asked on it.')
     page = B.static_page(1, title, desc, base, C['index_h'], lede, body, crumbs0, conf)
@@ -288,7 +292,7 @@ def pages(B):
     keys = ([D.LOOK[p][0] for p in PAPERS] + ([D.LOOK[p][0] for p in AN_PAPERS] if an else [])
             + ([D.LOOK['PGS'][0], D.LOOK['PCSAT'][0]] if getattr(B, 'PRE_LIVE', None) else []))
     hub = (CSS + gsc + f'<div class="cpair">{anc}{prelims_card()}</div>'
-           + (gs['buy'].replace('Every GS question', 'Every GS and Anthropology optional question') if an else gs['buy']) + flip_js() + D.credits(keys))
+           + ((gs['buy'].replace('Every GS question', 'Every GS and Anthropology optional question') if an else gs['buy']) if gs['buy'] else (an['buy'] if an else '')) + flip_js() + D.credits(keys))
     page = B.static_page(0, 'UPSC Civil Services (CSE) PYQs – Mains GS 1–4' + (' & Anthropology' if an else '') + ' Model Answers, Prelims GS & CSAT | Learn with Anil',
                          f'UPSC Civil Services previous year questions: Mains GS Papers I–IV ({yr(gs["years"])})'
                          + (f', Anthropology optional Papers I–II ({yr(an["years"])})' if an else '')

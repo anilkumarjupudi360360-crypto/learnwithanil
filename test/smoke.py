@@ -559,20 +559,19 @@ async def main():
                 h = open(os.path.join(md_, f), encoding='utf-8').read()
                 links = re.findall(r'href="(20\d\d-paper-\d-q\d+[ab]\.html)"', h)
                 if f.endswith('-paper-1.html') and (links or 'data-ans="' in h): errors.append(f'mains-pyqs/{f}: essay page links to answers')
-                nf_ = 30 if f.startswith('2020-') else 2   # every 2020 answer free (Anil, 2 Nov 2026)
+                nf_ = 30   # every answer free (Anil, 2 Nov 2026: "make both mains free")
                 if not f.endswith('-paper-1.html') and (len(set(links)) != 30 or h.count('Free model answer') != nf_):
                     errors.append(f'mains-pyqs/{f}: {len(set(links))} answer links and {h.count("Free model answer")} free (expected 30 and {nf_})')
             nfree = nlock = 0
             for f in apg:
                 h = open(os.path.join(md_, f), encoding='utf-8').read()
-                fr, lk = 'Model answer · free sample' in h, 'data-ans="' in h
+                fr, lk = 'Model answer · free' in h, 'data-ans="' in h
                 nfree += fr; nlock += lk
                 if fr == lk: errors.append(f'mains-pyqs/{f}: answer page is neither free nor sealed')
                 if lk and not re.search(r'FILE="g1m-ans-20\d\d-p\d-[0-9a-f]{10}\.bin"', h): errors.append(f'mains-pyqs/{f}: no sealed answer file')
                 if lk and ('class="mans pw"' not in h or '"isAccessibleForFree": false' not in h or '"cssSelector": ".pw"' not in h):
                     errors.append(f'mains-pyqs/{f}: paid answer not in the page with the paid-content markup')
-                if fr and f.startswith('2020-') is False and not re.search(r'-q1[ab]\.html$', f): errors.append(f'mains-pyqs/{f}: free answer outside 2020 / Q1')
-            if len(apg) != 360 or nfree != 136 or nlock != 224: errors.append(f'mains-pyqs: {len(apg)} answer pages, {nfree} free, {nlock} sealed (expected 360, 136, 224)')
+            if len(apg) != 360 or nfree != 360 or nlock != 0: errors.append(f'mains-pyqs: {len(apg)} answer pages, {nfree} free, {nlock} sealed (expected 360, 360, 0)')
             for f in os.listdir(md_):
                 for h in re.findall(r'href="([^"#?]+\.html)"', open(os.path.join(md_, f), encoding='utf-8').read()):
                     if '/' not in h and not os.path.isfile(os.path.join(md_, h)): errors.append(f'mains-pyqs/{f}: broken link {h}')

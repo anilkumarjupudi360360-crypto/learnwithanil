@@ -2512,7 +2512,7 @@ def llms_txt(loaded, grand):
             L.append(f'  - [{paper_kw(c, p)} question paper with answers]({SITE_URL}/{base}papers/{p["slug"]}.html) — held {p["held"]}, {p["count"]} questions')
         if c['id'] in MAINS_EXAMS and os.path.exists(os.path.join(SRC, c['src'], 'mains-pyqs', 'questions.json')):   # descriptive Mains PYQs (tools/g1mains.py)
             L.append(f'  - [APPSC Group 1 Mains previous year questions with model answers, year-wise and subject-wise]({SITE_URL}{c["pb"]}mains-pyqs/) — '
-                     f'Papers II to V of the 2020, 2023 and 2025 Mains, 360 questions, plus the 27 Paper I essay topics; questions free, all 120 model answers of 2020 free (and Q1(a), Q1(b) of every 2023 and 2025 paper), the rest with the PYQ Pass')
+                     f'Papers II to V of the 2020, 2023 and 2025 Mains, 360 questions, plus the 27 Paper I essay topics; questions and all model answers free')
             mdir = os.path.join(DIST, 'site', c['dir'], 'mains-pyqs')   # each year-paper page (SEO, 1 Nov 2026)
             for y in (2025, 2023, 2020):
                 for n, nm in ((1, 'Paper I (Essay) topics'), (2, 'Paper II (History & Geography)'), (3, 'Paper III (Polity & Ethics)'), (4, 'Paper IV (Economy)'), (5, 'Paper V (Science, Technology & Environment)')):
@@ -2526,7 +2526,7 @@ def llms_txt(loaded, grand):
         ub = f'{SITE_URL}/{upscmains.EXAM}/mains-pyqs/'
         L.append(f'- [UPSC Civil Services (CSE) Mains previous year questions with model answers, GS Papers 1–4]({ub}): {len(uq):,} questions of '
                  f'{min(q["year"] for q in uq)}–{max(q["year"] for q in uq)}, year-wise and subject-wise, each with a model answer on its own page '
-                 f'(key words, points, diagrams); questions free, Q1 and Q2 of every paper answered free, the rest with the PYQ Pass. Hub: {SITE_URL}/{upscmains.EXAM}/')
+                 f'(key words, points, diagrams); questions and all model answers free. Hub: {SITE_URL}/{upscmains.EXAM}/')
         for y in sorted({q['year'] for q in uq}, reverse=True):
             for p in upscmains.PAPERS:
                 if any(q['year'] == y and q['paper'] == p for q in uq):
