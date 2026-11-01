@@ -948,7 +948,7 @@ def exam_confs():
                       'each tagged with the papers that asked it, 1,004 previous questions mapped and 112 current affairs of 2025–26. Free sample PDF; '
                       'plus AP Economy Crisp Notes and the Science & Technology book.'),
            notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-II: the new Micro-Syllabus, which breaks every Screening and Mains subject into sub-topics and shows which papers asked each one, Crisp Notes on AP Economy, and a full Science & Technology book. Every book has APPSC\'s own previous questions inside.',
-           notes_line='The new Group-II Micro-Syllabus (Notification 37/2026), Crisp Notes on AP Economy and a full Science & Technology book, built on APPSC\'s own previous questions.',
+           notes_line='The new Group-II Micro-Syllabus (Notification 37/2026), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book, built on APPSC\'s own previous questions.',
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer: there the answer is APPSC's and the other three options are written by Learn with Anil (inside the PYQ Pass)."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
            slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE, pb='/appsc-group-1/',
@@ -1269,8 +1269,9 @@ def main():
         subj = {s[0]: s for s in conf['subjects']}
         def upath(x): return x if (is_root or re.match(r'(https?:|data:|/)', x)) else up + x
         # a book with an 'exams' list shows only on those exams' pages; the others (APPSC Mains books) on NOTES_EXAMS
+        # the start page's Study Material shows every book (Anil, 2 Nov 2026: "in study material only this 3 books are showing")
         enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])]) for b in notes
-                  if (conf['id'] in b['exams'] if b.get('exams') else conf['id'] in NOTES_EXAMS)]
+                  if is_root or (conf['id'] in b['exams'] if b.get('exams') else conf['id'] in NOTES_EXAMS)]
         emains = mains_kit(conf)
         for q in questions:
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
@@ -1283,7 +1284,7 @@ def main():
                     pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=pub_qs, instagram=INSTAGRAM,
                     exb=dict(key=exb['key'], file=exb['file']) if exb else None, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     mains=emains, mainsP5=MAINS_P5 if emains else None,
-                    notesTitle=conf.get('notes_title', ''), notesLede=conf.get('notes_lede', ''),
+                    notesTitle=ROOT_NOTES[0] if is_root else conf.get('notes_title', ''), notesLede=ROOT_NOTES[1] if is_root else conf.get('notes_lede', ''),
                     key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
                     base=prefix, qotd=qotd_pool(loaded, 120) if is_root else [],
@@ -1322,7 +1323,7 @@ def main():
                      .replace('{{HOME_PAPERS}}', home_papers).replace('{{PYQPAGE}}', conf['pb'] + 'pyqs.html').replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
-                     .replace('{{HOME_NOTES}}', '' if is_root else home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
+                     .replace('{{HUB_NOTES}}', '').replace('{{HOME_NOTES}}', home_notes([b for b in enotes if not b.get('exams') or conf['id'] in b['exams']], bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}').replace('{{NLIVE}}', str(len(loaded)))
                      .replace('{{NLIVEX}}', str(sum(1 for e in catalog['exams'] if e.get('live')))).replace('{{HERO_NEW}}', HERO_NEW)
                      .replace('{{MOCKQ}}', f'{mock_questions():,}')
@@ -3553,6 +3554,10 @@ def notif_page(loaded, rel):
                        [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + conf['pb']), (N['crumb'], can)], conf, at_root=True)
 
 
+ROOT_NOTES = ('Study material: every book on the site',   # the start page's Study Material lists every book, for every exam
+              'Exam-focused books by Jupudi Anil Kumar for APPSC Group-I and Group-II Mains and the EO Grade-III exam: Public Administration and Governance, '
+              'Ethics and Laws, the Group-II Micro-Syllabus, Crisp Notes on AP Economy, Science and Technology, and Hindu Philosophy & Temple System. '
+              'Every book has the exam\'s own previous questions inside.')
 NOTES_EXAMS = {'appsc-group-2', 'appsc-group-1'}   # Anil, 24 Oct 2026: the APPSC Mains books are shown only on the APPSC Group 1 and Group 2 pages
 
 # APPSC Group-I Mains · Answer Writing Tool Kit (Anil, 26 Oct 2026): one PDF book per Mains paper (Papers I-IV) with every
