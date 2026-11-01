@@ -40,6 +40,14 @@ bdir = os.path.join(ROOT, 'src', 'books')
 files, total = {}, 0
 for g, A in sorted(groups.items()):
     data = json.dumps(A, ensure_ascii=False, separators=(',', ':')).encode()
+    old = None   # keep an unchanged paper's existing bin, so re-sealing doesn't churn every file
+    for f in glob.glob(os.path.join(bdir, f'{PREFIX}-ans-{g}-*.bin')):
+        b = open(f, 'rb').read()
+        try:
+            if AESGCM(base64.b64decode(key)).decrypt(b[:12], b[12:], KID.encode()) == data: old = f
+        except Exception: pass
+    if old:
+        files[g] = os.path.basename(old); total += os.path.getsize(old); continue
     nonce = os.urandom(12)
     blob = nonce + AESGCM(base64.b64decode(key)).encrypt(nonce, data, KID.encode())
     files[g] = f'{PREFIX}-ans-{g}-' + hashlib.sha256(blob).hexdigest()[:10] + '.bin'
