@@ -3,7 +3,7 @@
 
     python3 tools/g1m_seal.py /home/claude/g1m/work [--partial]
 
-Reads the private answer files <year>-p<n>.json ({question id: answer}), encrypts all answers with AES-256-GCM
+Reads the private answer files <year>-p<n>.json ({question id: answer markup}), renders them to HTML (tools/g1m_render.py), encrypts all answers with AES-256-GCM
 (additional data "bk-g1m-ans", the scheme of the sealed books) into src/books/g1m-ans-<hash>.bin, and writes
 src/appsc-group-1/mains-pyqs/answers.json with the key id, the file name and the free sample answers (Q1(a) and Q1(b) of
 each paper). The key is kept in G1M_PRIV/key.json (default /home/claude/g1m/secret; never committed) and reused; the row
@@ -11,6 +11,8 @@ for the 'keys' tab of the private passes sheet (mock_id | key | file | opens) is
 """
 import base64, glob, hashlib, json, os, re, sys
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import g1m_render   # answers are sealed as ready HTML (text, key words and diagrams), Anil 1 Nov 2026
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KID = 'bk-g1m-ans'
@@ -22,7 +24,7 @@ for f in sorted(glob.glob(os.path.join(work, '20??-p?.json'))): ans.update(json.
 ids = [q['id'] for q in qs]
 missing = [i for i in ids if not ans.get(i)]
 if missing and '--partial' not in sys.argv: sys.exit(f'{len(missing)} answers missing, e.g. {missing[:5]}')
-ans = {i: ans[i] for i in ids if ans.get(i)}
+ans = {i: g1m_render.render(ans[i]) for i in ids if ans.get(i)}
 os.makedirs(priv, exist_ok=True)
 kp = os.path.join(priv, 'key.json')
 key = json.load(open(kp))['key'] if os.path.exists(kp) else base64.b64encode(os.urandom(32)).decode()

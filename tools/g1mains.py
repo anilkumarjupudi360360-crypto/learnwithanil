@@ -15,9 +15,10 @@ Pages (all under /appsc-group-1/mains-pyqs/):
     index.html                    year-wise and subject-wise lists
     <year>-paper-<n>.html         one paper of one year, Q1(a) to Q15(b)
     paper-<n>-<part slug>.html    one syllabus part of one paper, all three years, grouped by topic
-Answer markup: paragraphs split by a blank line, "- " bullet lines, **bold**.
+Answer markup (key words, points and diagrams): see tools/g1m_render.py; answers are sealed and published as ready HTML.
 """
 import html, json, os, re, shutil
+import g1m_render
 
 DIR = 'mains-pyqs'
 PAPERS = {'II': (2, 'History, Culture & Geography of India and Andhra Pradesh'),
@@ -65,7 +66,7 @@ def part_pages(qs):
 def qkey(q): return (int(re.match(r'\d+', q['qno']).group()), q['qno'])
 
 
-CSS = ('<style>.mans{margin:10px 0 0;border-top:1px dashed var(--line);padding-top:10px}.mans h3{font:700 13px/1.4 "IBM Plex Mono",ui-monospace,monospace;'
+CSS = ('<style>' + g1m_render.CSS + '.mans{margin:10px 0 0;border-top:1px dashed var(--line);padding-top:10px}.mans h3{font:700 13px/1.4 "IBM Plex Mono",ui-monospace,monospace;'
        'text-transform:uppercase;letter-spacing:.05em;color:var(--good);margin:0 0 6px}.q .mans p{font-weight:400;white-space:normal;margin:0 0 8px}'
        '.mans ul{margin:0 0 8px;padding-left:22px}.mans li{margin:2px 0}.mlock{background:var(--accent-soft);border-radius:10px;padding:10px 12px;margin:10px 0 0;font-size:15.5px}'
        '.qtopic{display:inline-block;font-size:14px;margin:0 0 6px}.yp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:10px 0 18px}'
@@ -92,17 +93,17 @@ var ck='lwa-key-'+KID,c=J(ck);
 if(!r||!r.ok)throw new Error((r&&r.error)||'');try{localStorage.setItem(ck,JSON.stringify({key:r.key}))}catch(_){}return r}))
 .then(function(r){return fetch('/books/'+FILE).then(function(x){if(!x.ok)throw new Error('');return x.arrayBuffer()}).then(function(buf){var b=new Uint8Array(buf);
 return crypto.subtle.importKey('raw',Uint8Array.from(atob(r.key),function(c){return c.charCodeAt(0)}),'AES-GCM',false,['decrypt']).then(function(k){return crypto.subtle.decrypt({name:'AES-GCM',iv:b.slice(0,12),additionalData:new TextEncoder().encode(KID)},k,b.slice(12))})})})
-.then(function(p){var A=JSON.parse(new TextDecoder().decode(p));els.forEach(function(e){var t=A[e.getAttribute('data-ans')];if(t)e.innerHTML='<h3>Model answer</h3>'+MD(t)})})
+.then(function(p){var A=JSON.parse(new TextDecoder().decode(p));els.forEach(function(e){var t=A[e.getAttribute('data-ans')];if(t)e.innerHTML='<h3>Model answer</h3>'+t})})
 .catch(function(err){try{localStorage.removeItem(ck)}catch(_){}msg((err&&err.message)||'Could not open the answers. Please check your connection and reload the page.')});})();</script>""")
 
 
 def ans_html(q, man, pb, price):
     free = man.get('free', {})
     if q['id'] in free:
-        return f'<div class="mans"><h3>Model answer · free sample</h3>{md(free[q["id"]])}</div>'
+        return f'<div class="mans"><h3>Model answer · free sample</h3>{free[q["id"]]}</div>'
     if not man.get('file'):
         return '<div class="mans"><p class="mlock">Model answer: coming soon.</p></div>'
-    return (f'<div class="mans" data-ans="{q["id"]}"><p class="mlock">🔒 Model answer (about 250 words) with the ₹{price} PYQ Pass. '
+    return (f'<div class="mans" data-ans="{q["id"]}"><p class="mlock">🔒 Model answer with key words, points and diagrams: with the ₹{price} PYQ Pass. '
             f'<a href="{pb}?buy=pyq">Get the PYQ Pass</a></p></div>')
 
 
@@ -127,7 +128,7 @@ def pages(B, conf):
     nfree = len(man.get('free', {}))
     js = unlock_js(B.PAY.get('api'), man)
     buy = (f'<div class="buy"><div><b>Model answers for all {len(qs)} questions</b><p>Every Group-1 Mains question of 2020, 2023 and 2025 (Papers II, III and IV) '
-           f'with a model answer written the way a top APPSC candidate would: introduction, every part of the question, the Andhra Pradesh angle and a conclusion. '
+           f'with a model answer written the way a top APPSC candidate would: key words and an introduction, every part of the question in numbered points, diagrams, flowcharts, tables or maps, the Andhra Pradesh angle and a conclusion. '
            f'Included in the ₹{price} PYQ Pass, with every previous paper, mock test series and study book on the site.</p>'
            f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{pb}?buy=pyq">Get it for ₹{price}</a></div>')
     howto = (f'<p class="note">The questions are free to read. The model answers open on this page for students with the ₹{price} PYQ Pass '
