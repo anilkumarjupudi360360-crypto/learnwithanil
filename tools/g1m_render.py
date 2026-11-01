@@ -150,6 +150,8 @@ def d_map(kind, title, rows):
     shade = set()
     for r in rows:
         if r.startswith('shade:'): shade |= {x.strip().lower() for x in r[6:].split(',')}
+    ext = [0.0, float(W)]   # horizontal extent incl. labels, so long labels are never clipped
+    def grow(x0, x1): ext[0] = min(ext[0], x0 - 4); ext[1] = max(ext[1], x1 + 4)
     parts = ['<defs><marker id="am" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--bad,#B42318)"/></marker></defs>']
     for name, rings in g.items():
         fill = 'var(--accent)' if name.lower() in shade else 'var(--accent-soft)'
@@ -166,6 +168,7 @@ def d_map(kind, title, rows):
             parts.append(f'<polyline points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in xy)}" fill="none" stroke="var(--bad,#B42318)" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#am)"/>')
             x, y = xy[0]
             right = x > W - 130   # near the right edge: put the label to the left of the track's start
+            tw = len(nm.strip()) * 7.4; grow(x - 6 - tw, x) if right else grow(x, x + 6 + tw)
             parts.append(f'<text x="{x + (-6 if right else 6):.1f}" y="{y - 6:.1f}" font-size="12.5" font-weight="700" text-anchor="{"end" if right else "start"}" fill="var(--bad,#B42318)">{esc(nm.strip())}</text>')
         elif r.startswith('zone:'):
             nm, a, b = [x.strip() for x in r[5:].split('|')]
@@ -175,11 +178,13 @@ def d_map(kind, title, rows):
             bits = [x.strip() for x in r[6:].split('|')]
             nm, a, b = bits[:3]; left = len(bits) > 3 and bits[3] == 'left'
             x, y = P(float(b), float(a))
+            tw = len(nm) * 7.6; grow(x - 8 - tw, x) if left else grow(x, x + 8 + tw)
             parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4.5" fill="var(--ink)" stroke="var(--surface)" stroke-width="1.5"/>'
                          f'<text x="{x + (-8 if left else 8):.1f}" y="{y:.1f}" font-size="13" text-anchor="{"end" if left else "start"}" dominant-baseline="middle" fill="var(--ink)" font-weight="600" paint-order="stroke" stroke="var(--surface)" stroke-width="3">{esc(nm)}</text>')
     legend = ''.join(f'<span>{inline(r[7:].strip())}</span>' for r in rows if r.startswith('legend:'))
     note = (f'<p class="dg-legend">{legend}</p>' if legend else '') + '<p class="dg-note">Schematic map of Andhra Pradesh (2011 census district outlines), not to scale; for study only.</p>'
-    return fig(title, f'<svg viewBox="0 0 {W} {H:.0f}" role="img" aria-label="{esc(title)}">{"".join(parts)}</svg>' + note, 'dg-svg dg-map')
+    vb = f'{ext[0]:.0f} 0 {ext[1] - ext[0]:.0f} {H:.0f}'
+    return fig(title, f'<svg viewBox="{vb}" role="img" aria-label="{esc(title)}">{"".join(parts)}</svg>' + note, 'dg-svg dg-map')
 
 
 def render(t):
