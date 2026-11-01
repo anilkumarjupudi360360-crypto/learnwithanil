@@ -2111,6 +2111,17 @@ def llms_txt(loaded, grand):
             for p in upscmains.PAPERS:
                 if any(q['year'] == y and q['paper'] == p for q in uq):
                     L.append(f'  - [UPSC Mains {y} GS Paper {upscmains.n_of(p)} ({upscmains.PAPERS[p][2]}) questions with model answers]({ub}{y}-gs{upscmains.n_of(p)}.html)')
+    try: aq, _ = upscmains.load(SRC, 'an')   # UPSC Anthropology optional Papers I-II (same module, course 'an')
+    except Exception: aq = []
+    if aq:
+        ab = f'{SITE_URL}/{upscmains.EXAM}/anthropology-pyqs/'
+        L.append(f'- [UPSC Anthropology optional previous year questions with model answers, Papers I and II]({ab}): {len(aq):,} question parts of '
+                 f'{min(q["year"] for q in aq)}–{max(q["year"] for q in aq)}, year-wise and syllabus-wise, each with a model answer on its own page '
+                 f'(key words, anthropologists and ethnographic examples, diagrams); questions free, Q1(a) and Q1(b) of every paper answered free, the rest with the PYQ Pass.')
+        for y in sorted({q['year'] for q in aq}, reverse=True):
+            for p in upscmains.AN_PAPERS:
+                if any(q['year'] == y and q['paper'] == p for q in aq):
+                    L.append(f'  - [UPSC Anthropology {y} Paper {upscmains.n_of(p)} ({upscmains.AN_PAPERS[p][2]}) questions with model answers]({ab}{y}-paper-{upscmains.n_of(p)}.html)')
     npath_ = os.path.join(SRC, 'notes.json')
     books = json.load(open(npath_, encoding='utf-8')) if os.path.exists(npath_) else []
     ids = {c['id']: c for c in exams}

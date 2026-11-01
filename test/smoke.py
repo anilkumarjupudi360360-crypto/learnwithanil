@@ -581,5 +581,23 @@ async def main():
                 for h in re.findall(r'href="([^"#?]+\.html)"', open(os.path.join(ud, f), encoding='utf-8').read()):
                     if '/' not in h and not os.path.isfile(os.path.join(ud, h)): errors.append(f'upsc-cse/mains-pyqs/{f}: broken link {h}')
             print(f'upsc mains: {len(yp)} paper pages, {nq} question cards, {len(ap_)} answer pages')
+        # UPSC Anthropology optional Papers I-II (tools/upscmains.py course 'an'): 2 papers a year, an answer page per part,
+        # Q1(a) and Q1(b) of every paper free, the rest sealed in books/upa-ans-<year>-an<n>-*.bin
+        ad = os.path.join(SITE, 'upsc-cse', 'anthropology-pyqs')
+        if os.path.isdir(ad):
+            yp = [f for f in os.listdir(ad) if re.fullmatch(r'20\d\d-paper-[12]\.html', f)]
+            ap_ = [f for f in os.listdir(ad) if re.fullmatch(r'20\d\d-paper-[12]-q\d[a-e]\.html', f)]
+            nq = sum(open(os.path.join(ad, f), encoding='utf-8').read().count('<li id="upa-') for f in yp)
+            if len(yp) % 2 or nq != len(ap_) or not nq: errors.append(f'anthropology: {len(yp)} paper pages, {nq} cards, {len(ap_)} answer pages')
+            nfree = nlock = 0
+            for f in ap_:
+                h = open(os.path.join(ad, f), encoding='utf-8').read()
+                fr = 'Model answer · free sample' in h; lk = re.search(r'FILE="(upa-ans-20\d\d-an[12]-[0-9a-f]{10}\.bin)"', h)
+                nfree += bool(fr); nlock += bool(lk)
+                if lk and not os.path.isfile(os.path.join(SITE, 'books', lk.group(1))): errors.append(f'anthropology/{f}: sealed file {lk.group(1)} missing from /books/')
+            for f in os.listdir(ad):
+                for h in re.findall(r'href="([^"#?]+\.html)"', open(os.path.join(ad, f), encoding='utf-8').read()):
+                    if '/' not in h and not os.path.isfile(os.path.join(ad, h)): errors.append(f'upsc-cse/anthropology-pyqs/{f}: broken link {h}')
+            print(f'upsc anthropology: {len(yp)} paper pages, {nq} question cards, {len(ap_)} answer pages ({nfree} free, {nlock} sealed)')
         print('ERRORS:', errors if errors else 'none')
 asyncio.run(main())
