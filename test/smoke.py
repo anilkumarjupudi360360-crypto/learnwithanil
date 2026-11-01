@@ -569,5 +569,17 @@ async def main():
             for b in set(re.findall(r'g1m-ans-20\d\d-p\d-[0-9a-f]{10}\.bin', ''.join(open(os.path.join(md_, f), encoding='utf-8').read() for f in apg))):
                 if not os.path.isfile(os.path.join(SITE, 'books', b)): errors.append(f'mains-pyqs: sealed file {b} missing from /books/')
             print(f'mains pyqs: {len(yp)} year pages, {nq} question cards, {len(apg)} answer pages ({nfree} free), {len(os.listdir(md_)) - len(yp) - len(apg) - 1} part pages')
+        # UPSC CSE Mains GS (tools/upscmains.py): hub, 4 papers a year, one answer page per question, links resolve
+        ud = os.path.join(SITE, 'upsc-cse', 'mains-pyqs')
+        if os.path.isdir(ud):
+            if not os.path.isfile(os.path.join(SITE, 'upsc-cse', 'index.html')): errors.append('upsc-cse: no hub page')
+            yp = [f for f in os.listdir(ud) if re.fullmatch(r'20\d\d-gs[1-4]\.html', f)]
+            ap_ = [f for f in os.listdir(ud) if re.fullmatch(r'20\d\d-gs[1-4]-q\d+[a-e]?\.html', f)]
+            nq = sum(open(os.path.join(ud, f), encoding='utf-8').read().count('<li id="upm-') for f in yp)
+            if len(yp) % 4 or nq != len(ap_) or not nq: errors.append(f'upsc mains: {len(yp)} paper pages, {nq} cards, {len(ap_)} answer pages')
+            for f in os.listdir(ud):
+                for h in re.findall(r'href="([^"#?]+\.html)"', open(os.path.join(ud, f), encoding='utf-8').read()):
+                    if '/' not in h and not os.path.isfile(os.path.join(ud, h)): errors.append(f'upsc-cse/mains-pyqs/{f}: broken link {h}')
+            print(f'upsc mains: {len(yp)} paper pages, {nq} question cards, {len(ap_)} answer pages')
         print('ERRORS:', errors if errors else 'none')
 asyncio.run(main())
