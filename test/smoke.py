@@ -550,8 +550,8 @@ async def main():
             for f in yp:   # essay pages carry no answers; Paper V pages carry answers
                 h = open(os.path.join(md_, f), encoding='utf-8').read()
                 if f.endswith('-paper-1.html') and ('data-ans="' in h or 'class="mans' in h): errors.append(f'mains-pyqs/{f}: essay page shows answers')
-                if f.endswith('-paper-5.html') and (h.count('data-ans="') != 28 or h.count('free sample') != 2):
-                    errors.append(f'mains-pyqs/{f}: {h.count(chr(100) + "ata-ans=" + chr(34))} locked and {h.count("free sample")} free answers (expected 28 and 2)')
+                if f.endswith('-paper-5.html') and (h.count('data-ans="') != 28 or h.count('Model answer · free sample') != 2):
+                    errors.append(f'mains-pyqs/{f}: {h.count(chr(100) + "ata-ans=" + chr(34))} locked and {h.count("Model answer · free sample")} free answers (expected 28 and 2)')
             for f in os.listdir(md_):
                 for h in re.findall(r'href="([^"#?]+\.html)"', open(os.path.join(md_, f), encoding='utf-8').read()):
                     if '/' not in h and not os.path.isfile(os.path.join(md_, h)): errors.append(f'mains-pyqs/{f}: broken link {h}')
