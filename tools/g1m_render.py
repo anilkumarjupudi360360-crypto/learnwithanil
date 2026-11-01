@@ -33,7 +33,8 @@ def geo():
 
 
 def inline(s):
-    return re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', esc(s))
+    s = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', esc(s))
+    return re.sub(r'(?<![*\w])\*(?![*\s])([^*\n]+?)(?<![*\s])\*(?![*\w])', r'<i>\1</i>', s)   # *Case v. State*, *species*, book titles
 
 
 def wrap(s, n):
