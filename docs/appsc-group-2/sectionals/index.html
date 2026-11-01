@@ -471,6 +471,8 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;z-index:50;box-shadow:var(--shadow);max-width:calc(100% - 32px)}
 
 /* Study material (Crisp Notes) */
+.nav a.nav-fund{color:#9A3412;background:#FFF1E6;margin-left:4px}.nav a.nav-fund:hover{background:#FFE2CC;color:#7C2D12}.nav a.nav-fund svg{flex:none}@media (min-width:1361px){.nav a.nav-fund .nf-x{display:none}}   /* one-row top bar: "Fund" fits, the long label does not */
+@media (prefers-color-scheme:dark){.nav a.nav-fund{color:#FDBA8C;background:#3A2414}.nav a.nav-fund:hover{background:#4A2E19;color:#FFD3B0}}
 .nav a .new{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.06em;background:#F2B705;color:#0C2266;border-radius:4px;padding:0 5px;line-height:16px}
 .notes-promo{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:22px 24px;text-decoration:none;color:var(--ink);transition:border-color .15s}
 .notes-promo:hover{border-color:var(--accent)}
@@ -573,7 +575,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .bd-badge{position:absolute;left:12px;top:10px;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;background:rgba(255,255,255,.95);color:#065f46;border-radius:999px;padding:3px 10px}
 .bd-badge i{width:7px;height:7px;border-radius:50%;background:#16a34a}
 .bd-badge.bd-soon{color:#475569}
-.b-upsc,.x-upsc{--g1:#1e3a8a;--g2:#3b82f6}.b-ap,.x-ap{--g1:#0f766e;--g2:#2dd4bf}.b-tg,.x-tg{--g1:#5b21b6;--g2:#a78bfa}.b-ssc,.x-ssc{--g1:#c2410c;--g2:#fb923c}.b-rail,.x-rail{--g1:#7f1d1d;--g2:#dc2626}.b-bank,.x-bank{--g1:#065f46;--g2:#34d399}
+.b-upsc,.x-upsc{--g1:#1e3a8a;--g2:#3b82f6}.b-ap,.x-ap{--g1:#0f766e;--g2:#2dd4bf}.b-tg,.x-tg{--g1:#5b21b6;--g2:#a78bfa}.b-ssc,.x-ssc{--g1:#c2410c;--g2:#fb923c}.b-rail,.x-rail{--g1:#7f1d1d;--g2:#dc2626}.b-bank,.x-bank{--g1:#065f46;--g2:#34d399}.b-tn,.x-tn{--g1:#9a3412;--g2:#f97316}.b-ka,.x-ka{--g1:#854d0e;--g2:#eab308}.b-kl,.x-kl{--g1:#166534;--g2:#4ade80}.b-mh,.x-mh{--g1:#9f1239;--g2:#fb7185}.b-up,.x-up{--g1:#3730a3;--g2:#818cf8}.b-br,.x-br{--g1:#0e7490;--g2:#22d3ee}
 .card.exam{position:relative;overflow:hidden;padding:0;gap:0}
 .ex-art{position:relative;display:flex;align-items:center;justify-content:center;height:74px;color:#fff;background:linear-gradient(135deg,var(--g1,#334155),var(--g2,#64748b))}
 .ex-art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 15%,rgba(255,255,255,.18) 0 16%,transparent 17%),radial-gradient(circle at 95% 115%,rgba(255,255,255,.14) 0 32%,transparent 33%)}
@@ -701,6 +703,7 @@ details.upc .exams{margin-top:8px}
       <a href="/appsc-group-2/bookmarks/" data-v="bookmarks" data-g2>Bookmarks</a>
       <a href="/appsc-group-2/heatmap/" data-v="heatmap" data-g2>Heatmap</a>
       <a href="/appsc-group-2/about/" data-v="about">About</a>
+      <a class="nav-fund" href="/funders.html" title="Fund this project" data-hubonly><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 5 6.4 5c2 0 3.4 1.1 4.1 2.3h3C14.2 6.1 15.6 5 17.6 5 21 5 23.1 8.5 21.6 11.8 19.5 16.4 12 21 12 21Z"/></svg><span>Fund<span class="nf-x"> this project</span></span></a>
     </nav>
     <div class="lang" role="group" aria-label="Question language">
       <button type="button" data-act="lang" data-l="en" aria-pressed="true">EN</button>
@@ -739,19 +742,7 @@ details.upc .exams{margin-top:8px}
   </section>
 
 
-  <section class="wrap section"><a class="card notes-promo bb-promo" href="/appsc-group-2/bahubali-test-series/">
-      <div class="np-copy"><p class="eyebrow">New · APPSC Group-II Mains 2026</p><h2>Bahubali Test Series</h2>
-      <p>24 full-length mock tests for Paper I and Paper II (12 each): 150 questions per test, English and Telugu, ⅓ negative marking, explanations from official sources and PDFs. Included in the ₹45 PYQ Pass.</p>
-      <span class="btn btn-primary">See the tests</span></div>
-      <div class="bb-mark" aria-hidden="true"><b>150</b><span>Qs · 150 min</span></div>
-    </a>
-    <a class="card notes-promo" href="/appsc-group-2/notes/">
-      <div class="np-copy"><p class="eyebrow">New · Study material</p><h2>Study material 2026-27</h2>
-      <p>The new Group-II Micro-Syllabus (Notification 37/2026), Crisp Notes on AP Economy and a full Science &amp; Technology book, built on APPSC&#x27;s own previous questions. Included in the ₹45 PYQ Pass.</p>
-      <span class="btn btn-primary">See the books</span></div>
-      <div class="np-covers" aria-hidden="true"><img src="notes-g2micro-en-cover.jpg" alt="" width="140" height="198" loading="lazy"><img src="notes-apeco-en-cover.jpg" alt="" width="140" height="198" loading="lazy"><img src="notes-apeco-te-cover.jpg" alt="" width="140" height="198" loading="lazy"><img src="notes-stfull-en-cover.jpg" alt="" width="140" height="198" loading="lazy"></div>
-    </a>
-  </section>
+  
 
   <section class="wrap section" id="recent" hidden></section>
 
@@ -773,7 +764,7 @@ details.upc .exams{margin-top:8px}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/appsc-g2-71eb756d7f.js"></script>
+<script src="data/appsc-g2-5a66118be9.js"></script>
 <script>
 (function(){
 "use strict";

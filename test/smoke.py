@@ -72,7 +72,8 @@ async def main():
             built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager', 'appsc-amvi', 'tgpsc-amvi', 'appsc-endowment-officer', 'appsc-analyst-grade-2', 'appsc-forest-range-officer', 'ap-police-si', 'ap-police-constable', 'upsc-cse', 'upsc-prelims') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
             assert live == built, f'{built} exams are built but {live} tiles are live'
             await pg.fill('#examSearch', 'group 2'); await pg.wait_for_timeout(100)
-            assert await pg.locator('#hub-static .exam:not([hidden])').count() == 2, 'search "group 2" should find APPSC and TGPSC Group-II'
+            found = await pg.eval_on_selector_all('#hub-static .exam:not([hidden])', 'els => els.map(e => e.dataset.id)')   # APPSC and TGPSC Group-II (+ TNPSC Group 2, listed 2 Nov 2026)
+            assert 'appsc-group-2' in found and len(found) == 3, f'search "group 2" should find APPSC, TGPSC and TNPSC Group 2, found {found}'
             await pg.fill('#examSearch', '')
             await pg.screenshot(path=f'{SHOTS}/hub-{name}.png', full_page=False)
             sw = await pg.evaluate('document.documentElement.scrollWidth');
