@@ -823,6 +823,75 @@ def ts_text():
                 pc_list=ands([f"{p['short']} (held {p['held']}, booklet {p['notif'].split('booklet ')[1].split(' ')[0]})" for p in pcs]).replace(' & ', ' and '))
 
 
+
+# APPSC Analyst Grade-II, A.P. Pollution Control Board (Anil, 1 Nov 2026: Notification 21/2026, 18 posts, apply 13 Oct to 2 Nov 2026).
+# Previous papers: Notification 02/2024, computer-based test, March 2025; APPSC's final keys (APOnline master question papers,
+# correct option ticked). Paper II was one paper per degree subject in 2025 (Chemistry, Biochemistry, Biology, Environmental
+# Science); from 2026 it is one Common Paper covering all four, so all four 2025 papers are practice for it. English only.
+ANALYST_P2_SUBJECTS = [
+  ('chm', 'Chemistry', 'chemistry', ['Inorganic Chemistry', 'Photochemistry & Spectroscopy', 'Chromatography & Analytical Methods', 'Organic & Natural Products', 'Amino Acids & Proteins', 'Green Chemistry', 'Physical & General Chemistry']),
+  ('bch', 'Biochemistry', 'biochemistry', ['Enzymes & Coenzymes', 'Immunology', 'Blood & Body Systems', 'Endocrinology', 'Nutrition & Vitamins', 'Clinical Biochemistry', 'Biomolecules & Metabolism']),
+  ('bio', 'Biology', 'biology', ['Bacteria & Viruses', 'Cell Biology', 'Genetics & Evolution', 'Molecular Biology', 'Plant & Animal Biology']),
+  ('evs', 'Environmental Science', 'environmental-science', ['Ecology & Ecosystems', 'Natural Resources', 'Pollution & Waste Management', 'Climate Change & Global Issues', 'Environmental Assessment & Planning', 'Environmental Laws & Policy']),
+]
+ANALYST_SUBJECTS = ANALYST_P2_SUBJECTS
+ANALYST_SUBJ_TE = dict(AMVI_AP_SUBJ_TE, chm='రసాయన శాస్త్రం', bch='జీవ రసాయన శాస్త్రం', bio='జీవ శాస్త్రం', evs='పర్యావరణ శాస్త్రం')
+ANALYST_TE_P2 = 'పేపర్-2 కామన్ పేపర్'
+def _an_paper(pid, subj, slugsub, blurbsub):
+    return dict(id=pid, file=f'appsc-analyst-2025-paper2-{slugsub}.txt', year=2025, stage=f'Written Examination Paper II ({subj})', short=f'Analyst 2025 Paper 2 ({subj})',
+                kwname=f'APPSC Analyst Grade 2 2025 Paper 2 {subj}',
+                title=f'APPSC Analyst Grade-II 2025: Paper II {subj} (A.P. Pollution Control Board)', notif='Notification 02/2024 · CBT', held='March 2025',
+                key="APPSC's final key", fmt='mcq', slug=f'appsc-analyst-grade-2-2025-paper-2-{slugsub}-question-paper-with-answers',
+                alt=subj, te_paper=ANALYST_TE_P2, en_only=True,
+                blurb=f'Paper II {subj}: {blurbsub} Computer-based test, 150 questions, 300 marks, 150 minutes, in English. In 2025 each candidate wrote the Paper II of their degree subject; from 2026 Paper II is one Common Paper covering Chemistry, Biochemistry, Biology and Environmental Science.')
+ANALYST_PAPERS = [
+  _an_paper('n2025c', 'Chemistry', 'chemistry', 'non-transition elements, boranes, photochemistry, spectroscopy and Beer–Lambert law, chromatography, terpenoids, amino acids, green chemistry and heterocyclic compounds.'),
+  _an_paper('n2025b', 'Biochemistry', 'biochemistry', 'enzymes and coenzymes, immunology, blood and lymph, nervous and excretory systems, hormones, nutrition and vitamins, and clinical biochemistry.'),
+  _an_paper('n2025g', 'Biology', 'biology', 'bacteria and viruses, cell biology, mitosis and meiosis, Mendelian genetics, mutations, evolution and molecular biology.'),
+  _an_paper('n2025e', 'Environmental Science', 'environmental-science', 'ecology and ecosystems, natural resources, air, water and soil pollution, waste management, global warming, environmental assessment and eco-planning.'),
+]
+
+# APPSC Forest Range Officer, A.P. Forest Service (Anil, 1 Nov 2026: Notification 16/2026, 5 posts, apply 16 Oct to 5 Nov 2026).
+# Main examination: qualifying English & Telugu, Paper I GS & MA, Paper II Mathematics, Paper III General Forestry I,
+# Paper IV General Forestry II. First the General Forestry papers of the 2023 (Notification 21/2022) and 2020 (Notification
+# 10/2018) Mains, from APPSC's final keys on the APOnline master question papers. English only.
+FRO_FORESTRY_SUBJECTS = [
+  ('nrs', 'Natural Resources', 'natural-resources', ['Forest & Water Resources', 'Mineral, Food & Energy Resources', 'Land Resources & Soil Erosion']),
+  ('pls', 'Plant Sciences', 'plant-sciences', ['Classification & Morphology', 'Plant Anatomy & Wood', 'Reproduction & Propagation', 'Plant Physiology', 'Genetics & Plant Diseases']),
+  ('bdc', 'Biodiversity & Conservation', 'biodiversity-conservation', ['Biodiversity & Hotspots', 'Biomes & Population Ecology']),
+  ('ssg', 'Soil Science & Geology', 'soil-science-geology', ['Rocks & Minerals', 'Soil Properties & Formation', 'Soil Conservation & Reclamation', 'Soil Organic Matter & Nutrient Cycles']),
+  ('wsm', 'Water & Watershed Management', 'watershed-management', ['Water Resources', 'Watershed & Water Harvesting']),
+  ('slv', 'Silviculture & Agroforestry', 'silviculture-agroforestry', ['Silvicultural Principles & Regeneration', 'Nursery & Planting', 'Silviculture of Species', 'Agroforestry', 'Social & Community Forestry']),
+  ('ecw', 'Ecosystems & Wildlife', 'ecosystems-wildlife', ['Ecosystem Concepts', 'Types of Ecosystems', 'Wildlife & Protected Areas']),
+  ('fpt', 'Forest Protection', 'forest-protection', ['Pests & Diseases', 'Forest Fire', 'Grazing & Human Impacts']),
+  ('fut', 'Forest Utilization & NTFP', 'forest-utilization-ntfp', ['Logging & Wood Technology', 'Wood Properties', 'NTFPs & Medicinal Plants']),
+  ('anm', 'Animal Management & Economic Zoology', 'animal-management-zoology', ['Animal Health & Nutrition', 'Snakes & Venomous Animals', 'Birds', 'Economic Zoology']),
+  ('fel', 'Forest Economics, Policy & Law', 'forest-economics-policy-law', ['Forest Economics', 'Forest Policy', 'Forest & Environment Laws', 'Forest Administration']),
+  ('fim', 'Forest Inventory, Mensuration & Remote Sensing', 'forest-mensuration-remote-sensing', ['Sampling & Inventory', 'Tree & Stand Measurement', 'Remote Sensing & GIS']),
+  ('ens', 'Environmental Science', 'environmental-science', ['Pollution', 'Waste Management', 'Climate & Global Issues', 'Environmental Laws & Ethics']),
+  ('fse', 'Forest Survey, Engineering & First Aid', 'forest-survey-first-aid', ['Survey & Engineering', 'First Aid']),
+]
+FRO_SUBJECTS = FRO_FORESTRY_SUBJECTS
+FRO_SUBJ_TE = dict(AMVI_AP_SUBJ_TE, nrs='సహజ వనరులు', pls='వృక్ష శాస్త్రం', bdc='జీవవైవిధ్యం, సంరక్షణ', ssg='మృత్తిక శాస్త్రం, భూగర్భ శాస్త్రం', wsm='నీటి వనరులు, వాటర్‌షెడ్ నిర్వహణ',
+                   slv='సిల్వికల్చర్, వ్యవసాయ అటవీకరణ', ecw='పర్యావరణ వ్యవస్థలు, వన్యప్రాణులు', fpt='అటవీ సంరక్షణ', fut='అటవీ ఉత్పత్తుల వినియోగం', anm='జంతు నిర్వహణ, ఆర్థిక జంతుశాస్త్రం',
+                   fel='అటవీ ఆర్థిక శాస్త్రం, విధానం, చట్టాలు', fim='అటవీ ఇన్వెంటరీ, కొలతలు, రిమోట్ సెన్సింగ్', ens='పర్యావరణ శాస్త్రం', fse='సర్వే, ఇంజనీరింగ్, ప్రథమ చికిత్స')
+def _fro_paper(pid, year, notif, held, n, roman):
+    nm = f'General Forestry {"I" * n}'
+    return dict(id=pid, file=f'appsc-fro-{year}-mains-general-forestry-{n}.txt', year=year, stage=f'Main Examination {roman} ({nm})', short=f'FRO Mains {year} {nm}',
+                kwname=f'APPSC FRO Mains {year} General Forestry {n}',
+                title=f'APPSC Forest Range Officer Mains {year}: {roman} {nm}', notif=f'{notif} · CBT', held=held,
+                key="APPSC's final key", fmt='mcq', slug=f'appsc-fro-mains-{year}-general-forestry-{n}-question-paper-with-answers',
+                alt=nm, te_paper=f'జనరల్ ఫారెస్ట్రీ-{n}', en_only=True,
+                blurb=(f'{roman}: {nm} ' + ('(natural resources, plant sciences, biodiversity, soil science and geology, watershed management, silviculture of AP species and agroforestry)'
+                                           if n == 1 else '(ecosystems and wildlife, forest protection and fire, forest utilization and NTFPs, animal management, forest economics, policy and laws, inventory, mensuration and remote sensing, environmental science, survey and first aid)')
+                       + ', computer-based test, 150 questions, 150 marks, 150 minutes, in English.'))
+FRO_PAPERS = [
+  _fro_paper('f2023c', 2023, 'Notification 21/2022', '26 September 2023', 1, 'Paper III'),
+  _fro_paper('f2023d', 2023, 'Notification 21/2022', '27 September 2023', 2, 'Paper IV'),
+  _fro_paper('f2020c', 2020, 'Notification 10/2018', '18 March 2020', 1, 'Paper III'),
+  _fro_paper('f2020d', 2020, 'Notification 10/2018', '19 March 2020', 2, 'Paper IV'),
+]
+
 def exam_confs():
     T = ts_text()
     E = epfo_text()
@@ -1038,6 +1107,32 @@ def exam_confs():
            notes_lede='Exam notes by Jupudi Anil Kumar for Paper II of the APPSC Executive Officer Grade-III exam: every syllabus topic from Ramayanam to the Endowments Act, written from what APPSC actually asks, with key-fact tables, quick-revision boxes and APPSC\'s own previous questions with the official answers.',
            notes_line='Hindu Philosophy & Temple System notes for EO Grade-III Paper II, built on APPSC\'s own previous questions.',
            papers_note="Answers come from APPSC's final keys: the boxed answers of the 2026 Series A booklets (Notification 10/2025, held 11 February 2026), the final key on the master question papers of the 2023 Mains computer-based test (Notification 24/2021) and the 2022 Screening Test final key. Questions APPSC deleted or ignored for all candidates are left out. The 2022 key prints only the correct answer, so that paper is quick-recall questions. Every paper is in English and Telugu as printed."),
+      dict(id='appsc-analyst', dir='appsc-analyst-grade-2', src='appsc-analyst', key='ap-analyst', name='APPSC Analyst Grade-II (A.P. Pollution Control Board)',
+           short='APPSC Analyst Grade-II', seo='APPSC Analyst Grade 2', slugp='appsc-analyst-grade-2', papers=ANALYST_PAPERS, subjects=ANALYST_SUBJECTS, faq=FAQ_ANALYST,
+           board='APPSC', l2=L2_TE, pb='/appsc-analyst-grade-2/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
+           te_name='ఏపీపీఎస్సీ అనలిస్ట్ గ్రేడ్-II (ఏపీ కాలుష్య నియంత్రణ మండలి)', te_paper='రాత పరీక్ష', subj_te=ANALYST_SUBJ_TE,
+           title='APPSC Analyst Grade 2 Previous Question Papers with Answers – AP Pollution Control Board, Chemistry, Biochemistry, Biology & Environmental Science | Learn with Anil',
+           h1='APPSC Analyst Grade-II previous question papers <em>with answers.</em>',
+           l2line='ఏపీపీఎస్సీ అనలిస్ట్ గ్రేడ్-II (ఏపీ కాలుష్య నియంత్రణ మండలి) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — పేపర్-2 కెమిస్ట్రీ, బయోకెమిస్ట్రీ, బయాలజీ, ఎన్విరాన్‌మెంటల్ సైన్స్ (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.',
+           aka='Analyst Grade-II in the A.P. Pollution Control Board (APPCB), recruited by the Andhra Pradesh Public Service Commission.',
+           aka_short='APPSC Analyst Grade-II (AP Pollution Control Board)',
+           desc=lambda t: (f"APPSC Analyst Grade-II (A.P. Pollution Control Board) previous question papers: the 2025 Paper II Chemistry, Biochemistry, Biology and Environmental Science papers "
+                           f"with answers from APPSC's final keys, {t:,} questions with explanations. Practice quizzes and timed mock tests for the 2026 Common Paper with the ₹45 PYQ Pass."),
+           eyebrow='APPSC · Analyst Grade-II · A.P. Pollution Control Board · 2025',
+           papers_note="Answers come from APPSC's final keys on the master question papers of the March 2025 computer-based test (Notification 02/2024): the option marked correct there is the answer. Questions APPSC ignored for all candidates are left out; where APPSC accepted two options, both are shown as correct. In 2025 Paper II was set separately for each degree subject; from 2026 it is one Common Paper with all four subjects, so practise all four. The papers are in English only."),
+      dict(id='appsc-fro', dir='appsc-forest-range-officer', src='appsc-fro', key='ap-fro', name='APPSC Forest Range Officer (FRO)',
+           short='APPSC FRO', seo='APPSC FRO', slugp='appsc-fro', papers=FRO_PAPERS, subjects=FRO_SUBJECTS, faq=FAQ_FRO,
+           board='APPSC', l2=L2_TE, pb='/appsc-forest-range-officer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
+           te_name='ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO)', te_paper='రాత పరీక్ష', subj_te=FRO_SUBJ_TE,
+           title='APPSC FRO Previous Question Papers with Answers – Forest Range Officer General Forestry I & II, 2020 & 2023 Mains | Learn with Anil',
+           h1='APPSC Forest Range Officer (FRO) previous question papers <em>with answers.</em>',
+           l2line='ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO) మెయిన్స్ పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ ఫారెస్ట్రీ-1, జనరల్ ఫారెస్ట్రీ-2 (2020, 2023, ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.',
+           aka='Forest Range Officer (FRO) in the A.P. Forest Service, Andhra Pradesh Forest Department, recruited by the Andhra Pradesh Public Service Commission.',
+           aka_short='APPSC Forest Range Officer (AP Forest Department)',
+           desc=lambda t: (f"APPSC Forest Range Officer (FRO) previous question papers: General Forestry I and General Forestry II of the 2023 and 2020 Mains with answers from APPSC's final keys, "
+                           f"{t:,} questions with explanations. Practice quizzes and timed mock tests with the ₹45 PYQ Pass."),
+           eyebrow='APPSC · Forest Range Officer · A.P. Forest Service · 2020 &amp; 2023 Mains',
+           papers_note="Answers come from APPSC's final keys on the master question papers of the computer-based Main Examinations of September 2023 (Notification 21/2022) and March 2020 (Notification 10/2018): the option marked correct there is the answer. Questions APPSC ignored for all candidates are left out; where APPSC accepted two options, both are shown as correct. The General Forestry papers are in English only. APPSC has published only the initial key of the 2025 Mains (Notification 11/2024), so that paper is not here yet."),
     ]
 
 
@@ -1178,7 +1273,7 @@ def main():
                      .replace('{{NOTES_FOOT}}', '<a href="#notes">Study material</a> · ' if enotes else ''))
         root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: APPSC Group 1 & 2, UPSC Mains, TS Police SI & Constable, SSC CGL'
         root_desc = (f'Learn with Anil (learnwithanil.in): previous year question papers (PYQs) with answers for APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
-                     f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO), SSC CGL, TGPSC HMWSSB Manager, APPSC & TGPSC AMVI (Assistant Motor Vehicle Inspector) and APPSC Endowment Officer (EO Grade-III). {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
+                     f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO), SSC CGL, TGPSC HMWSSB Manager, APPSC & TGPSC AMVI (Assistant Motor Vehicle Inspector), APPSC Endowment Officer (EO Grade-III), APPSC Analyst Grade-II and APPSC Forest Range Officer (FRO). {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
                      f'UPSC Civil Services Mains GS 1–4 (2019–2026) and APPSC Group 1 Mains questions with model answers. One ₹45 PYQ Pass for every exam.')
         home_title = conf['title']
         ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
@@ -1490,6 +1585,8 @@ def exam_terms(e, cat):
     if e['cat'] == 'tg': words += ['tspsc', 'tgpsc', 'telangana']
     if 'police' in e['id']: words += ['ts police', 'tg police', 'tslprb', 'tgprb', 'si', 'constable']
     if 'amvi' in e['id']: words += ['amvi', 'motor vehicle inspector', 'mvi', 'rto', 'transport department', 'automobile engineering', 'automobile']
+    if e['id'] == 'appsc-analyst': words += ['analyst', 'analyst grade 2', 'analyst grade ii', 'pollution control board', 'appcb', 'chemistry', 'biochemistry', 'biology', 'environmental science']
+    if e['id'] == 'appsc-fro': words += ['fro', 'forest range officer', 'forest', 'forestry', 'general forestry', 'range officer', 'forest department']
     if e['id'] == 'appsc-eo': words += ['endowments', 'endowment officer', 'eo grade 3', 'eo grade iii', 'executive officer', 'temple', 'devadaya', 'dharmadaya', 'hindu philosophy']
     if 'hmwssb' in e['id']: words += ['hmwssb', 'water board', 'jalamandali', 'metro water', 'manager engineering', 'civil engineering', 'hmws']
     if 'civil-judge' in e['id']: words += ['civil judge', 'junior civil judge', 'jcj', 'judiciary', 'high court', 'llb', 'law']
@@ -1781,6 +1878,51 @@ def FAQ_AMVI(state):
     return faq
 
 
+def FAQ_ANALYST(total, npapers):
+    return [
+      ('Where can I get APPSC Analyst Grade-II previous question papers with answers?',
+       f'This page has {total:,} questions from {npapers} APPSC Analyst Grade-II (A.P. Pollution Control Board) papers: the 2025 Paper II Chemistry, Biochemistry, Biology and Environmental Science papers '
+       "(Notification 02/2024, computer-based test, March 2025). Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹45 PYQ Pass for every exam."),
+      ('What is the APPSC Analyst Grade-II exam pattern in 2026?',
+       'Notification 21/2026 (18 posts) has two objective papers of degree standard: Paper I General Studies & Mental Ability (150 questions, 150 marks, 150 minutes) and Paper II, a Common Paper of Chemistry, '
+       'Biochemistry, Biology and Environmental Science (150 questions, 150 marks, 150 minutes), 300 marks in all, computer-based, with one-third of a mark deducted for each wrong answer, followed by a qualifying '
+       'Computer Proficiency Test. Online applications run from 13 October to 2 November 2026.'),
+      ('Why are there four Paper II papers from 2025?',
+       'In 2025 (Notification 02/2024) Paper II was set separately for each degree subject. From 2026 Paper II is one Common Paper covering all four subjects, so all four 2025 papers are useful practice: '
+       'they show the level and the topics APPSC asks in each subject.'),
+      ('Who can apply for APPSC Analyst Grade-II?',
+       "A bachelor's degree in Chemistry, Biochemistry, Biology or Environmental Sciences from a recognised university in India (first class preferred), age 18 to 44 years as on 1 July 2026 with the usual relaxations. "
+       'Pay scale ₹48,440 – ₹1,37,220.'),
+      ('Are the questions in Telugu?',
+       'The Analyst Grade-II Paper II papers are printed in English only, so they are here in English.'),
+      ('Which questions are left out?',
+       'Questions that APPSC ignored for all candidates are left out. Where APPSC accepted two options, both are shown as correct.'),
+    ]
+
+
+def FAQ_FRO(total, npapers):
+    return [
+      ('Where can I get APPSC Forest Range Officer previous question papers with answers?',
+       f'This page has {total:,} questions from {npapers} APPSC Forest Range Officer (FRO) papers: General Forestry I and General Forestry II of the 2023 Mains (Notification 21/2022) and the 2020 Mains '
+       "(Notification 10/2018). Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹45 PYQ Pass for every exam."),
+      ('What is the APPSC FRO exam pattern?',
+       'Notification 16/2026 (5 posts) has a qualifying test in General English and General Telugu (100 marks) and four objective papers of 150 marks each: Paper I General Studies & Mental Ability, '
+       'Paper II Mathematics (SSC standard), Paper III General Forestry I and Paper IV General Forestry II, 600 marks in all, computer-based, with one-third of a mark deducted for each wrong answer. '
+       'Shortlisted candidates take a walking test (men 25 km, women 16 km in 4 hours), a medical examination and a Computer Proficiency Test. Online applications run from 16 October to 5 November 2026.'),
+      ('What is in the General Forestry syllabus?',
+       'General Forestry I: renewable and non-renewable natural resources, plant sciences, biodiversity and its conservation, soil science and geology, water and watershed management, silviculture of AP species, '
+       'agroforestry, social and community forestry. General Forestry II: ecosystems and wildlife, forest protection and fire, forest utilization and NTFPs, animal management and economic zoology, forest economics, '
+       'policy, laws and administration, forest inventory, mensuration and remote sensing, environmental science, survey and engineering, and first aid.'),
+      ('Who can apply for APPSC FRO?',
+       "A bachelor's degree in agriculture, botany, chemistry, computer applications or science, engineering (agriculture, chemical, civil, computer, electrical, electronics or mechanical), environmental science, forestry, "
+       'geology, horticulture, mathematics, physics, statistics, veterinary science or zoology; age 18 to 30 years as on 1 July 2026 with the usual relaxations; height at least 163 cm for men and 150 cm for women. '
+       'Pay scale ₹48,440 – ₹1,37,220.'),
+      ('Are the questions in Telugu?',
+       'The General Forestry papers are printed in English only, so they are here in English.'),
+      ('Which questions are left out?',
+       "Questions that APPSC ignored for all candidates are left out. Where APPSC accepted two options, both are shown as correct. The 2025 Mains (Notification 11/2024) is not here yet, because APPSC has published only its initial key."),
+    ]
+
 def FAQ_EO(total, npapers):
     return [
       ('Where can I get APPSC Executive Officer Grade-III previous question papers with answers?',
@@ -1958,7 +2100,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){{
 document.querySelectorAll(".lk").forEach(function(e){{e.textContent="✓ ";e.className="lk ok"}});
 document.querySelectorAll("[data-paidtxt]").forEach(function(e){{e.textContent=e.getAttribute("data-paidtxt")}});
@@ -2587,21 +2729,23 @@ LANDINGS = {
   # file: what the page covers. People search "APPSC PYQs", "TS police previous papers", "TSLPRB previous question papers" ...
   'appsc-pyqs.html': dict(
       board='APPSC', ename='APPSC', crumb='APPSC PYQs',
-      title='APPSC Previous Year Question Papers with Answers – Group 1, Group 2, AMVI & Endowment Officer PYQs | Learn with Anil',
-      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024, Group 2 Prelims & Mains 2019–2025 AMVI (Assistant Motor Vehicle Inspector) 2019, 2023 & 2026 and Endowment Officer (EO Grade-III) 2022–2026, '
+      title='APPSC Previous Year Question Papers with Answers – Group 1, Group 2, AMVI, Endowment Officer, Analyst & FRO PYQs | Learn with Anil',
+      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024, Group 2 Prelims & Mains 2019–2025 AMVI (Assistant Motor Vehicle Inspector) 2019, 2023 & 2026, Endowment Officer (EO Grade-III) 2022–2026, Analyst Grade-II 2025 and Forest Range Officer (FRO) 2020 & 2023, '
            '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations with one ₹45 PYQ Pass for every exam.',
       h1='APPSC previous year question papers with answers',
-      lede="Every APPSC Group 1, Group 2, AMVI and Endowment Officer (EO Grade-III) previous question paper on Learn with Anil, {n} questions in all. "
-           "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu (AMVI Automobile Engineering papers in English).",
+      lede="Every APPSC Group 1, Group 2, AMVI, Endowment Officer (EO Grade-III), Analyst Grade-II and Forest Range Officer previous question paper on Learn with Anil, {n} questions in all. "
+           "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu (AMVI Automobile Engineering, Analyst Paper II and FRO General Forestry papers in English).",
       intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC AMVI (Assistant Motor Vehicle Inspector) or Endowment Officer (EO Grade-III) previous papers, APPSC old question papers with the key, or an APPSC mock test? '
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
             '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.</p>'
             '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (686 posts, apply 10–30 November) and '
             '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts, last date extended to 9 November 2026) and '
-            '<a href="/appsc-eo-grade-3-notification-2026.html">APPSC EO Grade-III Notification 2026</a> (104 Endowments Executive Officer posts, apply by 5 November). Timed mock tests: '
+            '<a href="/appsc-eo-grade-3-notification-2026.html">APPSC EO Grade-III Notification 2026</a> (104 Endowments Executive Officer posts, apply by 5 November), '
+            '<a href="/appsc-analyst-grade-2-notification-2026.html">Analyst Grade-II Notification 2026</a> (18 Pollution Control Board posts, apply by 2 November) and '
+            '<a href="/appsc-fro-notification-2026.html">FRO Notification 2026</a> (5 Forest Range Officer posts, apply by 5 November). Timed mock tests: '
             '<a href="/appsc-group-2/mock-test.html">Group 2</a> · <a href="/appsc-group-1/mock-test.html">Group 1</a>.</p>',
-      te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు', 'APPSC AMVI': 'APPSC AMVI ప్రశ్నాపత్రాలు', 'APPSC EO Grade-III': 'APPSC దేవాదాయ శాఖ EO గ్రేడ్-III ప్రశ్నాపత్రాలు'},
-      order=lambda c: {'Group-I': 0, 'Group-II': 1, 'APPSC EO Grade-III': 3}.get(c['short'], 2)),   # Group-I, Group-II, AMVI, then EO Grade-III
+      te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు', 'APPSC AMVI': 'APPSC AMVI ప్రశ్నాపత్రాలు', 'APPSC EO Grade-III': 'APPSC దేవాదాయ శాఖ EO గ్రేడ్-III ప్రశ్నాపత్రాలు', 'APPSC Analyst Grade-II': 'APPSC అనలిస్ట్ గ్రేడ్-II ప్రశ్నాపత్రాలు', 'APPSC FRO': 'APPSC ఫారెస్ట్ రేంజ్ ఆఫీసర్ ప్రశ్నాపత్రాలు'},
+      order=lambda c: {'Group-I': 0, 'Group-II': 1, 'APPSC EO Grade-III': 3, 'APPSC Analyst Grade-II': 4, 'APPSC FRO': 5}.get(c['short'], 2)),   # Group-I, Group-II, AMVI, then EO Grade-III
   'ts-police-pyqs.html': dict(
       board='TSLPRB', ename='TS Police', crumb='TS Police PYQs',
       title='TS Police Previous Question Papers with Answers – SI & Constable PYQs (TSLPRB / TGPRB), English & Telugu | Learn with Anil',
@@ -2772,6 +2916,101 @@ NOTIFS = {
         ('Interview', 'Personality test', '75 marks')])),
       ('', 'note', 'In the screening test, one-third of a mark is deducted for each wrong answer, and about 50 candidates per post go through to the Mains. '
                    'Screening marks are not counted in the final merit (Mains merit papers 750 + interview 75 = 825). The 2024 Prelims papers below follow this same pattern.'),
+    ]),
+  'appsc-analyst-grade-2-notification-2026.html': dict(
+    exam='appsc-analyst', crumb='Analyst Grade-II Notification 2026',
+    # Anil, 28 Oct / 1 Nov 2026: APPSC Notification 21/2026 dated 13 Oct 2026 (Analyst_Grade_II_21_2026.pdf)
+    title='APPSC Analyst Grade 2 Notification 2026 – AP Pollution Control Board, 18 Posts, Apply by 2 November, Syllabus & Previous Papers | Learn with Anil',
+    desc='APPSC Analyst Grade-II (A.P. Pollution Control Board) Notification 2026 (No. 21/2026): 18 posts, online applications 13 October to 2 November 2026, eligibility, fee, '
+         'the Paper I and Paper II (Chemistry, Biochemistry, Biology, Environmental Science) pattern and syllabus, and Analyst Grade-II previous question papers with answers.',
+    h1='APPSC Analyst Grade-II Notification 2026: 18 posts in the AP Pollution Control Board',
+    lede='APPSC Notification No. 21/2026 (13 October 2026) invites online applications for 18 posts of Analyst Grade-II in the A.P. Pollution Control Board, the laboratory analysts who test '
+         'air, water and waste samples. Apply by 2 November 2026. Below: dates, eligibility, the exam pattern and syllabus, and the previous papers to start practising.',
+    te='ఏపీపీఎస్సీ అనలిస్ట్ గ్రేడ్-II (ఏపీ కాలుష్య నియంత్రణ మండలి) నోటిఫికేషన్ (నం. 21/2026): 18 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు అక్టోబర్ 13 నుంచి నవంబర్ 2, 2026 వరకు. పేపర్-1 జనరల్ స్టడీస్, పేపర్-2 కామన్ పేపర్ (కెమిస్ట్రీ, బయోకెమిస్ట్రీ, బయాలజీ, ఎన్విరాన్‌మెంటల్ సైన్స్); పాత ప్రశ్నాపత్రాలు సమాధానాలతో కింద.',
+    pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Analyst_Grade_II_21_2026.pdf', pdfname='APPSC Notification No. 21/2026, dated 13 October 2026',
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification (No. 21/2026)', '13 October 2026'),
+        ('Online applications', '13 October to 2 November 2026 (till 11:59 pm)'),
+        ('Written examination', 'Computer-based (CBRT); date to be announced by APPSC'),
+        ('Official website', 'psc.ap.gov.in')]),
+      ('Posts, pay and age', 'table', [
+        ('Post', 'Analyst Grade-II, A.P. Pollution Control Board (state-wide post)'),
+        ('Vacancies', '18 (break-up in Annexure-I of the notification)'),
+        ('Pay scale', '₹48,440 – ₹1,37,220'),
+        ('Age', '18 to 44 years as on 1 July 2026, with the usual relaxations for reserved categories')]),
+      ('Who can apply', 'p', "A bachelor's degree in Chemistry, Biochemistry, Biology or Environmental Sciences from a recognised university in India; first-class graduates are preferred. "
+                          'Fee: ₹250 application processing fee plus ₹80 examination fee; SC, ST, BC, PwBD and ex-service candidates, white-card families and unemployed youth of AP are exempt from the ₹80 examination fee.'),
+      ('Exam pattern', 'table+', (['Paper', 'Subject', 'Questions · marks · time'], [
+        ('Paper I (objective, degree standard)', 'General Studies & Mental Ability', '150 · 150 · 150 min'),
+        ('Paper II (objective, degree standard)', 'Common Paper: Chemistry, Biochemistry, Biology, Environmental Science', '150 · 150 · 150 min'),
+        ('Computer Proficiency Test', 'Office automation with computers; qualifying', '—')])),
+      ('', 'note', 'One-third of a mark is deducted for each wrong answer. Selection is on the 300 marks of the written examination, after the qualifying Computer Proficiency Test.'),
+      ('Paper II syllabus: Common Paper', 'list', [
+        'Chemistry: non-transition elements and their halides and oxides, polymorphism of carbon and sulphur, boranes and carboranes; photochemistry (laws, HCl and HBr reactions, fluorescence, phosphorescence, Jablonski diagram); '
+        'spectroscopy and the Beer–Lambert law (Cr and Mn estimation); chromatography (TLC, gas-liquid, paper, column, HPLC); terpenoids; amino acids and proteins; solvent-free, ultrasound- and microwave-assisted green synthesis; furan and pyrrole.',
+        'Biochemistry: enzyme inhibition and mechanisms (chymotrypsin, trypsin, lysozyme); coenzymes; zymogen activation and multi-enzyme complexes; immunology, immunoglobulins, ELISA, vaccines and hypersensitivity; '
+        'blood and lymph; autoimmunity; nervous and excretory systems; endocrinology; nutritional biochemistry and vitamins; clinical biochemistry (liver, renal, GTT, gastric and pancreatic function tests).',
+        'Biology: bacteria (structure of E. coli, nutrition, reproduction, economic importance); viruses (TMV, polio, HIV); plant and animal cells and organelles; mitosis and meiosis; Mendelian genetics, linkage, '
+        'cytoplasmic inheritance, mutations; origin of life, Darwinism, Hardy–Weinberg law; nucleosome, DNA types and replication, DNA repair, RNA and protein synthesis.',
+        'Environmental Science: environment and ecology, ecosystems, energy flow, food chains, ecological pyramids and succession; forest, water, mineral and energy resources; air, water and soil pollution and waste management; '
+        'greenhouse gases, global warming, the ozone hole, biogas; environmental assessment (plant, flora, animal and aquatic surveys); eco-planning, land use, urban and rural planning.']),
+      ('Paper I syllabus: General Studies & Mental Ability', 'p',
+       'Current events (international, national, Andhra Pradesh); general science and technology; history of India with a focus on AP and the national movement; geography of India and AP; '
+       'Indian polity and governance; Indian economy and planning; sustainable development and environment; disaster management; logical reasoning; data analysis.'),
+    ]),
+  'appsc-fro-notification-2026.html': dict(
+    exam='appsc-fro', crumb='FRO Notification 2026',
+    # Anil, 28 Oct / 1 Nov 2026: APPSC Notification 16/2026 dated 16 Oct 2026 (FRODetailedNotification_162026.pdf)
+    title='APPSC FRO Notification 2026 – Forest Range Officer, 5 Posts, Apply by 5 November, Syllabus & Previous Papers | Learn with Anil',
+    desc='APPSC Forest Range Officer (FRO) Notification 2026 (No. 16/2026): 5 posts in the A.P. Forest Service, online applications 16 October to 5 November 2026, eligibility, physical standards, fee, '
+         'the exam pattern and General Forestry syllabus, and FRO previous question papers with answers.',
+    h1='APPSC Forest Range Officer (FRO) Notification 2026: 5 posts',
+    lede='APPSC Notification No. 16/2026 (16 October 2026) invites online applications for 5 posts of Forest Range Officer in the A.P. Forest Service. Apply by 5 November 2026. '
+         'Below: dates, eligibility and physical standards, the exam pattern and syllabus, and the previous papers to start practising.',
+    te='ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO) నోటిఫికేషన్ (నం. 16/2026): 5 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు అక్టోబర్ 16 నుంచి నవంబర్ 5, 2026 వరకు. జనరల్ స్టడీస్, గణితం, జనరల్ ఫారెస్ట్రీ-1, 2 పేపర్లు; పాత ప్రశ్నాపత్రాలు సమాధానాలతో కింద.',
+    pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/FRODetailedNotification_162026.pdf', pdfname='APPSC Notification No. 16/2026, dated 16 October 2026',
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification (No. 16/2026)', '16 October 2026'),
+        ('Online applications', '16 October to 5 November 2026 (till 11:59 pm)'),
+        ('Written examination', 'Computer-based (CBRT); date to be announced by APPSC'),
+        ('Official website', 'psc.ap.gov.in')]),
+      ('Posts, pay and age', 'table', [
+        ('Post', 'Forest Range Officer, A.P. Forest Service (zonal post)'),
+        ('Vacancies', '5, including 1 carried forward (break-up in Annexure-I of the notification)'),
+        ('Pay scale', '₹48,440 – ₹1,37,220'),
+        ('Age', '18 to 30 years as on 1 July 2026, with the usual relaxations for reserved categories')]),
+      ('Who can apply', 'p', "A bachelor's degree in agriculture, botany, chemistry, computer applications or computer science, engineering (agriculture, chemical, civil, computer, electrical, electronics or mechanical), "
+                          'environmental science, forestry, geology, horticulture, mathematics, physics, statistics, veterinary science or zoology. Physical standards: men at least 163 cm tall, chest 79 cm with 5 cm expansion, '
+                          'able to walk 25 km in 4 hours; women at least 150 cm, chest 74 cm with 5 cm expansion, able to walk 16 km in 4 hours (lower heights for Scheduled Tribes and some other groups). '
+                          'Fee: ₹250 application processing fee plus ₹120 examination fee.'),
+      ('Exam pattern', 'table+', (['Paper', 'Subject', 'Questions · marks · time'], [
+        ('Qualifying test (SSC standard)', 'General English (50) and General Telugu (50), to be qualified separately', '100 · 100 · 100 min'),
+        ('Paper I (objective)', 'General Studies & Mental Ability', '150 · 150 · 150 min'),
+        ('Paper II (objective)', 'Mathematics (SSC standard)', '150 · 150 · 150 min'),
+        ('Paper III (objective)', 'General Forestry I', '150 · 150 · 150 min'),
+        ('Paper IV (objective)', 'General Forestry II', '150 · 150 · 150 min')])),
+      ('', 'note', 'One-third of a mark is deducted for each wrong answer. Papers I–IV count for 600 marks. Candidates picked in the ratio 1:3 take a walking test and a medical examination arranged by the Forest Department, and a qualifying Computer Proficiency Test.'),
+      ('General Forestry I syllabus', 'list', [
+        'Renewable and non-renewable natural resources: forest, water, mineral, food, energy and land resources.',
+        'Plant sciences: classification, morphology, tissues, wood anatomy, seeds, reproduction, propagation, plant physiology, inheritance and plant diseases.',
+        'Biodiversity and its conservation: levels and value of biodiversity, hotspots, biomes of India, population ecology.',
+        'Soil science and geology: rocks and minerals of India, soil formation and properties, soil conservation, reclamation of problem soils, organic matter, N and C cycles.',
+        'Water resource and watershed management: water harvesting, groundwater recharge, forest hydrology.',
+        'Silviculture, agroforestry, social forestry and community forest management: regeneration, nursery and planting, silviculture of 14 species grown in AP (teak, red sanders, sandalwood, neem, bamboo, eucalyptus, casuarina and others).']),
+      ('General Forestry II syllabus', 'list', [
+        'Ecosystems and wildlife: ecosystem structure and function, GPP and NPP, types of ecosystems, wildlife and protected areas of India.',
+        'Forest protection: injuries, pests and diseases, fire, grazing, encroachment and other human impacts.',
+        'Forest utilization: logging and transport, seasoning and preservation, wood properties, MFP/NTFP species of AP, antidote plants.',
+        'Animal management and economic zoology: animal ailments, dentition, snakes and snake bite, nutrition, birds and migration, beneficial and harmful insects, fish and prawns.',
+        'Forest economics, legislation and administration: cost-benefit and investment methods, forest policies of 1894, 1952 and 1988, AP Forest Act 1967, Forest Conservation Act 1980, Wildlife Protection Act 1972, forest services.',
+        'Forest inventory, mensuration and remote sensing: sampling methods, tree and stand measurement, instruments, GIS, GPS and forest cover monitoring.',
+        'Environmental science: pollution, solid waste, sustainable development, climate change, environmental laws (EPA 1986, Air Act 1981, Water Act 1974, APWALTA 2004).',
+        'Forest survey and engineering, and first aid.']),
+      ('Paper I and Paper II', 'p',
+       'Paper I General Studies & Mental Ability follows the common APPSC syllabus (current events, science, history, geography, polity, economy, environment, disaster management, reasoning, data analysis). '
+       'Paper II Mathematics is SSC standard: arithmetic, algebra, trigonometry, geometry, mensuration and statistics.'),
     ]),
   'appsc-eo-grade-3-notification-2026.html': dict(
     exam='appsc-eo', crumb='EO Grade-III Notification 2026',
@@ -3130,6 +3369,8 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'upsc-prelims': ('UPSC Civil Services (Preliminary) Examination 2027', '2027-05-23', 'UPSC Calendar 2027.'),
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
   'upsc-epfo': ('UPSC EPFO APFC Recruitment Test 2026', '2026-12-20', 'UPSC Special Advertisement 52/2026 (80 APFC posts): pen-and-paper Recruitment Test on 20 December 2026.'),
+  'appsc-analyst': ('APPSC Analyst Grade-II written examination', None, 'Applications 13 October to 2 November 2026 (Notification 21/2026); APPSC has not announced the exam date yet.'),
+  'appsc-fro': ('APPSC Forest Range Officer written examination', None, 'Applications 16 October to 5 November 2026 (Notification 16/2026); APPSC has not announced the exam date yet.'),
   'tgpsc-hmwssb-manager': ('TGPSC HMWSSB Manager (Engineering)', None, 'Tentatively December 2026; TGPSC has not announced the exact date yet.'),
 }
 
@@ -3765,7 +4006,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-forest-range-officer/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);

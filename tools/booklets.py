@@ -41,6 +41,8 @@ def time_marks(conf, p):
     if conf['id'] == 'appsc-group-1': return '120 Minutes', 120   # each Prelims paper: 120 questions, 120 marks
     if conf['id'] == 'appsc-group-2': return '150 Minutes', 150   # Screening and each Mains paper: 150 questions, 150 marks
     if conf['id'] == 'appsc-eo': return '150 Minutes', 150   # EO Grade-III: each paper 150 questions, 150 marks
+    if conf['id'] == 'appsc-analyst': return '150 Minutes', 300   # Analyst Grade-II 2025 Paper II: 150 questions, 2 marks each
+    if conf['id'] == 'appsc-fro': return '150 Minutes', 150   # FRO Mains: each paper 150 questions, 150 marks
     return (f'{p["mins"]} Minutes' if p.get('mins') else ''), ''
 
 CSS = """

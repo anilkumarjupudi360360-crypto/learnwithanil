@@ -192,7 +192,8 @@
    "cat": "ap",
    "b": "APPSC",
    "t": "FRO",
-   "n": "Forest Range Officer"
+   "n": "Forest Range Officer",
+   "live": "appsc-forest-range-officer/"
   },
   {
    "id": "appsc-fso",
@@ -216,6 +217,14 @@
    "t": "Endowments EO",
    "n": "Executive Officer Grade-III",
    "live": "appsc-endowment-officer/"
+  },
+  {
+   "id": "appsc-analyst",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Analyst Gr-II",
+   "n": "Analyst Grade-II (Pollution Control Board)",
+   "live": "appsc-analyst-grade-2/"
   },
   {
    "id": "appsc-hwo",

@@ -1,0 +1,1509 @@
+# appsc-analyst-2025-paper2-biochemistry.txt: APPSC official paper, answers from APPSC's final key (APOnline master question paper, correct option ticked).
+# Typed from /home/claude/afro/raw/afro-an24-p2-biochemistry-final.pdf; checked by a second reader. Questions APPSC ignored for all candidates are left out.
+
+Q 1 | bch | Enzymes & Coenzymes
+Reversible inhibitors:
+(1) slow down a chemical reaction but do not stop it completely
+(2) prevent an unwanted chemical reaction from occurring
+(3) stop down a chemical reaction
+(4) speed up a chemical reaction
+= 1
+~ Reversible inhibitors bind the enzyme through non-covalent bonds, so they only lower the rate of the reaction and the enzyme regains full activity when the inhibitor is removed or diluted out. They do not abolish the reaction altogether (that is typical of irreversible inhibitors), and they never speed it up.
+
+Q 2 | bch | Enzymes & Coenzymes
+In a non-competitive inhibition, the Km value is ______ and Vmax is ________.
+(1) unchanged, lowered
+(2) unchanged, highered
+(3) changed, highered
+(4) changed, lowered
+= 1
+~ A non-competitive inhibitor binds a site away from the active site and binds the free enzyme and the enzyme-substrate complex equally well. It removes active enzyme molecules from the reaction, so Vmax falls, while substrate binding is not affected, so Km stays the same.
+
+Q 3 | bch | Enzymes & Coenzymes
+Certain molecules that resemble the substrate of the enzyme and compete for the active sites of enzyme, thereby reduce its efficiency. What are they?
+(1) Uncompetitive inhibitors
+(2) Competitive inhibitors
+(3) Partial inhibitors
+(4) Feedback inhibitors
+= 2
+~ Competitive inhibitors are structural analogues of the substrate and occupy the active site, so substrate and inhibitor compete for the same site. Uncompetitive inhibitors bind only the enzyme-substrate complex, and feedback inhibitors are end products that act at an allosteric site.
+
+Q 4 | bch | Enzymes & Coenzymes
+In competitive enzyme inhibition, how does the inhibitor affect enzyme activity?
+(1) It binds to the enzyme-substrate complex, preventing the reaction.
+(2) It binds to the active site, competing with the substrate.
+(3) It binds to a site other than the active site, changing the enzyme's shape.
+(4) It binds permanently to the enzyme, inactivating it.
+= 2
+~ A competitive inhibitor binds reversibly to the active site of the free enzyme and competes with the substrate. Option 1 describes uncompetitive inhibition, option 3 describes non-competitive (allosteric) inhibition and option 4 describes irreversible inhibition.
+
+Q 5 | bch | Enzymes & Coenzymes
+What is the effect of an uncompetitive inhibitor on the Michaelis-Menten parameters Vmax and Km?
+(1) Vmax decreases and Km increases.
+(2) Vmax decreases Km decreases.
+(3) Vmax increases and Km decreases.
+(4) Vmax increases and Km stays the same.
+= 2
+~ An uncompetitive inhibitor binds only the enzyme-substrate complex, which removes ES and pulls the equilibrium toward more ES. Both Vmax and the apparent Km fall by the same factor (1 + [I]/Ki'), giving parallel lines on a Lineweaver-Burk plot. An increase in Km is the sign of competitive inhibition.
+
+Q 6 | bch | Enzymes & Coenzymes
+_______ affects both the Michaelis constant and the maximum reaction rate of an enzyme.
+(1) Competitive inhibition
+(2) Non-competitive inhibition
+(3) Irreversible inhibition
+(4) Uncompetitive inhibition
+= 4
+~ Uncompetitive inhibition lowers both Vmax and the apparent Km. Competitive inhibition changes only Km (raises it), and pure non-competitive inhibition changes only Vmax. Irreversible inhibition simply inactivates enzyme molecules and so lowers Vmax.
+
+Q 7 | bch | Enzymes & Coenzymes
+How many types of reversible inhibitors play role in enzyme kinetics?
+(1) 2 types
+(2) 5 types
+(3) 4 types
+(4) 6 types
+= 3
+~ Four kinds of reversible inhibition are described in enzyme kinetics: competitive, non-competitive, uncompetitive and mixed inhibition. Each has a distinct effect on Km and Vmax and a distinct Lineweaver-Burk pattern.
+
+Q 8 | bch | Enzymes & Coenzymes
+Which enzyme inhibitor binds to the enzyme-substrate complex and reduce the activity of the enzyme?
+(1) Competitive inhibitors
+(2) Allosteric inhibitors
+(3) Non competitive inhibitor
+(4) Mixed inhibitor
+= 3,4
+~ Competitive inhibitors bind only the free enzyme. Non-competitive and mixed inhibitors can bind both the free enzyme and the enzyme-substrate complex, so both options 3 and 4 fit the question. (A purely uncompetitive inhibitor, which is not listed, binds only ES.) APPSC noted the ambiguity and gave full marks for either option 3 or 4.
+
+Q 9 | bch | Enzymes & Coenzymes
+In non-competitive inhibition, an inhibitor binds to an enzyme at a site other than the active site. Which of the following statements best describes the effect of a non-competitive inhibitor on enzyme kinetics?
+(1) It decreases the Vmax (maximum velocity) but does not affect Km (Michaelis constant).
+(2) It increases both Vmax and Km.
+(3) It decreases Km without affecting Vmax.
+(4) It affects neither Vmax nor Km.
+= 1
+~ In pure non-competitive inhibition the inhibitor lowers the concentration of fully functional enzyme, so Vmax decreases, but it does not change how tightly the substrate binds, so Km is unchanged. Lineweaver-Burk lines intersect on the x-axis (the same -1/Km) but have different y-intercepts.
+
+Q 10 | bch | Enzymes & Coenzymes
+Match items in Column A to column B.
+Column A | Column B
+1. Optimal pH for trypsin activity | a. Protein digestion
+2. Substrate of Trypsin | b. Serine protease
+3. Enzyme Classification | c. 7.5 – 8.5
+4. Function of Trypsin | d. Peptides and proteins
+(1) 1-d, 2-b, 3-a, 4-c
+(2) 1-c, 2-d, 3-b, 4-a
+(3) 1-c, 2-a, 3-d, 4-b
+(4) 1-d, 2-c, 3-b, 4-a
+= 2
+~ Trypsin works best in the slightly alkaline small intestine (pH about 7.5-8.5), acts on proteins and peptides (cleaving after lysine or arginine), belongs to the serine protease class and its function is protein digestion. This gives 1-c, 2-d, 3-b, 4-a.
+
+Q 11 | bch | Enzymes & Coenzymes
+Which of the following amino acid residues are the active site of chymotrypsin that consists of a catalytic triad?
+(1) Serine, histidine and aspartate
+(2) Serine, methionine and glutamate
+(3) Threonine, glutamate and aspartate
+(4) Methionine, histidine and aspartate
+= 1
+~ The catalytic triad of chymotrypsin (and of serine proteases in general) is Ser-195, His-57 and Asp-102. Histidine acts as a general base that activates the serine hydroxyl for attack on the peptide bond, and aspartate orients and stabilises the histidine.
+
+Q 12 | bch | Enzymes & Coenzymes
+A statement is given followed by conclusions numbered I and II. You are to decide which of the given conclusions could be drawn definitely from the given statement.
+Statement: Feedback inhibition is a regulatory mechanism, that occurs when the product of a metabolic pathway inhibits an earlier step in the pathway, preventing excessive production of product.
+Conclusions:
+I. Prevents excessive production of metabolites and maintains cellular balance.
+II. Helps regulate enzyme activity in response to changes in metabolite levels.
+(1) Only conclusion I is true.
+(2) Only conclusion II is true.
+(3) Both conclusions I and II are true.
+(4) Neither conclusion I nor II are true.
+= 3
+~ The statement itself says feedback inhibition prevents excess product, which supports conclusion I (cellular balance). Because the inhibition depends on how much end product is present, it also adjusts enzyme activity to metabolite levels, which supports conclusion II. Both follow.
+
+Q 13 | bch | Enzymes & Coenzymes
+Carboxypeptidase is involved in protein digestion. What is the product of this enzyme action?
+(1) Peptones
+(2) Free amino acids
+(3) Peptides
+(4) Denatured proteins
+= 2
+~ Carboxypeptidase is a pancreatic exopeptidase that removes amino acids one at a time from the C-terminal end of a peptide, so its product is free amino acids. Endopeptidases such as trypsin and chymotrypsin produce the shorter peptides, and peptones are the products of pepsin action.
+
+Q 14 | bch | Enzymes & Coenzymes
+In mixed inhibition, which of the following represents the modified form of the Lineweaver-Burk equation for mixed inhibition?
+(1) 1/vo = Km/Vmax[S] + 1/Vmax (1+[I]/Km)
+(2) 1/vo = Km (1+[I]/Ki)/Vmax[S] + 1/Vmax (1+[I]/Ki')
+(3) 1/vo = Km (1+[I]/Km)/Vmax[S] + 1/Vmax (1+[I]/Km)
+(4) 1/vo = Km (1+[I] Ki')/Vmax[S] + 1/Vmax
+= 1
+~ In mixed inhibition the inhibitor binds both E and ES with different affinities, so the slope term is multiplied by (1+[I]/Ki) and the intercept term by (1+[I]/Ki'). That textbook form is the one written in option 2, whereas APPSC's key is option 1, which alters only the intercept term. (Official key; some sources differ.)
+
+Q 15 | bch | Enzymes & Coenzymes
+Aspartate transcarbamoylase (ATCase) is regulated allosterically by ATP and CTP. Which of the following describes the specific effect of CTP binding on the kinetic properties of ATCase?
+(1) CTP binding increases Vmax and decreases K0.5, shifting the curve toward hyperbolic kinetics.
+(2) CTP binding decreases Vmax but does not affect K0.5.
+(3) CTP binding increases K0.5, resulting in a more sigmoidal substrate saturation curve.
+(4) CTP binding decreases K0.5, converting the enzyme to the R state.
+= 3
+~ CTP is the end-product (negative) allosteric effector of ATCase in pyrimidine synthesis. It stabilises the low-affinity T state, which raises K0.5 and makes the sigmoidal saturation curve steeper and shifted to the right, whereas ATP (the positive effector) does the opposite by favouring the R state.
+
+Q 16 | bch | Nutrition & Vitamins
+The following statement is given followed by conclusions numbered I and II. You are to decide which of the given conclusions could be drawn definitely from the given statement.
+Statement: Lipoic acid has powerful antioxidant and anti-inflammatory properties.
+Conclusions:
+I. Lipoic acid helps protect cells from damage caused by free radicals which can contribute to chronic diseases like cancer, diabetes and heart diseases.
+II. Lipoic acid help regulate digestive disorder.
+(1) Only conclusion I is true.
+(2) Only conclusion II is true
+(3) Both conclusions I and II are true.
+(4) Neither conclusion I nor II are true.
+= 3
+~ Conclusion I follows directly from the antioxidant action stated, since scavenging free radicals protects cells. The official key also counts conclusion II as true, although the statement says nothing about digestion and the claim is only loosely supported. (Official key; some sources differ.)
+
+Q 17 | bch | Enzymes & Coenzymes
+Match the following.
+List I | List II
+A) Abzymes | 1) Enhance catalytic activity
+B) Lab animals immunised | 2) Lowering the energy of activation
+C) Enzymes | 3) Synthetic haptens
+D) Metal ions | 4) Catalytic antibody
+(1) A-4, B-3, C-2, D-1
+(2) A-4, B-3, C-1, D-2
+(3) A-3, B-4, C-2, D-1
+(4) A-4, B-2, C-3, D-1
+= 1
+~ Abzymes are catalytic antibodies, obtained by immunising laboratory animals with synthetic haptens (usually transition-state analogues). Enzymes act by lowering the activation energy, and metal ion cofactors enhance catalytic activity. This gives A-4, B-3, C-2, D-1.
+
+Q 18 | bch | Enzymes & Coenzymes
+Which of the following statements best describes the role of coenzymes in enzyme-catalysed reactions?
+(1) Coenzymes act as permanent components of the enzyme active site, facilitating the formation of enzyme-substrate complexes.
+(2) Coenzymes increase the activation energy required for the reaction to proceed, thereby enhancing the efficiency of the enzyme.
+(3) Coenzymes bind irreversibly to enzymes and modify their active sites, making them more specific for their substrates.
+(4) Coenzymes transfer functional groups or electrons between substrates, but are not consumed or permanently altered in the process.
+= 4
+~ Coenzymes (such as NAD+, FAD and coenzyme A) are small organic carriers that move electrons or chemical groups from one substrate to another and are regenerated for reuse. Catalysts lower, not raise, the activation energy, and coenzymes bind loosely and reversibly (a tightly bound one is called a prosthetic group).
+
+Q 19 | bch | Enzymes & Coenzymes
+Coenzyme A is primarily involved in which type of metabolic process?
+(1) Protein synthesis
+(2) DNA replication
+(3) Fatty acid metabolism
+(4) Electron transport
+= 3
+~ Coenzyme A (derived from pantothenic acid, vitamin B5) carries acyl groups as thioesters. It is central to fatty acid oxidation and synthesis (acyl-CoA, acetyl-CoA, malonyl-CoA) and also links to the citric acid cycle.
+
+Q 20 | bch | Enzymes & Coenzymes
+Thiamine pyrophosphate is synthesised in the ________.
+(1) cytosol
+(2) nucleus
+(3) endoplasmic reticulum
+(4) golgi complex
+= 1
+~ Thiamine pyrophosphate (TPP) is made from thiamine and ATP by the enzyme thiamine pyrophosphokinase, which is located in the cytosol. TPP is then taken up by mitochondria, where it works as the coenzyme of pyruvate dehydrogenase and alpha-ketoglutarate dehydrogenase.
+
+Q 21 | bch | Nutrition & Vitamins
+Tetrahydrofolate (THF) and Cyanocobalamine are __________, respectively.
+(1) vitamin B9 and vitamin B12
+(2) vitamin B9 and vitamin B2
+(3) vitamin B5 and vitamin B7
+(4) vitamin B1 and vitamin B2
+= 1
+~ Folic acid, whose active coenzyme form is tetrahydrofolate, is vitamin B9, and cyanocobalamin is the stable pharmaceutical form of vitamin B12. Vitamin B2 is riboflavin, B5 is pantothenic acid, B7 is biotin and B1 is thiamine.
+
+Q 22 | bch | Nutrition & Vitamins
+The following statement is given followed by conclusions numbered I and II. You are to decide which of the given conclusions could be drawn definitely from the given statement.
+Statement: Biotin is a vitamin that plays a crucial role in various bodily functions and essential for the metabolism of fatty acids, carbohydrates and amino acids.
+Conclusions:
+I. Biotin is a fat soluble-vitamin that can be stored in body fatty tissues and liver.
+II. Biotin is part of B-complex vitamins that supports overall health and well-being.
+(1) Only conclusion I is true.
+(2) Only conclusion II is true.
+(3) Both conclusions I and II are true.
+(4) Neither conclusion I nor II is true.
+= 2
+~ Biotin is vitamin B7 (vitamin H), a water-soluble member of the B-complex, so conclusion II is true. Water-soluble vitamins are not stored in fat tissue, which makes conclusion I false. Biotin is the coenzyme of carboxylases such as acetyl-CoA carboxylase and pyruvate carboxylase.
+
+Q 23 | bio | Molecular Biology
+Match the types of mutagenesis with corresponding results effected.
+Type of mutagenesis | Result effected
+L. Site directed mutagenesis | A. Results in premature introduction of stop codon in DNA sequence
+M. Point mutagenesis | B. Results in introduction of specific mutation at a targeted location of DNA sequence
+N. Nonsense mutagenesis | C. Results in a single nucleotide change in DNA sequence
+(1) L-A, M-B, N-C
+(2) L-B, M-A, N-C
+(3) L-B, M-C, N-A
+(4) L-C, M-B, N-A
+= 3
+~ Site-directed mutagenesis introduces a chosen, specific change at a targeted position. A point mutation changes a single nucleotide. A nonsense mutation converts a codon into a stop codon (UAA, UAG or UGA), so translation ends prematurely. This gives L-B, M-C, N-A.
+
+Q 24 | bch | Enzymes & Coenzymes
+What distinguishes flavin nucleotides (FMN and FAD) in their role as cofactors in enzymatic electron transfer reactions?
+(1) They are consumed as substrates during the reaction.
+(2) They facilitate only two-electron transfer.
+(3) They are tightly bound to enzymes and act as intermediates for one- or two-electron transfers.
+(4) Their reduction potential is unaffected by the local protein environment.
+= 3
+~ FMN and FAD are usually tightly (sometimes covalently) bound to flavoproteins as prosthetic groups. Their isoalloxazine ring can take up either two electrons at once or one electron at a time through a semiquinone radical, and the protein environment strongly tunes their reduction potential, which rules out options 2 and 4.
+
+Q 25 | bch | Enzymes & Coenzymes
+Which of the following coenzymes function as a redox reaction?
+(1) Flavin adenine dinucleotide
+(2) Alcohol dehydrogenase
+(3) Procarboxypeptidase
+(4) Deoxyadenosylcobalamin
+= 1
+~ FAD is a redox coenzyme that is reduced to FADH2 and re-oxidised in dehydrogenase reactions. Alcohol dehydrogenase is an enzyme and procarboxypeptidase is a zymogen, not coenzymes, while deoxyadenosylcobalamin is a coenzyme of rearrangement and isomerisation reactions (for example methylmalonyl-CoA mutase), not of redox reactions.
+
+Q 26 | bch | Enzymes & Coenzymes
+Which of the following is a function of Ribozyme?
+(1) Transamination
+(2) Redox reaction
+(3) Transcription
+(4) Translation
+= 4
+~ Ribozymes are catalytic RNA molecules. The best known example is the ribosomal RNA of the large subunit, which forms the peptidyl transferase centre and catalyses peptide bond formation during translation. Transamination and redox reactions are carried out by protein enzymes, and transcription is catalysed by RNA polymerase.
+
+Q 27 | bch | Enzymes & Coenzymes
+Select the most appropriate option based on the Assertion (A) and Reason (R) given.
+Assertion (A): Enzymatic catalysis is more efficient than traditional synthetic catalysts in terms of turnover number (TON).
+Reason (R): Enzymes stabilize the transition state through specific interactions, reducing the activation energy significantly.
+(1) Both (A) and (R) are true, and (R) is the correct explanation of (A).
+(2) Both (A) and (R) are true, but (R) is NOT the correct explanation of (A).
+(3) (A) is true, but (R) is false.
+(4) (A) is false, but (R) is true.
+= 1
+~ Enzymes accelerate reactions by binding and stabilising the transition state, which lowers the activation energy sharply. This is exactly why they reach very high turnover numbers and rate enhancements compared with conventional synthetic catalysts, so R explains A.
+
+Q 28 | bch | Enzymes & Coenzymes
+What is the mechanism of action of serine protease?
+(1) Cleave peptide bonds using a catalytic triad of serine, histidine and aspartate
+(2) Cleave peptide bonds using a catalytic dyad of cysteine and histidine
+(3) Cleave peptide bonds using a catalytic of cysteine, histidine and arginine
+(4) Cleave peptide bonds using a catalytic dyad of serine and arginine
+= 1
+~ Serine proteases such as trypsin, chymotrypsin and elastase hydrolyse peptide bonds through a Ser-His-Asp catalytic triad, with the serine forming a covalent acyl-enzyme intermediate. A cysteine-histidine dyad is the feature of cysteine proteases such as papain.
+
+Q 29 | bch | Enzymes & Coenzymes
+Which of the following is correct about Zymogen?
+(1) Enzyme precursor
+(2) Hormone
+(3) Enzyme inhibitor
+(4) Vitamin
+= 1
+~ A zymogen (proenzyme) is the inactive precursor of an enzyme, such as pepsinogen, trypsinogen and chymotrypsinogen. It is converted to the active enzyme by partial proteolysis, which protects the cell that makes it from self-digestion.
+
+Q 30 | bch | Enzymes & Coenzymes
+Where in the cell are the Zymogen granules/vesicles synthesised and activated?
+(1) Plasma membrane
+(2) Nucleolus
+(3) Golgi apparatus
+(4) Smooth Endoplasmic reticulum
+= 3
+~ Zymogens are made on the rough ER and are sorted and packed into zymogen granules in the Golgi apparatus, which is the best choice among the options given. In reality they are activated only after secretion, for example trypsinogen by enteropeptidase in the intestine. (Official key; some sources differ.)
+
+Q 31 | bch | Clinical Biochemistry
+Read the given statement and conclusions carefully and decide which of the given conclusion(s) logically follow(s) from the statement.
+Statement: LDH isoenzymes are found in various tissues, including the heart, liver, skeletal muscle and kidney, and are useful in diagnosis of diseases.
+Conclusions:
+I. The levels of LDH isoenzymes are significant during myocardial infarction.
+II. LDH enzymes are specific to liver.
+(1) Only conclusion I
+(2) Only conclusion II
+(3) Both conclusions I and II
+(4) Neither conclusion I nor II
+= 1
+~ After a myocardial infarction the heart isoenzyme LDH-1 rises (LDH-1 exceeds LDH-2, the "flipped" ratio), so conclusion I follows. Conclusion II contradicts the statement itself, which lists LDH in the heart, skeletal muscle and kidney as well as the liver.
+
+Q 32 | bch | Enzymes & Coenzymes
+Select the option that is correct regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Covalent modifications make the attachment of a molecule or group to an enzyme or a protein, thereby changing the properties or functions in metabolic pathway, in either reversible or irreversible manner.
+Reason (R): Covalent modifications influence protein stability; affect their degradation and turnover.
+(1) Both A and R are true, and R is not correct explanation of A.
+(2) Both A and R are true and R is correct explanation of A.
+(3) A is true, and R is false.
+(4) A is false, and R is true.
+= 2
+~ Phosphorylation, acetylation, ubiquitination and similar covalent changes alter an enzyme's activity, location and interactions. Part of the reason is that they change protein stability and the rate of degradation and turnover, so R explains how the properties described in A are changed.
+
+Q 33 | bch | Enzymes & Coenzymes
+Which of the following statements best describes the process of zymogen activation?
+(1) Zymogens are activated by the binding of a cofactor that changes their shape.
+(2) Zymogens are activated by the irreversible removal of a peptide fragment, exposing the active site.
+(3) Zymogens are activated by phosphorylation of specific amino acids.
+(4) Zymogens are activated when they bind to their substrate molecules.
+= 2
+~ Zymogens are activated by limited, irreversible proteolytic cleavage (for example trypsinogen to trypsin by loss of a hexapeptide), which causes a conformational change that forms the active site. Phosphorylation gives reversible covalent regulation, a different mechanism.
+
+Q 34 | bch | Enzymes & Coenzymes
+In the case of an oligomeric protein like haemoglobin, which of the following changes occurs as a result of substrate binding to one subunit?
+(1) The enzyme undergoes a conformational change that increases the affinity of other subunits for the substrate.
+(2) The binding of the substrate to one subunit causes no change in the activity of other subunits.
+(3) The enzyme active site becomes less accessible to additional substrates.
+(4) Substrate binding only affects the enzyme ability to bind oxygen but not its enzymatic activity.
+= 1
+~ Oligomeric proteins such as haemoglobin show positive cooperativity: binding of ligand to one subunit triggers a T-to-R conformational change that raises the affinity of the remaining subunits. This produces the sigmoidal binding curve, rather than the hyperbolic curve of a monomeric protein.
+
+Q 35 | bch | Enzymes & Coenzymes
+Which of the following is an example of an oligomeric and tetrameric enzyme?
+(1) Lactate dehydrogenase (LDH)
+(2) Pyruvate dehydrogenase
+(3) Alanine aminotransferase
+(4) Dihydrolipoamide acetyl-transferase
+= 1
+~ Lactate dehydrogenase is a tetramer made of four subunits of H (heart) and M (muscle) types, which combine into the five isoenzymes. Pyruvate dehydrogenase is a huge multienzyme complex, and alanine aminotransferase is a dimer.
+
+Q 36 | bch | Enzymes & Coenzymes
+Which isoenzymes of LDH are present in heart muscle?
+(1) LDH 4 and LDH 5
+(2) LDH 1 and LDH 2
+(3) LDH 3 and LDH 4
+(4) LDH 5 and LDH 3
+= 2
+~ Heart muscle is rich in LDH-1 (H4) and LDH-2 (H3M), which are the isoenzymes best suited to convert lactate to pyruvate in aerobic tissue. LDH-4 and LDH-5 (rich in M subunits) predominate in the liver and skeletal muscle.
+
+Q 37 | bch | Enzymes & Coenzymes
+Match the industrial application with the functional description of the enzyme chymotrypsin.
+Application | Functional description
+L. Medical research | A. Enzyme assisted protein hydrolysis
+M. Leather production | B. Textile fibre modification
+N. Food processing | C. Pharmaceutical peptide synthesis
+(1) L-A, M-B, N-C
+(2) L-C, M-B, N-A
+(3) L-B, M-C, N-A
+(4) L-B, M-A, N-C
+= 2
+~ Chymotrypsin is a protease used to hydrolyse proteins in food processing (N-A), and the same enzyme can be used under controlled conditions to form peptide bonds for pharmaceutical peptide synthesis (L-C). That leaves leather production with textile fibre modification (M-B), giving option 2.
+
+Q 38 | bch | Enzymes & Coenzymes
+Match the following.
+List I | List II
+A) Chymotrypsin | 1) Chymotrypsinogen
+B) Ping pong mechanism | 2) Trypsin
+C) Active form | 3) Covalent hydrolysis
+D) Inactive form | 4) Serine proteases
+(1) A-4, B-3, C-2, D-1
+(2) A-4, B-3, C-1, D-2
+(3) A-4, B-2, C-3, D-1
+(4) A-3, B-4, C-2, D-1
+= 1
+~ Chymotrypsin is a serine protease (A-4) that works by a ping-pong mechanism with a covalent acyl-enzyme intermediate (B-3), and its inactive form is chymotrypsinogen (D-1). Pairing "active form" with trypsin is loose (trypsin is the protease that activates chymotrypsinogen), but only option 1 fits the other pairs. (Official key; some sources differ.)
+
+Q 39 | bch | Immunology
+What is the primary function of IgA?
+(1) Activate complement
+(2) Neutralise toxins
+(3) Facilitate phagocytosis
+(4) Provide mucosal protection
+= 4
+~ Secretory IgA (a dimer carrying a secretory component) is the main antibody in saliva, tears, milk and the secretions of the respiratory, digestive and urogenital tracts, where it guards the mucosal surfaces. Complement activation is mainly done by IgM and IgG.
+
+Q 40 | bch | Immunology
+Which of the following statements accurately describes the difference between innate and acquired immunity?
+(1) Innate immunity is specific to particular pathogens, while acquired immunity is general and non-specific.
+(2) Innate immunity provides immediate defense against pathogens, while acquired immunity develops slowly and targets specific pathogens.
+(3) Acquired immunity is present at birth, while innate immunity develops over time in response to exposure.
+(4) Both innate and acquired immunity require previous exposure to pathogens to be effective.
+= 2
+~ Innate immunity is present from birth, non-specific and acts within minutes to hours. Acquired (adaptive) immunity takes days to develop on first exposure, is antigen-specific and has memory. Options 1 and 3 reverse these properties, and innate immunity needs no earlier exposure.
+
+Q 41 | bch | Immunology
+Based on the following statement and conclusion, which of the given options is most accurate?
+Statement: Flow cytometry is a technique that allows for the detection and measurement of physical and chemical characteristics of a population of cells or particles.
+Conclusion: Flow cytometry can be used in immunodiagnostics to analyse immune cell populations by labelling them with fluorescent antibodies specific to cell surface markers.
+(1) Flow cytometry is limited to measuring only cell size and cannot differentiate between cell types.
+(2) Flow cytometry can measure multiple parameters of each cell simultaneously, allowing it to identify different cell types within a sample.
+(3) Flow cytometry is unable to differentiate between live and dead cells in a sample.
+(4) Flow cytometry does not use fluorescent markers in immunodiagnostic applications.
+= 2
+~ In flow cytometry each cell passes a laser beam and scatter (size, granularity) plus several fluorescence channels are recorded at once. Fluorescent antibodies to surface markers (such as CD4 and CD8) therefore identify cell types, and viability dyes can separate live from dead cells, so options 1, 3 and 4 are wrong.
+
+Q 42 | bch | Immunology
+Read the given assertion (A) and reason (R) and select the most appropriate option.
+(A): Traditional vaccines often require booster doses to maintain immunity over time.
+(R): Traditional vaccines, like inactivated vaccines, may not stimulate long-lasting memory cells after a single dose.
+(1) Both (A) and (R) are true, and (R) is the correct explanation of (A)
+(2) Both (A) and (R) are true, but (R) is not the correct explanation of (A)
+(3) (A) is true, but (R) is false
+(4) (A) is false, but (R) is true
+= 1
+~ Inactivated and subunit vaccines do not replicate in the body, so one dose often produces a weak or short-lived memory response. Booster doses re-stimulate memory B and T cells and raise antibody levels, so R explains why A is needed.
+
+Q 43 | bch | Immunology
+Match the following:
+List I | List II
+A) Type 1 hypersensitivity | 1) Cytotoxic reaction
+B) Type II hypersensitivity | 2) Cell mediated hypersensitivity
+C) Type III hypersensitivity | 3) Immediate hypersensitivity
+D) Type IV hypersensitivity | 4) Immune complex reaction
+(1) A - 3, B - 4, C -1, D - 2
+(2) A - 2, B - 4, C - 1, D - 3
+(3) A - 3, B - 1, C - 4, D - 2
+(4) A - 3, B - 4, C - 2, D - 1
+= 3
+~ In the Gell and Coombs classification, Type I is immediate (IgE-mediated) hypersensitivity, Type II is antibody-mediated cytotoxic reaction, Type III is immune complex reaction, and Type IV is delayed, cell-mediated (T cell) hypersensitivity. This gives A-3, B-1, C-4, D-2.
+
+Q 44 | bch | Immunology
+The maturation of B-cells and T-cells takes place in:
+(1) pancreas and liver
+(2) liver and spleen
+(3) bone marrow and thymus
+(4) bone marrow and liver
+= 3
+~ B cells arise and mature in the bone marrow, while T cells arise from bone marrow precursors but mature in the thymus. Bone marrow and thymus are the primary lymphoid organs, whereas the spleen is a secondary lymphoid organ.
+
+Q 45 | bch | Immunology
+Immunoprecipitation was developed in relation to which of the following mechanisms?
+(1) Supercritical
+(2) Intermolecular space
+(3) Reversed phase
+(4) Affinity
+= 4
+~ Immunoprecipitation uses the specific affinity of an antibody for its antigen to pull a target protein out of a mixture, usually with protein A or G beads. It is therefore an affinity-based technique. Supercritical and reversed-phase methods belong to chromatography and extraction.
+
+Q 46 | bch | Immunology
+Which of the following accurately defines an epitope?
+(1) Region on an antigen that is recognised by an antibody
+(2) Region on an antibody that is recognised by an antigen
+(3) A type of immune cell
+(4) A type of cytokine
+= 1
+~ An epitope (antigenic determinant) is the small part of an antigen that is recognised and bound by an antibody or a T-cell receptor. The part of the antibody that recognises it is the paratope.
+
+Q 47 | bch | Immunology
+Which type of immune cell is primarily responsible for the production of antibodies?
+(1) T-helper cells (Th cells)
+(2) B-lymphocytes (B cells)
+(3) Natural killer (NK) cells
+(4) Macrophages
+= 2
+~ B lymphocytes, after activation, differentiate into plasma cells that secrete antibodies. T-helper cells only help B cells by cytokines, NK cells kill infected cells, and macrophages phagocytose and present antigen.
+
+Q 48 | bch | Immunology
+Which of the following statements is correct with respect to ELISA?
+(1) ELISA is based on immunochemical principles of antigen-antigen reaction.
+(2) The antibody against the protein to be determined is fixed on an inert solid such a polystyrene.
+(3) The biological sample containing the protein to be estimated is applied on the antigen coated surface.
+(4) ELISA is not widely used for the determination of proteins.
+= 2,3
+~ Statement 2 describes the capture-antibody coating step of a sandwich ELISA on a polystyrene plate. Statement 3 describes the other common design, in which the sample is applied to a coated surface (as in indirect and competitive formats). Because of this ambiguity APPSC accepted either 2 or 3. Statement 1 is wrong (the reaction is antigen-antibody), and ELISA is widely used for protein assays.
+
+Q 49 | bch | Immunology
+In which technique are Haptens applicable?
+(1) RadioimmunoAssay (RIA)
+(2) Ion exchange chromatography
+(3) Hybridoma technology
+(4) Spectrophotometry
+= 1,3
+~ Haptens are small molecules (steroids, drugs, hormones) that become immunogenic only when linked to a carrier protein. They are used to raise antibodies, including monoclonal antibodies by hybridoma technology, and RIA is the classic assay for such small molecules. APPSC accepted either option 1 or 3.
+
+Q 50 | bch | Blood & Body Systems
+If a person has AB− blood, who all can donate blood to him?
+(1) A+, B−, O−, AB+
+(2) A−, B−, O+, AB+
+(3) A+, B+, O+, AB−
+(4) A−, B−, O−, AB−
+= 4
+~ AB negative has A and B antigens but no Rh (D) antigen, so the person can receive red cells from any ABO group (A, B, O or AB) but only if Rh-negative. The Rh-positive donors in options 1 to 3 would sensitise the recipient.
+
+Q 51 | bch | Immunology
+A statement is given followed by two conclusions numbered I and II. Identify which of the given conclusions is/are true based on the given statement.
+Statement: Conjugate vaccine combined with weakened pathogen (such as a bacterium) with a carrier protein enhances the immune response, provides long term protection and reduces disease severity.
+Conclusions:
+I. Conjugate vaccines significantly reduce mortality and morbidity rates.
+II. Conjugate vaccines enhance immunogenicity.
+(1) Only conclusion I is true.
+(2) Only conclusion II is true.
+(3) Both conclusions I and II are true.
+(4) Neither conclusion I nor II is true.
+= 3
+~ Linking a poorly immunogenic antigen to a carrier protein makes it a T-cell-dependent antigen, which enhances immunogenicity (II). The statement itself says the vaccine gives long-term protection and reduces disease severity, so lower morbidity and mortality (I) follows as well, as seen with Hib and pneumococcal conjugate vaccines.
+
+Q 52 | bch | Immunology
+During an agglutination reaction, why does the 'zone of equivalence' between antibody and antigen concentrations produce the strongest visible agglutination, and what would likely occur if the reaction takes place outside this zone?
+(1) The zone of equivalence allows for optimal antibody-antigen cross-linking, leading to visible clumping; outside this zone, agglutination may not occur due to excess antibodies or antigens inhibiting cross-linking.
+(2) The zone of equivalence minimises steric hindrance, which allows antibodies to bind more rapidly; outside this zone, the antibody structure changes, preventing effective agglutination.
+(3) The zone of equivalence increases the binding affinity of antibodies, which maximises clumping; outside this zone, the affinity between antibodies and antigens is too low for agglutination.
+(4) The zone of equivalence optimises pH, allowing maximum antigen-antibody interaction; outside this zone, pH changes prevent effective binding, leading to the absence of agglutination.
+= 1
+~ At equivalence, antigen and antibody are present in proportions that build a large cross-linked lattice, giving maximum clumping. With antibody excess (prozone) or antigen excess (postzone), most binding sites are occupied by separate molecules, so little cross-linking and little visible agglutination occur. Affinity, pH and antibody structure are not what changes.
+
+Q 53 | bch | Immunology
+In a precipitation reaction using immunodiffusion, you observe that the precipitin line forms closer to the antigen well rather than midway between the antigen and antibody wells. What does this observation indicate about the relative concentrations of antigen and antibody?
+(1) The antigen is in excess relative to the antibody.
+(2) The antibody is in excess relative to the antigen.
+(3) Both antigen and antibody are present in optimal proportions.
+(4) The antigen is denatured, preventing proper binding.
+= 1
+~ A line midway between the wells means the two reactants are in optimal (equivalence) proportion, so option 3 is wrong. APPSC's key reads a shift of the line toward the antigen well as antigen excess. Many textbooks teach the opposite, that the line lies nearer the well holding the lower concentration, so a line near the antigen well suggests antibody excess. (Official key; some sources differ.)
+
+Q 54 | bch | Immunology
+A pharmaceutical company develops a new drug that exhibits immunogenic properties only when combined with a specific carrier protein. This phenomenon is best explained by the concept of haptens. Which of the following statements about haptens is most accurate?
+(1) Haptens are inherently immunogenic molecules that can independently induce a strong immune response.
+(2) Haptens require attachment to a carrier molecule to form an antigenic determinant that can elicit an immune response.
+(3) Haptens are large macromolecules that naturally stimulate both B and T cell-mediated immunity.
+(4) The immunogenicity of haptens is solely dependent on their molecular weight, with no role for structural complexity or carrier association.
+= 2
+~ Haptens are small molecules that can bind antibodies but cannot trigger an immune response alone. When coupled to a large carrier protein they become immunogenic (the hapten-carrier effect), with T cells recognising the carrier. Haptens are small, not large macromolecules.
+
+Q 55 | bch | Blood & Body Systems
+Which of the following is a type of white blood cell that plays a key role in the immune response?
+(1) Neutrophil
+(2) Lymphocyte
+(3) Monocyte
+(4) Eosinophil
+= 2
+~ Lymphocytes (B cells, T cells and NK cells) are the central cells of adaptive immunity, responsible for antigen specificity and memory. Neutrophils, monocytes and eosinophils are also white blood cells but act mainly in innate, non-specific defence.
+
+Q 56 | bch | Blood & Body Systems
+Match the platelet processes with the respective functions.
+Platelet process | Function
+L. Aggregation | A. Blood vessel constriction
+M. Phagocytosis | B. Platelet plug formation
+N. Adhesion | C. Removal of pathogens
+(1) L-A, M-B, N-C
+(2) L-B, M-C, N-A
+(3) L-C, M-A, N-B
+(4) L-C, M-B, N-A
+= 2
+~ Aggregation of platelets builds the platelet plug (L-B), and platelets can engulf bacteria and particles, which helps remove pathogens (M-C). The key pairs adhesion with blood vessel constriction (N-A); adhesion is more strictly the sticking of platelets to exposed collagen, and constriction comes from substances platelets release. (Official key; some sources differ.)
+
+Q 57 | bch | Immunology
+The main function of plasma cells is to:
+(1) phagocytose pathogens
+(2) secrete antibodies
+(3) present antigens to T cells
+(4) destroy infected cells
+= 2
+~ Plasma cells are terminally differentiated B cells with abundant rough ER whose job is to secrete large amounts of antibody. Phagocytosis and antigen presentation are done by macrophages and dendritic cells, and killing infected cells by cytotoxic T cells and NK cells.
+
+Q 58 | bch | Blood & Body Systems
+A statement is given followed by two conclusions. Identify which of the given conclusions is/are true based on the given statement.
+Statement: Red blood cells (RBCs) are flexible and disk shaped.
+Conclusions:
+I. RBCs cannot travel through narrow blood vessels.
+II. RBCs can change shape to fit through narrow blood vessels.
+(1) Only conclusion I is true.
+(2) Only conclusion II is true.
+(3) Both conclusions I and II are true.
+(4) Neither conclusion I nor II is true.
+= 2
+~ Because RBCs are flexible biconcave discs, they can deform and squeeze through capillaries narrower than their own diameter, which is conclusion II. Conclusion I contradicts the statement, so only II is true.
+
+Q 59 | bch | Blood & Body Systems
+Which of the following is a disorder characterised by a low platelet count?
+(1) Thrombocytosis
+(2) Thrombocytopenia
+(3) Leukopenia
+(4) Anemia
+= 2
+~ Thrombocytopenia means a platelet count below about 150,000 per microlitre. Thrombocytosis is a raised platelet count, leukopenia is a low white blood cell count and anaemia is a low haemoglobin or red cell level.
+
+Q 60 | bch | Blood & Body Systems
+Read the given assertion (A) and reason (R) and select the most appropriate option.
+(A): White blood cells play a vital role in the immune system by defending the body against infectious diseases and foreign invaders.
+(R): White blood cells perform this function primarily through phagocytosis, where they engulf and digest pathogens.
+(1) Both (A) and (R) are true, and (R) is the correct explanation of (A)
+(2) Both (A) and (R) are true, but (R) is not the correct explanation of (A)
+(3) (A) is true, but (R) is false
+(4) (A) is false, but (R) is true
+= 1
+~ White blood cells defend the body against infection, and phagocytosis (engulfing and digesting pathogens by neutrophils and macrophages) is a major way they do so. APPSC treats R as the explanation of A; note that lymphocytes also act through antibodies and cell killing. (Official key; some sources differ.)
+
+Q 61 | bch | Blood & Body Systems
+Which of the following proteins is directly responsible for converting fibrinogen into fibrin during clot formation?
+(1) Thrombin
+(2) Plasmin
+(3) Prothrombin
+(4) Collagen
+= 1
+~ Thrombin, the active serine protease formed from prothrombin, cleaves fibrinopeptides from soluble fibrinogen to give fibrin monomers that polymerise into a clot. Prothrombin is only the inactive precursor, and plasmin dissolves fibrin (fibrinolysis).
+
+Q 62 | bch | Blood & Body Systems
+The non-cellular components of blood consist of ______.
+i) Fibrin
+ii) Thrombin
+iii) Sodium
+iv) Plasma
+v) Thrombocytes
+vi) Phagocytes
+vii) Creatinine
+viii) Water
+ix) hormones
+x) enzymes
+(1) i, iii, x
+(2) i, ii, iii, iv, vii, viii, ix
+(3) ii, iii, vii, ix
+(4) viii, ix, x
+= 2
+~ Thrombocytes (platelets) and phagocytes are cellular elements and are excluded. Fibrin, thrombin, sodium, plasma, creatinine, water and hormones are all non-cellular, which gives option 2. Enzymes (x) are also dissolved in plasma, but no option contains every non-cellular item. (Official key; some sources differ.)
+
+Q 63 | bch | Blood & Body Systems
+What is the process of separating lymphocytes from whole blood called?
+(1) Lymphapheresis
+(2) Leukapheresis
+(3) Lateletpheresis
+(4) Erythroporesis
+= 1,2
+~ Lymphapheresis (lymphocytapheresis) removes lymphocytes specifically. Leukapheresis separates white blood cells from whole blood, and it is the usual way of collecting lymphocytes. Hence APPSC accepted either option 1 or 2. Options 3 and 4 are misspelt and refer to platelets (plateletpheresis) and red cells.
+
+Q 64 | bch | Immunology
+Which of the following is the primary mechanism by which convalescent plasma therapy aids in the treatment of infectious diseases like COVID-19?
+(1) Neutralising pathogens by binding to viral antigens
+(2) Stimulating the patient's immune system to produce more antibodies
+(3) Directly destroying infected host cells
+(4) Inhibiting RNA transcription within host cells
+= 1
+~ Convalescent plasma comes from recovered patients and contains ready-made neutralising antibodies, a form of passive immunisation. These antibodies bind the virus and block or clear it. The recipient's own antibody production is not what is stimulated, and the plasma has no direct cell-killing or antiviral drug action.
+
+Q 65 | bch | Blood & Body Systems
+The composition of lymph is most similar to ________.
+(1) blood
+(2) serum
+(3) cytosol
+(4) interstitial fluid
+= 4
+~ Lymph is formed from interstitial (tissue) fluid that drains into lymphatic capillaries, so the two have nearly the same composition. Lymph differs mainly by carrying lymphocytes and, in intestinal lymph, absorbed fats. It has much less protein than blood plasma.
+
+Q 66 | bch | Immunology
+Which of the following accurately defines autoimmunity?
+(1) An immune response against foreign antigens
+(2) An immune response against self-antigens
+(3) A type of hypersensitivity reaction
+(4) A type of immune deficiency
+= 2
+~ Autoimmunity is a failure of self-tolerance in which the immune system attacks the body's own antigens. A response to foreign antigens is the normal immune response, and immune deficiency is a failure of the response rather than an excess.
+
+Q 67 | bch | Immunology
+Which of the following cells acts as antigen-presenting cell to initiate autoimmune response?
+(1) Tissue macrophages
+(2) Cytokines
+(3) B cells
+(4) Natural killer cells
+= 1
+~ Macrophages in tissues take up self-antigens, process them and present peptides on MHC class II to T helper cells, which can start an autoimmune response. Cytokines are signalling proteins, not cells, and NK cells are not antigen-presenting cells. (B cells can also present antigen, but APPSC's key is option 1.) (Official key; some sources differ.)
+
+Q 68 | bch | Immunology
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Hashimoto’s disease is characterised by the presence of anti-thyroid antibodies.
+Reason (R) : The immune system produces antibodies against thyroid proteins, leading to thyroid inflammation and damage.
+(1) Both A and R are true, and R is not the correct explanation of A.
+(2) Both A and R are true, and R is the correct explanation of A.
+(3) A is true, and R is false.
+(4) A is false, and R is true.
+= 2
+~ Hashimoto's thyroiditis is an autoimmune disease with antibodies to thyroid peroxidase and thyroglobulin. The reason states what these antibodies do, namely attack thyroid proteins and cause inflammation and gland damage, so R directly explains A.
+
+Q 69 | bch | Endocrinology
+Which of the following is true about thyrotoxicosis?
+(1) Excessive thyroid hormone secretion
+(2) Deficient thyroid hormone secretion
+(3) Normal thyroid hormone production
+(4) Thyroid gland inflammation
+= 1
+~ Thyrotoxicosis is the clinical state caused by an excess of thyroid hormones (T3 and T4), as in Graves' disease. Deficient hormone is hypothyroidism, and inflammation of the gland (thyroiditis) is a separate condition, although it can sometimes cause thyrotoxicosis.
+
+Q 70 | bch | Immunology
+Which of the following autoantibodies is most commonly associated with Systemic Lupus Erythematosus (SLE)?
+(1) Antinuclear antibody (ANA)
+(2) Anti-dsRNA
+(3) Anti-histones
+(4) Anti-RP(Riboprotein)
+= 1
+~ Antinuclear antibodies are present in more than 95% of patients with SLE, making them the most common and the standard screening test. Anti-dsDNA and anti-Sm are more specific but less sensitive, and anti-histone antibodies are typical of drug-induced lupus.
+
+Q 71 | bch | Immunology
+Read the given statement(s) and conclusion(s) and select the most appropriate option.
+Statement: Autoimmunity occurs when the immune system mistakenly identifies self-antigens as foreign and mounts an immune response against them.
+Conclusion: Regulatory T cells (Tregs) play a crucial role in preventing autoimmunity by suppressing self-reactive T cells.
+(1) The statement is correct, but the conclusion is incorrect.
+(2) Both the statement and conclusion are correct, but they are unrelated.
+(3) Both the statement and conclusion are correct, and the conclusion is a direct result of the statement.
+(4) The statement is incorrect, but the conclusion is correct.
+= 3
+~ The statement correctly defines autoimmunity as a loss of tolerance to self. Tregs (CD4+ CD25+ FoxP3+ cells) maintain peripheral tolerance by suppressing self-reactive T cells, so their loss leads to autoimmunity. APPSC therefore treats the conclusion as following directly from the statement.
+
+Q 72 | bch | Immunology
+Which of the following autoimmune diseases is categorised as systemic?
+(1) Grave’s disease
+(2) Addison’s disease
+(3) Sjögren’s syndrome
+(4) Hashimoto's thyroiditis
+= 3
+~ Sjögren's syndrome affects the exocrine glands and can involve joints, lungs, kidneys and nerves, so it is classed as a systemic autoimmune disease. Graves' disease and Hashimoto's thyroiditis target the thyroid and Addison's disease targets the adrenal cortex, so these are organ-specific.
+
+Q 73 | bch | Immunology
+Which type of antibody is commonly elevated in individuals with Hashimoto’s disease?
+(1) Anti-insulin antibodies
+(2) Anti-thyroglobulin antibodies
+(3) Anti-gliadin antibodies
+(4) Anti-Ro antibodies
+= 2
+~ Hashimoto's thyroiditis is marked by antibodies to thyroglobulin and thyroid peroxidase (anti-TPO). Anti-insulin antibodies are seen in type 1 diabetes, anti-gliadin in coeliac disease and anti-Ro in Sjögren's syndrome and SLE.
+
+Q 74 | bch | Immunology
+A statement is given followed by two conclusions numbered I and II. Identify which of the given conclusions is/are true based on the given statement.
+Statement: Rheumatoid arthritis and lupus are autoimmune diseases.
+Conclusions:
+I. Both are autoimmune connective tissue diseases.
+II. Both are autoimmune neurologic diseases.
+(1) Only conclusion I is true.
+(2) Only conclusion II is true.
+(3) Both conclusions I and II are true.
+(4) Neither conclusion I nor II is true.
+= 1
+~ Rheumatoid arthritis and systemic lupus erythematosus are both classic autoimmune connective tissue (rheumatic) diseases, so conclusion I is true. Neither is primarily a neurologic disease, although lupus can involve the nervous system, so conclusion II is false.
+
+Q 75 | bch | Immunology
+What type of disease is rheumatoid arthritis an example of?
+(1) Degenerative joint disease
+(2) Autoimmune disorder
+(3) Inflammatory muscle disease
+(4) Metabolic bone disease
+= 2
+~ In rheumatoid arthritis the immune system attacks the synovial lining of the joints, causing chronic inflammation. It is an autoimmune disorder, unlike osteoarthritis, which is the degenerative joint disease.
+
+Q 76 | bch | Immunology
+Match each laboratory finding (A-D) in Systemic Lupus Erythematosus (SLE) with its corresponding significance (1-4).
+Laboratory finding | Significance
+A. Elevated Erythrocyte Sedimentation Rate | 1. Indicates increased risk of thrombosis
+B. Anti-phospholipid antibodies | 2. Associated with systemic inflammation
+C. Anti-Ro/SSA antibodies | 3. Correlates with neonatal lupus in infants
+D. Low platelet count | 4. Marker for hematologic involvement
+(1) A-2, B-1, C-3, D-4
+(2) A-1, B-2, C-4, D-3
+(3) A-4, B-3, C-1, D-2
+(4) A-3, B-4, C-2, D-1
+= 4
+~ The keyed option pairs a raised ESR with neonatal lupus and anti-Ro/SSA with systemic inflammation, which does not fit standard SLE teaching. The usual associations are: raised ESR with systemic inflammation, anti-phospholipid antibodies with thrombosis risk, anti-Ro/SSA with neonatal lupus (congenital heart block), and low platelets with haematological involvement, which is option 1. (Official key; some sources differ.)
+
+Q 77 | bch | Endocrinology
+Autoantibodies block thyroid cell stimulation by binding to which of the following receptors?
+(1) Acetylcholine
+(2) Thyrotropin
+(3) Thyrocholine
+(4) Acetyltropin
+= 2
+~ In autoimmune thyroid disease the antibodies act on the thyrotropin (TSH) receptor of thyroid follicular cells: stimulating antibodies cause Graves' disease, while blocking antibodies prevent TSH from stimulating the cell and cause hypothyroidism. Acetylcholine receptors are the target in myasthenia gravis, and "thyrocholine" and "acetyltropin" are not receptors.
+
+Q 78 | bch | Immunology
+Which type of immunoglobulin is primarily found in mucosal secretions, such as saliva, tears, and breast milk, and plays a critical role in mucosal immunity?
+(1) IgM
+(2) IgE
+(3) IgA
+(4) IgD
+= 3
+~ Secretory IgA, a dimer joined by a J chain and carrying a secretory component, is the main antibody in saliva, tears, colostrum and breast milk, and in gut and respiratory secretions. IgM is mostly confined to blood and is the first antibody made in an infection, and IgE is involved in allergy and parasitic immunity.
+
+Q 79 | bch | Immunology
+What is the basic structural unit of an immunoglobulin (Ig) molecule?
+(1) One heavy chain and one light chain
+(2) Two heavy chains and two light chains
+(3) Four heavy chains
+(4) Two light chains only
+= 2
+~ The basic unit (monomer) of an antibody is a Y-shaped molecule made of two identical heavy chains and two identical light chains held together by disulphide bonds. Polymeric antibodies such as pentameric IgM and dimeric IgA are built from several of these units.
+
+Q 80 | bch | Immunology
+Which of the following statements is correct with respect to the nature and structure of Igs?
+(1) Immunoglobulins, a specialised group of proteins are not mostly associated with gamma globulin fraction of plasma proteins.
+(2) Immunoglobulin is not a functional term while gamma globulin is a physical term.
+(3) Immunoglobulin molecules consist of three identical heavy chains and three light chains held together by disulphide linkages and covalent interactions.
+(4) The heavy chains of immunoglobulin are linked to carbohydrates, hence immunoglobulins are glycoproteins.
+= 4
+~ Oligosaccharides are covalently attached to the heavy chains, so immunoglobulins are glycoproteins. Options 1 and 2 are reversed: antibodies are mostly in the gamma-globulin fraction, and "immunoglobulin" is the functional term while "gamma globulin" describes electrophoretic mobility. Option 3 is wrong because a basic Ig has two, not three, heavy and light chains.
+
+Q 81 | bch | Immunology
+Which of the following adjuvants is NOT used in the HPV vaccine?
+(1) Aluminium hydroxide
+(2) Incomplete Freund’s adjuvant
+(3) 3-O-desacyl-4’monophophoryl lipid A (MPL)
+(4) Quillaja saponaria (QS-21)
+= 2
+~ Licensed HPV vaccines use aluminium-based adjuvants (aluminium hydroxyphosphate sulfate in Gardasil; aluminium hydroxide plus MPL, together called AS04, in Cervarix). Incomplete Freund's adjuvant, a water-in-oil emulsion, is not licensed for human vaccines because of severe local reactions. QS-21 is a saponin used in other vaccines (for example Shingrix) and in experimental HPV formulations, so it is arguably not used in licensed HPV vaccines either. (Official key; some sources differ.)
+
+Q 82 | bch | Immunology
+Match the heavy chain type in Column A with its characteristic immunoglobulin property or function in Column B.
+Column A : Heavy chains | Column B: Properties/functions
+1. Gamma (γ) | A. Found in mucosal surfaces and secretions
+2. Mu (μ) | B. 1st antibody formed against pathogens
+3. Epsilon (ε) | C. Crosses the placenta to protect the fetus
+4. Alpha (α) | D. Triggers histamine release in allergic responses
+(1) 1 → C, 2 → B, 3 → D, 4 → A
+(2) 1 → A, 2 → D, 3 → B, 4 → C
+(3) 1 → D, 2 → A, 3 → C, 4 → B
+(4) 1 → B, 2 → C, 3 → A, 4 → D
+= 1
+~ The γ chain defines IgG, which crosses the placenta; μ defines IgM, the first antibody made in a primary response; ε defines IgE, which sits on mast cells and triggers histamine release in allergy; and α defines IgA, found in mucosal secretions. This gives 1-C, 2-B, 3-D, 4-A.
+
+Q 83 | bch | Immunology
+What components are added to formulate a vaccine after the development of antigen?
+(1) Only adjuvants and stabilisers
+(2) Only stabilisers and preservatives
+(3) Adjuvants, assays and stabilisers
+(4) Adjuvants, stabilisers and preservatives
+= 4
+~ Once the antigen is produced, a vaccine is formulated with adjuvants (to strengthen the immune response), stabilisers (to keep the antigen stable in storage) and preservatives (to prevent microbial growth, especially in multi-dose vials). "Assays" are quality-control tests, not components added to the vaccine.
+
+Q 84 | bch | Immunology
+The variable region of a light chain in an immunoglobulin is encoded by the _________.
+(1) Segment V only
+(2) Segment J only
+(3) Segment C
+(4) Segments V and J
+= 4
+~ A light-chain variable region (VL) is assembled by DNA recombination of one V gene segment with one J gene segment, while the C segment encodes the constant region. Heavy chains use an additional D segment between V and J.
+
+Q 85 | bch | Immunology
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Ig heavy chains determine the class of an antibody.
+Reason (R): The heavy chain constant region determines the antibody class, IgA, IgD, IgG or IgM.
+(1) Both A and R are true, and R is not the correct explanation of A.
+(2) Both A and R are true and R is the correct explanation of A.
+(3) A is true, and R is false.
+(4) A is false, and R is true.
+= 2
+~ The class (isotype) of an antibody is defined by its heavy-chain constant region (α, δ, ε, γ, μ giving IgA, IgD, IgE, IgG, IgM), so the reason explains the assertion. The reason does not list IgE, but listing only some of the classes does not make it false.
+
+Q 86 | bch | Immunology
+A statement is given followed by two conclusions. Identify which of the given conclusions is/are true based on the given statement.
+Statement: Immunoglobulins (Igs) are also known as antibodies produced by B cells in response to antigenic stimulation. They play a crucial role in the immune system by recognising and binding to specific antigens marking them for destruction. IgG can be a major driver of inflammation in autoimmune and infectious diseases. IgG can activate monocytes/macrophages to secrete cytokines, which can induce tissue damage.
+Conclusions:
+I. Igs are essential for neutralising pathogens such as bacteria and viruses.
+II. They play a key role in inflammation and tissue damage.
+(1) Only conclusion I is true.
+(2) Only conclusion II is true.
+(3) Both conclusions I and II are true.
+(4) Neither conclusion I nor II is true.
+= 3
+~ The statement says Igs recognise and bind specific antigens and mark them for destruction, which supports conclusion I (neutralising bacteria and viruses). It also says IgG drives inflammation and can activate macrophages to release cytokines that damage tissue, which supports conclusion II. Both follow.
+
+Q 87 | bch | Immunology
+Read the given statement(s) and conclusion(s) and select the most appropriate option.
+Statement:
+The hypervariable (HV) regions of the light chain contribute to the diversity of the antigen-binding site.
+Conclusion:
+All three hypervariable regions in the light chain are derived solely from the V segment of the light chain gene.
+(1) Only the statement is correct.
+(2) Only the conclusion is correct.
+(3) Both the statement and the conclusion are correct.
+(4) Both the statement and the conclusion are incorrect.
+= 1
+~ The statement is correct: the hypervariable regions (complementarity-determining regions) form the antigen-binding site and create its diversity. The conclusion is wrong because only HV1 and HV2 (CDR1 and CDR2) are encoded by the V segment; HV3 (CDR3) lies at the V-J junction and is encoded partly by J, along with junctional diversity.
+
+Q 88 | bch | Immunology
+For the cleavage of Ig G, which enzyme produces three fragments?
+(1) Papain
+(2) Pepsin
+(3) Trypsin
+(4) Chymotrypsin
+= 1
+~ Papain cuts IgG on the N-terminal side of the hinge disulphide bonds and gives three fragments: two identical Fab (antigen-binding) fragments and one Fc fragment. Pepsin cuts on the C-terminal side of the hinge and gives a single F(ab')2 fragment plus small pieces of Fc.
+
+Q 89 | bch | Endocrinology
+Which of the following is classified as a peptide hormone?
+(1) Thyroxine
+(2) Adrenaline
+(3) Insulin
+(4) Progesterone
+= 3
+~ Insulin is a 51-amino-acid polypeptide hormone made of an A chain and a B chain. Thyroxine and adrenaline are amino-acid-derived (amine) hormones, and progesterone is a steroid.
+
+Q 91 | bch | Endocrinology
+Hormones can be classified based on their chemical structure. Which of the following is NOT a category of hormones based on this classification?
+(1) Peptide hormones
+(2) Steroid hormones
+(3) Glycolipid hormones
+(4) Amine hormones
+= 3
+~ Chemically, hormones are grouped as peptide/protein hormones, steroid hormones and amine (amino-acid-derived) hormones, with fatty-acid-derived eicosanoids sometimes added as a fourth group. "Glycolipid hormones" is not a recognised class.
+
+Q 92 | bch | Endocrinology
+Chemical messengers secreted by ductless glands are called ___________.
+(1) vitamins
+(2) proteins
+(3) antibodies
+(4) hormones
+= 4
+~ Ductless (endocrine) glands release hormones directly into the blood, and these chemical messengers act on distant target cells. Vitamins are dietary micronutrients and antibodies are immune proteins; not all proteins are chemical messengers.
+
+Q 93 | bch | Endocrinology
+Which of the following is a characteristic of endocrine glands?
+(1) Produce hormones that are secreted into the blood stream
+(2) Produce hormones that are secreted into the digestive system
+(3) Produce hormones that are secreted into the nervous system
+(4) Do not produce any hormones
+= 1
+~ Endocrine glands have no ducts and release their hormones directly into the bloodstream, which carries them to target tissues. Secretion through ducts into the gut or onto a surface is the feature of exocrine glands.
+
+Q 94 | bch | Endocrinology
+The given statement is followed by two conclusions numbered I and II. Identify which of the given conclusions is/are true based on the given statement.
+Statement:
+Adrenaline is released in response to stress and stimulates the 'fight or flight' response.
+Conclusions:
+I. Overproduction of adrenaline can lead to hypertension, tachycardia and anxiety.
+II. Lower production of adrenaline causes dwarfism and short stature.
+(1) Only conclusion I is true.
+(2) Only conclusion II is true.
+(3) Both conclusions I and II are true.
+(4) Neither conclusion I nor II is true.
+= 1,4
+~ Excess adrenaline (for example from a phaeochromocytoma) causes hypertension, tachycardia and anxiety, so conclusion I is true as a fact. Conclusion II is false, since dwarfism results from growth hormone deficiency, not low adrenaline. APPSC accepted both option 1 and option 4 because conclusion I, though correct, cannot be drawn from the given statement, which says nothing about overproduction.
+
+Q 95 | bch | Endocrinology
+Which of the following hormones is produced by the hypothalamus and inhibits the release of the growth hormone from the pituitary gland?
+(1) Growth hormone-releasing hormone (GHRH)
+(2) Somatostatin (SST)
+(3) Thyrotropin-releasing hormone (TRH)
+(4) Corticotropin-releasing hormone (CRH)
+= 2
+~ Somatostatin (growth hormone-inhibiting hormone) from the hypothalamus suppresses GH secretion by the anterior pituitary. GHRH stimulates GH release, while TRH and CRH act on TSH and ACTH release respectively.
+
+Q 96 | bch | Endocrinology
+Match the hormones in column A with their functions in column B.
+Column A | Column B
+1. Parathyroid hormone | A. Reduces blood calcium levels
+2. Thyroxine (T4) | B. Increases blood calcium levels
+3. Calcitonin | C. Regulates metabolism and energy levels
+(1) 1-A, 2-C, 3-B
+(2) 1-B, 2-C, 3-A
+(3) 1-C, 2-B, 3-A
+(4) 1-B, 2-A, 3-C
+= 2
+~ Parathyroid hormone raises blood calcium (bone resorption, renal reabsorption and activation of vitamin D), calcitonin lowers it, and thyroxine regulates basal metabolic rate and energy use. This gives 1-B, 2-C, 3-A.
+
+Q 97 | bch | Endocrinology
+Match the following.
+A) Antidiuretic hormone | 1) Promotes growth of the body
+B) Oxytocin | 2) Promotes TSH release
+C) Thyrotrophin-releasing hormone | 3) Stimulates uterine contraction and milk ejection
+D) Growth hormone | 4) Promotes water reabsorption by kidneys
+(1) A-4, B-3, C-2, D-1
+(2) A-4, B-3, C-1, D-2
+(3) A-4, B-2, C-3, D-1
+(4) A-3, B-4, C-2, D-1
+= 1
+~ Antidiuretic hormone (vasopressin) promotes water reabsorption in the kidney's collecting ducts; oxytocin stimulates uterine contraction and milk ejection; hypothalamic TRH promotes TSH release from the pituitary; and growth hormone promotes growth of the body. This gives A-4, B-3, C-2, D-1.
+
+Q 98 | bch | Endocrinology
+The hormone that binds to intracellular receptor is ________.
+(1) Adrenocorticotropic hormone
+(2) Thyroxine
+(3) Follicle stimulating hormone
+(4) Glucagon
+= 2
+~ Thyroxine is lipophilic: it enters the cell and binds intracellular (nuclear) receptors that regulate gene transcription, like steroid hormones. ACTH, FSH and glucagon are peptide hormones that bind cell-surface G-protein-coupled receptors and act through cAMP.
+
+Q 99 | bch | Endocrinology
+Which of the following is a downstream effect of cAMP activation in TSH signaling?
+(1) Inhibition of thyroglobulin
+(2) Stimulation of thyroid peroxidase activity
+(3) Reduced iodide transport
+(4) Decreased thyroid hormone secretion
+= 2
+~ TSH binds its G-protein-coupled receptor and raises cAMP, which stimulates iodide uptake, thyroglobulin synthesis, thyroid peroxidase activity and the synthesis and release of thyroid hormones. The other options describe the opposite effects.
+
+Q 100 | bch | Endocrinology
+Which of the following is an effect of estrogen on the hypothalamus?
+(1) Stimulation of GnRH production
+(2) Inhibition of TSH
+(3) Stimulation of FSH production
+(4) Inhibition of LH production
+= 1,3,4
+~ Estrogen acts on the hypothalamic-pituitary axis in two ways: low or steady levels give negative feedback (inhibiting GnRH, LH and FSH), while the high, sustained levels of the late follicular phase give positive feedback that stimulates GnRH and triggers the LH surge. Because the effect depends on the estrogen level, APPSC declared the question ambiguous and gave full marks for options 1, 3 or 4. Inhibition of TSH is not a recognised hypothalamic effect of estrogen.
+
+Q 101 | bch | Endocrinology
+Which of the following correctly describes one of the primary effects of adrenaline during the 'fight or flight' response?
+(1) It increases glycogen synthesis in the liver to store glucose for later use.
+(2) It promotes lipolysis in adipose tissue by activating hormone-sensitive lipase.
+(3) It decreases heart rate and blood pressure to conserve energy during stress.
+(4) It stimulates insulin secretion to enhance glucose uptake by skeletal muscles.
+= 2
+~ Adrenaline acts on beta-adrenergic receptors of fat cells, raising cAMP and activating hormone-sensitive lipase, so triglycerides are broken down and free fatty acids are released as fuel. It also breaks down (not stores) liver glycogen, raises heart rate and blood pressure, and suppresses insulin secretion.
+
+Q 102 | bch | Endocrinology
+Which hormone receptor is encoded by the diabetes gene (DB)?
+(1) Leptin receptor
+(2) Oxytocin receptor
+(3) Peptide receptor
+(4) Kinetin receptor
+= 1
+~ The db (diabetes) gene encodes the leptin receptor (Ob-R); its mutation produces severe obesity with diabetes-like features in db/db mice. The ob (obese) gene, in contrast, encodes the hormone leptin itself.
+
+Q 103 | bch | Blood & Body Systems
+Which part of the peripheral nervous system (PNS) is responsible for transmitting sensory information to the central nervous system?
+(1) Efferent neurons
+(2) Afferent neurons
+(3) Neuroglia
+(4) Nissl granules
+= 2
+~ Afferent (sensory) neurons carry impulses from receptors to the central nervous system, whereas efferent (motor) neurons carry commands from the CNS to muscles and glands. Neuroglia are supporting cells, and Nissl granules are clusters of rough endoplasmic reticulum in neuronal cell bodies.
+
+Q 104 | bch | Blood & Body Systems
+A statement is given, followed by conclusions numbered I and II. You are to decide which of the given conclusions could be drawn definitely from the given statement.
+Statement
+Certain specific neural system is/are involved in the regulation of emotions, such as fear and anxiety.
+Conclusions
+I. The Cochlear neural system processes auditory information.
+II. The Limbic neural system is responsible for controlling emotions.
+(1) Only conclusion I is true.
+(2) Only conclusion II is true.
+(3) Both conclusions I and II are true.
+(4) Neither conclusion I nor II is true.
+= 2
+~ The limbic system (amygdala, hippocampus, hypothalamus and related structures) governs emotions such as fear and anxiety, so conclusion II follows from the statement. Conclusion I is a true fact about the cochlear pathway, but it has nothing to do with the statement and so cannot be drawn from it.
+
+Q 105 | bch | Blood & Body Systems
+Which part of the nervous system is responsible for voluntary movements?
+(1) Somatic nervous system
+(2) Autonomic nervous system
+(3) Parasympathetic nervous system
+(4) Enteric nervous system
+= 1
+~ The somatic nervous system supplies skeletal muscles and controls voluntary movement. The autonomic system (sympathetic and parasympathetic divisions) and the enteric system regulate involuntary activities such as heart rate and gut motility.
+
+Q 106 | bch | Blood & Body Systems
+Preganglionic neurons lie within the _____________.
+(1) Central Nervous System (CNS)
+(2) Parasympathetic Nervous System
+(3) Somatic Nervous System
+(4) Sympathetic Nervous System
+= 1
+~ In autonomic pathways the cell body of the preganglionic neuron lies inside the CNS (brainstem or spinal cord), and its axon synapses on a postganglionic neuron in a ganglion outside the CNS. Preganglionic neurons of both the sympathetic and parasympathetic divisions therefore lie in the CNS.
+
+Q 107 | bch | Blood & Body Systems
+How many pairs of the spinal nerves are found in humans?
+(1) 31 pairs
+(2) 13 pairs
+(3) 12 pairs
+(4) 21 pairs
+= 1
+~ Humans have 31 pairs of spinal nerves: 8 cervical, 12 thoracic, 5 lumbar, 5 sacral and 1 coccygeal. The figure of 12 pairs is that of the cranial nerves.
+
+Q 108 | bch | Blood & Body Systems
+Given below are two statements: Assertion (A) and Reason (R). Read the statements carefully and select the correct option.
+(A): Neurons in the adult brain are unable to divide and multiply.
+(R): Neurons in the brain have reached the end of their cell cycle and are in a state of terminal differentiation.
+(1) Both A and R are true, but R is not the correct explanation for A.
+(2) Both A and R are true, and R is the correct explanation for A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 2
+~ Mature neurons are post-mitotic: they leave the cell cycle (G0) and are terminally differentiated, which is exactly why they cannot divide and multiply. Limited neurogenesis from neural stem cells in a few brain regions does not involve division of mature neurons.
+
+Q 109 | bch | Blood & Body Systems
+Which ion is primarily involved in the depolarisation phase of an action potential?
+(1) Calcium (Ca²⁺)
+(2) Potassium (K⁺)
+(3) Sodium (Na⁺)
+(4) Chloride (Cl⁻)
+= 3
+~ Depolarisation occurs when voltage-gated Na+ channels open and Na+ rushes into the neuron down its electrochemical gradient. Repolarisation is due to K+ efflux, and Ca2+ is important mainly for neurotransmitter release at the synapse.
+
+Q 110 | bch | Blood & Body Systems
+What role do chloride ions (Cl−) play in the composition of cerebrospinal fluid?
+(1) Stabilise pH
+(2) Enhance neuronal excitability
+(3) Maintain osmotic balance
+(4) Facilitate protein transport
+= 3
+~ Chloride is the main anion of cerebrospinal fluid (about 120-130 mmol/L, higher than in plasma), and together with sodium it maintains the fluid's osmotic balance and electrical neutrality. CSF pH is controlled mainly by the bicarbonate buffer system, not chloride.
+
+Q 111 | bch | Blood & Body Systems
+Read the given statement and conclusions and select the most appropriate option.
+Statement:
+All reflex actions are automatic responses to stimuli.
+Conclusions:
+1. All automatic responses are reflex actions.
+2. Reflex actions involve the nervous system.
+(1) Only conclusion 1 follows.
+(2) Only conclusion 2 follows.
+(3) Both conclusions 1 and 2 follow.
+(4) Neither conclusion 1 nor 2 follows.
+= 2
+~ A reflex is an involuntary response carried out through a reflex arc of the nervous system, so conclusion 2 is correct. Conclusion 1 reverses the statement: "all reflexes are automatic" does not mean "all automatic responses are reflexes", since heartbeat and glandular secretion are automatic but not reflexes.
+
+Q 112 | bch | Blood & Body Systems
+Read the given statement and conclusions carefully and select the correct option.
+Statement
+The gag reflex is a brainstem reflex that helps prevent foreign objects from entering the airway.
+Conclusions
+I. It is a protective reflex that prevents choking of the airway.
+II. It is a vital reflex that maintains the posture and balance.
+(1) Only conclusion I is true.
+(2) Only conclusion II is true.
+(3) Both conclusions I and II are true.
+(4) Neither conclusion I nor II is true.
+= 1
+~ The gag reflex is a protective brainstem reflex: stimulation of the back of the throat contracts the pharyngeal muscles and keeps foreign material out of the airway, so conclusion I is true. Posture and balance are maintained by vestibular, cerebellar and stretch reflexes, so conclusion II is false.
+
+Q 113 | bch | Blood & Body Systems
+Where are neurotransmitters present inside the neuron?
+(1) Synaptic knob
+(2) Synaptic vesicles
+(3) Nissl's granules
+(4) Schwan cells
+= 2
+~ Neurotransmitters are stored in membrane-bound synaptic vesicles in the axon terminal and released by exocytosis when an action potential arrives. The synaptic knob is the whole terminal that contains these vesicles, Nissl granules are rough endoplasmic reticulum, and Schwann cells are myelin-forming glial cells outside the neuron.
+
+Q 114 | bch | Blood & Body Systems
+Which of the following accurately describes the relationship between the stretch reflex and the Golgi tendon reflex in maintaining muscle function and preventing injury in our body?
+(1) The stretch reflex and Golgi tendon reflex are both monosynaptic, with the stretch reflex promoting muscle relaxation and the Golgi tendon reflex causing contraction to prevent overstretching.
+(2) The stretch reflex facilitates muscle contraction in response to sudden lengthening, while the Golgi tendon reflex inhibits excessive muscle contraction through polysynaptic pathways to protect tendons and prevent damage.
+(3) Both the stretch reflex and Golgi tendon reflex work through polysynaptic pathways, but the Golgi tendon reflex is faster because it involves fewer interneurons.
+(4) The stretch reflex only operates in the absence of conscious control, while the Golgi tendon reflex requires voluntary muscle activity to activate protective mechanisms.
+= 2
+~ The stretch (muscle-spindle) reflex makes a muscle contract when it is suddenly lengthened. The Golgi tendon reflex senses high tension and inhibits the muscle through an inhibitory interneuron, so it is polysynaptic, which protects the tendon from damage. Option 1 reverses their roles, and the stretch reflex is monosynaptic, not polysynaptic.
+
+Q 115 | bch | Blood & Body Systems
+Which part of the kidney filters urine from blood?
+(1) Proximal convoluted tube
+(2) Loop of Henle
+(3) Glomerulus
+(4) Distal convoluted tube
+= 3
+~ The glomerulus, a tuft of capillaries inside Bowman's capsule, filters plasma under pressure to form the glomerular filtrate. The tubules (proximal convoluted tubule, loop of Henle, distal convoluted tubule) do not filter; they reabsorb and secrete substances to turn the filtrate into urine.
+
+Q 116 | bch | Blood & Body Systems
+Match the hormones with their effects on urine formation.
+Hormones | Effects
+L. Anti Diuretic Hormone (ADH) | A. Increases sodium absorption
+M. Atrial Natriuretic Peptide (ANP) | B. Decreases water re-absorption
+N. Angiotensin II | C. Increases water re-absorption
+(1) L-A, M-B, N-C
+(2) L-C, M-A, N-B
+(3) L-C, M-B, N-A
+(4) L-B, M-C, N-A
+= 3
+~ ADH (vasopressin) increases water reabsorption in the collecting duct. ANP promotes loss of sodium and water, so it decreases water reabsorption. Angiotensin II increases sodium reabsorption, directly in the proximal tubule and through aldosterone. This gives L-C, M-B, N-A.
+
+Q 117 | bch | Blood & Body Systems
+What is the daily volume of glomerular filtrate in an adult male and female?
+(1) 50 litres in males and 90 litres in females
+(2) 120 litres in males and 130 litres in females
+(3) 180 litres in males and 150 litres in females
+(4) 180 litres in males and 180 litres in females
+= 3
+~ The glomerular filtration rate is about 125 mL/min in men, i.e. roughly 180 litres a day, and somewhat lower in women (about 105 mL/min, roughly 150 litres a day), which matches the keyed option. Many textbooks, however, quote 180 litres a day for adults without separating the sexes, which would favour option 4. (Official key; some sources differ.)
+
+Q 118 | bch | Nutrition & Vitamins
+In a modern day bomb calorimeter, the food sample is burnt in:
+(1) a vacuum chamber
+(2) an oxygen-rich environment
+(3) a nitrogen-rich environment
+(4) a carbon dioxide-rich environment
+= 2
+~ In a bomb calorimeter the weighed food sample is ignited electrically inside a sealed steel "bomb" filled with oxygen at high pressure (about 25-30 atm), so it burns completely. The heat released is measured as the rise in temperature of the surrounding water. Burning needs oxygen, so vacuum, nitrogen or carbon dioxide would not work.
+
+Q 119 | bch | Nutrition & Vitamins
+Which of the following nutrients is most closely associated with maintaining healthy bones?
+(1) Vitamin C
+(2) Calcium
+(3) Iron
+(4) Potassium
+= 2
+~ Calcium, with phosphate, forms hydroxyapatite, the mineral of bone, and a calcium-rich diet together with vitamin D maintains bone density. Vitamin C is needed for collagen, iron for haemoglobin, and potassium for fluid balance and nerve and muscle function.
+
+Q 120 | bch | Nutrition & Vitamins
+This question consists of two statements: Assertion (A) and Reason (R). Read the statements carefully and select the correct answer from the given options.
+(A): Nutraceuticals and functional foods play a crucial role in preventing chronic diseases.
+(R): They contain bioactive compounds that modulate metabolic pathways, thereby reducing the risk of chronic diseases.
+(1) Both A and R are true, and R is not the correct explanation of A.
+(2) Both A and R are true, and R is the correct explanation of A
+(3) A is true, and R is false.
+(4) A is false, and R is true.
+= 2
+~ Nutraceuticals and functional foods supply bioactive compounds, such as polyphenols, omega-3 fatty acids, phytosterols and probiotics, that modulate metabolic and inflammatory pathways. This is the mechanism by which they lower the risk of chronic diseases such as diabetes and cardiovascular disease, so R explains A.
+
+Q 121 | bch | Nutrition & Vitamins
+How much of vitamin A is required for a 70 kg adult man on daily basis?
+(1) 5000 IU
+(2) 1000 IU
+(3) 3000 IU
+(4) 4000 IU
+= 3
+~ The keyed figure of about 3000 IU a day is close to the 1000 µg of retinol recommended for an adult man (1 µg retinol is about 3.33 IU, so 1000 µg is about 3300 IU). Older references and food labels use 5000 IU, and the 2010 ICMR figure was lower (600 µg), so sources differ. (Official key; some sources differ.)
+
+Q 122 | bch | Nutrition & Vitamins
+Which is the right calorific value for the carbohydrates, fats and proteins obtained in a bomb calorimeter?
+(1) 4, 9 ,5
+(2) 6, 8, 7
+(3) 6, 9,7
+(4) 7, 8, 9
+= 1
+~ In a bomb calorimeter the gross heats of combustion are about 4.1 kcal/g for carbohydrate, 9.45 kcal/g for fat and 5.65 kcal/g for protein, which round to the keyed 4, 9 and 5. The physiological fuel values used in the body are 4, 9 and 4 kcal/g, because the body cannot oxidise the nitrogen of protein completely and excretes it as urea.
+
+Q 123 | bch | Nutrition & Vitamins
+The percentage of absorbed nitrogen retained in the body represents:
+(1) the biological value (BV) of protein
+(2) the biological value (BV) of fat
+(3) the biological value (BV) of carbohydrate
+(4) the biological value (BV) of vitamin
+= 1
+~ Biological value (BV) = (nitrogen retained / nitrogen absorbed) x 100, so it expresses how efficiently absorbed dietary protein is used by the body. Egg protein has the highest BV (about 90-100). Fat, carbohydrate and vitamins have no BV, since it is a measure of protein quality.
+
+Q 124 | bch | Clinical Biochemistry
+Which of the following statements is correct with the respect to alkaline phosphatase (ALP)?
+(1) Liver is the sole source of alkaline phosphatase.
+(2) The liver and bone isoenzymes of alkaline phosphatase (ALP) can be separated by electrophoresis.
+(3) Alkaline phosphatase is not elevated in cirrhosis of liver and hepatic tumours.
+(4) Alkaline phosphatase (ALP) is mainly not derived from bone and liver.
+= 2
+~ Serum ALP comes mainly from bone (osteoblasts) and liver (bile canaliculi), with smaller contributions from intestine and placenta, and these isoenzymes can be separated by electrophoresis. ALP is raised in cholestasis, cirrhosis, hepatic tumours and bone disease, so options 1, 3 and 4 are wrong.
+
+Q 125 | bch | Nutrition & Vitamins
+Match the following.
+A) Calcium | 1) Goiter
+B) Magnesium | 2) Hypochromic anaemia
+C) Iron | 3) Neuromuscular weakness
+D) Iodine | 4) Rickets
+(1) A-4, B-3, C-2, D-1
+(2) A-4, B-3, C-1, D-2
+(3) A-4, B-2, C-3, D-1
+(4) A-3, B-4, C-2, D-1
+= 1
+~ Calcium deficiency (with vitamin D) causes rickets, magnesium deficiency causes neuromuscular weakness and tetany, iron deficiency causes hypochromic microcytic anaemia, and iodine deficiency causes goitre. This gives A-4, B-3, C-2, D-1.
+
+Q 126 | bch | Nutrition & Vitamins
+What is the primary role of dietary fibre in adult nutrition?
+(1) Provides essential amino acids
+(2) Increases calcium absorption
+(3) Improves bowel regularity and supports gut health
+(4) Enhances glucose production
+= 3
+~ Dietary fibre is not digested by human enzymes; it adds bulk and holds water in the stool, which prevents constipation, and it feeds beneficial colonic bacteria. It supplies no amino acids, and it tends to slow glucose absorption rather than enhance glucose production.
+
+Q 127 | bch | Nutrition & Vitamins
+What is Marasmus characterised by?
+(1) Severe protein deficiency only
+(2) Severe deficiency of both calories and protein
+(3) Vitamin deficiency
+(4) Excess carbohydrate consumption
+= 2
+~ Marasmus is protein-energy malnutrition from a severe lack of total calories together with protein, causing severe wasting, loss of subcutaneous fat and growth failure without oedema. Kwashiorkor, in contrast, is mainly protein deficiency with a reasonable calorie intake and presents with oedema.
+
+Q 128 | bch | Nutrition & Vitamins
+Which of the following factors primarily influences BMR in children?
+(1) Age
+(2) Sex
+(3) Weight
+(4) Height
+= 3
+~ BMR depends mainly on the amount of metabolically active lean tissue, which in a growing child is reflected best by body weight (and the surface area that goes with it), so BMR rises with weight. Age, sex and height also affect BMR, so the choice of a single primary factor is debatable. (Official key; some sources differ.)
+
+Q 129 | bch | Nutrition & Vitamins
+A condition of severe, prolonged, and persistent vomiting during pregnancy is called _____.
+(1) hyperemesis gravidarum
+(2) placenta previa
+(3) gestational diabetes
+(4) preeclampsia
+= 1
+~ Hyperemesis gravidarum is intractable vomiting in pregnancy that leads to dehydration, electrolyte imbalance, ketosis and weight loss. Placenta previa is a low-lying placenta, gestational diabetes is glucose intolerance first detected in pregnancy, and pre-eclampsia is hypertension with proteinuria after 20 weeks.
+
+Q 130 | bch | Nutrition & Vitamins
+The daily requirement of riboflavin for an adult is _________.
+(1) 2.2 - 2.7 mg
+(2) 1.2 - 1.7 mg
+(3) 3.2 - 3.7 mg
+(4) 1.8 - 2.2 mg
+= 2
+~ The recommended daily allowance of riboflavin (vitamin B2) for an adult is about 1.2-1.7 mg, depending on energy intake and sex, since the need is linked to calorie consumption. The higher ranges given in the other options exceed the usual adult requirement.
+
+Q 131 | bch | Biomolecules & Metabolism
+What unique structural feature of glycogen makes it more readily mobilisable than starch in humans?
+(1) A higher proportion of α-1,6 glycosidic bonds
+(2) The presence of β-1,4 glycosidic bonds
+(3) Smaller molecular size compared to amylose
+(4) Lack of branching compared to amylopectin
+= 1
+~ Glycogen is more densely branched than starch, with an α-1,6 branch about every 8-12 glucose residues (about every 24-30 in amylopectin). Each branch gives another non-reducing end on which glycogen phosphorylase can act, so many glucose units can be released at once. β-1,4 bonds are found in cellulose, which humans cannot digest.
+
+Q 132 | bch | Nutrition & Vitamins
+Statement: A patient shows symptoms of bleeding gums, petechiae, poor wound healing, and fatigue. The dietary history reveals very low intake of fruits and vegetables.
+Conclusion: The patient has Vitamin C deficiency (scurvy), causing impaired collagen synthesis.
+Which biochemical process is directly inhibited in this deficiency?
+(1) Hydroxylation of proline and lysine residues in collagen
+(2) Cross-linking of tropocollagen fibers
+(3) Formation of collagen triple helix
+(4) N-glycosylation of collagen precursors
+= 1
+~ Vitamin C is the cofactor that keeps iron in the active site of prolyl and lysyl hydroxylases, which hydroxylate proline and lysine residues in procollagen. Without this step the collagen triple helix and its cross-links are unstable, producing the bleeding gums, petechiae and poor wound healing of scurvy. The triple helix and cross-linking defects are downstream results of the failed hydroxylation.
+
+Q 133 | bch | Nutrition & Vitamins
+Which of the following is a rich nutritional source of Vitamin K?
+(1) Citrus fruits (oranges, lemons, limes)
+(2) Leafy green vegetables (spinach, kale, collard greens)
+(3) Whole grains (brown rice, quinoa, whole wheat)
+(4) Legumes (lentils, chickpeas, black beans)
+= 2
+~ Green leafy vegetables such as spinach, kale and collard greens are the richest dietary sources of vitamin K1 (phylloquinone), which is needed for the gamma-carboxylation of clotting factors II, VII, IX and X. Citrus fruits are mainly a source of vitamin C, while whole grains and legumes provide B vitamins and minerals.
+
+Q 134 | bch | Blood & Body Systems
+Which protein is therapeutically useful for the treatment of burns and haemorrhage?
+(1) Globulin
+(2) Albumin
+(3) Haptoglobin
+(4) Transferrin
+= 2
+~ Albumin solution is given to restore plasma volume and oncotic pressure in burns, haemorrhage and shock. Haptoglobin binds free haemoglobin and transferrin carries iron, so neither is used as a volume expander.
+
+Q 135 | bch | Blood & Body Systems
+What is the primary function of albumin, a plasma protein?
+(1) Regulation of lipids
+(2) Regulation of blood clotting
+(3) Maintenance of blood pressure and volume
+(4) Transport of cofactor
+= 3
+~ Albumin makes up about 60% of plasma protein and provides most of the colloid osmotic (oncotic) pressure of plasma, thereby maintaining blood volume and blood pressure. It also transports bilirubin, fatty acids, calcium and drugs, but clotting is mainly the role of fibrinogen and the other coagulation factors.
+
+Q 136 | bch | Clinical Biochemistry
+Which of the following liver function tests is most sensitive for detecting alcohol induced liver damage?
+(1) Alanine transaminase (ALT)
+(2) Aspartate transaminase (AST)
+(3) Alkaline phosphatase (ALP)
+(4) Gamma-glutamyl transferase (GGT)
+= 4
+~ GGT is the most sensitive liver enzyme for alcohol-related liver injury, because ethanol induces its synthesis in hepatocytes, and it is raised even in heavy drinkers without overt disease. AST is also raised in alcoholic liver disease (AST:ALT above 2) but is less sensitive, and ALP mainly signals cholestasis.
+
+Q 137 | bch | Clinical Biochemistry
+Read the given statements and conclusions, and select the most appropriate option.
+Statement:
+Acid phosphatase (ACP) is primarily found in prostate gland, while alkaline phosphatase (ALP) is primarily found in liver and bone.
+Conclusions:
+I. ACP levels are elevated during prostate cancer.
+II. ALP levels are elevated during liver disease.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both conclusions I and II are true
+(4) Neither of conclusion I or II are true
+= 3
+~ Prostatic acid phosphatase rises in metastatic prostate cancer, and ALP rises in liver disease, especially cholestasis and infiltrative disease, as well as in bone disease. Both conclusions follow from the statement and are true.
+
+Q 138 | bch | Clinical Biochemistry
+Match the following laboratory tests with their corresponding approximate reference ranges.
+Laboratory Test | Reference range
+L. Serum Creatinine | A. 10-20 mg/d L
+M. Blood Urea Nitrogen (BUN) | B. 0.5-1.2mg/d L
+N. Total Bilirubin | C. 0.2-2.12 mg/d L
+(1) L-B, M-A, N-C
+(2) L-A, M-B, N-C
+(3) L-B, M-C, N-A
+(4) L-C, M-B, N-A
+= 1
+~ The usual adult reference values are serum creatinine about 0.5-1.2 mg/dL, blood urea nitrogen about 10-20 mg/dL, and total bilirubin about 0.2-1.2 mg/dL (printed here as 0.2-2.12). The only option that fits these is L-B, M-A, N-C.
+
+Q 139 | bch | Clinical Biochemistry
+Match the following laboratory tests with their corresponding approximate reference ranges in normal adult men.
+Laboratory Test | Reference Range
+L. Serum Creatinine | A. 8-24 mg/d L
+M. Blood Urea Nitrogen (BUN) | B. 0.6 -1.2mg/d L
+N. Total Bilirubin | C. 0.3- 1.2 mg/d L
+(1) L-B, M-A, N-C
+(2) L-A, M-B, N-C.
+(3) L-B, M-C, N-A
+(4) L-C, M-B, N-A
+= 1
+~ In normal adult men serum creatinine is about 0.6-1.2 mg/dL, blood urea nitrogen about 8-24 mg/dL, and total bilirubin about 0.3-1.2 mg/dL. This gives L-B, M-A, N-C.
+
+Q 140 | bch | Clinical Biochemistry
+The excretory function of the liver can be evaluated by using a dye ____________.
+(1) inulin
+(2) bromosulphthalein
+(3) iodine
+(4) gadolinium
+= 2
+~ In the bromosulphthalein (BSP) test the dye is taken up by hepatocytes, conjugated and excreted in bile, so the rate at which it clears from blood reflects excretory function (the test is now rarely used). Inulin is used to measure glomerular filtration rate, and gadolinium is an MRI contrast agent.
+
+Q 141 | bch | Clinical Biochemistry
+Which serum enzyme is most predominantly elevated in viral hepatitis?
+(1) Alanine transaminase
+(2) γ-Glutamyl transpeptidase
+(3) Alcohol dehydrogenase
+(4) Lactate dehydrogenase
+= 1
+~ In viral hepatitis the aminotransferases rise most, often to several hundred or thousand units per litre, with ALT typically higher than AST because ALT is more specific to the liver. GGT and ALP rise more in cholestasis, and LDH is raised non-specifically and only modestly.
+
+Q 142 | bch | Clinical Biochemistry
+Which of the following types of jaundice is caused by an obstruction in the bile duct?
+(1) Pre-hepatic jaundice
+(2) Hepatic jaundice
+(3) Post-hepatic jaundice
+(4) Neonatal jaundice
+= 3
+~ Post-hepatic (obstructive) jaundice results from blockage of bile flow, for example by gallstones or a tumour of the pancreatic head, and causes conjugated hyperbilirubinaemia, pale stools and dark urine. Pre-hepatic jaundice is due to excess haemolysis and hepatic jaundice to hepatocyte damage.
+
+Q 143 | bch | Clinical Biochemistry
+A significant elevation of both aspartate aminotransferase (AST) and alanine aminotransferase (ALT) with an AST/ALT ratio greater than 2 is most suggestive of what?
+(1) Non-alcoholic fatty liver disease (NAFLD)
+(2) Acute hepatitis
+(3) Alcoholic liver disease
+(4) Hepatocellular carcinoma
+= 3
+~ An AST/ALT ratio above 2 is the classic pattern of alcoholic liver disease, because alcohol causes pyridoxal phosphate deficiency (lowering ALT activity) and mitochondrial injury that releases AST. In viral hepatitis and NAFLD the ALT is usually equal to or higher than the AST.
+
+Q 144 | bch | Clinical Biochemistry
+Which of the following is a characteristic of GGT (gamma-glutamyl transferase)?
+(1) High molecular weight
+(2) Induced by alcohol consumption
+(3) High isoelectric point
+(4) Hydrophobic nature
+= 2
+~ GGT is a membrane-bound enzyme of hepatocytes and bile ducts whose synthesis is induced by alcohol and by drugs such as phenytoin and barbiturates, which makes it a sensitive marker of alcohol intake and hepatobiliary disease. The other options are not recognised distinguishing features of GGT.
+
+Q 145 | bch | Biomolecules & Metabolism
+The lipoprotein(s) possessing the highest quantity of phospholipids is/are:
+(1) HDL
+(2) LDL
+(3) VLDL
+(4) chylomicrons
+= 1
+~ HDL has the highest phospholipid content, about 25-30% of the particle by weight, which surrounds its small cholesteryl-ester core. In LDL cholesteryl ester predominates, and VLDL and chylomicrons are mostly triacylglycerol (chylomicrons about 85-90%).
+
+Q 146 | bch | Clinical Biochemistry
+What is the most likely reason for ketonuria in a non-diabetic individual?
+(1) Starvation
+(2) Acute infection
+(3) Proteinuria
+(4) Hematuria
+= 1
+~ In starvation or prolonged fasting, low insulin and depleted glycogen drive fatty-acid oxidation and ketone body formation, which spill into the urine. Febrile illness and vomiting can add to it, but starvation is the classic non-diabetic cause. Proteinuria and haematuria are signs of kidney or urinary tract disease and do not cause ketonuria.
+
+Q 147 | bch | Biomolecules & Metabolism
+Statement: Creatine supplementation increases phosphocreatine stores in muscles, enabling rapid regeneration of ATP during high-intensity exercise.
+Conclusion: Creatine supplementation directly enhances the energy availability in muscles during intense activities.
+What is the correct evaluation of the conclusion?
+(1) The conclusion is correct.
+(2) The conclusion is incorrect.
+(3) The conclusion is unrelated to the statement.
+(4) The conclusion is speculative.
+= 1
+~ Phosphocreatine donates its phosphate group to ADP through creatine kinase, regenerating ATP within seconds during short, intense effort. If supplements raise phosphocreatine stores, more ATP-regenerating capacity is available in the muscle, so the conclusion follows directly from the statement.
+
+Q 148 | bch | Clinical Biochemistry
+Match the diseases with the tests used for diagnosis.
+Diseases | Diagnostic tests
+A. Diabetes mellitus | 1. Oral Glucose Tolerance Test (OGTT)
+B. Helicobacter pylori | 2. Urease breath test
+C. Pancreatitis | 3. Serum Lipase and Amylase
+D. Vitamin B12 Deficiency | 4. Schilling Test
+(1) A-4, B-3, C-1, D-2
+(2) A-1, B-2, C-3, D-4
+(3) A-3, B-4, C-2, D-1
+(4) A-2, B-1, C-4, D-3
+= 2
+~ The OGTT diagnoses diabetes mellitus, the urease breath test detects H. pylori (which has urease activity), serum lipase and amylase are raised in acute pancreatitis, and the Schilling test measures vitamin B12 absorption in B12 deficiency. This gives A-1, B-2, C-3, D-4.
+
+Q 149 | bch | Clinical Biochemistry
+Which of the following is a characteristic of acid phosphatase (ACP)?
+(1) High isoelectric point
+(2) Hydrophobic nature
+(3) Found in prostrate tissue
+(4) High molecular weight
+= 3
+~ Acid phosphatase is found in high concentration in prostate tissue (the tartrate-labile prostatic fraction) and was long used as a marker of metastatic prostate cancer, now largely replaced by PSA. The other options are not recognised characteristic features of the enzyme.
+
+Q 150 | bch | Clinical Biochemistry
+Which of the following renal function tests is most sensitive for early detection of kidney damage?
+(1) Urinalysis
+(2) Serum creatinine
+(3) Estimated glomerular filtration rate (eGFR)
+(4) Blood urea nitrogen (BUN)
+= 3
+~ The eGFR, calculated from serum creatinine with age and sex (for example by the CKD-EPI equation), detects a fall in filtration earlier than serum creatinine or BUN alone, which can stay in the normal range until a large part of nephron function is lost. Urinalysis is useful for finding protein or blood but does not measure filtration.
