@@ -346,7 +346,8 @@ def tiles(conf, qs_n):
     pb = conf['pb']
     ph = lambda k: f'<span class="etile-ph">{D.img(k, small=True, alt="")}</span>'
     css = ('<style>.etile-ph{display:block;margin:-20px -22px 6px;height:128px;overflow:hidden;border-radius:var(--r) var(--r) 0 0;background:var(--line)}'
-           '.etile-ph img{width:100%;height:100%;object-fit:cover;display:block}</style>')
+           '.etile-ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}.etile:hover .etile-ph img{transform:scale(1.06)}'
+           '@media (prefers-reduced-motion:reduce){.etile-ph img{transition:none}.etile:hover .etile-ph img{transform:none}}</style>')
     return (css + f'<a class="etile" href="{pb}{DIR}/#year">{ph("lepakshi")}<span class="etile-k">01 · Mains PYQs</span><b>Year-wise</b>'
             f'<span class="etile-p">The 2025, 2023 and 2020 Mains: all {qs_n} questions of Papers II–V, each with a model answer, and the Paper I essay topics.</span>'
             f'<span class="etile-price">✓ Questions free · answers in the pass</span></a>'

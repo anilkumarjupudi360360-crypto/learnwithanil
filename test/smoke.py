@@ -119,7 +119,7 @@ async def main():
                     await pg.click('[data-act="pick"][data-i="0"]'); await pg.click('[data-act="check"]')
                 await pg.screenshot(path=f'{SHOTS}/quiz-recall.png')
                 await pg.click('[data-act="finish"]'); await pg.wait_for_timeout(150)
-                mis = await pg.evaluate('document.getElementById("mcount").textContent')
+                mis = await pg.evaluate('Object.keys((JSON.parse(localStorage.getItem("lwa-appsc-g2-v1")||"{}").mistakes)||{}).length')
                 print('mistakes after two quizzes:', mis)
                 # builder + timed test
                 await pg.evaluate('location.hash="practice"'); await pg.wait_for_timeout(150)
