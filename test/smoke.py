@@ -78,6 +78,10 @@ async def main():
             sw = await pg.evaluate('document.documentElement.scrollWidth');
             if sw > width: errors.append(f'{name}: horizontal overflow {sw}>{width}')
             await pg.evaluate('window.__same = 1')
+            # board tiles first (Anil, 1 Nov 2026): the exam tiles show only after a board is opened
+            if await pg.locator('#hub-static button.board').count() < 5: errors.append(f'{name}: start page should show the exam-board tiles')
+            if await pg.is_visible('#hub-static a.exam.live[href="/appsc-group-2/"]'): errors.append(f'{name}: exam tiles should be folded under the boards')
+            await pg.click('#hub-static button.board[data-cat="ap"]'); await pg.wait_for_timeout(150)
             await pg.click('#hub-static a.exam.live[href="/appsc-group-2/"]'); await pg.wait_for_timeout(150)
             assert await pg.evaluate('location.pathname') == '/appsc-group-2/', 'Group-II tile should open /appsc-group-2/'
             assert await pg.evaluate('window.__same === 1'), 'moving between views should not reload the page'

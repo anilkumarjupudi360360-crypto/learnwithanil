@@ -1615,29 +1615,50 @@ def live_href(e):
     return e['live'] if '/' in e['live'] else '#' + e['live']
 
 
+BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
+
+
 def hub_html(catalog, counts, grand):
-    cats = catalog['cats']; byc = {c['id']: c for c in cats}
-    chips = (f'<button type="button" class="chip" data-act="excat" data-cat="all" aria-pressed="true"><span data-i18n="all">All exams</span> <span class="n">{len(catalog["exams"])}</span></button>'
-             + ''.join(f'<button type="button" class="chip" data-act="excat" data-cat="{c["id"]}" aria-pressed="false">{esc(c["name"])} '
-                       f'<span class="n">{sum(1 for e in catalog["exams"] if e["cat"] == c["id"])}</span></button>' for c in cats))
-    secs = []
+    """Start page exam list (Anil, 1 Nov 2026: "too clumsy ... one page prior with UPSC, APPSC, TGPSC, Railway, Banking, SSC tiles").
+    Board tiles first (live exams and questions on each), a row of popular exams and the student's recent exams; tapping a board
+    shows only its exams (live first, upcoming folded). Search still finds any exam on the list. All exam tiles stay in the HTML."""
+    cats = sorted(catalog['cats'], key=lambda c: (not any(e.get('live') for e in catalog['exams'] if e['cat'] == c['id']),
+                                                   BOARD_ORDER.index(c['id']) if c['id'] in BOARD_ORDER else 99))
+    boards, secs = [], []
     for c in cats:
-        tiles = []
-        for e in sorted([e for e in catalog['exams'] if e['cat'] == c['id']], key=lambda e: not e.get('live')):   # live exams first
+        ex = [e for e in catalog['exams'] if e['cat'] == c['id']]
+        lv = sorted([e for e in ex if e.get('live')], key=lambda e: -counts.get(e['id'], 0))
+        nq = sum(counts.get(e['id'], 0) for e in lv)
+        te = f'<span class="bd-te" lang="te">{esc(c["te"])}</span>' if c.get('te') else ''
+        names = ' · '.join(f'{e["b"] + " " if e["b"] not in c["name"] else ""}{e["t"]}' for e in lv[:5]) + (' …' if len(lv) > 5 else '')
+        st = (f'<b>{len(lv)} exam{"s" if len(lv) != 1 else ""} live</b> · {nq:,} questions' if lv else f'<b>Coming soon</b> · {len(ex)} exams listed')
+        boards.append(f'<button type="button" class="card board{"" if lv else " soon"}" data-act="excat" data-cat="{c["id"]}">'
+                      f'<span class="bd-n">{esc(c["name"])}</span>{te}<span class="bd-d">{esc(c["desc"])}</span>'
+                      + (f'<span class="bd-l">{esc(names)}</span>' if names else '') + f'<span class="bd-st">{st}</span><span class="bd-go" aria-hidden="true">→</span></button>')
+        tiles = {True: [], False: []}
+        for e in lv + [e for e in ex if not e.get('live')]:
             live = bool(e.get('live'))
             href = live_href(e) if live else '#exam/' + e['id']
             status = f'Live · {counts.get(e["id"], 0):,} questions' if live else 'Upcoming'
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
             if live and e['id'] in MAINS_EXAMS and MAINS_KIT: sub += '<span class="ex-x">Prelims + Mains PYQs with model answers</span>'
-            tiles.append(f'<a class="card exam{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-s="{esc(exam_terms(e, c))}">'
-                         f'<span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></a>')
-        te = f' <span class="te-sub" lang="te">{esc(c["te"])}</span>' if c.get('te') else ''
-        secs.append(f'<section class="exam-cat" data-cat="{c["id"]}"><div class="section-title"><h2>{esc(c["name"])}{te}</h2>'
-                    f'<span class="muted" style="font-size:14px">{esc(c["desc"])}</span></div><div class="exams">{"".join(tiles)}</div></section>')
+            tiles[live].append(f'<a class="card exam{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-id="{e["id"]}" data-s="{esc(exam_terms(e, c))}">'
+                               f'<span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></a>')
+        upc = (f'<details class="upc"{"" if lv else " open"}><summary>Upcoming exams in {esc(c["name"])} ({len(tiles[False])}) · being added one by one</summary>'
+               f'<div class="exams">{"".join(tiles[False])}</div></details>' if tiles[False] else '')
+        secs.append(f'<section class="exam-cat" data-cat="{c["id"]}"><div class="section-title"><h2>{esc(c["name"])}{" <span class=te-sub lang=te>" + esc(c["te"]) + "</span>" if c.get("te") else ""}</h2>'
+                    f'<span class="muted" style="font-size:14px">{esc(c["desc"])}</span></div>'
+                    + (f'<div class="exams">{"".join(tiles[True])}</div>' if tiles[True] else '') + upc + '</section>')
+    live_all = sorted([e for e in catalog['exams'] if e.get('live')], key=lambda e: -counts.get(e['id'], 0))
+    pop = ''.join(f'<a class="chip pop" href="{live_href(e)}" data-id="{e["id"]}">{esc(e["b"])} {esc(e["t"])}</a>' for e in live_all[:8])
     search = ('<label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="color:var(--muted)">'
               '<circle cx="11" cy="11" r="7"/><path d="m20 20-4-4" stroke-linecap="round"/></svg>'
               '<input id="examSearch" type="search" placeholder="Search an exam, e.g. Group-II, CGL, NDA, Police SI" aria-label="Search exams" autocomplete="off"></label>')
-    return (f'<div class="hub-tools">{search}<div class="chips" role="group" aria-label="Filter exams">{chips}</div></div>'
+    return (f'<div class="hub-tools">{search}</div>'
+            f'<div id="hubRecent" class="hub-row" hidden><span class="hub-k" data-i18n="contT">Continue where you left off</span><div class="chips" id="hubRecentL"></div></div>'
+            f'<div id="hubHome"><div class="boards" role="list">{"".join(boards)}</div>'
+            f'<div class="hub-row"><span class="hub-k" data-i18n="popT">Popular exams</span><div class="chips">{pop}</div></div></div>'
+            f'<div id="hubBack" hidden><button type="button" class="btn btn-secondary btn-sm" data-act="excat" data-cat="all" data-i18n="allB">← All exam boards</button></div>'
             f'<p class="muted" id="hubCount" style="font-size:14px"></p>'
             f'<div id="hubCats">{"".join(secs)}</div>'
             f'<div class="card empty" id="hubEmpty" hidden><h3 data-i18n="emptyT">No exam matches your search</h3>'
