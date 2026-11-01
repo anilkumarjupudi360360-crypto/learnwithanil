@@ -571,14 +571,13 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .bd-badge i{width:7px;height:7px;border-radius:50%;background:#16a34a}
 .bd-badge.bd-soon{color:#475569}
 .b-upsc,.x-upsc{--g1:#1e3a8a;--g2:#3b82f6}.b-ap,.x-ap{--g1:#0f766e;--g2:#2dd4bf}.b-tg,.x-tg{--g1:#5b21b6;--g2:#a78bfa}.b-ssc,.x-ssc{--g1:#c2410c;--g2:#fb923c}.b-rail,.x-rail{--g1:#7f1d1d;--g2:#dc2626}.b-bank,.x-bank{--g1:#065f46;--g2:#34d399}
-.card.exam{position:relative;overflow:hidden;padding-top:18px}
-.card.exam::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--g1,#334155),var(--g2,#64748b))}
-.ex-ic{position:absolute;right:12px;top:14px;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--g1,#334155),var(--g2,#64748b));box-shadow:0 4px 12px rgba(15,23,42,.18)}
-.ex-ic svg{width:22px;height:22px}
-.card.exam .ex-b,.card.exam .ex-t{padding-right:46px}
-.card.exam:not(.live) .ex-ic{filter:grayscale(.85);opacity:.55;box-shadow:none}
-.card.exam:not(.live)::before{opacity:.35}
-@media (max-width:520px){.ex-ic{width:32px;height:32px;border-radius:10px;right:9px;top:12px}.ex-ic svg{width:18px;height:18px}.card.exam .ex-b,.card.exam .ex-t{padding-right:36px}}
+.card.exam{position:relative;overflow:hidden;padding:0;gap:0}
+.ex-art{position:relative;display:flex;align-items:center;justify-content:center;height:74px;color:#fff;background:linear-gradient(135deg,var(--g1,#334155),var(--g2,#64748b))}
+.ex-art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 15%,rgba(255,255,255,.18) 0 16%,transparent 17%),radial-gradient(circle at 95% 115%,rgba(255,255,255,.14) 0 32%,transparent 33%)}
+.ex-art svg{position:relative;height:66px;width:118px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.18))}
+.ex-body{display:flex;flex-direction:column;gap:3px;padding:12px 14px 14px;flex:1}
+.card.exam:not(.live) .ex-art{filter:saturate(.35);opacity:.8}
+@media (max-width:520px){.ex-art{height:62px}.ex-art svg{height:56px;width:100px}.ex-body{padding:10px 11px 12px}}
 .card.board:not([class*=" b-"]) {--g1:#334155;--g2:#64748b}
 .board.soon .bd-art{filter:saturate(.45)}
 .bd-body{display:flex;flex-direction:column;gap:6px;padding:14px 16px 14px;flex:1}

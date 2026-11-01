@@ -1633,28 +1633,29 @@ BOARD_ART = {   # line drawings for the board tiles (own artwork; no photos, no 
     'rail': '<rect x="56" y="12" width="48" height="54" rx="11"/><rect x="63" y="20" width="34" height="19" rx="3"/><circle cx="68" cy="53" r="3.5"/><circle cx="92" cy="53" r="3.5"/><path d="M74 53h12"/><path d="m63 66-9 13M97 66l9 13M48 79h64M52 73h56"/>',
     'bank': '<path d="M42 34 80 15l38 19Z"/><path d="M42 34h76"/><path d="M50 39v28M64 39v28M96 39v28M110 39v28"/><path d="M40 70h80M35 77h90"/><circle cx="80" cy="52" r="10"/><path d="M76 47h9M76 51h9M79 47c5 0 5 8 0 8h-3l7 7"/>',
 }
-EXAM_ICONS = [   # small line icons on the exam tiles (own drawings), chosen by words in the exam's id, title and note
-    (r'police|constable|\bsi\b', '<path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6Z"/><path d="m9 12 2 2 4-4"/>'),
-    (r'capf|\bcds\b|\bnda\b|defence|afcat|army|navy', '<path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6Z"/><path d="m12 8 1.2 2.5 2.8.4-2 1.9.5 2.7-2.5-1.3-2.5 1.3.5-2.7-2-1.9 2.8-.4Z"/>'),
-    (r'amvi|motor vehicle', '<path d="M5 16v-4l2-5h10l2 5v4"/><path d="M3 16h18v2H3z"/><circle cx="7.5" cy="18.5" r="1.5"/><circle cx="16.5" cy="18.5" r="1.5"/><path d="M6 12h12"/>'),
-    (r'endowment', '<path d="M7 21h10l-1-4H8Z"/><path d="M8.5 17h7l-1-4h-5Z"/><path d="M9.5 13h5l-1-4h-3Z"/><path d="M12 9V5M10.5 6.5h3"/>'),
-    (r'forest|\bfro\b|\bifos\b|\bfbo\b', '<path d="M12 3 6 11h3l-4 6h14l-4-6h3Z"/><path d="M12 17v4"/>'),
-    (r'analyst|chemist|drug|pharma|lab', '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6A2 2 0 0 0 19 18l-5-9V3"/><path d="M7.5 15h9"/>'),
-    (r'hmwssb|water', '<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11Z"/>'),
-    (r'teacher|\btet\b|\bdsc\b|lecturer|gurukul|\btgt\b|\bpgt\b', '<path d="M4 5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2Z"/><path d="M4 20a2 2 0 0 0 2 2h13v-4"/>'),
-    (r'rail|\brrb\b|ntpc|\balp\b', '<rect x="6" y="3" width="12" height="13" rx="3"/><path d="M6 10h12"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/><path d="m8 16-2 5M16 16l2 5"/>'),
-    (r'bank|ibps|\bsbi\b|\brbi\b|nabard|\blic\b|epfo|insurance|apfc|account|audit', '<circle cx="12" cy="12" r="9"/><path d="M9 7.5h6M9 10.5h6M11 7.5c3.5 0 3.5 6 0 6H9.5l5 4"/>'),
-    (r'health|nurs|medical|mphw|doctor', '<path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"/>'),
-    (r'prelims|csat', '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="m8 8 1.5 1.5L12 7M8 14l1.5 1.5L12 13M14 8.5h2M14 14.5h2"/>'),
-    (r'mains|civil services', '<path d="m4 20 4-1 11-11-3-3L5 16Z"/><path d="m14 6 3 3"/>'),
-    (r'ssc|cgl|chsl|\bmts\b|steno|clerk|secretariat', '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/>'),
-    (r'.', '<path d="M3 9 12 4l9 5Z"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/>'),
+EXAM_ART = [   # header drawings on the exam tiles (own line art, 160x90; Anil 2 Nov 2026: a picture instead of a strip). No photos, maps or emblems.
+    (r'police|constable|\bsi\b', '<path d="M44 52c-4-34 76-34 72 0"/><path d="M42 52h76v11H42Z"/><path d="M46 63c12 13 56 13 68 0"/><path d="M80 20l9 4v8c0 7-4 11-9 14-5-3-9-7-9-14v-8Z"/><path d="m76 31 3 3 6-6"/><path d="M50 57.5h60" opacity=".55"/>'),
+    (r'capf|\bcds\b|\bnda\b|defence|afcat|army|navy', '<path d="M80 12 58 20v16c0 15 9 27 22 34 13-7 22-19 22-34V20Z"/><path d="m80 28 4 8.5 9.3 1.3-6.7 6.5 1.6 9.2L80 49.2l-8.2 4.3 1.6-9.2-6.7-6.5 9.3-1.3Z"/><path d="M50 40c-6 6-6 16 2 22M110 40c6 6 6 16-2 22"/>'),
+    (r'amvi|motor vehicle', '<path d="M38 60V50l10-14h52l12 14h10v10Z"/><path d="M54 40h18v10H50ZM78 40h18l8 10H78Z"/><circle cx="56" cy="62" r="7"/><circle cx="106" cy="62" r="7"/><path d="M28 72h108"/>'),
+    (r'endowment', '<path d="M54 74h52"/><path d="M60 74V48h40v26"/><path d="M56 48h48L80 28Z"/><path d="M80 28V14l12 4-12 4"/><path d="M73 74V61a7 7 0 0 1 14 0v13"/><path d="M65 55h4M91 55h4"/>'),
+    (r'forest|\bfro\b|\bifos\b|\bfbo\b', '<path d="M44 72 58 48h-6l12-22 12 22h-6l14 24Z"/><path d="M84 72 96 52h-5l11-20 11 20h-5l12 20Z"/><path d="M64 72v7M102 72v7M34 79h98"/>'),
+    (r'analyst|chemist|drug|pharma|\blab\b', '<path d="M70 14h20M73 14v20L56 66a5 5 0 0 0 4.5 7h39a5 5 0 0 0 4.5-7L87 34V14"/><path d="M62 54h36"/><circle cx="74" cy="62" r="3"/><circle cx="86" cy="58" r="2"/><circle cx="114" cy="26" r="5"/><circle cx="126" cy="42" r="4"/><path d="m117 30 6 8"/>'),
+    (r'hmwssb|water', '<path d="M80 10s18 20 18 34a18 18 0 0 1-36 0c0-14 18-34 18-34Z"/><path d="M72 46a8 8 0 0 0 8 8"/><path d="M32 74c8-5 16-5 24 0s16 5 24 0 16-5 24 0 16 5 24 0"/>'),
+    (r'teacher|\btet\b|\bdsc\b|lecturer|gurukul|\btgt\b|\bpgt\b', '<path d="M80 26c-8-6-20-8-34-6v44c14-2 26 0 34 6 8-6 20-8 34-6V20c-14-2-26 0-34 6Z"/><path d="M80 26v44"/><path d="M54 32h16M54 40h16M90 32h16M90 40h16"/>'),
+    (r'rail|\brrb\b|ntpc|\balp\b', None),
+    (r'bank|ibps|\bsbi\b|\brbi\b|nabard|\blic\b|epfo|insurance|apfc|account|audit', '<path d="M42 34 80 15l38 19Z"/><path d="M42 34h76"/><path d="M50 39v28M64 39v28M96 39v28M110 39v28"/><path d="M40 70h80M35 77h90"/><circle cx="80" cy="52" r="10"/><path d="M76 47h9M76 51h9M79 47c5 0 5 8 0 8h-3l7 7"/>'),
+    (r'health|nurs|medical|mphw|doctor', '<path d="M80 72S54 56 54 38a13 13 0 0 1 26-6 13 13 0 0 1 26 6c0 18-26 34-26 34Z"/><path d="M34 48h24l5-10 7 20 6-14 4 4h46"/>'),
+    (r'prelims|csat', '<rect x="56" y="10" width="48" height="68" rx="4"/><circle cx="66" cy="24" r="3.2"/><circle cx="76" cy="24" r="3.2" fill="currentColor"/><circle cx="86" cy="24" r="3.2"/><circle cx="96" cy="24" r="3.2"/><circle cx="66" cy="37" r="3.2"/><circle cx="76" cy="37" r="3.2"/><circle cx="86" cy="37" r="3.2"/><circle cx="96" cy="37" r="3.2" fill="currentColor"/><circle cx="66" cy="50" r="3.2" fill="currentColor"/><circle cx="76" cy="50" r="3.2"/><circle cx="86" cy="50" r="3.2"/><circle cx="96" cy="50" r="3.2"/><circle cx="66" cy="63" r="3.2"/><circle cx="76" cy="63" r="3.2"/><circle cx="86" cy="63" r="3.2" fill="currentColor"/><circle cx="96" cy="63" r="3.2"/>'),
+    (r'mains|civil services', '<rect x="48" y="12" width="44" height="64" rx="4"/><path d="M56 26h28M56 36h28M56 46h20"/><path d="m90 68 4-14 26-26 10 10-26 26Z"/><path d="m116 32 10 10"/>'),
+    (r'ssc|cgl|chsl|\bmts\b|steno|clerk|secretariat', None),
 ]
 
 
-def exam_icon(e):
+def exam_art(e, cat):
     t = f'{e["id"]} {e["t"]} {e.get("n", "")}'.lower().replace('-', ' ')
-    return next(svg for rx, svg in EXAM_ICONS if re.search(rx, t))
+    for rx, svg in EXAM_ART:
+        if re.search(rx, t): return svg or BOARD_ART['rail' if 'rail' in rx else 'ssc']
+    return BOARD_ART.get(cat, BOARD_ART['upsc'])   # PSC groups and posts: the board's own drawing (gopuram, Charminar, building)
 
 
 BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
@@ -1689,8 +1690,8 @@ def hub_html(catalog, counts, grand):
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
             if live and e['id'] in MAINS_EXAMS and MAINS_KIT: sub += '<span class="ex-x">Prelims + Mains PYQs with model answers</span>'
             tiles[live].append(f'<a class="card exam x-{c["id"]}{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-id="{e["id"]}" data-s="{esc(exam_terms(e, c))}">'
-                               f'<span class="ex-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{exam_icon(e)}</svg></span>'
-                               f'<span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></a>')
+                               f'<span class="ex-art" aria-hidden="true"><svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">{exam_art(e, c["id"])}</svg></span>'
+                               f'<span class="ex-body"><span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></span></a>')
         upc = (f'<details class="upc"{"" if lv else " open"}><summary>Upcoming exams in {esc(c["name"])} ({len(tiles[False])}) · being added one by one</summary>'
                f'<div class="exams">{"".join(tiles[False])}</div></details>' if tiles[False] else '')
         secs.append(f'<section class="exam-cat" data-cat="{c["id"]}"><div class="section-title"><h2>{esc(c["name"])}{" <span class=te-sub lang=te>" + esc(c["te"]) + "</span>" if c.get("te") else ""}</h2>'
