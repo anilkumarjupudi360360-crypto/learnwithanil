@@ -1,0 +1,1023 @@
+# SLPRB AP SCT SI (Civil) & RSI (APSP), Preliminary Written Test, Paper II: General Studies, held 19 February 2023 afternoon (booklet C).
+# Answers: SLPRB AP's PRELIMINARY key for Paper II, booklet C column (the final key, which accepted more than one answer for one question, is no longer on SLPRB's website). Explanations by Learn with Anil.
+
+Q 1 | sci | Biology & Health
+Match the following.
+List-I    List-II
+a) Calciferol    i) Pellagra
+b) Niacin    ii) Rickets
+c) Thiamin    iii) Xerophthalmia
+d) Retinol    iv) Beri beri
+The correct answer is :
+(1) a-i, b-iv, c-iii, d-ii
+(2) a-iv, b-iii, c-ii, d-i
+(3) a-ii, b-i, c-iv, d-iii
+(4) a-ii, b-iii, c-i, d-iv
+= 3
+~ Deficiency of calciferol (vitamin D) causes rickets (a-ii), niacin (B3) causes pellagra (b-i), thiamin (B1) causes beri beri (c-iv) and retinol (vitamin A) causes xerophthalmia (d-iii). Only option (3) has all four pairs right.
+
+Q 2 | sci | Biology & Health
+A colour blind man married a woman who is the daughter of a colour blind father and a homozygous mother with normal vision. What are the chances of their daughters being colour blind?
+(1) 25%
+(2) 50%
+(3) 75%
+(4) 100%
+= 2
+~ Colour blindness is X-linked recessive. The woman gets Xc from her colour blind father and X from her homozygous normal mother, so she is a carrier (XXc); her husband is XcY. Every daughter receives Xc from the father and either X or Xc from the mother, so half the daughters (XXc carriers) are normal and half (XcXc) are colour blind: 50%.
+
+Q 3 | geo | Environment & Ecology
+Study the following and identify the correct statements.
+I) Water hyacinth is called terror of Bengal.
+II) Scrubbers are used to control the heavy metal pollution.
+III) UV-B rays cause snow blindness.
+IV) Electrostatic precipitators are used to control harmful gases of automobile exhausts.
+(1) I, III
+(2) II, IV
+(3) II, III
+(4) III, IV
+= 1
+~ Water hyacinth is the invasive weed known as the "Terror of Bengal" because it chokes water bodies and depletes oxygen, and UV-B radiation causes snow blindness (photokeratitis). Scrubbers remove gases such as SO2 and some particulates, not heavy metals, and electrostatic precipitators remove particulate matter (fly ash), not the gases of automobile exhausts, so II and IV are wrong.
+
+Q 4 | sci | Biology & Health
+From the following, pick up the correct combinations :
+S.No. | Endocrine gland | Hormone | Abnormality due to over secretion or under secretion
+I | Thyroid gland | Calcitonin | Dwarfism
+II | Parathyroid glands | Parathormone | Tetany
+III | Adrenal glands | Glucocorticoids | Addison's disease
+IV | Pancreas | Insulin | Diabetes insipidus
+(1) I, II
+(2) II, IV
+(3) II, III
+(4) I, III
+= 3
+~ Under-secretion of parathormone lowers blood calcium and causes tetany, and under-secretion of glucocorticoids causes Addison's disease, so II and III are correct. Calcitonin does not cause dwarfism (that comes from low growth hormone or thyroxine), and insulin deficiency causes diabetes mellitus, whereas diabetes insipidus is due to lack of ADH.
+
+Q 5 | sci | Biology & Health
+Match the following.
+List-I    List-II
+a) Typhoid    i) Vibrio cholera
+b) Pneumonia    ii) Corynebacterium
+c) Cholera    iii) Salmonella typhi
+d) Diptheria    iv) Haemophilus influenzae
+The correct answer is :
+(1) a-iii, b-iv, c-i, d-ii
+(2) a-ii, b-iii, c-i, d-iv
+(3) a-iii, b-i, c-ii, d-iv
+(4) a-iv, b-ii, c-iii, d-i
+= 1
+~ Typhoid is caused by Salmonella typhi (iii), cholera by Vibrio cholerae (i) and diphtheria by Corynebacterium diphtheriae (ii); the list pairs pneumonia with Haemophilus influenzae (iv), so a-iii, b-iv, c-i, d-ii is the only matching set.
+
+Q 6 | sci | Physics
+The device used to accelerate charged particles is
+(1) Gyroscope
+(2) Cloud chamber
+(3) Electroscope
+(4) Cyclotron
+= 4
+~ A cyclotron uses a magnetic field and an alternating electric field to accelerate charged particles such as protons along a spiral path. A gyroscope measures orientation, a cloud chamber shows the tracks of particles and an electroscope detects charge.
+
+Q 7 | sci | Science & Technology
+Frequency band of FM broadcast is
+(1) 88-108 kHz
+(2) 88-108 MHz
+(3) 540-1600 MHz
+(4) 540-1600 kHz
+= 2
+~ FM radio broadcasts in the VHF band of 88-108 MHz, while AM (medium wave) broadcasts use 540-1600 kHz, so options (1) and (3) mix up the units.
+
+Q 8 | sci | Physics
+Due to which property of matter, soap bubbles are spherical in shape?
+(1) Viscosity
+(2) Young's modulus
+(3) Surface tension
+(4) Elasticity
+= 3
+~ Surface tension makes a liquid film contract to the smallest possible surface area for the enclosed air, and a sphere has the least surface area for a given volume, so soap bubbles are spherical.
+
+Q 9 | sci | Physics
+The change in the frequency of the sound heard by an observer due to the relative motion between the source of sound and the observer is known as
+(1) Zeeman shift
+(2) Raman shift
+(3) Stark shift
+(4) Doppler shift
+= 4
+~ This is the Doppler effect (Doppler shift): the apparent frequency rises when source and observer approach and falls when they move apart. Zeeman and Stark shifts are splittings of spectral lines in magnetic and electric fields, and the Raman shift is a change in scattered light's wavelength.
+
+Q 10 | sci | Physics
+In a house 2 electric bulbs of each 100W power are used 6 hours a day. What is the total number of units of electricity consumed in the month of April 2022 in this house?
+(1) 72
+(2) 12
+(3) 18
+(4) 36
+= 4
+~ Power = 2 × 100 W = 0.2 kW, so energy per day = 0.2 × 6 = 1.2 kWh (units). April has 30 days, so the total is 1.2 × 30 = 36 units.
+
+Q 11 | sci | Physics
+The de Broglie wavelength of an electron of mass 9.1 × 10^(-28) g travelling with a speed of 3.641 × 10^6 ms^(-1) approximately (in m) is
+(1) 2.0 × 10^(-8)
+(2) 2.0 × 10^(-10)
+(3) 4.0 × 10^(-8)
+(4) 4.0 × 10^(-10)
+= 2
+~ Using λ = h/(mv) with m = 9.1 × 10^(-31) kg, mv = 9.1 × 10^(-31) × 3.641 × 10^6 ≈ 3.31 × 10^(-24) kg m/s, so λ = 6.626 × 10^(-34) / 3.31 × 10^(-24) ≈ 2.0 × 10^(-10) m.
+
+Q 12 | sci | Chemistry
+According to molecular orbital theory the correct bond order values of species NO⁺, O2⁻ and CO⁺ respectively is
+(1) 3.0, 2.5, 1.5
+(2) 1.5, 3.0, 2.5
+(3) 2.5, 1.5, 3.0
+(4) 3.0, 1.5, 2.5
+= 4
+~ NO⁺ has 10 valence electrons (like N2): (8 − 2)/2 = 3.0. O2⁻ has 13 valence electrons (8 bonding, 5 antibonding): (8 − 5)/2 = 1.5. CO⁺ has 9 valence electrons (7 bonding, 2 antibonding): (7 − 2)/2 = 2.5.
+
+Q 13 | sci | Chemistry
+Observe the following compounds
+NH4OH, N3H, HOCl, HCN, Na2SO4, Na2CO3, KCN, KOH, NH4Cl
+The number of acids, bases and salts in this list is respectively
+(1) 3, 2, 4
+(2) 3, 4, 2
+(3) 2, 3, 4
+(4) 2, 4, 3
+= 1
+~ Acids: N3H (hydrazoic acid), HOCl and HCN = 3. Bases: NH4OH and KOH = 2. Salts: Na2SO4, Na2CO3, KCN and NH4Cl = 4. So the order is 3, 2, 4.
+
+Q 14 | sci | Chemistry
+Purest form of commercial iron is
+(1) Wrought iron
+(2) Pig iron
+(3) Cast iron
+(4) Magnetite
+= 1
+~ Wrought iron is the purest commercial form of iron, with less than about 0.2% carbon, whereas pig iron and cast iron contain several percent carbon. Magnetite (Fe3O4) is an ore of iron, not a commercial form of the metal.
+
+Q 15 | sci | Chemistry
+Which one of the following statement is not correct about reactions of carbon compounds?
+(1) Gattermann - Koch synthesis involves conversion of benzene to benzaldehyde using CO and HCl in the presence of AlCl3 / CuCl catalyst.
+(2) Lucas test involves a reaction between an alcohol and zinc chloride in concentrated HCl to differentiate primary, secondary or tertiary alcohol.
+(3) An SN2 reaction between an RO⁻ and R-CH2-X to give R-O-CH2R is called Williamson synthesis.
+(4) In SN1 reactions of alkyl halides, the solvent should be least polar with lower dielectric constant.
+= 4
+~ An SN1 reaction goes through a carbocation intermediate, which is stabilised by polar solvents with a high dielectric constant, so statement (4) is wrong. Statements (1) to (3) correctly describe the Gattermann-Koch formylation, the Lucas test (ZnCl2 in conc. HCl) and the Williamson ether synthesis.
+
+Q 16 | sci | Biology & Health
+Assertion (A): Sorting out of the individuals with useful variations from a heterogenous populations by nature is called Natural Selection.
+Reason (R): Useful variations appear in every generation and are inherited from one generation to other. These variations accumulate by number of generations. Thus, the variations are so prominent that individual change into a new species.
+(1) Both (A) and (R) are correct; (R) is correct explanation for (A).
+(2) Both (A) and (R) are correct; (R) is not correct explanation for (A).
+(3) (A) is correct and (R) is not correct.
+(4) (A) is not correct and (R) is correct.
+= 1
+~ Natural selection is nature's sorting of individuals carrying useful variations, and the reason describes how it works: useful variations appear in each generation, are inherited and accumulate over many generations until a new species arises. So (R) correctly explains (A).
+
+Q 17 | sci | Biology & Health
+Assertion (A): The amount of DNA present in somatic cell depends on the phase of the cell cycle.
+Reason (R): Telophase and G1 phase nuclei contain only half (as 2c) the amount of DNA found in the prophase; G2 phase and metaphase cells represent 4c.
+(1) Both (A) and (R) are correct; (R) is correct explanation for (A).
+(2) Both (A) and (R) are correct; (R) is not correct explanation for (A).
+(3) (A) is correct and (R) is not correct.
+(4) (A) is not correct and (R) is correct.
+= 1
+~ DNA content changes through the cell cycle: it is 2c in G1 and telophase nuclei, doubles to 4c after the S phase, and stays 4c in G2, prophase and metaphase. The reason gives exactly this variation, so it explains the assertion.
+
+Q 18 | geo | Environment & Ecology
+Identify the exploitation efficiency in an ecosystem among the following.
+(1) Production / Assimilation
+(2) Production / Ingestion
+(3) Consumer productivity / Prey production
+(4) Ingestion of food / Prey production
+= 4
+~ Exploitation efficiency is the proportion of the prey's production that a consumer actually ingests, i.e. ingestion of food divided by prey production. Production/assimilation is production efficiency, so option (1) is a different measure.
+
+Q 19 | sci | Biology & Health
+What is the origin of replication?
+(1) The specific DNA sequence which is responsible for initiating replication
+(2) Identification and eliminating the non transformants
+(3) Unfolding of a protein
+(4) Single strand of nucleotides that extends from an end of a fragment of DNA
+= 1
+~ The origin of replication (ori) is the specific DNA sequence at which replication begins; it is also the sequence that must be present in a vector for the DNA to replicate in the host. Option (2) describes selection of transformants, and option (4) describes a sticky (cohesive) end.
+
+Q 20 | geo | Environment & Ecology
+In sewage treatment, the following is put into anaerobic sludge digestion
+(1) Effluents of primary treatment
+(2) Primary sludge
+(3) Debris
+(4) Activated sludge
+= 4
+~ In secondary treatment, part of the settled bacterial flocs (activated sludge) is recycled to the aeration tank and the remaining activated sludge is pumped into large anaerobic sludge digesters. There anaerobic bacteria digest it and release biogas (methane, CO2 and H2S).
+
+Q 21 | cur | National
+Choose the correct statements regarding Netaji Subhash Chandra Bose statue which was unveiled by the PM Narendra Modi at India Gate recently.
+a) The unveiling of the statue of Netaji was accompanied to the tune of "Kadam Kadam Badhaye Jaa".
+b) Height of the statue is 28 ft.
+c) The team of sculptors for executing the statue was led by Ram V. Sutar.
+d) A special 15 minute drone show on Netaji's life was projected at India Gate in the evening session.
+(1) (a) and (b) only
+(2) (a), (b) and (c) only
+(3) (a), (b) and (d) only
+(4) (c) and (d) only
+= 1
+~ The 28-ft granite statue unveiled on 8 September 2022 was accompanied by the INA song "Kadam Kadam Badhaye Jaa", so (a) and (b) are correct. The sculptor team was led by Arun Yogiraj, not Ram V. Sutar, and the drone show on Netaji's life announced for 9-11 September was 10 minutes long, not 15, so (c) and (d) are wrong.
+
+Q 22 | cur | Awards & Personalities
+For the year 2022, PM awards for Excellence in Public Administration aims to recognize the contribution of Civil Servants in promoting
+a) Swachh Jal
+b) Swasth Bharat
+c) Quality Education
+d) Digital Payments
+(1) (a), (b) & (d)
+(2) (b), (c) & (d)
+(3) (a), (c) & (d)
+(4) (a), (b) & (c)
+= 4
+~ The PM's Awards for Excellence in Public Administration 2022 (presented on 21 April 2023) had priority programmes on Swachh Jal (Har Ghar Jal Yojana), Swasth Bharat (Health & Wellness Centres) and Quality Education (Samagra Shiksha), besides Aspirational Districts and Innovations. Digital Payments was not one of the priority programmes.
+
+Q 23 | cur | Reports & Indices
+As per the 'India State of Forest Report 2021' released in January 2022 by the Union Minister Bhupender Yadav, the top three States shown maximum increase in forest cover are, respectively
+a) Andhra Pradesh
+b) Telangana
+c) Sikkim
+d) Odisha
+(1) (c), (a) & (b)
+(2) (b), (c) & (d)
+(3) (c), (d) & (b)
+(4) (a), (b) & (d)
+= 4
+~ ISFR 2021 recorded the largest gains in forest cover in Andhra Pradesh (647 sq km), Telangana (632 sq km) and Odisha (537 sq km), in that order. Sikkim is not among the top three.
+
+Q 24 | cur | International
+Choose the correct statements from the following.
+a) A rare pink diamond discovered in Angola in July 2022.
+b) This pink diamond is named as Lulo Rose.
+c) Weight of pink diamond is 43 grams.
+d) It is the 5th largest diamond recovered from the Lulo mine.
+(1) (a), (b) and (c) only
+(2) (b), (c) and (d) only
+(3) (a), (b) and (d) only
+(4) (a), (c) and (d) only
+= 3
+~ The Lulo Rose, announced in July 2022 from the Lulo mine in Angola, is believed to be the largest pink diamond found in about 300 years and is the fifth-largest diamond recovered from that mine. It weighs 170 carats (about 34 grams), not 43 grams, so (c) is wrong.
+
+Q 25 | cur | International
+Choose the correct statements regarding the visit of Maldives President Solih to India in August 2022.
+a) It is Solih's 2nd official visit to India.
+b) On this occasion "India First Policy" is reaffirmed by the Prime Minister Narendra Modi.
+c) Both leaders participated in the virtual "Pouring of the first concrete" ceremony of the Greater Male Connectivity Project.
+d) Exchanged MoU's on disaster management and cyber security.
+(1) (a) and (b) only
+(2) (c) and (d) only
+(3) (a), (b) and (c) only
+(4) (a), (c) and (d) only
+= 2
+~ During the 1-4 August 2022 visit, Modi and Solih took part virtually in the "pouring of the first concrete" ceremony for the Greater Male Connectivity Project, and the agreements signed included MoUs on disaster management and cyber security, so (c) and (d) are correct. It was Solih's third visit to India since taking office (not the 2nd), and "India First" is the Maldivian government's own stated policy, so (a) and (b) are wrong.
+
+Q 26 | cur | National
+Choose the correct sentence about "Matdata Junction".
+(1) The programme was launched by Election Commission of India for voters awareness.
+(2) The program started in Kendriya Vidyalayas to improve religious tolerance among students.
+(3) C.M. Yogi Adityanath started this program which is similar to 'Mann Ki Baat'.
+(4) This program is started in collaboration with Dooradarshan.
+= 1
+~ Matdata Junction is a year-long voter awareness radio series launched by the Election Commission of India (Chief Election Commissioner Rajiv Kumar) on 4 October 2022. It is produced with All India Radio, not Doordarshan, and has nothing to do with Kendriya Vidyalayas or a chief minister, so only (1) is correct.
+
+Q 27 | cur | National
+Which of the following is correct regarding Sustainable Mountain Development Summit (SMDC) - XI?
+a) Theme is "Harnessing tourism for Sustainable Mountain Development".
+b) Held during 6th October, 2022 to 9th October, 2022.
+c) Prime Minister Shri Narendra Modi attended the inaugural session.
+d) This summit held at Leh, Ladakh Union Territory.
+(1) (a) and (d) only
+(2) (a), (b) and (c) only
+(3) (c) and (d) only
+(4) (a) and (b) only
+= 1
+~ SMDS-XI was held in Leh, Ladakh with the theme "Harnessing tourism for sustainable mountain development", so (a) and (d) are correct. It was held on 10-12 October 2022 (not 6-9 October) and Union Environment Minister Bhupender Yadav, not the Prime Minister, attended the inaugural session, so (b) and (c) are wrong.
+
+Q 28 | cur | National
+Choose the incorrect statement regarding the Independence Day Celebrations 2022.
+(1) A special youth exchange programme with 127 cadets/youth from 14 countries.
+(2) Murals on kite flying are displayed at Mina Bazar.
+(3) Wall hanging of Param Vir Chakra awardee from different States and Union territories adorned the walls of Red Fort.
+(4) In mammoth art project of Kala Kumbh, 8 scrolls each of 75 meter long were displayed.
+= 3
+~ At the Red Fort in 2022 the wall hangings honoured freedom fighters from different States and Union Territories, not Param Vir Chakra awardees, so statement (3) is the incorrect one. The youth exchange programme with cadets and youth from 14 countries, the kite-flying murals at Meena Bazar and the 75-metre Kala Kumbh scrolls (eight displayed) were all part of the celebrations.
+
+Q 29 | cur | National
+On September 17, 2022 PM Narendra Modi released Wild Cheetahs which had become extinct from India, in the following National Park.
+(1) Kanha
+(2) Panna
+(3) Kaziranga
+(4) Kuno
+= 4
+~ On 17 September 2022 (his birthday) PM Modi released cheetahs brought from Namibia into enclosures at Kuno National Park in Madhya Pradesh, as part of the project to reintroduce the cheetah, which was declared extinct in India in 1952.
+
+Q 30 | ih | Ancient India
+Which one of the following place yielded archaeological evidence of pit dwellings?
+(1) Pallavaram
+(2) Mehargarh
+(3) Gufkral
+(4) Balakot
+= 3
+~ Gufkral in Kashmir, a Neolithic site like Burzahom, has yielded evidence of pit dwellings dug into the ground. Pallavaram is a Palaeolithic site near Chennai, Mehargarh an early farming settlement in Baluchistan and Balakot a Harappan site.
+
+Q 31 | ih | Ancient India
+Who was the officer in-charge of Pastoral Lands in Rigvedic period?
+(1) Vrajapathi
+(2) Jiva gribha
+(3) Kulapa
+(4) Suta
+= 1
+~ In the Rigvedic period the Vrajapati was the officer in charge of the pasture lands. A Kulapa was the head of a family and a Suta was a charioteer or court bard.
+
+Q 32 | ih | Ancient India
+Identify the incorrect pair in the following.
+(1) Ajitanatha - Elephant
+(2) Naminatha - Blue Lotus
+(3) Arishtanemi - Conch
+(4) Vimalanatha - Buffalo
+= 4
+~ The Jain Tirthankara emblems are Ajitanatha - elephant, Naminatha - blue lotus and Arishtanemi - conch, so pairs (1) to (3) are correct. Vimalanatha's emblem is the boar, while the buffalo belongs to Vasupujya, so pair (4) is incorrect.
+
+Q 33 | ih | Ancient India
+Match the following.
+List-I    List-II
+a) Deva Gupta    i) ruler of Kamarupa and close friend of Harsha
+b) Sasanka    ii) Harsha's brother-in-law
+c) Bhashkaravarman    iii) ruler of Gauda who killed Harsha's brother
+d) Grahavarman    iv) ruler of Malwa who killed Harsha's brother-in-law
+The correct answer is :
+(1) a-i, b-ii, c-iv, d-iii
+(2) a-iv, b-ii, c-iii, d-i
+(3) a-iv, b-iii, c-i, d-ii
+(4) a-ii, b-i, c-iv, d-iii
+= 3
+~ Deva Gupta of Malwa killed Grahavarman, Harsha's brother-in-law (a-iv); Sasanka of Gauda killed Harsha's brother Rajyavardhana (b-iii); Bhaskaravarman of Kamarupa was Harsha's friend (c-i); and Grahavarman, the Maukhari king, was Harsha's brother-in-law (d-ii).
+
+Q 34 | ih | Ancient India
+Arrange the following South Indian rulers in chronological order.
+i) Krishna I
+ii) Kirti Varma I
+iii) Mahendra Varma I
+iv) Pulakesin I
+(1) i, iv, iii, ii
+(2) i, ii, iii, iv
+(3) iv, iii, ii, i
+(4) iv, ii, iii, i
+= 4
+~ Pulakesin I (c. 543-566) founded the Chalukya power at Badami, followed by his son Kirti Varma I (c. 566-597), then the Pallava Mahendra Varma I (c. 600-630) and finally the Rashtrakuta Krishna I (c. 756-774). The order is therefore iv, ii, iii, i.
+
+Q 35 | ap | AP History & Culture
+Identify the correct pairs in the following.
+a) Vasantarajiyam - Kumaragiri Reddy
+b) Srungara Naishadham - Srinadha
+c) Sahitya Chintamani - Pedakomati Vema Reddy
+d) Vema Bhupala Charita - Vamana Bhatta Bana
+(1) (a), (b) & (c)
+(2) (a), (b), (c) & (d)
+(3) (a) & (b)
+(4) (a), (b) & (d)
+= 2
+~ All four pairs are standard Reddi-period attributions: Kumaragiri Reddy wrote Vasantarajiyam, the poet Srinatha wrote Srungara Naishadham, Pedakomati Vema Reddy wrote Sahitya Chintamani, and Vamana Bhatta Bana wrote Vema Bhupala Charita. So option (2) is correct.
+
+Q 36 | ih | Medieval India
+Arrange the following travellers in the chronological order.
+a) Sulaiman
+b) Al-Masudi
+c) Marco polo
+d) Fernao Nuniz
+(1) (d), (c), (b) & (a)
+(2) (b), (d), (a) & (c)
+(3) (a), (b), (c) & (d)
+(4) (c), (a), (d) & (b)
+= 3
+~ The Arab merchant Sulaiman visited in about 851 CE, Al-Masudi in about 915 CE, Marco Polo in the late 13th century (c. 1293) and the Portuguese chronicler Fernao Nuniz at Vijayanagara in the 1530s. So the order is a, b, c, d.
+
+Q 37 | ap | AP History & Culture
+Which one of the following Chalukyan inscription mentions the founder of the Kakatiya Dynasty?
+(1) Palampet inscription
+(2) Mangallu inscription
+(3) Motupalli inscription
+(4) Mangalagiri inscription
+= 2
+~ The Mangallu grant (c. 956 CE) of the Vengi (Eastern) Chalukya prince Danarnava, issued at the request of the Kakatiya-line chief Gunda IV, names his ancestor Gunda (Gundyana), whom the question treats as the founder of the dynasty. Palampet and Motupalli are Kakatiya-period inscriptions, not Chalukyan ones.
+
+Q 38 | ih | Modern India & Freedom Struggle
+Rani Avantibai Lodhi, who participated in 1857 Revolt belongs to which kingdom
+(1) Khurda
+(2) Ramgarh
+(3) Nagaland
+(4) Jhansi
+= 2
+~ Rani Avantibai Lodhi was the queen of Ramgarh (near Mandla in present-day Madhya Pradesh) and led her troops against the British in the Revolt of 1857. Jhansi was the kingdom of Rani Lakshmibai, and Khurda and Nagaland are not associated with her.
+
+Q 39 | ih | Modern India & Freedom Struggle
+Who made Bombay (Mumbai) as a major Commercial hub
+(1) Job Chornock
+(2) Francis De
+(3) Gerald Aumgrinen
+(4) Framcois Martin
+= 3
+~ Gerald Aungier, Governor of Bombay from 1669 to 1677, turned Bombay into the East India Company's major commercial centre by encouraging merchants and artisans to settle there and by setting up a mint and courts. Job Charnock is linked with Calcutta, Francis Day with Madras and Francois Martin with Pondicherry.
+
+Q 40 | ih | Medieval India
+Who is the author of 'Alangir nama'?
+(1) Mirza Muhammad Qazim
+(2) Muhammad Souqi
+(3) Bhim Sen
+(4) Khafi Khan
+= 1
+~ The Alamgirnama is the official chronicle of the first ten years of Aurangzeb's reign, written by Mirza Muhammad Kazim. Khafi Khan wrote Muntakhab-ul-Lubab, Bhimsen wrote Nuskha-i-Dilkusha and Saqi Mustaid Khan wrote Maasir-i-Alamgiri.
+
+Q 41 | ih | Modern India & Freedom Struggle
+Who translated books of the Brahmo Samaj into Tamil and Telugu?
+(1) Kandukuri Veeresalingam
+(2) Chembeti Sridharalu Naidu
+(3) Subramanya Bharati
+(4) Raghupati Venkataratnam Naidu
+= 2
+~ Chembeti Sridharalu Naidu translated Brahmo Samaj books into Tamil and Telugu, which helped spread the movement in the Madras Presidency. The other names are known for other work, such as Veeresalingam for Telugu social reform and Subramanya Bharati as a Tamil poet.
+
+Q 42 | ih | Modern India & Freedom Struggle
+Identify the correct pairs in the following.
+a) The Madras Labour Union - 1918
+b) The All India Kisan Sabha - 1926
+c) The All India Trade Union Congress - 1920
+d) Bardoli Satyagraha - 1928
+(1) (a), (b) & (c)
+(2) (a), (b), (c) & (d)
+(3) (a), (c) & (d)
+(4) (b) & (d)
+= 3
+~ The Madras Labour Union was formed in 1918 (B. P. Wadia), the AITUC in 1920 and the Bardoli Satyagraha under Vallabhbhai Patel was in 1928, so (a), (c) and (d) are correct. The All India Kisan Sabha was founded in 1936 at Lucknow, not 1926.
+
+Q 43 | ih | Modern India & Freedom Struggle
+Who among the following is not connected to Gadar Party.
+a) Har Dayal
+b) Surya Sen
+c) Sohan Singh Bhakna
+d) Bhai Paramanand
+(1) a
+(2) b
+(3) c
+(4) d
+= 2
+~ Har Dayal, Sohan Singh Bhakna and Bhai Paramanand were all leaders of the Gadar Party, formed by Indians in North America. Surya Sen belonged to Bengal's revolutionary movement (the Chittagong Armoury Raid, 1930), not the Gadar Party.
+
+Q 44 | ih | Modern India & Freedom Struggle
+Name the American Journalist that witnessed the Salt Satyagraha in 1930.
+(1) Dominque Lapierre
+(2) Larry Collins
+(3) Webb Miller
+(4) Jeff Thomson
+= 3
+~ Webb Miller, an American journalist of the United Press, witnessed and reported the police beating of satyagrahis at the Dharasana salt works in 1930. Lapierre and Collins co-wrote "Freedom at Midnight" much later.
+
+Q 45 | cur | Reports & Indices
+According to the IMF World Economic outlook report, October 2022, the Global Economic growth forecasted for 2022 and 2023 respectively.
+(1) 3.2% & 2.7%
+(2) 2.7% & 3.2%
+(3) 6.0% & 4.7%
+(4) 4.7% & 6.0%
+= 1
+~ The IMF's October 2022 World Economic Outlook projected global growth of 3.2% for 2022 and a slowdown to 2.7% for 2023. The 6.0% figure is the growth recorded for 2021, not a forecast for 2022.
+
+Q 46 | cur | Awards & Personalities
+Match the following Cinema Awards with their Best movies.
+List-I    List-II
+a) Canes - 2022    i) CODA
+b) 52nd IFFI    ii) Triangle of Sadness
+c) BAFTA - 2022    iii) Ring Wandering
+d) 94th Oscar    iv) The Power of the Dog
+The correct answer is :
+(1) a-iv, b-ii, c-iii, d-i
+(2) a-ii, b-iii, c-iv, d-i
+(3) a-iii, b-ii, c-iv, d-i
+(4) a-iv, b-iii, c-i, d-ii
+= 2
+~ Triangle of Sadness won the Palme d'Or at Cannes 2022 (a-ii), Ring Wandering won the Golden Peacock at the 52nd IFFI (b-iii), The Power of the Dog won Best Film at the 2022 BAFTAs (c-iv), and CODA won Best Picture at the 94th Oscars (d-i).
+
+Q 47 | cur | Reports & Indices
+Match the following Indexes/Reports with the India rank.
+List-I    List-II
+a) World Press Freedom Index - 2022    i) 136
+b) World Happiness Report - 2022    ii) 135
+c) Human Development Index - 2022    iii) 150
+d) Global Gender Gap Report - 2022    iv) 132
+The correct answer is :
+(1) a-iii, b-ii, c-iv, d-i
+(2) a-i, b-iii, c-ii, d-iv
+(3) a-iii, b-iv, c-ii, d-i
+(4) a-iii, b-i, c-iv, d-ii
+= 4
+~ In 2022 India ranked 150th in the World Press Freedom Index (a-iii), 136th in the World Happiness Report (b-i), 132nd in the Human Development Index (c-iv) and 135th in the Global Gender Gap Report (d-ii).
+
+Q 48 | cur | International
+In January 2022 India and Nepal signed a MoU for the construction of bridge over the following river at Dharchula.
+(1) Mahakali
+(2) Mechi
+(3) Gandaki
+(4) Koshi
+= 1
+~ The India-Nepal MoU, approved by the Indian Cabinet in January 2022 (signed on 1-2 February 2022), is for a motorable bridge over the Mahakali (Sharda) river connecting Dharchula in Uttarakhand with Darchula in Nepal. The Mahakali forms the border between the two countries at this point, while the Mechi, Gandaki and Koshi are rivers elsewhere in Nepal's border region.
+
+Q 49 | cur | Defence & Security
+LVM3-M2 successfully placed 36 satellites in orbit. Correct sentences regarding this are
+a) This is the first New Space India Ltd. Mission with LVM3.
+b) One Web limited is a Network Access Associate.
+c) 36 satellites weigh - 644 kg.
+d) LVM3-M2 weight - 5796 kg.
+(1) (a), (c) and (d) only
+(2) (a), (b) and (c) only
+(3) (c) and (d) only
+(4) (a) and (b) only
+= 4
+~ LVM3-M2 (October 2022) was NSIL's first commercial mission with the LVM3 and launched the 36 OneWeb satellites, with OneWeb (Network Access Associates Ltd) as the customer, so (a) and (b) are correct. The figures in (c) and (d) are interchanged: the 36 satellites weigh about 5,796 kg while the rocket weighs about 644 tonnes.
+
+Q 50 | cur | International
+The Prime Minister of England at the time of Queen Elizabeth II's death.
+(1) Boris Johnson
+(2) Liz Truss
+(3) Theresa Mary
+(4) David Cameron
+= 2
+~ Queen Elizabeth II died on 8 September 2022, two days after Liz Truss took office as UK Prime Minister (6 September 2022) on Boris Johnson's departure. Theresa May and David Cameron had left office years earlier.
+
+Q 51 | cur | National
+Choose the correct statements with reference to the Union Budget 2022-23.
+a) One class - One TV channel programme of PM eVIDYA to be expanded to 200 TV channels.
+b) 500 new generation Vande Bharat Trains to be manufactured during the next three years.
+c) 100 percent of 1.5 lakh post offices to come on the core banking system.
+d) A network of 32 tele-mental health centres of excellence will be set up.
+(1) (a) and (d) only
+(2) (a) and (c) only
+(3) (a), (b) and (c) only
+(4) (a), (b) and (d) only
+= 2
+~ The 2022-23 Budget expanded PM eVIDYA's One Class-One TV Channel programme from 12 to 200 channels (a is correct) and brought all 1.5 lakh post offices on the core banking system (c is correct). The Budget spoke of 400 (not 500) new-generation Vande Bharat trains and a network of 23 (not 32) tele-mental health centres of excellence, so (b) and (d) are wrong.
+
+Q 52 | cur | National
+In August 2022 Supreme Court declared that Section 3(2) of the Benami Transactions (Prohibition) Act 1988 as unconstitutional. Section 3(2) of this act gives provision of the following punishment.
+(1) Three years maximum imprisonment or fine or both.
+(2) Properties held benami shall be subject to confiscation by Authority.
+(3) Maximum 12 years imprisonment (or) fine.
+(4) Maximum 5 years imprisonment and confiscation of properties.
+= 1
+~ Section 3(2) of the 1988 Act punished entering into a benami transaction with imprisonment up to three years, or fine, or both; the Supreme Court (Union of India v. Ganpati Dealcom, August 2022) struck it down as arbitrary. Confiscation of benami property is dealt with in Section 5, not Section 3(2), which is why option (2) is wrong.
+
+Q 53 | cur | Sports
+Match the following players with their sport event participated in Common Wealth Games - 2022.
+List-I    List-II
+a) Saurav Ghoshal    i) Table Tennis
+b) Sharath Kamal    ii) Judo
+c) Lakshya Sen    iii) Squash
+d) Vijay Kumar Yadav    iv) Badminton
+The correct answer is :
+(1) a-iii, b-ii, c-iv, d-i
+(2) a-ii, b-iii, c-i, d-iv
+(3) a-iii, b-i, c-iv, d-ii
+(4) a-i, b-ii, c-iii, d-iv
+= 3
+~ At Birmingham 2022 Saurav Ghosal played squash (bronze), Sharath Kamal table tennis (gold in men's singles), Lakshya Sen badminton (gold in men's singles) and Vijay Kumar Yadav judo (bronze, 60 kg), which gives a-iii, b-i, c-iv, d-ii.
+
+Q 54 | cur | Awards & Personalities
+Match the following books with the respective Authors.
+List-I    List-II
+a) A New India : Selected Writings 2014-2019    i) Dalai Lama and Desmond Tutu
+b) The Little Book of Joy    ii) Arun Jaitley
+c) The Struggle for Police Reforms in India    iii) Vinit Karnik
+d) Business of Sports - The Winning Formula for Success    iv) Prakash Singh
+The correct answer is :
+(1) a-ii, b-iii, c-i, d-iv
+(2) a-ii, b-i, c-iv, d-iii
+(3) a-i, b-ii, c-iii, d-iv
+(4) a-iv, b-iii, c-ii, d-i
+= 2
+~ "A New India" is by Arun Jaitley, "The Little Book of Joy" by the Dalai Lama and Desmond Tutu, "The Struggle for Police Reforms in India" by Prakash Singh (the former DGP who led the police-reforms case) and "Business of Sports" by Vinit Karnik, giving a-ii, b-i, c-iv, d-iii.
+
+Q 55 | cur | International
+The following was not initiated in the Quad-22 Summit held in Tokyo on 24th May 2022.
+(1) Q-CHAMP (Quad Climate Change Action and Mitigation Package)
+(2) HADR (Humanitarian Assistance and Disaster Relief)
+(3) IPMDA (Indo-Pacific Partnership for Maritime Domain Awareness)
+(4) GISRS (Global Influenza Surveillance and Response System)
+= 4
+~ The Tokyo Quad summit launched the Quad Climate Change Adaptation and Mitigation Package (Q-CHAMP), a Quad partnership on humanitarian assistance and disaster relief (HADR) and the Indo-Pacific Partnership for Maritime Domain Awareness (IPMDA). GISRS is the WHO's global influenza surveillance network, not a Quad initiative.
+
+Q 56 | cur | International
+Choose the correct statements with reference to I2U2 Summit 2022.
+a) The first leaders' Summit of I2U2 was held physically on 14th July 2022.
+b) Prime Minister Narendra Modi hosted I2U2 Summit.
+c) They have agreed to increase joint investment in the areas of water, energy and transport.
+d) They have agreed to increase joint investment in the areas of space, health and food security.
+(1) (a) and (b) only
+(2) (a), (b) and (c) only
+(3) (a), (b) and (d) only
+(4) (c) and (d) only
+= 4
+~ The first I2U2 (India, Israel, UAE, USA) leaders' summit on 14 July 2022 was held virtually and hosted by Israel's PM Yair Lapid, so (a) and (b) are wrong. The leaders agreed to raise joint investment in water, energy, transport, space, health and food security, so both (c) and (d) are correct.
+
+Q 57 | cur | Awards & Personalities
+The first Indian has been selected for the prestigious Boltzmann Medal-2022 awarded by the International Union of Pure and Applied Physics.
+(1) Gautam Menon
+(2) Sriram Ramaswamy
+(3) Arindam Ghosh
+(4) Deepak Dhar
+= 4
+~ Deepak Dhar, the statistical physicist at IISER Pune, was chosen for the 2022 Boltzmann Medal of IUPAP's statistical physics commission, the first Indian to receive it.
+
+Q 58 | cur | International
+Russia has claimed four regions of Ukraine following so-called referendum held in September 2022. The four regions are
+(1) Kherson, Kyiv, Crimea and Donetsk
+(2) Kharkiv, Donetsk, Luhansk and Kyiv
+(3) Donetsk, Kherson, Luhansk and Zaporizhzhia
+(4) Luhansk, Zaporizhzhia, Kharkiv and Crimea
+= 3
+~ After the September 2022 referendums, Russia declared the annexation of Donetsk, Luhansk, Kherson and Zaporizhzhia on 30 September 2022. Kyiv and Kharkiv were not part of it, and Crimea had already been annexed in 2014.
+
+Q 59 | cur | International
+The 38th Ministerial meeting of the Joint Rivers Commission of India and Bangladesh held in August 2022 had signed a MoU on the withdrawal of water from the following river
+(1) Teesta
+(2) Kushiyara
+(3) Ganga
+(4) Brahmaputra
+= 2
+~ The text of the MoU on withdrawal of water from the Kushiyara river was finalised at the 38th JRC ministerial meeting in New Delhi on 25 August 2022 and the MoU was signed on 6 September 2022 during PM Sheikh Hasina's visit to India. The Teesta water-sharing agreement remained pending.
+
+Q 60 | cur | International
+"Resilient Democracies Statement 2022" was signed during the following Summit
+(1) G7
+(2) I2U2
+(3) 14th BRICS
+(4) SCO (Shanghai Cooperation Organisation)
+= 1
+~ The Resilient Democracies Statement was signed at the G7 summit at Schloss Elmau, Germany (June 2022), where India and the other invited democracies endorsed it.
+
+Q 61 | ih | Modern India & Freedom Struggle
+In the Interim Government formed in 1946, the Vice President of the Executive Council was
+(1) C. Rajagopalachari
+(2) Dr. S. Radhakrishnan
+(3) Jawaharlal Nehru
+(4) Dr. Rajendra Prasad
+= 3
+~ In the Interim Government sworn in on 2 September 1946, Jawaharlal Nehru headed the Viceroy's Executive Council as its Vice-President. Rajagopalachari and Rajendra Prasad were ministers in it, while Radhakrishnan was not a member.
+
+Q 62 | pol | Union & State Government
+The Attorney-General of India is not a member in the Parliament, but he shall have the right to speak in Parliament under this article of the Constitution
+(1) 88th Article
+(2) 76th Article
+(3) 75th Article
+(4) 86th Article
+= 1
+~ Article 88 gives every Minister and the Attorney-General the right to speak in, and take part in the proceedings of, either House and its committees without a right to vote. Article 76 only provides for the appointment of the Attorney-General, and Article 75 is about the Prime Minister and Ministers.
+
+Q 63 | pol | Union & State Government
+The election symbol of Mizo National Front in Mizoram is
+(1) Umbrella
+(2) Star
+(3) Lion
+(4) Kite
+= 2
+~ The Mizo National Front (MNF), Mizoram's main regional party, has the Star as its reserved election symbol with the Election Commission of India.
+
+Q 64 | pol | Constitution & Rights
+The Constitutional Amendment Act that increased the seats of Lok Sabha from 525 to 545
+(1) 21st Constitutional Amendment Act
+(2) 24th Constitutional Amendment Act
+(3) 25th Constitutional Amendment Act
+(4) 31st Constitutional Amendment Act
+= 4
+~ The 31st Amendment Act, 1973 raised the maximum strength of the Lok Sabha from 525 to 545. The 21st Amendment added Sindhi to the Eighth Schedule, the 24th dealt with amending Fundamental Rights and the 25th with the right to property.
+
+Q 65 | pol | Union & State Government
+The Person with longest tenure as Speaker of Lok Sabha is
+(1) G. V. Mavalankar
+(2) Balram Jakhar
+(3) P. A. Sangma
+(4) Shivraj Patil
+= 2
+~ Balram Jakhar was Speaker for nearly ten years (January 1980 to December 1989, covering the 7th and 8th Lok Sabhas), the longest of any Speaker. Mavalankar served 1952-56, Sangma 1996-98 and Shivraj Patil 1991-96.
+
+Q 66 | pol | Constitution & Rights
+A Writ to direct a public official or the Government NOT to enforce a law which is unconstitutional
+(1) Certiorari
+(2) Quo Warranto
+(3) Prohibition
+(4) Mandamus
+= 4
+~ The key gives Mandamus, the writ by which a High Court can direct or restrain a public official or the Government in the discharge of a public duty, including from enforcing an unconstitutional law. Prohibition is the tempting option but it lies only against courts and quasi-judicial bodies; Certiorari quashes an order already passed and Quo Warranto tests a person's right to hold a public office.
+
+Q 67 | pol | Local Government & Bodies
+The 73rd Constitutional Amendment Act added Eleventh Schedule to the Constitution that contains
+(1) 18 Subjects
+(2) 29 Subjects
+(3) 22 Subjects
+(4) 21 Subjects
+= 2
+~ The 73rd Amendment (1992, Panchayati Raj) added the Eleventh Schedule listing 29 subjects for Panchayats. The 74th Amendment's Twelfth Schedule has 18 subjects for municipalities.
+
+Q 68 | ih | Modern India & Freedom Struggle
+For the first time Indian Legislature was made as "Bi-cameral Legislature" under
+(1) Govt. of India Act, 1861
+(2) Govt. of India Act, 1892
+(3) Govt. of India Act, 1909
+(4) Govt. of India Act, 1919
+= 4
+~ The Government of India Act, 1919 (Montagu-Chelmsford Reforms) created a bicameral central legislature, the Council of State and the Central Legislative Assembly. The Acts of 1861, 1892 and 1909 only enlarged the single Imperial Legislative Council.
+
+Q 69 | ih | Modern India & Freedom Struggle
+The Author of the Book "Poverty and Un-British Rule in India" is
+(1) Dadabhai Naoroji
+(2) R.C. Dutt
+(3) V.K.R.V. Rao
+(4) Dr. Bipin Chandra
+= 1
+~ Dadabhai Naoroji wrote "Poverty and Un-British Rule in India" (1901), setting out the "drain of wealth" theory. R.C. Dutt is known for "The Economic History of India", V.K.R.V. Rao for national income studies and Bipin Chandra for "The Rise and Growth of Economic Nationalism in India".
+
+Q 70 | eco | Agriculture & Industry
+Which one of the following is not a reason for agrarian distress in India?
+(1) Unviable agriculture
+(2) Ineffective minimum support price
+(3) Favourable terms of Trade
+(4) Rural indebtedness
+= 3
+~ Agrarian distress is driven by unviable small-holding farming, an MSP that does not reach farmers effectively and rural indebtedness. Terms of trade have turned against agriculture, so "favourable terms of trade" is the one that is not a cause.
+
+Q 71 | eco | Agriculture & Industry
+According to WTO, the Blue Box is
+(1) Amber Box with conditions
+(2) Green Box with conditions
+(3) Red Box with conditions
+(4) Combination of Green and Red Boxes with simple conditions
+= 1
+~ Under the WTO Agreement on Agriculture, the Blue Box covers subsidies that would otherwise fall in the trade-distorting Amber Box but are tied to production-limiting programmes, so it is described as an Amber Box with conditions. The Green Box covers non-distorting support, and there is no Red Box in the Agreement on Agriculture.
+
+Q 72 | eco | Poverty, Employment & Welfare
+Human life energy requirement in terms of calories as a measure of poverty in India was used for the first time by
+(1) Ranga Rajan
+(2) Tendulkar
+(3) Dandekar and Rath
+(4) Planning Commission
+= 3
+~ V.M. Dandekar and N. Rath (1971) were the first to define the poverty line in India by the calorie requirement (about 2,250 calories per person per day). The later Planning Commission and the Tendulkar and Rangarajan committees built on or revised this approach.
+
+Q 73 | eco | Money, Banking & Finance
+Money Multiplier is defined as
+(1) Reserve Money / Supply of Money
+(2) Supply of Money / Reserve Money
+(3) Reserve Money × Supply of Money
+(4) (Supply of Money - Reserves) / Reserves
+= 2
+~ The money multiplier is the ratio of the money supply (M3) to reserve money (high-powered money), i.e. M/H, showing how many times the money supply expands per rupee of reserve money. Option (1) is its inverse.
+
+Q 74 | cur | Reports & Indices
+Based on school education quality index 2021, the best and worst performing Indian States are
+(1) Tamil Nadu, Jharkhand
+(2) Kerala, Bihar
+(3) Kerala, Jharkhand
+(4) Tamil Nadu, Bihar
+= 3
+~ Kerala topped NITI Aayog's School Education Quality Index, and the key pairs it with Jharkhand as the worst performer. Sources report the bottom of the table differently (Uttar Pradesh in several reports, Jharkhand in the rank table), so treat this as the official answer only. (Official key; some sources differ.)
+
+Q 75 | cur | Reports & Indices
+As per the Health Index (2021) released by the NITI Aayog, the top performing states are
+(1) Kerala, Gujarat
+(2) Kerala, Andhra Pradesh
+(3) Kerala, Punjab
+(4) Maharashtra, Andhra Pradesh
+= 2
+~ In NITI Aayog's fourth Health Index (December 2021) Kerala topped the larger states, followed by Tamil Nadu and Telangana, with Andhra Pradesh and Maharashtra also in the top five. Among the given pairs, Kerala with Andhra Pradesh is the best fit; Gujarat and Punjab were not in the top five.
+
+Q 76 | eco | Money, Banking & Finance
+The number of Public Sector Banks in India after merger during 2020 is
+(1) 10
+(2) 12
+(3) 13
+(4) 14
+= 2
+~ On 1 April 2020 ten public sector banks were merged into four larger ones, which brought the number of public sector banks down from 18 to 12 (it had been 27 in 2017).
+
+Q 77 | cur | Reports & Indices
+What are the two least performing states in India in the achievement of Sustainable Development Goals during the year 2020-21?
+(1) Bihar, Jharkhand
+(2) Bihar, Uttar Pradesh
+(3) Uttar Pradesh, Uttara Khand
+(4) Bihar, Rajasthan
+= 1
+~ In NITI Aayog's SDG India Index 2020-21 Bihar (score 52) and Jharkhand (56) were the lowest-ranked states, with Assam third from the bottom; Uttar Pradesh, Uttarakhand and Rajasthan scored higher.
+
+Q 78 | eco | Agriculture & Industry
+Pradhan Mantri Matsya Sampada Yojana (PMMSY 2020) intends to increase the productivity of aquaculture to
+(1) 5 tons / hectare
+(2) 6 tons / hectare
+(3) 8 tons / hectare
+(4) 10 tons / hectare
+= 1
+~ PMMSY, launched in 2020, aims to raise the national average aquaculture productivity from about 3 tonnes to 5 tonnes per hectare.
+
+Q 79 | geo | Physical Geography
+The shadow zone for both P and S waves during an earthquake is
+(1) 105° to 145° from epicentre
+(2) 90° to 180° from epicentre
+(3) 35° to 75° from epicentre
+(4) 165° to 220° from epicentre
+= 1
+~ P waves are bent by the Earth's core and leave a shadow zone between about 105° and 145° from the epicentre, while S waves cannot pass through the liquid outer core and are absent beyond 105°. The zone where both are missing is therefore 105° to 145°.
+
+Q 80 | geo | Indian Geography
+The state producing largest sealing wax in India
+(1) Bihar
+(2) Andhra Pradesh
+(3) Uttar Pradesh
+(4) Haryana
+= 1
+~ Sealing wax is made mainly from lac (shellac), so the question is about the leading lac-producing state. Jharkhand now leads (about 42% of India's lac) but it was part of Bihar until 2000, which is why the key gives Bihar from the options listed. (Official key; some sources differ.)
+
+Q 81 | geo | Indian Geography
+Aus, Aman and Boro are crop varieties of
+(1) Wheat
+(2) Bajra
+(3) Paddy
+(4) Jowar
+= 3
+~ Aus (autumn), Aman (winter) and Boro (summer) are the three seasonal crops of rice (paddy) grown mainly in West Bengal, Assam, Odisha and Bangladesh. None of them is wheat, bajra or jowar.
+
+Q 82 | geo | Indian Geography
+The state having lowest area under forest
+(1) Punjab
+(2) Haryana
+(3) Uttar Pradesh
+(4) Rajasthan
+= 2
+~ Haryana has the lowest forest area among these states: in the India State of Forest Report 2021 it has 1,603 sq km (3.63% of its area) against Punjab's 1,847 sq km (3.67%). Uttar Pradesh (6.15%) and Rajasthan (4.87%) have a larger share under forest.
+
+Q 83 | geo | Environment & Ecology
+From the following, choose the wrong pair of National Parks and States.
+(1) Balapakram - Meghalaya
+(2) Bandipur - Bihar
+(3) Dachigam - Jammu & Kashmir
+(4) Namdapha - Arunachal Pradesh
+= 2
+~ Bandipur National Park is in Karnataka, not Bihar, so pair (2) is wrong. Balapakram (Meghalaya), Dachigam (Jammu and Kashmir) and Namdapha (Arunachal Pradesh) are correctly matched.
+
+Q 84 | geo | Physical Geography
+The Planetesimal Hypothesis is proposed by
+(1) Kant
+(2) Laplace
+(3) Jeans
+(4) Chamberlin-Moulton
+= 4
+~ T.C. Chamberlin and F.R. Moulton proposed the Planetesimal Hypothesis of the origin of the Earth (1904). Kant gave the Gaseous Hypothesis, Laplace the Nebular Hypothesis and Jeans (with Jeffreys) the Tidal Hypothesis.
+
+Q 85 | geo | Indian Geography
+The period of the South West monsoon in India is as
+(1) July to October
+(2) May to September
+(3) June to September
+(4) June to October
+= 3
+~ The South West monsoon reaches Kerala around 1 June and lasts, with its withdrawal beginning in mid-September, until September. The October-November season is that of the retreating monsoon.
+
+Q 86 | geo | Indian Geography
+The river called as 'Dihang' in India is
+(1) Ganga
+(2) Indus
+(3) Brahmaputra
+(4) Yamuna
+= 3
+~ The Brahmaputra, known as Tsangpo in Tibet, enters Arunachal Pradesh as the Siang or Dihang before being joined by the Dibang and Lohit near Sadiya.
+
+Q 87 | geo | Physical Geography
+Match the following.
+List-I    List-II
+a) Titan    i) Jupiter
+b) Ganymede    ii) Mars
+c) Phobos    iii) Neptune
+d) Triton    iv) Saturn
+The correct answer is :
+(1) a-ii, b-iii, c-i, d-iv
+(2) a-iv, b-i, c-ii, d-iii
+(3) a-i, b-ii, c-iii, d-iv
+(4) a-iii, b-iv, c-i, d-ii
+= 2
+~ Titan is Saturn's largest moon, Ganymede is Jupiter's largest moon, Phobos is a moon of Mars and Triton is Neptune's largest moon, so a-iv, b-i, c-ii, d-iii.
+
+Q 88 | geo | Physical Geography
+Gneiss, Marble, Quartzite and Schist are the examples of the following rocks.
+(1) Metamorphic rocks
+(2) Igneous rocks
+(3) Sedimentary rocks
+(4) Chemical rocks
+= 1
+~ Gneiss, marble, quartzite and schist are all metamorphic rocks, formed when existing rocks (granite, limestone, sandstone, shale) are altered by heat and pressure.
+
+Q 89 | eco | Agriculture & Industry
+FFDA means
+(1) Fish Foreign Development Area
+(2) Fish Farmers Development Agency
+(3) Free Fish Development Authority
+(4) Fish Frame Development Area
+= 2
+~ FFDA stands for Fish Farmers Development Agency, the district-level agencies set up under a centrally sponsored scheme to promote freshwater fish farming (aquaculture).
+
+Q 90 | geo | Indian Geography
+Khadar, Bangar soils are related to following these soils
+(1) Alluvial soils
+(2) Red soils
+(3) Black soils
+(4) Desert soils
+= 1
+~ Khadar (newer, flood-plain deposits) and Bangar (older, upland deposits) are the two types of alluvial soil found in the Indo-Gangetic plains.
+
+Q 91 | geo | Indian Geography
+According to 2011 census, Scheduled Tribes population is absent in these States/Union Territories.
+a) Pondicherry
+b) Haryana
+c) Kerala
+d) Maharashtra
+(1) (a) & (b)
+(2) (b) & (c)
+(3) (c) & (d)
+(4) (a) & (c)
+= 1
+~ No Scheduled Tribes are notified in Puducherry and Haryana (also Punjab, Chandigarh and Delhi), so none were enumerated there in 2011, whereas Kerala and Maharashtra have sizeable ST populations. Hence (a) and (b).
+
+Q 92 | geo | Indian Geography
+Which of the following stretch is the longest waterway in India?
+(1) Sadiya - Dhubri
+(2) Kottapuram - Kollam
+(3) Kakinada - Puducherry
+(4) Allahabad - Haldia
+= 4
+~ National Waterway 1 (Allahabad-Haldia on the Ganga-Bhagirathi-Hooghly, about 1,620 km) is the longest. Sadiya-Dhubri (NW-2) is about 890 km, Kakinada-Puducherry (NW-4) about 1,080 km and Kottapuram-Kollam (NW-3) only about 205 km.
+
+Q 93 | geo | Physical Geography
+Choose the incorrect statement.
+(1) The temperature on 3rd January is slightly more than that of 4th July.
+(2) The reflected amount of Sun's radiation from the earth's surface is called Albedo.
+(3) All the weather and climatic changes take place in stratosphere.
+(4) The Sun is directly overhead at noon on 21st June at 23.5°N.
+= 3
+~ Weather and climatic changes (clouds, rain, storms) take place in the troposphere, the lowest layer, not in the stratosphere, so statement (3) is incorrect. The other statements follow the usual textbook lines: Earth is nearest the Sun (perihelion) about 3 January and farthest (aphelion) about 4 July, so it receives slightly more solar heat in January; albedo is the reflected share of solar radiation; and on 21 June the Sun is overhead at the Tropic of Cancer (23.5°N).
+
+Q 94 | pol | Union & State Government
+Identify the correct one relating to the tenure of Lok Sabha
+(1) Cannot be extended under any circumstances
+(2) Can be extended
+(3) Can be extended by not exceeding one year at a time during the proclamation of emergency
+(4) Can be extended by not exceeding 2 years at a time
+= 3
+~ Under Article 83(2) the normal five-year term of the Lok Sabha can be extended by Parliament by law for one year at a time while a Proclamation of Emergency is in operation, and not beyond six months after the Emergency ends. So it can neither be extended in all circumstances nor by two years at a time.
+
+Q 95 | pol | Constitution & Rights
+If a new State in the Indian Union is to be created, which one of the following Schedules of the Constitution must be amended
+(1) Fourth Schedule
+(2) Second Schedule
+(3) Third Schedule
+(4) First Schedule
+= 4
+~ The First Schedule lists the States and Union Territories, so forming a new State under Articles 3 and 4 requires it to be amended. (Such a law also changes the Fourth Schedule's Rajya Sabha seats, but it is the First Schedule that must be amended; Article 4 says it is not a constitutional amendment under Article 368.)
+
+Q 96 | ih | Modern India & Freedom Struggle
+Which of the following is NOT a feature of the Government of India Act, 1935?
+(1) Dyarchy in the Provinces
+(2) A Bi-cameral Legislature at the Provincial level
+(3) Provincial Autonomy
+(4) An All India Federation
+= 1
+~ The 1935 Act abolished dyarchy in the provinces (which came from the 1919 Act) and introduced provincial autonomy, with dyarchy shifted to the Centre. It also provided for bicameral legislatures in some provinces and an All-India Federation, which never came into being.
+
+Q 97 | pol | Judiciary
+The salaries and allowances of the Judges of High Court are charged on
+(1) Consolidated Fund of India
+(2) Consolidated Fund of the State
+(3) Contingency Fund of India
+(4) Contingency Fund of the State
+= 2
+~ Under Article 202(3) the salaries and allowances of High Court Judges are charged on the Consolidated Fund of the State (not subject to the vote of the Legislature), while their pensions are charged on the Consolidated Fund of India. Contingency Funds are only for unforeseen expenditure.
+
+Q 98 | pol | Union & State Government
+The State which has the largest number of seats reserved for Scheduled Tribes in Lok Sabha is
+(1) Odisha
+(2) Jharkhand
+(3) Gujarat
+(4) Madhya Pradesh
+= 4
+~ Of the 47 Lok Sabha seats reserved for Scheduled Tribes, Madhya Pradesh has the most (6). Odisha and Jharkhand have 5 each and Gujarat has 4.
+
+Q 99 | pol | Constitution & Rights
+The following Schedule of the Indian Constitution contains provisions relating to Anti-Defection Act
+(1) Second Schedule
+(2) Fifth Schedule
+(3) Eighth Schedule
+(4) Tenth Schedule
+= 4
+~ The Tenth Schedule, added by the 52nd Amendment Act (1985), contains the anti-defection provisions on disqualification of legislators for defection. The Second Schedule deals with salaries of constitutional office-holders, the Fifth with Scheduled Areas and Scheduled Tribes, and the Eighth with languages.
+
+Q 100 | pol | Union & State Government
+Who among the following became the Prime Minister of India without being earlier the Chief Minister of a State?
+(1) Chandra Shekhar
+(2) Morarji Desai
+(3) Charan Singh
+(4) Vishwanath Pratap Singh
+= 1
+~ Chandra Shekhar (PM 1990-91) never headed a State government. Morarji Desai had been Chief Minister of Bombay State, and Charan Singh and V.P. Singh had both been Chief Ministers of Uttar Pradesh.
