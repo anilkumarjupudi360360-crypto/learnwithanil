@@ -1244,7 +1244,9 @@ def main():
     tpl = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
     head, body = tpl.split('<!--BODY-->')
     live_names = [c['name'] for c, _, _ in loaded]
-    nav_extra = ''.join(f'      <a href="{c["dir"]}/" data-hubonly>{esc(c["short"])}</a>\n' for c, _, _ in loaded if c['dir'])
+    NAVB = {'upsc': 'UPSC', 'ap': 'APPSC', 'tg': 'TGPSC & TS Police', 'ssc': 'SSC', 'rail': 'Railways', 'bank': 'Banking'}   # Anil, 2 Nov 2026: the top bar lists boards, not every exam
+    nav_extra = ''.join(f'      <a href="/#exams-list" data-act="excat" data-cat="{cid}" data-hubonly>{lbl}</a>\n' for cid, lbl in NAVB.items()
+                        if any(c['id'] == cid for c in catalog['cats']))
     hub_ctas = ''.join(f'<a class="btn btn-primary" href="{"#home" if c["dir"] == "" else c["dir"] + "/"}">{esc(c["name"])}</a>' for c, _, _ in loaded)
     live_list = [c['name'] for c, _, _ in loaded]
     live_summary = (f'Live now: {", ".join(live_list[:-1]) + " and " + live_list[-1] if len(live_list) > 1 else live_list[0]} '
@@ -1319,6 +1321,7 @@ def main():
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
                      .replace('{{HOME_NOTES}}', home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}').replace('{{NLIVE}}', str(len(loaded)))
+                     .replace('{{NLIVEX}}', str(sum(1 for e in catalog['exams'] if e.get('live')))).replace('{{HERO_NEW}}', HERO_NEW)
                      .replace('{{MOCKQ}}', f'{mock_questions():,}')
                      .replace('{{GOALPCT}}', f'{grand * 100 / 100000:.0f}').replace('{{GOALW}}', f'{max(1.5, min(100, grand * 100 / 100000)):.1f}')
                      .replace('{{LIVE_SUMMARY}}', esc(live_summary))
@@ -1362,7 +1365,7 @@ def main():
                     ('Study Material 2026-27 – Crisp Notes by Jupudi Anil Kumar | Learn with Anil',
                      'Exam-focused study material by Jupudi Anil Kumar: Crisp Notes on AP Economy and Science & Technology for APPSC Mains, with the latest 2026 data.', '/appsc-group-2/notes/', True)),
           'about': ('About Jupudi Anil Kumar – Learn with Anil',
-                    'Jupudi Anil Kumar is a civil-services educator with 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants. He built Learn with Anil to make previous-year questions easy and affordable to practise for every aspirant.', '/appsc-group-2/about/', True),
+                    'Jupudi Anil Kumar is a civil-services educator with 2.5 years of teaching and mentorship for UPSC, APPSC and TGPSC aspirants. He built Learn with Anil to make previous-year questions easy and affordable to practise for every aspirant.', '/appsc-group-2/about/', True),
           'mistakes': (f'Mistakes Notebook – {seo_name} | Learn with Anil', 'Your mistakes notebook on Learn with Anil.', pb + 'mistakes/', False),
           'smart': (f'Smart Quiz – {seo_name} | Learn with Anil', 'Re-attempt the questions you got wrong.', pb + 'smart/', False),
           'bookmarks': (f'Bookmarks – {seo_name} | Learn with Anil', 'Your saved questions on Learn with Anil.', pb + 'bookmarks/', False),
@@ -1680,6 +1683,9 @@ def live_href(e):
     return e['live'] if '/' in e['live'] else '#' + e['live']
 
 
+HERO_NEW = ('<a class="hero-new" href="/upsc-cse/"><span>New</span> UPSC Prelims 2026 &amp; 2025 · Anthropology model answers <b aria-hidden="true">→</b></a>')   # start-page announcement pill; change with each big release
+
+
 BOARD_ART = {   # line drawings for the board tiles (own artwork; no photos, no maps, no emblems)
     'upsc': '<path d="M40 34 80 15l40 19Z"/><path d="M38 34h84M42 39h76"/><path d="M50 43v26M63 43v26M76 43v26M89 43v26M102 43v26M114 43v26"/><path d="M40 71h80M35 77h90"/>',
     'ap': '<path d="M54 78h52l-4-13H58Z"/><path d="M59 65h42l-4-12H63Z"/><path d="M64 53h32l-4-11H68Z"/><path d="M69 42h22l-4-10H73Z"/><path d="M73 32h14l-3-8H76Z"/><path d="M74 24c0-5 12-5 12 0"/><path d="M80 19v-7M77 15h6"/><path d="M75 78v-7a5 5 0 0 1 10 0v7"/>',
@@ -1688,6 +1694,51 @@ BOARD_ART = {   # line drawings for the board tiles (own artwork; no photos, no 
     'rail': '<rect x="56" y="12" width="48" height="54" rx="11"/><rect x="63" y="20" width="34" height="19" rx="3"/><circle cx="68" cy="53" r="3.5"/><circle cx="92" cy="53" r="3.5"/><path d="M74 53h12"/><path d="m63 66-9 13M97 66l9 13M48 79h64M52 73h56"/>',
     'bank': '<path d="M42 34 80 15l38 19Z"/><path d="M42 34h76"/><path d="M50 39v28M64 39v28M96 39v28M110 39v28"/><path d="M40 70h80M35 77h90"/><circle cx="80" cy="52" r="10"/><path d="M76 47h9M76 51h9M79 47c5 0 5 8 0 8h-3l7 7"/>',
 }
+EXAM_ART = [   # header drawings on the exam tiles (own line art, 160x90; Anil 2 Nov 2026: a picture instead of a strip). No photos, maps or emblems.
+    (r'police|constable|\bsi\b', '<path d="M44 52c-4-34 76-34 72 0"/><path d="M42 52h76v11H42Z"/><path d="M46 63c12 13 56 13 68 0"/><path d="M80 20l9 4v8c0 7-4 11-9 14-5-3-9-7-9-14v-8Z"/><path d="m76 31 3 3 6-6"/><path d="M50 57.5h60" opacity=".55"/>'),
+    (r'capf|\bcds\b|\bnda\b|defence|afcat|army|navy', '<path d="M80 12 58 20v16c0 15 9 27 22 34 13-7 22-19 22-34V20Z"/><path d="m80 28 4 8.5 9.3 1.3-6.7 6.5 1.6 9.2L80 49.2l-8.2 4.3 1.6-9.2-6.7-6.5 9.3-1.3Z"/><path d="M50 40c-6 6-6 16 2 22M110 40c6 6 6 16-2 22"/>'),
+    (r'amvi|motor vehicle', '<path d="M38 60V50l10-14h52l12 14h10v10Z"/><path d="M54 40h18v10H50ZM78 40h18l8 10H78Z"/><circle cx="56" cy="62" r="7"/><circle cx="106" cy="62" r="7"/><path d="M28 72h108"/>'),
+    (r'endowment', '<path d="M54 74h52"/><path d="M60 74V48h40v26"/><path d="M56 48h48L80 28Z"/><path d="M80 28V14l12 4-12 4"/><path d="M73 74V61a7 7 0 0 1 14 0v13"/><path d="M65 55h4M91 55h4"/>'),
+    (r'forest|\bfro\b|\bifos\b|\bfbo\b', '<path d="M44 72 58 48h-6l12-22 12 22h-6l14 24Z"/><path d="M84 72 96 52h-5l11-20 11 20h-5l12 20Z"/><path d="M64 72v7M102 72v7M34 79h98"/>'),
+    (r'analyst|chemist|drug|pharma|\blab\b', '<path d="M70 14h20M73 14v20L56 66a5 5 0 0 0 4.5 7h39a5 5 0 0 0 4.5-7L87 34V14"/><path d="M62 54h36"/><circle cx="74" cy="62" r="3"/><circle cx="86" cy="58" r="2"/><circle cx="114" cy="26" r="5"/><circle cx="126" cy="42" r="4"/><path d="m117 30 6 8"/>'),
+    (r'hmwssb|water', '<path d="M80 10s18 20 18 34a18 18 0 0 1-36 0c0-14 18-34 18-34Z"/><path d="M72 46a8 8 0 0 0 8 8"/><path d="M32 74c8-5 16-5 24 0s16 5 24 0 16-5 24 0 16 5 24 0"/>'),
+    (r'teacher|\btet\b|\bdsc\b|lecturer|gurukul|\btgt\b|\bpgt\b', '<path d="M80 26c-8-6-20-8-34-6v44c14-2 26 0 34 6 8-6 20-8 34-6V20c-14-2-26 0-34 6Z"/><path d="M80 26v44"/><path d="M54 32h16M54 40h16M90 32h16M90 40h16"/>'),
+    (r'rail|\brrb\b|ntpc|\balp\b', None),
+    (r'bank|ibps|\bsbi\b|\brbi\b|nabard|\blic\b|epfo|insurance|apfc|account|audit', '<path d="M42 34 80 15l38 19Z"/><path d="M42 34h76"/><path d="M50 39v28M64 39v28M96 39v28M110 39v28"/><path d="M40 70h80M35 77h90"/><circle cx="80" cy="52" r="10"/><path d="M76 47h9M76 51h9M79 47c5 0 5 8 0 8h-3l7 7"/>'),
+    (r'health|nurs|medical|mphw|doctor', '<path d="M80 72S54 56 54 38a13 13 0 0 1 26-6 13 13 0 0 1 26 6c0 18-26 34-26 34Z"/><path d="M34 48h24l5-10 7 20 6-14 4 4h46"/>'),
+    (r'prelims|csat', '<rect x="56" y="10" width="48" height="68" rx="4"/><circle cx="66" cy="24" r="3.2"/><circle cx="76" cy="24" r="3.2" fill="currentColor"/><circle cx="86" cy="24" r="3.2"/><circle cx="96" cy="24" r="3.2"/><circle cx="66" cy="37" r="3.2"/><circle cx="76" cy="37" r="3.2"/><circle cx="86" cy="37" r="3.2"/><circle cx="96" cy="37" r="3.2" fill="currentColor"/><circle cx="66" cy="50" r="3.2" fill="currentColor"/><circle cx="76" cy="50" r="3.2"/><circle cx="86" cy="50" r="3.2"/><circle cx="96" cy="50" r="3.2"/><circle cx="66" cy="63" r="3.2"/><circle cx="76" cy="63" r="3.2"/><circle cx="86" cy="63" r="3.2" fill="currentColor"/><circle cx="96" cy="63" r="3.2"/>'),
+    (r'mains|civil services', '<rect x="48" y="12" width="44" height="64" rx="4"/><path d="M56 26h28M56 36h28M56 46h20"/><path d="m90 68 4-14 26-26 10 10-26 26Z"/><path d="m116 32 10 10"/>'),
+    (r'ssc|cgl|chsl|\bmts\b|steno|clerk|secretariat', None),
+]
+
+
+def exam_art(e, cat):
+    t = f'{e["id"]} {e["t"]} {e.get("n", "")}'.lower().replace('-', ' ')
+    for rx, svg in EXAM_ART:
+        if re.search(rx, t): return svg or BOARD_ART['rail' if 'rail' in rx else 'ssc']
+    return BOARD_ART.get(cat, BOARD_ART['upsc'])   # PSC groups and posts: the board's own drawing (gopuram, Charminar, building)
+
+
+BOARD_PHOTO = {   # free-licence photos from Wikimedia Commons, cropped to 640x250 WebP in src/static (Anil approved the download, 2 Nov 2026)
+    'upsc': ('North Block, Delhi', 'Atulburnwal', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:North_Block,_Delhi.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
+    'ap': ('Tirumala gopurams', 'Vimalkalyan', 'public domain', 'https://commons.wikimedia.org/wiki/File:Tirumala_gopurams.JPG', ''),
+    'tg': ('Charminar, Hyderabad', 'Craftofolio.media', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Charminar,_Hyderabad,_Telangana,_India.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),
+    'ssc': ('Writing an exam', 'Alison wood', 'CC BY 3.0', 'https://commons.wikimedia.org/wiki/File:Hand-writing-exam-classroom.jpg', 'https://creativecommons.org/licenses/by/3.0/'),
+    'rail': ('Vijayawada–Chennai Vande Bharat Express', 'Ravi Dwivedi', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Vijayawada_-_Chennai_Central_Vande_Bharat_Express.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),
+    'bank': ('Rupee coins', 'Ravi Kumar', 'CC BY 3.0', 'https://commons.wikimedia.org/wiki/File:Coin_(127690727).jpeg', 'https://creativecommons.org/licenses/by/3.0/'),
+}
+
+
+def photo_credits(ids):
+    bits = []
+    for k in ids:
+        if k not in BOARD_PHOTO: continue
+        t, a, lic, url, lurl = BOARD_PHOTO[k]
+        bits.append(f'<a href="{url}" target="_blank" rel="noopener">{esc(t)}</a> by {esc(a)} ('
+                    + (f'<a href="{lurl}" target="_blank" rel="noopener">{lic}</a>' if lurl else lic) + ')')
+    return f'<p class="ph-credit">Photos (cropped) via Wikimedia Commons: {" · ".join(bits)}.</p>' if bits else ''
+
+
 BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
 
 
@@ -1708,7 +1759,9 @@ def hub_html(catalog, counts, grand):
         badge = f'<span class="bd-badge"><i></i>{len(lv)} exam{"s" if len(lv) != 1 else ""} live</span>' if lv else '<span class="bd-badge bd-soon">Coming soon</span>'
         foot = f'{nq:,} questions' if lv else f'{len(ex)} exams listed'
         boards.append(f'<button type="button" class="card board b-{c["id"]}{"" if lv else " soon"}" data-act="excat" data-cat="{c["id"]}" title="{esc(c["desc"])}">'
-                      f'<span class="bd-art"><svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{art}</svg>{badge}</span>'
+                      f'<span class="bd-art{" has-ph" if c["id"] in BOARD_PHOTO and os.path.exists(os.path.join(SRC, "static", "board-" + c["id"] + ".webp")) else ""}">'
+                      + (f'<img class="bd-ph" src="/board-{c["id"]}.webp" alt="" width="640" height="250" loading="lazy" decoding="async">' if c['id'] in BOARD_PHOTO and os.path.exists(os.path.join(SRC, 'static', f'board-{c["id"]}.webp')) else '')
+                      + f'<svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{art}</svg>{badge}</span>'
                       f'<span class="bd-body"><span class="bd-n">{esc(c["name"])}</span>{te}'
                       + (f'<span class="bd-pills">{pills}</span>' if pills else f'<span class="bd-d">{esc(c["desc"])}</span>')
                       + f'<span class="bd-ft"><span>{foot}</span><span class="bd-go">{"Open" if lv else "See list"} →</span></span></span></button>')
@@ -1719,8 +1772,9 @@ def hub_html(catalog, counts, grand):
             status = f'Live · {counts.get(e["id"], 0):,} questions' if live else 'Upcoming'
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
             if live and e['id'] in MAINS_EXAMS and MAINS_KIT: sub += '<span class="ex-x">Prelims + Mains PYQs with model answers</span>'
-            tiles[live].append(f'<a class="card exam{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-id="{e["id"]}" data-s="{esc(exam_terms(e, c))}">'
-                               f'<span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></a>')
+            tiles[live].append(f'<a class="card exam x-{c["id"]}{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-id="{e["id"]}" data-s="{esc(exam_terms(e, c))}">'
+                               f'<span class="ex-art" aria-hidden="true"><svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">{exam_art(e, c["id"])}</svg></span>'
+                               f'<span class="ex-body"><span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></span></a>')
         upc = (f'<details class="upc"{"" if lv else " open"}><summary>Upcoming exams in {esc(c["name"])} ({len(tiles[False])}) · being added one by one</summary>'
                f'<div class="exams">{"".join(tiles[False])}</div></details>' if tiles[False] else '')
         secs.append(f'<section class="exam-cat" data-cat="{c["id"]}"><div class="section-title"><h2>{esc(c["name"])}{" <span class=te-sub lang=te>" + esc(c["te"]) + "</span>" if c.get("te") else ""}</h2>'
@@ -1734,7 +1788,8 @@ def hub_html(catalog, counts, grand):
     return (f'<div class="hub-tools">{search}</div>'
             f'<div id="hubRecent" class="hub-row" hidden><span class="hub-k" data-i18n="contT">Continue where you left off</span><div class="chips" id="hubRecentL"></div></div>'
             f'<div id="hubHome"><div class="boards" role="list">{"".join(boards)}</div>'
-            f'<div class="hub-row"><span class="hub-k" data-i18n="popT">Popular exams</span><div class="chips">{pop}</div></div></div>'
+            f'<div class="hub-row"><span class="hub-k" data-i18n="popT">Popular exams</span><div class="chips">{pop}</div></div>'
+            + photo_credits([c['id'] for c in cats]) + '</div>'
             f'<div id="hubBack" hidden><button type="button" class="btn btn-secondary btn-sm" data-act="excat" data-cat="all" data-i18n="allB">← All exam boards</button></div>'
             f'<p class="muted" id="hubCount" style="font-size:14px"></p>'
             f'<div id="hubCats">{"".join(secs)}</div>'
@@ -2417,7 +2472,7 @@ def llms_txt(loaded, grand):
         if any(c['board'] == X['board'] for c in exams): L.append(f'- [{X["title"].split(" | ")[0]}]({SITE_URL}/{rel})')
     for rel, N in NOTIFS.items():
         if any(c['id'] == N['exam'] for c in exams): L.append(f'- [{re.sub("<[^>]+>", "", N["h1"])}]({SITE_URL}/{rel})')
-    L += ['', '## About', f'- [About Jupudi Anil Kumar]({SITE_URL}/appsc-group-2/about/): civil-services educator, 1,000+ hours of teaching for UPSC, APPSC and TGPSC aspirants.',
+    L += ['', '## About', f'- [About Jupudi Anil Kumar]({SITE_URL}/appsc-group-2/about/): civil-services educator, 2.5 years of UPSC, APPSC and TGPSC teaching and mentorship.',
           f'- [Fund Learn with Anil]({SITE_URL}/funders.html): a one-person project built to be student-friendly and to democratise learning, with the goal of 1 lakh PYQs of various government exams under one roof for ₹45; Anil needs help from funders, which in turn helps him help the students.',
           f'- Instagram: https://www.instagram.com/{INSTAGRAM}/ · Telegram: https://t.me/learn_with_anil06 · YouTube: https://www.youtube.com/@learn_with_anil06', f'- Sitemap: {SITE_URL}/sitemap.xml', '']
     return '\n'.join(L)
@@ -2641,9 +2696,9 @@ def funders_page(loaded):
       'shareWa': ('Share on WhatsApp', 'WhatsApp पर साझा करें', 'WhatsAppలో పంచుకోండి'),
       'poster': ('Download the poster', 'पोस्टर डाउनलोड करें', 'పోస్టర్ డౌన్‌లోడ్ చేయండి'),
       'aboutT': ('About me', 'मेरे बारे में', 'నా గురించి'),
-      'aboutP': ('I am Jupudi Anil Kumar, a civil-services educator with more than 1,000 hours of teaching UPSC, APPSC and TGPSC aspirants. Learn with Anil is my independent initiative.',
-                 'मैं जुपुडी अनिल कुमार हूँ, एक सिविल सेवा शिक्षक। मैंने UPSC, APPSC और TGPSC अभ्यर्थियों को 1,000 से अधिक घंटे पढ़ाया है। Learn with Anil मेरी स्वतंत्र पहल है।',
-                 'నేను జూపూడి అనిల్ కుమార్, సివిల్ సర్వీసెస్ అధ్యాపకుడిని. UPSC, APPSC, TGPSC అభ్యర్థులకు 1,000 గంటలకు పైగా బోధించాను. Learn with Anil నా స్వతంత్ర కార్యక్రమం.'),
+      'aboutP': ('I am Jupudi Anil Kumar, a civil-services educator with 2.5 years of teaching and mentorship for UPSC, APPSC and TGPSC aspirants. Learn with Anil is my independent initiative.',
+                 'मैं जुपुडी अनिल कुमार हूँ, एक सिविल सेवा शिक्षक। मैंने 2.5 वर्षों तक UPSC, APPSC और TGPSC अभ्यर्थियों को पढ़ाया और उनका मार्गदर्शन किया है। Learn with Anil मेरी स्वतंत्र पहल है।',
+                 'నేను జూపూడి అనిల్ కుమార్, సివిల్ సర్వీసెస్ అధ్యాపకుడిని. UPSC, APPSC, TGPSC అభ్యర్థులకు 2.5 సంవత్సరాలుగా బోధన, మెంటార్‌షిప్ అందిస్తున్నాను. Learn with Anil నా స్వతంత్ర కార్యక్రమం.'),
       'aboutL': ('Read more about me', 'मेरे बारे में और पढ़ें', 'నా గురించి మరింత చదవండి'),
     }
     def t(k, tag='span', attrs=''):
@@ -3723,7 +3778,7 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
             hd = lambda h, s: f'<div class="section-title" style="margin:{"0" if h == "Prelims" else "26px"} 0 12px"><h2>{h}</h2><span class="muted" style="font-size:14px">{s}</span></div>'
             return (f'<section class="wrap section">' + hd('Prelims', 'Screening test: previous papers, mock tests, sectional tests')
                     + f'<div class="etiles">{t1}{t2}{t3}</div>' + hd('Mains', 'Descriptive papers: previous questions with model answers')
-                    + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + exam_clock_html(conf)
+                    + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + g1mains.tiles_credit() + exam_clock_html(conf)
                     + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
     return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + exam_clock_html(conf)
             + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + mains_section(conf, mains) + '</section>')
