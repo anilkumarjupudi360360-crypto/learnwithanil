@@ -69,7 +69,7 @@ async def main():
             tiles = await pg.locator('#hub-static .exam').count()
             assert tiles >= 90, f'expected the full exam list, got {tiles}'
             live = await pg.locator('#hub-static .exam.live').count()
-            built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager', 'appsc-amvi', 'tgpsc-amvi', 'appsc-endowment-officer') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
+            built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager', 'appsc-amvi', 'tgpsc-amvi', 'appsc-endowment-officer', 'upsc-cse') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
             assert live == built, f'{built} exams are built but {live} tiles are live'
             await pg.fill('#examSearch', 'group 2'); await pg.wait_for_timeout(100)
             assert await pg.locator('#hub-static .exam:not([hidden])').count() == 2, 'search "group 2" should find APPSC and TGPSC Group-II'
