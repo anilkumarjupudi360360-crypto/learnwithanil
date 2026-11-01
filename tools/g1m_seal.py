@@ -3,9 +3,10 @@
 
     python3 tools/g1m_seal.py /home/claude/g1m/work [--partial]
 
-Reads the private answer files <year>-p<n>.json ({question id: answer markup}), renders them to HTML (tools/g1m_render.py), encrypts all answers with AES-256-GCM
-(additional data "bk-g1m-ans", the scheme of the sealed books) into src/books/g1m-ans-<hash>.bin, and writes
-src/appsc-group-1/mains-pyqs/answers.json with the key id, the file name and the free sample answers (Q1(a) and Q1(b) of
+Reads the private answer files <year>-p<n>.json ({question id: answer markup}), renders them to HTML (tools/g1m_render.py), encrypts them with AES-256-GCM
+(one key; additional data "bk-g1m-ans", the scheme of the sealed books) into one file per paper and year,
+src/books/g1m-ans-<year>-p<n>-<hash>.bin, and writes
+src/appsc-group-1/mains-pyqs/answers.json with the key id, the file names and the free sample answers (Q1(a) and Q1(b) of
 each paper). The key is kept in G1M_PRIV/key.json (default /home/claude/g1m/secret; never committed) and reused; the row
 for the 'keys' tab of the private passes sheet (mock_id | key | file | opens) is printed as KEYROW.
 """
@@ -29,16 +30,20 @@ os.makedirs(priv, exist_ok=True)
 kp = os.path.join(priv, 'key.json')
 key = json.load(open(kp))['key'] if os.path.exists(kp) else base64.b64encode(os.urandom(32)).decode()
 json.dump({'key': key}, open(kp, 'w')); os.chmod(kp, 0o600)
-data = json.dumps(ans, ensure_ascii=False, separators=(',', ':')).encode()
-nonce = os.urandom(12)
-blob = nonce + AESGCM(base64.b64decode(key)).encrypt(nonce, data, KID.encode())
-name = 'g1m-ans-' + hashlib.sha256(blob).hexdigest()[:10] + '.bin'
+groups = {}   # one sealed bundle per paper and year (Anil, 1 Nov 2026: one answer per page, so a page loads only its paper)
+for i, h in ans.items(): groups.setdefault(re.match(r'g1m-(\d{4}-p\d)-', i).group(1), {})[i] = h
 bdir = os.path.join(ROOT, 'src', 'books')
+files, total = {}, 0
+for g, A in sorted(groups.items()):
+    data = json.dumps(A, ensure_ascii=False, separators=(',', ':')).encode()
+    nonce = os.urandom(12)
+    blob = nonce + AESGCM(base64.b64decode(key)).encrypt(nonce, data, KID.encode())
+    files[g] = f'g1m-ans-{g}-' + hashlib.sha256(blob).hexdigest()[:10] + '.bin'
+    open(os.path.join(bdir, files[g]), 'wb').write(blob); total += len(blob)
 for f in os.listdir(bdir):
-    if f.startswith('g1m-ans-') and f.endswith('.bin') and f != name: os.remove(os.path.join(bdir, f))
-open(os.path.join(bdir, name), 'wb').write(blob)
+    if f.startswith('g1m-ans-') and f.endswith('.bin') and f not in files.values(): os.remove(os.path.join(bdir, f))
 free = {q['id']: ans[q['id']] for q in qs if q['qno'] in ('1(a)', '1(b)') and q['id'] in ans}
-json.dump({'key': KID, 'file': name, 'n': len(ans), 'free': free},
+json.dump({'key': KID, 'files': files, 'n': len(ans), 'free': free},
           open(os.path.join(ROOT, 'src', 'appsc-group-1', 'mains-pyqs', 'answers.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-print(f'sealed {len(ans)} answers ({len(free)} free samples) into src/books/{name} ({len(blob):,} bytes)')
-print('KEYROW', json.dumps([KID, key, name]))
+print(f'sealed {len(ans)} answers ({len(free)} free samples) into {len(files)} files in src/books ({total:,} bytes)')
+print('KEYROW', json.dumps([KID, key, 'g1m-ans-<year>-p<n>-*.bin (one per paper)']))
