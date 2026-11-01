@@ -2436,7 +2436,7 @@ def llms_txt(loaded, grand):
             L.append(f'  - [{paper_kw(c, p)} question paper with answers]({SITE_URL}/{base}papers/{p["slug"]}.html) — held {p["held"]}, {p["count"]} questions')
         if c['id'] in MAINS_EXAMS and os.path.exists(os.path.join(SRC, c['src'], 'mains-pyqs', 'questions.json')):   # descriptive Mains PYQs (tools/g1mains.py)
             L.append(f'  - [APPSC Group 1 Mains previous year questions with model answers, year-wise and subject-wise]({SITE_URL}{c["pb"]}mains-pyqs/) — '
-                     f'Papers II to V of the 2020, 2023 and 2025 Mains, 360 questions, plus the 27 Paper I essay topics; questions free, model answers with the PYQ Pass')
+                     f'Papers II to V of the 2020, 2023 and 2025 Mains, 360 questions, plus the 27 Paper I essay topics; questions free, all 120 model answers of 2020 free (and Q1(a), Q1(b) of every 2023 and 2025 paper), the rest with the PYQ Pass')
             mdir = os.path.join(DIST, 'site', c['dir'], 'mains-pyqs')   # each year-paper page (SEO, 1 Nov 2026)
             for y in (2025, 2023, 2020):
                 for n, nm in ((1, 'Paper I (Essay) topics'), (2, 'Paper II (History & Geography)'), (3, 'Paper III (Polity & Ethics)'), (4, 'Paper IV (Economy)'), (5, 'Paper V (Science, Technology & Environment)')):

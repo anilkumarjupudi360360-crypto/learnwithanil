@@ -58,8 +58,13 @@ for g, A in sorted(groups.items()):
     open(os.path.join(bdir, files[g]), 'wb').write(blob); total += len(blob)
 for f in os.listdir(bdir):
     if f.startswith(f'{PREFIX}-ans-') and f.endswith('.bin') and f not in files.values(): os.remove(os.path.join(bdir, f))
-free = {q['id']: ans[q['id']] for q in qs if q['qno'] in FREE and q['id'] in ans}
+# APPSC Group-1 (Anil, 2 Nov 2026): every answer of the oldest year (2020) is free; the other answers are also written into the
+# public pages behind the lock (paid content marked for Google, isAccessibleForFree false), so Google can read and rank them.
+FREE_YEARS = () if (UPSC or ANTHRO) else (2020,)
+free = {q['id']: ans[q['id']] for q in qs if (q['qno'] in FREE or q['year'] in FREE_YEARS) and q['id'] in ans}
 json.dump({'key': KID, 'files': files, 'n': len(ans), 'free': free},
           open(os.path.join(SRCDIR, 'answers.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+if not (UPSC or ANTHRO):
+    json.dump({i: h for i, h in ans.items() if i not in free}, open(os.path.join(SRCDIR, 'answers-pw.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print(f'sealed {len(ans)} answers ({len(free)} free samples) into {len(files)} files in src/books ({total:,} bytes)')
 print('KEYROW', json.dumps([KID, key, f'{PREFIX}-ans-<year>-<paper>-*.bin (one per paper)']))
