@@ -157,6 +157,11 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .figure{background:var(--surface);padding:16px 18px}
 .figure .v{font-family:var(--f-display);font-weight:800;font-size:30px;font-variant-numeric:tabular-nums;line-height:1.1}
 .figure .k{font-size:14px;color:var(--muted)}
+.figures.figs6{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:700px){.figures.figs6{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.goalbar{background:var(--surface-2);border:1px solid var(--line);border-radius:999px;height:8px;overflow:hidden;margin:8px 0 4px}
+.goalbar i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.figure .goal-k{font-size:12.5px}
 .hub-figs{padding-top:24px}
 .hero h1[lang]{line-height:1.3}
 .hero p.hero-l2{font-size:16px;margin-top:-4px}

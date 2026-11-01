@@ -166,6 +166,11 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .figure{background:var(--surface);padding:16px 18px}
 .figure .v{font-family:var(--f-display);font-weight:800;font-size:30px;font-variant-numeric:tabular-nums;line-height:1.1}
 .figure .k{font-size:14px;color:var(--muted)}
+.figures.figs6{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:700px){.figures.figs6{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.goalbar{background:var(--surface-2);border:1px solid var(--line);border-radius:999px;height:8px;overflow:hidden;margin:8px 0 4px}
+.goalbar i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.figure .goal-k{font-size:12.5px}
 .hub-figs{padding-top:24px}
 .hero h1[lang]{line-height:1.3}
 .hero p.hero-l2{font-size:16px;margin-top:-4px}
@@ -1314,6 +1319,10 @@ const HUBT = {
   f2:{en:'Government exams on the list', hi:'सूची में सरकारी परीक्षाएँ', te:'జాబితాలో ప్రభుత్వ పరీక్షలు'},
   f3:{en:'Languages: English, తెలుగు, हिंदी', hi:'भाषाएँ: अंग्रेज़ी, तेलुगु, हिंदी', te:'భాషలు: ఇంగ్లీష్, తెలుగు, హిందీ'},
   f4:{en:'One PYQ Pass for every exam · 12 months', hi:'सभी परीक्षाओं के लिए एक PYQ पास · 12 महीने', te:'అన్ని పరీక్షలకు ఒకే PYQ పాస్ · 12 నెలలు'},
+  f5:{en:'Mock test questions in our test series', hi:'हमारी टेस्ट सीरीज़ में मॉक टेस्ट प्रश्न', te:'మా టెస్ట్ సిరీస్‌లో మాక్ టెస్ట్ ప్రశ్నలు'},
+  g1:{en:'1 lakh', hi:'1 लाख', te:'1 లక్ష'},
+  g2:{en:'Our goal: 1,00,000 PYQs under one roof', hi:'हमारा लक्ष्य: 1,00,000 PYQs एक ही जगह', te:'మా లక్ష్యం: 1,00,000 PYQs ఒకే చోట'},
+  g3:{en:'9,277 done so far · 9%', hi:'अब तक 9,277 पूरे · 9%', te:'ఇప్పటివరకు 9,277 పూర్తి · 9%'},
   choose:{en:'Choose your exam', hi:'अपनी परीक्षा चुनें', te:'మీ పరీక్షను ఎంచుకోండి'},
   all:{en:'All exams', hi:'सभी परीक्षाएँ', te:'అన్ని పరీక్షలు'},
   search:{en:'Search an exam, e.g. Group-II, CGL, NDA, Police SI', hi:'परीक्षा खोजें, जैसे Group-II, CGL, NDA, Police SI', te:'పరీక్షను వెతకండి, ఉదా. Group-II, CGL, NDA, Police SI'},
