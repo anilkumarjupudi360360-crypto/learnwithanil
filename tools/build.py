@@ -1259,6 +1259,8 @@ def main():
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
                      .replace('{{HOME_NOTES}}', home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}').replace('{{NLIVE}}', str(len(loaded)))
+                     .replace('{{MOCKQ}}', f'{mock_questions():,}')
+                     .replace('{{GOALPCT}}', f'{grand * 100 / 100000:.0f}').replace('{{GOALW}}', f'{max(1.5, min(100, grand * 100 / 100000)):.1f}')
                      .replace('{{LIVE_SUMMARY}}', esc(live_summary))
                      .replace('{{HUB_CTAS}}', hub_ctas)
                      .replace('{{NAV_EXTRA}}', nav_extra if is_root else '')
@@ -3351,6 +3353,20 @@ for _mk in MOCK_PACKS.values():   # n / live / qn / sections for packs described
     if 'mocks' in _mk:
         _mk.update(n=len(_mk['mocks']), live=sum(m['live'] for m in _mk['mocks']), qn=_mk['mocks'][0]['qn'],
                    sections=list(dict.fromkeys(x[1] for m in _mk['mocks'] for x in m['parts'])))
+
+def mock_questions():
+    """Questions in the mock tests students can take now (released mocks of every series + the live Bahubali tests),
+    for the start page's numbers strip (Anil, 1 Nov 2026: "add no of mock test questions"). Unreleased mocks are not counted."""
+    n = 0
+    for mk in MOCK_PACKS.values():
+        n += sum(m['qn'] for m in mk['mocks'] if m['live']) if 'mocks' in mk else mk['live'] * mk['qn']
+    try:
+        import bahubali
+        n += sum(t.get('q', 0) for t in bahubali.load_series().get('tests', {}).values())
+    except Exception:
+        pass
+    return n
+
 
 # mock-test packs with a price but no mocks yet: shown as "coming soon", no Pay button and no checkout until Mock 1 is ready
 UPCOMING_PACKS = {
