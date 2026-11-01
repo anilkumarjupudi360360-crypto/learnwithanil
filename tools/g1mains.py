@@ -25,6 +25,7 @@ Answer markup (key words, points and diagrams): see tools/g1m_render.py; answers
 """
 import html, json, os, re, shutil
 import g1m_render
+import mains_design as D
 
 DIR = 'mains-pyqs'
 PAPERS = {'I': (1, 'General Essay'),
@@ -91,7 +92,8 @@ CSS = ('<style>' + g1m_render.CSS + '.mans p{font-weight:400;margin:0 0 8px}.man
        '.mlock{background:var(--accent-soft);border-radius:10px;padding:12px 14px;margin:6px 0 0;font-size:15.5px}.mlock .cta{margin:10px 0 0}'
        'ol.clist li b{overflow-wrap:anywhere}.qlink{color:var(--ink);text-decoration:none}.qlink:hover b{text-decoration:underline}'
        '.cta.green{background:#0E7A43;border-color:#0E7A43;color:#fff}.mdata{color:var(--muted);font-size:14.5px;margin:6px 0 0}'
-       '.mnav{display:flex;flex-wrap:wrap;gap:0 4px;margin-top:6px}.course + .course{margin-top:18px}.course p.lead{margin:0 0 4px;color:var(--muted)}.course .ck.nt{text-transform:none}</style>')
+       '.mnav{display:flex;flex-wrap:wrap;gap:0 4px;margin-top:6px}.course + .course{margin-top:18px}.course p.lead{margin:0 0 4px;color:var(--muted)}.course .ck.nt{text-transform:none}'
+       + D.CSS + '</style>')
 
 
 def aslug(q): return q['qno'].replace('(', '').replace(')', '').lower()
@@ -109,7 +111,7 @@ def short(t, n):
 def flip_js():
     """Lock labels become ticks on a device with a valid PYQ Pass."""
     return ("<script>(function(){try{var a=(JSON.parse(localStorage.getItem('lwa-passes-v1')||'null')||{}).all||{};"
-            "if(a.paid&&new Date(a.pyq+'T23:59:59+05:30')>=new Date())document.querySelectorAll('[data-lk]').forEach(function(e){e.textContent='✓ Model answer →'})}catch(e){}})();</script>")
+            "if(a.paid&&new Date(a.pyq+'T23:59:59+05:30')>=new Date())document.querySelectorAll('[data-lk]').forEach(function(e){e.textContent='✓ Model answer'})}catch(e){}})();</script>")
 
 
 def unlock_js(api, man, file, exam='appsc-group-1'):
@@ -132,17 +134,24 @@ return crypto.subtle.importKey('raw',Uint8Array.from(atob(r.key),function(c){ret
 
 
 def card(q, man, parts, show_year=False, show_part=True):
-    """One question as a box card (like the course paper cards): meta line, the question (a link to its answer page), a button."""
-    bits = ([f'{q["year"]} · Paper {q["paper"]}'] if show_year else []) + [qlabel(q).split(' · ', 2)[-1], f'{marks(q)} marks']
-    if show_part: bits.append(f'{q["part"]} · {q["topic"]}')
-    data = f'<p class="mdata">This question came with {esc(q["data"])}</p>' if q.get('data') else ''
+    """One question as a numbered row (tools/mains_design.py): the number, the question (a link to its answer page), a line of
+    marks and syllabus part, and the answer button."""
+    sec = q['qno'].rstrip(')').split('(') if q['paper'] == ESSAY else None
+    badge = f'{sec[0]}({sec[1]})' if sec else q['qno']
+    small = 'Sec.' if sec else 'Q'
+    bits = ([f'{q["year"]} Paper {q["paper"]}'] if show_year else []) + [f'{marks(q)} marks']
+    meta = esc(' · '.join(bits))
+    if show_part:
+        part, ps = parts[(q['paper'], q['part_no'])]
+        meta += f' · <a href="{ps}.html">{esc(part)}</a> · {esc(q["topic"])}'
+    elif not show_year: meta += f' · {esc(q["topic"])}'
+    if q.get('data'): meta += f'<br>This question came with {esc(q["data"])}'
     if q['paper'] == ESSAY:
-        return f'<li id="{q["id"]}"><div class="cmeta">{esc(" · ".join(bits))}</div><b>{esc(q["text"])}</b>{data}</li>'
+        return D.qrow(q['id'], badge, small, q['text'], None, meta, '')
     href = apage(q)
-    btn = (f'<a class="cta green" href="{href}">✓ Free model answer →</a>' if q['id'] in man.get('free', {})
-           else f'<a class="cta" href="{href}" data-lk>🔒 Model answer →</a>')
-    return (f'<li id="{q["id"]}"><div class="cmeta">{esc(" · ".join(bits))}</div><a class="qlink" href="{href}"><b>{esc(q["text"])}</b></a>{data}'
-            f'<div class="cacts">{btn}</div></li>')
+    btn = (f'<a class="mp free" href="{href}">✓ Free model answer</a>' if q['id'] in man.get('free', {})
+           else f'<a class="mp" href="{href}" data-lk>🔒 Model answer</a>')
+    return D.qrow(q['id'], badge, small, q['text'], href, meta, btn)
 
 
 def pages(B, conf):
@@ -161,7 +170,7 @@ def pages(B, conf):
     nans = sum(q['paper'] != ESSAY for q in qs)
     ap = [p for p in PAPERS if p != ESSAY and any(q['paper'] == p for q in qs)]
     aps = ', '.join(ap[:-1]) + ' and ' + ap[-1]
-    buy = (f'<div class="buy"><div><b>Model answers for all {nans} questions</b><p>Every Group-1 Mains question of 2020, 2023 and 2025 (Papers {aps}) '
+    buy = (f'<div class="buy mbuy"><div><b>Model answers for all {nans} questions</b><p>Every Group-1 Mains question of 2020, 2023 and 2025 (Papers {aps}) '
            f'with a model answer written the way a top APPSC candidate would: key words and an introduction, every part of the question in numbered points, diagrams, flowcharts, tables or maps, the Andhra Pradesh angle and a conclusion. '
            f'Included in the ₹{price} PYQ Pass, with every previous paper, mock test series and study book on the site.</p>'
            f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{pb}?buy=pyq">Get it for ₹{price}</a></div>')
@@ -170,11 +179,13 @@ def pages(B, conf):
     howto_e = (f'<p class="note">Paper I is the essay paper: 9 topics in 3 sections of 3, and candidates write one essay from each section '
                f'(50 marks each, 150 in all). These are the real topics only, with no model essays. Practice essay topics on every syllabus part are in the '
                f'<a href="{pb}#mains">Answer Writing Tool Kit</a> (PDF, in the ₹{price} PYQ Pass).</p>')
+    passbtn = f'<a class="cta" href="{pb}?buy=pyq" data-buy>Get the PYQ Pass · ₹{price}</a>'
+    wrap = lambda p, html_: f'<div{D.pv(p)}>{html_}</div>'
     out = {}
     by_yp = {}
     for q in qs: by_yp.setdefault((q['year'], q['paper']), []).append(q)
     for L in by_yp.values(): L.sort(key=qkey)
-    # one page per paper per year: every question as a card
+    # one page per paper per year: every question as a numbered row
     for (y, p), L in by_yp.items():
         n, pname = PAPERS[p]
         E = p == ESSAY
@@ -184,23 +195,24 @@ def pages(B, conf):
             title = f'APPSC Group 1 Mains {y} Paper I Essay Topics (General Essay Question Paper) | Learn with Anil'
             desc = (f'All 9 essay topics of the APPSC Group 1 Mains {y} Paper I (General Essay), held {HELD[y]}, section-wise, '
                     f'with each topic\'s syllabus theme. Free to read.')
-            lede = esc(f'APPSC Group-I Mains {y}, Paper I: General Essay. Held in {HELD[y]}. Three sections of three topics each; candidates write one essay from each section.')
+            lede = esc(f'Held in {HELD[y]}. Three sections of three topics each; candidates write one essay from each section.')
         else:
             title = f'APPSC Group 1 Mains {y} Paper {p} Questions with Model Answers ({pname}) | Learn with Anil'
             desc = (f'All {len(L)} questions of the APPSC Group 1 Mains {y} Paper {p} ({pname}), held {HELD[y]}, each with a model answer on its own page by Learn with Anil. '
                     f'Questions free; answers with the ₹{price} PYQ Pass.')
-            lede = esc(f'APPSC Group-I Mains {y}, Paper {p}: {pname}. Held in {HELD[y]}. 15 questions with an internal choice (a) or (b), 10 marks each, '
-                       f'so 30 questions in all. Tap a question for its model answer.')
-        other = ' · '.join(f'<a href="{yy}-paper-{n}.html">{yy}</a>' for yy in YEARS if yy != y and (yy, p) in by_yp)
-        others = ' · '.join(f'<a href="{y}-paper-{PAPERS[pp][0]}.html">Paper {pp}</a>' for pp in PAPERS if pp != p and (y, pp) in by_yp)
-        box = (f'<section class="course"><div class="chead"><div><p class="ck">APPSC Group-1 Mains {y} · Paper {p} · held {HELD[y]}</p>'
-               f'<h2>{esc(pname)}</h2></div>'
-               + ('' if E else f'<div class="cbuy"><a class="cta" href="{pb}?buy=pyq" data-buy>Get the PYQ Pass · ₹{price}</a></div>') + '</div>'
-               f'<h3>All {len(L)} {"essay topics" if E else "questions"}</h3><ol class="clist">' + ''.join(card(q, man, parts) for q in L) + '</ol></section>')
-        body = (CSS + f'<p>Same paper, other years: {other}. Same year, other papers: {others}. <a href="./">All Mains PYQs (year-wise and subject-wise)</a>.</p>'
-                + (howto_e if E else howto) + box + ('' if E else buy + flip_js()))
-        out[rel] = B.static_page(1, title, desc, can, f'APPSC Group 1 Mains {y} Paper I essay topics' if E else f'APPSC Group 1 Mains {y} Paper {p} with model answers',
-                                 lede, body, crumbs0 + [(f'{y} Paper {p}', can)], conf)
+            lede = esc(f'Held in {HELD[y]}. 15 questions with an internal choice (a) or (b), 10 marks each, so 30 questions in all. Tap a question for its model answer.')
+        sw = ('<div class="msw"><span class="lbl">Year</span>'
+              + D.chips([(str(yy), f'{yy}-paper-{n}.html', yy == y) for yy in YEARS if (yy, p) in by_yp])
+              + '<span class="lbl">Paper</span>'
+              + D.chips([(f'Paper {pp}', f'{y}-paper-{PAPERS[pp][0]}.html', pp == p) for pp in PAPERS if (y, pp) in by_yp]) + '</div>')
+        head = (f'<div class="chead" style="display:flex;flex-wrap:wrap;gap:8px 16px;align-items:end;justify-content:space-between;margin:22px 0 0">'
+                f'<div><h2 style="margin:0">Paper {p}: {esc(pname)}</h2><p class="qm" style="margin:2px 0 0">{len(L)} {"essay topics, 50 marks each" if E else "questions, 10 marks each"}</p></div>'
+                + ('' if E else passbtn.replace('class="cta"', 'class="cta" style="margin:0"')) + '</div>')
+        body = (CSS + wrap(p, sw + (howto_e if E else howto) + head + '<ol class="qrows">' + ''.join(card(q, man, parts) for q in L) + '</ol>'
+                           + f'<p><a href="./">All Mains PYQs, year-wise and subject-wise</a></p>' + ('' if E else buy + flip_js())))
+        page = B.static_page(1, title, desc, can, f'APPSC Group 1 Mains {y} Paper I essay topics' if E else f'APPSC Group 1 Mains {y} Paper {p} with model answers',
+                             lede, body, crumbs0 + [(f'{y} Paper {p}', can)], conf)
+        out[rel] = D.rehero(page, D.hero(f'APPSC Group-I Mains {y} · Paper {p}: {pname}', [D.LOOK[p][0]], paper=p))
         if E: continue
         # one page per question: the question and its model answer
         js = unlock_js(B.PAY.get('api'), man, files.get(pkey(L[0])))
@@ -211,29 +223,30 @@ def pages(B, conf):
             alt = next((x for x in L if x is not q and re.match(r'\d+', x['qno']).group() == num), None)
             part, ps = parts[(p, q['part_no'])]
             data = f'<p class="mdata">This question came with {esc(q["data"])}</p>' if q.get('data') else ''
-            qbox = (f'<div class="mbox"><div class="cmeta">Question · Q{q["qno"]} · 10 marks</div><p class="mqt">{esc(q["text"])}</p>{data}'
-                    f'<div class="cmeta" style="margin:10px 0 0">Syllabus: <a href="{ps}.html">{esc(part)}</a> · {esc(q["topic"])}</div></div>')
+            qbox = (f'<div class="mq"><div class="tags"><span>Q{q["qno"]}</span><span>10 marks</span><span>{y} · Paper {p}</span></div>'
+                    f'<p class="mqt">{esc(q["text"])}</p>{data}'
+                    f'<p class="syl">Syllabus: <a href="{ps}.html">{esc(part)}</a> · {esc(q["topic"])}</p></div>')
             if q['id'] in free:
-                abox = f'<div class="mbox"><div class="cmeta" style="color:var(--good)">Model answer · free sample</div><div class="mans">{free[q["id"]]}</div></div>'
+                abox = f'<div class="ma"><div class="ah"><span>Model answer · free sample</span></div><div class="mans">{free[q["id"]]}</div></div>'
             elif files.get(pkey(q)):
-                abox = (f'<div class="mbox"><div class="cmeta" id="anshead">Model answer</div><div class="mans" data-ans="{q["id"]}"><div class="mlock">'
+                abox = (f'<div class="ma"><div class="ah"><span id="anshead">Model answer</span></div><div class="mans" data-ans="{q["id"]}"><div class="mlock">'
                         f'🔒 This model answer (key words, numbered points, diagrams and the AP angle) opens with the ₹{price} PYQ Pass. '
                         f'If you have the pass, it opens here by itself on the phone you registered.<br><a class="cta" href="{pb}?buy=pyq">Get the PYQ Pass · ₹{price}</a></div></div></div>')
             else:
-                abox = '<div class="mbox"><div class="cmeta">Model answer</div><div class="mlock">Coming soon.</div></div>'
-            nav = ('<div class="cacts mnav">'
-                   + (f'<a class="cta alt" href="{apage(L[i - 1])}">← Q{L[i - 1]["qno"]}</a>' if i else '')
-                   + f'<a class="cta alt" href="{ppage(q)}">All {len(L)} questions</a>'
-                   + (f'<a class="cta" href="{apage(L[i + 1])}">Next: Q{L[i + 1]["qno"]} →</a>' if i + 1 < len(L) else '') + '</div>')
-            altbox = (f'<section class="course"><p class="ck nt">The other choice in Q{num} (answer either one in the exam)</p><ol class="clist">{card(alt, man, parts)}</ol></section>' if alt else '')
-            body = (CSS + f'<section class="course"><p class="ck nt">APPSC Group-1 Mains {y} · Paper {p} · Q{q["qno"]}</p>' + qbox + abox + nav + '</section>'
-                    + altbox + ('' if q['id'] in free else buy) + js)
+                abox = '<div class="ma"><div class="ah"><span>Model answer</span></div><div class="mlock">Coming soon.</div></div>'
+            nav = D.answer_nav((f'Q{L[i - 1]["qno"]}', apage(L[i - 1]), short(L[i - 1]['text'], 70)) if i else None,
+                               (f'All {len(L)} questions', ppage(q)),
+                               (f'Q{L[i + 1]["qno"]}', apage(L[i + 1]), short(L[i + 1]['text'], 70)) if i + 1 < len(L) else None)
+            altbox = (f'<section class="osec"><h2>The other choice in Q{num}</h2><p class="qm">Answer either one in the exam.</p>'
+                      f'<ol class="qrows">{card(alt, man, parts)}</ol></section>' if alt else '')
+            body = CSS + wrap(p, qbox + abox + nav + altbox + ('' if q['id'] in free else buy)) + js
             sq = short(q['text'], 70)
             title = f'{sq} – APPSC Group 1 Mains {y} Paper {p} Q{q["qno"]} Model Answer | Learn with Anil'
             desc = short(f'APPSC Group 1 Mains {y} Paper {p} Q{q["qno"]}: {q["text"]} Model answer with key words, points and diagrams by Learn with Anil.', 300)
             lede = esc(f'{pname} · {part}. Held in {HELD[y]}.')
-            out[arel] = B.static_page(1, title, desc, acan, f'{y} Paper {p} · Q{q["qno"]}: model answer', lede, body,
-                                      crumbs0 + [(f'{y} Paper {p}', f'{B.SITE_URL}{pb}{DIR}/{ppage(q)}'), (f'Q{q["qno"]}', acan)], conf)
+            page = B.static_page(1, title, desc, acan, f'{y} Paper {p} · Q{q["qno"]}: model answer', lede, body,
+                                 crumbs0 + [(f'{y} Paper {p}', f'{B.SITE_URL}{pb}{DIR}/{ppage(q)}'), (f'Q{q["qno"]}', acan)], conf)
+            out[arel] = D.rehero(page, D.hero(f'APPSC Group-I Mains {y} · Paper {p}', [D.LOOK[p][0]], slim=True, paper=p))
     # one page per syllabus part (subject-wise)
     by_part = {}
     for q in qs: by_part.setdefault((q['paper'], q['part_no']), []).append(q)
@@ -255,71 +268,76 @@ def pages(B, conf):
                     f'each with a model answer by Learn with Anil. Questions free; answers with the ₹{price} PYQ Pass.')
             lede = esc(f'Every APPSC Group-I Mains question on {part} (Paper {p}) from the 2020, 2023 and 2025 papers: {len(L)} questions in {len(topics)} topics, '
                        f'newest first. Tap a question for its model answer.')
-        sib = ' · '.join(f'<a href="{s}.html">{esc(nm)}</a>' for (pp, _), (nm, s) in sorted(parts.items(), key=lambda x: x[0][1]) if pp == p and s != ps)
-        yc = {y: sum(q['year'] == y for q in L) for y in YEARS}
+        sibs = [(nm, f'{s}.html', s == ps) for (pp, _), (nm, s) in sorted(parts.items(), key=lambda x: x[0][1]) if pp == p]
+        sw = f'<div class="msw"><span class="lbl">Paper {p} parts</span>' + D.chips([(nm, h, on) for nm, h, on in sibs]) + '</div>'
         sec = []
         for t, TL in topics.items():
             TL.sort(key=lambda q: (-q['year'], qkey(q)))
-            sec.append(f'<h3>{esc(t)} <span style="font-weight:400;color:var(--muted);font-size:15px">· asked {len(TL)} time{"s" if len(TL) > 1 else ""}</span></h3>'
-                       f'<ol class="clist">' + ''.join(card(q, man, parts, show_year=True, show_part=False) for q in TL) + '</ol>')
-        box = (f'<section class="course"><div class="chead"><div><p class="ck">APPSC Group-1 Mains · Paper {p} · subject-wise</p><h2>{esc(part)}</h2>'
-               f'<p class="lead">{len(L)} {"essay topics" if E else "questions"}: ' + ', '.join(f'{yc[y]} in {y}' for y in YEARS) + '.</p></div>'
-               + ('' if E else f'<div class="cbuy"><a class="cta" href="{pb}?buy=pyq" data-buy>Get the PYQ Pass · ₹{price}</a></div>') + '</div>'
-               + ''.join(sec) + '</section>')
-        body = (CSS + f'<p>Paper {p}: {esc(pname)}. Other parts of this paper: {sib}. <a href="./">All Mains PYQs</a>.</p>'
-                + (howto_e if E else howto) + box + ('' if E else buy + flip_js()))
-        out[rel] = B.static_page(1, title, desc, can, f'APPSC Group 1 Mains essay topics: {part}' if E else f'APPSC Group 1 Mains {part}: previous questions with answers', lede, body,
-                                 crumbs0 + [(f'Paper {p} · {part}', can)], conf)
-    # the index: year-wise and subject-wise, in boxes
-    yw = []
-    for y in YEARS:
-        items = []
-        for p in PAPERS:
-            if (y, p) not in by_yp: continue
-            L = by_yp[(y, p)]
-            meta = f'Paper {p} · ' + ('9 essay topics · questions only' if p == ESSAY else f'{len(L)} questions · model answers')
-            items.append(f'<li><div class="cmeta">{meta}</div><a class="qlink" href="{y}-paper-{PAPERS[p][0]}.html"><b>{esc(PAPERS[p][1])}</b></a>'
-                         f'<div class="cacts"><a class="cta" href="{y}-paper-{PAPERS[p][0]}.html">Open all {len(L)} {"topics" if p == ESSAY else "questions"} →</a></div></li>')
-        yw.append(f'<section class="course"><p class="ck">{y} Mains · held {HELD[y]}</p><h2>{y} papers</h2><ol class="clist">' + ''.join(items) + '</ol></section>')
+            sec.append(f'<h3 class="tsec">{esc(t)} <span>· asked {len(TL)} time{"s" if len(TL) > 1 else ""}</span></h3>'
+                       f'<ol class="qrows">' + ''.join(card(q, man, parts, show_year=True, show_part=False) for q in TL) + '</ol>')
+        yc = {y: sum(q['year'] == y for q in L) for y in YEARS}
+        head = (f'<div style="display:flex;flex-wrap:wrap;gap:8px 16px;align-items:end;justify-content:space-between;margin:22px 0 0">'
+                f'<div><h2 style="margin:0">{esc(part)}</h2><p class="qm" style="margin:2px 0 0">{len(L)} {"essay topics" if E else "questions"}: '
+                + ', '.join(f'{yc[y]} in {y}' for y in YEARS) + '</p></div>' + ('' if E else passbtn.replace('class="cta"', 'class="cta" style="margin:0"')) + '</div>')
+        body = (CSS + wrap(p, sw + (howto_e if E else howto) + head + ''.join(sec)
+                           + f'<p><a href="./">All Mains PYQs, year-wise and subject-wise</a></p>' + ('' if E else buy + flip_js())))
+        page = B.static_page(1, title, desc, can, f'APPSC Group 1 Mains essay topics: {part}' if E else f'APPSC Group 1 Mains {part}: previous questions with answers', lede, body,
+                             crumbs0 + [(f'Paper {p} · {part}', can)], conf)
+        out[rel] = D.rehero(page, D.hero(f'APPSC Group-I Mains · Paper {p}: {pname}', [D.LOOK[p][0]], paper=p))
+    # the index: paper cards with a chip per year, then the syllabus parts of every paper
+    cards = []
+    for p, (n, pname) in PAPERS.items():
+        ys = [y for y in YEARS if (y, p) in by_yp]
+        if not ys: continue
+        np_ = sum(1 for (pp, _) in parts if pp == p)
+        meta = '9 essay topics a year · questions only' if p == ESSAY else '30 questions a year · model answers'
+        cards.append(D.paper_card(p, f'Paper {p}', pname, f'{ys[0]}-paper-{n}.html', meta, [(y, f'{y}-paper-{n}.html') for y in ys],
+                                  (f'Subject-wise: {np_} syllabus parts', f'#s-paper-{n}')))
     sw = []
     for p, (n, pname) in PAPERS.items():
-        items = []
+        rows = []
         for (pp, pno), (nm, s) in sorted(parts.items(), key=lambda x: x[0][1]):
             if pp != p: continue
             L = by_part[(pp, pno)]
-            tps = list(dict.fromkeys(q['topic'] for q in L))
             unit = ('topic' if len(L) == 1 else 'topics') if p == ESSAY else 'questions'
-            items.append(f'<li><div class="cmeta">{len(L)} {unit} · {esc("; ".join(tps))}</div><a class="qlink" href="{s}.html"><b>{esc(nm)}</b></a>'
-                         f'<div class="cacts"><a class="cta alt" href="{s}.html">Open →</a></div></li>')
-        if items:
-            sw.append(f'<section class="course"><p class="ck">Paper {p} · subject-wise</p><h2>{esc(pname)}</h2><ol class="clist">' + ''.join(items) + '</ol></section>')
+            rows.append((nm, f'{s}.html', f'{len(L)} {unit}', '; '.join(dict.fromkeys(q['topic'] for q in L))))
+        if rows: sw.append(D.subject_block(p, f's-paper-{n}', f'Paper {p}', pname, rows))
     body = (CSS + f'<a class="cta" href="#year">Year-wise</a><a class="cta alt" href="#subject">Subject-wise</a>'
             f'<a class="cta alt" href="{pb}#mains">Answer Writing Tool Kit (PDF)</a>' + howto
-            + f'<h2 id="year">Year-wise: 2025, 2023 and 2020 papers</h2><p>Papers II to V have 15 questions each with an internal choice, (a) or (b), 10 marks each. '
-              f'Paper I (Essay) has 9 topics in 3 sections; candidates write one essay from each.</p>' + ''.join(yw)
+            + f'<h2 id="year">Year-wise: pick a paper and a year</h2><p>Papers II to V have 15 questions each with an internal choice, (a) or (b), 10 marks each. '
+              f'Paper I (Essay) has 9 topics in 3 sections; candidates write one essay from each.</p><div class="pgrid">' + ''.join(cards) + '</div>'
             + f'<h2 id="subject">Subject-wise: by syllabus part</h2><p>The same {nans} questions and {len(qs) - nans} essay topics sorted by syllabus part, so you can see which parts APPSC asks most.</p>'
             + ''.join(sw)
             + '<p class="note">Paper I (General Essay): the real topics only, with no model essays. Practice essay topics are in the Answer Writing Tool Kit.</p>'
-            + buy)
+            + buy + D.credits([D.LOOK[p][0] for p in PAPERS]))
     title = 'APPSC Group 1 Mains Previous Year Questions with Model Answers (2020, 2023, 2025) – Year-wise & Subject-wise | Learn with Anil'
     desc = (f'All {nans} APPSC Group 1 Mains questions of 2020, 2023 and 2025 for Paper II (History & Geography), Paper III (Polity & Ethics), Paper IV (Economy) '
             f'and Paper V (Science, Technology & Environment), each with a model answer by Learn with Anil, plus the {len(qs) - nans} Paper I essay topics; '
             f'year-wise and subject-wise. Questions free; answers with the ₹{price} PYQ Pass.')
     lede = esc(f'{nans} real APPSC Group-I Mains questions from the 2020, 2023 and 2025 papers (Papers {aps}), each with a model answer on its own page, '
                f'and the {len(qs) - nans} Paper I essay topics: pick a year and paper, or a syllabus part to see every question APPSC has asked on it.')
-    out[f'{DIR}/index.html'] = B.static_page(1, title, desc, base, 'APPSC Group 1 Mains PYQs with model answers', lede, body, crumbs0, conf)
+    page = B.static_page(1, title, desc, base, 'APPSC Group 1 Mains PYQs with model answers', lede, body, crumbs0, conf)
+    out[f'{DIR}/index.html'] = D.rehero(page, D.hero('APPSC Group-I Mains · 2025, 2023 and 2020 papers', [D.LOOK[p][0] for p in PAPERS]))
     return out
 
 
 def tiles(conf, qs_n):
-    """The Mains tiles on the APPSC Group-1 home page."""
+    """The Mains tiles on the APPSC Group-1 home page, each with a photo on top (tools/mains_design.py)."""
     pb = conf['pb']
-    return (f'<a class="etile" href="{pb}{DIR}/#year"><span class="etile-k">01 · Mains PYQs</span><b>Year-wise</b>'
+    ph = lambda k: f'<span class="etile-ph">{D.img(k, small=True, alt="")}</span>'
+    css = ('<style>.etile-ph{display:block;margin:-20px -22px 6px;height:128px;overflow:hidden;border-radius:var(--r) var(--r) 0 0;background:var(--line)}'
+           '.etile-ph img{width:100%;height:100%;object-fit:cover;display:block}</style>')
+    return (css + f'<a class="etile" href="{pb}{DIR}/#year">{ph("lepakshi")}<span class="etile-k">01 · Mains PYQs</span><b>Year-wise</b>'
             f'<span class="etile-p">The 2025, 2023 and 2020 Mains: all {qs_n} questions of Papers II–V, each with a model answer, and the Paper I essay topics.</span>'
             f'<span class="etile-price">✓ Questions free · answers in the pass</span></a>'
-            f'<a class="etile" href="{pb}{DIR}/#subject"><span class="etile-k">02 · Mains PYQs</span><b>Subject-wise</b>'
+            f'<a class="etile" href="{pb}{DIR}/#subject">{ph("ap-assembly")}<span class="etile-k">02 · Mains PYQs</span><b>Subject-wise</b>'
             f'<span class="etile-p">The same questions by syllabus part: essay themes, history, geography, polity, ethics, economy, science, technology and environment.</span>'
             f'<span class="etile-price">✓ Questions free · answers in the pass</span></a>'
-            f'<a class="etile" href="#mains"><span class="etile-k">03 · Answer writing</span><b>Answer Writing Tool Kit</b>'
+            f'<a class="etile" href="#mains">{ph("paddy")}<span class="etile-k">03 · Answer writing</span><b>Answer Writing Tool Kit</b>'
             f'<span class="etile-p">Four PDF books (Papers I–IV): every previous question sorted by syllabus, with practice questions.</span>'
             f'<span class="etile-price" data-paidtxt="✓ Included in your PYQ Pass">🔒 Included in the PYQ Pass</span></a>')
+
+
+def tiles_credit():
+    """The photo credits under the Mains tiles (outside the tile grid)."""
+    return D.credits(['lepakshi', 'ap-assembly', 'paddy'], 'etiles-note" style="font-size:12.5px')
