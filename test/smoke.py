@@ -32,7 +32,7 @@ _NOTES = json.load(open(os.path.join(ROOT, 'src', 'notes.json'), encoding='utf-8
 def _g2book(k):   # no 'exams' list (the APPSC Mains books) or a Group-II book (the Micro-Syllabus, 29 Oct 2026)
     ex = next((b.get('exams') for b in _NOTES if b['id'] == k), None)
     return not ex or 'appsc-group-2' in ex
-G2_BOOKS = {k: v for k, v in BOOKS.items() if _g2book(k)}
+G2_BOOKS = {k: v for k, v in BOOKS.items() if any(b['id'] == k for b in _NOTES)}   # the start page's Study Material (shared with the Group-2 page) lists every book (Anil, 2 Nov 2026)
 EXAM_DIR = {'appsc-eo': 'appsc-endowment-officer', 'appsc-analyst': 'appsc-analyst-grade-2', 'appsc-fro': 'appsc-forest-range-officer'}   # exam id -> folder, where they differ
 BOOKLET_FILES = {v['key']: v['file'] for ex in BOOKLETS.values() for v in ex.values()}
 def fake_pay(passes):   # the payments script: a student with the given passes (the PYQ Pass opens mocks, books and Bahubali)
@@ -477,8 +477,9 @@ async def main():
                 for eid in bk['exams']:
                     dfs = _g.glob(os.path.join(SITE, {'appsc-group-2': ''}.get(eid, EXAM_DIR.get(eid, eid)), 'data', '*.js'))
                     if not dfs or f'"{bk["id"]}"' not in open(dfs[0], encoding='utf-8').read(): errors.append(f'book {bk["id"]} missing from {eid} data')
-                g2 = _g.glob(os.path.join(SITE, 'data', '*.js')) + _g.glob(os.path.join(SITE, 'appsc-group-1', 'data', '*.js'))
-                if not {'appsc-group-1', 'appsc-group-2'} & set(bk['exams']) and any(f'"{bk["id"]}"' in open(f, encoding='utf-8').read() for f in g2): errors.append(f'book {bk["id"]} shown on Group 1/2 pages')
+                # the start page (shared data with the Group-2 page) lists every book (Anil, 2 Nov 2026); the Group-1 page only its own
+                g1d = _g.glob(os.path.join(SITE, 'appsc-group-1', 'data', '*.js'))
+                if 'appsc-group-1' not in bk['exams'] and any(f'"{bk["id"]}"' in open(f, encoding='utf-8').read() for f in g1d): errors.append(f'book {bk["id"]} shown on the Group 1 page')
                 if bk.get('free') and not os.path.isfile(os.path.join(SITE, bk['free'].lstrip('/'))): errors.append(f'free sample {bk["free"]} not published')
             # study books: part of the PYQ Pass, locked without it, a decrypted PDF download with it
             for passes, paid in [({}, False), (PAID, True)]:

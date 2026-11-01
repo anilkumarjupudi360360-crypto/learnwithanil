@@ -83,6 +83,8 @@ img{max-width:100%}
 .lang button[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body)}
 .lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .lang button.na{opacity:.45}
+.lang button.lang-soon{font-size:12px;font-weight:700;padding:5px 8px;color:var(--muted);border-left:1px solid var(--line);border-radius:0 999px 999px 0;margin-left:2px}
+.hero-float .soonl{display:block;font-size:11px;font-weight:600;color:#64748b;margin-top:2px}
 @media (max-width:420px){.lang button{padding:5px 8px;font-size:13px}}
 [lang="te"]{font-family:"Noto Sans Telugu",var(--f-body);line-height:1.8}
 [lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body);line-height:1.75}
@@ -483,7 +485,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;z-index:50;box-shadow:var(--shadow);max-width:calc(100% - 32px)}
 
 /* Study material (Crisp Notes) */
-.nav a.nav-fund{color:#9A3412;background:#FFF1E6;margin-left:4px}.nav a.nav-fund:hover{background:#FFE2CC;color:#7C2D12}.nav a.nav-fund svg{flex:none}@media (min-width:1361px){.nav a.nav-fund .nf-x{display:none}}   /* one-row top bar: "Fund" fits, the long label does not */
+.nav a.nav-fund{color:#9A3412;background:#FFF1E6;margin-left:4px}.nav a.nav-fund:hover{background:#FFE2CC;color:#7C2D12}.nav a.nav-fund svg{flex:none}@media (min-width:1361px){.nav a.nav-fund .nf-x{display:none}.topbar .nav a{padding:8px 7.5px}}   /* one-row top bar: "Fund" fits, the long label does not */
 @media (prefers-color-scheme:dark){.nav a.nav-fund{color:#FDBA8C;background:#3A2414}.nav a.nav-fund:hover{background:#4A2E19;color:#FFD3B0}}
 .nav a .new{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.06em;background:#F2B705;color:#0C2266;border-radius:4px;padding:0 5px;line-height:16px}
 .notes-promo{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:22px 24px;text-decoration:none;color:var(--ink);transition:border-color .15s}
@@ -592,6 +594,29 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .ex-art{position:relative;display:flex;align-items:center;justify-content:center;height:74px;color:#fff;background:linear-gradient(135deg,var(--g1,#334155),var(--g2,#64748b))}
 .ex-art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 15%,rgba(255,255,255,.18) 0 16%,transparent 17%),radial-gradient(circle at 95% 115%,rgba(255,255,255,.14) 0 32%,transparent 33%)}
 .ex-art svg{position:relative;height:66px;width:118px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.18))}
+.ex-ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ex-art.has-ph::before{display:none}.ex-art.has-ph svg{display:none}
+.ex-art.has-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 50%,rgba(0,0,0,.25)),linear-gradient(135deg,var(--g1),transparent 65%);opacity:.5}
+.hero.hero-ph{background:linear-gradient(90deg,rgba(9,22,72,.97) 0%,rgba(9,22,72,.9) 40%,rgba(9,22,72,.55) 75%,rgba(9,22,72,.35) 100%),var(--hero-ph) center/cover no-repeat}
+.hero.hero-ph::after{display:none}
+.hero .hero-cr{position:absolute;right:12px;bottom:6px;margin:0;font-size:11px;line-height:1.4;max-width:none;color:rgba(255,255,255,.7);z-index:1}.hero-cr a{color:inherit}
+@media (max-width:860px){.hero.hero-ph{background:linear-gradient(180deg,rgba(9,22,72,.45) 0,rgba(9,22,72,.9) 260px,rgba(9,22,72,.97) 100%),var(--hero-ph) center top/auto 300px no-repeat,var(--band)}.hero .hero-cr{position:static;padding:0 16px 10px;text-align:right}}
+.etile.fx{padding:0 0 18px;overflow:hidden;gap:8px}
+.etile.fx>:not(.etile-hd){margin-inline:22px}
+.etile-hd{display:flex;align-items:center;gap:12px;padding:14px 22px;color:#fff;background:linear-gradient(135deg,var(--g1),var(--g2))}
+.etile-hd.eh1{--g1:#1e3a8a;--g2:#3b82f6}.etile-hd.eh2{--g1:#c2410c;--g2:#fb923c}.etile-hd.eh3{--g1:#047857;--g2:#34d399}
+.etile-hd .etile-k{color:#fff}
+.etile-ic{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.18);flex-shrink:0}.etile-ic svg{width:22px;height:22px}
+.etile-btn{align-self:flex-start;display:inline-flex;padding:9px 16px;border-radius:999px;background:var(--accent);color:#fff;font-weight:700;font-size:14.5px}
+.etile.fx:hover .etile-btn{filter:brightness(1.08)}
+.mbtns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.mbtn{display:inline-flex;align-items:center;gap:5px;padding:6px 13px;border-radius:999px;border:1.5px solid var(--accent);color:var(--accent-text);background:var(--surface);font-weight:700;font-size:14px;text-decoration:none;line-height:1.2}
+.mbtn:hover{background:var(--accent-soft)}
+.mbtn.go{background:var(--accent);color:#fff}.mbtn.go:hover{filter:brightness(1.08);background:var(--accent)}
+.mbtn.mpdf{border-color:#0E7A43;color:#0E7A43}
+.mchips{display:flex;flex-wrap:wrap;gap:6px}
+.mchip{display:inline-block;padding:4px 11px;border-radius:999px;background:var(--accent-soft);color:var(--accent-text);font-weight:600;font-size:13.5px;text-decoration:none}
+table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
 .ex-body{display:flex;flex-direction:column;gap:3px;padding:12px 14px 14px;flex:1}
 .card.exam:not(.live) .ex-art{filter:saturate(.35);opacity:.8}
 @media (max-width:520px){.ex-art{height:62px}.ex-art svg{height:56px;width:100px}.ex-body{padding:10px 11px 12px}}
@@ -711,13 +736,14 @@ details.upc .exams{margin-top:8px}
       <button type="button" data-act="lang" data-l="en" aria-pressed="true">EN</button>
       <button type="button" data-act="lang" data-l="hi" lang="hi" aria-pressed="false">हिंदी</button>
       <button type="button" data-act="lang" data-l="te" lang="te" aria-pressed="false">తెలుగు</button>
+      <button type="button" class="lang-soon" data-act="langsoon" title="Coming soon: தமிழ், ಕನ್ನಡ, മലയാളം, मराठी" aria-label="More languages coming soon: தமிழ், ಕನ್ನಡ, മലയാളം, मराठी">+4</button>
     </div>
   </div>
 </header>
 
 <main>
 <div id="home-static" class="view" hidden>
-  <section class="hero"><div class="wrap">
+  <section class="hero hero-ph" style="--hero-ph:url(/ex-appsc-eo-h.webp)"><div class="wrap">
     <div class="hero-copy">
       <a class="crumb" href="/">← All exams</a>
       <p class="eyebrow">APPSC · Executive Officer Grade-III · Endowments Department · 2022–2026</p>
@@ -730,9 +756,9 @@ details.upc .exams{margin-top:8px}
       <span class="ph"><img src="../anil.jpg" alt="Jupudi Anil Kumar" width="210" height="210"></span>
       <span><b>Jupudi Anil Kumar</b><br><span>UPSC faculty &amp; mentor · 2.5 years of UPSC, APPSC &amp; TGPSC teaching and mentorship</span></span>
     </a>
-  </div></section>
+  </div><p class="hero-cr">Photo: <a href="https://commons.wikimedia.org/wiki/File:Lepakshi_nandi_15.JPG" target="_blank" rel="noopener">Lepakshi Nandi</a>, Rahmanuddin, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a></p></section>
 
-  <section class="wrap section"><div class="etiles"><a class="etile" href="/appsc-endowment-officer/pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b><span class="etile-p">724 questions from 5 official papers, with answers and explanations, as quizzes and timed tests, and as PDFs to download. One pass for every exam.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 ₹45 · all exams · 12 months</span></a><a class="etile" href="/appsc-endowment-officer/mocks/"><span class="etile-k">02 · Mock tests</span><b>Mock test pack</b><span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span><span class="etile-price">Upcoming</span></a><a class="etile" href="/appsc-endowment-officer/sectionals/"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 20 subjects. Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 With the PYQ Pass</span></a></div><div class="etiles etiles-links"><a class="etile etile-sm" href="/appsc-eo-grade-3-notification-2026.html"><b>APPSC Endowment Officer (EO Grade-III) Notification 2026: 104 posts</b><span class="etile-go">→</span></a><a class="etile etile-sm" href="/appsc-eo-grade-3-syllabus-2026.html"><b>APPSC EO Grade 3 syllabus 2026: topic-wise micro syllabus</b><span class="etile-go">→</span></a></div></section>
+  <section class="wrap section"><div class="etiles"><a class="etile fx" href="/appsc-endowment-officer/pyqs.html"><span class="etile-hd eh1"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6"/><path d="m9 16 2 2 4-4"/></svg></span><span class="etile-k">01 · Previous papers</span></span><b>PYQs with answers</b><span class="etile-p">724 questions from 5 official papers, with answers and explanations, as quizzes and timed tests, and as PDFs to download. One pass for every exam.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 ₹45 · all exams · 12 months</span><span class="etile-btn">Open the PYQs →</span></a><a class="etile fx" href="/appsc-endowment-officer/mocks/"><span class="etile-hd eh2"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M10 2h4M12 2v3"/></svg></span><span class="etile-k">02 · Mock tests</span></span><b>Mock test pack</b><span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span><span class="etile-price">Upcoming</span><span class="etile-btn">See the mock tests →</span></a><a class="etile fx" href="/appsc-endowment-officer/sectionals/"><span class="etile-hd eh3"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span><span class="etile-k">03 · Sectional tests</span></span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 20 subjects. Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 With the PYQ Pass</span><span class="etile-btn">Practise a subject →</span></a></div><div class="etiles etiles-links"><a class="etile etile-sm" href="/appsc-eo-grade-3-notification-2026.html"><b>APPSC Endowment Officer (EO Grade-III) Notification 2026: 104 posts</b><span class="etile-go">→</span></a><a class="etile etile-sm" href="/appsc-eo-grade-3-syllabus-2026.html"><b>APPSC EO Grade 3 syllabus 2026: topic-wise micro syllabus</b><span class="etile-go">→</span></a></div></section>
 
   <section class="wrap section">
     <div class="figures">
@@ -802,7 +828,7 @@ const LATTR = ' lang="'+L2.code+'"';
 const langAttr = q => teOn(q) ? LATTR : "";
 function syncLang(){
   const av = availLangs(), eff = av.includes(P.lang) ? P.lang : "en";
-  document.querySelectorAll('.lang button').forEach(b=>{ const na = !av.includes(b.dataset.l);
+  document.querySelectorAll('.lang button[data-l]').forEach(b=>{ const na = !av.includes(b.dataset.l);
     b.setAttribute("aria-pressed", String(b.dataset.l===eff)); b.classList.toggle("na", na);
     if(na) b.title = `${LANGS[b.dataset.l]} is not available for ${DATA.exam} yet`; else b.removeAttribute("title"); });
 }
@@ -1390,21 +1416,26 @@ function emptyHTML(title, body, actions){ return `<div class="card empty"><div c
 function head(eyebrow, title, desc, right){ return `<div class="page-head"><div><p class="eyebrow">${eyebrow}</p><h1>${title}</h1>${desc?`<p>${desc}</p>`:""}</div>${right||""}</div>`; }
 
 
-/* ---------- languages: English, हिंदी, తెలుగు (one choice for the whole site) ---------- */
-const LANGS = {en:"English", hi:"हिंदी", te:"తెలుగు"};
-const availLangs = ()=> (DATA.hub && (current==="exams" || current==="")) ? ["en","hi","te"] : ["en", L2.code];
+/* ---------- languages (one choice for the whole site) ----------
+   SITE_LANGS comes from SITE_LANGS in tools/build.py: the hero line, the badge, the counts, the "+N" chip in the switcher and the score
+   card follow it, so a language marked live there shows up everywhere (Anil, 2 Nov 2026: "update them...as new languages are added"). */
+const SITE_LANGS = [{"c": "en", "self": "English", "hi": "अंग्रेज़ी", "te": "ఇంగ్లీష్", "live": true}, {"c": "te", "self": "తెలుగు", "hi": "तेलुगु", "te": "తెలుగు", "live": true}, {"c": "hi", "self": "हिंदी", "hi": "हिंदी", "te": "హిందీ", "live": true}, {"c": "ta", "self": "தமிழ்", "hi": "तमिल", "te": "తమిళం", "live": false}, {"c": "kn", "self": "ಕನ್ನಡ", "hi": "कन्नड़", "te": "కన్నడ", "live": false}, {"c": "ml", "self": "മലയാളം", "hi": "मलयालम", "te": "మలయాళం", "live": false}, {"c": "mr", "self": "मराठी", "hi": "मराठी", "te": "మరాఠీ", "live": false}];
+const LANGS = Object.fromEntries(SITE_LANGS.filter(x=>x.live).map(x=>[x.c, x.self]));
+const availLangs = ()=> (DATA.hub && (current==="exams" || current==="")) ? SITE_LANGS.filter(x=>x.live).map(x=>x.c) : ["en", L2.code];
+function langNames(L, live){ return SITE_LANGS.filter(x=>!!x.live===live).map(x=> L==="en" ? x.self : (x[L] || x.self)); }
+function langJoin(xs, L){ if(xs.length<2) return xs.join(""); if(L==="te") return xs.join(", "); return xs.slice(0,-1).join(", ") + (L==="hi" ? " और " : " and ") + xs[xs.length-1]; }
 const hubLang = ()=> ["hi","te"].includes(P.lang) ? P.lang : "en";
 const HUBT = {
   h1:{en:'Previous year question papers for <em>every government exam.</em>', hi:'हर सरकारी परीक्षा के <em>पिछले वर्षों के प्रश्न पत्र।</em>', te:'ప్రతి ప్రభుత్వ పరీక్షకు <em>మునుపటి సంవత్సరాల ప్రశ్నపత్రాలు.</em>'},
-  lede:{en:'Real question papers with official answers and short explanations, in English, తెలుగు and हिंदी. One ₹45 PYQ Pass for every exam.',
-        hi:'असली प्रश्न पत्र, आधिकारिक उत्तर और संक्षिप्त व्याख्या के साथ, अंग्रेज़ी, तेलुगु और हिंदी में। सभी परीक्षाओं के लिए एक ₹45 PYQ पास।',
-        te:'అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు, చిన్న వివరణలతో, ఇంగ్లీష్, తెలుగు, హిందీలో. అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.'},
+  lede:{en:'Real question papers with official answers and short explanations, in {L}. One ₹45 PYQ Pass for every exam.',
+        hi:'असली प्रश्न पत्र, आधिकारिक उत्तर और संक्षिप्त व्याख्या के साथ, {L} में। सभी परीक्षाओं के लिए एक ₹45 PYQ पास।',
+        te:'అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు, చిన్న వివరణలతో, {L}లో. అన్ని పరీక్షలకు ఒకే ₹45 PYQ పాస్.'},
   find:{en:'Find your exam', hi:'अपनी परीक्षा खोजें', te:'మీ పరీక్షను వెతకండి'},
   today:{en:"Today's question", hi:'आज का प्रश्न', te:'నేటి ప్రశ్న'},
   mentor:{en:'UPSC faculty &amp; mentor · 2.5 years of UPSC, APPSC &amp; TGPSC teaching and mentorship', hi:'UPSC शिक्षक और मार्गदर्शक · UPSC, APPSC और TGPSC अध्यापन व मार्गदर्शन में 2.5 वर्ष', te:'UPSC అధ్యాపకులు, మెంటార్ · UPSC, APPSC, TGPSC బోధన, మెంటార్‌షిప్‌లో 2.5 సంవత్సరాలు'},
   f1:{en:'Previous-year questions', hi:'पिछले वर्षों के प्रश्न', te:'గత సంవత్సరాల ప్రశ్నలు'},
   f2:{en:'Government exams on the list', hi:'सूची में सरकारी परीक्षाएँ', te:'జాబితాలో ప్రభుత్వ పరీక్షలు'},
-  f3:{en:'Languages: English, తెలుగు, हिंदी', hi:'भाषाएँ: अंग्रेज़ी, तेलुगु, हिंदी', te:'భాషలు: ఇంగ్లీష్, తెలుగు, హిందీ'},
+  f3:{en:'Languages: {D} · coming soon: {S}', hi:'भाषाएँ: {D} · जल्द: {S}', te:'భాషలు: {D} · త్వరలో: {S}'},
   f4:{en:'One PYQ Pass for every exam · 12 months', hi:'सभी परीक्षाओं के लिए एक PYQ पास · 12 महीने', te:'అన్ని పరీక్షలకు ఒకే PYQ పాస్ · 12 నెలలు'},
   f5:{en:'Mock test questions in our test series', hi:'हमारी टेस्ट सीरीज़ में मॉक टेस्ट प्रश्न', te:'మా టెస్ట్ సిరీస్‌లో మాక్ టెస్ట్ ప్రశ్నలు'},
   g1:{en:'1 lakh', hi:'1 लाख', te:'1 లక్ష'},
@@ -1430,9 +1461,9 @@ const HUBT = {
        hi:'हर प्रश्न आधिकारिक प्रश्न-पुस्तिका से टाइप किया गया है और प्रकाशित होने से पहले दो बार जाँचा गया है। हर प्रश्नपत्र पर लिखा है कि उसके उत्तर कहाँ से लिए गए हैं।',
        te:'ప్రతి ప్రశ్నను అధికారిక ప్రశ్నపత్రం నుంచి టైప్ చేసి, ప్రచురించే ముందు రెండుసార్లు తనిఖీ చేశాం. సమాధానాలు ఎక్కడి నుంచి తీసుకున్నామో ప్రతి పేపర్‌పై రాసి ఉంటుంది.'},
   w2t:{en:'Read it in your language', hi:'अपनी भाषा में पढ़ें', te:'మీ భాషలో చదవండి'},
-  w2p:{en:'Switch between English, తెలుగు and हिंदी with one tap at the top. The translation is the one printed in the exam paper, not a machine translation.',
-       hi:'ऊपर एक टैप से अंग्रेज़ी, तेलुगु और हिंदी के बीच बदलें। अनुवाद वही है जो परीक्षा के प्रश्नपत्र में छपा था, मशीन अनुवाद नहीं।',
-       te:'పైన ఒక్క ట్యాప్‌తో ఇంగ్లీష్, తెలుగు, హిందీ మధ్య మారండి. అనువాదం పరీక్ష ప్రశ్నపత్రంలో ముద్రించినదే, మెషీన్ అనువాదం కాదు.'},
+  w2p:{en:'Switch between {L} with one tap at the top. The translation is the one printed in the exam paper, not a machine translation.',
+       hi:'ऊपर एक टैप से {L} के बीच बदलें। अनुवाद वही है जो परीक्षा के प्रश्नपत्र में छपा था, मशीन अनुवाद नहीं।',
+       te:'పైన ఒక్క ట్యాప్‌తో {L} మధ్య మారండి. అనువాదం పరీక్ష ప్రశ్నపత్రంలో ముద్రించినదే, మెషీన్ అనువాదం కాదు.'},
   w3t:{en:'Your mistakes come back', hi:'आपकी गलतियाँ लौटकर आती हैं', te:'మీ తప్పులు మళ్లీ వస్తాయి'},
   w3p:{en:'Every question you get wrong goes into your Mistakes notebook. The Smart Quiz keeps asking it until you get it right twice.',
        hi:'हर गलत प्रश्न आपकी गलतियों की नोटबुक में चला जाता है। स्मार्ट क्विज़ उसे तब तक पूछता है जब तक आप उसे दो बार सही न कर लें।',
@@ -1455,7 +1486,8 @@ const HUBT = {
          te:'నా లక్ష్యం: వివిధ ప్రభుత్వ పరీక్షల 1 లక్ష PYQs ఒకే చోట, కేవలం ₹45కే. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఒక్కడినే ఈ సైట్‌ను నిర్మిస్తున్నాను. నాకు నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.'},
   fundB:{en:'Fund this project', hi:'इस परियोजना को सहयोग दें', te:'ఈ ప్రాజెక్ట్‌కు నిధులు ఇవ్వండి'},
 };
-const HT = (k, L)=> { const t = HUBT[k]; return t ? (t[L||hubLang()] || t.en) : ""; };
+const HT = (k, L)=> { const t = HUBT[k]; if(!t) return ""; L = L || hubLang(); const x = t[L] || t.en;
+  return x.indexOf("{")<0 ? x : x.replace("{L}", langJoin(langNames(L, true), L)).replace("{D}", langNames(L, true).join(", ")).replace("{S}", langNames(L, false).join(", ")); };
 function setLangAttr(el, L){ if(L==="en") el.removeAttribute("lang"); else el.setAttribute("lang", L); }
 function applyHubLang(){   // the start page's own text follows the language buttons
   if(!DATA.hub) return; const L = hubLang();
@@ -1477,6 +1509,7 @@ function applyHub(){
   const q = (UI.exQ||"").trim().toLowerCase().replace(/\s+/g," "), cat = UI.exCat||"all", browsing = cat==="all" && !q;
   const hh = $("#hubHome"), hb = $("#hubBack"), hc = $("#hubCats");
   if(hh) hh.hidden = !browsing; if(hb) hb.hidden = cat==="all"; if(hc) hc.hidden = browsing; hubRecent(browsing);
+  const xc = $("#exCredits"); if(xc) xc.hidden = browsing;
   let n = 0;
   document.querySelectorAll("#hub-static .exam").forEach(a=>{ const ok = (cat==="all"||a.dataset.cat===cat) && (!q || a.dataset.s.includes(q)); a.hidden = !ok; if(ok) n++; });
   document.querySelectorAll("#hub-static .exam-cat").forEach(s=>{ s.hidden = !s.querySelector(".exam:not([hidden])"); });
@@ -2211,7 +2244,7 @@ function footer(ctx, W, H, line1){
   ctx.fillStyle="#EEF3FF"; rrect(ctx, 60, H-150, W-120, 96, 18); ctx.fill();
   ctx.fillStyle="#0C2266"; ctx.font='700 30px "Source Sans 3", sans-serif'; ctx.fillText(line1, 92, H-108);
   ctx.font='600 30px "IBM Plex Mono", monospace'; ctx.fillText(SITE_HOST, 92, H-70);
-  ctx.textAlign="right"; ctx.font='700 26px "Source Sans 3", "Noto Sans Telugu", "Noto Sans Devanagari", sans-serif'; ctx.fillStyle="#12804A"; ctx.fillText("PYQs · English · తెలుగు · हिंदी", W-92, H-70); ctx.textAlign="left";
+  ctx.textAlign="right"; ctx.font='700 26px "Source Sans 3", "Noto Sans Telugu", "Noto Sans Devanagari", sans-serif'; ctx.fillStyle="#12804A"; ctx.fillText("PYQs · " + langNames("en", true).join(" · "), W-92, H-70); ctx.textAlign="left";
 }
 async function scoreCard(r){
   await FONTS_READY();
@@ -2427,6 +2460,7 @@ document.addEventListener("click", e=>{
     case "lang": { const l = b.dataset.l; P.lang = l; savePrefs(); try{ localStorage.setItem("lwa-lang", l); }catch(_){}
       if(!availLangs().includes(l)) toast(`${LANGS[l]} is not available for ${DATA.exam} yet. Showing English.`);
       syncLang(); render(); break; }
+    case "langsoon": { const L = hubLang(), xs = langNames("en", false); toast(xs.join(" · ") + ({hi:": जल्द आ रही हैं", te:": త్వరలో"}[L] || ": coming soon")); break; }
     case "qotdscroll": { const t=$("#qotd-hub"); if(t && !t.hidden) t.scrollIntoView({behavior:"smooth", block:"start"}); break; }
     case "sample": openSample(b.dataset.id); break;
     case "video": openVideo(b.dataset.id); break;

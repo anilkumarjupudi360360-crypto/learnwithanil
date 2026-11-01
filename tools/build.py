@@ -1334,6 +1334,8 @@ def main():
                      .replace('{{NAV_FUND}}', NAV_FUND if is_root else '')
                      .replace('{{TIMERS}}', timers).replace('{{HUBHREF}}', hubhref).replace('{{ROOTUP}}', up)
                      .replace('{{EXAM}}', esc(conf['name'])).replace('{{EXAMSHORT}}', esc(conf['short']))
+                     .replace('{{HERO_PHC}}', ' hero-ph' if exam_photo(conf['id'], 'h') else '').replace('{{HERO_PHS}}', f' style="--hero-ph:url({exam_photo(conf["id"], "h")})"' if exam_photo(conf['id'], 'h') else '')
+                     .replace('{{HERO_PHCR}}', f'<p class="hero-cr">{photo_credit(conf["id"])}</p>' if exam_photo(conf['id'], 'h') else '')
                      .replace('{{EYEBROW}}', conf['eyebrow']).replace('{{H1}}', conf['h1'])
                      .replace('{{L2LINE}}', f'<span lang="{l2["code"]}">{esc(conf["l2line"])}</span>')
                      .replace('{{AKA}}', esc(conf.get('aka', '')))
@@ -1756,6 +1758,40 @@ def photo_credits(ids):
     return f'<p class="ph-credit">Photos (cropped) via Wikimedia Commons: {" · ".join(bits)}.</p>' if bits else ''
 
 
+CCL = {'CC BY-SA 3.0': 'https://creativecommons.org/licenses/by-sa/3.0/', 'CC BY-SA 4.0': 'https://creativecommons.org/licenses/by-sa/4.0/',
+       'CC BY 3.0': 'https://creativecommons.org/licenses/by/3.0/', 'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/',
+       'GODL-India': 'https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf', 'FAL': 'https://artlibre.org/licence/lal/en/'}
+_CW = 'https://commons.wikimedia.org/wiki/File:'
+EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil approved, 2 Nov 2026): src/static/ex-<id>-t.webp (tile) and -h.webp (exam page banner)
+    'upsc-cse': ('New Parliament building', 'Ministry of Parliamentary Affairs', 'GODL-India', _CW + 'Glimpses_of_the_new_Parliament_Building,_in_New_Delhi_(2).jpg'),
+    'upsc-prelims': ('India Gate, New Delhi', 'Yann', 'CC BY-SA 3.0', _CW + 'India_Gate,_New_Delhi.jpg'),
+    'upsc-epfo': ('Shastri Bhawan, New Delhi', 'Pinakpani', 'CC BY-SA 4.0', _CW + 'Shastri_Bhawan,_a_Government_buildings_in_New_Delhi_10.jpg'),
+    'upsc-capf': ('Nathu La, Sikkim', 'Nitin Ticku', 'CC BY-SA 3.0', _CW + 'Nathu_La_by_Nitin_Ticku.JPG'),
+    'appsc-group-1': ('Andhra Pradesh Legislative Assembly', 'Kdslk', 'CC0', _CW + 'A.P_Legislative_Assembly.jpg'),
+    'appsc-group-2': ('Prakasam Barrage, Vijayawada', 'Deensonu', 'CC BY-SA 4.0', _CW + 'Prakasam_Barrage,_Vijayawada_2016_(7).jpg'),
+    'appsc-fro': ('Nallamala forest', 'Dubbala Divya', 'CC BY-SA 4.0', _CW + 'Nallamala_forest_view_01.jpg'),
+    'appsc-amvi': ('NH 16 near Eluru', 'iMahesh', 'CC BY-SA 4.0', _CW + 'National_Highway_16_near_Bhimadole,_Eluru_(02).jpg'),
+    'appsc-eo': ('Lepakshi Nandi', 'Rahmanuddin', 'CC BY-SA 4.0', _CW + 'Lepakshi_nandi_15.JPG'),
+    'appsc-analyst': ('Chemical test tubes', 'Vis M', 'CC BY-SA 4.0', _CW + 'Chemical_test_tubes_2013.jpg'),
+    'ap-police-si': ('Police station, AP Secretariat', 'IM3847', 'CC BY-SA 4.0', _CW + 'Police_station_at_Andhra_Pradesh_Secretariat.jpg'),
+    'ap-police-constable': ('Thullur police station, Mandadam', 'IM3847', 'CC BY-SA 4.0', _CW + 'Mandadam_Police_station.jpg'),
+    'tgpsc-amvi': ('Outer Ring Road, Hyderabad', 'iMahesh', 'CC BY-SA 4.0', _CW + 'Long_Exposure_shot_of_Nehru_Outer_ring_road_towards_Gachibowli.jpg'),
+    'tgpsc-hmwssb-manager': ('Osman Sagar, Hyderabad', 'Swaroop', 'CC BY-SA 4.0', _CW + 'Osman_Sagar_lake_near_Hyderabad.jpg'),
+    'ts-police-si': ('James Street police station, Hyderabad', 'adbh266', 'CC BY-SA 4.0', _CW + 'James_Street_police_station,_Hyderabad.jpg'),
+    'ts-police-constable': ('Chikkadpally police station, Hyderabad', 'Adbh266', 'CC BY-SA 4.0', _CW + 'Chikkadpally_police_station.jpg'),
+    'ssc-cgl': ('Shastri Bhawan, New Delhi', 'Pinakpani', 'CC BY-SA 4.0', _CW + 'Shastri_Bhawan,_a_Government_buildings_in_New_Delhi_02.jpg'),
+}
+
+
+def exam_photo(eid, kind='t'):
+    return f'/ex-{eid}-{kind}.webp' if eid in EXAM_PHOTO and os.path.exists(os.path.join(SRC, 'static', f'ex-{eid}-{kind}.webp')) else ''
+
+
+def photo_credit(eid, prefix='Photo: '):
+    t, a, lic, url = EXAM_PHOTO[eid]
+    return f'{prefix}<a href="{url}" target="_blank" rel="noopener">{esc(t)}</a>, {esc(a)}, <a href="{CCL[lic]}" target="_blank" rel="noopener license">{lic}</a>' if lic != 'public domain' else f'{prefix}<a href="{url}" target="_blank" rel="noopener">{esc(t)}</a>, {esc(a)}, public domain'
+
+
 # The site's languages in one list (Anil, 2 Nov 2026: "update them...as new languages are added"): (code, own name, in Hindi, in Telugu, live).
 # Live ones are named in the hero line, the badge, the counts and the score card; the others show as "coming soon" (the "+N" chip in the
 # language switcher, the badge, the figures). A language goes live only when questions exist in it; the switcher then needs its own button.
@@ -1811,7 +1847,9 @@ def hub_html(catalog, counts, grand):
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
             if live and e['id'] in MAINS_EXAMS and MAINS_KIT: sub += '<span class="ex-x">Prelims + Mains PYQs with model answers</span>'
             tiles[live].append(f'<a class="card exam x-{c["id"]}{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-id="{e["id"]}" data-s="{esc(exam_terms(e, c))}">'
-                               f'<span class="ex-art" aria-hidden="true"><svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">{exam_art(e, c["id"])}</svg></span>'
+                               f'<span class="ex-art{" has-ph" if live and exam_photo(e["id"]) else ""}" aria-hidden="true">'
+                               + (f'<img class="ex-ph" src="{exam_photo(e["id"])}" alt="" width="480" height="180" loading="lazy" decoding="async">' if live and exam_photo(e['id']) else '')
+                               + f'<svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">{exam_art(e, c["id"])}</svg></span>'
                                f'<span class="ex-body"><span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></span></a>')
         upc = (f'<details class="upc"{"" if lv else " open"}><summary>Upcoming exams in {esc(c["name"])} ({len(tiles[False])}) · being added one by one</summary>'
                f'<div class="exams">{"".join(tiles[False])}</div></details>' if tiles[False] else '')
@@ -1831,7 +1869,9 @@ def hub_html(catalog, counts, grand):
             f'<div id="hubBack" hidden><button type="button" class="btn btn-secondary btn-sm" data-act="excat" data-cat="all" data-i18n="allB">← All exam boards</button></div>'
             f'<p class="muted" id="hubCount" style="font-size:14px"></p>'
             f'<div id="hubCats">{"".join(secs)}</div>'
-            f'<div class="card empty" id="hubEmpty" hidden><h3 data-i18n="emptyT">No exam matches your search</h3>'
+            + (f'<p class="ph-credit" id="exCredits" hidden>Exam photos (cropped) via Wikimedia Commons: '
+               + ' · '.join(photo_credit(e['id'], '') for e in catalog['exams'] if e.get('live') and exam_photo(e['id'])) + '.</p>')
+            + f'<div class="card empty" id="hubEmpty" hidden><h3 data-i18n="emptyT">No exam matches your search</h3>'
             f'<p data-i18n="emptyP">Tell Anil which exam you are preparing for, and it will be added to the list.</p>'
             f'<div class="row" style="justify-content:center"><a class="btn btn-primary" id="hubAsk" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></div>'
             + p5_card('hubP5'))
@@ -2226,7 +2266,16 @@ def FAQ_TS(post, mains=()):
     return faq
 
 
-STATIC_CSS = """
+STATIC_CSS = """.mbtns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.mbtn{display:inline-flex;align-items:center;gap:5px;padding:6px 13px;border-radius:999px;border:1.5px solid var(--accent);color:var(--accent-text);background:var(--surface);font-weight:700;font-size:14px;text-decoration:none;line-height:1.2}
+.mbtn:hover{background:var(--accent-soft)}
+.mbtn.go{background:var(--accent);color:#fff}.mbtn.go:hover{filter:brightness(1.08);background:var(--accent)}
+.mbtn.mpdf{border-color:#0E7A43;color:#0E7A43}
+.mchips{display:flex;flex-wrap:wrap;gap:6px}
+.mchip{display:inline-block;padding:4px 11px;border-radius:999px;background:var(--accent-soft);color:var(--accent-text);font-weight:600;font-size:13.5px;text-decoration:none}
+.mchip:hover{text-decoration:underline}
+table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
+
 .nw{white-space:nowrap}
 [lang="te"]{font-family:"Noto Sans Telugu",sans-serif;line-height:1.8}
 [lang="hi"]{font-family:"Noto Sans Devanagari",sans-serif;line-height:1.75}
@@ -3811,6 +3860,18 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
     t3 = (f'<a class="etile" href="{pb}sectionals/"><span class="etile-k">03 · Sectional tests</span><b>Subject-wise tests</b>'
           f'<span class="etile-p">PYQ sectionals in {nsub} subjects{", plus sectional mocks from " + esc(mk["name"]) if mk else ""}. '
           f'Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your PYQ Pass is active">🔒 With the PYQ Pass</span></a>')
+    ETI = {'1': ('<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6"/><path d="m9 16 2 2 4-4"/>', 'Open the PYQs →'),
+           '2': ('<circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M10 2h4M12 2v3"/>', 'See the mock tests →'),
+           '3': ('<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>', 'Practise a subject →')}
+    def fx(t):   # Anil, 2 Nov 2026: the three cards get a coloured header with a drawn icon, and a real button
+        m = re.search(r'<span class="etile-k">0(\d) · ([^<]+)</span>', t)
+        if not m: return t
+        n = m.group(1); ic, btn = ETI[n]
+        hd = (f'<span class="etile-hd eh{n}"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ic}</svg></span>'
+              f'<span class="etile-k">0{n} · {m.group(2)}</span></span>')
+        t = t.replace('<a class="etile"', '<a class="etile fx"', 1).replace(m.group(0), hd, 1)
+        return t[:-4] + f'<span class="etile-btn">{btn}</span></a>' if t.endswith('</a>') else t
+    t1, t2, t3 = fx(t1), fx(t2), fx(t3)
     links = ''.join(f'<a class="etile etile-sm" href="{h}"><b>{esc(x)}</b><span class="etile-go">→</span></a>' for x, h in extra_links)
     note = ''
     if conf['id'] in MAINS_EXAMS:   # Anil, 31 Oct 2026: APPSC Group-1 page has Prelims tiles and Mains tiles (Mains PYQs year-wise and subject-wise)
@@ -4085,6 +4146,25 @@ def dur_text(p):
     return f'{p["mins"]} minutes' if p.get('mins') else f'about {round(p["count"] / 60 * 4) / 4:g} hours'
 
 
+def mock_btns(start_href, start_label, practice_href, pdf):
+    """Start / Practice / PDF as buttons in the mock tables (Anil, 2 Nov 2026: text links were hard to tap)."""
+    b = f'<a class="mbtn go" href="{start_href}">▶ {start_label}</a>'
+    if practice_href: b += f'<a class="mbtn" href="{practice_href}">Practice mode</a>'
+    if pdf: b += pdf.replace(' · <a ', '<a class="mbtn mpdf" ', 1)
+    return f'<span class="mbtns">{b}</span>'
+
+
+def chips(html):
+    return '<span class="mchips">' + html.replace(' · ', '').replace('<a ', '<a class="mchip" ') + '</span>'
+
+
+def soon_rows(names, total_cols=4):
+    """Consecutive coming-soon mocks folded into one row: 'Mocks 3–10 · coming soon'."""
+    if not names: return ''
+    label = names[0] if len(names) == 1 else f'{names[0].replace("Mock ", "Mocks ")}–{names[-1].replace("Mock ", "")}'
+    return f'<tr class="msoon"><td colspan="{total_cols}"><b>{esc(label)}</b> · coming soon, one by one</td></tr>'
+
+
 def part_links(pb, m):
     """'Reasoning · General Awareness · …' links that open one part of a released mock as a sectional test."""
     return ' · '.join(f'<a href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}</a>' for k, v, _ in m['parts'])
@@ -4142,23 +4222,23 @@ def mock_parts(conf, papers, app=False):
         for p in mcq)
     info = MOCK_INFO.get(conf['id'], '')
     if mk and 'mocks' in mk:
-        sched = ''.join((f'<tr><td>{esc(m["name"])}</td><td>{"<b>Free</b> · register and start" if m.get("free") else "Available now"}</td><td>{m["qn"]} questions · {m["mins"]} min · <a href="{pb}?mock={m["id"]}">{"Start free" if m.get("free") else "Start"}</a>{f' · <a href="{pb}?mock={m["id"]}&amp;mode=practice">Practice mode</a>' if app else ''}{mock_pdf_link(conf, m["id"])}</td>'
-                         f'<td>{part_links(pb, m)}</td></tr>') if m['live'] else
-                        f'<tr><td>{esc(m["name"])}</td><td>Coming soon</td><td>{m["qn"]} questions · {m["mins"]} min</td><td>{" · ".join(esc(v) for _, v, _ in m["parts"])}</td></tr>'
-                        for m in mk['mocks'])
+        sched = ''.join(f'<tr><td><b>{esc(m["name"])}</b></td><td>{"<b>Free</b> · register and start" if m.get("free") else "Available now"}</td><td>{m["qn"]} questions · {m["mins"]} min'
+                        f'{mock_btns(f"{pb}?mock={m[chr(105) + chr(100)]}", "Start free" if m.get("free") else "Start", f"{pb}?mock={m[chr(105) + chr(100)]}&amp;mode=practice" if app else "", mock_pdf_link(conf, m["id"]))}</td>'
+                        f'<td>{chips(part_links(pb, m))}</td></tr>' for m in mk['mocks'] if m['live'])
+        sched += soon_rows([m['name'] for m in mk['mocks'] if not m['live']])
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
-                + f'<table class="facts"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
+                + f'<table class="facts mtab"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
                 + '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in mk['about']) + '</ul>'
 )
     elif mk:
         mid = lambda i: f'{mk["id"]}-{i + 1}'
-        sched = ''.join((f'<tr><td>Mock {i + 1}</td><td>{"<b>Free</b> · register and start" if mk.get("free1") and i == 0 else "Available now"}</td><td>{mk["qn"]} questions · <a href="{pb}?mock={mid(i)}">{"Start free" if mk.get("free1") and i == 0 else "Start"}</a>{f' · <a href="{pb}?mock={mid(i)}&amp;mode=practice">Practice mode</a>' if app else ''}{mock_pdf_link(conf, mid(i))}</td>'
-                         f'<td><a href="{pb}?mock={mid(i)}&amp;part=ari">Arithmetic</a> · <a href="{pb}?mock={mid(i)}&amp;part=rea">Reasoning</a> · '
-                         f'<a href="{pb}?mock={mid(i)}&amp;part=gs">General Studies</a></td></tr>') if i < mk['live'] else
-                        f'<tr><td>Mock {i + 1}</td><td>Coming soon</td><td>{mk["qn"]} questions</td><td>Arithmetic · Reasoning · General Studies</td></tr>'
-                        for i in range(mk['n']))
+        sched = ''.join(f'<tr><td><b>Mock {i + 1}</b></td><td>{"<b>Free</b> · register and start" if mk.get("free1") and i == 0 else "Available now"}</td><td>{mk["qn"]} questions'
+                        f'{mock_btns(f"{pb}?mock={mid(i)}", "Start free" if mk.get("free1") and i == 0 else "Start", f"{pb}?mock={mid(i)}&amp;mode=practice" if app else "", mock_pdf_link(conf, mid(i)))}</td>'
+                        f'<td>{chips(f"<a href={chr(34)}{pb}?mock={mid(i)}&amp;part=ari{chr(34)}>Arithmetic</a> · <a href={chr(34)}{pb}?mock={mid(i)}&amp;part=rea{chr(34)}>Reasoning</a> · <a href={chr(34)}{pb}?mock={mid(i)}&amp;part=gs{chr(34)}>General Studies</a>")}</td></tr>'
+                        for i in range(mk['live']))
+        sched += soon_rows([f'Mock {i + 1}' for i in range(mk['live'], mk['n'])])
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
-                + f'<table class="facts"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
+                + f'<table class="facts mtab"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
                 '<ul><li>Fresh questions written for this series in the TS SI Prelims pattern, not copied from coaching material: Arithmetic &amp; Reasoning (100) and General Studies (100), in English and Telugu.</li>'
                 '<li>Every question has an explanation in English and Telugu. Your score, accuracy and topic-wise analysis come after each mock.</li>'
                 '<li>Each mock\'s sections can also be taken on their own as sectional tests.</li></ul>'
