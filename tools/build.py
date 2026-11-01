@@ -1145,7 +1145,7 @@ def main():
 
         l2 = conf['l2']
 
-        links = [(N['h1'], '/' + rel) for rel, N in NOTIFS.items() if N['exam'] == conf['id']]
+        links = [(N['h1'], '/' + rel) for rel, N in NOTIFS.items() if N['exam'] == conf['id'] and not N.get('gsma')]
         if bb_url and conf['id'] == 'appsc-group-2': links.insert(0, ('New: Bahubali Test Series – Group 2 Mains full-length tests', bb_url))
         tiles = tiles_html(conf, papers, questions, links, emains)
 
@@ -1958,7 +1958,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2-notification-2026.html">Analyst Grade-II Notification 2026</a> · <a href="/appsc-forest-range-officer-notification-2026.html">Forest Range Officer Notification 2026</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){{
 document.querySelectorAll(".lk").forEach(function(e){{e.textContent="✓ ";e.className="lk ok"}});
 document.querySelectorAll("[data-paidtxt]").forEach(function(e){{e.textContent=e.getAttribute("data-paidtxt")}});
@@ -2815,6 +2815,100 @@ NOTIFS = {
        'Current events (international, national, Andhra Pradesh); general science and technology; history of India with a focus on AP and the national movement; geography of India and AP; '
        'Indian polity and governance; Indian economy and planning; sustainable development and environment; disaster management; logical reasoning; data analysis.'),
     ]),
+  # Pending since Anil's 28 Oct 2026 request (APPSC exams still missing from the site). Neither post has papers on the site yet, so these
+  # pages hang on the EO exam only for the build (gsma=...): their practice section lists APPSC's common Paper I (General Studies &
+  # Mental Ability) papers of the EO and AMVI exams, and they are not listed on the EO page. Facts from the detailed notifications
+  # (FRO: No. 16/2026 PDF; Analyst: No. 21/2026 as reported from the PDF, where the Paper II sub-topics are in Annexure-II, not seen here).
+  'appsc-analyst-grade-2-notification-2026.html': dict(
+    exam='appsc-eo', gsma=('appsc-eo', 'appsc-amvi'), crumb='Analyst Grade-II Notification 2026',
+    title='APPSC Analyst Grade 2 Notification 2026 – 18 Posts, A.P. Pollution Control Board, Last Date 2 November, Exam Pattern & Syllabus | Learn with Anil',
+    desc='APPSC Analyst Grade-II Notification 2026 (No. 21/2026): 18 posts in the A.P. Pollution Control Board, online applications 13 October to 2 November 2026, '
+         'eligibility (degree in Chemistry, Biochemistry, Biology or Environmental Sciences), age, fee, the Paper I and Paper II exam pattern and APPSC Paper I previous papers with answers.',
+    h1='APPSC Analyst Grade-II Notification 2026: 18 posts',
+    lede='APPSC Notification No. 21/2026 (13 October 2026) invites online applications for 18 posts of Analyst Grade-II in the A.P. Pollution Control Board, '
+         'who work in the Board\'s laboratories. The last date is 2 November 2026, 11:59 pm. Below: dates, vacancies, '
+         'eligibility, the exam pattern, and the Paper I previous papers to start practising.',
+    te='ఏపీపీఎస్సీ అనలిస్ట్ గ్రేడ్-II (ఏపీ కాలుష్య నియంత్రణ మండలి) నోటిఫికేషన్ (నం. 21/2026): 18 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు అక్టోబర్ 13 నుంచి నవంబర్ 2, 2026 వరకు. '
+       'పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ, పేపర్-2 కెమిస్ట్రీ, బయోకెమిస్ట్రీ, బయాలజీ, ఎన్విరాన్‌మెంటల్ సైన్స్.',
+    pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Analyst_Grade_II_21_2026.pdf', pdfname='APPSC Notification No. 21/2026, dated 13 October 2026',
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification (No. 21/2026)', '13 October 2026'),
+        ('Online applications', '13 October to 2 November 2026 (till 11:59 pm)'),
+        ('Written examination', 'Computer-based (CBRT); date to be announced by APPSC'),
+        ('Official website', 'psc.ap.gov.in')]),
+      ('Posts, pay and age', 'table', [
+        ('Post', 'Analyst Grade-II, A.P. Pollution Control Board'),
+        ('Vacancies', '18: OC 9, EWS 1, BC 4 (BC-A 1, BC-B 2, BC-D 1), SC 2, ST 2'),
+        ('Pay scale', '₹48,440 – ₹1,37,220'),
+        ('Age', '18 to 44 years as on 1 July 2026; 5 years more for SC, ST, BC and EWS, 10 years for persons with benchmark disabilities')]),
+      ('Who can apply', 'p', 'A bachelor\'s degree in Chemistry, Biochemistry, Biology or Environmental Sciences from a recognised university; first-class degree holders are preferred. '
+                          'Fee: ₹250 application processing fee plus ₹80 examination fee; SC, ST, BC, PwBD and ex-service candidates, white-card families and unemployed youth of AP '
+                          '(with the declaration) are exempt from the ₹80 examination fee.'),
+      ('Exam pattern', 'table+', (['Paper', 'Subject', 'Questions · marks · time'], [
+        ('Paper I (objective, degree standard)', 'General Studies & Mental Ability', '150 · 150 · 150 min'),
+        ('Paper II (objective, degree standard)', 'Common paper: Chemistry, Biochemistry, Biology and Environmental Science', '150 · 150 · 150 min'),
+        ('Computer Proficiency Test', 'Office automation with computers; qualifying (OC 40, BC 35, SC/ST/PwBD 30 out of 100), 60 minutes', '—')])),
+      ('', 'note', 'One-third of a mark is deducted for each wrong answer. Selection is on the 300 marks of the written examination, after the qualifying Computer Proficiency Test. '
+                   'The detailed Paper II syllabus is in Annexure-II of the notification.'),
+      ('Paper I syllabus: General Studies & Mental Ability', 'p',
+       'Current events (international, national, Andhra Pradesh); general science and technology; history of India with a focus on AP and the national movement; geography of India and AP; '
+       'Indian polity and governance; Indian economy and planning; sustainable development and environment; disaster management; logical reasoning; data analysis.'),
+      ('', 'note', 'APPSC last recruited Analyst Grade-II for the Pollution Control Board in Notification No. 02/2024 (9 February 2024).'),
+    ]),
+  'appsc-forest-range-officer-notification-2026.html': dict(
+    exam='appsc-eo', gsma=('appsc-eo', 'appsc-amvi'), crumb='Forest Range Officer Notification 2026',
+    title='APPSC Forest Range Officer Notification 2026 – 5 Posts, Apply by 5 November, Exam Pattern, Physical Standards & Syllabus | Learn with Anil',
+    desc='APPSC Forest Range Officer (FRO) Notification 2026 (No. 16/2026): 5 posts in the A.P. Forest Service, online applications 16 October to 5 November 2026, '
+         'eligibility, age 18 to 30, fee, physical standards and walking test, the qualifying test and Papers I to IV, and APPSC Paper I previous papers with answers.',
+    h1='APPSC Forest Range Officer Notification 2026: 5 posts',
+    lede='APPSC Notification No. 16/2026 (16 October 2026) invites online applications for 5 posts of Forest Range Officer in the A.P. Forest Service (one of them carried forward). '
+         'Apply by 5 November 2026. Below: dates, eligibility, the physical standards and walking test, the exam pattern and syllabus, and the Paper I previous papers to start practising.',
+    te='ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ నోటిఫికేషన్ (నం. 16/2026): 5 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు అక్టోబర్ 16 నుంచి నవంబర్ 5, 2026 వరకు. '
+       'వయస్సు 18 నుంచి 30 ఏళ్లు; అర్హత పరీక్ష, నాలుగు పేపర్లు, ఆ తర్వాత నడక పరీక్ష, వైద్య పరీక్ష.',
+    pdf='https://psc.ap.gov.in', pdfname='APPSC Notification No. 16/2026, dated 16 October 2026 (Forest Range Officers, A.P. Forest Service), on psc.ap.gov.in',
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification (No. 16/2026)', '16 October 2026'),
+        ('Online applications', '16 October to 5 November 2026 (till 11:59 pm)'),
+        ('Written examination', 'Computer-based (CBRT); date to be announced by APPSC'),
+        ('Exam centres', 'Visakhapatnam, Vijayawada, Kurnool and Ananthapuramu'),
+        ('Official website', 'psc.ap.gov.in')]),
+      ('Posts, pay and age', 'table', [
+        ('Post', 'Forest Range Officer, A.P. Forest Service (zonal post)'),
+        ('Vacancies', '5, including 1 carried forward (community and zone-wise break-up in Annexure-I of the notification)'),
+        ('Pay scale', '₹48,440 – ₹1,37,220'),
+        ('Age', '18 to 30 years as on 1 July 2026; 5 years more for SC, ST, BC and EWS; ex-service candidates get 3 years plus their service')]),
+      ('Who can apply', 'p', 'A bachelor\'s degree from a recognised university in one of: Agriculture, Botany, Chemistry, Computer Applications or Computer Science, Engineering '
+                          '(Agricultural, Chemical, Civil, Computer, Electrical, Electronics or Mechanical), Environmental Science, Forestry, Geology, Horticulture, Mathematics, '
+                          'Physics, Statistics, Veterinary Science or Zoology. Fee: ₹250 application processing fee plus ₹120 examination fee; SC, ST, BC and ex-service candidates, '
+                          'white-card families and unemployed youth of AP (with the declaration) are exempt from the ₹120 examination fee. Candidates from other states pay both.'),
+      ('Physical standards and walking test', 'table+', (['', 'Men', 'Women'], [
+        ('Height (at least)', '163 cm (152 cm for ST and the listed races)', '150 cm (145 cm for ST and the listed races)'),
+        ('Chest', '79 cm, with at least 5 cm expansion', '74 cm, with at least 5 cm expansion'),
+        ('Walking test', '25 km in 4 hours', '16 km in 4 hours')])),
+      ('', 'note', 'After the written test, APPSC shortlists 3 candidates per post for the walking test and the medical examination (Medical Board at Rajamahendravaram), '
+                   'which the Forest Department conducts, and for the qualifying Computer Proficiency Test.'),
+      ('Exam pattern', 'table+', (['Paper', 'Subject', 'Questions · marks · time'], [
+        ('Qualifying test (SSC standard)', 'General English (50) and General Telugu (50)', '100 · 100 · 100 min'),
+        ('Paper I (degree standard)', 'General Studies & Mental Ability', '150 · 150 · 150 min'),
+        ('Paper II (SSC standard)', 'Mathematics', '150 · 150 · 150 min'),
+        ('Paper III', 'General Forestry-I', '150 · 150 · 150 min'),
+        ('Paper IV', 'General Forestry-II', '150 · 150 · 150 min'),
+        ('Computer Proficiency Test', 'Office automation with computers; qualifying (OC 40, BC 35, SC/ST 30 out of 100), 60 minutes', '—')])),
+      ('', 'note', 'All papers are objective and computer-based. One-third of a mark is deducted for each wrong answer. Merit is on Papers I to IV (600 marks); '
+                   'the English and Telugu test only has to be passed. Minimum marks to qualify: 40% for OC, sportspersons, ex-service and EWS candidates, 35% for BC, 30% for SC and ST.'),
+      ('Syllabus in brief', 'list', [
+        'Qualifying test: English comprehension, phrases and idioms, vocabulary and punctuation, sentence rearrangement; Telugu synonyms, grammar and meanings.',
+        'Paper I, General Studies & Mental Ability: current events; general science and technology; history of India; geography of India with a focus on AP; '
+        'polity and governance; economy and planning; sustainable development and environment; disaster management; reasoning; data analysis.',
+        'Paper II, Mathematics (SSC standard): arithmetic, algebra, trigonometry, geometry, mensuration and statistics.',
+        'Paper III, General Forestry-I: natural resources; plant sciences; biodiversity conservation; soil science and geology; water and watershed management; '
+        'silviculture, agroforestry, social forestry and community forest management.',
+        'Paper IV, General Forestry-II: ecosystems and wildlife; forest protection; forest utilisation; animal management; economic zoology; forest economics, legislation '
+        'and administration; forest inventory, mensuration and remote sensing; environmental sciences; forest survey and engineering; first aid.']),
+      ('', 'note', 'APPSC last recruited Forest Range Officers in Notification No. 11/2024 (6 March 2024) and before that in No. 21/2022.'),
+    ]),
 }
 
 
@@ -2948,12 +3042,32 @@ def eo_syllabus_notif():
         pdfname='APPSC Notification No. 23/2026 (syllabus in Annexure-II); topic breakdown: Learn with Anil',
         sections=[], sections_fn=sections)
 
+def gsma_links(loaded, exam_ids):
+    """APPSC's common Paper I (General Studies & Mental Ability) papers of the given exams, for the notification pages of posts
+    that have no papers of their own on the site yet (Analyst Grade-II, Forest Range Officer): the same Paper I syllabus."""
+    rows = []
+    for conf, papers, questions in loaded:
+        if conf['id'] not in exam_ids: continue
+        papers, _ = public_only(papers, questions)
+        base = conf['dir'] + '/' if conf['dir'] else ''
+        for p in papers:
+            if 'general-studies-mental-ability' not in p['slug']: continue   # Paper I of each year
+            rows.append((-p['year'], conf['id'], f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {p.get("mins") or p["count"]} min timer</div>'
+                        f'<p><a href="/{base}papers/{p["slug"]}.html">{esc(paper_kw(conf, p))} question paper with answers</a>'
+                        f' · <a href="{conf["pb"]}?practice={p["id"]}">Attempt it with a timer</a></p></li>'))
+    return '<ol class="qs">' + ''.join(r for _, _, r in sorted(rows)) + '</ol>'
+
+
 def notif_page(loaded, rel):
     N = NOTIFS[rel]
     conf, papers, questions = next(x for x in loaded if x[0]['id'] == N['exam'])
     can = f'{SITE_URL}/{rel}'
-    body = [f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>',
-            f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>']
+    if N.get('gsma'):   # a post with no papers of its own yet: point to APPSC's common Paper I papers instead of one exam's tests
+        body = [f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>',
+                f'<a class="cta" href="#paper-1">Practise Paper I (General Studies &amp; Mental Ability)</a><a class="cta alt" href="/appsc-pyqs.html">All APPSC previous papers</a>']
+    else:
+        body = [f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>',
+                f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>']
     for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
         if kind == 'table': body.append(facts_table(data))
@@ -2962,13 +3076,23 @@ def notif_page(loaded, rel):
         elif kind == 'note': body.append(f'<p class="note">{esc(data)}</p>')
         elif kind == 'html': body.append(data)   # trusted markup written here (links)
         else: body.append(f'<p>{esc(data)}</p>')
-    body.append(f'<h2>Start with the previous papers</h2><p>Every {esc(conf["name"])} paper on this site comes with the answers from APPSC\'s final key and a short '
-                f'explanation in English and Telugu. Practise a paper online or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
+    if N.get('gsma'):
+        body.append(f'<h2 id="paper-1">Start with Paper I: APPSC\'s General Studies &amp; Mental Ability papers</h2><p>Paper I of this exam is the same General Studies &amp; Mental Ability '
+                    f'paper APPSC sets for its other degree-level posts, with the same syllabus. These Paper I papers come with the answers from APPSC\'s final key and a short '
+                    f'explanation in English and Telugu. Practise a paper online or take it as a timed test.</p>' + gsma_links(loaded, N['gsma']))
+    else:
+        body.append(f'<h2>Start with the previous papers</h2><p>Every {esc(conf["name"])} paper on this site comes with the answers from APPSC\'s final key and a short '
+                    f'explanation in English and Telugu. Practise a paper online or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
     more = ''.join(f'; <a href="{u}" rel="nofollow">{esc(nm)}</a>' for u, nm in N.get('more_src', []))
     body.append(f'<p class="note">Source: <a href="{N["pdf"]}" rel="nofollow">{esc(N["pdfname"])}</a>{more}. Dates and vacancies can change with corrigenda; '
                 f'always check the official website psc.ap.gov.in before applying. Learn with Anil is not connected with APPSC.</p>')
-    return static_page(0, N['title'], N['desc'], can, N['h1'], esc(N['lede']), ''.join(body),
-                       [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + conf['pb']), (N['crumb'], can)], conf, at_root=True)
+    crumbs = ([('Home', SITE_URL + '/'), ('APPSC previous papers', SITE_URL + '/appsc-pyqs.html'), (N['crumb'], can)] if N.get('gsma')
+              else [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + conf['pb']), (N['crumb'], can)])
+    html_ = static_page(0, N['title'], N['desc'], can, N['h1'], esc(N['lede']), ''.join(body), crumbs, conf, at_root=True)
+    if N.get('gsma'):   # the header names APPSC, not the exam the page hangs on for the build
+        html_ = re.sub(r'<header><div class="wrap">.*?</div></header>',
+                       '<header><div class="wrap"><a href="/appsc-pyqs.html">Learn with Anil · APPSC PYQs</a><a href="#paper-1">Practise Paper I →</a></div></header>', html_, count=1)
+    return html_
 
 
 NOTES_EXAMS = {'appsc-group-2', 'appsc-group-1'}   # Anil, 24 Oct 2026: the APPSC Mains books are shown only on the APPSC Group 1 and Group 2 pages
