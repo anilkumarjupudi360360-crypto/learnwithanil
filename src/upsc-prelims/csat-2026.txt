@@ -1,0 +1,928 @@
+# UPSC Civil Services (Preliminary) Examination 2026, General Studies Paper II (CSAT) (Series A, booklet TDMN-B-AST), held 24 May 2026.
+# Source: the official UPSC question paper; answers from UPSC's provisional answer key (27 May 2026). Explanations by Learn with Anil.
+# Dropped by UPSC: none
+
+Q 1 | qa | Data Interpretation & Sufficiency
+Each item in this section contains a question followed by two statements. Answer each item using the following instructions.
+Question: X receives three coins of different denominations : 1, 2, 5, 10 and 20. If the total amount received by X is m, does X receive a coin of denomination 5?
+Statement I: m is not a prime number.
+Statement II: The sum of the digits of m is greater than 5.
+(1) Select this option if the question can be answered using one of these statements alone, but cannot be answered using other statement
+(2) Select this option if the question can be answered using either statement alone
+(3) Select this option if the question can be answered using both the statements together, but cannot be answered using either statement alone
+(4) Select this option if the question cannot be answered even using any of the statements
+= 1
+~ The ten possible three-coin totals are 8, 13, 16, 17, 23, 26, 27, 31, 32 and 35; those that include the 5-coin are 8, 16, 17, 26, 27, 35, and those without it are 13, 23, 31, 32. Statement I (m not prime) leaves 8, 16, 26, 27, 35 (with a 5) and also 32 = 2 + 10 + 20 (without a 5), so it cannot decide. Statement II (digit sum greater than 5) leaves 8, 16, 17, 26, 27, 35, every one of which contains the 5-coin, while 13, 23, 31 and 32 have digit sums of only 4 or 5. So Statement II alone answers "yes" but Statement I alone does not: option (a).
+
+Q 2 | qa | Data Interpretation & Sufficiency
+Each item in this section contains a question followed by two statements. Answer each item using the following instructions.
+Question: For two distinct real numbers x and y, which of them is bigger?
+Statement I: x² < y < 1
+Statement II: y < √x < 1
+(1) Select this option if the question can be answered using one of these statements alone, but cannot be answered using other statement
+(2) Select this option if the question can be answered using either statement alone
+(3) Select this option if the question can be answered using both the statements together, but cannot be answered using either statement alone
+(4) Select this option if the question cannot be answered even using any of the statements
+= 4
+~ Statement I: with y = 0.3, x = 0.5 satisfies x² < y (then x > y) and so does x = 0.1 or x = −0.5 (then y > x); not sufficient. Statement II: y < √x < 1 means 0 ≤ x < 1; with x = 0.25 (√x = 0.5), y = 0.4 gives y > x while y = 0.1 gives y < x; not sufficient. Together: x² < y < √x. For 0 < x < 1, x itself lies between x² and √x, so y can fall on either side of x; for x = 0.25 the allowed range 0.0625 < y < 0.5 contains both y = 0.1 (smaller than x) and y = 0.4 (bigger than x). Even both statements cannot decide: option (d).
+
+Q 3 | qa | Data Interpretation & Sufficiency
+Each item in this section contains a question followed by two statements. Answer each item using the following instructions.
+Question: If x and y are integers, then is x even?
+Statement I: x²y² is even.
+Statement II: 1 + x² + y² is odd.
+(1) Select this option if the question can be answered using one of these statements alone, but cannot be answered using other statement
+(2) Select this option if the question can be answered using either statement alone
+(3) Select this option if the question can be answered using both the statements together, but cannot be answered using either statement alone
+(4) Select this option if the question cannot be answered even using any of the statements
+= 3
+~ Statement I: x²y² even means xy is even, so at least one of x, y is even; x = 1, y = 2 (x odd) and x = 2, y = 1 (x even) both fit, so it is not sufficient. Statement II: 1 + x² + y² odd means x² + y² is even, so x and y have the same parity; x = y = 1 and x = y = 2 both fit, so it is not sufficient. Together: x and y have the same parity and at least one of them is even, so both are even and x is even. Both statements are needed together: option (c).
+
+Q 4 | qa | Data Interpretation & Sufficiency
+Each item in this section contains a question followed by two statements. Answer each item using the following instructions.
+Question: X is a collection of certain odd numbers whereas Y is a collection of certain even numbers. T consists of the numbers all of which are either from X or from Y. Is every number of T from Y?
+Statement I: The sum of any two numbers belonging to T is even.
+Statement II: If both p and q are picked from T, then (p − 1)q is even.
+(1) Select this option if the question can be answered using one of these statements alone, but cannot be answered using other statement
+(2) Select this option if the question can be answered using either statement alone
+(3) Select this option if the question can be answered using both the statements together, but cannot be answered using either statement alone
+(4) Select this option if the question cannot be answered even using any of the statements
+= 4
+~ T contains only odd numbers (from X) and/or even numbers (from Y). Statement I: the sum of any two members is even only if all members have the same parity, so T may be all odd or all even; not sufficient. Statement II: if p is odd, p − 1 is even and (p − 1)q is always even; if some p in T is even, every q must be even. So again T is either all odd or all even; not sufficient. Together the two statements say the same thing, and both T = {1, 3} and T = {2, 4} satisfy them, so whether every number of T comes from Y cannot be decided even with both: option (d).
+
+Q 5 | qa | Data Interpretation & Sufficiency
+Each item in this section contains a question followed by two statements. Answer each item using the following instructions.
+Question: If x, y and z are integers, each greater than 1, then is x a prime number?
+Statement I: xy² = 116
+Statement II: xz = 261
+(1) Select this option if the question can be answered using one of these statements alone, but cannot be answered using other statement
+(2) Select this option if the question can be answered using either statement alone
+(3) Select this option if the question can be answered using both the statements together, but cannot be answered using either statement alone
+(4) Select this option if the question cannot be answered even using any of the statements
+= 1
+~ Statement I: 116 = 2² × 29. Since y > 1 and y² must divide 116, the only choice is y = 2, giving x = 29, which is prime; so Statement I alone answers "yes". Statement II: 261 = 3² × 29, and with x, z > 1 the value of x can be 3, 9, 29 or 87; x may be prime (3, 29) or composite (9, 87), so Statement II alone is not sufficient. One statement alone works and the other does not: option (a).
+
+Q 6 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+‘Kalagram’, the cultural village set up at the Maha Kumbh Mela, unfolded as a mosaic of India’s diverse regions, each represented by seven meticulously crafted ‘Sanskriti Angans’—stepping through the grand portal was like entering another world. These thematic zones, inspired by iconic temples like the Dakshineshwar Kali Temple and the Brahma Mandir, were treasure troves of regional artistry. Bengal’s Pattachitra paintings, Assam’s bamboo crafts, Tamil Nadu’s Thanjavur paintings, and Madhya Pradesh’s tribal sculpture—all were showcased in these living galleries where 230 master artisans breathed life into them using age-old techniques, their hands shaping India’s ancient history into creations to behold.
+Which of the following conclusions are valid?
+1. Seven Sanskriti Angans, representing different regions of India, had been showcased in Kalagram.
+2. Regional artistry was recognised via the inspiration drawn from iconic temples.
+3. India’s ancient history had been crafted by the contemporary craftsmanship of 230 artisans into creations to behold.
+4. Art forms from all regions of India had been showcased in these living galleries.
+Select the answer using the code given below.
+(1) 1 and 2 only
+(2) 2, 3 and 4
+(3) 1, 2 and 4
+(4) 1 and 3
+= 1
+~ Conclusion 1 is valid: Kalagram presented India’s diverse regions, each represented by seven crafted ‘Sanskriti Angans’. Conclusion 2 is valid: the thematic zones, inspired by iconic temples such as the Dakshineshwar Kali Temple and the Brahma Mandir, were "treasure troves of regional artistry", so the temple-inspired zones gave regional art its showcase. Conclusion 3 fails: the 230 master artisans worked with "age-old techniques", not contemporary craftsmanship. Conclusion 4 overreaches: the passage names the art of only a few States (Bengal, Assam, Tamil Nadu, Madhya Pradesh) and never says that all regions were covered. Hence 1 and 2 only.
+
+Q 7 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+‘Kalagram’, the cultural village set up at the Maha Kumbh Mela, unfolded as a mosaic of India’s diverse regions, each represented by seven meticulously crafted ‘Sanskriti Angans’—stepping through the grand portal was like entering another world. These thematic zones, inspired by iconic temples like the Dakshineshwar Kali Temple and the Brahma Mandir, were treasure troves of regional artistry. Bengal’s Pattachitra paintings, Assam’s bamboo crafts, Tamil Nadu’s Thanjavur paintings, and Madhya Pradesh’s tribal sculpture—all were showcased in these living galleries where 230 master artisans breathed life into them using age-old techniques, their hands shaping India’s ancient history into creations to behold.
+Which one of the following statements is not correct?
+(1) Paintings from four States of India have been mentioned.
+(2) Stepping into Kalagram is likened to stepping into another world.
+(3) The Angans have been described as living galleries.
+(4) Kalagram is divided into thematic zones, inspired by well-known temples of India.
+= 1
+~ Statement (a) is not correct: paintings from only two States are mentioned, Bengal’s Pattachitra and Tamil Nadu’s Thanjavur paintings; Assam’s bamboo crafts and Madhya Pradesh’s tribal sculpture are crafts and sculpture, not paintings. The others are correct: (b) stepping through the grand portal "was like entering another world"; (c) the art was showcased in "these living galleries", i.e., the Angans or thematic zones; (d) Kalagram’s thematic zones were inspired by iconic temples like the Dakshineshwar Kali Temple and the Brahma Mandir.
+
+Q 8 | qa | Algebra
+The weight of X, in kg, is denoted by X. The weights of A, B, C, D, P, Q, R and S are measured. Given :
+A + B + C + D = 17
+A + C = 6
+P + Q + S + D = 15
+P + Q + R + B = 17
+P = R and Q = S
+Which one of the following statements is correct?
+(1) B and D together weigh less than the total weight of P and Q.
+(2) P and Q together weigh more than the total weight of A and C.
+(3) P weighs more than Q.
+(4) Q weighs more than P.
+= 2
+~ From A + B + C + D = 17 and A + C = 6, B + D = 11. Using R = P and S = Q, the third and fourth equations become P + 2Q + D = 15 and 2P + Q + B = 17. Adding them: 3(P + Q) + (B + D) = 32, so 3(P + Q) = 21 and P + Q = 7. Hence P and Q together (7 kg) weigh more than A and C (6 kg), so (b) is correct. (a) is false because B + D = 11 is more than 7. Subtracting the two equations gives P − Q = 2 − (B − D), which depends on the unknown split of B and D, so neither (c) nor (d) can be concluded.
+
+Q 9 | qa | Permutations, Combinations & Probability
+How many words can one form by shuffling the letters of the word QUEUE, if Q is always followed by U? The words thus formed need not necessarily have any meaning.
+(1) 6
+(2) 8
+(3) 10
+(4) 12
+= 4
+~ QUEUE has the letters Q, U, U, E, E. If Q must be immediately followed by U, tie them into one block "QU"; the items to arrange are then [QU], U, E and E. Number of arrangements = 4!/2! = 24/2 = 12, dividing by 2! for the two identical E’s. Check: the block QU can start at place 1, 2, 3 or 4, and each time the other three letters U, E, E can be arranged in 3!/2! = 3 ways, so 4 × 3 = 12.
+
+Q 10 | qa | Number System
+X, Y and Z jump forward 4′, 6′ and 5′, respectively. At 8 AM, they all land on mark 199′. How many times will they all land on the same mark (need not be at the same moment) between mark 195′ and 1000′, if all of them cross mark 1000′ by 9 AM?
+(1) 11
+(2) 12
+(3) 13
+(4) 14
+= 4
+~ X lands on marks 199 + 4k, Y on 199 + 6k and Z on 199 + 5k, so a mark common to all three is 199 + 60k, since LCM(4, 6, 5) = 60. Between 195′ and 1000′ these marks are 199, 259, 319, …, 979 (199 + 60 × 13 = 979; the next, 1039, lies beyond 1000′ and the previous, 139, lies below 195′). So k = 0 to 13 gives 14 common marks. They need not land at the same moment, and since all three pass 1000′ by 9 AM, each of these marks is actually reached by all of them.
+
+Q 11 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Sport is not just about winning medals or getting jobs through a sports quota. Today’s generation is struggling with issues like depression and anxiety. Parents often say that their children are inactive and rarely leave the house. Sport can help tackle these problems. From sport you can learn time management, fitness, teamwork, coordination, and so much more. We need to develop a culture in which sport is seen as a way of life—a path to building a healthier, happier society.
+Which of the following conclusions are valid?
+1. Sport is more than just games; it is a way of life.
+2. Sport can help mitigate the problems of seclusion among the young.
+3. Earning laurels in sport can help one secure a job on the basis of an assigned quota.
+4. Standard corporate sector skills cannot be learnt through sport.
+Select the answer using the code given below.
+(1) 1 and 3 only
+(2) 2 and 4 only
+(3) 1, 2 and 4
+(4) 1, 2 and 3
+= 4
+~ Conclusion 1 is valid: sport is "not just about winning medals", and the passage wants it seen "as a way of life". Conclusion 2 is valid: children are "inactive and rarely leave the house", and "sport can help tackle these problems". Conclusion 3 is valid: saying sport is "not just about … getting jobs through a sports quota" accepts that sporting success does help people get jobs under the sports quota. Conclusion 4 runs against the passage, which says sport teaches time management, teamwork and coordination, skills valued in any workplace. Since 4 is invalid and 2 is clearly supported, only the code 1, 2 and 3 fits.
+
+Q 12 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Sport is not just about winning medals or getting jobs through a sports quota. Today’s generation is struggling with issues like depression and anxiety. Parents often say that their children are inactive and rarely leave the house. Sport can help tackle these problems. From sport you can learn time management, fitness, teamwork, coordination, and so much more. We need to develop a culture in which sport is seen as a way of life—a path to building a healthier, happier society.
+Which of the following statements is/are correct?
+1. Parents are not encouraging enough when it comes to children playing sport.
+2. Participation in sporting activities can help develop life skills.
+3. Sport as a way of life can help evolve the very nature of society itself.
+Select the answer using the code given below.
+(1) 1 and 3
+(2) 2 and 3
+(3) 2 only
+(4) 3 only
+= 2
+~ Statement 1 is not supported: parents only report that their children are inactive and rarely leave the house; the passage nowhere blames parents for failing to encourage sport. Statement 2 is correct: from sport one can learn time management, fitness, teamwork and coordination, which are life skills. Statement 3 is correct: a culture that treats sport as a way of life is called "a path to building a healthier, happier society", i.e., it can reshape society itself. Hence 2 and 3.
+
+Q 13 | qa | Algebra
+A toy T jumps forward or backward. In each forward jump, it moves 5′ forward whereas in each backward jump, it moves 2′ backward. If in 31 jumps, T moves exactly 15′ forward, then what is the difference of the number of forward and backward jumps?
+(1) 6
+(2) 7
+(3) 8
+(4) 9
+= 4
+~ Let f be the number of forward jumps and b the number of backward jumps. Then f + b = 31 and 5f − 2b = 15. Substituting b = 31 − f: 5f − 62 + 2f = 15, so 7f = 77, giving f = 11 and b = 20. Check: 5 × 11 − 2 × 20 = 55 − 40 = 15′ forward. The difference between the numbers of forward and backward jumps is 20 − 11 = 9.
+
+Q 14 | lr | Puzzles & Arrangements
+Eight persons P, Q, R, S, T, U, V and W sit around a round table in eight different seats placed with equal distance between any two consecutive seats. Both P and R are adjacent to Q. Both T and R are adjacent to S. Both U and W are adjacent to V. S and W are on opposite chairs. If while going in the clockwise direction around the table from P, one meets R before T, then how many persons shall Q cross while moving in the clockwise direction around the table before meeting W?
+(1) 5
+(2) 4
+(3) 2
+(4) 1
+= 1
+~ Q sits between P and R, and S sits between R and T, so P, Q, R, S, T occupy five consecutive seats; V sits between U and W in the remaining three seats. S and W must be opposite (four seats apart), which fixes the order P, Q, R, S, T, U, V, W around the table, with W next to P. Going clockwise from P one meets R before T, so this order runs clockwise (the other direction would reach T first). Moving clockwise from Q, it passes R, S, T, U and V before reaching W: 5 persons. No other seating satisfies all the conditions.
+
+Q 15 | lr | Analytical Reasoning
+The top of a table is rectangular and its dimensions are 6′ × 10′. Two rectangular portions of the table top are painted in blue colour; both these portions have dimensions 2.5′ × 8′ and each of them has exactly two sides common with two edges of the table top. If the table is fixed to the ground and the remaining portion of the table top is painted in white, how many different patterns are possible when observed from above?
+(1) 2
+(2) 4
+(3) 6
+(4) 8
+= 2
+~ An 8′ side cannot fit along the 6′ edge, so each 2.5′ × 8′ blue portion lies with its 8′ side along a 10′ edge; to share exactly two sides with the edges of the table top it must sit in a corner, giving 4 possible positions. Two portions in the corners at both ends of the same 10′ edge would overlap (8 + 8 > 10) and merge into one strip, so the two separate portions lie along opposite 10′ edges: both at the left end, both at the right end, or in either of the two diagonal pairs of corners. Because the table is fixed, these are seen as different from above, giving 4 patterns.
+
+Q 16 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+How is deflation done? Most countries use a method called ‘double deflation’, where input and output prices are deflated separately. Consider a manufacturer importing oil for use in production. If oil prices fall, output prices do not and quantities remain the same, real value added should not change. But if the same deflator is used for inputs and outputs, as in India, it would look as if the manufacturer had become more productive.
+Which of the following statements is/are correct?
+1. Real value should not change in the instance of static output cost and unchanged quantities against falling oil prices.
+2. Deflators are to be used separately for inputs and outputs, and this is a practice universally adopted by all economies.
+Select the answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 4
+~ Statement 1 echoes the passage but alters it: the passage says real value added (not "real value") should not change when oil prices fall while output prices and quantities stay the same, and this holds under double deflation. The statement speaks of a static output "cost", although cheaper oil lowers the cost of production; it is the output price that stays unchanged. On this close reading the key treats statement 1 as not correct. Statement 2 is clearly wrong: the passage says "most countries" use double deflation and India uses the same deflator for inputs and outputs, so the practice is not universal. Hence neither 1 nor 2. (Provisional key; some sources differ.)
+
+Q 17 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+How is deflation done? Most countries use a method called ‘double deflation’, where input and output prices are deflated separately. Consider a manufacturer importing oil for use in production. If oil prices fall, output prices do not and quantities remain the same, real value added should not change. But if the same deflator is used for inputs and outputs, as in India, it would look as if the manufacturer had become more productive.
+Which of the following assumptions is/are valid?
+1. Deflation strategies can be used to make manufacturers appear to be doing better than they actually are.
+2. When input and output prices are both deflated against a single input price, it is referred to as ‘double deflation’.
+Select the answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Assumption 1 is valid: the passage shows that using the same deflator for inputs and outputs, as in India, makes a manufacturer look more productive when oil prices fall even though real value added has not changed, so the choice of deflation method can make performance appear better than it is. Assumption 2 is wrong: ‘double deflation’ means input and output prices are deflated separately, not both against a single input price. Hence 1 only. (Outside the passage: India’s new GDP series with base year 2022-23, released on 27 February 2026, now uses double deflation for manufacturing.)
+
+Q 18 | lr | Series & Patterns
+A pattern formed by two characters a and b is repeated more than once in the following string :
+×b×a×a××a×a×bab
+What is × × in the 7th and 8th positions from the left in the above string?
+(1) aa
+(2) ab
+(3) ba
+(4) bb
+= 4
+~ The string has 15 places: × b × a × a × × a × a × b a b. Testing pattern lengths, only length 5 fits every given letter: length 1 fails (both a and b occur), length 3 fails because places 4 and 13 would need the same letter but show a and b, and lengths 2, 4, 6 and 7 clash in the same way. With length 5, places 1, 6, 11 give a; places 2, 7, 12 give b; places 3, 8, 13 give b; places 4, 9, 14 give a; places 5, 10, 15 give b. So the pattern is abbab and the string is abbab abbab abbab. Places 7 and 8 are the 2nd and 3rd letters of the pattern: bb.
+
+Q 19 | qa | Number System
+If 10ᵐ × 1000 × n = 75²⁵ × 25³² × 32⁷⁵, where n is not divisible by 10, then the value of m is
+(1) 101
+(2) 111
+(3) 121
+(4) 131
+= 2
+~ Write the right side in prime factors: 75²⁵ = 3²⁵ × 5⁵⁰, 25³² = 5⁶⁴ and 32⁷⁵ = 2³⁷⁵, so the product is 2³⁷⁵ × 3²⁵ × 5¹¹⁴. The number of factors of 10 is limited by the power of 5, so the product is exactly 10¹¹⁴ × (2²⁶¹ × 3²⁵), and n = 2²⁶¹ × 3²⁵ has no factor 5, so it is not divisible by 10. Then 10ᵐ × 10³ = 10¹¹⁴ gives m + 3 = 114, so m = 111.
+
+Q 20 | qa | Arithmetic
+The speed of a train T is 100 km per hour and the speed of a person P is 4 km per hour. T crosses P in 15 seconds, if P travels along the direction of motion of T. If P travels along the opposite direction of T, then in how much time does T cross P, in seconds, approximately?
+(1) 13.51
+(2) 13.65
+(3) 13.85
+(4) 14.05
+= 3
+~ When P walks in the train’s direction, the relative speed is 100 − 4 = 96 km/h, so the length of the train = 96 × (1000/3600) × 15 = 400 m. When P walks in the opposite direction, the relative speed is 100 + 4 = 104 km/h = 104000/3600 m/s, so the time = 400 × 3600/104000 = 13.846 s, which is about 13.85 seconds. Quick check: the time scales inversely with relative speed, and 15 × 96/104 = 13.85.
+
+Q 21 | qa | Algebra
+For 1/3 < x < y < 2, which of the following statements is/are always correct?
+I. x + 1/x < y + 1/y
+II. √(1 + y²)/y < √(1 + x²)/x
+Select the answer using the code given below.
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ Statement I: f(t) = t + 1/t falls on (0, 1) and rises after t = 1, so it is not increasing on (1/3, 2). Counter-example: x = 1/2, y = 1 gives x + 1/x = 2.5 but y + 1/y = 2, so I is not always true. Statement II: √(1 + t²)/t = √(1/t² + 1), and 1/t² decreases as t increases (t > 0), so this expression strictly decreases with t. Hence for x < y its value at y is always smaller than at x, and II always holds. Check: x = 1/2, y = 1 gives √2 ≈ 1.414 < √5 ≈ 2.236. So only II is always correct.
+Q 22 | qa | Arithmetic
+What is the minimum number of times one needs to measure to get 298 litres of water from a tank, if the measuring cylinders have capacities 1 litre, 6 litres, 25 litres and 100 litres?
+(1) 4
+(2) 5
+(3) 9
+(4) 13
+= 2
+~ The keyed answer counts every use of a cylinder as one measurement, whether it draws water from the tank or pours some back. Draw 100 litres three times (300 litres) and pour back 1 litre twice: 300 − 1 − 1 = 298, so 5 measurements. Four are not enough: two 100s plus two other measures give at most 250 litres, so three 100s are needed, and the fourth measure would then have to remove exactly 2 litres, which no cylinder does. If water could only be drawn out, the least would be 12 (100 × 2 + 25 × 2 + 6 × 8), which is not offered, and 13 (100, 100, 25, 25, 25, 6, 6, 6 and five 1s) is not the minimum even on that reading; so only 5 fits the options.
+Q 23 | qa | Permutations, Combinations & Probability
+There are four types of weights, namely 1 kg, 2 kg, 5 kg and 10 kg. What is the maximum number of different ways one can measure 20 kg, if at least eight but not more than eleven weights of 1 kg are to be used while measuring?
+(1) 7
+(2) 8
+(3) 9
+(4) 10
+= 2
+~ Let k = number of 1 kg weights (8 to 11); the rest, 20 − k, must come from 2, 5 and 10 kg weights. k = 8: 12 = 2 × 6, or 2 + 5 × 2, or 2 + 10, giving 3 ways. k = 9: 11 = 2 × 3 + 5, 1 way (11 needs an odd 5 kg part). k = 10: 10 = 2 × 5, or 5 × 2, or 10, giving 3 ways. k = 11: 9 = 2 × 2 + 5, 1 way. Total = 3 + 1 + 3 + 1 = 8 different ways. Overlooking the single 10 kg weight as a choice for k = 8 or k = 10 gives too few ways (such as 7).
+Q 24 | qa | Geometry & Mensuration
+A cut on a solid object divides the object into two parts where the new surfaces thus produced are plane. On the other hand, one single cut can be used to cut more than one object at a time. In an experiment, the total number of pieces produced by applying n cuts is denoted by xₙ. The experiment is performed on a solid cube where pieces remain unmoved after each cut. In this experiment, if after the third cut, the pieces are identical, then which of the following is not a possible value for x₄?
+(1) 16
+(2) 12
+(3) 8
+(4) 5
+= 1
+~ With the pieces unmoved, three cuts give identical pieces in arrangements such as 4 equal slabs (three parallel cuts), 6 equal blocks (one cut one way, two parallel cuts across it) or 8 equal cubes (three mutually perpendicular central cuts). A fourth plane cut can then give 5 (another parallel cut, splitting one of the 4 slabs), 8 (a perpendicular cut through the 4 slabs) or 12 (a cut turning the 3 × 2 arrangement into 3 × 2 × 2). But 16 is impossible: n plane cuts can produce at most (n³ + 5n + 6)/6 pieces, which is 15 for n = 4. Even from the 2 × 2 × 2 state a single plane can pass through at most 7 of the 8 small cubes, giving at most 8 + 7 = 15.
+Q 25 | qa | Arithmetic
+The class average x in a test increases by 4 when the score of a student is rectified, whose corrected score is 100 instead of 0. Later, the score of another student was found to have been recorded as 81 in place of 56. If there are no other corrections and the final corrected average is y, then y − x is
+(1) 2
+(2) 3
+(3) 5
+(4) 6
+= 2
+~ Let there be n students. Raising one score from 0 to 100 adds 100 to the total and raises the average by 4, so 100/n = 4 and n = 25. The second correction changes 81 to 56, lowering the total by 25, so the average falls by 25/25 = 1. Hence y = x + 4 − 1 and y − x = 3. Check: net change in total = +100 − 25 = +75, and 75/25 = 3. Taking only the first correction gives 4 (not offered), and adding instead of subtracting the second change gives 5.
+Q 26 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+When SARS-CoV-2 was first detected in 2019, it was a truly novel virus for the world. At that time, no one in the world had been exposed to SARS-CoV-2 or had specific immunity against it. In contrast, people across the world have been exposed to HMPV for decades and the virus is well-studied. HMPV and SARS-CoV-2 belong to two very different virus families with fundamentally different characteristics and epidemiology, with strong seasonality seen in HMPV, unlike SARS-CoV-2. Both viruses cause different severity of symptoms, particularly over the long term, and the affected population segments do not fully overlap. In general, HMPV causes milder illness with deaths being very rare and with no long-term post-viral symptoms.
+Which of the following conclusions is/are valid?
+1. Though SARS-CoV-2 and HMPV are similar viruses with somewhat different epidemiology, the former became a pandemic because it was novel and people had not been exposed to it in the past.
+2. The two viruses have fundamentally different impacts on human populations and should not therefore be dealt with in a similar manner.
+Select the answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ Conclusion 1 is invalid: the passage says the two belong to "two very different virus families with fundamentally different characteristics and epidemiology", so calling them similar viruses with somewhat different epidemiology contradicts it, and the passage never discusses why SARS-CoV-2 became a pandemic. Conclusion 2 is accepted: the passage stresses that the viruses differ in family, characteristics, epidemiology, seasonality, severity (especially long-term) and the population segments affected, with HMPV causing milder illness and rare deaths, so their impacts differ fundamentally and a common approach to both is not warranted. Hence 2 only.
+Q 27 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+When SARS-CoV-2 was first detected in 2019, it was a truly novel virus for the world. At that time, no one in the world had been exposed to SARS-CoV-2 or had specific immunity against it. In contrast, people across the world have been exposed to HMPV for decades and the virus is well-studied. HMPV and SARS-CoV-2 belong to two very different virus families with fundamentally different characteristics and epidemiology, with strong seasonality seen in HMPV, unlike SARS-CoV-2. Both viruses cause different severity of symptoms, particularly over the long term, and the affected population segments do not fully overlap. In general, HMPV causes milder illness with deaths being very rare and with no long-term post-viral symptoms.
+Which of the following reflect the intent of the writer in the above passage?
+1. To evolve methodologies for objective analysis of the two viruses
+2. To establish the epidemiological similarities and differences between the two viruses
+3. To offer a better understanding of the remedies of HMPV when analysed in conjunction with SARS-CoV-2
+Select the answer using the code given below.
+(1) 1 and 2
+(2) 2 and 3
+(3) 1 and 3
+(4) None of the above
+= 4
+~ The writer contrasts HMPV with SARS-CoV-2 to show that HMPV is a familiar, well-studied and milder virus, unlike the novel SARS-CoV-2. No methodology of analysis is proposed, so 1 fails. The passage does not set out to establish similarities; it repeatedly stresses that the two are fundamentally different in family, characteristics and epidemiology, so 2 misstates the intent. Remedies or treatment of HMPV are never mentioned, so 3 fails. Since none of the three reflects the writer's intent, the answer is None of the above.
+Q 28 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+When SARS-CoV-2 was first detected in 2019, it was a truly novel virus for the world. At that time, no one in the world had been exposed to SARS-CoV-2 or had specific immunity against it. In contrast, people across the world have been exposed to HMPV for decades and the virus is well-studied. HMPV and SARS-CoV-2 belong to two very different virus families with fundamentally different characteristics and epidemiology, with strong seasonality seen in HMPV, unlike SARS-CoV-2. Both viruses cause different severity of symptoms, particularly over the long term, and the affected population segments do not fully overlap. In general, HMPV causes milder illness with deaths being very rare and with no long-term post-viral symptoms.
+Which of the following statements reflect the logical and rational inferences that can be drawn from the passage?
+1. HMPV has, historically, had longer documentation of studies when compared with SARS-CoV-2.
+2. The two viruses are different from each other and this results in markedly different outcomes amongst those affected.
+3. Long-term impacts of the two viruses are dissimilar and this is an important differentiator between them.
+4. One of the common factors between the two viruses is seasonal specificity.
+Select the answer using the code given below.
+(1) 1 and 2 only
+(2) 1, 2 and 3
+(3) 3 and 4
+(4) 1 and 3 only
+= 2
+~ 1 follows: people have been exposed to HMPV for decades and it is well-studied, whereas SARS-CoV-2 was novel in 2019. 2 follows: the viruses are from very different families, cause different severity of symptoms, and HMPV causes milder illness with very rare deaths. 3 follows: severity differs "particularly over the long term" and HMPV leaves no long-term post-viral symptoms, so long-term impact is a key differentiator. 4 is wrong: strong seasonality is seen in HMPV "unlike SARS-CoV-2", so it is a difference, not a common factor. Hence 1, 2 and 3.
+Q 29 | qa | Number System
+Three variables x, y and z take values 2, 3, 4 or 5 such that their values are always distinct. If M and N denote the largest possible value and the smallest possible value, respectively, for the expression {(x × y) + z}; then M − N is
+(1) 11
+(2) 12
+(3) 13
+(4) 14
+= 3
+~ The product dominates, so make it largest for M and smallest for N. Largest: x × y = 5 × 4 = 20 and z = 3, so M = 23 (the alternative 5 × 3 + 4 = 19 is smaller). Smallest: x × y = 2 × 3 = 6 and z = 4, so N = 10 (2 × 4 + 3 = 11 and 3 × 4 + 2 = 14 are larger). M − N = 23 − 10 = 13. Checking all 24 ordered choices of distinct values confirms M = 23 and N = 10. Taking z = 5 with 4 × 3 (= 17) or 2 × 3 + 5 (= 11) gives wrong extremes.
+Q 30 | qa | Algebra
+Suppose x, y and z are variables taking positive real numbers as their possible values. It is given that y is directly proportional to x² and x is inversely proportional to z. For z = 7/25, the values of x and y are 5 and 50, respectively. If y = 98, what is z equal to?
+(1) 1/7
+(2) 1/5
+(3) 5/7
+(4) 1
+= 2
+~ Write y = kx² and x = c/z. From x = 5, y = 50: 50 = 25k, so k = 2. From x = 5 at z = 7/25: c = 5 × 7/25 = 7/5. When y = 98: x² = 98/2 = 49, so x = 7 (x is positive). Then z = c/x = (7/5)/7 = 1/5. Check: at z = 1/5, x = (7/5) ÷ (1/5) = 7 and y = 2 × 49 = 98. Shortcut: x rises from 5 to 7, so z falls in the ratio 5 : 7, giving 7/25 × 5/7 = 1/5; 5/7 is only this ratio, and 1/7 comes from ignoring the constant c.
+Q 31 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+India is starting to deploy AI for critical use cases such as weather forecasting, pest detection and control, and crop yield optimisation. However, penetration is limited to a small subset of tech-savvy farmers. In the US and in Europe, generative AI tools have started offering precision farming at scale, integrating large datasets to provide real-time agronomic insights. For at-scale integration and accessibility of AI tools in India, it would be helpful to develop Indian languages-based AI tools for smallholder farmers, partner with AgTechs to create affordable AI solutions, and disseminate AI-based advisory services through government programmes.
+Which of the following assumptions is/are valid?
+1. Agricultural productivity has marched ahead in the West because of the economies of scale facilitated by the adoption of AI tools.
+2. Affordable AI tools rendered available in local languages can help AI-based solutions reach more and more small farmers.
+3. Though penetration is as yet low, critical application areas deploying AI tools are already in use in India.
+Select the answer using the code given below.
+(1) 1, 2 and 3
+(2) 2 only
+(3) 1 and 3 only
+(4) 2 and 3 only
+= 4
+~ 2 is valid: the writer's recommendation of Indian languages-based AI tools for smallholders and affordable AI solutions through AgTech partnerships for "at-scale integration and accessibility" rests on the assumption that such tools will help AI reach more small farmers. 3 is valid: India "is starting to deploy AI for critical use cases" such as weather forecasting and pest control, though "penetration is limited". 1 is not: the passage only says generative AI tools have started offering precision farming at scale in the US and Europe; it says nothing about agricultural productivity rising or about economies of scale causing it. Hence 2 and 3 only.
+Q 32 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+India is starting to deploy AI for critical use cases such as weather forecasting, pest detection and control, and crop yield optimisation. However, penetration is limited to a small subset of tech-savvy farmers. In the US and in Europe, generative AI tools have started offering precision farming at scale, integrating large datasets to provide real-time agronomic insights. For at-scale integration and accessibility of AI tools in India, it would be helpful to develop Indian languages-based AI tools for smallholder farmers, partner with AgTechs to create affordable AI solutions, and disseminate AI-based advisory services through government programmes.
+Which of the following statements is/are not correct?
+1. Tech-savvy farmers will drive the AgTech companies of the future.
+2. The development of advisory services by the government programmes for the use of AI tools in agriculture would be helpful.
+3. In the US and Europe, AI tools have replaced traditional agricultural practices.
+4. The integration of large datasets for use in real-time agronomic analysis is already a reality.
+Select the answer using the code given below.
+(1) 1 and 3 only
+(2) 1, 3 and 4
+(3) 2 and 4
+(4) 3 only
+= 1
+~ 1 is not correct: the passage only says AI penetration in India is limited to a small subset of tech-savvy farmers; it says nothing about such farmers driving AgTech companies. 3 is not correct: in the US and Europe AI tools have "started offering precision farming at scale", which is not the same as replacing traditional practices. 2 is correct, since the passage says disseminating AI-based advisory services through government programmes would be helpful. 4 is correct, since generative AI tools in the US and Europe are already integrating large datasets to provide real-time agronomic insights. So the statements not correct are 1 and 3 only.
+Q 33 | lr | Puzzles & Arrangements
+P, Q, R, S and T are ranked 1 to 5 (not necessarily in that order). The rank of P is 4, the rank of Q is not 5, the rank of R is 1, the rank of S is not 2, the rank of T is not 3. Then which of the following is/are correct?
+I. If the rank of S is 3, then that of T is 2.
+II. If the rank of Q is 3, then that of T is 5.
+Select the answer using the code given below.
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 4
+~ R = 1 and P = 4, so Q, S and T share ranks 2, 3 and 5, with Q ≠ 5, S ≠ 2 and T ≠ 3. If Q = 2, then S and T take 3 and 5 with T ≠ 3, so S = 3 and T = 5. If Q = 3, then S ≠ 2 forces S = 5 and T = 2. Only two orders exist: (Q, S, T) = (2, 3, 5) or (3, 5, 2). Statement I: when S = 3, T is 5, not 2, so I is wrong. Statement II: when Q = 3, T is 2, not 5, so II is wrong. Each statement swaps the two cases, hence neither is correct.
+Q 34 | lr | Puzzles & Arrangements
+Two identical straight rods are painted in five distinct colours so that each of them gets divided into five equal parts along the length. In one of them, the portions are marked P1, P2, P3, P4 and P5 (not necessarily in that order) whereas in the other, they are marked Q1, Q2, Q3, Q4 and Q5 (not necessarily in that order). When the rods are kept parallel to each other side by side, P1 and Q3 match, P4 matches Q1 or Q2, and Q4 matches P3 or P5. If Q3 and Q5 are adjacent, which of the following is/are possible?
+I. Q3 is marked at the middle portion of the straight rod.
+II. P2 is marked at one of the extreme portions of the straight rod.
+Select the answer using the code given below.
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Since only possibility is asked, one valid arrangement showing each is enough. Number the portions 1 to 5 from one end. P-rod: P2, P3, P1, P4, P5; Q-rod: Q1, Q5, Q3, Q2, Q4. Check: P1 and Q3 are both at portion 3 (match); P4 is at 4 opposite Q2 (allowed); Q4 is at 5 opposite P5 (allowed); Q3 (3) and Q5 (2) are adjacent. In this arrangement Q3 is at the middle portion, so I is possible, and P2 is at an end portion, so II is also possible. Hence both I and II.
+Q 35 | lr | Puzzles & Arrangements
+Seven persons A, B, C, D, E, F and G travel by three cars X, Y, Z. A and another two of them travel by X. Only E travels with G. C travels by Z, but B does not travel by Y. Besides, A and B do not travel by the same car. Then which of the following are correct?
+I. No one travels alone.
+II. Only D travels with F.
+III. Only C travels with B.
+Select the answer using the code given below.
+(1) I and II only
+(2) I and III only
+(3) II and III only
+(4) All the three
+= 2
+~ B is not in Y and not with A (who is in X), so B is in Z with C. G's only companion is E, so E and G form a car by themselves; X already holds A and Z holds B and C, so E and G are in Y. The remaining two, D and F, join A in X (X must have exactly three). Cars: X = A, D, F; Y = E, G; Z = B, C. I is correct: every car has at least two people. II is wrong: F travels with both A and D. III is correct: B's only companion is C. Hence I and III only.
+Q 36 | lr | Logical Reasoning
+There are four statements X, Y, Z and W. Their relations are as follows :
+If X is incorrect, then so is Z; if Y is incorrect, then W is correct; if W is correct, then X is incorrect.
+Which of the following is/are correct?
+I. If X is correct, then so is Y.
+II. If Z is correct, then it is not necessary that Y is correct.
+Select the answer using the code given below.
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ Use contrapositives. Rule 1 (X incorrect → Z incorrect) gives Z correct → X correct. Rule 2 (Y incorrect → W correct) gives W incorrect → Y correct. Rule 3 (W correct → X incorrect) gives X correct → W incorrect. Statement I: X correct → W incorrect (rule 3) → Y correct (rule 2), so I is true. Statement II: Z correct → X correct (rule 1) → Y correct (as in I), so Y is necessarily correct and II is false. Checking all 16 true/false combinations confirms that every consistent case with X or Z correct has Y correct. Hence I only.
+Q 37 | qa | Arithmetic
+X and Y are two runners who run for the same duration of time on the same circular track. They started running at the same time in the same direction with uniform speeds. When X completed 7 rounds, Y did exactly 5. After completing 5 rounds, Y changed his direction and started running in the opposite direction with speed which is double of his earlier speed. On the other hand, X continued to run with the same speed. They stopped running when X completed exactly 21 rounds. How many times did X and Y meet after they had started and before they finally stopped?
+(1) 35
+(2) 34
+(3) 31
+(4) 29
+= 1
+~ Let T be the time in which X runs 7 rounds and Y runs 5. Phase 1 (0 to T, same direction): X gains 7 − 5 = 2 rounds, so they meet twice, at T/2 and at T (both at the start point when Y turns). Phase 2 (T to 3T, as X needs 2T more for the remaining 14 rounds): X runs 14 rounds and Y, at double speed in the opposite direction, 20 rounds; running towards each other they together cover 14 + 20 = 34 rounds, so they meet 34 times. The 34th of these meetings is at exactly 3T, the instant they stop (both are then at the start point), so it is not "before they finally stopped". Meetings = 2 + 33 = 35. Counting the meeting at the stopping instant would give 36, which is not an option.
+Q 38 | qa | Arithmetic
+In an objective type question paper, 5 marks are awarded for a correct answer and 2 marks are deducted for a wrong answer. A student attempted all the questions and got a score of 69. Had he been awarded 4 marks for a correct answer and 1 mark deducted for a wrong answer, he would have scored 84. How many questions were there in the question paper?
+(1) 99
+(2) 81
+(3) 84
+(4) 79
+= 2
+~ Let c be correct and w wrong answers (all questions attempted). Then 5c − 2w = 69 and 4c − w = 84. From the second, w = 4c − 84; substituting, 5c − 8c + 168 = 69, so 3c = 99 and c = 33. Then w = 132 − 84 = 48, and the paper had c + w = 33 + 48 = 81 questions. Check: 5 × 33 − 2 × 48 = 165 − 96 = 69 and 4 × 33 − 48 = 132 − 48 = 84. Option 84 merely repeats the second score.
+Q 39 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The Juvenile Justice (Care and Protection of Children) Act, or the JJ Act, 2015 allows for the possibility for trying adolescents above 16 as adults if they are accused of committing a heinous offence. A heinous offence is one with a minimum punishment of seven years. Offences such as culpable homicide and causing death by negligence, which are common in drunken driving cases, are not heinous offences because they do not have a prescribed minimum punishment. The JJ Act, amended in 2021, now categorises an offence that has no minimum sentence, but has a maximum sentence of seven years or more as a serious offence which nonetheless, in the opinion of activists, does not merit the transfer of a case to the adult criminal justice system.
+Which of the following conclusions is/are valid?
+1. Only a serious offence as categorised by the revised JJ Act, justifies the transfer of a case to the adult judicial system.
+2. The JJ Act, 2021, categorises an offence as a serious offence based on the maximum sentence it carries, rather than on the minimum sentence.
+Select the answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ Conclusion 1 is invalid: the passage links trial as an adult to a heinous offence (minimum punishment of seven years), while a serious offence, in the activists' opinion, "does not merit the transfer of a case to the adult criminal justice system". So saying that only a serious offence justifies transfer reverses the passage. Conclusion 2 is valid: under the 2021 amendment an offence with no minimum sentence but a maximum of seven years or more is a serious offence, so the categorisation turns on the maximum sentence, not the minimum. Hence 2 only.
+Q 40 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The Juvenile Justice (Care and Protection of Children) Act, or the JJ Act, 2015 allows for the possibility for trying adolescents above 16 as adults if they are accused of committing a heinous offence. A heinous offence is one with a minimum punishment of seven years. Offences such as culpable homicide and causing death by negligence, which are common in drunken driving cases, are not heinous offences because they do not have a prescribed minimum punishment. The JJ Act, amended in 2021, now categorises an offence that has no minimum sentence, but has a maximum sentence of seven years or more as a serious offence which nonetheless, in the opinion of activists, does not merit the transfer of a case to the adult criminal justice system.
+Which of the following statements is/are correct?
+1. If an offence has no minimum prescribed punishment, it cannot be considered heinous as per the JJ Act, 2015.
+2. As per the JJ Act, 2021, an offence for which there is a provision for a maximum sentence of seven years or more, but no minimum sentence, is to be considered a serious offence.
+Select the answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Statement 1 is correct: the passage defines a heinous offence as one with a minimum punishment of seven years, and says culpable homicide and causing death by negligence are not heinous "because they do not have a prescribed minimum punishment". Statement 2 is correct: it restates the passage, which says the JJ Act as amended in 2021 categorises an offence with no minimum sentence but a maximum sentence of seven years or more as a serious offence. Both statements follow directly from the passage, so the answer is both 1 and 2.
+
+Q 41 | qa | Arithmetic
+An explosion takes place at a certain distance from an army camp. As soon as the sensor in the camp receives the sound of the explosion, a drone starts flying towards the spot of explosion. The drone clicks a picture from the spot and the camp receives it at the same time. Immediately another drone starts flying to the spot and it also sends a picture as soon as it reaches the spot. The two pictures were received at 5:02 PM and 5:05 PM, respectively. If the speed of the drones is 30 m/s, at what time did the explosion take place? Assume that the speed of sound is 300 m/s.
+(1) 4:59:00 PM
+(2) 4:59:02 PM
+(3) 4:58:42 PM
+(4) 4:56:32 PM
+= 3
+~ Let the distance be d metres. The first drone's picture arrives at 5:02 PM; the second drone leaves at that moment and its picture arrives at 5:05 PM, so one drone flight takes 3 min = 180 s and d = 30 × 180 = 5400 m. The first drone therefore left at 5:02:00 − 180 s = 4:59:00 PM, which is when the sound reached the sensor. Sound needs 5400 ÷ 300 = 18 s to cover the distance, so the explosion occurred at 4:59:00 − 18 s = 4:58:42 PM. Option (a) 4:59:00 PM is the moment the sensor heard the blast, not the moment of the explosion. Check: 4:58:42 + 18 s + 180 s = 5:02:00 PM, and + 180 s more = 5:05:00 PM.
+Q 42 | qa | Number System
+The digit in the unit place of the number 6¹²⁹ × 7³⁰⁷ is
+(1) 2
+(2) 4
+(3) 8
+(4) 6
+= 3
+~ Every power of 6 ends in 6, so 6¹²⁹ ends in 6. The unit digits of powers of 7 repeat in the cycle 7, 9, 3, 1 (period 4); since 307 = 4 × 76 + 3, 7³⁰⁷ ends in the same digit as 7³ = 343, i.e. 3. The product therefore ends in the unit digit of 6 × 3 = 18, which is 8. Option (d) 6 comes from ignoring the factor 7³⁰⁷, and options (a) and (b) come from taking the wrong position in the cycle of 7 (for example 6 × 7 = 42 or 6 × 9 = 54).
+Q 43 | qa | Arithmetic
+A person saves 10% of his salary every month. If his salary increases by 12% and the expenditure increases by 10%, then what will be the change in his saving per month?
+(1) 20% increase
+(2) 30% increase
+(3) 03% decrease
+(4) 02% decrease
+= 2
+~ Take the monthly salary as 100. Then saving = 10 and expenditure = 90. After the change, salary = 112 and expenditure = 90 × 1.10 = 99, so the new saving = 112 − 99 = 13. The saving rises from 10 to 13, an increase of 3/10 × 100 = 30%. The "decrease" options are impossible because the salary (the larger amount) grows faster than the expenditure. Quick check: the saving is now 13/112 ≈ 11.6% of salary, more than the earlier 10%, consistent with a rise in saving.
+Q 44 | lr | Analytical Reasoning
+P has a son and a daughter. S is the mother of T. S is R’s spouse. Q and R are children of P. Then how is Q related to S?
+(1) Q is a sister of S
+(2) Q is a daughter of S
+(3) Q is the mother of S
+(4) Q is a sister of the husband of S
+= 4
+~ S is the mother of T, so S is female; S is R's spouse, so R is male. Q and R are children of P, and P has exactly one son and one daughter, so R is P's son and Q is P's daughter. Hence Q is R's sister, and R is the husband of S: Q is a sister of the husband of S (S's sister-in-law). Q cannot be S's sister, daughter or mother, because Q is connected to S only through her brother R.
+Q 45 | qa | Number System
+How many three-digit numbers can be expressed as an integral power of 2?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 3
+~ Three-digit numbers run from 100 to 999. The powers of 2 near this range are 2⁶ = 64 (two digits), 2⁷ = 128, 2⁸ = 256, 2⁹ = 512 and 2¹⁰ = 1024 (four digits). So only 128, 256 and 512 are three-digit powers of 2, i.e. three numbers. Option (d) 4 would wrongly include 64 or 1024.
+Q 46 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The key source of the battle for clean skies and clear lungs is the fuel we burn—from household Chulhas to the thermal power plants. In most cases, it is biomass or coal. The Supreme Court banned the use of pet coke—the dirtiest of such fuels. The Delhi Government banned the use of coal, which was later extended to the entire National Capital Region. It was also agreed that the thermal power plants would clean up or shut down. Action on this has been patchy to say the least. The lesson from the transition to CNG is that people need alternatives for a ban to be effective. When diesel buses were stopped, CNG supply had to be assured. It also had to be feasible in terms of cost. The Supreme Court agreed that fiscal measures were needed to keep clean fuel cheaper than dirty fuel. Now even as coal is banned, the price of natural gas makes industry uncompetitive.
+Which of the following inferences is/are correct?
+1. The source of the energy we consume is the key to the battle for cleaner air.
+2. Bans are effective where the will is strong and the people are convinced that such bans are for the greater good of society.
+3. There is judicial approval for a policy that intervenes fiscally to facilitate benevolent pricing for cleaner fuel.
+Select the answer using the code given below.
+(1) 1 and 2
+(2) 2 and 3
+(3) 1 and 3
+(4) 1 only
+= 3
+~ Inference 1 is correct: the passage opens by saying that the key source of the battle for clean skies and clear lungs is the fuel we burn, i.e. the source of the energy we consume. Inference 3 is correct: the Supreme Court agreed that fiscal measures were needed to keep clean fuel cheaper than dirty fuel, which is judicial approval for fiscal intervention to price cleaner fuel favourably. Inference 2 is not supported: the lesson the passage draws from the CNG transition is that a ban works when people have alternatives that are available and affordable; it says nothing about strong will or people being convinced that bans serve the greater good. Hence 1 and 3.
+Q 47 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The key source of the battle for clean skies and clear lungs is the fuel we burn—from household Chulhas to the thermal power plants. In most cases, it is biomass or coal. The Supreme Court banned the use of pet coke—the dirtiest of such fuels. The Delhi Government banned the use of coal, which was later extended to the entire National Capital Region. It was also agreed that the thermal power plants would clean up or shut down. Action on this has been patchy to say the least. The lesson from the transition to CNG is that people need alternatives for a ban to be effective. When diesel buses were stopped, CNG supply had to be assured. It also had to be feasible in terms of cost. The Supreme Court agreed that fiscal measures were needed to keep clean fuel cheaper than dirty fuel. Now even as coal is banned, the price of natural gas makes industry uncompetitive.
+Which of the following statements is/are correct?
+1. Thermal power stations in Delhi were required to summarily shut down.
+2. CNG supplies had to be assured once diesel vehicles were prohibited from plying.
+3. The Supreme Court banned the use of coal across the National Capital Region.
+Select the answer using the code given below.
+(1) 1 and 2
+(2) 3 only
+(3) 2 only
+(4) 2 and 3
+= 3
+~ Only statement 2 is correct: the passage says that when diesel buses were stopped, CNG supply had to be assured (and at a feasible cost). Statement 1 is wrong because it was only agreed that thermal power plants would "clean up or shut down", and action on this has been patchy; there was no requirement that they shut down summarily. Statement 3 is wrong because the ban on coal was imposed by the Delhi Government and later extended to the whole National Capital Region; the Supreme Court's ban mentioned in the passage was on pet coke. Hence 2 only.
+Q 48 | lr | Logical Reasoning
+Consider the following statements:
+Every red is blue. Every blue is green. Every green is yellow.
+Which of the following statements denoted by P, Q and R are correct?
+P. Every blue is yellow.
+Q. Every red is green.
+R. Every red is yellow.
+Select the answer using the code given below.
+(1) P and Q only
+(2) Q and R only
+(3) P and R only
+(4) P, Q and R
+= 4
+~ The three statements form a chain of inclusions: red ⊂ blue ⊂ green ⊂ yellow. Since every blue is green and every green is yellow, every blue is yellow (P). Since every red is blue and every blue is green, every red is green (Q). Following the whole chain, every red is blue, hence green, hence yellow (R). A universal statement "Every A is B" is transitive, so all three conclusions follow with certainty, and the options leaving out any one of P, Q or R are incomplete. Hence P, Q and R.
+Q 49 | qa | Number System
+How many times does 5 appear in all two-digit positive integers?
+(1) 18
+(2) 19
+(3) 20
+(4) 21
+= 2
+~ Two-digit positive integers are 10 to 99. The digit 5 appears in the units place in 15, 25, 35, 45, 55, 65, 75, 85, 95, i.e. 9 times, and in the tens place in 50 to 59, i.e. 10 times. Total = 9 + 10 = 19; the number 55 contributes two appearances, one in each count. Option (a) 18 counts 55 only once, while (c) 20 wrongly adds the one-digit number 5 (or 05). Counting directly over 10 to 99 also gives 19.
+Q 50 | qa | Arithmetic
+X travels 6 km on a bicycle with average speeds of 5 km per hour, 10 km per hour and 4 km per hour during the first 1 km, the next 2 km and the remaining 3 km, respectively. Y travels the same distances with average speeds of 4 km per hour, 10 km per hour and 5 km per hour, respectively. How many minutes early will Y complete the journey if both X and Y start at the same time?
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 4
+~ Time = distance ÷ speed. X: 1/5 + 2/10 + 3/4 = 0.2 + 0.2 + 0.75 = 1.15 h = 69 min. Y: 1/4 + 2/10 + 3/5 = 0.25 + 0.2 + 0.6 = 1.05 h = 63 min. Y finishes 69 − 63 = 6 minutes earlier. Check segment by segment: on the first 1 km Y is slower (15 min against 12 min, losing 3 min), the middle 2 km take 12 min for both, and on the last 3 km Y is faster (36 min against 45 min, gaining 9 min); net gain = 9 − 3 = 6 min. Option (a) 3 is just the loss on the first segment.
+Q 51 | lr | Puzzles & Arrangements
+Seven cubes are identical in shape. Out of these, the weight of each of the six cubes is equal and the weight of the remaining cube is less than the weight of any other cube. A balance is used to identify the lightest cube. What is the minimum number of attempts required to distinguish the odd cube with certainty?
+(1) 2
+(2) 3
+(3) 4
+(4) 1
+= 1
+~ Split the seven cubes into groups of 3, 3 and 1. First weighing: 3 against 3. If the pans balance, the single cube left out is the light one. If one pan rises, the light cube is among those 3; second weighing: put one of them against another — the lighter pan shows it, or if they balance the third cube is the odd one. So 2 weighings always suffice. One weighing cannot guarantee the answer, because a balance has only three outcomes (left lighter, right lighter, equal) and 7 possibilities exceed 3; two weighings give 3² = 9 ≥ 7 outcomes. Hence the minimum is 2.
+Q 52 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Previous waves of customer-service technology, including email and those pesky voice menus, stoked concerns of job losses, only for them to fail to materialise. AI could yet prove different. And if it does, its effects may be salutary. Human agents could be freed up to spend more time on creative and rewarding tasks, like using feedback to make products and services better—and thereby spend less time listening to irate customers!
+Which one among the following statements most appropriately reflects the point of view of the given passage?
+(1) If AI were to take over customer service, there would be no work left for human subjects to do.
+(2) Irritating voice menus and email could not achieve human redundancy to the extent that AI might.
+(3) The value of human intervention in the workplace affected by AI might be enhanced through redirection towards more fulfilling tasks.
+(4) Unlike previous waves in customer-service technology, AI has raised the alarm of worker replacement.
+= 3
+~ The passage's point is that even if AI does displace some customer-service work, its effects may be "salutary": human agents could be freed to spend time on creative and rewarding tasks, such as using feedback to improve products, instead of listening to irate customers. Option (c) captures this: human work in AI-affected workplaces may gain value by being redirected to more fulfilling tasks. Option (a) contradicts the passage, which expects humans to do better work, not no work. Option (b) is only a side remark ("AI could yet prove different") and misses the author's main point. Option (d) is wrong because earlier waves such as email and voice menus also stoked fears of job losses.
+Q 53 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Previous waves of customer-service technology, including email and those pesky voice menus, stoked concerns of job losses, only for them to fail to materialise. AI could yet prove different. And if it does, its effects may be salutary. Human agents could be freed up to spend more time on creative and rewarding tasks, like using feedback to make products and services better—and thereby spend less time listening to irate customers!
+Which of the following conclusions, made on the basis of the given passage, is/are correct?
+1. The advent of new customer-service technology had invariably sparked fears about job losses.
+2. Often it is found that instead of job losses, alternative channels for employee engagement are discovered while certain tasks are replaced by technology.
+3. The advent of technology inevitably leads to stressful outcomes.
+Select the answer using the code given below.
+(1) 1 and 3
+(2) 2 only
+(3) 3 only
+(4) 1 and 2
+= 4
+~ Conclusion 1 is accepted: the passage says the previous waves of customer-service technology, such as email and voice menus, stoked concerns of job losses, i.e. each new wave has raised such fears. Conclusion 2 is accepted: those feared job losses failed to materialise, and the passage expects that when technology takes over some tasks, workers can be freed for creative and rewarding work such as using customer feedback to improve products, i.e. other avenues of engagement. Conclusion 3 is wrong: the author calls the likely effects "salutary" and even says agents would spend less time listening to irate customers, the opposite of inevitably stressful outcomes. Since 1 is directly supported and 3 is contradicted, (d) is the only option that fits. Hence 1 and 2.
+Q 54 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Cattle from the nearby villages came to the common ground to graze, and there was still a cool freshness in the air. Hori took several deep breaths and thought of sitting down for a while, since he’d be dying of heat in the scorching ‘loo’ wind the rest of the day. A number of farmers were eager to lease this bit of land and had offered a good price, but Rai Sahib—God bless him—had plainly told them it was reserved for grazing and would not be relinquished for any price. If he’d been one of those selfish Zamindars, he’d have said the cattle could go to hell, that there was no reason for him to miss the chance to make a little money. But the Rai Sahib still held to the old values, feeling that any landlord who didn’t look after his tenants was less than human.
+Which of the following conclusions is/are correct?
+1. All landlords essentially have some goodness trapped within them.
+2. The common grazing grounds of a village are intended for use by the cattle of that village.
+3. Landlords who believe in tradition tend to be more concerned about their tenants.
+4. Winds later in the day tend to be cooler post the hot winds of the morning.
+Select the answer using the code given below.
+(1) 1 and 3
+(2) 2 and 4
+(3) 3 only
+(4) 2 only
+= 3
+~ Conclusion 3 is correct: the passage says Rai Sahib "still held to the old values", and it is these values that make him feel that any landlord who did not look after his tenants was less than human, in contrast to the selfish Zamindars; adherence to tradition is thus linked with concern for tenants. Conclusion 1 is wrong: the passage itself speaks of selfish Zamindars who would let the cattle "go to hell" for a little money. Conclusion 2 is wrong: the common ground is used by cattle "from the nearby villages", not reserved for the cattle of one village. Conclusion 4 is wrong: the morning air still had a cool freshness, and Hori expected to be dying of heat in the scorching 'loo' for the rest of the day, so the later winds are hotter, not cooler. Hence 3 only.
+Q 55 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Cattle from the nearby villages came to the common ground to graze, and there was still a cool freshness in the air. Hori took several deep breaths and thought of sitting down for a while, since he’d be dying of heat in the scorching ‘loo’ wind the rest of the day. A number of farmers were eager to lease this bit of land and had offered a good price, but Rai Sahib—God bless him—had plainly told them it was reserved for grazing and would not be relinquished for any price. If he’d been one of those selfish Zamindars, he’d have said the cattle could go to hell, that there was no reason for him to miss the chance to make a little money. But the Rai Sahib still held to the old values, feeling that any landlord who didn’t look after his tenants was less than human.
+Which of the following statements are not correct?
+1. The landholdings of Rai Sahib were currently not being used for farming.
+2. Temperamentally, Rai Sahib was as greedy as other landlords.
+3. It cannot be ascertained that Rai Sahib could have made some money by leasing out the grazing land.
+4. It may be asserted that Rai Sahib valued his tenants and wanted to protect their livelihood.
+Select the answer using the code given below.
+(1) 1 and 2 only
+(2) 1 and 3 only
+(3) 3 and 4
+(4) 1, 2 and 3
+= 4
+~ Statement 1 is not correct: the passage speaks only of "this bit of land" reserved for grazing; nothing says Rai Sahib's landholdings as a whole were not being farmed. Statement 2 is not correct: he is contrasted with "selfish Zamindars" and refused to lease the land at any price, so he was not as greedy as others. Statement 3 is not correct: farmers "had offered a good price", so it is clear he could have made money by leasing the land. Statement 4 is correct: he held to the old values and felt that any landlord who did not look after his tenants was less than human, and he kept the land for grazing. So the statements that are not correct are 1, 2 and 3.
+Q 56 | lr | Directions, Clocks & Calendars
+A person facing the East travels 4 km straight and then turns right and travels 3 km, then further turns left and travels 2 km and finally turns left and travels 3 km. The minimum distance between the final point and the initial point, and the direction in which the person is facing at the final point are, respectively
+(1) 12 km, East
+(2) 6 km, East
+(3) 8 km, North
+(4) 6 km, North
+= 4
+~ Take the start as (0, 0) facing East. 4 km East → (4, 0). Turn right → facing South, 3 km → (4, −3). Turn left → facing East, 2 km → (6, −3). Turn left → facing North, 3 km → (6, 0). The final point is 6 km due East of the start, so the minimum distance is 6 km, and after the last left turn the person is facing North. Option (a) 12 km is the total distance walked (4 + 3 + 2 + 3), and option (b) gives the direction of the final point from the start rather than the direction the person faces.
+Q 57 | lr | Series & Patterns
+In a sequence of numbers, each number other than the first two is the sum of the two immediately preceding numbers from it. If the first two numbers in the sequence are 4 and 7, then the sixth number is
+(1) 29
+(2) 37
+(3) 43
+(4) 47
+= 4
+~ Each term after the second is the sum of the two terms just before it: 4, 7, then 4 + 7 = 11, 7 + 11 = 18, 11 + 18 = 29 and 18 + 29 = 47. So the sequence is 4, 7, 11, 18, 29, 47 and the sixth number is 47. Option (a) 29 is the fifth term, a common slip when counting positions; 37 and 43 do not occur in the sequence.
+Q 58 | qa | Arithmetic
+The ratio of male to female workers in two companies A and B is 13 : 10 and 7 : 5, respectively. If both the companies have the same number of female workers, then what is the ratio of the total number of workers in A to those in B?
+(1) 24 : 23
+(2) 23 : 24
+(3) 18 : 17
+(4) 27 : 18
+= 2
+~ Make the female shares equal using LCM(10, 5) = 10. Company A: male : female = 13 : 10, so total = 23 parts. Company B: 7 : 5 = 14 : 10, so total = 24 parts on the same female base. Ratio of total workers A : B = 23 : 24. Check with 10 women in each company: A has 13 + 10 = 23 workers and B has 14 + 10 = 24 workers. Option (a) 24 : 23 is the same ratio reversed.
+Q 59 | qa | Number System
+If the product of the HCF and LCM of two distinct numbers is the cube of one of the numbers, then which of the following statements is/are correct?
+I. The difference of the numbers is an even number.
+II. One of the numbers is a perfect square.
+Select the answer using the code given below.
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ For any two numbers a and b, HCF × LCM = a × b. If this product equals a³, then b = a², so the two numbers are a and a² (with a > 1, since they are distinct). Statement I: a² − a = a(a − 1) is a product of two consecutive integers, so it is always even — correct. Statement II: a² is a perfect square — correct. Example: 3 and 9 have HCF 3 and LCM 9; 3 × 9 = 27 = 3³, the difference 6 is even and 9 is a perfect square. A brute-force check over all pairs below 400 finds no exception. Hence both I and II.
+Q 60 | qa | Number System
+If x and y are two digits and the number 4x5y790 is divisible by 11, then what is the remainder, if x + y is divided by 11?
+(1) 1
+(2) 3
+(3) 5
+(4) 7
+= 4
+~ A number is divisible by 11 if the difference between the sums of its digits in alternate places is 0 or a multiple of 11. For 4x5y790, the digits in odd places from the right are 0, 7, 5, 4 (sum 16) and those in even places are 9, y, x (sum 9 + x + y). So 16 − (9 + x + y) = 7 − (x + y) must be a multiple of 11, giving x + y = 7 or x + y = 18 (x = y = 9). In both cases x + y leaves remainder 7 when divided by 11 (18 = 11 + 7). Check: 4057790 = 11 × 368890 and 4959790 = 11 × 450890.
+
+Q 61 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Was it the sun-dappled ambience, the strawberries and cream, the frustration of Flavio Cobolli’s unforced errors against Serbian Novak Djokovic on Centre Court or simply the crushing weight of being a 64-year-old man in the third act of a very public life? Whatever the reason, Hugh Grant, the actor, deserves empathy. There he was, in the Royal Box at Wimbledon, flanked by Britain’s well-dressed and well-rested spectators, watching the men’s singles quarterfinals, when the actor did something quietly radical : head at a tilt, eyes closed, utterly unbothered, he took a nap. So praise be to Grant for serving up an unexpected ace. In that small, delicious moment, he didn’t merely catch forty winks, he made an elegant case for surrender. Not to laziness, but to limits. To the body’s quiet wisdom over society’s relentless performance metrics. Wimbledon had its tennis. The perpetually sleep-deprived discovered a leading man, not of action, but of rest.
+Which of the following statements is/are correct?
+1. Radical action can also be attributed to mild surrender where one acts against societal expectations.
+2. Submitting to one’s limitations, given the effect of age and other factors, ought not to be conflated with laziness.
+3. ‘Leading man’ usually refers to one who plays the lead role in a movie; in this instance the implication is that Hugh Grant is performing the role of not an action hero, but that of a resting one!
+Select the answer using the code given below.
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1, 2 and 3
+(4) 3 only
+= 3
+~ All three statements are supported. Statement 1: the passage calls Grant’s nap “something quietly radical” and “an elegant case for surrender” to the body’s limits over “society’s relentless performance metrics”, so a mild surrender that defies social expectations is presented as radical. Statement 2: the passage points to the “crushing weight” of being 64 and stresses that the surrender was “Not to laziness, but to limits”, i.e., yielding to one’s limits must not be confused with laziness. Statement 3: “a leading man, not of action, but of rest” plays on the film term ‘leading man’; Grant, an actor, is cast as a hero of rest rather than an action hero. Since 1, 2 and 3 are all correct, the answer is option (c).
+
+Q 62 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Was it the sun-dappled ambience, the strawberries and cream, the frustration of Flavio Cobolli’s unforced errors against Serbian Novak Djokovic on Centre Court or simply the crushing weight of being a 64-year-old man in the third act of a very public life? Whatever the reason, Hugh Grant, the actor, deserves empathy. There he was, in the Royal Box at Wimbledon, flanked by Britain’s well-dressed and well-rested spectators, watching the men’s singles quarterfinals, when the actor did something quietly radical : head at a tilt, eyes closed, utterly unbothered, he took a nap. So praise be to Grant for serving up an unexpected ace. In that small, delicious moment, he didn’t merely catch forty winks, he made an elegant case for surrender. Not to laziness, but to limits. To the body’s quiet wisdom over society’s relentless performance metrics. Wimbledon had its tennis. The perpetually sleep-deprived discovered a leading man, not of action, but of rest.
+Which of the following statements is/are correct?
+1. Hugh Grant was watching, from the Royal Box, the men’s semifinal match on Centre Court between Flavio Cobolli and Novak Djokovic.
+2. The phrase ‘unexpected ace’ in the context uses a term from the game of tennis to highlight Hugh Grant’s somewhat uncharacteristic act of catching ‘forty winks’; an act that is viewed with opprobrium.
+3. Grant subjects the demands of society to the wisdom of his body.
+Select the answer using the code given below.
+(1) 1 and 2
+(2) 3 only
+(3) 2 and 3
+(4) 2 only
+= 2
+~ Only statement 3 is correct. Statement 1 is wrong: the passage says Grant was watching the men’s singles quarterfinals (Cobolli against Djokovic on Centre Court), not a semifinal. Statement 2 is wrong in its second half: ‘unexpected ace’ does borrow a tennis term, but the passage praises the nap (“praise be to Grant”, “delicious moment”, “an elegant case for surrender”), so the act is not presented as one viewed with opprobrium (disgrace). Statement 3 restates “To the body’s quiet wisdom over society’s relentless performance metrics”: Grant placed society’s demands below the wisdom of his body. Hence 3 only, option (b).
+
+Q 63 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The process by which countries close their labour-productivity gap with the technology leader is based on convergence theory. The convergence model divides economic eras into three phases : the breakaway, the catch-up, and the fine-tuning phase. It also divides economic entities into two categories : the technology leaders and the technology followers. The process begins with the development of a new technology, such as scavenging three million years ago (MYA), hunting—one MYA, farming—12 thousand years ago, and industrial technology—a little more than 200 years ago. During the breakaway phase, the per capita income of the technology leaders (e.g., Western Europe and North America in the industrial era) rises, but is unchanged for the technology followers. In the catch-up phase, the followers adopt the new technology and close their per capita income gap with the technology leaders. In the fine-tuning phase, where participants try to extract the remaining benefits from an increasingly exhausted technology, leaders and followers have similar per capita incomes.
+Which of the following conclusions are correct?
+1. In the breakaway phase, economic progress is slow for the technology followers.
+2. In the catch-up phase, leaders stagnate and followers, therefore, close the gap between them and the leaders.
+3. In the fine-tuning phase, technology is exhausted, as it were, and both leaders and followers attempt to extract leftover benefits, leading to more or less similar per capita income levels.
+4. Industrial technology followed scavenging, which preceded hunting, which itself was followed by farming.
+Select the answer using the code given below.
+(1) 3 and 4 only
+(2) 1, 2, 3 and 4
+(3) 1 and 2 only
+(4) 2, 3 and 4 only
+= 1
+~ Statement 3 paraphrases the last sentence: in the fine-tuning phase participants extract the remaining benefits from an “increasingly exhausted technology” and leaders and followers have similar per capita incomes. Statement 4 matches the chronology given: scavenging (3 MYA), hunting (1 MYA), farming (12,000 years ago), industrial technology (200+ years ago); so industrial technology came after scavenging, scavenging preceded hunting, and hunting was followed by farming. Statement 1 is not supported: in the breakaway phase the followers’ per capita income is “unchanged”, i.e., there is no progress, not slow progress. Statement 2 is wrong: followers close the gap because they adopt the new technology; the passage nowhere says leaders stagnate. Hence 3 and 4 only, option (a).
+
+Q 64 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The process by which countries close their labour-productivity gap with the technology leader is based on convergence theory. The convergence model divides economic eras into three phases : the breakaway, the catch-up, and the fine-tuning phase. It also divides economic entities into two categories : the technology leaders and the technology followers. The process begins with the development of a new technology, such as scavenging three million years ago (MYA), hunting—one MYA, farming—12 thousand years ago, and industrial technology—a little more than 200 years ago. During the breakaway phase, the per capita income of the technology leaders (e.g., Western Europe and North America in the industrial era) rises, but is unchanged for the technology followers. In the catch-up phase, the followers adopt the new technology and close their per capita income gap with the technology leaders. In the fine-tuning phase, where participants try to extract the remaining benefits from an increasingly exhausted technology, leaders and followers have similar per capita incomes.
+Which of the following statements is/are correct?
+1. The convergence model divides nations into three phases of economic progress.
+2. At the heart of the convergence theory is the closing of the gap between labour and productivity.
+3. Technology leaders typically have arrived earlier at different economic eras.
+4. The time period covered by the convergence theory presented herein encompasses, as mentioned, 4012200 years.
+Select the answer using the code given below.
+(1) 2 and 4
+(2) 2 and 3
+(3) 3 only
+(4) 1, 3 and 4
+= 2
+~ Statement 1 is incorrect: the model divides economic eras, not nations, into three phases; nations (economic entities) are divided into two categories, leaders and followers. Statement 2 is taken as correct: the passage opens by saying convergence theory explains how countries close their labour-productivity gap with the technology leader, so closing that gap is the core of the theory (the wording “between labour and productivity” is at best a loose paraphrase; read strictly it misstates the passage and would leave 3 only). Statement 3 follows because leaders adopt each new technology first and their incomes rise in the breakaway phase while followers catch up later. Statement 4 is wrong: 3,000,000 + 1,000,000 + 12,000 + 200 = 4,012,200 merely adds overlapping “years ago” dates; the span described is about three million years. Hence 2 and 3, option (b). (Provisional key; some sources differ.)
+
+Q 65 | qa | Arithmetic
+An alloy P contains 20% copper and 80% zinc by weight. Another alloy Q contains 60% copper and 40% zinc by weight. A third alloy R is to be prepared from P and Q so that it contains equal amount of copper and zinc. In what ratio, amounts of P and Q be mixed in order to get R?
+(1) 1 : 3
+(2) 3 : 1
+(3) 2 : 3
+(4) 3 : 2
+= 1
+~ Alloy R must be 50% copper. By alligation, P has 20% copper and Q has 60%, so P : Q = (60 − 50) : (50 − 20) = 10 : 30 = 1 : 3. Check: 1 kg of P and 3 kg of Q give copper 0.2 + 1.8 = 2 kg and zinc 0.8 + 1.2 = 2 kg, so copper equals zinc. The other ratios fail: 3 : 1 gives 30% copper, 2 : 3 gives 44% and 3 : 2 gives 36%. Hence 1 : 3, option (a).
+
+Q 66 | qa | Number System
+A is a 2-digit number with different digits. B is also a 2-digit number and is obtained by reversing the digits of A. If A − B is a multiple of 27, where A > B, how many such different A’s are possible?
+(1) 6
+(2) 9
+(3) 12
+(4) 18
+= 2
+~ Let A = 10a + b and B = 10b + a with a ≠ b; since B is also a 2-digit number, b ≠ 0. A − B = 9(a − b), which is a multiple of 27 only when a − b is a multiple of 3. With A > B, a − b = 3 or 6 (9 is impossible because b ≥ 1). a − b = 3 gives 41, 52, 63, 74, 85, 96 (six numbers); a − b = 6 gives 71, 82, 93 (three numbers). Total = 9. Check: 93 − 39 = 54 = 2 × 27 and 74 − 47 = 27. Hence option (b).
+
+Q 67 | lr | Series & Patterns
+If ZERO is encoded as ADSN, then how do you encode STOP?
+(1) SPOT
+(2) TSPO
+(3) TSOP
+(4) POST
+= 2
+~ Compare ZERO with ADSN letter by letter: Z → A (next letter, wrapping round the alphabet), E → D (previous letter), R → S (next), O → N (previous). The rule is alternately +1 and −1. Applying it to STOP: S + 1 = T, T − 1 = S, O + 1 = P, P − 1 = O, giving TSPO. SPOT, TSOP and POST are rearrangements of the original letters that do not follow the +1, −1, +1, −1 pattern. Hence option (b).
+
+Q 68 | qa | Algebra
+There are three types of rectangular tiles : 3′ × 3′, 3′ × 7′ and 3′ × 11′. An area of rectangular shape of dimensions 3′ × 100′ is to be covered using these tiles without breaking them. If x and y are the maximum and minimum numbers of tiles of various sizes, respectively, that can be used to cover the area exactly, then x − y is
+(1) 20
+(2) 12
+(3) 10
+(4) 7
+= 1
+~ The strip is 3′ wide, so each tile spans the full width and only lengths matter: 3a + 7b + 11c = 100 in non-negative integers. Maximum tiles: use as many 3′ tiles as possible; 100 = 3 × 31 + 7 × 1, so x = 31 + 1 = 32 (100 is not a multiple of 3, so at least one longer tile is needed). Minimum tiles: use long tiles; 11 × 4 + 7 × 8 = 100 and 11 × 8 + 3 × 4 = 100 both use 12 tiles, and enumeration shows no solution with fewer (for example 11 × 9 = 99 leaves 1′). So y = 12 and x − y = 32 − 12 = 20. (Requiring all three sizes would give 28 − 12 = 16, not an option.) Hence option (a).
+
+Q 69 | qa | Arithmetic
+A train has to complete a journey of 800 km. If it meets a minor accident, its speed becomes half of the existing speed. If there is a mechanical defect, the speed becomes one-fourth of the existing speed. On its way, the train meets with a minor accident after 200 km; and 400 km thereafter, it develops a mechanical defect. Had the train developed the mechanical defect after 200 km and met the minor accident 400 km thereafter, it would have taken 4 more hours to reach its destination. What was the original speed of the train in km per hour?
+(1) 200
+(2) 190
+(3) 150
+(4) 100
+= 1
+~ Let the original speed be v km/h. Actual journey: 200 km at v, 400 km at v/2 after the accident, and the last 200 km at one-fourth of that, v/8. Time = 200/v + 800/v + 1600/v = 2600/v. Alternative: 200 km at v, 400 km at v/4 after the defect, and the last 200 km at half of that, v/8. Time = 200/v + 1600/v + 1600/v = 3400/v. The difference 800/v = 4, so v = 200 km/h. Check: the two journeys take 13 h and 17 h, a difference of 4 hours. Hence option (a).
+
+Q 70 | qa | Data Interpretation & Sufficiency
+In a recruitment process, the selection of candidates is based on their performance in three components. The weightages of the components 1, 2 and 3 are 0·2, 0·3 and 0·5, respectively. Use the data given below and find the cutoff score if exactly three candidates are to be selected :
+Candidate | Score in component 1 | Score in component 2 | Score in component 3
+1 | 5 | 4 | 6
+2 | 4 | 6 | 5
+3 | 3 | 2 | 8
+4 | 9 | 4 | 3
+5 | 8 | 8 | 2
+(1) 5·1
+(2) 5·2
+(3) 5·3
+(4) 5·4
+= 1
+~ Weighted score = 0.2 × C1 + 0.3 × C2 + 0.5 × C3. Candidate 1: 1.0 + 1.2 + 3.0 = 5.2; candidate 2: 0.8 + 1.8 + 2.5 = 5.1; candidate 3: 0.6 + 0.6 + 4.0 = 5.2; candidate 4: 1.8 + 1.2 + 1.5 = 4.5; candidate 5: 1.6 + 2.4 + 1.0 = 5.0. In descending order: 5.2, 5.2, 5.1, 5.0, 4.5. To select exactly three candidates (1, 3 and 2) the cutoff must be 5.1: a cutoff of 5.2 selects only two, while 5.3 or 5.4 selects none, and anything at or below 5.0 admits a fourth. Hence option (a).
+
+Q 71 | lr | Logical Reasoning
+Consider the following three statements, namely S1, S2 and S3 :
+S1. Protecting the environment is an existential exigency for humans, given the impact of environmental degradation on climate change.
+S2. Scientific consensus has not been achieved with regard to the extent of the contribution of human intervention to climate change.
+S3. Environmental activism includes climate alarmism and other extremist points of view that often become the focus of climate change deniers.
+Which of the following relationships based on the statements given above is/are correct?
+1. S3 is a counterpoint to S1
+2. S3 is unconnected to S1 and S2
+3. S2 could be the reason for S3
+Select the answer using the code given below.
+(1) 2 and 3 only
+(2) 1, 2 and 3
+(3) 1 and 2 only
+(4) 3 only
+= 4
+~ S1 asserts that protecting the environment is an urgent necessity; S3 describes a tendency within environmental activism (alarmism and extremist views) that climate change deniers seize upon. S3 does not argue against S1: it comments on a style of advocacy, not on the need for protection, so relationship 1 fails. All three statements belong to the same climate-change debate, so S3 is not unconnected to S1 and S2 (relationship 2 fails). S2 says there is no scientific consensus on how much humans contribute to climate change; such uncertainty can push some activists to overstate the danger and gives deniers a target, so S2 could be a reason for S3. Hence 3 only, option (d).
+
+Q 72 | lr | Analytical Reasoning
+Match List-I with List-II and select the answer using the code given below the Lists :
+List-I (Relationship category)
+A. Between cricket captain and team members
+B. Between judge and lawyers in court
+C. Between Vice Chancellor and Deputy Registrar
+D. Between peers and coworkers
+List-II (Communication type)
+1. Informal and firm
+2. Informal and open-ended
+3. Formal and open-ended
+4. Formal and firm
+(1) A-1, B-3, C-4, D-2
+(2) A-1, B-4, C-3, D-2
+(3) A-2, B-4, C-3, D-1
+(4) A-2, B-3, C-4, D-1
+= 2
+~ A cricket captain talks to team members informally (shared dressing room, camaraderie) but firmly, because on-field instructions must be followed: A-1. Communication between a judge and lawyers in court is formal (procedure and decorum) and firm (rulings bind): B-4. A Vice Chancellor and a Deputy Registrar interact through formal official channels, but on administrative matters the exchange is consultative and open-ended: C-3. Peers and coworkers talk informally and openly, without hierarchy: D-2. Only the code A-1, B-4, C-3, D-2 fits; noting that B must be “formal and firm” and D “informal and open-ended” already eliminates the other codes. Hence option (b).
+
+Q 73 | lr | Analytical Reasoning
+Match List-I with List-II and select the answer using the code given below the Lists :
+List-I (Tool of communication)
+A. Memorandum
+B. Flyer
+C. Bcc
+D. Minutes
+List-II (Purpose)
+1. To record decisions
+2. To inform confidentially
+3. To intimate a directive
+4. To disseminate non-targeted information
+(1) A-1, B-4, C-2, D-3
+(2) A-1, B-2, C-4, D-3
+(3) A-3, B-4, C-2, D-1
+(4) A-3, B-2, C-4, D-1
+= 3
+~ A memorandum (memo) is an internal note used to convey instructions or a directive: A-3. A flyer is a printed sheet handed out widely to anyone who picks it up, i.e., non-targeted dissemination: B-4. Bcc (blind carbon copy) copies a recipient without other recipients seeing that address, so it informs confidentially: C-2. Minutes record the proceedings and decisions of a meeting: D-1. The code A-3, B-4, C-2, D-1 is option (c); codes that begin with A-1 wrongly give the memorandum the function of minutes, and those with B-2 or C-4 swap the roles of the flyer and Bcc.
+
+Q 74 | lr | Analytical Reasoning
+Which among the following actions would constitute the most appropriate directive(s) in resolving interpersonal conflict in an office with culturally diverse personnel?
+1. Direct personnel to practise activities that are the cultural markers of diverse groups
+2. Allow conflicts to resolve naturally over time to set an appropriate precedent of leadership
+3. Encourage personnel to seek each other’s perspectives
+Select the answer using the code given below.
+(1) 1 and 3
+(2) 2 only
+(3) 3 only
+(4) 2 and 3
+= 3
+~ Encouraging staff to seek and understand each other’s perspectives tackles the usual root of cross-cultural friction, misperception, and builds empathy and mutual respect, so action 3 is appropriate. Action 1 compels people to practise other groups’ cultural markers; such compulsion can feel intrusive or tokenistic and may itself breed resentment, so it is not a sound directive. Action 2 is avoidance: letting conflicts “resolve naturally” is the absence of leadership, allows grievances to fester and sets a poor precedent rather than an appropriate one. Hence 3 only, option (c).
+
+Q 75 | lr | Analytical Reasoning
+Match List-I with List-II and select the answer using the code given below the Lists :
+List-I (Barrier to communication)
+A. Semantic
+B. Cognitive
+C. Organisational
+D. Affective
+List-II (Example)
+1. Lack of feedback
+2. Misunderstanding the meaning of a word
+3. Fear of social stigma
+4. Information overload
+(1) A-3, B-1, C-4, D-2
+(2) A-3, B-4, C-1, D-2
+(3) A-2, B-1, C-4, D-3
+(4) A-2, B-4, C-1, D-3
+= 4
+~ Semantic barriers arise from language and meaning, e.g., misunderstanding the meaning of a word: A-2. Cognitive barriers concern the mind’s capacity to take in and process information; information overload exceeds that capacity: B-4. Organisational barriers come from structures and systems, such as rigid hierarchies or the absence of feedback channels, so lack of feedback fits: C-1. Affective barriers are emotional, e.g., fear of social stigma that stops a person from speaking or listening openly: D-3. The code A-2, B-4, C-1, D-3 is option (d); codes pairing “semantic” with fear of stigma confuse an emotional barrier with a language barrier.
+
+Q 76 | lr | Analytical Reasoning
+You are required to design a ‘questionnaire’ to be filled on-location by visitors, based on the following objective while writing a report :
+“To determine the feasibility of setting up a family-oriented vacation resort in the vicinity of a lake destination in the mountains”
+Which of the following heads would you include in the questionnaire to make it most appropriate for your purpose?
+1. Size of family
+2. Budget
+3. Number of earners in the family
+4. Food allergies and dietary restrictions
+Select the answer using the code given below.
+(1) 1 and 3
+(2) 1, 2 and 4
+(3) 1 and 2 only
+(4) 2 and 3
+= 3
+~ The objective is to judge whether a family-oriented resort near a mountain lake would be viable, so the questionnaire must capture demand and paying capacity. Family size tells the planner what accommodation and facilities visiting families need, and budget tells what they are willing to spend; both bear directly on feasibility. The number of earners in a family is an intrusive personal question that adds little once the budget is known. Food allergies and dietary restrictions are operational details for running a resort, not for deciding whether to set one up. Hence 1 and 2 only, option (c).
+
+Q 77 | lr | Analytical Reasoning
+With reference to ‘circular letters’, which of the following statements is/are correct?
+1. Circular letters are usually addressed to a group of people.
+2. Non-standard and customized content is typical of circular letters.
+3. Circular letters are used to intimate appraisals and increments of employees within organisations.
+4. Circular letters are less cost-effective than personalised and specific recipient-directed letters.
+Select the answer using the code given below.
+(1) 1 and 2
+(2) 2 and 4
+(3) 1, 3 and 4
+(4) 1 only
+= 4
+~ A circular letter is one standard message reproduced and sent to many recipients (staff, customers, members), so statement 1 is correct. Statement 2 is wrong: the content of a circular is standardised, not customised for each reader. Statement 3 is wrong: appraisals and increments are individual, confidential matters conveyed by personal letters, not by circulars. Statement 4 is wrong: because a single text reaches many people, circulars are more cost-effective than personalised, recipient-specific letters, not less. Hence 1 only, option (d).
+
+Q 78 | qa | Arithmetic
+Three partners A, B and C entered into a business. A invested one-third of the capital for one-third duration. B invested one-fourth of the capital for one-fourth duration. C invested the remaining capital for the whole duration. Out of a profit of ₹17,000, how much profit will C get?
+(1) ₹12,000
+(2) ₹10,000
+(3) ₹12,500
+(4) ₹10,750
+= 1
+~ Profit is shared in the ratio of capital × time. Take the total capital and the full duration each as 1. A: 1/3 × 1/3 = 1/9. B: 1/4 × 1/4 = 1/16. C invests the remaining capital, 1 − 1/3 − 1/4 = 5/12, for the whole duration: 5/12 × 1 = 5/12. Multiplying by 144, A : B : C = 16 : 9 : 60, total 85. C’s share = 60/85 × 17,000 = ₹12,000. Check: A gets ₹3,200 and B ₹1,800, and 3,200 + 1,800 + 12,000 = 17,000. Hence option (a).
+
+Q 79 | qa | Arithmetic
+There are two chemicals which do not react with each other. A container contains 10 litres of the chemical A. One litre of this chemical is removed from it and one litre of the chemical B is poured. Then one litre of the mixture is removed from the container and one litre of B is poured. If this process of replacing one litre of the mixture by one litre of B is performed once more, then what is the volume of B that is present in the container approximately (in percentage)?
+(1) 25
+(2) 27
+(3) 29
+(4) 31
+= 2
+~ Each replacement removes one-tenth of the contents and refills with B, so the quantity of A is multiplied by 9/10 each time. Three replacements are made in all (the first, the second, and “once more”). A left = 10 × (0.9)³ = 7.29 litres, so B = 10 − 7.29 = 2.71 litres, i.e., 27.1% of the 10 litres, about 27%. Step check: B is 1 litre after the first replacement, 1.9 litres after the second and 2.71 litres after the third. Hence option (b).
+
+Q 80 | qa | Algebra
+A shopkeeper employs a delivery boy and gives him a motorcycle for home delivery. For every delivery, the boy is given ₹5. At the end of the day, he also gets ₹2 for every kilometre of the distance covered in the day. The boy wants to earn more than ₹500 a day, but does not want to travel more than 100 km. Which of the following numbers of deliveries would definitely meet his target?
+(1) 80
+(2) 85
+(3) 90
+(4) The question cannot be answered due to insufficient data
+= 4
+~ Daily earning = 5n + 2d, where n is the number of deliveries and d (at most 100 km) the distance travelled. The distance is not fixed by the number of deliveries, so the kilometre component can be anything from almost nothing up to ₹200. To be certain of more than ₹500, the deliveries alone would have to exceed ₹500, i.e., n ≥ 101. With 80, 85 or 90 deliveries he earns ₹400, ₹425 or ₹450 from deliveries and still needs more than 50, 37.5 or 25 km respectively, which is possible but not guaranteed. So none of the listed numbers definitely meets the target; the data are insufficient. Hence option (d).

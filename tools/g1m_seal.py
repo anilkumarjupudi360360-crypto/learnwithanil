@@ -3,6 +3,7 @@
 
     python3 tools/g1m_seal.py /home/claude/g1m/work2 [--partial]          (APPSC Group-1)
     python3 tools/g1m_seal.py /home/claude/upm/work --exam upsc --partial  (UPSC CSE Mains GS, sealed as years are done)
+    python3 tools/g1m_seal.py /home/claude/upa/ready --exam anthro --partial  (UPSC Anthropology optional Papers I-II)
 
 Reads the private answer files <year>-p<n>.json ({question id: answer markup}), renders them to HTML (tools/g1m_render.py), encrypts them with AES-256-GCM
 (one key; additional data "bk-g1m-ans", the scheme of the sealed books) into one file per paper and year,
@@ -17,15 +18,18 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import g1m_render   # answers are sealed as ready HTML (text, key words and diagrams), Anil 1 Nov 2026
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-UPSC = '--exam' in sys.argv and sys.argv[sys.argv.index('--exam') + 1] == 'upsc'   # UPSC CSE Mains GS (tools/upscmains.py)
-KID = 'bk-upm-ans' if UPSC else 'bk-g1m-ans'
-SRCDIR = os.path.join(ROOT, 'src', 'upsc-cse' if UPSC else 'appsc-group-1', 'mains-pyqs')
-PREFIX, GROUP, FREE = (('upm', r'upm-(\d{4}-gs\d)-', ('1', '2', '1(a)', '1(b)')) if UPSC else ('g1m', r'g1m-(\d{4}-p\d)-', ('1(a)', '1(b)')))
+EXAMARG = sys.argv[sys.argv.index('--exam') + 1] if '--exam' in sys.argv else 'g1'
+UPSC = EXAMARG == 'upsc'     # UPSC CSE Mains GS (tools/upscmains.py)
+ANTHRO = EXAMARG == 'anthro'  # UPSC CSE Mains Anthropology optional Papers I-II (tools/upscmains.py, course 'an')
+KID = 'bk-upm-ans' if UPSC else 'bk-upa-ans' if ANTHRO else 'bk-g1m-ans'
+SRCDIR = os.path.join(ROOT, 'src', 'upsc-cse' if (UPSC or ANTHRO) else 'appsc-group-1', 'anthropology-pyqs' if ANTHRO else 'mains-pyqs')
+PREFIX, GROUP, FREE = (('upm', r'upm-(\d{4}-gs\d)-', ('1', '2', '1(a)', '1(b)')) if UPSC else
+                       ('upa', r'upa-(\d{4}-an\d)-', ('1(a)', '1(b)')) if ANTHRO else ('g1m', r'g1m-(\d{4}-p\d)-', ('1(a)', '1(b)')))
 work = sys.argv[1]
-priv = os.environ.get('G1M_PRIV', '/home/claude/upm/secret' if UPSC else '/home/claude/g1m/secret')
+priv = os.environ.get('G1M_PRIV', '/home/claude/upm/secret' if UPSC else '/home/claude/upa/secret' if ANTHRO else '/home/claude/g1m/secret')
 qs = json.load(open(os.path.join(SRCDIR, 'questions.json'), encoding='utf-8'))
 ans = {}
-for f in sorted(glob.glob(os.path.join(work, '20??-p?.json' if not UPSC else '20??-gs?.json'))): ans.update(json.load(open(f, encoding='utf-8')))
+for f in sorted(glob.glob(os.path.join(work, '20??-gs?.json' if UPSC else '20??-an?.json' if ANTHRO else '20??-p?.json'))): ans.update(json.load(open(f, encoding='utf-8')))
 ids = [q['id'] for q in qs if q['paper'] != 'I']   # Paper I (essay): questions only
 missing = [i for i in ids if not ans.get(i)]
 if missing and '--partial' not in sys.argv: sys.exit(f'{len(missing)} answers missing, e.g. {missing[:5]}')

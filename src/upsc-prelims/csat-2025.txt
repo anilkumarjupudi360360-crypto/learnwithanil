@@ -1,0 +1,859 @@
+# UPSC Civil Services (Preliminary) Examination 2025, General Studies Paper II (CSAT) (Series A), held 25 May 2025.
+# Source: the official UPSC question paper; answers from UPSC's official (final) answer key (published 13 May 2026). Explanations by Learn with Anil.
+# Dropped by UPSC: none
+
+Q 1 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Maintaining an ecosystem just to conserve biodiversity will affect its commercial potential as well as the livelihoods dependent on the ecosystem. There is also a conflict between using an ecosystem only for livelihoods, for commercial exploitation, or strictly for conservation. Deforestation caused due to commercial exploitation will lead to indirect harm like floods, siltation problems and microclimatic instability, apart from adversely affecting livelihoods dependent on forests. These conflicts are particularly acute in developing countries where the dependence of people on the ecosystem is significant, and commercial exploitation has the potential to boost national income.
+Which one of the following statements best reflects the critical message conveyed by the author of the passage?
+(1) Conservation of biodiversity is not an issue to be worried about when some people depend on ecosystems for their livelihoods.
+(2) Commercial exploitation of forests goes against the fundamental rights of the people dependent on forests for food and shelter.
+(3) Sustenance of livelihood and degradation of ecosystem while being together exacerbate one another, leading to conflicts and imbalance.
+(4) Commercial exploitation of ecosystems should be completely stopped.
+= 3
+~ The passage describes competing uses of an ecosystem: keeping it only for conservation hurts its commercial potential and dependent livelihoods, while commercial exploitation (deforestation) brings floods, siltation and microclimatic instability and also harms forest-dependent livelihoods; these conflicts are sharpest in developing countries. Of the four options, (c) comes closest to this message: livelihood needs and ecosystem degradation work against each other and produce conflict and imbalance. Option (a) contradicts the passage, which treats conservation as a real concern. Option (b) brings in "fundamental rights", which the passage never mentions. Option (d) is extreme: the passage notes that commercial exploitation can boost national income and calls for no ban.
+
+Q 2 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Maintaining an ecosystem just to conserve biodiversity will affect its commercial potential as well as the livelihoods dependent on the ecosystem. There is also a conflict between using an ecosystem only for livelihoods, for commercial exploitation, or strictly for conservation. Deforestation caused due to commercial exploitation will lead to indirect harm like floods, siltation problems and microclimatic instability, apart from adversely affecting livelihoods dependent on forests. These conflicts are particularly acute in developing countries where the dependence of people on the ecosystem is significant, and commercial exploitation has the potential to boost national income.
+With reference to above passage, the following assumptions have been made :
+I. No country needs to depend on ecosystems to boost national income.
+II. Resource-rich countries need to share their resources with those of scant resources so as to prevent the degradation of ecosystems.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 4
+~ Assumption I is invalid: the passage says that in developing countries commercial exploitation of ecosystems "has the potential to boost national income", so it takes for granted the opposite, that countries can and do rely on ecosystems for national income. Assumption II is invalid: the passage deals with conflicts among livelihoods, commercial exploitation and conservation in the use of an ecosystem; sharing of resources between resource-rich and resource-poor countries is never discussed and is not needed for the author's argument. Hence neither assumption is valid.
+
+Q 3 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The history of renewable energy suggests there is a steep learning curve, meaning that, as more is produced, costs fall rapidly because of economies of scale and learning by doing. The firms’ green innovation is path-dependent : the more a firm does, the more it is likely to do in the future. The strongest evidence for this is the collapse in the price of solar energy, which became about 90% cheaper during the 2010s, repeatedly beating forecasts. Moving early and gradually gives economies more time to adjust, allowing them to reap the benefits of path-dependent green investment without much disruption. A late, more chaotic transition is costlier.
+Which one of the following statements best reflects the central idea of the passage?
+(1) Economies of scale is essential for transition to green growth.
+(2) Modern technological progress is intensely linked to path-dependent innovations.
+(3) Countries with large economies are in a better position to adopt green technologies.
+(4) Timing plays a crucial role in the case of green technology development.
+= 4
+~ The passage builds to its conclusion: moving early and gradually gives economies time to adjust and reap the benefits of path-dependent green investment, while a late, more chaotic transition is costlier. The learning curve and the solar example explain why an early start pays, so the central idea is that timing is crucial in green technology development, option (d). Option (a) picks out economies of scale, which is only one reason why costs fall, and the passage never calls it essential. Option (b) widens the claim to all modern technological progress, whereas the passage speaks only of green innovation. Option (c) about large economies is not discussed at all.
+
+Q 4 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The history of renewable energy suggests there is a steep learning curve, meaning that, as more is produced, costs fall rapidly because of economies of scale and learning by doing. The firms’ green innovation is path-dependent : the more a firm does, the more it is likely to do in the future. The strongest evidence for this is the collapse in the price of solar energy, which became about 90% cheaper during the 2010s, repeatedly beating forecasts. Moving early and gradually gives economies more time to adjust, allowing them to reap the benefits of path-dependent green investment without much disruption. A late, more chaotic transition is costlier.
+With reference to the above passage, the following assumptions have been made :
+I. Path-dependent green investments will eventually most likely benefit growth as well as public finances in a country like India.
+II. If other green technologies follow the same pattern as that of solar energy, there will most likely be an easy green transition.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Assumption I is valid: the author says economies that move early "reap the benefits of path-dependent green investment" without much disruption, while a late transition is costlier; this takes for granted that such investment ultimately benefits an economy, its growth and, by avoiding a costlier transition, its finances, and nothing limits the argument to particular countries, so it covers a country like India. Assumption II is valid: solar energy, about 90% cheaper in the 2010s because of a steep learning curve, is the author's model; if other green technologies follow the same pattern, their costs will also fall rapidly and the green transition will be easier. Hence both I and II. Some solutions mark I only, arguing that the passage never says other technologies will follow solar's path or that any transition will be "easy". (Official key; some sources differ.)
+
+Q 5 | qa | Number System
+A natural number N is such that it can be expressed as N = p + q + r, where p, q and r are distinct factors of N. How many numbers below 50 have this property?
+(1) 6
+(2) 7
+(3) 8
+(4) 9
+= 3
+~ None of p, q, r can be N itself (the sum would exceed N), so write p = N/a, q = N/b, r = N/c with distinct whole numbers a, b, c ≥ 2. Then N = p + q + r gives 1/a + 1/b + 1/c = 1, whose only solution in distinct numbers is 2, 3, 6 (3, 3, 3 and 2, 4, 4 repeat). So N must be divisible by 6, and then N = N/2 + N/3 + N/6 always works, e.g. 6 = 3 + 2 + 1 and 12 = 6 + 4 + 2. The multiples of 6 below 50 are 6, 12, 18, 24, 30, 36, 42 and 48, i.e. 8 numbers. A number such as 20 fails: no three of its factors 1, 2, 4, 5, 10 add up to 20.
+
+Q 6 | qa | Number System
+Three prime numbers p, q and r, each less than 20, are such that p − q = q − r. How many distinct possible values can we get for (p + q + r)?
+(1) 4
+(2) 5
+(3) 6
+(4) More than 6
+= 4
+~ From p − q = q − r we get p + r = 2q, so p + q + r = 3q, and the number of values equals the number of possible middle primes q. The question does not say the three primes are different, so p = q = r (common difference 0) is allowed and q can be any prime below 20: 2, 3, 5, 7, 11, 13, 17, 19. That gives 8 values (6, 9, 15, 21, 33, 39, 51, 57), more than 6. If the primes had to be distinct, only q = 5 (3, 5, 7), q = 7 (3, 7, 11), q = 11 (5, 11, 17 or 3, 11, 19) and q = 13 (7, 13, 19) would work, giving 4 values, option (a); the official key follows the first reading. (Official key; some sources differ.)
+
+Q 7 | qa | Number System
+How many possible values of (p + q + r) are there satisfying 1/p + 1/q + 1/r = 1, where p, q and r are natural numbers (not necessarily distinct)?
+(1) None
+(2) One
+(3) Three
+(4) More than three
+= 3
+~ Take p ≤ q ≤ r. p = 1 is impossible (1/p alone would be 1), and since 1/p is the largest of the three terms, 1/p ≥ 1/3, so p = 2 or 3. If p = 3, then q = r = 3. If p = 2, then 1/q + 1/r = 1/2, i.e. (q − 2)(r − 2) = 4, giving (q, r) = (3, 6) or (4, 4). So the only solutions, in any order, are (3, 3, 3), (2, 4, 4) and (2, 3, 6), with sums 9, 10 and 11. Reordering p, q, r does not change the sum, so p + q + r has exactly three possible values.
+
+Q 8 | lr | Series & Patterns
+What comes at X and Y respectively in the following sequence?
+January, January, December, October, X, March, October, Y, September
+(1) July, May
+(2) July, April
+(3) June, May
+(4) June, April
+= 2
+~ Each term is obtained by going back from the previous month by 0, 1, 2, 3, ... months in turn: January (back 0) January, (back 1) December, (back 2) October, (back 3) July, (back 4) March, (back 5) October, (back 6) April, (back 7) September. So X = July and Y = April. Check: four months before July is March and seven months before April is September, both matching the printed terms. June for X would need a step of 4, breaking the pattern.
+
+Q 9 | qa | Arithmetic
+Team X scored a total of N runs in 20 overs. Team Y tied the score in 10% less overs. Had team Y’s average run rate (runs per over) been 50% higher, the scores would have been tied in 12 overs. How many runs were scored by team X?
+(1) 72
+(2) 144
+(3) 216
+(4) Cannot be determined
+= 4
+~ Team Y took 10% fewer overs, i.e. 18 overs, so its run rate was N/18 runs per over. A rate 50% higher is 1.5 × N/18 = N/12 runs per over, which reaches N runs in exactly 12 overs whatever N is. So the second condition is automatically true and adds no new information. Every value of N fits: for example N = 72, 144 or 216 all satisfy both conditions (rates 4, 8, 12 per over, raised to 6, 12, 18). Hence the runs scored by team X cannot be determined.
+
+Q 10 | qa | Arithmetic
+The price (p) of a commodity is first increased by k%; then decreased by k%; again increased by k%; and again decreased by k%. If the new price is q, then what is the relation between p and q?
+(1) p(10⁴ − k²)² = q × 10⁸
+(2) p(10⁴ − k²)² = q × 10⁴
+(3) p(10⁴ − k²) = q × 10⁴
+(4) p(10⁴ − k²) = q × 10⁸
+= 1
+~ An increase of k% multiplies the price by (100 + k)/100 and a decrease by (100 − k)/100. After two increases and two decreases, q = p × (100 + k)²(100 − k)²/100⁴ = p(10⁴ − k²)²/10⁸, since (100 + k)(100 − k) = 10⁴ − k² and 100⁴ = 10⁸. Hence p(10⁴ − k²)² = q × 10⁸. Check with p = 100, k = 10: 100 → 110 → 99 → 108.9 → 98.01, and 100 × 9900²/10⁸ = 98.01. Option (c) would hold after only one increase and one decrease; (b) and (d) use the wrong power of 10.
+
+Q 11 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Each State in India faces a distinctive set of challenges regarding the impact of warming, but also offers its own set of opportunities for reducing emissions depending on its natural resources. For example, coastal States need to take action to protect their shores from sea level rise, districts that are drier need to prepare for variable monsoon precipitation. Himalayan regions have their own unique challenges, and selected parts of peninsular India and offshore areas offer great opportunities for harnessing wind power. These various aspects need to be considered for developing clear and sustainable goals for the future.
+Which one of the following statements best reflects the most logical, rational and pragmatic message conveyed by the author of the passage?
+(1) The mitigation and adaptation strategies to address/tackle the climate change is essentially the responsibility of each State.
+(2) India is too diverse to implement any effective strategy or programme to address/tackle the climate change.
+(3) It is basically the responsibility of the Union Government to implement the climate action plans and ensure net zero emissions.
+(4) India needs to formulate effective climate change mitigation and adaptation strategies at the State/region level.
+= 4
+~ The passage says each State faces its own climate challenges (sea level rise on the coast, variable monsoon rain in drier districts, unique problems in the Himalaya) and has its own opportunities for cutting emissions (wind power in parts of peninsular India and offshore areas), and that these aspects must be considered in setting clear, sustainable goals. The pragmatic message is that India should frame its mitigation and adaptation strategies at the State/region level, option (d). Option (a) goes too far by making climate action essentially each State's own responsibility; option (b) contradicts the passage's constructive tone; option (c) brings in the Union Government and net zero, which the passage never mentions.
+
+Q 12 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Each State in India faces a distinctive set of challenges regarding the impact of warming, but also offers its own set of opportunities for reducing emissions depending on its natural resources. For example, coastal States need to take action to protect their shores from sea level rise, districts that are drier need to prepare for variable monsoon precipitation. Himalayan regions have their own unique challenges, and selected parts of peninsular India and offshore areas offer great opportunities for harnessing wind power. These various aspects need to be considered for developing clear and sustainable goals for the future.
+With reference to the passage, the following assumptions have been made :
+I. Green energy production can be linked to/integrated with the climate change mitigation and adaptation strategies.
+II. Effects of climate change are much more severe in coastal and mountainous regions.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ Assumption I is valid: the passage places each region's opportunities for reducing emissions, such as harnessing wind power in peninsular and offshore areas, side by side with its adaptation challenges and asks that all these aspects be considered together in setting goals; this takes for granted that green energy production can be built into mitigation and adaptation strategies. Assumption II is invalid: the passage says coastal States and Himalayan regions face distinctive or unique challenges, not that the effects of climate change are much more severe there than elsewhere; drier districts are given as an equal example. Hence I only.
+
+Q 13 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+If the social inequality is the most acutely felt social problem in India, insecurity, more than poverty, is the most acutely felt economic problem. Besides those below the official poverty line, even those just over the poverty line are subject to multiple economic insecurities of various kinds (due to wealth and/or health risks, market fluctuations, job-related uncertainties). Many Government policies are actually intended towards mitigating these insecurities.
+Which one of the following statements best reflects the critical message conveyed by the passage?
+(1) India’s political executive should be aware that poverty and social inequality and the consequent sense of insecurity is the main social problem.
+(2) In India, poverty is the primary reason for social inequality and insecurity.
+(3) Poverty and social inequality are so intricately linked that they pose an unmanageable crisis for India.
+(4) Insecurity, more than poverty, is the main economic issue that Government policies must address.
+= 4
+~ The passage states that while social inequality is the most acutely felt social problem, insecurity, more than poverty, is the most acutely felt economic problem; it affects even people just above the poverty line, and many Government policies are in fact aimed at mitigating these insecurities. Option (d) captures this message. Option (a) wrongly lumps poverty, inequality and insecurity together as "the main social problem", whereas the passage calls insecurity the main economic problem. Option (b) invents a causal claim that poverty is the primary reason for inequality and insecurity. Option (c) about an unmanageable crisis is not suggested anywhere.
+
+Q 14 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+If the social inequality is the most acutely felt social problem in India, insecurity, more than poverty, is the most acutely felt economic problem. Besides those below the official poverty line, even those just over the poverty line are subject to multiple economic insecurities of various kinds (due to wealth and/or health risks, market fluctuations, job-related uncertainties). Many Government policies are actually intended towards mitigating these insecurities.
+With reference to the above passage, the following assumptions have been made :
+I. People above the poverty line also are prone to suffer from anxiety about economic insecurity.
+II. Eradication of poverty can result in peace and social equality in the country.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ Assumption I is valid: the passage says that besides those below the official poverty line, "even those just over the poverty line" face multiple economic insecurities from wealth or health risks, market fluctuations and job-related uncertainties, and calls insecurity the most acutely felt economic problem; so people above the poverty line can also be anxious about economic insecurity. Assumption II is invalid: the passage treats social inequality separately from poverty and stresses insecurity more than poverty; it never suggests that eradicating poverty would bring peace or social equality. Hence I only.
+
+Q 15 | qa | Geometry & Mensuration
+A solid cube is painted yellow on all its faces. The cube is then cut into 60 smaller but equal pieces by making the minimum number of cuts. Which of the following statements is/are correct?
+I. The minimum number of cuts is 9.
+II. The number of smaller pieces which are not painted on any face is 6.
+Select the correct answer using the code given below :
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Cutting the cube into an a × b × c arrangement of equal pieces needs (a − 1) + (b − 1) + (c − 1) cuts, which is least when a, b and c are as close as possible. 60 = 3 × 4 × 5 needs 2 + 3 + 4 = 9 cuts; other splits need more (2 × 5 × 6 needs 10, 2 × 3 × 10 needs 12, 1 × 6 × 10 needs 14). So Statement I is correct. The pieces with no painted face are the inner ones: (3 − 2) × (4 − 2) × (5 − 2) = 1 × 2 × 3 = 6, so Statement II is also correct. Hence both I and II.
+
+Q 16 | lr | Series & Patterns
+If 7 * 24 = 25 and 12 * 16 = 20, then what is 16 * 63 equal to?
+(1) 70
+(2) 66
+(3) 65
+(4) 64
+= 3
+~ The rule is a * b = √(a² + b²), the hypotenuse of a right triangle with legs a and b. Check: 7² + 24² = 49 + 576 = 625 = 25², and 12² + 16² = 144 + 256 = 400 = 20². So 16 * 63 = √(16² + 63²) = √(256 + 3969) = √4225 = 65. Indeed 16, 63, 65 is a Pythagorean triple. The other options (70, 66, 64) are not the square root of 4225.
+
+Q 17 | qa | Arithmetic
+The petrol price shot up by 10% as a result of the hike in crude oil prices. The price of petrol before the hike was ₹ 90 per litre. A person travels 2200 km every month and his car gives a mileage of 16 km per litre. By how many km should he reduce his travel if he wants to maintain his expenditure at the previous level?
+(1) 180 km
+(2) 200 km
+(3) 220 km
+(4) 240 km
+= 2
+~ Earlier monthly spending = (2200 ÷ 16) litres × ₹90 = 137.5 × 90 = ₹12,375. The new price is ₹99 per litre, so the same money buys 12,375 ÷ 99 = 125 litres, enough for 125 × 16 = 2000 km. He must therefore cut his travel by 2200 − 2000 = 200 km. Shortcut: with a 10% price rise, petrol use must fall to 100/110 = 10/11 of the original, i.e. by 1/11 of 2200 km = 200 km. Option (c) 220 km wrongly cuts travel by 10%.
+
+Q 18 | qa | Number System
+A 4-digit number N is such that when divided by 3, 5, 6, 9 leaves a remainder 1, 3, 4, 7 respectively. What is the smallest value of N?
+(1) 1068
+(2) 1072
+(3) 1078
+(4) 1082
+= 3
+~ In every case the remainder is 2 less than the divisor (3 − 1 = 5 − 3 = 6 − 4 = 9 − 7 = 2), so N + 2 is divisible by 3, 5, 6 and 9, hence by their LCM, 90. The multiples of 90 near 1000 are 990, giving N = 988 (only three digits), and 1080, giving N = 1078, the smallest 4-digit value. Check: 1078 = 3 × 359 + 1 = 5 × 215 + 3 = 6 × 179 + 4 = 9 × 119 + 7. The other options fail: for example 1068 leaves remainder 3 on division by 5 but 0 on division by 3.
+
+Q 19 | lr | Logical Reasoning
+Consider the following statements :
+I. If A ≤ B > C < D > E > F ≥ G = H; then B is always greater than E.
+II. If P > Q = R ≥ S = T ≤ U = V > W; then S is always less than V.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 4
+~ Statement I: B > C and C < D > E give no fixed link between B and E, because the chain changes direction at C. For example A = 0, B = 1, C = 0, D = 2, E = 1, F = G = H = 0 satisfies every sign but gives B = E (B < E is also possible), so B is not always greater than E. Statement II: S = T ≤ U = V gives only S ≤ V, which allows S = V; for example P = 2, Q = R = S = T = U = V = 1, W = 0 satisfies every sign. So S is not always less than V. Hence neither statement is correct.
+
+Q 20 | qa | Number System
+What is the unit digit in the multiplication of 1 × 3 × 5 × 7 × 9 × ... × 999?
+(1) 1
+(2) 3
+(3) 5
+(4) 9
+= 3
+~ The product contains the factor 5, and all the factors are odd, so the product is an odd multiple of 5. An odd multiple of 5 always ends in 5: it could end in 0 only if it contained a factor 2, which no odd number has. Hence the unit digit is 5. Check with the first few terms: 1 × 3 × 5 = 15, 15 × 7 = 105, 105 × 9 = 945, and every further odd factor keeps the last digit 5 (5 × odd ends in 5).
+
+Q 21 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+One of the dismal realities of the agricultural sector in independent India has been that it never experienced a high-growth phase, unlike the non-agricultural economy. The highest decadal growth (compound annual growth rate or CAGR) for agriculture has been just 3.5% in the 1980s. Also, after experiencing a spurt in decadal growth during the 1980s, agricultural growth suffered relative stagnation thereafter. This is in sharp contrast to non-agricultural growth, which consistently increased from the 1980s to 2000s.
+Which one of the following statements best reflects the corollary to the above passage?
+(1) The benefit of economic reforms percolates down more slowly to the agriculture sector than in other sectors of the economy.
+(2) For India, the green revolution was not as useful as it was expected to be.
+(3) India lagged behind other countries in adapting mechanized and modern farming.
+(4) Rural-to-urban migration resulted in the stagnant agriculture sector.
+= 1
+~ A corollary is what follows naturally from the passage. The passage contrasts agriculture, which never had a high-growth phase and stagnated after its best decade (3.5% CAGR in the 1980s), with non-agricultural growth, which kept rising from the 1980s to the 2000s. The passage does not name economic reforms, but this widening gap spans the reform decades, so of the four options the one that follows is that the gains of growth reached agriculture more slowly than other sectors, option (a). The green revolution (b), comparisons with other countries' mechanisation (c) and rural-to-urban migration (d) are never mentioned, so they bring in causes or judgements from outside the passage.
+
+Q 22 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+One of the dismal realities of the agricultural sector in independent India has been that it never experienced a high-growth phase, unlike the non-agricultural economy. The highest decadal growth (compound annual growth rate or CAGR) for agriculture has been just 3.5% in the 1980s. Also, after experiencing a spurt in decadal growth during the 1980s, agricultural growth suffered relative stagnation thereafter. This is in sharp contrast to non-agricultural growth, which consistently increased from the 1980s to 2000s.
+With reference to the passage, the following assumptions have been made:
+The growing divergence between the fortunes of the agricultural and non-agricultural economy in India could have been reduced/contained by:
+I. adapting large-scale cultivation of commercial crops and viable corporate farming.
+II. providing free insurance for all crops and heavily subsidizing seeds, fertilizers, electricity and farm machinery at par with developed countries.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 4
+~ Neither assumption is valid. The passage only describes the gap: agriculture peaked at 3.5% CAGR in the 1980s and then stagnated, while non-agricultural growth kept increasing up to the 2000s. It says nothing about how the gap could have been narrowed. Assumption I (large-scale commercial crops and corporate farming) and assumption II (free crop insurance and heavy subsidies on seeds, fertilizers, power and machinery at par with developed countries) are policy remedies brought in from outside; the passage neither states nor needs either of them for its argument. Hence (d).
+
+Q 23 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In our country, handlooms are equated with a culture that ensures a continuity of tradition. This idea has become part of the public policy-framing and provides a legitimate basis for the State to support the sector. But the notion of tradition as a single, linear entity is being strongly contested today. The narratives dominant in defining culture/tradition in a particular way are seen to have emerged as the identities and histories of large sections. The discounted and, at times, forcibly stifled identities are fighting for their rightful place in history. Against this backdrop, when we promote handloom as a traditional industry, it is not surprising that large sections of our population choose to ignore it.
+Which one of the following statements best reflects the most logical and rational message conveyed by the author of the passage?
+(1) We need to free the handloom industry from the limited narrative linked to preserving cultural heritage.
+(2) Continued State support to the handloom industry ensures the preservation of some of our glorious art forms and old traditions.
+(3) Household units of the handloom sector should be modernized and made an economically viable organized industry.
+(4) Handloom products need to be converted to machine-made designer products so as to make them more popular.
+= 1
+~ The author's point is that handlooms are tied in public policy to a single, linear idea of "tradition", that this idea is being strongly contested by long-stifled identities, and that promoting handloom "as a traditional industry" leads large sections of the population to ignore it. The logical message is therefore to free the handloom industry from this narrow heritage-preservation narrative, option (a). Option (b) restates the very tradition-based justification the author questions. Modernising household units into an organised industry (c) or converting handlooms into machine-made designer products (d) are never discussed and go beyond the passage.
+
+Q 24 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In our country, handlooms are equated with a culture that ensures a continuity of tradition. This idea has become part of the public policy-framing and provides a legitimate basis for the State to support the sector. But the notion of tradition as a single, linear entity is being strongly contested today. The narratives dominant in defining culture/tradition in a particular way are seen to have emerged as the identities and histories of large sections. The discounted and, at times, forcibly stifled identities are fighting for their rightful place in history. Against this backdrop, when we promote handloom as a traditional industry, it is not surprising that large sections of our population choose to ignore it.
+With reference to the above passage, the following assumptions have been made:
+I. There is no need for the State to be involved in any manner in the handloom sector.
+II. Handloom products are no longer appealing and attractive in the rapidly changing modern world.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 4
+~ Neither assumption is valid. I: the passage says the "continuity of tradition" idea gives the State a legitimate basis to support the sector; it questions how handloom is framed, not whether the State should be involved, so "no need for the State in any manner" is not assumed. II: the passage explains people's neglect of handloom by their rejection of a dominant, single narrative of tradition that discounts their own identities, not by handloom products being unattractive in a rapidly changing modern world; product appeal is never discussed. Hence (d).
+
+Q 25 | qa | Number System
+Consider the first 100 natural numbers. How many of them are not divisible by any one of 2, 3, 5, 7 and 9?
+(1) 20
+(2) 21
+(3) 22
+(4) 23
+= 3
+~ A number divisible by 9 is already divisible by 3, so we need numbers from 1 to 100 divisible by none of 2, 3, 5 and 7. By inclusion-exclusion, numbers not divisible by 2, 3 or 5 = 100 − (50 + 33 + 20) + (16 + 10 + 6) − 3 = 26. Of these, 7, 49, 77 and 91 are multiples of 7, leaving 26 − 4 = 22. Check: they are 1 and the 21 primes from 11 to 97 (25 primes up to 100 minus 2, 3, 5, 7), giving 22. Forgetting to count 1 gives the trap answer 21.
+
+Q 26 | qa | Algebra
+If 4 ≤ x ≤ 8 and 2 ≤ y ≤ 7, then what is the ratio of maximum value of (x + y) to minimum value of (x − y)?
+(1) 6
+(2) 15/2
+(3) −15/2
+(4) None of the above
+= 4
+~ Maximum of (x + y) = 8 + 7 = 15. The minimum of (x − y) takes the smallest x and the largest y: 4 − 7 = −3. Ratio = 15 ÷ (−3) = −5, which is not among 6, 15/2 and −15/2, so the answer is None of the above. The values 15/2 and −15/2 come from wrongly taking the minimum of (x − y) as 2 (that is, 4 − 2) or −2; the true minimum of x − y uses the smallest x with the largest y.
+
+Q 27 | qa | Number System
+Let both p and k be prime numbers such that (p² + k) is also a prime number less than 30. What is the number of possible values of k?
+(1) 4
+(2) 5
+(3) 6
+(4) 7
+= 2
+~ If p and k were both odd primes, p² + k would be even and greater than 2, so not prime; hence p = 2 or k = 2. Case p = 2: 4 + k must be a prime below 30, so k = 3 (7), 7 (11), 13 (17) or 19 (23); k = 2, 5, 11, 17 and 23 give 6, 9, 15, 21 and 27, which are not prime. Case k = 2: p² + 2 must be a prime below 30; p = 3 gives 11, while p = 5 gives 27 (not prime) and p = 7 exceeds 30. So k can be 2, 3, 7, 13 or 19: 5 possible values.
+
+Q 28 | qa | Number System
+There are n sets of numbers each having only three positive integers with LCM equal to 1001 and HCF equal to 1. What is the value of n?
+(1) 6
+(2) 7
+(3) 8
+(4) More than 8
+= 4
+~ 1001 = 7 × 11 × 13. For LCM 1001 every number must be a divisor of 1001, and each of 7, 11 and 13 must divide at least one number; for HCF 1 none of them may divide all three numbers. Many such sets exist, for example {7, 11, 13}, {1, 7, 143}, {1, 11, 91}, {1, 13, 77}, {1, 77, 91}, {1, 77, 143}, {1, 91, 143}, {7, 11, 91}, {7, 13, 77}, already nine. Counting fully: each prime can sit in 6 non-empty proper subsets of the three places, giving 6³ = 216 ordered triples, which give 32 sets of three different numbers (40 if a number may repeat). So n is more than 8.
+
+Q 29 | qa | Number System
+Let PQR be a 3-digit number, PPT be a 3-digit number and PS be a 2-digit number, where P, Q, R, S, T are distinct non-zero digits. Further, PQR − PS = PPT. If Q = 3 and T < 6, then what is the number of possible values of (R, S)?
+(1) 2
+(2) 3
+(3) 4
+(4) More than 4
+= 2
+~ PQR − PS = PPT gives 100P + 30 + R − 10P − S = 110P + T, so R − S − T = 20P − 30. Since R − S − T lies between −16 and 6, P = 1 and S + T = R + 10. With 1 and 3 taken and T < 6, T = 2, 4 or 5. T = 2 needs S = 9, R = 1 (clash with P). T = 4: S = 8, R = 2 works (S = 9 would make R = 3 = Q). T = 5: S = 7, R = 2 and S = 9, R = 4 work (S = 8 would make R = 3). Checks: 132 − 18 = 114, 132 − 17 = 115, 134 − 19 = 115. So (R, S) has 3 possible values.
+
+Q 30 | lr | Series & Patterns
+Consider the sequence AB_CC_A_BCCC_BBC_C that follows a certain pattern. Which one of the following completes the sequence?
+(1) B, C, B, C, A
+(2) A, C, B, C, A
+(3) B, C, B, A, C
+(4) C, B, B, A, C
+= 3
+~ Filling the blanks with B, C, B, A, C gives AB(B)CC(C) A(B)BCCC (A)BBC(C)C = ABBCCC ABBCCC ABBCCC, the block ABBCCC repeated three times (one A, two Bs, three Cs). The other options break the repetition: (a) and (b) put C and A in the last two blanks, so the sequence would end CBBCAC, and (d) puts C in the first blank, giving ABCCCB at the start. Hence (c).
+
+Q 31 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In our country, regrettably, teaching and learning for the examination have been our forte but the new demands of society and the future of work require critical and independent thinking, learning through doing, asking questions from multiple disciplinary perspectives on the same issue, using evidence for building arguments, and reflecting and articulation. Higher education should not “either be a mere servant of the government policy or a passive respondent to public mood.” Higher learning is all about how to think rather than what to think. Teaching has to be re-invented.
+Which one of the following statements best reflects the central idea conveyed by the passage?
+(1) India does not have enough resources for promoting quality education in its universities.
+(2) The institutions of higher learning in the country should not be under the control of the Government.
+(3) Classroom approach to higher education should be done away with.
+(4) Classroom needs to be reimagined and teaching needs to be re-invented.
+= 4
+~ The passage says exam-oriented teaching has been our forte, but society and the future of work now need critical and independent thinking, learning by doing, multidisciplinary questioning, evidence-based argument and reflection; higher learning is about how to think, not what to think, and "Teaching has to be re-invented." Option (d) captures this central idea. Resources (a) are never mentioned. The passage says higher education should not be a mere servant of government policy, which is about its role, not about removing institutions from government control (b). It asks for a changed approach to teaching, not for abolishing classroom teaching (c).
+
+Q 32 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In our country, regrettably, teaching and learning for the examination have been our forte but the new demands of society and the future of work require critical and independent thinking, learning through doing, asking questions from multiple disciplinary perspectives on the same issue, using evidence for building arguments, and reflecting and articulation. Higher education should not “either be a mere servant of the government policy or a passive respondent to public mood.” Higher learning is all about how to think rather than what to think. Teaching has to be re-invented.
+With reference to the above passage, the following assumptions have been made:
+I. Higher education is a constantly evolving subject that needs to align towards new developments in all spheres of society.
+II. In our country, sufficient funds are not allocated for promoting higher education.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ Assumption I is valid: the writer argues that the new demands of society and the future of work require new kinds of learning and that teaching has to be re-invented, which assumes that higher education must keep evolving and align itself with developments in society. Assumption II is not valid: funding or allocation of money for higher education is never mentioned; the problem identified is the exam-centred way of teaching and learning, not a lack of funds. Hence I only.
+
+Q 33 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+If there is inequality in the pattern of population growth, there is greater inequality in food production and utilization. As societies become wealthier, their consumption of animal products increases. This means that a greater proportion of such basic foodstuff as grains and legumes that could feed humans directly is instead being converted into feed for poultry and large farm animals. Yet this conversion of plant-based food into animal food for humans is far from efficient. Only 16% of the calories fed to chickens are recovered by us when we eat them. This conversion rate goes down to five to seven per cent in large animals that are fed grain to add fat and some protein before slaughter.
+Which one of the following statements best reflects the crux of the passage?
+(1) There is an urgent need for a public policy to promote the consumption of cereal-based foods in wealthier societies.
+(2) Animal-based food is far less efficient than grain/plant-based food in terms of production and utilization.
+(3) Plant-based protein should replace the animal-based protein in our daily diets.
+(4) Inequality in food production and consumption is inevitable in any fast changing society.
+= 2
+~ The passage explains that as societies grow wealthier they eat more animal products, so grains and legumes that could feed people directly are turned into animal feed, and this conversion is "far from efficient": only 16% of the calories fed to chickens come back to us, and only five to seven per cent in large grain-fed animals. Its crux is therefore that animal-based food is far less efficient than plant-based food, option (b). A public policy for wealthier societies (a) and replacing animal protein in diets (c) are prescriptions the passage does not make, and it does not call inequality inevitable (d).
+
+Q 34 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+If there is inequality in the pattern of population growth, there is greater inequality in food production and utilization. As societies become wealthier, their consumption of animal products increases. This means that a greater proportion of such basic foodstuff as grains and legumes that could feed humans directly is instead being converted into feed for poultry and large farm animals. Yet this conversion of plant-based food into animal food for humans is far from efficient. Only 16% of the calories fed to chickens are recovered by us when we eat them. This conversion rate goes down to five to seven per cent in large animals that are fed grain to add fat and some protein before slaughter.
+With reference to the above passage, the following assumptions have been made:
+I. The food manufacturing and processing industries in every country should align their objectives and processes in accordance with the changing needs of the societies.
+II. Wealthier societies tend to incur great loss of calories of food materials due to indirect utilization of their agricultural produce.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ Assumption II is valid: the passage says wealthier societies consume more animal products, so grains and legumes are converted into animal feed, and only 16% (chickens) or five to seven per cent (large animals) of those calories are recovered; this indirect use of farm produce means a great loss of food calories. Assumption I is not valid: the passage does not discuss food manufacturing and processing industries or what their objectives and processes should be; it only describes how food is used. Hence II only.
+
+Q 35 | qa | Number System
+What is the maximum value of n such that 7 × 343 × 385 × 1000 × 2401 × 77777 is divisible by 35ⁿ?
+(1) 3
+(2) 4
+(3) 5
+(4) 7
+= 2
+~ 35ⁿ = 5ⁿ × 7ⁿ, so n is limited by the smaller of the powers of 5 and 7 in the product. Factorise: 7 = 7, 343 = 7³, 385 = 5 × 7 × 11, 1000 = 2³ × 5³, 2401 = 7⁴, 77777 = 7 × 11111 = 7 × 41 × 271. Power of 7 = 1 + 3 + 1 + 4 + 1 = 10; power of 5 = 1 + 3 = 4. Hence the largest n is min(10, 4) = 4. The trap 7 comes from looking only at the many factors of 7; the product has just four factors of 5.
+
+Q 36 | lr | Series & Patterns
+What is X in the sequence 24, X, 12, 18, 36, 90?
+(1) 18
+(2) 12
+(3) 9
+(4) 6
+= 2
+~ Each term is the previous one multiplied by a factor that rises by 0.5 each time: 24 × 0.5 = 12, 12 × 1 = 12, 12 × 1.5 = 18, 18 × 2 = 36 and 36 × 2.5 = 90. So X = 12. Check: the known terms 12, 18, 36, 90 already show the factors 1.5, 2 and 2.5, so the first two factors must be 0.5 and 1, and 24 × 0.5 = 12 also gives 12 × 1 = 12 for the third term.
+
+Q 37 | qa | Arithmetic
+P and Q walk along a circular track. They start at 5:00 a.m. from the same point in opposite directions. P walks at an average speed of 5 rounds per hour and Q walks at an average speed of 3 rounds per hour. How many times will they cross each other between 5:20 a.m. and 7:00 a.m.?
+(1) 12
+(2) 13
+(3) 14
+(4) 15
+= 2
+~ Walking in opposite directions, they close the gap at 5 + 3 = 8 rounds per hour, so they meet every 1/8 hour = 7.5 minutes after 5:00: at 5:07:30, 5:15, 5:22:30, ... Between 5:20 and 7:00 (20 to 120 minutes after the start) the meetings are at 7.5k minutes for k = 3 to 15, that is from 5:22:30 to 6:52:30: 15 − 3 + 1 = 13 times. The 16th meeting falls exactly at 7:00, the end of the period; the official key reads "between" as excluding it, while counting it gives 14, option (c). (Official key; some sources differ.)
+
+Q 38 | lr | Analytical Reasoning
+If P = +, Q = −, R = ×, S = ÷, then insert the proper notations between the successive numbers in the equation 60_15_3_20_4 = 20:
+(1) SPRQ
+(2) QRPS
+(3) QRSP
+(4) SPQR
+= 2
+~ Option (b) QRPS turns the expression into 60 − 15 × 3 + 20 ÷ 4. By BODMAS, 15 × 3 = 45 and 20 ÷ 4 = 5, so 60 − 45 + 5 = 20, as required. The others fail: (a) SPRQ gives 60 ÷ 15 + 3 × 20 − 4 = 4 + 60 − 4 = 60; (c) QRSP gives 60 − 15 × 3 ÷ 20 + 4 = 60 − 2.25 + 4 = 61.75; (d) SPQR gives 60 ÷ 15 + 3 − 20 × 4 = 4 + 3 − 80 = −73.
+
+Q 39 | qa | Arithmetic
+A tram overtakes 2 persons X and Y walking at an average speed of 3 km/hr and 4 km/hr in the same direction and completely passes them in 8 seconds and 9 seconds respectively. What is the length of the tram?
+(1) 15 m
+(2) 18 m
+(3) 20 m
+(4) 24 m
+= 3
+~ Let the tram's speed be v km/hr and its length L. Passing a walker in the same direction uses the relative speed, so L = (v − 3) × 8 s = (v − 4) × 9 s (speeds in the same units). Then 8v − 24 = 9v − 36, so v = 12 km/hr. L = (12 − 3) km/hr × 8 s = 9 × 5/18 m/s × 8 s = 2.5 × 8 = 20 m. Check with Y: (12 − 4) = 8 km/hr = 20/9 m/s, and 20/9 × 9 = 20 m.
+
+Q 40 | qa | Number System
+If N² = 12345678987654321, then how many digits does the number N have?
+(1) 8
+(2) 9
+(3) 10
+(4) 11
+= 2
+~ N² = 12345678987654321 has 17 digits, so 10¹⁶ ≤ N² < 10¹⁷ and therefore 10⁸ ≤ N < 10⁹ (since 10¹⁸ = (10⁹)² is larger), which means N has 9 digits. In fact N = 111111111 (nine 1s): the squares 11² = 121, 111² = 12321 and so on rise to 9 and fall back, and 111111111² = 12345678987654321. A number with d digits has a square of 2d − 1 or 2d digits; 17 digits gives d = 9.
+
+Q 41 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Over the next 30 years, many countries are promising to move to net-zero carbon, implying that household emissions will have to be cut to close to nothing. A leading climate scientist reckons that, at best, half the reduction might be achieved through demand-side measures, such as behavioural changes by individuals and households. And even that would require companies and governments to provide more incentives to change through supply-side investments to make low-carbon options cheaper and more widely available.
+Which one of the following statements best reflects the central idea conveyed by the passage?
+(1) Moving to net-zero carbon is possible only by the reduction in household emissions.
+(2) Low-carbon behaviour in people can be brought about by incentivising them.
+(3) Cheaper goods and services can be made available to people by using low-carbon technologies.
+(4) Manufacturing industries that use low-carbon technologies should be provided with subsidies.
+= 2
+~ The passage says net-zero means household emissions must fall almost to nothing, that at best half of this can come from behavioural (demand-side) change, and that even this needs companies and governments to offer more incentives, through supply-side investment, so that low-carbon options become cheaper and more widely available. Its central idea is therefore that people's low-carbon behaviour has to be induced through incentives: (b). Option (a) adds "only", whereas the passage presents household cuts as what net-zero implies, not as the sole route. Option (c) reverses the logic: investment is meant to make low-carbon options cheaper, not low-carbon technology to make goods in general cheaper. Option (d): subsidies to manufacturing industries are never mentioned.
+Q 42 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Over the next 30 years, many countries are promising to move to net-zero carbon, implying that household emissions will have to be cut to close to nothing. A leading climate scientist reckons that, at best, half the reduction might be achieved through demand-side measures, such as behavioural changes by individuals and households. And even that would require companies and governments to provide more incentives to change through supply-side investments to make low-carbon options cheaper and more widely available.
+With reference to the above passage, the following assumptions have been made:
+I. Supply-side investments in companies can result in low-carbon behaviour in people.
+II. People are not capable of adapting low-carbon behaviour without the involvement of Government and Companies.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ Assumption I is valid: the author says behavioural change by individuals and households would require companies and governments to provide incentives through supply-side investments that make low-carbon options cheaper and more widely available, which takes for granted that such investment can bring about low-carbon behaviour in people. Assumption II is not valid: the passage is about what is needed to achieve the reduction on the required scale, not about people being incapable of changing on their own; "not capable ... without the involvement of Government and Companies" is an absolute claim the passage does not make. Hence I only. (Official key; some sources differ.)
+Q 43 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In only 50 years, the world’s consumption of raw materials has nearly quadrupled, to more than 100 billion tons. Less than 9% of this is reused. Batteries of old vehicles contain materials such as lithium, cobalt, manganese and nickel that are pricey and can be hard to obtain. Supply chains are long and complicated. Buyers’ risks are being aggravated by their suppliers’ poor environmental and labour standards. Reusing materials makes sense. Once batteries reach the ends of their lives, they should go back to a factory where their ingredients can be recovered and put into new batteries.
+Which one of the following statements best reflects the most logical, rational and pragmatic message conveyed by the passage?
+(1) Green economy is not possible without reusing critical minerals.
+(2) Every sector of economy should adapt the reuse of material resources immediately.
+(3) Circular economy can be beneficial for sustainable growth.
+(4) Circular use of material resources is the only option for some industries for their survival.
+= 3
+~ The passage notes that raw-material consumption has nearly quadrupled in 50 years while less than 9% is reused, that battery minerals such as lithium and cobalt are pricey and hard to obtain, and that long supply chains and suppliers' poor standards add to buyers' risks. It concludes that reusing materials makes sense and that spent batteries should be recovered and turned into new ones. The most logical and pragmatic message is that a circular economy can help sustainable growth: (c). Option (a) is too absolute ("not possible without"), option (b) overreaches with "every sector" and "immediately", and option (d) calls circular use the "only option" for survival, which the passage never says.
+Q 44 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In only 50 years, the world’s consumption of raw materials has nearly quadrupled, to more than 100 billion tons. Less than 9% of this is reused. Batteries of old vehicles contain materials such as lithium, cobalt, manganese and nickel that are pricey and can be hard to obtain. Supply chains are long and complicated. Buyers’ risks are being aggravated by their suppliers’ poor environmental and labour standards. Reusing materials makes sense. Once batteries reach the ends of their lives, they should go back to a factory where their ingredients can be recovered and put into new batteries.
+With reference to the above passage, the following assumptions have been made:
+I. Automobile factories are examples of the circular economy.
+II. Economic growth is compatible with circular use of mineral resources.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ Assumption I is not valid: the passage only recommends that batteries at the end of their lives should go back to a factory where their ingredients can be recovered; it does not say that automobile factories already practise or exemplify a circular economy. Assumption II is valid: the author argues for reusing materials because fresh minerals are pricey, hard to obtain and supplied through long, risky chains, which presumes that circular use of mineral resources can support, rather than hold back, economic activity and growth. Hence II only.
+Q 45 | qa | Arithmetic
+A set (X) of 20 pipes can fill 70% of a tank in 14 minutes. Another set (Y) of 10 pipes fills 3/8th of the tank in 6 minutes. A third set (Z) of 16 pipes can empty half of the tank in 20 minutes. If half of the pipes of set X are closed and only half of the pipes of set Y are open, and all pipes of the set (Z) are open, then how long will it take to fill 50% of the tank?
+(1) 8 minutes
+(2) 10 minutes
+(3) 12 minutes
+(4) 16 minutes
+= 4
+~ Work out the rate of one pipe. X: 0.7 ÷ (20 × 14) = 1/400 of the tank per minute. Y: (3/8) ÷ (10 × 6) = 1/160 per minute. Z (emptying): (1/2) ÷ (16 × 20) = 1/640 per minute. With 10 pipes of X, 5 of Y and all 16 of Z open, the net rate = 10/400 + 5/160 − 16/640 = 1/40 + 1/32 − 1/40 = 1/32 of the tank per minute. Time to fill 50% = (1/2) ÷ (1/32) = 16 minutes. Quick check: the 10 open X pipes (1/40) exactly cancel the 16 Z pipes (1/40), so only the 5 Y pipes count, and they fill 5 × 16/160 = 1/2 of the tank in 16 minutes.
+Q 46 | qa | Number System
+If n is a natural number, then what is the number of distinct remainders of (1ⁿ + 2ⁿ) when divided by 4?
+(1) 0
+(2) 1
+(3) 2
+(4) 3
+= 3
+~ For n = 1, 1ⁿ + 2ⁿ = 1 + 2 = 3, which leaves remainder 3 on division by 4. For every n ≥ 2, 2ⁿ is a multiple of 4 while 1ⁿ = 1, so 1ⁿ + 2ⁿ leaves remainder 1 (for example 5, 9, 17, 33 for n = 2, 3, 4, 5). So only two distinct remainders occur, 3 and 1. Option (b) 1 overlooks the case n = 1; remainders 0 and 2 can never occur because 1ⁿ + 2ⁿ is always odd.
+Q 47 | qa | Number System
+Let P = QQQ be a 3-digit number. What is the HCF of P and 481?
+(1) 1
+(2) 13
+(3) 37
+(4) 481
+= 3
+~ A number with three equal digits QQQ equals Q × 111 = Q × 3 × 37, where Q is a digit from 1 to 9, and 481 = 13 × 37. So 37 is always a common factor. The prime 13 never divides P, because 3Q takes only the values 3, 6, …, 27, none of which is a multiple of 13. Hence HCF(P, 481) = 37 for every such P; for example 222 = 6 × 37 and 999 = 27 × 37 both give HCF 37 with 481. Options (b) and (d) would need 13 to divide QQQ, and (a) ignores the common factor 37.
+Q 48 | qa | Number System
+What is the 489th digit in the number 123456789101112 . . .?
+(1) 0
+(2) 3
+(3) 6
+(4) 9
+= 4
+~ The one-digit numbers 1–9 use 9 places. The two-digit numbers 10–99 use 90 × 2 = 180 places, bringing the total to 189. That leaves 489 − 189 = 300 places among the three-digit numbers, which is exactly 300 ÷ 3 = 100 numbers: 100, 101, …, 199. So the 489th digit is the last digit of 199, i.e. 9. Check: 9 + 180 + 100 × 3 = 489, so the string up to 199 ends exactly at the 489th place.
+Q 49 | lr | Logical Reasoning
+A mobile phone has been stolen. There are 3 suspects P, Q and R. They were questioned knowing that only one of them is guilty. Their responses are as follows:
+P : I did not steal. Q stole it.
+Q : R did not steal. I did not steal.
+R : I did not steal. I do not know who did it.
+Who stole the mobile phone?
+(1) P
+(2) Q
+(3) R
+(4) Cannot be concluded
+= 4
+~ The question states no rule linking guilt to lying or innocence to truth-telling, so the statements alone cannot fix the thief. Even if we assume that the two innocent suspects tell the truth, two cases fit. If P stole it, all of Q's and R's statements are true (and both of P's are false). If Q stole it, P's and R's statements are true and Q's "I did not steal" is false. Only R is ruled out, since P's "Q stole it" would then be false although P is innocent. P alone fits only if one further assumes that the thief lies in both his statements (Q's "R did not steal" would be true), a rule the question does not give. Hence the thief cannot be concluded.
+Q 50 | lr | Puzzles & Arrangements
+Three teams P, Q, R participated in a tournament in which the teams play with one another exactly once. A win fetches a team 2 points and a draw 1 point. A team gets no point for a loss. Each team scored exactly one goal in the tournament. The team P got 3 points, Q got 2 points and R got 1 point. Which of the following statements is/are correct?
+I. The result of the match between P and Q is a draw with the score 0 – 0.
+II. The number of goals scored by R against Q is 1.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ P's 3 points = one win + one draw; R's 1 point = one draw + one loss; Q's 2 points = two draws, or a win and a loss. If Q won and lost, the only draw is P–R, with P beating Q and Q beating R; P's single goal must then come in beating Q, so P–R is 0–0, R's goal must come against Q, and Q's goal also against R, making Q–R 1–1, not a win: contradiction. So Q drew both games and P beat R. P's only goal came in the 1–0 win over R, so P–Q was 0–0 (I correct); Q's goal and R's goal then both came in their 1–1 draw (II correct). Both statements hold, and this is the only result pattern possible.
+Q 51 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+It is hard to predict how changes in the climate and the atmosphere’s chemistry will affect the prevalence and virulence of agricultural diseases. But there is a risk that such changes will make some plant infections more common in all climatic zones, perhaps catastrophically so. Part of the problem is that centuries of selective breeding have refined the genomes of most high-value crops. They are spectacular at growing in today’s conditions but genetic variations that are not immediately useful to them have been bred out. This is good for yields but bad for coping with changes. A minor disease or even an unknown one could suddenly rampage through a genetically honed crop.
+Which one of the following statements best reflects the central idea conveyed by the passage?
+(1) Global climate change adversely affects the productivity of crops.
+(2) Our total dependence on genetically honed crops entails possible food insecurity.
+(3) Our food security should not depend on agricultural productivity alone.
+(4) Genetically honed crops should be replaced with their wild varieties in our present cultivation practices.
+= 2
+~ The passage warns that climate change may make some plant infections more common in all climatic zones, and that the danger is magnified because selective breeding has removed genetic variation from most high-value crops: they yield well but cope badly with change, so a minor or unknown disease could suddenly rampage through a genetically honed crop. The central idea is that relying on such genetically honed crops puts our food supply at risk: (b). Option (a) states a general fall in productivity, whereas the passage says the effects are hard to predict and stresses disease vulnerability. Option (c) is not discussed, and option (d) is a prescription (replacing crops with wild varieties) that the passage never makes.
+Q 52 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+It is hard to predict how changes in the climate and the atmosphere’s chemistry will affect the prevalence and virulence of agricultural diseases. But there is a risk that such changes will make some plant infections more common in all climatic zones, perhaps catastrophically so. Part of the problem is that centuries of selective breeding have refined the genomes of most high-value crops. They are spectacular at growing in today’s conditions but genetic variations that are not immediately useful to them have been bred out. This is good for yields but bad for coping with changes. A minor disease or even an unknown one could suddenly rampage through a genetically honed crop.
+With reference to the above passage, the following assumptions have been made:
+I. Global climate change can result in the migration of several plant diseases to new areas.
+II. Scientific understanding of the wild relatives of our present crops would enable us to strengthen food security.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Assumption I is valid: the author fears that climate change will make some plant infections more common in all climatic zones, which presumes that diseases can spread into areas where they were not common before. Assumption II is valid as an implicit premise: the problem the author identifies is that selective breeding has bred out genetic variation that crops need for coping with change, which takes for granted that such variation, still found in the wild relatives of present crops, is valuable, so understanding it scientifically would help make food supply more secure. The passage does not name wild relatives, but the argument rests on this idea. Hence both I and II. (Official key; some sources differ.)
+Q 53 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+“A good statesman, like any other sensible human being, learns more from his opponents than from his fervent supporters. For his supporters will push him to disaster unless his opponents show him where the dangers are. So if he is wise he will often pray to be delivered from his friends, because they will ruin him. But, though it hurts, he ought also to pray never to be left without opponents; for they keep him on the path of reason and good sense. The national unity of free people depends upon a sufficiently even balance of political power to make it impracticable for the administration to be arbitrary and for opposition to be revolutionary and irreconcilable.”
+Which one of the following statements best reflects the critical message conveyed by the author of the passage?
+(1) Without opposition parties, the administration in a democracy gets to become more responsible.
+(2) Democracy needs to have revolutionaries in opposition to keep the government alert.
+(3) Rulers in a democracy need the support of opposition for their political survival.
+(4) In a democracy, the opposition is indispensable for the balance of political power and good governance.
+= 4
+~ The quotation says a statesman learns more from opponents than from fervent supporters, should pray never to be left without opponents because they keep him on the path of reason and good sense, and that national unity depends on an even balance of political power so that the administration cannot be arbitrary. This makes the opposition indispensable for the balance of political power and for good governance: (d). Option (a) contradicts the passage. Option (b) is wrong because the passage wants the opposition not to be revolutionary and irreconcilable. Option (c) misreads it: opponents keep the ruler on the right path; the passage does not say he needs their support for his political survival.
+Q 54 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+“A good statesman, like any other sensible human being, learns more from his opponents than from his fervent supporters. For his supporters will push him to disaster unless his opponents show him where the dangers are. So if he is wise he will often pray to be delivered from his friends, because they will ruin him. But, though it hurts, he ought also to pray never to be left without opponents; for they keep him on the path of reason and good sense. The national unity of free people depends upon a sufficiently even balance of political power to make it impracticable for the administration to be arbitrary and for opposition to be revolutionary and irreconcilable.”
+With reference to the above passage, the following assumptions have been made:
+I. In a democracy, a strong opposition is required only if the Head of Government is indifferent.
+II. The more aggressive the opposition, the better is the governance in a democracy.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 4
+~ Assumption I is not valid: the passage says a wise statesman should pray never to be left without opponents, because they always keep him on the path of reason; it attaches no condition such as an indifferent Head of Government, so "only if" has no basis. Assumption II is not valid: the passage asks for a "sufficiently even balance of political power" that makes it impracticable for the opposition to be "revolutionary and irreconcilable"; it does not say that a more aggressive opposition means better governance, and an ever more aggressive opposition would upset that balance. Hence neither I nor II.
+Q 55 | lr | Analytical Reasoning
+P is the brother of Q and R. S is R’s mother. T is P’s father. How many of the following statements are definitely true?
+I. S and T are a couple.
+II. Q is T’s son.
+III. T is Q’s father.
+IV. S is P’s mother.
+V. R is T’s daughter.
+VI. P is S’s son.
+Select the correct answer using the code given below:
+(1) Only two
+(2) Only three
+(3) Only four
+(4) Only five
+= 3
+~ P is the brother of Q and R, so P is male and P, Q and R are siblings. S is R's mother and T is P's father, so S is the mother and T the father of all three. Definitely true: I (S and T are a couple), III (T is Q's father), IV (S is P's mother) and VI (P is S's son, since P is a brother, i.e. male). Not definitely true: II (Q is T's son) and V (R is T's daughter), because the genders of Q and R are not given. So exactly four statements are definitely true.
+Q 56 | lr | Series & Patterns
+If NO is coded as 210, NOT is coded as 4200 and NOTE is coded as 21000, then how is NOTES coded?
+(1) 399000
+(2) 420000
+(3) 440000
+(4) 630000
+= 1
+~ The code is the product of the alphabetical positions of the letters: N = 14, O = 15, T = 20, E = 5, S = 19. Check: NO = 14 × 15 = 210; NOT = 210 × 20 = 4200; NOTE = 4200 × 5 = 21000, all matching the given codes. Hence NOTES = 21000 × 19 = 399000. Option (b) 420000 would need S = 20 (the value of T), (c) 440000 is not a multiple of 21000, and (d) 630000 would need a letter value of 30.
+Q 57 | lr | Series & Patterns
+If FRANCE is coded as 654321 and GERMANY is coded as 9158437, then how is YEMEN coded?
+(1) 54321
+(2) 81913
+(3) 71913
+(4) 71813
+= 4
+~ Each letter is replaced by a fixed digit. From FRANCE = 654321: F = 6, R = 5, A = 4, N = 3, C = 2, E = 1. GERMANY = 9158437 confirms E = 1, R = 5, A = 4, N = 3 and adds G = 9, M = 8, Y = 7. So YEMEN = Y, E, M, E, N = 7, 1, 8, 1, 3 = 71813. Option (c) 71913 gives M the digit 9, which belongs to G; option (b) 81913 also misreads Y; option (a) 54321 simply copies the tail of FRANCE's code.
+Q 58 | qa | Number System
+The 5-digit number PQRST (all distinct digits) is such that T ≠ 0. P is thrice T. S is greater than Q by 4, while Q is greater than R by 3. How many such 5-digit numbers are possible?
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 2
+~ P = 3T with T ≠ 0 and P ≤ 9 gives (T, P) = (1, 3), (2, 6) or (3, 9). Q = R + 3 and S = Q + 4 = R + 7 ≤ 9 gives (R, Q, S) = (0, 3, 7), (1, 4, 8) or (2, 5, 9). Of the 9 combinations keep those with all five digits distinct: with T = 1, P = 3 only (2, 5, 9) works, giving 35291; with T = 2, P = 6, both (0, 3, 7) and (1, 4, 8) work, giving 63072 and 64182; with T = 3, P = 9 only (1, 4, 8) works, giving 94183. Hence 4 numbers (confirmed by checking all 5-digit numbers).
+Q 59 | qa | Arithmetic
+X can complete one-third of a certain work in 6 days, Y can complete one-third of the same work in 8 days and Z can complete three-fourth of the same work in 12 days. All of them work together for n days and then X and Z quit and Y alone finishes the remaining work in 8⅔ days. What is n equal to?
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 2
+~ X does 1/3 of the work in 6 days, so alone needs 18 days; Y needs 3 × 8 = 24 days; Z does 3/4 in 12 days, so needs 16 days. Together they do 1/18 + 1/24 + 1/16 = (8 + 6 + 9)/144 = 23/144 of the work per day. Y alone works 8⅔ = 26/3 days and does (26/3) × (1/24) = 13/36 of the work. So the joint n days covered 1 − 13/36 = 23/36 = 92/144 of the work, and n = (92/144) ÷ (23/144) = 4. Check: 4 × 23/144 + 13/36 = 92/144 + 52/144 = 1.
+Q 60 | lr | Series & Patterns
+What is X in the sequence 1, 3, 6, 11, 18, X, 42?
+(1) 26
+(2) 27
+(3) 29
+(4) 30
+= 3
+~ The differences between consecutive terms are 2, 3, 5, 7, i.e. the successive prime numbers. The next two differences are therefore 11 and 13, so X = 18 + 11 = 29, and 29 + 13 = 42 matches the given last term. The other options fail this check: 26, 27 and 30 would need steps of 8, 9 and 12 from 18 (not the next prime) and steps of 16, 15 and 12 to reach 42 (not 13).
+
+Q 61 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+There has been no democracy that has grown economically without corporate capitalism. It helps in modernizing the economy and enabling the transition from rural to urban, and agriculture to industry and services, which are inevitable with growth. It generates jobs — and there is no other way to fix a country’s unemployment challenge without a further impetus to private business. Big companies can operate on a large scale and become competitive both domestically and externally. A vibrant corporate capitalist base also leads to additional revenues for the State — which in turn, can be used for greater welfare for the marginalized and creating a more level playing field in terms of opportunities.
+Which one of the following statements best reflects the critical message conveyed by the author of the passage?
+(1) Corporate capitalism is important for economic growth of a State and also for democracy.
+(2) Corporate capitalism is imperative for a modern State to achieve its political objectives.
+(3) No State can ensure its economic survival for long without the role of corporate capitalism.
+(4) Corporate capitalism and democracy have mutual dependence for their continued existence.
+= 1
+~ The passage opens by tying the two together (“no democracy that has grown economically without corporate capitalism”) and then lists what corporate capitalism does for the economy: modernisation, the shift from rural to urban and from farming to industry and services, jobs, competitiveness at home and abroad, and extra State revenue for welfare of the marginalized. Option (a) captures both strands: corporate capitalism matters for a State’s economic growth and for democracy. Option (b) brings in political objectives, which the passage never discusses. Option (c) is an overstatement: the passage speaks of growth in democracies, not of the economic survival of every State. Option (d) adds a two-way dependence; nothing is said about capitalism needing democracy. Hence option (a).
+
+Q 62 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+There has been no democracy that has grown economically without corporate capitalism. It helps in modernizing the economy and enabling the transition from rural to urban, and agriculture to industry and services, which are inevitable with growth. It generates jobs — and there is no other way to fix a country’s unemployment challenge without a further impetus to private business. Big companies can operate on a large scale and become competitive both domestically and externally. A vibrant corporate capitalist base also leads to additional revenues for the State — which in turn, can be used for greater welfare for the marginalized and creating a more level playing field in terms of opportunities.
+With reference to the above passage, the following assumptions have been made :
+I. Corporate capitalism promotes the growth of labour force and provides more employment opportunities.
+II. Poor and marginalized sections of population are benefited by corporate capitalism due to trickle-down effect.
+Which of the above assumptions is/are valid?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Assumption I is valid: the author says corporate capitalism “generates jobs” and that there is no other way to fix unemployment without a further impetus to private business, so it is taken to expand the employed workforce and job opportunities. The key also accepts assumption II: the author holds that the gains of a vibrant corporate base flow down to the poor, because the extra State revenue it generates “can be used for greater welfare for the marginalized” and a more level playing field; the key reads this downward spread of benefits from big business as a trickle-down effect. Strictly, the passage routes the benefit through State welfare spending rather than an automatic trickle-down, which is why some solutions accept I only, option (a). Keyed answer: both, option (c). (Official key; some sources differ.)
+
+Q 63 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+“A network of voluntary associations stands as a ‘buffer’ between the relatively powerless individual and the potentially powerful State.”
+Which one of the following statements reflects the best explanation of the above passage?
+(1) It emphasizes the inability of the State to enforce its will in practice against the opposition of certain groups within it.
+(2) It is a cooperative organization for the promotion of the well-being and development of the personality of its members.
+(3) It takes individuals out of a state of isolation and gives them a chance to participate in the common endeavour.
+(4) It permits citizens to have a variety of loyalties and allegiance.
+= 3
+~ The individual is “relatively powerless” only when standing alone before a “potentially powerful” State. A network of voluntary associations becomes a buffer because it draws individuals out of isolation and lets them act together in a common endeavour; organised in this way they are no longer powerless, which is the explanation in option (c). Option (a) overstates: the State is called potentially powerful, not unable to enforce its will. Option (b) describes the internal purpose of a single cooperative, not the buffering role of a network between citizen and State. Option (d), multiple loyalties, is a pluralist idea that the sentence does not state; several coaching solutions nevertheless chose (d). Keyed answer: option (c). (Official key; some sources differ.)
+
+Q 64 | qa | Number System
+Consider the following statements :
+I. There exists a natural number which when increased by 50% can have its number of factors unchanged.
+II. There exists a natural number which when increased by 150% can have its number of factors unchanged.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ One example is enough for each statement. Statement I: 2 increased by 50% becomes 3; both are prime, with 2 factors each. Statement II: 2 increased by 150% becomes 2 × 2.5 = 5; again both are prime with 2 factors. A single number works for both as well: 14 has factors 1, 2, 7, 14; 14 + 50% = 21 (1, 3, 7, 21) and 14 + 150% = 35 (1, 5, 7, 35), all with 4 factors. Other examples: 10 → 15 (4 factors each) for I and 6 → 15 for II. Since both statements are true, the answer is option (c).
+
+Q 65 | lr | Directions, Clocks & Calendars
+There are 7 places A, B, C, D, E, F and G in a city connected by various roads AB, AC, CD, DE, BF, EG and FG. A is 6 km south of B. A is 10 km west of C. D is 5 km east of E. C is 6 km north of D. F is 9 km west of B. F is 12 km north of G. A person travels from D to F through these roads. What is the distance covered by the person?
+(1) 20 km
+(2) 25 km
+(3) 31 km
+(4) 37 km
+= 3
+~ Place B at (0, 0), with east and north positive. Then A = (0, −6), C = (10, −6), D = (10, −12), E = (5, −12), F = (−9, 0) and G = (−9, −12); every road runs straight north–south or east–west. Two routes join D to F. Route 1: D → C → A → B → F = 6 + 10 + 6 + 9 = 31 km. Route 2: D → E → G → F = 5 + 14 + 12 = 31 km, since E and G are both 12 km south of B, so EG = 5 + 9 = 14 km. Both routes give 31 km, so the answer does not depend on which road the person takes; no route along these roads gives 20, 25 or 37 km. Hence option (c).
+
+Q 66 | lr | Series & Patterns
+In a certain code if 64 is written as 343 and 216 is written as 729, then how is 512 written in that code?
+(1) 1000
+(2) 1331
+(3) 1728
+(4) 2197
+= 2
+~ All the numbers are perfect cubes: 64 = 4³ is written as 343 = 7³, and 216 = 6³ is written as 729 = 9³. In each case the cube root is increased by 3 (4 → 7, 6 → 9) and the result is cubed. So 512 = 8³ becomes (8 + 3)³ = 11³ = 1331. The other options are cubes of 10, 12 and 13 (adding 2, 4 and 5 to the cube root), which do not follow the +3 rule. Hence option (b).
+
+Q 67 | qa | Number System
+What is the remainder when 9³ + 9⁴ + 9⁵ + 9⁶ + ... + 9¹⁰⁰ is divided by 6?
+(1) 0
+(2) 1
+(3) 2
+(4) 3
+= 1
+~ 9 leaves remainder 3 on division by 6, and 3 × 3 = 9 again leaves 3, so every power 9ⁿ leaves remainder 3. The series runs from 9³ to 9¹⁰⁰, i.e., 100 − 3 + 1 = 98 terms. The sum therefore leaves the same remainder as 98 × 3 = 294, and 294 = 6 × 49, so the remainder is 0. Another way: each power of 9 is an odd multiple of 3; the sum of 98 (an even number of) odd terms is even, and an even multiple of 3 is divisible by 6. Hence option (a).
+
+Q 68 | qa | Data Interpretation & Sufficiency
+A question is given followed by two Statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: What is the smallest 1-digit number having exactly 4 distinct factors?
+Statement I: 2 is one of the factors.
+Statement II: 3 is one of the factors.
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question can be answered even without using any of the Statements.
+= 4
+~ Check the 1-digit numbers: 1 has one factor, primes (2, 3, 5, 7) have two, 4 and 9 have three, while 6 (1, 2, 3, 6) and 8 (1, 2, 4, 8) have exactly four. The smallest such number is 6, and this follows from the question alone. The statements (2 is a factor, 3 is a factor) are true of 6, and either alone would also lead to 6 (with 2: 6 or 8; with 3: only 6), but neither adds information that is needed; option (d) is meant for exactly this case, where the question can be answered without using either statement, so it is preferred over (b). Hence option (d).
+
+Q 69 | qa | Data Interpretation & Sufficiency
+A question is given followed by two Statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: Let P, Q, R, S be distinct non-zero digits. If PP × PQ = RRSS, where P ≤ 3 and Q ≤ 4, then what is Q equal to?
+Statement I: R = 1.
+Statement II: S = 2.
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question can be answered even without using any of the Statements.
+= 4
+~ RRSS is a 4-digit number. For P = 1, 11 × 1Q is at most 11 × 14 = 154, and for P = 2, 22 × 2Q is at most 22 × 24 = 528; both are 3-digit, so P = 3. With Q ≤ 4 and Q ≠ P: 33 × 31 = 1023, 33 × 32 = 1056 and 33 × 34 = 1122. Only 1122 has the form RRSS, giving R = 1, S = 2 and Q = 4 (digits 3, 4, 1, 2 are distinct and non-zero). So the question is answered from its own conditions; the statements R = 1 and S = 2 only agree with this result, and since neither is needed, (d) is the precise choice rather than (b). Hence option (d).
+
+Q 70 | lr | Logical Reasoning
+A question is given followed by two Statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: How is Q related to P?
+Statement I: P has two sisters, R and S.
+Statement II: R’s father is the brother of Q.
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question cannot be answered even using any of the Statements.
+= 4
+~ Statement I alone says nothing about Q. Statement II alone does not mention P. Together: R is P’s sister, so R’s father is also P’s father, and that man is Q’s brother. Q is therefore a sibling of P’s father, i.e., P’s paternal uncle or paternal aunt. The gender of Q is not given anywhere (only R’s father is known to be male), so the exact relation (uncle or aunt) cannot be fixed even with both statements; this rules out (c), which needs the two statements together to give a definite answer. Hence option (d), “The Question cannot be answered even using any of the Statements”.
+
+Q 71 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+A single number for inflation is an aggregate across different commodities and services — the price rise differs for different items of consumption. So, the single number is arrived at by assigning weights to different commodities and services. For WPI, the weights in production are used; for CPI, the consumption basket is used. But people are not homogeneous. The consumption basket is vastly different for the poor, the middle classes, and the rich. Hence, the CPI is different for each of these classes and a composite index requires averaging the baskets.
+Which one of the following statements best reflects the most logical, rational and crucial message conveyed by the passage?
+(1) We must use WPI exclusively in measuring price rise and CPI should be done away with.
+(2) The present calculation of inflation rate does not correctly measure price rise of individual item/commodity.
+(3) Inflation data under-presents services in the consumption basket.
+(4) Knowledge of inflation rate is not really of any use to anybody in the country.
+= 2
+~ The passage stresses that the headline inflation figure is “an aggregate” while “the price rise differs for different items of consumption”; it is produced by weighting items, and even the CPI differs across the poor, middle classes and rich, so a composite index has to average different baskets. The message is that the single number does not tell the actual price rise of any particular item, which is option (b). Option (a) is not suggested: the passage simply explains how WPI and CPI are built and favours neither. Option (c) is unsupported; nothing is said about services being under-represented. Option (d) is an extreme conclusion that the passage never draws. Hence option (b).
+
+Q 72 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Trust stands commonly defined as being vulnerable to others. Entrepreneurship implies trust in others and willingness to expose oneself to betrayal. Trust in expert systems is the essence of globalizing behaviour; trust itself emerges as a super-commodity in the social market and defines the characteristics of goods and services in a global market. Trusting conduct also means holding others in good esteem, and an optimism that they are, or will be, competent in certain respects.
+Which one of the following statements best reflects the crux of the passage?
+(1) Trustworthiness cannot be expected in entrepreneurship.
+(2) Trustworthy people are the most vulnerable people.
+(3) No economic activity is possible without being exposed to betrayal.
+(4) Trust is important though it entails risk.
+= 4
+~ The passage holds two ideas together. Trust means being vulnerable and, in entrepreneurship, willingness to expose oneself to betrayal (the risk). Yet trust is the essence of globalizing behaviour, a “super-commodity” that defines goods and services in the global market, and reflects esteem and optimism about others (the importance). Option (d) combines both. Option (a) contradicts the passage, which says entrepreneurship implies trust. Option (b) confuses the trusting person, who is vulnerable, with trustworthy people. Option (c) overgeneralises from entrepreneurship to every economic activity. Hence option (d).
+
+Q 73 | qa | Data Interpretation & Sufficiency
+A question is given followed by two Statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: In a football match, team P playing against Q was behind by 3 goals with 10 minutes remaining. Does team P win the match?
+Statement I: Team P scored 4 goals in the last 10 minutes.
+Statement II: Team Q scored a total of 4 goals in the match.
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question cannot be answered even using any of the Statements.
+= 4
+~ Let Q have q goals and P have q − 3 goals with 10 minutes left. Statement I alone: P ends on q + 1, but Q’s late goals are unknown (no goal: P wins; one: draw; two or more: P loses). Statement II alone says nothing about P’s late goals. Together: Q’s total is 4, so q is 3 or 4 (q ≥ 3 because P cannot have a negative score). If q = 4, P had 1 and finishes 5–4, a win; if q = 3, P had 0 and Q scored once more, so P finishes 4–4, a draw. Both cases fit the statements, so whether P won cannot be decided. Hence option (d).
+
+Q 74 | qa | Data Interpretation & Sufficiency
+A question is given followed by two Statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: Is (p + q)² − 4pq, where p, q are natural numbers, positive?
+Statement I: p < q.
+Statement II: p > q.
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question can be answered even without using any of the Statements.
+= 2
+~ (p + q)² − 4pq = p² + 2pq + q² − 4pq = (p − q)². This square is positive whenever p ≠ q and is zero when p = q. Without the statements the answer is unknown (p = q = 1 gives 0, p = 1, q = 2 gives 1), so option (d) fails. Statement I (p < q) alone guarantees p ≠ q, so the expression is positive; Statement II (p > q) alone does the same. Each statement alone answers the question with a definite “yes”. Hence option (b).
+
+Q 75 | qa | Algebra
+In a T20 cricket match, three players X, Y and Z scored a total of 37 runs. The ratio of number of runs scored by X to the number of runs scored by Y is equal to ratio of number of runs scored by Y to number of runs scored by Z.
+Value-I = Runs scored by X
+Value-II = Runs scored by Y
+Value-III = Runs scored by Z
+Which one of the following is correct?
+(1) Value-I < Value-II < Value-III
+(2) Value-III < Value-II < Value-I
+(3) Value-I < Value-III < Value-II
+(4) Cannot be determined due to insufficient data
+= 4
+~ X : Y = Y : Z means Y² = XZ, so the three scores form a geometric progression, with X + Y + Z = 37. Checking whole-number scores, the only solutions are X = 9, Y = 12, Z = 16 (9 + 12 + 16 = 37 and 12² = 144 = 9 × 16) and the reverse, X = 16, Y = 12, Z = 9. The first gives Value-I < Value-II < Value-III and the second gives Value-III < Value-II < Value-I. Both satisfy the data, so the order cannot be fixed. Option (c) is impossible because Y, the geometric mean, always lies between X and Z. Hence option (d).
+
+Q 76 | qa | Algebra
+Let p + q = 10, where p, q are integers.
+Value-I = Maximum value of p × q when p, q are positive integers.
+Value-II = Maximum value of p × q when p ≥ −6, q ≥ −4.
+Which one of the following is correct?
+(1) Value-I < Value-II
+(2) Value-II < Value-I
+(3) Value-I = Value-II
+(4) Cannot be determined due to insufficient data
+= 3
+~ With p + q = 10, p × q = p(10 − p) = 25 − (p − 5)², which is largest at p = q = 5. Value-I: p = q = 5 are positive integers, so Value-I = 25. Value-II: the conditions p ≥ −6 and q ≥ −4 allow negative values (p from −6 to 14), but negative choices only reduce the product (for example p = 14, q = −4 gives −56), and p = q = 5 is still allowed, so Value-II = 25 as well. The two values are equal. Hence option (c).
+
+Q 77 | qa | Number System
+Consider a set of 11 numbers :
+Value-I = Minimum value of the average of the numbers of the set when they are consecutive integers ≥ −5.
+Value-II = Minimum value of the product of the numbers of the set when they are consecutive non-negative integers.
+Which one of the following is correct?
+(1) Value-I < Value-II
+(2) Value-II < Value-I
+(3) Value-I = Value-II
+(4) Cannot be determined due to insufficient data
+= 3
+~ Value-I: the average of 11 consecutive integers is the middle (6th) number, so it is smallest when the set starts as low as allowed, at −5. The set −5, −4, …, 5 has average 0, so Value-I = 0. Value-II: the numbers are consecutive non-negative integers, so the product can never be negative; if the set contains 0 (0, 1, …, 10) the product is 0, so Value-II = 0. Both values are 0. Hence option (c).
+
+Q 78 | qa | Arithmetic
+The average of three numbers p, q and r is k. p is as much more than the average as q is less than the average. What is the value of r?
+(1) k
+(2) k − 1
+(3) k + 1
+(4) k/2
+= 1
+~ Let p = k + d and q = k − d, since p exceeds the average by the same amount d by which q falls short of it. The sum of the three numbers is 3k, so (k + d) + (k − d) + r = 3k, giving 2k + r = 3k and r = k. Check: with p = 7, q = 3 and r = 5, the average is 15 ÷ 3 = 5 = k, and 7 is 2 above while 3 is 2 below. The deviations of p and q cancel, so r must equal the average itself. Hence option (a).
+
+Q 79 | qa | Algebra
+Let x be a real number between 0 and 1. Which of the following statements is/are correct?
+I. x² > x³.
+II. x > √x.
+Select the correct answer using the code given below :
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ For 0 < x < 1, multiplying by x (a positive number less than 1) makes a quantity smaller. Statement I: x² − x³ = x²(1 − x) > 0, so x² > x³ is correct (e.g., x = 0.5: 0.25 > 0.125). Statement II: x = (√x)² and √x also lies between 0 and 1, so x < √x; the statement x > √x is wrong (e.g., x = 0.25: √x = 0.5, which is larger than 0.25). Hence I only, option (a).
+
+Q 80 | qa | Number System
+The difference between any two natural numbers is 10. What can be said about the natural numbers which are divisible by 5 and lie between these two numbers?
+(1) There is only one such number.
+(2) There are only two such numbers.
+(3) There can be more than one such number.
+(4) No such number exists.
+= 3
+~ Let the numbers be a and a + 10. If a is itself a multiple of 5 (e.g., 5 and 15), exactly one multiple of 5 lies strictly between them (10). If a is not a multiple of 5 (e.g., 3 and 13), two multiples lie between them (5 and 10). So the count is 1 or 2 depending on the pair: it can be more than one, but neither “only one” nor “only two” always holds, and since any 9 consecutive numbers between them include at least one multiple of 5, option (d) is wrong. Hence option (c).

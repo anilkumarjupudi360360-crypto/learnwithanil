@@ -225,7 +225,7 @@ EPFO_SUBJ_HI = {'eng': 'सामान्य अंग्रेज़ी', 'ih'
                 'pol': 'भारतीय राजव्यवस्था', 'eco': 'भारतीय अर्थव्यवस्था', 'acc': 'सामान्य लेखा सिद्धांत', 'lab': 'औद्योगिक संबंध और श्रम कानून',
                 'ss': 'भारत में सामाजिक सुरक्षा', 'sci': 'सामान्य विज्ञान और कंप्यूटर', 'qa': 'मात्रात्मक अभिरुचि (क्वांटिटेटिव एप्टीट्यूड)'}
 
-# ---------- UPSC Civil Services (Preliminary): GS Paper I and CSAT (GS Paper II), 2019–2026 (Anil, 1 Nov 2026) ----------
+# ---------- UPSC Civil Services (Preliminary): GS Paper I and CSAT (GS Paper II), 2025 and 2026 (Anil, 1 Nov 2026) ----------
 PRE_HELD = {2026: '24 May 2026', 2025: '25 May 2025', 2024: '16 June 2024', 2023: '28 May 2023', 2022: '5 June 2022',
             2021: '10 October 2021', 2020: '4 October 2020', 2019: '2 June 2019'}
 PRE_PROVISIONAL = {2026}       # UPSC's provisional key (27 May 2026); the final key comes after the final result
@@ -253,7 +253,7 @@ def _pre_paper(y, gs):
     return d
 
 
-PRE_PAPERS = [_pre_paper(y, gs) for y in range(2026, 2018, -1) for gs in (True, False)]
+PRE_PAPERS = [_pre_paper(y, gs) for y in range(2026, 2024, -1) for gs in (True, False)]   # Anil, 1 Nov 2026 21:02: Prelims 2026 and 2025 only
 PRE_SUBJECTS = [
   ('ih',  'History & Culture', 'history-culture', ['Ancient India', 'Medieval India', 'Modern India & Freedom Struggle', 'Art & Culture']),
   ('geo', 'Geography', 'geography', ['Physical Geography', 'Indian Geography', 'World Geography']),
@@ -1054,7 +1054,8 @@ def main():
     grand = sum(counts.values())
     import upscmains   # UPSC CSE Mains GS 1-4 previous questions with model answers (tools/upscmains.py): its own pages; Prelims is the 'upsc-prelims' app
     upm_qs, _ = upscmains.load(SRC)
-    if upm_qs: counts[upscmains.EXAM] = len(upm_qs)
+    upa_qs, _ = upscmains.load(SRC, 'an')   # Anthropology optional Papers I-II (same pages module, course 'an')
+    if upm_qs: counts[upscmains.EXAM] = len(upm_qs) + len(upa_qs)
     global PRE_LIVE   # the UPSC CSE hub's Prelims box: (questions, years, papers) of the built Prelims app
     pre = [(ps, qs) for c, ps, qs in loaded if c['id'] == 'upsc-prelims']
     PRE_LIVE = (len(pre[0][1]), sorted({p['year'] for p in pre[0][0]}), len(pre[0][0])) if pre else None
