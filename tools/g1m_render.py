@@ -232,6 +232,6 @@ CSS = ('.dg{margin:12px 0 14px;padding:0}.dg figcaption{font-size:13.5px;color:v
        '.dg-tl li::before{content:"";position:absolute;left:-22px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--accent)}'
        '.dg-tl b{display:inline-block;min-width:58px;margin-right:6px;color:var(--accent-text)}'
        '.dg-tw{overflow-x:auto}.dg-tab{border-collapse:collapse;width:100%;font-size:14.5px;background:var(--surface)}.dg-tab th,.dg-tab td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}'
-       '.dg-tab th{background:var(--accent-soft)}.dg-keys{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}.dg-keys span{background:var(--accent);color:#fff;border-radius:999px;padding:2px 10px;font-size:13.5px;font-weight:700}'
+       '.dg-tab th{background:var(--accent-soft)}.dg-keys{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}.dg-keys span{background:var(--accent-soft);color:var(--accent-text);border:1px solid color-mix(in srgb,var(--accent) 28%,transparent);border-radius:999px;padding:1px 10px;font-size:13.5px;font-weight:600;line-height:1.6}'
        '.dg-note{font-size:12.5px;color:var(--muted);margin:4px 0 0;text-align:center}.dg-map svg{max-width:560px;margin:0 auto}'
        '.dg-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 14px;font-size:13px;margin:6px 0 0}.dg-legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;background:var(--accent);opacity:.55;margin-right:5px;vertical-align:-1px}')

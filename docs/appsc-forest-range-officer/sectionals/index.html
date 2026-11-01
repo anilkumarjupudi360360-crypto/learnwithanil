@@ -1305,7 +1305,12 @@ document.addEventListener("click", e=>{   // "All Exams", the logo or "← All e
   if(!HUBPAGE) return; const a = e.target.closest && e.target.closest("a[href]"); if(!a || a.dataset.act) return;
   const raw = a.getAttribute("href"); let home = raw==="#exams";
   if(!home){ try{ const u = new URL(a.href, location.href); home = u.origin===location.origin && /^\/(index\.html)?$/.test(u.pathname) && !u.hash; }catch(_){} }
-  if(home){ UI.exCat = "all"; UI.exQ = ""; }
+  if(home){ UI.exCat = "all"; UI.exQ = "";
+    // "All Exams" on the start page itself would change nothing (same address, same view), so it opens the exam list: the board
+    // tiles and the search box (Anil, 2 Nov 2026: "this button not working")
+    if(a.dataset.v==="exams" && curRoute()==="exams" && e.button===0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey){
+      e.preventDefault(); applyHub(); const t=$("#exams-list"); if(t) t.scrollIntoView({behavior:"smooth", block:"start"}); }
+  }
 }, true);
 document.addEventListener("click", e=>{   // move between views without reloading the page
   if(!PATHMODE || e.defaultPrevented || e.button!==0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
