@@ -31,6 +31,36 @@
    "id": "rail",
    "name": "Railways",
    "desc": "Railway Recruitment Board exams"
+  },
+  {
+   "id": "tn",
+   "name": "TNPSC & Tamil Nadu",
+   "desc": "TNPSC Group 1, Group 2 and Group 4 exams"
+  },
+  {
+   "id": "ka",
+   "name": "KPSC & Karnataka",
+   "desc": "KPSC KAS, FDA and SDA exams"
+  },
+  {
+   "id": "kl",
+   "name": "Kerala PSC & Kerala",
+   "desc": "Kerala PSC KAS, LDC and Secretariat Assistant exams"
+  },
+  {
+   "id": "mh",
+   "name": "MPSC & Maharashtra",
+   "desc": "MPSC Rajyaseva and Combined Group B and C exams"
+  },
+  {
+   "id": "up",
+   "name": "UPPSC & Uttar Pradesh",
+   "desc": "UPPSC PCS and RO/ARO exams"
+  },
+  {
+   "id": "br",
+   "name": "BPSC & Bihar",
+   "desc": "BPSC Combined Competitive Exam and teacher recruitment"
   }
  ],
  "exams": [
@@ -726,6 +756,117 @@
    "b": "RRB",
    "t": "RPF",
    "n": "SI & Constable"
+  },
+  {
+   "id": "tnpsc-group-1",
+   "cat": "tn",
+   "b": "TNPSC",
+   "t": "Group 1",
+   "n": "Combined Civil Services Exam I"
+  },
+  {
+   "id": "tnpsc-group-2",
+   "cat": "tn",
+   "b": "TNPSC",
+   "t": "Group 2 & 2A",
+   "n": "Combined Civil Services Exam II"
+  },
+  {
+   "id": "tnpsc-group-4",
+   "cat": "tn",
+   "b": "TNPSC",
+   "t": "Group 4",
+   "n": "Combined Civil Services Exam IV"
+  },
+  {
+   "id": "kpsc-kas",
+   "cat": "ka",
+   "b": "KPSC",
+   "t": "KAS",
+   "n": "Gazetted Probationers (Group A and B)"
+  },
+  {
+   "id": "kpsc-fda",
+   "cat": "ka",
+   "b": "KPSC",
+   "t": "FDA",
+   "n": "First Division Assistant"
+  },
+  {
+   "id": "kpsc-sda",
+   "cat": "ka",
+   "b": "KPSC",
+   "t": "SDA",
+   "n": "Second Division Assistant"
+  },
+  {
+   "id": "kerala-psc-kas",
+   "cat": "kl",
+   "b": "Kerala PSC",
+   "t": "KAS",
+   "n": "Kerala Administrative Service"
+  },
+  {
+   "id": "kerala-psc-ldc",
+   "cat": "kl",
+   "b": "Kerala PSC",
+   "t": "LDC",
+   "n": "Lower Division Clerk"
+  },
+  {
+   "id": "kerala-psc-sa",
+   "cat": "kl",
+   "b": "Kerala PSC",
+   "t": "Secretariat Assistant"
+  },
+  {
+   "id": "mpsc-rajyaseva",
+   "cat": "mh",
+   "b": "MPSC",
+   "t": "Rajyaseva",
+   "n": "State Services Exam"
+  },
+  {
+   "id": "mpsc-group-b",
+   "cat": "mh",
+   "b": "MPSC",
+   "t": "Group B",
+   "n": "Combined Group B Exam"
+  },
+  {
+   "id": "mpsc-group-c",
+   "cat": "mh",
+   "b": "MPSC",
+   "t": "Group C",
+   "n": "Combined Group C Exam"
+  },
+  {
+   "id": "uppsc-pcs",
+   "cat": "up",
+   "b": "UPPSC",
+   "t": "PCS",
+   "n": "Combined State / Upper Subordinate Services"
+  },
+  {
+   "id": "uppsc-ro-aro",
+   "cat": "up",
+   "b": "UPPSC",
+   "t": "RO/ARO",
+   "n": "Review Officer / Assistant Review Officer"
+  },
+  {
+   "id": "bpsc-cce",
+   "cat": "br",
+   "b": "BPSC",
+   "t": "CCE",
+   "n": "Combined Competitive Exam"
+  },
+  {
+   "id": "bpsc-tre",
+   "cat": "br",
+   "b": "BPSC",
+   "t": "TRE",
+   "n": "School Teacher Recruitment"
   }
  ],
  "timers": [

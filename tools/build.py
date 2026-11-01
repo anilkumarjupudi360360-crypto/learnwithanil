@@ -1319,7 +1319,7 @@ def main():
                      .replace('{{HOME_PAPERS}}', home_papers).replace('{{PYQPAGE}}', conf['pb'] + 'pyqs.html').replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
-                     .replace('{{HOME_NOTES}}', home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
+                     .replace('{{HOME_NOTES}}', '' if is_root else home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}').replace('{{NLIVE}}', str(len(loaded)))
                      .replace('{{NLIVEX}}', str(sum(1 for e in catalog['exams'] if e.get('live')))).replace('{{HERO_NEW}}', HERO_NEW)
                      .replace('{{MOCKQ}}', f'{mock_questions():,}')
@@ -1327,6 +1327,7 @@ def main():
                      .replace('{{LIVE_SUMMARY}}', esc(live_summary))
                      .replace('{{HUB_CTAS}}', hub_ctas)
                      .replace('{{NAV_EXTRA}}', nav_extra if is_root else '')
+                     .replace('{{NAV_FUND}}', NAV_FUND if is_root else '')
                      .replace('{{TIMERS}}', timers).replace('{{HUBHREF}}', hubhref).replace('{{ROOTUP}}', up)
                      .replace('{{EXAM}}', esc(conf['name'])).replace('{{EXAMSHORT}}', esc(conf['short']))
                      .replace('{{HERO_PHC}}', ' hero-ph' if exam_photo(conf['id'], 'h') else '').replace('{{HERO_PHS}}', f' style="--hero-ph:url({exam_photo(conf["id"], "h")})"' if exam_photo(conf['id'], 'h') else '')
@@ -1728,6 +1729,13 @@ BOARD_PHOTO = {   # free-licence photos from Wikimedia Commons, cropped to 640x2
     'ssc': ('Writing an exam', 'Alison wood', 'CC BY 3.0', 'https://commons.wikimedia.org/wiki/File:Hand-writing-exam-classroom.jpg', 'https://creativecommons.org/licenses/by/3.0/'),
     'rail': ('Vijayawada–Chennai Vande Bharat Express', 'Ravi Dwivedi', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Vijayawada_-_Chennai_Central_Vande_Bharat_Express.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),
     'bank': ('Rupee coins', 'Ravi Kumar', 'CC BY 3.0', 'https://commons.wikimedia.org/wiki/File:Coin_(127690727).jpeg', 'https://creativecommons.org/licenses/by/3.0/'),
+    # other states' PSCs, "Coming soon" boards for later (Anil, 2 Nov 2026: "add one or more state photos, where state PSC exams are going on ... in future we will built them")
+    'tn': ('Brihadeeswarar Temple, Thanjavur', 'Bernard Gagnon', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Brihadeeswarar_Temple_02.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
+    'ka': ('Vidhana Soudha, Bengaluru', 'DeepanjanGhosh', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Vidhana_Soudha_LE.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),
+    'kl': ('Kerala backwaters', 'Vyacheslav Argenberg', 'CC BY 4.0', 'https://commons.wikimedia.org/wiki/File:Kerala_backwaters,_Houseboats,_India.jpg', 'https://creativecommons.org/licenses/by/4.0/'),
+    'mh': ('Gateway of India, Mumbai', 'Joe Ravi', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Gateway_Of_India.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
+    'up': ('Taj Mahal, Agra', 'Yann, edited by King of Hearts', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit2.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),
+    'br': ('Bihar Legislature, Patna', 'Innocentbunny', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Bihar_Legislature_Building.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
 }
 
 
@@ -1775,7 +1783,10 @@ def photo_credit(eid, prefix='Photo: '):
     return f'{prefix}<a href="{url}" target="_blank" rel="noopener">{esc(t)}</a>, {esc(a)}, <a href="{CCL[lic]}" target="_blank" rel="noopener license">{lic}</a>' if lic != 'public domain' else f'{prefix}<a href="{url}" target="_blank" rel="noopener">{esc(t)}</a>, {esc(a)}, public domain'
 
 
-BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
+NAV_FUND = ('      <a class="nav-fund" href="/funders.html" title="Fund this project" data-hubonly><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'
+            '<path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 5 6.4 5c2 0 3.4 1.1 4.1 2.3h3C14.2 6.1 15.6 5 17.6 5 21 5 23.1 8.5 21.6 11.8 19.5 16.4 12 21 12 21Z"/></svg>'
+            '<span>Fund<span class="nf-x"> this project</span></span></a>\n')   # Anil, 2 Nov 2026: "add fund the project...here" (start page top bar)
+BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'tn', 'ka', 'kl', 'mh', 'up', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
 
 
 def hub_html(catalog, counts, grand):
