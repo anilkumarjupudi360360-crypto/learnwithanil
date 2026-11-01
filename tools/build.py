@@ -1340,6 +1340,11 @@ def main():
                      .replace('{{NOTES_NAV}}', ('<a href="#mains" data-v="mains">Mains Tool Kit <span class="new">NEW</span></a>' if emains else '')
                               + ('<a href="#notes" data-v="notes">Study Material <span class="new">NEW</span></a>' if enotes else ''))
                      .replace('{{NOTES_FOOT}}', '<a href="#notes">Study material</a> · ' if enotes else ''))
+        _fill0, LF = fill, lang_fills()
+        def fill(s, photo, title, seo, desc=''):   # then the site's languages (SITE_LANGS)
+            s = _fill0(s, photo, title, seo, desc)
+            for k, v in LF.items(): s = s.replace(k, v)
+            return s
         root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: UPSC Prelims, Mains & Anthropology, APPSC Group 1 & 2, TS Police, SSC CGL'
         pre_y = (lambda ys: f' ({ys[0]}–{ys[-1]})' if len(ys) > 1 else f' ({ys[0]})')(PRE_LIVE[1]) if PRE_LIVE else ''   # Anil, 2 Nov 2026: home title/description name UPSC Prelims and Anthropology
         root_desc = (f'Learn with Anil (learnwithanil.in): previous year question papers (PYQs) with answers for UPSC Civil Services Prelims GS Paper I & CSAT{pre_y} in English & Hindi, '
@@ -1748,6 +1753,24 @@ def photo_credits(ids):
         bits.append(f'<a href="{url}" target="_blank" rel="noopener">{esc(t)}</a> by {esc(a)} ('
                     + (f'<a href="{lurl}" target="_blank" rel="noopener">{lic}</a>' if lurl else lic) + ')')
     return f'<p class="ph-credit">Photos (cropped) via Wikimedia Commons: {" · ".join(bits)}.</p>' if bits else ''
+
+
+# The site's languages in one list (Anil, 2 Nov 2026: "update them...as new languages are added"): (code, own name, in Hindi, in Telugu, live).
+# Live ones are named in the hero line, the badge, the counts and the score card; the others show as "coming soon" (the "+N" chip in the
+# language switcher, the badge, the figures). A language goes live only when questions exist in it; the switcher then needs its own button.
+SITE_LANGS = [('en', 'English', 'अंग्रेज़ी', 'ఇంగ్లీష్', True), ('te', 'తెలుగు', 'तेलुगु', 'తెలుగు', True), ('hi', 'हिंदी', 'हिंदी', 'హిందీ', True),
+              ('ta', 'தமிழ்', 'तमिल', 'తమిళం', False), ('kn', 'ಕನ್ನಡ', 'कन्नड़', 'కన్నడ', False), ('ml', 'മലയാളം', 'मलयालम', 'మలయాళం', False),
+              ('mr', 'मराठी', 'मराठी', 'మరాఠీ', False)]
+
+
+def lang_fills():
+    live = [x[1] for x in SITE_LANGS if x[4]]; soon = [x[1] for x in SITE_LANGS if not x[4]]
+    and_ = ', '.join(live[:-1]) + ' and ' + live[-1] if len(live) > 1 else live[0]
+    js = json.dumps([dict(c=c, self=n, hi=h, te=te_, live=lv) for c, n, h, te_, lv in SITE_LANGS], ensure_ascii=False)
+    chip = (f'      <button type="button" class="lang-soon" data-act="langsoon" title="Coming soon: {esc(", ".join(soon))}" '
+            f'aria-label="More languages coming soon: {esc(", ".join(soon))}">+{len(soon)}</button>\n') if soon else ''
+    return {'{{SITE_LANGS}}': js, '{{LANGS_EN}}': and_, '{{LANGS_DOT}}': ' · '.join(live), '{{NLANGS}}': str(len(live)),
+            '{{LANGS_LIST}}': ', '.join(live), '{{LANGS_SOON_DOT}}': ' · '.join(soon), '{{LANGS_SOON_LIST}}': ', '.join(soon), '{{LANG_SOON_BTN}}': chip}
 
 
 NAV_FUND = ('      <a class="nav-fund" href="/funders.html" title="Fund this project" data-hubonly><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'
