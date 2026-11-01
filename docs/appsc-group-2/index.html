@@ -544,6 +544,22 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .hub-tools .search{flex:none;max-width:560px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 #hubCats{display:flex;flex-direction:column;gap:34px}
+.boards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:14px}
+.card.board{position:relative;display:flex;flex-direction:column;gap:4px;text-align:left;padding:16px 18px;cursor:pointer;font:inherit;color:var(--ink);transition:border-color .15s,transform .15s,box-shadow .15s}
+.card.board:hover{border-color:var(--accent);transform:translateY(-1px)}
+.bd-n{font-family:var(--f-display);font-size:19px;font-weight:800;line-height:1.2;padding-right:24px}
+.bd-te{font-size:14px;color:var(--muted);font-weight:600}
+.bd-d{font-size:13.5px;color:var(--muted)}
+.bd-l{font-size:13.5px;font-weight:600}
+.bd-st{font-size:13px;color:var(--good);margin-top:auto;padding-top:4px}
+.board.soon .bd-st{color:var(--muted)}.board.soon{background:var(--surface-2)}
+.bd-go{position:absolute;right:16px;top:14px;font-weight:800;color:var(--accent);font-size:18px}
+.hub-row{display:flex;flex-direction:column;gap:8px;margin-top:18px}
+.hub-k{font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+#hubBack{margin-top:12px}
+details.upc>summary{cursor:pointer;font-weight:700;font-size:14.5px;color:var(--muted);padding:6px 0}
+details.upc .exams{margin-top:8px}
+@media (max-width:520px){.boards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card.board{padding:12px 12px 12px 14px}.bd-n{font-size:16px;padding-right:16px}.bd-d{display:none}.bd-l{font-size:12.5px}.bd-go{right:10px;top:10px;font-size:15px}}
 .exam-cat{display:flex;flex-direction:column;gap:12px}
 .exam-cat h2 .te-sub{font-size:17px;font-weight:600;color:var(--muted);margin-left:6px;letter-spacing:0;line-height:1.2}
 .exams{display:grid;grid-template-columns:repeat(auto-fill,minmax(186px,1fr));gap:12px}
@@ -1239,6 +1255,11 @@ function viewTitle(v){
 }
 window.addEventListener("hashchange", ()=>{ if(PATHMODE){ const h = location.hash.slice(1); if(isRoute(h)){ history.replaceState(null, "", pathOf(h)); } else return; } render(); });
 window.addEventListener("popstate", ()=>{ if(PATHMODE) render(); });
+window.addEventListener("popstate", e=>{ if(!HUBPAGE) return; const c = (e.state && e.state.lwaBoard) || "all"; if((UI.exCat||"all")!==c){ UI.exCat = c; applyHub(); } });
+document.addEventListener("click", e=>{   // remember the exams a student opens from the start page (for "Continue where you left off")
+  const a = e.target.closest("#hub-static a.exam.live, #hub-static a.pop"); if(!a || !a.dataset.id) return;
+  try{ const r = JSON.parse(localStorage.getItem("lwa_recent")||"[]").filter(x=>x!==a.dataset.id); r.unshift(a.dataset.id); localStorage.setItem("lwa_recent", JSON.stringify(r.slice(0,3))); }catch(_){}
+}, true);
 document.addEventListener("click", e=>{   // move between views without reloading the page
   if(!PATHMODE || e.defaultPrevented || e.button!==0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
   const a = e.target.closest && e.target.closest("a[href]"); if(!a || (a.target && a.target!=="_self") || a.hasAttribute("download")) return;
@@ -1341,6 +1362,9 @@ const HUBT = {
   g3:{en:'9,277 done so far · 9%', hi:'अब तक 9,277 पूरे · 9%', te:'ఇప్పటివరకు 9,277 పూర్తి · 9%'},
   choose:{en:'Choose your exam', hi:'अपनी परीक्षा चुनें', te:'మీ పరీక్షను ఎంచుకోండి'},
   all:{en:'All exams', hi:'सभी परीक्षाएँ', te:'అన్ని పరీక్షలు'},
+  popT:{en:'Popular exams', hi:'लोकप्रिय परीक्षाएँ', te:'ప్రముఖ పరీక్షలు'},
+  contT:{en:'Continue where you left off', hi:'जहाँ छोड़ा था वहीं से शुरू करें', te:'మీరు ఆపిన చోటు నుంచి కొనసాగించండి'},
+  allB:{en:'← All exam boards', hi:'← सभी परीक्षा बोर्ड', te:'← అన్ని పరీక్షల బోర్డులు'},
   search:{en:'Search an exam, e.g. Group-II, CGL, NDA, Police SI', hi:'परीक्षा खोजें, जैसे Group-II, CGL, NDA, Police SI', te:'పరీక్షను వెతకండి, ఉదా. Group-II, CGL, NDA, Police SI'},
   live:{en:'Live · {N} questions', hi:'उपलब्ध · {N} प्रश्न', te:'అందుబాటులో · {N} ప్రశ్నలు'},
   soon:{en:'Upcoming', hi:'आगामी', te:'రాబోయేది'},
@@ -1391,14 +1415,25 @@ function applyHubLang(){   // the start page's own text follows the language but
 }
 
 /* ---------- exam hub (start page) + one exam's page ---------- */
+function hubRecent(show){   // the student's last opened exams (this phone only)
+  const box = $("#hubRecent"), l = $("#hubRecentL"); if(!box || !l) return;
+  let ids = []; try{ ids = JSON.parse(localStorage.getItem("lwa_recent")||"[]"); }catch(_){}
+  const items = ids.map(id=>document.querySelector(`#hub-static a.exam.live[data-id="${id}"]`)).filter(Boolean);
+  l.innerHTML = items.map(a=>`<a class="chip pop" href="${a.getAttribute("href")}" data-id="${a.dataset.id}">${esc(a.querySelector(".ex-b").textContent+" "+a.querySelector(".ex-t").textContent)}</a>`).join("");
+  box.hidden = !show || !items.length;
+}
 function applyHub(){
-  const q = (UI.exQ||"").trim().toLowerCase().replace(/\s+/g," "), cat = UI.exCat||"all";
+  if(UI.exCat===undefined && history.state && history.state.lwaBoard) UI.exCat = history.state.lwaBoard;   // back from an exam into a board
+  const q = (UI.exQ||"").trim().toLowerCase().replace(/\s+/g," "), cat = UI.exCat||"all", browsing = cat==="all" && !q;
+  const hh = $("#hubHome"), hb = $("#hubBack"), hc = $("#hubCats");
+  if(hh) hh.hidden = !browsing; if(hb) hb.hidden = cat==="all"; if(hc) hc.hidden = browsing; hubRecent(browsing);
   let n = 0;
   document.querySelectorAll("#hub-static .exam").forEach(a=>{ const ok = (cat==="all"||a.dataset.cat===cat) && (!q || a.dataset.s.includes(q)); a.hidden = !ok; if(ok) n++; });
   document.querySelectorAll("#hub-static .exam-cat").forEach(s=>{ s.hidden = !s.querySelector(".exam:not([hidden])"); });
+  if(q) document.querySelectorAll("#hub-static details.upc").forEach(d=>{ if(d.querySelector(".exam:not([hidden])")) d.open = true; });
   document.querySelectorAll('#hub-static [data-act="excat"]').forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.cat===cat)));
   const live = [...document.querySelectorAll("#hub-static .exam.live:not([hidden])")].length;
-  const cnt = $("#hubCount"); if(cnt) cnt.textContent = n ? HT("count").replace("{n}", n).replace("{l}", live) : "";
+  const cnt = $("#hubCount"); if(cnt) cnt.textContent = n && !browsing ? HT("count").replace("{n}", n).replace("{l}", live) : "";
   const p5 = $("#hubP5"), isP5 = !!p5 && P5_RE.test(q);   // "paper 5": the Group-1 Mains Paper V book is on WhatsApp
   if(p5) p5.hidden = !isP5;
   const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0 || isP5; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Learn_with_anil Team, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
@@ -2271,7 +2306,11 @@ document.addEventListener("click", e=>{
   const act = b.dataset.act;
   switch(act){
     case "bm": { const id=b.dataset.id; if(S.bm[id]) delete S.bm[id]; else S.bm[id]=true; save(); toast(S.bm[id]?"Saved to bookmarks":"Removed from bookmarks"); render(); break; }
-    case "excat": { UI.exCat = b.dataset.cat; applyHub(); break; }
+    case "excat": {   // a board tile opens that board's exams; "All exam boards" (or the phone's back button) returns to the tiles
+      const c = b.dataset.cat, cur = UI.exCat||"all";
+      if(c==="all" && history.state && history.state.lwaBoard){ history.back(); break; }
+      if(c!=="all" && cur==="all"){ try{ history.pushState(Object.assign({}, history.state, {lwaBoard:c}), ""); }catch(_){} track("board_open", {cat:c}); }
+      UI.exCat = c; applyHub(); const t=$("#exams-list"); if(t) t.scrollIntoView({block:"start"}); break; }
     case "hubscroll": { const t=$("#exams-list"); if(t) t.scrollIntoView({behavior:"smooth", block:"start"}); const s=$("#examSearch"); if(s) setTimeout(()=>s.focus({preventScroll:true}), 400); break; }
     case "unlockpyq": if(!ST.name){ UI.pendingPay = true; go("join"); } else openPay("pyq"); break;
     case "kitdl": track("kit_download", {paper: b.dataset.paper}); return;
