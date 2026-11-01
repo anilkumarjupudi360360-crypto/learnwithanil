@@ -601,7 +601,7 @@ async def main():
             nfree = nlock = 0
             for f in ap_:
                 h = open(os.path.join(ad, f), encoding='utf-8').read()
-                fr = 'Model answer · free' in h; lk = re.search(r'FILE="(upa-ans-20\d\d-an[12]-[0-9a-f]{10}\.bin)"', h)
+                fr = 'Model answer · free' in h; lk = 'data-ans="' in h and re.search(r'FILE="(upa-ans-20\d\d-an[12]-[0-9a-f]{10}\.bin)"', h)
                 nfree += bool(fr); nlock += bool(lk)
                 if lk and not os.path.isfile(os.path.join(SITE, 'books', lk.group(1))): errors.append(f'anthropology/{f}: sealed file {lk.group(1)} missing from /books/')
             for f in os.listdir(ad):
