@@ -1489,7 +1489,9 @@ def main():
     all_pages = {**notifs, **mocks, **all_pages}
 
     open(os.path.join(DIST, 'site', 'help.html'), 'w', encoding='utf-8').write(help_page(loaded))
-    all_pages = {**all_pages, 'help.html': None}
+    open(os.path.join(DIST, 'site', 'privacy.html'), 'w', encoding='utf-8').write(privacy_page())
+    open(os.path.join(DIST, 'site', 'terms.html'), 'w', encoding='utf-8').write(terms_page())
+    all_pages = {**all_pages, 'help.html': None, 'privacy.html': None, 'terms.html': None}
     open(os.path.join(DIST, 'site', 'funders.html'), 'w', encoding='utf-8').write(funders_page(loaded))
     # Anil, 28 Oct 2026: tapping Practise / Start on the PYQs, mock-test and sectional pages felt slow on phones, because the app
     # page then downloads the exam's question data (0.2-2.3 MB). These pages are where students go next into the app, so they
@@ -2379,7 +2381,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}};if(a.paid&&new Date(a.pyq+"T23:59:59+05:30")>=new Date()){{
 document.querySelectorAll(".lk").forEach(function(e){{e.textContent="✓ ";e.className="lk ok"}});
 document.querySelectorAll("[data-paidtxt]").forEach(function(e){{e.textContent=e.getAttribute("data-paidtxt")}});
@@ -2623,6 +2625,92 @@ if(r&&r.ok){{f.reset();m.textContent='Received. Your ticket number is '+r.ticket
     return static_page(0, 'Help & Grievance Redressal Cell | Learn with Anil', 'Help with payments, the PYQ Pass, mock tests and answers on learnwithanil.in: quick answers, a complaint form with a ticket number, and the grievance officer\'s contact details.',
                        can, 'Help & Grievance Redressal Cell', esc('Questions about a payment, your PYQ Pass, a mock test or an answer? Find a quick answer below, or send us a complaint.'),
                        body, [('Home', SITE_URL + '/'), ('Help & grievances', can)], None, ename='every exam', at_root=True)
+
+
+def privacy_page():
+    """/privacy.html: privacy policy (2 Nov 2026), written for the student accounts with "Sign in with Google": Google's consent
+    screen links here. States what the site really collects (registration form, Google name and email, phone, sessions, payments
+    through Instamojo, test progress kept on the device, Google Analytics) and how a student can get it corrected or deleted."""
+    can = SITE_URL + '/privacy.html'
+    sec = [
+        ('What we collect',
+         '<ul><li><b>When you register:</b> your name, mobile number, email, district or city, and anything you choose to write in the help box.</li>'
+         '<li><b>When you sign in with Google:</b> your name and email address from your Google account, and Google\'s account ID. We do not see '
+         'your Google password and we do not get access to your Gmail, Drive, contacts or anything else in your Google account.</li>'
+         '<li><b>When you are logged in:</b> a login record for each phone or computer (the type of device and browser, when you last used it), '
+         'so that you can see your devices on the My Account page and log out of any of them. At most 3 devices stay logged in at a time.</li>'
+         '<li><b>When you pay:</b> the payment is made on Instamojo\'s page. We receive the payment ID, amount, date, and the name, phone and '
+         'email given there. We never see or store your card, UPI or bank details.</li>'
+         '<li><b>Complaints:</b> what you send through the help form.</li>'
+         '<li><b>Visits:</b> pages visited are counted with Google Analytics, which uses cookies.</li></ul>'),
+        ('What stays on your own device',
+         '<p>Your attempts, scores, mistakes notebook and bookmarks are kept in your browser on your phone or computer. They are not sent to us, '
+         'and clearing the browser\'s site data removes them.</p>'),
+        ('Why we use it',
+         '<p>Only to run the site for you: to open the PYQ Pass and mock tests you paid for on your devices, keep you logged in, link a payment '
+         'to your account, answer your questions and complaints, and help with your preparation if you asked for it. '
+         'We do not sell or rent your details, and we do not use them for advertising.</p>'),
+        ('Where it is kept and who can see it',
+         '<p>Your details are kept in a private Google Sheet in Learn with Anil\'s Google account, which only Learn with Anil can open. '
+         'They are shared only with the services that make the site work: Google (sign-in, storage and visit counts), Instamojo (payments) and '
+         'GitHub Pages (which hosts the site), or with the authorities when the law requires it.</p>'),
+        ('How long we keep it',
+         '<p>For as long as you have an account or a pass, and after that only as long as needed for payment records and the law. '
+         'A login ends after 12 months, or earlier when you log out.</p>'),
+        ('Your choices',
+         '<p>You can see your profile, devices and payments on the <a href="/#account">My Account</a> page, and log out of any device there. '
+         'To correct or delete your details or your account, write to the grievance officer below or use the <a href="/help.html">help form</a>; '
+         'we do it within 30 days. You can also remove Learn with Anil\'s access to your Google account at any time at '
+         '<a href="https://myaccount.google.com/connections" rel="nofollow">myaccount.google.com/connections</a>.</p>'),
+        ('Contact',
+         f'<p>Grievance officer: <b>{esc(GRIEVANCE_OFFICER)}</b>, Learn with Anil (learnwithanil.in)<br>Email: <a href="mailto:{CONTACT_EMAIL}">'
+         f'{CONTACT_EMAIL}</a><br>Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(" ", "")}">{CONTACT_PHONE}</a></p>'
+         '<p class="muted">If we change this policy, the new version will be posted on this page with its date.</p>'),
+    ]
+    body = '<p class="muted">Last updated: 2 November 2026</p>' + ''.join(f'<h2>{esc(h)}</h2>{t}' for h, t in sec)
+    return static_page(0, 'Privacy Policy | Learn with Anil', 'What Learn with Anil (learnwithanil.in) collects when you register, sign in with Google or pay, why, where it is kept, and how to get it corrected or deleted.',
+                       can, 'Privacy Policy', esc('What we collect when you register, sign in or pay, and what we do with it.'),
+                       body, [('Home', SITE_URL + '/'), ('Privacy policy', can)], None, ename='every exam', at_root=True)
+
+
+def terms_page():
+    """/terms.html: terms of use (2 Nov 2026), linked from Google's sign-in consent screen. Plain terms that match how the site
+    and the payments script work: the PYQ Pass (price and 12 months from the payments config), 3 devices, refunds as on /help.html."""
+    can = SITE_URL + '/terms.html'
+    sec = [
+        ('About the site',
+         '<p>learnwithanil.in (Learn with Anil, run by Jupudi Anil Kumar) publishes previous year questions with answers and explanations, '
+         'practice tests and mock tests for government recruitment exams. It is not affiliated with UPSC, APPSC, TGPSC, SSC, the police '
+         'recruitment boards or any other recruiting body.</p>'),
+        ('Your account',
+         '<p>You can register with your phone number and email, or sign in with Google and add your phone number once. Please give correct '
+         'details: your passes are linked to your phone number and email. Your account is for you alone; one account can stay logged in on '
+         'up to 3 phones or computers at a time, and logging in on a fourth logs out the oldest one.</p>'),
+        ('Passes and payments',
+         f'<p>The PYQ Pass costs ₹{PAY["pyq_price"]} and opens the previous papers and practice on the site for 12 months from the date of '
+         'payment. Mock test packs are sold separately, at the price and validity shown on each pack before you pay. Payments are made '
+         'through Instamojo. If you have paid but your pass or pack has not opened, use "Link my payment" on the My Account page or the '
+         '<a href="/help.html">help page</a>.</p>'),
+        ('Refunds',
+         '<p>If you paid and the pass or test pack does not work, and we cannot fix it within 7 days of your complaint, you get the full '
+         'amount back to the account you paid from. A failed payment is returned by Instamojo and your bank, usually within 5–7 working days.</p>'),
+        ('Fair use',
+         '<p>The explanations, model answers, mock tests and notes are Learn with Anil\'s work. Use them for your own preparation; do not copy, '
+         'resell, or share your account or paid content with others.</p>'),
+        ('Accuracy',
+         '<p>Answers follow the official final keys of the recruiting bodies, and we take care to keep explanations correct. If you find a '
+         'mistake, tell us through the <a href="/help.html">help page</a> and we will check it. Always confirm exam dates, rules and '
+         'notifications on the recruiting body\'s official website.</p>'),
+        ('Privacy',
+         '<p>How we handle your details is explained in the <a href="/privacy.html">privacy policy</a>.</p>'),
+        ('Contact',
+         f'<p>{esc(GRIEVANCE_OFFICER)}, Learn with Anil · <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a> · '
+         f'<a href="tel:{CONTACT_PHONE.replace(" ", "")}">{CONTACT_PHONE}</a></p>'),
+    ]
+    body = '<p class="muted">Last updated: 2 November 2026</p>' + ''.join(f'<h2>{esc(h)}</h2>{t}' for h, t in sec)
+    return static_page(0, 'Terms of Use | Learn with Anil', 'Terms of use of learnwithanil.in: accounts and sign-in, the PYQ Pass and mock test packs, payments, refunds and fair use.',
+                       can, 'Terms of Use', esc('The rules for accounts, passes and payments on learnwithanil.in.'),
+                       body, [('Home', SITE_URL + '/'), ('Terms of use', can)], None, ename='every exam', at_root=True)
 
 
 def funders_page(loaded):
@@ -2990,7 +3078,7 @@ def funders_page(loaded):
 </main>
 <footer class="foot">
   <div class="wrap">
-    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/ap-police-pyqs.html">AP Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></span>
+    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/ap-police-pyqs.html">AP Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/funders.html">Fund this project</a></span>
   </div>
 </footer>
 <script>(function(){{var T={tj};
