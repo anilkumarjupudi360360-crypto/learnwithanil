@@ -1067,6 +1067,7 @@ function openPay(kind, note){
       ${payMeme(x.price)}${buttons}`
     : `<p class="small"><b>Online payment is being switched on.</b> Please check back shortly.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}<p class="small" style="margin-top:10px">Problem with a payment or your pass? <a href="/help.html">Help &amp; grievances</a> (reply within 48 hours).</p></div>`;
   if(d.showModal) d.showModal(); else d.setAttribute("open","");
+  track("view_pay", {exam: PAYC.exam, note: note||""});   // payment window (with the meme) opened: counts how many students see it (Anil, 3 Nov 2026)
   d.scrollTop = 0;
 }
 /* Anil, 2 Nov 2026: "add a meme at paying button". An original two-panel meme in the familiar nope / yes format, drawn
