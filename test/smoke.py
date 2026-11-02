@@ -103,7 +103,7 @@ async def main():
                 await pg.fill('[name=district]', 'Guntur'); await pg.check('[name=ok]'); await pg.click('#joinForm button[type=submit]'); await pg.wait_for_timeout(200)
                 assert (await pg.evaluate('location.pathname')).endswith('/quiz/'), 'after registering, the quiz should start'
                 for i in range(3):
-                    await pg.click('[data-act="pick"][data-i="0"]'); await pg.click('[data-act="check"]')
+                    await pg.click('[data-act="pick"][data-i="0"]')
                     await pg.click('[data-act="next"]')
                 await pg.screenshot(path=f'{SHOTS}/quiz-mcq.png')
                 await pg.click('[data-act="finish"]'); await pg.wait_for_timeout(150)
@@ -116,7 +116,7 @@ async def main():
                 else:
                     if await pg.locator('[data-act="pick"]').count() != 4: errors.append('s2019: question does not show four options')
                     if 'options: Learn with Anil' not in await pg.inner_text('#view'): errors.append('s2019: options are not labelled as written by Learn with Anil')
-                    await pg.click('[data-act="pick"][data-i="0"]'); await pg.click('[data-act="check"]')
+                    await pg.click('[data-act="pick"][data-i="0"]')
                 await pg.screenshot(path=f'{SHOTS}/quiz-recall.png')
                 await pg.click('[data-act="finish"]'); await pg.wait_for_timeout(150)
                 mis = await pg.evaluate('Object.keys((JSON.parse(localStorage.getItem("lwa-appsc-g2-v1")||"{}").mistakes)||{}).length')
@@ -136,7 +136,7 @@ async def main():
                 await pg.screenshot(path=f'{SHOTS}/about.png')
                 await pg.evaluate('location.hash="q/m2025p2-117"'); await pg.wait_for_timeout(300)
                 assert 'GSLV' in await pg.inner_text('#view'), 'question link should open the GSLV question'
-                await pg.click('[data-act="pick"][data-i="0"]'); await pg.click('[data-act="check"]'); await pg.wait_for_timeout(200)
+                await pg.click('[data-act="pick"][data-i="0"]'); await pg.wait_for_timeout(200)
                 await pg.click('[data-act="video"]'); await pg.wait_for_timeout(500)
                 assert await pg.evaluate('document.getElementById("videoDlg").open'), 'video dialog should open'
                 await pg.screenshot(path=f'{SHOTS}/video-dialog.png')
@@ -173,7 +173,7 @@ async def main():
                     if sw > width: errors.append(f'{tag} {name}/{v}: horizontal overflow {sw}>{width}')
                 await pg.evaluate('location.hash="papers"'); await pg.wait_for_timeout(150)
                 await pg.click('#view [data-act="paperpractice"] >> nth=0'); await pg.wait_for_timeout(150)
-                await pg.click('[data-act="pick"][data-i="0"]'); await pg.click('[data-act="check"]')
+                await pg.click('[data-act="pick"][data-i="0"]')
                 await pg.screenshot(path=f'{SHOTS}/{tag}-quiz-{name}.png')
                 await pg.click(f'[data-act="lang"][data-l="{l2}"]'); await pg.wait_for_timeout(150)
                 if l2 == 'hi' and tag != 'epfo':   # EPFO Q1-20 (General English) are English only
@@ -309,7 +309,7 @@ async def main():
         # practice papers do not close at time-up; a test in progress survives a reload
         tp = await b.new_page(viewport={'width': 1280, 'height': 900}); await tp.add_init_script(REGISTERED)
         await tp.goto(URL + 'appsc-group-2/?practice=s2024'); await tp.wait_for_timeout(1200)
-        await tp.click('[data-act="pick"][data-i="0"]'); await tp.click('[data-act="check"]'); await tp.wait_for_timeout(200)
+        await tp.click('[data-act="pick"][data-i="0"]'); await tp.wait_for_timeout(200)
         await tp.reload(); await tp.wait_for_timeout(1500)
         if not (await tp.evaluate('location.pathname')).endswith('/quiz/') or 'Question' not in await tp.inner_text('main'): errors.append('reload during a practice paper lost the paper')
         # pretend the paper's time ran out long ago: a practice paper stays open, the extra time shows as +m:ss
