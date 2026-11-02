@@ -368,6 +368,14 @@ div.feature:hover{border-color:var(--line)}
 .pay-note{display:flex;flex-direction:column;gap:4px;padding:12px 14px;border-radius:10px;font-size:14px;line-height:1.45}
 .pay-note b{font-size:15.5px}.pay-note.bad{background:var(--bad-soft);color:var(--bad)}.pay-note.warn{background:var(--warn-soft);color:var(--warn)}.pay-note.good{background:var(--good-soft);color:var(--good)}
 .pay-dlg button:disabled{opacity:.7;cursor:progress}
+.pay-meme{margin:0;border:2px solid var(--ink);border-radius:10px;overflow:hidden;background:var(--surface)}
+.pm-row{display:grid;grid-template-columns:62px 1fr;align-items:stretch}.pm-row+.pm-row{border-top:2px solid var(--ink)}
+.pm-face{display:flex;align-items:center;justify-content:center;font-size:38px;line-height:1;background:var(--surface-2);border-right:2px solid var(--ink)}
+.pm-row p{margin:0;padding:9px 12px;display:flex;flex-direction:column;gap:2px;line-height:1.2}
+.pm-row b{font-family:var(--f-display);font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:.01em}
+.pm-row p span{font-size:13.5px;color:var(--muted)}
+.pm-row.no b{color:var(--muted)}.pm-row.yes{background:var(--good-soft)}.pm-row.yes .pm-face{background:var(--good-soft)}.pm-row.yes b{color:var(--good)}
+.pay-meme figcaption{padding:6px 12px;border-top:2px solid var(--ink);font-size:14px;font-weight:600;text-align:center}
 .qotd{display:flex;flex-direction:column;gap:14px;padding:20px 22px}
 .qotd-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
 .qotd-head .eyebrow{color:var(--accent-text);font-weight:600}
@@ -600,6 +608,15 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .hero.hero-ph::after{display:none}
 .hero .hero-cr{position:absolute;right:12px;bottom:6px;margin:0;font-size:11px;line-height:1.4;max-width:none;color:rgba(255,255,255,.7);z-index:1}.hero-cr a{color:inherit}
 @media (max-width:860px){.hero.hero-ph{background:linear-gradient(180deg,rgba(9,22,72,.45) 0,rgba(9,22,72,.9) 260px,rgba(9,22,72,.97) 100%),var(--hero-ph) center top/auto 300px no-repeat,var(--band)}.hero .hero-cr{position:static;padding:0 16px 10px;text-align:right}}
+.nav-acct{font-weight:700!important;color:var(--accent-text)!important}
+.nav-sub{white-space:nowrap;align-self:center;margin-left:6px;padding:6px 12px;border-radius:999px;border:0;background:linear-gradient(135deg,#f59e0b,#f97316);color:#1f1300;font-weight:800;font-size:13.5px;cursor:pointer}
+.glog{margin-bottom:14px}.glog h2{font-size:19px;margin:0 0 6px}.glog p.muted{margin:0 0 12px}.gbtn{min-height:44px}
+.glog-warn{margin:0 0 10px;padding:8px 12px;border-radius:10px;background:var(--warn-soft);color:var(--ink);font-size:14px}
+.join-or{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px;margin:4px 0 14px}.join-or::before,.join-or::after{content:"";flex:1;height:1px;background:var(--line)}
+.acct-h{font-size:18px;margin:0 0 8px}
+.acct-plan.ok{border-left:4px solid var(--good)}.acct-plan h2{font-size:20px;margin:2px 0 6px}
+.devs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}.devs li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--line)}.devs li:first-child{border-top:0}
+#view .card.pad + .card.pad{margin-top:14px}
 .etile.fx{padding:0 0 18px;overflow:hidden;gap:8px}
 .etile.fx>:not(.etile-hd){margin-inline:22px}
 .etile-hd{display:flex;align-items:center;gap:12px;padding:14px 22px;color:#fff;background:linear-gradient(135deg,var(--g1),var(--g2))}
@@ -730,6 +747,8 @@ details.upc .exams{margin-top:8px}
       <a href="/appsc-endowment-officer/bank/" data-v="bank" data-g2>Question Bank</a>
       <a href="/appsc-endowment-officer/mistakes/" data-v="mistakes" data-rev data-g2>My Revision</a>
       <a href="/appsc-endowment-officer/about/" data-v="about">About</a>
+      <a href="#account" data-v="account" id="navAcct" class="nav-acct">Login</a>
+      <button type="button" class="nav-sub" id="navSub" data-act="navsub" hidden>Subscribe ₹45</button>
     </nav>
     <div class="lang" role="group" aria-label="Question language">
       <button type="button" data-act="lang" data-l="en" aria-pressed="true">EN</button>
@@ -797,13 +816,13 @@ details.upc .exams{margin-top:8px}
 
 <footer class="foot">
   <div class="wrap">
-    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Questions and answers are from the official final keys. Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. <a href="/appsc-endowment-officer/notes/">Study material</a> · <a href="../appsc-pyqs.html">APPSC PYQs</a> · <a href="../ts-police-pyqs.html">TS Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/funders.html">Fund this project</a></span>
+    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Questions and answers are from the official final keys. Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. <a href="/appsc-endowment-officer/notes/">Study material</a> · <a href="../appsc-pyqs.html">APPSC PYQs</a> · <a href="../ts-police-pyqs.html">TS Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/funders.html">Fund this project</a></span>
     <span id="resetBox"><button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button></span>
   </div>
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ap-eo-7cb2f7a08e.js"></script>
+<script src="data/ap-eo-d2306edfcd.js"></script>
 <script>
 (function(){
 "use strict";
@@ -904,7 +923,7 @@ function upsellCard(){   // after a free test: the PYQ Pass for the explanations
     <button class="btn btn-primary" type="button" data-act="openpay" data-kind="pyq">Get the PYQ Pass · ₹${price}</button></section>`;
 }
 function setPasses(p){   // from the payments script: {pyq, trial, paid, mock}
-  p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses(); markLocks();
+  p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses(); markLocks(); navAcct();
   if(passOK("pyq")) exLoad();
   else try{ Object.keys(localStorage).filter(k=>k.startsWith("lwa-exk-")).forEach(k=>localStorage.removeItem(k)); }catch(_){}
 }
@@ -971,8 +990,11 @@ function vLocked(v){
   return `<div class="wrap view">${REV.includes(v)? revTabs(v) : ""}${head(pyq ? "PYQ Pass" : "Included with every plan", esc(name), "")}${emptyHTML("Unlock " + esc(name), esc(body + trialLine), btns)}</div>`;
 }
 async function payCall(body){
+  if(ST.session && !body.session) body.session = ST.session;
   const r = await fetch(PAYC.api, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(body)});
-  return r.json();
+  const j = await r.json();
+  if(j && j.relogin && body.session && ST.session===body.session){ delete ST.session; saveST(); UI.me = null; toast("Your login on this device ended. Please log in again."); }
+  return j;
 }
 async function refreshPasses(force){
   if(!PAYC || !PAYC.on || !PAYC.api || !ST.phone) return;
@@ -1024,7 +1046,7 @@ function openPay(kind, note){
   // with a note, the note and the buttons come first, so a phone shows both without scrolling
   d.innerHTML = open && n
     ? `<div class="pay-in"><div class="pay-note ${n.cls}" role="alert"><b>${esc(n.title)}</b><span>${esc(n.body)}</span>${n.l2[L2.code] ? `<span lang="${L2.code}">${esc(n.l2[L2.code])}</span>` : ""}</div>
-      ${buttons}<p class="small"><a href="${payHelpLink(kind)}" target="_blank" rel="noopener">Need help? Message us on WhatsApp →</a></p>
+      ${note==="joined" || note==="back" ? payMeme(x.price) : ""}${buttons}<p class="small"><a href="${payHelpLink(kind)}" target="_blank" rel="noopener">Need help? Message us on WhatsApp →</a></p>
       <h2>${esc(x.name)} · ₹${x.price}</h2><ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
       <p class="small"><b>${esc(x.valid)}.</b> The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}. Pay by UPI, card or net banking on Instamojo's secure page.</p></div>`
     : `<div class="pay-in"><h2>${esc(x.name)}</h2><div class="price">₹${x.price}</div>
@@ -1032,10 +1054,25 @@ function openPay(kind, note){
     <p class="small"><b>${esc(x.valid)}.</b>${!ST.name ? " Register once with your phone number, then pay." : ""}</p>
     ${kind==="pyq" && PAYC.sample && PAYC.pages && PAYC.pages.pyq ? `<p class="small"><a href="${PAYC.pages.pyq}#free-sample">Not sure yet? Try ${PAYC.sample} free questions first →</a></p>` : ""}
     ${open ? `<p class="small">The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}, on up to 3 devices. Pay by UPI, card or net banking on Instamojo's secure page.</p>
-      ${buttons}`
+      ${payMeme(x.price)}${buttons}`
     : `<p class="small"><b>Online payment is being switched on.</b> Please check back shortly.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}<p class="small" style="margin-top:10px">Problem with a payment or your pass? <a href="/help.html">Help &amp; grievances</a> (reply within 48 hours).</p></div>`;
   if(d.showModal) d.showModal(); else d.setAttribute("open","");
   d.scrollTop = 0;
+}
+/* Anil, 2 Nov 2026: "add a meme at paying button". An original two-panel meme in the familiar nope / yes format, drawn
+   with emoji and text (no film stills or other copyrighted pictures), just above the Pay button. Not shown when a payment
+   failed or is still being confirmed. */
+function payMeme(price){
+  const l2 = {te:`చాయ్ సమోసా 5 నిమిషాలు. PYQ Pass 12 నెలలు 😎`, hi:`चाय-समोसा 5 मिनट। PYQ Pass 12 महीने 😎`}[L2.code];
+  // Anil, 2 Nov 2026: "this 45 rupees pass for every pyq + mocks of that exam + material of that exam". Only what this exam really has.
+  const bits = [`Every ${DATA.examShort || "exam"} PYQ`];
+  if(PAYC && PAYC.mock) bits.push(`${PAYC.mock.name} mocks`); else if(PAYC && PAYC.exam==="appsc-group-2" && DATA.bahubali) bits.push("Bahubali Mains tests");
+  if((DATA.notes||[]).length || (DATA.mains||[]).length) bits.push("study material");
+  const what = bits.join(" + ") + " · and every other exam, for 12 months";
+  return `<figure class="pay-meme" aria-label="Meme: ₹${price} on chai and samosa is gone in 5 minutes; ₹${price} on the PYQ Pass: ${esc(what)}">
+    <div class="pm-row no"><span class="pm-face" aria-hidden="true">🙅‍♂️</span><p><b>₹${price} on chai &amp; samosa</b><span>Gone in 5 minutes</span></p></div>
+    <div class="pm-row yes"><span class="pm-face" aria-hidden="true">😎</span><p><b>₹${price} on the PYQ Pass</b><span>${esc(what)}</span></p></div>
+    ${l2 ? `<figcaption lang="${L2.code}">${esc(l2)}</figcaption>` : ""}</figure>`;
 }
 function closePay(){ const d = document.getElementById("payDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } }
 /* One payment link per tap: while a link is being made (and while the browser is leaving for Instamojo) further taps
@@ -1206,13 +1243,124 @@ function topicStats(){
 }
 const band = acc=>acc===null? "none" : acc>=75? "good" : acc>=50? "warn" : "bad";
 
+/* ---------- student account (Anil, 2 Nov 2026: "student logins ... no need to login again and again ... like JioHotstar").
+   Sign in with Google once, add the phone number once, stay logged in on this device for 12 months, for every exam and mode.
+   The payments script keeps the account, its sessions (3 devices at a time) and links passes; phone + email registration still works. */
+const GID = (PAYC && PAYC.gid) || "";
+const INAPP = /Instagram|FBAN|FBAV|FB_IAB|Line\/|Snapchat|; wv\)/i.test(navigator.userAgent||"");
+let GIS = 0;
+function gisLoad(){ return new Promise((res, rej)=>{ if(window.google && google.accounts && google.accounts.id) return res(); const s = document.createElement("script"); s.src = "https://accounts.google.com/gsi/client"; s.async = true; s.onload = ()=>res(); s.onerror = ()=>rej(); document.head.appendChild(s); }); }
+function gMount(){
+  if(!GID) return;
+  document.querySelectorAll(".gbtn:not([data-on])").forEach(el=>{ el.dataset.on = "1";
+    gisLoad().then(()=>{ if(!GIS){ google.accounts.id.initialize({client_id: GID, callback: onGoogle, auto_select: false, cancel_on_tap_outside: true}); GIS = 1; }
+      el.innerHTML = ""; google.accounts.id.renderButton(el, {theme:"filled_blue", size:"large", shape:"pill", text:"continue_with", logo_alignment:"left", width: Math.min(340, Math.max(220, el.clientWidth || 300))}); })
+    .catch(()=>{ el.innerHTML = `<p class="muted" style="margin:0">Google login could not load here. Please use your phone number and email below.</p>`; }); });
+}
+function gBlock(note){
+  if(!GID) return "";
+  return `<div class="card pad glog"><h2>Log in once, stay logged in</h2><p class="muted">${note || "Continue with your Google account and add your phone number once. You stay logged in on this phone for 12 months, for every exam: PYQs, mock tests and sectionals."}</p>
+    ${INAPP ? `<p class="glog-warn">You opened this inside an app (Instagram, Facebook…). If the Google button does not work, tap <b>⋮</b> and choose <b>Open in Chrome</b>, or use your phone number and email below.</p>` : ""}<div class="gbtn"></div></div>`;
+}
+async function onGoogle(resp){
+  if(!PAYC || !PAYC.api) return;
+  toast("Logging you in…");
+  let r = null; try{ r = await payCall({action:"glogin", exam:PAYC.exam, credential:resp.credential, device:DEVICE, agent:(navigator.userAgent||"").slice(0,160)}); }catch(_){}
+  if(!r || !r.ok){ toast((r && r.error) || "Google login did not work. Please try again."); return; }
+  ST.session = r.session; ST.gmail = r.account.email; saveST(); UI.me = null; track("login", {method:"google"});
+  if(r.loggedOut) setTimeout(()=>toast("Your oldest device was logged out (3 devices at a time)."), 2600);
+  const a = r.account;
+  if(a.phone && a.district && a.name) await finishJoin({name:a.name, phone:a.phone, email:a.email, district:a.district, help:""}, "google");
+  else { UI.gacc = a; UI.gErr = ""; if(curRoute()!=="join") go("join"); else render(); }
+}
+function gPhoneStep(){
+  const a = UI.gacc || {};
+  return `<form class="card join" id="gPhoneForm" novalidate>
+    <p class="join-test"><span class="mono">Logged in</span> ${esc(a.email||"")}</p>
+    <div class="join-grid">
+      <label>Full name<input name="name" autocomplete="name" required maxlength="80" value="${esc(a.name||"")}"></label>
+      <label>Phone number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="16" placeholder="10-digit mobile number" value="${esc(a.phone||"")}"></label>
+      <label>District / City<input name="district" autocomplete="address-level2" required maxlength="60" value="${esc(a.district||"")}"></label>
+      <label ${UI.gNeedPay ? "" : "hidden"}>Payment ID (from your payment SMS or email)<input name="payment" maxlength="40" placeholder="MOJO…" autocapitalize="characters"></label>
+    </div>
+    <label class="consent"><input type="checkbox" name="ok" checked> <span>I agree to share these details and my test scores with Learn with Anil. They are not shown publicly.</span></label>
+    <p class="err" role="alert" ${UI.gErr ? "" : "hidden"}>${esc(UI.gErr||"")}</p>
+    <div class="row"><button class="btn btn-primary" type="submit">Save and continue</button></div>
+    <p class="muted" style="font-size:13.5px;margin:0">Asked only once. A PYQ Pass you already bought with this number opens automatically.</p>
+  </form>`;
+}
+async function gPhoneSubmit(e){
+  e.preventDefault();
+  const f = e.target, val = n=> ((f.elements[n] && f.elements[n].value) || "").trim();
+  const name = val("name").replace(/\s+/g," "), district = val("district").replace(/\s+/g," "), payment = val("payment");
+  let phone = val("phone").replace(/\D/g,""); if(phone.length>10) phone = phone.slice(-10);
+  const err = name.length<2 ? "Please enter your full name." : !/^[6-9]\d{9}$/.test(phone) ? "Please enter a valid 10-digit mobile number."
+    : district.length<2 ? "Please enter your district or city." : !f.elements.ok.checked ? "Please tick the box to agree to share your details." : "";
+  if(err){ UI.gErr = err; render(); return; }
+  const btn = f.querySelector('button[type="submit"]'); if(btn){ btn.disabled = true; btn.textContent = "Saving…"; }
+  let r = null; try{ r = await payCall({action:"setphone", exam:PAYC.exam, phone, name, district, payment}); }catch(_){}
+  if(!r || !r.ok){ UI.gErr = (r && r.error) || "Could not save. Please check your internet and try again."; UI.gNeedPay = !!(r && r.needPayment); if(r && r.relogin) UI.gacc = null; render(); return; }
+  UI.gErr = ""; UI.gNeedPay = false; UI.gacc = null;
+  if(r.passes) setPasses(r.passes);
+  await finishJoin({name, phone, email:r.account.email, district, help:""}, "google");
+}
+function navAcct(){
+  const a = $("#navAcct"); if(a) a.textContent = ST.name ? "👤 " + ST.name.split(" ")[0] : "Login";
+  const s = $("#navSub"); if(s){ s.hidden = !(PAYC && PAYC.on) || passOK("pyq"); s.textContent = "Subscribe ₹" + (PAYC ? PAYC.pyq.price : 45); }
+}
+const fmtDayY = d=> d ? new Date(d + "T12:00:00+05:30").toLocaleDateString(undefined, {day:"numeric", month:"long", year:"numeric"}) : "";
+async function loadMe(){
+  if(UI.meBusy) return; UI.meBusy = true;
+  try{ const r = await payCall({action:"me", exam:PAYC.exam}); if(r && r.ok){ UI.me = r; if(r.passes) setPasses(r.passes); } }catch(_){}
+  UI.meBusy = false; if(current==="account") render();
+}
+function vAccount(){
+  const price = PAYC ? PAYC.pyq.price : 45;
+  if(!ST.name) return `<div class="wrap view">${head("My account", "Log in to Learn with Anil", "")}${gBlock()}
+    <div class="card pad"><p style="margin:0 0 10px">${GID ? "No Google account? Register" : "Register"} once with your name, phone number and email.</p><a class="btn ${GID ? "btn-secondary" : "btn-primary"}" href="/appsc-endowment-officer/join/">Register with phone &amp; email</a></div></div>`;
+  if(ST.session && !UI.me && PAYC && PAYC.api) loadMe();
+  const ok = passOK("pyq"), pass = PASSES.all || {};
+  const plan = !(PAYC && PAYC.on) ? "" : ok
+    ? `<div class="card pad acct-plan ok"><p class="eyebrow">Your plan</p><h2>✓ PYQ Pass · active</h2><p>Everything on Learn with Anil (every exam's previous papers with explanations, every mock test series and the study books) until <b>${esc(fmtDayY(pass.pyq))}</b>.</p></div>`
+    : `<div class="card pad acct-plan"><p class="eyebrow">Your plan</p><h2>No active pass</h2><p>The PYQ Pass opens everything on the site for 12 months: every previous paper of every exam with explanations, every mock test series and the study books.</p><div class="row"><button class="btn btn-primary" type="button" data-act="openpay" data-kind="pyq">Subscribe · ₹${price} for 12 months</button></div></div>`;
+  const claim = PAYC && PAYC.on && PAYC.api ? `<form class="card pad" id="claimForm" novalidate><h2 class="acct-h">Paid already but still locked?</h2>
+    <p class="muted" style="margin:0 0 10px">Enter the payment ID from your Instamojo SMS or email (it starts with MOJO). It is linked to this number at once, even if you paid with another number.</p>
+    <div class="row"><input name="payment" maxlength="40" placeholder="MOJO…" autocapitalize="characters" style="max-width:260px"><button class="btn btn-secondary" type="submit">Link my payment</button></div><p class="err" id="claimErr" role="alert" hidden></p></form>` : "";
+  const me = UI.me;
+  const devs = ST.session
+    ? `<div class="card pad"><h2 class="acct-h">Logged-in devices <span class="muted" style="font-weight:500">(up to 3)</span></h2>${me ? `<ul class="devs">${(me.devices||[]).map(d=>`<li><span><b>${esc(d.name)}</b>${d.current ? ' <span class="pill blue">This device</span>' : ""}<br><span class="muted">Since ${esc(d.since)}${d.seen ? " · last used " + esc(d.seen) : ""}</span></span>${d.current ? "" : `<button class="btn btn-ghost btn-sm" type="button" data-act="logoutdev" data-id="${esc(d.id)}">Log out</button>`}</li>`).join("")}</ul>` : `<p class="muted" style="margin:0">Loading…</p>`}</div>`
+    : gBlock("Link your Google account once: then you log in on a new phone with one tap, stay logged in for 12 months, and can see and remove your devices here.");
+  const pays = me && (me.payments||[]).length ? `<div class="card pad"><h2 class="acct-h">Payments</h2><ul class="devs">${me.payments.map(x=>`<li><span><b>${esc(x.what)}</b> · ${esc(x.on)}${x.amount ? " · ₹" + esc(String(x.amount)) : ""}<br><span class="muted">${esc(x.id)} · valid till ${esc(fmtDayY(x.until))}</span></span></li>`).join("")}</ul></div>` : "";
+  return `<div class="wrap view">${head("My account", esc(ST.name), "")}
+    <div class="card pad acct"><p style="margin:0 0 8px"><b>${esc(ST.name)}</b><br>📱 ${esc(ST.phone||"")}<br>✉️ ${esc(ST.email||"")}${ST.district ? `<br>📍 ${esc(ST.district)}` : ""}</p>
+      <p class="muted" style="margin:0 0 10px">${ST.session ? "Logged in with Google · you stay logged in on this device for 12 months." : "Registered on this device with phone and email."}</p>
+      <div class="row"><a class="btn btn-ghost btn-sm" href="/appsc-endowment-officer/join/">Edit details</a><button class="btn btn-ghost btn-sm" type="button" data-act="logoutme">Log out of this device</button></div></div>
+    ${plan}${claim}${devs}${pays}
+    <p class="muted" style="font-size:14px">Problem with a payment? <a href="/help.html">Help &amp; grievances</a></p></div>`;
+}
+async function claimSubmit(e){
+  e.preventDefault();
+  const pid = (e.target.elements.payment.value || "").trim(), box = $("#claimErr");
+  if(!ST.phone){ go("join"); return; }
+  let r = null; try{ r = await payCall({action:"claim", exam:PAYC.exam, payment:pid, phone:ST.phone, email:ST.email||"", device:DEVICE}); }catch(_){}
+  if(!r || !r.ok){ if(box){ box.textContent = (r && r.error) || "Could not link the payment. Please check your internet and try again."; box.hidden = false; } return; }
+  setPasses(r.passes); UI.me = null; UI.passChecked = true; toast(r.note || "Payment linked."); render();
+}
+async function logoutHere(){
+  if(ST.session){ try{ await payCall({action:"logout", exam:PAYC.exam}); }catch(_){} }
+  const keep = {pending: ST.pending || []}; ST = keep; saveST();
+  PASSES = {}; savePasses(); UI.me = null; UI.passChecked = false;
+  try{ localStorage.removeItem("lwa-pass-checked"); Object.keys(localStorage).filter(k=>k.startsWith("lwa-exk-")).forEach(k=>localStorage.removeItem(k)); }catch(_){}
+  toast("Logged out of this device."); go(HUBPAGE ? "exams" : "home");
+}
+
 /* ---------- routing ---------- */
-const VIEWS = ["exams","exam","home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes","mains","mocks","sectionals"];
+const VIEWS = ["exams","exam","home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes","mains","mocks","sectionals","account"];
 let current = "";
 // On the website each view has its own address (/appsc-group-1/bank/); in a single-file copy the old #bank links are used.
 const HUBPAGE = !!DATA.hub && !!document.getElementById("hub-static");   // the exam list is only on the start page
 const PB = DATA.pb || "", PATHMODE = !!PB && /^https?:$/.test(location.protocol), HUBP = "/";
-const ROUTES = new Set(["home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes","mains","exams","mocks","sectionals"]);
+const ROUTES = new Set(["home","papers","practice","quiz","result","bank","mistakes","smart","bookmarks","heatmap","about","join","notes","mains","exams","mocks","sectionals","account"]);
 const isRoute = h => ROUTES.has(h) || /^(exam|q)\/[\w-]+$/.test(h) || h==="appsc-group-2";
 function pathOf(v){
   if(v==="exams" || v==="") return HUBP;
@@ -1296,7 +1444,7 @@ function render(){
     // same view re-drawn (an option picked, a question jumped to): keep the page and the question palette where they were,
     // so a student on question 35 or 100 is not sent back to the top / to question 1 (Anil, 29 Oct 2026)
     const pg0 = host.querySelector(".pgrid"), keepY = changed ? null : window.scrollY, keepPg = (!changed && pg0) ? pg0.scrollTop : null;
-    host.innerHTML = gateOK(v) ? ({exam:vExam,papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,notes:vNotes,mains:vMains,mocks:vMocks,sectionals:vSectionals})[v]() : vLocked(v);
+    host.innerHTML = gateOK(v) ? ({exam:vExam,papers:vPapers,practice:vPractice,quiz:vQuiz,result:vResult,bank:vBank,mistakes:vMistakes,smart:vSmart,bookmarks:vBookmarks,heatmap:vHeatmap,about:vAbout,join:vJoin,account:vAccount,notes:vNotes,mains:vMains,mocks:vMocks,sectionals:vSectionals})[v]() : vLocked(v);
     host.querySelectorAll("[data-mixed]").forEach(el=>{ el.indeterminate = true; });
     if(v==="quiz") keepPalette(keepPg);
     if(keepY!==null && Math.abs(window.scrollY - keepY) > 1) window.scrollTo(0, keepY);
@@ -1305,7 +1453,7 @@ function render(){
   markLocks();
   saveQZ();
   if(changed) window.scrollTo(0,0);
-  fixLinks(); document.title = viewTitle(v); syncLang();
+  fixLinks(); document.title = viewTitle(v); syncLang(); navAcct(); gMount();
   if(v==="exams") applyHubLang();
 }
 const BASE_TITLE = document.title;
@@ -1314,7 +1462,7 @@ function viewTitle(v){
   if((v==="home" || v==="exam") && DATA.homeTitle) return DATA.homeTitle;
   const x = DATA.examSeo || DATA.examShort || "";
   const t = {papers:`${x} Previous Question Papers`, practice:`Create a ${x} Quiz`, bank:`${x} Question Bank`, mistakes:"Mistakes Notebook", smart:"Smart Quiz",
-             bookmarks:"Bookmarks", heatmap:"Topic Heatmap", about:"About Jupudi Anil Kumar", notes:"Study Material 2026-27", mains:"Group-1 Mains Answer Writing Tool Kit", mocks:`${x} Mock Tests`, sectionals:`${x} Sectional Tests`, quiz:"Quiz", result:"Your Result", join:"Your Details"}[v];
+             bookmarks:"Bookmarks", heatmap:"Topic Heatmap", about:"About Jupudi Anil Kumar", account:"My Account", join:"Log in or Register", notes:"Study Material 2026-27", mains:"Group-1 Mains Answer Writing Tool Kit", mocks:`${x} Mock Tests`, sectionals:`${x} Sectional Tests`, quiz:"Quiz", result:"Your Result", join:"Your Details"}[v];
   return t ? `${t} | Learn with Anil` : BASE_TITLE;
 }
 window.addEventListener("hashchange", ()=>{ if(PATHMODE){ const h = location.hash.slice(1); if(isRoute(h)){ history.replaceState(null, "", pathOf(h)); } else return; } render(); });
@@ -2005,9 +2153,11 @@ function vJoin(){
   const intro = p || fresh
     ? (pay ? `Registration is only once. Next you pay ₹${price} for the PYQ Pass, which opens every previous paper of every exam on the site for 12 months.` : "Registration is only once, and it is free.")
     : "Your test scores are saved with these details, so Anil can follow your progress and help you.";
+  if(UI.gacc && ST.session) return `<div class="wrap view">${head("One last step", "Add your phone number", "Asked only once. Your PYQ Pass, tests and mocks are linked to it.")}${gPhoneStep()}</div>`;
+  const g = fresh && GID ? gBlock() + `<p class="join-or"><span>or register with your phone number and email</span></p>` : "";
   return `<div class="wrap view">
     ${head(p || fresh ? "One-time registration" : "Your details", p ? "Register once to start practising" : fresh ? (pay ? "Register to get the PYQ Pass" : "Register once") : "Update your details", intro)}
-    <form class="card join" id="joinForm" novalidate>
+    ${g}<form class="card join" id="joinForm" novalidate>
       ${p? `<p class="join-test"><span class="mono">Next</span> ${esc(p.title)} · ${p.ids.length} questions</p>` : ""}
       <div class="join-grid">
         <label>Full name<input name="name" autocomplete="name" required maxlength="80" value="${esc(s.name||"")}"></label>
@@ -2411,6 +2561,9 @@ document.addEventListener("click", e=>{
     case "kitdl": track("kit_download", {paper: b.dataset.paper}); return;
     case "bookdl": bookDownload(b.dataset.id, b); return;
     case "paperpdf": paperPdf(b.dataset.paper, b); return;
+    case "navsub": openPay("pyq"); break;
+    case "logoutme": logoutHere(); break;
+    case "logoutdev": payCall({action:"logout", exam:PAYC.exam, target:b.dataset.id}).then(()=>{ UI.me = null; render(); toast("That device was logged out."); }).catch(()=>{}); break;
     case "openpay": openPay(b.dataset.kind==="mock" || (b.dataset.kind==="combo" && PAYC && PAYC.combo) ? b.dataset.kind : "pyq"); break;
     case "presubj": { const s=SUBJ[b.dataset.subj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); go("practice"); break; }
     case "paper": { const ps=selPapers(), id=b.dataset.paper; ps.has(id)?ps.delete(id):ps.add(id); P.papers=[...ps]; savePrefs(); render(); break; }
@@ -2479,32 +2632,15 @@ document.addEventListener("click", e=>{
     case "copyig": { const h="@"+DATA.instagram; try{ navigator.clipboard.writeText(h).then(()=>toast("Copied "+h), ()=>toast("Handle: "+h)); }catch(_){ toast("Handle: "+h); } break; }
   }
 });
-let joinBusy = false;   // true while the details are being saved, so extra taps on the button don't send them again
-document.addEventListener("submit", async e=>{
-  if(e.target.id!=="joinForm") return;
-  e.preventDefault();
-  if(joinBusy) return;
-  const f = e.target, val = n=> (f.elements[n].value||"").trim();
-  const name = val("name").replace(/\s+/g," "), email = val("email"), district = val("district").replace(/\s+/g," "), help = val("help");
-  let phone = val("phone").replace(/\D/g,""); if(phone.length>10 && (phone.startsWith("91")||phone.startsWith("0"))) phone = phone.slice(-10);
-  const err = name.length<2? "Please enter your full name."
-    : !/^[6-9]\d{9}$/.test(phone)? "Please enter a valid 10-digit mobile number."
-    : !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)? "Please enter a valid email address."
-    : district.length<2? "Please enter your district or city."
-    : !f.elements.ok.checked? "Please tick the box to agree to share your details." : "";
-  const box = $("#joinErr");
-  if(err){ box.textContent = err; box.hidden = false; box.scrollIntoView({block:"nearest"}); return; }
+async function finishJoin(d, method){
+  const {name, phone, email, district, help} = d;
   const isNew = !ST.name;
   // Only new information goes to the sheet: a first registration, changed details, or a new help message.
   const changed = isNew || name!==ST.name || phone!==ST.phone || email!==ST.email || district!==ST.district || (!!help && help!==ST.lastHelp);
-  joinBusy = true;
-  const btn = f.querySelector('button[type="submit"]'), label = btn ? btn.textContent : "";
-  if(btn){ btn.disabled = true; btn.textContent = "Saving…"; }
-  try{
     Object.assign(ST, {name, phone, email, district, joined: ST.joined || Date.now()}); if(help) ST.lastHelp = help; saveST();
     const p = UI.pending; UI.pending = null;
     if(changed) sendRecord({help, test: isNew? "Registered" + (p? " · before "+p.title : "") : "Updated details"});
-    if(isNew) track("sign_up", {method: "form", exam: DATA.examShort||"", district});
+    if(isNew) track("sign_up", {method, exam: DATA.examShort||"", district});
     const trialMsg = "";
     if(PAYC && PAYC.on && PAYC.api){ toast("Saving your details…"); await refreshPasses(true); }   // a pass already paid with this phone opens at once
     /* Anil, 26 Oct 2026: a new student who registered from "Register to get the PYQ Pass" was sent back to the page with
@@ -2522,6 +2658,29 @@ document.addEventListener("submit", async e=>{
     else if(UI.pendingPdf){ const pid = UI.pendingPdf; UI.pendingPdf = null; leaveJoin(); paperPdf(pid); }
     else if(pay && (isNew || wantPay) && !passOK("pyq")){ leaveJoin(); toast("Thanks, "+first+". Your details are saved."); openPay("pyq"); }
     else { toast(passOK("pyq") && pay && isNew ? "Welcome back, "+first+". Your PYQ Pass is active." : "Your details are saved." + trialMsg); leaveJoin(isNew || wantPay ? null : "about"); }
+}
+let joinBusy = false;   // true while the details are being saved, so extra taps on the button don't send them again
+document.addEventListener("submit", async e=>{
+  if(e.target.id==="gPhoneForm") return gPhoneSubmit(e);
+  if(e.target.id==="claimForm") return claimSubmit(e);
+  if(e.target.id!=="joinForm") return;
+  e.preventDefault();
+  if(joinBusy) return;
+  const f = e.target, val = n=> (f.elements[n].value||"").trim();
+  const name = val("name").replace(/\s+/g," "), email = val("email"), district = val("district").replace(/\s+/g," "), help = val("help");
+  let phone = val("phone").replace(/\D/g,""); if(phone.length>10 && (phone.startsWith("91")||phone.startsWith("0"))) phone = phone.slice(-10);
+  const err = name.length<2? "Please enter your full name."
+    : !/^[6-9]\d{9}$/.test(phone)? "Please enter a valid 10-digit mobile number."
+    : !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)? "Please enter a valid email address."
+    : district.length<2? "Please enter your district or city."
+    : !f.elements.ok.checked? "Please tick the box to agree to share your details." : "";
+  const box = $("#joinErr");
+  if(err){ box.textContent = err; box.hidden = false; box.scrollIntoView({block:"nearest"}); return; }
+  joinBusy = true;
+  const btn = f.querySelector('button[type="submit"]'), label = btn ? btn.textContent : "";
+  if(btn){ btn.disabled = true; btn.textContent = "Saving…"; }
+  try{
+    await finishJoin({name, phone, email, district, help}, "form");
   } finally {
     joinBusy = false;
     if(btn && btn.isConnected){ btn.disabled = false; btn.textContent = label; }
