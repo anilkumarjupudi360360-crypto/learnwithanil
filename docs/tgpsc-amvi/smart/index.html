@@ -1858,20 +1858,20 @@ function vQuiz(){
     if(test){
       navR = `<button class="btn btn-secondary" type="button" data-act="markrev" aria-pressed="${!!QZ.mark[q.id]}">${QZ.mark[q.id]?"Unmark review":"Mark for review"}</button>` +
              (last? `<button class="btn btn-good" type="button" data-act="asksubmit">Submit test</button>` : `<button class="btn btn-primary" type="button" data-act="next">Save &amp; next</button>`);
-    } else if(!checked){
-      navR = `<button class="btn btn-secondary" type="button" data-act="skip">Skip</button><button class="btn btn-primary" type="button" data-act="check" ${chosen===undefined?"disabled":""}>Check answer</button>` + (last? `<button class="btn btn-good" type="button" data-act="finish">Submit</button>` : "");   // last question: Submit always below (Anil, 25 Oct 2026)
     } else {
+      // Practice (Anil, 2 Nov 2026: "instead of check answer, provide next question and previous question buttons"): tapping an
+      // option shows the answer at once, and Next question moves on whether or not the question was answered.
       navR = last? `<button class="btn btn-good" type="button" data-act="finish">Submit &amp; see result</button>` : `<button class="btn btn-primary" type="button" data-act="next">Next question</button>`;
     }
   } else {
     if(!QZ.rev[q.id]){
       body = `<div class="recall-box"><p class="muted">This official key prints only the correct answer. Say your answer to yourself, then reveal it.</p><button class="btn btn-primary" type="button" data-act="reveal">Show answer</button></div>`;
-      navR = `<button class="btn btn-secondary" type="button" data-act="skip">Skip</button>` + (last? `<button class="btn btn-good" type="button" data-act="finish">Submit</button>` : "");
+      navR = last? `<button class="btn btn-good" type="button" data-act="finish">Submit</button>` : `<button class="btn btn-primary" type="button" data-act="next">Next question</button>`;
     } else {
       body = answerBox(q) + whyHTML(q);
       if(!checked){
         body += `<div class="row"><span style="font-weight:700">Did you know it?</span><button class="btn btn-good btn-sm" type="button" data-act="self" data-v="R">Yes, I got it right</button><button class="btn btn-bad btn-sm" type="button" data-act="self" data-v="W">No, I got it wrong</button></div>`;
-        if(last) navR = `<button class="btn btn-good" type="button" data-act="finish">Submit</button>`;
+        navR = last? `<button class="btn btn-good" type="button" data-act="finish">Submit</button>` : `<button class="btn btn-primary" type="button" data-act="next">Next question</button>`;
       } else {
         feedback = chosen==="R"? `<p class="verdict good">Marked as known.</p>` : chosen==="W"? `<p class="verdict bad">Marked as missed. Added to your mistakes notebook at the end.</p>` : `<p class="verdict skip">Skipped.</p>`;
         navR = last? `<button class="btn btn-good" type="button" data-act="finish">Submit &amp; see result</button>` : `<button class="btn btn-primary" type="button" data-act="next">Next question</button>`;
@@ -1904,13 +1904,13 @@ function vQuiz(){
           ${stemHTML(q)}${body}${feedback}
         </article>
         ${confirmBox}
-        <div class="qnav"><button class="btn btn-secondary" type="button" data-act="prev" ${i===0?"disabled":""}>Previous</button><div class="row">${navR}</div></div>
+        <div class="qnav"><button class="btn btn-secondary" type="button" data-act="prev" ${i===0?"disabled":""}>Previous question</button><div class="row">${navR}</div></div>
       </div>
       <aside class="card palette">
         <h3>Question palette</h3>
         <div class="pgrid">${pal}</div>
         ${legend}
-        <p class="muted" style="font-size:13px">Keys: A–D to choose${test?"":", Enter to check"}, ← → to move.</p>
+        <p class="muted" style="font-size:13px">Keys: A–D to choose${test?"":" (the answer shows at once), Enter for the next question"}, ← → to move.</p>
       </aside>
     </div>
   </div>`;
@@ -2569,7 +2569,7 @@ document.addEventListener("click", e=>{
     case "payclose": { closePay(); break; }
     case "paperpractice": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id).map(q=>q.id), p.title, "practice", "paper", p.mins); break; }
     case "papertest": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id && isMCQ(q)).map(q=>q.id), p.title+" · Timed test", "test", "paper", p.mins); break; }
-    case "pick": { const id=QZ.ids[QZ.i]; if(QZ.mode!=="test" && QZ.chk[id]) return; const j=+b.dataset.i; if(QZ.mode==="test" && QZ.ans[id]===j) delete QZ.ans[id]; else QZ.ans[id]=j; render(); break; }
+    case "pick": { const id=QZ.ids[QZ.i]; if(QZ.mode!=="test" && QZ.chk[id]) return; const j=+b.dataset.i; if(QZ.mode==="test" && QZ.ans[id]===j) delete QZ.ans[id]; else QZ.ans[id]=j; if(QZ.mode!=="test") QZ.chk[id]=true; render(); break; }   // practice: the answer shows as soon as an option is tapped
     case "check": { const id=QZ.ids[QZ.i]; if(QZ.ans[id]===undefined) return; QZ.chk[id]=true; render(); break; }
     case "reveal": { QZ.rev[QZ.ids[QZ.i]]=true; render(); break; }
     case "self": { const id=QZ.ids[QZ.i]; QZ.ans[id]=b.dataset.v; QZ.chk[id]=true; render(); break; }
@@ -2697,14 +2697,13 @@ document.addEventListener("keydown", e=>{
   const id = QZ.ids[QZ.i], q = QMAP[id], k = e.key.toUpperCase();
   if(isMCQ(q)){
     const idx = LET.indexOf(k) >= 0 ? LET.indexOf(k) : ["1","2","3","4"].indexOf(k);
-    if(idx>=0){ if(QZ.mode!=="test" && QZ.chk[id]) return; if(QZ.mode==="test" && QZ.ans[id]===idx) delete QZ.ans[id]; else QZ.ans[id]=idx; render(); e.preventDefault(); return; }
+    if(idx>=0){ if(QZ.mode!=="test" && QZ.chk[id]) return; if(QZ.mode==="test" && QZ.ans[id]===idx) delete QZ.ans[id]; else QZ.ans[id]=idx; if(QZ.mode!=="test") QZ.chk[id]=true; render(); e.preventDefault(); return; }
   }
-  if(e.key==="ArrowRight" && QZ.i<QZ.ids.length-1 && (QZ.mode==="test"||QZ.chk[id])){ QZ.i++; render(); showQ(); }
+  if(e.key==="ArrowRight" && QZ.i<QZ.ids.length-1){ QZ.i++; render(); showQ(); }
   else if(e.key==="ArrowLeft" && QZ.i>0){ QZ.i--; render(); showQ(); }
   else if(e.key==="Enter" && QZ.mode!=="test" && isMCQ(q)){
     if(e.target.closest && e.target.closest("button")) return;
-    if(!QZ.chk[id] && QZ.ans[id]!==undefined){ QZ.chk[id]=true; render(); }
-    else if(QZ.chk[id]){ if(QZ.i<QZ.ids.length-1){ QZ.i++; render(); showQ(); } else finishQuiz(); }
+    if(QZ.i<QZ.ids.length-1){ QZ.i++; render(); showQ(); } else if(QZ.chk[id]) finishQuiz();
   }
 });
 function restoreReset(){ $("#resetBox").innerHTML=`<button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button>`; bindReset(); }
