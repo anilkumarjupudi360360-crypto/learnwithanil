@@ -56,10 +56,25 @@ function doPost(e) {
     const b = JSON.parse((e && e.postData && e.postData.contents) || '{}');
     const exam = String(b.exam || '');
     if (!/^[a-z0-9-]{2,40}$/.test(exam)) return out({ok: false, error: 'Unknown exam.'});
+    // Student accounts (Anil, 2 Nov 2026: "student logins ... no need to login again and again ... like JioHotstar").
+    // A student signs in once with Google, adds a phone number once, and stays logged in on that device for 12 months.
+    // Requests carrying a session are answered for the account's phone (and its Google email); older phone + email requests still work.
+    if (b.action === 'glogin') return out(glogin(b));
+    let S = null;
+    if (b.session) {
+      S = session_(String(b.session));
+      if (!S) return out({ok: false, relogin: true, error: 'Please log in again.'});
+      if (S.phone) b.phone = S.phone;
+      b.email = S.email; b.acct = S;
+    }
     switch (b.action) {
+      case 'setphone': return out(S ? setPhone(b, S, exam) : {ok: false, relogin: true, error: 'Please log in again.'});
+      case 'me': return out(S ? me(S, exam, String(b.session)) : {ok: false, relogin: true, error: 'Please log in again.'});
+      case 'logout': return out(S ? logout(S, String(b.session), String(b.target || '')) : {ok: true});
+      case 'claim': return out(claim(b, exam));
       case 'buy': return out(buy(b, exam));
       case 'verify': return out(verify(b, exam));
-      case 'passes': return out(passesFor(phoneOf(b.phone), exam, b.device, b.email, true));
+      case 'passes': return out(passesFor(phoneOf(b.phone), exam, b.device, b.email, true, S));
       case 'mock': return out(mock(b, exam));
       case 'grievance': return out(grievance(b, exam));
       default: return out({ok: false, error: 'Unknown action.'});
@@ -139,7 +154,7 @@ const REQ_HEAD = ['time', 'request_id', 'phone', 'exam', 'kind', 'amount', 'name
 function buy(b, exam) {
   const kind = 'pyq';   // Anil, 26 Oct 2026: one ₹45 PYQ Pass for everything; a 'mock' or 'combo' buy from an old page opens it too
   const phone = phoneOf(b.phone);
-  if (!phone) return {ok: false, error: 'Please register with a valid 10-digit mobile number first.'};
+  if (!phone) return {ok: false, error: b.acct ? 'Please add your mobile number first (My Account).' : 'Please register with a valid 10-digit mobile number first.'};
   if (!prop('INSTAMOJO_CLIENT_ID') || !prop('INSTAMOJO_CLIENT_SECRET')) return {ok: false, error: 'Online payment opens in a few hours. Please try again later today.'};
   const amount = kind === 'mock' ? MOCKS[exam].price : kind === 'combo' ? COMBO.price : PYQ.price;
   const purpose = (kind === 'mock' ? MOCKS[exam].name : kind === 'combo' ? COMBO.name : PYQ.purpose).slice(0, 30);
@@ -257,13 +272,17 @@ function trialFor_(phone, email, start) {   // the phone's free-trial end date; 
 
 // A pass needs the same phone AND email the student paid with. Returns {pyq, mock, trial, paid}: pyq = last day the
 // student can use every PYQ on the site (PYQ Pass or free trial), mock = last day of this exam's mock pack.
-function passesFor(phone, exam, device, email, startTrial) {
+function passesFor(phone, exam, device, email, startTrial, acct) {
   email = String(email || '').trim().toLowerCase();
-  if (!phone || !email) return {ok: true, passes: {}};
+  if (acct) { phone = acct.phone; email = acct.email; }
+  if (!acct && (!phone || !email)) return {ok: true, passes: {}};
+  if (acct && !phone && !email) return {ok: true, passes: {}};
   const v = sheet('passes', PASS_HEAD).getDataRange().getValues();
   const now = today_(), res = {};
   for (let i = 1; i < v.length; i++) {
-    if (String(v[i][1]) !== phone || String(v[i][9] || '').toLowerCase() !== email) continue;
+    const rp = String(v[i][1]), re = String(v[i][9] || '').toLowerCase();
+    // logged-in account: its phone (ownership checked when the phone was linked) or its Google email; otherwise phone AND email
+    if (acct ? !((phone && rp === phone) || (email && re === email)) : (rp !== phone || re !== email)) continue;
     const ex = String(v[i][2]), kind = String(v[i][3]), u = day_(v[i][4]);
     if (u < now) continue;
     if (kind === 'pyq' && ex === 'all') { if (!res.pyq || res.pyq < u) res.pyq = u; res.paid = true; }
@@ -272,7 +291,7 @@ function passesFor(phone, exam, device, email, startTrial) {
   if (res.paid && res.pyq && (!res.mock || res.mock < res.pyq)) res.mock = res.pyq;   // the PYQ Pass opens every mock series too
   const t = TRIAL_DAYS > 0 ? trialFor_(phone, email, startTrial) : '';
   if (t && t >= now) { res.trial = t; if (!res.pyq || res.pyq < t) res.pyq = t; }
-  if ((res.pyq || res.mock) && device && !deviceOK_(phone, String(device))) return {ok: false, error: 'These passes are already in use on ' + MAX_DEVICES + ' devices.', passes: {}};
+  if (!acct && (res.pyq || res.mock) && device && !deviceOK_(phone, String(device))) return {ok: false, error: 'These passes are already in use on ' + MAX_DEVICES + ' devices.', passes: {}};
   return {ok: true, passes: res};
 }
 
@@ -303,7 +322,7 @@ function mock(b, exam) {   // the key of a sealed mock, book or the Bahubali cod
     try { sheet('free', ['time', 'phone', 'email', 'mock']).appendRow([new Date(), phone, cell_(String(b.email || '').slice(0, 100)), id]); } catch (e) {}
     return {ok: true, id: id, key: String(row[1]), file: String(row[2]), free: true};
   }
-  const ps = passesFor(phoneOf(b.phone), exam, b.device, b.email, false);
+  const ps = passesFor(phoneOf(b.phone), exam, b.device, b.email, false, b.acct || null);
   if (!ps.ok) return ps;
   if (item ? !(ps.passes.paid && ps.passes.pyq) : !ps.passes.mock)
     return {ok: false, error: 'This needs the ₹' + PYQ.price + ' PYQ Pass (everything on the site, 12 months).', need: 'pyq'};
@@ -315,4 +334,135 @@ function checkSetup() {
   Logger.log('Spreadsheet: ' + (prop('SHEET_ID') ? book_().getName() : 'SHEET_ID MISSING'));
   ['INSTAMOJO_CLIENT_ID', 'INSTAMOJO_CLIENT_SECRET', 'INSTAMOJO_SALT'].forEach(k => Logger.log(k + ': ' + (prop(k) ? 'set' : 'MISSING')));
   Logger.log('Web app URL: ' + ScriptApp.getService().getUrl());
+}
+
+// ---------- student accounts: Google sign-in, 12-month sessions, devices, linking a payment (Anil, 2 Nov 2026) ----------
+const ACC_HEAD = ['time', 'email', 'name', 'phone', 'district', 'sub', 'last_login'];
+const SES_HEAD = ['time', 'token_hash', 'email', 'device', 'agent', 'expires', 'revoked', 'last_seen'];
+const SESSION_MONTHS = 12;
+function sha_(t) { return Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, t).map(b => ('0' + (b & 255).toString(16)).slice(-2)).join(''); }
+function account_(email) {
+  const sh = sheet('accounts', ACC_HEAD), v = sh.getDataRange().getValues();
+  for (let i = 1; i < v.length; i++) if (String(v[i][1]).toLowerCase() === email)
+    return {sh: sh, row: i + 1, email: email, name: String(v[i][2] || ''), phone: String(v[i][3] || ''), district: String(v[i][4] || '')};
+  return null;
+}
+function pub_(a) { return {email: a.email, name: a.name, phone: a.phone, district: a.district}; }
+function deviceName_(ua) {
+  ua = String(ua || '');
+  const os = /Android/i.test(ua) ? 'Android phone' : /iPhone|iPad/i.test(ua) ? 'iPhone' : /Windows/i.test(ua) ? 'Windows computer' : /Mac OS/i.test(ua) ? 'Mac' : /Linux/i.test(ua) ? 'Linux computer' : 'Device';
+  const br = /Edg\//.test(ua) ? 'Edge' : /OPR\//.test(ua) ? 'Opera' : /Chrome\//.test(ua) ? 'Chrome' : /Firefox\//.test(ua) ? 'Firefox' : /Safari\//.test(ua) ? 'Safari' : '';
+  return os + (br ? ' · ' + br : '');
+}
+
+function glogin(b) {
+  const cid = prop('GOOGLE_CLIENT_ID');
+  if (!cid) return {ok: false, error: 'Google login is not switched on yet. Please register with your phone and email.'};
+  const r = UrlFetchApp.fetch('https://oauth2.googleapis.com/tokeninfo?id_token=' + encodeURIComponent(String(b.credential || '')), {muteHttpExceptions: true});
+  let t = {}; try { t = JSON.parse(r.getContentText()); } catch (e) {}
+  if (r.getResponseCode() !== 200 || t.aud !== cid || !/^(https:\/\/)?accounts\.google\.com$/.test(String(t.iss)) || String(t.email_verified) !== 'true' || Number(t.exp) * 1000 < Date.now())
+    return {ok: false, error: 'Google login did not work. Please try again.'};
+  const email = String(t.email).toLowerCase(), name = String(t.name || t.given_name || '').slice(0, 80);
+  const lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    let a = account_(email);
+    if (!a) { sheet('accounts', ACC_HEAD).appendRow([new Date(), email, cell_(name), '', '', String(t.sub || ''), new Date()]); a = account_(email); }
+    else a.sh.getRange(a.row, 7).setValue(new Date());
+    // one session per login; at most MAX_DEVICES stay active (the oldest is logged out, like a streaming app)
+    const token = Utilities.getUuid().replace(/-/g, '') + Utilities.getUuid().replace(/-/g, '');
+    const sh = sheet('sessions', SES_HEAD);
+    sh.appendRow([new Date(), sha_(token), email, String(b.device || '').slice(0, 40), String(b.agent || '').slice(0, 160), inMonths_(SESSION_MONTHS), '', new Date()]);
+    const v = sh.getDataRange().getValues(), now = today_(), live = [];
+    for (let i = 1; i < v.length; i++) if (String(v[i][2]) === email && !v[i][6] && day_(v[i][5]) >= now) live.push(i + 1);
+    let out = 0;
+    while (live.length > MAX_DEVICES) { sh.getRange(live.shift(), 7).setValue(new Date()); out++; }
+    return {ok: true, session: token, account: pub_(a), loggedOut: out};
+  } finally { lock.releaseLock(); }
+}
+
+function session_(token) {
+  if (!/^[0-9a-f]{64}$/.test(token)) return null;
+  const h = sha_(token), sh = sheet('sessions', SES_HEAD), v = sh.getDataRange().getValues(), now = today_();
+  for (let i = v.length - 1; i >= 1; i--) {
+    if (String(v[i][1]) !== h) continue;
+    if (v[i][6] || day_(v[i][5]) < now) return null;
+    const a = account_(String(v[i][2]));
+    if (!a) return null;
+    const seen = v[i][7] instanceof Date ? v[i][7] : null;
+    if (!seen || Date.now() - seen.getTime() > 6 * 3600 * 1000) sh.getRange(i + 1, 8).setValue(new Date());
+    return {email: a.email, phone: a.phone, name: a.name, district: a.district, acc: a, srow: i + 1};
+  }
+  return null;
+}
+
+// Link a phone number to the account. A number that already has a PYQ Pass is linked only if that pass was bought with this
+// Google email, or with the payment ID from the student's own receipt; a number linked to another account is refused.
+function setPhone(b, S, exam) {
+  const phone = phoneOf(b.phone);
+  if (!phone) return {ok: false, error: 'Please enter a valid 10-digit mobile number.'};
+  const name = String(b.name || S.name || '').trim().slice(0, 80), district = String(b.district || S.district || '').trim().slice(0, 60);
+  const lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    const av = sheet('accounts', ACC_HEAD).getDataRange().getValues();
+    for (let i = 1; i < av.length; i++) if (String(av[i][3]) === phone && String(av[i][1]).toLowerCase() !== S.email)
+      return {ok: false, error: 'This number is already linked to another Google account. If it is yours, please write to us at learnwithanil.in/help.html.'};
+    if (phone !== S.phone) {
+      const v = sheet('passes', PASS_HEAD).getDataRange().getValues(), pid = String(b.payment || '').trim();
+      const rows = v.slice(1).filter(r => String(r[1]) === phone);
+      if (rows.length && !rows.some(r => String(r[9] || '').toLowerCase() === S.email || (pid && String(r[5]) === pid)))
+        return {ok: false, needPayment: true, error: 'This number has a PYQ Pass bought with another email. Enter the payment ID from your payment SMS or email (it starts with MOJO) to link it.'};
+    }
+    const sh = S.acc.sh;
+    sh.getRange(S.acc.row, 3, 1, 3).setValues([[cell_(name), phone, cell_(district)]]);
+  } finally { lock.releaseLock(); }
+  const a = account_(S.email);
+  return {ok: true, account: pub_(a), passes: passesFor(a.phone, exam, '', a.email, false, {phone: a.phone, email: a.email}).passes};
+}
+
+function me(S, exam, token) {
+  const h = sha_(token), v = sheet('sessions', SES_HEAD).getDataRange().getValues(), now = today_(), devices = [];
+  for (let i = 1; i < v.length; i++) if (String(v[i][2]) === S.email && !v[i][6] && day_(v[i][5]) >= now)
+    devices.push({id: String(v[i][1]).slice(0, 12), name: deviceName_(v[i][4]), since: v[i][0] instanceof Date ? ymd_(v[i][0]) : String(v[i][0]), seen: v[i][7] instanceof Date ? ymd_(v[i][7]) : '', current: String(v[i][1]) === h});
+  const pv = sheet('passes', PASS_HEAD).getDataRange().getValues(), pays = [];
+  for (let i = 1; i < pv.length; i++) {
+    const rp = String(pv[i][1]), re = String(pv[i][9] || '').toLowerCase();
+    if ((S.phone && rp === S.phone) || re === S.email) pays.push({on: pv[i][0] instanceof Date ? ymd_(pv[i][0]) : String(pv[i][0]), what: String(pv[i][3]) === 'pyq' ? 'PYQ Pass' : 'Mock pack', until: day_(pv[i][4]), id: String(pv[i][5]), amount: pv[i][7]});
+  }
+  return {ok: true, account: pub_(S.acc), passes: passesFor(S.phone, exam, '', S.email, false, S).passes, devices: devices, payments: pays};
+}
+
+function logout(S, token, target) {   // target = a device id from 'me' (first 12 characters of its session hash); none = this device
+  const h = target ? '' : sha_(token), sh = sheet('sessions', SES_HEAD), v = sh.getDataRange().getValues();
+  for (let i = 1; i < v.length; i++) {
+    const rh = String(v[i][1]);
+    if (String(v[i][2]) === S.email && !v[i][6] && (target ? rh.slice(0, 12) === target : rh === h)) sh.getRange(i + 1, 7).setValue(new Date());
+  }
+  return {ok: true};
+}
+
+// "Paid already but it still shows locked?": link a payment by its Instamojo payment ID (from the student's own receipt). Works for
+// a logged-in account or a phone + email registration. One payment can be linked to one more number only once.
+function claim(b, exam) {
+  const pid = String(b.payment || '').trim().toUpperCase();
+  if (!/^MOJO[0-9A-Z]{8,30}$/.test(pid)) return {ok: false, error: 'Please enter the payment ID exactly as in your payment SMS or email (it starts with MOJO).'};
+  const phone = phoneOf(b.phone), email = String(b.email || '').trim().toLowerCase();
+  if (!phone) return {ok: false, error: b.acct ? 'Please add your mobile number first.' : 'Please register with your phone number first.'};
+  const lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    const sh = sheet('passes', PASS_HEAD), v = sh.getDataRange().getValues();
+    const rows = v.slice(1).filter(r => String(r[5]).toUpperCase() === pid);
+    if (rows.some(r => String(r[1]) === phone)) return Object.assign(passesFor(phone, exam, b.device, email, false, b.acct || null), {note: 'This payment is already linked to your number.'});
+    if (rows.filter(r => String(r[8]).indexOf('claim') === 0).length) return {ok: false, error: 'This payment is already linked to another number. Please write to us at learnwithanil.in/help.html.'};
+    let src = rows[0];
+    if (!src) {   // not recorded yet (webhook missed): ask Instamojo directly
+      let p = {}; try { p = im_('get', '/v2/payments/' + encodeURIComponent(pid) + '/'); } catch (e) { p = {}; }
+      if (!p || p.status !== true || Number(p.amount) < PYQ.price) return {ok: false, error: 'We could not find this payment. Please check the ID, or write to us at learnwithanil.in/help.html with a screenshot.'};
+      sh.appendRow([new Date(), phone, 'all', 'pyq', inMonths_(PYQ.months), pid, String(p.payment_request || ''), p.amount, 'claim (instamojo)', email]);
+    } else {
+      if (String(src[3]) !== 'pyq' || day_(src[4]) < today_()) return {ok: false, error: 'This payment is not an active PYQ Pass.'};
+      sh.appendRow([new Date(), phone, String(src[2]), 'pyq', day_(src[4]), pid, String(src[6]), 0, 'claim (from ' + String(src[1]).slice(-4) + ')', email]);
+    }
+    log_('claim', pid + ' -> ' + phone);
+  } finally { lock.releaseLock(); }
+  return Object.assign(passesFor(phone, exam, b.device, email, false, b.acct || null), {note: 'Payment linked. Your PYQ Pass is active.'});
 }
