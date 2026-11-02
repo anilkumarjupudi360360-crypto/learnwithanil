@@ -22,6 +22,9 @@
  *  - mock:    the key of a released mock (its encrypted file is on the website), for a valid PYQ Pass or mock pass (or a free
  *             mock). Also 'bk-<book id>' (key of an encrypted study book) and 'bb-code' (the Bahubali access code) for any
  *             exam, PYQ Pass only. These keys live in the 'keys' tab like the mock keys.
+ *  - ref:     a registered student's personal invite code (made the first time) and how many friends joined / bought.
+ *  - refjoin: a new student registered through a friend's link (?ref=<code>): records it and gives the friend free days.
+ *             See "invite friends, earn free days" below.
  *
  * Settings are NOT in this file. They live under Project Settings → Script properties:
  *   SHEET_ID                                       the ID of the "Learn with Anil – Passes" spreadsheet (the only sheet this script opens)
@@ -77,6 +80,8 @@ function doPost(e) {
       case 'passes': return out(passesFor(phoneOf(b.phone), exam, b.device, b.email, true, S));
       case 'mock': return out(mock(b, exam));
       case 'grievance': return out(grievance(b, exam));
+      case 'ref': return out(refInfo(b));
+      case 'refjoin': return out(refJoin(b));
       default: return out({ok: false, error: 'Unknown action.'});
     }
   } catch (err) {
@@ -178,6 +183,7 @@ function requestRow_(id) {
 
 function grant_(req, paymentId, amount, source) {
   const lock = LockService.getScriptLock(); lock.waitLock(20000);
+  let fresh = false;   // a new paid PYQ Pass was recorded just now (not a repeat of the webhook / verify)
   try {
     const sh = sheet('passes', PASS_HEAD);
     const v = sh.getDataRange().getValues();
@@ -185,11 +191,14 @@ function grant_(req, paymentId, amount, source) {
     const rows = req.kind === 'combo' ? COMBO.exams.map(ex => [ex, 'mock']) : [[req.exam, req.kind]];
     rows.forEach(([ex, kind], k) => {
       for (let i = 1; i < v.length; i++) if (paymentId && String(v[i][5]) === String(paymentId) && String(v[i][2]) === ex) return;   // already recorded
-      sh.appendRow([new Date(), req.phone, ex, kind, untilFor(kind, ex), paymentId || '', req.request || '', k ? 0 : (amount || req.amount),
+      const amt = k ? 0 : (amount || req.amount);
+      sh.appendRow([new Date(), req.phone, ex, kind, untilFor(kind, ex), paymentId || '', req.request || '', amt,
                     req.kind === 'combo' ? source + ' (combo)' : source, req.email.toLowerCase()]);
+      if (kind === 'pyq' && Number(amt) > 0) fresh = true;
     });
     if (req.sh) req.sh.getRange(req.row, 9).setValue('paid');
   } finally { lock.releaseLock(); }
+  if (fresh) { try { refBought_(req.phone, paymentId); } catch (e) { log_('referral-error', String(e && e.stack || e)); } }
 }
 
 // Asks Instamojo itself whether payment request `id` was paid and, if so, records the pass. Returns true when paid.
@@ -279,16 +288,26 @@ function passesFor(phone, exam, device, email, startTrial, acct) {
   if (acct && !phone && !email) return {ok: true, passes: {}};
   const v = sheet('passes', PASS_HEAD).getDataRange().getValues();
   const now = today_(), res = {};
+  // logged-in account: its phone (ownership checked when the phone was linked) or its Google email; otherwise phone AND email
+  const mine = (rp, re) => acct ? ((phone && rp === phone) || (email && re === email)) : (rp === phone && re === email);
   for (let i = 1; i < v.length; i++) {
-    const rp = String(v[i][1]), re = String(v[i][9] || '').toLowerCase();
-    // logged-in account: its phone (ownership checked when the phone was linked) or its Google email; otherwise phone AND email
-    if (acct ? !((phone && rp === phone) || (email && re === email)) : (rp !== phone || re !== email)) continue;
+    if (!mine(String(v[i][1]), String(v[i][9] || '').toLowerCase())) continue;
     const ex = String(v[i][2]), kind = String(v[i][3]), u = day_(v[i][4]);
     if (u < now) continue;
     if (kind === 'pyq' && ex === 'all') { if (!res.pyq || res.pyq < u) res.pyq = u; res.paid = true; }
     else if (kind === 'mock' && ex === exam) { if (!res.mock || res.mock < u) res.mock = u; }
   }
+  // invite rewards: 'full' days extend a paid pass (everything); 'free' days (bonus) open PYQs, explanations and mocks, not downloads
+  const w = sheet('rewards', REWARD_HEAD).getDataRange().getValues();
+  for (let i = 1; i < w.length; i++) {
+    if (!mine(String(w[i][1]), String(w[i][2] || '').toLowerCase())) continue;
+    const u = day_(w[i][4]);
+    if (u < now) continue;
+    if (String(w[i][3]) === 'full') { if (!res.pyq || res.pyq < u) res.pyq = u; res.paid = true; }
+    else if (!res.bonus || res.bonus < u) res.bonus = u;
+  }
   if (res.paid && res.pyq && (!res.mock || res.mock < res.pyq)) res.mock = res.pyq;   // the PYQ Pass opens every mock series too
+  if (res.bonus && (!res.mock || res.mock < res.bonus)) res.mock = res.bonus;
   const t = TRIAL_DAYS > 0 ? trialFor_(phone, email, startTrial) : '';
   if (t && t >= now) { res.trial = t; if (!res.pyq || res.pyq < t) res.pyq = t; }
   if (!acct && (res.pyq || res.mock) && device && !deviceOK_(phone, String(device))) return {ok: false, error: 'These passes are already in use on ' + MAX_DEVICES + ' devices.', passes: {}};
@@ -324,7 +343,8 @@ function mock(b, exam) {   // the key of a sealed mock, book or the Bahubali cod
   }
   const ps = passesFor(phoneOf(b.phone), exam, b.device, b.email, false, b.acct || null);
   if (!ps.ok) return ps;
-  if (item ? !(ps.passes.paid && ps.passes.pyq) : !ps.passes.mock)
+  // free invite days open the sealed explanations (bk-ex-<exam>) and mocks, but not the PDF downloads or the Bahubali code
+  if (item ? !((ps.passes.paid && ps.passes.pyq) || (/^bk-ex-/.test(id) && ps.passes.bonus)) : !ps.passes.mock)
     return {ok: false, error: 'This needs the ₹' + PYQ.price + ' PYQ Pass (everything on the site, 12 months).', need: 'pyq'};
   return {ok: true, id: id, key: String(row[1]), file: String(row[2])};
 }
@@ -465,4 +485,130 @@ function claim(b, exam) {
     log_('claim', pid + ' -> ' + phone);
   } finally { lock.releaseLock(); }
   return Object.assign(passesFor(phone, exam, b.device, email, false, b.acct || null), {note: 'Payment linked. Your PYQ Pass is active.'});
+}
+
+// ---------- invite friends, earn free days (Anil, 3 Nov 2026: "can we make this sharing compulsory?" → a reward instead) ----------
+// Every registered student gets a personal link (learnwithanil.in/...?ref=<code>). When a NEW student registers through it, the
+// sender gets REF.joinDays free days (for at most REF.joinMax friends); when that friend first buys the PYQ Pass, the sender gets
+// REF.buyDays more. A sender whose paid pass is active gets the days added to its end ('full' rows in the 'rewards' tab: everything,
+// downloads too); otherwise they are free days ('free' rows: every PYQ with explanations, practice and mocks, but not the PDF
+// downloads, study books or the Bahubali code, which could be kept for ever). Rewards live in their own tab so the passes tab (and
+// the Payments dashboard built from it) keeps only real payments.
+// Not rewarded (neither the joining nor a later purchase): the sender's own phone or email ('self'); a phone, email or device already
+// known to the site ('known' / 'device'); a friend already referred once. After REF.joinMax rewarded friends a new one is 'cap': no
+// joining days, but their first purchase still counts. Each referral is recorded in the 'referrals' tab, rewarded or not, so Anil can see them.
+const REF = {joinDays: 3, joinMax: 10, buyDays: 30};
+const REFCODE_HEAD = ['time', 'code', 'phone', 'email'];
+const REFERRAL_HEAD = ['time', 'code', 'ref_phone', 'ref_email', 'friend_phone', 'friend_email', 'friend_name', 'device', 'status',
+                       'join_days', 'bought', 'buy_days', 'payment_id'];
+const REWARD_HEAD = ['time', 'phone', 'email', 'kind', 'until', 'days', 'reason', 'code', 'friend_phone'];
+const REF_LETTERS = 'ABCDEFGHJKLMNPQRSTUVWXYZ';   // letters only (no I or O), so the sheet never reads a code as a number or date
+
+function newRefCode_() {
+  const u = Utilities.getUuid().replace(/-/g, '') + Utilities.getUuid().replace(/-/g, '');
+  let s = '';
+  for (let k = 0; k < 6; k++) s += REF_LETTERS[parseInt(u.substr(k * 4, 4), 16) % REF_LETTERS.length];
+  return s;
+}
+function addDays_(d, n) { const t = new Date(String(d) + 'T12:00:00Z'); t.setUTCDate(t.getUTCDate() + n); return t.toISOString().slice(0, 10); }
+
+function refStats_(code) {
+  const v = sheet('referrals', REFERRAL_HEAD).getDataRange().getValues();
+  let joined = 0, bought = 0, days = 0, rewarded = 0;
+  for (let i = 1; i < v.length; i++) {
+    if (String(v[i][1]) !== code || !/^(ok|cap)$/.test(String(v[i][8]))) continue;   // new students only (not self / known / device)
+    joined++;
+    if (Number(v[i][9]) > 0) rewarded++;
+    if (v[i][10]) bought++;
+    days += (Number(v[i][9]) || 0) + (Number(v[i][11]) || 0);
+  }
+  return {joined: joined, bought: bought, days: days, left: Math.max(0, REF.joinMax - rewarded),
+          joinDays: REF.joinDays, joinMax: REF.joinMax, buyDays: REF.buyDays};
+}
+
+// The student's own code (one per phone number; made the first time) and how their invites are doing.
+function refInfo(b) {
+  const phone = phoneOf(b.phone), email = String(b.email || '').trim().toLowerCase();
+  if (!phone || !email) return {ok: false, error: b.acct ? 'Please add your mobile number first (My Account).' : 'Please register first (it is free).'};
+  const lock = LockService.getScriptLock(); lock.waitLock(20000);
+  let code = '';
+  try {
+    const sh = sheet('refcodes', REFCODE_HEAD), v = sh.getDataRange().getValues();
+    for (let i = 1; i < v.length; i++) if (String(v[i][2]) === phone) { code = String(v[i][1]); break; }
+    if (!code) {
+      const have = new Set(v.slice(1).map(r => String(r[1])));
+      do code = newRefCode_(); while (have.has(code));
+      sh.appendRow([new Date(), code, phone, email]);
+    }
+  } finally { lock.releaseLock(); }
+  return Object.assign({ok: true, code: code}, refStats_(code));
+}
+
+// Was this phone, email or device on the site before this registration? Then it is not a new student brought by the link.
+function refKnown_(phone, email, device, referrals) {
+  const has = (tab, head, test) => sheet(tab, head).getDataRange().getValues().slice(1).some(test);
+  if (device && referrals.slice(1).some(r => String(r[7]) === device)) return 'device';
+  if (device && has('devices', ['time', 'phone', 'exam', 'device'], r => String(r[3]) === device)) return 'device';
+  if (device && has('sessions', SES_HEAD, r => String(r[3]) === device && String(r[2]).toLowerCase() !== email)) return 'device';
+  if (has('passes', PASS_HEAD, r => String(r[1]) === phone || (email && String(r[9] || '').toLowerCase() === email))) return 'known';
+  if (has('requests', REQ_HEAD, r => String(r[2]) === phone)) return 'known';
+  if (has('refcodes', REFCODE_HEAD, r => String(r[2]) === phone)) return 'known';
+  if (has('free', ['time', 'phone', 'email', 'mock'], r => String(r[1]) === phone)) return 'known';
+  if (has('trials', TRIAL_HEAD, r => String(r[1]) === phone)) return 'known';
+  const old = Date.now() - 2 * 86400000;   // a Google account made just now for this registration is fine; an older one is not new
+  if (has('accounts', ACC_HEAD, r => (String(r[3]) === phone && String(r[1]).toLowerCase() !== email) ||
+                                     (email && String(r[1]).toLowerCase() === email && r[0] instanceof Date && r[0].getTime() < old))) return 'known';
+  return '';
+}
+
+// Free days for the sender of a link: added to the end of an active paid pass, else counted from today (or from the end of
+// free days they already have).
+function refReward_(owner, days, reason, code, friend) {
+  const now = today_(), p = sheet('passes', PASS_HEAD).getDataRange().getValues(), w = sheet('rewards', REWARD_HEAD).getDataRange().getValues();
+  const mine = (rp, re) => rp === owner.phone || (owner.email && re === owner.email);
+  let paid = '', free = '';
+  for (let i = 1; i < p.length; i++) if (mine(String(p[i][1]), String(p[i][9] || '').toLowerCase()) && String(p[i][3]) === 'pyq') { const u = day_(p[i][4]); if (u > paid) paid = u; }
+  for (let i = 1; i < w.length; i++) if (mine(String(w[i][1]), String(w[i][2] || '').toLowerCase())) {
+    const u = day_(w[i][4]);
+    if (String(w[i][3]) === 'full') { if (u > paid) paid = u; } else if (u > free) free = u;
+  }
+  const full = paid >= now, until = full ? addDays_(paid, days) : addDays_(free >= now ? free : now, days);
+  sheet('rewards', REWARD_HEAD).appendRow([new Date(), owner.phone, owner.email, full ? 'full' : 'free', until, days, reason, code, friend]);
+}
+
+// A new student registered with a friend's link. Records the referral (rewarded or not) and gives the friend their days.
+function refJoin(b) {
+  const code = String(b.code || '').trim().toUpperCase(), phone = phoneOf(b.phone), email = String(b.email || '').trim().toLowerCase();
+  const device = String(b.device || '').slice(0, 40), name = String(b.name || '').trim().slice(0, 80);
+  if (!/^[A-Z]{6}$/.test(code) || !phone) return {ok: false, error: 'Invalid invite.'};
+  const lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    let owner = null;
+    const cv = sheet('refcodes', REFCODE_HEAD).getDataRange().getValues();
+    for (let i = 1; i < cv.length; i++) if (String(cv[i][1]) === code) owner = {phone: String(cv[i][2]), email: String(cv[i][3] || '').toLowerCase()};
+    if (!owner) return {ok: false, error: 'Invalid invite.'};
+    const rsh = sheet('referrals', REFERRAL_HEAD), rv = rsh.getDataRange().getValues();
+    if (rv.slice(1).some(r => String(r[4]) === phone)) return {ok: true, status: 'already'};
+    let status = owner.phone === phone || (email && owner.email === email) ? 'self' : refKnown_(phone, email, device, rv);
+    if (!status) status = rv.slice(1).filter(r => String(r[1]) === code && Number(r[9]) > 0).length >= REF.joinMax ? 'cap' : 'ok';
+    const days = status === 'ok' ? REF.joinDays : 0;
+    rsh.appendRow([new Date(), code, owner.phone, owner.email, phone, email, cell_(name), device, status, days, '', '', '']);
+    if (days) refReward_(owner, days, 'friend registered', code, phone);
+    return {ok: true, status: status};
+  } finally { lock.releaseLock(); }
+}
+
+// A referred friend (status ok or cap) bought the PYQ Pass for the first time: the sender gets REF.buyDays.
+function refBought_(phone, pid) {
+  const lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    const sh = sheet('referrals', REFERRAL_HEAD), v = sh.getDataRange().getValues();
+    for (let i = 1; i < v.length; i++) {
+      if (String(v[i][4]) !== String(phone)) continue;
+      if (!/^(ok|cap)$/.test(String(v[i][8])) || v[i][10]) return;   // only a new student brought by the link, and only their first purchase
+      sh.getRange(i + 1, 11, 1, 3).setValues([[new Date(), REF.buyDays, String(pid || '')]]);
+      refReward_({phone: String(v[i][2]), email: String(v[i][3] || '').toLowerCase()}, REF.buyDays, 'friend bought the PYQ Pass', String(v[i][1]), String(phone));
+      return;
+    }
+  } finally { lock.releaseLock(); }
 }
