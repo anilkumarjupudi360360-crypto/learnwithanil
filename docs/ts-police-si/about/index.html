@@ -381,6 +381,7 @@ div.feature:hover{border-color:var(--line)}
 .qotd-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
 .qotd-head .eyebrow{color:var(--accent-text);font-weight:600}
 .share-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.reflink{width:100%;font:600 14px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;padding:10px 12px;border:1.5px solid var(--line,#d0d7e2);border-radius:10px;background:var(--surface);color:var(--ink);min-width:0;box-sizing:border-box}
 .share-row .muted{font-size:14px}
 .share-row .btn svg{width:18px;height:18px;flex:none}
 .btn-wa{background:#128C4B;color:#fff;border-color:#128C4B}
@@ -908,9 +909,15 @@ const DEVICE = (()=>{ try{ let d = localStorage.getItem("lwa-device"); if(!d){ d
 const live = d=> !!d && new Date(d + "T23:59:59+05:30") >= new Date();
 function passOK(kind){
   if(!PAYC || !PAYC.on) return true;   // payments not open yet: everything stays free
-  const pyq = live((PASSES.all||{}).pyq) && !!(PASSES.all||{}).paid;   // paid All-in-One Pass only (old free-trial dates no longer count)
+  const a = PASSES.all||{};
+  // paid All-in-One Pass (old free-trial dates no longer count), or free days earned by inviting friends (bonus, 3 Nov 2026)
+  const pyq = (live(a.pyq) && !!a.paid) || live(a.bonus);
   return kind==="pyq" ? pyq : (pyq || live((PASSES[PAYC.exam]||{}).mock));   // since 26 Oct 2026 the ₹45 All-in-One Pass opens every mock series too
 }
+// PDF booklets, study books and other downloads (kept for ever) need the paid pass; invite free days open everything else
+const paidOK = ()=> !PAYC || !PAYC.on || (live((PASSES.all||{}).pyq) && !!(PASSES.all||{}).paid);
+const bonusOnly = ()=> !paidOK() && live((PASSES.all||{}).bonus);
+function needPaid(){ if(paidOK()) return false; if(bonusOnly()) toast("PDF downloads need the ₹" + (PAYC ? PAYC.pyq.price : 45) + " All-in-One Pass. Your free days cover online practice and tests."); openPay("pyq"); return true; }
 /* Anil, 28 Oct 2026: TS Police papers are free to attempt (DATA.pay.freePyq): every paper, practice and the question bank, with
    the answers and the score. Explanations (sealed, see exLoad), mocks from Mock 2, PDFs and the study tools stay in the All-in-One Pass. */
 const FREEPYQ = !!(PAYC && PAYC.freePyq);
@@ -923,7 +930,7 @@ function upsellCard(){   // after a free test: the All-in-One Pass for the expla
     <button class="btn btn-primary" type="button" data-act="openpay" data-kind="pyq">Get the All-in-One Pass · ₹${price}</button></section>`;
 }
 function setPasses(p){   // from the payments script: {pyq, trial, paid, mock}
-  p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses(); markLocks(); navAcct();
+  p = p || {}; PASSES.all = {pyq: p.pyq||"", trial: p.trial||"", paid: !!p.paid, bonus: p.bonus||""}; PASSES[PAYC.exam] = {mock: p.mock||""}; savePasses(); markLocks(); navAcct();
   if(passOK("pyq")) exLoad();
   else try{ Object.keys(localStorage).filter(k=>k.startsWith("lwa-exk-")).forEach(k=>localStorage.removeItem(k)); }catch(_){}
 }
@@ -1001,7 +1008,7 @@ async function refreshPasses(force){
   let last = 0; try{ last = +localStorage.getItem("lwa-pass-checked") || 0; }catch(_){}
   if(!force && passOK("pyq") && Date.now() - last < 30*60*1000){ UI.passChecked = true; return; }
   try{ const r = await payCall({action:"passes", exam:PAYC.exam, phone:ST.phone, email:ST.email||"", device:DEVICE});
-       if(r && r.ok){ UI.passChecked = true; try{ localStorage.setItem("lwa-pass-checked", String(Date.now())); }catch(_){} setPasses(r.passes); if(GATE[current] || current==="mains" || current==="notes" || current==="mocks" || current==="sectionals") render(); } else if(r && r.error) toast(r.error); }catch(_){}
+       if(r && r.ok){ UI.passChecked = true; try{ localStorage.setItem("lwa-pass-checked", String(Date.now())); }catch(_){} setPasses(r.passes); if(GATE[current] || current==="mains" || current==="notes" || current==="mocks" || current==="sectionals" || current==="account") render(); } else if(r && r.error) toast(r.error); }catch(_){}
   if(!UI.passChecked){ UI.passChecked = true; if(GATE[current]) render(); }   // no answer: stop showing "Checking your All-in-One Pass"
 }
 function mockKinds(m){   // "10 Tier-I + 3 Tier-II"
@@ -1064,11 +1071,8 @@ function openPay(kind, note){
    failed or is still being confirmed. */
 function payMeme(price){
   const l2 = {te:`చాయ్ సమోసా 5 నిమిషాలు. All-in-One Pass 12 నెలలు 😎`, hi:`चाय-समोसा 5 मिनट। All-in-One Pass 12 महीने 😎`}[L2.code];
-  // Anil, 2 Nov 2026: "this 45 rupees pass for every pyq + mocks of that exam + material of that exam". Only what this exam really has.
-  const bits = [`Every ${DATA.examShort || "exam"} PYQ`];
-  if(PAYC && PAYC.mock) bits.push(`${PAYC.mock.name} mocks`); else if(PAYC && PAYC.exam==="appsc-group-2" && DATA.bahubali) bits.push("Bahubali Mains tests");
-  if((DATA.notes||[]).length || (DATA.mains||[]).length) bits.push("study material");
-  const what = bits.join(" + ") + " · and every other exam, for 12 months";
+  // Anil, 3 Nov 2026: "make the info for total website": the whole site, not one exam.
+  const what = "Every PYQ + every mock test + every book on the website · all 16 exams · 12 months";
   return `<figure class="pay-meme" aria-label="Meme: ₹${price} on chai and samosa is gone in 5 minutes; ₹${price} on the All-in-One Pass: ${esc(what)}">
     <div class="pm-row no"><span class="pm-face" aria-hidden="true">🙅‍♂️</span><p><b>₹${price} on chai &amp; samosa</b><span>Gone in 5 minutes</span></p></div>
     <div class="pm-row yes"><span class="pm-face" aria-hidden="true">😎</span><p><b>₹${price} on the All-in-One Pass</b><span>${esc(what)}</span></p></div>
@@ -1136,7 +1140,7 @@ async function payReturn(params){
 async function bookDownload(id, btn){
   const b = (DATA.notes||[]).find(x=>x.id===id); if(!b || !PAYC || !PAYC.api) return;
   if(!ST.name){ UI.pendingBook = id; go("join"); return; }
-  if(!passOK("pyq")){ openPay("pyq"); return; }
+  if(needPaid()) return;
   const label = btn ? btn.textContent : ""; if(btn){ btn.disabled = true; btn.textContent = "Preparing your PDF…"; }
   try{
     const r = await payCall({action:"mock", exam:PAYC.exam, id:"bk-"+id, phone:ST.phone, email:ST.email||"", device:DEVICE});
@@ -1159,7 +1163,7 @@ async function paperPdf(pid, btn){
   const p = PAPERS.find(x=>x.id===pid) || {}, bk = p.bk || (DATA.pdfs||{})[pid];   // a paper, or a released mock (DATA.pdfs)
   if(!bk || !PAYC || !PAYC.api) return;
   if(!ST.name){ UI.pendingPdf = pid; go("join"); return; }
-  if(!passOK("pyq")){ openPay("pyq"); return; }
+  if(needPaid()) return;
   const label = btn ? btn.textContent : ""; if(btn){ btn.disabled = true; btn.textContent = "Preparing your PDF…"; } else toast("Preparing your PDF…");
   try{
     const kid = bk.key;
@@ -1306,7 +1310,7 @@ async function gPhoneSubmit(e){
 }
 function navAcct(){
   const a = $("#navAcct"); if(a) a.textContent = ST.name ? "👤 " + ST.name.split(" ")[0] : "Login";
-  const s = $("#navSub"); if(s){ s.hidden = !(PAYC && PAYC.on) || passOK("pyq"); s.textContent = "Subscribe ₹" + (PAYC ? PAYC.pyq.price : 45); }
+  const s = $("#navSub"); if(s){ s.hidden = !(PAYC && PAYC.on) || paidOK(); s.textContent = "Subscribe ₹" + (PAYC ? PAYC.pyq.price : 45); }
 }
 const fmtDayY = d=> d ? new Date(d + "T12:00:00+05:30").toLocaleDateString(undefined, {day:"numeric", month:"long", year:"numeric"}) : "";
 async function loadMe(){
@@ -1319,9 +1323,11 @@ function vAccount(){
   if(!ST.name) return `<div class="wrap view">${head("My account", "Log in to Learn with Anil", "")}${gBlock()}
     <div class="card pad"><p style="margin:0 0 10px">${GID ? "No Google account? Register" : "Register"} once with your name, phone number and email.</p><a class="btn ${GID ? "btn-secondary" : "btn-primary"}" href="/ts-police-si/join/">Register with phone &amp; email</a></div></div>`;
   if(ST.session && !UI.me && PAYC && PAYC.api) loadMe();
-  const ok = passOK("pyq"), pass = PASSES.all || {};
+  const ok = paidOK(), pass = PASSES.all || {};
   const plan = !(PAYC && PAYC.on) ? "" : ok
     ? `<div class="card pad acct-plan ok"><p class="eyebrow">Your plan</p><h2>✓ All-in-One Pass · active</h2><p>Everything on Learn with Anil (every exam's previous papers with explanations, every mock test series and the study books) until <b>${esc(fmtDayY(pass.pyq))}</b>.</p></div>`
+    : bonusOnly()
+    ? `<div class="card pad acct-plan ok"><p class="eyebrow">Your plan</p><h2>🎁 Free days from inviting friends</h2><p>Every previous paper of every exam with answers and explanations, practice and mock tests, until <b>${esc(fmtDayY(pass.bonus))}</b>. PDF downloads and the study books need the All-in-One Pass.</p><div class="row"><button class="btn btn-primary" type="button" data-act="openpay" data-kind="pyq">Get the All-in-One Pass · ₹${price} for 12 months</button></div></div>`
     : `<div class="card pad acct-plan"><p class="eyebrow">Your plan</p><h2>No active pass</h2><p>The All-in-One Pass opens everything on the site for 12 months: every previous paper of every exam with explanations, every mock test series and the study books.</p><div class="row"><button class="btn btn-primary" type="button" data-act="openpay" data-kind="pyq">Subscribe · ₹${price} for 12 months</button></div></div>`;
   const claim = PAYC && PAYC.on && PAYC.api ? `<form class="card pad" id="claimForm" novalidate><h2 class="acct-h">Paid already but still locked?</h2>
     <p class="muted" style="margin:0 0 10px">Enter the payment ID from your Instamojo SMS or email (it starts with MOJO). It is linked to this number at once, even if you paid with another number.</p>
@@ -1335,7 +1341,7 @@ function vAccount(){
     <div class="card pad acct"><p style="margin:0 0 8px"><b>${esc(ST.name)}</b><br>📱 ${esc(ST.phone||"")}<br>✉️ ${esc(ST.email||"")}${ST.district ? `<br>📍 ${esc(ST.district)}` : ""}</p>
       <p class="muted" style="margin:0 0 10px">${ST.session ? "Logged in with Google · you stay logged in on this device for 12 months." : "Registered on this device with phone and email."}</p>
       <div class="row"><a class="btn btn-ghost btn-sm" href="/ts-police-si/join/">Edit details</a><button class="btn btn-ghost btn-sm" type="button" data-act="logoutme">Log out of this device</button></div></div>
-    ${plan}${claim}${devs}${pays}
+    ${plan}${inviteCard()}${claim}${devs}${pays}
     <p class="muted" style="font-size:14px">Problem with a payment? <a href="/help.html">Help &amp; grievances</a></p></div>`;
 }
 async function claimSubmit(e){
@@ -2316,7 +2322,7 @@ function chalBtn(q){ if(PMAP[q.p] && (PMAP[q.p].paid || PMAP[q.p].own || PMAP[q.
 function excerpt(t, n){ t = String(t).replace(/\s+/g," ").trim(); return t.length>n ? t.slice(0,n-1).replace(/\s\S*$/,"")+"…" : t; }
 function challengeText(text, exam, paper, n, url, opts){
   const o = opts && opts.length ? "\n\n" + opts.map((x,i)=>`${LET[i]}) ${excerpt(x, 90)}`).join("\n") : "";
-  return `🧠 ${exam} PYQ challenge${paper? ` (${paper}${n?`, Q${n}`:""})`:""}:\n\n${excerpt(text, 300)}${o}\n\nCan you answer it? Check your answer 👉 ${url}`;
+  return `🧠 ${exam} PYQ challenge${paper? ` (${paper}${n?`, Q${n}`:""})`:""}:\n\n${excerpt(text, 300)}${o}\n\nCan you answer it? Check your answer 👉 ${withRef(url)}`;
 }
 
 /* Question of the day: same question for everyone on a given day (India time) */
@@ -2451,39 +2457,93 @@ async function shareCanvas(c, name, text){
   try{ if(navigator.clipboard) navigator.clipboard.writeText(text).catch(()=>{}); }catch(_){}
   toast("Image saved. Attach it on WhatsApp or Instagram; the caption is copied.");
 }
-function scoreText(r){ const n=r.ids.length; return `🎯 I scored ${r.c}/${n} (${pct(r.c,n)||0}%) in "${r.title}" on Learn with Anil.\nCan you beat me? Practise real ${DATA.board||"APPSC"} previous questions 👉 ${DATA.site}/${DATA.base||""}`; }
+function scoreText(r){ const n=r.ids.length; return `🎯 I scored ${r.c}/${n} (${pct(r.c,n)||0}%) in "${r.title}" on Learn with Anil.\nCan you beat me? Practise real ${DATA.board||"APPSC"} previous questions 👉 ${withRef(`${DATA.site}/${DATA.base||""}`)}`; }
 /* ---------- "help this community grow" (Anil, 28 Oct 2026) ----------
    Fees are low and there is no ad budget, so students are asked, politely and never compulsorily, to share the site with a
    friend: once after registering (a small card at the bottom of the screen, never during a test or over the checkout) and
    on every result page (a card with the score-sharing buttons). Tapping share, or "Don't ask again", ends the after-registration
    card for good. GA events: share_ask, share_site {from, via}, share_ask_later, share_ask_never. Shared links carry
-   utm_source=friend&utm_medium=<whatsapp|share|copy>&utm_campaign=community. */
+   utm_source=friend&utm_medium=<whatsapp|share|copy>&utm_campaign=community.
+   Anil, 3 Nov 2026 ("can we make this sharing compulsory?" → no, a reward instead): a registered student's links also carry their
+   own invite code (&ref=<code>, from the payments script's 'ref' action). A new student who registers through it gives the sender
+   3 free days of the All-in-One Pass (up to 10 friends); when that friend buys the pass, the sender gets 1 month free. Free days open
+   every PYQ with explanations, practice and mocks, not the PDF downloads; with a paid pass the days go on its end. */
 const ASK = {
-  en:{h:"🙏 A small request from Anil",
-      p:"Learn with Anil keeps its fees very low (₹45 opens everything), so we cannot spend money on ads. This community grows only when students like you tell their friends. If the site helps you, please share it with one friend who is preparing. It is completely optional.",
-      r:"🙏 Did this test help you? Help one more aspirant",
-      rp:"We keep fees low and spend nothing on ads, so students sharing with friends is how this community grows. If this test was useful, please share the website with one friend who is preparing. Completely optional.",
+  en:{h:"🎁 Share Learn with Anil, get free days",
+      p:"Learn with Anil keeps its fees very low (₹45 opens everything), so we spend nothing on ads. This community grows when students like you tell their friends. Share your own link: when a friend registers with it, you get 3 days of the All-in-One Pass free, and when a friend buys the pass, you get 1 month free.",
+      r:"🙏 Did this test help you? Share it and get free days",
+      rp:"We keep fees low and spend nothing on ads, so students sharing with friends is how this community grows. Share your own link: every friend who registers with it gives you 3 free days of the All-in-One Pass, and every friend who buys the pass gives you 1 month free.",
+      reg:"Register (free) to get your own link and earn free days.",
       wa:"Share on WhatsApp", site:"Share the website", more:"Other apps", copy:"Copy link", later:"Not now", never:"Don't ask again",
       yours:"Or challenge your friends with your score:", score:"Send my score", card:"Score card (image)",
-      thanks:"Thank you for helping this community grow! 🙏", copied:"Link copied. Paste it in any group or chat. Thank you! 🙏"},
-  te:{h:"🙏 అనిల్ నుంచి ఒక చిన్న విన్నపం",
-      p:"Learn with Anil ఫీజు చాలా తక్కువ (₹45తో అన్నీ), అందుకే ప్రకటనలకు డబ్బు ఖర్చు పెట్టలేం. మీలాంటి విద్యార్థులు తమ స్నేహితులకు చెబితేనే ఈ కమ్యూనిటీ పెరుగుతుంది. సైట్ మీకు ఉపయోగపడితే, ప్రిపేర్ అవుతున్న ఒక్క స్నేహితుడికైనా షేర్ చేయండి. ఇది పూర్తిగా మీ ఇష్టం.",
-      r:"🙏 ఈ టెస్ట్ ఉపయోగపడిందా? ఇంకో అభ్యర్థికి సహాయం చేయండి",
-      rp:"ఫీజు తక్కువ, ప్రకటనలకు ఖర్చు లేదు. విద్యార్థులు స్నేహితులతో పంచుకోవడం వల్లే ఈ కమ్యూనిటీ పెరుగుతుంది. ఈ టెస్ట్ మీకు ఉపయోగపడితే, వెబ్‌సైట్‌ను ప్రిపేర్ అవుతున్న ఒక్క స్నేహితుడికైనా షేర్ చేయండి. ఇది పూర్తిగా మీ ఇష్టం.",
+      thanks:"Thank you! 🙏 Your free days are added when your friend registers with your link.", copied:"Link copied. Paste it in any group or chat. Your free days are added when a friend registers with it. 🙏",
+      inv:"🎁 Invite friends, get free days", invp:"Your own link. When a friend registers with it you get <b>3 days</b> of the All-in-One Pass free (for up to 10 friends); when a friend buys the ₹45 pass you get <b>1 month</b> free. If you already have the pass, the days are added to its end.",
+      stat:"Friends joined: {j} · Friends who bought the pass: {b} · Free days earned: {d}", load:"Getting your link…"},
+  te:{h:"🎁 Learn with Anil షేర్ చేయండి, ఉచిత రోజులు పొందండి",
+      p:"Learn with Anil ఫీజు చాలా తక్కువ (₹45తో అన్నీ), అందుకే ప్రకటనలకు డబ్బు ఖర్చు పెట్టలేం. మీలాంటి విద్యార్థులు స్నేహితులకు చెబితేనే ఈ కమ్యూనిటీ పెరుగుతుంది. మీ సొంత లింక్‌ను షేర్ చేయండి: దానితో ఒక స్నేహితుడు రిజిస్టర్ అయితే మీకు 3 రోజులు ఆల్-ఇన్-వన్ పాస్ ఉచితం, స్నేహితుడు పాస్ కొంటే మీకు 1 నెల ఉచితం.",
+      r:"🙏 ఈ టెస్ట్ ఉపయోగపడిందా? షేర్ చేసి ఉచిత రోజులు పొందండి",
+      rp:"ఫీజు తక్కువ, ప్రకటనలకు ఖర్చు లేదు. విద్యార్థులు స్నేహితులతో పంచుకోవడం వల్లే ఈ కమ్యూనిటీ పెరుగుతుంది. మీ సొంత లింక్‌తో రిజిస్టర్ అయ్యే ప్రతి స్నేహితుడికి మీకు 3 రోజులు ఆల్-ఇన్-వన్ పాస్ ఉచితం, పాస్ కొనే ప్రతి స్నేహితుడికి 1 నెల ఉచితం.",
+      reg:"మీ సొంత లింక్, ఉచిత రోజుల కోసం ముందుగా (ఉచితంగా) రిజిస్టర్ అవ్వండి.",
       wa:"WhatsApp లో షేర్ చేయండి", site:"వెబ్‌సైట్ షేర్ చేయండి", more:"ఇతర యాప్స్", copy:"లింక్ కాపీ", later:"ఇప్పుడు కాదు", never:"మళ్లీ అడగవద్దు",
       yours:"లేదా మీ స్కోర్‌తో స్నేహితులకు ఛాలెంజ్ చేయండి:", score:"నా స్కోర్ పంపండి", card:"స్కోర్ కార్డ్ (ఇమేజ్)",
-      thanks:"ఈ కమ్యూనిటీని పెంచుతున్నందుకు ధన్యవాదాలు! 🙏", copied:"లింక్ కాపీ అయింది. ఏ గ్రూప్‌లో లేదా చాట్‌లోనైనా పేస్ట్ చేయండి. ధన్యవాదాలు! 🙏"},
-  hi:{h:"🙏 अनिल की ओर से एक छोटा-सा अनुरोध",
-      p:"Learn with Anil की फ़ीस बहुत कम है (₹45 में सब कुछ), इसलिए हम विज्ञापनों पर पैसा खर्च नहीं कर पाते। आप जैसे छात्र अपने दोस्तों को बताते हैं, तभी यह समुदाय बढ़ता है। अगर साइट आपके काम आए, तो तैयारी कर रहे किसी एक दोस्त के साथ ज़रूर शेयर करें। यह पूरी तरह आपकी मर्ज़ी है।",
-      r:"🙏 यह टेस्ट काम आया? एक और अभ्यर्थी की मदद कीजिए",
-      rp:"फ़ीस कम है और विज्ञापनों पर कोई खर्च नहीं, इसलिए छात्रों का दोस्तों से शेयर करना ही इस समुदाय को बढ़ाता है। अगर यह टेस्ट आपके काम आया, तो वेबसाइट किसी एक दोस्त के साथ शेयर करें। यह पूरी तरह आपकी मर्ज़ी है।",
+      thanks:"ధన్యవాదాలు! 🙏 మీ స్నేహితుడు మీ లింక్‌తో రిజిస్టర్ అయినప్పుడు మీ ఉచిత రోజులు జతవుతాయి.", copied:"లింక్ కాపీ అయింది. ఏ గ్రూప్‌లో లేదా చాట్‌లోనైనా పేస్ట్ చేయండి. స్నేహితుడు రిజిస్టర్ అయితే మీకు ఉచిత రోజులు. 🙏",
+      inv:"🎁 స్నేహితులను ఆహ్వానించండి, ఉచిత రోజులు పొందండి", invp:"ఇది మీ సొంత లింక్. దీనితో స్నేహితుడు రిజిస్టర్ అయితే మీకు <b>3 రోజులు</b> ఆల్-ఇన్-వన్ పాస్ ఉచితం (10 మంది స్నేహితుల వరకు); స్నేహితుడు ₹45 పాస్ కొంటే మీకు <b>1 నెల</b> ఉచితం. మీకు ఇప్పటికే పాస్ ఉంటే, ఈ రోజులు దాని చివర కలుస్తాయి.",
+      stat:"చేరిన స్నేహితులు: {j} · పాస్ కొన్నవారు: {b} · మీకు వచ్చిన ఉచిత రోజులు: {d}", load:"మీ లింక్ తెస్తున్నాం…"},
+  hi:{h:"🎁 Learn with Anil शेयर कीजिए, मुफ़्त दिन पाइए",
+      p:"Learn with Anil की फ़ीस बहुत कम है (₹45 में सब कुछ), इसलिए हम विज्ञापनों पर पैसा खर्च नहीं करते। आप जैसे छात्र अपने दोस्तों को बताते हैं, तभी यह समुदाय बढ़ता है। अपना लिंक शेयर कीजिए: उससे कोई दोस्त रजिस्टर करे तो आपको ऑल-इन-वन पास 3 दिन मुफ़्त, और दोस्त पास ख़रीदे तो 1 महीना मुफ़्त।",
+      r:"🙏 यह टेस्ट काम आया? शेयर कीजिए और मुफ़्त दिन पाइए",
+      rp:"फ़ीस कम है और विज्ञापनों पर कोई खर्च नहीं, इसलिए छात्रों का दोस्तों से शेयर करना ही इस समुदाय को बढ़ाता है। आपके लिंक से रजिस्टर करने वाले हर दोस्त पर आपको ऑल-इन-वन पास 3 दिन मुफ़्त, और पास ख़रीदने वाले हर दोस्त पर 1 महीना मुफ़्त।",
+      reg:"अपना लिंक और मुफ़्त दिन पाने के लिए पहले (मुफ़्त) रजिस्टर कीजिए।",
       wa:"WhatsApp पर शेयर करें", site:"वेबसाइट शेयर करें", more:"दूसरे ऐप", copy:"लिंक कॉपी करें", later:"अभी नहीं", never:"दोबारा न पूछें",
       yours:"या अपने स्कोर से दोस्तों को चुनौती दें:", score:"मेरा स्कोर भेजें", card:"स्कोर कार्ड (इमेज)",
-      thanks:"इस समुदाय को बढ़ाने में मदद के लिए धन्यवाद! 🙏", copied:"लिंक कॉपी हो गया। किसी भी ग्रुप या चैट में पेस्ट करें। धन्यवाद! 🙏"}
+      thanks:"धन्यवाद! 🙏 आपका दोस्त आपके लिंक से रजिस्टर करेगा तो आपके मुफ़्त दिन जुड़ जाएँगे।", copied:"लिंक कॉपी हो गया। किसी भी ग्रुप या चैट में पेस्ट करें। दोस्त रजिस्टर करे तो आपको मुफ़्त दिन। 🙏",
+      inv:"🎁 दोस्तों को बुलाइए, मुफ़्त दिन पाइए", invp:"यह आपका अपना लिंक है। इससे कोई दोस्त रजिस्टर करे तो आपको ऑल-इन-वन पास <b>3 दिन</b> मुफ़्त (10 दोस्तों तक); दोस्त ₹45 का पास ख़रीदे तो <b>1 महीना</b> मुफ़्त। अगर आपके पास पहले से पास है, तो ये दिन उसके आख़िर में जुड़ जाते हैं।",
+      stat:"जुड़े दोस्त: {j} · पास ख़रीदने वाले: {b} · मिले मुफ़्त दिन: {d}", load:"आपका लिंक ला रहे हैं…"}
 };
 function askLang(){ return ASK[P.lang] ? P.lang : "en"; }
 function askOnHub(){ return HUBPAGE && current==="exams"; }
-function shareSiteURL(via){ return `${DATA.site}${askOnHub()? "/" : (PB||"/")}?utm_source=friend&utm_medium=${via}&utm_campaign=community`; }
+/* Invite codes. Mine: from the payments script, kept on this device (lwa-ref-mine). A friend's: read from ?ref= on arrival
+   (also on the static pages) and kept for 30 days (lwa-ref-from) until this device registers; then sent once ('refjoin'). */
+const REFIN = "lwa-ref-from", REFMINE = "lwa-ref-mine";
+let REFME = (()=>{ try{ return JSON.parse(localStorage.getItem(REFMINE)||"null"); }catch(_){ return null; } })();
+const refCode = ()=> REFME && REFME.p===ST.phone && /^[A-Z]{6}$/.test(REFME.code||"") ? REFME.code : "";
+function withRef(u){ const c = refCode(); return c ? u + (u.includes("?") ? "&" : "?") + "ref=" + c : u; }
+function refCapture(){
+  try{
+    const c = (new URLSearchParams(location.search).get("ref")||"").toUpperCase();
+    if(!/^[A-Z]{6}$/.test(c)) return;
+    track("ref_visit");
+    if(ST.name || c===refCode()) return;   // already registered on this device, or their own link
+    const cur = JSON.parse(localStorage.getItem(REFIN)||"null");
+    if(cur && cur.c && Date.now() - cur.t < 30*864e5) return;   // the first friend's link counts
+    localStorage.setItem(REFIN, JSON.stringify({c, t:Date.now()}));
+  }catch(_){}
+}
+async function refJoin(){   // after this device registers: tell the payments script which friend's link brought them
+  let r = null; try{ r = JSON.parse(localStorage.getItem(REFIN)||"null"); }catch(_){}
+  if(!r || !r.c || r.sent || !PAYC || !PAYC.api || !ST.phone || Date.now() - r.t > 30*864e5) return;
+  try{ const j = await payCall({action:"refjoin", exam:PAYC.exam, code:r.c, phone:ST.phone, email:ST.email||"", name:ST.name||"", device:DEVICE});
+       if(j && j.ok){ r.sent = Date.now(); r.status = j.status||""; try{ localStorage.setItem(REFIN, JSON.stringify(r)); }catch(_){} track("ref_join", {status:r.status}); } }catch(_){}
+}
+async function refMine(force){   // my code and my invite numbers
+  if(!PAYC || !PAYC.on || !PAYC.api || !ST.phone) return null;
+  if(refCode() && !force) return REFME;
+  if(UI.refBusy) return REFME; UI.refBusy = true;
+  try{ const j = await payCall({action:"ref", exam:PAYC.exam, phone:ST.phone, email:ST.email||""});
+       if(j && j.ok && j.code){ REFME = {p:ST.phone, code:j.code, joined:j.joined||0, bought:j.bought||0, days:j.days||0, at:Date.now()}; try{ localStorage.setItem(REFMINE, JSON.stringify(REFME)); }catch(_){} } }catch(_){}
+  UI.refBusy = false; return REFME;
+}
+function inviteCard(){
+  if(!PAYC || !PAYC.on || !PAYC.api || !ST.phone) return "";
+  const l = askLang(), t = ASK[l], c = refCode();
+  if(!UI.refFresh){ UI.refFresh = true; refMine(true).then(()=>{ if(current==="account") render(); }); }   // fresh numbers each visit
+  const m = REFME && c ? REFME : null;
+  return `<div class="card pad share-card"${l==="en"? "" : ` lang="${l}"`}><h2 class="acct-h">${t.inv}</h2><p style="margin:0">${t.invp}</p>
+    ${c ? `<input class="reflink" readonly value="${esc(shareSiteURL("copy"))}" aria-label="Your invite link" onfocus="this.select()">
+    <div class="share-row"><button class="btn btn-wa" type="button" data-act="sitewa" data-from="account">${WA_ICON}${t.wa}</button><button class="btn btn-secondary" type="button" data-act="sitemore" data-from="account">${navigator.share? t.more : t.copy}</button></div>
+    ${m ? `<p class="muted" style="margin:0;font-size:14.5px">${t.stat.replace("{j}", m.joined).replace("{b}", m.bought).replace("{d}", m.days)}</p>` : ""}` : `<p class="muted" style="margin:0">${t.load}</p>`}</div>`;
+}
+function shareSiteURL(via){ return withRef(`${DATA.site}${askOnHub()? "/" : (PB||"/")}?utm_source=friend&utm_medium=${via}&utm_campaign=community`); }
 function shareSiteText(via){
   const s = askOnHub()? "" : (DATA.examShort||""), ex = s && /^(Group|CAPF|EPFO)/.test(s) ? (DATA.board||"")+" "+s : s, u = shareSiteURL(via);
   const l = askLang();
@@ -2535,9 +2595,10 @@ function shareSiteMore(from){
 }
 function shareBlock(){
   const l = askLang(), t = ASK[l];
+  if(ST.phone && !refCode()) refMine();   // so the buttons below carry the student's own invite code
   return `<section class="card share-card"${l==="en"? "" : ` lang="${l}"`}>
     <h3>${t.r}</h3>
-    <p class="muted" style="font-size:15px">${t.rp}</p>
+    <p class="muted" style="font-size:15px">${t.rp}${ST.name ? "" : ` <a href="/ts-police-si/join/">${t.reg}</a>`}</p>
     <div class="share-row"><button class="btn btn-wa" type="button" data-act="sitewa" data-from="result">${WA_ICON}${t.site}</button><button class="btn btn-secondary" type="button" data-act="sitemore" data-from="result">${navigator.share? t.more : t.copy}</button></div>
     <p class="muted" style="font-size:14px;margin:4px 0 0">${t.yours}</p>
     <div class="share-row"><button class="btn btn-secondary btn-sm" type="button" data-act="scorewa">${WA_ICON}${t.score}</button><button class="btn btn-secondary btn-sm" type="button" data-act="scoreimg">${IMG_ICON}${t.card}</button></div>
@@ -2640,7 +2701,8 @@ async function finishJoin(d, method){
     if(changed) sendRecord({help, test: isNew? "Registered" + (p? " · before "+p.title : "") : "Updated details"});
     if(isNew) track("sign_up", {method, exam: DATA.examShort||"", district});
     const trialMsg = "";
-    if(PAYC && PAYC.on && PAYC.api){ toast("Saving your details…"); await refreshPasses(true); }   // a pass already paid with this phone opens at once
+    if(PAYC && PAYC.on && PAYC.api){ toast("Saving your details…"); await Promise.all([refreshPasses(true), isNew ? refJoin() : null]); }   // a pass already paid with this phone opens at once; a friend's invite is credited
+    if(isNew) setTimeout(()=>refMine(), 1500);   // their own invite link, ready for the "share" card
     /* Anil, 26 Oct 2026: a new student who registered from "Register to get the All-in-One Pass" was sent back to the page with
        no checkout, and one who registered before a test saw the checkout over the registration page. Now the form always
        closes (back to the page they came from, replacing the form in the history) and the checkout opens there, with a
@@ -2734,6 +2796,8 @@ function start(data){
   if(passOK("pyq")) setTimeout(exLoad, 0);   // a pass saved on this phone: open the paid explanations at once
   setTimeout(refreshPasses, 0);   // a pass bought (or ended) elsewhere shows here (at most every 30 minutes while a pass is live)
   if(askGet().pending) askWatch();   // the share request queued at registration survives the trip to the payment page
+  refCapture();   // arrived through a friend's invite link (?ref=)
+  if(ST.phone) setTimeout(async()=>{ await refJoin(); refMine(); }, 2500);   // a refjoin that failed earlier (first: a code of one's own would make them "known"); then my own code for share links
   if(PATHMODE){
     let red = null; try{ red = sessionStorage.getItem("lwa-path"); sessionStorage.removeItem("lwa-path"); }catch(_){}
     if(red && routeFromPath(red)!==null) history.replaceState(null, "", red);
