@@ -137,7 +137,9 @@ async def main():
                 await pg.evaluate('location.hash="q/m2025p2-117"'); await pg.wait_for_timeout(300)
                 assert 'GSLV' in await pg.inner_text('#view'), 'question link should open the GSLV question'
                 await pg.click('[data-act="pick"][data-i="0"]'); await pg.wait_for_timeout(200)
-                await pg.click('[data-act="video"]'); await pg.wait_for_timeout(500)
+                if await pg.locator('.qcard [data-act="video"], .qcard .verdict').count(): errors.append('practice shows the answer before submit')
+                await pg.click('.qbar [data-act="finish"]'); await pg.wait_for_timeout(500)   # answers and the video explanation come after submit (Anil, 2 Nov 2026)
+                await pg.click('[data-act="video"] >> nth=0'); await pg.wait_for_timeout(500)
                 assert await pg.evaluate('document.getElementById("videoDlg").open'), 'video dialog should open'
                 await pg.screenshot(path=f'{SHOTS}/video-dialog.png')
                 await pg.click('[data-act="closevideo"]')
