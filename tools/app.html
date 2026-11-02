@@ -1100,11 +1100,8 @@ function openPay(kind, note){
    failed or is still being confirmed. */
 function payMeme(price){
   const l2 = {te:`చాయ్ సమోసా 5 నిమిషాలు. All-in-One Pass 12 నెలలు 😎`, hi:`चाय-समोसा 5 मिनट। All-in-One Pass 12 महीने 😎`}[L2.code];
-  // Anil, 2 Nov 2026: "this 45 rupees pass for every pyq + mocks of that exam + material of that exam". Only what this exam really has.
-  const bits = [`Every ${DATA.examShort || "exam"} PYQ`];
-  if(PAYC && PAYC.mock) bits.push(`${PAYC.mock.name} mocks`); else if(PAYC && PAYC.exam==="appsc-group-2" && DATA.bahubali) bits.push("Bahubali Mains tests");
-  if((DATA.notes||[]).length || (DATA.mains||[]).length) bits.push("study material");
-  const what = bits.join(" + ") + " · and every other exam, for 12 months";
+  // Anil, 3 Nov 2026: "make the info for total website": the whole site, not one exam.
+  const what = "Every PYQ + every mock test + every book on the website · all {{NLIVE}} exams · 12 months";
   return `<figure class="pay-meme" aria-label="Meme: ₹${price} on chai and samosa is gone in 5 minutes; ₹${price} on the All-in-One Pass: ${esc(what)}">
     <div class="pm-row no"><span class="pm-face" aria-hidden="true">🙅‍♂️</span><p><b>₹${price} on chai &amp; samosa</b><span>Gone in 5 minutes</span></p></div>
     <div class="pm-row yes"><span class="pm-face" aria-hidden="true">😎</span><p><b>₹${price} on the All-in-One Pass</b><span>${esc(what)}</span></p></div>
