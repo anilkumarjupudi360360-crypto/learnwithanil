@@ -2687,10 +2687,10 @@ def terms_page():
          'details: your passes are linked to your phone number and email. Your account is for you alone; one account can stay logged in on '
          'up to 3 phones or computers at a time, and logging in on a fourth logs out the oldest one.</p>'),
         ('Passes and payments',
-         f'<p>The PYQ Pass costs ₹{PAY["pyq_price"]} and opens the previous papers and practice on the site for 12 months from the date of '
-         'payment. Mock test packs are sold separately, at the price and validity shown on each pack before you pay. Payments are made '
-         'through Instamojo. If you have paid but your pass or pack has not opened, use "Link my payment" on the My Account page or the '
-         '<a href="/help.html">help page</a>.</p>'),
+         f'<p>The PYQ Pass costs ₹{PAY["pyq_price"]} and opens everything on the site (every previous paper with explanations, the mock '
+         'test series and the study booklets, including exams added later) for 12 months from the date of payment. Some papers and '
+         'mocks are free for registered students, as marked on the site. Payments are made through Instamojo. If you have paid but '
+         'your pass has not opened, use "Link my payment" on the My Account page or the <a href="/help.html">help page</a>.</p>'),
         ('Refunds',
          '<p>If you paid and the pass or test pack does not work, and we cannot fix it within 7 days of your complaint, you get the full '
          'amount back to the account you paid from. A failed payment is returned by Instamojo and your bank, usually within 5–7 working days.</p>'),
