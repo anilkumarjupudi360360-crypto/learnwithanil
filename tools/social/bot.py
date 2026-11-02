@@ -850,6 +850,11 @@ def main():
     ap.add_argument('--wait', action='store_true')
     ap.add_argument('--out')
     a = ap.parse_args()
+    if os.path.exists(os.path.join(HERE, 'PAUSED')) and a.cmd in ('run', 'post-now', 'fetch', 'render', 'needs-render'):
+        # Anil paused all posting on 3 Nov 2026 ("no more posting until I say again"). Delete tools/social/PAUSED
+        # and restore the schedule in .github/workflows/social.yml to resume.
+        print('false' if a.cmd == 'needs-render' else 'Posting is paused (tools/social/PAUSED): nothing posted.')
+        return
     if a.cmd == 'needs-render':
         print('true' if needs_render() else 'false')
     elif a.cmd == 'render':
