@@ -369,14 +369,6 @@ div.feature:hover{border-color:var(--line)}
 .pay-note b{font-size:15.5px}.pay-note.bad{background:var(--bad-soft);color:var(--bad)}.pay-note.warn{background:var(--warn-soft);color:var(--warn)}.pay-note.good{background:var(--good-soft);color:var(--good)}
 .pay-dlg button:disabled{opacity:.7;cursor:progress}
 .pr-note{font-size:14px;margin:0}
-.pay-meme{margin:0;border:2px solid var(--ink);border-radius:10px;overflow:hidden;background:var(--surface)}
-.pm-row{display:grid;grid-template-columns:62px 1fr;align-items:stretch}.pm-row+.pm-row{border-top:2px solid var(--ink)}
-.pm-face{display:flex;align-items:center;justify-content:center;font-size:38px;line-height:1;background:var(--surface-2);border-right:2px solid var(--ink)}
-.pm-row p{margin:0;padding:9px 12px;display:flex;flex-direction:column;gap:2px;line-height:1.2}
-.pm-row b{font-family:var(--f-display);font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:.01em}
-.pm-row p span{font-size:13.5px;color:var(--muted)}
-.pm-row.no b{color:var(--muted)}.pm-row.yes{background:var(--good-soft)}.pm-row.yes .pm-face{background:var(--good-soft)}.pm-row.yes b{color:var(--good)}
-.pay-meme figcaption{padding:6px 12px;border-top:2px solid var(--ink);font-size:14px;font-weight:600;text-align:center}
 .qotd{display:flex;flex-direction:column;gap:14px;padding:20px 22px}
 .qotd-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
 .qotd-head .eyebrow{color:var(--accent-text);font-weight:600}
@@ -1072,7 +1064,7 @@ function openPay(kind, note){
   // with a note, the note and the buttons come first, so a phone shows both without scrolling
   d.innerHTML = open && n
     ? `<div class="pay-in"><div class="pay-note ${n.cls}" role="alert"><b>${esc(n.title)}</b><span>${esc(n.body)}</span>${n.l2[L2.code] ? `<span lang="${L2.code}">${esc(n.l2[L2.code])}</span>` : ""}</div>
-      ${note==="joined" || note==="back" ? payMeme(x.price) : ""}${buttons}<p class="small"><a href="${payHelpLink(kind)}" target="_blank" rel="noopener">Need help? Message us on WhatsApp →</a></p>
+      ${buttons}<p class="small"><a href="${payHelpLink(kind)}" target="_blank" rel="noopener">Need help? Message us on WhatsApp →</a></p>
       <h2>${esc(x.name)} · ₹${x.price}</h2><ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
       <p class="small"><b>${esc(x.valid)}.</b> The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}. Pay by UPI, card or net banking on Instamojo's secure page.</p></div>`
     : `<div class="pay-in"><h2>${esc(x.name)}</h2><div class="price">₹${x.price}</div>
@@ -1080,23 +1072,11 @@ function openPay(kind, note){
     <p class="small"><b>${esc(x.valid)}.</b>${!ST.name ? " Register once with your phone number, then pay." : ""}</p>
     ${kind==="pyq" && PAYC.sample && PAYC.pages && PAYC.pages.pyq ? `<p class="small"><a href="${PAYC.pages.pyq}#free-sample">Not sure yet? Try ${PAYC.sample} free questions first →</a></p>` : ""}
     ${open ? `<p class="small">The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}, on up to 3 devices. Pay by UPI, card or net banking on Instamojo's secure page.</p>
-      ${payMeme(x.price)}${buttons}`
+      ${buttons}`
     : `<p class="small"><b>Online payment is being switched on.</b> Please check back shortly.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}<p class="small" style="margin-top:10px">Problem with a payment or your pass? <a href="/help.html">Help &amp; grievances</a> (reply within 48 hours).</p></div>`;
   if(d.showModal) d.showModal(); else d.setAttribute("open","");
   track("view_pay", {exam: PAYC.exam, note: note||""});   // payment window (with the meme) opened: counts how many students see it (Anil, 3 Nov 2026)
   d.scrollTop = 0;
-}
-/* Anil, 2 Nov 2026: "add a meme at paying button". An original two-panel meme in the familiar nope / yes format, drawn
-   with emoji and text (no film stills or other copyrighted pictures), just above the Pay button. Not shown when a payment
-   failed or is still being confirmed. */
-function payMeme(price){
-  const l2 = {te:`చాయ్ సమోసా 5 నిమిషాలు. All-in-One Pass 12 నెలలు 😎`, hi:`चाय-समोसा 5 मिनट। All-in-One Pass 12 महीने 😎`}[L2.code];
-  // Anil, 3 Nov 2026: "make the info for total website": the whole site, not one exam.
-  const what = "Every PYQ + every mock test + every book on the website · all 16 exams · 12 months";
-  return `<figure class="pay-meme" aria-label="Meme: ₹${price} on chai and samosa is gone in 5 minutes; ₹${price} on the All-in-One Pass: ${esc(what)}">
-    <div class="pm-row no"><span class="pm-face" aria-hidden="true">🙅‍♂️</span><p><b>₹${price} on chai &amp; samosa</b><span>Gone in 5 minutes</span></p></div>
-    <div class="pm-row yes"><span class="pm-face" aria-hidden="true">😎</span><p><b>₹${price} on the All-in-One Pass</b><span>${esc(what)}</span></p></div>
-    ${l2 ? `<figcaption lang="${L2.code}">${esc(l2)}</figcaption>` : ""}</figure>`;
 }
 function closePay(){ const d = document.getElementById("payDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } }
 /* One payment link per tap: while a link is being made (and while the browser is leaving for Instamojo) further taps
