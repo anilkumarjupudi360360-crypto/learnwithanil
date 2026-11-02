@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Seal the paid study books (src/notes.json) so they can be downloaded only with the ₹45 PYQ Pass.
+"""Seal the paid study books (src/notes.json) so they can be downloaded only with the ₹45 All-in-One Pass.
 
-Anil, 26 Oct 2026: "one ₹45 = everything" — the PYQ Pass now includes every mock series and the books. The book PDFs are
+Anil, 26 Oct 2026: "one ₹45 = everything" — the All-in-One Pass now includes every mock series and the books. The book PDFs are
 paid content, so they are never committed in readable form. This script encrypts each one with its own random
 AES-256-GCM key (additional data = the key id "bk-<book id>", the same scheme as the sealed mocks) and writes only
 the encrypted file to src/books/. build.py copies src/books/*.bin to /books/ on the site (robots.txt keeps search
 engines out). The keys go in the 'keys' tab of the private "Learn with Anil – Passes" sheet; the payments script hands
-a key only to a phone with a valid PYQ Pass ('mock' action with id "bk-<book id>"), and the app decrypts in the browser.
+a key only to a phone with a valid All-in-One Pass ('mock' action with id "bk-<book id>"), and the app decrypts in the browser.
 
     python3 tools/books_seal.py            # seal every book that has a PDF in BOOKS_PRIV
 Private folder BOOKS_PRIV (default /home/claude/lwa-books/paid; a copy of each PDF is on Anil's PC):

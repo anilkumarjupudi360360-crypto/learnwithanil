@@ -297,7 +297,7 @@ body.locked{overflow:hidden}
   </div>
   <div class="buy" id="buy">
     <p class="eyebrow muted">Whole series · Paper I + Paper II</p>
-    <div class="price"><b>₹{{PRICE}}</b><span>PYQ Pass: all {{TOTAL_TESTS}} tests + everything else on the site</span></div>
+    <div class="price"><b>₹{{PRICE}}</b><span>All-in-One Pass: all {{TOTAL_TESTS}} tests + everything else on the site</span></div>
     <ul>
       <li>{{NLIVE}} live now ({{LIVE_DESC}}); the rest are upcoming and unlock free as they are added</li>
       <li>Online exam with timer, OMR-style palette and instant score</li>
@@ -314,7 +314,7 @@ body.locked{overflow:hidden}
     <div class="unlock" id="unlockedBox" hidden>
       <div class="unlocked-box">✓ Series unlocked on this device</div>
       <p class="msg muted" id="pdfPass"></p>
-      <p class="msg muted">Unlocked with your PYQ Pass or your access code, saved in this browser. On another phone or computer, register with the same phone number and email (or enter the same code). <button class="btn btn-quiet btn-sm" type="button" data-act="forget">Remove from this browser</button></p>
+      <p class="msg muted">Unlocked with your All-in-One Pass or your access code, saved in this browser. On another phone or computer, register with the same phone number and email (or enter the same code). <button class="btn btn-quiet btn-sm" type="button" data-act="forget">Remove from this browser</button></p>
     </div>
   </div>
 </div></section>
@@ -354,8 +354,8 @@ body.locked{overflow:hidden}
 <section class="blk"><div class="wrap">
   <h2>How to get it</h2>
   <div class="steps">
-    <div class="card"><span class="n">1</span><div><b>Get the ₹{{PRICE}} PYQ Pass</b><p>Tap “Get the PYQ Pass”, register with your phone number and email, and pay by UPI, card or net banking on Instamojo.</p></div></div>
-    <div class="card"><span class="n">2</span><div><b>Come back to this page</b><p>On the same phone or computer, the tests open by themselves. If not, tap “I have the PYQ Pass · open the tests”.</p></div></div>
+    <div class="card"><span class="n">1</span><div><b>Get the ₹{{PRICE}} All-in-One Pass</b><p>Tap “Get the All-in-One Pass”, register with your phone number and email, and pay by UPI, card or net banking on Instamojo.</p></div></div>
+    <div class="card"><span class="n">2</span><div><b>Come back to this page</b><p>On the same phone or computer, the tests open by themselves. If not, tap “I have the All-in-One Pass · open the tests”.</p></div></div>
     <div class="card"><span class="n">3</span><div><b>Write the tests</b><p>All live tests open; new tests open automatically when they are added. The same pass opens everything else on the site.</p></div></div>
   </div>
 </div></section>
@@ -525,7 +525,7 @@ async function startFlow(id){
 }
 function needCode(){
   const box = $("#buy"); box.scrollIntoView({behavior:"smooth", block:"center"}); setTimeout(()=>$("#code").focus(), 350);
-  const m=$("#unlockMsg"); m.className="msg"; m.textContent="Get the ₹" + (CONF.pay ? CONF.pay.price : 45) + " PYQ Pass to open every test (or enter the access code from an earlier purchase).";
+  const m=$("#unlockMsg"); m.className="msg"; m.textContent="Get the ₹" + (CONF.pay ? CONF.pay.price : 45) + " All-in-One Pass to open every test (or enter the access code from an earlier purchase).";
 }
 
 /* ---------- exam ---------- */
@@ -766,19 +766,19 @@ $("#unlockForm").addEventListener("submit", async e=>{
   catch(err){ m.className="msg err"; m.textContent="That code is not right. Check it on your access card (letters and numbers only)."; }
 });
 
-/* ---------- the ₹45 PYQ Pass opens the series (26 Oct 2026): the payments script gives the access code to a phone with a valid pass ---------- */
+/* ---------- the ₹45 All-in-One Pass opens the series (26 Oct 2026): the payments script gives the access code to a phone with a valid pass ---------- */
 function showPdfPass(){ const c = getStr(CKEY), el = $("#pdfPass"); if(el) el.innerHTML = c ? `PDF password: <b class="mono">${esc(c.replace(/^(BAHU)(\w{4})(\w{4})$/, "$1-$2-$3"))}</b> (type it with the hyphens)` : ""; }
 function device(){ try{ return localStorage.getItem("lwa-device") || ""; }catch(_){ return ""; } }
 async function passUnlock(manual){
   const m = $("#passMsg"), P = CONF.pay;
   if(!P || !P.api || !window.crypto || !crypto.subtle) return false;
-  if(!ST.phone || !ST.email){ if(manual){ m.className = "msg"; m.innerHTML = `Register on Learn with Anil first (phone and email), then pay: <a href="${P.app}?buy=pyq">get the PYQ Pass</a>.`; } return false; }
-  if(manual){ m.className = "msg"; m.innerHTML = `<span class="spin"></span> Checking your PYQ Pass…`; }
+  if(!ST.phone || !ST.email){ if(manual){ m.className = "msg"; m.innerHTML = `Register on Learn with Anil first (phone and email), then pay: <a href="${P.app}?buy=pyq">get the All-in-One Pass</a>.`; } return false; }
+  if(manual){ m.className = "msg"; m.innerHTML = `<span class="spin"></span> Checking your All-in-One Pass…`; }
   try{
     const r = await (await fetch(P.api, {method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"},
       body: JSON.stringify({action:"mock", exam:P.exam, id:"bb-code", phone:ST.phone, email:ST.email||"", device:device()})})).json();
-    if(r && r.ok && r.key){ await tryCode(r.key); setStr(CKEY, norm(r.key)); if(manual){ m.className = "msg ok"; m.textContent = "Unlocked with your PYQ Pass!"; } track("bahubali_unlock", {via:"pass"}); return true; }
-    if(manual){ m.className = "msg err"; m.innerHTML = (r && r.need) ? `No active PYQ Pass for ${esc(ST.phone)} yet. <a href="${P.app}?buy=pyq">Get it for ₹${P.price}</a>; if you just paid, wait a minute and try again.` : esc((r && r.error) || "Could not check. Please try again."); }
+    if(r && r.ok && r.key){ await tryCode(r.key); setStr(CKEY, norm(r.key)); if(manual){ m.className = "msg ok"; m.textContent = "Unlocked with your All-in-One Pass!"; } track("bahubali_unlock", {via:"pass"}); return true; }
+    if(manual){ m.className = "msg err"; m.innerHTML = (r && r.need) ? `No active All-in-One Pass for ${esc(ST.phone)} yet. <a href="${P.app}?buy=pyq">Get it for ₹${P.price}</a>; if you just paid, wait a minute and try again.` : esc((r && r.error) || "Could not check. Please try again."); }
   }catch(_){ if(manual){ m.className = "msg err"; m.textContent = "No connection. Please try again."; } }
   return false;
 }

@@ -4,7 +4,7 @@ Anil: "add group-1 PYQs mains questions and answers into website ... in group-1 
 tile add pyqs year wise and subject wise". Papers II, III and IV of the 2020, 2023 and 2025 Mains, 270 questions; Anil (1 Nov
 2026): "ok do for paper 5...and only questions for essay": Paper V (90 questions, with answers) and Paper I (27 essay topics,
 questions only, no model essays). The questions are public (crawlable pages); the model answers, written by Learn with Anil,
-are in the ₹45 PYQ Pass, except the free ones: every answer of the 2020 papers and Q1(a) and Q1(b) of every other paper
+are in the ₹45 All-in-One Pass, except the free ones: every answer of the 2020 papers and Q1(a) and Q1(b) of every other paper
 (Anil, 2 Nov 2026: free oldest year as a sample to share; the paid answers are also written into the page behind the lock and
 marked as paid content for Google, isAccessibleForFree false + cssSelector .pw, so Google can read and rank them).
 
@@ -14,7 +14,7 @@ Data (src/appsc-group-1/mains-pyqs/):
     answers.json     {key: "bk-g1m-ans", files: {"<year>-p<n>": "<sealed bundle in src/books>"}, n, free: {id: answer}}
                      (tools/g1m_seal.py)
 Each sealed bundle (one per paper and year; AES-256-GCM, one key, additional data "bk-g1m-ans") holds {id: answer HTML}; an
-answer page asks the payments script for the key (action "mock", any bk- id needs a valid PYQ Pass) and fills the answer in.
+answer page asks the payments script for the key (action "mock", any bk- id needs a valid All-in-One Pass) and fills the answer in.
 
 Pages (all under /appsc-group-1/mains-pyqs/), in the box design of the course cards (Anil, 1 Nov 2026: "i want every mains
 answer in seperate page ... mains tile > 2025 paper-1 > all questions in one page > click on question ... answer on another
@@ -76,7 +76,7 @@ ALL_FREE = set(FREE_YEARS) >= set(YEARS)
 
 
 def paywall_ld(url, name):
-    """Google's paid-content markup: the answer in .pw is in the page for Google but needs the PYQ Pass to read."""
+    """Google's paid-content markup: the answer in .pw is in the page for Google but needs the All-in-One Pass to read."""
     return ('<script type="application/ld+json">' + json.dumps({'@context': 'https://schema.org', '@type': 'WebPage', 'url': url, 'name': name,
             'isAccessibleForFree': False, 'hasPart': {'@type': 'WebPageElement', 'isAccessibleForFree': False, 'cssSelector': '.pw'}},
             ensure_ascii=False) + '</script>')
@@ -124,13 +124,13 @@ def short(t, n):
 
 
 def flip_js():
-    """Lock labels become ticks on a device with a valid PYQ Pass."""
+    """Lock labels become ticks on a device with a valid All-in-One Pass."""
     return ("<script>(function(){try{var a=(JSON.parse(localStorage.getItem('lwa-passes-v1')||'null')||{}).all||{};"
             "if(a.paid&&new Date(a.pyq+'T23:59:59+05:30')>=new Date())document.querySelectorAll('[data-lk]').forEach(function(e){e.textContent='✓ Model answer'})}catch(e){}})();</script>")
 
 
 def unlock_js(api, man, file, exam='appsc-group-1'):
-    """Fills the locked answer in place for a device with a valid PYQ Pass (registered student)."""
+    """Fills the locked answer in place for a device with a valid All-in-One Pass (registered student)."""
     if not api or not file: return ''
     return ("<script>(function(){var API=" + json.dumps(api) + ",KID=" + json.dumps(man['key']) + ",FILE=" + json.dumps(file) + ",EXAM=" + json.dumps(exam) + """;
 function J(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
@@ -144,7 +144,7 @@ var ck='lwa-key-'+KID,c=J(ck);
 if(!r||!r.ok)throw new Error((r&&r.error)||'');try{localStorage.setItem(ck,JSON.stringify({key:r.key}))}catch(_){}return r}))
 .then(function(r){return fetch('/books/'+FILE).then(function(x){if(!x.ok)throw new Error('');return x.arrayBuffer()}).then(function(buf){var b=new Uint8Array(buf);
 return crypto.subtle.importKey('raw',Uint8Array.from(atob(r.key),function(c){return c.charCodeAt(0)}),'AES-GCM',false,['decrypt']).then(function(k){return crypto.subtle.decrypt({name:'AES-GCM',iv:b.slice(0,12),additionalData:new TextEncoder().encode(KID)},k,b.slice(12))})})})
-.then(function(p){var A=JSON.parse(new TextDecoder().decode(p));els.forEach(function(e){var t=A[e.getAttribute('data-ans')];if(t){e.innerHTML=t;e.classList.remove('pw');var m=e.parentNode.querySelector(':scope>.mlock');if(m)m.remove();var h=document.getElementById('anshead');if(h)h.textContent='Model answer · PYQ Pass'}})})
+.then(function(p){var A=JSON.parse(new TextDecoder().decode(p));els.forEach(function(e){var t=A[e.getAttribute('data-ans')];if(t){e.innerHTML=t;e.classList.remove('pw');var m=e.parentNode.querySelector(':scope>.mlock');if(m)m.remove();var h=document.getElementById('anshead');if(h)h.textContent='Model answer · All-in-One Pass'}})})
 .catch(function(err){try{localStorage.removeItem(ck)}catch(_){}msg((err&&err.message)||'Could not open the answer. Please check your connection and reload the page.')});})();</script>""")
 
 
@@ -187,20 +187,20 @@ def pages(B, conf):
     aps = ', '.join(ap[:-1]) + ' and ' + ap[-1]
     buy = (f'<div class="buy mbuy"><div><b>Model answers for all {nans} questions</b><p>Every Group-1 Mains question of 2020, 2023 and 2025 (Papers {aps}) '
            f'with a model answer written the way a top APPSC candidate would: key words and an introduction, every part of the question in numbered points, diagrams, flowcharts, tables or maps, the Andhra Pradesh angle and a conclusion. '
-           f'Included in the ₹{price} PYQ Pass, with every previous paper, mock test series and study book on the site.</p>'
+           f'Included in the ₹{price} All-in-One Pass, with every previous paper, mock test series and study book on the site.</p>'
            f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{pb}?buy=pyq">Get it for ₹{price}</a></div>')
     if ALL_FREE:   # a small box under every free answer: what the pass still adds (Anil, 2 Nov 2026)
         buy = (f'<div class="buy mbuy"><div><b>Write better answers: the Answer Writing Tool Kit</b><p>Every model answer on these pages is free to read. '
                f'The Tool Kit adds four PDF books for Mains Papers I–IV: every previous question sorted by syllabus, with practice questions. '
-               f'It is in the ₹{price} PYQ Pass, with every previous paper of every exam on the site, practice quizzes, timed tests, mock test series and study books.</p>'
+               f'It is in the ₹{price} All-in-One Pass, with every previous paper of every exam on the site, practice quizzes, timed tests, mock test series and study books.</p>'
                f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{pb}?buy=pyq">Get it for ₹{price}</a></div>')
     howto = (f'<p class="note">Tap a question to open its model answer on its own page. '
-             + ('Every model answer is free. ' if ALL_FREE else f'Every 2020 answer is free, and so are Q1(a) and Q1(b) of the 2023 and 2025 papers; the rest open with the ₹{price} PYQ Pass on the phone you registered in the app. ')
+             + ('Every model answer is free. ' if ALL_FREE else f'Every 2020 answer is free, and so are Q1(a) and Q1(b) of the 2023 and 2025 papers; the rest open with the ₹{price} All-in-One Pass on the phone you registered in the app. ')
              + f'Answers are by Learn with Anil (Jupudi Anil Kumar), not by APPSC; facts as of October 2026.</p>')
     howto_e = (f'<p class="note">Paper I is the essay paper: 9 topics in 3 sections of 3, and candidates write one essay from each section '
                f'(50 marks each, 150 in all). These are the real topics only, with no model essays. Practice essay topics on every syllabus part are in the '
-               f'<a href="{pb}#mains">Answer Writing Tool Kit</a> (PDF, in the ₹{price} PYQ Pass).</p>')
-    passbtn = '' if ALL_FREE else f'<a class="cta" href="{pb}?buy=pyq" data-buy>Get the PYQ Pass · ₹{price}</a>'
+               f'<a href="{pb}#mains">Answer Writing Tool Kit</a> (PDF, in the ₹{price} All-in-One Pass).</p>')
+    passbtn = '' if ALL_FREE else f'<a class="cta" href="{pb}?buy=pyq" data-buy>Get the All-in-One Pass · ₹{price}</a>'
     wrap = lambda p, html_: f'<div{D.pv(p)}>{html_}</div>'
     out = {}
     by_yp = {}
@@ -220,7 +220,7 @@ def pages(B, conf):
         else:
             title = f'APPSC Group 1 Mains {y} Paper {p} Questions with Model Answers ({pname}) | Learn with Anil'
             desc = (f'All {len(L)} questions of the APPSC Group 1 Mains {y} Paper {p} ({pname}), held {HELD[y]}, each with a model answer on its own page by Learn with Anil. '
-                    + ('Questions and model answers free.' if y in FREE_YEARS else f'Questions free; answers with the ₹{price} PYQ Pass.'))
+                    + ('Questions and model answers free.' if y in FREE_YEARS else f'Questions free; answers with the ₹{price} All-in-One Pass.'))
             lede = esc(f'Held in {HELD[y]}. 15 questions with an internal choice (a) or (b), 10 marks each, so 30 questions in all. Tap a question for its model answer.')
         sw = ('<div class="msw"><span class="lbl">Year</span>'
               + D.chips([(str(yy), f'{yy}-paper-{n}.html', yy == y) for yy in YEARS if (yy, p) in by_yp])
@@ -252,13 +252,13 @@ def pages(B, conf):
             elif q['id'] in man.get('pw', {}):   # in the page for Google (paid-content markup), hidden until the pass opens it
                 abox = (f'<div class="ma"><div class="ah"><span id="anshead">Model answer</span></div>'
                         f'<div class="mans pw" data-ans="{q["id"]}">{man["pw"][q["id"]]}</div><div class="mlock">'
-                        f'🔒 The full model answer (key words, numbered points, diagrams and the AP angle) opens with the ₹{price} PYQ Pass. '
-                        f'If you have the pass, it opens here by itself on the phone you registered.<br><a class="cta" href="{pb}?buy=pyq">Get the PYQ Pass · ₹{price}</a></div></div>'
+                        f'🔒 The full model answer (key words, numbered points, diagrams and the AP angle) opens with the ₹{price} All-in-One Pass. '
+                        f'If you have the pass, it opens here by itself on the phone you registered.<br><a class="cta" href="{pb}?buy=pyq">Get the All-in-One Pass · ₹{price}</a></div></div>'
                         + paywall_ld(acan, f'APPSC Group 1 Mains {y} Paper {p} Q{q["qno"]} model answer'))
             elif files.get(pkey(q)):
                 abox = (f'<div class="ma"><div class="ah"><span id="anshead">Model answer</span></div><div class="mans" data-ans="{q["id"]}"><div class="mlock">'
-                        f'🔒 This model answer (key words, numbered points, diagrams and the AP angle) opens with the ₹{price} PYQ Pass. '
-                        f'If you have the pass, it opens here by itself on the phone you registered.<br><a class="cta" href="{pb}?buy=pyq">Get the PYQ Pass · ₹{price}</a></div></div></div>')
+                        f'🔒 This model answer (key words, numbered points, diagrams and the AP angle) opens with the ₹{price} All-in-One Pass. '
+                        f'If you have the pass, it opens here by itself on the phone you registered.<br><a class="cta" href="{pb}?buy=pyq">Get the All-in-One Pass · ₹{price}</a></div></div></div>')
             else:
                 abox = '<div class="ma"><div class="ah"><span>Model answer</span></div><div class="mlock">Coming soon.</div></div>'
             nav = D.answer_nav((f'Q{L[i - 1]["qno"]}', apage(L[i - 1]), short(L[i - 1]['text'], 70)) if i else None,
@@ -292,7 +292,7 @@ def pages(B, conf):
         else:
             title = f'APPSC Group 1 Mains {part} Questions with Answers (Paper {p}, 2020–2025) | Learn with Anil'
             desc = (f'{len(L)} APPSC Group 1 Mains Paper {p} previous questions on {part}, from the 2020, 2023 and 2025 papers, grouped by topic, '
-                    f'each with a model answer by Learn with Anil. ' + ('Questions and model answers free.' if ALL_FREE else f'Questions free; answers with the ₹{price} PYQ Pass.'))
+                    f'each with a model answer by Learn with Anil. ' + ('Questions and model answers free.' if ALL_FREE else f'Questions free; answers with the ₹{price} All-in-One Pass.'))
             lede = esc(f'Every APPSC Group-I Mains question on {part} (Paper {p}) from the 2020, 2023 and 2025 papers: {len(L)} questions in {len(topics)} topics, '
                        f'newest first. Tap a question for its model answer.')
         sibs = [(nm, f'{s}.html', s == ps) for (pp, _), (nm, s) in sorted(parts.items(), key=lambda x: x[0][1]) if pp == p]
@@ -340,7 +340,7 @@ def pages(B, conf):
     title = 'APPSC Group 1 Mains Previous Year Questions with Model Answers (2020, 2023, 2025) – Year-wise & Subject-wise | Learn with Anil'
     desc = (f'All {nans} APPSC Group 1 Mains questions of 2020, 2023 and 2025 for Paper II (History & Geography), Paper III (Polity & Ethics), Paper IV (Economy) '
             f'and Paper V (Science, Technology & Environment), each with a model answer by Learn with Anil, plus the {len(qs) - nans} Paper I essay topics; '
-            f'year-wise and subject-wise. ' + ('Questions and model answers free.' if ALL_FREE else f'Questions free; all 2020 answers free, the rest with the ₹{price} PYQ Pass.'))
+            f'year-wise and subject-wise. ' + ('Questions and model answers free.' if ALL_FREE else f'Questions free; all 2020 answers free, the rest with the ₹{price} All-in-One Pass.'))
     lede = esc(f'{nans} real APPSC Group-I Mains questions from the 2020, 2023 and 2025 papers (Papers {aps}), each with a model answer on its own page, '
                f'and the {len(qs) - nans} Paper I essay topics. {"Every model answer is free" if ALL_FREE else "All 2020 answers are free"}. Pick a year and paper, or a syllabus part to see every question APPSC has asked on it.')
     page = B.static_page(1, title, desc, base, 'APPSC Group 1 Mains PYQs with model answers', lede, body, crumbs0, conf)
@@ -363,7 +363,7 @@ def tiles(conf, qs_n):
             f'<span class="etile-price">✓ Questions & model answers free</span></a>'
             f'<a class="etile" href="#mains">{ph("paddy")}<span class="etile-k">03 · Answer writing</span><b>Answer Writing Tool Kit</b>'
             f'<span class="etile-p">Four PDF books (Papers I–IV): every previous question sorted by syllabus, with practice questions.</span>'
-            f'<span class="etile-price" data-paidtxt="✓ Included in your PYQ Pass">🔒 Included in the PYQ Pass</span></a>')
+            f'<span class="etile-price" data-paidtxt="✓ Included in your All-in-One Pass">🔒 Included in the All-in-One Pass</span></a>')
 
 
 def tiles_credit():

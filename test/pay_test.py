@@ -44,8 +44,8 @@ async def main():
     srv = http.server.ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(http.server.SimpleHTTPRequestHandler, directory=SITE))
     threading.Thread(target=srv.serve_forever, daemon=True).start()
     url = f'http://127.0.0.1:{srv.server_port}/'
-    # fake payments script: the ₹45 PYQ Pass covers every exam ('all') and, since 26 Oct 2026, every mock series too
-    # (the script reports mock = the PYQ Pass date); a 'buy' of any kind is the PYQ Pass
+    # fake payments script: the ₹45 All-in-One Pass covers every exam ('all') and, since 26 Oct 2026, every mock series too
+    # (the script reports mock = the All-in-One Pass date); a 'buy' of any kind is the All-in-One Pass
     state = {'mock': False, 'pyq': False, 'trial': 'expired', 'calls': [], 'kind': ''}
     def passes():
         p = {}
@@ -64,7 +64,7 @@ async def main():
         elif b['action'] == 'verify':
             if state.get('verifyfail'): r = dict(ok=False, error='The payment is not complete yet.')
             else: state['pyq'] = True; r = dict(ok=True, passes=passes())
-        elif b['action'] == 'mock' and b['id'].startswith('bk-ex-'):   # sealed paid explanations (tools/ex_seal.py): PYQ Pass only
+        elif b['action'] == 'mock' and b['id'].startswith('bk-ex-'):   # sealed paid explanations (tools/ex_seal.py): All-in-One Pass only
             r = dict(ok=True, id=b['id'], key=EXKEYS.get(b['id'], ''), file='') if state['pyq'] else dict(ok=False, need='pyq', error='needs pass')
         elif b['action'] == 'mock' and b['id'] == 'mk-pc-1': r = dict(ok=True, id=b['id'], key=PKEY, file=PFILE, free=True)   # free for registered students
         elif b['action'] == 'mock': r = dict(ok=True, id=b['id'], key=TKEY, file=TFILE) if (state['mock'] or state['pyq']) else dict(ok=False, need='pyq', error='needs pass')
@@ -88,7 +88,7 @@ async def main():
             await pg.check('#joinForm [name="ok"]'); await pg.click('#joinForm [type="submit"]'); await pg.wait_for_timeout(1500)
             if (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'PYQ test opened without payment (calls {state["calls"]})')
             elif (await pg.evaluate('location.pathname')).endswith('/join/'): errors.append('the checkout opened over the registration form (26 Oct 2026)')
-            elif not await pg.locator('#payDlg[open]').count(): errors.append('no PYQ Pass checkout after registering')
+            elif not await pg.locator('#payDlg[open]').count(): errors.append('no All-in-One Pass checkout after registering')
             elif 'days free' in (await pg.inner_text('body')) or 'free trial' in (await pg.inner_text('body')).lower(): errors.append('the page still mentions a free trial')
         await pg.close()
         # B. a registered student without a pass
@@ -105,11 +105,11 @@ async def main():
         if not await pg.locator('details.ans').count(): errors.append('free TS Police question bank hides the answers')
         await pg.goto(url + 'ts-police-si/mistakes/'); await pg.wait_for_timeout(700)
         if not await pg.locator('[data-act="openpay"]').count(): errors.append('TS Police mistakes notebook open without a pass')
-        # 1. a PYQ test without a pass opens the PYQ Pass checkout, which says it covers every exam
+        # 1. a PYQ test without a pass opens the All-in-One Pass checkout, which says it covers every exam
         await pg.goto(url + 'appsc-group-2/?test=s2024'); await pg.wait_for_timeout(800)
         txt = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
         if not txt: errors.append('no checkout when attempting a PYQ test without a pass')
-        elif 'whole website' not in txt or '12 months' not in txt or 'all exams' not in txt: errors.append(f'PYQ Pass checkout does not say it covers every exam: {txt[:200]!r}')
+        elif 'whole website' not in txt or '12 months' not in txt or 'all exams' not in txt: errors.append(f'All-in-One Pass checkout does not say it covers every exam: {txt[:200]!r}')
         # 1b. the question bank hides answers
         await pg.goto(url + 'appsc-group-2/bank/'); await pg.wait_for_timeout(800)
         if await pg.locator('details.ans').count() or not await pg.locator('[data-act="openpay"],[data-act="unlockpyq"]').count(): errors.append('question bank shows answers without a pass')
@@ -117,16 +117,16 @@ async def main():
         for view in ('mistakes', 'smart', 'heatmap', 'bookmarks', 'practice'):
             await pg.goto(url + f'appsc-group-2/{view}/'); await pg.wait_for_timeout(700)
             if not await pg.locator('[data-act="openpay"]').count(): errors.append(f'{view} is open without any plan')
-        # 2. a mock without a pass opens the ₹45 PYQ Pass checkout, which includes Mission Khaki (no mock-only pack any more)
+        # 2. a mock without a pass opens the ₹45 All-in-One Pass checkout, which includes Mission Khaki (no mock-only pack any more)
         await pg.goto(url + 'ts-police-si/?mock=mk-si-1'); await pg.wait_for_timeout(800)
         txt = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
-        if 'Mission Khaki' not in txt or 'PYQ Pass' not in txt or '₹45' not in txt or 'Mock tests only' in txt or '₹150' in txt: errors.append(f'a mock without a pass should open the ₹45 PYQ Pass checkout listing Mission Khaki: {txt[:200]!r}')
+        if 'Mission Khaki' not in txt or 'All-in-One Pass' not in txt or '₹45' not in txt or 'Mock tests only' in txt or '₹150' in txt: errors.append(f'a mock without a pass should open the ₹45 All-in-One Pass checkout listing Mission Khaki: {txt[:200]!r}')
         # 3. pay: buy -> (fake Instamojo) -> back with payment_request_id -> verify -> unlocked
         await pg.click('[data-act="paybuy"]'); await pg.wait_for_timeout(1500)
         if not state['pyq']: errors.append(f'payment not verified, calls {state["calls"]}')
-        if state['kind'] != 'pyq': errors.append(f'the app asked to buy "{state["kind"]}", not the PYQ Pass')
+        if state['kind'] != 'pyq': errors.append(f'the app asked to buy "{state["kind"]}", not the All-in-One Pass')
         if 'pyq' not in await pg.evaluate('JSON.stringify(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{}"))'): errors.append('pass not saved after payment')
-        # 4. the mock and a sectional now open with the PYQ Pass
+        # 4. the mock and a sectional now open with the All-in-One Pass
         await pg.goto(url + 'ts-police-si/?mock=mk-si-1'); await pg.wait_for_timeout(1200)
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/') or '6' not in await pg.inner_text('main'): errors.append('mock did not open after payment')
         if await pg.locator('[data-act="qchal"]').count(): errors.append('paid mock question offers "challenge a friend"')
@@ -135,21 +135,21 @@ async def main():
         # 4b. the same pass opens the study tools and the PYQ quiz builder
         for view in ('mistakes', 'practice'):
             await pg.goto(url + f'ts-police-si/{view}/'); await pg.wait_for_timeout(700)
-            if await pg.locator('[data-act="openpay"]').count(): errors.append(f'{view} locked although the PYQ Pass was bought')
+            if await pg.locator('[data-act="openpay"]').count(): errors.append(f'{view} locked although the All-in-One Pass was bought')
         # 5. PYQ tests open, here and on another exam
         await pg.goto(url + 'ts-police-si/?test=s2022'); await pg.wait_for_timeout(900)
-        if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('PYQ test did not open with the PYQ Pass')
+        if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('PYQ test did not open with the All-in-One Pass')
         await pg.goto(url + 'appsc-group-1/?sec=pol'); await pg.wait_for_timeout(1200)
-        if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('PYQ Pass bought on TS SI does not open APPSC Group 1 PYQs')
+        if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('All-in-One Pass bought on TS SI does not open APPSC Group 1 PYQs')
         # 6. paid explanations (27 Oct 2026): not in the public data; with the pass they load from the sealed bundle
         if EXKEYS:
             await pg.goto(url + 'appsc-group-2/bank/'); await pg.wait_for_timeout(2500)
             x = await pg.evaluate('(async()=>{const t=await (await fetch(document.querySelector("script[src*=\'data/\']").src)).text(); return {wx: (t.match(/"wx":1/g)||[]).length, exb: /"exb":\\{/.test(t)};})()')
             if not x['exb'] or x['wx'] < 100: errors.append(f'paid explanations still in the public app data: {x}')
             txt = await pg.inner_text('main')
-            if 'Loading the explanation' in txt or 'Could not load the explanation' in txt: errors.append('paid explanations did not load with the PYQ Pass')
+            if 'Loading the explanation' in txt or 'Could not load the explanation' in txt: errors.append('paid explanations did not load with the All-in-One Pass')
             n = await pg.evaluate('document.querySelectorAll("main .why p:not(.muted)").length')
-            if n < 15: errors.append(f'only {n} explanations shown in the question bank with the PYQ Pass')
+            if n < 15: errors.append(f'only {n} explanations shown in the question bank with the All-in-One Pass')
             if not await pg.evaluate('(()=>{const q=window.LWA_DATA.questions.find(q=>q.id==="m2019p1-100");return !!(q&&q.w&&!q.wx)})()'): errors.append('a paid explanation was not put back after loading')
         else: print('  (no ex-keys.json here: paid-explanation test skipped)')
         await pg.close()
@@ -206,7 +206,7 @@ async def main():
         await pg.reload(); await pg.wait_for_timeout(1500)
         if await pg.locator('#payDlg[open]').count(): errors.append('a student who already paid was asked to pay again')
         # D. Mission Khaki – Constable (25 Oct 2026): Mock 1 is free for a registered student; Mock 2 and an old ?buy=combo link
-        #    open the ₹45 PYQ Pass checkout (26 Oct 2026: no separate packs or combo)
+        #    open the ₹45 All-in-One Pass checkout (26 Oct 2026: no separate packs or combo)
         state.update(mock=False, pyq=False, trial='expired', calls=[], kind='')
         await pg.goto(url + 'ts-police-constable/?mock=mk-pc-1'); await pg.wait_for_timeout(1500)
         if await pg.locator('#payDlg[open]').count(): errors.append('free Constable Mock 1 asked for payment')
@@ -217,15 +217,15 @@ async def main():
         if 'English sectional' not in body: errors.append(f'Constable English sectional did not open: {body[:200]!r}')
         await pg.goto(url + 'ts-police-constable/?mock=mk-pc-2'); await pg.wait_for_timeout(1500)
         t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
-        if '₹45' not in t or '₹99' in t: errors.append(f'Constable Mock 2 did not ask for the ₹45 PYQ Pass: {t[:160]!r}')
+        if '₹45' not in t or '₹99' in t: errors.append(f'Constable Mock 2 did not ask for the ₹45 All-in-One Pass: {t[:160]!r}')
         await pg.goto(url + 'ts-police-constable/?buy=combo'); await pg.wait_for_timeout(1000)
         t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
-        if '₹45' not in t or '₹199' in t or 'Mission Khaki' not in t: errors.append(f'old combo link should open the ₹45 PYQ Pass checkout: {t[:200]!r}')
+        if '₹45' not in t or '₹199' in t or 'Mission Khaki' not in t: errors.append(f'old combo link should open the ₹45 All-in-One Pass checkout: {t[:200]!r}')
         state['slowbuy'] = True
         await pg.click('#payDlg [data-act="paybuy"]'); await pg.wait_for_timeout(1300)
         if state['kind'] != 'pyq': errors.append(f'old combo link checkout sent kind {state["kind"]!r} (want pyq)')
         state['slowbuy'] = False
-        # E. a new visitor taps "Register to get the PYQ Pass" (Anil, 26 Oct 2026: after registering, the page went back
+        # E. a new visitor taps "Register to get the All-in-One Pass" (Anil, 26 Oct 2026: after registering, the page went back
         #    with no Pay button). After the form: back on the same page, with the checkout and its Pay button open.
         async def fresh_page():
             q = await b.new_page(viewport={'width': 390, 'height': 800})
@@ -240,9 +240,9 @@ async def main():
         pg = await fresh_page()
         await pg.goto(url + 'appsc-group-2/bank/'); await pg.wait_for_timeout(900)
         await pg.click('[data-act="unlockpyq"]'); await pg.wait_for_timeout(500)
-        if not await pg.locator('#joinForm').count(): errors.append('"Register to get the PYQ Pass" did not open the registration form')
+        if not await pg.locator('#joinForm').count(): errors.append('"Register to get the All-in-One Pass" did not open the registration form')
         else:
-            if 'Register to get the PYQ Pass' not in await pg.inner_text('main'): errors.append('registration form for a new student still says "Update your details"')
+            if 'Register to get the All-in-One Pass' not in await pg.inner_text('main'): errors.append('registration form for a new student still says "Update your details"')
             await register(pg)
             path = await pg.evaluate('location.pathname')
             t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''

@@ -2,7 +2,7 @@
 
 Anil: "can u do same for upsc mains ... (2019-26)" (same as the APPSC Group-1 Mains pages, tools/g1mains.py): GS 1-4 of the
 2019-2026 Civil Services (Main) Examinations, long model answers in the Group-1 style, questions free, the first two answers
-of every paper free, the rest in the ₹45 PYQ Pass. Box design: a paper page lists its questions as cards; every answer has
+of every paper free, the rest in the ₹45 All-in-One Pass. Box design: a paper page lists its questions as cards; every answer has
 its own page.
 
 Data (src/upsc-cse/mains-pyqs/):
@@ -122,16 +122,16 @@ def course_pages(B, code):
     parts = part_pages(qs)
     free = man.get('free', {})
     allfree = len(free) >= man.get('n', 10 ** 9)   # Anil, 2 Nov 2026: "make both mains free" (GS), then "ok" to Anthropology too: every written answer free
-    payline = 'Questions and model answers free.' if allfree else f'Questions free; answers with the ₹{price} PYQ Pass.'
+    payline = 'Questions and model answers free.' if allfree else f'Questions free; answers with the ₹{price} All-in-One Pass.'
     years = [y for y in YEARS if any(q['year'] == y for q in qs)]
     done = sorted({int(k[:4]) for k in files}, reverse=True)
-    buyurl = '/upsc-epfo/?buy=pyq'   # the pass checkout lives in the exam apps (one ₹45 PYQ Pass for the whole site)
+    buyurl = '/upsc-epfo/?buy=pyq'   # the pass checkout lives in the exam apps (one ₹45 All-in-One Pass for the whole site)
     buy = (f'<div class="buy mbuy"><div><b>{C["seo"]} model answers</b><p>{C["what"]} of the Civil Services (Main) Examinations {years[-1]}–{years[0]} with a '
            f'model answer: key words and an introduction, every part of the question in numbered points, diagrams, flowcharts or tables, and a conclusion. '
-           f'Included in the ₹{price} PYQ Pass, with every previous paper, mock test series and study book on the site.</p>'
+           f'Included in the ₹{price} All-in-One Pass, with every previous paper, mock test series and study book on the site.</p>'
            f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{buyurl}">Get it for ₹{price}</a></div>')
     if allfree:   # a small box under every free answer: what the pass still adds (Anil, 2 Nov 2026)
-        buy = (f'<div class="buy mbuy"><div><b>Every model answer here is free</b><p>The ₹{price} PYQ Pass opens the rest of the site for 12 months: '
+        buy = (f'<div class="buy mbuy"><div><b>Every model answer here is free</b><p>The ₹{price} All-in-One Pass opens the rest of the site for 12 months: '
                f'UPSC Prelims GS Paper I and CSAT with explanations, practice quizzes and timed tests, UPSC CAPF and EPFO, the previous papers of every APPSC, '
                f'TSPSC, police and SSC exam, every mock test series and the study books.</p>'
                f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{buyurl}">Get it for ₹{price}</a></div>')
@@ -139,10 +139,10 @@ def course_pages(B, code):
               else f'Model answers are ready for {", ".join(map(str, done))}; the other years are being added, newest first.' if done
               else 'Model answers are being added year by year, newest first.')
     howto = (f'<p class="note">Tap a question to open its model answer on its own page. '
-             + ('Every model answer is free. ' if allfree else f'{C["free_note"][0].upper() + C["free_note"][1:]}; the rest open with the ₹{price} PYQ Pass on the phone you registered in the app. ')
+             + ('Every model answer is free. ' if allfree else f'{C["free_note"][0].upper() + C["free_note"][1:]}; the rest open with the ₹{price} All-in-One Pass on the phone you registered in the app. ')
              + f'The model answers are fuller than UPSC\'s 150/250-word limits so that you learn the content; '
              f'write within the limit in the exam. {status} Answers are by Learn with Anil (Jupudi Anil Kumar), not by UPSC.</p>')
-    passbtn = '' if allfree else f'<a class="cta" href="{buyurl}" data-buy style="margin:0">Get the PYQ Pass · ₹{price}</a>'
+    passbtn = '' if allfree else f'<a class="cta" href="{buyurl}" data-buy style="margin:0">Get the All-in-One Pass · ₹{price}</a>'
     wrap = lambda p, h: f'<div{D.pv(p)}>{h}</div>'
     def head(h2, sub):
         return (f'<div style="display:flex;flex-wrap:wrap;gap:8px 16px;align-items:end;justify-content:space-between;margin:22px 0 0">'
@@ -182,8 +182,8 @@ def course_pages(B, code):
                 abox = f'<div class="ma"><div class="ah"><span>Model answer · free{"" if allfree else " sample"}</span></div><div class="mans">{free[q["id"]]}</div></div>'
             elif files.get(pkey(q)):
                 abox = (f'<div class="ma"><div class="ah"><span id="anshead">Model answer</span></div><div class="mans" data-ans="{q["id"]}"><div class="mlock">'
-                        f'🔒 This model answer (key words, numbered points and diagrams) opens with the ₹{price} PYQ Pass. '
-                        f'If you have the pass, it opens here by itself on the phone you registered.<br><a class="cta" href="{buyurl}">Get the PYQ Pass · ₹{price}</a></div></div></div>')
+                        f'🔒 This model answer (key words, numbered points and diagrams) opens with the ₹{price} All-in-One Pass. '
+                        f'If you have the pass, it opens here by itself on the phone you registered.<br><a class="cta" href="{buyurl}">Get the All-in-One Pass · ₹{price}</a></div></div></div>')
             else:
                 abox = ('<div class="ma"><div class="ah"><span>Model answer</span></div><div class="mlock">The model answers for this paper are being written and checked; '
                         'they are added year by year, newest first.</div></div>')

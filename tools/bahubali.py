@@ -32,7 +32,7 @@ PRIV = os.environ.get('BAHUBALI_SRC', '/home/claude/bahubali')
 ITER = 210000
 URLDIR = 'appsc-group-2/bahubali-test-series'
 NAME = 'Bahubali Test Series'
-PRICE = 45   # Anil, 26 Oct 2026: included in the ₹45 PYQ Pass with everything else (was ₹250 on its own; old buyers keep their code)
+PRICE = 45   # Anil, 26 Oct 2026: included in the ₹45 All-in-One Pass with everything else (was ₹250 on its own; old buyers keep their code)
 OLD_PRICE = 250
 TESTS_PER_PAPER = 12
 esc = B.esc
@@ -307,14 +307,14 @@ FAQ = [
   ('What is the Bahubali Test Series?',
    f'A paid series of full-length mock tests for the APPSC Group-II Services Main Examination by Jupudi Anil Kumar (Learn with Anil): {TESTS_PER_PAPER} tests for Paper I and {TESTS_PER_PAPER} for Paper II. '
    'Every test has 150 questions, 150 marks and 150 minutes, with one-third negative marking, exactly like the real paper.'),
-  ('How much does it cost?', f'It is included in the ₹{PRICE} PYQ Pass: one payment for 12 months opens all {2 * TESTS_PER_PAPER} Bahubali tests of both papers, '
+  ('How much does it cost?', f'It is included in the ₹{PRICE} All-in-One Pass: one payment for 12 months opens all {2 * TESTS_PER_PAPER} Bahubali tests of both papers, '
    'every previous paper of every exam on Learn with Anil, the other mock test series and the study books. Tests added later open at no extra cost.'),
   ('Which tests are available now?', '{LIVE}'),
   ('Are these previous APPSC questions?', 'No. They are original questions written to the Group-II Mains syllabus at UPSC Prelims standard, in the styles APPSC uses. '
    'For APPSC\'s own previous papers, use the free APPSC Group 2 PYQs on this site.'),
   ('Can I write the test in Telugu?', 'Yes. Every question, option and explanation is in English and Telugu. Switch language at any time during the test or while reviewing answers.'),
   ('How is the score calculated?', 'Each correct answer gives 1 mark and each wrong answer takes away one-third of a mark; unanswered questions give 0. You also get section-wise and unit-wise scores.'),
-  ('Can I use it on my phone and my computer?', 'Yes. Register on Learn with Anil with the same phone number and email on each device (up to 3) and the tests open with your PYQ Pass. Your attempts and scores are saved in each browser.'),
+  ('Can I use it on my phone and my computer?', 'Yes. Register on Learn with Anil with the same phone number and email on each device (up to 3) and the tests open with your All-in-One Pass. Your attempts and scores are saved in each browser.'),
   ('Are PDFs included?', 'Yes. For every live test you can download the question booklet (with an OMR sheet) and the answers-with-explanations PDF. The PDF password is shown on this page once the series is unlocked.'),
   ('I bought the series earlier on Instamojo. Does my code still work?', f'Yes. Type your access code in “Bought the series earlier? Enter your access code” and the tests open as before. Questions? WhatsApp {B.PHONE}.'),
 ]
@@ -354,8 +354,8 @@ def page(dist_site):
     nlive = len(conf_tests)
     live_desc = ' and '.join(f'{p["name"]} Grand Test' + ('s ' if sum(t['paper'] == p['id'] for t in conf_tests) > 1 else ' ') + _ranges([t['n'] for t in conf_tests if t['paper'] == p['id']]) for p in PAPERS if any(t['paper'] == p['id'] for t in conf_tests)) or 'first tests coming soon'
     buy = S.get('buy', '')
-    buy_btn = (f'<a class="btn btn-gold" href="/appsc-group-2/?buy=pyq" data-buy>Get the PYQ Pass · ₹{PRICE}</a>'
-               '<button class="btn btn-secondary" type="button" data-act="passcheck" style="width:100%;margin-top:8px">I have the PYQ Pass · open the tests</button>')
+    buy_btn = (f'<a class="btn btn-gold" href="/appsc-group-2/?buy=pyq" data-buy>Get the All-in-One Pass · ₹{PRICE}</a>'
+               '<button class="btn btn-secondary" type="button" data-act="passcheck" style="width:100%;margin-top:8px">I have the All-in-One Pass · open the tests</button>')
     samples = S.get('samples', [])
     sample_html = ''
     if samples:
@@ -374,7 +374,7 @@ def page(dist_site):
     faq_html = ''.join(f'<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for q, a in faq)
     title = 'Bahubali Test Series – APPSC Group 2 Mains Mock Tests (Paper 1 & Paper 2), Full-Length, English & Telugu | Learn with Anil'
     desc = (f'Bahubali Test Series for APPSC Group 2 Mains 2026: {2 * TESTS_PER_PAPER} full-length mock tests ({TESTS_PER_PAPER} for Paper 1, {TESTS_PER_PAPER} for Paper 2), '
-            f'150 questions each, in English and Telugu, with negative marking, explanations and PDFs. Included in the ₹{PRICE} PYQ Pass.')
+            f'150 questions each, in English and Telugu, with negative marking, explanations and PDFs. Included in the ₹{PRICE} All-in-One Pass.')
     ld = [{"@context": "https://schema.org", "@type": "Course", "name": f"{NAME} – APPSC Group-II Mains", "description": desc, "url": url,
            "inLanguage": ["en", "te"], "provider": {"@type": "Organization", "name": "Learn with Anil", "url": B.SITE_URL + '/'},
            "offers": {"@type": "Offer", "price": str(PRICE), "priceCurrency": "INR", "category": "Paid", "url": url},

@@ -3,7 +3,7 @@
 
 Every question, its options and its correct answer stay public (question, paper and subject pages, and the app data),
 and so do the explanations of the free sample (build.sample_ids: the first SAMPLE_N questions of each paper). The other
-explanations are what the ₹45 PYQ Pass sells, but until now they were in the public app data file
+explanations are what the ₹45 All-in-One Pass sells, but until now they were in the public app data file
 (/<exam>/data/<key>-<hash>.js), readable by anyone who opened it. This script puts them, one bundle per exam, in a file
 encrypted with AES-256-GCM (additional data = the key id "bk-ex-<exam id>", the same scheme as the sealed books and
 booklets) and writes:
@@ -12,7 +12,7 @@ booklets) and writes:
 build.py copies the bundles to /books/ (robots.txt keeps search engines out), takes out of the app data every
 explanation whose hash is in the manifest (marking the question "wx": 1), and tells the app where the bundle is.
 The app asks the payments script for the key with the 'mock' action (id "bk-ex-<exam id>"; any bk- id needs a valid
-PYQ Pass) and decrypts the bundle in the browser. An explanation added or edited after the last sealing stays public
+All-in-One Pass) and decrypts the bundle in the browser. An explanation added or edited after the last sealing stays public
 (build.py prints how many) until this script is run again, so nothing ever disappears for a paying student.
 
     python3 tools/ex_seal.py [exam id ...]       # default: every exam with explanations

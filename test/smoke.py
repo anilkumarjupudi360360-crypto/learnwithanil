@@ -35,7 +35,7 @@ def _g2book(k):   # no 'exams' list (the APPSC Mains books) or a Group-II book (
 G2_BOOKS = {k: v for k, v in BOOKS.items() if any(b['id'] == k for b in _NOTES)}   # the start page's Study Material (shared with the Group-2 page) lists every book (Anil, 2 Nov 2026)
 EXAM_DIR = {'appsc-eo': 'appsc-endowment-officer', 'appsc-analyst': 'appsc-analyst-grade-2', 'appsc-fro': 'appsc-forest-range-officer'}   # exam id -> folder, where they differ
 BOOKLET_FILES = {v['key']: v['file'] for ex in BOOKLETS.values() for v in ex.values()}
-def fake_pay(passes):   # the payments script: a student with the given passes (the PYQ Pass opens mocks, books and Bahubali)
+def fake_pay(passes):   # the payments script: a student with the given passes (the All-in-One Pass opens mocks, books and Bahubali)
     import json
     async def h(route):
         try: body = json.loads(route.request.post_data or '{}')
@@ -55,7 +55,7 @@ async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
         _new = b.new_page
-        async def new_page(passes=PAID, **kw):   # every page talks to a fake payments script: by default a student with the PYQ Pass
+        async def new_page(passes=PAID, **kw):   # every page talks to a fake payments script: by default a student with the All-in-One Pass
             pg = await _new(**kw); await pg.route(PAY_API, fake_pay(passes)); return pg
         b.new_page = new_page
         errors = []
@@ -249,7 +249,7 @@ async def main():
                 body = open(os.path.join(SITE, rel), encoding='utf-8').read()
                 if 'Payments open soon' in body or 'stays free' in body or 'Read with answers (free)' in body or 'download>PDF' in body:
                     errors.append(f'{rel}: says something is free or offers a free PDF')
-                if '<h2>Plans</h2>' not in body or 'PYQ Pass' not in body: errors.append(f'{rel}: no plans table')
+                if '<h2>Plans</h2>' not in body or 'All-in-One Pass' not in body: errors.append(f'{rel}: no plans table')
                 if 'Free trial' in body or 'days free' in body.lower(): errors.append(f'{rel}: still offers a free trial')
                 free_ = rel.startswith(('ts-police-si/', 'ts-police-constable/'))   # TS Police papers are free to attempt (Anil, 28 Oct 2026)
                 if ('?sec=' in body or '?practice=' in body) and not free_ and 'class="lk"' not in body: errors.append(f'{rel}: PYQ buttons show no lock')
@@ -357,8 +357,8 @@ async def main():
             f = os.path.join(SITE, h)
             if h and not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'llms.txt: broken link /{h}')
         epm = open(os.path.join(SITE, 'upsc-epfo', 'mock-test.html'), encoding='utf-8').read()
-        if 'Included in the ₹45 PYQ Pass' not in epm or 'coming soon' not in epm.lower() or '?buy=mock' in epm or '₹199' in epm: errors.append('upsc-epfo/mock-test.html: EPFO pack should be "coming soon, included in the ₹45 PYQ Pass" with no separate price')
-        # one ₹45 PYQ Pass for everything (Anil, 26 Oct 2026): no page sells a mock pack, combo, Bahubali or a book separately
+        if 'Included in the ₹45 All-in-One Pass' not in epm or 'coming soon' not in epm.lower() or '?buy=mock' in epm or '₹199' in epm: errors.append('upsc-epfo/mock-test.html: EPFO pack should be "coming soon, included in the ₹45 All-in-One Pass" with no separate price')
+        # one ₹45 All-in-One Pass for everything (Anil, 26 Oct 2026): no page sells a mock pack, combo, Bahubali or a book separately
         for dp, _, fs in os.walk(SITE):
             for f in fs:
                 rel_ = os.path.relpath(os.path.join(dp, f), SITE)
@@ -374,7 +374,7 @@ async def main():
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('?sec=ari did not open a sectional test')
         await pg.goto(URL + 'ts-police-si/?buy=mock'); await pg.wait_for_timeout(500)
         pdt = await pg.inner_text('#payDlg') if await pg.evaluate('!!document.querySelector("#payDlg[open]")') else ''
-        if 'PYQ Pass' not in pdt or 'Mission Khaki' not in pdt or '₹45' not in pdt or '₹150' in pdt: errors.append('?buy=mock (old link) did not open the ₹45 PYQ Pass checkout that lists Mission Khaki')
+        if 'All-in-One Pass' not in pdt or 'Mission Khaki' not in pdt or '₹45' not in pdt or '₹150' in pdt: errors.append('?buy=mock (old link) did not open the ₹45 All-in-One Pass checkout that lists Mission Khaki')
         # site icon: the files exist and the pages point to them
         for f in ('favicon.ico', 'icon-192.png', 'apple-touch-icon.png', 'icon-512.png'):
             if not os.path.isfile(os.path.join(SITE, f)): errors.append(f'missing {f}')
@@ -385,7 +385,7 @@ async def main():
         for land in ('appsc-pyqs.html', 'ts-police-pyqs.html'):
             if f'/{land}</loc>' not in sm: errors.append(f'{land} not in sitemap')
             for h in _re.findall(r'href="([^"#:]+)"', open(os.path.join(SITE, land), encoding='utf-8').read()):
-                f = os.path.join(SITE, h.lstrip('/'))
+                f = os.path.join(SITE, h.split('?')[0].lstrip('/'))   # "/<exam>/?buy=pyq" (Subscribe in the header) is the exam page
                 if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{land}: broken link {h}')
         # Bahubali Test Series (paid): the page is built once tests are sealed, and nothing is published unencrypted
         bbdir = os.path.join(SITE, 'appsc-group-2', 'bahubali-test-series')
@@ -395,17 +395,17 @@ async def main():
                 await pg.goto(URL + 'appsc-group-2/bahubali-test-series/'); await pg.wait_for_timeout(300)
                 if await pg.locator('[data-test]').count() < 1: errors.append('Bahubali: no live test cards')
                 if await pg.locator('#unlockForm').count() != 1: errors.append('Bahubali: no unlock form')
-                if BB_CODE:   # a registered student with the PYQ Pass: the tests open by themselves
+                if BB_CODE:   # a registered student with the All-in-One Pass: the tests open by themselves
                     bp = await b.new_page(viewport={'width': 390, 'height': 900}); await bp.add_init_script(REGISTERED)
                     bp.on('pageerror', lambda e: errors.append(f'bahubali pageerror: {e}'))
                     await bp.goto(URL + 'appsc-group-2/bahubali-test-series/'); await bp.wait_for_timeout(2500)
-                    if not await bp.locator('[data-act="start"]').count() or await bp.is_visible('#unlockBox'): errors.append('Bahubali: the PYQ Pass did not open the tests')
+                    if not await bp.locator('[data-act="start"]').count() or await bp.is_visible('#unlockBox'): errors.append('Bahubali: the All-in-One Pass did not open the tests')
                     if 'PDF password' not in await bp.inner_text('#pdfPass'): errors.append('Bahubali: no PDF password shown to a pass holder')
                     await bp.close()
                     bp = await b.new_page(passes={}, viewport={'width': 390, 'height': 900}); await bp.add_init_script(REGISTERED)
                     await bp.goto(URL + 'appsc-group-2/bahubali-test-series/'); await bp.wait_for_timeout(1500)
                     if await bp.locator('[data-act="start"]').count(): errors.append('Bahubali: open without a pass')
-                    if '?buy=pyq' not in await bp.inner_html('#buy'): errors.append('Bahubali: no "Get the PYQ Pass" button')
+                    if '?buy=pyq' not in await bp.inner_html('#buy'): errors.append('Bahubali: no "Get the All-in-One Pass" button')
                     await bp.close()
                 if '/appsc-group-2/bahubali-test-series/</loc>' not in sm: errors.append('Bahubali page not in sitemap')
                 for d, bad in (('data', b'"q":'), ('pdf', None)):
@@ -418,7 +418,7 @@ async def main():
                 if f.endswith(('.html', '.js')):
                     t = open(os.path.join(dp, f), encoding='utf-8', errors='ignore').read()
                     if 'days free' in t or 'రోజులు ఉచితం' in t or 'दिन निःशुल्क' in t: errors.append(f'{os.path.relpath(os.path.join(dp, f), SITE)}: mentions a free trial')
-        # payments on: without a pass nothing PYQ opens (registered student, old free-trial date, no PYQ Pass)
+        # payments on: without a pass nothing PYQ opens (registered student, old free-trial date, no All-in-One Pass)
         np = await b.new_page(passes={'pyq': '2099-01-03', 'trial': '2099-01-03'}, viewport={'width': 1280, 'height': 900})
         await np.add_init_script(REGISTERED); await np.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
         np.on('pageerror', lambda e: errors.append(f'nopass pageerror: {e}'))
@@ -426,7 +426,7 @@ async def main():
             await np.goto(URL + path); await np.wait_for_timeout(900)
             if (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: {path} opened a quiz without a pass')
         await np.goto(URL + 'appsc-group-1/?test=p2024a'); await np.wait_for_timeout(900)
-        if not await np.evaluate('!!document.querySelector("#payDlg[open]")') or 'PYQ Pass' not in await np.inner_text('#payDlg'): errors.append('nopass: ?test= did not open the PYQ Pass checkout')
+        if not await np.evaluate('!!document.querySelector("#payDlg[open]")') or 'All-in-One Pass' not in await np.inner_text('#payDlg'): errors.append('nopass: ?test= did not open the All-in-One Pass checkout')
         for path in ('ts-police-si/?test=s2022', 'ts-police-constable/?sec=ari'):   # TS Police papers: free without a pass
             await np.goto(URL + path); await np.wait_for_timeout(900)
             if not (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: free {path} did not open')
@@ -454,7 +454,7 @@ async def main():
         r = await pg.goto(URL + 'no-such-page/'); await pg.wait_for_timeout(200)
         if r.status != 404 or 'does not exist' not in await pg.inner_text('body'): errors.append('404 page missing')
         await pg.close()
-        # APPSC Group-I Mains tool kit: locked without the PYQ Pass, four downloads with it, Paper V on WhatsApp;
+        # APPSC Group-I Mains tool kit: locked without the All-in-One Pass, four downloads with it, Paper V on WhatsApp;
         # a "paper 5" search on the start page points to WhatsApp too
         if os.path.exists(os.path.join(SITE, 'appsc-group-1', 'mains', 'index.html')):
             for passes, paid in [({}, False), (PAID, True)]:
@@ -463,9 +463,9 @@ async def main():
                 mp.on('pageerror', lambda e: errors.append(f'mains pageerror: {e}'))
                 await mp.goto(URL + 'appsc-group-1/mains/'); await mp.wait_for_timeout(800)
                 dl = await mp.locator('[data-act="kitdl"]').count()
-                if not paid and (dl or not await mp.locator('[data-act="unlockpyq"]').count()): errors.append('mains: the tool kit is not locked without the PYQ Pass')
+                if not paid and (dl or not await mp.locator('[data-act="unlockpyq"]').count()): errors.append('mains: the tool kit is not locked without the All-in-One Pass')
                 if paid:
-                    if dl != 4: errors.append(f'mains: {dl} download links with the PYQ Pass (want 4)')
+                    if dl != 4: errors.append(f'mains: {dl} download links with the All-in-One Pass (want 4)')
                     for h in await mp.eval_on_selector_all('[data-act="kitdl"]', 'es=>es.map(e=>e.getAttribute("href"))'):
                         if not os.path.exists(os.path.join(SITE, h.lstrip('/'))): errors.append(f'mains: missing file {h}')
                     await mp.screenshot(path=f'{SHOTS}/mains-phone.png', full_page=True)
@@ -483,7 +483,7 @@ async def main():
                 g1d = _g.glob(os.path.join(SITE, 'appsc-group-1', 'data', '*.js'))
                 if 'appsc-group-1' not in bk['exams'] and any(f'"{bk["id"]}"' in open(f, encoding='utf-8').read() for f in g1d): errors.append(f'book {bk["id"]} shown on the Group 1 page')
                 if bk.get('free') and not os.path.isfile(os.path.join(SITE, bk['free'].lstrip('/'))): errors.append(f'free sample {bk["free"]} not published')
-            # study books: part of the PYQ Pass, locked without it, a decrypted PDF download with it
+            # study books: part of the All-in-One Pass, locked without it, a decrypted PDF download with it
             for passes, paid in [({}, False), (PAID, True)]:
                 bp = await b.new_page(passes=passes, viewport={'width': 1280, 'height': 900}, accept_downloads=True)
                 await bp.add_init_script(REGISTERED); bp.on('pageerror', lambda e: errors.append(f'books pageerror: {e}'))
@@ -499,7 +499,7 @@ async def main():
                         head = open(fpath, 'rb').read(5)
                         if head != b'%PDF-' or not d.suggested_filename.endswith('.pdf'): errors.append(f'books: the download is not a PDF ({d.suggested_filename}, {head!r})')
                 await bp.close()
-            # exam-booklet PDFs of the previous papers (PYQ Pass only): a button per paper, a real PDF after decryption
+            # exam-booklet PDFs of the previous papers (All-in-One Pass only): a button per paper, a real PDF after decryption
             for eid, ex in BOOKLETS.items():
                 edir = EXAM_DIR.get(eid, eid)
                 pyq = open(os.path.join(SITE, edir, 'pyqs.html'), encoding='utf-8').read()

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exam-booklet PDFs of the previous papers, for PYQ Pass holders only (Anil, 27 Oct 2026).
+"""Exam-booklet PDFs of the previous papers, for All-in-One Pass holders only (Anil, 27 Oct 2026).
 
 Each paper is typeset like the board's own question booklet: a header box (board, exam, date, booklet series, time,
 questions, marks), questions in two columns (English, then Telugu/Hindi as printed), the Learn with Anil logo,
@@ -8,7 +8,7 @@ The official answer key and the answers with explanations follow the questions.
 
 The PDFs are paid content: they are written to the private folder BOOKS_PRIV/booklets (never committed), then
 encrypted exactly like the study books (AES-256-GCM, additional data = key id "bk-<exam id>-<paper id>") into
-src/books/. The keys go in the private sheet's keys tab; the payments script gives a key only to a valid PYQ Pass.
+src/books/. The keys go in the private sheet's keys tab; the payments script gives a key only to a valid All-in-One Pass.
 
     python3 tools/booklets.py [exam id ...]     # default: ts-police-si ts-police-constable
 Writes src/books/booklets.json (exam -> paper -> file, download name, pages) and BOOKS_PRIV/booklet-keys-tab.tsv.

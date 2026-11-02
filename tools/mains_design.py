@@ -122,7 +122,7 @@ CSS = ('a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;borde
        '.ma{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:16px 0}''@media (max-width:640px){.mq{padding:16px 14px;border-left-width:5px}.ma{padding:16px 14px}.ma .ah{font-size:17.5px}}'
        f'.ma .ah{{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 10px;font:700 19px/1.25 {HEAD}}}'
        f'.ma .ah .free{{font:700 13.5px/1.3 {SANS};background:var(--good-soft);color:var(--good);border-radius:999px;padding:3px 10px}}'
-       # paid answer in the page (for Google), shown as a faded preview until the PYQ Pass opens it (tools/g1mains.py)
+       # paid answer in the page (for Google), shown as a faded preview until the All-in-One Pass opens it (tools/g1mains.py)
        '.mans.pw{max-height:170px;overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(#000 35%,transparent);mask-image:linear-gradient(#000 35%,transparent);user-select:none;-webkit-user-select:none;pointer-events:none}'
        '.pn{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;margin:20px 0}'
        '.pn a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;text-decoration:none;color:var(--ink)}.pn a:hover{border-color:var(--pc)}'
