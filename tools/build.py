@@ -3215,14 +3215,16 @@ def practice_links(conf, papers, questions):
 NOTIFS = {
   'appsc-group-2-notification-2026.html': dict(
     exam='appsc-group-2', crumb='Group 2 Notification 2026',
-    title='APPSC Group 2 Notification 2026 – 686 Posts, Apply 10–30 November, Exam Pattern & Previous Papers | Learn with Anil',
-    desc='APPSC Group 2 Notification 2026 (No. 37/2026): 686 posts including 200 Deputy Tahsildar and 176 Deputy MPDO posts, online applications '
-         'from 10 to 30 November 2026, the screening test and mains pattern, and APPSC Group 2 previous year question papers with answers.',
+    title='APPSC Group 2 Notification 2026 – 686 Posts, Apply Online 10–30 November, Salary, Eligibility, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='APPSC Group 2 Notification 2026 (No. 37/2026): 686 posts including 200 Deputy Tahsildar and 176 Deputy MPDO posts, the pay scale of every post, '
+         'how to apply online (OTPR, 10 to 30 November 2026), eligibility, the screening test and mains pattern, the 2023 cut-off facts and Group 2 previous year question papers with answers.',
     h1='APPSC Group 2 Notification 2026: 686 posts',
     lede='APPSC issued a brief notification (No. 37/2026) on 13 October 2026 for 686 Group-II posts, Executive and Non-Executive. '
          'Online applications run from 10 to 30 November 2026. Here are the posts, the dates, the exam pattern, and the Group 2 previous papers to start practising now.',
     te='APPSC గ్రూప్ 2 నోటిఫికేషన్ 2026 (నం. 37/2026): 686 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు నవంబర్ 10 నుంచి 30 వరకు. పరీక్ష విధానం, పాత ప్రశ్నాపత్రాలు సమాధానాలతో.',
     pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_II_372026.pdf', pdfname='APPSC brief notification No. 37/2026, dated 13 October 2026',
+    more_src=[('https://psc.ap.gov.in/Documents/NotificationDocuments/SelectionNotification_112023_28012026.pdf', 'APPSC final selection notification for Group-II (No. 11/2023), 28 January 2026')],
+    related=['appsc-group-2-syllabus-2026.html', 'appsc-group-1-notification-2026.html', 'appsc-group-1-syllabus-2026.html'],
     sections=[
       ('Important dates', 'table', [
         ('Brief notification (No. 37/2026)', '13 October 2026'),
@@ -3230,15 +3232,27 @@ NOTIFS = {
         ('Online applications', '10 November to 30 November 2026 (till 11:59 pm)'),
         ('Screening test (prelims)', 'Date not announced yet'),
         ('Official website', 'psc.ap.gov.in')]),
-      ('Posts and vacancies', 'table+', (['Post', 'Vacancies'], [
-        ('Municipal Commissioner Grade-III', 6), ('Sub-Registrar Grade-II', 7), ('Deputy Tahsildar', 200),
-        ('Goods and Services Tax Officer (erstwhile ACTO)', 40), ('Assistant Registrar of Co-operative Societies', 10),
-        ('Deputy Mandal Parishad Development Officer', 176), ('Prohibition and Excise Sub-Inspector', 29),
-        ('Assistant Section Officer (GAD)', 71), ('Assistant Section Officer (Finance)', 5), ('Assistant Section Officer (Law)', 4),
-        ('Senior Accountant (HODs)', 90), ('Junior Accountant (HODs)', 48), ('Total', 686)])),
+      ('Posts, vacancies and salary', 'table+', (['Post', 'Vacancies', 'Pay scale (₹ per month)'], [
+        ('Municipal Commissioner Grade-III', 6, '45,830 – 1,30,580'), ('Sub-Registrar Grade-II', 7, '44,570 – 1,27,480'), ('Deputy Tahsildar', 200, '44,570 – 1,27,480'),
+        ('Goods and Services Tax Officer (erstwhile ACTO)', 40, '45,830 – 1,30,580'), ('Assistant Registrar of Co-operative Societies', 10, '45,830 – 1,30,580'),
+        ('Deputy Mandal Parishad Development Officer', 176, '45,830 – 1,30,580'), ('Prohibition and Excise Sub-Inspector', 29, '40,970 – 1,24,380'),
+        ('Assistant Section Officer (GAD)', 71, '40,970 – 1,24,380'), ('Assistant Section Officer (Finance)', 5, '40,970 – 1,24,380'), ('Assistant Section Officer (Law)', 4, '40,970 – 1,24,380'),
+        ('Senior Accountant (HODs)', 90, '34,580 – 1,07,210'), ('Junior Accountant (HODs)', 48, '25,220 – 80,910'), ('Total', 686, '')])),
+      ('', 'note', 'Executive posts (Municipal Commissioner, Sub-Registrar, Deputy Tahsildar, GST Officer, Assistant Registrar, Deputy MPDO and Excise SI) and the Assistant Section Officer posts '
+                   'start between ₹40,970 and ₹45,830 a month in the pay scale, before allowances.'),
       ('Who can apply', 'p', 'A bachelor\'s degree from a recognised university. Some posts need a particular degree: Assistant Section Officer (Finance) a degree in '
                           'mathematics, economics or commerce; Assistant Section Officer (Law) a law degree; Senior and Junior Accountant a degree in commerce, '
                           'economics or mathematics plus a computer qualification. Age limits, relaxations and the fee are given in the detailed notification.'),
+      ('How to apply online (10 to 30 November 2026)', 'steps', [
+        'Register once for the One Time Profile Registration (OTPR) on psc.ap.gov.in, or update your old OTPR: your details, education, community and photo. Note your OTPR ID (AP followed by 10 digits).',
+        'If you have never set a password, create one on the APPSC candidate login page with your OTPR ID and mobile number.',
+        'Log in during the application window, choose Notification No. 37/2026 (Group-II Services) and fill in the form; pick your exam centre.',
+        'Pay the fee online (net banking, debit or credit card, UPI), submit, and save the PDF of your application.',
+        'Do not wait for 30 November: near the Group 1 last date in October the website slowed down and many candidates could not pay. Apply in the first week.']),
+      ('Fee and age limit: what the last Group 2 notification said', 'list', [
+        'Fee in 2023 (Notification 11/2023): ₹250 application processing fee + ₹80 examination fee. SC, ST, BC, PwBD and ex-service candidates, white-card families and unemployed youth of AP paid only the ₹250.',
+        'Age in 2023: 18 to 42 years for most posts (Excise Sub-Inspector 18 to 30), with 5 years\' relaxation for SC, ST and BC and 10 for persons with disabilities.',
+        'AP has since raised the upper age limit for non-uniformed posts from 42 to 44 (until 30 September 2027); Group 1 2026 uses 44. Whether Group 2 does is confirmed only in the detailed notification due by 10 November 2026.']),
       ('Exam pattern', 'table+', (['Stage', 'What it covers', 'Questions · marks · time'], [
         ('Screening test (objective, OMR)', 'Indian History, Geography, Indian Society, Current Affairs and Mental Ability, 30 marks each', '150 · 150 · 150 min'),
         ('Mains Paper I (objective)', 'Social and cultural history of Andhra Pradesh; general overview of the Indian Constitution', '150 · 150 · 150 min'),
@@ -3246,6 +3260,12 @@ NOTIFS = {
         ('Computer Proficiency Test', 'Qualifying test for the posts that need it, then document verification', '—')])),
       ('', 'note', 'The screening test only shortlists candidates for the Mains; selection is on the Mains marks. The pattern is the same as in the previous '
                    'Group-II recruitment (Notification 11/2023), so the 2024 Screening Test and the 2025 Mains papers below are the closest practice you can get.'),
+      ('Cut-off marks', 'p', 'APPSC has not published category-wise cut-off marks for the last Group 2 recruitment (Notification 11/2023). The screening test is only a filter: '
+                             'about 92,250 candidates qualified for the Mains from the screening test of 25 February 2024, for 905 posts, and the final selection was made on the Mains marks '
+                             '(final selection list on 28 January 2026). Figures you see online as "Group 2 cut-off" are estimates by coaching sites, not APPSC\'s.'),
+      ('How long the last Group 2 took', 'table', [
+        ('Notification 11/2023', 'December 2023, 897 posts (later 905)'), ('Screening test', '25 February 2024'), ('Screening result', '10 April 2024'),
+        ('Mains', '23 February 2025 (after two postponements)'), ('Final selection list', '28 January 2026')]),
     ]),
   'appsc-group-1-notification-2026.html': dict(
     exam='appsc-group-1', crumb='Group 1 Notification 2026',
@@ -3260,7 +3280,9 @@ NOTIFS = {
          'the posts, the exam pattern and the Group 1 previous papers to practise.',
     te='APPSC గ్రూప్ 1 (నోటిఫికేషన్ నం. 07/2026, 166 పోస్టులు) దరఖాస్తు గడువు 2026 నవంబర్ 9 రాత్రి 11:59 వరకు పొడిగించారు. ఇక పొడిగింపు ఉండదు; స్క్రీనింగ్ టెస్ట్ తేదీలో మార్పు లేదు. చివరి రోజు వరకు ఆగకుండా ముందే దరఖాస్తు చేయండి.',
     pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_I_07_2026.pdf', pdfname='APPSC Notification No. 07/2026 (Group-I Services)',
-    more_src=[('https://psc.ap.gov.in/Documents/NotificationDocuments/Extension_Webnote_27102026.pdf', 'APPSC web note on the extension of the last date, 27 October 2026')],
+    more_src=[('https://psc.ap.gov.in/Documents/NotificationDocuments/Extension_Webnote_27102026.pdf', 'APPSC web note on the extension of the last date, 27 October 2026'),
+              ('https://images.assettype.com/edexlive/2026-09-15/0j3savzw/Group_I_072026.pdf', 'APPSC brief notification No. 07/2026 of 15 September 2026 (posts and pay scales)')],
+    related=['appsc-group-1-syllabus-2026.html', 'appsc-group-2-notification-2026.html'],
     sections=[
       ('Last date extended to 9 November 2026', 'p',
        'On 27 October 2026, the last day, the APPSC website was very slow, the OTPR password page kept hanging and many fee payments failed. The same day APPSC issued a web note: '
@@ -3291,10 +3313,25 @@ NOTIFS = {
         ('Screening test (prelims)', 'Tentatively 24 January 2027 (unchanged by the extension)'),
         ('Mains and interview', 'To be announced'),
         ('Official website', 'psc.ap.gov.in')]),
-      ('Posts', 'list', ['Deputy Collector (A.P. Civil Service, Executive Branch)', 'Assistant Commissioner of State Tax', 'Deputy Superintendent of Police (Civil)',
-                         'Deputy Superintendent of Jails (Men)', 'Divisional / District Fire Officer', 'Regional Transport Officer', 'District Tribal Welfare Officer',
-                         'Deputy Registrar of Co-operative Societies', 'Municipal Commissioner Grade-II', 'Assistant Treasury Officer / Assistant Accounts Officer',
-                         'District Employment Officer', 'Divisional Development Officer', 'Assistant Audit Officer']),
+      # Corrected 3 Nov 2026: the post list is from the brief notification of 15 Sep 2026 (163 posts, with pay scales); the detailed notification of
+      # 6 Oct 2026 added one post each to Deputy Collector, Deputy Registrar and Assistant Audit Officer (166). The old list wrongly had Jails and Fire posts.
+      ('Posts, vacancies and salary', 'table+', (['Post', 'Vacancies', 'Pay scale (₹ per month)'], [
+        ('Deputy Collector (A.P. Civil Service, Executive Branch)', 12, '61,960 – 1,51,370'),
+        ('Assistant Commissioner of State Tax', 14, '61,960 – 1,51,370'),
+        ('Deputy Superintendent of Police (Civil), Category-II', 36, '61,960 – 1,51,370'),
+        ('Deputy Superintendent of Police (Communications)', 3, '61,960 – 1,51,370'),
+        ('District Educational Officer', 14, '61,960 – 1,51,370'),
+        ('Regional Transport Officer', 3, '57,100 – 1,47,760'),
+        ('District Tribal Welfare Officer', 1, '57,100 – 1,47,760'),
+        ('Deputy Registrar (Co-operative Service)', 16, '57,100 – 1,47,760'),
+        ('Municipal Commissioner Grade-II', 12, '54,060 – 1,40,540'),
+        ('Assistant Treasury Officer / Assistant Accounts Officer', 2, '54,060 – 1,40,540'),
+        ('District Employment Officer', 3, '54,060 – 1,40,540'),
+        ('Assistant Audit Officer (State Audit Service)', 15, '54,060 – 1,40,540'),
+        ('Divisional Development Officer (Panchayat Raj)', 35, '65,360 – 1,54,980'),
+        ('Total', 166, '')])),
+      ('', 'note', 'The brief notification (15 September 2026) listed 163 posts; the detailed notification (6 October 2026) raised Deputy Collector, Deputy Registrar and Assistant Audit Officer by one each, to 166. '
+                   'DSP (Communications) needs a B.E./B.Tech in Electronics & Communication, Electronics & Telecommunication or Radio Engineering; the DSP posts have physical standards and an age limit of 30.'),
       ('Who can apply', 'p', 'A bachelor\'s degree from a recognised university (a few posts ask for a particular degree). Most posts take candidates aged 18 to 44, '
                           'reckoned on 1 July 2026, with the usual relaxations for reserved categories; the police posts have their own age limits. '
                           'Fee: ₹250 application fee plus ₹120 examination fee; the examination fee is waived for SC, ST, BC, PwBD and ex-service candidates and some others.'),
@@ -3912,6 +3949,117 @@ def g2_syllabus_notif():
 # Paper II in the chapters and sections of his Hindu Philosophy & Temple System book (src/appsc-eo-micro-syllabus.json: 10
 # chapters, 81 sections and their sub-headings), Paper I by the site's subject topics; every part shows how many questions
 # APPSC asked from it, counted from the EO papers on the site at build time (2022 Screening, 2023 Mains, 2026).
+# APPSC Group-I syllabus page (Anil, 3 Nov 2026). Section structure and marks: Notification 07/2026 as reported (FJA/Adda247, Oct 2026), the
+# same scheme as APPSC's revised Group-I syllabus of October 2018; units summarised in our words. PYQ counts come from the site's 2019, 2023
+# and 2024 screening papers at build time; the Mains part links to the Mains PYQ pages.
+G1_SYL = [
+  ('Paper I: General Studies', '120 questions · 120 marks · 120 minutes', [
+    ('A. History and Culture', 30, ['ih'], [
+      'Ancient India: Indus Valley, Vedic age and Mahajanapadas, Jainism and Buddhism, the Mauryas, foreign invasions, the Kushans, Satavahanas, Sangam age, Sungas and Guptas',
+      'Early medieval and South India: Kanauj, the Badami and Eastern Chalukyas, Rashtrakutas, Kalyani Chalukyas, Cholas, Hoysalas, Yadavas, Kakatiyas and Reddis',
+      'Delhi Sultanate, Vijayanagara and the Mughals; Bhakti and Sufi movements; administration, society, literature, art and architecture',
+      'European trading companies and their struggle for supremacy (Bengal, Bombay, Madras, Mysore, Andhra, the Nizam); Governors-General and Viceroys',
+      'The revolt of 1857; 19th-century religious and social reform movements; the freedom movement and revolutionaries in India and abroad',
+      'Gandhi, Patel, Subhas Bose and Ambedkar; post-independence consolidation and the reorganisation of states']),
+    ('B. Constitution, Polity, Social Justice and International Relations', 30, ['pol'], [
+      'The Constitution: evolution, features, Preamble, Fundamental Rights and Duties, Directive Principles, amendments and the basic structure',
+      'Union and states; Parliament and state legislatures; issues of the federal structure; devolution of powers and finances to local bodies',
+      'Constitutional authorities; Panchayati Raj; public policy and governance',
+      'Liberalisation, privatisation and globalisation and governance; statutory, regulatory and quasi-judicial bodies',
+      'Rights issues: human rights, women, SC and ST, children',
+      'India\'s foreign policy and international relations; important institutions and agencies; major central and state government schemes']),
+    ('C. Indian and Andhra Pradesh Economy and Planning', 30, ['eco'], [
+      'Features of the Indian economy, NITI Aayog, human development, environment and sustainable development',
+      'National income, demography, poverty and inequality, unemployment, employment and poverty schemes, rural and urban development',
+      'Agriculture, irrigation, land reforms, agricultural credit and MSP, food security; industry and industrial policy, Make in India, SEZs and corridors; energy; trade, balance of payments and the WTO',
+      'RBI and monetary policy, banking reforms and NPAs, markets and SEBI; taxes and GST; Centre-state finances and Finance Commissions; public debt, fiscal policy and the budget',
+      'The Andhra Pradesh economy after 2014: urbanisation, skills and welfare; the AP Reorganisation Act, 2014 and the special-status question']),
+    ('D. Geography', 30, ['geo'], [
+      'General geography: the solar system, the earth\'s motions and interior, the atmosphere, climate change and oceans',
+      'Physical geography of the world, India and AP: earthquakes and landslides, drainage, monsoon, vegetation, parks and sanctuaries, soils, rocks and minerals',
+      'Social geography: population, density, sex ratio, literacy, SC and ST population, urbanisation and migration',
+      'Economic geography: sectors of the economy, basic industries, transport and trade']),
+  ]),
+  ('Paper II: General Aptitude', '120 questions · 120 marks · 120 minutes', [
+    ('A. General Mental Ability, Administrative and Psychological Abilities', 60, ['men', 'apt'], [
+      'Reasoning: logical and analytical reasoning, number series, coding-decoding, relations, Venn diagrams, clocks, calendars and ages',
+      'Arithmetic: number system, ratio and proportion, averages (mean, median, mode), powers and roots, HCF and LCM, percentages, interest, profit and loss, time and work, time and distance',
+      'Mensuration and geometry; basic algebra and simplification; data interpretation, data sufficiency and probability',
+      'Emotional and social intelligence, interpersonal skills, decision making, critical thinking, problem solving and personality']),
+    ('B. Science and Technology', 30, ['sci'], [
+      'Science and technology policy, institutions and Indian scientists',
+      'Information and communication technology, e-governance and cyber security',
+      'Space and defence: ISRO and satellite programmes (communication, IRNSS, remote sensing), DRDO',
+      'Energy: India\'s needs and resources, energy policy, solar, wind and nuclear power',
+      'Environment: biodiversity, climate change, forest and wildlife law, pollution, disaster management; biotechnology, nanotechnology and genetic engineering; health and environment']),
+    ('C. Current Affairs', 30, ['cur'], ['Current events of regional, national and international importance']),
+  ]),
+]
+G1_MAINS = [
+  ('Telugu', 'qualifying', None), ('English', 'qualifying', None),
+  ('Paper I: General Essay', 'three essays, one from each section', '2025-paper-1'),
+  ('Paper II: History, Culture and Geography of India and Andhra Pradesh', '', '2025-paper-2'),
+  ('Paper III: Polity, Constitution, Governance, Law and Ethics', '', '2025-paper-3'),
+  ('Paper IV: Economy and Development of India and Andhra Pradesh', '', '2025-paper-4'),
+  ('Paper V: Science, Technology and Environmental Issues', '', '2025-paper-5'),
+]
+
+
+def g1_syllabus_notif():
+    def sections(conf, papers, questions):
+        subj = {x[0]: x for x in conf['subjects']}
+        cnt, tcnt = {}, {}
+        for q in questions:
+            cnt[q['s']] = cnt.get(q['s'], 0) + 1
+            tcnt[(q['s'], q.get('t'))] = tcnt.get((q['s'], q.get('t')), 0) + 1
+        years = sorted({p['year'] for p in papers if p.get('fmt') == 'mcq'})
+        surl = lambda sid: f'{conf["pb"]}subjects/{conf["slugp"]}-{subj[sid][2]}-pyqs.html'
+        ny = ', '.join(map(str, years[:-1])) + ' and ' + str(years[-1]) if len(years) > 1 else str(years[0])
+        secs = [('Exam pattern', 'table+', (['Stage', 'Papers', 'Marks · time'], [
+                    ('Screening test (objective, OMR)', 'Paper I General Studies; Paper II General Aptitude', '120 + 120 marks · 120 min each'),
+                    ('Mains (descriptive)', 'Telugu and English (qualifying); Papers I–V', '150 marks each, 3 hours each (Papers I–V: 750)'),
+                    ('Interview', 'Personality test', '75 marks')])),
+                ('', 'note', f'In the screening test one-third of a mark is cut for each wrong answer, and its marks only decide who goes to the Mains (about 50 candidates per post). '
+                             f'Final merit is out of 825 (Mains 750 + interview 75). The numbers below are the questions APPSC asked from each part in the {ny} screening tests on this site.'),
+                ('', 'html', MSY_STYLE)]
+        for title, meta, parts in G1_SYL:
+            n = sum(cnt.get(sid, 0) for _, _, sids, _ in parts for sid in sids)
+            h = [f'<div class="msy"><h2>{esc(title)}</h2><p class="sm">{esc(meta)} · {n} previous questions on this site</p>']
+            for name, marks, sids, units in parts:
+                k = sum(cnt.get(sid, 0) for sid in sids)
+                tops = ' · '.join(f'{esc(t)} {tcnt[(sid, t)]}' for sid in sids for t in subj[sid][3] if tcnt.get((sid, t)))
+                links = ', '.join(f'<a href="{surl(sid)}">{esc(subj[sid][1])} questions</a>' for sid in sids if cnt.get(sid))
+                items = ''.join(f'<li>{esc(u)}</li>' for u in units)
+                h.append(f'<h3>{esc(name)} <span class="sub">({marks} marks)</span></h3><p class="sm">{k} PYQs{": " + tops if tops else ""}'
+                         f'{" · Practise: " + links if links else ""}</p><ol>{items}</ol>')
+            secs.append(('', 'html', ''.join(h) + '</div>'))
+        mp = f'{conf["pb"]}mains-pyqs/'
+        rows = ''.join(f'<li><b>{esc(t)}</b>{" (" + esc(x) + ")" if x else ""}'
+                       + (f' · <a href="{mp}{slug}.html">2025 questions with model answers</a>' if slug else '') + '</li>' for t, x, slug in G1_MAINS)
+        secs.append(('Mains syllabus at a glance', 'html',
+                     f'<p>Seven descriptive papers of 150 marks and 3 hours each. Telugu and English (Class X standard) only have to be passed; Papers I to V count for the merit.</p>'
+                     f'<ul>{rows}</ul><p><a href="{mp}">Every Group 1 Mains question of 2020, 2023 and 2025, paper by paper and topic by topic, with model answers</a></p>'))
+        secs.append(('How to use this syllabus', 'list', [
+            'Paper I sections carry 30 marks each, so no section can be skipped; start with the topics that have the most previous questions above.',
+            'Half of Paper II (60 marks) is mental ability and administrative and psychological abilities: practise it daily with a timer, it is the easiest place to gain marks.',
+            'Science and technology and current affairs move with the news: read the last 12 months of AP and national developments with the static topics.',
+            'Take the 2024, 2023 and 2019 papers as full timed tests (120 questions in 120 minutes) with the one-third negative mark in mind.']))
+        return secs
+
+    return dict(
+        exam='appsc-group-1', crumb='Group 1 Syllabus 2026',
+        title='APPSC Group 1 Syllabus 2026 – Prelims (Screening) Paper I & II Topic-wise with PYQ Counts, Mains Papers I–V | Learn with Anil',
+        desc='APPSC Group 1 syllabus 2026 (Notification 07/2026), topic by topic: Screening Test Paper I General Studies (history, polity, economy, geography, 30 marks each) and '
+             'Paper II General Aptitude (mental ability 60, science and technology 30, current affairs 30), how many previous questions APPSC asked from each topic, and the Mains papers.',
+        h1='APPSC Group 1 syllabus 2026: topic-wise, with previous-question counts',
+        lede='The APPSC Group-I syllabus for Notification 07/2026, part by part: the two screening-test papers of 120 marks each and the seven Mains papers. Each part of the screening test '
+             'shows how many questions APPSC actually asked from it in the 2019, 2023 and 2024 papers, so you know where the marks are. The screening test is tentatively on 24 January 2027.',
+        te='ఏపీపీఎస్సీ గ్రూప్ 1 సిలబస్ 2026: ప్రిలిమ్స్ పేపర్ 1, 2 టాపిక్‌ల వారీగా — ప్రతి భాగం నుంచి గత పరీక్షల్లో ఎన్ని ప్రశ్నలు వచ్చాయో, మెయిన్స్ పేపర్లు.',
+        pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_I_07_2026.pdf', pdfname='APPSC Notification No. 07/2026 (Group-I Services), scheme and syllabus',
+        related=['appsc-group-1-notification-2026.html', 'appsc-group-2-syllabus-2026.html'],
+        sections=[], sections_fn=sections)
+
+
 def eo_syllabus_notif():
     path = os.path.join(SRC, 'appsc-eo-micro-syllabus.json')
     if not os.path.exists(path): return None
@@ -3985,12 +4133,12 @@ def notif_page(loaded, rel):
     conf, papers, questions = hit if hit else (None, [], [])
     board, site = N.get('board', 'APPSC'), N.get('site', 'psc.ap.gov.in')   # who issued it, and their website (for the source note)
     can = f'{SITE_URL}/{rel}'
-    body = [f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>']
+    body = ['<style>main{overflow-wrap:break-word}main li,main td{overflow-wrap:anywhere}</style>', f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>']
     if conf: body.append(f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>')
     for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
         if kind == 'table': body.append(facts_table(data))
-        elif kind == 'table+': body.append(('<div style="overflow-x:auto">' + facts_table(data[1], data[0]) + '</div>') if len(data[0]) > 3 else facts_table(data[1], data[0]))
+        elif kind == 'table+': body.append('<div style="overflow-x:auto">' + facts_table(data[1], data[0]) + '</div>')
         elif kind == 'list': body.append('<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in data) + '</ul>')
         elif kind == 'steps': body.append('<ol>' + ''.join(f'<li>{esc(x)}</li>' for x in data) + '</ol>')
         elif kind == 'note': body.append(f'<p class="note">{esc(data)}</p>')
@@ -4079,6 +4227,7 @@ PAY = dict(
 PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
 _g2s = g2_syllabus_notif()   # the APPSC Group 2 syllabus page (needs PAY, so it is added here)
 if _g2s: NOTIFS['appsc-group-2-syllabus-2026.html'] = _g2s
+NOTIFS['appsc-group-1-syllabus-2026.html'] = g1_syllabus_notif()   # the APPSC Group 1 syllabus page (3 Nov 2026)
 _eos = eo_syllabus_notif()   # the APPSC EO Grade-III syllabus page
 if _eos: NOTIFS['appsc-eo-grade-3-syllabus-2026.html'] = _eos
 # Anil, 26 Oct 2026: "one ₹45 = everything". The ₹45 All-in-One Pass opens every previous paper, every mock test series
