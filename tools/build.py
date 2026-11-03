@@ -2336,7 +2336,7 @@ ol.clist li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;ba
 """
 
 
-def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, conf=None, ename=None, at_root=False, foot_text=None):
+def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, conf=None, ename=None, at_root=False, foot_text=None, head_all=False):
     ename = ename or (conf['name'] if conf else 'APPSC Group-II')
     rootup = '' if at_root else '../' * (rel_depth + (1 if conf and conf.get('dir') else 0))
     up = '../' * rel_depth
@@ -2377,7 +2377,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
-<header><div class="wrap"><a href="{pb if conf else '/'}">Learn with Anil · {nw(ename)} PYQs</a><span class="hr"><a href="{(conf or {}).get('nav', ('', pb + 'practice/'))[1]}">{(conf or {}).get('nav', ('Practise online →', ''))[0]}</a><a class="hsub" id="hsub" href="{pb}?buy=pyq" title="One ₹{PAY["pyq_price"]} payment opens every PYQ, mock test and book on the site for 12 months">Subscribe ₹{PAY["pyq_price"]}</a></span></div></header>
+<header><div class="wrap"><a href="{pb if conf else '/'}">Learn with Anil · {nw(ename) + ' PYQs' if not head_all else 'PYQs for every exam'}</a><span class="hr"><a href="{'/' if head_all else (conf or {}).get('nav', ('', pb + 'practice/'))[1]}">{'All exams →' if head_all else (conf or {}).get('nav', ('Practise online →', ''))[0]}</a><a class="hsub" id="hsub" href="{pb}?buy=pyq" title="One ₹{PAY["pyq_price"]} payment opens every PYQ, mock test and book on the site for 12 months">Subscribe ₹{PAY["pyq_price"]}</a></span></div></header>
 <script>try{{var P=JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all||{{}};if(P.paid&&P.pyq&&new Date(P.pyq+"T23:59:59+05:30")>=new Date())document.getElementById("hsub").hidden=true;}}catch(e){{}}</script>
 <main class="wrap">
 <h1>{nw(h1)}</h1>
@@ -3547,6 +3547,308 @@ NOTIFS = {
 }
 
 
+# ---------- exam-date, hall-ticket and answer-key pages (Anil, 3 Nov 2026: "like the Group 1 last-date page, what else can bring traffic") ----------
+# Facts from TGPRB's notifications of 29 July 2026 (SI Rc.No.225, PC Rc.No.189), its press notes of 8 and 17 September 2026, and its
+# 2022 press notes (hall tickets 29 Jul / 17 Aug 2022, keys 14 Aug 2022, results 21 Oct 2022). Research notes: claude/ts-police-exam-pages.md.
+TGPRB = 'https://www.tgprb.in/SI_PC_2026/'
+TS_SRC_1709 = (TGPRB + 'Press%20Note%20dated%2017-09-2026.pdf', 'TGPRB press note of 17 September 2026 (tentative exam dates)')
+TS_SRC_0809 = (TGPRB + 'Press%20Note%20dated%2008-09-2026.pdf', 'TGPRB press note of 8 September 2026')
+TS_SRC_RES22 = ('https://tgprb.in/Pdfs/PressNoteDatedon2110022.pdf', 'TSLPRB press note of 21 October 2022 (2022 prelims results)')
+
+
+def score_calc(pid, total, marks):
+    """A small score calculator for a 1-mark objective paper with a 0.2 negative mark; marks = [(label, qualifying mark)]."""
+    opts = ''.join(f'<option value="{m}">{esc(l)}</option>' for l, m in marks)
+    return (f'<div class="calc" id="{pid}" style="border:1px solid #d0d7e2;border-radius:12px;padding:14px 16px;margin:10px 0 14px">'
+            f'<p style="margin:0 0 10px">Count the questions you got right and wrong with the key (out of {total}). Each right answer gets 1 mark, each wrong answer loses 0.2 marks, and an unanswered question gets 0.</p>'
+            f'<div style="display:flex;flex-wrap:wrap;gap:10px 16px;align-items:flex-end">'
+            f'<label style="display:flex;flex-direction:column;font-weight:600">Right<input type="number" min="0" max="{total}" inputmode="numeric" style="width:110px;padding:8px;font-size:16px"></label>'
+            f'<label style="display:flex;flex-direction:column;font-weight:600">Wrong<input type="number" min="0" max="{total}" inputmode="numeric" style="width:110px;padding:8px;font-size:16px"></label>'
+            f'<label style="display:flex;flex-direction:column;font-weight:600">Category<select style="padding:8px;font-size:16px">{opts}</select></label></div>'
+            f'<p class="out" aria-live="polite" style="margin:12px 0 0;font-weight:700"></p></div>'
+            f'<script>(function(){{var b=document.getElementById("{pid}"),i=b.querySelectorAll("input"),c=b.querySelector("select"),o=b.querySelector(".out");'
+            f'function f(){{var R=+i[0].value||0,W=+i[1].value||0;if(!i[0].value&&!i[1].value){{o.textContent="";return}}'
+            f'if(R+W>{total}||R<0||W<0){{o.textContent="Right + wrong cannot be more than {total}.";return}}'
+            f'var s=Math.round((R-0.2*W)*100)/100,q=+c.value;o.textContent="Your score: "+s+" / {total}. Qualifying mark for your category: "+q+". "+(s>=q?"✓ You clear it (if the final key does not change).":"✗ Below the qualifying mark.")}}'
+            f'i[0].addEventListener("input",f);i[1].addEventListener("input",f);c.addEventListener("change",f)}})();</script>')
+
+
+TS_RULES = [
+    'Print the hall ticket on A4 paper (both sides if you can) and paste the same passport photo you uploaded with the application in the box on page 1, with gum, not pins or staples. A hall ticket without the photo is not accepted.',
+    'Reach early: candidates are let in one hour before the start, and no one is admitted even one minute after the exam begins.',
+    'Carry only the hall ticket and black or blue ballpoint pens.',
+    'Not allowed: mobile phones, smart watches and any wrist watch, calculators, Bluetooth devices, pen drives, wallets, purses, notes or loose papers. There is no cloakroom, so leave bags at home; women are advised not to wear jewellery.',
+    'A photo and fingerprints are taken in the hall: avoid mehendi or tattoos on the hands.',
+    'Write nothing on the OMR sheet except the answers and the details asked for: symbols, prayers or marks count as malpractice.',
+    'The question booklet is in English–Telugu or English–Urdu; where the two differ, the English version is final.',
+    'Keep the hall ticket safely until the whole recruitment is over.',
+]
+TS_QUAL = [('OC (including EWS): 30%', 60), ('BC: 25%', 50), ('SC, ST, Ex-Servicemen: 20%', 40)]
+
+NOTIFS.update({
+  'ts-police-si-exam-date-hall-ticket-2026.html': dict(
+    exam='ts-police-si', board='TGPRB', site='tgprb.in', crumb='SI Exam Date & Hall Ticket 2026',
+    title='TS Police SI Exam Date 2026 (29 November) & Hall Ticket – Download, Exam Pattern, Qualifying Marks, Salary | Learn with Anil',
+    desc='TS Police SI Preliminary Written Test 2026: Sunday 29 November 2026, forenoon (TGPRB, tentative). When and how to download the SI hall ticket, '
+         'exam-day rules, the 200-mark pattern with 0.2 negative marking, qualifying marks (30/25/20%), 275 posts, salary ₹42,300–1,15,270, PMT/PET and previous papers.',
+    h1='TS Police SI exam date 2026: Sunday, 29 November',
+    lede='The Telangana State Level Police Recruitment Board (TGPRB) will hold the Preliminary Written Test for SCT SI (Civil) and equivalent posts '
+         '(Notification Rc.No.225/2026, 275 posts) on Sunday, 29 November 2026, in the forenoon, at the 10 erstwhile district headquarters. The date is marked tentative '
+         '(press note of 17 September 2026); about 1.6 lakh applications were filed. Below: the hall ticket, exam-day rules, the pattern and qualifying marks, the posts, the salary and the physical tests.',
+    te='టీఎస్ పోలీస్ ఎస్ఐ ప్రిలిమినరీ రాత పరీక్ష 2026: ఆదివారం, 29 నవంబర్ 2026 ఉదయం (తాత్కాలిక తేదీ). హాల్ టికెట్ డౌన్‌లోడ్, పరీక్ష రోజు నియమాలు, పరీక్ష విధానం, అర్హత మార్కులు, జీతం, పాత ప్రశ్నాపత్రాలు.',
+    pdf=TGPRB + 'SI%20(Civil%20et%20al)%202026%20Notification%20dated%2029-07-2026.pdf',
+    pdfname='TGPRB Notification Rc.No.225/Rect./Rect-1/2026 (SCT SI Civil and equivalent posts), dated 29 July 2026',
+    more_src=[TS_SRC_1709, TS_SRC_0809, ('https://tgprb.in/Pdfs/PressNote29072022.pdf', 'TSLPRB hall-ticket press note of 29 July 2022 (exam-day instructions)'), TS_SRC_RES22],
+    related=['ts-police-si-answer-key-2026.html', 'ts-police-constable-exam-date-hall-ticket-2026.html', 'ts-police-constable-answer-key-2026.html'],
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification (Rc.No.225/2026)', '29 July 2026'),
+        ('Online applications', '19 August to 16 September 2026 (closed)'),
+        ('Preliminary Written Test', 'Sunday, 29 November 2026, forenoon (tentative)'),
+        ('Hall ticket', 'Date not announced yet. In 2022 the window opened 8 days before the exam, so expect it around 21 November 2026'),
+        ('Exam centres', 'The 10 erstwhile district headquarters of Telangana'),
+        ('Official website', 'www.tgprb.in')]),
+      ('How to download the hall ticket', 'steps', [
+        'Go to www.tgprb.in and open the hall-ticket link (it appears only when TGPRB opens the download window).',
+        'Log in to your candidate account with the details you used to apply (in 2022: your registered mobile number and password).',
+        'Download the hall ticket and print it on A4 paper, preferably on both sides, so the ticket and the instructions fit on one sheet.',
+        'Paste the passport photo you uploaded with the application in the box on page 1, using gum.',
+        'Check your name, photo, exam centre and timing; visit the centre a day before the exam.']),
+      ('', 'note', 'In 2022 the SI hall tickets could be downloaded from 8 am on 30 July to midnight on 5 August for the exam on 7 August: the window closed two days before the exam. '
+                   'Download yours as soon as it opens. The 2022 exam ran from 10 am to 1 pm; TGPRB has not announced the 2026 timing yet.'),
+      ("Exam-day rules (TGPRB's hall-ticket instructions)", 'list', TS_RULES),
+      ('Exam pattern', 'table+', (['Part', 'Subjects', 'Questions · marks'], [
+        ('Part A', 'Arithmetic and Test of Reasoning / Mental Ability', '100 · 100'),
+        ('Part B', 'General Studies', '100 · 100'),
+        ('Total', 'One objective paper (OMR) of 3 hours, in English–Telugu or English–Urdu', '200 · 200')])),
+      ('', 'note', 'Negative marking: 20% of a question\'s mark (0.2 of a mark) is deducted for each wrong answer; an unanswered question gets zero. '
+                   'The prelims only qualifies you for the physical tests: its marks do not count in the final merit.'),
+      ('Qualifying marks', 'table+', (['Category', 'Minimum', 'Out of 200'], [
+        ('OC (including EWS)', '30%', 60), ('BC', '25%', 50), ('SC, ST and Ex-Servicemen', '20%', 40)])),
+      ('', 'note', 'In 2022, 1,05,603 of the 2,25,668 candidates evaluated (46.8%) cleared the SI prelims. The average score was 47.25 and the highest 133 out of 200 (TSLPRB, 21 October 2022).'),
+      ('Posts and vacancies', 'table+', (['Post', 'Vacancies'], [
+        ('SCT Sub-Inspector of Police (Civil)', 148), ('SCT Reserve SI (AR)', 14), ('SCT Reserve SI (SAR CPL), men', 3), ('SCT Reserve SI (TGSP), men', 12),
+        ('Sub-Inspector, Telangana Special Protection Force', 44), ('Station Fire Officer', 39), ('Deputy Jailor (men)', 14), ('Deputy Jailor (women)', 1), ('Total', 275)])),
+      ('Salary', 'table+', (['Post', 'Pay scale (per month)'], [
+        ('SCT SI (Civil); SI, Special Protection Force', '₹42,300 – ₹1,15,270'),
+        ('Station Fire Officer; Deputy Jailor', '₹38,890 – ₹1,12,510')])),
+      ('', 'note', 'TGPRB puts the starting annual pay of an SI (Police / SPF) at about ₹7.34 lakh to ₹8.0 lakh including HRA (press note of 8 September 2026). '
+                   'SCT means Stipendiary Cadet Trainee: a stipend is paid during training.'),
+      ('After the prelims: physical tests and the final exam', 'list', [
+        'Physical Measurement Test: height at least 167.6 cm for men and 152.5 cm for women (160 cm and 150 cm for ST candidates of the notified agency areas). There is no chest measurement.',
+        'Physical Efficiency Test: a 1,600 m run in 7 min 15 s for men (9 min 30 s for ex-servicemen) or 800 m in 5 min 20 s for women; the long jump (4 m men, 2.5 m women) and the shot put (6 m men, 4 m women) are qualifying.',
+        'Final Written Examination: four papers of 3 hours. Paper I English and Paper II Telugu or Urdu are qualifying; Paper III Arithmetic & Reasoning and Paper IV General Studies (200 marks each for SI Civil) decide the merit. '
+        'You need 40% (OC, EWS), 35% (BC) or 30% (SC, ST, Ex-Servicemen) in every paper.']),
+    ]),
+  'ts-police-si-answer-key-2026.html': dict(
+    exam='ts-police-si', board='TGPRB', site='tgprb.in', crumb='SI Answer Key 2026',
+    title='TS Police SI Answer Key 2026 (Prelims, 29 November) – Preliminary Key, Objections, Score Calculator, Qualifying Marks | Learn with Anil',
+    desc='TS Police SI Prelims answer key 2026: when TGPRB releases the preliminary key and how to raise objections, a score calculator with the 0.2 negative mark, '
+         'the qualifying marks (60/50/40 out of 200), the 2022 results in numbers, and the previous SI papers with answers.',
+    h1='TS Police SI answer key 2026',
+    lede='The TS Police SI Preliminary Written Test is on Sunday, 29 November 2026 (tentative). TGPRB publishes a preliminary key on www.tgprb.in a few days after the exam, '
+         'takes objections question by question in the candidate login, and releases the final key with the results. Work out your score below with the 0.2 negative mark '
+         'and see whether you clear the qualifying mark. We will add the 2026 question paper with answers here once the paper is available.',
+    te='టీఎస్ పోలీస్ ఎస్ఐ ప్రిలిమ్స్ ఆన్సర్ కీ 2026 (పరీక్ష 29 నవంబర్): ప్రాథమిక కీ, అభ్యంతరాలు, మీ స్కోర్ లెక్కించండి (తప్పు సమాధానానికి 0.2 మార్కు కోత), అర్హత మార్కులు.',
+    pdf=TGPRB + 'SI%20(Civil%20et%20al)%202026%20Notification%20dated%2029-07-2026.pdf',
+    pdfname='TGPRB Notification Rc.No.225/Rect./Rect-1/2026, dated 29 July 2026',
+    more_src=[TS_SRC_1709, ('https://tgprb.in/Pdfs/PressNoteDatedon1408022.pdf', 'TSLPRB press note of 14 August 2022 (preliminary key and objections)'), TS_SRC_RES22],
+    related=['ts-police-si-exam-date-hall-ticket-2026.html', 'ts-police-constable-answer-key-2026.html'],
+    sections=[
+      ('Calculate your score', 'html', score_calc('scsi', 200, TS_QUAL)),
+      ('When the key comes: what happened in 2022', 'table', [
+        ('Preliminary key', '12 August 2022, five days after the 7 August exam'),
+        ('Objections', '13 to 15 August 2022, question by question, in the candidate login on the board\'s website'),
+        ('Final key and results', '21 October 2022, with the qualified list; candidates could see their OMR sheet in the login'),
+        ('2026', 'TGPRB will announce the dates; this page will be updated')]),
+      ('', 'note', 'TGPRB usually deletes a few questions (their marks are given to everyone) and accepts more than one answer for some, so your final score can differ slightly from the preliminary key.'),
+      ('Qualifying marks', 'table+', (['Category', 'Minimum', 'Out of 200'], [
+        ('OC (including EWS)', '30%', 60), ('BC', '25%', 50), ('SC, ST and Ex-Servicemen', '20%', 40)])),
+      ('Is there a cut-off?', 'p', 'Not in the prelims. Everyone who reaches the qualifying mark of their category goes on to the physical tests; the competition is decided in the '
+                                  'Final Written Examination (Papers III and IV for SI Civil), where TGPRB later publishes the marks of the last selected candidate in each category.'),
+      ('The 2022 SI prelims in numbers', 'table', [
+        ('Attended', '2,25,759 of 2,47,217 (91.3%)'), ('Qualified', '1,05,603 (46.8%)'),
+        ('Qualified by category', 'BC 49,825 · SC 26,168 · ST 22,571 · OC 6,817 · Ex-Servicemen 222'),
+        ('Average score', '47.25 out of 200'), ('Highest score', '133 out of 200'), ('Most common score', '36.80 (2,176 candidates)')]),
+      ('', 'note', 'Scores in the 40s to 60s cleared the prelims in 2022 (the qualifying marks were cut to 30/25/20% in October 2022). Use the 2022 paper below to see the level.'),
+    ]),
+  'ts-police-constable-exam-date-hall-ticket-2026.html': dict(
+    exam='ts-police-constable', board='TGPRB', site='tgprb.in', crumb='Constable Exam Date & Hall Ticket 2026',
+    title='TS Police Constable Exam Date 2026 (20 December) & Hall Ticket – Download, Exam Pattern, Qualifying Marks, Salary | Learn with Anil',
+    desc='TS Police Constable Preliminary Written Test 2026: Sunday 20 December 2026, forenoon (TGPRB, tentative). When and how to download the constable hall ticket, '
+         'exam-day rules, the 200-mark pattern with 0.2 negative marking, qualifying marks (30/25/20%), 7,112 posts, salary ₹24,280–72,850, PMT/PET and previous papers.',
+    h1='TS Police Constable exam date 2026: Sunday, 20 December',
+    lede='TGPRB will hold the Preliminary Written Test for SCT Police Constable (Civil) and equivalent posts (Notification Rc.No.189/2026, 7,112 posts) on Sunday, '
+         '20 December 2026, in the forenoon, at 15 to 18 centres including the 10 erstwhile district headquarters. The date is marked tentative (press note of 17 September 2026); '
+         'about 3.9 lakh applications were filed. Below: the hall ticket, exam-day rules, the pattern and qualifying marks, the posts, the salary and the physical tests.',
+    te='టీఎస్ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ రాత పరీక్ష 2026: ఆదివారం, 20 డిసెంబర్ 2026 ఉదయం (తాత్కాలిక తేదీ). హాల్ టికెట్, పరీక్ష రోజు నియమాలు, పరీక్ష విధానం, అర్హత మార్కులు, జీతం, పాత ప్రశ్నాపత్రాలు.',
+    pdf=TGPRB + 'PC%20(Civil%20et%20al)%202026%20Notification%20dated%2029-07-2026.pdf',
+    pdfname='TGPRB Notification Rc.No.189/Rect./Rect-2/2026 (SCT PC Civil and equivalent posts), dated 29 July 2026',
+    more_src=[TS_SRC_1709, TS_SRC_0809, ('https://tgprb.in/Pdfs/PressNoteDatedon1708022.pdf', 'TSLPRB hall-ticket press note of 17 August 2022'), TS_SRC_RES22],
+    related=['ts-police-constable-answer-key-2026.html', 'ts-police-si-exam-date-hall-ticket-2026.html', 'ts-police-si-answer-key-2026.html'],
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification (Rc.No.189/2026)', '29 July 2026'),
+        ('Online applications', '19 August to 16 September 2026 (closed)'),
+        ('Preliminary Written Test', 'Sunday, 20 December 2026, forenoon (tentative)'),
+        ('Hall ticket', 'Date not announced yet. In 2022 the window opened 10 days before the exam, so expect it around 10 December 2026'),
+        ('Exam centres', '15 to 18 locations, including the 10 erstwhile district headquarters'),
+        ('Official website', 'www.tgprb.in')]),
+      ('How to download the hall ticket', 'steps', [
+        'Go to www.tgprb.in and open the hall-ticket link (it appears only when TGPRB opens the download window).',
+        'Log in to your candidate account with the details you used to apply (in 2022: your registered mobile number and password).',
+        'Download the hall ticket and print it on A4 paper, preferably on both sides, so the ticket and the instructions fit on one sheet.',
+        'Paste the passport photo you uploaded with the application in the box on page 1, using gum.',
+        'Check your name, photo, exam centre and timing; visit the centre a day before the exam.']),
+      ('', 'note', 'In 2022 the constable hall tickets could be downloaded from 8 am on 18 August to midnight on 26 August for the exam on 28 August: the window closed two days before the exam. '
+                   'The 2022 exam ran from 10 am to 1 pm; TGPRB has not announced the 2026 timing yet.'),
+      ("Exam-day rules (TGPRB's hall-ticket instructions)", 'list', TS_RULES),
+      ('Exam pattern', 'table+', (['Paper', 'Subjects', 'Questions · marks · time'], [
+        ('Preliminary Written Test (objective, OMR)', 'English, Arithmetic, General Science, History of India and the National Movement, Geography, Polity and Economy, '
+                                                      'Current Events, Reasoning / Mental Ability, and Telangana-specific topics', '200 · 200 · 3 hours')])),
+      ('', 'note', 'Negative marking: 0.2 of a mark is deducted for each wrong answer; an unanswered question gets zero. The question booklet is in English–Telugu or English–Urdu. '
+                   'The prelims only qualifies you for the physical tests.'),
+      ('Qualifying marks', 'table+', (['Category', 'Minimum', 'Out of 200'], [
+        ('OC (including EWS)', '30%', 60), ('BC', '25%', 50), ('SC, ST, Ex-Servicemen and Home Guards', '20%', 40)])),
+      ('', 'note', 'In 2022, 1,84,861 of the 5,88,891 candidates for constable (civil and equivalent) posts (31.4%) cleared the prelims. The average score was 41.16 and the highest 141 out of 200 (TSLPRB, 21 October 2022).'),
+      ('Posts and vacancies', 'table+', (['Post', 'Vacancies'], [
+        ('SCT Police Constable (Civil)', 3697), ('SCT Police Constable (AR)', 1052), ('SCT Police Constable (SAR CPL), men', 24),
+        ('SCT Constable, Telangana Special Protection Force', 1380), ('Fire Fighter', 751), ('Warder (male)', 196), ('Warder (female)', 12), ('Total', 7112)])),
+      ('Salary', 'p', 'Pay scale ₹24,280 – ₹72,850 a month for every post in this notification. TGPRB puts the starting annual pay of a constable at about ₹4.21 lakh to ₹4.59 lakh '
+                      'including HRA (press note of 8 September 2026). SCT means Stipendiary Cadet Trainee: a stipend is paid during training.'),
+      ('After the prelims: physical tests and the final exam', 'list', [
+        'Physical Measurement Test: height at least 167.6 cm for men and 152.5 cm for women (160 cm and 150 cm for ST candidates of the notified agency areas). There is no chest measurement.',
+        'Physical Efficiency Test: a 1,600 m run in 7 min 15 s for men (9 min 30 s for ex-servicemen) or 800 m in 5 min 20 s for women; the long jump (4 m men, 2.5 m women) and the shot put (6 m men, 4 m women) are qualifying. For AR, SAR CPL and SPF posts the run is scored.',
+        'Final Written Examination: one objective paper of 3 hours, 200 marks for Civil constable, Fire Fighter and Warder (100 marks for AR, SAR CPL and SPF, where run marks are added). '
+        'You need 40% (OC, EWS), 35% (BC) or 30% (SC, ST, Ex-Servicemen).']),
+    ]),
+  'ts-police-constable-answer-key-2026.html': dict(
+    exam='ts-police-constable', board='TGPRB', site='tgprb.in', crumb='Constable Answer Key 2026',
+    title='TS Police Constable Answer Key 2026 (Prelims, 20 December) – Preliminary Key, Objections, Score Calculator, Qualifying Marks | Learn with Anil',
+    desc='TS Police Constable Prelims answer key 2026: when TGPRB releases the preliminary key and how to raise objections, a score calculator with the 0.2 negative mark, '
+         'the qualifying marks (60/50/40 out of 200), the 2022 results in numbers, and the previous constable papers with answers.',
+    h1='TS Police Constable answer key 2026',
+    lede='The TS Police Constable Preliminary Written Test is on Sunday, 20 December 2026 (tentative). In 2022 TSLPRB released the preliminary key two days after the exam and took '
+         'objections in the candidate login; the final key came with the results. Work out your score below with the 0.2 negative mark and see whether you clear the qualifying mark. '
+         'We will add the 2026 question paper with answers here once the paper is available.',
+    te='టీఎస్ పోలీస్ కానిస్టేబుల్ ప్రిలిమ్స్ ఆన్సర్ కీ 2026 (పరీక్ష 20 డిసెంబర్): ప్రాథమిక కీ, అభ్యంతరాలు, మీ స్కోర్ లెక్కించండి (తప్పు సమాధానానికి 0.2 మార్కు కోత), అర్హత మార్కులు.',
+    pdf=TGPRB + 'PC%20(Civil%20et%20al)%202026%20Notification%20dated%2029-07-2026.pdf',
+    pdfname='TGPRB Notification Rc.No.189/Rect./Rect-2/2026, dated 29 July 2026',
+    more_src=[TS_SRC_1709, ('https://tgprb.in/Pdfs/PressNoteDatedon2808022.pdf', 'TSLPRB press note of 28 August 2022'), TS_SRC_RES22],
+    related=['ts-police-constable-exam-date-hall-ticket-2026.html', 'ts-police-si-answer-key-2026.html'],
+    sections=[
+      ('Calculate your score', 'html', score_calc('scpc', 200, [('OC (including EWS): 30%', 60), ('BC: 25%', 50), ('SC, ST, Ex-Servicemen, Home Guards: 20%', 40)])),
+      ('When the key comes: what happened in 2022', 'table', [
+        ('Preliminary key', '30 August 2022, two days after the 28 August exam'),
+        ('Objections', 'About three days, question by question, in the candidate login'),
+        ('Final key and results', '21 October 2022, with the qualified list'),
+        ('2026', 'TGPRB will announce the dates; this page will be updated')]),
+      ('Qualifying marks', 'table+', (['Category', 'Minimum', 'Out of 200'], [
+        ('OC (including EWS)', '30%', 60), ('BC', '25%', 50), ('SC, ST, Ex-Servicemen and Home Guards', '20%', 40)])),
+      ('Is there a cut-off?', 'p', 'Not in the prelims. Everyone who reaches the qualifying mark of their category goes on to the physical tests; the competition is decided in the Final Written Examination.'),
+      ('The 2022 constable prelims in numbers', 'table', [
+        ('Attended (constable-level posts)', '6,03,955 of 6,61,198 (91.3%)'),
+        ('Qualified, PC Civil and equivalent', '1,84,861 of 5,88,891 (31.4%)'),
+        ('Average score', '41.16 out of 200'), ('Highest score', '141 out of 200')]),
+    ]),
+})
+
+
+# AP DSC 2026 (APTRT-2026): brief notifications of 13 Oct 2026 (G.O.Ms.No.28) and the School Education press note with Annexures I-II
+# (district and society tables checked twice against the PDF, 3 Nov 2026). Fee, age and TET rules below are the Mega DSC 2025 rules
+# (G.O.Ms.No.15 and 16 of 19.04.2025) until the detailed 2026 notification is out. Research notes: claude/ap-dsc-2026.md.
+APDSC = 'https://tet2dsc.apcfss.in/DSC2026/'
+NOTIFS['ap-dsc-2026-notification.html'] = dict(
+    exam=None, ename='AP DSC 2026', board='the School Education Department, Andhra Pradesh', site='tet2dsc.apcfss.in', crumb='AP DSC 2026 Notification',
+    title='AP DSC 2026 Notification – 2,721 Teacher Posts (SA, SGT, Special Education, PGT, TGT), District-wise Vacancies, Dates, Eligibility & Exam Pattern | Learn with Anil',
+    desc='AP DSC 2026 (APTRT-2026): 2,721 teacher posts, with 906 School Assistant, 1,205 SGT, 350 special-education and 260 residential-school posts; '
+         'district-wise and society-wise vacancies, the detailed notification and application dates, fee, age limit, TET weightage and the CBT exam pattern.',
+    h1='AP DSC 2026: 2,721 teacher posts',
+    lede='The Andhra Pradesh School Education Department issued brief notifications on 13 October 2026 for 2,721 teacher posts (DSC-2026): 2,111 School Assistant and SGT posts '
+         'in government, ZP, MPP and municipal schools, 350 special-education posts, and 260 posts in residential societies and model schools. The detailed notification, '
+         'with the application dates, fee, age limit and exam schedule, was due on or before 3 November 2026 on tet2dsc.apcfss.in. The exam is a computer-based test (CBT).',
+    te='ఏపీ డీఎస్సీ 2026: 2,721 టీచర్ పోస్టులు — స్కూల్ అసిస్టెంట్ 906, ఎస్జీటీ 1,205, స్పెషల్ ఎడ్యుకేషన్ 350, గురుకులాలు/మోడల్ స్కూళ్లు 260. జిల్లాల వారీ ఖాళీలు, తేదీలు, అర్హత, పరీక్ష విధానం.',
+    pdf=APDSC + 'DSC-2026%20Press%20Note%20English.pdf', pdfname='School Education Department press note on DSC-2026 with district-wise and society-wise vacancies (13 October 2026)',
+    more_src=[(APDSC + 'notifications/DSC-2026%20General%20notification%20(1).pdf', 'Brief Notification No.1/DSC-2026 (General)'),
+              (APDSC + 'notifications/DSC-2026%20Special%20Education%20Notifcation.pdf', 'Brief Notification No.2/DSC-2026 (Special Education)'),
+              (APDSC + 'notifications/DSC-2026%20Socities%20Notification.pdf', 'Brief Notification No.3/DSC-2026 (Societies)'),
+              (APDSC + 'Gos/2026SE_MS28_E.pdf', 'G.O.Ms.No.28, School Education, 13 October 2026'),
+              ('https://tet2dsc.apcfss.in/DSC-PDF/Syllabus-2026/Special%20Education%20DSC%20-%202026.pdf', 'Special Education DSC syllabus 2026')],
+    sections=[
+      ('Important dates', 'table', [
+        ('Brief notifications (Nos. 1, 2 and 3/DSC-2026)', '13 October 2026'),
+        ('Detailed notification', 'Due on or before 3 November 2026 on tet2dsc.apcfss.in'),
+        ('Online applications and fee', 'To be announced in the detailed notification (news reports expect them from about 10 November 2026)'),
+        ('Exam', 'Computer-based test; schedule in the detailed notification'),
+        ('Official website', 'tet2dsc.apcfss.in')]),
+      ('Posts', 'table+', (['Post', 'Where', 'Posts'], [
+        ('School Assistant (SA)', 'Government, ZP, MPP and municipal schools', 906),
+        ('Secondary Grade Teacher (SGT)', 'Government, ZP, MPP and municipal schools', 1205),
+        ('School Assistant (Special Education)', 'Government, ZP, MPP and municipal schools', 150),
+        ('SGT (Special Education)', 'Government, ZP, MPP and municipal schools', 200),
+        ('Principal', 'Residential societies and model schools', 30),
+        ('Post Graduate Teacher (PGT)', 'Residential societies and model schools', 81),
+        ('Trained Graduate Teacher (TGT)', 'Residential societies and model schools', 113),
+        ('Physical Director', 'Residential societies', 2),
+        ('Physical Education Teacher (PET)', 'Residential societies', 34),
+        ('Total', 'All tentative; final numbers and rosters in the detailed notification', 2721)])),
+      ('District-wise vacancies (government, ZP, MPP and municipal schools)', 'table+', (['District', 'SA', 'SGT', 'SA (SE)', 'SGT (SE)', 'Total'], [
+        ('Srikakulam', 16, 4, 7, 9, 36),
+        ('Vizianagaram', 0, 4, 6, 8, 18),
+        ('Parvathipuram Manyam', 6, 2, 3, 4, 15),
+        ('Alluri Sitharamaraju', 6, 153, 5, 7, 171),
+        ('Visakhapatnam', 20, 9, 2, 3, 34),
+        ('Anakapalli', 19, 1, 5, 7, 32),
+        ('Kakinada', 51, 1, 5, 6, 63),
+        ('Konaseema', 42, 1, 4, 6, 53),
+        ('East Godavari', 9, 2, 5, 6, 22),
+        ('West Godavari', 10, 0, 4, 6, 20),
+        ('Eluru', 7, 1, 6, 8, 22),
+        ('NTR', 19, 3, 4, 6, 32),
+        ('Krishna', 15, 1, 6, 8, 30),
+        ('Guntur', 24, 1, 4, 5, 34),
+        ('Palnadu', 14, 0, 6, 8, 28),
+        ('Bapatla', 17, 0, 4, 6, 27),
+        ('Prakasam', 96, 170, 11, 14, 291),
+        ('SPSR Nellore', 65, 100, 8, 11, 184),
+        ('Tirupati', 22, 77, 8, 11, 118),
+        ('Chittoor', 30, 100, 6, 8, 144),
+        ('Annamayya', 46, 61, 5, 7, 119),
+        ('YSR Kadapa', 48, 158, 9, 12, 227),
+        ('Kurnool', 176, 213, 7, 8, 404),
+        ('Nandyal', 40, 117, 6, 8, 171),
+        ('Anantapuramu', 66, 26, 7, 9, 108),
+        ('Sri Satya Sai', 42, 0, 7, 9, 58),
+        ('Total', 906, 1205, 150, 200, 2461)])),
+      ('', 'note', 'SE = special education. Kurnool (404), Prakasam (291), YSR Kadapa (227) and SPSR Nellore (184) have the most posts; Vizianagaram, West Godavari and Bapatla have no or almost no SGT posts. '
+                   'The subject-wise split of School Assistant posts will be in the detailed notification.'),
+      ('Society-wise vacancies (residential and model schools)', 'table+', (['Society / management', 'Principal', 'PGT', 'TGT', 'PD', 'PET', 'Total'], [
+        ('APSWREIS (social welfare)', 21, 45, 0, 0, 19, 85), ('APTWREIS (tribal welfare, Gurukulam)', 0, 6, 27, 1, 2, 36),
+        ('MJPAPBCWREIS (BC welfare)', 3, 10, 24, 0, 0, 37), ('APREIS', 4, 20, 32, 1, 11, 68), ('AP Model Schools', 2, 0, 17, 0, 0, 19),
+        ('Welfare of Differently Abled, Transgender & Senior Citizens', 0, 0, 13, 0, 2, 15), ('Total', 30, 81, 113, 2, 34, 260)])),
+      ('Exam pattern', 'table+', (['Post', 'Computer-based test', 'Plus'], [
+        ('School Assistant (2025 pattern)', '160 questions, 80 marks, 2 h 30 min: GK & current affairs 10, perspectives in education 5, educational psychology 5, subject content 40, methodology 20', '20 marks of TET weightage'),
+        ('SGT (2025 pattern)', '160 questions, 80 marks, 2 h 30 min', '20 marks of TET weightage'),
+        ('SA and SGT, Special Education (2026 syllabus)', '160 questions, 80 marks, 2 h 30 min', '20 marks of TET weightage (2025 rule)'),
+        ('SA (Physical Education), PET, PD (2025 pattern)', '200 questions, 100 marks, 3 hours', 'No TET'),
+        ('PGT, Principal (2025 pattern)', 'English proficiency test (qualifying) + Paper II of 200 questions, 100 marks, 3 hours', 'No TET'),
+        ('TGT (2025 pattern)', 'English proficiency test (qualifying, non-language TGT) + Paper II of 160 questions, 80 marks', '20 marks of TET weightage')])),
+      ('', 'note', 'Each question carries half a mark in the 160-question papers. The 2026 special-education syllabus confirms the 160-question, 80-mark paper; the patterns for the other posts are from Mega DSC 2025 and will be confirmed by the detailed notification.'),
+      ('Eligibility, fee and TET: the 2025 rules', 'list', [
+        'Age (2025): 18 to 44 years, up to 49 for SC, ST, BC and EWS candidates and 54 for persons with disabilities. The reference date for 2026 will be in the detailed notification.',
+        'Fee (2025): ₹750 for each post applied for.',
+        'TET: SA (except Physical Education) and SGT candidates must have passed APTET or CTET; the TET score carries 20% of the final marks. PET, SA (Physical Education), PGT, PD and Principal posts need no TET.',
+        'SGT: Intermediate with 50% (45% for SC, ST, BC and PwBD) and a two-year D.Ed / D.El.Ed (or B.El.Ed). SA: a degree in the subject with 50% (45%) and B.Ed with that methodology. PGT: a post-graduate degree with 50% and B.Ed.',
+        'The Special TET of August 2026 (for in-service teachers) cannot be used to apply for DSC; the regular AP TET of June 2026 (results in September 2026) can.']),
+      ('', 'note', 'These are the Mega DSC 2025 rules (G.O.Ms.No.15 and 16, 19 April 2025). The 2026 detailed notification may change them: check it before applying.'),
+      ('How Mega DSC 2025 went', 'table', [
+        ('Notification', '20 April 2025, 16,347 posts'), ('Applications', '20 April to 15 May 2025'), ('Exams (CBT)', '6 June to 2 July 2025'),
+        ('Question papers with preliminary keys', 'From 18 June 2025, as each exam finished'), ('Final key', 'Early August 2025'), ('Results', '12 August 2025; 15,941 teachers selected')]),
+    ],
+    tail_html='<h2>Prepare with previous questions</h2><p>The GK and current-affairs part of DSC overlaps with APPSC and police exams. <a href="/">Learn with Anil</a> has previous year questions with answers '
+              'for APPSC Group 1 and 2, AP and TS Police, SSC and UPSC: <a href="/appsc-pyqs.html">all APPSC previous papers</a> · <a href="/appsc-group-2/">APPSC Group 2</a> · <a href="/ap-police-pyqs.html">AP Police</a>.</p>')
+
+
 MSY_STYLE = ('<style>.msy h3{font-size:16.5px;margin:16px 0 6px}.msy ol{margin:0 0 6px;padding-left:0;list-style:none;columns:2 300px;column-gap:28px}'
              '.msy li{margin:0 0 4px;break-inside:avoid}.msy .no{font:12.5px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);margin-right:4px}'
              '.msy .hy{color:#B7791F;font-weight:700}.msy .nw,.msy .sub{font-size:13px;color:var(--muted)}.msy .sm{color:var(--muted);font-size:14.5px;margin:-4px 0 6px}</style>')
@@ -3688,7 +3990,7 @@ def notif_page(loaded, rel):
     for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
         if kind == 'table': body.append(facts_table(data))
-        elif kind == 'table+': body.append(facts_table(data[1], data[0]))
+        elif kind == 'table+': body.append(('<div style="overflow-x:auto">' + facts_table(data[1], data[0]) + '</div>') if len(data[0]) > 3 else facts_table(data[1], data[0]))
         elif kind == 'list': body.append('<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in data) + '</ul>')
         elif kind == 'steps': body.append('<ol>' + ''.join(f'<li>{esc(x)}</li>' for x in data) + '</ol>')
         elif kind == 'note': body.append(f'<p class="note">{esc(data)}</p>')
@@ -3708,7 +4010,7 @@ def notif_page(loaded, rel):
     body.append(f'<p class="note">Source: <a href="{N["pdf"]}" rel="nofollow">{esc(N["pdfname"])}</a>{more}. Dates and vacancies can change with corrigenda; '
                 f'always check the official website {esc(site)} before applying. Learn with Anil is not connected with {esc(board)}.</p>')
     crumbs = [('Home', SITE_URL + '/')] + ([(conf['name'], SITE_URL + conf['pb'])] if conf else []) + [(N['crumb'], can)]
-    return static_page(0, N['title'], N['desc'], can, N['h1'], esc(N['lede']), ''.join(body), crumbs, conf, ename=N.get('ename'), at_root=True,
+    return static_page(0, N['title'], N['desc'], can, N['h1'], esc(N['lede']), ''.join(body), crumbs, conf, ename=N.get('ename'), at_root=True, head_all=not conf,
                        foot_text=None if conf else f'Exam information compiled from {board}\'s official notifications by Jupudi Anil Kumar, Learn with Anil. Not affiliated with {board}.')
 
 
