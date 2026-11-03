@@ -818,7 +818,7 @@ details.upc .exams{margin-top:8px}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ssc-cgl-ba5032d7bc.js"></script>
+<script src="data/ssc-cgl-8defb99d13.js"></script>
 <script>
 (function(){
 "use strict";
@@ -2484,13 +2484,32 @@ const ASK = {
       inv:"🎁 दोस्तों को बुलाइए, मुफ़्त दिन पाइए", invp:"यह आपका अपना लिंक है। इससे कोई दोस्त रजिस्टर करे तो आपको ऑल-इन-वन पास <b>3 दिन</b> मुफ़्त (10 दोस्तों तक); दोस्त ₹45 का पास ख़रीदे तो <b>1 महीना</b> मुफ़्त। अगर आपके पास पहले से पास है, तो ये दिन उसके आख़िर में जुड़ जाते हैं।",
       stat:"जुड़े दोस्त: {j} · पास ख़रीदने वाले: {b} · मिले मुफ़्त दिन: {d}", load:"आपका लिंक ला रहे हैं…"}
 };
+const ASK0 = {   // the same cards before invite rewards are switched on (DATA.pay.ref): a plain request, no promise of free days
+  en:{h:"🙏 A small request from Anil",
+      p:"Learn with Anil keeps its fees very low (₹45 opens everything), so we cannot spend money on ads. This community grows only when students like you tell their friends. If the site helps you, please share it with one friend who is preparing. It is completely optional.",
+      r:"🙏 Did this test help you? Help one more aspirant",
+      rp:"We keep fees low and spend nothing on ads, so students sharing with friends is how this community grows. If this test was useful, please share the website with one friend who is preparing. Completely optional.",
+      reg:"", thanks:"Thank you for helping this community grow! 🙏", copied:"Link copied. Paste it in any group or chat. Thank you! 🙏"},
+  te:{h:"🙏 అనిల్ నుంచి ఒక చిన్న విన్నపం",
+      p:"Learn with Anil ఫీజు చాలా తక్కువ (₹45తో అన్నీ), అందుకే ప్రకటనలకు డబ్బు ఖర్చు పెట్టలేం. మీలాంటి విద్యార్థులు తమ స్నేహితులకు చెబితేనే ఈ కమ్యూనిటీ పెరుగుతుంది. సైట్ మీకు ఉపయోగపడితే, ప్రిపేర్ అవుతున్న ఒక్క స్నేహితుడికైనా షేర్ చేయండి. ఇది పూర్తిగా మీ ఇష్టం.",
+      r:"🙏 ఈ టెస్ట్ ఉపయోగపడిందా? ఇంకో అభ్యర్థికి సహాయం చేయండి",
+      rp:"ఫీజు తక్కువ, ప్రకటనలకు ఖర్చు లేదు. విద్యార్థులు స్నేహితులతో పంచుకోవడం వల్లే ఈ కమ్యూనిటీ పెరుగుతుంది. ఈ టెస్ట్ మీకు ఉపయోగపడితే, వెబ్‌సైట్‌ను ప్రిపేర్ అవుతున్న ఒక్క స్నేహితుడికైనా షేర్ చేయండి. ఇది పూర్తిగా మీ ఇష్టం.",
+      reg:"", thanks:"ఈ కమ్యూనిటీని పెంచుతున్నందుకు ధన్యవాదాలు! 🙏", copied:"లింక్ కాపీ అయింది. ఏ గ్రూప్‌లో లేదా చాట్‌లోనైనా పేస్ట్ చేయండి. ధన్యవాదాలు! 🙏"},
+  hi:{h:"🙏 अनिल की ओर से एक छोटा-सा अनुरोध",
+      p:"Learn with Anil की फ़ीस बहुत कम है (₹45 में सब कुछ), इसलिए हम विज्ञापनों पर पैसा खर्च नहीं कर पाते। आप जैसे छात्र अपने दोस्तों को बताते हैं, तभी यह समुदाय बढ़ता है। अगर साइट आपके काम आए, तो तैयारी कर रहे किसी एक दोस्त के साथ ज़रूर शेयर करें। यह पूरी तरह आपकी मर्ज़ी है।",
+      r:"🙏 यह टेस्ट काम आया? एक और अभ्यर्थी की मदद कीजिए",
+      rp:"फ़ीस कम है और विज्ञापनों पर कोई खर्च नहीं, इसलिए छात्रों का दोस्तों से शेयर करना ही इस समुदाय को बढ़ाता है। अगर यह टेस्ट आपके काम आया, तो वेबसाइट किसी एक दोस्त के साथ शेयर करें। यह पूरी तरह आपकी मर्ज़ी है।",
+      reg:"", thanks:"इस समुदाय को बढ़ाने में मदद के लिए धन्यवाद! 🙏", copied:"लिंक कॉपी हो गया। किसी भी ग्रुप या चैट में पेस्ट करें। धन्यवाद! 🙏"}
+};
+const REFON = !!(PAYC && PAYC.ref);
 function askLang(){ return ASK[P.lang] ? P.lang : "en"; }
+function askT(){ const l = askLang(); return REFON ? ASK[l] : Object.assign({}, ASK[l], ASK0[l]); }
 function askOnHub(){ return HUBPAGE && current==="exams"; }
 /* Invite codes. Mine: from the payments script, kept on this device (lwa-ref-mine). A friend's: read from ?ref= on arrival
    (also on the static pages) and kept for 30 days (lwa-ref-from) until this device registers; then sent once ('refjoin'). */
 const REFIN = "lwa-ref-from", REFMINE = "lwa-ref-mine";
 let REFME = (()=>{ try{ return JSON.parse(localStorage.getItem(REFMINE)||"null"); }catch(_){ return null; } })();
-const refCode = ()=> REFME && REFME.p===ST.phone && /^[A-Z]{6}$/.test(REFME.code||"") ? REFME.code : "";
+const refCode = ()=> REFON && REFME && REFME.p===ST.phone && /^[A-Z]{6}$/.test(REFME.code||"") ? REFME.code : "";
 function withRef(u){ const c = refCode(); return c ? u + (u.includes("?") ? "&" : "?") + "ref=" + c : u; }
 function refCapture(){
   try{
@@ -2505,12 +2524,12 @@ function refCapture(){
 }
 async function refJoin(){   // after this device registers: tell the payments script which friend's link brought them
   let r = null; try{ r = JSON.parse(localStorage.getItem(REFIN)||"null"); }catch(_){}
-  if(!r || !r.c || r.sent || !PAYC || !PAYC.api || !ST.phone || Date.now() - r.t > 30*864e5) return;
+  if(!REFON || !r || !r.c || r.sent || !PAYC || !PAYC.api || !ST.phone || Date.now() - r.t > 30*864e5) return;
   try{ const j = await payCall({action:"refjoin", exam:PAYC.exam, code:r.c, phone:ST.phone, email:ST.email||"", name:ST.name||"", device:DEVICE});
        if(j && j.ok){ r.sent = Date.now(); r.status = j.status||""; try{ localStorage.setItem(REFIN, JSON.stringify(r)); }catch(_){} track("ref_join", {status:r.status}); } }catch(_){}
 }
 async function refMine(force){   // my code and my invite numbers
-  if(!PAYC || !PAYC.on || !PAYC.api || !ST.phone) return null;
+  if(!REFON || !PAYC || !PAYC.on || !PAYC.api || !ST.phone) return null;
   if(refCode() && !force) return REFME;
   if(UI.refBusy) return REFME; UI.refBusy = true;
   try{ const j = await payCall({action:"ref", exam:PAYC.exam, phone:ST.phone, email:ST.email||""});
@@ -2518,8 +2537,8 @@ async function refMine(force){   // my code and my invite numbers
   UI.refBusy = false; return REFME;
 }
 function inviteCard(){
-  if(!PAYC || !PAYC.on || !PAYC.api || !ST.phone) return "";
-  const l = askLang(), t = ASK[l], c = refCode();
+  if(!REFON || !PAYC || !PAYC.on || !PAYC.api || !ST.phone) return "";
+  const l = askLang(), t = askT(), c = refCode();
   if(!UI.refFresh){ UI.refFresh = true; refMine(true).then(()=>{ if(current==="account") render(); }); }   // fresh numbers each visit
   const m = REFME && c ? REFME : null;
   return `<div class="card pad share-card"${l==="en"? "" : ` lang="${l}"`}><h2 class="acct-h">${t.inv}</h2><p style="margin:0">${t.invp}</p>
@@ -2554,7 +2573,7 @@ function askWatch(){   // waits until the student is not in a test, not on the f
 }
 function showAsk(from){
   const a = askGet(); a.pending = null; a.shown = Date.now(); a.n = (a.n||0) + 1; askSet(a);
-  const l = askLang(), t = ASK[l];
+  const l = askLang(), t = askT();
   const el = document.createElement("div");
   el.id = "askshare"; el.className = "askshare"; el.setAttribute("role", "dialog"); el.setAttribute("aria-labelledby", "askshare-h");
   if(l!=="en") el.lang = l;
@@ -2569,20 +2588,20 @@ function closeAsk(){ const el = document.getElementById("askshare"); if(el) el.r
 function askDone(from, via, quiet){
   const a = askGet(); a.shared = Date.now(); a.pending = null; askSet(a); closeAsk();
   track("share_site", {from: from||"", via});
-  if(!quiet) setTimeout(()=>toast(ASK[askLang()].thanks), 600);
+  if(!quiet) setTimeout(()=>toast(askT().thanks), 600);
 }
 function shareSiteMore(from){
   if(navigator.share){ navigator.share({title:"Learn with Anil", text: shareSiteText("share")}).then(()=>askDone(from, "share"), ()=>{}); return; }
   const tx = shareSiteText("copy");
-  try{ navigator.clipboard.writeText(tx).then(()=>{ askDone(from, "copy", true); toast(ASK[askLang()].copied); }, ()=>toast(shareSiteURL("copy"))); }
+  try{ navigator.clipboard.writeText(tx).then(()=>{ askDone(from, "copy", true); toast(askT().copied); }, ()=>toast(shareSiteURL("copy"))); }
   catch(_){ toast(shareSiteURL("copy")); }
 }
 function shareBlock(){
-  const l = askLang(), t = ASK[l];
+  const l = askLang(), t = askT();
   if(ST.phone && !refCode()) refMine();   // so the buttons below carry the student's own invite code
   return `<section class="card share-card"${l==="en"? "" : ` lang="${l}"`}>
     <h3>${t.r}</h3>
-    <p class="muted" style="font-size:15px">${t.rp}${ST.name ? "" : ` <a href="/ssc-cgl/join/">${t.reg}</a>`}</p>
+    <p class="muted" style="font-size:15px">${t.rp}${ST.name || !t.reg ? "" : ` <a href="/ssc-cgl/join/">${t.reg}</a>`}</p>
     <div class="share-row"><button class="btn btn-wa" type="button" data-act="sitewa" data-from="result">${WA_ICON}${t.site}</button><button class="btn btn-secondary" type="button" data-act="sitemore" data-from="result">${navigator.share? t.more : t.copy}</button></div>
     <p class="muted" style="font-size:14px;margin:4px 0 0">${t.yours}</p>
     <div class="share-row"><button class="btn btn-secondary btn-sm" type="button" data-act="scorewa">${WA_ICON}${t.score}</button><button class="btn btn-secondary btn-sm" type="button" data-act="scoreimg">${IMG_ICON}${t.card}</button></div>
