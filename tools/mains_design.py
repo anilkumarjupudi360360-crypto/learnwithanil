@@ -160,6 +160,11 @@ CSS = ('a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;borde
        '.buy.mbuy{background:var(--band);border-color:var(--band);color:#fff;border-radius:16px;padding:22px 24px;margin:28px 0 16px}'
        '.buy.mbuy .muted{color:rgba(255,255,255,.78)}.buy.mbuy .cta{background:#fff;color:var(--band)}'
        '.mcred{font-size:13px;color:var(--muted);margin:20px 0 0}.mcred a{color:inherit}'
+       # who is behind the model answers (author box under every free answer; SEO plan of 2 Nov 2026)
+       '.abox{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:16px 0}'
+       '.abox img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:none}.abox p{margin:0 0 6px;font-size:15px;color:var(--muted)}'
+       '.abox .ak{font-weight:700;color:var(--ink);font-size:13px;text-transform:uppercase;letter-spacing:.05em}.abox b{color:var(--ink)}.abox .al{margin:0;font-weight:700}'
+       '@media (max-width:640px){.abox{padding:14px}.abox img{width:52px;height:52px}}'
        '.lede{margin-top:0}')
 
 
@@ -185,6 +190,22 @@ GO_SVG = ('<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9.5M8.5 3.8
 def go(label):
     """The arrow badge on a photo link; on hover it opens out to the label (e.g. "Open 2026 paper")."""
     return f'<span class="go" aria-hidden="true"><span class="gt">{esc(label)}</span>{GO_SVG}</span>'
+
+
+def author_box(about_href, url, headline):
+    """Who is behind the model answers, under each free answer (Anil, 2 Nov 2026: an author box so search engines see the expert
+    behind the content). Wording from the site's About page. The structured data names Learn with Anil (the publisher) as author."""
+    import json
+    ld = {'@context': 'https://schema.org', '@type': 'Article', 'headline': headline[:110], 'url': url, 'inLanguage': 'en',
+          'author': {'@type': 'Organization', 'name': 'Learn with Anil', 'url': 'https://learnwithanil.in/'},
+          'publisher': {'@type': 'Organization', 'name': 'Learn with Anil', 'url': 'https://learnwithanil.in/', 'logo': {'@type': 'ImageObject', 'url': 'https://learnwithanil.in/icon-512.png'},
+                        'founder': {'@type': 'Person', 'name': 'Jupudi Anil Kumar', 'jobTitle': 'UPSC Faculty and Mentor'}}}
+    return ('<aside class="abox"><img src="/anil.jpg" width="64" height="64" alt="Jupudi Anil Kumar" loading="lazy" decoding="async">'
+            '<div><p class="ak">About Learn with Anil</p><p><b>Jupudi Anil Kumar</b> is a civil-services educator who teaches Indian Polity, Governance and Ethics '
+            'to UPSC, APPSC and TGPSC aspirants and has evaluated more than 2,000 Mains answer copies. Learn with Anil\'s model answers follow the structure '
+            'he teaches: key words, an introduction, numbered points with examples and diagrams, and a conclusion.</p>'
+            f'<p class="al"><a href="{about_href}">More about Anil →</a></p></div></aside>'
+            '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>')
 
 
 def credit(key, prefix='Photo: '):

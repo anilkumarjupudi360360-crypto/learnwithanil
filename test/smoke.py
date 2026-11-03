@@ -618,6 +618,8 @@ async def main():
         if re.search(r'<loc>[^<]*/q/[^<]*</loc>', smx): errors.append('question pages are still in the sitemap')
         for rel in ('upsc-cse/mains-pyqs/2025-gs1-q1.html', 'appsc-group-1/mains-pyqs/2025-paper-2-q1a.html', 'upsc-cse/anthropology-pyqs/2025-paper-1-q1a.html'):
             if f'/{rel}</loc>' not in smx: errors.append(f'{rel} not in sitemap')
-            if 'noindex' in open(os.path.join(SITE, rel), encoding='utf-8').read(): errors.append(f'{rel} has noindex')
+            h_ = open(os.path.join(SITE, rel), encoding='utf-8').read()
+            if 'noindex' in h_: errors.append(f'{rel} has noindex')
+            if 'class="abox"' not in h_ or '"@type": "Article"' not in h_: errors.append(f'{rel}: no author box / Article data')   # 3 Nov 2026
         print('ERRORS:', errors if errors else 'none')
 asyncio.run(main())

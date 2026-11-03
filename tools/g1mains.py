@@ -266,7 +266,8 @@ def pages(B, conf):
                                (f'Q{L[i + 1]["qno"]}', apage(L[i + 1]), short(L[i + 1]['text'], 70)) if i + 1 < len(L) else None)
             altbox = (f'<section class="osec"><h2>The other choice in Q{num}</h2><p class="qm">Answer either one in the exam.</p>'
                       f'<ol class="qrows">{card(alt, man, parts)}</ol></section>' if alt else '')
-            body = CSS + wrap(p, qbox + abox + nav + altbox + ('' if q['id'] in free and not ALL_FREE else buy)) + ('' if q['id'] in free else js)   # no unlock script on free answers
+            who = D.author_box(f'{pb}about/', acan, q['text']) if q['id'] in free else ''
+            body = CSS + wrap(p, qbox + abox + who + nav + altbox + ('' if q['id'] in free and not ALL_FREE else buy)) + ('' if q['id'] in free else js)   # no unlock script on free answers
             sq = short(q['text'], 70)
             title = f'{sq} – APPSC Group 1 Mains {y} Paper {p} Q{q["qno"]} Model Answer | Learn with Anil'
             desc = short(f'APPSC Group 1 Mains {y} Paper {p} Q{q["qno"]}: {q["text"]} Model answer with key words, points and diagrams by Learn with Anil.', 300)

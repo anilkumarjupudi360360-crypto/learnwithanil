@@ -192,7 +192,8 @@ def course_pages(B, code):
                                (f'Q{L[i + 1]["qno"]}', apage(L[i + 1]), short(L[i + 1]['text'], 70)) if i + 1 < len(L) else None)
             sibbox = (f'<section class="osec"><h2>The other part{"s" if len(sib) > 1 else ""} of Q{num}</h2><ol class="qrows">'
                       + ''.join(card(x, man, parts=parts) for x in sib) + '</ol></section>' if sib else '')
-            body = CSS + wrap(p, qbox + abox + nav + sibbox + ('' if q['id'] in free and not allfree else buy)) + ('' if q['id'] in free else js)   # no unlock script on free answers
+            who = D.author_box('/upsc-prelims/about/', acan, q['text']) if q['id'] in free else ''
+            body = CSS + wrap(p, qbox + abox + who + nav + sibbox + ('' if q['id'] in free and not allfree else buy)) + ('' if q['id'] in free else js)   # no unlock script on free answers
             title = f'{short(q["text"], 70)} – {C["seo"]} {y} {C["pfx"]} {n} Q{q["qno"]} Model Answer | Learn with Anil'
             desc = short(f'{C["seo"]} {y} {C["plabel"]} {n} Q{q["qno"]}: {q["text"]} Model answer with key words, points and diagrams by Learn with Anil.', 300)
             page = B.static_page(1, title, desc, acan, f'{C["seo"]} {y} {C["pfx"]} {n} · Q{q["qno"]}: model answer', esc(f'{long_} · {part}.'), body,
