@@ -1604,6 +1604,8 @@ const HUBT = {
   live:{en:'Live · {N} questions', hi:'उपलब्ध · {N} प्रश्न', te:'అందుబాటులో · {N} ప్రశ్నలు'},
   soon:{en:'Upcoming', hi:'आगामी', te:'రాబోయేది'},
   count:{en:'{n} exams · {l} live now', hi:'{n} परीक्षाएँ · {l} अभी उपलब्ध', te:'{n} పరీక్షలు · {l} ఇప్పుడు అందుబాటులో'},
+  soonT:{en:'Coming soon', hi:'जल्द आ रहा है', te:'త్వరలో వస్తుంది'},
+  soonP:{en:'Previous papers for this board are being added. Tell Anil which exam you want first.', hi:'इस बोर्ड के पिछले प्रश्नपत्र जोड़े जा रहे हैं। Anil को बताइए कि आपको पहले कौन-सी परीक्षा चाहिए।', te:'ఈ బోర్డు పాత ప్రశ్నపత్రాలు జోడిస్తున్నాం. మీకు ముందుగా ఏ పరీక్ష కావాలో Anil కి చెప్పండి.'},
   emptyT:{en:'No exam matches your search', hi:'आपकी खोज से कोई परीक्षा नहीं मिली', te:'మీరు వెతికిన పరీక్ష దొరకలేదు'},
   emptyP:{en:'Tell Anil which exam you are preparing for, and it will be added to the list.', hi:'Anil को बताइए कि आप किस परीक्षा की तैयारी कर रहे हैं, उसे सूची में जोड़ दिया जाएगा।', te:'మీరు ఏ పరీక్షకు సిద్ధమవుతున్నారో Anilకి చెప్పండి, దాన్ని జాబితాలో చేరుస్తాం.'},
   ask:{en:'Ask on WhatsApp', hi:'WhatsApp पर पूछें', te:'WhatsAppలో అడగండి'},
@@ -1665,9 +1667,10 @@ function applyHub(){
   if(hh) hh.hidden = !browsing; if(hb) hb.hidden = cat==="all"; if(hc) hc.hidden = browsing; hubRecent(browsing);
   const xc = $("#exCredits"); if(xc) xc.hidden = browsing;
   let n = 0;
-  document.querySelectorAll("#hub-static .exam").forEach(a=>{ const ok = (cat==="all"||a.dataset.cat===cat) && (!q || a.dataset.s.includes(q)); a.hidden = !ok; if(ok) n++; });
+  // Anil, 3 Nov 2026: upcoming (not yet live) exams are not shown inside the boards; only a search can still find them
+  document.querySelectorAll("#hub-static .exam").forEach(a=>{ const ok = (cat==="all"||a.dataset.cat===cat) && (!q || a.dataset.s.includes(q)) && (!!q || a.classList.contains("live")); a.hidden = !ok; if(ok) n++; });
   document.querySelectorAll("#hub-static .exam-cat").forEach(s=>{ s.hidden = !s.querySelector(".exam:not([hidden])"); });
-  if(q) document.querySelectorAll("#hub-static details.upc").forEach(d=>{ if(d.querySelector(".exam:not([hidden])")) d.open = true; });
+  document.querySelectorAll("#hub-static details.upc").forEach(d=>{ const any = !!d.querySelector(".exam:not([hidden])"); d.hidden = !any; if(q && any) d.open = true; });
   document.querySelectorAll('#hub-static [data-act="excat"]').forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.cat===cat)));
   document.querySelectorAll('#nav a[data-act="excat"]').forEach(a=>{ if(a.dataset.cat===cat) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
   const allL = document.querySelector('#nav a[data-v="exams"]'); if(allL && cat!=="all") allL.removeAttribute("aria-current");
@@ -1675,7 +1678,11 @@ function applyHub(){
   const cnt = $("#hubCount"); if(cnt) cnt.textContent = n && !browsing ? HT("count").replace("{n}", n).replace("{l}", live) : "";
   const p5 = $("#hubP5"), isP5 = !!p5 && P5_RE.test(q);   // "paper 5": the Group-1 Mains Paper V book is on WhatsApp
   if(p5) p5.hidden = !isP5;
-  const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0 || isP5; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Learn_with_anil Team, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
+  const boardSoon = !q && cat!=="all" && n===0, soon = $("#hubSoon");   // a board with no live exam yet
+  if(xc) xc.hidden = browsing || boardSoon;
+  if(soon){ soon.hidden = !boardSoon; const bn = document.querySelector(`#hub-static button.board[data-cat="${cat}"] .bd-n`), sa = $("#hubSoonAsk");
+    if(sa) sa.href = waLink(`Hi Learn_with_anil Team, please add ${bn ? bn.textContent : "my exam board"} exams to learnwithanil.in`); }
+  const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0 || isP5 || boardSoon; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Learn_with_anil Team, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
   const s = $("#examSearch"); if(s && s.value!==(UI.exQ||"")) s.value = UI.exQ||"";
 }
 /* countdown cards on the start page (and one exam's countdown on its page) */
