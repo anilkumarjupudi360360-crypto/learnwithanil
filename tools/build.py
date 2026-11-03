@@ -3758,6 +3758,7 @@ PAY = dict(
     pyq_price=45,
     gid=(open(os.path.join(SRC, 'google-client-id.txt')).read().strip() if os.path.exists(os.path.join(SRC, 'google-client-id.txt')) else ''),   # "Continue with Google" (public OAuth client id; Anil, 2 Nov 2026)
     exams='',   # names of every live exam, for the pay dialog ("one payment for the whole website"); set in main()
+    ref=False,  # "invite friends, earn free days" (3 Nov 2026): True only once the payments script with 'ref'/'refjoin' (version 12) is deployed
 )
 PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
 _g2s = g2_syllabus_notif()   # the APPSC Group 2 syllabus page (needs PAY, so it is added here)
@@ -3781,7 +3782,7 @@ FREE_PYQ_NOTE = ('Free: attempt every {seo} paper online, as a practice quiz or 
 SAMPLE_N = 10        # public paper / question pages show every correct answer (since 25 Oct 2026) and the explanations of the first SAMPLE_N questions of each paper; the other explanations need the All-in-One Pass
 PUBLIC_PDFS = False  # Anil, 23 Oct 2026: no free PDF downloads (tools/pdfs.py makes nothing while this is False)
 if os.environ.get('PAY_TEST'):   # test builds only (test/pay_test.py): payments on, against a fake script address
-    PAY.update(on=True, api='https://pay.test/exec', gid=PAY.get('gid') or 'test-gid.apps.googleusercontent.com')
+    PAY.update(on=True, api='https://pay.test/exec', gid=PAY.get('gid') or 'test-gid.apps.googleusercontent.com', ref=PAY.get('ref') or bool(os.environ.get('REF_TEST')))
 DATA_FILES = {}   # exam id -> (folder, data file), filled while building (for the prefetch links)
 BB_URL = ''   # the Bahubali Test Series page (APPSC Group 2 Mains), set by main() once its tests are sealed
 # when an exam's passes run out (the day after the exam); None = 12 months from purchase
@@ -3915,7 +3916,7 @@ def pay_data(conf):
     """What the app needs to show prices and sell passes for this exam."""
     pb = conf['pb']
     mk = MOCK_PACKS.get(conf['id'])
-    return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'], freePyq=conf['id'] in FREE_PYQ, gid=PAY.get('gid', ''),
+    return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'], freePyq=conf['id'] in FREE_PYQ, gid=PAY.get('gid', ''), ref=bool(PAY.get('ref')),
                 pyq=dict(price=PAY['pyq_price'], valid=PYQ_VALID, exams=PAY['exams'], trial=TRIAL_DAYS),
                 mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=PAY['pyq_price'], n=mk['n'], live=mk['live'],
                            valid=pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:],

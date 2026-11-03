@@ -1,5 +1,5 @@
-"""Invite friends, earn free days, on the website (against a fake payments script). Needs a PAY_TEST build:
-   PAY_TEST=1 python3 tools/build.py && python3 test/referral_ui_test.py"""
+"""Invite friends, earn free days, on the website (against a fake payments script). Needs a PAY_TEST build with the switch on:
+   PAY_TEST=1 REF_TEST=1 python3 tools/build.py && python3 test/referral_ui_test.py"""
 import asyncio, json, os, sys, threading, http.server, functools
 from playwright.async_api import async_playwright
 SITE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'dist', 'site')
