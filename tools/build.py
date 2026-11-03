@@ -1475,7 +1475,7 @@ def main():
     for rel in lands:
         open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(landing_page(loaded, rel))
     all_pages = {**lands, **all_pages}
-    notifs = {rel: None for rel in NOTIFS if any(c['id'] == NOTIFS[rel]['exam'] for c, _, _ in loaded)}
+    notifs = {rel: None for rel in NOTIFS if not NOTIFS[rel].get('exam') or any(c['id'] == NOTIFS[rel]['exam'] for c, _, _ in loaded)}
     for rel in notifs:
         open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(notif_page(loaded, rel))
     mocks = {}
@@ -2336,14 +2336,16 @@ ol.clist li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;ba
 """
 
 
-def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, conf=None, ename=None, at_root=False):
+def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, conf=None, ename=None, at_root=False, foot_text=None):
     ename = ename or (conf['name'] if conf else 'APPSC Group-II')
     rootup = '' if at_root else '../' * (rel_depth + (1 if conf and conf.get('dir') else 0))
     up = '../' * rel_depth
     pb = conf['pb'] if conf else '/appsc-group-2/'
     board = conf['board'] if conf else 'APPSC'
     gf = conf['l2']['gf'] if conf else ''
-    if conf and conf.get('foot'):
+    if foot_text:
+        foot = foot_text
+    elif conf and conf.get('foot'):
         foot = conf['foot']
     elif board == 'APPSC':
         foot = (f'Questions and answers are taken from APPSC\'s official final keys. Explanations are by Jupudi Anil Kumar, '
@@ -2567,7 +2569,7 @@ def llms_txt(loaded, grand):
     for rel, X in LANDINGS.items():
         if any(c['board'] == X['board'] for c in exams): L.append(f'- [{X["title"].split(" | ")[0]}]({SITE_URL}/{rel})')
     for rel, N in NOTIFS.items():
-        if any(c['id'] == N['exam'] for c in exams): L.append(f'- [{re.sub("<[^>]+>", "", N["h1"])}]({SITE_URL}/{rel})')
+        if not N.get('exam') or any(c['id'] == N['exam'] for c in exams): L.append(f'- [{re.sub("<[^>]+>", "", N["h1"])}]({SITE_URL}/{rel})')
     L += ['', '## About', f'- [About Jupudi Anil Kumar]({SITE_URL}/appsc-group-2/about/): civil-services educator, 2.5 years of UPSC, APPSC and TGPSC teaching and mentorship.',
           f'- [Fund Learn with Anil]({SITE_URL}/funders.html): a one-person project built to be student-friendly and to democratise learning, with the goal of 1 lakh PYQs of various government exams under one roof for ₹45; Anil needs help from funders, which in turn helps him help the students.',
           f'- Instagram: https://www.instagram.com/{INSTAGRAM}/ · Telegram: https://t.me/learn_with_anil06 · YouTube: https://www.youtube.com/@learn_with_anil06', f'- Sitemap: {SITE_URL}/sitemap.xml', '']
@@ -3401,7 +3403,7 @@ NOTIFS = {
        'Paper II Mathematics is SSC standard: arithmetic, algebra, trigonometry, geometry, mensuration and statistics.'),
     ]),
   'ap-police-si-notification-2026.html': dict(
-    exam='ap-police-si', crumb='AP Police SI Notification 2026',
+    exam='ap-police-si', board='SLPRB AP', site='slprb.ap.gov.in', crumb='AP Police SI Notification 2026',
     # Anil, 2 Nov 2026. SLPRB AP Rc.No.81/SLPRB/Rect.1/2026 and press note of 16 Sep 2026 (slprb.ap.gov.in/2026_PDFS/SLPRB_AP_SI_Notification_2026.pdf)
     title='AP Police SI Notification 2026 – SLPRB AP, 378 SI Posts (Civil, AR, SPF), Eligibility, Exam Pattern & Previous Papers | Learn with Anil',
     desc='AP Police SI Notification 2026 (SLPRB AP Rc.No.81/2026, 16 September 2026): 378 posts of SCT SI (Civil), RSI (AR) and SI (SPF), eligibility, age, height, fee, the Preliminary and Final '
@@ -3444,7 +3446,7 @@ NOTIFS = {
         'geography of India; Indian polity and economy, including rural development, planning and economic reforms.']),
     ]),
   'ap-police-constable-notification-2026.html': dict(
-    exam='ap-police-constable', crumb='AP Police Constable Notification 2026',
+    exam='ap-police-constable', board='SLPRB AP', site='slprb.ap.gov.in', crumb='AP Police Constable Notification 2026',
     # Anil, 2 Nov 2026. SLPRB AP Rc.No.91/SLPRB/Rect.2/2026 and press note of 16 Sep 2026 (slprb.ap.gov.in/2026_PDFS/SLPRB_AP_PC_Notification_2026.pdf)
     title='AP Police Constable Notification 2026 – SLPRB AP, 1,156 PC, Firemen & Warder Posts, Eligibility, Exam Pattern & Previous Papers | Learn with Anil',
     desc='AP Police Constable Notification 2026 (SLPRB AP Rc.No.91/2026, 16 September 2026): 1,156 posts of SCT PC (Civil), PC (AR), Firemen and Warders, eligibility, age, height, fee, '
@@ -3677,25 +3679,37 @@ def eo_syllabus_notif():
 
 def notif_page(loaded, rel):
     N = NOTIFS[rel]
-    conf, papers, questions = next(x for x in loaded if x[0]['id'] == N['exam'])
+    hit = next((x for x in loaded if x[0]['id'] == N['exam']), None) if N.get('exam') else None
+    conf, papers, questions = hit if hit else (None, [], [])
+    board, site = N.get('board', 'APPSC'), N.get('site', 'psc.ap.gov.in')   # who issued it, and their website (for the source note)
     can = f'{SITE_URL}/{rel}'
-    body = [f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>',
-            f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>']
+    body = [f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>']
+    if conf: body.append(f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>')
     for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
         if kind == 'table': body.append(facts_table(data))
         elif kind == 'table+': body.append(facts_table(data[1], data[0]))
         elif kind == 'list': body.append('<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in data) + '</ul>')
+        elif kind == 'steps': body.append('<ol>' + ''.join(f'<li>{esc(x)}</li>' for x in data) + '</ol>')
         elif kind == 'note': body.append(f'<p class="note">{esc(data)}</p>')
         elif kind == 'html': body.append(data)   # trusted markup written here (links)
         else: body.append(f'<p>{esc(data)}</p>')
-    body.append(f'<h2>Start with the previous papers</h2><p>Every {esc(conf["name"])} paper on this site comes with the answers from APPSC\'s final key and a short '
-                f'explanation in English and Telugu. Practise a paper online or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
+    if N.get('related'):   # other pages for the same exam (hall ticket, answer key, syllabus, salary…)
+        body.append('<h2>More on this exam</h2><ul>' + ''.join(f'<li><a href="/{r}">{esc(re.sub("<[^>]+>", "", NOTIFS[r]["h1"]))}</a></li>'
+                                                            for r in N['related'] if r in NOTIFS and r != rel) + '</ul>')
+    if conf and not N.get('no_practice'):
+        key = 'the official final key' if board != 'APPSC' else "APPSC's final key"
+        body.append(f'<h2>Start with the previous papers</h2><p>Every {esc(conf["name"])} paper on this site comes with the answers from {key} and a short '
+                    f'explanation in English and Telugu. Practise a paper online or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
+    elif not conf:
+        body.append(N.get('tail_html', '<h2>Practise previous papers</h2><p><a href="/">Learn with Anil</a> has previous year questions with answers for APPSC, TGPSC, '
+                                       'TS and AP Police, SSC and UPSC exams. <a href="/appsc-pyqs.html">All APPSC previous papers</a> · <a href="/ts-police-pyqs.html">TS Police previous papers</a></p>'))
     more = ''.join(f'; <a href="{u}" rel="nofollow">{esc(nm)}</a>' for u, nm in N.get('more_src', []))
     body.append(f'<p class="note">Source: <a href="{N["pdf"]}" rel="nofollow">{esc(N["pdfname"])}</a>{more}. Dates and vacancies can change with corrigenda; '
-                f'always check the official website psc.ap.gov.in before applying. Learn with Anil is not connected with APPSC.</p>')
-    return static_page(0, N['title'], N['desc'], can, N['h1'], esc(N['lede']), ''.join(body),
-                       [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + conf['pb']), (N['crumb'], can)], conf, at_root=True)
+                f'always check the official website {esc(site)} before applying. Learn with Anil is not connected with {esc(board)}.</p>')
+    crumbs = [('Home', SITE_URL + '/')] + ([(conf['name'], SITE_URL + conf['pb'])] if conf else []) + [(N['crumb'], can)]
+    return static_page(0, N['title'], N['desc'], can, N['h1'], esc(N['lede']), ''.join(body), crumbs, conf, ename=N.get('ename'), at_root=True,
+                       foot_text=None if conf else f'Exam information compiled from {board}\'s official notifications by Jupudi Anil Kumar, Learn with Anil. Not affiliated with {board}.')
 
 
 ROOT_NOTES = ('Study material: every book on the site',   # the start page's Study Material lists every book, for every exam
