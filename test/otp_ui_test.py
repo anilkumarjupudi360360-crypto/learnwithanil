@@ -29,7 +29,7 @@ async def run(br, base, mode):
     await pg.route('https://pay.test/**', api); await pg.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
     await pg.route('https://accounts.google.com/**', lambda r: r.fulfill(status=200, body=''))
     await pg.goto(base + '/ts-police-si/account/'); await pg.wait_for_timeout(900)
-    await pg.click('a[href="#join"]'); await pg.wait_for_timeout(500)
+    await pg.click('text=Register with phone & email'); await pg.wait_for_timeout(600)
     async def fill(email):
         await pg.fill('#joinForm input[name=name]', 'Ravi Kumar'); await pg.fill('#joinForm input[name=phone]', '9959346357')
         await pg.fill('#joinForm input[name=email]', email); await pg.fill('#joinForm input[name=district]', 'Guntur')
