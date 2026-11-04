@@ -13,11 +13,12 @@
  *
  * What it does
  *  - buy:     creates an Instamojo payment request for a pass (price fixed here, never taken from the browser)
- *             and returns Instamojo's checkout link.
- *  - verify:  after Instamojo sends the student back to learnwithanil.in, asks Instamojo whether that payment
- *             request was paid and, if so, records the pass.
- *  - webhook: Instamojo also calls this script when a payment succeeds (checked with the private salt), so a pass
- *             is recorded even if the student closes the page.
+ *             and returns Instamojo's checkout link; or, when Cashfree is switched on, a Cashfree order and its payment
+ *             session, which the website opens with Cashfree's checkout script.
+ *  - verify:  after Instamojo or Cashfree sends the student back to learnwithanil.in, asks that gateway whether the payment
+ *             request or order was paid and, if so, records the pass.
+ *  - webhook: Instamojo (form-encoded, signed with the private salt) and Cashfree (JSON, checked by asking Cashfree) also
+ *             call this script when a payment succeeds, so a pass is recorded even if the student closes the page.
  *  - passes:  which passes (and free trial) a registered phone number has; starts the free trial the first time.
  *  - mock:    the key of a released mock (its encrypted file is on the website), for a valid PYQ Pass or mock pass (or a free
  *             mock). Also 'bk-<book id>' (key of an encrypted study book) and 'bb-code' (the Bahubali access code) for any
@@ -32,6 +33,14 @@
  *   INSTAMOJO_CLIENT_ID, INSTAMOJO_CLIENT_SECRET   (Instamojo dashboard → API & Plugins; "API v2")
  *   INSTAMOJO_SALT                                 (Instamojo private salt, used to check webhooks)
  *   INSTAMOJO_API (optional)                       defaults to https://api.instamojo.com
+ *   PAY_GATEWAY                                    'cashfree' sends every new checkout to Cashfree; anything else (or not set) keeps Instamojo
+ *   CASHFREE_APP_ID, CASHFREE_SECRET               (Cashfree dashboard → Developers → API Keys; the production keys)
+ *   CASHFREE_ENV (optional)                        'sandbox' to try Cashfree with its test keys; defaults to production
+ *
+ * Cashfree (Anil, 4 Nov 2026): Instamojo's free plan takes 5% + ₹3 (+ GST) of every ₹45 pass, about ₹6.20. New checkouts move to
+ * Cashfree once PAY_GATEWAY = cashfree and its two keys are set. Payments already made on Instamojo keep working (verify, webhook
+ * and "Link my payment" with a MOJO id); Cashfree orders have ids like LWA261104K7Q2ZX (LWA + date + 6 characters), which is also
+ * the "Order ID" on the student's Cashfree receipt.
  */
 
 const SITE = 'https://learnwithanil.in/';
@@ -58,6 +67,7 @@ function doPost(e) {
   try {
     if (e && e.parameter && e.parameter.mac) return webhook(formParams_(e));   // Instamojo → form-encoded, signed
     const b = JSON.parse((e && e.postData && e.postData.contents) || '{}');
+    if (b && b.data && b.data.order && /WEBHOOK/.test(String(b.type || ''))) return cfWebhook_(b);   // Cashfree → JSON (notify_url)
     const exam = String(b.exam || '');
     if (!/^[a-z0-9-]{2,40}$/.test(exam)) return out({ok: false, error: 'Unknown exam.'});
     // Student accounts (Anil, 2 Nov 2026: "student logins ... no need to login again and again ... like JioHotstar").
@@ -154,6 +164,67 @@ function im_(method, path, payload) {
   return JSON.parse(t);
 }
 
+// ---------- Cashfree Payments (PG API, version 2026-01-01) ----------
+const CF_VERSION = '2026-01-01';
+function cfOn_() { return prop('PAY_GATEWAY').toLowerCase() === 'cashfree' && !!prop('CASHFREE_APP_ID') && !!prop('CASHFREE_SECRET'); }
+function cfMode_() { return prop('CASHFREE_ENV').toLowerCase() === 'sandbox' ? 'sandbox' : 'production'; }
+function cfApi_() { return cfMode_() === 'sandbox' ? 'https://sandbox.cashfree.com/pg' : 'https://api.cashfree.com/pg'; }
+function cf_(method, path, payload) {
+  const opt = {method: method, muteHttpExceptions: true, contentType: 'application/json',
+    headers: {'x-client-id': prop('CASHFREE_APP_ID'), 'x-client-secret': prop('CASHFREE_SECRET'), 'x-api-version': CF_VERSION}};
+  if (payload) opt.payload = JSON.stringify(payload);
+  const r = UrlFetchApp.fetch(cfApi_() + path, opt);
+  const t = r.getContentText() || '{}';
+  if (r.getResponseCode() >= 300) throw new Error('Cashfree ' + path + ': ' + r.getResponseCode() + ' ' + t.slice(0, 300));
+  return JSON.parse(t);
+}
+function isCfOrder_(id) { return /^LWA[0-9A-Z]{8,30}$/.test(String(id || '')); }
+function cfOrderId_() {   // LWA + yymmdd + 6 characters, e.g. LWA261104K7Q2ZX: short enough for a student to read out from the receipt
+  return 'LWA' + today_().replace(/-/g, '').slice(2) + Utilities.getUuid().replace(/-/g, '').toUpperCase().slice(0, 6);
+}
+function cfPaymentId_(id) {   // Cashfree's id of the successful payment on order `id` ('' if it can't be read right now)
+  try {
+    const ps = cf_('get', '/orders/' + encodeURIComponent(id) + '/payments');
+    const s = (Array.isArray(ps) ? ps : []).filter(p => String(p.payment_status) === 'SUCCESS')[0];
+    return s ? 'CF' + String(s.cf_payment_id) : '';
+  } catch (e) { log_('cashfree-payments-error', String(e)); return ''; }
+}
+
+function cfBuy_(b, phone, amount, purpose, passExam, kind, back) {
+  const id = cfOrderId_(), name = String(b.name || '').trim(), email = String(b.email || '').trim();
+  const cust = {customer_id: 'lwa' + phone, customer_phone: phone};
+  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && email.length <= 100) cust.customer_email = email;
+  if (/^[A-Za-z][A-Za-z .'-]{2,99}$/.test(name)) cust.customer_name = name;   // optional; a name in Telugu or Hindi is simply left out
+  const o = cf_('post', '/orders', {order_id: id, order_amount: amount, order_currency: 'INR', customer_details: cust,
+    order_meta: {return_url: back + (back.indexOf('?') < 0 ? '?' : '&') + 'cf_order=' + id, notify_url: ScriptApp.getService().getUrl()},
+    order_note: purpose});
+  if (!o.payment_session_id) throw new Error('Cashfree order ' + id + ': no payment_session_id');
+  sheet('requests', REQ_HEAD).appendRow([new Date(), id, phone, passExam, kind, amount, String(b.name || ''), String(b.email || ''), 'created']);
+  return {ok: true, gateway: 'cashfree', mode: cfMode_(), session: o.payment_session_id, order: id};
+}
+
+// Asks Cashfree itself whether order `id` was paid in full and, if so, records the pass. Returns true when paid.
+function cfConfirmPaid_(req, id, source) {
+  const o = cf_('get', '/orders/' + encodeURIComponent(id));
+  if (String(o.order_status || '') !== 'PAID' || Number(o.order_amount) < Number(req.amount || PYQ.price)) return false;
+  req.request = id;
+  grant_(req, cfPaymentId_(id) || ('cf-' + id), o.order_amount, source);
+  return true;
+}
+
+// Cashfree calls this script (notify_url) when a payment on an order succeeds or fails. Apps Script cannot read the request headers,
+// so Cashfree's signature can't be checked here: the message itself is never trusted, and the order is looked up on Cashfree with the
+// secret key before anything is recorded (the same check as "verify").
+function cfWebhook_(body) {
+  const id = String(body.data.order.order_id || '');
+  const req = isCfOrder_(id) ? requestRow_(id) : null;
+  if (!req) { log_('cf-webhook-unknown', String(body.type) + ' ' + id); return out({ok: true}); }
+  let paid = false;
+  try { paid = cfConfirmPaid_(req, id, 'cf-webhook'); } catch (e) { log_('cf-webhook-error', String(e && e.stack || e)); }
+  if (!paid && /FAIL|DROP/.test(String(body.type))) log_('cf-payment-failed', id + ' ' + JSON.stringify(((body.data.payment || {}).payment_message) || ''));
+  return out({ok: true});
+}
+
 // ---------- actions ----------
 const REQ_HEAD = ['time', 'request_id', 'phone', 'exam', 'kind', 'amount', 'name', 'email', 'status'];
 
@@ -161,12 +232,13 @@ function buy(b, exam) {
   const kind = 'pyq';   // Anil, 26 Oct 2026: one ₹45 PYQ Pass for everything; a 'mock' or 'combo' buy from an old page opens it too
   const phone = phoneOf(b.phone);
   if (!phone) return {ok: false, error: b.acct ? 'Please add your mobile number first (My Account).' : 'Please register with a valid 10-digit mobile number first.'};
-  if (!prop('INSTAMOJO_CLIENT_ID') || !prop('INSTAMOJO_CLIENT_SECRET')) return {ok: false, error: 'Online payment opens in a few hours. Please try again later today.'};
   const amount = kind === 'mock' ? MOCKS[exam].price : kind === 'combo' ? COMBO.price : PYQ.price;
   const purpose = (kind === 'mock' ? MOCKS[exam].name : kind === 'combo' ? COMBO.name : PYQ.purpose).slice(0, 30);
   const passExam = kind === 'mock' ? exam : kind === 'combo' ? 'combo' : 'all';
   let back = String(b.back || '');
-  if (back.indexOf(SITE) !== 0) back = SITE;
+  if (back.indexOf(SITE) !== 0 || back.length > 180) back = SITE;
+  if (cfOn_()) return cfBuy_(b, phone, amount, purpose, passExam, kind, back);
+  if (!prop('INSTAMOJO_CLIENT_ID') || !prop('INSTAMOJO_CLIENT_SECRET')) return {ok: false, error: 'Online payment opens in a few hours. Please try again later today.'};
   const pr = im_('post', '/v2/payment_requests/', {
     purpose: purpose, amount: String(amount), buyer_name: String(b.name || '').slice(0, 100),
     email: String(b.email || '').slice(0, 100), phone: phone, redirect_url: back,
@@ -190,8 +262,10 @@ function grant_(req, paymentId, amount, source) {
     const v = sh.getDataRange().getValues();
     // a combo is one payment recorded as a mock pass for each of its exams (the amount goes on the first row)
     const rows = req.kind === 'combo' ? COMBO.exams.map(ex => [ex, 'mock']) : [[req.exam, req.kind]];
+    const cfReq = isCfOrder_(req.request);   // a Cashfree order is paid once: a second webhook or verify for it is a repeat, whatever payment id it read
     rows.forEach(([ex, kind], k) => {
-      for (let i = 1; i < v.length; i++) if (paymentId && String(v[i][5]) === String(paymentId) && String(v[i][2]) === ex) return;   // already recorded
+      for (let i = 1; i < v.length; i++) if (String(v[i][2]) === ex && ((paymentId && String(v[i][5]) === String(paymentId)) ||
+          (cfReq && String(v[i][6]) === String(req.request) && String(v[i][1]) === req.phone && String(v[i][8]).indexOf('claim') !== 0))) return;   // already recorded
       const amt = k ? 0 : (amount || req.amount);
       sh.appendRow([new Date(), req.phone, ex, kind, untilFor(kind, ex), paymentId || '', req.request || '', amt,
                     req.kind === 'combo' ? source + ' (combo)' : source, req.email.toLowerCase()]);
@@ -219,7 +293,8 @@ function verify(b, exam) {
   const id = String(b.request || '');
   const req = requestRow_(id);
   if (!req || !(req.exam === exam || req.exam === 'all' || (req.kind === 'combo' && COMBO.exams.indexOf(exam) >= 0))) return {ok: false, error: 'Payment not found.'};
-  if (!confirmPaid_(req, id, String(b.payment || ''), 'verify')) return {ok: false, error: 'The payment is not complete yet. If money was taken, it will show here within a few minutes.'};
+  const paid = isCfOrder_(id) ? cfConfirmPaid_(req, id, 'verify') : confirmPaid_(req, id, String(b.payment || ''), 'verify');
+  if (!paid) return {ok: false, error: 'The payment is not complete yet. If money was taken, it will show here within a few minutes.'};
   return passesFor(req.phone, exam, b.device, req.email, false);
 }
 
@@ -354,6 +429,10 @@ function mock(b, exam) {   // the key of a sealed mock, book or the Bahubali cod
 function checkSetup() {
   Logger.log('Spreadsheet: ' + (prop('SHEET_ID') ? book_().getName() : 'SHEET_ID MISSING'));
   ['INSTAMOJO_CLIENT_ID', 'INSTAMOJO_CLIENT_SECRET', 'INSTAMOJO_SALT'].forEach(k => Logger.log(k + ': ' + (prop(k) ? 'set' : 'MISSING')));
+  ['CASHFREE_APP_ID', 'CASHFREE_SECRET'].forEach(k => Logger.log(k + ': ' + (prop(k) ? 'set' : 'not set')));
+  Logger.log('New checkouts go to: ' + (cfOn_() ? 'Cashfree (' + cfMode_() + ')' : 'Instamojo') + '   (PAY_GATEWAY = ' + (prop('PAY_GATEWAY') || 'not set') + ')');
+  if (cfOn_()) { try { cf_('get', '/orders/LWA000000CHECK'); Logger.log('Cashfree keys: accepted'); }
+                 catch (e) { Logger.log(/: 404 /.test(String(e)) ? 'Cashfree keys: accepted' : 'Cashfree keys: ' + String(e).slice(0, 200)); } }
   Logger.log('Web app URL: ' + ScriptApp.getService().getUrl());
 }
 
@@ -438,8 +517,8 @@ function setPhone(b, S, exam) {
     if (phone !== S.phone) {
       const v = sheet('passes', PASS_HEAD).getDataRange().getValues(), pid = String(b.payment || '').trim();
       const rows = v.slice(1).filter(r => String(r[1]) === phone);
-      if (rows.length && !rows.some(r => String(r[9] || '').toLowerCase() === S.email || (pid && String(r[5]) === pid)))
-        return {ok: false, needPayment: true, error: 'This number has a PYQ Pass bought with another email. Enter the payment ID from your payment SMS or email (it starts with MOJO) to link it.'};
+      if (rows.length && !rows.some(r => String(r[9] || '').toLowerCase() === S.email || (pid && (String(r[5]).toUpperCase() === pid.toUpperCase() || String(r[6]).toUpperCase() === pid.toUpperCase()))))
+        return {ok: false, needPayment: true, error: 'This number has a PYQ Pass bought with another email. Enter the payment ID or order ID from your payment SMS or email (it starts with MOJO or LWA) to link it.'};
     }
     const sh = S.acc.sh;
     sh.getRange(S.acc.row, 3, 1, 3).setValues([[cell_(name), phone, cell_(district)]]);
@@ -455,7 +534,7 @@ function me(S, exam, token) {
   const pv = sheet('passes', PASS_HEAD).getDataRange().getValues(), pays = [];
   for (let i = 1; i < pv.length; i++) {
     const rp = String(pv[i][1]), re = String(pv[i][9] || '').toLowerCase();
-    if ((S.phone && rp === S.phone) || re === S.email) pays.push({on: pv[i][0] instanceof Date ? ymd_(pv[i][0]) : String(pv[i][0]), what: String(pv[i][3]) === 'pyq' ? 'PYQ Pass' : 'Mock pack', until: day_(pv[i][4]), id: String(pv[i][5]), amount: pv[i][7]});
+    if ((S.phone && rp === S.phone) || re === S.email) pays.push({on: pv[i][0] instanceof Date ? ymd_(pv[i][0]) : String(pv[i][0]), what: String(pv[i][3]) === 'pyq' ? 'PYQ Pass' : 'Mock pack', until: day_(pv[i][4]), id: isCfOrder_(pv[i][6]) ? String(pv[i][6]) : String(pv[i][5]), amount: pv[i][7]});
   }
   return {ok: true, account: pub_(S.acc), passes: passesFor(S.phone, exam, '', S.email, false, S).passes, devices: devices, payments: pays};
 }
@@ -469,27 +548,32 @@ function logout(S, token, target) {   // target = a device id from 'me' (first 1
   return {ok: true};
 }
 
-// "Paid already but it still shows locked?": link a payment by its Instamojo payment ID (from the student's own receipt). Works for
-// a logged-in account or a phone + email registration. One payment can be linked to one more number only once.
+// "Paid already but it still shows locked?": link a payment by its Instamojo payment ID (MOJO…) or Cashfree order ID (LWA…), both on the
+// student's own receipt. Works for a logged-in account or a phone + email registration. One payment can be linked to one more number only once.
 function claim(b, exam) {
   const pid = String(b.payment || '').trim().toUpperCase();
-  if (!/^MOJO[0-9A-Z]{8,30}$/.test(pid)) return {ok: false, error: 'Please enter the payment ID exactly as in your payment SMS or email (it starts with MOJO).'};
+  const cf = isCfOrder_(pid);
+  if (!cf && !/^MOJO[0-9A-Z]{8,30}$/.test(pid)) return {ok: false, error: 'Please enter the payment ID or order ID exactly as in your payment SMS or email (it starts with MOJO or LWA).'};
   const phone = phoneOf(b.phone), email = String(b.email || '').trim().toLowerCase();
   if (!phone) return {ok: false, error: b.acct ? 'Please add your mobile number first.' : 'Please register with your phone number first.'};
   const lock = LockService.getScriptLock(); lock.waitLock(20000);
   try {
     const sh = sheet('passes', PASS_HEAD), v = sh.getDataRange().getValues();
-    const rows = v.slice(1).filter(r => String(r[5]).toUpperCase() === pid);
+    const rows = v.slice(1).filter(r => String(cf ? r[6] : r[5]).toUpperCase() === pid);
     if (rows.some(r => String(r[1]) === phone)) return Object.assign(passesFor(phone, exam, b.device, email, false, b.acct || null), {note: 'This payment is already linked to your number.'});
     if (rows.filter(r => String(r[8]).indexOf('claim') === 0).length) return {ok: false, error: 'This payment is already linked to another number. Please write to us at learnwithanil.in/help.html.'};
     let src = rows[0];
-    if (!src) {   // not recorded yet (webhook missed): ask Instamojo directly
+    if (!src && cf) {   // not recorded yet (webhook missed): ask Cashfree directly
+      let o = {}; try { o = cf_('get', '/orders/' + encodeURIComponent(pid)); } catch (e) { o = {}; }
+      if (String(o.order_status) !== 'PAID' || Number(o.order_amount) < PYQ.price) return {ok: false, error: 'We could not find this payment. Please check the ID, or write to us at learnwithanil.in/help.html with a screenshot.'};
+      sh.appendRow([new Date(), phone, 'all', 'pyq', inMonths_(PYQ.months), cfPaymentId_(pid) || ('cf-' + pid), pid, o.order_amount, 'claim (cashfree)', email]);
+    } else if (!src) {   // not recorded yet (webhook missed): ask Instamojo directly
       let p = {}; try { p = im_('get', '/v2/payments/' + encodeURIComponent(pid) + '/'); } catch (e) { p = {}; }
       if (!p || p.status !== true || Number(p.amount) < PYQ.price) return {ok: false, error: 'We could not find this payment. Please check the ID, or write to us at learnwithanil.in/help.html with a screenshot.'};
       sh.appendRow([new Date(), phone, 'all', 'pyq', inMonths_(PYQ.months), pid, String(p.payment_request || ''), p.amount, 'claim (instamojo)', email]);
     } else {
       if (String(src[3]) !== 'pyq' || day_(src[4]) < today_()) return {ok: false, error: 'This payment is not an active PYQ Pass.'};
-      sh.appendRow([new Date(), phone, String(src[2]), 'pyq', day_(src[4]), pid, String(src[6]), 0, 'claim (from ' + String(src[1]).slice(-4) + ')', email]);
+      sh.appendRow([new Date(), phone, String(src[2]), 'pyq', day_(src[4]), String(src[5]), String(src[6]), 0, 'claim (from ' + String(src[1]).slice(-4) + ')', email]);
     }
     log_('claim', pid + ' -> ' + phone);
   } finally { lock.releaseLock(); }

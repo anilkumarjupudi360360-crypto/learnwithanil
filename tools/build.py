@@ -1493,7 +1493,9 @@ def main():
     open(os.path.join(DIST, 'site', 'help.html'), 'w', encoding='utf-8').write(help_page(loaded))
     open(os.path.join(DIST, 'site', 'privacy.html'), 'w', encoding='utf-8').write(privacy_page())
     open(os.path.join(DIST, 'site', 'terms.html'), 'w', encoding='utf-8').write(terms_page())
-    all_pages = {**all_pages, 'help.html': None, 'privacy.html': None, 'terms.html': None}
+    for fn, page in (('refund.html', refund_page), ('delivery.html', delivery_page), ('contact.html', contact_page)):
+        open(os.path.join(DIST, 'site', fn), 'w', encoding='utf-8').write(page())
+    all_pages = {**all_pages, 'help.html': None, 'privacy.html': None, 'terms.html': None, 'refund.html': None, 'delivery.html': None, 'contact.html': None}
     open(os.path.join(DIST, 'site', 'funders.html'), 'w', encoding='utf-8').write(funders_page(loaded))
     # Anil, 28 Oct 2026: tapping Practise / Start on the PYQs, mock-test and sectional pages felt slow on phones, because the app
     # page then downloads the exam's question data (0.2-2.3 MB). These pages are where students go next into the app, so they
@@ -2387,7 +2389,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -2592,9 +2594,9 @@ def help_page(loaded):
     cats = ['Payment or All-in-One Pass', 'Mock test pack', 'A question or answer', 'Website not working', 'Refund', 'Other']
     faq = [
         ('I paid, but the All-in-One Pass or mock pack has not opened.',
-         'Open any previous paper and tap "I have paid · check". The pass is linked to the mobile number and email you registered with, so use the same ones you paid with. One pass works on up to 3 phones or computers. If it still does not open, send the form below with your Instamojo payment ID (it starts with MOJO).'),
+         'Open any previous paper and tap "I have paid · check". The pass is linked to the mobile number and email you registered with, so use the same ones you paid with. One pass works on up to 3 phones or computers. If it still does not open, send the form below with the payment ID or order ID from your payment SMS or email (it starts with MOJO or LWA).'),
         ('Money was taken from my account, but the payment failed.',
-         'A failed payment is returned automatically by Instamojo and your bank, usually within 5–7 working days. If it is not back by then, send the form with the payment ID or the UPI reference number.'),
+         'A failed payment is returned automatically by the payment gateway and your bank, usually within 5–7 working days. If it is not back by then, send the form with the payment ID or the UPI reference number.'),
         ('I think an answer is wrong.',
          'Answers come from the official final key of the recruiting body. Where sources disagree, the explanation says so. Send the form with the paper and question number, and we will check it and reply.'),
         ('My test closed, or the page went back to the start.',
@@ -2613,7 +2615,7 @@ Every complaint gets a ticket number, so you can refer to it later.</p>
 <p><label>Email (optional)<br><input name="email" type="email" maxlength="100" autocomplete="email" style="width:100%;padding:9px;font-size:16px"></label></p>
 <p><label>Exam<br><select name="exam" style="width:100%;padding:9px;font-size:16px"><option value="site">Not about one exam</option>{exams}</select></label></p>
 <p><label>What is it about?<br><select name="category" style="width:100%;padding:9px;font-size:16px">{''.join(f'<option>{esc(c)}</option>' for c in cats)}</select></label></p>
-<p><label>Payment ID, if it is about a payment (optional)<br><input name="payment_id" maxlength="60" placeholder="MOJO… or UPI reference" style="width:100%;padding:9px;font-size:16px"></label></p>
+<p><label>Payment ID, if it is about a payment (optional)<br><input name="payment_id" maxlength="60" placeholder="MOJO…, LWA… or UPI reference" style="width:100%;padding:9px;font-size:16px"></label></p>
 <p><label>Your complaint or doubt<br><textarea name="message" required maxlength="2000" rows="5" style="width:100%;padding:9px;font-size:16px"></textarea></label></p>
 <p class="muted" style="font-size:14px">Your details are used only to answer this complaint.</p>
 <button class="cta" type="submit" style="border:0;cursor:pointer;font-size:16px">Send</button>
@@ -2641,7 +2643,7 @@ if(r&&r.ok){{f.reset();m.textContent='Received. Your ticket number is '+r.ticket
 def privacy_page():
     """/privacy.html: privacy policy (2 Nov 2026), written for the student accounts with "Sign in with Google": Google's consent
     screen links here. States what the site really collects (registration form, Google name and email, phone, sessions, payments
-    through Instamojo, test progress kept on the device, Google Analytics) and how a student can get it corrected or deleted."""
+    through Instamojo or Cashfree Payments, test progress kept on the device, Google Analytics) and how a student can get it corrected or deleted."""
     can = SITE_URL + '/privacy.html'
     sec = [
         ('What we collect',
@@ -2650,7 +2652,7 @@ def privacy_page():
          'your Google password and we do not get access to your Gmail, Drive, contacts or anything else in your Google account.</li>'
          '<li><b>When you are logged in:</b> a login record for each phone or computer (the type of device and browser, when you last used it), '
          'so that you can see your devices on the My Account page and log out of any of them. At most 3 devices stay logged in at a time.</li>'
-         '<li><b>When you pay:</b> the payment is made on Instamojo\'s page. We receive the payment ID, amount, date, and the name, phone and '
+         '<li><b>When you pay:</b> the payment is made on the secure page of our payment gateway (Instamojo or Cashfree Payments). We receive the payment ID, amount, date, and the name, phone and '
          'email given there. We never see or store your card, UPI or bank details.</li>'
          '<li><b>Complaints:</b> what you send through the help form.</li>'
          '<li><b>Visits:</b> pages visited are counted with Google Analytics, which uses cookies.</li></ul>'),
@@ -2663,7 +2665,7 @@ def privacy_page():
          'We do not sell or rent your details, and we do not use them for advertising.</p>'),
         ('Where it is kept and who can see it',
          '<p>Your details are kept in a private Google Sheet in Learn with Anil\'s Google account, which only Learn with Anil can open. '
-         'They are shared only with the services that make the site work: Google (sign-in, storage and visit counts), Instamojo (payments) and '
+         'They are shared only with the services that make the site work: Google (sign-in, storage and visit counts), Instamojo and Cashfree Payments (payments) and '
          'GitHub Pages (which hosts the site), or with the authorities when the law requires it.</p>'),
         ('How long we keep it',
          '<p>For as long as you have an account or a pass, and after that only as long as needed for payment records and the law. '
@@ -2678,7 +2680,7 @@ def privacy_page():
          f'{CONTACT_EMAIL}</a><br>Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(" ", "")}">{CONTACT_PHONE}</a></p>'
          '<p class="muted">If we change this policy, the new version will be posted on this page with its date.</p>'),
     ]
-    body = '<p class="muted">Last updated: 2 November 2026</p>' + ''.join(f'<h2>{esc(h)}</h2>{t}' for h, t in sec)
+    body = '<p class="muted">Last updated: 4 November 2026</p>' + ''.join(f'<h2>{esc(h)}</h2>{t}' for h, t in sec)
     return static_page(0, 'Privacy Policy | Learn with Anil', 'What Learn with Anil (learnwithanil.in) collects when you register, sign in with Google or pay, why, where it is kept, and how to get it corrected or deleted.',
                        can, 'Privacy Policy', esc('What we collect when you register, sign in or pay, and what we do with it.'),
                        body, [('Home', SITE_URL + '/'), ('Privacy policy', can)], None, ename='every exam', at_root=True)
@@ -2700,11 +2702,12 @@ def terms_page():
         ('Passes and payments',
          f'<p>The All-in-One Pass costs ₹{PAY["pyq_price"]} and opens everything on the site (every previous paper with explanations, the mock '
          'test series and the study booklets, including exams added later) for 12 months from the date of payment. Some papers and '
-         'mocks are free for registered students, as marked on the site. Payments are made through Instamojo. If you have paid but '
+         'mocks are free for registered students, as marked on the site. Payments are made through our payment gateways, Instamojo and Cashfree Payments. If you have paid but '
          'your pass has not opened, use "Link my payment" on the My Account page or the <a href="/help.html">help page</a>.</p>'),
         ('Refunds',
          '<p>If you paid and the pass or test pack does not work, and we cannot fix it within 7 days of your complaint, you get the full '
-         'amount back to the account you paid from. A failed payment is returned by Instamojo and your bank, usually within 5–7 working days.</p>'),
+         'amount back to the account you paid from. A failed payment is returned by the payment gateway and your bank, usually within 5–7 working days. '
+         'The full <a href="/refund.html">refund and cancellation policy</a> has the details.</p>'),
         ('Fair use',
          '<p>The explanations, model answers, mock tests and notes are Learn with Anil\'s work. Use them for your own preparation; do not copy, '
          'resell, or share your account or paid content with others.</p>'),
@@ -2718,11 +2721,88 @@ def terms_page():
          f'<p>{esc(GRIEVANCE_OFFICER)}, Learn with Anil · <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a> · '
          f'<a href="tel:{CONTACT_PHONE.replace(" ", "")}">{CONTACT_PHONE}</a></p>'),
     ]
-    body = '<p class="muted">Last updated: 2 November 2026</p>' + ''.join(f'<h2>{esc(h)}</h2>{t}' for h, t in sec)
+    body = '<p class="muted">Last updated: 4 November 2026</p>' + ''.join(f'<h2>{esc(h)}</h2>{t}' for h, t in sec)
     return static_page(0, 'Terms of Use | Learn with Anil', 'Terms of use of learnwithanil.in: accounts and sign-in, the All-in-One Pass and mock test packs, payments, refunds and fair use.',
                        can, 'Terms of Use', esc('The rules for accounts, passes and payments on learnwithanil.in.'),
                        body, [('Home', SITE_URL + '/'), ('Terms of use', can)], None, ename='every exam', at_root=True)
 
+
+
+def _policy_page(fn, title, desc, h1, lede, crumb, sec):
+    can = SITE_URL + '/' + fn
+    body = '<p class="muted">Last updated: 4 November 2026</p>' + ''.join(f'<h2>{esc(h)}</h2>{t}' for h, t in sec)
+    return static_page(0, title + ' | Learn with Anil', desc, can, h1, esc(lede), body, [('Home', SITE_URL + '/'), (crumb, can)], None,
+                       ename='every exam', at_root=True)
+
+
+def _contact_html():
+    return (f'<p>{esc(GRIEVANCE_OFFICER)}, Learn with Anil (learnwithanil.in)<br>Email: <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a><br>'
+            f'Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(" ", "")}">{CONTACT_PHONE}</a> (10 am – 7 pm, Monday to Saturday)<br>'
+            'Complaint form: <a href="/help.html">Help &amp; grievances</a> (reply within 48 hours)</p>')
+
+
+def refund_page():
+    """/refund.html: refund and cancellation policy (4 Nov 2026), a page of its own because payment gateways (Cashfree) check for it
+    during KYC. Same promise as the Refunds part of /terms.html and /help.html: full refund if a paid pass does not work and is not fixed
+    within 7 days of the complaint; failed payments come back through the gateway and the bank."""
+    price = PAY['pyq_price']
+    return _policy_page('refund.html', 'Refund & Cancellation Policy',
+        f'Refund and cancellation policy of learnwithanil.in: the ₹{price} All-in-One Pass, failed and double payments, and how to ask for a refund.',
+        'Refund & Cancellation Policy', 'When you get your money back, and how to ask for it.', 'Refund policy', [
+        ('What you buy',
+         f'<p>The All-in-One Pass costs ₹{price}. It is a digital pass: it opens everything on learnwithanil.in (every previous paper with '
+         'explanations, the mock test series and the study books) for 12 months, as soon as the payment is confirmed. Nothing is posted to you; '
+         'see the <a href="/delivery.html">delivery policy</a>.</p>'),
+        ('Cancellation',
+         '<p>You can cancel at any time before paying by closing the payment page; nothing is charged. Because the pass opens the moment '
+         'the payment is confirmed, a paid pass cannot be cancelled afterwards, except as below.</p>'),
+        ('When you get a full refund',
+         '<ul><li><b>The pass does not work.</b> If you paid and your pass does not open, and we cannot fix it within 7 days of your '
+         'complaint, you get the full amount back.</li>'
+         '<li><b>You paid twice for the same pass.</b> The extra payment is refunded in full.</li>'
+         '<li><b>The payment failed but money was taken.</b> The payment gateway and your bank return it automatically, usually within '
+         '5–7 working days. If it is not back by then, send us the payment ID or the UPI reference number.</li></ul>'),
+        ('How a refund is paid',
+         '<p>To the same UPI ID, card or bank account you paid from, within 7 working days of our decision. Your bank may take a few more '
+         'working days to show it.</p>'),
+        ('How to ask',
+         '<p>Use the <a href="/help.html">help form</a> (choose "Refund"), email or WhatsApp us with your registered phone number and the '
+         'payment ID or order ID from your payment SMS or email. Every request gets a ticket number and a reply within 48 hours.</p>'
+         + _contact_html()),
+    ])
+
+
+def delivery_page():
+    """/delivery.html: delivery (shipping) policy (4 Nov 2026). Everything sold is digital and opens on the site; payment gateways
+    (Cashfree) ask for a shipping/delivery policy during KYC."""
+    return _policy_page('delivery.html', 'Delivery Policy',
+        'Delivery policy of learnwithanil.in: the All-in-One Pass is digital and opens online right after payment; nothing is shipped.',
+        'Delivery Policy', 'How and when you get what you paid for.', 'Delivery policy', [
+        ('Nothing is shipped',
+         '<p>Everything on Learn with Anil is digital. We do not send any physical books or parcels, so there are no shipping charges.</p>'),
+        ('When your pass opens',
+         '<p>The All-in-One Pass is linked to the mobile number and email you registered with. It opens on the website as soon as the payment '
+         'is confirmed, normally within a minute, on up to 3 phones or computers. The study books are PDF downloads on the site, opened by '
+         'the same pass.</p>'),
+        ('If it does not open',
+         '<p>Open any previous paper and tap "I have paid · check", or enter the payment ID or order ID from your payment SMS or email under '
+         '"Link my payment" on the <a href="/#account">My Account</a> page. If it still does not open, contact us and we will open it; '
+         'see the <a href="/refund.html">refund policy</a> if we cannot.</p>' + _contact_html()),
+    ])
+
+
+def contact_page():
+    """/contact.html: contact us (4 Nov 2026), a page of its own for payment gateway KYC (Cashfree); the same details as /help.html."""
+    return _policy_page('contact.html', 'Contact Us',
+        'Contact Learn with Anil (learnwithanil.in): email, phone and WhatsApp, and the complaint form.',
+        'Contact Us', 'Questions about the site, a payment or your pass? Write or call us.', 'Contact', [
+        ('Learn with Anil',
+         f'<p>learnwithanil.in is run by {esc(GRIEVANCE_OFFICER)}.</p>' + _contact_html()),
+        ('Payments and refunds',
+         '<p>Please give your registered phone number and the payment ID or order ID from your payment SMS or email. See also the '
+         '<a href="/refund.html">refund and cancellation policy</a>, the <a href="/delivery.html">delivery policy</a>, the '
+         '<a href="/terms.html">terms of use</a> and the <a href="/privacy.html">privacy policy</a>.</p>'),
+    ])
 
 def funders_page(loaded):
     """/funders.html: Fund Learn with Anil (Anil, 26 Oct 2026). Goal: 1 lakh PYQs of various government exams under one roof for ₹45;
@@ -3089,7 +3169,7 @@ def funders_page(loaded):
 </main>
 <footer class="foot">
   <div class="wrap">
-    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/exam-notifications.html">Exam notifications</a> · <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/ap-police-pyqs.html">AP Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/funders.html">Fund this project</a></span>
+    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/exam-notifications.html">Exam notifications</a> · <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/ap-police-pyqs.html">AP Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></span>
   </div>
 </footer>
 <script>(function(){{var T={tj};
@@ -4268,7 +4348,7 @@ def mains_section(conf, books):
             f'<div class="np-covers" aria-hidden="true">{covers}</div></a>')
 
 
-# ---------- paid passes: Instamojo checkout through the Learn with Anil payments script (Google Apps Script) ----------
+# ---------- paid passes: Instamojo or Cashfree checkout through the Learn with Anil payments script (Google Apps Script) ----------
 PAY = dict(
     on=True,    # Anil, 23 Oct 2026: attempting any PYQ needs the paid All-in-One Pass (no free trial) (False = everything free, never again)
     api='https://script.google.com/macros/s/AKfycbxgNi2CfnbaEsVpA1Ghgy0AdYdUG7eYBkol5zqcbMgA2Q4D0Pvy0rndLxeyE7MlPy_3Rg/exec',   # the payments script (Apps Script web app, deployed 23 Oct 2026)
@@ -4522,7 +4602,7 @@ def buy_box(conf, kind):
         what = (esc(mk['summary']) + f' <b>{INCL}</b>, together with every previous paper of every exam, the other mock test series and the study books. '
                 'Nothing else to buy.')
         valid = PYQ_VALID
-    return (f'<div class="buy"><div><b>{esc(name)}</b><p>{what}</p><p class="muted">₹{price} · {valid} · pay by UPI, card or net banking (Instamojo)</p></div>'
+    return (f'<div class="buy"><div><b>{esc(name)}</b><p>{what}</p><p class="muted">₹{price} · {valid} · pay by UPI, card or net banking</p></div>'
             f'<a class="cta" href="{pb}?buy=pyq">Get it for ₹{price}</a></div>')
 
 
