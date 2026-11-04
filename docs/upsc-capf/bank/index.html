@@ -813,13 +813,13 @@ details.upc .exams{margin-top:8px}
 
 <footer class="foot">
   <div class="wrap">
-    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Questions are from UPSC's official question paper; answers from UPSC's answer keys (2025: compiled from published keys). Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. <a href="/exam-notifications.html">Exam notifications</a> · <a href="../appsc-pyqs.html">APPSC PYQs</a> · <a href="../ts-police-pyqs.html">TS Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/funders.html">Fund this project</a></span>
+    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Questions are from UPSC's official question paper; answers from UPSC's answer keys (2025: compiled from published keys). Explanations by Learn with Anil. Not affiliated with APPSC, TGPSC, UPSC or any recruiting body. Visits are counted with Google Analytics. <a href="/exam-notifications.html">Exam notifications</a> · <a href="../appsc-pyqs.html">APPSC PYQs</a> · <a href="../ts-police-pyqs.html">TS Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></span>
     <span id="resetBox"><button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button></span>
   </div>
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/upsc-capf-682a90a702.js"></script>
+<script src="data/upsc-capf-8662e9d44a.js"></script>
 <script>
 (function(){
 "use strict";
@@ -1051,12 +1051,12 @@ function openPay(kind, note){
     ? `<div class="pay-in"><div class="pay-note ${n.cls}" role="alert"><b>${esc(n.title)}</b><span>${esc(n.body)}</span>${n.l2[L2.code] ? `<span lang="${L2.code}">${esc(n.l2[L2.code])}</span>` : ""}</div>
       ${buttons}<p class="small"><a href="${payHelpLink(kind)}" target="_blank" rel="noopener">Need help? Message us on WhatsApp →</a></p>
       <h2>${esc(x.name)} · ₹${x.price}</h2><ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
-      <p class="small"><b>${esc(x.valid)}.</b> The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}. Pay by UPI, card or net banking on Instamojo's secure page.</p></div>`
+      <p class="small"><b>${esc(x.valid)}.</b> The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}. Pay by UPI, card or net banking on the secure payment page.</p></div>`
     : `<div class="pay-in"><h2>${esc(x.name)}</h2><div class="price">₹${x.price}</div>
     <ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
     <p class="small"><b>${esc(x.valid)}.</b>${!ST.name ? " Register once with your phone number, then pay." : ""}</p>
     ${kind==="pyq" && PAYC.sample && PAYC.pages && PAYC.pages.pyq ? `<p class="small"><a href="${PAYC.pages.pyq}#free-sample">Not sure yet? Try ${PAYC.sample} free questions first →</a></p>` : ""}
-    ${open ? `<p class="small">The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}, on up to 3 devices. Pay by UPI, card or net banking on Instamojo's secure page.</p>
+    ${open ? `<p class="small">The pass is linked to your registered phone and email${ST.phone? " ("+esc(ST.phone)+")" : ""}, on up to 3 devices. Pay by UPI, card or net banking on the secure payment page.</p>
       ${buttons}`
     : `<p class="small"><b>Online payment is being switched on.</b> Please check back shortly.</p><div class="row"><button class="btn btn-secondary" type="button" data-act="payclose">Close</button></div>`}<p class="small" style="margin-top:10px">Problem with a payment or your pass? <a href="/help.html">Help &amp; grievances</a> (reply within 48 hours).</p></div>`;
   if(d.showModal) d.showModal(); else d.setAttribute("open","");
@@ -1083,13 +1083,27 @@ async function payBuy(kind){
   payBusy = true; payButtons(true);
   toast("Opening the secure payment page…"); track("begin_checkout", {exam: PAYC.exam, kind});
   try{ const r = await payCall({action:"buy", exam:PAYC.exam, kind, name:ST.name, phone:ST.phone, email:ST.email, back: location.origin + PB});
-       if(r && r.ok && r.url){
+       if(r && r.ok && (r.url || r.session)){
          try{ sessionStorage.setItem(PAYKEY, JSON.stringify({kind, t: Date.now()})); }catch(_){}
-         location.href = r.url;
+         if(r.session){ if(!await cfCheckout(r)){ payRelease(); return; } }
+         else location.href = r.url;
          setTimeout(payRelease, 15000);   // the page normally unloads first; this only matters if the redirect never happens
        }
        else { payRelease(); toast((r && r.error) || "Could not open the payment page. Please try again."); } }
   catch(_){ payRelease(); toast("No connection. Please try again."); }
+}
+/* Cashfree (4 Nov 2026): the payments script makes the order and returns its payment session; Cashfree's own script then opens its
+   secure page in this tab and sends the student back to this page with ?cf_order=<order id>, checked by payReturn like Instamojo's. */
+function cfLoad(){
+  return window.Cashfree ? Promise.resolve(true) : new Promise(ok=>{ const s = document.createElement("script"); s.src = "https://sdk.cashfree.com/js/v3/cashfree.js";
+    s.onload = ()=>ok(!!window.Cashfree); s.onerror = ()=>ok(false); document.head.appendChild(s); });
+}
+async function cfCheckout(r){
+  if(!await cfLoad()){ toast("Could not open the payment page. Please check your connection and try again."); return false; }
+  try{ const res = await Cashfree({mode: r.mode==="sandbox" ? "sandbox" : "production"}).checkout({paymentSessionId: r.session, redirectTarget: "_self"});
+       if(res && res.error){ toast(res.error.message || "Could not open the payment page. Please try again."); return false; } }
+  catch(_){ toast("Could not open the payment page. Please try again."); return false; }
+  return true;
 }
 function payAway(){   // {kind} if this tab left for Instamojo in the last 30 minutes; forgets it
   let s = null; try{ s = JSON.parse(sessionStorage.getItem(PAYKEY) || "null"); sessionStorage.removeItem(PAYKEY); }catch(_){}
@@ -1108,8 +1122,8 @@ async function payCheck(){
   else toast("No payment found for " + (ST.phone||"this phone") + " yet. If you just paid, wait a minute and check again.");
 }
 async function payReturn(params){
-  const req = params.get("payment_request_id"); if(!req || !PAYC || !PAYC.api) return false;
-  const pid = params.get("payment_id") || "", status = String(params.get("payment_status") || "").toLowerCase();
+  const cf = params.get("cf_order") || "", req = params.get("payment_request_id") || cf; if(!req || !PAYC || !PAYC.api) return false;
+  const pid = params.get("payment_id") || "", status = cf ? "cashfree" : String(params.get("payment_status") || "").toLowerCase();
   const kind = (payAway() || {}).kind || "pyq";
   history.replaceState(null, "", location.pathname);
   toast("Checking your payment…");
@@ -1270,7 +1284,7 @@ function gPhoneStep(){
       <label>Full name<input name="name" autocomplete="name" required maxlength="80" value="${esc(a.name||"")}"></label>
       <label>Phone number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="16" placeholder="10-digit mobile number" value="${esc(a.phone||"")}"></label>
       <label>District / City<input name="district" autocomplete="address-level2" required maxlength="60" value="${esc(a.district||"")}"></label>
-      <label ${UI.gNeedPay ? "" : "hidden"}>Payment ID (from your payment SMS or email)<input name="payment" maxlength="40" placeholder="MOJO…" autocapitalize="characters"></label>
+      <label ${UI.gNeedPay ? "" : "hidden"}>Payment ID (from your payment SMS or email)<input name="payment" maxlength="40" placeholder="MOJO… or LWA…" autocapitalize="characters"></label>
     </div>
     <label class="consent"><input type="checkbox" name="ok" checked> <span>I agree to share these details and my test scores with Learn with Anil. They are not shown publicly.</span></label>
     <p class="err" role="alert" ${UI.gErr ? "" : "hidden"}>${esc(UI.gErr||"")}</p>
@@ -1375,8 +1389,8 @@ function vAccount(){
     ? `<div class="card pad acct-plan ok"><p class="eyebrow">Your plan</p><h2>🎁 Free days from inviting friends</h2><p>Every previous paper of every exam with answers and explanations, practice and mock tests, until <b>${esc(fmtDayY(pass.bonus))}</b>. PDF downloads and the study books need the All-in-One Pass.</p><div class="row"><button class="btn btn-primary" type="button" data-act="openpay" data-kind="pyq">Get the All-in-One Pass · ₹${price} for 12 months</button></div></div>`
     : `<div class="card pad acct-plan"><p class="eyebrow">Your plan</p><h2>No active pass</h2><p>The All-in-One Pass opens everything on the site for 12 months: every previous paper of every exam with explanations, every mock test series and the study books.</p><div class="row"><button class="btn btn-primary" type="button" data-act="openpay" data-kind="pyq">Subscribe · ₹${price} for 12 months</button></div></div>`;
   const claim = PAYC && PAYC.on && PAYC.api ? `<form class="card pad" id="claimForm" novalidate><h2 class="acct-h">Paid already but still locked?</h2>
-    <p class="muted" style="margin:0 0 10px">Enter the payment ID from your Instamojo SMS or email (it starts with MOJO). It is linked to this number at once, even if you paid with another number.</p>
-    <div class="row"><input name="payment" maxlength="40" placeholder="MOJO…" autocapitalize="characters" style="max-width:260px"><button class="btn btn-secondary" type="submit">Link my payment</button></div><p class="err" id="claimErr" role="alert" hidden></p></form>` : "";
+    <p class="muted" style="margin:0 0 10px">Enter the payment ID or order ID from your payment SMS or email (it starts with MOJO or LWA). It is linked to this number at once, even if you paid with another number.</p>
+    <div class="row"><input name="payment" maxlength="40" placeholder="MOJO… or LWA…" autocapitalize="characters" style="max-width:260px"><button class="btn btn-secondary" type="submit">Link my payment</button></div><p class="err" id="claimErr" role="alert" hidden></p></form>` : "";
   const me = UI.me;
   const devs = ST.session
     ? `<div class="card pad"><h2 class="acct-h">Logged-in devices <span class="muted" style="font-weight:500">(up to 3)</span></h2>${me ? `<ul class="devs">${(me.devices||[]).map(d=>`<li><span><b>${esc(d.name)}</b>${d.current ? ' <span class="pill blue">This device</span>' : ""}<br><span class="muted">Since ${esc(d.since)}${d.seen ? " · last used " + esc(d.seen) : ""}</span></span>${d.current ? "" : `<button class="btn btn-ghost btn-sm" type="button" data-act="logoutdev" data-id="${esc(d.id)}">Log out</button>`}</li>`).join("")}</ul>` : `<p class="muted" style="margin:0">Loading…</p>`}</div>`
@@ -2860,7 +2874,7 @@ bindReset();
 /* ---------- boot ---------- */
 // Phones often restore the page from memory when the student presses back on Instamojo: unlock the Pay button
 // (it was locked while leaving) and offer to try again.
-addEventListener("pageshow", e=>{ if(e.persisted){ payRelease(); if(!new URLSearchParams(location.search).get("payment_request_id")) payResume(); } });
+addEventListener("pageshow", e=>{ if(e.persisted){ payRelease(); const q = new URLSearchParams(location.search); if(!q.get("payment_request_id") && !q.get("cf_order")) payResume(); } });
 function start(data){
   if(data && data.QZ) QZ = data.QZ; if(data && data.LAST) LAST = data.LAST;
   if(!QZ){ QZ = loadQZ(); if(QZ) setTimeout(()=>{ if(current==="quiz") toast("Welcome back: your test is just where you left it."); }, 400); }
@@ -2875,7 +2889,7 @@ function start(data){
     const qp = new URLSearchParams(location.search).get("q");
     if(qp && QMAP[qp]) history.replaceState(null, "", pathOf("q/"+qp));
     const sp = new URLSearchParams(location.search);
-    if(sp.get("payment_request_id")){ syncLang(); render(); payReturn(sp); return; }   // back from Instamojo
+    if(sp.get("payment_request_id") || sp.get("cf_order")){ syncLang(); render(); payReturn(sp); return; }   // back from Instamojo or Cashfree
     setTimeout(payResume, 500);   // back from Instamojo by the back button, without paying
     const bk = sp.get("buy");   // ?buy=pyq|mock|combo: open the pass checkout
     // old links with buy=mock or buy=combo open the ₹45 All-in-One Pass checkout too (26 Oct 2026)
