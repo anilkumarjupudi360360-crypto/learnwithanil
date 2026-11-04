@@ -4222,6 +4222,8 @@ PAY = dict(
     pyq_price=45,
     gid=(open(os.path.join(SRC, 'google-client-id.txt')).read().strip() if os.path.exists(os.path.join(SRC, 'google-client-id.txt')) else ''),   # "Continue with Google" (public OAuth client id; Anil, 2 Nov 2026)
     exams='',   # names of every live exam, for the pay dialog ("one payment for the whole website"); set in main()
+    otp=True,   # Anil, 4 Nov 2026: a first registration with phone + email is confirmed with a 6-digit code emailed by the payments script
+                # (actions otpsend/otpverify); until that script version is deployed the site registers students without a code
     ref=False,  # "invite friends, earn free days" (3 Nov 2026): True only once the payments script with 'ref'/'refjoin' (version 12) is deployed
 )
 PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
@@ -4381,7 +4383,7 @@ def pay_data(conf):
     """What the app needs to show prices and sell passes for this exam."""
     pb = conf['pb']
     mk = MOCK_PACKS.get(conf['id'])
-    return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'], freePyq=conf['id'] in FREE_PYQ, gid=PAY.get('gid', ''), ref=bool(PAY.get('ref')),
+    return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'], freePyq=conf['id'] in FREE_PYQ, gid=PAY.get('gid', ''), ref=bool(PAY.get('ref')), otp=bool(PAY.get('otp')),
                 pyq=dict(price=PAY['pyq_price'], valid=PYQ_VALID, exams=PAY['exams'], trial=TRIAL_DAYS),
                 mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=PAY['pyq_price'], n=mk['n'], live=mk['live'],
                            valid=pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:],

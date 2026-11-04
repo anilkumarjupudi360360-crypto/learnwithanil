@@ -11,13 +11,14 @@ function makeEnv() {
       getRange: (r, c, nr, nc) => ({setValue: v => { rows[r - 1][c - 1] = v; }, setValues: vs => { vs[0].forEach((v, k) => { rows[r - 1][c - 1 + k] = v; }); }})};
   }
   const props = {SHEET_ID: 'x', INSTAMOJO_CLIENT_ID: 'id', INSTAMOJO_CLIENT_SECRET: 'sec', INSTAMOJO_SALT: 'salt', GOOGLE_CLIENT_ID: 'gid.apps'};
-  const im = {payments: {}}, tokens = {};
+  const im = {payments: {}}, tokens = {}, cache = new Map(), mail = {quota: 100, sent: [], fail: false};
   const ymd = d => new Date(d.getTime() + 5.5 * 3600e3).toISOString().slice(0, 10);
   const env = {
     SpreadsheetApp: {openById: () => book},
     PropertiesService: {getScriptProperties: () => ({getProperty: k => props[k] || null})},
     LockService: {getScriptLock: () => ({waitLock: () => {}, releaseLock: () => {}})},
-    CacheService: {getScriptCache: () => ({get: () => 'tok', put: () => {}})},
+    CacheService: {getScriptCache: () => ({get: k => k === 'im_token' ? 'tok' : (cache.has(k) ? cache.get(k) : null), put: (k, v) => { cache.set(k, v); }, remove: k => { cache.delete(k); }})},
+    MailApp: {getRemainingDailyQuota: () => mail.quota, sendEmail: o => { if (mail.fail) throw new Error('Invalid email: ' + o.to); mail.sent.push(o); }},
     ContentService: {createTextOutput: t => ({t, setMimeType() { return this; }}), MimeType: {JSON: 'json'}},
     ScriptApp: {getService: () => ({getUrl: () => 'https://script.test/exec'})},
     Logger: {log: () => {}},
@@ -38,7 +39,8 @@ function makeEnv() {
   const api = new Function(...names, SRC + '\nreturn {doPost};')(...names.map(n => env[n]));
   const call = b => JSON.parse(api.doPost({postData: {contents: JSON.stringify(Object.assign({exam: 'appsc-group-2'}, b))}, parameter: {}}).t);
   const gtok = (email, name) => { const k = 'cred-' + email + Math.random(); tokens[k] = {aud: 'gid.apps', iss: 'https://accounts.google.com', email, email_verified: 'true', name, sub: 's-' + email, exp: String(Math.floor(Date.now() / 1000) + 600)}; return k; };
-  return {call, sheets, im, gtok};
+  const codeOf = o => (o.subject.match(/^(\d{6}) /) || [])[1];
+  return {call, sheets, im, gtok, mail, cache, codeOf};
 }
 let fails = 0;
 const ok = (c, m) => { if (!c) { fails++; console.log('FAIL', m); } else console.log('ok  ', m); };
@@ -110,5 +112,57 @@ const passRow = (phone, email, pid) => [new Date(), phone, 'all', 'pyq', '2027-1
   E.sheets.passes.rows.push(passRow('9000000005', 'e@gmail.com', 'MOJO5'));
   ok(E.call({action: 'passes', phone: '9000000005', email: 'e@gmail.com', device: 'd1'}).passes.paid, 'phone + email still opens the pass');
   ok(!E.call({action: 'passes', phone: '9000000005', email: 'other@gmail.com', device: 'd1'}).passes.paid, 'phone with another email does not');
+}
+{ // email code login for students without Google (Anil, 4 Nov 2026: "OTP login for first timers")
+  const E = makeEnv();
+  ok(!E.call({action: 'otpsend', email: 'not-an-email'}).ok, 'a wrong email address is refused');
+  const s = E.call({action: 'otpsend', email: ' Ravi.K@Gmail.com '});
+  ok(s.ok && E.mail.sent.length === 1 && E.mail.sent[0].to === 'ravi.k@gmail.com' && E.mail.sent[0].name === 'Learn with Anil', 'a code is emailed to the student');
+  const code = E.codeOf(E.mail.sent[0]);
+  ok(/^\d{6}$/.test(code) && E.mail.sent[0].body.includes(code) && E.mail.sent[0].htmlBody.includes(code), 'the email holds the 6-digit code');
+  ok(![...E.cache.values()].some(v => v.includes(code)), 'only a hash of the code is kept');
+  const again = E.call({action: 'otpsend', email: 'ravi.k@gmail.com'});
+  ok(!again.ok && again.wait > 0 && E.mail.sent.length === 1, 'a second code within 45 seconds is refused');
+  const wrong = code === '000000' ? '111111' : '000000';
+  const w = E.call({action: 'otpverify', email: 'ravi.k@gmail.com', code: wrong});
+  ok(!w.ok && !w.expired && !w.session, 'a wrong code does not log in');
+  ok(!E.call({action: 'otpverify', email: 'other@gmail.com', code}).ok, 'the code works only for its own email');
+  const v = E.call({action: 'otpverify', email: 'RAVI.K@gmail.com', code: code.slice(0, 3) + ' ' + code.slice(3), name: 'Ravi  K', device: 'd1', agent: 'Mozilla (Linux; Android 14) Chrome/130'});
+  ok(v.ok && /^[0-9a-f]{64}$/.test(v.session) && v.account.email === 'ravi.k@gmail.com' && v.account.name === 'Ravi K', 'the right code logs in with a 12-month session');
+  const acc = E.sheets.accounts.rows.find(r => r[1] === 'ravi.k@gmail.com');
+  ok(acc && acc[5] === 'email-otp', 'the account is marked as an email-code account');
+  ok(!E.call({action: 'otpverify', email: 'ravi.k@gmail.com', code}).ok, 'a used code does not work again');
+  const p = E.call({action: 'setphone', session: v.session, phone: '9876543210', name: 'Ravi K', district: 'Guntur'});
+  ok(p.ok && p.account.phone === '9876543210', 'the phone is linked to the email-code account');
+  ok(E.call({action: 'me', session: v.session}).devices.length === 1, 'My Account works for an email-code login');
+  // too many wrong tries end the code
+  E.cache.clear();
+  E.call({action: 'otpsend', email: 'sai@gmail.com'});
+  const c2 = E.codeOf(E.mail.sent[E.mail.sent.length - 1]), bad = c2 === '123456' ? '654321' : '123456';
+  let last = null; for (let i = 0; i < 5; i++) last = E.call({action: 'otpverify', email: 'sai@gmail.com', code: bad});
+  ok(last.expired && !E.call({action: 'otpverify', email: 'sai@gmail.com', code: c2}).ok, 'five wrong tries end the code');
+  // an expired code
+  E.call({action: 'otpsend', email: 'old@gmail.com'});
+  const c3 = E.codeOf(E.mail.sent[E.mail.sent.length - 1]), key = [...E.cache.keys()].find(k => !k.endsWith('-n') && JSON.parse(E.cache.get(k)).h && !JSON.parse(E.cache.get(k)).tries && k !== 'im_token' && E.cache.get(k).includes('exp'));
+  for (const k of E.cache.keys()) { const o = JSON.parse(E.cache.get(k)); if (o && o.exp) { o.exp = Date.now() - 1000; E.cache.set(k, JSON.stringify(o)); } }
+  ok(key && E.call({action: 'otpverify', email: 'old@gmail.com', code: c3}).expired, 'a code older than 10 minutes has expired');
+  // five codes per email, then wait
+  E.cache.clear();
+  let n = 0; for (let i = 0; i < 7; i++) { for (const k of E.cache.keys()) if (k.endsWith('-n')) { const o = JSON.parse(E.cache.get(k)); o.t = 0; E.cache.set(k, JSON.stringify(o)); } if (E.call({action: 'otpsend', email: 'many@gmail.com'}).ok) n++; }
+  ok(n === 5, 'at most five codes per email in six hours');
+  // the day's emails used up, or the address bounces
+  E.mail.quota = 2;
+  const q = E.call({action: 'otpsend', email: 'late@gmail.com'});
+  ok(!q.ok && q.skip, 'when the daily emails run out the site is told to register without a code');
+  E.mail.quota = 50; E.mail.fail = true;
+  const f = E.call({action: 'otpsend', email: 'bounce@nowhere.zz'});
+  ok(!f.ok && !f.skip && /Could not send/.test(f.error), 'a send error is reported');
+  // an existing Google account logs in with an email code too (same account)
+  const E2 = makeEnv();
+  const g = E2.call({action: 'glogin', credential: E2.gtok('lak@gmail.com', 'Lakshmi')});
+  E2.call({action: 'setphone', session: g.session, phone: '9000000009', name: 'Lakshmi', district: 'Nellore'});
+  E2.call({action: 'otpsend', email: 'lak@gmail.com'});
+  const v2 = E2.call({action: 'otpverify', email: 'lak@gmail.com', code: E2.codeOf(E2.mail.sent[0]), name: 'L'});
+  ok(v2.ok && v2.account.phone === '9000000009' && v2.account.name === 'Lakshmi' && E2.sheets.accounts.rows.length === 2, 'an email code opens the same account as Google login');
 }
 console.log(fails ? fails + ' FAILED' : 'ALL OK'); process.exit(fails ? 1 : 0);
