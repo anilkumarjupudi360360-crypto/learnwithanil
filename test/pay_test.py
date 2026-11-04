@@ -68,6 +68,7 @@ async def main():
             r = dict(ok=True, id=b['id'], key=EXKEYS.get(b['id'], ''), file='') if state['pyq'] else dict(ok=False, need='pyq', error='needs pass')
         elif b['action'] == 'mock' and b['id'] == 'mk-pc-1': r = dict(ok=True, id=b['id'], key=PKEY, file=PFILE, free=True)   # free for registered students
         elif b['action'] == 'mock': r = dict(ok=True, id=b['id'], key=TKEY, file=TFILE) if (state['mock'] or state['pyq']) else dict(ok=False, need='pyq', error='needs pass')
+        elif b['action'] == 'otpsend': r = dict(ok=False, error='Unknown action.')   # a payments script without email codes (those are in test/otp_ui_test.py)
         else: r = dict(ok=False)
         await route.fulfill(status=200, content_type='application/json', body=json.dumps(r))
     errors = []

@@ -620,6 +620,8 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .nav-sub{white-space:nowrap;align-self:center;margin-left:6px;padding:6px 12px;border-radius:999px;border:0;background:linear-gradient(135deg,#f59e0b,#f97316);color:#1f1300;font-weight:800;font-size:13.5px;cursor:pointer}
 .glog{margin-bottom:14px}.glog h2{font-size:19px;margin:0 0 6px}.glog p.muted{margin:0 0 12px}.gbtn{min-height:44px}
 .glog-warn{margin:0 0 10px;padding:8px 12px;border-radius:10px;background:var(--warn-soft);color:var(--ink);font-size:14px}
+.otp-in{font-size:24px;letter-spacing:.35em;font-variant-numeric:tabular-nums;max-width:230px;font-weight:700}
+.otp-more{gap:6px}
 .join-or{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px;margin:4px 0 14px}.join-or::before,.join-or::after{content:"";flex:1;height:1px;background:var(--line)}
 .acct-h{font-size:18px;margin:0 0 8px}
 .acct-plan.ok{border-left:4px solid var(--good)}.acct-plan h2{font-size:20px;margin:2px 0 6px}
@@ -818,7 +820,7 @@ details.upc .exams{margin-top:8px}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ap-si-88a4645ca9.js"></script>
+<script src="data/ap-si-6d6ff529da.js"></script>
 <script>
 (function(){
 "use strict";
@@ -1292,6 +1294,66 @@ async function gPhoneSubmit(e){
   if(r.passes) setPasses(r.passes);
   await finishJoin({name, phone, email:r.account.email, district, help:""}, "google");
 }
+/* ---------- email code (Anil, 4 Nov 2026: "OTP login for first timers"). A first registration with phone and email is finished
+   with a 6-digit code sent to that email; the right code logs the student in like Google login (12 months on this device, My
+   Account, devices). If the payments script cannot send codes (its daily email limit, or an older script), the student is
+   registered as before, without a code. */
+const otpOn = ()=> !!(PAYC && PAYC.otp && PAYC.api) && !ST.session;
+const OTP_OLD = r=> !!r && (r.skip || r.error==="Unknown action.");   // no codes today / script not updated yet: register as before
+async function otpStart(d){
+  let r = null; try{ r = await payCall({action:"otpsend", exam:PAYC.exam, email:d.email}); }catch(_){}
+  if(!r || OTP_OLD(r)){ UI.otp = null; UI.draft = null; await finishJoin(d, "form"); return ""; }
+  if(!r.ok && !r.wait) return r.error || "Could not send the code. Please try again.";
+  UI.otp = Object.assign({}, d, {sentAt: r.ok ? Date.now() : Date.now() - Math.max(0, 45 - r.wait)*1000, gap: r.gap || 45,
+    err: r.ok ? "" : "A code was sent to this email a moment ago. Please enter it below."});
+  UI.draft = null; if(r.ok) track("otp_sent", {exam: DATA.examShort||""});
+  render(); setTimeout(()=>{ const i = $("#otpForm input[name=code]"); if(i) i.focus(); }, 60);
+  return "";
+}
+function otpStep(){
+  const o = UI.otp, help = waLink("Hi Learn_with_anil Team, I did not get the email code to register on learnwithanil.in. Please help.");
+  return `<div class="wrap view">${head("One-time registration", "Check your email", "")}
+    <form class="card join" id="otpForm" novalidate>
+      <p class="join-test"><span class="mono">Code sent to</span> ${esc(o.email)}</p>
+      <label>Enter the 6-digit code<input class="otp-in" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="7" placeholder="······" aria-describedby="otpNote"></label>
+      <p class="muted" id="otpNote" style="margin:0;font-size:14px">We emailed a code from <b>Learn with Anil</b>. It works for 10 minutes. Not in your inbox? Look in <b>Spam</b> or <b>Promotions</b>.</p>
+      <p class="err" id="otpErr" role="alert" ${o.err ? "" : "hidden"}>${esc(o.err||"")}</p>
+      <div class="row"><button class="btn btn-primary" type="submit">Verify and continue</button></div>
+      <div class="row otp-more"><button class="btn btn-ghost btn-sm" type="button" data-act="otpresend">Send a new code</button><button class="btn btn-ghost btn-sm" type="button" data-act="otpback">Change email</button><a class="btn btn-ghost btn-sm" href="${help}" target="_blank" rel="noopener">No code? Ask on WhatsApp</a></div>
+    </form></div>`;
+}
+let otpBusy = false;
+async function otpSubmit(e){
+  e.preventDefault();
+  const o = UI.otp; if(!o || otpBusy) return;
+  const f = e.target, code = (f.elements.code.value||"").replace(/\D/g,""), box = $("#otpErr");
+  const say = m=>{ o.err = m; if(box){ box.textContent = m; box.hidden = !m; } };
+  if(code.length!==6){ say("Please enter the 6-digit code from the email."); return; }
+  otpBusy = true; const btn = f.querySelector('button[type="submit"]'); if(btn){ btn.disabled = true; btn.textContent = "Checking…"; }
+  let r = null; try{ r = await payCall({action:"otpverify", exam:PAYC.exam, email:o.email, code, name:o.name, device:DEVICE, agent:(navigator.userAgent||"").slice(0,160)}); }catch(_){}
+  if(!r || !r.ok){ otpBusy = false; if(btn && btn.isConnected){ btn.disabled = false; btn.textContent = "Verify and continue"; }
+    say((r && r.error) || "Could not check the code. Please check your internet and try again."); return; }
+  ST.session = r.session; ST.gmail = r.account.email; ST.lm = "email"; saveST(); UI.me = null; track("login", {method:"email"});
+  if(r.loggedOut) setTimeout(()=>toast("Your oldest device was logged out (3 devices at a time)."), 2600);
+  if(btn) btn.textContent = "Saving…";
+  // link the phone number typed in the form (the same checks as after Google login)
+  let p = null; try{ p = await payCall({action:"setphone", exam:PAYC.exam, phone:o.phone, name:o.name, district:o.district}); }catch(_){}
+  UI.otp = null; otpBusy = false;
+  if(!p || !p.ok){ UI.gacc = Object.assign({}, r.account, {name:o.name, phone:o.phone, district:o.district}); UI.gErr = (p && p.error) || "Could not save your phone number. Please try again."; UI.gNeedPay = !!(p && p.needPayment); render(); return; }
+  if(p.passes) setPasses(p.passes);
+  await finishJoin({name:o.name, phone:o.phone, email:r.account.email, district:o.district, help:o.help}, "email");
+}
+async function otpResend(btn){
+  const o = UI.otp; if(!o) return;
+  const left = Math.ceil((o.sentAt + o.gap*1000 - Date.now())/1000);
+  if(left > 0){ o.err = `Please wait ${left} seconds before asking for a new code.`; render(); return; }
+  btn.disabled = true;
+  let r = null; try{ r = await payCall({action:"otpsend", exam:PAYC.exam, email:o.email}); }catch(_){}
+  btn.disabled = false;
+  if(OTP_OLD(r)){ UI.otp = null; await finishJoin(o, "form"); return; }
+  if(!r || !r.ok){ o.err = (r && r.error) || "Could not send a new code. Please check your internet and try again."; if(r && r.wait) o.sentAt = Date.now() - Math.max(0, o.gap - r.wait)*1000; render(); return; }
+  o.sentAt = Date.now(); o.err = ""; render(); toast("A new code has been sent to " + o.email + ".");
+}
 function navAcct(){
   const a = $("#navAcct"); if(a) a.textContent = ST.name ? "👤 " + ST.name.split(" ")[0] : "Login";
   const s = $("#navSub"); if(s){ s.hidden = !(PAYC && PAYC.on) || paidOK(); s.textContent = "Subscribe ₹" + (PAYC ? PAYC.pyq.price : 45); }
@@ -1305,7 +1367,7 @@ async function loadMe(){
 function vAccount(){
   const price = PAYC ? PAYC.pyq.price : 45;
   if(!ST.name) return `<div class="wrap view">${head("My account", "Log in to Learn with Anil", "")}${gBlock()}
-    <div class="card pad"><p style="margin:0 0 10px">${GID ? "No Google account? Register" : "Register"} once with your name, phone number and email.</p><a class="btn ${GID ? "btn-secondary" : "btn-primary"}" href="/ap-police-si/join/">Register with phone &amp; email</a></div></div>`;
+    <div class="card pad"><p style="margin:0 0 10px">${GID ? "No Google account? Register" : "Register"} once with your name, phone number and email${otpOn() ? ": we email you a 6-digit code to log you in" : ""}.</p><a class="btn ${GID ? "btn-secondary" : "btn-primary"}" href="/ap-police-si/join/">Register with phone &amp; email</a></div></div>`;
   if(ST.session && !UI.me && PAYC && PAYC.api) loadMe();
   const ok = paidOK(), pass = PASSES.all || {};
   const plan = !(PAYC && PAYC.on) ? "" : ok
@@ -1323,7 +1385,7 @@ function vAccount(){
   const pays = me && (me.payments||[]).length ? `<div class="card pad"><h2 class="acct-h">Payments</h2><ul class="devs">${me.payments.map(x=>`<li><span><b>${esc(x.what)}</b> · ${esc(x.on)}${x.amount ? " · ₹" + esc(String(x.amount)) : ""}<br><span class="muted">${esc(x.id)} · valid till ${esc(fmtDayY(x.until))}</span></span></li>`).join("")}</ul></div>` : "";
   return `<div class="wrap view">${head("My account", esc(ST.name), "")}
     <div class="card pad acct"><p style="margin:0 0 8px"><b>${esc(ST.name)}</b><br>📱 ${esc(ST.phone||"")}<br>✉️ ${esc(ST.email||"")}${ST.district ? `<br>📍 ${esc(ST.district)}` : ""}</p>
-      <p class="muted" style="margin:0 0 10px">${ST.session ? "Logged in with Google · you stay logged in on this device for 12 months." : "Registered on this device with phone and email."}</p>
+      <p class="muted" style="margin:0 0 10px">${ST.session ? (ST.lm==="email" ? "Logged in with your email" : "Logged in with Google") + " · you stay logged in on this device for 12 months." : "Registered on this device with phone and email."}</p>
       <div class="row"><a class="btn btn-ghost btn-sm" href="/ap-police-si/join/">Edit details</a><button class="btn btn-ghost btn-sm" type="button" data-act="logoutme">Log out of this device</button></div></div>
     ${plan}${inviteCard()}${claim}${devs}${pays}
     <p class="muted" style="font-size:14px">Problem with a payment? <a href="/help.html">Help &amp; grievances</a></p></div>`;
@@ -1587,8 +1649,6 @@ const HUBT = {
   live:{en:'Live · {N} questions', hi:'उपलब्ध · {N} प्रश्न', te:'అందుబాటులో · {N} ప్రశ్నలు'},
   soon:{en:'Upcoming', hi:'आगामी', te:'రాబోయేది'},
   count:{en:'{n} exams · {l} live now', hi:'{n} परीक्षाएँ · {l} अभी उपलब्ध', te:'{n} పరీక్షలు · {l} ఇప్పుడు అందుబాటులో'},
-  soonT:{en:'Coming soon', hi:'जल्द आ रहा है', te:'త్వరలో వస్తుంది'},
-  soonP:{en:'Previous papers for this board are being added. Tell Anil which exam you want first.', hi:'इस बोर्ड के पिछले प्रश्नपत्र जोड़े जा रहे हैं। Anil को बताइए कि आपको पहले कौन-सी परीक्षा चाहिए।', te:'ఈ బోర్డు పాత ప్రశ్నపత్రాలు జోడిస్తున్నాం. మీకు ముందుగా ఏ పరీక్ష కావాలో Anil కి చెప్పండి.'},
   emptyT:{en:'No exam matches your search', hi:'आपकी खोज से कोई परीक्षा नहीं मिली', te:'మీరు వెతికిన పరీక్ష దొరకలేదు'},
   emptyP:{en:'Tell Anil which exam you are preparing for, and it will be added to the list.', hi:'Anil को बताइए कि आप किस परीक्षा की तैयारी कर रहे हैं, उसे सूची में जोड़ दिया जाएगा।', te:'మీరు ఏ పరీక్షకు సిద్ధమవుతున్నారో Anilకి చెప్పండి, దాన్ని జాబితాలో చేరుస్తాం.'},
   ask:{en:'Ask on WhatsApp', hi:'WhatsApp पर पूछें', te:'WhatsAppలో అడగండి'},
@@ -1650,10 +1710,9 @@ function applyHub(){
   if(hh) hh.hidden = !browsing; if(hb) hb.hidden = cat==="all"; if(hc) hc.hidden = browsing; hubRecent(browsing);
   const xc = $("#exCredits"); if(xc) xc.hidden = browsing;
   let n = 0;
-  // Anil, 3 Nov 2026: upcoming (not yet live) exams are not shown inside the boards; only a search can still find them
-  document.querySelectorAll("#hub-static .exam").forEach(a=>{ const ok = (cat==="all"||a.dataset.cat===cat) && (!q || a.dataset.s.includes(q)) && (!!q || a.classList.contains("live")); a.hidden = !ok; if(ok) n++; });
+  document.querySelectorAll("#hub-static .exam").forEach(a=>{ const ok = (cat==="all"||a.dataset.cat===cat) && (!q || a.dataset.s.includes(q)); a.hidden = !ok; if(ok) n++; });
   document.querySelectorAll("#hub-static .exam-cat").forEach(s=>{ s.hidden = !s.querySelector(".exam:not([hidden])"); });
-  document.querySelectorAll("#hub-static details.upc").forEach(d=>{ const any = !!d.querySelector(".exam:not([hidden])"); d.hidden = !any; if(q && any) d.open = true; });
+  if(q) document.querySelectorAll("#hub-static details.upc").forEach(d=>{ if(d.querySelector(".exam:not([hidden])")) d.open = true; });
   document.querySelectorAll('#hub-static [data-act="excat"]').forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.cat===cat)));
   document.querySelectorAll('#nav a[data-act="excat"]').forEach(a=>{ if(a.dataset.cat===cat) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
   const allL = document.querySelector('#nav a[data-v="exams"]'); if(allL && cat!=="all") allL.removeAttribute("aria-current");
@@ -1661,11 +1720,7 @@ function applyHub(){
   const cnt = $("#hubCount"); if(cnt) cnt.textContent = n && !browsing ? HT("count").replace("{n}", n).replace("{l}", live) : "";
   const p5 = $("#hubP5"), isP5 = !!p5 && P5_RE.test(q);   // "paper 5": the Group-1 Mains Paper V book is on WhatsApp
   if(p5) p5.hidden = !isP5;
-  const boardSoon = !q && cat!=="all" && n===0, soon = $("#hubSoon");   // a board with no live exam yet
-  if(xc) xc.hidden = browsing || boardSoon;
-  if(soon){ soon.hidden = !boardSoon; const bn = document.querySelector(`#hub-static button.board[data-cat="${cat}"] .bd-n`), sa = $("#hubSoonAsk");
-    if(sa) sa.href = waLink(`Hi Learn_with_anil Team, please add ${bn ? bn.textContent : "my exam board"} exams to learnwithanil.in`); }
-  const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0 || isP5 || boardSoon; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Learn_with_anil Team, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
+  const empty = $("#hubEmpty"); if(empty){ empty.hidden = n>0 || isP5; const a=$("#hubAsk"); if(a) a.href = waLink(`Hi Learn_with_anil Team, please add ${UI.exQ? `"${UI.exQ.trim()}"` : "my exam"} to learnwithanil.in`); }
   const s = $("#examSearch"); if(s && s.value!==(UI.exQ||"")) s.value = UI.exQ||"";
 }
 /* countdown cards on the start page (and one exam's countdown on its page) */
@@ -2149,22 +2204,24 @@ function vJoin(){
     ? (pay ? `Registration is only once. Next you pay ₹${price} for the All-in-One Pass, which opens every previous paper of every exam on the site for 12 months.` : "Registration is only once, and it is free.")
     : "Your test scores are saved with these details, so Anil can follow your progress and help you.";
   if(UI.gacc && ST.session) return `<div class="wrap view">${head("One last step", "Add your phone number", "Asked only once. Your All-in-One Pass, tests and mocks are linked to it.")}${gPhoneStep()}</div>`;
+  if(UI.otp && fresh) return otpStep();
+  const otp = fresh && otpOn(), dv = fresh && UI.draft ? UI.draft : s;   // values typed before "Change email"
   const g = fresh && GID ? gBlock() + `<p class="join-or"><span>or register with your phone number and email</span></p>` : "";
   return `<div class="wrap view">
     ${head(p || fresh ? "One-time registration" : "Your details", p ? "Register once to start practising" : fresh ? (pay ? "Register to get the All-in-One Pass" : "Register once") : "Update your details", intro)}
     ${g}<form class="card join" id="joinForm" novalidate>
       ${p? `<p class="join-test"><span class="mono">Next</span> ${esc(p.title)} · ${p.ids.length} questions</p>` : ""}
       <div class="join-grid">
-        <label>Full name<input name="name" autocomplete="name" required maxlength="80" value="${esc(s.name||"")}"></label>
-        <label>Phone number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="16" placeholder="10-digit mobile number" value="${esc(s.phone||"")}"></label>
-        <label>Email<input name="email" type="email" autocomplete="email" required maxlength="120" value="${esc(s.email||"")}"></label>
-        <label>District / City<input name="district" autocomplete="address-level2" required maxlength="60" value="${esc(s.district||"")}"></label>
+        <label>Full name<input name="name" autocomplete="name" required maxlength="80" value="${esc(dv.name||"")}"></label>
+        <label>Phone number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="16" placeholder="10-digit mobile number" value="${esc(dv.phone||"")}"></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required maxlength="120" value="${esc(dv.email||"")}"></label>
+        <label>District / City<input name="district" autocomplete="address-level2" required maxlength="60" value="${esc(dv.district||"")}"></label>
       </div>
-      <label><span>Anything you need help with? <span class="muted" style="font-weight:500">(optional)</span></span><textarea name="help" rows="3" maxlength="600" placeholder="For example: I find AP Economy hard to revise. How should I plan it?"></textarea></label>
-      <label class="consent"><input type="checkbox" name="ok" ${s.name?"checked":""}> <span>I agree to share these details and my test scores with Learn with Anil. They are not shown publicly.</span></label>
+      <label><span>Anything you need help with? <span class="muted" style="font-weight:500">(optional)</span></span><textarea name="help" rows="3" maxlength="600" placeholder="For example: I find AP Economy hard to revise. How should I plan it?">${esc(dv.help||"")}</textarea></label>
+      <label class="consent"><input type="checkbox" name="ok" ${s.name || (fresh && UI.draft) ?"checked":""}> <span>I agree to share these details and my test scores with Learn with Anil. They are not shown publicly.</span></label>
       <p class="err" id="joinErr" role="alert" hidden></p>
       <div class="row"><button class="btn btn-primary" type="submit">${p || UI.pendingMock ? "Register and start" : fresh ? (pay ? "Register and go to payment" : "Register") : "Save details"}</button><a class="btn btn-secondary" href="#${p? "papers" : fresh ? "home" : "about"}">Cancel</a></div>
-      <p class="muted" style="font-size:13.5px;margin:0">You register only once. Your attempts, mistakes notebook and bookmarks stay on this phone or computer.</p>
+      <p class="muted" style="font-size:13.5px;margin:0">${otp ? "You register only once. We email you a 6-digit code to confirm your email, and you stay logged in on this device for 12 months." : "You register only once. Your attempts, mistakes notebook and bookmarks stay on this phone or computer."}</p>
     </form>
   </div>`;
 }
@@ -2632,6 +2689,8 @@ document.addEventListener("click", e=>{
     case "paperpdf": paperPdf(b.dataset.paper, b); return;
     case "navsub": openPay("pyq"); break;
     case "logoutme": logoutHere(); break;
+    case "otpresend": otpResend(b); break;
+    case "otpback": if(UI.otp){ UI.draft = UI.otp; UI.otp = null; render(); } break;
     case "logoutdev": payCall({action:"logout", exam:PAYC.exam, target:b.dataset.id}).then(()=>{ UI.me = null; render(); toast("That device was logged out."); }).catch(()=>{}); break;
     case "openpay": openPay(b.dataset.kind==="mock" || (b.dataset.kind==="combo" && PAYC && PAYC.combo) ? b.dataset.kind : "pyq"); break;
     case "presubj": { const s=SUBJ[b.dataset.subj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); go("practice"); break; }
@@ -2732,6 +2791,7 @@ async function finishJoin(d, method){
 let joinBusy = false;   // true while the details are being saved, so extra taps on the button don't send them again
 document.addEventListener("submit", async e=>{
   if(e.target.id==="gPhoneForm") return gPhoneSubmit(e);
+  if(e.target.id==="otpForm") return otpSubmit(e);
   if(e.target.id==="claimForm") return claimSubmit(e);
   if(e.target.id!=="joinForm") return;
   e.preventDefault();
@@ -2748,9 +2808,11 @@ document.addEventListener("submit", async e=>{
   if(err){ box.textContent = err; box.hidden = false; box.scrollIntoView({block:"nearest"}); return; }
   joinBusy = true;
   const btn = f.querySelector('button[type="submit"]'), label = btn ? btn.textContent : "";
-  if(btn){ btn.disabled = true; btn.textContent = "Saving…"; }
+  const otp = !ST.name && otpOn();   // a first registration: confirm the email with a code first
+  if(btn){ btn.disabled = true; btn.textContent = otp ? "Sending the code…" : "Saving…"; }
   try{
-    await finishJoin({name, phone, email, district, help}, "form");
+    if(otp){ const m = await otpStart({name, phone, email, district, help}); if(m && box.isConnected){ box.textContent = m; box.hidden = false; } }
+    else await finishJoin({name, phone, email, district, help}, "form");
   } finally {
     joinBusy = false;
     if(btn && btn.isConnected){ btn.disabled = false; btn.textContent = label; }
