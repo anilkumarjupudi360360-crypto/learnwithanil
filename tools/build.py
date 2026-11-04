@@ -1565,13 +1565,14 @@ def home_notes(notes, bb_url='', line=''):
     if not notes and not bb_url: return ''
     if not notes: return f'<section class="wrap section">{bahubali_promo(bb_url)}</section>'
     covers = ''.join(f'<img src="{esc(b["cover"])}" alt="" width="140" height="198" loading="lazy">' for b in notes)
-    return f'''<section class="wrap section">{bahubali_promo(bb_url) if bb_url else ''}
+    # Anil, 4 Nov 2026: "first books for that relevant exams followed by test series": the exam's own books, then the test series.
+    return f'''<section class="wrap section">
     <a class="card notes-promo" href="#notes">
       <div class="np-copy"><p class="eyebrow">New · Study material</p><h2>Study material 2026-27</h2>
       <p>{esc(line) if line else esc(" and ".join(dict.fromkeys(b.get("subject_label", b["subject"]) for b in notes))) + " for APPSC Mains, with the latest 2026 data and APPSC's own previous questions inside."} {INCL}.</p>
       <span class="btn btn-primary">See the books</span></div>
       <div class="np-covers" aria-hidden="true">{covers}</div>
-    </a>
+    </a>{bahubali_promo(bb_url) if bb_url else ''}
   </section>'''
 
 
@@ -4274,9 +4275,9 @@ PAY = dict(
     pyq_price=45,
     gid=(open(os.path.join(SRC, 'google-client-id.txt')).read().strip() if os.path.exists(os.path.join(SRC, 'google-client-id.txt')) else ''),   # "Continue with Google" (public OAuth client id; Anil, 2 Nov 2026)
     exams='',   # names of every live exam, for the pay dialog ("one payment for the whole website"); set in main()
-    otp=True,   # Anil, 4 Nov 2026: a first registration with phone + email is confirmed with a 6-digit code emailed by the payments script
+    otp=False,  # off (Anil, 4 Nov 2026, 06:10: "let the students login previously as done yesterday"); was True: Anil, 4 Nov 2026: a first registration with phone + email is confirmed with a 6-digit code emailed by the payments script
                 # (actions otpsend/otpverify); until that script version is deployed the site registers students without a code
-    ref=False,  # "invite friends, earn free days" (3 Nov 2026): True only once the payments script with 'ref'/'refjoin' (version 12) is deployed
+    ref=True,  # "invite friends, earn free days" (3 Nov 2026): on since 4 Nov 2026 06:17, when payments script version 12 ('ref'/'refjoin') was deployed
 )
 PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
 _g2s = g2_syllabus_notif()   # the APPSC Group 2 syllabus page (needs PAY, so it is added here)
