@@ -1834,14 +1834,14 @@ def hub_html(catalog, counts, grand):
         pills = ''.join(f'<span>{esc(e["t"])}</span>' for e in lv[:4]) + (f'<span class="more">+{len(lv) - 4} more</span>' if len(lv) > 4 else '')
         art = BOARD_ART.get(c['id'], BOARD_ART['ssc'])
         badge = f'<span class="bd-badge"><i></i>{len(lv)} exam{"s" if len(lv) != 1 else ""} live</span>' if lv else '<span class="bd-badge bd-soon">Coming soon</span>'
-        foot = f'{nq:,} questions' if lv else 'Previous papers being added'   # Anil, 3 Nov 2026: upcoming exam tiles are not shown in the boards
+        foot = f'{nq:,} questions' if lv else f'{len(ex)} exams listed'
         boards.append(f'<button type="button" class="card board b-{c["id"]}{"" if lv else " soon"}" data-act="excat" data-cat="{c["id"]}" title="{esc(c["desc"])}">'
                       f'<span class="bd-art{" has-ph" if c["id"] in BOARD_PHOTO and os.path.exists(os.path.join(SRC, "static", "board-" + c["id"] + ".webp")) else ""}">'
                       + (f'<img class="bd-ph" src="/board-{c["id"]}.webp" alt="" width="640" height="250" loading="lazy" decoding="async">' if c['id'] in BOARD_PHOTO and os.path.exists(os.path.join(SRC, 'static', f'board-{c["id"]}.webp')) else '')
                       + f'<svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{art}</svg>{badge}</span>'
                       f'<span class="bd-body"><span class="bd-n">{esc(c["name"])}</span>{te}'
                       + (f'<span class="bd-pills">{pills}</span>' if pills else f'<span class="bd-d">{esc(c["desc"])}</span>')
-                      + f'<span class="bd-ft"><span>{foot}</span><span class="bd-go">Open →</span></span></span></button>')
+                      + f'<span class="bd-ft"><span>{foot}</span><span class="bd-go">{"Open" if lv else "See list"} →</span></span></span></button>')
         tiles = {True: [], False: []}
         for e in lv + [e for e in ex if not e.get('live')]:
             live = bool(e.get('live'))
@@ -1854,7 +1854,7 @@ def hub_html(catalog, counts, grand):
                                + (f'<img class="ex-ph" src="{exam_photo(e["id"])}" alt="" width="480" height="180" loading="lazy" decoding="async">' if live and exam_photo(e['id']) else '')
                                + f'<svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">{exam_art(e, c["id"])}</svg></span>'
                                f'<span class="ex-body"><span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></span></a>')
-        upc = (f'<details class="upc"{"" if lv else " open"}><summary>Upcoming exams in {esc(c["name"])} · being added one by one</summary>'
+        upc = (f'<details class="upc"{"" if lv else " open"}><summary>Upcoming exams in {esc(c["name"])} ({len(tiles[False])}) · being added one by one</summary>'
                f'<div class="exams">{"".join(tiles[False])}</div></details>' if tiles[False] else '')
         secs.append(f'<section class="exam-cat" data-cat="{c["id"]}"><div class="section-title"><h2>{esc(c["name"])}{" <span class=te-sub lang=te>" + esc(c["te"]) + "</span>" if c.get("te") else ""}</h2>'
                     f'<span class="muted" style="font-size:14px">{esc(c["desc"])}</span></div>'
@@ -1874,9 +1874,6 @@ def hub_html(catalog, counts, grand):
             f'<div id="hubCats">{"".join(secs)}</div>'
             + (f'<p class="ph-credit" id="exCredits" hidden>Exam photos (cropped) via Wikimedia Commons: '
                + ' · '.join(photo_credit(e['id'], '') for e in catalog['exams'] if e.get('live') and exam_photo(e['id'])) + '.</p>')
-            + f'<div class="card empty" id="hubSoon" hidden><h3 data-i18n="soonT">Coming soon</h3>'
-            f'<p data-i18n="soonP">Previous papers for this board are being added. Tell Anil which exam you want first.</p>'
-            f'<div class="row" style="justify-content:center"><a class="btn btn-primary" id="hubSoonAsk" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></div>'
             + f'<div class="card empty" id="hubEmpty" hidden><h3 data-i18n="emptyT">No exam matches your search</h3>'
             f'<p data-i18n="emptyP">Tell Anil which exam you are preparing for, and it will be added to the list.</p>'
             f'<div class="row" style="justify-content:center"><a class="btn btn-primary" id="hubAsk" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></div>'
