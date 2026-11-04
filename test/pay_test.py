@@ -59,7 +59,7 @@ async def main():
         if b['action'] == 'passes': r = dict(ok=True, passes=passes())
         elif b['action'] == 'buy':
             state['kind'] = b.get('kind')
-            if state.get('slowbuy'): await asyncio.sleep(0.8); r = dict(ok=True, url=url + 'robots.txt')   # stays away, like a slow Instamojo
+            if state.get('slowbuy'): await asyncio.sleep(2.0); r = dict(ok=True, url=url + 'robots.txt')   # stays away, like a slow Instamojo (2 s: longer than the page takes to open the window, so the link is still being made at the first tap)
             else: r = dict(ok=True, url=url + 'ts-police-si/?payment_id=MOJO1&payment_status=Credit&payment_request_id=REQ1')
         elif b['action'] == 'verify':
             if state.get('verifyfail'): r = dict(ok=False, error='The payment is not complete yet.')
