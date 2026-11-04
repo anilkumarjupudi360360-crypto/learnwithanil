@@ -4232,7 +4232,7 @@ PAY = dict(
     exams='',   # names of every live exam, for the pay dialog ("one payment for the whole website"); set in main()
     otp=False,  # off (Anil, 4 Nov 2026, 06:10: "let the students login previously as done yesterday"); was True: Anil, 4 Nov 2026: a first registration with phone + email is confirmed with a 6-digit code emailed by the payments script
                 # (actions otpsend/otpverify); until that script version is deployed the site registers students without a code
-    ref=False,  # "invite friends, earn free days" (3 Nov 2026): True only once the payments script with 'ref'/'refjoin' (version 12) is deployed
+    ref=True,  # "invite friends, earn free days" (3 Nov 2026): on since 4 Nov 2026 06:17, when payments script version 12 ('ref'/'refjoin') was deployed
 )
 PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
 _g2s = g2_syllabus_notif()   # the APPSC Group 2 syllabus page (needs PAY, so it is added here)
