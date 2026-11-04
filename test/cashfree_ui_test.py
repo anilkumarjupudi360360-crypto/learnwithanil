@@ -91,9 +91,10 @@ async def main():
             t = await pg.inner_text('body') if r and r.ok else ''
             miss = [w for w in need if w not in t]
             if not t or miss: errors.append(f'{fn}: missing {miss or "page"}')
-        await pg.goto(url + 'help.html')
-        foot = await pg.inner_text('footer')
-        if not all(w in foot for w in ('Refunds', 'Delivery', 'Contact')): errors.append(f'footer does not link the new pages: {foot[-200:]!r}')
+        for where in ('help.html', 'ts-police-si/', 'appsc-group-2/papers/'):   # a static page and the exam app pages
+            await pg.goto(url + where); await pg.wait_for_timeout(400)
+            foot = await pg.inner_text('footer') if await pg.locator('footer').count() else ''
+            if not all(w in foot for w in ('Refunds', 'Delivery', 'Contact')): errors.append(f'{where}: footer does not link the new pages: {foot[-200:]!r}')
         for fn in ('privacy.html', 'terms.html'):
             await pg.goto(url + fn); t = await pg.inner_text('main') if await pg.locator('main').count() else await pg.inner_text('body')
             if 'Cashfree' not in t: errors.append(f'{fn} does not name Cashfree as a payment gateway')
