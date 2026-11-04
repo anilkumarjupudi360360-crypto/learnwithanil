@@ -819,7 +819,7 @@ details.upc .exams{margin-top:8px}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/upsc-capf-8662e9d44a.js"></script>
+<script src="data/upsc-capf-71314fd151.js"></script>
 <script>
 (function(){
 "use strict";
@@ -1062,6 +1062,7 @@ function openPay(kind, note){
   if(d.showModal) d.showModal(); else d.setAttribute("open","");
   track("view_pay", {exam: PAYC.exam, note: note||""});   // payment window (with the meme) opened: counts how many students see it (Anil, 3 Nov 2026)
   d.scrollTop = 0;
+  if(open && note!=="pending") payWarm();   // the Instamojo link is made while the student reads the window (not while a payment is still being confirmed)
 }
 function closePay(){ const d = document.getElementById("payDlg"); if(d){ if(d.close) d.close(); else d.removeAttribute("open"); } }
 /* One payment link per tap: while a link is being made (and while the browser is leaving for Instamojo) further taps
@@ -1075,6 +1076,21 @@ function payButtons(busy){
   });
 }
 function payRelease(){ payBusy = false; payButtons(false); }
+/* Anil, 4 Nov 2026: "there some latency ...while opening payments". The payments script takes 3-4 s to make the Instamojo link, so
+   for a registered student it is made in the background as soon as the payment window opens (kept for 15 minutes on this page),
+   and Pay then goes straight to the payment page. The browser also connects to Instamojo early, which saves a moment on phones. */
+let PAYPRE = null;   // {key, t, p}: the link being made, or made, for this student and this page
+const payPreKey = ()=> [ST.phone||"", ST.email||"", location.origin + PB].join("|");
+function payPre(){ return PAYPRE && PAYPRE.key===payPreKey() && Date.now() - PAYPRE.t < 15*60*1000 ? PAYPRE.p : null; }
+function payWarm(){
+  if(!PAYC || !PAYC.on || !PAYC.api || !ST.name || !ST.phone || passOK("pyq") || payPre()) return;
+  ["https://www.instamojo.com", "https://static.im-cdn.com"].forEach(h=>{
+    if(!document.querySelector(`link[rel="preconnect"][href="${h}"]`)){ const l = document.createElement("link"); l.rel = "preconnect"; l.href = h; document.head.appendChild(l); } });
+  const p = payCall({action:"buy", exam:PAYC.exam, kind:"pyq", name:ST.name, phone:ST.phone, email:ST.email, back: location.origin + PB})
+    .then(r=> r && r.ok && (r.url || r.session) ? r : null).catch(()=>null);
+  const me = PAYPRE = {key: payPreKey(), t: Date.now(), p};
+  p.then(r=>{ if(!r && PAYPRE===me) PAYPRE = null; });   // not made: Pay asks again
+}
 async function payBuy(kind){
   kind = "pyq";
   if(!PAYC || !PAYC.on || !PAYC.api){ toast("Online payment is being switched on. Please check back shortly."); return; }
@@ -1082,7 +1098,9 @@ async function payBuy(kind){
   if(payBusy) return;
   payBusy = true; payButtons(true);
   toast("Opening the secure payment page…"); track("begin_checkout", {exam: PAYC.exam, kind});
-  try{ const r = await payCall({action:"buy", exam:PAYC.exam, kind, name:ST.name, phone:ST.phone, email:ST.email, back: location.origin + PB});
+  try{ const pre = payPre();
+       let r = pre ? await pre : null;   // the link made while the payment window was open (or still being made)
+       if(!r) r = await payCall({action:"buy", exam:PAYC.exam, kind, name:ST.name, phone:ST.phone, email:ST.email, back: location.origin + PB});
        if(r && r.ok && (r.url || r.session)){
          try{ sessionStorage.setItem(PAYKEY, JSON.stringify({kind, t: Date.now()})); }catch(_){}
          if(r.session){ if(!await cfCheckout(r)){ payRelease(); return; } }
