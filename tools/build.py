@@ -1563,13 +1563,14 @@ def home_notes(notes, bb_url='', line=''):
     if not notes and not bb_url: return ''
     if not notes: return f'<section class="wrap section">{bahubali_promo(bb_url)}</section>'
     covers = ''.join(f'<img src="{esc(b["cover"])}" alt="" width="140" height="198" loading="lazy">' for b in notes)
-    return f'''<section class="wrap section">{bahubali_promo(bb_url) if bb_url else ''}
+    # Anil, 4 Nov 2026: "first books for that relevant exams followed by test series": the exam's own books, then the test series.
+    return f'''<section class="wrap section">
     <a class="card notes-promo" href="#notes">
       <div class="np-copy"><p class="eyebrow">New · Study material</p><h2>Study material 2026-27</h2>
       <p>{esc(line) if line else esc(" and ".join(dict.fromkeys(b.get("subject_label", b["subject"]) for b in notes))) + " for APPSC Mains, with the latest 2026 data and APPSC's own previous questions inside."} {INCL}.</p>
       <span class="btn btn-primary">See the books</span></div>
       <div class="np-covers" aria-hidden="true">{covers}</div>
-    </a>
+    </a>{bahubali_promo(bb_url) if bb_url else ''}
   </section>'''
 
 
