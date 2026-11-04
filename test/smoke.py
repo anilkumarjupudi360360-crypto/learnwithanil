@@ -46,6 +46,7 @@ def fake_pay(passes):   # the payments script: a student with the given passes (
             f = (BOOKS.get(iid[3:]) or {}).get('file') or BOOKLET_FILES.get(iid)
             r = ({'ok': True, 'id': iid, 'key': BOOK_KEYS.get(iid, ''), 'file': f} if passes.get('paid') and f else {'ok': False, 'error': 'test', 'need': 'pyq'})
         elif act == 'mock' and iid == 'bb-code': r = {'ok': True, 'id': iid, 'key': BB_CODE} if passes.get('paid') and BB_CODE else {'ok': False, 'error': 'test', 'need': 'pyq'}
+        elif act == 'otpsend': r = {'ok': False, 'skip': True, 'error': 'test'}   # no email codes here: registration goes on without one (the code step is in test/otp_ui_test.py)
         else: r = {'ok': False, 'error': 'test'}
         await route.fulfill(status=200, content_type='application/json', body=json.dumps(r))
     return h
@@ -100,7 +101,7 @@ async def main():
                 assert (await pg.evaluate('location.pathname')).endswith('/join/'), 'the first quiz should ask for registration'
                 await pg.screenshot(path=f'{SHOTS}/join.png')
                 await pg.fill('[name=name]', 'Test Student'); await pg.fill('[name=phone]', '9876543210'); await pg.fill('[name=email]', 'test@example.com')
-                await pg.fill('[name=district]', 'Guntur'); await pg.check('[name=ok]'); await pg.click('#joinForm button[type=submit]'); await pg.wait_for_timeout(200)
+                await pg.fill('[name=district]', 'Guntur'); await pg.check('[name=ok]'); await pg.click('#joinForm button[type=submit]'); await pg.wait_for_timeout(500)
                 assert (await pg.evaluate('location.pathname')).endswith('/quiz/'), 'after registering, the quiz should start'
                 for i in range(3):
                     await pg.click('[data-act="pick"][data-i="0"]')
