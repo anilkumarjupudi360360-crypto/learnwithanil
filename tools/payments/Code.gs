@@ -26,9 +26,6 @@
  *  - refjoin: a new student registered through a friend's link (?ref=<code>): records it and gives the friend free days.
  *             See "invite friends, earn free days" below.
  *  - glogin:  log in with Google (a 12-month session on that device; see "student accounts").
- *  - otpsend / otpverify: log in with a 6-digit code emailed to the student (for students without Google). The emails go out
- *             from this script's Google account (MailApp), so the first deployment with this code asks Anil to allow
- *             "Send email as you".
  *
  * Settings are NOT in this file. They live under Project Settings → Script properties:
  *   SHEET_ID                                       the ID of the "Learn with Anil – Passes" spreadsheet (the only sheet this script opens)
@@ -67,8 +64,6 @@ function doPost(e) {
     // A student signs in once with Google, adds a phone number once, and stays logged in on that device for 12 months.
     // Requests carrying a session are answered for the account's phone (and its Google email); older phone + email requests still work.
     if (b.action === 'glogin') return out(glogin(b));
-    if (b.action === 'otpsend') return out(otpSend(b));
-    if (b.action === 'otpverify') return out(otpVerify(b));
     let S = null;
     if (b.session) {
       S = session_(String(b.session));
@@ -410,58 +405,9 @@ function newSession_(email, name, sub, b) {
   } finally { lock.releaseLock(); }
 }
 
-// ---------- email code login (Anil, 4 Nov 2026: "OTP login for first timers") ----------
-// A student who registers with phone and email (no Google) gets a 6-digit code at that email, sent from this script's Google
-// account with MailApp (about 100 emails a day on a free Google account). The right code within 10 minutes logs them in exactly
-// like Google login: an account in the 'accounts' tab (sub 'email-otp') and a 12-month session. Only a hash of the code is kept,
-// in the script cache. The email holds nothing but the code, so the form can't be used to send other text to anyone.
-// When the day's emails run out ({skip: true}) the website registers the student the old way, without a code.
-const OTP = {mins: 10, tries: 5, gap: 45, perEmail: 5, reserve: 3};   // valid minutes, wrong tries per code, seconds between codes, codes per email per 6 hours, emails kept back
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-// Run once from the editor (Run → allowEmailCodes) before deploying the version with email codes: Google asks Anil to allow
-// "Send email as you". Until that is allowed, a deployment of this code cannot run at all, so authorise first, then deploy.
-function allowEmailCodes() { Logger.log('Emails left today: ' + MailApp.getRemainingDailyQuota()); }
-function otpKey_(email) { return 'otp-' + sha_('otp|' + email).slice(0, 40); }
-function otpSend(b) {
-  const email = String(b.email || '').trim().toLowerCase();
-  if (email.length > 120 || !EMAIL_RE.test(email)) return {ok: false, error: 'Please enter a valid email address.'};
-  let left = 0; try { left = MailApp.getRemainingDailyQuota(); } catch (e) { left = 0; }
-  if (left <= OTP.reserve) { log_('otp', 'daily email limit reached'); return {ok: false, skip: true, error: 'Email codes are not available right now.'}; }
-  const c = CacheService.getScriptCache(), k = otpKey_(email);
-  let st = {n: 0, t: 0}; try { st = JSON.parse(c.get(k + '-n') || '') || st; } catch (e) {}
-  const since = (Date.now() - st.t) / 1000;
-  if (since < OTP.gap) return {ok: false, wait: Math.ceil(OTP.gap - since), error: 'A code was just sent. Please wait ' + Math.ceil(OTP.gap - since) + ' seconds before asking for a new one.'};
-  if (st.n >= OTP.perEmail) return {ok: false, error: 'Too many codes for this email. Please try again after a few hours, or use Continue with Google.'};
-  const code = String(parseInt(Utilities.getUuid().replace(/-/g, '').slice(0, 12), 16) % 1000000).padStart(6, '0');
-  const text = 'Your Learn with Anil code is ' + code + '.\n\nEnter it on learnwithanil.in within ' + OTP.mins + ' minutes to finish registering. '
-    + 'Do not share this code with anyone.\n\nIf you did not ask for this code, you can ignore this email.\n\nLearn with Anil\nhttps://learnwithanil.in/';
-  const html = '<div style="font-family:Arial,sans-serif;font-size:15px;color:#1b2430;max-width:480px">'
-    + '<p>Your Learn with Anil code is</p><p style="font-size:30px;font-weight:bold;letter-spacing:6px;margin:8px 0 16px">' + code + '</p>'
-    + '<p>Enter it on learnwithanil.in within ' + OTP.mins + ' minutes to finish registering. Do not share this code with anyone.</p>'
-    + '<p style="color:#5b6573;font-size:13px">If you did not ask for this code, you can ignore this email.</p>'
-    + '<p style="color:#5b6573;font-size:13px">Learn with Anil · <a href="https://learnwithanil.in/">learnwithanil.in</a></p></div>';
-  try { MailApp.sendEmail({to: email, subject: code + ' is your Learn with Anil code', body: text, htmlBody: html, name: 'Learn with Anil'}); }
-  catch (e) { log_('otp', 'send failed: ' + String(e && e.message || e)); return {ok: false, error: 'Could not send the code to this email. Please check the address, or use Continue with Google.'}; }
-  c.put(k, JSON.stringify({h: sha_(email + '|' + code), tries: 0, exp: Date.now() + OTP.mins * 60000}), OTP.mins * 60);
-  c.put(k + '-n', JSON.stringify({n: st.n + 1, t: Date.now()}), 6 * 3600);
-  return {ok: true, mins: OTP.mins, gap: OTP.gap};
-}
-function otpVerify(b) {
-  const email = String(b.email || '').trim().toLowerCase(), code = String(b.code || '').replace(/\D/g, '');
-  if (!EMAIL_RE.test(email)) return {ok: false, error: 'Please enter a valid email address.'};
-  if (!/^\d{6}$/.test(code)) return {ok: false, error: 'Please enter the 6-digit code from the email.'};
-  const c = CacheService.getScriptCache(), k = otpKey_(email);
-  let o = null; try { o = JSON.parse(c.get(k) || ''); } catch (e) {}
-  if (!o || !o.h || o.exp < Date.now()) return {ok: false, expired: true, error: 'This code has expired. Please tap "Send a new code".'};
-  if (o.h !== sha_(email + '|' + code)) {
-    o.tries = (o.tries || 0) + 1;
-    if (o.tries >= OTP.tries) { c.remove(k); return {ok: false, expired: true, error: 'Too many wrong tries. Please tap "Send a new code".'}; }
-    c.put(k, JSON.stringify(o), Math.max(1, Math.round((o.exp - Date.now()) / 1000)));
-    return {ok: false, error: 'That code is not right. Please check the latest email from Learn with Anil and try again.'};
-  }
-  c.remove(k);
-  return newSession_(email, String(b.name || '').trim().replace(/\s+/g, ' ').slice(0, 80), 'email-otp', b);
-}
+// Email-code (OTP) login was written on 4 Nov 2026 (commit 2a9c5e9324) and taken out the same morning (Anil, 4 Nov 2026:
+// "let the students login previously as done yesterday"). It needed Google's "Send email as you" permission, which blocks every
+// deploy until Anil allows it. To bring it back: restore the code from that commit, Run allowEmailCodes once, then deploy.
 
 function session_(token) {
   if (!/^[0-9a-f]{64}$/.test(token)) return null;

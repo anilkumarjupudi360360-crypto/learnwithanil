@@ -4229,7 +4229,7 @@ PAY = dict(
     pyq_price=45,
     gid=(open(os.path.join(SRC, 'google-client-id.txt')).read().strip() if os.path.exists(os.path.join(SRC, 'google-client-id.txt')) else ''),   # "Continue with Google" (public OAuth client id; Anil, 2 Nov 2026)
     exams='',   # names of every live exam, for the pay dialog ("one payment for the whole website"); set in main()
-    otp=True,   # Anil, 4 Nov 2026: a first registration with phone + email is confirmed with a 6-digit code emailed by the payments script
+    otp=False,  # off (Anil, 4 Nov 2026, 06:10: "let the students login previously as done yesterday"); was True: Anil, 4 Nov 2026: a first registration with phone + email is confirmed with a 6-digit code emailed by the payments script
                 # (actions otpsend/otpverify); until that script version is deployed the site registers students without a code
     ref=False,  # "invite friends, earn free days" (3 Nov 2026): True only once the payments script with 'ref'/'refjoin' (version 12) is deployed
 )
