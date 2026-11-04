@@ -173,6 +173,7 @@ async def main():
         state['slowbuy'] = False
         # 2. back from Instamojo with a FAILED payment: the checkout stays open with a lasting note, Try again and WhatsApp help
         state['verifyfail'] = True
+        n0 = state['calls'].count('buy'); state['slowbuy'] = True   # the link made when the window opens goes to robots.txt
         await pg.goto(url + 'ts-police-si/?payment_id=MOJO9&payment_status=Failed&payment_request_id=REQ9'); await pg.wait_for_timeout(1500)
         if not await pg.locator('#payDlg[open]').count(): errors.append('no checkout after a failed payment')
         else:
@@ -183,11 +184,11 @@ async def main():
             if 'payment_request_id' in await pg.evaluate('location.search'): errors.append('payment details left in the address bar')
             await pg.wait_for_timeout(9000)   # a toast would be gone by now; the note must still be there
             if "didn't go through" not in await pg.inner_text('#payDlg'): errors.append('failed payment note disappeared')
-            # Try again makes a new payment link
-            n = state['calls'].count('buy'); state['slowbuy'] = True
+            # Try again opens a new payment link: made in the background when the window opened (4 Nov 2026), so the tap is quick
             await pg.click('#payDlg [data-act="paybuy"]'); await pg.wait_for_timeout(1300)
-            if state['calls'].count('buy') != n + 1: errors.append('Try again did not open the payment page')
-            state['slowbuy'] = False
+            if state['calls'].count('buy') != n0 + 1: errors.append(f'Try again: {state["calls"].count("buy") - n0} new payment links, not 1')
+            if not pg.url.endswith('robots.txt'): errors.append(f'Try again did not open the payment page: {pg.url}')
+        state['slowbuy'] = False
         # 3. back from Instamojo saying Credit, but not confirmed yet: "still confirming", not "failed"
         await pg.goto(url + 'ts-police-si/?payment_id=MOJO8&payment_status=Credit&payment_request_id=REQ8'); await pg.wait_for_timeout(1500)
         t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
