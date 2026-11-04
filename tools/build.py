@@ -4136,7 +4136,9 @@ def notif_page(loaded, rel):
     conf, papers, questions = hit if hit else (None, [], [])
     board, site = N.get('board', 'APPSC'), N.get('site', 'psc.ap.gov.in')   # who issued it, and their website (for the source note)
     can = f'{SITE_URL}/{rel}'
-    body = ['<style>main{overflow-wrap:break-word}main li,main td{overflow-wrap:anywhere}</style>', f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>']
+    body = ['<style>main{overflow-wrap:break-word}main li,main td{overflow-wrap:anywhere}.qa{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:8px 0;background:var(--surface)}.qa summary{font-weight:700;cursor:pointer}.qa p{margin:8px 0 2px}</style>']
+    if N.get('te'): body.append(f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>')
+    elif N.get('hi'): body.append(f'<p lang="hi" style="margin:0 0 6px">{esc(N["hi"])}</p>')
     if conf: body.append(f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>')
     for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
@@ -4147,13 +4149,18 @@ def notif_page(loaded, rel):
         elif kind == 'note': body.append(f'<p class="note">{esc(data)}</p>')
         elif kind == 'html': body.append(data)   # trusted markup written here (links)
         else: body.append(f'<p>{esc(data)}</p>')
+    if N.get('faqs'):   # "Quick answers": the questions students type into Google and ChatGPT (Anil, 4 Nov 2026: "masala questions")
+        body.append(f'<h2 id="quick-answers">Quick answers{esc(" (as of " + N["faq_asof"] + ")") if N.get("faq_asof") else ""}</h2>'
+                    + ''.join(f'<details class="qa"{" open" if i < 3 else ""}><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for i, (q, a) in enumerate(N['faqs']))
+                    + '<script type="application/ld+json">' + json.dumps({'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [
+                        {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in N['faqs']]}, ensure_ascii=False) + '</script>')
     if N.get('related'):   # other pages for the same exam (hall ticket, answer key, syllabus, salary…)
         body.append('<h2>More on this exam</h2><ul>' + ''.join(f'<li><a href="/{r}">{esc(re.sub("<[^>]+>", "", NOTIFS[r]["h1"]))}</a></li>'
                                                             for r in N['related'] if r in NOTIFS and r != rel) + '</ul>')
     if conf and not N.get('no_practice'):
-        key = 'the official final key' if board != 'APPSC' else "APPSC's final key"
+        key = 'the official answer keys (where the board has published them)' if board != 'APPSC' else "APPSC's final key"
         body.append(f'<h2>Start with the previous papers</h2><p>Every {esc(conf["name"])} paper on this site comes with the answers from {key} and a short '
-                    f'explanation in English and Telugu. Practise a paper online or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
+                    f'explanation in English and {esc(conf["l2"]["name"])}. Practise a paper online or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
     elif not conf:
         body.append(N.get('tail_html', '<h2>Practise previous papers</h2><p><a href="/">Learn with Anil</a> has previous year questions with answers for APPSC, TGPSC, '
                                        'TS and AP Police, SSC and UPSC exams. <a href="/appsc-pyqs.html">All APPSC previous papers</a> · <a href="/ts-police-pyqs.html">TS Police previous papers</a></p>'))
@@ -4231,6 +4238,8 @@ PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
 _g2s = g2_syllabus_notif()   # the APPSC Group 2 syllabus page (needs PAY, so it is added here)
 if _g2s: NOTIFS['appsc-group-2-syllabus-2026.html'] = _g2s
 NOTIFS['appsc-group-1-syllabus-2026.html'] = g1_syllabus_notif()   # the APPSC Group 1 syllabus page (3 Nov 2026)
+import notif_news   # Quick answers on every notification page + notification pages for the other live exams (Anil, 4 Nov 2026)
+notif_news.apply(NOTIFS)
 _eos = eo_syllabus_notif()   # the APPSC EO Grade-III syllabus page
 if _eos: NOTIFS['appsc-eo-grade-3-syllabus-2026.html'] = _eos
 # Anil, 26 Oct 2026: "one ₹45 = everything". The ₹45 All-in-One Pass opens every previous paper, every mock test series
