@@ -1478,6 +1478,8 @@ def main():
     notifs = {rel: None for rel in NOTIFS if not NOTIFS[rel].get('exam') or any(c['id'] == NOTIFS[rel]['exam'] for c, _, _ in loaded)}
     for rel in notifs:
         open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(notif_page(loaded, rel))
+    open(os.path.join(DIST, 'site', NEWS_HUB), 'w', encoding='utf-8').write(news_hub_page(loaded, list(notifs)))   # every news page in one list (SEO, 4 Nov 2026)
+    notifs[NEWS_HUB] = None
     mocks = {}
     for c, ps, qs in loaded:
         if not any(p['fmt'] == 'mcq' for p in ps): continue
@@ -2384,7 +2386,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -3086,7 +3088,7 @@ def funders_page(loaded):
 </main>
 <footer class="foot">
   <div class="wrap">
-    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/ap-police-pyqs.html">AP Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/funders.html">Fund this project</a></span>
+    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/exam-notifications.html">Exam notifications</a> · <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/ap-police-pyqs.html">AP Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/funders.html">Fund this project</a></span>
   </div>
 </footer>
 <script>(function(){{var T={tj};
@@ -4167,6 +4169,49 @@ def notif_page(loaded, rel):
     crumbs = [('Home', SITE_URL + '/')] + ([(conf['name'], SITE_URL + conf['pb'])] if conf else []) + [(N['crumb'], can)]
     return static_page(0, N['title'], N['desc'], can, N['h1'], esc(N['lede']), ''.join(body), crumbs, conf, ename=N.get('ename'), at_root=True, head_all=not conf,
                        foot_text=None if conf else f'Exam information compiled from {board}\'s official notifications by Jupudi Anil Kumar, Learn with Anil. Not affiliated with {board}.')
+
+
+NEWS_HUB = 'exam-notifications.html'
+NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)')]
+
+
+def news_hub_page(loaded, rels):
+    """/exam-notifications.html: every notification / exam-date / answer-key / syllabus page, grouped by board, with its first
+    Quick answer, so students (and Google) find the latest news for each exam in one place (Anil, 4 Nov 2026: "update SEO")."""
+    names = {c['id']: c['name'] for c, _, _ in loaded}
+    groups = {}
+    for rel in rels:
+        N = NOTIFS[rel]
+        b = 'AP DSC' if rel.startswith('ap-dsc') else N.get('board', 'APPSC')
+        groups.setdefault(b, []).append(rel)
+    body = ['<style>.nh{list-style:none;padding:0;margin:0}.nh li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0;background:var(--surface)}'
+            '.nh a{font-weight:700}.nh p{margin:6px 0 0;font-size:15px;color:var(--muted)}</style>',
+            '<p>The latest official news for every exam on Learn with Anil: notifications, last dates and extensions, exam dates, hall tickets, answer keys and syllabus, '
+            'each with quick answers to the questions students ask and links to the previous papers. Pages show the date their facts were checked.</p>']
+    order = [b for b, _ in NEWS_BOARDS] + sorted(set(groups) - {b for b, _ in NEWS_BOARDS})
+    for b in order:
+        if b not in groups: continue
+        label = dict(NEWS_BOARDS).get(b, b)
+        items = []
+        for rel in groups[b]:
+            N = NOTIFS[rel]
+            h1 = re.sub('<[^>]+>', '', N['h1'])
+            ex = f' · {esc(names[N["exam"]])}' if N.get('exam') in names and names[N['exam']].lower() not in h1.lower() else ''
+            qa = N.get('faqs') or []
+            sub = f'{esc(qa[0][0])} {esc(qa[0][1])}' if qa else esc(N['lede'].split('. ')[0].rstrip('.') + '.')
+            items.append(f'<li><a href="/{rel}">{esc(h1)}</a>{ex}<p>{sub}</p></li>')
+        body.append(f'<h2 id="{re.sub("[^a-z]+", "-", b.lower()).strip("-")}">{esc(label)}</h2><ul class="nh">' + ''.join(items) + '</ul>')
+    body.append('<p class="note">Compiled from the boards\' official notifications and web notes by Jupudi Anil Kumar, Learn with Anil. Dates can change; always check the '
+                'board\'s website before applying. Learn with Anil is not connected with any recruiting board.</p>')
+    can = f'{SITE_URL}/{NEWS_HUB}'
+    return static_page(0, 'Govt Exam Notifications 2026 – APPSC, TGPSC, UPSC, SSC, TS & AP Police: Last Dates, Exam Dates, Hall Tickets, Answer Keys | Learn with Anil',
+                       'Latest government exam notifications and news in one place: APPSC Group 1 & 2 (last date extended?), AMVI, EO, FRO; TS Police SI & Constable exam '
+                       'date and hall ticket; AP Police; TGPSC HMWSSB; UPSC CSE, CAPF, EPFO; SSC CGL; AP DSC. Quick answers and previous papers for each.',
+                       can, 'Exam notifications 2026: latest dates for every exam',
+                       esc('Notifications, last dates, extensions, exam dates, hall tickets and answer keys for APPSC, TGPSC, UPSC, SSC, TS Police, AP Police and AP DSC.'),
+                       ''.join(body), [('Home', SITE_URL + '/'), ('Exam notifications', can)], None, ename='All exams', at_root=True, head_all=True,
+                       foot_text='Exam information compiled from the official notifications by Jupudi Anil Kumar, Learn with Anil. Not affiliated with any recruiting board.')
 
 
 ROOT_NOTES = ('Study material: every book on the site',   # the start page's Study Material lists every book, for every exam
