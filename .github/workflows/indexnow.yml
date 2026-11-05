@@ -1,0 +1,45 @@
+# Sends the pages a publish adds or changes to IndexNow (Bing, Yandex, Seznam...; ChatGPT search reads Bing).
+# Runs after every push to main that touches docs/ (the published site), and by hand from the Actions tab:
+# "Run workflow" with addresses (e.g. /exam-notifications.html /ssc-cgl/) or "main" for every page except /q/ pages.
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths: ['docs/**']
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'Addresses separated by spaces, or "main" for every page except the one-question pages'
+        default: main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Wait for GitHub Pages to publish
+        run: sleep 120
+      - name: Submit to IndexNow
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          URLS: ${{ github.event.inputs.urls }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ "$URLS" = "main" ]; then python3 tools/indexnow.py --main; else python3 tools/indexnow.py $URLS; fi
+          elif [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            echo "no previous commit to compare"
+          else
+            python3 tools/indexnow.py --diff "$BEFORE" "$AFTER"
+          fi
