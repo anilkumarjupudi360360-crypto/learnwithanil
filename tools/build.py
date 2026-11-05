@@ -3882,24 +3882,28 @@ NOTIFS['ap-dsc-2026-notification.html'] = dict(
     exam=None, ename='AP DSC 2026', board='the School Education Department, Andhra Pradesh', site='tet2dsc.apcfss.in', crumb='AP DSC 2026 Notification',
     title='AP DSC 2026 Notification – 2,721 Teacher Posts (SA, SGT, Special Education, PGT, TGT), District-wise Vacancies, Dates, Eligibility & Exam Pattern | Learn with Anil',
     desc='AP DSC 2026 (APTRT-2026): 2,721 teacher posts, with 906 School Assistant, 1,205 SGT, 350 special-education and 260 residential-school posts; '
-         'district-wise and society-wise vacancies, the detailed notification and application dates, fee, age limit, TET weightage and the CBT exam pattern.',
+         'district-wise and society-wise vacancies; detailed notification out 4 November, online applications from 11 November 2026; fee, age limit, TET weightage and the CBT exam pattern.',
     h1='AP DSC 2026: 2,721 teacher posts',
     lede='The Andhra Pradesh School Education Department issued brief notifications on 13 October 2026 for 2,721 teacher posts (DSC-2026): 2,111 School Assistant and SGT posts '
          'in government, ZP, MPP and municipal schools, 350 special-education posts, and 260 posts in residential societies and model schools. The detailed notification, '
-         'with the application dates, fee, age limit and exam schedule, was due on or before 3 November 2026 on tet2dsc.apcfss.in. The exam is a computer-based test (CBT).',
+         'with the application dates, fee, age limit and exam schedule, was issued on Wednesday 4 November 2026 on tet2dsc.apcfss.in, and online applications open on 11 November 2026 '
+         '(Deccan Chronicle and Sakshi Education, 5 November 2026). The exam is a computer-based test (CBT).',
     te='ఏపీ డీఎస్సీ 2026: 2,721 టీచర్ పోస్టులు — స్కూల్ అసిస్టెంట్ 906, ఎస్జీటీ 1,205, స్పెషల్ ఎడ్యుకేషన్ 350, గురుకులాలు/మోడల్ స్కూళ్లు 260. జిల్లాల వారీ ఖాళీలు, తేదీలు, అర్హత, పరీక్ష విధానం.',
     pdf=APDSC + 'DSC-2026%20Press%20Note%20English.pdf', pdfname='School Education Department press note on DSC-2026 with district-wise and society-wise vacancies (13 October 2026)',
     more_src=[(APDSC + 'notifications/DSC-2026%20General%20notification%20(1).pdf', 'Brief Notification No.1/DSC-2026 (General)'),
               (APDSC + 'notifications/DSC-2026%20Special%20Education%20Notifcation.pdf', 'Brief Notification No.2/DSC-2026 (Special Education)'),
               (APDSC + 'notifications/DSC-2026%20Socities%20Notification.pdf', 'Brief Notification No.3/DSC-2026 (Societies)'),
               (APDSC + 'Gos/2026SE_MS28_E.pdf', 'G.O.Ms.No.28, School Education, 13 October 2026'),
-              ('https://tet2dsc.apcfss.in/DSC-PDF/Syllabus-2026/Special%20Education%20DSC%20-%202026.pdf', 'Special Education DSC syllabus 2026')],
+              ('https://tet2dsc.apcfss.in/DSC-PDF/Syllabus-2026/Special%20Education%20DSC%20-%202026.pdf', 'Special Education DSC syllabus 2026'),
+              ('https://www.deccanchronicle.com/southern-states/andhra-pradesh/ap-releases-detailed-dsc-notification-applications-open-on-nov-11-2001889', 'Deccan Chronicle, 5 November 2026: detailed notification issued, applications from 11 November'),
+              ('https://education.sakshi.com/en/ap-dsc/education-news/ap-dsc-2026-notification-released-2721-teacher-vacanciescheck-category-wise-and-society-wise-vacancies-202150', 'Sakshi Education, 5 November 2026: applications from 11 November')],
     sections=[
       ('Important dates', 'table', [
         ('Brief notifications (Nos. 1, 2 and 3/DSC-2026)', '13 October 2026'),
-        ('Detailed notification', 'Due on or before 3 November 2026 on tet2dsc.apcfss.in'),
-        ('Online applications and fee', 'To be announced in the detailed notification (news reports expect them from about 10 November 2026)'),
-        ('Exam', 'Computer-based test; schedule in the detailed notification'),
+        ('Detailed notification', 'Issued Wednesday 4 November 2026 on tet2dsc.apcfss.in (as reported by Deccan Chronicle, 5 November 2026)'),
+        ('Online applications open', '11 November 2026 (Deccan Chronicle and Sakshi Education, 5 November 2026)'),
+        ('Last date, fee payment dates', 'In the detailed notification on tet2dsc.apcfss.in; not yet confirmed here'),
+        ('Exam', 'Computer-based test; the dates are in the detailed notification (not yet confirmed here)'),
         ('Official website', 'tet2dsc.apcfss.in')]),
       ('Posts', 'table+', (['Post', 'Where', 'Posts'], [
         ('School Assistant (SA)', 'Government, ZP, MPP and municipal schools', 906),
