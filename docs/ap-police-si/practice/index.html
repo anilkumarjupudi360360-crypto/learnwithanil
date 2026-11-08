@@ -902,7 +902,7 @@ details.upc .exams{margin-top:8px}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ap-si-02342d3012.js"></script>
+<script src="data/ap-si-bc58d46e34.js"></script>
 <script>
 (function(){
 "use strict";
@@ -1371,7 +1371,7 @@ async function onGoogle(resp){
   toast("Logging you in…");
   let r = null; try{ r = await payCall({action:"glogin", exam:PAYC.exam, credential:resp.credential, device:DEVICE, agent:(navigator.userAgent||"").slice(0,160)}); }catch(_){}
   if(!r || !r.ok){ toast((r && r.error) || "Google login did not work. Please try again."); return; }
-  ST.session = r.session; ST.gmail = r.account.email; saveST(); UI.me = null; track("login", {method:"google"});
+  ST.session = r.session; ST.gmail = r.account.email; saveST(); UI.me = null; track("login", {method:"google"}); setTimeout(progLoad, 500);
   if(r.loggedOut) setTimeout(()=>toast("Your oldest device was logged out (3 devices at a time)."), 2600);
   const a = r.account;
   if(a.phone && a.district && a.name) await finishJoin({name:a.name, phone:a.phone, email:a.email, district:a.district, help:""}, "google");
@@ -1959,6 +1959,38 @@ function renderMe(){
     <div class="me-3"><a href="/ap-police-si/papers/"><span>📄</span>Previous Papers</a><a href="#${mocks}"><span>⏱️</span>${mocks==="mocks" ? "Mock Tests" : "Practice"}</a><a href="/ap-police-si/mistakes/"><span>❌</span>My Mistakes${mis ? ` <b class="n">${mis}</b>` : ""}</a></div>
   </div>`;
 }
+/* ---------- My Mistakes on every device (Anil, 8 Nov 2026, idea 4): a student logged in with Google keeps this exam's mistakes,
+   Daily 10 and exam date with the login (payments script actions progget / progput), so they follow the student to any phone.
+   A question cleared on one device is remembered (S.gone) so it does not come back from another. ---------- */
+const progOn = ()=> !!(PAYC && PAYC.on && PAYC.prog && PAYC.api && ST.session && PAYC.exam);   // PAYC.prog: switched on once the script version with progget/progput is deployed
+function progPack(){
+  const m = {}, gone = {}, cut = Date.now() - 90*864e5;
+  for(const id in S.mistakes){ if(!QMAP[id]) continue; const x = S.mistakes[id]; m[id] = [x.miss||1, x.recall||0, Math.round((x.added||0)/60000)]; }
+  for(const id in (S.gone||{})) if(S.gone[id] > cut) gone[id] = Math.round(S.gone[id]/60000);
+  return {v:1, m, gone, d: S.daily||null, ed: P.examDate||""};
+}
+function progMerge(d){
+  if(!d || typeof d!=="object") return false;
+  let ch = false; S.gone = S.gone || {};
+  for(const id in (d.gone||{})){ const t = d.gone[id]*60000; if(t > (S.gone[id]||0)) S.gone[id] = t; }
+  for(const id in (d.m||{})){ if(!QMAP[id] || !Array.isArray(d.m[id])) continue; const [miss, recall, am] = d.m[id], added = (am||0)*60000;
+    if((S.gone[id]||0) > added) continue;
+    const x = S.mistakes[id];
+    if(!x){ S.mistakes[id] = {reason:"w", added, recall:recall||0, miss:miss||1}; ch = true; }
+    else if((miss||1) > (x.miss||1)){ x.miss = miss; ch = true; } }
+  for(const id in S.mistakes) if((S.gone[id]||0) > (S.mistakes[id].added||0)){ delete S.mistakes[id]; ch = true; }
+  if(d.d && d.d.d && (!S.daily || d.d.d > S.daily.d)){ S.daily = d.d; ch = true; }
+  if(d.ed && !P.examDate){ P.examDate = d.ed; savePrefs(); ch = true; }
+  if(ch) save();
+  return ch;
+}
+let progT = null;
+function progSave(){ if(!progOn()) return; clearTimeout(progT); progT = setTimeout(()=>{ payCall({action:"progput", exam:PAYC.exam, data:progPack()}).catch(()=>{}); }, 1500); }
+async function progLoad(){
+  if(!progOn()) return;
+  try{ const r = await payCall({action:"progget", exam:PAYC.exam}); if(r && r.ok){ if(progMerge(r.data)) render(); progSave(); } }catch(_){}
+}
+const goneMark = id=>{ S.gone = S.gone || {}; S.gone[id] = Date.now(); };
 function renderHomeDynamic(){
   renderMe();
   const o = overall();
@@ -2235,7 +2267,7 @@ function finishQuiz(){
     if(a===undefined){ r="k"; x.k++; res.k++; } else if(isCorrect(q,a)){ r="c"; x.c++; res.c++; } else { r="w"; x.w++; res.w++; }
     x.last=r; x.at=res.at;
     const m = S.mistakes[id];
-    if(r==="c"){ if(m){ m.recall=(m.recall||0)+1; if(m.recall>=2){ delete S.mistakes[id]; res.mastered++; } } }
+    if(r==="c"){ if(m){ m.recall=(m.recall||0)+1; if(m.recall>=2){ delete S.mistakes[id]; goneMark(id); res.mastered++; } } }
     // Anil, 2 Nov 2026 ("these things are creating some confusion"): only a wrong answer goes into the mistakes notebook. A question you
     // skipped, or never reached in a timed test, is not a mistake: it shows under "Skipped" on the result page and counts on the heatmap.
     else if(r==="w"){ if(!m){ S.mistakes[id]={reason:r, added:res.at, recall:0, miss:1}; res.added++; } else { m.recall=0; m.reason=r; m.miss=(m.miss||0)+1; } }
@@ -2245,7 +2277,7 @@ function finishQuiz(){
   if(QZ.source==="try") res.tryPaper = QZ.tryPaper;
   S.history.unshift({at:res.at,title:res.title,n:res.ids.length,c:res.c,w:res.w,k:res.k,secs:res.secs});
   S.history = S.history.slice(0,12);
-  save(); LAST = res; QZ = null; UI.rFilter="all";
+  save(); progSave(); LAST = res; QZ = null; UI.rFilter="all";
   const n = res.ids.length;
   if(ST.name && (res.mode==="test" || n>=5)){   // timed tests, and practice quizzes of 5+ questions, go to Anil's sheet
     sendRecord({test: (res.mode==="test"? "" : "Practice · ") + (DATA.examShort? DATA.examShort+" · " : "") + res.title,
@@ -2360,7 +2392,7 @@ function vMistakes(){   // Anil, 8 Nov 2026: "i want wrong questions to be separ
       <div class="row"><button type="button" class="chip" data-act="mfilter" data-f="all" aria-pressed="${UI.mFilter==="all"}">All subjects <span class="n">${ids.length}</span></button>${subs.map(s=>`<button type="button" class="chip" data-act="mfilter" data-f="${s}" aria-pressed="${UI.mFilter===s}">${esc(SUBJ[s].name)} <span class="n">${ids.filter(id=>QMAP[id].s===s).length}</span></button>`).join("")}</div>
       <div class="mis-run"><div class="row" style="gap:8px"><span class="muted" style="font-size:14px">How many:</span>${[10,25,"all"].map(c=>`<button type="button" class="chip" data-act="scount" data-count="${c}" aria-pressed="${UI.smartCount===c}">${c==="all"?"All "+pick.length:c}</button>`).join("")}</div>
       <button class="btn btn-primary" type="button" data-act="smartgo" ${n?"":"disabled"}>▶ Practise ${n} mistake${n===1?"":"s"} now</button></div>
-      <p class="muted" style="font-size:13.5px;margin:0">The questions you missed most come first. Got one right twice in a row? It is cleared from the list automatically.</p>
+      <p class="muted" style="font-size:13.5px;margin:0">The questions you missed most come first. Got one right twice in a row? It is cleared from the list automatically. ${progOn() ? "✓ Saved with your login, so they follow you to any phone." : PAYC && PAYC.on && PAYC.prog && GID ? `Saved on this phone. <a href="#account">Log in with Google</a> to keep them on every device.` : "Saved on this phone."}</p>
     </section>
     <div class="list">${list.map(id=>{ const m=S.mistakes[id], q=QMAP[id];
       const extra = `<div class="row" style="justify-content:space-between"><div class="row" style="gap:8px"><span class="pill ${m.reason==="k"?"warn":"bad"}">${m.reason==="k"?"Skipped last time":"Answered wrongly"}</span><span class="pill">Missed ${m.miss||1}×</span><span class="pill">Right in a row ${recallDots(m)}</span></div><button class="btn btn-ghost btn-sm" type="button" data-act="learnt" data-id="${id}">I know it now · remove</button></div>`;
@@ -2965,7 +2997,7 @@ document.addEventListener("click", e=>{
       window.open("https://wa.me/?text=" + encodeURIComponent(t), "_blank", "noopener"); track("daily_share", {exam: DATA.examShort||""}); break; }
     case "trypaper": { const p=PMAP[b.dataset.paper]; UI.tryPaper = p.id; startQuiz(QS.filter(q=>q.p===p.id && isMCQ(q)).slice(0,10).map(q=>q.id), (p.short||p.title) + " · free try (first 10)", "practice", "try", 10); track("try_free", {exam: DATA.examShort||"", paper: p.id}); break; }
     case "install": if(INSTALL){ INSTALL.prompt(); INSTALL.userChoice.then(c=>{ track("app_install", {outcome: c.outcome}); INSTALL = null; render(); }).catch(()=>{}); } break;
-    case "learnt": delete S.mistakes[b.dataset.id]; save(); toast("Removed from My Mistakes"); render(); break;
+    case "learnt": delete S.mistakes[b.dataset.id]; goneMark(b.dataset.id); save(); progSave(); toast("Removed from My Mistakes"); render(); break;
     case "ssubj": UI.smartSubj=b.dataset.f; render(); break;
     case "scount": UI.smartCount = b.dataset.count==="all"? "all" : +b.dataset.count; render(); break;
     case "smartgo": {
@@ -3063,7 +3095,7 @@ setTimeout(flushRecords, 1500);
 document.addEventListener("change", e=>{
   const t=e.target;
   if(t.matches('[data-act="subjall"]')){ const s=SUBJ[t.dataset.subj], set=curTopics(); s.topics.forEach(x=>{ const k=s.id+"|"+x; if(t.checked) set.add(k); else set.delete(k); }); P.topics=[...set]; savePrefs(); render(); }
-  if(t.id==="meDate"){ P.examDate = t.value; savePrefs(); renderMe(); track("exam_date_set", {exam: DATA.examShort||""}); }
+  if(t.id==="meDate"){ P.examDate = t.value; savePrefs(); progSave(); renderMe(); track("exam_date_set", {exam: DATA.examShort||""}); }
   if(t.id==="bankPaper"){ UI.bankPaper=t.value; bankLimit=20; render(); }
   if(t.id==="bankSubj"){ UI.bankSubj=t.value; UI.bankTopic="all"; bankLimit=20; render(); }
   if(t.id==="bankTopic"){ UI.bankTopic=t.value; bankLimit=20; render(); }
@@ -3114,7 +3146,8 @@ function start(data){
   setTimeout(refreshPasses, 0);   // a pass bought (or ended) elsewhere shows here (at most every 30 minutes while a pass is live)
   if(askGet().pending) askWatch();   // the share request queued at registration survives the trip to the payment page
   refCapture();   // arrived through a friend's invite link (?ref=)
-  if(ST.phone) setTimeout(async()=>{ await refJoin(); refMine(); }, 2500);   // a refjoin that failed earlier (first: a code of one's own would make them "known"); then my own code for share links
+  if(ST.phone) setTimeout(async()=>{ await refJoin(); refMine(); }, 2500);
+  setTimeout(progLoad, 3000);   // mistakes saved with the login on another device   // a refjoin that failed earlier (first: a code of one's own would make them "known"); then my own code for share links
   if(PATHMODE){
     let red = null; try{ red = sessionStorage.getItem("lwa-path"); sessionStorage.removeItem("lwa-path"); }catch(_){}
     if(red && routeFromPath(red)!==null) history.replaceState(null, "", red);

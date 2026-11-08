@@ -4795,6 +4795,7 @@ PAY = dict(
     otp=False,  # off (Anil, 4 Nov 2026, 06:10: "let the students login previously as done yesterday"); was True: Anil, 4 Nov 2026: a first registration with phone + email is confirmed with a 6-digit code emailed by the payments script
                 # (actions otpsend/otpverify); until that script version is deployed the site registers students without a code
     ref=True,  # "invite friends, earn free days" (3 Nov 2026): on since 4 Nov 2026 06:17, when payments script version 12 ('ref'/'refjoin') was deployed
+    prog=False,  # My Mistakes saved with the Google login (8 Nov 2026): needs payments script actions 'progget'/'progput' (saved in the editor, not deployed yet); switch on after deploying
 )
 PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
 _g2s = g2_syllabus_notif()   # the APPSC Group 2 syllabus page (needs PAY, so it is added here)
@@ -4996,7 +4997,7 @@ def pay_data(conf):
     """What the app needs to show prices and sell passes for this exam."""
     pb = conf['pb']
     mk = MOCK_PACKS.get(conf['id'])
-    return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'], freePyq=conf['id'] in FREE_PYQ, gid=PAY.get('gid', ''), ref=bool(PAY.get('ref')), otp=bool(PAY.get('otp')),
+    return dict(on=PAY['on'], api=PAY['api'], exam=conf['id'], freePyq=conf['id'] in FREE_PYQ, gid=PAY.get('gid', ''), ref=bool(PAY.get('ref')), otp=bool(PAY.get('otp')), prog=bool(PAY.get('prog')),
                 pyq=dict(price=PAY['pyq_price'], valid=PYQ_VALID, exams=PAY['exams'], trial=TRIAL_DAYS),
                 mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=PAY['pyq_price'], n=mk['n'], live=mk['live'],
                            valid=pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:],
