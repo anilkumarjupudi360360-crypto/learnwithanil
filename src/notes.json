@@ -296,5 +296,48 @@
    "appsc-eo"
   ],
   "free": "/LearnWithAnil-EO-Grade-3-Hindu-Philosophy-Temple-System-Free-Sample.pdf"
+ },
+ {
+  "id": "eohp-te",
+  "lang": "te",
+  "vol": null,
+  "series": "EO గ్రేడ్-III · పేపర్ II",
+  "subject": "Hindu Philosophy & Temple System",
+  "title": "హిందూ తత్వశాస్త్రం & దేవాలయ వ్యవస్థ",
+  "title_en": "Hindu Philosophy & Temple System",
+  "subtitle": "APPSC దేవాదాయ శాఖ ఎగ్జిక్యూటివ్ ఆఫీసర్ గ్రేడ్-III పరీక్ష నోట్స్, APPSC అడిగిన ప్రశ్నల ఆధారంగా",
+  "medium": "తెలుగు మాధ్యమం",
+  "medium_en": "Telugu Medium",
+  "product": "హిందూ తత్వశాస్త్రం & దేవాలయ వ్యవస్థ: APPSC EO గ్రేడ్-III, 2026-27 (తెలుగు మాధ్యమం)",
+  "pages": 177,
+  "chapters": [
+   "రామాయణం",
+   "మహాభారతం",
+   "భాగవతం, పురాణాలు",
+   "దేవాలయ ఆగమాలు, పూజా విధానం",
+   "హిందూ పండుగలు, శాస్త్రీయ కళలు",
+   "వైదిక సంస్కృతి",
+   "తత్వాలు, సంప్రదాయాలు, గురువులు",
+   "హిందూ కుటుంబం: నిర్మాణం, దత్తత, వారసత్వం",
+   "ఏపీ దేవాదాయ చట్టం, 1987: పరిపాలన, ఆదాయం, ఎగ్జిక్యూటివ్ ఆఫీసర్",
+   "భూ రికార్డులు, దేవాదాయ భూములు"
+  ],
+  "pyqs": 291,
+  "price": 45,
+  "syllabus": "EO Grade-III · Paper II (Hindu Philosophy & Temple System)",
+  "badge": "EO Grade-III",
+  "subject_label": "Hindu Philosophy & Temple System",
+  "chapters_label": "10 chapters · 24 meme breaks · 291 Paper II PYQs (2023 & 2026) · Telugu medium",
+  "product_en": "Hindu Philosophy & Temple System for APPSC EO Grade-III, 2026-27 (Telugu Medium)",
+  "cover": "notes-eohp-te-cover.jpg",
+  "samples": [
+   "notes-eohp-te-p1.jpg",
+   "notes-eohp-te-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "appsc-eo"
+  ],
+  "free": "/LearnWithAnil-EO-Grade-3-Hindu-Philosophy-Temple-System-Telugu-Free-Sample.pdf"
  }
 ]
