@@ -46,6 +46,22 @@ let fails = 0;
 const ok = (c, m) => { if (!c) { fails++; console.log('FAIL', m); } else console.log('ok  ', m); };
 const passRow = (phone, email, pid) => [new Date(), phone, 'all', 'pyq', '2027-10-30', pid, 'req', 45, 'webhook', email];
 
+{ // My Mistakes on every device (8 Nov 2026): progput / progget per account and exam
+  const E = makeEnv();
+  ok(E.call({action: 'progget'}).relogin, 'progress needs a login');
+  const a = E.call({action: 'glogin', credential: E.gtok('m@gmail.com', 'M'), device: 'd1'}).session;
+  const b = E.call({action: 'glogin', credential: E.gtok('m@gmail.com', 'M'), device: 'd2'}).session;
+  ok(E.call({action: 'progget', session: a}).data === null, 'nothing saved yet');
+  ok(E.call({action: 'progput', session: a, data: {m: {'s2024-5': [2, 0, 100]}, d: {d: '2026-11-08', c: 7, n: 10}}}).ok, 'saved from device 1');
+  const g = E.call({action: 'progget', session: b});
+  ok(g.ok && g.data.m['s2024-5'][0] === 2 && g.data.d.c === 7, 'device 2 gets the same mistakes');
+  ok(E.call({action: 'progput', session: b, data: {m: {}}}).ok && Object.keys(E.call({action: 'progget', session: a}).data.m).length === 0, 'an update replaces the row');
+  ok(E.call({action: 'progget', session: a, exam: 'ts-police-si'}).data === null, 'each exam has its own row');
+  const o = E.call({action: 'glogin', credential: E.gtok('other@gmail.com', 'O')}).session;
+  ok(E.call({action: 'progget', session: o}).data === null, "another account cannot read it");
+  ok(!E.call({action: 'progput', session: a, data: {m: {x: 'y'.repeat(46000)}}}).ok, 'too large is refused');
+  ok(E.sheets.progress.rows.length === 2, 'one row per account and exam');
+}
 { // new student: Google, phone, no pass
   const E = makeEnv();
   ok(!E.call({action: 'glogin', credential: 'bad'}).ok, 'a bad Google token is refused');

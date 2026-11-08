@@ -93,6 +93,8 @@ function doPost(e) {
       case 'grievance': return out(grievance(b, exam));
       case 'ref': return out(refInfo(b));
       case 'refjoin': return out(refJoin(b));
+      case 'progget': return out(S ? progGet(S, exam) : {ok: false, relogin: true, error: 'Please log in again.'});
+      case 'progput': return out(S ? progPut(S, exam, b.data) : {ok: false, relogin: true, error: 'Please log in again.'});
       default: return out({ok: false, error: 'Unknown action.'});
     }
   } catch (err) {
@@ -703,5 +705,30 @@ function refBought_(phone, pid) {
       refReward_({phone: String(v[i][2]), email: String(v[i][3] || '').toLowerCase()}, REF.buyDays, 'friend bought the PYQ Pass', String(v[i][1]), String(phone));
       return;
     }
+  } finally { lock.releaseLock(); }
+}
+
+// ---------------------------------------------------------------------------------------------------------------
+// My Mistakes on every device (Anil, 8 Nov 2026: "1 to 8" — mistakes saved to the student's login so they follow the student).
+// A logged-in student's mistakes, Daily 10 and exam date for one exam: one row per Google account and exam in the 'progress' tab.
+const PROG_HEAD = ['email', 'exam', 'data', 'updated'];
+function progGet(S, exam) {
+  const v = sheet('progress', PROG_HEAD).getDataRange().getValues();
+  for (let i = v.length - 1; i >= 1; i--) {
+    if (String(v[i][0]) !== S.email || String(v[i][1]) !== exam) continue;
+    let d = null; try { d = JSON.parse(String(v[i][2] || 'null')); } catch (e) {}
+    return {ok: true, data: d};
+  }
+  return {ok: true, data: null};
+}
+function progPut(S, exam, data) {
+  const s = JSON.stringify(data && typeof data === 'object' ? data : {});
+  if (s.length > 45000) return {ok: false, error: 'Too much to save.'};
+  const lock = LockService.getScriptLock(); lock.waitLock(20000);
+  try {
+    const sh = sheet('progress', PROG_HEAD), v = sh.getDataRange().getValues();
+    for (let i = 1; i < v.length; i++) if (String(v[i][0]) === S.email && String(v[i][1]) === exam) { sh.getRange(i + 1, 3, 1, 2).setValues([[s, new Date()]]); return {ok: true}; }
+    sh.appendRow([S.email, exam, s, new Date()]);
+    return {ok: true};
   } finally { lock.releaseLock(); }
 }
