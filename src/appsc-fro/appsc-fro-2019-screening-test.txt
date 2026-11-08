@@ -1,0 +1,777 @@
+# APPSC Forest Range Officer in A.P. Forest Service (Notification 10/2018), Screening Test (General Studies & Mental Ability and Mathematics, General Forestry), 2019.
+# Source: APPSC final key (answers only; options are not printed). Explanations by Learn with Anil.
+
+Q 1 | men | Data Interpretation
+The following pie diagram shows the monthly expenditure of Rakesh and Sohan. Rakesh earns Rs. 15,000 per month and Sohan Rs 18,000 per month. (The percentage shares from the diagram are given below.)
+Expenditure | Rakesh | Sohan
+Children Education | 12% | 8%
+House | 19% | 27%
+Miscellaneous | 31% | 32%
+Food etc | 38% | 33%
+How much more or less does Sohan spend on children’s education than Rakesh?
+= Rs. 360 Less
+~ Convert each share into rupees using each person's own income. Rakesh spends 12% of Rs 15,000 = Rs 1,800 on children's education; Sohan spends 8% of Rs 18,000 = Rs 1,440. So Sohan spends 1,800 − 1,440 = Rs 360 less than Rakesh.
+
+Q 2 | men | Data Interpretation
+The following pie diagram shows the monthly expenditure of Rakesh and Sohan. Rakesh earns Rs. 15,000 per month and Sohan Rs 18,000 per month. (The percentage shares from the diagram are given below.)
+Expenditure | Rakesh | Sohan
+Children Education | 12% | 8%
+House | 19% | 27%
+Miscellaneous | 31% | 32%
+Food etc | 38% | 33%
+Who spends more on Food and how much more?
+= Sohan, Rs. 240 more
+~ Rakesh spends 38% of Rs 15,000 = Rs 5,700 on food; Sohan spends 33% of Rs 18,000 = Rs 5,940. So Sohan spends 5,940 − 5,700 = Rs 240 more. Although Rakesh's percentage share is higher, Sohan's larger income makes his actual spending greater.
+
+Q 3 | men | Data Interpretation
+The following pie diagram shows the monthly expenditure of Rakesh and Sohan. Rakesh earns Rs. 15,000 per month and Sohan Rs 18,000 per month. (The percentage shares from the diagram are given below.)
+Expenditure | Rakesh | Sohan
+Children Education | 12% | 8%
+House | 19% | 27%
+Miscellaneous | 31% | 32%
+Food etc | 38% | 33%
+What is the ratio of the expenditure on children’s education by Rakesh and Sohan?
+= 5:4
+~ Rakesh spends 12% of Rs 15,000 = Rs 1,800 and Sohan spends 8% of Rs 18,000 = Rs 1,440 on children's education. The ratio is 1,800 : 1,440; dividing both terms by their HCF, 360, gives 5 : 4. Note that the incomes differ, so the ratio of rupees (5 : 4) is not the ratio of the percentages (12 : 8 = 3 : 2).
+
+Q 4 | men | Data Interpretation
+The following pie diagram shows the monthly expenditure of Rakesh and Sohan. Rakesh earns Rs. 15,000 per month and Sohan Rs 18,000 per month. (The percentage shares from the diagram are given below.)
+Expenditure | Rakesh | Sohan
+Children Education | 12% | 8%
+House | 19% | 27%
+Miscellaneous | 31% | 32%
+Food etc | 38% | 33%
+What is the measure of the angle used to represent the expenditure on ‘House’ by Rakesh in (approximately)?
+= 68°
+~ In a pie diagram the full circle of 360° stands for 100%, so 1% = 3.6°. Rakesh's share for House is 19%, so its angle = 19 × 3.6° = 68.4°, which is about 68°. The angle depends only on the percentage share, not on the income.
+
+Q 5 | sci | Chemistry
+Arrange the following in order of decreasing magnetic moments:
+Fe²⁺, Mn²⁺, Cu²⁺, V³⁺
+= Mn²⁺ > Fe²⁺ > V³⁺ > Cu²⁺
+~ The spin-only magnetic moment is μ = √[n(n + 2)] BM, where n is the number of unpaired d-electrons. Mn²⁺ (3d⁵) has 5 unpaired electrons (5.92 BM), Fe²⁺ (3d⁶) has 4 (4.90 BM), V³⁺ (3d²) has 2 (2.83 BM) and Cu²⁺ (3d⁹) has 1 (1.73 BM). Hence Mn²⁺ > Fe²⁺ > V³⁺ > Cu²⁺.
+
+Q 6 | sci | Chemistry
+Which of the following is/are correct about sigma bond?
+1. Formed by axial overlapping
+2. Weaker
+3. Independent existence
+4. Free rotation possible
+= 1, 3 and 4
+~ A sigma bond forms by head-on (axial) overlap of orbitals along the internuclear axis, so it can exist on its own and the bonded atoms can rotate freely about it. Statement 2 is wrong: the greater overlap makes a sigma bond stronger than a pi bond, which forms by sideways overlap, exists only alongside a sigma bond and prevents free rotation.
+
+Q 7 | sci | Physics
+The temperature at which a conductor becomes a super conductor is called:
+= Transition Temperature
+~ When certain materials are cooled, their electrical resistance suddenly falls to zero at a particular temperature called the transition (or critical) temperature, Tc. For mercury, in which Kamerlingh Onnes discovered superconductivity in 1911, Tc is about 4.2 K. Below Tc a superconductor also expels magnetic fields (Meissner effect).
+
+Q 8 | men | Arithmetic
+The principal amount which yields a Compound Interest of Rs. 208 in second year at 4% is:
+= Rs. 5000
+~ Compound interest for the second year is interest on the first year's amount, i.e. P × r × (1 + r). So P × 0.04 × 1.04 = 208, giving 0.0416P = 208 and P = Rs 5,000. Check: first-year interest = 200, amount 5,200; second-year interest = 4% of 5,200 = 208.
+
+Q 9 | men | Arithmetic
+A person sold a box of pen at a gain of 15%. Had he bought it for 25% less and sold it for Rs. 60 less he would have made profit of 32%. The cost price of the box of pen was:
+= Rs. 375
+~ Let the cost price be x, so the selling price is 1.15x. The new cost price is 0.75x and the new selling price, 1.15x − 60, must be 132% of 0.75x = 0.99x. So 1.15x − 60 = 0.99x, 0.16x = 60 and x = Rs 375. Check: new CP 281.25, new SP 371.25, profit 90 = 32%.
+
+Q 10 | men | Arithmetic
+There are 40 students in a hostel. If the number of students increases by 5 and the expenses of the mess increased by Rs. 45 per day while the average expenditure per head decreases by Rs. 1 then find the total original expenditure of the mess:
+= Rs. 720
+~ Let the original average be Rs x per head, so the original expenditure is 40x. With 45 students the average is x − 1, so 45(x − 1) = 40x + 45. Then 45x − 45 = 40x + 45, 5x = 90 and x = 18. Original expenditure = 40 × 18 = Rs 720 (new: 45 × 17 = 765 = 720 + 45).
+
+Q 11 | men | Arithmetic
+A and B can complete a work in 5 days. They start working but after 3 days B left the work. if the work is completed after 3 more days B alone can do the work in:
+= 15 days
+~ Together A and B do 1/5 of the work a day, so in 3 days they finish 3/5. The remaining 2/5 is finished by A alone in 3 days, so A does 2/15 of the work a day. B's rate = 1/5 − 2/15 = 1/15 a day, so B alone needs 15 days.
+
+Q 12 | geo | Indian Geography
+Production of tea requires
+= moderately hot and humid climate with frequent rains
+~ Tea is a plantation crop of tropical and sub-tropical areas. It needs warm temperatures (about 20–30 °C), high humidity and heavy, well-distributed rainfall (about 150–300 cm) through the year. It is grown on well-drained hill slopes because waterlogging harms its roots, as in Assam, Darjeeling and the Nilgiris.
+
+Q 13 | men | Reasoning
+A man is facing north-west. He turns 90° in the clockwise direction, then 180° in the anticlockwise direction and then another 90° in the same direction. Which direction is he facing now?
+= South East
+~ He starts facing north-west, and a 90° clockwise turn makes him face north-east. A 180° anticlockwise turn from north-east makes him face south-west. Another 90° anticlockwise (the same direction) turn takes him from south-west to south-east. In all he turned 90° clockwise and 270° anticlockwise, a net 180° anticlockwise, so he faces the direction opposite to north-west.
+
+Q 14 | men | Arithmetic
+Two bus tickets from city A to B and three tickets from city A to C cost Rs. 77 but three tickets from city A to B and two tickets from city A to C cost Rs. 73. What are the fares for cities B and C from A ?
+= Rs. 13, Rs. 17
+~ Let the fares be B and C. Then 2B + 3C = 77 and 3B + 2C = 73. Adding gives 5(B + C) = 150, so B + C = 30; subtracting the second from the first gives C − B = 4. So C = 17 and B = 13: Rs 13 to B and Rs 17 to C.
+
+Q 15 | men | Arithmetic
+A tailor had a number of shirt pieces to cut from a roll of fabric. He cut each roll of equal length into 10 pieces. He cut at the rate of 45 cuts a minute. How many rolls would be cut in 24 minutes?
+= 120 rolls
+~ Cutting a roll into 10 pieces needs only 9 cuts, because the last piece is left after the ninth cut. In 24 minutes he makes 45 × 24 = 1,080 cuts, so the number of rolls cut = 1,080 ÷ 9 = 120.
+
+Q 16 | geo | Environment & Ecology
+Acid rains occur when atmosphere is heavily polluted with:
+= SO₂ and NO₂
+~ Sulphur dioxide and nitrogen dioxide, released mainly by burning coal and petroleum in power plants, industries and vehicles, react with water vapour and oxygen in the air to form sulphuric acid and nitric acid. These come down as rain with pH below 5.6, called acid rain, which damages soils, lakes, forests and buildings.
+
+Q 17 | geo | Environment & Ecology
+Eutrophication of lakes is caused by
+= Phosphates
+~ Eutrophication is the nutrient enrichment of a lake, mainly by phosphates (and nitrates) from detergents, sewage and fertiliser run-off. The nutrients cause algal blooms; when the algae die, their decomposition uses up dissolved oxygen and fish die. Phosphorus is usually the limiting nutrient in fresh water, so phosphates are the key cause.
+
+Q 19 | sci | Physics
+Fresh water achieves its greatest density at :
+= 4 degree C
+~ Water shows anomalous expansion: on cooling it contracts only down to 4 °C and then expands until it freezes at 0 °C. So fresh water is densest (about 1,000 kg/m³) at 4 °C. This is why the bottom of a frozen lake stays at about 4 °C and aquatic life survives the winter.
+
+Q 20 | mth | Geometry & Mensuration
+A 4 cm cube is cut into 1cm cubes. What is the percentage increase in the surface area after such cutting?
+= 300%
+~ The original surface area = 6 × 4² = 96 cm². Cutting gives 4³ = 64 cubes of edge 1 cm, with total surface area 64 × 6 × 1² = 384 cm². The increase is 384 − 96 = 288 cm², which is 288 ÷ 96 × 100 = 300%.
+
+Q 21 | mth | Geometry & Mensuration
+The surface area of three coterminous faces a cuboid area 6,15,10 sq.cm respectively. What is the volume of the cuboid?
+= 30
+~ Let the edges be l, b and h, with lb = 6, bh = 15 and hl = 10. Multiplying the three, (lbh)² = 6 × 15 × 10 = 900, so the volume lbh = √900 = 30 cubic cm. The edges are 2, 3 and 5 cm.
+
+Q 22 | men | Arithmetic
+The sum of the ages of a son and his father is 56 years. After four years the age of father will be three times that of his son. Their present age respectively are:
+= 12 year and 44 years
+~ Let the son be S and the father F years old. S + F = 56 and F + 4 = 3(S + 4), so F = 3S + 8. Then S + 3S + 8 = 56, 4S = 48, S = 12 and F = 44. Check: after four years they will be 16 and 48, and 48 = 3 × 16.
+
+Q 23 | geo | Environment & Ecology
+Taj Mahal is threatened due to the effect of
+= Sulphur dioxide
+~ Sulphur dioxide from the Mathura oil refinery and industries around Agra forms sulphuric acid in moist air. This acid reacts with the marble (calcium carbonate) of the Taj Mahal, causing yellowing and pitting, called ‘marble cancer’. The Supreme Court's Taj Trapezium Zone restrictions (1996) aim to control this pollution.
+
+Q 24 | sci | Biology & Health
+Death while sleeping in closed room with burning coal furnace is caused by
+= CO
+~ Coal burning in a closed room with little oxygen undergoes incomplete combustion and gives off carbon monoxide, a colourless, odourless gas. CO binds haemoglobin about 200–250 times more strongly than oxygen, forming carboxyhaemoglobin, so the blood cannot carry oxygen and the sleeper dies of asphyxia without waking.
+
+Q 25 | men | Data Interpretation
+Consider the following table:
+Number of workers | Working hours
+20 | 45-50
+15 | 40-44
+25 | 35-39
+16 | 30-34
+04 | 0-29
+What percentage worked 40 or more hours?
+= 43.75
+~ Total workers = 20 + 15 + 25 + 16 + 4 = 80. Those who worked 40 or more hours are in the 45–50 and 40–44 groups: 20 + 15 = 35. Percentage = 35 ÷ 80 × 100 = 43.75%.
+
+Q 26 | geo | Environment & Ecology
+Match List – I with List – II and select the correct answer from the codes given below the lists:
+List – I (Four spheres) | List – II (Greek words)
+a. Stone | 1. Atmo
+b. Air | 2. Hydro
+c. Water | 3. Bio
+d. Life | 4. Litho
+= a-4, b-1, c-2, d-3
+~ The names of the four spheres of the Earth come from Greek roots: lithos = stone (lithosphere), atmos = vapour or air (atmosphere), hydor = water (hydrosphere) and bios = life (biosphere). So Stone–Litho (4), Air–Atmo (1), Water–Hydro (2) and Life–Bio (3).
+
+Q 27 | sci | Chemistry
+Which of the following has pH value 7?
+= Pure water
+~ pH 7 is neutral. Pure water ionises slightly into equal amounts of H⁺ and OH⁻ ions, each 10⁻⁷ mol/L at 25 °C, so its pH = −log(10⁻⁷) = 7. Acids have pH below 7 and bases above 7; even rainwater is slightly acidic (about 5.6) because of dissolved carbon dioxide.
+
+Q 28 | cur | National
+Which state government given its in-principle approval to bring ‘man-animal conflict’ under listed disasters in the State Disaster Response Fund?
+= Uttar Pradesh
+~ In August 2018 the Uttar Pradesh government gave in-principle approval to list man-animal conflict as a disaster under the State Disaster Response Fund (SDRF), and later notified it as a ‘state-declared disaster’. Victims of wild-animal attacks can then get relief from the SDRF quickly, with the district administration and police responding at once, instead of waiting for slow ex-gratia payments.
+
+Q 29 | cur | AP Affairs
+State bird of Andhra Pradesh is:
+= Rose-ringed parakeet
+~ After bifurcation, Andhra Pradesh notified its own state symbols in May 2018 (G.O. No. 59): state bird Rose-ringed parakeet (Rama Chiluka), state animal Blackbuck (Krishna Jinka), state tree Neem (Vepa) and state flower Jasmine (Malle). The Indian Roller (Palapitta), bird of undivided Andhra Pradesh, is now Telangana's state bird.
+
+Q 31 | cur | Reports & Indices
+According to Indian Forest Status Report released in February, 2018, how much area of India is covered by forests and trees?
+= 24.39%
+~ The India State of Forest Report (ISFR) 2017, released by the Forest Survey of India in February 2018, put forest cover at 7,08,273 sq km (21.54%) and tree cover at 93,815 sq km (2.85%) of India's geographical area. Together, forest and tree cover came to 24.39% of the country.
+
+Q 32 | mth | Statistics & Probability
+Which set of data has a mean of 15, a range of 22, a median of 14, and a mode of 14?
+= 3,14,19,25,14
+~ For 3, 14, 19, 25, 14: the sum is 75, so mean = 75 ÷ 5 = 15; range = 25 − 3 = 22; in order the values are 3, 14, 14, 19, 25, so the median (middle value) is 14; and 14 occurs twice, so the mode is 14. All four conditions are met.
+
+Q 33 | men | Arithmetic
+How many inches are there in 5 centimeters?
+= 1.968503937
+~ One inch is exactly 2.54 cm, so 1 cm = 1 ÷ 2.54 ≈ 0.3937 inch. Therefore 5 cm = 5 ÷ 2.54 = 1.968503937 inches, i.e. about 1.97 inches (APPSC printed the unrounded calculator value). To convert inches to centimetres, multiply by 2.54 instead.
+
+Q 34 | mth | Statistics & Probability
+A graph of a cumulative frequency distribution is called:
+= Ogive
+~ An ogive, or cumulative frequency curve, is drawn by plotting cumulative frequencies against upper class limits (‘less than’ ogive) or lower class limits (‘more than’ ogive) and joining the points. The two ogives cross at the median, so ogives are used to find the median, quartiles and percentiles graphically.
+
+Q 35 | mth | Statistics & Probability
+In the case of classification of data, the class having its upper limit is treated as the lower limit of its next class is called:
+= Open ended class
+~ APPSC's final key gives ‘open ended class’, reading each such class as open at its upper end: its upper limit is not counted in it but in the next class. Standard statistics texts, however, call classes in which the upper limit of one class is the lower limit of the next (10–20, 20–30, …) exclusive classes, and use ‘open-ended class’ for a class whose lower limit (first class) or upper limit (last class) is not stated, such as ‘below 10’ or ‘60 and above’. (Official key; some sources differ.)
+
+Q 36 | cur | National
+Match List- I with List- II and select the correct answer codes given below the lists-
+List- I (Rupee Denomination) | List- II (Motif of Bank Note)
+a. ₹200 | 1. Hampi with Chariot
+b. ₹50 | 2. Mangalyaan
+c. ₹500 | 3. Sanchi Stupa
+d. ₹2000 | 4. Red Fort
+= a-3, b-1, c-4, d-2
+~ In the Mahatma Gandhi (New) Series of banknotes issued by the RBI from 2016, the reverse of each note carries a heritage or achievement motif: ₹200 – Sanchi Stupa, ₹50 – Hampi with Chariot, ₹500 – Red Fort and ₹2000 – Mangalyaan (Mars Orbiter Mission). Other notes of the series show Konark Sun Temple (₹10) and Rani ki Vav (₹100).
+
+Q 37 | sci | Chemistry
+Which gas is known as marsh gas?
+= Methane
+~ Methane (CH₄) is called marsh gas because it bubbles up from marshes and swamps, where bacteria break down organic matter without oxygen (anaerobic decomposition). It is also the main component of natural gas and biogas, and a potent greenhouse gas.
+
+Q 38 | sci | Science & Technology
+Who introduced ‘www’ to the world?
+= Sir Tim Berners-Lee
+~ British computer scientist Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN, Geneva, proposing a system of hypertext documents linked over the Internet. He wrote the first web browser and web server, and the Web was opened to the public in 1991. He was knighted in 2004.
+
+Q 39 | geo | World Geography
+Match List- I with List- II and select the correct answer codes given below the lists-
+List- I (Gases in atmosphere) | List- II (Percentage)
+a. Nitrogen | 1. 21
+b. Oxygen | 2. 78
+c. Argon | 3. 0.04
+d. Carbon dioxide | 4. 0.93
+= a-2, b-1, c-4, d-3
+~ By volume, dry air is about 78% nitrogen, 21% oxygen, 0.93% argon and roughly 0.04% carbon dioxide, with traces of other gases. So Nitrogen–78 (2), Oxygen–21 (1), Argon–0.93 (4) and Carbon dioxide–0.04 (3). Argon, an inert gas, is the third most abundant gas, far ahead of carbon dioxide.
+
+Q 40 | sci | Physics
+_________ is the fourth state of matter.
+= Plasma
+~ Besides solid, liquid and gas, plasma is called the fourth state of matter. It is a gas heated so strongly (or subjected to such strong electric fields) that its atoms are ionised into free electrons and positive ions, so it conducts electricity. The Sun and stars, lightning and neon and fluorescent tubes contain plasma.
+
+Q 41 | ih | Modern India & Freedom Struggle
+Along with whom, Bhagat Singh threw a bomb in Central Assembly-
+= Batukeshwar Dutt
+~ On 8 April 1929 Bhagat Singh and Batukeshwar Dutt threw harmless bombs in the Central Legislative Assembly, Delhi, to protest against the Public Safety Bill and the Trade Disputes Bill. They shouted ‘Inquilab Zindabad’, threw leaflets saying the aim was ‘to make the deaf hear’, and courted arrest instead of escaping.
+
+Q 42 | ih | Modern India & Freedom Struggle
+The first railway in India was laid down during the period of-
+= Lord Dalhousie
+~ India's first passenger train ran on 16 April 1853 from Bori Bunder (Bombay) to Thane, about 34 km, when Lord Dalhousie was Governor-General (1848–56). His railway minute of 1853 planned trunk lines linking the main regions of India; he also introduced the telegraph and the modern postal system.
+
+Q 43 | geo | Indian Geography
+Which river of India passes the Tropic of Cancer twice?
+= Mahi
+~ The Mahi rises in the Vindhyas in Madhya Pradesh, flows north into Rajasthan and then turns south-west through Gujarat to the Gulf of Khambhat. Because of this loop it crosses the Tropic of Cancer twice. West-flowing rivers like the Narmada and Tapi lie wholly south of the Tropic.
+
+Q 44 | geo | Indian Geography
+‘Jarawa’ and ‘Onge’ are tribes found in-
+= Andaman and Nicobar
+~ The Jarawa (South and Middle Andaman) and the Onge (Little Andaman) are Negrito tribes of the Andaman Islands, both listed as Particularly Vulnerable Tribal Groups. The Great Andamanese and Sentinelese also live in the Andamans, while the Shompen live on Great Nicobar.
+
+Q 45 | geo | Indian Geography
+In which state Milam Glacier is located?
+= Uttarakhand
+~ The Milam Glacier lies in the Kumaon Himalaya in Pithoragarh district of Uttarakhand. It is one of the largest glaciers of Kumaon (about 16 km long) and the source of the Gori Ganga river, a tributary of the Kali (Sharda). Its snout lies just above Milam village, once a busy trading post on the route to Tibet, which is reached from Munsiari.
+
+Q 46 | pol | Local Government
+What is the minimum age to contest in the Panchayat elections?
+= 21 years
+~ Article 243F(1)(a), added by the 73rd Amendment (1992), says a person qualified for election to the State Legislature is qualified for a panchayat, but no one is disqualified for being under 25 if he or she has attained 21. So the minimum age to contest panchayat elections is 21 years.
+
+Q 47 | pol | Constitution & Rights
+Which statement is not true about India's National Flag?
+(a) The ratio of the length and width of the flag is 2:1
+(b) It is designed using three colours – saffron (top most), white (middle) and India green (lower most). The middle band contains navy blue Ashoka Chakra (Wheel of Law) in the centre with 24 spokes to the wheel.
+(c) The present form of the national flag was adopted in the meeting of Constituent Assembly on 22nd of July in 1947.
+(d) It is also called as ‘Tiranga’, meaning three colours and is based on Swaraj flag, designed by Pingali Venkayya.
+= (a)
+~ Statement (a) is false: under the Flag Code of India, the ratio of the length to the width (height) of the National Flag is 3:2, not 2:1. The other statements are true: saffron, white and green bands with a 24-spoke navy blue Ashoka Chakra, adoption by the Constituent Assembly on 22 July 1947, and a design based on Pingali Venkayya's Swaraj flag.
+
+Q 48 | cur | International
+How many Sustainable Development Goals were set by the United Nations General Assembly in 2015?
+= 17 Goals
+~ In September 2015 the UN General Assembly adopted the 2030 Agenda for Sustainable Development, with 17 Sustainable Development Goals and 169 targets to be achieved by 2030. They replaced the eight Millennium Development Goals of 2000–2015. Goal 1 is ending poverty, Goal 13 is climate action and Goal 15 is life on land, which covers forests.
+
+Q 49 | cur | National
+Which is the India’s First Solar-Powered Railway station?
+= Guwahati railway station
+~ Guwahati station of the Northeast Frontier Railway became India's first fully solar-powered railway station after a 700 kWp rooftop solar plant with about 2,350 panels was commissioned in 2017. The plant meets the station's electricity needs and cuts its carbon emissions under Indian Railways' renewable energy drive.
+
+Q 50 | sci | Science & Technology
+Dakshin Gangotri is _____________?
+= Indian Scientific Base Station in Antarctica
+~ Dakshin Gangotri was India's first scientific research base in Antarctica, set up in 1983–84 during the third Indian expedition to Antarctica. It was buried in ice and decommissioned in 1990, and was later used as a supply base. India's present research stations there are Maitri (1989) and Bharati (2012).
+
+Q 51 | geo | Disaster Management
+India has been divided into how many Seismic Risk Zones?
+= 4
+~ Under the Bureau of Indian Standards code IS 1893 (Part 1), India is divided into four seismic zones, II, III, IV and V, with Zone V the most earthquake-prone (e.g. the North-East, Kashmir and Kutch). The old Zone I was merged into Zone II in 2002. A 2025 revision that added a Zone VI was withdrawn in March 2026.
+
+Q 52 | geo | Disaster Management
+Landslides often occur in-
+= Hilly region
+~ Landslides are most common in hilly and mountainous regions with steep slopes, weak or fractured rocks and heavy rainfall, made worse by deforestation, road cutting and earthquakes. In India the Himalayas, the North-East and the Western Ghats (including the Nilgiris) are the most landslide-prone areas.
+
+Q 53 | ssg | Soil Properties & Formation
+Which type of soil water is most useful for plant?
+= Capillary water
+~ Capillary water is held by surface tension in the small pores and around soil particles after gravitational water has drained away. Most of it, between field capacity (about −0.33 bar) and the permanent wilting point (about −15 bar), is available to roots. Gravitational water drains away too fast, and hygroscopic water is held too tightly for plants to use.
+
+Q 54 | slv | Agroforestry
+Strip of trees and shrubs planted for protection of fields from Winds in coastal areas are called
+= Shelter Belts
+~ Shelterbelts are wide belts of trees and shrubs planted across the direction of the prevailing wind to protect fields, crops, soil and settlements from wind, sand drift and cyclones; narrower belts are called windbreaks. Casuarina and other species are planted as coastal shelterbelts along the Andhra Pradesh and Tamil Nadu coasts.
+
+Q 55 | sci | Biology & Health
+A camel can tolerate a loss of water at about ________ of its body weight when exposed to severe desert heat.
+= 30 percent
+~ The camel is highly adapted to deserts: it can lose water equal to about 25–30% of its body weight without harm, whereas most mammals die after losing about 15%. It keeps its blood volume steady during dehydration, lets its body temperature rise by day to save water, and passes dry dung and concentrated urine.
+
+Q 56 | sci | Biology & Health
+Ringworm is a __________ that attacks the skin, hair and nails of both animals and humans.
+= Fungus
+~ Ringworm (tinea or dermatophytosis) is not caused by a worm but by dermatophyte fungi such as Trichophyton, Microsporum and Epidermophyton, which feed on keratin in skin, hair and nails. It causes ring-shaped, itchy, scaly patches, spreads by contact with infected people, animals or objects, and is treated with antifungal drugs.
+
+Q 57 | men | Reasoning
+Raju ranks 7th from the top and 28th from the bottom. How many students are there in the class?
+= 34
+~ Number of students = rank from top + rank from bottom − 1 = 7 + 28 − 1 = 34. One is subtracted because Raju is counted in both ranks: 6 students are above him and 27 below him, so 6 + 1 + 27 = 34.
+
+Q 60 | mth | Statistics & Probability
+The median of data 30, 25, 27, 25.8, 29, 35, 38, 28 is :
+= 28.5
+~ Arrange the 8 values in ascending order: 25, 25.8, 27, 28, 29, 30, 35, 38. With an even number of values, the median is the mean of the two middle (4th and 5th) values: (28 + 29) ÷ 2 = 28.5.
+
+Q 61 | men | Arithmetic
+If 40% of X is equal to Y, then Y% of 40 is equal to X% of
+= 16
+~ 40% of X = Y, so Y = 0.4X. Then Y% of 40 = 0.4X × 40 ÷ 100 = 0.16X. If this equals X% of k, then Xk ÷ 100 = 0.16X, so k = 16. Check with X = 100: Y = 40, 40% of 40 = 16, and 100% of 16 = 16.
+
+Q 62 | mth | Algebra
+If x = 2+√3, then (x² + 1/x²) is equal to:
+= 14
+~ Since x = 2 + √3, 1/x = 1/(2 + √3) = (2 − √3)/(4 − 3) = 2 − √3. So x + 1/x = 4, and x² + 1/x² = (x + 1/x)² − 2 = 16 − 2 = 14.
+
+Q 63 | mth | Algebra
+If 2x+3y = 8 and 4x-y = 2, then
+= x = 1, y = 2
+~ From 4x − y = 2, y = 4x − 2. Substituting in 2x + 3y = 8 gives 2x + 12x − 6 = 8, so 14x = 14 and x = 1; then y = 4(1) − 2 = 2. Check: 2(1) + 3(2) = 8 and 4(1) − 2 = 2.
+
+Q 64 | mth | Algebra
+Let A and B are two sets containing 14 and 22 elements respectively. If A and B have 7 Common Elements, then the number of elements in A∪B is
+= 29
+~ For two sets, n(A ∪ B) = n(A) + n(B) − n(A ∩ B), because the common elements are counted in both A and B. So n(A ∪ B) = 14 + 22 − 7 = 29. Equivalently, 7 elements only in A + 7 common + 15 only in B = 29.
+
+Q 65 | mth | Trigonometry
+If θ = 2π/3, then value of cosθ + sinθ is :
+= (√3 − 1)/2
+~ θ = 2π/3 = 120°, which lies in the second quadrant, where cosine is negative and sine positive. cos 120° = −cos 60° = −1/2 and sin 120° = sin 60° = √3/2. So cos θ + sin θ = −1/2 + √3/2 = (√3 − 1)/2.
+
+Q 66 | mth | Trigonometry
+The angle of elevation of a tower from a distance 50 metre from its foot is 30°. The height of the tower is:
+= 50√3/3 metre
+~ If h is the height, tan 30° = h/50. Since tan 30° = 1/√3, h = 50/√3 metre; multiplying numerator and denominator by √3 gives h = 50√3/3 ≈ 28.87 metre. In such problems the tower, the ground and the line of sight form a right-angled triangle, with the height opposite the angle of elevation.
+
+Q 67 | mth | Trigonometry
+The height of a tower is 100√3. The angle of elevation of a tower from a distance 100 metre from its feet is:
+= 60°
+~ tan θ = height ÷ distance = 100√3 ÷ 100 = √3 (taking the height in metres, like the distance). Since tan 60° = √3, the angle of elevation is 60°. The tower, the ground and the line of sight form a right-angled triangle, with the height as the side opposite the angle of elevation and the distance as the adjacent side.
+
+Q 68 | mth | Geometry & Mensuration
+For a triangle ABC, D and E are two points on AB and AC such that AD = ⅓ AB and AE = ⅓ AC. If BC = 15 c.m., then DE is:
+= 5 c.m.
+~ AD/AB = AE/AC = 1/3 and angle A is common, so triangle ADE is similar to triangle ABC (SAS similarity) and DE is parallel to BC. Corresponding sides are in the ratio 1 : 3, so DE = BC ÷ 3 = 15 ÷ 3 = 5 cm.
+
+Q 69 | mth | Geometry & Mensuration
+If sides of a triangle are in the ratio 3:4:5, then this triangle is:
+= Right angled triangle
+~ Take the sides as 3k, 4k and 5k. Since (3k)² + (4k)² = 9k² + 16k² = 25k² = (5k)², the sides satisfy Pythagoras' theorem, so by its converse the triangle is right-angled, with the right angle opposite the longest side. 3, 4, 5 is the smallest Pythagorean triplet.
+
+Q 70 | mth | Geometry & Mensuration
+In any triangle, sum of two sides is always
+= greater than third side
+~ By the triangle inequality, the sum of any two sides of a triangle is always greater than the third side, and the difference of any two sides is less than the third. If two sides together were equal to or shorter than the third, they could not meet to form a triangle.
+
+Q 71 | mth | Geometry & Mensuration
+If the area of a rhombus is 168 m² and the length of one diagonal is 48 m, the length of other diagonal is:
+= 7 m
+~ The diagonals of a rhombus bisect each other at right angles, so its area = ½ × d₁ × d₂. Hence 168 = ½ × 48 × d₂, i.e. 24 × d₂ = 168 and d₂ = 168 ÷ 24 = 7 m. Check: ½ × 48 × 7 = 168 m².
+
+Q 72 | mth | Geometry & Mensuration
+A sphere of 5 cm radius is melted and small spheres of radii 1 cm are made from it. The number of spheres that can be made from it
+= 125
+~ Volume does not change on melting. Number of small spheres = volume of big sphere ÷ volume of one small sphere = (4/3)π(5)³ ÷ (4/3)π(1)³ = 5³ ÷ 1³ = 125. Because volume varies as the cube of the radius, a sphere with 5 times the radius has 5³ = 125 times the volume.
+
+Q 73 | mth | Geometry & Mensuration
+If two sides of an isosceles triangle are 7 cm and 13 cm, then which of followings may be perimeter of the triangle
+= 27
+~ An isosceles triangle has two equal sides, so its sides are either 7, 7, 13 or 7, 13, 13. Both satisfy the triangle inequality (7 + 7 = 14 > 13), so the perimeter may be 7 + 7 + 13 = 27 cm or 7 + 13 + 13 = 33 cm. APPSC keyed 27, which is a possible perimeter.
+
+Q 74 | mth | Geometry & Mensuration
+The ratio of the area of a square and area of a square made on diagonal of the square will be:
+= 1:2
+~ Let the side of the square be a, so its area is a². Its diagonal is a√2, and the square drawn on the diagonal has area (a√2)² = 2a². So the ratio of the areas = a² : 2a² = 1 : 2.
+
+Q 76 | slv | Silvicultural Principles & Regeneration
+Coppice shoot is defined as:
+= A shoot arising from an adventitious bud at the base of a woody plant that has been cut near the ground
+~ When a broad-leaved tree such as teak, sal or eucalyptus is felled near the ground, dormant or adventitious buds on the stump sprout into new shoots called coppice shoots. Forests regenerated in this way are worked under coppice systems (simple coppice, coppice with standards). A shoot arising from a root is a root sucker, not a coppice shoot.
+
+Q 77 | slv | Silviculture of Species
+Which of the following has excellent pollarding ability:
+= Hardwickia binata
+~ Pollarding means cutting a tree back at about 2–3 m above ground so that new shoots grow from the top of the stem, out of reach of cattle. Hardwickia binata (anjan), a drought-hardy tree of the Deccan, pollards very well and is lopped repeatedly for leaf fodder and fuel, which makes it a favourite fodder tree of dry areas.
+
+Q 78 | wsm | Water Resources
+Hydrometeorology is the science which deals with
+= water in the atmosphere
+~ Hydrometeorology is the branch linking meteorology and hydrology that studies water in the atmosphere: precipitation, humidity, evaporation and the exchange of water and energy between the land surface and the air. Its estimates, such as rainfall intensity and probable maximum precipitation, are used in flood forecasting and in designing dams and watershed works.
+
+Q 79 | anm | Birds
+Ardeotis nigriceps is the zoological name of :
+= Great Indian Bustard
+~ Ardeotis nigriceps is the Great Indian Bustard, a heavy grassland bird listed as Critically Endangered by the IUCN and given the highest protection (Schedule I) under the Wild Life (Protection) Act, 1972. It is the state bird of Rajasthan; in Andhra Pradesh, Rollapadu Wildlife Sanctuary in the Kurnool region was created to protect it.
+
+Q 80 | wsm | Water Resources
+Lysimeter is an instrument used to measure
+= evapotranspiration
+~ A lysimeter is a tank of soil, usually with a crop or grass growing on it, set in the field so that the water added (rain, irrigation) and the water drained out can be measured. Evapotranspiration is found from the water balance: ET = water added − drainage − change in soil water (a weighing lysimeter measures that change by weight).
+
+Q 81 | pls | Plant Physiology
+“Branch Bending in Guava” plants favours :
+= Better fruiting
+~ Guava flowers and fruits on new shoots of the current season. Bending long upright branches towards the ground and tying them down weakens apical dominance, so many dormant buds along the branch sprout into new shoots that bear flowers. The technique therefore increases flowering and fruit yield; it is not done to increase height or wood.
+
+Q 82 | ecw | Wildlife & Protected Areas
+Rhinos in India have been translocated from Kaziranga to :
+= Manas National Park
+~ Manas National Park in Assam lost almost all its one-horned rhinos to poaching during the unrest of the late 1980s and 1990s. Under Indian Rhino Vision 2020 (Assam Forest Department with WWF-India and partners), rhinos from Kaziranga and Pobitora were translocated to Manas from 2008 onwards to rebuild the population there.
+
+Q 83 | slv | Silvicultural Principles & Regeneration
+In selection system of Silviculture:
+= The mature crop is removed as single trees or in small groups over the whole of felling series.
+~ In the selection system only trees that have reached exploitable size are felled, singly or in small groups, scattered over the whole felling series, and regeneration comes up in the gaps. The forest therefore stays uneven-aged, with trees of all ages mixed together and continuous cover. In clear-felling and shelterwood systems, by contrast, the crop is removed area by area.
+
+Q 84 | ssg | Soil Properties & Formation
+A soil must have following for supporting plant growth:
+= Mineral matter, organic matter, soil water and soil air
+~ Soil has four components: mineral matter, organic matter, water and air, which in an ideal loam surface soil occupy roughly 45%, 5%, 25% and 25% of the volume. Minerals and organic matter supply nutrients and anchorage, water carries dissolved nutrients to roots, and air supplies oxygen for root and microbial respiration; a soil lacking any one cannot support healthy growth.
+
+Q 85 | bdc | Biodiversity & Hotspots
+International day for Biological Diversity is observed on :
+= May 22
+~ In 2000 the UN General Assembly fixed 22 May as the International Day for Biological Diversity, the date on which the text of the Convention on Biological Diversity was adopted at Nairobi in 1992. It was earlier observed on 29 December, the day the CBD entered into force in 1993. (World Environment Day is 5 June.)
+
+Q 87 | pls | Plant Physiology
+A seed may not germinate, even if all favourable conditions are provided to germinate, it may be due to:
+= Dormancy
+~ Seed dormancy is a state in which a viable seed does not germinate even when water, oxygen and a suitable temperature are available. It may be caused by a hard or impermeable seed coat, an immature embryo or inhibitors such as abscisic acid. Nursery treatments such as scarification, hot-water soaking and stratification are used to break it.
+
+Q 88 | anm | Economic Zoology
+Development of fisheries is known as
+= Blue revolution
+~ The Blue Revolution means a rapid increase in fish production through inland and marine fisheries and aquaculture. Other such terms are the Green Revolution (foodgrains), White Revolution (milk) and Yellow Revolution (oilseeds). Recent schemes such as the Pradhan Mantri Matsya Sampada Yojana (2020) carry the Blue Revolution forward.
+
+Q 89 | anm | Birds
+Salim Ali Centre for Ornithology and Natural History (SACON) is in :
+= Coimbatore
+~ SACON was set up in 1990 at Anaikatty near Coimbatore, Tamil Nadu, as a centre of excellence of the Ministry of Environment and Forests for research on birds and natural history. It is named after Dr Salim Ali, the "Birdman of India". The Bombay Natural History Society, with which Salim Ali was long associated, is in Mumbai.
+
+Q 90 | slv | Agroforestry
+Which one is the most prominent silvicultural tool for manipulation of tree growth in agroforestry system:
+= Thinning and Pruning
+~ In agroforestry the trees must not suppress the crop. Thinning reduces the number of trees and so the competition for light, water and nutrients, while pruning removes lower branches to cut shade on the crop, gives fodder and fuelwood and produces a clean bole. These two operations are therefore the main tools for regulating tree growth and tree–crop interaction.
+
+Q 91 | slv | Silvicultural Principles & Regeneration
+Canopy Density of forests is defined as:
+= The relative completeness of canopy usually expressed as a decimal coefficient, taking closed canopy as unity.
+~ Canopy density compares the actual crown cover with a fully closed canopy, which is taken as 1.0; a canopy covering 60% of the ground has a density of 0.6. The Forest Survey of India uses it to classify forest cover as very dense (70% and above), moderately dense (40% to below 70%) and open (10% to below 40%).
+
+Q 92 | slv | Silvicultural Principles & Regeneration
+Regeneration felling is:
+= A felling of trees to invite or assist regeneration under a shelterwood system.
+~ In shelterwood systems the old crop is removed in stages by regeneration fellings: a preparatory felling where needed (readies the stand for seeding), the seeding felling (opens the canopy so that seed falls and germinates), the secondary fellings (give more light to the young crop) and the final felling (removes the last old trees). The new crop thus comes up under the shelter of the old one, which is removed only once regeneration is established.
+
+Q 93 | bdc | Biomes & Population Ecology
+A Biome is:
+= A large naturally occurring community of flora & fauna, occupying a major region.
+~ A biome is the largest land community of plants and animals, spread over a major region and shaped mainly by climate (temperature and rainfall). Examples are tropical rain forest, savanna, desert, temperate grassland, taiga and tundra. It is larger than an ecosystem or a habitat, and one biome contains many ecosystems.
+
+Q 94 | geo | World Geography
+Continental drift
+= The hypothesis, proposed by Alfred Wegener, that today's continents broke off from a single supercontinent
+~ Alfred Wegener, a German meteorologist, proposed in 1912 (book 1915) that all continents were once joined in a supercontinent, Pangaea, surrounded by the ocean Panthalassa, which later split and drifted apart. His evidence included the jigsaw fit of coastlines and matching fossils (Glossopteris, Mesosaurus) and rocks on different continents. Plate tectonics later explained the mechanism.
+
+Q 95 | pls | Reproduction & Propagation
+A planting graft technique in which scion is inserted in a narrow slit, made in the root stock of the same species is
+= Notch grafting
+~ In notch (slot) grafting, narrow slits or notches are cut into the stock and thin, wedge-shaped scions are pushed into them so that their cambium meets the cambium of the stock; the union is then sealed with grafting wax. It suits thick stocks and top-working of old trees. In cleft grafting the cut top of the stock is split down the middle, and in budding a single bud replaces the scion.
+
+Q 96 | fim | Tree & Stand Measurement
+Volume table is
+= A table showing the estimated average tree or stand volume based on given tree measurements, usually diameter and height
+~ A volume table gives the average volume of trees (or stands) of given dimensions, prepared by measuring felled sample trees. A local (one-way) volume table uses diameter at breast height only, while a general or standard (two-way) table uses both diameter and height. Foresters use it to estimate growing stock without felling every tree.
+
+Q 97 | ecw | Ecosystem Concepts
+In Ecological succession, Sere means:
+= The sequence of communities that replace one another in a given area.
+~ In ecological succession the whole series of communities, from pioneer to climax, is called a sere, and each stage is a seral stage. Seres are named by the starting habitat: hydrosere (water), xerosere (dry habitat), lithosere (bare rock), psammosere (sand) and halosere (saline soil). The final stable community is the climax.
+
+Q 98 | fpt | Pests & Diseases
+The progressive dying, usually backwards from the tip, of any portion of a plant; The death of the shoot, the root remaining alive is termed as
+= Die back.
+~ Die-back is the progressive death of shoots or branches from the tip backwards while the root stays alive. It may be caused by frost, drought, fire, poor drainage, fungi or insects. A classic forestry case is sal seedlings, whose shoots die back year after year while the root keeps growing, until a strong shoot finally establishes.
+
+Q 99 | ecw | Wildlife & Protected Areas
+Slender Loris is found in :
+= Southern India
+~ The slender loris is a small, nocturnal, tree-dwelling primate with large eyes. The grey slender loris (Loris lydekkerianus) lives in the dry and moist forests of southern India, including the Eastern Ghats of Andhra Pradesh, and in Sri Lanka, while the red slender loris is found only in Sri Lanka. The slow loris, in contrast, occurs in north-east India.
+
+Q 100 | fim | Tree & Stand Measurement
+The point, where CAI (Current Annual Increment) and MAI (Mean Annual Increment) meet is the
+= Rotation of maximum volume production
+~ Current annual increment (growth in one year) rises fast, peaks early and then falls; mean annual increment (total volume ÷ age) rises more slowly. The CAI curve cuts the MAI curve at the highest point of MAI. Felling at that age gives the greatest average yearly volume, so it is the rotation of maximum volume production.
+
+Q 101 | nrs | Forest & Water Resources
+Littoral Forest means
+= A forest growing at or near the sea-shore.
+~ Littoral forests grow on sandy beaches and dunes just above high-tide level (Champion and Seth's group 4A). Typical species include Casuarina, Pongamia, Calophyllum, Thespesia and Pandanus. They differ from tidal swamp (mangrove) forests, which grow in the inter-tidal mud of estuaries and creeks.
+
+Q 102 | sci | Biology & Health
+An organism which has its body heat regulated by the temperature of its surroundings is termed as:
+= Poikilotherm
+~ Poikilotherms (ectotherms, "cold-blooded" animals) cannot keep a constant body temperature; it rises and falls with that of the surroundings. Fishes, amphibians, reptiles and most invertebrates are poikilotherms. Birds and mammals are homeotherms (endotherms), which keep their body temperature nearly constant with metabolic heat.
+
+Q 103 | pls | Reproduction & Propagation
+Artificial seed is
+= Encapsulated somatic embryos.
+~ Artificial (synthetic) seeds are somatic embryos, or other tissue-culture propagules such as shoot buds, coated in a protective gel, usually calcium alginate formed from sodium alginate. They can be stored, handled and sown like seeds and give plants identical to the mother plant, so they are useful for clonal multiplication of elite trees and of species that set little seed.
+
+Q 104 | pls | Classification & Morphology
+A knee-shaped or spike-like projection of the roots of swamp trees enabling the submerged roots to obtain oxygen.
+= Pneumatophore
+~ Pneumatophores are breathing roots that grow upward (negatively geotropic) out of waterlogged mud. Their surface has many lenticels (pneumathodes) through which air enters and reaches the submerged roots. Spike-like pneumatophores are typical of mangroves such as Avicennia and Sonneratia, while knee roots are seen in Bruguiera and in swamp cypress (Taxodium).
+
+Q 105 | pls | Plant Physiology
+Mycorrhiza is a symbiotic association between
+= Fungi and roots of higher plants
+~ Mycorrhiza is a mutualistic association between fungi and plant roots: the fungus increases uptake of water and nutrients, especially phosphorus, and the plant gives it sugars. Ectomycorrhizae form a sheath around roots (pines, eucalypts), while endomycorrhizae (arbuscular, e.g. Glomus) enter root cells. Pine nurseries are inoculated with mycorrhizal soil because seedlings fail without it.
+
+Q 106 | slv | Silvicultural Principles & Regeneration
+The time that elapses between successive main fellings on the same area is known in silvicultural terms:
+= Felling cycle
+~ The felling cycle is the interval between successive main fellings on the same area, used mainly in the selection system and other systems where the same area is felled repeatedly; a coupe felled now returns for felling after one felling cycle. It is shorter than the rotation, which is the planned age of a crop at its final felling.
+
+Q 107 | slv | Silvicultural Principles & Regeneration
+Rotation is
+= The planned number of years between the formation or regeneration of crop and its final felling.
+~ Rotation is the planned age of a crop at final felling, counted from its formation or regeneration. It is fixed according to the management objective: physical, silvicultural, technical, maximum volume production, highest income or financial rotation. It is long for timber species such as teak and only a few years for pulpwood eucalyptus.
+
+Q 108 | wsm | Water Resources
+The salinity in water
+= reduces the evaporation
+~ Dissolved salts lower the vapour pressure of water (Raoult's law), so fewer molecules escape from the surface. Hence, in the same weather, sea water evaporates about 2–3% less than fresh water, and evaporation falls further as salinity rises. Temperature, wind, humidity and exposed surface area are the other factors controlling evaporation.
+
+Q 109 | geo | World Geography
+Magma Chamber is
+= The subterranean cavity containing the gas-rich liquid magma which feeds a volcano.
+~ A magma chamber is a large underground reservoir of molten rock, usually a few kilometres below the surface, that supplies magma to a volcano through its conduit and vent. Dissolved gases expand as the magma rises, driving eruptions. Magma that cools slowly inside the chamber forms intrusive (plutonic) rocks such as granite and gabbro.
+
+Q 110 | slv | Silviculture of Species
+Most suitable tree species used in afforestation of coastal areas:
+= Casuarina equisetifolia
+~ Casuarina equisetifolia grows fast on poor coastal sands, tolerates salt spray and strong winds, and fixes nitrogen through the actinomycete Frankia. It is therefore widely planted for coastal shelterbelts, sand-dune fixation and pole and fuelwood along the Andhra Pradesh, Odisha and Tamil Nadu coasts, and was used for bio-shields after the 2004 tsunami.
+
+Q 111 | pls | Classification & Morphology
+Icebox is a fruit type of
+= Watermelon
+~ "Icebox" watermelons are small, round varieties, usually about 2–6 kg, bred to fit easily into a household refrigerator (icebox) and to suit small families. Sugar Baby is the best-known icebox variety. Larger "picnic" watermelons, such as Charleston Gray, weigh much more and are grown for bulk markets.
+
+Q 112 | ssg | Soil Conservation & Reclamation
+A method of improving soil texture by the use of lime or other soil conditioners, thereby increasing the air content, especially in heavy clay soils.
+= Flocculation
+~ Flocculation is the clumping of fine clay particles into small aggregates (floccules). Calcium from lime or gypsum replaces sodium on clay surfaces and binds particles together, so a sticky clay becomes crumbly, with more pore space, aeration and drainage. The opposite, dispersion, occurs when sodium dominates, as in sodic soils. Strictly it improves soil structure; soil texture itself cannot be changed.
+
+Q 113 | pls | Plant Anatomy & Wood
+Amphistomatic leaves means
+= Leaves having stomata on both surfaces.
+~ Leaves with stomata on both the upper and lower surfaces are amphistomatic; this is common in the isobilateral leaves of monocots such as maize and other grasses. Hypostomatic leaves (most dicots, e.g. mango) have stomata only on the lower surface, and epistomatic leaves (floating leaves of water lily) only on the upper surface.
+
+Q 114 | nrs | Mineral, Food & Energy Resources
+Vegetables are canned in :
+= Brine
+~ Vegetables are canned in brine, a dilute common-salt solution (about 1–3%, typically 2%), which improves flavour and helps heat transfer during processing. Fruits, in contrast, are canned in sugar syrup. Because vegetables are low-acid foods, the sealed cans must be heat-processed under pressure to destroy spores of Clostridium botulinum.
+
+Q 115 | cur | AP Affairs
+What are the state animal, state tree and state flower of Andhra Pradesh
+= Black buck, Neem and Jasmine
+~ After bifurcation, Andhra Pradesh notified its own state symbols in May 2018 (G.O. 59): state animal blackbuck (krishna jinka), state tree neem (vepa), state flower jasmine (malle) and state bird rose-ringed parakeet (rama chiluka). Telangana's symbols are different: spotted deer, jammi tree, tangedu flower and Indian roller (palapitta).
+
+Q 116 | slv | Nursery & Planting
+What is the ideal direction for a greenhouse to orient, in India?
+= North-South
+~ At latitudes below about 40°, a greenhouse should have its long axis (ridge) running north–south, so that as the sun moves from east to west every part of the crop gets even light through the day and no permanent shadow forms. All of India lies below 40°N, so north–south orientation is preferred; east–west orientation suits higher latitudes, where the winter sun is low.
+
+Q 117 | ecw | Wildlife & Protected Areas
+The most important breeding areas for Olive Ridley turtle along the Bay of Bengal in Indian Ocean is the coast of
+= Orissa
+~ Odisha (formerly Orissa) has some of the world's largest mass-nesting (arribada) beaches of the olive ridley turtle, at Gahirmatha (Kendrapara district), the Rushikulya river mouth and the Devi river mouth. Lakhs of females come ashore to nest there in a few nights. The species is protected under Schedule I of the Wild Life (Protection) Act, 1972.
+
+Q 118 | slv | Silvicultural Principles & Regeneration
+A forest which has been reproduced through sprouting from stumps of felled trees is called
+= Coppice forest
+~ A coppice forest (low forest) regenerates vegetatively from stump shoots after felling, unlike a high forest raised from seed. It is worked on short rotations under coppice systems such as simple coppice, coppice with standards and coppice of two rotations. Species that coppice well include teak, sal, eucalyptus and many acacias; most conifers do not coppice.
+
+Q 119 | nrs | Forest & Water Resources
+All lands with tree cover of canopy density between 10% and 40% is called _____
+= Open forest
+~ The Forest Survey of India classifies forest cover by canopy density: very dense forest (70% and above), moderately dense forest (40% to below 70%) and open forest (10% to below 40%). Degraded forest land with canopy density below 10% is scrub. These classes are used in the biennial India State of Forest Report (ISFR).
+
+Q 120 | fim | Tree & Stand Measurement
+_________ indicates the productive capacity of a specific area of forest land for a particular tree species.
+= Site quality
+~ Site quality is the productive capacity of a site for a given species, set by climate, soil and topography. It is usually measured indirectly by site index, the average height of dominant trees at a reference age, because height growth is little affected by stand density. Indian yield tables group sites into quality classes, from I (best) downwards.
+
+Q 121 | slv | Silvicultural Principles & Regeneration
+A process which removes injured, disease or insect-infested trees is called ______..
+= Sanitation cutting
+~ Sanitation cutting (sanitation felling) removes dead, damaged, diseased or insect-infested trees to stop pests and diseases spreading to healthy trees and to improve stand health. It differs from salvage cutting, which removes dead or damaged trees mainly to recover their timber value, and from improvement felling, which removes badly formed or unwanted trees.
+
+Q 122 | fel | Forest Administration
+ICFRE was established during the year_____ and is headquartered at______
+= 1986, Dehradun
+~ The Indian Council of Forestry Research and Education (ICFRE), under the Ministry of Environment, Forest and Climate Change, was set up in 1986 and became an autonomous council in 1991. Its headquarters is at Dehradun, Uttarakhand. It runs forestry research through institutes such as the Forest Research Institute (Dehradun) and the Institute of Wood Science and Technology (Bengaluru).
+
+Q 123 | ecw | Ecosystem Concepts
+A snag is a _________________.
+= A standing dead tree
+~ A snag is a dead tree, or a large part of one, that is still standing. Snags provide nesting and roosting cavities for woodpeckers, owls, hornbills and bats, and food and shelter for insects and fungi, so they are valuable for biodiversity. In logging areas and near roads they are a safety hazard and can help spread fire.
+
+Q 124 | ssg | Soil Properties & Formation
+Soil formed from parent material in situ
+= Sedentary soil
+~ Sedentary (residual) soil forms in place from the weathering of the rock beneath it, so it resembles that rock in mineral make-up. Laterite and many red soils of peninsular India are examples. Soils whose material has been moved are transported soils: alluvial (by water), aeolian (by wind), glacial (by ice) and colluvial (by gravity).
+
+Q 125 | fel | Forest Economics
+The rotation which yields the highest net return on the invested capital is called
+= Financial rotation
+~ The financial rotation gives the highest net return on the capital invested in land and growing stock, worked out with compound interest (the highest soil expectation value). Because money locked up in standing trees could earn interest elsewhere, it is usually shorter than the rotation of maximum volume production, and it differs from the rotation of highest income, which ignores interest.
+
+Q 126 | fim | Tree & Stand Measurement
+One of the following instruments used for tree height measurement is based on the principle of similar triangles – Identify the same
+= Christen’s hypsometer
+~ Christen's hypsometer is a scale about 30 cm long, held vertically so that its ends line up with the top and base of the tree, while a pole of known length (usually 4 m) stands at the tree base. By similar triangles, height = pole length × scale length ÷ scale length cut off by the pole, and the scale is graduated to read height directly. Abney's level, Haga altimeter and Blume-Leiss work on angles (trigonometry).
+
+Q 127 | ens | Environmental Laws & Ethics
+India became a party to CITES in the year___________, which is a body for regulating----
+= 1976, International Trade in Endangered Species of Wild Fauna & Flora.
+~ CITES, the Convention on International Trade in Endangered Species of Wild Fauna and Flora, was signed in Washington in 1973 and came into force in 1975. India ratified it in 1976, becoming a party that year. Species are listed in Appendices I, II and III according to how strictly their international trade must be controlled.
+
+Q 128 | fse | Survey & Engineering
+An Engineer’s chain measures
+= 100 ft long
+~ The engineer's chain is 100 feet long and has 100 links, each 1 foot long. Gunter's chain is 66 feet (100 links of 0.66 ft) and suits acres and miles (10 square chains = 1 acre), while the revenue chain is 33 feet with 16 links. Metric chains of 20 m and 30 m are used today.
+
+Q 129 | fim | Tree & Stand Measurement
+The table showing the distribution of stems by diameter classes for each of the series of crop diameters is called
+= Stand table
+~ A stand table shows the number of trees in each diameter class, usually per hectare or for the whole stand, and so gives the diameter distribution of the crop. A stock table goes one step further and shows volume (or basal area) by diameter class. A volume table gives the volume of single trees, and a yield table gives growth and yield by age and site quality.
+
+Q 130 | fel | Forest & Environment Laws
+The Asiatic lion is included in the following schedule of the Wildlife Protection Act of 1972
+= I
+~ The Asiatic lion (Panthera leo persica) is listed in Schedule I of the Wild Life (Protection) Act, 1972, which gives the highest protection; hunting it or trading in it attracts the heaviest penalties. Schedule I also includes the tiger, elephant and Great Indian Bustard. In the wild the Asiatic lion survives only in the Gir landscape of Gujarat.
+
+Q 131 | fut | Wood Properties
+The most important physical property of wood is its
+= Moisture content
+~ The moisture content of wood affects nearly all its other properties: strength, stiffness, shrinkage and swelling, weight, resistance to fungi and insects, and how it machines, glues and takes preservatives. That is why timber is seasoned before use and strength values are quoted at a standard moisture content (usually 12%). Many texts, however, call density (specific gravity) the single most important physical property. (Official key; some sources differ.)
+
+Q 132 | fim | Tree & Stand Measurement
+The ratio of diameter to girth of trees will be less than
+= 0.3182
+~ For a perfectly circular stem, girth = π × diameter, so diameter ÷ girth = 1/π, which is 7/22 ≈ 0.3182 when π is taken as 22/7 (0.3183 with π = 3.1416). Real stems are never perfect circles, and for a given cross-sectional area a circle has the shortest perimeter, so an irregular stem has a relatively larger girth and its diameter-to-girth ratio falls below this value.
+
+Q 133 | ecw | Wildlife & Protected Areas
+The second Biosphere Reserve following the Nilgiri Biosphere Reserve was established at
+= Nanda Devi
+~ India's first biosphere reserve, the Nilgiri Biosphere Reserve (Tamil Nadu, Kerala, Karnataka), was set up in 1986 under India's biosphere reserve programme, based on UNESCO's Man and the Biosphere (MAB) concept. The second was Nanda Devi in Uttarakhand, notified in January 1988, followed by Nokrek in Meghalaya later in 1988. In Andhra Pradesh, the Seshachalam Hills became a biosphere reserve in 2010.
+
+Q 134 | pls | Classification & Morphology
+A pair of appendages that present at the point of attachment of a leaf to the stem is
+= Stipules
+~ Stipules are a pair of small lateral outgrowths at the leaf base, where the leaf joins the stem. Leaves with stipules are called stipulate and those without are exstipulate. Stipules may be leafy (pea), tendrils (Smilax) or spines (Zizyphus, Acacia), and in some plants they protect the young bud.
+
+Q 135 | pls | Plant Physiology
+Photosynthesis is :
+= Anabolic process
+~ Anabolism is the building up of complex molecules from simple ones using energy. In photosynthesis green plants use light energy trapped by chlorophyll to make glucose from carbon dioxide and water (6CO2 + 6H2O → C6H12O6 + 6O2). Respiration, which breaks glucose down to release energy, is the corresponding catabolic process.
+
+Q 136 | ens | Environmental Laws & Ethics
+Which of the following is the International agreement which aims to ensure the safe handling, transport and use of living modified organisms (LMOs) resulting from modern biotechnology?
+= Cartagena Protocol
+~ The Cartagena Protocol on Biosafety, a supplementary agreement to the Convention on Biological Diversity, was adopted in 2000 and came into force in 2003. It governs the movement of LMOs between countries through an advance informed agreement procedure. The Nagoya Protocol (2010) deals with access to genetic resources and benefit sharing, and the Kyoto Protocol with greenhouse gases.
+
+Q 137 | ecw | Wildlife & Protected Areas
+The floating national park is situated in the state of
+= Manipur
+~ Keibul Lamjao National Park, on Loktak Lake in Bishnupur district of Manipur, is the only floating national park in the world. It is made of phumdis, floating mats of vegetation, soil and organic matter. It is the last natural home of the endangered sangai or brow-antlered deer, the state animal of Manipur.
+
+Q 138 | slv | Nursery & Planting
+Seeds which cannot be dried to moisture contents below 30% without injury and are unable to tolerate freezing are called
+= Recalcitrant seeds
+~ Recalcitrant seeds are shed with a high moisture content and lose viability if dried below a fairly high level (around 20–30%) or frozen, so they cannot be stored for long; sal (Shorea robusta), mango, jackfruit and many dipterocarps are examples. Orthodox seeds, such as those of teak, acacias and eucalyptus, can be dried to about 5% and stored for years at low temperature.
+
+Q 139 | geo | AP Geography
+Which one of the following is the second largest brackish-water lagoon in India?
+= Pulicat lake
+~ Pulicat Lake, on the Andhra Pradesh–Tamil Nadu border, is India's second largest brackish-water lagoon after Chilika Lake in Odisha. The barrier island of Sriharikota separates it from the Bay of Bengal. Most of the lake lies in Andhra Pradesh, where it is protected as the Pulicat Lake Bird Sanctuary, known for flamingos and other water birds.
+
+Q 140 | ecw | Wildlife & Protected Areas
+Which one of the following four tiger reserves is the largest in India?
+= Nagarjuna Sagar – Srisailam tiger reserve
+~ Nagarjunsagar–Srisailam Tiger Reserve in the Nallamala hills of Andhra Pradesh is the largest tiger reserve in India, covering about 3,700 sq km. It was declared a tiger reserve in 1983 and is named after the Nagarjuna Sagar and Srisailam reservoirs on the Krishna. After bifurcation, the Telangana part became the Amrabad Tiger Reserve.
+
+Q 141 | ecw | Wildlife & Protected Areas
+Which one of the following is a Ramsar site?
+= Kolleru lake
+~ Kolleru Lake, a large shallow freshwater lake between the Krishna and Godavari deltas in Andhra Pradesh, was designated a Ramsar wetland of international importance in 2002. It is also a wildlife sanctuary and an important home of the grey (spot-billed) pelican and many migratory birds. Ramsar sites are listed under the Ramsar Convention on Wetlands (1971, Iran).
+
+Q 142 | slv | Silvicultural Principles & Regeneration
+What is the selective removal of certain parts of a plant, such as branches, buds, or roots is called?
+= Pruning
+~ Pruning is the selective removal of plant parts such as branches, buds or roots. In forestry, lower branches are pruned to produce a clean, knot-free bole and better timber, to reduce fire risk and to lessen shade on crops in agroforestry. Natural pruning happens when shaded lower branches die and fall in a dense crop; root pruning gives nursery seedlings a compact root system.
+
+Q 143 | fim | Remote Sensing & GIS
+GIS deals with which kind of data
+= Spatial data
+~ A Geographic Information System stores, analyses and displays spatial (geo-referenced) data, that is, data tied to locations by coordinates, together with the attribute data describing each feature. Spatial data are held as vector layers (points, lines, polygons) or as raster grids such as satellite images. Forest departments use GIS for forest cover maps, fire alerts and working plans.
+
+Q 144 | fel | Forest Economics
+Which one of the following is the algebraic difference between discounted benefits and discounted costs as they occur over time?
+= Net present value
+~ Net present value (NPV) = sum of discounted benefits − sum of discounted costs = Σ (Bt − Ct)/(1 + r)^t, where r is the discount rate and t the year. A forestry project is worth taking up if its NPV is positive. The benefit–cost ratio divides discounted benefits by discounted costs, and the internal rate of return is the discount rate at which NPV becomes zero.
+
+Q 145 | anm | Animal Health & Nutrition
+Foot and mouth disease in animals is caused by
+= Virus
+~ Foot and mouth disease is a highly contagious disease of cloven-hoofed animals such as cattle, buffalo, sheep, goats and pigs, caused by an Aphthovirus (family Picornaviridae) with seven serotypes. It causes fever, blisters in the mouth and on the feet, lameness and a sharp fall in milk yield. It is controlled by vaccination, as under the National Animal Disease Control Programme (2019).
+
+Q 146 | fim | Sampling & Inventory
+Sampling method in which the sampling units are selected according to a predetermined patters is
+= Systematic sampling
+~ In systematic sampling the units are chosen at fixed intervals according to a set pattern, for example every 10th tree, or plots at regular spacing on a grid or along parallel strips, often after a random start. It is easy to lay out in forests and covers the area evenly. In simple random sampling every unit is picked by chance, and in stratified sampling the area is first divided into strata.
+
+Q 147 | fse | Survey & Engineering
+Type of survey in which the curvature of the earth is not taken into account is called
+= Plane survey
+~ In plane surveying the earth's surface is treated as a flat plane and its curvature is ignored; this is accurate enough for small areas (up to about 250 sq km), so most forest, engineering and cadastral surveys are plane surveys. Geodetic surveying takes the curvature into account and is used for large areas, such as the national triangulation of the Survey of India.
+
+Q 148 | fse | Survey & Engineering
+The vertical distance between any two consecutive contours is known as
+= Contour interval
+~ The contour interval is the constant vertical distance between two consecutive contour lines on a map, for example 20 m on many Survey of India 1:50,000 toposheets. The horizontal distance between two consecutive contours is the horizontal equivalent; closely spaced contours show a steep slope and widely spaced ones a gentle slope.
+
+Q 149 | fel | Forest & Environment Laws
+This Act was to consolidate and amend the law relating to the protection and management of forests in State of Andhra Pradesh.
+= Andhra Pradesh Forest Act, 1967
+~ The preamble of the Andhra Pradesh Forest Act, 1967 (Act 21 of 1967) describes it as an Act to consolidate and amend the law relating to the protection and management of forests in the State. It replaced the Madras Forest Act, 1882 in the Andhra area and the Hyderabad Forest Act in the Telangana area, and covers reserved forests, protection of forests, forest produce and forest offences.
+
+Q 150 | fel | Forest Policy
+Maintenance of environmental stability, maintenance of ecological balance including atmosphere equilibrium are the principle objectives of____________.
+= National Forest Policy, 1988
+~ The National Forest Policy, 1988 states that its principal aim is to ensure environmental stability and maintenance of ecological balance, including atmospheric equilibrium, which are vital for all life; direct economic benefit must be subordinated to this aim. It also set the goal of one-third of India's area under forest or tree cover (two-thirds in the hills). The earlier 1952 policy gave more weight to revenue and industry.

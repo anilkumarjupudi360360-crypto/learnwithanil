@@ -1,0 +1,1426 @@
+# APPSC Forest Range Officer in A.P. Forest Service (Notification 21/2022), Main Examination Paper I: General Studies & Mental Ability, computer-based test held 25 September 2023.
+# Answers: APPSC final key (APOnline master question paper, correct option ticked; final keys of 30 November 2023). Explanations by Learn with Anil.
+# Left out (ignored by APPSC for all candidates): 127.
+
+Q 1 | men | Reasoning
+Seven people named P, Q, R, S, T, U and V are sitting around a circular table facing the centre. Q is second to the left of P. R is third to the right of Q. U is second to the left of T. V is third to the left of U. T is to the immediate right of S. Who is sitting third to left of V?
+(1) T
+(2) S
+(3) R
+(4) Q
+= 2
+~ Fix P at seat 0 and count each place to P's left as +1 (everyone faces the centre). Then Q = +2 and R = Q − 3 = −1, i.e. immediately right of P. T is just right of S, U = T + 2 and V = U + 3; the only fit in the free seats (+1, +3, +4, +5) is T = +3, S = +4, U = +5, V = +1. Third to the left of V is seat +4, which is S.
+
+Q 2 | men | Reasoning
+Each of K, L, M, N, O, P and S has an exam on a different day of a week starting from Monday and ending on Sunday of the same week. Only three people have exams before P. Only two people have exams between the exams of K and P. Only N has exam after L. K’s exam is immediately before S. O’s exam is on Friday. On which day is M’s exam?
+(1) Monday
+(2) Tuesday
+(3) Wednesday
+(4) Saturday
+= 3
+~ Three exams come before P, so P is on Thursday. Two exams lie between K and P, so K is on Monday or Sunday; S comes right after K, so K = Monday and S = Tuesday. Only N comes after L, so L = Saturday and N = Sunday, and O is on Friday. The only day left for M is Wednesday.
+
+Q 3 | men | Reasoning
+Eight people named A, B, C, D, E, F, G and H live on different floors of a building. The ground floor is number 1, the floor above it number 2 and so on till the top floor is number 8. E lives on floor 3. C lives on the floor immediately above H’s floor. B lives on the floor immediately above G’s floor. F lives on some floor below E’s floor. Only four people live above D’s floor. C does not live on floor 8. Only one person lives between the floors of D and A. Which of the following is a correct match of person and floor?
+(1) B : Floor 7
+(2) H : Floor 6
+(3) A : Floor 5
+(4) F : Floor 1
+= 4
+~ Four people live above D, so D is on floor 4, and A (one person in between) is on floor 2 or 6. F is below E (floor 3), so on floor 1 or 2. If A = 2, then F = 1 and floors 5–8 hold the pairs H–C and G–B; since C is not on 8, H = 5, C = 6, G = 7, B = 8. A = 6 leaves no room for two adjacent pairs, so only 'F : Floor 1' matches.
+
+Q 4 | men | Reasoning
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).
+Statements:
+All pillows are blankets.
+All blankets are beds.
+Conclusions:
+I. All pillows are beds.
+II. Some beds are blankets.
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Both conclusions I and II follow
+(4) Neither conclusion I nor II follow
+= 3
+~ All pillows are blankets and all blankets are beds, so all pillows are beds: conclusion I follows. The statement 'All blankets are beds' can be converted to 'Some beds are blankets', so conclusion II also follows. Hence both conclusions I and II follow.
+
+Q 5 | men | Reasoning
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).
+Statements:
+All almonds are bananas.
+All cashews are bananas.
+All bananas are raspberries.
+Conclusions:
+I. All almonds are raspberries.
+II. Some raspberries are cashews.
+III. No cashew is a raspberry
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Conclusions I and II follow
+(4) Conclusions I and III follow
+= 3
+~ Almonds lie inside bananas, which lie inside raspberries, so all almonds are raspberries (I follows). Cashews are also inside bananas and hence inside raspberries, so some raspberries are cashews (II follows), while 'No cashew is a raspberry' (III) is false. So conclusions I and II follow.
+
+Q 6 | men | Reasoning
+In a code language, 'TYPIST' is written as ‘72111887’, ‘CRAVE’ is written as ‘24926522’, how will 'UNION' be written in that language?
+(1) 613181513
+(2) 614181214
+(3) 211391213
+(4) 613181213
+= 4
+~ Each letter is written as its reverse alphabetical position (A = 26 … Z = 1, i.e. 27 minus its place). TYPIST → 7, 2, 11, 18, 8, 7 = 72111887 and CRAVE → 24, 9, 26, 5, 22 = 24926522. So UNION → U 6, N 13, I 18, O 12, N 13 = 613181213.
+
+Q 7 | men | Reasoning
+If H < F < T > R > L and S > T = M > Y < G, then which of the following is NOT definitely correct?
+(1) L < T
+(2) S > R
+(3) T > G
+(4) L < S
+= 3
+~ T > R > L gives L < T, and S > T > R gives S > R, so options 1 and 2 are definitely true; S > T > R > L also gives L < S. But T and G are linked only through Y (T = M > Y < G), so their relation cannot be fixed. Hence 'T > G' is not definitely correct.
+
+Q 8 | men | Reasoning
+Select the term that will replace the question mark (?) in the following series.
+CUL-7, JBS-11, QIZ-19, XPG-35, EWN-67, ?
+(1) LDU-131
+(2) LDU-136
+(3) LEV-131
+(4) KDT-133
+= 1
+~ Each letter moves 7 places forward, wrapping after Z: C→J→Q→X→E→L, U→B→I→P→W→D and L→S→Z→G→N→U. The numbers increase by 4, 8, 16 and 32, so the next increase is 64: 67 + 64 = 131. Combining the letters and the number, the next term is LDU-131.
+
+Q 9 | men | Reasoning
+In the letter clusters given below, if all the vowels are moved one letter forward and all consonants are moved one letter backward as per the English alphabet and then all the new letter clusters thus formed are arranged in the alphabetical order from left to right on the basis of their first letter, then which letter cluster will be second from the right end in the new arrangement?
+(Left) COT, HKA, EBY, PCL, IMA, UWE (Right)
+(1) VVF
+(2) FAX
+(3) OBK
+(4) QDJ
+= 3
+~ Moving vowels one letter forward and consonants one letter back gives COT→BPS, HKA→GJB, EBY→FAX, PCL→OBK, IMA→JLB and UWE→VVF. Arranged alphabetically by first letter they read BPS, FAX, GJB, JLB, OBK, VVF. The second cluster from the right end is OBK.
+
+Q 10 | men | Reasoning
+Refer to the following number letter series and answer the question that follows.
+(Left) F 2 B E 7 9 N 2 M A 3 L 5 4 P E 7 R 8 U 9 W 6 A D 7 5 A 8 W 4 L E H 5 T 3 U P 4 C 2 E 6 E S 7 A Y 8 U 9 N 3 E 3 L 2 5 A 7 9 M A 4 E 6 L (Right)
+How many consonants in the above series are immediately followed by a vowel and immediately preceded by an even number? (Consider counting from left to right only.)
+(1) Three
+(2) Four
+(3) Five
+(4) Six
+= 2
+~ We need the pattern even number – consonant – vowel. It occurs four times: 2 B E, 2 M A, 4 P E and 4 L E. Every other consonant fails the test (for example, in 8 W 4 and 4 C 2 the consonant is not followed by a vowel), so the answer is four.
+
+Q 11 | men | Reasoning
+Select the option that is related to the fifth letter cluster in the same way as the first letter cluster is related to the second letter cluster and the third letter cluster is related to the fourth letter cluster.
+SHKE-6 : KVHN-24 : : FOYC-7 : RIFB-35 : : CLVS-4 : ?
+(1) OFVY-8
+(2) OFWY-15
+(3) PFVY-22
+(4) OGWY-12
+= 1
+~ Add 3 to each letter and then swap the letters in pairs: SHKE → VKNH → KVHN, and FOYC → IRBF → RIFB. The number follows n × (n − 2): 6 × 4 = 24 and 7 × 5 = 35. So CLVS → FOYV → OFVY and 4 × 2 = 8, giving OFVY-8.
+
+Q 12 | men | Reasoning
+Select the letter cluster triad in which the letters clusters have the same relationship as in the letter cluster triad given below.
+FLOW: ASPJ: QKHZ
+(1) PLAY: CEPT: GLFX
+(2) CORP: SGVT: GETH
+(3) BEDS: WHIF: URSD
+(4) NICE: IFLS: HMVR
+= 3
+~ FLOW → ASPJ: first letter −5 (F→A), the middle letters +4 and interchanged (O→S, L→P), last letter +13 (W→J). The third cluster is the second one reversed and replaced by opposite letters (A↔Z, B↔Y …): JPSA → QKHZ. Only BEDS fits: B→W, D→H, E→I, S→F gives WHIF, and FIHW gives URSD.
+
+Q 13 | men | Reasoning
+Three of the following four letter-clusters are alike in a certain manner and one is different. Select the one that is different.
+(1) JNSYF
+(2) TXCIP
+(3) CGLRY
+(4) VZEKS
+= 4
+~ In three clusters the letters advance by +4, +5, +6 and +7: J-N-S-Y-F, T-X-C-I-P and C-G-L-R-Y (wrapping after Z). In VZEKS, V+4 = Z, Z+5 = E and E+6 = K, but K+7 = R, not S. So VZEKS is the odd one out.
+
+Q 14 | men | Reasoning
+Select the number from among the given options that will replace the question mark (?) in the following series.
+19, 32, 46, 64, 91, ?
+(1) 130
+(2) 134
+(3) 142
+(4) 155
+= 2
+~ The differences are 13, 14, 18 and 27, and these themselves increase by 1, 4 and 9, i.e. 1², 2², 3². The next increase is 4² = 16, so the next difference is 27 + 16 = 43. The missing number is 91 + 43 = 134.
+
+Q 15 | men | Reasoning
+In a certain code language, if' ‘&’ means 'addition', '#' means 'multiplication', '@' means 'division' and '%' means 'subtraction', then find the value of
+57 @ (27 % 8) & 5 # (74@37) % (125%25) @ 4 & 40.
+(1) 15
+(2) 28
+(3) 30
+(4) 40
+= 2
+~ Replacing the symbols gives 57 ÷ (27 − 8) + 5 × (74 ÷ 37) − (125 − 25) ÷ 4 + 40. Solving the brackets first gives 57 ÷ 19 + 5 × 2 − 100 ÷ 4 + 40. By BODMAS this is 3 + 10 − 25 + 40 = 28.
+
+Q 16 | cur | National
+India’s first indigenous aircraft carrier INS Vikrant was commissioned by the Prime Minister at Cochin Shipyard Limited in September. The commissioning showcased the country’s growing prowess of indigenous manufacturing and a major milestone in the path towards ‘Aatmanirbhar Bharat’.
+Based on the passage presented and the following assertion and reason statements, which of the options is correct?
+Assertion (A): The Commissioning of India’s first indigenous aircraft carrier INS Vikrant is a major milestone in the path towards Aatmanirbhar Bharat.
+Reason (R): INS Vikrant showcased India’s growing prowess of indigenous manufacturing.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true, but R is not the correct explanation of A
+(3) A is true, but R is false
+(4) Both A and R are false
+= 1
+~ INS Vikrant, India's first indigenously designed and built aircraft carrier, was built by Cochin Shipyard Limited and commissioned by Prime Minister Narendra Modi on 2 September 2022 at Kochi. It is called a milestone for Aatmanirbhar Bharat precisely because it showed India's ability to build such a complex warship at home, with about 76% indigenous content. So R correctly explains A.
+
+Q 17 | sci | Science & Technology
+It has been decided that the Chanderyaan-3 lander and rover would retain the names used in Chanderyaan-2.
+Which of the following is correct in this regard?
+(1) Lunar lander will be known as ‘Pragyan’ and rover will be known as ‘Vikram’.
+(2) Lunar lander will be known as ‘Vikram’ and rover will be known as ‘Pragyan’.
+(3) Lunar lander will be known as ‘Vikrant’ and rover will be known as ‘Pragyant’.
+(4) Lunar lander will be known as ‘Pragyant’ and rover will be known as ‘Vikrant’.
+= 2
+~ ISRO kept the Chandrayaan-2 names for Chandrayaan-3: the lander is Vikram (named after Dr Vikram Sarabhai) and the rover is Pragyan. Chandrayaan-3 was launched on 14 July 2023 and its lander touched down near the lunar south pole on 23 August 2023. 'Vikrant' is the Navy's aircraft carrier and 'Pragyant' is not a mission name.
+
+Q 18 | pol | Union & State Government
+Short forms and full names of four Department of Defence have been given in the table below. Which of the full form is not correct?
+Abbreviation | Full Form
+1. DDP | Department of Defence Production
+2. DESW | Department of Engineering Services Works
+3. DRDO | Defence Research and Development Organisation
+4. DMA | Department of Military Affairs
+(1) Explanation of 1 is incorrect
+(2) Explanation of 2 is incorrect
+(3) Explanation of 3 is incorrect
+(4) Explanation of 4 is incorrect
+= 2
+~ DESW stands for the Department of Ex-Servicemen Welfare, a department of the Ministry of Defence set up in 2004, not 'Department of Engineering Services Works'. DDP (Department of Defence Production), DRDO (Defence Research and Development Organisation) and DMA (Department of Military Affairs, created in 2019 and headed by the Chief of Defence Staff) are correctly expanded.
+
+Q 19 | cur | International
+Defence Minister Rajnath Singh addressed the strategically significant India-________ Army Chiefs’ Conclave in Pune on 28 March 2023.
+(1) Africa
+(2) America
+(3) China
+(4) Japan
+= 1
+~ On 28 March 2023 Defence Minister Rajnath Singh addressed the India-Africa Army Chiefs' Conclave in Pune, held along with the joint exercise AFINDEX-23 (Africa-India Field Training Exercise). It brought together army chiefs and delegates from African nations to deepen India's defence cooperation with Africa.
+
+Q 20 | pol | Governance & Schemes
+Which of the following statements is NOT correct with reference to iDEX?
+(1) iDEX aims at creation of an ecosystem to foster innovation and technology development in industry and trade.
+(2) iDEX is engaging industries including MSMEs, start-ups, individual innovators, R&D institutes and academia.
+(3) iDEX is funded and managed by a ‘Defence Innovation Organisation’ (DIO).
+(4) ‘Defence Innovation Organisation’ (DIO) has been formed as a ‘not for profit’ company.
+= 1
+~ iDEX (Innovations for Defence Excellence), launched in 2018, aims to create an ecosystem to foster innovation and technology development in Defence and Aerospace, not in 'industry and trade', so statement 1 is wrong. It engages MSMEs, start-ups, individual innovators, R&D institutes and academia, and is funded and managed by the Defence Innovation Organisation, a not-for-profit company formed by HAL and BEL.
+
+Q 21 | sci | Science & Technology
+Monitoring of the crop field in conventional farming requires intensive labour, physical equipment, time, and effort. IoT provides an alternative to these traditional methods. An IoT device contains one or more sensors that collect data and provide accurate information via mobile applications or other means in real-time.
+Based on the passage presented and the following assertion and reason statements, which of the options is correct?
+Assertion (A): Traditional methods of farming require intensive labour, physical equipment, time, and effort.
+Reason (R): Internet of Things provides an alternative to traditional methods of farming.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true, but R is not the correct explanation of A
+(3) A is true, but R is false
+(4) Both A and R are false
+= 2
+~ Both statements are taken from the passage: conventional crop monitoring needs heavy labour, equipment, time and effort (A is true), and IoT offers an alternative to these methods (R is true). But R does not explain why traditional methods are so labour-intensive; it only describes a substitute. So both are true, but R is not the explanation of A.
+
+Q 22 | cur | National
+Which company will provide end-to-end management of DIKSHA’s online platforms across its mobile application and website, and will be made accessible to students for free educational content in their preferred Indian language?
+(1) Bharti Airtel
+(2) Tata Indicom
+(3) Vodafone
+(4) Reliance
+= 1
+~ In June 2023 Airtel Business, part of Bharti Airtel, partnered with the Ministry of Education to power DIKSHA, providing cloud and content delivery services and end-to-end management of its mobile app and website. DIKSHA offers free learning content to school students and teachers in many Indian languages.
+
+Q 23 | sci | Science & Technology
+Read the given statement and conclusions carefully. Select the correct option based on the full form of the abbreviation SATHI.
+Statement: The Department of Science and Technology has launched a unique scheme called SATHI.
+Conclusions:
+i. SATHI will address the problems of accessibility, maintenance, redundancy and duplication of expensive equipment in the institutions.
+ii. SATHI will also foster a strong culture of collaboration between institutions and across disciplines to take advantage of developments, innovations and expertise in diverse areas.
+(1) Only conclusion (i) is correct
+(2) Only conclusion (ii) is correct
+(3) Both conclusions (i) and (ii) are correct
+(4) None of the conclusions are correct
+= 3
+~ SATHI stands for Sophisticated Analytical & Technical Help Institutes, a DST scheme that sets up shared, professionally managed centres with costly analytical instruments. Its stated aims are to solve problems of access, maintenance, redundancy and duplication of expensive equipment, and to build a culture of collaboration across institutions and disciplines. So both conclusions are correct.
+
+Q 24 | sci | Science & Technology
+Which of the following is NOT the correct full form of INSPIRE and its components?
+(1) INSPIRE – Innovation in Science Pursuit for Inspired Research
+(2) SEATS – Scheme for Early Attraction of Talents for Science
+(3) SHE – Support for Her Education
+(4) AORC – Assured Opportunity for Research Careers
+= 3
+~ INSPIRE (Innovation in Science Pursuit for Inspired Research) is a programme of the Department of Science and Technology. Its component SHE stands for Scholarship for Higher Education, not 'Support for Her Education'. SEATS (Scheme for Early Attraction of Talents for Science) and AORC (Assured Opportunity for Research Careers) are correctly expanded.
+
+Q 25 | sci | Science & Technology
+Which of the following statements is NOT correct with respect to the objectives of Phyto-Pharma Plant Mission?
+I. The mission aims at conservation and cultivation of endangered and threatened endemic medicinal plants, and discovery of new botanical drugs for unmet medical needs using the rich traditional ethnobotanical knowledge.
+II. Nodal Ministry for this mission is Ministry of Agriculture and Farmers Welfare.
+(1) Only statement I is correct
+(2) Only statement II is correct
+(3) Both statements I and II are correct
+(4) Both statements I and II are not correct
+= 1
+~ Statement I correctly gives the aim of the Phyto-Pharma Plant Mission for the North-East: conserving and cultivating endangered and threatened endemic medicinal plants and discovering new botanical drugs from traditional ethnobotanical knowledge. Statement II is wrong: the nodal department is the Department of Biotechnology (Ministry of Science and Technology), working with the DoNER ministry. So only statement I is correct, as option 1 says, although the stem is worded 'NOT correct'.
+
+Q 26 | sci | Science & Technology
+Which of the following institutions have joined hands for JIGYASA – Student-Scientist Connect Programme connecting school students and scientists so as to extend student’s classroom learning with that of a very well planned research laboratory-based learning?
+(1) Council of Scientific and Industrial Research and Kendriya Vidyalaya Sangathan
+(2) Council of Scientific and Industrial Research and Central Board of Secondary Education
+(3) Council of Scientific and Industrial Research and Indian Council of Secondary Education
+(4) Council of Scientific and Industrial Research and Army Welfare Education Society
+= 1
+~ JIGYASA, the Student-Scientist Connect Programme, was launched in 2017 by the Council of Scientific and Industrial Research (CSIR) together with Kendriya Vidyalaya Sangathan (KVS). It links Kendriya Vidyalaya students and teachers with CSIR scientists and laboratories, so that classroom learning is extended through well-planned laboratory-based learning.
+
+Q 27 | sci | Science & Technology
+National Initiative for Developing & Harnessing Innovation (NIDHI) is a programme to address the complete chain of innovation ecosystem right from scouting to mentoring to scaling up innovations. Under it, a research park has been established at which IIT?
+(1) IIT Delhi
+(2) IIT Gandhinagar
+(3) IIT Bombay
+(4) IIT Kanpur
+= 2
+~ NIDHI is the Department of Science and Technology's umbrella programme for nurturing ideas and start-ups, from scouting and mentoring to scaling up. Under NIDHI, a research park at IIT Gandhinagar was supported at a cost of about ₹90 crore to promote industry–academia collaboration and innovation.
+
+Q 28 | cur | Reports & Indices
+According to a report published by the National Survey of India, which of the following statements is NOT correct with reference to literacy in India, as of 2023?
+(1) Literacy rate of India in 2023 is 77.7 per cent.
+(2) Andhra Pradesh has India’s lowest literacy rate of 67.35%.
+(3) Rajasthan has the lowest male literacy rate in India.
+(4) Uttar Pradesh has the lowest female literacy rate.
+= 4
+~ Here the key treats statement 4 as the incorrect one. The NSO survey (NSS 75th round, 2017-18) gives all-India literacy as 77.7% and Andhra Pradesh lowest at 66.4% (not 67.35%), and puts Rajasthan lowest in female literacy at 57.6%, with Uttar Pradesh at 63.4%, so statement 4 is wrong. By the same survey Rajasthan's male literacy (80.8%) is well above Andhra Pradesh's (73.4%), so statement 3 is also wrong, though popular 'literacy 2023' summaries repeat it. (Official key; some sources differ.)
+
+Q 29 | sci | Biology & Health
+Sickle cell is an inherited disease in which misshapen red blood cells cannot properly carry oxygen throughout the body. The government's current strategy is to eliminate the disease by 2047. The plis to screen 70 million at-risk people by 2025 to detect the disease early, while counselling those who carry the gene about the risks of marrying each other.
+Based on the passage presented and the following assertion and reason statements, which of the options is correct?
+Assertion (A): The government's current strategy is to eliminate the Sickle Cell disease by 2047.
+Reason (R): Sickle cell is an inherited disease in which red blood cells cannot properly carry oxygen throughout the body.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true, but R is not the correct explanation of A
+(3) A is true, but R is false
+(4) Both A and R are false
+= 1
+~ The National Sickle Cell Anaemia Elimination Mission, launched by the Prime Minister on 1 July 2023 at Shahdol (Madhya Pradesh), aims to eliminate sickle cell disease as a public health problem by 2047. Because the disease is inherited through genes, it can be prevented by screening people and counselling carriers, which is exactly the strategy the passage describes. So R correctly explains A.
+
+Q 30 | pol | Constitution & Rights
+The latest development in the Protection of Children from Sexual Offences (POCSO) Act is that the parliamentary standing committee on home affairs has recommended to the Union Government that the juvenile delinquency age be reduced from 18 to 16.
+Based on the passage presented and the following assertion and reason statements, which of the options is correct?
+Assertion (A): The parliamentary standing committee on home affairs has recommended to the Union Government that the juvenile delinquency age be reduced from 18 to 16, under POCSO.
+Reason (R): Sexual crime against children is very serious, so accused above 16 years of age should be tried as adults.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true, but R is not the correct explanation of A
+(3) A is true, but R is false
+(4) Both A and R are false
+= 1
+~ In March 2021 the Parliamentary Standing Committee on Home Affairs (chaired by Anand Sharma) asked the government to review the age limit of 18 under the POCSO Act, 2012 and see if it could be reduced to 16, so A is true. The committee noted that more and more juveniles were committing such offences and that untreated minor offenders may go on to commit more heinous crimes. APPSC treats this concern about the gravity of sexual crimes against children (R) as the explanation of A.
+
+Q 31 | pol | Union & State Government
+‘The judicial system in India is under tremendous pressure’. Which of the following statements is NOT correct in this reference, as of May 2022?
+(1) Over 4.7 crore cases are pending in courts across different levels of the judiciary.
+(2) Out of total 87.4% are pending in Subordinate Courts.
+(3) Out of total 12.4% in are pending in High Courts.
+(4) Nearly 1,82,000 cases have been pending for over 50 years.
+= 4
+~ As of May 2022, over 4.7 crore cases were pending across all levels of the judiciary, about 87.4% of them in subordinate courts and 12.4% in High Courts (PRS and National Judicial Data Grid figures). Nearly 1,82,000 cases had been pending for over 30 years, not 50 years, so statement 4 is NOT correct.
+
+Q 32 | geo | Environment & Ecology
+Which of the following statements is/are correct with respect to National Clean Air Programme (NCAP) of Government of India?
+I. National Clean Air Programme (NCAP) is a national-level strategy for reducing the levels of air pollution at both the regional and urban scales.
+II. Target is for reduction of 20-30% of PM2.5 and PM10 concentration by 2025.
+(1) Only statement I is correct
+(2) Only statement II is correct
+(3) Both statements I and II are correct
+(4) Both statements I and II are not correct
+= 1
+~ NCAP was launched by the Ministry of Environment, Forest and Climate Change in January 2019 as a national-level strategy to reduce air pollution at both regional and urban scales, so statement I is correct. Its original target was a 20–30% cut in PM2.5 and PM10 concentrations by 2024 over 2017 levels (later revised to up to 40% reduction in PM10 by 2025-26), so statement II is wrong.
+
+Q 33 | pol | Governance & Schemes
+Which of the following is NOT an eligibility criterion for Health Insurance Scheme for weavers?
+(1) The scheme will cover the weaver’s family of four – self, spouse and two children.
+(2) The weaver should be earning at least 50% of his income from handloom weaving.
+(3) All weavers, whether male or female, are eligible to be covered under the ‘Health Insurance Scheme’.
+(4) The scheme covers people upto 60 years of age.
+= 4
+~ The Health Insurance Scheme for handloom weavers (Ministry of Textiles) covers the weaver's family of four – self, spouse and two children – and weavers, male or female, who earn at least 50% of their income from handloom weaving. It covers people aged from 1 day up to 80 years, not just up to 60, so statement 4 is not a correct criterion.
+
+Q 34 | sci | Biology & Health
+The All India Institute of Medical Sciences (AIIMS) Delhi opened its first ______ bank in June 2023.
+(1) eye
+(2) skin
+(3) liver
+(4) blood
+= 2
+~ In June 2023 AIIMS New Delhi opened its first skin bank in the Department of Burns and Plastic Surgery. Donated skin is processed, stored and used as a temporary biological dressing for patients with severe burns. AIIMS already had an eye bank and a blood bank, so 'skin' is the only new first.
+
+Q 35 | pol | Constitution & Rights
+The Madhya Pradesh High Court has asked the Central Government to reduce the age of consent to 16 for consensual sexual relationship giving which of the following statements?
+(1) Due to exposure to social media, adolescents are attaining puberty at an early age.
+(2) Certain chemicals in fast food are making adolescents attain puberty at an early age.
+(3) Climatic changes are bringing about puberty early.
+(4) Adolescents are opening up to the idea of safe sex.
+= 1
+~ In June 2023 the Madhya Pradesh High Court (Gwalior bench) urged the Centre to consider reducing the age of consent for consensual relationships to 16. It observed that, due to social media and internet exposure, adolescents attain puberty early (around 14) and enter relationships, and that raising the age of consent to 18 in 2013 had led to unfair prosecution of adolescent boys.
+
+Q 36 | pol | Governance & Schemes
+Which of the following statements is NOT correct with respect to ‘Jal Shakti Abhiyan’ of the Government of India?
+(1) It is a nation-wide campaign focussing on saving and conserving rainwater.
+(2) This year it is from 4 March to 30 November 2023.
+(3) It would be focussing on ensuring source sustainability in 200 water stressed districts of India.
+(4) It will cover both rural and urban areas of the country.
+= 3
+~ Jal Shakti Abhiyan: Catch the Rain 2023 was launched by the President on 4 March 2023 and ran till 30 November 2023 in all districts, covering both rural and urban areas, with the theme 'Source Sustainability for Drinking Water'. Its special focus was on 150 water-stressed districts, not 200, so statement 3 is NOT correct.
+
+Q 37 | cur | Sports & Awards
+A ________, spearheaded by Nikhat Zareen and Lovlina Borgohain, will represent India at the Asian Games 2023, which will be held in Hangzhou, China, from 23 September to 8 October this year.
+(1) 13-member boxing team
+(2) 11-member wrestling team
+(3) 12-member judo team
+(4) 11-member archery team
+= 1
+~ The Boxing Federation of India named a 13-member squad, led by world champions Nikhat Zareen and Lovlina Borgohain, for the Hangzhou Asian Games (23 September–8 October 2023). At the Games, Lovlina won silver in the women's 75 kg category and Nikhat won bronze in the 50 kg category.
+
+Q 38 | cur | Sports & Awards
+Karthik Reddy Arabandi from Tirupati won gold in the 14-15-year age group category at the X Commonwealth ________ Championships held at the University of Birmingham in the United Kingdom (UK) in September 2022.
+(1) Karate
+(2) Judo
+(3) Wrestling
+(4) Chess
+= 1
+~ Karthik Reddy Arabandi, a young karateka from Tirupati, won gold in the 14–15 years category at the 10th (X) Commonwealth Karate Championships held at the University of Birmingham in September 2022. Earlier that year he had also won gold at the US Open karate championship.
+
+Q 39 | cur | Sports & Awards
+Pullela Gopichand won his National Badminton Championship _____ times in a row.
+(1) three
+(2) four
+(3) five
+(4) six
+= 3
+~ Pullela Gopichand won the National Badminton Championship five times in a row, from 1996 to 2000. He went on to win the All England Open in 2001 and later, as India's chief national coach, trained Olympic medallists Saina Nehwal and P.V. Sindhu.
+
+Q 40 | cur | AP Affairs
+When will the Dr YSR Memorial International Run 2023, a run for the cause of those who cannot be held at Vishakhapatnam?
+(1) 3 October 2023
+(2) 3 September 2023
+(3) 3 August 2023
+(4) 3 November 2023
+= 2
+~ As per APPSC's key, the Dr YSR Memorial International Run 2023 in Visakhapatnam was held on 3 September 2023, a Sunday. The run is named after former Chief Minister Dr Y.S. Rajasekhara Reddy, who died in a helicopter crash on 2 September 2009, so the keyed date falls the day after his death anniversary.
+
+Q 41 | cur | Sports & Awards
+Who was the first Indian woman to have won an Olympic medal in badminton?
+(1) PV Sindhu
+(2) Saina Nehwal
+(3) Jwala Gutta
+(4) Ashwini Ponnappa
+= 2
+~ Saina Nehwal won the bronze medal in women's singles at the 2012 London Olympics, the first Olympic medal in badminton for any Indian. P.V. Sindhu later won silver at Rio 2016 and bronze at Tokyo 2020, while Jwala Gutta and Ashwini Ponnappa, a doubles pair, did not win an Olympic medal.
+
+Q 42 | cur | AP Affairs
+Which of the following statements is/are correct with reference to Sports Authority of Andhra Pradesh?
+I. SAAP decided to request the government to effect registration, recognition and regulation of sports associations as per the Sports Act 2022.
+II. SAAP approved the new sports policy 2022-32 in 2022.
+(1) Only statement I is correct
+(2) Only statement II is correct
+(3) Both statements I and II are correct
+(4) Both statements I and II are not correct
+= 1
+~ At its board meeting in March 2022, SAAP decided to request the government to take up registration, recognition and regulation of sports associations under the Sports Act 2022, so statement I is correct. The new sports policy it approved at that meeting was for 2022–27, not 2022–32, so statement II is wrong.
+
+Q 43 | cur | Sports & Awards
+When will the Hyderabad Juniorthon 2023 be held?
+(1) 13 July 2023
+(2) 13 August 2023
+(3) 13 September 2023
+(4) 13 October 2023
+= 2
+~ APPSC's key gives 13 August 2023 for the Hyderabad Juniorthon 2023, a running event for children aged 4 to 16. However, the event listing on CityWoofer (organisers Global Events with Decathlon Secunderabad, venue Gymkhana Athletics Ground, Secunderabad) gives 17 September 2023, a date that is not among the options. (Official key; some sources differ.)
+
+Q 44 | cur | Sports & Awards
+Jyothi Yarraji of Andhra Pradesh won _____ at the National Games 2022 in Gujarat.
+(1) a Bronze medal
+(2) a Silver medal
+(3) a Gold medal
+(4) no medal
+= 3
+~ At the 36th National Games in Gujarat (2022), Jyothi Yarraji of Andhra Pradesh won gold in the women's 100 m in 11.51 seconds. She took a second gold in the 100 m hurdles, her specialist event, in 12.79 seconds, a time not ratified as a record because the following wind was above the legal limit. So she won a gold medal.
+
+Q 45 | cur | AP Affairs
+The Andhra Pradesh Government created an exclusive Climate Change Cell (CCC) in _______.
+(1) August 2022
+(2) September 2022
+(3) October 2022
+(4) November 2022
+= 4
+~ In November 2022 the Andhra Pradesh Government set up an exclusive Climate Change Cell to strengthen climate change governance in the State (PTI report of 23 November 2022). The cell is to prepare and carry out the State's climate change action plan using an ecosystem-based approach.
+
+Q 46 | cur | AP Affairs
+What is the full form of FFFAP, working for creating climate change awareness in Andhra Pradesh?
+(1) Fridays For Future Andhra Pradesh
+(2) Full days For Future Andhra Pradesh
+(3) Fine days For Future Andhra Pradesh
+(4) Fast days For Future Andhra Pradesh
+= 1
+~ FFFAP stands for Fridays For Future Andhra Pradesh, the State chapter of 'Fridays for Future', the global youth climate movement that began in 2018 with Greta Thunberg's Friday school strikes. It runs climate change awareness campaigns in Andhra Pradesh; the other expansions are made up.
+
+Q 47 | cur | AP Affairs
+Which of the following statements is/are correct with reference to Andhra Pradesh Pollution Control Board (APPCB)?
+I. APPCB has its Head Office at Vijayawada, and 3 Zonal and 13 Regional Offices covering the entire state.
+II. The Board was constituted as State Board for Prevention and Control of Water Pollution, in 1976 but was later rechristened as AP Pollution Control Board.
+(1) Only statement I is correct
+(2) Only statement II is correct
+(3) Both statements I and II are correct
+(4) Both statements I and II are not correct
+= 3
+~ APPCB has its head office at Vijayawada and 13 regional offices; in 2023 it had three zonal offices (Visakhapatnam, Vijayawada and Kurnool), as a fourth zonal office at Tirupati was still only proposed in August 2023, so statement I is correct. The Board was constituted on 24 January 1976 under the Water (Prevention and Control of Pollution) Act, 1974 as the State Board for Prevention and Control of Water Pollution and was renamed APPCB after the Air Act, 1981. So both statements are correct.
+
+Q 48 | cur | AP Affairs
+Which of the following machines does the Andhra Pradesh Pollution Control Board NOT have its scientific division as reported on its website?
+(1) UV – Visible Spectrometer
+(2) Specific Ion Analyser
+(3) Atomic Absorption Spectrophotometer
+(4) Davis Instruments Airlinks
+= 4
+~ As per APPSC's key, 'Davis Instruments Airlinks' is the item missing from the scientific division's equipment list on APPCB's website. The other three, the UV-Visible spectrophotometer, specific ion analyser and atomic absorption spectrophotometer, are standard laboratory instruments for analysing water and air samples. AirLink, by contrast, is a small laser-based air-quality sensor for particulate matter (PM1, PM2.5, PM10) sold by Davis Instruments.
+
+Q 49 | eco | AP Economy
+Andhra Pradesh has adopted all ____ Sustainable Development Goals and ________ indicators have been identified to monitor the progress towards achieving the targets by 2030.
+(1) 17, 212
+(2) 18, 700
+(3) 19, 654
+(4) 20, 459
+= 1
+~ Andhra Pradesh has adopted all 17 Sustainable Development Goals of the UN 2030 Agenda adopted in 2015. As per APPSC's key, the State's SDG monitoring framework identified 212 indicators to track progress up to 2030. Since there are only 17 SDGs, the options with 18, 19 or 20 goals are wrong.
+
+Q 50 | eco | AP Economy
+Andhra Pradesh has secured Rank No. ____ in SDG-7 that pertains to affordable and clean energy, and a composite score of 72 in 2020-21.
+(1) IV
+(2) III
+(3) II
+(4) I
+= 4
+~ In NITI Aayog's SDG India Index 2020-21 (released in June 2021), Andhra Pradesh scored 72 on a 0–100 scale, sharing third place with Goa, Karnataka and Uttarakhand. On SDG-7 (affordable and clean energy) the State was the top performer, so its rank is I.
+
+Q 51 | geo | AP Geography
+Andhra Pradesh has __________ as its eastern boundary.
+(1) Telangana
+(2) Chhattisgarh
+(3) Odisha
+(4) Bay of Bengal
+= 4
+~ The whole eastern side of Andhra Pradesh is the Bay of Bengal coast, which gives the state one of the longest coastlines in India. Its land neighbours are Odisha (north-east), Chhattisgarh (north), Telangana (north-west), Karnataka (west) and Tamil Nadu (south), so none of the other options forms the eastern boundary.
+
+Q 52 | cur | AP Affairs
+Mining Revenue has increased in Andhra Pradesh to __________ in 2022-23 as stated by the Director of Mines and Geology, VG Venkata Reddy.
+(1) ₹4,656 crore
+(2) ₹4,756 crore
+(3) ₹4,856 crore
+(4) ₹4,956 crore
+= 2
+~ As reported in April 2023, Andhra Pradesh's Director of Mines and Geology, VG Venkata Reddy, said that the state's revenue from mines and minerals rose to ₹4,756 crore in 2022-23, higher than in earlier years. The other options are distractors placed close to the reported figure.
+
+Q 53 | sci | Science & Technology
+Which of the following is NOT a positive impact of technology on daily life?
+(1) Improved communication
+(2) Decreased privacy
+(3) Flexible working
+(4) Smarter health tracking
+= 2
+~ Decreased privacy is a negative effect of technology: smartphones, social media, cloud services and surveillance tools collect personal data and expose users to tracking and data breaches. Improved communication, flexible (remote) working and smarter health tracking through wearables are positive impacts of technology on daily life.
+
+Q 54 | sci | Science & Technology
+Which of the following is NOT correct about green technology?
+(1) Green technology is less polluting.
+(2) Green technology uses resources in a sustainable manner.
+(3) Green technology is not expensive for the developing countries.
+(4) Green technology recycles more of its wastes and products.
+= 3
+~ Statement 3 is not correct. Green technologies such as solar panels, electric vehicles and clean industrial processes usually need high initial investment, advanced know-how and imported equipment, so they are often expensive for developing countries; this is why climate agreements stress technology transfer and finance. The other statements (less polluting, sustainable use of resources, recycling of wastes) describe green technology correctly.
+
+Q 55 | sci | Science & Technology
+Which of the following functions CANNOT be done through the Global Forest Watch (GFW), an online forest monitoring and alert system developed by World Research Institute (WRI)?
+(1) Create custom maps
+(2) Analyse forest trends
+(3) Subscribe to alerts
+(4) Organise forest walks
+= 4
+~ Global Forest Watch, launched in 2014 by the World Resources Institute (printed in the question as 'World Research Institute') and partners, is an online platform built on satellite data. Users can create custom maps, analyse forest-cover trends and subscribe to deforestation and fire alerts for an area. It is a data and monitoring tool, so it does not organise forest walks.
+
+Q 56 | sci | Science & Technology
+Which of the following statements is correct with reference to public health care function through Geospatial Technology?
+I. Performing contact tracing is possible through Geospatial Technology to identify individuals who may have been exposed to the potentially deadly disease.
+II. It is possible to administer medicines and perform surgeries through Geospatial Technology.
+(1) Only statement I is correct
+(2) Only statement II is correct
+(3) Both statements I and II are correct
+(4) Both statements I and II are not correct
+= 1
+~ Geospatial technology (GIS, GPS, remote sensing) maps where cases and contacts are, so it supports contact tracing, hotspot mapping and planning of health services, as was done during COVID-19. It cannot by itself administer medicines or perform surgeries, which are done by clinicians, so statement II is wrong and only statement I is correct.
+
+Q 57 | sci | Science & Technology
+Which of the following statements is NOT correct with respect to telehealth?
+(1) Cell phones, mobile devices and PCs are helping connect patients with their practitioners.
+(2) Doctor on Demand and NowClinic are mobile apps for telehealth.
+(3) Health insurance industry’s major players offer some form of telehealth in their health coverage options.
+(4) Telehealth option is available only in the developed countries.
+= 4
+~ Telehealth is used worldwide, including in developing countries; India's eSanjeevani national telemedicine service alone has handled crores of consultations. So statement 4 is not correct. Mobile phones and PCs do connect patients with practitioners, Doctor on Demand and NowClinic are telehealth apps, and major health insurers include telehealth in their coverage.
+
+Q 58 | sci | Science & Technology
+Technologies such as Artificial Intelligence (AI), machine learning, blockchain, IoT, geo-spatial mapping are powering the ______.
+(1) third industrial revolution
+(2) fourth industrial revolution
+(3) fifth industrial revolution
+(4) sixth industrial revolution
+= 2
+~ AI, machine learning, IoT, blockchain, robotics and geospatial technologies drive the Fourth Industrial Revolution (Industry 4.0), a term popularised by Klaus Schwab of the World Economic Forum in 2016. The first revolution was based on steam power and mechanisation, the second on electricity and mass production, and the third on electronics, IT and automation.
+
+Q 59 | sci | Science & Technology
+Modern environmental technology has enabled us to capture this naturally occurring energy and convert it into electricity or useful heat.
+Which of the following is NOT a source of renewable energy?
+(1) Sunlight
+(2) Tides
+(3) Geothermal heat
+(4) Natural gas
+= 4
+~ Natural gas is a fossil fuel formed from organic matter buried for millions of years; its reserves are finite and burning it releases CO2, so it is a non-renewable source. Sunlight (solar energy), tides (tidal energy) and geothermal heat from the Earth's interior are naturally replenished and are renewable sources of energy.
+
+Q 60 | sci | Biology & Health
+Which of the following is a correct match of organisms and patterns of organisation of cells in it?
+Organism | Pattern of organisation of cells
+I. Sponges | a. Tissue level of organisation
+II. Coelenterates | b. Cellular level of organisation
+III. Platyhelminthes | c. Organ level of organisation
+(1) I. a II. b III. c
+(2) I. b II. c III. a
+(3) I. c II. a III. b
+(4) I. b II. a III. c
+= 4
+~ Sponges (Porifera) show the cellular level of organisation: cells are loose aggregates and do not form true tissues (I-b). Coelenterates (Cnidaria) show the tissue level, where cells doing the same function form tissues (II-a). Platyhelminthes (flatworms) show the organ level, with tissues grouped into organs (III-c), as given in NCERT Class 11 'Animal Kingdom'.
+
+Q 61 | sci | Biology & Health
+Which of the following statements is/are NOT correct with respect to definition of anatomy and physiology?
+I. Physiology focuses on the physical arrangement of parts in the body,
+II. Anatomy studies the inner functioning of cells, tissues, and organs.
+(1) Only statement I is not correct
+(2) Only statement II is not correct
+(3) Both statements I and II are not correct
+(4) Both statements I and II are correct
+= 3
+~ Both statements are wrong because the two definitions are interchanged. Anatomy studies the structure of the body and the physical arrangement of its parts, while physiology studies how cells, tissues and organs function. Statement I wrongly describes physiology and statement II wrongly describes anatomy.
+
+Q 62 | sci | Chemistry
+Which of the following is a correct match of chemical compounds and their uses?
+Chemical Compound | Use
+I. Analgesics | a. To treat infections
+II. Antibiotics | b. To prevent the growth of microorganisms
+III. Antiseptics | c. To reduce or abolish pain
+(1) I.a II.b III.c
+(2) I.b II.c III.a
+(3) I.c II.b III.a
+(4) I.c II.a III.b
+= 4
+~ Analgesics (aspirin, paracetamol, morphine) reduce or abolish pain (I-c). Antibiotics such as penicillin are used to treat infections caused by microorganisms (II-a). Antiseptics such as Dettol and tincture of iodine are applied to living tissues to kill or prevent the growth of microorganisms (III-b), as in NCERT 'Chemistry in Everyday Life'.
+
+Q 63 | sci | Biology & Health
+When do eating disorders such as bulimia and anorexia start?
+(1) Childhood
+(2) Adolescence
+(3) Youth
+(4) Old age
+= 2
+~ Eating disorders such as anorexia nervosa (self-starvation from fear of gaining weight) and bulimia nervosa (binge eating followed by purging) usually begin in adolescence, roughly between 12 and 20 years, linked with body-image concerns, peer pressure and hormonal changes. They can occur at other ages, but onset in childhood or old age is uncommon.
+
+Q 64 | geo | Environment & Ecology
+Which of the following statements is/are correct with reference to habitat and species in ecology?
+I. The functional characteristics of a species in its habitat is referred to as ‘niche’ in that common habitat.
+II. A niche is unique for a species while many species share the habitat.
+(1) Only statement I is correct
+(2) Only statement II is correct
+(3) Both statements I and II are correct
+(4) Both statements I and II are not correct
+= 3
+~ A habitat is the place where an organism lives, while its niche is its functional role there: what it eats, when it is active and how it interacts with other species and the environment. Many species can share one habitat, but each has its own distinct niche (Gause's competitive exclusion principle), so both statements are correct.
+
+Q 65 | sci | Chemistry
+Which of the following matches of the sweetener and its explanation is correct?
+Sweetener | Explanation
+I. Ortho-sulphobenzimide (Saccharin) | a. 100 times as sweet as cane sugar
+II. Aspartame | b. High potency sweetener
+III. Alitame | c. The first popular artificial sweetening agent
+(1) I.c II.a III.b
+(2) I.a II.b III.c
+(3) I.b II.c III.a
+(4) I.c II.b III.a
+= 1
+~ Saccharin (ortho-sulphobenzimide) was the first popular artificial sweetening agent, about 550 times sweeter than cane sugar (I-c). Aspartame is about 100 times as sweet as cane sugar (II-a). Alitame is a high-potency sweetener, about 2000 times sweeter than sucrose (III-b), as given in NCERT Class 12 'Chemistry in Everyday Life'.
+
+Q 66 | sci | Biology & Health
+Which of the following statements is/are correct?
+I. Coelenterates, ctenophores and echinoderms have radical symmetry kind of body plan.
+II. Sponges are mostly asymmetrical.
+(1) Both I and II are correct
+(2) Both I and II are not correct
+(3) Only I is correct
+(4) Only II is correct
+= 1
+~ 'Radical' in the question means radial. Coelenterates, ctenophores and echinoderms show radial symmetry, where any plane through the central axis divides the body into identical halves (adult echinoderms are radial, their larvae bilateral). Most sponges are asymmetrical, with no plane dividing them into equal halves. Both statements follow NCERT Class 11 'Animal Kingdom', so both are correct.
+
+Q 67 | sci | Biology & Health
+Which of the following does NOT belong to the plant kingdom?
+(1) Annelids
+(2) Algae
+(3) Pteridophytes
+(4) Angiosperms
+= 1
+~ Annelids (earthworm, leech, Nereis) are segmented worms of the phylum Annelida in the animal kingdom. Algae, pteridophytes (ferns, horsetails) and angiosperms (flowering plants) are all groups of the plant kingdom in the NCERT classification, so annelids are the odd one out.
+
+Q 68 | geo | Disaster Management
+Andhra Pradesh State Disaster Management Authority is the apex body in the state for Disaster Management which was constituted in the year __________.
+(1) 2005
+(2) 2006
+(3) 2007
+(4) 2008
+= 3
+~ The Andhra Pradesh State Disaster Management Authority (APSDMA) was constituted in 2007 under Section 14 of the Disaster Management Act, 2005, with the Chief Minister as its ex-officio chairperson. It is the apex body for disaster management in the state, laying down policies and plans and coordinating response and mitigation.
+
+Q 69 | geo | Disaster Management
+Based on the following assertion and reason statements, which of the options is correct?
+Assertion: The impact of a tsunami is less over the ocean and more near the coast.
+Reason: The speed of waves in the ocean depends upon the depth of water. It is more in shallow water than in the ocean depth.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true, but R is not the correct explanation of A
+(3) A is true, but R is false
+(4) Both A and R are false
+= 1
+~ The key follows NCERT Class 11 (India: Physical Environment, 'Natural Hazards and Disasters'), which says wave speed depends on depth and is more in shallow water, so a tsunami's impact is less over the ocean and more near the coast. Physically, tsunami speed (√(g × depth)) is greatest in the deep ocean, about 700–800 km/h; near the coast the waves slow down and grow much taller, which causes the damage. (Official key; some sources differ.)
+
+Q 70 | geo | Disaster Management
+Which of the following is NOT a manmade disaster?
+(1) War
+(2) Tsunami
+(3) Hazardous materials exposure
+(4) Transportation accidents
+= 2
+~ A tsunami is a natural disaster: a series of huge sea waves usually triggered by undersea earthquakes, volcanic eruptions or submarine landslides. War, exposure to hazardous materials (for example the Bhopal gas leak of 1984) and transportation accidents are man-made (human-induced) disasters.
+
+Q 71 | geo | Disaster Management
+Which of the following is NOT a strategy of disaster preparedness and mitigation for earthquake?
+(1) Establishing earthquake monitoring centres (seismological centres).
+(2) Use of Geographical Positioning System (GPS).
+(3) Modifying the house types and building designs in the vulnerable areas.
+(4) Using heavy materials in major construction activities in the vulnerable areas so that earthquakes cannot break or displace buildings.
+= 4
+~ Heavy materials make buildings more dangerous in an earthquake: seismic forces increase with a structure's mass, and heavy roofs and walls collapse on occupants. Earthquake-resistant design prefers light materials and well-tied, flexible structures. Seismological monitoring centres, GPS to track tectonic plate movement and modifying house types and building designs in vulnerable areas are the mitigation measures listed by NCERT.
+
+Q 72 | geo | Disaster Management
+Which of the following disasters is caused by indirect human action?
+(1) Wars
+(2) Increase of greenhouse gases
+(3) Floods
+(4) Environment pollution
+= 3
+~ Floods are natural events, but indirect human actions such as deforestation, encroachment on flood-plains, blocking of natural drainage and unscientific land use increase their frequency and severity. Wars, rising greenhouse-gas emissions and environmental pollution are direct results of human activities, so floods are the disaster caused by indirect human action.
+
+Q 73 | geo | Disaster Management
+Which of the following statements is/are correct with reference to Yokohama Strategy and International Decade for Natural Disaster Reduction (IDNDR)?
+I. All the member states of the United Nations and other states met at the World Conference on Natural Disaster Reduction in the city of Yokohama from 23 to 27 May 1994.
+II. At this conference, the decade 1994-2004 was declared as the International Decade for Natural Disaster Reduction (IDNDR).
+(1) Only statement I is correct
+(2) Only statement II is correct
+(3) Both statements I and II are correct
+(4) Both statements I and II are not correct
+= 1
+~ Statement I is correct: the World Conference on Natural Disaster Reduction met at Yokohama, Japan, from 23 to 27 May 1994 and adopted the Yokohama Strategy and Plan of Action for a Safer World. Statement II is wrong: the UN General Assembly (resolution 44/236, December 1989) had declared 1990–1999 as the International Decade for Natural Disaster Reduction, and Yokohama was its mid-term review.
+
+Q 74 | geo | Disaster Management
+Which of the following matches regarding type of droughts and their local Indian names is correct?
+Type of Drought | Local Indian name
+I. Crop failure leading to scarcity of food grains | a. Trinkal
+II. Crop failure leading to scarcity of fodder | b. Akal
+III. Inadequate rainfall resulting in shortage of water | c. Trikal
+IV. Shortage in all the three given above | d. Jalkal
+(1) I. b II. a III. d IV. c
+(2) I. a II. b III. c IV. d
+(3) I. b II. c III. d IV. a
+(4) I. c II. d III. a IV. b
+= 1
+~ These local terms come from western India (Rajasthan). Akal is drought causing scarcity of food grains (I-b), Trinkal is scarcity of fodder (II-a), Jalkal is scarcity of water due to inadequate rainfall (III-d), and Trikal is the severest condition when food grains, fodder and water are all scarce (IV-c).
+
+Q 75 | geo | Indian Geography
+Majuli (Assam), the largest riverine island in the world is the best example of good ______ crops after the annual floods in Brahmaputra.
+(1) wheat
+(2) paddy
+(3) cotton
+(4) corn
+= 2
+~ Majuli, on the Brahmaputra in Assam, is cited as the largest riverine island in the world. NCERT ('Natural Hazards and Disasters') gives it as the best example of good paddy crops after the annual floods, because the flood waters deposit fertile silt. Rice, in many local varieties, is the main crop of the island.
+
+Q 76 | geo | Disaster Management
+Which of the following is NOT one of the human activities that play an important role in increasing the intensity, magnitude and gravity of floods?
+(1) Reforestation
+(2) Unscientific agricultural practices
+(3) Disturbances along the natural drainage channels
+(4) Colonisation of flood-plains and river-beds
+= 1
+~ Reforestation increases vegetation cover, which slows runoff, increases infiltration and reduces soil erosion and silting of rivers, so it reduces floods rather than worsening them. NCERT lists unscientific agricultural practices, disturbances along natural drainage channels and colonisation of flood-plains and river-beds as human activities that increase the intensity, magnitude and gravity of floods.
+
+Q 77 | geo | Disaster Management
+Tropical cyclones are intense low-pressure areas confined to the area lying ________ latitudes, in the atmosphere around which high velocity winds blow.
+(1) between 20°N and 20°S
+(2) between 30°N and 30°S
+(3) between 40°N and 40°S
+(4) between 45°N and 45°S
+= 2
+~ NCERT ('Natural Hazards and Disasters') defines tropical cyclones as intense low-pressure areas confined to the area lying between 30°N and 30°S latitudes, around which high-velocity winds blow. They form over warm seas with surface temperature above about 27 °C and need the Coriolis force, so they do not form within about 5° of the equator.
+
+Q 78 | geo | Disaster Management
+Unlike other natural hazards, the mitigation of hazards created by __________ is difficult.
+(1) earthquakes
+(2) tsunamis
+(3) droughts
+(4) floods
+= 2
+~ NCERT states that, unlike other natural hazards, the mitigation of hazards created by tsunamis is difficult, mainly because the losses are on a much larger scale and are beyond the capacity of an individual state or government. Combined international efforts, such as the Indian Ocean tsunami early-warning system, are the possible ways of dealing with them.
+
+Q 79 | geo | Disaster Management
+Which Chapter of the Disaster Management Act 2005, mentions about District Disaster Management Authority?
+(1) Chapter I
+(2) Chapter II
+(3) Chapter III
+(4) Chapter IV
+= 4
+~ The Disaster Management Act, 2005 has 11 chapters. Chapter I is Preliminary, Chapter II deals with the National Disaster Management Authority, Chapter III with the State Disaster Management Authority, and Chapter IV (Sections 25–34) with the District Disaster Management Authority, chaired by the Collector or District Magistrate.
+
+Q 80 | ih | Modern India & Freedom Struggle
+In which year Shri.Pingali Venkayya attended the AICC session under leadership of Dadabhai Naoroji where is he was inspired to design national flag for India?
+(1) 1912
+(2) 1906
+(3) 1908
+(4) 1915
+= 2
+~ Pingali Venkayya, born near Machilipatnam, attended the 1906 Calcutta session of the Indian National Congress presided over by Dadabhai Naoroji, where he felt that India needed a flag of its own. He later published a booklet of flag designs (1916) and presented a design to Gandhi at the Bezawada (Vijayawada) Congress meeting of 1921, the basis of the tricolour.
+
+Q 81 | ih | Andhra History
+Who among the following served as the Chief minister of Andhra Pradesh during 1964 to 1971?
+(1) Kasu Brahmananda Reddy
+(2) Jalagam Vengala Rao
+(3) Damodaram Sanjivayya
+(4) Neelam Sanjiva Reddy
+= 1
+~ Kasu Brahmananda Reddy was Chief Minister of Andhra Pradesh from February 1964 to September 1971. Neelam Sanjiva Reddy was Chief Minister in 1956–60 and 1962–64, Damodaram Sanjivayya in 1960–62 and Jalagam Vengala Rao in 1973–78. Brahmananda Reddy was succeeded by P.V. Narasimha Rao in September 1971.
+
+Q 82 | pol | Governance & Schemes
+When was Ayushman Bharat Health Infrastructure Mission launched by PM Narendra Modi?
+(1) October 2020
+(2) July 2021
+(3) October 2021
+(4) July 2020
+= 3
+~ Prime Minister Narendra Modi launched the PM Ayushman Bharat Health Infrastructure Mission (PM-ABHIM) at Varanasi on 25 October 2021. With an outlay of about ₹64,180 crore for 2021-22 to 2025-26, it strengthens critical-care, diagnostic and disease-surveillance infrastructure from the primary to the tertiary level.
+
+Q 83 | pol | Governance & Schemes
+The Mission Indra Dhanush launched by the Government of India aims to achieve ________ of at least 90% children by 2020 (later preponed to 2018).
+(1) full immunization
+(2) literacy
+(3) Aadhar enrolment
+(4) child labour release
+= 1
+~ Mission Indradhanush was launched by the Ministry of Health and Family Welfare in December 2014 to achieve full immunization of at least 90% of children against vaccine-preventable diseases. The 2020 target was advanced to December 2018 through Intensified Mission Indradhanush, launched in October 2017.
+
+Q 84 | pol | Governance & Schemes
+In which year was the Pradhan Mantri Surakshit Matritva Abhiyan (PMSMA) launched by the Government of India to provide assured, comprehensive and quality antenatal care, free of cost, universally to all pregnant women on the 9th of every month?
+(1) 2010
+(2) 2012
+(3) 2014
+(4) 2016
+= 4
+~ Pradhan Mantri Surakshit Matritva Abhiyan was launched by the Ministry of Health and Family Welfare in 2016. On the 9th of every month, pregnant women in their second and third trimesters get a free, assured minimum package of antenatal check-ups at government health facilities, with private doctors volunteering, so that high-risk pregnancies are detected and managed.
+
+Q 85 | cur | International
+How many goals were adopted by all UN Member States in 2015, as part of the 2030 Agenda for Sustainable Development which set out a 15-year plan to achieve the goals?
+(1) 13
+(2) 15
+(3) 17
+(4) 11
+= 3
+~ The 2030 Agenda for Sustainable Development, adopted by all UN member states at the UN Sustainable Development Summit in September 2015, set 17 Sustainable Development Goals with 169 targets to be achieved over 15 years (2016–2030). They replaced the 8 Millennium Development Goals of 2000–2015.
+
+Q 86 | cur | International
+What is the goal number 8 adopted by all UN Member States in 2015, as part of the 2030 Agenda for Sustainable Development?
+(1) Decent work and economic growth
+(2) Zero Hunger
+(3) Reduced inequalities
+(4) Clean water and sanitisation
+= 1
+~ SDG 8 is 'Decent work and economic growth': promoting sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all. Zero Hunger is SDG 2, Clean water and sanitation is SDG 6 and Reduced inequalities is SDG 10.
+
+Q 87 | geo | Environment & Ecology
+The Intergovernmental Panel on Climate Change (IPCC) estimates that global warming is likely to reach _______ between 2030 and 2052.
+(1) 0.5 °C
+(2) 1.5 °C
+(3) 2.5 °C
+(4) 3.5 °C
+= 2
+~ The IPCC Special Report on Global Warming of 1.5 °C (October 2018) estimated that human activities have already caused about 1.0 °C of warming above pre-industrial levels. It added that global warming is likely to reach 1.5 °C between 2030 and 2052 if it continues to increase at the current rate.
+
+Q 88 | pol | Governance & Schemes
+The Namami Gange Mission - a key policy priority towards achieving the _______ was launched as a priority programme with a budget outlay of ₹20,000 crores for the period 2015-2020.
+(1) SDG 12
+(2) SDG 10
+(3) SDG 8
+(4) SDG 6
+= 4
+~ Namami Gange was approved in 2015 as a flagship programme with a budget outlay of ₹20,000 crore for 2015–2020 to abate pollution and to conserve and rejuvenate the Ganga. Because it deals with sewage treatment, river cleaning and water quality, it directly supports SDG 6, clean water and sanitation.
+
+Q 89 | geo | Environment & Ecology
+In which year has India launched a National Clean Air Programme as a PAN India time bound national level strategy for prevention, control and abatement of air pollution besides augmenting the air quality monitoring network across the country?
+(1) 2019
+(2) 2017
+(3) 2015
+(4) 2013
+= 1
+~ The Ministry of Environment, Forest and Climate Change launched the National Clean Air Programme (NCAP) in January 2019 as a pan-India, time-bound national strategy for prevention, control and abatement of air pollution. It first targeted a 20–30% cut in PM10 and PM2.5 levels by 2024 in non-attainment cities (later revised to up to 40% by 2025-26) and expands the air-quality monitoring network.
+
+Q 90 | cur | Reports & Indices
+Which two states are the front runners with a score of 69, in the SDG Index Score as per the Economic Survey 2018-19?
+(1) Gujarat and Tamil Nadu
+(2) Kerala and Himachal Pradesh
+(3) Telangana and Rajasthan
+(4) Karnataka and Madhya Pradesh
+= 2
+~ The Economic Survey 2018-19 cited NITI Aayog's SDG India Index (Baseline Report 2018), in which Kerala and Himachal Pradesh were the front runners with a composite score of 69 each. Tamil Nadu followed with 66, while Assam, Bihar and Uttar Pradesh were at the bottom.
+
+Q 91 | cur | Reports & Indices
+As per Sustainable Development Goals report 2022, a record of _____ people had been forcibly displaced worldwide, as of May 2022.
+(1) 100 million
+(2) 150 million
+(3) 200 million
+(4) 250 million
+= 1
+~ The UN Sustainable Development Goals Report 2022 recorded that, as of May 2022, a record 100 million people had been forcibly displaced worldwide. Conflicts such as the war in Ukraine, together with violence, persecution and human-rights violations, drove the rise.
+
+Q 92 | eco | Indian Economy
+In 1950, the Planning Commission was set up with the _______ as its chairperson.
+(1) President
+(2) Prime minister
+(3) Governor
+(4) Chief Minister
+= 2
+~ The Planning Commission was set up on 15 March 1950 by a resolution of the Government of India (not by the Constitution or a law), with Prime Minister Jawaharlal Nehru as its first chairperson. The Prime Minister remained its ex-officio chairperson until NITI Aayog replaced it on 1 January 2015.
+
+Q 93 | eco | Indian Economy
+In which year did the era of five-year plans begin in India?
+(1) 1950
+(2) 1951
+(3) 1948
+(4) 1949
+= 1
+~ The official key is 1950, the year the Planning Commission was set up (15 March 1950) and from which the planning era is counted. However, the First Five-Year Plan itself ran from 1 April 1951 to 31 March 1956, so many textbooks give 1951 as the start of five-year plans. (Official key; some sources differ.)
+
+Q 94 | eco | Indian Economy
+‘Bringing Green Revolution to Eastern India (BGREI)’ is a sub scheme of Rashtriya Krishi Vikas Yojana (RKVY) being implemented since ______ by the Government of India.
+(1) 2016-17
+(2) 2014-15
+(3) 2012-13
+(4) 2010-11
+= 4
+~ Bringing Green Revolution to Eastern India (BGREI) was launched in 2010-11 as a sub-scheme of Rashtriya Krishi Vikas Yojana. It aims to raise rice and wheat productivity in Assam, Bihar, Chhattisgarh, Jharkhand, Odisha, eastern Uttar Pradesh and West Bengal through improved seeds, cropping-system technologies, water management and better farm practices.
+
+Q 95 | eco | Indian Economy
+The setting up of National Planning Committee by Indian National Congress was an effort to begin five-year plans in India. When was this planning committee set up?
+(1) 1940
+(2) 1938
+(3) 1942
+(4) 1944
+= 2
+~ The National Planning Committee was set up in 1938 by the Indian National Congress under its president Subhas Chandra Bose, with Jawaharlal Nehru as chairman. It was the first major attempt to prepare a national economic plan for India and laid groundwork for the later five-year plans.
+
+Q 96 | eco | Indian Economy
+Who introduced the economic plan called ‘Sarvodaya’ plan in 1950?
+(1) Jawaharlal Nehru
+(2) Gopala Krishna Gokhale
+(3) Jaiprakash Narayan
+(4) Sarvepalli Radhakrishnan
+= 3
+~ The Sarvodaya Plan was drafted by Jayaprakash Narayan in 1950, drawing on Gandhian ideas and Vinoba Bhave's Sarvodaya movement. It stressed agriculture, village and cottage industries, land reform and decentralised, self-reliant village development, and some of its ideas found place in the First Five-Year Plan.
+
+Q 97 | eco | Indian Economy
+When was the economic plan called ‘Peoples Plan’ by post war reconstruction committee of Indian Trade Union implemented?
+(1) 1945
+(2) 1943
+(3) 1941
+(4) 1939
+= 1
+~ The People's Plan was prepared in 1945 by M.N. Roy for the Post-War Reconstruction Committee of the Indian Federation of Labour, a trade union body. Based on Marxist socialism, it gave top priority to agriculture and to nationalisation of land and production. It came after the Bombay Plan (1944) and the Gandhian Plan (1944).
+
+Q 98 | eco | Indian Economy
+The first Five Year Plan executed by the Government of India is based on __________.
+(1) Mahalanobis Plan
+(2) Harrod-Domar Model
+(3) Sarvodaya Plan
+(4) Gandhian Plan
+= 2
+~ The First Five-Year Plan (1951–56) was based on the Harrod-Domar growth model, which links growth to the saving rate and the capital-output ratio, and it gave priority to agriculture, irrigation and power. The Mahalanobis model was the basis of the Second Plan (1956–61), which stressed heavy industries.
+
+Q 99 | eco | Indian Economy
+Which of the following Five-Year Plans was aimed ‘towards faster and more inclusive growth’?
+(1) 11th Five Year Plan
+(2) 10th Five Year Plan
+(3) 9th Five Year Plan
+(4) 8th Five Year Plan
+= 1
+~ The Eleventh Five-Year Plan (2007–2012) was titled 'Towards Faster and More Inclusive Growth' and targeted average GDP growth of about 9% a year. It was approved by the National Development Council in December 2007 and stressed poverty reduction, employment, health, education and regional balance. The Twelfth Plan (2012–17) was titled 'Faster, More Sustainable and More Inclusive Growth'.
+
+Q 100 | eco | Indian Economy
+In which year was the RBI Act, 1934 amended to provide a statutory basis for the implementation of the flexible inflation targeting framework?
+(1) 2010
+(2) 2012
+(3) 2014
+(4) 2016
+= 4
+~ The RBI Act, 1934 was amended through the Finance Act, 2016 (in force from June 2016), inserting Section 45ZA to give a statutory basis to flexible inflation targeting. The Government sets the CPI inflation target (4%, with a band of 2–6%) in consultation with RBI, and a six-member Monetary Policy Committee fixes the policy repo rate.
+
+Q 101 | eco | Indian Economy
+Garib Kalyan Rojgar Abhiyaan (GKRA) was launched by the government of India in ______ to boost employment and livelihood opportunities for returnee migrant workers.
+(1) 2020
+(2) 2018
+(3) 2016
+(4) 2012
+= 1
+~ Garib Kalyan Rojgar Abhiyaan was launched by the Prime Minister on 20 June 2020, during the COVID-19 lockdown, for migrant workers who had returned to their villages. It was a 125-day campaign in 116 districts of six states (Bihar, Uttar Pradesh, Madhya Pradesh, Rajasthan, Jharkhand and Odisha) that brought together 25 categories of public works worth about ₹50,000 crore.
+
+Q 102 | eco | Indian Economy
+As per the Periodic Labour Force Survey (PLFS), what is the unemployment rate in India for people of ages 15 years and above in 2019-20?
+(1) 7.8%
+(2) 6.8%
+(3) 4.8%
+(4) 8.8%
+= 3
+~ The annual PLFS report for July 2019–June 2020 (released by NSO, MoSPI) put the unemployment rate for persons aged 15 years and above at 4.8% on the usual status (principal + subsidiary) basis. It was 6.1% in 2017-18 and 5.8% in 2018-19, and fell further to 4.2% in 2020-21.
+
+Q 103 | eco | Indian Economy
+Under Pradhan Mantri Mudra Yojana (PMMY), collateral free loans up to ______ are given to micro/small business enterprises and to individuals to enable them to setup or expand their business activities.
+(1) ₹10 lakh
+(2) ₹5 lakh
+(3) ₹15 lakh
+(4) ₹20 lakh
+= 1
+~ PMMY, launched in April 2015, gave collateral-free loans to non-corporate, non-farm micro and small enterprises up to ₹10 lakh in three categories: Shishu (up to ₹50,000), Kishore (₹50,000–5 lakh) and Tarun (₹5–10 lakh). This was the limit when the exam was held; from October 2024 a new Tarun Plus category raised the ceiling to ₹20 lakh.
+
+Q 104 | eco | Indian Economy
+Mahatma Gandhi National Rural Employment Guarantee Act gives legal guarantee of ______ days of wage.
+(1) 200
+(2) 150
+(3) 50
+(4) 100
+= 4
+~ MGNREGA, 2005 (in force from 2 February 2006) gives a legal guarantee of at least 100 days of wage employment in a financial year to every rural household whose adult members volunteer to do unskilled manual work. If work is not given within 15 days of demand, an unemployment allowance is payable.
+
+Q 105 | cur | Reports & Indices
+What is the rank of India among 191 countries in the Human Development Index report 2022 released by United Nations Development Program (UNDP)?
+(1) 132
+(2) 122
+(3) 112
+(4) 142
+= 1
+~ UNDP's Human Development Report 2021/22, released in September 2022, ranked India 132nd among 191 countries, with an HDI value of 0.633, placing it in the "medium human development" group. India had been ranked 131st in the previous report (2020). Switzerland was first, followed by Norway and Iceland.
+
+Q 106 | pol | Governance & Schemes
+What is the overall objective of ‘Mission Antyodaya’ scheme adopted in the Union Budget 2017-18 by the Indian government?
+(1) Control of population growth
+(2) Control of pollution in cities
+(3) Rural development
+(4) Control of crime rate in big cities
+= 3
+~ Mission Antyodaya, announced in the Union Budget 2017-18 and run by the Ministry of Rural Development, is a convergence framework for rural development. It aimed to bring one crore households out of poverty and make 50,000 gram panchayats poverty-free by pooling the resources of various schemes, with gram panchayats ranked on development gaps. It is not about population, urban pollution or crime.
+
+Q 107 | pol | Governance & Schemes
+On the birth anniversary of which national leader did the Prime Minister Narendra Modi launch Saansad Adarsh Gram Yojana (SAGY) in 2014?
+(1) Lok Nayak Jai Prakash Narayan
+(2) Mahatma Gandhi
+(3) Mahadev Govind Ranade
+(4) Alluri Sitaram Raju
+= 1
+~ Saansad Adarsh Gram Yojana was launched on 11 October 2014, the birth anniversary of Lok Nayak Jayaprakash Narayan. Under it, each Member of Parliament adopts gram panchayats and develops them into model (Adarsh) villages. Gandhi's birth anniversary is 2 October, the day Swachh Bharat Mission was launched in 2014.
+
+Q 108 | pol | Governance & Schemes
+One of the objectives of the Shyama Prasad Mukherji Rurban Mission (SPMRM) is to __________.
+(1) stimulate local economic development
+(2) improve literacy rate in villages
+(3) improve sex ratio in villages
+(4) provide free electricity to villages
+= 1
+~ SPMRM was launched on 21 February 2016 at Kurubhat in Rajnandgaon district, Chhattisgarh, to develop 300 "Rurban" clusters of villages. Its stated objectives are to stimulate local economic development, enhance basic services and create well-planned Rurban clusters. Literacy, sex ratio and free electricity are not its aims.
+
+Q 109 | pol | Constitution & Rights
+Through which Constitutional Amendment Act, was the National Commission for Backward Classes (NCBC) given status of constitutional body?
+(1) 103rd Constitutional Amendment Act
+(2) 104th Constitutional Amendment Act
+(3) 109th Constitutional Amendment Act
+(4) 102nd Constitutional Amendment Act
+= 4
+~ The 102nd Constitutional Amendment Act, 2018 inserted Article 338B, making the NCBC a constitutional body, and added Article 342A on the list of socially and educationally backward classes. The 103rd Amendment (2019) gave 10% reservation to economically weaker sections, and the 104th Amendment Act, 2019 (in force from January 2020) extended SC/ST seat reservation in legislatures and ended Anglo-Indian nominations.
+
+Q 110 | pol | Union & State Government
+In which year did the election commission of India celebrate its Golden Jubilee?
+(1) 2005
+(2) 2003
+(3) 2001
+(4) 1999
+= 3
+~ The Election Commission of India was set up under Article 324 on 25 January 1950, a day before India became a republic. The Commission celebrated its Golden Jubilee (50 years) in 2001, as stated on its own website. Its Diamond Jubilee followed in 2010, and 25 January has been observed as National Voters' Day since 2011.
+
+Q 111 | pol | Union & State Government
+As of July 2023, KK Venugopal is heading which of the following constitutional bodies in India?
+(1) Attorney General of India
+(2) Election commission of India
+(3) National commission of scheduled castes
+(4) National commission of scheduled tribes
+= 1
+~ K.K. Venugopal was the 15th Attorney General of India (Article 76), the government's chief legal adviser, from July 2017. He held none of the other posts. However, his term ended on 30 September 2022, and R. Venkataramani became Attorney General on 1 October 2022, so by July 2023 Venugopal no longer held the office. (Official key; some sources differ.)
+
+Q 112 | pol | Union & State Government
+The removal of the President from office is to be done in accordance with the procedure prescribed by the _______ of the Indian Constitution.
+(1) Article 71
+(2) Article 41
+(3) Article 51
+(4) Article 61
+= 4
+~ Article 61 sets out the impeachment of the President for "violation of the Constitution". The charge needs 14 days' notice signed by at least one-fourth of the members of the House, and it must be passed by a two-thirds majority of the total membership of each House. Article 71 covers disputes over the President's election, Article 41 the right to work and Article 51 international peace.
+
+Q 113 | pol | Union & State Government
+Who among the following served as the first Chief Justice of Supreme Court of India?
+(1) Harilal Jekisundas Kania
+(2) M Patanjali Sastri
+(3) Mehr Chand Mahajan
+(4) Bijan Kumar Mukherjea
+= 1
+~ Justice Harilal Jekisundas Kania became the first Chief Justice of India on 26 January 1950 (the Supreme Court was inaugurated on 28 January 1950) and served until he died in office on 6 November 1951. M. Patanjali Sastri (second), Mehr Chand Mahajan (third) and B.K. Mukherjea (fourth) succeeded him in that order.
+
+Q 114 | pol | Union & State Government
+The Comptroller and Auditor General (CAG) of India, holds the office for a duration of six years or _____ years of age (whichever comes earlier).
+(1) 55
+(2) 65
+(3) 60
+(4) 50
+= 2
+~ The CAG is appointed by the President under Article 148. Under the CAG (Duties, Powers and Conditions of Service) Act, 1971, he holds office for six years or until the age of 65 years, whichever is earlier. He can be removed only in the same manner as a Supreme Court judge.
+
+Q 115 | pol | Union & State Government
+Who among the following serves as the constitutional head of India?
+(1) Union minster of home affairs
+(2) Chief Justice of Supreme court
+(3) Prime Minister
+(4) President
+= 4
+~ Under Article 53, the executive power of the Union is vested in the President, who is the constitutional (nominal) head of the State. Under Article 74 the President acts on the advice of the Council of Ministers headed by the Prime Minister, who is the real executive head of government. The Home Minister and the Chief Justice are not heads of the State.
+
+Q 116 | pol | Union & State Government
+Who among the following is the Deputy Chairman of Rajya Sabha as of July 2023?
+(1) K Rahman Khan
+(2) PJ Kurien
+(3) Harivansh Narayan Singh
+(4) MM Jacob
+= 3
+~ Harivansh Narayan Singh (JD(U), Bihar) was elected Deputy Chairman of the Rajya Sabha in August 2018 and re-elected in September 2020, so he held the post in July 2023. K. Rahman Khan (2004–2012), P.J. Kurien (2012–2018) and M.M. Jacob were earlier Deputy Chairmen. The Vice-President is the ex-officio Chairman.
+
+Q 117 | pol | Union & State Government
+Rajya Sabha is a permanent body and is not subject to dissolution. However, one third of the members retire every _______.
+(1) second year
+(2) third year
+(3) fourth year
+(4) fifth year
+= 1
+~ Under Article 83(1), the Rajya Sabha is not dissolved, but as nearly as possible one-third of its members retire on the expiry of every second year. Under the Representation of the People Act, 1951, each member serves a six-year term, so the House is renewed in stages while continuing as a permanent body.
+
+Q 118 | pol | Constitution & Rights
+Which Section of the Government of India Act, 1919 provided for the establishment of a Public Service Commission in India?
+(1) Section 86(C)
+(2) Section 96(C)
+(3) Section 76(C)
+(4) Section 56(C)
+= 2
+~ Section 96(C) of the Government of India Act, 1919 provided for a Public Service Commission. Following the Lee Commission's recommendation (1924), the Commission was set up on 1 October 1926 with Sir Ross Barker as its first Chairman. The Government of India Act, 1935 later renamed it the Federal Public Service Commission, and in 1950 it became the Union Public Service Commission.
+
+Q 119 | pol | Constitution & Rights
+Which Article of the Indian constitution provides for a Special Officer for linguistic minorities?
+(1) Article 350B
+(2) Article 250B
+(3) Article 450B
+(4) Article 650B
+= 1
+~ Article 350B, inserted by the Seventh Constitutional Amendment Act, 1956 on the advice of the States Reorganisation Commission, provides for a Special Officer for Linguistic Minorities. The President appoints the officer, who investigates the safeguards for linguistic minorities and reports to the President. There is no Article 250B, and Articles 450B and 650B do not exist at all.
+
+Q 120 | geo | AP Geography
+Which state in India has the second largest coastline?
+(1) Goa
+(2) Tamil Nadu
+(3) Kerala
+(4) Andhra Pradesh
+= 4
+~ The long-used official figures (India's coastline 7,516.6 km) gave Gujarat the longest coastline (about 1,215 km) and placed Andhra Pradesh second with about 974 km, ahead of Tamil Nadu (about 907 km). The key follows these figures, which were current when the exam was held. A later re-measurement by the National Hydrographic Office and Survey of India (India 11,098.81 km, adopted in 2025) gives Tamil Nadu 1,068.69 km and Andhra Pradesh 1,053.07 km, so Andhra Pradesh is now third.
+
+Q 121 | geo | Disaster Management
+In which seismic zone is the state of Andhra Pradesh placed?
+(1) Seismic Zone I
+(2) Seismic Zone II and III
+(3) Seismic Zone IV
+(4) Seismic Zone V
+= 2
+~ On the BIS seismic zoning map (IS 1893), most of Andhra Pradesh lies in Zone II (low damage risk), and the remaining parts fall in Zone III (moderate risk). Zones IV and V (high and very high risk) cover the Himalaya, the North-East, Kutch and similar regions. Zone I is no longer used on the map.
+
+Q 122 | geo | AP Geography
+The West Godavari District is carved out of part of old West Godavari District with ______ Mandals as it is the Western delta of the River Godavari.
+(1) 19
+(2) 17
+(3) 15
+(4) 13
+= 1
+~ In the reorganisation of districts on 4 April 2022, the new West Godavari district (headquarters Bhimavaram) was formed from the delta part of the old district with 19 mandals in two revenue divisions, Bhimavaram and Narsapur. Ganapavaram mandal was moved in from Eluru district on 16 February 2023, so the district now has 20 mandals (and, since May 2023, a third revenue division at Tadepalligudem).
+
+Q 123 | geo | AP Geography
+In terms of area, Andhra Pradesh is the _______ largest state in India.
+(1) 10th
+(2) 13th
+(3) 7th
+(4) 9th
+= 3
+~ After bifurcation in 2014, Andhra Pradesh has an area of about 1,62,968 square km. It is the seventh largest state, after Rajasthan, Madhya Pradesh, Maharashtra, Uttar Pradesh, Gujarat and Karnataka. Undivided Andhra Pradesh (about 2.75 lakh square km) was the fourth largest.
+
+Q 124 | geo | AP Geography
+As per India State Forest report (ISFR) 2021, what is the recorded forest area in Andhra Pradesh?
+(1) 37,258 square kilometres
+(2) 27,258 square kilometres
+(3) 47,258 square kilometres
+(4) 57,258 square kilometres
+= 1
+~ ISFR 2021 (Forest Survey of India) puts the recorded forest area of Andhra Pradesh at 37,258 square km: 31,959 square km reserved forests, 5,069 square km protected forests and 230 square km unclassed forests. This is about 22.86% of the state's geographical area. Forest cover, measured from satellite data, is a separate figure (about 29,784 square km in ISFR 2021).
+
+Q 125 | geo | AP Geography
+What is the forest type in Coringa Wildlife Sanctuary in Andhra Pradesh?
+(1) Evergreen forest
+(2) Thorn forest
+(3) Tidal Mangrove forests
+(4) Montane forest
+= 3
+~ Coringa Wildlife Sanctuary (declared in 1978) lies in the Godavari estuary near Kakinada. It protects tidal mangrove (littoral and swamp) forests of Rhizophora, Avicennia and Sonneratia, among the largest mangrove stretches on India's east coast. It is also known for the smooth-coated otter and the fishing cat. Evergreen, thorn and montane forests grow on land, not in tidal estuaries.
+
+Q 126 | geo | AP Geography
+As per India State of Forest report 2019, which district of Andhra Pradesh has the highest forest cover of 4,994.10 km²?
+(1) East Godavari
+(2) Chittoor
+(3) Kurnool
+(4) Prakasham
+= 1
+~ In ISFR 2019, which covered the then 13 districts of Andhra Pradesh, East Godavari had the largest forest cover of any district, 4,994.10 square km. Much of it lay in the Eastern Ghats agency tracts of Rampachodavaram and Maredumilli, together with the Coringa mangroves. Chittoor, Kurnool and Prakasam (Nallamala and Seshachalam forests) recorded less forest cover.
+
+Q 128 | geo | AP Geography
+As per India State Forest report (ISFR) 2021, what percentage of geographical area of Andhra Pradesh has recorded forest area?
+(1) 22.86 %
+(2) 24.86 %
+(3) 26.86 %
+(4) 28.86 %
+= 1
+~ ISFR 2021 gives Andhra Pradesh a recorded forest area of 37,258 square km out of a geographical area of 1,62,968 square km. So 37,258 ÷ 1,62,968 × 100 ≈ 22.86% of the state's area is recorded forest. Forest cover (about 18.28% in ISFR 2021) is lower, because recorded forest is a legal category, not tree cover seen from satellites.
+
+Q 129 | cur | AP Affairs
+As per the reports of National Geophysical Research Institute in 2023, which district of Andhra Pradesh has the large deposit of 15 rare earth elements?
+(1) Nellore
+(2) Anantapur
+(3) Visakhapatnam
+(4) Srikakulam
+= 2
+~ In June 2023, scientists of CSIR–National Geophysical Research Institute (NGRI), Hyderabad reported large deposits of 15 rare earth elements, such as lanthanum, cerium, neodymium and yttrium, in Anantapur district. The deposits are in syenite rocks around Reddypalle and Peddavaduguru. These elements are used in electronics, magnets, batteries and defence equipment.
+
+Q 130 | geo | AP Geography
+What is the National code of Godavari River designated as?
+(1) E
+(2) D
+(3) C
+(4) F
+= 1
+~ The Watershed Atlas of India, prepared by the All India Soil and Land Use Survey, groups the country's rivers into six numbered water resource regions and marks each basin within a region with a capital letter. APPSC's key gives 'E' as the Godavari's code; no published table confirming this letter could be found. The Godavari is India's largest peninsular river, about 1,465 km long, with a basin of about 3.13 lakh square km.
+
+Q 131 | geo | AP Geography
+How much percentage of the geographical area of India is covered by Andhra Pradesh?
+(1) 5.96%
+(2) 4.96%
+(3) 7.96%
+(4) 6.96%
+= 2
+~ Andhra Pradesh has an area of about 1,62,968 square km, and India's geographical area is 32,87,263 square km. 1,62,968 ÷ 32,87,263 × 100 ≈ 4.96%, so the state covers just under 5% of the country's area and ranks seventh among states by size.
+
+Q 132 | geo | AP Geography
+The Andhra Pradesh state lies between 12°37' N to 19°55' N latitude and 76°45' E to _____ E longitude.
+(1) 85°46'
+(2) 81°46'
+(3) 84°46'
+(4) 83°46'
+= 3
+~ State profiles give the extent of Andhra Pradesh as 12°37' N to 19°55' N latitude and 76°45' E to 84°46' E longitude. The eastern limit, 84°46' E, lies in Srikakulam district near the Odisha border, and the western limit, 76°45' E, lies along the Karnataka border. 85°46' E would fall well inside Odisha.
+
+Q 133 | geo | AP Geography
+As of 2019, Andhra Pradesh has _______ Wildlife Sanctuaries.
+(1) 13
+(2) 11
+(3) 9
+(4) 7
+= 1
+~ According to the AP Forest Department, Andhra Pradesh has 13 wildlife sanctuaries and 3 national parks (Papikonda, Sri Venkateswara and Rajiv Gandhi (Rameswaram)), covering about 4.5% of the state's area. The sanctuaries include Coringa, Krishna, Kolleru, Pulicat, Nelapattu, Rollapadu, Kambalakonda, Koundinya, Gundla Brahmeswaram and Nagarjunasagar–Srisailam.
+
+Q 134 | geo | AP Geography
+In Andhra Pradesh, during the period 1st January 2015 to 5th February 2019, a total of ______ hectares of forest land has been diverted for non-forestry purposes under the Forest Conservation Act, 1980.
+(1) 3,474.57
+(2) 3,274.57
+(3) 3,174.57
+(4) 3,374.57
+= 1
+~ ISFR 2019 gives, for each state, the forest land diverted for non-forest purposes under the Forest (Conservation) Act, 1980, using Ministry of Environment, Forest and Climate Change data. For Andhra Pradesh it records 3,474.57 hectares diverted between 1 January 2015 and 5 February 2019. Under Section 2 of the Act, such diversion needs the Central Government's prior approval.
+
+Q 135 | ih | Medieval India
+Vijayanagara Empire was destroyed in Tallikota war of ________.
+(1) 1545 AD
+(2) 1555 AD
+(3) 1565 AD
+(4) 1560 AD
+= 3
+~ In the Battle of Talikota (Rakkasa–Tangadi), fought on 23 January 1565, the combined armies of the Deccan Sultanates of Bijapur, Ahmadnagar, Golconda and Bidar defeated the Vijayanagara forces led by Aliya Rama Raya, who was killed. The capital Hampi was then sacked, ending Vijayanagara's power, although the Aravidu dynasty continued from Penukonda and Chandragiri.
+
+Q 136 | ih | Andhra History
+The present day Peddapuram in Andhra Pradesh was ruled by which of the following dynasties in the past?
+(1) Vishnukundin Dynasty
+(2) Malyala Dynasty
+(3) Vatsavayi dynasty
+(4) Rashtrakutas dynasty
+= 3
+~ Peddapuram in present Kakinada district was the seat of the Peddapuram Samsthanam (zamindari), ruled by the Vatsavayi family of Kshatriya chiefs in the late medieval and early colonial period. The Vishnukundins ruled coastal Andhra in the 5th–6th centuries. The Malyalas were Kakatiya feudatories, and the Rashtrakutas ruled from Manyakheta.
+
+Q 137 | ih | Andhra History
+Who among the following wrote the literary work ‘Bhadraparinayamu’?
+(1) Allamaraju Subrahmanyakavi
+(2) Kuchimachi Gangana
+(3) Devulapalli Bapanna
+(4) Devulapalli Subbarayasastri
+= 1
+~ Bhadraparinayamu is a Telugu literary work by Allamaraju Subrahmanyakavi (1831–1892) of Pithapuram. He was a court poet of the Madugula Samsthanam and later of the Pithapuram Samsthanam. He also wrote Chatudhara Chamatkarasaramu. The other names in the options are different Telugu poets.
+
+Q 138 | ih | Andhra History
+Damerla family of Velama tribe/caste ruled which of the following regions in Andhra Pradesh?
+(1) Lakkavaramu
+(2) Polavaramu
+(3) Amaravati
+(4) Sri Kalahasti
+= 4
+~ The Damarla (Damerla) family of the Velama community were Nayakas of Kalahasti (Sri Kalahasti) under the Aravidu rulers of Vijayanagara. Damarla Venkatadri Nayaka, with his brother Ayyappa Nayaka, granted the English East India Company (Francis Day) the site of Fort St. George at Madras in 1639. Chennai is said to be named after their father, Damarla Chennappa Nayaka.
+
+Q 139 | ih | Andhra History
+Which ancient writer of Andhra Pradesh wrote the literaty work ‘Kasiyatra Charitra’?
+(1) Peddada Nagaraja
+(2) Enugula Veerasamayya
+(3) Komarraju Venkatasivudu
+(4) Dittakavi Narayana
+= 2
+~ Kasiyatra Charitra was written by Enugula Veeraswamayya (1780–1836), a dubash and interpreter in Madras. It records his pilgrimage from Madras to Kasi (Varanasi) and back in 1830–31, describing places, people and customs. Published in 1838, it is regarded as the first travelogue in Telugu.
+
+Q 140 | ih | Andhra History
+King Gajapati Vijayarama belonged to which kingdom of Andhra Pradesh?
+(1) Vijayanagaram
+(2) Venkatagiri
+(3) Karveti
+(4) Amaravati
+= 1
+~ Vijayarama Gajapati Raju belonged to the Pusapati family that ruled Vizianagaram (Vijayanagaram). Pedda Vijayarama Raju built the Vizianagaram fort in 1713, and Vijayarama Raju II was killed fighting the East India Company at the Battle of Padmanabham in 1794. Venkatagiri was ruled by the Velugoti family, Karvetinagaram by the Karvetinagar rajas, and Amaravati by Vasireddy Venkatadri Nayudu.
+
+Q 141 | ih | Andhra History
+In which district of Andhra Pradesh was the freedom fighter Kanneganti Hanumanthu born?
+(1) Guntur
+(2) Krishna
+(3) East Godavari
+(4) Kurnool
+= 1
+~ Kanneganti Hanumanthu was born in Kolagatla village of Durgi mandal in Palnadu, then Guntur district (now Palnadu district). During the Non-Cooperation Movement he led the Palnadu forest satyagraha, refusing grazing tax (pullari) on forest land. He was shot dead by British police at Minchalapadu on 22 February 1922.
+
+Q 142 | ih | Andhra History
+In which year did Tanguturi Prakasham lead a procession against Simon Commission’s visit to Madras?
+(1) 1925
+(2) 1926
+(3) 1928
+(4) 1927
+= 3
+~ The all-white Simon Commission (appointed in November 1927) reached India in February 1928 and was met with hartals and "Simon Go Back" protests. In Madras, when the police fired on protesters near the High Court, Tanguturi Prakasam bared his chest and dared them to shoot, an act for which admirers hailed him as "Andhra Kesari". Since the Commission arrived only in 1928, the years 1925–1927 do not fit.
+
+Q 143 | ih | Andhra History
+For how many days did Nadendla Bhaskara Rao serve as the Chief Minister of Andhra Pradesh in 1984?
+(1) 31
+(2) 25
+(3) 15
+(4) 18
+= 1
+~ Nadendla Bhaskara Rao became Chief Minister on 16 August 1984, after Governor Ram Lal dismissed N.T. Rama Rao's government. He failed to prove his majority and resigned, and NTR was restored on 16 September 1984, giving Bhaskara Rao 31 days in office.
+
+Q 144 | ih | Andhra History
+Between which period did Damodaram Sanjivayya serve as the chief minister of Andhra Pradesh?
+(1) 1960 to 1962
+(2) 1964 to 1966
+(3) 1957 to 1959
+(4) 1968 to 1970
+= 1
+~ Damodaram Sanjivayya was Chief Minister of Andhra Pradesh from 11 January 1960 to 12 March 1962, the first Dalit Chief Minister of any Indian state. He later became the first Dalit President of the Indian National Congress (1962–64). N. Sanjiva Reddy was Chief Minister before and after him, and K. Brahmananda Reddy held office from 1964 to 1971.
+
+Q 145 | ih | Andhra History
+Which famous Telugu novel was translated to Hindi with the title ‘Sahasra Phan’ by former Prime Minister PV Narasimha Rao?
+(1) Tulasi Dalam
+(2) Veyi Padagalu
+(3) Mahaprasthanam
+(4) Vennello Aadapilla
+= 2
+~ Veyi Padagalu ("A Thousand Hoods") is a novel by Viswanatha Satyanarayana, who later won the first Jnanpith Award for Telugu (1970) for Ramayana Kalpavrukshamu. P.V. Narasimha Rao translated Veyi Padagalu into Hindi as "Sahasraphan". Tulasi Dalam and Vennello Aadapilla are novels by Yandamuri Veerendranath, and Mahaprasthanam is a poetry collection by Sri Sri.
+
+Q 146 | ih | Andhra History
+Who wrote the revolutionary play ‘Kanyasulkam’ in the 19th century?
+(1) Potti Sriramulu
+(2) Kandukuri Veereshalingam
+(3) Srirangam Srinivasa Rao
+(4) Gurajada Appa Rao
+= 4
+~ Kanyasulkam, written by Gurajada Apparao and first staged in 1892 at Vizianagaram (revised 1909), attacked bride-price, child marriage and the hypocrisy of the time in spoken (vyavaharika) Telugu. Kandukuri Veeresalingam was a social reformer and the author of Rajasekhara Charitramu, Sri Sri wrote Mahaprasthanam, and Potti Sriramulu was the freedom fighter who fasted for Andhra State.
+
+Q 147 | ih | Andhra History
+The inscriptions on the walls of Gooty fort in Andhra Pradesh date back to the _____ century.
+(1) 7th
+(2) 6th
+(3) 4th
+(4) 3rd
+= 1
+~ Gooty fort, a hill fort in Anantapur district, is among the oldest forts in Andhra Pradesh. Inscriptions on its walls date back to the 7th century CE, showing that the site was used long before the Vijayanagara rulers and later the Maratha chief Murari Rao Ghorpade, who held it until Hyder Ali took it in 1775.
+
+Q 148 | ih | Andhra History
+In which of the following present-day places in Andhra Pradesh did Satavahana empire exist in ancient times?
+(1) Amaravati
+(2) Kadapa
+(3) Palakollu
+(4) Anantapuram
+= 1
+~ Dhanyakataka (Dharanikota), next to present-day Amaravati in Palnadu district on the Krishna, was an important capital of the later Satavahanas, along with Pratishthana (Paithan). The Amaravati stupa flourished under their rule. Kadapa, Palakollu and Anantapuram are not known as Satavahana centres.
+
+Q 149 | ih | Andhra History
+Which freedom fighter from Andhra Pradesh served as a soldier in the British Army in South Africa during the Anglo Boer war in Africa?
+(1) Potti Sreeramulu
+(2) Tanguturi Prakasam
+(3) Uyyalawada Narsimha Reddy
+(4) Pingali Venkayya
+= 4
+~ Pingali Venkayya (1876–1963) of Bhatlapenumarru, Krishna district, served as a soldier in the British Army in South Africa during the Anglo-Boer War (1899–1902), where he met Mahatma Gandhi. He later designed the flag that became the basis of India's national flag. Uyyalawada Narasimha Reddy died in 1847, decades before the war.
+
+Q 150 | ih | Andhra History
+Who among the following drafted the Madras Public Libraries Bill and submitted it to the Madras Assembly in 1938?
+(1) Vavilala Gopalakrishnayya
+(2) Puchalapalli Sundaraiah
+(3) Kaneganti Hanumanthu
+(4) Makineni Basavapunnaiah
+= 1
+~ Vavilala Gopalakrishnayya (1906–2003) of Sattenapalli, Guntur district, a Gandhian and a leader of the Andhra library movement, prepared a model public libraries bill in 1938 and submitted it to the Madras government. The Madras Public Libraries Act was finally passed in 1948. Puchalapalli Sundaraiah and Makineni Basavapunnaiah were communist leaders, and Kanneganti Hanumanthu died in 1922.
