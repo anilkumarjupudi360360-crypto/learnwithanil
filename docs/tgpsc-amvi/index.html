@@ -491,6 +491,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 /* Study material (Crisp Notes) */
 .nav a.nav-fund{color:#9A3412;background:#FFF1E6;margin-left:4px}.nav a.nav-fund:hover{background:#FFE2CC;color:#7C2D12}.nav a.nav-fund svg{flex:none}@media (min-width:1361px){.nav a.nav-fund .nf-x{display:none}.topbar .nav a{padding:8px 7.5px}}   /* one-row top bar: "Fund" fits, the long label does not */
 @media (prefers-color-scheme:dark){.nav a.nav-fund{color:#FDBA8C;background:#3A2414}.nav a.nav-fund:hover{background:#4A2E19;color:#FFD3B0}}
+.nav a .nav-n{margin-left:6px;background:#DC2626;color:#fff;border-radius:999px;font-family:var(--f-mono);font-size:11px;font-weight:700;padding:0 6px;line-height:17px}
 .nav a .new{font-family:var(--f-mono);font-size:10px;font-weight:600;letter-spacing:.06em;background:#F2B705;color:#0C2266;border-radius:4px;padding:0 5px;line-height:16px}
 .notes-promo{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:22px 24px;text-decoration:none;color:var(--ink);transition:border-color .15s}
 .notes-promo:hover{border-color:var(--accent)}
@@ -513,23 +514,40 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .notes-steps b{font-family:var(--f-display);font-size:15px;display:block}
 .notes-steps p{color:var(--muted);font-size:14.5px}
 .notes-steps .n{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent-text);display:grid;place-items:center;font-family:var(--f-mono);font-weight:600;font-size:14px}
+.mis-go{display:grid;gap:14px;padding:18px;margin-bottom:18px}
+.mis-run{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:14px}
 .notes-sub{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:28px}
 .notes-sub h2{font-size:21px;font-weight:800}
-.notes-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:12px}
-@media (max-width:860px){.notes-grid{grid-template-columns:1fr}}
-.note{display:grid;grid-template-columns:140px minmax(0,1fr);gap:18px;padding:18px}
-@media (max-width:420px){.note{grid-template-columns:96px minmax(0,1fr);gap:14px;padding:14px}}
-.note-cover{padding:0;border:0;background:none;cursor:zoom-in;align-self:start;border-radius:6px;overflow:hidden;box-shadow:0 4px 14px rgba(13,24,48,.18);display:block}
-.note-cover img{display:block;width:100%;height:auto}
-.note .pills{display:flex;gap:6px;flex-wrap:wrap}
-.note h3{font-size:20px;font-weight:800;margin:8px 0 0}
-.note h3[lang=te]{font-family:"Noto Sans Telugu",var(--f-body);font-weight:700;line-height:1.4;font-size:19px;letter-spacing:0}
-.note .en{color:var(--muted);font-size:14.5px}
-.note-meta{font-size:13px;color:var(--muted);margin-top:6px}
-.note-toc{margin-top:8px;font-size:14.5px}
+/* Study material (Anil, 8 Nov 2026: "this page is not nice... only when we scroll down we can see e-books"): every book as a cover in one grid, right under a short heading */
+.notes-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;margin-top:16px;padding:12px 16px}
+.notes-bar p{color:var(--muted);font-size:14.5px;margin:0}
+.notes-bar p b{color:var(--ink)}
+.notes-bar .good{color:var(--accent-text);font-weight:700}
+.notes-filter{margin-top:14px}
+@media (max-width:560px){.notes-bar{padding:10px 12px;margin-top:12px}.notes-bar p{font-size:13.5px}.chips.notes-filter{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:12px -16px 0;padding:0 16px 2px}.chips.notes-filter::-webkit-scrollbar{display:none}.chips.notes-filter .chip{flex:none}}
+.notes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:18px;margin-top:16px;align-items:start}
+@media (max-width:560px){.notes-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.note{display:flex;flex-direction:column;padding:12px;height:100%}
+.note-cover{padding:0;border:0;background:none;cursor:zoom-in;border-radius:6px;overflow:hidden;box-shadow:0 4px 14px rgba(13,24,48,.18);display:block;position:relative;width:100%}
+.note-cover img{display:block;width:100%;height:auto;aspect-ratio:560/792;object-fit:cover;transition:transform .2s}
+.note-cover:hover img{transform:scale(1.03)}
+.note-cover .peek{position:absolute;left:8px;right:8px;bottom:8px;background:rgba(10,20,45,.82);color:#fff;font-size:12.5px;font-weight:600;border-radius:6px;padding:5px 8px;text-align:center}
+.note .pills{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px}
+.note .pills .pill{font-size:11.5px;padding:1px 8px}
+.note h3{font-size:16px;font-weight:800;line-height:1.3;margin:7px 0 0}
+.note h3[lang=te]{font-family:"Noto Sans Telugu",var(--f-body);font-weight:700;line-height:1.45;font-size:15.5px;letter-spacing:0}
+.note-meta{font-size:12.5px;color:var(--muted);margin-top:5px}
+.note-toc{margin-top:6px;font-size:13.5px}
 .note-toc summary{cursor:pointer;color:var(--accent-text);font-weight:700}
-.note-toc ol{margin:6px 0 0;padding-left:20px;color:var(--muted)}
-.note-toc ol[lang=te]{font-family:"Noto Sans Telugu",var(--f-body);font-size:14px}
+.note-toc ol{margin:6px 0 0;padding-left:18px;color:var(--muted)}
+.note-toc ol[lang=te]{font-family:"Noto Sans Telugu",var(--f-body);font-size:13.5px}
+.note .note-buy{margin-top:auto;padding-top:12px}
+.note .note-buy .btn{width:100%;justify-content:center}
+.note .note-links{margin:6px 0 0;justify-content:center}
+.note .note-links .btn{font-size:13px;padding:5px 8px}
+@media (max-width:560px){.note{padding:9px}.note h3{font-size:14.5px}.note h3[lang=te]{font-size:14px}.note-cover .peek{display:none}.note .note-buy .btn{font-size:13.5px;padding:8px 6px}}
+.kit-promo .bb-mark b{font-size:28px}
+.notes-about{margin-top:22px;color:var(--muted);font-size:15px;max-width:80ch}
 .note-buy{display:flex;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
 .note-buy .price{font-family:var(--f-display);font-weight:800;font-size:26px;line-height:1}
 .note-buy .note-incl{font-weight:700;color:var(--accent-text);font-size:15px}
@@ -755,8 +773,7 @@ details.upc .exams{margin-top:8px}
       <a href="/tgpsc-amvi/papers/" data-v="papers" data-g2>Previous Papers</a>
       
       <a href="/tgpsc-amvi/practice/" data-v="practice" data-g2>Practice</a>
-      <a href="/tgpsc-amvi/bank/" data-v="bank" data-g2>Question Bank</a>
-      <a href="/tgpsc-amvi/mistakes/" data-v="mistakes" data-rev data-g2>My Revision</a>
+      <a href="/tgpsc-amvi/mistakes/" data-v="mistakes" data-g2>My Mistakes<span class="nav-n" id="navMis" hidden></span></a>
       <a href="/tgpsc-amvi/about/" data-v="about">About</a>
       <a href="#account" data-v="account" id="navAcct" class="nav-acct">Login</a>
     </nav>
@@ -821,7 +838,7 @@ details.upc .exams{margin-top:8px}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/tg-amvi-8a89b639b9.js"></script>
+<script src="data/tg-amvi-e5587bda1b.js"></script>
 <script>
 (function(){
 "use strict";
@@ -854,7 +871,7 @@ function syncLang(){
 function readLS(k, d){ try{ const v = localStorage.getItem(k); if(v){ const o = JSON.parse(v); if(o && typeof o==="object") return Object.assign(d, o); } }catch(e){} return d; }
 function writeLS(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 const blank = ()=>({qs:{}, mistakes:{}, bm:{}, history:[]});
-const REV = ["mistakes","smart","bookmarks","heatmap"];   // the four pages under "My Revision" in the top menu
+const REV = ["mistakes"];   // "My Mistakes" in the top menu (was "My Revision" with four pages, until 8 Nov 2026)
 let S = readLS(KEY, blank());
 (()=>{ let n = 0; for(const [id, m] of Object.entries(S.mistakes||{})) if(m && m.reason==="k" && (m.miss||1)<=1){ delete S.mistakes[id]; n++; } if(n) writeLS(KEY, S); })();   // skipped-only entries (old rule)
 let P = readLS(PKEY, {papers:null, topics:null, count:10, mode:"practice", recall:true, lang:"en"});
@@ -985,7 +1002,7 @@ function vLocked(v){
   // a registered phone whose pass is still being looked up (new phone, or bought on another device): don't flash the pay screen
   if(ST.phone && PAYC && PAYC.on && PAYC.api && !UI.passChecked) return `<div class="wrap view"><div class="boot chk" role="status"><span class="spin" aria-hidden="true"></span><span>Checking your All-in-One Pass…</span></div></div>`;
   const pyq = GATE[v]==="pyq", price = PAYC ? PAYC.pyq.price : 45, a = PASSES.all || {};
-  const name = {practice:"Topic-wise quiz", bank:"Question bank", mistakes:"Mistakes notebook", smart:"Smart Quiz", bookmarks:"Bookmarks", heatmap:"Memory heatmap"}[v];
+  const name = {practice:"Topic-wise quiz", bank:"Question bank", mistakes:"My Mistakes", smart:"My Mistakes", bookmarks:"Bookmarks", heatmap:"Memory heatmap"}[v];
   const body = pyq
     ? `The ${name.toLowerCase()} is part of the All-in-One Pass: every previous paper of every exam on Learn with Anil, with answers and explanations, practice quizzes, timed tests and all study tools. ₹${price} for 12 months.`
     : `The ${name} comes with the All-in-One Pass: ₹${price} for 12 months, for everything on the site (every previous paper, every mock test series and the study books).`;
@@ -1016,7 +1033,7 @@ function mockKinds(m){   // "10 Tier-I + 3 Tier-II"
 function payInfo(kind){   // Anil, 26 Oct 2026: one ₹45 All-in-One Pass for everything; mock packs and the combo are no longer sold on their own
   return {name: "All-in-One Pass · all exams", price: PAYC ? PAYC.pyq.price : 45, valid: "Valid for 12 months from the day you pay", btn: `Pay ₹${PAYC ? PAYC.pyq.price : 45} for all exams`,
       what: [`One payment for the whole website: the previous papers of every exam on Learn with Anil (${PAYC.pyq.exams || "all exams"}) and every exam added later, not just ${DATA.examShort || "this exam"}.`,
-             "Every answer and explanation, practice quizzes and timed tests, PYQ sectionals, topic-wise quizzes, Smart Quiz and Mistakes revision",
+             "Every answer and explanation, practice quizzes and timed tests, PYQ sectionals, topic-wise quizzes and My Mistakes practice",
              "Every mock test series on the site: Mission Khaki (TS SI and Constable), Mission CGL, the Bahubali Group-II Mains tests, and new series as they come",
              "The study books: AP Economy Crisp Notes (English and Telugu), Science & Technology for APPSC Mains, and the Group-1 Mains Answer Writing Tool Kit",
              "Nothing else to buy"]};
@@ -1507,6 +1524,8 @@ function route(){
     else { v = "papers"; history.replaceState(null, "", PATHMODE ? pathOf("papers") : "#papers"); setTimeout(()=>toast("That test is no longer open on this device. Start it again from the list below."), 300); }
   }
   if(v==="result" && !LAST) v="home";
+  // Anil, 8 Nov 2026: Question Bank and My Revision removed ("no need at all"); the Smart Quiz is now on My Mistakes
+  if(v==="smart" || v==="bank" || v==="bookmarks" || v==="heatmap"){ v = v==="smart" ? "mistakes" : "papers"; history.replaceState(null, "", PATHMODE ? pathOf(v) : "#" + v); }
   return v;
 }
 function render(){
@@ -1518,6 +1537,7 @@ function render(){
   const hubCtx = v==="exams" || v==="exam";
   $("#nav").classList.toggle("hub", hubCtx); $(".topbar").classList.toggle("g2", !hubCtx);
   document.querySelectorAll("#nav a").forEach(a=>{ const on = a.dataset.v===v || (a.dataset.rev!==undefined && REV.includes(v)) || (v==="exam"&&a.dataset.v==="exams") || ((v==="quiz"||v==="result")&&a.dataset.v==="practice"); if(on || (v==="join"&&a.dataset.v==="practice"&&UI.pending)) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+  { const m = $("#navMis"); if(m){ const n = Object.keys(QMAP).length ? mistakeIds().length : 0; m.hidden = !n; m.textContent = n; } }
   { const nv = $("#nav"), cur = nv.querySelector('a[aria-current="page"]:not([data-v="exams"])');   // on a phone the menu scrolls sideways: keep the open page's item in view
     if(cur && nv.scrollWidth > nv.clientWidth){ const r = cur.getBoundingClientRect(), n = nv.getBoundingClientRect(); if(r.left < n.left || r.right > n.right) nv.scrollLeft += r.left - n.left - 16; } }
   const hub = $("#hub-static"), home = $("#home-static"), host = $("#view");
@@ -1546,7 +1566,7 @@ function viewTitle(v){
   if(v==="exams" && DATA.hubTitle) return DATA.hubTitle;
   if((v==="home" || v==="exam") && DATA.homeTitle) return DATA.homeTitle;
   const x = DATA.examSeo || DATA.examShort || "";
-  const t = {papers:`${x} Previous Question Papers`, practice:`Create a ${x} Quiz`, bank:`${x} Question Bank`, mistakes:"Mistakes Notebook", smart:"Smart Quiz",
+  const t = {papers:`${x} Previous Question Papers`, practice:`Create a ${x} Quiz`, bank:`${x} Question Bank`, mistakes:"My Mistakes", smart:"My Mistakes",
              bookmarks:"Bookmarks", heatmap:"Topic Heatmap", about:"About Jupudi Anil Kumar", account:"My Account", join:"Log in or Register", notes:"Study Material 2026-27", mains:"Group-1 Mains Answer Writing Tool Kit", mocks:`${x} Mock Tests`, sectionals:`${x} Sectional Tests`, quiz:"Quiz", result:"Your Result", join:"Your Details"}[v];
   return t ? `${t} | Learn with Anil` : BASE_TITLE;
 }
@@ -1580,7 +1600,7 @@ document.addEventListener("click", e=>{   // move between views without reloadin
 });
 
 /* ---------- shared pieces ---------- */
-function bmBtn(id){ const on=!!S.bm[id]; return `<button class="iconbtn" type="button" data-act="bm" data-id="${id}" aria-pressed="${on}" title="${on?"Remove bookmark":"Bookmark this question"}">${on?ICON.bmOn:ICON.bm}<span>${on?"Saved":"Save"}</span></button>`; }
+function bmBtn(id){ return ""; }   // bookmarks removed (Anil, 8 Nov 2026)
 function tags(q){ const p=PMAP[q.p]; return `<span class="pill blue">${esc(p.short)}</span><span class="pill">${esc(SUBJ[q.s].name)}</span><span class="pill">${esc(q.t)}</span>${isMCQ(q)?"":'<span class="pill warn">Quick recall</span>'}${q.lwo?'<span class="pill" title="APPSC\'s key printed only the correct answer. That answer is the official one; the other three options are written by Learn with Anil.">Answer: APPSC key · options: Learn with Anil</span>':""}${P.lang===L2.code&&!q.qt?'<span class="pill en-only">English only</span>':""}`; }
 /* Question text; runs of two or more pipe-typed rows ("Trade receivables | 25,00,000 |", header row first) become a table. */
 function tblRow(l){ const t=l.trim(); return t.includes("|") && (t.includes(" | ") || t.startsWith("| ") || t.endsWith(" |") || t==="|"); }
@@ -1697,21 +1717,23 @@ const HUBT = {
        hi:'ऊपर एक टैप से {L} के बीच बदलें। अनुवाद वही है जो परीक्षा के प्रश्नपत्र में छपा था, मशीन अनुवाद नहीं।',
        te:'పైన ఒక్క ట్యాప్‌తో {L} మధ్య మారండి. అనువాదం పరీక్ష ప్రశ్నపత్రంలో ముద్రించినదే, మెషీన్ అనువాదం కాదు.'},
   w3t:{en:'Your mistakes come back', hi:'आपकी गलतियाँ लौटकर आती हैं', te:'మీ తప్పులు మళ్లీ వస్తాయి'},
-  w3p:{en:'Every question you get wrong goes into your Mistakes notebook. The Smart Quiz keeps asking it until you get it right twice.',
-       hi:'हर गलत प्रश्न आपकी गलतियों की नोटबुक में चला जाता है। स्मार्ट क्विज़ उसे तब तक पूछता है जब तक आप उसे दो बार सही न कर लें।',
-       te:'మీరు తప్పుగా జవాబిచ్చిన ప్రతి ప్రశ్న మీ మిస్టేక్స్ నోట్‌బుక్‌లోకి వెళ్తుంది. రెండుసార్లు సరిగ్గా చెప్పే వరకు స్మార్ట్ క్విజ్ దాన్ని మళ్లీ అడుగుతుంది.'},
-  w4t:{en:'See your weak topics', hi:'अपने कमज़ोर विषय देखें', te:'మీ బలహీన అంశాలు తెలుసుకోండి'},
-  w4p:{en:'The heatmap colours every topic by your accuracy, so you know exactly what to revise first.',
-       hi:'हीटमैप हर विषय को आपकी सटीकता के अनुसार रंग देता है, ताकि आप जानें कि पहले क्या दोहराना है।',
-       te:'హీట్‌మ్యాప్ ప్రతి అంశాన్ని మీ ఖచ్చితత్వం ప్రకారం రంగులో చూపిస్తుంది, ముందుగా ఏది రివిజన్ చేయాలో తెలుస్తుంది.'},
+  w3p:{en:'Every question you get wrong is saved in My Mistakes. Practise them again and again; a question leaves the list once you get it right twice in a row.',
+       hi:'हर गलत प्रश्न My Mistakes में सहेजा जाता है। उन्हें बार-बार अभ्यास करें; लगातार दो बार सही करने पर प्रश्न सूची से हट जाता है।',
+       te:'మీరు తప్పుగా జవాబిచ్చిన ప్రతి ప్రశ్న My Mistakesలో సేవ్ అవుతుంది. వాటిని మళ్లీ మళ్లీ ప్రాక్టీస్ చేయండి; వరుసగా రెండుసార్లు సరిగ్గా జవాబిస్తే ఆ ప్రశ్న జాబితా నుంచి తొలగిపోతుంది.'},
+  w4t:{en:'Practise topic by topic',
+       hi:'विषय-वार अभ्यास',
+       te:'అంశాల వారీగా ప్రాక్టీస్'},
+  w4p:{en:'Pick a subject or topic and get a quiz made only of real previous questions, with the official answer after each one.',
+       hi:'कोई विषय या टॉपिक चुनें और केवल असली पिछले प्रश्नों से बना क्विज़ पाएं, हर प्रश्न के बाद आधिकारिक उत्तर के साथ।',
+       te:'ఏదైనా సబ్జెక్ట్ లేదా అంశాన్ని ఎంచుకోండి; అసలైన పాత ప్రశ్నలతోనే క్విజ్ వస్తుంది, ప్రతి ప్రశ్న తర్వాత అధికారిక సమాధానంతో.'},
   w5t:{en:'Every question has its own page', hi:'हर प्रश्न का अपना पेज', te:'ప్రతి ప్రశ్నకు సొంత పేజీ'},
   w5p:{en:'Send any question to a friend as a link. They see the question first, and the answer only when they tap.',
        hi:'किसी भी प्रश्न को लिंक के रूप में दोस्त को भेजें। उन्हें पहले प्रश्न दिखेगा, और उत्तर तभी जब वे टैप करेंगे।',
        te:'ఏ ప్రశ్ననైనా లింక్‌గా స్నేహితుడికి పంపండి. వారికి ముందు ప్రశ్న మాత్రమే కనిపిస్తుంది, ట్యాప్ చేస్తేనే సమాధానం.'},
   w6t:{en:'Your practice stays with you', hi:'आपका अभ्यास आपके पास', te:'మీ ప్రాక్టీస్ మీ దగ్గరే'},
-  w6p:{en:'Register once, free, with no password to remember. Your practice, mistakes and bookmarks are saved on your own phone.',
-       hi:'केवल एक बार निःशुल्क पंजीकरण, कोई पासवर्ड याद रखने की ज़रूरत नहीं। आपका अभ्यास, गलतियाँ और बुकमार्क आपके अपने फ़ोन में सहेजे जाते हैं।',
-       te:'ఒక్కసారి ఉచితంగా రిజిస్టర్ అవ్వండి, పాస్‌వర్డ్ గుర్తుంచుకోవాల్సిన పని లేదు. మీ ప్రాక్టీస్, తప్పులు, బుక్‌మార్క్‌లు మీ ఫోన్‌లోనే సేవ్ అవుతాయి.'},
+  w6p:{en:'Register once, free, with no password to remember. Your practice and mistakes are saved on your own phone.',
+       hi:'केवल एक बार निःशुल्क पंजीकरण, कोई पासवर्ड याद रखने की ज़रूरत नहीं। आपका अभ्यास और गलतियाँ आपके अपने फ़ोन में सहेजी जाती हैं।',
+       te:'ఒక్కసారి ఉచితంగా రిజిస్టర్ అవ్వండి, పాస్‌వర్డ్ గుర్తుంచుకోవాల్సిన పని లేదు. మీ ప్రాక్టీస్, తప్పులు మీ సొంత ఫోన్‌లోనే సేవ్ అవుతాయి.'},
   fundT:{en:'Support Learn with Anil', hi:'Learn with Anil का साथ दें', te:'Learn with Anil‌కు తోడ్పడండి'},
   fundP:{en:'My goal: 1 lakh PYQs of various government exams under one roof, for ₹45. I am building this site alone, to be student-friendly and to democratise learning, and I need help from funders: your support, in turn, helps me help the students.',
          hi:'मेरा लक्ष्य: विभिन्न सरकारी परीक्षाओं के 1 लाख PYQs एक ही जगह, सिर्फ़ ₹45 में। मैं यह साइट अकेले बना रहा हूँ, ताकि यह विद्यार्थियों के अनुकूल हो और शिक्षा सबके लिए सुलभ हो। मुझे फंड देने वालों की मदद चाहिए: आपका सहयोग मुझे विद्यार्थियों की मदद करने में सहायता करता है।',
@@ -1803,7 +1825,7 @@ function renderHomeDynamic(){
   const r = $("#recent");
   if(S.history.length){
     r.hidden=false;
-    r.innerHTML = `<div class="section-title"><h2>Your recent quizzes</h2><a class="btn btn-ghost btn-sm" href="/tgpsc-amvi/heatmap/">Open heatmap</a></div>
+    r.innerHTML = `<div class="section-title"><h2>Your recent quizzes</h2><a class="btn btn-ghost btn-sm" href="/tgpsc-amvi/mistakes/">My Mistakes</a></div>
       <ul class="card hist">${S.history.slice(0,5).map(h=>{ const p=pct(h.c,h.n), b=band(p); return `<li><div style="min-width:0"><div class="t">${esc(h.title)}</div><div class="d">${fmtDate(h.at)} · ${fmtTime(h.secs)}</div></div><span class="mono">${h.c}/${h.n}</span><span class="pill ${b==="none"?"":b}">${p}%</span></li>`; }).join("")}</ul>`;
   } else { r.hidden=true; r.innerHTML=""; }
 }
@@ -2110,7 +2132,7 @@ function vResult(){
           <div class="g"><b>${r.c}</b><span>Correct</span></div><div class="r"><b>${r.w}</b><span>Wrong</span></div>
           <div class="s"><b>${r.k}</b><span>Skipped</span></div><div><b style="font-family:var(--f-mono);font-size:22px">${fmtTime(r.secs)}</b><span>Time taken</span></div>
         </div>
-        <p class="muted" style="font-size:15px">${r.total && r.total>n? `You answered ${n} of ${r.total} questions; the rest were not counted. `:""}${r.added?`<b style="color:var(--ink)">${r.added} question${r.added===1?"":"s"}</b> added to your mistakes notebook. `:""}${r.mastered? `<b style="color:var(--good)">${r.mastered}</b> cleared from the notebook after two correct recalls. `:""}${!r.added&&!r.mastered? "Nothing new for the mistakes notebook from this quiz.":""}</p>
+        <p class="muted" style="font-size:15px">${r.total && r.total>n? `You answered ${n} of ${r.total} questions; the rest were not counted. `:""}${r.added?`<b style="color:var(--ink)">${r.added} question${r.added===1?"":"s"}</b> added to My Mistakes. `:""}${r.mastered? `<b style="color:var(--good)">${r.mastered}</b> cleared from My Mistakes after two correct answers in a row. `:""}${!r.added&&!r.mastered? "No new mistakes from this quiz.":""}</p>
       </div>
     </section>
     ${upsellCard()}
@@ -2156,27 +2178,28 @@ function vBank(){
 }
 
 /* ---------- My Revision tabs (on the Mistakes, Smart Quiz, Bookmarks and Heatmap pages) ---------- */
-function revTabs(v){
-  const T = [["mistakes","Mistakes", mistakeIds().length, "Questions you answered wrongly"],
-             ["smart","Smart Quiz", null, "A quiz on your mistakes only"],
-             ["bookmarks","Bookmarks", bmIds().length, "Questions you saved"],
-             ["heatmap","Heatmap", null, "Your strong and weak topics"]];
-  return `<nav class="revtabs" aria-label="My Revision"><p class="rl">My Revision</p>${T.map(([k,l,n,d])=>`<a href="#${k}"${k===v?' aria-current="page"':""}><b>${l}${n!==null?` <span class="n">${n}</span>`:""}</b><small>${d}</small></a>`).join("")}</nav>`;
-}
+function revTabs(v){ return ""; }   // My Revision sub-tabs removed (Anil, 8 Nov 2026)
 
 /* ---------- mistakes ---------- */
 function recallDots(m){ const r=m.recall||0; return `<span class="recall" title="Correct recalls: ${r} of 2"><i class="${r>=1?"on":""}"></i><i class="${r>=2?"on":""}"></i></span>`; }
-function vMistakes(){
+function vMistakes(){   // Anil, 8 Nov 2026: "i want wrong questions to be separated for the student and need to practice them again and again ... in that same exam pages"
   const ids = mistakeIds();
-  if(!ids.length) return `<div class="wrap view">${revTabs("mistakes")}${head("Mistakes notebook","Your mistakes notebook","Every question you answer wrongly is filed here automatically. Skipped questions are not mistakes, so they are not added.")}${emptyHTML("Nothing to revise yet","Take a quiz. Every question you get wrong will appear here, ready for the Smart Quiz.",`<a class="btn btn-primary" href="/tgpsc-amvi/practice/">Start a practice quiz</a>`)}</div>`;
+  if(!ids.length) return `<div class="wrap view">${head("My Mistakes","Your wrong answers, ready to practise","Every question you answer wrongly in this exam is saved here automatically, so you can practise it again and again.")}${emptyHTML("No mistakes yet","Take a previous paper or a practice quiz. Every question you get wrong will appear here, ready to practise again.",`<a class="btn btn-primary" href="/tgpsc-amvi/papers/">Open previous papers</a><a class="btn btn-secondary" href="/tgpsc-amvi/practice/">Start a practice quiz</a>`)}</div>`;
   const subs = [...new Set(ids.map(id=>QMAP[id].s))];
   if(UI.mFilter!=="all" && !subs.includes(UI.mFilter)) UI.mFilter="all";
-  const list = ids.filter(id=>UI.mFilter==="all"||QMAP[id].s===UI.mFilter).sort((a,b)=>(S.mistakes[b].miss||1)-(S.mistakes[a].miss||1) || S.mistakes[b].added-S.mistakes[a].added);
-  return `<div class="wrap view">${revTabs("mistakes")}
-    ${head("Mistakes notebook", ids.length+" question"+(ids.length===1?"":"s")+" to revise", "Filed automatically when you answer wrongly. A question leaves the notebook after you get it right twice in a row.", `<a class="btn btn-primary" href="/tgpsc-amvi/smart/">Start Smart Quiz</a>`)}
-    <div class="row"><button type="button" class="chip" data-act="mfilter" data-f="all" aria-pressed="${UI.mFilter==="all"}">All subjects <span class="n">${ids.length}</span></button>${subs.map(s=>`<button type="button" class="chip" data-act="mfilter" data-f="${s}" aria-pressed="${UI.mFilter===s}">${esc(SUBJ[s].name)} <span class="n">${ids.filter(id=>QMAP[id].s===s).length}</span></button>`).join("")}</div>
+  const pick = ids.filter(id=>UI.mFilter==="all"||QMAP[id].s===UI.mFilter);
+  const list = pick.slice().sort((a,b)=>(S.mistakes[b].miss||1)-(S.mistakes[a].miss||1) || S.mistakes[b].added-S.mistakes[a].added);
+  const n = UI.smartCount==="all"? pick.length : Math.min(UI.smartCount, pick.length);
+  return `<div class="wrap view">
+    ${head("My Mistakes", ids.length+" question"+(ids.length===1?"":"s")+" to practise again", "Every question you answer wrongly is saved here. Practise them again and again: a question leaves this list once you get it right twice in a row.")}
+    <section class="card mis-go">
+      <div class="row"><button type="button" class="chip" data-act="mfilter" data-f="all" aria-pressed="${UI.mFilter==="all"}">All subjects <span class="n">${ids.length}</span></button>${subs.map(s=>`<button type="button" class="chip" data-act="mfilter" data-f="${s}" aria-pressed="${UI.mFilter===s}">${esc(SUBJ[s].name)} <span class="n">${ids.filter(id=>QMAP[id].s===s).length}</span></button>`).join("")}</div>
+      <div class="mis-run"><div class="row" style="gap:8px"><span class="muted" style="font-size:14px">How many:</span>${[10,25,"all"].map(c=>`<button type="button" class="chip" data-act="scount" data-count="${c}" aria-pressed="${UI.smartCount===c}">${c==="all"?"All "+pick.length:c}</button>`).join("")}</div>
+      <button class="btn btn-primary" type="button" data-act="smartgo" ${n?"":"disabled"}>▶ Practise ${n} mistake${n===1?"":"s"} now</button></div>
+      <p class="muted" style="font-size:13.5px;margin:0">The questions you missed most come first. Got one right twice in a row? It is cleared from the list automatically.</p>
+    </section>
     <div class="list">${list.map(id=>{ const m=S.mistakes[id], q=QMAP[id];
-      const extra = `<div class="row" style="justify-content:space-between"><div class="row" style="gap:8px"><span class="pill ${m.reason==="k"?"warn":"bad"}">${m.reason==="k"?"Skipped last time":"Answered wrongly"}</span><span class="pill">Missed ${m.miss||1}×</span><span class="pill">Recall ${recallDots(m)}</span></div><button class="btn btn-ghost btn-sm" type="button" data-act="learnt" data-id="${id}">I've learnt this</button></div>`;
+      const extra = `<div class="row" style="justify-content:space-between"><div class="row" style="gap:8px"><span class="pill ${m.reason==="k"?"warn":"bad"}">${m.reason==="k"?"Skipped last time":"Answered wrongly"}</span><span class="pill">Missed ${m.miss||1}×</span><span class="pill">Right in a row ${recallDots(m)}</span></div><button class="btn btn-ghost btn-sm" type="button" data-act="learnt" data-id="${id}">I know it now · remove</button></div>`;
       return reviewCard(q, q.n, {hideAnswer:true, extra}); }).join("")}</div>
   </div>`;
 }
@@ -2265,39 +2288,48 @@ function noteCard(b){
   const name = b.product_en || `${b.title_en}: Crisp Notes 2026-27 (${b.medium_en})`;
   const ok = passOK("pyq"), price = PAYC ? PAYC.pyq.price : 45;
   const buy = b.dl
-    ? (ok ? `<button class="btn btn-primary" type="button" data-act="bookdl" data-id="${esc(b.id)}">⬇ Download PDF</button>`
-          : `<button class="btn btn-primary" type="button" data-act="unlockpyq">🔒 Unlock all · ₹${price} once</button>`)
-    : b.buy ? `<a class="btn btn-primary" href="${esc(b.buy)}" target="_blank" rel="noopener">Buy now</a>`
-    : `<button class="btn btn-primary" type="button" disabled>Coming soon</button>`;
-  return `<article class="card note">
-    <button class="note-cover" type="button" data-act="sample" data-id="${b.id}" aria-label="See sample pages of ${esc(name)}"><img src="${esc(b.cover)}" alt="Cover of ${esc(name)}" width="560" height="792" loading="lazy"></button>
-    <div style="min-width:0">
-      <div class="pills"><span class="pill blue">${esc(b.medium_en)}</span><span class="pill">${esc(b.badge||("Vol. "+b.vol))}</span></div>
-      <h3${te?' lang="te"':""}>${esc(b.title)}</h3>
-      ${te? `<p class="en">${esc(b.title_en)}</p>` : ""}
-      <p class="note-meta mono">${b.pages} pages · ${b.chapters_label? esc(b.chapters_label) : `${b.chapters.length-1} chapters + practice · ${b.pyqs} PYQs`}</p>
-      <details class="note-toc"><summary>What's inside</summary><ol${te?' lang="te"':""}>${b.chapters.map(c=>`<li>${esc(c)}</li>`).join("")}</ol></details>
-      <div class="note-buy">${b.dl ? `<span class="note-incl">${ok ? "✓ Included in your All-in-One Pass" : `Included in the All-in-One Pass: ₹${price} once opens every book, PYQ and mock test`}</span>` : `<span class="price">₹${b.price}</span>`}${buy}</div>
-      <div class="note-links"><button class="btn btn-ghost btn-sm" type="button" data-act="sample" data-id="${b.id}">See sample pages</button>${b.free ? `<a class="btn btn-ghost btn-sm" href="${esc(b.free)}" target="_blank" rel="noopener">⬇ Free sample chapter (PDF)</a>` : ""}${b.buy || b.dl ? "" : `<a class="btn btn-ghost btn-sm" href="${waLink(`Hi Learn_with_anil Team, please tell me when "${name}" is available to buy.`)}" target="_blank" rel="noopener">Notify me on WhatsApp</a>`}</div>
-    </div>
+    ? (ok ? `<button class="btn btn-primary btn-sm" type="button" data-act="bookdl" data-id="${esc(b.id)}">⬇ Download PDF</button>`
+          : `<button class="btn btn-primary btn-sm" type="button" data-act="unlockpyq">🔒 Unlock · ₹${price}</button>`)
+    : b.buy ? `<a class="btn btn-primary btn-sm" href="${esc(b.buy)}" target="_blank" rel="noopener">Buy · ₹${b.price}</a>`
+    : `<button class="btn btn-primary btn-sm" type="button" disabled>Coming soon</button>`;
+  return `<article class="card note" data-x="${esc(noteTags(b).join(" "))}">
+    <button class="note-cover" type="button" data-act="sample" data-id="${b.id}" aria-label="See sample pages of ${esc(name)}"><img src="${esc(b.cover)}" alt="Cover of ${esc(name)}" width="560" height="792" loading="lazy"><span class="peek">See sample pages</span></button>
+    <div class="pills"><span class="pill blue">${esc(b.medium_en)}</span><span class="pill">${esc(b.badge||("Vol. "+b.vol))}</span></div>
+    <h3${te?' lang="te"':""}>${esc(b.title)}</h3>
+    <p class="note-meta mono">${b.pages} pages${b.pyqs? ` · ${b.pyqs} PYQs` : ""}</p>
+    <details class="note-toc"><summary>What's inside</summary>${b.chapters_label? `<p class="note-meta">${esc(b.chapters_label)}</p>` : ""}<ol${te?' lang="te"':""}>${b.chapters.map(c=>`<li>${esc(c)}</li>`).join("")}</ol></details>
+    <div class="note-buy">${buy}</div>
+    <div class="note-links">${b.free ? `<a class="btn btn-ghost btn-sm" href="${esc(b.free)}" target="_blank" rel="noopener">⬇ Free sample chapter</a>` : `<button class="btn btn-ghost btn-sm" type="button" data-act="sample" data-id="${b.id}">Sample pages</button>`}${b.buy || b.dl ? "" : `<a class="btn btn-ghost btn-sm" href="${waLink(`Hi Learn_with_anil Team, please tell me when "${name}" is available to buy.`)}" target="_blank" rel="noopener">Notify me</a>`}</div>
   </article>`;
+}
+function noteTags(b){   // filter chips on the Study Material page: which exams a book is for, and Telugu
+  const s = `${b.badge||""} ${b.syllabus||""} ${b.product_en||b.title_en||""}`, t = [];
+  if(/Group-I(?!I)/.test(s)) t.push("g1");
+  if(/Group-II/.test(s)) t.push("g2");
+  if(/\bEO\b/.test(s)) t.push("eo");
+  if(b.lang==="te") t.push("te");
+  return t;
 }
 function vNotes(){
   const N = DATA.notes||[];
-  const anyBuy = N.some(b=>b.buy);
-  const groups = [...new Set(N.map(b=>b.subject_label||b.subject))].map(sub=>{
-    const bs = N.filter(b=>(b.subject_label||b.subject)===sub);
-    return `<div class="notes-sub"><h2>${esc(sub)}</h2><span class="muted" style="font-size:14px">${esc(bs[0].syllabus||"")}</span></div><div class="notes-grid">${bs.map(noteCard).join("")}</div>`;
-  }).join("");
   const price = PAYC ? PAYC.pyq.price : 45, ok = passOK("pyq"), allDl = N.length && N.every(b=>b.dl);
+  const F = [["all","All books",()=>true],["g1","Group-I",b=>noteTags(b).includes("g1")],["g2","Group-II",b=>noteTags(b).includes("g2")],["eo","EO Grade-III",b=>noteTags(b).includes("eo")],["te","తెలుగు",b=>b.lang==="te"]]
+    .map(([k,l,f])=>[k,l,N.filter(f).length]).filter(([k,,n])=>n && (k==="all" || n<N.length));
+  const f = F.some(x=>x[0]===UI.nFilter) ? UI.nFilter : "all";
+  const shown = f==="all" ? N : N.filter(b=>noteTags(b).includes(f));
+  const langs = [...new Set(N.map(b=>b.lang==="te"?"Telugu":"English"))].join(" and ");
+  const lede = `${N.length} book${N.length===1?"":"s"} by Jupudi Anil Kumar, in ${langs}. Tap a cover to see sample pages.`;
+  const bar = allDl
+    ? (ok ? `<div class="card notes-bar"><p><span class="good">✓ Your All-in-One Pass is active.</span> Download any book as a PDF and read it on your phone or print it, for your personal study.</p></div>`
+          : `<div class="card notes-bar"><p><b>Every book is in the ₹${price} All-in-One Pass</b>, with every previous paper and mock test series. Pay once, download all.</p><button class="btn btn-primary btn-sm" type="button" data-act="unlockpyq">🔒 Unlock all · ₹${price} once</button></div>`)
+    : "";
+  const chips = F.length > 2 ? `<div class="chips notes-filter" role="group" aria-label="Show books for">${F.map(([k,l,n])=>`<button class="chip" type="button" data-act="nfilter" data-f="${k}" aria-pressed="${k===f}"${k==="te"?' lang="te"':""}>${esc(l)} <span class="n">${n}</span></button>`).join("")}</div>` : "";
   return `<div class="wrap view">
-    ${head("Study material · 2026-27", DATA.notesTitle || "Study material for APPSC Mains", DATA.notesLede || "Exam-focused books by Jupudi Anil Kumar: Crisp Notes on AP Economy, and a full Science & Technology book for Group-I and Group-II. Every book has the latest 2026 data, a Prelims/Mains tag on every topic, memes that make tricky facts stick, practice questions and APPSC's own previous questions with the official answers.")}
-    <div class="notes-steps">
-      <div class="card"><span class="n">1</span><div><b>See the sample pages</b><p>Tap a cover to look inside.</p></div></div>
-      <div class="card"><span class="n">2</span><div><b>${ok ? "Your All-in-One Pass is active" : `Get the ₹${price} All-in-One Pass`}</b><p>${allDl ? `Every book is included in the All-in-One Pass, with every previous paper and every mock test series. Nothing else to pay.` : anyBuy? "Secure online payment by UPI or card." : "Online payment opens soon. Tap “Notify me” to get a WhatsApp message when it does."}</p></div></div>
-      <div class="card"><span class="n">3</span><div><b>Download the PDF</b><p>Read it on your phone or print it. For your personal study only.</p></div></div>
-    </div>
-    ${groups}
+    ${head("Study material · 2026-27", DATA.notesTitle || "Study material", lede)}
+    ${bar}${chips}
+    <div class="notes-grid">${shown.map(noteCard).join("")}</div>
+    ${DATA.mainsLink ? `<a class="card notes-promo kit-promo" href="${esc((DATA.mains||[]).length ? href("mains") : DATA.mainsLink)}" style="margin-top:22px"><div class="np-copy"><p class="eyebrow">APPSC Group-I Mains · included in the ₹${price} All-in-One Pass</p><h2>Answer Writing Tool Kit: 4 more books</h2><p>Every Mains question of 2020, 2023 and 2025 for Papers I to IV, sorted by syllabus part, with practice questions on every part. Four PDF books, one per paper.</p><span class="btn btn-primary">See the 4 books</span></div><div class="bb-mark" aria-hidden="true"><b>I–IV</b><span>Mains papers</span></div></a>` : ""}
+    ${DATA.notesLede ? `<p class="notes-about">${esc(DATA.notesLede)}</p>` : ""}
     ${DATA.bahubali? `<div class="notes-sub"><h2>Test series</h2><span class="muted" style="font-size:14px">Group-II Mains · Paper I &amp; Paper II</span></div>
     <a class="card notes-promo bb-promo" href="${esc(DATA.bahubali)}" style="margin-top:12px"><div class="np-copy"><p class="eyebrow">New · included in the ₹${price} All-in-One Pass</p><h2>Bahubali Test Series</h2><p>Full-length APPSC Group-II Mains mock tests: 150 questions, 150 minutes, ⅓ negative marking, English and Telugu, with explanations and PDFs. 12 tests for Paper I and 12 for Paper II.</p><span class="btn btn-primary">See the tests</span></div><div class="bb-mark" aria-hidden="true"><b>150</b><span>Qs · 150 min</span></div></a>` : ""}
     <div class="card notes-foot"><b>One ₹${price} All-in-One Pass for everything:</b> every previous paper, every mock test series and these books, for 12 months. For your personal study only; please don't share the PDFs. Questions about the books? Call or WhatsApp <a href="tel:+919494792739">+91 94947 92739</a> or email <a href="mailto:anilkumarjupudi360360@gmail.com">anilkumarjupudi360360@<wbr>gmail.com</a>.</div>
@@ -2758,14 +2790,15 @@ document.addEventListener("click", e=>{
     case "retry": { const ids=LAST.ids.filter(id=>!isCorrect(QMAP[id], LAST.ans[id])); startQuiz(shuffle(ids), "Re-attempt · "+LAST.title, "practice", "smart"); break; }
     case "rfilter": UI.rFilter=b.dataset.f; render(); break;
     case "mfilter": UI.mFilter=b.dataset.f; render(); break;
-    case "learnt": delete S.mistakes[b.dataset.id]; save(); toast("Removed from your mistakes notebook"); render(); break;
+    case "nfilter": UI.nFilter=b.dataset.f; render(); break;
+    case "learnt": delete S.mistakes[b.dataset.id]; save(); toast("Removed from My Mistakes"); render(); break;
     case "ssubj": UI.smartSubj=b.dataset.f; render(); break;
     case "scount": UI.smartCount = b.dataset.count==="all"? "all" : +b.dataset.count; render(); break;
     case "smartgo": {
-      const avail = mistakeIds().filter(id=>UI.smartSubj==="all"||QMAP[id].s===UI.smartSubj)
+      const avail = mistakeIds().filter(id=>UI.mFilter==="all"||QMAP[id].s===UI.mFilter)
         .sort((a,b2)=>(S.mistakes[b2].miss||1)-(S.mistakes[a].miss||1) || (S.mistakes[a].recall||0)-(S.mistakes[b2].recall||0));
       const n = UI.smartCount==="all"? avail.length : Math.min(UI.smartCount, avail.length);
-      startQuiz(shuffle(avail.slice(0,n)), "Smart Quiz · "+(UI.smartSubj==="all"?"All subjects":SUBJ[UI.smartSubj].name), "practice", "smart"); break; }
+      startQuiz(shuffle(avail.slice(0,n)), "My Mistakes · "+(UI.mFilter==="all"?"All subjects":SUBJ[UI.mFilter].name), "practice", "smart"); break; }
     case "bmquiz": startQuiz(shuffle(bmIds()), "Bookmarked questions", "practice", "bookmarks"); break;
     case "topicquiz": { const k=b.dataset.key; const ids=QS.filter(q=>tkey(q)===k).map(q=>q.id); startQuiz(shuffle(ids), SUBJ[k.split("|")[0]].name+" · "+k.split("|")[1], "practice", "topic"); break; }
     case "bankmore": bankLimit+=20; { const box=$("#bankResults"); if(box) box.innerHTML=bankResults(); } break;
@@ -2885,7 +2918,7 @@ document.addEventListener("keydown", e=>{
 });
 function restoreReset(){ $("#resetBox").innerHTML=`<button class="btn btn-ghost btn-sm" id="resetBtn" type="button">Reset my progress</button>`; bindReset(); }
 function bindReset(){ $("#resetBtn").onclick = ()=>{
-  $("#resetBox").innerHTML = `<span class="row" style="gap:8px"><span>Clear all attempts, mistakes and bookmarks?</span><button class="btn btn-bad btn-sm" type="button" id="resetYes">Clear</button><button class="btn btn-secondary btn-sm" type="button" id="resetNo">Cancel</button></span>`;
+  $("#resetBox").innerHTML = `<span class="row" style="gap:8px"><span>Clear all attempts and mistakes?</span><button class="btn btn-bad btn-sm" type="button" id="resetYes">Clear</button><button class="btn btn-secondary btn-sm" type="button" id="resetNo">Cancel</button></span>`;
   $("#resetYes").onclick = ()=>{ S=blank(); save(); LAST=null; QZ=null; stopTimer(); restoreReset(); toast("Your progress has been cleared"); go("home"); };
   $("#resetNo").onclick = restoreReset;
 }; }

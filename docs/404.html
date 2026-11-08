@@ -9,7 +9,7 @@
   var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
-  var ok = base === "/" ? /^exam\/[\w-]+\/?$/.test(rest) : /^(q\/[\w-]+|quiz|result|join)\/?$/.test(rest);
+  var ok = base === "/" ? /^exam\/[\w-]+\/?$/.test(rest) : /^(q\/[\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\/?$/.test(rest);
   if (ok) { try { sessionStorage.setItem("lwa-path", p); } catch (e) {} location.replace(base); }
 })();
 </script>
