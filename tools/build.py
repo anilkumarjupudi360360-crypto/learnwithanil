@@ -425,6 +425,76 @@ TS_PC_PAPERS = [
        blurb='Preliminary Written Test of the 2015–16 recruitment (SCT PCs Civil/AR/SAR CPL/TSSP, constables in SPF and firemen): English, Arithmetic, Reasoning and General Studies, 200 questions, 200 marks, 3 hours. Answers are from TSLPRB\'s preliminary key; the final key may differ for a few questions.'),
 ]
 NOKEY_LABEL = {p['id']: p['alabel'] for p in EPFO_PAPERS + TS_PC_PAPERS if p.get('alabel')}   # answer label on papers without an official final key
+# ---------- TGPSC (formerly TSPSC): Group-I Services (Preliminary Test) and Group-II Services ----------
+# Anil, 8 Nov 2026: "add tg group-1prelims(multiple time cancelled papers also) and mains....Tg group-2 Pyqs also" (Mains: questions
+# only for now). Answers from the commission's final keys on the master booklets: Group-I Prelims of 9 June 2024 (Notification 02/2024),
+# and the two cancelled Prelims of Notification 04/2022 (16 October 2022, cancelled by TSPSC in March 2023 after the paper leak;
+# 11 June 2023, set aside by the High Court on 23 September 2023); Group-II of 15 and 16 December 2024 (Notification 28/2022).
+TGG_SUBJECTS = [
+  ('cur', 'Current Affairs', 'current-affairs', ['National', 'International', 'Telangana Affairs', 'Sports & Awards', 'Reports & Indices']),
+  ('irl', 'International Relations', 'international-relations', ['International Relations & Organisations']),
+  ('sci', 'General Science & Technology', 'general-science-technology', ['Physics', 'Chemistry', 'Biology & Health', 'Science & Technology']),
+  ('env', 'Environment & Disaster Management', 'environment-disaster-management', ['Environment & Ecology', 'Disaster Management']),
+  ('geo', 'Geography', 'geography', ['World Geography', 'Indian Geography', 'Telangana Geography']),
+  ('ih',  'Indian History & Culture', 'indian-history-culture', ['Ancient India', 'Medieval India', 'Modern India & Freedom Struggle', 'Art & Culture']),
+  ('tsh', 'Telangana History & Culture', 'telangana-history-culture', ['Telangana History', 'Telangana Culture & Heritage']),
+  ('pol', 'Indian Polity & Governance', 'indian-polity-governance', ['Constitution & Rights', 'Union & State Government', 'Local Government', 'Governance & Schemes']),
+  ('soc', 'Indian Society & Social Issues', 'indian-society-social-issues', ['Indian Social Structure', 'Social Exclusion & Rights', 'Social Movements', 'Welfare & Inclusive Policies']),
+  ('eco', 'Economy (India & Telangana)', 'indian-telangana-economy', ['Growth, Planning & Public Finance', 'Agriculture & Rural Economy', 'Industry, Services & Infrastructure',
+                                                                       'Money, Banking & External Sector', 'Poverty, Employment & Human Development', 'Telangana Economy']),
+  ('dev', 'Development & Change', 'development-change', ['Development & Environment', 'Land Reforms & Agrarian Change', 'Displacement & Regional Disparities', 'Social Development & Welfare']),
+  ('tsp', 'Telangana State Policies', 'telangana-state-policies', ['Telangana Policies & Schemes']),
+  ('tsm', 'Telangana Movement & State Formation', 'telangana-movement-state-formation', ['Idea of Telangana (1948–1970)', 'Mobilisation Phase (1971–1990)', 'Towards Statehood (1991–2014)']),
+  ('men', 'Mental Ability', 'mental-ability-reasoning', ['Reasoning', 'Arithmetic', 'Data Interpretation']),
+  ('eng', 'English', 'english', ['Grammar & Usage', 'Vocabulary & Comprehension']),
+]
+TGG_SUBJ_TE = {'cur': 'కరెంట్ అఫైర్స్', 'irl': 'అంతర్జాతీయ సంబంధాలు', 'sci': 'జనరల్ సైన్స్, టెక్నాలజీ', 'env': 'పర్యావరణం, విపత్తు నిర్వహణ',
+               'geo': 'భూగోళశాస్త్రం (జాగ్రఫీ)', 'ih': 'భారతదేశ చరిత్ర, సంస్కృతి', 'tsh': 'తెలంగాణ చరిత్ర, సంస్కృతి', 'pol': 'భారత రాజ్యాంగం, పాలన',
+               'soc': 'భారతీయ సమాజం, సామాజిక అంశాలు', 'eco': 'భారత, తెలంగాణ ఆర్థిక వ్యవస్థ', 'dev': 'అభివృద్ధి, మార్పు', 'tsp': 'తెలంగాణ రాష్ట్ర విధానాలు',
+               'tsm': 'తెలంగాణ ఉద్యమం, రాష్ట్ర ఆవిర్భావం', 'men': 'మెంటల్ ఎబిలిటీ', 'eng': 'ఇంగ్లీష్'}
+TG1_TE_P = 'ప్రిలిమినరీ టెస్ట్ (జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ)'
+TG1_PAPERS = [
+  dict(id='g1p24', file='tgpsc-group-1-prelims-2024.txt', year=2024, stage='Preliminary Test', short='Group-I Prelims 2024',
+       kwname='TGPSC Group 1 Prelims 2024',
+       title='TGPSC Group-I Preliminary Test 2024 (General Studies & Mental Ability)', notif='Notification 02/2024 · master booklet', held='9 June 2024',
+       key="TGPSC's final key", fmt='mcq', slug='tgpsc-group-1-prelims-2024-question-paper-with-answers',
+       alt='General Studies & Mental Ability', te_paper=TG1_TE_P,
+       blurb='Preliminary Test: General Studies & Mental Ability (current affairs, international relations, science and technology, environment and disaster management, '
+             'geography, Indian and Telangana history and culture, polity, society, Telangana policies and mental ability), 150 questions, 150 marks, 150 minutes, '
+             'in English and Telugu. The Prelims only shortlists candidates for the Mains (1:50); its marks do not count in the final ranking.'),
+  dict(id='g1p23', file='tgpsc-group-1-prelims-2023-cancelled.txt', year=2023, stage='Preliminary Test (cancelled)', short='Group-I Prelims 2023 (cancelled)',
+       kwname='TSPSC Group 1 Prelims 2023 (June 2023)',
+       title='TSPSC Group-I Preliminary Test 2023, held 11 June 2023 and later cancelled (General Studies & Mental Ability)', notif='Notification 04/2022 · paper code 22040', held='11 June 2023',
+       key="TSPSC's final key", fmt='mcq', slug='tgpsc-group-1-prelims-2023-question-paper-with-answers',
+       alt='General Studies & Mental Ability', te_paper=TG1_TE_P,
+       blurb='The re-held Preliminary Test of Notification 04/2022, set aside by the Telangana High Court on 23 September 2023; the notification was withdrawn in February 2024 and '
+             'replaced by Notification 02/2024. A full TSPSC paper with its final key, so still good practice: 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
+  dict(id='g1p22', file='tgpsc-group-1-prelims-2022-cancelled.txt', year=2022, stage='Preliminary Test (cancelled)', short='Group-I Prelims 2022 (cancelled)',
+       kwname='TSPSC Group 1 Prelims 2022 (October 2022)',
+       title='TSPSC Group-I Preliminary Test 2022, held 16 October 2022 and later cancelled (General Studies & Mental Ability)', notif='Notification 04/2022 · paper code 22040', held='16 October 2022',
+       key="TSPSC's final key", fmt='mcq', slug='tgpsc-group-1-prelims-2022-question-paper-with-answers',
+       alt='General Studies & Mental Ability', te_paper=TG1_TE_P,
+       blurb='The first Preliminary Test of Notification 04/2022 (503 posts), cancelled by TSPSC in March 2023 after the question paper leak. A full TSPSC paper with its final key, '
+             'so still good practice: 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
+]
+def _tg2(n, held, sub, te_sub, blurb):
+    return dict(id=f'g24p{n}', file=f'tgpsc-group-2-2024-paper{n}.txt', year=2024, stage=f'Paper {"I" * n if n < 4 else "IV"}', short=f'Group-II 2024 Paper {n}',
+                kwname=f'TGPSC Group 2 Paper {n} 2024 {sub}', title=f'TGPSC Group-II 2024: Paper {"I" * n if n < 4 else "IV"} ({sub})',
+                notif='Notification 28/2022 · master booklet', held=held, key="TGPSC's final key", fmt='mcq',
+                slug=f'tgpsc-group-2-2024-paper-{n}-' + sub.lower().replace(' & ', '-').replace(', ', '-').replace(' ', '-') + '-question-paper-with-answers',
+                alt=sub, te_paper=f'పేపర్-{n} {te_sub}', blurb=blurb + ' 150 questions, 150 marks, 150 minutes, in English and Telugu.')
+TG2_PAPERS = [
+  _tg2(1, '15 December 2024', 'General Studies & General Abilities', 'జనరల్ స్టడీస్ & జనరల్ ఎబిలిటీస్',
+       'Paper I: General Studies & General Abilities (current affairs, international relations, science and technology, environment and disaster management, geography, '
+       'history and culture of India and Telangana, Telangana policies, social exclusion and inclusive policies, mental ability and English).'),
+  _tg2(2, '15 December 2024', 'History, Polity & Society', 'చరిత్ర, రాజకీయ వ్యవస్థ, సమాజం',
+       'Paper II: History, Polity & Society (socio-cultural history of India and Telangana, overview of the Indian Constitution and politics, social structure, issues and public policies).'),
+  _tg2(3, '16 December 2024', 'Economy & Development', 'ఆర్థిక వ్యవస్థ, అభివృద్ధి',
+       'Paper III: Economy & Development (Indian economy, Telangana economy, and issues of development and change).'),
+  _tg2(4, '16 December 2024', 'Telangana Movement & State Formation', 'తెలంగాణ ఉద్యమం, రాష్ట్ర ఆవిర్భావం',
+       'Paper IV: Telangana Movement & State Formation (the idea of Telangana 1948–1970, the mobilisation phase 1971–1990, and towards the formation of Telangana 1991–2014).'),
+]
+
 # ---------- TGPSC (formerly TSPSC): Manager (Engineering) in HMWSSB, Hyderabad's water board ----------
 HM_PAPERS = [
   dict(id='m15a', file='tgpsc-hmwssb-manager-2015-paper1-gs.txt', year=2015, stage='Written Examination Paper I', short='Manager 2015 Paper 1 (GS)',
@@ -1228,6 +1298,23 @@ def exam_confs():
                         "Answers come from TSLPRB's final keys for booklet A of the 2022 Preliminary Written Test (key released on 21 October 2022) and of the 2023 Final Written Examination. "
                         "Questions the key deleted, or for which it accepted three or four options, are left out, as are the few that cannot be read cleanly in the photographed booklet. The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet." if pc_m else
                         "Answers come from TSLPRB's final key for booklet A, released on 21 October 2022. Questions the key deleted, or for which it accepted three or four options, are left out. The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet.")),
+      dict(id='tgpsc-group-1', dir='tgpsc-group-1', src='tgpsc-group-1', key='tg-g1', name='TGPSC Group-I Services',
+           short='TGPSC Group-I', seo='TGPSC Group 1', slugp='tgpsc-group-1', papers=TG1_PAPERS, subjects=TGG_SUBJECTS, faq=FAQ_TG1,
+           board='TGPSC', l2=L2_TE, pb='/tgpsc-group-1/', keyname="TSPSC/TGPSC's final key", keyshort="TSPSC/TGPSC's final keys", bits=True,
+           te_name='టీజీపీఎస్సీ గ్రూప్-1 సర్వీసెస్', te_paper='ప్రిలిమినరీ టెస్ట్', subj_te=TGG_SUBJ_TE,
+           title='TGPSC Group 1 Prelims Previous Question Papers with Answers – 2024, 2023 & 2022 (Cancelled) Papers, English & Telugu | Learn with Anil',
+           h1='TGPSC Group 1 Prelims previous question papers <em>with answers.</em>',
+           l2line='టీజీపీఎస్సీ (టీఎస్‌పీఎస్సీ) గ్రూప్-1 ప్రిలిమ్స్ పాత ప్రశ్నాపత్రాలు సమాధానాలతో — 2024, రద్దయిన 2023, 2022 పరీక్షలు, తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           aka='Also known as TSPSC Group 1 or Telangana Group-I Services. Old question papers and PYQs of the Preliminary Test, with the final key.',
+           aka_short='TGPSC (TSPSC) Group-I Services, Telangana',
+           desc=lambda t: (f"TGPSC (TSPSC) Group 1 Prelims previous question papers with answers from the final keys: the 9 June 2024 paper and the two cancelled papers of "
+                           f"16 October 2022 and 11 June 2023, General Studies & Mental Ability. {t:,} questions in English and Telugu with explanations; "
+                           f"practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+           eyebrow='TGPSC (TSPSC) · Group-I Services · Preliminary Test · 2022–2024',
+           papers_note="Answers come from the commission's final keys on the master booklets: the Preliminary Test of 9 June 2024 (Notification 02/2024) and the two Preliminary Tests "
+                       "of Notification 04/2022, held on 16 October 2022 (cancelled by TSPSC in March 2023 after the question paper leak) and 11 June 2023 (set aside by the High Court "
+                       "on 23 September 2023). Those two exams were cancelled, but the papers and keys are TSPSC's own, so they are good practice. Questions the key deleted are left out; "
+                       "where the key accepted more than one option, each accepted option is shown as correct. Every question is in English and Telugu, as printed in the booklet."),
       dict(id='tgpsc-hmwssb-manager', dir='tgpsc-hmwssb-manager', src='tgpsc-hmwssb-manager', key='tg-hmws', name='TGPSC HMWSSB Manager (Engineering)',
            short='HMWSSB Manager', seo='TGPSC HMWSSB Manager', slugp='tgpsc-hmwssb-manager', papers=HM_PAPERS, subjects=HM_SUBJECTS, faq=FAQ_HM,
            board='TGPSC', l2=L2_TE, pb='/tgpsc-hmwssb-manager/', keyname="TSPSC's final key", keyshort="TSPSC's final key", bits=True,
@@ -1634,6 +1721,12 @@ def main():
             open(os.path.join(outdir, rel), 'w', encoding='utf-8').write(content)
             if is_root: open(os.path.join(DIST, 'artifact', rel), 'w', encoding='utf-8').write(content)
         for rel in pages: all_pages[prefix + rel] = None
+        if conf['id'] == 'tgpsc-group-1':   # TGPSC Group-I Mains questions only (tools/tg1mains.py; Anil, 8 Nov 2026)
+            import tg1mains
+            for rel, content in tg1mains.pages(sys.modules[__name__], conf).items():
+                fp = os.path.join(outdir, rel); os.makedirs(os.path.dirname(fp), exist_ok=True)
+                open(fp, 'w', encoding='utf-8').write(content)
+                all_pages[prefix + (rel[:-len('index.html')] if rel.endswith('index.html') else rel)] = None
         if conf['id'] in MAINS_EXAMS:   # APPSC Group-1 Mains previous questions with model answers (tools/g1mains.py)
             import g1mains
             for rel, content in g1mains.pages(sys.modules[__name__], conf).items():
@@ -1858,6 +1951,8 @@ def exam_terms(e, cat):
     if e['id'] == 'appsc-analyst': words += ['analyst', 'analyst grade 2', 'analyst grade ii', 'pollution control board', 'appcb', 'chemistry', 'biochemistry', 'biology', 'environmental science']
     if e['id'] == 'appsc-fro': words += ['fro', 'forest range officer', 'forest', 'forestry', 'general forestry', 'range officer', 'forest department']
     if e['id'] == 'appsc-eo': words += ['endowments', 'endowment officer', 'eo grade 3', 'eo grade iii', 'executive officer', 'temple', 'devadaya', 'dharmadaya', 'hindu philosophy']
+    if e['id'] == 'tgpsc-group-1': words += ['tspsc group 1', 'tgpsc group 1', 'group 1', 'group i', 'group-1', 'telangana group 1', 'prelims', 'preliminary test', 'cancelled', 'telangana', 'tspsc', 'tgpsc']
+    if e['id'] == 'tgpsc-group-2': words += ['tspsc group 2', 'tgpsc group 2', 'group 2', 'group ii', 'group-2', 'telangana group 2', 'telangana movement', 'economy and development', 'telangana', 'tspsc', 'tgpsc']
     if 'hmwssb' in e['id']: words += ['hmwssb', 'water board', 'jalamandali', 'metro water', 'manager engineering', 'civil engineering', 'hmws', 'ece', 'electronics', 'electronics and communication', 'communication engineering']
     if 'civil-judge' in e['id']: words += ['civil judge', 'junior civil judge', 'jcj', 'judiciary', 'high court', 'llb', 'law']
     if e['cat'] == 'ap': words += ['appsc', 'andhra'] + ([f'ap group {ROMAN[m.group(1)]}'] if m else [])
@@ -2385,6 +2480,48 @@ def FAQ_FRO(total, npapers):
     ]
 
 
+def FAQ_TG1(total, npapers):
+    return [
+      ('Where can I get TGPSC Group 1 Prelims previous question papers with answers?',
+       f'This page has {total:,} questions from {npapers} TSPSC/TGPSC Group-I Preliminary Test papers: the exam of 9 June 2024 (Notification 02/2024) and the two exams of '
+       'Notification 04/2022 that were later cancelled (16 October 2022 and 11 June 2023). Every answer is from the final key, and each question has a short explanation in English and Telugu. '
+       'Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam.'),
+      ('Why were the 2022 and 2023 Group-I Prelims cancelled?',
+       'TSPSC cancelled the Prelims of 16 October 2022 in March 2023 after its question paper leaked. The exam was held again on 11 June 2023, and the Telangana High Court set it aside on '
+       '23 September 2023 because the commission had not followed its own procedure (biometric attendance was not taken). On 19 February 2024 the commission withdrew Notification 04/2022 '
+       '(503 posts) and issued Notification 02/2024 for 563 posts, whose Prelims was held on 9 June 2024.'),
+      ('Are the cancelled papers worth practising?',
+       'Yes. They are complete TSPSC papers of the same syllabus and pattern (150 questions on General Studies and Mental Ability), with TSPSC\'s final keys, so they show '
+       'what the commission asks and how it frames questions. Only the current-affairs questions are dated.'),
+      ('What is the TGPSC Group-I exam pattern?',
+       'Under Notification 02/2024 the Preliminary Test is one objective paper, General Studies & Mental Ability: 150 questions, 150 marks, 150 minutes, in English, Telugu and Urdu. '
+       'It only shortlists candidates for the Mains (50 per post in each multi-zone); its marks are not counted for ranking. The Mains has six descriptive papers of 150 marks each '
+       '(General Essay; History, Culture & Geography; Indian Society, Constitution & Governance; Economy & Development; Science & Technology and Data Interpretation; '
+       'Telangana Movement & State Formation), 900 marks in all, plus a qualifying General English paper.'),
+      ('Are the questions in Telugu?',
+       'Yes. TSPSC/TGPSC prints every Prelims question in English and Telugu, and each question here is shown in both, with the explanation in both languages.'),
+      ('Which questions are left out?',
+       'Questions the commission deleted in its final key are left out. Where the key accepted more than one option, each accepted option is shown as correct.'),
+    ]
+
+
+def FAQ_TG2(total, npapers):
+    return [
+      ('Where can I get TGPSC Group 2 previous question papers with answers?',
+       f'This page has {total:,} questions from the {npapers} papers of the TGPSC Group-II written examination held on 15 and 16 December 2024 (Notification 28/2022, 783 posts): '
+       'Paper I General Studies & General Abilities, Paper II History, Polity & Society, Paper III Economy & Development and Paper IV Telangana Movement & State Formation. '
+       "Every answer is from TGPSC's final key, and each question has a short explanation in English and Telugu."),
+      ('What is the TGPSC Group-II exam pattern?',
+       'Four objective papers, each with 150 questions, 150 marks and 150 minutes, 600 marks in all, in English, Telugu and Urdu. Selection is on the written examination marks.'),
+      ('When were the 2024 Group-II papers held?',
+       'Papers I and II on 15 December 2024 and Papers III and IV on 16 December 2024. TGPSC released the general ranking list with the final key on 11 March 2025.'),
+      ('Are the questions in Telugu?',
+       'Yes. Every question is shown in English and Telugu as printed in the booklet, with the explanation in both languages (the English-language questions of Paper I are in English only).'),
+      ('Which questions are left out?',
+       "Questions TGPSC deleted in its final key are left out. Where the key accepted more than one option, each accepted option is shown as correct."),
+    ]
+
+
 def FAQ_AEE(total, npapers):
     return [
       ('Where can I get APPSC Assistant Environmental Engineer previous question papers with answers?',
@@ -2623,7 +2760,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -4935,6 +5072,15 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
                     + f'<div class="etiles">{t1}{t2}{t3}</div>' + hd('Mains', 'Descriptive papers: previous questions with model answers')
                     + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + g1mains.tiles_credit() + exam_clock_html(conf)
                     + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
+    if conf['id'] == 'tgpsc-group-1':   # TGPSC Group-I: Prelims tiles and Mains tiles (Mains questions only; tools/tg1mains.py)
+        import tg1mains
+        tq = tg1mains.load(SRC)
+        if tq:
+            hd = lambda h, s: f'<div class="section-title" style="margin:{"0" if h == "Prelims" else "26px"} 0 12px"><h2>{h}</h2><span class="muted" style="font-size:14px">{s}</span></div>'
+            return (f'<section class="wrap section">' + hd('Prelims', 'Preliminary test: previous papers, mock tests, sectional tests')
+                    + f'<div class="etiles">{t1}{t2}{t3}</div>' + hd('Mains', 'Descriptive papers: previous questions in English and Telugu')
+                    + f'<div class="etiles">{tg1mains.tiles(conf, len(tq))}</div>' + exam_clock_html(conf)
+                    + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
     return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + exam_clock_html(conf)
             + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + mains_section(conf, mains) + '</section>')
 
@@ -5499,7 +5645,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);

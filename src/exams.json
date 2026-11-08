@@ -338,7 +338,8 @@
    "cat": "tg",
    "b": "TGPSC",
    "t": "Group-I",
-   "n": "Group-I Services"
+   "n": "Group-I Services (Prelims)",
+   "live": "tgpsc-group-1/"
   },
   {
    "id": "tgpsc-group-2",
