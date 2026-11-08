@@ -117,6 +117,13 @@
   }
  },
  "appsc-fro": {
+  "f2020a": {
+   "bytes": 472334,
+   "file": "appsc-fro-f2020a-3d0a09eb2c.bin",
+   "key": "bk-appsc-fro-f2020a",
+   "name": "LearnWithAnil-APPSC-FRO-Mains-2020-General-Studies-Mental-Ability-Question-Paper.pdf",
+   "pages": 18
+  },
   "f2020c": {
    "bytes": 337829,
    "file": "appsc-fro-f2020c-da54f2573a.bin",
@@ -131,6 +138,13 @@
    "name": "LearnWithAnil-APPSC-FRO-Mains-2020-General-Forestry-2-General-Forestry-II-Question-Paper.pdf",
    "pages": 15
   },
+  "f2023a": {
+   "bytes": 915388,
+   "file": "appsc-fro-f2023a-f623a67ef2.bin",
+   "key": "bk-appsc-fro-f2023a",
+   "name": "LearnWithAnil-APPSC-FRO-Mains-2023-Paper-1-General-Studies-Mental-Ability-Question-Paper.pdf",
+   "pages": 40
+  },
   "f2023c": {
    "bytes": 338838,
    "file": "appsc-fro-f2023c-bc5c265fc1.bin",
@@ -144,6 +158,13 @@
    "key": "bk-appsc-fro-f2023d",
    "name": "LearnWithAnil-APPSC-FRO-Mains-2023-General-Forestry-2-General-Forestry-II-Question-Paper.pdf",
    "pages": 20
+  },
+  "f2025s": {
+   "bytes": 791800,
+   "file": "appsc-fro-f2025s-30b0158413.bin",
+   "key": "bk-appsc-fro-f2025s",
+   "name": "LearnWithAnil-APPSC-FRO-Screening-Test-2025-Question-Paper.pdf",
+   "pages": 36
   }
  },
  "appsc-group-1": {
