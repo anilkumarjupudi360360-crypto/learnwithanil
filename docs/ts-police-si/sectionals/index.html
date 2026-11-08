@@ -901,14 +901,14 @@ details.upc .exams{margin-top:8px}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ts-si-1c36fba9f8.js"></script>
+<script src="data/ts-si-60c4c39c3e.js"></script>
 <script>
 (function(){
 "use strict";
 const DATA = window.LWA_DATA || JSON.parse(document.getElementById("lwa-data").textContent);
 const PHOTO = "../anil.jpg";
 const EKEY = DATA.key || "appsc-g2", KEY = "lwa-"+EKEY+"-v1", PKEY = "lwa-"+EKEY+"-prefs-v1";
-const LET = ["A","B","C","D"];
+const LET = ["A","B","C","D","E"];   // E: the bank exams (SBI PO, IBPS SO mocks) have five options
 const QS = DATA.questions, PAPERS = DATA.papers, SUBJECTS = DATA.subjects;
 const QMAP = Object.fromEntries(QS.map(q=>[q.id,q]));
 const PMAP = Object.fromEntries(PAPERS.map(p=>[p.id,p]));
@@ -1305,7 +1305,7 @@ async function startMock(id, part, mode){   // mode "practice": check each answe
     if(mm){
       const pt = (mm.parts||[]).find(x=>x[0]===part);
       if(pt){ qs = qs.filter(q=>pt[2].includes(q.s)); pname = pt[1]; }
-      mins = Math.max(1, Math.round(mm.mins * qs.length / r.questions.length));   // a part gets its share of the real time limit
+      mins = (part && mm.pmins && mm.pmins[part]) || Math.max(1, Math.round(mm.mins * qs.length / r.questions.length));   // a part: its real section limit (bank exams: 20 min) or its share of the full time
     }
     else if(part==="ari" || part==="rea") qs = qs.filter(q=>q.s===part); else if(part==="gs") qs = qs.filter(q=>q.s!=="ari" && q.s!=="rea");
     const practice = mode==="practice";
@@ -1767,6 +1767,7 @@ const HUBT = {
   allB:{en:'← All exam boards', hi:'← सभी परीक्षा बोर्ड', te:'← అన్ని పరీక్షల బోర్డులు'},
   search:{en:'Search an exam, e.g. Group-II, CGL, NDA, Police SI', hi:'परीक्षा खोजें, जैसे Group-II, CGL, NDA, Police SI', te:'పరీక్షను వెతకండి, ఉదా. Group-II, CGL, NDA, Police SI'},
   live:{en:'Live · {N} questions', hi:'उपलब्ध · {N} प्रश्न', te:'అందుబాటులో · {N} ప్రశ్నలు'},
+  liveMk:{en:'Live · mock tests', hi:'उपलब्ध · मॉक टेस्ट', te:'అందుబాటులో · మాక్ టెస్టులు'},   // SBI PO / IBPS SO: mock tests only
   soon:{en:'Upcoming', hi:'आगामी', te:'రాబోయేది'},
   count:{en:'{n} exams · {l} live now', hi:'{n} परीक्षाएँ · {l} अभी उपलब्ध', te:'{n} పరీక్షలు · {l} ఇప్పుడు అందుబాటులో'},
   emptyT:{en:'No exam matches your search', hi:'आपकी खोज से कोई परीक्षा नहीं मिली', te:'మీరు వెతికిన పరీక్ష దొరకలేదు'},
@@ -1814,7 +1815,7 @@ function applyHubLang(){   // the start page's own text follows the language but
   if(!DATA.hub) return; const L = hubLang();
   document.querySelectorAll("#hub-static [data-i18n]").forEach(el=>{ el.innerHTML = HT(el.dataset.i18n, L); setLangAttr(el, L); });
   const s = $("#examSearch"); if(s){ s.placeholder = HT("search", L); setLangAttr(s, L); }
-  document.querySelectorAll("#hub-static .ex-st").forEach(el=>{ const n = el.dataset.n; el.textContent = n ? HT("live", L).replace("{N}", Number(n).toLocaleString("en-IN")) : HT("soon", L); setLangAttr(el, L); });
+  document.querySelectorAll("#hub-static .ex-st").forEach(el=>{ const n = el.dataset.n; el.textContent = n==="mk" ? HT("liveMk", L) : n ? HT("live", L).replace("{N}", Number(n).toLocaleString("en-IN")) : HT("soon", L); setLangAttr(el, L); });
 }
 
 /* ---------- exam hub (start page) + one exam's page ---------- */
@@ -2012,12 +2013,12 @@ function svHTML(html){   // a pass holder sees "included" instead of the price b
 }
 function vMocks(){
   const x = esc(DATA.examSeo||DATA.examShort||"");
-  return `<div class="wrap view">${head("Mock tests", x+" mock tests", "Full-length mock tests with a timer, and every real previous paper as a timed test, with answers and explanations.")}
+  return `<div class="wrap view">${head("Mock tests", x+" mock tests", DATA.mockonly ? "Full-length mock tests with a timer, written by Learn with Anil in the real exam pattern, with answers and explanations." : "Full-length mock tests with a timer, and every real previous paper as a timed test, with answers and explanations.")}
     <div class="sv">${svHTML(DATA.mockHtml||"")}</div></div>`;
 }
 function vSectionals(){
   const x = esc(DATA.examSeo||DATA.examShort||"");
-  return `<div class="wrap view">${head("Sectional tests", x+" sectional tests", "Practise one subject or one section at a time, with a timer.")}
+  return `<div class="wrap view">${head("Sectional tests", x+" sectional tests", DATA.mockonly ? "Practise one section of a mock at a time, with the real 20-minute limit." : "Practise one subject or one section at a time, with a timer.")}
     <div class="sv">${svHTML(DATA.secHtml||"")}</div></div>`;
 }
 function linkAction(sp){   // a link to this exam with ?buy / ?pdf / ?mock / ?sec / ?practice / ?test: do it here (same as on page load)
@@ -2202,7 +2203,7 @@ function vQuiz(){
         <h3>Question palette</h3>
         <div class="pgrid">${pal}</div>
         ${legend}
-        <p class="muted" style="font-size:13px">Keys: A–D to choose${test?"":", Enter for the next question"}, ← → to move.${test?"":" Answers are shown after you submit."}</p>
+        <p class="muted" style="font-size:13px">Keys: ${isMCQ(q) && q.o.length===5 ? "A–E" : "A–D"} to choose${test?"":", Enter for the next question"}, ← → to move.${test?"":" Answers are shown after you submit."}</p>
       </aside>
     </div>
   </div>`;
@@ -2597,7 +2598,7 @@ function vAbout(){
         <div class="bio">
           <p>I am a civil-services educator with 2.5 years of teaching and mentorship for UPSC, APPSC and TGPSC aspirants. I teach Indian Polity, Governance and Ethics, build test series and study material, and have evaluated more than 2,000 Mains answer copies.</p>
           <p>As Course Coordinator, faculty and mentor, I plan the Group-1 and Group-2 programmes and their test series, coordinate the UPSC mock interview programme in Delhi, and mentor Group-1, Group-2 and UPSC aspirants. I have headed several Prelims and Mains test series.</p>
-          <p>I built Learn with Anil so that every aspirant can practise the real previous questions of their exam, topic by topic, as practice quizzes or timed tests in English and their own language, and see clearly where they are losing marks. Today it has 11,583 questions from 19 exams (APPSC, TGPSC, TS Police, UPSC and SSC), and one ₹${PAYC ? PAYC.pyq.price : 45} All-in-One Pass opens all of them for 12 months: less than the price of one guide book.</p>
+          <p>I built Learn with Anil so that every aspirant can practise the real previous questions of their exam, topic by topic, as practice quizzes or timed tests in English and their own language, and see clearly where they are losing marks. Today it has 11,583 questions from 21 exams (APPSC, TGPSC, TS Police, UPSC and SSC), and one ₹${PAYC ? PAYC.pyq.price : 45} All-in-One Pass opens all of them for 12 months: less than the price of one guide book.</p>
           <p>Our goal is 1 lakh previous questions of government exams under one roof, with a mock test series for every exam, all in the same ₹${PAYC ? PAYC.pyq.price : 45} pass. I am building it alone, one exam at a time. If you would like to help, see <a href="/funders.html">Fund this project</a>.</p>
         </div>
         <dl>
@@ -3112,7 +3113,7 @@ document.addEventListener("keydown", e=>{
   if(e.target.matches && e.target.matches("input,select,textarea")) return;
   const id = QZ.ids[QZ.i], q = QMAP[id], k = e.key.toUpperCase();
   if(isMCQ(q)){
-    const idx = LET.indexOf(k) >= 0 ? LET.indexOf(k) : ["1","2","3","4"].indexOf(k);
+    const idx = LET.indexOf(k) >= 0 ? LET.indexOf(k) : ["1","2","3","4","5"].indexOf(k);
     if(idx>=0){ delete QZ.chk[id]; if(QZ.ans[id]===idx) delete QZ.ans[id]; else QZ.ans[id]=idx; render(); e.preventDefault(); return; }
   }
   if(e.key==="ArrowRight" && QZ.i<QZ.ids.length-1){ QZ.i++; render(); showQ(); }
