@@ -923,6 +923,49 @@ FRO_PAPERS = [
   _fro_paper('f2020d', 2020, 'Notification 10/2018', '19 March 2020', 2, 'Paper IV'),
 ]
 
+# APPSC Assistant Environmental Engineer, A.P. Pollution Control Board (Anil, 8 Nov 2026: "pls add pyqs for it in ap section",
+# Notification 08/2026 of 6 Oct 2026, 41 posts incl. 1 carried forward, applications 6 to 27 Oct 2026). Previous papers:
+# Notification 15/2023, computer-based test of 25 March 2025, APPSC's final keys of 6 Aug 2025 (APOnline master question
+# papers, correct option ticked). Paper I GS & MA in English and Telugu (the same paper was set that day for Analyst
+# Grade-II); Paper II Common Subject in English only. Exam id appsc-env-engineer, because the start page already has an
+# "appsc-aee" tile (Assistant Executive Engineer).
+AEE_P2_SUBJECTS = [
+  ('ecs', 'Ecosystems', 'ecosystems', ['Ecosystem Structure & Function', 'Food Chains, Webs & Pyramids', 'Biogeochemical Cycles & Bioaccumulation']),
+  ('nrr', 'Natural Resources', 'natural-resources', ['Water Resources & Dams', 'Mineral & Land Resources', 'Forest Resources', 'Energy Resources']),
+  ('bdv', 'Biodiversity & Biotic Resources', 'biodiversity', ['Biodiversity & Its Value', 'Hotspots & Threats', 'Conservation & Biodiversity Act']),
+  ('emt', 'Engineering Materials', 'engineering-materials', ['Structure & Properties', 'Phase Diagrams & Heat Treatment', 'Stress-Strain Behaviour']),
+  ('flu', 'Fluid Mechanics & Hydraulics', 'fluid-mechanics-hydraulics', ['Fluid Properties & Pressure', 'Fluid Kinematics & Dynamics', 'Pipe Flow & Losses', 'Dimensional Analysis & Boundary Layer']),
+  ('ptd', 'Process Calculations & Thermodynamics', 'process-calculations-thermodynamics', ['Material & Energy Balances', 'Laws of Thermodynamics', 'Equations of State & Properties']),
+  ('apc', 'Air, Water, Soil & Noise Pollution', 'pollution-control-technologies', ['Air Pollution & Control', 'Water Quality & Wastewater Treatment', 'Soil Pollution', 'Noise Pollution']),
+  ('swm', 'Solid & Industrial Waste Management', 'solid-industrial-waste-management', ['Municipal Solid Waste', 'E-Waste & Hazardous Waste', 'Bioremediation']),
+  ('gel', 'Global Environment, Policies & Laws', 'environmental-policies-laws', ['Climate Change & Ozone', 'International Conventions', 'Indian Environmental Laws & Rules']),
+  ('eia', 'EIA & Sustainable Development', 'eia-sustainable-development', ['EIA & EMP', 'Sustainable Development & Green Concepts']),
+]
+AEE_SUBJECTS = AEE_P2_SUBJECTS + [s for s in AMVI_AP_SUBJECTS if s not in AMVI_AUTO]
+AEE_SUBJ_TE = dict(AMVI_AP_SUBJ_TE, ecs='పర్యావరణ వ్యవస్థలు', nrr='సహజ వనరులు', bdv='జీవవైవిధ్యం, జీవ వనరులు', emt='ఇంజనీరింగ్ మెటీరియల్స్',
+                   flu='ఫ్లూయిడ్ మెకానిక్స్, హైడ్రాలిక్స్', ptd='ప్రాసెస్ కాలిక్యులేషన్స్, థర్మోడైనమిక్స్', apc='వాయు, నీటి, నేల, శబ్ద కాలుష్యం',
+                   swm='ఘన, పారిశ్రామిక వ్యర్థాల నిర్వహణ', gel='ప్రపంచ పర్యావరణ సమస్యలు, విధానాలు, చట్టాలు', eia='పర్యావరణ ప్రభావ అంచనా, సుస్థిర అభివృద్ధి')
+def aee_p1():
+    """True once the 2025 Paper I (GS & MA) source is on the site (Anil, 8 Nov 2026: "focus on paper-2 first")."""
+    return 'v25g' in have_src('appsc-env-engineer', AEE_PAPERS)
+AEE_PAPERS = [
+  dict(id='v25c', file='appsc-aee-2025-paper2-common-subject.txt', year=2025, stage='Written Examination Paper II', short='AEE 2025 Paper 2 (Common Subject)',
+       kwname='APPSC Assistant Environmental Engineer 2025 Paper 2 Common Subject',
+       title='APPSC Assistant Environmental Engineer 2025: Paper II (Common Subject, A.P. Pollution Control Board)', notif='Notification 15/2023 · CBT', held='25 March 2025',
+       key="APPSC's final key", fmt='mcq', slug='appsc-assistant-environmental-engineer-2025-paper-2-common-subject-question-paper-with-answers',
+       alt='Common Subject (Environmental Engineering)', te_paper='పేపర్-2 కామన్ సబ్జెక్ట్', en_only=True,
+       blurb='Paper II: Common Subject (ecosystems, natural resources, biodiversity, engineering materials, fluid mechanics and hydraulics, process calculations and thermodynamics, '
+             'air, water, soil and noise pollution and their control, solid and e-waste, environmental laws and conventions, EIA and sustainable development), computer-based test, '
+             '150 questions, 300 marks, 150 minutes, in English. In the 2026 exam (Notification 08/2026) Paper II carries 150 marks.'),
+  dict(id='v25g', file='appsc-aee-2025-paper1-gsma.txt', year=2025, stage='Written Examination Paper I', short='AEE 2025 Paper 1 (GS & MA)',
+       kwname='APPSC Assistant Environmental Engineer 2025 Paper 1 General Studies & Mental Ability',
+       title='APPSC Assistant Environmental Engineer 2025: Paper I (General Studies & Mental Ability)', notif='Notification 15/2023 · CBT', held='25 March 2025',
+       key="APPSC's final key", fmt='mcq', slug='appsc-assistant-environmental-engineer-2025-paper-1-general-studies-mental-ability-question-paper-with-answers',
+       alt='General Studies & Mental Ability', te_paper=EO_TE_P1,
+       blurb='Paper I: General Studies & Mental Ability (current affairs, science, history, geography, polity, economy, AP affairs and mental ability), computer-based test, '
+             '150 questions, 150 marks, 150 minutes, in English and Telugu. The same paper was set that day for Analyst Grade-II of the A.P. Pollution Control Board.'),
+]
+
 def exam_confs():
     T = ts_text()
     E = epfo_text()
@@ -1151,6 +1194,24 @@ def exam_confs():
                            f"with answers from APPSC's final keys, {t:,} questions with explanations. Practice quizzes and timed mock tests for the 2026 Common Paper with the ₹45 All-in-One Pass."),
            eyebrow='APPSC · Analyst Grade-II · A.P. Pollution Control Board · 2025',
            papers_note="Answers come from APPSC's final keys on the master question papers of the March 2025 computer-based test (Notification 02/2024): the option marked correct there is the answer. Questions APPSC ignored for all candidates are left out; where APPSC accepted two options, both are shown as correct. In 2025 Paper II was set separately for each degree subject; from 2026 it is one Common Paper with all four subjects, so practise all four. The papers are in English only."),
+      dict(id='appsc-env-engineer', dir='appsc-assistant-environmental-engineer', src='appsc-env-engineer', key='ap-enveng', name='APPSC Assistant Environmental Engineer (A.P. Pollution Control Board)',
+           short='APPSC Asst. Environmental Engineer', seo='APPSC Assistant Environmental Engineer', slugp='appsc-assistant-environmental-engineer', papers=AEE_PAPERS, subjects=AEE_SUBJECTS, faq=FAQ_AEE,
+           board='APPSC', l2=L2_TE, pb='/appsc-assistant-environmental-engineer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
+           te_name='ఏపీపీఎస్సీ అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ (ఏపీ కాలుష్య నియంత్రణ మండలి)', te_paper='రాత పరీక్ష', subj_te=AEE_SUBJ_TE,
+           title=('APPSC Assistant Environmental Engineer Previous Question Papers with Answers – AP Pollution Control Board AEE 2025, ' + ('GS & Common Subject' if aee_p1() else 'Paper 2 Common Subject') + ' | Learn with Anil'),
+           h1='APPSC Assistant Environmental Engineer previous question papers <em>with answers.</em>',
+           l2line=('ఏపీపీఎస్సీ అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ (ఏపీ కాలుష్య నియంత్రణ మండలి) 2025 ప్రశ్నాపత్రాలు సమాధానాలతో — '
+                   + ('పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), ' if aee_p1() else '') + 'పేపర్-2 కామన్ సబ్జెక్ట్ (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.'),
+           aka='Assistant Environmental Engineer (AEE) in the A.P. Pollution Control Board (APPCB), recruited by the Andhra Pradesh Public Service Commission.',
+           aka_short='APPSC Assistant Environmental Engineer (AP Pollution Control Board)',
+           desc=lambda t: (f"APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) previous question papers: the 2025 "
+                           + ("Paper I General Studies & Mental Ability (English and Telugu) and Paper II Common Subject" if aee_p1() else "Paper II Common Subject (environmental engineering)")
+                           + f" with answers from APPSC's final keys, {t:,} questions with explanations. Practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+           eyebrow='APPSC · Assistant Environmental Engineer · A.P. Pollution Control Board · 2025',
+           papers_note="Answers come from APPSC's final keys (6 August 2025) on the master question papers of the computer-based test held on 25 March 2025 (Notification 15/2023): the option marked correct there is the answer. "
+                       "Questions APPSC ignored for all candidates are left out; where APPSC accepted more than one option, each accepted option is shown as correct. "
+                       + ("Paper I is in English and Telugu as printed; Paper II (Common Subject) is in English only." if aee_p1() else
+                          "Paper II (Common Subject) is set in English only. Paper I (General Studies & Mental Ability, English and Telugu) is being added next.")),
       dict(id='appsc-fro', dir='appsc-forest-range-officer', src='appsc-fro', key='ap-fro', name='APPSC Forest Range Officer (FRO)',
            short='APPSC FRO', seo='APPSC FRO', slugp='appsc-fro', papers=FRO_PAPERS, subjects=FRO_SUBJECTS, faq=FAQ_FRO,
            board='APPSC', l2=L2_TE, pb='/appsc-forest-range-officer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
@@ -1673,6 +1734,7 @@ def exam_terms(e, cat):
     if 'police' in e['id'] and e['cat'] == 'tg': words += ['ts police', 'tg police', 'tslprb', 'tgprb', 'si', 'constable']
     if 'police' in e['id'] and e['cat'] == 'ap': words += ['ap police', 'andhra police', 'slprb', 'apslprb', 'si', 'sub inspector', 'constable', 'pc', 'rsi', 'fireman', 'warder']
     if 'amvi' in e['id']: words += ['amvi', 'motor vehicle inspector', 'mvi', 'rto', 'transport department', 'automobile engineering', 'automobile']
+    if e['id'] == 'appsc-env-engineer': words += ['aee', 'assistant environmental engineer', 'environmental engineer', 'environmental engineering', 'pollution control board', 'appcb', 'common subject', 'fluid mechanics', 'eia']
     if e['id'] == 'appsc-analyst': words += ['analyst', 'analyst grade 2', 'analyst grade ii', 'pollution control board', 'appcb', 'chemistry', 'biochemistry', 'biology', 'environmental science']
     if e['id'] == 'appsc-fro': words += ['fro', 'forest range officer', 'forest', 'forestry', 'general forestry', 'range officer', 'forest department']
     if e['id'] == 'appsc-eo': words += ['endowments', 'endowment officer', 'eo grade 3', 'eo grade iii', 'executive officer', 'temple', 'devadaya', 'dharmadaya', 'hindu philosophy']
@@ -1720,6 +1782,7 @@ EXAM_ART = [   # header drawings on the exam tiles (own line art, 160x90; Anil 2
     (r'amvi|motor vehicle', '<path d="M38 60V50l10-14h52l12 14h10v10Z"/><path d="M54 40h18v10H50ZM78 40h18l8 10H78Z"/><circle cx="56" cy="62" r="7"/><circle cx="106" cy="62" r="7"/><path d="M28 72h108"/>'),
     (r'endowment', '<path d="M54 74h52"/><path d="M60 74V48h40v26"/><path d="M56 48h48L80 28Z"/><path d="M80 28V14l12 4-12 4"/><path d="M73 74V61a7 7 0 0 1 14 0v13"/><path d="M65 55h4M91 55h4"/>'),
     (r'forest|\bfro\b|\bifos\b|\bfbo\b', '<path d="M44 72 58 48h-6l12-22 12 22h-6l14 24Z"/><path d="M84 72 96 52h-5l11-20 11 20h-5l12 20Z"/><path d="M64 72v7M102 72v7M34 79h98"/>'),
+    (r'environmental engineer|env engineer', '<path d="M40 74V46l16 8V46l16 8V46l16 8v20Z"/><path d="M96 74V24h10v50"/><path d="M98 18c-4-6 2-10 8-8 4-6 14-4 14 3 6 1 6 9 0 10"/><path d="M114 52c10-12 22-12 26-10-2 12-12 20-24 16Z"/><path d="M116 58l14-10"/><path d="M30 74h104"/>'),
     (r'analyst|chemist|drug|pharma|\blab\b', '<path d="M70 14h20M73 14v20L56 66a5 5 0 0 0 4.5 7h39a5 5 0 0 0 4.5-7L87 34V14"/><path d="M62 54h36"/><circle cx="74" cy="62" r="3"/><circle cx="86" cy="58" r="2"/><circle cx="114" cy="26" r="5"/><circle cx="126" cy="42" r="4"/><path d="m117 30 6 8"/>'),
     (r'hmwssb|water', '<path d="M80 10s18 20 18 34a18 18 0 0 1-36 0c0-14 18-34 18-34Z"/><path d="M72 46a8 8 0 0 0 8 8"/><path d="M32 74c8-5 16-5 24 0s16 5 24 0 16-5 24 0 16 5 24 0"/>'),
     (r'teacher|\btet\b|\bdsc\b|lecturer|gurukul|\btgt\b|\bpgt\b', '<path d="M80 26c-8-6-20-8-34-6v44c14-2 26 0 34 6 8-6 20-8 34-6V20c-14-2-26 0-34 6Z"/><path d="M80 26v44"/><path d="M54 32h16M54 40h16M90 32h16M90 40h16"/>'),
@@ -2200,6 +2263,31 @@ def FAQ_FRO(total, npapers):
        "Questions that APPSC ignored for all candidates are left out. Where APPSC accepted two options, both are shown as correct. The 2025 Mains (Notification 11/2024) is not here yet, because APPSC has published only its initial key."),
     ]
 
+
+def FAQ_AEE(total, npapers):
+    return [
+      ('Where can I get APPSC Assistant Environmental Engineer previous question papers with answers?',
+       f'This page has {total:,} questions from the APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) exam held on 25 March 2025 (Notification 15/2023): '
+       + ('Paper I General Studies & Mental Ability and Paper II Common Subject. ' if aee_p1() else 'Paper II Common Subject; Paper I General Studies & Mental Ability is being added next. ')
+       + "Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam."),
+      ('What is the APPSC Assistant Environmental Engineer exam pattern in 2026?',
+       'Notification 08/2026 (41 posts) has two objective papers of degree standard: Paper I General Studies & Mental Ability (150 questions, 150 marks, 150 minutes) and Paper II Common Subject '
+       '(150 questions, 150 marks, 150 minutes), 300 marks in all, computer-based, with one-third of a mark deducted for each wrong answer, followed by a qualifying Computer Proficiency Test. '
+       'In 2025 Paper II carried 300 marks (2 marks a question).'),
+      ('What is in the Paper II Common Subject syllabus?',
+       'Ecosystems; natural resources; biodiversity and its conservation; engineering materials; fluid mechanics and hydraulics; process calculations and thermodynamics; air, water, soil and noise pollution '
+       'and control technologies; solid, industrial and e-waste management and bioremediation; climate change, ozone depletion, international conventions and Indian environmental laws and rules; '
+       'and environmental impact assessment and sustainable development.'),
+      ('Who can apply for APPSC Assistant Environmental Engineer?',
+       'A B.E./B.Tech. degree in Civil, Mechanical, Chemical or Environmental Engineering, or a pass in Sections A and B of the AMIE (India) Civil examination; age 18 to 44 years as on 1 July 2026 with the usual relaxations. '
+       'Pay scale ₹57,100 – ₹1,47,760. Online applications ran from 6 to 27 October 2026.'),
+      ('Are the questions in Telugu?',
+       ('Paper I (General Studies & Mental Ability) is here in English and Telugu, as APPSC printed it. Paper II (Common Subject) is set in English only, so it is here in English.' if aee_p1() else
+        'Paper II (Common Subject) is set in English only, so it is here in English. Paper I (General Studies & Mental Ability), coming next, will be in English and Telugu as APPSC printed it.')),
+      ('Which questions are left out?',
+       'Questions that APPSC ignored for all candidates are left out (' + ('two in Paper II and three in Paper I' if aee_p1() else 'Q30 and Q97 of Paper II') + '). Where APPSC accepted more than one option, each accepted option is shown as correct.'),
+    ]
+
 def FAQ_EO(total, npapers):
     return [
       ('Where can I get APPSC Executive Officer Grade-III previous question papers with answers?',
@@ -2389,7 +2477,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -3187,12 +3275,12 @@ LANDINGS = {
   # file: what the page covers. People search "APPSC PYQs", "TS police previous papers", "TSLPRB previous question papers" ...
   'appsc-pyqs.html': dict(
       board='APPSC', ename='APPSC', crumb='APPSC PYQs',
-      title='APPSC Previous Year Question Papers with Answers – Group 1, Group 2, AMVI, Endowment Officer, Analyst & FRO PYQs | Learn with Anil',
-      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024, Group 2 Prelims & Mains 2019–2025 AMVI (Assistant Motor Vehicle Inspector) 2019, 2023 & 2026, Endowment Officer (EO Grade-III) 2022–2026, Analyst Grade-II 2025 and Forest Range Officer (FRO) 2020 & 2023, '
+      title='APPSC Previous Year Question Papers with Answers – Group 1, Group 2, AMVI, Endowment Officer, Analyst, Environmental Engineer & FRO PYQs | Learn with Anil',
+      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024, Group 2 Prelims & Mains 2019–2025 AMVI (Assistant Motor Vehicle Inspector) 2019, 2023 & 2026, Endowment Officer (EO Grade-III) 2022–2026, Analyst Grade-II 2025, Assistant Environmental Engineer 2025 and Forest Range Officer (FRO) 2020 & 2023, '
            '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations with one ₹45 All-in-One Pass for every exam.',
       h1='APPSC previous year question papers with answers',
-      lede="Every APPSC Group 1, Group 2, AMVI, Endowment Officer (EO Grade-III), Analyst Grade-II and Forest Range Officer previous question paper on Learn with Anil, {n} questions in all. "
-           "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu (AMVI Automobile Engineering, Analyst Paper II and FRO General Forestry papers in English).",
+      lede="Every APPSC Group 1, Group 2, AMVI, Endowment Officer (EO Grade-III), Analyst Grade-II, Assistant Environmental Engineer and Forest Range Officer previous question paper on Learn with Anil, {n} questions in all. "
+           "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu (AMVI Automobile Engineering, Analyst Paper II, Environmental Engineer Paper II and FRO General Forestry papers in English).",
       intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC AMVI (Assistant Motor Vehicle Inspector) or Endowment Officer (EO Grade-III) previous papers, APPSC old question papers with the key, or an APPSC mock test? '
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
             '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.</p>'
@@ -3200,10 +3288,11 @@ LANDINGS = {
             '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts, last date extended to 9 November 2026) and '
             '<a href="/appsc-eo-grade-3-notification-2026.html">APPSC EO Grade-III Notification 2026</a> (104 Endowments Executive Officer posts, apply by 5 November), '
             '<a href="/appsc-analyst-grade-2-notification-2026.html">Analyst Grade-II Notification 2026</a> (18 Pollution Control Board posts, apply by 2 November) and '
-            '<a href="/appsc-fro-notification-2026.html">FRO Notification 2026</a> (5 Forest Range Officer posts, apply by 5 November). Timed mock tests: '
+            '<a href="/appsc-fro-notification-2026.html">FRO Notification 2026</a> (5 Forest Range Officer posts, apply by 5 November) and '
+            '<a href="/appsc-assistant-environmental-engineer-notification-2026.html">Assistant Environmental Engineer Notification 2026</a> (41 Pollution Control Board posts). Timed mock tests: '
             '<a href="/appsc-group-2/mock-test.html">Group 2</a> · <a href="/appsc-group-1/mock-test.html">Group 1</a>.</p>',
-      te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు', 'APPSC AMVI': 'APPSC AMVI ప్రశ్నాపత్రాలు', 'APPSC EO Grade-III': 'APPSC దేవాదాయ శాఖ EO గ్రేడ్-III ప్రశ్నాపత్రాలు', 'APPSC Analyst Grade-II': 'APPSC అనలిస్ట్ గ్రేడ్-II ప్రశ్నాపత్రాలు', 'APPSC FRO': 'APPSC ఫారెస్ట్ రేంజ్ ఆఫీసర్ ప్రశ్నాపత్రాలు'},
-      order=lambda c: {'Group-I': 0, 'Group-II': 1, 'APPSC EO Grade-III': 3, 'APPSC Analyst Grade-II': 4, 'APPSC FRO': 5}.get(c['short'], 2)),   # Group-I, Group-II, AMVI, then EO Grade-III
+      te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు', 'APPSC AMVI': 'APPSC AMVI ప్రశ్నాపత్రాలు', 'APPSC EO Grade-III': 'APPSC దేవాదాయ శాఖ EO గ్రేడ్-III ప్రశ్నాపత్రాలు', 'APPSC Analyst Grade-II': 'APPSC అనలిస్ట్ గ్రేడ్-II ప్రశ్నాపత్రాలు', 'APPSC Asst. Environmental Engineer': 'APPSC అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ ప్రశ్నాపత్రాలు', 'APPSC FRO': 'APPSC ఫారెస్ట్ రేంజ్ ఆఫీసర్ ప్రశ్నాపత్రాలు'},
+      order=lambda c: {'Group-I': 0, 'Group-II': 1, 'APPSC EO Grade-III': 3, 'APPSC Analyst Grade-II': 4, 'APPSC Asst. Environmental Engineer': 5, 'APPSC FRO': 6}.get(c['short'], 2)),   # Group-I, Group-II, AMVI, then EO Grade-III
   'ts-police-pyqs.html': dict(
       board='TSLPRB', ename='TS Police', crumb='TS Police PYQs',
       title='TS Police Previous Question Papers with Answers – SI & Constable PYQs (TSLPRB / TGPRB), English & Telugu | Learn with Anil',
@@ -3465,6 +3554,56 @@ NOTIFS = {
         'cytoplasmic inheritance, mutations; origin of life, Darwinism, Hardy–Weinberg law; nucleosome, DNA types and replication, DNA repair, RNA and protein synthesis.',
         'Environmental Science: environment and ecology, ecosystems, energy flow, food chains, ecological pyramids and succession; forest, water, mineral and energy resources; air, water and soil pollution and waste management; '
         'greenhouse gases, global warming, the ozone hole, biogas; environmental assessment (plant, flora, animal and aquatic surveys); eco-planning, land use, urban and rural planning.']),
+      ('Paper I syllabus: General Studies & Mental Ability', 'p',
+       'Current events (international, national, Andhra Pradesh); general science and technology; history of India with a focus on AP and the national movement; geography of India and AP; '
+       'Indian polity and governance; Indian economy and planning; sustainable development and environment; disaster management; logical reasoning; data analysis.'),
+    ]),
+  'appsc-assistant-environmental-engineer-notification-2026.html': dict(
+    exam='appsc-env-engineer', crumb='Assistant Environmental Engineer Notification 2026',
+    # Anil, 8 Nov 2026: APPSC Notification 08/2026 dated 6 Oct 2026 (Assistant_Environmental_Engineer_08_2026.pdf, attached by Anil)
+    title='APPSC Assistant Environmental Engineer Notification 2026 – AP Pollution Control Board, 41 Posts, Syllabus & Previous Papers | Learn with Anil',
+    desc='APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) Notification 2026 (No. 08/2026): 41 posts, online applications 6 to 27 October 2026, eligibility, fee, '
+         'the Paper I General Studies and Paper II Common Subject pattern and syllabus, and AEE previous question papers with answers.',
+    h1='APPSC Assistant Environmental Engineer Notification 2026: 41 posts in the AP Pollution Control Board',
+    lede='APPSC Notification No. 08/2026 (6 October 2026) invited online applications for 41 posts (one of them carried forward) of Assistant Environmental Engineer in the A.P. Pollution Control Board, '
+         'for engineering graduates. Applications ran from 6 to 27 October 2026; the computer-based exam date is still to be announced. Below: dates, eligibility, the exam pattern and syllabus, '
+         'and the 2025 papers to start practising.',
+    te='ఏపీపీఎస్సీ అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ (ఏపీ కాలుష్య నియంత్రణ మండలి) నోటిఫికేషన్ (నం. 08/2026): 41 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు అక్టోబర్ 6 నుంచి 27, 2026 వరకు. పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ, పేపర్-2 కామన్ సబ్జెక్ట్; 2025 ప్రశ్నాపత్రాలు సమాధానాలతో కింద.',
+    pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Assistant_Environmental_Engineer_08_2026.pdf', pdfname='APPSC Notification No. 08/2026, dated 6 October 2026',
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification (No. 08/2026)', '6 October 2026'),
+        ('Online applications', '6 to 27 October 2026 (till 11:59 pm)'),
+        ('Written examination', 'Computer-based (CBRT); date to be announced by APPSC'),
+        ('Official website', 'psc.ap.gov.in')]),
+      ('Posts, pay and age', 'table', [
+        ('Post', 'Assistant Environmental Engineer, A.P. Pollution Control Board (state-wide post)'),
+        ('Vacancies', '41, including 1 carried forward (break-up in Annexure-I of the notification)'),
+        ('Pay scale', '₹57,100 – ₹1,47,760'),
+        ('Age', '18 to 44 years as on 1 July 2026; 5 years more for SC, ST, BC and EWS, 10 years for persons with benchmark disabilities')]),
+      ('Who can apply', 'p', 'A B.E./B.Tech. degree in Civil, Mechanical, Chemical or Environmental Engineering from a recognised university in India, or a pass in Sections A and B of the AMIE (India) Civil examination. '
+                          'Fee: ₹250 application processing fee plus ₹80 examination fee; SC, ST, BC, PwBD and ex-service candidates, white-card families and unemployed youth of AP are exempt from the ₹80 examination fee.'),
+      ('Exam pattern', 'table+', (['Paper', 'Subject', 'Questions · marks · time'], [
+        ('Paper I (objective, degree standard)', 'General Studies & Mental Ability (English and Telugu)', '150 · 150 · 150 min'),
+        ('Paper II (objective, degree standard)', 'Common Subject (English only)', '150 · 150 · 150 min'),
+        ('Computer Proficiency Test', 'Office automation with computers; qualifying', '60 min · 100 marks')])),
+      ('', 'note', 'One-third of a mark is deducted for each wrong answer. Selection is on the 300 marks of the written examination, after the qualifying Computer Proficiency Test. '
+                   'Minimum qualifying marks: 40% for OC, sportspersons, ex-servicemen and EWS, 35% for BCs, 30% for SC, ST and PwBD. In the 2025 exam Paper II carried 300 marks; it is now 150.'),
+      ('Paper II syllabus: Common Subject', 'list', [
+        'Ecosystems: structure and function, food chains, food webs and ecological pyramids, energy flow, biogeochemical cycles, bioaccumulation and biomagnification, ecosystem services and carrying capacity.',
+        'Natural resources: water (surface and ground water, floods, droughts, dams), mineral, land, forest and energy resources, renewable and non-renewable energy.',
+        'Biodiversity and biotic resources: genetic, species and ecosystem diversity, values of biodiversity, India as a mega-diversity nation, hotspots, threats, in-situ and ex-situ conservation, the Biological Diversity Act.',
+        'Engineering materials: structure and properties, phase diagrams, heat treatment, stress–strain diagrams.',
+        "Fluid mechanics and hydraulics: Newtonian and non-Newtonian fluids, fluid properties, manometers, stream function and velocity potential, continuity, Bernoulli's and impulse-momentum equations, "
+        "laminar and turbulent pipe flow, Reynolds number, Hagen–Poiseuille and Darcy–Weisbach equations, losses in pipes, dimensional analysis and similarity, boundary layer.",
+        'Process calculations and thermodynamics: conservation of mass and energy, tie components, recycle, bypass and purge, degrees of freedom, first and second laws, equations of state and properties of real systems.',
+        'Air, water, soil and noise pollution and control technologies: primary and secondary air pollutants, particulate, SOx and NOx control, ambient air quality standards; drinking-water standards, '
+        'primary, secondary and tertiary wastewater treatment (grit chambers, sedimentation, trickling filters, oxidation ponds, activated sludge, septic tanks, sludge disposal); soil pollution; noise standards.',
+        'Solid and industrial waste management: municipal solid waste collection, segregation, transport and processing, e-waste, bioremediation.',
+        'Global environmental problems, policies and laws: climate change, ozone depletion, deforestation and desertification, the Earth Summit and the Kyoto, Montreal and Paris agreements, '
+        'the Environment (Protection), Air, Water, Forest and Wild Life Acts, and the solid waste, bio-medical waste and hazardous waste rules.',
+        'Environmental impact assessment and sustainable development: EIA structure and baseline data, risk assessment, environmental management plans, sustainable development, green buildings, '
+        'ecological footprint, life cycle assessment, low-carbon lifestyle.']),
       ('Paper I syllabus: General Studies & Mental Ability', 'p',
        'Current events (international, national, Andhra Pradesh); general science and technology; history of India with a focus on AP and the national movement; geography of India and AP; '
        'Indian polity and governance; Indian economy and planning; sustainable development and environment; disaster management; logical reasoning; data analysis.'),
@@ -4473,6 +4612,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
   'upsc-epfo': ('UPSC EPFO APFC Recruitment Test 2026', '2026-12-20', 'UPSC Special Advertisement 52/2026 (80 APFC posts): pen-and-paper Recruitment Test on 20 December 2026.'),
   'appsc-analyst': ('APPSC Analyst Grade-II written examination', None, 'Applications 13 October to 2 November 2026 (Notification 21/2026); APPSC has not announced the exam date yet.'),
+  'appsc-env-engineer': ('APPSC Assistant Environmental Engineer written examination', None, 'Applications 6 to 27 October 2026 (Notification 08/2026); APPSC has not announced the exam date yet.'),
   'appsc-fro': ('APPSC Forest Range Officer written examination', None, 'Applications 16 October to 5 November 2026 (Notification 16/2026); APPSC has not announced the exam date yet.'),
   'ap-police-si': ('AP Police SI Preliminary Written Test', None, 'SLPRB AP notified 378 SI posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
   'ap-police-constable': ('AP Police Constable Preliminary Written Test', None, 'SLPRB AP notified 1,156 posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
@@ -5151,7 +5291,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);
