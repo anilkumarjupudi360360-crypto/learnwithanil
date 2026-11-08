@@ -1,0 +1,1585 @@
+# APPSC Analyst Grade-II in A.P. Pollution Control Board (Notification 02/2024), Paper I: General Studies & Mental Ability, computer-based test held 25 March 2025 (150 questions, 1 mark each).
+# The same paper (same question IDs and final key) was set that day for Assistant Environmental Engineer (Notification 15/2023); APPSC published it under both posts (Analyst_GradeII/FinalKeys/Paper1_GSMA.pdf is byte-identical to Assistant_Environmental_engineer/FinalKeys/GSMA_152023.pdf).
+# Answers: APPSC final key (APOnline master question paper, correct option ticked; final keys of 20 June 2025). Explanations by Learn with Anil (copied from src/appsc-env-engineer, checked there).
+# Left out (ignored by APPSC for all candidates): 88, 108, 115. More than one option accepted by APPSC: 53, 137, 144, 145, 149, 150 (all four options).
+
+Q 1 | men | Reasoning
+B, D, E, F, P, Q and R are sitting around a circular table, facing the centre of the table. Only one person sits between P and D when counted from the left of D. R sits third to the right of F. B sits third to the left of E. R sits to the immediate right of B. Q is not an immediate neighbour of B.
+Column I (Person) | Column II (Neighbour to the immediate left)
+(i)Q | (W)B
+(ii)P | (X)E
+(iii)D | (Y)R
+(iv)R | (Z)F
+Which is the correct match of Column I with Column II?
+(1) i-Y, ii-X, iii-Z, iv-W
+(2) i-Y, ii-Z, iii-W, iv-X
+(3) i-X, ii-W, iii-Z, iv-Y
+(4) i-W, ii-x, iii-Y, iv-Z
+= 1
+~ Facing the centre, a person's left is the next seat clockwise. Take B as reference: R is immediately right of B; F is second to B's left (R is third to F's right); E is third to B's right. P must be second to D's left and Q cannot sit next to B, so clockwise the order is B, D, F, P, E, Q, R. Immediate left neighbours: Q–R, P–E, D–F, R–B, i.e. i-Y, ii-X, iii-Z, iv-W.
+
+Q 2 | men | Reasoning
+Each of P, Q, R, S, T, U and V was born in a different month viz. January, March, May, June, July, November and December of the same year, starting from January and ending in December. Only two people were born between R and V. Only one person was born before R. Only four people were born between T and Q. Only one person was born after T. S was born in a month having only 30 days. P was born before U. Which of the following options represent the correct order in which the people were born?
+(1) R, P, S, V
+(2) P, S, U, T
+(3) T, V, Q, R
+(4) Q, P, T, S
+= 1
+~ Month order: Jan, Mar, May, Jun, Jul, Nov, Dec. One person before R gives R = March; two between R and V gives V = July; one after T gives T = November; four between T and Q gives Q = January. S needs a 30-day month (June or November), so S = June, and P before U gives P = May, U = December. The order is Q, R, P, S, V, T, U, so R, P, S, V is correct.
+
+Q 3 | men | Reasoning
+What should come in place of the question mark (?) in the given series based on the English alphabetical order?
+BJR DLT FNV HPX ?
+(1) KNQ
+(2) MOK
+(3) JNO
+(4) JRZ
+= 4
+~ Each letter moves 2 places forward from one term to the next: first letters B, D, F, H → J; second letters J, L, N, P → R; third letters R, T, V, X → Z. Within every term the letters are also 8 places apart (B+8 = J, J+8 = R), and JRZ keeps this (J+8 = R, R+8 = Z). So the missing term is JRZ.
+
+Q 4 | men | Reasoning
+Anand starts from Point A and drives 7 km towards the south. He then takes a left turn, drives 6 km, turns left and drives 11 km and stops at point P. (All turns are 90 degrees turns only, unless specified.)
+Based on the above information, find out which of the given statements can be the reason/s behind the assertion made below.
+Assertion: Anand is 3km away from Point A.
+Reason A: He then takes a right turn from point P and drives 8 km. He takes a final left turn, drives 4 km and stops.
+Reason B: He then takes a left turn from point P and drives 9 km. He takes a final left turn, drives 4 km and stops.
+Reason C: He then takes a left turn from point P and drives 12 km. He takes a final right turn, drives 7 km and stops.
+(1) Only B is the reason behind the assertion.
+(2) Only A and C are reasons behind the assertion.
+(3) Only A is the reason behind the assertion.
+(4) Only A and B are reasons behind the assertion.
+= 1
+~ From A: 7 km south, left (east) 6 km, left (north) 11 km, so P is 6 km east and 4 km north of A, and he faces north. Reason B: left (west) 9 km puts him 3 km west and 4 km north of A; a final left (south) of 4 km leaves him exactly 3 km west of A. Reason A ends 14 km east, 8 km north and Reason C 6 km west, 11 km north of A, so only B fits.
+
+Q 5 | men | Reasoning
+Three statements are given, followed by one conclusion. Find out which of the given options should replace the question mark (?) in the statement to make the conclusion true.
+Statements:
+I. Z > X > W
+II. X ? Y < U
+III. A = B ≥ U
+Conclusion:
+W < A
+(1) Only ≥
+(2) Only =
+(3) Either < or =
+(4) Only >
+= 3
+~ From I, W < X; from II and III, Y < U ≤ B = A, so Y < A. To link W with A we need X ≤ Y: then W < X ≤ Y < U ≤ A gives W < A for certain. Hence the sign can be either '<' or '='. With '>' or '≥', X could be larger than A, and the conclusion would not definitely follow.
+
+Q 6 | men | Reasoning
+What should come in place of the question mark (?) in the given series based on the English alphabetical order?
+LIG NKI PMK ROM ?
+(1) TQO
+(2) TQP
+(3) TRO
+(4) TRP
+= 1
+~ Each letter moves 2 places forward from one term to the next: first letters L, N, P, R → T; second letters I, K, M, O → Q; third letters G, I, K, M → O. The pattern inside every term also stays the same (L−3 = I, I−2 = G; and T−3 = Q, Q−2 = O). So the missing term is TQO.
+
+Q 7 | men | Reasoning
+Each letter in the word DEVICE is changed to the letter immediately preceding it in the English alphabetical order, and then all the letters thus formed are arranged in the English alphabetical order. Which of the following letters will be second from the right in the new group of letters thus formed?
+(1) H
+(2) U
+(3) B
+(4) D
+= 1
+~ Replacing each letter of DEVICE by the letter just before it gives D→C, E→D, V→U, I→H, C→B, E→D, i.e. C, D, U, H, B, D. Arranged in alphabetical order these become B, C, D, D, H, U. The rightmost letter is U, so the second letter from the right is H.
+
+Q 8 | men | Reasoning
+Refer to the following letter, number, symbol series and answer the given question.
+(Left) J & 9 D * C V 6 U # B 5 @ A R 3 T S 7 M Y % 2 G (Right)
+How many symbols are there that are immediately preceded by a letter and also immediately followed by a number?
+(1) None
+(2) One
+(3) Two
+(4) Three
+= 3
+~ Check every symbol: & (J & 9) has a letter before and a number after, so it counts; * (D * C) and # (U # B) are followed by letters; @ (5 @ A) is preceded by a number; % (Y % 2) has a letter before and a number after, so it counts. Only & and % satisfy both conditions, so the answer is two.
+
+Q 9 | men | Reasoning
+In a certain code,
+‘milk makes cheese’ is coded as ‘lo ny ph’,
+‘milk gives butter’ is coded as ‘ny ji su’ and
+‘butter and cheese’ is coded as ‘ji ma ph’.
+What does the code 'ph' stand for?
+(1) butter
+(2) makes
+(3) cheese
+(4) milk
+= 3
+~ The word 'cheese' appears in the first and third sentences ('milk makes cheese' and 'butter and cheese'), and the only code common to 'lo ny ph' and 'ji ma ph' is 'ph'. So ph = cheese. In the same way, milk = ny (sentences 1 and 2) and butter = ji (sentences 2 and 3).
+
+Q 10 | men | Reasoning
+Three of the following letter-clusters are alike in some manner and hence form a group. Which letter-cluster does not belong to that group?
+(1) VPR
+(2) RLM
+(3) GAB
+(4) WQR
+= 1
+~ Using alphabet positions, RLM (18, 12, 13), GAB (7, 1, 2) and WQR (23, 17, 18) all follow the pattern −6 then +1. VPR (22, 16, 18) follows −6 then +2, so it is the letter-cluster that does not belong to the group.
+
+Q 11 | men | Reasoning
+Four word pairs have been given, out of which three are alike in some manner and one is different. Select the one that is different.
+(1) Admit : Deny
+(2) Beautiful : Gorgeous
+(3) Huge : Big
+(4) Brave : Courageous
+= 1
+~ In Beautiful : Gorgeous, Huge : Big and Brave : Courageous, the two words have similar meanings, so each pair is a pair of synonyms. Admit : Deny is a pair of opposites (antonyms), so it is the pair that is different from the other three.
+
+Q 12 | men | Reasoning
+What should come in place of the question mark (?) in the given series?
+11, 25, 47, 97, 191, ?
+(1) 385
+(2) 379
+(3) 570
+(4) 576
+= 1
+~ The terms follow ×2 + 3 and ×2 − 3 alternately: 11 × 2 + 3 = 25, 25 × 2 − 3 = 47, 47 × 2 + 3 = 97, 97 × 2 − 3 = 191. So the next term is 191 × 2 + 3 = 385.
+
+Q 13 | men | Reasoning
+In this question, a statement is followed by two conclusions, numbered I and II. Identify which conclusion is true based on the given statement.
+Statement: P > Q ≥ R ≥ S < T ≤ U
+Conclusion I: P > R
+Conclusion II: U > S
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both conclusions I and II are true
+(4) Neither conclusion I nor II is true
+= 3
+~ From P > Q ≥ R we get P > R, so conclusion I is true. From S < T ≤ U we get S < U, i.e. U > S, so conclusion II is also true. Since a strict '>' or '<' sign appears in each chain, both conclusions follow definitely.
+
+Q 14 | men | Reasoning
+Select the pair that follows the same pattern as that followed by the two pairs given below. Both pairs follow the same pattern.
+LGN : PKR
+NIP : RMT
+(1) JEL : NIP
+(2) HCJ : LGM
+(3) FAH : JEK
+(4) PKR : TOU
+= 1
+~ In both given pairs every letter moves 4 places forward: L→P, G→K, N→R and N→R, I→M, P→T. JEL : NIP follows the same rule (J→N, E→I, L→P). In HCJ : LGM, FAH : JEK and PKR : TOU the first two letters move +4 but the last letter moves only +3.
+
+Q 15 | men | Reasoning
+Select the pair that follows the same pattern as that followed by the two pairs given below. Both pairs follow the same pattern.
+QKH : LMD
+WSR : RUN
+(1) HYF : CAB
+(2) PKC : KNZ
+(3) VSM : QUJ
+(4) GYA : BCY
+= 1
+~ The rule is −5, +2, −4: Q→L, K→M, H→D and W→R, S→U, R→N. HYF : CAB fits: H→C (−5), Y→A (+2, counting past Z), F→B (−4). The others break the rule: PKC : KNZ has K→N (+3), VSM : QUJ has M→J (−3), and GYA : BCY has Y→C (+4).
+
+Q 16 | men | Data Interpretation
+The number of boys and girls in schools A, B, C, and D is given in the following table.
+Schools | Boys | Girls
+A | 425 | 375
+B | 312 | 383
+C | 260 | 310
+D | 416 | 208
+Match List I with List II.
+List I (Schools) | List II (Students)
+A | (i) Number of girls is 50 more than that of boys
+B | (ii) Number of boys is double of that of girls
+C | (iii) Number of girls is 50 less than that of boys
+D | (iv) Total number of students is 695
+(1) A-(iii), B-(iv), C-(ii), D-(i)
+(2) A-(iii), B-(iv), C-(i), D-(ii)
+(3) A-(iv), B-(ii), C-(i), D-(iii)
+(4) A-(iii), B-(i), C-(iv), D-(ii)
+= 2
+~ A: girls 375 = 425 − 50, so girls are 50 fewer than boys → (iii); B: 312 + 383 = 695 students → (iv); C: girls 310 = 260 + 50, so 50 more than boys → (i); D: boys 416 = 2 × 208, double the girls → (ii). Hence A-(iii), B-(iv), C-(i), D-(ii).
+
+Q 17 | men | Data Interpretation
+Read the given information, statement and conclusion, and select the most appropriate option.
+The population of a village and per capita income of the village for five consecutive years are shown in the following table.
+Particulars | 2014 | 2015 | 2016 | 2017 | 2018
+Population | 10,156 | 11,799 | 14,380 | 17,996 | 22,430
+Per capita income | ₹1,20,000 | ₹1,25,250 | ₹1,25,500 | ₹1,24,850 | ₹1,29,900
+Statement:
+Population and per capita income of the village are maximum in 2018.
+Conclusion:
+Per capita income increases with increase in population.
+(1) Both the statement and conclusion are correct.
+(2) Both the statement and conclusion are incorrect.
+(3) The statement is correct but the conclusion is incorrect.
+(4) The statement is incorrect but the conclusion is correct.
+= 3
+~ Statement: in 2018 both the population (22,430) and the per capita income (₹1,29,900) are the highest in the table, so it is correct. Conclusion: in 2017 the population rose from 14,380 to 17,996 but per capita income fell from ₹1,25,500 to ₹1,24,850, so income does not always rise with population and the conclusion is incorrect.
+
+Q 18 | men | Arithmetic
+Read the given information, statement and conclusion, and select the most appropriate option.
+A fruit vendor bought 40 dozen bananas, 20 pineapples, and 16 dozen kiwis. He sold 40% of the bananas, 40% of the pineapples and 25% of the kiwis on the first day. On the next day, he sold 50% of the remaining bananas, 25% of the remaining pineapples and 50% of the remaining kiwis.
+Statement:
+The number of bananas sold in 2 days is more than the number of kiwis sold in 2 days.
+Conclusion:
+The fruit vendor is left with a smaller number of bananas than kiwis.
+(1) Both the statement and conclusion are correct.
+(2) Both the statement and conclusion are incorrect.
+(3) The statement is correct but the conclusion is incorrect.
+(4) The statement is incorrect but the conclusion is correct.
+= 3
+~ Bananas: 40 dozen = 480; day 1 sold 40% = 192, left 288; day 2 sold 50% = 144; total sold 336, left 144. Kiwis: 16 dozen = 192; day 1 sold 25% = 48, left 144; day 2 sold 50% = 72; total sold 120, left 72. Since 336 > 120 the statement is correct, but 144 bananas remain against 72 kiwis, so the conclusion is incorrect.
+
+Q 19 | men | Data Interpretation
+In the pie charts given below, the distribution of Dell laptops sold by 5 stores P, Q, R, S, and T and the distribution of both Dell and Lenovo laptops sold by the same 5 stores are presented. The total number of laptops sold by 5 stores is 4500 and that of Dell laptops is 2400.
+The number of Dell laptops sold by store Q is what percentage of the number of Lenovo laptops sold by store R (correct to 2 decimal places)?
+(1) 71.85%
+(2) 70.18%
+(3) 69.54%
+(4) 68.25%
+= 2
+! img/n2025a-q19.png
+~ Dell laptops sold by Q = 25% of 2400 = 600. All laptops sold by R = 35% of 4500 = 1575, of which Dell = 30% of 2400 = 720, so Lenovo laptops sold by R = 1575 − 720 = 855. Required percentage = 600/855 × 100 = 70.175… ≈ 70.18%.
+
+Q 20 | men | Arithmetic
+There are four different stores A, B, C, and D which sell two different products: laptops and tablets. The number of tablets sold in B and D is in the ratio of 4 : 1. The total number of laptops sold in C is double the total number of laptops sold in B. The total number of laptops sold in B is 200 less than the total number of laptops sold in A. The number of tablets sold in A equals the number of laptops sold in C. The total number of laptops sold in D is 33⅓% of the total number of laptops sold in A. The average number of tablets sold in all stores together is 625, which is 175 more than the total number of tablets sold in C. The difference between the number of tablets sold in B and D is 750.
+What is the ratio of the total number of laptops to the total number of tablets sold in all the stores together?
+(1) 4 : 5
+(2) 5 : 4
+(3) 3 : 2
+(4) 2 : 3
+= 1
+~ Tablets: total = 625 × 4 = 2500; C = 625 − 175 = 450. B : D = 4 : 1 with B − D = 750 gives B = 1000, D = 250, so A = 2500 − 450 − 1000 − 250 = 800. Laptops: C = tablets in A = 800, so B = 400, A = 400 + 200 = 600 and D = ⅓ × 600 = 200; total = 2000. Ratio = 2000 : 2500 = 4 : 5.
+
+Q 21 | men | Arithmetic
+There are three boxes A, B, and C each containing three different coloured balls: red, blue, and yellow. The total number of red balls in all the boxes together is 30. The number of red balls in B is 5, which is equal to the number of yellow balls in C. The ratio of the number of red balls in A to C is 2 : 3. The total number of balls in B is 27. The number of blue balls in B is 10. The number of red balls in C is the sum of the number of blue balls in A and C. The number of yellow balls in B is 5 more than the number of blue balls in A. The total number of balls in all the boxes together is 80.
+What is the ratio of the number of blue balls in box A to the number of yellow balls in box B?
+(1) 12 : 7
+(2) 7 : 12
+(3) 13 : 8
+(4) 8 : 13
+= 2
+~ Red balls: B = 5, so A + C = 25 and A : C = 2 : 3 gives A = 10, C = 15. Box B has 27 balls = 5 red + 10 blue + 12 yellow. Yellow in B is 5 more than blue in A, so blue in A = 7 (check: red in C = 15 = 7 blue in A + 8 blue in C). Required ratio = 7 : 12.
+
+Q 22 | men | Data Interpretation
+The following bar-graph shows the annual sale of a local newspaper from 1985 to 1990.
+By what percentage is the average sale of the newspaper in 1985 and 1986 is less than the average sale in 1989 and 1990?
+(1) 56.25%
+(2) 46%
+(3) 42.18%
+(4) 36%
+= 4
+! img/n2025a-q22.png
+~ Average sale in 1985 and 1986 = (821 + 843)/2 = 832 lakh. Average sale in 1989 and 1990 = (1280 + 1320)/2 = 1300 lakh. Percentage by which it is less = (1300 − 832)/1300 × 100 = 468/1300 × 100 = 36%.
+
+Q 23 | men | Data Interpretation
+In the following line-graph, the cost of a popular brand of tea and coffee per kg (in ₹) have been shown. The average cost of coffee (per kg) over the years is what percentage of the cost of tea (per kg) in 2008?
+(1) 130%
+(2) 131.6%
+(3) 132.5%
+(4) 132.8%
+= 2
+! img/n2025a-q23.png
+~ Coffee prices for 2005–2009 are 500, 580, 670, 720 and 820, so the average = 3290/5 = ₹658 per kg. The tea price in 2008 is ₹500 per kg. Required percentage = 658/500 × 100 = 131.6%, i.e. the average coffee price is 1.316 times the 2008 tea price.
+
+Q 24 | men | Data Interpretation
+The bar-graph given below presents the average monthly commission earned by salesmen A, B, C, and D over the years.
+In the year 2006, the commission earned by salesman D is what percentage more than the average commission earned by the salesman C during the given years? (Correct to 2 decimal places)
+(1) 3.78%
+(2) 4.84%
+(3) 8.89%
+(4) 9.62%
+= 4
+! img/n2025a-q24.png
+~ Salesman C's commission (in ₹ hundred): 260 (1991), 265 (1996), 286 (2001), 291 (2006); average = 1102/4 = 275.5. D's commission in 2006 = 302. Percentage more = (302 − 275.5)/275.5 × 100 = 26.5/275.5 × 100 ≈ 9.62%. So D's 2006 commission is about 9.62% more than C's average.
+
+Q 25 | men | Arithmetic
+What is the arithmetic mean of the following data?
+44, 46, 47, 48, 49, 50, 54, 72
+(1) 48.5
+(2) 51.25
+(3) 54
+(4) 58
+= 2
+~ Sum of the eight values = 44 + 46 + 47 + 48 + 49 + 50 + 54 + 72 = 410. Arithmetic mean = 410 ÷ 8 = 51.25. (48.5 is the median, the average of the 4th and 5th values 48 and 49; the extreme value 72 pulls the mean above it.)
+
+Q 26 | men | Arithmetic
+If the standard deviation of the data is 0.012, then the variance is:
+(1) 0.144
+(2) 0.00144
+(3) 0.000144
+(4) 0.0000144
+= 3
+~ Variance is the square of the standard deviation (the standard deviation is the positive square root of the variance). So variance = (0.012)² = 0.012 × 0.012 = 0.000144, i.e. 144 × 10⁻⁶. The other options place the decimal point wrongly.
+
+Q 27 | men | Arithmetic
+The harmonic mean of two numbers is 8. If one of the numbers is 12, what is the other number?
+(1) 4
+(2) 5
+(3) 6
+(4) 7
+= 3
+~ For two numbers a and b, HM = 2ab/(a + b). With a = 12: 2 × 12 × b/(12 + b) = 8, so 24b = 96 + 8b, 16b = 96 and b = 6. Check: 2 × 12 × 6/(12 + 6) = 144/18 = 8.
+
+Q 28 | men | Arithmetic
+For a set of 8 observations, the standard deviation is 5.2.
+Match list I with List II.
+List I | List II (Standard Deviation)
+A. Every observation is doubled and then increased by 2 | (i) 1.3
+B. Every observation is divided by 4 and decreased by 2 | (ii) 7.8
+C. Every observation is multiplied by 3 and divided by 2 | (iii) 2.6
+D. Every observation is increased by 4 and divided by 2 | (iv) 10.4
+(1) A-(iv), B-(i), C-(iii), D-(ii)
+(2) A-(iv), B-(ii), C-(i), D-(iii)
+(3) A-(iv), B-(i), C-(ii), D-(iii)
+(4) A-(iii), B-(i), C-(iv), D-(ii)
+= 3
+~ Standard deviation does not change when a constant is added or subtracted, but it is multiplied or divided by the same factor as the data. A: ×2 gives 5.2 × 2 = 10.4 (iv); B: ÷4 gives 1.3 (i); C: ×3 ÷ 2 gives 5.2 × 1.5 = 7.8 (ii); D: ÷2 gives 2.6 (iii). So the match is A-(iv), B-(i), C-(ii), D-(iii).
+
+Q 29 | men | Arithmetic
+Find the median of the following data.
+Class-interval | Frequency
+0 – 10 | 12
+10 – 20 | 13
+20 – 30 | 25
+30 – 40 | 20
+40 – 50 | 10
+(1) 23
+(2) 24
+(3) 25
+(4) 26
+= 4
+~ N = 12 + 13 + 25 + 20 + 10 = 80, so N/2 = 40. Cumulative frequencies are 12, 25, 50, …, so the median class is 20–30 (l = 20, cf = 25, f = 25, h = 10). Median = l + [(N/2 − cf)/f] × h = 20 + (40 − 25)/25 × 10 = 20 + 6 = 26.
+
+Q 30 | men | Arithmetic
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A):
+Weighted arithmetic mean is preferred over simple arithmetic mean when dealing with datasets, where different data points carry varying degrees of importance.
+Reason (R):
+Weighted arithmetic mean takes into account the significance of each data point by assigning appropriate weights, resulting in a more accurate representation of the average.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 1
+~ When values differ in importance (for example marks in subjects with different credits, or prices weighted by quantities), a simple mean treats them all equally and can mislead, so the weighted mean Σwx/Σw is preferred. It is preferred precisely because it gives each value a weight matching its importance, producing a more representative average. So both A and R are true and R explains A.
+
+Q 31 | cur | Sports & Awards
+Who was awarded the Nobel Prize in 2023 in the field of literature?
+(1) Jon Fosse
+(2) Narges Mohammadi
+(3) Katalin Kariko
+(4) Drew Weissman
+= 1
+~ The 2023 Nobel Prize in Literature went to the Norwegian writer Jon Fosse "for his innovative plays and prose which give voice to the unsayable". Narges Mohammadi of Iran won the 2023 Nobel Peace Prize, while Katalin Karikó and Drew Weissman shared the 2023 Nobel Prize in Physiology or Medicine for their work that enabled mRNA vaccines.
+
+Q 32 | cur | International
+Where did the WTO’s 13th Ministerial Conference take place from 26 February to 2 March 2024?
+(1) Durban
+(2) Tokyo
+(3) San Francisco
+(4) Abu Dhabi
+= 4
+~ The 13th Ministerial Conference (MC13) of the World Trade Organization was held in Abu Dhabi, United Arab Emirates, from 26 February to 2 March 2024. The Ministerial Conference is the WTO's top decision-making body; the previous one, MC12, was held in Geneva in June 2022. Durban, Tokyo and San Francisco have never hosted a WTO Ministerial Conference.
+
+Q 33 | cur | International
+Abdel Fattah el-Sisi was sworn as the President of _______ in 2024.
+(1) Kenya
+(2) Saudi Arabia
+(3) Egypt
+(4) Iraq
+= 3
+~ Abdel Fattah el-Sisi, President of Egypt since 2014, won the December 2023 presidential election and took the oath for a third six-year term on 2 April 2024 before the House of Representatives in the New Administrative Capital. Kenya's President is William Ruto, Saudi Arabia is a monarchy, and Iraq has its own elected President.
+
+Q 34 | cur | Sports & Awards
+Who was awarded an Oscar Award in 2024 in the category of ‘Actor in a Leading Role’?
+(1) Sterling K Brown
+(2) Robert De Niro
+(3) Mark Ruffalo
+(4) Cillian Murphy
+= 4
+~ At the 96th Academy Awards held on 10 March 2024, Cillian Murphy won the Oscar for Actor in a Leading Role for playing J. Robert Oppenheimer in 'Oppenheimer'. Sterling K. Brown, Robert De Niro and Mark Ruffalo were nominees that year in the Actor in a Supporting Role category, which was won by Robert Downey Jr.
+
+Q 35 | cur | Sports & Awards
+Shir Srinivas Varadhan was awarded with the Padma Vibhushan in the year _____.
+(1) 2023
+(2) 2024
+(3) 2022
+(4) 2021
+= 1
+~ The mathematician S. R. Srinivasa Varadhan (USA), known for the theory of large deviations and winner of the 2007 Abel Prize, was named for the Padma Vibhushan in the Padma Awards 2023 (Science & Engineering), announced on the eve of Republic Day 2023. He was the only Padma Vibhushan awardee in that field that year.
+
+Q 36 | sci | Science & Technology
+Which of the following is a correct pair of a super computer and its installed site in India?
+(1) PARAM Shivay - IIT Guwahati
+(2) PARAM Pravega - IIT Kanpur
+(3) PARAM Ananta - IIT Mandi
+(4) AIRAWAT - C-DAC, Pune
+= 4
+~ AIRAWAT, India's AI supercomputer under the National Programme on AI, is installed at C-DAC, Pune (it ranked 75th in the TOP500 list of 2023). The other pairs are wrong: PARAM Shivay is at IIT (BHU) Varanasi, PARAM Pravega at IISc Bengaluru and PARAM Ananta at IIT Gandhinagar; IIT Guwahati, IIT Kanpur and IIT Mandi house PARAM Kamrupa, PARAM Sanganak and PARAM Himalaya.
+
+Q 37 | cur | Sports & Awards
+How many people received Padma Shri in the field of science and engineering in 2023?
+(1) 5
+(2) 8
+(3) 10
+(4) 12
+= 2
+~ According to the official Padma Awards 2023 list (106 awards in all), eight people received the Padma Shri in Science & Engineering. They were Khadar Valli Dudekula, Modadugu Vijay Gupta, Ganesh Nagappa Krishnarajanagara, Arvind Kumar, Mahendra Pal, Bakshi Ram, Sujatha Ramdorai and Abbareddy Nageswara Rao.
+
+Q 38 | pol | Governance & Schemes
+What is the major objective of the PM-PRANAM scheme by the Government of India, launched in 2023?
+(1) Improve fertility of mother earth
+(2) Improve female literacy
+(3) Increase connectivity to major religious places
+(4) Increase international trade
+= 1
+~ PM-PRANAM (PM Programme for Restoration, Awareness, Nourishment and Amelioration of Mother Earth), announced in the Union Budget 2023-24 and approved by the Cabinet in June 2023, encourages States to reduce chemical fertiliser use and adopt balanced, alternative and organic fertilisers; 50% of the fertiliser subsidy saved is given to the State as a grant. Its aim is to restore soil health, the fertility of 'mother earth'.
+
+Q 39 | cur | National
+In which State/Union Territory did India host the Ministerial event of the 8th Mission Innovation (MI8) in July 2023?
+(1) Goa
+(2) Chandigarh
+(3) New Delhi
+(4) Sikkim
+= 1
+~ Under its G20 Presidency, India hosted the 14th Clean Energy Ministerial and the 8th Mission Innovation ministerial meeting (CEM-14/MI-8) in Goa on 19–22 July 2023, alongside the G20 Energy Transitions Ministers' Meeting. Mission Innovation is a global initiative launched in 2015 to accelerate clean energy innovation.
+
+Q 40 | cur | National
+Which of the following is the correct sequence of the State and Phase of Lok Sabha elections in 2024?
+(1) First Phase – Kerala, Second Phase – Uttarakhand, Third Phase – Gujarat
+(2) First Phase – Kerala, Second Phase – Gujarat, Third Phase – Uttarakhand
+(3) First Phase – Gujarat, Second Phase – Kerala, Third Phase – Uttarakhand
+(4) First Phase – Uttarakhand, Second Phase – Kerala, Third Phase – Gujarat
+= 4
+~ In the 2024 Lok Sabha election, all 5 seats of Uttarakhand voted in Phase 1 (19 April 2024), all 20 seats of Kerala in Phase 2 (26 April 2024) and Gujarat's seats in Phase 3 (7 May 2024). So the correct sequence is First Phase – Uttarakhand, Second Phase – Kerala, Third Phase – Gujarat.
+
+Q 41 | cur | AP Affairs
+To improve access to healthcare in rural areas, Andhra Pradesh established a network of which type of medical facilities?
+(1) District General Hospitals
+(2) Medical Colleges
+(3) Village Health Clinics
+(4) Specialty Hospitals
+= 3
+~ Andhra Pradesh set up about 10,000 Village Health Clinics (YSR Village Health Clinics, now Ayushman Arogya Mandirs) at the village/ward secretariat level. Each is run by a Mid-Level Health Provider with an ANM and ASHAs, offering primary care, tests, medicines and teleconsultation, and is linked to the Family Doctor programme. District hospitals, medical colleges and specialty hospitals serve higher-level care, not village access.
+
+Q 42 | pol | Constitution & Rights
+Juvenile Courts in Andhra Pradesh prioritise which of the following aspects during inquiries and trials involving children?
+(1) Public humiliation of the offender
+(2) The well being and best interests of the child
+(3) Setting a strong legal precedent
+(4) Ensuring speedy punishment
+= 2
+~ Juvenile courts (Juvenile Justice Boards and Children's Courts) work under the Juvenile Justice (Care and Protection of Children) Act, 2015, whose Section 3 makes the 'best interest of the child' a fundamental principle, with child-friendly, non-adversarial procedures and no stigmatising. The aim is the child's well-being, rehabilitation and reintegration, not humiliation, precedent-setting or speedy punishment.
+
+Q 43 | cur | Reports & Indices
+Which of the following statements regarding Andhra Pradesh’s inclusion in the SDG India Index 2023-24 methodology are correct?
+1. Andhra Pradesh’s SDG score has improved compared to the 2020-21 edition, reflecting progress in key development areas.
+2. The normalisation of raw data plays a crucial role in computing Andhra Pradesh’s overall SDG ranking and performance.
+3. Andhra Pradesh’s performance in SDGs directly contributes to India's broader mission of Viksit Bharat @ 2047, a long-term national development goal.
+4. The composite SDG Index score for Andhra Pradesh is derived by averaging its individual Goal scores, excluding certain goals not applicable to the State.
+(1) Only 1 and 3
+(2) Only 1, 2, and 4
+(3) Only 2 and 3
+(4) All 1, 2, 3, and 4
+= 4
+~ All four statements fit NITI Aayog's SDG India Index 2023-24, released in July 2024. Andhra Pradesh's composite score rose to 74 from 72 in 2020-21; raw indicator values are normalised to a 0–100 scale before Goal scores are computed; the report presents State SDG progress as a step towards Viksit Bharat @ 2047; and the composite score is the average of Goal scores, leaving out goals not counted (such as Goal 14).
+
+Q 44 | sci | Chemistry
+The aromatic solvent widely used in the manufacturing of reinforced plastics and resins is ____________________.
+(1) buna – N
+(2) propene
+(3) neoprene
+(4) styrene
+= 4
+~ Styrene (vinylbenzene, C6H5CH=CH2) is an aromatic liquid used as the reactive solvent and cross-linking monomer in unsaturated polyester resins for fibre-reinforced plastics, and to make polystyrene, ABS and SBR. Buna-N (nitrile rubber) and neoprene (polychloroprene) are synthetic rubbers, and propene is a non-aromatic (aliphatic) gas.
+
+Q 45 | geo | Environment & Ecology
+Which of the following was the first major conference on environmental issues held in Stockholm, Sweden, in the year 1972?
+(1) UN Conference on the Human Environment
+(2) UN Conference on Environment and Development
+(3) UN Conference on Natural Science and Environment
+(4) UN Conference on Pollution Control and Sustainable Environment
+= 1
+~ The United Nations Conference on the Human Environment, held in Stockholm on 5–16 June 1972, was the first major global conference on the environment; it adopted the Stockholm Declaration, led to the creation of UNEP, and made 5 June World Environment Day. The UN Conference on Environment and Development was the 1992 Earth Summit at Rio de Janeiro.
+
+Q 46 | sci | Biology & Health
+Which drug, discovered in 1932, is used by doctors to successfully treat bacterial infections?
+(1) Meprobamate
+(2) Prontosil
+(3) Dysidazirine
+(4) Equanil
+= 2
+~ Prontosil, a red sulphonamide dye, was found at Bayer in 1932 by Gerhard Domagk to cure streptococcal infections in mice; it was the first commercially available antibacterial drug and earned Domagk the 1939 Nobel Prize. Meprobamate (sold as Equanil) is a tranquilliser, and dysidazirine is a marine natural product, not an antibacterial medicine.
+
+Q 47 | eco | Indian Economy
+Which of the following statements is/are correct regarding coal mining in India?
+(I) Since March 1960, SCCL is a joint undertaking of the Government of Assam and the Government of India, sharing its equity in a 45 : 55 ratio.
+(II) In 1973, the various privately owned coal mines at Raniganj were nationalised.
+(III) National Coal Development Corporation Ltd. (NCDC) was set up in 1956.
+(1) Both statements (II) and (III) are correct.
+(2) Only statement (I) is correct.
+(3) Only statement (II) is correct.
+(4) Both statements (I) and (III) are correct.
+= 1
+~ Statement I is wrong: SCCL (Singareni Collieries) is a joint undertaking of the Government of Telangana (earlier Andhra Pradesh) and the Government of India with equity of about 51 : 49, not Assam with 45 : 55. Non-coking coal mines, including the private collieries of Raniganj, were nationalised in 1973 (Coal Mines (Nationalisation) Act, 1973), and NCDC was set up by the Government of India in 1956.
+
+Q 48 | pol | Governance & Schemes
+Identify the correct pair/s related to the National Nutrition Programmes with their years of commencement.
+1. National Iodine Deficiency Disorders Control Programme -1999
+2. MAA (Mothers’ Absolute Affection) Programme for Infant and Young Child Feeding - 2016
+3. National Programme for Prevention and Control of Fluorosis - 2000
+4. National Nutritional Anaemia Prophylaxis Programme -1970
+Select the correct answer from the options given below:
+(1) Both 2 and 4
+(2) 1 only
+(3) 2 only
+(4) Both 1 and 3
+= 1
+~ MAA (Mothers' Absolute Affection), which promotes breastfeeding, was launched in August 2016, and the National Nutritional Anaemia Prophylaxis Programme began in 1970, so pairs 2 and 4 are correct. The goitre control programme began in 1962 and was renamed the National Iodine Deficiency Disorders Control Programme in 1992 (not 1999), and the fluorosis programme was launched in 2008-09 (not 2000).
+
+Q 49 | geo | Environment & Ecology
+The worst aquatic weed in the world, which grows and spreads rapidly into new areas of freshwater bodies, is ____________.
+(1) Water thyme
+(2) Water lettuce
+(3) Water hyacinth
+(4) Water lily
+= 3
+~ Water hyacinth (Eichhornia crassipes), a free-floating plant from South America, is called the world's worst aquatic weed ('Terror of Bengal' in India). It spreads very fast by stolons, covers ponds and lakes, depletes oxygen, blocks waterways and harms fish. Water lettuce and water thyme (Hydrilla) are also weeds but less serious, and water lily is an ornamental plant.
+
+Q 50 | sci | Chemistry
+Which of the following is the most common food preservative against mould, bacteria, fungus and yeast?
+(1) Tartaric acid
+(2) Acetylsalicylic acid
+(3) Formic acid
+(4) Sorbic acid
+= 4
+~ Sorbic acid and its salts (sorbates such as potassium sorbate) are among the most widely used food preservatives because they check moulds, yeasts, fungi and many bacteria without affecting taste. Tartaric acid is mainly an acidulant, acetylsalicylic acid is aspirin (a drug), and formic acid is not a common food preservative.
+
+Q 51 | sci | Biology & Health
+Which of the following is the scientific name of the floating hydrozoan 'Portuguese Man o' War'?
+(1) Echinus esculentus
+(2) Chaetopleura apiculata
+(3) Meandrina meandrites
+(4) Physalia physalis
+= 4
+~ The Portuguese man o' war is Physalia physalis, a floating colonial hydrozoan (a siphonophore of phylum Cnidaria) with a gas-filled float and long stinging tentacles. Echinus esculentus is the edible sea urchin (an echinoderm), Chaetopleura apiculata is a chiton (a mollusc), and Meandrina meandrites is a maze coral (an anthozoan).
+
+Q 52 | sci | Chemistry
+Eduard Buchner, who was a German chemist, is best known for which of the following?
+(I) Winning the Nobel Prize in Chemistry in 1907
+(II) Developing the kinetic theory of enzyme action
+(III) Discovering cell-free fermentation
+(1) Only (II)
+(2) Only (I)
+(3) Both (I) and (III)
+(4) Both (II) and (III)
+= 3
+~ In 1897 Eduard Buchner showed that a cell-free yeast extract (containing the enzyme complex he called zymase) can ferment sugar, and he won the 1907 Nobel Prize in Chemistry for this discovery of cell-free fermentation. The kinetic theory of enzyme action was developed by Leonor Michaelis and Maud Menten (1913), so statement (II) is wrong.
+
+Q 53 | sci | Biology & Health
+Match the diseases in List-I with their transmission carriers in List-II.
+List-1 (Disease) | List-2 (Transmission Carrier)
+A. Zika | 1. Aedes albopictus
+B. Yellow Fever | 2. Haemagogus leucocelaenus mosquito
+C. Chikungunya | 3. Anopheles mosquito
+D. Malaria | 4. Aedes aegypti mosquito
+(1) A-3,  B-1,  C-4,  D-2
+(2) A-4,  B-3,  C-1,  D-2
+(3) A-4,  B-2,  C-1,  D-3
+(4) A-1,  B-2,  C-4,  D-3
+= 3,4
+~ Malaria is spread by female Anopheles mosquitoes (D-3), and Haemagogus mosquitoes carry yellow fever in the forest cycle in South America (B-2). Zika and chikungunya are both spread by Aedes aegypti as well as Aedes albopictus, so A and C can be matched with either Aedes species. APPSC accepted both options 3 and 4 because each gives a valid matching.
+
+Q 54 | geo | Environment & Ecology
+Identify the correct pair of ecologists with their groundbreaking invention.
+1. Charles Elton - Animal Ecology
+2. Henry Cowles - Ecological succession
+3. G Evelyn Hutchinson - Ecological niche
+4. E Lucy Braun - Fundamentals of Ecology
+Select the correct answer from the options given below:
+(1) 1 only
+(2) 1,2 and 3
+(3) Both 2 and 4
+(4) 2 only
+= 2
+~ Charles Elton wrote 'Animal Ecology' (1927), Henry C. Cowles pioneered the study of ecological succession on the Lake Michigan sand dunes, and G. Evelyn Hutchinson gave the modern concept of the niche as an n-dimensional hypervolume. 'Fundamentals of Ecology' (1953) was written by Eugene P. Odum; E. Lucy Braun is known for 'Deciduous Forests of Eastern North America'. So pairs 1, 2 and 3 are correct.
+
+Q 55 | sci | Physics
+Who among the following determined the charge of electrons as 1.5924 × 10⁻¹⁹ C?
+(1) Robert Millikan
+(2) Philipp Lenard
+(3) Carl Friedrich Gauss
+(4) Georg Ohm
+= 1
+~ Robert Millikan measured the charge of the electron with his oil-drop experiment (1909–1913) and obtained about 1.592 × 10⁻¹⁹ C; the modern value is 1.602 × 10⁻¹⁹ C (his small error came from a wrong value of air viscosity). Lenard worked on cathode rays and the photoelectric effect, Gauss on electrostatics and magnetism, and Ohm on the law of electrical resistance.
+
+Q 56 | sci | Physics
+Who among the following wrote 'De Magnette' in the 1600s, which gave the first rational explanation of the compass needle's mysterious ability to point north-south?
+(1) William Gilbert
+(2) Benjamin Franklin
+(3) Luigi Galvani
+(4) John Mitchell
+= 1
+~ The English physician William Gilbert published 'De Magnete' in 1600. He explained that the Earth itself behaves like a giant magnet, which is why a compass needle points north-south. Benjamin Franklin is known for his work on lightning and electricity, Luigi Galvani for 'animal electricity', and John Michell (spelt 'Mitchell' in the option) for the inverse-square law of magnetic force.
+
+Q 57 | sci | Physics
+Match List-I with List-II and select the correct answer using the code given below the lists:
+List-1 (Physicists) | List-2 (Major contribution/discovery)
+A. WK Roentgen | 1. Cosmic radiation
+B. Victor Francis Hess | 2. Maser
+C. Ernest Orlando Lawrence | 3. X-rays
+D. CH Townes | 4. Cyclotron
+Code:
+(a) A-1, B-4, C-2, D-3
+(b) A-4, B-2, C-3, D-1
+(c) A-4, B-3, C-1, D-2
+(d) A-3, B-1, C-4, D-2
+(1) b
+(2) d
+(3) a
+(4) c
+= 2
+~ Roentgen discovered X-rays in 1895 (A-3), Victor Hess discovered cosmic radiation in his 1912 balloon flights (B-1), Ernest Lawrence invented the cyclotron (C-4), and Charles H. Townes built the first maser (D-2). The correct code A-3, B-1, C-4, D-2 is code (d), which is option 2.
+
+Q 58 | sci | Chemistry
+Identify the correct pairs of organic chemical reactions and their mechanisms.
+1. Gatterman-Koch Reaction- The formation of cyclopropanes from alkenes using methylene carbene.
+2. Friedel-Crafts Acylation Reaction- The conversion of carboxylic acids into esters using acids and alcohols.
+3. Etard Reaction- The direct oxidation of an aromatic or heterocyclic bound methyl group with an aldehyde using chromyl chloride.
+4. Stephen Reaction- The conversion of nitriles to aldehydes in the presence of hydrochloric acid, using tin chloride.
+Select the correct answer from the options given below:
+(1) 1 only
+(2) 2 only
+(3) Both 3 and 4
+(4) 1, 2 and 3
+= 3
+~ In the Etard reaction chromyl chloride (CrO2Cl2) oxidises a methyl group on an aromatic ring to an aldehyde (toluene to benzaldehyde), and in the Stephen reaction a nitrile is reduced with SnCl2/HCl and then hydrolysed to an aldehyde. Gattermann-Koch is the formylation of benzene with CO and HCl, not cyclopropane formation, and Friedel-Crafts acylation adds an acyl group to an aromatic ring; making esters from acids and alcohols is esterification. So only pairs 3 and 4 are correct.
+
+Q 59 | cur | AP Affairs
+Who among the following is the Chief Executive Officer, Polavaram Project Authority (PPA) as of 25 May 2024?
+(1) KS Jawahar Reddy
+(2) Shanti Kumar
+(3) Shiv Nandan Kumar
+(4) KS Rejimon
+= 3
+~ Shiv Nandan Kumar, a Central Water Engineering Service officer who also chaired the Krishna River Management Board, held additional charge as Chief Executive Officer of the Polavaram Project Authority, the body set up under the Andhra Pradesh Reorganisation Act, 2014 to oversee the national Polavaram irrigation project. K.S. Jawahar Reddy was then the Chief Secretary of Andhra Pradesh, not the PPA head.
+
+Q 60 | cur | AP Affairs
+As part of its initiative to combat air pollution, the Andhra Pradesh Pollution Control Board (APPCB) is developing a state-level action plan aimed at reducing air pollution in 123 urban local bodies, including _______________ municipal corporations, with plans to extend efforts to rural areas over time.
+(1) 15
+(2) 17
+(3) 19
+(4) 21
+= 2
+~ In February 2023 the APPCB said it was preparing a state-level action plan to reduce air pollution in 123 urban local bodies, including 17 municipal corporations, and to extend it to rural areas in due course. The other urban local bodies are municipalities and nagar panchayats.
+
+Q 61 | ih | Andhra History
+Who among the following social reformers in Andhra started the magazine called 'Hasya Sanjeevani'?
+(1) Kandukuri Veereshalingam
+(2) Vennelakanti Subba Rao
+(3) Venkataratnam Pantulu
+(4) Tripuraneni Ramaswamy
+= 1
+~ Kandukuri Veeresalingam used journalism for social reform: he started 'Viveka Vardhini' (1874), the humour and satire magazine 'Hasya Sanjeevani', and 'Satihitabodhini' for women. The similar-named 'Andhra Bhasha Sanjeevani' was run by Kokkonda Venkataratnam Pantulu, while Tripuraneni Ramaswamy was a later rationalist poet.
+
+Q 62 | ih | Andhra History
+Match the items in List I with List II.
+List I (Plays) | List II (Author)
+1. Vyavahara Dharmabodhini | a. Chilakamarti Lakshmi Narasimham
+2. Kanyashulakamu | b. Boyi Bhimanna
+3. Kuliraju | c. Gurajada Apparao
+4. Prahlada Charitamu | d. Kandukuri Veeresalingam Pantulu
+(1) 1-d, 2-c, 3-b, 4-a
+(2) 1-d, 2-c, 3-a, 4-b
+(3) 1-d, 2-a, 3-b, 4-c
+(4) 1-c, 2-d, 3-a, 4-b
+= 1
+~ Vyavahara Dharmabodhini (1880), one of the earliest Telugu social plays, is by Kandukuri Veeresalingam (1-d); Kanyasulkam (1892) is Gurajada Apparao's famous play (2-c); Kuliraju is by the Dalit poet Boyi Bhimanna (3-b); and Prahlada Charitamu (1907) is one of the mythological plays of Chilakamarti Lakshmi Narasimham (4-a). So option 1 is correct.
+
+Q 63 | ih | Andhra History
+Which of the following present day regions of Andhra Pradesh was/were called 'Ceded districts' during the British period?
+(1) Godavari Districts
+(2) Northern Andhra
+(3) Rayalaseema
+(4) Total Andhra Pradesh
+= 3
+~ In 1800 the Nizam of Hyderabad ceded Bellary, Cuddapah (Kadapa), Kurnool and Anantapur areas to the East India Company to pay for the subsidiary force, so they were called the 'Ceded Districts'. In 1928 the Andhra Mahasabha at Nandyal renamed the region 'Rayalaseema'. The coastal Godavari and northern districts formed part of the Northern Circars.
+
+Q 64 | ih | Andhra History
+Match the items given in List-I with those in List-II.
+List-I (Event/Incident in History) | List-II (Year)
+1. The Dutch established their first factory at Masulipatnam. | a. 1605
+2. The British established their first factory at Masulipatnam. | b. 1611
+3. The ceded districts were re-divided into Bellary and Kadapa districts. | c. 1808
+4. The Godavari district came under the control of the East India Company. | d. 1766
+(1) 1-a, 2-b, 3-c, 4-d
+(2) 1-a, 2-b, 3-d, 4-c
+(3) 1-c, b-d, 3-a, 4-b
+(4) 1-d, 2-c, 3-a, 4-b
+= 1
+~ The Dutch opened their first factory in India at Masulipatnam in 1605, and the English East India Company set up its factory there in 1611. The Northern Circars, including the Godavari area, came under the Company by the 1766 treaty with the Nizam, and the Ceded Districts were split into Bellary and Cuddapah districts in 1808. So the order is 1-a, 2-b, 3-c, 4-d.
+
+Q 65 | ih | Andhra History
+Select the option that is correct regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): During the revolt of 1857, Sheikh Peer Saheb, a Muslim religious leader, called for a religious war of Jihad against the British in the city of Kadapa.
+Reason (R): The 1857 revolt was mainly concentrated in North and Central India, and its impact on South India was less significant.
+(1) Both A and R are true and R is the correct explanation of A.
+(2) Both A and R are true but R is not the correct explanation of A.
+(3) A is true but R is false.
+(4) A is false but R is true.
+= 2
+~ In 1857 Sheikh Peer Saheb called upon people in Cuddapah (Kadapa) to wage jihad against the British, one of the few echoes of the revolt in Andhra. It is also true that the revolt was centred in North and Central India and had little impact in the South. But the limited southern impact does not explain why Peer Saheb gave his call, so R is not the explanation of A.
+
+Q 66 | ih | Andhra History
+Match List I with List II and select the correct answer using the codes given.
+List I (Incident/Movement) | List II (Year)
+1. All India Kisan Sabha | a. 1936
+2. The first Andhra Pradesh anti-zamindari conference | b. 1931
+3. Prakasam Committee appointed to to study the conditions of the tenants | c. 1937
+4. Peasants meet at Gudivada against the atrocities by zamindars | d. 1917
+(1) 1-a, 2-b, 3-c, 4-d
+(2) 1-a, 2-b, 3-d, 4-c
+(3) 1-b, 2-a, 3-c, 4-d
+(4) 1-b, 2-a, 3-d, 4-c
+= 1
+~ The All India Kisan Sabha was founded at the Lucknow session in April 1936 (1-a). The Prakasam Committee on zamindari tenants was appointed in 1937 by the Congress ministry of Madras Presidency (3-c). Only option 1 has both 1-a and 3-c; it also matches the first Andhra anti-zamindari conference with 1931 and the Gudivada peasants' meeting with 1917.
+
+Q 67 | ih | Andhra History
+Who among the following composed ‘Amuktamalyada,’ a work on statecraft in Telugu language?
+(1) Nanne Choda
+(2) Palkuriki Somanatha
+(3) Krishnadevaraya
+(4) Gona Budda Reddy
+= 3
+~ Amuktamalyada was composed by the Vijayanagara emperor Krishnadevaraya (1509–1529); besides the story of Andal (Godadevi), it contains his advice on kingship and statecraft (raja-neeti). Nanne Choda wrote Kumarasambhavamu, Palkuriki Somanatha wrote Basava Puranamu, and Gona Budda Reddy wrote Ranganatha Ramayanamu.
+
+Q 68 | ih | Andhra History
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Kanyashulkam is written by the Kommarraju Lakshman Rao.
+Reason (R): The satirical play, revolves around social evils such as Kanyasulkam (a practice where the groom pays dowry to the bride).
+(1) Both Assertion (A) and Reason (R) are true and Reason (R) is a correct explanation of Assertion (A).
+(2) Both Assertion (A) and Reason (R) are true but Reason (R) is not a correct explanation of Assertion (A).
+(3) Assertion (A) is true and Reason (R) is false.
+(4) Assertion (A) is false and Reason (R) is true.
+= 4
+~ Kanyasulkam (1892) was written by Gurajada Apparao, not Kommaraju Lakshmana Rao, who was a historian and editor of the Telugu encyclopaedia Andhra Vignana Sarvasvamu; so A is false. The play is a satire on social evils, especially kanyasulkam, the bride price paid by the groom's side to the bride's family, so R is true.
+
+Q 69 | ih | Modern India & Freedom Struggle
+Match the following columns I and II and select the correct answer from the given options.
+Column I | Column II
+(Groups/institutions) | ( Years of establishment)
+A. Arya Samaj | 1. 1875
+B. Prarthna Samaj | 2. 1877
+C. Muhammadan Anglo-Oriental College | 3. 1903
+D. Shree Narayana Dharma Paripalana Yogam | 4. 1867
+(1) A - 4, B - 3, C - 1, D - 2
+(2) A - 3, B - 4, C - 1, D - 2
+(3) A - 1, B - 4, C - 2, D - 3
+(4) A - 2, B - 3, C - 1, D - 4
+= 3
+~ Swami Dayananda Saraswati founded the Arya Samaj in Bombay in 1875 (A-1), and the Prarthana Samaj was founded in Bombay in 1867 (B-4). Sir Syed Ahmad Khan's Muhammadan Anglo-Oriental institution at Aligarh began as a school in 1875 and became a college in 1877 (C-2), and the SNDP Yogam was founded in Kerala in 1903 under Sree Narayana Guru (D-3).
+
+Q 70 | ih | Modern India & Freedom Struggle
+Consider the following pairs of freedom fighters and their date of birth. Select the correct option.
+A. Bhagat Singh - 28 September 1907
+B. Chandra Shekhar Azad - 23 July 1906
+C. Khudiram Bose - 3 December 1889
+D. Ram Prasad Bismil - 11 June 1897
+(1) Only A and C
+(2) Only B and C
+(3) Only A, C and D
+(4) A, B, C and D
+= 4
+~ All four dates are correct. Bhagat Singh was born on 28 September 1907 at Banga (now in Pakistan), Chandra Shekhar Azad on 23 July 1906 at Bhabhra (Madhya Pradesh), Khudiram Bose on 3 December 1889 in Midnapore (Bengal), and Ram Prasad Bismil on 11 June 1897 at Shahjahanpur (Uttar Pradesh).
+
+Q 71 | ih | Modern India & Freedom Struggle
+Given below is the list of important personalities of Freedom struggle of India. Arrange the years of their demise in the chronological order.
+Select the correct option:
+A. Dr Rajendra Prasad
+B. Lala Lajpat Rai
+C. Motilal Nehru
+D. Sardar Vallabhbbhai Patel
+E. Maulana Abul Kalam Azad
+(1) A, E, C, B, D
+(2) B, A, C, E, D
+(3) B, C, D, E, A
+(4) A, C, E, D, B
+= 3
+~ Lala Lajpat Rai died in 1928 after the lathi charge during the anti-Simon Commission protest, Motilal Nehru in 1931, Sardar Patel in 1950, Maulana Azad in 1958 and Dr Rajendra Prasad in 1963. So the order of death is B, C, D, E, A.
+
+Q 72 | ih | Modern India & Freedom Struggle
+In which of the following places was the Muhammedan Literary Society founded by Nawab Abdul Latif in 1863?.
+(1) Kanpur
+(2) Aligarh
+(3) Pune
+(4) Calcutta
+= 4
+~ Nawab Abdul Latif founded the Mohammedan Literary Society in Calcutta in 1863 to spread modern Western education and liberal ideas among Muslims of Bengal. Aligarh is linked with Sir Syed Ahmad Khan's Muhammadan Anglo-Oriental College (1877), not with Abdul Latif.
+
+Q 73 | ih | Modern India & Freedom Struggle
+Given below are the pairs of important personalities of India with the names of institutions they founded.
+A. Indira Gandhi - Bal Charkha Sangh
+B. Jawahar Lal Nehru - Independence for India League
+C. Motilal Nehru - Servants of India Society
+Select the option with the correct pairs.
+(1) Only A and B
+(2) Only B and C
+(3) Only A and C
+(4) A, B and C
+= 1
+~ In her childhood Indira Gandhi founded the Bal Charkha Sangh and, in 1930, the Vanar Sena of children. Jawaharlal Nehru and Subhas Chandra Bose formed the Independence for India League in 1928 to press for complete independence. The Servants of India Society was founded in 1905 by Gopal Krishna Gokhale, not Motilal Nehru, so only A and B are correct.
+
+Q 74 | ih | Modern India & Freedom Struggle
+Match the following columns I and II about the key groups and organisations and their contribution to society.
+Select the correct option.
+Column I | Column II
+(Groups) | ( contribution)
+A. Arya Samaj | 1. Social justice for the people belonging to the so-called untouchable and backward classes
+B. Prarthana Samaj | 2. A home for widows
+C. Satya Shodhak Samaj | 3. Propagation of true knowledge of the Vedas
+D. Sharda Sadan | 4. Improvement of women and the depressed classes
+(1) A - 4, B - 3, C - 1, D - 2
+(2) A - 3, B - 4, C - 1, D - 2
+(3) A - 1, B - 2, C - 4, D - 3
+(4) A - 2, B - 3, C - 1, D - 4
+= 2
+~ The Arya Samaj (Dayananda Saraswati) preached a return to the Vedas (A-3), and the Prarthana Samaj worked for women's education and the depressed classes (B-4). Jyotiba Phule's Satya Shodhak Samaj (1873) fought for social justice for lower castes (C-1), and Pandita Ramabai's Sharada Sadan (1889) was a home and school for widows (D-2).
+
+Q 75 | ih | Art & Culture
+Arrange the given poetry of Rabindranath Tagore in the chronological order as per the year in which they were written.
+A. Gitimalya
+B. Balaka
+C. Manasi
+D. Sonar Tari
+E. Gitanjali
+Select the correct option.
+(1) A, E, C, B, D
+(2) B, A, C, E, D
+(3) C, D, E, A, B
+(4) A, C, E, D, B
+= 3
+~ Tagore's Manasi appeared in 1890 and Sonar Tari in 1894. The Bengali Gitanjali came in 1910, Gitimalya in 1914 and Balaka in 1916. So the chronological order is C, D, E, A, B. (The English 'Gitanjali: Song Offerings' of 1912 won him the Nobel Prize in Literature in 1913.)
+
+Q 76 | ih | Art & Culture
+Ellora caves are the invaluable ensemble of _____ caves at Ellora, Maharashtra.
+(1) 14
+(2) 24
+(3) 34
+(4) 44
+= 3
+~ The Ellora caves near Aurangabad (Chhatrapati Sambhajinagar) are a group of 34 rock-cut caves: 12 Buddhist, 17 Hindu and 5 Jain, made between about the 6th and 10th centuries CE. Cave 16, the Kailasa temple, was built under the Rashtrakuta king Krishna I. Ellora became a UNESCO World Heritage Site in 1983.
+
+Q 77 | geo | Indian Geography
+The Bay of Bengal island groups consist of how many islands/islets?
+(1) 462
+(2) 472
+(3) 532
+(4) 572
+= 4
+~ According to the NCERT geography textbook, the Bay of Bengal island groups (Andaman and Nicobar Islands) consist of about 572 islands and islets, lying roughly between 6°N–14°N and 92°E–94°E. The Arabian Sea group (Lakshadweep) has only about 36 islands, most of them small coral islands.
+
+Q 78 | geo | Indian Geography
+Which of the following statements about the river Ganga is/are correct?
+A. Its major left bank tributaries are the Burhi Dihing and Dhansari (South).
+B. It finally merges with the river Padma, which falls in the Bay of Bengal.
+(1) Only A
+(2) Only B
+(3) Both A and B
+(4) Neither A nor B
+= 4
+~ Both statements describe the Brahmaputra, not the Ganga. The Burhi Dihing and Dhansari (South) are left-bank tributaries of the Brahmaputra, and it is the Brahmaputra (Jamuna) that merges with the Padma. The Ganga's main left-bank tributaries are the Ramganga, Gomati, Ghaghara, Gandak, Kosi and Mahananda, and the Ganga itself is called the Padma in Bangladesh.
+
+Q 79 | geo | Environment & Ecology
+Arrange the following Acts of India in chronological order as per the year in which they were enacted.
+A.  The Water (Prevention and Control of Pollution) Act
+B.  The Air (Prevention and Control of Pollution) Act
+C. The Fisheries Act
+D. The National Environmental Tribunal Act
+(1) C, D, B, A
+(2) B, A, C, D
+(3) A, B,  D, C
+(4) D, C, B, A
+= 3
+~ The Water Act was enacted in 1974, the Air Act in 1981 and the National Environment Tribunal Act in 1995, so A, B, D is certain. The key places the Fisheries Act last, but the Indian Fisheries Act dates from 1897, which would put C first, and no option shows that order. (Official key; some sources differ.)
+
+Q 80 | cur | Reports & Indices
+According to 2022 Report of U.S. Department of State on International Religious Freedom, which of these religions has the highest population in Nepal (as per Census 2011)?
+(1) Buddhism
+(2) Islam
+(3) Hinduism
+(4) Christianity
+= 3
+~ The US State Department's 2022 International Religious Freedom Report, using Nepal's 2011 census, says about 81.3% of Nepalis are Hindu, 9% Buddhist, 4.4% Muslim and 1.4% Christian. So Hinduism has the largest following in Nepal, followed by Buddhism, while Islam and Christianity are small minorities.
+
+Q 81 | cur | Reports & Indices
+According to 2022 Report of U.S. Department of State on International Religious Freedom, who among the following constitute approximately 91% of the population in Bangladesh (as per National Government Census 2022 of Nepal)?
+(1) Sunni Muslims
+(2) Christians
+(3) Hindus
+(4) Shia Muslims
+= 1
+~ The US State Department's 2022 report, citing Bangladesh's 2022 national census, says Sunni Muslims are about 91% of Bangladesh's population and Hindus about 8%; Christians, Buddhists and Shia Muslims are small minorities. The words 'of Nepal' in the question are APPSC's slip; the census meant is Bangladesh's.
+
+Q 82 | cur | Reports & Indices
+Select the correct pairs of the infant mortality rates of India in 4 different years as per National Health Profile 2018.
+Year | Infant Mortality Rate
+A. 2013---40 per 1000 live births
+B. 2014---39 per 1000 live births
+C. 2015---37 per 1000 live births
+D. 2016---34 per 1000 live births
+(1) Only A and C
+(2) Only B and C
+(3) Only A, C and D
+(4) A, B, C and D
+= 4
+~ The National Health Profile 2018, published by the Central Bureau of Health Intelligence using Sample Registration System data, gives India's infant mortality rate as 40 (2013), 39 (2014), 37 (2015) and 34 (2016) per 1000 live births. All four pairs are correct.
+
+Q 83 | geo | AP Geography
+The Seshachalam Hill ranges in the Eastern Ghats encompasses parts of which of the following districts of Andhra Pradesh?
+(1) Eluru and Guntur
+(2) Chittoor and Kadapa
+(3) Kakinada and Krishna
+(4) Prakasam and NTR
+= 2
+~ The Seshachalam hills, part of the Eastern Ghats, spread over the Chittoor and Kadapa (YSR) region of Rayalaseema; the Tirumala hills are part of this range. The Seshachalam Biosphere Reserve (2010), Andhra Pradesh's first, protects their dry forests, known for red sanders.
+
+Q 84 | geo | AP Geography
+What is the rank of Andhra Pradesh in India in terms of Recorded Forest Area (RFA), as of December 2024?
+(1) 3rd
+(2) 5th
+(3) 8th
+(4) 11th
+= 3
+~ Recorded Forest Area (RFA) is land recorded as forest in government records; Andhra Pradesh has about 37,000 sq km (about 23% of its area), far less than Madhya Pradesh, Maharashtra, Odisha and Chhattisgarh. APPSC's key gives it the 8th rank as of December 2024, when the India State of Forest Report 2023 was released. In the ISFR 2021 state table, however, Andhra Pradesh (37,258 sq km) came 9th, just behind Himachal Pradesh (37,948 sq km). (Official key; some sources differ.)
+
+Q 85 | geo | AP Geography
+The drainage basin of Krishna river is shared by _______ along with Andhra Pradesh.
+(1) Maharashtra and Madhya Pradesh
+(2) Karnataka and Tamil Nadu
+(3) Maharashtra and Karnataka
+(4) Karnataka and Madhya Pradesh
+= 3
+~ The Krishna rises near Mahabaleshwar in Maharashtra and flows through Karnataka, Telangana and Andhra Pradesh to the Bay of Bengal. Its basin is shared by Maharashtra, Karnataka, Telangana and Andhra Pradesh. Madhya Pradesh and Tamil Nadu are not part of the Krishna basin.
+
+Q 86 | geo | AP Geography
+Kotha Koduru Beach and Ramatheerdam Beach are located in which district of Andhra Pradesh?
+(1) Nellore
+(2) Visakhapatnam
+(3) Bapatla
+(4) Srikakulam
+= 1
+~ Kothakoduru beach and Ramatheertham beach are on the coast of Sri Potti Sriramulu Nellore district, along with Mypadu beach. Bapatla district is known for Suryalanka beach, while Visakhapatnam and Srikakulam districts have their own beaches (such as RK Beach and Baruva) in north coastal Andhra.
+
+Q 87 | geo | AP Geography
+The Visakhapatnam Port was opened to ocean traffic with the arrival of which passenger vessel in October 1933?
+(1) SS Jalashakti
+(2) SS Padma
+(3) The Enterprise
+(4) SS Jaladurga
+= 4
+~ Visakhapatnam Port was opened to ocean traffic on 7 October 1933 with the arrival of the passenger ship SS Jaladurga of the Scindia Steam Navigation Company. It was formally opened by the Viceroy Lord Willingdon in December 1933. It is now one of India's major ports.
+
+Q 89 | cur | AP Affairs
+In July 2023, Nitin Gadkari laid the foundation stone for three NH projects at ________ in Andhra Pradesh, which included the Thamminapatnam-Narikellapalle Section from Eupuru to Krishnapatnam Port, covering length of 16 km.
+(1) Tirupati
+(2) Prakasam
+(3) Palnadu
+(4) Chittoor
+= 1
+~ On 13 July 2023, Union Road Transport and Highways Minister Nitin Gadkari laid the foundation stones at Tirupati for three National Highway projects (87 km, about ₹2,900 crore). They are the Naidupeta-Turpu Kanupur section of NH-71, the Chillakuru Cross-Krishnapatnam Port South Gate section of NH-516W, and the 16-km Thamminapatnam-Narikellapalle section, which extends the dedicated port road from Eupuru to Krishnapatnam Port.
+
+Q 90 | cur | AP Affairs
+Match the universities of Andhra Pradesh with their locations.
+Universities | Location
+(A) Acharya NG Ranga Agricultural University | (i) Guntur
+(B) Dr. YSR Horticultural University | (ii) Madanapalle
+(C) SV Agricultural College | (iii) Tirupati
+(D) Besant Theosophical College | (iv) Venkataramannagudem
+(1) A – i, B – iv, C – iii, D – ii
+(2) A – ii, B – iv, C – iii, D – i
+(3) A – iii, B – iv, C – ii, D – i
+(4) A – iv, B – ii, C – i, D – iii
+= 1
+~ Acharya N.G. Ranga Agricultural University has its headquarters at Lam, Guntur (A-i), and Dr. YSR Horticultural University is at Venkataramannagudem in West Godavari district (B-iv). S.V. Agricultural College is at Tirupati (C-iii), and Besant Theosophical College is at Madanapalle (D-ii), where Tagore translated 'Jana Gana Mana' into English in 1919.
+
+Q 91 | geo | Environment & Ecology
+What does the term 'carrying capacity' of an environment refer to?
+A. The maximum amount of resources that an environment can produce
+B. The maximum population an environment can sustain without being degraded
+C. The maximum amount of waste an environment can process
+D. The maximum area an environment can provide for species to live
+(1) A
+(2) B
+(3) C
+(4) D
+= 2
+~ Carrying capacity is the largest population of a species that an environment can support indefinitely with its food, water and other resources without being degraded. Beyond it, resources run short and the population falls. The ability to process waste (C) is the absorptive or assimilative capacity, not carrying capacity.
+
+Q 92 | geo | Environment & Ecology
+In the context of environmental science, what does the term 'absorptive capacity' refer to?
+A. The ability of an ecosystem to produce renewable resources.
+B. The maximum amount of pollutants an ecosystem can process and neutralise without harmful effects.
+C. The capacity of a species to adapt to environmental changes quantified by the rate of population growth.
+D. The maximum population size of a particular species that an environment can sustain indefinitely without being degraded.
+(1) A
+(2) B
+(3) C
+(4) D
+= 2
+~ Absorptive capacity is the ability of the environment to absorb, break down and neutralise wastes and pollutants without harm (NCERT: the ability of the environment to absorb degradation). When pollution exceeds this capacity, environmental damage results. Statement D defines carrying capacity, and A and C describe other ideas.
+
+Q 93 | geo | Environment & Ecology
+Which of the following is NOT a primary function of the environment?
+(1) Providing natural resources
+(2) Assimilating wastes and pollutants
+(3) Generating synthetic chemicals
+(4) Serving as a habitat for biodiversity
+= 3
+~ The environment performs four vital functions: it supplies resources, assimilates wastes, sustains life by providing genetic diversity and biodiversity, and provides aesthetic services. Synthetic chemicals are produced by human industry, not by the environment, so option 3 is not a function of the environment.
+
+Q 94 | geo | Environment & Ecology
+Which of the following is a primary cause of environmental degradation?
+(1) Sustainable agriculture
+(2) Renewable energy production
+(3) Deforestation
+(4) Wildlife conservation
+= 3
+~ Deforestation causes loss of biodiversity and habitat, soil erosion, disturbed water cycles and higher carbon dioxide in the air, so it is a primary cause of environmental degradation. Sustainable agriculture, renewable energy and wildlife conservation are ways of protecting the environment.
+
+Q 95 | geo | Environment & Ecology
+Which of the following options represents an example of a non-renewable resource?
+(1) Wind energy
+(2) Geothermal energy
+(3) Natural gas
+(4) Biomass
+= 3
+~ Natural gas is a fossil fuel formed over millions of years from buried organic matter; its stock is finite and cannot be replaced on a human time scale, so it is non-renewable. Wind, geothermal heat and biomass are replenished naturally and are renewable resources.
+
+Q 96 | geo | Environment & Ecology
+Which of the following scenarios best illustrates the concept of resource depletion and its long-term impacts on the environment?
+A. A forest that is managed sustainably to provide timber while maintaining biodiversity.
+B. A coastal area where overfishing has affected the entire marine ecosystem and local communities' livelihoods.
+C. A city that implements recycling programmes to reduce waste and promote resource conservation.
+D. A national park where strict regulations protect endangered species and their habitats from human interference.
+(1) A
+(2) B
+(3) C
+(4) D
+= 2
+~ Resource depletion means using a resource faster than it can be renewed. Overfishing removes fish faster than stocks recover, which damages the whole marine food web and in the long run destroys the livelihoods of fishing communities. The other scenarios (sustainable forestry, recycling, protected areas) are examples of conservation.
+
+Q 97 | geo | Environment & Ecology
+Which of the following policies and practices is most effective in achieving Sustainable Development?
+(1) Subsidizing fossil fuel industries to ensure lower energy costs for consumers.
+(2) Implementing carbon pricing to incentivize renewable energy investments.
+(3) Encouraging the use of single-use plastics to boost economic growth.
+(4) Promoting deforestation to create more land for agricultural activities.
+= 2
+~ Carbon pricing, through a carbon tax or emissions trading, makes polluters pay for their emissions and makes clean energy more competitive, balancing economic growth with environmental protection. Fossil fuel subsidies, single-use plastics and deforestation all increase pollution and resource depletion and work against sustainable development.
+
+Q 98 | cur | Reports & Indices
+Consider the achievement of Sustainable Development Goals (SDG) in the year 2020-2021. Among all Indian states, what was the rank of Andhra Pradesh in achieving SDG-7 (Affordable and clean energy)?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ In NITI Aayog's SDG India Index 2020-21 (Index 3.0), Andhra Pradesh scored the full 100 on Goal 7 (affordable and clean energy), so it was ranked 1, a top rank shared with the other states that also scored 100. Goal 7 tracks indicators such as household electrification and clean cooking fuel (LPG/PNG) connections.
+
+Q 99 | geo | Environment & Ecology
+Arrange the following events to achieving Sustainable Development Goals in chronological order.
+A. The First Five Year Plan of the Planning Commission of India was launched.
+B. United Nations Framework Convention on Climate Change (UNFCCC) was adopted.
+C. India signed the Kyoto Protocol.
+(1) A->B->C
+(2) B->C->A
+(3) C->A->B
+(4) A->C->B
+= 1
+~ The First Five Year Plan was launched in 1951. The UNFCCC was adopted in May 1992 and opened for signature at the Rio Earth Summit in June 1992. India joined the Kyoto Protocol (adopted in 1997) by accession in August 2002. So the order is A, B, C.
+
+Q 100 | geo | Environment & Ecology
+Match each strategy for sustainable development with its corresponding example of implementation.
+Strategies:
+A. Renewable Energy
+B. Sustainable Agriculture
+C. Waste Reduction
+Implementation:
+1. Crop Rotation
+2. Reduce, Reuse, Recycle
+3. Solar Power
+(1) A-1, B-2, C-3
+(2) A-2, B-3, C-1
+(3) A-3, B-1, C-2
+(4) A-3, B-2, C-1
+= 3
+~ Solar power is a renewable energy source (A-3). Crop rotation keeps soil fertile and reduces pests without heavy chemical use, so it is a sustainable agriculture practice (B-1). The 3Rs (reduce, reuse, recycle) are the basic method of waste reduction (C-2).
+
+Q 101 | cur | Reports & Indices
+What was the overall rank of Andhra Pradesh among all Indian states in achieving Sustainable Development Goals in the year 2020-2021?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 4
+~ In NITI Aayog's SDG India Index 2020-21 (released June 2021), Kerala topped with a score of 75, Himachal Pradesh and Tamil Nadu tied second with 74, and Andhra Pradesh scored 72 along with Goa, Karnataka and Uttarakhand. With three states ahead of it, AP's overall position is 4th, which APPSC keyed; many news reports describe it as joint 3rd by score. (Official key; some sources differ.)
+
+Q 102 | geo | Environment & Ecology
+Consider the following statements regarding Sustainable Development and its types. Determine whether each statement is True or False:
+A. Environmental sustainability involves practices that reduce waste, conserve natural resources, and protect ecosystems.
+B. Social sustainability focuses exclusively on economic growth and job creation, without regard to social equity or community development.
+(1) A:True, B:True
+(2) A:True, B:Flase
+(3) A:False, B:True
+(4) A:False, B:Flase
+= 2
+~ Environmental sustainability means using resources without degrading nature: reducing waste, conserving natural resources and protecting ecosystems, so A is true. Social sustainability is about social equity, health, education, human rights and community well-being; it does not focus "exclusively" on economic growth and jobs, so B is false. Hence A: True, B: False.
+
+Q 103 | geo | Environment & Ecology
+Match each concept related to the Brundtland Commission with its corresponding description:
+Concepts:
+A. Sustainable development
+B. Our common future
+C. Intergenerational equity
+Descriptions:
+1. The landmark report published in 1987 by the Brundtland Commission popularised the term "sustainable development" and addressed global environmental and development issues.
+2. The principle of ensuring that the needs of the present are met without compromising the ability of future generations to meet their own needs.
+3. The concept emphasizing the fair distribution of resources and opportunities between current and future generations.
+(1) A-1, B-2, C-3
+(2) A-2, B-1, C-3
+(3) A-3, B-2, C-1
+(4) A-2, B-3, C-1
+= 2
+~ The Brundtland Commission (World Commission on Environment and Development) published its report "Our Common Future" in 1987 (B-1). The report defined sustainable development as development that meets the needs of the present without compromising the ability of future generations to meet their own needs (A-2). Intergenerational equity is the fair sharing of resources and opportunities between present and future generations (C-3). So A-2, B-1, C-3.
+
+Q 104 | cur | Reports & Indices
+In the context of achievement of Sustainable Development Goals (SDG) in the year 2020-2021, what was the rank of Andhra Pradesh in achieving SDG-14 (Life in water) among all Indian states?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 2
+~ SDG 14 (Life Below Water) was scored only for the nine coastal states in NITI Aayog's SDG India Index 2020-21. Odisha led with 82 and Andhra Pradesh came second with 79, both in the Front Runner band; Karnataka (60), Gujarat and Maharashtra (57) followed, while Tamil Nadu scored lowest (11). So AP ranked 2nd.
+
+Q 105 | geo | Environment & Ecology
+Which of the following is an example of a renewable resource?
+(1) Coal
+(2) Natural gas
+(3) Biomass
+(4) Petroleum
+= 3
+~ A renewable resource is replenished by natural processes within a human time scale. Biomass (wood, crop residues, animal dung and other organic matter) is regrown through photosynthesis, so it is renewable. Coal, natural gas and petroleum are fossil fuels formed over millions of years and are non-renewable.
+
+Q 106 | pol | Governance & Schemes
+Which of the following schemes by the Government of India was launched in the year 2023?
+(1) Pradhan Mantri Vishwakarma Scheme
+(2) Pradhan Mantri Suraksha Bima Yojana
+(3) Pradhan Mantri MUDRA Yojana
+(4) Prime Minister Ujjwala Scheme 2.0
+= 1
+~ PM Vishwakarma was launched on 17 September 2023 (Vishwakarma Jayanti) to support traditional artisans and craftspeople in 18 trades with recognition, skill training, a toolkit incentive and collateral-free credit. PM Suraksha Bima Yojana (May 2015) and PM MUDRA Yojana (April 2015) are older schemes, and Ujjwala 2.0 was launched in August 2021.
+
+Q 107 | pol | Governance & Schemes
+Identify the option that arranges the following digital initiatives launched by the Government of India in chronological order.
+1. Aadhaar
+2. MyGov
+3. PM eVIDYA
+4. ONDC (Open Network for Digital Commerce)
+(1) 1 - 2 - 3 - 4
+(2) 4 - 2 - 3 - 1
+(3) 2 - 3 - 4 - 1
+(4) 4 - 3 - 2 - 1
+= 1
+~ Aadhaar came first: UIDAI was set up in January 2009 and the first Aadhaar numbers were issued in September 2010. MyGov was launched in July 2014, PM eVIDYA in May 2020 (during COVID-19), and ONDC was incorporated in December 2021 with its pilot launch in April 2022. So the order is 1 - 2 - 3 - 4.
+
+Q 109 | cur | National
+What was the main issue in MK Ranjitsinh versus Union of India (2024)?
+(1) National bird status of sparrow
+(2) Protection of Great Indian Bustard
+(3) Renewable energy in habitats
+(4) Hunting permissions in reserved forests
+= 2
+~ In M.K. Ranjitsinh v. Union of India, decided in March 2024, the Supreme Court dealt with protecting the critically endangered Great Indian Bustard from overhead power lines in Rajasthan and Gujarat while allowing solar and wind projects. It modified its 2021 blanket order to lay lines underground, set up an expert committee, and recognised a right against the adverse effects of climate change under Articles 14 and 21.
+
+Q 110 | cur | National
+What was the primary issue in Noble M Paikada versus Union of India (2024)?
+(1) Legality of road construction in protected areas
+(2) Constitutionality of 2020 exemption from environmental clearance for road and pipeline projects
+(3) Compensation for displaced communities due to road projects
+(4) Regulation of heavy vehicle traffic on ecologically sensitive roads
+= 2
+~ In Noble M. Paikada v. Union of India (21 March 2024), the Supreme Court examined a 28 March 2020 MoEFCC notification amending the EIA Notification, 2006 that exempted extraction of ordinary earth for linear projects such as roads and pipelines from prior environmental clearance. The Court held the blanket exemption arbitrary, issued without application of mind and violative of Article 14, and set it aside, so the issue was the constitutionality of that 2020 exemption.
+
+Q 111 | cur | National
+The mobile application 'Paat-Mitro' was launched by the Government of India for _______ farmers in 2023.
+(1) Jute
+(2) Tea
+(3) Cotton
+(4) Coffee
+= 1
+~ Paat-Mitro is a mobile app launched in December 2023 by the Jute Corporation of India under the Ministry of Textiles for jute farmers ("paat" means jute). It gives information on jute MSP and procurement, the Jute-ICARE package of improved farming practices and weather, and lets farmers track their payments.
+
+Q 112 | sci | Science & Technology
+Select the INCORRECT mission and the year it was launched from the following, launched by the Indian Space Research Organisation (ISRO).
+(1) GSLV-F14/INSAT-3ds Mission - 2022
+(2) PSLV-C58XPoSat Mission - 2024
+(3) PSLV-C57Aditya-L1 Mission - 2023
+(4) PSLV-C56/DS-SAR Mission - 2023
+= 1
+~ GSLV-F14/INSAT-3DS was launched on 17 February 2024, not in 2022, so option 1 is the incorrect pair. The others are correct: PSLV-C58/XPoSat (X-ray polarimetry satellite) on 1 January 2024, PSLV-C57/Aditya-L1 (India's first solar mission) on 2 September 2023, and PSLV-C56/DS-SAR (a Singapore radar satellite) on 30 July 2023.
+
+Q 113 | sci | Science & Technology
+As of 31st December 2024, which of the following statements is/are correct about PARAM Rudra Supercomputers under NSM?
+Statement A: 33 supercomputers with 32 Petaflops capacity have been deployed in IISc, IITs, C-DAC and Tier-II and Tier-III institutions.
+Statement B: These supercomputers support 10,000+ researchers, including 1,700+ PhD scholars from 200+ institutions.
+Statement C: NSM provides Tier-II and Tier-III city researchers' access to advanced supercomputing facilities.
+(1) Only Statement A is correct
+(2) Only Statements A and B are correct
+(3) Only Statements B and C are correct
+(4) All Statements A, B and C are correct
+= 4
+~ MeitY's Year-End Review 2024 states that under the National Supercomputing Mission (NSM) 33 supercomputers with a total capacity of about 32 petaflops have been deployed at IISc, IITs, C-DAC and other institutions, including those in Tier-II and Tier-III cities, supporting over 10,000 researchers including 1,700+ PhD scholars from 200+ institutions. In September 2024 the PM dedicated three PARAM Rudra systems (Pune, Delhi, Kolkata). So A, B and C are all correct.
+
+Q 114 | pol | Constitution & Rights
+What is the main aim of The Constitution (129th Amendment) Bill, 2024?
+(1) To give constitutional status and protection to cooperative societies
+(2) Simultaneous elections in Lok Sabha and State Legislative Assemblies
+(3) To abolish Election Tribunals in India and enable the trial of election petitions by High Courts
+(4) To confer a constitutional status to National Commission for Backward Classes
+= 2
+~ The Constitution (129th Amendment) Bill, 2024, introduced in the Lok Sabha on 17 December 2024 and referred to a Joint Parliamentary Committee, provides for simultaneous elections to the Lok Sabha and State Legislative Assemblies ("One Nation, One Election") by inserting Article 82A and amending Articles 83, 172 and 327. Co-operative societies got constitutional status by the 97th Amendment (2011), the NCBC by the 102nd (2018), and election tribunals were abolished by the 19th Amendment (1966).
+
+Q 116 | pol | Constitution & Rights
+In which of the following years did the 106th Constitution Amendment Act receive the assent of the President of India?
+(1) 2023
+(2) 2022
+(3) 2021
+(4) 2020
+= 1
+~ The Constitution (106th Amendment) Act, 2023 (Nari Shakti Vandan Adhiniyam) was passed as the Constitution (128th Amendment) Bill by the Lok Sabha on 20 September 2023 and the Rajya Sabha on 21 September 2023, and received the President's assent on 28 September 2023. So the year is 2023.
+
+Q 117 | pol | Constitution & Rights
+Which of the following is related to the 106th Constitution Amendment Act in India?
+(1) Reservation for women
+(2) Agriculture policy
+(3) Education reform
+(4) Caste census
+= 1
+~ The 106th Amendment Act, 2023 reserves one-third of seats for women in the Lok Sabha, State Legislative Assemblies and the Delhi Legislative Assembly (including within SC/ST seats) by inserting Articles 330A, 332A and 334A and amending Article 239AA. It takes effect after delimitation based on the first census after the Act and lasts 15 years. It has nothing to do with agriculture, education or a caste census.
+
+Q 118 | cur | National
+Where was the Agriculture Integrated Command and Control Centre inaugurated by the Government of India in March 2024?
+(1) Delhi
+(2) Nagpur
+(3) Patna
+(4) Bengaluru
+= 1
+~ The Agriculture Integrated Command and Control Centre was inaugurated by Union Agriculture Minister Arjun Munda on 5 March 2024 at Krishi Bhawan, New Delhi. It brings geospatial, remote-sensing, weather, crop and scheme data together on large video walls so that the ministry can monitor crops and schemes in real time and take quicker decisions.
+
+Q 119 | cur | National
+Which of the following statements regarding the Year-End Review 2024 of the Ministry of Electronics & Information Technology is/are correct?
+Statements:
+1. The Government of India approved four semiconductor manufacturing units under the Semicon India Programme to enhance domestic chip production.
+2. India hosted the 6th meeting of the GPAI Ministerial Council in New Delhi and was the outgoing chair of the Global Partnership on Artificial Intelligence (GPAI) in 2024.
+(1) Only Statement 1
+(2) Only Statement 2
+(3) Both Statements 1 and 2
+(4) Neither Statement 1 nor 2
+= 1
+~ MeitY's Year-End Review 2024 lists the approval of four semiconductor manufacturing units under the Semicon India Programme, so statement 1 is correct. India did host the 6th GPAI Ministerial Council meeting in New Delhi on 3 July 2024, but it was then the Lead Chair (the 2024 GPAI Chair), not the outgoing chair; Japan was the outgoing chair and Serbia was elected Lead Chair for 2024-25. So statement 2 is wrong.
+
+Q 120 | cur | International
+The ‘Global Pulse Confederation’ (GPC) was held in which country in February 2024?
+(1) Australia
+(2) India
+(3) South Africa
+(4) France
+= 2
+~ The Global Pulse Convention 2024 of the Global Pulse Confederation (GPC), the international body of the pulses trade and industry, was held at Bharat Mandapam, New Delhi in February 2024, hosted with NAFED. It brought together growers, traders, processors and policymakers to discuss pulses production, trade and India's goal of self-reliance in pulses. So the host country was India.
+
+Q 121 | eco | Indian Economy
+Which of the following institutions was set up in 1982, as an apex body, to coordinate the activities of all institutions involved in the rural financing system?.
+(1) National Bank for Agriculture and Rural Development (NABARD)
+(2) State Institute of Public Administration and Rural Development (SIPARD)
+(3) National Institute of Rural Development and Panchayati Raj (NIRD-PR)
+(4) The Integrated Tribal Development Project (ITDP)
+= 1
+~ NABARD was set up on 12 July 1982 under the NABARD Act, 1981, on the recommendation of the CRAFICARD committee (B. Sivaraman), as the apex development bank for agriculture and rural development. It took over the agricultural credit functions of RBI and the refinance functions of ARDC and coordinates rural financing institutions. NIRD-PR is a training and research body, SIPARD a state training institute and ITDP a tribal development project.
+
+Q 122 | eco | Indian Economy
+In which of the following states of India did the government start the alternate marketing channel called 'Uzhavar Sandhai' (Farmers’ market), a platform to link farmers and consumers?
+(1) Telangana
+(2) Andhra Pradesh
+(3) Tamil Nadu
+(4) Maharashtra
+= 3
+~ Uzhavar Sandhai ("farmers' market"; uzhavar is Tamil for farmer) was started by the Tamil Nadu government in November 1999, first in Madurai, so that farmers can sell vegetables and fruits directly to consumers at fair prices without middlemen. Andhra Pradesh's similar model is the Rythu Bazar (1999), and Punjab has Apni Mandi.
+
+Q 123 | eco | Indian Economy
+Out of the 17 All-India Financial Institutions (AIFIs), how many of them are regulated and supervised by the Reserve Bank?
+(1) 7
+(2) 9
+(3) 11
+(4) 13
+= 2
+~ The question follows RBI's older classification, under which nine of the 17 all-India financial institutions (AIFIs), the major term-lending and refinance institutions such as IDBI, IFCI, EXIM Bank, NABARD, NHB and SIDBI, were regulated and supervised by the Reserve Bank. After several of them became banks or NBFCs, RBI today regulates only five AIFIs (EXIM Bank, NABARD, NHB, SIDBI and NaBFID), but the figure asked here is nine.
+
+Q 124 | eco | Indian Economy
+Which of the following is termed as ‘Refinance Institution’ for the regulatory and supervisory purposes?
+(1) Industrial Finance Corporation of India (IFCI) Ltd.
+(2) Tourism Finance Corporation of India (TFCI)
+(3) National Housing Bank (NHB)
+(4) EXIM Bank
+= 3
+~ For regulation and supervision, RBI classifies All-India Financial Institutions into refinance institutions (NABARD, SIDBI and NHB) and term-lending institutions such as EXIM Bank. IFCI and TFCI were term-lending institutions and now function as non-banking financial companies. NHB refinances housing finance companies and banks for housing loans, so it is termed a refinance institution.
+
+Q 125 | eco | Indian Economy
+Which of the following statements is/are correct about the Insolvency and Bankruptcy Code, 2016?
+A. Insolvency and Bankruptcy Code, 2016 got Presidential assent in September 2016.
+B. Insolvency and Bankruptcy Board of India with 13 members has been appointed as a regulator.
+(1) Only A
+(2) Only B
+(3) Both A and B
+(4) Neither A nor B
+= 4
+~ The Insolvency and Bankruptcy Code, 2016 received the President's assent on 28 May 2016, not in September, so A is wrong. The Insolvency and Bankruptcy Board of India, set up on 1 October 2016 as the regulator, has 10 members under Section 189: a Chairperson, three officers of the Ministries of Finance, Corporate Affairs and Law, one RBI nominee and five other members. So B is also wrong.
+
+Q 126 | eco | Indian Economy
+Which of the following statements are correct about the poverty line in India?
+A. A common method used to measure poverty is based on the income or consumption levels.
+B. A person is considered poor if his or her income or consumption level falls below a given 'minimum level' necessary to fulfil the basic needs.
+C. Poverty line shows no variation with time and place.
+D. The poverty line is estimated periodically (normally every ten years) by conducting census.
+(1) Only A and D
+(2) Only B and C
+(3) Only A and B
+(4) A, B, C and D
+= 3
+~ As NCERT explains, poverty is commonly measured on the basis of income or consumption levels (A), and a person is poor if his or her income or consumption falls below a "minimum level" needed to fulfil basic needs (B). C is wrong because the poverty line varies with time and place (rural/urban and between states). D is wrong because it is estimated periodically, normally every five years, through NSSO sample surveys, not by a census.
+
+Q 127 | eco | Indian Economy
+Which of the following resolutions had formed the basis of the Second Five-year Plan?
+(1) Industrial Policy Resolution, 1953 (IPR 1953)
+(2) Industrial Policy Resolution, 1954 (IPR 1954)
+(3) Industrial Policy Resolution, 1955 (IPR 1955)
+(4) Industrial Policy Resolution, 1956 (IPR 1956)
+= 4
+~ The Industrial Policy Resolution of 30 April 1956 classified industries into three schedules and gave the State the leading role in basic and heavy industries; it formed the basis of the Second Five-Year Plan (1956-61), which followed the Mahalanobis model of heavy industrialisation. There were no Industrial Policy Resolutions in 1953, 1954 or 1955; the earlier one was in 1948.
+
+Q 128 | eco | Indian Economy
+Which of the following statements is correct regarding the Green Revolution in India?
+(1) Green Revolution continued with quantitative expansion of forest areas.
+(2) Instead of one crop season per year, the decision was made to have three crop seasons per year.
+(3) The scientific aspect of the Green Revolution was to use High Yielding Variety (HYV) of seeds.
+(4) Dr Norman Borlaug from Mexico supported the Green Revolution through the introduction of high yielding variety of paddy seeds.
+= 3
+~ The scientific basis of the Green Revolution (from the mid-1960s) was the use of High Yielding Variety seeds, along with fertilisers, pesticides and assured irrigation. It expanded farming area, not forest area; it introduced double cropping (two crop seasons a year, not three); and Norman Borlaug, an American scientist working in Mexico, developed HYV wheat, not paddy (HYV rice came from IRRI, Philippines).
+
+Q 129 | eco | Indian Economy
+Which of the following statements are correct about the demographic condition of India during the British period?.
+A. The overall literacy level was less than 16%.
+B. The male literacy level was at a negligible low of about 7%.
+C. The infant mortality rate was quite alarming - about 218 per thousand.
+D. The Life expectancy was also very low - 32 years.
+(1) A and B only
+(2) C and D only
+(3) A, C and D only
+(4) A, B, C and D
+= 3
+~ NCERT's Indian Economic Development (Class 11) notes that under British rule the overall literacy level was less than 16%, the infant mortality rate was about 218 per thousand and life expectancy was only 32 years, so A, C and D are correct. B is wrong because it was the female literacy level, not male, that was at a negligible low of about 7%.
+
+Q 130 | eco | Indian Economy
+Given below are the top textile industries in India. Arrange them in chronological order as per their year of establishment.
+A. The Lakshmi Mills Company Ltd.
+B. Bombay Dyeing and Manufacturing Company Ltd.
+C. Grasim Industries Ltd.
+D. Raymond Ltd.
+(1) A, B, C, D
+(2) B, A, D, C
+(3) A, C, B, D
+(4) B, C, A, D
+= 2
+~ Bombay Dyeing was founded by the Wadia family in 1879; The Lakshmi Mills Company was set up in Coimbatore in 1910; Raymond began as Raymond Woollen Mills at Thane in 1925; and Grasim Industries was incorporated in 1947 as Gwalior Rayon Silk Manufacturing (Weaving) Company. So the order is B, A, D, C.
+
+Q 131 | eco | Indian Economy
+In which year was the Microfinance Industry Network (MFIN ) established as an association for NBFC-MFIs?
+(1) 2002
+(2) 2004
+(3) 2007
+(4) 2009
+= 4
+~ The Microfinance Industry Network (MFIN) was established in 2009 as an industry association of NBFC-MFIs. In 2014 the RBI recognised it as a Self-Regulatory Organisation (SRO) for NBFC-MFIs; it frames a code of conduct, handles grievance redressal and promotes responsible lending. Sa-Dhan is the other RBI-recognised SRO in the microfinance sector.
+
+Q 132 | eco | Indian Economy
+NFS is the largest interoperable ATM network in the country. Expand NFS ________.
+(1) National Fixed Service
+(2) National Fiscal System
+(3) National Financial Service
+(4) National Financial Switch
+= 4
+~ NFS stands for National Financial Switch. It was launched by IDRBT in 2004 and has been run by the National Payments Corporation of India (NPCI) since December 2009. It links the ATMs of member banks, so a cardholder can withdraw cash or check the balance at any member bank's ATM, making it the largest interoperable ATM network in India.
+
+Q 133 | eco | Indian Economy
+The head office of Equitas Small Finance Bank Ltd is located in ______.
+(1) Pune
+(2) Mumbai
+(3) Mysuru
+(4) Chennai
+= 4
+~ Equitas Small Finance Bank Ltd, which grew out of the Equitas microfinance company, has its head office in Chennai, Tamil Nadu. It received the RBI's small finance bank licence and began banking operations in September 2016. Other small finance banks are headquartered elsewhere, for example Ujjivan in Bengaluru and AU in Jaipur.
+
+Q 134 | eco | Indian Economy
+Match the following columns I and II about the share of different categories of employment in total employment in 2022 as per India Employment Report, 2024 and select the correct option.
+Column I | Column II
+A. Self-employment | 1. 55.8%
+B. Casual employment | 2. 22.7%
+C. Regular employment | 3. 21.5%
+(1) A - 2, B - 3, C - 1
+(2) A - 3, B - 2, C - 1
+(3) A - 1, B - 2, C - 3
+(4) A - 1, B - 3, C - 2
+= 3
+~ The India Employment Report 2024, released by the ILO and the Institute for Human Development in March 2024, shows that in 2022 self-employment was the largest category at 55.8% of total employment, followed by casual employment at 22.7% and regular (salaried) employment at 21.5%. So A-1, B-2, C-3.
+
+Q 135 | eco | Indian Economy
+Select the option that shows the correct chronological order of the following events in India’s economy.
+A. India’s first union budget was presented in Parliament.
+B. Indira Gandhi nationalised 14 private banks.
+C. Indira Gandhi took the drastic step of devaluing the Indian rupee by a sharp 57%.
+D. This budget lowered direct taxes for companies and raised exemption limits for income tax.
+E. The dismantling of the licence Raj by the Narasimha Rao-led government.
+(1) A, E, C, D, B
+(2) A, B, C, D, E
+(3) A, C, B, D, E
+(4) B, C, A, E, D
+= 3
+~ Independent India's first Union Budget was presented by R.K. Shanmukham Chetty on 26 November 1947 (A); the rupee was devalued by about 57%, from Rs 4.76 to Rs 7.50 per US dollar, in June 1966 (C); and 14 major private banks were nationalised on 19 July 1969 (B). D fits V.P. Singh's 1985-86 budget, which cut direct-tax rates and raised the income-tax exemption limit, while the dismantling of the licence Raj (E) came with the 1991 reforms. So the order is A, C, B, D, E.
+
+Q 136 | geo | Disaster Management
+Which of the following best describes the concept of a vulnerability profile in disaster management?
+(1) A list of all past disasters that have occurred in a region
+(2) A detailed plan for emergency response and recovery operations
+(3) An assessment of the susceptibility of a community or system to the impacts of hazards
+(4) A document outlining the roles and responsibilities of various agencies during a disaster
+= 3
+~ A vulnerability profile assesses how susceptible a community or system is to the impacts of hazards, looking at physical (location, housing), social (age, health, disability), economic and environmental factors. A list of past disasters is a hazard history, a response and recovery plan is a disaster management plan, and a roles-and-responsibilities document is an institutional or SOP document.
+
+Q 137 | geo | Disaster Management
+Select the most appropriate option to answer the given question.
+Which of the following factors contributes the least to a community's vulnerability profile in a disaster?
+(1) Limited access to healthcare facilities
+(2) Strong social networks and community cohesion
+(3) Presence of elderly or disabled residents
+(4) Availability of early warning systems
+= 1,3
+~ Limited access to healthcare (1) and the presence of elderly or disabled residents (3) are factors that increase a community's vulnerability, while strong social networks (2) and early warning systems (4) reduce it, so logically 2 and 4 contribute the least. APPSC declared the question ambiguous and accepted both options 1 and 3, giving full marks for either. (Official key; some sources differ.)
+
+Q 138 | geo | Disaster Management
+Public education about evacuation routes and safety procedures falls under which disaster management phase?
+(1) Prevention
+(2) Mitigation
+(3) Preparedness
+(4) Recovery
+= 3
+~ Preparedness covers measures taken before a disaster so that the response is effective: public education and awareness, evacuation plans and routes, drills, early warning and stockpiles. Teaching people evacuation routes and safety procedures is therefore preparedness. Prevention and mitigation reduce the hazard or its impact (such as building codes or embankments), and recovery is rebuilding after the event.
+
+Q 139 | geo | Disaster Management
+Afforestation (planting trees) in flood-prone areas is a strategy for:
+(1) evacuation planning
+(2) flood control
+(3) search and rescue
+(4) damage assessment
+= 2
+~ Planting trees in flood-prone catchments and along riverbanks increases infiltration, slows surface run-off, and reduces soil erosion and siltation of rivers, which lowers flood peaks. It is a long-term flood control (mitigation) measure. Evacuation planning, search and rescue, and damage assessment are preparedness, response and recovery activities.
+
+Q 140 | geo | Disaster Management
+GIS allows the integration of various data layers. During a disaster, which of the following types of data would be the least useful to be included in a situational awareness map?
+(1) Real-time weather data
+(2) Locations of hospitals and shelters
+(3) Pre-disaster population density maps
+(4) Satellite imagery showing the extent of damage
+= 3
+~ A situational awareness map during a disaster needs current, action-oriented information: real-time weather, locations of hospitals and shelters, and satellite imagery showing the extent of damage. Pre-disaster population density maps are static baseline data prepared before the event, so they are the least useful layer during the disaster, although they still help in estimating exposure.
+
+Q 141 | geo | Disaster Management
+Which of the following is NOT a component of a comprehensive vulnerability profile?
+(1) Location and housing structures
+(2) Availability of emergency shelters
+(3) Presence of hazardous materials
+(4) Popular tourist attractions
+= 4
+~ A comprehensive vulnerability profile records the factors that decide how badly a community can be harmed: its location and housing structures, the presence of hazardous materials, critical facilities, and coping capacity such as the availability of emergency shelters. Popular tourist attractions do not by themselves determine a community's susceptibility to hazards, so they are not a component.
+
+Q 142 | geo | Disaster Management
+Communities with strong social networks and a culture of volunteerism are generally:
+(1) more likely to experience frequent disasters
+(2) better equipped to recover from disasters
+(3) more susceptible to misinformation
+(4) less likely to receive government assistance
+= 2
+~ Strong social networks and a culture of volunteerism are forms of social capital. Neighbours help each other evacuate, share information and resources, and organise relief, so such communities are more resilient and better equipped to recover from disasters. These traits do not cause more disasters, and they do not make people more prone to misinformation or less likely to get government help.
+
+Q 143 | geo | Disaster Management
+The primary purpose of a hazard map is to:
+(1) identify the areas that are at risk, for specific disasters
+(2) coordinate rescue efforts
+(3) provide emotional support after a disaster
+(4) secure funding for recovery
+= 1
+~ A hazard map shows the areas exposed to a particular hazard such as floods, cyclones, earthquakes or landslides, often in high, medium and low risk zones. Its primary purpose is to identify at-risk areas for specific disasters so that land use, building codes, preparedness and evacuation can be planned. Coordinating rescue, emotional support and funding are not its purpose.
+
+Q 144 | geo | Disaster Management
+Stockpiling food, water, and essential supplies is a key element of which disaster management phase?
+(1) Prevention
+(2) Mitigation
+(3) Preparedness
+(4) Recovery
+= 3,4
+~ Stockpiling food, water and essential supplies before a disaster is a classic preparedness measure, ensuring that resources are ready when the event strikes. The same stocks are drawn upon during relief and the early recovery period, so APPSC found the question ambiguous and accepted both option 3 (Preparedness) and option 4 (Recovery). (Official key; some sources differ.)
+
+Q 145 | geo | Disaster Management
+Distributing vaccines before a disease outbreak is an example of a:
+(1) mitigation strategy
+(2) preparedness measure
+(3) response action
+(4) recovery effort
+= 1,2
+~ Distributing vaccines before an outbreak builds immunity so that the disease's impact is reduced or prevented, which is a mitigation strategy. It is also an advance arrangement to be ready for an expected outbreak, which makes it a preparedness measure. Since both views are valid, APPSC accepted both options 1 and 2. A response action comes after the outbreak starts, and recovery comes later still.
+
+Q 146 | geo | Disaster Management
+Disaster risk reduction strategies are most effective when they:
+(1) focus solely on technological solutions
+(2) address the underlying causes of vulnerability
+(3) ignore the input of local communities
+(4) prioritise economic growth over safety measures
+= 2
+~ Disaster risk reduction works best when it tackles the root causes of vulnerability, such as poverty, unsafe housing, poor land use and environmental degradation, as stressed in the Hyogo and Sendai Frameworks. Relying only on technology, ignoring local communities, or putting economic growth above safety increases risk rather than reducing it.
+
+Q 147 | geo | Disaster Management
+Which of the following is the least effective way to prepare for a hurricane?
+(1) Securing outdoor furniture
+(2) Having a communication plan
+(3) Boarding up windows
+(4) Leaving valuables in a low-lying area
+= 4
+~ Leaving valuables in a low-lying area is the least effective (in fact harmful) choice, because hurricanes bring storm surge and heavy rain that flood low-lying places first; valuables should be moved to higher ground. Securing outdoor furniture, having a family communication plan and boarding up windows are standard hurricane preparedness steps.
+
+Q 148 | geo | Disaster Management
+Evacuation drills are important for:
+(1) identifying potential hazards
+(2) practising escape routes
+(3) assessing damage after a disaster
+(4) distributing food and water
+= 2
+~ Evacuation drills let people practise escape routes and assembly procedures in advance, so that during a real fire, earthquake or flood they leave quickly and safely; they are a preparedness activity. Identifying hazards is done through hazard assessment, damage assessment happens after a disaster, and distributing food and water is a relief activity.
+
+Q 149 | geo | Disaster Management
+The focus of a disaster recovery is on:
+(1) preventing future disasters
+(2) mitigating the impact of a disaster
+(3) responding to the immediate needs after a disaster
+(4) rebuilding the infrastructure and restoring normalcy
+= 2,4
+~ Disaster recovery focuses on rebuilding damaged infrastructure and restoring normal life (option 4), and under the "build back better" approach it also includes measures that reduce the impact of future disasters, that is, mitigation (option 2). APPSC found the question ambiguous and accepted both options 2 and 4. Meeting immediate needs after a disaster belongs to the response phase.
+
+Q 150 | geo | Disaster Management
+When responding to a flood, high-resolution satellite imagery from GIS can be used to:
+(1) estimate the number of people affected by the flood
+(2) locate and rescue stranded individuals
+(3) determine the cause of the flood
+(4) predict the future path of the floodwaters
+= 1,2,3,4
+~ High-resolution satellite imagery in a GIS maps the flooded area, which overlaid on population data estimates the number of people affected; very high-resolution images help locate stranded people and guide rescue; images can reveal causes such as breached embankments; and with elevation models they help predict where floodwaters will move. APPSC found the question ambiguous and accepted all four options.

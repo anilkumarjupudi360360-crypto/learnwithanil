@@ -865,7 +865,7 @@ ANALYST_P2_SUBJECTS = [
   ('bio', 'Biology', 'biology', ['Bacteria & Viruses', 'Cell Biology', 'Genetics & Evolution', 'Molecular Biology', 'Plant & Animal Biology']),
   ('evs', 'Environmental Science', 'environmental-science', ['Ecology & Ecosystems', 'Natural Resources', 'Pollution & Waste Management', 'Climate Change & Global Issues', 'Environmental Assessment & Planning', 'Environmental Laws & Policy']),
 ]
-ANALYST_SUBJECTS = ANALYST_P2_SUBJECTS
+ANALYST_SUBJECTS = ANALYST_P2_SUBJECTS + [s for s in AMVI_AP_SUBJECTS if s not in AMVI_AUTO]   # Paper I GS & MA added 8 Nov 2026
 ANALYST_SUBJ_TE = dict(AMVI_AP_SUBJ_TE, chm='రసాయన శాస్త్రం', bch='జీవ రసాయన శాస్త్రం', bio='జీవ శాస్త్రం', evs='పర్యావరణ శాస్త్రం')
 ANALYST_TE_P2 = 'పేపర్-2 కామన్ పేపర్'
 def _an_paper(pid, subj, slugsub, blurbsub):
@@ -880,6 +880,15 @@ ANALYST_PAPERS = [
   _an_paper('n2025b', 'Biochemistry', 'biochemistry', 'enzymes and coenzymes, immunology, blood and lymph, nervous and excretory systems, hormones, nutrition and vitamins, and clinical biochemistry.'),
   _an_paper('n2025g', 'Biology', 'biology', 'bacteria and viruses, cell biology, mitosis and meiosis, Mendelian genetics, mutations, evolution and molecular biology.'),
   _an_paper('n2025e', 'Environmental Science', 'environmental-science', 'ecology and ecosystems, natural resources, air, water and soil pollution, waste management, global warming, environmental assessment and eco-planning.'),
+  # Anil, 8 Nov 2026 ("add the rest also" -> Analyst + FRO GS papers): Paper I is the same APOnline paper (byte-identical final key PDF)
+  # that was set on 25 March 2025 for Assistant Environmental Engineer; the checked AEE text is reused (src/appsc-analyst/*paper1*).
+  dict(id='n2025a', file='appsc-analyst-2025-paper1-gsma.txt', year=2025, stage='Written Examination Paper I', short='Analyst 2025 Paper 1 (GS & MA)',
+       kwname='APPSC Analyst Grade 2 2025 Paper 1 General Studies & Mental Ability',
+       title='APPSC Analyst Grade-II 2025: Paper I (General Studies & Mental Ability)', notif='Notification 02/2024 · CBT', held='25 March 2025',
+       key="APPSC's final key", fmt='mcq', slug='appsc-analyst-grade-2-2025-paper-1-general-studies-mental-ability-question-paper-with-answers',
+       alt='General Studies & Mental Ability', te_paper=EO_TE_P1,
+       blurb='Paper I: General Studies & Mental Ability (current affairs, science, history, geography, polity, economy, AP affairs and mental ability), computer-based test, '
+             '150 questions, 150 marks, 150 minutes, in English and Telugu. The same paper was set that day for Assistant Environmental Engineer of the A.P. Pollution Control Board.'),
 ]
 
 # APPSC Forest Range Officer, A.P. Forest Service (Anil, 1 Nov 2026: Notification 16/2026, 5 posts, apply 16 Oct to 5 Nov 2026).
@@ -1237,15 +1246,15 @@ def exam_confs():
            short='APPSC Analyst Grade-II', seo='APPSC Analyst Grade 2', slugp='appsc-analyst-grade-2', papers=ANALYST_PAPERS, subjects=ANALYST_SUBJECTS, faq=FAQ_ANALYST,
            board='APPSC', l2=L2_TE, pb='/appsc-analyst-grade-2/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
            te_name='ఏపీపీఎస్సీ అనలిస్ట్ గ్రేడ్-II (ఏపీ కాలుష్య నియంత్రణ మండలి)', te_paper='రాత పరీక్ష', subj_te=ANALYST_SUBJ_TE,
-           title='APPSC Analyst Grade 2 Previous Question Papers with Answers – AP Pollution Control Board, Chemistry, Biochemistry, Biology & Environmental Science | Learn with Anil',
+           title='APPSC Analyst Grade 2 Previous Question Papers with Answers – AP Pollution Control Board, GS & Mental Ability, Chemistry, Biochemistry, Biology & Environmental Science | Learn with Anil',
            h1='APPSC Analyst Grade-II previous question papers <em>with answers.</em>',
-           l2line='ఏపీపీఎస్సీ అనలిస్ట్ గ్రేడ్-II (ఏపీ కాలుష్య నియంత్రణ మండలి) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — పేపర్-2 కెమిస్ట్రీ, బయోకెమిస్ట్రీ, బయాలజీ, ఎన్విరాన్‌మెంటల్ సైన్స్ (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='ఏపీపీఎస్సీ అనలిస్ట్ గ్రేడ్-II (ఏపీ కాలుష్య నియంత్రణ మండలి) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), పేపర్-2 కెమిస్ట్రీ, బయోకెమిస్ట్రీ, బయాలజీ, ఎన్విరాన్‌మెంటల్ సైన్స్ (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
            aka='Analyst Grade-II in the A.P. Pollution Control Board (APPCB), recruited by the Andhra Pradesh Public Service Commission.',
            aka_short='APPSC Analyst Grade-II (AP Pollution Control Board)',
-           desc=lambda t: (f"APPSC Analyst Grade-II (A.P. Pollution Control Board) previous question papers: the 2025 Paper II Chemistry, Biochemistry, Biology and Environmental Science papers "
-                           f"with answers from APPSC's final keys, {t:,} questions with explanations. Practice quizzes and timed mock tests for the 2026 Common Paper with the ₹45 All-in-One Pass."),
+           desc=lambda t: (f"APPSC Analyst Grade-II (A.P. Pollution Control Board) previous question papers: the 2025 Paper I General Studies & Mental Ability (English and Telugu) and Paper II Chemistry, Biochemistry, Biology and Environmental Science papers "
+                           f"with answers from APPSC's final keys, {t:,} questions with explanations. Practice quizzes and timed mock tests for the 2026 exam with the ₹45 All-in-One Pass."),
            eyebrow='APPSC · Analyst Grade-II · A.P. Pollution Control Board · 2025',
-           papers_note="Answers come from APPSC's final keys on the master question papers of the March 2025 computer-based test (Notification 02/2024): the option marked correct there is the answer. Questions APPSC ignored for all candidates are left out; where APPSC accepted two options, both are shown as correct. In 2025 Paper II was set separately for each degree subject; from 2026 it is one Common Paper with all four subjects, so practise all four. The papers are in English only."),
+           papers_note="Answers come from APPSC's final keys on the master question papers of the March 2025 computer-based test (Notification 02/2024): the option marked correct there is the answer. Questions APPSC ignored for all candidates are left out; where APPSC accepted two options, both are shown as correct. In 2025 Paper II was set separately for each degree subject; from 2026 it is one Common Paper with all four subjects, so practise all four. Paper I (General Studies & Mental Ability, held 25 March 2025, the same paper as for Assistant Environmental Engineer) is in English and Telugu as printed; the Paper II papers are in English only."),
       dict(id='appsc-env-engineer', dir='appsc-assistant-environmental-engineer', src='appsc-env-engineer', key='ap-enveng', name='APPSC Assistant Environmental Engineer (A.P. Pollution Control Board)',
            short='APPSC Asst. Environmental Engineer', seo='APPSC Assistant Environmental Engineer', slugp='appsc-assistant-environmental-engineer', papers=AEE_PAPERS, subjects=AEE_SUBJECTS, faq=FAQ_AEE,
            board='APPSC', l2=L2_TE, pb='/appsc-assistant-environmental-engineer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
@@ -2291,7 +2300,7 @@ def FAQ_AP(post):
 def FAQ_ANALYST(total, npapers):
     return [
       ('Where can I get APPSC Analyst Grade-II previous question papers with answers?',
-       f'This page has {total:,} questions from {npapers} APPSC Analyst Grade-II (A.P. Pollution Control Board) papers: the 2025 Paper II Chemistry, Biochemistry, Biology and Environmental Science papers '
+       f'This page has {total:,} questions from {npapers} APPSC Analyst Grade-II (A.P. Pollution Control Board) papers: the 2025 Paper I General Studies & Mental Ability and the Paper II Chemistry, Biochemistry, Biology and Environmental Science papers '
        "(Notification 02/2024, computer-based test, March 2025). Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam."),
       ('What is the APPSC Analyst Grade-II exam pattern in 2026?',
        'Notification 21/2026 (18 posts) has two objective papers of degree standard: Paper I General Studies & Mental Ability (150 questions, 150 marks, 150 minutes) and Paper II, a Common Paper of Chemistry, '
@@ -2304,7 +2313,7 @@ def FAQ_ANALYST(total, npapers):
        "A bachelor's degree in Chemistry, Biochemistry, Biology or Environmental Sciences from a recognised university in India (first class preferred), age 18 to 44 years as on 1 July 2026 with the usual relaxations. "
        'Pay scale ₹48,440 – ₹1,37,220.'),
       ('Are the questions in Telugu?',
-       'The Analyst Grade-II Paper II papers are printed in English only, so they are here in English.'),
+       'Paper I (General Studies & Mental Ability) is here in English and Telugu, as APPSC printed it. The Paper II papers are printed in English only, so they are here in English.'),
       ('Which questions are left out?',
        'Questions that APPSC ignored for all candidates are left out. Where APPSC accepted two options, both are shown as correct.'),
     ]
