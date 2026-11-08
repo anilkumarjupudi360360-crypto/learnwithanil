@@ -437,6 +437,14 @@ HM_PAPERS = [
        key="TSPSC's final key", fmt='mcq', slug='tgpsc-hmwssb-manager-2015-paper-2-civil-engineering-question-paper-with-answers',
        alt='Civil Engineering', te_paper='పేపర్-2 సివిల్ ఇంజనీరింగ్', en_only=True,
        blurb='Paper 2: Civil Engineering (surveying, transportation, structures and design, geotechnical, fluid mechanics, water resources, environmental engineering, building materials and construction), 150 questions, 300 marks, 150 minutes, in English only.'),
+  # Anil, 8 Nov 2026: sent the scanned ECE booklet (ME1315, code 504, Series A), "add this exam in Telangana engineering exam";
+  # answers from TSPSC's final key (Series A), copy on freejobalert.com like the GS and Civil keys.
+  dict(id='m15e', file='tgpsc-hmwssb-manager-2015-paper2-ece.txt', year=2015, stage='Written Examination Paper II', short='Manager 2015 Paper 2 (ECE)',
+       title='TSPSC Manager (Engineering), HMWSSB, 2015: Paper 2 (Electronics & Communication Engineering)', notif='Notification 13/2015 · Series A', held='1 November 2015',
+       key="TSPSC's final key", fmt='mcq', slug='tgpsc-hmwssb-manager-2015-paper-2-electronics-communication-engineering-ece-question-paper-with-answers',
+       alt='Electronics & Communication Engineering (ECE)', te_paper='పేపర్-2 ఎలక్ట్రానిక్స్ & కమ్యూనికేషన్ ఇంజనీరింగ్', en_only=True,
+       blurb='Paper 2: Electronics & Communication Engineering (networks, electronic devices and circuits, digital electronics, signals and systems, control systems, analog and digital communication, '
+             'electromagnetics, transmission lines, microwaves and antennas), 150 questions, 300 marks, 150 minutes, in English only.'),
 ]
 HM_SUBJECTS = [
   ('cur', 'Current Affairs', 'current-affairs', ['National', 'International', 'Telangana', 'Sports & Awards']),
@@ -458,6 +466,19 @@ HM_SUBJECTS = [
   ('wre', 'Water Resources & Irrigation', 'water-resources-irrigation', ['Hydrology', 'Irrigation Engineering']),
   ('evn', 'Environmental Engineering', 'environmental-engineering', ['Water Supply', 'Sewerage & Wastewater Treatment', 'Solid Waste & Pollution']),
   ('bmc', 'Building Materials & Construction', 'building-materials-construction', ['Building Materials', 'Construction & Estimation', 'Construction Management']),
+  # Paper 2 ECE (m15e), 8 Nov 2026
+  ('nwk', 'Network Theory', 'network-theory', ['Network Laws & Theorems', 'AC Circuits & Resonance', 'Transients & Laplace Analysis', 'Two-Port Networks & Network Synthesis']),
+  ('edv', 'Electronic Devices & IC Technology', 'electronic-devices', ['Semiconductor Physics', 'Diodes & Transistors', 'IC Fabrication']),
+  ('anc', 'Analog Circuits', 'analog-circuits', ['Transistor Amplifiers & Biasing', 'Op-Amps & Linear ICs', 'Feedback, Oscillators & Power Supplies']),
+  ('dge', 'Digital Electronics & Microprocessors', 'digital-electronics-microprocessors', ['Number Systems & Logic Gates', 'Combinational & Sequential Circuits', 'Logic Families, Memories & Converters', 'Microprocessors & Microcontrollers']),
+  ('sgs', 'Signals & Systems', 'signals-systems', ['Signals & LTI Systems', 'Fourier, Laplace & Z-Transforms', 'Sampling & Digital Signal Processing']),
+  ('cts', 'Control Systems', 'control-systems', ['Transfer Functions & Block Diagrams', 'Time Response & Stability', 'Frequency Response & Compensation']),
+  ('acm', 'Analog Communication', 'analog-communication', ['Amplitude Modulation & Receivers', 'Frequency & Phase Modulation', 'Noise & Random Processes']),
+  ('dcm', 'Digital Communication', 'digital-communication', ['Sampling, PCM & Delta Modulation', 'Digital Modulation & Detection', 'Information Theory & Coding']),
+  ('emw', 'Electromagnetics & Transmission Lines', 'electromagnetics-transmission-lines', ['Vector Calculus & Electrostatics', "Magnetostatics & Maxwell's Equations", 'Wave Propagation', 'Transmission Lines']),
+  ('mwa', 'Microwaves & Antennas', 'microwaves-antennas', ['Waveguides & Cavity Resonators', 'Microwave Devices', 'Antennas & Arrays']),
+  ('msr', 'Measurements & Instrumentation', 'measurements-instrumentation', ['Electrical & Electronic Instruments', 'Transducers']),
+  ('ocn', 'Optical, Satellite & Computer Communication', 'optical-satellite-communication', ['Optical Fibre Communication', 'Satellite & Mobile Communication', 'Computer Networks']),
 ]
 HM_SUBJ_TE = {'cur': 'కరెంట్ అఫైర్స్', 'sci': 'జనరల్ సైన్స్', 'env': 'పర్యావరణం, విపత్తు నిర్వహణ', 'geo': 'భూగోళశాస్త్రం (జాగ్రఫీ)',
               'ih': 'భారతదేశ చరిత్ర', 'tg': 'తెలంగాణ చరిత్ర, ఉద్యమం', 'pol': 'భారత రాజ్యాంగం (పాలిటీ)', 'eco': 'భారత, తెలంగాణ ఆర్థిక వ్యవస్థ',
@@ -1211,15 +1232,15 @@ def exam_confs():
            short='HMWSSB Manager', seo='TGPSC HMWSSB Manager', slugp='tgpsc-hmwssb-manager', papers=HM_PAPERS, subjects=HM_SUBJECTS, faq=FAQ_HM,
            board='TGPSC', l2=L2_TE, pb='/tgpsc-hmwssb-manager/', keyname="TSPSC's final key", keyshort="TSPSC's final key", bits=True,
            te_name='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్)', te_paper='రాత పరీక్ష', subj_te=HM_SUBJ_TE,
-           title='TGPSC HMWSSB Manager (Engineering) Previous Question Papers with Answers – GS & Civil Engineering, English & Telugu | Learn with Anil',
+           title='TGPSC HMWSSB Manager (Engineering) Previous Question Papers with Answers – GS, Civil & ECE, English & Telugu | Learn with Anil',
            h1='TGPSC HMWSSB Manager (Engineering) previous question papers <em>with answers.</em>',
-           l2line='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), సివిల్ ఇంజనీరింగ్; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), సివిల్ ఇంజనీరింగ్, ఎలక్ట్రానిక్స్ & కమ్యూనికేషన్ ఇంజనీరింగ్ (ECE); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
            aka='Manager (Engineering) in the Hyderabad Metropolitan Water Supply and Sewerage Board (HMWSSB, Jalamandali), recruited by TGPSC, formerly TSPSC.',
            aka_short='TGPSC (TSPSC) Manager (Engineering), Hyderabad Metro Water Board',
            desc=lambda t: (f"TGPSC (TSPSC) HMWSSB Manager (Engineering) previous question papers: the 2015 Paper 1 General Studies (English and Telugu) "
-                           f"and Paper 2 Civil Engineering with answers from TSPSC's final key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"and Paper 2 Civil Engineering and Electronics & Communication Engineering (ECE) with answers from TSPSC's final key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
            eyebrow='TGPSC (TSPSC) · Manager (Engineering), HMWSSB · Notification 13/2015',
-           papers_note="Answers come from TSPSC's final key for booklet Series A (Notification 13/2015, written test held on 1 November 2015). Questions for which TSPSC gave the mark to every candidate are left out. Paper 1 is in English and Telugu as printed (its English-language questions in English only); Paper 2 (Civil Engineering) is in English only."),
+           papers_note="Answers come from TSPSC's final key for booklet Series A (Notification 13/2015, written test held on 1 November 2015). Questions for which TSPSC gave the mark to every candidate are left out. Paper 1 is in English and Telugu as printed (its English-language questions in English only); the Paper 2 subject papers (Civil Engineering, Electronics & Communication Engineering) are in English only."),
       dict(id='appsc-amvi', dir='appsc-amvi', src='appsc-amvi', key='ap-amvi', name='APPSC AMVI (Assistant Motor Vehicle Inspector)',
            short='APPSC AMVI', seo='APPSC AMVI', slugp='appsc-amvi', papers=AMVI_AP_PAPERS, subjects=AMVI_AP_SUBJECTS, faq=FAQ_AMVI('AP'),
            board='APPSC', l2=L2_TE, pb='/appsc-amvi/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
@@ -1838,7 +1859,7 @@ def exam_terms(e, cat):
     if e['id'] == 'appsc-analyst': words += ['analyst', 'analyst grade 2', 'analyst grade ii', 'pollution control board', 'appcb', 'chemistry', 'biochemistry', 'biology', 'environmental science']
     if e['id'] == 'appsc-fro': words += ['fro', 'forest range officer', 'forest', 'forestry', 'general forestry', 'range officer', 'forest department']
     if e['id'] == 'appsc-eo': words += ['endowments', 'endowment officer', 'eo grade 3', 'eo grade iii', 'executive officer', 'temple', 'devadaya', 'dharmadaya', 'hindu philosophy']
-    if 'hmwssb' in e['id']: words += ['hmwssb', 'water board', 'jalamandali', 'metro water', 'manager engineering', 'civil engineering', 'hmws']
+    if 'hmwssb' in e['id']: words += ['hmwssb', 'water board', 'jalamandali', 'metro water', 'manager engineering', 'civil engineering', 'hmws', 'ece', 'electronics', 'electronics and communication', 'communication engineering']
     if 'civil-judge' in e['id']: words += ['civil judge', 'junior civil judge', 'jcj', 'judiciary', 'high court', 'llb', 'law']
     if e['cat'] == 'ap': words += ['appsc', 'andhra'] + ([f'ap group {ROMAN[m.group(1)]}'] if m else [])
     if e['id'] in MAINS_EXAMS and MAINS_KIT: words += ['mains', 'answer writing', 'tool kit', 'toolkit', 'essay']
@@ -2231,19 +2252,19 @@ def FAQ_HM(total, npapers):
     return [
       ('Where can I get TGPSC HMWSSB Manager (Engineering) previous question papers with answers?',
        f'This page has {total} questions from the TSPSC Manager (Engineering) written test for HMWSSB, Notification 13/2015, held on 1 November 2015: '
-       'Paper 1 General Studies in English and Telugu, and Paper 2 Civil Engineering. Every answer is taken from TSPSC\'s final key (Series A), and each question has a short explanation. '
+       'Paper 1 General Studies in English and Telugu, and Paper 2 in Civil Engineering and in Electronics & Communication Engineering (ECE). Every answer is taken from TSPSC\'s final key (Series A), and each question has a short explanation. '
        'You can practise each paper as a quiz or a timed mock test, with answers and explanations with one ₹45 All-in-One Pass for every exam.'),
       ('What is the TGPSC HMWSSB Manager (Engineering) 2026 exam pattern?',
        'Two objective papers: Paper 1 General Studies and General Abilities (150 questions, 150 marks, in English and Telugu) and Paper 2 in the candidate\'s engineering '
        'subject (150 questions, 300 marks, in English), 450 marks in all. Notification 04/2026 has 130 posts, mostly Civil, and the exam is tentatively in December 2026; confirm dates on tgpsc.gov.in.'),
       ('Are the HMWSSB Manager General Studies questions available in Telugu?',
-       'Yes. Paper 1 (General Studies) is printed in English and Telugu, apart from its English-language questions, and every question is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu. Paper 2 (Civil Engineering) is printed in English only.'),
+       'Yes. Paper 1 (General Studies) is printed in English and Telugu, apart from its English-language questions, and every question is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu. The Paper 2 subject papers (Civil Engineering and ECE) are printed in English only.'),
       ('Is there a HMWSSB Manager mock test?',
        'Yes. Open the mock test page and take a real 2015 paper with a timer, or tap Create a quiz to choose subjects such as Environmental Engineering, Fluid Mechanics or Telangana History. You get your score, the official answer and an explanation for every question.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
       ('Which questions are left out?',
-       'In Paper 2 (Civil Engineering), TSPSC\'s final key gave the mark to every candidate for five questions (Q3, 37, 64, 95 and 128 in Series A); they are left out. The Mechanical, Electrical, ECE and CSE papers are not on the site yet.'),
+       'TSPSC\'s final key gave the mark to every candidate for five questions of Paper 2 Civil (Q3, 37, 64, 95 and 128 in Series A) and five of Paper 2 ECE (Q38, 47, 53, 123 and 134); they are left out. The Mechanical, Electrical and CSE papers are not on the site yet.'),
     ]
 
 
