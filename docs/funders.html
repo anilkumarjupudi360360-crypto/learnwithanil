@@ -751,6 +751,54 @@ details.upc .exams{margin-top:8px}
 @media (max-width:560px){.sv table.facts,.sv table.facts tbody,.sv table.facts tr,.sv table.facts td{display:block;width:100%}.sv table.facts tr:first-child{display:none}
   .sv table.facts tr{border:1px solid var(--line);border-radius:10px;margin:0 0 10px;padding:6px 0}.sv table.facts td{border:0;padding:4px 12px}}
 
+/* ===== Student-friendly additions (Anil, 8 Nov 2026: "ok carry on ....1 to 8") ===== */
+/* 1. phone tab bar */
+.tabbar{display:none}
+@media (max-width:760px){
+  .tabbar:not([hidden]){display:grid;grid-template-columns:repeat(5,minmax(0,1fr));position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);padding:4px 4px calc(4px + env(safe-area-inset-bottom,0px));box-shadow:0 -4px 16px rgba(13,24,48,.08)}
+  .tabbar a,.tabbar button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;font:600 11.5px/1.2 var(--f-body);color:var(--muted);text-decoration:none;background:none;border:0;border-radius:10px;position:relative;cursor:pointer}
+  .tabbar svg{width:22px;height:22px}
+  .tabbar [aria-current="page"],.tabbar button[aria-expanded="true"]{color:var(--accent-text);background:var(--accent-soft)}
+  .tb-n{position:absolute;top:1px;left:calc(50% + 5px);background:#DC2626;color:#fff;border-radius:999px;font:700 10px/15px var(--f-mono);padding:0 5px}
+  body.tabbar-on main{padding-bottom:76px}
+  .topbar.g2 .wrap > .nav{display:none}
+  .topbar.g2.menu-open .wrap > .nav{display:flex;flex-wrap:wrap;gap:4px;padding:6px 0 10px;overflow:visible}
+  .topbar.g2.menu-open .wrap > .nav a{background:var(--surface-2)}
+}
+/* 2 + 6. progress card on the exam home */
+.me{display:grid;gap:16px;padding:20px;margin-top:18px;border:1.5px solid var(--accent-soft)}
+.me-top{display:flex;gap:16px;align-items:center}
+.me-ring{--p:0;flex:none;width:86px;height:86px;border-radius:50%;background:conic-gradient(var(--accent) calc(var(--p)*1%),var(--surface-2) 0);display:grid;place-items:center;position:relative}
+.me-ring::before{content:"";position:absolute;inset:9px;border-radius:50%;background:var(--surface)}
+.me-ring div{position:relative;text-align:center;line-height:1.1}
+.me-ring b{font:800 20px var(--f-display);display:block}
+.me-ring span{font-size:11px;color:var(--muted)}
+.me-txt h2{font-size:20px;font-weight:800;margin:0}
+.me-txt p{color:var(--muted);font-size:14.5px;margin:4px 0 0}
+.me-acts{display:flex;flex-wrap:wrap;gap:10px}
+.me-acts .btn{white-space:normal;text-align:left}
+.me-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:12px;font-size:14.5px}
+.me-row .muted{font-size:14px}
+.me-row input[type=date]{font:inherit;padding:6px 8px;border:1.5px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.me-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.me-3 a{display:flex;flex-direction:column;align-items:center;gap:4px;padding:14px 8px;border:1.5px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);font-weight:700;font-size:14.5px;text-align:center;background:var(--surface)}
+.me-3 a:hover{border-color:var(--accent)}
+.me-3 a span{font-size:22px;line-height:1}
+.me-3 .n{color:#DC2626;font-family:var(--f-mono);font-size:12.5px}
+.streak{font-weight:700}
+/* 3. Daily 10 */
+.daily{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;padding:18px 20px;background:linear-gradient(120deg,var(--surface) 55%,rgba(232,163,23,.12));border-color:#E8A317}
+.daily h2{font-size:20px;font-weight:800;margin:2px 0 4px}
+.daily p{color:var(--muted);font-size:14.5px;margin:0;max-width:60ch}
+/* 5. rank line, 4. try card */
+.rank{display:flex;flex-direction:column;gap:4px;padding:14px 18px;margin-top:14px;border-color:#E8A317;background:linear-gradient(120deg,var(--surface) 60%,rgba(232,163,23,.14))}
+.rank b{font-size:17px}
+.rank span{color:var(--muted);font-size:13.5px}
+.trycta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;margin-top:14px;border-color:var(--accent)}
+.trycta p{margin:0;color:var(--muted);font-size:14.5px;max-width:62ch}
+.trycta b{color:var(--ink)}
+@media (max-width:560px){.me{padding:16px}.me-ring{width:72px;height:72px}.me-ring b{font-size:17px}.me-txt h2{font-size:18px}.me-3 a{padding:12px 4px;font-size:13px}}
+
 .fund-bar{background:var(--surface-2);border-radius:999px;height:14px;overflow:hidden;border:1px solid var(--line)}
 .fund-bar i{display:block;height:100%;background:var(--accent);border-radius:999px}
 .fund-box{padding:20px 22px;display:flex;flex-direction:column;gap:12px}
@@ -775,6 +823,8 @@ details.upc .exams{margin-top:8px}
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#1846C7">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PN0QCDCJBL"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-PN0QCDCJBL");</script>
 
