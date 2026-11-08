@@ -20,7 +20,7 @@ GA_ID = os.environ.get('GA_ID', '') or (open(os.path.join(ROOT, 'src', 'ga-id.tx
 
 # site icon (src/static): Google shows it next to the site in search results; it wants a multiple of 48 px square
 ICONS = ('<link rel="icon" href="/favicon.ico" sizes="48x48">\n<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">\n'
-         '<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n')
+         '<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n<link rel="manifest" href="/manifest.webmanifest">\n<meta name="theme-color" content="#1846C7">\n')   # installable as an app (8 Nov 2026)
 
 
 def ga_tag():
@@ -1468,6 +1468,7 @@ def main():
                     pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=pub_qs, instagram=INSTAGRAM,
                     exb=dict(key=exb['key'], file=exb['file']) if exb else None, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     mains=emains, mainsP5=MAINS_P5 if emains else None, mainsLink=('/appsc-group-1/mains/' if enotes else ''),
+                    ranks=_ranks_for(conf['short']),
                     notesTitle=ROOT_NOTES[0] if is_root else conf.get('notes_title', ''), notesLede=ROOT_NOTES[1] if is_root else conf.get('notes_lede', ''),
                     key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
@@ -4581,6 +4582,16 @@ def news_hub_page(loaded, rels):
                        esc('Notifications, last dates, extensions, exam dates, hall tickets and answer keys for APPSC, TGPSC, UPSC, SSC, TS Police, AP Police and AP DSC.'),
                        ''.join(body), [('Home', SITE_URL + '/'), ('Exam notifications', can)], None, ename='All exams', at_root=True, head_all=True,
                        foot_text='Exam information compiled from the official notifications by Jupudi Anil Kumar, Learn with Anil. Not affiliated with any recruiting board.')
+
+
+def _ranks_for(short):
+    """Score distribution for the 'better than X%' line after a test (Anil, 8 Nov 2026: "rank after every test"): the site's
+    timed-test scores from the Student test records sheet, in 5% buckets, as src/ranks.json (refreshed by hand; see
+    claude/site-ux-status.md). Each exam gets the site total, its own exam's and its own tests' buckets."""
+    p = os.path.join(SRC, 'ranks.json')
+    if not os.path.exists(p): return None
+    r = json.load(open(p, encoding='utf-8'))
+    return dict(asof=r['asof'], site=r['site'], exam=r['exams'].get(short), tests={t: h for t, h in r['tests'].items() if t.startswith(short + ' · ')})
 
 
 ROOT_NOTES = ('Study material: every book on the site',   # the start page's Study Material lists every book, for every exam
