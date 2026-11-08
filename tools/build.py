@@ -952,6 +952,12 @@ def exam_confs():
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer: there the answer is APPSC's and the other three options are written by Learn with Anil (inside the All-in-One Pass)."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
            # Mental Ability book added 8 Nov 2026 (Anil): it is for Prelims Paper II, so the card text no longer says 'for APPSC Mains' only
+           notes_title='Study material for APPSC Group-I',
+           notes_seo=('APPSC Group 1 Mental Ability Book – Shortcuts, All Previous Questions Solved, 500 Practice Questions (Free Sample PDF) | Learn with Anil',
+                      'Mental Ability for APPSC Group-I Prelims Paper II and the Group-II Screening Test by Jupudi Anil Kumar: 25 chapters, 269 shortcuts, all 212 APPSC '
+                      'mental-ability questions (2019–2024) solved the fast way and 500 practice questions with answers. Free sample chapter (Percentage); '
+                      'plus Group-I Mains books on Public Administration, Ethics and Laws, AP Economy and Science & Technology.'),
+           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-I: the new Mental Ability book for Prelims Paper II (all 212 APPSC mental-ability questions solved the fast way, 269 shortcuts and 500 practice questions), and for the Mains: Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book. Every book has APPSC\'s own previous questions with the official answers.',
            notes_line='The new Mental Ability book for Prelims Paper II (all 212 APPSC mental-ability questions solved the fast way, 500 practice questions), plus Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book for the Mains, built on APPSC\'s own previous questions.',
            slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE, pb='/appsc-group-1/',
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
