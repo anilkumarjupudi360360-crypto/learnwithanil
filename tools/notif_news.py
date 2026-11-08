@@ -416,11 +416,106 @@ NEW = {
 
 
 ASOF_PAGE = {'appsc-assistant-environmental-engineer-notification-2026.html': '8 November 2026'}   # pages whose answers were written later
+# ---------------------------------------------------------------- TGPSC MPSO / ASO (Anil, 8 Nov 2026: link to Notification 07/2026, "pls add pyqs for it in
+# telangana section"). The 2018 question booklets were not found online (only TSPSC's final keys), so Anil chose "start with what's available": this page,
+# with Paper I practice from TGPSC's General Studies & General Abilities papers already on the site. Add the 2018 papers as an exam when the booklets come.
+TG_MPSO = 'https://websitenew.tgpsc.gov.in/preview/RElSRUNUUkVDUlVJVE1FTlROT1RJLzA3LUctMjAyNi1NUFNPLU5PVElGTjIwMjYxMDI4MjI1NDE2LnBkZg==r95v17a0y2d8i13v'
+TG_MPSO_2018 = 'https://websitenew.tgpsc.gov.in/preview/RElSRUNUUkVDUlVJVE1FTlROT1RJLzEyMjAxODAyMDYxOC5wZGY=r95v17a0y2d8i13v'
+TG_MPSO_KEY1 = 'https://websitenew.tgpsc.gov.in/preview/UFJFU1NOT1RFL2ZpbmFsX0tFWV8xODEyMV9BU08tUEFQRVItSS5wZGY=r95v17a0y2d8i13v'
+TG_MPSO_KEY2 = 'https://websitenew.tgpsc.gov.in/preview/UFJFU1NOT1RFL2ZpbmFsX0tFWV8xODEyMl9BU08tUEFQRVItSUkucGRmr95v17a0y2d8i13v'
+NEW['tgpsc-mpso-aso-notification-2026.html'] = dict(
+    exam=None, ename='TGPSC MPSO / ASO', board='TGPSC', site='websitenew.tgpsc.gov.in', crumb='MPSO / ASO Notification 2026', faq_asof='8 November 2026',
+    title='TGPSC MPSO / ASO Notification 2026 – 102 Posts, Apply by 27 November, Exam January 2027, Syllabus, Pattern & Previous Papers | Learn with Anil',
+    desc='TGPSC Notification 07/G/ES/2026: 102 Mandal Planning and Statistical Officer / Assistant Statistical Officer posts in the Directorate of Economics & '
+         'Statistics. Apply online 30 October to 27 November 2026; exam January 2027. Eligibility (degree with Statistics), age 18–44, fee, pay ₹36,750–1,06,990, '
+         'zone-wise posts, Paper I General Studies and Paper II Statistics syllabus, and previous papers.',
+    h1='TGPSC MPSO / ASO Notification 2026: 102 posts',
+    lede='TGPSC Notification 07/G/ES/2026 (28 October 2026) invites online applications for 102 posts of Mandal Planning and Statistical Officer / Assistant '
+         'Statistical Officer in the Directorate of Economics & Statistics, Telangana. Apply from 30 October to 27 November 2026, 5 pm; the written exam is '
+         'tentatively in January 2027. Below: dates, zone-wise posts, eligibility, the two-paper pattern and syllabus, the 2018 exam, and previous papers to practise.',
+    te='టీజీపీఎస్సీ మండల ప్లానింగ్ అండ్ స్టాటిస్టికల్ ఆఫీసర్ / అసిస్టెంట్ స్టాటిస్టికల్ ఆఫీసర్ నోటిఫికేషన్ (నం. 07/2026): 102 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు '
+       'అక్టోబర్ 30 నుంచి నవంబర్ 27, 2026 వరకు. పేపర్-1 జనరల్ స్టడీస్ & జనరల్ ఎబిలిటీస్, పేపర్-2 స్టాటిస్టిక్స్. పరీక్ష జనవరి 2027లో.',
+    pdf=TG_MPSO, pdfname='TGPSC Notification No. 07/G/ES/2026 (Mandal Planning and Statistical Officers / Assistant Statistical Officers), 28 October 2026',
+    more_src=[(TG_MPSO_2018, 'TSPSC Notification No. 12/2018'), (TG_MPSO_KEY1, 'TSPSC final key, Paper I (18121), 2018'),
+              (TG_MPSO_KEY2, 'TSPSC final key, Paper II (18122), 2018')],
+    sections=[
+      ('Important dates', 'table', [
+        ('Notification (07/G/ES/2026)', '28 October 2026'), ('Online applications', '30 October to 27 November 2026, till 5:00 pm'),
+        ('Written examination', 'Tentatively January 2027; exact date to be announced'), ('Hall ticket', 'From 7 days before the exam until 5 pm the day before'),
+        ('Mode', 'OMR or computer-based (CBRT), as TGPSC decides; scores normalised if held in several sessions'),
+        ('Exam centres', 'Hyderabad (including HMDA area), Karimnagar, Khammam, Warangal, Nizamabad'), ('Official website', 'tgpsc.gov.in')]),
+      ('Posts, pay and age', 'table', [
+        ('Post', 'Mandal Planning and Statistical Officer / Assistant Statistical Officer, Directorate of Economics & Statistics (zonal post)'),
+        ('Vacancies', '102 (7 unreserved, 95 local)'), ('Pay scale', '₹36,750 – ₹1,06,990'),
+        ('Age', '18 to 44 years on 1 July 2026 (raised from 34 by G.O.Ms.No.86 of 18 May 2026); 5 years more for SC, ST, BC and EWS, 10 for PH, up to 5 for '
+                'Telangana government employees')]),
+      ('Zone-wise posts', 'table+', (['Zone', 'Districts', 'Posts'], [
+        ('I Kaleshwaram', 'Kumrambheem-Asifabad, Mancherial, Peddapalli, Jayashankar-Bhupalapalli, Mulugu', '12'),
+        ('II Basara', 'Adilabad, Nirmal, Nizamabad, Jagtial', '14'),
+        ('III Rajanna', 'Karimnagar, Rajanna-Sircilla, Siddipet, Medak, Kamareddy', '15'),
+        ('IV Bhadradri', 'Bhadradri-Kothagudem, Khammam, Mahabubabad, Hanumakonda, Warangal', '17'),
+        ('V Yadadri', 'Suryapet, Nalgonda, Yadadri-Bhuvanagiri, Jangaon', '7'),
+        ('VI Charminar', 'Medchal-Malkajgiri, Hyderabad, Ranga Reddy, Sangareddy, Vikarabad', '25'),
+        ('VII Jogulamba', 'Mahabubnagar, Narayanpet, Jogulamba-Gadwal, Wanaparthy, Nagarkurnool', '12')])),
+      ('', 'note', 'Each zone has 1 unreserved post; the community-wise split is in Annexure-I of the notification.'),
+      ('Who can apply', 'list', [
+        'A bachelor\'s degree with Statistics as one of the main subjects; or',
+        'A bachelor\'s degree with Mathematics, Economics, Commerce or Computer Science as a main subject, with Statistics as a paper in one, two or all three years.',
+        'Fee: ₹1,000 application processing fee (₹500 for SC, ST and PwD) plus ₹80 exam fee; unemployed applicants are exempt from the exam fee, employees pay it.']),
+      ('Exam pattern', 'table+', (['Paper', 'Subject', 'Questions · marks · time'], [
+        ('Paper I', 'General Studies & General Abilities', '150 · 150 · 150 min'),
+        ('Paper II', 'Statistics (common for all, degree level)', '150 · 150 · 150 min'), ('Total', '', '300')])),
+      ('', 'note', 'Objective type, bilingual (English and Telugu). Selection is on the written marks only; there is no interview. Qualifying marks: 40% OC, EWS and '
+                   'sports, 35% BC, 30% SC, ST and PH. The notification does not mention negative marking.'),
+      ('Paper I syllabus: General Studies & General Abilities', 'list', [
+        'Current affairs (regional, national, international); international relations and events.',
+        'General science; India\'s achievements in science and technology; environmental issues and disaster management.',
+        'Economy of India and Telangana; geography of India with a focus on Telangana.',
+        'Indian Constitution and polity with a focus on local self-government; policies of the Telangana State.',
+        'Society, culture, heritage, arts and literature of Telangana; modern Indian history and the national movement; history of Telangana and the statehood movement.',
+        'Logical reasoning, analytical ability and data interpretation; basic English.']),
+      ('Paper II syllabus: Statistics (degree level)', 'list', [
+        'Introduction: meaning and limits of statistics, primary and secondary data, sampling and census, schedules and questionnaires, frequency distributions, tables, diagrams and graphs.',
+        'Central tendency, dispersion, skewness and kurtosis: AM, GM, HM, median, mode, deciles, percentiles; range, QD, MD, SD, coefficient of variation; Karl Pearson\'s and Bowley\'s skewness.',
+        'Probability: sample space, events, theorems, conditional probability, independence, Bayes\' theorem.',
+        'Random variables and distributions: Bernoulli, binomial, Poisson, normal; unbiasedness, consistency, efficiency, sufficiency; large and small sample tests; null and alternative hypotheses.',
+        'Correlation and regression: Karl Pearson\'s and Spearman\'s rank correlation, probable error, regression equations and coefficients.',
+        'Time series (trend, seasonal variation) and index numbers (price, quantity, tests of adequacy, deflating, cost of living).',
+        'Sampling techniques: complete enumeration vs sampling, sample size, simple, stratified and systematic random sampling.',
+        'Basics of computers: binary, octal and hexadecimal systems, codes, bits and bytes, memory, logical operators (AND, OR, XOR, NOT, shift), algorithms and flow charts, MS Office.']),
+      ('The last MPSO / ASO exam (2018)', 'table', [
+        ('Notification', 'TSPSC No. 12/2018, 2 June 2018: 474 posts (pay then ₹24,440 – ₹71,510)'),
+        ('Exam', '3 September 2018: Paper I (code 18121) in the forenoon, Paper II Statistics (code 18122) in the afternoon; four booklet series A–D'),
+        ('Final keys', 'Released 9 October 2018. Paper I: 3 questions deleted (Series A Q23, Q69, Q86) and two answers accepted for Q70 and Q80. Paper II: '
+                       'Series A Q118 deleted; TSPSC later issued a correction to the Paper II final key')]),
+      ('', 'html', f'<p>TSPSC\'s official 2018 final keys: <a href="{TG_MPSO_KEY1}" rel="nofollow">Paper I (18121)</a> · '
+                   f'<a href="{TG_MPSO_KEY2}" rel="nofollow">Paper II Statistics (18122)</a>.</p>'),
+    ],
+    faqs=[
+      ('What is the last date for TGPSC MPSO / ASO 2026?', '27 November 2026, 5:00 pm. Applications opened on 30 October 2026.'),
+      ('How many MPSO / ASO posts are there?', '102 zonal posts: Zone I 12, II 14, III 15, IV 17, V 7, VI 25 and VII 12.'),
+      ('When is the TGPSC MPSO / ASO exam?', 'Tentatively in January 2027. TGPSC will announce the exact date; hall tickets come 7 days before.'),
+      ('Can B.Sc Maths or B.Com students apply?', 'Yes, if Statistics was a paper in at least one year of the degree. Degrees with Statistics as a main subject, or Maths, '
+                                                  'Economics, Commerce or Computer Science with a Statistics paper, qualify.'),
+      ('What is the MPSO / ASO age limit?', '18 to 44 years on 1 July 2026, with 5 more years for SC, ST, BC and EWS and 10 for PH.'),
+      ('What is the MPSO / ASO salary?', 'Pay scale ₹36,750 – ₹1,06,990.'),
+      ('Is there negative marking in MPSO / ASO?', 'The notification does not mention negative marking.'),
+      ('Is there an interview?', 'No. Selection is on the 300 marks of the written exam (Paper I and Paper II).'),
+      ('When was the last MPSO / ASO exam?', 'On 3 September 2018, under TSPSC Notification 12/2018 for 474 posts.'),
+    ],
+    tail_html='<h2>Practise Paper I with TGPSC\'s General Studies papers</h2><p>Paper I (General Studies &amp; General Abilities) follows the same syllabus as '
+              'the Paper I of other TGPSC posts. These papers have every question with the official key and a short explanation in English and Telugu:</p><ul>'
+              '<li><a href="/tgpsc-amvi/papers/tgpsc-amvi-2023-paper-1-general-studies-question-paper-with-answers.html">TGPSC AMVI 2023 Paper I: General Studies &amp; '
+              'General Abilities (150 questions)</a></li>'
+              '<li><a href="/tgpsc-hmwssb-manager/papers/tgpsc-hmwssb-manager-2015-paper-1-general-studies-question-paper-with-answers.html">TSPSC HMWSSB Manager 2015 '
+              'Paper I: General Studies</a></li></ul>'
+              '<p>Paper II (Statistics) previous questions are being added. More Telangana papers: <a href="/ts-police-pyqs.html">TS Police SI and Constable</a> · '
+              '<a href="/exam-notifications.html">all exam notifications</a>.</p>')
 
 
 def apply(NOTIFS):
     for rel, f in FAQS.items():
         if rel in NOTIFS: NOTIFS[rel]['faqs'] = f; NOTIFS[rel]['faq_asof'] = ASOF_PAGE.get(rel, ASOF)
     for rel, N in NEW.items():
-        N['faq_asof'] = ASOF
+        N.setdefault('faq_asof', ASOF)
         NOTIFS[rel] = N
