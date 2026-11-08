@@ -1131,6 +1131,110 @@ def aso_have():
 def aso_years():
     return ' and '.join(str(p['year']) for p in ASO_PAPERS if p['id'] in aso_have()) or '2025'
 
+# ---------- Banking: SBI PO and IBPS SO (mock tests only) ----------
+# Anil, 8 Nov 2026: "pls add SBI PO and IBPS SO ... pyqs also". SBI and IBPS never publish their question papers; the
+# "memory-based" papers online are coaching companies' own write-ups, so they cannot be copied. Anil chose original
+# Learn with Anil mocks instead ("Original mocks now"): these two exams have NO previous papers on the site, only a mock
+# series each (MOCK_PACKS below), so their confs carry mockonly=True and papers=[] (the build makes the exam home, the
+# mock-test and sectional-test pages, and no paper/subject/question pages). Mock source: private (/home/claude/bank).
+BANK_SUBJECTS = [
+  ('eng', 'English Language', 'english', ['Reading Comprehension', 'Cloze Test', 'Error Detection', 'Fillers & Sentence Improvement',
+                                          'Para Jumbles & Sentence Rearrangement', 'Vocabulary & Word Usage']),
+  ('qa', 'Quantitative Aptitude', 'quantitative-aptitude', ['Data Interpretation', 'Number Series', 'Quadratic Equations & Quantity Comparison',
+                                                           'Simplification & Approximation', 'Percentage, Profit & Interest', 'Ratio, Average, Ages & Mixtures',
+                                                           'Time, Work, Speed & Distance', 'Mensuration, Probability & Counting']),
+  ('rea', 'Reasoning Ability', 'reasoning', ['Puzzles & Seating Arrangement', 'Syllogism', 'Inequality', 'Blood Relations', 'Direction Sense',
+                                             'Coding-Decoding', 'Order, Ranking & Series', 'Miscellaneous Reasoning']),
+]
+SO_PK_SUBJECTS = [
+  ('pkit', 'Professional Knowledge: IT Officer', 'professional-knowledge-it', ['Database Management Systems', 'Computer Networks', 'Operating Systems',
+                                          'Data Structures & Algorithms', 'Programming & Software Engineering',
+                                          'Computer Organisation & Digital Logic', 'Cyber Security & Web Technologies']),
+  ('pkag', 'Professional Knowledge: Agriculture Field Officer', 'professional-knowledge-agriculture', ['Agronomy & Crop Production', 'Soil Science & Water Management', 'Horticulture',
+                                                   'Plant Protection', 'Animal Husbandry & Fisheries', 'Agricultural Economics, Finance & Schemes',
+                                                   'Agricultural Engineering & Extension']),
+  ('pkhr', 'Professional Knowledge: HR / Personnel Officer', 'professional-knowledge-hr', ['Human Resource Management & Planning', 'Recruitment, Selection & Training',
+                                          'Performance & Compensation Management', 'Industrial Relations & Labour Laws',
+                                          'Organisational Behaviour & Development']),
+  ('pkmk', 'Professional Knowledge: Marketing Officer', 'professional-knowledge-marketing', ['Marketing Concepts & Mix', 'Consumer Behaviour & Market Research',
+                                                 'Segmentation, Targeting, Positioning & Branding', 'Pricing, Distribution & Promotion',
+                                                 'Services & Bank Marketing', 'Digital & Rural Marketing']),
+]
+BANK_SUBJ_HI = {'eng': 'अंग्रेज़ी भाषा', 'qa': 'संख्यात्मक अभियोग्यता', 'rea': 'तर्कशक्ति', 'pkit': 'व्यावसायिक ज्ञान: आईटी अधिकारी',
+                'pkag': 'व्यावसायिक ज्ञान: कृषि क्षेत्र अधिकारी', 'pkhr': 'व्यावसायिक ज्ञान: मानव संसाधन अधिकारी', 'pkmk': 'व्यावसायिक ज्ञान: विपणन अधिकारी'}
+MOCKONLY = {'sbi-po', 'ibps-so'}   # exams with a mock series and no previous papers on the site
+
+
+def FAQ_SBIPO(total, npapers):
+    return [
+      ('Are there SBI PO previous year question papers on Learn with Anil?',
+       'Not yet. SBI does not publish its PO question papers; the "memory-based" papers found online are coaching institutes\' own write-ups of what candidates '
+       'remember, so Learn with Anil does not copy them. Instead, this page has Learn with Anil\'s own SBI PO Prelims mock tests, written fresh in the latest pattern, '
+       'with an explanation for every answer. If SBI publishes its papers, they will be added here.'),
+      ('What is the SBI PO Prelims exam pattern?',
+       'The Preliminary Examination (Phase I) is an online objective test of 100 questions for 100 marks in 60 minutes: English Language 40 questions, '
+       'Quantitative Aptitude 30 and Reasoning Ability 30, with 20 minutes for each section. A quarter of the marks of a question is deducted for a wrong answer. '
+       'The English section is in English only; the other two are in English and Hindi. Prelims only shortlists candidates for the Mains.'),
+      ('Are the SBI PO mock tests in Hindi?',
+       'Yes. Quantitative Aptitude and Reasoning questions, options and explanations are in English and Hindi: tap हिंदी at the top. The English Language section is in English only, as in the real exam.'),
+      ('How much do the SBI PO mock tests cost?',
+       'They are included in the ₹45 All-in-One Pass, which opens every exam, mock series and study book on Learn with Anil for 12 months. Register once (free) and pay once.'),
+      ('Can I take one section at a time?',
+       'Yes. Each mock opens as a full 60-minute test or section by section (English, Quantitative Aptitude or Reasoning) with the real 20-minute limit, in exam mode or practice mode with answers as you go.'),
+    ]
+
+
+def FAQ_IBPSSO(total, npapers):
+    return [
+      ('Are there IBPS SO previous year question papers on Learn with Anil?',
+       'Not yet. IBPS does not publish its Specialist Officer question papers; the "memory-based" papers online are coaching institutes\' own write-ups, so Learn with Anil '
+       'does not copy them. Instead, this page has Learn with Anil\'s own IBPS SO Prelims mock tests in the 2026-27 pattern, with an explanation for every answer.'),
+      ('What is the IBPS SO Prelims exam pattern (CRP SPL-XVI)?',
+       'For IT Officer, Agriculture Field Officer, HR/Personnel Officer and Marketing Officer, the Preliminary Examination has four tests of 25 questions each: '
+       'English Language (25 marks, English only), Reasoning (25 marks), Quantitative Aptitude (25 marks) and Professional Knowledge (50 marks), 20 minutes each, '
+       '100 questions and 125 marks in 80 minutes, with a quarter of a question\'s marks cut for a wrong answer. Law Officers and Rajbhasha Adhikaris write General '
+       'Awareness (banking) instead of Quantitative Aptitude. Candidates must clear the cut-off in each test.'),
+      ('Which IBPS SO posts do the mocks cover?',
+       'Each mock comes in four versions: IT Officer, Agriculture Field Officer, HR/Personnel Officer and Marketing Officer. The English, Reasoning and Quantitative Aptitude '
+       'questions are the same in all four; the 25 Professional Knowledge questions are for that post. Pick your post\'s version.'),
+      ('Are the IBPS SO mock tests in Hindi?',
+       'Yes. Reasoning, Quantitative Aptitude and Professional Knowledge questions, options and explanations are in English and Hindi: tap हिंदी at the top. English Language is in English only, as in the real exam.'),
+      ('How much do the IBPS SO mock tests cost?',
+       'They are included in the ₹45 All-in-One Pass, which opens every exam, mock series and study book on Learn with Anil for 12 months.'),
+    ]
+
+
+def bank_confs():
+    return [
+      dict(id='sbi-po', dir='sbi-po', src='sbi-po', key='sbi-po', name='SBI PO', short='SBI PO', seo='SBI PO', mockonly=True,
+           slugp='sbi-po', papers=[], subjects=BANK_SUBJECTS, faq=FAQ_SBIPO, board='SBI', l2=L2_HI, pb='/sbi-po/',
+           keyname="Learn with Anil's answer key", keyshort="Learn with Anil's answer key",
+           hi_name='एसबीआई पीओ', hi_paper='मॉक टेस्ट', subj_te=BANK_SUBJ_HI,
+           title='SBI PO Mock Test 2026 – Prelims Mock Tests in the Latest Pattern, English & Hindi | Learn with Anil',
+           h1='SBI PO Prelims mock tests <em>in the latest pattern.</em>',
+           aka='State Bank of India Probationary Officer (PO) Preliminary Examination: English Language 40, Quantitative Aptitude 30 and Reasoning Ability 30 questions, 20 minutes each.',
+           aka_short='State Bank of India Probationary Officer (PO) Prelims',
+           l2line='एसबीआई पीओ प्रारंभिक परीक्षा के नए पैटर्न में मॉक टेस्ट — संख्यात्मक अभियोग्यता और तर्कशक्ति हिंदी और अंग्रेज़ी में, हर उत्तर की व्याख्या के साथ; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           desc=lambda t: ('SBI PO Prelims mock tests by Learn with Anil in the latest pattern (English 40, Quantitative Aptitude 30, Reasoning 30; 20 minutes each), '
+                           'new questions in English and Hindi with an explanation for every answer, as full mocks or sectional tests, in the ₹45 All-in-One Pass.'),
+           eyebrow='State Bank of India · Probationary Officers · Prelims mock tests',
+           papers_note='SBI does not publish its PO question papers, so this page has Learn with Anil\'s own mock tests, not previous papers.'),
+      dict(id='ibps-so', dir='ibps-so', src='ibps-so', key='ibps-so', name='IBPS SO', short='IBPS SO', seo='IBPS SO', mockonly=True,
+           slugp='ibps-so', papers=[], subjects=BANK_SUBJECTS + SO_PK_SUBJECTS, faq=FAQ_IBPSSO, board='IBPS', l2=L2_HI, pb='/ibps-so/',
+           keyname="Learn with Anil's answer key", keyshort="Learn with Anil's answer key",
+           hi_name='आईबीपीएस एसओ', hi_paper='मॉक टेस्ट', subj_te=BANK_SUBJ_HI,
+           title='IBPS SO Mock Test 2026 – Prelims Mocks for IT, Agriculture, HR & Marketing Officer (New Pattern), English & Hindi | Learn with Anil',
+           h1='IBPS SO Prelims mock tests <em>in the new 2026 pattern.</em>',
+           aka='IBPS Specialist Officers (CRP SPL-XVI) Preliminary Examination: English, Reasoning, Quantitative Aptitude and Professional Knowledge, 25 questions each, for IT Officer, Agriculture Field Officer, HR/Personnel Officer and Marketing Officer.',
+           aka_short='IBPS Specialist Officers (SO) Prelims, CRP SPL-XVI',
+           l2line='आईबीपीएस एसओ प्रारंभिक परीक्षा (नया पैटर्न, व्यावसायिक ज्ञान सहित) के मॉक टेस्ट — आईटी, कृषि, मानव संसाधन और विपणन अधिकारी के लिए, हिंदी और अंग्रेज़ी में; एक ₹45 ऑल-इन-वन पास।',
+           desc=lambda t: ('IBPS SO Prelims mock tests by Learn with Anil in the 2026-27 pattern with Professional Knowledge: versions for IT Officer, Agriculture Field Officer, '
+                           'HR/Personnel Officer and Marketing Officer, new questions in English and Hindi with explanations, in the ₹45 All-in-One Pass.'),
+           eyebrow='IBPS · Specialist Officers · Prelims mock tests (new pattern)',
+           papers_note='IBPS does not publish its SO question papers, so this page has Learn with Anil\'s own mock tests, not previous papers.'),
+    ]
+
+
 def exam_confs():
     T = ts_text()
     E = epfo_text()
@@ -1461,7 +1565,7 @@ def exam_confs():
            eyebrow='SLPRB AP · SCT PC (Civil) &amp; APSP · Preliminary Written Test 2023',
            papers_note=("Answers come from SLPRB AP's final key for booklet A of the Preliminary Written Test held on 22 January 2023; the question booklet is SLPRB's own copy. "
                         "The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet.")),
-    ]
+    ] + bank_confs()
 
 
 def main():
@@ -1469,7 +1573,9 @@ def main():
     loaded = []
     for c in confs:
         papers, questions = load_exam(c)
-        if questions: loaded.append((c, papers, questions))
+        # mock-only exams (SBI PO, IBPS SO): live once their mock series has a released mock
+        if questions or (c.get('mockonly') and any(m['live'] for m in MOCK_PACKS.get(c['id'], {}).get('mocks', []))):
+            loaded.append((c, papers, questions))
     # only exams whose papers are built (an exam configured before its paper sources are added, e.g. AMVI, stays out of the lists and links)
     PAY['exams'] = ', '.join(c['seo'] for c, _, _ in loaded)   # the All-in-One Pass covers every one of these
     PAY['exam_links'] = [(c['seo'], c['pb']) for c, _, _ in loaded]
@@ -1557,7 +1663,7 @@ def main():
                     mains=emains, mainsP5=MAINS_P5 if emains else None, mainsLink=('/appsc-group-1/mains/' if enotes else ''),
                     ranks=_ranks_for(conf['short']),
                     notesTitle=ROOT_NOTES[0] if is_root else conf.get('notes_title', ''), notesLede=ROOT_NOTES[1] if is_root else conf.get('notes_lede', ''),
-                    key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
+                    key=conf['key'], exam=conf['name'], mockonly=bool(conf.get('mockonly')), bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
                     base=prefix, qotd=qotd_pool(loaded, 120) if is_root else [],
                     pay=dict(pay_data(conf), sample=len(free_sample(conf, papers, questions)) if any(p['fmt'] == 'mcq' for p in papers) else 0),
@@ -1582,15 +1688,29 @@ def main():
         if bb_url and conf['id'] == 'appsc-group-2': links.insert(0, ('New: Bahubali Test Series – Group 2 Mains full-length tests', bb_url))
         tiles = tiles_html(conf, papers, questions, links, emains)
 
+        HERO_P = ('<p>{{TOTAL}} questions from {{FROMPAPERS}}, answered from {{KEYSHORT}} and explained, in {{LANGS}}. Practise by topic, take timed tests and revise your mistakes, '
+                  'with one ₹45 All-in-One Pass for every exam on the site.</p>')
+        FIG12 = ('      <div class="figure"><div class="v">{{TOTAL}}</div><div class="k">Previous year questions</div></div>\n'
+                 '      <div class="figure"><div class="v">{{NPAPERS}}</div><div class="k">{{PAPERSK}}</div></div>\n')
+        if conf.get('mockonly'):   # SBI PO / IBPS SO: mock tests only (no previous papers published by the recruiting body)
+            _mk = MOCK_PACKS[conf['id']]
+            _live = list(dict.fromkeys(m.get('group', m['name']) for m in _mk['mocks'] if m['live']))
+            _all = list(dict.fromkeys(m.get('group', m['name']) for m in _mk['mocks']))
+            HERO_P = (f'<p>{esc(_mk["title"])}: new questions by Learn with Anil in the real exam pattern, with an explanation for every answer, in English and Hindi. '
+                      f'{esc(conf["papers_note"])} Take a full mock or one section at a time, with one ₹45 All-in-One Pass for every exam on the site.</p>')
+            FIG12 = (f'      <div class="figure"><div class="v">{len(_live)}/{len(_all)}</div><div class="k">Mock tests released</div></div>\n'
+                     f'      <div class="figure"><div class="v">{len(_mk["mocks"][0]["parts"])}</div><div class="k">Sections, each also as a sectional test</div></div>\n')
         def fill(s, photo, title, seo, desc=''):
-            return (s.replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title).replace('{{DESC}}', esc(desc))
+            return (s.replace('{{HERO_P}}', HERO_P).replace('{{FIG12}}', FIG12)   # (first: they contain other placeholders)
+                     .replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title).replace('{{DESC}}', esc(desc))
                      .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf'])
                      .replace('{{LANGS}}', 'English' if papers and all(p.get('en_only') for p in papers) else 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
                      .replace('{{BOARD}}', conf['board'])
-                     .replace('{{FOOTSRC}}', ('Questions and answers are from the official final keys, or the preliminary key where the final key could not be found.'
+                     .replace('{{FOOTSRC}}', f'Mock tests written by Learn with Anil ({conf["board"]} does not publish its question papers).' if conf.get('mockonly') else
+                              ('Questions and answers are from the official final keys, or the preliminary key where the final key could not be found.'
                                               if any('preliminary key' in x.get('key', '') for x in papers) else 'Questions and answers are from the official final keys.') if conf['board'] in ('APPSC', 'TSLPRB', 'SLPRB')
                               else f'Questions are from {conf["board"]}\'s official question paper; answers from {conf["keyshort"]}.')
-                     .replace('{{FROMPAPERS}}', f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {esc(papers[0]["stage"])} question paper')
+                     .replace('{{FROMPAPERS}}', (f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {esc(papers[0]["stage"])} question paper') if papers else '')
                      .replace('{{PAPERSK}}', f'Official {conf["board"]} paper' + ('s' if len(papers) > 1 else ''))
                      .replace('{{HOME_PAPERS}}', home_papers).replace('{{PYQPAGE}}', conf['pb'] + 'pyqs.html').replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
@@ -1618,6 +1738,10 @@ def main():
         _fill0, LF = fill, lang_fills()
         def fill(s, photo, title, seo, desc=''):   # then the site's languages (SITE_LANGS)
             s = _fill0(s, photo, title, seo, desc)
+            if conf.get('mockonly'):   # SBI PO / IBPS SO: the top bar offers the mock and sectional tests instead of the PYQ pages
+                s = s.replace('      <a href="#papers" data-v="papers" data-g2>Previous Papers</a>\n', '      <a href="#mocks" data-v="mocks" data-g2>Mock Tests</a>\n')
+                s = s.replace('      <a href="#practice" data-v="practice" data-g2>Practice</a>\n', '      <a href="#sectionals" data-v="sectionals" data-g2>Sectional Tests</a>\n')
+                s = s.replace('      <a href="#mistakes" data-v="mistakes" data-g2>My Mistakes<span class="nav-n" id="navMis" hidden></span></a>\n', '')
             for k, v in LF.items(): s = s.replace(k, v)
             return s
         root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: UPSC Prelims, Mains & Anthropology, APPSC Group 1 & 2, TS Police, SSC CGL'
@@ -1627,7 +1751,7 @@ def main():
                      f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO), SSC CGL, TGPSC HMWSSB Manager, APPSC & TGPSC AMVI (Assistant Motor Vehicle Inspector), APPSC Endowment Officer (EO Grade-III), APPSC Analyst Grade-II and APPSC Forest Range Officer (FRO). {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
                      f'UPSC Civil Services Mains GS 1–4 (2019–2026), UPSC Anthropology optional Papers I & II and APPSC Group 1 Mains questions with model answers. One ₹45 All-in-One Pass for every exam.')
         home_title = conf['title']
-        ptxt = f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper'
+        ptxt = (f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper') if papers else ''
         home_desc = conf['desc'](total)
         pb = conf['pb']; basedir = '/' + prefix
         person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"UPSC Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:anilkumarjupudi360360@gmail.com","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://www.youtube.com/@learn_with_anil06"]}
@@ -1636,7 +1760,7 @@ def main():
         faqld = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]}
         seo_name = conf['seo']
         views = {   # view: (title, description, canonical path, indexable)
-          'papers': ((f'{seo_name} Previous Year Question Papers with Answers – All {len(papers)} Papers | Learn with Anil' if len(papers) > 1 else
+          'papers': ('', '', pb + 'papers/', False) if not papers else ((f'{seo_name} Previous Year Question Papers with Answers – All {len(papers)} Papers | Learn with Anil' if len(papers) > 1 else
                       f'{seo_name} Previous Question Paper with Answers – {paper_kw(conf, papers[0]).replace(seo_name + " ", "")}, English & {conf["l2"]["name"]} | Learn with Anil'),
                      (f'All {len(papers)} {seo_name} previous year question papers' if len(papers) > 1 else f'{seo_name} previous question paper') + f' ({", ".join(paper_kw(conf, p).replace(seo_name + " ", "") for p in sorted(papers, key=lambda p: (-p["year"], p["id"])))}): '
                      f'practise {"each paper" if len(papers) > 1 else "it"} online as a quiz or a timed mock test, with answers and explanations, with the ₹45 All-in-One Pass.', pb + 'papers/', True),
@@ -1653,6 +1777,9 @@ def main():
           'sectionals': (f'{seo_name} Sectional Tests | Learn with Anil', f'{seo_name} subject-wise sectional tests with a timer.', pb + 'sectionals/', False),
           'account': ('My account – Learn with Anil', 'Your Learn with Anil account: your All-in-One Pass, devices and payments.', pb + 'account/', False),
         }
+        if conf.get('mockonly'):   # SBI PO / IBPS SO: no previous papers, so only the mock tests, sectional tests and the general pages
+            views = {k: v for k, v in views.items() if k in ('about', 'mocks', 'sectionals', 'account')}
+            views['mocks'] = (f'{seo_name} Mock Tests – {MOCK_PACKS[conf["id"]]["title"]} | Learn with Anil', home_desc, pb + 'mocks/', False)
         sdata = dict(data, pb=pb, qpages=True, examSeo=seo_name, homeTitle=home_title, hubTitle=root_title)
         sjson = json.dumps(sdata, ensure_ascii=False, separators=(',', ':'))
         import hashlib
@@ -1755,8 +1882,8 @@ def main():
     notifs[NEWS_HUB] = None
     mocks = {}
     for c, ps, qs in loaded:
-        if not any(p['fmt'] == 'mcq' for p in ps): continue
-        for fn in (pyq_page, mock_page, sectional_page):
+        if not any(p['fmt'] == 'mcq' for p in ps) and not c.get('mockonly'): continue
+        for fn in ((mock_page, sectional_page) if c.get('mockonly') else (pyq_page, mock_page, sectional_page)):
             rel, html_ = fn(c, ps, qs)
             open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(html_)
             mocks[rel] = None
@@ -1946,6 +2073,8 @@ def exam_terms(e, cat):
     if 'police' in e['id'] and e['cat'] == 'tg': words += ['ts police', 'tg police', 'tslprb', 'tgprb', 'si', 'constable']
     if 'police' in e['id'] and e['cat'] == 'ap': words += ['ap police', 'andhra police', 'slprb', 'apslprb', 'si', 'sub inspector', 'constable', 'pc', 'rsi', 'fireman', 'warder']
     if 'amvi' in e['id']: words += ['amvi', 'motor vehicle inspector', 'mvi', 'rto', 'transport department', 'automobile engineering', 'automobile']
+    if e['id'] == 'sbi-po': words += ['sbi', 'state bank', 'state bank of india', 'po', 'probationary officer', 'bank po', 'banking', 'bank exam', 'sbi po mock test']
+    if e['id'] == 'ibps-so': words += ['ibps', 'so', 'specialist officer', 'it officer', 'agriculture field officer', 'afo', 'hr officer', 'personnel officer', 'marketing officer', 'banking', 'bank exam', 'ibps so mock test']
     if e['id'] == 'appsc-aso': words += ['aso', 'assistant statistical officer', 'statistical officer', 'statistics', 'economics', 'ecostats', 'economics and statistics', 'des', 'mpso', 'accountancy']
     if e['id'] == 'appsc-env-engineer': words += ['aee', 'assistant environmental engineer', 'environmental engineer', 'environmental engineering', 'pollution control board', 'appcb', 'common subject', 'fluid mechanics', 'eia']
     if e['id'] == 'appsc-analyst': words += ['analyst', 'analyst grade 2', 'analyst grade ii', 'pollution control board', 'appcb', 'chemistry', 'biochemistry', 'biology', 'environmental science']
@@ -1980,7 +2109,7 @@ def live_href(e):
     return e['live'] if '/' in e['live'] else '#' + e['live']
 
 
-HERO_NEW = ('<a class="hero-new" href="/upsc-cse/"><span>New</span> UPSC Prelims 2026 &amp; 2025 · Anthropology model answers <b aria-hidden="true">→</b></a>')   # start-page announcement pill; change with each big release
+HERO_NEW = ('<a class="hero-new" href="/sbi-po/"><span>New</span> Banking: SBI PO &amp; IBPS SO Prelims mock tests <b aria-hidden="true">→</b></a>')   # was UPSC Prelims 2026 & 2025 · Anthropology (to 8 Nov 2026)   # start-page announcement pill; change with each big release
 
 
 BOARD_ART = {   # line drawings for the board tiles (own artwork; no photos, no maps, no emblems)
@@ -2118,7 +2247,7 @@ def hub_html(catalog, counts, grand):
         pills = ''.join(f'<span>{esc(e["t"])}</span>' for e in lv[:4]) + (f'<span class="more">+{len(lv) - 4} more</span>' if len(lv) > 4 else '')
         art = BOARD_ART.get(c['id'], BOARD_ART['ssc'])
         badge = f'<span class="bd-badge"><i></i>{len(lv)} exam{"s" if len(lv) != 1 else ""} live</span>' if lv else '<span class="bd-badge bd-soon">Coming soon</span>'
-        foot = f'{nq:,} questions' if lv else f'{len(ex)} exams listed'
+        foot = (f'{nq:,} questions' if nq else f'{len(lv)} mock test series') if lv else f'{len(ex)} exams listed'
         boards.append(f'<button type="button" class="card board b-{c["id"]}{"" if lv else " soon"}" data-act="excat" data-cat="{c["id"]}" title="{esc(c["desc"])}">'
                       f'<span class="bd-art{" has-ph" if c["id"] in BOARD_PHOTO and os.path.exists(os.path.join(SRC, "static", "board-" + c["id"] + ".webp")) else ""}">'
                       + (f'<img class="bd-ph" src="/board-{c["id"]}.webp" alt="" width="640" height="250" loading="lazy" decoding="async">' if c['id'] in BOARD_PHOTO and os.path.exists(os.path.join(SRC, 'static', f'board-{c["id"]}.webp')) else '')
@@ -2130,14 +2259,14 @@ def hub_html(catalog, counts, grand):
         for e in lv + [e for e in ex if not e.get('live')]:
             live = bool(e.get('live'))
             href = live_href(e) if live else '#exam/' + e['id']
-            status = f'Live · {counts.get(e["id"], 0):,} questions' if live else 'Upcoming'
+            status = ('Live · mock tests' if e['id'] in MOCKONLY else f'Live · {counts.get(e["id"], 0):,} questions') if live else 'Upcoming'
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
             if live and e['id'] in MAINS_EXAMS and MAINS_KIT: sub += '<span class="ex-x">Prelims + Mains PYQs with model answers</span>'
             tiles[live].append(f'<a class="card exam x-{c["id"]}{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-id="{e["id"]}" data-s="{esc(exam_terms(e, c))}">'
                                f'<span class="ex-art{" has-ph" if live and exam_photo(e["id"]) else ""}" aria-hidden="true">'
                                + (f'<img class="ex-ph" src="{exam_photo(e["id"])}" alt="" width="480" height="180" loading="lazy" decoding="async">' if live and exam_photo(e['id']) else '')
                                + f'<svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">{exam_art(e, c["id"])}</svg></span>'
-                               f'<span class="ex-body"><span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{counts.get(e["id"], 0) if live else ""}">{status}</span></span></a>')
+                               f'<span class="ex-body"><span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{("mk" if e["id"] in MOCKONLY else counts.get(e["id"], 0)) if live else ""}">{status}</span></span></a>')
         upc = (f'<details class="upc"{"" if lv else " open"}><summary>Upcoming exams in {esc(c["name"])} ({len(tiles[False])}) · being added one by one</summary>'
                f'<div class="exams">{"".join(tiles[False])}</div></details>' if tiles[False] else '')
         secs.append(f'<section class="exam-cat" data-cat="{c["id"]}"><div class="section-title"><h2>{esc(c["name"])}{" <span class=te-sub lang=te>" + esc(c["te"]) + "</span>" if c.get("te") else ""}</h2>'
@@ -2760,7 +2889,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -2893,6 +3022,7 @@ def llms_txt(loaded, grand):
     L += ['- Not affiliated with APPSC, TSLPRB, UPSC, TGPSC or any recruiting body.', '', '## Exams and their previous papers']
     for c, papers, questions in loaded:
         base = c['dir'] + '/' if c['dir'] else ''
+        if c.get('mockonly'): continue   # SBI PO / IBPS SO: mock tests only (listed above with the mock series)
         L.append(f'- [{c["name"]} previous year question papers with answers]({SITE_URL}{c["pb"]}): {len(questions):,} questions, '
                  f'English and {c["l2"]["name"]}. PYQs: {SITE_URL}{c["pb"]}pyqs.html · Sectional tests: {SITE_URL}{c["pb"]}sectional-tests.html')
         for p in sorted(papers, key=lambda p: (-p['year'], p['id'])):
@@ -4903,6 +5033,42 @@ MOCK_PACKS = {
                    mocks=[dict(id=f'bk-g2mk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 3), free=(i == 1),   # Mocks 1-3 on 8 Nov 2026
                                parts=[('ih', 'Indian History', ['ih']), ('geo', 'Geography', ['geo']), ('soc', 'Indian Society', ['soc']),
                                       ('cur', 'Current Affairs', ['cur']), ('men', 'Mental Ability', ['men'])]) for i in range(1, 11)]),
+  # Anil, 8 Nov 2026: SBI PO and IBPS SO — original Learn with Anil mocks (no previous papers exist to publish; see BANK_SUBJECTS).
+  # Ids start with "bk-" (any paid All-in-One Pass holder; no payments-script change). Five options per question, as in the real exams.
+  # pmins: the real 20-minute limit of each section when it is taken on its own (the full mock runs on one timer).
+  'sbi-po': dict(id='bk-sbipo', name='SBI PO Prelims', price=45, src='sbi-po-mocks', dir='sbi-po', langs='English &amp; Hindi',
+                 title='SBI PO Prelims Mock Test Series (Latest Pattern)',
+                 summary='10 full-length SBI PO Preliminary mock tests in the latest pattern, 100 questions in 60 minutes (English Language 40, Quantitative Aptitude 30, '
+                         'Reasoning Ability 30), in English and Hindi, with an explanation for every answer. Each section can also be taken on its own with its 20-minute limit.',
+                 about=['New questions written by Learn with Anil for this series in the SBI PO Prelims pattern, not copied from coaching material, memory-based papers or previous papers. '
+                        'SBI does not publish its question papers, so these are mock tests, not PYQs.',
+                        'Each mock: English Language 40 (reading comprehension, cloze, error detection, fillers, para jumbles, vocabulary), Quantitative Aptitude 30 '
+                        '(data interpretation, quadratic equations, number series, arithmetic) and Reasoning Ability 30 (puzzles and seating, syllogism, inequality, '
+                        'blood relations, directions, coding), five options per question.',
+                        'The full mock runs on one 60-minute timer; take a section on its own for the real 20-minute section limit. Quantitative Aptitude and Reasoning '
+                        'are in English and Hindi with explanations in both; English Language is in English only, as in the real exam.'],
+                 mocks=[dict(id=f'bk-sbipo-{i}', name=f'Mock {i}', qn=100, mins=60, live=(i == 1), pmins={'eng': 20, 'qa': 20, 'rea': 20},
+                             parts=[('eng', 'English Language', ['eng']), ('qa', 'Quantitative Aptitude', ['qa']), ('rea', 'Reasoning Ability', ['rea'])])
+                        for i in range(1, 11)]),
+  'ibps-so': dict(id='bk-ibpsso', name='IBPS SO Prelims', price=45, src='ibps-so-mocks', dir='ibps-so', langs='English &amp; Hindi',
+                  title='IBPS SO Prelims Mock Test Series (2026-27 Pattern, with Professional Knowledge)',
+                  summary='10 IBPS SO Preliminary mock tests in the new CRP SPL-XVI pattern, each in four versions (IT Officer, Agriculture Field Officer, HR/Personnel Officer, '
+                          'Marketing Officer): English 25, Reasoning 25, Quantitative Aptitude 25 and Professional Knowledge 25, 100 questions in 80 minutes, in English and Hindi, '
+                          'with an explanation for every answer.',
+                  about=['New questions written by Learn with Anil for this series in the IBPS SO 2026-27 Prelims pattern, not copied from coaching material, memory-based papers or previous papers. '
+                         'IBPS does not publish its question papers, so these are mock tests, not PYQs.',
+                         'Pick your post: the English, Reasoning and Quantitative Aptitude questions are the same in every version; the 25 Professional Knowledge questions '
+                         '(worth 2 marks each in the real exam) are for that post.',
+                         'The full mock runs on one 80-minute timer; each test can also be taken on its own with the real 20-minute limit. Reasoning, Quantitative Aptitude '
+                         'and Professional Knowledge are in English and Hindi with explanations in both; English is in English only, as in the real exam.'],
+                  mocks=[dict(id=f'bk-ibpsso-{i}-{post}', name=f'Mock {i} · {pname}', group=f'Mock {i}', qn=100, mins=80, live=(i == 1),
+                              uq=100 if post == 'it' else 25,   # unique questions (the 75 common ones are counted once)
+                              pmins={'eng': 20, 'rea': 20, 'qa': 20, pk: 20},
+                              parts=[('eng', 'English', ['eng']), ('rea', 'Reasoning', ['rea']), ('qa', 'Quantitative Aptitude', ['qa']),
+                                     (pk, 'Professional Knowledge', [pk])])
+                         for i in range(1, 11)
+                         for post, pname, pk in (('it', 'IT Officer', 'pkit'), ('agri', 'Agriculture Field Officer', 'pkag'),
+                                                 ('hr', 'HR / Personnel Officer', 'pkhr'), ('mkt', 'Marketing Officer', 'pkmk'))]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
@@ -4919,7 +5085,7 @@ def mock_questions():
     for the start page's numbers strip (Anil, 1 Nov 2026: "add no of mock test questions"). Unreleased mocks are not counted."""
     n = 0
     for mk in MOCK_PACKS.values():
-        n += sum(m['qn'] for m in mk['mocks'] if m['live']) if 'mocks' in mk else mk['live'] * mk['qn']
+        n += sum(m.get('uq', m['qn']) for m in mk['mocks'] if m['live']) if 'mocks' in mk else mk['live'] * mk['qn']
     try:
         import bahubali
         n += sum(t.get('q', 0) for t in bahubali.load_series().get('tests', {}).values())
@@ -4970,10 +5136,11 @@ def exam_clock_html(conf):
 def live_text(mk):
     """'Mock 1 is available now; Mocks 2–10 are coming soon.' (all mocks are included in the pack price)"""
     if 'mocks' in mk:
-        on = [m['name'] + (' (free)' if m.get('free') else '') for m in mk['mocks'] if m['live']]
-        if len(on) == len(mk['mocks']): return mk.get('live_note') or f'All {len(on)} mocks are available now'
+        on = list(dict.fromkeys(m.get('group', m['name']) + (' (free)' if m.get('free') else '') for m in mk['mocks'] if m['live']))   # 'group': IBPS SO's four post versions of one mock count once
+        allg = list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks']))
+        if len(on) == len(allg): return mk.get('live_note') or f'All {len(on)} mocks are available now'
         names = on[0] if len(on) == 1 else ', '.join(on[:-1]) + ' and ' + on[-1]
-        return f'{names} {"is" if len(on) == 1 else "are"} available now; the other {len(mk["mocks"]) - len(on)} mocks are coming soon (included in the price)'
+        return f'{names} {"is" if len(on) == 1 else "are"} available now; the other {len(allg) - len(on)} mocks are coming soon (included in the price)'
     a, n = mk['live'], mk['n']
     if a >= n: return f'All {n} mocks are available now'
     now = 'Mock 1 is' if a == 1 else f'Mocks 1–{a} are'
@@ -5001,7 +5168,7 @@ def pay_data(conf):
                 pyq=dict(price=PAY['pyq_price'], valid=PYQ_VALID, exams=PAY['exams'], trial=TRIAL_DAYS),
                 mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=PAY['pyq_price'], n=mk['n'], live=mk['live'],
                            valid=pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:],
-                           mocks=[dict(id=m['id'], name=m['name'], mins=m['mins'], live=m['live'], free=bool(m.get('free')), parts=m['parts']) for m in mk.get('mocks', [])]) if mk else None),
+                           mocks=[dict(id=m['id'], name=m['name'], mins=m['mins'], live=m['live'], free=bool(m.get('free')), parts=m['parts'], pmins=m.get('pmins')) for m in mk.get('mocks', [])]) if mk else None),
                 combo=None,   # no longer sold (26 Oct 2026): the ₹45 All-in-One Pass opens both Mission Khaki packs
                 pages=dict(pyq=pb + 'pyqs.html', mock=pb + 'mock-test.html', sec=pb + 'sectional-tests.html'))
 
@@ -5031,7 +5198,7 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
               f'<span class="etile-price" data-paidtxt="✓ Included in your All-in-One Pass">🔒 {INCL}</span></div>')
     elif mk:
         t2 = (f'<a class="etile" href="{pb}mocks/"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
-              + (f'<span class="etile-p">{esc(mk["summary"].split(". ")[0])}. {live_text(mk)}.</span>' if 'mocks' in mk else
+              + (f'<span class="etile-p">{esc(mk["summary"].split(". ")[0].rstrip("."))}. {live_text(mk)}.</span>' if 'mocks' in mk else
                  f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>')
               + f'<span class="etile-price" data-paidtxt="✓ Included in your All-in-One Pass">🔒 {INCL}{" · Mock 1 free" if mk.get("free1") or any(m.get("free") for m in mk.get("mocks", [])) else ""}</span></a>')
     elif BB_URL and conf['id'] == 'appsc-group-2':
@@ -5061,7 +5228,15 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
               f'<span class="etile-k">0{n} · {m.group(2)}</span></span>')
         t = t.replace('<a class="etile"', '<a class="etile fx"', 1).replace(m.group(0), hd, 1)
         return t[:-4] + f'<span class="etile-btn">{btn}</span></a>' if t.endswith('</a>') else t
+    if conf.get('mockonly'):   # SBI PO / IBPS SO: tile 1 says why there are no previous papers and what there is instead
+        t1 = (f'<a class="etile" href="{pb}mocks/"><span class="etile-k">01 · Previous papers</span><b>No official papers to publish</b>'
+              f'<span class="etile-p">{esc(conf["board"])} does not publish its question papers, and the memory-based papers online are coaching institutes\' write-ups. '
+              f'So Learn with Anil wrote its own mocks in the real pattern instead.</span><span class="etile-price">→ Take the mock tests</span></a>')
+        t3 = (f'<a class="etile" href="{pb}sectionals/"><span class="etile-k">03 · Sectional tests</span><b>Section-wise tests</b>'
+              f'<span class="etile-p">Each section of every {esc(mk["name"])} mock as its own test, with the real 20-minute limit.</span>'
+              f'<span class="etile-price" data-paidtxt="✓ Unlocked · your All-in-One Pass is active">🔒 With the All-in-One Pass</span></a>')
     t1, t2, t3 = fx(t1), fx(t2), fx(t3)
+    if conf.get('mockonly'): t1 = t1.replace('Open the PYQs →', 'See the mock tests →')
     links = ''.join(f'<a class="etile etile-sm" href="{h}"><b>{esc(x)}</b><span class="etile-go">→</span></a>' for x, h in extra_links)
     note = ''
     if conf['id'] in MAINS_EXAMS:   # Anil, 31 Oct 2026: APPSC Group-1 page has Prelims tiles and Mains tiles (Mains PYQs year-wise and subject-wise)
@@ -5244,7 +5419,7 @@ def pyq_page(conf, papers, questions):
                 + (f'<a class="cta" style="background:#0E7A43;border-color:#0E7A43;color:#fff" href="{pb}?pdf={p["id"]}"{pdf_attrs(conf, p["id"])}>⬇ Download PDF · {BOOKLETS[conf["id"]][p["id"]]["pages"]} pages</a>' if p['id'] in BOOKLETS.get(conf['id'], {}) else '')
                 + '</div></li>')
     allp = ps + sorted(extra, key=lambda p: (-p['year'], p['id']))
-    others = [(x, h) for x, h in PAY.get('exam_links', []) if x != seo]
+    others = [(x, h) for x, h in PAY.get('exam_links', []) if x != seo and h.strip('/') not in MOCKONLY]   # SBI PO / IBPS SO have no PYQs page
     sample = free_sample(conf, papers, questions)
     course = (f'<section class="course"><div class="chead"><div><p class="ck">All-in-One Pass · ₹{PAY["pyq_price"]} once · every exam, mock test &amp; book</p>'
               f'<h2>Every previous paper, one pass</h2>'
@@ -5307,6 +5482,21 @@ def sectional_page(conf, papers, questions):
                  if mk else (f'<h2>Sectional mocks</h2><p>Sectional mocks will come with the {esc(UPCOMING_PACKS[conf["id"]]["name"])} '
                              f'(coming soon, {INCL.lower()}).</p>' if conf['id'] in UPCOMING_PACKS else
                              f'<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack, coming soon and {INCL.lower()}.</p>'))
+    if conf.get('mockonly'):   # SBI PO / IBPS SO: no previous papers, so the sectional tests are the mocks' sections (with the real 20-minute limit)
+        live = [m for m in mk['mocks'] if m['live']]
+        soon = list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks'] if not m['live']))
+        secrows = (''.join(f'<li class="q"><div class="meta">Available now · {m["qn"]} questions</div><p>{esc(m["name"])}</p>'
+                           + ''.join(f'<a class="cta alt" href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}{" · " + str(m["pmins"][k]) + " min" if m.get("pmins", {}).get(k) else ""}</a>'
+                                     for k, v, _ in m['parts']) + '</li>' for m in live)
+                   + (f'<li class="q"><div class="meta">Coming soon, one by one</div><p>{esc(soon[0])}{"–" + esc(soon[-1].replace("Mock ", "")) if len(soon) > 1 else ""} sections</p></li>' if soon else ''))
+        title = f'{seo} Sectional Tests – Section-wise Mock Tests with the Real Time Limit | Learn with Anil'
+        desc = f'{seo} sectional tests: each section of the {mk["name"]} mocks as its own timed test, in English and Hindi, with explanations. {INCL}.'
+        body = (f'<h2>{esc(mk["name"])} sectional mocks</h2><ol class="qs">{secrows}</ol>'
+                f'<p>Every section of each mock opens as a separate test with the real 20-minute limit, in exam mode or practice mode. {INCL}.</p>'
+                + buy_box(conf, 'pyq') + '<h2>Plans</h2>' + plans_html(conf))
+        lede = esc(f'Practise {seo} one section at a time with the real time limit: the sections of every {mk["name"]} mock.')
+        return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} sectional tests', lede, body,
+                                [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Sectional tests', can)], conf)
     body = (f'<h2>PYQ sectionals</h2><p>Each test has every real previous question from one subject, in one go, with a timer. 🔒 Opens with the ₹{PAY["pyq_price"]} All-in-One Pass, which also opens every mock test series and the study books.</p>'
             '<ol class="qs">' + rows + '</ol>' + buy_box(conf, 'pyq') + mock_part + '<h2>Plans</h2>' + plans_html(conf))
     lede = esc(f'Practise {seo} one section at a time: timed tests from real previous questions in every subject'
@@ -5319,10 +5509,19 @@ def inapp_mocks(conf, papers):
     """HTML of the app's Mock tests view (/<exam>/mocks/): the same content as the static mock-test page, without the page frame."""
     pack, rows, info = mock_parts(conf, papers, app=True)
     l2, mk = conf['l2'], MOCK_PACKS.get(conf['id'])
+    if conf.get('mockonly'):   # SBI PO / IBPS SO: the mock series only
+        return (pack + '<h2>How the mock test works</h2><ul>'
+                f'<li>Questions appear in English and {esc(l2["name"])} (the English Language section in English only). Switch language with the buttons at the top.</li>'
+                '<li><b>Start</b> is the exam-style test: answer, mark for review, and see your score with every answer and explanation when you submit. '
+                '<b>Practice mode</b> checks each answer as you go, with its explanation.</li>'
+                '<li>The green <b>TIMER</b> switch at the top turns the timer off and on again. The timer also pauses while you are away from the test.</li>'
+                '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question.</li>'
+                f'<li>Every mock opens with the All-in-One Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months).</li></ul>')
     return (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
-            + '<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>'
+            + ('<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>' if not conf.get('mockonly') else '')
             + '<h2>How the mock test works</h2><ul>'
-            f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>'
+            + (f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>' if not conf.get('mockonly') else
+               f'<li>Questions appear in English and {esc(l2["name"])} (the English Language section in English only). Switch language with the buttons at the top.</li>') +
             '<li><b>Start</b> is the exam-style test: answer, mark for review, and see your score with every answer and explanation when you submit. '
             '<b>Practice mode</b> checks each answer as you go, with its explanation, like the previous papers.</li>'
             '<li>The green <b>TIMER</b> switch at the top turns the timer off and on again. The timer also pauses while you are away from the test.</li>'
@@ -5333,7 +5532,7 @@ def inapp_mocks(conf, papers):
 def inapp_sectionals(conf, papers, questions):
     """HTML of the app's Sectional tests view (/<exam>/sectionals/): PYQ sectionals by subject and the mock pack's sectional mocks."""
     _rel, html_ = sectional_page(conf, papers, questions)
-    m = re.search(r'<h2>PYQ sectionals</h2>.*?(?=<h2>Plans</h2>)', html_, flags=re.S)
+    m = re.search(r'<h2>PYQ sectionals</h2>.*?(?=<h2>Plans</h2>)' if not conf.get('mockonly') else r'<h2>[^<]* sectional mocks</h2>.*?(?=<h2>Plans</h2>)', html_, flags=re.S)
     return m.group(0) if m else ''
 
 
@@ -5421,7 +5620,7 @@ def mock_parts(conf, papers, app=False):
         sched = ''.join(f'<tr><td><b>{esc(m["name"])}</b></td><td>{"<b>Free</b> · register and start" if m.get("free") else "Available now"}</td><td>{m["qn"]} questions · {m["mins"]} min'
                         f'{mock_btns(f"{pb}?mock={m[chr(105) + chr(100)]}", "Start free" if m.get("free") else "Start", f"{pb}?mock={m[chr(105) + chr(100)]}&amp;mode=practice" if app else "", mock_pdf_link(conf, m["id"]))}</td>'
                         f'<td>{chips(part_links(pb, m))}</td></tr>' for m in mk['mocks'] if m['live'])
-        sched += soon_rows([m['name'] for m in mk['mocks'] if not m['live']])
+        sched += soon_rows(list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks'] if not m['live'])))
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
                 + f'<table class="facts mtab"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
                 + '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in mk['about']) + '</ul>'
@@ -5471,6 +5670,20 @@ def mock_page(conf, papers, questions):
             + f'take the real {", ".join(paper_kw(conf, p).replace(seo + " ", "") for p in mcq)} question paper{"s" if len(mcq) > 1 else ""} as timed tests, '
             f'in English and {l2["name"]}, with your score, official answers and an explanation for every question.')
     pack, rows, info = mock_parts(conf, papers)
+    if conf.get('mockonly'):   # SBI PO / IBPS SO: the mock series only
+        title = f'{seo} Mock Test 2026 – {mk["title"]}, English & Hindi | Learn with Anil'
+        desc = f'{mk["title"]} by Learn with Anil: {mk["summary"]} {INCL}.'
+        body = (pack + '<h2>How the mock test works</h2><ul>'
+                f'<li>Questions appear in English and {esc(l2["name"])} (the English Language section in English only). Switch language with the buttons at the top.</li>'
+                '<li><b>Start</b> is the exam-style test: answer, mark for review, and see your score with every answer and explanation when you submit. '
+                '<b>Practice mode</b> checks each answer as you go, with its explanation.</li>'
+                '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question.</li>'
+                f'<li>Every mock opens with the All-in-One Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months). Register once with your phone number.</li></ul>'
+                + '<h2>Plans</h2>' + plans_html(conf)
+                + f'<p><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a></p>')
+        lede = esc(f'{mk["title"]}: new questions by Learn with Anil in the real exam pattern, with an explanation for every answer.')
+        return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} mock tests', lede, body,
+                                [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Mock test', can)], conf)
     body = (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
             + '<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>'
             + '<h2>How the mock test works</h2><ul>'
@@ -5646,7 +5859,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);

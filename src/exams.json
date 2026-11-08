@@ -678,7 +678,8 @@
    "cat": "bank",
    "b": "IBPS",
    "t": "IBPS SO",
-   "n": "Specialist Officer"
+   "n": "Specialist Officer",
+   "live": "ibps-so/"
   },
   {
    "id": "ibps-rrb",
@@ -692,7 +693,8 @@
    "cat": "bank",
    "b": "SBI",
    "t": "SBI PO",
-   "n": "Probationary Officer"
+   "n": "Probationary Officer",
+   "live": "sbi-po/"
   },
   {
    "id": "sbi-clerk",
