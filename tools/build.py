@@ -4715,6 +4715,26 @@ MOCK_PACKS = {
                                  parts=[('epi', 'Ramayanam, Mahabharatham & Bhagavatham', ['ram', 'mbh', 'bhg']), ('pur', 'Puranas & Itihasa', ['pur']),
                                         ('aga', 'Agamas, Festivals & Arts', ['aga', 'fes']), ('ved', 'Vedic Culture & Philosophies', ['ved', 'phi']),
                                         ('law', 'Family Law, Endowments Act & Lands', ['fam', 'inc', 'eod', 'lan'])]))]),
+  # Anil, 8 Nov 2026: "start group-2 prelims test series ... suggest a name, no of exams ... add few exams"; "add info from our existing
+  # questions"; chose the name "Bahubali Prelims" (same family as the Bahubali Group-II Mains tests) and Mock 1 free for registered students.
+  # Each mock: History, Geography and Mental Ability = real questions from the site's other APPSC (and police) papers with official keys;
+  # Indian Society and Current Affairs = new questions. Ids start with "bk-" (any paid All-in-One Pass holder); bk-g2mk-1 is in the
+  # payments script's FREE_MOCKS. Sealed source: private (/home/claude/g2mk), sealed files in src/appsc-group-2-mocks/.
+  'appsc-group-2': dict(id='bk-g2mk', name='Bahubali Prelims', price=45, src='appsc-group-2-mocks', dir='appsc-group-2', langs='English &amp; Telugu',
+                   title='Bahubali Prelims – APPSC Group-II Screening Test Series (Mock Tests)',
+                   summary='10 full-length APPSC Group-II Screening Test mocks in the real pattern, 150 questions in 150 minutes '
+                           '(Indian History, Geography, Indian Society, Current Affairs and Mental Ability, 30 each), in English and Telugu, '
+                           'with an explanation for every answer. Each section can also be taken on its own as a sectional test.',
+                   about=['History, Geography and Mental Ability: real questions from APPSC\'s other papers (Group-I Prelims 2024, EO, AMVI and '
+                          'AEE General Studies papers) and a few from the police exams, with the official answers; each explanation says which paper '
+                          'and question it came from. The Group-II 2024 paper itself is not used: practise it free on the previous-papers page.',
+                          'Indian Society and Current Affairs: new questions written for this series (current affairs from November 2025 to '
+                          'November 2026), each checked against official and newspaper sources.',
+                          'Every question is in English and Telugu, with an explanation in both. Your score, accuracy and topic-wise analysis '
+                          'come after each mock. Mock 1 is free: register once and take it.'],
+                   mocks=[dict(id=f'bk-g2mk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 3), free=(i == 1),   # Mocks 1-3 on 8 Nov 2026
+                               parts=[('ih', 'Indian History', ['ih']), ('geo', 'Geography', ['geo']), ('soc', 'Indian Society', ['soc']),
+                                      ('cur', 'Current Affairs', ['cur']), ('men', 'Mental Ability', ['men'])]) for i in range(1, 11)]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
@@ -4784,7 +4804,8 @@ def live_text(mk):
     if 'mocks' in mk:
         on = [m['name'] + (' (free)' if m.get('free') else '') for m in mk['mocks'] if m['live']]
         if len(on) == len(mk['mocks']): return mk.get('live_note') or f'All {len(on)} mocks are available now'
-        return f'{" and ".join(on)} {"is" if len(on) == 1 else "are"} available now; the other {len(mk["mocks"]) - len(on)} mocks are coming soon (included in the price)'
+        names = on[0] if len(on) == 1 else ', '.join(on[:-1]) + ' and ' + on[-1]
+        return f'{names} {"is" if len(on) == 1 else "are"} available now; the other {len(mk["mocks"]) - len(on)} mocks are coming soon (included in the price)'
     a, n = mk['live'], mk['n']
     if a >= n: return f'All {n} mocks are available now'
     now = 'Mock 1 is' if a == 1 else f'Mocks 1–{a} are'
@@ -4900,7 +4921,7 @@ def plans_html(conf):
     """Every plan in one table, so there is no doubt about what is free and what is paid."""
     mk = MOCK_PACKS.get(conf['id'])
     rows = [('All-in-One Pass', f'₹{PAY["pyq_price"]}', f'Everything on the site: every previous paper of every exam ({esc(PAY["exams"])}) and every exam added later, with answers and explanations, practice quizzes, timed tests, PYQ sectionals and all study tools; '
-             'every mock test series (Mission Khaki for TS SI and Constable, Mission CGL, the Bahubali Group-II Mains tests, and new series as they come); and the study books', '12 months from payment')]
+             'every mock test series (Mission Khaki for TS SI and Constable, Mission CGL, Bahubali Prelims and the Bahubali Mains tests for Group-II, and new series as they come); and the study books', '12 months from payment')]
     up = UPCOMING_PACKS.get(conf['id'])
     if up:
         rows.append((esc(up['name']), 'Included (coming soon)', f'{up["n"]} full-length {esc(conf["seo"])} mock tests, {up["qn"]} questions each, with explanations. They open for All-in-One Pass holders as each mock is released.', 'With the All-in-One Pass'))

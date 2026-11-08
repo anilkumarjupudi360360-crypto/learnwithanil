@@ -56,7 +56,7 @@ const MOCKS = {   // exam id: that exam's mock series (old price and checkout na
 // SI + Constable in one payment (Anil, 25 Oct 2026): recorded as a mock pass for each exam, each valid till its own exam
 const COMBO = {price: 199,   // no longer sold (26 Oct 2026); kept so old combo rows still read
                 name: 'Mission Khaki SI+PC Mocks', exams: ['ts-police-si', 'ts-police-constable']};
-const FREE_MOCKS = {'mk-pc-1': true, 'mk-si-1': true};   // free for every registered student (Anil: Constable Mock 1, 25 Oct 2026; SI Mock 1, 28 Oct 2026)
+const FREE_MOCKS = {'mk-pc-1': true, 'mk-si-1': true, 'bk-g2mk-1': true};   // free for every registered student (Anil: Constable Mock 1, 25 Oct 2026; SI Mock 1, 28 Oct 2026; Bahubali Prelims (APPSC Group-II) Mock 1, 8 Nov 2026)
 // Mock keys live in the 'keys' tab of this spreadsheet: mock_id | key (base64) | file | opens (yyyy-mm-dd, IST).
 const MAX_DEVICES = 3;   // one phone number's passes work on at most this many phones/computers
 
@@ -411,7 +411,7 @@ function mock(b, exam) {   // the key of a sealed mock, book or the Bahubali cod
   if (!row) return {ok: false, error: item ? 'This is not ready yet.' : 'This mock is not ready yet.'};
   const opens = day_(row[3]);
   if (opens > today_()) return {ok: false, error: 'This mock opens on ' + opens + '.'};
-  if (!item && FREE_MOCKS[id]) {   // free mock: any registered student
+  if (FREE_MOCKS[id]) {   // free mock: any registered student (bk- ids too: Bahubali Prelims Mock 1 is 'bk-g2mk-1')
     const phone = phoneOf(b.phone);
     if (!phone) return {ok: false, error: 'Please register first (it is free): your name, phone and email.'};
     try { sheet('free', ['time', 'phone', 'email', 'mock']).appendRow([new Date(), phone, cell_(String(b.email || '').slice(0, 100)), id]); } catch (e) {}
