@@ -189,7 +189,7 @@ Q 15 | cur | Telangana Affairs
 (3) Bokkalagutta, Mandamarri Mandal, Manchiryal District
 (4) Gangadhara Mandal, Karimnagar District
 = 3
-~ Gandhari Vanam is an urban forest park at Bokkalagutta village in Mandamarri mandal of Mancherial district, on the Mancherial–Bellampalli road near the historic Gandhari Khilla. In 2022 it was revived under the seventh phase of Telanganaku Haritha Haram, with about 50,000 saplings planted along a 3-km walking track, and developed as a tourist spot.
+~ Gandhari Vanam is an urban forest park at Bokkalagutta village in Mandamarri mandal of Mancherial district, near the historic Gandhari Khilla (fort). It was renovated with fresh plantations and a walking track under Telanganaku Haritha Haram and developed into a tourist attraction by 2022. Chintamanipatnam (Vikarabad), Keesara (Medchal-Malkajgiri) and Gangadhara (Karimnagar) are not where this park is.
 
 Q 16 | irl | International Relations & Organisations
 Which of the following was caring for the wounded soldiers on the battlefield, and was later amended to cover warfare at sea and prisoners of war ?
@@ -198,7 +198,7 @@ Which of the following was caring for the wounded soldiers on the battlefield, a
 (3) Geneva Conventions
 (4) London Protocols
 = 3
-~ The first Geneva Convention of 1864, inspired by Henri Dunant and the Red Cross movement, protected wounded soldiers on the battlefield. Later Geneva Conventions extended protection to the wounded and shipwrecked in warfare at sea and to prisoners of war (1906, 1929), and the four Geneva Conventions of 1949 added civilians in wartime. The Nuremberg trials and the Rome Statute deal with war crimes, not this.
+~ The first Geneva Convention of 1864, inspired by Henri Dunant and the Red Cross movement, protected wounded soldiers on the battlefield. Its protection was later extended to the wounded and shipwrecked in warfare at sea and to prisoners of war (1929 convention), and the four Geneva Conventions of 1949 also cover civilians in wartime. The Nuremberg trials and the Rome Statute deal with war crimes, not this.
 
 Q 17 | irl | International Relations & Organisations
 Which of the following countries formed the group known as BASIC ?
@@ -316,7 +316,7 @@ Choose the correct answer :
 (3) A & B only
 (4) B & D only
 = 2
-~ Government data placed in Parliament in February 2022 showed that 127 tigers died in India in 2021, the highest in about a decade. Madhya Pradesh recorded the most deaths (42), followed by Maharashtra (27) and Karnataka (15). Gujarat has no resident wild tiger population, so B is wrong and A, C and D are correct.
+~ National Tiger Conservation Authority (NTCA) data showed that 127 tigers died in India in 2021, the highest in about a decade. Madhya Pradesh recorded the most deaths (42), followed by Maharashtra (27) and Karnataka (15). Gujarat has no resident wild tiger population, so B is wrong and A, C and D are correct.
 
 Q 26 | env | Disaster Management
 Match the following Cyclones of 2021 with their intensity :
@@ -363,7 +363,7 @@ Choose the correct answer :
 (3) A, C, D & E only
 (4) B, D & E only
 = 3
-~ India's literacy rate was about 12% at independence (A). Census 2011 put it at 74.04%, not 76%, so B is wrong; male literacy was 82.14% (D) and female literacy 65.46% (E). TGPSC also treats C as correct, since youth (15–24) literacy in 2011 was well above adult literacy, though the exact gap depends on the data used. As B is the only clearly false statement, option (3) is the only one that fits.
+~ India's literacy rate was about 12% at independence (A), and Census 2011 recorded male literacy of 82.14% (D) and female literacy of 65.46% (E). The overall 2011 rate was 74.04%, not 76%, so B is wrong and option (3) is the only option without it. Statement C is doubtful: Census 2011 data put youth (15–24) literacy at about 86% and adult (15+) literacy at about 69%, a gap of about 17 points, but TGPSC's key treats C as correct. (Official key; some sources differ.)
 
 Q 30 | cur | Reports & Indices
 As per the NITI Aayog’s Health Index Round IV 2019-20, which of the following states emerged as the best three performers in terms of overall performance ?
@@ -390,7 +390,7 @@ The ‘Make in India’ effort of Indian Railways has culminated into India's :
 (3) First semi high speed train Gatimaan Express
 (4) First high speed train Rajdhani Express
 = 1
-~ Vande Bharat Express (earlier 'Train 18') was designed and built indigenously at the Integral Coach Factory, Chennai, under Make in India. This self-propelled train set, with a design speed of 160 km/h, was flagged off on the New Delhi–Varanasi route on 15 February 2019. Shatabdi, Rajdhani and Gatimaan are locomotive-hauled trains and not products of this Make in India effort.
+~ Vande Bharat Express (earlier 'Train 18') was designed and built indigenously at the Integral Coach Factory, Chennai, under Make in India. This self-propelled train set, with a maximum operating speed of 160 km/h, was flagged off on the New Delhi–Varanasi route on 15 February 2019. Shatabdi, Rajdhani and Gatimaan are locomotive-hauled trains and not products of this Make in India effort.
 
 Q 33 | eco | Money, Banking & External Sector
 According to the Export Preparedness Index 2020, the following is NOT a part of the Government of India’s schemes for the promotion of exports :
@@ -431,7 +431,7 @@ Which of the following sector(s) showed positive growth in Real Gross Value-Adde
 (3) Agriculture, Forestry and Fishing Sector
 (4) Mining and Quarrying Sector
 = 3
-~ In the COVID-hit year 2020-21, real GVA contracted for most sectors, with trade, hotels, transport and communication falling the most (by about a fifth), and mining and manufacturing also declining. Agriculture, forestry and fishing was the only sector to grow, by about 3.6% as per the provisional estimates of May 2021, as noted in the Economic Survey 2021-22.
+~ In the COVID-hit year 2020-21, real GVA fell in trade, hotels, transport and communication (the worst hit, down by about a fifth), in manufacturing and in mining and quarrying. Agriculture, forestry and fishing kept growing, by about 3.6% as noted in the Economic Survey 2021-22, so it is the only listed sector with positive growth.
 
 Q 37 | eco | Money, Banking & External Sector
 Arrange the following major sources of India’s Foreign Direct Investment (FDI) during 2021-22 from highest to lowest :
@@ -750,7 +750,7 @@ Choose the correct answer :
 (3) A-4; B-3; C-5; D-1
 (4) A-4; B-2; C-1; D-5
 = 1
-~ The Occupational Safety, Health and Working Conditions Code, 2020 is one of the four labour codes of the Ministry of Labour and Employment, and the National Commission for Allied and Healthcare Professions Bill came from the Ministry of Health and Family Welfare. The IBC (Second Amendment) Bill, 2020, which suspended fresh insolvency cases for COVID-period defaults, was moved by the Finance Minister and is listed under Finance, while the Companies (Amendment) Bill, 2020 belongs to Corporate Affairs.
+~ The Occupational Safety, Health and Working Conditions Code, 2020 is one of the four labour codes of the Ministry of Labour and Employment, and the National Commission for Allied and Healthcare Professions Bill came from the Ministry of Health and Family Welfare. The IBC (Second Amendment) Bill, 2020, which suspended fresh insolvency cases for COVID-period defaults, was moved by the Finance Minister and is matched with Finance (the Code itself is administered by the Ministry of Corporate Affairs), while the Companies (Amendment) Bill, 2020 belongs to Corporate Affairs.
 
 Q 62 | cur | National
 The River Cities Alliance (RCA) launched in February, 2022 aims to provide the member cities a platform to discuss and exchange information on the vital aspects for sustainable management of urban rivers. Which of the following cities are part of the RCA ?
@@ -794,7 +794,7 @@ Choose the correct answer :
 (3) A, C, D & E only
 (4) A, B, C, D & E
 = 3
-~ According to the Telangana Socio Economic Outlook 2022, the State Government launched TS Globallinker in 2019 as a digital networking platform that helps MSMEs contact global buyers and sellers. About 3 lakh SMEs worldwide, including over 7,000 from Telangana, had registered, and it collaborates with CAIT on the "SMEs of Digital India" programme. It was launched by the State's Industries and Commerce Department with GlobalLinker, not by T-Hub, so B is wrong.
+~ According to the Telangana Socio Economic Outlook 2022, the State Government launched TS Globallinker as a digital networking platform that helps MSMEs contact global buyers and sellers. About 3 lakh SMEs worldwide, including over 7,000 from Telangana, had registered, and it collaborates with CAIT on the "SMEs of Digital India" programme. It was launched by the State's Industries and Commerce Department with GlobalLinker, not by T-Hub, so B is wrong.
 
 Q 65 | tsp | Telangana Policies & Schemes
 The Telangana Electric Vehicle & Energy Storage Policy 2020-2030 provides 100% exemption of road tax & registration fee for different variety of electric vehicles upto certain number of vehicles purchased and registered in Telangana. Match the following types of vehicles with their limits of exemptions :
@@ -829,7 +829,7 @@ The Social Innovation Policy of Telangana is driven by which of the following ?
 (3) Educate, Innovate and Enterprise
 (4) Collaborate, Innovate and Transform
 = 4
-~ The Telangana Social Innovation Policy (2020), issued by the Information Technology, Electronics and Communications Department, states that it is driven by "Collaborate, Innovate and Transform". It aims to make Telangana the country's leading hub for social innovation, resting on four pillars: regulatory framework, enabling ecosystem, human capital and capacity building, and financial instruments.
+~ The Telangana Social Innovation Policy states that it is driven by "Collaborate, Innovate and Transform". It aims to make Telangana a leading hub for social innovation by bringing government, industry, academia, start-ups and civil society together to find innovative solutions to social problems. The other three slogans are not part of the policy.
 
 Q 68 | eco | Telangana Economy
 In Yasangi 2021-22, around 63 lakh farmers received investment support under the Rythu Bandhu scheme. Arrange the following beneficiaries from lowest to the highest based on the number of recipients :
@@ -918,7 +918,7 @@ Choose the correct answer :
 (3) C, A, B, D
 (4) A, C, B, D
 = 3
-~ NITI Aayog's (DMEO) Social Inclusion sector report calls Scheduled Tribes the poorest group, with average household income about 70% of the all-India average, followed by Scheduled Castes at about 80%. OBC and Muslim households are better placed, at about 90% of the average, with Muslims placed at the top of this group. So the order from lowest upwards is ST, SC, OBC, Muslims, which is option (3), the only option that starts with ST and then SC.
+~ NITI Aayog's (DMEO) Social Inclusion sector report calls Scheduled Tribes the poorest group, with average household income about 70% of the all-India average, followed by Scheduled Castes at about 80%. OBC and Muslim households are better placed, at about 90% of the average. So the order from lowest upwards begins ST, SC, and option (3) (ST, SC, OBC, Muslims) is the only option that starts with ST and then SC.
 
 Q 75 | eco | Poverty, Employment & Human Development
 More than half of all multi-dimensionally poor individuals in India live in the following states :
@@ -997,7 +997,7 @@ Choose the correct answer :
 (3) A-4; B-3; C-2; D-1
 (4) A-5; B-4; C-3; D-2
 = 2
-~ Telangana history texts credit Asif-ul-Akbar to N. Narayan Rao, Safeer-e-Deccan to Amjad Ali and Musheer-e-Deccan to Pandit Kishan Rao, all Urdu papers of Asaf Jahi Hyderabad. Imroz was founded in 1947 by Shoebullah Khan, who was murdered in August 1947 for attacking the Razakars. Qazi Abdul Ghaffar (of Payam) is the extra item, so A-2, B-1, C-5, D-3.
+~ Telangana history texts credit Asif-ul-Akbar to N. Narayan Rao, Safeer-e-Deccan to Amjad Ali and Musheer-e-Deccan to Pandit Kishan Rao, all Urdu papers of Asaf Jahi Hyderabad. Imroz was founded in 1947 by Shoebullah Khan, who was murdered in August 1948 for attacking the Razakars. Qazi Abdul Ghaffar (of Payam) is the extra item, so A-2, B-1, C-5, D-3.
 
 Q 81 | soc | Indian Social Structure
 Which of the following are part of the Gond Tribe ?
@@ -1239,7 +1239,7 @@ IIT Kharagpur researchers developed eco-friendly food packaging material with wh
 (3) Cucumber Peels
 (4) Cow Dung
 = 3
-~ In 2020, researchers at IIT Kharagpur extracted cellulose nanocrystals from discarded cucumber peels and used them to make a biodegradable, eco-friendly food packaging film. It offers an alternative to plastic packaging and makes use of kitchen and food-processing waste; banana peels, banana stem and cow dung were not the material used.
+~ Researchers at IIT Kharagpur extracted cellulose nanocrystals from discarded cucumber peels and used them to make a biodegradable, eco-friendly food packaging film. It offers an alternative to plastic packaging and makes use of kitchen and food-processing waste; banana peels, banana stem and cow dung were not the material used.
 
 Q 101 | sci | Science & Technology
 Examples of Voluntary Standards (Indian Standards) adopted based on International Codex Alimentarius with suitable modifications.
@@ -1472,7 +1472,7 @@ Choose the correct answer :
 (3) A-5; B-3; C-4; D-2
 (4) A-3; B-5; C-2; D-1
 = 4
-~ The Boggulavagu project is in Malharrao mandal of Jayashankar Bhupalpally district (A-3), and the Gollavagu project is in Bheemaram mandal of Mancherial district (B-5). Lankasagar is in Penuballi mandal of Khammam district (C-2), and the Ramadugu project is in Dharpalli mandal of Nizamabad district (D-1); the Kotepally vagu project in Vikarabad district is the extra item. Hence option (4).
+~ The Boggulavagu project is in Malharrao mandal of Jayashankar Bhupalpally district (A-3), and the Gollavagu project is in Bheemaram mandal of Mancherial district (B-5). Lankasagar is in Penuballi mandal of Khammam district (C-2), and the Ramadugu project is in Dharpalli mandal of Nizamabad district (D-1); Kotepalli mandal of Vikarabad district (4) is the extra item. Hence option (4).
 
 Q 120 | geo | World Geography
 The Sargasso Sea is located in :
@@ -1495,7 +1495,7 @@ Choose the correct statements :
 (3) A, B & C only
 (4) A, B, C & D
 = 4
-~ Standard Indian geography texts describe El Nino as a warm current formed by the southward extension of the warm equatorial counter current along the coast of Ecuador and Peru, where it temporarily replaces the cold Peru (Humboldt) current (A). It raises sea-surface temperatures in the eastern Pacific off Peru (B) and brings heavy rain and floods to the normally arid Peruvian coast (C), while it is linked with a weak south-west monsoon and droughts in India (D).
+~ Indian geography texts describe El Nino as a warm current formed when the warm equatorial counter current extends southward along the Ecuador–Peru coast, temporarily replacing the cold Peru (Humboldt) current (A). It raises sea-surface temperatures off Peru (B), brings heavy rain and floods to the normally arid Peruvian coast (C) and is linked with a weak south-west monsoon in India (D). Most sources date its onset to around December, the southern summer, not winter, but only option (4) contains the clearly correct D. (Official key; some sources differ.)
 
 Q 122 | env | Environment & Ecology
 Consider the following statements :
