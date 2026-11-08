@@ -1,5 +1,56 @@
 [
  {
+  "id": "aphist-en",
+  "lang": "en",
+  "vol": null,
+  "series": "Group-I Mains Paper II · Group-II Mains Paper I",
+  "subject": "AP History",
+  "title": "History and Culture of Andhra Pradesh for APPSC Group-I & Group-II",
+  "title_en": "History and Culture of Andhra Pradesh for APPSC Group-I & Group-II",
+  "subtitle": "Satavahanas to the 2014 bifurcation, written from APPSC's own questions: every AP history question with the official answer, and answer frames for Group-I Mains",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "History and Culture of Andhra Pradesh for APPSC Group-I & Group-II, 2026-27 (English Medium)",
+  "pages": 221,
+  "chapters": [
+   "Land, Prehistory and the Origins of the Andhras",
+   "Buddhism and Jainism in Andhra",
+   "The Satavahanas",
+   "Ikshvakus, Salankayanas, Pallavas and Vishnukundins",
+   "Eastern Chalukyas of Vengi, Renati Cholas and the Beginnings of Telugu",
+   "The Kakatiyas",
+   "Nellore Chodas, Musunuri Nayakas, Reddi Kingdoms, Velamas and Gajapatis",
+   "Vijayanagara and Andhra",
+   "Telugu Language and Literature, 11th–17th Centuries",
+   "The Qutb Shahis of Golconda",
+   "Europeans, the Company and British Rule in Andhra",
+   "Social and Cultural Awakening: Reformers, Missionaries, Press and Libraries",
+   "The National Movement in Andhra, 1885–1947",
+   "Folk, Tribal and Performing Arts",
+   "The Andhra Movement and Andhra State, 1953",
+   "Andhra Pradesh, 1956–2014",
+   "Bifurcation, 2014 and Its Impact"
+  ],
+  "pyqs": 207,
+  "price": 45,
+  "syllabus": "Group-I Mains Paper II (Section B) · Group-I Prelims (Andhra) · Group-II Mains Paper I (Section A)",
+  "badge": "Group-I & II",
+  "subject_label": "AP History",
+  "chapters_label": "17 chapters · all 207 APPSC AP-history PYQs with official keys · 30 Group-I Mains answer frames · 204 practice MCQs",
+  "product_en": "History and Culture of Andhra Pradesh for APPSC Group-I & Group-II, 2026-27 (English Medium)",
+  "cover": "notes-aphist-en-cover.jpg",
+  "samples": [
+   "notes-aphist-en-p1.jpg",
+   "notes-aphist-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "appsc-group-1",
+   "appsc-group-2"
+  ],
+  "free": "/LearnWithAnil-AP-History-APPSC-Group-1-Group-2-Free-Sample.pdf"
+ },
+ {
   "id": "ma-en",
   "lang": "en",
   "vol": null,

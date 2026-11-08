@@ -989,19 +989,20 @@ def exam_confs():
            notes_seo=('APPSC Group 2 Micro Syllabus 2026 (Notification 37/2026) – Topic-wise Syllabus with PYQs, Free PDF Sample | Learn with Anil',
                       'APPSC Group-II micro-syllabus by Jupudi Anil Kumar for Notification 37/2026: all 9 Screening and Mains subjects in 267 sub-topics, '
                       'each tagged with the papers that asked it, 1,004 previous questions mapped and 112 current affairs of 2025–26. Free sample PDF; '
-                      'plus the Mental Ability book (all 212 APPSC mental-ability questions solved, 500 practice questions), AP Economy Crisp Notes and the Science & Technology book.'),
-           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-II: the new Mental Ability book for the Screening Test (all 212 APPSC mental-ability questions solved the fast way, 269 shortcuts and 500 practice questions), the Micro-Syllabus, which breaks every Screening and Mains subject into sub-topics and shows which papers asked each one, Crisp Notes on AP Economy, and a full Science & Technology book. Every book has APPSC\'s own previous questions inside.',
-           notes_line='The new Mental Ability book for the Screening Test (212 APPSC questions solved, 500 practice questions), the Group-II Micro-Syllabus (Notification 37/2026), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book, built on APPSC\'s own previous questions.',
+                      'plus History and Culture of Andhra Pradesh (all 207 APPSC AP history questions), the Mental Ability book (all 212 APPSC mental-ability questions solved, 500 practice questions), AP Economy Crisp Notes and the Science & Technology book.'),
+           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-II: the new History and Culture of Andhra Pradesh book for Mains Paper I (17 chapters, all 207 AP history questions APPSC has asked with the official answers), the Mental Ability book for the Screening Test (all 212 APPSC mental-ability questions solved the fast way, 269 shortcuts and 500 practice questions), the Micro-Syllabus, which breaks every Screening and Mains subject into sub-topics and shows which papers asked each one, Crisp Notes on AP Economy, and a full Science & Technology book. Every book has APPSC\'s own previous questions inside.',
+           notes_line='The new AP History book for Mains Paper I (all 207 APPSC AP history questions with official answers), the Mental Ability book for the Screening Test (212 APPSC questions solved, 500 practice questions), the Group-II Micro-Syllabus (Notification 37/2026), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book, built on APPSC\'s own previous questions.',
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer: there the answer is APPSC's and the other three options are written by Learn with Anil (inside the All-in-One Pass)."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
            # Mental Ability book added 8 Nov 2026 (Anil): it is for Prelims Paper II, so the card text no longer says 'for APPSC Mains' only
+           # History and Culture of AP book (aphist-en) added 8 Nov 2026 (Anil: "pls go ahead"); on both Group-I and Group-II pages
            notes_title='Study material for APPSC Group-I',
            notes_seo=('APPSC Group 1 Mental Ability Book – Shortcuts, All Previous Questions Solved, 500 Practice Questions (Free Sample PDF) | Learn with Anil',
                       'Mental Ability for APPSC Group-I Prelims Paper II and the Group-II Screening Test by Jupudi Anil Kumar: 25 chapters, 269 shortcuts, all 212 APPSC '
                       'mental-ability questions (2019–2024) solved the fast way and 500 practice questions with answers. Free sample chapter (Percentage); '
-                      'plus Group-I Mains books on Public Administration, Ethics and Laws, AP Economy and Science & Technology.'),
-           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-I: the new Mental Ability book for Prelims Paper II (all 212 APPSC mental-ability questions solved the fast way, 269 shortcuts and 500 practice questions), and for the Mains: Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book. Every book has APPSC\'s own previous questions with the official answers.',
-           notes_line='The new Mental Ability book for Prelims Paper II (all 212 APPSC mental-ability questions solved the fast way, 500 practice questions), plus Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book for the Mains, built on APPSC\'s own previous questions.',
+                      'plus Group-I Mains books on History and Culture of Andhra Pradesh (with answer frames), Public Administration, Ethics and Laws, AP Economy and Science & Technology.'),
+           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-I: the new Mental Ability book for Prelims Paper II (all 212 APPSC mental-ability questions solved the fast way, 269 shortcuts and 500 practice questions), and for the Mains: the new History and Culture of Andhra Pradesh book for Paper II Section B (17 chapters, all 30 Group-I Mains AP history questions with answer frames), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book. Every book has APPSC\'s own previous questions with the official answers.',
+           notes_line='The new Mental Ability book for Prelims Paper II (all 212 APPSC mental-ability questions solved the fast way, 500 practice questions), plus History and Culture of Andhra Pradesh (Paper II, with answer frames), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book for the Mains, built on APPSC\'s own previous questions.',
            slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE, pb='/appsc-group-1/',
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            title='APPSC Group 1 Previous Year Question Papers (PYQs) with Answers – Prelims 2019–2024, English & Telugu | Learn with Anil',
@@ -4447,8 +4448,9 @@ def news_hub_page(loaded, rels):
 
 
 ROOT_NOTES = ('Study material: every book on the site',   # the start page's Study Material lists every book, for every exam
-              'Exam-focused books by Jupudi Anil Kumar for APPSC Group-I and Group-II Mains and the EO Grade-III exam: Public Administration and Governance, '
-              'Ethics and Laws, the Group-II Micro-Syllabus, Crisp Notes on AP Economy, Science and Technology, and Hindu Philosophy & Temple System. '
+              'Exam-focused books by Jupudi Anil Kumar for APPSC Group-I, Group-II and the EO Grade-III exam: History and Culture of Andhra Pradesh, '
+              'Mental Ability, Public Administration and Governance, Ethics and Laws, the Group-II Micro-Syllabus, Crisp Notes on AP Economy, '
+              'Science and Technology, and Hindu Philosophy & Temple System. '
               'Every book has the exam\'s own previous questions inside.')
 NOTES_EXAMS = {'appsc-group-2', 'appsc-group-1'}   # Anil, 24 Oct 2026: the APPSC Mains books are shown only on the APPSC Group 1 and Group 2 pages
 
