@@ -1544,7 +1544,7 @@ def main():
         for bk in ex.values(): shutil.copy(os.path.join(SRC, 'books', bk['file']), os.path.join(DIST, 'site', 'books', bk['file']))
     for ex in exsealed.values(): shutil.copy(os.path.join(SRC, 'books', ex['file']), os.path.join(DIST, 'site', 'books', ex['file']))
     # sealed (encrypted) paid mocks: published as-is; the keys are only in Anil's private sheet (tools/mk_seal.py)
-    for exam_dir, src_dir in [('ts-police-si', 'mission-khaki')] + [(k, v['src']) for k, v in MOCK_PACKS.items() if v.get('src')]:
+    for exam_dir, src_dir in [('ts-police-si', 'mission-khaki')] + [(v.get('dir', k), v['src']) for k, v in MOCK_PACKS.items() if v.get('src')]:
         mkdir_ = os.path.join(SRC, src_dir)
         if os.path.isdir(mkdir_):
             os.makedirs(os.path.join(DIST, 'site', exam_dir, 'mk'), exist_ok=True)
@@ -4430,6 +4430,25 @@ MOCK_PACKS = {
                   mocks=[dict(id=f'mk-pc-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i <= 3), free=(i == 1),   # Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026 (Anil)
                               parts=[('eng', 'English', ['eng']), ('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning', ['rea']),
                                      ('gs', 'General Studies', ['ih', 'tg', 'soc', 'sci', 'eco', 'geo', 'pol', 'cur'])]) for i in range(1, 11)]),
+  # Anil, 8 Nov 2026: EO Grade-III test series from the site's own previous questions (tools/eo_mocks.py), full-length and sectional.
+  # Ids start with "bk-" so the payments script gives the keys to any paid All-in-One Pass holder (no script change); 'dir' = the exam folder.
+  'appsc-eo': dict(id='bk-eomk', name='EO Grade-III', live_note='All 3 mocks (6 papers) are available now', price=45, src='appsc-eo-mocks', dir='appsc-endowment-officer', langs='English &amp; Telugu',
+                   title='APPSC EO Grade-III Test Series – Paper I & Paper II Full-Length Mocks',
+                   summary='3 full-length APPSC EO Grade-III mock tests, each with Paper I (General Studies & Mental Ability, 150 questions) and Paper II '
+                           '(Hindu Philosophy & Temple System, 150 questions), in English and Telugu, with an explanation for every answer. Every section can also be taken on its own as a sectional test.',
+                   about=['Built from real APPSC questions: Paper I from the common APPSC General Studies & Mental Ability papers (EO 2026 and 2023, AMVI 2026 and 2023), '
+                          'Paper II from the EO Hindu Philosophy & Temple System papers of 2026 and 2023, mixed subject by subject in the proportions APPSC asks.',
+                          'Official APPSC answers; each explanation says which paper and question it came from. Paper I questions never repeat across the 3 mocks. '
+                          'APPSC has asked only 291 Paper II questions with four options, so about half of them appear in two of the three Paper II mocks.',
+                          'Each paper: 150 questions, 150 minutes, as in the real exam. Your score, accuracy and topic-wise analysis come after each test.'],
+                   mocks=[m for i in range(1, 4) for m in (dict(id=f'bk-eomk-{i}a', name=f'Mock {i} · Paper I (GS & Mental Ability)', qn=150, mins=150, live=True,
+                               parts=[('cur', 'Current Affairs', ['cur']), ('sci', 'General Science', ['sci']), ('ih', 'History & Culture', ['ih']),
+                                      ('geo', 'Geography & Environment', ['geo']), ('pol', 'Polity & Governance', ['pol']),
+                                      ('eco', 'Economy & AP Issues', ['eco', 'apr']), ('men', 'Mental Ability', ['men'])]),
+                                                           dict(id=f'bk-eomk-{i}b', name=f'Mock {i} · Paper II (Hindu Philosophy)', qn=150, mins=150, live=True,
+                                 parts=[('epi', 'Ramayanam, Mahabharatham & Bhagavatham', ['ram', 'mbh', 'bhg']), ('pur', 'Puranas & Itihasa', ['pur']),
+                                        ('aga', 'Agamas, Festivals & Arts', ['aga', 'fes']), ('ved', 'Vedic Culture & Philosophies', ['ved', 'phi']),
+                                        ('law', 'Family Law, Endowments Act & Lands', ['fam', 'inc', 'eod', 'lan'])]))]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
@@ -4497,10 +4516,10 @@ def live_text(mk):
     """'Mock 1 is available now; Mocks 2–10 are coming soon.' (all mocks are included in the pack price)"""
     if 'mocks' in mk:
         on = [m['name'] + (' (free)' if m.get('free') else '') for m in mk['mocks'] if m['live']]
-        if len(on) == len(mk['mocks']): return f'All {len(on)} mocks are available now.'
+        if len(on) == len(mk['mocks']): return mk.get('live_note') or f'All {len(on)} mocks are available now'
         return f'{" and ".join(on)} {"is" if len(on) == 1 else "are"} available now; the other {len(mk["mocks"]) - len(on)} mocks are coming soon (included in the price)'
     a, n = mk['live'], mk['n']
-    if a >= n: return f'All {n} mocks are available now.'
+    if a >= n: return f'All {n} mocks are available now'
     now = 'Mock 1 is' if a == 1 else f'Mocks 1–{a} are'
     later = f'Mock {n} is' if a == n - 1 else f'Mocks {a + 1}–{n} are'
     return f'{now} available now; {later} coming soon (included in the price)'
