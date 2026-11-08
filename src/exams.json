@@ -346,7 +346,8 @@
    "cat": "tg",
    "b": "TGPSC",
    "t": "Group-II",
-   "n": "Group-II Services"
+   "n": "Group-II Services",
+   "live": "tgpsc-group-2/"
   },
   {
    "id": "tgpsc-group-3",
