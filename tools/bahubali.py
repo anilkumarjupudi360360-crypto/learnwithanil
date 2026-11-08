@@ -352,6 +352,35 @@ def page(dist_site):
         papers_html.append(f'<div class="paper-head"><div><h3>{p["name"]}</h3><p>' + ' + '.join(f'{s[1]}: {esc(s[2])} (75)' for s in p['sections']) +
                            f'</p></div><p class="mono">{len(live)} of {TESTS_PER_PAPER} live</p></div><div class="tests">{"".join(cards)}</div>')
     nlive = len(conf_tests)
+    # Anil, 8 Nov 2026: "in bahubali create 2 tiles...prelims and mains...and then in those tiles....pls add them":
+    # the page now has two series, Bahubali Prelims (the Screening Test mocks, MOCK_PACKS['appsc-group-2'] in build.py) and Bahubali Mains.
+    pk = B.MOCK_PACKS.get('appsc-group-2') or {}
+    pm = pk.get('mocks', [])
+    pre_on = [m for m in pm if m['live']]
+    pre_cards = []
+    for i, m in enumerate(pm, 1):
+        if m['live']:
+            secs = ''.join(f'<a href="/appsc-group-2/?mock={m["id"]}&amp;part={k}">{esc(v)} · 30</a>' for k, v, _ in m['parts'])
+            pre_cards.append(f'<article class="card test"><div class="top"><span class="no">Mock {i:02d}</span>'
+                             f'<span class="badge {"free" if m.get("free") else "live"}">{"Free" if m.get("free") else "Live"}</span></div>'
+                             f'<p class="meta">Screening Test · {m["qn"]} questions · {m["mins"]} minutes · 150 marks</p>'
+                             f'<div class="secs">{secs}</div>'
+                             f'<div class="acts"><a class="btn btn-primary go-start" href="/appsc-group-2/?mock={m["id"]}">▶ Start Mock {i}{" free" if m.get("free") else ""}</a></div></article>')
+        else:
+            pre_cards.append(f'<article class="card test soon"><div class="top"><span class="no">Mock {i:02d}</span><span class="badge soon">Upcoming</span></div>'
+                             f'<p class="meta">Screening Test · 150 questions · 150 minutes</p></article>')
+    prelims_html = (f'<section class="blk" id="prelims"><div class="wrap"><h2>Bahubali Prelims · Screening Test</h2>'
+                    f'<p class="lead">{esc(pk.get("summary", ""))} Mock 1 is free for registered students; the others open with the All-in-One Pass. '
+                    f'Tap a section name to take that section alone as a sectional test.</p>'
+                    f'<div class="paper-head"><div><h3>Screening Test mocks</h3><p>Indian History · Geography · Indian Society · Current Affairs · Mental Ability (30 each)</p></div>'
+                    f'<p class="mono">{len(pre_on)} of {len(pm)} live</p></div><div class="tests">{"".join(pre_cards)}</div></div></section>') if pm else ''
+    series_tiles = ((f'<section class="blk" id="series"><div class="wrap"><h2>Choose your series</h2><div class="series">'
+                     f'<a class="card stile" href="#prelims"><span class="shd pre"><span class="k">01 · Prelims (Screening)</span><span class="st">{len(pre_on)} of {len(pm)} live</span></span>'
+                     f'<h3>Bahubali Prelims</h3><p>{len(pm)} full-length Screening Test mocks: 150 questions in 150 minutes, five sections of 30, English and Telugu. '
+                     f'Every section also as a sectional test. Mock 1 free.</p><span class="go">Prelims tests →</span></a>'
+                     f'<a class="card stile" href="#mains"><span class="shd mai"><span class="k">02 · Mains</span><span class="st">{nlive} of {2 * TESTS_PER_PAPER} live</span></span>'
+                     f'<h3>Bahubali Mains</h3><p>{2 * TESTS_PER_PAPER} full-length Mains tests, {TESTS_PER_PAPER} for Paper I and {TESTS_PER_PAPER} for Paper II: 150 questions each, '
+                     f'with section-wise analysis and PDFs.</p><span class="go">Mains tests →</span></a></div></div></section>') if pm else '')
     live_desc = ' and '.join(f'{p["name"]} Grand Test' + ('s ' if sum(t['paper'] == p['id'] for t in conf_tests) > 1 else ' ') + _ranges([t['n'] for t in conf_tests if t['paper'] == p['id']]) for p in PAPERS if any(t['paper'] == p['id'] for t in conf_tests)) or 'first tests coming soon'
     buy = S.get('buy', '')
     buy_btn = (f'<a class="btn btn-gold" href="/appsc-group-2/?buy=pyq" data-buy>Get the All-in-One Pass · ₹{PRICE}</a>'
@@ -372,9 +401,10 @@ def page(dist_site):
                 if nlive else 'The first tests are upcoming.')
     faq = [(q, a.replace('{LIVE}', live_ans)) for q, a in FAQ]
     faq_html = ''.join(f'<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for q, a in faq)
-    title = 'Bahubali Test Series – APPSC Group 2 Mains Mock Tests (Paper 1 & Paper 2), Full-Length, English & Telugu | Learn with Anil'
-    desc = (f'Bahubali Test Series for APPSC Group 2 Mains 2026: {2 * TESTS_PER_PAPER} full-length mock tests ({TESTS_PER_PAPER} for Paper 1, {TESTS_PER_PAPER} for Paper 2), '
-            f'150 questions each, in English and Telugu, with negative marking, explanations and PDFs. Included in the ₹{PRICE} All-in-One Pass.')
+    title = 'Bahubali Test Series – APPSC Group 2 Prelims & Mains Mock Tests (Screening Test, Paper 1 & Paper 2), English & Telugu | Learn with Anil'
+    desc = (f'Bahubali Test Series for APPSC Group 2 2026: Bahubali Prelims ({len(pm)} Screening Test mocks, Mock 1 free) and Bahubali Mains '
+            f'({2 * TESTS_PER_PAPER} full-length tests, {TESTS_PER_PAPER} for Paper 1 and {TESTS_PER_PAPER} for Paper 2), 150 questions each, in English and Telugu, '
+            f'with explanations. Included in the ₹{PRICE} All-in-One Pass.')
     ld = [{"@context": "https://schema.org", "@type": "Course", "name": f"{NAME} – APPSC Group-II Mains", "description": desc, "url": url,
            "inLanguage": ["en", "te"], "provider": {"@type": "Organization", "name": "Learn with Anil", "url": B.SITE_URL + '/'},
            "offers": {"@type": "Offer", "price": str(PRICE), "priceCurrency": "INR", "category": "Paid", "url": url},
@@ -385,8 +415,12 @@ def page(dist_site):
                 pay=dict(api=B.PAY['api'], exam='appsc-group-2', price=PRICE, app='/appsc-group-2/') if B.PAY.get('on') else None)
     tpl = open(os.path.join(ROOT, 'tools', 'bahubali.html'), encoding='utf-8').read()
     rep = {'{{TITLE}}': esc(title), '{{DESC}}': esc(desc), '{{CANON}}': url, '{{SITE}}': B.SITE_URL, '{{HEAD_EXTRA}}': head_extra,
-           '{{HERO_SUB}}': f'{2 * TESTS_PER_PAPER} full-length mock tests for APPSC Group-II Mains — {TESTS_PER_PAPER} for Paper I and {TESTS_PER_PAPER} for Paper II — with 150 questions in every test.',
-           '{{PRICE}}': str(PRICE), '{{TOTAL_TESTS}}': str(2 * TESTS_PER_PAPER), '{{NLIVE}}': f'{nlive} test{"" if nlive == 1 else "s"}', '{{LIVE_DESC}}': esc(live_desc),
+           '{{HERO_SUB}}': (f'Two test series for APPSC Group-II: <b>Bahubali Prelims</b>, {len(pm)} Screening Test mocks, and <b>Bahubali Mains</b>, '
+                            f'{2 * TESTS_PER_PAPER} full-length tests ({TESTS_PER_PAPER} for Paper I, {TESTS_PER_PAPER} for Paper II). 150 questions in every test.') if pm else
+                           f'{2 * TESTS_PER_PAPER} full-length mock tests for APPSC Group-II Mains — {TESTS_PER_PAPER} for Paper I and {TESTS_PER_PAPER} for Paper II — with 150 questions in every test.',
+           '{{PRICE}}': str(PRICE), '{{TOTAL_TESTS}}': str(2 * TESTS_PER_PAPER + len(pm)), '{{NLIVE}}': f'{nlive + len(pre_on)} test{"" if nlive + len(pre_on) == 1 else "s"}',
+           '{{LIVE_DESC}}': esc((f'Prelims Mock{"s" if len(pre_on) > 1 else ""} {_ranges([pm.index(m) + 1 for m in pre_on])}, Mains ' if pre_on else '') + live_desc),
+           '{{SERIES_TILES}}': series_tiles, '{{PRELIMS_HTML}}': prelims_html,
            '{{BUY_BUTTON}}': buy_btn, '{{PAPERS_HTML}}': ''.join(papers_html), '{{SAMPLE_HTML}}': sample_html, '{{FAQ_HTML}}': faq_html,
            '{{WA}}': B.WHATSAPP, '{{PHONE}}': B.PHONE, '{{EMAIL}}': B.EMAIL,
            '{{CONF}}': json.dumps(conf, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')}

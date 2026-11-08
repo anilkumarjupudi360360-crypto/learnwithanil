@@ -4868,7 +4868,19 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
           f'One pass for every exam.</span>'
           + (f'<span class="etile-price">✓ Free to attempt · explanations with the ₹{PAY["pyq_price"]} All-in-One Pass</span></a>' if conf['id'] in FREE_PYQ else
              f'<span class="etile-price" data-paidtxt="✓ Unlocked · your All-in-One Pass is active">🔒 ₹{PAY["pyq_price"]} once · every exam, mock &amp; book · 12 months</span></a>'))
-    if mk:
+    if mk and BB_URL and conf['id'] == 'appsc-group-2':
+        # Anil, 8 Nov 2026: "in bahubali create 2 tiles...prelims and mains...and then in those tiles....pls add them"
+        import bahubali
+        bb_n = len(bahubali.load_series().get('tests', {}))
+        n_on = sum(1 for m in mk['mocks'] if m['live'])
+        t2 = (f'<div class="etile fx etile-dual"><span class="etile-k">02 · Mock tests</span><b>Bahubali Test Series</b>'
+              f'<span class="etile-p">Two series for Group-II, 150 questions in every test, English and Telugu, with explanations.</span>'
+              f'<span class="etile-two"><a class="etile-sub" href="{pb}mocks/"><b>Prelims</b>'
+              f'<span>{len(mk["mocks"])} Screening mocks · {n_on} live · Mock 1 free</span><span class="etile-btn">Open →</span></a>'
+              f'<a class="etile-sub" href="{BB_URL}#mains"><b>Mains</b>'
+              f'<span>{2 * bahubali.TESTS_PER_PAPER} tests · Paper I &amp; II · {bb_n} live</span><span class="etile-btn">Open →</span></a></span>'
+              f'<span class="etile-price" data-paidtxt="✓ Included in your All-in-One Pass">🔒 {INCL}</span></div>')
+    elif mk:
         t2 = (f'<a class="etile" href="{pb}mocks/"><span class="etile-k">02 · Mock tests</span><b>{esc(mk["name"])} test series</b>'
               + (f'<span class="etile-p">{esc(mk["summary"].split(". ")[0])}. {live_text(mk)}.</span>' if 'mocks' in mk else
                  f'<span class="etile-p">{mk["n"]} full-length mocks, {mk["qn"]} questions each, English &amp; Telugu, with explanations. {live_text(mk)}.</span>')
@@ -5255,6 +5267,8 @@ def mock_parts(conf, papers, app=False):
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
                 + f'<table class="facts mtab"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
                 + '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in mk['about']) + '</ul>'
+                + (f'<p class="note"><b>Bahubali Mains:</b> writing the Mains too? The same pass opens 24 full-length Group-II Mains tests '
+                   f'(12 for Paper I, 12 for Paper II). <a href="{BB_URL}#mains">Open Bahubali Mains →</a></p>' if BB_URL and conf['id'] == 'appsc-group-2' else '')
 )
     elif mk:
         mid = lambda i: f'{mk["id"]}-{i + 1}'
