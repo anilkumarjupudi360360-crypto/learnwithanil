@@ -257,6 +257,14 @@
    "live": "appsc-analyst-grade-2/"
   },
   {
+   "id": "appsc-env-engineer",
+   "cat": "ap",
+   "b": "APPSC",
+   "t": "Env. Engineer",
+   "n": "Assistant Environmental Engineer (Pollution Control Board)",
+   "live": "appsc-assistant-environmental-engineer/"
+  },
+  {
    "id": "appsc-hwo",
    "cat": "ap",
    "b": "APPSC",
