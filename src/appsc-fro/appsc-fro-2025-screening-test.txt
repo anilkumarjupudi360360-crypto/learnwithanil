@@ -1,0 +1,1543 @@
+# APPSC Forest Range Officer in A.P. Forest Service (Notification 11/2024), Screening Test (online), held 16 March 2025: Section 1 General Studies, Mental Ability & Mathematics (Q1–75, English and Telugu), Section 2 General Forestry I & II (Q76–150, English).
+# Answers: APPSC final key (APOnline master question paper, correct option ticked; final key of 30 April 2025). Explanations by Learn with Anil.
+# Left out (ignored by APPSC for all candidates): 11, 117, 124. More than one option accepted by APPSC: 41, 150.
+
+Q 1 | men | Reasoning
+A, B, C, D, L, M, N and O are sitting around a square table facing the centre of the table. Some of them are sitting at the corners while some are sitting at the exact centre of the sides. Only three people sit between D and A. D sits at the centre of one of the sides. N sits second to the left of A. O sits second to the right of C. B sits at one of the corners and is not an immediate neighbour of A. Only three people sit between O and L. B is not an immediate neighbour of M. Who sits fourth to the left of M?
+(1) A
+(2) C
+(3) L
+(4) N
+= 4
+~ Facing the centre, moving left means moving clockwise. D (a side centre) and A sit opposite each other; N is second to A's left, O is second to C's right, and B takes the corner not next to A or M. The only arrangement, clockwise, is B, D, O, M, C, A, L, N (B, O, C and L at the corners). Fourth to the left of M is the person directly opposite M, which is N.
+
+Q 2 | men | Reasoning
+J, K, L, S, T and U each scored different marks. Only two people have scored less than J. K has scored immediately more than S. Only two people have scored between S and T. L has scored more than U. No one has scored less than T. How many people have scored more than U?
+(1) One
+(2) Two
+(3) Three
+(4) Four
+= 4
+~ No one scored less than T, so T is 6th (lowest); with two people between S and T, S is 3rd from the top, and K, immediately above S, is 2nd. Only two scored less than J, so J is 4th; since L scored more than U, L is 1st and U is 5th. The order from the top is L, K, S, J, U, T, so four people (L, K, S, J) scored more than U.
+
+Q 3 | men | Reasoning
+In a certain code language,
+A ¥ B means ‘A is the father of B’,
+A ≠ B means ‘A is the brother of B’,
+A ₹ B means ‘A is the daughter of B’,
+A £ B means ‘A is the wife of B’.
+Based on the above, how is T related to R if ‘T £ I ≠ G ₹ E ¥ R’?
+(1) Father's sister
+(2) Brother's wife
+(3) Father's brother's wife
+(4) Brother's wife's mother
+= 2
+~ T £ I means T is the wife of I, I ≠ G means I is the brother of G, G ₹ E means G is the daughter of E, and E ¥ R means E is the father of R. G and R are both children of E, so I, being G's brother, is also R's brother. T, the wife of I, is therefore R's brother's wife.
+
+Q 4 | men | Reasoning
+HOLD is related to KQOF in a certain way based on the English alphabetical order. In the same way, TWXL is related to WYAN. To which of the following options is CCGR related, following the same logic?
+(1) FEJT
+(2) FJFR
+(3) FTRE
+(4) DESW
+= 1
+~ The letters move forward alternately by 3 and 2 places: H+3 = K, O+2 = Q, L+3 = O, D+2 = F; likewise T+3 = W, W+2 = Y, X+3 = A, L+2 = N. Applying the same rule to CCGR: C+3 = F, C+2 = E, G+3 = J, R+2 = T, which gives FEJT.
+
+Q 5 | men | Reasoning
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+All pencils are rods.
+All pencils are trays.
+All bats are trays.
+Conclusions:
+(I): All bats are rods.
+(II): Some trays are rods.
+(1) Only conclusion (I) follows
+(2) Only conclusion (II) follows
+(3) Neither conclusion (I) nor (II) follows
+(4) Both conclusions (I) and (II) follow
+= 2
+~ Every pencil is both a rod and a tray, so the trays that are pencils are also rods; hence 'Some trays are rods' (II) follows. Bats are linked only to trays, and nothing connects bats with rods, so 'All bats are rods' (I) does not follow. Only conclusion II follows.
+
+Q 6 | mth | Statistics & Probability
+If the mode of a dataset is 85, and the mean is 55, then which of the following statements is true?
+(1) The median of the dataset is 65, and the dataset is positively skewed.
+(2) The median of the dataset is 65, and the dataset is negatively skewed.
+(3) The median of the dataset is 45, and the dataset is negatively skewed.
+(4) The median of the dataset is 45, and the dataset is positively skewed.
+= 2
+~ By the empirical relation Mode = 3 Median − 2 Mean: 85 = 3 Median − 110, so Median = 195 ÷ 3 = 65. Since Mean (55) < Median (65) < Mode (85), the longer tail lies on the left (lower values), so the distribution is negatively skewed.
+
+Q 7 | men | Arithmetic
+Considering the following statements, which of the given options is correct?
+Statement I: If two buses leave a station at the same time and operate at different regular intervals (frequencies), the time when they will meet again is the LCM of their frequencies.
+Statement II: The LCM of two or more numbers is always greater than the largest number in the set.
+(1) Both Statements I and II are true.
+(2) Both Statements I and II are false.
+(3) Statement I is true, but Statement II is false.
+(4) Statement I is false, but Statement II is true.
+= 3
+~ Statement I is true: buses that start together next leave together after a time equal to the LCM of their intervals (e.g., every 12 and 18 minutes → together again after 36 minutes). Statement II is false: the LCM can equal the largest number, e.g., LCM(4, 8) = 8, so it is not always greater.
+
+Q 8 | mth | Statistics & Probability
+A group of students conducted a survey of 22 households in a neighbourhood, which resulted in the following frequency table showing the number of family members per household.
+Family Size | 1-3 | 3-5 | 5-7 | 7-9 | 9-11
+Number of Families | 4 | 6 | 7 | 2 | 3
+What is the mode of this data? ((Give your answer correct to 2 decimal places)
+(1) 5.33
+(2) 4.66
+(3) 3.33
+(4) 3.01
+= 1
+~ The modal class is 5-7 (highest frequency f₁ = 7), with f₀ = 6 before it, f₂ = 2 after it, lower limit l = 5 and width h = 2. Mode = l + [(f₁ − f₀) ÷ (2f₁ − f₀ − f₂)] × h = 5 + [1 ÷ (14 − 6 − 2)] × 2 = 5 + 2/6 = 5.33.
+
+Q 9 | mth | Geometry & Mensuration
+A cuboid has sides in the ratio 16 : 9 : 12. A cube has volume equal to the cuboid. The ratio of their surface areas is ______.
+(1) 36 : 35
+(2) 35 : 34
+(3) 34 : 33
+(4) 37 : 36
+= 4
+~ Let the cuboid be 16k × 9k × 12k; its volume is 1728k³, so the cube of equal volume has side 12k. Cuboid surface area = 2(144 + 108 + 192)k² = 888k². Cube surface area = 6 × 144k² = 864k². Ratio = 888 : 864 = 37 : 36.
+
+Q 10 | mth | Geometry & Mensuration
+A cone with volume 9π cubic units is made having curved surface area 9√2π square units. On the basis of the given information, which of the following statements is/are correct?
+Statement 1: The flat surface area of the cone is less than 9π square units.
+Statement 2: The diameter and the slant length are in the ratio √2 : 1.
+(1) Only Statement 1 is correct.
+(2) Only Statement 2 is correct.
+(3) Both the Statements are correct.
+(4) None of the Statements is correct.
+= 2
+~ The volume πr²h/3 = 9π gives r²h = 27 and the curved area πrl = 9√2π gives rl = 9√2; squaring and putting h = 27/r² gives r⁶ − 162r² + 729 = 0, whose root r² = 9 gives r = h = 3, l = 3√2. Then the flat (base) area πr² = 9π is not less than 9π (Statement 1 wrong), and diameter : slant = 6 : 3√2 = √2 : 1 (Statement 2 correct). (The other root, r² ≈ 5.56, would make only Statement 1 true; the key uses r = 3.)
+
+Q 12 | mth | Geometry & Mensuration
+A cylindrical water tank has an internal diameter of 2.8 metres and a height of 5 metres. The tank is filled with water up to 80% of its capacity. Due to a leak, water is being drained at a constant rate of 250 litres per hour.
+Based on this, the following statements are made:
+Statement I: The water currently stored in the tank is 24,640 litres.
+Statement II: The time it takes to drain all the water from the tank is 98.56 hours.
+(Consider π = 22/7)
+Which of the following is true regarding these statements?
+(1) Both Statements I and II are true.
+(2) Both Statements I and II are false.
+(3) Statement I is true, but Statement II is false.
+(4) Statement I is false, but Statement II is true.
+= 1
+~ Radius = 1.4 m, so capacity = (22/7) × 1.4² × 5 = 30.8 m³ = 30,800 litres. At 80%, the water stored = 0.8 × 30,800 = 24,640 litres, so Statement I is true. Draining at 250 litres per hour takes 24,640 ÷ 250 = 98.56 hours, so Statement II is also true.
+
+Q 13 | mth | Trigonometry
+Find the value of the given expression.
+[sin⁴(t) − cos⁴(t)] / [sin(t) × cos(t)] × tan(t) / [tan²(t) − 1]
+(1) −1
+(2) 1
+(3) 0.5
+(4) −0.5
+= 2
+~ sin⁴t − cos⁴t = (sin²t − cos²t)(sin²t + cos²t) = sin²t − cos²t. Also tan t / (tan²t − 1) = (sin t/cos t) × cos²t / (sin²t − cos²t) = sin t cos t / (sin²t − cos²t). Multiplying: [(sin²t − cos²t)/(sin t cos t)] × [sin t cos t/(sin²t − cos²t)] = 1.
+
+Q 14 | mth | Algebra
+The roots of the equation ax² − ax + b = 0 are a₁ and a₂. On the basis of the given information, which of the following statements is/are true?
+Statement 1: The roots are equal if a = 12 and b = 3.
+Statement 2: The roots are a₁ = 3 and a₂ = −3 if b = −9a.
+(1) Only Statement 1 is true.
+(2) Only Statement 2 is true.
+(3) Both the Statements are true.
+(4) None of the Statements is true.
+= 1
+~ The discriminant of ax² − ax + b = 0 is a² − 4ab. With a = 12 and b = 3 it is 144 − 144 = 0, so the roots are equal (both ½): Statement 1 is true. The sum of the roots is a/a = 1 for every a, but 3 + (−3) = 0; with b = −9a the equation is x² − x − 9 = 0, whose roots are (1 ± √37)/2. Statement 2 is false.
+
+Q 15 | sci | Biology & Health
+Which of the following statements about Nafithromycin is/are correct?
+1: Nafithromycin was officially launched on 20 November 2024 by Union Minister Dr. Jitendra Singh.
+2: It was developed by Sun Pharma with support from the Indian Council of Medical Research (ICMR).
+3: It is marketed as 'Miqnaf' and is used to treat Community-Acquired Bacterial Pneumonia (CABP) caused by drug-resistant bacteria.
+(1) Only 1
+(2) Only 1 and 3
+(3) Only 3
+(4) 1, 2 and 3
+= 2
+~ Nafithromycin, sold as 'Miqnaf', was launched by Union Minister Dr Jitendra Singh on 20 November 2024 as India's first indigenous antibiotic for community-acquired bacterial pneumonia caused by drug-resistant bacteria, so Statements 1 and 3 are correct. Statement 2 is wrong: it was developed by Wockhardt with support from BIRAC (Department of Biotechnology), not by Sun Pharma with ICMR.
+
+Q 16 | sci | Biology & Health
+In December 2024, where was India's first successful gene therapy for Hemophilia A conducted by the Centre for Stem Cell Research (CSCR)?
+(1) Christian Medical College, Vellore
+(2) All India Institute of Medical Sciences, New Delhi
+(3) Tata Memorial Hospital, Mumbai
+(4) Post Graduate Institute of Medical Education and Research, Chandigarh
+= 1
+~ The Centre for Stem Cell Research (CSCR), a unit of the Department of Biotechnology's inStem located on the campus of Christian Medical College, Vellore, carried out India's first human gene-therapy trial for severe haemophilia A; its success was announced in December 2024. A lentiviral vector was used to insert a working factor VIII gene into the patients' own blood stem cells, which then began producing the missing clotting factor.
+
+Q 17 | sci | Science & Technology
+Which of the following statements about DRDO's Air Independent Propulsion (AIP) system is correct?
+(1) It is being developed in partnership with a Russian defence firm and the Government of India.
+(2) The system enables submarines to remain submerged for extended durations without surfacing.
+(3) The incumbent Prime Minister of India inaugurated the steel-cutting event for its production at L&T Hazira in December 2024.
+(4) DRDO's Air Independent Propulsion (AIP) system is designed for nuclear-powered submarines to enhance their endurance.
+= 2
+~ An AIP system lets a conventional (diesel-electric) submarine produce power without atmospheric oxygen, so it can stay submerged far longer without surfacing to recharge batteries. DRDO's fuel-cell AIP was developed indigenously by its Naval Materials Research Laboratory, with L&T as industry partner, for the Kalvari (Scorpene) class; nuclear submarines do not need AIP. In December 2024 the Defence Ministry signed a contract with Mazagon Dock for the AIP plug.
+
+Q 18 | sci | Biology & Health
+Who is the manufacturer of India's first indigenous HPV vaccine, Cervavac?
+(1) Serum Institute of India
+(2) Biological E
+(3) Cadila Healthcare
+(4) Panacea Biotec
+= 1
+~ Cervavac, India's first indigenous quadrivalent vaccine against human papillomavirus (types 6, 11, 16 and 18), the main cause of cervical cancer, was developed and is manufactured by the Serum Institute of India, Pune, with support from the Department of Biotechnology and BIRAC. Biological E, Cadila (Zydus) and Panacea Biotec are other Indian vaccine makers but did not make Cervavac.
+
+Q 19 | cur | Sports & Awards
+Which of the following statements is/are correct?
+1. Padma Shri was awarded to OP Bhardwaj and Devendra Jhajharia in the sports category.
+2. Padma Bhushan was awarded to Satyapal Singh for his contributions to Indian hockey.
+(1) Only 1 is correct
+(2) Only 2 is correct
+(3) Both 1 and 2 are correct
+(4) Both 1 and 2 are incorrect
+= 4
+~ In the Padma Awards 2025, the sports honours were the Padma Bhushan for hockey goalkeeper P.R. Sreejesh and the Padma Shri for R. Ashwin, I.M. Vijayan, para-archer Harvinder Singh and para-athletics coach Satyapal Singh. So Satyapal Singh got the Padma Shri as a para coach, not the Padma Bhushan for hockey. OP Bhardwaj and Devendra Jhajharia were not on the list; Jhajharia had received the Padma Bhushan in 2022. Both statements are incorrect.
+
+Q 20 | cur | National
+Which of the following statements about RMBS Development Company Limited (RDCL) is/are correct?
+1: The Reserve Bank of India (RBI) has granted a Certificate of Registration to it to commence operations in January 2025.
+2: It was established by the National Housing Bank (NHB).
+(1) Only 1 is correct
+(2) Only 2 in correct
+(3) Both 1 and 2 are correct
+(4) Both 1 and 2 are incorrect
+= 3
+~ RMBS Development Company Ltd (RDCL) was set up by the National Housing Bank, its largest shareholder, together with banks, housing finance companies and insurers, to develop India's residential mortgage-backed securities market. The RBI granted it a Certificate of Registration on 23 January 2025 to commence operations. Both statements are correct.
+
+Q 21 | sci | Biology & Health
+Consider the following two statements and select the correct option.
+Statement I: The axial skeleton consists of the skull, vertebral column, rib cage and sternum, providing structural support and protection to vital organs.
+Statement II: The tibia is the longest and strongest bone in the human body, located in the upper arm.
+(1) Statement I is true, but statement II is false.
+(2) Statement I is false, but statement II is true.
+(3) Both statement I and statement II are false.
+(4) Both statement I and statement II are true.
+= 1
+~ The axial skeleton (80 bones) forms the body's main axis: skull, vertebral column, sternum and ribs, protecting the brain, spinal cord, heart and lungs, so Statement I is true. Statement II is false: the femur (thigh bone) is the longest and strongest bone; the tibia is the shin bone of the lower leg, and the bone of the upper arm is the humerus.
+
+Q 22 | sci | Chemistry
+Consider the following two statements and select the correct option.
+Statement I: The Haber process is an industrial method used to produce ammonia by reacting nitrogen and hydrogen gases under high temperature and pressure in the presence of an iron catalyst.
+Statement II: The Contact process is an important industrial method used to manufacture sulphuric acid, which involves the catalytic oxidation of sulphur dioxide to sulphur trioxide using vanadium pentoxide (V₂O₅) as a catalyst.
+(1) Statement I is true, but statement II is false.
+(2) Statement I is false, but statement II is true.
+(3) Both statement I and statement II are true.
+(4) Both statement I and statement II are false.
+= 3
+~ Haber process: N₂ + 3H₂ ⇌ 2NH₃ at about 200 atm and 450 °C over an iron catalyst, so Statement I is true. Contact process: SO₂ is oxidised to SO₃ over vanadium pentoxide (V₂O₅); the SO₃ is absorbed in sulphuric acid to form oleum, which is diluted to give H₂SO₄, so Statement II is also true.
+
+Q 23 | sci | Physics
+Consider the following two statements and select the correct option.
+Statement I: In a given medium, the speed of sound remains constant regardless of temperature changes.
+Statement II: Sound waves are longitudinal waves, meaning the particles of the medium vibrate parallel to the direction of wave propagation.
+(1) Statement I is true, but statement II is false.
+(2) Statement I is false, but statement II is true.
+(3) Both Statement I and statement II are true.
+(4) Both Statement I and statement II are false.
+= 2
+~ Statement I is false: the speed of sound in a medium depends on its temperature; in air it rises by about 0.6 m/s for every 1 °C (about 331 m/s at 0 °C and 343 m/s at 20 °C). Statement II is true: sound travels as longitudinal waves of compressions and rarefactions, in which the particles vibrate parallel to the direction of propagation.
+
+Q 24 | geo | Environment & Ecology
+Which city in India recorded the highest percentage reduction in PM₁₀ concentrations between the fiscal years 2017-18 and 2023-24, as per the Ministry of Environment, Forest and Climate Change?
+(1) Bareilly
+(2) Firozabad
+(3) Varanasi
+(4) Dehradun
+= 3
+~ MoEFCC data on the 130 cities covered by the National Clean Air Programme (released in November 2024) show Varanasi's annual average PM₁₀ falling from 230 µg/m³ in 2017-18 to 73 µg/m³ in 2023-24, a 68% reduction, the highest. Bareilly (61%), Firozabad (59%) and Dehradun (56%) also improved, but by less.
+
+Q 25 | cur | National
+Where was the 2nd AIIMS Oncology Conclave 2025 inaugurated?
+(1) AIIMS Delhi
+(2) AIIMS Bhubaneswar
+(3) AIIMS Jhajjar (NCI)
+(4) AIIMS Bhopal
+= 3
+~ Union Health Minister J.P. Nadda inaugurated the second AIIMS Oncology Conclave 2025 in February 2025 at the National Cancer Institute (NCI) of AIIMS at Jhajjar, Haryana, the cancer-care campus of AIIMS New Delhi. At the event he also announced 720 new posts for NCI Jhajjar.
+
+Q 26 | pol | Governance & Schemes
+Which scheme reflects the Government of India's commitment to eliminating manual cleaning of sewers and septic tanks as of January 2025?
+(1) Swachh Bharat Mission
+(2) NAMASTE Scheme
+(3) Atal Mission for Rejuvenation and Urban Transformation
+(4) PMAY Scheme
+= 2
+~ NAMASTE (National Action for Mechanised Sanitation Ecosystem), run by the Ministry of Social Justice and Empowerment with the Ministry of Housing and Urban Affairs, aims at zero deaths in sanitation work and at no sanitation worker coming into direct contact with human faecal matter, through mechanisation, safety gear, training and health cover. Swachh Bharat, AMRUT and PMAY deal with sanitation coverage, urban infrastructure and housing.
+
+Q 27 | cur | Sports & Awards
+Which of the following statements are correct regarding the Padma Awards as of January 2025?
+1. Any Indian National can receive the Padma Awards.
+2. Non-Resident Indians (NRIs) and Overseas Citizens of India (OCIs) are eligible for Padma Awards.
+3. Foreign nationals are barred from receiving Padma Awards.
+(1) Only 1 and 2
+(2) 1, 2 and 3
+(3) Only 2 and 3
+(4) Only 1 and 3
+= 1
+~ The Padma Awards are open to all persons without distinction of race, occupation, position or sex, so Indian nationals are eligible (1), and NRIs and OCIs can also be honoured (2). Statement 3 is wrong: foreigners are not barred; the award lists carry a separate 'Foreigner/NRI/PIO/OCI' category, and foreign nationals are regularly honoured. Hence only 1 and 2 are correct.
+
+Q 28 | eco | Indian Economy
+As per the announcement in the Union Budget 2025-26, what is the revised Foreign Direct Investment (FDI) limit for the insurance sector, subject to the condition that the entire premium is invested in India?
+(1) 74%
+(2) 90%
+(3) 100%
+(4) 80%
+= 3
+~ In the Union Budget 2025-26 (presented on 1 February 2025), the Finance Minister announced raising the FDI limit for the insurance sector from 74% to 100% for companies that invest their entire premium in India. The previous increase, from 49% to 74%, was made in 2021.
+
+Q 29 | cur | National
+Match the following books with their respective authors.
+Books | Authors
+1) Dalai Lama’s Secret to Happiness | A) Dr. Dinesh Shahra
+2) Because of This: A History of the Indo-Pak Air War | B) Air Marshal Vikram Singh (Retd)
+3) Silent Weapons, Deadly Secrets: Unveiling the Bioweapons Arms Race | C) Dr. Mrinmayee Bhushan
+(1) 1-A, 2-B, 3-C
+(2) 1-B, 2-A, 3-C
+(3) 1-A, 2-C, 3-B
+(4) 1-C, 2-B, 3-A
+= 1
+~ 'Dalai Lama's Secret to Happiness' is by Dr Dinesh Shahra (1-A); 'Because of This: A History of the Indo-Pak Air War', on the air war of December 1971, is by Air Marshal Vikram Singh (Retd) (2-B); 'Silent Weapons, Deadly Secrets: Unveiling the Bioweapons Arms Race' is by Dr Mrinmayee Bhushan (3-C). Hence 1-A, 2-B, 3-C.
+
+Q 30 | cur | AP Affairs
+Which of the following events brought Saraswathi Malluvalasa of Andhra Pradesh into the limelight for her sustainability efforts?
+(1) COP 28
+(2) Sustaina India 2025
+(3) Green India Summit
+(4) Climate Action Forum 2024
+= 2
+~ Saraswathi Malluvalasa, a millet farmer from Vizianagaram district, Secretary of SABALA and founder of the Arogya Millet Sisters Network, was featured at Sustaina India 2025, a sustainability art exhibition held at the STIR gallery in New Delhi in February 2025 alongside the India Art Fair. Her installation highlighted two decades of reviving millet cultivation with women farmers.
+
+Q 31 | cur | AP Affairs
+Consider the following statements about the NTR Vaidya Seva Scheme Model of Andhra Pradesh and select the correct option.
+Statement 1: The new insurance model will provide health coverage of up to ₹25 lakh per family annually.
+Statement 2: Both public and private insurers will be utilised under this model to ensure broader health coverage for families.
+(1) Only Statement 1 is correct.
+(2) Only Statement 2 is correct.
+(3) Both Statement 1 and Statement 2 are correct.
+(4) Both Statement 1 and Statement 2 are incorrect.
+= 3
+~ Andhra Pradesh announced a hybrid model for the NTR Vaidya Seva scheme in January 2025, offering free treatment of up to ₹25 lakh per family a year. Claims below ₹2.5 lakh are to be settled through insurance companies (public and private insurers), and costlier treatment up to ₹25 lakh is borne by the NTR Vaidya Seva Trust. Both statements are correct.
+
+Q 32 | cur | AP Affairs
+Consider the following statements regarding the AP Municipal Laws Amendment Bill, 2024 and select the correct option.
+Statement 1: The Bill was introduced by Municipal Minister P Narayana and passed without debate in the Assembly, reversing the 1994 legislation that barred individuals with more than two children from contesting urban local body elections.
+Statement 2: The new legislation aims to address the state's declining fertility rate and encourage population growth, as highlighted by Chief Minister N Chandrababu Naidu.
+(1) Only Statement 1 is correct.
+(2) Only Statement 2 is correct.
+(3) Both Statement 1 and Statement 2 are correct.
+(4) Both Statement 1 and Statement 2 are incorrect.
+= 3
+~ In November 2024 Municipal Administration Minister P. Narayana introduced the AP Municipal Laws (Amendment) Bill, 2024, which the Assembly passed without debate. It removed the 1994 bar on people with more than two children contesting urban local body elections. Chief Minister N. Chandrababu Naidu had argued that the state's fertility rate had fallen below replacement level and that larger families should be encouraged. Both statements are correct.
+
+Q 33 | cur | AP Affairs
+Which of the following statements regarding Andhra Pradesh’s role in energy conservation during the National Energy Conservation Week (14-20 December 2024) are correct?
+Statements:
+1. Andhra Pradesh’s School Education Department has collaborated with the Special Chief Secretary of Energy to involve students in energy conservation programmes.
+2. A Statewide short video competition, titled ‘Bright Ideas and Brighter Future’, has been introduced for students of classes 8 to 10 to promote awareness on energy conservation.
+3. The National Energy Conservation Week, observed from 14 to 20 December 2024, focuses on climate change mitigation, reducing GHG emissions, and promoting localised energy efficiency solutions.
+(1) Only 1 and 2
+(2) Only 2 and 3
+(3) Only 1 and 3
+(4) 1, 2 and 3
+= 4
+~ For National Energy Conservation Week (14–20 December 2024), Andhra Pradesh's School Education Department worked with the Special Chief Secretary (Energy) to involve students, and a statewide short video competition titled 'Bright Ideas and Brighter Future' was launched for classes 8 to 10. The Bureau of Energy Efficiency framed the week around climate change mitigation, cutting greenhouse gas emissions and region-specific energy-efficiency action plans. All three statements are correct.
+
+Q 34 | ih | Modern India & Freedom Struggle
+Birsa Munda, an Indian tribal independence activist and folk hero, led a tribal religious millenarian movement in which of the following present-day states?
+(1) Chhattisgarh
+(2) Jharkhand
+(3) Odisha
+(4) Madhya Pradesh
+= 2
+~ Birsa Munda (1875–1900) led the Munda Ulgulan ('Great Tumult') of 1899–1900 in the Chotanagpur region around Ranchi, now in Jharkhand. His followers revered him as 'Dharti Aba' and a prophet, which gave the movement its religious, millenarian character against British rule, landlords and moneylenders. His birth anniversary, 15 November, is Jharkhand's foundation day and Janjatiya Gaurav Divas.
+
+Q 35 | ih | Modern India & Freedom Struggle
+Who founded the Satyashodhak Samaj, an organisation dedicated to the upliftment of lower castes and social equality?
+(1) Swami Vivekananda
+(2) Jyotiba Phule
+(3) Dr. BR Ambedkar
+(4) MG Ranade
+= 2
+~ Jyotiba (Jyotirao) Phule founded the Satyashodhak Samaj ('Society of Truth Seekers') at Pune on 24 September 1873 to free the lower castes from Brahminical domination and to promote education and social equality. Vivekananda founded the Ramakrishna Mission (1897), Ambedkar the Bahishkrit Hitakarini Sabha (1924), and Ranade was a leader of the Prarthana Samaj.
+
+Q 36 | ih | Modern India & Freedom Struggle
+Read the following statements carefully and identify the correct one(s).
+Statement I: Bal Gangadhar Tilak was a nationalist leader who founded the Indian Home Rule League in 1914 and served as its president.
+Statement II: In 1916, Tilak played a key role in concluding the Lucknow Pact with Mohammed Ali Jinnah, which aimed at fostering Hindu-Muslim unity in the nationalist movement.
+(1) Statement I is true, but Statement II is false.
+(2) Statement I is false, but Statement II is true.
+(3) Both statements are false.
+(4) Both statements are true.
+= 2
+~ Statement I is false: Tilak founded the Indian Home Rule League at Belgaum in April 1916, not 1914, with Joseph Baptista as president and N.C. Kelkar as secretary; Annie Besant started her league in September 1916. Statement II is true: at the 1916 Lucknow sessions, Tilak and Jinnah brought the Congress and the Muslim League together in the Lucknow Pact, accepting separate electorates for the sake of Hindu-Muslim unity.
+
+Q 37 | ih | Modern India & Freedom Struggle
+Read the following statements carefully and identify the correct one(s).
+Statement I: The Tamar Revolt was a series of uprisings by the Oraon tribes of Tamar, India, against the British government from 1789 to 1832.
+Statement II: The revolt was led by Bhola Nath Sahay and other tribal leaders.
+(1) Statement I is true, but Statement II is false.
+(2) Statement I is false, but Statement II is true.
+(3) Both statements are false.
+(4) Both statements are true.
+= 4
+~ The Tamar revolt was a series of uprisings (1789–1832) by the Oraon tribals of Tamar in the Chotanagpur region (now Jharkhand) against British rule and the outsider landlords it backed, who had taken over tribal land. Standard lists of tribal revolts name Bhola Nath Sahay among its leaders. Both statements are therefore true.
+
+Q 38 | ih | Modern India & Freedom Struggle
+Read the given statements carefully and identify the correct ones.
+Statements:
+I: The Indian Rebellion of 1857 was a widespread, but an unsuccessful uprising against British rule in India.
+II: The rebellion began in Meerut by Indian troops (sepoys) serving in the British East India Company and later spread to cities like Delhi, Agra, Kanpur, and Lucknow.
+III: Western historians have traditionally referred to the rebellion as the 'Indian Mutiny' or the 'Sepoy Mutiny', while in India, it is often called the 'First War of Independence'.
+(1) Statement I is true, but statements II and III are false.
+(2) Statement II is false, but statements I and III are true.
+(3) All the statements are false.
+(4) All the statements are true.
+= 4
+~ All three are correct. The revolt of 1857 spread across north and central India but failed to end British rule. It broke out at Meerut on 10 May 1857 among the Company's sepoys and spread to Delhi, Agra, Kanpur, Lucknow and other centres. British writers called it the 'Sepoy Mutiny' or 'Indian Mutiny', while V.D. Savarkar (1909) and later Indian writers called it the First War of Independence.
+
+Q 39 | ih | Modern India & Freedom Struggle
+Match the Leaders/Movements of the Extremist Phase in Column A with their corresponding details in Column B.
+Column A (Leaders/Movements) | Column B (Details)
+1. Partition of Bengal (1905) | A. Annulled in 1911 due to mass protests
+2. Bal Gangadhar Tilak | B. 'Swaraj is my birthright' slogan
+3. Surat Split (1907) | C. Division between Moderates and Extremists
+4. Lala Lajpat Rai | D. Led protests against the Punjab repressions
+5. Home Rule Movement (1916) | E. Led by Tilak and Annie Besant
+(1) 1 → A, 2 → B, 3 → C, 4 → D, 5 → E
+(2) 1 → B, 2 → A, 3 → C, 4 → D, 5 → E
+(3) 1 → A, 2 → B, 3 → C, 4 → E, 5 → D
+(4) 1 → A, 2 → C, 3 → B, 4 → D, 5 → E
+= 1
+~ Curzon's Partition of Bengal (1905) provoked the Swadeshi agitation and was annulled at the Delhi Durbar of 1911. Tilak gave the slogan 'Swaraj is my birthright and I shall have it', and the Surat session (1907) split the Congress into Moderates and Extremists. Lala Lajpat Rai led the 1907 Punjab agitation against repressive colonisation laws and was deported to Mandalay, while the Home Rule Leagues of 1916 were led by Tilak and Annie Besant.
+
+Q 40 | ih | Andhra History
+In which year did NT Rama Rao's Telugu Desam Party (TDP) first break the Indian National Congress's (INC) long-standing dominance in Andhra Pradesh by winning the state elections?
+(1) 1978
+(2) 1983
+(3) 1989
+(4) 1994
+= 2
+~ NT Rama Rao founded the Telugu Desam Party on 29 March 1982 and, within a year, won the January 1983 Assembly election with a sweeping majority. He became Chief Minister on 9 January 1983, heading the first non-Congress government in Andhra Pradesh. In 1978 and 1989 the Congress won, and 1994 was the TDP's later return to power.
+
+Q 41 | ih | Andhra History
+Which of the following statements regarding Andhra Pradesh during colonial rule are correct?
+1. The British annexed the Northern Circars region from the French in the late 18th century and brought it under the Madras Presidency.
+2. The 1857 Revolt had no significant impact in Andhra Pradesh, as there were no major uprisings in the region.
+3. The Non-Cooperation Movement and Civil Disobedience Movement saw active participation from leaders and people in Andhra Pradesh.
+4. The Andhra Mahasabha played a crucial role in mobilising people against British rule and later contributed to the formation of the Andhra State.
+(1) Only 1 and 3
+(2) Only 2 and 4
+(3) Only 1, 3, and 4
+(4) All 1, 2, 3 and 4
+= 3,4
+~ APPSC accepted both options 3 and 4. Statements 1, 3 and 4 are correct: the British took the Northern Circars after ousting the French (1759) and secured them by the Mughal grant of 1765, placing them under Madras; Andhra took active part in Non-Cooperation and Civil Disobedience; and the Andhra Mahasabha's movement led to Andhra State (1953). Statement 2 is arguable, as Andhra had no major 1857 rising but saw minor revolts, so option 4 was also accepted.
+
+Q 42 | ih | Andhra History
+Which of the following statements about the social history of Andhra Pradesh is/are correct?
+A) The social structure of ancient Andhra Pradesh was predominantly influenced by the Vedic caste system.
+B) The Satavahana dynasty played a crucial role in promoting Buddhism in the region.
+C) Andhra Pradesh was traditionally a matrilineal society, where lineage and inheritance were passed through the mother's side.
+D) The major language spoken in the region historically was Sanskrit, which was used in all social and religious practices.
+(1) A and B only
+(2) B and C only
+(3) A, B, and D only
+(4) B only
+= 1
+~ The Satavahanas were Brahmanical rulers (Gautamiputra Satakarni claims he stopped the mixing of varnas), so Vedic varna ideas shaped society, and the dynasty and its queens also patronised Buddhism with grants to monasteries and stupas such as Amaravati; so A and B are correct. C is wrong: names like 'Gautamiputra' only cite the mother's gotra, while succession and inheritance were patrilineal. D is wrong: inscriptions were in Prakrit and the people spoke early Telugu, not Sanskrit.
+
+Q 43 | ih | Andhra History
+Which of the following statements about the cultural history of Andhra Pradesh are correct?
+a) Kuchipudi is a classical dance form that originated in the Krishna district of Andhra Pradesh.
+b) The Amaravati Stupa was an important center for the propagation of Jainism in South India.
+c) The Kakatiya dynasty contributed significantly to the architectural heritage of the region, including the construction of the Warangal Fort.
+d) The Telugu language is known for its classical literary traditions, which have evolved from the ancient Dravidian languages.
+(1) Only statements a and b
+(2) Only statements b and c
+(3) Only statements a, c, and d
+(4) All a, b, c and d
+= 3
+~ Kuchipudi takes its name from Kuchipudi village in Krishna district, and the Kakatiyas built Warangal Fort with its famous Kirti Toranas. Telugu is a Dravidian language with a long literary tradition and was given classical language status in 2008. Statement b is wrong because the Amaravati Stupa was a great Buddhist centre, not a Jain one.
+
+Q 44 | geo | Indian Geography
+The Konkan Coast is part of which coastal region?
+(1) Eastern Coastal Plains
+(2) Malabar Coast
+(3) Northern Plains
+(4) Western Coastal Plains
+= 4
+~ The Western Coastal Plains run from Gujarat to Kerala and are divided into the Kachchh–Kathiawar coast, the Konkan coast (Daman/Mumbai to Goa), the Kannad plain and the Malabar coast, so the Konkan Coast is part of the Western Coastal Plains. The Malabar Coast is another segment of the same plains, the Eastern Coastal Plains lie along the Bay of Bengal, and the Northern Plains are not coastal.
+
+Q 45 | geo | Indian Geography
+Consider the following statements and select the correct option.
+Statement I: Kerala is the first Indian state to receive the southwest monsoon in early June.
+Statement II: The Bay of Bengal branch causes heavy rainfall in Meghalaya.
+(1) Only statement I is correct
+(2) Only statement II is correct
+(3) Both statements are correct
+(4) None of the statements is correct
+= 3
+~ Both statements are correct. The southwest monsoon normally sets in over Kerala around 1 June, making it the first state to receive it. The Bay of Bengal branch moves north-east, and the funnel-shaped Garo–Khasi hills of Meghalaya trap its moist winds, giving very heavy rain at Mawsynram and Cherrapunji (Sohra), among the wettest places on Earth.
+
+Q 46 | geo | Indian Geography
+Which of the following statements about the Western Coastal Plains are correct?
+I. They are narrow and run parallel to the Western Ghats.
+II. They have well-developed deltas formed by rivers.
+III. They include the Konkan, Kannad, and Malabar coasts.
+(1) Only I and II are correct
+(2) Only II and III are correct
+(3) Only I and III are correct
+(4) All I, II, and III are correct
+= 3
+~ The Western Coastal Plains are a narrow strip between the Western Ghats and the Arabian Sea, divided into the Konkan, Kannad and Malabar coasts (with Kachchh–Kathiawar in the north), so I and III are correct. II is wrong: the west-flowing rivers are short and swift and form estuaries, not deltas; large deltas (Mahanadi, Godavari, Krishna, Kaveri) are a feature of the Eastern Coastal Plains.
+
+Q 47 | geo | Indian Geography
+Match the following climatic phenomena with their respective characteristics related to India.
+A. Southwest Monsoon | 1. Causes drought-like conditions in parts of India during certain years
+B. Northeast Monsoon | 2. Brings winter and post-monsoon rainfall
+C. Western Disturbances | 3. Main source of rainfall for the Indian subcontinent during June-September
+D. El Niño Effect | 4. Responsible for heavy rainfall in Tamil Nadu during October-December
+(1) A-1, B-4, C-2, D-3
+(2) A-4, B-2, C-3, D-1
+(3) A-3, B-4, C-2, D-1
+(4) A-1, B-3, C-2, D-4
+= 3
+~ The southwest monsoon (June–September) gives most of India's annual rainfall (A-3). The northeast monsoon gives Tamil Nadu its main rain in October–December (B-4). Western disturbances from the Mediterranean bring winter rain and snow to north-west India (C-2), and El Niño years, with abnormally warm Pacific waters, weaken the monsoon and often cause drought (D-1).
+
+Q 48 | geo | Indian Geography
+Match the Coastal Region with its Key Characteristics.
+Column A (Coastal Region) | Column B (Key Characteristics)
+A. Konkan Coast | 1. Part of the Eastern Coastal Plains covering Andhra Pradesh
+B. Malabar Coast | 2. Stretches between Goa and Daman
+C. Coromandel Coast | 3. Known for extensive backwaters and lagoons
+D. Northern Circars | 4. Lies between the Eastern Ghats and Bay of Bengal
+(1) A-2, B-4, C-1, D-3
+(2) A-2, B-3, C-4, D-1
+(3) A-1, B-4, C-3, D-2
+(4) A-4, B-2, C-1, D-3
+= 2
+~ The Konkan coast stretches between Daman and Goa (A-2), and the Malabar coast of Kerala is known for its backwaters (kayals) and lagoons (B-3). The Coromandel coast of Tamil Nadu lies between the Eastern Ghats and the Bay of Bengal (C-4), while the Northern Circars are the part of the Eastern Coastal Plains covering coastal Andhra Pradesh (D-1).
+
+Q 49 | geo | AP Geography
+Which of the following islands is situated in the midst of the Krishna River at Vijayawada, which is considered as one of the largest river islands in India?
+(1) Diviseema Island
+(2) Bhavani Island
+(3) Konaseema Island
+(4) Venadu Island
+= 2
+~ Bhavani Island lies in the Krishna River near the Prakasam Barrage at Vijayawada; spread over about 130 acres, it is one of the largest river islands in India and is developed as a tourist spot. Diviseema is the delta region at the mouth of the Krishna, and Konaseema is the Godavari delta between its branches, so neither lies at Vijayawada.
+
+Q 50 | geo | AP Geography
+Which of the following statements regarding the ‘ICAR-CTRI Sulakshana’ is/are correct?
+A. It is a high yielding tobacco variety grown in black soils and southern light soils of Andhra Pradesh.
+B. It was developed by Indian Council of Agricultural Research and Central Tobacco Research Institute located at Warangal.
+(1) Only A
+(2) Only B
+(3) Both A and B
+(4) Neither A nor B
+= 1
+~ ICAR-CTRI Sulakshana is a high-yielding, TMV-resistant and aphid-tolerant flue-cured Virginia (FCV) tobacco variety recommended for the black soil areas of Andhra Pradesh and also suited to the Southern Light Soils, so A is correct. B is wrong because the ICAR-Central Tobacco Research Institute is at Rajahmundry (Rajamahendravaram) in Andhra Pradesh, not at Warangal.
+
+Q 51 | geo | AP Geography
+Which of the following statements about ‘Red Soil’ found in Andhra Pradesh are correct?
+A. Red soils occupy more than 60% of the state area.
+B. There are six sub-groups of the soil, of which red sandy soil covers most part of the state.
+C. Red soils are generally deficient in organic matter.
+D. The moisture holding capacity of red soils is poor.
+(1) Only A and B
+(2) Only A, C and D
+(3) Only A, B and C
+(4) A, B, C and D
+= 4
+~ Red soils are the most extensive soils of Andhra Pradesh, covering about two-thirds (around 66%) of the cultivated area, and are classed into six sub-groups, of which red sandy soils (dubbas) are the most widespread. Formed from weathered granite and gneiss, they are light-textured and porous, so they are poor in organic matter and nitrogen and hold little moisture. Hence all four statements are correct.
+
+Q 52 | geo | AP Geography
+Match the following types of Red Soils found in Andhra Pradesh with their approx. percentage of area covering in the state.
+A. Loamy Sub-Soils | (i) 12%
+B. Red Loamy Soils | (ii) 9%
+C. Deep Red Loamy Soils | (iii) 3%
+D. Red Soils With Clay Base | (iv) 30%
+(1) A – ii, B – i, C – iv, D – iii
+(2) A – iv, B – ii, C – iii, D – i
+(3) A – ii, B – i, C – iii, D – iv
+(4) A – ii, B – iii, C – iv, D – i
+= 2
+~ In the State's classification of red soils used for this question, red earths with loamy sub-soils cover about 30% of the area (A-iv), red loamy soils about 9% (B-ii), deep red loamy soils about 3% (C-iii) and red soils with a clay base about 12% (D-i). Hence the correct match is option 2: A-iv, B-ii, C-iii, D-i.
+
+Q 53 | geo | AP Geography
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+A – As of January 2025, Andhra Pradesh has got two solar power plants located at Anantapur and West Godavari districts.
+R – Solar power plants are also called non-conventional power systems.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true but R is false.
+(4) A and R are false.
+= 2
+~ APPSC's key treats both statements as true: Anantapur and West Godavari are cited for solar power plants, and solar plants are non-conventional (renewable) energy systems. But R only classifies solar power and does not explain why the plants are located in those districts, so R is not the explanation of A. In fact Andhra Pradesh has several large solar parks, such as the Kurnool, Ananthapuramu (NP Kunta) and Kadapa (Galiveedu) ultra mega solar parks, so 'two' is a simplification. (Official key; some sources differ.)
+
+Q 54 | pol | Union & State Government
+Having its Principal Bench located at New Delhi, the Armed Forces Tribunal (AFT) DOES NOT have a Regional Bench located at which place of the following, as of January 2025?
+(1) Jabalpur
+(2) Guwahati
+(3) Bhopal
+(4) Jaipur
+= 3
+~ The Armed Forces Tribunal, set up under the Armed Forces Tribunal Act, 2007, has its Principal Bench at New Delhi and regional benches at Chandigarh, Lucknow, Kolkata, Guwahati, Chennai, Kochi, Mumbai, Jaipur, Jabalpur and Srinagar (sitting at Jammu). Madhya Pradesh is served by the Jabalpur bench; there is no regional bench at Bhopal.
+
+Q 55 | pol | Constitution & Rights
+Which of the following statements about the ‘The Election Commission of India’ is/are correct?
+A. It is a constitutional body set-up as per provisions of Article 324 of Part XV of the Indian Constitution.
+B. Chief Election Commissioner and Election Commissioners of India have a tenure of six years or up to the age of 65 years, whichever is earlier.
+(1) A only
+(2) B only
+(3) Both A and B
+(4) Neither A nor B
+= 3
+~ The Election Commission is a constitutional body under Article 324, which lies in Part XV (Elections) of the Constitution. The Chief Election Commissioner and Election Commissioners hold office for six years or until the age of 65, whichever is earlier, as laid down by statute (the 1991 Act, now the Chief Election Commissioner and Other Election Commissioners Act, 2023). So both statements are correct.
+
+Q 56 | pol | Constitution & Rights
+Which of the following statements is/are correct about the ‘Directive Principles of State Policy’ of India as per the Indian Constitution?
+A. Article 39A under the Directive Principles of State Policy of the Indian Constitution provides directions regarding equal justice and free legal aid to citizens of India.
+B. Article 39A was inserted through the Constitution (Forty-Second Amendment) Act of 1976.
+(1) A only
+(2) B only
+(3) Both A and B
+(4) Neither A nor B
+= 3
+~ Article 39A, a Directive Principle, directs the State to ensure that the legal system promotes justice on the basis of equal opportunity and to provide free legal aid, so that no citizen is denied justice because of economic or other disabilities. It was inserted by the Constitution (Forty-second Amendment) Act, 1976, along with Articles 43A and 48A. Hence both statements are correct.
+
+Q 57 | pol | Constitution & Rights
+Which of the following statements about ‘Co-Operative Societies’ as per the Constitution of India are correct?
+A. Part related to Co-Operative Societies was added vide the Constitution (Ninety-seventh Amendment) Act of 2011.
+B. The account of every co-operative society shall be audited within six months of the close of the financial year.
+C. Every co-operative society shall file returns within two months of the close of every financial year to the authority designated by the State Government.
+D. The term of office of elected members of the board of Co-Operative Societies and its office bearers shall be six years from the date of election.
+(1) A and B only
+(2) A and C only
+(3) A and D only
+(4) A, B, C and D
+= 1
+~ Part IXB (Articles 243ZH–243ZT) on co-operative societies was added by the Constitution (Ninety-seventh Amendment) Act, 2011, and Article 243ZM requires accounts to be audited within six months of the close of the financial year, so A and B are correct. C is wrong because Article 243ZP allows six months, not two, for filing returns, and D is wrong because Article 243ZJ fixes the board's term at five years.
+
+Q 58 | pol | Union & State Government
+Two statements are given, labelled Assertion (A) and Reason (R). Select the correct option based on the given statements.
+Assertion (A): Subject to the provisions of the Constitution of India, Parliament may make laws for the whole or any part of the territory of India and the Legislature of a State may make laws for the whole or any part of the State.
+Reason (R): No law made by Parliament shall be deemed to be invalid on the ground that it would have extra-territorial operation.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true but R is not the correct explanation of A
+(3) A is true but R is false
+(4) A is false but R is true
+= 2
+~ Both statements come from Article 245. Clause (1) lets Parliament legislate for the whole or any part of India and a State Legislature for the whole or any part of its State (the Assertion), while clause (2) says no law of Parliament is invalid because it has extra-territorial operation (the Reason). Both are true, but R deals with laws operating outside India and does not explain the territorial division of law-making in A.
+
+Q 59 | eco | Indian Economy
+According to British economist Angus Maddison, India's share of the world income declined from 27% in 1700 AD to _________ in 1950.
+(1) 5%
+(2) 4%
+(3) 3%
+(4) 2%
+= 3
+~ The widely quoted statement based on Angus Maddison's work says India's share of world income fell from about 27% in 1700, roughly equal to Europe's, to about 3% by 1950, reflecting de-industrialisation and stagnation under colonial rule; APPSC keyed 3%. Maddison's own tables put India's share of world GDP at about 24% in 1700 and about 4.2% in 1950, so 4% is also close. (Official key; some sources differ.)
+
+Q 60 | eco | Indian Economy
+What was the primary objective of introducing the Goods and Services Tax (GST) in India?
+(1) To increase the number of indirect taxes imposed on businesses
+(2) To replace the complex and fragmented tax structure with a unified system
+(3) To introduce a new tax only for manufacturers
+(4) To eliminate direct taxes like income tax
+= 2
+~ GST, launched on 1 July 2017 after the Constitution (One Hundred and First Amendment) Act, 2016, subsumed many Central and State indirect taxes such as excise duty, service tax and VAT into one destination-based tax, creating a common national market. It reduced rather than increased the number of taxes, applies to goods and services across the supply chain, not only manufacturers, and does not touch direct taxes like income tax.
+
+Q 61 | cur | Reports & Indices
+According to the 2023-2024 Human Development Report (HDR), what is India's rank on the Human Development Index (HDI) out of 193 countries based on the HDI value score of 2022?
+(1) 128th
+(2) 134th
+(3) 140th
+(4) 145th
+= 2
+~ The Human Development Report 2023-24, 'Breaking the Gridlock', released by UNDP in March 2024, ranked India 134th out of 193 countries with an HDI value of 0.644 for 2022, placing it in the medium human development category. The other ranks given are not India's position in that report.
+
+Q 62 | eco | Indian Economy
+Read the following statements carefully and identify the correct option.
+Statement I: In his speech, Seven Ages of India’s Monetary Policy, delivered on 24 January 2020 at St. Stephen's College, University of Delhi, Shaktikanta Das, Governor of the Reserve Bank of India, highlighted that the Multiple Indicator Approach was effectively utilised between 1998-99 and 2008-09, contributing to stable macroeconomic outcomes in India.
+Statement II: In his speech, Seven Ages of India’s Monetary Policy, delivered on 24 January 2020 at St. Stephen's College, University of Delhi, Shaktikanta Das, Governor of the Reserve Bank of India, highlighted that between 1998-99 and 2008-09, India's average domestic growth rate increased to 6.4%, while WPI-based inflation eased to 5.4%.
+(1) Only Statement I is correct.
+(2) Only Statement II is correct.
+(3) Both Statement I and Statement II are correct.
+(4) Both Statement I and Statement II are incorrect.
+= 3
+~ Both statements are taken from RBI Governor Shaktikanta Das's speech 'Seven Ages of India's Monetary Policy' at St. Stephen's College on 24 January 2020. He said the multiple indicator approach 'served fairly well from 1998-99 to 2008-09', and that in this period average domestic growth improved to 6.4 per cent while WPI-based inflation moderated to 5.4 per cent. Hence both statements are correct.
+
+Q 63 | eco | Indian Economy
+Which of the following statements are true regarding India's entry into globalisation?
+Statement I: India began the process of globalisation with major liberalisation measures initiated in 1991.
+Statement II: Some liberalisation steps were taken in the 1980s, but they were limited and accompanied by government controls.
+Statement III: Foreign Institutional Investment (FII) inflows into India started in the 1980s as part of early globalisation efforts.
+(1) Only Statement I and Statement II are true.
+(2) Only Statement II and Statement III are true.
+(3) Only Statement I and Statement III are true.
+(4) All three statements are true.
+= 1
+~ India's globalisation began with the New Economic Policy of July 1991 (liberalisation, privatisation, globalisation). In the 1980s some cautious liberalisation, such as partial delicensing and easier imports, was tried, but within the licence-permit controls. Statement III is wrong: Foreign Institutional Investors were allowed into Indian stock markets only from September 1992, after the reforms began. So only I and II are true.
+
+Q 64 | geo | Environment & Ecology
+Which of the following best describes renewable resources?
+(1) Resources that can be depleted with continued use
+(2) Resources that can be replaced naturally over time or are inexhaustible
+(3) Resources that require human intervention to regenerate
+(4) Resources that cannot be used by living organisms
+= 2
+~ Renewable resources are those that are replenished naturally within a human time-scale or are practically inexhaustible, such as solar energy, wind, water, forests and wildlife used sustainably. Resources that run out with continued use, such as coal, petroleum and minerals, are non-renewable. Renewal does not depend on human intervention, and usability by living organisms is not the test.
+
+Q 65 | geo | Environment & Ecology
+Which of the following statements is/are correct?
+Statement I: The Ministry of Environment and Forests (MoEF) was established in 1985, marking a significant step in India’s commitment to sustainable development and environmental governance.
+Statement II: The National Environment Policy, along with the Water (Prevention and Control of Pollution) Act and the Air (Prevention and Control of Pollution) Act, has provided a robust regulatory framework, ensuring flawless enforcement and public compliance across all sectors.
+(1) Both statements are correct, and Statement II is the correct explanation of Statement I.
+(2) Both statements are correct, but Statement II is not the correct explanation of Statement I.
+(3) Statement I is correct, but Statement II is incorrect.
+(4) Statement I is incorrect, but Statement II is correct.
+= 3
+~ The Ministry of Environment and Forests was created in 1985, growing out of the Department of Environment set up in 1980, as the nodal agency for environment and forest policy, so Statement I is correct. Statement II is incorrect: the Water Act 1974, Air Act 1981 and National Environment Policy 2006 give a legal framework, but enforcement is far from 'flawless', and weak compliance and continuing pollution are widely reported.
+
+Q 66 | geo | Environment & Ecology
+Which of the following statements about the 2030 Agenda for Sustainable Development is/are correct?
+1. It was adopted by 150 UN member states.
+2. It consists of 17 Sustainable Development Goals (SDGs).
+3. It legally binds all countries to follow a single development model.
+(1) Only 1
+(2) Only 2
+(3) Only 3
+(4) Both 1 and 3
+= 2
+~ The 2030 Agenda for Sustainable Development, 'Transforming our World', was adopted by all 193 UN member states in September 2015, not 150. It sets out 17 Sustainable Development Goals with 169 targets. It is a political commitment, not a legally binding treaty, and each country pursues the goals according to its own national priorities, so only statement 2 is correct.
+
+Q 67 | geo | Environment & Ecology
+Which of the following statements regarding the European Green Deal are correct?
+1. It aims to achieve net-zero greenhouse gas emissions in the EU by 2050.
+2. The 'Farm to Fork' strategy is a key component, promoting sustainable food systems.
+3. The Green Deal focuses only on reducing carbon emissions and does not cover biodiversity protection.
+4. The initiative includes a circular economy action plan to promote resource efficiency.
+(1) Only 1, 2, and 3
+(2) Only 2, 3, and 4
+(3) Only 1, 2 and 4
+(4) Only 1, 3, and 4
+= 3
+~ The European Green Deal (2019) aims to make the EU climate-neutral, with net-zero greenhouse gas emissions, by 2050. Its key strategies include 'Farm to Fork' for sustainable food systems and a new Circular Economy Action Plan (2020) for resource efficiency. Statement 3 is wrong because the Deal also contains the EU Biodiversity Strategy for 2030 and covers pollution, so biodiversity protection is included.
+
+Q 68 | geo | Environment & Ecology
+Which of the following statements regarding the Montreal Protocol are correct?
+1. The Montreal Protocol was signed in 1987.
+2. It is an international agreement aimed at phasing out substances that deplete the ozone layer.
+3. The Montreal Protocol is a part of the Kyoto Protocol.
+4. The treaty was ratified by all countries, making it the first universally ratified environmental agreement.
+(1) Only 1, 2, and 3
+(2) Only 2, 3, and 4
+(3) Only 1, 2 and 4
+(4) Only 1, 3, and 4
+= 3
+~ The Montreal Protocol on Substances that Deplete the Ozone Layer was signed on 16 September 1987 and phases out ozone-depleting substances such as CFCs and halons. In 2009 it became the first treaty in UN history to be ratified by every country. Statement 3 is wrong: it is a protocol to the Vienna Convention (1985), whereas the Kyoto Protocol (1997) belongs to the UNFCCC.
+
+Q 69 | geo | Disaster Management
+Under which year's Disaster Management Act did the National Institute of Disaster Management (NIDM) achieve the status of a statutory organisation and become responsible for planning and promoting training and research in the area of disaster management in India?
+(1) 1995
+(2) 1999
+(3) 2005
+(4) 2011
+= 3
+~ Section 42 of the Disaster Management Act, 2005 made the National Institute of Disaster Management a statutory body responsible for planning and promoting training, research, documentation and capacity building in disaster management. Its forerunner, the National Centre for Disaster Management, was set up in 1995 at the Indian Institute of Public Administration and renamed NIDM in 2003, but statutory status came only with the 2005 Act.
+
+Q 70 | geo | Disaster Management
+As per Cyclone Hazard Prone Districts of India Report 2010 by the National Disaster Management Authority and India Meteorological Department, which of the following statements about ‘Vulnerable Districts for Cyclone Wind’ in Andhra Pradesh are correct?
+(A) East Godavari is a Very High (VH) vulnerable district for cyclone wind.
+(B) Krishna is a High (H) vulnerable district for cyclone wind.
+(C) Guntur is a Very High (VH) vulnerable district for cyclone wind.
+(D) West Godavari is a High (H) vulnerable district for cyclone wind.
+(1) A and B only
+(2) A and C only
+(3) A, C and D only
+(4) A, B, C and D
+= 3
+~ In the IMD–NDMA classification of cyclone-prone districts, East Godavari and Krishna are 'very highly prone' and West Godavari 'highly prone', so A and D are correct, while B is wrong because Krishna is very high, not just high. APPSC's key also treats Guntur as very high for cyclone wind (C), giving A, C and D, although the district list given in Parliament (2015) places Guntur among 'highly prone' districts. (Official key; some sources differ.)
+
+Q 71 | geo | Disaster Management
+Which of the following statements about Cyclones in Andhra Pradesh (AP) are correct, as per the Andhra Pradesh Flood Hazard Atlas of 2021?
+(A) AP with its coastline of 974 km is more vulnerable to cyclones compared to other disasters.
+(B) AP is at risk of at least one cyclone each year on an average.
+(C) Cyclones with moderate to severe intensity occur every two to three years, which results in huge damage to the state.
+(D) Maximum number of cyclones hit the state during the months of October and November.
+(1) A and B only
+(2) A, B and C only
+(3) A, C and D only
+(4) A, B, C and D
+= 4
+~ The Andhra Pradesh Flood Hazard Atlas (2021) notes that the State's 974 km coastline, the second longest in India, makes it more vulnerable to cyclones than to other disasters. On average at least one cyclone threatens it every year, and cyclones of moderate to severe intensity strike every two to three years, causing heavy damage. Most cyclones hit in the post-monsoon months of October and November, so all four statements are correct.
+
+Q 72 | geo | Disaster Management
+Which of the following statements about the InSAR (Interferometric Synthetic Aperture Radar) technique is/are correct?
+(A). This is a technique for mapping ground deformation using radar images of the Earth's surface.
+(B). By this techniques, images of the Earth's surface are collected from stationary satellites.
+(1) A only
+(2) B only
+(3) Both A and B
+(4) Neither A nor B
+= 1
+~ InSAR compares the phase of two or more synthetic aperture radar images of the same area taken at different times, revealing ground deformation such as subsidence, landslide creep or earthquake and volcanic movement to centimetre or even millimetre accuracy, so A is correct. B is wrong: the images come from orbiting radar satellites such as Sentinel-1 or RISAT, which pass repeatedly over the same area, not from stationary satellites.
+
+Q 73 | geo | Disaster Management
+Which of the following statements about flood season patterns of Andhra Pradesh is/are correct?
+(A). As the State gets contributions from both South-West as well as North-East Monsoons, the period of flood season extends from 1 June to 31 October in Northern Coastal Andhra Pradesh, Godavari and Krishna.
+(B). South of Krishna, the flood season further extends up to 31 December every year.
+(1) A only
+(2) B only
+(3) Both A and B
+(4) Neither A nor B
+= 3
+~ As per the Andhra Pradesh Flood Hazard Atlas, the State gets rain from both the southwest and northeast monsoons, so the flood season in north coastal Andhra and the Godavari and Krishna basins runs from 1 June to 31 October. South of the Krishna, where the northeast monsoon and Bay of Bengal depressions bring heavy rain in November–December, the flood season extends up to 31 December. Both statements are correct.
+
+Q 74 | geo | Disaster Management
+Which of the following statements about the National Institute of Disaster Management (NIDM) southern campus are correct?
+(A) In pursuance of the Andhra Pradesh Reorganisation Act 2014, NIDM established its southern campus in Krishna District of Andhra Pradesh.
+(B) Honourable Vice-President of India, M Venkaiah Naidu, laid the foundation stone of the southern campus building of the National Institute of Disaster Management (NIDM).
+(C) The foundation stone of the southern campus building of the NIDM was laid in 2018.
+(D) The Union Home Minister inaugurated the new building of the southern campus of the National Institute of Disaster Management (NIDM) in January 2025.
+(1) A and B only
+(2) A, B and C only
+(3) A, C and D only
+(4) A, B, C and D
+= 4
+~ Under the Andhra Pradesh Reorganisation Act, 2014, NIDM set up its southern campus at Kondapavuluru near Gannavaram in Krishna district. Vice-President M. Venkaiah Naidu laid the foundation stone of the campus building on 22 May 2018, and Union Home Minister Amit Shah inaugurated the new campus building on 19 January 2025. Hence all four statements are correct.
+
+Q 75 | geo | Disaster Management
+Which of the following matches about disasters and their nodal agencies for forecast in India are correct?
+(A). Cyclone - Indian Meteorological Department
+(B). Floods - Central Water Commission
+(C). Landslides - Geological Survey of India
+(D). Tsunami - Indian National Centre for Oceanic Information Services
+(1) Only A and B
+(2) Only B, C and D
+(3) Only A, B and C
+(4) A, B, C and D
+= 4
+~ In India the IMD is the nodal agency for cyclone warnings, the Central Water Commission for flood forecasting and the Geological Survey of India (designated in 2004) for landslides. INCOIS, Hyderabad, runs the Indian Tsunami Early Warning Centre set up in 2007 and is the nodal agency for tsunami warnings. All four pairs are correctly matched, so option 4 is correct.
+
+Q 76 | nrs | Forest & Water Resources
+Which of the following is a primary cause of riverine flooding in low lying areas?
+(1) Tsunami
+(2) Earthquake
+(3) Prolonged heavy rainfall
+(4) Deforestation
+= 3
+~ Riverine (fluvial) floods occur when prolonged or very heavy rainfall over a catchment sends more water down a river than its channel can carry, so it spills over its banks onto low-lying plains. Tsunamis cause coastal flooding and earthquakes are geological hazards, while deforestation only worsens flooding by increasing runoff; it is not the primary cause.
+
+Q 77 | nrs | Mineral, Food & Energy Resources
+Which of the following options is correct for the given assertion and reason?
+Assertion (A): India is actively promoting the use of renewable energy sources such as wind, hydro, solar, geothermal, bio, and tidal power to supplement fossil fuel-based electricity generation.
+Reason (R): Renewable energy sources are sustainable and environmentally friendly unlike non-renewable sources like coal, oil, and natural gas, which are finite and contribute to environmental pollution.
+(1) Both (A) and (R) are true, and (R) is the correct explanation of (A)
+(2) Both (A) and (R) are true, but (R) is not the correct explanation of (A)
+(3) (A) is true, but (R) is false
+(4) (A) is false, but (R) is true
+= 1
+~ India is expanding renewable power to supplement coal-based generation and aims at 500 GW of non-fossil capacity by 2030. The reason for this push is exactly what R states: renewables are replenished naturally and cause little pollution, whereas coal, oil and natural gas are finite and emit greenhouse gases and pollutants. So both are true and R explains A.
+
+Q 78 | nrs | Land Resources & Soil Erosion
+Wasteland refers to land with what percentage of productivity?
+(1) Less than 20%
+(2) Less than 25%
+(3) Less than 30%
+(4) Less than 35%
+= 1
+~ In land-resource texts, wasteland is degraded land that yields less than 20% of its biological productivity potential because of erosion, salinity, waterlogging, ravines or loss of vegetation. Such land is under-utilised but can be brought back under vegetative cover with reasonable effort, which is the aim of wasteland development programmes.
+
+Q 79 | nrs | Land Resources & Soil Erosion
+Which of the following options is correct for the given Assertion and Reason?
+Assertion (A): Soil erosion is mostly affected by rainfall intensity.
+Reason (R): Total annual rainfall also affects soil erosion more than rainfall intensity.
+(1) Both A and R are true, and R is the correct explanation of A
+(2) Both A and R are true, but R is not the correct explanation of A
+(3) A is true but R is false
+(4) Both A and R are false
+= 3
+~ Rainfall erosivity depends mainly on intensity: intense storms have large, fast raindrops that detach soil and produce heavy runoff, which is why Wischmeier's EI30 index uses storm energy and maximum 30-minute intensity. A few intense storms can cause most of a year's erosion, so total annual rainfall matters less than intensity. A is true; R is false.
+
+Q 80 | pls | Classification & Morphology
+In which of the following species is axile placentation commonly observed?
+(1) Delonix regia
+(2) Libidibia coriaria
+(3) Hibiscus sabdariffa
+(4) Jacaranda mimosifolia
+= 3
+~ Hibiscus sabdariffa (roselle) belongs to Malvaceae, whose multilocular syncarpous ovary bears ovules on a central axis, the standard textbook example of axile placentation (as in China rose). Delonix regia and Libidibia coriaria are legumes with a single carpel and marginal placentation. Jacaranda (Bignoniaceae) also has a two-celled ovary with axile placentas. (Official key; some sources differ.)
+
+Q 81 | pls | Classification & Morphology
+Which of the following species possesses a corymb inflorescence?
+(1) Mangifera indica
+(2) Gliricidia sepium
+(3) Tectona grandis
+(4) Delonix regia
+= 4
+~ Delonix regia (gulmohur) bears its flowers in corymbs: the lower flowers have longer stalks, so all the flowers reach about the same level and form a flat-topped cluster. Mango has a terminal panicle, Gliricidia sepium has axillary racemes, and teak (Tectona grandis) has large terminal cymose panicles.
+
+Q 82 | pls | Plant Physiology
+Which of the following mechanisms help prevent cavitation in the xylem?
+(1) Negative pressure inside the vessels and the pores
+(2) End walls of the vessels and the pores
+(3) Decreased root pressure
+(4) Presence of epithem cells
+= 2
+~ Cavitation is the formation of air bubbles (embolism) in xylem water under tension. The end walls of vessels and the tiny pores in the pit membranes stop an air bubble from spreading from one conduit to the next, so water flow continues through neighbouring vessels. Negative pressure actually causes cavitation, lower root pressure cannot prevent it, and epithem cells belong to hydathodes (guttation).
+
+Q 83 | pls | Reproduction & Propagation
+Cleistogamy is observed in which of the following species?
+(1) Quisqualis
+(2) Nycthanthes
+(3) Viola
+(4) Cosmos
+= 3
+~ Cleistogamous flowers never open, so the anthers and stigma lie close together and self-pollination is assured. Viola (pansy/violet), Oxalis and Commelina produce such flowers in addition to normal open ones (NCERT). Quisqualis, Nyctanthes and Cosmos bear only open, chasmogamous flowers pollinated by insects.
+
+Q 84 | pls | Plant Physiology
+Which of the following options is correct regarding the Assertion (A) and Reason (R)?
+Assertion (A): In estuaries, halophytic plants are adapted to deal with salt water spray and salt water on their roots.
+Reason (R): In some halophytes, filters in the roots remove the salt from the water that the plant absorbs.
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 1
+~ Estuarine halophytes such as mangroves live with salt spray and saline water around their roots. One of their key adaptations is salt exclusion: root membranes act as ultrafilters that keep out most of the salt while taking in water (as in Rhizophora); others secrete salt through leaf glands. So R correctly explains how they cope.
+
+Q 85 | bdc | Biodiversity & Hotspots
+Into how many provinces is the biogeographic zone of the Deccan Peninsula divided?
+(1) Five
+(2) Six
+(3) Seven
+(4) Eight
+= 1
+~ In the Rodgers and Panwar classification of India into 10 biogeographic zones, the Deccan Peninsula (zone 6) is the largest zone. It is divided into five provinces: 6A Central Highlands, 6B Chhota Nagpur, 6C Eastern Highlands, 6D Central Plateau and 6E Deccan South.
+
+Q 86 | ecw | Ecosystem Concepts
+Match the following.
+1. Keystone species | a. Controls mussel populations in intertidal zones
+2. Pisaster ochraceus | b. Influenced by foundation and keystone species
+3. Community structure | c. Organisms whose presence maintains ecosystem structure and biodiversity
+4. Succession | d. Predictable appearance of plant species after disturbances
+(1) 1-c; 2-a; 3-b; 4-d
+(2) 1-a; 2-b; 3-d; 4-c
+(3) 1-c; 2-d; 3-b; 4-a
+(4) 1-b; 2-c; 3-d; 4-a
+= 1
+~ A keystone species has an effect on ecosystem structure and diversity far larger than its numbers (1-c). Robert Paine's classic experiments showed that the sea star Pisaster ochraceus preys on mussels; when it was removed, mussels took over the rocky intertidal zone (2-a). Community structure is shaped by foundation and keystone species (3-b), and succession is the orderly appearance of species after disturbance (4-d).
+
+Q 87 | bdc | Biomes & Population Ecology
+Match column A with column B
+Column A | Column B
+i. Climate - colouration | a. Jordon's rule
+ii. Temperature - vertebrae | b. Bergman's rule
+iii Temperature - body size | c. Gloger's rule
+iv. Shorebirds | d. Rensch's rule
+(1) i-b, ii-a, iii-d, iv-c
+(2) i-c, ii-a, iii-d, iv-b
+(3) i-b, ii-d, iii-a, iv-c
+(4) i-c, ii-a, iii-b, iv-d
+= 4
+~ Gloger's rule links climate with colouration (darker animals in warm, humid regions): i-c. Jordan's rule says fish in colder water have more vertebrae: ii-a. Bergmann's rule says warm-blooded animals are larger in colder climates: iii-b. Rensch's rule (sexual size dimorphism increases with body size when males are larger) is classically tested in shorebirds: iv-d.
+
+Q 88 | bdc | Biodiversity & Hotspots
+Read the Assertion (A) and Reason (R) carefully, and select the correct option.
+(A): Parthenium hysterophorus are considered the second largest threat to biodiversity.
+(R): Invasive species are a threat to biodiversity.
+(1) Both (A) and (R) are true, and (R) is the correct explanation for (A).
+(2) Both (A) and (R) are true, but (R) is not the correct explanation for (A).
+(3) (A) is true, but (R) is false.
+(4) (A) is false, but (R) is true.
+= 1
+~ Invasive alien species are often described as the second-largest threat to biodiversity after habitat loss. Parthenium hysterophorus (congress grass), an aggressive invasive weed from tropical America, spreads fast, releases allelopathic chemicals and displaces native plants. APPSC treats A as true and explained by R because Parthenium is a threat precisely as an invasive species; strictly, the ranking applies to invasive species as a group, not to Parthenium alone. (Official key; some sources differ.)
+
+Q 89 | ssg | Soil Properties & Formation
+What type of chemical weathering occurs when interlayer potassium in muscovite is replaced by hydronium ion to form vermiculite?
+(1) Reduction
+(2) Oxidation
+(3) Hydrolysis
+(4) Hydration
+= 3
+~ In hydrolysis, water splits into H⁺ (as H₃O⁺) and OH⁻, and the hydrogen ions replace cations in a mineral. When H₃O⁺ replaces the interlayer K⁺ of muscovite, the potassium is released and the mica alters to vermiculite. Hydration only adds water molecules to a mineral, while oxidation and reduction change the valency of iron or manganese.
+
+Q 90 | nrs | Land Resources & Soil Erosion
+What is rill erosion?
+(1) Erosion caused by strong winds removing topsoil
+(2) The deep cutting of valleys due to continuous water flow
+(3) The displacement of soil by landslides causing heavy losses of nutrients
+(4) Erosion that forms small, shallow channels on the soil surface
+= 4
+~ Rill erosion is water erosion in which runoff concentrates into many small, shallow channels (rills), usually only a few centimetres deep, that ordinary tillage can smooth out. It comes between sheet erosion and gully erosion. Option 1 is wind erosion, option 2 describes gully or valley cutting, and option 3 is mass movement.
+
+Q 91 | ssg | Soil Conservation & Reclamation
+Match the columns and select the correct option from the following.
+1. Leaching | a. Replaces sodium with calcium in soil
+2. Gypsum (CaSO₄·2H₂O) | b. Enhances microbial activity and improves soil fertility
+3. Acid-forming chemicals | c. Process of removing excess soluble salts by applying water
+4. Green manuring | d. Helps neutralise alkalinity and improve soil structure
+(1) 1-d; 2-c; 3-a; 4-b
+(2) 1-c; 2-a; 3-d; 4-b
+(3) 1-c; 2-b; 3-a; 4-d
+(4) 1-a; 2-b; 3-c; 4-d
+= 2
+~ Leaching washes excess soluble salts below the root zone with applied water (1-c). Gypsum supplies calcium that replaces exchangeable sodium in sodic soils (2-a). Acid-forming amendments such as elemental sulphur, sulphuric acid and pyrite neutralise alkalinity and improve structure (3-d). Green manuring adds organic matter, stimulating microbes and fertility (4-b).
+
+Q 92 | ssg | Rocks & Minerals
+Two statements are given labelled as Assertion (A) and Reason (R). Select the correct option based on the given statements.
+Assertion (A): Felsic rocks contain relatively high amounts of iron, magnesium, and calcium.
+Reason (R): Olivine and Pyroxene are dark in colour.
+(1) Both A and R are true and R is the correct explanation of A.
+(2) Both A and R are true but R is not the correct explanation of A.
+(3) A is true but R is false.
+(4) A is false but R is true.
+= 4
+~ Felsic rocks (granite, rhyolite) are rich in silica, aluminium, sodium and potassium from feldspar and quartz, and are light coloured. It is mafic rocks (basalt, gabbro) that are rich in iron, magnesium and calcium, so A is false. Olivine and pyroxene are ferromagnesian minerals and are dark green to black, so R is true.
+
+Q 93 | ssg | Rocks & Minerals
+Identify a mineral from the phyllosilicate class.
+(1) Albite
+(2) Muscovite
+(3) Hornblende
+(4) Augite
+= 2
+~ Phyllosilicates (sheet silicates) have silica tetrahedra linked into flat sheets, which is why micas split into thin flakes. Muscovite (white mica) is a phyllosilicate, like biotite and the clay minerals. Albite is a plagioclase feldspar (tectosilicate), hornblende is a double-chain amphibole and augite a single-chain pyroxene (both inosilicates).
+
+Q 94 | ssg | Rocks & Minerals
+What is the term used for the process in which minerals crystallise from magma?
+(1) Chilled reaction series
+(2) Plagioclase reaction series
+(3) Bowen reaction series
+(4) Black reaction series
+= 3
+~ N.L. Bowen showed that minerals crystallise from cooling magma in a fixed order, known as Bowen's reaction series. The discontinuous branch runs olivine, pyroxene, amphibole, biotite; the continuous branch runs from calcium-rich to sodium-rich plagioclase; both end with K-feldspar, muscovite and quartz. Plagioclase forms only one branch of the series, and the other names are not used.
+
+Q 95 | wsm | Watershed & Water Harvesting
+What is the key objective of the Integrated Watershed Management Programme (IWMP) in India?
+(1) Enhancing agricultural productivity and water conservation
+(2) Promoting urban expansion in rural areas
+(3) Replacing natural vegetation with commercial industries
+(4) Extracting groundwater for industrial use
+= 1
+~ IWMP, launched in 2009-10 by the Department of Land Resources by merging DPAP, DDP and IWDP, aims to restore ecological balance by conserving and developing degraded soil, vegetation and water in rainfed areas. This raises agricultural productivity and rural livelihoods. It is now the watershed development component of PMKSY. The other options run against its purpose.
+
+Q 96 | wsm | Water Resources
+What is the name of the graph that represents whether the percentage of time specified mean daily discharges are equalled or exceeded?
+(1) Mean daily curve
+(2) Flow duration curve
+(3) Mean discharge curve
+(4) Flow frequency curve
+= 2
+~ A flow duration curve plots stream discharge against the percentage of time it is equalled or exceeded, using daily (or monthly) flow records. A flat curve indicates steady, groundwater-fed flow, while a steep curve indicates flashy flow. It is used to assess dependable flow for water supply, irrigation and hydropower.
+
+Q 97 | ssg | Soil Conservation & Reclamation
+Which of the following is one of the major benefits of using crop rotation in soil conservation?
+(1) It depletes soil nutrients and increases erosion.
+(2) It improves soil fertility, reduces pests, and prevents soil degradation.
+(3) It leads to continuous monocropping, maximising soil health.
+(4) It causes soil compaction and reduces water infiltration.
+= 2
+~ Crop rotation grows different crops one after another on the same land. Including legumes adds nitrogen, alternating deep- and shallow-rooted crops uses different soil layers, changing hosts breaks pest and disease cycles, and close-growing crops cover the soil and reduce erosion. The other options describe harms, and rotation is the opposite of monocropping.
+
+Q 98 | ens | Pollution
+The main source of cadmium contamination that led to Itai-Itai disease in Japan was:
+(1) consumption of contaminated seafood
+(2) air pollution from factories
+(3) pesticide use in agriculture specially pesticide contaminated water applied in rice fields
+(4) industrial wastewater from mining activities for irrigation of rice
+= 4
+~ Itai-itai disease in the Jinzu River basin, Toyama Prefecture, was caused by cadmium discharged from the Kamioka zinc mine upstream. Villagers irrigated rice with this river water and drank it, so cadmium built up in rice and in their bodies, causing kidney damage and painful, brittle bones. Contaminated seafood was the route in Minamata disease (mercury), not itai-itai.
+
+Q 99 | wsm | Watershed & Water Harvesting
+Who is known as the Father of Community-led Watershed Development in India?
+(1) Hermann Bacher
+(2) Mridula Ramesh
+(3) JVS Murty
+(4) Marie Kurz
+= 1
+~ Fr. Hermann Bacher, a Swiss Jesuit priest who worked in Ahmednagar district of Maharashtra, pioneered participatory watershed development in which villagers plan and carry out the work. He helped launch the Indo-German Watershed Development Programme and co-founded the Watershed Organisation Trust (WOTR) in 1993, and is called the father of community-led watershed development in India.
+
+Q 100 | ens | Pollution
+What was the cause of the Minamata epidemic?
+(1) Lead poisoning
+(2) Cadmium poisoning
+(3) Mercury poisoning
+(4) Arsenic poisoning
+= 3
+~ Minamata disease, identified in 1956 at Minamata Bay, Japan, was methylmercury poisoning. The Chisso chemical factory discharged mercury compounds into the bay; they biomagnified in fish and shellfish eaten by local people, causing severe nerve damage. Cadmium caused itai-itai disease, and arsenic poisoning is linked to groundwater as in West Bengal.
+
+Q 101 | slv | Silvicultural Principles & Regeneration
+Craib's thinning refers to __________.
+(1) thinning aimed on evenly spaced selected stems called alpha stems which are retained until maturity
+(2) thinning aimed at putting as high a proportion as possible of the total potential increment of the area on the retained stems
+(3) thinning done in a regular crop in anticipation of suppression
+(4) thinning directed toward the dominant trees in a regular crop
+= 3
+~ Craib's thinning, named after I.J. Craib's heavy, early thinning schedules for South African pine plantations, is a type of advance thinning: trees in a regular crop are removed in anticipation of suppression, before competition sets in, so the retained trees grow without check. Option 2 defines maximum thinning, and option 4 a crown thinning.
+
+Q 102 | fpt | Pests & Diseases
+Cylindrocladium scoparium is responsible for causing dieback in which plant species?
+(1) Exbucklandia populnea
+(2) Fraxinus micrantha
+(3) Gmelina arborea
+(4) Eucalyptus tereticornis
+= 4
+~ The fungus Cylindrocladium scoparium (now placed in Calonectria) causes seedling blight, leaf blight and dieback of eucalypts such as Eucalyptus tereticornis, both in nurseries and young plantations, especially in warm, humid weather in Kerala and other southern states. It is one of the most serious diseases of eucalyptus in India.
+
+Q 103 | ssg | Soil Organic Matter & Nutrient Cycles
+Match the following organic amendments with their descriptions.
+1. Animal manure | a. Consists of decomposed plant and animal waste, which improves soil organic matter and microbial activity
+2. Compost | b. Freshly grown crops that are incorporated into the soil to improve fertility and nutrient availability
+3. Crop residue | c. Animal-derived waste such as dung and urine, which provides essential nutrients for soil and crops
+4. Green manure crops | d. Remains of harvested crops that can be incorporated into the soil to enhance organic matter content
+(1) 1-a; 2-b; 3-c; 4-d
+(2) 1-c; 2-a; 3-d; 4-b
+(3) 1-d; 2-a; 3-c; 4-b
+(4) 1-c; 2-b; 3-a; 4-d
+= 2
+~ Animal manure is dung and urine of livestock (1-c). Compost is plant and animal waste decomposed by microbes (2-a). Crop residues are the straw, stubble and stalks left after harvest (3-d). Green manure crops such as sunhemp and dhaincha are grown and ploughed in while still green to add organic matter and nitrogen (4-b).
+
+Q 104 | slv | Nursery & Planting
+Match column A with column B
+Column A | Column B
+i. Recalcitrant seed | a. Vachellia nilotica
+ii. Orthodox seed | b. Shorea robusta
+iii. Vivipary | c. Tectona grandis
+iv. Stump planting | d. Rhizophora mucronata
+(1) i-b, ii-d, iii-a, iv-c
+(2) i-b, ii-a, iii-d, iv-c
+(3) i-c, ii-a, iii-b, iv-d
+(4) i-d, ii-a, iii-b, iv-c
+= 2
+~ Sal (Shorea robusta) seed is recalcitrant: it cannot be dried and loses viability within days (i-b). Babul (Vachellia nilotica) seed is orthodox, with a hard coat that tolerates drying and long storage (ii-a). The mangrove Rhizophora mucronata is viviparous, its seed germinating on the parent tree (iii-d). Teak is usually raised by stump planting (iv-c).
+
+Q 105 | slv | Nursery & Planting
+Read the given statement and conclusions carefully. Decide which of the given conclusions follow(s) from the statement.
+Statement:
+Orienting nursery beds in a north-south direction in cold regions is beneficial.
+Conclusion:
+I: It will facilitate early thawing by the morning sun.
+II: It will ensure easy lifting and transplanting.
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Neither conclusion I nor II follows
+(4) Both conclusions I and II follow
+= 1
+~ In cold regions, beds laid out north-south receive the morning sun along their length, so frost in the beds thaws early and seedlings suffer less frost damage; this is why the orientation is recommended. Ease of lifting and transplanting depends on soil condition and bed width, not on the direction of the beds, so only conclusion I follows.
+
+Q 106 | slv | Agroforestry
+What percentage of India's total geographical area is currently under agroforestry practices, according to the GROW report by NITI Aayog?
+(1) 10.45%
+(2) 12.67%
+(3) 8.65%
+(4) 9.25%
+= 3
+~ NITI Aayog's GROW (Greening and Restoration of Wasteland with Agroforestry) report, released in February 2024, states that agroforestry now covers about 8.65% of India's total geographical area, roughly 28.42 million hectares. The report also maps wasteland across districts using remote sensing to identify land suitable for expanding agroforestry.
+
+Q 107 | ecw | Ecosystem Concepts
+Which of the following ecological pyramids is inverted?
+(1) Pyramid of Biomass in a Forest Ecosystem
+(2) Pyramid of Energy in a Pond Ecosystem
+(3) Pyramid of Numbers in a Parasitic Food chain
+(4) Pyramid of Numbers in Grassland Ecosystem
+= 3
+~ In a parasitic food chain one large host, such as a tree, supports many herbivores or parasites, which in turn support even more hyperparasites, so numbers increase at each higher level and the pyramid is inverted. The pyramid of energy is always upright, and the pyramid of biomass in a forest and the pyramid of numbers in a grassland are upright.
+
+Q 108 | nrs | Forest & Water Resources
+What percentage of the world's forests are made up of plantations?
+(1) 3%
+(2) 4%
+(3) 5%
+(4) 6%
+= 1
+~ According to FAO's Global Forest Resources Assessment 2020, plantation forests (intensively managed, mostly even-aged stands of one or two species) cover about 131 million hectares, which is about 3% of the world's forest area. All planted forests together make up about 7%; the rest is naturally regenerating forest.
+
+Q 109 | ecw | Ecosystem Concepts
+What does total primary production efficiency measure?
+(1) It measures heterotrophic respiration.
+(2) It measures the solar energy captured and used in photosynthesis.
+(3) It measures autotrophic respiration.
+(4) It measures stored biomass.
+= 2
+~ Total (gross) primary production efficiency is the fraction of incoming solar energy that plants capture and fix in photosynthesis, i.e. gross primary production divided by incident solar radiation. It is usually only a few per cent at most. Respiration (autotrophic or heterotrophic) and stored biomass are measured separately, as losses and as standing crop.
+
+Q 110 | ecw | Wildlife & Protected Areas
+The Keoladeo Ghana National Park is situated in the State of ___________.
+(1) Andra Pradesh
+(2) Uttar Pradesh
+(3) Rajasthan
+(4) Sikkim
+= 3
+~ Keoladeo Ghana National Park is at Bharatpur in Rajasthan. Once a duck-hunting reserve of the Maharaja of Bharatpur, it is a man-made wetland famous for wintering waterbirds and was once the main wintering site of the Siberian crane. It was declared a National Park in 1982, a Ramsar site in 1981 and a UNESCO World Heritage Site in 1985.
+
+Q 111 | ecw | Ecosystem Concepts
+What does succession describe in an ecological community?
+(1) The gradual change in species composition over time after a disturbance
+(2) The seasonal migration of species
+(3) The daily movement of organisms within an ecosystem
+(4) The complete extinction of species in an area
+= 1
+~ Ecological succession is the gradual, fairly predictable change in the species composition of a community over time, through seral stages, towards a stable climax community. It is primary on bare areas such as rock and secondary after disturbances such as fire, felling or floods. Seasonal migration, daily movement and extinction are different processes.
+
+Q 112 | ens | Climate & Global Issues
+How much additional carbon sink is India targeting through forest and tree cover expansion by 2030 as per the Nationally Determined Contribution (NDC)?
+(1) 4.0 to 5.0 billion tonnes of CO₂ equivalent
+(2) 2.5 to 3.0 billion tonnes of CO₂ equivalent
+(3) 1.5 to 2.0 billion tonnes of CO₂ equivalent
+(4) 5.5 to 8.0 billion tonnes of CO₂ equivalent
+= 2
+~ Under the Paris Agreement, India's NDC (2015, retained in the 2022 update) commits to create an additional carbon sink of 2.5 to 3 billion tonnes of CO₂ equivalent through additional forest and tree cover by 2030. Its other targets are a 45% cut in emissions intensity of GDP from 2005 levels and about 50% of power capacity from non-fossil sources by 2030.
+
+Q 113 | fpt | Pests & Diseases
+In sandal, spike disease is caused by:
+(1) Bacteria
+(2) MLO
+(3) Virus
+(4) Fungi
+= 2
+~ Sandal spike disease, first reported from Kodagu (Coorg) in 1899, is caused by a phytoplasma, earlier called a mycoplasma-like organism (MLO). Infected trees produce small, stiff leaves crowded on shortened shoots, giving a spike-like look, and die within a few years. It spreads through insect vectors such as leafhoppers and is the most destructive disease of sandalwood.
+
+Q 114 | fel | Forest & Environment Laws
+Under which Section of the Indian Forest Act, 1927 is trespassing in a reserved forest punishable?
+(1) Section 25
+(2) Section 26
+(3) Section 35
+(4) Section 70
+= 2
+~ Section 26 of the Indian Forest Act, 1927 lists acts prohibited in reserved forests, including trespassing or pasturing cattle (s.26(1)(d)), setting fire, felling and quarrying, and prescribes imprisonment up to six months, a fine or both, plus compensation. Section 25 deals with stoppage of ways and water-courses, Section 35 with protection of forests for special purposes, and Section 70 applies the Cattle-trespass Act, 1871.
+
+Q 115 | ecw | Types of Ecosystems
+Match column A with column B
+Column A | Column B
+i. Sehimia-Dichanthium | a. Alpine region
+ii. Phragmitis-Saccharum | b. Marshy locality
+iii. Deschampsia-Deyeuxia | c. Black soils
+iv. Bothriochloa | d. High rainfall paddy fields
+(1) i-c, ii-b, iii-a, iv-d
+(2) i-a, ii-d, iii-b, iv-c
+(3) i-c, ii-a, iii-b, iv-d
+(4) i-a, ii-b, iii-c, iv-d
+= 1
+~ In the classical grouping of India's grass covers, the Sehima-Dichanthium type spreads over peninsular and central India, including its black soils (i-c). Phragmites-Saccharum-Imperata grows in moist, marshy, low-lying areas of the Gangetic and Brahmaputra plains (ii-b). Deschampsia-Deyeuxia is the temperate-alpine grass cover of the Himalaya (iii-a), and Bothriochloa grasses occur in high-rainfall paddy tracts (iv-d).
+
+Q 116 | fpt | Grazing & Human Impacts
+What grazing management practice involves moving livestock through six or more paddocks in sequence several times during the season?
+(1) Management intensive grazing
+(2) Rotational grazing
+(3) Leader-follower grazing
+(4) Forward creep grazing
+= 2
+~ In rotational grazing the pasture is divided into several paddocks (six or more in this definition) and the herd is moved through them in sequence several times a season, so each paddock is grazed for a short time and then rested to regrow. Leader-follower grazing sends high-need animals in first and others after them, and forward creep grazing lets young animals graze ahead of their mothers.
+
+Q 118 | fut | Wood Properties
+Which tree is commonly known as Axlewood?
+(1) Acacia nilotica
+(2) Anogeissus latifolia
+(3) Dalbergia sissoo
+(4) Azadirachta indica
+= 2
+~ Anogeissus latifolia (dhaura or bakli) is called axlewood because its hard, tough, elastic timber was used for cart axles, shafts and tool handles. The tree also yields ghatti gum and tanning material. Acacia nilotica is babul, Dalbergia sissoo is shisham and Azadirachta indica is neem.
+
+Q 119 | fut | Wood Properties
+What is the term for water contained within the cell wall of wood?
+(1) Free water
+(2) Capillary water
+(3) Hygroscopic water
+(4) Bound water
+= 4
+~ Water in wood is of two kinds: free (capillary) water in cell cavities and bound water held by hydrogen bonds within the cell walls. When all free water has gone but the walls are still saturated, the wood is at the fibre saturation point (about 25-30% moisture). Some texts also call cell-wall water hygroscopic water, but APPSC keyed bound water. (Official key; some sources differ.)
+
+Q 120 | anm | Snakes & Venomous Animals
+Which type of snake bite leads to neuroparalytic symptoms?
+(1) Krait
+(2) Python
+(3) Russell viper
+(4) Saw-scaled viper
+= 1
+~ The common krait (Bungarus caeruleus) has neurotoxic venom that blocks nerve-muscle transmission, causing drooping eyelids, difficulty in swallowing and breathing, and paralysis, often after a nearly painless bite at night. Russell's viper and saw-scaled viper venoms are mainly haemotoxic, causing bleeding, swelling and kidney injury, and the python is non-venomous.
+
+Q 121 | anm | Birds
+Match the following Bird Species with Their Migration Patterns.
+1. Bar-headed Goose | a. Winter visitor to Indian wetlands, migrating from Siberia
+2. Amur Falcon | b. Migrates from Mongolia to regions in Rajasthan and Gujarat
+3. Siberian Crane | c. Migrate to North East India on their enroute to Southern Africa
+4. Demoiselle Crane | d. High-altitude migration over the Himalayas
+(1) 1-d; 2-b; 3-c; 4-a
+(2) 1-d; 2-c; 3-a; 4-b
+(3) 1-a; 2-d; 3-b; 4-c
+(4) 1-b; 2-a; 3-d; 4-c
+= 2
+~ The bar-headed goose flies over the Himalayas at great heights between Central Asia and India (1-d). Amur falcons stop in Nagaland and other parts of North-East India on their way to southern Africa (2-c). The Siberian crane wintered in Indian wetlands such as Keoladeo (3-a). Demoiselle cranes come from Mongolia and Central Asia to Khichan (Rajasthan) and Gujarat (4-b).
+
+Q 122 | anm | Birds
+Which of the following bird species has a casque?
+(1) Alexandrine parakeet
+(2) Great hornbill
+(3) White-browed fantail
+(4) Chukar
+= 2
+~ A casque is a horny, helmet-like growth on top of the bill, typical of hornbills. The great hornbill (Buceros bicornis), the state bird of Kerala and Arunachal Pradesh, has a large yellow-and-black U-shaped casque. The Alexandrine parakeet, white-browed fantail and chukar partridge have no casque.
+
+Q 123 | ecw | Wildlife & Protected Areas
+Which of the following is the first bird sanctuary established in India?
+(1) Nal Sarovar Bird Sanctuary
+(2) Bharatpur Bird Sanctuary
+(3) Sultanpur Bird Sanctuary
+(4) Vedanthangal Bird Sanctuary
+= 4
+~ Vedanthangal in Chengalpattu district of Tamil Nadu is India's oldest bird sanctuary. Villagers protected its nesting waterbirds for centuries; the British government took steps to protect the birds from 1798, and it was officially declared a sanctuary in 1936. Nal Sarovar (Gujarat), Bharatpur (Rajasthan) and Sultanpur (Haryana) were notified much later.
+
+Q 125 | anm | Snakes & Venomous Animals
+Local necrosis, ecchymosis, blistering, painful swelling and compartment syndrome are symptoms of the bite of which snake?
+(1) Viper
+(2) Sea Snake
+(3) Rat Snake
+(4) Flat Tailed Sea Snake
+= 1
+~ Viper venom (Russell's viper, saw-scaled viper) is haemotoxic and cytotoxic: it destroys tissue and blood vessels, causing painful swelling, bruising (ecchymosis), blisters, local necrosis and sometimes compartment syndrome, along with bleeding disorders. Sea snake venom is mainly myotoxic and neurotoxic with little local damage, and the rat snake is non-venomous.
+
+Q 126 | anm | Economic Zoology
+Supersedure in apiculture refers to ________.
+(1) a honeybee colony naturally replacing their existing queen bee
+(2) laying of eggs by queen honeybee
+(3) feeding of royal jelly by nurse bees
+(4) a collection of polled in corbicula
+= 1
+~ Supersedure is the natural replacement of an old, injured or failing queen: the workers rear a new queen in a few queen cells, and she takes over, usually without the colony swarming. Egg laying by the queen, feeding of royal jelly by nurse bees and carrying pollen in the corbicula (pollen basket) are different activities.
+
+Q 127 | anm | Snakes & Venomous Animals
+In which of the following arthropods is the first pair of legs on the cranial segment modified into pincer-like forcipules?
+(1) Millipedes
+(2) Cicadas
+(3) Centipedes
+(4) Wasps
+= 3
+~ In centipedes (class Chilopoda) the first pair of trunk legs, just behind the head, is modified into forcipules (poison claws) that inject venom into prey. No other animal group has them. Millipedes have two pairs of legs on most segments and no venom claws, while cicadas and wasps are insects; wasps sting with a modified ovipositor.
+
+Q 128 | fel | Forest & Environment Laws
+What does Schedule IV of the Wild Life (Protection) Amendment Act, 2022, include?
+(1) Protected plant species
+(2) Highest-level protected species of animals
+(3) Vermins
+(4) Species listed under CITES
+= 4
+~ The Wild Life (Protection) Amendment Act, 2022 cut the schedules from six to four: Schedule I covers animals with the highest protection, Schedule II animals with lesser protection, Schedule III protected plants, and Schedule IV specimens listed in the Appendices of CITES. The separate vermin schedule was removed.
+
+Q 129 | fel | Forest Policy
+Which of the following statements is NOT true with respect to the National Forest Policy, 1988?
+(1) At least two-third of the country's land should be under forest or tree cover.
+(2) Mobilising a massive people's movement, including women, to achieve these goals and reduce pressure on forests.
+(3) Connecting protected areas with corridors is crucial to maintaining genetic continuity in separated wildlife populations.
+(4) Fuel-efficient chulhas as a measure of conservation of fuelwood need to be popularised in rural areas.
+= 1
+~ The National Forest Policy, 1988 sets the national goal of at least one-third of the total land area under forest or tree cover; the two-thirds target applies only to hills and mountainous regions, so statement 1 is not true. The policy does call for a massive people's movement involving women, corridors linking protected areas, and saving fuelwood.
+
+Q 130 | fel | Forest & Environment Laws
+In which landmark judgment did the Supreme Court uphold the Public Trust Doctrine in India?
+(1) Gaurav Bansal vs. Union of India
+(2) MC Mehta vs. Kamal Nath
+(3) TN Godavarman Thirumulpad vs. Union Of India And Ors
+(4) Ratlam Municipality vs. Vardicharan
+= 2
+~ In M.C. Mehta v. Kamal Nath (1997), about a motel that diverted the Beas river near Kullu, the Supreme Court held that the State is a trustee of natural resources such as rivers, forests, sea shores and air, which it must protect for the public. The Godavarman case is about the meaning of forest, and the Ratlam case is about public nuisance.
+
+Q 131 | ecw | Wildlife & Protected Areas
+What event in the 1980s led to the migration of elephants into the Palamaner region of Andhra Pradesh?
+(1) Construction of a new wildlife sanctuary
+(2) Introduction of elephants for tourism purposes
+(3) Deforestation in Andhra Pradesh
+(4) Drought conditions in Hosur-Dharmapuri reserve forest and Bannerghatta National Park
+= 4
+~ Between 1983 and 1986, drought and loss of habitat drove elephant herds out of the Hosur-Dharmapuri forests of Tamil Nadu and Bannerghatta National Park in Karnataka into the Palamaner-Kuppam forests of Chittoor district, which earlier had no resident elephants. To protect them, the Koundinya Wildlife Sanctuary was notified in 1990.
+
+Q 132 | fel | Forest & Environment Laws
+What does Section 28 of the Andhra Pradesh Forest Act, 1967, state?
+(1) Power to issue notification reserving tree
+(2) Power to close forest against pasture
+(3) Power to declare protected forest to cease to be protected forest
+(4) Power to declare reserved forest as no longer reserved
+= 3
+~ Under Section 28 of the Andhra Pradesh Forest Act, 1967, the Government may by notification direct that a protected forest, or part of it, shall cease to be a protected forest from a date fixed. The other powers are in other sections: Section 23 (reserved forest no longer reserved), Section 25 (closing a forest against pasture) and Section 26 (reserving trees).
+
+Q 133 | fim | Sampling & Inventory
+How many quadrats of 20 x 20 square metres can be taken from an area of 20 hectares if the sampling intensity is 1%?
+(1) 2
+(2) 3
+(3) 4
+(4) 5
+= 4
+~ Area = 20 ha = 20 × 10,000 = 200,000 m². At 1% sampling intensity the area to be sampled is 1% of 200,000 = 2,000 m². One quadrat of 20 m × 20 m covers 400 m², so the number of quadrats = 2,000 ÷ 400 = 5.
+
+Q 134 | fim | Sampling & Inventory
+Which sampling technique is commonly used to capture birds and bats for ecological research?
+(1) Mist netting
+(2) Dipnet
+(3) Creel survey
+(4) Seines
+= 1
+~ Mist nets are fine, almost invisible nylon or polyester nets stretched between two poles; flying birds and bats get caught in their loose pockets and can be removed unharmed for ringing, measuring and release. Dip nets catch aquatic insects and small fish, seines are fishing nets dragged through water, and a creel survey interviews anglers about their catch.
+
+Q 135 | fim | Sampling & Inventory
+What is the term used to refer to the population value of a characteristic?
+(1) Probabilty
+(2) Estimate
+(3) Statistics
+(4) Parameter
+= 4
+~ A parameter is a value that describes a whole population, such as the true mean volume per hectare of a forest. A statistic is the corresponding value calculated from a sample, and when it is used to guess the parameter it is called an estimate. Probability measures the likelihood of an event.
+
+Q 136 | fim | Tree & Stand Measurement
+What is the term for the ratio between the mid diameter and the diameter at breast height?
+(1) Form height
+(2) Form quotient
+(3) Normal form factor
+(4) Absolute form factor
+= 2
+~ Form quotient is the ratio of the diameter at a point higher up the stem, usually mid-height (Schiffel's normal form quotient), to the diameter at breast height; it describes stem taper. Form factors are ratios of tree volume to the volume of a cylinder of reference diameter and height, and form height is form factor multiplied by height.
+
+Q 137 | fel | Forest & Environment Laws
+The first Indian Forest Act was drafted in the year:
+(1) 1857
+(2) 1865
+(3) 1900
+(4) 1958
+= 2
+~ The first Indian Forest Act (Act VII of 1865) was passed soon after the Imperial Forest Department was set up in 1864 under Dietrich Brandis. It let the government declare forests and take control of timber. It was replaced by the more comprehensive Indian Forest Act, 1878, and then by the Indian Forest Act, 1927, which is still in force.
+
+Q 138 | fim | Sampling & Inventory
+Who developed regression analysis?
+(1) Karl Pearson
+(2) Charles Edward Spearman
+(3) Francis Galton
+(4) Thomas Bayes
+= 3
+~ Sir Francis Galton introduced regression in the 1880s while studying the heights of parents and their children, finding that children's heights tended to move back towards the average ("regression towards mediocrity"). Karl Pearson later developed the correlation coefficient formally, Spearman gave rank correlation, and Bayes is known for Bayes' theorem on probability.
+
+Q 139 | fim | Sampling & Inventory
+Compute the geometric mean of 4, 9.
+(1) 2
+(2) 4
+(3) 6
+(4) 8
+= 3
+~ The geometric mean of n numbers is the nth root of their product. For two numbers 4 and 9: GM = √(4 × 9) = √36 = 6. (For comparison, their arithmetic mean is (4 + 9) ÷ 2 = 6.5, and the geometric mean is always less than or equal to the arithmetic mean.)
+
+Q 140 | ens | Climate & Global Issues
+A statement is given followed by two conclusions numbered I and II. Decide which of the given conclusions logically follow(s) from the statements.
+Statement:
+The National Disaster Management Plan 2019 aligns India's disaster management framework with the Sendai Framework for Disaster Risk Reduction (SFDRR) 2015–2030.
+Conclusions:
+1: India's disaster management strategies are synchronised with international disaster risk reduction frameworks.
+2: The National Disaster Management Plan 2019 ensures complete protection from all disasters in India.
+(1) Only conclusion 1 follows.
+(2) Only conclusion 2 follows.
+(3) Both conclusions 1 and 2 follow.
+(4) Neither conclusion 1 nor 2 follows.
+= 1
+~ If the plan aligns India's framework with the Sendai Framework, an international framework for disaster risk reduction, then India's strategies are in step with international frameworks, so conclusion 1 follows. Aligning with a framework only reduces risk; nothing in the statement says it guarantees complete protection from all disasters, so conclusion 2 does not follow.
+
+Q 141 | ens | Climate & Global Issues
+What are the potential health effects of increased exposure to ultraviolet (UV) radiation from ozone layer depletion on humans?
+(1) Eye cataracts and skin cancer
+(2) Respiratory infections
+(3) Hearing loss
+(4) Digestive disorders
+= 1
+~ The stratospheric ozone layer absorbs most UV-B radiation. When it thins, more UV-B reaches the ground, damaging DNA in skin and eye cells and raising the risk of skin cancers (including melanoma), cataracts and snow blindness, and also weakening the immune system. Respiratory infections, hearing loss and digestive disorders are not direct effects of UV exposure.
+
+Q 142 | ens | Pollution
+What is the CPCB's specified MPN/100 ml for total coliform bacteria in a designated drinking water source that undergoes disinfection but not conventional treatment?
+(1) ≤ 50
+(2) 51-70
+(3) 71-100
+(4) 101-125
+= 1
+~ In CPCB's designated-best-use classification, Class A water (drinking water source without conventional treatment but after disinfection) must have total coliforms of 50 MPN/100 ml or less, along with pH 6.5-8.5, dissolved oxygen of at least 6 mg/l and BOD of 2 mg/l or less. Outdoor bathing water (Class B) allows up to 500 and Class C up to 5,000 MPN/100 ml.
+
+Q 143 | ens | Pollution
+Match column A with column B
+Column A | Column B
+i. Bhopal Gas tragedy | a. 1986
+ii. Chernobyl disaster | b. 1952
+iii. Great Smog of London | c. 1976
+iv. Seveso disaster | d. 1984
+(1) i-a, ii-b, iii-c, iv-d
+(2) i-b, ii-a, iii-c, iv-d
+(3) i-d, ii-a, iii-b, iv-c
+(4) i-a, ii-d, iii-b, iv-c
+= 3
+~ The Bhopal gas tragedy (methyl isocyanate leak from the Union Carbide plant) occurred on 2-3 December 1984 (i-d). The Chernobyl nuclear reactor explosion occurred on 26 April 1986 (ii-a). The Great Smog of London was in December 1952 (iii-b), and the Seveso dioxin release in Italy was in July 1976 (iv-c).
+
+Q 144 | fse | Survey & Engineering
+Which of the following is NOT a rolled-fill method for constructing an earthen dam?
+(1) Homogenous embankment
+(2) Zoned embankment
+(3) Diaphragm type embankment
+(4) Hydraulic type embankment
+= 4
+~ By construction method, earth dams are rolled-fill or hydraulic-fill. In rolled-fill dams, soil is spread in layers and compacted by rollers, and they are built as homogeneous, zoned or diaphragm embankments. In a hydraulic-fill dam, soil is carried by water through pipes and deposited, the fines settling in the core, so it is not a rolled-fill method.
+
+Q 145 | ens | Environmental Laws & Ethics
+Which of the given options is correct for the following statement and conclusions?
+Statement:
+The Water Prevention and Control of Pollution Act (1974) empowers State Governments to restrict the application of the Act to certain areas after consultation with the State Board.
+Conclusion 1:
+State Governments have the authority to designate specific areas where the Act's provisions will apply, allowing for targeted water pollution control measures.
+Conclusion 2:
+The effectiveness of water pollution control measures may vary between regions, depending on the areas designated by the State Government for the application of the Act.
+(1) Only Conclusion 1 follows the Statement.
+(2) Only Conclusion 2 follows the Statement.
+(3) Both Conclusions 1 and 2 follow the Statement.
+(4) Both the Statement and Conclusions are incorrect.
+= 3
+~ Section 19 of the Water (Prevention and Control of Pollution) Act, 1974 lets a State Government, after consulting the State Board, restrict the Act to notified water pollution, prevention and control areas, so the statement is correct. If the State can choose the areas, it designates where the Act applies (conclusion 1), and control may differ between covered and uncovered regions (conclusion 2).
+
+Q 146 | fut | Logging & Wood Technology
+What substance is added to water to dissolve shellac and create a water-based varnish?
+(1) Turpentine
+(2) Spirit
+(3) Borax
+(4) Vegetable oil
+= 3
+~ Shellac, refined lac resin, does not dissolve in plain water but dissolves in alkaline solutions. Boiling it in water with borax (or ammonia) gives a water-based shellac varnish. Spirit (alcohol) dissolves shellac to make a spirit varnish or French polish, not a water-based one, while turpentine and vegetable oils are used in oil varnishes.
+
+Q 147 | fse | Survey & Engineering
+Which of the following is NOT the advantage of dumpy level over the wye level?
+(1) Simpler construction with fewer movable parts
+(2) Fewer adjustments to be made
+(3) Adjustment tested with greater rapidity and ease
+(4) Longer life of the adjustments
+= 3
+~ In a dumpy level the telescope is rigidly fixed to the spindle, so it has fewer movable parts, fewer adjustments and adjustments that stay right longer. In a wye level the telescope rests in Y-shaped supports and can be lifted out and reversed, so its adjustments can be tested more quickly and easily. Option 3 is an advantage of the wye level.
+
+Q 148 | fse | Survey & Engineering
+Which of the following instruments is NOT used for setting out gradient?
+(1) Clinometer
+(2) Ghat tracer
+(3) Prismatic compass
+(4) Dumpy level
+= 3
+~ A prismatic compass measures horizontal bearings of survey lines and cannot measure or set a slope. Gradients for forest roads and paths are set out with a clinometer (such as the Abney level), a ghat tracer (designed to lay out a given gradient on hill roads) or a levelling instrument such as the dumpy level.
+
+Q 149 | fse | First Aid
+What is a characteristic feature of a first-degree burn?
+(1) Minor epithelial damage, presence of redness
+(2) Partial thickness burn and scalds, may be painful
+(3) Full thickness burn
+(4) Causes deep tissue necrosis
+= 1
+~ A first-degree (superficial) burn damages only the epidermis: the skin is red, dry and painful but has no blisters, and it heals in about a week without scarring (for example, mild sunburn). Partial-thickness burns with blisters are second-degree, full-thickness burns are third-degree, and burns reaching muscle or bone with deep necrosis are fourth-degree.
+
+Q 150 | fse | Survey & Engineering
+Which type of concrete paint among the following is used for areas with high chemical exposure?
+(1) Epoxy Paint
+(2) Acrylic Latex Paint
+(3) Polyurethane Coatings
+(4) Polyurea Coatings
+= 1,3
+~ APPSC accepted both options 1 and 3. Epoxy paints and polyurethane coatings both cure into hard, dense, cross-linked films that resist acids, alkalis, oils and solvents, so both are used on concrete floors in factories, laboratories, garages and chemical plants. Acrylic latex paint is a water-based paint for general use with little chemical resistance.
