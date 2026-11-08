@@ -1000,13 +1000,13 @@ ASO_BLURB = ('economics (economic theory, international economics and the Indian
              'central tendency, dispersion and skewness, correlation, time series and index numbers) and basics of computers')
 ASO_PAPERS = [
   dict(id='aso25', file='appsc-aso-2025-paper2.txt', year=2025, stage='Written Examination Paper II (Subject)', short='ASO 2025 Paper 2',
-       kwname='APPSC ASO 2025 Paper 2 (Statistics & Economics)',
+       kwname='APPSC ASO 2025 Paper 2',
        title='APPSC Assistant Statistical Officer 2025: Paper II (Statistics, Economics, Accountancy & Computers)', notif='Notification 12/2024 · CBT', held='29 April 2025',
        key="APPSC's final key", fmt='mcq', slug='appsc-aso-2025-paper-2-statistics-economics-question-paper-with-answers',
        alt='Statistics, Economics, Accountancy & Computers', te_paper='పేపర్-2 సబ్జెక్ట్ (స్టాటిస్టిక్స్, ఎకనామిక్స్)',
        blurb='Paper II (Subject): ' + ASO_BLURB + ', computer-based test, 150 questions, 150 marks, 150 minutes, in English and Telugu (the computer questions in English only).'),
   dict(id='aso22', file='appsc-aso-2022-paper2.txt', year=2022, stage='Written Examination Paper II (Subject)', short='ASO 2022 Paper 2',
-       kwname='APPSC ASO 2022 Paper 2 (Statistics & Economics)',
+       kwname='APPSC ASO 2022 Paper 2',
        title='APPSC Assistant Statistical Officer 2022: Paper II (Economics & Statistics)', notif='Notification 20/2021 · CBT', held='4 November 2022',
        key="APPSC's final key", fmt='mcq', slug='appsc-aso-2022-paper-2-statistics-economics-question-paper-with-answers',
        alt='Economics & Statistics', te_paper='పేపర్-2 సబ్జెక్ట్ (ఎకనామిక్స్, స్టాటిస్టిక్స్)',
