@@ -651,6 +651,12 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .etile-ic{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.18);flex-shrink:0}.etile-ic svg{width:22px;height:22px}
 .etile-btn{align-self:flex-start;display:inline-flex;padding:9px 16px;border-radius:999px;background:var(--accent);color:#fff;font-weight:700;font-size:14.5px}
 .etile.fx:hover .etile-btn{filter:brightness(1.08)}
+.etile-two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.etile-sub{display:flex;flex-direction:column;gap:5px;padding:12px 12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface-2);color:inherit;text-decoration:none;transition:border-color .15s}
+.etile-sub:hover{border-color:var(--accent)}.etile-sub b{font-size:18px}
+.etile-sub>span:not(.etile-btn){font-size:13.5px;color:var(--muted);line-height:1.35}
+.etile-sub .etile-btn{margin-top:auto;padding:7px 14px;font-size:13.5px;white-space:nowrap}
+@media (max-width:360px){.etile-two{grid-template-columns:1fr}}
 .mbtns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .mbtn{display:inline-flex;align-items:center;gap:5px;padding:6px 13px;border-radius:999px;border:1.5px solid var(--accent);color:var(--accent-text);background:var(--surface);font-weight:700;font-size:14px;text-decoration:none;line-height:1.2}
 .mbtn:hover{background:var(--accent-soft)}
@@ -835,7 +841,7 @@ details.upc .exams{margin-top:8px}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ts-pc-3c633d7181.js"></script>
+<script src="data/ts-pc-e119cec023.js"></script>
 <script>
 (function(){
 "use strict";

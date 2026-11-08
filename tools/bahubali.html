@@ -133,6 +133,21 @@ section.blk .lead{color:var(--muted);margin-top:6px;max-width:70ch}
 .test .pdfs{display:flex;gap:12px;flex-wrap:wrap;font-size:14px}
 .test.soon{background:transparent;box-shadow:none;border-style:dashed}
 .test.soon .no{color:var(--muted)}
+.series{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+@media (max-width:700px){.series{grid-template-columns:1fr}}
+.stile{display:flex;flex-direction:column;gap:8px;padding:0 0 18px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+.stile:hover{border-color:var(--accent);transform:translateY(-1px)}
+.stile>:not(.shd){margin-inline:20px}
+.shd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 20px;color:#fff}
+.shd.pre{background:linear-gradient(135deg,#c2410c,#fb923c)}.shd.mai{background:linear-gradient(135deg,#1e3a8a,#3b82f6)}
+.shd .k{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.shd .st{font-family:var(--f-mono);font-size:12px;background:rgba(255,255,255,.2);padding:3px 9px;border-radius:999px}
+.stile h3{font-size:24px;font-weight:800;margin-top:6px}.stile p{color:var(--muted);font-size:15px}
+.stile .go{align-self:flex-start;display:inline-flex;padding:9px 16px;border-radius:999px;background:var(--accent);color:#fff;font-weight:700;font-size:14.5px;margin-top:auto}
+.test .secs a{background:var(--surface-2);border-radius:8px;padding:5px 8px;line-height:1.3;color:var(--accent-text);text-decoration:none;font-weight:600}
+.test .secs a:hover{background:var(--accent-soft)}
+.badge.free{background:var(--gold-soft);color:var(--gold-ink)}
+a.btn.go-start{flex:1;text-decoration:none}
 .score-line{font-size:14.5px}
 .score-line b{font-family:var(--f-mono)}
 .feat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
@@ -287,27 +302,27 @@ body.locked{overflow:hidden}
 <main id="landing">
 <section class="hero"><div class="wrap">
   <div>
-    <p class="eyebrow">APPSC Group-II Mains 2026 · Paper I &amp; Paper II · Notification 37/2026</p>
+    <p class="eyebrow">APPSC Group-II 2026 · Prelims (Screening) &amp; Mains · Notification 37/2026</p>
     <h1><em>Bahubali</em> Test Series</h1>
     <p class="sub">{{HERO_SUB}}</p>
-    <p class="te" lang="te">APPSC గ్రూప్-2 మెయిన్స్ పూర్తి నిడివి టెస్టులు — ప్రతి టెస్టులో 150 ప్రశ్నలు, ఇంగ్లీష్ మరియు తెలుగులో, వివరణలతో.</p>
+    <p class="te" lang="te">APPSC గ్రూప్-2 ప్రిలిమ్స్ (స్క్రీనింగ్) మరియు మెయిన్స్ పూర్తి నిడివి టెస్టులు — ప్రతి టెస్టులో 150 ప్రశ్నలు, ఇంగ్లీష్ మరియు తెలుగులో, వివరణలతో.</p>
     <div class="chips">
       <span class="chip">150 questions per test</span><span class="chip">150 minutes</span><span class="chip">⅓ negative marking</span><span class="chip">English + తెలుగు</span><span class="chip">Explanations with official sources</span>
     </div>
   </div>
   <div class="buy" id="buy">
-    <p class="eyebrow muted">Whole series · Paper I + Paper II</p>
+    <p class="eyebrow muted">Both series · Prelims + Mains</p>
     <div class="price"><b>₹{{PRICE}}</b><span>All-in-One Pass: all {{TOTAL_TESTS}} tests + everything else on the site</span></div>
     <ul>
       <li>{{NLIVE}} live now ({{LIVE_DESC}}); the rest are upcoming and unlock free as they are added</li>
       <li>Online exam with timer, OMR-style palette and instant score</li>
-      <li>Question booklet and answer PDFs for every live test</li>
+      <li>Question booklet and answer PDFs for every live Mains test</li>
       <li>The same pass opens every previous paper of every exam, the other mock series and the study books, for 12 months</li>
     </ul>
     {{BUY_BUTTON}}
     <div class="unlock" id="unlockBox">
       <p class="msg" id="passMsg" role="status"></p>
-      <label for="code">Bought the series earlier? Enter your access code</label>
+      <label for="code">Bought Bahubali Mains earlier? Enter your access code</label>
       <form class="row" id="unlockForm" autocomplete="off"><input id="code" name="code" placeholder="BAHU-XXXX-XXXX" maxlength="24" spellcheck="false" autocapitalize="characters"><button class="btn btn-primary" type="submit">Unlock</button></form>
       <p class="msg" id="unlockMsg" role="status"></p>
     </div>
@@ -319,8 +334,10 @@ body.locked{overflow:hidden}
   </div>
 </div></section>
 
-<section class="blk" id="tests"><div class="wrap">
-  <h2>All tests</h2>
+{{SERIES_TILES}}
+{{PRELIMS_HTML}}
+<section class="blk" id="mains"><div class="wrap"><a id="tests"></a>
+  <h2>Bahubali Mains · Paper I &amp; Paper II</h2>
   <p class="lead">Each test is a full Mains paper: 150 questions, 150 marks, 150 minutes, exactly as APPSC sets it. Write it online in one sitting, then see your score, section-wise and topic-wise analysis, and every answer explained.</p>
   {{PAPERS_HTML}}
 </div></section>
