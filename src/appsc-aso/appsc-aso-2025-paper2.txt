@@ -1,0 +1,1555 @@
+# APPSC Assistant Statistical Officer in A.P. Economics & Statistical Subordinate Service (Notification 12/2024), Paper II (Subject), computer-based test held 29 April 2025 (150 questions, 1 mark each, 1/3 negative).
+# Answers: APPSC final key (APOnline master question paper "Paper II Subject", correct option ticked). Explanations by Learn with Anil.
+# Left out (ignored by APPSC for all candidates): 134. Q136-150 (computers) were printed in English only, except Q140.
+
+Q 1 | ect | Money, Banking & Inflation
+A statement has been given below followed by two conclusions. Assuming given statement to be true which of the following options will be correct for given conclusions.
+Statement: The Reserve Bank of India (RBI) increases the Cash Reserve Ratio (CRR) to reduce excess liquidity in the economy.
+Conclusions:
+I. An increase in CRR leads to a decrease in the lending capacity of banks.
+II. An increase in CRR results in higher money supply in the economy.
+(1) Only Conclusion 1 follows
+(2) Only Conclusion 2 follows
+(3) Both 1 and 2 follow
+(4) Neither 1 nor 2 follows
+= 1
+~ CRR is the share of deposits that banks must keep with the RBI, so raising it leaves banks less money to lend and Conclusion I follows. A higher CRR is a contractionary measure that reduces credit creation and the money supply, so Conclusion II states the opposite of what happens.
+
+Q 2 | ind | Population & Human Development
+Which occupational category includes laborers who directly depend on natural resources for their work?
+(1) Secondary occupational structure
+(2) Tertiary occupational structure
+(3) Primary occupational structure
+(4) Quaternary occupational structure
+= 3
+~ The primary sector covers occupations that use natural resources directly, such as agriculture, forestry, fishing and mining. The secondary sector is manufacturing, the tertiary sector is services and the quaternary sector is knowledge-based work.
+
+Q 3 | ect | Money, Banking & Inflation
+Match the List – I with List – II and select the correct answer from the options given below:
+List-I | List-II
+A. cash reserve ratio | i. Buying and selling of government securities
+B. Expansionary monetary policy | ii. Mandatory Percentage of reserves to be maintained by commercial banks
+C. Open market operations | iii. Increasing money supply in the economy
+D. Central bank of a country | iv. manages the monetary policy of a country
+(1) A-iii, B-i, C-iv, D-ii
+(2) A-ii, B-iii, C-i, D-iv
+(3) A-iii, B-iv, C-i, D-ii
+(4) A-ii, B-i, C-iv, D-iii
+= 2
+~ CRR is the mandatory percentage of deposits that commercial banks keep as reserves (A-ii); expansionary monetary policy increases the money supply (B-iii); open market operations are the central bank's buying and selling of government securities (C-i); the central bank manages a country's monetary policy (D-iv).
+
+Q 4 | ine | Trade & Protection
+Which of the following is most likely not the benefit accrued due to Foreign trade ?
+(1) Boosts economic growth by allowing countries to specialize in few commodities
+(2) Facilitates exchange of technology and innovation between countries
+(3) Expansion of market to the world economy
+(4) Increase in the government expenditure on infrastructure
+= 4
+~ Specialisation, exchange of technology and a wider world market are direct gains from foreign trade. Higher government spending on infrastructure is a fiscal policy decision, not a benefit that arises from trade itself.
+
+Q 5 | ind | Agriculture, Industry & Regional Imbalances
+Which one of the following is not a consequence of rural urban disparities prevailing in an economy?
+(1) Overcrowding of cities with better opportunities leading to increased level of pollution and congestion
+(2) People leaving rural areas in search of better opportunities leading to rural urban migration
+(3) Infrastructure and law and governance of Urban areas will be overburdened
+(4) More people will be moving to rural areas in order to work on agricultural sector
+= 4
+~ Rural-urban disparities push people from villages to cities, which causes congestion and pollution and overburdens urban infrastructure and governance. People moving to rural areas to work in agriculture is the opposite of what such disparities cause.
+
+Q 6 | ine | Trade & Protection
+Given below are two statements, one is labelled as Assertion (A) and the other is labelled as Reason (R):
+Assertion (A): Free trade zones promote trade without any restriction between countries agreed to it.
+Reason (R): The countries agree to free trade because both exporting and importing mutually gain from trade.
+In the context of the above two statements, which one of the following is correct?
+(1) Both (A) and (R) are true and (R) is the correct explanation of (A)
+(2) Both (A) and (R) are true and (R) is not the correct explanation of (A).
+(3) (A) is true, but (R) is false
+(4) (A) is false, but (R) is true
+= 1
+~ In a free trade zone (free trade area) the member countries remove tariffs and other barriers on trade among themselves, so A is true. Countries agree to such arrangements because both the exporting and the importing sides gain from trade, so R correctly explains A.
+
+Q 7 | ind | Poverty, Unemployment & Inequality
+Consider the following statements:
+Statement A: The Poverty line is determined by the minimum income at which food and non food basic necessities can be met.
+Statement B: The headcount index measures the percentage of population living above the poverty line
+Which of the statements given above is/are correct?
+(1) Only Statement A is correct
+(2) Only Statement B is correct
+(3) Both Statements A and B are correct
+(4) Neither Statement A nor B are correct
+= 1
+~ The poverty line is the minimum income needed to meet basic food and non-food needs, so A is true. The headcount index is the share of people living BELOW the poverty line, not above it, so B is false.
+
+Q 8 | ect | Market Structures & Pricing
+Which of the given statements is/are correct?
+Statement A: Market demand and supply determine the equilibrium in the perfect competitive industry, and all firms act as a price taker.
+Statement B: A firm decides what price to be charged in the perfect competitive market.
+(1) Only statement A is true
+(2) Only statement B is true
+(3) Both statements A and B are correct
+(4) Neither statement A nor B are correct
+= 1
+~ Under perfect competition the price is set by market (industry) demand and supply, and each firm, being too small to affect it, is a price taker, so A is true. Because the firm must accept the market price, it cannot decide what price to charge, so B is false.
+
+Q 9 | ine | Trade & Protection
+In which of the following situations does Aid work better than Trade?
+(1) For achieving specialisation in production
+(2) For relief in case of emergency
+(3) For increase in productivity
+(4) For increased market access
+= 2
+~ Trade works through markets and helps over time by promoting specialisation, productivity and market access. In an emergency such as a famine, flood or war, immediate relief is needed, and aid (grants of food, medicine and money) can deliver it quickly where trade cannot.
+
+Q 10 | ect | Production, Costs & Factor Pricing
+Capital does NOT boost economic growth in which of the following ways?
+(1) It leads to increase in labor productivity
+(2) It helps in development of communication and transport
+(3) It is required for development of industrial and agricultural sector
+(4) It is required for changing taste and preferences of the consumer
+= 4
+~ Capital raises growth by making labour more productive, building transport and communication facilities, and developing industry and agriculture. Changing consumers' tastes and preferences is not a way in which capital formation boosts economic growth.
+
+Q 11 | ine | IMF, World Bank & Monetary System
+Which of the following is NOT a key feature of a good International Monetary system?
+(1) Maximises the flow of international trade
+(2) Maximises the flow of international investments
+(3) Equilibrium distribution of gains from trade between all the nations
+(4) Equilibrium distribution of income within each nation of the world
+= 4
+~ A good international monetary system is judged by how far it maximises the flow of international trade and investment and leads to an equitable distribution of the gains from trade among nations. The distribution of income within each nation is a matter of domestic policy, not a feature of the international monetary system.
+
+Q 12 | ect | Public Finance & Budget
+If budget account of government is in the surplus, what does it mean?
+(1) Government tax revenue collection is more than government spending and government transfer payments
+(2) Government tax revenue is less than Government spending and Government transfer payments
+(3) National debt will increase
+(4) Government will increase its borrowing, so demand of loanable funds will increase
+= 1
+~ A budget surplus means the government's revenue (mainly taxes) is greater than its total spending, including transfer payments. With a surplus the government needs no new borrowing, so national debt and its demand for loanable funds do not rise; options 2–4 describe a deficit.
+
+Q 13 | ect | National Income
+In income method of national income accounting, which of the following is NOT included while calculating the national income of India?
+(1) Compensation of employees
+(2) Net interest earned by Indians
+(3) Profit of corporates
+(4) Salaries paid to Australian citizen working in Indian embassy in Australia
+= 4
+~ National income counts the factor incomes earned by the normal residents of India: compensation of employees, interest, rent and profits. An Indian embassy abroad is part of India's domestic territory, but Australian citizens hired there are normal residents of Australia, so their salaries are factor income paid to non-residents and are excluded from India's national income.
+
+Q 14 | ect | Demand, Supply & Elasticity
+Which of the following conditions must be prevailing in the market if market is NOT operating at equilibrium price determined?
+(1) Aggregate demand = aggregate supply
+(2) No shortage and no surplus
+(3) Shortage in the market
+(4) Demand = supply
+= 3
+~ At the equilibrium price, quantity demanded equals quantity supplied, so there is no shortage and no surplus; options 1, 2 and 4 all describe equilibrium. When the market is not at the equilibrium price, demand and supply do not match, and of the options given only a shortage (excess demand, which arises when price is below equilibrium) describes such a situation.
+
+Q 15 | ect | Demand, Supply & Elasticity
+Demand of good or service is said to be elastic if its elasticity satisfies which of the following conditions?
+(1) Ed < 1
+(2) Ed = 1
+(3) Ed > 1
+(4) Ed = 0
+= 3
+~ Demand is elastic when the percentage change in quantity demanded is greater than the percentage change in price, i.e. Ed > 1. Ed < 1 is inelastic demand, Ed = 1 is unitary elastic demand and Ed = 0 is perfectly inelastic demand.
+
+Q 16 | ine | Balance of Payments & Exchange Rates
+Match the following economic concepts with their correct descriptions:
+(i) Economic Terms:
+1. Balance of Payments (BoP)
+2. Balance of Trade (BOT)
+3. Autonomous Transactions
+(ii) Descriptions:
+A. Difference between the value of exports and value of imports of goods.
+B. Summaries the economic transactions of an economy with the rest of the World
+C. Occur due to economic reasons independent of the state of the Balance of Payments
+(1) 1 → A, 2 → B, 3 → C
+(2) 1 → C, 2 → A, 3 → B
+(3) 1 → B, 2 → A, 3 → C
+(4) 1 → A, 2 → C, 3 → B
+= 3
+~ The balance of payments summarises all economic transactions of a country with the rest of the world (1-B). The balance of trade is the difference between the value of exports and imports of goods (2-A). Autonomous transactions take place for economic motives such as profit, independent of the BoP position (3-C).
+
+Q 17 | ind | Population & Human Development
+Population density is generally expressed as:
+(1) Number of people per square kilometer
+(2) Number of houses per square kilometer
+(3) Number of towns per state
+(4) Number of people per household
+= 1
+~ Population density is the number of persons living per unit of area, usually expressed as persons per square kilometre. For example, India's density in Census 2011 was 382 persons per sq km.
+
+Q 18 | ind | Poverty, Unemployment & Inequality
+Match the List – I with List – II and select the correct answer from the options given below
+List-I | List-II
+A. Disguised unemployment | i. Primary sector.
+B. In India, largest percentage of labour force is employed in | ii. More people working in agriculture than required
+C. Informal sector | iii. movement of labor from one place to another for work
+D. migration | iv. no job security and unregulated work
+(1) A-iii, B-i, C-iv, D-ii
+(2) A-ii, B-iii, C-iv, D-i
+(3) A-iii, B-iv, C-i, D-ii
+(4) A-ii, B-i, C-iv, D-iii
+= 4
+~ Disguised unemployment means more people work in agriculture than are needed, so their marginal productivity is close to zero (A-ii). The largest share of India's labour force is employed in the primary sector (B-i). The informal sector has no job security and unregulated work (C-iv), and migration is the movement of labour from one place to another for work (D-iii).
+
+Q 19 | ect | Production, Costs & Factor Pricing
+Match the List – I with List – II and select the correct answer from the options given below:
+List-I | List-II
+A. Retained earnings | i. Investment in skill development and education
+B. Human capital creation | ii. Profits reinvested by the company instead of distributing as dividend
+C. Equity financing | iii. Investment in infrastructure and building
+D. Physical capital | iv. Raising funds by selling shares
+(1) A-iii, B-i, C-iv, D-ii
+(2) A-ii, B-iii, C-iv, D-i
+(3) A-iii, B-iv, C-i, D-ii
+(4) A-ii, B-i, C-iv, D-iii
+= 4
+~ Retained earnings are profits ploughed back into the company instead of being paid out as dividend (A-ii). Human capital is created by investing in education and skills (B-i). Equity financing raises funds by selling shares (C-iv), and physical capital means investment in infrastructure, buildings and machinery (D-iii).
+
+Q 20 | ind | Agriculture, Industry & Regional Imbalances
+Which one of the following is the agricultural policy implemented for the benefit of farmers/ producers?
+(1) Minimum support price
+(2) Public distribution system
+(3) Globalization
+(4) Special economic zones
+= 1
+~ The Minimum Support Price is the price, announced by the government on the recommendation of the CACP, at which it buys crops from farmers so that producers are protected from a fall in prices. The Public Distribution System mainly helps consumers, while globalisation and special economic zones are not policies for farm producers.
+
+Q 21 | ect | Public Finance & Budget
+Out of the following course of actions, which one comes under the fiscal policy?
+(1) Cash reserve ratio increased
+(2) Buying of government securities by central bank
+(3) Income tax rates have been decreased
+(4) Increase in the discount rate
+= 3
+~ Fiscal policy works through government taxation and expenditure, so cutting income tax rates is a fiscal measure. Raising the CRR, buying government securities (open market operations) and raising the discount (bank) rate are monetary policy tools of the central bank.
+
+Q 22 | ind | Planning & Economic Policies
+Which one of the following is the problem associated with economic planning in India which leads to economic reforms in early 1990’s?
+(1) At par performance of public sector
+(2) Balance of payment surplus
+(3) Effective Implementation of poverty removal programs
+(4) High inflation and fiscal deficit
+= 4
+~ By 1990–91 India faced high inflation (above 10%), a large fiscal deficit and a severe balance of payments crisis, which led to the economic reforms of 1991. The public sector was underperforming, the BoP was in deficit rather than surplus, and poverty programmes were poorly implemented, so options 1–3 are wrong.
+
+Q 23 | ind | Agriculture, Industry & Regional Imbalances
+Which one of the following is not the reason for increased regional imbalances?
+(1) Industrialization is limited to urban areas
+(2) Rural areas are still dependent on agriculture that too with less productive land
+(3) Natural factors like resource availability and environment
+(4) Uniform education system across regions
+= 4
+~ Regional imbalances grow because industry is concentrated in urban areas, rural areas remain dependent on low-productivity agriculture, and natural resources and environment differ from region to region. A uniform education system across regions would reduce imbalances, not increase them.
+
+Q 24 | ind | Inflation, Fiscal Deficit & External Debt
+Which of the following is one of the negative impact of External debt?
+(1) It help economic development if used wisely
+(2) Provide relief in case of crisis
+(3) Helps in infrastructure development
+(4) Dependency on foreign countries or institutions can lead to comprising political freedom
+= 4
+~ Options 1–3 are benefits of external borrowing. Heavy dependence on foreign governments or institutions for loans can force a country to accept their conditions and compromise its political (and economic) freedom, which is a negative impact.
+
+Q 25 | ect | Production, Costs & Factor Pricing
+Consider the following statements:
+Statement A: The increasing size of market enables the division of labor which in return lead to increase in the productivity.
+Statement B: Productivity of labor increases if more output can be produced using the same units of labor
+Which of the statements given above is/are correct?
+(1) Only Statement A is correct
+(2) Only Statement B is correct
+(3) Both Statements A and B are correct
+(4) Neither Statement A nor B are correct
+= 3
+~ Adam Smith held that the division of labour is limited by the extent of the market: a larger market allows a finer division of labour, which raises productivity, so A is correct. Labour productivity is output per unit of labour, so producing more output with the same units of labour means productivity has risen, and B is also correct.
+
+Q 26 | ect | Money, Banking & Inflation
+With reference to inflation, which of the following statements is/are correct?
+Statement A: Contractionary monetary policy is used by the central bank in order to keep a check on inflation.
+Statement B: Inflation can be measured by comparing the price of a single good with its price in the previous period.
+(1) Only Statement A is correct
+(2) Only Statement B is correct
+(3) Both Statements A and B are correct
+(4) Neither Statement A nor B are correct
+= 1
+~ To control inflation the central bank follows a contractionary (tight) monetary policy, raising policy rates and reducing the money supply, so A is correct. Inflation is a sustained rise in the general price level and is measured with a price index of a basket of goods (such as CPI or WPI), not by the price of a single good, so B is wrong.
+
+Q 27 | ect | National Income
+Match the List – I with List – II and select the correct answer from the options given below.
+List-I | List-II
+A. MPC | i. one
+B. APS+APC= | ii. change in consumption due to change in income
+C. Gross investment | iii. National income- direct taxes
+D. National Disposable income | iv. Net investment+ Depreciation
+(1) A-iii, B-i, C-iv, D-ii
+(2) A-i, B-iii, C-ii, D-iv
+(3) A-iii, B-i, C-ii, D-iv
+(4) A-ii, B-i, C-iv, D-iii
+= 4
+~ MPC = ΔC/ΔY, the change in consumption due to a change in income (A-ii). Since income is either consumed or saved, APC + APS = 1 (B-i). Gross investment = net investment + depreciation (C-iv). That leaves national disposable income with "national income − direct taxes" (D-iii), i.e. the income left after paying direct taxes. Strictly, official accounts define national disposable income as NNP at market prices + net current transfers from abroad, but A-ii, B-i and C-iv are certain, so option 4 is the only possible answer.
+
+Q 28 | ect | Demand, Supply & Elasticity
+Given below are two statements, one is labelled as Assertion (A) and the other is labelled as Reason (R).
+Assertion (A): The demand of a tea is directly related to price of coffee.
+Reason (R): The cross price elasticity of demand between two substitute goods is always positive.
+In the context of the above two statements, which of the following is correct?
+(1) Both (A) and (R) are true and (R) is the correct explanation of (A)
+(2) Both (A) and (R) are true and (R) is not the correct explanation of (A)
+(3) (A) is true, but (R) is false
+(4) (A) is false, but (R) is true
+= 1
+~ Tea and coffee are substitutes: when the price of coffee rises, people switch to tea and the demand for tea rises, so A is true. For substitute goods the cross price elasticity of demand is positive, which is exactly why tea demand moves in the same direction as the price of coffee, so R explains A.
+
+Q 29 | ind | Population & Human Development
+If human capital is created, then what does it mean?
+(1) That with same human capital more quantity of product can be produced
+(2) That with more human capital same quantity of product can be produced
+(3) That with same physical capital now more labor will be required to produce same quantity of product
+(4) That now more labor and capital is required for same quantity of product
+= 1
+~ Human capital is the stock of skills, knowledge and health in people, built through education, training and health care. Creating it makes workers more productive, so the same people can now produce a larger quantity of output; options 2–4 describe a fall in productivity.
+
+Q 30 | ine | IMF, World Bank & Monetary System
+Which of the following is the objective of International Development Association, one of the associations of World Bank?
+(1) To assist poorer countries of the world in removal of poverty
+(2) To assist rich countries of the world in capital creation
+(3) To assist US in the expansion of trade
+(4) To assist all the countries for maintenance of balance of payment
+= 1
+~ The International Development Association (IDA, 1960) is the World Bank's concessional lending arm: it gives interest-free or low-interest long-term credits and grants to the poorest countries to reduce poverty. It does not assist rich countries or the US, and balance of payments support is the IMF's role.
+
+Q 31 | ine | Balance of Payments & Exchange Rates
+Which of the following is recorded on the credit side of the balance of payment?
+(1) Imports of good and services
+(2) Financial inflows
+(3) Financial outflows
+(4) Uniliteral transfers to foreigners
+= 2
+~ Any transaction that brings foreign exchange into the country is entered on the credit side, so financial (capital) inflows such as foreign investment and borrowing from abroad are credits. Imports, financial outflows and unilateral transfers to foreigners use up foreign exchange and are debits.
+
+Q 32 | ine | Trade & Protection
+Which of the following is NOT an argument for moving to protectionism from free trade?
+(1) Infant industry argument
+(2) To protect domestic labor against cheap foreign labor
+(3) To cure deficit in balance of payment account
+(4) To control the inflation
+= 4
+~ The infant industry argument, protecting domestic labour against cheap foreign labour and correcting a BoP deficit are standard arguments for protection. Tariffs and quotas raise the prices of imported goods and shield domestic producers from competition, so protection tends to push prices up; controlling inflation is not an argument for it.
+
+Q 33 | ect | Money, Banking & Inflation
+Which of the following statements is NOT true for Inflation rate?
+(1) Inflation rate= nominal interest rate- real interest rate
+(2) Inflation rate = (Price level in current period − price level in previous period)/price level in previous period × 100
+(3) Inflation is monetary phenomena
+(4) Inflation = nominal interest rate/real interest rate
+= 4
+~ By the Fisher relation, nominal interest rate ≈ real interest rate + inflation, so inflation = nominal rate − real rate (option 1 is true), and the inflation rate is the percentage change in the price level (option 2 is true). Friedman called inflation "always and everywhere a monetary phenomenon" (option 3). Inflation is the difference between the two rates, not their ratio, so option 4 is not true.
+
+Q 34 | ect | Money, Banking & Inflation
+According to quantity theory of money (MV = PY), if money supply increases, keeping velocity constant, then it implies which of the following?
+(1) Nominal output or GDP will increase
+(2) Real GDP will decrease and prices will remain constant
+(3) Nominal output or GDP will decrease
+(4) Nominal output or GDP will remain constant
+= 1
+~ In MV = PY, PY is nominal output (nominal GDP). If V is constant, an increase in M must raise PY in the same proportion, so nominal GDP increases; classical economists add that with Y fixed at full employment the whole rise shows up in prices.
+
+Q 35 | ind | Poverty, Unemployment & Inequality
+The natural rate of unemployment is equal to:
+(1) Frictional unemployment + seasonal unemployment
+(2) Frictional unemployment + structural unemployment
+(3) Seasonal unemployment + structural unemployment
+(4) Cyclical unemployment + structural unemployment
+= 2
+~ The natural rate of unemployment is the unemployment that remains even when the economy is at full employment: frictional unemployment (people between jobs) plus structural unemployment (mismatch of skills or location). Cyclical unemployment, caused by recessions, is not part of it.
+
+Q 36 | ind | Agriculture, Industry & Regional Imbalances
+A statement has been given below followed by two conclusions. Assuming given statement to be true, which of the following options will be correct for given conclusions.
+Statement: The service sector in India has expanded rapidly, contributing significantly to national income, employment, and foreign investments.
+Conclusions:
+I. The service sector is a major driver of economic growth in India.
+II. Manufacturing and agriculture have become irrelevant to economic growth.
+(1) Only Conclusion 1 follows
+(2) Only Conclusion 2 follows
+(3) Both 1 and 2 follow
+(4) Neither 1 nor 2 follows
+= 1
+~ If the service sector contributes significantly to national income, employment and foreign investment, it is reasonable to conclude that it is a major driver of growth, so Conclusion I follows. Nothing in the statement says that manufacturing and agriculture no longer matter, so Conclusion II is an extreme conclusion that does not follow.
+
+Q 37 | ect | Market Structures & Pricing
+Given below are two statements, one is labelled as Assertion (A) and the other is labelled as Reason (R):
+Assertion (A): In a perfectly competitive market, equilibrium is reached when market supply equals market demand at a specific price and quantity.
+Reason (R): The equilibrium price is determined by the interaction of supply and demand forces.
+In the context of above two statements, which one of the following is correct?
+(1) Both A and R are true, and R is the correct explanation of A.
+(2) Both A and R are true, but R is not the correct explanation of A.
+(3) A is true, but R is false.
+(4) A is false, but R is true.
+= 1
+~ In a perfectly competitive market, equilibrium is where market demand equals market supply, which fixes a particular price and quantity, so A is true. This happens because price is determined by the interaction of the forces of demand and supply (Marshall's two blades of the scissors), so R correctly explains A.
+
+Q 38 | ect | Market Structures & Pricing
+In a perfectly competitive market, firms are considered:
+(1) Price makers, as they set prices based on production costs
+(2) Price takers, as they accept the market-determined price
+(3) Price regulators, as they influence market equilibrium
+(4) Price discriminators, as they charge different prices to different buyers
+= 2
+~ A perfectly competitive market has a very large number of sellers of a homogeneous product, so each firm is too small to influence price and simply accepts the market-determined price as a price taker. Price makers and price discrimination belong to monopoly and other imperfect markets.
+
+Q 39 | ind | Inflation, Fiscal Deficit & External Debt
+Which of the following is not the negative impact of parallel economy?
+(1) It results in illegal tax evasion, therefore less revenue for government
+(2) Increased corruption is by product of parallel economy
+(3) Unrecorded wealth in circulation leads to inflation
+(4) Some employment opportunities are created in the informal sector
+= 4
+~ A parallel (black) economy reduces government revenue through tax evasion, breeds corruption, and fuels inflation because unaccounted money is spent freely. The creation of some jobs in the informal sector is, if anything, a side effect that helps people, not a negative impact.
+
+Q 40 | ind | Poverty, Unemployment & Inequality
+The Public Distribution System is the program implemented to take care of poor people in India. Which one of the following is the key objective of PDS?
+(1) To provide employment opportunities to unemployed people
+(2) To provide food to the poor
+(3) To reduce inequality
+(4) To control population growth
+= 2
+~ The key objective of the Public Distribution System is food security: supplying foodgrains and other essentials to poor households at subsidised prices through fair price (ration) shops. Employment, inequality and population control are handled by other programmes.
+
+Q 41 | ind | Poverty, Unemployment & Inequality
+With reference to inequality, consider the following statements:
+• Initially, when a country starts growing, inequality can increase given the fact that more focus will be on industrial growth to achieve economic growth; therefore, less labor will be employed and more capital will be employed
+• The Lorenz curve helps in evaluating the distribution of income in an economy and therefore tries to measure inequality prevailing in the market.
+• The only type of inequality which is prevalent in India is regional inequality
+How many of the above statements are correct?
+(1) Only one
+(2) Only two
+(3) All three
+(4) None
+= 2
+~ Statement 1 reflects Kuznets' inverted-U idea: in the early stage of growth, capital-intensive industrialisation can widen inequality. Statement 2 is correct, as the Lorenz curve shows the distribution of income and its distance from the line of equality measures inequality. Statement 3 is wrong because India also has income, wealth, gender, rural-urban and social inequalities, so only two statements are correct.
+
+Q 42 | ect | Production, Costs & Factor Pricing
+Match the List – I with List – II and select the correct answer from the options given below:
+List-I | List-II
+A. Nominal Rate of interest is | i. Entrepreneur
+B. Inflation adjusted rate of interest | ii. Profit is one of the component
+C. Profit is the factor of payment to | iii. Promised rate of interest written on bond papers
+D. In income method of GDP calculation | iv. Real rate of interest
+(1) A-iii, B-i, C-iv, D-ii
+(2) A-i, B-iii, C-ii, D-iv
+(3) A-iii, B-iv, C-i, D-ii
+(4) A-ii, B-i, C-iv, D-iii
+= 3
+~ The nominal interest rate is the promised rate written on the bond (A-iii), and the inflation-adjusted rate is the real rate of interest (B-iv). Profit is the factor payment to the entrepreneur (C-i), and in the income method of GDP, profit is one of the components along with wages, rent and interest (D-ii).
+
+Q 43 | ind | Population & Human Development
+Which of the following is NOT a component of the physical quality of life index which is an indicator of economic development?
+(1) life expectancy of people
+(2) infant mortality rate
+(3) literacy rate
+(4) per capita real domestic product
+= 4
+~ The Physical Quality of Life Index (Morris D. Morris, 1979) is the simple average of three indicators: life expectancy (at age one), infant mortality rate and basic literacy rate. It deliberately leaves out income, so per capita real domestic product is not a component.
+
+Q 44 | ect | Production, Costs & Factor Pricing
+Under labour theory of value, the value of a good is determined by:
+(1) Amount of labour going into production of 1 unit of a good, ignoring the role of capital
+(2) Amount of capital going into production of 1 unit of a good, ignoring the role of labour
+(3) Amount of labour and capital going into the production of 1 unit of a good
+(4) Level of technology being used in the production of 1 unit of a good
+= 1
+~ The labour theory of value, on which Ricardo built his theory of comparative advantage, holds that the value of a commodity depends only on the amount of labour going into its production. It assumes labour is the only factor of production (or that capital is only stored-up labour), so the separate role of capital is ignored.
+
+Q 45 | ine | IMF, World Bank & Monetary System
+While the immediate cause of the collapse of Bretton woods system is BOP deficits of the United States, the fundamental cause lies in the interrelated problems between which of the following features?
+(1) Liquidity, adjustment and confidence
+(2) Flexibility, reliability and severity
+(3) Flexibility, rigidity and coincidence
+(4) Divisibility, elasticity and regularity
+= 1
+~ The Bretton Woods system collapsed in 1971 when the US, facing persistent BoP deficits, ended the convertibility of the dollar into gold. Its fundamental cause lay in the interrelated problems of liquidity (growth of reserves depended on US deficits), adjustment (no effective mechanism to correct imbalances) and confidence (doubts that dollars could be converted into gold); the clash between liquidity and confidence is known as the Triffin dilemma.
+
+Q 46 | ine | Balance of Payments & Exchange Rates
+Under the flexible exchange rate system, in case of deficit, for balance of payment adjustment, which of the following is the appropriate policy?
+(1) Depreciation
+(2) Devaluation
+(3) Appreciation
+(4) Revaluation
+= 1
+~ Under a flexible exchange rate, a BoP deficit means excess demand for foreign currency, so the home currency depreciates through market forces; this makes exports cheaper and imports dearer and corrects the deficit. Devaluation and revaluation are deliberate official changes under a fixed exchange rate system, and appreciation would worsen the deficit.
+
+Q 47 | ect | Money, Banking & Inflation
+If person A has taken a loan of $10,000 from bank XYZ and will be paying back in instalments in 25 years, then here which function of money is being performed?
+(1) Measure of account
+(2) Medium of exchange
+(3) Store of value
+(4) Standard of deferred payments
+= 4
+~ When money is used to settle debts payable in the future, such as repaying a loan in instalments over 25 years, it acts as a standard of deferred payments. Medium of exchange relates to buying and selling now, and store of value to holding wealth.
+
+Q 48 | ect | National Income
+Which of the following is NOT part of consumption in national income accounting?
+(1) Consumption of fixed capital
+(2) Consumption of durable goods
+(3) Consumption of non durable goods
+(4) Consumption of services
+= 1
+~ Private final consumption expenditure covers durable goods, non-durable goods and services bought by households. Consumption of fixed capital is depreciation, the wear and tear of capital goods, which is deducted to move from gross to net product; it is not part of consumption.
+
+Q 49 | ect | National Income
+If an engineer is earning $5,000 and has to pay income tax of 10%, after which decides to save $400, how much he must be spending on purchase of goods and services?
+(1) $4,600
+(2) $4,100
+(3) $4,900
+(4) $5,400
+= 2
+~ Income tax = 10% of $5,000 = $500, so disposable income = $5,000 − $500 = $4,500. Spending on goods and services (consumption) = disposable income − saving = $4,500 − $400 = $4,100.
+
+Q 50 | acc | Depreciation, Errors & Company Law
+Match the requirement or condition with its related legal/accounting basis under the Companies Act, 2013.
+Column A | Column B
+A. Use of accrual and double-entry system | 1. Mandatory compliance with notified Accounting Standards
+B. Filing of financial statements at AGM | 2. Section 129 requirement for Board of Directors
+C. Compliance with format in Schedule III | 3. Applicable to companies not governed by special acts
+D. Accounting standards application | 4. Basis of maintaining company books of account
+(1) A-4, B-2, C-3, D-1
+(2) A-1, B-4, C-2, D-3
+(3) A-2, B-3, C-1, D-4
+(4) A-3, B-2, C-4, D-1
+= 1
+~ Section 128 requires a company to keep its books of account on the accrual basis under the double-entry system, so that is the basis of maintaining company books (A-4). Section 129 requires the Board of Directors to lay the financial statements before the AGM (B-2). The Schedule III format applies to companies other than those governed by special acts such as banking, insurance and electricity companies (C-3), and Sections 129 and 133 make compliance with notified Accounting Standards mandatory (D-1).
+
+Q 51 | acc | Journal, Ledger & Subsidiary Books
+Which of the following reflects the primary operational benefit of using subsidiary books in a large organisation?
+(1) Reduces the number of entries in the balance sheet
+(2) Promotes uniform accounting policies across departments
+(3) Enables division of work and faster, specialised transaction recording
+(4) Prevents the need for maintaining ledgers
+= 3
+~ Subsidiary (special-purpose) books such as the Cash Book, Purchases Book and Sales Book split the journal by type of transaction, so different clerks can record different kinds of transactions at the same time; this division of labour makes recording faster and specialised. They do not reduce balance-sheet entries or by themselves create uniform policies, and ledgers are still needed because the subsidiary books are posted to the ledger.
+
+Q 52 | acc | Journal, Ledger & Subsidiary Books
+What is the primary book of original entry where all transactions are recorded first?
+(1) Ledger
+(2) Balance Sheet
+(3) Journal
+(4) Cash Flow Statement
+= 3
+~ The Journal is the book of original (prime) entry: every transaction is first recorded in it in date order, with the debit, the credit and a narration. Entries are then posted to the Ledger (the book of final entry); the Balance Sheet and Cash Flow Statement are financial statements prepared at the end, not books of entry.
+
+Q 53 | acc | Accounting Concepts & Principles
+What does the Business Entity Concept primarily emphasize?
+(1) Mixing personal and business transactions
+(2) Viewing the business and owner as a single unit
+(3) Treating business and owner as separate entities
+(4) Recording only owner's personal transactions
+= 3
+~ Under the Business Entity Concept the business is treated as a unit separate and distinct from its owner, so only business transactions are recorded and the owner's capital is shown as a liability of the business towards the owner. Mixing personal and business transactions, or treating owner and business as one unit, goes against this concept.
+
+Q 54 | acc | Accounting Concepts & Principles
+Which of the following is the correct accounting equation?
+(1) Assets = Liabilities – Owner’s Equity
+(2) Liabilities = Assets + Owner’s Equity
+(3) Assets = Liabilities + Owner’s Equity
+(4) Owner’s Equity = Assets + Liabilities
+= 3
+~ The accounting (balance sheet) equation is Assets = Liabilities + Owner's Equity (Capital): every resource of the business is financed either by outsiders (liabilities) or by the owner (capital). For example, if assets are ₹1,00,000 and liabilities ₹40,000, owner's equity is ₹60,000.
+
+Q 55 | acc | Bank Reconciliation, Trial Balance & Final Accounts
+Which of the following best explains the dual record system of the bank and customer for the same transaction?
+(1) Cash Book and Pass Book reflect the same entry on the same side
+(2) The Cash Book's debit side corresponds to the Pass Book's debit side
+(3) The Cash Book’s debit side corresponds to the Pass Book’s credit side
+(4) Both books ignore external transactions
+= 3
+~ When a customer deposits money, the business debits the bank column of its Cash Book, but the bank credits the customer's account in the Pass Book because it now owes that money to the customer; withdrawals work the other way round. So the debit side of the Cash Book corresponds to the credit side of the Pass Book, and this opposite-side recording is the basis of the bank reconciliation statement.
+
+Q 56 | acc | Accounting Concepts & Principles
+Which accounting concept is considered to meet the three essential criteria of relevance, objectivity, and feasibility?
+(1) Measurement Concept
+(2) Cost Concept
+(3) Accrual Concept
+(4) Conservatism Concept
+= 2
+~ Accounting principles are judged by three norms: relevance (the information is useful), objectivity (free from personal bias and verifiable from documents) and feasibility (can be applied without undue complexity or cost). The cost concept records assets at their actual acquisition cost, which is backed by vouchers, easy to apply and meaningful to users, so it is regarded as meeting these criteria (its strongest points are objectivity and feasibility); conservatism, by contrast, depends on judgement.
+
+Q 57 | acc | Accounting Concepts & Principles
+What do liabilities represent in accounting?
+(1) The value of owned resources
+(2) The obligations payable by the business to others
+(3) The owner's investment in the business
+(4) The income generated through business operations
+= 2
+~ Liabilities are the obligations or debts that a business owes to outsiders, such as creditors, bills payable and loans, which must be settled in future. Owned resources are assets, the owner's investment is capital, and income from operations is revenue.
+
+Q 58 | acc | Journal, Ledger & Subsidiary Books
+Match the term with its correct explanation.
+Column A | Column B
+A. Journal | 1. Grouping similar transactions
+B. Ledger | 2. First book of original entry
+C. Narration | 3. Brief explanation of a transaction
+D. Classification | 4. Used for preparing trial balance
+(1) A-2, B-4, C-3, D-1
+(2) A-2, B-1, C-4, D-3
+(3) A-4, B-2, C-3, D-1
+(4) A-1, B-2, C-3, D-4
+= 1
+~ The Journal is the first book of original entry (A-2); the balances of Ledger accounts are used to prepare the trial balance (B-4); a narration is the brief explanation written below each journal entry (C-3); classification means grouping transactions of a similar nature (D-1).
+
+Q 59 | acc | Depreciation, Errors & Company Law
+In the context of the Companies Act, 2013, what is the key requirement regarding the location of books of accounts?
+(1) At the corporate office of the auditor
+(2) At the company’s branch office
+(3) At the company’s registered office
+(4) At any place the shareholders choose
+= 3
+~ Under Section 128(1) of the Companies Act, 2013, every company must keep its books of account and financial statements at its registered office. The Board may decide to keep them at another place in India, but must then file a notice with the Registrar within seven days; the auditor's office or a place chosen by shareholders is not the rule.
+
+Q 60 | acc | Journal, Ledger & Subsidiary Books
+In the Cash Book, how are cash transactions recorded to reflect the nature of financial movement?
+(1) Receipts and payments are recorded in separate books.
+(2) All cash entries are recorded only on the debit side.
+(3) Cash receipts are recorded on the debit side, and cash payments on the credit side.
+(4) Cash payments are recorded on the asset side and receipts on the liability side.
+= 3
+~ The Cash Book is the cash account kept in ledger form, so under the rule "debit what comes in, credit what goes out" all cash receipts are entered on the debit (left) side and all cash payments on the credit (right) side. Both are kept in the same book, and a Cash Book has no asset or liability side.
+
+Q 61 | acc | Accounting Concepts & Principles
+Which of the following statements regarding events and transactions is true?
+(1) All events are transactions and vice versa.
+(2) All transactions are events, but not all events are transactions.
+(3) Events and transactions are interchangeable terms in accounting.
+(4) Events have no impact on accounting.
+= 2
+~ An event is any happening; it becomes a transaction only when it involves an exchange of money or money's worth that changes the financial position and can be measured in money. So every transaction is an event, but events such as appointing a manager or receiving an order are not transactions.
+
+Q 62 | acc | Accounting Concepts & Principles
+Which accounting concept refers to the practice of recording transactions using a standard unit of currency, such as the US dollar?
+(1) Separate Entity Concept
+(2) Monetary Measurement Concept
+(3) Going Concern Assumption
+(4) Time Period Assumption
+= 2
+~ The money (monetary) measurement concept says that only transactions and events that can be expressed in money are recorded, and in one common currency unit such as the rupee or the US dollar, so that different items can be added and compared. Separate entity, going concern and time period are different assumptions.
+
+Q 63 | dsp | Measures of Dispersion
+For the set of observations 7.4, 12.2, 8.6, 7.7, 9.3, 5.8, 11.6, 8.8, 9.0, the range is equal to:
+(1) 7.8
+(2) 6.4
+(3) 5.9
+(4) 2.3
+= 2
+~ Range = Largest value − Smallest value. Here the largest observation is 12.2 and the smallest is 5.8, so Range = 12.2 − 5.8 = 6.4.
+
+Q 64 | tsi | Time Series
+Given below are two statements labelled as Assertion (A) and Reasoning (R).
+Assertion (A): Ratio to Moving Average Method is the best and widely used method for estimating the seasonal fluctuations in a time series
+Reasoning (R): Ratio to Moving Average Method irons out both trend and cyclical components from the indices of seasonal variations.
+In the light of above, choose the correct option.
+(1) Both A and B are true and R is correct explanation of A.
+(2) Both A and B are true and R is not correct explanation of A.
+(3) A is true but R is not true.
+(4) A is not true but R is true.
+= 1
+~ The ratio-to-moving-average method is regarded as the most satisfactory and widely used method of measuring seasonal variation. A 12-month (or 4-quarter) centred moving average contains only the trend and cyclical movements (T × C); dividing the original values (T × C × S × I) by it leaves S × I, so the seasonal indices are free from trend and cyclical effects, which is exactly why the method is preferred. So R correctly explains A ("A and B" in the options means A and R).
+
+Q 65 | tsi | Index Numbers
+A major limitation in construction of index numbers is which of the following?
+(1) Index numbers are liable to be manipulated by selfish persons to obtain desired results.
+(2) Formulae for construction of index numbers do not have any error.
+(3) Index numbers help in formulating policies
+(4) Consumer price indices can’t be used for wage negotiations
+= 1
+~ Because the choice of base year, items, weights and formula is in the compiler's hands, index numbers can be manipulated by interested persons to show a desired result, which is a well-known limitation. Option 2 is false (every index formula has some error of sampling, formula or approximation), option 3 is a use, not a limitation, and option 4 is false because consumer price indices are used in wage negotiations.
+
+Q 66 | tsi | Index Numbers
+If Laspeyer’s quantity and Paasche’s quantity index numbers are given as 120.69 and 120.62, then Fisher’s quantity index number is equal to:
+(1) 135.87
+(2) 120.65
+(3) 112.34
+(4) 139.56
+= 2
+~ Fisher's index is the geometric mean of the Laspeyres and Paasche indices: Q(F) = √(Q(L) × Q(P)) = √(120.69 × 120.62) = √14557.63 ≈ 120.65. Being the geometric mean of two close values, it must lie between them, which rules out the other options.
+
+Q 67 | tsi | Index Numbers
+Which of the following is not the limitation of Index numbers?
+(1) While taking the sample, random sampling is seldom used
+(2) It is often difficult to take into account the quality of products
+(3) These can not be used for wage policy of the government
+(4) It is not possible to take into account each and every item in the construction of Index numbers.
+= 3
+~ Options 1, 2 and 4 are genuine limitations: the items are seldom chosen by random sampling, changes in quality are hard to allow for, and not every item can be included. Option 3 is false, so it is not a limitation: consumer price index numbers are widely used for the government's wage policy, for example to fix dearness allowance and wage settlements.
+
+Q 68 | dsp | Normal Distribution
+Match the following:
+Column I | Column II
+1. Normal Distribution is | I. Mode
+2. Mean of Normal Distribution is same as | II. unimodal
+3. Quartile deviation for normal distribution | III. symmetric
+4. Normal distribution | IV. two third of standard deviation
+Choose the correct option.
+(1) 1-I; 2-IV; 3-III; 4-II
+(2) 1-IV; 2-I; 3-II; 4-III
+(3) 1-IV; 2-III; 3-I; 4-II
+(4) I-III; 2-I; 3-IV; 4-II
+= 4
+~ The normal curve is symmetric (1-III) and has a single peak, i.e. it is unimodal (4-II); because of this symmetry, mean = median = mode (2-I); and its quartile deviation is about 0.6745σ ≈ (2/3)σ (3-IV). Option 4 is printed as "I-III", meaning 1-III.
+
+Q 69 | dsp | Measures of Dispersion
+Match the following:
+Column I | Column II
+1. Standard Deviation | I. Variability in a data set
+2. Coefficient of Variation | II. obtained by subtracting lowest observation from highest observation
+3. Dispersion | III. an absolute measure of dispersion
+4. Range | IV. checks consistency in performance of cricket players
+Choose the correct option.
+(1) 1-I; 2-IV; 3-III; 4-II
+(2) 1-IV; 2-III; 3-II; 4-I
+(3) 1-IV; 2-III; 3-I; 4-II
+(4) I-III; 2-IV; 3-I; 4-II
+= 4
+~ Standard deviation is an absolute measure of dispersion, in the units of the data (1-III); the coefficient of variation (σ/x̄ × 100) is a relative measure used to compare consistency, e.g. of two batsmen, the one with the lower CV being more consistent (2-IV); dispersion means the variability in a data set (3-I); and range = highest observation − lowest observation (4-II). Option 4 is printed as "I-III", meaning 1-III.
+
+Q 70 | mct | Mean, Median & Mode
+Given below are two statements labelled as Assertion (A) and Reasoning (R).
+Assertion (A): Mean is highly affected by extreme observations.
+Reasoning (R): Mean does not utilize all the observations.
+In the light of the above, choose the correct option.
+(1) Both A and B are true and R is correct explanation of A.
+(2) Both A and B are true and R is not correct explanation of A.
+(3) A is true but R is not true.
+(4) A is not true but R is true.
+= 3
+~ A is true: the mean uses every value, so a single very large or very small observation pulls it strongly (e.g. the mean of 2, 3, 4, 5, 86 is 20). R is false because the arithmetic mean is based on all the observations, which is precisely why extreme values affect it.
+
+Q 71 | sdc | Classification, Tables & Diagrams
+On the basis of the following statements,
+1. Frequency distribution is a tabular arrangement of data in form of classes
+2. Open class interval does not have upper or lower limit
+3. For summarizing large mass of raw data, it is useful to distribute data into classes
+Which of the following holds?
+(1) 2 and 3 are true
+(2) 1 and 3 are true
+(3) 1 and 2 are true
+(4) All three are true
+= 4
+~ A frequency distribution arranges raw data into classes, with the frequency of each class, in a table (1); an open-end class such as "below 10" or "60 and above" lacks a lower or an upper limit (2); and grouping a large mass of raw data into classes summarises it and makes it easy to understand (3). So all three are true.
+
+Q 72 | sdc | Primary & Secondary Data
+On the basis of the following statements,
+1. Primary data can be collected either through experiment or through survey;
+2. Before using questionnaires for primary data, a pilot study is carried out for purpose of testing;
+3. For collection of primary data through questionnaires, enumerators are appointed and given training,
+Which of the following holds?
+(1) 2 and 3 are true
+(2) 1 and 3 are true
+(3) 1 and 2 are true
+(4) All three are true
+= 4
+~ Primary data are collected first-hand, either by experiments or by surveys (1). Before the main survey, the questionnaire is tried out on a small group (a pilot survey) to test the questions and estimate time and cost (2). In large surveys the enumerators who canvass the questionnaire in personal interviews are appointed and trained so that the questions are asked in a uniform way (3); strictly, a form filled in by an enumerator is called a schedule, but "questionnaire" is used here in the broad sense. So all three are true.
+
+Q 73 | cor | Karl Pearson's Correlation
+Consider the following information in two lists A and B:
+LIST A | LIST B
+(i) Correlation between Income and expenditure of a family | (i) Positive correlation
+(ii) Correlation between age and weight among newly born babies | (ii) Negative correlation
+(iii) Correlation between age and weight among very old persons | (iii) High positive correlation
+(1) A(i)-B(i), A(ii)-B(iii), A(iii)-B(ii)
+(2) A(i)-B(ii), A(ii)-B(iii), A(iii)-B(i)
+(3) A(i)-B(iii), A(ii)-B(ii), A(iii)-B(iii)
+(4) A(i)-B(iii), A(ii)-B(i), A(iii)-B(ii)
+= 1
+~ Family income and expenditure rise and fall together, so their correlation is positive (A(i)-B(i)); in newborn babies weight increases steadily with age, giving a high positive correlation (A(ii)-B(iii)); among very old persons weight tends to fall as age increases, giving a negative correlation (A(iii)-B(ii)).
+
+Q 74 | dsp | Measures of Dispersion
+If n =10, mean = 12 and standard deviation = 3, then coefficient of variation (in percentage) is equal to:
+(1) 25
+(2) 12
+(3) 4
+(4) 10
+= 1
+~ Coefficient of variation CV = σ/x̄ × 100 = 3/12 × 100 = 25%. The number of observations (n = 10) is not needed for this calculation.
+
+Q 75 | mct | Mean, Median & Mode
+The numbers of ATM transactions per day recorded at 10 locations in a city were 35, 49, 225, 50, 30, 65, 40, 55, 52 and 76. The median of the numbers of transactions is:
+(1) 52
+(2) 51
+(3) 65
+(4) 55
+= 2
+~ In ascending order the values are 30, 35, 40, 49, 50, 52, 55, 65, 76, 225. Since n = 10 is even, Median = average of the 5th and 6th values = (50 + 52)/2 = 51. The extreme value 225 does not affect the median.
+
+Q 76 | mct | Mean, Median & Mode
+If 5, 8, 6 and 2 occur with frequencies 3, 2, 4 and 1, then arithmetic mean is equal to:
+(1) 5.7
+(2) 3.4
+(3) 2.9
+(4) 6.8
+= 1
+~ x̄ = Σfx/Σf = (5×3 + 8×2 + 6×4 + 2×1)/(3 + 2 + 4 + 1) = (15 + 16 + 24 + 2)/10 = 57/10 = 5.7.
+
+Q 77 | sdc | Classification, Tables & Diagrams
+The most appropriate diagram for representing the distribution of National plan outlay of a country in different sectors of economy is:
+(1) Histogram
+(2) Frequency Polygon
+(3) Ogives
+(4) Pie Chart
+= 4
+~ A pie chart shows how a whole (here the total plan outlay) is divided among its parts (the sectors), each sector getting an angle equal to its share × 360°. Histograms, frequency polygons and ogives are graphs of the frequency distribution of a continuous variable, not of the component parts of a total.
+
+Q 78 | sdc | Primary & Secondary Data
+Which of the following is not a source of secondary data?
+(1) Biography
+(2) Newspapers
+(3) Autobiography
+(4) Magazines
+= 3
+~ Biographies, newspapers and magazines present information that someone else has collected and compiled, so they are secondary sources. An autobiography is the author's own first-hand account of his life and experiences, so it is treated as a primary source, not a secondary one.
+
+Q 79 | sdc | Primary & Secondary Data
+Data available in census reports is:
+(1) Primary Data
+(2) Secondary Data
+(3) Bayesian Data
+(4) Empirical Data
+= 1
+~ Whether data are primary or secondary depends on who uses them: they are primary for the agency that collects them first-hand and secondary for anyone who later uses the published figures. APPSC's key takes the first view: the Census organisation itself collects the data directly from every household by complete enumeration, so census reports contain original (primary) data. For a later user, however, published census reports are a ready-made source of secondary data, and most textbooks list them that way. (Official key; some sources differ.)
+
+Q 80 | cor | Karl Pearson's Correlation
+Given below are two statements, one is labelled as Assertion (A) and the other is labelled as Reason (R):
+Assertion (A): Karl Pearson' correlation coefficient between two variables X and Y is -1.
+Reason (R): The two variables are perfectly positively correlated.
+In the context of the above two statements, which of the following is correct?
+(1) Assertion (A) is wrong.
+(2) Assertion (A) is correct and Reason (R) is also correct
+(3) Assertion (A) is correct but Reason (R) is wrong.
+(4) Both Assertion (A) and Reason (R) are wrong.
+= 3
+~ r = −1 is a valid value of Karl Pearson's coefficient (which always lies between −1 and +1), so the Assertion is taken as correct; it means a perfect negative (inverse) linear relationship, with all points on a straight line sloping downwards. The Reason says the variables are perfectly positively correlated, which would need r = +1, so R is wrong.
+
+Q 81 | cor | Karl Pearson's Correlation
+Karl Pearson's coefficient of correlation cannot exceed ________.
+(1) 1
+(2) -1
+(3) 0
+(4) 0.5
+= 1
+~ Karl Pearson's coefficient of correlation always lies between −1 and +1 (−1 ≤ r ≤ +1), so it can never exceed 1; r = +1 means perfect positive and r = −1 perfect negative correlation.
+
+Q 82 | cor | Karl Pearson's Correlation
+Correlation is used to find ______ of a linear relationship between two variables.
+(1) only strength
+(2) only direction
+(3) strength and direction
+(4) covariance
+= 3
+~ The correlation coefficient shows both the strength (degree) of a linear relationship, through its size |r| between 0 and 1, and its direction, through its sign (+ when the variables move together, − when they move in opposite directions). Covariance is used to compute r, but r itself is a unit-free measure of strength and direction.
+
+Q 83 | cor | Karl Pearson's Correlation
+Correlation between the age and weight of old persons above 70 years of age is expected to be:
+(1) positive
+(2) negative
+(3) 0
+(4) 1
+= 2
+~ After about 70 years of age people generally lose weight as they grow older, so higher age goes with lower weight. The two variables move in opposite directions, which is negative correlation; an exact value of 0 or 1 is not expected.
+
+Q 84 | dsp | Measures of Dispersion
+Given below are two statements labelled as Assertion (A) and Reasoning (R).
+Assertion (A): For the observations 2, 3, 5, 9 and 11, mean deviation about mean is 3.2 and the mean deviation about median is 3.
+Reasoning (R): Mean deviation is the least when measured about the median.
+In the light of above, choose the correct option.
+(1) Both A and B are true and R is correct explanation of A.
+(2) Both A and B are true and R is not correct explanation of A.
+(3) A is true but R is not true.
+(4) A is not true but R is true.
+= 1
+~ Mean = (2 + 3 + 5 + 9 + 11)/5 = 30/5 = 6; |x − 6| = 4, 3, 1, 3, 5, total 16, so MD about mean = 16/5 = 3.2. Median = 5; |x − 5| = 3, 2, 0, 4, 6, total 15, so MD about median = 15/5 = 3. So A is true, and the smaller value about the median is exactly what R states (the sum of absolute deviations is least when taken from the median), so R correctly explains A.
+
+Q 85 | mct | Mean, Median & Mode
+If a typist in an office can type invoices at a rate of 50 per hour, statements at a rate of 40 per hour and reminders at a rate of 80 per hour and she types equal number of each type of documents, then the average output of the typist (per hour) is approximately equal to?
+(1) 55
+(2) 52
+(3) 67
+(4) 46
+= 2
+~ When equal numbers of each document are typed, the average rate is the harmonic mean: HM = 3/(1/50 + 1/40 + 1/80) = 3/(0.02 + 0.025 + 0.0125) = 3/0.0575 ≈ 52.17 ≈ 52 per hour. For example, 400 of each take 8 + 10 + 5 = 23 hours for 1200 documents, i.e. 1200/23 ≈ 52 per hour; the arithmetic mean (56.7) overstates it because more time is spent on the slower documents.
+
+Q 86 | sdc | Classification, Tables & Diagrams
+Match the List – I with List – II and select the correct answer from the options given below:
+List-I | List-II
+A-Bar Diagram | (i) A graphical representation of grouped frequency distribution with continuous classes.
+B- Histogram | (ii) Diagram consists of a number of rectangles used for one dimensional comparison
+C-Line Graph | (iii) A graphical representation technique that displays data in a circular-shaped graph
+D-Pi-chart | (iv) A graph that utilizes points and lines to represent change over time
+(1) A-ii, B-iii, C-iv, D-i
+(2) A-iv, B-ii, C-iii, D-i
+(3) A-ii, B-i, C-iv, D-iii
+(4) A-i, B-ii, C-iii, D-iv
+= 3
+~ A bar diagram uses rectangles (bars) of equal width whose lengths alone show the values, a one-dimensional comparison (A-ii); a histogram represents a grouped frequency distribution with continuous classes (B-i); a line graph joins points with lines to show change over time (C-iv); and a pie chart shows data in a circle divided into sectors (D-iii).
+
+Q 87 | tsi | Index Numbers
+Given below are two statements labelled as Assertion (A) and Reasoning (R).
+Assertion (A): Time reversal test was proposed by Irving Fisher.
+Reasoning (R): Fisher’s index number satisfies Factor reversal test.
+In the light of above, choose the correct option.
+(1) Both A and B are true and R is correct explanation of A.
+(2) A is true but R is not true.
+(3) A is not true but R is true.
+(4) Both A and B are true and R is not correct explanation of A.
+= 4
+~ Irving Fisher proposed the time reversal and factor reversal tests as tests of a good index number, so A is true. Fisher's ideal index, √(L × P), satisfies both the time reversal and the factor reversal tests, so R is also true; but R only says which index passes the factor reversal test and does not explain who proposed the time reversal test, so R is not the explanation of A.
+
+Q 88 | tsi | Index Numbers
+For a particular year, weekly take home pay is 138.10 and consumer price index is 149.8. Then the real weekly wage is approximately equal to:
+(1) 92.19
+(2) 86.23
+(3) 79.32
+(4) 95.67
+= 1
+~ Real wage = (Money wage ÷ Consumer price index) × 100 = (138.10 ÷ 149.8) × 100 ≈ 92.19. Deflating by the CPI expresses the pay in base-year prices, so its purchasing power is lower than the money figure.
+
+Q 89 | tsi | Time Series
+Which of the following does NOT hold for time series?
+(1) A set of ordered observations of a variable at successive time points
+(2) Arrangement of statistical data in chronological order
+(3) Depicts the relationship between time and temperature of a place on different days
+(4) For data segregated by time, the value of the variable does not change from time to time.
+= 4
+~ A time series is a set of observations of a variable arranged in chronological order at successive points of time, such as the temperature of a place recorded on different days, so options 1–3 describe it. Option 4 does not hold: the whole point of a time series is that the value of the variable changes from time to time.
+
+Q 90 | sdc | Classification, Tables & Diagrams
+Given below are two statements labelled as Assertion (A) and Reasoning (R).
+Assertion (A): Class mark is obtained by dividing the sum of lower and upper class limits, by two
+Reasoning (R):. Class boundaries are used for making the class intervals continuous
+In light of the above statements, choose the correct option.
+(1) Both A and R are true and R is correct explanation of A.
+(2) Both A and R are true and R is not correct explanation of A.
+(3) A is true but R is not true.
+(4) A is not true but R is true.
+= 2
+~ A is true: class mark (mid-value) = (lower limit + upper limit)/2, e.g. 15 for the class 10–20. R is also true: in an inclusive series such as 10–19, 20–29, the class boundaries 9.5–19.5, 19.5–29.5 are used to make the classes continuous. But R is about making classes continuous and does not explain how the class mark is found.
+
+Q 91 | sdc | Schedules & Questionnaires
+On the basis of the following statements:
+1. Frequent field checks are taken up on the work of enumerators responsible for filling schedules
+2. While using schedules, enumerators explain the aims and objects of the investigation and also remove the difficulties faced by any respondent
+3. Questionnaires are filled by investigators for helping the respondents
+Which of the options is correct?
+(1) 2 and 3 are true
+(2) 1 and 2 are true
+(3) Only 2 is true
+(4) All three are true
+= 2
+~ Statement 1 is true: since schedules are filled in by enumerators, their work is checked in the field from time to time. Statement 2 is true: the enumerator explains the aims and objects of the inquiry and clears the doubts of respondents. Statement 3 is false: a questionnaire is filled in by the respondents themselves, while it is a schedule that is filled in by the enumerator, so only 1 and 2 are true.
+
+Q 92 | tsi | Time Series
+Which of the following is NOT the utility of time series analysis?
+(1) It helps in planning future operations
+(2) Time series analysis is not restricted to time-dependent data.
+(3) Time series analysis can predict future trends by analyzing historical data
+(4) It helps in understanding past behaviour
+= 2
+~ Time series analysis studies data arranged over time: it helps to understand past behaviour, to forecast future trends from historical data and to plan future operations (options 1, 3 and 4). Option 2 is not a utility and is in fact wrong, because time series analysis is by its nature restricted to time-dependent (chronological) data.
+
+Q 93 | sdc | Schedules & Questionnaires
+Which of the following is NOT the advantage of using Schedule over questionnaire?
+(1) It can be adopted in cases where informants are illiterate
+(2) There is a very little non-response
+(3) It is very cost effective
+(4) Information obtained is more reliable
+= 3
+~ A schedule is filled in by trained enumerators who meet the informants personally, so it can be used even when informants are illiterate, non-response is very low and the information is more reliable. Its main drawback is that it is costly and time-consuming, since enumerators must be appointed, trained, paid and supervised; so being "very cost effective" is not an advantage of the schedule (a mailed questionnaire is cheaper).
+
+Q 94 | tsi | Time Series
+Which of the following methods is NOT used in measuring the seasonal variations?
+(1) Method of Least Squares
+(2) Ratio-to-Trend Method
+(3) Ratio-to Moving Average Method
+(4) Link Relative Method
+= 1
+~ Seasonal variations are measured by the method of simple averages, the ratio-to-trend method, the ratio-to-moving-average method and the link relative method. The method of least squares is a method of fitting the secular trend, not of measuring seasonal variations (the ratio-to-trend method only uses a least-squares trend as one step).
+
+Q 95 | tsi | Time Series
+Using the method of Least Square in fitting the trend line of the best fit, the sum of the squares of the deviations of actual values from the computed values is always:
+(1) 0
+(2) 1
+(3) least
+(4) maximum
+= 3
+~ The method of least squares chooses the trend line ŷ = a + bx so that Σ(y − ŷ)², the sum of the squared deviations of the actual values from the computed (trend) values, is the least possible. It is the simple sum of deviations Σ(y − ŷ) that equals zero, not the sum of their squares.
+
+Q 96 | dsp | Skewness & Kurtosis
+Match the following:
+Column I | Column II
+1. Bowley’s measure of skewness | I. (Mean- Median)/standard deviation
+2. Karl Pearson measure of skewness | II. mean < median < mode
+3. Negative skewness | III. degree of peakedness of a frequency curve
+4. Kurtosis | IV. lies between -1 and 1
+Choose the correct option.
+(1) 1-I; 2-IV; 3-III; 4-II
+(2) 1-IV; 2-I; 3-II; 4-III
+(3) 1-IV; 2-III; 3-I; 4-II
+(4) I-III; 2-IV; 3-I; 4-II
+= 2
+~ Bowley's (quartile) coefficient of skewness, (Q3 + Q1 − 2Md)/(Q3 − Q1), always lies between −1 and +1 (1-IV); Karl Pearson's measure is based on the mean, median and standard deviation, Sk = 3(Mean − Median)/σ, shown here without the factor 3 (2-I); in a negatively skewed distribution Mean < Median < Mode (3-II); and kurtosis measures the degree of peakedness of a frequency curve (4-III).
+
+Q 97 | mct | Mean, Median & Mode
+For the following set of observations
+2,4,5,6,7,8,9, 9,9, 10,11
+Match the following answers:
+Column 1 | Column 2
+1. Mean | I. 5.76
+2. Mode | II. 8
+3. Median | III. 9
+4. Harmonic Mean | IV. 7.27
+Choose the correct option.
+(1) 1-I; 2-IV; 3-III; 4-II
+(2) 1-IV; 2-III; 3-II; 4-I
+(3) 1-IV; 2-II; 3-III; 4-I
+(4) 1-IV; 2-I; 3-III; 4-II
+= 2
+~ The data are already in order: n = 11 and Σx = 80. Mean = 80/11 ≈ 7.27 (1-IV); Mode = 9, which occurs three times (2-III); Median = 6th value = 8 (3-II); HM = n/Σ(1/x) = 11/(1/2 + 1/4 + 1/5 + 1/6 + 1/7 + 1/8 + 3/9 + 1/10 + 1/11) = 11/1.9088 ≈ 5.76 (4-I), which, as expected, is smaller than the arithmetic mean.
+
+Q 98 | sdc | Classification, Tables & Diagrams
+Match the following:
+Column I | Column II
+1. Multiple bar diagrams | I. drawn by joining the mid-points of all tops of a histogram
+2. Pie Diagram | II. drawn to represent the time series data related to the temperature, rainfall, population growth,
+3. Line Diagram | III. drawn to depict the total value of the given attribute using a circle.
+4. Frequency polygon | IV. constructed to represent two or more than two variables for the purpose of comparison
+Choose the correct option.
+(1) 1-I; 2-IV; 3-III; 4-II
+(2) 1-IV; 2-III; 3-II; 4-I
+(3) 1-III; 2-IV; 3-I; 4-II
+(4) I-IV; 2-I; 3-III; 4-II
+= 2
+~ A multiple bar diagram shows two or more variables side by side for comparison (1-IV); a pie diagram shows the total value of an attribute as a circle divided into sectors (2-III); a line diagram represents time series data such as temperature, rainfall or population growth (3-II); and a frequency polygon is drawn by joining the mid-points of the tops of the rectangles of a histogram (4-I).
+
+Q 99 | mct | Quartiles & Partition Values
+On the basis of the following statements,
+1. Second quartile is same as mean;
+2. Second quartile is same as median;
+3. Median is same as first quartile,
+Which of the following holds?
+(1) 2 and 3 are true
+(2) 1 and 3 are true
+(3) Only 2 is true
+(4) All three are true
+= 3
+~ The second quartile Q2 divides the ordered data into two equal halves, so it is the same as the median (2 is true). It equals the mean only in a symmetrical distribution, not in general (1 is false), and the median is not the first quartile Q1, which cuts off the lowest 25% of the data (3 is false). So only 2 is true.
+
+Q 100 | dsp | Normal Distribution
+For Normal distribution, the value of coefficient of skewness is:
+(1) One
+(2) Zero
+(3) Three
+(4) Minus Three
+= 2
+~ The normal distribution is perfectly symmetrical with mean = median = mode, so its coefficient of skewness, e.g. Pearson's (Mean − Mode)/σ or the moment measure β1, is zero. The value 3 is its moment coefficient of kurtosis β2, which measures peakedness, not skewness.
+
+Q 101 | dsp | Skewness & Kurtosis
+A negative value of coefficient of skewness implies that:
+(1) Mode is more than mean
+(2) Mean=median
+(3) Mean=mode
+(4) Mode is less than mean
+= 1
+~ In a negatively skewed distribution the long tail is on the left and Mean < Median < Mode, so the mode is greater than the mean (Karl Pearson's coefficient (Mean − Mode)/σ is negative only when Mode > Mean). Mean = median = mode means zero skewness, and Mode < Mean means positive skewness.
+
+Q 102 | dsp | Skewness & Kurtosis
+Suppose that for a frequency distribution, Mean = 164.73, First Quartile = 160.95, Second Quartile = 164.76 and Third Quartile= 168.45, then on the basis of Bowley’s coefficient of skewness, the distribution is:
+(1) Negatively Skewed
+(2) Positively Skewed
+(3) Symmetric
+(4) Mesokurtic
+= 1
+~ Bowley's coefficient Sk = (Q3 + Q1 − 2Q2)/(Q3 − Q1) = (168.45 + 160.95 − 2 × 164.76)/(168.45 − 160.95) = (329.40 − 329.52)/7.50 = −0.12/7.50 = −0.016. The value is negative, so the distribution is (slightly) negatively skewed. Mesokurtic describes kurtosis (peakedness), not skewness.
+
+Q 103 | mct | Mean, Median & Mode
+Which of the following is not true about central tendency?
+(1) Using a single value to represent the whole set of figures
+(2) Indicates variability in a data set
+(3) Mean is considered to be the best measure
+(4) Tendency of the data set to cluster around a central value
+= 2
+~ A measure of central tendency is a single typical value that represents the whole data, around which the observations tend to cluster, and the arithmetic mean is generally regarded as the best such measure. Variability (spread) of the data is shown by measures of dispersion, not by central tendency.
+
+Q 104 | sdc | Census, Sampling & Probability
+Which of the following is not true about census?
+(1) Conducted every 10 years
+(2) Responsibility with Office of the Registrar General and Census Commissioner of India, Ministry of Home Affairs, Government of India
+(3) The first census was conducted non-synchronously in 1862
+(4) Present Registrar General and Census Commissioner is Sh. Mritunjay Kumar Narayan
+= 3
+~ India's first census was taken non-synchronously in 1872 (under Lord Mayo), and the first synchronous census was held in 1881, so the year 1862 is wrong. The census is normally held every 10 years by the Office of the Registrar General and Census Commissioner under the Ministry of Home Affairs, and Mritunjay Kumar Narayan was the Registrar General and Census Commissioner when this exam was held.
+
+Q 105 | sdc | Classification, Tables & Diagrams
+The heights of rectangles in a histogram with class intervals of equal sizes are proportional to:
+(1) Class frequencies
+(2) Total frequency
+(3) Width of class interval
+(4) Cumulative frequency
+= 1
+~ In a histogram the area of each rectangle is proportional to its class frequency; when all class intervals have the same width, the heights themselves are proportional to the class frequencies. Cumulative frequencies are used to draw an ogive, not a histogram.
+
+Q 106 | sdc | Census, Sampling & Probability
+Three identical dice are tossed. Probability that the same number will appear on each of them is:
+(1) 1/216
+(2) 1/36
+(3) 1/64
+(4) 1/108
+= 2
+~ Total outcomes = 6 × 6 × 6 = 216. Favourable outcomes are (1,1,1), (2,2,2), …, (6,6,6) = 6. P = 6/216 = 1/36.
+
+Q 107 | sdc | Census, Sampling & Probability
+Out of the sampling techniques mentioned below, which is probability sampling method?
+(1) Judgemental sampling
+(2) Cluster sampling
+(3) Extensive sampling
+(4) Convenience sampling
+= 2
+~ In cluster sampling the population is divided into groups (clusters) and the clusters are selected at random, so every unit has a known chance of selection; it is a probability (random) sampling method. Judgement, convenience and extensive sampling depend on the investigator's choice or ease of access, so they are non-probability methods.
+
+Q 108 | cor | Karl Pearson's Correlation
+Which of the following statements is/are correct?
+Statement I: If two variables X and Y are independent then rXY = 0.
+Statement II: If rXY = 0, then two variables X and Y are independent.
+(1) Only Statement I is correct
+(2) Only statement II is correct
+(3) Both the statements are correct
+(4) Neither statement I nor statment II is correct
+= 1
+~ If X and Y are independent, Cov(X, Y) = 0 and so rXY = 0; Statement I is true. But r = 0 only means there is no linear relationship; the variables can still be related non-linearly (for example Y = X² with X symmetric about 0 gives r = 0), so Statement II is false.
+
+Q 109 | cor | Rank Correlation & Probable Error
+The rank correlation coefficient between two characteristics of 4 students was worked out to be 0.5. Later on it was noticed that the difference in ranks in the two characteristics obtained by one of the students was wrongly taken as 1 instead of 2. The corrected rank correlation is:
+(1) 1/5
+(2) 2/5
+(3) 3/5
+(4) 4/5
+= 1
+~ ρ = 1 − 6Σd²/(n(n² − 1)); with n = 4, n(n² − 1) = 60, so 0.5 = 1 − 6Σd²/60 gives Σd² = 5. Corrected Σd² = 5 − 1² + 2² = 8. Corrected ρ = 1 − 6 × 8/60 = 1 − 0.8 = 0.2 = 1/5.
+
+Q 110 | cor | Rank Correlation & Probable Error
+If correlation coefficient between X and Y based on 16 pairs of observations is 0.80, then probable error is:
+(1) 0.76
+(2) 0.06
+(3) 0.60
+(4) 0.67
+= 2
+~ Probable error P.E. = 0.6745 × (1 − r²)/√n = 0.6745 × (1 − 0.64)/√16 = 0.6745 × 0.36/4 = 0.6745 × 0.09 = 0.0607 ≈ 0.06.
+
+Q 111 | cor | Karl Pearson's Correlation
+If COV(X,Y) = −16.5, Var(X) = 2.89 and var(Y) = 100, then rXY is:
+(1) 0.67
+(2) 0.77
+(3) -0.97
+(4) 0.97
+= 3
+~ rXY = Cov(X, Y)/(σX × σY) = −16.5/(√2.89 × √100) = −16.5/(1.7 × 10) = −16.5/17 = −0.97. The sign of r is the sign of the covariance, so the positive options are ruled out.
+
+Q 112 | cor | Karl Pearson's Correlation
+Let rXY be the coefficient of correlation between X and Y. If variable U = 3X and variable V = Y + 2, then coefficient of correlation between U and V is:
+(1) 3r(U,V)
+(2) 2r(U,V)
+(3) -r(U,V)
+(4) r(U,V)
+= 4
+~ The correlation coefficient is independent of change of origin and of scale (when the scale factors have the same sign). U = 3X only changes the scale and V = Y + 2 only shifts the origin, so the correlation between U and V is the same as rXY; it is not multiplied by 3 or 2 and its sign does not change. (The options print r(U,V) where the original correlation rXY is meant.)
+
+Q 113 | dsp | Measures of Dispersion
+If the mean deviation of X from its mean is 5, then the mean deviation of Y = 2X+3 from its mean is:
+(1) 10
+(2) 5
+(3) 20
+(4) 15
+= 1
+~ Mean deviation is not affected by change of origin but is affected by change of scale. For Y = a + bX, MD(Y) = |b| × MD(X), so MD(Y) = 2 × 5 = 10; adding 3 does not change it.
+
+Q 114 | mct | Mean, Median & Mode
+Given below are two statements labelled as Assertion (A) and Reasoning (R).
+Assertion (A): For a grouped frequency distribution table with one or both of the terminal classes as open, median can be computed.
+Reasoning (R): Mode can be computed in case of open ended terminal classes.
+In the light of the above, choose the correct option.
+(1) Both A and R are true and R is correct explanation of A.
+(2) Both A and R are true and R is not correct explanation of A.
+(3) A is true but R is not true.
+(4) A is not true but R is true.
+= 2
+~ The median needs only the cumulative frequencies and the limits of the median class, so it can be found even when the first or last class is open. The mode needs only the modal class and its neighbouring frequencies, so it too can be found with open-end classes. Both statements are true, but R is a separate fact about the mode and does not explain why the median can be computed.
+
+Q 115 | mct | Mean, Median & Mode
+Statement 1: The mean of first 10 natural numbers is 10.
+Statement 2: If 3 is subtracted from original observations, then mean does not change.
+Statement 3: If original observations are multiplied by a constant, then median also gets multiplied by same constant.
+On the basis of the above statements, which of the following statement/s is/are true?
+(1) 2 and 3 are true
+(2) 1 and 3 are true
+(3) Only 3 is true
+(4) Only 2 is true
+= 3
+~ Statement 1 is false: the mean of 1 to 10 is 55/10 = 5.5. Statement 2 is false: subtracting 3 from every observation reduces the mean by 3. Statement 3 is true: multiplying every observation by a constant k multiplies the median (the middle value) by k.
+
+Q 116 | mct | Quartiles & Partition Values
+For the following frequency distribution table, the third quartile is equal to:
+Class-Intervals | 60-65 | 65-70 | 70-75 | 75-80 | 80-85
+Frequency | 3 | 8 | 13 | 12 | 4
+(1) 68.9
+(2) 77.5
+(3) 51.67
+(4) 46.32
+= 2
+~ N = 40, so 3N/4 = 30. Cumulative frequencies are 3, 11, 24, 36, 40, so the Q3 class is 75-80 (L = 75, c.f. before it = 24, f = 12, h = 5). Q3 = L + (3N/4 − c.f.)/f × h = 75 + (30 − 24)/12 × 5 = 75 + 2.5 = 77.5.
+
+Q 117 | cor | Rank Correlation & Probable Error
+On the basis of the following statements,
+1. If the ranks in the first series are completely reversed in the second series, then Spearman’s Rank Correlation coefficient s equal to -1.
+2. Spearman’s Rank Correlation coefficient is computed only for quantitative variables.
+3. When only two individuals are ranked by two judges, then Spearman’s Rank Correlation coefficient takes only -1 and 1 values.
+Which of the following is true?
+(1) 2 and 3 are true
+(2) 1 and 3 are true
+(3) Only 2 is true
+(4) All three are true
+= 2
+~ Statement 1 is true: completely reversed ranks give Σd² = n(n² − 1)/3, so ρ = 1 − 2 = −1. Statement 3 is true: with n = 2, ρ = 1 − 6Σd²/6 = 1 − Σd², and Σd² can only be 0 (same order, ρ = 1) or 2 (reversed, ρ = −1). Statement 2 is false: rank correlation is especially meant for qualitative characteristics (beauty, honesty, etc.) that can only be ranked.
+
+Q 118 | tsi | Index Numbers
+Match the two columns.
+Column A | Column B
+1. Quantity Index | I Value Index
+2. Index of Industrial Production | II (Σp1q1 / Σp1q0) × 100
+3. measures the relative changes in total monetary worth of an item | III Measures the changes in the quantity of goods manufactured in a factory
+4. Paasche’s quantity index | IV Compilation and publication by Central Statistical Organisation, MOSPI
+(1) 1-III; 2-IV, 3-I; 4-II
+(2) 1-IV, 2-III, 3-II; 4-I
+(3) 1-I, 2-IV, 3-III; 4-II
+(4) 1-III, 2-I, 3-IV; 4-II
+= 1
+~ A quantity index measures changes in the physical quantity of goods produced (III). The Index of Industrial Production is compiled and published by the Central Statistical Organisation, MoSPI (now part of the National Statistical Office) (IV). An index of relative change in the total money value of an item is a value index (I). Paasche's quantity index uses current-year prices as weights: Σp1q1/Σp1q0 × 100 (II).
+
+Q 119 | tsi | Time Series
+Trend, a component of time series, can be studied by using:
+(1) Method of moving averages
+(2) Ratio to moving averages method
+(3) Link relative method
+(4) Ratio to trend method
+= 1
+~ The method of moving averages smooths out short-term fluctuations and is a standard method of measuring the trend (along with freehand, semi-averages and least squares). Ratio to moving averages, link relatives and ratio to trend are methods of measuring seasonal variations (seasonal indices).
+
+Q 120 | sdc | Classification, Tables & Diagrams
+Which of the following is NOT true about a frequency polygon?
+(1) It is constructed from a histogram by joining midpoints of the tops of rectangles with straight lines.
+(2) Constructed by plotting for each class, the value of its midpoint and joining points with straight lines
+(3) It can’t be constructed for unequal class intervals.
+(4) It is closed by adding class intervals at two extremes.
+= 3
+~ A frequency polygon can be drawn for unequal class intervals as well: the frequencies are first adjusted to a common class width (frequency densities) and the midpoints are then joined. It can be drawn from a histogram or directly by plotting frequencies against class midpoints, and it is closed by joining it to the midpoints of an extra class with zero frequency at each end, so options 1, 2 and 4 are true.
+
+Q 121 | sdc | Census, Sampling & Probability
+For any two events A and B, P(A∪B) is equal to
+(1) P(A) + P(B)
+(2) P(A)+P(B)-P(AB)
+(3) P(A)+P(B)+P(AB)
+(4) P(A) × P(B)
+= 2
+~ By the addition theorem of probability, P(A∪B) = P(A) + P(B) − P(A∩B), where P(AB) means P(A∩B); the common part is subtracted because it is counted twice. P(A) + P(B) holds only for mutually exclusive events, and P(A) × P(B) gives P(A∩B) for independent events, not P(A∪B).
+
+Q 122 | sdc | Schedules & Questionnaires
+For collection of primary data through questionnaires, which of the following is NOT true?
+(1) Questionnaire should be comparatively short and simple.
+(2) Questions should proceed in logical sequence moving from easy to more difficult questions.
+(3) Personal and intimate questions should be left to the end.
+(4) Open-ended questions should be included as it is easy to analyze them.
+= 4
+~ Open-ended questions produce answers in many different forms, which are difficult to classify, tabulate and analyse, so a good questionnaire uses mostly closed (yes/no or multiple-choice) questions. A short and simple questionnaire, a logical easy-to-difficult order and keeping personal questions to the end are all accepted rules of drafting.
+
+Q 123 | tsi | Time Series
+Consider the following information in two lists A and B:
+List A | List B
+(i) Secular Trend | (i) Long time fluctuations
+(ii) Seasonal Variations | (ii) Rising trend of population
+(iii) Cyclical variations | (iii) Isolated special occurrences
+(iv) Irregular variations | (iv) Variations within a period of one year
+Match the List – A with List – B and select the correct option.
+(1) A(i)-B(ii), A(ii)-B(iv), A(iii)-B(i), A(iv)-B(iii)
+(2) A(i)-B(i), A(ii)-B(ii), A(iii)-B(iii), A(iv)-B(iv)
+(3) A(i)-B(iii), A(ii)-B(ii), A(iii)-B(iv), A(iv)-B(i)
+(4) A(i)-B(iv), A(ii)-B(iii), A(iii)-B(ii), A(iv)-B(i)
+= 1
+~ Secular trend is the long-term general tendency of a series, such as the rising trend of population (ii). Seasonal variations repeat within a period of one year (iv). Cyclical variations are long-period oscillations such as business cycles, i.e. long time fluctuations (i). Irregular variations are caused by isolated special occurrences such as floods, wars or strikes (iii).
+
+Q 124 | cor | Karl Pearson's Correlation
+Consider the following information in two lists A and B:
+List A | List B
+(i) Scatter Diagram | (i) Can not be used for finding correlation in a grouped frequency distribution.
+(ii) Matrix Plot | (ii) Provides measure of correlation between two variables without ranking
+(iii) Karl Pearson Coefficient of correlation | (iii) Provides rough measure of correlation between two variables
+(iv) Spearman's Rank Correlation | (iv) Provides rough measure of correlation among several variables
+Match the List – A with List – B and select the correct option.
+(1) A(i)-B(i), A(ii)-B(iii), A(iii)-B(ii), A(iv)-B(iv)
+(2) A(i)-B(ii), A(ii)-B(iii), A(iii)-B(i), A(iv)-B(iv)
+(3) A(i)-B(iii), A(ii)-B(iv), A(iii)-B(ii), A(iv)-B(i)
+(4) A(i)-B(iv), A(ii)-B(ii), A(iii)-B(iii), A(iv)-B(i)
+= 3
+~ A scatter diagram gives only a rough visual idea of the correlation between two variables (iii). A matrix plot (scatter-plot matrix) gives this rough picture for several variables at once (iv). Karl Pearson's coefficient measures correlation from the actual values, without ranking (ii). Spearman's rank correlation needs a rank for each individual item, so it cannot be used for a grouped frequency distribution (i).
+
+Q 125 | tsi | Time Series
+Consider the following statements:
+Statement I: Seasonal variations can occur within a period of one year.
+Statement II: Increased demand of woolen cloths during winter is a seasonal variation.
+Which of the statements given above is/are correct?
+(1) Only Statement I is correct
+(2) Only Statement II is correct
+(3) Statement I is correct but statement II is wrong
+(4) Both the statements I and II are correct
+= 4
+~ Seasonal variations are regular, periodic movements that repeat within a period of one year, caused by weather, festivals and customs. The rise in demand for woollen clothes every winter is a standard example, so both statements are correct.
+
+Q 126 | tsi | Time Series
+The trend of the annual sales of a company is described by the following trend line.
+Yc = 30 + 3.6X, this equation when converted to monthly basis becomes:
+(1) Yc = 2.5 + 0.025X
+(2) Yc = 25 + 0.25X
+(3) Yc = 0.25 + 0.25X
+(4) Yc = 30 + 0.025X
+= 1
+~ To convert an annual trend equation into monthly values with X measured in months, the constant a is divided by 12 and the slope b by 12 × 12 = 144. a = 30/12 = 2.5 and b = 3.6/144 = 0.025, so Yc = 2.5 + 0.025X.
+
+Q 127 | tsi | Time Series
+Below are given figures of production '000's quintals of a sugar factory:
+Year | 1941 | 1942 | 1943 | 1944 | 1945 | 1946 | 1947
+Production | 80 | 90 | 92 | 83 | 94 | 99 | 92
+The slope of the trend line for the above data is:
+(1) 1
+(2) 1.5
+(3) 2
+(4) 2.5
+= 3
+~ By least squares, take X = Year − 1944, so X = −3 to 3, ΣX = 0 and ΣX² = 28. ΣY = 630 and ΣXY = −240 − 180 − 92 + 0 + 94 + 198 + 276 = 56. Slope b = ΣXY/ΣX² = 56/28 = 2 (thousand quintals per year); intercept a = ΣY/n = 630/7 = 90.
+
+Q 128 | dsp | Normal Distribution
+For normal distribution, consider the following statements
+1. Mean = Mode =Median;
+2. Odd order central moments are identically equal to zero;
+3. Coefficient of skewness is zero.
+Which of the following holds?
+(1) 2 and 3 are true
+(2) 1 and 3 are true
+(3) 1 and 2 are true
+(4) All three are true
+= 4
+~ The normal curve is perfectly symmetrical about its mean, so mean = median = mode, all odd-order central moments (μ1, μ3, μ5, …) are zero, and the coefficient of skewness β1 = μ3²/μ2³ is zero. All three statements are true.
+
+Q 129 | dsp | Skewness & Kurtosis
+On the basis of the following statements,
+1. Karl Pearson’s measure of skewness lies between -∞ and ∞;
+2. Bowley’s measure of skewness lies between -1 and 1;
+3. Karl Pearson’s measure of skewness lies between -3 and 3;
+Which of the following holds?
+(1) 2 and 3 are true
+(2) 1 and 3 are true
+(3) 1 and 2 are true
+(4) All three are true
+= 1
+~ Bowley's coefficient (Q3 + Q1 − 2Median)/(Q3 − Q1) always lies between −1 and +1, and Karl Pearson's coefficient in its median form 3(Mean − Median)/σ lies between −3 and +3; on this basis the key accepts statements 2 and 3 and rejects 1. However, Pearson's mode form (Mean − Mode)/σ has no theoretical limits, so some textbooks would also call statement 1 true, and in strict logic any value between −3 and +3 also lies between −∞ and ∞, which would make all three statements true. (Official key; some sources differ.)
+
+Q 130 | dsp | Measures of Dispersion
+For the set of observations 1216, 1167, 1232, 1202, 1278, 1141 and 1221, the mean deviation about mean is:
+(1) 80.5
+(2) 78.9
+(3) 67.82
+(4) 32.69
+= 4
+~ Mean = 8457/7 = 1208.14. Absolute deviations from the mean: 7.86, 41.14, 23.86, 6.14, 69.86, 67.14, 12.86; their sum = 228.86. Mean deviation = Σ|x − x̄|/n = 228.86/7 = 32.69.
+
+Q 131 | mct | Mean, Median & Mode
+For 6 bags of rice, the mean weight per bag is 119 kg. The weights of 5 bags are 115 kg, 109 kg, 129 kg, 117 kg and 114 kg. The weight (in kg) of the sixth bag is equal to:
+(1) 120
+(2) 125
+(3) 140
+(4) 130
+= 4
+~ Total weight of 6 bags = 6 × 119 = 714 kg. Weight of the 5 given bags = 115 + 109 + 129 + 117 + 114 = 584 kg. Sixth bag = 714 − 584 = 130 kg.
+
+Q 132 | sdc | Schedules & Questionnaires
+For collection of data through Schedules, which of the following does not hold?
+(1) Trained enumerators are given schedules with relevant questions
+(2) Schedules are filled by enumerators
+(3) Occasional field checks are carried out to check on the work of enumerators
+(4) Reliability of collected data does not depend upon capability of enumerator
+= 4
+~ In the schedule method, trained enumerators take the schedules to the respondents, ask the questions and fill in the answers themselves, and their work is checked in the field from time to time. Because the enumerator collects and records everything, the reliability of the data depends heavily on the enumerator's skill, training and honesty, so statement 4 is false.
+
+Q 133 | cor | Karl Pearson's Correlation
+If X ~ N(0, 1) and Y = X² then rXY is:
+(1) 1
+(2) -1
+(3) 0.5
+(4) 0
+= 4
+~ Cov(X, Y) = E(X·X²) − E(X)E(X²) = E(X³) − 0 × 1 = 0, because all odd moments of the standard normal distribution are zero. Hence rXY = 0, even though Y is completely determined by X: r measures only linear relationship, and the relation Y = X² is not linear.
+
+Q 135 | cor | Karl Pearson's Correlation
+Given that X, Y and Z = (X + 2Y) are variables such that Var(X) = 4, Var(Y) = 3 and Var(Z) = 4, then rXY is:
+(1) 2/3
+(2) 1/3
+(3) −√3/2
+(4) 2/√3
+= 3
+~ Var(Z) = Var(X) + 4Var(Y) + 2 × 2 × Cov(X, Y), so 4 = 4 + 12 + 4Cov(X, Y), giving Cov(X, Y) = −3. rXY = Cov(X, Y)/(σX σY) = −3/(√4 × √3) = −3/(2√3) = −√3/2. (2/√3 is greater than 1, so it can never be a correlation coefficient.)
+
+Q 136 | cmp | Digital Logic & Number Systems
+What will be the output of a two-input OR gate when both inputs are LOW (0)?
+(1) 0
+(2) 1
+(3) Indeterminate
+(4) 2
+= 1
+~ An OR gate gives output 1 if at least one input is 1; only when all inputs are 0 is the output 0 (0 + 0 = 0 in Boolean addition). The output is always a definite binary value, so "indeterminate" and "2" are impossible.
+
+Q 137 | cmp | Digital Logic & Number Systems
+A NOT gate is used in a digital circuit, where it takes the output of an OR gate as its input. If the inputs to the OR gate are A = 0 and B = 1, then what will the final output after passing through the NOT gate be?
+(1) 0
+(2) 1
+(3) Indeterminate
+(4) Same as the OR gate output
+= 1
+~ OR gate: A + B = 0 + 1 = 1. NOT gate inverts it: NOT 1 = 0. (An OR gate followed by a NOT gate is a NOR gate, and the final output is the opposite of the OR output, not the same.)
+
+Q 138 | cmp | Digital Logic & Number Systems
+Which of the following statements best describes the function of a NAND gate?
+(1) A NAND gate outputs 1 only when both inputs are 1.
+(2) A NAND gate performs logical addition and then inverts the output.
+(3) A NAND gate outputs 0 only when both inputs are 1; otherwise, it outputs 1.
+(4) A NAND gate is the same as an OR gate with an inverted output.
+= 3
+~ NAND = NOT AND: the AND output is inverted, so the output is 0 only when both inputs are 1 and is 1 in all other cases. Option 1 describes an AND gate, while options 2 and 4 (OR, i.e. logical addition, followed by inversion) describe a NOR gate.
+
+Q 139 | cmp | Digital Logic & Number Systems
+Read the given statement(s) and conclusions carefully. Assuming that the information given in the statement(s) is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).
+Statement: In 2’s complement representation, negative numbers are obtained by inverting all bits of the positive number and adding 1.
+Conclusions:
+I. A number with MSB = 1 in 2’s complement is always negative.
+II. 2’s complement allows direct arithmetic operations without requiring separate subtraction circuits.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Both conclusions I and II follow.
+(4) Neither conclusion I nor II follow.
+= 3
+~ In 2's complement the most significant bit acts as the sign bit, so a number with MSB = 1 is negative (for example, 1111 = −1 in 4 bits). Because negatives are formed this way, subtraction A − B is done as A + (2's complement of B) on the same adder circuit, so no separate subtractor is needed. Both conclusions follow.
+
+Q 140 | cmp | Digital Logic & Number Systems
+Which of the following best describes the functionality of a NOR gate in digital logic circuits?
+(1) It outputs HIGH only if both inputs are HIGH.
+(2) It produces a LOW output only when both inputs are LOW.
+(3) It is the inverse of an OR gate, producing a HIGH output only when both inputs are LOW.
+(4) It performs the AND operation and then inverts the result.
+= 3
+~ NOR = NOT OR: the OR output is inverted, so the output is HIGH (1) only when both inputs are LOW (0), and LOW if any input is HIGH. Option 1 describes an AND gate, option 2 describes an OR gate (LOW only when both inputs are LOW), and option 4 describes a NAND gate.
+
+Q 141 | cmp | MS Excel & Office
+Which of the following is the quickest way to automatically adjust the width of a column, in MS Excel 2019?
+(1) Manually dragging the column border.
+(2) Using the "Column Width" option from the Format menu.
+(3) Double-clicking the right border of the column header.
+(4) Entering a specific width in the "Page Layout" tab.
+= 3
+~ Double-clicking the right boundary of a column header applies AutoFit, which instantly sets the column width to fit its longest entry. Dragging the border or typing a value in the Column Width box sets the width manually, not automatically, and column width is not set from the Page Layout tab.
+
+Q 142 | cmp | MS Excel & Office
+Which MS Excel 2019 function returns the highest numeric value from a given range of cells?
+(1) MIN
+(2) MAX
+(3) LARGE
+(4) AVERAGE
+= 2
+~ =MAX(range) returns the largest number in the range. MIN returns the smallest, AVERAGE returns the arithmetic mean, and LARGE(range, k) returns the k-th largest value and needs the extra argument k (LARGE(range, 1) equals MAX).
+
+Q 143 | cmp | MS Excel & Office
+Select the option that is correct regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): In MS-Excel 2019, inserting a new row in the middle of a dataset shifts the existing rows downward, preserving the relative cell references in formulas.
+Reason (R): MS-Excel automatically updates absolute cell references when new rows or columns are inserted to ensure formulas remain accurate.
+(1) Both Assertion (A) and Reason (R) are true, and (R) correctly explains (A).
+(2) Both Assertion (A) and Reason (R) are true, but (R) does not correctly explain (A).
+(3) Assertion (A) is true, but Reason (R) is false.
+(4) Assertion (A) is false, but Reason (R) is true.
+= 3
+~ A is true: when a row is inserted, the rows below move down and formulas are adjusted so that they still point to the same data. The key treats R as false on the idea that absolute references (such as $A$5) are fixed and never change. In actual Excel behaviour, inserting rows or columns also adjusts absolute references (=$A$5 becomes =$A$6 when a row is inserted above row 5); the $ sign only stops a reference from changing when the formula is copied, so R can be argued to be true. (Official key; some sources differ.)
+
+Q 144 | cmp | MS Excel & Office
+Which of the following is the most efficient method to edit data in a specific cell without replacing the existing content, in MS Excel 2019?
+(1) Select the cell and start typing directly.
+(2) Click the cell and press F2 before editing.
+(3) Delete the cell content and enter new data.
+(4) Use the "Find and Replace" feature to modify the content.
+= 2
+~ Pressing F2 puts the selected cell in Edit mode with the cursor at the end of its existing content, so only part of the entry can be changed. Typing directly or deleting the content replaces the whole entry, and Find and Replace is meant for changing text across many cells.
+
+Q 145 | cmp | MS Excel & Office
+What will happen if a user selects multiple non-adjacent rows and attempts to delete them simultaneously, in MS Excel 2019?
+(1) Excel will delete only the first selected row and ignore the others.
+(2) Excel will delete all the selected rows at once.
+(3) Excel will merge the selected rows instead of deleting them.
+(4) Excel will display an error and prevent deletion of non-adjacent rows.
+= 2
+~ Whole rows that are not next to each other can be selected by holding Ctrl and clicking their row headers; choosing Delete (right-click > Delete, or Ctrl + minus) then removes all the selected rows in one step, and the remaining rows move up. Excel does not merge the rows or refuse the deletion.
+
+Q 146 | cmp | Memory & Hardware
+Which of the following best describes the role of cache memory in a computer system?
+(1) It stores frequently accessed data to reduce access time for the processor.
+(2) It serves as a backup for primary memory in case of failure.
+(3) It provides long-term storage for operating system files.
+(4) It replaces the need for RAM in modern computer systems.
+= 1
+~ Cache is a small, very fast memory (usually SRAM) placed between the CPU and main memory; it keeps copies of frequently used instructions and data so the processor can get them faster than from RAM. It is not a backup, it is volatile and not long-term storage (that is the job of secondary storage), and it works along with RAM rather than replacing it.
+
+Q 147 | cmp | Memory & Hardware
+Which of the following options is correct with reference to the given statements and conclusions?
+Statement 1: Direct Memory Access (DMA) enhances system performance by allowing data transfers without continuous CPU intervention.
+Statement 2: DMA can transfer data between memory and I/O devices without needing CPU control at any stage.
+Conclusions:
+I. DMA improves efficiency by freeing up CPU resources for other tasks.
+II. The CPU is never involved in any data transfer when DMA is used.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Both conclusions I and II follow.
+(4) Neither conclusion I nor conclusion II follows.
+= 1
+~ Since DMA moves data between memory and I/O devices without continuous CPU intervention, the CPU is free for other work, so conclusion I follows. Conclusion II is too sweeping: the statements say nothing about every data transfer in the system, and in practice the CPU still sets up each DMA transfer (address, count, direction) and is informed by an interrupt when it ends, so "never involved in any data transfer" does not follow.
+
+Q 148 | cmp | MS Excel & Office
+Match the columns and select the correct option from the following.
+Column A (Features) | Column B (Descriptions)
+1. Fill Handle | A. Used to create a custom-defined sequence of values
+2. Flash Fill | B. Automatically recognises patterns and fills data accordingly
+3. Growth Series | C. Generates a sequence where each number is multiplied by a step value
+4. Linear Series | D. Increases values by a fixed step size to create a sequence
+(1) 1 → D, 2 → B, 3 → C, 4 → A
+(2) 1 → C, 2 → A, 3 → B, 4 → D
+(3) 1 → D, 2 → C, 3 → A, 4 → B
+(4) 1 → A, 2 → D, 3 → C, 4 → B
+= 1
+~ Flash Fill recognises a pattern from an example and fills the rest of the column (2 → B), and a Growth series multiplies each value by the step value (3 → C); only option 1 has both of these, so it is the answer. Its other two pairs are a looser fit: dragging the Fill Handle over two starting numbers does extend them by the same fixed step (1 → D), and a Linear series is set up in the Series dialog with the user's own start, step and stop values (4 → A). Strictly, D is the textbook description of a linear series, but the only option with 4 → D (option 2) gets Flash Fill and Growth wrong.
+
+Q 149 | cmp | MS Excel & Office
+What happens when a user enters a number with leading zeros (e.g., 00789) into a cell, in MS Excel 2019, by default?
+(1) Excel retains the leading zeros and stores the number as entered.
+(2) Excel automatically removes the leading zeros and stores the number as 789.
+(3) Excel stores it as a text value instead of a number, preserving the leading zeros.
+(4) Excel converts it into a scientific notation format, such as 7.89E+02.
+= 2
+~ In the default General format Excel treats 00789 as the number 789 and drops the leading zeros. To keep them, the cell must be formatted as Text (or a custom format such as 00000 used), or an apostrophe typed first ('00789). Scientific notation is used only for very large numbers, not for a three-digit value.
+
+Q 150 | cmp | Memory & Hardware
+Which of the following statements about computer memory hierarchy is INCORRECT?
+(1) Cache memory is faster than RAM but has lower storage capacity.
+(2) Virtual memory is a section of the hard drive used to extend RAM.
+(3) ROM can be written and modified multiple times during normal computer operation.
+(4) SRAM (Static RAM) is used for cache memory because it is faster than DRAM.
+= 3
+~ ROM (Read Only Memory) can only be read during normal operation; its contents are written at manufacture or by special programming (as in EPROM/EEPROM flashing), not modified repeatedly while the computer runs. The other statements are correct: cache is faster but smaller than RAM, virtual memory uses disk space to extend RAM, and cache is built from SRAM because it is faster than DRAM.
