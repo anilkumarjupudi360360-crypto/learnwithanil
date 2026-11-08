@@ -875,7 +875,7 @@ details.upc .exams{margin-top:8px}
       <a class="crumb" href="{{HUBHREF}}">← All exams</a>
       <p class="eyebrow">{{EYEBROW}}</p>
       <h1>{{H1}}</h1>
-      <p>{{TOTAL}} questions from {{FROMPAPERS}}, answered from {{KEYSHORT}} and explained, in {{LANGS}}. Practise by topic, take timed tests and revise your mistakes, with one ₹45 All-in-One Pass for every exam on the site.</p>
+      {{HERO_P}}
       <p class="hero-l2">{{L2LINE}}</p>
       <p class="hero-aka">{{AKA}}</p>
     </div>
@@ -891,9 +891,7 @@ details.upc .exams{margin-top:8px}
 
   <section class="wrap section">
     <div class="figures">
-      <div class="figure"><div class="v">{{TOTAL}}</div><div class="k">Previous year questions</div></div>
-      <div class="figure"><div class="v">{{NPAPERS}}</div><div class="k">{{PAPERSK}}</div></div>
-      <div class="figure"><div class="v" id="hf-acc">—</div><div class="k">Your accuracy so far</div></div>
+{{FIG12}}      <div class="figure"><div class="v" id="hf-acc">—</div><div class="k">Your accuracy so far</div></div>
       <div class="figure"><div class="v" id="hf-mis">0</div><div class="k">In your mistakes notebook</div></div>
     </div>
   </section>
@@ -935,7 +933,7 @@ details.upc .exams{margin-top:8px}
 const DATA = window.LWA_DATA || JSON.parse(document.getElementById("lwa-data").textContent);
 const PHOTO = "{{PHOTO}}";
 const EKEY = DATA.key || "appsc-g2", KEY = "lwa-"+EKEY+"-v1", PKEY = "lwa-"+EKEY+"-prefs-v1";
-const LET = ["A","B","C","D"];
+const LET = ["A","B","C","D","E"];   // E: the bank exams (SBI PO, IBPS SO mocks) have five options
 const QS = DATA.questions, PAPERS = DATA.papers, SUBJECTS = DATA.subjects;
 const QMAP = Object.fromEntries(QS.map(q=>[q.id,q]));
 const PMAP = Object.fromEntries(PAPERS.map(p=>[p.id,p]));
@@ -1332,7 +1330,7 @@ async function startMock(id, part, mode){   // mode "practice": check each answe
     if(mm){
       const pt = (mm.parts||[]).find(x=>x[0]===part);
       if(pt){ qs = qs.filter(q=>pt[2].includes(q.s)); pname = pt[1]; }
-      mins = Math.max(1, Math.round(mm.mins * qs.length / r.questions.length));   // a part gets its share of the real time limit
+      mins = (part && mm.pmins && mm.pmins[part]) || Math.max(1, Math.round(mm.mins * qs.length / r.questions.length));   // a part: its real section limit (bank exams: 20 min) or its share of the full time
     }
     else if(part==="ari" || part==="rea") qs = qs.filter(q=>q.s===part); else if(part==="gs") qs = qs.filter(q=>q.s!=="ari" && q.s!=="rea");
     const practice = mode==="practice";
@@ -1794,6 +1792,7 @@ const HUBT = {
   allB:{en:'← All exam boards', hi:'← सभी परीक्षा बोर्ड', te:'← అన్ని పరీక్షల బోర్డులు'},
   search:{en:'Search an exam, e.g. Group-II, CGL, NDA, Police SI', hi:'परीक्षा खोजें, जैसे Group-II, CGL, NDA, Police SI', te:'పరీక్షను వెతకండి, ఉదా. Group-II, CGL, NDA, Police SI'},
   live:{en:'Live · {N} questions', hi:'उपलब्ध · {N} प्रश्न', te:'అందుబాటులో · {N} ప్రశ్నలు'},
+  liveMk:{en:'Live · mock tests', hi:'उपलब्ध · मॉक टेस्ट', te:'అందుబాటులో · మాక్ టెస్టులు'},   // SBI PO / IBPS SO: mock tests only
   soon:{en:'Upcoming', hi:'आगामी', te:'రాబోయేది'},
   count:{en:'{n} exams · {l} live now', hi:'{n} परीक्षाएँ · {l} अभी उपलब्ध', te:'{n} పరీక్షలు · {l} ఇప్పుడు అందుబాటులో'},
   emptyT:{en:'No exam matches your search', hi:'आपकी खोज से कोई परीक्षा नहीं मिली', te:'మీరు వెతికిన పరీక్ష దొరకలేదు'},
@@ -1841,7 +1840,7 @@ function applyHubLang(){   // the start page's own text follows the language but
   if(!DATA.hub) return; const L = hubLang();
   document.querySelectorAll("#hub-static [data-i18n]").forEach(el=>{ el.innerHTML = HT(el.dataset.i18n, L); setLangAttr(el, L); });
   const s = $("#examSearch"); if(s){ s.placeholder = HT("search", L); setLangAttr(s, L); }
-  document.querySelectorAll("#hub-static .ex-st").forEach(el=>{ const n = el.dataset.n; el.textContent = n ? HT("live", L).replace("{N}", Number(n).toLocaleString("en-IN")) : HT("soon", L); setLangAttr(el, L); });
+  document.querySelectorAll("#hub-static .ex-st").forEach(el=>{ const n = el.dataset.n; el.textContent = n==="mk" ? HT("liveMk", L) : n ? HT("live", L).replace("{N}", Number(n).toLocaleString("en-IN")) : HT("soon", L); setLangAttr(el, L); });
 }
 
 /* ---------- exam hub (start page) + one exam's page ---------- */
@@ -2039,12 +2038,12 @@ function svHTML(html){   // a pass holder sees "included" instead of the price b
 }
 function vMocks(){
   const x = esc(DATA.examSeo||DATA.examShort||"");
-  return `<div class="wrap view">${head("Mock tests", x+" mock tests", "Full-length mock tests with a timer, and every real previous paper as a timed test, with answers and explanations.")}
+  return `<div class="wrap view">${head("Mock tests", x+" mock tests", DATA.mockonly ? "Full-length mock tests with a timer, written by Learn with Anil in the real exam pattern, with answers and explanations." : "Full-length mock tests with a timer, and every real previous paper as a timed test, with answers and explanations.")}
     <div class="sv">${svHTML(DATA.mockHtml||"")}</div></div>`;
 }
 function vSectionals(){
   const x = esc(DATA.examSeo||DATA.examShort||"");
-  return `<div class="wrap view">${head("Sectional tests", x+" sectional tests", "Practise one subject or one section at a time, with a timer.")}
+  return `<div class="wrap view">${head("Sectional tests", x+" sectional tests", DATA.mockonly ? "Practise one section of a mock at a time, with the real 20-minute limit." : "Practise one subject or one section at a time, with a timer.")}
     <div class="sv">${svHTML(DATA.secHtml||"")}</div></div>`;
 }
 function linkAction(sp){   // a link to this exam with ?buy / ?pdf / ?mock / ?sec / ?practice / ?test: do it here (same as on page load)
@@ -2229,7 +2228,7 @@ function vQuiz(){
         <h3>Question palette</h3>
         <div class="pgrid">${pal}</div>
         ${legend}
-        <p class="muted" style="font-size:13px">Keys: A–D to choose${test?"":", Enter for the next question"}, ← → to move.${test?"":" Answers are shown after you submit."}</p>
+        <p class="muted" style="font-size:13px">Keys: ${isMCQ(q) && q.o.length===5 ? "A–E" : "A–D"} to choose${test?"":", Enter for the next question"}, ← → to move.${test?"":" Answers are shown after you submit."}</p>
       </aside>
     </div>
   </div>`;
@@ -3139,7 +3138,7 @@ document.addEventListener("keydown", e=>{
   if(e.target.matches && e.target.matches("input,select,textarea")) return;
   const id = QZ.ids[QZ.i], q = QMAP[id], k = e.key.toUpperCase();
   if(isMCQ(q)){
-    const idx = LET.indexOf(k) >= 0 ? LET.indexOf(k) : ["1","2","3","4"].indexOf(k);
+    const idx = LET.indexOf(k) >= 0 ? LET.indexOf(k) : ["1","2","3","4","5"].indexOf(k);
     if(idx>=0){ delete QZ.chk[id]; if(QZ.ans[id]===idx) delete QZ.ans[id]; else QZ.ans[id]=idx; render(); e.preventDefault(); return; }
   }
   if(e.key==="ArrowRight" && QZ.i<QZ.ids.length-1){ QZ.i++; render(); showQ(); }

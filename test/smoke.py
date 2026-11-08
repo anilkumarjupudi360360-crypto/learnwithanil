@@ -70,12 +70,25 @@ async def main():
             tiles = await pg.locator('#hub-static .exam').count()
             assert tiles >= 90, f'expected the full exam list, got {tiles}'
             live = await pg.locator('#hub-static .exam.live').count()
-            built = sum(1 for d in ('appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager', 'tgpsc-group-1', 'appsc-amvi', 'tgpsc-amvi', 'appsc-endowment-officer', 'appsc-analyst-grade-2', 'appsc-assistant-environmental-engineer', 'appsc-assistant-statistical-officer', 'appsc-forest-range-officer', 'ap-police-si', 'ap-police-constable', 'upsc-cse', 'upsc-prelims') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
+            built = sum(1 for d in ('sbi-po', 'ibps-so', 'appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager', 'tgpsc-group-1', 'appsc-amvi', 'tgpsc-amvi', 'appsc-endowment-officer', 'appsc-analyst-grade-2', 'appsc-assistant-environmental-engineer', 'appsc-assistant-statistical-officer', 'appsc-forest-range-officer', 'ap-police-si', 'ap-police-constable', 'upsc-cse', 'upsc-prelims') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1
             assert live == built, f'{built} exams are built but {live} tiles are live'
             await pg.fill('#examSearch', 'group 2'); await pg.wait_for_timeout(100)
             found = await pg.eval_on_selector_all('#hub-static .exam:not([hidden])', 'els => els.map(e => e.dataset.id)')   # APPSC and TGPSC Group-II (+ TNPSC Group 2, listed 2 Nov 2026)
             assert 'appsc-group-2' in found and len(found) == 3, f'search "group 2" should find APPSC, TGPSC and TNPSC Group 2, found {found}'
             await pg.fill('#examSearch', '')
+            # SBI PO / IBPS SO (8 Nov 2026): mock tests only, no previous papers
+            for d, nm in (('sbi-po', 'SBI PO'), ('ibps-so', 'IBPS SO')):
+                st = await pg.eval_on_selector(f'#hub-static .exam[data-id="{d}"] .ex-st', 'e => e.textContent')
+                if 'mock' not in st.lower(): errors.append(f'{name}: {d} tile should say mock tests, says {st!r}')
+                bp = await b.new_page(viewport={'width': width, 'height': 900})
+                bp.on('pageerror', lambda e: errors.append(f'pageerror ({d}): {e}'))
+                await bp.goto(URL + d + '/'); await bp.wait_for_timeout(700)
+                t = await bp.evaluate('document.body.innerText')
+                if 'No official papers to publish' not in t or nm + ' Prelims test series' not in t: errors.append(f'{name}: {d} home tiles missing')
+                if 'Previous Papers' in await bp.evaluate('document.getElementById("nav").innerText'): errors.append(f'{name}: {d} nav should not offer previous papers')
+                await bp.goto(URL + d + '/mock-test.html'); await bp.wait_for_timeout(300)
+                if '?mock=bk-' not in await bp.content(): errors.append(f'{name}: {d} mock-test page has no mock link')
+                await bp.close()
             await pg.screenshot(path=f'{SHOTS}/hub-{name}.png', full_page=False)
             sw = await pg.evaluate('document.documentElement.scrollWidth');
             if sw > width: errors.append(f'{name}: horizontal overflow {sw}>{width}')
