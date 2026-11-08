@@ -46,7 +46,7 @@ def time_marks(conf, p):
     if conf['id'] == 'appsc-analyst': return '150 Minutes', (150 if p['id'] == 'n2025a' else 300)   # Analyst 2025: Paper I 1 mark, Paper II 2 marks a question
     if conf['id'] == 'appsc-env-engineer': return '150 Minutes', (300 if p['id'] == 'v25c' else 150)   # AEE 2025: Paper II 2 marks a question, Paper I 1 mark
     if conf['id'] == 'appsc-aso': return '150 Minutes', 150   # ASO Paper II: 150 questions, 150 marks
-    if conf['id'] == 'appsc-fro': return '150 Minutes', 150   # FRO Mains: each paper 150 questions, 150 marks
+    if conf['id'] == 'appsc-fro': return '150 Minutes', 150   # FRO Screening and each Mains paper: 150 questions, 150 marks
     return (f'{p["mins"]} Minutes' if p.get('mins') else ''), ''
 
 CSS = """

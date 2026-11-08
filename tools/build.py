@@ -911,10 +911,12 @@ FRO_FORESTRY_SUBJECTS = [
   ('ens', 'Environmental Science', 'environmental-science', ['Pollution', 'Waste Management', 'Climate & Global Issues', 'Environmental Laws & Ethics']),
   ('fse', 'Forest Survey, Engineering & First Aid', 'forest-survey-first-aid', ['Survey & Engineering', 'First Aid']),
 ]
-FRO_SUBJECTS = FRO_FORESTRY_SUBJECTS
+# Anil, 8 Nov 2026 ("add the rest also"): FRO General Studies papers added (2025 and 2019 Screening, 2023 and 2020 Mains GS & MA).
+FRO_SUBJECTS = FRO_FORESTRY_SUBJECTS + [s for s in AMVI_AP_SUBJECTS if s not in AMVI_AUTO] + [
+  ('mth', 'Mathematics', 'mathematics', ['Algebra', 'Geometry & Mensuration', 'Trigonometry', 'Statistics & Probability'])]
 FRO_SUBJ_TE = dict(AMVI_AP_SUBJ_TE, nrs='సహజ వనరులు', pls='వృక్ష శాస్త్రం', bdc='జీవవైవిధ్యం, సంరక్షణ', ssg='మృత్తిక శాస్త్రం, భూగర్భ శాస్త్రం', wsm='నీటి వనరులు, వాటర్‌షెడ్ నిర్వహణ',
                    slv='సిల్వికల్చర్, వ్యవసాయ అటవీకరణ', ecw='పర్యావరణ వ్యవస్థలు, వన్యప్రాణులు', fpt='అటవీ సంరక్షణ', fut='అటవీ ఉత్పత్తుల వినియోగం', anm='జంతు నిర్వహణ, ఆర్థిక జంతుశాస్త్రం',
-                   fel='అటవీ ఆర్థిక శాస్త్రం, విధానం, చట్టాలు', fim='అటవీ ఇన్వెంటరీ, కొలతలు, రిమోట్ సెన్సింగ్', ens='పర్యావరణ శాస్త్రం', fse='సర్వే, ఇంజనీరింగ్, ప్రథమ చికిత్స')
+                   fel='అటవీ ఆర్థిక శాస్త్రం, విధానం, చట్టాలు', fim='అటవీ ఇన్వెంటరీ, కొలతలు, రిమోట్ సెన్సింగ్', ens='పర్యావరణ శాస్త్రం', fse='సర్వే, ఇంజనీరింగ్, ప్రథమ చికిత్స', mth='గణితం')
 def _fro_paper(pid, year, notif, held, n, roman):
     nm = f'General Forestry {"I" * n}'
     return dict(id=pid, file=f'appsc-fro-{year}-mains-general-forestry-{n}.txt', year=year, stage=f'Main Examination {roman} ({nm})', short=f'FRO Mains {year} {nm}',
@@ -926,10 +928,30 @@ def _fro_paper(pid, year, notif, held, n, roman):
                                            if n == 1 else '(ecosystems and wildlife, forest protection and fire, forest utilization and NTFPs, animal management, forest economics, policy and laws, inventory, mensuration and remote sensing, environmental science, survey and first aid)')
                        + ', computer-based test, 150 questions, 150 marks, 150 minutes, in English.'))
 FRO_PAPERS = [
+  dict(id='f2025s', file='appsc-fro-2025-screening-test.txt', year=2025, stage='Screening Test', short='FRO Screening 2025',
+       kwname='APPSC FRO Screening Test 2025', title='APPSC Forest Range Officer Screening Test 2025 (General Studies, Mental Ability & Mathematics and General Forestry)',
+       notif='Notification 11/2024 · CBT', held='16 March 2025', key="APPSC's final key", fmt='mcq', slug='appsc-fro-screening-test-2025-question-paper-with-answers',
+       alt='Screening Test', te_paper='స్క్రీనింగ్ టెస్ట్',
+       blurb='Screening Test (online): Section 1 General Studies, Mental Ability & Mathematics (75 questions, in English and Telugu) and Section 2 General Forestry I & II (75 questions, in English), 150 marks, 150 minutes.'),
+  dict(id='f2023a', file='appsc-fro-2023-mains-paper1-gsma.txt', year=2023, stage='Main Examination Paper I (General Studies & Mental Ability)', short='FRO Mains 2023 Paper I (GS & MA)',
+       kwname='APPSC FRO Mains 2023 Paper 1 General Studies & Mental Ability', title='APPSC Forest Range Officer Mains 2023: Paper I General Studies & Mental Ability',
+       notif='Notification 21/2022 · CBT', held='25 September 2023', key="APPSC's final key", fmt='mcq', slug='appsc-fro-mains-2023-paper-1-general-studies-mental-ability-question-paper-with-answers',
+       alt='General Studies & Mental Ability', te_paper=EO_TE_P1,
+       blurb='Paper I: General Studies & Mental Ability, computer-based test, 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
   _fro_paper('f2023c', 2023, 'Notification 21/2022', '26 September 2023', 1, 'Paper III'),
   _fro_paper('f2023d', 2023, 'Notification 21/2022', '27 September 2023', 2, 'Paper IV'),
   _fro_paper('f2020c', 2020, 'Notification 10/2018', '18 March 2020', 1, 'Paper III'),
   _fro_paper('f2020d', 2020, 'Notification 10/2018', '19 March 2020', 2, 'Paper IV'),
+  dict(id='f2020a', file='appsc-fro-2020-mains-gsma.txt', year=2020, stage='Main Examination Paper I (General Studies & Mental Ability)', short='FRO Mains 2020 Paper I (GS & MA)',
+       kwname='APPSC FRO Mains 2020 General Studies & Mental Ability', title='APPSC Forest Range Officer Mains 2020: General Studies & Mental Ability',
+       notif='Notification 10/2018 · CBT', held='17 March 2020', key="APPSC's final key", fmt='mcq', slug='appsc-fro-mains-2020-general-studies-mental-ability-question-paper-with-answers',
+       alt='General Studies & Mental Ability', te_paper=EO_TE_P1, en_only=True,
+       blurb='Paper I: General Studies & Mental Ability, computer-based test, 150 questions, 150 marks, 150 minutes, in English (the master paper prints English only).'),
+  dict(id='f2019s', file='appsc-fro-2019-screening-test.txt', year=2019, stage='Screening Test', short='FRO Screening 2019',
+       kwname='APPSC FRO Screening Test 2019', title='APPSC Forest Range Officer Screening Test 2019 (General Studies & Mental Ability, Mathematics and General Forestry)',
+       notif='Notification 10/2018 · answer-only key', held='2019', key="APPSC's final key", fmt='recall', slug='appsc-fro-screening-test-2019-questions-with-answers',
+       alt='Screening Test', te_paper='స్క్రీనింగ్ టెస్ట్', en_only=True,
+       blurb="Screening Test: General Studies & Mental Ability, Mathematics and General Forestry. APPSC's final key prints each question with only its correct answer, so these are quick-recall questions, in English."),
 ]
 
 # APPSC Assistant Environmental Engineer, A.P. Pollution Control Board (Anil, 8 Nov 2026: "pls add pyqs for it in ap section",
@@ -1293,15 +1315,15 @@ def exam_confs():
            short='APPSC FRO', seo='APPSC FRO', slugp='appsc-fro', papers=FRO_PAPERS, subjects=FRO_SUBJECTS, faq=FAQ_FRO,
            board='APPSC', l2=L2_TE, pb='/appsc-forest-range-officer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
            te_name='ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO)', te_paper='రాత పరీక్ష', subj_te=FRO_SUBJ_TE,
-           title='APPSC FRO Previous Question Papers with Answers – Forest Range Officer General Forestry I & II, 2020 & 2023 Mains | Learn with Anil',
+           title='APPSC FRO Previous Question Papers with Answers – Forest Range Officer Screening 2019 & 2025, Mains 2020 & 2023 GS and General Forestry | Learn with Anil',
            h1='APPSC Forest Range Officer (FRO) previous question papers <em>with answers.</em>',
-           l2line='ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO) మెయిన్స్ పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ ఫారెస్ట్రీ-1, జనరల్ ఫారెస్ట్రీ-2 (2020, 2023, ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — స్క్రీనింగ్ టెస్ట్ 2019, 2025; మెయిన్స్ 2020, 2023 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), జనరల్ ఫారెస్ట్రీ-1, 2 (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
            aka='Forest Range Officer (FRO) in the A.P. Forest Service, Andhra Pradesh Forest Department, recruited by the Andhra Pradesh Public Service Commission.',
            aka_short='APPSC Forest Range Officer (AP Forest Department)',
-           desc=lambda t: (f"APPSC Forest Range Officer (FRO) previous question papers: General Forestry I and General Forestry II of the 2023 and 2020 Mains with answers from APPSC's final keys, "
+           desc=lambda t: (f"APPSC Forest Range Officer (FRO) previous question papers: the 2025 and 2019 Screening Tests, Paper I General Studies & Mental Ability and General Forestry I and II of the 2023 and 2020 Mains, with answers from APPSC's final keys, "
                            f"{t:,} questions with explanations. Practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
-           eyebrow='APPSC · Forest Range Officer · A.P. Forest Service · 2020 &amp; 2023 Mains',
-           papers_note="Answers come from APPSC's final keys on the master question papers of the computer-based Main Examinations of September 2023 (Notification 21/2022) and March 2020 (Notification 10/2018): the option marked correct there is the answer. Questions APPSC ignored for all candidates are left out; where APPSC accepted two options, both are shown as correct. The General Forestry papers are in English only. APPSC has published only the initial key of the 2025 Mains (Notification 11/2024), so that paper is not here yet."),
+           eyebrow='APPSC · Forest Range Officer · A.P. Forest Service · Screening &amp; Mains, 2019–2025',
+           papers_note="Answers come from APPSC's final keys on the master question papers of the computer-based Screening Test of 16 March 2025 (Notification 11/2024) and Main Examinations of September 2023 (Notification 21/2022) and March 2020 (Notification 10/2018): the option marked correct there is the answer. The 2019 Screening Test key prints only the correct answer, so that paper is quick-recall questions. Questions APPSC ignored or deleted for all candidates are left out; where APPSC accepted two options, both are shown as correct. The 2023 Mains Paper I and the first section of the 2025 Screening Test are in English and Telugu as printed; the other papers are in English only. APPSC has published only the initial keys of the 2025 Mains (Notification 11/2024), so those papers are not here yet."),
       dict(id='ap-police-si', dir='ap-police-si', src='ap-police-si', key='ap-si', name='AP Police SI', short='AP Police SI', seo='AP Police SI',
            slugp='ap-police-si', papers=AP_SI_PAPERS, subjects=AP_SUBJECTS, faq=FAQ_AP('SI'), board='SLPRB', l2=L2_TE, pb='/ap-police-si/',
            keyname="SLPRB's key", keyshort="SLPRB's keys", bits=True,
@@ -2322,8 +2344,8 @@ def FAQ_ANALYST(total, npapers):
 def FAQ_FRO(total, npapers):
     return [
       ('Where can I get APPSC Forest Range Officer previous question papers with answers?',
-       f'This page has {total:,} questions from {npapers} APPSC Forest Range Officer (FRO) papers: General Forestry I and General Forestry II of the 2023 Mains (Notification 21/2022) and the 2020 Mains '
-       "(Notification 10/2018). Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam."),
+       f'This page has {total:,} questions from {npapers} APPSC Forest Range Officer (FRO) papers: the 2025 Screening Test (Notification 11/2024), Paper I General Studies & Mental Ability, General Forestry I and General Forestry II '
+       "of the 2023 Mains (Notification 21/2022) and the 2020 Mains (Notification 10/2018), and the 2019 Screening Test. Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam."),
       ('What is the APPSC FRO exam pattern?',
        'Notification 16/2026 (5 posts) has a qualifying test in General English and General Telugu (100 marks) and four objective papers of 150 marks each: Paper I General Studies & Mental Ability, '
        'Paper II Mathematics (SSC standard), Paper III General Forestry I and Paper IV General Forestry II, 600 marks in all, computer-based, with one-third of a mark deducted for each wrong answer. '
@@ -2337,9 +2359,9 @@ def FAQ_FRO(total, npapers):
        'geology, horticulture, mathematics, physics, statistics, veterinary science or zoology; age 18 to 30 years as on 1 July 2026 with the usual relaxations; height at least 163 cm for men and 150 cm for women. '
        'Pay scale ₹48,440 – ₹1,37,220.'),
       ('Are the questions in Telugu?',
-       'The General Forestry papers are printed in English only, so they are here in English.'),
+       'The 2023 Mains Paper I (General Studies & Mental Ability) and Section 1 of the 2025 Screening Test are here in English and Telugu, as APPSC printed them. The General Forestry papers, the 2020 Mains GS paper and the 2019 Screening Test are printed in English only, so they are here in English.'),
       ('Which questions are left out?',
-       "Questions that APPSC ignored for all candidates are left out. Where APPSC accepted two options, both are shown as correct. The 2025 Mains (Notification 11/2024) is not here yet, because APPSC has published only its initial key."),
+       "Questions that APPSC ignored or deleted for all candidates are left out. Where APPSC accepted two options, both are shown as correct. The 2025 Mains (Notification 11/2024) is not here yet, because APPSC has published only its initial keys."),
     ]
 
 

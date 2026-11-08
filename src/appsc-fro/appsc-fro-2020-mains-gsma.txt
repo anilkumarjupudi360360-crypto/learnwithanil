@@ -1,0 +1,1430 @@
+# APPSC Forest Range Officer in A.P. Forest Service (Notification 10/2018), Main Examination: General Studies & Mental Ability, computer-based test held 17 March 2020 (shift 2), English.
+# Answers: APPSC final key (APOnline master question paper, correct option ticked; master final key of 2 September 2020, which includes the revised key). Explanations by Learn with Anil.
+# Left out (deleted by APPSC): 73, 91, 97. More than one option accepted by APPSC: 88, 127.
+
+Q 1 | sci | Chemistry
+What is the result when we add salt in water?
+(1) The boiling point decreases and freezing point increases.
+(2) The boiling point increases and freezing point decreases.
+(3) Both the boiling point and the freezing point increase.
+(4) Both the boiling point and freezing point decrease.
+= 2
+~ Salt is a non-volatile solute: it lowers the vapour pressure of water, so the solution must be heated above 100 °C to boil (elevation of boiling point) and cooled below 0 °C to freeze (depression of freezing point). These are colligative properties, which is why sea water freezes near −2 °C and salt is spread to melt ice on roads.
+
+Q 2 | sci | Chemistry
+Tamarind contains:
+(1) acetic acid
+(2) citric acid
+(3) methanoic acid
+(4) tartaric acid
+= 4
+~ The sour taste of tamarind comes mainly from tartaric acid, which is also found in grapes. Acetic acid is the acid of vinegar, citric acid is found in lemons and oranges, and methanoic (formic) acid is present in ant stings and nettle leaves.
+
+Q 3 | sci | Science & Technology
+The Integrated Chip (IC) of a computer is usually made of:
+(1) gold
+(2) copper
+(3) silicon
+(4) tungsten
+= 3
+~ Integrated circuits are built on thin wafers of very pure silicon, a semiconductor whose conductivity can be controlled by doping to form transistors, diodes and resistors on a single chip. Gold and copper are used only for fine wiring and connections, and tungsten for filaments and contacts.
+
+Q 4 | sci | Biology & Health
+The longest fibre on the cell body of a neuron is called:
+(1) dendrites
+(2) axon
+(3) cytoplasm
+(4) sheath
+= 2
+~ A neuron has a cell body (cyton) with many short branched dendrites that bring impulses in, and one long fibre, the axon, that carries impulses away from the cell body to the next neuron or to a muscle. The myelin sheath is only a covering around the axon, and cytoplasm is the cell's fluid content.
+
+Q 5 | sci | Chemistry
+Which group of elements generally form coloured compounds?
+(1) Alkali metals
+(2) Transition metals
+(3) Metalloids
+(4) Non-metals
+= 2
+~ Transition (d-block) metal ions have partly filled d-orbitals; they absorb part of visible light when electrons jump between d-levels (d–d transitions), so their compounds look coloured, e.g. blue copper sulphate and purple potassium permanganate. Alkali metal compounds are generally white or colourless because their ions have no unpaired d-electrons.
+
+Q 6 | sci | Science & Technology
+Dactylography is the study of:
+(1) fingerprints
+(2) retina
+(3) face recognition
+(4) DNA
+= 1
+~ Dactylography (Greek daktylos, finger) is the study of fingerprints for identification. Fingerprint ridge patterns are unique to each person and do not change through life, so they are used in forensics and biometric systems such as Aadhaar. Retina scans, face recognition and DNA profiling are other identification methods.
+
+Q 7 | cur | National
+Which platform has been launched by the National Payments Corporation of India (NPCI) for fast and secure payments?
+(1) Bal
+(2) Vajra
+(3) Dhanush
+(4) Shiva
+= 2
+~ In January 2020 NPCI announced Vajra, a permissioned blockchain (distributed ledger technology) based platform meant to make payments faster and more secure. It is designed to automate the clearing and settlement of payments made through NPCI's products (NPCI runs UPI, RuPay, IMPS and others) on a shared, tamper-resistant ledger.
+
+Q 8 | cur | Reports & Indices
+According to the latest India State of Forest Report by FSI (December 2019), what is the total forest and tree cover of India?
+(1) 19.12%
+(2) 26.71%
+(3) 24.56%
+(4) 21.13%
+= 3
+~ The India State of Forest Report 2019, released by the Forest Survey of India in December 2019, put India's forest cover at 21.67% and tree cover at 2.89% of the geographical area. Together the total forest and tree cover was 24.56% (about 8.07 lakh sq km).
+
+Q 9 | cur | National
+The Yashaswini Scheme for Women Entrepreneurship has been launched in which state?
+(1) Odisha
+(2) Goa
+(3) Uttar Pradesh
+(4) Karnataka
+= 2
+~ The Yashaswini scheme for women entrepreneurship was launched in Goa on 11 January 2020 by Union Women and Child Development Minister Smriti Irani. Under it the Goa government gives women's self-help groups interest-free loans of up to ₹5 lakh, repayable over five years, to start or expand businesses.
+
+Q 10 | cur | National
+On which day is National Farmers Day is celebrated in India?
+(1) 25 December
+(2) 23 December
+(3) 22 December
+(4) 21 December
+= 2
+~ National Farmers Day (Kisan Diwas) is observed on 23 December, the birth anniversary of former Prime Minister Chaudhary Charan Singh (born 1902), who championed farmers' interests and land reforms. 25 December is Good Governance Day and 22 December is National Mathematics Day.
+
+Q 11 | cur | National
+Which five cyclones hit Arabian Sea in the year 2019?
+(1) Vayu, Pabuk, Kyarr, Bulbul and Pavan
+(2) Vayu, Pabuk, Kyarr, Bulbul and Fani
+(3) Pabuk, Kyarr, Bulbul, Pavan and Fani
+(4) Vayu, Hikka, Kyarr, Maha and Pavan
+= 4
+~ 2019 was a record year for the Arabian Sea, with five cyclonic storms: Vayu (June), Hikka (September), Kyarr (October, a super cyclonic storm), Maha (October–November) and Pavan (December). Pabuk (January) entered from the Gulf of Thailand into the Andaman Sea, while Fani and Bulbul were Bay of Bengal cyclones, so the other options are wrong.
+
+Q 12 | cur | National
+Who is considered the 'Missile Woman' of India?
+(1) Ritu Karidhal
+(2) Dr.Tessy Thomas
+(3) Muthiah Vanitha
+(4) Anuradha T K
+= 2
+~ Dr Tessy Thomas, a DRDO scientist, was the first woman to head a missile project in India as Project Director of Agni-IV, which earned her the title 'Missile Woman of India' (also 'Agniputri'). Ritu Karidhal (mission director) and Muthayya Vanitha (project director) led Chandrayaan-2, and Anuradha T K is an ISRO satellite project director.
+
+Q 13 | cur | National
+The Biennial Global Pulses Conference named ‘The Pulses Conclave 2020’ was held in which state?
+(1) Kerala
+(2) Madhya Pradesh
+(3) Maharashtra
+(4) Uttar Pradesh
+= 3
+~ The Pulses Conclave 2020, the biennial global pulses conference organised by the India Pulses and Grains Association (IPGA), was held at Lonavala in Maharashtra in February 2020. It brought together farmers, traders, processors and policymakers of the pulses trade from India and abroad; Kerala, Madhya Pradesh and Uttar Pradesh were not the venue.
+
+Q 14 | sci | Science & Technology
+Name the launch vehicle through which ISRO successfully launched Cartosat-3 and 13 US satellites into the space.
+(1) PSLV-C45
+(2) PSLV-C46
+(3) PSLV-C48
+(4) PSLV-C47
+= 4
+~ On 27 November 2019 ISRO's PSLV-C47 lifted off from Sriharikota and placed Cartosat-3, a high-resolution earth-observation satellite, along with 13 commercial nanosatellites of the USA in orbit. PSLV-C48 (December 2019) carried RISAT-2BR1, PSLV-C46 (May 2019) carried RISAT-2B, and PSLV-C45 (April 2019) carried EMISAT.
+
+Q 15 | cur | National
+The 'One Nation One Ration Card' scheme will be implemented across India by:
+(1) 1st June
+(2) 1st April
+(3) 1st July
+(4) 30th April
+= 1
+~ Under One Nation One Ration Card, a beneficiary under the National Food Security Act can draw subsidised grain from any fair price shop in the country using the same ration card. The Centre set 1 June 2020 as the target date for implementing it across India.
+
+Q 16 | cur | International
+The first in-depth review of India’s energy policies was recently released by which international organisation?
+(1) World Energy Council
+(2) International Energy Agency
+(3) Organization of Petroleum Exporting Countries
+(4) International Renewable Energy Agency
+= 2
+~ In January 2020 the International Energy Agency (IEA) released 'India 2020 – Energy Policy Review', its first in-depth review of India's energy policies, together with NITI Aayog. India has been an IEA Association country since 2017. OPEC is a cartel of oil exporters, and IRENA deals with renewable energy.
+
+Q 17 | cur | International
+Who is the Prime Minister of Cuba as of February 2020?
+(1) Miguel Díaz-Canel
+(2) Raúl Castro
+(3) Manuel Marrero Cruz
+(4) Fidel Castro
+= 3
+~ Manuel Marrero Cruz, earlier Cuba's tourism minister, was appointed Prime Minister in December 2019, the first since the post was abolished in 1976. Miguel Díaz-Canel is the President of Cuba, while Raúl Castro and Fidel Castro were earlier leaders of the country.
+
+Q 18 | cur | International
+The recent United Nations General Assembly (UNGA) session was held from 17 September 2019 to 30 September 2019 in New York, United States. It was the _____ session of the UNGA.
+(1) 71st
+(2) 72nd
+(3) 74th
+(4) 73rd
+= 3
+~ The 74th session of the UN General Assembly opened in New York on 17 September 2019, with Tijjani Muhammad-Bande of Nigeria as its President, and its high-level general debate ran till 30 September 2019. The 73rd session was in 2018–19.
+
+Q 19 | sci | Science & Technology
+China recently launched its heaviest satellite Shijian-20. The satellite was launched using which rocket?
+(1) Long March 4C
+(2) Long March 2E
+(3) Long March 5
+(4) Long March 3B
+= 3
+~ Shijian-20, an experimental communication satellite of about 8 tonnes and China's heaviest at the time, was launched on 27 December 2019 from Wenchang by a Long March 5, China's most powerful heavy-lift rocket. The Long March 3B, 4C and 2E are smaller launchers.
+
+Q 20 | cur | Sports & Awards
+Which country will host the 2023 Men's Hockey World Cup?
+(1) Australia
+(2) China
+(3) Belgium
+(4) India
+= 4
+~ In November 2019 the International Hockey Federation (FIH) named India as host of the 2023 Men's Hockey World Cup, which was played at Bhubaneswar and Rourkela in Odisha. India had also hosted the 2018 edition at Bhubaneswar; Germany won the 2023 title.
+
+Q 21 | cur | International
+Which was chosen as the 'word of the decade' by the linguists in the United States of America on January 4, 2020?
+(1) My
+(2) They
+(3) Climate
+(4) Cancel
+= 2
+~ At its annual meeting in January 2020, the American Dialect Society chose 'they', in its gender-neutral singular use for a person whose gender is not known or who identifies as non-binary, as the word of the decade (2010s). Its word of the year for 2019 was '(my) pronouns'.
+
+Q 22 | cur | Reports & Indices
+Which country topped the Carbon Disclosure Project 2019?
+(1) Japan
+(2) United States
+(3) United Kingdom
+(4) France
+= 2
+~ The CDP (Carbon Disclosure Project) India annual report 2019, released in January 2020, ranked countries by the number of companies committed to science-based emission targets: the United States topped with 135, ahead of Japan (83) and the United Kingdom (78), while India was fifth with 38. CDP is a London-based non-profit that runs the global environmental disclosure system for companies, cities and regions.
+
+Q 23 | ih | Ancient India
+Between the sixth and the fourth centuries BCE, ______ became the most powerful mahajanapada.
+(1) Kashi
+(2) Kuru
+(3) Matsya
+(4) Magadha
+= 4
+~ Of the sixteen mahajanapadas, Magadha (in present-day Bihar) became the most powerful between the sixth and fourth centuries BCE. Fertile Gangetic land, iron ore, elephants for the army, rivers for transport and ambitious rulers such as Bimbisara, Ajatashatru and Mahapadma Nanda helped it, with capitals at Rajagaha and later Pataliputra.
+
+Q 24 | ih | Ancient India
+Who was the first ruler who inscribed his messages to his subjects and officials on stone surfaces – natural rocks as well as polished pillars?
+(1) Chandragupta Maurya
+(2) Samudragupta
+(3) Ashok
+(4) Chandragupta - II
+= 3
+~ The Mauryan emperor Ashoka (c. 268–232 BCE) was the first Indian ruler to inscribe his messages on natural rocks and polished stone pillars, spreading his policy of dhamma. Most edicts are in Prakrit in the Brahmi script; those in the north-west use Kharosthi, and some are in Greek and Aramaic.
+
+Q 25 | ih | Art & Culture
+Match List-A with List-B and select the correct answer using the code given below the lists:
+List-A | List-B
+1-Stupa | (a) Place where the image of the deity is installed
+2-Garbhagrtha | (b) Mound
+3-Mandapa | (c) Circular path around the stupa
+4-Pradakshina patha | (d) Place in temples where people could assemble
+(1) 1-(b), 2-(a), 3-(d), 4-(c)
+(2) 1-(c), 2-(a), 3-(d), 4-(b)
+(3) 1-(b), 2-(a), 3-(c), 4-(d)
+(4) 1-(a), 2-(b), 3-(d), 4-(c)
+= 1
+~ 'Stupa' means a mound, usually holding relics of the Buddha. The garbhagriha is the sanctum where the image of the main deity is installed, the mandapa is the hall where people assemble, and the pradakshina patha is the circular path for walking around the stupa (circumambulation). So 1-(b), 2-(a), 3-(d), 4-(c).
+
+Q 26 | ih | Art & Culture
+Chidambaram, Thanjavur and Gangaikondacholapuram were constructed by which rulers?
+(1) Maurya rulers
+(2) Chola rulers
+(3) Shaka rulers
+(4) Kushana rulers
+= 2
+~ These great Tamil temple centres were built under the Chola rulers: the Brihadeeswara temple at Thanjavur by Rajaraja I (completed about 1010 CE), the temple at Gangaikondacholapuram by Rajendra I, and the Nataraja temple at Chidambaram, the Chola family shrine, was enlarged and gilded by them. The Mauryas, Shakas and Kushanas ruled in other periods and regions.
+
+Q 27 | geo | World Geography
+The formula to calculate population density is:
+(1) Population÷Area
+(2) Population÷Area × 100
+(3) Area ÷ Population
+(4) 100 × Population÷Area
+= 1
+~ Population density is the number of people living per unit area: total population ÷ total area, usually in persons per sq km. For example, Census 2011 put India's population density at 382 persons per sq km. No multiplication by 100 is involved, and Area ÷ Population gives area per person.
+
+Q 28 | geo | World Geography
+Which of the following is devoted to study the processes of soil formation, soil types, their fertility status, distribution and use?
+(1) Hydrology studies
+(2) Soil geography
+(3) Climatology encompasses
+(4) Geomorphology
+= 2
+~ Soil geography is the branch of physical geography that studies how soils form, the types of soil, their fertility, their spatial distribution and their use. Hydrology deals with water on and below the earth's surface, climatology with long-term weather patterns, and geomorphology with landforms and the processes that shape them.
+
+Q 29 | geo | Indian Geography
+India contains about ______ of the total population of the world.
+(1) 1/6
+(2) 1/7
+(3) 1/5
+(4) 1/9
+= 1
+~ According to Census 2011, India had 121 crore people, about 17.5% of the world's population, i.e. roughly one in every six persons (1/6 ≈ 16.7%), while it has only 2.4% of the world's land area. 1/5 would be 20%, and 1/7 or 1/9 would be far too low.
+
+Q 30 | geo | Indian Geography
+Which islands of India are also known as coral islands?
+(1) Daman and Diu
+(2) Islands of the Gulf of Kutch
+(3) Andaman and Nicobar Islands
+(4) Lakshadweep
+= 4
+~ The Lakshadweep islands in the Arabian Sea are made of coral deposits; they are atolls and coral reefs built by tiny marine polyps. The Andaman and Nicobar Islands are mostly of tectonic and volcanic origin, the elevated parts of submarine mountain ranges, and Daman and Diu is a coastal territory, not a group of coral islands.
+
+Q 31 | geo | World Geography
+Which option describes mixed farming?
+(1) This is a primitive form of agriculture, in which a plot of land is cultivated for a few years and then is deserted.
+(2) In this type of agriculture, farmers work hard to grow enough food to survive only.
+(3) It is the combination of agriculture and pastoral farming.
+(4) This is a system of farming in which the cultivator uses large amount of labour and capital on a relatively small area.
+= 3
+~ In mixed farming the land is used both for growing crops and for rearing livestock, combining agriculture with pastoral farming. The farmer earns from both crops and animals (cattle, poultry, sheep), and the animals also provide manure for the fields. Option 1 describes shifting cultivation, option 2 subsistence farming, and option 4 intensive farming.
+
+Q 32 | geo | Indian Geography
+Match List-A(crops of India) with List-B (its characteristic ), and select the correct answer using the code given below the lists:
+List-A | List-B
+1-Rabi | (a) Products are mainly vegetables and fruits
+2-Kharif | (b) Wheat, barley, pulses and some oil seeds are grown
+3-Zayad | (c) Rice, maize, millets, groundnuts, cotton and jute are grown
+(1) 1-(b), 2-(a), 3-(c)
+(2) 1-(a), 2-(b), 3-(c)
+(3) 1-(c), 2-(a), 3-(b)
+(4) 1-(b), 2-(c), 3-(a)
+= 4
+~ Rabi crops are sown in winter (October–December) and harvested in summer (April–June): wheat, barley, peas, gram and mustard. Kharif crops are sown with the south-west monsoon: rice, maize, millets, groundnut, cotton and jute. The short summer zaid season between them grows mainly vegetables and fruits such as watermelon, muskmelon and cucumber. So 1-(b), 2-(c), 3-(a).
+
+Q 33 | geo | World Geography
+Seismology means the:
+(1) special branch of geology, which deals with the study of earthquake
+(2) place where the seismic waves originate beneath the earth's surface
+(3) pouring out of the magma or molten rock through ground surface
+(4) study of surface or long waves
+= 1
+~ Seismology is the branch of geology (geophysics) that studies earthquakes and the seismic waves they produce, recorded on seismographs. The place below the surface where seismic waves originate is the focus or hypocentre, the pouring out of magma is a volcanic eruption, and surface waves are only one kind of seismic wave.
+
+Q 34 | geo | World Geography
+The highest mountain on the Australian continent is:
+(1) Mount Hotham
+(2) Mount Kosciuszko
+(3) Mount Feathertop
+(4) Mount Ossa
+= 2
+~ Mount Kosciuszko (2,228 m), in the Snowy Mountains of the Great Dividing Range in New South Wales, is the highest peak on the Australian mainland. Mount Hotham and Mount Feathertop are lower peaks in Victoria, and Mount Ossa (1,617 m) is the highest peak of Tasmania.
+
+Q 35 | geo | World Geography
+Which planet is like the Earth in size and mass?
+(1) Mars
+(2) Mercury
+(3) Venus
+(4) Jupiter
+= 3
+~ Venus is called Earth's twin because it is very close to Earth in size (diameter about 12,104 km against Earth's 12,742 km) and mass (about 82% of Earth's). Mars and Mercury are much smaller, and Jupiter is the largest planet, about 318 times Earth's mass.
+
+Q 36 | geo | World Geography
+What is the approximate age of the earth?
+(1) 4.54 billion years
+(2) 4.78 billion years
+(3) 4.02 billion years
+(4) 4.40 billion years
+= 1
+~ Radiometric dating of the oldest meteorites and of lunar and terrestrial rocks gives the Earth an age of about 4.54 billion years (± about 50 million years). The other figures do not match this accepted estimate; the oldest known Earth mineral grains (zircons) are about 4.4 billion years old.
+
+Q 37 | geo | World Geography
+Match List-A with List-B and select the correct answer using the code given below the lists:
+List-A (Volcano) | List-B (Country)
+1-Hekla | (a) Hawaii Island
+2-Kilimanjaro | (b) Iceland
+3-Mauna Loa | (c) Indonesia
+4-Karkatoa | (d) Tanzania
+(1) 1-(b), 2-(d), 3-(c), 4-(a)
+(2) 1-(b), 2-(d), 3-(a), 4-(c)
+(3) 1-(b), 2-(a), 3-(d), 4-(c)
+(4) 1-(c), 2-(d), 3-(a), 4-(b)
+= 2
+~ Hekla is an active volcano in southern Iceland; Kilimanjaro, Africa's highest peak, is a dormant volcano in Tanzania; Mauna Loa is the large shield volcano on Hawaii Island; and Krakatoa (printed 'Karkatoa'), which erupted violently in 1883, lies in Indonesia's Sunda Strait. So 1-(b), 2-(d), 3-(a), 4-(c).
+
+Q 38 | eco | Indian Economy
+What is the full form of NABARD?
+(1) Nation Bank for Agriculture and Rural Development
+(2) National Bank for Agriculture and Rural Development
+(3) National Bank for Agriculture and Real Development
+(4) Net Bank for Agriculture and Rural Development
+= 2
+~ NABARD is the National Bank for Agriculture and Rural Development, set up on 12 July 1982 under the NABARD Act, 1981, on the recommendation of the Sivaraman Committee (CRAFICARD). It is the apex development bank for agriculture and rural credit, giving refinance to cooperative banks and regional rural banks.
+
+Q 39 | pol | Union & State Government
+Who is the President of India as of February 2020?
+(1) Sri Ram Nath Kovind
+(2) Sri Pranab Mukherjee
+(3) Smt Pratibha Devi Singh Patil
+(4) Dr. A.P.J Abdul Kalam
+= 1
+~ Ram Nath Kovind was the 14th President of India, in office from 25 July 2017 to 24 July 2022, so he was President in February 2020. Pranab Mukherjee (2012–17), Pratibha Patil (2007–12) and Dr A.P.J. Abdul Kalam (2002–07) were his predecessors.
+
+Q 40 | pol | Union & State Government
+How many people can the President of India nominate to the Rajya Sabha?
+(1) 9
+(2) 2
+(3) 12
+(4) 10
+= 3
+~ Under Article 80(1)(a) and 80(3), the President nominates 12 members to the Rajya Sabha from persons with special knowledge or practical experience in literature, science, art and social service. The figure 2 refers to the Anglo-Indian members once nominated to the Lok Sabha under Article 331, a provision ended in 2020 by the 104th Amendment.
+
+Q 41 | pol | Constitution & Rights
+The Right to Education Act- 21(A) has been added to the Indian Constitution on the basis of which amendment?
+(1) 86th Amendment
+(2) 44th Amendment
+(3) 42th Amendment
+(4) 74th Amendment
+= 1
+~ The 86th Constitutional Amendment Act, 2002 inserted Article 21A, making free and compulsory education for children aged 6 to 14 a Fundamental Right; it also changed Article 45 and added the duty in Article 51A(k). The Right to Education Act, 2009 gives effect to it. The 42nd and 44th Amendments date from the 1970s, and the 74th deals with municipalities.
+
+Q 42 | pol | Constitution & Rights
+Who was the Chairman of the Union Power Committee?
+(1) Sardar Vallabhbhai Patel
+(2) Pt. Jawaharlal Nehru
+(3) Dr. Rajendra Prasad
+(4) Alladi Krishnaswami Ayyar
+= 2
+~ In the Constituent Assembly, the Union Powers Committee was chaired by Jawaharlal Nehru, who also headed the Union Constitution Committee and the States Committee. Sardar Patel chaired the Provincial Constitution Committee and the Advisory Committee on Fundamental Rights and Minorities, Dr Rajendra Prasad the Rules of Procedure and Steering Committees, and Alladi Krishnaswami Ayyar was a member of the Drafting Committee.
+
+Q 43 | pol | Union & State Government
+What is the full form of "CAG"?
+(1) Comptroller & Auditor General of India
+(2) Controller & Auditor General of India
+(3) Comptroller & Attorney General of India
+(4) Comptroller & Auditor Governor of India
+= 1
+~ CAG stands for the Comptroller and Auditor General of India, the constitutional authority under Article 148 who audits the accounts of the Union and the States and reports to Parliament and the State Legislatures. The Attorney General (Article 76) is a separate office, the government's chief law officer.
+
+Q 44 | eco | Indian Economy
+Which one among the following books was written by Adam Smith?
+(1) The wealth of Nation
+(2) Principle of Economics
+(3) On the principle of political economy and taxation
+(4) Advanced Macroeconomics
+= 1
+~ Adam Smith, the father of modern economics, wrote 'An Inquiry into the Nature and Causes of the Wealth of Nations' (1776). 'Principles of Economics' (1890) is by Alfred Marshall, 'On the Principles of Political Economy and Taxation' (1817) is by David Ricardo, and 'Advanced Macroeconomics' is a modern textbook by David Romer.
+
+Q 45 | eco | Indian Economy
+Match List-A with List-B and select the correct answer using the code given below the lists:
+List-A (Board) | List-B (Headquarter)
+1- Coffee Board | (a) Kochi
+2-Rubber Board | (b) Bengaluru
+3-Tobacoo Board | (c) Kottayam
+4- The spices Board | (d) Guntur
+(1) 1-(b), 2-(c), 3-(d), 4-(a)
+(2) 1-(b), 2-(c), 3-(a), 4-(d)
+(3) 1-(b), 2-(d), 3-(c), 4-(a)
+(4) 1-(a), 2-(c), 3-(d), 4-(b)
+= 1
+~ These commodity boards work under the Ministry of Commerce and Industry. The Coffee Board is headquartered in Bengaluru, the Rubber Board in Kottayam (Kerala), the Tobacco Board in Guntur (Andhra Pradesh) and the Spices Board in Kochi (Kerala). So 1-(b), 2-(c), 3-(d), 4-(a).
+
+Q 46 | geo | Environment & Ecology
+The Environment Protection Act of India was enacted in:
+(1) 1981
+(2) 1986
+(3) 1995
+(4) 2000
+= 2
+~ The Environment (Protection) Act was enacted in 1986, after the Bhopal gas tragedy of 1984, as an umbrella law to protect and improve the environment and to implement the decisions of the 1972 Stockholm Conference. 1981 is the year of the Air (Prevention and Control of Pollution) Act.
+
+Q 47 | sci | Chemistry
+Which of the following noble gases is NOT present in the air?
+(1) Argon
+(2) Helium
+(3) Radon
+(4) Neon
+= 3
+~ Argon (about 0.93% of air), neon and helium are regular constituents of the atmosphere. Radon is a radioactive gas formed by the decay of radium in rocks and soil and decays with a half-life of about 3.8 days, so only minute traces seep into the air near the ground and it is not counted as a constituent of air. NCERT states that all noble gases except radon occur in the atmosphere.
+
+Q 48 | geo | Environment & Ecology
+Which of the following UN commissions is responsible for reviewing progress in the implementation of Agenda 21 and the Rio Declaration on Environment and Development?
+(1) United Nation Disarmament Commission
+(2) United Nations Statistical Commission
+(3) United Nations Commission on Sustainable Development (CSD)
+(4) United Nations Commission on Human Rights
+= 3
+~ The UN Commission on Sustainable Development (CSD) was created by the General Assembly in December 1992 to follow up the Rio Earth Summit (UNCED), reviewing progress on Agenda 21 and the Rio Declaration. In 2013 it was replaced by the High-level Political Forum on Sustainable Development. The other commissions deal with disarmament, statistics and human rights.
+
+Q 49 | geo | Environment & Ecology
+The thickness of the ozone in a column of air from the ground to the top of the atmosphere is measured in terms of:
+(1) Decible Unit (DU)
+(2) Pascals Unit (PU)
+(3) Dram Unit (DU)
+(4) Dobson Unit (DU)
+= 4
+~ The total ozone in a column of air is measured in Dobson Units, named after G.M.B. Dobson. One DU equals a 0.01 mm thick layer of pure ozone at standard temperature and pressure; the global average is about 300 DU, and an area below 220 DU is called an ozone hole. Decibel measures sound and pascal measures pressure.
+
+Q 50 | geo | Environment & Ecology
+The natural aging of a lake by nutrient enrichment of its water is called:
+(1) Biomagnification
+(2) Eutrophication
+(3) Sedimentation
+(4) Biodegradation
+= 2
+~ Eutrophication is the natural ageing of a lake as nutrients such as nitrogen and phosphorus build up, causing algal blooms, loss of oxygen and gradual filling of the lake until it becomes land; sewage and fertiliser run-off speed it up (cultural eutrophication). Biomagnification is the build-up of toxins along a food chain, and biodegradation is breakdown by microbes.
+
+Q 51 | cur | International
+What is the venue of the 2020 UN Ocean Conference?
+(1) New York, United States
+(2) Geneva, Switzerland
+(3) Lisbon, Portugal
+(4) Paris, France
+= 3
+~ The 2020 UN Ocean Conference, co-hosted by Portugal and Kenya to support SDG 14 (life below water), was to be held in Lisbon, Portugal, in June 2020. It was postponed because of COVID-19 and finally held in Lisbon from 27 June to 1 July 2022. The first UN Ocean Conference was held in New York in 2017.
+
+Q 52 | geo | Environment & Ecology
+Which of the following statements is correct:
+(a) Renewable resources should provide a sustainable yield (the rate of harvest should not exceed the rate of regeneration).
+(b) For non-renewable resources, there should be equivalent development of renewable substitutes.
+(c) Waste generation should exceed the assimilative capacity of the environment.
+(1) (a) and (c)
+(2) (b) and (c)
+(3) (a) and (b)
+(4) No statement is correct
+= 3
+~ These are the operational principles of sustainable development: harvest renewable resources no faster than they regenerate, and match the use of non-renewable resources with development of renewable substitutes, so (a) and (b) are correct. Statement (c) is wrong because waste generation should not exceed, but stay within, the assimilative capacity of the environment.
+
+Q 53 | geo | World Geography
+The cyclones occurring inside of the North Atlantic Ocean are called:
+(1) typhoons
+(2) hurricanes
+(3) tornados
+(4) bombers
+= 2
+~ Tropical cyclones are called hurricanes in the North Atlantic (Caribbean Sea, Gulf of Mexico) and the north-eastern Pacific, typhoons in the north-western Pacific (China Sea), cyclones in the Indian Ocean and willy-willies in Australia. Tornadoes are small but violent funnel-shaped storms, mostly over land.
+
+Q 54 | geo | Disaster Management
+The Disaster Management Act was enacted in:
+(1) 2002
+(2) 2005
+(3) 2004
+(4) 2006
+= 2
+~ The Disaster Management Act was enacted in December 2005, after the 2004 Indian Ocean tsunami. It set up the National Disaster Management Authority headed by the Prime Minister, State and District Disaster Management Authorities, the National Disaster Response Force and the National Institute of Disaster Management.
+
+Q 55 | cur | Sports & Awards
+Which state’s Disaster Mitigation & Management Centre won the Subhash Chandra Bose Aapda Prabandhan Puraskar 2020?
+(1) Tamilnadu
+(2) Kerala
+(3) Uttarakhand
+(4) Andhra Pradesh
+= 3
+~ The Subhash Chandra Bose Aapda Prabandhan Puraskar, instituted by the Government of India for excellent work in disaster management, is announced on 23 January, Netaji's birth anniversary. For 2020 the institutional award went to the Disaster Mitigation and Management Centre (DMMC), Uttarakhand, and the individual award to Kumar Munnan Singh.
+
+Q 56 | geo | Disaster Management
+The World Tsunami Awareness Day is celebrated on:
+(1) 13 October
+(2) 5 November
+(3) 13 November
+(4) 31 November
+= 2
+~ World Tsunami Awareness Day is observed on 5 November, as designated by the UN General Assembly in December 2015 on Japan's proposal. The date recalls the Japanese 'Inamura-no-hi' story of 1854, in which a villager set fire to his rice sheaves to warn people of a coming tsunami. 13 October is the International Day for Disaster Risk Reduction.
+
+Q 57 | sci | Biology & Health
+Name the Blood Group Which is known as Universal Recipient?
+(1) O+
+(2) A+
+(3) AB
+(4) B+
+= 3
+~ People with blood group AB have both A and B antigens on their red blood cells and neither anti-A nor anti-B antibodies in their plasma, so they can receive blood of any ABO group; AB positive is the true universal recipient. Group O, which has no A or B antigens, is the universal donor.
+
+Q 58 | sci | Physics
+At which Temperature is the density of water noted as Maximum?
+(1) 100° C
+(2) 0° C
+(3) 20° C
+(4) 4° C
+= 4
+~ Water shows anomalous expansion: when cooled from 4 °C to 0 °C it expands instead of contracting, so its density is maximum (about 1 g/cm³) at 4 °C. That is why the bottom water of frozen lakes stays at about 4 °C and aquatic life survives. Ice at 0 °C is less dense and floats.
+
+Q 59 | sci | Biology & Health
+What is range of the pH value of the human blood?
+(1) 7.35 to 7.45
+(2) 8.35 to 8.45
+(3) 6.35 to 7.45
+(4) 5.35 to 6.45
+= 1
+~ Human blood is slightly alkaline, with a normal pH of 7.35 to 7.45, held steady mainly by the bicarbonate buffer system together with the lungs and kidneys. A pH below 7.35 is acidosis and above 7.45 is alkalosis, both of which can be dangerous.
+
+Q 60 | sci | Biology & Health
+Saurology is the:
+(1) Study of Serum
+(2) Study of Lizards
+(3) Study of Teeth and Gums
+(4) Study of Fungi
+= 2
+~ Saurology (from Greek sauros, lizard) is the study of lizards, a branch of herpetology, the study of reptiles and amphibians. The study of serum is serology, of teeth and gums odontology (periodontology), and of fungi mycology. Similarly, ophiology is the study of snakes and ichthyology the study of fish.
+
+Q 61 | sci | Chemistry
+Which of the following can be used as Tear Gas?
+(1) No- Chloro acetophenon
+(2) Alpha- Chloro acetophenon
+(3) Acetophenon
+(4) Beta- Chloro acetophenon
+= 2
+~ Alpha-chloroacetophenone (C6H5COCH2Cl, phenacyl chloride, code-named CN) is a strong lachrymator: it irritates the eyes and causes tears, so it has long been used as tear gas for riot control. Plain acetophenone is not a tear gas; the chlorine atom on the alpha carbon, next to the C=O group, gives the irritant action.
+
+Q 62 | sci | Physics
+What is the Full Form of LASER?
+(1) Light Amplification by Solar Emission of Radiation
+(2) Light Amplification by Solar Energy Radiation
+(3) Light Amplification by single Emission of Ray
+(4) Light Amplification by Stimulated Emission of Radiation
+= 4
+~ LASER stands for Light Amplification by Stimulated Emission of Radiation. When excited atoms are triggered by photons, they emit identical photons, giving an intense, coherent, monochromatic and highly directional beam. Theodore Maiman built the first laser, a ruby laser, in 1960.
+
+Q 63 | sci | Chemistry
+Match the following from table A to Table B
+Use of Salts
+Table A | Table B
+I. Sodium Carbonate | 1. Extraction of Metals
+II. Sodium Benzoate | 2. As Washing Soda, Manufacturing of Glass
+III. Calcium Carbonate | 3. As a Fertilizers
+IV. Calcium Phosphate | 4. As a Food Preservative for Pickles
+(1) I-2, II-4, III-3, IV-1
+(2) I-2, II-4, III-1, IV-3
+(3) I-2, II-1, III-4, IV-3
+(4) I-4, II-2, III-1, IV-3
+= 2
+~ Sodium carbonate (Na2CO3·10H2O) is washing soda and is used in making glass; sodium benzoate is a common preservative in pickles and sauces; calcium carbonate (limestone) is used as a flux in extracting metals such as iron in the blast furnace; and calcium phosphate (rock phosphate) is the raw material of phosphatic fertilisers. So I-2, II-4, III-1, IV-3.
+
+Q 64 | sci | Chemistry
+Match the Following From Table A to Table B
+Uses of Acids as Food
+Table A | Table B
+I. Butyric Acid | 1. Fats
+II. Maleic Acid | 2. Wood Sorrel
+III. Stearic Acid | 3. Apples
+IV. Oxalic Acid | 4. Rancid Butter
+(1) I-3, II-4, III-2, IV-1
+(2) I-3, II-4, III-1, IV-2
+(3) I-4, II-3, III-2, IV-1
+(4) I-4, II-3, III-1, IV-2
+= 4
+~ Butyric acid gives rancid butter its smell; the acid of apples is malic acid (printed 'Maleic Acid' in the paper); stearic acid is a saturated fatty acid found in animal and vegetable fats; and oxalic acid occurs in wood sorrel (Oxalis), spinach and tomatoes. So I-4, II-3, III-1, IV-2.
+
+Q 65 | cur | National
+Aims of Mission Purvodaya is -
+(1) To develop Eastern India as an integrated steel hub
+(2) To Develop Eastern India as a Agricultural Hub
+(3) To Develop Eastern India as a Thermal Power Hub
+(4) To Develop Eastern India as an Educational Hub
+= 1
+~ Mission Purvodaya, launched by the Union Ministry of Steel in January 2020, aims at accelerated development of eastern India through an integrated steel hub. It covers Odisha, Jharkhand, Chhattisgarh, West Bengal and northern Andhra Pradesh, which hold most of India's iron ore, coking coal and other steel-making minerals.
+
+Q 66 | cur | National
+What is the full form of RAISE?
+(1) Responsible Artificial Intelligence for Social Environment
+(2) Responsible Artificial Intelligence for School Environment
+(3) Responsible Artificial Intelligence for Social Empowerment
+(4) Responsible Artificial Intelligence for Sustainable Environment
+= 3
+~ RAISE 2020 stands for Responsible AI for Social Empowerment, a global summit on artificial intelligence organised by the Ministry of Electronics and IT and NITI Aayog. Announced in early 2020, it was held virtually in October 2020 to discuss the use of AI in health, agriculture, education and smart mobility.
+
+Q 67 | cur | National
+How Many projects are sanctioned in ‘Unit’ scheme of Pradhan Mantri Kisan Sampada Yojana (PMKSY) in 2020?
+(1) 32
+(2) 22
+(3) 25
+(4) 29
+= 1
+~ In February 2020 the Inter-Ministerial Approval Committee of the Ministry of Food Processing Industries sanctioned 32 projects under the Unit scheme (Scheme for Creation/Expansion of Food Processing and Preservation Capacities) of PMKSY. The projects were expected to leverage investment of about ₹406 crore and create jobs in food processing.
+
+Q 68 | cur | Sports & Awards
+Who has received the Science and Engineering Research Board (SERB) Women Excellence Award 2020?
+(1) Dr. Nazia Abbas from CSIR-Indian Institute Of Integrative Medicine, Srinagar
+(2) Dr. Vaishnavi Ananthanarayanan from Indian Institute of Science, Bangalore
+(3) Dr. Anupam Guleria from Centre of Biomedical Research Lucknow
+(4) Dr. Niti Kumar from CSIR- Central Drug Research Institute (CDRI), Lucknow
+= 4
+~ Dr Niti Kumar, a senior scientist at CSIR-Central Drug Research Institute (CDRI), Lucknow, received the SERB Women Excellence Award 2020 for her research on the malaria parasite. SERB, a statutory body under the Department of Science and Technology, gives this award to women scientists below 40, and it was presented on National Science Day, 28 February 2020.
+
+Q 69 | cur | National
+Which fest aims to promote entrepreneurship among the Divyangjan community and raise awareness about the potentialities of Persons with Disabilities (PwDs)?
+(1) Shakti Expo 2020
+(2) New Entrepreneur Cum Enterprise Development Scheme ( NEEDS)
+(3) Entrepreneurship, Knowledge, Awareness, Marketing (EKAM)
+(4) SEWAH Entrepreneur Conclave 2020
+= 3
+~ EKAM (Entrepreneurship, Knowledge, Awareness, Marketing) Fest was a week-long exhibition-cum-fair organised by the National Handicapped Finance and Development Corporation under the Ministry of Social Justice and Empowerment. It began on 2 March 2020 in New Delhi to showcase products of Divyang artisans and entrepreneurs and spread awareness about their abilities.
+
+Q 70 | cur | Sports & Awards
+Which university won the Khelo India University Games 2020?
+(1) Savitribai Phule Pune University
+(2) Panjab university
+(3) Chaudhary Charan Singh University
+(4) University of Calcutta
+= 2
+~ The first Khelo India University Games were held in Bhubaneswar, Odisha, in February–March 2020, hosted by KIIT University. Panjab University, Chandigarh won the overall title with 46 medals (17 gold, 19 silver, 10 bronze); Savitribai Phule Pune University also won 17 gold but fewer silver medals and came second, and Punjabi University, Patiala was third.
+
+Q 71 | cur | National
+Which Sanctuary has recently been declared as Eco-Sensitive Zone in India on March 2, 2020?
+(1) Kodaikanal Wildlife Sanctuary
+(2) National Chambal Sanctuary
+(3) Tungareshwar Wildlife Sanctuary
+(4) Megamalai Wildlife sanctuary
+= 2
+~ On 2 March 2020 the Union Environment Ministry notified an eco-sensitive zone around the Madhya Pradesh part of the National Chambal Sanctuary. This tri-state sanctuary along the Chambal river in Madhya Pradesh, Rajasthan and Uttar Pradesh protects the critically endangered gharial, the Ganges river dolphin and the red-crowned roofed turtle.
+
+Q 72 | sci | Science & Technology
+Match the Followings Table A to Table B
+ISRO Missions
+Table A | Table B
+I. RISAT-1A | 1. first Indian Solar Coronagraph spacecraft mission to study solar corona in visible and near IR bands
+II. NISAR | 2. radar-imaging satellite
+III. Aditya-L1 | 3. dual-frequency synthetic aperture radar satellite to be used for remote sensing
+IV. Gaganyaan | 4. Indian Human Spaceflight Programme.
+(1) I-2, II-3, III-1, IV-4
+(2) I-2, II-3, III-4, IV-1
+(3) I-4, II-2, III-1, IV-3
+(4) I-4, II-2, III-3, IV-1
+= 1
+~ RISAT-1A is a radar-imaging satellite (launched in 2022 as EOS-04); NISAR, the NASA-ISRO Synthetic Aperture Radar, is a dual-frequency (L- and S-band) radar satellite for remote sensing; Aditya-L1 is India's first solar mission, carrying a coronagraph to study the solar corona; and Gaganyaan is India's human spaceflight programme. So I-2, II-3, III-1, IV-4.
+
+Q 74 | cur | International
+Which country is NOT a part of the BIMSTEC organisation?
+(1) Nepal
+(2) Bangladesh
+(3) China
+(4) Myamnar
+= 3
+~ BIMSTEC (Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation), formed by the Bangkok Declaration of 1997, has seven members: Bangladesh, Bhutan, India, Myanmar, Nepal, Sri Lanka and Thailand. Its secretariat is in Dhaka. China is not a member.
+
+Q 75 | cur | International
+Indian Union Cabinet approved the protocol to amend the DTAA (Double Taxation Avoidance Agreement) with which Country in 2020?
+(1) Nepal
+(2) Sri Lanka
+(3) Bhutan
+(4) United Arab Emirates
+= 2
+~ On 12 February 2020 the Union Cabinet approved a protocol amending the India–Sri Lanka agreement for avoidance of double taxation and prevention of fiscal evasion. The amendment brings the treaty in line with the OECD/G20 BEPS minimum standards, so that it is not misused for tax avoidance or treaty shopping.
+
+Q 76 | cur | International
+What is the theme of African Union Summit was held in Addis Ababa, capital of Ethiopia in 2020?
+(1) Silencing the Guns
+(2) Refugees, Returnees and Internally Displaced Persons
+(3) Towards Durable Solutions to Forced Displacement in Africa
+(4) Winning the fight against corruption
+= 1
+~ The 33rd African Union Summit (Addis Ababa, February 2020) carried the AU theme of the year 2020, "Silencing the Guns: Creating Conducive Conditions for Africa's Development". The 2019 theme was "Year of Refugees, Returnees and Internally Displaced Persons: Towards Durable Solutions to Forced Displacement in Africa" (options 2 and 3 are its two halves), and 2018 was devoted to "Winning the Fight against Corruption".
+
+Q 77 | cur | National
+What is Operation Vanilla ?
+(1) India's Army-led rescue and relief mission in quake-hit Nepal
+(2) An Indian Army operation to rescue people in flood-hit Kerala
+(3) Indian Navy’s humanitarian assistance to cyclone-hit Madagascar
+(4) Indian Army operations in Jammu and Kashmir
+= 3
+~ Operation Vanilla (January–February 2020) was the Indian Navy's humanitarian assistance and disaster relief mission to Madagascar after Cyclone Diane caused floods there; INS Airavat carried relief material and medical teams. India's relief mission in quake-hit Nepal in 2015 was Operation Maitri, and the Navy's 2018 Kerala flood rescue was Operation Madad.
+
+Q 78 | cur | International
+In 2020, which country discovered that shallow natural gas reserves contain about 80 trillion cubic feet of natural gas?
+(1) Iran
+(2) Russia
+(3) Turkmenistan
+(4) United Arab Emirates
+= 4
+~ In February 2020 the UAE (Abu Dhabi's Supreme Petroleum Council with ADNOC) announced the discovery of shallow natural gas reserves of about 80 trillion standard cubic feet in the Jebel Ali area between Abu Dhabi and Dubai. It was described as the largest gas discovery in the UAE's history and a step towards gas self-sufficiency.
+
+Q 79 | geo | World Geography
+Match the following.
+Largest non-associated gas fields | Country
+I. South Pars | 1. Russia
+II. Yamburg | 2. Egypt
+III. Groningen | 3. Iran
+IV. Zohr | 4. Netherlands
+(1) I-3, II-1, III-2, IV-4
+(2) I-3, II-1, III-4, IV-2
+(3) I-1, II-3, III-4, IV-2
+(4) I-1, II-3, III-2, IV-4
+= 2
+~ South Pars, which continues into Qatar as the North Dome, is the world's largest gas field and lies in Iran's part of the Persian Gulf (I-3). Yamburg is in Russia's Yamal-Nenets region of West Siberia (II-1), Groningen is in the north-eastern Netherlands (III-4), and Zohr, found by Eni in 2015, lies off Egypt's Mediterranean coast (IV-2). Hence I-3, II-1, III-4, IV-2.
+
+Q 80 | cur | International
+Match the following personalities with the countries of which they are prime ministers (as of February 2020).
+Prime Minister | Country
+I. Sanna Marin | 1. Egypt
+II. Kyriakos Mitsotakis | 2. Finland
+III. Moustafa Madbouly | 3. Mauritius
+IV. Pravind Jugnauth | 4. Greece
+(1) I-4, II-2, III-1, IV-3
+(2) I-4, II-2, III-3, IV-1
+(3) I-2, II-4, III-1, IV-3
+(4) I-2, II-4, III-3, IV-1
+= 3
+~ As of February 2020, Sanna Marin was Prime Minister of Finland (from December 2019), Kyriakos Mitsotakis of Greece (from July 2019), Moustafa Madbouly of Egypt (from June 2018) and Pravind Jugnauth of Mauritius (from January 2017). So the correct match is I-2, II-4, III-1, IV-3.
+
+Q 81 | cur | Sports & Awards
+Match the following winners of the Nobel Prize in 2019 with the respective categories in which they won.
+Category | Winners
+I. Nobel Prize in Physics | 1. John B Goodenough, M Stanley Whittingham and Akira Yoshino
+II. Nobel Prize in Chemistry | 2. Peter Handke
+III. Nobel Prize in Literature | 3. William G Kaelin Jr, Sir Peter J Ratcliffe and Gregg L Semenza
+IV. Nobel Prize in Physiology or Medicine | 4. James Peebles
+(1) I-4, II-1, III-3, IV-2
+(2) I-1, II-4, III-2, IV-3
+(3) I-1, II-4, III-3, IV-2
+(4) I-4, II-1, III-2, IV-3
+= 4
+~ The 2019 Physics prize went to James Peebles (shared with Michel Mayor and Didier Queloz), Chemistry to Goodenough, Whittingham and Yoshino for lithium-ion batteries, Literature to Peter Handke, and Physiology or Medicine to Kaelin, Ratcliffe and Semenza for discovering how cells sense and adapt to oxygen. Hence I-4, II-1, III-2, IV-3.
+
+Q 82 | ih | Ancient India
+Who was the poet in the period of The King Harshvardhan (606-647 CE)?
+(1) Vakpatiraja
+(2) Padmagupta Parimal
+(3) Banabhatta
+(4) Valla
+= 3
+~ Banabhatta was the court poet of Harshavardhana and wrote the Harshacharita, a biography of Harsha, and the prose romance Kadambari. Vakpatiraja, author of the Prakrit poem Gaudavaho, was at the court of Yashovarman of Kannauj in the 8th century, and Padmagupta (Parimala), author of the Navasahasankacharita, served the Paramara kings of Malwa around 1000 CE.
+
+Q 83 | ih | Medieval India
+Vikramaditya -VI period was…?
+(1) 1076-1126 CE
+(2) 1077-1120 CE
+(3) 1088-1172 CE
+(4) 1070-1126 CE
+= 1
+~ Vikramaditya VI, the greatest ruler of the Western Chalukyas of Kalyani, reigned from 1076 to 1126 CE and started the Chalukya-Vikrama era in 1076. His court poet Bilhana wrote the Vikramankadevacharita about him, and Vijnaneshwara wrote the Mitakshara, the famous commentary on the Yajnavalkya Smriti, during his reign.
+
+Q 84 | ih | Ancient India
+Who was the excavator of Lothal?
+(1) Daya Ram Sahni
+(2) Amalanand Ghosh
+(3) J.P Joshi
+(4) S.R Rao
+= 4
+~ Lothal, the Harappan port town in Gujarat known for its dockyard and bead-making, was discovered by S.R. Rao of the Archaeological Survey of India in 1954 and excavated under him between 1955 and 1960. Daya Ram Sahni excavated Harappa (1921), A. Ghosh first identified Kalibangan as a Harappan site, and J.P. Joshi discovered Dholavira and excavated Surkotada.
+
+Q 85 | ih | Ancient India
+Kalibanga is located in which city?
+(1) Hanumangarh
+(2) Fatehabad
+(3) Kutch
+(4) Ahmedabad
+= 1
+~ Kalibangan lies on the left bank of the Ghaggar river in Hanumangarh district of Rajasthan. It was excavated by B.B. Lal and B.K. Thapar (1961–69), who found a ploughed field, fire altars and evidence of an early earthquake. Fatehabad district of Haryana has Banawali and Bhirrana, Kutch has Dholavira and Surkotada, and Lothal is in Ahmedabad district.
+
+Q 86 | ih | Ancient India
+What was the time duration when the Dholavira site was inhabited?
+(1) 3000 - 1700 BCE
+(2) 3000 - 1800 BCE
+(3) 3100 - 1900 BCE
+(4) 3150- 1700 BCE
+= 2
+~ Dholavira, on Khadir island in the Rann of Kutch (Gujarat), is commonly dated to about 3000–1800 BCE, the period in which this fortified Harappan city flourished through its Early and Mature Harappan phases before declining. It was discovered by J.P. Joshi (1967–68) and excavated by R.S. Bisht from 1990, and became a UNESCO World Heritage Site in 2021. Some excavation chronologies give slightly different start and end dates.
+
+Q 87 | ih | Ancient India
+Who was the founder of Haryanka dynasty?
+(1) Ajatashatru
+(2) Bimbisara
+(3) Udayin
+(4) Naga- Dasak
+= 2
+~ Bimbisara (c. 544–492 BCE) is regarded as the founder of the Haryanka dynasty of Magadha; he ruled from Rajagriha and enlarged the kingdom by annexing Anga and through marriage alliances. His son Ajatashatru succeeded him, Udayin founded Pataliputra, and Naga-Dasaka was the last Haryanka ruler before the Shishunagas took over.
+
+Q 88 | ih | Ancient India
+Who was a contemporary of Gautama Buddha?
+(1) Bimbisara
+(2) Udayin
+(3) Mahapadma
+(4) Ajatashatru
+= 1,4
+~ APPSC accepted both options 1 and 4. Gautama Buddha (c. 563–483 BCE) was a contemporary of Bimbisara, his royal patron, and of Bimbisara's son Ajatashatru, in whose reign the Buddha died and the First Buddhist Council met at Rajagriha. Udayin ruled after the Buddha's death, and Mahapadma Nanda belongs to the 4th century BCE.
+
+Q 89 | ih | Ancient India
+Match List-A(Buddhist Council) with List-B(it's Chairman) and select the correct answer using the code given below the lists:
+List-A (Buddhist Council) | List-B (Chairman)
+1. 1st Buddhist Council | (a) Sabbakami
+2. 2nd Buddhist Council | (b) Mahakassapa
+3. 3rd Buddhist Council | (c) Vasumitra
+4. 4th Buddhist Council | (d) Mogaliputta Tissa
+(1) 1-(b), 2-(a), 3-(d), 4-(c)
+(2) 1-(c), 2-(a), 3-(d), 4-(b)
+(3) 1-(b), 2-(a), 3-(c), 4-(d)
+(4) 1-(a), 2-(b), 3-(d), 4-(c)
+= 1
+~ The First Council (Rajagriha, c. 483 BCE, under Ajatashatru) was presided over by Mahakassapa; the Second (Vaishali, c. 383 BCE, under Kalashoka) by Sabakami; the Third (Pataliputra, c. 250 BCE, under Ashoka) by Moggaliputta Tissa; and the Fourth (Kashmir, 1st century CE, under Kanishka) by Vasumitra. Hence 1-(b), 2-(a), 3-(d), 4-(c).
+
+Q 90 | ih | Medieval India
+Who established the Odantapuri University?
+(1) Kumargupta-I
+(2) Gopala-I
+(3) Dharmpala
+(4) Ramapala
+= 2
+~ The Odantapuri (Uddandapura) mahavihara, at present-day Bihar Sharif in Bihar, is credited to Gopala I, founder of the Pala dynasty, in the 8th century; a few later accounts name Dharmapala or Devapala instead. Dharmapala is known for founding the Vikramashila mahavihara, and Kumaragupta I of the Guptas is linked with the founding of Nalanda.
+
+Q 92 | geo | Indian Geography
+Which soil is best suitable for the production of coconut?
+(1) Black Soil
+(2) Mountain Soil
+(3) Arid & Desert Soil
+(4) Laterite Soil
+= 4
+~ Coconut needs a warm, humid climate and well-drained soil, and in India it is grown widely on the laterite soils of Kerala, coastal Karnataka and the Konkan. Laterite soils, formed by intense leaching under heavy rainfall, are suited (with manuring) to plantation crops such as coconut, cashew, tea, coffee and rubber. Black soil is best for cotton, and arid soils need irrigation.
+
+Q 93 | geo | Indian Geography
+The national highway of India NH-7 does not pass through which part of India?
+(1) Nagpur
+(2) Varanasi
+(3) Madurai
+(4) Pune
+= 4
+~ Under the old numbering, NH-7 was India's longest national highway, running about 2,369 km from Varanasi to Kanyakumari via Rewa, Jabalpur, Nagpur, Hyderabad, Bengaluru and Madurai. Pune is not on this route; it lay on old NH-4 (Mumbai–Chennai) and NH-9 (Pune–Machilipatnam). After the 2010 renumbering most of old NH-7 became part of NH-44.
+
+Q 94 | geo | Indian Geography
+What is the length of the National Highway of India 44 (NH-44)?
+(1) 3745 km
+(2) 3500 km
+(3) 3000 km
+(4) 4500 km
+= 1
+~ NH-44, India's longest national highway, runs north to south from Srinagar to Kanyakumari; it was created in the 2010 renumbering by merging seven old highways, including old NH-1A, NH-1 and most of old NH-7. Its length was commonly given as about 3,745 km at the time of this exam. Later listings give somewhat different figures after realignments and extensions, but 3,745 km is the only option that matches.
+
+Q 95 | geo | Indian Geography
+Where is the Head quarter of West Central Railway?
+(1) Prayagraj
+(2) Jabalpur
+(3) Bilaspur
+(4) Jaipur
+= 2
+~ West Central Railway, one of the railway zones that started functioning in 2003, has its headquarters at Jabalpur in Madhya Pradesh. Prayagraj is the headquarters of North Central Railway, Bilaspur of South East Central Railway, and Jaipur of North Western Railway.
+
+Q 96 | geo | Indian Geography
+What is the administrative Capital of Uttar Pradesh?
+(1) Lucknow
+(2) Prayagraj
+(3) Varanasi
+(4) Kanpur
+= 1
+~ Lucknow is the capital of Uttar Pradesh and the seat of the state government and legislature. Prayagraj (Allahabad) has the Allahabad High Court and is often called the state's judicial capital, while Varanasi and Kanpur are major cultural and industrial cities but not capitals.
+
+Q 98 | geo | Indian Geography
+The arid & desert soil is found in the states/regions of:
+(1) North west India, Rajasthan, Gujarat
+(2) Maharashtra, Rajasthan, Gujarat
+(3) North west India, Rajasthan, Maharashtra
+(4) North west India, Maharashtra, Gujarat
+= 1
+~ Arid and desert soils cover western Rajasthan west of the Aravallis and extend into Gujarat (Kutch) and the drier parts of north-west India such as southern Haryana and Punjab. They are sandy, often saline, low in humus and nitrogen, and productive only with irrigation. Maharashtra is mostly covered by black soil, so the options including it are wrong.
+
+Q 99 | geo | World Geography
+Who was the propounder of 'steady-state theory'?
+(1) Dr. Allen Sundes
+(2) E. George Lamaitre
+(3) Thomas Gold & Herman Bondy
+(4) Carl Sawer
+= 3
+~ The steady-state theory was proposed in 1948 by Hermann Bondi and Thomas Gold, together with Fred Hoyle; it held that the universe has no beginning and that new matter is continuously created as it expands. Georges Lemaître proposed the "primeval atom" idea that grew into the Big Bang theory, and Allan Sandage is linked with the pulsating universe theory.
+
+Q 100 | geo | World Geography
+Who is considered the 'father of geography'?
+(1) Eratosthenes
+(2) Holmes
+(3) Hipparchus
+(4) Aristotle
+= 1
+~ Eratosthenes (c. 276–194 BCE), the Greek scholar at Alexandria, first used the term "geographika" and measured the Earth's circumference with remarkable accuracy, so he is called the father of geography. Hipparchus is known for latitude–longitude and trigonometry, Aristotle argued that the Earth is spherical, and Arthur Holmes proposed convection currents in the mantle.
+
+Q 101 | geo | World Geography
+The study of 'Universe' is also known as:
+(1) Science
+(2) Galaxy
+(3) Cosmology
+(4) Climatology
+= 3
+~ Cosmology is the branch of science that studies the origin, structure, evolution and fate of the universe as a whole, including theories such as the Big Bang. A galaxy is a system of stars within the universe, climatology studies long-term weather patterns, and "science" is only a general term.
+
+Q 102 | geo | World Geography
+Which planet is NOT an inner planet?
+(1) Venus
+(2) Jupiter
+(3) Earth
+(4) Mars
+= 2
+~ The inner or terrestrial planets are Mercury, Venus, Earth and Mars, which lie between the Sun and the asteroid belt and are small, dense and rocky. Jupiter lies beyond the asteroid belt and is the largest of the outer, gaseous (Jovian) planets, so it is not an inner planet.
+
+Q 103 | geo | World Geography
+What is the surface temperature of the Sun?
+(1) 4170 Kelvin
+(2) 5175 Kelvin
+(3) 4778 Kelvin
+(4) 5778 Kelvin
+= 4
+~ The Sun's visible surface, the photosphere, has an effective temperature of about 5,778 K, roughly 5,500 °C. The corona above it is far hotter (over a million kelvin) and the core reaches about 15 million K, but the question asks for the surface. The other values are too low.
+
+Q 104 | geo | World Geography
+The World's largest continent by area?
+(1) Asia
+(2) Africa
+(3) America
+(4) Australia
+= 1
+~ Asia is the largest continent, about 44.6 million km² or nearly 30% of the Earth's land area, and also the most populous. Africa (about 30.4 million km²) is second, North and South America are counted separately as the third and fourth largest, and Australia is the smallest continent.
+
+Q 105 | geo | World Geography
+Match the following rivers with the respective continents in which they are located.
+Continents | Rivers
+1. Asia | (a) Volga
+2. Africa | (b) Amazon
+3. South America | (c) Ganga
+4. Europe | (d) Nile
+(1) 1-d, 2-a, 3-c, 4-b
+(2) 1-a, 2-b, 3-c, 4-d
+(3) 1-c, 2-d, 3-b, 4-a
+(4) 1-a, 2-b, 3-d, 4-c
+= 3
+~ The Ganga flows in Asia (India and Bangladesh), the Nile, the world's longest river, in north-eastern Africa, the Amazon, the largest river by discharge, in South America, and the Volga, Europe's longest river, in European Russia. Hence the match is 1-c, 2-d, 3-b, 4-a.
+
+Q 106 | geo | World Geography
+In which country is Mount Kilimanjaro located?
+(1) Tanzania
+(2) Kenya
+(3) Russia
+(4) Myanmar
+= 1
+~ Mount Kilimanjaro (5,895 m), Africa's highest peak and a dormant volcano whose summit cone is Kibo, stands in north-eastern Tanzania near the Kenyan border. It is often viewed from Kenya's Amboseli National Park, which makes Kenya a common distractor, but the mountain lies wholly in Tanzania.
+
+Q 107 | geo | World Geography
+Which is the Smallest Ocean?
+(1) Pacific Ocean
+(2) Arctic Ocean
+(3) Indian Ocean
+(4) Atlantic Ocean
+= 2
+~ The Arctic Ocean, around the North Pole, is the smallest and shallowest of the world's five oceans, about 14 million km², and is covered by sea ice for much of the year. The Pacific is the largest and deepest, followed by the Atlantic and the Indian Oceans.
+
+Q 108 | eco | Indian Economy
+Where is the headquarters of the Tea Board of India?
+(1) Kolkata
+(2) Kottayam
+(3) Guntur
+(4) Kochi
+= 1
+~ The Tea Board of India, a statutory body constituted under the Tea Act, 1953 under the Ministry of Commerce and Industry, has its headquarters in Kolkata. Kottayam is the headquarters of the Rubber Board, Guntur of the Tobacco Board, and Kochi of the Spices Board and the Coir Board.
+
+Q 109 | eco | Indian Economy
+What is the full form of GNP?
+(1) Growth National Product
+(2) Gross National Profit
+(3) Gross National Product
+(4) Growth National Profit
+= 3
+~ GNP stands for Gross National Product: the market value of all final goods and services produced in a year by a country's residents, whether at home or abroad. It equals GDP plus net factor income from abroad. The other expansions are not national-income terms.
+
+Q 110 | pol | Union & State Government
+Who is Vice -President of India in present time?
+(1) M. Venkaiya Naidu
+(2) Md. Hamid Ansari
+(3) Sarvepalli Radhakrishnan
+(4) Bhairon Singh Shekhawat
+= 1
+~ When this paper was set (March 2020), M. Venkaiah Naidu was the Vice-President of India; he served as the 13th Vice-President from August 2017 to August 2022. Hamid Ansari (2007–17), Bhairon Singh Shekhawat (2002–07) and Sarvepalli Radhakrishnan (the first, 1952–62) were earlier Vice-Presidents. Naidu was followed by Jagdeep Dhankhar and, from September 2025, C. P. Radhakrishnan.
+
+Q 111 | geo | Indian Geography
+In India which state is the biggest tea producer?
+(1) West Bengal
+(2) Assam
+(3) Sikkim
+(4) Kerala
+= 2
+~ Assam is India's largest tea-producing state, contributing about half of the country's tea from the Brahmaputra and Barak valleys. West Bengal (Darjeeling, Dooars and Terai) is second, while Tamil Nadu, Kerala and Sikkim produce much smaller quantities. Assam's warm, humid climate, heavy rainfall and well-drained acidic soils suit the tea bush.
+
+Q 112 | eco | Indian Economy
+Second Five Year Plan was based on which model?
+(1) Harrod-Domar
+(2) Rudra & Manney
+(3) Chakraborty & Saddy
+(4) Mahalnobis
+= 4
+~ The Second Five Year Plan (1956–61) was based on the Mahalanobis model, prepared by the statistician P.C. Mahalanobis, which stressed rapid industrialisation through heavy and basic industries in the public sector. The First Plan (1951–56) was based on the Harrod–Domar model and gave priority to agriculture.
+
+Q 113 | pol | Constitution & Rights
+According to which article, the right of minorities to establish and administer minorities educational institutions?
+(1) Article-31
+(2) Article-30
+(3) Article-29
+(4) Article-31A
+= 2
+~ Article 30 gives all minorities, whether based on religion or language, the right to establish and administer educational institutions of their choice. Article 29 protects the distinct language, script and culture of any section of citizens, Article 31 (right to property) was repealed by the 44th Amendment (1978), and Article 31A saves laws for the acquisition of estates.
+
+Q 114 | pol | Constitution & Rights
+In which schedule of Indian constitution is the description of the salary of the president of India mentioned?
+(1) 2nd Schedule
+(2) 3rd Schedule
+(3) 4th Schedule
+(4) 5th Schedule
+= 1
+~ The Second Schedule contains provisions on the emoluments, allowances and privileges of the President, Governors, Speakers and Chairmen of legislatures, judges of the Supreme Court and High Courts, and the CAG. The Third Schedule has the forms of oaths, the Fourth allocates Rajya Sabha seats, and the Fifth deals with Scheduled Areas and Scheduled Tribes.
+
+Q 115 | pol | Constitution & Rights
+Match List-A(Name of the Committee) with List-B(Chairman) and select the correct answer using the code given below the lists:
+List-A (Name of the Committee) | List-B (Chairman)
+1. committee on the Rules of procedure | (a) Pt. Jawahar Lal Nehru
+2. Finance and Staff Committee | (b) J.B Kripalani
+3. Fundamental Rights sub- Committee | (c) Dr. B.R Ambedkar
+4. Drafting Committee | (d) Dr. Rajendra Prasad
+(1) 1-(d), 2-(a), 3-(b), 4-(c)
+(2) 1-(d), 2-(a), 3-(c), 4-(b)
+(3) 1-(c), 2-(d), 3-(b), 4-(a)
+(4) 1-(a), 2-(b), 3-(d), 4-(c)
+= 1
+~ In the Constituent Assembly, the Rules of Procedure Committee was chaired by Dr. Rajendra Prasad (1-d), the Fundamental Rights Sub-Committee by J.B. Kripalani (3-b) and the Drafting Committee by Dr. B.R. Ambedkar (4-c); option 1 is the only code with all three. Standard texts such as Laxmikanth list Rajendra Prasad, not Nehru, as chairman of the Finance and Staff Committee, so pair 2-(a) is questionable. (Official key; some sources differ.)
+
+Q 116 | ih | Modern India & Freedom Struggle
+When did the Cripps Mission come in India?
+(1) March 1942
+(2) April 1942
+(3) February 1942
+(4) June 1942
+= 1
+~ Sir Stafford Cripps arrived in India in March 1942 (22–23 March) to win Indian support for the war, offering dominion status after the war and an elected constitution-making body. The Congress and the Muslim League rejected the proposals in April 1942, and Gandhi called them a "post-dated cheque". The failure of the mission led to the Quit India Movement in August 1942.
+
+Q 117 | geo | Environment & Ecology
+On which of the following days is ‘International Day of Forests’ observed?
+(1) 12 March
+(2) 22 March
+(3) 21 March
+(4) 22 April
+= 3
+~ The UN General Assembly proclaimed 21 March as the International Day of Forests in 2012, and it has been observed every year since 2013 to raise awareness of the importance of all types of forests and trees. 22 March is World Water Day and 22 April is Earth Day.
+
+Q 118 | cur | Sports & Awards
+Which investment body won the UN Award in 2018 for excellence in promoting investments in sustainable development?
+(1) Bahrain Economic Development Board-EDB Bahrain
+(2) Lesotho National Development Corporation -LNDC
+(3) Invest South Africa
+(4) Invest India
+= 4
+~ Invest India, the national investment promotion and facilitation agency set up in 2009 under the Department of Industrial Policy and Promotion (now DPIIT), won the United Nations (UNCTAD) Investment Promotion Award 2018 for excellence in promoting investments in sustainable development. The award was presented at the World Investment Forum in Geneva in October 2018.
+
+Q 119 | cur | International
+On which day International Mother Language Day (IMLD) was observed across the world?
+(1) 14 September
+(2) 21 February
+(3) 22 January
+(4) 29 June
+= 2
+~ UNESCO proclaimed 21 February as International Mother Language Day in 1999, and it has been observed worldwide since 2000 to promote linguistic and cultural diversity and multilingualism. The date recalls the 1952 Language Movement in Dhaka, when students were killed while demanding recognition of Bengali. 14 September is Hindi Diwas in India.
+
+Q 120 | cur | National
+The theme of the World Sustainable Development Summit event organized by The Energy and Resources Institute (TERI) in 2020?
+(1) Towards 2030: Making the Decade Count
+(2) Attaining the 2030 Agenda: Delivering on our Promise
+(3) Partnerships for a Resilient Plane
+(4) Share WISDOM (Women in Statistics, Data science and Omics).
+= 1
+~ The World Sustainable Development Summit 2020, TERI's annual flagship event held in New Delhi from 29 to 31 January 2020, had the theme "Towards 2030: Making the Decade Count". The 2019 summit's theme was "Attaining the 2030 Agenda: Delivering on our Promise" and the 2018 summit's was "Partnerships for a Resilient Planet".
+
+Q 121 | cur | International
+What is the general theme of World Cities Day (WCD) in 2019?
+(1) Building sustainable and resilient cities
+(2) Innovative Governance, Open Cities
+(3) Better City, Better Life
+(4) Building Innovative and Sustainable Cities
+= 3
+~ World Cities Day, observed on 31 October since 2014 and led by UN-Habitat, keeps the general theme "Better City, Better Life" (taken from Expo 2010 Shanghai), with a different sub-theme each year; 2019's was "Changing the world: innovations and better life for future generations". "Building Sustainable and Resilient Cities" (2018) and "Innovative Governance, Open Cities" (2017) were earlier sub-themes.
+
+Q 122 | geo | Indian Geography
+Match the following species of trees with the forests in which they are dominantly found.
+Tree species | Forests
+I. Rosewood | 1. Tropical deciduous forests
+II. Teak | 2. Mangrove forests
+III. Acacias | 3. Tropical Evergreen forests
+IV. Sundari tree | 4. Tropical Thorn forests and scrubs
+(1) I-3, II-2, III-1, IV-4
+(2) I-3, II-2, III-4, IV-1
+(3) I-3, II-1, III-4, IV-2
+(4) I-3, II-1, III-2, IV-4
+= 3
+~ Rosewood grows in tropical evergreen forests (I-3) and teak is the chief tree of tropical deciduous forests (II-1). Acacias such as babul and khair dominate tropical thorn forests and scrubs (III-4), and the sundari tree, which gives the Sundarbans their name, is a mangrove species (IV-2). Hence I-3, II-1, III-4, IV-2.
+
+Q 123 | geo | Disaster Management
+Match the table A to Table B according to disasters and their respective countries.
+Worst Disasters in Global History
+Table A | Table B
+I. Bhola cyclone | 1. China
+II. Tohoku earthquake | 2. Europe
+III. 365 Crete Tsunami | 3. Bangladesh
+IV. The Yellow River floods | 4. Japan
+(1) I-3, II-4, III-1, IV-2
+(2) I-4, II-3, III-2, IV-1
+(3) I-4, II-3, III-1, IV-2
+(4) I-3, II-4, III-2, IV-1
+= 4
+~ The 1970 Bhola cyclone struck East Pakistan, now Bangladesh (I-3), and the 2011 Tohoku earthquake and tsunami hit Japan (II-4). The 365 CE Crete earthquake and tsunami devastated the eastern Mediterranean, including Greece in Europe (III-2), and the Yellow River (Huang He) floods, notably of 1887 and 1931, occurred in China (IV-1). Hence I-3, II-4, III-2, IV-1.
+
+Q 124 | geo | Disaster Management
+Indian Tsunami warning center is located at which city?
+(1) Benguluru
+(2) Hyderabad
+(3) Kochi
+(4) Mumbai
+= 2
+~ The Indian Tsunami Early Warning Centre (ITEWC) functions at the Indian National Centre for Ocean Information Services (INCOIS), Hyderabad, under the Ministry of Earth Sciences. Set up after the 2004 Indian Ocean tsunami and operational since October 2007, it issues tsunami advisories for India and other Indian Ocean countries within minutes of a major undersea earthquake.
+
+Q 125 | geo | Disaster Management
+Which Scale is used to categorize hurricanes by their wind speeds?
+(1) Saffir-Simpson scale
+(2) Seismic Scale
+(3) Richter Scale
+(4) moment magnitude scale
+= 1
+~ The Saffir–Simpson Hurricane Wind Scale rates hurricanes from Category 1 to Category 5 by their sustained wind speed, Category 5 meaning winds of 252 km/h (157 mph) or more. The Richter and moment magnitude scales measure the size of earthquakes, and "seismic scale" is a general term for earthquake scales.
+
+Q 126 | geo | Disaster Management
+The world's largest earthquake with a magnitude of 9.5 occurred on 22 May 1960 in _________.
+(1) Alaska
+(2) Japan
+(3) Ecuador
+(4) Chile
+= 4
+~ The Great Chilean (Valdivia) earthquake of 22 May 1960, of magnitude 9.5, is the most powerful earthquake ever recorded. It struck southern Chile and generated a Pacific-wide tsunami that killed people as far away as Hawaii and Japan. The 1964 Alaska earthquake (magnitude 9.2) is the second largest.
+
+Q 127 | geo | Disaster Management
+Name the cloud which can form a tornado?
+(1) Funnel cloud
+(2) cumulonimbus cloud
+(3) Wall Cloud
+(4) Scud Cloud
+= 1,2
+~ APPSC accepted both options 1 and 2. Tornadoes form beneath cumulonimbus clouds, especially rotating supercell thunderstorms, and the funnel cloud is the visible rotating column that becomes a tornado once it touches the ground, so both answers fit. A wall cloud is a lowering of the cumulonimbus base where tornadoes often develop, and scud clouds are ragged low fragments that do not form tornadoes.
+
+Q 128 | geo | Disaster Management
+Tsunamis are most commonly found in which ocean?
+(1) Pacific Ocean
+(2) North Atlantic Ocean
+(3) South Atlantic Ocean
+(4) Southern (or Antarctic) Ocean
+= 1
+~ About 80 per cent of tsunamis occur in the Pacific Ocean, mainly along the "Ring of Fire", where subduction zones produce frequent large undersea earthquakes and volcanic eruptions. The Atlantic and Southern Oceans have far fewer subduction zones, so tsunamis there are rare.
+
+Q 129 | geo | Disaster Management
+Which of these natural hazards causes the LEAST amount of fatalities in the United States annually?
+(1) volcanoes
+(2) tornadoes
+(3) heat and drought
+(4) winter weather
+= 1
+~ Volcanic eruptions cause the fewest deaths in the United States in a typical year; even the major 1980 Mount St. Helens eruption killed 57 people. Extreme heat is the leading weather-related killer in the US, and tornadoes and winter weather (cold, ice and snow) each cause dozens of deaths every year.
+
+Q 130 | geo | Disaster Management
+Which of the following is NOT a natural geological disaster?
+(1) Landslides
+(2) Volcanic Eruptions
+(3) Environmental Degradation
+(4) Avalanches
+= 3
+~ Landslides, volcanic eruptions and avalanches are natural hazards arising from Earth processes and gravity acting on rock, soil or snow. Environmental degradation, the deterioration of air, water, soil and ecosystems, is mainly caused by human activities such as deforestation, pollution and overexploitation, so it is not a natural geological disaster.
+
+Q 131 | men | Reasoning
+In a certain code, 5674 is written as 7997. How will 3465 be written in the same code?
+(1) 5788
+(2) 7572
+(3) 9572
+(4) 9370
+= 1
+~ The digits are increased alternately by 2 and 3: 5+2 = 7, 6+3 = 9, 7+2 = 9, 4+3 = 7, giving 7997. Applying the same rule to 3465: 3+2 = 5, 4+3 = 7, 6+2 = 8, 5+3 = 8, so 3465 is written as 5788.
+
+Q 132 | men | Reasoning
+Select the odd one.
+(1) SIRJQ
+(2) ZAYBX
+(3) XDWEV
+(4) FTUGH
+= 4
+~ In SIRJQ, ZAYBX and XDWEV, the 1st, 3rd and 5th letters run backwards in sequence (S-R-Q, Z-Y-X, X-W-V) and the 2nd and 4th letters run forwards (I-J, A-B, D-E). In FTUGH the letters F, U, H and T, G follow no such pattern, so FTUGH is the odd one.
+
+Q 133 | men | Reasoning
+Rearrange the letters of the following word in alphabetical order.
+TECHNOLOGY
+(1) GHECLNOOYT
+(2) CEGHLNOOTY
+(3) LNGHCEOOTY
+(4) CEGHLNTOOY
+= 2
+~ The letters of TECHNOLOGY are T, E, C, H, N, O, L, O, G and Y. Arranged alphabetically they are C, E, G, H, L, N, O, O, T, Y, giving CEGHLNOOTY. Option 4 wrongly puts T before the two Os, and options 1 and 3 do not even begin with C.
+
+Q 134 | men | Reasoning
+Select the word that CANNOT be formed using the letters of the given word.
+REMONSTRANCE
+(1) REMOTE
+(2) STREAM
+(3) REMORSE
+(4) ROUSE
+= 4
+~ REMONSTRANCE contains the letters R (twice), E (twice), M, O, N (twice), S, T, A and C. REMOTE, STREAM and REMORSE can all be formed from them (REMORSE uses both Rs and both Es). ROUSE needs the letter U, which does not occur in REMONSTRANCE, so it cannot be formed.
+
+Q 135 | men | Reasoning
+Select the number that can replace the question mark (?) in the following series.
+2, 5, 7, 11, 14, 19, 23, 29, ? , 41, 47
+(1) 35
+(2) 36
+(3) 34
+(4) 30
+= 3
+~ The differences between terms are +3, +2, +4, +3, +5, +4, +6, … — two alternating sequences each rising by 1 (3, 4, 5, 6, 7 and 2, 3, 4, 5, 6). After 29 the next difference is +5, giving 34; then 34 + 7 = 41 and 41 + 6 = 47, which confirms the series.
+
+Q 136 | men | Reasoning
+How many rectangles are there in the given figure?
+(1) 5
+(2) 6
+(3) 9
+(4) 10
+= 3
+! img/f2020a-q136.png
+~ Name the parts: the top strip has two rectangles (A, B), and the lower part has a large left rectangle (C) and a right column split into two (D, E). Single parts give 5 (A, B, C, D, E); A+B and D+E give 2; C+D+E (the whole lower part) gives 1; and the whole figure gives 1. Total = 5 + 2 + 1 + 1 = 9.
+
+Q 137 | men | Reasoning
+How many words in the given statement has 9 letters?
+"Government's basic functions are providing leadership, maintaining order, public services, national security and economic assistance".
+(1) 3
+(2) 1
+(3) 2
+(4) 0
+= 3
+~ Counting letters word by word, only "functions" (9) and "providing" (9) have nine letters. "Government" has 10 (11 with the 's), leadership 10, maintaining 11, assistance 10, and services, national, security and economic have 8 each. So two words have 9 letters.
+
+Q 138 | men | Reasoning
+Select the Venn diagram that best represents the relationship between the following classes.
+Humans, Europeans, British
+(1) 2
+(2) 4
+(3) 1
+(4) 3
+= 3
+! img/f2020a-q138.png
+~ All British are Europeans and all Europeans are humans, so each class lies completely inside the next: British inside Europeans inside Humans. Diagram 1, with three concentric circles, shows exactly this relationship. Diagrams 2, 3 and 4 show overlapping circles, which would wrongly mean that some British are not Europeans or some Europeans are not humans.
+
+Q 139 | men | Reasoning
+Study the given Venn diagram and answer the following question.
+What is depicted by the shaded portion in the diagram?
+(1) A group of teachers who are both players and bankers
+(2) A group of female teachers who are bankers but not players
+(3) A group of female teachers who are not players
+(4) A group of females who are both players and teachers
+= 4
+! img/f2020a-q139.png
+~ The shaded region lies in the common part of the Females, Players and Teachers circles and outside the Bankers circle. So it represents females who are both players and teachers (and not bankers). Option 1 leaves out females and wrongly includes bankers, and options 2 and 3 wrongly include bankers or exclude players.
+
+Q 140 | men | Reasoning
+Select the odd one.
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 2
+! img/f2020a-q140.png
+~ Figures 1, 3 and 4 are the same figure rotated: in figure 1 (apex up) the dot is left of the line and the cross right; turning it 90° anticlockwise gives figure 3 (cross above, dot below) and 180° gives figure 4. Figure 2 (apex pointing right) should have the dot above and the cross below the line, but they are reversed, so it is a mirror image and the odd one.
+
+Q 141 | men | Reasoning
+Select the number that will replace the question mark (?) in the following analogy.
+3 : ? :: 4 : 60
+(1) 30
+(2) 24
+(3) 52
+(4) 63
+= 2
+~ The rule is n³ − n: for 4, 4³ − 4 = 64 − 4 = 60. Applying the same rule to 3 gives 3³ − 3 = 27 − 3 = 24. (Equivalently n × (n² − 1): 4 × 15 = 60 and 3 × 8 = 24.)
+
+Q 142 | men | Reasoning
+Select the option that is related to the third term in the same way as the second term is related to the first term.
+BDFH : YWUS :: HJLN : ?
+(1) SQOM
+(2) PSNM
+(3) PJLN
+(4) LNJP
+= 1
+~ Each letter of BDFH is replaced by its opposite letter in the alphabet (positions adding up to 27): B(2)→Y(25), D(4)→W(23), F(6)→U(21), H(8)→S(19), giving YWUS. In the same way H(8)→S(19), J(10)→Q(17), L(12)→O(15) and N(14)→M(13), so HJLN becomes SQOM. The other options do not follow this opposite-letter rule.
+
+Q 143 | men | Reasoning
+Select the odd one.
+(1) POEM
+(2) TENT
+(3) COME
+(4) APEX
+= 2
+~ POEM, COME and APEX each have four different letters, two of them vowels (O and E, O and E, A and E). TENT has only one vowel (E) and three consonants, and it repeats the letter T, so it is the odd one out.
+
+Q 144 | men | Reasoning
+Arrange the following words in alphabetical order.
+A. Advertisement
+B. Autograph
+C. Address
+D. Apple
+E. Aptitude
+(1) CADEB
+(2) ACDEB
+(3) CAEDB
+(4) ACEDB
+= 1
+~ All five words begin with A, so compare the next letters: Address (Add) comes before Advertisement (Adv), then Apple (App), Aptitude (Apt) and Autograph (Au). The order is Address (C), Advertisement (A), Apple (D), Aptitude (E), Autograph (B), that is CADEB.
+
+Q 145 | men | Reasoning
+Select the word that CANNOT be formed using the letters of the given word.
+EXPANDABLE
+(1) DEEP
+(2) DEAL
+(3) DEBATE
+(4) EXPAND
+= 3
+~ EXPANDABLE contains the letters E (twice), X, P, A (twice), N, D, B and L. DEEP, DEAL and EXPAND can all be formed from these letters. DEBATE needs the letter T, which does not occur in EXPANDABLE, so it cannot be formed.
+
+Q 146 | men | Reasoning
+Rearrange the letters of the following word in alphabetical order.
+PROCRASTINATE
+(1) AACEINOPRRSTT
+(2) AACENIOPRSRTT
+(3) AACEINOPRSTTR
+(4) ARECINOPRSTTA
+= 1
+~ PROCRASTINATE has the letters A (twice), C, E, I, N, O, P, R (twice), S and T (twice). In alphabetical order they read A A C E I N O P R R S T T, that is AACEINOPRRSTT. Options 2, 3 and 4 put some letters out of order, such as N before I or an R after the Ts.
+
+Q 147 | men | Reasoning
+How many pentagons are there in the given figure?
+(1) 2
+(2) 3
+(3) 4
+(4) 5
+= 2
+! img/f2020a-q147.png
+~ The figure is made of two tall central triangles (on either side of the vertical line), a four-sided piece on the outer side of each of them, and a small triangle at each base corner. Pentagons are formed by: both central triangles with the left four-sided piece; both central triangles with the right four-sided piece; and both central triangles with both four-sided pieces. Every other combination gives a triangle, quadrilateral or other shape, so there are 3 pentagons.
+
+Q 148 | men | Reasoning
+How many times is the letter 'a' used in the given sentence?
+"Smoking can cause lung disease by damaging your airways and the small air sacs found in your lungs."
+(1) 10
+(2) 11
+(3) 7
+(4) 9
+= 2
+~ Counting the letter a word by word: can 1, cause 1, disease 1, damaging 2, airways 2, and 1, small 1, air 1, sacs 1. Total = 1 + 1 + 1 + 2 + 2 + 1 + 1 + 1 + 1 = 11. The remaining words (Smoking, lung, by, your, the, found, in, lungs) have no a.
+
+Q 149 | men | Reasoning
+Select the water image of the following figure.
+(1) 3
+(2) 4
+(3) 2
+(4) 1
+= 4
+! img/f2020a-q149.png
+~ A water image is the reflection in a horizontal line (water surface) below the figure: each digit is flipped top to bottom (not rotated), while the left-to-right order 6, 9, 5 stays the same. Figure 1 shows exactly this. Figure 3 is the original number, and figures 2 and 4 change the order of the digits, so they are not the water image.
+
+Q 150 | men | Reasoning
+Select the option that is related to the third term in the same way as the second term is related to the first term.
+Botany : Plants :: Entomology : ?
+(1) Insects
+(2) Snakes
+(3) Birds
+(4) Germs
+= 1
+~ Botany is the scientific study of plants, so the first term is the science and the second its subject. Entomology is the scientific study of insects. Snakes are studied in ophiology (part of herpetology), birds in ornithology and germs in microbiology.
