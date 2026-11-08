@@ -263,7 +263,8 @@ async def main():
                     if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')
             await pg.goto(URL + sub + '/'); await pg.wait_for_timeout(400)
             nt = await pg.locator('#home-static .etiles .etile:not(.etile-sm)').count()
-            if nt != (6 if sub == 'appsc-group-1' else 3): errors.append(f'{sub}: {nt} main tiles on the exam home, expected {6 if sub == "appsc-group-1" else 3} (Group-1: Prelims 3 + Mains 3)')
+            want = {'appsc-group-1': 6, 'tgpsc-group-1': 5}.get(sub, 3)   # APPSC Group-1: Prelims 3 + Mains 3; TGPSC Group-I: Prelims 3 + Mains 2 (questions only)
+            if nt != want: errors.append(f'{sub}: {nt} main tiles on the exam home, expected {want}')
             if await pg.locator('#qotd-home').count(): errors.append(f'{sub}: question of the day should only be on the start page')
             for h in await pg.eval_on_selector_all('#home-static .etiles a', 'els => els.map(e => e.getAttribute("href"))'):
                 if h.startswith('#'): continue
