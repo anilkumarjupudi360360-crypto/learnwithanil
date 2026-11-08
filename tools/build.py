@@ -945,6 +945,9 @@ AEE_SUBJECTS = AEE_P2_SUBJECTS + [s for s in AMVI_AP_SUBJECTS if s not in AMVI_A
 AEE_SUBJ_TE = dict(AMVI_AP_SUBJ_TE, ecs='పర్యావరణ వ్యవస్థలు', nrr='సహజ వనరులు', bdv='జీవవైవిధ్యం, జీవ వనరులు', emt='ఇంజనీరింగ్ మెటీరియల్స్',
                    flu='ఫ్లూయిడ్ మెకానిక్స్, హైడ్రాలిక్స్', ptd='ప్రాసెస్ కాలిక్యులేషన్స్, థర్మోడైనమిక్స్', apc='వాయు, నీటి, నేల, శబ్ద కాలుష్యం',
                    swm='ఘన, పారిశ్రామిక వ్యర్థాల నిర్వహణ', gel='ప్రపంచ పర్యావరణ సమస్యలు, విధానాలు, చట్టాలు', eia='పర్యావరణ ప్రభావ అంచనా, సుస్థిర అభివృద్ధి')
+def aee_p1():
+    """True once the 2025 Paper I (GS & MA) source is on the site (Anil, 8 Nov 2026: "focus on paper-2 first")."""
+    return 'v25g' in have_src('appsc-env-engineer', AEE_PAPERS)
 AEE_PAPERS = [
   dict(id='v25c', file='appsc-aee-2025-paper2-common-subject.txt', year=2025, stage='Written Examination Paper II', short='AEE 2025 Paper 2 (Common Subject)',
        kwname='APPSC Assistant Environmental Engineer 2025 Paper 2 Common Subject',
@@ -1195,16 +1198,20 @@ def exam_confs():
            short='APPSC Asst. Environmental Engineer', seo='APPSC Assistant Environmental Engineer', slugp='appsc-assistant-environmental-engineer', papers=AEE_PAPERS, subjects=AEE_SUBJECTS, faq=FAQ_AEE,
            board='APPSC', l2=L2_TE, pb='/appsc-assistant-environmental-engineer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
            te_name='ఏపీపీఎస్సీ అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ (ఏపీ కాలుష్య నియంత్రణ మండలి)', te_paper='రాత పరీక్ష', subj_te=AEE_SUBJ_TE,
-           title='APPSC Assistant Environmental Engineer Previous Question Papers with Answers – AP Pollution Control Board AEE 2025, GS & Common Subject | Learn with Anil',
+           title=('APPSC Assistant Environmental Engineer Previous Question Papers with Answers – AP Pollution Control Board AEE 2025, ' + ('GS & Common Subject' if aee_p1() else 'Paper 2 Common Subject') + ' | Learn with Anil'),
            h1='APPSC Assistant Environmental Engineer previous question papers <em>with answers.</em>',
-           l2line='ఏపీపీఎస్సీ అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ (ఏపీ కాలుష్య నియంత్రణ మండలి) 2025 ప్రశ్నాపత్రాలు సమాధానాలతో — పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), పేపర్-2 కామన్ సబ్జెక్ట్ (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line=('ఏపీపీఎస్సీ అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ (ఏపీ కాలుష్య నియంత్రణ మండలి) 2025 ప్రశ్నాపత్రాలు సమాధానాలతో — '
+                   + ('పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), ' if aee_p1() else '') + 'పేపర్-2 కామన్ సబ్జెక్ట్ (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.'),
            aka='Assistant Environmental Engineer (AEE) in the A.P. Pollution Control Board (APPCB), recruited by the Andhra Pradesh Public Service Commission.',
            aka_short='APPSC Assistant Environmental Engineer (AP Pollution Control Board)',
-           desc=lambda t: (f"APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) previous question papers: the 2025 Paper I General Studies & Mental Ability (English and Telugu) "
-                           f"and Paper II Common Subject with answers from APPSC's final keys, {t:,} questions with explanations. Practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+           desc=lambda t: (f"APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) previous question papers: the 2025 "
+                           + ("Paper I General Studies & Mental Ability (English and Telugu) and Paper II Common Subject" if aee_p1() else "Paper II Common Subject (environmental engineering)")
+                           + f" with answers from APPSC's final keys, {t:,} questions with explanations. Practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
            eyebrow='APPSC · Assistant Environmental Engineer · A.P. Pollution Control Board · 2025',
            papers_note="Answers come from APPSC's final keys (6 August 2025) on the master question papers of the computer-based test held on 25 March 2025 (Notification 15/2023): the option marked correct there is the answer. "
-                       "Questions APPSC ignored for all candidates are left out; where APPSC accepted more than one option, each accepted option is shown as correct. Paper I is in English and Telugu as printed; Paper II (Common Subject) is in English only."),
+                       "Questions APPSC ignored for all candidates are left out; where APPSC accepted more than one option, each accepted option is shown as correct. "
+                       + ("Paper I is in English and Telugu as printed; Paper II (Common Subject) is in English only." if aee_p1() else
+                          "Paper II (Common Subject) is set in English only. Paper I (General Studies & Mental Ability, English and Telugu) is being added next.")),
       dict(id='appsc-fro', dir='appsc-forest-range-officer', src='appsc-fro', key='ap-fro', name='APPSC Forest Range Officer (FRO)',
            short='APPSC FRO', seo='APPSC FRO', slugp='appsc-fro', papers=FRO_PAPERS, subjects=FRO_SUBJECTS, faq=FAQ_FRO,
            board='APPSC', l2=L2_TE, pb='/appsc-forest-range-officer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
@@ -2260,9 +2267,9 @@ def FAQ_FRO(total, npapers):
 def FAQ_AEE(total, npapers):
     return [
       ('Where can I get APPSC Assistant Environmental Engineer previous question papers with answers?',
-       f'This page has {total:,} questions from the {npapers} papers of the APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) exam held on 25 March 2025 (Notification 15/2023): '
-       "Paper I General Studies & Mental Ability and Paper II Common Subject. Every answer is from APPSC's final key, and each question has a short explanation. "
-       'Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam.'),
+       f'This page has {total:,} questions from the APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) exam held on 25 March 2025 (Notification 15/2023): '
+       + ('Paper I General Studies & Mental Ability and Paper II Common Subject. ' if aee_p1() else 'Paper II Common Subject; Paper I General Studies & Mental Ability is being added next. ')
+       + "Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam."),
       ('What is the APPSC Assistant Environmental Engineer exam pattern in 2026?',
        'Notification 08/2026 (41 posts) has two objective papers of degree standard: Paper I General Studies & Mental Ability (150 questions, 150 marks, 150 minutes) and Paper II Common Subject '
        '(150 questions, 150 marks, 150 minutes), 300 marks in all, computer-based, with one-third of a mark deducted for each wrong answer, followed by a qualifying Computer Proficiency Test. '
@@ -2275,9 +2282,10 @@ def FAQ_AEE(total, npapers):
        'A B.E./B.Tech. degree in Civil, Mechanical, Chemical or Environmental Engineering, or a pass in Sections A and B of the AMIE (India) Civil examination; age 18 to 44 years as on 1 July 2026 with the usual relaxations. '
        'Pay scale ₹57,100 – ₹1,47,760. Online applications ran from 6 to 27 October 2026.'),
       ('Are the questions in Telugu?',
-       'Paper I (General Studies & Mental Ability) is here in English and Telugu, as APPSC printed it. Paper II (Common Subject) is set in English only, so it is here in English.'),
+       ('Paper I (General Studies & Mental Ability) is here in English and Telugu, as APPSC printed it. Paper II (Common Subject) is set in English only, so it is here in English.' if aee_p1() else
+        'Paper II (Common Subject) is set in English only, so it is here in English. Paper I (General Studies & Mental Ability), coming next, will be in English and Telugu as APPSC printed it.')),
       ('Which questions are left out?',
-       'Questions that APPSC ignored for all candidates are left out (two in Paper II and three in Paper I). Where APPSC accepted more than one option, each accepted option is shown as correct.'),
+       'Questions that APPSC ignored for all candidates are left out (' + ('two in Paper II and three in Paper I' if aee_p1() else 'Q30 and Q97 of Paper II') + '). Where APPSC accepted more than one option, each accepted option is shown as correct.'),
     ]
 
 def FAQ_EO(total, npapers):
