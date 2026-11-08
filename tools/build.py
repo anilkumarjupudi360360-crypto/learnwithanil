@@ -433,6 +433,7 @@ HM_PAPERS = [
        alt='General Studies', te_paper='పేపర్-1 జనరల్ స్టడీస్',
        blurb='Paper 1: General Studies (current affairs, science, environment, geography, history, Telangana, polity, economy, reasoning and data interpretation), 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
   dict(id='m15b', file='tgpsc-hmwssb-manager-2015-paper2-civil.txt', year=2015, stage='Written Examination Paper II', short='Manager 2015 Paper 2 (Civil)',
+       kwname='TGPSC HMWSSB Manager 2015 Paper 2 Civil',   # 8 Nov 2026: the ECE paper is also Paper 2
        title='TSPSC Manager (Engineering), HMWSSB, 2015: Paper 2 (Civil Engineering)', notif='Notification 13/2015 · Series A', held='1 November 2015',
        key="TSPSC's final key", fmt='mcq', slug='tgpsc-hmwssb-manager-2015-paper-2-civil-engineering-question-paper-with-answers',
        alt='Civil Engineering', te_paper='పేపర్-2 సివిల్ ఇంజనీరింగ్', en_only=True,
@@ -440,9 +441,10 @@ HM_PAPERS = [
   # Anil, 8 Nov 2026: sent the scanned ECE booklet (ME1315, code 504, Series A), "add this exam in Telangana engineering exam";
   # answers from TSPSC's final key (Series A), copy on freejobalert.com like the GS and Civil keys.
   dict(id='m15e', file='tgpsc-hmwssb-manager-2015-paper2-ece.txt', year=2015, stage='Written Examination Paper II', short='Manager 2015 Paper 2 (ECE)',
+       kwname='TGPSC HMWSSB Manager 2015 Paper 2 ECE',
        title='TSPSC Manager (Engineering), HMWSSB, 2015: Paper 2 (Electronics & Communication Engineering)', notif='Notification 13/2015 · Series A', held='1 November 2015',
        key="TSPSC's final key", fmt='mcq', slug='tgpsc-hmwssb-manager-2015-paper-2-electronics-communication-engineering-ece-question-paper-with-answers',
-       alt='Electronics & Communication Engineering (ECE)', te_paper='పేపర్-2 ఎలక్ట్రానిక్స్ & కమ్యూనికేషన్ ఇంజనీరింగ్', en_only=True,
+       alt='Electronics & Communication Engineering', te_paper='పేపర్-2 ఎలక్ట్రానిక్స్ & కమ్యూనికేషన్ ఇంజనీరింగ్', en_only=True,
        blurb='Paper 2: Electronics & Communication Engineering (networks, electronic devices and circuits, digital electronics, signals and systems, control systems, analog and digital communication, '
              'electromagnetics, transmission lines, microwaves and antennas), 150 questions, 300 marks, 150 minutes, in English only.'),
 ]
