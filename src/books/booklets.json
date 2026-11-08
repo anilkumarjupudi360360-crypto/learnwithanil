@@ -292,6 +292,36 @@
    "pages": 51
   }
  },
+ "tgpsc-group-2": {
+  "g24p1": {
+   "bytes": 1144819,
+   "file": "tgpsc-group-2-g24p1-326a268e46.bin",
+   "key": "bk-tgpsc-group-2-g24p1",
+   "name": "LearnWithAnil-TGPSC-Group-2-Paper-1-2024-General-Studies-General-Abilities-Question-Paper.pdf",
+   "pages": 53
+  },
+  "g24p2": {
+   "bytes": 1026495,
+   "file": "tgpsc-group-2-g24p2-a47f8436b1.bin",
+   "key": "bk-tgpsc-group-2-g24p2",
+   "name": "LearnWithAnil-TGPSC-Group-2-Paper-2-2024-History-Polity-Society-Question-Paper.pdf",
+   "pages": 49
+  },
+  "g24p3": {
+   "bytes": 1088674,
+   "file": "tgpsc-group-2-g24p3-6d974dbd87.bin",
+   "key": "bk-tgpsc-group-2-g24p3",
+   "name": "LearnWithAnil-TGPSC-Group-2-Paper-3-2024-Economy-Development-Question-Paper.pdf",
+   "pages": 56
+  },
+  "g24p4": {
+   "bytes": 1066980,
+   "file": "tgpsc-group-2-g24p4-a5fd6600b9.bin",
+   "key": "bk-tgpsc-group-2-g24p4",
+   "name": "LearnWithAnil-TGPSC-Group-2-Paper-4-2024-Telangana-Movement-State-Formation-Question-Paper.pdf",
+   "pages": 51
+  }
+ },
  "ts-police-constable": {
   "mkpc1": {
    "bytes": 1181952,
