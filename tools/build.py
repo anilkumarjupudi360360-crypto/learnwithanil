@@ -3051,6 +3051,16 @@ def llms_txt(loaded, grand):
                 for n, nm in ((1, 'Paper I (Essay) topics'), (2, 'Paper II (History & Geography)'), (3, 'Paper III (Polity & Ethics)'), (4, 'Paper IV (Economy)'), (5, 'Paper V (Science, Technology & Environment)')):
                     if os.path.exists(os.path.join(mdir, f'{y}-paper-{n}.html')):
                         L.append(f'    - [APPSC Group 1 Mains {y} {nm}' + ('' if n == 1 else ' questions with model answers') + f']({SITE_URL}{c["pb"]}mains-pyqs/{y}-paper-{n}.html)')
+        if c['id'] == 'tgpsc-group-1':   # TGPSC Group-I Mains 2024, questions only (tools/tg1mains.py); listed for AI assistants 8 Nov 2026
+            import tg1mains
+            tq = tg1mains.load(SRC)
+            tdir = os.path.join(DIST, 'site', c['dir'], tg1mains.DIR)
+            if tq and os.path.isdir(tdir):
+                L.append(f'  - [TGPSC (TSPSC) Group 1 Mains 2024 previous year question papers, English and Telugu]({SITE_URL}{c["pb"]}{tg1mains.DIR}/) — '
+                         f'Paper I General Essay and Papers II–VI, {len(tq)} questions (questions only), free')
+                for n, nm in sorted(tg1mains.PAPERS.items()):
+                    if os.path.exists(os.path.join(tdir, f'2024-paper-{n}.html')):
+                        L.append(f'    - [TGPSC Group 1 Mains 2024 Paper {tg1mains.ROMAN[n]} ({nm}) question paper]({SITE_URL}{c["pb"]}{tg1mains.DIR}/2024-paper-{n}.html) — held {tg1mains.HELD[2024][n]}')
     try:   # UPSC CSE Mains GS 1-4 (tools/upscmains.py): its own pages, not an app exam
         import upscmains
         uq, _ = upscmains.load(SRC)
