@@ -8,6 +8,8 @@ doc claude/exam-news-pages.md. Where only news or coaching sites report somethin
 
 Update these answers when a board announces something (hall tickets, keys, extensions, exam dates).
 """
+import os
+
 ASOF = '4 November 2026'
 UPSC_CAL = 'https://upsc.gov.in/sites/default/files/Calendar-Year-2027-Engl-200526.pdf'
 TG_HM = ('https://websitenew.tgpsc.gov.in/preview/UFJFU1NOT1RFL05PVElGTi5fMDQtT0ctSE0tMjAyNi1NQU5BR0VSSE1XU1NCMjAyNjA5MTgxNzQ4MDEucGRm'
@@ -423,6 +425,20 @@ TG_MPSO = 'https://websitenew.tgpsc.gov.in/preview/RElSRUNUUkVDUlVJVE1FTlROT1RJL
 TG_MPSO_2018 = 'https://websitenew.tgpsc.gov.in/preview/RElSRUNUUkVDUlVJVE1FTlROT1RJLzEyMjAxODAyMDYxOC5wZGY=r95v17a0y2d8i13v'
 TG_MPSO_KEY1 = 'https://websitenew.tgpsc.gov.in/preview/UFJFU1NOT1RFL2ZpbmFsX0tFWV8xODEyMV9BU08tUEFQRVItSS5wZGY=r95v17a0y2d8i13v'
 TG_MPSO_KEY2 = 'https://websitenew.tgpsc.gov.in/preview/UFJFU1NOT1RFL2ZpbmFsX0tFWV8xODEyMl9BU08tUEFQRVItSUkucGRmr95v17a0y2d8i13v'
+def _aso_practice():
+    """Paper II practice for TGPSC MPSO / ASO: the APPSC Assistant Statistical Officer Paper II papers on the site (added 8 Nov 2026)."""
+    src = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src', 'appsc-aso')
+    have = [(y, f) for y, f in ((2025, 'appsc-aso-2025-paper2.txt'), (2022, 'appsc-aso-2022-paper2.txt')) if os.path.exists(os.path.join(src, f))]
+    if not have:
+        return '<p>Paper II (Statistics) previous questions are being added.</p>'
+    items = ''.join(f'<li><a href="/appsc-assistant-statistical-officer/papers/appsc-aso-{y}-paper-2-statistics-economics-question-paper-with-answers.html">'
+                    f'APPSC Assistant Statistical Officer {y} Paper II: Statistics, Economics, Accountancy &amp; Computers</a></li>' for y, f in have)
+    return ('<h2>Practise Paper II with APPSC\'s Statistics papers</h2><p>TSPSC has not put the 2018 question booklets online. The APPSC Assistant Statistical Officer '
+            'exam has a Paper II on the same statistics topics (collection of data, central tendency, dispersion and skewness, correlation, time series, index numbers, computers), '
+            'with economics and accountancy too. Every question is in English and Telugu with APPSC\'s final key and a short explanation:</p><ul>' + items + '</ul>'
+            '<p>All APPSC ASO papers, subject-wise practice and timed tests: <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer previous papers</a>.</p>')
+
+
 NEW['tgpsc-mpso-aso-notification-2026.html'] = dict(
     exam=None, ename='TGPSC MPSO / ASO', board='TGPSC', site='websitenew.tgpsc.gov.in', crumb='MPSO / ASO Notification 2026', faq_asof='8 November 2026',
     title='TGPSC MPSO / ASO Notification 2026 – 102 Posts, Apply by 27 November, Exam January 2027, Syllabus, Pattern & Previous Papers | Learn with Anil',
@@ -502,6 +518,9 @@ NEW['tgpsc-mpso-aso-notification-2026.html'] = dict(
       ('Is there negative marking in MPSO / ASO?', 'The notification does not mention negative marking.'),
       ('Is there an interview?', 'No. Selection is on the 300 marks of the written exam (Paper I and Paper II).'),
       ('When was the last MPSO / ASO exam?', 'On 3 September 2018, under TSPSC Notification 12/2018 for 474 posts.'),
+      ('Where can I practise MPSO / ASO Statistics previous questions?', 'TSPSC has not published the 2018 question booklets online. The APPSC Assistant Statistical Officer '
+                                                                         'Paper II papers have the same statistics topics (with economics, accountancy and computers), in English and Telugu with APPSC\'s final key: '
+                                                                         'see the Paper II practice list on this page.'),
     ],
     tail_html='<h2>Practise Paper I with TGPSC\'s General Studies papers</h2><p>Paper I (General Studies &amp; General Abilities) follows the same syllabus as '
               'the Paper I of other TGPSC posts. These papers have every question with the official key and a short explanation in English and Telugu:</p><ul>'
@@ -509,7 +528,8 @@ NEW['tgpsc-mpso-aso-notification-2026.html'] = dict(
               'General Abilities (150 questions)</a></li>'
               '<li><a href="/tgpsc-hmwssb-manager/papers/tgpsc-hmwssb-manager-2015-paper-1-general-studies-question-paper-with-answers.html">TSPSC HMWSSB Manager 2015 '
               'Paper I: General Studies</a></li></ul>'
-              '<p>Paper II (Statistics) previous questions are being added. More Telangana papers: <a href="/ts-police-pyqs.html">TS Police SI and Constable</a> · '
+              + _aso_practice() +
+              '<p>More Telangana papers: <a href="/ts-police-pyqs.html">TS Police SI and Constable</a> · '
               '<a href="/exam-notifications.html">all exam notifications</a>.</p>')
 
 

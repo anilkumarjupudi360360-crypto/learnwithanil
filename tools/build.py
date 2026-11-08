@@ -966,6 +966,49 @@ AEE_PAPERS = [
              '150 questions, 150 marks, 150 minutes, in English and Telugu. The same paper was set that day for Analyst Grade-II of the A.P. Pollution Control Board.'),
 ]
 
+# APPSC Assistant Statistical Officer, A.P. Economics & Statistical Subordinate Service (Anil, 8 Nov 2026, after the TGPSC
+# MPSO/ASO notification page: "do we dont have anyother pyqs ?" -> "ok" to adding the APPSC Statistics papers). Paper II
+# (Subject: economics, financial accounting, statistics, basics of computers) of two exams, APOnline master question papers
+# with APPSC's final key (correct option ticked): Notification 12/2024 (5 posts), CBT 29 April 2025, bilingual text
+# (computer questions English only); Notification 20/2021 (29 posts), CBT 4 November 2022 ("ECOSTATS 0411S2"), every
+# question printed as a picture with English and Telugu. Paper I (GS & MA) is the common APPSC paper of those days.
+ASO_SUBJECTS = [
+  ('ect', 'Economic Theory', 'economic-theory', ['Demand, Supply & Elasticity', 'Market Structures & Pricing', 'Production, Costs & Factor Pricing', 'National Income', 'Money, Banking & Inflation', 'Public Finance & Budget']),
+  ('ine', 'International Economics', 'international-economics', ['Trade & Protection', 'Balance of Payments & Exchange Rates', 'IMF, World Bank & Monetary System']),
+  ('ind', 'Indian Economy', 'indian-economy', ['Population & Human Development', 'Poverty, Unemployment & Inequality', 'Agriculture, Industry & Regional Imbalances', 'Planning & Economic Policies', 'Inflation, Fiscal Deficit & External Debt']),
+  ('acc', 'Financial Accounting', 'financial-accounting', ['Accounting Concepts & Principles', 'Journal, Ledger & Subsidiary Books', 'Bank Reconciliation, Trial Balance & Final Accounts', 'Depreciation, Errors & Company Law']),
+  ('cmp', 'Basics of Computers', 'computers', ['Digital Logic & Number Systems', 'Memory & Hardware', 'MS Excel & Office']),
+  ('sdc', 'Statistics: Data, Sampling & Diagrams', 'statistics-data-collection-sampling', ['Primary & Secondary Data', 'Census, Sampling & Probability', 'Schedules & Questionnaires', 'Classification, Tables & Diagrams']),
+  ('mct', 'Measures of Central Tendency', 'measures-of-central-tendency', ['Mean, Median & Mode', 'Quartiles & Partition Values']),
+  ('dsp', 'Dispersion, Skewness & Normal Distribution', 'dispersion-skewness', ['Measures of Dispersion', 'Skewness & Kurtosis', 'Normal Distribution']),
+  ('cor', 'Correlation', 'correlation', ["Karl Pearson's Correlation", 'Rank Correlation & Probable Error']),
+  ('tsi', 'Time Series & Index Numbers', 'time-series-index-numbers', ['Time Series', 'Index Numbers']),
+]
+ASO_SUBJ_TE = dict(ect='ఆర్థిక సిద్ధాంతం', ine='అంతర్జాతీయ అర్థశాస్త్రం', ind='భారత ఆర్థిక వ్యవస్థ', acc='ఫైనాన్షియల్ అకౌంటింగ్', cmp='కంప్యూటర్ ప్రాథమికాంశాలు',
+                   sdc='గణాంకాలు: దత్తాంశ సేకరణ, నమూనా, చిత్రాలు', mct='కేంద్రీయ స్థాన కొలతలు', dsp='విస్తరణ, వైషమ్యం, సాధారణ విభాజనం', cor='సహసంబంధం',
+                   tsi='కాలశ్రేణులు, సూచీ సంఖ్యలు')
+ASO_BLURB = ('economics (economic theory, international economics and the Indian economy), financial accounting, statistics (collection and presentation of data, '
+             'central tendency, dispersion and skewness, correlation, time series and index numbers) and basics of computers')
+ASO_PAPERS = [
+  dict(id='aso25', file='appsc-aso-2025-paper2.txt', year=2025, stage='Written Examination Paper II (Subject)', short='ASO 2025 Paper 2',
+       kwname='APPSC ASO 2025 Paper 2 (Statistics & Economics)',
+       title='APPSC Assistant Statistical Officer 2025: Paper II (Statistics, Economics, Accountancy & Computers)', notif='Notification 12/2024 · CBT', held='29 April 2025',
+       key="APPSC's final key", fmt='mcq', slug='appsc-aso-2025-paper-2-statistics-economics-question-paper-with-answers',
+       alt='Statistics, Economics, Accountancy & Computers', te_paper='పేపర్-2 సబ్జెక్ట్ (స్టాటిస్టిక్స్, ఎకనామిక్స్)',
+       blurb='Paper II (Subject): ' + ASO_BLURB + ', computer-based test, 150 questions, 150 marks, 150 minutes, in English and Telugu (the computer questions in English only).'),
+  dict(id='aso22', file='appsc-aso-2022-paper2.txt', year=2022, stage='Written Examination Paper II (Subject)', short='ASO 2022 Paper 2',
+       kwname='APPSC ASO 2022 Paper 2 (Statistics & Economics)',
+       title='APPSC Assistant Statistical Officer 2022: Paper II (Economics & Statistics)', notif='Notification 20/2021 · CBT', held='4 November 2022',
+       key="APPSC's final key", fmt='mcq', slug='appsc-aso-2022-paper-2-statistics-economics-question-paper-with-answers',
+       alt='Economics & Statistics', te_paper='పేపర్-2 సబ్జెక్ట్ (ఎకనామిక్స్, స్టాటిస్టిక్స్)',
+       blurb='Paper II (Subject): ' + ASO_BLURB + ', computer-based test, 150 questions, 150 marks, 150 minutes, in English and Telugu.'),
+]
+def aso_have():
+    """Ids of the ASO papers on the site (2025 went up first, 8 Nov 2026)."""
+    return have_src('appsc-aso', ASO_PAPERS)
+def aso_years():
+    return ' and '.join(str(p['year']) for p in ASO_PAPERS if p['id'] in aso_have()) or '2025'
+
 def exam_confs():
     T = ts_text()
     E = epfo_text()
@@ -1221,6 +1264,22 @@ def exam_confs():
                        "Questions APPSC ignored for all candidates are left out; where APPSC accepted more than one option, each accepted option is shown as correct. "
                        + ("Paper I is in English and Telugu as printed; Paper II (Common Subject) is in English only." if aee_p1() else
                           "Paper II (Common Subject) is set in English only. Paper I (General Studies & Mental Ability, English and Telugu) is being added next.")),
+      dict(id='appsc-aso', dir='appsc-assistant-statistical-officer', src='appsc-aso', key='ap-aso', name='APPSC Assistant Statistical Officer (ASO)',
+           short='APPSC ASO', seo='APPSC ASO', slugp='appsc-aso', papers=ASO_PAPERS, subjects=ASO_SUBJECTS, faq=FAQ_ASO,
+           board='APPSC', l2=L2_TE, pb='/appsc-assistant-statistical-officer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
+           te_name='ఏపీపీఎస్సీ అసిస్టెంట్ స్టాటిస్టికల్ ఆఫీసర్ (ASO)', te_paper='రాత పరీక్ష', subj_te=ASO_SUBJ_TE,
+           title=f'APPSC ASO Previous Question Papers with Answers – Assistant Statistical Officer {aso_years()} Paper 2 Statistics & Economics | Learn with Anil',
+           h1='APPSC Assistant Statistical Officer (ASO) previous question papers <em>with answers.</em>',
+           l2line=f'ఏపీపీఎస్సీ అసిస్టెంట్ స్టాటిస్టికల్ ఆఫీసర్ (ASO) {aso_years()} పేపర్-2 (స్టాటిస్టిక్స్, ఎకనామిక్స్, అకౌంటెన్సీ, కంప్యూటర్స్) ప్రశ్నాపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           aka='Assistant Statistical Officer (ASO) in the A.P. Economics & Statistical Subordinate Service, recruited by the Andhra Pradesh Public Service Commission. The same Paper II subjects are asked in the TGPSC MPSO / ASO exam.',
+           aka_short='APPSC Assistant Statistical Officer (AP Economics & Statistics Department)',
+           desc=lambda t: (f"APPSC Assistant Statistical Officer (ASO) previous question papers: Paper II (Subject) of {aso_years()} with answers from APPSC's final keys, "
+                           f"{t:,} questions on statistics, economics, accountancy and computers in English and Telugu with explanations. Useful for TGPSC MPSO / ASO too. "
+                           f"Practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+           eyebrow=f'APPSC · Assistant Statistical Officer · A.P. Economics &amp; Statistical Sub-Service · {aso_years().replace(" and ", " &amp; ")}',
+           papers_note=("Answers come from APPSC's final keys on the master question papers of the computer-based tests (Notification 12/2024, 29 April 2025"
+                        + ("; Notification 20/2021, 4 November 2022" if 'aso22' in aso_have() else '') + "): the option marked correct there is the answer. "
+                        "Questions APPSC ignored for all candidates are left out. The papers are in English and Telugu as printed (the 2025 computer questions in English only).")),
       dict(id='appsc-fro', dir='appsc-forest-range-officer', src='appsc-fro', key='ap-fro', name='APPSC Forest Range Officer (FRO)',
            short='APPSC FRO', seo='APPSC FRO', slugp='appsc-fro', papers=FRO_PAPERS, subjects=FRO_SUBJECTS, faq=FAQ_FRO,
            board='APPSC', l2=L2_TE, pb='/appsc-forest-range-officer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
@@ -1743,6 +1802,7 @@ def exam_terms(e, cat):
     if 'police' in e['id'] and e['cat'] == 'tg': words += ['ts police', 'tg police', 'tslprb', 'tgprb', 'si', 'constable']
     if 'police' in e['id'] and e['cat'] == 'ap': words += ['ap police', 'andhra police', 'slprb', 'apslprb', 'si', 'sub inspector', 'constable', 'pc', 'rsi', 'fireman', 'warder']
     if 'amvi' in e['id']: words += ['amvi', 'motor vehicle inspector', 'mvi', 'rto', 'transport department', 'automobile engineering', 'automobile']
+    if e['id'] == 'appsc-aso': words += ['aso', 'assistant statistical officer', 'statistical officer', 'statistics', 'economics', 'ecostats', 'economics and statistics', 'des', 'mpso', 'accountancy']
     if e['id'] == 'appsc-env-engineer': words += ['aee', 'assistant environmental engineer', 'environmental engineer', 'environmental engineering', 'pollution control board', 'appcb', 'common subject', 'fluid mechanics', 'eia']
     if e['id'] == 'appsc-analyst': words += ['analyst', 'analyst grade 2', 'analyst grade ii', 'pollution control board', 'appcb', 'chemistry', 'biochemistry', 'biology', 'environmental science']
     if e['id'] == 'appsc-fro': words += ['fro', 'forest range officer', 'forest', 'forestry', 'general forestry', 'range officer', 'forest department']
@@ -1792,6 +1852,7 @@ EXAM_ART = [   # header drawings on the exam tiles (own line art, 160x90; Anil 2
     (r'endowment', '<path d="M54 74h52"/><path d="M60 74V48h40v26"/><path d="M56 48h48L80 28Z"/><path d="M80 28V14l12 4-12 4"/><path d="M73 74V61a7 7 0 0 1 14 0v13"/><path d="M65 55h4M91 55h4"/>'),
     (r'forest|\bfro\b|\bifos\b|\bfbo\b', '<path d="M44 72 58 48h-6l12-22 12 22h-6l14 24Z"/><path d="M84 72 96 52h-5l11-20 11 20h-5l12 20Z"/><path d="M64 72v7M102 72v7M34 79h98"/>'),
     (r'environmental engineer|env engineer', '<path d="M40 74V46l16 8V46l16 8V46l16 8v20Z"/><path d="M96 74V24h10v50"/><path d="M98 18c-4-6 2-10 8-8 4-6 14-4 14 3 6 1 6 9 0 10"/><path d="M114 52c10-12 22-12 26-10-2 12-12 20-24 16Z"/><path d="M116 58l14-10"/><path d="M30 74h104"/>'),
+    (r'statistic|\baso\b|mpso', '<path d="M34 76h96"/><path d="M42 76V58h12v18M60 76V44h12v32M78 76V30h12v46M96 76V48h12v28M114 76V62h12v14"/><path d="M36 56c14 0 20-40 44-40s30 40 44 40"/>'),
     (r'analyst|chemist|drug|pharma|\blab\b', '<path d="M70 14h20M73 14v20L56 66a5 5 0 0 0 4.5 7h39a5 5 0 0 0 4.5-7L87 34V14"/><path d="M62 54h36"/><circle cx="74" cy="62" r="3"/><circle cx="86" cy="58" r="2"/><circle cx="114" cy="26" r="5"/><circle cx="126" cy="42" r="4"/><path d="m117 30 6 8"/>'),
     (r'hmwssb|water', '<path d="M80 10s18 20 18 34a18 18 0 0 1-36 0c0-14 18-34 18-34Z"/><path d="M72 46a8 8 0 0 0 8 8"/><path d="M32 74c8-5 16-5 24 0s16 5 24 0 16-5 24 0 16 5 24 0"/>'),
     (r'teacher|\btet\b|\bdsc\b|lecturer|gurukul|\btgt\b|\bpgt\b', '<path d="M80 26c-8-6-20-8-34-6v44c14-2 26 0 34 6 8-6 20-8 34-6V20c-14-2-26 0-34 6Z"/><path d="M80 26v44"/><path d="M54 32h16M54 40h16M90 32h16M90 40h16"/>'),
@@ -2297,6 +2358,31 @@ def FAQ_AEE(total, npapers):
        'Questions that APPSC ignored for all candidates are left out (' + ('two in Paper II and three in Paper I' if aee_p1() else 'Q30 and Q97 of Paper II') + '). Where APPSC accepted more than one option, each accepted option is shown as correct.'),
     ]
 
+def FAQ_ASO(total, npapers):
+    left = ['Q134 of 2025'] + (['Q51 and Q81 of 2022'] if 'aso22' in aso_have() else [])
+    return [
+      ('Where can I get APPSC ASO previous question papers with answers?',
+       f'This page has {total:,} questions from the APPSC Assistant Statistical Officer Paper II (Subject) of {aso_years()}: statistics, economics, financial accounting and computers, '
+       "in English and Telugu as APPSC printed them. Every answer is from APPSC's final key, and each question has a short explanation. "
+       'Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam.'),
+      ('What is the APPSC ASO exam pattern?',
+       'Two objective papers of degree standard, computer-based: Paper I General Studies & Mental Ability (150 questions, 150 marks, 150 minutes) and Paper II Subject '
+       '(150 questions, 150 marks, 150 minutes), 300 marks in all, with one-third of a mark deducted for each wrong answer, followed by a qualifying Computer Proficiency Test (60 minutes, 100 marks).'),
+      ('What is in the ASO Paper II syllabus?',
+       'Economic concepts (demand, markets, national income, money and banking, inflation, public finance); international economics (trade, balance of payments, exchange rates, IMF and World Bank); '
+       'the Indian economy (population, poverty, unemployment, inequality, planning and NITI Aayog, fiscal deficit, external debt); financial accounting (concepts, journal and ledger, cash book, bank reconciliation, '
+       'trial balance, final accounts, depreciation); basics of computers; and statistics: collection and presentation of data, sampling, central tendency, dispersion and skewness, correlation, '
+       'time series and index numbers.'),
+      ('Are these papers useful for TGPSC MPSO / ASO?',
+       'Yes. The TGPSC Mandal Planning & Statistical Officer / Assistant Statistical Officer exam (Notification 07/G/ES/2026) has a degree-level Statistics paper, and these APPSC Paper II questions cover the same '
+       'statistics topics, besides economics and accountancy. See the <a href="/tgpsc-mpso-aso-notification-2026.html">TGPSC MPSO / ASO notification page</a>.'),
+      ('Who can apply for APPSC ASO?',
+       'A bachelor\'s degree with Statistics as a main subject, or with Mathematics, Economics, Commerce or Computer Science as a main subject and Statistics as one of the papers. '
+       'In Notification 12/2024 the age limit was 18 to 42 years (with the usual relaxations) and the pay scale ₹37,640 – ₹1,15,500.'),
+      ('Which questions are left out?',
+       'Questions that APPSC ignored for all candidates are left out (' + ' and '.join(left) + ').'),
+    ]
+
 def FAQ_EO(total, npapers):
     return [
       ('Where can I get APPSC Executive Officer Grade-III previous question papers with answers?',
@@ -2486,7 +2572,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -3284,11 +3370,11 @@ LANDINGS = {
   # file: what the page covers. People search "APPSC PYQs", "TS police previous papers", "TSLPRB previous question papers" ...
   'appsc-pyqs.html': dict(
       board='APPSC', ename='APPSC', crumb='APPSC PYQs',
-      title='APPSC Previous Year Question Papers with Answers – Group 1, Group 2, AMVI, Endowment Officer, Analyst, Environmental Engineer & FRO PYQs | Learn with Anil',
-      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024, Group 2 Prelims & Mains 2019–2025 AMVI (Assistant Motor Vehicle Inspector) 2019, 2023 & 2026, Endowment Officer (EO Grade-III) 2022–2026, Analyst Grade-II 2025, Assistant Environmental Engineer 2025 and Forest Range Officer (FRO) 2020 & 2023, '
+      title='APPSC Previous Year Question Papers with Answers – Group 1, Group 2, AMVI, Endowment Officer, Analyst, Environmental Engineer, ASO & FRO PYQs | Learn with Anil',
+      desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024, Group 2 Prelims & Mains 2019–2025 AMVI (Assistant Motor Vehicle Inspector) 2019, 2023 & 2026, Endowment Officer (EO Grade-III) 2022–2026, Analyst Grade-II 2025, Assistant Environmental Engineer 2025, Assistant Statistical Officer (ASO) ' + aso_years().replace(' and ', ' & ') + ' and Forest Range Officer (FRO) 2020 & 2023, '
            '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations with one ₹45 All-in-One Pass for every exam.',
       h1='APPSC previous year question papers with answers',
-      lede="Every APPSC Group 1, Group 2, AMVI, Endowment Officer (EO Grade-III), Analyst Grade-II, Assistant Environmental Engineer and Forest Range Officer previous question paper on Learn with Anil, {n} questions in all. "
+      lede="Every APPSC Group 1, Group 2, AMVI, Endowment Officer (EO Grade-III), Analyst Grade-II, Assistant Environmental Engineer, Assistant Statistical Officer (ASO) and Forest Range Officer previous question paper on Learn with Anil, {n} questions in all. "
            "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu (AMVI Automobile Engineering, Analyst Paper II, Environmental Engineer Paper II and FRO General Forestry papers in English).",
       intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC AMVI (Assistant Motor Vehicle Inspector) or Endowment Officer (EO Grade-III) previous papers, APPSC old question papers with the key, or an APPSC mock test? '
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
@@ -3300,8 +3386,8 @@ LANDINGS = {
             '<a href="/appsc-fro-notification-2026.html">FRO Notification 2026</a> (5 Forest Range Officer posts, apply by 5 November) and '
             '<a href="/appsc-assistant-environmental-engineer-notification-2026.html">Assistant Environmental Engineer Notification 2026</a> (41 Pollution Control Board posts). Timed mock tests: '
             '<a href="/appsc-group-2/mock-test.html">Group 2</a> · <a href="/appsc-group-1/mock-test.html">Group 1</a>.</p>',
-      te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు', 'APPSC AMVI': 'APPSC AMVI ప్రశ్నాపత్రాలు', 'APPSC EO Grade-III': 'APPSC దేవాదాయ శాఖ EO గ్రేడ్-III ప్రశ్నాపత్రాలు', 'APPSC Analyst Grade-II': 'APPSC అనలిస్ట్ గ్రేడ్-II ప్రశ్నాపత్రాలు', 'APPSC Asst. Environmental Engineer': 'APPSC అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ ప్రశ్నాపత్రాలు', 'APPSC FRO': 'APPSC ఫారెస్ట్ రేంజ్ ఆఫీసర్ ప్రశ్నాపత్రాలు'},
-      order=lambda c: {'Group-I': 0, 'Group-II': 1, 'APPSC EO Grade-III': 3, 'APPSC Analyst Grade-II': 4, 'APPSC Asst. Environmental Engineer': 5, 'APPSC FRO': 6}.get(c['short'], 2)),   # Group-I, Group-II, AMVI, then EO Grade-III
+      te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు', 'APPSC AMVI': 'APPSC AMVI ప్రశ్నాపత్రాలు', 'APPSC EO Grade-III': 'APPSC దేవాదాయ శాఖ EO గ్రేడ్-III ప్రశ్నాపత్రాలు', 'APPSC Analyst Grade-II': 'APPSC అనలిస్ట్ గ్రేడ్-II ప్రశ్నాపత్రాలు', 'APPSC Asst. Environmental Engineer': 'APPSC అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ ప్రశ్నాపత్రాలు', 'APPSC ASO': 'APPSC అసిస్టెంట్ స్టాటిస్టికల్ ఆఫీసర్ (ASO) ప్రశ్నాపత్రాలు', 'APPSC FRO': 'APPSC ఫారెస్ట్ రేంజ్ ఆఫీసర్ ప్రశ్నాపత్రాలు'},
+      order=lambda c: {'Group-I': 0, 'Group-II': 1, 'APPSC EO Grade-III': 3, 'APPSC Analyst Grade-II': 4, 'APPSC Asst. Environmental Engineer': 5, 'APPSC ASO': 6, 'APPSC FRO': 7}.get(c['short'], 2)),   # Group-I, Group-II, AMVI, then EO Grade-III
   'ts-police-pyqs.html': dict(
       board='TSLPRB', ename='TS Police', crumb='TS Police PYQs',
       title='TS Police Previous Question Papers with Answers – SI & Constable PYQs (TSLPRB / TGPRB), English & Telugu | Learn with Anil',
@@ -5320,7 +5406,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);
