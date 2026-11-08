@@ -1,0 +1,1313 @@
+# TSPSC Manager (Engineering), HMWSSB, Notification 13/2015, Paper 2: Electronics and Communication Engineering (paper code 504, booklet ME1315), held 1 November 2015 (booklet Series A).
+# Answers: TSPSC final key, Series A. Typed from a scanned question booklet; explanations by Learn with Anil.
+# Left out (one full mark given to all candidates in the final key): 38, 47, 53, 123, 134
+
+Q 1 | nwk | AC Circuits & Resonance
+A capacitor C is connected across a coil with resistance R and inductance L. The effective [impedance] of the circuit at resonance is
+(1) 1/(RLC)
+(2) RC/L
+(3) L/(RC)
+(4) L/√(RC)
+= 3
+~ For a coil (R in series with L) in parallel with C, the admittance at resonance is purely real: Y = R/(R² + ω₀²L²), and the resonance condition gives R² + ω₀²L² = L/C. So the effective (dynamic) impedance is Z = 1/Y = (L/C)/R = L/(RC), a pure resistance that is large when R is small. (The booklet leaves out the word "impedance"; it is added in square brackets.)
+
+Q 2 | nwk | Network Laws & Theorems
+The voltage across 5 A source in the given circuit is
+(1) 17.5 volt
+(2) 25 volt
+(3) 15 volt
+(4) 20 volt
+= 1
+! img/m15e-q2.png
+~ Take the bottom wire as reference and let V be the top-right node (the node shared by the shunt 5 Ω and the 5 A source). KCL at that node: (V − 10)/5 + V/5 = 5 → 2V − 10 = 25 → V = 17.5 V, which is the voltage across the 5 A source.
+
+Q 3 | nwk | AC Circuits & Resonance
+The current i(t) through a 10Ω resistor in series with an inductance is given by i(t) = 3 + 4 sin(100t + 45°) + 4sin(300t + 60°) Amperes. The rms value of the current and the power dissipated in the circuit are
+(1) 40 A, 410W
+(2) 10A, 350W
+(3) 5A, 250W
+(4) 11A, 250W
+= 3
+~ For a sum of a dc term and sinusoids of different frequencies, I_rms = √(I_dc² + I₁²/2 + I₂²/2) = √(9 + 8 + 8) = √25 = 5 A. Only the resistor dissipates power (the inductance stores energy), so P = I_rms²R = 25 × 10 = 250 W.
+
+Q 4 | nwk | Network Laws & Theorems
+An ideal voltage source and current sources are connected in parallel. This circuit has
+(1) neither Thevenin nor Norton's equivalent
+(2) both Thevinin and Norton's equivalent
+(3) a Thevenin equivalent but not Norton's equivalent
+(4) a Norton's equivalent but not Thevenin equivalent
+= 3
+~ An ideal voltage source fixes the terminal voltage whatever current sources are in parallel with it, so the combination is just that voltage source: a Thevenin equivalent with V_th = V and R_th = 0. A Norton equivalent would need I_N = V_th/R_th = V/0, which is infinite, so it does not exist.
+
+Q 5 | nwk | Transients & Laplace Analysis
+A transient current in a network is i(t) = 2e⁻ᵗ − e⁻⁵ᵗ, t ≥ 0. The pole-zero configuration of I(s) is
+(1) poles : 1,5 zeros : 9
+(2) poles : −1, −5 zeros : −9
+(3) poles : 2, −1 zeros : −1, −5
+(4) poles : 2, −1 zeros: 1, 5
+= 2
+~ I(s) = 2/(s + 1) − 1/(s + 5) = (2s + 10 − s − 1)/((s + 1)(s + 5)) = (s + 9)/((s + 1)(s + 5)). So the poles are at s = −1 and −5 and the zero is at s = −9.
+
+Q 6 | nwk | Two-Port Networks & Network Synthesis
+F(s) = (s+1)(s+3)/(s(s+2)) represents an
+(1) RC impedance and an RL admittance
+(2) RL admittance
+(3) RC impedance
+(4) RC admittance
+= 1
+~ The poles (0, −2) and zeros (−1, −3) are simple, lie on the negative real axis and alternate, with a pole nearest the origin, and F(0) = ∞ > F(∞) = 1: these are the properties of an RC driving-point impedance, which are exactly those of an RL driving-point admittance. Expanding, F(s) = 1 + 1.5/s + 0.5/(s + 2): as an impedance this is 1 Ω in series with a 2/3 F capacitor and a parallel 2 F, 0.25 Ω section; as an admittance it is 1 S in parallel with a 2/3 H inductor and a branch of 2 H in series with 4 Ω. So it represents both.
+
+Q 7 | nwk | Transients & Laplace Analysis
+The transfer function of a system Z(s) = V(s)/I(s)= s/(s+3). The system is at rest for t < 0. What will be the value of v(t) for t ≥ 0, if i(t) = 3 u(t), where u(t) is a step function
+(1) e⁻ᵗ
+(2) 4 e⁻ᵗ
+(3) 2 e⁻³ᵗ
+(4) 3e⁻³ᵗ
+= 4
+~ I(s) = 3/s, so V(s) = Z(s)I(s) = (s/(s + 3)) × (3/s) = 3/(s + 3). Taking the inverse Laplace transform, v(t) = 3e⁻³ᵗ for t ≥ 0.
+
+Q 8 | edv | Semiconductor Physics
+Doping materials are called impurities because they
+(1) change the temperature of the material
+(2) alter the crystal structure of the pure semiconductor
+(3) change the chemical properties of semiconductors
+(4) decrease the number of charge carriers
+= 3
+~ Dopants are foreign (group III or group V) atoms added to an otherwise pure (intrinsic) semiconductor, so the material is no longer chemically pure: its chemical make-up and hence its properties change, which is why they are called impurities. They sit substitutionally in the lattice in parts per million, so the crystal structure is not altered, and they increase (not decrease) the number of charge carriers.
+
+Q 9 | edv | IC Fabrication
+In IC technology, dry oxidation as compared to wet oxidation produces
+(1) superior quality oxide with a lower growth rate
+(2) superior quality oxide with a higher growth rate
+(3) inferior quality oxide with a lower growth rate
+(4) inferior quality oxide with a higher growth rate
+= 1
+~ Dry oxidation (Si + O₂ → SiO₂) grows a dense, low-defect oxide of high quality, used for MOS gate oxides, but it grows slowly. Wet oxidation (Si + 2H₂O → SiO₂ + 2H₂) is much faster because H₂O diffuses through the oxide more easily, but the oxide is less dense and is used for thick field oxides.
+
+Q 10 | anc | Transistor Amplifiers & Biasing
+In a transistor h_fe =50, h_ie=830Ω, h_oe=10⁻⁴ mho. Its output resistance when used in CB configuration is about
+(1) 2 MΩ
+(2) 2.5 MΩ
+(3) 500Ω
+(4) 500 KΩ
+= 4
+~ The common-base output admittance is h_ob = h_oe/(1 + h_fe) = 10⁻⁴/51 ≈ 1.96 × 10⁻⁶ mho. So the CB output resistance is 1/h_ob = 51/10⁻⁴ = 510 kΩ, i.e. about 500 kΩ, much higher than the CE value 1/h_oe = 10 kΩ.
+
+Q 11 | anc | Op-Amps & Linear ICs
+The circuit shown in the figure can be used as a
+(1) full wave rectifier
+(2) voltage to frequency converter
+(3) logarithmic amplifier
+(4) frequency to voltage converter
+= 3
+! img/m15e-q11.png
+~ The inverting input is a virtual ground, so the input current V_i/R flows through the feedback diode: V_i/R = I_s e^(V_D/V_T). Since V_o = −V_D, V_o = −V_T ln(V_i/(I_s R)), i.e. the output is proportional to the logarithm of the input, so the circuit is a logarithmic amplifier. (With the diode and R interchanged it would be an antilog amplifier.)
+
+Q 12 | nwk | Network Laws & Theorems
+KCL is a consequences of law of conservation of
+(1) flux
+(2) energy
+(3) potential
+(4) charge
+= 4
+~ Kirchhoff's current law says the currents entering a node sum to zero: charge can neither be created nor pile up at a node, so KCL follows from conservation of charge. KVL follows from conservation of energy.
+
+Q 13 | nwk | Network Laws & Theorems
+When a source is delivering maximum power to a load, the efficiency of the circuit
+(1) is always 50%
+(2) is always 75%
+(3) depends on the circuit parameters
+(4) is always 100%
+= 1
+~ Maximum power transfer occurs when R_L = R_th; the same current then flows through R_th and R_L, so the power lost inside the source equals the power delivered to the load. Hence the efficiency is P_L/(P_L + P_loss) = 1/2 = 50%.
+
+Q 14 | nwk | Network Laws & Theorems
+In the Thevenin equivalent circuit, V_th equals
+(1) short-circuit terminal voltage
+(2) open-circuit terminal voltage
+(3) net voltage available in the circuit
+(4) voltage of the source
+= 2
+~ The Thevenin voltage is the voltage that appears across the terminals of interest when the load is removed, i.e. the open-circuit terminal voltage. The short-circuit current gives the Norton current, and V_th/I_sc gives R_th.
+
+Q 15 | nwk | AC Circuits & Resonance
+For a series RLC circuit, the power factor at the lowest half power frequency is
+(1) 0.707 lagging
+(2) 0.5 leading
+(3) 1.0
+(4) 0.707 leading
+= 4
+~ At a half-power frequency the net reactance equals R in magnitude, so the impedance angle is 45° and the power factor is cos 45° = 0.707. Below resonance X_C > X_L, so the circuit is capacitive and the current leads: at the lower half-power frequency the power factor is 0.707 leading (it is 0.707 lagging at the upper one).
+
+Q 16 | nwk | AC Circuits & Resonance
+A series RLC circuit has a resonance frequency of 1 kHz and a quality factor Q = 100. If each of R, L and C is doubled from its original value, the new Q of the circuit
+(1) 200
+(2) 100
+(3) 25
+(4) 50
+= 4
+~ For a series RLC circuit Q = (1/R)√(L/C). Doubling R, L and C gives Q' = (1/(2R))√(2L/(2C)) = Q/2 = 100/2 = 50. (The resonance frequency also halves, to 1/(2π√(4LC)) = 500 Hz.)
+
+Q 17 | nwk | Transients & Laplace Analysis
+An inductance and a capacitance are connected in series. If a unit step voltage is applied across the combination, then the initial and final currents in the circuit will be
+(1) 0, ∞ respectively
+(2) 0, 0 respectively
+(3) ∞, ∞ respectively
+(4) ∞, 0 respectively
+= 2
+~ At t = 0⁺ the inductor does not allow its current to change suddenly, so it acts as an open circuit and i(0⁺) = 0. In the steady state the capacitor charges to the applied voltage and blocks dc, so the final current is also 0 (with ideal, lossless L and C the current would keep oscillating, but any resistance in a real circuit damps it to zero).
+
+Q 18 | nwk | Transients & Laplace Analysis
+The Laplace transform of the function i(t) is I(s) = (10s + 4)/(s(s+1)(s² + 4s + 5)). Its final value will be
+(1) 5/4
+(2) 4/5
+(3) 5
+(4) 4
+= 2
+~ The poles of sI(s) are at −1 and −2 ± j, all in the left half plane, so the final value theorem applies: i(∞) = lim_(s→0) sI(s) = lim_(s→0) (10s + 4)/((s + 1)(s² + 4s + 5)) = 4/(1 × 5) = 4/5.
+
+Q 19 | nwk | Two-Port Networks & Network Synthesis
+The network function F(s) = (s+2)/((s+1)(s+3)) Represents an
+(1) RC admittance and an RL impedance
+(2) RC impedance
+(3) RL impedance
+(4) RC impedance and an RL admittance
+= 4
+~ The poles (−1, −3) and the zero (−2) are simple, on the negative real axis and alternate, with a pole nearest the origin, and F(0) = 2/3 > F(∞) = 0. These are the properties of an RC driving-point impedance, which are exactly the properties of an RL driving-point admittance; e.g. F(s) = 0.5/(s + 1) + 0.5/(s + 3) is realised as two parallel RC sections in series. An RC admittance or RL impedance would need a zero nearest the origin.
+
+Q 20 | nwk | Two-Port Networks & Network Synthesis
+If a two-port network is reciprocal as well as symmetrical, which one of the following conditions true
+(1) Z_12 = Z_21 and Z_11 = Z_22
+(2) Z_11 = Z_21 and Z_12 = Z_22
+(3) Y_11 = Y_21 and Y_12 = Y_22
+(4) AD + BC = 1 and A = C
+= 1
+~ Reciprocity requires Z_12 = Z_21 (equivalently Y_12 = Y_21, or AD − BC = 1), and symmetry requires Z_11 = Z_22 (Y_11 = Y_22, or A = D). Option (1) states both conditions; option (4) has the wrong sign and the wrong parameters (it should be AD − BC = 1 and A = D).
+
+Q 21 | edv | Semiconductor Physics
+An intrinsic semiconductor at absolute zero temperature
+(1) has large number of holes
+(2) has a large number of electrons
+(3) behaves like an insulator
+(4) behaves like a metallic conductor
+= 3
+~ At 0 K no electron has the thermal energy to cross the band gap, so the valence band is completely full and the conduction band completely empty. With no free electrons or holes there is no conduction, and the intrinsic semiconductor behaves as an insulator.
+
+Q 22 | edv | Diodes & Transistors
+A diode clamper also referred to as a
+(1) series rectifier
+(2) series clamper
+(3) shunt rectifier
+(4) shunt clamper
+= 3
+~ A clamper is a capacitor in series with the signal followed by a diode connected in shunt across the output; the shunt diode conducts on one peak and charges the capacitor to the peak value, so it works as a shunt-diode (peak) rectifier, and this circuit is known as a shunt rectifier or dc restorer. "Series" and "shunt" are the usual names for the two kinds of clipper, not of clampers.
+
+Q 23 | edv | Diodes & Transistors
+The Ebers-Moll model is applicable to
+(1) Junction FET
+(2) UJT
+(3) NMOS
+(4) BJT
+= 4
+~ The Ebers-Moll model represents a bipolar junction transistor as two coupled back-to-back diodes (emitter-base and collector-base junctions) with dependent current sources α_F I_F and α_R I_R. It describes the BJT in all regions (active, saturation, cut-off, reverse active).
+
+Q 24 | dge | Logic Families, Memories & Converters
+When the frequency of the input signal to a CMOS gate is increased, the average power dissipation
+(1) does not change
+(2) increases
+(3) decreases
+(4) decreases exponentially
+= 2
+~ A static CMOS gate draws almost no current except while switching, so its power is mainly dynamic: P = C_L V_DD² f, plus a short-circuit term that also grows with f. Hence the average power dissipation increases (linearly) as the switching frequency increases.
+
+Q 25 | edv | IC Fabrication
+Photo masking
+(1) controls the depth of diffusion
+(2) is used to prevent ambient light shining on the silicon slice
+(3) is used in the process to remove selected regions of silicon oxide
+(4) reduce the size of the circuit elements
+= 3
+~ In photolithography the oxidised wafer is coated with photoresist and exposed to UV light through a mask; after developing, the oxide is etched away only in the unprotected regions. These windows in the SiO₂ define where diffusion or implantation takes place; the depth of diffusion is set by time and temperature, not by the mask.
+
+Q 26 | anc | Transistor Amplifiers & Biasing
+The self bias is used in amplifiers to
+(1) reduce the cost of the circuit
+(2) reduce the dc base current
+(3) make the operating point almost independent of β
+(4) limit the input ac signal going to the base terminal
+= 3
+~ In self bias (voltage-divider bias with an emitter resistor R_E), any rise in I_C raises the drop across R_E and reduces V_BE, which pulls I_C back. When (1 + β)R_E ≫ R_th, I_C ≈ (V_th − V_BE)/R_E, so the Q-point becomes almost independent of β and of temperature.
+
+Q 27 | anc | Transistor Amplifiers & Biasing
+The h- parameter equivalent circuit of a BJT is valid for
+(1) low frequency, large signal operation
+(2) low frequency, small signal operation
+(3) high frequency, small signal operation
+(4) high frequency, large signal operation
+= 2
+~ The h-parameter model linearises the transistor about its Q-point, so it holds only for small signals, and it ignores the junction capacitances, so it holds only at low (mid-band) frequencies. At high frequencies the hybrid-π model with C_π and C_μ is used instead.
+
+Q 28 | anc | Feedback, Oscillators & Power Supplies
+In a centre-tap full wave rectifier, V_m is the peak voltage between the centre-tap and one of the secondary. The maximum voltage across the reverse biased diode is
+(1) V_m
+(2) 2 V_m
+(3) V_m/2
+(4) 3 V_m
+= 2
+~ When one diode conducts, its cathode (and the load) is at about +V_m, while the anode of the other diode is at the opposite end of the secondary, at −V_m. The non-conducting diode therefore has V_m − (−V_m) = 2V_m across it, so the peak inverse voltage is 2V_m (against V_m for a bridge rectifier).
+
+Q 29 | edv | Diodes & Transistors
+The circuit shown in figure is a
+(1) positive peak clipper
+(2) positive clamper
+(3) differentiator
+(4) negative clamper
+= 2
+! img/m15e-q29.png
+~ The diode has its anode at ground and its cathode at the output, so it conducts whenever v_o tries to go negative. On the negative peak of the input the capacitor charges to V_m, after which v_o = v_i + V_m: the waveform is shifted up so that its negative peak sits at 0 and it swings from 0 to 2V_m. A circuit that shifts the signal upward is a positive clamper; reversing the diode gives a negative clamper.
+
+Q 30 | anc | Transistor Amplifiers & Biasing
+The gain of a transistor amplifier falls at high frequency due to the
+(1) coupling capacitor at the output
+(2) skin effect
+(3) internal capacitances of device
+(4) coupling capacitor at the input
+= 3
+~ At high frequencies the transistor's junction capacitances (C_π, C_μ, magnified by the Miller effect) and stray capacitances have low reactance and shunt the signal, so the gain falls. The coupling and bypass capacitors act as short circuits at high frequency; they are what cause the fall in gain at low frequencies.
+
+Q 31 | anc | Transistor Amplifiers & Biasing
+Darlington pair consists of the following two stages
+(1) both CE
+(2) CE and CB
+(3) CE and CC
+(4) both CC
+= 4
+~ In a Darlington pair the emitter of the first transistor drives the base of the second, and the output is taken from the second emitter, so it is two emitter followers (common-collector stages) in cascade. The combination has current gain ≈ β₁β₂, very high input impedance and voltage gain slightly less than 1.
+
+Q 32 | anc | Feedback, Oscillators & Power Supplies
+The voltage gain of an amplifier is 100. On applying negative feedback with β = 0.03, its gain will reduce to
+(1) 50
+(2) 2.5
+(3) 3.0
+(4) 25
+= 4
+~ With negative feedback A_f = A/(1 + Aβ) = 100/(1 + 100 × 0.03) = 100/(1 + 3) = 100/4 = 25.
+
+Q 33 | anc | Transistor Amplifiers & Biasing
+The main function of the transformer used in the output of a power amplifier is
+(1) to step up the voltage
+(2) to step down the voltage
+(3) to match the load impedance with dynamic output resistance of the transistor
+(4) to increase voltage gain
+= 3
+~ The output transformer reflects the load to its primary as R_L' = (N₁/N₂)² R_L, so a low-impedance load such as a loudspeaker appears as the optimum load for the transistor. This impedance matching gives maximum power transfer; it also keeps the dc collector current out of the load.
+
+Q 34 | anc | Transistor Amplifiers & Biasing
+The bandwidth of a double tuned transformer coupled amplifier can be adjusted by varying the
+(1) coupling coefficient
+(2) value of the inductance
+(3) value of the emitter biasing resistance
+(4) value of resistance
+= 1
+~ In a double tuned amplifier the shape of the response depends on the coupling coefficient k between the two tuned circuits: below critical coupling (k < 1/Q) the response has a single narrow peak, at critical coupling it is flat-topped, and above critical coupling it has two humps and a wider bandwidth. So the bandwidth is adjusted by changing k, without retuning the circuits.
+
+Q 35 | anc | Transistor Amplifiers & Biasing
+Crossover distortion results in
+(1) class B output stage
+(2) common emitter output stage
+(3) class AB output stage
+(4) class A output stage
+= 1
+~ In a class B push-pull stage each transistor is biased at cut-off and needs about 0.7 V of V_BE before it conducts. Near the zero crossings of the input neither transistor conducts, which produces crossover distortion; class AB bias (a small forward bias on both transistors) is used to reduce it.
+
+Q 36 | anc | Feedback, Oscillators & Power Supplies
+In transistor series voltage regulator the transistor behaves like a variable
+(1) resistor
+(2) capacitor
+(3) inductor
+(4) resistor and capacitor
+= 1
+~ The series pass transistor carries the full load current, and the feedback (error) circuit changes its base drive so that its V_CE absorbs any change in input voltage or load current. It therefore acts as a variable resistance in series with the load, which keeps the output voltage constant.
+
+Q 37 | nwk | Network Laws & Theorems
+If b is the number of branches and n the number of nodes in a connected graph, the number of links corresponding to any tree of the graph
+(1) b − n − 1
+(2) b − n + 1
+(3) n − b − 1
+(4) n + 1 − b
+= 2
+~ A tree of a connected graph with n nodes has n − 1 branches (twigs). The remaining branches are links, so the number of links = b − (n − 1) = b − n + 1, which is also the number of independent loops (meshes).
+
+Q 39 | nwk | Network Laws & Theorems
+Superposition theorem is not applicable to networks containing
+(1) nonlinear elements
+(2) dependent voltage sources
+(3) dependent current sources
+(4) transformers
+= 1
+~ Superposition needs the network to be linear (additive and homogeneous), so it fails when there are nonlinear elements such as diodes. Linear dependent sources and transformers are allowed; dependent sources are simply kept active while each independent source acts alone.
+
+Q 40 | nwk | AC Circuits & Resonance
+In an RLC parallel circuit the impedance at resonance is
+(1) ∞
+(2) minimum
+(3) maximum
+(4) zero
+= 3
+~ At resonance the susceptances of L and C cancel, so the admittance of the parallel RLC circuit is only G = 1/R, its minimum value. Hence the impedance is maximum and equal to R; it would be ∞ only for an ideal lossless LC tank (R → ∞).
+
+Q 41 | nwk | Two-Port Networks & Network Synthesis
+Any two-port network having a 6dB loss will give
+(1) an output power which is 0.707 of the input power
+(2) an output power which is one quarter of the input power
+(3) an output power which is one half of the input power
+(4) an output voltage which is 0.707 of the input voltage
+= 2
+~ A loss of 6 dB means 10 log₁₀(P_in/P_out) = 6, so P_out/P_in = 10^(−0.6) = 0.251 ≈ 1/4. A 3 dB loss would give half the power (and 0.707 of the voltage); 6 dB corresponds to half the voltage.
+
+Q 42 | nwk | Two-Port Networks & Network Synthesis
+For a reciprocal network, the two port h- parameters are related as follows
+(1) h_12 = h_21
+(2) h_11h_22 − h_21h_12 = 1
+(3) h_11h_22 − h_21h_12 = −1
+(4) h_12 = − h_21
+= 4
+~ In terms of Z-parameters, h_12 = Z_12/Z_22 and h_21 = −Z_21/Z_22. Reciprocity means Z_12 = Z_21, so h_12 = −h_21. The condition h_11h_22 − h_12h_21 = 1 is the condition for a symmetrical network.
+
+Q 43 | edv | Diodes & Transistors
+Which of the following is not associated with a PN junction?
+(1) depletion capacitance
+(2) junction capacitance
+(3) charge storage capacitance
+(4) channel length modulation
+= 4
+~ A PN junction has a depletion (transition or junction) capacitance under reverse bias and a diffusion (charge storage) capacitance under forward bias. Channel length modulation is a MOSFET effect: in saturation the effective channel length shrinks as V_DS increases, so I_D rises slightly.
+
+Q 44 | edv | Diodes & Transistors
+Zener diode break down voltage———with temperature
+(1) decreases
+(2) constant
+(3) increases
+(4) may increase or decrease
+= 1
+~ In true Zener breakdown (heavily doped diodes, V_Z below about 5 V) the electrons cross the junction by tunnelling; a rise in temperature gives the valence electrons more energy and narrows the band gap, so breakdown occurs at a lower voltage: the Zener breakdown voltage decreases with temperature (negative temperature coefficient). Note, however, that diodes sold as "Zeners" above about 6 V break down by avalanche, whose voltage increases with temperature, so many textbooks would accept "may increase or decrease". (Official final key; some sources differ.)
+
+Q 45 | edv | Diodes & Transistors
+The output V-I characteristics of an enhancement type MOSFET has
+(1) an ohmic region at low voltage value followed by a saturation region at higher voltages
+(2) an ohmic region at large voltage values preceded by a saturation region at lower voltages
+(3) only an ohmic region
+(4) only a saturation region
+= 1
+~ For V_GS > V_T, at small V_DS (V_DS < V_GS − V_T) the channel behaves as a voltage-controlled resistor and I_D rises almost linearly: the ohmic region. Once V_DS ≥ V_GS − V_T the channel pinches off at the drain end and I_D becomes nearly constant: the saturation region at higher voltages.
+
+Q 46 | anc | Transistor Amplifiers & Biasing
+Typical value of h_ie is
+(1) 1KΩ
+(2) 1 Ω
+(3) 100 KΩ
+(4) 50 Ω
+= 1
+~ h_ie is the CE input resistance (base-emitter resistance), h_ie ≈ βV_T/I_C. For β = 100, V_T = 25 mV and I_C = 2.5 mA, h_ie = 100 × 25 mV/2.5 mA = 1 kΩ; typical values are of the order of 1 kΩ (textbook value 1.1 kΩ).
+
+Q 48 | anc | Op-Amps & Linear ICs
+The ideal Op-Amp has following characteristics
+(1) R_i = ∞, A = ∞, R_0 = 0
+(2) R_i = 0, A = ∞, R_0 = 0
+(3) R_i = ∞, A = ∞, R_0 = ∞
+(4) R_i = 0, A = ∞, R_0 = ∞
+= 1
+~ An ideal op-amp has infinite input resistance (it draws no input current), infinite open-loop voltage gain, and zero output resistance (its output voltage does not depend on the load). It also has infinite bandwidth and CMRR and zero offset.
+
+Q 49 | anc | Feedback, Oscillators & Power Supplies
+In a half-wave rectifier, if an a.c supply is 60Hz, then the a.c ripple at output will be
+(1) 6Hz
+(2) 30Hz
+(3) 60Hz
+(4) 120Hz
+= 3
+~ A half-wave rectifier passes only one half-cycle in every cycle of the supply, so the output has one pulse per cycle and its fundamental ripple frequency equals the supply frequency, 60 Hz. A full-wave rectifier gives two pulses per cycle, i.e. 120 Hz.
+
+Q 50 | anc | Transistor Amplifiers & Biasing
+Maximum theoretical conversion efficiency of class B amplifier is
+(1) 7.85%
+(2) 25%
+(3) 50%
+(4) 78.5%
+= 4
+~ For a class B push-pull stage, P_dc = 2V_CC V_p/(πR_L) and P_ac = V_p²/(2R_L), so η = (π/4)(V_p/V_CC). The maximum, with V_p = V_CC, is π/4 = 78.5%. A series-fed class A stage gives 25% and a transformer-coupled class A stage 50%.
+
+Q 51 | dge | Number Systems & Logic Gates
+In a logic equation A(A + B̄C̄ + C) + B̄(C̄ + Ā + BC) + (A + B̄C + AC̄) = 1, if C = Ā then
+(1) A + B = 1
+(2) Ā + B = 1
+(3) A + B̄ = 1
+(4) A = 1
+= 3
+~ A(A + B̄C̄ + C) = A by absorption, and B̄(C̄ + Ā + BC) = B̄C̄ + ĀB̄ because B̄B = 0. The whole left side is then A + B̄C̄ + ĀB̄ + B̄C + AC̄; AC̄ is absorbed by A, B̄C̄ + B̄C = B̄, and ĀB̄ is absorbed by B̄, leaving A + B̄. So the equation reduces to A + B̄ = 1 (the condition C = Ā does not change this).
+
+Q 52 | dge | Number Systems & Logic Gates
+The maximum positive and negative numbers which can be represented in 2's compliment form using n-bit are
+(1) + (2ⁿ⁻¹ − 1), − (2ⁿ⁻¹ − 1)
+(2) + (2ⁿ⁻¹ − 1), − 2ⁿ⁻¹
+(3) + 2ⁿ⁻¹, −2ⁿ⁻¹
+(4) none
+= 2
+~ An n-bit 2's complement number ranges from −2ⁿ⁻¹ (1 followed by all 0s) to +(2ⁿ⁻¹ − 1) (0 followed by all 1s); for example 8 bits give −128 to +127. Option (1) is the symmetric range of sign-magnitude and 1's complement, which have two codes for zero.
+
+Q 54 | dge | Combinational & Sequential Circuits
+In a positive edge triggered JK flip-flop, the present state Q_n is set to high (1). If the inputs J=A and K=B then next state Q_(n+1) will be
+(1) B̄
+(2) Ā
+(3) A + B
+(4) A
+= 1
+~ The JK characteristic equation is Q_(n+1) = J·Q̄_n + K̄·Q_n. With Q_n = 1 this becomes Q_(n+1) = J·0 + K̄·1 = K̄ = B̄. Check: if B = 0 the flip-flop either holds or sets, so Q stays 1; if B = 1 it either resets or toggles, so Q becomes 0.
+
+Q 55 | dge | Combinational & Sequential Circuits
+In PLA both AND and OR arrays are
+(1) Non-programmable
+(2) Programmable
+(3) 1 and 2
+(4) None
+= 2
+~ A programmable logic array (PLA) has both a programmable AND array and a programmable OR array. A PAL has a programmable AND array with a fixed OR array, and a PROM has a fixed AND array (a full decoder) with a programmable OR array.
+
+Q 56 | dge | Logic Families, Memories & Converters
+Pick the wrong statement of CMOS
+(1) Low power dissipation
+(2) Poor Noise immunity
+(3) High packing density
+(4) Wide range of supply voltages
+= 2
+~ CMOS has excellent noise immunity: its output swings almost rail to rail and its noise margins are about 30–45% of V_DD, far better than TTL. Its very low static power dissipation, high packing density and wide supply range (3–15 V for the 4000 series) are all genuine features, so "poor noise immunity" is the wrong statement.
+
+Q 57 | sgs | Fourier, Laplace & Z-Transforms
+The signal e⁻ᵗu(t) is applied as input to an L-section RC lowpass filter with time-constant equal to 1. The energy spectral density at the output of the filter at the 3-db cutoff frequency of the filter is
+(1) 1
+(2) 0.5
+(3) 0.25
+(4) 1.5
+= 3
+~ The input has X(ω) = 1/(1 + jω), so its energy spectral density is |X(ω)|² = 1/(1 + ω²). The RC filter has H(ω) = 1/(1 + jωRC) = 1/(1 + jω) with RC = 1, so |H(ω)|² = 1/(1 + ω²) and the 3-dB cutoff is ω_c = 1/RC = 1 rad/s. Output ESD = |H(ω)|²|X(ω)|² = 1/(1 + ω²)²; at ω = 1 this is (1/2)² = 0.25.
+
+Q 58 | sgs | Signals & LTI Systems
+Two LTI systems with impulse responses h_1(t) and h_2(t) are connected in series(cascade), the impulse response of the overall system is
+(1) h_1(t) + h_2(t)
+(2) h_1(t)h_2(t)/(h_1(t) + h_2(t))
+(3) h_1(t)*h_2(t)
+(4) h_1(t).h_2(t)
+= 3
+~ In a cascade the output of the first system, x(t)*h_1(t), is the input of the second, so y(t) = x(t)*h_1(t)*h_2(t) and the overall impulse response is the convolution h_1(t)*h_2(t) (equivalently H(s) = H_1(s)H_2(s)). The sum h_1(t) + h_2(t) is for a parallel connection, and the plain product (option 4) is not correct in the time domain.
+
+Q 59 | sgs | Signals & LTI Systems
+Which of the following system is causal?
+(1) h(n) = n(½)ⁿ u(n+1)
+(2) y(n) = x²(n) − x(n+1)
+(3) y(n) = x(−n) + x(2n−1)
+(4) h(n) = n(½)ⁿ u(n)
+= 4
+~ An LTI system is causal when h(n) = 0 for n < 0; n(½)ⁿu(n) is zero for all negative n, so system (4) is causal. In (1), u(n+1) lets n = −1 through and h(−1) = (−1)(½)⁻¹ = −2 ≠ 0, so it is non-causal; (2) needs the future input x(n+1), and (3) needs future inputs too (at n = −1 it needs x(1)).
+
+Q 60 | sgs | Signals & LTI Systems
+Two parallel connected discrete time systems with impulse responses h_1(n) and h_2(n) can be replaced by a single equivalent discrete time system with impulse response,
+(1) h_1(n) * h_2(n)
+(2) h_1(n) + h_2(n)
+(3) h_1(n) − h_2(n)
+(4) h_1(n) * [h_1(n) + h_2(n)]
+= 2
+~ In a parallel connection both systems receive the same input and their outputs are added: y(n) = x(n)*h_1(n) + x(n)*h_2(n) = x(n)*[h_1(n) + h_2(n)], so the equivalent impulse response is h_1(n) + h_2(n). Convolution h_1(n)*h_2(n) is the result for a cascade connection.
+
+Q 61 | sgs | Fourier, Laplace & Z-Transforms
+For a stable LTI discrete time system, poles should lie ____ and unit circle should be ____
+(1) Outside unit circle, included in ROC
+(2) Inside unit circle, outside of ROC
+(3) Inside unit circle, included in ROC
+(4) Outside unit circle, outside of ROC
+= 3
+~ A causal discrete-time LTI system is BIBO stable when all its poles lie inside the unit circle |z| = 1. In general, stability means h(n) is absolutely summable, which is the same as the ROC of H(z) including the unit circle (so that the DTFT H(e^(jω)) exists).
+
+Q 62 | sgs | Fourier, Laplace & Z-Transforms
+The discrete time Fourier transform of the signal, x(n) = 0.5^(n−1) u(n−1) is,
+(1) e^(−jω)/(1 − 0.5e^(−jω))
+(2) e^(−jω)(1 − 0.5e^(−jω))
+(3) 0.5e^(−jω)/(1 − 0.5e^(−jω))
+(4) 0.5e^(jω)/(1 − 0.5e^(−jω))
+= 1
+~ 0.5ⁿu(n) has DTFT 1/(1 − 0.5e^(−jω)), and x(n) is this sequence delayed by one sample. A delay of one sample multiplies the transform by e^(−jω), so X(e^(jω)) = e^(−jω)/(1 − 0.5e^(−jω)). Option (3) would be the DTFT of 0.5ⁿu(n−1) = 0.5·0.5^(n−1)u(n−1).
+
+Q 63 | cts | Time Response & Stability
+The characteristic polynomial of a system q(s) = 2s⁵ + s⁴ + 4s³ + 2s² + 2s + 1. The system is
+(1) Stable
+(2) Marginally stable
+(3) Unstable
+(4) Oscillatory
+= 3
+~ Routh array: s⁵ row 2, 4, 2; s⁴ row 1, 2, 1; s³ row (1·4 − 2·2)/1 = 0 and (1·2 − 2·1)/1 = 0, a row of zeros. The auxiliary polynomial is s⁴ + 2s² + 1 = (s² + 1)², and indeed q(s) = (2s + 1)(s² + 1)², so the roots are −0.5 and ±j, each of ±j repeated twice. Repeated roots on the jω-axis give terms like t·sin t that grow without bound, so the system is unstable, not merely marginally stable.
+
+Q 64 | cts | Transfer Functions & Block Diagrams
+The system mode described by this equation X = [0, 1; 2, −3] x + [0; 1] u, y = [1, 1] x is
+(1) Controllable and observable
+(2) Controllable but not observable
+(3) Observable but not controllable
+(4) Neither controllable nor observable
+= 1
+~ In the matrices a semicolon starts a new row: A = [0, 1; 2, −3] has first row 0, 1 and second row 2, −3, B = [0; 1] is a column (0 above 1), C = [1, 1] is a row, and X on the left stands for the state derivative ẋ. AB = [1; −3], so the controllability matrix [B AB] = [0, 1; 1, −3] has determinant 0·(−3) − 1·1 = −1 ≠ 0: controllable. CA = [2, −2], so the observability matrix [C; CA] = [1, 1; 2, −2] has determinant −2 − 2 = −4 ≠ 0: observable. Check: the transfer function C(sI − A)⁻¹B = (s + 1)/(s² + 3s − 2) has no pole-zero cancellation.
+
+Q 65 | dge | Number Systems & Logic Gates
+The number of switching functions of 3 variables is
+(1) 8
+(2) 64
+(3) 128
+(4) 256
+= 4
+~ Three variables give 2³ = 8 rows in the truth table, and each row's output can independently be 0 or 1. The number of distinct switching functions is therefore 2^(2³) = 2⁸ = 256 (in general 2^(2ⁿ) for n variables).
+
+Q 66 | dge | Combinational & Sequential Circuits
+In JK Flip flop if we input K with the inverted from of what we input J, the resulted flip flop is
+(1) SR flip flop
+(2) JK flip-flop itself
+(3) D flip flop
+(4) T flip flop
+= 3
+~ With K = J̄ only two input combinations occur: J = 1, K = 0 sets Q to 1, and J = 0, K = 1 resets Q to 0. So Q_(n+1) = J, which is a D flip-flop with D = J. Tying J = K instead gives a T flip-flop.
+
+Q 67 | dge | Microprocessors & Microcontrollers
+How many and what are the machine cycles needed for execution of PUSH B?
+(1) 2, fetch and memory write
+(2) 3, fetch and 2 memory write
+(3) 3, fetch, memory write and read
+(4) 3, fetch and 2 memory read
+= 2
+~ PUSH B in the 8085 takes 12 T-states in 3 machine cycles: a 6-T opcode fetch (during which SP is decremented), then two 3-T memory write cycles that store B at SP − 1 and C at SP − 2. No memory read is needed because the instruction is a single byte.
+
+Q 68 | dge | Logic Families, Memories & Converters
+For successive approximation with N output bits, number of clocks required is
+(1) N + 2 or N
+(2) 2N + 1
+(3) 2ᴺ
+(4) 2ᴺ − 1
+= 1
+~ A successive-approximation ADC decides one bit per clock, starting from the MSB, so an N-bit conversion takes N clock pulses; practical SAR converters often add one clock to start (clear the register) and one to load the result, giving N + 2. The 2ᴺ − 1 clocks in the worst case belong to the counter-type (digital ramp) ADC.
+
+Q 69 | dge | Combinational & Sequential Circuits
+The minimum number of flip-flops required in a counter to count 60 pulses is
+(1) 4
+(2) 6
+(3) 8
+(4) 10
+= 2
+~ n flip-flops give 2ⁿ distinct states, so we need the smallest n with 2ⁿ ≥ 60. 2⁵ = 32 is too few and 2⁶ = 64 is enough, so 6 flip-flops are needed (a mod-60 counter).
+
+Q 70 | dge | Microprocessors & Microcontrollers
+What is the addressing mode used in instruction LXI B0345 H ?
+(1) Direct
+(2) Indirect
+(3) Indexed
+(4) Immediate
+= 4
+~ LXI B, 0345H loads the 16-bit data 0345H, which is written in the instruction itself, into register pair BC (B = 03H, C = 45H). Data supplied as part of the instruction is immediate addressing; the "I" in LXI stands for immediate.
+
+Q 71 | dge | Microprocessors & Microcontrollers
+The 8255 programmable peripheral interface consist of ____ 8-bit ports
+(1) 2
+(2) 3
+(3) 4
+(4) 6
+= 2
+~ The 8255 PPI has three 8-bit I/O ports: Port A, Port B and Port C, with Port C usable as two 4-bit halves (upper and lower) for handshake signals. That gives 24 programmable I/O lines.
+
+Q 72 | dge | Microprocessors & Microcontrollers
+Ready signal is used to
+(1) Synchronize fast peripherals with microprocessor
+(2) Synchronize slow peripherals with microprocessor
+(3) Send request to microprocessor for direct memory access
+(4) Send request to microprocessor for interrupt subroutines
+= 2
+~ A slow memory or I/O device pulls the 8085's READY input low, and the processor inserts wait states until READY goes high again, so READY synchronizes slow peripherals with the faster microprocessor. DMA requests use the HOLD pin, and interrupts use INTR and the RST pins.
+
+Q 73 | dge | Microprocessors & Microcontrollers
+When the reset pin is activated, the program counter is loaded with
+(1) 1000H
+(2) 2000H
+(3) 3000H
+(4) 0000H
+= 4
+~ When RESET IN of the 8085 is activated, the program counter is cleared to 0000H (and the interrupts are disabled), so the processor fetches its first instruction from address 0000H once reset is removed. That is why monitor programs and boot code are placed at the bottom of memory.
+
+Q 74 | dge | Combinational & Sequential Circuits
+An ‘N’ bit Johnson counter can count ____ states
+(1) N
+(2) 2N
+(3) N−1
+(4) 2N−1
+= 2
+~ In a Johnson (twisted-ring) counter the complemented output of the last flip-flop is fed back to the first, so the pattern fills with 1s and then with 0s; N flip-flops therefore go through 2N states (mod-2N). A ring counter with N flip-flops has only N states.
+
+Q 75 | dge | Number Systems & Logic Gates
+The 2's compliment of the given number 1011001 is
+(1) 1011000H
+(2) 1011001H
+(3) 1010110H
+(4) None.
+= 4
+~ The 1's complement of 1011001 is 0100110, and adding 1 gives the 2's complement 0100111. This is not among options (1)–(3) (which are also marked H for hexadecimal), so the answer is None.
+
+Q 76 | dge | Combinational & Sequential Circuits
+The n-stage register results in a delay of
+(1) (n−1) T
+(2) 2nT
+(3) n²T
+(4) nT/2
+= 1
+~ In an n-stage serial shift register clocked with period T, a bit moves one stage per clock pulse. Counting from the pulse that loads the bit into the first stage, it needs (n − 1) more pulses to reach the last stage, so it appears at the output (n − 1)T later; this is TSPSC's answer. Many textbooks count from the serial input instead (n pulses to pass through n stages) and give the delay as nT, which is not among the options; 2nT, n²T and nT/2 do not fit a register that moves data one stage per clock under either way of counting. (Official final key; some sources differ.)
+
+Q 77 | dge | Number Systems & Logic Gates
+n-bit variables have 2ⁿ possible combinations and each of these possible combinations is called
+(1) Maxterm
+(2) Minterm
+(3) Product of sum
+(4) Sum of product
+= 2
+~ Each of the 2ⁿ input combinations of n variables corresponds to a product term containing every variable once (complemented where the bit is 0), called a minterm or standard product, numbered m_0 to m_(2ⁿ−1). Sum of products and product of sums are forms of a whole expression, not names for a single combination.
+
+Q 78 | dge | Number Systems & Logic Gates
+What is the gray code of (10010)_2
+(1) 10011
+(2) 00100
+(3) 11111
+(4) 11011
+= 4
+~ The Gray code MSB equals the binary MSB, and each following Gray bit is the XOR of adjacent binary bits: g4 = 1, g3 = 1⊕0 = 1, g2 = 0⊕0 = 0, g1 = 0⊕1 = 1, g0 = 1⊕0 = 1. So (10010)_2 → 11011 in Gray code.
+
+Q 79 | dge | Number Systems & Logic Gates
+The 2's complement representation of the decimal number −4 is
+(1) 1000
+(2) 1100
+(3) 1011
+(4) 1010
+= 2
+~ In 4 bits, +4 = 0100; inverting gives 1011 (1's complement) and adding 1 gives 1100. Check: the MSB weight is −8, so 1100 = −8 + 4 = −4. Option (3), 1011, is only the 1's complement.
+
+Q 80 | sgs | Fourier, Laplace & Z-Transforms
+The Fourier series of a periodic signal x(t) with period T will not converge if
+(1) |x(t)| is not finite at all values of t
+(2) x(t) has more than one maxima in one period T
+(3) x(t) is not continuous at all points
+(4) x(t) is not a band limited signal
+= 1
+~ By the Dirichlet conditions the Fourier series converges if, over one period, x(t) is absolutely integrable (∫|x(t)|dt finite; textbooks often state this simply as x(t) being finite), has a finite number of maxima and minima, and has a finite number of finite discontinuities. A signal whose magnitude is not finite breaks the first condition, so convergence is no longer guaranteed. Several maxima (any finite number is allowed) or a finite number of discontinuities (where the series converges to the midpoint) do not stop convergence, and band-limiting is not required.
+
+Q 81 | sgs | Signals & LTI Systems
+When the input to an LTI system is a unit step function, the output is a bounded signal. Which of the following inferences is correct?
+(1) The system is not necessarily stable
+(2) The system is not definitely stable
+(3) The system is definitely unstable
+(4) None of the above
+= 4
+~ BIBO stability needs a bounded output for every bounded input (∫|h(t)|dt finite); one bounded input giving a bounded output proves nothing. For example H(s) = s/(s² + 1) has the bounded step response sin t, yet the bounded input sin t gives the unbounded output (t/2)sin t; on the other hand every stable system also has a bounded step response, so option (3) is false and the step test cannot decide either way. The sound inference is therefore option (1), and option (2) says the same thing in other words. TSPSC's final key is (4), None of the above; the most likely reason is that (1) and (2) cannot both be the single correct answer, but most textbooks would accept (1). (Official final key; some sources differ.)
+
+Q 82 | sgs | Signals & LTI Systems
+Which of the following signal is an example for deterministic signal?
+(1) step
+(2) ramp
+(3) exponential
+(4) all of the above
+= 4
+~ A deterministic signal is one whose value at every instant is known exactly from a mathematical expression. The unit step, ramp and exponential are all defined by such formulas, so all three are deterministic; a random signal (such as noise) can only be described statistically.
+
+Q 83 | sgs | Fourier, Laplace & Z-Transforms
+The Z-transform of a⁻ⁿ u(−n−1) is,
+(1) −z/(z − 1/a)
+(2) z/(z − 1/a)
+(3) z/(z − a)
+(4) −z/(z − a)
+= 1
+~ Write a⁻ⁿ = bⁿ with b = 1/a. Then X(z) = Σ (n = −∞ to −1) bⁿz⁻ⁿ = Σ (m = 1 to ∞) (z/b)ᵐ = (z/b)/(1 − z/b) = −z/(z − b) for |z| < |b|. So X(z) = −z/(z − 1/a) with ROC |z| < 1/|a|. Option (2) is the transform of the right-sided sequence a⁻ⁿu(n).
+
+Q 84 | sgs | Fourier, Laplace & Z-Transforms
+The ROC of the signal x(n) = aⁿ for −5 < n < 5 is,
+(1) entire z-plane
+(2) entire z-plane except z=0 and z=∞
+(3) entire z-plane except z=0
+(4) entire z-plane except z=∞
+= 2
+~ x(n) is non-zero only for n = −4 to 4, a finite-length two-sided sequence, so X(z) = Σ (n = −4 to 4) aⁿz⁻ⁿ converges everywhere except where a single term blows up. The terms with n > 0 contain negative powers of z and are infinite at z = 0, and the terms with n < 0 contain positive powers of z and are infinite at z = ∞, so the ROC is the entire z-plane except z = 0 and z = ∞.
+
+Q 85 | sgs | Fourier, Laplace & Z-Transforms
+If a signal is folded about the origin in time, then its
+(1) magnitude spectrum undergoes change in sign
+(2) phase spectrum undergoes change in sign
+(3) magnitude remains unchanged
+(4) both 2 and 3
+= 4
+~ Folding gives x(−t) ↔ X(−ω), and for a real signal X(−ω) = X*(ω). Hence |X(−ω)| = |X(ω)|, so the magnitude spectrum is unchanged, while ∠X(−ω) = −∠X(ω), so the phase spectrum changes sign.
+
+Q 86 | cts | Time Response & Stability
+If s³+3s²+4s+A=0, then all the roots of this equation are in the left half plane provide that
+(1) A > 12
+(2) −3 < A < 4
+(3) 0 < A < 12
+(4) 5 < A < 12
+= 3
+~ Routh array: s³ row 1, 4; s² row 3, A; s¹ row (3·4 − A)/3 = (12 − A)/3; s⁰ row A. All roots are in the left half plane when the first column has no sign change, i.e. 12 − A > 0 and A > 0, so 0 < A < 12. At A = 12 the auxiliary equation 3s² + 12 = 0 gives roots ±j2 on the jω-axis.
+
+Q 87 | cts | Frequency Response & Compensation
+The gain margin of the system with open loop transfer function G(s)H(s) = 2(1+s)/s²
+(1) ∞
+(2) 0
+(3) 1
+(4) −∞
+= 2
+~ G(jω)H(jω) = 2(1 + jω)/(jω)², so |GH| = 2√(1 + ω²)/ω² and ∠GH = −180° + tan⁻¹ω. Setting ∠GH = −180° gives tan⁻¹ω = 0, i.e. ω_pc = 0, where |GH| → ∞; the formula then gives gain margin = 1/|GH(jω_pc)| = 1/∞ = 0 (as a ratio), which is TSPSC's answer. However, for every ω > 0 the phase is above −180° (it only approaches −180° as ω → 0), so there is no true phase crossover, and with an extra gain K the closed-loop equation s² + 2Ks + 2K = 0 stays stable for every K > 0; for this reason many books give the gain margin as ∞ (option 1). (Official final key; some sources differ.)
+
+Q 88 | cts | Frequency Response & Compensation
+The Nyquist plot of a loop transfer function G(jω)H(jω) of a system encloses the (−1, j0) point, the gain margin of the system is
+(1) Less than zero
+(2) Zero
+(3) Greater than zero
+(4) Infinity
+= 1
+~ For a minimum-phase open-loop system, a Nyquist plot that encloses (−1, j0) crosses the negative real axis beyond −1, i.e. |GH| > 1 at the phase-crossover frequency. Gain margin = 20 log(1/|GH(jω_pc)|) is then negative (less than zero dB) and the closed-loop system is unstable.
+
+Q 89 | dge | Number Systems & Logic Gates
+Number of NAND gates required for Ex-NOR implementation
+(1) 4
+(2) 6
+(3) 5
+(4) 8
+= 3
+~ Ex-OR needs 4 NAND gates: P = (AB)', then (A·P)' and (B·P)', and a fourth NAND of these two gives A⊕B. One more NAND used as an inverter turns this into Ex-NOR, so 5 NAND gates are needed (Ex-NOR can be made directly with 4 NOR gates).
+
+Q 90 | dge | Combinational & Sequential Circuits
+To implement n-bit parallel adder requires ____ Full adders
+(1) n
+(2) n − 1
+(3) n+1
+(4) none
+= 1
+~ A parallel (ripple-carry) adder uses one full adder per bit position, each adding A_i, B_i and the carry from the previous stage, so n bits need n full adders. If there is no input carry the LSB stage can be a half adder (n − 1 full adders plus one half adder), but the standard answer is n full adders.
+
+Q 91 | dge | Logic Families, Memories & Converters
+The most widely used bipolar technology for digital ICs
+(1) DTL
+(2) TTL
+(3) ECL
+(4) None
+= 2
+~ TTL (the 74 series and its Schottky versions) is the most widely used bipolar logic family because it gives a good balance of speed, power, fan-out and cost. ECL is faster but consumes much more power and is used only in special high-speed work, and DTL is obsolete.
+
+Q 92 | dge | Combinational & Sequential Circuits
+Output of JK flip flop toggles when
+(1) J=1, K=0
+(2) J=0, K=1
+(3) J=1, K=1
+(4) J=0, K=0
+= 3
+~ From Q_(n+1) = J·Q̄_n + K̄·Q_n, J = K = 1 gives Q_(n+1) = Q̄_n, so the output toggles on every clock. J = 1, K = 0 sets Q; J = 0, K = 1 resets it; J = K = 0 holds the present state.
+
+Q 93 | dge | Microprocessors & Microcontrollers
+The word size of 8085 microprocessor is
+(1) 4-bit
+(2) 16-bit
+(3) 20-bit
+(4) 8-bit
+= 4
+~ The 8085 has an 8-bit data bus, 8-bit ALU and 8-bit general-purpose registers, so its word size is 8 bits. The 16-bit figure refers to its address bus (64 KB of memory), not its word length.
+
+Q 94 | dge | Number Systems & Logic Gates
+The octal equivalent of the decimal number 375 is.
+(1) 560
+(2) 567
+(3) 565
+(4) none
+= 2
+~ Repeated division by 8: 375 ÷ 8 = 46 remainder 7, 46 ÷ 8 = 5 remainder 6, 5 ÷ 8 = 0 remainder 5. Reading the remainders from last to first gives (567)_8. Check: 5×64 + 6×8 + 7 = 320 + 48 + 7 = 375.
+
+Q 95 | dge | Logic Families, Memories & Converters
+Fan-out for the 74 series is
+(1) 4
+(2) 5
+(3) 8
+(4) 10
+= 4
+~ For standard 74-series TTL, I_OL(max) = 16 mA and I_IL(max) = 1.6 mA, so the LOW-state fan-out is 16/1.6 = 10; in the HIGH state I_OH/I_IH = 400 μA/40 μA = 10 as well. So one output can drive 10 standard TTL inputs.
+
+Q 96 | dge | Combinational & Sequential Circuits
+Multiplexer can be named as
+(1) Data Selector
+(2) One to many Circuit
+(3) Serial to parallel converter
+(4) None
+= 1
+~ A multiplexer routes one of its many data inputs to a single output according to its select lines, so it is called a data selector (many-to-one). The one-to-many circuit is the demultiplexer (data distributor), and serial-to-parallel conversion is done by a shift register.
+
+Q 97 | sgs | Signals & LTI Systems
+The fundamental period T of a periodic-continuous time signal x(t), is
+(1) the smallest positive constant satisfying the relation x(t) = x(t+mT) for every t and any integer m
+(2) the positive constant satisfying the relation x(t) = x(t+mT) for every t and any integer m
+(3) the largest positive constant satisfying the relation x(t) = x(t+mT) for any t and any integer m
+(4) the smallest positive integer satisfying the relation x(t) = x(t+mT) for any t and any m
+= 1
+~ If x(t) = x(t + T) for all t, then every integer multiple of T is also a period, so the fundamental period is the smallest positive value of T for which x(t) = x(t + mT) holds for every t and any integer m. Option (2) misses "smallest" (any multiple would qualify), there is no largest period, and a continuous-time period need not be an integer.
+
+Q 98 | dge | Microprocessors & Microcontrollers
+An instruction used to set the carry flag in a computer can be classified as
+(1) Data transfer
+(2) Arithmetic
+(3) Program control
+(4) Logical Instruction
+= 4
+~ In the 8085 instruction set, STC (set carry) and CMC (complement carry) are placed in the logical group, along with AND, OR, XOR, compare, rotate and complement-accumulator instructions. The arithmetic group holds ADD, SUB, INR, DCR and DAD, and the program control (branch) group holds JMP, CALL and RET.
+
+Q 99 | sgs | Signals & LTI Systems
+It is possible to compute the cross-correlation R_xy(τ) between two signals x(t) and y(t) directly from their convolution provided
+(1) x(t) has even symmetry
+(2) x(t) has odd symmetry
+(3) y(t) has odd symmetry
+(4) y(t) has even symmetry
+= 4
+~ R_xy(τ) = ∫x(t + τ)y(t)dt = ∫x(u)y(u − τ)du = x(τ) * y(−τ), so cross-correlation is the convolution of x with the time-reversed y. If y(t) is even, y(−t) = y(t), and R_xy(τ) = x(τ) * y(τ) can be computed directly from the convolution.
+
+Q 100 | cts | Frequency Response & Compensation
+The transfer function of a phase lead controller is (1+3Ts)/(1+Ts), the maximum value of phase provided by this controller
+(1) 90°
+(2) 60°
+(3) 45°
+(4) 30°
+= 4
+~ Writing the lead network as (1 + aTs)/(1 + Ts) gives a = 3. Maximum phase lead φ_m = sin⁻¹((a − 1)/(a + 1)) = sin⁻¹(2/4) = sin⁻¹(0.5) = 30°, occurring at ω_m = 1/(T√3). Check: tan⁻¹(3/√3) − tan⁻¹(1/√3) = 60° − 30° = 30°.
+
+Q 101 | acm | Noise & Random Processes
+A random variable is uniformly distributed between 3 and 6. Its variance is
+(1) 0.75
+(2) 0.25
+(3) 0.5
+(4) 1
+= 1
+~ For a random variable uniform on [a, b] the variance is (b − a)²/12 = (6 − 3)²/12 = 9/12 = 0.75. The mean (4.5) does not enter the variance.
+
+Q 102 | sgs | Sampling & Digital Signal Processing
+x(t)=3 cos²250πt. This signal is sampled at regular intervals of T seconds. The maximum value of T for which x(t) may be recovered from the sampled version without any distortion, is equal to
+(1) 1 ms
+(2) 2 ms
+(3) 4 ms
+(4) 0.5 ms
+= 2
+~ Using cos²θ = (1 + cos 2θ)/2, x(t) = 1.5 + 1.5 cos(500πt): a dc term plus a tone of 500π/(2π) = 250 Hz. The Nyquist rate is 2 × 250 = 500 samples/s, so the largest sampling interval is T = 1/500 s = 2 ms. Taking 125 Hz (from 250π alone) would wrongly give 4 ms.
+
+Q 103 | dcm | Sampling, PCM & Delta Modulation
+A message signal with its amplitude uniformly distributed between −2 V and +2 V is transmitted by a 4-bit binary PCM system. The (SNR)_q is equal to
+(1) 256
+(2) 1024
+(3) 512
+(4) 768
+= 1
+~ A signal uniform between −2 V and +2 V has mean-square value (power) S = 4²/12 = 4/3 V². With L = 2⁴ = 16 levels over the 4 V range, Δ = 4/16 = 0.25 V and the quantization noise is N_q = Δ²/12 = 0.0625/12 V². So (SNR)_q = (4/3)/(0.0625/12) = 256 = 2²ⁿ = L² (about 24 dB).
+
+Q 104 | dcm | Digital Modulation & Detection
+In a 16-ary PSK, the symbol rate is 10 kbps. The bit rate is
+(1) 160 kbps
+(2) 40 kbps
+(3) 2.5 kbps
+(4) (10/16) kbps
+= 2
+~ Each 16-ary symbol carries log₂16 = 4 bits, so the bit rate = 4 × symbol rate = 4 × 10 k symbols/s = 40 kbps. Multiplying by 16 (option 1) confuses the number of levels with the number of bits per symbol.
+
+Q 105 | dcm | Digital Modulation & Detection
+For any 4-ary FSK, the signal set is given by
+s_k(t) = √(2E/T) cos[(π/4)(n+k)t] ; 0 ≤ t ≤ T   k=1,2,3,4
+The dimension of its signal space is
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 4
+~ In M-ary FSK the M signals are tones of different frequencies chosen to be mutually orthogonal over 0 ≤ t ≤ T, so none can be written as a combination of the others. Each needs its own basis function φ_k(t) = √(2/T) cos(ω_k t), and the signal space has dimension N = M = 4. (The booklet prints π/4 inside the cosine; the standard form is cos[(π/T)(n + k)t], whose tones are orthogonal over 0 ≤ t ≤ T. The answer is the same either way. M-ary PSK with M > 2, by contrast, needs only 2 dimensions.)
+
+Q 106 | acm | Amplitude Modulation & Receivers
+In the filter method of generation of SSB-SC, in order to make the filter specifications less stringent,
+(1) it is ensured that the modulating signal has no high-frequency components
+(2) a high-frequency carrier is used initially for generating the DSB-SC signal
+(3) only those modulating signals which have high dc and low frequency content are used
+(4) a low-frequency carrier is used initially for generating the DSB-SC signal
+= 4
+~ The sideband filter must pass one sideband and reject the other, which are only 2f_m(min) apart. This gap is a usable fraction of the centre frequency only if the carrier is low, so DSB-SC is first generated on a low-frequency carrier, one sideband is filtered there, and the SSB signal is then shifted up to the final frequency by further mixing. Starting with a high carrier (option 2) makes the filter much harder; it is the absence of low-frequency (not high-frequency) components in the message that also helps.
+
+Q 107 | acm | Amplitude Modulation & Receivers
+The occurrence of double spotting indicates
+(1) that the IF is too high
+(2) that the selectivity is poor
+(3) that image rejection capability of the receiver is inadequate
+(4) that the local oscillator frequency is less than that of the incoming signal
+= 3
+~ Double spotting means the same station is heard at two points on the dial: at its own setting and again at the setting where it becomes the image frequency (2 × IF away). It happens because the RF front end does not reject the image frequency well enough (poor front-end selectivity). A higher IF would reduce it, so option (1) is wrong.
+
+Q 108 | mwa | Waveguides & Cavity Resonators
+If in a rectangular waveguide for which a=2b, the cutoff frequency for TE_02 mode is 12GHz, the cutoff frequency for TM_11 mode is
+(1) 3GHz
+(2) 3√5 GHz
+(3) 12 GHz
+(4) 6√5 GHz
+= 2
+~ f_c = (c/2)√((m/a)² + (n/b)²). For TE_02: f_c = (c/2)(2/b) = c/b = 12 GHz. For TM_11 with a = 2b: f_c = (c/2)√(1/(4b²) + 1/b²) = (c/b)(√5/4) = 12 × √5/4 = 3√5 GHz ≈ 6.7 GHz.
+
+Q 109 | emw | Vector Calculus & Electrostatics
+An electric potential field is produced by point charges 1μC and 4μC located at (−2,1,5) and (1,3,−1), respectively. The energy stored in the field is
+(1) 2.57mJ
+(2) 5.14mJ
+(3) 10.28mJ
+(4) None of these
+= 2
+~ The stored energy equals the work done to bring the charges together: W = Q₁Q₂/(4πε₀R). The separation is R = √((1+2)² + (3−1)² + (−1−5)²) = √(9 + 4 + 36) = 7 m, so W = 9×10⁹ × (1×10⁻⁶)(4×10⁻⁶)/7 = 0.036/7 J = 5.14 mJ.
+
+Q 110 | emw | Wave Propagation
+A plane wave propagates in water (ε_r = 81). If the peak electric field is 20π V/m, then the Peak magnetic field intensity will be
+(1) 1.5 A/m
+(2) 5.0 A/m
+(3) 10 π A/m
+(4) 20 A/m
+= 1
+~ Water is non-magnetic (μ_r = 1), so its intrinsic impedance is η = η₀/√ε_r = 120π/9 Ω ≈ 41.9 Ω. Then H = E/η = 20π/(120π/9) = 180/120 = 1.5 A/m.
+
+Q 111 | emw | Wave Propagation
+Wave propagating in +Z direction, E is given E_x = 2cos t, E_y = 2cos(t + 90°). The wave is
+(1) Linear polarized
+(2) right circular polarized
+(3) left circular polarized
+(4) elliptically polarized
+= 3
+~ E_y = 2cos(t + 90°) = −2 sin t, so E_x and E_y have equal amplitudes and a 90° phase difference: the wave is circularly polarized. At t = 0 the field points along +x and a moment later E_y becomes negative, so E rotates from +x towards −y. Curling the fingers of the left hand in this sense makes the thumb point along +z, the direction of propagation, so the wave is left circularly polarized (IEEE convention).
+
+Q 112 | emw | Wave Propagation
+If the velocity of EM wave in free space is 3 × 10⁸ m/s the velocity in a medium with ε_r = 4.5, μ_r = 2 Would be ........
+(1) 1 × 10⁸ m/s
+(2) 2 × 10⁶ m/s
+(3) 2.5 × 10⁶ m/s
+(4) 3 × 10⁸ m/s.
+= 1
+~ v = c/√(ε_r μ_r) = 3 × 10⁸/√(4.5 × 2) = 3 × 10⁸/3 = 1 × 10⁸ m/s.
+
+Q 113 | emw | Transmission Lines
+The input impedance of short circuited lossless line of length less than a quarter wavelength is........
+(1) purely resistive
+(2) purely inductive
+(3) purely capacitive
+(4) complex
+= 2
+~ For a short-circuited lossless line Z_in = jZ₀ tan βl. For 0 < l < λ/4, βl lies between 0 and π/2, so tan βl is positive and Z_in is a pure positive reactance: the line behaves as an inductor. Between λ/4 and λ/2 it becomes capacitive, and an open-circuited line shorter than λ/4 is capacitive.
+
+Q 114 | emw | Transmission Lines
+A 50Ω lossless transmission line is terminated in 100Ω load and is excited by a 30MHz source of internal resistance of 50Ω. What should be the length of transmission line for maximum power transfer...............
+(1) 5.0m
+(2) 1.25m
+(3) 2.5m
+(4) 10.0m
+= 2
+~ λ = c/f = 3 × 10⁸/30 × 10⁶ = 10 m, so the keyed length 1.25 m is λ/8. A λ/8 line transforms a resistive load into Z_in = Z₀(Z_L + jZ₀)/(Z₀ + jZ_L) = 50(100 + j50)/(50 + j100) = 40 − j30 Ω, whose magnitude |Z_in| = 50 Ω equals the source resistance; this magnitude match is the basis of TSPSC's answer (λ/4 would give 25 Ω and λ/2 would give 100 Ω). Strictly, because the source resistance equals Z₀, the reflected wave is absorbed in the source and the load receives (1 − |Γ|²) = 8/9 of the available power (Γ = (100 − 50)/(100 + 50) = 1/3) for any line length, so the length does not really change the power delivered. (Official final key; some sources differ.)
+
+Q 115 | mwa | Antennas & Arrays
+The electric field measured in the far field of an antenna at a distance of 50m is 1V/m. The average power density at a distance of 500 m from the antenna is
+(1) 26.6 μW/m²
+(2) 0.1 μW/m²
+(3) 10 μW/m²
+(4) 13.3 μW/m²
+= 4
+~ In the far field E falls as 1/r, so at 500 m E = 1 × 50/500 = 0.1 V/m (peak). The average power density is P = E²/(2η₀) = (0.1)²/(2 × 377) = 0.01/754 ≈ 13.3 μW/m². Option (1), 26.6 μW/m², is E²/η₀, which leaves out the factor 1/2 needed for peak values.
+
+Q 116 | acm | Noise & Random Processes
+X is a random variable with variance σ_x². The variance of (X + a) where a is a constant is
+(1) (σ_x+a)²
+(2) σ_x²
+(3) (σ_x² + a²)
+(4) (σ_x² − a²)
+= 2
+~ Adding a constant shifts the mean from μ to μ + a but does not change the spread: Var(X + a) = E[(X + a − μ − a)²] = E[(X − μ)²] = σ_x². (Multiplying by a constant k would scale the variance by k².)
+
+Q 117 | acm | Noise & Random Processes
+Two random processes X and Y are such that R_XY(t_1,t_2)=0 for all t_1 and t_2 and further one of them has zero mean. The processes are
+(1) Uncorrelated but not orthogonal
+(2) Orthogonal but not uncorrelated
+(3) Statistically independent and orthogonal
+(4) Orthogonal and uncorrelated
+= 4
+~ R_XY(t_1,t_2) = E[X(t_1)Y(t_2)] = 0 for all t_1, t_2 is the definition of orthogonal processes. The cross-covariance is C_XY = R_XY − μ_X μ_Y = 0 − 0 = 0 because one mean is zero, so they are also uncorrelated. Statistical independence cannot be concluded from second-order statistics alone, so (3) is not justified.
+
+Q 118 | acm | Noise & Random Processes
+Auto-correlation function R_X(τ) of a stationary process X(t) is
+(1) a deterministic function with maximum value at τ=0
+(2) a deterministic function which is periodic
+(3) a stationary random process
+(4) a periodic stationary process
+= 1
+~ R_X(τ) = E[X(t)X(t+τ)] is an ensemble average, so it is an ordinary (deterministic) function of τ, not a random process. It is even, and |R_X(τ)| ≤ R_X(0) = E[X²], so its maximum is at τ = 0. It is periodic only when the process itself is periodic.
+
+Q 119 | dcm | Sampling, PCM & Delta Modulation
+In the mid-tread type of quantizer, any input value lying between −0.5 to +0.5 is mapped into an output value of
+(1) 0.5
+(2) 1
+(3) −0.5
+(4) 0
+= 4
+~ A mid-tread quantizer has a "tread" (an output level) at zero: with unit step size, every input between −0.5 and +0.5 is mapped to the output 0. A mid-rise quantizer has no zero level and would give ±0.5 instead.
+
+Q 120 | dcm | Digital Modulation & Detection
+One of the following bandpass digital modulation schemes is not suitable for transmission over nonlinear bandpass channels:
+(1) FSK
+(2) ASK
+(3) PSK
+(4) QFSK
+= 2
+~ A nonlinear channel (for example a TWT or other power amplifier driven near saturation) distorts the amplitude of the signal. ASK carries its information in the amplitude, so it is not suitable; FSK and PSK have a constant envelope and carry information in frequency or phase, which such amplitude nonlinearity does not destroy. Option (4) is printed "QFSK" (probably QPSK; four-level FSK is also possible), and both of those are constant-envelope schemes too.
+
+Q 121 | dcm | Digital Modulation & Detection
+For M-ary PSK systems, the best trade-off between bandwidth efficiency and transmitted power is given for a value of M equal to
+(1) 2
+(2) 4
+(3) 8
+(4) 16
+= 2
+~ Compared with BPSK, M-ary PSK needs only 1/log₂M of the bandwidth (1/2 for M = 4, 1/3 for M = 8, 1/4 for M = 16), but for the same error rate it needs about 0.34 dB, 3.9 dB and 8.5 dB more power respectively. QPSK (M = 4) therefore doubles the bandwidth efficiency for almost no extra power, which is the best trade-off and the reason QPSK is so widely used; for M = 8 and above the power penalty grows rapidly.
+
+Q 122 | dcm | Information Theory & Coding
+Mutual information I(X ; Y) between two discrete random variables X and Y is given by
+(1) H(X) + H(Y) − H(X,Y)
+(2) H(X) − H(Y| X)
+(3) H(Y) − H(X | Y)
+(4) H(X) + H(Y) + H(X,Y)
+= 1
+~ I(X;Y) = H(X) − H(X|Y) = H(Y) − H(Y|X), and since H(X,Y) = H(Y) + H(X|Y), this equals H(X) + H(Y) − H(X,Y). Options (2) and (3) pair each entropy with the wrong conditional entropy, and (4) has the wrong sign.
+
+Q 124 | acm | Amplitude Modulation & Receivers
+When sinusoidally modulated, the r.m.s. value of the current in the antenna of an AM transmitter increases 15% over its unmodulated value. The modulation index is
+(1) 0.6
+(2) 0.8
+(3) 0.5
+(4) 0.707
+= 2
+~ For sinusoidal AM, I_t = I_c√(1 + m²/2). With I_t/I_c = 1.15: 1 + m²/2 = 1.15² = 1.3225, so m² = 0.645 and m ≈ 0.80.
+
+Q 125 | acm | Frequency & Phase Modulation
+For a frequency-modulated signal, the modulation index is doubled. The average power of the modulated signal is
+(1) quadrupled
+(2) doubled
+(3) unaltered
+(4) none of these
+= 3
+~ An FM wave has a constant amplitude A_c, so its average power A_c²/2 does not depend on the modulation index. Raising the index only redistributes the same power among the carrier and the sidebands (Σ J_n²(β) = 1). In AM, by contrast, power grows with modulation index.
+
+Q 126 | acm | Frequency & Phase Modulation
+A narrow band FM signal is generated using a phase modulator. The maximum deviation at the output of a phase modulator is about
+(1) ± 250 Hz
+(2) ± 1 kHz
+(3) ± 1 MHz
+(4) ± 25 Hz
+= 4
+~ In the Armstrong (indirect) method the phase modulator must keep its phase deviation small (about 0.5 rad or less) to stay narrowband and linear. At the lowest audio frequency of about 50 Hz this gives a frequency deviation of only Δf = β f_m ≈ 0.5 × 50 = 25 Hz, which is why such transmitters need frequency multiplication of about 3000 to reach ±75 kHz.
+
+Q 127 | acm | Amplitude Modulation & Receivers
+In an AM broadcast superheterodyne receiver, the local oscillator frequency is arranged to be higher than the incoming signal frequency in order to
+(1) provide better image rejection
+(2) make tracking easier
+(3) produce the correct intermediate frequency, since a lower LO frequency will not permit generation of correct IF
+(4) enable us to cover the required frequency range with the practically possible ratio of maximum to minimum values of the variable capacitors
+= 4
+~ For the 540–1650 kHz band with IF = 455 kHz, an LO above the signal tunes 995–2105 kHz, a frequency ratio of about 2.1 and a capacitance ratio of about 2.1² ≈ 4.5, which a gang capacitor can give. An LO below would have to tune 85–1195 kHz, a ratio of about 14 and a capacitance ratio of about 200, which is impractical. A lower LO can still produce the correct IF, so (3) is wrong.
+
+Q 128 | acm | Noise & Random Processes
+At the output of the discriminator in a FM receiver, the PSD of the noise
+(1) increases linearly with frequency
+(2) decreases as the square of the frequency
+(3) increases as the square of the frequency
+(4) decreases linearly with frequency
+= 3
+~ The discriminator output is proportional to the instantaneous frequency, i.e. the time derivative of the phase. Differentiation multiplies the noise PSD by (2πf)², so the output noise PSD is parabolic: it increases as the square of the frequency. This is why FM systems use pre-emphasis and de-emphasis.
+
+Q 129 | acm | Frequency & Phase Modulation
+'Pre-emphasis' is
+(1) boosting up of the high-frequency components of the message signal after detection in the receiver
+(2) boosting up of the high-frequency components of the message signal at the transmitter before the modulation
+(3) boosting up of the low-frequency components of the message signal after detection in the receiver
+(4) boosting up of the low-frequency components of the message signal at the transmitter before the modulation
+= 2
+~ Because FM output noise rises with frequency, the high-frequency message components are boosted at the transmitter before modulation (pre-emphasis). After detection the receiver attenuates them again (de-emphasis), which restores the message and cuts the high-frequency noise along with it.
+
+Q 130 | emw | Wave Propagation
+What is the major factor for determining whether a medium is free space, lossless dielectric, lossy dielectric, or good conductor?
+(1) Attenuation constant
+(2) Constitutive parameters (σ, ε, μ)
+(3) Loss tangent
+(4) Reflection coefficient
+= 3
+~ The classification depends on the ratio of conduction to displacement current, the loss tangent tan θ = σ/(ωε). It is zero for free space and lossless dielectrics, small (σ/ωε ≪ 1) for low-loss dielectrics, and very large (σ/ωε ≫ 1) for good conductors. The constitutive parameters alone do not decide it, because the same material can behave as a conductor at low frequency and a dielectric at high frequency.
+
+Q 131 | emw | Transmission Lines
+For a lossy transmission line, the characteristic impedance does not depend on
+(1) The operating frequency of the line
+(2) The length of the line
+(3) The load terminating the line
+(4) both 2 and 3
+= 4
+~ Z₀ = √((R + jωL)/(G + jωC)) depends only on the per-unit-length line constants and the frequency. It is a property of the line itself, independent of its length and of the load connected to it, so both (2) and (3) are correct; for a lossy line it does vary with frequency, so (1) is wrong.
+
+Q 132 | mwa | Waveguides & Cavity Resonators
+At microwave frequencies, we prefer waveguides to transmission lines for transporting EM energy because of all the following except that
+(1) Losses in transmission lines are prohibitively large
+(2) Waveguides have larger bandwidths and lower signal attenuation
+(3) Transmission lines are larger than waveguides
+(4) Transmission lines support only TEM mode
+= 3
+~ Statements (1), (2) and (4) are genuine reasons for using waveguides at microwave frequencies. Statement (3) is false: a waveguide must have a cross-section of the order of half a wavelength or more to propagate, so it is usually larger than a coaxial or two-wire line, not smaller.
+
+Q 133 | mwa | Waveguides & Cavity Resonators
+When the electric field is at its maximum value, the magnetic energy of a cavity is
+(1) At its maximum value
+(2) At √2 of its maximum value
+(3) At 1/2 of its maximum value
+(4) Zero
+= 4
+~ In a resonant cavity the stored energy oscillates between the electric and magnetic fields, which are 90° apart in time phase. When the electric field (and electric energy) is at its maximum, the magnetic field passes through zero, so the magnetic energy is zero; the total stored energy stays constant.
+
+Q 135 | emw | Vector Calculus & Electrostatics
+The divergence of vector A = [yz a_x + zx a_y + xy a_z] is
+(1) rotational
+(2) irrotational
+(3) solenoidal
+(4) both 2 & 3
+= 4
+~ ∇·A = ∂(yz)/∂x + ∂(zx)/∂y + ∂(xy)/∂z = 0, so A is solenoidal. ∇×A = a_x(∂(xy)/∂y − ∂(zx)/∂z) + a_y(∂(yz)/∂z − ∂(xy)/∂x) + a_z(∂(zx)/∂x − ∂(yz)/∂y) = a_x(x − x) + a_y(y − y) + a_z(z − z) = 0, so A is also irrotational (indeed A = ∇(xyz)). Hence both 2 and 3.
+
+Q 136 | emw | Vector Calculus & Electrostatics
+For the vectors A = x a_x + y a_y and B = z a_z, so ∇.(A × B) is
+(1) xz
+(2) 0
+(3) 1
+(4) yz
+= 2
+~ A × B = (x a_x + y a_y) × z a_z = yz a_x − xz a_y. Then ∇·(A × B) = ∂(yz)/∂x + ∂(−xz)/∂y = 0. This agrees with the identity ∇·(A × B) = B·(∇×A) − A·(∇×B), since both A and B here are curl-free.
+
+Q 137 | emw | Wave Propagation
+For free space E = 50 cos (10⁸t + β x), then the value of β ...................
+(1) 0.333 rad/m
+(2) 2/3
+(3) 4/3
+(4) 0.316
+= 1
+~ The wave travels in the −x direction with ω = 10⁸ rad/s. In free space β = ω/c = 10⁸/(3 × 10⁸) = 1/3 ≈ 0.333 rad/m.
+
+Q 138 | mwa | Antennas & Arrays
+The radiation pattern of loop antenna is
+(1) cardioid
+(2) semi-circle
+(3) circle
+(4) none of these
+= 1
+~ TSPSC's key, cardioid, describes the loop as used in a direction finder. There it is combined with a vertical sense antenna, and adding the sense antenna's omnidirectional pattern to the loop's figure-of-eight gives a cardioid with a single null, which removes the 180° ambiguity. A small loop on its own has a doughnut pattern (field ∝ sin θ measured from its axis): a figure-of-eight in any plane containing the axis, with nulls along the axis, and a circle in the plane of the loop. So for a plain loop most textbooks would give "figure-of-eight" (here "none of these") or "circle". (Official final key; some sources differ.)
+
+Q 139 | mwa | Antennas & Arrays
+A Half wave dipole at a frequency of 100 MHz has a length of
+(1) 100 m
+(2) 3 m
+(3) 1.5m
+(4) 0.75
+= 3
+~ λ = c/f = 3 × 10⁸/10⁸ = 3 m, so a half-wave dipole is λ/2 = 1.5 m long (in practice about 5% shorter). 3 m is a full wavelength and 0.75 m is a quarter wavelength.
+
+Q 140 | mwa | Antennas & Arrays
+Multiple number of antennas are arranged in arrays in order to enhance
+(1) Both directivity and bandwidth
+(2) Only directivity
+(3) Only bandwidth
+(4) Neither directivity nor bandwidth
+= 2
+~ An array is fed so that the fields of its elements add in phase in the wanted direction and cancel elsewhere; this narrows the beam and raises the directivity (gain), and also allows the beam to be shaped or steered. Arraying does not by itself widen the bandwidth: the array factor depends on the element spacing in wavelengths, so the beam shape and direction change with frequency. Broadband arrays such as the log-periodic get their bandwidth from elements of graded size, not from arraying itself.
+
+Q 141 | acm | Noise & Random Processes
+The variance σ² of a random variable X is given by
+(1) E[X²]
+(2) {E[X]}²
+(3) E[X²]−{E[X]}²
+(4) E[X²]+{E[X]}²
+= 3
+~ σ² = E[(X − μ)²] = E[X²] − 2μE[X] + μ² = E[X²] − {E[X]}², i.e. the mean-square value minus the square of the mean. E[X²] alone equals the variance only for a zero-mean variable.
+
+Q 142 | dcm | Sampling, PCM & Delta Modulation
+In a linear DM system,
+(1) only granular noise will be present
+(2) only slope overload noise will be present
+(3) both granular noise and slope overload noise can be eliminated
+(4) granular noise will be present but slope overload noise can be avoided by proper design
+= 4
+~ With a fixed step size Δ, the staircase always hunts about the input, so granular noise is always present. Slope overload occurs only when the signal changes faster than Δ per sample, and it can be avoided by choosing Δ and the sampling rate f_s so that Δ·f_s ≥ |dm/dt|max (for A sin 2πf_m t, Δ·f_s ≥ 2πf_m A).
+
+Q 143 | dcm | Digital Modulation & Detection
+P_e for a DPSK system is
+(1) exp[−E_b/η]
+(2) exp[−√(E_b/η)]
+(3) (1/2) exp[−E_b/η]
+(4) (1/2) exp[E_b/η]
+= 3
+~ For differential PSK detected by comparing each bit with the previous one, the bit error probability is P_e = (1/2) exp(−E_b/η), where η (= N₀) is the noise power spectral density parameter. It is about 1 dB poorer than coherent PSK, (1/2)erfc(√(E_b/η)). Option (4) is impossible, since it would grow with E_b and exceed 1.
+
+Q 144 | acm | Frequency & Phase Modulation
+The Foster-Seeley discriminator responds to the input FM signal's
+(1) amplitude variations only
+(2) amplitude as well as frequency variations
+(3) frequency variations only
+(4) variations neither in amplitude nor in frequency
+= 2
+~ The Foster–Seeley (phase) discriminator's output is the difference of two diode-detected voltages, each proportional to the input amplitude as well as depending on the frequency deviation. So it responds to amplitude variations as well as frequency variations and must be preceded by a limiter; the ratio detector was developed to be largely insensitive to amplitude changes.
+
+Q 145 | acm | Amplitude Modulation & Receivers
+A superheterodyne AM broadcast receiver has an IF of 455 kHz. If it is tuned to a frequency of 700 kHz, the image frequency is
+(1) 1610 kHz
+(2) 1155 kHz
+(3) 245 kHz
+(4) 210 kHz
+= 1
+~ With the local oscillator above the signal, f_LO = 700 + 455 = 1155 kHz. The image lies IF above the LO: f_image = f_s + 2 × IF = 700 + 910 = 1610 kHz. 1155 kHz is the LO frequency, not the image.
+
+Q 146 | emw | Vector Calculus & Electrostatics
+Which is not an example of convection current?
+(1) A moving charged belt
+(2) Electronic movement in a vacuum tube
+(3) An electron beam in a television tube
+(4) Electric current flowing in a copper wire
+= 4
+~ Convection current (J = ρ_v u) is due to charges moving through vacuum or an insulating medium, such as a charged belt, the electron stream in a vacuum tube or the beam in a picture tube; it does not obey Ohm's law. Current in a copper wire is conduction current (J = σE), carried by electrons drifting through a conductor.
+
+Q 147 | emw | Vector Calculus & Electrostatics
+The value of electric field at a distance of 1 m from an infinite line charge density 1 C/m is
+(1) 2πε₀
+(2) ½πε₀
+(3) ε₀/2π
+(4) 2π/ε₀
+= 2
+~ By Gauss's law the field of an infinite line charge is E = ρ_L/(2πε₀ r). With ρ_L = 1 C/m and r = 1 m, E = 1/(2πε₀) V/m (≈ 1.8 × 10¹⁰ V/m). Option (2), printed "½πε₀", stands for 1/(2πε₀); taken literally it would be πε₀/2, which is not the field.
+
+Q 148 | emw | Transmission Lines
+A line terminated in its characteristic impedance has a SWR of..............................
+(1) infinity
+(2) unity
+(3) zero
+(4) two
+= 2
+~ With Z_L = Z₀ the reflection coefficient Γ = (Z_L − Z₀)/(Z_L + Z₀) = 0, so there is no reflected wave and SWR = (1 + |Γ|)/(1 − |Γ|) = 1. SWR can never be less than 1, so zero is impossible; infinity occurs for a short, open or purely reactive load.
+
+Q 149 | mwa | Waveguides & Cavity Resonators
+Which one of the following modes has the highest cut-off wavelength in a rectangular waveguide?
+(1) TE_10
+(2) TE_01
+(3) TM_01
+(4) TM_11
+= 1
+~ The cut-off wavelength is λ_c = 2/√((m/a)² + (n/b)²). With the usual a > b, TE_10 gives λ_c = 2a, the largest of all modes, which is why it is the dominant mode. TE_01 gives 2b and TM_11 gives 2ab/√(a² + b²); TM_01 does not exist because TM modes need both m and n non-zero.
+
+Q 150 | mwa | Antennas & Arrays
+In end fire array the principal direction of radiation
+(1) Is perpendicular to the array axis
+(2) Is perpendicular to the array axis and also to the plane containing the array elements
+(3) Coincides with the direction of the array axis
+(4) Is at 45 degrees to the direction of array axis.
+= 3
+~ In an end-fire array the elements are fed with a progressive phase shift equal to βd (opposite in sign to the path difference), so their fields add in phase along the line of the array: maximum radiation is along the array axis. Radiation perpendicular to the axis, option (1), describes a broadside array.

@@ -475,10 +475,8 @@ HM_SUBJECTS = [
   ('cts', 'Control Systems', 'control-systems', ['Transfer Functions & Block Diagrams', 'Time Response & Stability', 'Frequency Response & Compensation']),
   ('acm', 'Analog Communication', 'analog-communication', ['Amplitude Modulation & Receivers', 'Frequency & Phase Modulation', 'Noise & Random Processes']),
   ('dcm', 'Digital Communication', 'digital-communication', ['Sampling, PCM & Delta Modulation', 'Digital Modulation & Detection', 'Information Theory & Coding']),
-  ('emw', 'Electromagnetics & Transmission Lines', 'electromagnetics-transmission-lines', ['Vector Calculus & Electrostatics', "Magnetostatics & Maxwell's Equations", 'Wave Propagation', 'Transmission Lines']),
-  ('mwa', 'Microwaves & Antennas', 'microwaves-antennas', ['Waveguides & Cavity Resonators', 'Microwave Devices', 'Antennas & Arrays']),
-  ('msr', 'Measurements & Instrumentation', 'measurements-instrumentation', ['Electrical & Electronic Instruments', 'Transducers']),
-  ('ocn', 'Optical, Satellite & Computer Communication', 'optical-satellite-communication', ['Optical Fibre Communication', 'Satellite & Mobile Communication', 'Computer Networks']),
+  ('emw', 'Electromagnetics & Transmission Lines', 'electromagnetics-transmission-lines', ['Vector Calculus & Electrostatics', 'Wave Propagation', 'Transmission Lines']),
+  ('mwa', 'Microwaves & Antennas', 'microwaves-antennas', ['Waveguides & Cavity Resonators', 'Antennas & Arrays']),
 ]
 HM_SUBJ_TE = {'cur': 'కరెంట్ అఫైర్స్', 'sci': 'జనరల్ సైన్స్', 'env': 'పర్యావరణం, విపత్తు నిర్వహణ', 'geo': 'భూగోళశాస్త్రం (జాగ్రఫీ)',
               'ih': 'భారతదేశ చరిత్ర', 'tg': 'తెలంగాణ చరిత్ర, ఉద్యమం', 'pol': 'భారత రాజ్యాంగం (పాలిటీ)', 'eco': 'భారత, తెలంగాణ ఆర్థిక వ్యవస్థ',
