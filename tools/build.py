@@ -1279,7 +1279,7 @@ def exam_confs():
            desc=lambda t: (f"APPSC Endowment Officer (Executive Officer Grade-III, AP Endowments) previous question papers: Paper II Hindu Philosophy & Temple System and Paper I General Studies & Mental Ability "
                            f"of 2026 and the 2023 Mains, and the 2022 Screening Test, with answers from APPSC's final keys. {t:,} questions in English and Telugu with explanations; practice quizzes, timed mock tests and study notes with the ₹45 All-in-One Pass."),
            eyebrow='APPSC · Executive Officer Grade-III · Endowments Department · 2022–2026',
-           notes_title='Study material: Hindu Philosophy & Temple System',
+           notes_title='Study material for APPSC EO Grade-III and other APPSC exams',   # all books since 8 Nov 2026, EO books first
            notes_seo=('Hindu Philosophy & Temple System Notes – APPSC EO Grade 3 (Endowment Officer) Paper II Study Material | Learn with Anil',
                       'APPSC Endowment Officer (EO Grade-III) Paper II study material by Jupudi Anil Kumar: Hindu Philosophy & Temple System notes from Ramayanam to the Endowments Act, with meme breaks and 291 previous questions with official answers. Free sample chapter.'),
            notes_lede='Exam notes by Jupudi Anil Kumar for Paper II of the APPSC Executive Officer Grade-III exam: every syllabus topic from Ramayanam to the Endowments Act, written from what APPSC actually asks, with key-fact tables, quick-revision boxes and APPSC\'s own previous questions with the official answers.',
@@ -1451,8 +1451,11 @@ def main():
         def upath(x): return x if (is_root or re.match(r'(https?:|data:|/)', x)) else up + x
         # a book with an 'exams' list shows only on those exams' pages; the others (APPSC Mains books) on NOTES_EXAMS
         # the start page's Study Material shows every book (Anil, 2 Nov 2026: "in study material only this 3 books are showing")
-        enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])]) for b in notes
-                  if is_root or (conf['id'] in b['exams'] if b.get('exams') else conf['id'] in NOTES_EXAMS)]
+        # Anil, 8 Nov 2026: "in study material section keep all the books that are available with us": every page that has a
+        # Study Material section (start page, Group-I, Group-II, EO) shows every book, this exam's own books first
+        mine = lambda b: conf['id'] in b['exams'] if b.get('exams') else conf['id'] in NOTES_EXAMS
+        enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])])
+                  for b in (sorted(notes, key=lambda b: not mine(b)) if is_root or any(mine(b) for b in notes) else [])]
         emains = mains_kit(conf)
         for q in questions:
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
@@ -1464,7 +1467,7 @@ def main():
         data = dict(mockHtml=inapp_mocks(conf, papers), secHtml=inapp_sectionals(conf, papers, questions),
                     pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=pub_qs, instagram=INSTAGRAM,
                     exb=dict(key=exb['key'], file=exb['file']) if exb else None, site=SITE_URL, notes=enotes, wa=WHATSAPP,
-                    mains=emains, mainsP5=MAINS_P5 if emains else None,
+                    mains=emains, mainsP5=MAINS_P5 if emains else None, mainsLink=('/appsc-group-1/mains/' if enotes else ''),
                     notesTitle=ROOT_NOTES[0] if is_root else conf.get('notes_title', ''), notesLede=ROOT_NOTES[1] if is_root else conf.get('notes_lede', ''),
                     key=conf['key'], exam=conf['name'], bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
@@ -1552,17 +1555,12 @@ def main():
           'practice': (f'{seo_name} Mock Test & Topic-wise Quiz from Previous Papers | Learn with Anil',
                        f'{seo_name} mock test and topic-wise quiz made from {total:,} real previous year questions{" (practice bits)" if conf["board"] == "APPSC" or conf.get("bits") else ""}: '
                        f'choose papers, subjects and topics, then practise with answers or take a timed test.', pb + 'practice/', True),
-          'bank': (f'{seo_name} Question Bank – Search All {total:,} PYQs{" & Practice Bits" if conf["board"] == "APPSC" or conf.get("bits") else ""} | Learn with Anil',
-                   f'Search every {seo_name} previous year question by keyword, paper or topic, with answers from {conf["keyshort"]} and explanations.', pb + 'bank/', True),
           'notes': ((conf['notes_seo'][0], conf['notes_seo'][1], pb + 'notes/', True) if conf.get('notes_seo') else
                     ('Study Material 2026-27 – Crisp Notes by Jupudi Anil Kumar | Learn with Anil',
                      'Exam-focused study material by Jupudi Anil Kumar: Crisp Notes on AP Economy and Science & Technology for APPSC Mains, with the latest 2026 data.', '/appsc-group-2/notes/', True)),
           'about': ('About Jupudi Anil Kumar – Learn with Anil',
                     'Jupudi Anil Kumar is a civil-services educator with 2.5 years of teaching and mentorship for UPSC, APPSC and TGPSC aspirants. He built Learn with Anil to make previous-year questions easy and affordable to practise for every aspirant.', '/appsc-group-2/about/', True),
-          'mistakes': (f'Mistakes Notebook – {seo_name} | Learn with Anil', 'Your mistakes notebook on Learn with Anil.', pb + 'mistakes/', False),
-          'smart': (f'Smart Quiz – {seo_name} | Learn with Anil', 'Re-attempt the questions you got wrong.', pb + 'smart/', False),
-          'bookmarks': (f'Bookmarks – {seo_name} | Learn with Anil', 'Your saved questions on Learn with Anil.', pb + 'bookmarks/', False),
-          'heatmap': (f'Topic Heatmap – {seo_name} | Learn with Anil', 'Your topic-wise accuracy on Learn with Anil.', pb + 'heatmap/', False),
+          'mistakes': (f'My Mistakes – {seo_name} | Learn with Anil', 'Your wrong answers, saved to practise again and again.', pb + 'mistakes/', False),
           'mocks': (f'{seo_name} Mock Tests | Learn with Anil', f'{seo_name} mock tests with a timer, answers and explanations.', pb + 'mocks/', False),
           'sectionals': (f'{seo_name} Sectional Tests | Learn with Anil', f'{seo_name} subject-wise sectional tests with a timer.', pb + 'sectionals/', False),
           'account': ('My account – Learn with Anil', 'Your Learn with Anil account: your All-in-One Pass, devices and payments.', pb + 'account/', False),
@@ -2892,7 +2890,7 @@ def privacy_page():
          '<li><b>Complaints:</b> what you send through the help form.</li>'
          '<li><b>Visits:</b> pages visited are counted with Google Analytics, which uses cookies.</li></ul>'),
         ('What stays on your own device',
-         '<p>Your attempts, scores, mistakes notebook and bookmarks are kept in your browser on your phone or computer. They are not sent to us, '
+         '<p>Your attempts, scores and mistakes are kept in your browser on your phone or computer. They are not sent to us, '
          'and clearing the browser\'s site data removes them.</p>'),
         ('Why we use it',
          '<p>Only to run the site for you: to open the All-in-One Pass and mock tests you paid for on your devices, keep you logged in, link a payment '
@@ -4924,7 +4922,7 @@ def buy_box(conf, kind):
     if kind == 'pyq':
         price, name = PAY['pyq_price'], 'All-in-One Pass · all exams'
         what = (f'<b>One payment of ₹{PAY["pyq_price"]} for the whole website:</b> {EVERYTHING}, not just {esc(conf["seo"])}. '
-                f'Every answer and explanation, practice quizzes and timed tests, PYQ sectionals, topic-wise quizzes, Smart Quiz and your Mistakes notebook.')
+                f'Every answer and explanation, practice quizzes and timed tests, PYQ sectionals, topic-wise quizzes and My Mistakes practice.')
         valid = PYQ_VALID
     elif kind == 'combo':
         return ''   # no longer sold (26 Oct 2026): the All-in-One Pass opens both Mission Khaki packs
@@ -4962,10 +4960,7 @@ TOOLS_NOTE = 'Included in the ₹45 All-in-One Pass, with every previous paper a
 
 FEATURES = {   # how the practice tools work (shown on the PYQs and mock-test pages; the app pages are /<exam>/<view>/)
   'practice': ('Topic-wise quiz', 'Choose papers, subjects and topics, the number of questions, and practice or timed-test mode.'),
-  'mistakes': ('Mistakes notebook', 'Every question you get wrong or skip is filed automatically, sorted by subject.'),
-  'smart': ('Smart quiz', 'Re-attempt your mistakes from memory. Two correct answers in a row clears a question.'),
-  'heatmap': ('Memory heatmap', 'Topic-wise accuracy in one grid, so your weak areas show up at a glance.'),
-  'bookmarks': ('Bookmarks', 'Save any question with one tap and come back to it before the exam.'),
+  'mistakes': ('My Mistakes', 'Every question you get wrong is saved, sorted by subject. Practise them again and again; a question leaves the list once you get it right twice in a row.'),
 }
 
 
@@ -5101,7 +5096,7 @@ def pyq_page(conf, papers, questions):
     body = (banner + course + free_sample_html(conf, papers, questions, sample)
             + '<h2>Practise by subject and topic</h2><p>' + ('Free' if free else 'With the All-in-One Pass') + ': pick a subject to build a quiz from every paper, or build your own topic-wise quiz.</p>'
             + subjects_html(conf, questions) + features_html(pb, ('practice',))
-            + f'<h2>Study tools</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
+            + f'<h2>Practise your mistakes</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes',))
             + '<h2>Plans</h2>' + plans_html(conf)
             + f'<p><a class="cta alt" href="{pb}mock-test.html">Mock tests</a><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a></p>'
             + (pdf_inline_js(conf) if BOOKLETS.get(conf['id']) else ''))
@@ -5311,7 +5306,7 @@ def mock_page(conf, papers, questions):
             '<li>The timer gives you one minute per question. You can move between questions and change answers until you submit.</li>'
             '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question. Wrong answers go to your Mistakes notebook.</li>'
             f'<li>Previous papers as tests need the All-in-One Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months){"; the same pass opens " + esc(mk["name"]) if mk else ""}. Register once with your phone number and use the same number when you pay.</li></ul>'
-            + f'<h2>Study tools after every test</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes', 'smart', 'heatmap', 'bookmarks'))
+            + f'<h2>Practise your mistakes after every test</h2><p>{TOOLS_NOTE}</p>' + features_html(pb, ('mistakes',))
             + '<h2>Plans</h2>' + plans_html(conf)
             + f'<p><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a><a class="cta alt" href="{pb}pyqs.html">All {esc(seo)} PYQs</a></p>'
             + (pdf_inline_js(conf) if BOOKLETS.get(conf['id']) else ''))
@@ -5321,7 +5316,7 @@ def mock_page(conf, papers, questions):
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Mock test', can)], conf)
 
 
-VIEW_CRUMB = {'papers': 'Previous papers', 'practice': 'Topic-wise quiz', 'bank': 'Question bank', 'notes': 'Study material', 'about': 'About', 'mains': 'Group-1 Mains Tool Kit'}
+VIEW_CRUMB = {'papers': 'Previous papers', 'practice': 'Topic-wise quiz', 'mistakes': 'My Mistakes', 'notes': 'Study material', 'about': 'About', 'mains': 'Group-1 Mains Tool Kit'}
 
 
 def crumb_ld(items):
@@ -5482,7 +5477,7 @@ def not_found_page(old_pdfs=None):
   var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
-  var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join)\\/?$/.test(rest);
+  var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
   if (ok) { try { sessionStorage.setItem("lwa-path", p); } catch (e) {} location.replace(base); }
 })();
 </script>

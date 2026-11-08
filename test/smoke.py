@@ -89,7 +89,7 @@ async def main():
             assert await pg.evaluate('window.__same === 1'), 'moving between views should not reload the page'
             assert await pg.evaluate('!document.getElementById("home-static").hidden'), 'the live Group-II tile should open the Group-II page'
             if name == 'desk': await pg.screenshot(path=f'{SHOTS}/home-{name}.png', full_page=False)
-            for v in ['exams','exam/ssc-chsl','home','papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','join','notes']:
+            for v in ['exams','exam/ssc-chsl','home','papers','practice','mistakes','about','join','notes']:
                 await pg.evaluate(f'location.hash="{v}"'); await pg.wait_for_timeout(150)
                 sw = await pg.evaluate('document.documentElement.scrollWidth')
                 if sw > width: errors.append(f'{name}/{v}: horizontal overflow {sw}>{width}')
@@ -128,11 +128,13 @@ async def main():
                 assert (await pg.evaluate('location.pathname')).endswith('/quiz/'), 'a registered student should go straight to the test'
                 await pg.screenshot(path=f'{SHOTS}/quiz-test.png')
                 await pg.click('[data-act="asksubmit"]'); await pg.click('.confirm [data-act="finish"]'); await pg.wait_for_timeout(150)
-                await pg.evaluate('location.hash="heatmap"'); await pg.wait_for_timeout(150)
-                await pg.screenshot(path=f'{SHOTS}/heatmap.png')
-                await pg.evaluate('location.hash="bank"'); await pg.wait_for_timeout(150)
-                await pg.fill('#bankSearch', 'Polavaram'); await pg.wait_for_timeout(400)
-                print('bank search:', await pg.inner_text('#bankResults p.muted'))
+                await pg.evaluate('location.hash="mistakes"'); await pg.wait_for_timeout(200)   # My Mistakes replaced Question Bank and My Revision (8 Nov 2026)
+                await pg.screenshot(path=f'{SHOTS}/mistakes.png')
+                mt = await pg.inner_text('#view')
+                if 'my mistakes' not in mt.lower() or ('Practise' not in mt and 'No mistakes yet' not in mt and 'Unlock' not in mt): errors.append('my mistakes: page did not show')
+                if await pg.evaluate('document.getElementById("navMis").hidden') and 'to practise again' in mt: errors.append('my mistakes: no count on the tab')
+                await pg.evaluate('location.hash="bank"'); await pg.wait_for_timeout(200)
+                if 'papers' not in (await pg.evaluate('location.pathname + location.hash')): errors.append('removed Question Bank should open Previous Papers')
                 await pg.evaluate('location.hash="about"'); await pg.wait_for_timeout(150)
                 await pg.screenshot(path=f'{SHOTS}/about.png')
                 await pg.evaluate('location.hash="q/m2025p2-117"'); await pg.wait_for_timeout(300)
@@ -170,7 +172,7 @@ async def main():
                 assert h1word in await pg.inner_text('#home-static h1')
                 assert await pg.locator(f'[data-act="lang"][data-l="{l2}"]').count() == 1, f'{tag}: {l2} language button missing'
                 await pg.screenshot(path=f'{SHOTS}/{tag}-home-{name}.png', full_page=False)
-                for v in ['papers','practice','bank','mistakes','smart','bookmarks','heatmap','about','notes','mocks','sectionals']:
+                for v in ['papers','practice','mistakes','about','notes','mocks','sectionals']:
                     await pg.evaluate(f'location.hash="{v}"'); await pg.wait_for_timeout(150)
                     sw = await pg.evaluate('document.documentElement.scrollWidth')
                     if sw > width: errors.append(f'{tag} {name}/{v}: horizontal overflow {sw}>{width}')
@@ -200,7 +202,7 @@ async def main():
             return await pg.evaluate("""(()=>{ const hub = document.getElementById('hub-static'), home = document.getElementById('home-static');
                 if(hub && !hub.hidden) return 'exams'; if(home && !home.hidden) return 'home';
                 const h = document.querySelector('#view h1, #view h2'); return h ? h.innerText : '?'; })()""")
-        checks = [('appsc-group-1/bank/', '/appsc-group-1/bank/', 'Search'), ('upsc-capf/practice/', '/upsc-capf/practice/', 'quiz'),
+        checks = [('appsc-group-1/bank/', '/appsc-group-1/papers/', 'question papers'), ('appsc-group-1/mistakes/', '/appsc-group-1/mistakes/', 'My Mistakes'), ('upsc-capf/practice/', '/upsc-capf/practice/', 'quiz'),
                   ('#home', '/appsc-group-2/', 'home'), ('appsc-group-1/#papers', '/appsc-group-1/papers/', 'question papers'),
                   ('upsc-capf/q/c2026a-3/', '/upsc-capf/quiz/', 'Raghu'), ('upsc-capf/?q=c2026a-4', '/upsc-capf/quiz/', 'Ol Chiki'),
                   ('exam/ssc-chsl/', '/exam/ssc-chsl/', 'CHSL'), ('appsc-group-2/papers/', '/appsc-group-2/papers/', 'question papers')]
@@ -211,8 +213,8 @@ async def main():
             if got != want: errors.append(f'paths: {path} ended at {got}, wanted {want}')
             elif word not in (await view()) and word not in txt: errors.append(f'paths: {path} did not show "{word}"')
         await pg.goto(URL + 'appsc-group-1/'); await pg.wait_for_timeout(500)
-        await pg.click('#nav a[data-v="bank"]'); await pg.wait_for_timeout(200)
-        if await pg.evaluate('location.pathname') != '/appsc-group-1/bank/': errors.append('paths: nav click did not change the address')
+        await pg.click('#nav a[data-v="papers"]'); await pg.wait_for_timeout(200)   # Question Bank left the top menu, 8 Nov 2026
+        if await pg.evaluate('location.pathname') != '/appsc-group-1/papers/': errors.append('paths: nav click did not change the address')
         await pg.go_back(); await pg.wait_for_timeout(300)
         if await pg.evaluate('location.pathname') != '/appsc-group-1/' or await view() != 'home': errors.append('paths: back button did not return home')
         await pg.goto(URL + 'upsc-capf/q/c2026a-3.html'); await pg.wait_for_timeout(300)
@@ -431,7 +433,7 @@ async def main():
         for path in ('ts-police-si/?test=s2022', 'ts-police-constable/?sec=ari'):   # TS Police papers: free without a pass
             await np.goto(URL + path); await np.wait_for_timeout(900)
             if not (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: free {path} did not open')
-        for v in ('bank', 'practice', 'mistakes'):
+        for v in ('practice', 'mistakes'):
             await np.goto(URL + f'appsc-group-2/{v}/'); await np.wait_for_timeout(600)
             if 'Unlock' not in await np.inner_text('#view'): errors.append(f'nopass: {v} is open without a plan')
         await np.goto(URL + 'upsc-epfo/sectional-tests.html'); await np.wait_for_timeout(400)
@@ -480,9 +482,9 @@ async def main():
                 for eid in bk['exams']:
                     dfs = _g.glob(os.path.join(SITE, {'appsc-group-2': ''}.get(eid, EXAM_DIR.get(eid, eid)), 'data', '*.js'))
                     if not dfs or f'"{bk["id"]}"' not in open(dfs[0], encoding='utf-8').read(): errors.append(f'book {bk["id"]} missing from {eid} data')
-                # the start page (shared data with the Group-2 page) lists every book (Anil, 2 Nov 2026); the Group-1 page only its own
+                # every Study Material section lists every book, the exam's own first (Anil, 8 Nov 2026: "keep all the books that are available with us")
                 g1d = _g.glob(os.path.join(SITE, 'appsc-group-1', 'data', '*.js'))
-                if 'appsc-group-1' not in bk['exams'] and any(f'"{bk["id"]}"' in open(f, encoding='utf-8').read() for f in g1d): errors.append(f'book {bk["id"]} shown on the Group 1 page')
+                if not any(f'"{bk["id"]}"' in open(f, encoding='utf-8').read() for f in g1d): errors.append(f'book {bk["id"]} missing from the Group 1 study material')
                 if bk.get('free') and not os.path.isfile(os.path.join(SITE, bk['free'].lstrip('/'))): errors.append(f'free sample {bk["free"]} not published')
             # study books: part of the All-in-One Pass, locked without it, a decrypted PDF download with it
             for passes, paid in [({}, False), (PAID, True)]:
