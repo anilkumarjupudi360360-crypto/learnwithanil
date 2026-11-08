@@ -1,0 +1,1494 @@
+# APPSC Assistant Environmental Engineer in A.P. Pollution Control Board (Notification 15/2023), Paper II: Common Subject, computer-based test held 25 March 2025 (150 questions, 2 marks each).
+# Answers: APPSC final key (APOnline master question paper, correct option ticked; final keys of 6 August 2025). Explanations by Learn with Anil.
+# Left out (ignored by APPSC for all candidates): 30, 97. More than one option accepted by APPSC: 70.
+
+Q 1 | ecs | Ecosystem Structure & Function
+Why are ecosystems important?
+(1) They provide a habitat for wildlife only.
+(2) They regulate climate and provide oxygen.
+(3) They are solely responsible for soil formation.
+(4) They serve as source of entertainment for humans.
+= 2
+~ Ecosystems provide regulating and supporting services: plants release oxygen through photosynthesis, forests and oceans store carbon, and vegetation and water bodies moderate local and global climate. The other options are too narrow or wrong: ecosystems are not a habitat for wildlife only, soil formation also depends on weathering of rocks and climate, and recreation is only a minor cultural service.
+
+Q 2 | ecs | Ecosystem Structure & Function
+Which of the following is a part of terrestrial ecosystems?
+(1) Estuaries
+(2) Rivers
+(3) Wetlands
+(4) Grasslands
+= 4
+~ Terrestrial (land-based) ecosystems include forests, grasslands and deserts. Grasslands are dominated by grasses with few trees and occur on land, so they are terrestrial. Rivers are freshwater (lotic) aquatic ecosystems, estuaries are where rivers meet the sea, and wetlands are waterlogged transitional areas, so all three are treated as aquatic ecosystems.
+
+Q 3 | nrr | Forest Resources
+Which of the following is an indirect utilisation of the forest ecosystem?
+(1) Fruits
+(2) Wood for farm implements
+(3) Grass for grazing
+(4) Paper
+= 4
+~ Fruits, wood for farm implements and grass for grazing are taken from the forest and used directly by local people. Paper is an indirect use: wood or bamboo is first converted into pulp in an industry, and only the processed product reaches the user. Hence paper represents indirect utilisation of the forest ecosystem.
+
+Q 4 | ecs | Food Chains, Webs & Pyramids
+In an ecosystem, some animals feed on other organisms, while others feed on dead organic matter. What is this type of food chain called?
+(1) Herbivorous food chain
+(2) Detritus food chain
+(3) Carnivorous food chain
+(4) Omnivorous food chain
+= 2
+~ A food chain that begins with dead organic matter (detritus such as fallen leaves and dead animals) is called the detritus food chain: detritivores and decomposers like earthworms, bacteria and fungi feed on detritus and are in turn eaten by other animals. The other main type is the grazing food chain, which starts from green plants. Herbivorous, carnivorous and omnivorous food chains are not standard ecological terms.
+
+Q 5 | ecs | Food Chains, Webs & Pyramids
+Which of the following best describes a food web?
+(1) A linear representation of energy flow from producers to consumers in an ecosystem
+(2) A single chain showing the flow of energy from one trophic level to another
+(3) A complex network of interconnected food chains in an ecosystem
+(4) A graphical representation of the nutrient cycle within an ecosystem
+= 3
+~ A food web is the network formed when many food chains in an ecosystem interconnect, because most organisms eat, and are eaten by, more than one species. It provides alternative pathways for energy flow and makes the ecosystem more stable. Options 1 and 2 describe a single food chain, and nutrient cycles are biogeochemical cycles, not food webs.
+
+Q 6 | ecs | Food Chains, Webs & Pyramids
+Which is the most basic and the first trophic level of an ecological pyramid?
+(1) Primary consumers
+(2) Secondary consumers
+(3) Producers
+(4) Tertiary consumers
+= 3
+~ Producers (autotrophs such as green plants and phytoplankton) make food from sunlight by photosynthesis and form the first trophic level, the base of every ecological pyramid. Primary consumers (herbivores) form the second level, secondary consumers (carnivores) the third, and tertiary consumers the higher levels.
+
+Q 7 | ecs | Food Chains, Webs & Pyramids
+In an ecological pyramid, what is the primary direction of energy flow?
+(1) From consumers to producers
+(2) From producers to consumers
+(3) From decomposers to consumers
+(4) From predators to producers
+= 2
+~ Energy enters the ecosystem through producers, which fix solar energy, and then passes to herbivores and carnivores. The flow is unidirectional: energy is lost as heat at each step (only about 10% passes on, Lindeman's ten per cent law) and never returns to the producers. So the pyramid of energy is always upright, with energy moving from producers to consumers.
+
+Q 8 | ecs | Ecosystem Structure & Function
+Which of the following best describes an ecosystem?
+(1) Only plants and animals in a particular area
+(2) Soil, water, and air in a specific location
+(3) Climate and weather patterns of a region
+(4) Involves interaction between living organisms and the environment
+= 4
+~ An ecosystem (a term coined by A.G. Tansley in 1935) is a functional unit in which the living (biotic) community interacts with its non-living (abiotic) environment, with energy flowing and nutrients cycling between them. Option 1 lists only the biotic part, option 2 only the abiotic part and option 3 only climate; none covers the interaction that defines an ecosystem.
+
+Q 9 | ecs | Biogeochemical Cycles & Bioaccumulation
+Which of the following best describes bio-accumulation?
+(1) The gradual accumulation of pollutants or toxins in the tissues of living organisms over time
+(2) The process by which organisms eliminate toxins from their bodies
+(3) The process by which organisms accumulate food
+(4) The movement of nutrients through different trophic levels in an ecosystem
+= 1
+~ Bioaccumulation is the build-up of a persistent substance such as DDT, mercury or lead in the tissues of an organism over time, because it is taken in faster than it is broken down or excreted. It differs from biomagnification, the rise in concentration from one trophic level to the next. Option 2 describes excretion or detoxification and option 4 describes nutrient flow.
+
+Q 10 | ecs | Biogeochemical Cycles & Bioaccumulation
+What does the term ‘biogeochemical’ signify?
+(1) Movement of organisms through the ecosystem
+(2) Flow of energy from sunlight to heat
+(3) Cycling of elements between living and nonliving components
+(4) Geological processes affecting only the biosphere
+= 3
+~ 'Biogeochemical' joins bio (living organisms), geo (rocks, soil, water and air) and chemical (elements). Biogeochemical cycles such as the carbon, nitrogen, phosphorus and water cycles describe how elements move from the non-living environment into organisms and back again. Energy flows one way and is not cycled, so option 2 is wrong; movement of organisms and purely geological processes are not what the term means.
+
+Q 11 | ecs | Food Chains, Webs & Pyramids
+Read the following statement and conclusions carefully and decide which of the conclusions logically follow(s) from the given statement.
+Statement: In an ecological pyramid, the energy transfer between trophic levels follows a hierarchical structure, with each successive level receiving less energy than the previous one.
+Conclusions:
+I. Top predators in an ecosystem, such as apex predators, have the lowest energy availability compared to primary producers.
+II. Primary producers contribute the most energy to the ecosystem, forming the foundation of the food web.
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Neither conclusion I nor II follows
+(4) Both conclusions I and II follow
+= 4
+~ The statement says each higher trophic level receives less energy than the one below it. Apex predators sit at the top, so they have the least energy available compared with producers, and conclusion I follows. Producers form the first level and capture the solar energy that supports all other levels, so they hold the most energy and form the base of the food web; conclusion II also follows.
+
+Q 12 | ecs | Ecosystem Structure & Function
+Read the following statement and conclusions carefully and decide which of the conclusions logically follow(s) from the given statement.
+Statement: Ecosystems provide invaluable services that support life on Earth and contribute to human well-being.
+Conclusions:
+I. Therefore, preserving ecosystems is essential for maintaining biodiversity and ecological balance.
+II. Consequently, investing in ecosystem conservation efforts has no significant impact on socio-economic development.
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Neither conclusion I nor II follows
+(4) Both conclusions I and II follow
+= 1
+~ If ecosystems provide invaluable services for life and human well-being, it follows that preserving them is essential for biodiversity and ecological balance, so conclusion I follows. Conclusion II contradicts the statement: since these services contribute to human well-being, investment in conserving ecosystems clearly does affect socio-economic development. Hence only conclusion I follows.
+
+Q 13 | ecs | Ecosystem Structure & Function
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Ecosystem services are essential for sustaining human well-being and economic development.
+Reason (R): The carrying capacity of an ecosystem determines its ability to provide services such as food production, water purification, and climate regulation. As human populations increase, the demand for these services may exceed the ecosystem’s capacity, leading to degradation and loss of biodiversity.
+(1) Both A and R are true, and R is the correct explanation of A
+(2) Both A and R are true, and R is not the correct explanation of A
+(3) A is true, but R is false
+(4) A is false, but R is true
+= 1
+~ Ecosystem services such as food, clean water, pollination and climate regulation sustain human well-being and the economy, so A is true. R is also true: an ecosystem can supply these services only within its carrying capacity, and when growing human demand exceeds it, the ecosystem degrades and biodiversity is lost. R explains why these services are vital and limited, so it is the correct explanation of A.
+
+Q 14 | bdv | Biodiversity & Its Value
+Match the biogeographic zones of with their key features or locations.
+Biogeographic zones | Key features or locations
+1. Trans Himalayan Region | A. Rajasthan, arid ecosystem
+2. Thar Desert | B. Snow-covered mountains, Ladakh
+3. Western Ghats | C. Maharashtra, Karnataka and Kerala
+4. Andaman and Nicobar Islands | D. Tropical forests, unique biodiversity
+(1) 1-A, 2-B, 3-C, 4-D
+(2) 1-B, 2-A, 3-C, 4-D
+(3) 1-A, 2-B, 3-D, 4-C
+(4) 1-B, 2-A, 3-D, 4-C
+= 2
+~ Among India's ten biogeographic zones, the Trans-Himalaya (Ladakh and nearby areas) is a cold, snow-covered high-altitude desert (1-B). The Thar Desert of Rajasthan is the arid zone (2-A). The Western Ghats run along the west coast through Maharashtra, Karnataka and Kerala, besides Gujarat, Goa and Tamil Nadu (3-C). The Andaman and Nicobar Islands have tropical forests and highly endemic, unique biodiversity (4-D).
+
+Q 15 | bdv | Biodiversity & Its Value
+Match the following based on ecosystem goods and services.
+Types of values | Examples/Explanations
+1. Consumptive Use Value | A. Preserving resources for future benefits
+2. Productive Use Value | B. Commercial resources like timber, fish, medicinal plants
+3. Non-consumptive Use Value | C. Non-market resources like firewood, fodder, etc.
+4. Option Value | D. Activities like bird-watching, ecotourism
+(1) 1-A, 2-B, 3-C, 4-D
+(2) 1-B, 2-A, 3-D, 4-C
+(3) 1-C, 2-B, 3-D, 4-A
+(4) 1-B, 2-C, 3-D, 4-A
+= 3
+~ Consumptive use value is for products used directly by local people without passing through a market, such as firewood and fodder (1-C). Productive use value is for commercially sold resources like timber, fish and medicinal plants (2-B). Non-consumptive use value comes from enjoying nature without consuming it, for example bird-watching and ecotourism (3-D). Option value is keeping resources for possible future benefits (4-A).
+
+Q 16 | ecs | Food Chains, Webs & Pyramids
+What restricts the number of trophic levels in a food chain to four or five?
+(1) Limited availability of producers
+(2) Significant energy loss (80-90%) at each transfer
+(3) Competition between top predators
+(4) Decline in biodiversity at higher levels
+= 2
+~ According to Lindeman's ten per cent law, only about 10% of the energy at one trophic level is passed on to the next; roughly 80–90% is lost as heat in respiration and in undigested or unused matter. After four or five transfers too little energy remains to support another level of consumers, so food chains are short. The other options do not explain this limit.
+
+Q 17 | nrr | Water Resources & Dams
+How can droughts be mitigated?
+(1) By increasing water consumption during dry seasons
+(2) By implementing water conservation measures, such as rain water harvesting
+(3) By promoting deforestation to increase soil moisture retention
+(4) By encouraging excessive irrigation practices
+= 2
+~ Droughts are mitigated by storing and using water wisely: rainwater harvesting, watershed development, check dams, groundwater recharge, afforestation and efficient irrigation such as drip systems. Increasing consumption, deforestation (which reduces infiltration and soil moisture) and excessive irrigation would deplete water further and worsen drought.
+
+Q 18 | nrr | Energy Resources
+Which of the following is an example of non-renewable energy sources?
+(1) Hydropower
+(2) Geothermal
+(3) Solar energy
+(4) Natural gas
+= 4
+~ Natural gas is a fossil fuel formed from organic matter buried over millions of years; its reserves are finite and cannot be replenished on a human time scale, so it is non-renewable. Hydropower (driven by the water cycle), geothermal energy (the Earth's internal heat) and solar energy are continuously renewed by natural processes and are renewable sources.
+
+Q 19 | eia | Sustainable Development & Green Concepts
+Which of the following is NOT an indicator of sustainable lifestyles in human life?
+(1) No income enhancement
+(2) Increased longevity
+(3) An increase in knowledge
+(4) An enhancement of income
+= 1
+~ The indicators of quality of life and sustainable lifestyles are increased longevity, an increase in knowledge and an enhancement of income, which match the three dimensions of UNDP's Human Development Index (life expectancy, education and per-capita income). 'No income enhancement' shows no improvement in living standards, so it is not an indicator of a sustainable lifestyle.
+
+Q 20 | nrr | Water Resources & Dams
+Which of the following is a potential problem caused by dams?
+(1) Increased agricultural productivity
+(2) Reduced risk of flooding downstream
+(3) Disruption of natural river flow
+(4) Preservation of aquatic ecosystems
+= 3
+~ Dams break the natural flow regime of a river: they store water, change downstream discharge and temperature, trap silt, block fish migration and fragment aquatic habitats. They also submerge forests and farmland and displace people. Increased agricultural productivity and reduced downstream flooding are benefits of dams, and dams harm rather than preserve aquatic ecosystems.
+
+Q 21 | nrr | Mineral & Land Resources
+Which modern method is used to locate and exploit mineral deposits?
+(1) Panning
+(2) Satellite imagery and remote sensing technique
+(3) Traditional mining techniques
+(4) Surface sampling
+= 2
+~ Modern mineral exploration uses satellite imagery and remote sensing (multispectral and hyperspectral data), together with GIS and geophysical surveys, to map rock types, faults and alteration zones that indicate ore bodies over large areas quickly. Panning, surface sampling and traditional mining techniques are older, ground-based methods.
+
+Q 22 | nrr | Mineral & Land Resources
+Which of the following is a potential consequence of the use and exploitation of mineral resources?
+(1) Decreases environmental pollution
+(2) Enhances biodiversity in affected areas
+(3) Ecological balance
+(4) Soil erosion and habitat destruction
+= 4
+~ Mining removes vegetation and topsoil, causing deforestation, soil erosion and loss of wildlife habitat; it also produces dust, acid mine drainage and heavy-metal pollution of water and land. So it increases pollution, reduces biodiversity and disturbs rather than maintains ecological balance, which rules out options 1, 2 and 3.
+
+Q 23 | nrr | Forest Resources
+Which of the following best describes the function of forests?
+(1) Forests contribute to noise pollution reduction in urban areas.
+(2) Forests are mainly used for urban development and construction purposes.
+(3) Forests primarily serve as recreational areas for tourists.
+(4) Forests prevent flash floods and soil erosion.
+= 4
+~ Forest cover intercepts rainfall, and roots and leaf litter bind the soil and increase infiltration, so run-off is slowed and released gradually. This watershed function prevents flash floods and soil erosion and keeps streams flowing. Forests are not mainly for construction or tourism, and noise reduction by urban green belts is only a minor role.
+
+Q 24 | bdv | Biodiversity & Its Value
+Which of the following represents the living natural resources?
+(1) Air
+(2) Plants
+(3) Soil
+(4) Minerals
+= 2
+~ Natural resources are classified as living (biotic) and non-living (abiotic) resources. Plants, animals and micro-organisms are living resources that grow, reproduce and can regenerate if used sustainably. Air, soil and minerals are non-living (abiotic) resources, and minerals in particular are non-renewable.
+
+Q 25 | nrr | Water Resources & Dams
+Which of the following is a consequence of overutilisation of surface and groundwater?
+(1) Enhanced water quality
+(2) Increased aquifer recharge rates
+(3) Drought
+(4) Expansion of wetland habitats
+= 3
+~ When surface and groundwater are withdrawn faster than they are recharged, rivers and lakes dry up and the water table falls, leading to water scarcity and drought conditions; other effects include land subsidence and saline intrusion into coastal aquifers. Overuse lowers rather than raises aquifer recharge, shrinks wetlands and does not improve water quality.
+
+Q 26 | nrr | Mineral & Land Resources
+Which of the following activities distinguishes the exploitation stage from other stages of mining operations?
+(1) Identification of mineral deposits through geophysical surveys
+(2) Evaluation of the economic feasibility of extracting a deposit
+(3) Construction of access routes and infrastructure for extraction
+(4) Direct removal of minerals from the deposit for commercial use
+= 4
+~ Mining passes through prospecting (searching for the deposit), exploration (surveys and assessment of size, grade and economic feasibility), development (access roads, shafts and infrastructure), exploitation and finally reclamation. Exploitation is the stage in which ore is actually extracted from the deposit for commercial production. Options 1, 2 and 3 belong to prospecting, exploration and development.
+
+Q 27 | nrr | Water Resources & Dams
+Read the given statements and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusion(s) logically follow(s) from the statements.
+Statement: Sixteen percent of India's total area is drought-prone, primarily located in arid and semi-arid regions, due to prolonged lower-than-average rainfall.
+Conclusions:
+I. Drought is caused solely by human activities like deforestation.
+II. Drought-prone regions in India are concentrated in arid and semi-arid zones.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Neither conclusion I nor conclusion II follows.
+(4) Both conclusions I and II follow.
+= 2
+~ The statement says the drought-prone area lies mainly in arid and semi-arid regions, so conclusion II follows directly. Conclusion I claims drought is caused solely by human activities such as deforestation; the statement gives prolonged lower-than-average rainfall as the cause, so I is unsupported and even contradicts it. Hence only conclusion II follows.
+
+Q 28 | nrr | Mineral & Land Resources
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): Mining operations are a significant cause of environmental degradation.
+Reason (R): The extraction of minerals from the lithosphere leads to various adverse effects such as depletion of land, pollution of land, water, and air by industrial wastes, and conversion of land to industrial use.
+(1) Both A and R are true, and R is the correct explanation of A
+(2) Both A and R are true, and R is not the correct explanation of A
+(3) A is true, but R is false
+(4) A is false, but R is true
+= 1
+~ Mining is a major cause of environmental degradation, so A is true. R gives the reasons: extracting minerals from the lithosphere depletes and degrades land, pollutes land, water and air with mine and industrial wastes, and converts land to industrial use. Since these effects are exactly why mining degrades the environment, R correctly explains A.
+
+Q 29 | nrr | Energy Resources
+Match the following question based on non-renewable and renewable energy sources.
+Energy Source Type | Characteristics or Impacts
+1. Non-renewable energy | A. Uses resources like solar, wind and hydropower
+2. Fossil fuel combustion | B. Includes coal, oil and natural gas
+3. Renewable energy | C. Causes air pollution and global warming
+4. Biofuel production | D. Derived from plants, garbage and organic matter
+(1) 1-A, 2-C, 3-B, 4-D
+(2) 1-B, 2-D, 3-A, 4-C
+(3) 1-A, 2-B, 3-C, 4-D
+(4) 1-B, 2-C, 3-A, 4-D
+= 4
+~ Non-renewable energy includes the fossil fuels coal, oil and natural gas (1-B). Burning fossil fuels releases CO2, SO2, NOx and particulates, causing air pollution and global warming (2-C). Renewable energy uses sources such as solar, wind and hydropower (3-A). Biofuels are derived from plants, garbage and other organic matter (4-D).
+
+Q 31 | bdv | Biodiversity & Its Value
+Which of the following diversity values can be classified as representing ‘the beauty of a waterfall in the Western Ghats’?
+(1) Aesthetic values
+(2) Ethical values
+(3) Social values
+(4) Option values
+= 1
+~ The aesthetic value of biodiversity is the pleasure and inspiration people get from the beauty of nature, such as scenic landscapes, waterfalls, forests and wildlife, which also supports ecotourism. Ethical value rests on every species' right to exist, social value on cultural and religious links, and option value on possible future uses, so the beauty of a Western Ghats waterfall is an aesthetic value.
+
+Q 32 | bdv | Hotspots & Threats
+Which biogeographical region, known for its high biodiversity, is under threat due to human habitation?
+(1) Biodiversity hotspot
+(2) Ecosystem
+(3) Genetic diversity
+(4) All geographic regions
+= 1
+~ A biodiversity hotspot (concept introduced by Norman Myers in 1988) is a region with at least 1,500 endemic vascular plant species that has already lost 70% or more of its original habitat, largely to human settlement and land use. Hotspots thus combine very high biodiversity with high threat. India has parts of four of the 36 global hotspots: Himalaya, Indo-Burma, Western Ghats and Sri Lanka, and Sundaland.
+
+Q 33 | bdv | Conservation & Biodiversity Act
+In which state is the Kailadevi Wildlife Sanctuary situated?
+(1) Haryana
+(2) Rajasthan
+(3) Madhya Pradesh
+(4) Punjab
+= 2
+~ Kailadevi Wildlife Sanctuary is in Karauli district of eastern Rajasthan and forms part of the Ranthambhore Tiger Reserve. It has dry deciduous forests and is often cited as an example of local communities protecting their forest. It is not in Haryana, Madhya Pradesh or Punjab.
+
+Q 34 | bdv | Biodiversity & Its Value
+Which is the direct utilisation of timber, food, fuelwood, and fodder by local communities?
+(1) Social value
+(2) Productive use value
+(3) Consumptive use value
+(4) Option value
+= 3
+~ Consumptive use value is the value of biodiversity products that local communities collect and use directly for their own needs, such as food, fuelwood, fodder and timber, without selling them in a market. Productive use value applies when such products are sold commercially, while social and option values relate to cultural importance and possible future benefits.
+
+Q 35 | bdv | Biodiversity & Its Value
+Which value is placed on natural products that are consumed after moving through a market?
+(1) Aesthetic value
+(2) Social value
+(3) Ethical value
+(4) Productive use
+= 4
+~ Productive use value is placed on biological products that are harvested and sold in markets, such as timber, fish, honey, medicinal plants, fibre and ivory, and so carry a commercial price. Products used directly by local people without trade have consumptive use value. Aesthetic, social and ethical values are non-market values.
+
+Q 36 | bdv | Biodiversity & Its Value
+Which of the following is NOT a value of biodiversity?
+(1) Consumptive use value
+(2) Productive use value
+(3) Endemic value
+(4) Social value
+= 3
+~ The values of biodiversity usually listed are consumptive use value, productive use value, social value, ethical value, aesthetic value and option value, along with ecosystem service value. 'Endemic' describes a species found naturally only in one region, such as many Western Ghats amphibians; it describes distribution and is not a category of value.
+
+Q 37 | bdv | Biodiversity & Its Value
+Which value is related to biodiversity conservation based on the importance of protecting all forms of life?
+(1) Option value
+(2) Ethical value
+(3) Aesthetic value
+(4) Consumptive value
+= 2
+~ The ethical (moral) value of biodiversity holds that all forms of life have an intrinsic right to exist, irrespective of their usefulness to humans, so humans have a duty to protect them. Option value concerns possible future uses, aesthetic value the beauty of nature, and consumptive value the direct use of products by local people.
+
+Q 38 | gel | Climate Change & Ozone
+What measures can help in controlling the major issue on global warming?
+(1) Minimising solid waste
+(2) Reducing the use of fossil fuels
+(3) Incinerating human-generated waste
+(4) Limiting water waste
+= 2
+~ Global warming is driven mainly by carbon dioxide and other greenhouse gases released by burning coal, oil and natural gas for power, industry and transport. Reducing fossil fuel use through energy efficiency, renewable energy and cleaner transport is therefore the key control measure. Minimising waste or water use helps only marginally, and incinerating waste itself releases CO2.
+
+Q 39 | bdv | Conservation & Biodiversity Act
+In which state is Kokkarebellur village situated, where pelicans are an endangered species?
+(1) Rajasthan
+(2) Karnataka
+(3) Tamil Nadu
+(4) Kerala
+= 2
+~ Kokkarebellur (Kokkare Bellur) is a village in Mandya district, Karnataka, where spot-billed pelicans and painted storks nest on trees inside the village. The villagers have traditionally protected these birds and use their droppings as manure, making it a well-known example of community conservation. The spot-billed pelican is listed as Near Threatened by the IUCN.
+
+Q 40 | bdv | Hotspots & Threats
+What happens when non-native species, like Lantana, are introduced into ecosystems?
+(1) Stabilises local species
+(2) Disrupts balance, causing extinctions
+(3) Enhances biodiversity
+(4) Promotes agriculture
+= 2
+~ Lantana camara, introduced from tropical America as an ornamental, has become an invasive alien species in India. It forms dense thickets, suppresses native plants through competition and allelopathy, reduces fodder for herbivores and increases fire risk. Such invasive species disrupt the ecological balance and can cause decline or extinction of native species, rather than stabilising or enhancing biodiversity.
+
+Q 41 | gel | Climate Change & Ozone
+Read the following statement and conclusions carefully and decide which of the conclusions logically follow(s) from the given statement.
+Statement: It is now recognised globally that biodiversity loss plays a role in climate change. Forests primarily transform carbon dioxide into carbon and oxygen, serving as vital carbon sinks. However, deforestation, along with the escalating emissions of carbon dioxide and other gases from industrial activities, enhances the greenhouse effect.
+Conclusions:
+I. Global warming is leading to the melting of ice caps, which in turn causes sea levels to rise and threatens to submerge low-lying regions around the world.
+II. It is triggering significant changes in the atmosphere, resulting in higher temperatures, severe droughts in certain regions, and sudden floods in others.
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Neither conclusion I nor II follows
+(4) Both conclusions I and II follow
+= 2
+~ The statement says deforestation and rising emissions enhance the greenhouse effect. APPSC treats conclusion II, changes in the atmosphere causing higher temperatures, droughts and floods, as the direct result of a stronger greenhouse effect, while conclusion I, melting ice caps and rising sea levels, goes further than the statement. However, environmental studies textbooks state both effects together, so both can be argued to follow. (Official key; some sources differ.)
+
+Q 42 | bdv | Biodiversity & Its Value
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): The ethical approach to biodiversity conservation asserts that every organism holds intrinsic value, and preserving biodiversity is our duty.
+Reason (R): We are morally obligated to maintain and pass on our biological heritage to future generations in good condition.
+(1) Both A and R are true, and R is the correct explanation of A
+(2) Both A and R are true, and R is not the correct explanation of A
+(3) A is true, but R is false
+(4) A is false, but R is true
+= 1
+~ The ethical value of biodiversity holds that every organism has an intrinsic right to exist, so conserving it is a moral duty; A is true. R is also true: we are obliged to pass on our biological heritage to future generations in good condition, and this moral obligation is the very basis of that duty. Hence R correctly explains A.
+
+Q 43 | bdv | Hotspots & Threats
+Match List I with List II with reference to biodiversity hotspots in India.
+List I | List II
+A) Indo-Burma | I) Himalayan region
+B) Himalaya | II) Entire north-eastern India
+C) The Western Ghats and Sri Lanka | III) Nicobar group of Islands
+D) Sundalands | IV) Western Ghats
+(1) A-II, B-I, C-IV, D-III
+(2) A-III, B-I, C-IV, D-II
+(3) A-I, B-II, C-IV, D-III
+(4) A-II, B-I, C-III, D-IV
+= 1
+~ In India, the Indo-Burma hotspot covers north-eastern India (A-II), the Himalaya hotspot covers the Himalayan region (B-I), the Western Ghats and Sri Lanka hotspot is represented by the Western Ghats (C-IV), and the Sundaland hotspot includes the Nicobar group of islands (D-III). These are India's shares of four of the 36 global biodiversity hotspots.
+
+Q 44 | bdv | Hotspots & Threats
+Match List- I with List II with reference to the threats to biodiversity.
+List I | List II
+A) Habitat loss | I) Fish species
+B) Poaching | II) Humans
+C) Over-exploitation | III) Animals and plants
+D) Co-extinction or overharvesting | IV) Specific animals
+(1) A-II, B-I, C-IV, D-III
+(2) A-III, B-I, C-IV, D-II
+(3) A-I, B-II, C-IV, D-III
+(4) A-III, B-IV, C-II, D-I
+= 4
+~ Habitat loss and fragmentation, the leading cause of biodiversity loss, affects whole communities of animals and plants (A-III). Poaching targets specific animals such as tigers, rhinos and elephants for skins, horns and tusks (B-IV). Over-exploitation is driven by human greed and demand (C-II), and overharvesting has depleted many marine fish species (D-I). Option 4 is the only one with A-III and B-IV.
+
+Q 45 | emt | Structure & Properties
+What is the average number of atoms per unit cell in simple cubic structures if there are 8 atoms corresponding to 8 corners and there are no atoms on the faces or in the interior of the unit cell?
+(1) 1
+(2) 2
+(3) 4
+(4) 6
+= 1
+~ In a simple cubic unit cell each corner atom is shared by eight neighbouring unit cells, so it contributes 1/8 to one cell. With 8 corner atoms and no face or body atoms, atoms per cell = 8 × 1/8 = 1. For comparison, BCC has 2, FCC has 4 and HCP has 6 atoms per unit cell.
+
+Q 46 | emt | Phase Diagrams & Heat Treatment
+What does a phase diagram represent?
+(1) The mechanical properties of materials at different pressures
+(2) The phases in equilibrium at various compositions, temperatures and pressures
+(3) The chemical reactions occurring in a system
+(4) The electrical conductivity of materials
+= 2
+~ A phase diagram (equilibrium diagram) is a map showing which phases are stable in equilibrium for different combinations of composition, temperature and pressure, for example the iron–carbon diagram. It also gives phase compositions, their amounts (lever rule) and transformation temperatures. It does not directly show mechanical properties, chemical reaction steps or electrical conductivity.
+
+Q 47 | emt | Stress-Strain Behaviour
+What distinguishes true stress from nominal (or conventional) stress in a uniaxial tension test?
+(1) True stress considers the original area of the specimen.
+(2) Nominal stress is based on the actual area at a given instant.
+(3) True stress considers the actual area at a given instant.
+(4) Both true stress and nominal stress use the original area of the specimen.
+= 3
+~ Nominal (engineering) stress is the load divided by the original cross-sectional area, σ = F/A0. True stress is the load divided by the actual instantaneous area, σT = F/Ai; since the area shrinks during the test, true stress is higher than nominal stress (σT = σ(1 + ε) before necking). Options 1, 2 and 4 swap or confuse these definitions.
+
+Q 48 | emt | Phase Diagrams & Heat Treatment
+In _______ transformation, a liquid reacts with a solid and forms a new solid at constant temperature during cooling.
+(1) peritectoid
+(2) peritectic
+(3) eutectoid
+(4) monotectic
+= 2
+~ In a peritectic reaction a liquid reacts with a solid on cooling to form a different solid at constant temperature, L + α → β; an example is L + δ → γ at about 1493 °C in the Fe–C system. A peritectoid reaction forms a new solid from two solids, a eutectoid reaction splits one solid into two solids, and a monotectic reaction gives a solid and a second liquid from a liquid.
+
+Q 49 | emt | Phase Diagrams & Heat Treatment
+Which of the following is NOT a primary objective of heat treatment?
+(1) Improve machinability
+(2) Enhance material formability
+(3) Change the product shape
+(4) Restore ductility after cold working
+= 3
+~ Heat treatment (annealing, normalising, hardening, tempering) is controlled heating and cooling to change the microstructure and hence the properties: improving machinability and formability, relieving internal stresses, refining grains and restoring ductility after cold working. It is not meant to change the shape of the product, which is done by forming, casting or machining.
+
+Q 50 | emt | Stress-Strain Behaviour
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): The area under the stress-strain curve represents the energy absorbed by the material during deformation.
+Reason (R): The integral of stress with respect to strain provides a measure of the work done on the material, which is related to the energy absorbed during deformation.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true, but R is not the correct explanation of A
+(3) A is true, but R is false
+(4) A is false, but R is true
+= 1
+~ The area under the stress–strain curve equals ∫σ dε, the work done per unit volume on the material, i.e. the energy absorbed during deformation (modulus of resilience up to the elastic limit, toughness up to fracture). So A is true, and R states exactly why this area represents absorbed energy, making R the correct explanation of A.
+
+Q 51 | emt | Structure & Properties
+Which of the following is NOT a property of ceramics?
+(1) High thermal and chemical resistance
+(2) Poor electrical conductivity (except for certain ceramics)
+(3) Usage in electronic and aerospace applications
+(4) High ductility and malleability
+= 4
+~ Ceramics are ionic or covalent compounds such as oxides, carbides and nitrides. They are hard, have high melting points and good thermal and chemical resistance, are mostly electrical insulators, and are used in electronics, aerospace (thermal tiles) and refractories. Their bonding prevents dislocation movement, so they are brittle, not ductile or malleable.
+
+Q 52 | emt | Structure & Properties
+Match the alloys with their metallic materials.
+Alloy | Metallic Material
+1. Brass | a. Lead and tin
+2. Bronze | b. Aluminium, nickel, cobalt and iron
+3. Alnico | c. Copper and zinc
+4. Terne | d. Copper and Tin
+(1) 1-c, 2-d, 3-b, 4-a
+(2) 1-c, 2-d, 3-a, 4-b
+(3) 1-d, 2-c, 3-a, 4-b
+(4) 1-d, 2-c, 3-b, 4-a
+= 1
+~ Brass is an alloy of copper and zinc (1-c) and bronze of copper and tin (2-d). Alnico, a permanent-magnet material, is iron alloyed with aluminium, nickel and cobalt (3-b). Terne (terne metal) is a lead–tin alloy used to coat steel sheet (4-a). Hence the match is 1-c, 2-d, 3-b, 4-a.
+
+Q 53 | emt | Structure & Properties
+_______ method is particularly used for measuring the grain size when grains are not equiaxed.
+(1) The comparison
+(2) The Jeffries planimetric
+(3) Heyn’s intercept
+(4) The equilibrium
+= 3
+~ Heyn's (linear) intercept method counts the grains or grain boundaries cut by test lines of known length to give the mean intercept length. For non-equiaxed (elongated) grains the lines are laid in different directions, such as along and across the rolling direction, so the grain size in each direction can be measured. The comparison-chart and Jeffries planimetric methods suit equiaxed grains.
+
+Q 54 | emt | Structure & Properties
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement.
+Statement: Alloys with low aluminium content (4% to 7%) are single-phase alloys and can be fabricated by cold working processes, due to their good ductility and malleability.
+Conclusions:
+I. Alloys with low aluminium content are fabricated by cold rolling, drawing and pressing.
+II. These alloys are used in pump castings, valve fittings and gears.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Both conclusions I and II follow.
+(4) Neither conclusion I nor II follows.
+= 1
+~ The statement says low-aluminium (4–7%) alloys are single-phase, ductile and can be fabricated by cold working; cold rolling, drawing and pressing are cold-working processes, so conclusion I follows. The statement says nothing about applications, and pump castings, valve fittings and gears are typical uses of higher-aluminium (about 8–11%) cast aluminium bronzes, so conclusion II does not follow.
+
+Q 55 | emt | Phase Diagrams & Heat Treatment
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement.
+Statement: Increasing the tempering temperature during heat treatment of steel leads to improved ductility and toughness.
+Conclusions:
+I. Increasing the tempering temperature improves brittleness, but there is no effect on the toughness of steel.
+II. Increasing the tempering temperature increases hardness.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Both conclusions I and II follow.
+(4) Neither conclusion I nor II follows.
+= 4
+~ Tempering hardened steel at a higher temperature relieves internal stresses and coarsens the carbides, so hardness and strength fall while ductility and toughness rise, as the statement says. Conclusion I contradicts this by claiming brittleness improves with no effect on toughness, and conclusion II wrongly says hardness increases. So neither conclusion follows.
+
+Q 56 | emt | Structure & Properties
+Which of the following is a non-ferrous metal?
+(1) Grey cast iron
+(2) Mild steel
+(3) Copper
+(4) High carbon steel
+= 3
+~ Ferrous metals have iron as the main constituent: grey cast iron (about 2–4% carbon), mild steel (low carbon) and high carbon steel are all ferrous. Copper contains no iron and is a non-ferrous metal, like aluminium, zinc, lead and tin; it is valued for its high electrical and thermal conductivity and corrosion resistance.
+
+Q 57 | emt | Structure & Properties
+What is the key difference between crystalline and amorphous solids?
+(1) Crystalline solids have an ordered arrangement of atoms, while amorphous solids lack long-range order.
+(2) Crystalline solids are always metals, and amorphous solids are always non-metals.
+(3) Crystalline solids can only exist at high temperatures, while amorphous solids exist at room temperature.
+(4) Crystalline solids are only man-made, while amorphous solids are natural.
+= 1
+~ In crystalline solids the atoms are arranged in a regular, repeating three-dimensional lattice (long-range order), giving sharp melting points and often anisotropy. Amorphous solids such as glass have only short-range order, soften over a range of temperature and are isotropic. Both types can be metallic or non-metallic, natural or man-made, and both exist at room temperature.
+
+Q 58 | flu | Fluid Properties & Pressure
+Convert 10 GPa pressure into MPa.
+(1) 1000 MPa
+(2) 100 MPa
+(3) 10,000 MPa
+(4) 1,00,000 MPa
+= 3
+~ The prefix giga means 10⁹ and mega means 10⁶, so 1 GPa = 10⁹ Pa = 10³ MPa = 1000 MPa. Therefore 10 GPa = 10 × 1000 = 10,000 MPa. Option 1 is the value for 1 GPa and option 4 would be 100 GPa.
+
+Q 59 | flu | Fluid Properties & Pressure
+When the _______ between liquid molecules and a tube is greater than the _______ between liquid molecules, the liquid wets the surface of the tube and there is a capillary rise.
+(1) adhesion, cohesion
+(2) cohesion, adhesion
+(3) adhesion, adhesion
+(4) cohesion, cohesion
+= 1
+~ Adhesion is the attraction between unlike molecules (liquid and tube wall) and cohesion the attraction between like molecules of the liquid. When adhesion exceeds cohesion the liquid wets the wall, forms a concave meniscus and rises in the tube, as water does in glass (h = 4σcosθ/ρgd). When cohesion exceeds adhesion, as with mercury, the meniscus is convex and the liquid is depressed.
+
+Q 60 | flu | Fluid Kinematics & Dynamics
+According to Bernoulli’s equation, the total energy of any fluid particle is the sum of _______.
+(1) pressure energy and kinetic energy only
+(2) kinetic energy and potential energy only
+(3) pressure energy and potential energy only
+(4) pressure energy, kinetic energy and potential energy
+= 4
+~ Bernoulli's equation for steady, ideal, incompressible flow along a streamline is p/ρg + V²/2g + z = constant. The three terms are the pressure energy (pressure head), kinetic energy (velocity head) and potential energy (datum head) per unit weight, and their sum, the total energy of the particle, remains constant.
+
+Q 61 | flu | Fluid Properties & Pressure
+Which of the following is NOT an example of a thixotropic fluid?
+(1) Lipstick
+(2) Printer ink
+(3) Enamel
+(4) Water
+= 4
+~ Thixotropic fluids are non-Newtonian fluids whose apparent viscosity decreases with time under constant shear and recovers on standing; lipstick, printer ink, enamel and other paints behave this way. Water is a Newtonian fluid: its viscosity is constant and shear stress is directly proportional to the rate of shear strain, so it is not thixotropic.
+
+Q 62 | flu | Fluid Kinematics & Dynamics
+The actual path traced by a fluid particle over a period of time is called _______.
+(1) pathline
+(2) streamline
+(3) streakline
+(4) steady line
+= 1
+~ A pathline is the actual path traced by a single fluid particle over a period of time. A streamline is an imaginary line whose tangent at any point gives the velocity direction at an instant, and a streakline joins all particles that have passed through a fixed point, as seen with dye injection. 'Steady line' is not a standard term; in steady flow all three lines coincide.
+
+Q 63 | flu | Pipe Flow & Losses
+What does the Darcy–Weisbach equation describe?
+(1) Pressure distribution in a fluid flow
+(2) Velocity distribution in a laminar flow
+(3) Frictional losses in a pipe flow
+(4) Viscous losses in a turbulent flow
+= 3
+~ The Darcy–Weisbach equation gives the head loss due to friction in pipe flow: hf = fLV²/(2gD), where f is the Darcy friction factor, L the pipe length, V the mean velocity and D the diameter (Indian texts often write hf = 4fLV²/(2gD) with f as the coefficient of friction). It applies to both laminar and turbulent flow and does not give pressure or velocity distributions.
+
+Q 64 | flu | Fluid Properties & Pressure
+Match the properties of fluids with the SI units representing them.
+Property of Fluids | SI Unit
+1. Specific volume | a. kg/m³
+2. Weight density | b. m³/kg
+3. Kinematic viscosity | c. N/m³
+4. Mass density | d. m²/s
+(1) 1-b, 2-c, 3-d, 4-a
+(2) 1-b, 2-d, 3-c, 4-a
+(3) 1-b, 2-c, 3-a, 4-d
+(4) 1-c, 2-b, 3-d, 4-a
+= 1
+~ Specific volume is volume per unit mass, m³/kg (1-b). Weight density (specific weight) is weight per unit volume, N/m³ (2-c). Kinematic viscosity is dynamic viscosity divided by mass density, (N·s/m²)/(kg/m³) = m²/s (3-d). Mass density is mass per unit volume, kg/m³ (4-a).
+
+Q 65 | flu | Fluid Properties & Pressure
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement.
+Statement: Due to surface tension forces acting on a surface, the pressure intensity inside the droplet, bubble and jet of the liquid is more as compared to that outside.
+Conclusions:
+I. When the diameter of a droplet decreases, the intensity of pressure inside the droplet increases.
+II. All the molecules on the free surface experience an upward pull force.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Both conclusions I and II follow.
+(4) Neither conclusion I nor II follows.
+= 1
+~ The excess pressure inside a droplet caused by surface tension is p = 4σ/d, so a smaller diameter gives a higher internal pressure, and conclusion I follows. Conclusion II is not stated, and in fact molecules at the free surface feel a net inward (downward) pull from the molecules below them, not an upward pull, so it does not follow.
+
+Q 66 | flu | Dimensional Analysis & Boundary Layer
+Match the following physical quantities with their measurement units in the SI system.
+Physical Quantity | SI Unit
+1. Angular acceleration | a. N/m²
+2. Discharge | b. rad/s²
+3. Kinematic viscosity | c. m³/s
+4. Shear stress | d. m²/s
+(1) 1-b, 2-c, 3-d, 4-a
+(2) 1-b, 2-d, 3-c, 4-a
+(3) 1-b, 2-c, 3-a, 4-d
+(4) 1-c, 2-b, 3-d, 4-a
+= 1
+~ Angular acceleration is the rate of change of angular velocity, rad/s² (1-b). Discharge is the volume flow rate, m³/s (2-c). Kinematic viscosity has the unit m²/s; its CGS unit is the stoke, 1 stoke = 10⁻⁴ m²/s (3-d). Shear stress is force per unit area, N/m² or pascal (4-a).
+
+Q 67 | flu | Fluid Kinematics & Dynamics
+Which of the following correctly represents the principle of the continuity equation for an incompressible fluid flowing through a pipe?
+(1) ρ1⋅V1=ρ2⋅V2
+(2) A1⋅ρ1=A2⋅ρ2
+(3) A1⋅V1=A2⋅V2
+(4) ρ1⋅A1=ρ2⋅A2
+= 3
+~ The continuity equation follows from conservation of mass: the mass flow rate ρ1A1V1 = ρ2A2V2 at any two sections. For an incompressible fluid ρ1 = ρ2, so A1V1 = A2V2 = Q, the discharge, which means velocity rises where the pipe narrows. Options 1, 2 and 4 leave out area or velocity and do not express this principle.
+
+Q 68 | flu | Fluid Properties & Pressure
+For Newtonian fluids, the relation between shear stress and velocity gradient is a _______.
+(1) parabolic curve
+(2) zigzag line
+(3) straight line
+(4) sinusoidal curve
+= 3
+~ Newton's law of viscosity states τ = μ(du/dy): shear stress is directly proportional to the velocity gradient. For a Newtonian fluid μ is constant, so a plot of shear stress against velocity gradient is a straight line through the origin with slope μ. Non-Newtonian fluids such as pseudoplastics and dilatants give curved lines.
+
+Q 69 | flu | Fluid Properties & Pressure
+Find the pressure (in N/m²) due to a column of 0.4 m for the oil of density 800 kg/m³ and acceleration due to gravity 10 m/s².
+(1) 3200
+(2) 3924
+(3) 3000
+(4) 3150
+= 1
+~ The pressure due to a liquid column is p = ρgh. Here p = 800 kg/m³ × 10 m/s² × 0.4 m = 3200 N/m², or 3.2 kPa. Using g = 9.81 m/s² would give about 3139 N/m², which is not an option, so the given value g = 10 m/s² must be used.
+
+Q 70 | flu | Pipe Flow & Losses
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A): The Hagen–Poiseuille equation describes the laminar flow of an incompressible, Newtonian fluid through a cylindrical pipe.
+Reason (R): For a flow through a circular pipe, according to the Hagen–Poiseuille law, the flow rate is directly proportional to the pressure drop.
+(1) Both A and R are true and R is the correct explanation of A
+(2) Both A and R are true, but R is not the correct explanation of A
+(3) A is true, but R is false
+(4) A is false, but R is true
+= 1,2
+~ A is true: the Hagen–Poiseuille equation, Δp = 32μVL/D² or Q = πD⁴Δp/(128μL), applies to steady laminar flow of an incompressible Newtonian fluid in a circular pipe. R is also true, since Q is directly proportional to Δp. Because R states a result of the law rather than why it describes laminar flow, whether it explains A is debatable, so APPSC accepted both options 1 and 2.
+
+Q 71 | flu | Fluid Properties & Pressure
+Which of the following statements about surface tension is correct?
+(1) Surface tension acts perpendicular to the surface of a liquid.
+(2) Surface tension is independent of temperature.
+(3) Surface tension is the force per unit length acting parallel to the liquid surface at the interface.
+(4) Surface tension increases as the liquid temperature increases.
+= 3
+~ Surface tension is the force per unit length (N/m) acting tangentially, that is parallel to the liquid surface, across any line drawn on the surface or interface; it arises from unbalanced cohesive forces on surface molecules. It decreases as temperature rises (water: about 0.073 N/m at 20 °C and 0.059 N/m at 100 °C), so options 1, 2 and 4 are wrong.
+
+Q 72 | flu | Fluid Properties & Pressure
+What is the value of density of water (in gm/cm³)?
+(1) 1000
+(2) 1
+(3) 10
+(4) 100
+= 2
+~ The density of water (at 4 °C, and very nearly at room temperature) is 1000 kg/m³. Since 1 kg = 1000 g and 1 m³ = 10⁶ cm³, 1000 kg/m³ = (1000 × 1000 g)/(10⁶ cm³) = 1 g/cm³. Option 1, 1000, is the value in kg/m³, not in g/cm³.
+
+Q 73 | flu | Pipe Flow & Losses
+Which of the following is NOT a minor head loss through a pipe?
+(1) Loss due to sudden enlargement
+(2) Loss at the entrance of the pipe
+(3) Loss due to bends or pipe fittings
+(4) Loss due to friction
+= 4
+~ In pipe flow the major loss is the frictional loss along the length of the pipe, calculated by the Darcy–Weisbach equation. Minor losses are local losses caused by changes in velocity or direction: sudden enlargement or contraction, entrance and exit, bends, valves and other fittings, and obstructions. So loss due to friction is not a minor loss.
+
+Q 74 | ptd | Material & Energy Balances
+Which of the following statements accurately describes the principle of conservation of mass?
+(1) The principle of conservation of mass states that mass can be created or destroyed in an isolated system.
+(2) The principle of conservation of mass asserts that the total mass of a closed system remains constant over time, regardless of internal changes.
+(3) The principle of conservation of mass applies only to mechanical systems and does not hold true for chemical reactions.
+(4) The principle of conservation of mass is only relevant in the scenarios involving fluid dynamics and does not apply to chemical reactions.
+= 2
+~ The law of conservation of mass (Lavoisier) states that mass can be neither created nor destroyed, so the total mass of a closed system stays constant whatever physical or chemical changes occur inside it. It is the basis of all material balances (for total mass, input − output = accumulation). Option 1 states the opposite, and options 3 and 4 are wrong because the principle holds for chemical reactions too.
+
+Q 75 | ptd | Material & Energy Balances
+‘_______’ is a term denoting a process stream that returns the material from downstream of a process unit back to the process unit.
+(1) Recycle stream
+(2) Bypass stream
+(3) Purge stream
+(4) Fresh feed stream
+= 1
+~ A recycle stream takes material leaving a downstream unit (often unreacted feed separated from the product) and returns it to the process unit, improving overall conversion and yield. A bypass stream skips the unit and joins its outlet, a purge stream is a small portion removed from a recycle loop to stop inerts building up, and fresh feed is new material entering the process.
+
+Q 76 | flu | Fluid Kinematics & Dynamics
+With reference to mechanical systems, which of the following options best describes translational degrees of freedom?
+(1) Movement around an axis
+(2) Movement along straight lines
+(3) Movement due to rotation
+(4) Movement resulting from deformation
+= 2
+~ A translational degree of freedom is an independent way in which a body can move bodily along a straight line, that is, along the x, y or z axis, without turning. A free rigid body in space has six degrees of freedom: three translational (along the three axes) and three rotational (about them). Movement around an axis and movement due to rotation describe rotational freedom, and deformation is a change of shape, not translation.
+
+Q 77 | ptd | Material & Energy Balances
+Nitrogen in the combustion air passes through unreacted and is used as a tie component. This principle can also be used to measure:
+(1) the fraction of the reagent that reacts, to optimise the reactor design and to minimise the by-product formation
+(2) the performance of a reactor or a plant
+(3) the flow of a process stream, by introducing a measured flow of some easily analysed (compatible) materials
+(4) the overall performance of a plant that includes all the chemical and physical losses
+= 3
+~ A tie component passes through a process unchanged, so a single balance on it links the streams; nitrogen in combustion air links the air fed to the flue gas. Sinnott (Coulson & Richardson, Vol. 6) notes that the same principle measures the flow of a process stream: a measured flow of an easily analysed, compatible tracer is added and its concentration downstream gives the unknown flow. Options 1, 2 and 4 concern conversion and plant performance, not tie components.
+
+Q 78 | ptd | Laws of Thermodynamics
+The throttling process involves the passage of a higher-pressure fluid through a narrow constriction. The effect is _______.
+(1) increase in pressure and reduction in volume
+(2) reduction in pressure as well as volume
+(3) increase in pressure as well as volume
+(4) reduction in pressure and increase in volume
+= 4
+~ Throttling is flow through a valve, orifice or porous plug with no work done and negligible heat transfer and kinetic-energy change, so the enthalpy stays constant (h1 = h2). The pressure falls sharply across the restriction and the fluid expands, so its specific volume increases (an ideal gas keeps the same temperature; real gases cool or warm by the Joule–Thomson effect). Pressure never rises in throttling, and volume does not fall, so the other options are wrong.
+
+Q 79 | ptd | Equations of State & Properties
+According to Joule’s law, the specific internal energy of a gas depends on _______.
+(1) pressure
+(2) volume
+(3) temperature
+(4) mass
+= 3
+~ Joule's free-expansion experiment showed that a gas expanding into a vacuum, with no work done and no heat exchanged, shows no change in temperature, so its internal energy is unchanged even though its pressure and volume change. Hence the specific internal energy of an ideal (perfect) gas is a function of temperature alone, u = f(T), with du = cv dT. Mass does not affect a specific (per-kilogram) property.
+
+Q 80 | ptd | Material & Energy Balances
+What does the term 'Degrees of Freedom' represent in process engineering?
+(1) The total equations used in solving for unknowns
+(2) The energy stored within a system undergoing a change of state
+(3) The number of inlet and outlet streams in a process
+(4) The number of variables that can be manipulated after design specifications are set
+= 4
+~ Degrees of freedom = number of independent variables − number of independent equations relating them; it is the number of variables that must be fixed for a problem to be completely specified. Once the design specifications are set, the remaining degrees of freedom are the variables still free to be adjusted or manipulated (for example, by the control system). It is not the count of equations, an energy term or the number of streams.
+
+Q 81 | ptd | Laws of Thermodynamics
+Match the following terms related to conservation of energy with their descriptions.
+Term | Description
+1. Law of conservation of energy | a. Total energy of a system remains constant over time.
+2. Mechanical energy | b. Energy associated with the position or configuration of an object
+3. Potential energy | c. Energy associated with the motion of an object
+4. Kinetic energy | d. Sum of potential energy and kinetic energy in a system
+(1) 1-c, 2-d, 3-b, 4-a
+(2) 1-c, 2-d, 3-a, 4-b
+(3) 1-a, 2-d, 3-b, 4-c
+(4) 1-d, 2-c, 3-b, 4-a
+= 3
+~ The law of conservation of energy states that the total energy of an isolated system remains constant; energy only changes from one form to another (1-a). Mechanical energy is the sum of potential and kinetic energy (2-d). Potential energy is energy due to position or configuration, such as mgh (3-b), and kinetic energy is energy due to motion, ½mv² (4-c). Hence 1-a, 2-d, 3-b, 4-c.
+
+Q 82 | ptd | Material & Energy Balances
+Which of the following types of stream is used to remove the accumulation of an inert or unwanted material that might otherwise build up in the recycle stream?
+(1) Recycle stream
+(2) Bypass stream
+(3) Purge stream
+(4) Fresh feed stream
+= 3
+~ A purge is a small stream drawn off a recycle loop so that inerts or unwanted by-products entering with the fresh feed do not build up; at steady state the amount purged equals the amount entering, as with argon and methane purged from ammonia synthesis loops. A recycle stream returns material to the unit, a bypass sends part of the feed around the unit, and fresh feed is the raw material input.
+
+Q 83 | ptd | Equations of State & Properties
+Match the following based on the Properties of Thermodynamics of real systems.
+Category | Description
+1. Measured properties | A. It can be derived by combining measured and fundamental properties.
+2. Fundamental properties | B. It can be directly observed in a laboratory.
+3. Derived properties | C. It can be derived from basic thermodynamic laws.
+(1) 1-B, 2-A, 3-C
+(2) 1-C, 2-B, 3-A
+(3) 1-A, 2-C, 3-B
+(4) 1-B, 2-C, 3-A
+= 4
+~ Thermodynamic properties are grouped three ways (as in Koretsky's text). Measured properties such as pressure, volume and temperature can be observed directly in a laboratory (1-B). Fundamental properties such as internal energy and entropy arise from the first and second laws (2-C). Derived properties such as enthalpy (H = U + PV) and the Gibbs and Helmholtz energies are defined by combining measured and fundamental properties (3-A).
+
+Q 84 | ptd | Equations of State & Properties
+Which of the following is a key correction applied in the Van der Waals equation of state for real gases?
+(1) The volume term accounts for molecular interactions, and the pressure term accounts for molecular size.
+(2) Both pressure and volume terms account for molecular size.
+(3) The pressure term accounts for intermolecular forces, and the volume term accounts for molecular size.
+(4) Both pressure and volume terms account for intermolecular forces.
+= 3
+~ The van der Waals equation for one mole is (P + a/V²)(V − b) = RT. The term a/V² is added to the pressure to allow for intermolecular attractive forces, which reduce the pressure the gas exerts on the walls, and b (the co-volume) is subtracted from the volume to allow for the finite size of the molecules. So the pressure term corrects for intermolecular forces and the volume term for molecular size; option 1 swaps them.
+
+Q 85 | ptd | Laws of Thermodynamics
+Which of the following correctly represents the First Law of Thermodynamics for a closed system undergoing a change of state?
+(1) Q = W/ΔE
+(2) Q − W = ΔE
+(3) Q + W = ΔE
+(4) Q = ΔE × W
+= 2
+~ For a closed system the first law states that heat added minus work done by the system equals the change in the system's total energy: Q − W = ΔE (ΔE = ΔU + ΔKE + ΔPE, usually just ΔU). Options 1 and 4 are not energy balances. Option 3 is the same law under the convention where W is work done on the system (IUPAC, newer Himmelblau editions); the key follows the usual engineering sign convention. (Official key; some sources differ.)
+
+Q 86 | ptd | Equations of State & Properties
+Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement.
+Statement: The degree of freedom in a system represents the number of independent variables or parameters required to describe the state of the system completely.
+Conclusions:
+I. Higher degrees of freedom generally mean smaller sample sizes.
+II. The degree of freedom of a system depends solely on the number of components present.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Both conclusions I and II follow.
+(4) Neither conclusion I nor II follows.
+= 4
+~ The statement only defines degrees of freedom as the number of independent variables needed to fix the state of a system. Conclusion I brings in sample size, which the statement does not mention (in statistics, larger samples give more degrees of freedom, not fewer). Conclusion II is not implied either: by the Gibbs phase rule, F = C − P + 2, the degrees of freedom depend on the number of phases as well as components. So neither follows.
+
+Q 87 | ptd | Laws of Thermodynamics
+Which of the following statements is FALSE about the second law of thermodynamics?
+(1) It is impossible for a heat engine to produce a network in a complete cycle if it exchanges heat only with bodies at a single fixed temperature.
+(2) The magnitude of entropy of the entire universe, as an isolated system, will always increase over time.
+(3) Heat itself flows from a colder body to a hotter body.
+(4) Every isolated system becomes more disordered over time.
+= 3
+~ The Clausius statement of the second law says heat cannot by itself flow from a colder body to a hotter body; work must be supplied, as in a refrigerator, so option 3 is false. Option 1 is the Kelvin–Planck statement (no net work from a single reservoir), option 2 says the entropy of the universe, an isolated system, increases in all real processes, and option 4 expresses the same entropy increase as growing disorder; these are true.
+
+Q 88 | apc | Water Quality & Wastewater Treatment
+What is a significant source of thermal pollution in aquatic ecosystems?
+(1) Agricultural runoff containing pesticides
+(2) Urban stormwater runoff carrying oil and grease
+(3) Discharge of heated water from industrial facilities
+(4) Atmospheric deposition of mercury
+= 3
+~ Thermal pollution is the harmful rise in the temperature of a water body, mainly from heated cooling water discharged by thermal and nuclear power plants and industries. Warmer water holds less dissolved oxygen and raises the metabolic rate of aquatic organisms, stressing fish and favouring algal growth. Pesticide runoff, oil and grease, and mercury deposition are forms of chemical pollution, not thermal pollution.
+
+Q 89 | apc | Water Quality & Wastewater Treatment
+What is a key benefit of recycling wastewater for industrial applications?
+(1) Increase in water consumption
+(2) Reduced water quality
+(3) Increased energy efficiency
+(4) Minimised environmental impact
+= 4
+~ Recycling treated wastewater within industry cuts fresh-water withdrawal and reduces the volume of effluent discharged to rivers and land, so its key benefit is a smaller environmental impact; zero liquid discharge (ZLD) schemes promoted by CPCB rest on this idea. Recycling lowers, not raises, fresh-water consumption, the water is treated to the quality needed, and energy efficiency is not its main benefit, since advanced treatment such as reverse osmosis often needs extra energy.
+
+Q 90 | apc | Soil Pollution
+Which of the following is a primary anthropogenic source of soil pollution?
+(1) Volcanic eruptions
+(2) Industrial activities
+(3) Weathering of rocks
+(4) Natural erosion processes
+= 2
+~ Anthropogenic means caused by human activity. Industrial activities pollute soil through dumping of solid and hazardous wastes, discharge of effluents, fly ash and deposition of heavy metals such as lead, cadmium and chromium; agriculture (pesticides, fertilisers) and urban waste are other human sources. Volcanic eruptions, weathering of rocks and natural erosion are natural processes, not anthropogenic ones.
+
+Q 91 | apc | Noise Pollution
+Which governmental body in India is responsible for the implementation and enforcement of the Noise Pollution (Regulation and Control) Rules, 2000?
+(1) Ministry of Environment, Forest and Climate Change
+(2) Ministry of Home Affairs
+(3) Ministry of Urban Development
+(4) Ministry of Health and Family Welfare
+= 1
+~ The Noise Pollution (Regulation and Control) Rules, 2000 were notified by the Ministry of Environment and Forests (now MoEFCC) under the Environment (Protection) Act, 1986. The ministry frames and amends the rules and their ambient noise standards for industrial, commercial, residential and silence zones, while enforcement on the ground is by designated authorities (such as District Magistrates and Police Commissioners) and the pollution control boards. The other ministries have no such role.
+
+Q 92 | apc | Air Pollution & Control
+Which of the following technologies is NOT typically used for controlling particulate emissions from industrial sources?
+(1) Electrostatic Precipitator (ESP)
+(2) Fabric filter (baghouse)
+(3) Wet scrubber
+(4) Catalytic converter
+= 4
+~ A catalytic converter, fitted in vehicle exhausts, oxidises CO and hydrocarbons and reduces NOx over platinum, palladium and rhodium catalysts; it treats gases, not particles. Electrostatic precipitators (charging and collecting particles), fabric filters or baghouses (filtering gas through cloth bags) and wet scrubbers (capturing particles in liquid droplets) are standard particulate control devices in industry.
+
+Q 93 | apc | Air Pollution & Control
+Which of the following pollutants can be controlled using both Selective Catalytic Reduction (SCR) and Selective Non-Catalytic Reduction (SNCR) technologies?
+(1) Sulphur dioxide (SO2)
+(2) Carbon monoxide (CO)
+(3) Nitrogen oxides (NOx)
+(4) Particulate Matter (PM)
+= 3
+~ Both SCR and SNCR reduce nitrogen oxides to nitrogen and water by injecting ammonia or urea. SCR works over a catalyst (such as V2O5–TiO2) at about 300–400 °C, e.g. 4NO + 4NH3 + O2 → 4N2 + 6H2O, while SNCR needs no catalyst but a higher temperature of about 900–1100 °C. SO2 is controlled by flue gas desulphurisation, CO by oxidation, and particulate matter by ESPs or bag filters.
+
+Q 94 | apc | Water Quality & Wastewater Treatment
+What is the primary mechanism by which sedimentation tanks remove solids from wastewater?
+(1) Biological degradation
+(2) Physical settling
+(3) Chemical precipitation
+(4) Filtration
+= 2
+~ A sedimentation (settling) tank is a quiet basin in which suspended solids heavier than water settle under gravity, a purely physical unit operation; primary clarifiers remove about 50–70% of suspended solids and 25–40% of BOD (Metcalf & Eddy). Biological degradation takes place in aeration tanks, chemical precipitation needs added chemicals, and filtration passes water through a granular medium.
+
+Q 95 | apc | Water Quality & Wastewater Treatment
+Which of the following describes the composition of activated sludge used in the process?
+(1) Pure oxygen
+(2) Anaerobic bacteria
+(3) Aerobic microorganisms
+(4) Chemical coagulants
+= 3
+~ Activated sludge is the flocculent mass of aerobic microorganisms (mainly heterotrophic bacteria, with protozoa and rotifers) grown in an aerated tank; these microbes oxidise the organic matter in sewage. Part of the settled sludge is returned to the aeration tank to keep a high microbial population (MLSS). Oxygen is supplied to the sludge but is not the sludge, anaerobic bacteria work in digesters, and coagulants belong to chemical treatment.
+
+Q 96 | apc | Water Quality & Wastewater Treatment
+What is the primary function of the grit chamber in the wastewater treatment process?
+(1) Filtering out floating debris
+(2) Sedimenting heavy inorganic particles
+(3) Grinding coarse materials
+(4) Chlorinating wastewater
+= 2
+~ The grit chamber, placed after the screens, slows the flow (to about 0.3 m/s) so that heavy inorganic particles such as sand, gravel and cinders (specific gravity about 2.65) settle out while lighter organic matter passes on. This protects pumps and pipes from abrasion and prevents grit deposits in later units. Screens remove floating debris, comminutors grind coarse solids, and chlorination is used for disinfection.
+
+Q 98 | apc | Water Quality & Wastewater Treatment
+Read the following statement and conclusions carefully and decide which of the given conclusions is/are true based on the statement.
+Statement:Drinking water quality standards vary globally due to differences in environmental conditions, population demographics, and health considerations.
+Conclusions:
+I. Developing countries often have more lenient drinking water quality standards compared to developed nations.
+II. Adherence to stringent drinking water quality standards can be financially challenging for some regions.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both conclusions I and II are true
+(4) Neither conclusion I nor II is true
+= 3
+~ The key treats both conclusions as true: if standards vary with local conditions and health priorities, some countries, often developing ones with limited treatment infrastructure, adopt less stringent limits, and meeting stringent standards needs costly treatment and monitoring, which strains poorer regions. Strictly, the statement does not mention cost or level of development, so a strict reading would accept neither conclusion. (Official key; some sources differ.)
+
+Q 99 | apc | Water Quality & Wastewater Treatment
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A):The effluent from secondary wastewater treatment processes typically requires further treatment before it can be safely discharged into the environment.
+Reasoning (R):Secondary treatment processes effectively remove all contaminants and pathogens from wastewater.
+(1) Both (A) and (R) are true
+(2) Both (A) and (R) are false
+(3) (A) is true and (R) is false
+(4) (A) is false and (R) is true
+= 3
+~ Secondary (biological) treatment removes most biodegradable organic matter and suspended solids (roughly 85–90% of BOD), but nutrients (nitrogen, phosphorus), pathogens, residual solids and refractory chemicals remain, so the effluent often needs tertiary treatment and disinfection before safe discharge or reuse. So A is true. R is false because secondary treatment does not remove all contaminants and pathogens.
+
+Q 100 | apc | Air Pollution & Control
+What causes the corrosive impact of sulphur dioxide on respiratory tissues?
+(1) Formation of sulphur-containing acids
+(2) Direct inhalation of pure sulphur dioxide
+(3) Interaction with nitrogen oxides
+(4) Breakdown into harmless particles
+= 1
+~ Sulphur dioxide is highly soluble in water. In the moist lining of the nose, throat and airways it dissolves to form sulphurous acid (H2SO3), and on oxidation it gives sulphuric acid and acid sulphate aerosols; these acids irritate and corrode respiratory tissue, causing bronchoconstriction and inflammation. The damage comes from this acid formation, not from reaction with nitrogen oxides, and SO2 does not break down into harmless particles.
+
+Q 101 | apc | Noise Pollution
+What is a common source of noise pollution associated with military activities?
+(1) Fireworks displays
+(2) Sonic booms
+(3) Bicycle races
+(4) Hiking trails
+= 2
+~ A sonic boom is the loud shock-wave noise produced when an aircraft flies faster than sound; supersonic military jets, along with artillery firing, explosions and low-flying aircraft, are typical military noise sources. Fireworks are a civilian, festive source of noise, and bicycle races and hiking trails are not significant noise sources at all.
+
+Q 102 | apc | Soil Pollution
+Which of the following is NOT considered a type of soil pollution?
+(1) Accumulation of heavy metals
+(2) Excessive use of pesticides
+(3) Chemical contamination from industrial waste
+(4) Natural weathering of rocks
+= 4
+~ Soil pollution is contamination of soil, mostly by human activity, with substances that harm soil health, plants, animals or people. Heavy metal accumulation, excessive pesticide use and chemicals from industrial waste are all soil pollution. Natural weathering of rocks is the normal soil-forming process that breaks parent rock into mineral particles, so it is not a type of soil pollution.
+
+Q 103 | apc | Water Quality & Wastewater Treatment
+Which method is primarily used in the screening process of wastewater treatment?
+(1) Sedimentation
+(2) Grinding large materials
+(3) Physical removal of large pollutants
+(4) Chemical neutralisation
+= 3
+~ Screening is the first unit operation in a sewage treatment plant. Bar racks and screens physically remove large floating and suspended objects such as rags, sticks, plastics and paper, which would otherwise damage pumps and clog later units. Sedimentation (settling), grinding (comminution) and chemical neutralisation are separate processes, not screening.
+
+Q 104 | apc | Water Quality & Wastewater Treatment
+Match the following types of water pollution in List I with their respective descriptions in List II.
+(List I) Types of water pollution | (List II) Descriptions
+A. Point source pollution | 1. Pollution that originates from diffuse sources and is challenging to trace back to specific origins
+B. Non-point source pollution | 2. Pollution resulting from the discharge of untreated or partially treated sewage or wastewater into water bodies
+C. Thermal pollution | 3. Pollution caused by the runoff of chemicals, fertilisers, and pesticides from agricultural fields into water bodies
+D. Organic pollution | 4. Pollution caused by the release of heated water from industrial processes or power plants into water bodies
+E. Nutrient pollution | 5. Pollution resulting from the release of pollutants from identifiable and discrete sources, such as industrial facilities or wastewater treatment plants
+(1) A-5, B-1, C-4, D-2, E-3
+(2) A-1. B-2, C-4, D-5, E-3
+(3) A-2, B-3, C-4, D-5, E-1
+(4) A-3, B-2, C-1, D-4, E-5
+= 1
+~ Point source pollution comes from identifiable, discrete outlets such as industrial or sewage treatment plant discharges (A-5). Non-point pollution comes from diffuse sources that are hard to trace (B-1). Thermal pollution is the release of heated water from industries and power plants (C-4). Organic pollution comes from untreated or partly treated sewage (D-2), and nutrient pollution from runoff of fertilisers and agrochemicals from farms (E-3).
+
+Q 105 | apc | Water Quality & Wastewater Treatment
+Match the following based on the activated sludge process.
+Process Steps | Key Features/Outcomes
+1. Aeration tank | A. Facilitates degradation by microorganisms
+2. Sedimentation tank | B. Converts organic matter to methane and carbon dioxide
+3. Anaerobic digester | C. Microorganisms settle out as sludge
+4. Sludge drying beds | D. Removes water through evaporation and seepage
+(1) 1-A, 2-C, 3-B, 4-D
+(2) 1-B, 2-C, 3-A, 4-D
+(3) 1-A, 2-D, 3-B, 4-C
+(4) 1-B, 2-D, 3-A, 4-C
+= 1
+~ In the activated sludge process, the aeration tank keeps microorganisms in contact with sewage and oxygen so that they degrade the organic matter (1-A). In the secondary sedimentation tank the microbial flocs settle out as sludge (2-C). Excess sludge is stabilised in an anaerobic digester, where organic matter becomes methane and carbon dioxide (3-B), and sludge drying beds remove water by evaporation and seepage (4-D).
+
+Q 106 | swm | Municipal Solid Waste
+Which of the following types of solid waste best describes ‘municipal solid waste’?
+(1) Hazardous
+(2) Non-hazardous
+(3) Non-toxic
+(4) Toxic
+= 2
+~ Municipal solid waste is the everyday waste from households, shops, offices, institutions and markets, such as food, paper, plastics and glass, and is classed as non-hazardous waste. Hazardous and toxic wastes are handled separately under the Hazardous and Other Wastes Rules, 2016 and the Bio-Medical Waste Management Rules, 2016. 'Non-toxic' is not a waste category, and MSW can still contain small amounts of domestic hazardous waste.
+
+Q 107 | swm | Municipal Solid Waste
+What is the term for the decomposition of biodegradable solid waste by earthworms?
+(1) Vermicomposting
+(2) Composting
+(3) Landfill
+(4) Disposal
+= 1
+~ Vermicomposting uses earthworms such as Eisenia fetida and Eudrilus eugeniae to break down biodegradable waste; the worms eat the waste and excrete nutrient-rich vermicast used as manure. Ordinary composting is decomposition by microorganisms alone, landfill is disposal of waste in the ground, and disposal is a general term for the final placement of waste.
+
+Q 108 | swm | Municipal Solid Waste
+Which of the following is NOT included as municipal solid waste (MSW)?
+(1) Food waste from private homes
+(2) Paper and glass bottles from institutions
+(3) Construction and demolition debris
+(4) Plastic cans from commercial establishments
+= 3
+~ Municipal solid waste covers household, commercial and institutional waste such as food waste, paper, glass and plastic containers. Construction and demolition debris (concrete, bricks, soil, steel) is a separate waste stream, governed in India by the Construction and Demolition Waste Management Rules, 2016, and is managed separately from MSW. Options 1, 2 and 4 are typical MSW components.
+
+Q 109 | swm | Municipal Solid Waste
+Which waste contains a wide variety of materials such as food waste, vegetable waste, paper, plastic, cardboard, aluminium foil, etc.?
+(1) Municipal solid waste
+(2) Industrial waste
+(3) Agricultural waste
+(4) Hazardous waste
+= 1
+~ Municipal solid waste is a heterogeneous mixture of food and vegetable waste, paper, cardboard, plastics, glass, metals and foils from homes, shops and institutions. Industrial waste depends on the specific process, agricultural waste is mainly crop residues and manure, and hazardous waste is defined by toxic, corrosive, flammable or reactive properties rather than by such a mix.
+
+Q 110 | swm | Municipal Solid Waste
+The process of burning municipal solid waste in a designated furnace at appropriate temperatures and conditions is called:
+(1) landfill
+(2) recycling
+(3) incineration
+(4) vermicomposting
+= 3
+~ Incineration is controlled burning of waste in a specially designed furnace at high temperature (usually above 850 °C) with enough air and residence time, converting combustible matter to carbon dioxide, water vapour and ash and cutting waste volume by about 80–90%; the heat can be recovered as energy. Landfill is disposal in the ground, recycling reprocesses materials, and vermicomposting uses earthworms.
+
+Q 111 | swm | Municipal Solid Waste
+Which of the following processes is known for decomposing organic matter in waste?
+(1) Recycling
+(2) Decomposition
+(3) Incineration
+(4) Composting
+= 4
+~ Composting is the controlled aerobic decomposition of the organic fraction of waste by microorganisms (bacteria, fungi, actinomycetes) into a stable, humus-like product called compost; temperatures reach about 55–65 °C in the active phase. 'Decomposition' is only the general natural process, not a waste management method; recycling reprocesses materials, and incineration burns waste rather than decomposing it biologically.
+
+Q 112 | swm | Municipal Solid Waste
+Which of the following explains the challenge in recycling of plastics?
+(1) Due to varying sizes of plastic items
+(2) Due to various types of polymer resins
+(3) Because it is a very hard material
+(4) Because it is naturally adhesive
+= 2
+~ Plastics are made from many different polymer resins, such as PET, HDPE, PVC, LDPE, PP and PS (resin identification codes 1 to 6, with 7 for other plastics), which melt at different temperatures and are mostly incompatible with one another. Mixed plastics must therefore be sorted by resin type before recycling, which is costly and difficult, and contamination lowers quality. Size, hardness or adhesiveness are not the main problem.
+
+Q 113 | swm | Municipal Solid Waste
+What strategy should be adopted for solid waste disposal?
+(1) Waste reduction management plan
+(2) Waste utilisation management plan
+(3) Recycling waste management plan
+(4) Integrated waste management plan
+= 4
+~ Integrated solid waste management combines several methods in a hierarchy: source reduction, reuse, recycling and composting, energy recovery, and finally safe disposal in sanitary landfills, chosen to suit local waste. It is preferred because no single option such as reduction, utilisation or recycling can handle all waste on its own; the Solid Waste Management Rules, 2016 follow this integrated approach.
+
+Q 114 | swm | Municipal Solid Waste
+A statement is given below, followed by two conclusions numbered I and II. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions can be drawn definitely from the given statement.
+Statement:
+Vermi-composting mimics natural processes to recycle nutrients and create compost, which can be used as manure for agriculture and gardening.
+Conclusions:
+I. Vermi-composting helps in managing organic waste sustainably.
+II. Nutrients in compost are lost permanently and cannot be reused.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Neither conclusion I nor II follows.
+(4) Both conclusion I and II follow.
+= 1
+~ The statement says vermicomposting recycles nutrients and makes compost that can be used as manure for farming and gardening, so it is a sustainable way of managing organic waste and conclusion I follows. Conclusion II contradicts the statement, since the nutrients are recycled into compost and reused, not lost. Hence only conclusion I follows.
+
+Q 115 | swm | Municipal Solid Waste
+What is the primary risk associated with incineration in solid waste management?
+(1) Insufficient temperature for oxidation
+(2) Air pollution and toxic ash disposal
+(3) Inability to reduce waste volume
+(4) Complete elimination of recyclable materials
+= 2
+~ Incineration greatly reduces waste volume, but its main risk is pollution: flue gases can carry particulates, acid gases (HCl, SO2), NOx, heavy metals such as mercury and cadmium, and dioxins and furans, while the fly ash and bottom ash contain toxic metals that need safe disposal. A properly run incinerator works at adequate temperature, cuts volume by about 80–90%, and recyclables can be separated beforehand.
+
+Q 116 | swm | Municipal Solid Waste
+Select the option that is true regarding the following two statements labelled Assertion (A) and Reason (R).
+Assertion (A):Reducing the consumption of raw materials is one of the most effective methods to decrease the volume of solid waste.
+Reason (R):Solid wastes are rarely produced during the conversion of raw materials into consumable goods.
+(1) Both A and R are true, and R is the correct explanation of A
+(2) Both A and R are true, and R is not the correct explanation of A
+(3) A is true, but R is false
+(4) A is false, but R is true
+= 3
+~ Reducing the use of raw materials (source reduction) is at the top of the waste management hierarchy and is one of the most effective ways to cut solid waste, so A is true. R is false: solid wastes are produced at every stage of turning raw materials into goods, from mining and processing to manufacturing and packaging, which is exactly why reducing raw material use reduces waste.
+
+Q 117 | swm | Municipal Solid Waste
+Which of the following is NOT a control measure of urban and industrial wastes?
+(1) Source reduction
+(2) Dumping and burning in the town
+(3) Recycling
+(4) Disposal
+= 2
+~ Open dumping and burning of waste in towns is itself a source of pollution: it releases smoke, dioxins and odour, breeds flies and rodents, and contaminates soil and groundwater; the Solid Waste Management Rules, 2016 prohibit burning waste in the open. Source reduction, recycling and proper disposal in sanitary landfills are recognised control measures for urban and industrial waste.
+
+Q 118 | swm | Municipal Solid Waste
+Read the following statement and conclusions carefully and decide which of the conclusions logically follow(s) from the given statement.
+Statement:Incineration involves burning municipal solid waste in a furnace that is specifically designed for this purpose, under appropriate temperature and operational conditions.
+Conclusions:
+I. It is a chemical process where the combustible elements of the waste mix with oxygen, resulting in the formation of carbon dioxide and water that are emitted into the atmosphere.
+II. This process, known as oxidation, generates heat as a byproduct.
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Neither conclusion I nor II follows
+(4) Both conclusions I and II follow
+= 4
+~ Incineration in a designed furnace is combustion: the carbon and hydrogen in the waste combine with oxygen to form carbon dioxide and water vapour, which leave in the flue gas, so conclusion I follows. This combination with oxygen is oxidation, an exothermic reaction that releases heat, which can be recovered as steam or electricity, so conclusion II also follows.
+
+Q 119 | swm | Municipal Solid Waste
+Which of the following does NOT describe zero waste management?
+(1) Mix collection
+(2) Segregation of garbage at its origin
+(3) Separate collection of various types of waste
+(4) Involvement of the community
+= 1
+~ Zero waste management aims to send as little as possible to landfill by segregating waste at source, collecting each type separately (wet, dry, hazardous), composting and recycling it, and involving households and the community. Mixed collection defeats this purpose, because mixed waste is contaminated and hard to recycle or compost, so it is not a feature of zero waste management.
+
+Q 120 | gel | Climate Change & Ozone
+What is the primary mechanism by which Ozone-Depleting Substances (ODS) lead to ozone depletion in the stratosphere?
+(1) Thermal decomposition
+(2) Photolysis by Ultraviolet (UV) radiation
+(3) Hydrolysis by water vapour
+(4) Oxidation by ozone molecules
+= 2
+~ ODS such as CFCs are stable in the lower atmosphere and drift up to the stratosphere, where short-wave ultraviolet radiation splits them (photolysis), releasing chlorine or bromine atoms. These destroy ozone catalytically: Cl + O3 → ClO + O2, then ClO + O → Cl + O2, so one chlorine atom can destroy over 100,000 ozone molecules. Thermal breakdown, hydrolysis or oxidation by ozone are not the mechanism.
+
+Q 121 | gel | Climate Change & Ozone
+What does World Ozone Day celebrate?
+(1) Kyoto Protocol
+(2) Paris Agreement
+(3) Montreal Protocol
+(4) UNEP Creation
+= 3
+~ World Ozone Day (International Day for the Preservation of the Ozone Layer) is observed on 16 September every year, as declared by the UN General Assembly in 1994, to mark the signing of the Montreal Protocol on Substances that Deplete the Ozone Layer on 16 September 1987. The Kyoto Protocol and Paris Agreement deal with greenhouse gases, and UNEP was created in 1972.
+
+Q 122 | swm | E-Waste & Hazardous Waste
+What is the primary reason for careful disposal of biomedical waste from hospitals?
+(1) To recycle materials like glass and plastics
+(2) To prevent the spread of pathogens like bacteria and viruses
+(3) To reduce the generation of municipal solid waste
+(4) To conserve energy used in waste treatment
+= 2
+~ Biomedical waste such as used dressings, sharps, cultures, blood and body parts can carry infectious bacteria and viruses (for example hepatitis B and HIV). Careful segregation, colour-coded collection and treatment by incineration, autoclaving and other methods under the Bio-Medical Waste Management Rules, 2016 prevent infection spreading to health workers, waste handlers and the public. Recycling, reducing MSW and saving energy are not the main reasons.
+
+Q 123 | gel | International Conventions
+Which international protocol, resulting from the Earth Summit, aims to stabilise greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous anthropogenic interference with the climate system?
+(1) Kyoto Protocol
+(2) Montreal Protocol
+(3) Rio Declaration
+(4) Basel Convention
+= 1
+~ The quoted aim is Article 2 of the UN Framework Convention on Climate Change, adopted at the 1992 Rio Earth Summit. The Kyoto Protocol (1997, in force 2005) was adopted under the UNFCCC to pursue this objective, with binding emission targets for developed countries. The Montreal Protocol covers ozone-depleting substances, the Rio Declaration is a set of non-binding principles, and the Basel Convention deals with hazardous waste.
+
+Q 124 | gel | Indian Environmental Laws & Rules
+The Water Act of 1974 in India primarily focuses on:
+(1) regulating groundwater extraction
+(2) addressing water scarcity in urban areas
+(3) controlling water pollution and maintaining water quality
+(4) promoting large-scale irrigation projects
+= 3
+~ The Water (Prevention and Control of Pollution) Act, 1974 provides for the prevention and control of water pollution and for maintaining or restoring the wholesomeness of water. It set up the Central and State Pollution Control Boards and requires the consent of the State Board for discharging effluents. It does not regulate groundwater extraction, urban water supply or irrigation projects.
+
+Q 125 | gel | Indian Environmental Laws & Rules
+According to the Municipal Solid Waste Management and Handling Rules, which of the following practices is encouraged for waste disposal?
+(1) Open dumping on vacant lands
+(2) Incineration without any emission control measures
+(3) Segregation of waste into biodegradable and non-biodegradable categories
+(4) Mixing of hazardous and non-hazardous waste for disposal
+= 3
+~ The Municipal Solid Wastes (Management and Handling) Rules, 2000 called for segregation of waste into biodegradable and non-biodegradable categories to enable composting and recycling; the Solid Waste Management Rules, 2016 that replaced them make source segregation into wet (biodegradable), dry and domestic hazardous waste mandatory. Open dumping, uncontrolled incineration and mixing hazardous with non-hazardous waste are against these rules.
+
+Q 126 | gel | Indian Environmental Laws & Rules
+What was the key feature of the Forest Conservation Act, 1980?
+(1) Consolidation of all previous forest laws
+(2) Creation of Reserved and Protected Forests
+(3) Restriction on deforestation without government approval
+(4) Transfer of forest management to village communities
+= 3
+~ The Forest (Conservation) Act, 1980 restricts de-reservation of forests and use of forest land for non-forest purposes: under Section 2 a State Government needs the prior approval of the Central Government for such diversion. Consolidating forest laws and creating reserved and protected forests belong to the Indian Forest Act, 1927, and community forest rights to the Forest Rights Act, 2006. A 2023 amendment renamed it the Van (Sanrakshan Evam Samvardhan) Adhiniyam, 1980.
+
+Q 127 | gel | Climate Change & Ozone
+Read the following statement and conclusions carefully and decide which of the given conclusions is/are true based on the statement.
+Statement:The depletion of the ozone layer has led to an increase in Ultraviolet (UV) radiation reaching the Earth’s surface.
+Conclusions:
+I. Increased UV radiation poses health risks to humans and other organisms.
+II. Ozone depletion is solely caused by natural processes and is not influenced by human activities.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both conclusions I and II are true
+(4) Neither conclusion I nor II is true
+= 1
+~ The statement says ozone depletion has increased the UV radiation reaching the surface. More UV-B causes skin cancer, cataracts and weakened immunity and harms crops and marine plankton, so conclusion I is true. Conclusion II is not supported: the statement says nothing about natural causes, and ozone depletion is in fact driven mainly by man-made ozone-depleting substances such as CFCs. Hence only conclusion I is true.
+
+Q 128 | swm | Municipal Solid Waste
+Match the following methods of waste disposal in List I with their descriptions in List II.
+List I (Methods) | List II (Descriptions)
+A. Waste segregation | 1. Disposal of waste in a designated area without any treatment
+B. Composting | 2. Separating waste into different categories based on its biodegradability
+C. Landfilling | 3. Recycling organic waste to produce compost
+D. Biomedical waste management | 4. Proper management and disposal of waste generated in healthcare facilities
+(1) A-2, B-3, C-1, D-4
+(2) A-3, B-2, C-4, D-1
+(3) A-4, B-1, C-2, D-3
+(4) A-1, B-2, C-3, D-4
+= 1
+~ Waste segregation is separating waste into categories such as biodegradable and non-biodegradable (A-2), and composting recycles organic waste into compost (B-3). Landfilling, as described here, is disposal of waste in a designated area without treatment (C-1). Biomedical waste management is the proper handling and disposal of waste generated in healthcare facilities (D-4). Hence A-2, B-3, C-1, D-4.
+
+Q 129 | gel | Indian Environmental Laws & Rules
+What is the primary objective of the Hazardous Waste Management and Handling Rules?
+(1) To encourage the indiscriminate dumping of hazardous waste
+(2) To promote the recycling and reuse of hazardous waste
+(3) To regulate the generation, handling, and management of hazardous waste
+(4) To exempt certain industries from hazardous waste regulations
+= 3
+~ The Hazardous Wastes (Management and Handling) Rules, 1989, framed under the Environment (Protection) Act, 1986, regulate the generation, collection, storage, treatment, transport, import and disposal of hazardous waste through authorisation by the State Pollution Control Board. They were replaced in 2008 and then by the Hazardous and Other Wastes (Management and Transboundary Movement) Rules, 2016. Dumping and exemptions are opposite to their purpose, and recycling is encouraged but is not the primary objective.
+
+Q 130 | gel | Indian Environmental Laws & Rules
+Read the following statement and conclusions carefully and decide which of the given conclusions is/are true based on the statement.
+Statement:The international legal aspects of the Air Act primarily focus on regulating air pollution and mitigating its adverse effects on the environment and public health.
+Conclusion:
+I. The international legal aspects of the Air Act aim to establish global standards for air quality and emission control measures.
+II. The international legal aspects of the Air Act facilitate international cooperation and agreements to address transboundary air pollution issues.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both conclusions I and II are true
+(4) Neither conclusion I nor II is true
+= 3
+~ India's Air (Prevention and Control of Pollution) Act, 1981 was enacted to implement the decisions of the 1972 Stockholm Conference on the Human Environment, which is its international link. The key treats both conclusions as following from this: aligning air-quality and emission standards with global norms, and cooperation on transboundary pollution. Strictly, the Act is a national law that sets no global standards or transboundary agreements, so neither conclusion is established by it. (Official key; some sources differ.)
+
+Q 131 | gel | Indian Environmental Laws & Rules
+What is the primary objective of the Air (Prevention and Control of Pollution) Act, 1981?
+(1) Regulate industrial emissions in notified areas
+(2) Promote the use of renewable energy
+(3) Control and reduce solid waste
+(4) Develop urban sanitation facilities
+= 1
+~ The Air (Prevention and Control of Pollution) Act, 1981 provides for the prevention, control and abatement of air pollution. Under Section 19 the State Government can declare air pollution control areas, and under Section 21 no industrial plant can be set up or operated there without the consent of the State Pollution Control Board, which prescribes emission limits. Renewable energy, solid waste and urban sanitation are outside the scope of the Act.
+
+Q 132 | gel | Indian Environmental Laws & Rules
+Under the Indian Environmental Protection Act, which body is responsible for enforcing environmental standards and regulations?
+(1) Ministry of Agriculture
+(2) Central Pollution Control Board (CPCB)
+(3) Ministry of Finance
+(4) Indian Council of Agricultural Research (ICAR)
+= 2
+~ Under the Environment (Protection) Act, 1986, the Central Government (MoEFCC) lays down standards, and the Central Pollution Control Board, a statutory body set up under the Water Act, 1974, is its technical and enforcement arm: it monitors compliance, coordinates the State Boards and, with powers delegated under Section 23, issues directions under Section 5 to polluting units. The ministries of Agriculture and Finance and ICAR have no such role.
+
+Q 133 | gel | Climate Change & Ozone
+What is the primary greenhouse gas responsible for anthropogenic climate change?
+(1) Carbon dioxide (CO2)
+(2) Nitrogen oxides (NOx)
+(3) Ozone (O3)
+(4) Ammonia (NH3)
+= 1
+~ Carbon dioxide from burning coal, oil and gas, cement making and deforestation is the main anthropogenic greenhouse gas, making up about three-quarters of global greenhouse gas emissions (CO2-equivalent) and the largest share of human-caused warming (IPCC). Nitrogen oxides are not direct greenhouse gases (nitrous oxide, N2O, is), tropospheric ozone contributes far less, and ammonia is not a significant greenhouse gas.
+
+Q 134 | eia | EIA & EMP
+Which of the following is an example of a biological aspect considered in Environmental Impact Assessment (EIA)?
+(1) Population density of nearby towns
+(2) Migration patterns of birds in the area
+(3) Economic growth projections
+(4) Traffic congestion during construction
+= 2
+~ An EIA studies the physical, biological and socio-economic environment. The biological environment covers flora and fauna, such as forests, wildlife habitats, endangered species and the migration patterns of birds, which the project may disturb. Population density, economic growth and traffic congestion belong to the socio-economic and physical aspects, not the biological one.
+
+Q 135 | eia | Sustainable Development & Green Concepts
+What role does environmental education play in empowering individuals and communities?
+(1) It discourages critical thinking and problem-solving skills.
+(2) It promotes apathy and indifference towards environmental issues.
+(3) It enables informed decision-making and encourages active participation in sustainability initiatives.
+(4) It reinforces unsustainable behaviours and practices.
+= 3
+~ Environmental education, as set out in the Tbilisi Declaration (1977), aims at awareness, knowledge, attitudes, skills and participation. It builds critical thinking so that people can make informed choices and take an active part in conservation and sustainability efforts. The other options describe the opposite of its purpose.
+
+Q 136 | eia | Sustainable Development & Green Concepts
+Which transportation choice contributes the least to carbon emissions?
+(1) Driving a conventional gasoline car
+(2) Riding a bicycle
+(3) Taking a long flight
+(4) Using a diesel-powered vehicle
+= 2
+~ A bicycle is human-powered and has no tailpipe emissions, so its carbon footprint is close to zero apart from manufacture. Petrol and diesel vehicles burn fossil fuels and emit carbon dioxide for every kilometre, and long flights produce very high emissions per passenger. Hence cycling contributes the least to carbon emissions.
+
+Q 137 | eia | EIA & EMP
+Which method is often employed to acquire baseline data on soil characteristics in Environmental Impact Assessment (EIA)?
+(1) Satellite imagery analysis
+(2) Soil coring and sampling
+(3) Soil erosion modelling
+(4) Surveys of vegetation cover
+= 2
+~ Baseline soil data in an EIA are collected by field sampling: soil cores or samples are taken at several locations in the study area and analysed in the laboratory for texture, bulk density, pH, electrical conductivity, organic carbon, nutrients (N, P, K) and heavy metals. Satellite imagery gives land-use cover, erosion modelling predicts impacts, and vegetation surveys describe flora, but none of them measures soil characteristics directly.
+
+Q 138 | eia | Sustainable Development & Green Concepts
+How does crazy consumerism impact environmental sustainability?
+(1) It promotes recycling and waste reduction initiatives.
+(2) It encourages mindful consumption of natural resources.
+(3) It leads to overexploitation of resources and environmental degradation.
+(4) It fosters sustainable production practices.
+= 3
+~ Crazy (excessive) consumerism means buying far more goods than needed, often use-and-throw items. It raises demand for raw materials, water and energy, leading to overexploitation of natural resources, more emissions and huge quantities of waste, which degrade the environment. It works against recycling, mindful consumption and sustainable production, so options 1, 2 and 4 are wrong.
+
+Q 139 | eia | Sustainable Development & Green Concepts
+Which of the following best describes urban sprawl?
+(1) Compact and efficient urban development
+(2) Concentrated growth within city centres
+(3) Unplanned expansion of urban areas into surrounding rural lands
+(4) Sustainable and environmentally-friendly urban planning
+= 3
+~ Urban sprawl is the unplanned, low-density spread of cities outward into surrounding rural and agricultural land, often along highways. It increases dependence on cars, travel distances, energy use and pollution, and consumes farmland, forests and wetlands. Compact, concentrated and planned sustainable development are the opposite of sprawl.
+
+Q 140 | eia | Sustainable Development & Green Concepts
+Which of the following is a potential health benefit of active transportation modes, such as walking and cycling?
+(1) Increased air pollution exposure
+(2) Reduced risk of chronic diseases like obesity and heart disease
+(3) Higher dependence on fossil fuels
+(4) Limited access to green spaces
+= 2
+~ Walking and cycling build physical activity into daily travel. Regular activity lowers the risk of obesity, heart disease, high blood pressure, type 2 diabetes and stroke (WHO). Active transport also reduces fossil fuel use and air pollution, so options 1, 3 and 4 describe effects opposite to its benefits.
+
+Q 141 | eia | Sustainable Development & Green Concepts
+What is the primary purpose of a Life Cycle Assessment (LCA)?
+(1) To measure profit
+(2) To analyse environmental impact
+(3) To study political effects
+(4) To raise product cost
+= 2
+~ Life Cycle Assessment (ISO 14040/14044) evaluates the environmental impacts of a product or service over its whole life, from raw material extraction through manufacture, transport and use to end-of-life disposal or recycling ('cradle to grave'). It covers energy use, emissions, resource depletion and waste so that improvements can be identified. It is not a profit, political or costing tool.
+
+Q 142 | eia | EIA & EMP
+Read the following statement and conclusions carefully and decide which of the given conclusions is/are true based on the statement.
+Statement:Environmental Management Plans (EMPs) play a crucial role in enhancing corporate sustainability by integrating environmental considerations into project planning and implementation.
+Conclusions:
+I. EMPs prioritise short-term economic gains over long-term environmental sustainability.
+II. Stakeholder engagement and participation are key components of developing effective EMPs.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both conclusions I and II are true
+(4) Neither conclusion I nor II is true
+= 2
+~ The statement says EMPs integrate environmental considerations into project planning and support sustainability, so conclusion I, that they put short-term economic gain above long-term sustainability, contradicts it. Conclusion II is true: effective EMPs set out mitigation, monitoring and responsibilities, and developing and implementing them needs the engagement of affected people, regulators and other stakeholders. Hence only conclusion II is true.
+
+Q 143 | eia | Sustainable Development & Green Concepts
+Which of the following best defines sustainable development?
+(1) Maximising economic growth without considering environmental impacts
+(2) Balancing economic growth with social equity and environmental protection
+(3) Prioritising environmental protection over social and economic concerns
+(4) Focusing solely on social equity without regard for economic or environmental factors
+= 2
+~ The Brundtland Commission report 'Our Common Future' (1987) defined sustainable development as development that meets the needs of the present without compromising the ability of future generations to meet their own needs. It balances three pillars: economic growth, social equity and environmental protection. Options 1, 3 and 4 each favour one pillar and ignore the others.
+
+Q 144 | eia | Sustainable Development & Green Concepts
+Read the following statement and conclusions carefully and decide which of the given conclusions is/are true based on the statement.
+Statement:Adopting energy-efficient appliances reduces the ecological footprint of households.
+Conclusions:
+I. Energy-efficient appliances consume less electricity, reducing carbon emissions.
+II. Energy-efficient appliances are least expensive and easily accessible to most households.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both conclusions I and II are true
+(4) Neither conclusion I nor II is true
+= 1
+~ Energy-efficient appliances use less electricity for the same service, so less fuel is burnt in power plants and carbon emissions fall; this is how they reduce the household ecological footprint, so conclusion I is true. Conclusion II does not follow: the statement says nothing about price or availability, and efficient appliances (such as BEE 5-star rated ones) often cost more upfront.
+
+Q 145 | eia | Sustainable Development & Green Concepts
+Read the following statement and conclusions carefully and decide which of the given conclusions is/are true based on the statement.
+Statement:Life Cycle Assessment (LCA) considers the environmental impacts of a product throughout its entire life cycle.
+Conclusions:
+I. LCA provides insights into the environmental effects of product disposal.
+II. LCA focuses solely on the production phase of a product.
+(1) Only conclusion I is true
+(2) Only conclusion II is true
+(3) Both conclusions I and II are true
+(4) Neither conclusion I nor II is true
+= 1
+~ Since LCA covers a product's entire life cycle, from raw material extraction, manufacture and use to end-of-life disposal or recycling, it gives insight into the environmental effects of disposal, so conclusion I is true. Conclusion II contradicts the statement, because LCA does not look only at the production phase. Hence only conclusion I is true.
+
+Q 146 | eia | EIA & EMP
+Which of the following is a qualitative method used in risk assessment for Environmental Impact Assessment (EIA)?
+(1) Monte Carlo simulation
+(2) Fault tree analysis
+(3) Matrix technique
+(4) Sensitivity analysis
+= 3
+~ The matrix technique, such as a risk matrix that ranks hazards by likelihood and consequence or the Leopold matrix of project actions against environmental components, gives a qualitative or semi-quantitative judgement of impacts and risk. Monte Carlo simulation and sensitivity analysis are numerical, quantitative methods, and fault tree analysis is normally used quantitatively to calculate failure probabilities.
+
+Q 147 | eia | EIA & EMP
+A statement is given below, followed by two conclusions numbered I and II. Assuming that the information given in the statement is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions can be drawn definitely from the given statement.
+Statement:
+Risk assessment and vulnerability analysis require identifying key areas of concern, evaluating the frequency and intensity of hazards, and utilising tools like GIS for updates and assessments.
+Conclusions:
+I. GIS enables efficient updates and assessments during risk analysis.
+II. Risk assessment does not need periodic revision after it is initially done.
+(1) Only conclusion I follows.
+(2) Only conclusion II follows.
+(3) Neither I nor II follows.
+(4) Both I and II follow.
+= 1
+~ The statement says risk assessment and vulnerability analysis use tools like GIS for updates and assessments, so conclusion I, that GIS enables efficient updates and assessments, follows. Conclusion II contradicts the statement: the need for 'updates' shows that a risk assessment is revised periodically as hazards, land use and exposure change. Hence only conclusion I follows.
+
+Q 148 | eia | Sustainable Development & Green Concepts
+Match the following terms in List I with their descriptions in List II.
+List I (Terms) | List II (Descriptions)
+A. Population explosion | 1. A sudden, rapid increase in the global population due to high birth rates and declining death rates
+B. Demographic transition | 2. The process of a society transitioning from high birth and death rates to low birth and death rates as it undergoes industrialisation and economic development
+C. Carrying capacity | 3. The maximum population size that a given environment can sustain indefinitely, given the resources available and the level of technology and infrastructure
+D. Overpopulation | 4. The condition where the number of people in an area exceeds the capacity of the environment to support life at a decent standard of living
+(1) A-4, B-2, C-3, D-1
+(2) A-1, B-2, C-3, D-4
+(3) A-3, B-4, C-1, D-2
+(4) A-2, B-3, C-4, D-1
+= 2
+~ Population explosion is a sudden, rapid rise in population due to high birth rates and falling death rates (A-1). Demographic transition is the shift from high birth and death rates to low ones as a society industrialises (B-2). Carrying capacity is the maximum population an environment can sustain indefinitely (C-3). Overpopulation is when the number of people exceeds the environment's capacity to support a decent standard of living (D-4).
+
+Q 149 | eia | EIA & EMP
+What is the key purpose of the Environmental Impact Assessment (EIA)?
+(1) To provide financial assistance for large projects
+(2) To evaluate and mitigate environmental impacts of proposed projects
+(3) To promote unregulated economic development
+(4) To approve projects without public input
+= 2
+~ Environmental Impact Assessment is a planning tool that predicts and evaluates the environmental effects of a proposed project before it is approved, and suggests measures to avoid, reduce or offset them through an Environmental Management Plan. In India the EIA Notification, 2006 under the Environment (Protection) Act, 1986 requires prior environmental clearance, with screening, scoping, public consultation and appraisal. It is not a funding scheme and does not bypass public input.
+
+Q 150 | eia | Sustainable Development & Green Concepts
+Match the columns based on the concept of ecological footprint in 2023 and select the correct option from the following.
+Concepts | Details
+1. Ecological footprint | A. 2.3 hectares per capita
+2. Global average footprint | B. Exceeding available resources
+3. Sustainable land availability | C. 1.7 hectares per capita
+4. Unsustainable usage | D. Land required for resources and waste disposal
+(1) 1-D, 2-B, 3-C, 4-A
+(2) 1-C, 2-A, 3-D, 4-B
+(3) 1-D, 2-A, 3-C, 4-B
+(4) 1-C, 2-B, 3-D, 4-A
+= 3
+~ Ecological footprint is the area of biologically productive land and water needed to supply a population's resources and absorb its wastes (1-D). The global average footprint per person (2.3 hectares in this question) is larger than the sustainable land, or biocapacity, available per person (1.7 hectares) (2-A, 3-C), and using more than is available is unsustainable overshoot (4-B). Global Footprint Network figures differ slightly (humanity uses about 1.7 Earths), but the matching is the same.

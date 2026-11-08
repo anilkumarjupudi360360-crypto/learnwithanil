@@ -44,6 +44,14 @@ FAQS = {
     ('Is there negative marking in the Analyst Grade-II exam?', 'Yes. One-third of a mark is deducted for each wrong answer.'),
     ('What is the Analyst Grade-II salary?', 'Pay scale ₹48,440 – ₹1,37,220 a month.'),
   ],
+  'appsc-assistant-environmental-engineer-notification-2026.html': [   # added 8 Nov 2026 (ASOF_PAGE)
+    ('Can I still apply for APPSC Assistant Environmental Engineer?', 'The application window was 6 to 27 October 2026 (11:59 pm). We had not seen an extension notice for Notification 08/2026 as of 8 November 2026; check psc.ap.gov.in.'),
+    ('When is the APPSC Assistant Environmental Engineer exam?', 'Not announced yet. It will be a computer-based test (CBRT); APPSC will publish the date in a web note and the hall ticket.'),
+    ('How many Assistant Environmental Engineer posts are there?', '41, including 1 carried forward, in the A.P. Pollution Control Board, under Notification 08/2026 of 6 October 2026.'),
+    ('Who can apply for APPSC Assistant Environmental Engineer?', 'B.E./B.Tech. graduates in Civil, Mechanical, Chemical or Environmental Engineering (or AMIE Civil, Sections A and B), aged 18 to 44 on 1 July 2026 (with the usual relaxations).'),
+    ('Is there negative marking in the Assistant Environmental Engineer exam?', 'Yes. One-third of a mark is deducted for each wrong answer.'),
+    ('What is the Assistant Environmental Engineer salary?', 'Pay scale ₹57,100 – ₹1,47,760 a month.'),
+  ],
   'appsc-fro-notification-2026.html': [
     ('Is the APPSC FRO last date extended?', 'The notification gives 5 November 2026 (11:59 pm). One coaching website (3 November) reports an extension to 12 November 2026, but we could not yet find APPSC\'s own notice on psc.ap.gov.in. To be safe, apply by 5 November.'),
     ('How many Forest Range Officer posts are there in 2026?', '5, including 1 carried forward (Notification 16/2026, 16 October 2026).'),
@@ -407,6 +415,7 @@ NEW = {
 }
 
 
+ASOF_PAGE = {'appsc-assistant-environmental-engineer-notification-2026.html': '8 November 2026'}   # pages whose answers were written later
 # ---------------------------------------------------------------- TGPSC MPSO / ASO (Anil, 8 Nov 2026: link to Notification 07/2026, "pls add pyqs for it in
 # telangana section"). The 2018 question booklets were not found online (only TSPSC's final keys), so Anil chose "start with what's available": this page,
 # with Paper I practice from TGPSC's General Studies & General Abilities papers already on the site. Add the 2018 papers as an exam when the booklets come.
@@ -506,7 +515,7 @@ NEW['tgpsc-mpso-aso-notification-2026.html'] = dict(
 
 def apply(NOTIFS):
     for rel, f in FAQS.items():
-        if rel in NOTIFS: NOTIFS[rel]['faqs'] = f; NOTIFS[rel]['faq_asof'] = ASOF
+        if rel in NOTIFS: NOTIFS[rel]['faqs'] = f; NOTIFS[rel]['faq_asof'] = ASOF_PAGE.get(rel, ASOF)
     for rel, N in NEW.items():
         N.setdefault('faq_asof', ASOF)
         NOTIFS[rel] = N
