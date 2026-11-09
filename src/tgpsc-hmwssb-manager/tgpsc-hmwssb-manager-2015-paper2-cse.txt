@@ -696,7 +696,7 @@ An array of 32 bit integers is stored in a byte addressable memory starting from
 (3) 32
 (4) 2000H
 = 2
-~ In indexed addressing the instruction's address field holds the array's starting address (2000H) and the index register holds the offset added to it: EA = 2000H + (index register). Each 32-bit integer occupies 4 bytes in byte-addressable memory, so the index register is advanced in steps of 4 (0, 4, 8, …, 396) to reach successive elements, and the key takes this element size, 4, as its content. 2000H is the base address held in the instruction, 100 is the number of elements and 32 is the size in bits, not bytes. (Official final key; some sources differ.)
+~ In indexed addressing EA = (address field) + (index register): the instruction holds the array's starting address 2000H and the index register holds the offset of the element being accessed. Each 32-bit integer occupies 4 bytes in byte-addressable memory, so the index register takes the values 0, 4, 8, …, 396 and is increased by 4 to move from one element to the next; TSPSC's key takes this element size, 4, as the answer. Strictly, the register's content changes from element to element, so no single option is "the" content, and some sources pick 2000H (if the index register is used to hold the base address instead); 100 is the number of elements and 32 is the element size in bits, not bytes. (Official final key; some sources differ.)
 
 Q 69 | toc | Context-Free Languages & Turing Machines
 Which of the following statements is incorrect?
@@ -754,9 +754,9 @@ Booth's algorithm is used to ____ signed numbers (2's complement)
 
 Q 76 | dms | Graph Theory
 A connected graph contains 'n' vertices and 'm' edges then circuit rank is
-(1) n-m
-(2) m-(n-1)
-(3) n-(m-1)
+(1) n−m
+(2) m−(n−1)
+(3) n−(m−1)
 (4) m+n
 = 2
 ~ A spanning tree of a connected graph with n vertices uses n − 1 edges; each of the remaining m − (n − 1) edges, when added to the tree, creates one independent cycle. So the circuit rank (cyclomatic number) is m − n + 1 = m − (n − 1).
@@ -835,7 +835,7 @@ What is the translation of xxxxyzz using the syntax directed translation?
 (3) 33211
 (4) none of these
 = 1
-~ A shift-reduce parser performs an action when it reduces, i.e. in the reverse order of a rightmost derivation, so its first action must be the reduction y → S, printing 2; only option (1) begins with 2. 23131 is the translation of the parse S ⇒ xxS ⇒ xxSz ⇒ xxxxSz ⇒ xxxxSzz ⇒ xxxxyzz, whose reductions are y → S (2), Sz → S (3), xxS → S (1), Sz → S (3), xxS → S (1). In the original version of this question (GATE) the rules are S → xxW {1}, S → y {2}, W → Sz {3}, which makes 23131 the only translation; with the rules as printed here the grammar is ambiguous and other orders such as 23311 are also possible. (Official final key; some sources differ.)
+~ A shift-reduce parser prints when it reduces, i.e. in the reverse order of a rightmost derivation, so its first output is 2 (reducing y to S), and only option (1) begins with 2. TSPSC's answer comes from the original GATE 1995 question, whose rules are S → xxW {1}, S → y {2}, W → Sz {3}: xxxxyzz then has the single derivation S ⇒ xxW ⇒ xxSz ⇒ xxxxWz ⇒ xxxxSzz ⇒ xxxxyzz, and its reductions by S → y, W → Sz, S → xxW, W → Sz, S → xxW print 2, 3, 1, 3, 1 = 23131. With the rules as printed here (S → xxS, S → Sz) the grammar is ambiguous: 23131 is still the output of one parse (S ⇒ xxS ⇒ xxSz ⇒ xxxxSz ⇒ xxxxSzz ⇒ xxxxyzz), but to print it a deterministic shift-reduce parser would have to shift z the first time it has xxxxS on its stack with z next and reduce the second time in exactly the same situation. Resolving that shift-reduce conflict consistently gives 23311 (shift preferred) or 21133 (reduce preferred), neither of which is listed, which is why some argue for (4). (Official final key; some sources differ.)
 
 Q 85 | toc | Compiler Design
 Which one of the following is the loader function accomplished by the programmer, in an absolute loading scheme?
@@ -908,7 +908,7 @@ F → id
 (3) + is left associative but * is right associative
 (4) * is left associative but + is right associative
 = 2
-~ Both E → E + T and T → T * F are left-recursive: the recursive non-terminal is the operator's left operand, so a + b + c is grouped as (a + b) + c and a * b * c as (a * b) * c. Left recursion gives left associativity; a right-recursive rule such as E → T + E would make the operator right associative.
+~ Both E → E + T and T → T * F are left-recursive: the recursive non-terminal is the operator's left operand, so a + b + c is grouped as (a + b) + c, and b * c * d (derived from T, e.g. in a + b * c * d) as (b * c) * d. Left recursion gives left associativity; a right-recursive rule such as E → T + E would make the operator right associative.
 
 Q 92 | toc | Context-Free Languages & Turing Machines
 Which of the following statement is true about Push Down Automata(PDA)?
@@ -1066,7 +1066,7 @@ A decimal number has 25 digits. The number of bits needed for its equivalent bin
 (3) 75
 (4) 80
 = 3
-~ TSPSC's answer uses the rough rule of about 3 bits per decimal digit: 25 × 3 = 75 bits. Strictly, one decimal digit carries log₂10 ≈ 3.32 bits, so 25 digits need about 25 × 3.32 ≈ 83 bits (the largest 25-digit number, 10²⁵ − 1, lies between 2⁸³ ≈ 9.7 × 10²⁴ and 2⁸⁴ ≈ 1.9 × 10²⁵, so it needs 84 bits); by this exact estimate option (4) 80 is the nearest. (Official final key; some sources differ.)
+~ TSPSC's answer uses the rough rule of about 3 bits per decimal digit (taking 10 ≈ 2³ = 8): 25 × 3 = 75 bits. Strictly, one decimal digit carries log₂10 ≈ 3.32 bits, so 25 digits need about 25 × 3.32 ≈ 83 bits. Exactly, a 25-digit number lies between 10²⁴ and 10²⁵ − 1; since 2⁷⁹ < 10²⁴ < 2⁸⁰ and 2⁸³ < 10²⁵ < 2⁸⁴, it needs 80 to 84 bits, while 75 bits hold numbers only up to about 3.8 × 10²² (23 digits). By this count option (4) 80 is the better answer. (Official final key; some sources differ.)
 
 Q 107 | prg | C Programming
 Consider the following C program:
@@ -1143,7 +1143,7 @@ In the carrier sense network if the prevailing condition is a 'channel busy', th
 (3) p-persistent CSMA results in randomized retransmission
 (4) Non-persistent CSMA does not sense the channel
 = 2
-~ In 1-persistent CSMA a station that finds the channel busy keeps sensing it continuously and transmits (with probability 1) the moment it becomes idle, so the channel is continually sensed. Statement (1) is also a fair description of non-persistent CSMA (on a busy channel it waits a random time and then senses again), but TSPSC's key accepts only (2). Statement (3) is wrong because p-persistent CSMA randomizes transmission in an idle slot, not retransmission, and (4) is wrong because every CSMA variant senses the channel. (Official final key; some sources differ.)
+~ In 1-persistent CSMA a station that finds the channel busy keeps sensing it continuously and transmits (with probability 1) the moment it becomes idle, so statement (2) is correct, and it is the one TSPSC keyed. But statement (1) is also a correct description: on a busy channel, non-persistent CSMA waits a random time and then senses again. Statement (3) is loosely true as well (p-persistent CSMA keeps sensing a busy channel and, once it is idle, transmits only with probability p in each slot, so its sending is randomized). Only (4) is plainly false, because every CSMA variant senses the channel; TSPSC's key nevertheless accepts only (2). (Official final key; some sources differ.)
 
 Q 114 | alg | Sorting & Searching
 The average time required to perform a successful sequential search for an element in an array A(1:n) is given by
@@ -1202,7 +1202,7 @@ Average successful search time taken by binary search on a sorted array of 10 it
 ~ In the binary search decision tree for 10 items, 1 item is found with 1 comparison, 2 items with 2, 4 items with 3 and the remaining 3 items with 4 comparisons. Total = 1×1 + 2×2 + 4×3 + 3×4 = 1 + 4 + 12 + 12 = 29, so the average is 29/10 = 2.9.
 
 Q 117 | alg | Sorting & Searching
-What is the number of comparisons required for merging two sorted lists of sizes m and n into a sorted list of size m + n
+What is the number of comparisons required for merging two sorted lists of sizes m and n into a sorted list of size m + n.
 (1) O(m)
 (2) O(n)
 (3) O(m+n)
@@ -1244,7 +1244,7 @@ In software engineering, acceptance testing is also known as
 (3) Alpha testing
 (4) Beta testing
 = 4
-~ Acceptance testing is done by the customer or end users to decide whether the delivered software meets their requirements; when users test it in their own environment before the final release, it is called beta testing, the name the standard answer uses. Black-box and white-box are test-design techniques, not a test level; alpha testing is a user test carried out at the developer's site.
+~ Acceptance testing is done by the customer or end users to decide whether the delivered software meets their requirements before it is released. It is usually carried out as alpha testing (users testing at the developer's site) followed by beta testing (real users testing in their own environment), and the standard answer to this question takes beta testing, the final user-run stage, as acceptance testing's other name. Black-box and white-box testing are test-design techniques, not a test level, so they are not other names for it.
 
 Q 122 | swe | Design, Coding & Testing
 Cohesion is a qualitative indication of the degree to which a module
@@ -1355,13 +1355,17 @@ The Eigen values of a matrix are 1,2,−1 then the sum of Eigenvalues of the inv
 ~ If Av = λv and A is invertible, then A⁻¹v = (1/λ)v, so the eigenvalues of A⁻¹ are the reciprocals 1, 1/2 and −1. Their sum is 1 + 1/2 − 1 = 1/2.
 
 Q 134 | emt | Linear Algebra
-The possible Eigenvector of the matrix [[3, 0, −2], [0, 2, 0], [−2, 0, 0]] corresponding to one of its Eigen value (-1) is
+The possible Eigenvector of the matrix
+3 | 0 | −2
+0 | 2 | 0
+−2 | 0 | 0
+corresponding to one of its Eigen value (-1) is
 (1) [1, 1, 1]ᵀ
 (2) [1, 0, 2]ᵀ
 (3) [−1, 0, 12]ᵀ
 (4) [2, 0, 1]ᵀ
 = 2
-~ The y-component separates (eigenvalue 2), and the x–z part [[3, −2], [−2, 0]] gives λ² − 3λ − 4 = 0, so λ = 4 or −1. For λ = −1, (A + I)v = 0 gives 4x − 2z = 0 and 3y = 0, so z = 2x, y = 0 and v = (1, 0, 2). Check: A(1, 0, 2)ᵀ = (3 − 4, 0, −2)ᵀ = (−1, 0, −2)ᵀ = −1·(1, 0, 2)ᵀ. The other vectors fail, e.g. A(2, 0, 1)ᵀ = (4, 0, −4)ᵀ, which is not a multiple of (2, 0, 1).
+~ The middle row and column hold only the 2 on the diagonal, so 2 is one eigenvalue; the other two come from rows/columns 1 and 3 (entries 3, −2 / −2, 0): (3 − λ)(−λ) − 4 = λ² − 3λ − 4 = 0, so λ = 4 or −1. For λ = −1, (A + I)v = 0 gives 4x − 2z = 0 and 3y = 0, so z = 2x, y = 0 and v = (1, 0, 2). Check: A(1, 0, 2)ᵀ = (3 − 4, 0, −2)ᵀ = (−1, 0, −2)ᵀ = −1·(1, 0, 2)ᵀ. The other vectors fail, e.g. A(2, 0, 1)ᵀ = (4, 0, −4)ᵀ, which is not a multiple of (2, 0, 1).
 
 Q 135 | emt | Numerical Methods
 In the LU factorization method, to solve the system of equations AX=B, we solve the system of equations in the order
