@@ -4453,22 +4453,24 @@ NOTIFS.update({
 
 
 # AP DSC 2026 (APTRT-2026): brief notifications of 13 Oct 2026 (G.O.Ms.No.28) and the School Education press note with Annexures I-II
-# (district and society tables checked twice against the PDF, 3 Nov 2026). Fee, age and TET rules below are the Mega DSC 2025 rules
-# (G.O.Ms.No.15 and 16 of 19.04.2025) until the detailed 2026 notification is out. Research notes: claude/ap-dsc-2026.md.
+# (district and society tables checked twice against the PDF, 3 Nov 2026). Dates, fee, age, TET rules and the subject-wise SA posts: the detailed
+# School Education Notification No.01/DSC-TRC-1/2026 of 05.11.2026 (G.O.Ms.No.52, 04.11.2026), read 9 Nov 2026. Exam patterns are still
+# the Mega DSC 2025 patterns (the notification refers to G.O.Ms.No.52 and the Information Bulletin). Research notes: claude/ap-dsc-2026.md.
 APDSC = 'https://tet2dsc.apcfss.in/DSC2026/'
 NOTIFS['ap-dsc-2026-notification.html'] = dict(
     exam=None, ename='AP DSC 2026', board='the School Education Department, Andhra Pradesh', site='tet2dsc.apcfss.in', crumb='AP DSC 2026 Notification',
     title='AP DSC 2026 Notification – 2,721 Teacher Posts (SA, SGT, Special Education, PGT, TGT), District-wise Vacancies, Dates, Eligibility & Exam Pattern | Learn with Anil',
     desc='AP DSC 2026 (APTRT-2026): 2,721 teacher posts, with 906 School Assistant, 1,205 SGT, 350 special-education and 260 residential-school posts; '
-         'district-wise and society-wise vacancies; detailed notification out 4 November, online applications from 11 November 2026; fee, age limit, TET weightage and the CBT exam pattern.',
+         'district-wise, society-wise and subject-wise vacancies; apply online 11–30 November 2026, fee ₹1,000 per post, age 18–44 as on 1 July 2026, CBT from 20 December 2026 to 13 January 2027, hall tickets 14 December.',
     h1='AP DSC 2026: 2,721 teacher posts',
     lede='The Andhra Pradesh School Education Department issued brief notifications on 13 October 2026 for 2,721 teacher posts (DSC-2026): 2,111 School Assistant and SGT posts '
-         'in government, ZP, MPP and municipal schools, 350 special-education posts, and 260 posts in residential societies and model schools. The detailed notification, '
-         'with the application dates, fee, age limit and exam schedule, was issued on Wednesday 4 November 2026 on tet2dsc.apcfss.in, and online applications open on 11 November 2026 '
-         '(Deccan Chronicle and Sakshi Education, 5 November 2026). The exam is a computer-based test (CBT).',
+         'in government, ZP, MPP and municipal schools, 350 special-education posts, and 260 posts in residential societies and model schools. The detailed School Education notification '
+         '(No.01/DSC-TRC-1/2026, dated 5 November 2026) is out on tet2dsc.apcfss.in: pay the fee and apply online from 11 to 30 November 2026 (₹1,000 for each post), hall tickets on '
+         '14 December, and the computer-based test (CBT) from 20 December 2026 to 13 January 2027 (all tentative).',
     te='ఏపీ డీఎస్సీ 2026: 2,721 టీచర్ పోస్టులు — స్కూల్ అసిస్టెంట్ 906, ఎస్జీటీ 1,205, స్పెషల్ ఎడ్యుకేషన్ 350, గురుకులాలు/మోడల్ స్కూళ్లు 260. జిల్లాల వారీ ఖాళీలు, తేదీలు, అర్హత, పరీక్ష విధానం.',
-    pdf=APDSC + 'DSC-2026%20Press%20Note%20English.pdf', pdfname='School Education Department press note on DSC-2026 with district-wise and society-wise vacancies (13 October 2026)',
-    more_src=[(APDSC + 'notifications/DSC-2026%20General%20notification%20(1).pdf', 'Brief Notification No.1/DSC-2026 (General)'),
+    pdf=APDSC + 'notifications/School%20Education%20Notification.pdf', pdfname='Detailed notification No.01/DSC-TRC-1/2026 (School Education), 5 November 2026: schedule, fee, age, TET rules and subject-wise posts',
+    more_src=[(APDSC + 'DSC-2026%20Press%20Note%20English.pdf', 'School Education Department press note on DSC-2026 with district-wise and society-wise vacancies (13 October 2026)'),
+              (APDSC + 'notifications/DSC-2026%20General%20notification%20(1).pdf', 'Brief Notification No.1/DSC-2026 (General)'),
               (APDSC + 'notifications/DSC-2026%20Special%20Education%20Notifcation.pdf', 'Brief Notification No.2/DSC-2026 (Special Education)'),
               (APDSC + 'notifications/DSC-2026%20Socities%20Notification.pdf', 'Brief Notification No.3/DSC-2026 (Societies)'),
               (APDSC + 'Gos/2026SE_MS28_E.pdf', 'G.O.Ms.No.28, School Education, 13 October 2026'),
@@ -4478,11 +4480,17 @@ NOTIFS['ap-dsc-2026-notification.html'] = dict(
     sections=[
       ('Important dates', 'table', [
         ('Brief notifications (Nos. 1, 2 and 3/DSC-2026)', '13 October 2026'),
-        ('Detailed notification', 'Issued Wednesday 4 November 2026 on tet2dsc.apcfss.in (as reported by Deccan Chronicle, 5 November 2026)'),
-        ('Online applications open', '11 November 2026 (Deccan Chronicle and Sakshi Education, 5 November 2026)'),
-        ('Last date, fee payment dates', 'In the detailed notification on tet2dsc.apcfss.in; not yet confirmed here'),
-        ('Exam', 'Computer-based test; the dates are in the detailed notification (not yet confirmed here)'),
+        ('Detailed notification and Information Bulletin', '5 November 2026 (Notification No.01/DSC-TRC-1/2026, under G.O.Ms.No.52 of 4 November 2026)'),
+        ('Fee payment and online application', '11 November to 30 November 2026 (last date for both: 30 November 2026)'),
+        ('Online mock test', '5 December 2026'),
+        ('Hall tickets', '14 December 2026'),
+        ('Exam (CBT)', '20 December 2026 to 13 January 2027'),
+        ('Initial key', 'On the 2nd day after the last exam'),
+        ('Objections', 'Within 7 days of the initial key'),
+        ('Final key', '7 days after the last date for objections'),
+        ('Merit list (marks)', '7 days after the final key'),
         ('Official website', 'tet2dsc.apcfss.in')]),
+      ('', 'note', 'All dates are tentative, as given in the schedule of the detailed notification; the department may add or reduce exam sessions.'),
       ('Posts', 'table+', (['Post', 'Where', 'Posts'], [
         ('School Assistant (SA)', 'Government, ZP, MPP and municipal schools', 906),
         ('Secondary Grade Teacher (SGT)', 'Government, ZP, MPP and municipal schools', 1205),
@@ -4522,8 +4530,13 @@ NOTIFS['ap-dsc-2026-notification.html'] = dict(
         ('Anantapuramu', 66, 26, 7, 9, 108),
         ('Sri Satya Sai', 42, 0, 7, 9, 58),
         ('Total', 906, 1205, 150, 200, 2461)])),
-      ('', 'note', 'SE = special education. Kurnool (404), Prakasam (291), YSR Kadapa (227) and SPSR Nellore (184) have the most posts; Vizianagaram, West Godavari and Bapatla have no or almost no SGT posts. '
-                   'The subject-wise split of School Assistant posts will be in the detailed notification.'),
+      ('', 'note', 'SE = special education. Kurnool (404), Prakasam (291), YSR Kadapa (227) and SPSR Nellore (184) have the most posts; Vizianagaram, West Godavari and Bapatla have no or almost no SGT posts.'),
+      ('Subject-wise School Assistant posts', 'table+', (['Subject', 'Govt, ZPP, MPP schools', 'Municipal schools', 'Total'], [
+        ('Language-I', 55, 55, 110), ('Hindi', 158, 44, 202), ('English', 54, 33, 87), ('Mathematics', 22, 19, 41),
+        ('Physical Science', 34, 11, 45), ('Biological Science', 127, 24, 151), ('Social Studies', 126, 34, 160), ('Physical Education', 64, 46, 110),
+        ('All School Assistant posts', 640, 266, 906), ('SGT', 1069, 136, 1205), ('Total', 1709, 402, 2111)])),
+      ('', 'note', 'From the totals of the vacancy tables in the detailed notification (government/ZPP/MPP posts are district cadre; municipal posts are separate). '
+                   'Hindi (202), Social Studies (160) and Biological Science (151) have the most School Assistant posts; Mathematics (41) and Physical Science (45) the fewest.'),
       ('Society-wise vacancies (residential and model schools)', 'table+', (['Society / management', 'Principal', 'PGT', 'TGT', 'PD', 'PET', 'Total'], [
         ('APSWREIS (social welfare)', 21, 45, 0, 0, 19, 85), ('APTWREIS (tribal welfare, Gurukulam)', 0, 6, 27, 1, 2, 36),
         ('MJPAPBCWREIS (BC welfare)', 3, 10, 24, 0, 0, 37), ('APREIS', 4, 20, 32, 1, 11, 68), ('AP Model Schools', 2, 0, 17, 0, 0, 19),
@@ -4535,14 +4548,18 @@ NOTIFS['ap-dsc-2026-notification.html'] = dict(
         ('SA (Physical Education), PET, PD (2025 pattern)', '200 questions, 100 marks, 3 hours', 'No TET'),
         ('PGT, Principal (2025 pattern)', 'English proficiency test (qualifying) + Paper II of 200 questions, 100 marks, 3 hours', 'No TET'),
         ('TGT (2025 pattern)', 'English proficiency test (qualifying, non-language TGT) + Paper II of 160 questions, 80 marks', '20 marks of TET weightage')])),
-      ('', 'note', 'Each question carries half a mark in the 160-question papers. The 2026 special-education syllabus confirms the 160-question, 80-mark paper; the patterns for the other posts are from Mega DSC 2025 and will be confirmed by the detailed notification.'),
-      ('Eligibility, fee and TET: the 2025 rules', 'list', [
-        'Age (2025): 18 to 44 years, up to 49 for SC, ST, BC and EWS candidates and 54 for persons with disabilities. The reference date for 2026 will be in the detailed notification.',
-        'Fee (2025): ₹750 for each post applied for.',
-        'TET: SA (except Physical Education) and SGT candidates must have passed APTET or CTET; the TET score carries 20% of the final marks. PET, SA (Physical Education), PGT, PD and Principal posts need no TET.',
-        'SGT: Intermediate with 50% (45% for SC, ST, BC and PwBD) and a two-year D.Ed / D.El.Ed (or B.El.Ed). SA: a degree in the subject with 50% (45%) and B.Ed with that methodology. PGT: a post-graduate degree with 50% and B.Ed.',
+      ('', 'note', 'Each question carries half a mark in the 160-question papers. The 2026 special-education syllabus confirms the 160-question, 80-mark paper. For the other posts the detailed notification '
+                   'refers to G.O.Ms.No.52 and the Information Bulletin for the pattern; the patterns above are from Mega DSC 2025. The CBT is in English and the medium you choose (SA Physical Education: English and Telugu only).'),
+      ('Eligibility, fee and TET (2026 notification)', 'list', [
+        'Fee: ₹1,000 for each post applied for, paid online from 11 to 30 November 2026.',
+        'Age: 18 to 44 years as on 1 July 2026; up to 49 for SC, ST, BC and EWS candidates and 54 for persons with benchmark disabilities. Ex-servicemen deduct their armed-forces service plus three years.',
+        'Qualifications must be held as on 5 November 2026, the date of the detailed notification.',
+        'Final marks for SA (except Physical Education) and SGT: 80% from the DSC test (TRT) and 20% from TET. SA (Physical Education) is on the CBT marks only.',
+        'Minimum aggregate to qualify: 40% for OC and EWS, 35% for BC, 30% for SC, ST and PwBD.',
+        'TET (APTET or CTET) pass marks out of 150: 90 for OC and EWS, 75 for BC, 60 for SC, ST, PwBD and ex-servicemen.',
+        'SGT: Intermediate with 50% (45% for SC, ST, BC and PwBD) and a two-year D.Ed / D.El.Ed (or B.El.Ed). SA: a degree in the subject with 50% (45%) and B.Ed with that methodology (as in 2025; check the qualification table of the notification).',
         'The Special TET of August 2026 (for in-service teachers) cannot be used to apply for DSC; the regular AP TET of June 2026 (results in September 2026) can.']),
-      ('', 'note', 'These are the Mega DSC 2025 rules (G.O.Ms.No.15 and 16, 19 April 2025). The 2026 detailed notification may change them: check it before applying.'),
+      ('', 'note', 'From School Education Notification No.01/DSC-TRC-1/2026 (5 November 2026). The special-education and society posts have their own notifications: check those for their rules.'),
       ('How Mega DSC 2025 went', 'table', [
         ('Notification', '20 April 2025, 16,347 posts'), ('Applications', '20 April to 15 May 2025'), ('Exams (CBT)', '6 June to 2 July 2025'),
         ('Question papers with preliminary keys', 'From 18 June 2025, as each exam finished'), ('Final key', 'Early August 2025'), ('Results', '12 August 2025; 15,941 teachers selected')]),
