@@ -1,0 +1,1512 @@
+# TSPSC Manager (Engineering), HMWSSB, Notification 13/2015, Paper 2: Computer Science & Information Technology (paper code 502, booklet ME1315), held 1 November 2015 (booklet Series A).
+# Answers: TSPSC final key, Series A. Typed from a scanned question booklet; explanations by Learn with Anil.
+# Left out (one full mark given to all candidates in the final key): 72, 96, 106. Q2: the final key accepts option 1 or 4.
+
+Q 1 | dms | Sets, Relations & Functions
+Which of the following are partitions of {1,2,......8}?
+(1) {{1,3,5},{1,2,6},{4,7,8}}
+(2) {{1,3,5},{2,6,7},{4,8}}
+(3) {{1,3,5},{2,6},{2,6},{4,7,8}}
+(4) {{1,5},{2,6},{4,8}}
+= 2
+~ A partition of a set is a collection of non-empty, pairwise disjoint blocks whose union is the whole set. In (2) the blocks {1,3,5}, {2,6,7}, {4,8} share no element and together contain 1 to 8, so it is a partition. (1) has 1 in two blocks; (3) lists the block {2,6} twice, so its listed blocks are not pairwise disjoint (read strictly as a set, the repeated block would collapse into one, but the examiner treats the repetition as overlapping blocks); (4) leaves out 3 and 7.
+
+Q 2 | dms | Combinatorics & Probability
+Let S = {1,2,..., n}. Let S₁ be the set of all subsets of S that contain 1. Let T₁ denote the set of all subsets of S that don't contain 1. Which of the following statement is correct?
+(1) |T₁| = |S₁| = 2⁽ⁿ⁻¹⁾
+(2) |T₁| ≠ |S₁|
+(3) |T₁| + |S₁| = 2⁽ⁿ⁻¹⁾
+(4) |T₁| + |S₁| = 2ⁿ
+= 1,4
+~ A subset of S that contains 1 is fixed by choosing any subset of the other n − 1 elements, so |S₁| = 2ⁿ⁻¹; likewise a subset without 1 is any subset of {2,...,n}, so |T₁| = 2ⁿ⁻¹. Hence statement (1) is true, and since every subset of S falls in exactly one of the two classes, |T₁| + |S₁| = 2ⁿ⁻¹ + 2ⁿ⁻¹ = 2ⁿ, so statement (4) is also true. Because both are correct, TSPSC accepted both (1) and (4); (2) and (3) are false.
+
+Q 3 | dms | Sets, Relations & Functions
+Let A = {0,1} × {0,1} and B = {a, b, c}. Suppose A is listed in lexicographic order based on 0 < 1 and B is in alphabetic order. If A × B × A is listed in lexicographic order, then the next element after ((1,0), c, (1,1)) is ________.
+(1) ((1,0), a, (0,0))
+(2) ((1,1), c, (0,0))
+(3) ((1,1) a, (0,0))
+(4) ((1,1), a, (1,1))
+= 3
+~ A in lexicographic order is (0,0), (0,1), (1,0), (1,1). In ((1,0), c, (1,1)) the last component (1,1) is the largest element of A and c is the largest element of B, so both "roll over" to their smallest values (0,0) and a, and the first component moves up from (1,0) to (1,1). The next element is ((1,1), a, (0,0)).
+
+Q 4 | dms | Sets, Relations & Functions
+Let P(A) denote the power set of A. If P(A) ⊆ B then
+(1) 2^|A| ≤ |B|
+(2) 2^|A| ≥ |B|
+(3) 2^|A| ≥ 2^|B|
+(4) 2|A| < |B|
+= 1
+~ The power set of A has 2^|A| elements. If P(A) is a subset of B, then B has at least as many elements as P(A), so |P(A)| = 2^|A| ≤ |B|.
+
+Q 5 | dms | Sets, Relations & Functions
+The inverse of the function f(x) = x² − 5 is
+(1) f⁻¹(y) = √(y + 5)
+(2) f⁻¹(y) = √(y − 5)
+(3) f⁻¹(y) = √y − 5
+(4) f⁻¹(y) = √y + 5
+= 1
+~ Put y = x² − 5 and solve for x: x² = y + 5, so x = √(y + 5) (taking the non-negative root, i.e. treating f on x ≥ 0, where it is one-one). Check: f(√(y + 5)) = (y + 5) − 5 = y.
+
+Q 6 | dms | Lattices & Algebraic Structures
+Let D₃₀ = {1,2,3,5,6,10,15,30} and let the relation / (divides) be a partial order relation on D₃₀. Which of the following statements is correct?
+(1) All the lower bounds of 10 and 15 are 1,2,3,5,6
+(2) All the lower bounds of 10 and 15 are 1,2,3,5
+(3) All the lower bounds of 10 and 15 are 1,5
+(4) All the lower bounds of 10 and 15 are 2,3,5
+= 3
+~ Under divisibility, a lower bound of 10 and 15 is an element of D₃₀ that divides both 10 and 15, i.e. a common divisor. The divisors of 10 are 1, 2, 5, 10 and of 15 are 1, 3, 5, 15, so the common ones are 1 and 5 (the greatest lower bound is 5 = gcd(10, 15)). 2, 3 and 6 each fail to divide one of the two numbers.
+
+Q 7 | dms | Lattices & Algebraic Structures
+Let P(S) be the power set of S = {1,2,3}, and then define a lattice L under partial ordering of set inclusion induced on P(S). Which of the following sets are the sub-lattices of L.
+A = {∅, {1,2}, {2,3}, {1,2,3}}
+B = {∅, {1},{1,2}, {1,2,3}}
+C = {∅, {3}, {1,3}, {1,2,3}}
+D = {{1}, {3}, {1,3}, {1,2,3}}
+E = {∅,{3}, {1,2}, {1,2,3}}
+(1) A and D are sub-lattices of L
+(2) B and C are sub-lattices of L
+(3) A is a sub-lattice of L
+(4) D is a sub-lattice of L
+= 2
+~ In L the join is ∪ and the meet is ∩, and a sub-lattice must be closed under both. B and C are chains (∅ ⊆ {1} ⊆ {1,2} ⊆ {1,2,3} and ∅ ⊆ {3} ⊆ {1,3} ⊆ {1,2,3}), and a chain is always closed under ∪ and ∩, so both are sub-lattices. A is not, because {1,2} ∩ {2,3} = {2} ∉ A, and D is not, because {1} ∩ {3} = ∅ ∉ D. (E is also closed under ∪ and ∩, but no option mentions it.)
+
+Q 8 | dld | Boolean Algebra & Minimisation
+In a 5-variable Boolean function, what are the "minterms" that differ from m₂₀ by one literal?
+(1) m₀, m₅, m₁₀, m₁₅, m₂₅
+(2) m₄, m₈, m₁₆, m₂₄, m₂₈
+(3) m₄, m₁₆, m₂₁, m₂₂, m₂₈
+(4) m₄, m₂₁, m₂₂, m₂₄, m₂₈
+= 3
+~ m₂₀ = 10100 in binary. A minterm differing in exactly one literal differs in exactly one bit: flipping each bit in turn gives 00100 = 4, 11100 = 28, 10000 = 16, 10110 = 22 and 10101 = 21. So the adjacent minterms are m₄, m₁₆, m₂₁, m₂₂, m₂₈ (m₂₄ = 11000 differs in two bits).
+
+Q 9 | dld | Boolean Algebra & Minimisation
+Given the Boolean function J(A, B, C) = Σ(0,1,7) + d(2,5,6), which of the following sum of products expressions (not necessarily minimal) represent J(A, B, C)?
+(i) A'B' + AB
+(ii) A'B' + BC
+(iii) A'C' + B'C + AB
+(iv) A'B' + AC
+(v) A'B' + ABC
+(1) (i), (ii) and (iii)
+(2) (iii), (iv) and (v)
+(3) (i), (ii), (iv) and (v)
+(4) (i), (iii), (iv) and (v)
+= 4
+~ A valid expression must cover minterms 0, 1, 7 and may use only the don't-cares 2, 5, 6, never 3 or 4 (the 0s). (i) A'B' = {0,1}, AB = {6,7}: valid. (ii) BC = {3,7} covers the 0-minterm 3: invalid. (iii) A'C' = {0,2}, B'C = {1,5}, AB = {6,7}: valid. (iv) AC = {5,7}: valid. (v) ABC = {7}: valid. So (i), (iii), (iv) and (v).
+
+Q 10 | dms | Lattices & Algebraic Structures
+A group has 11 elements. The number of proper sub-groups it can have is
+(1) 0
+(2) 4
+(3) 5
+(4) 8
+= 1
+~ By Lagrange's theorem the order of a subgroup divides the order of the group. Since 11 is prime, the only subgroups are {e} (order 1) and the whole group (order 11), which are the trivial (improper) subgroups, so the group has no proper (non-trivial) subgroup. (Under the convention that {e} counts as proper there would be exactly one, which is not offered.)
+
+Q 11 | ops | Memory Management & Virtual Memory
+Which of the following techniques can be used to counter the problem of external fragmentation that occurs in dynamic partitioning memory management?
+(1) Compaction
+(2) Segmentation
+(3) Swapping
+(4) Splitting
+= 1
+~ In dynamic (variable) partitioning, free memory gets broken into many small holes between allocated partitions (external fragmentation). Compaction shuffles the allocated partitions together so that all the free holes merge into one large contiguous block, which counters this problem. Segmentation itself suffers from external fragmentation, and swapping or splitting do not merge the holes.
+
+Q 12 | ops | Memory Management & Virtual Memory
+The addresses generated by a particular program in a pure demand paging system with 100 records per page and one free main memory frame are as follows
+0100, 0200, 0420, 0489, 0510, 0530, 0599, 0120, 0220, 0230, 0260, 0320, 0370
+The number of page faults generated in order to execute the program is
+(1) 13
+(2) 8
+(3) 7
+(4) 10
+= 3
+~ With 100 records per page, page number = address ÷ 100, so the reference string is 1, 2, 4, 4, 5, 5, 5, 1, 2, 2, 2, 3, 3. With only one frame, a fault occurs every time the page changes: 1 (F), 2 (F), 4 (F), 4, 5 (F), 5, 5, 1 (F), 2 (F), 2, 2, 3 (F), 3. That is 7 page faults.
+
+Q 13 | ops | Processes, Threads & CPU Scheduling
+In the process state transition diagram, transition from running to ready state indicates that
+(1) the running process is preempted by a higher priority process
+(2) the running process initiated an input/output operation
+(3) the running process is blocked for a semaphore operation
+(4) that the OS is not ready to service the running process
+= 1
+~ A process goes from running back to ready when it is preempted, i.e. it is still able to run but loses the CPU, for example because a higher-priority process has become ready or its time slice has expired. Starting an I/O operation or blocking on a semaphore moves the process from running to the waiting (blocked) state, not to ready.
+
+Q 14 | ops | Memory Management & Virtual Memory
+Which of the following activities is not done by memory management?
+(1) Keep an account of which parts of memory are currently being used by each of the processes
+(2) Decide which processes are to be brought into memory when memory space becomes available
+(3) Allocate and de-allocate memory space as needed
+(4) Storage allocation
+= 4
+~ The memory-management activities of an OS are keeping track of which parts of main memory are in use and by whom, deciding which processes (or parts of them) to move into and out of memory, and allocating and de-allocating memory space as needed. Storage allocation (allocating space on disk) is part of secondary-storage (disk) management, together with free-space management and disk scheduling.
+
+Q 15 | ops | Processes, Threads & CPU Scheduling
+Which of the following statements is incorrect with regard to operating system design?
+(1) Layered approach is easy to design and debug
+(2) Layered approach is less efficient
+(3) Changes to the kernel tend to be fewer with microkernel approach
+(4) Microkernels are less secure and reliable
+= 4
+~ A microkernel keeps only minimal services in the kernel and runs most services as user-level processes, so a failing service does not crash the kernel; microkernels are therefore more secure and reliable, which makes (4) incorrect. The layered approach is simple to construct and debug but less efficient because a call passes through several layers, and in a microkernel new services are added in user space, so the kernel changes less often.
+
+Q 16 | ops | Processes, Threads & CPU Scheduling
+When a process creates a new process using the fork() operation, then which of the following structures are shared between the parent process and the child process?
+(1) Stack
+(2) Heap
+(3) Shared Memory Segments
+(4) Stack, Heap and Shared Memory Segments
+= 3
+~ fork() gives the child its own copy of the parent's address space (stack, heap and data, usually implemented with copy-on-write), so a later change by one process is not seen by the other. Shared memory segments attached by the parent stay attached in the child and refer to the same physical memory, so only they are shared.
+
+Q 17 | ops | Processes, Threads & CPU Scheduling
+Which of the following statements is incorrect with respect to threads?
+(1) User-level threads are unknown by the kernel
+(2) Kernel threads are more expensive
+(3) User-level threads are more expensive
+(4) Thread creation uses fewer resources than process creation
+= 3
+~ User-level threads are managed by a thread library in user space, so the kernel does not know about them and creating or switching them needs no system call; they are cheaper than kernel threads, whose every operation needs a trap into the kernel. So "user-level threads are more expensive" is the incorrect statement; the others are true.
+
+Q 18 | ops | Synchronisation & Deadlocks
+Semaphore can be used for ________.
+(1) detecting deadlock
+(2) process synchronization
+(3) process scheduling
+(4) defining priority of the processes
+= 2
+~ A semaphore is an integer variable accessed only through the atomic operations wait (P) and signal (V); it is a tool for process synchronization, for example to enforce mutual exclusion on a critical section or to order events between processes. It does not detect deadlocks, schedule processes or set priorities.
+
+Q 19 | ops | Processes, Threads & CPU Scheduling
+Which scheduler controls the degree of multiprogramming?
+(1) Short-term scheduler
+(2) Long-term scheduler
+(3) Middle-term scheduler
+(4) Disk Scheduler
+= 2
+~ The long-term (job) scheduler decides which jobs are admitted from the job pool into main memory, so it controls the degree of multiprogramming, i.e. the number of processes in memory. The short-term scheduler only picks which ready process gets the CPU next.
+
+Q 20 | ops | Synchronisation & Deadlocks
+Let S and Q be two semaphores initialized to 1, where P₀ and P₁ are the processes defined as follows:
+```
+Process P₁      Process P₂
+wait (S);       wait(Q);
+wait(Q);        wait(S);
+    ---;            ----;
+signal(S);      signal(Q);
+signal(Q);      signal(S);
+```
+Which one of the following statements is correct with respect to the above construct?
+(1) Causes starvation
+(2) Causes livelock
+(3) Causes a deadlock
+(4) Does not ensure mutual exclusion
+= 3
+~ The two processes acquire the semaphores in opposite orders. If the first process executes wait(S) (S becomes 0) and is then preempted, and the second executes wait(Q) (Q becomes 0), the first now blocks on wait(Q) and the second blocks on wait(S). Each holds what the other needs (circular wait), so neither can proceed: a deadlock.
+
+Q 21 | coa | Memory Hierarchy & I/O
+The number of address and data lines for a memory of 4K × 16 is:
+(1) 12 and 16
+(2) 10 and 16
+(3) 12 and 12
+(4) 16 and 16
+= 1
+~ 4K × 16 means 4K words of 16 bits each. 4K = 4 × 1024 = 2¹² words, so 12 address lines are needed to select a word, and each word is 16 bits wide, so there are 16 data lines.
+
+Q 22 | coa | CPU, Pipelining & Computer Arithmetic
+The instruction of a micro programmed control unit is called as
+(1) micro-instruction
+(2) micro-operation
+(3) machine instruction
+(4) micro-program
+= 1
+~ In a microprogrammed control unit each word stored in the control memory is a micro-instruction; it specifies one or more micro-operations to be performed, and a sequence of micro-instructions makes up a micro-program (one routine per machine instruction).
+
+Q 23 | coa | Memory Hierarchy & I/O
+Suppose that a bus has 16 data lines and requires 4 cycles of 250nsecs each to transfer data. The bandwidth of this bus would be 2 Megabytes/sec. If the cycle time of the bus was reduced to 125nsecs and the number of cycles required for transfer stayed the same what would the bandwidth of the bus?
+(1) 1 Megabyte/sec
+(2) 4 Megabytes/sec
+(3) 8 Megabytes/sec
+(4) 2 Megabytes/sec
+= 4
+~ 16 data lines move 2 bytes per transfer. Originally one transfer takes 4 × 250 ns = 1 µs, giving 2 bytes/µs = 2 Megabytes/sec, the value TSPSC's key keeps for the faster bus. However, with a 125 ns cycle and the same 4 cycles a transfer takes 4 × 125 ns = 0.5 µs, so the usual calculation gives 2 bytes ÷ 0.5 µs = 4 Megabytes/sec (option 2): halving the cycle time doubles the bandwidth. (Official final key; some sources differ.)
+
+Q 24 | coa | Memory Hierarchy & I/O
+In a memory-mapped I/O system, which of the following will not be there?
+(1) LOAD
+(2) IN
+(3) OUT
+(4) ADD
+= 1
+~ In memory-mapped I/O the device registers are given ordinary memory addresses, so the CPU reaches them with the normal memory-reference instructions (LOAD/STORE, MOV, and even arithmetic such as ADD with a memory operand); the separate I/O instructions IN and OUT are needed only in isolated (I/O-mapped) I/O. TSPSC's key nevertheless gives LOAD; by the standard reasoning it is IN and OUT that will not be there, so the question itself has two equally valid answers among the other options. (Official final key; some sources differ.)
+
+Q 25 | coa | CPU, Pipelining & Computer Arithmetic
+In signed-magnitude binary division, if the dividend is (11100)₂ and divisor is (10011)₂ then the result is
+(1) (00100)₂
+(2) (10100)₂
+(3) (11001)₂
+(4) (01100)₂
+= 2
+~ In signed-magnitude form the leftmost bit is the sign: the dividend 1 1100 is −12 and the divisor 1 0011 is −3. Dividing the magnitudes gives 1100 ÷ 0011 = 0100 (12 ÷ 3 = 4), and TSPSC's key (10100)₂ attaches a sign bit of 1 to this magnitude, i.e. −4. By the usual rule, though, the sign of the quotient is the XOR of the two sign bits (1 ⊕ 1 = 0), since (−12) ÷ (−3) = +4, which gives (00100)₂, option (1). (Official final key; some sources differ.)
+
+Q 26 | coa | Memory Hierarchy & I/O
+How many RAM chips of size 8K×16 are required to build 1 Megabyte memory?
+(1) 128
+(2) 64
+(3) 32
+(4) 16
+= 2
+~ 1 Megabyte = 2²⁰ bytes = 2²³ bits. One 8K × 16 chip holds 2¹³ × 16 = 2¹⁷ bits (16 Kbytes). Number of chips = 2²³ ÷ 2¹⁷ = 2⁶ = 64.
+
+Q 27 | dld | Number Systems & Codes
+How many 1's are present in 5×512+3×64+7×8+4
+(1) 9
+(2) 8
+(3) 7
+(4) 6
+= 2
+~ 512 = 8³, 64 = 8², 8 = 8¹, so the number is 5374 in octal. Each octal digit is 3 binary bits: 5 = 101, 3 = 011, 7 = 111, 4 = 100, giving 101 011 111 100 (decimal 2812). Counting ones: 2 + 2 + 3 + 1 = 8.
+
+Q 28 | coa | CPU, Pipelining & Computer Arithmetic
+In a 32-bit floating-point format, the leftmost bit stores the sign of the number. The exponent value is stored in the next eight bits. A bias of 127 is subtracted from the field to get the true exponent value. The base is assumed to be 2. The format stores a normalized floating-point number, with the left-most being implicit. Thus remaining 23 bits are used to store 24-bit significand. What is the highest positive integer that can be represented
+(1) 2¹²⁸
+(2) (2−2⁻²³)×2¹²⁸
+(3) 2¹²⁷
+(4) (2−2⁻²³)×2¹²⁷
+= 2
+~ The largest significand is 1.111...1 (the implicit 1 followed by 23 ones) = 2 − 2⁻²³. In this format (as in Stallings' example) every 8-bit exponent field is usable, so the largest field 255 gives a true exponent of 255 − 127 = 128, and the largest value is (2 − 2⁻²³) × 2¹²⁸. (In IEEE 754, where the all-ones exponent is reserved for infinity/NaN, the maximum would instead be (2 − 2⁻²³) × 2¹²⁷.)
+
+Q 29 | ops | Processes, Threads & CPU Scheduling
+Listed below are some of the Operating System abstractions and related hardware components:
+i. Thread | p) Interrupt
+ii. Virtual Address Space | q) Memory
+iii. File System | r) CPU
+iv. Signal | s) Disk
+Which of the following correctly relates the Operating System abstractions and related hardware components?
+(1) i-p ii-q iii-r iv-s
+(2) i-r ii-s iii-q iv-p
+(3) i-r ii-q iii-s iv-p
+(4) i-r ii-p iii-q iv-s
+= 3
+~ Each OS abstraction virtualises a hardware resource: a thread is an abstraction of the CPU, a virtual address space is an abstraction of physical memory, a file system is an abstraction of the disk, and a signal is the software counterpart of a hardware interrupt. So i-r, ii-q, iii-s, iv-p.
+
+Q 30 | coa | CPU, Pipelining & Computer Arithmetic
+A non-pipeline system takes 50ns to process a task. The same task can be processed in six-segment pipeline with a clock cycle of 10ns. What is the speed-up ratio of the pipeline for 100 tasks?
+(1) 4.76ns
+(2) 40ns
+(3) 40.76ns
+(4) 1ns
+= 1
+~ Without pipelining, 100 tasks take 100 × 50 = 5000 ns. A k = 6 segment pipeline needs (k + n − 1) = 6 + 99 = 105 clock cycles for n = 100 tasks, i.e. 105 × 10 = 1050 ns. Speed-up = 5000 ÷ 1050 ≈ 4.76 (a pure ratio; the "ns" in the options is a slip).
+
+Q 31 | coa | Memory Hierarchy & I/O
+An interface that provides I/O transfer of data directly to and from the memory unit and peripheral is termed as
+(1) DMA
+(2) UART
+(3) USRT
+(4) Serial Interface
+= 1
+~ In Direct Memory Access the DMA controller takes over the system buses and transfers data directly between the peripheral and memory without passing each word through the CPU. UART and USRT are asynchronous/synchronous serial interfaces that only convert between parallel and serial data.
+
+Q 32 | dbm | Normalisation
+Which of the following normal forms eliminates the anomalies of multivalued dependencies?
+(1) 3NF
+(2) BCNF
+(3) 4NF
+(4) 5NF
+= 3
+~ Fourth normal form requires that for every non-trivial multivalued dependency X →→ Y, X is a superkey; this removes the redundancy and update anomalies caused by independent multivalued facts stored in one relation. 3NF and BCNF deal only with functional dependencies, and 5NF deals with join dependencies.
+
+Q 33 | dbm | Transactions, Concurrency & Indexing
+Which one of the following state transitions is made when the transaction has been rolled back and the database is restored to the state prior to the start of the transition?
+(1) Active→Partially Committed
+(2) Active→Committed
+(3) Active→Aborted
+(4) Partially Committed→Committed
+= 3
+~ A transaction that cannot complete normally is rolled back, i.e. its changes are undone so the database returns to the state before the transaction started; the transaction is then in the aborted state. Of the transitions offered, only Active→Aborted describes this; the others lead towards a successful commit.
+
+Q 34 | dbm | SQL & Relational Algebra
+Consider relations R(A,B) and S(C,D); and the following SQL query.
+```
+Select distinct A,B,
+from R,S
+```
+Under what conditions the result is guaranteed to be same as R.
+(1) R has no duplicate and S is non-empty
+(2) R and S have no duplicates
+(3) S has no duplicates and R is non-empty
+(4) R and S have the same number of tuples
+= 1
+~ FROM R,S forms the Cartesian product, in which every tuple of R appears once for each tuple of S. If S is empty the product, and hence the result, is empty even when R is not; if S is non-empty every (A,B) of R appears, and DISTINCT removes repeats. So the result equals R exactly when S is non-empty and R has no duplicate tuples (DISTINCT would collapse any duplicates of R).
+
+Q 35 | dbm | Normalisation
+Let R = (A, B, C, D) and F = {A → B, A → C, BC → D}, then which of the following is correct?
+(1) B → D
+(2) A → B
+(3) A → D
+(4) D → A
+= 3
+~ From A → B and A → C, the union rule gives A → BC; with BC → D, transitivity gives A → D, so A → D is implied by F (in F⁺). A → B also holds, but it is simply one of the given dependencies; the question looks for the dependency that follows from F. B → D and D → A cannot be derived.
+
+Q 36 | dbm | SQL & Relational Algebra
+Which one of the following relational algebra transformations is incorrect?
+(1) σ_C1(σ_C1(R)) → σ_C2(σ_C2(R))
+(2) σ_C(π_A(R)) → π_A(σ_C(R))
+(3) σ_C(R ∪ S) → σ_C(R) ∪ σ_C(S)
+(4) σ_C(R) → π_A(R)
+= 4
+~ σ_C(R) keeps whole rows of R that satisfy C, while π_A(R) keeps every row but only the columns A, so the two are not equivalent and (4) is not a valid transformation. (2) is valid when C involves only attributes of A (selection and projection commute), (3) is valid because selection distributes over union, and (1) is the commutativity of selections, σ_C1(σ_C2(R)) = σ_C2(σ_C1(R)), with the subscripts misprinted.
+
+Q 37 | dbm | SQL & Relational Algebra
+If relation R has m tuples and S has n tuples, what is the maximum and minimum number of tuples in R ⋈ S?
+(1) m + n and 0
+(2) mn and 0
+(3) m + n and |m − n|
+(4) mn and m + n
+= 2
+~ In the worst case every tuple of R matches every tuple of S on the common attributes (or there are no common attributes, so the join is a Cartesian product), giving m × n tuples. If no tuple of R agrees with any tuple of S on the common attributes, the join is empty, so the minimum is 0.
+
+Q 38 | dbm | ER & Relational Model
+The referential integrity rule requires that
+(1) Every null foreign key value must reference an existing primary key value.
+(2) It makes it possible for an attribute to have a corresponding value.
+(3) Every non-null foreign key value must reference an existing primary key value.
+(4) It makes it possible to delete a row in one table whose primary key does not have a matching foreign key value in another table.
+= 3
+~ Referential integrity says that a foreign key value must either be null or equal an existing primary key value in the referenced relation. So every non-null foreign key must reference an existing primary key; a null foreign key references nothing, so (1) is wrong.
+
+Q 39 | dbm | Normalisation
+Which of the following statements is correct?
+(1) Every relation in 2NF is also in BCNF
+(2) Every relation in BCNF is also in 3NF
+(3) No relation can be in both BCNF and 3NF
+(4) Every relation is ZNF is also in 3 NF
+= 2
+~ BCNF is stricter than 3NF: it requires the left side of every non-trivial FD to be a superkey, which already satisfies the 3NF condition, so every BCNF relation is in 3NF (and hence (3) is false). A 2NF relation may still have transitive dependencies, so it need not be in 3NF or BCNF; this rules out (1) and (4) ("ZNF" is a misprint for 2NF).
+
+Q 40 | dbm | Transactions, Concurrency & Indexing
+Consider the schedule S and determine which one of the following schedules is conflict equivalent schedule to S.
+S: R₁(X); R₂(Z); R₁(Z); R₃(X); R₃(Y); W₁(X); W₃(Y); R₂(Y); W₂(Z); W₂(Y)
+(1) T1→T2→T3
+(2) T2→T1→T3
+(3) T3→T1→T2
+(4) T3→T2→T1
+= 3
+~ Conflicting pairs (same item, different transactions, at least one write): R₃(X) before W₁(X) gives T3→T1; R₁(Z) before W₂(Z) gives T1→T2; R₃(Y), W₃(Y) before R₂(Y), W₂(Y) give T3→T2. The precedence graph T3→T1, T1→T2, T3→T2 has no cycle, and its only topological order is T3, T1, T2, so S is conflict equivalent to the serial schedule T3→T1→T2.
+
+Q 41 | dbm | Transactions, Concurrency & Indexing
+Which one of the following file organization techniques provides very fast direct access?
+(1) Hashed File Organization
+(2) B-Tree Organization
+(3) B+ Tree Organization
+(4) Indexed-Sequential File Organization
+= 1
+~ In a hashed file the address of the block holding a record is computed directly from the key by the hash function, so a record is located in about one block access (O(1)) without searching an index. B-tree, B+ tree and indexed-sequential files need a search through index levels (O(log n) accesses), though they also support ordered and range access.
+
+Q 42 | alg | Complexity & Recurrences
+Consider the following functions
+f(n) = 3n^√n
+g(n) = 2^(√n log₂n)
+h(n) = n!
+(1) h(n)=O(f(n))
+(2) h(n) is O(g(n))
+(3) g(n) is not O(f(n))
+(4) f(n) is O(g(n))
+= 4
+~ Since n = 2^(log₂n), n^√n = 2^(√n log₂n) = g(n), so f(n) = 3g(n): f and g differ only by a constant factor, hence f(n) is O(g(n)) and g(n) is O(f(n)) (so (3) is false). n! ≥ (n/2)^(n/2) = 2^((n/2) log₂(n/2)), whose exponent grows faster than √n log₂n, so h(n) is neither O(f(n)) nor O(g(n)).
+
+Q 43 | alg | Complexity & Recurrences
+Which one of the following recurrence relation denotes the running time of selection sort algorithm.
+(1) T(n) = 2T(n/2) + cn
+(2) T(n) = T(n−1) + cn
+(3) T(n) = T(n−1) + c
+(4) T(n) = 2T(n/2) + c
+= 2
+~ Selection sort scans all n remaining elements to find the minimum (cn work), swaps it into the first position and then sorts the remaining n − 1 elements the same way, so T(n) = T(n − 1) + cn, which solves to c(n + (n − 1) + ... + 1) = O(n²). 2T(n/2) + cn is merge sort, and T(n − 1) + c would be only linear.
+
+Q 44 | alg | Algorithm Design Techniques
+Match the following:
+a. Divide and Conquer | i. Graph Coloring
+b. Dynamic Programming | ii. Travelling Salesperson Problem
+c. Backtracking | iii. Quicksort
+(1) a:iii; b:i; c:ii
+(2) a:iii; b:ii; c:i
+(3) a:ii; b:iii; c:i
+(4) a:ii; b:i; c:iii
+= 2
+~ Quicksort is a divide-and-conquer algorithm (partition around a pivot, then sort the two parts recursively). The travelling salesperson problem has the classic dynamic-programming solution g(i, S) over subsets (Held–Karp, O(n²2ⁿ)). Graph (m-)colouring is a standard backtracking problem: assign colours vertex by vertex and backtrack when a conflict arises. So a:iii, b:ii, c:i.
+
+Q 45 | alg | Complexity & Recurrences
+Which one of the following statements is correct?
+i) The Euler tour of a graph can be determined in polynomial time
+ii) The Hamiltonian cycle can be determined in polynomial time.
+iii) Determining whether a directed graph has a Euler tour is NP-complete
+iv) Determining whether a directed graph has a Hamiltonian cycle is NP-complete
+(1) (i) and (ii)
+(2) (i) and (iv)
+(3) (ii) and (iii)
+(4) (iii) and (iv)
+= 2
+~ An Euler tour exists iff the graph is connected and every vertex has even degree (in a directed graph, in-degree = out-degree), which can be checked, and the tour built (Hierholzer's algorithm), in polynomial time; so (i) is true and (iii) is false. Deciding whether a directed graph has a Hamiltonian cycle is a classic NP-complete problem with no known polynomial algorithm; so (iv) is true and (ii) is false.
+
+Q 46 | alg | Complexity & Recurrences
+Which of the following statements is incorrect?
+(1) If the output of one polynomial-time algorithm is fed into the input of another, the composite algorithm is polynomial
+(2) Halting problem is NP-hard problem
+(3) Travelling salesperson problem has a polynomial time algorithm
+(4) Satisfiability problem is np-complete
+= 3
+~ The travelling salesperson problem is NP-hard (its decision version is NP-complete), and no polynomial-time algorithm for it is known, so (3) is incorrect. (1) is true because a polynomial-time algorithm produces output of polynomial size, and a polynomial of a polynomial is a polynomial; (2) is true because every NP problem reduces to the (undecidable) halting problem; (4) is the Cook–Levin theorem.
+
+Q 47 | alg | Algorithm Design Techniques
+Which one of the algorithms obtains global optimal solutions?
+(1) Greedy algorithm
+(2) Dynamic Programming
+(3) Greedy algorithm and Dynamic Programming
+(4) Divide and Conquer
+= 2
+~ Dynamic programming relies on the principle of optimality and considers the optimal solutions of all relevant subproblems, so it always yields a globally optimal solution. A greedy algorithm commits to the locally best choice at each step and gives the global optimum only for problems with the greedy-choice property (e.g. it fails for 0/1 knapsack).
+
+Q 48 | dst | Hashing & Graph Representation
+Consider a hash function h(k) = k mod 9 and a hash table consisting of 9 slots, where the collisions are resolved by chaining. If the following keys are inserted in the order: 5, 28, 19, 15, 20, 33, 12, 17, 10, then what are the maximum, minimum and average chain lengths for the given instance.
+(1) 3, 0, and 1
+(2) 3, 3, and 3
+(3) 4, 0, and 1
+(4) 3, 0, and 2
+= 1
+~ h(5) = 5, h(28) = 1, h(19) = 1, h(15) = 6, h(20) = 2, h(33) = 6, h(12) = 3, h(17) = 8, h(10) = 1. Chain lengths for slots 0 to 8: 0, 3, 1, 1, 0, 1, 2, 0, 1. Maximum = 3 (slot 1: 28, 19, 10), minimum = 0 (slots 0, 4, 7), average = 9 keys ÷ 9 slots = 1.
+
+Q 49 | alg | Graph Algorithms
+What is the time complexity of depth first search traversal of a graph consisting of n vertices and m edges represented using adjacency list?
+(1) O(n)
+(2) O(m + n)
+(3) O(n²)
+(4) O(mm)
+= 2
+~ With adjacency lists, DFS visits each of the n vertices once and scans each vertex's list once, examining every edge a constant number of times (once in a directed graph, twice in an undirected one). Total work is O(n + m). With an adjacency matrix it would be O(n²).
+
+Q 50 | alg | Graph Algorithms
+What is the time complexity of Kruskal's algorithm for finding the minimum spanning tree of an undirected graph containing n vertices and m edges?
+(1) O(n)
+(2) O(m + n)
+(3) O(n²)
+(4) O(m log n)
+= 4
+~ Kruskal's algorithm first sorts the m edges by weight, O(m log m), and then processes them with union-find, which costs almost O(m) in total. Since m ≤ n², log m ≤ 2 log n, so O(m log m) = O(m log n), which dominates.
+
+Q 51 | cnw | Network Models & Data Link Layer
+The maximum window size for data transmission using selective reject protocol with n-bit frame sequence is
+(1) 2ⁿ
+(2) 2ⁿ⁻¹
+(3) 2ⁿ − 1
+(4) 2ⁿ⁻²
+= 2
+~ With n-bit sequence numbers there are 2ⁿ distinct numbers. In selective reject (selective repeat) ARQ the receiver also keeps a window of out-of-order frames, so the sender and receiver windows must not overlap after the numbers wrap round; this needs window size ≤ 2ⁿ/2 = 2ⁿ⁻¹. The limit 2ⁿ − 1 applies to Go-Back-N, where the receiver window is only 1.
+
+Q 52 | cnw | Transport & Application Layers
+Which of the following is not a client-server application
+(1) Internet chat
+(2) Web browsing
+(3) E-mail
+(4) Ping
+= 4
+~ Ping is a diagnostic utility that sends ICMP echo-request messages, and the target host's operating system (network layer) replies with echo-reply; no server application process runs on the other side. Chat, web browsing (browser and web server) and e-mail (mail client and mail server) are all built on the client-server model.
+
+Q 53 | cnw | Network Models & Data Link Layer
+In Ethernet when Manchester encoding is used, the bit rate is
+(1) Half the baud rate
+(2) Twice the baud rate
+(3) Same as the baud rate
+(4) Thrice the baud rate
+= 1
+~ Manchester encoding puts a transition in the middle of every bit, so each bit is sent as two signal elements (half-bit levels). The signalling (baud) rate is therefore twice the bit rate, i.e. bit rate = baud rate/2; for example, 10 Mbps Ethernet signals at 20 Mbaud.
+
+Q 54 | cnw | Network Models & Data Link Layer
+In a network of LANs connected by bridges, packets are sent from one LAN to another through intermediate bridges. Since more than one may exist between two LANs, packets may have to be routed through multiple bridges. Why is the spanning tree algorithm used for bridge-routing?
+(1) For shortest path routing between LANs
+(2) For avoiding loops in the routing paths
+(3) For fault tolerance
+(4) For minimizing collisions
+= 2
+~ When there are redundant paths between LANs, transparent bridges that flood frames would make frames circulate endlessly (broadcast storms, unstable address tables). The spanning tree algorithm (IEEE 802.1D) blocks some bridge ports so that the active topology is a tree with exactly one path between any two LANs, which removes the loops. The tree does not in general give shortest paths.
+
+Q 55 | cnw | Transport & Application Layers
+Which of the following functionalities must be implemented by a transport protocol over and above the network protocol?
+(1) Recovery from packet losses
+(2) Detection of duplicate packets
+(3) Packet delivery in the correct order
+(4) End to end connectivity
+= 4
+~ The network layer (IP) only delivers packets from host to host; the transport layer must add end-to-end (process-to-process) delivery using port numbers. Loss recovery, duplicate detection and in-order delivery are optional services: TCP provides them but UDP provides none of them, so they are not functions every transport protocol must implement.
+
+Q 56 | cnw | IP Addressing & Routing
+An organization has a class B network and wishes to form subnets for 64 departments. The subnet mask would be:
+(1) 255.255.0.0
+(2) 255.255.64.0
+(3) 255.255.128.0
+(4) 255.255.252.0
+= 4
+~ 64 subnets need 6 subnet bits (2⁶ = 64). A class B network has a 16-bit network part, so the mask has 16 + 6 = 22 one-bits: 11111111.11111111.11111100.00000000 = 255.255.252.0.
+
+Q 57 | cnw | Transport & Application Layers
+What is the maximum size of data that the application layer can pass on to the TCP layer below?
+(1) Any size
+(2) 2¹⁶ bytes-size of TCP header
+(3) 2¹⁶ bytes
+(4) 1500 bytes
+= 1
+~ TCP is a byte-stream service: the application can hand it data of any size, and TCP itself breaks the stream into segments (each limited by the MSS) and numbers the bytes. The 2¹⁶-byte limit belongs to an IP datagram's total length and 1500 bytes is the Ethernet MTU; neither limits what the application passes to TCP.
+
+Q 58 | cnw | IP Addressing & Routing
+The subnet mask for a particular network is 255.255.31.0. Which of the following pairs of IP addresses could belong to this network
+(1) 172.57.88.62 and 172.56.87.233
+(2) 10.35.28.2 and 10.35.29.4
+(3) 191.203.31.87 and 191.234.31.88
+(4) 128.8.129.43 and 128.8.161.55
+= 4
+~ Two addresses are on the same network if address AND mask gives the same result. The third octet of the mask is 31 = 00011111. For (4): 129 = 10000001 AND 00011111 = 1 and 161 = 10100001 AND 00011111 = 1, so both give 128.8.1.0. In (1) and (3) the second octets differ (57/56, 203/234), and in (2) 28 AND 31 = 28 but 29 AND 31 = 29.
+
+Q 59 | cnw | IP Addressing & Routing
+In an IPv4 datagram, the M bit is 0, the value of HLEN is 10, the value of total length is 400 and the fragment offset value is 300. The position of the datagram, the sequence numbers of the first and the last bytes of the payload, respectively are
+(1) Last fragment, 2400 and 2789
+(2) First fragment, 2400 and 2759
+(3) Last fragment, 2400 and 2759
+(4) Middle fragment, 300 and 689
+= 3
+~ M = 0 (no more fragments) with a non-zero offset means this is the last fragment. Header length = 10 × 4 = 40 bytes, so payload = 400 − 40 = 360 bytes. The offset is in 8-byte units, so the first byte is 300 × 8 = 2400 and the last byte is 2400 + 360 − 1 = 2759.
+
+Q 60 | cnw | Transport & Application Layers
+Consider different activities related to email
+m1: Send an email from a mail client to a mail server
+m2: Download an email from mailbox server to a mail client
+m3: Checking email in a web browser
+What is the application level protocol used in each activity?
+(1) M1:HTTP m2: SMTP m3:POP
+(2) m1:HSMTP m2: FTP m3:HTTP
+(3) m1:SMTP m2: POP m3:HTTP
+(4) m1:POP m2: SMTP m3: IMAP
+= 3
+~ SMTP is the push protocol used to send mail from a client to a mail server (and between servers). POP3 (or IMAP) is the access protocol a mail client uses to download mail from its mailbox server. Webmail in a browser talks to the web server using HTTP.
+
+Q 61 | cnw | IP Addressing & Routing
+A computer on a 10 Mbps network is regulated by a token bucket. The token bucket is filled at a rate of 2Mbps. It is initially filled to capacity with 16 Megabits. What is the maximum duration for which the computer can transmit at the full 10 Mbps?
+(1) 1.6 sec
+(2) 2 sec
+(3) 5 sec
+(4) 8 sec
+= 2
+~ During a burst of S seconds the computer can send the bucket's capacity C plus the tokens added meanwhile ρS, and this must equal what it sends at the full rate M: C + ρS = MS, so S = C/(M − ρ) = 16/(10 − 2) = 2 s. The tempting 1.6 s (16/10) ignores the tokens that keep arriving during the burst.
+
+Q 62 | swe | Design, Coding & Testing
+The process of defining a problem in terms of few steps and then exploring each of the steps further is known as
+(1) step-wise refinement
+(2) modularization
+(3) Integration
+(4) Divide and Conquer
+= 1
+~ Step-wise refinement (Wirth's top-down design) first states the solution as a few high-level steps and then refines each step into more detailed steps until they can be coded directly. Modularization is splitting a system into modules, and divide and conquer is an algorithm-design paradigm.
+
+Q 63 | swe | Design, Coding & Testing
+The following program is to be tested for statement coverage,
+```
+begin
+f(a=b)
+{
+S1;
+exit;
+}
+else if (c=d)
+{
+s2;
+}
+else
+{
+S3;
+exit;
+}
+s4
+end
+```
+The test cases T1,T2,T3 and T4 given below are expressed in terms of the properties satisfied by the values of variables a, b, c & d. The exact values are not given:
+T1: a, b, c &d are all equal
+T2: a ,b, c & d are all distinct
+T3: a=b & c!=d
+T4: a!=b & c=d
+Which of the test suites given below ensures coverage of statement S1,S2, S3 & S4
+(1) T1,T2,T3
+(2) T2,T3
+(3) T3,T4
+(4) T1,T2,T4
+= 4
+~ (The line "f(a=b)" is the paper's misprint for "if (a=b)".) S1 runs only when a = b (T1 or T3), and the program then exits. S2 followed by S4 runs when a ≠ b and c = d (T4), and S3 runs when a ≠ b and c ≠ d (T2). So a suite needs T4, T2 and one of T1/T3: T1, T2, T4 covers all four statements, whereas (1) and (2) never reach S2 or S4 and (3) never reaches S3.
+
+Q 64 | cnw | Transport & Application Layers
+Which of the following statements is FALSE?
+(1) HTTP runs over TCP
+(2) HTTP describes the structure of web pages
+(3) HTTP allows information to be stored in URL
+(4) HTTP can be used to test the validity of a hypertext link
+= 2
+~ The structure of web pages is described by HTML, not HTTP; HTTP is only the request-response protocol that transfers them. HTTP does run over TCP (port 80), a GET request can carry information in the URL (query string), and a HEAD request can check whether a link is valid from the status code without fetching the page.
+
+Q 65 | wit | Web Technologies
+Consider the HTML table definition given below:
+```
+<table border=1>
+<tr><td rowspan=2>ab</td>
+<td colspan=2>cb</td>
+</tr>
+<tr><td>ef</td>
+<td rowspan=2>gh</td>
+</tr>
+<tr><td colspan=2>ij</td>
+</tr>
+</table>
+```
+The number of rows in each column and the number of columns in each row are:
+(1) (2,2,3) and (2,3,2)
+(2) (2,2,3) and (2,2,3)
+(3) (2,3,2) and (2,3,2)
+(4) (2,3,2) and (2,2,3)
+= 3
+~ Laying out the grid: row 1 = ab (spans rows 1–2) | cb (spans columns 2–3); row 2 = (ab continues) | ef | gh (spans rows 2–3); row 3 = ij (spans columns 1–2) | (gh continues). Column 1 holds ab, ij = 2 cells; column 2 holds cb, ef, ij = 3; column 3 holds cb, gh = 2, giving (2,3,2). Row 1 holds ab, cb = 2; row 2 holds ab, ef, gh = 3; row 3 holds ij, gh = 2, giving (2,3,2).
+
+Q 66 | toc | Regular Languages & Finite Automata
+The language represented by the regular expression 1*01* + 1* + 1*01*01* is
+(1) All strings over {0,1} which contains exactly one zero
+(2) All strings over {0,1} which contain at least two zeros.
+(3) All strings over {0,1} which contain at most two zeros
+(4) All strings over {0,1} containing exactly two zeros
+= 3
+~ 1* gives the strings with no 0, 1*01* the strings with exactly one 0, and 1*01*01* the strings with exactly two 0s, each with any number of 1s around the zeros. Their union is the set of all binary strings with zero, one or two 0s, i.e. at most two zeros.
+
+Q 67 | cnw | Network Models & Data Link Layer
+In CSMA/CD, after the 4th collision, what is the probability that the node will attempt to retransmit immediately?
+(1) 0.0625
+(2) 0.5
+(3) 0.125
+(4) 0.25s
+= 1
+~ With binary exponential backoff, after the n-th collision a node picks K at random from {0, 1, …, 2ⁿ − 1} and waits K slot times. After the 4th collision K is chosen from 2⁴ = 16 values, so the probability of K = 0 (retransmit immediately) is 1/16 = 0.0625.
+
+Q 68 | coa | Instruction Sets & Addressing Modes
+An array of 32 bit integers is stored in a byte addressable memory starting from the location 2000H. The size of the array is 100. If the index addressing is used to access the array elements, what would be the contents of index register?
+(1) 100
+(2) 4
+(3) 32
+(4) 2000H
+= 2
+~ In indexed addressing the instruction's address field holds the array's starting address (2000H) and the index register holds the offset added to it: EA = 2000H + (index register). Each 32-bit integer occupies 4 bytes in byte-addressable memory, so the index register is advanced in steps of 4 (0, 4, 8, …, 396) to reach successive elements, and the key takes this element size, 4, as its content. 2000H is the base address held in the instruction, 100 is the number of elements and 32 is the size in bits, not bytes. (Official final key; some sources differ.)
+
+Q 69 | toc | Context-Free Languages & Turing Machines
+Which of the following statements is incorrect?
+(1) Every recursively enumerable language is recursive
+(2) The union of two recursively enumerable languages is recursively enumerable
+(3) The union of two recursive languages is recursive enumerable language
+(4) If the language L and it's complement L' are recursively enumerable then L is recursive
+= 1
+~ Recursive languages are a proper subset of recursively enumerable ones: the halting-problem language is RE but not recursive, so (1) is false. RE and recursive languages are both closed under union, and every recursive language is also RE, so (2) and (3) hold; (4) is a standard theorem (run the recognisers of L and L' in parallel; one of them must accept, so the machine always halts).
+
+Q 70 | dbm | ER & Relational Model
+The entity integrity rule requires that
+(1) All primary key entries are unique
+(2) A part of the key may be null
+(3) Foreign key values do not reference primary key values
+(4) Duplicate object values are allowed
+= 1
+~ Entity integrity requires that every row be uniquely identifiable by its primary key, so primary-key values must be unique and no part of the primary key may be null. Option (2) contradicts the rule, (3) is a wrong statement of referential integrity (foreign keys must match existing primary-key values), and (4) is false.
+
+Q 71 | toc | Regular Languages & Finite Automata
+Let L₁ = {ba, ab}, L₂ = {a, b} be two languages, then the length of the minimum string in L₁L₂* is
+(1) 0
+(2) 1
+(3) 2
+(4) 3
+= 3
+~ Every string of L₁L₂* begins with a string of L₁, which has length 2, followed by a string of L₂*. Since L₂* contains the empty string ε, ba and ab themselves are in L₁L₂*, so the minimum length is 2.
+
+Q 73 | toc | Regular Languages & Finite Automata
+Number of strings in the language represented by the Regular expression (0 + 1)(0 + 1)1(0 + 1) is
+(1) 4
+(2) 6
+(3) 8
+(4) 16
+= 3
+~ Each (0 + 1) offers 2 choices and the fixed 1 offers only one, so the expression denotes 2 × 2 × 1 × 2 = 8 strings, all of length 4 with 1 in the third position (0010, 0011, 0110, 0111, 1010, 1011, 1110, 1111).
+
+Q 74 | dms | Graph Theory
+The chromatic number of null graph Nₙ is
+(1) 0
+(2) 1
+(3) 2
+(4) 3
+= 2
+~ A null graph has n vertices and no edges, so no two vertices are adjacent and all of them can get the same colour: χ(Nₙ) = 1 (n ≥ 1). A graph needs at least 2 colours only if it has at least one edge.
+
+Q 75 | coa | CPU, Pipelining & Computer Arithmetic
+Booth's algorithm is used to ____ signed numbers (2's complement)
+(1) add
+(2) subtract
+(3) multiply
+(4) divide
+= 3
+~ Booth's algorithm multiplies two signed numbers in 2's complement form. It scans the multiplier bit pair (Q₀, Q₋₁): 10 means subtract the multiplicand, 01 means add it, 00 or 11 means do nothing, and each step ends with an arithmetic right shift; negative multipliers need no special handling and runs of 1s are skipped.
+
+Q 76 | dms | Graph Theory
+A connected graph contains 'n' vertices and 'm' edges then circuit rank is
+(1) n-m
+(2) m-(n-1)
+(3) n-(m-1)
+(4) m+n
+= 2
+~ A spanning tree of a connected graph with n vertices uses n − 1 edges; each of the remaining m − (n − 1) edges, when added to the tree, creates one independent cycle. So the circuit rank (cyclomatic number) is m − n + 1 = m − (n − 1).
+
+Q 77 | dms | Graph Theory
+A connected planar graph has 35 regions with degree 6 each, then number of vertices is____
+(1) 35
+(2) 70
+(3) 72
+(4) 96
+= 3
+~ Every edge lies on the boundary of two regions, so the sum of region degrees is 2E: 35 × 6 = 210 = 2E, giving E = 105. Euler's formula V − E + R = 2 then gives V = 2 + 105 − 35 = 72.
+
+Q 78 | alg | Graph Algorithms
+Which of the following minimal spanning tree algorithm assures connectivity of tree at all steps?
+(1) Kruskal
+(2) Prims
+(3) Both Kruskal and Prims
+(4) Dijkstra
+= 2
+~ Prim's algorithm grows a single tree from a start vertex, each time adding the cheapest edge that joins the tree to a new vertex, so the partial tree is connected at every step. Kruskal's algorithm adds the cheapest remaining edge anywhere that does not form a cycle, so its intermediate result is a forest of several components; Dijkstra's is a shortest-path algorithm.
+
+Q 79 | dms | Graph Theory
+If G is a connected plane graph with E edges, V vertices and R regions, then the following is true
+(1) |V| − |E| = 2
+(2) |V| − |E| + |R| = 1
+(3) |V| − |E| = 2 + |R|
+(4) |V| + |R| = |E| + 2
+= 4
+~ Euler's formula for a connected plane graph is V − E + R = 2 (the outer, unbounded region is counted), which rearranges to V + R = E + 2. For example, a triangle has V = 3, E = 3, R = 2 and 3 + 2 = 3 + 2.
+
+Q 80 | dms | Graph Theory
+The minimum number of colours required to colour any connected planar graph is
+(1) 3
+(2) 4
+(3) 5
+(4) Connot decide
+= 2
+~ By the Four Colour Theorem every planar graph can be properly coloured with at most 4 colours, and 4 are sometimes needed (K₄ is planar and needs 4), so 4 is the number that works for every planar graph. 3 colours are not enough for K₄, and 5 is only the weaker, easier Five Colour Theorem bound.
+
+Q 81 | dms | Combinatorics & Probability
+The number of ways of placing 7-similar balls in 5 distinct boxes is
+(1) C(11,7)
+(2) C(12,7)
+(3) C(11,5)
+(4) C(12,5)
+= 1
+~ Placing r identical balls in n distinct boxes (boxes may be empty) is counted by stars and bars as C(n + r − 1, r). Here C(5 + 7 − 1, 7) = C(11,7) = C(11,4) = 330. C(11,5) = 462 is a different number.
+
+Q 82 | dms | Combinatorics & Probability
+The number of ways of forming 5-member committee consisting of 2 girls and 3 boys from 10 girls and 20 boys
+(1) C(10,2)+C(20,3)
+(2) P(10,2)+P(20,3)
+(3) P(10,2)P(20,3)
+(4) C(10,2)C(20,3)
+= 4
+~ Order does not matter in a committee, so the girls can be chosen in C(10,2) = 45 ways and the boys in C(20,3) = 1140 ways. Every choice of girls goes with every choice of boys, so by the product rule the total is C(10,2) × C(20,3) = 51,300. Adding the counts would be wrong, and P(n,r) counts ordered selections.
+
+Q 83 | dms | Combinatorics & Probability
+How many terms will be there in the expansion of (x + y + z)⁶
+(1) 15
+(2) 28
+(3) 35
+(4) 45
+= 2
+~ Each term has the form xᵃyᵇzᶜ with a + b + c = 6 and a, b, c ≥ 0. The number of such non-negative solutions is C(6 + 3 − 1, 3 − 1) = C(8,2) = 28.
+
+Q 84 | toc | Compiler Design
+A shift reduce parser generates actions specified in the braces following the corresponding rule of grammar
+S → xxS {PRINT "1"}
+S → y {PRINT "2"}
+S → Sz {PRINT "3"}
+What is the translation of xxxxyzz using the syntax directed translation?
+(1) 23131
+(2) 11231
+(3) 33211
+(4) none of these
+= 1
+~ A shift-reduce parser performs an action when it reduces, i.e. in the reverse order of a rightmost derivation, so its first action must be the reduction y → S, printing 2; only option (1) begins with 2. 23131 is the translation of the parse S ⇒ xxS ⇒ xxSz ⇒ xxxxSz ⇒ xxxxSzz ⇒ xxxxyzz, whose reductions are y → S (2), Sz → S (3), xxS → S (1), Sz → S (3), xxS → S (1). In the original version of this question (GATE) the rules are S → xxW {1}, S → y {2}, W → Sz {3}, which makes 23131 the only translation; with the rules as printed here the grammar is ambiguous and other orders such as 23311 are also possible. (Official final key; some sources differ.)
+
+Q 85 | toc | Compiler Design
+Which one of the following is the loader function accomplished by the programmer, in an absolute loading scheme?
+(i) Allocation (ii) Linking (iii) Reallocation
+(1) Both (i) and (ii)
+(2) (i) only
+(3) (ii) only
+(4) (iii) only
+= 1
+~ A loader's four functions are allocation, linking, relocation and loading. In the absolute loading scheme the programmer does the allocation (fixes the absolute load addresses) and the linking (resolves references between modules by hand), the assembler does the relocation (it already produces absolute code) and the loader only loads the code into memory. "Reallocation" in (iii) stands for relocation.
+
+Q 86 | toc | Compiler Design
+Which one of the following statements is correct?
+(1) In operator precedence parsing precedence relations are defined for every pair of a non-terminal
+(2) In operator precedence parsing, precedence relations are defined for every pair of a terminal
+(3) In operator precedence parsing, precedence relations are defined to delimit the handle
+(4) In operator precedence parsing precedence relations are defined to delimit a statement
+= 3
+~ The relations <·, ≐ and ·> of operator-precedence parsing exist to locate the handle: <· marks its left end, ·> its right end and ≐ joins symbols inside it. They are defined between terminals (never non-terminals), and not for every pair of terminals; blank table entries signal errors, so (2) is not right either.
+
+Q 87 | toc | Compiler Design
+Which of the following statements is correct?
+(i) LR parsers can handle a larger range of languages and grammars than LL parsing
+(ii) LR parsers do not backtrack
+(iii) LR parser is a bottom-up parser
+(1) (i) only
+(2) (ii) only
+(3) (iii) only
+(4) (i), (ii) and (iii)
+= 4
+~ All three are true. LR parsers are bottom-up shift-reduce parsers; every LL(1) grammar is LR(1) but not conversely (left-recursive grammars, for example, are fine for LR), so they handle a larger class; and they decide each shift or reduce deterministically from the current state and the lookahead, so they never backtrack.
+
+Q 88 | toc | Compiler Design
+Which of the following is the most powerful parser?
+(1) SLR
+(2) LALR
+(3) Canonical LR
+(4) Operator-precedence
+= 3
+~ Canonical LR(1) uses full LR(1) items, each with its own lookahead, so it accepts the largest class of grammars: SLR ⊂ LALR ⊂ CLR(1). LALR merges CLR states with the same core (which can create reduce-reduce conflicts), SLR uses only FOLLOW sets, and operator-precedence parsing works only for a small class of operator grammars.
+
+Q 89 | toc | Compiler Design
+A top down parser generates ________
+(1) Right-most derivation
+(2) Right-most derivation in reverse
+(3) Left-most derivation
+(4) Left-most derivation in reverse
+= 3
+~ A top-down parser starts from the start symbol and always expands the leftmost non-terminal first, so the sequence of sentential forms it builds is a leftmost derivation. A bottom-up (shift-reduce) parser traces a rightmost derivation in reverse.
+
+Q 90 | toc | Compiler Design
+Which one of the following statements is correct with respect to the grammar give below?
+S → 1A | 1B
+A → 1
+B → 1
+(1) LL(1) and LR(1)
+(2) LL(1) but not LR(1)
+(3) LR(1) but not LL(1)
+(4) Neither LL(1) not LR(1)
+= 4
+~ Both S-alternatives begin with 1 (FIRST(1A) = FIRST(1B) = {1}), so the LL(1) table entry M[S, 1] has two productions: not LL(1). The grammar is also ambiguous, since 11 has two parse trees (through A or through B), and no ambiguous grammar is LR(k); concretely, after reading 11 the LR(1) parser reaches a state with A → 1· , $ and B → 1· , $, a reduce-reduce conflict.
+
+Q 91 | toc | Compiler Design
+Which one of the following statements is correct with respect to the grammar given below?
+E → E + T | F
+T → T * F | F
+F → id
+(1) Both + and * are right associative
+(2) Both + and * are left associative
+(3) + is left associative but * is right associative
+(4) * is left associative but + is right associative
+= 2
+~ Both E → E + T and T → T * F are left-recursive: the recursive non-terminal is the operator's left operand, so a + b + c is grouped as (a + b) + c and a * b * c as (a * b) * c. Left recursion gives left associativity; a right-recursive rule such as E → T + E would make the operator right associative.
+
+Q 92 | toc | Context-Free Languages & Turing Machines
+Which of the following statement is true about Push Down Automata(PDA)?
+(1) PDAs recognize Context-sensitive Languages
+(2) PDAs recognize Context-free Languages
+(3) PDAs recognize Type 1 Languages
+(4) PDAs recognize Type 0 Languages
+= 2
+~ A PDA is a finite automaton with one stack, and the languages accepted by (non-deterministic) PDAs are exactly the context-free (Type 2) languages. Context-sensitive (Type 1) languages need linear-bounded automata and Type 0 languages need Turing machines.
+
+Q 93 | toc | Context-Free Languages & Turing Machines
+Consider the grammar G=(N,T,P,S), where N={S,A,B}, T={a,b}, P={(S → AB),(B → ab), (A → aa), (A → a), (B → b)}. Which of the following statement is true about the above grammar.
+(1) It is Context Sensitive
+(2) It is Context free
+(3) It is type 0 grammar
+(4) It is unrestricted language
+= 2
+~ Every production has a single non-terminal on its left side (S → AB, A → aa | a, B → ab | b), which is exactly the form of a context-free (Type 2) grammar. It is not a regular grammar, because S → AB has two non-terminals on the right, even though the language it generates is the finite set {ab, aab, aaab}. A grammar is classified by its most restrictive Chomsky type; this ε-free grammar also fits the wider Type 1 and Type 0 definitions, but the specific answer is context free.
+
+Q 94 | coa | CPU, Pipelining & Computer Arithmetic
+What would be the speed of a processor in terms instructions per second if the processor has two types of instructions A and B. Type A instructions take 18 clock cycles and type B instructions take 8 clock cycles. Programs on an average use 20% of type A and 80% of type B instructions. The clock rate is of 1 GHz.
+(1) 1000 MIPS
+(2) 10 MIPS
+(3) 100 MIPS
+(4) 10000 MIPS
+= 3
+~ Average CPI = 0.2 × 18 + 0.8 × 8 = 3.6 + 6.4 = 10 clock cycles per instruction. Instruction rate = clock rate/CPI = 10⁹/10 = 10⁸ instructions per second = 100 MIPS.
+
+Q 95 | prg | C Programming
+Consider the following sequence of C language statements.
+```
+typedef int * IntegerPointer
+IntegerPointer A,B;
+A= (IntegerPointer) malloc(sizeof(int));
+B= (IntegerPointer) malloc(sizeof(int));
+*A = 5;
+*B = 17;
+free (A);
+A=B;
+free (B);
+```
+The above situation wherein A contains a pointer pointing to the location that B's pointer used to point to is known as
+(1) dangling pointer
+(2) side effect
+(3) null pointer
+(4) free pointer
+= 1
+~ free(A) releases the first block, A = B makes A point to the second block, and free(B) then releases that block too. A (and B) still hold the address of memory that has been freed; such a pointer is a dangling pointer, and dereferencing it (e.g. *A) is undefined behaviour. It is not a null pointer, because its value was never set to NULL.
+
+Q 97 | coa | Instruction Sets & Addressing Modes
+Consider the following sequence of instructions of stack based CPU.
+```
+PUSH a
+PUSH b
+ADD
+PUSH a
+PUSH b
+ADD
+MUL
+PUSH c
+MUL
+```
+Which of the following is implemented by the above sequence?
+(1) 2c(a+b)
+(2) 2c²(a+b)
+(3) c(a²+b²)
+(4) c(a+b)²
+= 4
+~ Tracing the stack: PUSH a, PUSH b, ADD leaves a+b; PUSH a, PUSH b, ADD leaves a second a+b on top; MUL pops both and pushes (a+b)(a+b) = (a+b)²; PUSH c then MUL pushes c(a+b)².
+
+Q 98 | toc | Compiler Design
+Which of the following is a top-down parser?
+(1) Predictive recursive descent
+(2) Shift-reduce
+(3) Canonical LR(1)
+(4) LALR(1)
+= 1
+~ A predictive recursive-descent parser has one procedure per non-terminal and expands the grammar from the start symbol downwards, choosing each production by the lookahead, so it is top-down. Shift-reduce, canonical LR(1) and LALR(1) parsers are all bottom-up.
+
+Q 99 | cnw | Network Models & Data Link Layer
+Consider the following code with four valid code words:
+0000000000 0000011111 1111100000 1111111111
+Which of the following is correct sequence of hamming distance of the above code and the number of bit errors that can be corrected using the above code?
+(1) 4,2
+(2) 5,2
+(3) 5,3
+(4) 4,3
+= 2
+~ Pairwise distances: 0000000000 and 0000011111 differ in 5 bits, 0000000000 and 1111100000 in 5, 0000000000 and 1111111111 in 10, 0000011111 and 1111100000 in 10, 0000011111 and 1111111111 in 5, 1111100000 and 1111111111 in 5. The Hamming distance of the code (minimum) is d = 5, so it can correct ⌊(d − 1)/2⌋ = 2 bit errors (and detect d − 1 = 4).
+
+Q 100 | ops | File Systems & Disk Scheduling
+List of objects together with the operations allowed on these objects is called ________.
+(1) Capability list
+(2) access list
+(3) available list
+(4) access matrix
+= 1
+~ In the access-matrix protection model, a capability list belongs to a domain (one row of the matrix): it lists the objects together with the operations the domain may perform on each. An access list is a column (for one object, the domains and their rights), and the access matrix is the whole table.
+
+Q 101 | prg | C Programming
+What is the output of following C language code?
+```
+#include <stdio.h>
+int main ( )
+{
+static int i = 1;
+tun (i);
+tun (i);
+tun (i);
+printf("%d", i);
+}
+tun (int i)
+{
+i++;
+}
+```
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ C passes arguments by value: each call tun(i) receives a copy of i, and i++ inside tun increments only that local parameter. The static variable i in main is never changed, so after the three calls printf prints 1 ("static" affects only the variable's lifetime, not how it is passed).
+
+Q 102 | dst | Trees & Heaps
+Which of the following tree need not be a binary tree
+(1) BST
+(2) AVL
+(3) Heap
+(4) B-Tree
+= 4
+~ A B-tree of order m is a multiway search tree: each node can hold up to m − 1 keys and have up to m children, so it need not be binary. A BST and an AVL tree (a height-balanced BST) are binary by definition, and a heap (binary heap) is a complete binary tree.
+
+Q 103 | alg | Sorting & Searching
+Which data structure is used to implement radix sort
+(1) Stacks
+(2) Queue
+(3) Linked list
+(4) Tree
+= 2
+~ Radix sort distributes the keys into buckets (0–9 for decimal digits) on each digit, starting from the least significant, and then collects the buckets in order. Each bucket must give back its keys in the order they arrived so that the sort stays stable from one pass to the next, so the buckets are FIFO queues. A stack would reverse that order and spoil the result.
+
+Q 104 | alg | Sorting & Searching
+Which of the following sorting algorithm does not have worst case time complexity of O(n²)
+(1) Bubble Sort
+(2) Quick Sort
+(3) Insertion Sort
+(4) Heap Sort
+= 4
+~ Heap sort builds a heap in O(n) and then performs n deletions of the maximum, each O(log n), so even its worst case is O(n log n). Bubble sort and insertion sort take O(n²) on reverse-sorted input, and quick sort degrades to O(n²) when the pivot is always the smallest or largest element (e.g. already sorted input with the first element as pivot).
+
+Q 105 | dld | Number Systems & Codes
+A decimal number has 25 digits. The number of bits needed for its equivalent binary representation is, approximately_______.
+(1) 50
+(2) 60
+(3) 75
+(4) 80
+= 3
+~ TSPSC's answer uses the rough rule of about 3 bits per decimal digit: 25 × 3 = 75 bits. Strictly, one decimal digit carries log₂10 ≈ 3.32 bits, so 25 digits need about 25 × 3.32 ≈ 83 bits (the largest 25-digit number, 10²⁵ − 1, lies between 2⁸³ ≈ 9.7 × 10²⁴ and 2⁸⁴ ≈ 1.9 × 10²⁵, so it needs 84 bits); by this exact estimate option (4) 80 is the nearest. (Official final key; some sources differ.)
+
+Q 107 | prg | C Programming
+Consider the following C program:
+```
+main()
+{
+    int x=5;
+    printf("%d,%d,%d\n",x,x<<2,x>>2);
+}
+```
+What could be the output of the above program?
+(1) 5,20,5
+(2) 4,4,1
+(3) 5,20,1
+(4) 20,20,5
+= 3
+~ The shift operators do not change x. x = 5 = 0101₂; x<<2 shifts left by 2 bits = 10100₂ = 20 (multiply by 2² = 4); x>>2 shifts right by 2 bits = 0001₂ = 1 (5/4 truncated). So the output is 5,20,1.
+
+Q 108 | prg | C Programming
+According to the precedence defined in the C language, arrange the operators ., ||, <, = in the ascending order of precedence.
+(1) ., ||, <, =
+(2) =, <, ||, .
+(3) =, ||, <, .
+(4) <, ||, =, .
+= 3
+~ In C the member-access operator . is in the highest (postfix) group, the relational operator < is above the logical operators, logical OR || is just above the conditional and assignment operators, and assignment = is the lowest of these. From lowest to highest: =, ||, <, . (that is why a = b < c || d parses as a = ((b < c) || d)).
+
+Q 109 | prg | C Programming
+What is the output of the following programming C language code?
+```
+for (i=1;i<5;++i)
+if(i==3) continue;
+else
+printf("%d", i);
+```
+(1) 1 2 4 5
+(2) 1 2 4
+(3) 2 4 5
+(4) 3 3 3
+= 2
+~ The loop runs for i = 1, 2, 3, 4 (it stops when i becomes 5). For i = 1, 2 and 4 the else branch prints i; for i = 3 continue skips the printf and goes to ++i. So the values printed are 1, 2, 4 (the "%d" format has no spaces, so on screen they appear as 124).
+
+Q 110 | prg | C Programming
+If n has the value 3, then the statement a[++n]=n++ results in _____
+(1) a[5]=3
+(2) a[5]=4
+(3) a[4]=4
+(4) a[4]=3
+= 1
+~ The keyed answer is what common compilers produce (GCC and Clang both store 3 in a[5]): the right-hand side n++ is evaluated first, giving the value 3 and making n = 4; then the subscript ++n makes n = 5, so a[5] = 3 and n ends as 5. Strictly, the statement modifies n twice without a sequence point, so the C standard leaves its result undefined; evaluating the left side first would instead give a[4] = 4.
+
+Q 111 | prg | C Programming
+Aliasing in the context of programming languages refers to
+(1) Multiple variables having the same memory location
+(2) Multiple variables having the same value
+(3) Multiple variables having the same identifier
+(4) Multiple use of the same variable
+= 1
+~ Aliasing means two or more names (variables, pointers or references) refer to the same memory location, so a change made through one name is seen through the others. For example, after int *p = &x; the names x and *p are aliases. Merely having equal values is not aliasing.
+
+Q 112 | cnw | Network Models & Data Link Layer
+Error detection at the data link level is achieved by
+(1) bit stuffing
+(2) cyclic redundancy codes
+(3) hamming codes
+(4) equalization
+= 2
+~ The data link layer detects errors with a cyclic redundancy check: the sender appends the remainder of dividing the frame by a generator polynomial (the frame check sequence, e.g. CRC-32 in Ethernet) and the receiver repeats the division to detect corruption. Bit stuffing is used for framing, Hamming codes are error-correcting codes, and equalization is a physical-layer signal technique.
+
+Q 113 | cnw | Network Models & Data Link Layer
+In the carrier sense network if the prevailing condition is a 'channel busy', then which of the following statements is correct?
+(1) Non-persistent CSMA results in randomized wait and sense
+(2) With 1-persistent CSMA, the channel is continually sensed
+(3) p-persistent CSMA results in randomized retransmission
+(4) Non-persistent CSMA does not sense the channel
+= 2
+~ In 1-persistent CSMA a station that finds the channel busy keeps sensing it continuously and transmits (with probability 1) the moment it becomes idle, so the channel is continually sensed. Statement (1) is also a fair description of non-persistent CSMA (on a busy channel it waits a random time and then senses again), but TSPSC's key accepts only (2). Statement (3) is wrong because p-persistent CSMA randomizes transmission in an idle slot, not retransmission, and (4) is wrong because every CSMA variant senses the channel. (Official final key; some sources differ.)
+
+Q 114 | alg | Sorting & Searching
+The average time required to perform a successful sequential search for an element in an array A(1:n) is given by
+(1) (n+1)/2
+(2) log₂n
+(3) n(n+1)/2
+(4) n²
+= 1
+~ If the element is equally likely to be at any of the n positions, finding it at position i takes i comparisons. The average is (1 + 2 + … + n)/n = [n(n+1)/2]/n = (n+1)/2. log₂n is the cost of binary search, which needs a sorted array.
+
+Q 115 | prg | C Programming
+Consider the following C program
+```
+int x;
+main()
+{
+    int x=0;
+    {
+        int x=10;
+        x++;
+        change_x(x);
+        x++;
+        modify_x();
+        printf("%d ",x);
+    }
+    x++;
+    change_x(x);
+    printf("%d ",x);
+    modify_x();
+    printf("%d\n",x);
+}
+modify_x()
+{
+    return (x+=10);
+}
+change_x()
+{
+    return(x+=1);
+}
+```
+What would be the output of the above program?
+(1) 23 14 24
+(2) 23 1 1
+(3) 13 1 1
+(4) 12 1 1
+= 4
+~ modify_x() and change_x() see only the global x (their argument, if any, is ignored), while main prints its own local x's. Global x starts at 0. Inner block: local x = 10 → x++ gives 11 → change_x makes global 1 → x++ gives 12 → modify_x makes global 11 → prints 12. Outer block: main's x = 0 → x++ gives 1 → change_x makes global 12 → prints 1 → modify_x makes global 22 → prints 1. Output: 12 1 1.
+
+Q 116 | alg | Sorting & Searching
+Average successful search time taken by binary search on a sorted array of 10 items is
+(1) 2.6
+(2) 2.7
+(3) 2.8
+(4) 2.9
+= 4
+~ In the binary search decision tree for 10 items, 1 item is found with 1 comparison, 2 items with 2, 4 items with 3 and the remaining 3 items with 4 comparisons. Total = 1×1 + 2×2 + 4×3 + 3×4 = 1 + 4 + 12 + 12 = 29, so the average is 29/10 = 2.9.
+
+Q 117 | alg | Sorting & Searching
+What is the number of comparisons required for merging two sorted lists of sizes m and n into a sorted list of size m + n
+(1) O(m)
+(2) O(n)
+(3) O(m+n)
+(4) O(log n + log m)
+= 3
+~ The merge step compares the front elements of the two lists and moves the smaller one to the output, so every comparison outputs one element. At most m + n − 1 comparisons are needed (the worst case, when the lists interleave), which is O(m+n).
+
+Q 118 | dst | Trees & Heaps
+The number of binary trees with 3 nodes which when traversed in post-order gives the sequence A, B, C is
+(1) 3
+(2) 9
+(3) 7
+(4) 5
+= 4
+~ There are 5 different shapes of binary tree with 3 nodes (the Catalan number C₃ = (1/4)·⁶C₃ = 5). For any shape, labelling its nodes in post-order with A, B, C gives exactly one tree (C is always the root), so each shape yields exactly one tree with post-order A, B, C: 5 trees.
+
+Q 119 | alg | Complexity & Recurrences
+A machine needs a minimum of 100 sec to sort 1000 names by quick sort. The minimum time needed to sort 100 names will be approximately
+(1) 50.2
+(2) 6.7
+(3) 72.7
+(4) 11.2
+= 2
+~ The minimum (best/average case) time of quick sort is c·n log n. So T(100) = 100 × (100 log 100)/(1000 log 1000) = 100 × (100 × 2)/(1000 × 3) = 100 × 200/3000 ≈ 6.67 ≈ 6.7 sec (the ratio log 100/log 1000 = 2/3 in any base).
+
+Q 120 | swe | Process Models & Requirements
+What is the disadvantage of spiral model?
+(1) It is inefficient for smaller projects
+(2) High amount of risk analysis
+(3) Strong approval and documentation control
+(4) Additional functionalities can be added later
+= 1
+~ The spiral model repeats planning, risk analysis, engineering and evaluation in every loop; this needs risk-assessment expertise and adds cost and time, so it is costly and not worth it for small or low-risk projects. Options (2), (3) and (4) are usually listed as its advantages.
+
+Q 121 | swe | Design, Coding & Testing
+In software engineering, acceptance testing is also known as
+(1) black-box testing
+(2) white-box testing
+(3) Alpha testing
+(4) Beta testing
+= 4
+~ Acceptance testing is done by the customer or end users to decide whether the delivered software meets their requirements; when users test it in their own environment before the final release, it is called beta testing, the name the standard answer uses. Black-box and white-box are test-design techniques, not a test level; alpha testing is a user test carried out at the developer's site.
+
+Q 122 | swe | Design, Coding & Testing
+Cohesion is a qualitative indication of the degree to which a module
+(1) can be written more compactly
+(2) focuses on just one thing
+(3) is able to complete its function in a timely manner
+(4) is connected to other modules and the outside world
+= 2
+~ Cohesion measures how strongly the elements inside one module belong together; a highly cohesive module performs just one task (Pressman: "the degree to which a module focuses on just one thing"). The degree to which a module is connected to other modules (option 4) is coupling; good design aims at high cohesion and low coupling.
+
+Q 123 | swe | Design, Coding & Testing
+Cyclomatic complexity is related to which of the following testing methods?
+(1) White-box
+(2) Black-box testing
+(3) White-box and black-box testing
+(4) Functional-test
+= 1
+~ Cyclomatic complexity V(G) = E − N + 2 (or number of decisions + 1) is computed from the control-flow graph of the code and gives the number of independent paths to test in basis-path testing. It needs the program's internal structure, so it is a white-box technique; black-box (functional) testing works only from the specification.
+
+Q 124 | dms | Mathematical Logic
+A sufficient condition that a triangle T be a right triangle is that a² + b² + = c². An equivalent statement is
+(1) If T is a right triangle then a² + b² = c²
+(2) If a² + b² = c² then T is a right triangle
+(3) T is a right triangle only if a² + b² = c²
+(4) T is a right triangle unless a² + b² = c²
+= 2
+~ "p is a sufficient condition for q" means p → q. Here p is "a² + b² = c²" and q is "T is a right triangle", so the statement is "If a² + b² = c² then T is a right triangle". Options (1) and (3) both say q → p (that the condition is necessary), which is the converse.
+
+Q 125 | dms | Mathematical Logic
+Consider the statement, "Given that people who are in need of refuge and consolation are apt to do odd things, it is clear that people who are apt to do odd things are in need of refuge and consolation." This statement, of the form (P ⇒ Q) ⇒ (Q ⇒ P)
+(1) People who are in need of refuge and consolation are not apt to do odd things
+(2) People are apt to do odd things if and only if they are in need of refuge and consolation
+(3) People who are apt to do odd things are in need of refuge and consolation
+(4) People who are in need of refuge and consolation are apt to do odd things
+= 3
+~ Take P = "a person is in need of refuge and consolation" and Q = "a person is apt to do odd things". The given fact is P ⇒ Q (option 4), and what the statement claims "is clear" is its converse Q ⇒ P: people who are apt to do odd things are in need of refuge and consolation, option (3). Note that the inference itself is not logically valid: (P ⇒ Q) ⇒ (Q ⇒ P) is false when P is false and Q is true (the fallacy of the converse).
+
+Q 126 | dld | Combinational & Sequential Circuits
+Which of the following statements is correct?
+(1) A ripple counter is an asynchronous counter.
+(2) In an asynchronous counter, each state is clocked by the same pulse
+(3) An asynchronous decade counter increases its value by ten for each clock pulse
+(4) Asynchronous inputs will cause the flip-flop to respond immediately with regard to the clock input
+= 1
+~ In a ripple counter only the first flip-flop gets the external clock; each later flip-flop is clocked by the output of the previous one, so the change ripples through and the counter is asynchronous. A common clock for all stages (2) describes a synchronous counter, a decade counter counts 0 to 9 by one per pulse (3), and asynchronous inputs such as preset/clear act immediately without regard to the clock (4).
+
+Q 127 | prg | Object-Oriented Programming
+Which one of the following statements is correct?
+(1) Abstraction is the classification of objects, grouped according to their significant similarities
+(2) Abstraction is the classification of objects, grouped according to their significant differences
+(3) Abstraction is the classification of objects, grouped according to their names
+(4) Abstraction is hiding information inside a class so that it can only be known in an abstract manner
+= 4
+~ Abstraction means exposing only the essential features of an object and hiding how they are implemented, so users know a class only through its abstract interface (what it does, not how), which is what option (4) describes. Grouping objects with common structure and behaviour into classes, as in option (1), is classification, not abstraction.
+
+Q 128 | emt | Numerical Methods
+If the given function isknown only at some selected points, which method you would use to solve the differential equation.
+(1) Euler method
+(2) modified Euler method
+(3) Runge-Kutte Method
+(4) Simpson's Rule
+= 1
+~ Euler's method, yₙ₊₁ = yₙ + h·f(xₙ, yₙ), needs the function only at the given points x₀, x₁, x₂, …, so it can be used when f is known only at selected (tabulated) points. The modified Euler and Runge–Kutta methods also need f at intermediate or predicted points (such as xₙ + h/2), which a table does not give, and Simpson's rule is a numerical integration formula, not a method for differential equations.
+
+Q 129 | wit | Web Technologies
+XML validated against a ____ is a valid XML
+(1) DTD
+(2) JQUERY
+(3) CFG
+(4) Parser
+= 1
+~ An XML document is well-formed if it follows XML syntax rules; it is valid if, in addition, it conforms to the structure declared in a Document Type Definition (DTD) or an XML Schema. jQuery is a JavaScript library, and a parser only checks or reads the document.
+
+Q 130 | dms | Mathematical Logic
+Consider the logical statement q → (p → q) Which of the following statements is true about the above statement?
+(1) It is a Contradiction.
+(2) It is a Tautology
+(3) It is not a well formed statement
+(4) It is a Inverse
+= 2
+~ q → (p → q) ≡ ¬q ∨ (¬p ∨ q) ≡ ¬p ∨ (q ∨ ¬q) ≡ ¬p ∨ T ≡ T. It could be false only if q were true and p → q false, but p → q is false only when q is false; so it is true for every assignment, a tautology.
+
+Q 131 | dms | Combinatorics & Probability
+The mean of the distribution whose probability density function f(x) = {αe^(−αx), x ≥ 0; 0, x < 0} is
+(1) 0
+(2) 1
+(3) 1/α
+(4) α
+= 3
+~ This is the exponential distribution with rate α. Mean = ∫₀^∞ x·αe^(−αx) dx; integrating by parts, = [−x e^(−αx)]₀^∞ + ∫₀^∞ e^(−αx) dx = 0 + 1/α = 1/α.
+
+Q 132 | dms | Combinatorics & Probability
+For a poisson distribution
+(1) Mean = standard deviation
+(2) Mean = variance
+(3) Mean = mean deviation
+(4) Mean = median
+= 2
+~ For a Poisson distribution with parameter λ, P(X = k) = e^(−λ)λᵏ/k!, and both the mean E[X] and the variance Var(X) equal λ. The standard deviation is √λ, so it equals the mean only when λ = 1.
+
+Q 133 | emt | Linear Algebra
+The Eigen values of a matrix are 1,2,−1 then the sum of Eigenvalues of the inverse of that matrix are
+(1) 0
+(2) 1/2
+(3) 2
+(4) 4
+= 2
+~ If Av = λv and A is invertible, then A⁻¹v = (1/λ)v, so the eigenvalues of A⁻¹ are the reciprocals 1, 1/2 and −1. Their sum is 1 + 1/2 − 1 = 1/2.
+
+Q 134 | emt | Linear Algebra
+The possible Eigenvector of the matrix [[3, 0, −2], [0, 2, 0], [−2, 0, 0]] corresponding to one of its Eigen value (-1) is
+(1) [1, 1, 1]ᵀ
+(2) [1, 0, 2]ᵀ
+(3) [−1, 0, 12]ᵀ
+(4) [2, 0, 1]ᵀ
+= 2
+~ The y-component separates (eigenvalue 2), and the x–z part [[3, −2], [−2, 0]] gives λ² − 3λ − 4 = 0, so λ = 4 or −1. For λ = −1, (A + I)v = 0 gives 4x − 2z = 0 and 3y = 0, so z = 2x, y = 0 and v = (1, 0, 2). Check: A(1, 0, 2)ᵀ = (3 − 4, 0, −2)ᵀ = (−1, 0, −2)ᵀ = −1·(1, 0, 2)ᵀ. The other vectors fail, e.g. A(2, 0, 1)ᵀ = (4, 0, −4)ᵀ, which is not a multiple of (2, 0, 1).
+
+Q 135 | emt | Numerical Methods
+In the LU factorization method, to solve the system of equations AX=B, we solve the system of equations in the order
+(1) First UX=Y and then LY=B
+(2) First LY=B and then UX=Y
+(3) First LY=X and then UY=B
+(4) First UY=B and then LX=Y
+= 2
+~ With A = LU the system becomes L(UX) = B. Putting UX = Y, we first solve LY = B for Y by forward substitution (L is lower triangular), and then solve UX = Y for X by back substitution (U is upper triangular).
+
+Q 136 | emt | Numerical Methods
+If f(a)f(b) < 0, then at least one root of the equation f(x) = 0 lies between a and b. The repeated application of this is
+(1) Newton-Raphson method
+(2) Bisection method
+(3) Secant method
+(4) LU decomposition method
+= 2
+~ The bisection method starts from an interval [a, b] with f(a)f(b) < 0, evaluates f at the midpoint c = (a + b)/2, and keeps whichever half [a, c] or [c, b] still has a sign change; repeating this halves the interval containing the root each time. Newton–Raphson and the secant method use tangents/secants and do not need a sign change.
+
+Q 137 | emt | Calculus
+If f(x) = (e^(1/x) − 1)/(e^(1/x) + 1) for x ≠ 0, f(0) = 0 then at x=0 f(x) is
+(1) continuous
+(2) discontinuous
+(3) differentiable
+(4) continuous but not differentiable
+= 2
+~ As x → 0⁺, 1/x → +∞, so f(x) = (1 − e^(−1/x))/(1 + e^(−1/x)) → 1. As x → 0⁻, 1/x → −∞, e^(1/x) → 0, so f(x) → (0 − 1)/(0 + 1) = −1. The left and right limits differ (−1 ≠ 1), so the limit does not exist and f is discontinuous at x = 0 (and therefore not differentiable either).
+
+Q 138 | emt | Calculus
+If y = √(x + √(x + √(x……..∞))), then dy/dx =
+(1) 1/y
+(2) 1/x
+(3) 1/(2x−1)
+(4) 1/(2y−1)
+= 4
+~ Since the expression under the first root repeats itself, y = √(x + y), so y² = x + y. Differentiating, 2y·(dy/dx) = 1 + dy/dx, so (2y − 1)(dy/dx) = 1 and dy/dx = 1/(2y − 1).
+
+Q 139 | emt | Calculus
+∫₋₁¹ (x − [2x]) dx =
+(1) 1
+(2) 0
+(3) 2
+(4) 4
+= 1
+~ ∫₋₁¹ x dx = 0 since x is odd. [2x] is the greatest integer function: it is −2 on [−1, −1/2), −1 on [−1/2, 0), 0 on [0, 1/2) and 1 on [1/2, 1), each interval of length 1/2, so ∫₋₁¹ [2x] dx = (1/2)(−2 − 1 + 0 + 1) = −1. Hence the integral = 0 − (−1) = 1.
+
+Q 140 | prg | C Programming
+Consider the following C declaration
+```
+int (*f)();
+```
+Which of the following statements correctly interprets the above declaration?
+(1) f is a function which returns an integer
+(2) f is a function which returns a pointer to an integer
+(3) f is a function to pointer which returns an integer
+(4) f is pointer to a function which returns an integer
+= 4
+~ The parentheses bind * to f first, so f is a pointer; the () after (*f) says it points to a function, and int is that function's return type. Without the parentheses, int *f(); would declare a function returning a pointer to int (option 2), and int f(); a function returning int (option 1).
+
+Q 141 | cnw | Transport & Application Layers
+Which of the following statements is false about DNS?
+(1) DNS uses TCP for its implementation
+(2) DNS uses both TCP and UDP for its implementation.
+(3) DNS is implemented as a distributed database system.
+(4) DNS maps internet domain name onto the IP address.
+= 1
+~ DNS is a hierarchical, distributed database that maps domain names to IP addresses. Ordinary queries and replies are carried over UDP port 53, and TCP (port 53) is used for zone transfers and for replies too large for UDP. So (2) is true, and (1), which says DNS is implemented over TCP and ignores UDP, its main transport, is the false statement.
+
+Q 142 | dst | Arrays, Stacks, Queues & Linked Lists
+Which of the following is the correct sequence of the statements to be executed to insert a node after a node whose address is p? The pointer field nextptr points to the next node and the address of the new node is q.
+(1) p->nextptr=q; q->nextptr=p;
+(2) p->nextptr=q; q->nextptr=p->nextptr;
+(3) q->nextptr=p->nextptr; p->nextptr=q;
+(4) q->nextptr=p->nextptr; p->nextptr=q->nextptr;
+= 3
+~ First the new node must point to p's old successor (q->nextptr = p->nextptr), and only then can p be made to point to the new node (p->nextptr = q). In option (2) the order is reversed: after p->nextptr = q, the statement q->nextptr = p->nextptr makes q point to itself and the rest of the list is lost.
+
+Q 143 | cnw | Network Models & Data Link Layer
+A bit string, 0111101111101111110, needs to be transmitted at the data link layer. What is the string actually transmitted after the bit stuffing?
+(1) 011110111110011111100
+(2) 011110111110011111010
+(3) 011110111110111111000
+(4) 011110011111011111100
+= 2
+~ With the flag 01111110, the sender inserts a 0 after every run of five consecutive 1s in the data. The data is 0 1111 0 11111 0 111111 0: a 0 is stuffed after the run 11111 (before the original 0), and another after the first five 1s of the run 111111. Result: 0 1111 0 11111 0 0 11111 0 1 0 = 011110111110011111010 (19 data bits + 2 stuffed bits = 21 bits).
+
+Q 144 | cnw | Network Models & Data Link Layer
+A channel has a bit rate of 4000 bps and a propagation delay of 20 msec. For what range of frame sizes(S) (in number of bits) does stop-and-wait protocol give an efficiency of at least 50 percent?
+(1) S ≤ 160
+(2) S ≥ 160
+(3) 80 ≤ S ≤ 160
+(4) S ≥ 40, 20 ≤ S ≤ 30
+= 2
+~ Stop-and-wait efficiency = Tt/(Tt + 2Tp), where Tt = S/4000 s is the transmission time. Efficiency ≥ 1/2 requires Tt ≥ 2Tp = 2 × 20 ms = 40 ms, so S ≥ 4000 × 0.04 = 160 bits.
+
+Q 145 | cnw | Network Models & Data Link Layer
+Which of the following sliding window protocols has the receiver window size more than 1?
+(1) Stop-and-wait protocol
+(2) One-bit window protocol
+(3) Go-Back-N protocol
+(4) Selective Repeat protocol
+= 4
+~ In Selective Repeat the receiver accepts and buffers out-of-order frames within its window and asks only for the missing ones to be resent, so its receive window is greater than 1 (up to 2ᵐ⁻¹ for m-bit sequence numbers). Stop-and-wait (the one-bit sliding window protocol) has window 1 at both ends, and Go-Back-N has a sender window up to 2ᵐ − 1 but a receiver window of 1, since it accepts frames only in order.
+
+Q 146 | cnw | Network Models & Data Link Layer
+Consider building a CSMA/CD network running at 1 Gbps over a 1-km cable with no repeaters. The signal speed in the cable is 200,000 km/sec. What is the minimum frame size?
+(1) 10⁶ bits
+(2) 64 bytes
+(3) 1250 bytes
+(4) 125 bytes
+= 3
+~ One-way propagation time Tp = 1 km/(200,000 km/s) = 5 µs. For a collision to be detected before the sender finishes, a frame must last at least the round-trip time 2Tp = 10 µs, so the minimum frame size = 10⁹ bits/s × 10 × 10⁻⁶ s = 10,000 bits = 1250 bytes.
+
+Q 147 | cnw | IP Addressing & Routing
+Which one of the following statements is incorrect about Count-to-infinity problem?
+(1) It reacts rapidly to good news
+(2) It reacts slowly to good news
+(3) It reacts leisurely to bad news
+(4) Distance Vector Routing suffers from Count-to-infinity problem
+= 2
+~ In distance vector routing, good news (a new or shorter route) spreads quickly, one hop per exchange of vectors. Bad news (a link or router going down) spreads very slowly, because routers keep raising their distances to the lost destination step by step towards "infinity"; this is the count-to-infinity problem. So "it reacts slowly to good news" is the incorrect statement.
+
+Q 148 | cnw | IP Addressing & Routing
+A network on the Internet has a subnet mask of 255.255.240.0. What is the maximum number of hosts it can handle?
+(1) 4096
+(2) 3556
+(3) 4080
+(4) 4094
+= 4
+~ 240 = 11110000₂, so the mask has 8 + 8 + 4 = 20 network bits and 4 + 8 = 12 host bits. That gives 2¹² = 4096 addresses, of which the all-0s (network) and all-1s (broadcast) host parts cannot be assigned: 4096 − 2 = 4094 hosts.
+
+Q 149 | cnw | Transport & Application Layers
+Consider a transport layer with maximum segment size as 1KB. Also, consider at a particular point of time, the parameters receiver's window, congestion window are set to 1024KB, 256KB respectively, at which time, the transmission of a packet resulted in a timeout. What will be the values of congestion window and threshold respectively for the next transmission?
+(1) 1024KB, 256KB
+(2) 1KB, 128KB
+(3) 1KB,256KB
+(4) 1024KB, 128Kb
+= 2
+~ On a timeout, TCP sets the threshold to half of the current congestion window, 256 KB/2 = 128 KB, and restarts slow start with the congestion window at 1 MSS = 1 KB. The receiver's window (1024 KB) only caps the sending window and does not change here. So the next values are 1 KB and 128 KB.
+
+Q 150 | cnw | IP Addressing & Routing
+Dynamic Host Configuration Protocol (DHCP) is used to:
+(1) assign CIDR subnet masks to routers
+(2) allocate the host part of an IP address to a host
+(3) assign the network component of an IP address to a router
+(4) manage the assignment of MAC addresses
+= 2
+~ DHCP lets a host joining a network get its IP configuration automatically: a DHCP server leases it an unused address from that network's pool (along with the mask, default gateway and DNS server). The network part is fixed by the network the host is on, so what DHCP actually allocates is the host part. It does not configure routers, and MAC addresses are built into the network card.

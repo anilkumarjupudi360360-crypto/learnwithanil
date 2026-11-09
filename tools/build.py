@@ -571,6 +571,7 @@ HM_SUBJECTS = [
   ('cnw', 'Computer Networks', 'computer-networks', ['Network Models & Data Link Layer', 'IP Addressing & Routing', 'Transport & Application Layers', 'Network Security & Cryptography']),
   ('swe', 'Software Engineering', 'software-engineering', ['Process Models & Requirements', 'Design, Coding & Testing', 'Project Management & Metrics']),
   ('wit', 'Web Technologies & Other IT Topics', 'web-technologies-it', ['Web Technologies', 'Computer Graphics & Multimedia', 'Other IT Topics']),
+  ('emt', 'Engineering Mathematics', 'engineering-mathematics', ['Linear Algebra', 'Calculus', 'Numerical Methods']),
 ]
 HM_SUBJ_TE = {'cur': 'కరెంట్ అఫైర్స్', 'sci': 'జనరల్ సైన్స్', 'env': 'పర్యావరణం, విపత్తు నిర్వహణ', 'geo': 'భూగోళశాస్త్రం (జాగ్రఫీ)',
               'ih': 'భారతదేశ చరిత్ర', 'tg': 'తెలంగాణ చరిత్ర, ఉద్యమం', 'pol': 'భారత రాజ్యాంగం (పాలిటీ)', 'eco': 'భారత, తెలంగాణ ఆర్థిక వ్యవస్థ',
