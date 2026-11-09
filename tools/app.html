@@ -306,6 +306,7 @@ div.feature:hover{border-color:var(--line)}
 .qnum{font-family:var(--f-mono);font-weight:600;font-size:14px;color:var(--accent-text)}
 .qtext{font-size:17.5px;font-weight:600;line-height:1.55;white-space:pre-line;overflow-wrap:anywhere}
 .qtbl-wrap{overflow-x:auto;margin:6px 0 8px;white-space:normal}.qtbl{border-collapse:collapse;font-size:15px;font-weight:500}.qtbl th,.qtbl td{border:1px solid var(--line);padding:4px 10px;text-align:left;vertical-align:top}.qtbl th{background:var(--accent-soft);font-weight:700}.qtbl .num{text-align:right;white-space:nowrap}
+.qcode{display:block;white-space:pre;overflow-x:auto;font-family:var(--f-mono),ui-monospace,monospace;font-size:14.5px;font-weight:500;line-height:1.5;background:var(--accent-soft);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:6px 0 8px;tab-size:4}
 .qimg{max-width:100%;border-radius:8px;background:#fff;padding:6px;border:1px solid var(--line);align-self:flex-start}
 .opts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
 .opt{width:100%;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;cursor:pointer;font-size:16.5px;color:var(--ink)}
@@ -1702,6 +1703,10 @@ function qtextHTML(text){
   const cell = (t,c) => `<${t}${isNum(c)?' class="num"':""}>${esc(c)}</${t}>`;
   const flush = () => { if(buf.length){ out.push(esc(buf.join("\n"))); buf=[]; } };
   while(i<L.length){
+    if(L[i].trim()==="```"){   // a code block between ``` fence lines keeps its spacing (TSPSC Manager CS & IT, 9 Nov 2026)
+      flush(); let k=i+1; while(k<L.length && L[k].trim()!=="```") k++;
+      out.push(`<span class="qcode">${esc(L.slice(i+1,k).join("\n"))}</span>`); i=k+1; continue;
+    }
     let j=i; while(j<L.length && tblRow(L[j])) j++;
     if(j-i>=2){
       flush();
@@ -1715,7 +1720,7 @@ function qtextHTML(text){
   flush();
   return out.join("");
 }
-function stemHTML(q){ const t=QT(q), tag = t.split("\n").filter(tblRow).length>=2 ? "div" : "p"; return `<${tag} class="qtext"${langAttr(q)}>${qtextHTML(t)}</${tag}>` + (q.img? `<img class="qimg" src="${q.img}" alt="Figure for this question">` : ""); }
+function stemHTML(q){ const t=QT(q), tag = (t.split("\n").filter(tblRow).length>=2 || t.includes("```")) ? "div" : "p"; return `<${tag} class="qtext"${langAttr(q)}>${qtextHTML(t)}</${tag}>` + (q.img? `<img class="qimg" src="${q.img}" alt="Figure for this question">` : ""); }
 function answerText(q){ const o=OPTS(q); return isMCQ(q) ? q.a.map(i=>`(${LET[i]}) ${o[i]}`).join("  or  ") : ANS(q); }
 function answerBox(q){ const te = isMCQ(q)? (P.lang===L2.code&&!!q.ot) : (P.lang===L2.code&&!!q.at); return `<div class="answer"${te?LATTR:""}><small lang="en">${esc((PMAP[q.p]||{}).alabel||"Official answer")}</small>${esc(answerText(q))}</div>`; }
 function videoBtn(q){ return q.v? `<button class="video-btn" type="button" data-act="video" data-id="${q.id}"><span class="play" aria-hidden="true">▶</span><span><b lang="te">వీడియో వివరణ చూడండి</b><small>Watch the video explanation · ${esc(q.v.dur||"1 min")} · Telugu</small></span></button>` : ""; }

@@ -517,6 +517,15 @@ HM_PAPERS = [
        alt='Electronics & Communication Engineering', te_paper='పేపర్-2 ఎలక్ట్రానిక్స్ & కమ్యూనికేషన్ ఇంజనీరింగ్', en_only=True,
        blurb='Paper 2: Electronics & Communication Engineering (networks, electronic devices and circuits, digital electronics, signals and systems, control systems, analog and digital communication, '
              'electromagnetics, transmission lines, microwaves and antennas), 150 questions, 300 marks, 150 minutes, in English only.'),
+  # Anil, 9 Nov 2026: "add it" (a B.Tech CSE student registered for this exam); TGPSC's scanned booklet "Managers QP CS&IT" (ME1315, code 502, Series A)
+  # from its Old Question Papers page; answers from TSPSC's final key (Series A), copy on freejobalert.com like the other keys.
+  dict(id='m15cs', file='tgpsc-hmwssb-manager-2015-paper2-cse.txt', year=2015, stage='Written Examination Paper II', short='Manager 2015 Paper 2 (CS & IT)',
+       kwname='TGPSC HMWSSB Manager 2015 Paper 2 CSE',
+       title='TSPSC Manager (Engineering), HMWSSB, 2015: Paper 2 (Computer Science & Information Technology)', notif='Notification 13/2015 · Series A', held='1 November 2015',
+       key="TSPSC's final key", fmt='mcq', slug='tgpsc-hmwssb-manager-2015-paper-2-computer-science-information-technology-cse-question-paper-with-answers',
+       alt='Computer Science & Information Technology', te_paper='పేపర్-2 కంప్యూటర్ సైన్స్ & ఇన్ఫర్మేషన్ టెక్నాలజీ', en_only=True,
+       blurb='Paper 2: Computer Science & Information Technology (discrete mathematics, digital logic, computer organisation, programming, data structures and algorithms, '
+             'theory of computation, operating systems, databases, computer networks and software engineering), 150 questions, 300 marks, 150 minutes, in English only.'),
 ]
 HM_SUBJECTS = [
   ('cur', 'Current Affairs', 'current-affairs', ['National', 'International', 'Telangana', 'Sports & Awards']),
@@ -549,6 +558,19 @@ HM_SUBJECTS = [
   ('dcm', 'Digital Communication', 'digital-communication', ['Sampling, PCM & Delta Modulation', 'Digital Modulation & Detection', 'Information Theory & Coding']),
   ('emw', 'Electromagnetics & Transmission Lines', 'electromagnetics-transmission-lines', ['Vector Calculus & Electrostatics', 'Wave Propagation', 'Transmission Lines']),
   ('mwa', 'Microwaves & Antennas', 'microwaves-antennas', ['Waveguides & Cavity Resonators', 'Antennas & Arrays']),
+  # Paper 2 Computer Science & IT (m15cs), 9 Nov 2026
+  ('dms', 'Discrete Mathematics', 'discrete-mathematics', ['Sets, Relations & Functions', 'Mathematical Logic', 'Combinatorics & Probability', 'Graph Theory', 'Lattices & Algebraic Structures']),
+  ('dld', 'Digital Logic', 'digital-logic', ['Number Systems & Codes', 'Boolean Algebra & Minimisation', 'Combinational & Sequential Circuits']),
+  ('coa', 'Computer Organisation & Architecture', 'computer-organisation-architecture', ['Instruction Sets & Addressing Modes', 'CPU, Pipelining & Computer Arithmetic', 'Memory Hierarchy & I/O']),
+  ('prg', 'Programming in C, C++ & Java', 'programming-c-cpp-java', ['C Programming', 'Object-Oriented Programming']),
+  ('dst', 'Data Structures', 'data-structures', ['Arrays, Stacks, Queues & Linked Lists', 'Trees & Heaps', 'Hashing & Graph Representation']),
+  ('alg', 'Algorithms', 'algorithms', ['Complexity & Recurrences', 'Sorting & Searching', 'Algorithm Design Techniques', 'Graph Algorithms']),
+  ('toc', 'Theory of Computation & Compilers', 'theory-of-computation-compilers', ['Regular Languages & Finite Automata', 'Context-Free Languages & Turing Machines', 'Compiler Design']),
+  ('ops', 'Operating Systems', 'operating-systems', ['Processes, Threads & CPU Scheduling', 'Synchronisation & Deadlocks', 'Memory Management & Virtual Memory', 'File Systems & Disk Scheduling']),
+  ('dbm', 'Database Management Systems', 'database-management-systems', ['ER & Relational Model', 'SQL & Relational Algebra', 'Normalisation', 'Transactions, Concurrency & Indexing']),
+  ('cnw', 'Computer Networks', 'computer-networks', ['Network Models & Data Link Layer', 'IP Addressing & Routing', 'Transport & Application Layers', 'Network Security & Cryptography']),
+  ('swe', 'Software Engineering', 'software-engineering', ['Process Models & Requirements', 'Design, Coding & Testing', 'Project Management & Metrics']),
+  ('wit', 'Web Technologies & Other IT Topics', 'web-technologies-it', ['Web Technologies', 'Computer Graphics & Multimedia', 'Other IT Topics']),
 ]
 HM_SUBJ_TE = {'cur': 'కరెంట్ అఫైర్స్', 'sci': 'జనరల్ సైన్స్', 'env': 'పర్యావరణం, విపత్తు నిర్వహణ', 'geo': 'భూగోళశాస్త్రం (జాగ్రఫీ)',
               'ih': 'భారతదేశ చరిత్ర', 'tg': 'తెలంగాణ చరిత్ర, ఉద్యమం', 'pol': 'భారత రాజ్యాంగం (పాలిటీ)', 'eco': 'భారత, తెలంగాణ ఆర్థిక వ్యవస్థ',
@@ -1439,15 +1461,15 @@ def exam_confs():
            short='HMWSSB Manager', seo='TGPSC HMWSSB Manager', slugp='tgpsc-hmwssb-manager', papers=HM_PAPERS, subjects=HM_SUBJECTS, faq=FAQ_HM,
            board='TGPSC', l2=L2_TE, pb='/tgpsc-hmwssb-manager/', keyname="TSPSC's final key", keyshort="TSPSC's final key", bits=True,
            te_name='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్)', te_paper='రాత పరీక్ష', subj_te=HM_SUBJ_TE,
-           title='TGPSC HMWSSB Manager (Engineering) Previous Question Papers with Answers – GS, Civil & ECE, English & Telugu | Learn with Anil',
+           title='TGPSC HMWSSB Manager (Engineering) Previous Question Papers with Answers – GS, Civil, ECE & CSE, English & Telugu | Learn with Anil',
            h1='TGPSC HMWSSB Manager (Engineering) previous question papers <em>with answers.</em>',
-           l2line='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), సివిల్ ఇంజనీరింగ్, ఎలక్ట్రానిక్స్ & కమ్యూనికేషన్ ఇంజనీరింగ్ (ECE); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), సివిల్ ఇంజనీరింగ్, ఎలక్ట్రానిక్స్ & కమ్యూనికేషన్ ఇంజనీరింగ్ (ECE), కంప్యూటర్ సైన్స్ & ఐటీ (CSE); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
            aka='Manager (Engineering) in the Hyderabad Metropolitan Water Supply and Sewerage Board (HMWSSB, Jalamandali), recruited by TGPSC, formerly TSPSC.',
            aka_short='TGPSC (TSPSC) Manager (Engineering), Hyderabad Metro Water Board',
            desc=lambda t: (f"TGPSC (TSPSC) HMWSSB Manager (Engineering) previous question papers: the 2015 Paper 1 General Studies (English and Telugu) "
-                           f"and Paper 2 Civil Engineering and Electronics & Communication Engineering (ECE) with answers from TSPSC's final key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"and Paper 2 Civil Engineering, Electronics & Communication Engineering (ECE) and Computer Science & IT (CSE) with answers from TSPSC's final key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
            eyebrow='TGPSC (TSPSC) · Manager (Engineering), HMWSSB · Notification 13/2015',
-           papers_note="Answers come from TSPSC's final key for booklet Series A (Notification 13/2015, written test held on 1 November 2015). Questions for which TSPSC gave the mark to every candidate are left out. Paper 1 is in English and Telugu as printed (its English-language questions in English only); the Paper 2 subject papers (Civil Engineering, Electronics & Communication Engineering) are in English only."),
+           papers_note="Answers come from TSPSC's final key for booklet Series A (Notification 13/2015, written test held on 1 November 2015). Questions for which TSPSC gave the mark to every candidate are left out. Paper 1 is in English and Telugu as printed (its English-language questions in English only); the Paper 2 subject papers (Civil Engineering, Electronics & Communication Engineering, Computer Science & Information Technology) are in English only. Where the key accepted two options, both are shown as correct."),
       dict(id='appsc-amvi', dir='appsc-amvi', src='appsc-amvi', key='ap-amvi', name='APPSC AMVI (Assistant Motor Vehicle Inspector)',
            short='APPSC AMVI', seo='APPSC AMVI', slugp='appsc-amvi', papers=AMVI_AP_PAPERS, subjects=AMVI_AP_SUBJECTS, faq=FAQ_AMVI('AP'),
            board='APPSC', l2=L2_TE, pb='/appsc-amvi/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
@@ -2491,19 +2513,19 @@ def FAQ_HM(total, npapers):
     return [
       ('Where can I get TGPSC HMWSSB Manager (Engineering) previous question papers with answers?',
        f'This page has {total} questions from the TSPSC Manager (Engineering) written test for HMWSSB, Notification 13/2015, held on 1 November 2015: '
-       'Paper 1 General Studies in English and Telugu, and Paper 2 in Civil Engineering and in Electronics & Communication Engineering (ECE). Every answer is taken from TSPSC\'s final key (Series A), and each question has a short explanation. '
+       'Paper 1 General Studies in English and Telugu, and Paper 2 in Civil Engineering, in Electronics & Communication Engineering (ECE) and in Computer Science & Information Technology (CSE). Every answer is taken from TSPSC\'s final key (Series A), and each question has a short explanation. '
        'You can practise each paper as a quiz or a timed mock test, with answers and explanations with one ₹45 All-in-One Pass for every exam.'),
       ('What is the TGPSC HMWSSB Manager (Engineering) 2026 exam pattern?',
        'Two objective papers: Paper 1 General Studies and General Abilities (150 questions, 150 marks, in English and Telugu) and Paper 2 in the candidate\'s engineering '
        'subject (150 questions, 300 marks, in English), 450 marks in all. Notification 04/2026 has 130 posts, mostly Civil, and the exam is tentatively in December 2026; confirm dates on tgpsc.gov.in.'),
       ('Are the HMWSSB Manager General Studies questions available in Telugu?',
-       'Yes. Paper 1 (General Studies) is printed in English and Telugu, apart from its English-language questions, and every question is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu. The Paper 2 subject papers (Civil Engineering and ECE) are printed in English only.'),
+       'Yes. Paper 1 (General Studies) is printed in English and Telugu, apart from its English-language questions, and every question is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu. The Paper 2 subject papers (Civil Engineering, ECE and Computer Science & IT) are printed in English only.'),
       ('Is there a HMWSSB Manager mock test?',
-       'Yes. Open the mock test page and take a real 2015 paper with a timer, or tap Create a quiz to choose subjects such as Environmental Engineering, Fluid Mechanics or Telangana History. You get your score, the official answer and an explanation for every question.'),
+       'Yes. Open the mock test page and take a real 2015 paper with a timer, or tap Create a quiz to choose subjects such as Environmental Engineering, Computer Networks or Telangana History. You get your score, the official answer and an explanation for every question.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
       ('Which questions are left out?',
-       'TSPSC\'s final key gave the mark to every candidate for five questions of Paper 2 Civil (Q3, 37, 64, 95 and 128 in Series A) and five of Paper 2 ECE (Q38, 47, 53, 123 and 134); they are left out. The Mechanical, Electrical and CSE papers are not on the site yet.'),
+       'TSPSC\'s final key gave the mark to every candidate for five questions of Paper 2 Civil (Q3, 37, 64, 95 and 128 in Series A), five of Paper 2 ECE (Q38, 47, 53, 123 and 134) and three of Paper 2 Computer Science & IT (Q72, 96 and 106); they are left out. For CSE Q2 the key accepts option 1 or 4, so both are shown as correct. The Mechanical and Electrical papers are not on the site yet.'),
     ]
 
 
@@ -2816,7 +2838,7 @@ h1{font-size:clamp(26px,4vw,36px);margin:28px 0 8px}h2{font-size:22px;margin:32p
 ol.qs{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
 .q{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
 .q .meta{font:13px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);margin-bottom:6px}
-.q p{margin:0 0 8px;white-space:pre-line;font-weight:600;overflow-wrap:anywhere}.qtbl-wrap{overflow-x:auto;margin:0 0 10px}.qtbl{border-collapse:collapse;font-size:15px}.qtbl th,.qtbl td{border:1px solid var(--line);padding:4px 10px;text-align:left;vertical-align:top}.qtbl th{background:var(--accent-soft);font-weight:700}.qtbl .num{text-align:right;white-space:nowrap}.q ol{margin:0 0 8px;padding-left:28px}.q li{overflow-wrap:anywhere}
+.q p{margin:0 0 8px;white-space:pre-line;font-weight:600;overflow-wrap:anywhere}.qtbl-wrap{overflow-x:auto;margin:0 0 10px}.qcode{white-space:pre;overflow-x:auto;font:500 14px/1.5 "IBM Plex Mono",ui-monospace,monospace;background:var(--accent-soft);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:0 0 10px;tab-size:4}.qtbl{border-collapse:collapse;font-size:15px}.qtbl th,.qtbl td{border:1px solid var(--line);padding:4px 10px;text-align:left;vertical-align:top}.qtbl th{background:var(--accent-soft);font-weight:700}.qtbl .num{text-align:right;white-space:nowrap}.q ol{margin:0 0 8px;padding-left:28px}.q li{overflow-wrap:anywhere}
 .q img{max-width:100%;background:#fff;border-radius:6px}
 details summary{cursor:pointer;color:var(--accent-text);font-weight:700}
 .buy{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--surface);border:1.5px solid var(--accent);border-radius:14px;padding:16px 18px;margin:12px 0}
@@ -2966,6 +2988,10 @@ def qtext_html(text):
     def flush():
         if buf: out.append(f'<p>{esc(chr(10).join(buf))}</p>'); buf.clear()
     while i < len(lines):
+        if lines[i].strip() == '```':   # code between ``` fence lines keeps its spacing (TSPSC Manager CS & IT, 9 Nov 2026)
+            flush(); k = i + 1
+            while k < len(lines) and lines[k].strip() != '```': k += 1
+            out.append(f'<pre class="qcode">{esc(chr(10).join(lines[i + 1:k]))}</pre>'); i = k + 1; continue
         j = i
         while j < len(lines) and _tbl_row(lines[j]): j += 1
         if j - i >= 2:
@@ -5866,7 +5892,7 @@ def question_pages(conf, papers, questions, subj):
         for i, q in enumerate(qs):
             rel = f'q/{q["id"]}.html'
             can = SITE_URL + pb + rel
-            text = re.sub(r'\s+', ' ', q['q']).strip()
+            text = re.sub(r'\s+', ' ', q['q'].replace('```', ' ')).strip()
             short = text if len(text) <= 80 else text[:78].rsplit(' ', 1)[0] + '…'
             kw = paper_kw(conf, p)
             title = f'{short} – {kw} Q{q["n"]} | Learn with Anil'

@@ -91,7 +91,10 @@ def paper_html(conf, p, qs, subj):
              f'Questions are as printed in the official booklet, in {"English" if p.get("en_only") else "English and " + l2["name"]}; the answer key and explanations follow the questions.</div></div>']
     parts.append('<h2>Questions</h2>')
     for q in qs:
-        h = [f'<div class="q"><p><span class="n">Q{q["n"]}.</span> {esc(q["q"])}</p>']
+        if '```' in q['q']:   # code block (TSPSC Manager CS & IT): keep its spacing
+            h = [f'<div class="q"><p><span class="n">Q{q["n"]}.</span></p>' + B.qtext_html(q['q']).replace('<pre class="qcode">', '<pre style="white-space:pre;font:12px/1.45 monospace;background:#f3f5fa;border:1px solid #d8dde8;border-radius:6px;padding:6px 10px;margin:4px 0">')]
+        else:
+            h = [f'<div class="q"><p><span class="n">Q{q["n"]}.</span> {esc(q["q"])}</p>']
         if q.get('img'): h.append(f'<img src="{q["img"]}" alt="">')
         if q.get('o'): h.append(opt_list(q['o']))
         if q.get('qt'):
