@@ -2632,7 +2632,7 @@ def FAQ_FRO(total, npapers):
       ('What is the APPSC FRO exam pattern?',
        'Notification 16/2026 (5 posts) has a qualifying test in General English and General Telugu (100 marks) and four objective papers of 150 marks each: Paper I General Studies & Mental Ability, '
        'Paper II Mathematics (SSC standard), Paper III General Forestry I and Paper IV General Forestry II, 600 marks in all, computer-based, with one-third of a mark deducted for each wrong answer. '
-       'Shortlisted candidates take a walking test (men 25 km, women 16 km in 4 hours), a medical examination and a Computer Proficiency Test. Online applications run from 16 October to 5 November 2026.'),
+       'Shortlisted candidates take a walking test (men 25 km, women 16 km in 4 hours), a medical examination and a Computer Proficiency Test. Online applications run from 16 October to 12 November 2026 (extended from 5 November).'),
       ('What is in the General Forestry syllabus?',
        'General Forestry I: renewable and non-renewable natural resources, plant sciences, biodiversity and its conservation, soil science and geology, water and watershed management, silviculture of AP species, '
        'agroforestry, social and community forestry. General Forestry II: ecosystems and wildlife, forest protection and fire, forest utilization and NTFPs, animal management and economic zoology, forest economics, '
@@ -2748,7 +2748,7 @@ def FAQ_EO(total, npapers):
       ('What is the APPSC EO Grade-III exam pattern?',
        'Two objective papers of degree standard: Paper I General Studies & Mental Ability (150 questions, 150 marks, 150 minutes) and Paper II Hindu Philosophy & Temple System '
        '(150 questions, 150 marks, 150 minutes), 300 marks in all, computer-based, with one-third of a mark deducted for each wrong answer, followed by a qualifying Computer Proficiency Test. '
-       'Notification 23/2026 has 104 posts; online applications run from 16 October to 5 November 2026.'),
+       'Notification 23/2026 has 104 posts; online applications run from 16 October to 12 November 2026 (extended from 5 November).'),
       ('What is in the Hindu Philosophy & Temple System syllabus?',
        'Ramayanam, Mahabharatham, Bhagavatham and the Puranas (characters, parts, dynasties and places); temple Agamas (Vaikhanasa, Pancharatra, Saiva and Sakta); Hindu festivals and classical arts; '
        'Vedic culture; philosophies and gurus (Alwars, Nayanars, Sankara, Ramanuja, Madhva, Basava); family structure, adoption and succession; temple income and Section 57, duties of the Executive Officer '
@@ -3752,9 +3752,9 @@ LANDINGS = {
             '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.</p>'
             '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (686 posts, apply 10–30 November) and '
             '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts, applications closed, screening test 24 January 2027) and '
-            '<a href="/appsc-eo-grade-3-notification-2026.html">APPSC EO Grade-III Notification 2026</a> (104 Endowments Executive Officer posts, apply by 5 November), '
+            '<a href="/appsc-eo-grade-3-notification-2026.html">APPSC EO Grade-III Notification 2026</a> (104 Endowments Executive Officer posts, last date extended to 12 November), '
             '<a href="/appsc-analyst-grade-2-notification-2026.html">Analyst Grade-II Notification 2026</a> (18 Pollution Control Board posts, apply by 2 November) and '
-            '<a href="/appsc-fro-notification-2026.html">FRO Notification 2026</a> (5 Forest Range Officer posts, apply by 5 November) and '
+            '<a href="/appsc-fro-notification-2026.html">FRO Notification 2026</a> (5 Forest Range Officer posts, last date extended to 12 November) and '
             '<a href="/appsc-assistant-environmental-engineer-notification-2026.html">Assistant Environmental Engineer Notification 2026</a> (41 Pollution Control Board posts). Timed mock tests: '
             '<a href="/appsc-group-2/mock-test.html">Group 2</a> · <a href="/appsc-group-1/mock-test.html">Group 1</a>.</p>',
       te={'Group-I': 'APPSC గ్రూప్-1 ప్రశ్నాపత్రాలు', 'Group-II': 'APPSC గ్రూప్-2 ప్రశ్నాపత్రాలు', 'APPSC AMVI': 'APPSC AMVI ప్రశ్నాపత్రాలు', 'APPSC EO Grade-III': 'APPSC దేవాదాయ శాఖ EO గ్రేడ్-III ప్రశ్నాపత్రాలు', 'APPSC Analyst Grade-II': 'APPSC అనలిస్ట్ గ్రేడ్-II ప్రశ్నాపత్రాలు', 'APPSC Asst. Environmental Engineer': 'APPSC అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ ప్రశ్నాపత్రాలు', 'APPSC ASO': 'APPSC అసిస్టెంట్ స్టాటిస్టికల్ ఆఫీసర్ (ASO) ప్రశ్నాపత్రాలు', 'APPSC FRO': 'APPSC ఫారెస్ట్ రేంజ్ ఆఫీసర్ ప్రశ్నాపత్రాలు'},
@@ -4075,18 +4075,20 @@ NOTIFS = {
   'appsc-fro-notification-2026.html': dict(
     exam='appsc-fro', crumb='FRO Notification 2026',
     # Anil, 28 Oct / 1 Nov 2026: APPSC Notification 16/2026 dated 16 Oct 2026 (FRODetailedNotification_162026.pdf)
-    title='APPSC FRO Notification 2026 – Forest Range Officer, 5 Posts, Apply by 5 November, Syllabus & Previous Papers | Learn with Anil',
-    desc='APPSC Forest Range Officer (FRO) Notification 2026 (No. 16/2026): 5 posts in the A.P. Forest Service, online applications 16 October to 5 November 2026, eligibility, physical standards, fee, '
+    title='APPSC FRO Notification 2026 – Forest Range Officer, Last Date Extended to 12 November, 5 Posts, Syllabus & Previous Papers | Learn with Anil',
+    desc='APPSC Forest Range Officer (FRO) Notification 2026 (No. 16/2026): 5 posts in the A.P. Forest Service, last date for online applications extended from 5 to 12 November 2026, eligibility, physical standards, fee, '
          'the exam pattern and General Forestry syllabus, and FRO previous question papers with answers.',
     h1='APPSC Forest Range Officer (FRO) Notification 2026: 5 posts',
-    lede='APPSC Notification No. 16/2026 (16 October 2026) invites online applications for 5 posts of Forest Range Officer in the A.P. Forest Service. Apply by 5 November 2026. '
+    lede='APPSC Notification No. 16/2026 (16 October 2026) invites online applications for 5 posts of Forest Range Officer in the A.P. Forest Service. The last date, first 5 November, has been extended to 12 November 2026, 11:59 pm (as reported by Adda247 and Career Power). '
          'Below: dates, eligibility and physical standards, the exam pattern and syllabus, and the previous papers to start practising.',
     te='ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO) నోటిఫికేషన్ (నం. 16/2026): 5 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు అక్టోబర్ 16 నుంచి నవంబర్ 5, 2026 వరకు. జనరల్ స్టడీస్, గణితం, జనరల్ ఫారెస్ట్రీ-1, 2 పేపర్లు; పాత ప్రశ్నాపత్రాలు సమాధానాలతో కింద.',
     pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/FRODetailedNotification_162026.pdf', pdfname='APPSC Notification No. 16/2026, dated 16 October 2026',
+    more_src=[('https://www.adda247.com/exams/andhra-pradesh/appsc-forest-range-officer-recruitment/', 'Adda247, 3 November 2026: last date extended from 5 to 12 November 2026'),
+              ('https://www.careerpower.in/appsc-forest-range-officer.html', 'Career Power: last date extended till 12 November')],
     sections=[
       ('Important dates', 'table', [
         ('Notification (No. 16/2026)', '16 October 2026'),
-        ('Online applications', '16 October to 5 November 2026 (till 11:59 pm)'),
+        ('Online applications', '16 October to 12 November 2026, 11:59 pm (extended from 5 November, as reported; APPSC\'s web note could not be read here)'),
         ('Written examination', 'Computer-based (CBRT); date to be announced by APPSC'),
         ('Official website', 'psc.ap.gov.in')]),
       ('Posts, pay and age', 'table', [
@@ -4217,19 +4219,21 @@ NOTIFS = {
   'appsc-eo-grade-3-notification-2026.html': dict(
     exam='appsc-eo', crumb='EO Grade-III Notification 2026',
     # Anil, 28 Oct 2026: APPSC Notification 23/2026 dated 16 Oct 2026 (EO_Grade_III_DetailedNotification_232026.pdf)
-    title='APPSC Endowment Officer (EO Grade 3) Notification 2026 – 104 Posts, Apply by 5 November, Syllabus & Previous Papers | Learn with Anil',
-    desc='APPSC Executive Officer Grade-III (Endowments) Notification 2026 (No. 23/2026): 104 district posts, online applications 16 October to 5 November 2026, '
+    title='APPSC Endowment Officer (EO Grade 3) 2026 – Last Date Extended to 12 November, 104 Posts, Syllabus & Previous Papers | Learn with Anil',
+    desc='APPSC Executive Officer Grade-III (Endowments) Notification 2026 (No. 23/2026): 104 district posts, last date for online applications now 12 November 2026 (was 5 November), '
          'eligibility, fee, the Paper I and Paper II (Hindu Philosophy & Temple System) pattern and syllabus, and EO Grade-III previous question papers with answers.',
-    h1='APPSC Endowment Officer (EO Grade-III) Notification 2026: 104 posts',
+    h1='APPSC Endowment Officer (EO Grade-III) 2026: last date now 12 November',
     lede='APPSC Notification No. 23/2026 (16 October 2026) invites online applications for 104 posts of Executive Officer Grade-III in the A.P. Endowments Subordinate Service, '
-         'the officers who run temples and charitable institutions under the Endowments Department. Apply by 5 November 2026. Below: dates, eligibility, the exam pattern and syllabus, '
+         'the officers who run temples and charitable institutions under the Endowments Department. The last date, first 5 November, is now 12 November 2026 (Sakshi Education, 10 November 2026). Below: dates, eligibility, the exam pattern and syllabus, '
          'and the previous papers to start practising.',
     te='ఏపీపీఎస్సీ దేవాదాయ శాఖ ఎగ్జిక్యూటివ్ ఆఫీసర్ గ్రేడ్-III నోటిఫికేషన్ (నం. 23/2026): 104 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు అక్టోబర్ 16 నుంచి నవంబర్ 5, 2026 వరకు. పేపర్-1 జనరల్ స్టడీస్, పేపర్-2 హిందూ తత్వశాస్త్రం & దేవాలయ వ్యవస్థ; పాత ప్రశ్నాపత్రాలు సమాధానాలతో కింద.',
     pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/EO_Grade_III_DetailedNotification_232026.pdf', pdfname='APPSC Notification No. 23/2026, dated 16 October 2026',
+    more_src=[('https://education.sakshi.com/en/appsc/education-news/appsc-eo-grade-iii-recruitment-2026-application-deadline-nears-apply-online-november-12-202316', 'Sakshi Education, 10 November 2026: apply online until 12 November 2026'),
+              ('https://www.adda247.com/exams/andhra-pradesh/appsc-endowment-officer/', 'Adda247: last date extended till 12 November')],
     sections=[
       ('Important dates', 'table', [
         ('Notification (No. 23/2026)', '16 October 2026'),
-        ('Online applications', '16 October to 5 November 2026 (till 11:59 pm)'),
+        ('Online applications', '16 October to 12 November 2026 (last date extended from 5 November)'),
         ('Written examination', 'Computer-based (CBRT); date to be announced by APPSC'),
         ('Official website', 'psc.ap.gov.in')]),
       ('Posts, pay and age', 'table', [
@@ -5181,7 +5185,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'upsc-epfo': ('UPSC EPFO APFC Recruitment Test 2026', '2026-12-20', 'UPSC Special Advertisement 52/2026 (80 APFC posts): pen-and-paper Recruitment Test on 20 December 2026.'),
   'appsc-analyst': ('APPSC Analyst Grade-II written examination', None, 'Applications 13 October to 2 November 2026 (Notification 21/2026); APPSC has not announced the exam date yet.'),
   'appsc-env-engineer': ('APPSC Assistant Environmental Engineer written examination', None, 'Applications 6 to 27 October 2026 (Notification 08/2026); APPSC has not announced the exam date yet.'),
-  'appsc-fro': ('APPSC Forest Range Officer written examination', None, 'Applications 16 October to 5 November 2026 (Notification 16/2026); APPSC has not announced the exam date yet.'),
+  'appsc-fro': ('APPSC Forest Range Officer written examination', None, 'Applications 16 October to 12 November 2026 (Notification 16/2026, extended); APPSC has not announced the exam date yet.'),
   'ap-police-si': ('AP Police SI Preliminary Written Test', None, 'SLPRB AP notified 378 SI posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
   'ap-police-constable': ('AP Police Constable Preliminary Written Test', None, 'SLPRB AP notified 1,156 posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
   'tgpsc-hmwssb-manager': ('TGPSC HMWSSB Manager (Engineering)', None, 'Tentatively December 2026; TGPSC has not announced the exact date yet.'),

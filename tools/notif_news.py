@@ -39,7 +39,7 @@ FAQS = {
     ('I did OTPR but have no password. What do I do?', 'APPSC does not send one. Create it once on the candidate New User page with your OTPR ID (AP followed by 10 digits) and mobile number: 8 to 12 characters with a capital letter, a number and a special character. You will need it for the hall ticket.'),
   ],
   'appsc-analyst-grade-2-notification-2026.html': [
-    ('Can I still apply for APPSC Analyst Grade-II?', 'The application window was 13 October to 2 November 2026 (11:59 pm). We had not seen an extension notice for Notification 21/2026 as of 4 November 2026; check psc.ap.gov.in.'),
+    ('Can I still apply for APPSC Analyst Grade-II?', 'The notification gave 13 October to 2 November 2026 (11:59 pm). A coaching website (Adda247) lists Analyst Grade-II among the APPSC posts whose last date was extended to 12 November 2026, but we could not confirm it from APPSC; check the candidate login on psc.ap.gov.in.'),
     ('When is the APPSC Analyst Grade-II exam?', 'Not announced yet. It will be a computer-based test (CBRT); APPSC will publish the date in a web note and the hall ticket.'),
     ('How many Analyst Grade-II posts are there?', '18, in the A.P. Pollution Control Board, under Notification 21/2026 of 13 October 2026.'),
     ('Who can apply for APPSC Analyst Grade-II?', 'Graduates in Chemistry, Biochemistry, Biology or Environmental Sciences, aged 18 to 44 on 1 July 2026 (with the usual relaxations).'),
@@ -55,7 +55,7 @@ FAQS = {
     ('What is the Assistant Environmental Engineer salary?', 'Pay scale ₹57,100 – ₹1,47,760 a month.'),
   ],
   'appsc-fro-notification-2026.html': [
-    ('Is the APPSC FRO last date extended?', 'The notification gives 5 November 2026 (11:59 pm). One coaching website (3 November) reports an extension to 12 November 2026, but we could not yet find APPSC\'s own notice on psc.ap.gov.in. To be safe, apply by 5 November.'),
+    ('Is the APPSC FRO last date extended?', 'Yes, as reported: from 5 November to 12 November 2026, 11:59 pm (Adda247 and Career Power). The EO Grade-III last date moved to the same day (Sakshi Education). We could not read APPSC\'s own web note, so apply well before 12 November.'),
     ('How many Forest Range Officer posts are there in 2026?', '5, including 1 carried forward (Notification 16/2026, 16 October 2026).'),
     ('What is the age limit for APPSC FRO?', '18 to 30 years on 1 July 2026, with the usual relaxations for reserved categories.'),
     ('When is the APPSC FRO exam 2026?', 'Not announced yet. It will be computer-based (CBRT); APPSC will announce the date later.'),
@@ -63,7 +63,8 @@ FAQS = {
     ('Is there a walking test for FRO?', 'Yes. Candidates picked in the ratio 1:3 after the written test take a walking test and a medical test, and a qualifying Computer Proficiency Test.'),
   ],
   'appsc-eo-grade-3-notification-2026.html': [
-    ('What is the last date for APPSC EO Grade-III?', '5 November 2026, 11:59 pm (Notification 23/2026). We had not seen an extension notice as of 4 November 2026.'),
+    ('What is the last date for APPSC EO Grade-III?', '12 November 2026. The last date for Notification 23/2026 was first 5 November and has been extended to 12 November 2026 (Sakshi Education, 10 November 2026). Apply early: the website slows down on the last day.'),
+    ('Is the APPSC EO last date extended again?', 'Only once, from 5 to 12 November 2026, as reported on 10 November 2026. Do not count on another extension.'),
     ('How many EO Grade-III posts are there?', '104, district-wise, in the A.P. Endowments Subordinate Service.'),
     ('Can a non-Hindu apply for APPSC EO Grade-III?', 'No. Under Section 29(3) of the A.P. Endowments Act, 1987, the Executive Officer must be a person professing the Hindu religion.'),
     ('When is the APPSC EO Grade-III exam?', 'Not announced yet. It will be computer-based (CBRT): Paper I General Studies & Mental Ability and Paper II Hindu Philosophy & Temple System, 150 marks each.'),
@@ -71,7 +72,7 @@ FAQS = {
     ('What is the EO Grade-III salary?', 'Pay scale ₹25,220 – ₹80,910 a month.'),
   ],
   'ap-police-si-notification-2026.html': [
-    ('Has the AP Police SI 2026 online application started?', 'Not yet, as far as we could find on 4 November 2026. SLPRB says it will announce the application dates in a press note on slprb.ap.gov.in.'),
+    ('Has the AP Police SI 2026 online application started?', 'Not yet, as far as we could find on 10 November 2026. SLPRB says it will announce the application dates in a press note on slprb.ap.gov.in.'),
     ('When is the AP Police SI exam 2026?', 'The Preliminary Written Test date has not been announced yet.'),
     ('How many SI posts are there in AP Police 2026?', '378: 253 SCT SI (Civil), 116 SCT Reserve SI (AR) and 9 SI in the Special Protection Force. SI (Communications) and SI (PTO) have a separate notification.'),
     ('What is the age limit for AP SI 2026?', '21 to 27 years on 1 July 2026 (born between 2 July 1999 and 1 July 2005), relaxed by up to 5 years for SC, ST, BC and EWS candidates.'),
@@ -79,7 +80,7 @@ FAQS = {
     ('What are the qualifying marks for AP SI?', '40% for OC (and EWS), 35% for BC and 30% for SC and ST, in each paper.'),
   ],
   'ap-police-constable-notification-2026.html': [
-    ('Has the AP Police Constable 2026 application started?', 'Not yet, as far as we could find on 4 November 2026. SLPRB will announce the online application dates in a press note on slprb.ap.gov.in.'),
+    ('Has the AP Police Constable 2026 application started?', 'Not yet, as far as we could find on 10 November 2026. SLPRB will announce the online application dates in a press note on slprb.ap.gov.in.'),
     ('When is the AP Constable exam 2026?', 'The Preliminary Written Test date has not been announced yet.'),
     ('How many AP Police Constable posts are there in 2026?', '1,156 in this notification: 542 SCT PC (Civil), 285 SCT PC (AR), 158 Firemen, 150 Warders (Men) and 21 Warders (Women).'),
     ('What is the age limit for AP Constable 2026?', '18 to 24 years on 1 July 2026 for PC (Civil) and (AR), with the usual relaxations.'),
@@ -87,7 +88,7 @@ FAQS = {
     ('Do the prelims marks count for selection?', 'No. The Preliminary Written Test is only qualifying (40% OC, 35% BC, 30% SC/ST). Selection is on the Final Written Examination.'),
   ],
   'ts-police-si-exam-date-hall-ticket-2026.html': [
-    ('Is the TS Police SI exam postponed?', 'No postponement had been announced as of 4 November 2026. The Preliminary Written Test stays on Sunday, 29 November 2026, forenoon (marked tentative in TGPRB\'s press note of 17 September 2026).'),
+    ('Is the TS Police SI exam postponed?', 'No postponement had been announced as of 10 November 2026. The Preliminary Written Test stays on Sunday, 29 November 2026, forenoon (marked tentative in TGPRB\'s press note of 17 September 2026).'),
     ('When will the TS SI hall ticket 2026 come?', 'TGPRB has not announced it yet. In 2022 the window opened 8 days before the exam, so expect it around 21 November 2026 on www.tgprb.in.'),
     ('What is the TS SI exam timing?', 'Forenoon. In 2022 it ran from 10 am to 1 pm; TGPRB has not announced the 2026 timing yet. Gates close at the start time.'),
     ('Is there negative marking in the TS SI prelims?', 'Yes. 0.2 of a mark is deducted for each wrong answer; an unanswered question gets zero.'),
@@ -103,7 +104,7 @@ FAQS = {
     ('What was the highest score in the 2022 TS SI prelims?', '133 out of 200; the average was 47.25 and 46.8% of candidates qualified.'),
   ],
   'ts-police-constable-exam-date-hall-ticket-2026.html': [
-    ('Is the TS Police Constable exam postponed?', 'No postponement had been announced as of 4 November 2026. The Preliminary Written Test stays on Sunday, 20 December 2026, forenoon (tentative).'),
+    ('Is the TS Police Constable exam postponed?', 'No postponement had been announced as of 10 November 2026. The Preliminary Written Test stays on Sunday, 20 December 2026, forenoon (tentative).'),
     ('When will the TS Constable hall ticket 2026 come?', 'Not announced yet. In 2022 the window opened 10 days before the exam, so expect it around 10 December 2026 on www.tgprb.in.'),
     ('How many posts are there in TS Police Constable 2026?', '7,112, including 3,697 PC (Civil), 1,052 PC (AR), 1,380 TGSP constables and 751 Fire Fighters.'),
     ('Is there negative marking in the TS Constable exam?', 'Yes. 0.2 of a mark is deducted for each wrong answer.'),
@@ -131,7 +132,8 @@ NEW = {
     hi='UPSC सिविल सेवा (प्रारंभिक) परीक्षा 2027: रविवार, 23 मई 2027। अधिसूचना 13 जनवरी 2027 को, आवेदन 2 फरवरी 2027 तक, मुख्य परीक्षा 20 अगस्त 2027 से (UPSC कैलेंडर 2027)।',
     pdf=UPSC_CAL, pdfname='UPSC Calendar of Examinations / Recruitment Tests 2027 (issued May 2026)',
     more_src=[('https://www.freepressjournal.in/education/upsc-releases-2027-examination-calendar-civil-services-prelims-on-may-23-mains-from-august-20-download-pdf-now', 'Free Press Journal, UPSC 2027 calendar'),
-              ('https://www.deccanchronicle.com/education/upsc-issues-civil-services-examination-2026-notification-933-vacancies-announced-1934923', 'Deccan Chronicle, CSE 2026 notification (933 vacancies)')],
+              ('https://www.deccanchronicle.com/education/upsc-issues-civil-services-examination-2026-notification-933-vacancies-announced-1934923', 'Deccan Chronicle, CSE 2026 notification (933 vacancies)'),
+              ('https://www.upsc.gov.in/sites/default/files/WR-CSM-2026-Engl-RollList-05112026.pdf', 'UPSC, CSE Mains 2026 result (roll-number list, 5 November 2026)')],
     related=['upsc-capf-2027-notification.html', 'upsc-epfo-apfc-2026-notification.html'],
     no_practice=True,
     sections=[
@@ -143,7 +145,7 @@ NEW = {
                    'while the Prelims stayed on the calendar date (24 May 2026). So plan for 23 May 2027, but watch upsc.gov.in for the notification.'),
       ('CSE 2026 for reference', 'table', [
         ('Notification', '4 February 2026'), ('Vacancies', 'About 933 (including 33 for persons with benchmark disabilities)'),
-        ('Prelims', '24 May 2026'), ('Qualified for the Mains', '13,343 (result of June 2026)'), ('Mains', 'Began 21 August 2026; result awaited (not declared as of 4 November 2026)')]),
+        ('Prelims', '24 May 2026'), ('Qualified for the Mains', '13,343 (result of June 2026)'), ('Mains', 'Began 21 August 2026'), ('Mains result', '5 November 2026: 2,526 candidates qualified for the interview (personality test); interview dates to be announced')]),
       ('Who can apply (CSE 2026 rules; the 2027 notification will confirm)', 'list', [
         'A bachelor\'s degree from a recognised university. Final-year students may apply for the Prelims but must pass before the Mains application.',
         'Age 21 to 32 years on 1 August of the exam year, with 5 more years for SC/ST, 3 for OBC (non-creamy layer) and 10 for persons with benchmark disabilities.',
@@ -161,13 +163,13 @@ NEW = {
        '<a href="/upsc-cse/">UPSC CSE hub</a></p>'),
     ],
     faqs=[
-      ('Is the UPSC CSE 2027 notification out?', 'No, not as of 4 November 2026. UPSC\'s Calendar 2027 schedules it for 13 January 2027. In 2026 the notification came about three weeks after its calendar date, so a short delay is possible.'),
+      ('Is the UPSC CSE 2027 notification out?', 'No, not as of 10 November 2026. UPSC\'s Calendar 2027 schedules it for 13 January 2027. In 2026 the notification came about three weeks after its calendar date, so a short delay is possible.'),
       ('When is UPSC Prelims 2027?', 'Sunday, 23 May 2027, as per UPSC\'s Calendar 2027.'),
       ('Has the UPSC 2027 exam date changed?', 'No change has been announced as of 4 November 2026. UPSC says calendar dates can change if circumstances require, so check upsc.gov.in.'),
       ('When does UPSC Mains 2027 start?', '20 August 2027, over 5 days.'),
       ('What is the last date to apply for UPSC CSE 2027?', '2 February 2027 as per the calendar; the notification will give the final date.'),
       ('How many vacancies are there in UPSC CSE 2027?', 'Not announced yet; they come with the notification. CSE 2026 had about 933 (CSE 2025: 979).'),
-      ('Is the UPSC Mains 2026 result out?', 'Not as of 4 November 2026. The Mains began on 21 August 2026; UPSC does not announce result dates in advance.'),
+      ('Is the UPSC Mains 2026 result out?', 'Yes. UPSC declared the CSE Mains 2026 result on 5 November 2026: 2,526 candidates qualified for the personality test (interview). UPSC will announce the interview schedule and e-summon letters on upsc.gov.in.'),
       ('How many attempts are allowed in UPSC CSE?', '6 for General and EWS, 9 for OBC and PwBD, and no limit for SC/ST up to the upper age limit (37).'),
       ('Is there negative marking in CSAT?', 'Yes. One-third of the question\'s marks is deducted for a wrong answer in both GS Paper I and CSAT. CSAT is only qualifying (33%), but wrong answers can still make you fail it.'),
     ]),
@@ -260,21 +262,23 @@ NEW = {
     ]),
   'ssc-cgl-2026-notification.html': dict(
     exam='ssc-cgl', board='SSC', site='ssc.gov.in', crumb='SSC CGL 2026 Status',
-    title='SSC CGL 2026: Tier 1 Answer Key & Result Status, Tier 2 Date, 10,731 Vacancies, Pattern & Previous Papers | Learn with Anil',
+    title='SSC CGL 2026: Tier 1 Answer Key Out (4 November), Result Status, Tier 2 Date, 10,731 Vacancies, Pattern & Previous Papers | Learn with Anil',
     desc='SSC CGL 2026: notified 21 May 2026, about 10,731 vacancies (revised), Tier-I held 30 September – 30 October 2026. Answer key and result status, Tier-II '
          '(tentatively December 2026), negative marking, age limits by post, and SSC CGL previous year papers with answers.',
     h1='SSC CGL 2026: Tier 1 is over. Answer key, result and Tier 2',
     lede='The SSC CGL 2026 Tier-I computer-based exam ran from 30 September to 30 October 2026. Next come the Tier-I answer key with objections, then the result, '
-         'then Tier-II, which is tentatively in December 2026. Below: the status as of 4 November 2026, the vacancies, the pattern and the CGL previous papers.',
+         'then Tier-II, which is tentatively in December 2026. The Tier-I answer key came out on 4 November 2026. Below: the status as of 10 November 2026, the vacancies, the pattern and the CGL previous papers.',
     hi='SSC CGL 2026: टियर-I परीक्षा 30 सितंबर – 30 अक्टूबर 2026 तक हुई। अब उत्तर कुंजी, परिणाम और फिर टियर-II (संभावित दिसंबर 2026)।',
     pdf='https://ssc.gov.in/', pdfname='Staff Selection Commission notices, ssc.gov.in (CGL 2026 notice of 21 May 2026 and the Tier-I schedule notice of 12 September 2026)',
     more_src=[('https://www.business-standard.com/amp/education/news/ssc-cgl-exam-date-2026-out-tier-1-from-sept-30-to-oct-30-check-notice-nc-126091400526_1.html', 'Business Standard, Tier-I schedule'),
-              ('https://testbook.com/news/ssc-cgl-vacancy-2026-27-out/', 'Testbook, revised vacancies')],
+              ('https://testbook.com/news/ssc-cgl-vacancy-2026-27-out/', 'Testbook, revised vacancies'),
+              ('https://testbook.com/news/ssc-cgl-2026-answer-key-out/', 'Testbook, 5 November 2026: Tier-I answer key out 4 November, objections till 7 November'),
+              ('https://www.freejobalert.com/articles/ssc-cgl-answer-key-2026-3078244', 'FreeJobAlert, 4 November 2026: Tier-I answer key released')],
     sections=[
       ('Where SSC CGL 2026 stands', 'table', [
         ('Notification', '21 May 2026'), ('Applications', '21 May to 25 June 2026 (closed); correction window 1–3 July'),
-        ('Tier-I (CBT)', '30 September to 30 October 2026 (over)'), ('Tier-I answer key', 'Awaited: not released as of 4 November 2026 in the reports we found'),
-        ('Tier-I result', 'After the answer key and objections'), ('Tier-II', 'Tentatively December 2026; exact date not announced'),
+        ('Tier-I (CBT)', '30 September to 30 October 2026 (over)'), ('Tier-I answer key', 'Released 4 November 2026 with the response sheets; objections closed 7 November 2026 (as reported)'),
+        ('Tier-I result', 'Not out yet; expected in December 2026 (coaching-site estimate, not an SSC date)'), ('Tier-II', 'Tentatively December 2026; exact date not announced'),
         ('Vacancies', 'About 10,731 (tentative; 12,256 at notification)')]),
       ('Exam pattern', 'table+', (['Stage', 'Details', 'Negative marking'], [
         ('Tier-I (qualifying)', 'Reasoning, General Awareness, Quantitative Aptitude, English: 25 questions each, 100 questions, 200 marks, 60 minutes', '0.5 per wrong answer'),
@@ -287,8 +291,8 @@ NEW = {
         'Fee ₹100; women, SC, ST, PwBD and ex-servicemen paid nothing.']),
     ],
     faqs=[
-      ('Is the SSC CGL 2026 Tier 1 answer key out?', 'Not as of 4 November 2026 in the reports we found. SSC has not announced a date; the dates going around online are unofficial. It will be on ssc.gov.in with a short objection window.'),
-      ('Is the SSC CGL 2026 Tier 1 result out?', 'No. The result comes after the answer key and objections.'),
+      ('Is the SSC CGL 2026 Tier 1 answer key out?', 'Yes. SSC released the Tier-I answer key with candidates\' response sheets on 4 November 2026 on ssc.gov.in. The objection window closed on 7 November 2026 (as reported).'),
+      ('Is the SSC CGL 2026 Tier 1 result out?', 'Not as of 10 November 2026. It comes after SSC checks the objections; reports expect it in December 2026, but SSC has not given a date.'),
       ('When is SSC CGL Tier 2 2026?', 'SSC has not given an exact date. It is tentatively in December 2026.'),
       ('How many vacancies are there in SSC CGL 2026?', 'About 10,731 (tentative), revised from 12,256 at the notification.'),
       ('Is there negative marking in SSC CGL?', 'Yes. Tier-I: 0.5 mark per wrong answer. Tier-II Paper I: 1 mark per wrong answer (each question carries 3).'),
@@ -405,7 +409,7 @@ NEW = {
                    'Fee: ₹1,000 (OC/BC) or ₹500 (SC/ST/PwD) plus ₹120 exam fee (unemployed exempt).'),
     ],
     faqs=[
-      ('Is the HMWSSB Manager exam date out?', 'No. The notification says the exam is tentatively in December 2026; TGPSC had not announced the exact date as of 4 November 2026.'),
+      ('Is the HMWSSB Manager exam date out?', 'No. The notification says the exam is tentatively in December 2026; TGPSC had not announced the exact date as of 10 November 2026.'),
       ('Was the HMWSSB Manager last date extended?', 'No extension notice appeared on TGPSC\'s website. Applications closed on 17 October 2026 at 5 pm.'),
       ('When will the HMWSSB Manager hall ticket come?', 'Not yet. As per the notification, hall tickets open 7 days before the exam.'),
       ('Is there negative marking in the HMWSSB Manager exam?', 'The notification does not mention negative marking.'),
@@ -417,7 +421,12 @@ NEW = {
 }
 
 
-ASOF_PAGE = {'appsc-assistant-environmental-engineer-notification-2026.html': '8 November 2026',
+ASOF_PAGE = {'upsc-cse-2027-notification.html': '10 November 2026', 'ssc-cgl-2026-notification.html': '10 November 2026',
+             'tgpsc-hmwssb-manager-notification-2026.html': '10 November 2026',
+             'appsc-eo-grade-3-notification-2026.html': '10 November 2026', 'appsc-fro-notification-2026.html': '10 November 2026',
+             'appsc-analyst-grade-2-notification-2026.html': '10 November 2026', 'ap-police-si-notification-2026.html': '10 November 2026',
+             'ap-police-constable-notification-2026.html': '10 November 2026', 'ts-police-si-exam-date-hall-ticket-2026.html': '10 November 2026',
+             'ts-police-constable-exam-date-hall-ticket-2026.html': '10 November 2026', 'appsc-assistant-environmental-engineer-notification-2026.html': '8 November 2026',
              'appsc-group-1-notification-2026.html': '10 November 2026', 'appsc-group-2-notification-2026.html': '10 November 2026'}   # pages whose answers were written later
 # ---------------------------------------------------------------- TGPSC MPSO / ASO (Anil, 8 Nov 2026: link to Notification 07/2026, "pls add pyqs for it in
 # telangana section"). The 2018 question booklets were not found online (only TSPSC's final keys), so Anil chose "start with what's available": this page,
@@ -538,5 +547,5 @@ def apply(NOTIFS):
     for rel, f in FAQS.items():
         if rel in NOTIFS: NOTIFS[rel]['faqs'] = f; NOTIFS[rel]['faq_asof'] = ASOF_PAGE.get(rel, ASOF)
     for rel, N in NEW.items():
-        N.setdefault('faq_asof', ASOF)
+        N.setdefault('faq_asof', ASOF_PAGE.get(rel, ASOF))
         NOTIFS[rel] = N
