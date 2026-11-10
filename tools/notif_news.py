@@ -21,7 +21,7 @@ FAQS = {
   'appsc-group-2-notification-2026.html': [
     ('Is the APPSC Group 2 notification 2026 out?', 'Yes. APPSC issued the brief notification No. 37/2026 on 13 October 2026 for 686 Group-II posts. The detailed notification (fee, age limits, reservations) is expected by 10 November 2026.'),
     ('When can I apply for APPSC Group 2 2026?', 'From 10 November to 30 November 2026 (till 11:59 pm) on psc.ap.gov.in, after creating or updating your One Time Profile Registration (OTPR).'),
-    ('Has the APPSC Group 2 last date been extended?', 'No. Applications have not even opened yet (they open on 10 November 2026). No change to the 10–30 November window had been announced as of 4 November 2026.'),
+    ('Has the APPSC Group 2 last date been extended?', 'No. The brief notification gives 10 to 30 November 2026 for online applications, and no change to that window had been announced as of 10 November 2026.'),
     ('When is the APPSC Group 2 screening test 2026?', 'Not announced yet. APPSC will give the date later, usually in a web note. In the last recruitment the screening test came about two months after the notification (25 February 2024).'),
     ('How many Deputy Tahsildar posts are there in Group 2 2026?', '200 Deputy Tahsildar posts and 176 Deputy MPDO posts, out of 686 in all.'),
     ('Is the Group 2 exam pattern changed?', 'No. The brief notification keeps the pattern of Notification 11/2023: a 150-mark screening test, then two 150-mark Mains papers. Selection is on the Mains marks.'),
@@ -29,14 +29,14 @@ FAQS = {
     ('What is the APPSC Group 2 fee?', 'The 2026 fee comes with the detailed notification. In 2023 it was ₹250 application fee + ₹80 exam fee; SC, ST, BC, PwBD, ex-service, white-card and unemployed AP candidates paid only ₹250.'),
   ],
   'appsc-group-1-notification-2026.html': [
-    ('Is the APPSC Group 1 last date extended?', 'Yes. APPSC extended the last date for Group-I Services (Notification 07/2026) to 9 November 2026, 11:59 pm, in a web note of 27 October 2026.'),
-    ('Will APPSC extend the Group 1 last date again?', 'APPSC\'s web note says there will be no further extension. Apply well before 9 November 2026; the website gets slow on the last day.'),
-    ('Has the APPSC Group 1 exam date changed?', 'No. The extension does not change the screening test, which stays tentatively on 24 January 2027.'),
+    ('Can I still apply for APPSC Group 1 2026?', 'No. Applications for Group-I Services (Notification 07/2026) closed on 9 November 2026 at 11:59 pm. The last date had been extended once, from 27 October, and APPSC\'s web note said there would be no further extension.'),
+    ('When is the APPSC Group 1 screening test 2026?', 'Tentatively on 24 January 2027 (Paper I and Paper II). The extension of the last date did not change it.'),
+    ('When will the APPSC Group 1 hall ticket come?', 'Not announced yet. APPSC usually releases hall tickets on psc.ap.gov.in about one to two weeks before the exam, so expect them in January 2027. You need your OTPR ID and password to download it.'),
     ('How many posts are there in APPSC Group 1 2026?', '166. The brief notification (15 September 2026) said 163; the detailed notification of 6 October 2026 added one Deputy Collector, one Deputy Registrar and one Assistant Audit Officer post.'),
     ('What is the APPSC Group 1 application fee?', '₹250 application processing fee plus ₹120 examination fee (the exam fee is waived for the categories listed in the notification).'),
     ('Is there negative marking in the Group 1 screening test?', 'Yes. One-third of a mark is deducted for each wrong answer in both screening papers.'),
     ('Do Group 1 prelims marks count in the final merit?', 'No. The screening test only shortlists about 50 candidates per post for the Mains. The final merit is the Mains (750 marks) plus the interview (75 marks).'),
-    ('I did OTPR but have no password. What do I do?', 'APPSC does not send one. Create it once on the candidate New User page with your OTPR ID (AP followed by 10 digits) and mobile number: 8 to 12 characters with a capital letter, a number and a special character.'),
+    ('I did OTPR but have no password. What do I do?', 'APPSC does not send one. Create it once on the candidate New User page with your OTPR ID (AP followed by 10 digits) and mobile number: 8 to 12 characters with a capital letter, a number and a special character. You will need it for the hall ticket.'),
   ],
   'appsc-analyst-grade-2-notification-2026.html': [
     ('Can I still apply for APPSC Analyst Grade-II?', 'The application window was 13 October to 2 November 2026 (11:59 pm). We had not seen an extension notice for Notification 21/2026 as of 4 November 2026; check psc.ap.gov.in.'),
@@ -417,7 +417,8 @@ NEW = {
 }
 
 
-ASOF_PAGE = {'appsc-assistant-environmental-engineer-notification-2026.html': '8 November 2026'}   # pages whose answers were written later
+ASOF_PAGE = {'appsc-assistant-environmental-engineer-notification-2026.html': '8 November 2026',
+             'appsc-group-1-notification-2026.html': '10 November 2026', 'appsc-group-2-notification-2026.html': '10 November 2026'}   # pages whose answers were written later
 # ---------------------------------------------------------------- TGPSC MPSO / ASO (Anil, 8 Nov 2026: link to Notification 07/2026, "pls add pyqs for it in
 # telangana section"). The 2018 question booklets were not found online (only TSPSC's final keys), so Anil chose "start with what's available": this page,
 # with Paper I practice from TGPSC's General Studies & General Abilities papers already on the site. Add the 2018 papers as an exam when the booklets come.

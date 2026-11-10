@@ -3751,7 +3751,7 @@ LANDINGS = {
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
             '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.</p>'
             '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (686 posts, apply 10–30 November) and '
-            '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts, last date extended to 9 November 2026) and '
+            '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts, applications closed, screening test 24 January 2027) and '
             '<a href="/appsc-eo-grade-3-notification-2026.html">APPSC EO Grade-III Notification 2026</a> (104 Endowments Executive Officer posts, apply by 5 November), '
             '<a href="/appsc-analyst-grade-2-notification-2026.html">Analyst Grade-II Notification 2026</a> (18 Pollution Control Board posts, apply by 2 November) and '
             '<a href="/appsc-fro-notification-2026.html">FRO Notification 2026</a> (5 Forest Range Officer posts, apply by 5 November) and '
@@ -3909,44 +3909,42 @@ NOTIFS = {
     exam='appsc-group-1', crumb='Group 1 Notification 2026',
     # Anil, 27 Oct 2026: APPSC web note of 27 Oct 2026 extended the last date for Notifications 07, 08, 19, 25 and 26/2026 to
     # 9 Nov 2026, 11:59 pm ("no further extension"; Group-I screening test date unchanged). Source: Extension_Webnote_27102026.pdf
-    title='APPSC Group 1 Last Date Extended to 9 November 2026 – Apply Online, 166 Posts, Fee & Help | Learn with Anil',
-    desc='APPSC has extended the last date for Group 1 (Notification 07/2026) online applications to 9 November 2026, 11:59 pm, with no further extension; '
-         'the screening test date is unchanged. Also extended: AEE (Pollution Control Board), Horticulture Officer, Hostel Welfare Officer and ATWO/ASWO. Step-by-step help, posts, pattern and previous papers.',
-    h1='APPSC Group 1 last date extended to 9 November 2026',
-    lede='APPSC has extended the last date for Group-I Services (Notification No. 07/2026, 166 posts) to 9 November 2026, 11:59 pm, after requests from aspirants. '
-         'APPSC says there will be no further extension and no change in the screening test date (tentatively 24 January 2027). Below: what to do if the website or payment gets stuck, '
-         'the posts, the exam pattern and the Group 1 previous papers to practise.',
-    te='APPSC గ్రూప్ 1 (నోటిఫికేషన్ నం. 07/2026, 166 పోస్టులు) దరఖాస్తు గడువు 2026 నవంబర్ 9 రాత్రి 11:59 వరకు పొడిగించారు. ఇక పొడిగింపు ఉండదు; స్క్రీనింగ్ టెస్ట్ తేదీలో మార్పు లేదు. చివరి రోజు వరకు ఆగకుండా ముందే దరఖాస్తు చేయండి.',
+    # 10 Nov 2026: the extended window closed on 9 Nov 2026 (no further extension per the web note); page switched to "applications closed".
+    title='APPSC Group 1 2026 – Applications Closed, Screening Test 24 January 2027: Exam Date, Hall Ticket, 166 Posts, Pattern & Previous Papers | Learn with Anil',
+    desc='APPSC Group 1 (Notification 07/2026, 166 posts): online applications closed on 9 November 2026 (extended last date, no further extension). '
+         'The screening test is tentatively on 24 January 2027; hall tickets come about a week or two before. Posts and salary, exam pattern, and Group 1 previous papers with answers to practise.',
+    h1='APPSC Group 1 2026: applications closed, screening test on 24 January 2027',
+    lede='Online applications for APPSC Group-I Services (Notification No. 07/2026, 166 posts) closed on 9 November 2026 at 11:59 pm; the last date had been extended once, '
+         'from 27 October, and APPSC said there would be no further extension. The screening test is tentatively on 24 January 2027. Below: the dates, the posts, the exam pattern, '
+         'and the Group 1 previous papers to practise in the next ten weeks.',
+    te='APPSC గ్రూప్ 1 (నోటిఫికేషన్ నం. 07/2026, 166 పోస్టులు) దరఖాస్తులు 2026 నవంబర్ 9తో ముగిశాయి. స్క్రీనింగ్ టెస్ట్ తాత్కాలికంగా 2027 జనవరి 24న. హాల్ టికెట్లు పరీక్షకు ముందు విడుదలవుతాయి. పాత ప్రశ్నాపత్రాలతో ఇప్పటినుంచే ప్రాక్టీస్ చేయండి.',
     pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_I_07_2026.pdf', pdfname='APPSC Notification No. 07/2026 (Group-I Services)',
     more_src=[('https://psc.ap.gov.in/Documents/NotificationDocuments/Extension_Webnote_27102026.pdf', 'APPSC web note on the extension of the last date, 27 October 2026'),
               ('https://images.assettype.com/edexlive/2026-09-15/0j3savzw/Group_I_072026.pdf', 'APPSC brief notification No. 07/2026 of 15 September 2026 (posts and pay scales)')],
     related=['appsc-group-1-syllabus-2026.html', 'appsc-group-2-notification-2026.html'],
     sections=[
-      ('Last date extended to 9 November 2026', 'p',
-       'On 27 October 2026, the last day, the APPSC website was very slow, the OTPR password page kept hanging and many fee payments failed. The same day APPSC issued a web note: '
-       '"In view of requests received from the aspirants", the last date for online applications is extended to 9 November 2026, up to 11:59 pm. APPSC says there shall be no further '
-       'extension, and the Group-I screening test date does not change. If you could not finish on 27 October, apply now; do not leave it for the last day again.'),
-      ('All APPSC notifications extended to 9 November 2026', 'table+', (['Notification', 'Posts'], [
+      ('Applications closed on 9 November 2026', 'p',
+       'The application window closed on 9 November 2026 at 11:59 pm. It was first due to close on 27 October 2026; that day the APPSC website was very slow and many fee payments failed, '
+       'and APPSC issued a web note extending the last date to 9 November "in view of requests received from the aspirants", saying there shall be no further extension and that the '
+       'screening test date does not change. If you applied, keep the PDF of your application and your OTPR ID and password safe: you will need them to download the hall ticket.'),
+      ('What comes next', 'table', [
+        ('Screening test (Paper I and Paper II, same day)', 'Tentatively 24 January 2027'),
+        ('Hall tickets', 'Not announced yet. APPSC usually releases them on psc.ap.gov.in about one to two weeks before the exam; this page will be updated'),
+        ('Preliminary key and objections', 'After the exam, on psc.ap.gov.in'),
+        ('Mains and interview', 'For about 50 candidates per post who clear the screening test; dates to be announced')]),
+      ('Notifications whose last date was extended to 9 November 2026 (now closed)', 'table+', (['Notification', 'Posts'], [
         ('07/2026 (6 October 2026)', 'Group-I Services'),
         ('08/2026 (6 October 2026)', 'Assistant Environmental Engineer, A.P. Pollution Control Board'),
         ('19/2026 (6 October 2026)', 'Horticulture Officer, A.P. Horticulture Service'),
         ('25/2026 (9 October 2026)', 'Hostel Welfare Officer Grade-II, BC Welfare, Social Welfare and Tribal Welfare Departments'),
         ('26/2026 (9 October 2026)', 'Assistant Tribal Welfare Officer and Assistant Social Welfare Officer')])),
-      ('What to do if you are stuck', 'list', [
-        'No password after the OTPR? APPSC does not send one. Create it once at portal-psc.ap.gov.in/CandidateLoginPages/UserRegistration.aspx with your OTPR ID '
-        '(AP followed by 10 digits) and mobile number. The password needs 8 to 12 characters with a capital letter, a number and a special character ($ @ ! % * #).',
-        'Page hanging: click Submit only once and wait a minute or two. If it stays stuck, refresh, type the new captcha and submit once more. Another browser, or your phone on mobile data, often works better.',
-        'Payment failed: first check whether money left your account. If it did, do not pay again; the payment usually shows up on the APPSC site within a few hours, '
-        'and the bank refunds a failed payment on its own in about 5 to 7 days. If no money left your account, try again.',
-        'No SBI in the net-banking list? Look for "State Bank of India" under S, or pay with your SBI debit card (switch on online use in the YONO app) or by UPI.',
-        'Fee: ₹370 (₹250 application fee + ₹120 examination fee); candidates exempt from the examination fee pay only the ₹250 application fee. '
-        'Candidates from other states, including Telangana, apply in the open category and pay ₹370.',
-        'BC certificate: the form accepts a BC non-creamy-layer certificate issued on or after 1 April 2026.',
-        'Photo: JPG under 50 KB, 3.5 cm × 4.5 cm, with your name and the date of the photograph printed at the bottom. Signature: JPG under 30 KB, 3.5 cm × 1.5 cm.',
-        'Exam centre: Vijayawada appears as "Ntr" (NTR district) in the list; "Krishna" now means Machilipatnam.']),
+      ('If your payment failed before the deadline', 'list', [
+        'First check whether money left your account. If it did, the payment usually shows up on the APPSC site within a few hours; log in with your OTPR ID and check that your application is marked submitted, and save its PDF.',
+        'If the money left your account but the application was not submitted, the bank refunds a failed payment on its own in about 5 to 7 days. APPSC did not reopen the window as of 10 November 2026.',
+        'Fee charged: ₹370 (₹250 application fee + ₹120 examination fee); candidates exempt from the examination fee paid only the ₹250 application fee.']),
       ('Important dates', 'table', [
         ('Notification (No. 07/2026)', '6 October 2026'),
-        ('Online applications', '6 October to 9 November 2026, 11:59 pm (extended from 27 October; no further extension)'),
+        ('Online applications', '6 October to 9 November 2026, 11:59 pm (extended from 27 October): closed'),
         ('Extension web note', '27 October 2026'),
         ('Screening test (prelims)', 'Tentatively 24 January 2027 (unchanged by the extension)'),
         ('Mains and interview', 'To be announced'),
@@ -4486,10 +4484,10 @@ NOTIFS.update({
 APDSC = 'https://tet2dsc.apcfss.in/DSC2026/'
 NOTIFS['ap-dsc-2026-notification.html'] = dict(
     exam=None, ename='AP DSC 2026', board='the School Education Department, Andhra Pradesh', site='tet2dsc.apcfss.in', crumb='AP DSC 2026 Notification',
-    title='AP DSC 2026 Notification – 2,721 Teacher Posts (SA, SGT, Special Education, PGT, TGT), District-wise Vacancies, Dates, Eligibility & Exam Pattern | Learn with Anil',
+    title='AP DSC 2026 Notification Out – Apply 11–30 November, Exam from 20 December, Fee, Age & Subject-wise Posts (2,721) | Learn with Anil',
     desc='AP DSC 2026 (APTRT-2026): 2,721 teacher posts, with 906 School Assistant, 1,205 SGT, 350 special-education and 260 residential-school posts; '
          'district-wise, society-wise and subject-wise vacancies; apply online 11–30 November 2026, fee ₹1,000 per post, age 18–44 as on 1 July 2026, CBT from 20 December 2026 to 13 January 2027, hall tickets 14 December.',
-    h1='AP DSC 2026: 2,721 teacher posts',
+    h1='AP DSC 2026 notification: 2,721 teacher posts, apply by 30 November',
     lede='The Andhra Pradesh School Education Department issued brief notifications on 13 October 2026 for 2,721 teacher posts (DSC-2026): 2,111 School Assistant and SGT posts '
          'in government, ZP, MPP and municipal schools, 350 special-education posts, and 260 posts in residential societies and model schools. The detailed School Education notification '
          '(No.01/DSC-TRC-1/2026, dated 5 November 2026) is out on tet2dsc.apcfss.in: pay the fee and apply online from 11 to 30 November 2026 (₹1,000 for each post), hall tickets on '
@@ -4913,7 +4911,7 @@ def news_hub_page(loaded, rels):
                 'board\'s website before applying. Learn with Anil is not connected with any recruiting board.</p>')
     can = f'{SITE_URL}/{NEWS_HUB}'
     return static_page(0, 'Govt Exam Notifications 2026 – APPSC, TGPSC, UPSC, SSC, TS & AP Police: Last Dates, Exam Dates, Hall Tickets, Answer Keys | Learn with Anil',
-                       'Latest government exam notifications and news in one place: APPSC Group 1 & 2 (last date extended?), AMVI, EO, FRO; TS Police SI & Constable exam '
+                       'Latest government exam notifications and news in one place: APPSC Group 1 & 2 (exam dates, last dates), AMVI, EO, FRO; TS Police SI & Constable exam '
                        'date and hall ticket; AP Police; TGPSC HMWSSB; UPSC CSE, CAPF, EPFO; SSC CGL; AP DSC. Quick answers and previous papers for each.',
                        can, 'Exam notifications 2026: latest dates for every exam',
                        esc('Notifications, last dates, extensions, exam dates, hall tickets and answer keys for APPSC, TGPSC, UPSC, SSC, TS Police, AP Police and AP DSC.'),
