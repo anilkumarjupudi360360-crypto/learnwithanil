@@ -3866,7 +3866,7 @@ NOTIFS = {
     sections=[
       ('Important dates', 'table', [
         ('Brief notification (No. 37/2026)', '13 October 2026'),
-        ('Detailed notification', 'Expected by 10 November 2026: age limits, fee and reservations'),
+        ('Detailed notification', 'Not yet confirmed as of 10 November 2026 (it was expected by 10 November); it will give the age limits, fee, reservations and the screening test date'),
         ('Online applications', '10 November to 30 November 2026 (till 11:59 pm)'),
         ('Screening test (prelims)', 'Date not announced yet'),
         ('Official website', 'psc.ap.gov.in')]),
