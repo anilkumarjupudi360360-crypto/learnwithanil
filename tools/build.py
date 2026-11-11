@@ -3750,7 +3750,7 @@ LANDINGS = {
       intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC AMVI (Assistant Motor Vehicle Inspector) or Endowment Officer (EO Grade-III) previous papers, APPSC old question papers with the key, or an APPSC mock test? '
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
             '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.</p>'
-            '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (686 posts, apply 10–30 November) and '
+            '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (720 posts, apply till 11 December, screening test 21 February 2027) and '
             '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts, applications closed, screening test 24 January 2027) and '
             '<a href="/appsc-eo-grade-3-notification-2026.html">APPSC EO Grade-III Notification 2026</a> (104 Endowments Executive Officer posts, last date extended to 12 November), '
             '<a href="/appsc-analyst-grade-2-notification-2026.html">Analyst Grade-II Notification 2026</a> (18 Pollution Control Board posts, apply by 2 November) and '
@@ -3853,50 +3853,61 @@ def practice_links(conf, papers, questions):
 NOTIFS = {
   'appsc-group-2-notification-2026.html': dict(
     exam='appsc-group-2', crumb='Group 2 Notification 2026',
-    title='APPSC Group 2 Notification 2026 – 686 Posts, Apply Online 10–30 November, Salary, Eligibility, Exam Pattern & Previous Papers | Learn with Anil',
-    desc='APPSC Group 2 Notification 2026 (No. 37/2026): 686 posts including 200 Deputy Tahsildar and 176 Deputy MPDO posts, the pay scale of every post, '
-         'how to apply online (OTPR, 10 to 30 November 2026), eligibility, the screening test and mains pattern, the 2023 cut-off facts and Group 2 previous year question papers with answers.',
-    h1='APPSC Group 2 Notification 2026: 686 posts',
-    lede='APPSC issued a brief notification (No. 37/2026) on 13 October 2026 for 686 Group-II posts, Executive and Non-Executive. '
-         'Online applications run from 10 to 30 November 2026. Here are the posts, the dates, the exam pattern, and the Group 2 previous papers to start practising now.',
-    te='APPSC గ్రూప్ 2 నోటిఫికేషన్ 2026 (నం. 37/2026): 686 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు నవంబర్ 10 నుంచి 30 వరకు. పరీక్ష విధానం, పాత ప్రశ్నాపత్రాలు సమాధానాలతో.',
-    pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_II_372026.pdf', pdfname='APPSC brief notification No. 37/2026, dated 13 October 2026',
-    more_src=[('https://psc.ap.gov.in/Documents/NotificationDocuments/SelectionNotification_112023_28012026.pdf', 'APPSC final selection notification for Group-II (No. 11/2023), 28 January 2026')],
+    # 11 Nov 2026: detailed notification issued 10 Nov 2026 — 720 posts (471 executive + 249 non-executive), apply 10 Nov – 11 Dec 2026 11:59 pm,
+    # screening test 21 Feb 2027 (offline OMR), Mains online (date later). Sources: Sakshi (Telugu + Education, 10–11 Nov) and The Hans India (11 Nov).
+    # psc.ap.gov.in is not readable by our tools; fee/age figures only on coaching sites so far — kept labelled.
+    title='APPSC Group 2 Notification 2026 Out – 720 Posts, Apply till 11 December, Screening Test 21 February 2027, Salary, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='APPSC Group 2 detailed notification 2026 (No. 37/2026), issued 10 November 2026: 720 posts (471 executive, 249 non-executive) including 203 Deputy Tahsildar and 176 Deputy MPDO posts; '
+         'apply online from 10 November to 11 December 2026; screening test (offline, OMR) on 21 February 2027. Posts, pay scales, how to apply, exam pattern and Group 2 previous papers with answers.',
+    h1='APPSC Group 2 Notification 2026: 720 posts, apply by 11 December, screening test on 21 February 2027',
+    lede='APPSC issued the detailed Group-II notification (No. 37/2026) on 10 November 2026, raising the posts from 686 in the October brief notification to 720 '
+         '(471 executive, 249 non-executive, now including 31 Junior Office Assistant posts). Online applications opened on 10 November and close on 11 December 2026 at 11:59 pm. '
+         'The screening test is on 21 February 2027. Here are the posts, the dates, the exam pattern, and the Group 2 previous papers to practise in the next fifteen weeks.',
+    te='APPSC గ్రూప్ 2 వివరణాత్మక నోటిఫికేషన్ (నం. 37/2026) విడుదల: 720 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు డిసెంబర్ 11 వరకు. స్క్రీనింగ్ టెస్ట్ 2027 ఫిబ్రవరి 21న (OMR). పరీక్ష విధానం, పాత ప్రశ్నాపత్రాలు సమాధానాలతో.',
+    pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_II_372026.pdf', pdfname='APPSC brief notification No. 37/2026, dated 13 October 2026 (the detailed notification of 10 November 2026 is on psc.ap.gov.in)',
+    more_src=[('https://www.sakshi.com/telugu-news/andhra-pradesh/appsc-group-2-notification-2026-released-2957271', 'Sakshi, 11 November 2026: detailed notification, 720 posts (471 executive + 249 non-executive), applications until 11 December'),
+              ('https://www.thehansindia.com/news/cities/amaravati/appsc-releases-group-2-notification-for-720-vacancies-1140993', 'The Hans India, 11 November 2026: 720 posts, apply by 11 December 11:59 pm, screening test 21 February 2027 (OMR), Mains online'),
+              ('https://education.sakshi.com/en/group-2/education-news/appsc-group-2-screening-test-2026-date-released-check-exam-pattern-syllabus-202374', 'Sakshi Education, 11 November 2026: screening test 21 February 2027, pattern'),
+              ('https://psc.ap.gov.in/Documents/NotificationDocuments/SelectionNotification_112023_28012026.pdf', 'APPSC final selection notification for Group-II (No. 11/2023), 28 January 2026')],
     related=['appsc-group-2-syllabus-2026.html', 'appsc-group-1-notification-2026.html', 'appsc-group-1-syllabus-2026.html'],
     sections=[
       ('Important dates', 'table', [
-        ('Brief notification (No. 37/2026)', '13 October 2026'),
-        ('Detailed notification', 'Not yet confirmed as of 10 November 2026 (it was expected by 10 November); it will give the age limits, fee, reservations and the screening test date'),
-        ('Online applications', '10 November to 30 November 2026 (till 11:59 pm)'),
-        ('Screening test (prelims)', 'Date not announced yet'),
+        ('Brief notification (No. 37/2026)', '13 October 2026 (686 posts)'),
+        ('Detailed notification', '10 November 2026 (720 posts)'),
+        ('Online applications', '10 November to 11 December 2026 (till 11:59 pm) — later than the 30 November in the brief notification'),
+        ('Screening test (prelims)', 'Sunday 21 February 2027, offline (OMR answer sheet)'),
+        ('Mains', 'Online (computer-based); APPSC will announce the date separately'),
         ('Official website', 'psc.ap.gov.in')]),
-      ('Posts, vacancies and salary', 'table+', (['Post', 'Vacancies', 'Pay scale (₹ per month)'], [
-        ('Municipal Commissioner Grade-III', 6, '45,830 – 1,30,580'), ('Sub-Registrar Grade-II', 7, '44,570 – 1,27,480'), ('Deputy Tahsildar', 200, '44,570 – 1,27,480'),
+      ('Posts and vacancies (detailed notification)', 'table+', (['Post', 'Vacancies', 'Pay scale (₹ per month, brief notification)'], [
+        ('Municipal Commissioner Grade-III', 6, '45,830 – 1,30,580'), ('Sub-Registrar Grade-II', 7, '44,570 – 1,27,480'), ('Deputy Tahsildar', 203, '44,570 – 1,27,480'),
         ('Goods and Services Tax Officer (erstwhile ACTO)', 40, '45,830 – 1,30,580'), ('Assistant Registrar of Co-operative Societies', 10, '45,830 – 1,30,580'),
         ('Deputy Mandal Parishad Development Officer', 176, '45,830 – 1,30,580'), ('Prohibition and Excise Sub-Inspector', 29, '40,970 – 1,24,380'),
-        ('Assistant Section Officer (GAD)', 71, '40,970 – 1,24,380'), ('Assistant Section Officer (Finance)', 5, '40,970 – 1,24,380'), ('Assistant Section Officer (Law)', 4, '40,970 – 1,24,380'),
-        ('Senior Accountant (HODs)', 90, '34,580 – 1,07,210'), ('Junior Accountant (HODs)', 48, '25,220 – 80,910'), ('Total', 686, '')])),
-      ('', 'note', 'Executive posts (Municipal Commissioner, Sub-Registrar, Deputy Tahsildar, GST Officer, Assistant Registrar, Deputy MPDO and Excise SI) and the Assistant Section Officer posts '
-                   'start between ₹40,970 and ₹45,830 a month in the pay scale, before allowances.'),
+        ('Executive posts: total', 471, ''),
+        ('Assistant Section Officer (GAD, Finance, Law)', 80, '40,970 – 1,24,380'),
+        ('Senior Accountant', 91, '34,580 – 1,07,210'), ('Junior Accountant', 47, '25,220 – 80,910'), ('Junior Office Assistant (new in the detailed notification)', 31, 'see the notification'),
+        ('Non-executive posts: total', 249, ''), ('Total', 720, '')])),
+      ('', 'note', 'Post counts as reported from the detailed notification by Sakshi (11 November 2026); The Hans India gives the same totals (720 = 471 + 249) and the same Deputy Tahsildar, Deputy MPDO, GST Officer, Excise SI, ASO and Senior Accountant numbers. '
+                   'Compared with the brief notification: Deputy Tahsildar 200 → 203, Senior Accountant 90 → 91, Junior Accountant 48 → 47, and 31 Junior Office Assistant posts added. Pay scales are from the brief notification.'),
       ('Who can apply', 'p', 'A bachelor\'s degree from a recognised university. Some posts need a particular degree: Assistant Section Officer (Finance) a degree in '
                           'mathematics, economics or commerce; Assistant Section Officer (Law) a law degree; Senior and Junior Accountant a degree in commerce, '
-                          'economics or mathematics plus a computer qualification. Age limits, relaxations and the fee are given in the detailed notification.'),
-      ('How to apply online (10 to 30 November 2026)', 'steps', [
+                          'economics or mathematics plus a computer qualification. Check the age limit and the post-wise qualification in the detailed notification before you pay.'),
+      ('How to apply online (10 November to 11 December 2026)', 'steps', [
         'Register once for the One Time Profile Registration (OTPR) on psc.ap.gov.in, or update your old OTPR: your details, education, community and photo. Note your OTPR ID (AP followed by 10 digits).',
         'If you have never set a password, create one on the APPSC candidate login page with your OTPR ID and mobile number.',
-        'Log in during the application window, choose Notification No. 37/2026 (Group-II Services) and fill in the form; pick your exam centre.',
+        'Log in, choose Notification No. 37/2026 (Group-II Services) and fill in the form; pick your exam centre.',
         'Pay the fee online (net banking, debit or credit card, UPI), submit, and save the PDF of your application.',
-        'Do not wait for 30 November: near the Group 1 last date in October the website slowed down and many candidates could not pay. Apply in the first week.']),
-      ('Fee and age limit: what the last Group 2 notification said', 'list', [
-        'Fee in 2023 (Notification 11/2023): ₹250 application processing fee + ₹80 examination fee. SC, ST, BC, PwBD and ex-service candidates, white-card families and unemployed youth of AP paid only the ₹250.',
-        'Age in 2023: 18 to 42 years for most posts (Excise Sub-Inspector 18 to 30), with 5 years\' relaxation for SC, ST and BC and 10 for persons with disabilities.',
-        'AP has since raised the upper age limit for non-uniformed posts from 42 to 44 (until 30 September 2027); Group 1 2026 uses 44. Whether Group 2 does is confirmed only in the detailed notification due by 10 November 2026.']),
+        'Do not wait for 11 December: near the Group 1 last date in October the website slowed down and many candidates could not pay. Apply early.']),
+      ('Fee and age limit', 'list', [
+        'News reports of the detailed notification (Sakshi, The Hans India) do not give the fee or the age limit, and we could not read APPSC\'s PDF yet, so check them on psc.ap.gov.in.',
+        'Coaching websites quoting the detailed notification give: fee ₹250 application processing + ₹80 examination fee (exam fee waived for SC, ST, BC, PwBD, ex-service, white-card and unemployed AP candidates); '
+        'age 18 to 44 as on 1 July 2026 (Excise Sub-Inspector 18 to 30; Municipal Commissioner from 21, Sub-Registrar from 20), with 5 years\' relaxation for SC, ST, BC and EWS and 10 for persons with disabilities. Not yet confirmed by us from APPSC.',
+        'For comparison, in 2023 (Notification 11/2023) the fee was ₹250 + ₹80 and the age limit 18 to 42; AP has since raised the upper limit for non-uniformed posts from 42 to 44 (until 30 September 2027).']),
       ('Exam pattern', 'table+', (['Stage', 'What it covers', 'Questions · marks · time'], [
-        ('Screening test (objective, OMR)', 'Indian History, Geography, Indian Society, Current Affairs and Mental Ability, 30 marks each', '150 · 150 · 150 min'),
-        ('Mains Paper I (objective)', 'Social and cultural history of Andhra Pradesh; general overview of the Indian Constitution', '150 · 150 · 150 min'),
-        ('Mains Paper II (objective)', 'Indian and Andhra Pradesh economy; science and technology', '150 · 150 · 150 min'),
+        ('Screening test (objective, OMR) — 21 February 2027', 'Indian History, Geography, Indian Society, Current Affairs and Mental Ability, 30 marks each', '150 · 150 · 150 min'),
+        ('Mains Paper I (objective, online)', 'Social and cultural history of Andhra Pradesh; general overview of the Indian Constitution', '150 · 150 · 150 min'),
+        ('Mains Paper II (objective, online)', 'Indian and Andhra Pradesh economy; science and technology', '150 · 150 · 150 min'),
         ('Computer Proficiency Test', 'Qualifying test for the posts that need it, then document verification', '—')])),
-      ('', 'note', 'The screening test only shortlists candidates for the Mains; selection is on the Mains marks. The pattern is the same as in the previous '
+      ('', 'note', 'One-third of a mark is deducted for each wrong answer (Sakshi). The screening test only shortlists candidates for the Mains; selection is on the Mains marks. The pattern is the same as in the previous '
                    'Group-II recruitment (Notification 11/2023), so the 2024 Screening Test and the 2025 Mains papers below are the closest practice you can get.'),
       ('Cut-off marks', 'p', 'APPSC has not published category-wise cut-off marks for the last Group 2 recruitment (Notification 11/2023). The screening test is only a filter: '
                              'about 92,250 candidates qualified for the Mains from the screening test of 25 February 2024, for 905 posts, and the final selection was made on the Mains marks '
@@ -5175,7 +5186,7 @@ UPCOMING_PACKS = {
 
 
 EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from) — the countdown under the exam tiles
-  'appsc-group-2': ('APPSC Group 2 Screening Test', None, 'Applications 10–30 November 2026 (Notification 37/2026); APPSC has not announced the exam date yet.'),
+  'appsc-group-2': ('APPSC Group 2 Screening Test', '2027-02-21', 'APPSC detailed notification 37/2026 of 10 November 2026, as reported by Sakshi and The Hans India; applications till 11 December 2026.'),
   'appsc-group-1': ('APPSC Group 1 Screening Test', '2027-01-24', 'APPSC Notification 07/2026.'),
   'ts-police-si': ('TS Police SI Preliminary Written Test', '2026-11-29', 'Tentative, TGPRB press note of 17 September 2026.'),
   'ts-police-constable': ('TS Police Constable Preliminary Written Test', '2026-12-20', 'Tentative, TGPRB press note of 17 September 2026.'),

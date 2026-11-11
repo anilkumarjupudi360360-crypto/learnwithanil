@@ -19,14 +19,15 @@ TG_AMVI = 'https://websitenew.tgpsc.gov.in/preview/RElSRUNUUkVDUlVJVE1FTlROT1RJL
 # ---------------------------------------------------------------- Quick answers on the existing pages
 FAQS = {
   'appsc-group-2-notification-2026.html': [
-    ('Is the APPSC Group 2 notification 2026 out?', 'Yes. APPSC issued the brief notification No. 37/2026 on 13 October 2026 for 686 Group-II posts. The detailed notification (fee, age limits, reservations) is expected by 10 November 2026.'),
-    ('When can I apply for APPSC Group 2 2026?', 'From 10 November to 30 November 2026 (till 11:59 pm) on psc.ap.gov.in, after creating or updating your One Time Profile Registration (OTPR).'),
-    ('Has the APPSC Group 2 last date been extended?', 'No. The brief notification gives 10 to 30 November 2026 for online applications, and no change to that window had been announced as of 10 November 2026.'),
-    ('When is the APPSC Group 2 screening test 2026?', 'Not announced yet. APPSC will give the date later, usually in a web note. In the last recruitment the screening test came about two months after the notification (25 February 2024).'),
-    ('How many Deputy Tahsildar posts are there in Group 2 2026?', '200 Deputy Tahsildar posts and 176 Deputy MPDO posts, out of 686 in all.'),
-    ('Is the Group 2 exam pattern changed?', 'No. The brief notification keeps the pattern of Notification 11/2023: a 150-mark screening test, then two 150-mark Mains papers. Selection is on the Mains marks.'),
-    ('Is there negative marking in APPSC Group 2?', 'Yes. In the last Group 2 recruitment one-third of a mark was deducted for each wrong answer. The detailed 2026 notification will confirm it.'),
-    ('What is the APPSC Group 2 fee?', 'The 2026 fee comes with the detailed notification. In 2023 it was ₹250 application fee + ₹80 exam fee; SC, ST, BC, PwBD, ex-service, white-card and unemployed AP candidates paid only ₹250.'),
+    ('Is the APPSC Group 2 notification 2026 out?', 'Yes. The brief notification No. 37/2026 came on 13 October 2026 (686 posts) and the detailed notification on 10 November 2026, with 720 posts: 471 executive and 249 non-executive.'),
+    ('What is the last date for APPSC Group 2 2026?', '11 December 2026, 11:59 pm. Applications opened on 10 November on psc.ap.gov.in; you need your One Time Profile Registration (OTPR) first.'),
+    ('Has the APPSC Group 2 last date been extended?', 'The brief notification said 30 November; the detailed notification of 10 November gives 11 December 2026 (11:59 pm) as the last date. No further change as of 11 November 2026.'),
+    ('When is the APPSC Group 2 screening test 2026?', 'Sunday 21 February 2027, offline on an OMR sheet. The Mains will be online; APPSC will announce its date separately.'),
+    ('How many Deputy Tahsildar posts are there in Group 2 2026?', '203 Deputy Tahsildar posts and 176 Deputy MPDO posts, out of 720 in all.'),
+    ('Why did Group 2 posts go up from 686 to 720?', 'Departments reported more vacancies before the detailed notification: 31 Junior Office Assistant posts were added, and a few counts changed (Deputy Tahsildar 200 → 203, Senior Accountant 90 → 91, Junior Accountant 48 → 47).'),
+    ('Is the Group 2 exam pattern changed?', 'No. It is still a 150-mark screening test, then two 150-mark Mains papers, then a qualifying Computer Proficiency Test. Selection is on the Mains marks.'),
+    ('Is there negative marking in APPSC Group 2?', 'Yes. One-third of a mark is deducted for each wrong answer.'),
+    ('What is the APPSC Group 2 fee?', 'Coaching websites quoting the detailed notification give ₹250 application fee + ₹80 exam fee, with the exam fee waived for SC, ST, BC, PwBD, ex-service, white-card and unemployed AP candidates (the same as in 2023). Confirm on psc.ap.gov.in before paying.'),
   ],
   'appsc-group-1-notification-2026.html': [
     ('Can I still apply for APPSC Group 1 2026?', 'No. Applications for Group-I Services (Notification 07/2026) closed on 9 November 2026 at 11:59 pm. The last date had been extended once, from 27 October, and APPSC\'s web note said there would be no further extension.'),
@@ -427,7 +428,7 @@ ASOF_PAGE = {'upsc-cse-2027-notification.html': '10 November 2026', 'ssc-cgl-202
              'appsc-analyst-grade-2-notification-2026.html': '10 November 2026', 'ap-police-si-notification-2026.html': '10 November 2026',
              'ap-police-constable-notification-2026.html': '10 November 2026', 'ts-police-si-exam-date-hall-ticket-2026.html': '10 November 2026',
              'ts-police-constable-exam-date-hall-ticket-2026.html': '10 November 2026', 'appsc-assistant-environmental-engineer-notification-2026.html': '8 November 2026',
-             'appsc-group-1-notification-2026.html': '10 November 2026', 'appsc-group-2-notification-2026.html': '10 November 2026'}   # pages whose answers were written later
+             'appsc-group-1-notification-2026.html': '10 November 2026', 'appsc-group-2-notification-2026.html': '11 November 2026'}   # pages whose answers were written later
 # ---------------------------------------------------------------- TGPSC MPSO / ASO (Anil, 8 Nov 2026: link to Notification 07/2026, "pls add pyqs for it in
 # telangana section"). The 2018 question booklets were not found online (only TSPSC's final keys), so Anil chose "start with what's available": this page,
 # with Paper I practice from TGPSC's General Studies & General Abilities papers already on the site. Add the 2018 papers as an exam when the booklets come.
