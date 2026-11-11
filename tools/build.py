@@ -3,6 +3,7 @@
 
 src/*.txt  (question transcriptions)  ->  dist/  (artifact page + hostable website)
 """
+import urllib.parse
 import json, re, os, sys, html, base64, shutil, io, hashlib
 from datetime import date
 
@@ -5209,6 +5210,35 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'tgpsc-hmwssb-manager': ('TGPSC HMWSSB Manager (Engineering)', None, 'Tentatively December 2026; TGPSC has not announced the exact date yet.'),
 }
 
+# Anil, 11 Nov 2026: "i want to add mentorship program to appsc group-1, grup-2 ....pls make some poster and add in the respective tile";
+# "for prelims and mains combined"; "add for every subject....you will get a seperate mentor". Posters: src/static/mentor-<exam id>.webp (1080×1350).
+MENTOR = {
+  'appsc-group-1': dict(exam='APPSC Group-1', subjects='History & Culture, Polity, Economy, Geography, Science & Tech, Current Affairs and Mental Ability',
+                        extra='Mains answer writing with evaluation and feedback'),
+  'appsc-group-2': dict(exam='APPSC Group-2', subjects='AP History, Indian Polity, Economy, Geography, Current Affairs and Mental Ability',
+                        extra='Prelims and Mains mock test analysis'),
+}
+
+
+def mentor_card(conf):
+    m = MENTOR.get(conf['id'])
+    if not m: return ''
+    img = f'/mentor-{conf["id"]}'
+    wa = f'https://wa.me/{WHATSAPP}?text=' + urllib.parse.quote(f'Hi Anil sir, I want to join the {m["exam"]} Mentorship Program (Prelims + Mains). Please share the details.')
+    pts = ''.join(f'<li>{esc(x)}</li>' for x in (
+        f'A separate mentor for every subject: {m["subjects"]}',
+        'One-to-one strategy call, your own Prelims + Mains plan and weekly review',
+        m['extra'],
+        'Doubt clearing on WhatsApp / Telegram, in English or Telugu'))
+    return (f'<div class="card mcard"><a class="mc-img" href="{img}.webp" target="_blank" rel="noopener" data-mentor="poster">'
+            f'<img src="{img}-s.webp" srcset="{img}-s.webp 540w, {img}.webp 1080w" sizes="(max-width:860px) 80vw, 300px" width="540" height="675" loading="lazy" '
+            f'alt="{esc(m["exam"])} Mentorship Program poster: Prelims + Mains, a separate mentor for every subject, led by Jupudi Anil Kumar"></a>'
+            f'<div class="mc-b"><span class="mc-k">New · Prelims + Mains</span><h3>{esc(m["exam"])} Mentorship Program</h3>'
+            f'<p>A separate mentor for every subject, led by Jupudi Anil Kumar, for both the Prelims (Screening) and the Mains.</p><ul>{pts}</ul>'
+            f'<div class="mc-cta"><a class="btn mc-wa" href="{wa}" target="_blank" rel="noopener" data-mentor="whatsapp">WhatsApp to join</a>'
+            f'<a class="btn btn-secondary" href="tel:+{WHATSAPP}" data-mentor="call">Call 94947 92739</a></div>'
+            f'<span class="mc-note">Limited seats · Call or WhatsApp for the fee and batch details.</span></div></div>')
+
 
 def exam_clock_html(conf):
     c = EXAM_CLOCK.get(conf['id'])
@@ -5336,7 +5366,7 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
             hd = lambda h, s: f'<div class="section-title" style="margin:{"0" if h == "Prelims" else "26px"} 0 12px"><h2>{h}</h2><span class="muted" style="font-size:14px">{s}</span></div>'
             return (f'<section class="wrap section">' + hd('Prelims', 'Screening test: previous papers, mock tests, sectional tests')
                     + f'<div class="etiles">{t1}{t2}{t3}</div>' + hd('Mains', 'Descriptive papers: previous questions with model answers')
-                    + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + g1mains.tiles_credit() + exam_clock_html(conf)
+                    + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + g1mains.tiles_credit() + mentor_card(conf) + exam_clock_html(conf)
                     + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
     if conf['id'] == 'tgpsc-group-1':   # TGPSC Group-I: Prelims tiles and Mains tiles (Mains questions only; tools/tg1mains.py)
         import tg1mains
@@ -5347,7 +5377,7 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
                     + f'<div class="etiles">{t1}{t2}{t3}</div>' + hd('Mains', 'Descriptive papers: previous questions in English and Telugu')
                     + f'<div class="etiles">{tg1mains.tiles(conf, len(tq))}</div>' + exam_clock_html(conf)
                     + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
-    return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + exam_clock_html(conf)
+    return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + mentor_card(conf) + exam_clock_html(conf)
             + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + mains_section(conf, mains) + '</section>')
 
 
