@@ -2706,7 +2706,7 @@ def FAQ_AEE(total, npapers):
        'and environmental impact assessment and sustainable development.'),
       ('Who can apply for APPSC Assistant Environmental Engineer?',
        'A B.E./B.Tech. degree in Civil, Mechanical, Chemical or Environmental Engineering, or a pass in Sections A and B of the AMIE (India) Civil examination; age 18 to 44 years as on 1 July 2026 with the usual relaxations. '
-       'Pay scale ₹57,100 – ₹1,47,760. Online applications ran from 6 to 27 October 2026.'),
+       'Pay scale ₹57,100 – ₹1,47,760. Online applications ran from 6 October to 9 November 2026 (extended from 27 October) and are now closed.'),
       ('Are the questions in Telugu?',
        ('Paper I (General Studies & Mental Ability) is here in English and Telugu, as APPSC printed it. Paper II (Common Subject) is set in English only, so it is here in English.' if aee_p1() else
         'Paper II (Common Subject) is set in English only, so it is here in English. Paper I (General Studies & Mental Ability), coming next, will be in English and Telugu as APPSC printed it.')),
@@ -3753,7 +3753,7 @@ LANDINGS = {
             '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (720 posts, apply till 11 December, screening test 21 February 2027) and '
             '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts, applications closed, screening test 24 January 2027) and '
             '<a href="/appsc-eo-grade-3-notification-2026.html">APPSC EO Grade-III Notification 2026</a> (104 Endowments Executive Officer posts, last date extended to 12 November), '
-            '<a href="/appsc-analyst-grade-2-notification-2026.html">Analyst Grade-II Notification 2026</a> (18 Pollution Control Board posts, apply by 2 November) and '
+            '<a href="/appsc-analyst-grade-2-notification-2026.html">Analyst Grade-II Notification 2026</a> (18 Pollution Control Board posts; last date 2 November, reported extended to 12 November) and '
             '<a href="/appsc-fro-notification-2026.html">FRO Notification 2026</a> (5 Forest Range Officer posts, last date extended to 12 November) and '
             '<a href="/appsc-assistant-environmental-engineer-notification-2026.html">Assistant Environmental Engineer Notification 2026</a> (41 Pollution Control Board posts). Timed mock tests: '
             '<a href="/appsc-group-2/mock-test.html">Group 2</a> · <a href="/appsc-group-1/mock-test.html">Group 1</a>.</p>',
@@ -3994,19 +3994,21 @@ NOTIFS = {
   'appsc-analyst-grade-2-notification-2026.html': dict(
     exam='appsc-analyst', crumb='Analyst Grade-II Notification 2026',
     # Anil, 28 Oct / 1 Nov 2026: APPSC Notification 21/2026 dated 13 Oct 2026 (Analyst_Grade_II_21_2026.pdf)
-    title='APPSC Analyst Grade 2 Notification 2026 – AP Pollution Control Board, 18 Posts, Apply by 2 November, Syllabus & Previous Papers | Learn with Anil',
-    desc='APPSC Analyst Grade-II (A.P. Pollution Control Board) Notification 2026 (No. 21/2026): 18 posts, online applications 13 October to 2 November 2026, eligibility, fee, '
+    # 11 Nov 2026: last date 2 Nov passed; Adda247 (3 Nov) reports an extension to 12 Nov by a web note of 2 Nov — not confirmed by a second source.
+    title='APPSC Analyst Grade 2 Notification 2026 – Last Date & Extension Status, 18 Posts (AP Pollution Control Board), Exam Date, Syllabus & Previous Papers | Learn with Anil',
+    desc='APPSC Analyst Grade-II (A.P. Pollution Control Board) Notification 2026 (No. 21/2026): 18 posts; last date 2 November 2026 in the notification (one website reports an extension to 12 November, unconfirmed); exam date not announced. Eligibility, fee, '
          'the Paper I and Paper II (Chemistry, Biochemistry, Biology, Environmental Science) pattern and syllabus, and Analyst Grade-II previous question papers with answers.',
     h1='APPSC Analyst Grade-II Notification 2026: 18 posts in the AP Pollution Control Board',
     lede='APPSC Notification No. 21/2026 (13 October 2026) invites online applications for 18 posts of Analyst Grade-II in the A.P. Pollution Control Board, the laboratory analysts who test '
-         'air, water and waste samples. Apply by 2 November 2026. Below: dates, eligibility, the exam pattern and syllabus, and the previous papers to start practising.',
+         'air, water and waste samples. The notification\'s last date was 2 November 2026; Adda247 reports it was extended to 12 November 2026, which we could not confirm from APPSC. '
+         'The exam date is not announced yet. Below: dates, eligibility, the exam pattern and syllabus, and the previous papers to start practising.',
     te='ఏపీపీఎస్సీ అనలిస్ట్ గ్రేడ్-II (ఏపీ కాలుష్య నియంత్రణ మండలి) నోటిఫికేషన్ (నం. 21/2026): 18 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు అక్టోబర్ 13 నుంచి నవంబర్ 2, 2026 వరకు. పేపర్-1 జనరల్ స్టడీస్, పేపర్-2 కామన్ పేపర్ (కెమిస్ట్రీ, బయోకెమిస్ట్రీ, బయాలజీ, ఎన్విరాన్‌మెంటల్ సైన్స్); పాత ప్రశ్నాపత్రాలు సమాధానాలతో కింద.',
     pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Analyst_Grade_II_21_2026.pdf', pdfname='APPSC Notification No. 21/2026, dated 13 October 2026',
     sections=[
       ('Important dates', 'table', [
         ('Notification (No. 21/2026)', '13 October 2026'),
-        ('Online applications', '13 October to 2 November 2026 (till 11:59 pm)'),
-        ('Written examination', 'Computer-based (CBRT); date to be announced by APPSC'),
+        ('Online applications', '13 October to 2 November 2026 (till 11:59 pm) per the notification; reported extended to 12 November 2026 (Adda247, 3 November; not confirmed by APPSC\'s site)'),
+        ('Written examination', 'Computer-based (CBRT); date not announced as of 11 November 2026'),
         ('Official website', 'psc.ap.gov.in')]),
       ('Posts, pay and age', 'table', [
         ('Post', 'Analyst Grade-II, A.P. Pollution Control Board (state-wide post)'),
@@ -4036,20 +4038,25 @@ NOTIFS = {
   'appsc-assistant-environmental-engineer-notification-2026.html': dict(
     exam='appsc-env-engineer', crumb='Assistant Environmental Engineer Notification 2026',
     # Anil, 8 Nov 2026: APPSC Notification 08/2026 dated 6 Oct 2026 (Assistant_Environmental_Engineer_08_2026.pdf, attached by Anil)
-    title='APPSC Assistant Environmental Engineer Notification 2026 – AP Pollution Control Board, 41 Posts, Syllabus & Previous Papers | Learn with Anil',
-    desc='APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) Notification 2026 (No. 08/2026): 41 posts, online applications 6 to 27 October 2026, eligibility, fee, '
+    # 11 Nov 2026: APPSC web note of 27 Oct 2026 extended the last date to 9 Nov 2026 (Sakshi Education 29 Oct + Andhra Jyothy 28 Oct); applications now closed.
+    title='APPSC Assistant Environmental Engineer 2026 – Applications Closed (Last Date Extended to 9 November), 41 Posts, Exam Date, Syllabus & Previous Papers | Learn with Anil',
+    desc='APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) Notification 2026 (No. 08/2026): 41 posts; online applications closed on 9 November 2026 (extended from 27 October); exam date not announced yet. Eligibility, fee, '
          'the Paper I General Studies and Paper II Common Subject pattern and syllabus, and AEE previous question papers with answers.',
     h1='APPSC Assistant Environmental Engineer Notification 2026: 41 posts in the AP Pollution Control Board',
     lede='APPSC Notification No. 08/2026 (6 October 2026) invited online applications for 41 posts (one of them carried forward) of Assistant Environmental Engineer in the A.P. Pollution Control Board, '
-         'for engineering graduates. Applications ran from 6 to 27 October 2026; the computer-based exam date is still to be announced. Below: dates, eligibility, the exam pattern and syllabus, '
+         'for engineering graduates. Applications ran from 6 October to 9 November 2026 (the last date was extended from 27 October by APPSC\'s web note of 27 October) and are now closed; '
+         'the computer-based exam date is still to be announced. Below: dates, eligibility, the exam pattern and syllabus, '
          'and the 2025 papers to start practising.',
     te='ఏపీపీఎస్సీ అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ (ఏపీ కాలుష్య నియంత్రణ మండలి) నోటిఫికేషన్ (నం. 08/2026): 41 పోస్టులు — ఆన్‌లైన్ దరఖాస్తులు అక్టోబర్ 6 నుంచి 27, 2026 వరకు. పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ, పేపర్-2 కామన్ సబ్జెక్ట్; 2025 ప్రశ్నాపత్రాలు సమాధానాలతో కింద.',
     pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Assistant_Environmental_Engineer_08_2026.pdf', pdfname='APPSC Notification No. 08/2026, dated 6 October 2026',
+    more_src=[('https://psc.ap.gov.in/Documents/NotificationDocuments/Extension_Webnote_27102026.pdf', 'APPSC web note on the extension of the last date, 27 October 2026'),
+              ('https://education.sakshi.com/en/group-1/education-news/appsc-group-1-application-deadline-extended-candidates-can-apply-till-november-9-201858', 'Sakshi Education, 29 October 2026: Assistant Environmental Engineer among the posts extended to 9 November'),
+              ('https://www.andhrajyothy.com/2026/andhra-pradesh/appsc-extends-job-application-deadline-to-november-9-1571066.html', 'Andhra Jyothy, 28 October 2026: six notifications extended to 9 November')],
     sections=[
       ('Important dates', 'table', [
         ('Notification (No. 08/2026)', '6 October 2026'),
-        ('Online applications', '6 to 27 October 2026 (till 11:59 pm)'),
-        ('Written examination', 'Computer-based (CBRT); date to be announced by APPSC'),
+        ('Online applications', '6 October to 9 November 2026, 11:59 pm (extended from 27 October by APPSC\'s web note of 27 October 2026) — now closed'),
+        ('Written examination', 'Computer-based (CBRT); date not announced as of 11 November 2026'),
         ('Official website', 'psc.ap.gov.in')]),
       ('Posts, pay and age', 'table', [
         ('Post', 'Assistant Environmental Engineer, A.P. Pollution Control Board (state-wide post)'),
@@ -5194,8 +5201,8 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'upsc-prelims': ('UPSC Civil Services (Preliminary) Examination 2027', '2027-05-23', 'UPSC Calendar 2027.'),
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
   'upsc-epfo': ('UPSC EPFO APFC Recruitment Test 2026', '2026-12-20', 'UPSC Special Advertisement 52/2026 (80 APFC posts): pen-and-paper Recruitment Test on 20 December 2026.'),
-  'appsc-analyst': ('APPSC Analyst Grade-II written examination', None, 'Applications 13 October to 2 November 2026 (Notification 21/2026); APPSC has not announced the exam date yet.'),
-  'appsc-env-engineer': ('APPSC Assistant Environmental Engineer written examination', None, 'Applications 6 to 27 October 2026 (Notification 08/2026); APPSC has not announced the exam date yet.'),
+  'appsc-analyst': ('APPSC Analyst Grade-II written examination', None, 'Applications 13 October to 2 November 2026, reported extended to 12 November (Notification 21/2026); APPSC has not announced the exam date yet.'),
+  'appsc-env-engineer': ('APPSC Assistant Environmental Engineer written examination', None, 'Applications closed on 9 November 2026 (Notification 08/2026, extended from 27 October); APPSC has not announced the exam date yet.'),
   'appsc-fro': ('APPSC Forest Range Officer written examination', None, 'Applications 16 October to 12 November 2026 (Notification 16/2026, extended); APPSC has not announced the exam date yet.'),
   'ap-police-si': ('AP Police SI Preliminary Written Test', None, 'SLPRB AP notified 378 SI posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
   'ap-police-constable': ('AP Police Constable Preliminary Written Test', None, 'SLPRB AP notified 1,156 posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
