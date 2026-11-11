@@ -734,6 +734,18 @@ details.upc .exams{margin-top:8px}
 .tm-count .tm-hms{grid-column:1/-1;font-size:13px;color:var(--ink);font-family:var(--f-mono)}
 .cdown.soon-7{border-top-color:var(--bad)}
 .cdown.soon-7 .tm-d{color:var(--bad)}
+/* Mentorship Program card on the APPSC Group-1 / Group-2 home (build.py mentor_card, 11 Nov 2026) */
+.mcard{display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px;align-items:center;margin-top:16px;padding:18px;border:2px solid #F59E0B;background:linear-gradient(120deg,rgba(245,158,11,.10),var(--surface) 55%)}
+.mcard:hover{transform:none}
+.mc-img img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 8px 24px rgba(10,24,70,.22)}
+.mc-k{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#B45309;font-weight:600}
+.mc-b h3{font-family:var(--f-display);font-size:26px;line-height:1.15;margin:6px 0 8px}
+.mc-b p{margin:0 0 10px;color:var(--muted)}
+.mc-b ul{margin:0 0 14px;padding-left:20px;display:grid;gap:6px}
+.mc-cta{display:flex;flex-wrap:wrap;gap:10px}
+.mc-cta .mc-wa{background:#16A34A;border-color:#16A34A;color:#fff}
+.mc-note{display:block;margin-top:10px;font-size:14px;color:var(--muted)}
+@media (max-width:860px){.mcard{grid-template-columns:1fr}.mc-img{max-width:340px;margin:0 auto}}
 .eclock{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;margin-top:16px;padding:16px 20px;border-top:3px solid var(--accent)}
 .eclock:hover{transform:none}
 .eclock .ec-l{display:flex;flex-direction:column;gap:2px;min-width:0}
@@ -949,6 +961,7 @@ function loadQZ(){ try{ const v = JSON.parse(localStorage.getItem(QKEY)||"null")
 
 /* ---------- visit statistics (Google Analytics, only when the site is built with an id) ---------- */
 function track(name, params){ try{ if(typeof gtag==="function") gtag("event", name, params||{}); }catch(_){} }
+document.addEventListener("click", e=>{ const m = e.target.closest && e.target.closest("[data-mentor]"); if(m) track("mentor_click", {exam: DATA.examShort||"", how: m.dataset.mentor}); }, true);   // Mentorship Program card
 
 /* ---------- student details + test records (sent to Anil's Google Form / Sheet) ---------- */
 const SKEY = "lwa-appsc-g2-student-v1";
