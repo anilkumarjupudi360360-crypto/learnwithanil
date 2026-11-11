@@ -347,6 +347,29 @@ async def main():
             await tp.click('.share-card [data-act="sitewa"]')
             wa = await tp.evaluate('window.__wa||""')
             if 'utm_source%3Dfriend' not in wa and 'utm_source=friend' not in wa: errors.append(f'share-the-website link has no utm tag: {wa[:120]}')
+            if await tp.locator('.happy').count(): errors.append('a 1-question result shows the "Great score" card')
+            # a good score (Anil, 12 Nov 2026): the "Great score" card with a ready score-card image replaces the plain share card
+            await tp.evaluate('''(()=>{ const qs = (window.LWA_DATA||JSON.parse(document.getElementById("lwa-data").textContent)).questions
+                  .filter(q=>Array.isArray(q.a)&&q.a.length&&q.o).slice(0,10), ans = {};
+                qs.forEach(q=>{ ans[q.id] = q.a[0]; });
+                const k = Object.keys(localStorage).find(k=>k.endsWith("-quiz-v1")) || "lwa-appsc-g2-quiz-v1";
+                localStorage.setItem(k, JSON.stringify({at: Date.now(), QZ: {title: "Smoke good score", mode: "practice", source: "", ids: qs.map(q=>q.id), i: 0,
+                  ans, chk: {}, rev: {}, mark: {}, t0: Date.now(), limit: 600, tryPaper: ""}})); })()''')
+            await tp.goto(URL + 'appsc-group-2/quiz/'); await tp.wait_for_timeout(1500)
+            await tp.click('[data-act="finish"]'); await tp.wait_for_timeout(2500)
+            if not await tp.locator('.happy [data-act="scoreimg"]').count(): errors.append('good score: no "Great score" card with the score-card button')
+            elif not (await tp.get_attribute('.happy .hcard', 'src') or '').startswith('data:image/'): errors.append('good score: the score-card preview image was not made')
+            if await tp.locator('.share-card').count(): errors.append('good score: the plain share card is still shown as well')
+        # registering no longer opens the "please share" pop-up (it waits for a good score)
+        jp = await b.new_page(viewport={'width': 390, 'height': 800})
+        await jp.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
+        await jp.goto(URL + 'appsc-group-2/#join'); await jp.wait_for_timeout(900)
+        if await jp.locator('#joinForm').count():
+            for k, v in (('name', 'Share Test'), ('phone', '9123456700'), ('email', 'st@example.com'), ('district', 'Guntur')):
+                await jp.fill(f'#joinForm [name="{k}"]', v)
+            await jp.check('#joinForm [name="ok"]'); await jp.click('#joinForm [type="submit"]'); await jp.wait_for_timeout(6000)
+            if await jp.locator('#askshare').count(): errors.append('registering still opens the "please share" pop-up')
+        await jp.close()
         await tp.evaluate('localStorage.removeItem("lwa-appsc-g2-quiz-v1")')
         # the last question always has a Submit button below it
         await tp.goto(URL + 'appsc-group-2/?practice=s2024'); await tp.wait_for_timeout(1500)
