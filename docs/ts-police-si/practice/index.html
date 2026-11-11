@@ -385,6 +385,16 @@ div.feature:hover{border-color:var(--line)}
 .btn-wa svg,.btn svg.ic{width:18px;height:18px}
 .share-card{display:flex;flex-direction:column;gap:12px;padding:18px 20px;border:1.5px dashed var(--accent);background:linear-gradient(160deg,var(--accent-soft),var(--surface) 70%)}
 .share-card h3{font-size:18px}
+.happy{display:grid;grid-template-columns:minmax(0,1fr) 190px;grid-template-rows:auto auto;column-gap:18px;row-gap:12px;align-items:end;padding:18px 20px;border:2px solid var(--good);background:linear-gradient(160deg,var(--good-soft),var(--surface) 75%)}
+.happy .htxt{grid-column:1;grid-row:1}
+.happy h3{font-size:20px;margin:0 0 6px}
+.happy p{margin:0;font-size:15px;line-height:1.55}
+.happy .hbtn{grid-column:1;grid-row:2;align-self:start;margin:0}
+.happy .hcard{grid-column:2;grid-row:1 / span 2;align-self:center;width:190px;height:190px;border-radius:14px;background:#0C2266;display:block;object-fit:cover;box-shadow:var(--shadow)}
+@media (max-width:640px){.happy{grid-template-columns:minmax(0,1fr) 92px;column-gap:12px;align-items:start;padding:16px}
+  .happy h3{font-size:18px}.happy p{font-size:14.5px}
+  .happy .hcard{grid-row:1;width:92px;height:92px;border-radius:10px}
+  .happy .hbtn{grid-column:1 / span 2}.happy .hbtn .btn{flex:1 1 auto}}
 .askshare{position:fixed;left:50%;bottom:calc(12px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:min(520px,calc(100% - 24px));z-index:45;background:var(--surface);border:1.5px solid var(--accent);border-radius:16px;box-shadow:var(--shadow);padding:18px 18px 8px;display:flex;flex-direction:column;gap:10px;animation:askup .35s ease-out}
 .askshare h3{font-size:17px;font-weight:700;padding-right:30px;margin:0}
 .askshare p{font-size:14.5px;line-height:1.55;margin:0}
@@ -2307,16 +2317,44 @@ function finishQuiz(){
 }
 
 /* ---------- result ---------- */
-function rankLine(r){   // "better than X%" against the site's timed-test scores (DATA.ranks, from the Student test records sheet)
-  const R = DATA.ranks, n = r.ids.length; if(!R || r.mode!=="test" || !n) return "";
+function rankInfo(r){   // "better than X%" against the site's timed-test scores (DATA.ranks, from the Student test records sheet)
+  const R = DATA.ranks, n = r.ids.length; if(!R || r.mode!=="test" || !n) return null;
   const sum = h=>h ? h.reduce((a,x)=>a+x,0) : 0, key = (DATA.examShort ? DATA.examShort+" · " : "") + r.title;
   let h = R.tests && R.tests[key], who = "scores in this test";
   if(sum(h) < 5){ h = R.exam; who = `${esc(DATA.examShort||"")} test scores`; }
   if(sum(h) < 5){ h = R.site; who = "timed-test scores on the site (all exams)"; }
-  const N = sum(h); if(N < 10) return "";
+  const N = sum(h); if(N < 10) return null;
   const b = Math.round(20*r.c/n); let below = 0; for(let i=0;i<b;i++) below += h[i];
-  const p = Math.round(100*(below + h[b]/2)/N);
-  return `<section class="card rank"><b>🏆 Your ${pct(r.c,n)}% is better than ${p}% of Learn with Anil students</b><span>Compared with ${N} ${who} up to ${esc(R.asof)}.</span></section>`;
+  return {p: Math.round(100*(below + h[b]/2)/N), N, who, asof: R.asof};
+}
+function rankLine(r){
+  const k = rankInfo(r); if(!k) return "";
+  return `<section class="card rank"><b>🏆 Your ${pct(r.c,r.ids.length)}% is better than ${k.p}% of Learn with Anil students</b><span>Compared with ${k.N} ${k.who} up to ${esc(k.asof)}.</span></section>`;
+}
+/* The happy moment (Anil, 12 Nov 2026): the "please share" request used to pop up right after registering, when students only
+   wanted to start the test (in two weeks 366 asks gave 30 shares). Now there is no pop-up after registering. After a good score
+   (5+ questions, 60%+ correct, or better than 60% of students) the result page opens with a "Great score!" card, its score-card
+   image already made, and one tap shares the image with the student's invite link. Other results keep the plain share card. */
+function goodScore(r){
+  const n = r.ids.length; if(!n || n < 5 || r.source==="daily") return false;
+  const k = rankInfo(r); return pct(r.c, n) >= 60 || (k && k.p >= 60 && pct(r.c, n) >= 40);
+}
+function happyCard(r){
+  const l = askLang(), t = askT();
+  if(ST.phone && !refCode()) refMine();   // the shared caption carries the student's own invite code
+  if(UI.happyAt !== r.at){ UI.happyAt = r.at; UI.happyImg = ""; track("share_ask", {from:"goodscore"}); }
+  setTimeout(fillHappy, 0);
+  return `<section class="card happy"${l==="en"? "" : ` lang="${l}"`}>
+    <div class="htxt"><h3>${t.gh}</h3><p>${t.gp}${REFON && ST.phone ? t.gr : ""}</p></div>
+    <img class="hcard" alt="${esc(t.card)}" ${UI.happyImg ? `src="${UI.happyImg}"` : ""} width="190" height="190">
+    <div class="share-row hbtn"><button class="btn btn-wa" type="button" data-act="scoreimg">${WA_ICON}${t.gbtn}</button><button class="btn btn-secondary" type="button" data-act="scorewa">${t.score}</button></div>
+  </section>`;
+}
+function fillHappy(){   // the score card is drawn once per result and shown as a preview
+  const img = document.querySelector(".happy .hcard"), r = LAST; if(!img || !r) return;
+  if(UI.happyImg){ if(!img.getAttribute("src")) img.src = UI.happyImg; return; }
+  if(UI.happyBusy === r.at) return; UI.happyBusy = r.at;
+  scoreCard(r).then(c=>{ UI.happyBusy = 0; if(UI.happyAt !== r.at) return; UI.happyImg = c.toDataURL("image/jpeg", 0.85); const el = document.querySelector(".happy .hcard"); if(el) el.src = UI.happyImg; }, ()=>{ UI.happyBusy = 0; });
 }
 function resultExtra(r){
   if(r.source==="daily") return `<section class="card daily" style="margin-top:14px"><div><p class="eyebrow">Daily 10 · done today ✓</p><h2>${r.streak ? `🔥 ${r.streak}-day streak` : "Well done"}</h2><p>Come back tomorrow for 10 new questions and keep your streak going.</p></div><button class="btn btn-good" type="button" data-act="dshare">Share on WhatsApp</button></section>`;
@@ -2349,9 +2387,9 @@ function vResult(){
         <p class="muted" style="font-size:15px">${r.total && r.total>n? `You answered ${n} of ${r.total} questions; the rest were not counted. `:""}${r.added?`<b style="color:var(--ink)">${r.added} question${r.added===1?"":"s"}</b> added to My Mistakes. `:""}${r.mastered? `<b style="color:var(--good)">${r.mastered}</b> cleared from My Mistakes after two correct answers in a row. `:""}${!r.added&&!r.mastered? "No new mistakes from this quiz.":""}</p>
       </div>
     </section>
-    ${rankLine(r)}${resultExtra(r)}
+    ${goodScore(r) ? happyCard(r) : ""}${rankLine(r)}${resultExtra(r)}
     ${upsellCard()}
-    ${shareBlock()}
+    ${goodScore(r) ? "" : shareBlock()}
     <section class="card" style="overflow:hidden">
       <div class="pad" style="padding-bottom:6px"><h2 style="font-size:18px;font-weight:700">Topic-wise analysis</h2><p class="muted" style="font-size:14px">Weakest topics first.</p></div>
       <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Topic</th><th class="num">Correct</th><th class="num">Wrong</th><th class="num">Skipped</th><th>Accuracy</th></tr></thead><tbody>${rows}</tbody></table></div>
@@ -2742,7 +2780,9 @@ async function scoreCard(r){
   stats.forEach(([k,v,col],i)=>{ const y = 430+i*92; ctx.fillStyle="rgba(255,255,255,.08)"; rrect(ctx,560,y-58,460,78,14); ctx.fill();
     ctx.fillStyle="#AFC1EE"; ctx.font='700 28px "Source Sans 3", sans-serif'; ctx.fillText(k, 590, y-9);
     ctx.fillStyle=col; ctx.font='800 40px "Archivo", sans-serif'; ctx.textAlign="right"; ctx.fillText(String(v), 990, y-6); ctx.textAlign="left"; });
-  ctx.fillStyle="#fff"; ctx.font='700 34px "Source Sans 3", sans-serif'; ctx.fillText("Can you beat my score? 💪", 60, 850);
+  const rk = rankInfo(r);
+  if(rk && rk.p >= 50){ ctx.fillStyle="#F2B705"; ctx.font='700 32px "Source Sans 3", sans-serif'; ctx.fillText(`🏆 Better than ${rk.p}% of Learn with Anil students`, 60, 818); }
+  ctx.fillStyle="#fff"; ctx.font='700 34px "Source Sans 3", sans-serif'; ctx.fillText("Can you beat my score? 💪", 60, rk && rk.p >= 50 ? 874 : 850);
   footer(ctx, W, H, "Practise real "+(DATA.board||"APPSC")+" previous questions at");
   return c;
 }
@@ -2806,7 +2846,9 @@ const ASK = {
       yours:"Or challenge your friends with your score:", score:"Send my score", card:"Score card (image)",
       thanks:"Thank you! 🙏 Your free days are added when your friend registers with your link.", copied:"Link copied. Paste it in any group or chat. Your free days are added when a friend registers with it. 🙏",
       inv:"🎁 Invite friends, get free days", invp:"Your own link. When a friend registers with it you get <b>3 days</b> of the All-in-One Pass free (for up to 10 friends); when a friend buys the ₹45 pass you get <b>1 month</b> free. If you already have the pass, the days are added to its end.",
-      stat:"Friends joined: {j} · Friends who bought the pass: {b} · Free days earned: {d}", load:"Getting your link…"},
+      stat:"Friends joined: {j} · Friends who bought the pass: {b} · Free days earned: {d}", load:"Getting your link…",
+      gh:"🎉 Great score! Show your friends", gp:"Your score card is ready. Send it to your exam group and challenge your friends to beat it.",
+      gr:" Every friend who registers with your link gives you 3 free days of the All-in-One Pass.", gbtn:"Share my score card", gsave:"Save the image"},
   te:{h:"🎁 Learn with Anil షేర్ చేయండి, ఉచిత రోజులు పొందండి",
       p:"Learn with Anil ఫీజు చాలా తక్కువ (₹45తో అన్నీ), అందుకే ప్రకటనలకు డబ్బు ఖర్చు పెట్టలేం. మీలాంటి విద్యార్థులు స్నేహితులకు చెబితేనే ఈ కమ్యూనిటీ పెరుగుతుంది. మీ సొంత లింక్‌ను షేర్ చేయండి: దానితో ఒక స్నేహితుడు రిజిస్టర్ అయితే మీకు 3 రోజులు ఆల్-ఇన్-వన్ పాస్ ఉచితం, స్నేహితుడు పాస్ కొంటే మీకు 1 నెల ఉచితం.",
       r:"🙏 ఈ టెస్ట్ ఉపయోగపడిందా? షేర్ చేసి ఉచిత రోజులు పొందండి",
@@ -2816,7 +2858,9 @@ const ASK = {
       yours:"లేదా మీ స్కోర్‌తో స్నేహితులకు ఛాలెంజ్ చేయండి:", score:"నా స్కోర్ పంపండి", card:"స్కోర్ కార్డ్ (ఇమేజ్)",
       thanks:"ధన్యవాదాలు! 🙏 మీ స్నేహితుడు మీ లింక్‌తో రిజిస్టర్ అయినప్పుడు మీ ఉచిత రోజులు జతవుతాయి.", copied:"లింక్ కాపీ అయింది. ఏ గ్రూప్‌లో లేదా చాట్‌లోనైనా పేస్ట్ చేయండి. స్నేహితుడు రిజిస్టర్ అయితే మీకు ఉచిత రోజులు. 🙏",
       inv:"🎁 స్నేహితులను ఆహ్వానించండి, ఉచిత రోజులు పొందండి", invp:"ఇది మీ సొంత లింక్. దీనితో స్నేహితుడు రిజిస్టర్ అయితే మీకు <b>3 రోజులు</b> ఆల్-ఇన్-వన్ పాస్ ఉచితం (10 మంది స్నేహితుల వరకు); స్నేహితుడు ₹45 పాస్ కొంటే మీకు <b>1 నెల</b> ఉచితం. మీకు ఇప్పటికే పాస్ ఉంటే, ఈ రోజులు దాని చివర కలుస్తాయి.",
-      stat:"చేరిన స్నేహితులు: {j} · పాస్ కొన్నవారు: {b} · మీకు వచ్చిన ఉచిత రోజులు: {d}", load:"మీ లింక్ తెస్తున్నాం…"},
+      stat:"చేరిన స్నేహితులు: {j} · పాస్ కొన్నవారు: {b} · మీకు వచ్చిన ఉచిత రోజులు: {d}", load:"మీ లింక్ తెస్తున్నాం…",
+      gh:"🎉 మంచి స్కోర్! మీ స్నేహితులకు చూపించండి", gp:"మీ స్కోర్ కార్డ్ సిద్ధంగా ఉంది. మీ పరీక్ష గ్రూప్‌కి పంపి, దీన్ని దాటమని స్నేహితులకు ఛాలెంజ్ చేయండి.",
+      gr:" మీ లింక్‌తో రిజిస్టర్ అయ్యే ప్రతి స్నేహితుడికి మీకు 3 రోజులు ఆల్-ఇన్-వన్ పాస్ ఉచితం.", gbtn:"నా స్కోర్ కార్డ్ షేర్ చేయండి", gsave:"ఇమేజ్ సేవ్ చేయండి"},
   hi:{h:"🎁 Learn with Anil शेयर कीजिए, मुफ़्त दिन पाइए",
       p:"Learn with Anil की फ़ीस बहुत कम है (₹45 में सब कुछ), इसलिए हम विज्ञापनों पर पैसा खर्च नहीं करते। आप जैसे छात्र अपने दोस्तों को बताते हैं, तभी यह समुदाय बढ़ता है। अपना लिंक शेयर कीजिए: उससे कोई दोस्त रजिस्टर करे तो आपको ऑल-इन-वन पास 3 दिन मुफ़्त, और दोस्त पास ख़रीदे तो 1 महीना मुफ़्त।",
       r:"🙏 यह टेस्ट काम आया? शेयर कीजिए और मुफ़्त दिन पाइए",
@@ -2826,7 +2870,9 @@ const ASK = {
       yours:"या अपने स्कोर से दोस्तों को चुनौती दें:", score:"मेरा स्कोर भेजें", card:"स्कोर कार्ड (इमेज)",
       thanks:"धन्यवाद! 🙏 आपका दोस्त आपके लिंक से रजिस्टर करेगा तो आपके मुफ़्त दिन जुड़ जाएँगे।", copied:"लिंक कॉपी हो गया। किसी भी ग्रुप या चैट में पेस्ट करें। दोस्त रजिस्टर करे तो आपको मुफ़्त दिन। 🙏",
       inv:"🎁 दोस्तों को बुलाइए, मुफ़्त दिन पाइए", invp:"यह आपका अपना लिंक है। इससे कोई दोस्त रजिस्टर करे तो आपको ऑल-इन-वन पास <b>3 दिन</b> मुफ़्त (10 दोस्तों तक); दोस्त ₹45 का पास ख़रीदे तो <b>1 महीना</b> मुफ़्त। अगर आपके पास पहले से पास है, तो ये दिन उसके आख़िर में जुड़ जाते हैं।",
-      stat:"जुड़े दोस्त: {j} · पास ख़रीदने वाले: {b} · मिले मुफ़्त दिन: {d}", load:"आपका लिंक ला रहे हैं…"}
+      stat:"जुड़े दोस्त: {j} · पास ख़रीदने वाले: {b} · मिले मुफ़्त दिन: {d}", load:"आपका लिंक ला रहे हैं…",
+      gh:"🎉 शानदार स्कोर! दोस्तों को दिखाइए", gp:"आपका स्कोर कार्ड तैयार है। इसे अपने परीक्षा ग्रुप में भेजिए और दोस्तों को इसे पार करने की चुनौती दीजिए।",
+      gr:" आपके लिंक से रजिस्टर करने वाले हर दोस्त पर आपको ऑल-इन-वन पास 3 दिन मुफ़्त।", gbtn:"मेरा स्कोर कार्ड शेयर करें", gsave:"इमेज सेव करें"}
 };
 const ASK0 = {   // the same cards before invite rewards are switched on (DATA.pay.ref): a plain request, no promise of free days
   en:{h:"🙏 A small request from Anil",
@@ -3042,12 +3088,13 @@ document.addEventListener("click", e=>{
     case "qotdimg": { const x = qotdItem(current==="exams"?"all":DATA.examShort); if(!x) break; toast("Making the image…");
       questionCard(x, !!x.qt&&(x.l2||"te")===P.lang).then(c=>shareCanvas(c, `question-of-the-day-${new Date().toISOString().slice(0,10)}.png`, challengeText(x.q, x.exName, x.paper, null, qURL(x.id, x.base, x.pb), x.o))); break; }
     case "qchal": { const q = QMAP[b.dataset.id]; if(q) shareWA(challengeText(QT(q), DATA.exam||"APPSC", PMAP[q.p].short, q.n, qURL(q.id), isMCQ(q)? OPTS(q) : null)); break; }
-    case "scorewa": if(LAST) shareWA(scoreText(LAST)); break;
+    case "scorewa": if(LAST){ shareWA(scoreText(LAST)); askDone(UI.happyAt===LAST.at ? "goodscore" : "result", "score_text", true); } break;
     case "sitewa": shareWA(shareSiteText("whatsapp")); askDone(b.dataset.from, "whatsapp"); break;
     case "sitemore": shareSiteMore(b.dataset.from); break;
     case "askclose": closeAsk(); track("share_ask_later"); break;
     case "asknever": { const a = askGet(); a.never = 1; a.pending = null; askSet(a); closeAsk(); track("share_ask_never"); break; }
-    case "scoreimg": if(LAST){ toast("Making your score card…"); scoreCard(LAST).then(c=>shareCanvas(c, "my-score-learnwithanil.png", scoreText(LAST))); } break;
+    case "scoreimg": if(LAST){ askDone(UI.happyAt===LAST.at ? "goodscore" : "result", "score_image", true);
+      if(!UI.happyImg) toast("Making your score card…"); scoreCard(LAST).then(c=>shareCanvas(c, "my-score-learnwithanil.png", scoreText(LAST))); } break;
     case "copyig": { const h="@"+DATA.instagram; try{ navigator.clipboard.writeText(h).then(()=>toast("Copied "+h), ()=>toast("Handle: "+h)); }catch(_){ toast("Handle: "+h); } break; }
   }
 });
@@ -3069,7 +3116,7 @@ async function finishJoin(d, method){
        "You are registered" note and the Pay button, unless the phone already has a pass. */
     const pay = PAYC && PAYC.on && PAYC.api, book = UI.pendingBook, wantPay = UI.pendingPay;
     UI.pendingBook = null; UI.pendingPay = false;
-    if(isNew){ UI.justJoined = Date.now(); askQueue("join"); }   // the "please share with a friend" card, once things are calm
+    if(isNew){ UI.justJoined = Date.now(); }   // no "please share" pop-up after registering any more: it waits for a good score (Anil, 12 Nov 2026)
     const first = name.split(" ")[0];
     if(p){ leaveJoin(); toast("Thanks, "+first+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source, p.mins); }
     else if(UI.pendingBuy){ UI.pendingBuy = null; leaveJoin(); openPay("pyq"); payBuy("pyq"); }   // they had already tapped Pay: straight on to Instamojo
@@ -3163,7 +3210,7 @@ function start(data){
   if(!QZ){ QZ = loadQZ(); if(QZ) setTimeout(()=>{ if(current==="quiz") toast("Welcome back: your test is just where you left it."); }, 400); }
   if(passOK("pyq")) setTimeout(exLoad, 0);   // a pass saved on this phone: open the paid explanations at once
   setTimeout(refreshPasses, 0);   // a pass bought (or ended) elsewhere shows here (at most every 30 minutes while a pass is live)
-  if(askGet().pending) askWatch();   // the share request queued at registration survives the trip to the payment page
+  { const a = askGet(); if(a.pending){ a.pending = null; askSet(a); } }   // a pop-up queued at registration by the old version is dropped
   refCapture();   // arrived through a friend's invite link (?ref=)
   if(ST.phone) setTimeout(async()=>{ await refJoin(); refMine(); }, 2500);
   setTimeout(progLoad, 3000);   // mistakes saved with the login on another device   // a refjoin that failed earlier (first: a code of one's own would make them "known"); then my own code for share links
