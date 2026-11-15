@@ -2389,7 +2389,7 @@ def live_href(e):
     return e['live'] if '/' in e['live'] else '#' + e['live']
 
 
-HERO_NEW = ('<a class="hero-new" href="/rrb-group-d/"><span>New</span> Railways: RRB Group D &amp; RPF previous papers, English &amp; Hindi <b aria-hidden="true">→</b></a>')   # was Banking: SBI PO & IBPS SO (8–15 Nov 2026), UPSC Prelims 2026 & 2025 · Anthropology (to 8 Nov 2026)   # start-page announcement pill; change with each big release
+HERO_NEW = ('<a class="hero-new" href="/rrb-group-d/"><span>New</span> Railways: RRB Group D, NTPC &amp; RPF previous papers, English &amp; Hindi <b aria-hidden="true">→</b></a>')   # was Banking: SBI PO & IBPS SO (8–15 Nov 2026), UPSC Prelims 2026 & 2025 · Anthropology (to 8 Nov 2026)   # start-page announcement pill; change with each big release
 
 
 BOARD_ART = {   # line drawings for the board tiles (own artwork; no photos, no maps, no emblems)
