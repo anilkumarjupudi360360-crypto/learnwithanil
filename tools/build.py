@@ -5052,7 +5052,7 @@ PASS_UNTIL = {'ts-police-si': ('2026-11-30', 'TS Police SI Prelims on 29 Novembe
               'appsc-group-1': ('2027-01-25', 'APPSC Group 1 screening test on 24 January 2027')}
 # mock-test packs on sale (Anil sets the price per exam)
 MOCK_PACKS = {
-  'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, live=4, qn=200, free1=True,   # live = mocks released so far (Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026; rest: coming soon); free1: Mock 1 free for registered students (Anil, 28 Oct 2026; FREE_MOCKS in the payments script)
+  'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, live=5, qn=200, free1=True,   # live = mocks released so far (Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026; rest: coming soon); free1: Mock 1 free for registered students (Anil, 28 Oct 2026; FREE_MOCKS in the payments script)
                        title='Mission Khaki – TS Police SI Prelims 2026 Test Series',
                        summary='10 full-length TS SI Prelims mock tests, 200 questions each (Arithmetic & Reasoning 100, General Studies 100), '
                                'in English and Telugu, with an explanation for every answer. Each mock\'s sections can also be taken on their own as sectional tests.',
@@ -5082,7 +5082,7 @@ MOCK_PACKS = {
                          '(history, Telangana, science, geography, polity, economy, society and current affairs), 3 hours.',
                          'Every other question is in English and Telugu, with an explanation in both. Your score, accuracy and topic-wise analysis come after each mock.',
                          'Mock 1 is free: register once and take it. Writing the SI exam too? Mission Khaki (SI) is included in the same ₹45 All-in-One Pass.'],
-                  mocks=[dict(id=f'mk-pc-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i <= 4), free=(i == 1),   # Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026 (Anil)
+                  mocks=[dict(id=f'mk-pc-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i <= 5), free=(i == 1),   # Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026 (Anil)
                               parts=[('eng', 'English', ['eng']), ('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning', ['rea']),
                                      ('gs', 'General Studies', ['ih', 'tg', 'soc', 'sci', 'eco', 'geo', 'pol', 'cur'])]) for i in range(1, 11)]),
   # Anil, 8 Nov 2026: EO Grade-III test series from the site's own previous questions (tools/eo_mocks.py), full-length and sectional.
@@ -5121,7 +5121,7 @@ MOCK_PACKS = {
                           'November 2026), each checked against official and newspaper sources.',
                           'Every question is in English and Telugu, with an explanation in both. Your score, accuracy and topic-wise analysis '
                           'come after each mock. Mock 1 is free: register once and take it.'],
-                   mocks=[dict(id=f'bk-g2mk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 3), free=(i == 1),   # Mocks 1-3 on 8 Nov 2026
+                   mocks=[dict(id=f'bk-g2mk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 4), free=(i == 1),   # Mocks 1-3 on 8 Nov 2026, Mock 4 on 15 Nov 2026
                                parts=[('ih', 'Indian History', ['ih']), ('geo', 'Geography', ['geo']), ('soc', 'Indian Society', ['soc']),
                                       ('cur', 'Current Affairs', ['cur']), ('men', 'Mental Ability', ['men'])]) for i in range(1, 11)]),
   # Anil, 8 Nov 2026: SBI PO and IBPS SO — original Learn with Anil mocks (no previous papers exist to publish; see BANK_SUBJECTS).
