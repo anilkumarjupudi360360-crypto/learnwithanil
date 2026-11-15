@@ -751,6 +751,56 @@ NEW['rrb-group-d-result-2026.html'] = dict(
       ('Is there negative marking in RRB Group D?', 'Yes. One-third of a mark is cut for each wrong answer. Each question carries 1 mark.'),
       ('When will the next RRB Group D notification come?', 'Not announced as of 15 November 2026. The last two notices were CEN 08/2024 (32,438 posts) and CEN 09/2025 (22,195 posts).'),
     ])
+# ---------------------------------------------------------------- SSC GD Constable (Anil, 15 Nov 2026: "SSC GD Constable...add pyqs and other details like
+# other exams"). Facts as of 15 November 2026; result and PET/PST facts from news and coaching sites that quote SSC's notices (SSC's own site blocks fetches).
+NEW['ssc-gd-constable-2027-notification.html'] = dict(
+    exam='ssc-gd', board='SSC', site='ssc.gov.in', crumb='SSC GD 2027 Notification', faq_asof='15 November 2026',
+    title='SSC GD Constable 2027 Notification: Expected Date, Exam Jan–Mar 2027, GD 2026 Result & PET/PST, Pattern & Previous Papers | Learn with Anil',
+    desc='SSC GD Constable 2027: the notification listed in SSC\'s calendar for 30 September 2026 is not out yet (15 November 2026); exam tentatively January–March 2027. '
+         'GD 2026 result (12 October 2026, 1,97,408 shortlisted), PET/PST, pattern, eligibility, salary and SSC GD previous year papers with answers.',
+    h1='SSC GD Constable 2027 notification: when it comes, and where GD 2026 stands',
+    lede='SSC\'s exam calendar listed the Constable (GD) 2027 notification for 30 September 2026, with the computer-based exam in January–March 2027. '
+         'As of 15 November 2026 it has not been issued. The 2026 recruitment (25,487 posts) is at the physical-test stage: the CBE result came on 12 October 2026. '
+         'Below: the status of both, the exam pattern, who can apply and the SSC GD previous papers to practise.',
+    hi='एसएससी जीडी कांस्टेबल 2027: नोटिफिकेशन (कैलेंडर में 30 सितंबर 2026) अभी जारी नहीं हुआ है; परीक्षा जनवरी–मार्च 2027 (संभावित)। जीडी 2026 का परिणाम 12 अक्टूबर 2026 को आया।',
+    pdf='https://ssc.gov.in/', pdfname='Staff Selection Commission notices, ssc.gov.in (exam calendar 2026-27; Constable (GD) 2026 notice of 1 December 2025 and result notice of 12 October 2026)',
+    more_src=[('https://www.indiajobalerts.com/?p=12521', 'India Job Alerts, quoting SSC\'s result notice of 12 October 2026'),
+              ('https://www.careerpower.in/blog/ssc-gd-constable-result-and-cut-off-2026-out', 'Career Power, GD 2026 result numbers'),
+              ('https://news.kollegeapply.com/news/ssc-gd-physical-exam-date-2026', 'KollegeApply, 11 November 2026: PET/PST from 26 November (tentative)'),
+              ('https://www.pw.live/ssc/exams/ssc-gd-2027-form-kab-aayega', 'Physics Wallah: GD 2027 notification delayed beyond 30 September')],
+    sections=[
+      ('SSC GD 2027: where it stands', 'table', [
+        ('Notification', 'Listed in SSC\'s calendar for 30 September 2026; not issued as of 15 November 2026'),
+        ('Computer-based exam', 'January–March 2027 (tentative, as per the calendar)'),
+        ('Vacancies', 'Will come with the notification (2026 had 25,487)'), ('Official website', 'ssc.gov.in')]),
+      ('SSC GD 2026: where it stands', 'table', [
+        ('Notification', '1 December 2025; applications 1–31 December 2025'), ('Vacancies', '25,487'),
+        ('Computer-based exam', '27 April to 30 May 2026 (over)'),
+        ('CBE result', '12 October 2026: 1,97,408 of 21,56,776 who appeared shortlisted for PET/PST (1,81,251 men, 15,782 women, 375 more men for the SSF); re-issued with category corrections on 23 October'),
+        ('Final answer key and marks', 'Out in November 2026 on ssc.gov.in; reports say they can be downloaded till 17 November'),
+        ('PET / PST', 'Conducted by the CAPFs with the CRPF as the nodal force; reported from 26 November to about 11 December 2026 (tentative). Call letters on rect.crpf.gov.in')]),
+      ('Exam pattern (computer-based exam)', 'table+', (['Part', 'Subject', 'Questions · marks'], [
+        ('A', 'General Intelligence & Reasoning', '20 · 40'), ('B', 'General Knowledge & General Awareness', '20 · 40'),
+        ('C', 'Elementary Mathematics', '20 · 40'), ('D', 'English or Hindi', '20 · 40'), ('Total', '60 minutes', '80 · 160')])),
+      ('', 'note', '0.25 mark is cut for each wrong answer. The paper is set in English, Hindi and 13 regional languages (Telugu included). Those who qualify go on to the '
+                   'Physical Efficiency Test and Physical Standard Test, then a detailed medical examination and document verification.'),
+      ('Who can apply (as in the 2026 notification)', 'list', [
+        'Class 10 (matriculation) pass from a recognised board.',
+        'Age 18 to 23 years on the cut-off date (1 January 2026 for GD 2026); 3 years more for OBC and 5 for SC and ST.',
+        'Posts: Constable (GD) in the BSF, CISF, CRPF, ITBP, SSB and SSF, Rifleman (GD) in the Assam Rifles, Sepoy in the NCB. Pay Level 3: ₹21,700 – ₹69,100.',
+        'Fee ₹100; women, SC, ST and ex-servicemen pay nothing.']),
+    ],
+    faqs=[
+      ('Is the SSC GD 2027 notification out?', 'Not as of 15 November 2026. SSC\'s calendar listed it for 30 September 2026; coaching sites now expect it later in 2026.'),
+      ('When is the SSC GD 2027 exam?', 'Tentatively January to March 2027, as per SSC\'s calendar. The exact dates will come after the notification.'),
+      ('Is the SSC GD 2026 result out?', 'Yes. SSC declared the computer-based exam result on 12 October 2026, shortlisting 1,97,408 candidates for the PET/PST.'),
+      ('When is the SSC GD 2026 PET/PST?', 'News reports give 26 November to about 11 December 2026 (tentative). The CRPF issues the call letters on rect.crpf.gov.in; go by the date on yours.'),
+      ('Is there negative marking in SSC GD?', 'Yes. 0.25 mark is cut for each wrong answer; a right answer earns 2 marks.'),
+      ('What is the SSC GD age limit?', '18 to 23 years on the cut-off date, with 3 more years for OBC and 5 for SC and ST.'),
+      ('What is the SSC GD Constable salary?', 'Pay Level 3: ₹21,700 – ₹69,100 a month in basic pay, plus allowances.'),
+      ('Where can I practise SSC GD previous papers?', 'On Learn with Anil: SSC GD Constable 2025 shift papers with SSC\'s answers and explanations, as 60-minute timed tests or subject-wise practice.'),
+    ])
+ASOF_PAGE['ssc-gd-constable-2027-notification.html'] = '15 November 2026'
 
 
 def apply(NOTIFS):

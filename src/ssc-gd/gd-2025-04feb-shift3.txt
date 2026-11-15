@@ -1,0 +1,776 @@
+# SSC Constable (GD) in CAPFs, SSF, Rifleman (GD) in Assam Rifles and Sepoy in NCB Examination 2025, held 4 February 2025, Shift 3 (3:00 PM). 80 questions, 160 marks, 60 minutes (Part D: English).
+# Source: SSC's question paper as candidates print it from SSC's portal (the response sheet); answers are the options SSC marked correct on it (answer-key stage). Q30 and Q60 are printed in Hindi on this sheet; their English is Learn with Anil's translation. Explanations by Learn with Anil.
+
+Q 1 | rea | Series
+What should come in place of the question mark (?) in the given series?
+10 11 13 17 25 ?
+(1) 40
+(2) 43
+(3) 41
+(4) 42
+= 3
+~ The differences are 1, 2, 4, 8: they double each time. The next difference is 16, so the next number is 25 + 16 = 41.
+
+Q 2 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group?
+(Note: The odd man out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) QZK
+(2) NYJ
+(3) CNY
+(4) TEP
+= 1
+~ In NYJ, CNY and TEP each letter is 11 places after the one before (counting round after Z): N + 11 = Y, Y + 11 = J; C + 11 = N, N + 11 = Y; T + 11 = E, E + 11 = P. In QZK the first step is only +9 (Q to Z), so QZK is the odd one out.
+
+Q 3 | rea | Non-verbal Reasoning
+A dice has its faces marked by letters K, A, S, N, T and I. Two positions of the same dice are shown in the given figures. Which face is opposite to face K?
+(1) A
+(2) N
+(3) S
+(4) T
+= 1
+! img/g25d04s3-q3.png
+~ A is on top in both views. Its neighbours are N and S in one view and T and I in the other, so N, S, T and I are all adjacent to A. The sixth face, K, must be opposite A, so the face opposite K is A.
+
+Q 4 | rea | Series
+What should come in place of '?' in the given series based on the English alphabetical order?
+TKF UJG VIH WHI ?
+(1) XGJ
+(2) XLJ
+(3) ZJM
+(4) JGX
+= 1
+~ Read the letters position by position. First: T, U, V, W (+1), so X. Second: K, J, I, H (−1), so G. Third: F, G, H, I (+1), so J. The next term is XGJ.
+
+Q 5 | rea | Non-verbal Reasoning
+Identify the figure given in the options which when put in place of the question mark (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/g25d04s3-q5.png
+~ From one figure to the next the curved arrow becomes shorter and its arrowheads turn to point the opposite way. In figure 4 the short arc on the right points upward, so the next figure is a shorter arc whose arrowheads point downward, as in option 1. Option 4 keeps the upward direction, and options 2 and 3 are longer, with three arrowheads.
+
+Q 6 | rea | Non-verbal Reasoning
+Select the option in which the given figure is embedded (rotation is NOT allowed).
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/g25d04s3-q6.png
+~ Trace the given outline: the flat top, its two upright sides and the small step at each side of the base. All these lines, in the same size and the same position without turning the figure, can be found only in option 4. The other options are built from lines that cannot make this outline.
+
+Q 7 | rea | Analogy & Classification
+Select the Venn diagram that best illustrate the relationship between the following classes.
+Shirt, Cotton, Denim
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+! img/g25d04s3-q7.png
+~ Some shirts are made of cotton and some of denim, so the Shirt circle overlaps both. SSC's key treats cotton and denim as two separate fabrics, giving three circles in a chain with Shirt in the middle (option 3). (Denim is usually woven from cotton, so an overlap could be argued.) (SSC key; some sources differ.)
+
+Q 8 | rea | Arrangement & Puzzles
+Seven people, G, H, I, J, K, L and M, are sitting in a row, facing north(but not necessarily in the same order) . No one sits to the right of M. Only three people sit between M and K.
+Only two people sit between K and H. G sits third to the left of L. J sits to the immediate right of L.
+How many people sit between I and H?
+(1) Three
+(2) Four
+(3) Two
+(4) One
+= 1
+~ Number the seats 1 to 7 from the left. No one is to the right of M, so M is in seat 7; three people between M and K puts K in seat 3; two people between K and H puts H in seat 6. L and J sit together with G third to the left of L: L in 4, J in 5, G in 1. I takes seat 2: G I K L J H M. Between I and H sit K, L and J: three people.
+
+Q 9 | rea | Series
+Select the option that represents the letters that, when sequentially placed from left to right in the blanks below, will complete the letter series.
+p _ _ u o p q t _ _ _ q _ u o p q _ u _
+(1) qtuoptto
+(2) tquoptto
+(3) tqouptot
+(4) qtouptto
+= 1
+~ Filling the blanks with q, t, u, o, p, t, t, o gives p q t u o | p q t u o | p q t u o | p q t u o: the block 'pqtuo' repeats four times.
+
+Q 10 | rea | Miscellaneous Reasoning
+The position(s) of how many letters will remain unchanged if each of the letters in the word VARIABLE is arranged in the reverse English alphabetical order?
+(1) Four
+(2) One
+(3) Three
+(4) Two
+= 3
+~ VARIABLE in reverse alphabetical order is V R L I E B A A. Compare with V A R I A B L E place by place: V/V, A/R, R/L, I/I, A/E, B/B, L/A, E/A. V, I and B stay in place: three letters.
+
+Q 11 | rea | Blood Relations & Directions
+In a certain code language,
+'A + B' means 'A is the mother of B',
+'A - B' means 'A is the daughter of B',
+'A x B' means 'A is the son of B' and
+'A ÷ B' means 'A is the brother of B'.
+How is F related to C if 'C - D ÷ E x F + G'?
+(1) Father’s brother
+(2) Father’s mother
+(3) Daughter’s son
+(4) Mother’s father
+= 2
+~ C − D: C is D's daughter. D ÷ E: D is E's brother. E × F: E is F's son. F + G: F is G's mother. D and E are brothers and F is E's mother, so F is D's mother too. D is C's father, so F is C's father's mother.
+
+Q 12 | rea | Coding-Decoding
+In a certain code language, 'TDZM' is coded as '8-24-2-15' and 'KRIY' is coded as '17-10- 19-3'. What is the code for 'HAWP' in the given code language?
+(1) 22-9-7-13
+(2) 19-8-5-14
+(3) 20-27-5-12
+(4) 23-25-6-11
+= 3
+~ Each letter is coded as 28 minus its alphabet position (its reverse position plus 1): T (20) = 8, D (4) = 24, Z (26) = 2, M (13) = 15, and K = 17, R = 10, I = 19, Y = 3. For HAWP: H (8) = 20, A (1) = 27, W (23) = 5, P (16) = 12, so 20-27-5-12.
+
+Q 13 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusion(s) logically follow(s) from the statement(s).
+Statements:
+All anklets are socks.
+All socks are flats.
+Some flats are trousers.
+Conclusions:
+(I) All anklets are flats.
+(II) Some trousers are anklets.
+(1) Both conclusions (I) and (II) follow.
+(2) Neither conclusion (I) nor (II) follows.
+(3) Only conclusion (I) follows.
+(4) Only conclusion (II) follows.
+= 3
+~ All anklets are socks and all socks are flats, so all anklets are flats: conclusion I follows. Some flats are trousers, but those flats need not be anklets, so 'some trousers are anklets' is not certain. Only conclusion I follows.
+
+Q 14 | rea | Coding-Decoding
+In a certain code language, ‘BIGS’ is coded as ‘4593’ and ‘SING’ is coded as ‘9432’. What is the code for ‘N’ in the given code language?
+(1) 2
+(2) 4
+(3) 9
+(4) 3
+= 1
+~ BIGS = 4593 and SING = 9432 share the letters I, G and S and the digits 4, 9 and 3. So B is 5 (the extra digit in 4593) and N is 2 (the extra digit in 9432).
+
+Q 15 | rea | Series
+What should come in place of the question mark (?) in the given series?
+65 86 114 149 191 ?
+(1) 232
+(2) 240
+(3) 226
+(4) 216
+= 2
+~ The differences are 21, 28, 35, 42: multiples of 7 rising by 7. The next difference is 49, so the next number is 191 + 49 = 240.
+
+Q 16 | rea | Analogy & Classification
+MLTA is related to QHXW in a certain way based on the English alphabetical order. In the same way, LNVB is related to PJZX. To which of the given options is CWON related, following the same logic?
+(1) GASR
+(2) GSSJ
+(3) GSAR
+(4) GSJS
+= 2
+~ MLTA to QHXW: M+4 = Q, L−4 = H, T+4 = X, A−4 = W (counting round). LNVB to PJZX follows the same +4, −4, +4, −4. For CWON: C+4 = G, W−4 = S, O+4 = S, N−4 = J, so GSSJ.
+
+Q 17 | rea | Mathematical Operations
+What will come in the place of the question mark ‘(?)’ in the following equation, if ‘−’ and ‘÷’ are interchanged and ‘×’ and ‘+’ are interchanged?
+8 + 63 − 7 × 7 ÷ 9 = ?
+(1) 68
+(2) 69
+(3) 71
+(4) 70
+= 4
+~ After interchanging, 8 + 63 − 7 × 7 ÷ 9 becomes 8 × 63 ÷ 7 + 7 − 9. Work left to right for × and ÷: 8 × 63 = 504, 504 ÷ 7 = 72. Then 72 + 7 − 9 = 70.
+
+Q 18 | rea | Arrangement & Puzzles
+Six friends E, F, G, R, S and T are sitting around a circular table facing the centre (but not necessarily in the same order) . S sits second to the right of F. F sits second to the right of G. Only F sits between R and E. E is an immediate neighbour of S. How many people sit between T and R when counted from the right of R?
+(1) Three
+(2) Two
+(3) One
+(4) Four
+= 1
+~ Facing the centre, 'right' is anticlockwise. Put G at a seat; F is second to G's right, and S second to F's right. R and E are the two neighbours of F, and E also sits next to S, which fixes E between F and S and R on F's other side. T takes the last seat, between S and G. Counting from R towards R's right: F, E, S and then T, so three people (F, E and S) sit between R and T.
+
+Q 19 | rea | Non-verbal Reasoning
+A paper is folded and punched as shown below. How will it appear when
+unfolded?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+! img/g25d04s3-q19.png
+~ The paper is folded twice, top half down and then right half over left, and the design is punched in one corner of the folded quarter. On opening, the design appears in all four quarters, each copy a mirror image of its neighbour across the fold lines. Only option 3 shows the four copies reflected in this way; option 1 repeats the design without reflecting it, and options 2 and 4 reflect it only partly.
+
+Q 20 | rea | Analogy & Classification
+NRDF is related to PMFA in a certain way based on the English
+alphabetical order. In the same way, SFJW is related to UALR. To which
+of the given options is GVKQ related, following the same logic?
+(1) RGLB
+(2) PGKY
+(3) KRCX
+(4) IQML
+= 4
+~ NRDF to PMFA: N+2 = P, R−5 = M, D+2 = F, F−5 = A. SFJW to UALR follows the same +2, −5, +2, −5. For GVKQ: G+2 = I, V−5 = Q, K+2 = M, Q−5 = L, so IQML.
+
+Q 21 | eco | Agriculture, Industry & Trade
+Which of the following is a major factor that has facilitated globalisation?
+(1) Decline in multinational corporations
+(2) Increased tariffs and trade barriers
+(3) Rapid improvements in technology
+(4) Isolationist policies
+= 3
+~ Globalisation, the rapid linking of countries through trade, investment and information, has been driven mainly by improvements in technology (transport, telecommunication and the internet) and by liberalised trade policies. Higher tariffs, isolationist policies and fewer multinational companies would slow it down.
+
+Q 22 | cur | National
+Who is the Chief Minister of Tamil Nadu as of September 2024?
+(1) Nayab Singh Saini
+(2) Hemant Soren
+(3) Bhupendra Patel
+(4) MK Stalin
+= 4
+~ M.K. Stalin of the DMK has been Chief Minister of Tamil Nadu since May 2021. Nayab Singh Saini is Chief Minister of Haryana, Hemant Soren of Jharkhand and Bhupendra Patel of Gujarat.
+
+Q 23 | ih | Modern India
+Who was the first President of the All India Muslim League, founded in 1906?
+(1) Aga Khan III
+(2) Muhammad Ali Jinnah
+(3) Sir Sultan Muhammad Shah
+(4) Nawab Salimullah Khan
+= 1
+~ The All-India Muslim League was founded at Dhaka in December 1906, and Aga Khan III was its first (honorary) president. Note that Sir Sultan Muhammad Shah (option 3) is Aga Khan III's own name, so both options name the same person; Nawab Salimullah Khan hosted the founding session. (SSC key; options 1 and 3 name the same person.)
+
+Q 24 | cur | Awards, Books & Persons
+Who was conferred a gold medal in 1968 by the Mexican government for her
+choreography?
+(1) Rukmini Arundale
+(2) Rekha
+(3) Mrinalini Sarabhai
+(4) Shovana Narayan
+= 3
+~ Mrinalini Sarabhai, the Bharatanatyam and Kathakali dancer who founded the Darpana Academy in Ahmedabad, was given a gold medal by the Mexican government in 1968 for her choreography.
+
+Q 25 | sci | Biology
+Name the virus spread by mosquitoes that causes inflammation in the brain?
+(1) Japanese encephalitis
+(2) Francisella tularensis
+(3) Yellow fever virus
+(4) Lymphatic filariasis
+= 1
+~ Japanese encephalitis is caused by a virus spread by Culex mosquitoes, and it causes inflammation of the brain. Francisella tularensis is a bacterium (tularaemia), yellow fever mainly attacks the liver, and lymphatic filariasis is caused by a worm.
+
+Q 26 | geo | Indian Geography
+As per Census 2011, which of the following streams of migration has the highest percentage?
+(1) Rural to rural
+(2) Urban to urban
+(3) Rural to urban
+(4) Urban to rural
+= 1
+~ Census 2011 data on migration by last residence show rural-to-rural movement as the largest stream, made up mostly of women who move after marriage. Rural-to-urban migration comes next.
+
+Q 27 | sci | Physics
+For a book of mass m, moving a distance d on a smooth horizontal table, the work done due gravitational force is:
+(1) 0
+(2) md
+(3) mgd
+(4) m d cos θ
+= 1
+~ Work = force × displacement × cos θ, where θ is the angle between them. Gravity acts vertically downwards while the book moves horizontally, so θ = 90° and cos 90° = 0: gravity does no work.
+
+Q 28 | cur | National
+Who among the following was appointed as the Minister of Tribal Affairs in June 2024?
+(1) Pralhad Joshi
+(2) Ashwini Vaishnaw
+(3) Bhupender Yadav
+(4) Jual Oram
+= 4
+~ Jual Oram became Union Minister of Tribal Affairs in the third Modi government sworn in in June 2024; he had held the same ministry in 2014–19. Pralhad Joshi got Consumer Affairs and New & Renewable Energy, Ashwini Vaishnaw Railways and Bhupender Yadav Environment.
+
+Q 29 | cur | Static GK & Culture
+Ali-Aye-Ligang, the spring festival, is observed on the first Wednesday of the Phagun month in the Indian state of _________.
+(1) Himachal Pradesh
+(2) Kerala
+(3) Assam
+(4) Goa
+= 3
+~ Ali-Aye-Ligang is the spring and sowing festival of the Mising tribe of Assam, held on the first Wednesday of the month of Phagun (February–March). 'Ali' means root seed, 'Aye' fruit and 'Ligang' sowing.
+
+Q 30 | pol | Government & Parliament
+Which of the following does NOT come under the powers of the Governor of a state in India?
+(1) Executive power
+(2) Discretionary power
+(3) Obligatory power
+(4) Legislative power
+= 3
+~ The Governor has executive powers (appointing the Chief Minister and ministers), legislative powers (summoning the assembly, assenting to bills, issuing ordinances), financial and judicial powers, and some discretionary powers. 'Obligatory power' is not a category of the Governor's powers. (SSC's sheet prints this question in Hindi; the English is Learn with Anil's translation.)
+
+Q 31 | cur | Static GK & Culture
+Which musical instrument is played by Yella Venkateswara Rao, an Indian classical musician and percussionist?
+(1) Nadaswaran
+(2) Ghatam
+(3) Pakhawaj
+(4) Mridangam
+= 4
+~ Yella Venkateswara Rao from Andhra Pradesh is a Carnatic percussionist who plays the mridangam, the main drum of Carnatic music; he received the Padma Shri. The nadaswaram is a wind instrument, the ghatam a clay pot and the pakhawaj a Hindustani drum.
+
+Q 32 | cur | International
+Dhivehi is the official language of which neighbouring country of India?
+(1) Bhutan
+(2) Sri Lanka
+(3) Maldives
+(4) Myanmar
+= 3
+~ Dhivehi, written in the Thaana script, is the official language of the Maldives. Bhutan's official language is Dzongkha, Sri Lanka's are Sinhala and Tamil, and Myanmar's is Burmese.
+
+Q 33 | eco | Planning, Growth & Budget
+Which Five-Year Plan aimed to achieve self-reliance and aimed at 'growth with stability'?
+(1) Fourth Plan
+(2) Sixth Plan
+(3) Seventh Plan
+(4) Second Plan
+= 1
+~ The Fourth Five-Year Plan (1969–74), prepared under D.R. Gadgil, had two main aims: 'growth with stability' and 'progressive achievement of self-reliance'. The Garibi Hatao slogan came during this plan.
+
+Q 34 | pol | Constitution & Rights
+Under which amendment of the Constitution of India was Right to Property removed from the list of Fundamental Rights?
+(1) 44th Amendment
+(2) 42nd Amendment
+(3) 61st Amendment
+(4) 52nd Amendment
+= 1
+~ The 44th Amendment (1978) removed the Right to Property from the Fundamental Rights (Article 31 was repealed) and made it a legal right under Article 300A. The 42nd Amendment (1976) added Fundamental Duties and 'socialist, secular' to the Preamble.
+
+Q 35 | cur | Sports
+In the game of Basketball, each basket shall consist of a pressure-release NBA- approved metal safety ring ___________ in inside diameter with a white cord net 18” in length.
+(1) 19"
+(2) 17"
+(3) 18"
+(4) 20"
+= 3
+~ Under NBA rules each basket has an 18-inch inside-diameter metal ring (pressure-release type) with a white cord net 18 inches long, mounted 10 feet above the floor.
+
+Q 36 | eco | Agriculture, Industry & Trade
+Which among the following belongs to the tertiary sector of the Indian economy?
+(1) Forestry
+(2) Manufacturing
+(3) Electricity supply services
+(4) Public administration
+= 4
+~ The tertiary (service) sector includes public administration, defence, banking, trade, transport and communication. Forestry is primary, and manufacturing and electricity supply belong to the secondary sector.
+
+Q 37 | cur | Static GK & Culture
+'Natyashashtra', the earliest text dealing with performing arts (dances and music), was compiled by which sage?
+(1) Sakya
+(2) Bharata
+(3) Valmiki
+(4) Agastya
+= 2
+~ The Natyashastra, the oldest Indian treatise on drama, dance and music, is credited to Bharata Muni (about 200 BCE – 200 CE). It describes the rasa theory and gives Bharatanatyam its name.
+
+Q 38 | geo | World & Physical Geography
+Which of the following is the saltiest water body bordering Jordan in the east and Israel in the west?
+(1) World Ocean
+(2) Don Juan Pond
+(3) Dead Sea
+(4) Great Salt Lake
+= 3
+~ The Dead Sea lies between Jordan to the east and Israel and the West Bank to the west. Its water is about ten times saltier than the ocean, and its shore is the lowest land surface on Earth. Don Juan Pond in Antarctica is saltier but does not border these countries.
+
+Q 39 | ih | Ancient India
+Who was the most famous Shaka ruler known for his inscription at Girnar?
+(1) Rudradaman
+(2) Rudrabhuti
+(3) Menander
+(4) Demetrius
+= 1
+~ Rudradaman I, the Shaka (Western Kshatrapa) ruler, issued the Junagadh (Girnar) rock inscription of about 150 CE. It is the first long inscription in chaste Sanskrit and records the repair of the Sudarshana lake. Menander and Demetrius were Indo-Greek kings.
+
+Q 40 | cur | National
+Who among the following launched the nationwide programme of Fit India Freedom Run 2.0?
+(1) Amit Shah
+(2) Anurag Thakur
+(3) Narendra Modi
+(4) Draupadi Murmu
+= 2
+~ Fit India Freedom Run 2.0 was launched in August 2021 by Anurag Thakur, then Union Minister of Youth Affairs and Sports, as part of Azadi Ka Amrit Mahotsav.
+
+Q 41 | qa | Profit, Loss & Discount
+If the cost price of a camera is 75% of its selling price, then the profit per cent is:
+(1) 24%
+(2) 33 1/3%
+(3) 25%
+(4) 16 2/3%
+= 2
+~ Let the selling price be 100; the cost price is 75 and the profit 25. Profit % is counted on the cost price: 25/75 × 100 = 33 1/3%. (25% would be profit on the selling price.)
+
+Q 42 | qa | Mensuration
+If the radius of a sphere is tripled, what is the ratio of the volume of the original sphere to that of the new sphere?
+(1) 27 : 1
+(2) 1 : 27
+(3) 9 : 1
+(4) 1 : 9
+= 2
+~ The volume of a sphere is proportional to r³. If the radius becomes 3 times, the volume becomes 3³ = 27 times, so original : new = 1 : 27.
+
+Q 43 | qa | Profit, Loss & Discount
+400 apples were bought at ₹1200 per hundred and were sold at a profit of ₹800. Find the selling price (in ₹) per dozen of apples.
+(1) 168
+(2) 158
+(3) 178
+(4) 183
+= 1
+~ 400 apples at ₹1200 per hundred cost ₹4800. With ₹800 profit they sell for ₹5600, which is ₹14 per apple. A dozen sells for 12 × 14 = ₹168.
+
+Q 44 | qa | Simple & Compound Interest
+Mahesh has ₹1617 with him. He divided it amongst his sons Vijay and Ajay and asked them to invest it at 10% rate of interest compounded annually. It was seen that Vijay and Ajay got same amount after 13 and 14 years respectively. How much (in ₹) did Mahesh give to Vijay?
+(1) 770
+(2) 847
+(3) 870
+(4) 697
+= 2
+~ Vijay waits 13 years and Ajay 14, and both get equal amounts at 10% compound interest, so Vijay's share = 1.1 × Ajay's share. Then Ajay × 2.1 = 1617 gives Ajay ₹770 and Vijay ₹847.
+
+Q 45 | qa | HCF & LCM
+The LCM of 56, 30, 108 and 120 is:
+(1) 7560
+(2) 7549
+(3) 7471
+(4) 7660
+= 1
+~ 56 = 2³ × 7, 30 = 2 × 3 × 5, 108 = 2² × 3³, 120 = 2³ × 3 × 5. Take the highest powers: 2³ × 3³ × 5 × 7 = 8 × 27 × 35 = 7560.
+
+Q 46 | qa | Simple & Compound Interest
+The simple interest on a principal amount (in ₹) is ₹318 for a period of 2 years at the rate of 6% per annum. The principal amount (in ₹) is:
+(1) 2651
+(2) 2650
+(3) 2656
+(4) 2655
+= 2
+~ Simple interest = P × R × T ÷ 100, so P = 318 × 100 ÷ (6 × 2) = 31800 ÷ 12 = ₹2650.
+
+Q 47 | qa | Number System & Simplification
+Find the value of [(23 × 5) × {6 ÷ 6 × (18 − 14)/4}].
+(1) 115
+(2) 104
+(3) 106
+(4) 96
+= 1
+~ Innermost first: 18 − 14 = 4 and 4/4 = 1; 6 ÷ 6 = 1, and 1 × 1 = 1. Then 23 × 5 = 115, and 115 × 1 = 115.
+
+Q 48 | qa | Percentage
+The price of fuel decreases by 40%, 10% and 50% in three successive months, but increases by 50% in the fourth month. What is the percentage increase/decrease in the price of fuel in the fourth month as compared to its original price?
+(1) Decreases by 61.17%
+(2) Increases by 56.29%
+(3) Increases by 57.3%
+(4) Decreases by 59.5%
+= 4
+~ Multiply the factors: 0.60 × 0.90 × 0.50 × 1.50 = 0.405. The price is now 40.5% of the original, a decrease of 59.5%.
+
+Q 49 | qa | Time, Speed & Distance
+A gun is fired at a distance of 1.35 km from Mukul. She hears the sound after three seconds. The speed (in m/s) at which sound travels is:
+(1) 525
+(2) 450
+(3) 675
+(4) 500
+= 2
+~ Speed = distance ÷ time = 1350 m ÷ 3 s = 450 m/s. (The flash of the gun reaches her almost at once, so the 3 seconds are the time the sound takes.)
+
+Q 50 | qa | HCF & LCM
+Find the HCF of 153, 117 and 405.
+(1) 12
+(2) 6
+(3) 2
+(4) 9
+= 4
+~ 153 = 3² × 17, 117 = 3² × 13 and 405 = 3⁴ × 5. The only common factor is 3² = 9, so the HCF is 9.
+
+Q 51 | qa | Time & Work
+Ritu and Mona can finish painting a house together in 18 days. Ritu alone would take 27 days to finish the painting. How long will it take Mona to finish the painting on her own?
+(1) 44 days
+(2) 65 days
+(3) 60 days
+(4) 54 days
+= 4
+~ Together they do 1/18 of the work a day and Ritu alone 1/27. Mona's share = 1/18 − 1/27 = (3 − 2)/54 = 1/54, so Mona alone takes 54 days.
+
+Q 52 | qa | Ratio & Proportion
+The ratio between two numbers is 19 : 24. If each number is reduced by 36, the ratio becomes 3 : 4. Find the sum of the numbers.
+(1) 238
+(2) 305
+(3) 295
+(4) 387
+= 4
+~ Let the numbers be 19k and 24k. (19k − 36) : (24k − 36) = 3 : 4 gives 76k − 144 = 72k − 108, so 4k = 36 and k = 9. The numbers are 171 and 216, and their sum is 387.
+
+Q 53 | qa | Average
+The average score of 7 players was initially recorded as 55. However, it was later discovered that a score of 35 had been mistakenly read as 53. Determine the correct average score.(Rounded up to two decimal places)
+(1) 32.43
+(2) 52.43
+(3) 54.31
+(4) 42.08
+= 2
+~ The recorded total is 7 × 55 = 385. Correcting the misread score: 385 − 53 + 35 = 367. The correct average is 367 ÷ 7 = 52.43.
+
+Q 54 | qa | Simple & Compound Interest
+Vijay has ₹1224 with him. He divided it amongst his sons Ajay and Prakash and asked them to invest it at 4% rate of interest compounded annually. It was seen that Ajay and Prakash got same amount after 18 and 19 years respectively. How much (in ₹) did Vijay give to Prakash?
+(1) 450
+(2) 724
+(3) 600
+(4) 624
+= 3
+~ Ajay waits 18 years and Prakash 19, and both get equal amounts at 4% compound interest, so Ajay's share = 1.04 × Prakash's share. Then Prakash × 2.04 = 1224 gives Prakash ₹600 and Ajay ₹624.
+
+Q 55 | qa | Average
+The average age of 54 students of a class is 37 years. If the age of the teacher is also included, the average age of the whole group becomes 38 years. The age (in years) of the teacher is:
+(1) 90
+(2) 92
+(3) 95
+(4) 97
+= 2
+~ The teacher raises the average of 55 people by 1 year over the students' average of 37, so the teacher's age = 37 + 55 × 1 = 92 years. Check: 55 × 38 − 54 × 37 = 2090 − 1998 = 92.
+
+Q 56 | qa | HCF & LCM
+LCM and HCF of two numbers are 66 and 11 respectively. If one of the numbers is 33, then find the other number.
+(1) 20
+(2) 19
+(3) 22
+(4) 25
+= 3
+~ Product of two numbers = LCM × HCF = 66 × 11 = 726. The other number = 726 ÷ 33 = 22. Check: HCF(33, 22) = 11 and LCM = 66.
+
+Q 57 | qa | Percentage
+If 4% of x = 72, then x is equal to:
+(1) 3600
+(2) 3700
+(3) 1900
+(4) 1800
+= 4
+~ 4% of x = 72 means x = 72 × 100 ÷ 4 = 1800.
+
+Q 58 | qa | Profit, Loss & Discount
+If the marked price of an article is ₹7,895 and the discount offered is 4.2%, then the selling price (in ₹) is:
+(1) 7,563.41
+(2) 7,364.51
+(3) 7,635.41
+(4) 7,456.31
+= 1
+~ Selling price = 7895 × (1 − 0.042) = 7895 × 0.958 = ₹7,563.41. (The discount is 7895 × 0.042 = ₹331.59.)
+
+Q 59 | qa | Ratio & Proportion
+The amount of money earned on a job is directly proportional to the number of hours worked. If ₹324 is earned in 6 hours, then how much money (in ₹) will be earned in 29 hours of work?
+(1) ₹1,566
+(2) ₹1,655
+(3) ₹1,585
+(4) ₹1,676
+= 1
+~ Earning is proportional to hours: ₹324 for 6 hours is ₹54 an hour, so 29 hours earn 29 × 54 = ₹1,566.
+
+Q 60 | qa | Time, Speed & Distance
+The speed of a stream is 9 km/h. A boat can cover 56 km downstream and 28 km upstream in 7 hours. Find the speed (in km/h) of the boat in still water.
+(1) 16
+(2) 15
+(3) 9
+(4) 20
+= 2
+~ If the boat's speed is b, downstream speed is b + 9 and upstream speed b − 9. We need 56/(b + 9) + 28/(b − 9) = 7. Try b = 15: 56/24 + 28/6 = 2 1/3 + 4 2/3 = 7 hours. So b = 15 km/h. (SSC's sheet prints this question in Hindi; the English is Learn with Anil's translation.)
+
+Q 61 | eng | Fill in the Blanks
+Select the most appropriate option to fill in the blank.
+She is the one _____ won the award.
+(1) which
+(2) whom
+(3) whose
+(4) who
+= 4
+~ 'Who' is the relative pronoun for a person acting as the subject of the clause ('who won the award'). 'Which' is for things, 'whom' is an object form and 'whose' shows possession.
+
+Q 62 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Esoteric
+(1) Common
+(2) Arcane
+(3) Cryptic
+(4) Abstruse
+= 1
+~ 'Esoteric' means understood by only a small group with special knowledge. Its opposite is 'common'. 'Arcane', 'cryptic' and 'abstruse' are near-synonyms of esoteric.
+
+Q 63 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the underlined segment in the given sentence.
+She always do her work in time.
+(1) always will done
+(2) always done
+(3) always does
+(4) always doing
+= 3
+~ With the singular subject 'She' in the simple present, the verb is 'does': 'She always does her work in time.' 'Always done', 'always doing' and 'always will done' are incorrect verb forms.
+
+Q 64 | eng | Vocabulary
+Select the word that best completes the given sentence. Determine the collocation through the sentence.
+Varun, the chef, ______________ up a delicious meal in just 30 minutes.
+(1) hit
+(2) kept
+(3) held
+(4) whipped
+= 4
+~ To 'whip up' a meal means to prepare it quickly and easily, which fits 'in just 30 minutes'. 'Hit up', 'kept up' and 'held up' have other meanings.
+
+Q 65 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Strange
+(1) Safe
+(2) Mild
+(3) Odd
+(4) Stable
+= 3
+~ 'Strange' means unusual or surprising, so its synonym is 'odd'. 'Safe', 'mild' and 'stable' are unrelated.
+
+Q 66 | eng | Vocabulary
+Select the most appropriate synonym of the underlined word.
+The vintage bag was made of coarse black leather.
+(1) Secure
+(2) Rough
+(3) Brief
+(4) Honest
+= 2
+~ 'Coarse' leather is rough in texture, not smooth or fine. 'Rough' is the synonym; 'secure', 'brief' and 'honest' do not fit.
+
+Q 67 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Abate
+(1) Consume
+(2) Reduce
+(3) Supply
+(4) Intensify
+= 4
+~ To 'abate' is to become less intense (the storm abated). The antonym is 'intensify'. 'Reduce' is a synonym, and 'consume' and 'supply' are unrelated.
+
+Q 68 | eng | Fill in the Blanks
+Select the most appropriate option to fill in the blank.
+The project manager’s _______________ approach ensured that every
+aspect of the project was meticulously planned and executed.
+(1) negligent
+(2) erratic
+(3) lax
+(4) methodical
+= 4
+~ An approach that makes sure every part is 'meticulously planned and executed' is 'methodical', orderly and systematic. 'Negligent', 'erratic' and 'lax' describe careless or irregular work, the opposite of what the sentence says.
+
+Q 69 | eng | Vocabulary
+Select the most appropriate ANTONYM of the underlined word in the following sentence to fill in the blank.
+The police thought that the theft was deliberate, but it was _________.
+(1) planned
+(2) unintentional
+(3) expected
+(4) prepared
+= 2
+~ The opposite of 'deliberate' (done on purpose) is 'unintentional' (not meant). 'Planned' and 'prepared' are synonyms of deliberate, and 'expected' does not give the contrast.
+
+Q 70 | eng | Idioms & One-word Substitution
+Select the most appropriate meaning of the given idiom.
+Bide one’s time
+(1) To wait patiently for an opportunity
+(2) To join a popular trend or activity
+(3) To face a difficult situation with courage and determination
+(4) To accidentally reveal a secret
+= 1
+~ To 'bide one's time' is to wait patiently for the right moment or opportunity before acting. The other options describe following a trend, facing difficulty bravely and letting out a secret.
+
+Q 71 | eng | Spelling
+Select the correct spelling of the underlined incorrectly spelt word in the given sentence.
+The next generation has become well-travelled, tech-savyy and hardworking.
+(1) tec-savvy
+(2) tech-savvy
+(3) tech-savee
+(4) tech-saivy
+= 2
+~ The correct form is 'tech-savvy', with 'savvy' spelt with double v and a final y. It means skilled at using modern technology.
+
+Q 72 | eng | Spelling
+Select the INCORRECTLY spelt word in the given sentence.
+The atmosphere at the consert was electric.
+(1) was
+(2) electric
+(3) consert
+(4) atmosphere
+= 3
+~ 'Consert' should be 'concert'. 'Atmosphere', 'was' and 'electric' are spelt correctly.
+
+Q 73 | eng | Error Spotting & Sentence Improvement
+Identify the sentence with the INCORRECT usage of an adverb.
+(1) We are hardly ever late for work.
+(2) Chandni is late often for work.
+(3) They are usually late for work.
+(4) Mahesh and Mukesh are always late for work.
+= 2
+~ Adverbs of frequency usually come after the verb 'be' and before the complement: 'Chandni is often late for work', not 'is late often for work'. The other sentences place 'hardly ever', 'usually' and 'always' correctly.
+
+Q 74 | eng | Fill in the Blanks
+Select the most appropriate option to fill in the blank.
+She decided to go on a/an ____________________ vacation.
+(1) tropic
+(2) expandable
+(3) recreational
+(4) notorious
+= 3
+~ A 'recreational' vacation is one taken for enjoyment and relaxation, which fits naturally. 'Tropic' is a noun (the adjective would be 'tropical'), 'expandable' means able to be enlarged, and 'notorious' means famous for something bad.
+
+Q 75 | eng | Error Spotting & Sentence Improvement
+Select the sentence with an error in the adverb used.
+(1) They performed the task surprisingly well despite the challenges.
+(2) She had scarcely begun her speech when the microphone failed.
+(3) He spoke softly enough to avoid waking the baby.
+(4) The solution was applied so effective that it resolved the issue immediately.
+= 4
+~ In sentence 4 the adjective 'effective' is used where an adverb is needed to describe how the solution was applied: 'so effectively that it resolved the issue'. The adverbs in the other sentences ('surprisingly', 'scarcely', 'softly') are correct.
+
+Q 76 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Effective communication in the digital age (1)_____ proper etiquette. Responding (2)_____ to emails and messages is a sign of professionalism. However, being (3)_____ of the tone used is equally important. Misunderstandings can arise easily in written communication. Balancing (4)_____ and courtesy ensures meaningful interactions, (5)_____ positive relationships in both personal and professional spheres.
+Select the most appropriate option to fill in blank number 1.
+(1) is natural
+(2) require
+(3) is fitting
+(4) requires
+= 4
+~ The subject 'Effective communication' is singular, so the verb is 'requires': effective communication requires proper etiquette. 'Require' is plural, and 'is natural' and 'is fitting' cannot take 'proper etiquette' as an object.
+
+Q 77 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Effective communication in the digital age (1)_____ proper etiquette. Responding (2)_____ to emails and messages is a sign of professionalism. However, being (3)_____ of the tone used is equally important. Misunderstandings can arise easily in written communication. Balancing (4)_____ and courtesy ensures meaningful interactions, (5)_____ positive relationships in both personal and professional spheres.
+Select the most appropriate option to fill in blank number 2.
+(1) promptly
+(2) gradually
+(3) carelessly
+(4) hurry
+= 1
+~ Replying quickly shows professionalism, so the adverb is 'promptly'. 'Carelessly' is the opposite, 'gradually' does not fit, and 'hurry' is a verb or noun, not an adverb.
+
+Q 78 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Effective communication in the digital age (1)_____ proper etiquette. Responding (2)_____ to emails and messages is a sign of professionalism. However, being (3)_____ of the tone used is equally important. Misunderstandings can arise easily in written communication. Balancing (4)_____ and courtesy ensures meaningful interactions, (5)_____ positive relationships in both personal and professional spheres.
+Select the most appropriate option to fill in blank number 3.
+(1) watch
+(2) heedless
+(3) indiscreet
+(4) mindful
+= 4
+~ 'Being mindful of the tone' means paying careful attention to it, which avoids misunderstandings. 'Heedless' and 'indiscreet' mean careless, and 'watch' cannot follow 'being' with 'of'.
+
+Q 79 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Effective communication in the digital age (1)_____ proper etiquette. Responding (2)_____ to emails and messages is a sign of professionalism. However, being (3)_____ of the tone used is equally important. Misunderstandings can arise easily in written communication. Balancing (4)_____ and courtesy ensures meaningful interactions, (5)_____ positive relationships in both personal and professional spheres.
+Select the most appropriate option to fill in blank number 4.
+(1) brightness
+(2) sharpness
+(3) visibility
+(4) clarity
+= 4
+~ Clear writing prevents the misunderstandings mentioned just before, so 'balancing clarity and courtesy' fits. 'Brightness', 'sharpness' and 'visibility' describe light or sight, not communication.
+
+Q 80 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Effective communication in the digital age (1)_____ proper etiquette. Responding (2)_____ to emails and messages is a sign of professionalism. However, being (3)_____ of the tone used is equally important. Misunderstandings can arise easily in written communication. Balancing (4)_____ and courtesy ensures meaningful interactions, (5)_____ positive relationships in both personal and professional spheres.
+Select the most appropriate option to fill in blank number 5.
+(1) suppressing
+(2) fostering
+(3) impeding
+(4) combating
+= 2
+~ Meaningful interactions help positive relationships grow, so 'fostering' (encouraging) fits. 'Suppressing', 'impeding' and 'combating' would mean harming those relationships.

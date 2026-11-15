@@ -416,6 +416,52 @@ def ntpc_text():
                          f'{len(u1)} Undergraduate CBT-1 paper{"s" if len(u1) != 1 else ""}' if u1 else '') if x]
     what = (', '.join(parts[:-1]) + ' and ' + parts[-1]) if len(parts) > 1 else (parts[0] if parts else '')
     return dict(n=len(have), years=yr, what=what, g2=bool(g2), u1=bool(u1))
+# ---------- SSC GD Constable (Constable (GD) in CAPFs, SSF, Rifleman (GD) in Assam Rifles, Sepoy in NCB) ----------
+# Anil, 15 Nov 2026: "SSC GD Constable...add pyqs and other details like other exams"; chose 6 shift papers of the 2025 CBE
+# (4 and 5 February 2025, Shifts 1-3). Source: SSC's own question papers as candidates print them from SSC's portal (response
+# sheets; copies via PW's Drive and Prepp's CDN), answer = the option carrying SSC's green tick (answer-key stage). Each sheet
+# has Part D in English and in Hindi; the papers here use Part D English (80 questions, the paper an English-medium candidate
+# sat). The 2024 sheets print every question as a low-resolution picture, so 2024 was left for later. Work: /home/claude/gd.
+GD_BLURB = ('Part A General Intelligence & Reasoning, Part B General Knowledge & General Awareness, Part C Elementary Mathematics and '
+            'Part D English (or Hindi), 20 questions each: 80 questions, 160 marks, 60 minutes, 0.25 mark cut for a wrong answer.')
+def _gd(pid, day, shift, time_, file_):
+    return dict(id=pid, file=file_, year=2025, stage='Computer Based Examination', short=f'GD 2025 · {day} S{shift}',
+                title=f'SSC GD Constable 2025, {day} 2025, Shift {shift}', notif=f'Shift {shift} ({time_}) · SSC key', held=f'{day} 2025',
+                key="SSC's answer key as marked on the candidate's response sheet", fmt='mcq',
+                slug=f'ssc-gd-constable-2025-{day.lower().replace(" ", "-")}-shift-{shift}-question-paper-with-answers',
+                alt='CBE', kwname=f'SSC GD Constable 2025 ({day} Shift {shift})', hi_paper=f'({day.replace("February", "फ़रवरी")}, पाली {shift})', blurb=GD_BLURB, mins=60)
+GD_PAPERS = [
+  _gd('g25d04s1', '4 February', 1, '9:00 AM', 'gd-2025-04feb-shift1.txt'),
+  _gd('g25d04s2', '4 February', 2, '12:00 PM', 'gd-2025-04feb-shift2.txt'),
+  _gd('g25d04s3', '4 February', 3, '3:00 PM', 'gd-2025-04feb-shift3.txt'),
+  _gd('g25d05s1', '5 February', 1, '9:00 AM', 'gd-2025-05feb-shift1.txt'),
+  _gd('g25d05s2', '5 February', 2, '12:00 PM', 'gd-2025-05feb-shift2.txt'),
+  _gd('g25d05s3', '5 February', 3, '3:00 PM', 'gd-2025-05feb-shift3.txt'),
+]
+GD_SUBJECTS = [
+  ('rea', 'General Intelligence & Reasoning', 'reasoning', ['Analogy & Classification', 'Series', 'Coding-Decoding', 'Blood Relations & Directions', 'Arrangement & Puzzles', 'Syllogism & Statements', 'Mathematical Operations', 'Non-verbal Reasoning', 'Miscellaneous Reasoning']),
+  ('qa',  'Elementary Mathematics', 'elementary-mathematics', ['Number System & Simplification', 'HCF & LCM', 'Percentage', 'Profit, Loss & Discount', 'Ratio & Proportion', 'Average', 'Simple & Compound Interest', 'Time & Work', 'Time, Speed & Distance', 'Mensuration']),
+  ('eng', 'English Language', 'english', ['Vocabulary', 'Idioms & One-word Substitution', 'Spelling', 'Error Spotting & Sentence Improvement', 'Fill in the Blanks', 'Cloze Test & Comprehension']),
+  ('ih',  'History & Culture', 'history', ['Ancient India', 'Medieval India', 'Modern India', 'Art & Culture']),
+  ('pol', 'Indian Polity', 'polity', ['Constitution & Rights', 'Government & Parliament', 'Judiciary & Constitutional Bodies', 'Local Government & Governance']),
+  ('geo', 'Geography', 'geography', ['Indian Geography', 'World & Physical Geography', 'Environment & Ecology']),
+  ('eco', 'Indian Economy', 'economy', ['Planning, Growth & Budget', 'Money, Banking & Finance', 'Agriculture, Industry & Trade', 'Schemes & Welfare']),
+  ('sci', 'General Science', 'general-science', ['Physics', 'Chemistry', 'Biology', 'Science & Technology']),
+  ('cur', 'Current Affairs & Static GK', 'current-affairs-static-gk', ['National', 'International', 'Sports', 'Awards, Books & Persons', 'Static GK & Culture']),
+]
+GD_SUBJ_HI = {'rea': 'सामान्य बुद्धि और तर्कशक्ति (रीजनिंग)', 'qa': 'प्रारंभिक गणित', 'eng': 'अंग्रेज़ी', 'ih': 'इतिहास और संस्कृति',
+              'pol': 'भारतीय राजव्यवस्था', 'geo': 'भूगोल', 'eco': 'भारतीय अर्थव्यवस्था', 'sci': 'सामान्य विज्ञान',
+              'cur': 'करेंट अफेयर्स और स्टैटिक जीके'}
+
+
+def gd_text():
+    """Wording for the SSC GD page that depends on which papers are on the site."""
+    have = [p for p in GD_PAPERS if p['id'] in have_src('ssc-gd', GD_PAPERS)]
+    years = sorted({p['year'] for p in have}) or [2025]
+    yr = f'{years[0]}–{years[-1]}' if len(years) > 1 else str(years[0])
+    days = sorted({p['held'] for p in have}, key=lambda d: (d.split()[-1], d))
+    return dict(n=len(have), years=yr, days=' and '.join(d.replace(' 2025', '') for d in days) + ' 2025' if days else '2025',
+                what=f'{len(have)} shift paper{"s" if len(have) != 1 else ""} of the {yr} exam')
 
 
 # ---------- RRB Group D (Level-1 posts, CEN 08/2024): RRB's own question papers with the answer key (Anil, 15 Nov 2026: "RRB Group D...add pyqs and other
@@ -1585,6 +1631,26 @@ def exam_confs():
            papers_note=("Every paper is RRB's own question paper for that shift, as RRB published it with its answer key: the option RRB marked as correct is the answer here. "
                         "Each shift had a different paper. The questions are in English and Hindi, as printed (the Hindi is from the Hindi paper of the same shift). "
                         "A few questions of 27 November Shift 2 were printed only in Telugu on the English paper and are left out.")),
+      dict(id='ssc-gd', dir='ssc-gd-constable', src='ssc-gd', key='ssc-gd', name='SSC GD Constable', short='SSC GD', seo='SSC GD Constable',
+           slugp='ssc-gd', papers=GD_PAPERS, subjects=GD_SUBJECTS, faq=FAQ_GD, board='SSC', l2=L2_HI, pb='/ssc-gd-constable/',
+           keyname="SSC's answer key", keyshort="SSC's answer key (as marked on the response sheets)",
+           hi_name='एसएससी जीडी कांस्टेबल', hi_paper='प्रश्न पत्र', subj_te=GD_SUBJ_HI,
+           title=f"SSC GD Constable Previous Year Question Papers with Answers – {gd_text()['years']} Shift-wise (PYQs) | Learn with Anil",
+           h1='SSC GD Constable previous year question papers <em>with answers.</em>',
+           aka=('SSC Constable (GD) in CAPFs (BSF, CISF, CRPF, ITBP, SSB), SSF, Rifleman (GD) in Assam Rifles and Sepoy in NCB: '
+                'shift-wise computer-based exam papers with SSC\'s answer key, subject-wise: reasoning, general knowledge, elementary maths and English.'),
+           aka_short='SSC Constable (GD) in CAPFs, SSF, Assam Rifles and NCB',
+           l2line='एसएससी जीडी कांस्टेबल के पिछले वर्षों के प्रश्न पत्र, एसएससी की उत्तर कुंजी सहित — रीजनिंग, सामान्य ज्ञान, प्रारंभिक गणित और अंग्रेज़ी; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           desc=lambda t: (f"SSC GD Constable previous year question papers with SSC's answer key and explanations: {gd_text()['what']} ({gd_text()['days']}), "
+                           f"from SSC's own response sheets. {t:,} questions on reasoning, general knowledge, elementary maths and English; subject-wise practice "
+                           f"and 60-minute timed mock tests."),
+           eyebrow=f"SSC · Constable (GD) in CAPFs, SSF &amp; Assam Rifles · {gd_text()['years']}",
+           papers_note=("Every paper is SSC's own question paper as candidates print it from SSC's portal (the response sheet), with the answer SSC marked as correct. "
+                        "The sheets are from the answer-key stage, so SSC's final key may differ for a few questions. Each shift had a different paper; "
+                        "these are the English-medium papers with Part D English. A few questions that SSC printed in Hindi on the English sheet are given with an English translation. "
+                        "The Hindi text of Parts A–C and the Hindi explanations are Learn with Anil's translation (SSC's Hindi-medium paper may word them differently); Part D English is in English only."),
+           l2_line=("Parts A–C are shown in English and in Hindi (Hindi translation by Learn with Anil; SSC's Hindi-medium paper may word them differently). "
+                    "Part D (English) is in English only.")),
       dict(id='ts-police-si', dir='ts-police-si', src='ts-police-si', key='ts-si', name='TS Police SI', short='TS Police SI', seo='TS Police SI',
            slugp='ts-police-si', papers=TS_SI_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('SI', T['si']), board='TSLPRB', l2=L2_TE, pb='/ts-police-si/',
            keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
@@ -2352,6 +2418,7 @@ def exam_terms(e, cat):
     if 'amvi' in e['id']: words += ['amvi', 'motor vehicle inspector', 'mvi', 'rto', 'transport department', 'automobile engineering', 'automobile']
     if e['id'] == 'sbi-po': words += ['sbi', 'state bank', 'state bank of india', 'po', 'probationary officer', 'bank po', 'banking', 'bank exam', 'sbi po mock test']
     if e['id'] == 'ibps-so': words += ['ibps', 'so', 'specialist officer', 'it officer', 'agriculture field officer', 'afo', 'hr officer', 'personnel officer', 'marketing officer', 'banking', 'bank exam', 'ibps so mock test']
+    if e['id'] == 'ssc-gd': words += ['ssc gd', 'gd constable', 'ssc constable', 'constable gd', 'general duty', 'capf constable', 'bsf', 'crpf', 'cisf', 'itbp', 'ssb', 'assam rifles', 'rifleman', 'ncb', 'sepoy', 'paramilitary', 'ssc gd mock test', 'jawan']
     if e['id'] == 'appsc-aso': words += ['aso', 'assistant statistical officer', 'statistical officer', 'statistics', 'economics', 'ecostats', 'economics and statistics', 'des', 'mpso', 'accountancy']
     if e['id'] == 'appsc-env-engineer': words += ['aee', 'assistant environmental engineer', 'environmental engineer', 'environmental engineering', 'pollution control board', 'appcb', 'common subject', 'fluid mechanics', 'eia']
     if e['id'] == 'appsc-analyst': words += ['analyst', 'analyst grade 2', 'analyst grade ii', 'pollution control board', 'appcb', 'chemistry', 'biochemistry', 'biology', 'environmental science']
@@ -2800,6 +2867,34 @@ def FAQ_RRBD(total, npapers):
     ]
 
 
+def FAQ_GD(total, npapers):
+    G = gd_text()
+    return [
+      ('Where can I get SSC GD Constable previous year question papers with answers?',
+       f'This page has {total} questions from {G["what"]} (held on {G["days"]}). Each is SSC\'s own question paper as candidates print it from SSC\'s portal, '
+       'with the answer SSC marked as correct, and every question has a short explanation. Take a whole shift as a 60-minute timed test, or practise one subject at a time.'),
+      ('Are the answers official?',
+       'Yes. Every answer is the option SSC marked as correct on the candidate\'s response sheet, from the answer-key stage, so SSC\'s final key can differ for a few questions. '
+       'Where a marked answer looks debatable, the explanation says "(SSC key; some sources differ.)". The explanations are written by Learn with Anil.'),
+      ('What is the SSC GD Constable exam pattern?',
+       'One computer-based paper of 80 questions for 160 marks in 60 minutes: Part A General Intelligence & Reasoning, Part B General Knowledge & General Awareness, '
+       'Part C Elementary Mathematics and Part D English or Hindi, 20 questions each, 2 marks a question and 0.25 mark cut for a wrong answer. '
+       'Those who qualify go on to the Physical Efficiency and Standard Tests (PET/PST), a medical examination and document verification.'),
+      ('Why are there so many SSC GD papers for one year?',
+       'SSC holds the GD exam over several weeks, three or four shifts a day, and every shift gets a different question paper. Each paper here is one complete shift, '
+       'so you can take it as a real 60-minute test.'),
+      ('Can I practise SSC GD questions in Hindi?',
+       'Yes. Tap हिंदी at the top of the page to see Parts A, B and C in Hindi, with the explanation in Hindi. The papers here are the English-medium papers, so the Hindi is '
+       'Learn with Anil\'s translation and SSC\'s Hindi-medium paper may word a question differently; Part D (English) stays in English. SSC sets the GD paper in English, '
+       'Hindi and 13 regional languages, Telugu included, and a candidate chooses English or Hindi for Part D.'),
+      ('Who can apply for SSC GD Constable?',
+       'A Class 10 (matriculation) pass, aged 18 to 23 years on the cut-off date (1 January 2026 for the 2026 exam), with age relaxation of 3 years for OBC and 5 years for SC and ST. '
+       'The posts are Constable (GD) in the BSF, CISF, CRPF, ITBP, SSB and SSF, Rifleman (GD) in the Assam Rifles and Sepoy in the NCB, at Pay Level 3 (₹21,700 – ₹69,100).'),
+      ('Is there an SSC GD mock test?',
+       'Yes. Every shift paper here can be taken as a timed mock test with the real 60-minute limit and SSC\'s marking, with the same ₹45 All-in-One Pass that opens every exam on the site.'),
+    ]
+
+
 def FAQ_HM(total, npapers):
     return [
       ('Where can I get TGPSC HMWSSB Manager (Engineering) previous question papers with answers?',
@@ -3218,7 +3313,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -5506,6 +5601,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'ts-police-constable': ('TS Police Constable Preliminary Written Test', '2026-12-20', 'Tentative, TGPRB press note of 17 September 2026.'),
   'upsc-capf': ('UPSC CAPF (Assistant Commandants) 2027', '2027-07-04', 'UPSC Calendar 2027.'),
   'upsc-prelims': ('UPSC Civil Services (Preliminary) Examination 2027', '2027-05-23', 'UPSC Calendar 2027.'),
+  'ssc-gd': ('SSC GD Constable 2027 computer-based exam', None, "SSC's exam calendar puts the GD 2027 computer-based exam in January–March 2027; the notification, listed for 30 September 2026, was not out as of 15 November 2026."),
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
   'rrb-ntpc': ('RRB NTPC 2026 CBT-1 (CEN 06/2026 and 07/2026)', None, 'Applications closed (graduate 8 November, undergraduate 13 November 2026); RRB has not announced the CBT-1 dates yet. One report says the graduate CBT-1 may be in the fourth week of December 2026.'),
   'upsc-epfo': ('UPSC EPFO APFC Recruitment Test 2026', '2026-12-20', 'UPSC Special Advertisement 52/2026 (80 APFC posts): pen-and-paper Recruitment Test on 20 December 2026.'),
@@ -5950,7 +6046,8 @@ def inapp_mocks(conf, papers):
     return (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
             + ('<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>' if not conf.get('mockonly') else '')
             + '<h2>How the mock test works</h2><ul>'
-            + (f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>' if not conf.get('mockonly') else
+            + (f'<li>{esc(conf["l2_line"])} Switch language with the buttons at the top.</li>' if conf.get('l2_line') else
+               f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>' if not conf.get('mockonly') else
                f'<li>Questions appear in English and {esc(l2["name"])} (the English Language section in English only). Switch language with the buttons at the top.</li>') +
             '<li><b>Start</b> is the exam-style test: answer, mark for review, and see your score with every answer and explanation when you submit. '
             '<b>Practice mode</b> checks each answer as you go, with its explanation, like the previous papers.</li>'
@@ -6117,7 +6214,8 @@ def mock_page(conf, papers, questions):
     body = (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
             + '<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>'
             + '<h2>How the mock test works</h2><ul>'
-            f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>'
+            + (f'<li>{esc(conf["l2_line"])} Switch language with the buttons at the top.</li>' if conf.get('l2_line') else
+               f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>') +
             '<li>The timer gives you one minute per question. You can move between questions and change answers until you submit.</li>'
             '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question. Wrong answers go to your Mistakes notebook.</li>'
             f'<li>Previous papers as tests need the All-in-One Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months){"; the same pass opens " + esc(mk["name"]) if mk else ""}. Register once with your phone number and use the same number when you pay.</li></ul>'
@@ -6199,7 +6297,7 @@ def build_static(conf, papers, subjects, questions, subj):
                 + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html', unl(q)) for q in qs) + '</ol>')
         held = f'{p["notif"]}, held on {p["held"]}' if conf['board'] == 'APPSC' else f'Held on {p["held"]} ({p["notif"].replace(" · ", ", ")})'
         lede = esc(f'{p["title"]}{f" ({alt_shown(alt, p['title'])})" if alt_shown(alt, p['title']) else ""}. {p["blurb"]} {held}. {fmt}, plus a short explanation for every question (the first {SAMPLE_N} here, all of them in the app). '
-                   + ('' if p.get('en_only') else f'Each question is shown in English and {conf["l2"]["name"]}, as printed in the ' + ('question paper.' if 'CBT' in p['notif'] or 'CBRT' in p['notif'] else 'booklet.')))
+                   + ('' if p.get('en_only') else conf['l2_line'] if conf.get('l2_line') else f'Each question is shown in English and {conf["l2"]["name"]}, as printed in the ' + ('question paper.' if 'CBT' in p['notif'] or 'CBRT' in p['notif'] else 'booklet.')))
         pages[rel] = static_page(1, title, desc, can, f'{kw} question paper with answers', lede, body,
                                  home_crumbs + [(p['title'], can)], conf)
     by_s = {}
@@ -6289,7 +6387,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -6303,7 +6401,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <h1>This page does not exist</h1>
 <p>The address may be mistyped, or the page has moved. Try one of these:</p>
 <ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
-<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
+<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
 <li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li></ul>

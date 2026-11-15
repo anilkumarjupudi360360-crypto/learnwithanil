@@ -639,7 +639,9 @@
    "id": "ssc-gd",
    "cat": "ssc",
    "b": "SSC",
-   "t": "GD Constable"
+   "t": "GD Constable",
+   "n": "Constable (GD) in CAPFs, SSF & Assam Rifles",
+   "live": "ssc-gd-constable/"
   },
   {
    "id": "ssc-steno",

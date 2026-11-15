@@ -1,0 +1,775 @@
+# SSC Constable (GD) in CAPFs, SSF, Rifleman (GD) in Assam Rifles and Sepoy in NCB Examination 2025, held 5 February 2025, Shift 1 (9:00 AM). 80 questions, 160 marks, 60 minutes (Part D: English).
+# Source: SSC's question paper as candidates print it from SSC's portal (the response sheet; copy via Prepp); answers are the options SSC marked correct on it (answer-key stage). Explanations by Learn with Anil.
+
+Q 1 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+All lyricists are singers.
+Some singers are writers.
+No writer is a musician.
+Conclusions:
+(I): No lyricist is a musician.
+(II): Some writers are lyricists.
+(1) Only conclusion (II) follows.
+(2) Only conclusion (I) follows.
+(3) Neither conclusion (I) nor (II) follows.
+(4) Both conclusions (I) and (II) follow.
+= 3
+~ Lyricists are inside singers, and only some singers are writers, so lyricists may or may not be writers: conclusion II is not certain. Writers are kept away from musicians, but lyricists who are not writers could still be musicians, so conclusion I is not certain either. Neither conclusion follows.
+
+Q 2 | rea | Analogy & Classification
+Select the Venn diagram that best illustrates the relationship between the following classes.
+Onion, Vegetable, Shirt
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/g25d05s1-q2.png
+~ Every onion is a vegetable, so the Onion circle sits inside the Vegetable circle. A shirt has nothing to do with either, so it is a separate circle. This is option 1.
+
+Q 3 | rea | Arrangement & Puzzles
+E, F, G, H, K, L and N are sitting around a circular table facing the centre (but not necessarily in the same order) .Only two people sit between H and G when counted from the right of H. Only three people sit between L and N when counted from the right of N. G sits to the immediate right of N. K sits to the immediate right of E. How many people sit between F and E when counted from the left of F?
+(1) Two
+(2) Four
+(3) Three
+(4) One
+= 3
+~ Facing the centre, 'right' is anticlockwise. Seat N first; G is just to N's right, H is three places to G's left (two people between when counted from H's right), and L is four places to N's right (three people between). The empty seats leave room for E and K together only in one place, with K just right of E; F takes the last seat. Counting from F towards F's left we pass H, L and K before E, so three people sit between F and E.
+
+Q 4 | rea | Coding-Decoding
+In a certain code language 'GPZJ' is coded as '98' and 'OWRS' is coded as '66'. What is the code for 'VIXE' in the given language?
+(1) 88
+(2) 86
+(3) 96
+(4) 91
+= 3
+~ Use reverse alphabet positions (A = 26 ... Z = 1) and double their sum. GPZJ: 20 + 11 + 1 + 17 = 49, × 2 = 98. OWRS: 12 + 4 + 9 + 8 = 33, × 2 = 66. VIXE: 5 + 18 + 3 + 22 = 48, × 2 = 96.
+
+Q 5 | rea | Series
+What should come in place of the question mark (?) in the given series based on the English alphabetical order?
+BMY, DNW, ?, HPS
+(1) EOU
+(2) FOT
+(3) FPU
+(4) FOU
+= 4
+~ First letters B, D, ?, H go up by 2, so F. Second letters M, N, ?, P go up by 1, so O. Third letters Y, W, ?, S go down by 2, so U. The missing term is FOU.
+
+Q 6 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group?
+(Note: The odd man out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) VSW
+(2) NLO
+(3) WTX
+(4) KHL
+= 2
+~ In VSW, WTX and KHL the first step is −3 and the second +4 (V-S-W, W-T-X, K-H-L). In NLO the steps are −2 and +3, so NLO does not belong.
+
+Q 7 | rea | Non-verbal Reasoning
+The sequence of folding a piece of paper and the manner in which the folded paper is cut is shown in the following figures. How would this paper look when unfolded?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/g25d05s1-q7.png
+~ The paper is folded twice, bottom half up and then right half to the left, and the cuts are made in the folded quarter. On opening, the cut pattern appears in all four quarters, mirrored across the horizontal fold and across the vertical fold. Only option 4 shows the pattern repeated and reflected this way; the other options either do not mirror the pattern or show the wrong number of holes.
+
+Q 8 | rea | Non-verbal Reasoning
+A dice has its faces marked by letters R, E, I, P, Y and A. Two positions of the same dice are given below. Which face is opposite to face P?
+(1) Y
+(2) A
+(3) R
+(4) E
+= 2
+! img/g25d05s1-q8.png
+~ A is in the same place in both views. Its neighbours are I and E in one view and Y and R in the other, so I, E, Y and R are adjacent to A. The only face left, P, is opposite A, so the face opposite P is A.
+
+Q 9 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘÷‘ are interchanged and ‘−’ and ‘×’ are interchanged?
+16 − 2 × 104 + 4 ÷ 20 =?
+(1) 29
+(2) 37
+(3) 26
+(4) 33
+= 3
+~ After interchanging, 16 − 2 × 104 + 4 ÷ 20 becomes 16 × 2 − 104 ÷ 4 + 20. Multiply and divide first: 32 and 26. Then 32 − 26 + 20 = 26.
+
+Q 10 | rea | Non-verbal Reasoning
+Identify the figure given in the options which when put in place of the question mark (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/g25d05s1-q10.png
+~ Count the crosses: 15, 14, 12, 9. One, then two, then three crosses are removed, so four are removed next: 9 − 4 = 5 crosses. Option 4 has five crosses; option 3 has four, option 1 six and option 2 seven.
+
+Q 11 | rea | Series
+Select the combination of letters that when sequentially placed in the blanks of the given series will complete the series.
+C R_ S _ _ R O S_ C_ _ S S _ R _ S_
+(1) OSCSROCOS
+(2) QPQDBADAP
+(3) QNPADEPQT
+(4) ASCSRACOH
+= 1
+~ Filling the blanks with O, S, C, S, R, O, C, O, S gives C R O S S | C R O S S | C R O S S | C R O S S: the word CROSS repeats four times.
+
+Q 12 | rea | Miscellaneous Reasoning
+The position(s) of how many letters will remain unchanged if each of the letters in the word OPERATOR is arranged in the English alphabetical order?
+(1) Zero
+(2) Two
+(3) One
+(4) Three
+= 1
+~ OPERATOR in alphabetical order is A E O O P R R T. Compare with O P E R A T O R place by place: O/A, P/E, E/O, R/O, A/P, T/R, O/R, R/T. No letter keeps its place, so the answer is zero.
+
+Q 13 | rea | Analogy & Classification
+CGJK is related to IMPQ in a certain way based on the English alphabetical order. In the same way, HLQR is related to NRWX. To which of the given options is AEMO related, following the same logic?
+(1) ZDLN
+(2) DHPS
+(3) GKSU
+(4) OEAM
+= 3
+~ CGJK to IMPQ: every letter moves 6 places forward (C+6 = I, G+6 = M, J+6 = P, K+6 = Q). HLQR to NRWX does the same. AEMO + 6 on each letter gives GKSU.
+
+Q 14 | rea | Blood Relations & Directions
+In a certain code language.
+'U + S' means 'U is the daughter of S',
+'U @ S' means 'U is the father of S',
+'U * S' means 'U is the husband of S' and
+'U # S' means 'U is the mother of S'.
+Based on the above, how is B related to E if 'E * L # B @ P'?
+(1) Brother
+(2) Son's son
+(3) Brother's son
+(4) Son
+= 4
+~ E * L: E is L's husband. L # B: L is B's mother. B @ P: B is P's father, so B is male. B is the son of L and of her husband E, so B is E's son.
+
+Q 15 | rea | Series
+What should come in place of the question mark (?) in the given series?
+173    151    130    110    91    ?
+(1) 64
+(2) 78
+(3) 73
+(4) 56
+= 3
+~ The numbers fall by 22, 21, 20 and 19: one less each time. The next fall is 18, so 91 − 18 = 73.
+
+Q 16 | rea | Analogy & Classification
+FROM is related to WJFE in a certain way based on the English alphabetical order.
+In the same way, VLEG is related to MDVY. To which of the following options is UNDI related, following the same logic?
+(1) LFAU
+(2) LFUA
+(3) LLFA
+(4) LAUF
+= 2
+~ FROM to WJFE: each letter moves back 9, 8, 9, 8 places (F−9 = W counting round, R−8 = J, O−9 = F, M−8 = E). VLEG to MDVY follows the same steps. For UNDI: U−9 = L, N−8 = F, D−9 = U, I−8 = A, giving LFUA.
+
+Q 17 | rea | Series
+What should come in place of the question mark (?) in the given series?
+666 676 687 699 712 ?
+(1) 722
+(2) 730
+(3) 724
+(4) 726
+= 4
+~ The differences are 10, 11, 12, 13: one more each time. The next difference is 14, so the next number is 712 + 14 = 726.
+
+Q 18 | rea | Coding-Decoding
+In a certain code language, ‘BASE’ is coded as '8970’ and ‘ASET’ is coded as ‘0697’.
+What is the code for ‘T’ in the given code language?
+(1) 7
+(2) 6
+(3) 0
+(4) 9
+= 2
+~ BASE = 8970 and ASET = 0697 share the letters A, S and E and the digits 9, 7 and 0. B takes the extra digit 8 in the first code, and T takes the extra digit 6 in the second, so T = 6.
+
+Q 19 | rea | Arrangement & Puzzles
+Kunti, Panjiri, Anjali, Hansraj and Roshan are sitting in a circular table facing the centre(but not necessarily in the same order). Roshan is sitting to the immediate right of Hansraj and Hansraj is sitting to the immediate right of Anjali. Panjiri is the immediate neighbour of Kunti and Roshan. Which of the following statements is correct?
+(1) Anjali is the immediate neighbour of Kunti and Hansraj.
+(2) Kunti is the immediate neighbour of Anjali and Roshan.
+(3) Roshan is the immediate neighbour of Hansraj and Kunti.
+(4) Panjiri is the immediate neighbour of Hansraj and Anjali.
+= 1
+~ Facing the centre, 'right' is anticlockwise. Hansraj is just right of Anjali and Roshan just right of Hansraj: Anjali, Hansraj, Roshan in a row. Panjiri sits between Kunti and Roshan, and the circle of five closes with Kunti next to Anjali. So Anjali's neighbours are Kunti and Hansraj: statement 1 is correct.
+
+Q 20 | rea | Non-verbal Reasoning
+Select the option in which the given figure (X) is embedded (rotation is NOT allowed).
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/g25d05s1-q20.png
+~ The figure (X) is a crescent, curved outwards to the right. Only option 1 contains this exact crescent, in the same size and the same direction, formed by the right parts of its two overlapping circles. The other options do not have a crescent of that shape without turning it.
+
+Q 21 | ih | Modern India
+In which year did Bhimrao Ramji Ambedkar lead the Mahad Satyagraha?
+(1) 1918
+(2) 1923
+(3) 1925
+(4) 1927
+= 4
+~ Dr B.R. Ambedkar led the Mahad Satyagraha in March 1927 at Mahad (Maharashtra) to assert the right of Dalits to draw water from the public Chavdar tank. In December 1927 the Manusmriti was burnt there.
+
+Q 22 | sci | Biology
+Which species of green algae, commonly known as stonewort, is often mistaken for a plant?
+(1) Chara
+(2) Kelp
+(3) Gracilaria
+(4) Sargassum
+= 1
+~ Chara, called stonewort, is a green alga that looks like a land plant, with a stem-like axis and whorls of branches, and its surface is often coated with lime. Kelp and Sargassum are brown algae, and Gracilaria is a red alga.
+
+Q 23 | cur | Static GK & Culture
+Which festival from West Bengal has found a place in the UNESCO list of Intangible Cultural Heritage of Humanity?
+(1) Jamai Shashti
+(2) Durga Puja
+(3) Poila Baisakh
+(4) Poush Sankranti
+= 2
+~ Durga Puja in Kolkata was added to UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in December 2021. It is celebrated in autumn with pandals and idols of the goddess Durga.
+
+Q 24 | eco | Agriculture, Industry & Trade
+What impact did the Green Revolution have on India’s dependence on food imports?
+(1) Decreased dependence on food imports
+(2) Increased dependence on food imports
+(3) Stopped food imports completely
+(4) No change in dependence on food imports
+= 1
+~ The Green Revolution greatly increased the output of wheat and rice, so India no longer needed large imports such as PL-480 wheat from the USA and became largely self-sufficient in food grains. Food imports fell, though they did not stop completely.
+
+Q 25 | geo | World & Physical Geography
+Which of the following is a human-made water body created by blocking the flow of a river or stream?
+(1) Oxbow lake
+(2) Estuary
+(3) Lagoon
+(4) Reservoir
+= 4
+~ A reservoir is an artificial lake formed behind a dam built across a river or stream. An oxbow lake is formed naturally by a meandering river, an estuary is a river mouth where fresh and sea water mix, and a lagoon is a coastal water body cut off by a sand bar.
+
+Q 26 | cur | Awards, Books & Persons
+In which state is the Nandi Award for the best choreographer presented every year?
+(1) Maharashtra
+(2) Madhya Pradesh
+(3) Karnataka
+(4) Andhra Pradesh
+= 4
+~ The Nandi Awards are the Andhra Pradesh government's annual awards for Telugu cinema, television and theatre, including a Nandi Award for best choreographer. They are named after Nandi, Shiva's bull.
+
+Q 27 | geo | World & Physical Geography
+Which of the following neighbouring countries of India has the highest number of million cities?
+(1) Bangladesh
+(2) Nepal
+(3) Pakistan
+(4) Sri Lanka
+= 3
+~ Among India's neighbours, Pakistan has the largest number of cities with a million or more people, such as Karachi, Lahore, Faisalabad, Rawalpindi and Multan. Bangladesh has a few, while Nepal and Sri Lanka have hardly any.
+
+Q 28 | pol | Government & Parliament
+Who among the following makes the rules for the more convenient transaction of the business of the State government?
+(1) Chief Secretary of the State
+(2) Chief Minister of the State
+(3) Advocate General of the State
+(4) Governor of the State
+= 4
+~ Under Article 166(3), the Governor of the State makes rules for the more convenient transaction of the business of the State Government and for allotting that business among ministers. Article 77(3) gives the same power to the President for the Union.
+
+Q 29 | cur | Sports
+Who became the first Indian to win a gold medal in the World Athletics Championship?
+(1) P.T. Usha
+(2) Neeraj Chopra
+(3) Anju Bobby George
+(4) Milkha Singh
+= 2
+~ Neeraj Chopra won India's first-ever gold medal at the World Athletics Championships in Budapest in August 2023, with a javelin throw of 88.17 m. Anju Bobby George had won bronze in the long jump in 2003.
+
+Q 30 | cur | Awards, Books & Persons
+‘Streets Of Calcutta’ and ‘Dancing Drums’ are the two popular tracks of
+______________.
+(1) Begum Akhtar
+(2) Ananda Shankar
+(3) Zakir Hussain
+(4) Anoushka Shankar
+= 2
+~ Ananda Shankar (1942–1999), nephew of Ravi Shankar, fused Indian music with Western rock and electronic sounds; 'Streets of Calcutta' and 'Dancing Drums' are among his best-known tracks.
+
+Q 31 | cur | International
+The term 'Rohingya Crisis' primarily involves refugees from which neighbouring country seeking shelter in various regions, including India?
+(1) Bangladesh
+(2) Myanmar
+(3) Nepal
+(4) Bhutan
+= 2
+~ The Rohingya are a mostly Muslim minority from Rakhine State in Myanmar. Military crackdowns, especially in 2017, drove many of them to Bangladesh and some to India.
+
+Q 32 | cur | Static GK & Culture
+Which of the following classical dances is known to be ekaharya, where one dancer takes on many roles in a single performance?
+(1) Kathakali
+(2) Kuchipudi
+(3) Mohiniattam
+(4) Bharatanatyam
+= 4
+~ In Bharatanatyam a solo dancer often plays many characters in one piece; this style of solo performance is called ekaharya. Kathakali is usually performed by a group of actors in heavy make-up.
+
+Q 33 | eco | Agriculture, Industry & Trade
+Which of the following was NOT an outcome of the Green Revolution?
+(1) Increased food grain production
+(2) High dependency on chemical fertilisers and pesticides
+(3) Improved agricultural infrastructure
+(4) Decrease in rural population
+= 4
+~ The Green Revolution raised food-grain output, increased the use of chemical fertilisers and pesticides, and improved irrigation, credit and market infrastructure. It did not reduce the rural population; most people continued to live in villages.
+
+Q 34 | ih | Modern India
+The Constituent Assembly met for the first time on:
+(1) 15th December 1946
+(2) 12th December 1946
+(3) 7th December 1946
+(4) 9th December 1946
+= 4
+~ The Constituent Assembly of India first met on 9 December 1946, with Dr Sachchidananda Sinha as interim chairman. Dr Rajendra Prasad was elected permanent president on 11 December, and the Objectives Resolution was moved on 13 December 1946.
+
+Q 35 | eco | Money, Banking & Finance
+'Public provision' refers to those goods and services financed through the budget and:
+(1) can be used without any direct payment
+(2) can be used only with direct payment
+(3) can be used by taxpayers only
+(4) is available through online payment only
+= 1
+~ In public finance, 'public provision' means goods and services financed through the government budget and made available without any direct payment by users, such as public roads or free government schools. They are paid for through taxes.
+
+Q 36 | ih | Ancient India
+The last Shunga ruler was killed by his minister in which century?
+(1) 1st century BC
+(2) 2nd century BC
+(3) 3rd century BC
+(4) 1st century AD
+= 1
+~ Devabhuti, the last Shunga king, was killed around 73 BC by his minister Vasudeva, who founded the Kanva dynasty. The Shunga dynasty had been founded by Pushyamitra Shunga around 185 BC.
+
+Q 37 | eco | Agriculture, Industry & Trade
+The Boilers Bill, 2024, introduced in Rajya Sabha on 8 August 2024, seeks to replace which previous Boilers Act?
+(1) Boilers Act, 1975
+(2) Boilers Act, 1965
+(3) Boilers Act, 1923
+(4) Boilers Act, 1955
+= 3
+~ The Boilers Bill, 2024, introduced in the Rajya Sabha on 8 August 2024, replaces the Boilers Act, 1923, which regulated the manufacture, registration and safe use of steam boilers.
+
+Q 38 | sci | Physics
+At room temperature and pressure, kinetic energy of the particles are minimum in case of:
+(1) iron
+(2) water
+(3) kerosene
+(4) methane
+= 1
+~ At room temperature the particles of a solid are tightly bound and only vibrate in place, so their kinetic energy is lowest. Iron is a solid, water and kerosene are liquids, and methane is a gas, whose particles move fastest.
+
+Q 39 | cur | Sports
+Smriti Mandhana is associated with which of the following sports?
+(1) Wrestling
+(2) Hockey
+(3) Cricket
+(4) Badminton
+= 3
+~ Smriti Mandhana is an Indian cricketer, a left-handed opening batter and vice-captain of the India women's team. She was named ICC Women's Cricketer of the Year in 2018 and 2021.
+
+Q 40 | cur | National
+Who is the cabinet minister of the Union Ministry of Education, as of September 2024?
+(1) Nitin Jairam Gadkari
+(2) Dharmendra Pradhan
+(3) Piyush Goyal
+(4) HD Kumaraswamy
+= 2
+~ Dharmendra Pradhan has been the Union Minister of Education since July 2021 and continued in the post in the government formed in June 2024. Nitin Gadkari handles Road Transport and Highways, Piyush Goyal Commerce and Industry, and H.D. Kumaraswamy Heavy Industries and Steel.
+
+Q 41 | qa | Average
+The average weight of Mandar, Ketan and Tushar is 45 kg. If the average weight of Mandar and Ketan be 43 kg and that of Ketan and Tushar be 48 kg, then the weight of Ketan (in kg) is:
+(1) 62
+(2) 47
+(3) 67
+(4) 57
+= 2
+~ Mandar + Ketan + Tushar = 45 × 3 = 135 kg. Mandar + Ketan = 86, so Tushar = 49. Ketan + Tushar = 96, so Ketan = 96 − 49 = 47 kg.
+
+Q 42 | qa | Time & Work
+A work can be finished in a day by 20 men, or by 30 women, or by 50 boys. 2 men and 5 boys work on alternate days and 6 women work on all days. If men work on the first day, the work is finished in ____ days.
+(1) 4 1/3
+(2) 3 1/4
+(3) 4 1/4
+(4) 3 1/3
+= 4
+~ Take the work as 300 units: 20 men do it in a day, so a man does 15 units; a woman does 10 and a boy 6. Day 1: 2 men + 6 women = 30 + 60 = 90 units. Day 2: 5 boys + 6 women = 30 + 60 = 90 units. Every day 90 units are done, so 300 units take 300 ÷ 90 = 3 1/3 days.
+
+Q 43 | qa | Profit, Loss & Discount
+The selling price of a fan is ₹7,392. If profit percentage is 32%, then what is the cost price (in ₹) of the fan?
+(1) 5,200
+(2) 5,400
+(3) 5,600
+(4) 4,800
+= 3
+~ Selling price = cost price × 1.32, so cost price = 7392 ÷ 1.32 = ₹5,600. Check: 32% of 5600 is 1792, and 5600 + 1792 = 7392.
+
+Q 44 | qa | Percentage
+If 2% of x = 348, then x is equal to:
+(1) 17400
+(2) 34900
+(3) 17500
+(4) 34800
+= 1
+~ 2% of x = 348 means x = 348 × 100 ÷ 2 = 17400.
+
+Q 45 | qa | HCF & LCM
+LCM and HCF of two numbers are 168 and 14 respectively. If one of the numbers is 42, then find the other number.
+(1) 54
+(2) 58
+(3) 57
+(4) 56
+= 4
+~ Product of the two numbers = LCM × HCF = 168 × 14 = 2352. The other number = 2352 ÷ 42 = 56. Check: HCF(42, 56) = 14 and LCM = 168.
+
+Q 46 | qa | Ratio & Proportion
+Find the third proportional of (3 + √2) and 2√7.
+(1) 2(3 + √2)
+(2) (12 − √8)
+(3) 4(3 − √2)
+(4) (12 + √8)
+= 3
+~ The third proportional to a and b is b² ÷ a. Here b² = (2√7)² = 28, so it is 28 ÷ (3 + √2). Multiply top and bottom by (3 − √2): 28(3 − √2) ÷ (9 − 2) = 4(3 − √2).
+
+Q 47 | qa | Simple & Compound Interest
+The simple interest on a principal amount (in ₹) is ₹824 for a period of 4 years at the rate of 8% per annum. The principal amount (in ₹) is:
+(1) 2577
+(2) 2573
+(3) 2571
+(4) 2575
+= 4
+~ Principal = SI × 100 ÷ (R × T) = 824 × 100 ÷ (8 × 4) = 82400 ÷ 32 = ₹2575.
+
+Q 48 | qa | Profit, Loss & Discount
+What will be the difference between the sale price (in ₹) of a book with a marked price ₹1,500 under the following discount schemes?
+(i) Two successive discounts of 20% each
+(ii) Two successive discounts of 30% and 10%
+(1) 12
+(2) 15
+(3) 18
+(4) 20
+= 2
+~ Scheme (i): 1500 × 0.80 × 0.80 = ₹960. Scheme (ii): 1500 × 0.70 × 0.90 = ₹945. The difference in sale price is 960 − 945 = ₹15.
+
+Q 49 | qa | Simple & Compound Interest
+Shan has ₹1612 with him. He divided it amongst his sons Piyush and Manoj and asked them to invest it at 8% rate of interest compounded annually. It was seen that Piyush and Manoj got same amount after 12 and 13 years respectively. How much (in ₹) did Shan give to Piyush?
+(1) 687
+(2) 875
+(3) 837
+(4) 775
+= 3
+~ Piyush waits 12 years and Manoj 13 years, and both get equal amounts at 8% compound interest, so Piyush's share = 1.08 × Manoj's share. Then Manoj × 2.08 = 1612 gives Manoj ₹775 and Piyush ₹837.
+
+Q 50 | qa | HCF & LCM
+The smallest natural number which is divisible by 26, 8, 11 and 13 is:
+(1) 1201
+(2) 1082
+(3) 1126
+(4) 1144
+= 4
+~ The smallest number divisible by all of them is their LCM. 26 = 2 × 13, 8 = 2³, 11 and 13 are prime, so LCM = 2³ × 11 × 13 = 1144.
+
+Q 51 | qa | Time, Speed & Distance
+Manoj travels from City A to City B. If Manoj drives his car at 1/5 of his normal speed, then he reaches City B 36 minutes late. Find the time (in minutes) that Manoj would have taken to travel from City A to City B if he drove at his normal speed.
+(1) 18
+(2) 14
+(3) 7
+(4) 9
+= 4
+~ At 1/5 of the speed the same distance takes 5 times as long. If the normal time is t, then 5t − t = 4t = 36 minutes, so t = 9 minutes.
+
+Q 52 | qa | Number System & Simplification
+Find the value of [(50 ÷ 5) × {72/3 + 12/1 × (8 − 7)}].
+(1) 357
+(2) 342
+(3) 355
+(4) 360
+= 4
+~ Innermost first: 8 − 7 = 1; 72/3 = 24; 12/1 × 1 = 12; so the curly bracket is 24 + 12 = 36. Then 50 ÷ 5 = 10, and 10 × 36 = 360.
+
+Q 53 | qa | Number System & Simplification
+Evaluate: (-9) - (-60) ÷ (-15) + (-3) × 7
+(1) -34
+(2) -33
+(3) -37
+(4) -36
+= 1
+~ Division and multiplication first: (−60) ÷ (−15) = 4 and (−3) × 7 = −21. Then (−9) − 4 + (−21) = −34.
+
+Q 54 | qa | Profit, Loss & Discount
+Sachin sold 152 chairs and had a gain equal to the selling price of 52 chairs. What is his profit percentage?
+(1) 47%
+(2) 62%
+(3) 52%
+(4) 57%
+= 3
+~ Let one chair sell for ₹1. Selling 152 chairs brings ₹152 and the gain is ₹52, so the cost is ₹100. Profit % = 52/100 × 100 = 52%.
+
+Q 55 | qa | Average
+A university has 500 faculty members (male and female only) out of which females are 60%. The average height of females is 162 cm and that of males is 168 cm. What is the average faculty height (in cm) of the university?
+(1) 125.4
+(2) 176.4
+(3) 146.4
+(4) 164.4
+= 4
+~ 60% of 500 = 300 women and 200 men. Average height = (300 × 162 + 200 × 168) ÷ 500 = (48600 + 33600) ÷ 500 = 164.4 cm. Equivalently 0.6 × 162 + 0.4 × 168 = 164.4.
+
+Q 56 | qa | Ratio & Proportion
+The mean proportional between 2.8 and 0.7 is:
+(1) 1.4
+(2) 1.8
+(3) 1.9
+(4) 1.2
+= 1
+~ The mean proportional of a and b is √(ab) = √(2.8 × 0.7) = √1.96 = 1.4.
+
+Q 57 | qa | Simple & Compound Interest
+When difference between compound and simple interest for three years is ₹244 at 5% interest per annum, the principal is ₹______
+(1) 31425
+(2) 33200
+(3) 32000
+(4) 32420
+= 3
+~ For 3 years, CI − SI = P × r² × (3 + r), with r = 0.05: P × 0.0025 × 3.05 = 0.007625P. So 0.007625P = 244 and P = ₹32,000.
+
+Q 58 | qa | Percentage
+The price of fuel decreases by 55%, 10% and 20% in three successive months, but increases by 65% in the fourth month. What is the percentage increase/decrease in the price of fuel in the fourth month as compared to its original price?
+(1) Increases by 51.62%
+(2) Increases by 48.43%
+(3) Decreases by 46.54%
+(4) Decreases by 50.53%
+= 3
+~ Multiply the factors: 0.45 × 0.90 × 0.80 × 1.65 = 0.5346. The price is 53.46% of the original, a decrease of 46.54%.
+
+Q 59 | qa | Mensuration
+If the edge of a cube is tripled, then its volume increases to _______ times its original volume.
+(1) 64
+(2) 27
+(3) 8
+(4) 9
+= 2
+~ Volume of a cube = edge³. If the edge becomes 3 times, the volume becomes 3³ = 27 times the original.
+
+Q 60 | qa | Time, Speed & Distance
+A man goes to Ahmedabad from Kolkata at a speed of 78km/hr and returns to Kolkata at speed of 91km/hr, through same route. What is his average speed (in km/hr) of the entire journey?
+(1) 78
+(2) 81
+(3) 84
+(4) 85
+= 3
+~ For equal distances at two speeds, average speed = 2xy ÷ (x + y) = 2 × 78 × 91 ÷ 169 = 14196 ÷ 169 = 84 km/h.
+
+Q 61 | eng | Fill in the Blanks
+Select the most appropriate option to fill in the blanks.
+The (1)___ city was filled with bustling markets, towering (2)___, and narrow streets, making it an exciting place to (3)___ daily.
+(1) (1)explore ; (2) vibrant ; (3) skyscrapers
+(2) (1) vibrant ; (2) skyscrapers ; (3) explore
+(3) (1) skyscrapers ; (2) explore ; (3) vibrant
+(4) (1) vibrant ; (2) explore ; (3) skyscrapers
+= 2
+~ 'The vibrant city' (full of life), 'towering skyscrapers' (very tall buildings) and 'an exciting place to explore daily' make sense in that order. In the other options a noun or verb lands where an adjective is needed, or the reverse.
+
+Q 62 | eng | Idioms & One-word Substitution
+Select the option that best expresses the meaning of the underlined idiom.
+Tushara was asked to gather demographic data that could be useful down the road.
+(1) On the way
+(2) In the future
+(3) In an informal way
+(4) In the present
+= 2
+~ 'Down the road' means at some time in the future: the data could be useful later on. It does not mean on the way, informally or in the present.
+
+Q 63 | eng | Vocabulary
+Select the most appropriate synonym of the word 'inconsistencies' to fill in the blank.
+As the engineers reviewed the data from the Mars rover, they were particularly interested in any ___________ that might indicate a malfunction on the vehicle.
+(1) anomalies
+(2) confirmations
+(3) transmissions
+(4) specifications
+= 1
+~ 'Anomalies' are things that differ from what is normal or expected, so it is the synonym of 'inconsistencies' and fits engineers looking for signs of a fault. 'Confirmations', 'transmissions' and 'specifications' do not mean irregularities.
+
+Q 64 | eng | Spelling
+Select the correct spelling of the incorrectly spelt word in the given sentence.
+The librarian helped him find the information in an obscure referance book.
+(1) referent
+(2) refferance
+(3) reference
+(4) referrence
+= 3
+~ The correct spelling is 'reference' (re-fer-ence, with one f and one r in the middle). 'Referance', 'refferance' and 'referrence' are wrong, and 'referent' is a different word.
+
+Q 65 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Dejection
+(1) Cheer
+(2) Malnutrition
+(3) Stagnancy
+(4) Glamour
+= 1
+~ 'Dejection' is a feeling of sadness and low spirits. Its opposite is 'cheer', happiness. 'Malnutrition', 'stagnancy' and 'glamour' are unrelated.
+
+Q 66 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a grammatical error.
+(A) She confidently presented her findings to the committee, / (B) articulating her ideas clear / (C) and impressing everyone / (D) with her extensive research and knowledge.
+(1) B
+(2) C
+(3) A
+(4) D
+= 1
+~ The error is in segment B: 'articulating her ideas clear' needs the adverb 'clearly', because it describes how she articulated. Segments A, C and D are correct.
+
+Q 67 | eng | Vocabulary
+Select the most appropriate option to fill in the blank. Determine the collocation through the sentence.
+When she received the news about the death of her uncle, she ________ into tears.
+(1) bowed
+(2) started
+(3) shed
+(4) burst
+= 4
+~ The fixed collocation is 'burst into tears', to start crying suddenly. 'Started into', 'shed into' and 'bowed into' are not used (one 'sheds tears' but does not 'shed into tears').
+
+Q 68 | eng | Error Spotting & Sentence Improvement
+Parts of the following sentence have been given as options. Select the option that contains an adverb-usage error.
+Mr. Daniel, the police officer, commented, 'The fire clumsily spread through the building'.
+(1) 'The fire clumsily spread
+(2) through the building'.
+(3) commented,
+(4) Mr. Daniel, the police officer,
+= 1
+~ 'Clumsily' (awkwardly, carelessly) describes a person's actions and cannot describe how fire spreads. An adverb such as 'quickly' or 'rapidly' is needed, so the error is in 'The fire clumsily spread'.
+
+Q 69 | eng | Fill in the Blanks
+Select the most appropriate option to fill in the blank.
+Her _________ behaviour in the interview revealed her clear state of mind.
+(1) shrouded
+(2) subtle
+(3) conspicuous
+(4) obscure
+= 3
+~ Behaviour that 'revealed her clear state of mind' was easy to see, so 'conspicuous' (clearly noticeable) fits. 'Shrouded' and 'obscure' mean hidden or unclear, and 'subtle' means hard to notice, which contradicts 'revealed'.
+
+Q 70 | eng | Idioms & One-word Substitution
+Select the most appropriate phrase to substitute the underlined word in the given sentence.
+Shahid Bhagat Singh was a patriot completely.
+(1) down and out
+(2) through and through
+(3) by and by
+(4) off and on
+= 2
+~ 'Through and through' means completely, in every way: Bhagat Singh was a patriot through and through. 'Down and out' means poor, 'by and by' means before long, and 'off and on' means now and then.
+
+Q 71 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Meager
+(1) Unfortunate
+(2) Unsafe
+(3) Unbiased
+(4) Adequate
+= 4
+~ 'Meagre' (US 'meager') means too small in amount, insufficient. The antonym is 'adequate', enough. 'Unfortunate', 'unsafe' and 'unbiased' are unrelated.
+
+Q 72 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Resilient
+(1) Strong
+(2) Antique
+(3) Coarse
+(4) Content
+= 1
+~ 'Resilient' means able to recover quickly from difficulty, tough. 'Strong' is the closest synonym. 'Antique', 'coarse' and 'content' do not fit.
+
+Q 73 | eng | Vocabulary
+Select the option that best defines the given word.
+Dismay
+(1) Something very cumbersome
+(2) Horrifyingly wicked
+(3) Showing admiration
+(4) A feeling of unhappiness
+= 4
+~ 'Dismay' is a feeling of distress, disappointment or unhappiness, usually at something unexpected. Option 4 matches; 'cumbersome', 'wicked' and 'admiration' describe other ideas.
+
+Q 74 | eng | Fill in the Blanks
+Select the most appropriate option to fill in blank.
+I would like to know _____ this machine works.
+(1) whatever
+(2) how
+(3) what
+(4) that
+= 2
+~ To ask about the method or way something works, we use 'how': I would like to know how this machine works. 'What', 'whatever' and 'that' do not express manner here.
+
+Q 75 | eng | Spelling
+Select the INCORRECTLY spelt word.
+(1) Legible
+(2) Vandetta
+(3) Necessity
+(4) Chronology
+= 2
+~ 'Vandetta' is misspelt; the correct word is 'vendetta', a long bitter feud. 'Legible', 'necessity' and 'chronology' are spelt correctly.
+
+Q 76 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Deoxyribonucleic acid (DNA) is a very special molecule. It (1)__________________ as the code for all life on Earth, holding the cellular instructions to (2)______________ everything from a beetle to a human. Because DNA is (3)_________________ to each species, it’s like a product barcode in a supermarket. As animals and plants live their lives, they (4)________________ fragments of their DNA into their environment (5)_________________ dead skin, hair, saliva, scat, leaves or pollen. These traces make up environmental DNA. There’s enough DNA in water and even air to tell species apart.
+Select the most appropriate option to fill in blank no. 1.
+(1) acts
+(2) keeps
+(3) delivers
+(4) present
+= 1
+~ 'Acts as' means works as or serves as: DNA acts as the code for all life. 'Keeps as', 'delivers as' and 'present as' do not fit grammatically or in meaning.
+
+Q 77 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Deoxyribonucleic acid (DNA) is a very special molecule. It (1)__________________ as the code for all life on Earth, holding the cellular instructions to (2)______________ everything from a beetle to a human. Because DNA is (3)_________________ to each species, it’s like a product barcode in a supermarket. As animals and plants live their lives, they (4)________________ fragments of their DNA into their environment (5)_________________ dead skin, hair, saliva, scat, leaves or pollen. These traces make up environmental DNA. There’s enough DNA in water and even air to tell species apart.
+Select the most appropriate option to fill in blank no. 2.
+(1) clarify
+(2) make
+(3) stop
+(4) finish
+= 2
+~ DNA holds the instructions to 'make' (build) every living thing, from a beetle to a human. 'Clarify', 'stop' and 'finish' do not describe building an organism.
+
+Q 78 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Deoxyribonucleic acid (DNA) is a very special molecule. It (1)__________________ as the code for all life on Earth, holding the cellular instructions to (2)______________ everything from a beetle to a human. Because DNA is (3)_________________ to each species, it’s like a product barcode in a supermarket. As animals and plants live their lives, they (4)________________ fragments of their DNA into their environment (5)_________________ dead skin, hair, saliva, scat, leaves or pollen. These traces make up environmental DNA. There’s enough DNA in water and even air to tell species apart.
+Select the most appropriate option to fill in blank no. 3.
+(1) usual
+(2) unique
+(3) slight
+(4) common
+= 2
+~ DNA is compared to a product barcode, which identifies one item only, so DNA is 'unique' to each species. 'Usual' and 'common' say the opposite, and 'slight' does not fit.
+
+Q 79 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Deoxyribonucleic acid (DNA) is a very special molecule. It (1)__________________ as the code for all life on Earth, holding the cellular instructions to (2)______________ everything from a beetle to a human. Because DNA is (3)_________________ to each species, it’s like a product barcode in a supermarket. As animals and plants live their lives, they (4)________________ fragments of their DNA into their environment (5)_________________ dead skin, hair, saliva, scat, leaves or pollen. These traces make up environmental DNA. There’s enough DNA in water and even air to tell species apart.
+Select the most appropriate option to fill in blank no. 4.
+(1) melt
+(2) treat
+(3) strike
+(4) shed
+= 4
+~ Living things 'shed' bits of DNA into their surroundings, as they shed skin, hair or leaves. 'Melt', 'treat' and 'strike' make no sense here.
+
+Q 80 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Deoxyribonucleic acid (DNA) is a very special molecule. It (1)__________________ as the code for all life on Earth, holding the cellular instructions to (2)______________ everything from a beetle to a human. Because DNA is (3)_________________ to each species, it’s like a product barcode in a supermarket. As animals and plants live their lives, they (4)________________ fragments of their DNA into their environment (5)_________________ dead skin, hair, saliva, scat, leaves or pollen. These traces make up environmental DNA. There’s enough DNA in water and even air to tell species apart.
+Select the most appropriate option to fill in blank no. 5.
+(1) above
+(2) farther
+(3) through
+(4) for
+= 3
+~ The DNA is released 'through' dead skin, hair, saliva and the like, meaning by means of them. 'Above', 'farther' and 'for' do not express this.

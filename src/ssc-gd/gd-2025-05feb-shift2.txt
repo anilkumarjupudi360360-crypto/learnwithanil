@@ -1,0 +1,782 @@
+# SSC Constable (GD) in CAPFs, SSF, Rifleman (GD) in Assam Rifles and Sepoy in NCB Examination 2025, held 5 February 2025, Shift 2 (12:00 PM). 80 questions, 160 marks, 60 minutes (Part D: English).
+# Source: SSC's question paper as candidates print it from SSC's portal (the response sheet; copy via Prepp); answers are the options SSC marked correct on it (answer-key stage). Explanations by Learn with Anil.
+
+Q 1 | rea | Non-verbal Reasoning
+A paper is folded and punched as shown below. How will it appear when
+unfolded?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+! img/g25d05s2-q1.png
+~ The paper is folded twice, top half down and then left half over to the right, and the cut is made in the bottom-right quarter. On opening, the cut appears in all four quarters, each copy a mirror image of its neighbour across the fold: the left copies face the other way (semicircle and dot on the outer left edge), and the top copies are upside down (the corner of the bracket at the top instead of the bottom). Only option 3 shows both reflections; option 1 does not flip the top row, and options 2 and 4 do not reflect left and right.
+
+Q 2 | rea | Blood Relations & Directions
+In a certain code language,
+'A + B' means ‘A is the daughter of B’,
+'A – B' means ‘A is the brother of B’,
+'A × B' means ‘A is the wife of B’ and
+'A ÷ B' means ‘ A is the father of B’.
+Based on the above, how is P related to T if ‘P + Q ÷ R × S – T’?
+(1) Brother's wife's sister
+(2) Wife's sister
+(3) Brother's wife's mother
+(4) Wife's mother
+= 1
+~ P + Q: P is Q's daughter. Q ÷ R: Q is R's father, so P and R are sisters. R × S: R is S's wife. S − T: S is T's brother. So R is T's brother's wife, and P, R's sister, is T's brother's wife's sister.
+
+Q 3 | rea | Analogy & Classification
+DSXL is related to FUZN in a certain way based on the English alphabetical order. In the same way, GMUB is related to IOWD. To which of the following is TFON related, following the same logic?
+(1) SEQP
+(2) VHQP
+(3) SENM
+(4) VHNM
+= 2
+~ DSXL to FUZN: every letter moves 2 places forward (D+2 = F, S+2 = U, X+2 = Z, L+2 = N). GMUB to IOWD does the same. TFON + 2 on each letter gives VHQP.
+
+Q 4 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+19 + 55 × 5 − 7 ÷ 3 =?
+(1) 33
+(2) 41
+(3) 29
+(4) 37
+= 3
+~ After interchanging, 19 + 55 × 5 − 7 ÷ 3 becomes 19 − 55 ÷ 5 + 7 × 3. Divide and multiply first: 11 and 21. Then 19 − 11 + 21 = 29.
+
+Q 5 | rea | Arrangement & Puzzles
+Eight people are sitting in two parallel rows containing 4 people each in such a way that there is equal distance between adjacent persons.
+In row 1 – L, M, N and O are seated and all of them are facing south.
+In row 2 – P, Q, R and S are seated and all of them are facing north.
+Thus, each person faces another person from the other row. Q sits to the immediate right of S. Only two people sit between L and M. S faces L. The one who faces N, sits to the immediate left of P. R does not sit at any of the extreme ends.
+Who among the following faces O?
+(1) P
+(2) S
+(3) R
+(4) Q
+= 4
+~ Number seats 1 to 4 from west to east; row 2 faces north (its right is east). Only two people between L and M puts them at the two ends of row 1. S faces L and Q is just right of S, so S is in seat 1 (L in 1) and Q in 2. R is not at an end, so R is in 3 and P in 4. The person facing N is just left of P, that is R in seat 3, so N is in 3, M in 4 and O in 2. O faces Q.
+
+Q 6 | rea | Series
+What should come in place of the question mark (?) in the given series?
+878 880 884 890 898 ?
+(1) 904
+(2) 906
+(3) 908
+(4) 910
+= 3
+~ The differences are 2, 4, 6, 8: they rise by 2. The next difference is 10, so the next number is 898 + 10 = 908.
+
+Q 7 | rea | Analogy & Classification
+Select the Venn diagram that best illustrates the relationship between the following classes.
+Married, Women, Doctors
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/g25d05s2-q7.png
+~ A married person can be a woman and a doctor, a woman can be a doctor without being married, and so on: every pair of these classes overlaps and some people belong to all three (married women doctors). Three mutually overlapping circles, option 1, show this.
+
+Q 8 | rea | Coding-Decoding
+In a certain code language, 'MRGF' is coded as '15-20-9-8' and 'YDXB' is coded as '27-6- 26-4'. What is the code for 'JWAS' in the given code language?
+(1) 14-27-5-23
+(2) 11-23-2-22
+(3) 12-25-3-21
+(4) 16-28-6-24
+= 3
+~ Each letter is written as its alphabet position plus 2: M (13) = 15, R (18) = 20, G (7) = 9, F (6) = 8; and Y = 27, D = 6, X = 26, B = 4. For JWAS: J (10) = 12, W (23) = 25, A (1) = 3, S (19) = 21, so 12-25-3-21.
+
+Q 9 | rea | Analogy & Classification
+DKSO is related to CIPK in a certain way based on the English alphabetical order. In the same way, LAPZ is related to KYMV. To which of the given options is EYGN related, following the same logic?
+(1) BWDK
+(2) DWDJ
+(3) BVDK
+(4) CVCI
+= 2
+~ DKSO to CIPK: the letters move back 1, 2, 3 and 4 places (D−1 = C, K−2 = I, S−3 = P, O−4 = K). LAPZ to KYMV follows the same pattern. For EYGN: E−1 = D, Y−2 = W, G−3 = D, N−4 = J, giving DWDJ.
+
+Q 10 | rea | Non-verbal Reasoning
+Identify the figure given in the options, which when put in place of the question mark (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/g25d05s2-q10.png
+~ Inside the square, the small arrow moves one corner anticlockwise each time (top-left, bottom-left, bottom-right, top-right) and the circle does the same one corner ahead of it. So next the arrow is at the top left and the circle at the bottom left. The outside arrow moves anticlockwise round the square (bottom, right, top-right corner, top-left corner), so next it is on the left side pointing left. Option 4 shows all three.
+
+Q 11 | rea | Miscellaneous Reasoning
+The position(s) of how many letters will remain unchanged if each letter in the word SCRAMBLE is arranged in the English alphabetical order?
+(1) Three
+(2) None
+(3) One
+(4) Two
+= 2
+~ SCRAMBLE in alphabetical order is A B C E L M R S. Compare with S C R A M B L E place by place: S/A, C/B, R/C, A/E, M/L, B/M, L/R, E/S. No letter keeps its position, so the answer is none.
+
+Q 12 | rea | Series
+What should come in place of the question mark (?) in the given series?
+83 95 108 122 137 ?
+(1) 148
+(2) 153
+(3) 166
+(4) 172
+= 2
+~ The differences are 12, 13, 14, 15: one more each time. The next difference is 16, so the next number is 137 + 16 = 153.
+
+Q 13 | rea | Non-verbal Reasoning
+A dice has its faces marked by letters C, L, A, U, T and E. Two positions of the same dice are shown in the given figures. Which face is opposite to face A?
+(1) T
+(2) E
+(3) C
+(4) U
+= 2
+! img/g25d05s2-q13.png
+~ E is in the same place in both views. Its neighbours are L and T in one view and C and U in the other, so L, T, C and U are adjacent to E. The only face left, A, must be opposite E.
+
+Q 14 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+All cars are rabbits.
+All rabbits are bananas.
+All bananas are lamps.
+Conclusions:
+(I): All cars are lamps.
+(II): Some lamps are rabbits.
+(1) Only conclusion (I) follows.
+(2) Only conclusion (II) follows.
+(3) Both conclusions (I) and (II) follow.
+(4) Neither conclusion (I) nor (II) follows.
+= 3
+~ Cars are inside rabbits, rabbits inside bananas, and bananas inside lamps, so cars are inside lamps: all cars are lamps (I follows). All rabbits are lamps, so some lamps are certainly rabbits (II follows). Both conclusions follow.
+
+Q 15 | rea | Arrangement & Puzzles
+Seven people A, B, C, D, E, F and G are sitting in a straight line facing the north(but not necessarily in the same order). G and C are sitting at the ends of the line not necessarily in the same order. F is sitting to the immediate right of G and the immediate left of D. E is sitting to the immediate right of D. A is sitting second to the right of E. B is sitting second to the left of C. Who is sitting between B and C?
+(1) E
+(2) F
+(3) A
+(4) D
+= 3
+~ F is just right of G and just left of D, and E just right of D: G F D E. G and C are at the ends, so G is at the left end and C at the right: G F D E _ _ C. A is second to the right of E (sixth place) and B second to the left of C (fifth place): G F D E B A C. A sits between B and C.
+
+Q 16 | rea | Series
+Select the option that represents the letters that, when sequentially placed from left to right in the blanks below, will complete the letter series.
+A _ _ F D _ S G F _ A _ _ F D A S _ _ D
+(1) SGADGSDF
+(2) SGADGSGF
+(3) SGADSGGF
+(4) SGADAGGF
+= 3
+~ Filling the blanks with S, G, A, D, S, G, G, F gives A S G F D | A S G F D | A S G F D | A S G F D: the block 'ASGFD' repeats four times.
+
+Q 17 | rea | Series
+What should come in place of the question mark (?) in the given series based on the English alphabetical order?
+GID KMH OQL SUP ?
+(1) WYR
+(2) RWT
+(3) WYT
+(4) VXS
+= 3
+~ Read position by position. First letters G, K, O, S (+4), so W. Second letters I, M, Q, U (+4), so Y. Third letters D, H, L, P (+4), so T. The next term is WYT.
+
+Q 18 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) GKI
+(2) MQO
+(3) SWU
+(4) KON
+= 4
+~ In GKI, MQO and SWU the steps are +4 and then −2 (G-K-I, M-Q-O, S-W-U). In KON the steps are +4 and −1, so KON does not belong.
+
+Q 19 | rea | Non-verbal Reasoning
+Select the option figure in which the given figure (X) is embedded as its part (rotation is NOT allowed).
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/g25d05s2-q19.png
+~ The figure (X) is a narrow four-sided shape with one slanting side and a short top. Only option 2 contains these lines, in the same size and the same direction, as part of its pattern. The other options would need the figure to be turned or have lines at the wrong angles.
+
+Q 20 | rea | Coding-Decoding
+In a certain code language, 'WEDS' is coded as '3' and 'MAIUFQX' is coded as '6'. How is 'GIQRBZLA' coded in the given language?
+(1) 7
+(2) 8
+(3) 5
+(4) 4
+= 1
+~ The code is the number of letters minus 1: WEDS has 4 letters (code 3) and MAIUFQX has 7 (code 6). GIQRBZLA has 8 letters, so its code is 7.
+
+Q 21 | geo | Environment & Ecology
+The increased concentration of suspended solids in water and their accumulation on bottoms where they are undesirable, creates what kind of water pollution?
+(1) Siltation
+(2) Microbiological pollution
+(3) Nutrient pollution
+(4) Thermal pollution
+= 1
+~ Siltation is pollution by fine soil particles (silt and clay) suspended in water that settle on river beds and lake bottoms, smothering aquatic life and reducing water depth. It is caused mostly by erosion from farming, construction and deforestation.
+
+Q 22 | sci | Physics
+Which law is Willebrod Snell's most important contribution to science?
+(1) Law of electrolysis
+(2) Law of viscosity
+(3) Law of refraction
+(4) Law of motion
+= 3
+~ Willebrord Snell (Snellius), a Dutch scientist, gave the law of refraction (Snell's law): n₁ sin i = n₂ sin r, the ratio of the sines of the angles of incidence and refraction is constant for a pair of media. Faraday gave the laws of electrolysis and Newton the laws of motion.
+
+Q 23 | eco | Agriculture, Industry & Trade
+Which of the following was a new agricultural practice introduced during the Green Revolution?
+(1) Use of traditional seeds
+(2) Use of modern irrigation techniques
+(3) Reliance on animal labour
+(4) Organic farming methods
+= 2
+~ The Green Revolution brought high-yielding variety seeds, chemical fertilisers, pesticides, tube-wells and other modern irrigation, and machinery. Traditional seeds, animal labour and organic farming belong to the older methods it replaced.
+
+Q 24 | geo | World & Physical Geography
+Which of the following generally form at the upper part of a river?
+(1) Meanders
+(2) Oxbow lakes
+(3) Gorges
+(4) Floodplains
+= 3
+~ In its upper course a river flows fast down steep slopes and cuts deep, narrow valleys such as V-shaped valleys, gorges and canyons. Meanders, oxbow lakes and floodplains form in the middle and lower course, where the river slows down.
+
+Q 25 | pol | Judiciary & Constitutional Bodies
+The Attorney General of India provides legal advice to _________.
+(1) Governor of the State
+(2) Chief Minister of the State
+(3) Union Government
+(4) Chief Justice of India
+= 3
+~ Under Article 76 the Attorney General of India is the highest law officer of the country and advises the Government of India (the Union Government) on legal matters. The Advocate General (Article 165) advises a state government.
+
+Q 26 | eco | Agriculture, Industry & Trade
+What was the pre-determined principle announced in the Union Budget for 2018-19 regarding the Minimum Support Price (MSP) for the principal crops in India?
+(1) 50 per cent less than the cost of production
+(2) One-and-a-half times the cost of production
+(3) Equal to the cost of production
+(4) Double the cost of production
+= 2
+~ The Union Budget 2018-19 announced that the MSP for kharif and other notified crops would be fixed at least one-and-a-half times the cost of production (50% return over cost). This was applied from the kharif season of 2018.
+
+Q 27 | cur | Static GK & Culture
+In which month does the Rann Utsav start at Kachchh, Gujarat?
+(1) April
+(2) November
+(3) February
+(4) May
+= 2
+~ The Rann Utsav at Dhordo in the white desert of Kachchh (Gujarat) begins around November and runs into February, coinciding with the winter full moons when the salt flats are dry.
+
+Q 28 | ih | Modern India
+The Government of India Act, 1935 provided for how many lists of divisions of power between the federation (central government) and provinces?
+(1) One list
+(2) Four lists
+(3) Two lists
+(4) Three lists
+= 4
+~ The Government of India Act, 1935 divided powers into three lists: the Federal List (59 items), the Provincial List (54) and the Concurrent List (36). Residuary powers were given to the Viceroy. The Constitution of India later kept this three-list scheme.
+
+Q 29 | cur | Sports
+In which sport does the “Timed Out” rule apply?
+(1) Wrestling
+(2) Badminton
+(3) Cricket
+(4) Judo
+= 3
+~ 'Timed out' is a way of being dismissed in cricket: a new batter must be ready to face the ball within a set time (2 minutes in ODIs) after a wicket. Angelo Mathews of Sri Lanka became the first batter timed out in international cricket at the 2023 World Cup.
+
+Q 30 | eco | Schemes & Welfare
+The Union Cabinet chaired by Prime Minister, approved which scheme to promote sustainable agriculture and to achieve food security for self sufficiency in October 2024?
+(1) National Mission on Agricultural Extension and Technology
+(2) National Mission on Oilseeds and Oil Palm
+(3) National Food Security Mission
+(4) PM Rashtriya Krishi Vikas Yojana
+= 4
+~ On 3 October 2024 the Union Cabinet approved rationalising the agriculture ministry's centrally sponsored schemes into two umbrella schemes: PM Rashtriya Krishi Vikas Yojana (PM-RKVY), to promote sustainable agriculture, and Krishonnati Yojana, for food security and self-sufficiency, with a total outlay of about ₹1,01,321 crore.
+
+Q 31 | geo | Indian Geography
+As per Census 2011, which of the following northern states has the highest literacy rate?
+(1) Haryana
+(2) Uttarakhand
+(3) Punjab
+(4) Himachal Pradesh
+= 4
+~ Census 2011 literacy rates: Himachal Pradesh about 82.8%, Uttarakhand 78.8%, Punjab 75.8% and Haryana 75.6%. Himachal Pradesh is the highest of these northern states.
+
+Q 32 | ih | Ancient India
+According to the Vishnu Purana, who was Chandragupta Maurya's mother?
+(1) The wife of a Nanda king
+(2) Mura, daughter of a hunter
+(3) A Greek noblewoman
+(4) Subhadrangi, daughter of a Brahmin
+= 2
+~ According to the tradition recorded in the Vishnu Purana and its commentaries, Chandragupta Maurya's mother was Mura, a woman of humble birth (here described as a hunter's daughter), and the name 'Maurya' is said to come from her.
+
+Q 33 | cur | National
+The President of India, Droupadi Murmu, was previously the Governor of ____________.
+(1) Jharkhand
+(2) Odisha
+(3) Uttar Pradesh
+(4) Assam
+= 1
+~ Droupadi Murmu was the first woman Governor of Jharkhand (2015–2021) before being elected the 15th President of India in July 2022. She is from Odisha, where she had been a minister.
+
+Q 34 | cur | Awards, Books & Persons
+Padmashree Mukund Nayak was honoured with the Sangeet Natak Akademi Award 2017 for which of the following categories?
+(1) Folk music
+(2) Qawwali
+(3) Carnatic music
+(4) Hindustani classical music
+= 1
+~ Mukund Nayak is a Nagpuri folk singer and dancer from Jharkhand. He received the Sangeet Natak Akademi Award for folk music (2017) and the Padma Shri in 2017.
+
+Q 35 | eco | Planning, Growth & Budget
+When was the First Five-Year Plan launched in India?
+(1) 1951
+(2) 1956
+(3) 1950
+(4) 1947
+= 1
+~ The First Five-Year Plan was launched in 1951 and ran from 1951 to 1956. It was based on the Harrod–Domar model and gave priority to agriculture. The Planning Commission had been set up in March 1950.
+
+Q 36 | cur | Sports
+What is the standard width of the field in an international hockey match?
+(1) 45 m
+(2) 55 m
+(3) 50 m
+(4) 60 m
+= 2
+~ A standard field hockey pitch is 91.4 m (100 yards) long and 55 m (60 yards) wide.
+
+Q 37 | cur | Static GK & Culture
+Which classical dance form originated in Kuchelapuram village of Krishna district?
+(1) Kathakali
+(2) Mohiniattam
+(3) Kuchipudi
+(4) Kathak
+= 3
+~ Kuchipudi takes its name from Kuchipudi (Kuchelapuram) village in Krishna district, Andhra Pradesh, where it was developed as a dance-drama tradition by Siddhendra Yogi. Kathakali and Mohiniattam are from Kerala and Kathak from north India.
+
+Q 38 | cur | Awards, Books & Persons
+87-year-old Ramlal Bareth, the only surviving Kathak Dancer of Raigarh court, was awarded with which of the following awards in 2024?
+(1) Padma Vibhushan
+(2) Sahitya Academy Award
+(3) Padma Shri
+(4) Padma Bhushan
+= 3
+~ Ramlal Bareth of Raigarh, Chhattisgarh, the last surviving Kathak dancer of the Raigarh court tradition, received the Padma Shri in 2024 for his contribution to Kathak.
+
+Q 39 | ih | Modern India
+The Quit India Resolution was passed during which session of the Indian National Congress?
+(1) Calcutta Session
+(2) Bombay Session
+(3) Karachi Session
+(4) Lahore Session
+= 2
+~ The Quit India Resolution was passed by the All-India Congress Committee at its Bombay session at Gowalia Tank Maidan on 8 August 1942, where Gandhi gave the call 'Do or Die'.
+
+Q 40 | geo | Indian Geography
+According to Census 2011, in which State is the difference in the male and female literacy rates the highest?
+(1) Rajasthan
+(2) Bihar
+(3) Jharkhand
+(4) Madhya Pradesh
+= 1
+~ Census 2011 shows the biggest gap between male and female literacy in Rajasthan: about 79.2% for men against 52.1% for women, a gap of about 27 percentage points.
+
+Q 41 | qa | Simple & Compound Interest
+Mahesh has ₹1617 with him. He divided it amongst his sons Vijay and Ajay and asked them to invest it at 10% rate of interest compounded annually. It was seen that Vijay and Ajay got same amount after 15 and 16 years respectively. How much (in ₹) did Mahesh give to Vijay?
+(1) 847
+(2) 697
+(3) 870
+(4) 770
+= 1
+~ Vijay waits 15 years and Ajay 16, and both get equal amounts at 10% compound interest, so Vijay's share = 1.1 × Ajay's share. Then Ajay × 2.1 = 1617 gives Ajay ₹770 and Vijay ₹847.
+
+Q 42 | qa | Average
+The average age of 30 students in a group is 18 years. When the teacher's age is included, the average age of the group increases by 1 year. What is the teacher's age (in years)?
+(1) 49
+(2) 56
+(3) 40
+(4) 45
+= 1
+~ The teacher raises the average of 31 people by 1 year over the students' 18, so the teacher's age = 18 + 31 × 1 = 49 years. Check: 31 × 19 − 30 × 18 = 589 − 540 = 49.
+
+Q 43 | qa | Profit, Loss & Discount
+A dishonest shopkeeper promises to sell his goods at cost price. However, he uses a weight that actually weighs 21% less than what is written on it. Find his profit percentage.
+(1) 27 47/79%
+(2) 26 46/79%
+(3) 25 46/79%
+(4) 28 92/79%
+= 2
+~ For goods marked 1000 g he gives 21% less, that is 790 g. He gains 210 g on 790 g, so profit = 210/790 × 100 = 26 46/79% (about 26.58%).
+
+Q 44 | qa | Time, Speed & Distance
+A and B are two stations 370 km apart. A train starts from station A at 9:00 A.M. and travels towards station B at a speed of 20 km/hr. Another train starts from station B at 10:00 A.M. and travels towards station A at a speed of 50 km per/hr. At what time do they meet?
+(1) 3:00 P.M.
+(2) 2:30 P.M.
+(3) 2:00 P.M.
+(4) 1:00 P.M.
+= 1
+~ By 10:00 A.M. the first train has gone 20 km, leaving 350 km between the trains. Moving towards each other they close 20 + 50 = 70 km every hour, so they meet 350 ÷ 70 = 5 hours after 10:00 A.M., at 3:00 P.M.
+
+Q 45 | qa | HCF & LCM
+LCM and HCF of two numbers are 168 and 6 respectively. If one of the numbers is 24, then find the other number.
+(1) 45
+(2) 42
+(3) 40
+(4) 44
+= 2
+~ Product of the two numbers = LCM × HCF = 168 × 6 = 1008. The other number = 1008 ÷ 24 = 42. Check: HCF(24, 42) = 6 and LCM = 168.
+
+Q 46 | qa | Number System & Simplification
+Find the value of [(44 ÷ 4) × {48/8 + 21/5 × (7 − 2)}].
+(1) 296
+(2) 299
+(3) 313
+(4) 297
+= 4
+~ Innermost first: 7 − 2 = 5; 48/8 = 6; 21/5 × 5 = 21; so the curly bracket is 6 + 21 = 27. Then 44 ÷ 4 = 11, and 11 × 27 = 297.
+
+Q 47 | qa | Percentage
+The population of a district is 369000, out of which 186000 are males. 45% of the population is literate. If 45% males are literate, then what percentage of females are literate?
+(1) 44%
+(2) 46%
+(3) 45%
+(4) 47%
+= 3
+~ Literates: 45% of 369000 = 166050. Literate males: 45% of 186000 = 83700. Literate females = 166050 − 83700 = 82350 out of 369000 − 186000 = 183000 females, which is 45%. (When the overall rate and the male rate are both 45%, the female rate must also be 45%.)
+
+Q 48 | qa | Mensuration
+What will be the volume (V) of the cuboid, if its length is doubled, height is halved and breadth is tripled?
+(1) 4V
+(2) 2V
+(3) 6V
+(4) 3V
+= 4
+~ Volume = length × breadth × height. The new volume = 2 × 3 × ½ = 3 times the old, so 3V.
+
+Q 49 | qa | Average
+The average weight of Anwar, Amit and Gopal is 45 kg. If the average weight of Anwar and Amit be 43 kg and that of Amit and Gopal be 42 kg, then the weight of Amit (in kg) is:
+(1) 35
+(2) 45
+(3) 55
+(4) 50
+= 1
+~ Anwar + Amit + Gopal = 45 × 3 = 135 kg. Anwar + Amit = 86, so Gopal = 49. Amit + Gopal = 84, so Amit = 84 − 49 = 35 kg.
+
+Q 50 | qa | Number System & Simplification
+Evaluate: 32 ÷ 8 × 3 - 3 × 3
+(1) 5
+(2) 2
+(3) 6
+(4) 3
+= 4
+~ Do ÷ and × from left to right: 32 ÷ 8 = 4, 4 × 3 = 12, and 3 × 3 = 9. Then 12 − 9 = 3.
+
+Q 51 | qa | Simple & Compound Interest
+Amit invests a sum of ₹5400 and Gopal invests a sum of ₹9400 at the same rate of simple interest per annum. If, at the end of 6 years, Gopal gets ₹960 more interest than Amit, then find the rate of interest per annum (in percentage).
+(1) 6
+(2) 3
+(3) 4
+(4) 2
+= 3
+~ Gopal invests ₹4000 more than Amit, so the extra ₹960 is the interest on ₹4000 for 6 years: 4000 × r × 6 ÷ 100 = 960 gives 240r = 960, r = 4%.
+
+Q 52 | qa | Percentage
+The price of a shirt is first increased by 15% and then decreased by 12%,
+and again increased by 8%. Find the net increase or decrease percentage
+(correct to one decimal place) in the price of the shirt.
+(1) Increase of 10.6%
+(2) Increase of 9.3%
+(3) Decrease of 10.6%
+(4) Decrease of 9.3%
+= 2
+~ Multiply the factors: 1.15 × 0.88 × 1.08 = 1.09296. The price ends 9.296% higher, an increase of about 9.3%.
+
+Q 53 | qa | Number System & Simplification
+Find the value of [(91 ÷ 7) × {64/4 + 17/6 × (8 − 2)}].
+(1) 434
+(2) 447
+(3) 432
+(4) 429
+= 4
+~ Innermost first: 8 − 2 = 6; 64/4 = 16; 17/6 × 6 = 17; so the curly bracket is 16 + 17 = 33. Then 91 ÷ 7 = 13, and 13 × 33 = 429.
+
+Q 54 | qa | Time, Speed & Distance
+Two trains having lengths of 170 m and 480 m are running at speeds of 70 km/h and 80 km/h, respectively, in the same direction. The time taken (in minutes) by the faster train, coming from behind, to completely cross the other train is:
+(1) 4
+(2) 4.2
+(3) 5
+(4) 3.9
+= 4
+~ Same direction, so the relative speed is 80 − 70 = 10 km/h. The faster train must cover 170 + 480 = 650 m = 0.65 km. Time = 0.65 ÷ 10 hours = 0.065 hours = 3.9 minutes.
+
+Q 55 | qa | Time & Work
+To do a certain work, A and B work on alternate days with B beginning the work on the first day. A alone can complete the same work in 22 days. If the work gets completed in 11 1/2 days, then B alone can complete 3/4th part of the original work in:
+(1) eight days
+(2) seven days
+(3) six days
+(4) nine days
+= 3
+~ In 11½ days B works on days 1, 3, 5, 7, 9 and 11 (6 days), and A works on days 2, 4, 6, 8 and 10 plus half of day 12 (5½ days). A does 5.5/22 = 1/4 of the work, so B's 6 days complete the other 3/4. B alone needs six days for 3/4 of the work.
+
+Q 56 | qa | Ratio & Proportion
+Divide ₹4,800 among Ram, Shyam and Kartik in the ratio of 4 : 8 : 3. Find the amount received by Shyam.
+(1) ₹1,850
+(2) ₹1,680
+(3) ₹2,270
+(4) ₹2,560
+= 4
+~ The ratio 4 : 8 : 3 has 15 parts, so one part is 4800 ÷ 15 = ₹320. Shyam gets 8 parts = 8 × 320 = ₹2,560.
+
+Q 57 | qa | Ratio & Proportion
+If F1 and F2 are the fourth proportional to 2/7, 7/12, 8 and 5/6, 4/3, 10, respectively, then what is F1 : F2?
+(1) 16 : 9
+(2) 49 : 48
+(3) 49 : 16
+(4) 25 : 16
+= 2
+~ The fourth proportional to a, b, c is bc ÷ a. F1 = (7/12 × 8) ÷ (2/7) = (14/3) × (7/2) = 49/3. F2 = (4/3 × 10) ÷ (5/6) = (40/3) × (6/5) = 16. So F1 : F2 = 49/3 : 16 = 49 : 48.
+
+Q 58 | qa | Simple & Compound Interest
+Manoj has ₹1612 with him. He divided it amongst his sons Anand and Anil and asked them to invest it at 8% rate of interest compounded annually. It was seen that Anand and Anil got same amount after 13 and 14 years respectively. How much (in ₹) did Manoj give to Anand?
+(1) 875
+(2) 775
+(3) 687
+(4) 837
+= 4
+~ Anand waits 13 years and Anil 14, and both get equal amounts at 8% compound interest, so Anand's share = 1.08 × Anil's share. Then Anil × 2.08 = 1612 gives Anil ₹775 and Anand ₹837.
+
+Q 59 | qa | Profit, Loss & Discount
+A shopkeeper bought an article for ₹500. At what price (in ₹) should he sell the article to make 28% profit?
+(1) 628
+(2) 652
+(3) 640
+(4) 360
+= 3
+~ For a 28% profit, selling price = 500 × 1.28 = ₹640 (profit ₹140).
+
+Q 60 | qa | Profit, Loss & Discount
+A dealer marks 20% above the cost price and allows a 20% discount. What is the profit or loss per cent?
+(1) Loss of 4%
+(2) Profit of 1%
+(3) Loss of 1%
+(4) Profit of 4%
+= 1
+~ Take the cost price as 100. Marked price = 120, and after a 20% discount the selling price = 120 × 0.80 = 96. That is a loss of 4%. (Equal percentage rise and fall always leave a loss.)
+
+Q 61 | eng | Vocabulary
+Fill in the blank with the most appropriate synonym of the word in brackets in the following sentence.
+In that case, a gentle chemical peel from a dermatologist may ________ up (hasten) improvement.
+(1) loiter
+(2) delay
+(3) speed
+(4) stall
+= 3
+~ To 'speed up' means to hasten, make something happen faster: a chemical peel may speed up improvement. 'Loiter', 'delay' and 'stall' mean the opposite, slowing things down.
+
+Q 62 | eng | Vocabulary
+Select the option that best defines the given word.
+Apportion
+(1) To confess
+(2) To allocate
+(3) To request
+(4) To complicate
+= 2
+~ To 'apportion' is to divide and share out, to allocate: the money was apportioned among the members. 'Confess', 'request' and 'complicate' have different meanings.
+
+Q 63 | eng | Vocabulary
+Select the word that best completes the given sentence. Determine the collocation through the sentence.
+Santra took a deep breath before _____________ onto the stage to deliver her speech.
+(1) stuck
+(2) hit
+(3) made
+(4) stepping
+= 4
+~ One 'steps onto the stage': she walked up to deliver her speech. 'Stuck', 'hit' and 'made' do not combine with 'onto the stage' in this sense, and only 'stepping' fits after 'before'.
+
+Q 64 | eng | Vocabulary
+Select the appropriate ANTONYM of the given word.
+Opaque
+(1) Cloudy
+(2) Transparent
+(3) Dull
+(4) Dark
+= 2
+~ 'Opaque' means not letting light through, so the antonym is 'transparent'. 'Cloudy', 'dull' and 'dark' are closer to opaque in meaning.
+
+Q 65 | eng | Vocabulary
+Select the most appropriate synonym of the highlighted word.
+You need to have at least a rudimentary understanding of technology before you can upload a video on website.
+(1) primitive
+(2) exquisite
+(3) creative
+(4) mysterious
+= 1
+~ 'Rudimentary' means basic, at an early or simple stage. 'Primitive' (basic, undeveloped) is the closest. 'Exquisite', 'creative' and 'mysterious' are unrelated.
+
+Q 66 | eng | Idioms & One-word Substitution
+Select the most appropriate idiom that can substitute the underlined segment in the given sentence.
+Her explanation was so convoluted that it left everyone confused.
+(1) scratching their heads
+(2) turning a blind eye
+(3) stealing the show
+(4) biting the bullet
+= 1
+~ 'Left everyone scratching their heads' means left them puzzled and confused, matching 'left everyone confused'. 'Turning a blind eye' is ignoring something, 'stealing the show' is getting all the attention, and 'biting the bullet' is facing something unpleasant.
+
+Q 67 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the underlined segment in the given sentence.
+Each of the two farmers wants the certified seeds but neither have any papers.
+(1) But neither has any papers
+(2) But either has any papers
+(3) Yet neither has many papers
+(4) Yet none has many papers
+= 1
+~ 'Neither' is singular, so it takes the singular verb 'has': 'but neither has any papers'. 'Either' changes the meaning, and 'many' and 'none' do not suit two farmers.
+
+Q 68 | eng | Idioms & One-word Substitution
+Select the most appropriate idiom that refers to the underlined segment in the given sentence.
+The agents are struck in a difficult circumstance with no escape at all.
+(1) To go to the dogs
+(2) Back against the wall
+(3) To give currency
+(4) To give one a long rope
+= 2
+~ 'Back against the wall' means in a difficult situation with no way out. 'Go to the dogs' means to decline, 'give currency' means to make an idea widely known, and 'give a long rope' means to allow freedom.
+
+Q 69 | eng | Error Spotting & Sentence Improvement
+Identify the sentence with the INCORRECT usage of adverb.
+(1) Mohan could usually make out the distant figure.
+(2) Mohan could barely make out the distant figure.
+(3) Mohan could make out barely the distant figure.
+(4) Mohan could often make out the distant figure.
+= 3
+~ The adverb 'barely' should come before the verb it modifies: 'Mohan could barely make out the distant figure.' Placing it after 'make out' (sentence 3) is incorrect. The other sentences use 'usually', 'barely' and 'often' in the right place.
+
+Q 70 | eng | Spelling
+Select the INCORRECTLY spelt word in the following sentence.
+"I can't believe I recieved such a beautiful gift."
+(1) such
+(2) gift
+(3) recieved
+(4) believe
+= 3
+~ 'Recieved' should be 'received' (i before e, except after c: re-c-ei-ved). 'Believe', 'such' and 'gift' are correct.
+
+Q 71 | eng | Error Spotting & Sentence Improvement
+Parts of the following sentence have been given as options. Select the option that contains an error.
+'The rain fell heavy and caused flooding in the streets'.
+(1) and caused flooding
+(2) in the streets
+(3) fell heavy
+(4) The rain
+= 3
+~ The verb 'fell' needs an adverb: 'the rain fell heavily'. 'Fell heavy' is the error; the other parts are correct.
+
+Q 72 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Dodge
+(1) Display
+(2) Trick
+(3) Panic
+(4) Opine
+= 2
+~ As a noun, 'dodge' means a clever trick to avoid something (a tax dodge); as a verb it means to avoid quickly. 'Trick' is the closest synonym. 'Display', 'panic' and 'opine' are unrelated.
+
+Q 73 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate word segment that rectifies the bracketed word segment and complete the given sentence meaningfully.
+It took quite (few some time) to finish the project.
+(1) some time
+(2) time
+(3) some a time
+(4) a time some
+= 1
+~ The idiom is 'quite some time', meaning a fairly long time: 'It took quite some time to finish the project.' 'Few' cannot go with the uncountable 'time', and the other options are not idiomatic.
+
+Q 74 | eng | Idioms & One-word Substitution
+Select the most appropriate idiom to substitute the underlined phrase in the given sentence.
+When it comes to negotiations, he knows how to act in a way that maximises his advantages and get the best deal.
+(1) play it safe
+(2) play it by air
+(3) play his cards right
+(4) play it by the ear
+= 3
+~ To 'play one's cards right' is to act cleverly so as to get the best result, which matches getting the best deal in negotiations. 'Play it safe' is to avoid risks, and 'play it by ear' is to improvise; 'play it by air' is not an idiom.
+
+Q 75 | eng | Spelling
+Identify the INCORRECTLY spelt word in the given sentence.
+The report was filled with spurious data and ambigous conclusions, making it untenable to rely on.
+(1) conclusions
+(2) untenable
+(3) ambigous
+(4) spurious
+= 3
+~ 'Ambigous' should be 'ambiguous' (am-big-u-ous), meaning open to more than one meaning. 'Spurious' (false), 'conclusions' and 'untenable' are correct.
+
+Q 76 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Sarah and Tom love to go to the park (1) ____ weekends. Last Sunday, they (2) ______ a picnic basket with sandwiches, fruit, and juice. They (3) ______ a blanket to sit on and a frisbee to play with.
+As soon as (4) ________ at the park, Sarah spread the blanket on the green grass. They enjoyed their sandwiches and had juicy oranges. After eating, (5) _______ to play with the frisbee.
+Select the most appropriate option to fill in blank no. 1.
+(1) on
+(2) before
+(3) during
+(4) in
+= 1
+~ We say 'on weekends' (or 'at weekends' in British English) for something done regularly at the weekend. 'Before', 'during' and 'in' do not fit.
+
+Q 77 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Sarah and Tom love to go to the park (1) ____ weekends. Last Sunday, they (2) ______ a picnic basket with sandwiches, fruit, and juice. They (3) ______ a blanket to sit on and a frisbee to play with.
+As soon as (4) ________ at the park, Sarah spread the blanket on the green grass. They enjoyed their sandwiches and had juicy oranges. After eating, (5) _______ to play with the frisbee.
+Select the most appropriate option to fill in blank no. 2.
+(1) packed
+(2) gathered
+(3) arranged
+(4) accumulated
+= 3
+~ SSC's key gives 'arranged': they arranged (got ready) a picnic basket with sandwiches, fruit and juice. 'Packed a picnic basket' is the more usual collocation, so many students will pick option 1. 'Gathered' and 'accumulated' suggest collecting things over time. (SSC key; some sources differ.)
+
+Q 78 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Sarah and Tom love to go to the park (1) ____ weekends. Last Sunday, they (2) ______ a picnic basket with sandwiches, fruit, and juice. They (3) ______ a blanket to sit on and a frisbee to play with.
+As soon as (4) ________ at the park, Sarah spread the blanket on the green grass. They enjoyed their sandwiches and had juicy oranges. After eating, (5) _______ to play with the frisbee.
+Select the most appropriate option to fill in blank no. 3.
+(1) brought
+(2) manage
+(3) buy
+(4) arrange
+= 1
+~ The story is in the past ('Last Sunday'), so 'brought' fits: they brought a blanket and a frisbee. 'Manage', 'buy' and 'arrange' are present-tense forms and do not fit the past narrative.
+
+Q 79 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Sarah and Tom love to go to the park (1) ____ weekends. Last Sunday, they (2) ______ a picnic basket with sandwiches, fruit, and juice. They (3) ______ a blanket to sit on and a frisbee to play with.
+As soon as (4) ________ at the park, Sarah spread the blanket on the green grass. They enjoyed their sandwiches and had juicy oranges. After eating, (5) _______ to play with the frisbee.
+Select the most appropriate option to fill in blank no. 4.
+(1) they was arrive
+(2) they arrive
+(3) they arrived
+(4) they had arrive
+= 3
+~ The simple past 'they arrived' fits the past narrative: as soon as they arrived at the park. 'They was arrive', 'they arrive' and 'they had arrive' are ungrammatical or in the wrong tense.
+
+Q 80 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Sarah and Tom love to go to the park (1) ____ weekends. Last Sunday, they (2) ______ a picnic basket with sandwiches, fruit, and juice. They (3) ______ a blanket to sit on and a frisbee to play with.
+As soon as (4) ________ at the park, Sarah spread the blanket on the green grass. They enjoyed their sandwiches and had juicy oranges. After eating, (5) _______ to play with the frisbee.
+Select the most appropriate option to fill in blank no. 5.
+(1) they had decide
+(2) everyone decide
+(3) they decided
+(4) they all decide
+= 3
+~ The past tense 'they decided' fits the story. 'They had decide', 'everyone decide' and 'they all decide' use the wrong verb form.

@@ -1,0 +1,781 @@
+# SSC Constable (GD) in CAPFs, SSF, Rifleman (GD) in Assam Rifles and Sepoy in NCB Examination 2025, held 4 February 2025, Shift 2 (12:00 PM). 80 questions, 160 marks, 60 minutes (Part D: English).
+# Source: SSC's question paper as candidates print it from SSC's portal (the response sheet); answers are the options SSC marked correct on it (answer-key stage). Explanations by Learn with Anil.
+
+Q 1 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+All wires are cables.
+All wires are ropes.
+Some ropes are steels.
+Conclusions
+(I) Some steels are wires.
+(II) Some ropes are cables.
+(1) Both conclusions (I) and (II) follow
+(2) Only conclusion (II) follows
+(3) Only conclusion (I) follows
+(4) Neither conclusion (I) nor (II) follows
+= 2
+~ All wires are cables and all wires are ropes, so every wire is both a cable and a rope: some ropes are cables, and conclusion II follows. Some ropes are steels, but those ropes need not be wires, so 'some steels are wires' is only possible, not certain. Only conclusion II follows.
+
+Q 2 | rea | Arrangement & Puzzles
+Seven people P, Q. R, S, T, U and V are sitting in a straight line facing the north (but not necessarily in the same order). V is sitting to the immediate right of Q and the immediate left of R. P is sitting to the immediate right of R and the immediate left of S. U is sitting second to the right of S. U is sitting at one of the ends of the line. Who is sitting between S and U?
+(1) R
+(2) V
+(3) T
+(4) P
+= 3
+~ All face north, so left and right are as on the page. V is just right of Q and just left of R: Q V R. P is just right of R and just left of S: Q V R P S. U is second to the right of S and at an end: Q V R P S _ U. The only person left, T, fills the gap, so T sits between S and U.
+
+Q 3 | rea | Non-verbal Reasoning
+Identify the figure given in the options which when put in place of the question mark (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/g25d04s2-q3.png
+~ The outer hexagon never changes; lines are removed from the inside one step at a time: 4 lines go first (four of the six spokes), then 3 (the last two spokes and one side of the triangle), then 2 (the rest of the triangle). Next only 1 line goes, so the inner hexagon loses one side and shows 5 sides. Option 1 shows this; options 2 and 3 remove too many sides and option 4 almost the whole inner hexagon.
+
+Q 4 | rea | Analogy & Classification
+Three of the following four letter-clusters are alike in a certain way and thus form a group. Which is the letter-cluster that does NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their positions in the letter-cluster.)
+(1) CGI
+(2) GLM
+(3) PTV
+(4) EIK
+= 2
+~ In CGI, PTV and EIK the letters move +4 and then +2 (C-G-I, P-T-V, E-I-K). In GLM the steps are +5 (G to L) and +1 (L to M), so GLM does not belong.
+
+Q 5 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+18 ÷ 5 + 26 − 45 × 5 = ?
+(1) 80
+(2) 75
+(3) 68
+(4) 73
+= 4
+~ After interchanging, 18 ÷ 5 + 26 − 45 × 5 becomes 18 × 5 − 26 + 45 ÷ 5. Multiply and divide first: 90 and 9. Then 90 − 26 + 9 = 73.
+
+Q 6 | rea | Non-verbal Reasoning
+A dice has its faces marked by letters I, L, O, V, A and F. Two positions of the same dice are given below. Which face is opposite to face O?
+(1) F
+(2) A
+(3) V
+(4) L
+= 1
+! img/g25d04s2-q6.png
+~ F is in the same place in both views. Next to F we see A and I in one view and L and V in the other, so A, I, L and V are all adjacent to F. The remaining face, O, must be opposite F. So the face opposite O is F.
+
+Q 7 | rea | Series
+Select the option that represents the letters that, when sequentially placed from left to right in the blanks below, will complete the letter series.
+_ K _ U T O _ L _ T O _ _ U T O K L _ _
+(1) LOKUKTUL
+(2) OLKUKUTL
+(3) OKLUKULT
+(4) OLKUKLUT
+= 4
+~ Filling the blanks with O, L, K, U, K, L, U, T gives O K L U T | O K L U T | O K L U T | O K L U T: the block 'OKLUT' repeats four times. The other options break the repeating block.
+
+Q 8 | rea | Series
+What should come in place of the question mark (?) in the given series?
+14 23 42 71 110 ?
+(1) 164
+(2) 172
+(3) 180
+(4) 159
+= 4
+~ The differences are 9, 19, 29, 39: each is 10 more than the one before. The next difference is 49, so the next number is 110 + 49 = 159.
+
+Q 9 | rea | Analogy & Classification
+PSPN is related to OROM in a certain way based on the English alphabetical order. In the same way, YBYW is related to XAXV. To which of the given options is QTQO related, following the same logic?
+(1) PSPN
+(2) PTOQ
+(3) PRON
+(4) PSON
+= 1
+~ Each letter of PSPN moves back by one to give OROM, and YBYW to XAXV in the same way. Moving each letter of QTQO back by one gives PSPN.
+
+Q 10 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown below.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+! img/g25d04s2-q10.png
+~ The mirror is on the right, so left and right swap while top and bottom stay. The arrow at the top now points right, the dot moves to the bottom left, the zigzag slants the other way, and the double line stays at the top. Option 3 shows this. Option 4 puts the double line at the bottom, and options 1 and 2 are not reversed at all.
+
+Q 11 | rea | Analogy & Classification
+Select the Venn diagram that best illustrates the relationship between the following classes.
+Transport, Bus, Airplane
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/g25d04s2-q11.png
+~ A bus and an airplane are both means of transport, but no bus is an airplane. So two separate small circles sit inside one large Transport circle, as in option 2.
+
+Q 12 | rea | Miscellaneous Reasoning
+The position(s) of how many letters will remain unchanged if each letter in the word JOSTLED is arranged in the English alphabetical order?
+(1) 0
+(2) 2
+(3) 3
+(4) 1
+= 1
+~ JOSTLED in alphabetical order is D E J L O S T. Compare place by place with J O S T L E D: J/D, O/E, S/J, T/L, L/O, E/S, D/T. No letter keeps its position, so the answer is 0.
+
+Q 13 | rea | Non-verbal Reasoning
+A dice has its faces marked by letters D, X, A, N, R and E. Two positions of the same dice are given below. Which face is opposite to face A?
+(1) N
+(2) R
+(3) D
+(4) E
+= 4
+! img/g25d04s2-q13.png
+~ E is in the same place in both views. Next to E we see N and R in one view and D and X in the other, so N, R, D and X are all adjacent to E. The only face left, A, is opposite E.
+
+Q 14 | rea | Arrangement & Puzzles
+Eight people are sitting in two parallel rows containing 4 people each, in such a way that there is equal distance between adjacent persons.
+In row 1 – I, N, K and S are seated and all of them are facing south
+In row 2 – P, A, R and T are seated and all of them are facing north.
+Thus, each person faces another person from the other row.
+R sits to the immediate right of A. Only two people sit between K and S. A faces K. The one who faces N, sits to the immediate left of P. T doesn’t sit at any of the extreme ends.
+Which of the following options represents both people facing each other?
+(1) I and R
+(2) N and P
+(3) K and T
+(4) S and R
+= 1
+~ Number seats 1 to 4 from west to east; row 2 faces north (its right is east). Only two people are between K and S, so they sit at the ends; A faces K and R is just right of A, so A is in seat 1, R in 2, and K in seat 1 of row 1, S in seat 4. T is not at an end, so T is in 3 and P in 4. The person facing N is just left of P, which is T in seat 3, so N is in 3 and I in 2. Seat 2 pairs I with R.
+
+Q 15 | rea | Series
+What should come in place of the question mark (?) in the given series?
+79 72 58 37 9 ?
+(1) −25
+(2) −24
+(3) −27
+(4) −26
+= 4
+~ The numbers fall by 7, 14, 21 and 28: multiples of 7. The next fall is 35, so the next term is 9 − 35 = −26.
+
+Q 16 | rea | Analogy & Classification
+REMY is related to VHOZ in a certain way based on the English alphabetical order. In the same way, ZFHU is related to DIJV. To which of the given options is LBSO related, following the same logic?
+(1) QDWR
+(2) RDWP
+(3) OFVQ
+(4) PEUP
+= 4
+~ REMY to VHOZ: R+4 = V, E+3 = H, M+2 = O, Y+1 = Z. ZFHU to DIJV follows the same +4, +3, +2, +1 (Z+4 = D counting round). For LBSO: L+4 = P, B+3 = E, S+2 = U, O+1 = P, so PEUP.
+
+Q 17 | rea | Series
+What should come in place of the question mark (?) in the given series based on the English alphabetical order?
+WUY KIM YWA MKO ?
+(1) BYC
+(2) CYC
+(3) ZYC
+(4) AYC
+= 4
+~ The series has two alternating strands. WUY to YWA: every letter moves +2. KIM to MKO: every letter moves +2. The next term continues the first strand: YWA + 2 on each letter = AYC (Y to A counting round).
+
+Q 18 | rea | Coding-Decoding
+In a certain code language 'PGMS' is coded as '9-18-12-6' and 'TBRX' is coded as '5-23- 7-1'. What is the code for 'KAVO' in the given language?
+(1) 15-26-4-11
+(2) 13-25-6-12
+(3) 11-21-2-9
+(4) 14-24-3-10
+= 4
+~ Each letter is coded as 25 minus its alphabet position: P (16) = 9, G (7) = 18, M (13) = 12, S (19) = 6, and T (20) = 5, B (2) = 23, R (18) = 7, X (24) = 1. For KAVO: K (11) = 14, A (1) = 24, V (22) = 3, O (15) = 10, giving 14-24-3-10.
+
+Q 19 | rea | Coding-Decoding
+In a certain code language, 'TEDI' is coded as '11' and 'SUCBVO' is coded as '13'. How is 'YXJIAZL' coded in the given language?
+(1) 14
+(2) 10
+(3) 9
+(4) 12
+= 1
+~ The code is the number of letters plus 7: TEDI has 4 letters (4 + 7 = 11) and SUCBVO has 6 (6 + 7 = 13). YXJIAZL has 7 letters, so its code is 7 + 7 = 14.
+
+Q 20 | rea | Blood Relations & Directions
+In a certain code language,
+'A + B' means 'A is the sister of B',
+'A - B' means 'A is the father of B',
+'A x B' means 'A is the brother of B' and
+'A ÷ B' means 'A is the mother of B'.
+How is A related to D if 'A ÷ B + C x D - E'?
+(1) Father’s mother
+(2) Sister’s daughter
+(3) Daughter’s sister
+(4) Mother
+= 4
+~ A ÷ B: A is B's mother. B + C: B is C's sister. C × D: C is D's brother. D − E: D is E's father. B, C and D are siblings, and A is B's mother, so A is D's mother as well.
+
+Q 21 | cur | Awards, Books & Persons
+Rani Machaiah is an Ummathat folk dancer from ___________________ who received Padma Shri 2023 in the field of Art (Folk Dance).
+(1) Kerala
+(2) Goa
+(3) Telangana
+(4) Karnataka
+= 4
+~ Rani Machaiah of Kodagu (Coorg), Karnataka, is an exponent of Ummathat, the traditional dance of Kodava women. She received the Padma Shri in 2023 for folk dance.
+
+Q 22 | cur | Sports
+Which of the given colours in NOT associated with the judo grades?
+(1) Red
+(2) Blue
+(3) Pink
+(4) White
+= 3
+~ Judo grades are shown by belt colours such as white, yellow, orange, green, blue, brown and black, and the highest dan grades wear red-and-white or red belts. Pink is not a judo grade colour.
+
+Q 23 | eco | Schemes & Welfare
+According to the National Multidimensional Poverty Index 2023, which of the following states showed the fastest poverty reduction?
+(1) Karnataka
+(2) Haryana
+(3) Manipur
+(4) Uttar Pradesh
+= 4
+~ NITI Aayog's National Multidimensional Poverty Index 2023 found that Uttar Pradesh recorded the largest fall in the number of multidimensionally poor (about 3.43 crore people) between 2015-16 and 2019-21, and it was among the states with the fastest decline, along with Bihar, Madhya Pradesh, Odisha and Rajasthan.
+
+Q 24 | eco | Planning, Growth & Budget
+Which of the following goals of the Five-Year Plan is directly related to the people?
+(1) Growth
+(2) Modernisation
+(3) Equity
+(4) Self-reliance
+= 3
+~ India's Five-Year Plans had four broad goals: growth, modernisation, self-reliance and equity. Equity, making sure the benefits of growth reach the poor and weaker sections, is the goal that relates directly to the people.
+
+Q 25 | eco | Planning, Growth & Budget
+What was a key focus of the First Five Year Plan (1951-1956)?
+(1) Agricultural development
+(2) Development of heavy industries
+(3) Rapid industrialisation
+(4) Privatisation of industries
+= 1
+~ The First Five-Year Plan (1951–56), based on the Harrod–Domar model, gave top priority to agriculture, irrigation and power because of food shortages after Partition; projects such as Bhakra Nangal began then. Heavy industry became the focus only in the Second Plan (Mahalanobis model).
+
+Q 26 | cur | Static GK & Culture
+Padma Shri awardee Shovana Narayan is associated with which Indian classical dance form?
+(1) Kathak
+(2) Manipuri
+(3) Bharatanatyam
+(4) Odissi
+= 1
+~ Shovana Narayan is a leading Kathak dancer, awarded the Padma Shri in 1992. Kathak is the classical dance of north India, known for its footwork (tatkar) and fast spins.
+
+Q 27 | ih | Ancient India
+Which of the following Vedas is primarily the collection of magic spells and charms to ward off evil spirits and diseases?
+(1) Rigveda
+(2) Yajurveda
+(3) Atharvaveda
+(4) Samaveda
+= 3
+~ The Atharvaveda contains magic spells, charms and remedies against evil spirits and diseases, and is also a source on early Indian medicine. The Rigveda has hymns, the Samaveda melodies for chanting and the Yajurveda formulas for sacrifices.
+
+Q 28 | sci | Chemistry
+Which chemical is used for whitening (or removal of colours) of cloth in cloth industries?
+(1) Sodium carbonate
+(2) Sodium hydrogencarbonate
+(3) Calcium oxychloride
+(4) Calcium chloride
+= 3
+~ Bleaching powder, calcium oxychloride (CaOCl₂), releases chlorine that removes colour, so it is used to bleach cotton and linen in the textile industry (and to disinfect water). Sodium carbonate is washing soda, sodium hydrogencarbonate is baking soda and calcium chloride is a drying agent.
+
+Q 29 | eco | Planning, Growth & Budget
+Which Five-Year Plan was the first to be terminated before its completion, and why?
+(1) Second Plan, due to economic instability
+(2) Seventh Plan, due to political conflicts
+(3) Fifth Plan, due to a change in government
+(4) Third Plan, due to natural disasters
+= 3
+~ The Fifth Five-Year Plan (1974–79) was ended a year early, in 1978, by the new Janata Party government, which began its own Rolling Plan. It was the first plan to be terminated before completion because of a change of government.
+
+Q 30 | geo | Indian Geography
+Nilgiri is one of the oldest mountain ranges, located at the tri-junction of which three states?
+(1) Northern UP, Uttarakhand, Himachal Pradesh
+(2) Gujarat, Rajasthan, Haryana
+(3) Assam, Nagaland, Tripura
+(4) Tamil Nadu, Kerala, Karnataka
+= 4
+~ The Nilgiri Hills lie where Tamil Nadu, Kerala and Karnataka meet, at the junction of the Western and Eastern Ghats. Their highest peak is Doddabetta, and Ooty (Udhagamandalam) is the main hill station.
+
+Q 31 | ih | Modern India
+Who was the British Prime Minister when India gained independence in 1947?
+(1) Anthony Eden
+(2) Winston Churchill
+(3) Clement Attlee
+(4) Ramsay MacDonald
+= 3
+~ Clement Attlee of the Labour Party was the British Prime Minister in 1947. His government passed the Indian Independence Act, 1947 and sent the Cabinet Mission (1946). Churchill had lost the 1945 election to him.
+
+Q 32 | cur | Static GK & Culture
+In which state is the festival of ‘Kalinga Mahotsav ’celebrated?
+(1) Odisha
+(2) Karnataka
+(3) Maharashtra
+(4) Assam
+= 1
+~ The Kalinga Mahotsav is held in Odisha at Dhauli, near Bhubaneswar, where Ashoka is believed to have fought the Kalinga war. It is a festival of martial dance forms and celebrates the message of peace that followed the war.
+
+Q 33 | sci | Chemistry
+What is the atomic number of Lawrencium, a chemical element that is classified as the last member of the actinides?
+(1) 108
+(2) 103
+(3) 101
+(4) 99
+= 2
+~ Lawrencium (Lr) has atomic number 103 and is the last element of the actinide series (atomic numbers 89 to 103). It is named after Ernest Lawrence, inventor of the cyclotron.
+
+Q 34 | cur | Sports
+With which sport is the Indian Para Athlete Parul Parmar associated?
+(1) Badminton
+(2) Athletics
+(3) Shooting
+(4) Swimming
+= 1
+~ Parul Parmar is an Indian para-badminton player and a former world champion in the SL3 class. She received the Arjuna Award in 2009 and the Padma Shri in 2024.
+
+Q 35 | cur | International
+Which of the following is the state religion of Bangladesh, as per the Constitution of Bangladesh?
+(1) Islam
+(2) Buddhism
+(3) Christianity
+(4) Hinduism
+= 1
+~ Article 2A of the Constitution of Bangladesh declares Islam the state religion, while guaranteeing equal status and rights to Hinduism, Buddhism, Christianity and other religions.
+
+Q 36 | pol | Government & Parliament
+The Constitution (Scheduled Castes and Scheduled Tribes) Orders (Amendment) Bill, 2024 intends to modify the list of Scheduled Castes and Scheduled Tribes in which of the following Indian states?
+(1) Uttar Pradesh
+(2) Rajasthan
+(3) Maharashtra
+(4) Odisha
+= 4
+~ The Constitution (Scheduled Castes and Scheduled Tribes) Orders (Amendment) Bill, 2024, introduced in February 2024, amends the 1950 Scheduled Castes and Scheduled Tribes Orders to modify the lists for Odisha. It added communities such as Pauri Bhuyan, Chuktia Bhunjia, Bondo and Mankidia to Odisha's ST list. A separate bill changed Andhra Pradesh's ST list.
+
+Q 37 | pol | Government & Parliament
+Who among the following has the power to dissolve the legislative assembly of a state?
+(1) Chief Justice of High Court
+(2) Chief Secretary of the State
+(3) Governor of the State
+(4) Chief Minister of the State
+= 3
+~ Under Article 174(2)(b), the Governor of the State can dissolve the Legislative Assembly, normally on the advice of the Chief Minister and the Council of Ministers. The Chief Minister can only advise, and the Chief Justice and the Chief Secretary have no such power.
+
+Q 38 | cur | Awards, Books & Persons
+Who among the following was the first music director to bring Rock 'n' Roll to Hindi tunes?
+(1) Hariprasad Chaurasia
+(2) Ravi Shankar
+(3) Zakir Hussain
+(4) Rahul Dev Burman
+= 4
+~ Rahul Dev Burman (R.D. Burman, 'Pancham') brought rock and roll, jazz and electronic sounds into Hindi film songs from the 1960s and 70s. Hariprasad Chaurasia (flute), Ravi Shankar (sitar) and Zakir Hussain (tabla) are classical musicians.
+
+Q 39 | pol | Constitution & Rights
+Which of the following rights is considered a component of the Right to Life and Personal Liberty?
+(1) Right to Equality
+(2) Right to Privacy
+(3) Right to Freedom of Speech
+(4) Right to Property
+= 2
+~ In K.S. Puttaswamy v. Union of India (2017) the Supreme Court held that the Right to Privacy is part of the right to life and personal liberty under Article 21. Equality (Articles 14–18) and free speech (Article 19) are separate rights, and property is now only a constitutional right under Article 300A.
+
+Q 40 | cur | National
+In June 2024, who resigned from their Wayanad Lok Sabha seat?
+(1) Rahul Gandhi
+(2) Priyanka Gandhi Vadra
+(3) Mallikarjun Kharge
+(4) Sonia Gandhi
+= 1
+~ After winning both Rae Bareli and Wayanad in the 2024 Lok Sabha election, Rahul Gandhi kept Rae Bareli and resigned the Wayanad seat in June 2024. Priyanka Gandhi Vadra later won Wayanad in the by-election.
+
+Q 41 | qa | Percentage
+The price (per litre) of petrol increases by 60%. By what percent should its consumption be reduced such that the expenditure on it increases by 12% only?
+(1) 30%
+(2) 36%
+(3) 66%
+(4) 70%
+= 1
+~ Expenditure = price × consumption. The new price is 1.60 times and the expenditure may be only 1.12 times, so the new consumption = 1.12 ÷ 1.60 = 0.70 of the old. Consumption must be cut by 30%.
+
+Q 42 | qa | Simple & Compound Interest
+Nitin has ₹1617 with him. He divided it amongst his sons Pravin and Rishi and asked them to invest it at 10% rate of interest compounded annually. It was seen that Pravin and Rishi got same amount after 17 and 18 years respectively. How much (in ₹) did Nitin give to Pravin?
+(1) 770
+(2) 870
+(3) 847
+(4) 697
+= 3
+~ Pravin waits 17 years and Rishi 18 years and they get equal amounts at 10% compound interest: Pravin's share × 1.1¹⁷ = Rishi's share × 1.1¹⁸, so Pravin's share = 1.1 × Rishi's share. Then Rishi × 2.1 = 1617 gives Rishi ₹770 and Pravin ₹847.
+
+Q 43 | qa | Mensuration
+A shopkeeper has one spherical laddoo of radius 7 cm. With the same material, how many laddoos of radius 3.5 cm can be made?
+(1) 8
+(2) 4
+(3) 12
+(4) 6
+= 1
+~ Volume of a sphere is proportional to r³. The ratio of the volumes is (7 ÷ 3.5)³ = 2³ = 8, so 8 small laddoos can be made from the big one.
+
+Q 44 | qa | HCF & LCM
+The LCM of 672 and 7056 is _____.
+(1) 42336
+(2) 14112
+(3) 28224
+(4) 7056
+= 2
+~ 672 = 2⁵ × 3 × 7 and 7056 = 2⁴ × 3² × 7². Take the highest powers: 2⁵ × 3² × 7² = 32 × 9 × 49 = 14112. Check: 7056 = 672 × 10.5, so the smallest common multiple is 2 × 7056 = 14112.
+
+Q 45 | qa | Number System & Simplification
+Evaluate: 16 + 10 ÷ 5 - 2 × 3
+(1) 12
+(2) 15
+(3) 11
+(4) 14
+= 1
+~ Division and multiplication come before addition and subtraction: 10 ÷ 5 = 2 and 2 × 3 = 6. Then 16 + 2 − 6 = 12.
+
+Q 46 | qa | Time, Speed & Distance
+Two trains are moving in opposite directions at speeds of 60 km/h and 110 km/h. The length of one train is 360 m. The time taken by them to cross each other is 21 seconds.
+The length (in m) of the other train, correct to 2 decimal places, is:
+(1) 631.66
+(2) 630.08
+(3) 630.92
+(4) 632.93
+= 1
+~ Opposite directions, so the relative speed is 60 + 110 = 170 km/h = 170 × 5/18 = 47.22 m/s. In 21 seconds they cover 47.22 × 21 = 991.67 m, which is the sum of the two lengths. The other train is 991.67 − 360 = 631.67 m, given in the options as 631.66.
+
+Q 47 | qa | Time & Work
+A fort had provision of food for 150 men for 85 days. After 15 days, 25 men left the fort.
+Find the number of days for which the remaining food will last.
+(1) 84
+(2) 88
+(3) 80
+(4) 82
+= 1
+~ After 15 days, food is left for 150 men for 70 days, that is 150 × 70 = 10,500 man-days. For the remaining 125 men it lasts 10,500 ÷ 125 = 84 days.
+
+Q 48 | qa | Profit, Loss & Discount
+A customer could not decide between a discount of 40% or two successive discounts of 25% and 15% to buy a certain article. What is the difference between both the discounts?
+(1) 2.75%
+(2) 3.75%
+(3) 2.25%
+(4) 3.25%
+= 2
+~ Successive discounts of 25% and 15% leave 0.75 × 0.85 = 63.75% of the price, a total discount of 36.25%. The single discount of 40% is larger by 40 − 36.25 = 3.75%.
+
+Q 49 | qa | Number System & Simplification
+Evaluate: (-9) - (-60) ÷ (-12) + (-3) × 9
+(1) -41
+(2) -43
+(3) -44
+(4) -40
+= 1
+~ Do division and multiplication first: (−60) ÷ (−12) = 5 and (−3) × 9 = −27. Then (−9) − 5 + (−27) = −41.
+
+Q 50 | qa | Percentage
+A candidate scores 25% marks and fails by 68 marks, while another candidate, who scores 50% marks, gets 42 marks more than the minimum required marks to pass the examination. Find the maximum marks for the examination.
+(1) 400
+(2) 410
+(3) 440
+(4) 430
+= 3
+~ Pass marks = 25% of maximum + 68 = 50% of maximum − 42. So 25% of the maximum = 68 + 42 = 110, and the maximum = 440 (pass mark 178).
+
+Q 51 | qa | Time, Speed & Distance
+Rachin travels a distance at 60 km/hr for 2 hours and 80 km at 40 km/hr. Find the average speed of Rachin (in km/hr).
+(1) 47
+(2) 55
+(3) 59
+(4) 50
+= 4
+~ First part: 60 × 2 = 120 km in 2 hours. Second part: 80 km at 40 km/h takes 2 hours. Average speed = total distance ÷ total time = 200 ÷ 4 = 50 km/h.
+
+Q 52 | qa | Time & Work
+Rajeshwar can do a piece of work in 12 days, Vikram in 6 days and Tiger in 15 days.
+They all start the work together, but Rajeshwar leaves after 2 days and Vikram leaves 3 days before the work is completed. In how many days is the work completed?
+(1) 5 4/7
+(2) 5 5/7
+(3) 5 3/7
+(4) 5 6/7
+= 2
+~ Take the work as 60 units: Rajeshwar does 5 a day, Vikram 10 and Tiger 4. If the work takes t days, Rajeshwar works 2 days, Vikram t − 3 days and Tiger all t days: 10 + 10(t − 3) + 4t = 60, so 14t = 80 and t = 40/7 = 5 5/7 days.
+
+Q 53 | qa | Profit, Loss & Discount
+A shopkeeper bought an article for ₹520. At what price (in ₹) should he sell the article to make 10% profit?
+(1) 560
+(2) 468
+(3) 572
+(4) 584
+= 3
+~ For a 10% profit, selling price = 520 × 1.10 = ₹572 (profit ₹52).
+
+Q 54 | qa | Time, Speed & Distance
+Two trains, each 180 m long, are moving towards each other on parallel tracks at speeds of 50 km/hr and 70 km/hr. In how many seconds will they completely cross each other?
+(1) 10.4
+(2) 10.2
+(3) 10.8
+(4) 10.6
+= 3
+~ Moving towards each other, the relative speed is 50 + 70 = 120 km/h = 120 × 5/18 = 100/3 m/s. To cross completely they cover 180 + 180 = 360 m. Time = 360 ÷ (100/3) = 10.8 seconds.
+
+Q 55 | qa | Average
+The average age of 48 students of a class is 22 years. If the age of the teacher is also included, the average age of the whole group becomes 23 years. The age (in years) of the teacher is:
+(1) 70
+(2) 60
+(3) 68
+(4) 71
+= 4
+~ Students' total age = 48 × 22 = 1056. With the teacher, 49 people average 23: total 1127. The teacher is 1127 − 1056 = 71 years. Quick check: the teacher adds 1 year to each of 49 people over the old average, so 22 + 49 = 71.
+
+Q 56 | qa | Ratio & Proportion
+If 7A = 6B = 12C, what is A : B : C?
+(1) 7 : 12 : 14
+(2) 12 : 14 : 7
+(3) 12 : 7 : 14
+(4) 14 : 12 : 7
+= 2
+~ Let 7A = 6B = 12C = 84 (the LCM of 7, 6 and 12). Then A = 12, B = 14 and C = 7, so A : B : C = 12 : 14 : 7.
+
+Q 57 | qa | Simple & Compound Interest
+Sarang invested some money in HDFC at 4% per annum rate of interest. What would be the corresponding simple interest (in ₹) if after 2 years, Sarang got ₹153 as compound interest, considering annual compounding?
+(1) 145
+(2) 165
+(3) 150
+(4) 160
+= 3
+~ Two-year compound interest at 4% = P × (1.04² − 1) = 0.0816P = 153, so P = ₹1875. Simple interest for 2 years = 1875 × 4 × 2 ÷ 100 = ₹150. (The ₹3 difference is interest on the first year's ₹75.)
+
+Q 58 | qa | Number System & Simplification
+Find the value of [(84 ÷ 6) × {91/7 + 16/2 × (8 − 6)}].
+(1) 400
+(2) 409
+(3) 406
+(4) 426
+= 3
+~ Innermost first: 8 − 6 = 2; 91/7 = 13; 16/2 = 8 and 8 × 2 = 16; so the curly bracket is 13 + 16 = 29. Then 84 ÷ 6 = 14, and 14 × 29 = 406.
+
+Q 59 | qa | Profit, Loss & Discount
+A dishonest shopkeeper promises to sell his goods at cost price. However, he uses a weight that actually weighs 26% less than what is written on it. Find his profit percentage.
+(1) 34 5/37%
+(2) 36 6/37%
+(3) 37 10/37%
+(4) 35 5/37%
+= 4
+~ For goods marked 1000 g he gives 26% less, that is 740 g. He gains 260 g on 740 g, so profit = 260/740 × 100 = 35 5/37% (about 35.14%). The profit is counted on the 740 g he actually gives.
+
+Q 60 | qa | Simple & Compound Interest
+Amit invests a sum of ₹5400 and Gopal invests a sum of ₹9400 at the same rate of simple interest per annum. If, at the end of 4 years, Gopal gets ₹480 more interest than Amit, then find the rate of interest per annum (in percentage).
+(1) 5
+(2) 3
+(3) 2
+(4) 4
+= 2
+~ Gopal invests ₹4000 more than Amit, so the extra ₹480 is the interest on ₹4000 for 4 years: 4000 × r × 4 ÷ 100 = 480 gives 160r = 480, r = 3%.
+
+Q 61 | eng | Vocabulary
+Select the word that best completes the given sentence. Determine the collocation through the sentence.
+Marz would describe it in ___________ detail.
+(1) elaborate
+(2) great
+(3) big
+(4) good
+= 2
+~ 'In great detail' is the fixed collocation for describing something very fully. 'Big' and 'good' do not go with 'detail' this way, and 'elaborate' usually describes a plan or design ('an elaborate plan'), not 'detail' in this phrase.
+
+Q 62 | eng | Vocabulary
+Select the most appropriate option to fill in the blank.
+Ram dropped the glass and it shattered on the floor. 'Drop' here means ____________.
+(1) fall or let fall
+(2) stopped
+(3) pay a casual visit
+(4) an ascent
+= 1
+~ Here 'drop' means to let something fall: Ram let the glass fall and it broke. 'Stopped', 'pay a casual visit' (drop in) and 'an ascent' are other unrelated meanings.
+
+Q 63 | eng | Vocabulary
+Select the most appropriate meaning of the given word.
+Dilemma
+(1) Plight
+(2) Portion
+(3) Worn
+(4) Situation
+= 1
+~ A 'dilemma' is a difficult situation in which one must choose between two unpleasant options. 'Plight', a difficult or unfortunate situation, is the closest meaning. 'Situation' alone is too general, and 'portion' and 'worn' are unrelated.
+
+Q 64 | eng | Idioms & One-word Substitution
+Select the most appropriate meaning of the underlined idiom.
+He suddenly tried to throw cold water on my plans.
+(1) To discourage
+(2) To seize the opportunity
+(3) To understand the hidden meaning
+(4) To take revenge
+= 1
+~ To 'throw cold water on' a plan is to discourage it or show no enthusiasm for it. It has nothing to do with seizing an opportunity, hidden meanings or revenge.
+
+Q 65 | eng | Vocabulary
+Select the option that best defines the given word.
+Banish
+(1) To determine
+(2) To harm
+(3) To evaluate
+(4) To relegate
+= 4
+~ To 'banish' is to send someone away or exclude them from a place or position. 'Relegate', to send away or move to a lower position, is the closest of the options. 'Determine', 'harm' and 'evaluate' do not mean sending away.
+
+Q 66 | eng | Spelling
+Select the option that rectifies the spelling error in the given sentence.
+He was determined to acomplish his goals.
+(1) accompalish
+(2) determened
+(3) accomplish
+(4) detarmined
+= 3
+~ The correct spelling is 'accomplish', with double c: ac-com-plish. 'Acomplish' and 'accompalish' are wrong, and 'determened' and 'detarmined' are wrong spellings of 'determined'.
+
+Q 67 | eng | Spelling
+Identify the INCORRECTLY spelt word in the given sentence.
+The chef used a special recepie for the gourmet dish.
+(1) Gourmet
+(2) Recepie
+(3) Chef
+(4) Special
+= 2
+~ 'Recepie' should be 'recipe' (re-ci-pe). 'Chef', 'special' and 'gourmet' (fine food) are spelt correctly.
+
+Q 68 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Dainty
+(1) Inelegant
+(2) Timid
+(3) Critical
+(4) Demanding
+= 1
+~ 'Dainty' means delicately small, pretty and graceful. Its opposite is 'inelegant', lacking grace. 'Timid', 'critical' and 'demanding' do not oppose its meaning.
+
+Q 69 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Petite
+(1) Best
+(2) Flexible
+(3) Small
+(4) Fit
+= 3
+~ 'Petite' (from French) describes someone small and slim, so its synonym is 'small'. 'Best', 'flexible' and 'fit' have other meanings.
+
+Q 70 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option to substitute the underlined segment in the given sentence.
+The article that you have submitted isn’t make sense to me.
+(1) does it make sense
+(2) doesn’t it make sense
+(3) is it making sense
+(4) doesn’t make sense
+= 4
+~ 'Make sense' needs the helping verb 'does', not 'is': 'The article that you have submitted doesn't make sense to me.' The other options turn the statement into a question or use the wrong verb form.
+
+Q 71 | eng | Error Spotting & Sentence Improvement
+Parts of the following sentence have been given as options. Select the option that contains an error.
+The experimental chef combined flavours audacious and with an almost
+synesthetic sensibility, creating dishes that challenged the very notion of culinary categories.
+(1) almost synesthetic sensibility
+(2) combined flavours audacious
+(3) experimental chef
+(4) culinary categories
+= 2
+~ The error is 'combined flavours audacious'. In English an adjective goes before its noun ('combined audacious flavours'), or the adverb 'audaciously' is used after it. The other parts are correct.
+
+Q 72 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option to substitute the underlined segment in the given sentence.
+He enjoy going in a jog in the morning to start his day on a healthy note.
+(1) will enjoy going to a jog
+(2) has been enjoyed go in the jog
+(3) is enjoy going at a jog
+(4) enjoys going for a jog
+= 4
+~ The subject 'He' takes 'enjoys' in the simple present, and the idiom is 'go for a jog': 'He enjoys going for a jog in the morning'. The other options use wrong verb forms ('has been enjoyed go', 'is enjoy') or the wrong preposition.
+
+Q 73 | eng | Idioms & One-word Substitution
+Select the most appropriate option that can substitute the underlined segment in the given sentence. If there is no need to substitute it, select ‘No substitution required’.
+All criminal tendencies must be nipped on the bud during childhood.
+(1) nipped off the bud
+(2) nipped at the bud
+(3) No substitution required
+(4) nipped in the bud
+= 4
+~ The idiom is 'nip in the bud': to stop something at an early stage before it grows. 'On the bud', 'off the bud' and 'at the bud' are not the idiom.
+
+Q 74 | eng | Error Spotting & Sentence Improvement
+Select the word segment that can substitute the bracketed word segment correctly and complete the sentence. Select 'No correction required' if the given segment is correct.
+(Did she gave) her business card to the clients at the party last night?
+(1) Did she given her business card to the clients at the party last night?
+(2) Does she gave her business card to the clients at the party last night?
+(3) Did she give her business card to the clients at the party last night?
+(4) No correction required
+= 3
+~ After the helping verb 'did', the main verb takes its base form: 'Did she give her business card...?' 'Did she gave' and 'did she given' are wrong, and 'does' does not fit 'last night'.
+
+Q 75 | eng | Error Spotting & Sentence Improvement
+The given sentence is divided into four segments. Select the option that
+has the segment with an adverbial usage error.
+Jackson told Aria, "Generally, I am grateful for your help."
+(1) Jackson told Aria,
+(2) "Generally, I am
+(3) your help."
+(4) grateful for
+= 2
+~ 'Generally' means usually or in most cases, which does not fit a thank-you for specific help. An adverb such as 'genuinely' or 'truly' is needed, so the error is in '"Generally, I am'. The other segments are correct.
+
+Q 76 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Adopting sustainable practices in daily life (1) _________ to environmental conservation. Small actions, (2)_______ reducing single-use plastics, conserving energy, planting trees, using water sparingly and reducing the use of electronic gadgets, (3)________ make a significant impact. Research shows that communities (4)________ sustainable living not only reduce their carbon footprint but also create a healthier environment (5)_______ future generations.
+Select the most appropriate option to fill in blank number 1.
+(1) contribute
+(2) sacrifice
+(3) supplies
+(4) addition
+= 1
+~ 'Contribute to' means to help bring something about: sustainable practices contribute to environmental conservation. 'Sacrifice' gives the wrong meaning, 'supplies' needs an object, and 'addition' is a noun.
+
+Q 77 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Adopting sustainable practices in daily life (1) _________ to environmental conservation. Small actions, (2)_______ reducing single-use plastics, conserving energy, planting trees, using water sparingly and reducing the use of electronic gadgets, (3)________ make a significant impact. Research shows that communities (4)________ sustainable living not only reduce their carbon footprint but also create a healthier environment (5)_______ future generations.
+Select the most appropriate option to fill in blank number 2.
+(1) instance
+(2) likes
+(3) such as
+(4) dislike
+= 3
+~ The blank introduces examples of small actions (reducing plastics, saving energy, planting trees), so 'such as' fits. 'Instance', 'likes' and 'dislike' cannot introduce a list of examples here.
+
+Q 78 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Adopting sustainable practices in daily life (1) _________ to environmental conservation. Small actions, (2)_______ reducing single-use plastics, conserving energy, planting trees, using water sparingly and reducing the use of electronic gadgets, (3)________ make a significant impact. Research shows that communities (4)________ sustainable living not only reduce their carbon footprint but also create a healthier environment (5)_______ future generations.
+Select the most appropriate option to fill in blank number 3.
+(1) additionally
+(2) frequently
+(3) sparingly
+(4) collectively
+= 4
+~ Many small actions taken together make a big impact, so 'collectively' fits. 'Sparingly' (using little) and 'frequently' change the meaning, and 'additionally' does not fit the sentence.
+
+Q 79 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Adopting sustainable practices in daily life (1) _________ to environmental conservation. Small actions, (2)_______ reducing single-use plastics, conserving energy, planting trees, using water sparingly and reducing the use of electronic gadgets, (3)________ make a significant impact. Research shows that communities (4)________ sustainable living not only reduce their carbon footprint but also create a healthier environment (5)_______ future generations.
+Select the most appropriate option to fill in blank number 4.
+(1) embracing
+(2) squeeze
+(3) clutch
+(4) enfold
+= 1
+~ To 'embrace' an idea is to accept and adopt it willingly: communities embracing sustainable living. 'Squeeze', 'clutch' and 'enfold' describe holding physically.
+
+Q 80 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Adopting sustainable practices in daily life (1) _________ to environmental conservation. Small actions, (2)_______ reducing single-use plastics, conserving energy, planting trees, using water sparingly and reducing the use of electronic gadgets, (3)________ make a significant impact. Research shows that communities (4)________ sustainable living not only reduce their carbon footprint but also create a healthier environment (5)_______ future generations.
+Select the most appropriate option to fill in blank number 5.
+(1) towards
+(2) of
+(3) for
+(4) against
+= 3
+~ A healthier environment is created 'for' future generations, meaning for their benefit. 'Towards', 'of' and 'against' do not express this purpose.

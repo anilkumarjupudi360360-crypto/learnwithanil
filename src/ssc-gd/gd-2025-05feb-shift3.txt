@@ -1,0 +1,775 @@
+# SSC Constable (GD) in CAPFs, SSF, Rifleman (GD) in Assam Rifles and Sepoy in NCB Examination 2025, held 5 February 2025, Shift 3 (3:00 PM). 80 questions, 160 marks, 60 minutes (Part D: English).
+# Source: SSC's question paper as candidates print it from SSC's portal (the response sheet; copy via Prepp); answers are the options SSC marked correct on it (answer-key stage). Explanations by Learn with Anil.
+
+Q 1 | rea | Analogy & Classification
+AMBUSH is related to FPIWTH in a certain way based on the English alphabetical order.
+In the same way, LYPASE is related to QBWCTE. To which of the given options is OCTANE related, following the same logic?
+(1) TFBDME
+(2) TFBCOF
+(3) TFADME
+(4) TFACOE
+= 4
+~ AMBUSH to FPIWTH: the letters move forward 5, 3, 7, 2, 1 and 0 places (A+5 = F, M+3 = P, B+7 = I, U+2 = W, S+1 = T, H+0 = H). LYPASE to QBWCTE follows the same steps. For OCTANE: O+5 = T, C+3 = F, T+7 = A (counting round), A+2 = C, N+1 = O, E+0 = E, giving TFACOE.
+
+Q 2 | rea | Coding-Decoding
+In a certain code language 'USJI' is coded as '49' and 'DPTQ' is coded as '51'. What is the code for 'FAUL' in the given language?
+(1) 62
+(2) 57
+(3) 68
+(4) 59
+= 3
+~ Add the reverse alphabet positions (A = 26 ... Z = 1). USJI: 6 + 8 + 17 + 18 = 49. DPTQ: 23 + 11 + 7 + 10 = 51. FAUL: 21 + 26 + 6 + 15 = 68.
+
+Q 3 | rea | Series
+What should come in place of the question mark (?) in the given series?
+19 19 20 24 33 ?
+(1) 51
+(2) 48
+(3) 50
+(4) 49
+= 4
+~ The differences are 0, 1, 4, 9: the squares 0², 1², 2², 3². The next difference is 4² = 16, so the next number is 33 + 16 = 49.
+
+Q 4 | rea | Non-verbal Reasoning
+A dice has its faces marked by letters A, B, C, D, E and F. Two different positions of the same dice are shown. Select the letter that will be on the face opposite to the one having E?
+(1) B
+(2) D
+(3) A
+(4) C
+= 2
+! img/g25d05s3-q4.png
+~ D is in the same place in both views. Its neighbours are C and F in one view and A and B in the other, so C, F, A and B are adjacent to D. The only face left, E, is opposite D, so the face opposite E is D.
+
+Q 5 | rea | Blood Relations & Directions
+In a certain code language.
+'Z + H' means 'Z is the daughter of H',
+'Z # H' means 'Z is the sister of H',
+'Z @ H' means 'Z is the mother of H' and
+'Z % H' means 'Z is the brother of H'.
+Based on the above, how is R related to E if 'E % L # R + B'?
+(1) Sister
+(2) Mother
+(3) Brother
+(4) Daughter
+= 1
+~ E % L: E is L's brother. L # R: L is R's sister. R + B: R is B's daughter, so R is female. E, L and R are siblings, so R is E's sister.
+
+Q 6 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown below.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/g25d05s3-q6.png
+~ The mirror is on the right, so left and right swap and top and bottom stay. The circle moves from the top right to the top left, and the arrow now points to the bottom right; the arrowhead on the line stays hollow. Option 4 shows this. Option 3 has a filled arrowhead, and options 1 and 2 are not reversed.
+
+Q 7 | rea | Series
+What should come in place of the question mark (?) in the given series?
+419 424 430 437 445 ?
+(1) 453
+(2) 454
+(3) 456
+(4) 455
+= 2
+~ The differences are 5, 6, 7, 8: one more each time. The next difference is 9, so the next number is 445 + 9 = 454.
+
+Q 8 | rea | Analogy & Classification
+Select the Venn diagram that best illustrates the relationship between the following classes.
+Animals, Horses, Trees
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/g25d05s3-q8.png
+~ All horses are animals, so the Horses circle sits inside the Animals circle. Trees are neither animals nor horses, so they form a separate circle. This is option 4.
+
+Q 9 | rea | Series
+Select the option that represents the letters that, when sequentially placed from left to right in the blanks below, will complete the letter series.
+_ O _ K R _ _ J K _ E
+(1) RJEOO
+(2) EJEOR
+(3) OERJE
+(4) JEORE
+= 2
+~ Filling the blanks with E, J, E, O, R gives E O J K R | E O J K R | E: the block 'EOJKR' repeats.
+
+Q 10 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) LOU
+(2) BEK
+(3) HKQ
+(4) OIG
+= 4
+~ In LOU, BEK and HKQ the letters move +3 and then +6 (L-O-U, B-E-K, H-K-Q). OIG moves backwards (−6, −2), so OIG does not belong.
+
+Q 11 | rea | Non-verbal Reasoning
+A paper is folded and cut as shown below. How will it appear when unfolded?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/g25d05s3-q11.png
+~ The paper is folded upwards twice, so it has four layers, and the cuts are made along the top edge. On opening, each fold reflects the cuts, so the four rows alternate: the half-circles open one way in the first row, the other way in the second, and so on, with the diamonds in every row. Option 2 shows four alternating rows; option 3 pairs the rows wrongly, and options 1 and 4 have too few rows of cuts.
+
+Q 12 | rea | Arrangement & Puzzles
+Seven people, G, H, I, J, K, L and M, are sitting in a row, facing north(but not necessarily in the same order) . Only G sits to the left of J. Only four people sit between G and H.
+Only K sits between L and I, and L is not an immediate neighbour of H.
+How many people sit between M and J?
+(1) Four
+(2) Two
+(3) One
+(4) Three
+= 1
+~ Number the seats 1 to 7 from the left. Only G is to the left of J, so G is in seat 1 and J in 2. Four people between G and H puts H in seat 6. L, K and I sit together with K in the middle; L is not next to H, so L is in 3, K in 4 and I in 5, leaving M in seat 7. Between M and J sit L, K, I and H: four people.
+
+Q 13 | rea | Coding-Decoding
+In a certain code language, 'LTRH' is coded as '58' and 'NBZW' is coded as '65'. How is 'GSCE' coded in the given language?
+(1) 34
+(2) 40
+(3) 31
+(4) 39
+= 1
+~ The code is the sum of the alphabet positions. LTRH: 12 + 20 + 18 + 8 = 58. NBZW: 14 + 2 + 26 + 23 = 65. GSCE: 7 + 19 + 3 + 5 = 34.
+
+Q 14 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘×‘ are interchanged and ‘−’ and ‘÷’ are interchanged?
+28 − 4 × 12 ÷ 5 + 3 =?
+(1) 4
+(2) 1
+(3) 14
+(4) 9
+= 1
+~ After interchanging, 28 − 4 × 12 ÷ 5 + 3 becomes 28 ÷ 4 + 12 − 5 × 3. Divide and multiply first: 7 and 15. Then 7 + 12 − 15 = 4.
+
+Q 15 | rea | Series
+What should come in place of the question mark (?) in the given series based on the English alphabetical order?
+MAN, OAP, QAR, ? , UAV
+(1) AST
+(2) STA
+(3) SAT
+(4) SBT
+= 3
+~ The first letters M, O, Q, ?, U go up by 2, so S. The middle letter is always A. The last letters N, P, R, ?, V go up by 2, so T. The missing term is SAT.
+
+Q 16 | rea | Arrangement & Puzzles
+E, F, G, H, K, L and N are sitting around a circular table facing the centre (but not necessarily in the same order) .Only three people sit between H and N when counted from the left of H. Only three people sit between L and E when counted from the right of E. K sits to the immediate right of L. F is an immediate neighbour of E as well as N.
+Who sits second to the right of G?
+(1) N
+(2) E
+(3) L
+(4) K
+= 4
+~ Facing the centre, 'right' is anticlockwise and 'left' clockwise. N is four places to H's left. F sits between E and N; trying E on either side, only the arrangement H, K, L, G, N, F, E (going clockwise) also fits 'three people between L and E from E's right' and 'K just right of L'. Two places to G's right (anticlockwise) is K.
+
+Q 17 | rea | Miscellaneous Reasoning
+The position(s) of how many letters will remain unchanged if each of the letters in the word REVERSAL is arranged in the reverse English alphabetical order?
+(1) Zero
+(2) Three
+(3) Two
+(4) One
+= 1
+~ REVERSAL in reverse alphabetical order is V S R R L E E A. Compare with R E V E R S A L place by place: R/V, E/S, V/R, E/R, R/L, S/E, A/E, L/A. No letter keeps its place, so the answer is zero.
+
+Q 18 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+All salads are appetizers.
+All salads are food.
+All food are rice.
+Conclusions:
+(I): All salads are rice.
+(II): Some foods are appetizers.
+(1) Both conclusions (I) and (II) follow.
+(2) Only conclusion (II) follows.
+(3) Only conclusion (I) follows.
+(4) Neither conclusion (I) nor (II) follows.
+= 1
+~ All salads are food and all food is rice, so all salads are rice: I follows. Salads are both appetizers and food, so the foods that are salads are appetizers: some foods are appetizers, II follows. Both conclusions follow.
+
+Q 19 | rea | Non-verbal Reasoning
+Identify the figure given in the options which when put in place of the question mark (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/g25d05s3-q19.png
+~ Every figure in the series is a closed shape (hexagon, trapezium, circle, square) divided by exactly three inside lines. The answer must also be a shape with three inside lines, which is the triangle in option 2. The other options have more than three lines inside.
+
+Q 20 | rea | Analogy & Classification
+GD 34 is related to HE 24 in a certain way. In the same way, CJ 12 is related to DK 2. To which of the given options is XV 56 related, following the same logic?
+(1) YX 46
+(2) YW 46
+(3) XW 46
+(4) YW 47
+= 2
+~ GD 34 to HE 24: each letter moves one place forward (G to H, D to E) and the number falls by 10. CJ 12 to DK 2 follows the same rule. For XV 56: X to Y, V to W and 56 − 10 = 46, giving YW 46.
+
+Q 21 | cur | Sports
+For which country did the former cricketer Roger Binny play cricket?
+(1) New Zealand
+(2) Australia
+(3) India
+(4) England
+= 3
+~ Roger Binny played Test and one-day cricket for India and was the leading wicket-taker of the 1983 World Cup that India won. He became President of the BCCI in October 2022.
+
+Q 22 | cur | National
+In June 2024, Yusuf Pathan, a former cricketer, won the Lok Sabha seat in Baharampur; which state was this constituency located in?
+(1) West Bengal
+(2) Uttar Pradesh
+(3) Uttarakhand
+(4) Tripura
+= 1
+~ Baharampur (Berhampore) is a Lok Sabha constituency in Murshidabad district of West Bengal. In June 2024 Yusuf Pathan of the Trinamool Congress won it, defeating Adhir Ranjan Chowdhury of the Congress.
+
+Q 23 | sci | Physics
+A pyranometer is a ______ measuring instrument, commonly used for climate research or monitoring weather performance.
+(1) solar irradiance
+(2) atmospheric pressure
+(3) wind speed
+(4) cloud ceiling
+= 1
+~ A pyranometer measures solar irradiance, the solar radiation falling on a flat surface (in watts per square metre). Atmospheric pressure is measured by a barometer, wind speed by an anemometer and cloud height by a ceilometer.
+
+Q 24 | cur | Sports
+At which of the following places was the final match of the T20 Blind Cricket World Cup 2022 held?
+(1) Holkar Stadium, Indore
+(2) Narendra Modi Stadium, Ahmedabad
+(3) Wankhede Stadium, Mumbai
+(4) M. Chinnaswamy Stadium, Bengaluru
+= 4
+~ The final of the third T20 World Cup Cricket for the Blind (December 2022) was played at the M. Chinnaswamy Stadium in Bengaluru, where India beat Bangladesh to win the title for the third time.
+
+Q 25 | pol | Constitution & Rights
+Which Article of the Indian Constitution outlines the principle of just and humane conditions of work?
+(1) Article 46
+(2) Article 42
+(3) Article 48
+(4) Article 41
+= 2
+~ Article 42, a Directive Principle, asks the State to make provision for just and humane conditions of work and for maternity relief. Article 41 deals with the right to work, education and public assistance, Article 46 with the weaker sections, and Article 48 with agriculture and animal husbandry.
+
+Q 26 | eco | Planning, Growth & Budget
+What was the role of the prime minister in the planning commission?
+(1) Secretary
+(2) Dialogue partner
+(3) Ex-Officio chairman
+(4) Ex-Officio member
+= 3
+~ The Prime Minister was the ex-officio Chairman of the Planning Commission (1950–2014), and a Deputy Chairman ran its daily work. The PM is likewise the Chairperson of NITI Aayog, which replaced it in 2015.
+
+Q 27 | pol | Judiciary & Constitutional Bodies
+Which of the following is NOT responsible for investigating complaints of violations of human rights in India?
+(1) National Human Rights Commission of India
+(2) National Commission for Women
+(3) National Commission for Scheduled Castes
+(4) International Human Rights Commission
+= 4
+~ In India, complaints of human rights violations are examined by the National Human Rights Commission and by bodies such as the National Commission for Women and the National Commission for Scheduled Castes. There is no 'International Human Rights Commission' with this role in India.
+
+Q 28 | ih | Modern India
+In which of the following years was the Treaty of Bassein signed between the British East India Company and Baji Rao II, the Maratha Peshwa?
+(1) 1835
+(2) 1802
+(3) 1824
+(4) 1818
+= 2
+~ The Treaty of Bassein was signed on 31 December 1802 between Peshwa Baji Rao II and the East India Company. The Peshwa accepted the subsidiary alliance, which led to the Second Anglo-Maratha War (1803–05).
+
+Q 29 | sci | Physics
+Two objects A and B of mass 2 kg and 3 kg, respectively, were dropped from different heights. A took 5 second and B took 3 seconds to touch the ground. What is the ratio of their kinetic energy with which they hit the ground?
+(1) 10/9
+(2) 2/3
+(3) 50/27
+(4) 5/3
+= 3
+~ A body falling from rest hits the ground with speed v = gt, so its kinetic energy is ½m(gt)². A: ½ × 2 × (5g)² = 25g². B: ½ × 3 × (3g)² = 13.5g². The ratio is 25 : 13.5 = 50/27.
+
+Q 30 | sci | Biology
+Which organic leavener is used in the baking industry to make bread, pastries and cakes?
+(1) Yeasts
+(2) Molds
+(3) Smuts
+(4) Rusts
+= 1
+~ Yeast (Saccharomyces cerevisiae) ferments sugar and releases carbon dioxide, which makes dough rise; it is the organic leavening agent of bakeries. Moulds, smuts and rusts are fungi that spoil food or cause plant diseases.
+
+Q 31 | geo | Environment & Ecology
+Which of the following Union Ministries introduced the Water (Prevention and Control of Pollution) Amendment Bill, 2024, in the Parliament in February 2024?
+(1) Ministry of Agriculture & Farmers' Welfare
+(2) Ministry of Consumer Affairs, Food and Public Distribution
+(3) Ministry of Environment, Forest and Climate Change
+(4) Ministry of Civil Aviation
+= 3
+~ The Water (Prevention and Control of Pollution) Amendment Bill, 2024 was introduced in the Rajya Sabha in February 2024 by the Minister of Environment, Forest and Climate Change. It replaced jail terms for minor violations with penalties.
+
+Q 32 | eco | Agriculture, Industry & Trade
+During which period were coal mines nationalised in India?
+(1) 1961-1965
+(2) 1966-1970
+(3) 1971-1975
+(4) 1976-1980
+= 3
+~ Coal mines were nationalised in two stages under Indira Gandhi's government: coking coal mines in 1971–72 and non-coking coal mines in 1973 (Coal Mines (Nationalisation) Act, 1973). Coal India Limited was set up in 1975, so the period is 1971–1975.
+
+Q 33 | cur | Static GK & Culture
+Which of the following classical dances uses the ‘pung’ as the most important instrument?
+(1) Kathakali
+(2) Odishi
+(3) Kathak
+(4) Manipuri
+= 4
+~ The pung, a barrel-shaped drum, is the main instrument of Manipuri dance; the Pung Cholom dancers play it while leaping and dancing. Kathakali uses the chenda and maddalam, and Odissi the pakhawaj-like mardala.
+
+Q 34 | cur | Static GK & Culture
+Dalchand Sharma is an eminent Pakhawaj exponent of which of the following
+gharanas?
+(1) Rampur - Sahaswan
+(2) Nathdwara
+(3) Atrauli - Jaipur
+(4) Lucknow
+= 2
+~ Pandit Dalchand Sharma is a leading pakhawaj player of the Nathdwara gharana from Rajasthan, the school linked with temple music at Nathdwara. He received the Sangeet Natak Akademi Award.
+
+Q 35 | eco | Agriculture, Industry & Trade
+Which industry is involved in the extraction of raw materials from nature?
+(1) Service industry
+(2) Extractive industry
+(3) Manufacturing industry
+(4) Construction industry
+= 2
+~ Extractive industries take raw materials directly from nature, as in mining, quarrying, fishing and lumbering. Manufacturing turns raw materials into goods, and the service industry provides services.
+
+Q 36 | cur | Awards, Books & Persons
+Which Ummathat folk dancer was awarded the Padma Shri in March 2023?
+(1) Vani Jairam
+(2) Suman Kalyanpur
+(3) Subhadra Devi
+(4) Rani Machaiah
+= 4
+~ Rani Machaiah, an Ummathat folk dancer of Kodagu (Karnataka), received the Padma Shri at the March 2023 investiture. Vani Jairam and Suman Kalyanpur are playback singers.
+
+Q 37 | cur | International
+On Republic Day 2023, which country’s contingent marched alongside the Indian troops?
+(1) Germany
+(2) Egypt
+(3) Japan
+(4) France
+= 2
+~ At the Republic Day parade of 2023, Egypt's President Abdel Fattah el-Sisi was the chief guest, and a military contingent and band of the Egyptian Armed Forces marched on Kartavya Path.
+
+Q 38 | ih | Ancient India
+How many times has the Ganga River been mentioned in the Rigveda?
+(1) 4
+(2) 3
+(3) 2
+(4) 1
+= 4
+~ The Ganga is mentioned in the Rigveda only once by name, in the Nadistuti hymn (Book 10), which lists the rivers from east to west. The Sindhu and the Saraswati are mentioned far more often.
+
+Q 39 | eco | Schemes & Welfare
+Garib Kalyan Rojgar Yojana was launched in 2020 by the Government of India to provide work for ___________ days.
+(1) 130
+(2) 125
+(3) 115
+(4) 120
+= 2
+~ The Garib Kalyan Rojgar Abhiyaan was launched in June 2020 for migrant workers who had returned to their villages during the COVID-19 lockdown. It gave work for 125 days in 116 districts of six states.
+
+Q 40 | geo | World & Physical Geography
+In which of the following countries does the Brahmaputra River NOT flow?
+(1) China
+(2) Bangladesh
+(3) Nepal
+(4) India
+= 3
+~ The Brahmaputra rises in Tibet (China) as the Yarlung Tsangpo, enters India in Arunachal Pradesh, flows through Assam and then into Bangladesh as the Jamuna. It does not flow through Nepal.
+
+Q 41 | qa | Number System & Simplification
+Find the value of [(63 ÷ 9) × {14/7 + 19/1 × (7 − 6)}].
+(1) 150
+(2) 148
+(3) 159
+(4) 147
+= 4
+~ Innermost first: 7 − 6 = 1; 14/7 = 2; 19/1 × 1 = 19; so the curly bracket is 2 + 19 = 21. Then 63 ÷ 9 = 7, and 7 × 21 = 147.
+
+Q 42 | qa | HCF & LCM
+X is a greatest three-digit number exactly divisible by 12, 20, and 25. The sum of the digits of X is:
+(1) 5
+(2) 9
+(3) 7
+(4) 8
+= 2
+~ LCM of 12, 20 and 25: 12 = 2² × 3, 20 = 2² × 5, 25 = 5², so LCM = 2² × 3 × 5² = 300. The greatest three-digit multiple of 300 is 900, and its digit sum is 9 + 0 + 0 = 9.
+
+Q 43 | qa | Profit, Loss & Discount
+A retailer buys 12 pairs of shoes for ₹22,400. His overhead expenses are ₹1,600. If he earns ₹28,500 from the sale of these 12 pair of shoes, determine his profit percentage.
+(1) 20%
+(2) 17.5%
+(3) 19.25%
+(4) 18.75%
+= 4
+~ Total cost = 22,400 + 1,600 overheads = ₹24,000. Profit = 28,500 − 24,000 = ₹4,500. Profit % = 4500/24000 × 100 = 18.75%.
+
+Q 44 | qa | Time & Work
+4 men and 3 women finish a job in 6 days, and 5 men and 7 women can do the same job in 4 days. How long will 8 men and 6 women take to do the same job?
+(1) 6 days
+(2) 3 days
+(3) 9 days
+(4) 8 days
+= 2
+~ The work is fixed, so 6 × (4M + 3W) = 4 × (5M + 7W): 24M + 18W = 20M + 28W, giving 4M = 10W, that is one man = 2.5 women. The work = 6 × (10 + 3) = 78 woman-days. 8 men and 6 women = 20 + 6 = 26 women, so they take 78 ÷ 26 = 3 days.
+
+Q 45 | qa | Percentage
+The price of fuel decreases by 40%, 50% and 15% in three successive months, but increases by 40% in the fourth month. What is the percentage increase/decrease in the price of fuel in the fourth month as compared to its original price?
+(1) Decreases by 64.3%
+(2) Increases by 65.91%
+(3) Increases by 65.47%
+(4) Decreases by 69.09%
+= 1
+~ Multiply the factors: 0.60 × 0.50 × 0.85 × 1.40 = 0.357. The price is 35.7% of the original, a decrease of 64.3%.
+
+Q 46 | qa | Time, Speed & Distance
+A car covers four successive 8 km distances at speeds of 12 km/hr, 18 km/hr, 24 km/hr and 36 km/hr, respectively. Its average speed (in km/hr) over this distance is:
+(1) 19.2
+(2) 20
+(3) 18
+(4) 22.5
+= 1
+~ Time for each 8 km: 8/12 + 8/18 + 8/24 + 8/36 hours = (6 + 4 + 3 + 2)/9 = 15/9 = 5/3 hours. Average speed = 32 ÷ 5/3 = 19.2 km/h.
+
+Q 47 | qa | Time, Speed & Distance
+The ratio of the walking speeds of A and B is 3 : 5. If B takes 18 minutes to cover a certain distance, how much time will A take to cover the same distance?
+(1) 25 min
+(2) 20 min
+(3) 33 min
+(4) 30 min
+= 4
+~ For the same distance, time is inversely proportional to speed. Speeds 3 : 5 mean times 5 : 3. B takes 18 minutes, so A takes 18 × 5/3 = 30 minutes.
+
+Q 48 | qa | Ratio & Proportion
+The third proportional to x and x + 100 is 405, find the value of x (where x > 100).
+(1) 225
+(2) 125
+(3) 115
+(4) 180
+= 2
+~ The third proportional means (x + 100)² ÷ x = 405, so x² + 200x + 10000 = 405x, that is x² − 205x + 10000 = 0. This gives x = 125 or x = 80; since x > 100, x = 125. Check: 225² ÷ 125 = 405.
+
+Q 49 | qa | Time, Speed & Distance
+Chetan travels from City A to City B. If Chetan drives his car at 3/4 of his normal speed, then he reaches City B 33 minutes late. Find the time (in minutes) that Chetan would have taken to travel from City A to City B if he drove at his normal speed.
+(1) 97
+(2) 100
+(3) 99
+(4) 93
+= 3
+~ At 3/4 of the speed the trip takes 4/3 of the normal time t. The extra time is t/3 = 33 minutes, so t = 99 minutes.
+
+Q 50 | qa | Mensuration
+If the radius of a hemisphere is 13√3 cm, find its curved surface area.
+(1) 1014π cm²
+(2) 1044π cm²
+(3) 1024π cm²
+(4) 1034π cm²
+= 1
+~ Curved surface area of a hemisphere = 2πr². With r = 13√3, r² = 169 × 3 = 507, so the area = 2π × 507 = 1014π cm².
+
+Q 51 | qa | Simple & Compound Interest
+If at same rate of interest, in 2 years, the simple interest is ₹40 and compound interest is ₹65, then what is the principal (in ₹)?
+(1) 11
+(2) 16
+(3) 20
+(4) 9
+= 2
+~ Two-year SI is ₹40, so one year's interest is ₹20. CI is ₹25 more, which is interest on that ₹20: rate = 25/20 = 125% a year (an unusually high rate, but it is what the numbers give). Principal = 20 ÷ 1.25 = ₹16.
+
+Q 52 | qa | Average
+The average age of 39 students of a class is 39 years. If the age of the teacher is also included, the average age of the whole group becomes 40 years. The age (in years) of the teacher is:
+(1) 81
+(2) 77
+(3) 79
+(4) 83
+= 3
+~ The teacher raises the average of 40 people by 1 year over the students' 39, so the teacher's age = 39 + 40 × 1 = 79 years. Check: 40 × 40 − 39 × 39 = 1600 − 1521 = 79.
+
+Q 53 | qa | Number System & Simplification
+Evaluate: 32 ÷ 8 × 4 - 3 × 4
+(1) 3
+(2) 7
+(3) 4
+(4) 6
+= 3
+~ Do ÷ and × from left to right: 32 ÷ 8 = 4, 4 × 4 = 16, and 3 × 4 = 12. Then 16 − 12 = 4.
+
+Q 54 | qa | Profit, Loss & Discount
+If the selling price of five Bluetooth devices is ₹14,430 after allowing a discount of 26% on the marked price, then the marked price of one device is:
+(1) ₹3,000
+(2) ₹3,900
+(3) ₹3,365
+(4) ₹2,886
+= 2
+~ After a 26% discount the price is 74% of the marked price. Marked price of five = 14,430 ÷ 0.74 = ₹19,500, so one device is ₹3,900.
+
+Q 55 | qa | Ratio & Proportion
+If the third proportional of 3x² and 4xy is 48, then the positive value of y is:
+(1) 6
+(2) 2
+(3) 9
+(4) 3
+= 4
+~ The third proportional is (4xy)² ÷ 3x² = 16x²y² ÷ 3x² = 16y²/3. Setting 16y²/3 = 48 gives y² = 9, so y = 3.
+
+Q 56 | qa | Percentage
+The price of a computer is ₹22,200. What will be the price of the computer after reduction of 25%?
+(1) ₹16,550
+(2) ₹16,750
+(3) ₹16,650
+(4) ₹16,450
+= 3
+~ After a 25% reduction the price is 75% of ₹22,200: 22,200 × 0.75 = ₹16,650.
+
+Q 57 | qa | Number System & Simplification
+Find the value of [(42 ÷ 7) × {42/3 + 19/4 × (8 − 4)}].
+(1) 180
+(2) 209
+(3) 198
+(4) 202
+= 3
+~ Innermost first: 8 − 4 = 4; 42/3 = 14; 19/4 × 4 = 19; so the curly bracket is 14 + 19 = 33. Then 42 ÷ 7 = 6, and 6 × 33 = 198.
+
+Q 58 | qa | Profit, Loss & Discount
+Ketan sold 151 chairs and had a gain equal to the selling price of 51 chairs. What is his profit percentage?
+(1) 56%
+(2) 46%
+(3) 61%
+(4) 51%
+= 4
+~ Let one chair sell for ₹1. Selling 151 chairs brings ₹151 and the gain is ₹51, so the cost is ₹100. Profit % = 51/100 × 100 = 51%.
+
+Q 59 | qa | Simple & Compound Interest
+Amit invests a sum of ₹5400 and Gopal invests a sum of ₹9400 at the same rate of simple interest per annum. If, at the end of 3 years, Gopal gets ₹840 more interest than Amit, then find the rate of interest per annum (in percentage).
+(1) 5
+(2) 7
+(3) 9
+(4) 6
+= 2
+~ Gopal invests ₹4000 more than Amit, so the extra ₹840 is the interest on ₹4000 for 3 years: 4000 × r × 3 ÷ 100 = 840 gives 120r = 840, r = 7%.
+
+Q 60 | qa | Simple & Compound Interest
+When difference between compound and simple interest for three years is ₹228 at 4% interest per annum, the principal is ₹______
+(1) 46875
+(2) 48075
+(3) 47295
+(4) 46300
+= 1
+~ For 3 years, CI − SI = P × r² × (3 + r), with r = 0.04: P × 0.0016 × 3.04 = 0.004864P. So 0.004864P = 228 and P = ₹46,875.
+
+Q 61 | eng | Spelling
+Select the INCORRECTLY spelt word.
+(1) Grateful
+(2) Accross
+(3) Navigate
+(4) Persuade
+= 2
+~ 'Accross' is misspelt; the correct spelling is 'across', with one c and double s. 'Grateful', 'navigate' and 'persuade' are correct.
+
+Q 62 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Snug
+(1) Aromatic
+(2) Uncomfortable
+(3) Persistent
+(4) Ample
+= 2
+~ 'Snug' means warm, cosy and comfortable. Its opposite is 'uncomfortable'. 'Aromatic', 'persistent' and 'ample' are unrelated.
+
+Q 63 | eng | Fill in the Blanks
+Select the most appropriate option to fill in the blank.
+The scientist's _______________ research into renewable energy sources
+is expected to revolutionize the industry.
+(1) meticulous
+(2) hasty
+(3) cursory
+(4) superficial
+= 1
+~ Research expected to revolutionise an industry must be thorough and careful, so 'meticulous' fits. 'Hasty', 'cursory' and 'superficial' all mean quick and careless.
+
+Q 64 | eng | Error Spotting & Sentence Improvement
+The given sentence is divided into four segments. Select the option that has the segment with an adverbial usage error.
+Mrs. Jennifer, / our English professor, / told us that the wind / reluctantly rustled the branches.
+(1) Mrs. Jennifer,
+(2) our English professor,
+(3) told us that the wind
+(4) reluctantly rustled the branches.
+= 4
+~ 'Reluctantly' (unwillingly) describes a person's feelings and cannot describe how the wind moves branches. An adverb such as 'gently' or 'softly' is needed, so the error is in 'reluctantly rustled the branches'.
+
+Q 65 | eng | Vocabulary
+In the sentence, 'The room was filled with an eerie silence after the announcement', what is a synonym of the word 'eerie'?
+(1) Mysterious
+(2) Soothing
+(3) Comfortable
+(4) Tense
+= 1
+~ 'Eerie' means strange and frightening in a mysterious way. 'Mysterious' is the closest synonym. 'Soothing' and 'comfortable' are opposite in feeling, and 'tense' is not the same as eerie.
+
+Q 66 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Establish
+(1) Enlarge
+(2) Charge
+(3) Alert
+(4) Demolish
+= 4
+~ To 'establish' is to set up or build something. Its opposite is 'demolish', to pull down or destroy. 'Enlarge', 'charge' and 'alert' are not opposites.
+
+Q 67 | eng | Fill in the Blanks
+Select the most appropriate option to fill in the blank and make the sentence meaningful.
+You must refrain __________ unpleasant conversations.
+(1) by
+(2) from
+(3) with
+(4) to
+= 2
+~ 'Refrain' is always followed by 'from': you must refrain from unpleasant conversations. 'By', 'with' and 'to' are not used with refrain.
+
+Q 68 | eng | Idioms & One-word Substitution
+Select the most appropriate option to fill in the blank and complete the given idiom.
+Although our backgrounds are different, we sail in the __________ boat.
+(1) biggest
+(2) old
+(3) different
+(4) same
+= 4
+~ 'To be in the same boat' means to be in the same situation as others: though our backgrounds differ, we face the same circumstances. The idiom always uses 'same'.
+
+Q 69 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the highlighted word segment in the given sentence. If the sentence is grammatically correct, select ‘No correction’.
+The boy play football since he has come from school.
+(1) has been playing
+(2) was playing
+(3) No correction
+(4) plays
+= 1
+~ An action that began in the past and is still going on, with 'since', takes the present perfect continuous: 'The boy has been playing football since he came from school.' 'Play' (wrong agreement), 'plays' and 'was playing' do not fit.
+
+Q 70 | eng | Spelling
+Identify the INCORRECTLY spelt word in the given sentence.
+The vicissitudes of life can be incredulus, but the perseverance and unyielding tenacity of the human spirit remain indomitable.
+(1) indomitable
+(2) incredulus
+(3) unyielding
+(4) vicissitudes
+= 2
+~ 'Incredulus' is misspelt; the word is 'incredulous', meaning unwilling to believe. 'Vicissitudes' (ups and downs), 'unyielding' and 'indomitable' are spelt correctly.
+
+Q 71 | eng | Vocabulary
+Select the most appropriate meaning of the given word.
+Ambiguous
+(1) Uncertain or open to interpretation
+(2) Clear and straightforward
+(3) Harsh and severe
+(4) Funny and humorous
+= 1
+~ 'Ambiguous' means having more than one possible meaning, uncertain or open to interpretation. 'Clear and straightforward' is its opposite, and the other two options are unrelated.
+
+Q 72 | eng | Vocabulary
+Select the most appropriate option to fill in the blank. Determine the collocation through the sentence.
+Resolution is the courage to act despite the __________ of failure.
+(1) hate
+(2) love
+(3) hope
+(4) fear
+= 4
+~ The usual collocation is 'the fear of failure', and courage is acting despite fear. 'Hate', 'love' and 'hope' of failure do not make sense here.
+
+Q 73 | eng | Vocabulary
+Select the most appropriate synonym of the underlined word.
+The explorer ventured into the uncharted territory in search of adventure.
+(1) Familiar
+(2) Undiscovered
+(3) Explored
+(4) Mapped
+= 2
+~ 'Uncharted' territory has not been mapped or explored, so 'undiscovered' is the synonym. 'Familiar', 'explored' and 'mapped' are its opposites.
+
+Q 74 | eng | Fill in the Blanks
+Select the most appropriate option that can substitute the underlined word in the given sentence.
+Give the cake to which asks for it first.
+(1) whoever
+(2) whichever
+(3) whomever
+(4) whom so ever
+= 1
+~ 'Whoever' is needed as the subject of 'asks': give the cake to whoever asks for it first (anyone who). 'Which' and 'whichever' refer to things, 'whomever' is an object form, and 'whom so ever' is not correct.
+
+Q 75 | eng | Error Spotting & Sentence Improvement
+The following sentence has been divided into parts. Select the part that contains a grammatical error from the given options. If you don’t find any error, mark ‘No error’ as your answer.
+A tiger be strayed into a village / at Gosaba in the Sundarbans, entered a / cowshed and killed three cows last night.
+(1) at Gosaba in the Sundarbans, entered a
+(2) A tiger be strayed into a village
+(3) cowshed and killed three cows last night.
+(4) No error.
+= 2
+~ 'A tiger be strayed into a village' is wrong. The sentence describes a past event, so it should be 'A tiger strayed into a village...' (or 'A tiger, which strayed into...'). The other parts are correct.
+
+Q 76 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Effective time management is (1) ______ for success. By prioritising tasks, individuals can enhance (2) ________ and reduce stress. Planning allows for a balance (3) _______ work and personal life. Studies show that those who manage their time (4) _______ are more likely to achieve their goals. It is a skill (5) ______ positively impacts both professional and personal aspects of life.
+Select the most appropriate option to fill in blank no. 1.
+(1) optional
+(2) crucial
+(3) desperate
+(4) trivial
+= 2
+~ Time management is 'crucial' (extremely important) for success. 'Optional' and 'trivial' say it hardly matters, and 'desperate' describes people, not importance.
+
+Q 77 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Effective time management is (1) ______ for success. By prioritising tasks, individuals can enhance (2) ________ and reduce stress. Planning allows for a balance (3) _______ work and personal life. Studies show that those who manage their time (4) _______ are more likely to achieve their goals. It is a skill (5) ______ positively impacts both professional and personal aspects of life.
+Select the most appropriate option to fill in blank no. 2.
+(1) capacity
+(2) productivity
+(3) production
+(4) fertility
+= 2
+~ Prioritising tasks helps people get more done, so it enhances 'productivity'. 'Production' is the making of goods, 'capacity' is ability or size, and 'fertility' does not fit.
+
+Q 78 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Effective time management is (1) ______ for success. By prioritising tasks, individuals can enhance (2) ________ and reduce stress. Planning allows for a balance (3) _______ work and personal life. Studies show that those who manage their time (4) _______ are more likely to achieve their goals. It is a skill (5) ______ positively impacts both professional and personal aspects of life.
+Select the most appropriate option to fill in blank no. 3.
+(1) around
+(2) between
+(3) with
+(4) beyond
+= 2
+~ A balance is 'between' two things: a balance between work and personal life. 'Around', 'with' and 'beyond' do not express this.
+
+Q 79 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Effective time management is (1) ______ for success. By prioritising tasks, individuals can enhance (2) ________ and reduce stress. Planning allows for a balance (3) _______ work and personal life. Studies show that those who manage their time (4) _______ are more likely to achieve their goals. It is a skill (5) ______ positively impacts both professional and personal aspects of life.
+Select the most appropriate option to fill in blank no. 4.
+(1) excitedly
+(2) strongly
+(3) effectively
+(4) efficient
+= 3
+~ The blank needs an adverb describing how people manage time: 'effectively' (well, with good results). 'Efficient' is an adjective, and 'excitedly' and 'strongly' do not fit the meaning.
+
+Q 80 | eng | Cloze Test & Comprehension
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Effective time management is (1) ______ for success. By prioritising tasks, individuals can enhance (2) ________ and reduce stress. Planning allows for a balance (3) _______ work and personal life. Studies show that those who manage their time (4) _______ are more likely to achieve their goals. It is a skill (5) ______ positively impacts both professional and personal aspects of life.
+Select the most appropriate option to fill in blank no. 5.
+(1) what
+(2) those
+(3) whereby
+(4) which
+= 4
+~ 'Which' introduces a clause describing the skill: a skill which positively impacts both areas of life. 'What', 'those' and 'whereby' cannot introduce this clause.
