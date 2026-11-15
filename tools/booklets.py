@@ -28,7 +28,8 @@ DEFAULT = ['ts-police-si', 'ts-police-constable']
 esc = B.esc
 LOGO = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(ROOT, 'src', 'static', 'icon-192.png'), 'rb').read()).decode()
 BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC': 'ANDHRA PRADESH PUBLIC SERVICE COMMISSION',
-              'SLPRB': 'STATE LEVEL POLICE RECRUITMENT BOARD, ANDHRA PRADESH', 'RRB': 'RAILWAY RECRUITMENT BOARDS · RAILWAY PROTECTION FORCE'}
+              'SLPRB': 'STATE LEVEL POLICE RECRUITMENT BOARD, ANDHRA PRADESH', 'RRB': 'RAILWAY RECRUITMENT BOARDS · RAILWAY PROTECTION FORCE',
+              'AP DSC': 'COMMISSIONERATE OF SCHOOL EDUCATION, GOVERNMENT OF ANDHRA PRADESH'}
 BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
 SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
@@ -48,6 +49,7 @@ def time_marks(conf, p):
     if conf['id'] == 'appsc-analyst': return '150 Minutes', (150 if p['id'] == 'n2025a' else 300)   # Analyst 2025: Paper I 1 mark, Paper II 2 marks a question
     if conf['id'] == 'appsc-env-engineer': return '150 Minutes', (300 if p['id'] == 'v25c' else 150)   # AEE 2025: Paper II 2 marks a question, Paper I 1 mark
     if conf['id'] == 'appsc-aso': return '150 Minutes', 150   # ASO Paper II: 150 questions, 150 marks
+    if conf['id'] == 'ap-dsc': return (('180 Minutes', 100) if p.get('mins') == 180 else ('150 Minutes', 80))   # DSC: 160 Q / 80 marks; SA PE and PET 200 Q / 100 marks
     if conf['id'] in ('tgpsc-group-1', 'tgpsc-group-2'): return '150 Minutes', 150   # TG Group-I Prelims and each Group-II paper: 150 questions, 150 marks
     if conf['id'] == 'appsc-fro': return '150 Minutes', 150   # FRO Screening and each Mains paper: 150 questions, 150 marks
     if conf['id'] == 'rrb-group-d': return '90 Minutes', 100   # RRB Group D CBT: 100 questions, 1 mark each
@@ -107,19 +109,31 @@ def opts(o):
             + ''.join(f'<li>({i + 1}) {esc(x)}</li>' for i, x in enumerate(o)) + '</ol>')
 
 
+def script_lang(t):
+    """'te' / 'hi' when a question has no English and is printed in Telugu / Hindi only (AP DSC language papers), else ''."""
+    if re.search(r'[A-Za-z]{3,}', t or ''): return ''
+    return 'te' if re.search(r'[\u0C00-\u0C7F]', t or '') else 'hi' if re.search(r'[\u0900-\u097F]', t or '') else ''
+
+
 def q_html(q, l2):
     first = text(q['q']).replace('<div>', '<span>', 1).replace('</div>', '</span>', 1)
     img = f'<img src="{q["img"]}" alt="">' if q.get('img') else ''
-    two = (f'<div class="l2" lang="{l2}">{text(q["qt"])}{opts(q["ot"]) if q.get("ot") else ""}</div>') if q.get('qt') else ''
-    return f'<div class="q"><div class="en"><span class="n">{q["n"]}.</span>{first}</div>{img}{opts(q["o"]) if q.get("o") else ""}{two}</div>'
+    same = q.get('qt') == q['q']   # a Telugu-only question carries the same text in both fields: print it once
+    two = (f'<div class="l2" lang="{l2}">{text(q["qt"])}{opts(q["ot"]) if q.get("ot") else ""}</div>') if q.get('qt') and not same else ''
+    sl = script_lang(q['q'])
+    return (f'<div class="q"><div class="en"{f' lang="{sl}"' if sl else ""}><span class="n">{q["n"]}.</span>{first}</div>{img}'
+            f'{f'<div lang="{sl}">' if sl else ""}{opts(q["o"]) if q.get("o") else ""}{"</div>" if sl else ""}{two}</div>')
 
 
 def ans_html(q, l2):
     ans = ' / '.join(f'({i + 1}) {q["o"][i]}' for i in q['a'])
-    ans2 = ' / '.join(f'({i + 1}) {q["ot"][i]}' for i in q['a']) if q.get('ot') else ''
+    ans2 = ' / '.join(f'({i + 1}) {q["ot"][i]}' for i in q['a']) if q.get('ot') and q.get('ot') != q.get('o') else ''
     two = f' <span lang="{l2}">· {esc(ans2)}</span>' if ans2 else ''
+    sl = script_lang(q['q'])
+    if sl: ans = f'<span lang="{sl}">{esc(ans)}</span>'
+    else: ans = esc(ans)
     wt = f'<p class="why" lang="{l2}">{esc(q["wt"])}</p>' if q.get('wt') else ''
-    return f'<div class="ans"><b>{q["n"]}. {esc(ans)}</b>{two}<p class="why">{esc(q.get("w", ""))}</p>{wt}</div>'
+    return f'<div class="ans"><b>{q["n"]}. {ans}</b>{two}<p class="why">{esc(q.get("w", ""))}</p>{wt}</div>'
 
 
 def paper_doc(conf, p, qs, mock=None):

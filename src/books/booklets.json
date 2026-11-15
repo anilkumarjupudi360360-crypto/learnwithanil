@@ -1,4 +1,76 @@
 {
+ "ap-dsc": {
+  "pet25": {
+   "bytes": 807614,
+   "file": "ap-dsc-pet25-b652b66f93.bin",
+   "key": "bk-ap-dsc-pet25",
+   "name": "LearnWithAnil-AP-DSC-PET-2025-22-June-Shift-2-Physical-Education-Teacher-Question-Paper.pdf",
+   "pages": 37
+  },
+  "sabs25": {
+   "bytes": 755731,
+   "file": "ap-dsc-sabs25-d3e9891ccb.bin",
+   "key": "bk-ap-dsc-sabs25",
+   "name": "LearnWithAnil-AP-DSC-SA-Biological-Science-2025-10-June-Shift-1-School-Assistant-Biological-Science-Question-Paper.pdf",
+   "pages": 34
+  },
+  "saeng25": {
+   "bytes": 459970,
+   "file": "ap-dsc-saeng25-1fc2c1d3dd.bin",
+   "key": "bk-ap-dsc-saeng25",
+   "name": "LearnWithAnil-AP-DSC-SA-English-2025-13-June-Shift-1-School-Assistant-English-Question-Paper.pdf",
+   "pages": 21
+  },
+  "sahin25": {
+   "bytes": 706764,
+   "file": "ap-dsc-sahin25-35d3a5a3d2.bin",
+   "key": "bk-ap-dsc-sahin25",
+   "name": "LearnWithAnil-AP-DSC-SA-Hindi-2025-8-June-Shift-1-School-Assistant-Hindi-Question-Paper.pdf",
+   "pages": 20
+  },
+  "samat25": {
+   "bytes": 663428,
+   "file": "ap-dsc-samat25-a3702c5ac2.bin",
+   "key": "bk-ap-dsc-samat25",
+   "name": "LearnWithAnil-AP-DSC-SA-Maths-2025-12-June-Shift-1-School-Assistant-Mathematics-Question-Paper.pdf",
+   "pages": 29
+  },
+  "sape25": {
+   "bytes": 825998,
+   "file": "ap-dsc-sape25-437006fed5.bin",
+   "key": "bk-ap-dsc-sape25",
+   "name": "LearnWithAnil-AP-DSC-SA-Physical-Education-2025-9-June-Shift-1-School-Assistant-Physical-Education-Question-Paper.pdf",
+   "pages": 36
+  },
+  "saps25": {
+   "bytes": 745132,
+   "file": "ap-dsc-saps25-9d06811da0.bin",
+   "key": "bk-ap-dsc-saps25",
+   "name": "LearnWithAnil-AP-DSC-SA-Physical-Science-2025-9-June-Shift-2-School-Assistant-Physical-Science-Question-Paper.pdf",
+   "pages": 31
+  },
+  "sass25": {
+   "bytes": 776339,
+   "file": "ap-dsc-sass25-73e5a5e19e.bin",
+   "key": "bk-ap-dsc-sass25",
+   "name": "LearnWithAnil-AP-DSC-SA-Social-Studies-2025-16-June-Shift-1-School-Assistant-Social-Studies-Question-Paper.pdf",
+   "pages": 35
+  },
+  "satel25": {
+   "bytes": 702370,
+   "file": "ap-dsc-satel25-6fa07ef99a.bin",
+   "key": "bk-ap-dsc-satel25",
+   "name": "LearnWithAnil-AP-DSC-SA-Telugu-2025-29-June-Shift-2-School-Assistant-Telugu-Question-Paper.pdf",
+   "pages": 26
+  },
+  "sgt25a": {
+   "bytes": 687705,
+   "file": "ap-dsc-sgt25a-cf9e7df0a1.bin",
+   "key": "bk-ap-dsc-sgt25a",
+   "name": "LearnWithAnil-AP-DSC-SGT-2025-13-June-Shift-2-Secondary-Grade-Teacher-Question-Paper.pdf",
+   "pages": 28
+  }
+ },
  "ap-police-constable": {
   "a2023pc": {
    "bytes": 893827,

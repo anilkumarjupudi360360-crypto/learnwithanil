@@ -1372,6 +1372,79 @@ def aso_have():
 def aso_years():
     return ' and '.join(str(p['year']) for p in ASO_PAPERS if p['id'] in aso_have()) or '2025'
 
+# ---------- AP DSC (Teacher Recruitment Test, School Education Department, Andhra Pradesh) ----------
+# Anil, 15 Nov 2026: "AP DSC ...add the pyqs ....and other required details for it like other exams"; chose "one paper per post"
+# first (SGT + School Assistant Telugu, Hindi, English, Maths, Physical Science, Biological Science, Social, PE + PET).
+# Source: Mega DSC 2025 master question papers with the FINAL key (tet2dsc.apcfss.in → DSC-2025 → Final Key; public API
+# apdscdeptapi/dsc-public/postwise-consolidated-key-path-details, field final_key_path). Every question is a picture with English
+# and Telugu (the language sections in their own language); the correct option has a green tick. Questions with all four options
+# ticked (marks to everyone) are left out; where two or three options are ticked, each is shown as correct.
+# Work folder (this container): /home/claude/dsc (raw/, work/<pid>/meta.json + pictures, out/*.json, scripts/).
+DSC_SUBJECTS = [
+  ('gk', 'General Knowledge & Current Affairs', 'general-knowledge-current-affairs', ['Current Affairs', 'Andhra Pradesh', 'History & Culture', 'Geography & Environment', 'Polity & Economy', 'Science & Technology', 'Static GK']),
+  ('pie', 'Perspectives in Education', 'perspectives-in-education', ['History of Education & Thinkers', 'Teacher Empowerment & Professional Development', 'Contemporary Educational Concerns', 'Acts, Rights, Commissions & Policies', 'Inclusive Education']),
+  ('psy', 'Educational Psychology', 'educational-psychology', ['Growth & Development', 'Learning & Learning Theories', 'Intelligence & Individual Differences', 'Motivation, Attitude & Personality', 'Child-Centred Pedagogy & Assessment', 'Mental Health & Adjustment']),
+  ('tel', 'Telugu', 'telugu', ['Grammar', 'Literature & Poets', 'Vocabulary & Comprehension', 'Methodology']),
+  ('hin', 'Hindi', 'hindi', ['Grammar', 'Literature & Writers', 'Vocabulary & Comprehension', 'Methodology']),
+  ('eng', 'English', 'english', ['Grammar', 'Vocabulary', 'Reading Comprehension', 'Literature', 'Methodology']),
+  ('mat', 'Mathematics', 'mathematics', ['Number System & Arithmetic', 'Algebra', 'Geometry & Mensuration', 'Trigonometry', 'Statistics & Probability', 'Calculus & Higher Mathematics', 'Methodology']),
+  ('phs', 'Physical Science', 'physical-science', ['Mechanics & Matter', 'Heat, Light & Sound', 'Electricity & Magnetism', 'Modern Physics', 'Physical & Inorganic Chemistry', 'Organic Chemistry', 'Methodology']),
+  ('bio', 'Biological Science', 'biological-science', ['Plant Biology', 'Animal Biology & Human Body', 'Cell Biology, Genetics & Evolution', 'Microbes, Health & Diseases', 'Ecology & Environment', 'Methodology']),
+  ('sci', 'Science (SGT)', 'science-sgt', ['Physical Science', 'Biological Science', 'Methodology']),
+  ('soc', 'Social Studies', 'social-studies', ['History', 'Geography', 'Polity', 'Economics', 'Methodology']),
+  ('ped', 'Physical Education', 'physical-education', ['Pedagogy & Methods', 'History & Olympic Movement', 'Anatomy, Physiology & Kinesiology', 'Health, Injuries & Sports Medicine', 'Sports Training & Officiating', 'Organisation, Management & Recreation', 'Yoga', 'Psychology, Sociology & Measurement']),
+]
+DSC_SUBJ_TE = dict(gk='జనరల్ నాలెడ్జ్, కరెంట్ అఫైర్స్', pie='విద్యా దృక్పథాలు', psy='విద్యా మనోవిజ్ఞానశాస్త్రం', tel='తెలుగు', hin='హిందీ', eng='ఇంగ్లీష్',
+                   mat='గణితం', phs='భౌతిక శాస్త్రం', bio='జీవ శాస్త్రం', sci='సైన్స్ (ఎస్జీటీ)', soc='సాంఘిక శాస్త్రం', ped='వ్యాయామ విద్య')
+DSC_SA = ('computer-based test, 160 questions, 80 marks (half a mark each), 150 minutes: general knowledge & current affairs 20, perspectives in education 10, '
+          'educational psychology 10, {s} content 80 and {s} methodology 40 questions')
+DSC_PE = ('computer-based test, 200 questions, 100 marks (half a mark each), 180 minutes: general knowledge & current affairs 10, perspectives in education 10, '
+          'physical education pedagogy 40 and physical education content 140 questions, in English and Telugu')
+def _dsc(pid, file, post, te_post, day, shift, slugpost, blurb, mins=150, stage='Teacher Recruitment Test (SA & SGT)'):
+    d, m = day.split(' ')[0], day.split(' ')[1]
+    return dict(id=pid, file=file, year=2025, stage=stage, short=f'{post} 2025', kwname=f'AP DSC {post} 2025 ({d} {m} Shift {shift})',
+                title=f'AP Mega DSC 2025: {post}, {day} 2025 (Shift {shift})', notif='Mega DSC-2025 · CBT', held=f'{day} 2025, Shift {shift}',
+                key="the School Education Department's final key", fmt='mcq', mins=mins,
+                slug=f'ap-dsc-{slugpost}-2025-question-paper-with-answers-{d}-{m.lower()}-shift-{shift}',
+                te_paper=f'{te_post} ({d} {dict(June="జూన్")[m]} 2025, షిఫ్ట్ {shift})', blurb=blurb[0].upper() + blurb[1:] + '.')
+DSC_PAPERS = [
+  _dsc('sgt25a', 'ap-dsc-2025-sgt-13-june-shift-2.txt', 'SGT', 'ఎస్జీటీ', '13 June', 2, 'sgt',
+       'computer-based test, 160 questions, 80 marks (half a mark each), 150 minutes: general knowledge & current affairs 16, perspectives in education 8, '
+       'educational psychology 16, and 24 each (content and methodology) of Telugu, English, Mathematics, Science and Social Studies, in English and Telugu'),
+  _dsc('satel25', 'ap-dsc-2025-sa-telugu-29-june-shift-2.txt', 'SA Telugu', 'స్కూల్ అసిస్టెంట్ తెలుగు', '29 June', 2, 'sa-telugu',
+       DSC_SA.format(s='Telugu') + '; the general sections in English and Telugu, the Telugu sections in Telugu'),
+  _dsc('sahin25', 'ap-dsc-2025-sa-hindi-8-june-shift-1.txt', 'SA Hindi', 'స్కూల్ అసిస్టెంట్ హిందీ', '8 June', 1, 'sa-hindi',
+       DSC_SA.format(s='Hindi') + '; the Hindi sections in Hindi'),
+  _dsc('saeng25', 'ap-dsc-2025-sa-english-13-june-shift-1.txt', 'SA English', 'స్కూల్ అసిస్టెంట్ ఇంగ్లీష్', '13 June', 1, 'sa-english',
+       DSC_SA.format(s='English') + '; the general sections in English and Telugu, the English sections in English'),
+  _dsc('samat25', 'ap-dsc-2025-sa-maths-12-june-shift-1.txt', 'SA Maths', 'స్కూల్ అసిస్టెంట్ గణితం', '12 June', 1, 'sa-maths',
+       DSC_SA.format(s='Mathematics') + ', in English and Telugu'),
+  _dsc('saps25', 'ap-dsc-2025-sa-physical-science-9-june-shift-2.txt', 'SA Physical Science', 'స్కూల్ అసిస్టెంట్ భౌతిక శాస్త్రం', '9 June', 2, 'sa-physical-science',
+       DSC_SA.format(s='Physical Science') + ', in English and Telugu'),
+  _dsc('sabs25', 'ap-dsc-2025-sa-biological-science-10-june-shift-1.txt', 'SA Biological Science', 'స్కూల్ అసిస్టెంట్ జీవ శాస్త్రం', '10 June', 1, 'sa-biological-science',
+       DSC_SA.format(s='Biological Science') + ', in English and Telugu'),
+  _dsc('sass25', 'ap-dsc-2025-sa-social-studies-16-june-shift-1.txt', 'SA Social Studies', 'స్కూల్ అసిస్టెంట్ సాంఘిక శాస్త్రం', '16 June', 1, 'sa-social-studies',
+       DSC_SA.format(s='Social Studies') + ', in English and Telugu'),
+  _dsc('sape25', 'ap-dsc-2025-sa-physical-education-9-june-shift-1.txt', 'SA Physical Education', 'స్కూల్ అసిస్టెంట్ వ్యాయామ విద్య', '9 June', 1, 'sa-physical-education',
+       DSC_PE, mins=180, stage='Teacher Recruitment Test (Physical Education)'),
+  _dsc('pet25', 'ap-dsc-2025-pet-22-june-shift-2.txt', 'PET', 'పీఈటీ', '22 June', 2, 'pet',
+       DSC_PE.replace('computer-based test', 'Physical Education Teacher (PET) computer-based test'), mins=180, stage='Teacher Recruitment Test (Physical Education)'),
+]
+for _p, _alt in zip(DSC_PAPERS, ['Secondary Grade Teacher', 'School Assistant Telugu', 'School Assistant Hindi', 'School Assistant English', 'School Assistant Mathematics',
+                                 'School Assistant Physical Science', 'School Assistant Biological Science', 'School Assistant Social Studies',
+                                 'School Assistant Physical Education', 'Physical Education Teacher']):
+    _p['alt'] = _alt
+DSC_LEFT = dict(sgt25a=[7], satel25=[82], sahin25=[9], saeng25=[49, 69, 94, 115, 136, 137], samat25=[155], saps25=[62, 116], sabs25=[28, 107, 110],
+                sass25=[], sape25=[27, 66, 86, 173, 193], pet25=[1, 21, 60])   # all four options ticked in the final key (marks to everyone): left out
+def dsc_have():
+    return have_src('ap-dsc', DSC_PAPERS)
+def dsc_posts():
+    """'SGT, School Assistant (Telugu, Hindi, …) and PET' for the papers on the site."""
+    have = set(dsc_have())
+    sa = [p['short'].replace('SA ', '').replace(' 2025', '') for p in DSC_PAPERS if p['id'] in have and p['short'].startswith('SA ')]
+    out = [x for x in ('SGT',) if 'sgt25a' in have] + ([f'School Assistant ({", ".join(sa)})'] if sa else []) + [x for x in ('PET',) if 'pet25' in have]
+    return ', '.join(out[:-1]) + ' and ' + out[-1] if len(out) > 1 else (out[0] if out else 'SGT and School Assistant')
+
 # ---------- Banking: SBI PO and IBPS SO (mock tests only) ----------
 # Anil, 8 Nov 2026: "pls add SBI PO and IBPS SO ... pyqs also". SBI and IBPS never publish their question papers; the
 # "memory-based" papers online are coaching companies' own write-ups, so they cannot be copied. Anil chose original
@@ -1833,6 +1906,22 @@ def exam_confs():
            papers_note=("Answers come from APPSC's final keys on the master question papers of the computer-based tests (Notification 12/2024, 29 April 2025"
                         + ("; Notification 20/2021, 4 November 2022" if 'aso22' in aso_have() else '') + "): the option marked correct there is the answer. "
                         "Questions APPSC ignored for all candidates are left out. The papers are in English and Telugu as printed (the 2025 computer questions in English only).")),
+      dict(id='ap-dsc', dir='ap-dsc', src='ap-dsc', key='ap-dsc', name='AP DSC (Teacher Recruitment Test)',
+           short='AP DSC', seo='AP DSC', slugp='ap-dsc', papers=DSC_PAPERS, subjects=DSC_SUBJECTS, faq=FAQ_DSC,
+           board='AP DSC', l2=L2_TE, pb='/ap-dsc/', keyname="the School Education Department's final key", keyshort='the official final keys', bits=True,
+           te_name='ఏపీ డీఎస్సీ', te_paper='టీచర్ రిక్రూట్‌మెంట్ టెస్ట్', subj_te=DSC_SUBJ_TE,
+           title='AP DSC Previous Question Papers with Answers – Mega DSC 2025 SGT, School Assistant & PET Final Key, Telugu & English | Learn with Anil',
+           h1='AP DSC previous question papers <em>with answers.</em>',
+           l2line='ఏపీ డీఎస్సీ (మెగా డీఎస్సీ 2025) పాత ప్రశ్నాపత్రాలు ఫైనల్ కీ సమాధానాలతో — ఎస్జీటీ, స్కూల్ అసిస్టెంట్ (తెలుగు, హిందీ, ఇంగ్లీష్, గణితం, భౌతిక శాస్త్రం, జీవ శాస్త్రం, సాంఘిక శాస్త్రం, వ్యాయామ విద్య), పీఈటీ; తెలుగు, ఇంగ్లీష్‌లో వివరణలతో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           aka='Also known as AP TRT (Teacher Recruitment Test) or AP Mega DSC: School Assistant (SA), Secondary Grade Teacher (SGT), PET and other teacher posts in Andhra Pradesh government, ZP, MPP and municipal schools, recruited by the District Selection Committees of the School Education Department.',
+           aka_short='Andhra Pradesh DSC / TRT teacher recruitment (School Education Department)',
+           desc=lambda t: (f"AP DSC previous question papers with answers from the final key: Mega DSC 2025 {dsc_posts()}, {t:,} questions in English and Telugu "
+                           f"with explanations, for AP DSC 2026 (2,721 posts). Practice quizzes, subject-wise bits and timed mock tests with the ₹45 All-in-One Pass."),
+           eyebrow='AP DSC · Teacher Recruitment Test · SGT, School Assistant &amp; PET · Mega DSC 2025',
+           papers_note=("Answers come from the final keys published by the School Education Department, Andhra Pradesh, on tet2dsc.apcfss.in for the Mega DSC 2025 computer-based test "
+                        "(6 June to 2 July 2025): the option ticked correct there is the answer. Questions for which the final key ticked all four options (marks to everyone) are left out; "
+                        "where it accepted two or three options, each is shown as correct. Every question is shown as printed: general sections in English and Telugu, "
+                        "language sections in their own language.")),
       dict(id='appsc-fro', dir='appsc-forest-range-officer', src='appsc-fro', key='ap-fro', name='APPSC Forest Range Officer (FRO)',
            short='APPSC FRO', seo='APPSC FRO', slugp='appsc-fro', papers=FRO_PAPERS, subjects=FRO_SUBJECTS, faq=FAQ_FRO,
            board='APPSC', l2=L2_TE, pb='/appsc-forest-range-officer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
@@ -2419,6 +2508,8 @@ def exam_terms(e, cat):
     if e['id'] == 'sbi-po': words += ['sbi', 'state bank', 'state bank of india', 'po', 'probationary officer', 'bank po', 'banking', 'bank exam', 'sbi po mock test']
     if e['id'] == 'ibps-so': words += ['ibps', 'so', 'specialist officer', 'it officer', 'agriculture field officer', 'afo', 'hr officer', 'personnel officer', 'marketing officer', 'banking', 'bank exam', 'ibps so mock test']
     if e['id'] == 'ssc-gd': words += ['ssc gd', 'gd constable', 'ssc constable', 'constable gd', 'general duty', 'capf constable', 'bsf', 'crpf', 'cisf', 'itbp', 'ssb', 'assam rifles', 'rifleman', 'ncb', 'sepoy', 'paramilitary', 'ssc gd mock test', 'jawan']
+    if e['id'] == 'ap-dsc': words += ['dsc', 'ap dsc', 'mega dsc', 'trt', 'teacher recruitment', 'teacher', 'teachers', 'sgt', 'secondary grade teacher', 'school assistant', 'sa',
+                                      'pet', 'physical education', 'b.ed', 'd.ed', 'tet', 'school education', 'డీఎస్సీ', 'టీచర్']
     if e['id'] == 'appsc-aso': words += ['aso', 'assistant statistical officer', 'statistical officer', 'statistics', 'economics', 'ecostats', 'economics and statistics', 'des', 'mpso', 'accountancy']
     if e['id'] == 'appsc-env-engineer': words += ['aee', 'assistant environmental engineer', 'environmental engineer', 'environmental engineering', 'pollution control board', 'appcb', 'common subject', 'fluid mechanics', 'eia']
     if e['id'] == 'appsc-analyst': words += ['analyst', 'analyst grade 2', 'analyst grade ii', 'pollution control board', 'appcb', 'chemistry', 'biochemistry', 'biology', 'environmental science']
@@ -3124,6 +3215,36 @@ def FAQ_ASO(total, npapers):
        'Questions that APPSC ignored for all candidates are left out (' + ' and '.join(left) + ').'),
     ]
 
+def FAQ_DSC(total, npapers):
+    have = set(dsc_have())
+    left = sum(len(v) for k, v in DSC_LEFT.items() if k in have)
+    return [
+      ('Where can I get AP DSC previous question papers with answers?',
+       f'This page has {total:,} questions from {npapers} AP Mega DSC 2025 question papers ({dsc_posts()}), with every answer taken from the final key of the '
+       'School Education Department, Andhra Pradesh, and a short explanation in English and Telugu. The questions are shown in English and Telugu as printed in the '
+       'computer-based test (the Telugu, Hindi and English sections in their own language). Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam.'),
+      ('What is the AP DSC 2026 exam pattern?',
+       'From the 2026 Information Bulletin: School Assistant (languages and non-languages) — 160 questions, 80 marks, 2 hours 30 minutes: GK & current affairs 20, perspectives in education 10, '
+       'classroom implications of educational psychology 10, subject content 80 and methodology 40 questions. SGT — 160 questions, 80 marks, 2 hours 30 minutes: GK & current affairs 16, '
+       'perspectives in education 8, educational psychology 16, then 16 content + 8 methodology questions each for Language-I, English, Mathematics, Science and Social Studies. '
+       'School Assistant (Physical Education) — 200 questions, 100 marks, 3 hours. Each question carries half a mark; there is no negative marking.'),
+      ('How is the final AP DSC merit decided?',
+       'For School Assistant (except Physical Education) and SGT, 80% comes from the DSC computer-based test and 20% from the APTET/CTET score (TET weightage). '
+       'School Assistant (Physical Education) is on the test marks alone. The minimum aggregate to qualify is 40% for OC and EWS, 35% for BC and 30% for SC, ST and PwBD.'),
+      ('When is the AP DSC 2026 exam?',
+       'The detailed notification (No.01/DSC-TRC-1/2026, 5 November 2026) gives online applications from 11 to 30 November 2026, hall tickets on 14 December and the computer-based test '
+       'from 20 December 2026 to 13 January 2027 (tentative). See the <a href="/ap-dsc-2026-notification.html">AP DSC 2026 notification page</a> for posts, district-wise vacancies, fee and age.'),
+      ('Are the AP DSC questions in Telugu?',
+       'Yes. The Mega DSC 2025 papers printed every general question in English and Telugu, and both are shown here. The Telugu sections (and the SA Telugu paper) are in Telugu, '
+       'the English sections in English and the SA Hindi paper in Hindi, exactly as asked.'),
+      ('Why does one paper have several shifts?',
+       'Mega DSC 2025 was held from 6 June to 2 July 2025 in two sessions a day, and each session had a different question paper of similar difficulty (marks were normalised). '
+       'This page starts with one paper for each post; more shifts are being added.'),
+      ('Which questions are left out?',
+       f'Questions for which the final key ticked all four options (marks to every candidate) are left out ({left} in all). Where the final key accepted two or three options, '
+       'each accepted option is shown as correct.'),
+    ]
+
 def FAQ_EO(total, npapers):
     return [
       ('Where can I get APPSC Executive Officer Grade-III previous question papers with answers?',
@@ -3409,13 +3530,13 @@ def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None, unlock=No
         ans = ' / '.join(f'({i + 1}) {q["o"][i]}' for i in q['a'])
     else:
         ans = q['ans']
-    if q.get('qt'):
+    if q.get('qt') and q['qt'] != q['q']:   # AP DSC Telugu-only questions carry the same text in both fields: show it once
         te = qtext_html(q['qt'])
         if q.get('ot'):
             te += '<ol>' + ''.join(f'<li>{esc(o)}</li>' for o in q['ot']) + '</ol>'
         parts.append(f'<div class="te" lang="{l2["code"]}">{te}</div>')
     ans_te = ''
-    if q.get('ot'): ans_te = ' / '.join(f'({i + 1}) {q["ot"][i]}' for i in q['a'])
+    if q.get('ot') and q['ot'] != q.get('o'): ans_te = ' / '.join(f'({i + 1}) {q["ot"][i]}' for i in q['a'])
     elif q.get('at'): ans_te = q['at']
     te_ans = f'<p class="ans" lang="{l2["code"]}">{l2["ans"]}: {esc(ans_te)}</p>' if ans_te else ''
     wt = f'<p class="why" lang="{l2["code"]}" style="margin-top:6px">{esc(q["wt"])}</p>' if q.get('wt') else ''
@@ -4907,7 +5028,7 @@ NOTIFS.update({
 # the Mega DSC 2025 patterns (the notification refers to G.O.Ms.No.52 and the Information Bulletin). Research notes: claude/ap-dsc-2026.md.
 APDSC = 'https://tet2dsc.apcfss.in/DSC2026/'
 NOTIFS['ap-dsc-2026-notification.html'] = dict(
-    exam=None, ename='AP DSC 2026', board='the School Education Department, Andhra Pradesh', site='tet2dsc.apcfss.in', crumb='AP DSC 2026 Notification',
+    exam='ap-dsc', ename='AP DSC 2026', board='the School Education Department, Andhra Pradesh', site='tet2dsc.apcfss.in', crumb='AP DSC 2026 Notification',
     title='AP DSC 2026 Notification Out – Apply 11–30 November, Exam from 20 December, Fee, Age & Subject-wise Posts (2,721) | Learn with Anil',
     desc='AP DSC 2026 (APTRT-2026): 2,721 teacher posts, with 906 School Assistant, 1,205 SGT, 350 special-education and 260 residential-school posts; '
          'district-wise, society-wise and subject-wise vacancies; apply online 11–30 November 2026, fee ₹1,000 per post, age 18–44 as on 1 July 2026, CBT from 20 December 2026 to 13 January 2027, hall tickets 14 December.',
@@ -4990,15 +5111,17 @@ NOTIFS['ap-dsc-2026-notification.html'] = dict(
         ('APSWREIS (social welfare)', 21, 45, 0, 0, 19, 85), ('APTWREIS (tribal welfare, Gurukulam)', 0, 6, 27, 1, 2, 36),
         ('MJPAPBCWREIS (BC welfare)', 3, 10, 24, 0, 0, 37), ('APREIS', 4, 20, 32, 1, 11, 68), ('AP Model Schools', 2, 0, 17, 0, 0, 19),
         ('Welfare of Differently Abled, Transgender & Senior Citizens', 0, 0, 13, 0, 2, 15), ('Total', 30, 81, 113, 2, 34, 260)])),
-      ('Exam pattern', 'table+', (['Post', 'Computer-based test', 'Plus'], [
-        ('School Assistant (2025 pattern)', '160 questions, 80 marks, 2 h 30 min: GK & current affairs 10, perspectives in education 5, educational psychology 5, subject content 40, methodology 20', '20 marks of TET weightage'),
-        ('SGT (2025 pattern)', '160 questions, 80 marks, 2 h 30 min', '20 marks of TET weightage'),
-        ('SA and SGT, Special Education (2026 syllabus)', '160 questions, 80 marks, 2 h 30 min', '20 marks of TET weightage (2025 rule)'),
-        ('SA (Physical Education), PET, PD (2025 pattern)', '200 questions, 100 marks, 3 hours', 'No TET'),
-        ('PGT, Principal (2025 pattern)', 'English proficiency test (qualifying) + Paper II of 200 questions, 100 marks, 3 hours', 'No TET'),
-        ('TGT (2025 pattern)', 'English proficiency test (qualifying, non-language TGT) + Paper II of 160 questions, 80 marks', '20 marks of TET weightage')])),
-      ('', 'note', 'Each question carries half a mark in the 160-question papers. The 2026 special-education syllabus confirms the 160-question, 80-mark paper. For the other posts the detailed notification '
-                   'refers to G.O.Ms.No.52 and the Information Bulletin for the pattern; the patterns above are from Mega DSC 2025. The CBT is in English and the medium you choose (SA Physical Education: English and Telugu only).'),
+      ('Exam pattern (2026 Information Bulletins)', 'table+', (['Post', 'Computer-based test', 'Plus'], [
+        ('School Assistant (languages and non-languages)', '160 questions, 80 marks, 2 h 30 min: GK & current affairs 20, perspectives in education 10, classroom implications of educational psychology 10, subject content 80, subject methodology 40', '20 marks of TET weightage'),
+        ('Secondary Grade Teacher (SGT)', '160 questions, 80 marks, 2 h 30 min: GK & current affairs 16, perspectives in education 8, educational psychology 16, then 16 content + 8 methodology each for Language-I, English, Mathematics, Science and Social Studies', '20 marks of TET weightage'),
+        ('School Assistant (Physical Education)', '200 questions, 100 marks, 3 hours: GK & current affairs 10, perspectives in education 10, physical education pedagogy 40, physical education content 140', 'No TET: test marks only'),
+        ('SA and SGT (Special Education)', '160 questions, 80 marks, 2 h 30 min (special-education syllabus 2026)', '20 marks of TET weightage'),
+        ('Principal (societies)', 'English proficiency test (100 questions, qualifying) + Paper II: 200 questions, 100 marks, 3 hours', 'No TET'),
+        ('PGT (societies)', 'English proficiency test (qualifying, non-language posts) + Paper II: 200 questions, 100 marks, 3 hours (GK 20, perspectives 20, psychology 20, content 100, methodology 40)', 'No TET'),
+        ('TGT (societies)', 'English proficiency test (qualifying, non-language posts) + Paper II: 160 questions, 80 marks, 2 h 30 min', '20 marks of TET weightage'),
+        ('Physical Director, PET (societies)', '200 questions, 100 marks, 3 hours', 'No TET')])),
+      ('', 'note', 'Each question carries half a mark and there is no negative marking. The English proficiency test is only a qualifying test (60 marks for OC, BC and EWS; 50 for SC, ST, PwBD and ex-servicemen): '
+                   'if you do not clear it, Paper II is not valued. From the School Education, Societies and Special Education Information Bulletins of DSC-2026 on tet2dsc.apcfss.in.'),
       ('Eligibility, fee and TET (2026 notification)', 'list', [
         'Fee: ₹1,000 for each post applied for, paid online from 11 to 30 November 2026.',
         'Age: 18 to 44 years as on 1 July 2026; up to 49 for SC, ST, BC and EWS candidates and 54 for persons with benchmark disabilities. Ex-servicemen deduct their armed-forces service plus three years.',
@@ -5611,6 +5734,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'ap-police-si': ('AP Police SI Preliminary Written Test', None, 'SLPRB AP notified 378 SI posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
   'ap-police-constable': ('AP Police Constable Preliminary Written Test', None, 'SLPRB AP notified 1,156 posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
   'tgpsc-hmwssb-manager': ('TGPSC HMWSSB Manager (Engineering)', None, 'Tentatively December 2026; TGPSC has not announced the exact date yet.'),
+  'ap-dsc': ('AP DSC 2026 computer-based test (first day)', '2026-12-20', 'Tentative schedule of School Education Notification No.01/DSC-TRC-1/2026 (5 November 2026): CBT from 20 December 2026 to 13 January 2027, hall tickets 14 December; apply by 30 November.'),
   'rpf-si': ('Next RPF SI recruitment (by SSC)', None, 'From the next cycle the SSC conducts RPF recruitment (RPF Amendment Rules, 17 October 2025); no notification as of 15 November 2026.'),
   'rpf-constable': ('Next RPF Constable recruitment (by SSC)', None, 'From the next cycle the SSC conducts RPF recruitment (RPF Amendment Rules, 17 October 2025); no notification as of 15 November 2026.'),
   'rrb-group-d': ('Next RRB Group D CBT', None, 'CEN 09/2025 (22,195 posts): CBT held 3–25 August 2026, result declared 12 November 2026, PET next. RRB has not announced the next Group D notification yet.'),
@@ -5889,11 +6013,11 @@ def free_sample_html(conf, papers, questions, qs):
                                                     for k, o in enumerate(q['o'])) + '</ol>')
         if q.get('lwo'):
             parts.append('<p class="muted" style="font-size:13px;margin:4px 0 0;font-weight:400">APPSC\'s key printed only the answer: the correct option is APPSC\'s, the other three are written by Learn with Anil.</p>')
-        if q.get('qt'):
+        if q.get('qt') and q['qt'] != q['q']:   # AP DSC Telugu-only questions: same text in both fields, shown once
             te = qtext_html(q['qt']) + ('<ol>' + ''.join(f'<li>{esc(o)}</li>' for o in q['ot']) + '</ol>' if q.get('ot') else '')
             parts.append(f'<div class="te" lang="{l2["code"]}">{te}</div>')
         ans = ' / '.join(f'({a + 1}) {q["o"][a]}' for a in q['a'])
-        ans_te = ' / '.join(f'({a + 1}) {q["ot"][a]}' for a in q['a']) if q.get('ot') else q.get('at', '')
+        ans_te = ' / '.join(f'({a + 1}) {q["ot"][a]}' for a in q['a']) if q.get('ot') and q['ot'] != q['o'] else q.get('at', '')
         parts.append('<details><summary>Show answer</summary>'
                      f'<p class="ans">{esc(NOKEY_LABEL.get(q.get("p"), "Answer"))}: {esc(ans)}</p>'
                      + (f'<p class="ans" lang="{l2["code"]}">{l2["ans"]}: {esc(ans_te)}</p>' if ans_te else '')
