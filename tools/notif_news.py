@@ -728,7 +728,7 @@ NEW['rrb-group-d-result-2026.html'] = dict(
       ('Who could apply', 'list', [
         'Class 10 pass, or ITI, or the National Apprenticeship Certificate (NAC) granted by NCVT (post-wise details in the notification).',
         'Age 18 to 33 years on 1 January 2026; relaxation OBC-NCL 3 years, SC/ST 5 years, more for PwBD and ex-servicemen.',
-        'Fee ₹500 (₹400 refunded after the candidate takes the CBT); ₹250 for SC, ST, ex-servicemen, PwBD, women, transgender, minorities and Economically Backward Class (refunded in full after the CBT).',
+        'Fee ₹500 (₹400 refunded after the candidate takes the CBT). SC, ST, ex-servicemen, PwBD, women, transgender, minorities and Economically Backward Class paid a fee of ₹250, refunded in full after the CBT.',
         'Pay: Level 1 of the 7th CPC Pay Matrix, starting basic pay ₹18,000 a month plus allowances.']),
       ('Exam pattern (CBT)', 'table+', (['Section', 'Questions'], [
         ('General Science', '25'), ('Mathematics', '25'), ('General Intelligence & Reasoning', '30'), ('General Awareness & Current Affairs', '20'),

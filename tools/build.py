@@ -423,13 +423,14 @@ def ntpc_text():
 # Hindi, as hosted by AglaSem; the Hindi sheets are another candidate's copy, so the Hindi was matched question by question and put in English option order.
 RRBD_BLURB = ('General Science 25, Mathematics 25, General Intelligence & Reasoning 30, General Awareness & Current Affairs 20: '
               '100 questions, 100 marks, 90 minutes, one-third of a mark cut for a wrong answer.')
+RRBD_HI_MON = {'November': 'नवंबर', 'February': 'फ़रवरी', 'January': 'जनवरी', 'December': 'दिसंबर'}
 def _rrbd(pid, day, mon, year, shift, time_, file_):
     held = f'{day} {mon} {year}'
     return dict(id=pid, file=file_, year=year, stage='CBT', short=f'CBT {day} {mon[:3]} {year} · S{shift}',
                 title=f'RRB Group D CBT, {held}, Shift {shift}', notif=f'CEN 08/2024 · Shift {shift} ({time_}) · RRB key', held=held,
                 key="RRB's answer key as marked on its question paper", fmt='mcq',
                 slug=f'rrb-group-d-{year}-{day}-{mon.lower()}-shift-{shift}-question-paper-with-answers',
-                alt='CBT', kwname=f'RRB Group D {year} ({day} {mon} Shift {shift})', hi_paper=f'सीबीटी ({day} {mon} {year}, पाली {shift})',
+                alt='CBT', kwname=f'RRB Group D {year} ({day} {mon} Shift {shift})', hi_paper=f'सीबीटी ({day} {RRBD_HI_MON[mon]}, पाली {shift})',
                 blurb=RRBD_BLURB, mins=90)
 RRBD_PAPERS = [
   _rrbd('f09s1', 9, 'February', 2026, 1, '9:00 AM', 'rrb-group-d-2026-02-09-shift-1.txt'),
