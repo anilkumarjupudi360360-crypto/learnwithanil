@@ -1,0 +1,932 @@
+# RRB NTPC Undergraduate Level CBT-1 (CEN 06/2024), held 1 September 2025, Shift 1 (9:00 AM - 10:30 AM). 100 questions, 100 marks, 90 minutes, -1/3 for a wrong answer. The response sheet numbers each section from 1 (General Awareness 1-40, Mathematics 1-30, Reasoning 1-30); here they run 1-100 in the same order.
+# Source: the question paper as printed from the RRB portal (candidate response sheet, via AglaSem); answers are the options RRB marked correct on that sheet (tentative answer key stage). Explanations by Learn with Anil.
+
+Q 1 | cur | International
+After his election as the first American pope, what papal name did Cardinal Robert Prevost choose?
+(1) Pope Leo XIV
+(2) Pope John XXIV
+(3) Pope Benedict XVII
+(4) Pope Francis II
+= 1
+~ Cardinal Robert Francis Prevost of Chicago was elected pope on 8 May 2025 after the death of Pope Francis and took the name Leo XIV. He is the first pope from the United States.
+
+Q 2 | sci | Biology
+Which of the following is the correct terminology for the gap between two neurons where they communicate?
+(1) Node gap
+(2) Synaptic cleft
+(3) Dendritic cleft
+(4) Axonal gap
+= 2
+~ A synapse is the junction between two neurons; the tiny gap across it is the synaptic cleft. A nerve impulse crosses it as chemical neurotransmitters released by the first neuron.
+
+Q 3 | geo | Indian Geography
+Which farming type involves small landholdings, simple tools, and production mainly consumed by farmers and their families in India?
+(1) Plantation farming
+(2) Commercial farming
+(3) Commercial grain farming
+(4) Subsistence farming
+= 4
+~ In subsistence farming the farmer grows crops on a small plot with traditional tools and family labour, mainly to feed the family. Commercial and plantation farming grow crops for sale.
+
+Q 4 | geo | Indian Geography
+Which type of natural vegetation in India is known for forests with hardwood trees such as sal, teak, and bamboo?
+(1) Tropical deciduous forests
+(2) Thorn forests
+(3) Tropical evergreen forests
+(4) Montane forests
+= 1
+~ Tropical deciduous (monsoon) forests, the most widespread forests in India, shed their leaves in the dry season. Teak, sal, bamboo, sandalwood and shisham are their main trees. Ebony, mahogany and rosewood are evergreen-forest trees.
+
+Q 5 | comp | Computer Basics & Hardware
+Which memory is non-volatile, meaning it retains data even after the computer is turned off?
+(1) Virtual Memory
+(2) Cache Memory
+(3) ROM
+(4) RAM
+= 3
+~ ROM (read-only memory) keeps its contents without power; it holds firmware such as the BIOS. RAM and cache lose their data when power is off, and virtual memory is a part of the disk used as an extension of RAM.
+
+Q 6 | eco | Agriculture, Industry & Trade
+During which of the following seasons was the National Agricultural Insurance Scheme launched to protect the farmers against crop losses suffered on account of natural calamities such as droughts, floods, hailstorms, cyclones, pests and diseases?
+(1) Rabi 1999-2000
+(2) Kharif 2001-2002
+(3) Rabi 2005-2006
+(4) Kharif 1998-1999
+= 1
+~ The National Agricultural Insurance Scheme (Rashtriya Krishi Bima Yojana) began in the Rabi 1999-2000 season, replacing the Comprehensive Crop Insurance Scheme. It was later replaced by the Pradhan Mantri Fasal Bima Yojana in 2016.
+
+Q 7 | cur | National
+The 'Keel Laying' ceremony of the first of the five Fleet Support Ships (FSS) for the Indian Navy was held at which place in November 2024?
+(1) Mazagon Dock Shipbuilders Ltd., Cochin
+(2) Hindustan Shipyard Ltd., Visakhapatnam
+(3) Goa Shipyard Limited
+(4) ABG Shipyard Ltd., Mumbai
+= 2
+~ Hindustan Shipyard Limited, Visakhapatnam, is building the Navy's five Fleet Support Ships under a 2023 contract; the keel of the first was laid there in November 2024. (Mazagon Dock is in Mumbai, not Kochi.)
+
+Q 8 | ih | Modern India
+Who introduced the Permanent Settlement in British India?
+(1) Lord Dalhousie
+(2) Lord Wellesley
+(3) Thomas Munro
+(4) Lord Cornwallis
+= 4
+~ Lord Cornwallis introduced the Permanent Settlement in Bengal, Bihar and Orissa in 1793, fixing the land revenue for ever with zamindars. Thomas Munro is linked with the Ryotwari system.
+
+Q 9 | ih | Art & Culture
+____________ is a classical dance form characterised by elaborate facial makeup, colourful costumes, and themes from Hindu epics, mainly performed by male dancers.
+(1) Kathak
+(2) Kathakali
+(3) Bharatanatyam
+(4) Mohiniyattam
+= 2
+~ Kathakali of Kerala is a dance-drama with heavy facial make-up (green 'pacha' for heroes), large costumes and stories from the Ramayana and Mahabharata, traditionally performed by men. Mohiniyattam, also from Kerala, is a solo dance by women.
+
+Q 10 | cur | National
+Which company signed a ₹1,220 crore deal for Software Defined Radios with Defence Ministry in February 2025?
+(1) Bharat Electronics Limited
+(2) Reliance Naval Systems
+(3) Hindustan Shipyard
+(4) L&T
+= 1
+~ In February 2025 the Defence Ministry signed a contract of about ₹1,220 crore with Bharat Electronics Limited (BEL) for Software Defined Radios for the Indian Coast Guard, under the Buy (Indian-IDDM) category.
+
+Q 11 | ih | Ancient India
+Which archaeological site shows pit dwellings and evidence of domesticated dogs during the Neolithic period?
+(1) Chirand
+(2) Burzahom
+(3) Koldihwa
+(4) Hallur
+= 2
+~ At Burzahom near Srinagar, Neolithic people lived in pit dwellings and buried dogs with their masters. Chirand (Bihar) is known for bone tools and Koldihwa (UP) for early rice.
+
+Q 12 | cur | National
+In January 2025, the Gujarat government declared the 'Inland Mangrove of Guneri', located in which district, as its first Biodiversity Heritage Site (BHS)?
+(1) Morbi
+(2) Kutch
+(3) Vadodara
+(4) Rajkot
+= 2
+~ The inland mangrove at Guneri village in Kutch district, a rare mangrove far from the sea, was notified as Gujarat's first Biodiversity Heritage Site under the Biological Diversity Act in January 2025.
+
+Q 13 | eco | Planning, Growth & Budget
+Infrastructure has been a key pillar for sustained growth. Which initiative was launched in 2020 to coordinate infrastructure projects in India?
+(1) Digital India
+(2) Make in India
+(3) PM Gati Shakti
+(4) Bharatmala Pariyojana
+= 3
+~ PM Gati Shakti National Master Plan is a digital platform that brings ministries such as railways and roads together to plan and coordinate infrastructure projects. It was actually launched on 13 October 2021, not 2020, but it is the only coordination platform among the options; RRB's key gives it. Digital India (2015), Make in India (2014) and Bharatmala (2017) are other programmes.
+
+Q 14 | ih | Modern India
+During the Revolt of 1857, Rani Laxmibai led the rebellion from:
+(1) Faizabad
+(2) Kanpur
+(3) Awadh
+(4) Jhansi
+= 4
+~ Rani Lakshmibai led the revolt at Jhansi, whose annexation under the Doctrine of Lapse had angered her. Nana Saheb led at Kanpur, Begum Hazrat Mahal at Lucknow (Awadh) and Maulvi Ahmadullah at Faizabad.
+
+Q 15 | pol | Government & Parliament
+Who among the following decides the allocation of portfolios among Indian state ministers?
+(1) Prime Minister
+(2) Governor
+(3) Chief Minister
+(4) Chief Justice of the High Court
+= 3
+~ The Chief Minister decides which minister holds which department. Formally the Governor allocates business under Article 166(3), but only on the Chief Minister's advice.
+
+Q 16 | cur | National
+As per April 2025 announcement, CRPF decided to raise which battalion for counter terror operation in Jammu and Kashmir?
+(1) Garud Commando Force
+(2) Special Frontier Force (SFF)
+(3) Para (Special Forces)
+(4) CoBRA Battalion
+= 4
+~ In April 2025 the CRPF decided to raise a CoBRA (Commando Battalion for Resolute Action) unit for counter-terror operations in Jammu and Kashmir. CoBRA was formed in 2008 for anti-Naxal jungle warfare. Garud belongs to the Air Force and Para (SF) to the Army.
+
+Q 17 | pol | Judiciary & Constitutional Bodies
+Which of the following cases CANNOT be taken up by a Lok Adalat?
+(1) Non-compoundable criminal offences
+(2) Land acquisition cases
+(3) Motor accident claims
+(4) Divorce disputes under mutual consent
+= 1
+~ Under the Legal Services Authorities Act, 1987, a Lok Adalat settles disputes by compromise, so it cannot deal with offences that the law does not allow to be compounded (settled between the parties). Motor accident claims, land acquisition and family matters are commonly settled there.
+
+Q 18 | ih | Modern India
+In which of the following years did Edward, Prince of Wales visit India on behalf of his father King George V, to thank the nation for the essential role it had played during the First World War?
+(1) 1921
+(2) 1920
+(3) 1922
+(4) 1925
+= 1
+~ The Prince of Wales landed in Bombay on 17 November 1921. The Congress, then running the Non-Cooperation Movement, called a nationwide hartal and boycott of his visit.
+
+Q 19 | cur | International
+Which of the following countries withdrew from the OCED Global Tax Deal in January 2025?
+(1) Russia
+(2) India
+(3) USA
+(4) China
+= 3
+~ On 20 January 2025 President Donald Trump signed a memorandum saying the OECD global tax deal (including the 15% global minimum tax) had no force in the USA, effectively pulling the US out. ("OCED" in the question is a misprint for OECD.)
+
+Q 20 | cur | National
+DIGIPIN, an open-source nationwide geo-coded addressing system, is an alphanumeric code of how many characters based on latitude and longitude coordinates?
+(1) 6 characters
+(2) 8 characters
+(3) 12 characters
+(4) 10 characters
+= 4
+~ DIGIPIN, developed by India Post with IIT Hyderabad and ISRO's NRSC, divides India into grids of about 4 m × 4 m and gives each a 10-character alphanumeric code based on its latitude and longitude.
+
+Q 21 | cur | National
+As announced in January 2025, which Indian pharmaceutical company is set to manufacture Paracetamol domestically?
+(1) Ajanta Pharmaceuticals
+(2) Satya Deeptha Pharmaceuticals
+(3) Alkem Laboratories
+(4) Lupin
+= 2
+~ In January 2025 it was announced that Satya Deeptha Pharmaceuticals would make paracetamol (its key raw material) in India, reducing dependence on imports, mainly from China. (RRB key.)
+
+Q 22 | cur | National
+Which of the following exercises was jointly conducted by the Indian Army and NDRF on May 2025 as a large-scale humanitarian assistance and disaster relief (HADR) simulation?
+(1) Prakampana
+(2) Raahat
+(3) Shakti
+(4) Mitra Shakti
+= 2
+~ RRB's key gives Exercise Raahat, a joint Army–NDRF humanitarian assistance and disaster relief exercise held in May 2025. Shakti is an India–France army exercise and Mitra Shakti an India–Sri Lanka one.
+
+Q 23 | geo | World & Physical Geography
+The International Date Line approximately follows which meridian?
+(1) 90° E
+(2) 180°
+(3) 75° W
+(4) 0°
+= 2
+~ The International Date Line runs roughly along the 180° meridian through the Pacific, bending around island groups. 0° is the Prime Meridian through Greenwich.
+
+Q 24 | pol | Constitution & Rights
+Which example best reflects the need for the Constitution in daily life?
+(1) Celebrating national festivals
+(2) Resolving a family dispute
+(3) Buying groceries from a local store
+(4) Class deciding rules for representation and resource sharing
+= 4
+~ A constitution sets the basic rules on how a group chooses its representatives, shares power and resources and limits those in authority. A class agreeing on such rules is the closest everyday example (NCERT uses a similar one).
+
+Q 25 | cur | Sports
+Which of the following players broke National Record in Women’s 3000 m steeplechase at Doha Diamond League 2025 and qualified for the World Athletics Championships?
+(1) Parul Chaudhary
+(2) Chaitali Borekar
+(3) Garima Yadav
+(4) Ekta Pradeep Dey
+= 1
+~ Parul Chaudhary ran 9:13.39 in the 3000 m steeplechase at the Doha Diamond League on 16 May 2025, breaking her own national record and making the World Championships standard.
+
+Q 26 | eco | Planning, Growth & Budget
+A primary goal of LPG reforms was macroeconomic stabilisation. Which indicator improved significantly post-1991 reforms?
+(1) Revenue deficit
+(2) Foreign exchange reserves
+(3) Fiscal deficit
+(4) Rural unemployment
+= 2
+~ In 1991 India's foreign exchange reserves could pay for only about two weeks of imports. After the liberalisation, privatisation and globalisation reforms they rose sharply as foreign investment and exports grew.
+
+Q 27 | pol | Constitution & Rights
+What is a key obligation of citizens toward fellow citizens and society?
+(1) Serve in the military automatically and responsibly
+(2) Participate morally and socially, not just legally
+(3) Pay higher taxes than others
+(4) Maintain political silence responsibly
+= 2
+~ Good citizenship goes beyond obeying laws: citizens should take part in social life with values such as respect for others and common brotherhood, as the Fundamental Duties (Article 51A) also say.
+
+Q 28 | eco | Agriculture, Industry & Trade
+Seasonal unemployment is common in rural economies. Which sector in India experiences the most seasonal unemployment?
+(1) Transport
+(2) Information technology
+(3) Agriculture
+(4) Manufacturing
+= 3
+~ Farm work depends on the sowing and harvest seasons, so agricultural workers have no work for several months a year. This is seasonal unemployment.
+
+Q 29 | geo | Indian Geography
+What type of pressure develops over the Indian subcontinent during the summer, attracting monsoon winds?
+(1) Anti-cyclonic high over land
+(2) Low pressure over land
+(3) High pressure over land
+(4) Cyclonic high over land
+= 2
+~ Intense summer heating creates a low-pressure area over north-west India. Winds from the high-pressure areas over the Indian Ocean flow towards it, bringing the south-west monsoon.
+
+Q 30 | sci | Chemistry
+Which type of reaction is involved in the rusting of iron?
+(1) Displacement
+(2) Redox
+(3) Combination
+(4) Decomposition
+= 2
+~ In rusting, iron is oxidised (loses electrons) to iron(III) and oxygen is reduced, in the presence of water, forming hydrated iron oxide. Since oxidation and reduction happen together, it is a redox reaction.
+
+Q 31 | geo | Environment & Ecology
+In which year was the National Disaster Response Force (NDRF) formed under the Disaster Management Act of 2005?
+(1) 2005
+(2) 2007
+(3) 2006
+(4) 2004
+= 3
+~ Section 44 of the Disaster Management Act, 2005 provides for the NDRF; it was constituted in 2006 with battalions drawn from the central armed police forces.
+
+Q 32 | pol | Constitution & Rights
+Which Constitutional Amendment added the words 'Socialist', 'Secular' and 'Integrity' to the Preamble of the Indian Constitution?
+(1) 42nd Amendment
+(2) 38th Amendment
+(3) 52nd Amendment
+(4) 44th Amendment
+= 1
+~ The 42nd Amendment (1976) added 'Socialist', 'Secular' and 'Integrity' to the Preamble. It is the only amendment so far to the Preamble.
+
+Q 33 | cur | Sports
+Who among the following was the first Indian athlete to win an Olympic gold medal?
+(1) Abhinav Bindra
+(2) Milkha Singh
+(3) Neeraj Chopra
+(4) KD Jadhav
+= 1
+~ Abhinav Bindra won the 10 m air rifle gold at Beijing 2008, India's first individual Olympic gold. (Earlier golds were team golds in hockey.) KD Jadhav won India's first individual medal, a bronze in 1952, and Neeraj Chopra the first athletics gold in 2021.
+
+Q 34 | pol | Judiciary & Constitutional Bodies
+On May 20, 2025, the Supreme Court has made minimum how many years of legal practice mandatory for entry into the judicial service?
+(1) 2 years
+(2) 4 years
+(3) 5 years
+(4) 3 years
+= 4
+~ On 20 May 2025 the Supreme Court restored the rule that candidates for Civil Judge (Junior Division) must have at least three years of practice as advocates.
+
+Q 35 | sci | Biology
+Which of the following substances is classified as an elastomer?
+(1) Tissue in Veins
+(2) Tissue in Kidney
+(3) Tissue in Pancreas
+(4) Tissue of Aorta
+= 4
+~ An elastomer is a material that stretches and springs back. The wall of the aorta is rich in elastin, a natural elastic protein, which lets it expand with each heartbeat and recoil. (The question is as printed by RRB.)
+
+Q 36 | cur | Awards, Books & Persons
+As in May 2025, who was the Chairman of the National Highways Authority of India (NHAI)?
+(1) Santosh Kumar Yadav
+(2) Shri Alok Deepankar
+(3) Vishal Chauhan
+(4) Anil Choudhary
+= 1
+~ Santosh Kumar Yadav, an IAS officer, was Chairman of NHAI in May 2025.
+
+Q 37 | ih | Ancient India
+Which of the following is NOT an epigraphic record for the reign of King Harsha?
+(1) Banskhera Copper Plate
+(2) Nalanda Seals
+(3) Muzaffarnagar Seals
+(4) Aihole Inscription
+= 3
+~ Harsha's reign is known from the Banskhera and Madhuban copper plates and the Sonepat and Nalanda seals. The Aihole inscription of Pulakeshin II records his defeat of Harsha. There are no 'Muzaffarnagar seals' of Harsha.
+
+Q 38 | cur | National
+Which city hosted the inaugural World Audio Visual & Entertainment Summit (WAVES) in May 2025?
+(1) Bengaluru
+(2) Mumbai
+(3) Hyderabad
+(4) Chennai
+= 2
+~ The first WAVES summit was held at the Jio World Centre, Mumbai, from 1 to 4 May 2025 and was inaugurated by Prime Minister Narendra Modi.
+
+Q 39 | cur | Awards, Books & Persons
+Who among the following was conferred with a Padma Vibhushan Award 2025 (Posthumous) in the field of literature in April 2025?
+(1) Shri Shekhar Kapur
+(2) Shri MT Vasudevan Nair
+(3) Dr. Duvvur Nageshwar Reddy
+(4) Shri Nandamuri Balakrishna
+= 2
+~ Malayalam writer M.T. Vasudevan Nair, who died in December 2024, received the Padma Vibhushan (posthumous) for literature and education. Dr D. Nageshwar Reddy (medicine) also got the Padma Vibhushan; Shekhar Kapur and Nandamuri Balakrishna got the Padma Bhushan.
+
+Q 40 | comp | Computer Basics & Hardware
+What does CPU stand for in computer systems?
+(1) Central Processing Unit
+(2) Control Processing Unit
+(3) Computer Processing Unit
+(4) Central Program Unit
+= 1
+~ CPU means Central Processing Unit, the 'brain' of the computer, made up of the arithmetic logic unit, the control unit and registers.
+
+Q 41 | qa | Number System & Simplification
+Evaluate: (−9) − (−60) ÷ (−10) + (−2) × 7
+(1) −32
+(2) −31
+(3) −28
+(4) −29
+= 4
+~ Division and multiplication first: (−60) ÷ (−10) = 6 and (−2) × 7 = −14. So −9 − 6 − 14 = −29.
+
+Q 42 | qa | Number System & Simplification
+The value of 5/2 + (1 / (1 + 3/8)) − 5/3 is
+(1) 106/59
+(2) 103/66
+(3) 95/69
+(4) 113/72
+= 2
+~ 1 + 3/8 = 11/8, so the bracket is 8/11. Then 5/2 + 8/11 − 5/3 = (165 + 48 − 110)/66 = 103/66.
+
+Q 43 | qa | Number System & Simplification
+Which of the following numbers divides 54,10,96,943?
+(1) 103
+(2) 97
+(3) 87
+(4) 107
+= 2
+~ 54,10,96,943 = 97 × 55,78,319, so 97 divides it. (It is odd and its digit sum 41 is not a multiple of 3, which also rules out 87 = 3 × 29.)
+
+Q 44 | qa | Trigonometry & Heights
+If cot²θ = 1/(1 − a²), |a| < 1, and θ is an acute angle, then find the value of (secθ + cosecθ tan³θ).
+(1) (2 − a²)^(3/2)
+(2) (4 − a²)
+(3) (a² − 8)
+(4) (2 − a^(3/2))
+= 1
+~ tan²θ = 1 − a², so sec²θ = 2 − a² and cosec²θ = 1 + 1/(1 − a²) = (2 − a²)/(1 − a²). Then cosecθ tan³θ = √(2 − a²)/√(1 − a²) × (1 − a²)^(3/2) = √(2 − a²) × (1 − a²). The sum is √(2 − a²) × (1 + 1 − a²) = (2 − a²)^(3/2).
+
+Q 45 | qa | Percentage, Profit & Interest
+A product is marked at ₹7,500. Two successive discounts of 8% and 5% are offered. What is the final selling price?
+(1) ₹5,655
+(2) ₹6,555
+(3) ₹5,125
+(4) ₹4,525
+= 2
+~ 7500 × 0.92 = 6900, and 6900 × 0.95 = ₹6,555.
+
+Q 46 | qa | Algebra
+Simplify: 3((4/3)x² − 24x + 18) − 4(x² + 7x − 18)
+(1) 100x + 126
+(2) −100x + 126
+(3) −100x − 126
+(4) 100x − 126
+= 2
+~ 4x² − 72x + 54 − 4x² − 28x + 72 = −100x + 126.
+
+Q 47 | qa | Percentage, Profit & Interest
+The selling price of 50 books is equal to the cost price of 16 books. Find the loss or gain percentage.
+(1) 100/34 % gain
+(2) 68% gain
+(3) 68% loss
+(4) 100/34 % loss
+= 3
+~ Let each book cost ₹1. 50 books sell for ₹16 but cost ₹50, a loss of 34 on 50 = 68% loss.
+
+Q 48 | qa | Geometry
+In △ABC, BD ⟂ AC at D and ∠DBC = 29°. E is a point on BC such that ∠CAE = 25°. What is the measure of ∠AEB?
+(1) 100°
+(2) 86°
+(3) 93°
+(4) 90°
+= 2
+~ In right triangle BDC, ∠C = 90° − 29° = 61°. ∠AEB is the exterior angle of triangle AEC at E, so it equals ∠CAE + ∠C = 25° + 61° = 86°.
+
+Q 49 | qa | Mensuration
+An open metallic box is 60 cm long, 40 cm wide and 23 cm high. Its thickness is 3 cm. If 1 cm³ of metal used in the box weighs 0.5 grams, find the weight (in kg) of the box.
+(1) 8.46
+(2) 9.24
+(3) 10.82
+(4) 10.42
+= 2
+~ Outer volume = 60 × 40 × 23 = 55,200 cm³. Inside (open top, so the height loses only the base): 54 × 34 × 20 = 36,720 cm³. Metal = 18,480 cm³, weighing 18,480 × 0.5 = 9,240 g = 9.24 kg.
+
+Q 50 | qa | Ratio, Average & Mixtures
+M and N start a business. M invests ₹39,000 more than N for 4 months and N invests for 7 months. M's share is ₹508 more than that of N, out of a total profit of ₹4,064. Find the capital contributed by M.
+(1) ₹70,322
+(2) ₹70,391
+(3) ₹70,243
+(4) ₹70,200
+= 4
+~ Shares: M = (4064 + 508)/2 = 2286 and N = 1778. So 4(N + 39,000) : 7N = 2286 : 1778, i.e. 16,002N = 7,112N + 27,73,68,000, giving N = 31,200. M = 31,200 + 39,000 = ₹70,200.
+
+Q 51 | qa | Percentage, Profit & Interest
+On a marked price of ₹5,000, a dealer offers successive discounts of 10% and 5%. Find the selling price.
+(1) ₹4,320
+(2) ₹4,250
+(3) ₹4,280
+(4) ₹4,275
+= 4
+~ 5000 × 0.90 × 0.95 = ₹4,275.
+
+Q 52 | qa | Percentage, Profit & Interest
+The population of a district is 374000, out of which 165000 are males. 21% of the population is literate. If 40% males are literate, then what percentage of females are literate?
+(1) 8%
+(2) 6%
+(3) 7%
+(4) 5%
+= 2
+~ Literates = 21% of 3,74,000 = 78,540. Literate males = 40% of 1,65,000 = 66,000, so literate females = 12,540. Females = 2,09,000, and 12,540/2,09,000 = 6%.
+
+Q 53 | qa | Time, Work, Speed & Distance
+Two pipes can fill a cistern, individually, in 16 minutes and 32 minutes, respectively. There is a pipe located at the bottom of the cistern to empty it. If all the three pipes are opened simultaneously, then the empty cistern gets filled in 12 minutes. How long will the pipe at the bottom of the tank take to empty the completely filled cistern if no other pipe is then open?
+(1) 192 minutes
+(2) 144 minutes
+(3) 160 minutes
+(4) 96 minutes
+= 4
+~ Emptying rate = 1/16 + 1/32 − 1/12 = (6 + 3 − 8)/96 = 1/96 per minute, so the outlet alone empties it in 96 minutes.
+
+Q 54 | qa | Ratio, Average & Mixtures
+Find the mean proportional of 490 and 10.
+(1) 70
+(2) 67
+(3) 68
+(4) 71
+= 1
+~ Mean proportional = √(490 × 10) = √4900 = 70.
+
+Q 55 | qa | Number System & Simplification
+Find the value of: [616 ÷ {26 + 9 × (5 − 7)}].
+(1) 78
+(2) 79
+(3) 77
+(4) 82
+= 3
+~ 5 − 7 = −2; 9 × (−2) = −18; 26 − 18 = 8; 616 ÷ 8 = 77.
+
+Q 56 | qa | Ratio, Average & Mixtures
+The average weight (in kg) of a family of five members, whose weights are 40 kg, 49 kg, 56 kg, 74 kg, and 39 kg, is:
+(1) 52.6
+(2) 50.6
+(3) 53.6
+(4) 51.6
+= 4
+~ Total = 40 + 49 + 56 + 74 + 39 = 258 kg; 258 ÷ 5 = 51.6 kg.
+
+Q 57 | qa | Ratio, Average & Mixtures
+A, B and C started a business investing ₹1,340, ₹1,100 and ₹2,440, respectively. If B's share in the profit earned by them is ₹814, what is the difference in the profit (in ₹) earned by A and C?
+(1) ₹811
+(2) ₹815
+(3) ₹816
+(4) ₹814
+= 4
+~ The investment ratio is 1340 : 1100 : 2440 = 67 : 55 : 122. C − A = 122 − 67 = 55 parts, the same as B's 55 parts, so the difference is ₹814.
+
+Q 58 | qa | Number System & Simplification
+The sum of two numbers is 84 and their L.C.M. is 120. What are the two numbers?
+(1) 65, 19
+(2) 60, 24
+(3) 53, 31
+(4) 58, 26
+= 2
+~ All pairs add up to 84; only 60 and 24 have LCM 120 (both divide 120, and 120 is the smallest such multiple).
+
+Q 59 | qa | Number System & Simplification
+The LCM of the numbers 5.1 and 0.102 is:
+(1) 51
+(2) 5.1
+(3) 0.51
+(4) 0.051
+= 2
+~ Multiply by 1000: 5100 and 102. 5100 = 102 × 50, so their LCM is 5100. Divide back by 1000: 5.1.
+
+Q 60 | qa | Percentage, Profit & Interest
+The simple interest on a certain sum for 4 1/5 years at the rate of 2.5% per annum is ₹8,400. What will be the amount payable on the same sum at the rate of 8.1% per annum simple interest in 10 1/4 years?
+(1) ₹1,46,429
+(2) ₹1,46,416
+(3) ₹1,46,420
+(4) ₹1,46,404
+= 3
+~ P × 2.5 × 4.2/100 = 8400, so P = ₹80,000. New SI = 80,000 × 8.1 × 10.25/100 = ₹66,420. Amount = 80,000 + 66,420 = ₹1,46,420.
+
+Q 61 | qa | Ratio, Average & Mixtures
+The average price of three items of furniture is ₹16860. If their prices are in the ratio 3:5:7, the price of the costliest item (in ₹) is
+(1) 23604
+(2) 7868
+(3) 10116
+(4) 5620
+= 1
+~ Total = 3 × 16,860 = 50,580 for 15 parts, so one part = 3,372. The costliest = 7 × 3,372 = ₹23,604.
+
+Q 62 | qa | Percentage, Profit & Interest
+Amit bought some erasers at the rate of ₹150 a dozen. He sold them for ₹42 each. His profit percentage is ______%.
+(1) 236
+(2) 240
+(3) 234
+(4) 238
+= 1
+~ Cost of one eraser = 150 ÷ 12 = ₹12.50. Profit = 42 − 12.5 = 29.5, and 29.5/12.5 × 100 = 236%.
+
+Q 63 | qa | Mensuration
+What is the area (rounded off to the nearest integer) of a triangle whose three sides measure 11 cm, 15 cm and 16 cm?
+(1) 79 cm²
+(2) 82 cm²
+(3) 84 cm²
+(4) 87 cm²
+= 1
+~ s = (11 + 15 + 16)/2 = 21. Heron's formula: √(21 × 10 × 6 × 5) = √6300 ≈ 79.4, so about 79 cm².
+
+Q 64 | qa | Time, Work, Speed & Distance
+In covering a distance of 60 km, Pranay takes 6 hours more than Aman. If Pranay doubles his speed, then he would take 9 hours less than Aman. Pranay's speed is:
+(1) 12 km/hr
+(2) 2 km/hr
+(3) 11 km/hr
+(4) 9 km/hr
+= 2
+~ 60/p − 60/a = 6 and 60/a − 30/p = 9. Adding: 30/p = 15, so p = 2 km/h. (Check: Pranay takes 30 h, Aman 24 h; at 4 km/h Pranay takes 15 h, 9 h less.)
+
+Q 65 | qa | Percentage, Profit & Interest
+By how much is 65% of 55 greater than 2/5 of 15?
+(1) 26.75
+(2) 23.75
+(3) 29.75
+(4) 27.75
+= 3
+~ 65% of 55 = 35.75 and 2/5 of 15 = 6. Difference = 29.75.
+
+Q 66 | qa | Algebra
+5 years ago, the age of a father was 11 years more than twice his son's age. After how many years, from now, will he be twice his son's age?
+(1) 10
+(2) 4
+(3) 5
+(4) 6
+= 4
+~ F − 5 = 2(S − 5) + 11, so F = 2S + 6. If after x years F + x = 2(S + x), then 2S + 6 + x = 2S + 2x, so x = 6.
+
+Q 67 | qa | Percentage, Profit & Interest
+Find the simple interest (in ₹) on ₹1,200 at an interest rate of 4% per month for 4 months.
+(1) ₹16
+(2) ₹32
+(3) ₹36
+(4) ₹192
+= 4
+~ Interest per month = 4% of 1200 = ₹48; for 4 months = ₹192.
+
+Q 68 | qa | Algebra
+The product of two consecutive natural numbers is 600. The greater of the two numbers is:
+(1) 31
+(2) 25
+(3) 40
+(4) 16
+= 2
+~ 24 × 25 = 600, so the greater number is 25.
+
+Q 69 | qa | Time, Work, Speed & Distance
+A man riding on a bicycle at a speed of 24 km/hr crosses a bridge in 3.1 minutes. Find the length of the bridge.
+(1) 0.34 km
+(2) 1.24 km
+(3) 0.62 km
+(4) 1.64 km
+= 2
+~ 24 km/h = 0.4 km per minute; 0.4 × 3.1 = 1.24 km.
+
+Q 70 | qa | Time, Work, Speed & Distance
+Pipe A can fill a tank in 20 hours, pipe B can fill the same tank in 25 hours and pipe C can fill the same tank in 10 hours. The time taken by them to fill the same tank if they operate together is:
+(1) 2 5/19 hours
+(2) 5 5/19 hours
+(3) 11 5/19 hours
+(4) 3 5/19 hours
+= 2
+~ Together they fill 1/20 + 1/25 + 1/10 = (5 + 4 + 10)/100 = 19/100 per hour, so the time is 100/19 = 5 5/19 hours.
+
+Q 71 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+72 × 3 − 8 ÷ 5 + 31 = ?
+(1) 33
+(2) 35
+(3) 37
+(4) 31
+= 1
+~ After interchanging: 72 ÷ 3 + 8 × 5 − 31 = 24 + 40 − 31 = 33.
+
+Q 72 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) ICWS
+(2) DXRN
+(3) KFYU
+(4) NHBX
+= 3
+~ In ICWS, DXRN and NHBX the steps are −6, −6, −4 (I→C→W→S). In KFYU, K→F is −5, so KFYU is the odd one.
+
+Q 73 | rea | Miscellaneous Reasoning
+If 1 is added to each odd digit and 2 is subtracted from each even digit in the number 8147563, what will be the sum of the digits that are second from the left and second from the right?
+(1) 14
+(2) 4
+(3) 10
+(4) 6
+= 4
+~ 8147563 becomes 6 2 2 8 6 4 4. Second from the left is 2 and second from the right is 4: 2 + 4 = 6.
+
+Q 74 | rea | Analogy & Classification
+MJRN is related to KHPL in a certain way based on the English alphabetical order. In the same way, PMUQ is related to NKSO. To which of the given options is SPXT related, following the same logic?
+(1) NQRV
+(2) QNRV
+(3) NQVR
+(4) QNVR
+= 4
+~ Every letter moves 2 places back (M→K, J→H, R→P, N→L). SPXT becomes QNVR.
+
+Q 75 | rea | Arrangement & Puzzles
+Seven boxes A, B, C, D, E, F and G are kept one over the other but not necessarily in the same order. D is kept immediately above A. G is kept immediately above B. Only E is kept above C. Only two boxes are kept above D. G is not kept at the third position from the bottom. How many boxes are kept above G?
+(1) 3
+(2) 5
+(3) 4
+(4) 2
+= 2
+~ From the top: E, C, D, A. G–B must take two adjacent places among the bottom three, and G cannot be third from the bottom, so G is second from the bottom, B at the bottom and F third. Five boxes are above G.
+
+Q 76 | rea | Blood Relations & Directions
+I is the daughter of X. K is the son of R. X is married to Z. Z is the mother of N. F is married to R. F is the brother of X. How is X related to K?
+(1) Father's father
+(2) Mother's brother
+(3) Father's brother
+(4) Father
+= 3
+~ F is a man married to R, so F is K's father. Z is a mother, so Z is female and her husband X is male. X is F's sibling, so X is K's father's brother.
+
+Q 77 | rea | Blood Relations & Directions
+Town P is to the south of Town Q. Town R is to the west of Town Q. Town S is to the west of Town R. Town T is to the north of Town S and also to the south of Town U. What is the position of Town U with respect to Town S?
+(1) West
+(2) East
+(3) South
+(4) North
+= 4
+~ T is north of S and U is north of T, so U is north of S.
+
+Q 78 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-cluster pairs are alike in a certain way and thus form a group. Which letter-cluster pair DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) PS−RU
+(2) YB−ZF
+(3) EH−GJ
+(4) IL−KN
+= 2
+~ In PS−RU, EH−GJ and IL−KN each cluster has letters 3 apart and the second cluster is the first moved 2 forward. In YB−ZF, Y→Z is only 1 and Z→F is 6, so YB−ZF is the odd one.
+
+Q 79 | rea | Mathematical Operations
+In the following number-pairs, the second number is obtained by applying certain mathematical operations to the first number. Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding/subtracting/multiplying to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+300, 194
+315, 209
+(1) 272, 166
+(2) 255, 159
+(3) 288, 180
+(4) 240, 124
+= 1
+~ The rule is − 106: 300 − 106 = 194 and 315 − 106 = 209. Only 272 − 106 = 166 fits.
+
+Q 80 | rea | Coding-Decoding
+In a certain code language, ‘LOAN’ is coded as ‘4257’ and ‘NIKE’ is coded as ‘1346’. What is the code for ‘N’ in the given code language?
+(1) 1
+(2) 6
+(3) 7
+(4) 4
+= 4
+~ N is the only letter in both words, and 4 is the only digit in both codes, so N = 4.
+
+Q 81 | rea | Miscellaneous Reasoning
+This question is based on the five, three-digit numbers given below.
+(Left) 512 648 729 378 462 (Right)
+(Example- 697 – First digit = 6, second digit = 9 and third digit = 7)
+(NOTE: All operations to be done from left to right.)
+What will be the resultant if the first digit of the lowest number is added to the third digit of the highest number?
+(1) 12
+(2) 10
+(3) 13
+(4) 11
+= 1
+~ The lowest number is 378 (first digit 3) and the highest is 729 (third digit 9): 3 + 9 = 12.
+
+Q 82 | rea | Arrangement & Puzzles
+I, J, K, L, O, P and Q are sitting around a circular table, facing the centre of the table. P sits third to the left of K. O sits second to the left of J. Only K sits between Q and O. L is not an immediate neighbour of P.
+How many people sit between I and O when counted from the right of I?
+(1) One
+(2) Four
+(3) Three
+(4) Two
+= 4
+~ Going left from K: K, Q, I, P, J, L, O. (K sits between Q and O; O being second to the left of J fixes which side each is on.) Counting to the right from I: Q, K, then O, so two people sit between them.
+
+Q 83 | rea | Series
+What should come in place of the question mark (?) in the given series?
+890 891 893 896 900 ?
+(1) 903
+(2) 906
+(3) 905
+(4) 904
+= 3
+~ The differences are 1, 2, 3, 4, so the next is + 5: 900 + 5 = 905.
+
+Q 84 | rea | Arrangement & Puzzles
+Seven boxes P, Q, R, S, X, Y and Z are kept one over the other, but not necessarily in the same order. Z is kept second from the bottom. Only three boxes are kept between Z and R. X is kept at one of the positions below Z. Only S is kept between R and Y. P is kept at one of the positions above R. How many boxes are kept between Q and R?
+(1) One
+(2) Four
+(3) Two
+(4) Three
+= 3
+~ From the bottom: X (1), Z (2), R (6). P is above R, so P is 7; Y and S then take 4 and 5. Q is at 3. Between Q (3) and R (6) are Y and S: two boxes.
+
+Q 85 | rea | Series
+What should come in place of the question mark (?) in the given series?
+56 58 63 73 90 ?
+(1) 115
+(2) 112
+(3) 114
+(4) 116
+= 4
+~ The differences are 2, 5, 10, 17 (n² + 1). The next is 26: 90 + 26 = 116.
+
+Q 86 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) CXZ
+(2) OJL
+(3) ZTW
+(4) IDF
+= 3
+~ CXZ, OJL and IDF follow −5, +2 (C→X→Z, O→J→L, I→D→F). ZTW is −6, +3, so it is the odd one.
+
+Q 87 | rea | Coding-Decoding
+In a certain code language, ‘learning is lifelong’ is written as ‘fk mb tb’ and ‘is school over’ is coded as ‘jt mt fk’. How is ‘is’ coded in the given language?
+(1) jt
+(2) tb
+(3) fk
+(4) mb
+= 3
+~ 'is' is the only word in both sentences, and fk is the only code in both, so 'is' = fk.
+
+Q 88 | rea | Arrangement & Puzzles
+A, B, C, D, E, F and G are sitting around a circular table facing the centre. B sits third to the left of G. C sits second to the left of B. F sits to the immediate right of D. E sits to the immediate right of G. How many people sit between A and D when counted from the left of A?
+(1) Three
+(2) One
+(3) Four
+(4) Two
+= 3
+~ Going left from G: G, F, D, B, A, C, E. (E is to G's right, so E is just before G in this order; D–F fill the remaining adjacent pair.) Counting left from A: C, E, G, F, then D, so four people sit between them.
+
+Q 89 | rea | Blood Relations & Directions
+Bimal starts from Point Y and drives 44 km towards south. He then takes a left turn, drives 56 km, turns right and drives 37 km. He then takes a right turn and drives 23 km. He takes a right turn, drives 28 km. He then turns right, drives 38 km, turns left and drives 53 km, turns right and drives 19 km to stop at Point Z. How far (shortest distance) and towards which direction should he drive in order to reach Point Y again? (All turns are 90° turns only unless specified.)
+(1) 90 km towards west
+(2) 87 km towards east
+(3) 92 km towards east
+(4) 84 km towards south
+= 1
+~ Take Y as (0, 0). South 44 → (0, −44); east 56 → (56, −44); south 37 → (56, −81); west 23 → (33, −81); north 28 → (33, −53); east 38 → (71, −53); north 53 → (71, 0); east 19 → Z = (90, 0). Y is 90 km to the west.
+
+Q 90 | rea | Series
+What should come in place of the question mark (?) in the given series based on the English alphabetical order?
+UNA OHU IBO CVI ?
+(1) WSP
+(2) WPC
+(3) WPS
+(4) WCP
+= 2
+~ Each letter moves 6 places back from one cluster to the next (U→O→I→C→W, N→H→B→V→P, A→U→O→I→C). The next cluster is WPC.
+
+Q 91 | rea | Series
+Which of the following letter-number clusters will replace the question mark (?) in the given series to make it logically complete?
+DLY 15, BJW 22, ZHU 29, XFS 36, ?
+(1) VDP 41
+(2) WER 43
+(3) VDQ 43
+(4) VER 42
+= 3
+~ Each letter moves 2 back (X→V, F→D, S→Q) and the number rises by 7 (36 + 7 = 43): VDQ 43.
+
+Q 92 | rea | Syllogism & Statements
+Read the given statement(s) and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).
+Statements:
+Some crafts are handlooms.
+All shawls are handlooms.
+Conclusions:
+(I) Some crafts are shawls.
+(II) All handlooms are shawls.
+(1) Only conclusion (II) follows.
+(2) Only conclusion (I) follows.
+(3) Neither conclusion (I) nor (II) follows.
+(4) Both conclusions (I) and (II) follow.
+= 3
+~ Crafts and shawls are both linked only to handlooms, so they may or may not overlap: (I) does not follow. All shawls are handlooms does not make all handlooms shawls: (II) does not follow.
+
+Q 93 | rea | Miscellaneous Reasoning
+Refer to the following number and symbol series and answer the question that follows. Counting to be done from left to right only.
+(Left) 5 8 £ 1 7 & $ $ 7 # 4 1 8 9 @ 7 5 7 £ @ 2 & (Right)
+How many such numbers are there each of which is immediately preceded by a number and also immediately followed by a number?
+(1) 3
+(2) 5
+(3) 4
+(4) 2
+= 1
+~ The cases are 1 (in 4 1 8), 8 (in 1 8 9) and 5 (in 7 5 7): three numbers.
+
+Q 94 | rea | Analogy & Classification
+DJMS is related to FORU in a certain way based on the English alphabetical order. In the same way, LDGA is related to NILC. To which of the given options is RSVG related, following the same logic?
+(1) TAXI
+(2) TIXA
+(3) TXAI
+(4) TXSW
+= 3
+~ The steps are +2, +5, +5, +2 (D→F, J→O, M→R, S→U). RSVG becomes T, X, A, I: TXAI.
+
+Q 95 | rea | Miscellaneous Reasoning
+Each of the digits in the number 2516984 is arranged in the ascending order from left to right. What will be the sum of the digits that are third from the left and third from the right in the new number thus formed?
+(1) 12
+(2) 10
+(3) 9
+(4) 7
+= 2
+~ In ascending order the number is 1245689. Third from the left is 4 and third from the right is 6: 4 + 6 = 10.
+
+Q 96 | rea | Analogy & Classification
+In the following triads, each group of letters is related to the subsequent one following a certain logic. Select from the given options, the one which follows the same logic.
+ABLE - BLAE - ELBA
+ITEM - TEIM - METI
+(1) SACK - ASCK - KACS
+(2) OPEN - OEPN - NEPO
+(3) SLOT - LOST - TOLS
+(4) CAME - AMCE - AMEC
+= 3
+~ Step 1 takes the letters in the order 2-3-1-4 (ABLE → BLAE, ITEM → TEIM). Step 2 takes the new word's letters in the order 4-2-1-3 (BLAE → ELBA, TEIM → METI). SLOT → LOST → TOLS follows both steps.
+
+Q 97 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusion(s) logically follow(s) from the statements.
+Statements: Some laptops are computers. No computer is a mobile.
+Conclusion (I): No laptop is a mobile.
+Conclusion (II): Some laptops are mobile.
+(1) Only conclusion (I) follows.
+(2) Both conclusions (I) and (II) follow.
+(3) Only conclusion (II) follows.
+(4) Neither conclusion (I) nor (II) follows.
+= 4
+~ The laptops that are not computers may or may not be mobiles, so neither conclusion is definite on its own. (The two conclusions form an either-or pair, but no such option is given; RRB's key is 'Neither'.)
+
+Q 98 | rea | Series
+What should come in place of the question mark (?) in the given series?
+191 192 196 205 221 ?
+(1) 231
+(2) 241
+(3) 236
+(4) 246
+= 4
+~ The differences are 1, 4, 9, 16 (squares). The next is 25: 221 + 25 = 246.
+
+Q 99 | rea | Miscellaneous Reasoning
+Each of the digits in the number 5648321 is arranged in ascending order from left to right. What will be the sum of the digits that are second from the left and second from the right in the new number thus formed?
+(1) 4
+(2) 6
+(3) 5
+(4) 8
+= 4
+~ In ascending order the number is 1234568. Second from the left is 2 and second from the right is 6: 2 + 6 = 8.
+
+Q 100 | rea | Arrangement & Puzzles
+In a row of certain number of people facing north, Rahul is sitting 245th from the left end and 19th from the right end. What is the total number of people in that row?
+(1) 226
+(2) 236
+(3) 263
+(4) 264
+= 3
+~ Total = 245 + 19 − 1 = 263 (Rahul is counted in both positions).

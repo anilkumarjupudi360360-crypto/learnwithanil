@@ -1,0 +1,969 @@
+# RRB NTPC Graduate Level CBT-1 (CEN 06/2025), held 16 March 2026, Shift 1 (9:00 AM - 10:30 AM). 100 questions, 100 marks, 90 minutes, -1/3 for a wrong answer.
+# Source: the question paper as printed from the RRB portal (candidate response sheet, via AglaSem); answers are the options RRB marked correct on that sheet (tentative answer key stage). Explanations by Learn with Anil.
+
+Q 1 | qa | Mensuration
+Find the area of a quadrilateral ABCD whose area is twice the area of a triangle PQR. The sides of triangle PQR are in the ratio 4:5:6 and the perimeter of the triangle is 90 cm (use √7 = 2.6).
+(1) 656 cm²
+(2) 702 cm²
+(3) 763 cm²
+(4) 698 cm²
+= 2
+~ The sides are 4k, 5k and 6k with 15k = 90, so k = 6 and the sides are 24, 30 and 36 cm. Semi-perimeter s = 45. By Heron's formula, area = √(45 × 21 × 15 × 9) = √(15² × 9² × 7) = 135√7 = 135 × 2.6 = 351 cm². ABCD has twice this area: 2 × 351 = 702 cm².
+
+Q 2 | rea | Series
+What should come in place of the question mark (?) in the given series?
+89 87 84 79 72 ?
+(1) 57
+(2) 59
+(3) 63
+(4) 61
+= 4
+~ The differences are −2, −3, −5, −7: consecutive prime numbers. The next difference is −11, so the missing number is 72 − 11 = 61.
+
+Q 3 | qa | Percentage, Profit & Interest
+20% of a number is more than 20% of 620 by 210. The number is:
+(1) 1520
+(2) 1720
+(3) 1670
+(4) 1770
+= 3
+~ 20% of 620 = 124. So 20% of the number = 124 + 210 = 334, and the number = 334 × 5 = 1670.
+
+Q 4 | sci | Physics
+Working of hydraulic lift and hydraulic brakes is based on:
+(1) Faraday's law
+(2) Gay-Lussac’s law
+(3) Pascal’s law
+(4) Coulomb's law
+= 3
+~ Pascal's law: pressure applied to an enclosed liquid is transmitted equally in all directions. A small force on a small piston creates pressure that acts on a larger piston and produces a larger force, which is how hydraulic lifts and brakes work. Faraday's law is about electromagnetic induction, Gay-Lussac's law about gas pressure and temperature, and Coulomb's law about electric charges.
+
+Q 5 | rea | Arrangement & Puzzles
+P, Q, R, S, T, U and V sit around a circular table facing the centre. Only one person sits between U and P when counted from the right of U. Only one person sits between P and R. Only one person sits between U and Q. Only two people sit between V and R. Only one person sits between T and Q. How many people sit between T and V when counted from the left of T?
+(1) 3
+(2) 2
+(3) 4
+(4) 1
+= 4
+~ Going to the right from U: P is second (one person between). R is two seats beyond P (the other seat two away from P is U's). Q is two seats from U on the other side, i.e. second to U's left. V must have two people between it and R, which leaves the seat right after U. T is two seats from Q, which leaves the seat between P and R, and S takes the last seat. Order to the right from U: U, V, P, T, R, Q, S. Counting to the left of T we meet P and then V, so only one person (P) sits between them.
+
+Q 6 | cur | International
+What is the name of the powerful non-nuclear bomb unveiled by Turkey at the 17th International Defence Industry Fair (IDEF) in July 2025?
+(1) Nebula
+(2) Phantom-X
+(3) Gazap
+(4) Titan
+= 3
+~ Turkey's defence ministry showed the Gazap bomb, along with the Hayalet bunker-buster, at IDEF 2025 in Istanbul (July 2025). Gazap is a heavy conventional (non-nuclear) bomb that sprays a very large number of fragments, described in Turkish media as one of the most powerful non-nuclear bombs.
+
+Q 7 | qa | Percentage, Profit & Interest
+Anand has ₹1407 with him. He divides this amount between his two sons, Anil and Ashok, and asks them to invest their respective shares at a compound interest rate of 10% per annum, compounded annually. It is observed that Anil’s investment amounts to the same value after 15 years as Ashok’s investment does after 16 years. How much (in ₹) did Anand give to Ashok?
+(1) 737
+(2) 837
+(3) 520
+(4) 670
+= 4
+~ Let Anil get A and Ashok get B. A × 1.1¹⁵ = B × 1.1¹⁶, so A = 1.1B. Then A + B = 2.1B = 1407, giving B = 670. Ashok got ₹670 (and Anil ₹737).
+
+Q 8 | pol | Constitution & Rights
+Which of the following Articles of the Indian Constitution directs the State to ensure equal pay for equal work for both men and women?
+(1) Article 42(b)
+(2) Article 15
+(3) Article 39(d)
+(4) Article 14
+= 3
+~ Article 39(d), a Directive Principle, asks the State to secure equal pay for equal work for both men and women. Article 14 is equality before law, Article 15 bars discrimination, and Article 42 is about just and humane conditions of work and maternity relief.
+
+Q 9 | rea | Series
+Which of the following letter-number clusters will replace the question mark “?” in the given series to make it logically complete?
+VPG 7, ZTK 11, DXO 15, HBS 19, ?
+(1) LEU 23
+(2) MGX 23
+(3) LGY 24
+(4) LFW 23
+= 4
+~ Every letter moves 4 places forward and the number rises by 4. First letters: V, Z, D, H, L. Second: P, T, X, B, F. Third: G, K, O, S, W. Number: 7, 11, 15, 19, 23. The next term is LFW 23.
+
+Q 10 | rea | Analogy & Classification
+EGDH is related to FIFI in a certain way based on the English alphabetical order. In the same way, JMHL is related to KOJM. To which of the following is NPRS related, following the same logic?
+(1) ORTT
+(2) ORST
+(3) OSST
+(4) OOPT
+= 1
+~ The rule is +1, +2, +2, +1: E→F, G→I, D→F, H→I and J→K, M→O, H→J, L→M. Applying it to NPRS: N→O, P→R, R→T, S→T, giving ORTT.
+
+Q 11 | qa | Ratio, Average & Mixtures
+The average of 13 numbers is 8. If each number is multiplied by 7, then what will the new average be:
+(1) 7
+(2) 8
+(3) 56
+(4) 13
+= 3
+~ Multiplying every number by 7 multiplies the average by 7: 8 × 7 = 56.
+
+Q 12 | pol | Government & Parliament
+Administrators of the Andaman and Nicobar Islands and Puducherry are designated as _________.
+(1) Governor
+(2) Lieutenant Governor
+(3) Administrator
+(4) Chief Minister
+= 2
+~ Union territories are run by an administrator appointed by the President (Article 239). In Delhi, Puducherry and the Andaman and Nicobar Islands this administrator holds the title of Lieutenant Governor (as in Jammu and Kashmir and Ladakh), while others such as Chandigarh and Lakshadweep have an "Administrator".
+
+Q 13 | qa | Number System & Simplification
+If (y − 12) = 4√5, then find the value of √(y − 3) − 1/√(y − 3).
+(1) 6
+(2) 4
+(3) 8
+(4) 9
+= 2
+~ y − 3 = 9 + 4√5 = (2 + √5)², so √(y − 3) = 2 + √5. Then 1/(2 + √5) = (√5 − 2)/(5 − 4) = √5 − 2. The required value is (2 + √5) − (√5 − 2) = 4.
+
+Q 14 | cur | Sports
+At the 2025 ICC Champions Trophy held in Dubai, which country did India defeat to secure their seventh ICC title in men’s senior cricket?
+(1) South Africa
+(2) England
+(3) New Zealand
+(4) Australia
+= 3
+~ India beat New Zealand by four wickets in the final in Dubai on 9 March 2025, winning the Champions Trophy for a record third time (after 2002, shared, and 2013).
+
+Q 15 | pol | Judiciary & Constitutional Bodies
+Which legislation forms the legal basis for the creation and operation of the Central Administrative Tribunal (CAT)?
+(1) The Service Matters Act, 1990
+(2) The Administrative Tribunals Act, 1985
+(3) The Judiciary Act, 1971
+(4) The Tribunals Reforms Act, 1980
+= 2
+~ Article 323A (added by the 42nd Amendment) lets Parliament set up administrative tribunals; Parliament passed the Administrative Tribunals Act, 1985, under which the CAT was set up the same year to hear service matters of Union government employees.
+
+Q 16 | eco | Planning, Growth & Budget
+In December 2025, the Finance Minister called on states to manage their debt within the limits prescribed under which fiscal framework?
+(1) GST
+(2) FRBM
+(3) Monetary Policy
+(4) NITI Aayog
+= 2
+~ The Fiscal Responsibility and Budget Management (FRBM) framework sets limits on deficits and debt; states have their own fiscal responsibility laws on the same lines. GST is a tax, monetary policy is the RBI's domain, and NITI Aayog is a policy think tank.
+
+Q 17 | rea | Arrangement & Puzzles
+Each of P, Q, R, S, T, U and V has an exam on a different day of a week starting from Monday and ending on Sunday of the same week.
+Only five people have exams between V and T. Only two people have exams between R and T. Q has the exam immediately after R. S has the exam immediately before P but after T.
+How many people have exams between P and U?
+(1) One
+(2) Two
+(3) Three
+(4) Four
+= 2
+~ Five people between V and T means they are on Monday and Sunday. S and P come after T, so T is on Monday and V on Sunday. R is two days clear of T: Thursday; Q follows on Friday. S and P are consecutive after T: Tuesday and Wednesday. U takes Saturday. Between P (Wednesday) and U (Saturday) are R and Q: two people.
+
+Q 18 | qa | Percentage, Profit & Interest
+Girish scored 572 marks in an examination and was 30 marks short of 28% of maximum marks. In the same examination, his friend scored 473 marks. What is the percentage of marks scored by his friend?
+(1) 22%
+(2) 23%
+(3) 21%
+(4) 24%
+= 1
+~ 28% of the maximum = 572 + 30 = 602, so the maximum marks = 602 ÷ 0.28 = 2150. The friend scored 473 ÷ 2150 × 100 = 22%.
+
+Q 19 | qa | Time, Work, Speed & Distance
+Two taps can fill a cistern in 4 hours and 38 hours respectively. A third tap can empty it in 38 hours. How long (in hours) will it take to fill one-fourth of the empty cistern, if all of them are opened together?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ The second tap fills 1/38 per hour and the third empties 1/38 per hour, so they cancel. The net rate is the first tap's 1/4 per hour, so one-fourth of the cistern fills in 1 hour.
+
+Q 20 | qa | Data Interpretation & Statistics
+If the median of a data is 61.54 less than its mode, then the median of the data exceeds its mean by _____. (Use the empirical formula to find the answer)
+(1) 32.03
+(2) 36.77
+(3) 30.77
+(4) 28.47
+= 3
+~ Empirical formula: Mode = 3 Median − 2 Mean, which gives Mode − Median = 2(Median − Mean). Here Mode − Median = 61.54, so Median − Mean = 61.54 ÷ 2 = 30.77.
+
+Q 21 | cur | International
+What was the main purpose of the India–MERCOSUR Preferential Trade Agreement discussions held in New Delhi on 16 October 2025?
+(1) To establish a common currency
+(2) To coordinate defense policies
+(3) To standardize education systems
+(4) To promote trade and investment
+= 4
+~ India and the MERCOSUR bloc (Argentina, Brazil, Paraguay, Uruguay) have had a Preferential Trade Agreement since 2009; the October 2025 talks in New Delhi were on expanding it to increase trade and investment. A preferential trade agreement is about tariffs and trade, not currency, defence or education.
+
+Q 22 | eco | Money, Banking & Finance
+Under the Union Budget 2025–26, the FDI limit in the insurance sector was increased from:
+(1) 26% to 49%
+(2) 51% to 100%
+(3) 74% to 100%
+(4) 49% to 74%
+= 3
+~ The Budget of 1 February 2025 raised the FDI cap in insurance from 74% to 100% for companies that invest the entire premium in India. It had gone from 26% to 49% in 2015 and from 49% to 74% in 2021.
+
+Q 23 | rea | Miscellaneous Reasoning
+Refer to the following number and symbol series and answer the question that follows. Counting to be done from left to right only. All numbers are single-digit numbers only.
+(Left) © 3 @ 8 5 1 £ 1 6 1 5 7 2 8 # € £ © € © 1 3 (Right)
+How many such numbers are there each of which is immediately preceded by a symbol and also immediately followed by a symbol?
+(1) 1
+(2) 0
+(3) 2
+(4) 3
+= 1
+~ Check each number's neighbours. Only 3 (between © and @) has a symbol on both sides. The 1 after £ is followed by 6, the 8 before # is preceded by 2, and the 1 after the last © is followed by 3. So there is just one such number.
+
+Q 24 | qa | Time, Work, Speed & Distance
+A train travelling at 60 km/hr crosses another train travelling in the opposite direction at 84 km/hr in 30 seconds. What is the combined length (in m) of both the trains?
+(1) 1000
+(2) 1300
+(3) 1200
+(4) 1100
+= 3
+~ Opposite directions, so the relative speed is 60 + 84 = 144 km/h = 144 × 5/18 = 40 m/s. In 30 seconds they cover 40 × 30 = 1200 m, the sum of their lengths.
+
+Q 25 | rea | Series
+Which of the given letter-number clusters will replace the question mark (?) in the following series to make it logically complete?
+FZN 4 XRF 6 PJX 9 HBP 13 ?
+(1) ZKW 21
+(2) LFR 17
+(3) ZTH 18
+(4) XHD 19
+= 3
+~ Each letter moves 8 places back (wrapping round the alphabet): F, X, P, H, Z; Z, R, J, B, T; N, F, X, P, H. The numbers rise by 2, 3, 4, 5: 4, 6, 9, 13, 18. The next term is ZTH 18.
+
+Q 26 | qa | Time, Work, Speed & Distance
+A boat can row 36 km downstream in the same time as it takes to row 24 km upstream. If the speed of the stream is 3 km/h, what is the speed of the boat in still water?
+(1) 15 km/h
+(2) 12 km/h
+(3) 21 km/h
+(4) 18 km/h
+= 1
+~ Same time, so the speeds are in the ratio of the distances: (b + 3) : (b − 3) = 36 : 24 = 3 : 2. Then 2b + 6 = 3b − 9, so b = 15 km/h. Check: 18 km/h downstream and 12 km/h upstream take 2 hours each.
+
+Q 27 | rea | Blood Relations & Directions
+Manoj starts from Point A and drives 25 km towards South. He then takes a left turn, drives 17 km, turns left and drives 28 km. He then takes a left turn and drives 20 km. He takes a final left turn, drives 3 km and stops at Point P. How far (shortest distance) and towards which direction should he drive in order to reach Point A again? (All turns are 90 degrees turns only unless specified)
+(1) 2 km to the west
+(2) 2 km to the east
+(3) 3 km to the west
+(4) 3 km to the east
+= 4
+~ Moves: 25 km south, left = 17 km east, left = 28 km north, left = 20 km west, left = 3 km south. North–south: −25 + 28 − 3 = 0. East–west: 17 − 20 = −3, so P is 3 km west of A. He must drive 3 km to the east.
+
+Q 28 | rea | Blood Relations & Directions
+In a certain code language,
+A + B means ‘A is the mother of B’
+A - B means ‘A is the wife of B’
+A × B means ‘A is the sister of B’
+A ÷ B means ‘A is the father of B’
+Based on the above, how is S related to P if ‘S - K ÷ T × V + P’?
+(1) Mother’s sister
+(2) Father’s mother
+(3) Father’s sister
+(4) Mother’s mother
+= 4
+~ S is the wife of K; K is the father of T; T is the sister of V; V is the mother of P. So K and S are V's parents, and V is P's mother. S is P's mother's mother.
+
+Q 29 | qa | Trigonometry & Heights
+A tower stands vertically on the ground. From a point on the ground which is 28.6 m away from the foot of a tower, the angle of elevation of the top of the tower is found to be 45°. Find the height of the tower.
+(1) 22.6 m
+(2) 28.6 m
+(3) 24.6 m
+(4) 26.6 m
+= 2
+~ tan 45° = height ÷ distance = 1, so the height equals the distance: 28.6 m.
+
+Q 30 | rea | Coding-Decoding
+In a certain code language, ‘BELI’ is coded as ‘6315’ and ‘EVIL’ is coded as ‘9653’. What is the code for ‘V’ in the given code language?
+(1) 6
+(2) 3
+(3) 9
+(4) 7
+= 3
+~ E, L and I are in both words and 6, 3 and 5 are in both codes, so those letters take those digits. The leftover letters are B (code 1) and V (code 9). So V = 9.
+
+Q 31 | qa | Data Interpretation & Statistics
+The mean marks of the following distribution is:
+Marks Obtained | No. of Students
+81 | 15
+35 | 4
+73 | 3
+56 | 16
+(1) 51
+(2) 60
+(3) 65
+(4) 74
+= 3
+~ Mean = Σfx ÷ Σf = (81 × 15 + 35 × 4 + 73 × 3 + 56 × 16) ÷ (15 + 4 + 3 + 16) = (1215 + 140 + 219 + 896) ÷ 38 = 2470 ÷ 38 = 65.
+
+Q 32 | geo | Indian Geography
+Which two neighbors combined have a land border with India longer than China’s border?
+(1) Bangladesh and Pakistan
+(2) Bhutan and Afghanistan
+(3) Nepal and Myanmar
+(4) Pakistan and Nepal
+= 1
+~ India's border with China is about 3,488 km. Bangladesh (about 4,097 km, the longest) and Pakistan (about 3,323 km) each come close on their own, and together they far exceed it. Bhutan (about 699 km) and Afghanistan (106 km), or Nepal (about 1,751 km) and Myanmar (about 1,643 km), do not.
+
+Q 33 | qa | Number System & Simplification
+What is the maximum value that must be assigned to A so that the 8-digit number 816A0408 is divisible by 4?
+(1) 5
+(2) 7
+(3) 9
+(4) 4
+= 3
+~ A number is divisible by 4 if its last two digits are. The last two digits are 08, which is divisible by 4 whatever A is, so the largest digit, 9, can be used.
+
+Q 34 | comp | Computer Basics & Hardware
+Which major technological advancement characterizes the fourth generation of computers?
+(1) Microprocessors
+(2) Transistors
+(3) Vacuum tubes
+(4) Integrated circuits
+= 1
+~ Generations: first, vacuum tubes; second, transistors; third, integrated circuits; fourth (from about 1971), microprocessors built with VLSI, which put a whole CPU on one chip.
+
+Q 35 | rea | Analogy & Classification
+VASE is related to ZEOA in a certain way based on the English alphabetical order. In the same way, DIKW is related to HMGS. To which of the following is LQCO related, following the same logic?
+(1) QUXL
+(2) QVZL
+(3) OTXJ
+(4) PUYK
+= 4
+~ The rule is +4, +4, −4, −4: V→Z, A→E, S→O, E→A and D→H, I→M, K→G, W→S. For LQCO: L→P, Q→U, C→Y (going back from C wraps to Y), O→K, giving PUYK.
+
+Q 36 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four are alike in a certain way and thus form a group. Which is the one that does not belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter cluster.)
+(1) BXS
+(2) DZV
+(3) PLG
+(4) WSN
+= 2
+~ BXS: B→X is 4 back, X→S is 5 back. PLG: −4, −5. WSN: −4, −5. DZV: D→Z is 4 back but Z→V is only 4 back, so DZV is the odd one.
+
+Q 37 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+Some canals are rivers.
+Some rivers are oceans.
+Some oceans are ponds.
+Conclusions:
+(I) All ponds are rivers.
+(II) All oceans are canals.
+(1) Neither conclusion (I) nor (II) follows
+(2) Both conclusions (I) and (II) follow
+(3) Only conclusion (I) follows
+(4) Only conclusion (II) follows
+= 1
+~ All three statements are "some" statements, which only say that the groups overlap. They cannot give an "all" conclusion: ponds need not be rivers and oceans need not be canals. Neither conclusion follows.
+
+Q 38 | cur | National
+Which institution released the policy report titled Internationalisation of Higher Education in India: Prospects, Potential, and Policy Recommendations in December 2025?
+(1) All India Council for Technical Education
+(2) University Grants Commission
+(3) Ministry of Education
+(4) NITI Aayog
+= 4
+~ NITI Aayog released the report on internationalising Indian higher education (attracting foreign students and campuses and helping Indian institutions go global) in December 2025.
+
+Q 39 | qa | Number System & Simplification
+Evaluate: (-9) - (-56) ÷ (-14) + (-4) × 7
+(1) -40
+(2) -41
+(3) -43
+(4) -44
+= 2
+~ Division and multiplication first: (−56) ÷ (−14) = 4 and (−4) × 7 = −28. Then −9 − 4 − 28 = −41.
+
+Q 40 | ih | Ancient India
+In which language was the Sangam literature of South India, composed between 300 BCE and 300 CE, primarily written?
+(1) Sanskrit
+(2) Pali
+(3) Tamil
+(4) Prakrit
+= 3
+~ Sangam literature (Tolkappiyam, Ettuthogai, Pattuppattu and others) was composed in Tamil by poets of the Sangam assemblies held under Pandya patronage at Madurai.
+
+Q 41 | rea | Arrangement & Puzzles
+Seven people F, G, H, I, V, W, and X are sitting around a circular table facing the centre of the table. I sits second to the right of W. I sits third to the left of F. V sits third to the left of X. G is an immediate neighbour of both W and F. How many people sit between H and G when counted from the left of H?
+(1) One
+(2) Zero
+(3) Three
+(4) Two
+= 3
+~ Going right from W: I is 2 seats on, and F is 3 seats on from I (I is third to F's left), so F is 5 seats from W. The seat between F and W is G's. V is third to the left of X, so X and V take the seats 4 and 1 from W, and H takes seat 3. Order going right from W: W, V, I, H, X, F, G. Moving left from H we pass I, V and W before G: three people.
+
+Q 42 | sci | Biology
+Consider a hypothetical population of rabbits experiencing logistic growth. If the carrying capacity of their environment is 1000 individuals and the current population is 500, what would you expect to happen to the population?
+(1) The population will decline rapidly due to resource depletion.
+(2) The population will continue to grow exponentially without any constraints.
+(3) The population will experience a sudden crash followed by a rapid rebound.
+(4) The population growth will slow down and eventually stabilize near the carrying capacity.
+= 4
+~ In logistic growth, growth is fastest at half the carrying capacity (500 of 1000) and then slows as resources become limiting, so the population levels off near the carrying capacity of 1000 (an S-shaped curve). Unlimited exponential growth, crashes and rapid declines are not part of the logistic model.
+
+Q 43 | sci | Chemistry
+Which postulate of Dalton's Atomic Theory was proven wrong by the discovery of subatomic particles?
+(1) Isotopes of the same element have different masses.
+(2) Atoms retain their identity in chemical reactions.
+(3) Atoms of different elements have different masses.
+(4) Matter consists of indivisible atoms.
+= 4
+~ Dalton held that atoms are indivisible. The discovery of electrons, protons and neutrons showed that atoms are made of smaller particles, so that postulate failed. Option 1 is not a Dalton postulate at all: isotopes disproved his idea that all atoms of an element are identical.
+
+Q 44 | qa | Ratio, Average & Mixtures
+Three friends X, Y and Z started a business by investing a sum of money in the ratio of 4 : 2 : 5. After 6 months, X withdraws half of his capital. If the sum invested by Z is ₹23,000, then out of a total annual profit of ₹37,000, what is the difference between X's and Y's profit?
+(1) ₹3700
+(2) ₹5015
+(3) ₹3065
+(4) ₹4255
+= 1
+~ With Z = 5 parts = ₹23,000, one part = 4,600: X = 18,400, Y = 9,200. Capital × months: X = 18,400 × 6 + 9,200 × 6 = 1,65,600; Y = 9,200 × 12 = 1,10,400; Z = 23,000 × 12 = 2,76,000. Ratio 3 : 2 : 5 (10 parts). X gets 11,100 and Y gets 7,400, a difference of ₹3,700.
+
+Q 45 | qa | Ratio, Average & Mixtures
+At present, Sharad is three times as old as his son, and his daughter is 3 years younger than the son. If the sum of the ages of these three people 3 years ago was 63 years, then Sharad's present age (in years) is:
+(1) 50
+(2) 55
+(3) 45
+(4) 35
+= 3
+~ Let the son be s. Sharad = 3s, daughter = s − 3. Three years ago: (3s − 3) + (s − 3) + (s − 6) = 5s − 12 = 63, so s = 15 and Sharad is 45.
+
+Q 46 | rea | Mathematical Operations
+Below are given two sets of numbers. In each set of numbers, a certain mathematical operation on the first number results in the second number. Similarly, certain mathematical operation on the second number results in the third number and so on. Which of the given options follows the same set of operations as in question?
+(NOTE – A two/three-digit number cannot be broken into individual digits for operations, e.g., if 37 is followed by 10, the operation cannot be 3+7 as a two-digit number cannot be broken into individual digits.)
+7 - 21 - 31 - 62; 9 - 27 - 37 - 74
+(1) 11-33-43-86
+(2) 12-36-46-82
+(3) 8-32-42-84
+(4) 6-18-28-76
+= 1
+~ The steps are ×3, +10, ×2: 7 → 21 → 31 → 62 and 9 → 27 → 37 → 74. Only 11 → 33 → 43 → 86 follows them. 12-36-46 should end in 92, 8 × 3 is 24 not 32, and 28 × 2 is 56 not 76.
+
+Q 47 | qa | Mensuration
+Find the area of a regular hexagon whose side measures 14√3 cm.
+(1) 509√3 cm²
+(2) 294√3 cm²
+(3) 882√3 cm²
+(4) 441√3 cm²
+= 3
+~ Area of a regular hexagon = (3√3/2) × a². Here a² = (14√3)² = 588, so the area = (3√3/2) × 588 = 882√3 cm².
+
+Q 48 | comp | Computer Basics & Hardware
+Which sector uses computers for online transactions, payroll processing, inventory control, and data analysis?
+(1) Manufacturing Plants
+(2) Research
+(3) Service Industry
+(4) Business and Commerce
+= 4
+~ Online transactions, payroll, inventory control and business data analysis are the standard textbook examples of computer use in business and commerce.
+
+Q 49 | qa | Percentage, Profit & Interest
+By selling an article at 6/15 of its actual selling price, Hitesh incurs a loss of 28%. If he sells it at 89% of its actual selling price, then the profit percentage is
+(1) 59.2%
+(2) 60.5%
+(3) 60.2%
+(4) 60.7%
+= 3
+~ Let the cost price be 100. Selling at (6/15) of the actual selling price gives 72 (a 28% loss), so the actual selling price = 72 × 15/6 = 180. 89% of 180 = 160.2, a profit of 60.2%.
+
+Q 50 | qa | Algebra
+If both the roots of the quadratic equation A(8x² + 4) + Bx² + 4x² − 8 = 0 and 3A(2x² + 1) + Kx² + 3x² − 6 = 0 are common, then what is the value of 9B² − 16K²?
+(1) −1
+(2) 1
+(3) 2
+(4) 0
+= 4
+~ The equations are (8A + B + 4)x² + (4A − 8) = 0 and (6A + K + 3)x² + (3A − 6) = 0. With both roots common, the coefficients are proportional, and 4A − 8 : 3A − 6 = 4 : 3. So 3(8A + B + 4) = 4(6A + K + 3), which gives 3B = 4K. Then 9B² − 16K² = (3B − 4K)(3B + 4K) = 0.
+
+Q 51 | qa | Algebra
+If a : b = 2 : 3, then (7a³ − 2b³) : (b³ − a³) =
+(1) 2 : 19
+(2) 3 : 11
+(3) 13 : 6
+(4) 3 : 14
+= 1
+~ Take a = 2, b = 3: a³ = 8, b³ = 27. 7a³ − 2b³ = 56 − 54 = 2 and b³ − a³ = 27 − 8 = 19. The ratio is 2 : 19.
+
+Q 52 | qa | Geometry
+In a triangle PQR, ∠QOR = 130°, where O is the in-centre of triangle PQR. The measure of ∠QPR is:
+(1) 70°
+(2) 80°
+(3) 60°
+(4) 50°
+= 2
+~ For the in-centre O, ∠QOR = 90° + ∠P/2. So 130° = 90° + ∠P/2, and ∠QPR = 80°.
+
+Q 53 | qa | Time, Work, Speed & Distance
+Three printing machines, P, Q and R, when each is working alone, can print one lakh books in, respectively, 8 hours, 16 hours and 24 hours. These machines print books in turns of one hour each, starting with P, followed by Q and then by R. However, after a total of 9 hours, P stops functioning, but Q and R continue working alternately for an hour each, with Q working during the 10th hour, till the printing of all the one lakh books is completed. In how many hours in all did machines Q and R complete printing the remaining books?
+(1) 9
+(2) 6
+(3) 12
+(4) 15
+= 2
+~ Hourly shares of the job: P 1/8 = 6/48, Q 1/16 = 3/48, R 1/24 = 2/48. Nine hours are three P-Q-R rounds: 3 × 11/48 = 33/48, leaving 15/48. Q and R together do 5/48 every two hours, so 15/48 takes 3 such pairs, that is 6 hours.
+
+Q 54 | eco | Agriculture, Industry & Trade
+Which sector's share in GDP increased significantly by 1990, reflecting a shift in the Indian economy?
+(1) Industry
+(2) Services
+(3) Agriculture
+(4) Mining
+= 1
+~ The NCERT account of India's planned development (1950–1990) notes that the industrial sector's share in GDP rose from 11.8% in 1950–51 to 24.6% in 1990–91, the main sign of diversification in that period. RRB's key follows this.
+
+Q 55 | cur | Awards, Books & Persons
+Consider the following statements about Thawar Chand Gehlot.
+1. He is the first person from Madhya Pradesh to serve as the Governor of Karnataka.
+2. He is the 19th Governor of Karnataka.
+Which of the above statements is/are correct?
+(1) Both 1 and 2
+(2) Neither 1 nor 2
+(3) Only 2
+(4) Only 1
+= 1
+~ Thawar Chand Gehlot, a former Union Minister from Madhya Pradesh, became Governor of Karnataka in July 2021. He is the 19th Governor of the state and the first from Madhya Pradesh to hold the post, so both statements are correct.
+
+Q 56 | qa | Mensuration
+There is a wooden block in the form of a cube whose each side is 8 meters long. The maximum possible number of cylinders with a diameter of 1 meter and a height of 4 meters were cut from this block. The cylinders are to be painted at the rate of ₹14 per square meter. What is the total amount (in ₹) needed to paint all the cylinders if we paint the entire surface of each cylinder? (Take π = 22/7)
+(1) 24,527
+(2) 23,455
+(3) 25,344
+(4) 24,325
+= 3
+~ Number of cylinders = 8 × 8 (per layer, 1 m wide) × 2 (layers 4 m high) = 128. Total surface of one cylinder = 2πr(h + r) = 2 × 22/7 × 0.5 × 4.5 = 99/7 m². Total area = 128 × 99/7 m², and the cost = 128 × 99/7 × 14 = 128 × 198 = ₹25,344.
+
+Q 57 | rea | Miscellaneous Reasoning
+This question is based on the five, three-digit numbers given below.
+(Left) 458 652 748 351 591 (Right)
+(Example- 697 – First digit = 6, second digit = 9 and third digit = 7)
+NOTE - All operations to be done from left to right.
+What will be the resultant if third digit of the highest number is multiplied with the third digit of lowest number?
+(1) 8
+(2) 7
+(3) 6
+(4) 5
+= 1
+~ The highest number is 748 (third digit 8) and the lowest is 351 (third digit 1). 8 × 1 = 8.
+
+Q 58 | qa | Number System & Simplification
+The sum of two numbers is 56. Their difference is 1/7 of their sum. Their LCM is:
+(1) 96
+(2) 63
+(3) 72
+(4) 84
+= 1
+~ Difference = 56 ÷ 7 = 8. The numbers are (56 + 8)/2 = 32 and (56 − 8)/2 = 24. LCM(32, 24) = 96.
+
+Q 59 | rea | Coding-Decoding
+In a certain code language, ‘CARD’ is coded as ‘4628’ and ‘NEAT’ is coded as ‘3574’. What is the code for ‘A’ in that language?
+(1) 4
+(2) 6
+(3) 3
+(4) 7
+= 1
+~ A is the only letter common to CARD and NEAT, and 4 is the only digit common to 4628 and 3574. So A = 4.
+
+Q 60 | sci | Biology
+What is the primary function of the water vascular system in echinoderms, such as starfish?
+(1) Reproduction
+(2) Sensory perception
+(3) Locomotion and feeding
+(4) Gas exchange
+= 3
+~ The water vascular system, a network of water-filled canals ending in tube feet, is the hallmark of echinoderms. Its main jobs are locomotion and capturing and moving food; it also helps in respiration, but that is not its primary function.
+
+Q 61 | ih | Ancient India
+Which Harappan city, around 2500 BCE, is noted for its dockyard, indicating advanced architectural planning for trade?
+(1) Mohenjodaro
+(2) Kalibangan
+(3) Lothal
+(4) Dholavira
+= 3
+~ Lothal in Gujarat (excavated by S. R. Rao) has a large brick basin identified as a dockyard, a sign of sea trade. Mohenjodaro is known for the Great Bath, Kalibangan for ploughed fields and fire altars, Dholavira for its water reservoirs and signboard.
+
+Q 62 | rea | Blood Relations & Directions
+In a certain code language,
+A @ B means ‘A is the son of B’,
+A # B means ‘A is the sister of B’,
+A + B means ‘A is the wife of B’ and
+A % B means ‘A is the father of B’.
+Based on the above, how is E related to B if ‘E + R @ D% N # B’?
+(1) Mother
+(2) Wife
+(3) Sister
+(4) Brother's wife
+= 4
+~ E is the wife of R; R is the son of D; D is the father of N; N is the sister of B. So R, N and B are D's children: R is B's brother, and E, R's wife, is B's brother's wife.
+
+Q 63 | qa | Number System & Simplification
+(∛6859 ÷ ∜256) × 2/57 × 168 = ?
+(1) 28
+(2) 37
+(3) 30
+(4) 38
+= 1
+~ ∛6859 = 19 (19³ = 6859) and ∜256 = 4. So (19/4) × (2/57) × 168 = (19 × 2 × 168) ÷ (4 × 57) = 6384 ÷ 228 = 28.
+
+Q 64 | eco | Money, Banking & Finance
+According to the Banking Laws (Amendment) Act, 2025, the threshold for ‘substantial interest’ in a bank was revised from ₹5 lakh to which of the following amounts?
+(1) ₹5 crore
+(2) ₹50 lakh
+(3) ₹2 crore
+(4) ₹1 crore
+= 3
+~ The Banking Laws (Amendment) Act, 2025 raised the 'substantial interest' limit (a shareholding that brings disclosure and other rules into play) from ₹5 lakh, fixed in 1968, to ₹2 crore.
+
+Q 65 | rea | Arrangement & Puzzles
+A, B, C, D, E and F live on six different floors of the same building. The lowermost floor in the building is numbered 1, the floor above it is numbered 2, and so on till the topmost floor is numbered 6.
+Only five people live above D. Only two people live above A. C lives below F but above A. B does not live on an even numbered floor.
+How many people live below C?
+(1) Four
+(2) One
+(3) Three
+(4) Two
+= 1
+~ Five people above D puts D on floor 1. Two people above A puts A on floor 4. C is above A and below F, so C is on 5 and F on 6. B is on an odd floor: 3, and E takes 2. Four people (on floors 1 to 4) live below C. (In RRB's sheet the words "above A" were printed over other text; this reading fits the key.)
+
+Q 66 | geo | Indian Geography
+The splitting of the ancient Indo–Brahma river into the Indus, Ganga, and Brahmaputra drainage systems is believed to have been primarily caused by which geological event?
+(1) Pleistocene upheaval
+(2) River capture by erosion
+(3) Volcanic eruptions
+(4) Glacial melting
+= 1
+~ Geologists believe a mighty river, the Indo-Brahma or Shiwalik, once flowed along the Himalayan foothills. Its break-up into the Indus, Ganga and Brahmaputra systems is put down to the Pleistocene upheaval in the western Himalayas, including the uplift of the Potwar Plateau (Delhi Ridge).
+
+Q 67 | eco | Agriculture, Industry & Trade
+When was the India European Free Trade Association (EFTA) Trade and Economic Partnership Agreement (TEPA) signed, which came into effect on 1 October 2025?
+(1) March 2024
+(2) August 2024
+(3) January 2025
+(4) September 2025
+= 1
+~ India signed TEPA with the four EFTA countries (Switzerland, Norway, Iceland, Liechtenstein) on 10 March 2024 in New Delhi. It came into force on 1 October 2025 and includes an EFTA commitment to promote USD 100 billion of investment in India over 15 years.
+
+Q 68 | cur | Static GK & Culture
+Which cultural and musical group celebrated its 10th anniversary in December 2025?
+(1) Satyajit Ray Society
+(2) Kala Mandir
+(3) India Panorama
+(4) Robir Kiran
+= 4
+~ RRB's key gives Robir Kiran, a cultural and music group that marked its tenth anniversary in December 2025. Kala Mandir and the Satyajit Ray Society are much older, and Indian Panorama is a film section of the International Film Festival of India, not a music group.
+
+Q 69 | geo | World & Physical Geography
+The summer solstice occurs when the Sun is directly overhead at which of the following latitudes?
+(1) Tropic of Capricorn
+(2) Arctic Circle
+(3) Equator
+(4) Tropic of Cancer
+= 4
+~ On the June (summer) solstice, about 21 June, the Sun's rays fall vertically on the Tropic of Cancer (23.5° N), the longest day in the northern hemisphere. On the December solstice the Sun is overhead at the Tropic of Capricorn, and at the equinoxes at the Equator.
+
+Q 70 | qa | Percentage, Profit & Interest
+At what rate (in percentage) per year will a sum of money double itself in 16 years on simple interest?
+(1) 4.25
+(2) 12.5
+(3) 8.25
+(4) 6.25
+= 4
+~ Doubling means the interest equals the principal, i.e. 100% in 16 years. Rate = 100 ÷ 16 = 6.25% per year.
+
+Q 71 | rea | Mathematical Operations
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding / subtracting / multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(20, 46, 2)
+(32, 136, 24)
+(1) (6, 42, 10)
+(2) (32, 93, 11)
+(3) (13, 25, 1)
+(4) (17, 78, 16)
+= 1
+~ Middle number = 2 × first + 3 × third: 2 × 20 + 3 × 2 = 46 and 2 × 32 + 3 × 24 = 136. For (6, 42, 10): 12 + 30 = 42. The others fail: 64 + 33 = 97, 26 + 3 = 29, 34 + 48 = 82.
+
+Q 72 | comp | Software & Operating Systems
+A file name is highlighted, and you want to copy it to another folder while keeping it in the original folder as well. Which pair of steps matches this task?
+(1) Press Ctrl + C, then Ctrl + B
+(2) Press Ctrl + C, then Ctrl + V
+(3) Press Ctrl + X, then Ctrl + V
+(4) Press Ctrl + S, then Ctrl + V
+= 2
+~ Ctrl + C copies the file and Ctrl + V pastes it in the new folder, leaving the original in place. Ctrl + X cuts (moves) it, Ctrl + S saves, and Ctrl + B is bold in text editors.
+
+Q 73 | qa | Ratio, Average & Mixtures
+There are 78 members in group A, 22 members in group B and 34 members in group C. All the members of these groups went to a restaurant. The average amounts spent on each member of groups A, B and C are ₹136, ₹383 and ₹457, respectively. The overall average amount (in ₹) spent per member is:
+(1) 256
+(2) 261
+(3) 258
+(4) 255
+= 3
+~ Total spent = 78 × 136 + 22 × 383 + 34 × 457 = 10,608 + 8,426 + 15,538 = 34,572. Members = 78 + 22 + 34 = 134. Average = 34,572 ÷ 134 = ₹258.
+
+Q 74 | cur | National
+In 2025, which Indian High Court issued the pioneering 'Policy Regarding the Use of AI Tools in District Judiciary', becoming the first in the country to frame comprehensive guidelines for artificial intelligence (AI) use in judicial work?
+(1) Delhi High Court
+(2) Madras High Court
+(3) Bombay High Court
+(4) Kerala High Court
+= 4
+~ In July 2025 the Kerala High Court issued its 'Policy Regarding the Use of Artificial Intelligence Tools in District Judiciary', the first such policy in India. It bars using AI tools to decide cases or write judgments and requires human checking of any AI-assisted work.
+
+Q 75 | eco | Planning, Growth & Budget
+Which of the following sectors observed a negative growth rate in Real GVA (Gross Value Added) during Q1 of FY 2025-26 as per the report published by NSO and MoSPI?
+(1) Construction
+(2) Tertiary Sector
+(3) Agriculture and Allied
+(4) Mining & Quarrying
+= 4
+~ NSO's estimates for April–June 2025 (released August 2025) showed real GDP growth of 7.8%, with mining and quarrying the only sector to shrink (about −3.1%). Agriculture grew about 3.7%, construction about 7.6% and services about 9.3%.
+
+Q 76 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+All bananas are apples.
+All apples are grapes.
+Some grapes are oranges.
+Conclusions:
+(I) All grapes are bananas.
+(II) All oranges are apples.
+(1) Only conclusion (I) follows
+(2) Only conclusion (II) follows
+(3) Both conclusions (I) and (II) follow
+(4) Neither conclusion (I) nor (II) follows
+= 4
+~ Bananas sit inside apples and apples inside grapes, so all bananas are grapes, but grapes can be much bigger than bananas: (I) does not follow. Oranges overlap only with some grapes and need not touch apples at all: (II) does not follow.
+
+Q 77 | qa | Percentage, Profit & Interest
+P sells an item to Q at 50% profit. Q sells the same item to R at 60% loss. If R paid ₹3234 for the item, then at what price (in ₹) is the item purchased by P?
+(1) 5390
+(2) 5387
+(3) 5391
+(4) 5393
+= 1
+~ Q sold at a 60% loss, so 3234 = 40% of Q's cost, and Q paid 3234 ÷ 0.4 = 8085. That is 150% of P's cost, so P paid 8085 ÷ 1.5 = ₹5,390.
+
+Q 78 | rea | Miscellaneous Reasoning
+This question is based on the five, three-digit numbers given below.
+(Left) 318 745 472 123 672 (Right)
+(Example: 697 – First digit = 6, second digit = 9 and third digit = 7)
+(NOTE: All operations to be done from left to right.)
+If all the numbers are arranged in the ascending order, the position of how many numbers will remain unchanged?
+(1) 0
+(2) 3
+(3) 1
+(4) 2
+= 3
+~ Ascending order: 123, 318, 472, 672, 745. Compared with 318, 745, 472, 123, 672, only 472 stays in the third place. One number.
+
+Q 79 | geo | Indian Geography
+In which of the following states is the slash and burn agriculture known as ‘Kuruwa’?
+(1) Jharkhand
+(2) Madhya Pradesh
+(3) Arunachal Pradesh
+(4) Rajasthan
+= 1
+~ Shifting (slash-and-burn) cultivation has many local names: Kuruwa in Jharkhand, Jhumming in the north-eastern states, Bewar or Dahiya in Madhya Pradesh, Podu in Andhra Pradesh and Odisha, Valre in Rajasthan.
+
+Q 80 | rea | Mathematical Operations
+If ‘A’ stands for ‘÷’, ‘B’ stands for ‘×’, ‘C’ stands for ‘+’ and ‘D’ stands for ‘−’, then what will come in place of the question mark (?) in the following equation?
+20 D 8 A 2 C 1 B 5 = ?
+(1) 22
+(2) 20
+(3) 21
+(4) 23
+= 3
+~ The equation becomes 20 − 8 ÷ 2 + 1 × 5 = 20 − 4 + 5 = 21.
+
+Q 81 | rea | Arrangement & Puzzles
+A, B, C, D, E and F live on six different floors of the same building. The lowermost floor in the building is numbered 1, the floor above it is numbered 2 and so on till the topmost floor, which is numbered 6.
+Only two people live below C. Only two people live between B and C. A lives above E but below C. F does not live above D.
+Who lives immediately below B?
+(1) C
+(2) D
+(3) F
+(4) A
+= 2
+~ C is on floor 3. B is three floors from C: floor 6. A and E are below C with A above E: A on 2, E on 1. D and F take floors 4 and 5 with F not above D: F on 4, D on 5. D lives immediately below B.
+
+Q 82 | rea | Mathematical Operations
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding / subtracting / multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(6,3,14)
+(14,8,27)
+(1) (19,12,36)
+(2) (14,87,26)
+(3) (6,15,21)
+(4) (16,25,31)
+= 1
+~ Third number = first + second + 5: 6 + 3 + 5 = 14 and 14 + 8 + 5 = 27. For (19, 12, 36): 19 + 12 + 5 = 36. The others give 106, 26 and 46.
+
+Q 83 | qa | Percentage, Profit & Interest
+A dealer buys two articles X and Y for ₹500 each. He marks each of them at the same price. He sells X by giving two successive discounts of 50% and 28% and still earns ₹958 as profit. If he sells Y at a single discount of 77%, then what is the profit percentage on Y?
+(1) 86.3%
+(2) 86%
+(3) 85%
+(4) 85.3%
+= 1
+~ X's selling price = M × 0.5 × 0.72 = 0.36M = 500 + 958 = 1458, so the marked price M = 4050. Y sells at 23% of 4050 = 931.5, a profit of 431.5 on 500: 431.5 ÷ 500 × 100 = 86.3%.
+
+Q 84 | rea | Analogy & Classification
+Which of the following letter-clusters should replace # and % so that the pattern and relationship followed between the letter-cluster pair on the left side of :: is the same as that on the right side of :: ?
+# : IGC :: TRN : %
+(1) # = LGY; % = QJH
+(2) # = LJF; % = QOK
+(3) # = LJK; % = QNJ
+(4) # = JKF; % = QJH
+= 2
+~ The second cluster is the first with every letter moved 3 back. LJF → IGC (L→I, J→G, F→C) and TRN → QOK (T→Q, R→O, N→K). So # = LJF and % = QOK.
+
+Q 85 | ih | Modern India
+Which European power was the last to arrive in India and the last to leave during the pre-independence period?
+(1) Portuguese
+(2) Americans
+(3) French
+(4) Dutch
+= 1
+~ RRB's key is the Portuguese, who were in fact the first Europeans to arrive (Vasco da Gama, 1498) and the last to leave (Goa, Daman and Diu were freed in 1961). The French were the last of the European trading companies to come (1664) but left Pondicherry in 1954. The question's "last to arrive" seems to be a slip for "first to arrive".
+
+Q 86 | rea | Analogy & Classification
+Based on the alphabetical order, three of the following four are alike in a certain way and thus form a group. Which one does not belong to that group?
+(Note: The odd one out is not based on the number of consonants or vowels or their position in the letter cluster)
+(1) UWR
+(2) SUP
+(3) KMG
+(4) EGB
+= 3
+~ UWR: +2, −5. SUP: +2, −5. EGB: +2, −5. KMG: +2 but then M → G is −6, so KMG is the odd one.
+
+Q 87 | ih | Modern India
+Which of the following prominent leaders led the Bardoli Satyagraha (1928)?
+(1) Gopalakrishna Gokhale
+(2) C. Rajagopalachari
+(3) Bal Gangadhar Tilak
+(4) Sardar Vallabhbhai Patel
+= 4
+~ Vallabhbhai Patel led the 1928 Bardoli peasants' satyagraha against a 22% land revenue increase in Gujarat; its success earned him the title "Sardar" from the women of Bardoli.
+
+Q 88 | qa | Ratio, Average & Mixtures
+Find the third proportional to the numbers 16 and 24.
+(1) 40
+(2) 36
+(3) 32
+(4) 30
+= 2
+~ The third proportional x satisfies 16 : 24 = 24 : x, so x = 24² ÷ 16 = 576 ÷ 16 = 36.
+
+Q 89 | cur | Static GK & Culture
+What was the route length of Indian Railways in 2019-2020?
+(1) 67,956 km
+(2) 66,935 km
+(3) 66,918 km
+(4) 67,415 km
+= 1
+~ Indian Railways' Year Book for 2019-20 gives a route length of 67,956 km (as on 31 March 2020). It keeps growing every year with new lines.
+
+Q 90 | pol | Constitution & Rights
+Which of the following is a Tibeto-Burman language included in the Eighth Schedule of the Indian Constitution?
+(1) Santhali
+(2) Maithili
+(3) Bodo
+(4) Konkani
+= 3
+~ Bodo, spoken mainly in Assam, belongs to the Tibeto-Burman family; it was added to the Eighth Schedule (with Santhali, Maithili and Dogri) by the 92nd Amendment, 2003. Santhali is Austroasiatic, and Maithili and Konkani are Indo-Aryan. Manipuri (Meitei) is the other Tibeto-Burman language in the Schedule.
+
+Q 91 | eco | Agriculture, Industry & Trade
+Which of the following is a tertiary activity?
+(1) Shoe shining
+(2) Extracting minerals
+(3) Steel making
+(4) Metal working
+= 1
+~ Tertiary activities are services. Shoe shining is a personal service. Extracting minerals is primary, while steel making and metal working are manufacturing, a secondary activity.
+
+Q 92 | ih | Medieval India
+The Group of Forty who advised and assisted the Sultan in administering the Delhi Sultanate was established by which of the following rulers?
+(1) Balban
+(2) Qutbuddin Aibak
+(3) Iltutmish
+(4) Alauddin Khalji
+= 3
+~ Iltutmish formed the Turkan-i-Chahalgani, the "Forty", a group of loyal Turkish nobles who helped run the Sultanate. Balban later broke their power to strengthen the Sultan.
+
+Q 93 | rea | Miscellaneous Reasoning
+Each of the digits in the number 15762349 is arranged in ascending order from left to right. The position of how many digits will remain unchanged as compared to that in the original number?
+(1) Two
+(2) One
+(3) None
+(4) Three
+= 1
+~ Ascending: 1 2 3 4 5 6 7 9. Original: 1 5 7 6 2 3 4 9. The first digit (1) and the last digit (9) stay in place: two digits.
+
+Q 94 | ih | Medieval India
+Which of the following administrative innovations is attributed to Alauddin Khilji’s reign?
+(1) Regulation of market prices and rationing
+(2) Foundation of Diwan-i-Arz for military reforms
+(3) Establishment of iqta system
+(4) Creation of mansabdari system
+= 1
+~ Alauddin Khalji fixed the prices of grain and other goods, set up controlled markets under the Shahna-i-Mandi, and rationed grain in times of scarcity, mainly to keep his large army affordable. The Diwan-i-Arz was set up by Balban, the iqta system was organised by Iltutmish, and the mansabdari system was Akbar's.
+
+Q 95 | comp | Software & Operating Systems
+Which of the following best represents a customized application software?
+(1) Spreadsheet software
+(2) Media player
+(3) Payroll management system for a company
+(4) Image viewer
+= 3
+~ Customised (tailor-made) software is built for one organisation's own needs, such as a company's payroll system. Spreadsheets, media players and image viewers are general-purpose, off-the-shelf packages.
+
+Q 96 | pol | Constitution & Rights
+The 86th Amendment added a new Fundamental Duty related to which of the following?
+(1) Safeguarding public property
+(2) Protecting environment
+(3) Educating children
+(4) Defending the nation
+= 3
+~ The 86th Amendment (2002) added Article 51A(k): a parent or guardian must provide opportunities for education to their child aged 6 to 14. The same amendment added Article 21A (right to education). The other duties were among the original ten added in 1976.
+
+Q 97 | ih | Modern India
+The weekly journal Young India was associated with whom among the following?
+(1) Bal Gangadhar Tilak
+(2) Mahatma Gandhi
+(3) Jawaharlal Nehru
+(4) Gopal Krishna Gokhale
+= 2
+~ Mahatma Gandhi edited the English weekly Young India from 1919 to 1932, using it to spread his ideas of non-violence and non-cooperation. Tilak ran Kesari and Mahratta.
+
+Q 98 | pol | Government & Parliament
+After a Constitution Amendment Bill relating to the Directive Principles of State Policy is passed by the Parliament, what is the next mandatory constitutional step for it to become a law?
+(1) Notification in the Gazette
+(2) Ratification by State Legislatures
+(3) President’s Assent
+(4) Approval by the Supreme Court
+= 3
+~ Under Article 368, an amendment needs ratification by half the states only if it touches federal provisions listed in the proviso (such as the election of the President or the Seventh Schedule). Directive Principles are not on that list, so after Parliament passes the bill by special majority it goes to the President, who must give assent.
+
+Q 99 | rea | Miscellaneous Reasoning
+In this question, a question is followed by two statements numbered (I) and (II). You have to decide whether the data provided in the statements are sufficient to answer the question. Read both the statements and decide the appropriate answer.
+Q. Five students – Isha, Kavita, Meenal, Nisha, and Priti – scored different marks. Who scored the second highest?
+(I) Meenal scored more than Isha but less than Nisha.
+(II) Priti scored more than Meenal but less than Nisha.
+(1) Both statements I and II together are NOT sufficient to answer the question
+(2) Data in Statement II alone is sufficient to answer the question while data in Statement I is not
+(3) Data in Statement I alone is sufficient to answer the question while data in Statement II is not
+(4) Both statements I and II together (and not statement I alone or statement II alone) are sufficient to answer the question
+= 1
+~ Together the statements give Isha < Meenal < Priti < Nisha, but nothing is said about Kavita, who could be anywhere. So the second highest cannot be found even with both statements.
+
+Q 100 | rea | Series
+What should come in place of ‘?’ in the given series?
+32 52 68 80 88 ?
+(1) 96
+(2) 94
+(3) 90
+(4) 92
+= 4
+~ The differences are +20, +16, +12, +8, falling by 4 each time. The next difference is +4: 88 + 4 = 92.

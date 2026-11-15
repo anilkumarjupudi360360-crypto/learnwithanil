@@ -734,7 +734,8 @@
    "cat": "rail",
    "b": "RRB",
    "t": "NTPC",
-   "n": "Non-Technical Popular Categories"
+   "n": "Non-Technical Popular Categories",
+   "live": "rrb-ntpc/"
   },
   {
    "id": "rrb-group-d",

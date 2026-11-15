@@ -1,0 +1,1146 @@
+# RRB NTPC Graduate Level CBT-2 (CEN 05/2024), held 13 October 2025, Shift 1 (9:30 AM - 11:00 AM). 120 questions, 120 marks, 90 minutes, -1/3 for a wrong answer.
+# Source: the question paper as printed from the RRB portal (candidate response sheet, via AglaSem); answers are the options RRB marked correct on that sheet (tentative answer key stage). Explanations by Learn with Anil.
+
+Q 1 | cur | Sports
+Which country will host the 2034 FIFA World Cup?
+(1) Saudi Arabia
+(2) Brazil
+(3) Russia
+(4) Qatar
+= 1
+~ FIFA confirmed Saudi Arabia as the host of the 2034 World Cup in December 2024. The 2026 edition is in the USA, Canada and Mexico and 2030 in Spain, Portugal and Morocco; Russia hosted in 2018 and Qatar in 2022.
+
+Q 2 | qa | Percentage, Profit & Interest
+The marked price of a shirt is ₹1,200. A shopkeeper offers two successive discounts of 5% and 15% on the marked price. By how many rupees is the selling price less than the marked price?
+(1) ₹231
+(2) ₹141
+(3) ₹131
+(4) ₹241
+= 1
+~ Selling price = 1200 × 0.95 × 0.85 = ₹969. It is less than the marked price by 1200 − 969 = ₹231.
+
+Q 3 | rea | Miscellaneous Reasoning
+A question is followed by two statements numbered (I) and (II). You have to decide whether the data provided in the statements are sufficient to answer the question. Read both the statements and decide the appropriate answer.
+What is Rahul's age (in years)?
+Statements:
+I. Rahul was born when his father was 33 years old.
+II. Rahul is 29 years younger than his mother.
+(1) Data in Statement II alone is sufficient to answer the question while data in statement I is not
+(2) Both statements I and II together are NOT sufficient to answer the question
+(3) Both statements I and II together (and not statement I alone or statement II alone) are sufficient to answer the question.
+(4) Data in statement I alone is sufficient to answer the question while data in statement II is not
+= 2
+~ Both statements only compare Rahul's age with his parents' ages; neither gives anyone's present age. Even together they cannot give Rahul's age.
+
+Q 4 | geo | Indian Geography
+Infant mortality rate is the number of infants per thousand who die before reaching _______ year(s) of age.
+(1) three
+(2) one
+(3) two
+(4) six
+= 2
+~ The infant mortality rate is the number of deaths of babies under one year of age per 1,000 live births in a year. Deaths under five years are measured by the under-five mortality rate.
+
+Q 5 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-cluster pairs are alike in a certain way and thus form a group. Which letter-cluster pair DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) RX – MS
+(2) NR – GL
+(3) MF – HA
+(4) IO – DJ
+= 2
+~ In RX – MS, MF – HA and IO – DJ each letter of the first cluster moves 5 back to give the second (R→M, X→S; M→H, F→A; I→D, O→J). In NR – GL, N→G is 7 back and R→L is 6 back, so NR – GL is the odd one.
+
+Q 6 | cur | National
+In August 2025, India launched its first Artificial Intelligence (AI)-powered Anganwadi at which location, marking a major advancement in early childhood education?
+(1) Pipariya village, Madhya Pradesh
+(2) Khargone village, Maharashtra
+(3) Waddhamna village, Nagpur district, Maharashtra
+(4) Dharampur village, Gujarat
+= 3
+~ India's first AI-powered Anganwadi opened at Waddhamna village in Nagpur district, Maharashtra, in August 2025, using AI-based learning tools, smart boards and personalised activities for young children.
+
+Q 7 | rea | Coding-Decoding
+In a certain code, ‘food is tasty’ is coded as ‘gm rt pj’, ‘snack is good’ is coded as ‘xl rt bn’, and ‘tasty good meal’ is coded as ‘pj bn dv’. What is the code for ‘meal’ in that code? (All codes are two-letter codes.)
+(1) bn
+(2) dv
+(3) rt
+(4) pj
+= 2
+~ 'is' is in the first two sentences: rt. 'tasty' is in the first and third: pj. 'good' is in the second and third: bn. The remaining word of the third sentence, 'meal', is dv.
+
+Q 8 | qa | Percentage, Profit & Interest
+A trader gives 10% discount on the marked price of an article and gives 4 articles free for buying 15 articles and gains 35% in the entire transaction. Assuming a customer pays for 15 articles, the marked price of an article is what percentage more than its cost price?
+(1) 90%
+(2) 89%
+(3) 95%
+(4) 94%
+= 1
+~ Let cost price C and marked price M. The customer pays 15 × 0.9M = 13.5M and gets 19 articles costing 19C. A 35% gain means 13.5M = 1.35 × 19C = 25.65C, so M = 1.9C: 90% above cost.
+
+Q 9 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) NSS
+(2) LPQ
+(3) XBC
+(4) SWX
+= 1
+~ LPQ, XBC and SWX follow +4, +1 (L→P→Q, X→B→C, S→W→X). NSS goes +5 and then +0, so it is the odd one.
+
+Q 10 | pol | Constitution & Rights
+Which of the following Articles of the Indian Constitution automatically suspends the Fundamental Rights during emergencies?
+(1) 359
+(2) 356
+(3) 352
+(4) 358
+= 4
+~ Under Article 358, the six freedoms of Article 19 are suspended automatically when a National Emergency is declared on the ground of war or external aggression. Article 359 needs a separate Presidential order to suspend the enforcement of other rights (never Articles 20 and 21). Article 352 is the emergency itself and Article 356 is President's Rule.
+
+Q 11 | qa | Number System & Simplification
+The number 977340 is divisible by:
+(1) 35
+(2) 24
+(3) 37
+(4) 34
+= 1
+~ 977340 ends in 0, so it is divisible by 5, and 977340 ÷ 7 = 139620, so it is divisible by 7 too, hence by 35. It is not divisible by 8 (340 ÷ 8 is not whole), so not by 24, and not by 17, so not by 34.
+
+Q 12 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+Some calculators are stones.
+All calculators are pens.
+No calculator is an octopus.
+Conclusions:
+(I): No octopus is a stone.
+(II): Some pens are octopuses.
+(1) Neither conclusion (I) nor (II) follows
+(2) Only conclusion (I) follows
+(3) Only conclusion (II) follows
+(4) Both conclusions (I) and (II) follow
+= 1
+~ Octopuses are only kept away from calculators. Stones that are not calculators could be octopuses, so (I) does not follow; pens may or may not include octopuses, so (II) does not follow either.
+
+Q 13 | geo | Indian Geography
+The 'Chennai Port' is located along which of the following water bodies?
+(1) Andaman Sea
+(2) Arabian Sea
+(3) Bay of Bengal
+(4) Gulf of Mannar
+= 3
+~ Chennai is on India's east (Coromandel) coast, so its port faces the Bay of Bengal. It is one of India's oldest ports, with an artificial harbour.
+
+Q 14 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+26 + 8 × 4 − 10 ÷ 5 = ?
+(1) 75
+(2) 73
+(3) 77
+(4) 74
+= 4
+~ After interchanging: 26 − 8 ÷ 4 + 10 × 5 = 26 − 2 + 50 = 74.
+
+Q 15 | ih | Ancient India
+Who among the following is credited with the composition of a text called 'Gatha Saptasati' or 'Saptasati'?
+(1) Srimukha
+(2) Hala
+(3) Gautamiputra
+(4) Satakarni I
+= 2
+~ The Gatha Saptasati (Gaha Sattasai), a collection of 700 verses in Maharashtri Prakrit, is credited to the Satavahana king Hala. Srimukha (Simuka) founded the dynasty, and Gautamiputra Satakarni was its greatest ruler.
+
+Q 16 | qa | Percentage, Profit & Interest
+The ratio of the cost prices of articles X and Y is 3 : 7. A man earns a profit of 14% by selling X and loses 11% by selling Y. What is his gain/loss percentage in the entire transaction?
+(1) Gain, 3.5%
+(2) Loss, 3%
+(3) Loss, 3.5%
+(4) Gain, 5%
+= 3
+~ Take the costs as 300 and 700 (total 1000). Profit on X = 42 and loss on Y = 77, a net loss of 35 on 1000: a 3.5% loss.
+
+Q 17 | qa | Number System & Simplification
+Evaluate the following.
+5/2 + (1 / (1 + 5/7)) − 3/2
+(1) 18/19
+(2) 28/3
+(3) 11/8
+(4) 19/12
+= 4
+~ 1 + 5/7 = 12/7, so the bracket is 7/12. Then 5/2 − 3/2 + 7/12 = 1 + 7/12 = 19/12.
+
+Q 18 | qa | Number System & Simplification
+Simplify: 0.848 ÷ 0.8 × 1/2 + 0.125 ÷ 5/2 × 0.4
+(1) 0.73
+(2) 0.55
+(3) 0.53
+(4) 0.75
+= 2
+~ Left to right in each term: 0.848 ÷ 0.8 = 1.06, × ½ = 0.53. 0.125 ÷ 5/2 = 0.05, × 0.4 = 0.02. Total 0.53 + 0.02 = 0.55.
+
+Q 19 | cur | International
+On 3 June 2025, India secured the presidency of which international organisation, defeating Austria with 87 out of 141 votes?
+(1) United Nations Public Administration Network (UNPAN)
+(2) Global Institute of Governance and Public Administration (GIGPA)
+(3) Commonwealth Association for Public Administration (CAPA)
+(4) International Institute of Administrative Sciences (IIAS)
+= 4
+~ India won the presidency of the Brussels-based International Institute of Administrative Sciences (IIAS) for 2025–28 on 3 June 2025, its first time, with 87 of 141 votes against Austria's candidate.
+
+Q 20 | cur | International
+On 3 March 2025, the world observed World Wildlife Day with which theme?
+(1) Recovering Key Species for Ecosystem Restoration
+(2) Forests and Livelihoods: Sustaining People and Planet
+(3) Wildlife Conservation Finance: Investing in People and Planet
+(4) Partnerships for Wildlife Conservation
+= 3
+~ World Wildlife Day (3 March, the day CITES was signed in 1973) had the 2025 theme "Wildlife Conservation Finance: Investing in People and Planet". "Forests and Livelihoods" was the 2021 theme and "Recovering Key Species" the 2022 theme.
+
+Q 21 | rea | Arrangement & Puzzles
+A, B, C, D, E, F, G and H are sitting around a square table facing the centre of the table. Some of them are sitting at the corners while some are sitting at the exact centre of the sides. F sits second to the right of G. F sits at one of the corners. Only three people sit between G and E when counted from the left of G. H sits third to the left of E. Only three people sit between H and B when counted from the left of H. C sits second to the right of B. D is not an immediate neighbour of E. How many people sit between E and D, when counted from the left of D?
+(1) None
+(2) One
+(3) Two
+(4) More than two
+= 2
+~ Number the eight seats to the right from G = 0: F = 2, E = 4 (opposite G), H = 1 (third to E's left), B = 5 (opposite H) and C = 7. A and D take 3 and 6; D cannot be next to E, so D = 6 and A = 3. Moving left from D we meet B (5) and then E (4): one person.
+
+Q 22 | qa | Number System & Simplification
+Evaluate the following.
+4/3 + (1 / (1 + 2/7)) − 4/3
+(1) 7/9
+(2) 9/8
+(3) 10/3
+(4) 3/13
+= 1
+~ The 4/3 terms cancel. 1 + 2/7 = 9/7, so the bracket is 7/9.
+
+Q 23 | rea | Series
+In the following series, only one letter-cluster is incorrect. Select the INCORRECT letter-cluster.
+HQK KNN NKQ QHS TEW WBZ
+(1) NKQ
+(2) TEW
+(3) QHS
+(4) WBZ
+= 3
+~ First letters go +3 (H, K, N, Q, T, W), second letters −3 (Q, N, K, H, E, B) and third letters +3 (K, N, Q, T, W, Z). The fourth cluster should be QHT, so QHS is wrong.
+
+Q 24 | sci | Biology
+Which of the following is NOT a component of essential maternal care?
+(1) Supplementation of iron and folic acid
+(2) Tetanus immunisation
+(3) Education on breastfeeding practices
+(4) Intrauterine insemination (IUI)
+= 4
+~ Essential maternal care covers antenatal check-ups, iron and folic acid supplements, tetanus immunisation, safe delivery and advice on breastfeeding and nutrition. Intrauterine insemination is an infertility treatment, not part of routine care for a pregnant mother.
+
+Q 25 | rea | Series
+What should come in place of the question mark (?) in the given series?
+7, 25, 61, 115, 187, ?
+(1) 278
+(2) 277
+(3) 276
+(4) 275
+= 2
+~ The differences are 18, 36, 54, 72 (multiples of 18). The next is 90: 187 + 90 = 277.
+
+Q 26 | cur | International
+What was the ranking of India in the Sustainable Development Goals (SDG) Index according to the 2025 edition of the Sustainable Development Report released in June 2025?
+(1) 121
+(2) 106
+(3) 99
+(4) 114
+= 3
+~ In the Sustainable Development Report 2025 (UN Sustainable Development Solutions Network), India ranked 99th of 167 countries, entering the top 100 for the first time (it was 109th in 2024).
+
+Q 27 | rea | Analogy & Classification
+MOST is related to EFKK in a certain way based on the English alphabetical order. In the same way, GEMJ is related to YVEA. To which of the given options is IDOI related, following the same logic?
+(1) AUZG
+(2) AGUZ
+(3) AUGZ
+(4) AGZU
+= 3
+~ The rule is −8, −9, −8, −9: M→E, O→F, S→K, T→K and G→Y, E→V, M→E, J→A. For IDOI: I→A, D→U, O→G, I→Z, giving AUGZ.
+
+Q 28 | cur | National
+In August 2025, which facility was inaugurated by the Chief of the Army Staff (COAS), General Upendra Dwivedi, at IIT Madras to bridge academic research and military needs?
+(1) Project SAMBHAV Secure Army Mobile Lab
+(2) Bharat Military Technology Incubation Hub
+(3) Agnishodh, the Indian Army Research Cell (IARC)
+(4) Defence Innovation and Technology Research Centre
+= 3
+~ General Upendra Dwivedi opened Agnishodh, the Indian Army Research Cell, at IIT Madras in August 2025 to link academic research with the Army's needs in areas such as advanced manufacturing, drones and cyber security.
+
+Q 29 | qa | Mensuration
+The sides of a triangle are 70 cm, 56 cm and 42 cm. What is its area? (in cm²)
+(1) 1176
+(2) 1171
+(3) 1186
+(4) 1211
+= 1
+~ 42² + 56² = 1764 + 3136 = 4900 = 70², so it is a right triangle with legs 42 and 56. Area = ½ × 42 × 56 = 1176 cm².
+
+Q 30 | qa | Number System & Simplification
+The simplified value of 72 ÷ [12/6 × {3 + 9 − (5 + 5 − (2 + 5))}] is:
+(1) 6
+(2) 8
+(3) 3
+(4) 4
+= 4
+~ Innermost first: 2 + 5 = 7; 5 + 5 − 7 = 3; 3 + 9 − 3 = 9; 12/6 × 9 = 18. Then 72 ÷ 18 = 4.
+
+Q 31 | qa | Percentage, Profit & Interest
+During a sale 50% of the goods are sold at 45% profit, 30% of the remaining goods are sold at 27% profit and the still remaining goods are sold at a loss of 43%. If there is an overall profit of x%, then what is the value of x?
+(1) 11.5
+(2) 10
+(3) 12
+(4) 13
+= 1
+~ The shares are 50%, 30% of the remaining 50% = 15%, and the last 35%. Overall profit = 0.50 × 45 + 0.15 × 27 − 0.35 × 43 = 22.5 + 4.05 − 15.05 = 11.5%.
+
+Q 32 | qa | Ratio, Average & Mixtures
+Find the weighted average of the numbers 17, 12, 23, 45, and 301, using the respective weights 29, 87, 15, 26, and 18.
+(1) 58.4
+(2) 42.42
+(3) 42.5
+(4) 48.4
+= 4
+~ Σwx = 17 × 29 + 12 × 87 + 23 × 15 + 45 × 26 + 301 × 18 = 493 + 1044 + 345 + 1170 + 5418 = 8470. Σw = 175. Weighted average = 8470 ÷ 175 = 48.4.
+
+Q 33 | eco | Planning, Growth & Budget
+Which of the following is NOT a direct tax?
+(1) Income tax
+(2) Tax on capital gains
+(3) Corporate tax
+(4) Value Added Tax (VAT)
+= 4
+~ A direct tax is paid by the person on whom it falls, like income tax, corporate tax and capital gains tax. VAT is collected from the seller but passed on to the buyer in the price, so it is an indirect tax (now largely replaced by GST).
+
+Q 34 | ih | Art & Culture
+Gharana Parampara is found in which of the following?
+(1) Karnataka Classical Music
+(2) Hindustani Classical Music
+(3) Hindustani Lok Music
+(4) Karnataka Folk Music
+= 2
+~ The gharana system, a lineage of teachers and disciples with its own style (Gwalior, Kirana, Agra, Jaipur and others), belongs to Hindustani classical music. Carnatic music is organised around composers and their traditions instead.
+
+Q 35 | geo | World & Physical Geography
+Which of the following zones lies between low and high tide in sea margins?
+(1) Foreshore
+(2) Shoreline
+(3) Near-shore
+(4) Tidal zone
+= 4
+~ The strip that is covered at high tide and exposed at low tide is the intertidal or tidal zone, which RRB's key gives. On a beach profile the same strip is also called the foreshore, so option 1 describes it too. (RRB key; some sources differ.)
+
+Q 36 | sci | Science & Technology
+Who among the following was the Prime Minister of India when India launched its Chandrayaan-2 mission?
+(1) Dr Manmohan Singh
+(2) PV Narasimha Rao
+(3) Atal Bihari Vajpayee
+(4) Narendra Modi
+= 4
+~ Chandrayaan-2 was launched on 22 July 2019 by GSLV Mk III from Sriharikota, when Narendra Modi was Prime Minister. Chandrayaan-1 (2008) was launched during Dr Manmohan Singh's term.
+
+Q 37 | comp | MS Office & Applications
+In MS Excel 2019, what is the maximum column width that can be set, and what does it represent?
+(1) 409 – Represents the number of visible characters possible in a zoomed-out view
+(2) 255 – Represents the number of characters in the default font that fit in a cell
+(3) 255 – Represents pixels based on the monitor resolution
+(4) 32767 – Represents the maximum number of characters storable in a cell
+= 2
+~ Excel's column width can be at most 255; the unit is the number of characters of the default font that fit in the cell. 409 points is the maximum row height, and 32,767 is the maximum number of characters a cell can hold.
+
+Q 38 | geo | Environment & Ecology
+In a terrestrial ecosystem, green plants capture approximately what percentage of solar energy falling on their leaves?
+(1) 10%
+(2) 1%
+(3) 5%
+(4) 0.01%
+= 2
+~ Plants convert only about 1% of the sunlight falling on their leaves into food energy by photosynthesis (NCERT). The 10% figure is the energy passed from one trophic level to the next.
+
+Q 39 | geo | Indian Geography
+What is the percentage of population living in cities referred to as?
+(1) Growth Rate
+(2) Population Density
+(3) Urbanisation
+(4) Crude Birth Rate
+= 3
+~ The level of urbanisation is the share of a country's population living in urban areas (31.1% in India in 2011). Density is people per square kilometre, and the crude birth rate is births per 1,000 people.
+
+Q 40 | comp | Software & Operating Systems
+In the context of operating systems, what does PCB stand for?
+(1) Process Control Block
+(2) Printed Circuit Board
+(3) Program Control Board
+(4) Permanent Code Buffer
+= 1
+~ In an operating system, a Process Control Block is the data structure that stores everything about a process: its ID, state, program counter, registers, memory and scheduling details. (In hardware, PCB means printed circuit board, but the question asks about operating systems.)
+
+Q 41 | cur | Sports
+In August 2025, Spanish tennis star Carlos Alcaraz won his first-ever Cincinnati Open title after which player retired in the final?
+(1) Alexander Zverev
+(2) Novak Djokovic
+(3) Jannik Sinner
+(4) Daniil Medvedev
+= 3
+~ Jannik Sinner, unwell, retired early in the Cincinnati Open final on 18 August 2025 while trailing 5–0, giving Carlos Alcaraz his first Cincinnati title.
+
+Q 42 | qa | Number System & Simplification
+The value of 6² + √(2²) − 5√25 − 11 is
+(1) −2
+(2) 3
+(3) −5
+(4) 2
+= 4
+~ 36 + 2 − 5 × 5 − 11 = 36 + 2 − 25 − 11 = 2.
+
+Q 43 | rea | Series
+What should come in place of the question mark (?) in the given series?
+2 12 60 240 ? 1440
+(1) 760
+(2) 720
+(3) 660
+(4) 780
+= 2
+~ The multipliers fall by one each step: × 6, × 5, × 4, × 3, × 2. So 240 × 3 = 720, and 720 × 2 = 1440 confirms it.
+
+Q 44 | rea | Blood Relations & Directions
+Samar starts from point A and drives 7 km towards east. He then takes a right turn and drives 9 km. He takes a final right turn and drives 13 km and stops at point B. Wahid starts from point P, which is 14 km east of Point A, and drives 3 km towards west. He then takes a left turn and drives 9 km. He takes a final right turn and drives 8 km and stops at Point Q. What is the shortest distance between Point Q and Point B? (All turns are 90 degree turns only.)
+(1) 11 km
+(2) 10 km
+(3) 9 km
+(4) 8 km
+= 3
+~ Take A as (0, 0). Samar: 7 east, 9 south, 13 west, so B = (−6, −9). Wahid: from (14, 0), 3 west to (11, 0), left (south) 9 to (11, −9), right (west) 8 to Q = (3, −9). Both are on the same line, 3 − (−6) = 9 km apart.
+
+Q 45 | rea | Mathematical Operations
+If ‘A’ stands for ‘+’, ‘B’ stands for ‘−’, ‘C’ stands for ‘×’ and ‘D’ stands for ‘÷‘, what will come in place of the question mark (?) in the following equation?
+25 C 3 B 12 D 4 A 10 = ?
+(1) 83
+(2) 81
+(3) 82
+(4) 80
+= 3
+~ The equation is 25 × 3 − 12 ÷ 4 + 10 = 75 − 3 + 10 = 82.
+
+Q 46 | cur | National
+As part of an initiative of the Union government, the NCCF started selling onions through mobile vans in Mumbai during September 2025 at subsidized rates. What does NCCF stand for?
+(1) National Consumer Confederation for Food
+(2) National Cooperative Consumers' Federation of India
+(3) National Cooperative Confederation for Food supplies
+(4) National Consumer Cooperative for Food distribution
+= 2
+~ NCCF is the National Cooperative Consumers' Federation of India, which the Centre uses (with NAFED) to sell onions, pulses and other items at subsidised prices from its buffer stocks to control prices.
+
+Q 47 | cur | National
+In July 2025, the Indian Army began restructuring single-arm brigades into integrated combat units combining infantry, tanks, artillery, engineers, UAVs and Special Forces. What are these units called?
+(1) Agni Multi-Domain Combat Units
+(2) Rudra All-Arms Brigades
+(3) Vajra Integrated Battle Groups
+(4) Sena Combined Operations Brigades
+= 2
+~ The Army announced 'Rudra' all-arms brigades in July 2025: formations that bring infantry, armour, artillery, engineers, drones, logistics and special forces under one command for faster, self-contained operations.
+
+Q 48 | rea | Series
+In the following series, only one letter-cluster is incorrect. Select the INCORRECT letter-cluster.
+FHK IKN LNQ OQT RSW
+(1) OQT
+(2) FHK
+(3) LNQ
+(4) RSW
+= 4
+~ Each letter of a cluster moves +3 in the next cluster: F, I, L, O, R; H, K, N, Q, T; K, N, Q, T, W. The last cluster should be RTW, so RSW is wrong.
+
+Q 49 | sci | Biology
+Which meristematic tissue is found at nodes and helps in regrowth of grasses?
+(1) Lateral
+(2) Intercalary
+(3) Permanent
+(4) Apical
+= 2
+~ Intercalary meristem lies at the base of internodes or leaves near the nodes; it lets grasses grow back after grazing or mowing. Apical meristem is at shoot and root tips and lateral meristem increases girth.
+
+Q 50 | comp | MS Office & Applications
+Which keyboard shortcut allows you to quickly delete the word to the left of the cursor in MS Word 2019?
+(1) Ctrl + Backspace
+(2) Shift + Backspace
+(3) Alt + Backspace
+(4) Ctrl + Delete
+= 1
+~ Ctrl + Backspace deletes one word to the left of the cursor; Ctrl + Delete deletes one word to the right.
+
+Q 51 | sci | Chemistry
+In the substitution of methane with chlorine, sunlight is required to:
+(1) initiate free radical formation
+(2) absorb chlorine
+(3) provide heat
+(4) prevent oxidation
+= 1
+~ Methane reacts with chlorine in sunlight (ultraviolet light). The light splits chlorine molecules into chlorine free radicals, which start the chain reaction that replaces hydrogen atoms with chlorine (CH₃Cl and so on).
+
+Q 52 | qa | Geometry
+If the ratio of the quadrilateral's four angles is ∠w : ∠x : ∠y : ∠z = 2 : 3 : 3 : 4, then what is the value of ∠x?
+(1) 80°
+(2) 90°
+(3) 60°
+(4) 70°
+= 2
+~ The angles of a quadrilateral add up to 360°. 2 + 3 + 3 + 4 = 12 parts, so one part = 30° and ∠x = 3 × 30° = 90°.
+
+Q 53 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+32 − 15 ÷ 5 + 10 × 2 = ?
+(1) 101
+(2) 100
+(3) 103
+(4) 102
+= 4
+~ After interchanging: 32 + 15 × 5 − 10 ÷ 2 = 32 + 75 − 5 = 102.
+
+Q 54 | comp | MS Office & Applications
+Which keyboard shortcut allows you to open the Open dialog box in MS PowerPoint 2019 for selecting a file to open?
+(1) Ctrl + O
+(2) Shift + O
+(3) Alt + O
+(4) Ctrl + Shift + O
+= 1
+~ Ctrl + O opens a file in PowerPoint, as in other Office programs (Ctrl + N is new, Ctrl + S save).
+
+Q 55 | qa | Ratio, Average & Mixtures
+A group of 30 students has secured the average marks of 70 and another group of 20 students has secured the average marks of 80. What is the average marks secured by students of both the groups taken together?
+(1) 72
+(2) 74
+(3) 76
+(4) 78
+= 2
+~ Total marks = 30 × 70 + 20 × 80 = 2100 + 1600 = 3700 for 50 students: an average of 74.
+
+Q 56 | cur | Static GK & Culture
+India’s North Central Railway Zone’s Headquarter is located in _________.
+(1) Jabalpur
+(2) Prayagraj
+(3) Jaipur
+(4) Bilaspur
+= 2
+~ North Central Railway is headquartered at Prayagraj. Jabalpur is the headquarters of West Central Railway, Jaipur of North Western Railway and Bilaspur of South East Central Railway.
+
+Q 57 | rea | Miscellaneous Reasoning
+Refer to the following letter, number, symbol series and answer the question
+(Left) $ T 1 & 9 Z 7 * A M S 1 * D % 7 * (Right)
+If all the symbols are dropped from the series, which of the following will be seventh from the right?
+(1) T
+(2) 7
+(3) 9
+(4) 1
+= 2
+~ Without symbols: T 1 9 Z 7 A M S 1 D 7. Counting from the right: 7, D, 1, S, M, A, 7. The seventh is 7.
+
+Q 58 | qa | Mensuration
+Find the number of bricks, each measuring 72 cm × 50 cm × 25 cm, required to construct a wall 81 m long, 29 m high and 0.8 m thick, while the sand and cement mixture occupies 40% of the total volume of wall.
+(1) 12496
+(2) 12687
+(3) 12528
+(4) 12727
+= 3
+~ Wall volume = 81 × 29 × 0.8 = 1879.2 m³; bricks fill 60% of it = 1127.52 m³ = 1,12,75,20,000 cm³. One brick = 72 × 50 × 25 = 90,000 cm³. Number of bricks = 1,12,75,20,000 ÷ 90,000 = 12,528.
+
+Q 59 | rea | Arrangement & Puzzles
+A, B, C, D, X and Y each scored different marks. Only two people have scored more than A. Only B has scored less than D. X has scored more than Y but less than C. How many people have scored more than X?
+(1) Four
+(2) One
+(3) Two
+(4) Three
+= 2
+~ A is third. B is last and D fifth. C, X and Y take first, second and fourth with C > X > Y, so C is first, X second and Y fourth. Only C scored more than X.
+
+Q 60 | ih | Medieval India
+Who among the following was the Chola conqueror of Ganga?
+(1) Rajaraja I
+(2) Rajendra I
+(3) Aditya
+(4) Vijayalaya
+= 2
+~ Rajendra Chola I led an expedition up to the Ganga (about 1019–1022 CE), took the title Gangaikonda Chola ("the Chola who took the Ganga") and built the new capital Gangaikonda Cholapuram.
+
+Q 61 | ih | Modern India
+Mahatma Gandhi labelled which repressive British legislation as the 'Black Act' and called for an All-India mass protest against it in 1919?
+(1) Indian Councils Act
+(2) Rowlatt Act
+(3) Vernacular Press Act
+(4) Arms Act
+= 2
+~ The Rowlatt Act (March 1919) allowed detention without trial. Gandhi called it a 'Black Act' and launched the Rowlatt Satyagraha with a nationwide hartal on 6 April 1919; the Jallianwala Bagh massacre followed on 13 April.
+
+Q 62 | qa | Ratio, Average & Mixtures
+Which of the following ratios is the greatest?
+(1) 13 : 40
+(2) 23 : 45
+(3) 19 : 43
+(4) 20 : 38
+= 4
+~ As decimals: 13/40 = 0.325, 23/45 ≈ 0.511, 19/43 ≈ 0.442 and 20/38 ≈ 0.526. The greatest is 20 : 38.
+
+Q 63 | rea | Analogy & Classification
+MPQO is related to UXYW in a certain way based on the English alphabetical order. In the same way, DGHF is related to LOPN. To which of the given options is KNOM related, following the same logic?
+(1) SWUV
+(2) SVWU
+(3) SUWV
+(4) SWVU
+= 2
+~ Every letter moves 8 places forward: M→U, P→X, Q→Y, O→W and D→L, G→O, H→P, F→N. KNOM becomes SVWU.
+
+Q 64 | sci | Biology
+The primary force responsible for pulling water upward in tall plants is ___________.
+(1) transpiration
+(2) root pressure
+(3) guttation
+(4) osmosis
+= 1
+~ Evaporation of water from leaves (transpiration) creates a pull that draws an unbroken column of water up the xylem, helped by cohesion and adhesion. Root pressure gives only a small push, not enough for tall trees.
+
+Q 65 | rea | Arrangement & Puzzles
+Each of P, Q, R, S, T, U and V has an exam on a different day of a week starting from Monday and ending on Sunday of the same week. Q has an exam on Thursday. Exactly four people have their exam between U and P, neither of whom has an exam on Sunday. R has an exam immediately before S. V does not have an exam on Friday. U does not have an exam after S. How many people have exams after P?
+(1) 4
+(2) 3
+(3) 1
+(4) 2
+= 3
+~ U and P are five days apart and neither is on Sunday, so they are on Monday and Saturday. U comes before S, so U is Monday and P Saturday. R and S are consecutive among Tuesday, Wednesday, Friday, Sunday: Tuesday and Wednesday. V is not on Friday, so V is Sunday and T Friday. Only V has an exam after P.
+
+Q 66 | rea | Miscellaneous Reasoning
+Study the given Venn diagram carefully and answer the question that follows. The numbers in different sections indicate the number of persons.
+How many Ministers are there who are Managers but NOT Engineers?
+(1) 10
+(2) 8
+(3) 9
+(4) 18
+= 2
+! img/c2513-q66.png
+~ The region inside both the Ministers circle and the Managers circle but outside the Engineers circle holds 8. (10 are only Ministers, 18 only Managers, 9 Managers and Engineers, 12 only Engineers.)
+
+Q 67 | rea | Series
+What should come in place of the question mark (?) in the given series?
+12, 25, 51, 90, 142, ?
+(1) 207
+(2) 206
+(3) 208
+(4) 209
+= 1
+~ The differences are 13, 26, 39, 52 (multiples of 13). The next is 65: 142 + 65 = 207.
+
+Q 68 | geo | Indian Geography
+Which of the following is the characteristic of Montane Forest?
+(1) Some of the important trees of this forest are ebony, mahogany etc.
+(2) Royal Bengal Tiger is the famous animal in these forests.
+(3) Evergreen broad-leaf trees, such as oaks and chestnuts predominate here.
+(4) Teak is the most dominant species of this forest.
+= 3
+~ In the montane forests of the Himalayas, wet temperate forests between about 1,000 and 2,000 m have evergreen broad-leaved trees such as oaks and chestnuts, with conifers higher up. Ebony and mahogany are tropical evergreen trees, the tiger is famous in the mangrove Sundarbans, and teak is a tropical deciduous tree.
+
+Q 69 | rea | Blood Relations & Directions
+In a certain code language,
+A + B means ‘A is the mother of B’,
+A – B means ‘A is the brother of B’,
+A x B means ‘A is the wife of B’,
+and A ÷ B means ‘A is the father of B’.
+Which of the following means that R is the mother's brother of T ?
+(1) P x Q ÷ R – S x T
+(2) P ÷ Q x R ÷ S + T
+(3) P ÷ Q x R – S + T
+(4) P ÷ Q – R x S – T
+= 3
+~ In option 3, R – S + T means R is the brother of S and S is the mother of T, so R is T's mother's brother. (P ÷ Q x R only adds that P is the father of Q, R's wife.)
+
+Q 70 | rea | Series
+In the following series, only one letter-cluster is incorrect. Select the INCORRECT letter-cluster.
+JFB RNJ ZVR HDZ PLK XTP
+(1) HDZ
+(2) ZVR
+(3) PLK
+(4) RNJ
+= 3
+~ Each letter moves 8 places forward in the next cluster: J, R, Z, H, P, X; F, N, V, D, L, T; B, J, R, Z, H, P. The fifth cluster should be PLH, so PLK is wrong.
+
+Q 71 | geo | World & Physical Geography
+The name given by Wegener to a huge water body that surrounded Pangaea is:
+(1) Laurasia
+(2) Water hemisphere
+(3) Tethys
+(4) Panthalassa
+= 4
+~ In Wegener's continental drift theory, the super-continent Pangaea was surrounded by a single mega-ocean, Panthalassa ("all sea"). Laurasia and Gondwanaland were the northern and southern parts of Pangaea, and the Tethys Sea lay between them.
+
+Q 72 | qa | Percentage, Profit & Interest
+The price of a product is increased by 15% and then a discount of 8% is applied. Find the net percentage increase in the price.
+(1) 5%
+(2) 6.2%
+(3) 7%
+(4) 5.8%
+= 4
+~ Net factor = 1.15 × 0.92 = 1.058, an increase of 5.8%. (Shortcut: 15 − 8 − 15 × 8/100 = 5.8.)
+
+Q 73 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-cluster pairs are alike in a certain way and thus form a group. Which is the letter-cluster pair that DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) KO−NR
+(2) MQ−PT
+(3) AE−DH
+(4) GK−IP
+= 4
+~ In KO−NR, MQ−PT and AE−DH each cluster has a gap of 4 (K→O) and the second cluster is the first moved 3 forward (K→N, O→R). In GK−IP, G→I is only 2 and K→P is 5, so GK−IP is the odd one.
+
+Q 74 | qa | Time, Work, Speed & Distance
+From a taxi stand, two cabs start at a speed of 57 km/hr at an interval of 12 minutes, both cabs travelling in the same direction. A man coming in the opposite direction towards the taxi stand meets the cabs at an interval of 10 minutes. Find the speed (in km/hr) of the man.
+(1) 7.9
+(2) 12.7
+(3) 9.5
+(4) 11.4
+= 4
+~ The cabs are 57 × 12/60 = 11.4 km apart. The man and the second cab close this gap in 10 minutes, so (57 + m) × 10/60 = 11.4, giving 57 + m = 68.4 and m = 11.4 km/h.
+
+Q 75 | qa | Ratio, Average & Mixtures
+The ratio of the salaries of two employees is 3 : 4. If the first employee’s salary is increased by 10% and the second employee’s salary is increased by 20%, what will be the new ratio of their salaries?
+(1) 33: 56
+(2) 33 : 47
+(3) 3 : 4
+(4) 11 : 16
+= 4
+~ New ratio = 3 × 1.1 : 4 × 1.2 = 3.3 : 4.8 = 11 : 16.
+
+Q 76 | qa | Percentage, Profit & Interest
+Ramesh invested ₹25,000 each in two different schemes for 2 years. The rate of interest in the first scheme is 8% per annum, compounded annually, and in the second scheme it is 6% per annum, compounded annually. What is the difference in the compound interest earned from both the schemes?
+(1) ₹1,070
+(2) ₹1,050
+(3) ₹1,060
+(4) ₹1,040
+= 1
+~ At 8%: 25,000 × (1.08² − 1) = 25,000 × 0.1664 = ₹4,160. At 6%: 25,000 × (1.06² − 1) = 25,000 × 0.1236 = ₹3,090. Difference = ₹1,070.
+
+Q 77 | qa | Ratio, Average & Mixtures
+The average of five consecutive integers is 12. What is the largest of these integers?
+(1) 13
+(2) 16
+(3) 11
+(4) 14
+= 4
+~ For five consecutive integers the average is the middle one, 12, so they are 10, 11, 12, 13, 14. The largest is 14.
+
+Q 78 | qa | Mensuration
+A solid metal cylinder of height 20 cm and diameter 14 cm is melted and recast into two solid cones having volume in the ratio 3 : 4, keeping the height 35 cm. What would be the percentage change in the flat surface area (area of the bases) before and after?
+(1) 26 1/13% decrease
+(2) 22 1/9% increase
+(3) 9 1/11% increase
+(4) 14 2/7% decrease
+= 4
+~ Cylinder volume = π × 7² × 20 = 980π, and its two flat faces have area 2 × 49π = 98π. The cones get 420π and 560π. With height 35, (1/3)πr² × 35 = 420π gives r² = 36, and 560π gives r² = 48. Their bases total π(36 + 48) = 84π. Change = (84 − 98)/98 = −1/7 = a 14 2/7% decrease.
+
+Q 79 | cur | Static GK & Culture
+Which country is known for its unique 'Dragon King' monarchy?
+(1) Bhutan
+(2) Sri Lanka
+(3) China
+(4) Bangladesh
+= 1
+~ Bhutan's king is called the Druk Gyalpo, the "Dragon King", and the country itself is Druk Yul, "Land of the Thunder Dragon". The present king is Jigme Khesar Namgyel Wangchuck.
+
+Q 80 | sci | Physics
+What does the number of compressions or rarefactions passing a point per unit time represent in a sound wave?
+(1) Wavelength
+(2) Frequency
+(3) Amplitude
+(4) Loudness
+= 2
+~ Frequency is the number of oscillations, that is compressions (or rarefactions) passing a point, per second, measured in hertz. Wavelength is the distance between two compressions, and amplitude decides loudness.
+
+Q 81 | qa | Time, Work, Speed & Distance
+The downstream speed is 125 km/hr and the upstream speed is 25 km/hr. It takes a total of 25 hours to go to a place and come back. What is the total distance (in km) travelled by boat?
+(1) 520 5/6
+(2) 520 1/6
+(3) 1041 1/3
+(4) 1041 2/3
+= 4
+~ Let the one-way distance be d: d/125 + d/25 = 25, so 6d/125 = 25 and d = 3125/6 = 520 5/6 km. The boat goes and comes back, so the total distance is 2d = 1041 2/3 km.
+
+Q 82 | rea | Analogy & Classification
+In the following triads, each group of letters is related to the subsequent one following a certain logic. Select from the given options, the one which follows the same logic.
+WASH - HSWA - WSAH
+NEST - TSNE - NSET
+(1) FOGS - SGFO - OGFS
+(2) PACE - PCAE - ECAP
+(3) TRAY - RATY - RAYT
+(4) OILS - SLOI - OLIS
+= 4
+~ Step 1 writes the letters in the order 4-3-1-2 (WASH → HSWA, NEST → TSNE). Step 2 takes the new word's letters in the order 3-2-4-1 (HSWA → WSAH, TSNE → NSET). OILS → SLOI → OLIS follows both steps.
+
+Q 83 | qa | Ratio, Average & Mixtures
+The average of three numbers is 49. The first number is twice the second, and the second is twice the third. What is the largest number?
+(1) 21
+(2) 42
+(3) 84
+(4) 63
+= 3
+~ Let the third be x: the numbers are 4x, 2x and x, summing to 7x = 3 × 49 = 147. So x = 21 and the largest is 84.
+
+Q 84 | pol | Government & Parliament
+Which of the following are aspects of the Centre-State legislative relation?
+1. Territorial extent of Central and state legislation
+2. Distribution of legislative subjects
+3. Parliamentary legislation in the state field
+4. Centre’s control over state legislation
+(1) Only 1 and 2
+(2) Only 1, 2 and 3
+(3) All 1, 2, 3 and 4
+(4) Only 2 and 3
+= 3
+~ Articles 245 to 255 (Part XI) deal with all four: the territorial extent of laws, the Union, State and Concurrent Lists, Parliament legislating on state subjects (Rajya Sabha resolution, emergency, treaties, state request), and the Centre's control such as the Governor reserving state bills for the President.
+
+Q 85 | rea | Mathematical Operations
+In the following number-pairs, the second number is obtained by applying certain mathematical operation(s) to the first number. Select the number-pair in which the numbers are related in the same way as are the numbers of the following pairs.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding to/subtracting from/multiplying with 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+11, 68
+14, 86
+(1) 17, 103
+(2) 17, 104
+(3) 18, 103
+(4) 18, 104
+= 2
+~ The rule is × 6 + 2: 11 × 6 + 2 = 68 and 14 × 6 + 2 = 86. So 17 × 6 + 2 = 104.
+
+Q 86 | rea | Blood Relations & Directions
+Namesh starts from point A and drives 4 km towards west. He then takes a left turn and drives 5 km. He takes a final left turn and drives 6 km and stops at point B. Rimit starts from point P, which is 16 km east of Point A, and drives 3 km towards east. He then takes a right turn and drives 5 km. He takes a final left turn and drives 3 km and stops at Point Q. What is the shortest distance between Point Q and Point B? (All turns are 90 degree turns only.)
+(1) 19 km
+(2) 21 km
+(3) 20 km
+(4) 22 km
+= 3
+~ Take A as (0, 0). Namesh: 4 west, left (south) 5, left (east) 6, so B = (2, −5). Rimit: from (16, 0), 3 east to (19, 0), right (south) 5, left (east) 3, so Q = (22, −5). They are on the same line, 22 − 2 = 20 km apart.
+
+Q 87 | rea | Syllogism & Statements
+In this question, a statement is given followed by two courses of action, numbered I and II. You must assume everything in the statement to be true, and on the basis of the information given in the statement, decide which of the given courses of action logically follow(s) for pursuing.
+Statement:
+Reports indicate that fish populations in River Y have declined sharply due to excessive fishing and industrial pollution.
+Courses of Action:
+I. Fishing in River Y should be regulated for at least six months.
+II. Industries should be ordered to treat waste before discharging into River Y.
+(1) Only II follows
+(2) Neither I nor II follows
+(3) Only I follows
+(4) Both I and II follow
+= 4
+~ The statement names two causes, over-fishing and industrial pollution. Course I tackles the first and course II the second, and both are practical steps, so both follow.
+
+Q 88 | pol | Local Government & Governance
+Which of the following Articles deals with the composition of the panchayats?
+(1) Article 243D
+(2) Article 243C
+(3) Article 243B
+(4) Article 243A
+= 2
+~ In Part IX, Article 243A covers the Gram Sabha, 243B the constitution of panchayats, 243C their composition and 243D reservation of seats.
+
+Q 89 | rea | Arrangement & Puzzles
+Eight people are sitting in two parallel rows containing 4 people each in such a way that there is equal distance between adjacent persons.
+In row 1 – A, D, O and P are seated and all of them are facing south.
+In row 2 – U, W, Y and F are seated and all of them are facing north.
+Thus each person faces another person from the other row.
+U sits third to the left of Y. The one facing P is an immediate neighbour of Y. A sits at some place to the right of P and is not facing W. D sits third to the right of O. Who amongst the following faces F?
+(1) U
+(2) D
+(3) A
+(4) W
+= 3
+~ Number the places 1 to 4 from west to east. Row 2 faces north, so its left is west: U is at 1 and Y at 4. P faces Y's neighbour at 3. Row 1 faces south, so its right is west: D third to the right of O puts O at 4 and D at 1, so A is at 2. A does not face W, so F is at 2 and W at 3. A faces F.
+
+Q 90 | rea | Mathematical Operations
+6 is related to 34 following a certain logic. Following the same logic, 8 is related to 46. To which of the given options is 10 related, following the same logic?
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding to/subtracting from/multiplying with 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(1) 57
+(2) 55
+(3) 56
+(4) 58
+= 4
+~ The rule is × 6 − 2: 6 × 6 − 2 = 34 and 8 × 6 − 2 = 46. So 10 × 6 − 2 = 58.
+
+Q 91 | sci | Physics
+If i is the angle of incidence and r is the angle of refraction, which relation is correct according to Snell’s law?
+(1) sin i ÷ sin r = constant
+(2) sin i × sin r = constant
+(3) sin i + sin r = constant
+(4) sin i – sin r = constant
+= 1
+~ Snell's law: for a given pair of media and colour of light, sin i / sin r is a constant, the refractive index of the second medium relative to the first.
+
+Q 92 | comp | Internet, Networking & Security
+When a plain text email is sent, which Content-Type value is typically specified in the message header, according to MIME standards?
+(1) text/html; charset=ASCII
+(2) text/plain; charset=UTF-8
+(3) multipart/mixed
+(4) application/octet-stream
+= 2
+~ A plain-text message is labelled "text/plain", with a character set, today usually UTF-8. text/html is for formatted (HTML) mail, multipart/mixed for messages with attachments, and application/octet-stream for arbitrary binary files.
+
+Q 93 | rea | Arrangement & Puzzles
+A, B, C, D, E and F have different heights. C is shorter than exactly 1 person. D is shorter than A but taller than F. E is shorter than F, and C is shorter than B. How many people are taller than D?
+(1) 4
+(2) 1
+(3) 3
+(4) 2
+= 3
+~ C is second tallest and B, being taller than C, is tallest. The rest go A > D > F > E. Order: B, C, A, D, F, E. Three people (B, C, A) are taller than D.
+
+Q 94 | rea | Miscellaneous Reasoning
+Refer to the given letter, number, symbol series and answer the question that follows.
+(Left) D 4 & A $ Z G 7 R 5 % W 2 @ 3 # V 6 & F Y (Right)
+If all the numbers are dropped from the series, which of the following will be seventh from the right?
+(1) G
+(2) %
+(3) @
+(4) W
+= 4
+~ Without numbers: D & A $ Z G R % W @ # V & F Y. Counting from the right: Y, F, &, V, #, @, W. The seventh is W.
+
+Q 95 | rea | Coding-Decoding
+In a certain code, ‘books are knowledge’ is coded as ‘mk xp zj’, ‘knowledge is power’ is coded as ‘zk xp vr’, and ‘power brings success’ is coded as ‘vr mk gt’.
+What is the code for ‘is’ in that code? (All codes are two-letter codes.)
+(1) xp
+(2) vr
+(3) zk
+(4) mk
+= 3
+~ 'knowledge' is in the first two sentences: xp. 'power' is in the second and third: vr. The remaining word of the second sentence, 'is', is zk.
+
+Q 96 | ih | Modern India
+Which Governor-General of India (1848-1856) was mainly associated with enforcing the Doctrine of Lapse to annex Indian states without a male heir?
+(1) Lord Dalhousie
+(2) Lord Cornwallis
+(3) Lord Hastings
+(4) Lord Wellesley
+= 1
+~ Lord Dalhousie (1848–56) used the Doctrine of Lapse to annex Satara, Jaitpur, Sambalpur, Baghat, Udaipur, Jhansi and Nagpur when their rulers died without a natural male heir. Wellesley is known for Subsidiary Alliance and Cornwallis for the Permanent Settlement.
+
+Q 97 | qa | Algebra
+The price of 4 pens and 5 notebooks is ₹130. If the price of a pen increases by 25% and the price of a notebook decreases by 20%, then the price of 2 pens and 4 notebooks becomes ₹82. What is the original price of 1 pen and 2 notebooks?
+(1) ₹30
+(2) ₹25
+(3) ₹20
+(4) ₹40
+= 4
+~ 4p + 5n = 130 and 2(1.25p) + 4(0.8n) = 82, i.e. 2.5p + 3.2n = 82. From the first, p = (130 − 5n)/4; substituting gives 325 − 12.5n + 12.8n = 328, so n = 10 and p = 20. One pen and two notebooks cost 20 + 20 = ₹40.
+
+Q 98 | pol | Constitution & Rights
+Which of the following statements, in the context of Indian citizenship provisions, is correct?
+I) Citizenship is listed in the State list.
+II) Articles 5 to 11 of the Constitution of India deal with various categories of persons who are entitled to citizenship.
+III) There are only three ways to get Indian citizenship.
+(1) Only III
+(2) Only II
+(3) Only I and III
+(4) I, II and III
+= 2
+~ Citizenship is in the Union List (entry 17), not the State List. Articles 5 to 11 in Part II deal with citizenship. The Citizenship Act, 1955 provides five ways to acquire it: birth, descent, registration, naturalisation and incorporation of territory. Only statement II is correct.
+
+Q 99 | qa | Algebra
+If x varies inversely as y³ − 1 and x is equal to 6 when y = 4, find the value of x when y = 8.
+(1) 143/141
+(2) 147/115
+(3) 83/98
+(4) 54/73
+= 4
+~ x(y³ − 1) is constant: 6 × (64 − 1) = 378. When y = 8, y³ − 1 = 511, so x = 378/511 = 54/73.
+
+Q 100 | ih | Modern India
+In 1878, dissatisfied followers of Keshab Chandra Sen established the Sadharan Brahmo Samaj. Who among the following were its founders?
+(1) Sib Chandra Deb, Rabindranath Tagore and Surendranath Banerjee
+(2) Ishwar Chandra Vidyasagar, Ananda Mohan Bose and Bankim Chandra Chatterjee
+(3) Raja Ram Mohan Roy, Debendranath Tagore and Keshab Chandra Sen
+(4) Ananda Mohan Bose, Sib Chandra Deb and Umesh Chandra Dutta
+= 4
+~ Unhappy with Keshab Chandra Sen marrying his under-age daughter to the Maharaja of Cooch Behar, his followers formed the Sadharan Brahmo Samaj in 1878, led by Ananda Mohan Bose, Sib Chandra Deb, Umesh Chandra Dutta and Shivanath Shastri.
+
+Q 101 | qa | Ratio, Average & Mixtures
+Pure ghee costs ₹112/kg. After adulterating it with vegetable oil costing ₹56/kg, a dishonest shopkeeper sells the mixture at the rate of ₹91/kg, thereby making a profit of 30%. In what ratio does he mix the two?
+(1) 2 : 3
+(2) 6 : 5
+(3) 3 : 5
+(4) 1 : 3
+= 4
+~ Cost of the mixture = 91 ÷ 1.3 = ₹70/kg. By alligation, ghee : oil = (70 − 56) : (112 − 70) = 14 : 42 = 1 : 3.
+
+Q 102 | eco | Planning, Growth & Budget
+Life expectancy is an indicator of which of the following?
+(1) Human Development Report
+(2) Technology and Innovation Report
+(3) Commodities and Development Report
+(4) World Employment Report
+= 1
+~ UNDP's Human Development Report ranks countries by the Human Development Index, built from life expectancy at birth (health), years of schooling (education) and gross national income per head (living standard).
+
+Q 103 | ih | Art & Culture
+Which of the following traditional dance forms in India incorporates the use of a pair of decorated sticks and is traditionally performed during Navratri?
+(1) Bhangra
+(2) Bihu
+(3) Koli
+(4) Dandiya
+= 4
+~ Dandiya Raas of Gujarat is danced with a pair of decorated sticks (dandiyas) during Navratri, along with Garba. Bhangra is from Punjab, Bihu from Assam and Koli from Maharashtra.
+
+Q 104 | sci | Physics
+Why does evaporation cause cooling?
+(1) Because evaporation increases particle size
+(2) Because evaporation reduces air pressure
+(3) Because particles lose heat to the surroundings during evaporation
+(4) Because particles absorb latent heat from the surroundings during evaporation
+= 4
+~ Particles need latent heat of vaporisation to escape as vapour. They take it from the liquid and its surroundings (such as our skin), which therefore cool down, as when sweat evaporates.
+
+Q 105 | qa | Percentage, Profit & Interest
+A machine depreciates at a rate of 10% per annum. If the current value of the machine is ₹1,00,000, what will be its value after 2 years?
+(1) ₹79,000
+(2) ₹81,000
+(3) ₹78,000
+(4) ₹80,000
+= 2
+~ Value after 2 years = 1,00,000 × 0.9 × 0.9 = ₹81,000.
+
+Q 106 | rea | Arrangement & Puzzles
+Each of P, Q, R, S, T, U and V has an exam on a different day of a week starting from Monday and ending on Sunday of the same week. S has an exam on Tuesday. Exactly two people have an exam between S and P. T has an exam immediately before U and R has an exam immediately after Q. Only 1 person has an exam between U and Q. How many people have exams after Q?
+(1) 4
+(2) 2
+(3) 3
+(4) 1
+= 4
+~ S is on Tuesday and P on Friday. T–U and Q–R are consecutive pairs with one day between U and Q. The only fit is T Wednesday, U Thursday, Q Saturday, R Sunday, leaving V on Monday. Only R has an exam after Q.
+
+Q 107 | sci | Physics
+What happens to the speed of sound in a medium when its temperature increases?
+(1) It decreases.
+(2) It increases.
+(3) It remains the same.
+(4) It is not affected by the temperature.
+= 2
+~ Sound travels faster at higher temperature; in air it rises by about 0.6 m/s for every 1 °C (about 331 m/s at 0 °C and 343 m/s at 20 °C).
+
+Q 108 | pol | Local Government & Governance
+The reservation of seats for women in Panchayati Raj institutions is provided by which of the following Constitutional amendments?
+(1) 75th Amendment
+(2) 74th Amendment
+(3) 73rd Amendment
+(4) 70th Amendment
+= 3
+~ The 73rd Amendment (1992) added Part IX; Article 243D reserves at least one-third of panchayat seats and chairperson posts for women. The 74th Amendment did the same for municipalities.
+
+Q 109 | rea | Miscellaneous Reasoning
+In this question, a question is followed by two statements numbered (I) and (II). You have to decide whether the data provided in the statements are sufficient to answer the question. Read both the statements and select the most appropriate answer.
+Question:
+Among 5 students, F, A, K, E and D each having a different height, which student is the shortest?
+Statements:
+(I) A is shorter than E. K is shorter than F.
+(II) K is taller than A.
+(1) Data in statements I and II together are NOT sufficient to answer the question
+(2) Data in statement II alone is sufficient to answer the question while data in statement I is not
+(3) Data in statement I alone is sufficient to answer the question while data in statement II is not
+(4) Data in statements I and II together (and not statement I alone or statement II alone) are sufficient to answer the question
+= 1
+~ Together the statements show A is shorter than E, K and F, but nothing compares D with anyone. The shortest could be A or D, so even both statements are not enough.
+
+Q 110 | qa | Number System & Simplification
+Which of the following numbers is divisible by 39?
+(1) 625649
+(2) 622710
+(3) 622776
+(4) 625092
+= 4
+~ 39 = 3 × 13. 625092 has digit sum 24 (divisible by 3) and 625092 = 13 × 48084, so it is divisible by 39 (39 × 16028 = 625092). 625649 fails the test for 3, and the other two are divisible by 3 but not by 13.
+
+Q 111 | sci | Chemistry
+Which statement about lyophilic sols is correct?
+(1) They do not show the Tyndall effect.
+(2) They have strong affinity for the dispersion medium.
+(3) They are unstable compared to lyophobic sols.
+(4) They are easily coagulated by electrolytes.
+= 2
+~ Lyophilic ("liquid-loving") sols such as starch or gum in water have a strong attraction for the dispersion medium, which makes them stable and reversible; they are not easily coagulated by electrolytes. All colloids scatter light (Tyndall effect).
+
+Q 112 | qa | Number System & Simplification
+If the ratio of two numbers is 5 : 4 and their HCF is 5, find their LCM.
+(1) 90
+(2) 128
+(3) 100
+(4) 124
+= 3
+~ The numbers are 5 × 5 = 25 and 5 × 4 = 20. LCM = 5 × 5 × 4 = 100.
+
+Q 113 | geo | Environment & Ecology
+The Brundtland Report, 'Our Common Future' (1987), formally introduced which key concept, defined as meeting present needs without compromising the ability of future generations to meet their own?
+(1) Green Economy
+(2) Inclusive Growth
+(3) Sustainable Development
+(4) Ecological Modernisation
+= 3
+~ The World Commission on Environment and Development, chaired by Gro Harlem Brundtland, defined sustainable development in 'Our Common Future' (1987) as "development that meets the needs of the present without compromising the ability of future generations to meet their own needs".
+
+Q 114 | ih | Modern India
+The Champaran Satyagraha of 1917, Gandhi’s first major involvement in India’s freedom struggle, was launched in support of which group?
+(1) Indigo farmers in Bihar
+(2) Cotton mill workers in Bombay
+(3) Tea plantation workers in Assam
+(4) Peasant tenants in Awadh
+= 1
+~ In Champaran, Bihar, European planters forced tenants to grow indigo on part of their land (the tinkathia system). Gandhi took up their cause in 1917 at Rajkumar Shukla's request. The 1918 Ahmedabad strike was for mill workers and Kheda for peasants hit by crop failure.
+
+Q 115 | qa | Time, Work, Speed & Distance
+A man covers equal distances at the speeds of 19 km/hr, 8 km/hr and 5 km/hr. His average speed for the entire journey is:
+(1) 13 271/287 km/hr
+(2) 3 271/287 km/hr
+(3) 7 271/287 km/hr
+(4) 5 271/287 km/hr
+= 3
+~ For equal distances the average speed is 3 ÷ (1/19 + 1/8 + 1/5) = 3 ÷ (287/760) = 2280/287 = 7 271/287 km/h.
+
+Q 116 | cur | Awards, Books & Persons
+Who was appointed as the president and chief executive officer of BMW Group India as of September 2025?
+(1) Anurag Mehrotra
+(2) Santosh Iyer
+(3) Hardeep Singh Brar
+(4) Balbir Singh Dhillon
+= 3
+~ Hardeep Singh Brar became President and CEO of BMW Group India in September 2025, succeeding Vikram Pawah. Santosh Iyer heads Mercedes-Benz India and Balbir Singh Dhillon heads Audi India.
+
+Q 117 | qa | Number System & Simplification
+Three bells ring at intervals of 12, 15 and 18 minutes. If they rang together at 10:00 am, when will they ring together again?
+(1) 4:00 p.m.
+(2) 12:00 p.m.
+(3) 1:00 p.m.
+(4) 2:00 p.m.
+= 3
+~ They ring together again after LCM(12, 15, 18) = 180 minutes = 3 hours, i.e. at 1:00 p.m.
+
+Q 118 | qa | Number System & Simplification
+Find the simplified value of 7⁻⁸ × 11⁻⁸ × 13⁻⁸.
+(1) 1/962⁸
+(2) 1/1001⁸
+(3) 1/995⁸
+(4) 1/1025⁸
+= 2
+~ Powers with the same exponent multiply as (7 × 11 × 13)⁻⁸ = 1001⁻⁸ = 1/1001⁸.
+
+Q 119 | qa | Percentage, Profit & Interest
+The simple interest (in ₹) on ₹5,000 at 5% per annum for 2 years is:
+(1) 530
+(2) 500
+(3) 600
+(4) 580
+= 2
+~ SI = 5000 × 5 × 2 ÷ 100 = ₹500.
+
+Q 120 | qa | Percentage, Profit & Interest
+The price of fuel decreases by 10%, 45% and 10% in three successive months, but increases by 65% in the fourth month. What is the percentage increase/decrease in the price of fuel in the fourth month as compared to its original price? (Round off the answer to two decimal places.)
+(1) Decreases by 26.49%
+(2) Decreases by 30.57%
+(3) Increases by 21.55%
+(4) Increases by 25.16%
+= 1
+~ Net factor = 0.90 × 0.55 × 0.90 × 1.65 = 0.735075, so the price is 26.49% below the original.

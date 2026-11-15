@@ -14,7 +14,7 @@ SITE_URL = os.environ.get('SITE_URL', 'https://learnwithanil.in').rstrip('/')
 INSTAGRAM = 'learn_with_anil06'
 WHATSAPP = '919494792739'
 PHONE = '+91 94947 92739'
-EMAIL = 'anilkumarjupudi360360@gmail.com'
+EMAIL = 'learnwithanil0608@gmail.com'
 # Google Analytics 4 measurement id (G-XXXXXXXXXX) from Anil's Analytics property; empty = no tracking tag on the site.
 GA_ID = os.environ.get('GA_ID', '') or (open(os.path.join(ROOT, 'src', 'ga-id.txt')).read().strip() if os.path.exists(os.path.join(ROOT, 'src', 'ga-id.txt')) else '')
 
@@ -376,6 +376,46 @@ def cgl_text():
     return dict(n=len(have), t1=len(t1), t2=len(t2), years=yr,
                 what=' and '.join(x for x in (f'{len(t1)} Tier-I shift paper{"s" if len(t1) != 1 else ""}' if t1 else '',
                                                f'{len(t2)} Tier-II Paper I' if t2 else '') if x))
+
+# ---------- RRB NTPC (Railway Recruitment Boards, Non-Technical Popular Categories): CBT papers from RRB's own response sheets ----------
+NTPC_CBT1_BLURB = ('CBT-1: General Awareness 40, Mathematics 30, General Intelligence & Reasoning 30: '
+                   '100 questions, 100 marks, 90 minutes, −1/3 mark for a wrong answer. CBT-1 is a screening test for CBT-2.')
+NTPC_CBT2_BLURB = ('CBT-2: General Awareness 50, Mathematics 35, General Intelligence & Reasoning 35: '
+                   '120 questions, 120 marks, 90 minutes, −1/3 mark for a wrong answer. CBT-2 marks decide the merit list.')
+NTPC_KEY = "RRB's answer key as marked on the candidate's response sheet"
+def _ntpc(pid, level, cbt, year, day, shift, time_, file_, cen):
+    lv = 'Graduate' if level == 'g' else 'Undergraduate'
+    lvh = 'स्नातक' if level == 'g' else 'स्नातक-पूर्व (12वीं स्तर)'
+    return dict(id=pid, file=file_, year=year, stage=f'{lv} CBT-{cbt}', short=f'{"Graduate" if level == "g" else "UG"} CBT-{cbt} · {day} S{shift}',
+                title=f'RRB NTPC {lv} CBT-{cbt}, {day} {year}, Shift {shift}', notif=f'{cen} · Shift {shift} ({time_}) · RRB key', held=f'{day} {year}',
+                key=NTPC_KEY, fmt='mcq',
+                slug=f'rrb-ntpc-{lv.lower()}-cbt-{cbt}-{year}-{day.lower().replace(" ", "-")}-shift-{shift}-question-paper-with-answers',
+                alt=f'CBT {cbt}', kwname=f'RRB NTPC {lv} CBT {cbt} {year} ({day} Shift {shift})',
+                hi_paper=f'{lvh} CBT-{cbt} ({day}, पाली {shift})', blurb=NTPC_CBT2_BLURB if cbt == 2 else NTPC_CBT1_BLURB,
+                mins=90, cen=cen)
+NTPC_PAPERS = [
+  _ntpc('g2616', 'g', 1, 2026, '16 March', 1, '9:00 AM', 'rrb-ntpc-graduate-2026-cbt1-16mar-shift1.txt', 'CEN 06/2025'),
+  _ntpc('g2627', 'g', 1, 2026, '27 March', 1, '9:00 AM', 'rrb-ntpc-graduate-2026-cbt1-27mar-shift1.txt', 'CEN 06/2025'),
+  _ntpc('c2513', 'g', 2, 2025, '13 October', 1, '9:30 AM', 'rrb-ntpc-graduate-2025-cbt2-13oct-shift1.txt', 'CEN 05/2024'),
+  _ntpc('u2501', 'u', 1, 2025, '1 September', 1, '9:00 AM', 'rrb-ntpc-undergraduate-2025-cbt1-01sep-shift1.txt', 'CEN 06/2024'),
+  _ntpc('g2505', 'g', 1, 2025, '5 June', 1, '9:00 AM', 'rrb-ntpc-graduate-2025-cbt1-05jun-shift1.txt', 'CEN 05/2024'),
+]
+NTPC_SUBJECTS = [(k, 'Mathematics' if k == 'qa' else n, 'mathematics' if k == 'qa' else slug, t) for k, n, slug, t in CGL_SUBJECTS if k != 'eng']
+NTPC_SUBJ_HI = dict(CGL_SUBJ_HI, qa='गणित')
+
+
+def ntpc_text():
+    """Wording for the RRB NTPC page that depends on which papers are on the site."""
+    have = [p for p in NTPC_PAPERS if p['id'] in have_src('rrb-ntpc', NTPC_PAPERS)]
+    g1 = [p for p in have if p['stage'] == 'Graduate CBT-1']; g2 = [p for p in have if p['stage'] == 'Graduate CBT-2']
+    u1 = [p for p in have if p['stage'].startswith('Undergraduate')]
+    years = sorted({p['year'] for p in have}) or [2026]
+    yr = f'{years[0]}–{years[-1]}' if len(years) > 1 else str(years[0])
+    parts = [x for x in (f'{len(g1)} Graduate CBT-1 shift paper{"s" if len(g1) != 1 else ""}' if g1 else '',
+                         f'{len(g2)} Graduate CBT-2 paper{"s" if len(g2) != 1 else ""}' if g2 else '',
+                         f'{len(u1)} Undergraduate CBT-1 paper{"s" if len(u1) != 1 else ""}' if u1 else '') if x]
+    what = (', '.join(parts[:-1]) + ' and ' + parts[-1]) if len(parts) > 1 else (parts[0] if parts else '')
+    return dict(n=len(have), years=yr, what=what, g2=bool(g2), u1=bool(u1))
 
 # ---------- Telangana Police (TSLPRB, now TGPRB): SI and Constable Preliminary Written Tests ----------
 TS_SI_PAPERS = [
@@ -1346,6 +1386,7 @@ def exam_confs():
     T = ts_text()
     E = epfo_text()
     G = cgl_text()
+    N = ntpc_text()
     P = pre_text()
     si_m, pc_m = bool(T['si']), bool(T['pc'])
     return [
@@ -1464,6 +1505,21 @@ def exam_confs():
            papers_note=("Every paper is SSC's own question paper as candidates print it from SSC's portal (the response sheet), with the answer SSC marked as correct. "
                         "The Tier-I sheets are from the answer-key stage, so SSC's final key may differ for a few questions. "
                         "Each shift had a different paper. English Comprehension is in English only; every other question is in English and Hindi, as printed.")),
+      dict(id='rrb-ntpc', dir='rrb-ntpc', src='rrb-ntpc', key='rrb-ntpc', name='RRB NTPC', short='RRB NTPC', seo='RRB NTPC',
+           slugp='rrb-ntpc', papers=NTPC_PAPERS, subjects=NTPC_SUBJECTS, faq=FAQ_NTPC, board='RRB', l2=L2_HI, pb='/rrb-ntpc/',
+           keyname="RRB's answer key", keyshort="RRB's answer key (as marked on the response sheets)",
+           hi_name='आरआरबी एनटीपीसी', hi_paper='प्रश्न पत्र', subj_te=NTPC_SUBJ_HI,
+           title=f"RRB NTPC Previous Year Question Papers with Answers – CBT 1 & CBT 2 {N['years']}, Graduate & Undergraduate, English & Hindi | Learn with Anil",
+           h1='RRB NTPC previous year question papers <em>with answers.</em>',
+           aka='Railway Recruitment Boards (RRB) Non-Technical Popular Categories exam: CBT-1 and CBT-2 shift papers for graduate posts (Goods Train Manager, Ticket Supervisor, accounts and senior clerks) and undergraduate posts (Ticket Clerk, Trains Clerk), with RRB\'s answer key, subject-wise: maths, reasoning and general awareness.',
+           aka_short='RRB NTPC (Railway Non-Technical Popular Categories) CBT 1 and CBT 2',
+           l2line='आरआरबी एनटीपीसी CBT-1 और CBT-2 के पिछले वर्षों के प्रश्न पत्र, आरआरबी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; गणित, रीजनिंग और सामान्य जागरूकता, स्नातक और 12वीं स्तर।',
+           desc=lambda t: (f"RRB NTPC previous year question papers with RRB's answer key and explanations: {N['what']} ({N['years']}), from RRB's own response sheets. "
+                           f"{t:,} questions in English and Hindi on mathematics, reasoning and general awareness; subject-wise practice and timed 90-minute mock tests."),
+           eyebrow=f"Railway Recruitment Boards · NTPC · CBT-1 &amp; CBT-2 · {N['years']}",
+           papers_note=("Every paper is RRB's own question paper as candidates print it from the RRB portal (the response sheet released with the answer key), with the answer RRB marked as correct. "
+                        "RRB does not publish a separate final key for NTPC, so a few answers may have changed after objections. "
+                        "Each shift had a different paper. Every question is in English and Hindi, from RRB's English and Hindi papers of the same shift.")),
       dict(id='ts-police-si', dir='ts-police-si', src='ts-police-si', key='ts-si', name='TS Police SI', short='TS Police SI', seo='TS Police SI',
            slugp='ts-police-si', papers=TS_SI_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('SI', T['si']), board='TSLPRB', l2=L2_TE, pb='/ts-police-si/',
            keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
@@ -1909,7 +1965,7 @@ def main():
         ptxt = (f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper') if papers else ''
         home_desc = conf['desc'](total)
         pb = conf['pb']; basedir = '/' + prefix
-        person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"UPSC Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:anilkumarjupudi360360@gmail.com","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://www.youtube.com/@learn_with_anil06"]}
+        person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"UPSC Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:learnwithanil0608@gmail.com","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://www.youtube.com/@learn_with_anil06"]}
         website = {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":["LearnWithAnil","learnwithanil.in","Learn with Anil PYQs"],"url":SITE_URL+'/'}
         org = {"@context":"https://schema.org","@type":"Organization","name":"Learn with Anil","url":SITE_URL+'/',"logo":SITE_URL+'/icon-512.png',"alternateName":["LearnWithAnil","learnwithanil.in","Learn with Anil PYQs"],"founder":{"@type":"Person","name":"Jupudi Anil Kumar"},"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://t.me/learn_with_anil06","https://www.youtube.com/@learn_with_anil06"]}
         faqld = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]}
@@ -2628,6 +2684,29 @@ def FAQ_CGL(total, npapers):
     ]
 
 
+def FAQ_NTPC(total, npapers):
+    N = ntpc_text()
+    return [
+      ('Where can I get RRB NTPC previous year question papers with answers?',
+       f'This page has {total} questions from {N["what"]} of the RRB NTPC exam ({N["years"]}). Each is RRB\'s own question paper as candidates print it from the RRB portal '
+       '(the response sheet), with the answer RRB marked as correct, and every question has an explanation in English and Hindi. Take a whole shift as a timed 90-minute test, or practise by subject and topic.'),
+      ('Are the answers official?',
+       'Yes. Every answer is the one RRB marked as correct on the candidate\'s response sheet when it released the answer key. RRB does not publish a separate final key for NTPC, '
+       'so a few answers may have changed after objections; where a marked answer looks debatable, the explanation says so. The explanations are written by Learn with Anil.'),
+      ('What is the RRB NTPC exam pattern?',
+       'CBT-1 has 100 questions in 90 minutes: General Awareness 40, Mathematics 30 and General Intelligence & Reasoning 30. CBT-2 has 120 questions in 90 minutes: General Awareness 50, Mathematics 35 and Reasoning 35. '
+       'Each question carries one mark and one-third of a mark is cut for a wrong answer. CBT-1 only shortlists candidates for CBT-2; the merit list comes from CBT-2. The graduate and undergraduate (Class 12 level) exams follow the same pattern.'),
+      ('Why are there so many RRB NTPC papers for one year?',
+       'RRB holds NTPC CBT-1 over many days with three shifts a day, and every shift gets a different question paper. This page gives whole shifts, so you can take each one as a real test.'),
+      ('Is the RRB NTPC question paper available in Hindi?',
+       'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, as printed in RRB\'s Hindi paper of the same shift, with the explanation in Hindi. Tap EN to switch back.'),
+      ('Is there an RRB NTPC mock test?',
+       'Yes. Every shift paper here can be taken as a timed mock test with the real 90-minute limit, and subject-wise sectional tests (Mathematics, Reasoning, General Awareness) are built from the same RRB questions. All of it is in the ₹45 All-in-One Pass.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
+
 def FAQ_HM(total, npapers):
     return [
       ('Where can I get TGPSC HMWSSB Manager (Engineering) previous question papers with answers?',
@@ -3046,7 +3125,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -3254,7 +3333,7 @@ def llms_txt(loaded, grand):
 
 
 GRIEVANCE_OFFICER = 'Jupudi Anil Kumar'
-CONTACT_PHONE, CONTACT_EMAIL = '+91 94947 92739', 'anilkumarjupudi360360@gmail.com'
+CONTACT_PHONE, CONTACT_EMAIL = '+91 94947 92739', 'learnwithanil0608@gmail.com'
 
 
 def help_page(loaded):
@@ -5033,7 +5112,7 @@ def notif_page(loaded, rel):
 
 
 NEWS_HUB = 'exam-notifications.html'
-NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
+NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways: RRB NTPC'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
                ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable')]
 
 
@@ -5334,6 +5413,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'upsc-capf': ('UPSC CAPF (Assistant Commandants) 2027', '2027-07-04', 'UPSC Calendar 2027.'),
   'upsc-prelims': ('UPSC Civil Services (Preliminary) Examination 2027', '2027-05-23', 'UPSC Calendar 2027.'),
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
+  'rrb-ntpc': ('RRB NTPC 2026 CBT-1 (CEN 06/2026 and 07/2026)', None, 'Applications closed (graduate 8 November, undergraduate 13 November 2026); RRB has not announced the CBT-1 dates yet. One report says the graduate CBT-1 may be in the fourth week of December 2026.'),
   'upsc-epfo': ('UPSC EPFO APFC Recruitment Test 2026', '2026-12-20', 'UPSC Special Advertisement 52/2026 (80 APFC posts): pen-and-paper Recruitment Test on 20 December 2026.'),
   'appsc-analyst': ('APPSC Analyst Grade-II written examination', None, 'Applications 13 October to 2 November 2026, reported extended to 12 November (Notification 21/2026); APPSC has not announced the exam date yet.'),
   'appsc-env-engineer': ('APPSC Assistant Environmental Engineer written examination', None, 'Applications closed on 9 November 2026 (Notification 08/2026, extended from 27 October); APPSC has not announced the exam date yet.'),
@@ -6114,7 +6194,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/rrb-ntpc/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -6128,7 +6208,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <h1>This page does not exist</h1>
 <p>The address may be mistyped, or the page has moved. Try one of these:</p>
 <ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
-<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li>
+<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
 <li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li></ul>

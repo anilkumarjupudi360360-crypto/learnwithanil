@@ -303,6 +303,60 @@ NEW = {
       ('What is the SSC CGL age limit?', 'It depends on the post: 18–27, 18–30, 20–30 or 18–32 years on 1 August 2026.'),
       ('When will the SSC CGL 2027 notification come?', 'Not announced. It will appear in SSC\'s 2027-28 exam calendar, which is not out yet.'),
     ]),
+  'rrb-ntpc-2026-notification.html': dict(
+    exam='rrb-ntpc', board='RRB', site='rrbapply.gov.in and the regional RRB websites', crumb='RRB NTPC 2026 Notification',
+    title='RRB NTPC 2026 Notification (CEN 06/2026 & 07/2026): 5,236 Posts, Applications Closed, Exam Date, Age, Fee, Pattern & Previous Papers | Learn with Anil',
+    desc='RRB NTPC 2026: CEN 06/2026 (Graduate, 3,548 posts) and CEN 07/2026 (Undergraduate, 1,688 posts). Application dates (closed), correction window, exam date status, '
+         'age limit, fee, post-wise vacancies and pay, CBT-1 and CBT-2 pattern, and RRB NTPC previous year papers with RRB\'s answer key.',
+    h1='RRB NTPC 2026: 5,236 posts, applications closed, CBT date awaited',
+    lede='The Railway Recruitment Boards notified 5,236 NTPC posts in 2026: 3,548 for graduates (CEN 06/2026) and 1,688 for Class 12 pass candidates (CEN 07/2026). '
+         'Both application windows have closed; the correction windows run in November 2026 and the CBT-1 date is still to be announced. Below: dates, posts, eligibility, pattern and the NTPC previous papers.',
+    hi='RRB NTPC 2026: स्नातक (CEN 06/2026) के 3,548 और 12वीं स्तर (CEN 07/2026) के 1,688 पद। आवेदन बंद; CBT-1 की तिथि अभी घोषित नहीं।',
+    pdf='https://www.rrbapply.gov.in/', pdfname='RRB application portal, rrbapply.gov.in (CEN 06/2026 and CEN 07/2026 are also on every regional RRB website)',
+    more_src=[('https://www.pw.live/railway/exams/rrb-ntpc-2026-notification', 'Physics Wallah: post-wise vacancies, dates, fee and pay of CEN 06/2026 and 07/2026'),
+              ('https://www.careerindia.com/news/rrb-ntpc-2026-recruitment-apply-online-ug-graduate-posts-dates-eligibility-011-67119.html', 'CareerIndia: dates, correction windows and age limits'),
+              ('https://www.manabadi.co.in/ManabadiV2/updates/206600/rrb-ntpc-graduate-recruitment-2026-last-date-extension-notice', 'Manabadi: graduate last date extended to 8 November 2026'),
+              ('https://rrbsecunderabad.gov.in/advertisement_category/cen-no-06-2025-ntpc-graduate/', 'RRB Secunderabad: CEN 06/2025 notices (CBT-1 key 6 April 2026, CBT-2 held 10 July 2026)')],
+    sections=[
+      ('Where RRB NTPC 2026 stands', 'table', [
+        ('Notifications', 'CEN 06/2026 (Graduate) and CEN 07/2026 (Undergraduate, Class 12 level)'),
+        ('Graduate applications', '8 October to 6 November 2026, reported extended to 8 November 2026 (closed); correction window 9–18 November 2026'),
+        ('Undergraduate applications', '15 October to 13 November 2026 (closed); fee till 15 November; correction window 16–25 November 2026'),
+        ('CBT-1', 'Not announced by RRB yet. One report puts the graduate CBT-1 in the fourth week of December 2026; treat it as unconfirmed'),
+        ('Admit card', 'City slip about 10 days and e-call letter about 4 days before your exam date (as in earlier cycles)'),
+        ('Vacancies', '5,236 in all: 3,548 graduate + 1,688 undergraduate (tentative; the early indicative notice said 3,477 graduate)')]),
+      ('Posts and pay', 'table+', (['Post', 'Level', 'Vacancies', 'Starting basic pay'], [
+        ('Goods Train Manager', 'Graduate', '2,750', '₹29,200 (Level 5)'),
+        ('Chief Commercial cum Ticket Supervisor', 'Graduate', '127', '₹35,400 (Level 6)'),
+        ('Junior Accounts Assistant cum Typist', 'Graduate', '300', '₹29,200 (Level 5)'),
+        ('Senior Clerk cum Typist', 'Graduate', '371', '₹29,200 (Level 5)'),
+        ('Commercial cum Ticket Clerk', 'Undergraduate', '700', '₹21,700 (Level 3)'),
+        ('Accounts Clerk cum Typist', 'Undergraduate', '200', '₹19,900 (Level 2)'),
+        ('Junior Clerk cum Typist', 'Undergraduate', '600', '₹19,900 (Level 2)'),
+        ('Trains Clerk', 'Undergraduate', '188', '₹19,900 (Level 2)')])),
+      ('Exam pattern', 'table+', (['Stage', 'Subjects', 'Questions / time', 'Negative marking'], [
+        ('CBT-1 (screening)', 'General Awareness 40, Mathematics 30, General Intelligence & Reasoning 30', '100 questions, 100 marks, 90 minutes', '1/3 mark per wrong answer'),
+        ('CBT-2 (merit)', 'General Awareness 50, Mathematics 35, General Intelligence & Reasoning 35', '120 questions, 120 marks, 90 minutes', '1/3 mark per wrong answer'),
+        ('After CBT-2', 'Document verification and medical examination; for typist posts the typing test is done after joining (as reported)', '', '')])),
+      ('Who could apply', 'list', [
+        'Graduate posts: a degree; age 18–33 years on 1 January 2027. Undergraduate posts: Class 12 (10+2); age 18–30 years on 1 January 2027.',
+        'Age relaxation as in earlier cycles: OBC (NCL) 3 years, SC/ST 5 years, PwBD 10 years and more, ex-servicemen by service.',
+        'Fee ₹500 (₹400 refunded after you sit CBT-1); SC, ST, ex-servicemen, PwBD, women, transgender, minority and EBC candidates pay ₹250 (fully refunded after CBT-1).']),
+      ('The previous cycle (CEN 06/2025 and 07/2025)', 'list', [
+        'Graduate (5,810 posts): CBT-1 held 16–27 March 2026, answer key 6 April 2026, CBT-1 result 12 June 2026, CBT-2 held 10 July 2026 (answer key 15 July 2026).',
+        'Undergraduate (3,058 posts): CBT-1 held on 7–9 May and 13–21 June 2026; answer key and response sheets 27 June 2026.',
+        'The 2024 cycle (CEN 05/2024 and 06/2024): graduate CBT-1 5–24 June 2025 and CBT-2 13 October 2025; undergraduate CBT-1 7 August – 8 September 2025.']),
+    ],
+    faqs=[
+      ('Is the RRB NTPC 2026 last date extended?', 'For graduates (CEN 06/2026), the last date of 6 November 2026 was reported extended to 8 November 2026. The undergraduate window (CEN 07/2026) closed on 13 November 2026. Both are closed now; only the correction windows remain (graduate 9–18 November, undergraduate 16–25 November 2026).'),
+      ('When is the RRB NTPC 2026 exam date?', 'RRB has not announced the CBT-1 dates as of 15 November 2026. One report says the graduate CBT-1 is tentatively in the fourth week of December 2026, but RRB has not confirmed it. The exam city slip comes about 10 days before the exam.'),
+      ('How many vacancies are there in RRB NTPC 2026?', '5,236: 3,548 graduate-level posts (CEN 06/2026) and 1,688 undergraduate posts (CEN 07/2026). Goods Train Manager has the most, 2,750.'),
+      ('What is the RRB NTPC age limit for 2026?', '18–33 years for graduate posts and 18–30 years for undergraduate posts, on 1 January 2027, with the usual relaxations (OBC 3, SC/ST 5 years).'),
+      ('Is there negative marking in RRB NTPC?', 'Yes. One-third of a mark is cut for every wrong answer in both CBT-1 and CBT-2. Unanswered questions get zero.'),
+      ('Do CBT-1 marks count in the final merit?', 'No. CBT-1 only shortlists candidates for CBT-2; the merit list is drawn from CBT-2 marks (and the typing or aptitude test where a post needs it).'),
+      ('Can a Class 12 pass candidate apply for graduate posts?', 'No. Graduate posts (CEN 06/2026) need a degree. Class 12 pass candidates apply under CEN 07/2026 for Commercial cum Ticket Clerk, Accounts Clerk cum Typist, Junior Clerk cum Typist and Trains Clerk.'),
+      ('Where can I practise RRB NTPC previous year papers?', 'On learnwithanil.in/rrb-ntpc/: real RRB NTPC CBT-1 and CBT-2 shift papers from 2025 and 2026 with RRB\'s answer key and explanations, in English and Hindi, as timed tests or subject-wise.'),
+    ]),
   'appsc-amvi-notification-2026.html': dict(
     exam='appsc-amvi', board='APPSC', site='psc.ap.gov.in', crumb='AMVI Notification 2026',
     title='APPSC AMVI Notification 2026 – 50 Posts, Apply Online 6–26 November, Eligibility, Licence, Pattern & Previous Papers | Learn with Anil',
@@ -424,7 +478,7 @@ NEW = {
 }
 
 
-ASOF_PAGE = {'upsc-cse-2027-notification.html': '11 November 2026', 'ssc-cgl-2026-notification.html': '11 November 2026', 'tgpsc-hmwssb-manager-notification-2026.html': '11 November 2026', 'appsc-eo-grade-3-notification-2026.html': '11 November 2026', 'appsc-fro-notification-2026.html': '11 November 2026', 'appsc-analyst-grade-2-notification-2026.html': '11 November 2026', 'ap-police-si-notification-2026.html': '11 November 2026', 'ap-police-constable-notification-2026.html': '11 November 2026', 'ts-police-si-exam-date-hall-ticket-2026.html': '11 November 2026', 'ts-police-constable-exam-date-hall-ticket-2026.html': '11 November 2026', 'appsc-assistant-environmental-engineer-notification-2026.html': '11 November 2026', 'appsc-group-1-notification-2026.html': '11 November 2026', 'appsc-group-2-notification-2026.html': '11 November 2026', 'upsc-capf-2027-notification.html': '11 November 2026', 'upsc-epfo-apfc-2026-notification.html': '11 November 2026', 'tgpsc-amvi-notification.html': '11 November 2026', 'appsc-amvi-notification-2026.html': '11 November 2026', 'ts-police-si-answer-key-2026.html': '11 November 2026', 'ts-police-constable-answer-key-2026.html': '11 November 2026', 'tgpsc-mpso-aso-notification-2026.html': '11 November 2026'}   # pages whose answers were re-checked later (scheduled checks, 11 Nov 2026)
+ASOF_PAGE = {'rrb-ntpc-2026-notification.html': '15 November 2026', 'upsc-cse-2027-notification.html': '11 November 2026', 'ssc-cgl-2026-notification.html': '11 November 2026', 'tgpsc-hmwssb-manager-notification-2026.html': '11 November 2026', 'appsc-eo-grade-3-notification-2026.html': '11 November 2026', 'appsc-fro-notification-2026.html': '11 November 2026', 'appsc-analyst-grade-2-notification-2026.html': '11 November 2026', 'ap-police-si-notification-2026.html': '11 November 2026', 'ap-police-constable-notification-2026.html': '11 November 2026', 'ts-police-si-exam-date-hall-ticket-2026.html': '11 November 2026', 'ts-police-constable-exam-date-hall-ticket-2026.html': '11 November 2026', 'appsc-assistant-environmental-engineer-notification-2026.html': '11 November 2026', 'appsc-group-1-notification-2026.html': '11 November 2026', 'appsc-group-2-notification-2026.html': '11 November 2026', 'upsc-capf-2027-notification.html': '11 November 2026', 'upsc-epfo-apfc-2026-notification.html': '11 November 2026', 'tgpsc-amvi-notification.html': '11 November 2026', 'appsc-amvi-notification-2026.html': '11 November 2026', 'ts-police-si-answer-key-2026.html': '11 November 2026', 'ts-police-constable-answer-key-2026.html': '11 November 2026', 'tgpsc-mpso-aso-notification-2026.html': '11 November 2026'}   # pages whose answers were re-checked later (scheduled checks, 11 Nov 2026)
 # ---------------------------------------------------------------- TGPSC MPSO / ASO (Anil, 8 Nov 2026: link to Notification 07/2026, "pls add pyqs for it in
 # telangana section"). The 2018 question booklets were not found online (only TSPSC's final keys), so Anil chose "start with what's available": this page,
 # with Paper I practice from TGPSC's General Studies & General Abilities papers already on the site. Add the 2018 papers as an exam when the booklets come.
