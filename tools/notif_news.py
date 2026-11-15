@@ -802,6 +802,68 @@ NEW['ssc-gd-constable-2027-notification.html'] = dict(
     ])
 ASOF_PAGE['ssc-gd-constable-2027-notification.html'] = '15 November 2026'
 
+NEW['tnpsc-group-4-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: TNPSC Group 4 (exam 10 January 2027); facts from TNPSC's own PDFs read on 15 Nov 2026
+    exam='tnpsc-group-4', board='TNPSC', site='tnpsc.gov.in', crumb='TNPSC Group 4 Notification 2026', faq_asof='15 November 2026',
+    title='TNPSC Group 4 Notification 2026 (No. 11/2026): 6,574 Posts, Exam on 10 January 2027, Age Limit Raised, Pattern & Previous Papers | Learn with Anil',
+    desc='TNPSC Group 4 (CCSE-IV) 2026: Notification No. 11/2026 of 6 October 2026, 6,574 vacancies (VAO 291, Junior Assistant, Typist, Steno-Typist and more), '
+         'applications closed 8 November 2026 (extended from 5 November), written exam on 10 January 2027. Age limit raised by five years, exam pattern, fee and '
+         'TNPSC Group 4 previous year papers with answers in Tamil and English.',
+    h1='TNPSC Group 4 notification 2026: 6,574 posts, exam on 10 January 2027',
+    lede='TNPSC issued Notification No. 11/2026 for the Combined Civil Services Examination-IV (Group-IV Services) on 6 October 2026: 6,574 vacancies, '
+         'including 291 Village Administrative Officers. Applications closed on 8 November 2026 after an extension, and the written exam is on Sunday, 10 January 2027. '
+         'Below: the key dates, the posts, who can apply, the exam pattern and the TNPSC Group 4 previous papers to practise.',
+    ta='டிஎன்பிஎஸ்சி குரூப் 4 (ஒருங்கிணைந்த குடிமைப் பணிகள் தேர்வு–IV) அறிவிக்கை எண் 11/2026: 6,574 பணியிடங்கள்; எழுத்துத் தேர்வு 10.01.2027; '
+       'விண்ணப்பிக்க கடைசி நாள் 08.11.2026 வரை நீட்டிக்கப்பட்டது; வயது உச்ச வரம்பு ஐந்து ஆண்டுகள் உயர்த்தப்பட்டது.',
+    pdf='https://www.tnpsc.gov.in/Document/english/group_english.pdf', pdfname='TNPSC Notification No. 11/2026 (Advertisement No. 747), 6 October 2026, tnpsc.gov.in',
+    more_src=[('https://www.tnpsc.gov.in/Document/english/Addendum%20%2011B.pdf', 'TNPSC Addendum 11B/2026 (4 November 2026): last date extended to 8 November 2026'),
+              ('https://www.tnpsc.gov.in/Document/english/Amendment%20to%20the%20notification.pdf', 'TNPSC amendment to para 4.1 (age limit), 4 November 2026, G.O.(Ms) No.68 of 30 October 2026'),
+              ('https://www.tnpsc.gov.in/Document/english/Group%20IV%20Addendum%2011A_English.pdf', 'TNPSC Addendum 11A/2026 (29 October 2026)'),
+              ('https://www.tnpsc.gov.in/english/press_releases.aspx', 'TNPSC press release 127/2026 (4 November 2026)')],
+    sections=[
+      ('Key dates', 'table', [
+        ('Notification', 'No. 11/2026, dated 6 October 2026 (Advertisement No. 747)'),
+        ('Online application', '6 October to 8 November 2026, 11.59 pm (extended from 5 November by Addendum 11B/2026); apply at tnpscexams.in after One Time Registration'),
+        ('Written exam', 'Sunday, 10 January 2027, 9.30 am to 12.30 pm (OMR)'),
+        ('Hall ticket', 'On tnpscexams.in before the exam (TNPSC announces the date in a press release); it is not sent by post'),
+        ('Official website', 'tnpsc.gov.in and tnpscexams.in')]),
+      ('Posts and vacancies (6,574)', 'table+', (['Post', 'Vacancies'], [
+        ('Village Administrative Officer (VAO)', '291'),
+        ('Junior Assistant (all departments and boards, including Junior Assistant (Accounts) 422 and Junior Assistant cum Typist 6)', '3,743'),
+        ('Typist', '1,572'),
+        ('Steno-Typist (Grade III) 376, Personal Clerk 60, Shorthand Typist 28', '464'),
+        ('Revenue Assistant 96, Tax Collector 107, Bill Collector 97, Junior Administrative Assistant 55', '355'),
+        ('Executive Officer Grade IV (HR&CE) 46, Junior Inspector of Co-operative Societies 8, Record Clerk 19, Laboratory Assistant 23, Senior Laboratory Assistant 1, '
+         'Sales Assistant 10, Telephone Operator 1', '108'),
+        ('Forest Watcher 40, Forest Guard with Driving Licence 1', '41'),
+        ('Total', '6,574')])),
+      ('', 'note', 'Vacancy figures are from TNPSC\'s notification table (6 October 2026). TNPSC often adds posts through addenda before counselling; check tnpsc.gov.in for the latest list.'),
+      ('Exam pattern (single paper, SSLC standard)', 'table+', (['Part', 'Subject', 'Questions · marks'], [
+        ('A', 'Tamil Eligibility-cum-Scoring Test (in Tamil only)', '100 · 150'),
+        ('B', 'General Studies (Tamil and English)', '75 · 150 (with Part C)'),
+        ('C', 'Aptitude and Mental Ability (Tamil and English)', '25'),
+        ('Total', '3 hours, OMR, objective', '200 · 300')])),
+      ('', 'note', 'Parts B and C are valued only if the candidate scores at least 40% (60 marks) in Part A; the marks of all three parts together decide the rank. '
+                   'The minimum qualifying mark is 90 out of 300 for all communities. There is no interview. Each question has a fifth option, (E) "Answer not known"; '
+                   'leaving a question blank costs 0.5 mark. Differently abled candidates who studied only English may take General English (SSLC standard) instead of Part A.'),
+      ('Who can apply', 'list', [
+        'Minimum qualification: a pass in SSLC (10th standard); Typist, Steno-Typist and some other posts also need the technical qualifications listed in the notification.',
+        'Age as on 1 July 2026 (as amended on 4 November 2026 under G.O.(Ms) No.68 of 30 October 2026, which raised the upper limit by five years): for most posts 18 to 35 years '
+        'for "Others", 37 for BC(OBCM), BCM and MBC/DC, and 40 for SC, SC(A) and ST; VAO from 21. For many posts there is no upper limit for BC, MBC, SC and ST candidates '
+        'who hold a qualification higher than the minimum. See the amendment for each post and the concessions for persons with benchmark disability, ex-servicemen and destitute widows.',
+        'Fee: TNPSC One Time Registration fee of Rs. 150 (valid five years) and an exam fee of Rs. 100, unless exempted (see the notification for the categories).']),
+    ],
+    faqs=[
+      ('When is the TNPSC Group 4 exam 2027?', 'Sunday, 10 January 2027, from 9.30 am to 12.30 pm, as fixed in Notification No. 11/2026.'),
+      ('Was the TNPSC Group 4 last date extended?', 'Yes. Addendum 11B/2026 of 4 November 2026 extended the last date from 5 November to 8 November 2026, 11.59 pm, after the age limit was raised. Applications are now closed.'),
+      ('How many vacancies are there in TNPSC Group 4 2026?', '6,574 in Notification No. 11/2026, including 291 VAO posts, about 3,743 Junior Assistant posts and 1,572 Typist posts.'),
+      ('Was the TNPSC Group 4 age limit increased?', 'Yes. G.O.(Ms) No.68 of 30 October 2026 raised the upper age limit by five years for all categories, and TNPSC amended the notification on 4 November 2026 (for most posts: 35 for "Others", 37 for BC/BCM/MBC, 40 for SC/ST, as on 1 July 2026).'),
+      ('What is the TNPSC Group 4 exam pattern?', 'One OMR paper of 200 questions for 300 marks in 3 hours: Part A Tamil (100 questions, 150 marks, at least 40% needed), Part B General Studies (75) and Part C Aptitude & Mental Ability (25) for 150 marks. No interview.'),
+      ('What is the minimum qualifying mark for TNPSC Group 4?', '90 out of 300 for all communities, and at least 60 of 150 in Part A Tamil.'),
+      ('When will the TNPSC Group 4 hall ticket be released?', 'Not announced as of 15 November 2026. TNPSC releases it on tnpscexams.in before the exam and announces it in a press release; it is not sent by post.'),
+      ('Where can I practise TNPSC Group 4 previous papers?', 'On Learn with Anil: the TNPSC Group 4 papers of 2025, 2024 and 2022, Part A Tamil and Part B GS & Aptitude, with TNPSC\'s final answers and explanations in Tamil and English, as 3-hour timed tests or subject-wise practice.'),
+    ])
+ASOF_PAGE['tnpsc-group-4-notification-2026.html'] = '15 November 2026'
+
 
 def apply(NOTIFS):
     for rel, f in FAQS.items():

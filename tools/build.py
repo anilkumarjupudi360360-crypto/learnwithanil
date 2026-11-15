@@ -464,6 +464,84 @@ def gd_text():
                 what=f'{len(have)} shift paper{"s" if len(have) != 1 else ""} of the {yr} exam')
 
 
+# ---------- TNPSC Group 4 (Combined Civil Services Examination-IV, Group-IV Services) ----------
+# Anil, 15 Nov 2026: "Tamil Nadu: TNPSC Group 4, exam 10 January 2027 ... add these exams pyqs also and other details ... one exam at a time";
+# chose both parts of the 2025, 2024 and 2022 papers. Source: TNPSC's own scans of the question booklets (released with the tentative keys on
+# tnpsc.gov.in, answerkeys.aspx) and TNPSC's FINAL answer keys. Part A (Q1-100, Tamil Eligibility-cum-Scoring Test) is printed only in Tamil:
+# its Tamil text fills both the main and the Tamil slots; Part B (Q101-200, General Studies + Aptitude & Mental Ability) in English and Tamil.
+# Option (E) "Answer not known" is left out. Final key "ALL" (every option accepted) or 3+ answers: left out; two answers: both marked correct.
+# Work files (container): /home/claude/tn (SPEC.md, CHECK.md, tools/, work/keys.json, work/chk/*.jsonl, tools/merge.py).
+TN4_BLURB = ('Part A Tamil Eligibility-cum-Scoring Test (100 questions, 150 marks) and Part B General Studies (75 questions) with Aptitude & Mental Ability (25 questions) '
+             '(150 marks): 200 questions, 300 marks, 3 hours, SSLC standard, no negative marking.')
+def _tn4(pid, year, held, notif, book, keydate, file_):
+    return dict(id=pid, file=file_, year=year, stage='Written Examination', short=f'Group 4 {year}',
+                title=f'TNPSC Group 4 (CCSE-IV) {year}: Tamil Eligibility-cum-Scoring Test & General Studies', notif=f'{notif} · booklet {book}',
+                held=held, key=f"TNPSC's final answer key ({keydate})", fmt='mcq',
+                slug=f'tnpsc-group-4-{year}-question-paper-with-answers', kwname=f'TNPSC Group 4 {year}',
+                ta_paper='வினாத்தாள்', blurb=TN4_BLURB, mins=180)
+TN4_PAPERS = [
+  _tn4('t25', 2025, '12 July 2025', 'Notification 07/2025', 'CCSEIVGT/2025', '17 November 2025', 'tnpsc-group-4-2025.txt'),
+  _tn4('t24', 2024, '9 June 2024', 'Notification 01/2024', 'CCSE4GT/2024, version A', '9 January 2025', 'tnpsc-group-4-2024.txt'),
+  _tn4('t22', 2022, '24 July 2022', 'Notification 07/2022', 'CCS4T/2022, version A', '10 October 2023', 'tnpsc-group-4-2022.txt'),
+]
+TN4_SUBJECTS = [
+  ('tam', 'General Tamil (Part A)', 'general-tamil', ['Grammar', 'Vocabulary & Usage', 'Literature', 'Tamil Scholars & Tamil Service', 'Comprehension']),
+  ('sci', 'General Science', 'general-science', ['Physics', 'Chemistry', 'Biology', 'Science & Technology']),
+  ('cur', 'Current Events', 'current-events', ['National', 'Tamil Nadu', 'International & Sports', 'Awards, Books & Persons']),
+  ('geo', 'Geography of India', 'geography', ['Physical Geography', 'Resources, Agriculture & Industry', 'Population & Transport', 'Environment & Disasters']),
+  ('ih',  'History & Culture of India', 'history-culture', ['Ancient India', 'Medieval India', 'Modern India', 'Art & Culture']),
+  ('inm', 'Indian National Movement', 'indian-national-movement', ['Early Movements & Revolts', 'Gandhian Era', 'Leaders & Events', 'Role of Tamil Nadu']),
+  ('pol', 'Indian Polity', 'indian-polity', ['Constitution & Rights', 'Union & State Government', 'Judiciary & Constitutional Bodies', 'Local Government & Governance']),
+  ('eco', 'Indian Economy', 'indian-economy', ['Growth, Planning & Budget', 'Agriculture, Industry & Trade', 'Money, Banking & Finance', 'Poverty, Employment & Welfare']),
+  ('tnh', 'Tamil Nadu: History, Culture & Movements', 'tamil-nadu-history-culture', ['Sangam Age & Tamil Society', 'Thirukkural', 'Social Reform & Dravidian Movement', 'Culture & Heritage of Tamil Nadu']),
+  ('tnd', 'Development Administration in Tamil Nadu', 'tamil-nadu-development-administration', ['Welfare Schemes', 'Social Justice & Harmony', 'Economy & Infrastructure', 'e-Governance & Achievements']),
+  ('apt', 'Aptitude & Mental Ability', 'aptitude-mental-ability', ['Simplification & Percentage', 'HCF, LCM & Ratio', 'Interest', 'Area, Volume & Time-Work',
+                                                              'Logical Reasoning & Puzzles', 'Number & Alphabet Series', 'Visual Reasoning']),
+]
+TN4_SUBJ_TA = {'tam': 'பொதுத் தமிழ் (பகுதி அ)', 'sci': 'பொது அறிவியல்', 'cur': 'நடப்பு நிகழ்வுகள்', 'geo': 'இந்தியப் புவியியல்',
+               'ih': 'இந்திய வரலாறும் பண்பாடும்', 'inm': 'இந்திய தேசிய இயக்கம்', 'pol': 'இந்திய ஆட்சியியல்', 'eco': 'இந்தியப் பொருளாதாரம்',
+               'tnh': 'தமிழ்நாட்டின் வரலாறு, பண்பாடு, இயக்கங்கள்', 'tnd': 'தமிழ்நாட்டின் வளர்ச்சி நிர்வாகம்', 'apt': 'திறனறிவும் மனக்கணக்கு நுண்ணறிவும்'}
+
+
+def tn4_text():
+    """Wording for the TNPSC Group 4 page that depends on which papers are on the site."""
+    have = [p for p in TN4_PAPERS if p['id'] in have_src('tnpsc-group-4', TN4_PAPERS)]
+    years = sorted({p['year'] for p in have}, reverse=True) or [2025]
+    ys = ', '.join(str(y) for y in years[:-1]) + (' and ' if len(years) > 1 else '') + str(years[-1])
+    held = '; '.join(f'{p["year"]}: {p["held"]}' for p in have)
+    return dict(n=len(have), years=ys, held=held, span=f'{min(years)}–{max(years)}' if len(years) > 1 else str(years[0]))
+
+
+def FAQ_TN4(total, npapers):
+    T = tn4_text()
+    return [
+      ('Where can I get TNPSC Group 4 previous year question papers with answers?',
+       f'This page has {total} questions from the TNPSC Group 4 (Combined Civil Services Examination-IV) papers of {T["years"]} ({T["held"]}). '
+       'Each is TNPSC\'s own question booklet, with the answer from TNPSC\'s final answer key and an explanation in English and Tamil. '
+       'Practise a whole paper as a 3-hour timed test, or Part A Tamil and each General Studies subject on its own.'),
+      ('Are the answers official?',
+       'Yes. Every answer is from TNPSC\'s final answer key (published on tnpsc.gov.in after the objections to the tentative key). '
+       'Where TNPSC accepted two options, both are marked correct; questions for which TNPSC accepted every option (or three options) are left out. '
+       'The explanations are written by Learn with Anil.'),
+      ('What is the TNPSC Group 4 exam pattern?',
+       'One written exam (OMR) of 200 questions for 300 marks in 3 hours, at SSLC (10th) standard. Part A, the Tamil Eligibility-cum-Scoring Test, has 100 questions '
+       'for 150 marks; a candidate must score at least 40% (60 marks) in it, and the Part A marks also count for the rank. Part B has 75 General Studies questions and '
+       '25 Aptitude & Mental Ability questions for 150 marks. There is no negative marking and no interview; the minimum qualifying mark is 90 out of 300.'),
+      ('Is the TNPSC Group 4 question paper available in Tamil?',
+       'Yes. Tap தமிழ் at the top of the page. Part A (General Tamil) is in Tamil only, as in the exam; every Part B question is shown in Tamil exactly as TNPSC printed it, '
+       'and the explanations are in Tamil too. In English mode Part B is in English and Part A stays in Tamil.'),
+      ('Is there a TNPSC Group 4 mock test?',
+       'Yes. Every paper here can be taken as a full 200-question mock test with the real 3-hour limit, and the sectional tests take all the previous questions of one subject, '
+       'for example General Tamil or Aptitude. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+      ('When is the TNPSC Group 4 exam in 2027?',
+       'TNPSC Notification No. 11/2026 (6 October 2026) fixes the written examination for Sunday, 10 January 2027, 9.30 am to 12.30 pm, for 6,574 vacancies. '
+       'Online applications closed on 8 November 2026 (extended from 5 November). The hall ticket comes on tnpscexams.in before the exam; it is not sent by post.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers '
+       'of every exam for 12 months. There is no password.'),
+    ]
+
+
 # ---------- RRB Group D (Level-1 posts, CEN 08/2024): RRB's own question papers with the answer key (Anil, 15 Nov 2026: "RRB Group D...add pyqs and other
 # details like other exams"). Source: RRB's "question paper with answer key" for each shift (options in green with a tick = RRB's answer), in English and
 # Hindi, as hosted by AglaSem; the Hindi sheets are another candidate's copy, so the Hindi was matched question by question and put in English option order.
@@ -867,6 +945,8 @@ TS_SUBJECTS = [
 L2_TE = dict(code='te', dir='te', label='తెలుగు', name='Telugu', font='Noto Sans Telugu', ans='సమాధానం', gf='')
 L2_HI = dict(code='hi', dir='hi', label='हिंदी', name='Hindi', font='Noto Sans Devanagari', ans='उत्तर',
              gf='&family=Noto+Sans+Devanagari:wght@400;500;600;700')
+L2_TA = dict(code='ta', dir='ta', label='தமிழ்', name='Tamil', font='Noto Sans Tamil', ans='விடை',
+             gf='&family=Noto+Sans+Tamil:wght@400;500;600;700')   # TNPSC (Anil, 15 Nov 2026: Tamil Nadu exams)
 
 
 def parse(paper, srcdir='', subj=SUBJ):
@@ -1996,6 +2076,23 @@ def exam_confs():
            papers_note=("Every paper is RRB's own question paper as candidates printed it from the RRB portal (the response sheet), with the answer RRB marked as correct. "
                         "The sheets are from the answer-key stage (24 March 2025), so RRB's final key may differ for a few questions. "
                         "Each shift had a different paper. Every question is in English and Hindi, as printed in RRB's English and Hindi papers of that shift.")),
+      dict(id='tnpsc-group-4', dir='tnpsc-group-4', src='tnpsc-group-4', key='tn-g4', name='TNPSC Group 4', short='TNPSC Group 4', seo='TNPSC Group 4',
+           slugp='tnpsc-group-4', papers=TN4_PAPERS, subjects=TN4_SUBJECTS, faq=FAQ_TN4, board='TNPSC', l2=L2_TA, pb='/tnpsc-group-4/',
+           keyname="TNPSC's final answer key", keyshort="TNPSC's final answer keys",
+           ta_name='டிஎன்பிஎஸ்சி குரூப் 4', ta_paper='வினாத்தாள்', subj_te=TN4_SUBJ_TA,
+           title=f"TNPSC Group 4 Previous Year Question Papers with Answers – {tn4_text()['years']} (General Tamil & GS), Tamil & English | Learn with Anil",
+           h1='TNPSC Group 4 previous year question papers <em>with answers.</em>',
+           aka=('TNPSC Combined Civil Services Examination-IV (CCSE-IV, Group-IV Services): Village Administrative Officer (VAO), Junior Assistant, Typist, '
+                'Steno-Typist, Bill Collector, Field Surveyor, Forest Guard and Forest Watcher. Part A General Tamil and Part B General Studies with Aptitude, with TNPSC\'s final key.'),
+           aka_short='TNPSC CCSE-IV (Group 4): VAO, Junior Assistant, Typist and other posts',
+           l2line='டிஎன்பிஎஸ்சி குரூப் 4 முந்தைய ஆண்டு வினாத்தாள்கள் இறுதி விடைக்குறிப்புடன் — பொதுத் தமிழ், பொது அறிவு, திறனறிவு; தமிழ், ஆங்கிலத்தில் விளக்கங்களுடன்; அனைத்துத் தேர்வுகளுக்கும் ஒரே ₹45 ஆல்-இன்-ஒன் பாஸ்.',
+           desc=lambda t: (f"TNPSC Group 4 (CCSE-IV) previous year question papers with answers from TNPSC's final key: {tn4_text()['years']} papers, Part A General Tamil "
+                           f"and Part B General Studies & Aptitude. {t:,} questions in Tamil and English with explanations; subject-wise practice and 3-hour timed mock tests "
+                           f"for VAO, Junior Assistant and Typist aspirants."),
+           eyebrow=f"TNPSC · Combined Civil Services Exam IV (Group 4) · {tn4_text()['span']}",
+           papers_note=("Every paper is TNPSC's own question booklet, with the answer from TNPSC's final answer key. Part A (General Tamil) is printed only in Tamil; "
+                        "Part B (General Studies and Aptitude) is printed in English and Tamil, and both are shown here. Option (E) \"Answer not known\" is left out. "
+                        "Questions for which TNPSC accepted every option are left out; where TNPSC accepted two options, both are marked correct.")),
     ] + bank_confs()
 
 
@@ -2134,7 +2231,7 @@ def main():
         def fill(s, photo, title, seo, desc=''):
             return (s.replace('{{HERO_P}}', HERO_P).replace('{{FIG12}}', FIG12)   # (first: they contain other placeholders)
                      .replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title).replace('{{DESC}}', esc(desc))
-                     .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf'])
+                     .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf']).replace('{{TA_HIDDEN}}', '' if l2['code'] == 'ta' else ' hidden')
                      .replace('{{LANGS}}', 'English' if papers and all(p.get('en_only') for p in papers) else 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
                      .replace('{{BOARD}}', conf['board'])
                      .replace('{{FOOTSRC}}', f'Mock tests written by Learn with Anil ({conf["board"]} does not publish its question papers).' if conf.get('mockonly') else
@@ -2454,6 +2551,8 @@ def paper_kw_l2(conf, p):
         return f'{conf["te_name"]} {p.get("te_paper") or conf["te_paper"]} {p["year"]} ప్రశ్నపత్రం సమాధానాలతో'
     if conf.get('hi_name'):
         return f'{conf["hi_name"]} {p.get("hi_paper") or conf["hi_paper"]} {p["year"]} प्रश्न पत्र, ' + ('उत्तर सहित' if p.get('nokey') else 'उत्तर कुंजी सहित')
+    if conf.get('ta_name'):
+        return f'{conf["ta_name"]} {p.get("ta_paper") or conf.get("ta_paper", "")} {p["year"]} வினாத்தாள் விடைகளுடன்'.replace('  ', ' ')
     if conf['l2']['code'] == 'te':
         g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
         stage = 'ప్రిలిమ్స్' if p['stage'].startswith(('Screening', 'Prelims')) else 'మెయిన్స్'
@@ -2484,6 +2583,8 @@ SUBJ_L2 = {
 def subject_l2_line(conf, s):
     name = conf.get('subj_te', {}).get(s['id']) if 'subj_te' in conf else SUBJ_L2[conf['l2']['code']].get(s['id'])
     if not name: return ''
+    if conf['l2']['code'] == 'ta' and conf.get('ta_name'):
+        return f'{conf["ta_name"]} {name} — முந்தைய ஆண்டு வினாக்கள், விடைகள், விளக்கங்களுடன்.'
     if conf.get('te_name'):
         if s['id'] == 'soc': name = 'నైతిక విలువలు, జెండర్ సెన్సిటివిటీ'
         return f'{conf["te_name"]} {name} ప్రాక్టీస్ బిట్స్ — మునుపటి సంవత్సరం ప్రశ్నలు, సమాధానాలు, వివరణలతో.'
@@ -2507,6 +2608,7 @@ def exam_terms(e, cat):
     if 'amvi' in e['id']: words += ['amvi', 'motor vehicle inspector', 'mvi', 'rto', 'transport department', 'automobile engineering', 'automobile']
     if e['id'] == 'sbi-po': words += ['sbi', 'state bank', 'state bank of india', 'po', 'probationary officer', 'bank po', 'banking', 'bank exam', 'sbi po mock test']
     if e['id'] == 'ibps-so': words += ['ibps', 'so', 'specialist officer', 'it officer', 'agriculture field officer', 'afo', 'hr officer', 'personnel officer', 'marketing officer', 'banking', 'bank exam', 'ibps so mock test']
+    if e['id'] == 'tnpsc-group-4': words += ['tnpsc', 'group 4', 'group iv', 'group-4', 'tnpsc group 4', 'tn group 4', 'ccse 4', 'ccse-iv', 'vao', 'village administrative officer', 'junior assistant', 'typist', 'steno typist', 'bill collector', 'field surveyor', 'forest guard', 'forest watcher', 'tamil nadu', 'tamil', 'general tamil', 'pothu tamil', 'குரூப் 4', 'பொதுத் தமிழ்']
     if e['id'] == 'ssc-gd': words += ['ssc gd', 'gd constable', 'ssc constable', 'constable gd', 'general duty', 'capf constable', 'bsf', 'crpf', 'cisf', 'itbp', 'ssb', 'assam rifles', 'rifleman', 'ncb', 'sepoy', 'paramilitary', 'ssc gd mock test', 'jawan']
     if e['id'] == 'ap-dsc': words += ['dsc', 'ap dsc', 'mega dsc', 'trt', 'teacher recruitment', 'teacher', 'teachers', 'sgt', 'secondary grade teacher', 'school assistant', 'sa',
                                       'pet', 'physical education', 'b.ed', 'd.ed', 'tet', 'school education', 'డీఎస్సీ', 'టీచర్']
@@ -2650,7 +2752,7 @@ def photo_credit(eid, prefix='Photo: '):
 # Live ones are named in the hero line, the badge, the counts and the score card; the others show as "coming soon" (the "+N" chip in the
 # language switcher, the badge, the figures). A language goes live only when questions exist in it; the switcher then needs its own button.
 SITE_LANGS = [('en', 'English', 'अंग्रेज़ी', 'ఇంగ్లీష్', True), ('te', 'తెలుగు', 'तेलुगु', 'తెలుగు', True), ('hi', 'हिंदी', 'हिंदी', 'హిందీ', True),
-              ('ta', 'தமிழ்', 'तमिल', 'తమిళం', False), ('kn', 'ಕನ್ನಡ', 'कन्नड़', 'కన్నడ', False), ('ml', 'മലയാളം', 'मलयालम', 'మలయాళం', False),
+              ('ta', 'தமிழ்', 'तमिल', 'తమిళం', True), ('kn', 'ಕನ್ನಡ', 'कन्नड़', 'కన్నడ', False), ('ml', 'മലയാളം', 'मलयालम', 'మలయాళం', False),
               ('mr', 'मराठी', 'मराठी', 'మరాఠీ', False)]
 
 
@@ -3332,6 +3434,7 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
 .nw{white-space:nowrap}
 [lang="te"]{font-family:"Noto Sans Telugu",sans-serif;line-height:1.8}
 [lang="hi"]{font-family:"Noto Sans Devanagari",sans-serif;line-height:1.75}
+[lang="ta"]{font-family:"Noto Sans Tamil",sans-serif;line-height:1.75}
 .q .te{border-left:3px solid var(--line);padding-left:12px;margin:8px 0 4px}
 :root{--bg:#F3F6FB;--surface:#fff;--ink:#0D1830;--muted:#55627C;--line:#D6DFEC;--accent:#1846C7;--accent-soft:#E2EAFC;--accent-text:#1440B8;--band:#0C2266;--band-ink:#EEF3FF;--good:#12804A;--good-soft:#DDF3E7}
 @media (prefers-color-scheme:dark){:root{--bg:#0A1020;--surface:#111A2E;--ink:#E5ECF8;--muted:#9AA8C3;--line:#26334F;--accent:#6F95FF;--accent-soft:#1A2A52;--accent-text:#9DB7FF;--band:#0F1F4E;--band-ink:#EEF3FF;--good:#41C080;--good-soft:#123426;color-scheme:dark}}
@@ -3434,7 +3537,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -4311,6 +4414,21 @@ LANDINGS = {
             'Full shift papers with a 90-minute timer: <a href="/rpf-si/mock-test.html">RPF SI mock test</a> · <a href="/rpf-constable/mock-test.html">RPF Constable mock test</a>.</p>',
       te={'RPF SI': 'आरपीएफ एसआई प्रश्न पत्र', 'RPF Constable': 'आरपीएफ कांस्टेबल प्रश्न पत्र'},
       order=lambda c: 0 if c['id'] == 'rpf-si' else 1),
+  'tnpsc-pyqs.html': dict(   # Anil, 15 Nov 2026: Tamil Nadu exams, starting with TNPSC Group 4
+      board='TNPSC', ename='TNPSC', crumb='TNPSC PYQs', lang='ta',
+      title='TNPSC Previous Year Question Papers with Answers – Group 4 PYQs (General Tamil & GS), Tamil & English | Learn with Anil',
+      desc='TNPSC previous year question papers in one place: TNPSC Group 4 (CCSE-IV) papers of 2025, 2024 and 2022, Part A General Tamil and Part B General Studies '
+           '& Aptitude, {n} questions with TNPSC\'s final answer key and explanations in Tamil and English. Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='TNPSC previous question papers with answers',
+      lede="Every TNPSC question paper on Learn with Anil, {n} questions in all. Each is TNPSC's own question booklet with the answer from TNPSC's final key, "
+           "and every question has a short explanation in Tamil and English.",
+      intro='<p>Looking for the TNPSC Group 4 question paper 2025 or 2024 with the answer key, General Tamil (பொதுத் தமிழ்) previous questions, or a TNPSC Group 4 mock test in Tamil? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="ta">டிஎன்பிஎஸ்சி குரூப் 4 முந்தைய ஆண்டு வினாத்தாள்கள் (2025, 2024, 2022) இறுதி விடைக்குறிப்புடன் — பொதுத் தமிழ், பொது அறிவு, திறனறிவு; தமிழ், ஆங்கிலத்தில் விளக்கங்களுடன்; அனைத்துத் தேர்வுகளுக்கும் ஒரே ₹45 ஆல்-இன்-ஒன் பாஸ்.</p>'
+            '<p class="note">TNPSC Group 4 2026: <a href="/tnpsc-group-4-notification-2026.html">Notification No. 11/2026, 6,574 posts, exam on 10 January 2027</a>. '
+            'Full papers with a 3-hour timer: <a href="/tnpsc-group-4/mock-test.html">TNPSC Group 4 mock test</a>.</p>',
+      te={'TNPSC Group 4': 'டிஎன்பிஎஸ்சி குரூப் 4 வினாத்தாள்கள்'},
+      order=lambda c: 0),
 }
 
 
@@ -5390,6 +5508,7 @@ def notif_page(loaded, rel):
     body = ['<style>main{overflow-wrap:break-word}main li,main td{overflow-wrap:anywhere}.qa{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:8px 0;background:var(--surface)}.qa summary{font-weight:700;cursor:pointer}.qa p{margin:8px 0 2px}</style>']
     if N.get('te'): body.append(f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>')
     elif N.get('hi'): body.append(f'<p lang="hi" style="margin:0 0 6px">{esc(N["hi"])}</p>')
+    elif N.get('ta'): body.append(f'<p lang="ta" style="margin:0 0 6px">{esc(N["ta"])}</p>')
     if conf: body.append(f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>')
     for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
@@ -5425,7 +5544,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways (RRB): NTPC, Group D'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)')]
 
 
 def news_hub_page(loaded, rels):
@@ -5724,6 +5843,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'ts-police-constable': ('TS Police Constable Preliminary Written Test', '2026-12-20', 'Tentative, TGPRB press note of 17 September 2026.'),
   'upsc-capf': ('UPSC CAPF (Assistant Commandants) 2027', '2027-07-04', 'UPSC Calendar 2027.'),
   'upsc-prelims': ('UPSC Civil Services (Preliminary) Examination 2027', '2027-05-23', 'UPSC Calendar 2027.'),
+  'tnpsc-group-4': ('TNPSC Group 4 (CCSE-IV) written exam', '2027-01-10', 'TNPSC Notification No. 11/2026 of 6 October 2026 (exam dashboard on tnpsc.gov.in).'),
   'ssc-gd': ('SSC GD Constable 2027 computer-based exam', None, "SSC's exam calendar puts the GD 2027 computer-based exam in January–March 2027; the notification, listed for 30 September 2026, was not out as of 15 November 2026."),
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
   'rrb-ntpc': ('RRB NTPC 2026 CBT-1 (CEN 06/2026 and 07/2026)', None, 'Applications closed (graduate 8 November, undergraduate 13 November 2026); RRB has not announced the CBT-1 dates yet. One report says the graduate CBT-1 may be in the fourth week of December 2026.'),
@@ -6401,7 +6521,7 @@ def build_static(conf, papers, subjects, questions, subj):
         elif conf['board'] in ('UPSC', 'SSC', 'RRB'):
             title = f'{kw} Question Paper with Answer Key{f" ({alt})" if alt and conf["board"] == "SSC" else ""}, English & Hindi | Learn with Anil'
         else:
-            title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – {"Preliminary Key" if "preliminary key" in pkey else "Final Key"}, {"English" if p.get("en_only") else "Telugu & English"} | Learn with Anil'
+            title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – {"Preliminary Key" if "preliminary key" in pkey else "Final Key"}, {"English" if p.get("en_only") else conf["l2"]["name"] + " & English"} | Learn with Anil'
         kdesc = ("answers from APPSC's final key" if conf['board'] == 'APPSC' else 'compiled answers' if p.get('key', '').startswith('answers compiled')
                  else pkey if p.get('nokey')
                  else f'answers from {pkey}')
@@ -6511,7 +6631,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -6528,7 +6648,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
-<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li></ul>
+<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li></ul>
 </main></body></html>
 """
 

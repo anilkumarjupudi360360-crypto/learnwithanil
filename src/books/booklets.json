@@ -387,6 +387,50 @@
    "pages": 30
   }
  },
+ "rrb-group-d": {
+  "f09s1": {
+   "bytes": 631251,
+   "file": "rrb-group-d-f09s1-f73b193469.bin",
+   "key": "bk-rrb-group-d-f09s1",
+   "name": "LearnWithAnil-RRB-Group-D-2026-9-February-Shift-1-CBT-Question-Paper.pdf",
+   "pages": 24
+  },
+  "f09s2": {
+   "bytes": 644999,
+   "file": "rrb-group-d-f09s2-19185ff1d6.bin",
+   "key": "bk-rrb-group-d-f09s2",
+   "name": "LearnWithAnil-RRB-Group-D-2026-9-February-Shift-2-CBT-Question-Paper.pdf",
+   "pages": 24
+  },
+  "f09s3": {
+   "bytes": 614784,
+   "file": "rrb-group-d-f09s3-2784a9cd0b.bin",
+   "key": "bk-rrb-group-d-f09s3",
+   "name": "LearnWithAnil-RRB-Group-D-2026-9-February-Shift-3-CBT-Question-Paper.pdf",
+   "pages": 24
+  },
+  "n27s1": {
+   "bytes": 639846,
+   "file": "rrb-group-d-n27s1-9f0e619134.bin",
+   "key": "bk-rrb-group-d-n27s1",
+   "name": "LearnWithAnil-RRB-Group-D-2025-27-November-Shift-1-CBT-Question-Paper.pdf",
+   "pages": 25
+  },
+  "n27s2": {
+   "bytes": 592893,
+   "file": "rrb-group-d-n27s2-646efeccd3.bin",
+   "key": "bk-rrb-group-d-n27s2",
+   "name": "LearnWithAnil-RRB-Group-D-2025-27-November-Shift-2-CBT-Question-Paper.pdf",
+   "pages": 22
+  },
+  "n27s3": {
+   "bytes": 624244,
+   "file": "rrb-group-d-n27s3-fb587666bc.bin",
+   "key": "bk-rrb-group-d-n27s3",
+   "name": "LearnWithAnil-RRB-Group-D-2025-27-November-Shift-3-CBT-Question-Paper.pdf",
+   "pages": 23
+  }
+ },
  "tgpsc-group-1": {
   "g1p22": {
    "bytes": 1169482,
@@ -438,6 +482,29 @@
    "key": "bk-tgpsc-group-2-g24p4",
    "name": "LearnWithAnil-TGPSC-Group-2-Paper-4-2024-Telangana-Movement-State-Formation-Question-Paper.pdf",
    "pages": 51
+  }
+ },
+ "tnpsc-group-4": {
+  "t22": {
+   "bytes": 937242,
+   "file": "tnpsc-group-4-t22-6274da8395.bin",
+   "key": "bk-tnpsc-group-4-t22",
+   "name": "LearnWithAnil-TNPSC-Group-4-2022-Question-Paper.pdf",
+   "pages": 44
+  },
+  "t24": {
+   "bytes": 894487,
+   "file": "tnpsc-group-4-t24-4bb794f5ac.bin",
+   "key": "bk-tnpsc-group-4-t24",
+   "name": "LearnWithAnil-TNPSC-Group-4-2024-Question-Paper.pdf",
+   "pages": 40
+  },
+  "t25": {
+   "bytes": 1113544,
+   "file": "tnpsc-group-4-t25-ef07bb8128.bin",
+   "key": "bk-tnpsc-group-4-t25",
+   "name": "LearnWithAnil-TNPSC-Group-4-2025-Question-Paper.pdf",
+   "pages": 48
   }
  },
  "ts-police-constable": {
@@ -521,50 +588,6 @@
    "key": "bk-ts-police-si-s2023d",
    "name": "LearnWithAnil-TS-Police-SI-Mains-2023-Paper-4-Final-Written-Exam-General-Studies-Question-Paper.pdf",
    "pages": 43
-  }
- },
- "rrb-group-d": {
-  "f09s1": {
-   "bytes": 631251,
-   "file": "rrb-group-d-f09s1-f73b193469.bin",
-   "key": "bk-rrb-group-d-f09s1",
-   "name": "LearnWithAnil-RRB-Group-D-2026-9-February-Shift-1-CBT-Question-Paper.pdf",
-   "pages": 24
-  },
-  "f09s2": {
-   "bytes": 644999,
-   "file": "rrb-group-d-f09s2-19185ff1d6.bin",
-   "key": "bk-rrb-group-d-f09s2",
-   "name": "LearnWithAnil-RRB-Group-D-2026-9-February-Shift-2-CBT-Question-Paper.pdf",
-   "pages": 24
-  },
-  "f09s3": {
-   "bytes": 614784,
-   "file": "rrb-group-d-f09s3-2784a9cd0b.bin",
-   "key": "bk-rrb-group-d-f09s3",
-   "name": "LearnWithAnil-RRB-Group-D-2026-9-February-Shift-3-CBT-Question-Paper.pdf",
-   "pages": 24
-  },
-  "n27s1": {
-   "bytes": 639846,
-   "file": "rrb-group-d-n27s1-9f0e619134.bin",
-   "key": "bk-rrb-group-d-n27s1",
-   "name": "LearnWithAnil-RRB-Group-D-2025-27-November-Shift-1-CBT-Question-Paper.pdf",
-   "pages": 25
-  },
-  "n27s2": {
-   "bytes": 592893,
-   "file": "rrb-group-d-n27s2-646efeccd3.bin",
-   "key": "bk-rrb-group-d-n27s2",
-   "name": "LearnWithAnil-RRB-Group-D-2025-27-November-Shift-2-CBT-Question-Paper.pdf",
-   "pages": 22
-  },
-  "n27s3": {
-   "bytes": 624244,
-   "file": "rrb-group-d-n27s3-fb587666bc.bin",
-   "key": "bk-rrb-group-d-n27s3",
-   "name": "LearnWithAnil-RRB-Group-D-2025-27-November-Shift-3-CBT-Question-Paper.pdf",
-   "pages": 23
   }
  }
 }
