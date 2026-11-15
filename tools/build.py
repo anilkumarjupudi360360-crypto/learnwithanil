@@ -4008,7 +4008,8 @@ LANDINGS = {
 def landing_page(loaded, rel):
     """One crawlable page listing every paper and subject page of one recruiting board (APPSC, TSLPRB)."""
     L = LANDINGS[rel]
-    loaded = sorted([x for x in loaded if x[0]['board'] == L['board']], key=lambda x: L['order'](x[0]))
+    # the RPF page shares board 'RRB' with RRB NTPC: list only the exams the page names (its 'te' map)
+    loaded = sorted([x for x in loaded if x[0]['board'] == L['board'] and x[0]['short'] in L['te']], key=lambda x: L['order'](x[0]))
     n = f'{sum(len(x[2]) for x in loaded):,}'
     can = f'{SITE_URL}/{rel}'
     secs = []
