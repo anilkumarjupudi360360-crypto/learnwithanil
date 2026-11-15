@@ -764,11 +764,20 @@
    "t": "Technician"
   },
   {
-   "id": "rpf",
+   "id": "rpf-si",
    "cat": "rail",
-   "b": "RRB",
-   "t": "RPF",
-   "n": "SI & Constable"
+   "b": "RRB · RPF",
+   "t": "RPF SI",
+   "n": "Sub-Inspector (Executive)",
+   "live": "rpf-si/"
+  },
+  {
+   "id": "rpf-constable",
+   "cat": "rail",
+   "b": "RRB · RPF",
+   "t": "RPF Constable",
+   "n": "Constable (Executive)",
+   "live": "rpf-constable/"
   },
   {
    "id": "tnpsc-group-1",

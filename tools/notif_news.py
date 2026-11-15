@@ -540,6 +540,107 @@ NEW['tgpsc-mpso-aso-notification-2026.html'] = dict(
               '<a href="/exam-notifications.html">all exam notifications</a>.</p>')
 
 
+# ---------------------------------------------------------------- RPF SI and Constable (Anil, 15 Nov 2026: "RPF SI + Constable...add the pyqs and
+# required details like other exams"). No 2026 notification exists: these are status pages (the next cycle moves to SSC) with the facts of the last
+# RRB recruitment (CEN RPF 01/2024 and 02/2024). Sources checked 15 Nov 2026: RRB notices (RRB Bhopal SI notice and CBT cut-off PDFs, RRB Chandigarh
+# CEN RPF 02/2024 notices page), the G.S.R. 766(E) text as reproduced by StaffNews, and exam-news sites for dates RRB pages no longer list.
+RPF_SI_NOTICE = 'https://rrbbhopal.gov.in/notice%20Sub%20Inspector%20RPF%2001-2024_English.pdf'
+RPF_SI_CUTOFF = 'https://rrbbhopal.gov.in/2025/RPF_01-2024_SI_CBT_CUT-OFF.pdf'
+RPF_PC_PAGE = 'https://rrbcdg.gov.in/2024-02-rpf.php'
+RPF_RULES = 'https://www.staffnews.in/2025/10/railway-protection-force-amendment-rules-2025.html'
+RPF_ASOF = '15 November 2026'
+_RPF_PATTERN = ('Exam pattern of the last RPF CBT (RRB)', 'table+', (['Section', 'Questions', 'Marks'], [
+    ('General Awareness', '50', '50'), ('Arithmetic', '35', '35'), ('General Intelligence & Reasoning', '35', '35'), ('Total (90 minutes)', '120', '120')]))
+_RPF_SSC = ('What changes with the SSC', 'list', [
+    'The Railway Protection Force (Amendment) Rules, 2025 (G.S.R. 766(E), 17 October 2025) say direct recruitment of Sub-Inspectors and Constables (Executive) will follow the Staff Selection Commission\'s recruitment procedure for the Central Armed Police Forces (CAPFs). Earlier the Railway Recruitment Boards (RRBs) held it.',
+    'Constable (Executive): above 18 and below 23 years on the date of the notification, and a pass in the High School (10th) examination or equivalent (new rule 48.3).',
+    'Physical standards for the executive cadre: height 170 cm, chest 80 cm unexpanded and 85 cm expanded; women and reserved categories as per the CAPF standards. The medical examination is done by CAPF medical officers or government doctors.',
+    'The SSC has not yet issued an RPF notification or announced the new exam pattern (as of 15 November 2026). Until it does, the RRB papers below are the best guide to the level and the topics.'])
+NEW['rpf-si-notification-2026.html'] = dict(
+    exam='rpf-si', board='RPF', site='ssc.gov.in and rpf.indianrailways.gov.in', crumb='RPF SI 2026: notification status', faq_asof=RPF_ASOF,
+    title='RPF SI Notification 2026 – Status (SSC to Conduct), Last Exam CEN RPF 01/2024, Age, Pattern & Previous Papers | Learn with Anil',
+    desc='RPF Sub-Inspector recruitment 2026: no notification yet; from the next cycle the SSC conducts it (RPF Amendment Rules, 17 October 2025). Facts of the '
+         'last exam (CEN RPF 01/2024: 452 posts, CBT 2–13 December 2024, final result 26 August 2025), eligibility, the 120-question pattern, and shift-wise previous papers with answers.',
+    h1='RPF SI 2026: next recruitment through the SSC',
+    lede='There is no RPF Sub-Inspector notification for 2026 yet. From the next cycle the Staff Selection Commission (SSC), not the Railway Recruitment Boards, '
+         'conducts the recruitment, under the Railway Protection Force (Amendment) Rules, 2025. Below: the status, what changes, the facts of the last RRB exam '
+         '(CEN RPF 01/2024), its pattern, and its question papers with answers.',
+    hi='आरपीएफ एसआई भर्ती 2026: अगली भर्ती कर्मचारी चयन आयोग (SSC) करेगा; 15 नवंबर 2026 तक अधिसूचना जारी नहीं हुई। पिछली परीक्षा (CEN RPF 01/2024) के शिफ्ट-वार प्रश्न पत्र उत्तर सहित।',
+    pdf=RPF_SI_NOTICE, pdfname='RRB notice CEN RPF 01/2024 (Sub-Inspector, Executive)',
+    more_src=[(RPF_SI_CUTOFF, 'RRB, CBT cut-off for SI (3 March 2025)'), (RPF_RULES, 'Railway Protection Force (Amendment) Rules, 2025, G.S.R. 766(E) (text as reproduced by StaffNews)')],
+    related=['rpf-constable-notification-2026.html'],
+    sections=[
+      ('Status (as of 15 November 2026)', 'table', [
+        ('RPF SI 2026 notification', 'Not issued yet'), ('Who will conduct it', 'Staff Selection Commission (SSC), from the next cycle'),
+        ('Rule change', 'RPF (Amendment) Rules, 2025, G.S.R. 766(E) of 17 October 2025'),
+        ('Where to watch', 'ssc.gov.in and rpf.indianrailways.gov.in'), ('Last RPF SI exam', 'CEN RPF 01/2024 (RRB), CBT in December 2024')]),
+      ('', 'note', 'Vacancy numbers and dates for RPF 2026 seen on some websites are not official. Wait for the SSC notice.'),
+      _RPF_SSC,
+      ('The last RPF SI recruitment: CEN RPF 01/2024 (RRB)', 'table', [
+        ('Notification', '14 April 2024; online applications 15 April to 14 May 2024'),
+        ('Posts', '452 Sub-Inspectors (Executive) in the RPF and RPSF'), ('Pay', 'Level 6 of the 7th CPC, initial pay ₹35,400'),
+        ('Age', '20 to 28 years on 1 July 2024, with the usual relaxations'), ('Qualification', 'A bachelor\'s degree from a recognised university'),
+        ('Computer-based test', '2, 3, 9, 12 and 13 December 2024, three shifts a day'),
+        ('Answer key and question papers', '17 December 2024; objections until 22 December 2024'),
+        ('CBT result', '3 March 2025 (normalised cut-off marks out of 100)'), ('PET, PMT and document verification', '22 June to 2 July 2025'),
+        ('Final result', '26 August 2025')]),
+      _RPF_PATTERN,
+      ('', 'note', 'One mark a question; one-third of a mark is cut for a wrong answer. The SI paper is set at graduation level. Candidates who qualify in the CBT take the Physical Efficiency Test (PET) and Physical Measurement Test (PMT), and the merit list follows the CBT marks.'),
+    ],
+    faqs=[
+      ('Is the RPF SI 2026 notification out?', 'No, not as of 15 November 2026. From the next cycle the SSC conducts RPF recruitment; neither the SSC nor the RPF has issued a notice yet.'),
+      ('Who will conduct the next RPF SI exam?', 'The Staff Selection Commission (SSC). The RPF (Amendment) Rules, 2025, notified on 17 October 2025, say selection of Sub-Inspectors and Constables (Executive) follows the SSC\'s procedure for the Central Armed Police Forces.'),
+      ('Will the RPF SI exam pattern change?', 'Probably, because the SSC will follow its CAPF procedure, but the SSC has not published the new scheme yet. The last RPF SI exam (RRB) had 120 questions in 90 minutes: General Awareness 50, Arithmetic 35 and Reasoning 35.'),
+      ('How many posts were there in the last RPF SI recruitment?', '452 Sub-Inspector (Executive) posts under CEN RPF 01/2024. The final result came on 26 August 2025.'),
+      ('What was the RPF SI age limit?', '20 to 28 years on 1 July 2024 under CEN RPF 01/2024, with the usual relaxations for reserved categories. The next notice will give the new dates.'),
+      ('What is the RPF SI salary?', 'Pay Level 6 of the 7th Pay Commission, initial basic pay ₹35,400 a month, plus allowances.'),
+      ('Is there negative marking in RPF SI?', 'Yes. In the RRB CBT one-third of a mark was cut for each wrong answer.'),
+      ('Where can I practise RPF SI previous papers?', 'On this site: whole shift papers of the RPF SI CBT of December 2024 in English and Hindi, with RRB\'s answer key, explanations and a 90-minute timer.'),
+    ])
+NEW['rpf-constable-notification-2026.html'] = dict(
+    exam='rpf-constable', board='RPF', site='ssc.gov.in and rpf.indianrailways.gov.in', crumb='RPF Constable 2026: notification status', faq_asof=RPF_ASOF,
+    title='RPF Constable Notification 2026 – Status (SSC to Conduct), New Age Limit 18–23, Last Exam CEN RPF 02/2024 & Previous Papers | Learn with Anil',
+    desc='RPF Constable recruitment 2026: no notification yet; from the next cycle the SSC conducts it, and the new rules set the age at 18–23 years. Facts of the '
+         'last exam (CEN RPF 02/2024: 4,208 posts, CBT 2–18 March 2025, 42,143 qualified for PET), the 120-question pattern, and shift-wise previous papers with answers.',
+    h1='RPF Constable 2026: next recruitment through the SSC',
+    lede='There is no RPF Constable notification for 2026 yet. From the next cycle the Staff Selection Commission (SSC), not the Railway Recruitment Boards, conducts '
+         'the recruitment, and the Railway Protection Force (Amendment) Rules, 2025 set a new age limit of 18 to 23 years. Below: the status, what changes, the facts of '
+         'the last RRB exam (CEN RPF 02/2024), its pattern, and its question papers with answers.',
+    hi='आरपीएफ कांस्टेबल भर्ती 2026: अगली भर्ती कर्मचारी चयन आयोग (SSC) करेगा; नई आयु सीमा 18 से 23 वर्ष; 15 नवंबर 2026 तक अधिसूचना जारी नहीं हुई। पिछली परीक्षा (CEN RPF 02/2024) के शिफ्ट-वार प्रश्न पत्र उत्तर सहित।',
+    pdf=RPF_PC_PAGE, pdfname='RRB Chandigarh, all notices of CEN RPF 02/2024 (Constable)',
+    more_src=[(RPF_RULES, 'Railway Protection Force (Amendment) Rules, 2025, G.S.R. 766(E) (text as reproduced by StaffNews)')],
+    related=['rpf-si-notification-2026.html'],
+    sections=[
+      ('Status (as of 15 November 2026)', 'table', [
+        ('RPF Constable 2026 notification', 'Not issued yet'), ('Who will conduct it', 'Staff Selection Commission (SSC), from the next cycle'),
+        ('New age limit', 'Above 18 and below 23 years on the date of the notification (RPF Amendment Rules, 2025)'),
+        ('Where to watch', 'ssc.gov.in and rpf.indianrailways.gov.in'), ('Last RPF Constable exam', 'CEN RPF 02/2024 (RRB), CBT in March 2025')]),
+      ('', 'note', 'Vacancy numbers and dates for RPF 2026 seen on some websites are not official. Wait for the SSC notice.'),
+      _RPF_SSC,
+      ('The last RPF Constable recruitment: CEN RPF 02/2024 (RRB)', 'table', [
+        ('Notification', '14 April 2024; online applications 15 April to 14 May 2024'),
+        ('Posts', '4,208 Constables (Executive) in the RPF and RPSF'), ('Pay', 'Level 3 of the 7th CPC, initial pay ₹21,700'),
+        ('Age', '18 to 28 years on 1 July 2024 (the new rules lower it to 18–23 for the next cycle)'), ('Qualification', '10th (matriculation) pass or equivalent'),
+        ('Computer-based test', '2 to 18 March 2025, three shifts a day'),
+        ('Question papers, responses and answer key', '24 to 29 March 2025 (objections in the same window)'),
+        ('CBT result', '19 June 2025: 42,143 candidates shortlisted for PET, PMT and document verification'),
+        ('PET, PMT and document verification', '13 November to 6 December 2025'),
+        ('Final panel', '16 February 2026; zone allotment and medical examination notice 23 February 2026')]),
+      _RPF_PATTERN,
+      ('', 'note', 'One mark a question; one-third of a mark is cut for a wrong answer. The Constable paper is set at 10th-class level. Candidates who qualify in the CBT take the Physical Efficiency Test (PET) and Physical Measurement Test (PMT), and the merit list follows the CBT marks.'),
+    ],
+    faqs=[
+      ('Is the RPF Constable 2026 notification out?', 'No, not as of 15 November 2026. From the next cycle the SSC conducts RPF recruitment; neither the SSC nor the RPF has issued a notice yet. Vacancy figures circulating online are unofficial.'),
+      ('Who will conduct the next RPF Constable exam?', 'The Staff Selection Commission (SSC). The RPF (Amendment) Rules, 2025, notified on 17 October 2025, say selection of Constables and Sub-Inspectors (Executive) follows the SSC\'s procedure for the Central Armed Police Forces.'),
+      ('What is the new RPF Constable age limit?', 'Above 18 and below 23 years on the date of the notification, under the RPF (Amendment) Rules, 2025, with relaxations as per government rules. In the last recruitment (CEN RPF 02/2024) it was 18 to 28 years on 1 July 2024.'),
+      ('What is the qualification for RPF Constable?', 'A pass in the 10th (High School) examination or equivalent from a recognised board.'),
+      ('How many posts were there in the last RPF Constable recruitment?', '4,208 Constable (Executive) posts under CEN RPF 02/2024. The CBT result of 19 June 2025 shortlisted 42,143 candidates for the physical tests, and the final panel came on 16 February 2026.'),
+      ('What is the RPF Constable salary?', 'Pay Level 3 of the 7th Pay Commission, initial basic pay ₹21,700 a month, plus allowances.'),
+      ('Is there negative marking in RPF Constable?', 'Yes. In the RRB CBT one-third of a mark was cut for each wrong answer.'),
+      ('Where can I practise RPF Constable previous papers?', 'On this site: whole shift papers of the RPF Constable CBT of March 2025 in English and Hindi, with RRB\'s answer key, explanations and a 90-minute timer.'),
+    ])
+
+
 def apply(NOTIFS):
     for rel, f in FAQS.items():
         if rel in NOTIFS: NOTIFS[rel]['faqs'] = f; NOTIFS[rel]['faq_asof'] = ASOF_PAGE.get(rel, ASOF)

@@ -28,7 +28,7 @@ DEFAULT = ['ts-police-si', 'ts-police-constable']
 esc = B.esc
 LOGO = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(ROOT, 'src', 'static', 'icon-192.png'), 'rb').read()).decode()
 BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC': 'ANDHRA PRADESH PUBLIC SERVICE COMMISSION',
-              'SLPRB': 'STATE LEVEL POLICE RECRUITMENT BOARD, ANDHRA PRADESH'}
+              'SLPRB': 'STATE LEVEL POLICE RECRUITMENT BOARD, ANDHRA PRADESH', 'RRB': 'RAILWAY RECRUITMENT BOARDS · RAILWAY PROTECTION FORCE'}
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
 SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
           'appsc-eo': {'e2025a': 'A', 'e2025b': 'A'}}
@@ -39,6 +39,7 @@ MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-co
 def time_marks(conf, p):
     """(time allowed, maximum marks) as printed on the board's booklet."""
     if conf['board'] == 'TSLPRB': return '3 Hours', 200
+    if conf['board'] == 'RRB': return '90 Minutes', 120   # RPF SI / Constable CBT: 120 questions, 1 mark each
     if conf['board'] == 'SLPRB': return '3 Hours', (100 if conf['id'] == 'ap-police-si' else 200)   # AP SI prelims: two papers of 100; AP PC prelims: 200
     if conf['id'] == 'appsc-group-1': return '120 Minutes', 120   # each Prelims paper: 120 questions, 120 marks
     if conf['id'] == 'appsc-group-2': return '150 Minutes', 150   # Screening and each Mains paper: 150 questions, 150 marks
@@ -137,7 +138,7 @@ def paper_doc(conf, p, qs, mock=None):
             f'<span>{"Maximum Marks: " + str(marks) if marks else ""}</span></div>'
             + (f'<div class="note">New questions written by Learn with Anil for the {esc(mock)} test series in the {esc(conf["board"])} pattern (not previous-year questions), '
                'with an explanation for every answer. The answer key and answers with explanations are at the end of this booklet.</div>' if mock else
-               f'<div class="note">Questions as printed in {esc(conf["board"])}\'s official booklet (English'
+               f'<div class="note">Questions as printed in {esc(conf["board"])}\'s official {"question paper of this shift" if conf["board"] == "RRB" else "booklet"} (English'
                + (f' &amp; <span lang="{l2["code"]}">{esc(l2["label"])}</span>' if l2name and l2.get('label') else (f' &amp; {esc(l2name)}' if l2name else ''))
                + f'); answers from {esc(key)}. Questions deleted by {esc(conf["board"])} are left out. '
                + (f'{esc(conf["board"])}\'s key for this paper printed only the correct answer and the original options were never published, '

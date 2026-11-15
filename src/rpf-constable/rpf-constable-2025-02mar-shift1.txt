@@ -1,0 +1,1153 @@
+# RPF Constable (Executive) CBT, CEN RPF 02/2024, held 2 March 2025, Shift 1 (9:00 AM). 120 questions, 120 marks, 90 minutes, 1/3 negative.
+# Source: RRB's question paper as printed from the RRB portal (candidate response sheet, via AglaSem); answers are the options RRB marked as correct on that sheet (answer-key stage, 24 Mar 2025). The Hindi text is from a second candidate's Hindi sheet of the same shift (read from the page images), with the options put in the English order. Explanations by Learn with Anil.
+
+
+Q 1 | qa | Simple & Compound Interest
+Two banks, A and B, offered loans at 3.5% and 6% per annum, respectively. David borrowed an amount of ₹360000 from each bank. Find the positive difference between the amounts of simple interest paid to the two banks by David after 3 years.
+(1) 28500
+(2) 28000
+(3) 27000
+(4) 26500
+= 3
+~ SI paid to Bank A = 360000 × 3.5 × 3/100 = ₹37,800 and to Bank B = 360000 × 6 × 3/100 = ₹64,800. Difference = 64,800 − 37,800 = ₹27,000. Shortcut: 360000 × (6 − 3.5) × 3/100 = 27000.
+
+Q 2 | qa | Time, Work, Speed & Distance
+A 120 m long train crosses a man walking at a speed of 8.5 km/h in the opposite direction in 12 seconds. What is the speed (in km/h) of the train?
+(1) 23.3
+(2) 27.5
+(3) 29.1
+(4) 31.5
+= 2
+~ As the man walks in the opposite direction, relative speed = train speed + 8.5 km/h. Relative speed = 120/12 = 10 m/s = 10 × 18/5 = 36 km/h. Speed of the train = 36 − 8.5 = 27.5 km/h.
+
+Q 3 | qa | Time, Work, Speed & Distance
+Two pipes A and C can fill a tank in 10 hours and 15 hours respectively. If A is open all the time and C is open for 30 minutes, then find the time needed for the tank to be filled.
+(1) 9 1/3 hours
+(2) 8 4/3 hours
+(3) 9 2/3 hours
+(4) 8 2/3 hours
+= 3
+~ Together A and C fill 1/10 + 1/15 = 1/6 of the tank per hour, so in the first 30 minutes they fill ½ × 1/6 = 1/12. The remaining 11/12 is filled by A alone in 11/12 × 10 = 55/6 = 9 1/6 hours. Total time = ½ + 9 1/6 = 9 2/3 hours.
+
+Q 4 | qa | Percentage & Profit-Loss
+A number when increased by 50 %, gives 2490. The number is:
+(1) 4980
+(2) 830
+(3) 3320
+(4) 1660
+= 4
+~ Let the number be N. Then 1.5N = 2490, so N = 2490 ÷ 1.5 = 1660. Check: 1660 + 50% of 1660 = 1660 + 830 = 2490.
+
+Q 5 | qa | Number System & Simplification
+Find the value of (1/7)⁻⁴ + (1/9)⁻⁴ + (1/5)⁻⁴.
+(1) 9584
+(2) 9578
+(3) 9587
+(4) 9596
+= 3
+~ Since (1/a)⁻ⁿ = aⁿ, the expression = 7⁴ + 9⁴ + 5⁴ = 2401 + 6561 + 625 = 9587.
+
+Q 6 | qa | Ratio, Average & Mixtures
+Pinky bought 25 books at the rate of ₹14 each, 40 pens at the rate of ₹7 each and 15 pencils at the rate of ₹6 each. Calculate the average price (in ₹) of all the stationery goods.
+(1) 6
+(2) 7
+(3) 8
+(4) 9
+= 4
+~ Total cost = 25 × 14 + 40 × 7 + 15 × 6 = 350 + 280 + 90 = ₹720. Total items = 25 + 40 + 15 = 80. Average price = 720 ÷ 80 = ₹9.
+
+Q 7 | qa | Number System & Simplification
+What is the smallest number which when divided by 36, 45 and 54, gives a remainder of 3 each time?
+(1) 537
+(2) 529
+(3) 547
+(4) 543
+= 4
+~ The required number = LCM(36, 45, 54) + 3. Since 36 = 2² × 3², 45 = 3² × 5 and 54 = 2 × 3³, LCM = 2² × 3³ × 5 = 540. Number = 540 + 3 = 543.
+
+Q 8 | qa | Number System & Simplification
+Evaluate: 41 − [36 − {48 ÷ 2 − (4 − 8 ÷ 2) ÷ 3}]
+(1) 28
+(2) 31
+(3) 29
+(4) 30
+= 3
+~ Innermost bracket: 4 − 8 ÷ 2 = 4 − 4 = 0, and 0 ÷ 3 = 0. Curly bracket: 48 ÷ 2 − 0 = 24. Square bracket: 36 − 24 = 12. Value = 41 − 12 = 29.
+
+Q 9 | qa | Time, Work, Speed & Distance
+A pipe can fill a tank in 6 hours. Another pipe can empty the filled tank in 30 hours. If both the pipes are opened simultaneously, then the time (in hours) in which the tank will be two-third filled, is:
+(1) 15
+(2) 10
+(3) 20
+(4) 5
+= 4
+~ Net filling per hour = 1/6 − 1/30 = (5 − 1)/30 = 2/15 of the tank. Time to fill two-thirds = (2/3) ÷ (2/15) = 5 hours.
+
+Q 10 | qa | Percentage & Profit-Loss
+A wholesaler purchases goods worth ₹25,000. The manufacturer offers a trade discount of 10% and an additional scheme discount of 5%. Calculate the net price of the goods after both discounts.
+(1) ₹21,375
+(2) ₹22,375
+(3) ₹21,275
+(4) ₹21,365
+= 1
+~ Price after the 10% trade discount = 25,000 × 0.90 = ₹22,500. After the further 5% scheme discount = 22,500 × 0.95 = ₹21,375, which is the net price.
+
+Q 11 | qa | Number System & Simplification
+Which of the following is the smallest fraction?
+(1) 17/25
+(2) 31/45
+(3) 24/35
+(4) 11/16
+= 1
+~ Converting to decimals: 17/25 = 0.68, 31/45 ≈ 0.689, 24/35 ≈ 0.686 and 11/16 = 0.6875. The smallest is 0.68, i.e. 17/25.
+
+Q 12 | qa | Percentage & Profit-Loss
+Ravi bought a camera and paid 18% less than its original price. He sold it at 30% profit on the price he had paid. How much was the profit percentage earned by Ravi on the original price?
+(1) 6.2%
+(2) 5.9%
+(3) 5.7%
+(4) 6.6%
+= 4
+~ Let the original price be ₹100. Ravi paid 18% less, i.e. ₹82, and sold at 30% profit on that: 82 × 1.3 = ₹106.6. Profit on the original price = 106.6 − 100 = 6.6, i.e. 6.6%.
+
+Q 13 | qa | Percentage & Profit-Loss
+The price of a TV was ₹55,000 last year, and this year it is ₹42,500. Find the percentage decrease in price. (Rounded up to two decimal places)
+(1) 22.73%
+(2) 25.42%
+(3) 15.50%
+(4) 72.23%
+= 1
+~ Decrease = 55,000 − 42,500 = ₹12,500. Percentage decrease = 12,500/55,000 × 100 = 22.727…% ≈ 22.73%.
+
+Q 14 | qa | Ratio, Average & Mixtures
+The sum of five numbers is 655. The average of the first two numbers is 78 and the third number is 104. Find the average of the remaining two numbers?
+(1) 198.5
+(2) 182
+(3) 183
+(4) 197.5
+= 4
+~ Sum of the first two numbers = 2 × 78 = 156. Sum of the remaining two = 655 − 156 − 104 = 395. Their average = 395 ÷ 2 = 197.5.
+
+Q 15 | qa | Mensuration & Geometry
+The perimeter of an equilateral triangle ABC is 10.2 cm. What is the area of the triangle ?
+(1) 1.89√3 cm²
+(2) 2.89√3 cm²
+(3) 28.9√3 cm²
+(4) 18.9√3 cm²
+= 2
+~ Side = 10.2 ÷ 3 = 3.4 cm. Area of an equilateral triangle = (√3/4) × side² = (√3/4) × 11.56 = 2.89√3 cm².
+
+Q 16 | qa | Percentage & Profit-Loss
+Prem sells an article to Ria at a profit of 20%. Ria sells the article back to Prem at a loss of 20%. In this transaction:
+(1) Ria makes a profit of 24%
+(2) Ria incurs a loss of 12%
+(3) Prem makes a profit of 25%
+(4) Prem makes a profit of 12%
+= 3
+~ Let Prem's cost price be ₹100. He sells to Ria at ₹120, and Ria sells it back at a 20% loss, i.e. at 120 × 0.8 = ₹96. Prem gets the article back and gains ₹120 − ₹96 = ₹24, which is 24/96 × 100 = 25% on the ₹96 he pays to buy it back. Measured on his original cost of ₹100 the same gain would be 24%, which is not offered for Prem, so the keyed 25% is the gain on the buy-back price (₹96). Ria buys at ₹120 and sells at ₹96, a loss of 20%, so the options about Ria (24% profit, 12% loss) are wrong.
+
+Q 17 | qa | Number System & Simplification
+The difference of two numbers is 1/5 of their sum, and their sum is 45. Find the LCM.
+(1) 27
+(2) 54
+(3) 45
+(4) 36
+= 2
+~ Difference = 1/5 × 45 = 9. The numbers are (45 + 9)/2 = 27 and (45 − 9)/2 = 18. LCM(27, 18) = 2 × 3³ = 54.
+
+Q 18 | qa | Percentage & Profit-Loss
+If two successive discounts of 8% and 9% are given, find the total discount percentage.
+(1) 15.28%
+(2) 18.28%
+(3) 16.28%
+(4) 20.28%
+= 3
+~ For successive discounts of a% and b%, the single equivalent discount = a + b − ab/100 = 8 + 9 − (8 × 9)/100 = 17 − 0.72 = 16.28%.
+
+Q 19 | qa | Ratio, Average & Mixtures
+An amount of ₹165 is divided among three persons in the ratio of 5 : 7 : 3. The difference between the largest and the smallest shares (in ₹) in the distribution is:
+(1) 44
+(2) 130
+(3) 11
+(4) 139
+= 1
+~ Total parts = 5 + 7 + 3 = 15, so one part = 165 ÷ 15 = ₹11. Largest share = 7 × 11 = ₹77 and smallest share = 3 × 11 = ₹33. Difference = 77 − 33 = ₹44.
+
+Q 20 | qa | Ratio, Average & Mixtures
+There are 4182 students in a school and the ratio of boys to girls in the school is 23 : 28, then find the number of boys in school.
+(1) 1867
+(2) 1886
+(3) 1890
+(4) 1903
+= 2
+~ Total ratio parts = 23 + 28 = 51, so one part = 4182 ÷ 51 = 82. Number of boys = 23 × 82 = 1886.
+
+Q 21 | qa | Simple & Compound Interest
+Calculate the compound interest on ₹72,000 at the rate of 9% per annum for 18 months when interest is compounded half yearly (rounded off up to the nearest ₹).
+(1) ₹10,164
+(2) ₹10,557
+(3) ₹10,475
+(4) ₹10,361
+= 1
+~ Compounded half-yearly, the rate is 9/2 = 4.5% per half-year and 18 months = 3 half-years. Amount = 72,000 × (1.045)³ = 72,000 × 1.141166… ≈ ₹82,164. CI = 82,164 − 72,000 = ₹10,164.
+
+Q 22 | qa | Number System & Simplification
+Which of the following statements is NOT correct?
+(1) A number is divisible by 11 if the sum of its digits is divisible by 11.
+(2) A number is divisible by 3 or 9 if the sum of digits is divisible by 3 or 9, respectively.
+(3) A number is divisible by 6 if the sum of its digits is divisible by 3 and the digit at unit place is an even digit.
+(4) A number is divisible by 5 if the digit at unit place is 5 or 0.
+= 1
+~ The statement about 11 is wrong: a number is divisible by 11 when the difference between the sums of its digits in odd and even places is 0 or a multiple of 11, not when its digit sum is divisible by 11. For example, 29 has digit sum 11 but is not divisible by 11. The rules given for 3 or 9, 6 and 5 are all correct.
+
+Q 23 | qa | Ratio, Average & Mixtures
+The sum of five numbers is 655. The average of the first two numbers is 76 and the third number is 110. Find the average of the remaining two numbers?
+(1) 197.5
+(2) 186
+(3) 196.5
+(4) 187
+= 3
+~ Sum of the first two numbers = 2 × 76 = 152. Sum of the remaining two = 655 − 152 − 110 = 393. Their average = 393 ÷ 2 = 196.5.
+
+Q 24 | qa | Mensuration & Geometry
+The volume of a cube is 6,58,503 cm³. What is twice the length (in cm) of its side?
+(1) 174
+(2) 84
+(3) 86
+(4) 166
+= 1
+~ Side = ∛658503. The volume ends in 3, so the side ends in 7, and since 80³ = 512000 and 90³ = 729000, the side is 87 cm (check: 87³ = 7569 × 87 = 658503). Twice the side = 2 × 87 = 174 cm.
+
+Q 25 | qa | Time, Work, Speed & Distance
+In a race, an athlete covers a distance of 366 m in 61 sec in the first lap. He covers the second lap of the same length in 183 sec. What is the average speed (in m/sec) of the athlete?
+(1) 11
+(2) 10
+(3) 3
+(4) 8
+= 3
+~ Total distance = 366 + 366 = 732 m and total time = 61 + 183 = 244 s. Average speed = 732 ÷ 244 = 3 m/s. Average speed is total distance ÷ total time, not the mean of the two lap speeds (6 m/s and 2 m/s).
+
+Q 26 | qa | Ratio, Average & Mixtures
+The average of first 111 even numbers is
+(1) 111.5
+(2) 112.5
+(3) 112
+(4) 113
+= 3
+~ The first 111 even numbers are 2, 4, …, 222. Their sum = n(n + 1) = 111 × 112, so their average = n + 1 = 112. Equivalently, for evenly spaced numbers the average = (first + last)/2 = (2 + 222)/2 = 112.
+
+Q 27 | qa | Time, Work, Speed & Distance
+A bus travelling at 55 km/h completes a journey in 8 hours. At what speed will it have to cover the same distance in 20 hours?
+(1) 15 km/h
+(2) 22 km/h
+(3) 32 km/h
+(4) 30 km/h
+= 2
+~ Distance = 55 × 8 = 440 km. Required speed = 440 ÷ 20 = 22 km/h.
+
+Q 28 | qa | Ratio, Average & Mixtures
+The sum of 10 numbers is 276. Find their average.
+(1) 27.6
+(2) 28.6
+(3) 26.6
+(4) 25.6
+= 1
+~ Average = sum ÷ number of values = 276 ÷ 10 = 27.6.
+
+Q 29 | qa | Number System & Simplification
+The value of
+6³ − 5² + (24/3)² − 2 + 6 × 1 = ______
+(1) 265
+(2) 259
+(3) 261
+(4) 264
+= 2
+~ 6³ = 216, 5² = 25 and (24/3)² = 8² = 64. So the value = 216 − 25 + 64 − 2 + 6 = 259.
+
+Q 30 | qa | Time, Work, Speed & Distance
+A 250 m long train overtakes a man moving at a speed of 7 km/h (in same direction) in 36 seconds. How much time (in seconds) will it take this train to completely cross another 415 m long train, moving in the opposite direction at a speed of 82 km/h?
+(1) 17
+(2) 30
+(3) 21
+(4) 31
+= 3
+~ Relative speed of the train with respect to the man = 250/36 m/s = 250/36 × 18/5 = 25 km/h, so the train's speed = 25 + 7 = 32 km/h. For the train coming from the opposite direction, relative speed = 32 + 82 = 114 km/h = 114 × 5/18 = 95/3 m/s. Time = (250 + 415) ÷ (95/3) = 665 × 3/95 = 21 seconds.
+
+Q 31 | qa | Simple & Compound Interest
+What is the rate percentage per annum if ₹4,800 amounts to ₹5,043 in 2 years when interest is compounded yearly?
+(1) 5%
+(2) 2.5%
+(3) 3%
+(4) 2.0%
+= 2
+~ 5043/4800 = 1.050625 = (1.025)², so (1 + r/100)² = (1.025)² and r = 2.5% per annum. Check: 4800 × 1.025 = 4920 and 4920 × 1.025 = 5043.
+
+Q 32 | qa | Number System & Simplification
+Which of the following numbers is the greatest of all?
+(1) 0.0̅7̅
+(2) 0.07̅
+(3) 0.7
+(4) 0.7̅
+= 4
+~ Writing each in expanded form: 0.0̅7̅ = 0.070707…, 0.07̅ = 0.07777…, 0.7 = 0.7000… and 0.7̅ = 0.7777…. Comparing place by place, 0.7̅ (= 7/9) is the greatest.
+
+Q 33 | qa | Ratio, Average & Mixtures
+The monthly incomes of two friends Amit and Gopal, are in the ratio 5 : 7 respectively and each of them saves ₹72000 every month. If the ratio of their monthly expenditure is 2 : 3, find the monthly income of Amit(in ₹).
+(1) 360000
+(2) 359000
+(3) 504000
+(4) 361000
+= 1
+~ Let the incomes be 5x and 7x. Expenditures are 5x − 72000 and 7x − 72000, so 3(5x − 72000) = 2(7x − 72000), i.e. 15x − 216000 = 14x − 144000, giving x = 72000. Amit's monthly income = 5 × 72000 = ₹3,60,000.
+
+Q 34 | qa | Time, Work, Speed & Distance
+Abhay and Bharat can complete a certain piece of work in 9 and 11 days, respectively, They started to work together, and after 3 days, Bharat left. In how many days will Abhay complete the remaining work?
+(1) 117/33
+(2) 117/35
+(3) 116/34
+(4) 115/33
+= 1
+~ In 3 days together they complete 3 × (1/9 + 1/11) = 3 × 20/99 = 20/33 of the work. Remaining work = 13/33, which Abhay alone finishes in 13/33 × 9 = 117/33 days (= 3 6/11 days).
+
+Q 35 | qa | Mensuration & Geometry
+A solid sphere of diameter 6 cm is melted and then cast into cylindrical wire of radius 0.3 cm. Find the length of the wire.
+(1) 50 cm
+(2) 3 m
+(3) 65 cm
+(4) 4 m
+= 4
+~ Volume of the sphere (r = 3 cm) = 4/3 × π × 3³ = 36π cm³. Volume of the wire = π × 0.3² × L = 0.09πL. Equating, L = 36/0.09 = 400 cm = 4 m.
+
+Q 36 | rea | Series
+What should come in place of '?' in the given series based on the English alphabetical order?
+PZN, MXJ, JVF, GTB, ?
+(1) DQX
+(2) DRD
+(3) DRX
+(4) DRC
+= 3
+~ Each position moves back by a fixed step. First letters: P(16), M(13), J(10), G(7) go back 3 each time, so the next is D(4). Second letters: Z, X, V, T go back 2, so the next is R. Third letters: N, J, F, B go back 4, and 4 places before B (counting back past A to Z) is X. The missing term is DRX.
+
+Q 37 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. You have to decide which conclusion/s logically follow/s from the given statements.
+Statements:
+All shirts are jeans.
+All jeans are ties.
+No tie is a watch.
+Conclusions:
+I: All shirts are ties.
+II: No jeans is a watch.
+(1) Neither conclusion I nor II follows.
+(2) Both conclusions I and II follow.
+(3) Only conclusion I follows.
+(4) Only conclusion II follows.
+= 2
+~ All shirts are jeans and all jeans are ties, so every shirt is a tie; conclusion I follows. All jeans are ties and no tie is a watch, so no jeans can be a watch; conclusion II also follows. Hence both conclusions follow.
+
+Q 38 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+Some pears are candles.
+All foams are candles.
+Conclusions:
+(I): Some pears are foams.
+(II): All candles are foams.
+(1) Only conclusion (II) follows.
+(2) Both conclusions (I) and (II) follow.
+(3) Only conclusion (I) follows.
+(4) Neither conclusion (I) nor (II) follows.
+= 4
+~ Pears and foams are connected only through candles: the candles that are pears need not include any foam, so 'Some pears are foams' is not certain. 'All foams are candles' does not mean that every candle is a foam, so (II) is not certain either. Neither conclusion follows.
+
+Q 39 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group? (Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) NTP
+(2) TZU
+(3) QWS
+(4) KQM
+= 2
+~ In NTP, QWS and KQM the second letter is 6 places after the first and the third letter is 4 places before the second: N(14) → T(20) → P(16), Q(17) → W(23) → S(19), K(11) → Q(17) → M(13). In TZU, T(20) → Z(26) is +6 but Z(26) → U(21) is −5. So TZU is the odd one out.
+
+Q 40 | rea | Arrangement & Puzzles
+Seven people, A, B, C, D, E, F and G are sitting in a row, facing north. Only two people sit between D and B. Only C sits to the right of F. Only one person sits between B and F. E sits at some place to the right of A but at some place to the left of G. How many people sit between A and B?
+(1) 2
+(2) 3
+(3) 1
+(4) 4
+= 3
+~ Number the seats 1–7 from left to right. Only C is to the right of F, so F = 6 and C = 7. One person sits between B and F, so B = 4, and two people sit between D and B, so D = 1 (seat 7 is taken). A, E and G fill seats 2, 3 and 5 with E right of A and left of G, giving D A E B G F C. Only E sits between A and B, so the answer is 1.
+
+Q 41 | rea | Mathematical Operations
+What will come in the place of ‘?’ in the following equation, if ‘+’ and ‘÷’ are interchanged and ‘×’ and ‘−’ are interchanged?
+15 ÷ 27 × 14 + 7 − 10 = ?
+(1) 22
+(2) 42
+(3) 12
+(4) 32
+= 1
+~ After the swaps the expression becomes 15 + 27 − 14 ÷ 7 × 10. By BODMAS, 14 ÷ 7 = 2 and 2 × 10 = 20, so 15 + 27 − 20 = 22.
+
+Q 42 | rea | Miscellaneous Reasoning
+This question is based on the five, three-digit numbers given below.
+(Left) 325 846 483 215 468 (Right)
+(Example- 697 – First digit = 6, second digit = 9 and third digit = 7)
+NOTE - All operations to be done from left to right.
+What will be the resultant if the second digit of the highest number is added to the second digit of the lowest number?
+(1) 5
+(2) 9
+(3) 7
+(4) 3
+= 1
+~ The highest number is 846, whose second digit is 4. The lowest number is 215, whose second digit is 1. So the result is 4 + 1 = 5.
+
+Q 43 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+All waffles are corianders.
+All foams are corianders.
+Conclusions:
+(I): Some waffles are foams.
+(II): Some corianders are foams.
+(1) Neither conclusion (I) nor (II) follows.
+(2) Only conclusion (I) follows.
+(3) Both conclusions (I) and (II) follow.
+(4) Only conclusion (II) follows.
+= 4
+~ Waffles and foams are both inside corianders, but they may not overlap at all, so 'Some waffles are foams' is not certain. Since all foams are corianders, the corianders that are foams certainly exist, so 'Some corianders are foams' follows. Only conclusion (II) follows.
+
+Q 44 | rea | Analogy & Classification
+Select the pair that follows the same pattern as that followed by the two pairs given below. Both pairs follow the same pattern.
+MVR : NWS
+DWE : EXF
+(1) OLS : PMT
+(2) GTR : HLO
+(3) BSI : DGY
+(4) WCH : XDL
+= 1
+~ In both pairs each letter moves 1 place forward: M → N, V → W, R → S and D → E, W → X, E → F. OLS : PMT follows the same rule (O → P, L → M, S → T). The others break it, e.g. GTR : HLO has T → L, BSI : DGY has B → D and WCH : XDL has H → L.
+
+Q 45 | rea | Arrangement & Puzzles
+A, F, J, K, P and Q live on six different floors of the same building. The lowermost floor in the building is numbered 1, the floor above it, number 2 and so on till the topmost floor is numbered 6. K lives immediately above P. Only two people lives between F and P. F lives on an odd numbered floor below P. Q lives immediately above J. How many people live below A?
+(1) Two
+(2) One
+(3) Five
+(4) Four
+= 3
+~ F is on an odd floor below P with two people between them, so P is 3 floors above F. F = 3 would put P on 6 with no floor for K above it, so F = 1 and P = 4, and K = 5. Q immediately above J fits only on floors 2 and 3, so J = 2 and Q = 3, leaving A on floor 6. Hence five people live below A.
+
+Q 46 | rea | Coding-Decoding
+In a certain code language, ‘cakes are delicious’ is written as ‘su do ku’ and ‘I like cakes’ is coded as ‘mu su ru’. How is ‘cakes’ coded in the given language?
+(1) mu
+(2) su
+(3) ku
+(4) ru
+= 2
+~ 'cakes' is the only word common to both sentences, and 'su' is the only code common to both coded forms. So 'cakes' is coded as 'su'.
+
+Q 47 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given combination when the mirror is placed at 'MN' as shown below.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/k25s1-q47.png
+~ The mirror MN stands vertically to the right of RT3&mBe, so the image reverses the left-right order of the characters and flips each one sideways, without turning anything upside down. Figure 4 shows every character laterally inverted in the reversed order. Figure 1 turns 'm' upside down and leaves '3' unflipped, figure 2 puts 'B' and 'e' unflipped and in the wrong order, and figure 3 leaves 'R' and '&' unflipped.
+
+Q 48 | rea | Coding-Decoding
+In a certain code language, ‘KIND’ is coded as ‘2861’, ‘SAND’ is coded as ‘9658’ and ‘SICK’ is coded as ‘7932’. What is the code for ‘A’ in the given code language?
+(1) 8
+(2) 9
+(3) 6
+(4) 5
+= 4
+~ KIND (2861) and SAND (9658) share N and D, so N and D take the common digits 8 and 6. SAND and SICK (7932) share only S, so S = 9. The remaining letter of SAND, A, therefore has the remaining digit 5. (KIND and SICK share K and I, but their codes share only the digit 2; this slip in the question does not affect the code for A.)
+
+Q 49 | rea | Series
+What should come in place of '?' in the given series based on the English alphabetical order?
+MOR KMP IKN GIL ?
+(1) EGK
+(2) EHK
+(3) EGJ
+(4) EHJ
+= 3
+~ Every letter moves back 2 places from one term to the next: M, K, I, G, E; O, M, K, I, G; R, P, N, L, J. So the next term is EGJ.
+
+Q 50 | rea | Series
+What should come in place of the question mark (?) in the given series?
+150 132 112 90 66 ?
+(1) 50
+(2) 20
+(3) 30
+(4) 40
+= 4
+~ The differences are −18, −20, −22 and −24, each 2 more than the previous one, so the next difference is −26. 66 − 26 = 40.
+
+Q 51 | rea | Series
+What should come in place of the question mark (?) in the given series?
+47 56 74 101 137 ? 236
+(1) 184
+(2) 182
+(3) 180
+(4) 186
+= 2
+~ The differences are 9, 18, 27 and 36, the multiples of 9, so the next differences are 45 and 54. 137 + 45 = 182, and 182 + 54 = 236 checks with the last term.
+
+Q 52 | rea | Analogy & Classification
+In the following number-pairs, the second number is obtained by applying certain mathematical operations to the first number. Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding/subtracting/multiplying to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+11 - 121
+1 - 1
+(1) 9 - 81
+(2) 4 - 64
+(3) 2 - 8
+(4) 14 - 169
+= 1
+~ In both given pairs the second number is the square of the first: 11² = 121 and 1² = 1. Likewise 9² = 81. The pairs 4 - 64 and 2 - 8 are cubes (4³, 2³), and 14² is 196, not 169.
+
+Q 53 | rea | Arrangement & Puzzles
+In a row of students in annual school parade, Adarsh is standing 8th from the right end and 15th from the left end. How many students are there in the parade line?
+(1) 21
+(2) 24
+(3) 22
+(4) 23
+= 3
+~ Adarsh is counted in both positions, so the total = position from right + position from left − 1 = 8 + 15 − 1 = 22.
+
+Q 54 | rea | Series
+What should come in place of the question mark (?) in the given series?
+22 32 43 55 68 ?
+(1) 82
+(2) 102
+(3) 72
+(4) 92
+= 1
+~ The differences are 10, 11, 12 and 13, increasing by 1 each time, so the next difference is 14. 68 + 14 = 82.
+
+Q 55 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation if ‘2’ and ‘5’ are interchanged and ‘9’ and ‘3’ are interchanged?
+2 − 12 ÷ 9 × 3 + 5 = ?
+(1) −19
+(2) −29
+(3) −11
+(4) 3
+= 2
+~ Interchanging the numbers 2 ↔ 5 and 9 ↔ 3 (12 is a separate number and stays as it is) gives 5 − 12 ÷ 3 × 9 + 2. By BODMAS, 12 ÷ 3 = 4 and 4 × 9 = 36, so 5 − 36 + 2 = −29.
+
+Q 56 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation if ‘4’ and ‘5’ are interchanged?
+20 ÷ 4 + 5 × 10 = ?
+(1) 44
+(2) 100
+(3) 55
+(4) 80
+= 1
+~ Interchanging 4 and 5 gives 20 ÷ 5 + 4 × 10. By BODMAS, 20 ÷ 5 = 4 and 4 × 10 = 40, so 4 + 40 = 44.
+
+Q 57 | rea | Analogy & Classification
+QTUY is related to WZAE in a certain way based on the English alphabetical order. In the same way, WZAE is related to CFGK. To which of the given options is ILMQ related, following the same logic?
+(1) ORRW
+(2) OQRW
+(3) OSRT
+(4) ORSW
+= 4
+~ Each letter moves 6 places forward: Q → W, T → Z, U → A, Y → E (counting on past Z), and W → C, Z → F, A → G, E → K. Applying +6 to ILMQ gives I → O, L → R, M → S, Q → W, i.e. ORSW.
+
+Q 58 | rea | Arrangement & Puzzles
+Seven friends C, D, E, P, Q, R and S are sitting in a straight line facing north. Only three people sit to the right of Q. Only C sits to the right of P. Only three people sit between P and E. D sits at some place to the left of R but at some place to the right of S. How many people sit between S and R?
+(1) Two
+(2) None
+(3) Three
+(4) One
+= 3
+~ Number the seats 1–7 from left to right. Three people are to the right of Q, so Q = 4; only C is to the right of P, so P = 6 and C = 7. Three people sit between P and E, so E = 2. S, D and R fill seats 1, 3 and 5 in that order (D is right of S and left of R), giving S E D Q R P C. Three people (E, D and Q) sit between S and R.
+
+Q 59 | rea | Arrangement & Puzzles
+Seven people, E, F, G, H, X, Y and Z, are sitting in a row, facing north. Only two people sit to the left of G. Only three people sit between G and X. Only one person sits between X and Z. E sits to the immediate left of H. Y is not an immediate neighbor of X. How many people sit to the right of F?
+(1) Three
+(2) One
+(3) Two
+(4) Four
+= 2
+~ Number the seats 1–7 from left to right. Two people are left of G, so G = 3; three sit between G and X, so X = 7; one sits between X and Z, so Z = 5. The only free adjacent pair for E and H is seats 1–2, so E = 1 and H = 2. Seats 4 and 6 remain for F and Y; Y cannot be next to X, so Y = 4 and F = 6. Only X sits to the right of F, so the answer is one.
+
+Q 60 | rea | Blood Relations & Directions
+In a certain code language,
+A + B means 'A is the mother of B'
+A − B means 'A is the father of B'
+A X B means 'A is the sister of B'
+A / B means 'A is the brother of B'
+A > B means 'A is the husband of B'
+A * B means 'A is the wife of B'
+How is K related to J if K − L − J X P * T?
+(1) Son
+(2) Brother
+(3) Father's father
+(4) Father
+= 3
+~ K − L means K is the father of L, and L − J means L is the father of J. So K is the father of J's father, i.e. J's father's father (grandfather). The rest of the expression (J is P's sister, P is T's wife) does not change this.
+
+Q 61 | rea | Blood Relations & Directions
+Jeevan starts from Point A and drives 2 km towards the north. He then takes a left turn, drives 5 km, turns left and drives 3 km. He then takes a left turn and drives 6 km. He takes a final left turn, drives 1 km and stops at Point P. How far (shortest distance) and towards which direction should he drive in order to reach Point A again? (All turns are 90 degree turns only unless specified.)
+(1) 3 km to the east
+(2) 1 km to the west
+(3) 2 km to the west
+(4) 4 km to the east
+= 2
+~ Take A as (0, 0). He drives 2 km north to (0, 2), turns left and drives 5 km west to (−5, 2), turns left and drives 3 km south to (−5, −1), turns left and drives 6 km east to (1, −1), then turns left and drives 1 km north to P (1, 0). P is 1 km east of A, so he must drive 1 km to the west.
+
+Q 62 | rea | Miscellaneous Reasoning
+This question is based on the five, three-digit numbers given below.
+(Left) 482 254 371 273 463 (Right)
+(Example- 697 – First digit = 6, second digit = 9 and third digit = 7)
+(NOTE: All operations to be done from left to right.)
+What will be the resultant if the third digit of the highest number is added to the second digit of the lowest number?
+(1) 7
+(2) 6
+(3) 9
+(4) 8
+= 1
+~ The highest number is 482, whose third digit is 2. The lowest number is 254, whose second digit is 5. So the result is 2 + 5 = 7.
+
+Q 63 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown below.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/k25s1-q63.png
+~ The mirror MN is vertical and to the right of the triangle, so the image is the figure flipped left to right, with top and bottom unchanged. The black strip along the upper right edge moves to the upper left edge, and in the lower part the two horizontal strips move to the left while the black triangle moves to the right of the middle line. Figure 1 shows exactly this. Figure 4 is the original figure unchanged, figure 3 has a differently shaped black triangle in the lower right corner, and figure 2 is a different design.
+
+Q 64 | rea | Series
+Which of the following terms will replace the question mark (?) in the given series to make it logically complete?
+TBL 29, YYQ 26, DVV 23, ISA 20, ?
+(1) NVF 19
+(2) NPF 17
+(3) DVP 19
+(4) DPV 17
+= 2
+~ First letters move 5 forward: T → Y → D → I → N (counting on past Z). Second letters move 3 back: B → Y → V → S → P. Third letters move 5 forward: L → Q → V → A → F. The numbers fall by 3: 29, 26, 23, 20, 17. So the next term is NPF 17.
+
+Q 65 | rea | Blood Relations & Directions
+Suraj starts from Point A and drives 6 km towards north. He then takes a right turn, drives 5 km, turns right and drives 9 km. He then takes a right turn and drives 11 km. He takes a final right turn, drives 3 km and stops at Point P. How far (shortest distance) and towards which direction should he drive in order to reach Point A again? (All turns are 90° turns only unless specified.)
+(1) 6 km to the east
+(2) 5 km to the east
+(3) 5 km to the west
+(4) 6 km to the west
+= 1
+~ Take A as (0, 0). He drives 6 km north to (0, 6), turns right and drives 5 km east to (5, 6), turns right and drives 9 km south to (5, −3), turns right and drives 11 km west to (−6, −3), then turns right and drives 3 km north to P (−6, 0). P is 6 km west of A, so he must drive 6 km to the east.
+
+Q 66 | rea | Analogy & Classification
+Select the pair that follows the same pattern as that followed by the two set of pairs given below. Both pairs follow the same pattern.
+JIM : HKI
+DCJ : BEF
+(1) OBL : MEH
+(2) QGT : OIW
+(3) VEF : THB
+(4) OHW : MJS
+= 4
+~ In JIM : HKI the letters change by −2, +2, −4 (J → H, I → K, M → I), and DCJ : BEF follows the same rule (D → B, C → E, J → F). OHW : MJS fits: O − 2 = M, H + 2 = J, W − 4 = S. OBL : MEH (B + 3 = E) and VEF : THB (E + 3 = H) break the second step, and QGT : OIW (T + 3 = W) breaks the third.
+
+Q 67 | rea | Coding-Decoding
+In a certain code language, ‘CAGE’ is coded as ‘4982’, ‘GAIN’ is coded as ‘7418’ and ‘NILE’ is coded as ‘3179’. What is the code for ‘L’ in the given code language?
+(1) 1
+(2) 9
+(3) 7
+(4) 3
+= 4
+~ CAGE (4982) and NILE (3179) share only E, and their only common digit is 9, so E = 9. GAIN (7418) and NILE share I and N, whose codes are the common digits 7 and 1. The remaining letter of NILE, L, therefore has the remaining digit 3.
+
+Q 68 | rea | Blood Relations & Directions
+In a certain code language,
+A * B means ‘A is the brother of B’
+A ? B means ‘A is the father of B’
+A : B means ‘A is the son of B’
+A = B means ‘A is the wife of B’
+Based on the above, how is M related to E if 'M : A = R * K ? E’?
+(1) Father's sister's sister
+(2) Father's mother's son
+(3) Father's brother's son
+(4) Father's son's brother
+= 3
+~ M : A means M is the son of A, and A = R means A is the wife of R, so R is M's father. R * K means R is the brother of K, and K ? E means K is the father of E, so R is E's father's brother. M, being R's son, is E's father's brother's son.
+
+Q 69 | rea | Miscellaneous Reasoning
+Refer to the following series and answer the question (all numbers are single digit numbers only).
+(Left) 5 6 9 7 4 5 3 7 8 3 4 2 1 5 7 9 8 1 2 3 4 3 6 2 1 5 7 (Right)
+How many such odd digits are there each of which is immediately preceded by an even digit and also immediately followed by an odd digit?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 2
+~ Check every odd digit that has an even digit just before it: in 6-9-7, 4-5-3, 2-1-5 (13th digit) and 2-1-5 (25th digit) it is followed by an odd digit, while in 8-3-4, 8-1-2, 2-3-4 and 4-3-6 it is followed by an even digit. So the series as printed gives 4 such digits. RRB's key marks 2 on both the English and the Hindi sheet, and no reason for that is apparent from the printed series. (RRB key; some sources differ.)
+
+Q 70 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-cluster pairs are alike in a certain way and thus form a group. Which letter-cluster pair DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) DI:KQ
+(2) MR:TY
+(3) WB:DI
+(4) TY:AF
+= 1
+~ In MR:TY, WB:DI and TY:AF, the second letter of each cluster is 5 places after the first, and the second cluster starts 7 places after the first: M → R, T → Y, M → T; W → B, D → I, W → D; T → Y, A → F, T → A (counting on past Z). In DI:KQ, D → I is +5 and D → K is +7, but K → Q is +6. So DI:KQ is the odd one out.
+
+Q 71 | ih | Ancient India
+Who was responsible for District administration in the Maurya empire?
+(1) Pradeshika
+(2) Yukta
+(3) Koshadhyaksha
+(4) Purohit
+= 1
+~ In the Mauryan empire the district was under the Pradeshika, the chief district officer who looked after revenue collection and law and order; Ashoka's edicts mention him along with the Rajuka and the Yukta. The Rajuka handled land measurement and justice in rural areas, while the Yukta was a subordinate officer who kept accounts and records. The Koshadhyaksha was the superintendent of the treasury and the Purohit was the chief priest, so neither ran a district.
+
+Q 72 | geo | Indian Geography
+Malwa plateau lies to the north of the _______ river.
+(1) Luni
+(2) Son
+(3) Narmada
+(4) Beas
+= 3
+~ The Malwa plateau, spread over western Madhya Pradesh and south-eastern Rajasthan, is bounded by the Aravallis on the north-west and the Vindhyan Range on the south. The Vindhyas form its southern edge overlooking the Narmada valley, so the plateau lies to the north of the Narmada. Rivers such as the Chambal, Betwa and Kali Sindh drain it northwards towards the Yamuna–Ganga system.
+
+Q 73 | eco | Money, Banking & Finance
+In October 2024, HDFC Bank officially announced the divestment of its entire 100% stake in HDFC Education and Development Services Pvt. Ltd (HDFC Edu) to Vama Sundari Investments for ₹192 crore. What is the price per share for this transaction?
+(1) ₹5.60 per share
+(2) ₹8.40 per share
+(3) ₹9.60 per share
+(4) ₹10.80 per share
+= 3
+~ HDFC Bank announced on 8 October 2024 that it would sell its entire 100% stake in HDFC Education and Development Services (HDFC Edu) to Vama Sundari Investments for ₹192 crore in cash. The price fixed for the deal was ₹9.60 per share, and the sale was to be completed in phases. Vama Sundari won the stake through a competitive bidding process.
+
+Q 74 | eco | Money, Banking & Finance
+On 22 October 2024, the Reserve Bank updated its 'alert list' of unauthorised forex trading platforms by adding how many more entities?
+(1) 9
+(2) 16
+(3) 13
+(4) 11
+= 3
+~ On 22 October 2024 the RBI added 13 more entities, including TDFX and Inefex, to its Alert List of unauthorised forex trading platforms, taking the total to 88. The list names entities that are neither authorised to deal in foreign exchange under FEMA, 1999 nor authorised to operate electronic trading platforms for forex transactions. It is meant to warn the public against dealing with such platforms.
+
+Q 75 | ih | Modern India
+At which place was a resolution declared, demanding the immediate end of British rule which was passed by the All-India Congress Committee on 8 August 1942?
+(1) Bombay
+(2) Nagpur
+(3) Ahmedabad
+(4) Amritsar
+= 1
+~ The Quit India Resolution was passed by the All-India Congress Committee at Gowalia Tank Maidan (now August Kranti Maidan) in Bombay on 8 August 1942. In his speech there Gandhi gave the call 'Do or Die'. In the early hours of 9 August, Gandhi and other top leaders were arrested, and the movement spread across the country.
+
+Q 76 | pol | Government & Parliament
+Which Schedule of the Indian Constitution outlines the allocation of seats in the Council of States?
+(1) Sixth Schedule
+(2) Seventh Schedule
+(3) Fifth Schedule
+(4) Fourth Schedule
+= 4
+~ The Fourth Schedule allocates seats in the Rajya Sabha (Council of States) to the States and Union Territories, as provided by Article 80. Seats are allotted broadly on the basis of population, so Uttar Pradesh has the most (31). The Fifth and Sixth Schedules deal with the administration of Scheduled Areas and Tribal Areas, and the Seventh Schedule contains the Union, State and Concurrent Lists.
+
+Q 77 | eco | Agriculture, Industry & Trade
+Which state was the largest producer of sugarcane in India during 2023-24 according to the Directorate of Sugarcane Development?
+(1) Maharashtra
+(2) Karnataka
+(3) Tamil Nadu
+(4) Uttar Pradesh
+= 4
+~ Uttar Pradesh is India's largest producer of sugarcane, and the Directorate of Sugarcane Development placed it first for 2023-24 as well, followed by Maharashtra and Karnataka. UP also has the largest area under sugarcane in the country. Maharashtra is a tempting option because it often leads in sugar output (thanks to higher sugar recovery), but in cane production UP is ahead.
+
+Q 78 | cur | International
+Which of the following countries signed a bilateral Customs Cooperation Arrangement agreement in August 2024?
+(1) India and Singapore
+(2) India and New Zealand
+(3) New Zealand and Bhutan
+(4) Singapore and New Zealand
+= 2
+~ India and New Zealand signed a bilateral Customs Cooperation Arrangement in August 2024. It was signed on 6 August 2024 at a virtual ceremony by the heads of the two customs services (CBIC Chairman Sanjay Kumar Agarwal and New Zealand Customs chief Christine Stevenson) and was announced during President Droupadi Murmu's state visit to New Zealand (7–9 August 2024). The arrangement provides a framework for cooperation and information-sharing between the two customs administrations, including help in tackling customs offences, and is expected to ease trade between the two countries.
+
+Q 79 | pol | Constitution & Rights
+The Swaran Singh Committee recommendation added which of the following to the Indian Constitution?
+(1) Preamble
+(2) Fundamental Rights
+(3) Fundamental Duties
+(4) Directive Principles of State Policy
+= 3
+~ The Swaran Singh Committee (1976) recommended adding Fundamental Duties to the Constitution. The 42nd Amendment Act, 1976 accordingly inserted Part IVA (Article 51A) with ten duties; an eleventh duty, on providing opportunities for education to children aged 6–14, was added by the 86th Amendment in 2002. The Preamble, Fundamental Rights and Directive Principles were already part of the original Constitution.
+
+Q 80 | ih | Modern India
+What was the major impact of British policies on Indian handicrafts?
+(1) Decline due to competition with British goods
+(2) Support for indigenous industries
+(3) Modernisation of traditional crafts
+(4) Flourishing export markets
+= 1
+~ British rule led to the decline of Indian handicrafts, a process often called de-industrialisation. Cheap machine-made goods from Britain flooded Indian markets under one-way free trade, while Indian goods faced heavy duties in Britain. The loss of patronage from Indian royal courts and the Company's pressure on weavers added to the ruin of artisans, many of whom were pushed into agriculture.
+
+Q 81 | eco | Money, Banking & Finance
+In November 2024, RBI cancelled the certificate of registration of which of the following non-banking financial companies?
+(1) LIC and Ulhas Investment Ltd.
+(2) Ulhas Securities Pvt. Ltd. and Sikar Investment Co. Ltd.
+(3) Bajaj Finserv and CITI Bank
+(4) CITI Bank and LIC
+= 2
+~ In a press release of 26 November 2024, the RBI announced that it had cancelled the Certificates of Registration of two NBFCs: Ulhas Securities Pvt. Ltd. (Gandhinagar, Gujarat) and Sikar Investment Co. Ltd. (Bharatpur, Rajasthan). The cancellation was made under Section 45-IA(6) of the RBI Act, 1934, so the two companies can no longer carry on the business of a non-banking financial institution. The other options do not fit: LIC is an insurer and Citibank is a bank.
+
+Q 82 | cur | Static GK & Culture
+On 3 February 1925, the first electric train in India ran between which two stations?
+(1) Delhi and Agra
+(2) Howrah and Raniganj
+(3) Chennai and Bangalore
+(4) Bombay VT and Kurla Harbour
+= 4
+~ India's first electric train ran on 3 February 1925 between Bombay Victoria Terminus (VT) and Kurla on the Harbour line of the Great Indian Peninsula (GIP) Railway. The section was electrified at 1,500 V DC. India's first passenger train, by contrast, ran from Bori Bunder in Bombay to Thane on 16 April 1853.
+
+Q 83 | pol | Constitution & Rights
+Which of the following Articles of the Constitution was amended to include the Right to Education as a Fundamental Right?
+(1) Article 19
+(2) Article 21
+(3) Article 18
+(4) Article 30
+= 2
+~ The 86th Constitutional Amendment Act, 2002 made elementary education a Fundamental Right by inserting Article 21A, under which the State must provide free and compulsory education to all children aged 6 to 14 years. Article 21A was added right after Article 21 (protection of life and personal liberty), so Article 21 is the intended answer. The same amendment changed Article 45 and added a duty in Article 51A(k); the RTE Act, 2009 gives effect to Article 21A.
+
+Q 84 | geo | Indian Geography
+Which of the following mountain passes connects India with China?
+(1) Zoji La
+(2) Thal Ghat
+(3) Rohtang Pass
+(4) Nathula
+= 4
+~ Nathu La (about 4,310 m) in Sikkim connects India with the Chumbi Valley of Tibet (China); it lay on an old branch of the Silk Route and was reopened for border trade in 2006. Zoji La links Srinagar with Leh within India, Rohtang Pass links Kullu with Lahaul–Spiti in Himachal Pradesh, and Thal Ghat is a Western Ghats pass on the Nashik–Mumbai route.
+
+Q 85 | ih | Art & Culture
+The Gangaur festival of Rajasthan, which is devoted to Goddess Parvati, lasts for _____ days.
+(1) 12
+(2) 15
+(3) 21
+(4) 18
+= 4
+~ Gangaur, celebrated mainly in Rajasthan in honour of Gauri (Parvati) and Shiva, is an 18-day festival. It begins on the day after Holi (Chaitra Krishna Pratipada) and ends on Chaitra Shukla Tritiya. Married women pray for the well-being of their husbands and unmarried girls for a good husband; the processions of the Gauri idol in Jaipur and Udaipur are well known.
+
+Q 86 | geo | Indian Geography
+In which of the following regions is the Karakoram Range located?
+(1) North-eastern India
+(2) Eastern India
+(3) Northern India
+(4) Southern India
+= 3
+~ The Karakoram Range lies in the extreme north of India, in the Ladakh region, along the frontier with Pakistan-occupied Kashmir and China (Xinjiang). It contains K2 (Godwin-Austen, 8,611 m), the second-highest peak in the world, and large glaciers such as the Siachen. Hence it is located in Northern India.
+
+Q 87 | sci | Biology
+The areas in which children grow are __________.
+1. Physical
+2. Psychological
+3. Social Cultural
+4. Sexual
+(1) 1, 2 and 4 only
+(2) 2, 3 and 4 only
+(3) 1, 2 and 3 only
+(4) 1, 2, 3 and 4
+= 1
+~ Child growth and development are usually described in domains such as physical, psychological (cognitive and emotional), social and sexual development (puberty and sexual maturation). RRB's key, '1, 2 and 4 only', apparently treats physical, psychological and sexual change as areas in which the child itself grows, and the social-cultural setting as an influence on growth rather than an area of growth. Most child-development texts, however, also count social (socio-cultural) development as a domain, which would point to '1, 2, 3 and 4'. (RRB key; some sources differ.)
+
+Q 88 | sci | Physics
+10⁻⁹ m = _____ Å.
+(1) 10
+(2) 0.1
+(3) 100
+(4) 1
+= 1
+~ 1 ångström (Å) = 10⁻¹⁰ m. So 10⁻⁹ m = 10⁻⁹ ÷ 10⁻¹⁰ Å = 10 Å. In other words, 1 nanometre equals 10 ångströms; the ångström is used for atomic sizes and wavelengths of light.
+
+Q 89 | eco | Planning, Growth & Budget
+Which agency in India is responsible for formulating the Five Year Plans?
+(1) Reserve Bank of India
+(2) Ministry of Finance
+(3) Planning Commission (up to 2014)
+(4) National Development Council
+= 3
+~ The Five Year Plans were formulated by the Planning Commission, set up on 15 March 1950 by a resolution of the Union Cabinet with the Prime Minister as its chairman. The draft plans were finally approved by the National Development Council, which makes it a tempting option, but the NDC did not draft them. The Planning Commission was replaced by NITI Aayog on 1 January 2015, and the Twelfth Plan (2012–17) was the last Five Year Plan.
+
+Q 90 | sci | Physics
+Keeping the linear velocity of a particle moving in a circular path constant, as the radius of the circular path decreases, the centripetal acceleration:
+(1) remains the same
+(2) decreases
+(3) decreases initially and then increases
+(4) increases
+= 4
+~ Centripetal acceleration a = v²/r. If the linear speed v is kept constant, a is inversely proportional to r. So as the radius decreases, the centripetal acceleration increases; for example, halving the radius doubles the acceleration.
+
+Q 91 | eco | Planning, Growth & Budget
+Which Finance Minister in 1991 initiated a series of reforms that freed up the Indian economy and put the country on a strong growth path?
+(1) P Chidambaram
+(2) Chandra Shekhar
+(3) Yashwant Sinha
+(4) Manmohan Singh
+= 4
+~ Dr Manmohan Singh, Finance Minister in the P. V. Narasimha Rao government, launched the 1991 economic reforms with his Union Budget of 24 July 1991. These liberalisation, privatisation and globalisation (LPG) reforms dismantled much of the licence raj and opened the economy to foreign investment and trade, in response to the 1991 balance-of-payments crisis. Chandra Shekhar was Prime Minister until June 1991, and Yashwant Sinha was his Finance Minister.
+
+Q 92 | cur | International
+In which city of UAE is IIT Madras set to launch its first international flagship centre for research, innovation and entrepreneurship as early as 2025?
+(1) Sharjah
+(2) Abu Dhabi
+(3) Dubai
+(4) Fujairah
+= 3
+~ IIT Madras signed an agreement with Dubai's Department of Economy and Tourism (DET) at GITEX Global on 18 October 2024 to set up the IITM Global Dubai Centre from early 2025. The centre is to focus on research, innovation and entrepreneurship in areas such as artificial intelligence, data science, robotics and sustainable energy, and to support deep-tech start-ups. Abu Dhabi is a tempting option because IIT Delhi has its campus there.
+
+Q 93 | ih | Modern India
+Who was one of the British officers whose forces defeated Nana Sahib's rebel force during the First War of Independence in 1857?
+(1) Henry Lawrence
+(2) Major General Havelock
+(3) John Nicholson
+(4) General Hugh Rose
+= 2
+~ Major General Henry Havelock's column defeated Nana Sahib's forces near Kanpur (Cawnpore) on 16 July 1857 and recaptured the city the next day, before moving on to relieve the besieged Lucknow Residency. Henry Lawrence died defending the Lucknow Residency, John Nicholson was killed in the assault on Delhi in September 1857, and Sir Hugh Rose led the 1858 Central India campaign against Rani Lakshmibai and Tantia Tope.
+
+Q 94 | sci | Science & Technology
+Presently, which of the following advanced molecular methods is used to develop crops with enhanced traits and resilience?
+(1) Artificial pollination
+(2) Hybrid seed technology
+(3) CRISPR-Cas9 gene editing
+(4) Natural selection
+= 3
+~ CRISPR-Cas9 is a genome-editing tool in which a guide RNA leads the Cas9 enzyme to cut DNA at a chosen site, allowing precise changes in a crop's own genes. It is used to develop crops with higher yield, better quality and tolerance to drought, salinity, pests and diseases; its developers, Emmanuelle Charpentier and Jennifer Doudna, won the 2020 Nobel Prize in Chemistry. Artificial pollination and hybrid seed technology are conventional breeding methods, and natural selection is not a breeding technique at all.
+
+Q 95 | cur | International
+On 21 September 2024, the fourth Quad Leaders’ Summit was hosted by President Joseph R Biden, Jr. in Wilmington, Delaware. Which of the following areas was NOT a focus of the Quad's initiatives discussed during the Summit?
+(1) Cybersecurity development
+(2) Climate change response
+(3) Military defense cooperation
+(4) Strengthening maritime security
+= 3
+~ The Quad (India, the US, Japan and Australia) held its fourth in-person Leaders' Summit at Wilmington, Delaware on 21 September 2024 and adopted the Wilmington Declaration. Its initiatives covered health (the Quad Cancer Moonshot), maritime security and domain awareness (such as the MAITRI training initiative), climate change and clean energy, critical and emerging technologies, and cybersecurity. Military defence cooperation was not a focus, as the Quad presents itself as a partnership for a free and open Indo-Pacific, not a military alliance.
+
+Q 96 | cur | National
+On which day did Union Home Minister Amit Shah inaugurate the 'Run for Unity' event in New Delhi as part of National Unity Day?
+(1) 29 October 2024
+(2) 21 October 2024
+(3) 31 October 2024
+(4) 25 October 2024
+= 1
+~ Amit Shah flagged off the 'Run for Unity' at Major Dhyan Chand National Stadium in New Delhi on 29 October 2024. National Unity Day (Rashtriya Ekta Diwas) is observed on 31 October, the birth anniversary of Sardar Vallabhbhai Patel, but in 2024 that date fell on Diwali, so the run was held two days earlier. That is why 31 October 2024, the tempting option, is not the answer.
+
+Q 97 | ih | Art & Culture
+Which festival is dedicated to the worship of Lord Jagannath?
+(1) Shivratri
+(2) Vasant Panchami
+(3) Rath Yatra
+(4) Deepawali
+= 3
+~ Rath Yatra is the chariot festival of Lord Jagannath, held at Puri in Odisha on Ashadha Shukla Dwitiya (June–July). Jagannath, Balabhadra and Subhadra are taken in huge wooden chariots from the Jagannath Temple to the Gundicha Temple and brought back after about nine days. Shivratri is dedicated to Lord Shiva, Vasant Panchami to Goddess Saraswati, and Deepawali is chiefly linked with Lord Rama's return and Goddess Lakshmi.
+
+Q 98 | eco | Money, Banking & Finance
+What was the average (median) Cash Reserve Ratio (CRR) in India from September 1962 to 30 October 2024?
+(1) 4.200%
+(2) 4.000%
+(3) 4.500%
+(4) 3.000%
+= 2
+~ According to the CEIC data series on India's Cash Reserve Ratio, the CRR averaged 4.000% (median) from September 1962 to 30 October 2024. The CRR is the share of a bank's net demand and time liabilities (NDTL) that must be kept as cash with the RBI. On 30 October 2024 the rate itself was 4.5%, which makes 4.500% a tempting wrong choice; the RBI later cut it to 4% in December 2024.
+
+Q 99 | pol | Judiciary & Constitutional Bodies
+The term of office for the Chief Election Commissioner of India is:
+(1) 5 years or up to 65 years of age, whichever is earlier
+(2) 6 years or up to 65 years of age, whichever is earlier
+(3) 5 years or up to 70 years of age, whichever is earlier
+(4) 6 years or up to 70 years of age, whichever is earlier
+= 2
+~ Under the Chief Election Commissioner and Other Election Commissioners (Appointment, Conditions of Service and Term of Office) Act, 2023, the CEC holds office for 6 years from the date of assuming office or until the age of 65 years, whichever is earlier. The same rule applied under the earlier 1991 Act. The Election Commission itself is set up under Article 324 of the Constitution.
+
+Q 100 | cur | International
+Which of the following editions of India-Australia Maritime Security Dialogue was held on 13 August 2024 in Canberra?
+(1) 4th
+(2) 1st
+(3) 6th
+(4) 3rd
+= 3
+~ The 6th India-Australia Maritime Security Dialogue was held in Canberra on 13 August 2024. The two sides reviewed their cooperation on maritime security in the Indian Ocean and the wider Indo-Pacific. India and Australia are Comprehensive Strategic Partners and also work together in the Quad.
+
+Q 101 | ih | Art & Culture
+In which month is the Elephanta festival organised every year by the Maharashtra Tourism Development Corporation (MTDC) to promote Mumbai tourism and culture?
+(1) July
+(2) January
+(3) August
+(4) February
+= 4
+~ The Elephanta Festival is organised every February by the Maharashtra Tourism Development Corporation (MTDC) on Elephanta Island (Gharapuri) near Mumbai. It presents classical music and dance against the backdrop of the Elephanta Caves, a UNESCO World Heritage Site famous for the Trimurti (Maheshmurti) sculpture of Shiva.
+
+Q 102 | eco | Money, Banking & Finance
+The Reserve Bank of India (RBI) established an eight-member committee to develop a Framework for Responsible and Ethical AI (FREE-AI) adoption in the financial sector in December 2024. Who is the chairperson of this committee?
+(1) Raghuram Rajan
+(2) Arvind Subramanian
+(3) Urjit Patel
+(4) Pushpak Bhattacharyya
+= 4
+~ In December 2024 the RBI set up an eight-member committee, chaired by Prof. Pushpak Bhattacharyya of IIT Bombay, to develop a Framework for Responsible and Ethical Enablement of Artificial Intelligence (FREE-AI) in the financial sector. Prof. Bhattacharyya is a noted computer scientist in natural language processing. Raghuram Rajan and Urjit Patel are former RBI Governors, and Arvind Subramanian is a former Chief Economic Adviser.
+
+Q 103 | geo | Indian Geography
+Slash and Burn agriculture is known as ___________ in Madhya Pradesh.
+(1) Koman
+(2) Pama Dabi
+(3) Bringa
+(4) Dahiya
+= 4
+~ Slash-and-burn (shifting) agriculture is called 'Bewar' or 'Dahiya' in Madhya Pradesh. Pama Dabi, Koman and Bringa are its names in Odisha, while it is called 'Jhumming' in the North-East and 'Podu' or 'Penda' in Andhra Pradesh. In this method a patch of forest is cut and burnt, cultivated for a few years and then left so that the soil can recover.
+
+Q 104 | ih | Modern India
+Which of the following statements about the role of women is correct, in the revolt of 1857?
+(1) Women did not take part in the revolt at any level.
+(2) Only Rani Lakshmibai of Jhansi participated in the revolt.
+(3) Women like Rani Lakshmibai and Begum Hazrat Mahal played key roles.
+(4) Women were forced to support the British in the revolt.
+= 3
+~ Women played key roles in the Revolt of 1857. Rani Lakshmibai led the fight at Jhansi and Gwalior, and Begum Hazrat Mahal led the uprising in Awadh from Lucknow in the name of her son Birjis Qadr. Others such as Jhalkari Bai and Rani Avantibai Lodhi of Ramgarh also fought, so the statements that women took no part, or that only Lakshmibai took part, are wrong.
+
+Q 105 | sci | Physics
+When cotton and rubber are rubbed together, it will result in which of the following?
+(1) Cotton will be positively charged and rubber negatively charged.
+(2) Rubber will be positively charged and cotton negatively charged.
+(3) Cotton and rubber will be positively charged.
+(4) Cotton and rubber will be negatively charged.
+= 1
+~ When two materials are rubbed together, electrons pass from the one that holds them less tightly to the one that holds them more tightly. In the triboelectric series cotton lies on the positive side of rubber, so rubber gains electrons and becomes negatively charged, while cotton loses electrons and becomes positively charged. The two bodies always get equal and opposite charges, so they cannot both be positive or both be negative.
+
+Q 106 | pol | Constitution & Rights
+Which Directive Principle of State Policy focuses on the provision of just and humane conditions for work?
+(1) Article 42
+(2) Article 50
+(3) Article 51
+(4) Article 47
+= 1
+~ Article 42 directs the State to make provision for securing just and humane conditions of work and for maternity relief. Article 47 deals with nutrition, standard of living and public health (including prohibition), Article 50 with separation of the judiciary from the executive, and Article 51 with promotion of international peace and security. All of these are Directive Principles in Part IV of the Constitution.
+
+Q 107 | eco | Agriculture, Industry & Trade
+What is one effect of liberalisation in the industrial sector?
+(1) Fewer job opportunities
+(2) Higher import taxes
+(3) Complete government control
+(4) Increased competition
+= 4
+~ Liberalisation under the New Industrial Policy of 1991 abolished industrial licensing for most industries, opened many sectors reserved for the public sector to private firms and eased foreign investment. As more firms, including foreign ones, entered the market, competition increased. Liberalisation lowered, not raised, import duties and reduced government control.
+
+Q 108 | ih | Modern India
+When did the Britishers recapture Delhi after the First War of Independence?
+(1) September 1859
+(2) September 1857
+(3) September 1858
+(4) September 1860
+= 2
+~ British forces stormed Delhi from 14 September 1857 and had recaptured the city by about 20 September 1857. Bahadur Shah Zafar, whom the rebels had proclaimed emperor, surrendered at Humayun's Tomb to Captain William Hodson and was later exiled to Rangoon. The revolt went on elsewhere into 1858, but Delhi, taken by the rebels in May 1857, was lost by them within about four months.
+
+Q 109 | cur | Sports
+GM __________ clinched the Chennai Grand Masters 2024 title.
+(1) Pentala Harikrishna
+(2) Aravindh Chithambaram
+(3) Praggnanadhaa R
+(4) Vidit Gujrathi
+= 2
+~ GM Aravindh Chithambaram of Tamil Nadu won the Chennai Grand Masters 2024 (Masters section) in November 2024. He finished unbeaten and took the title by winning a tie-break against Levon Aronian. The 2023 edition of the tournament had been won by D Gukesh.
+
+Q 110 | cur | Awards, Books & Persons
+Which prominent Indian economist, known for his role as Chairman of the Economic Advisory Council to the Prime Minister, passed away on 1st November 2024 at the age of 69 years?
+(1) Bibek Debroy
+(2) Raghuram Rajan
+(3) Manmohan Singh
+(4) C Rangarajan
+= 1
+~ Bibek Debroy, Chairman of the Economic Advisory Council to the Prime Minister (EAC-PM) since 2017, died in New Delhi on 1 November 2024 at the age of 69. He had also been a member of NITI Aayog and was widely known for his unabridged English translations of the Mahabharata and the Valmiki Ramayana; he received the Padma Shri in 2015. C Rangarajan had chaired the EAC-PM earlier, under Prime Minister Manmohan Singh.
+
+Q 111 | eco | Schemes & Welfare
+The Development of Women and Children in Rural Areas (DWCRA) program was launched in the year __________.
+(1) 1985
+(2) 1981
+(3) 1982
+(4) 1980
+= 3
+~ DWCRA was launched in 1982 (1982-83) as a sub-scheme of the Integrated Rural Development Programme (IRDP). It aimed to raise the incomes of poor rural women by organising them into groups of 10–15 members for income-generating activities, with support for child care. It was merged into the Swarnjayanti Gram Swarozgar Yojana (SGSY) in April 1999.
+
+Q 112 | pol | Judiciary & Constitutional Bodies
+According to the Constitution of India, who conducts the Election of the Vice-President of India?
+(1) The Legislature Councils of all States
+(2) The Legislative Assemblies of all States
+(3) The Election Commission of India
+(4) The Parliament of India
+= 3
+~ Under Article 324, the superintendence, direction and control of elections to Parliament, the State Legislatures and the offices of President and Vice-President are vested in the Election Commission of India. The Vice-President is elected by an electoral college of the members of both Houses of Parliament (Article 66), so Parliament only votes in the election; it does not conduct it. State legislatures have no role in the Vice-President's election.
+
+Q 113 | pol | Government & Parliament
+How many new criminal laws has the Indian Government implemented from July 1, 2024?
+(1) 5
+(2) 4
+(3) 3
+(4) 2
+= 3
+~ Three new criminal laws came into force on 1 July 2024: the Bharatiya Nyaya Sanhita, 2023 (replacing the Indian Penal Code, 1860), the Bharatiya Nagarik Suraksha Sanhita, 2023 (replacing the Code of Criminal Procedure, 1973) and the Bharatiya Sakshya Adhiniyam, 2023 (replacing the Indian Evidence Act, 1872). Parliament had passed them in December 2023.
+
+Q 114 | sci | Physics
+The 3rd step of the Carnot cycle is:
+(1) reversible isothermal expansion
+(2) reversible adiabatic expansion
+(3) reversible adiabatic compression
+(4) reversible isothermal compression
+= 4
+~ A Carnot cycle has four reversible steps in this order: isothermal expansion at the source temperature, adiabatic expansion (the gas cools to the sink temperature), isothermal compression at the sink temperature (heat is rejected to the sink), and adiabatic compression back to the initial state. So the 3rd step is reversible isothermal compression.
+
+Q 115 | sci | Physics
+Magnetic field lines represent the path along which ______________.
+(1) a free proton would tend to move
+(2) a free electron would tend to move
+(3) a hypothetical free south pole would tend to move
+(4) a hypothetical free north pole would tend to move
+= 4
+~ A magnetic field line is the path along which a hypothetical free (isolated) north pole would tend to move, and the tangent at any point gives the direction of the field there. That is why, outside a magnet, field lines run from the north pole to the south pole. A free south pole would move the opposite way, and moving charges such as protons or electrons do not follow field lines, because the magnetic force on them acts perpendicular to the field.
+
+Q 116 | geo | Environment & Ecology
+Match the items in List I with those in List II, and select the correct answer using the codes provided below.
+List I (Elephant Corridors) | List II (State)
+(1) Durpong-Doimukh at Khundakhuwa | (A) Andhra Pradesh
+(2) Deosur Corridor | (B) Assam
+(3) Jamui- Jhajha- Chakayi | (C) Bihar
+(4) Nagdhara-Baraud | (D) Chhattisgarh
+(1) 1-(D), 2-(B), 3-(C), 4-(A)
+(2) 1-(B), 2-(A), 3-(C), 4-(D)
+(3) 1-(A), 2-(B), 3-(D), 4-(C)
+(4) 1-(A), 2-(B), 3-(C), 4-(D)
+= 4
+~ Deosur is an elephant corridor in Assam, Jamui-Jhajha-Chakai is in Bihar and Nagdhara-Baraud is in Chhattisgarh, so 2-(B), 3-(C) and 4-(D) are correct, and only option 4 has all three. The Durpong-Doimukh corridor at Khundakhuwa, however, is in Arunachal Pradesh (Doimukh is in Papum Pare district), not Andhra Pradesh; '(A) Andhra Pradesh' in List II appears to be a slip for Arunachal Pradesh. Read that way, option 4 is fully correct and is the intended answer. (RRB key; some sources differ.)
+
+Q 117 | ih | Art & Culture
+In which year did the 'Manipur Sangai Festival' start, which is named after the state animal, sangai?
+(1) 2010
+(2) 2005
+(3) 2020
+(4) 2015
+= 1
+~ The Manipur Sangai Festival began in 2010 and is held every year from 21 to 30 November to showcase the state's tourism, culture, handlooms and cuisine. It is named after the sangai, the brow-antlered deer found only in Keibul Lamjao National Park, the floating national park on Loktak Lake.
+
+Q 118 | eco | Planning, Growth & Budget
+Which type of unemployment occurs when there is a mismatch between skills and job requirements?
+(1) Cyclical
+(2) Seasonal
+(3) Structural
+(4) Frictional
+= 3
+~ Structural unemployment arises when the skills workers have do not match the skills that available jobs require, often because of technological change or a shift in the structure of the economy. It tends to last long and usually needs retraining to cure. Frictional unemployment is the short gap while people move between jobs, cyclical unemployment comes from a fall in demand during a slowdown, and seasonal unemployment occurs in off-seasons, as in agriculture.
+
+Q 119 | ih | Ancient India
+Which of the following officers was known as Akaradhyaksha during the Mauryan period?
+(1) Officer in-charge of Agriculture
+(2) Superintendent of Iron
+(3) Superintendent of Mines
+(4) Superintendent of Market
+= 3
+~ In Kautilya's Arthashastra, the Akaradhyaksha was the superintendent of mines, who looked after mining and the working of ores and metals. The Lohadhyaksha was the superintendent of iron (metals), the Sitadhyaksha supervised agriculture on crown lands, and the Panyadhyaksha was the superintendent of trade and markets.
+
+Q 120 | pol | Constitution & Rights
+Articles 36 to 51 containing 'Directive Principles of State Policy' come under which Part of the Constitution?
+(1) Part III
+(2) Part II
+(3) Part IV
+(4) Part V
+= 3
+~ The Directive Principles of State Policy are in Part IV of the Constitution, Articles 36 to 51. The idea was borrowed from the Irish Constitution, and these principles are not enforceable by any court (Article 37). Part III (Articles 12–35) contains the Fundamental Rights, Part II deals with Citizenship and Part V with the Union.

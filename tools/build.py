@@ -970,6 +970,89 @@ AP_POLICE_SUBJ_TE = {'ari': 'అర్థమెటిక్ (అంకగణి�
                      'cur': 'కరెంట్ అఫైర్స్', 'soc': 'నైతికత, సామాజిక స్పృహ'}
 
 
+# ---------- RPF (Railway Protection Force): Sub-Inspector and Constable (Executive) CBTs ----------
+# Anil, 15 Nov 2026: "RPF SI + Constable...add the pyqs and required details like other exams". Papers: RRB's own question papers as
+# candidates printed them from the RRB portal (response sheets, copied by AglaSem), English sheet + a second candidate's Hindi sheet of the
+# same shift; the answer is the option RRB marked correct (answer-key stage: SI 17 Dec 2024, Constable 24 Mar 2025). From the next cycle the
+# SSC conducts RPF recruitment (RPF Amendment Rules 2025, G.S.R. 766(E) of 17 Oct 2025). Work files: /home/claude/rpf (SPEC.md, scripts/).
+RPF_BLURB = ('Computer-based test: General Awareness (50), Arithmetic (35) and General Intelligence & Reasoning (35): '
+             '120 questions, 120 marks, 90 minutes, −1/3 mark for a wrong answer.')
+RPF_HI_MONTH = {'December': 'दिसंबर', 'March': 'मार्च'}
+def _rpf(pid, post, cen, year, day, shift, time_, file_):
+    slug_post = 'si' if post == 'SI' else 'constable'
+    return dict(id=pid, file=file_, year=year, stage='CBT', short=f'{post} CBT {year} · {day} S{shift}',
+                title=f'RPF {post} CBT {year} ({cen}), {day} {year}, Shift {shift}', notif=f'Shift {shift} ({time_}) · RRB key', held=f'{day} {year}',
+                key="RRB's answer key as marked on the candidate's response sheet", fmt='mcq',
+                slug=f'rpf-{slug_post}-{year}-{day.lower().replace(" ", "-")}-shift-{shift}-question-paper-with-answers',
+                kwname=f'RPF {post} {year} ({day} Shift {shift})',
+                hi_paper=f'सीबीटी ({day.split()[0]} {RPF_HI_MONTH.get(day.split()[1], day.split()[1])}, पाली {shift})', blurb=RPF_BLURB, mins=90)
+RPF_SI_PAPERS = [
+  _rpf('r24s1', 'SI', 'CEN RPF 01/2024', 2024, '2 December', 1, '9:00 AM', 'rpf-si-2024-02dec-shift1.txt'),
+  _rpf('r24s2', 'SI', 'CEN RPF 01/2024', 2024, '2 December', 2, '12:30 PM', 'rpf-si-2024-02dec-shift2.txt'),
+  _rpf('r24s3', 'SI', 'CEN RPF 01/2024', 2024, '2 December', 3, '4:00 PM', 'rpf-si-2024-02dec-shift3.txt'),
+]
+RPF_PC_PAPERS = [
+  _rpf('k25s1', 'Constable', 'CEN RPF 02/2024', 2025, '2 March', 1, '9:00 AM', 'rpf-constable-2025-02mar-shift1.txt'),
+  _rpf('k25s2', 'Constable', 'CEN RPF 02/2024', 2025, '2 March', 2, '12:30 PM', 'rpf-constable-2025-02mar-shift2.txt'),
+  _rpf('k25s3', 'Constable', 'CEN RPF 02/2024', 2025, '2 March', 3, '4:00 PM', 'rpf-constable-2025-02mar-shift3.txt'),
+]
+RPF_SUBJECTS = [
+  ('qa',  'Arithmetic', 'arithmetic', ['Number System & Simplification', 'Percentage & Profit-Loss', 'Simple & Compound Interest', 'Ratio, Average & Mixtures',
+                                       'Time, Work, Speed & Distance', 'Mensuration & Geometry', 'Algebra & Statistics']),
+  ('rea', 'General Intelligence & Reasoning', 'reasoning', ['Analogy & Classification', 'Series', 'Coding-Decoding', 'Blood Relations & Directions', 'Arrangement & Puzzles',
+                                                            'Syllogism & Statements', 'Mathematical Operations', 'Non-verbal Reasoning', 'Miscellaneous Reasoning']),
+  ('ih',  'History & Culture', 'history', ['Ancient India', 'Medieval India', 'Modern India', 'Art & Culture']),
+  ('pol', 'Indian Polity', 'polity', ['Constitution & Rights', 'Government & Parliament', 'Judiciary & Constitutional Bodies', 'Local Government & Governance']),
+  ('geo', 'Geography', 'geography', ['Indian Geography', 'World & Physical Geography', 'Environment & Ecology']),
+  ('eco', 'Indian Economy', 'economy', ['Planning, Growth & Budget', 'Money, Banking & Finance', 'Agriculture, Industry & Trade', 'Schemes & Welfare']),
+  ('sci', 'General Science', 'general-science', ['Physics', 'Chemistry', 'Biology', 'Science & Technology']),
+  ('cur', 'Current Affairs & Static GK', 'current-affairs-static-gk', ['National', 'International', 'Sports', 'Awards, Books & Persons', 'Static GK & Culture']),
+  ('comp', 'Computer Knowledge', 'computer-knowledge', ['Computer Basics & Hardware', 'Software & Operating Systems', 'Internet, Networking & Security', 'MS Office & Applications']),
+]
+RPF_SUBJ_HI = {'qa': 'अंकगणित', 'rea': 'सामान्य बुद्धि और तर्कशक्ति (रीजनिंग)', 'ih': 'इतिहास और संस्कृति', 'pol': 'भारतीय राजव्यवस्था', 'geo': 'भूगोल',
+               'eco': 'भारतीय अर्थव्यवस्था', 'sci': 'सामान्य विज्ञान', 'cur': 'करेंट अफेयर्स और स्टैटिक जीके', 'comp': 'कंप्यूटर ज्ञान'}
+
+
+def rpf_text(post):
+    """Wording for the RPF pages that depends on which shift papers are on the site."""
+    papers = RPF_SI_PAPERS if post == 'SI' else RPF_PC_PAPERS
+    have = [p for p in papers if p['id'] in have_src('rpf-si' if post == 'SI' else 'rpf-constable', papers)]
+    days = sorted({p['held'] for p in have}, key=lambda d: [p['held'] for p in papers].index(d))
+    return dict(n=len(have), days=' and '.join(days) or ('2 December 2024' if post == 'SI' else '2 March 2025'),
+                what=f'{len(have)} shift paper{"s" if len(have) != 1 else ""}')
+
+
+def FAQ_RPF(post):
+    si = post == 'SI'
+    name = 'RPF SI' if si else 'RPF Constable'
+    def faq(total, npapers):
+        R = rpf_text(post)
+        return [
+          (f'Where can I get {name} previous year question papers with answers?',
+           f'This page has {total} questions from {R["what"]} of the {name} computer-based test ({"CEN RPF 01/2024, held on 2, 3, 9, 12 and 13 December 2024" if si else "CEN RPF 02/2024, held from 2 to 18 March 2025"}): '
+           f'the shifts of {R["days"]}. Each is RRB\'s own question paper as candidates printed it from the RRB portal, with the answer RRB marked as correct, and every question has a short explanation in English and Hindi. '
+           'Practise a whole shift as a 90-minute timed test, or by subject and topic.'),
+          ('Are the answers official?',
+           'Yes. Every answer is the option RRB marked as correct on the candidate\'s response sheet, published with the answer key '
+           + ('(17 December 2024; objections were taken until 22 December). ' if si else '(24 March 2025; objections were taken until 29 March). ')
+           + 'RRB\'s final key, used for the result, can differ for a few questions; where a marked answer looks debatable, the explanation says "(RRB key; some sources differ.)". The explanations are written by Learn with Anil.'),
+          (f'What is the {name} exam pattern?',
+           f'One computer-based test of 120 questions in 90 minutes: General Awareness 50, Arithmetic 35, and General Intelligence & Reasoning 35. Each question carries 1 mark and one-third of a mark is cut for a wrong answer. '
+           + ('The SI paper is set at graduation level. ' if si else 'The Constable paper is set at matriculation (10th) level. ')
+           + 'Candidates who clear the CBT go to the Physical Efficiency Test (PET), Physical Measurement Test (PMT) and document verification.'),
+          ('Who conducts the next RPF recruitment?',
+           'The Staff Selection Commission (SSC). The Railway Protection Force (Amendment) Rules, 2025 (G.S.R. 766(E), 17 October 2025) say direct recruitment of Sub-Inspectors and Constables (Executive) will follow the SSC\'s procedure for the Central Armed Police Forces. '
+           'No new RPF notification had been issued as of 15 November 2026, so the pattern of the next exam is not known yet; these RRB papers remain the best guide to the level and the topics.'),
+          (f'Is the {name} question paper available in Hindi?',
+           'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, as printed in RRB\'s Hindi paper of the same shift, with the explanation in Hindi.'),
+          (f'Is there an {name} mock test?',
+           'Yes. Every shift paper here can be taken as a timed mock test with the real 90-minute limit, and the sectional tests take all the previous questions of one subject. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+          ('Do I need to register?',
+           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+        ]
+    return faq
+
+
 # APPSC Analyst Grade-II, A.P. Pollution Control Board (Anil, 1 Nov 2026: Notification 21/2026, 18 posts, apply 13 Oct to 2 Nov 2026).
 # Previous papers: Notification 02/2024, computer-based test, March 2025; APPSC's final keys (APOnline master question papers,
 # correct option ticked). Paper II was one paper per degree subject in 2025 (Chemistry, Biochemistry, Biology, Environmental
@@ -1605,6 +1688,38 @@ def exam_confs():
            eyebrow='SLPRB AP · SCT PC (Civil) &amp; APSP · Preliminary Written Test 2023',
            papers_note=("Answers come from SLPRB AP's final key for booklet A of the Preliminary Written Test held on 22 January 2023; the question booklet is SLPRB's own copy. "
                         "The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet.")),
+      dict(id='rpf-si', dir='rpf-si', src='rpf-si', key='rpf-si', name='RPF SI', short='RPF SI', seo='RPF SI',
+           slugp='rpf-si', papers=RPF_SI_PAPERS, subjects=RPF_SUBJECTS, faq=FAQ_RPF('SI'), board='RRB', l2=L2_HI, pb='/rpf-si/',
+           keyname="RRB's answer key", keyshort="RRB's answer key (as marked on the response sheets)",
+           hi_name='आरपीएफ एसआई', hi_paper='सीबीटी', subj_te=RPF_SUBJ_HI,
+           title='RPF SI Previous Year Question Papers with Answers – CBT 2024 Shift-wise (CEN RPF 01/2024), English & Hindi | Learn with Anil',
+           h1='RPF SI previous year question papers <em>with answers.</em>',
+           aka='Also known as the RPF Sub-Inspector (Executive) exam of the Railway Protection Force and Railway Protection Special Force (RPSF), conducted by the Railway Recruitment Boards (RRB) under CEN RPF 01/2024; SSC conducts it from the next cycle.',
+           aka_short='RPF Sub-Inspector (Executive), RRB CEN RPF 01/2024',
+           l2line='आरपीएफ एसआई (सब-इंस्पेक्टर) सीबीटी 2024 के पिछले वर्षों के प्रश्न पत्र, आरआरबी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सामान्य जागरूकता, अंकगणित और रीजनिंग; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           desc=lambda t: (f"RPF SI previous year question papers with answers: the Sub-Inspector (Executive) CBT of CEN RPF 01/2024, shift-wise papers of {rpf_text('SI')['days']}, "
+                           f"from RRB's own response sheets with RRB's answer key and explanations. {t:,} questions in English and Hindi on general awareness, arithmetic and reasoning; "
+                           f"subject-wise practice and 90-minute timed mock tests with the ₹45 All-in-One Pass."),
+           eyebrow='Railways · RPF Sub-Inspector (Executive) · CBT 2024',
+           papers_note=("Every paper is RRB's own question paper as candidates printed it from the RRB portal (the response sheet), with the answer RRB marked as correct. "
+                        "The sheets are from the answer-key stage (17 December 2024), so RRB's final key may differ for a few questions. "
+                        "Each shift had a different paper. Every question is in English and Hindi, as printed in RRB's English and Hindi papers of that shift.")),
+      dict(id='rpf-constable', dir='rpf-constable', src='rpf-constable', key='rpf-pc', name='RPF Constable', short='RPF Constable', seo='RPF Constable',
+           slugp='rpf-constable', papers=RPF_PC_PAPERS, subjects=RPF_SUBJECTS, faq=FAQ_RPF('Constable'), board='RRB', l2=L2_HI, pb='/rpf-constable/',
+           keyname="RRB's answer key", keyshort="RRB's answer key (as marked on the response sheets)",
+           hi_name='आरपीएफ कांस्टेबल', hi_paper='सीबीटी', subj_te=RPF_SUBJ_HI,
+           title='RPF Constable Previous Year Question Papers with Answers – CBT 2025 Shift-wise (CEN RPF 02/2024), English & Hindi | Learn with Anil',
+           h1='RPF Constable previous year question papers <em>with answers.</em>',
+           aka='Also known as the RPF Constable (Executive) exam of the Railway Protection Force and Railway Protection Special Force (RPSF), conducted by the Railway Recruitment Boards (RRB) under CEN RPF 02/2024; SSC conducts it from the next cycle.',
+           aka_short='RPF Constable (Executive), RRB CEN RPF 02/2024',
+           l2line='आरपीएफ कांस्टेबल सीबीटी 2025 के पिछले वर्षों के प्रश्न पत्र, आरआरबी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सामान्य जागरूकता, अंकगणित और रीजनिंग; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           desc=lambda t: (f"RPF Constable previous year question papers with answers: the Constable (Executive) CBT of CEN RPF 02/2024, shift-wise papers of {rpf_text('Constable')['days']}, "
+                           f"from RRB's own response sheets with RRB's answer key and explanations. {t:,} questions in English and Hindi on general awareness, arithmetic and reasoning; "
+                           f"subject-wise practice and 90-minute timed mock tests with the ₹45 All-in-One Pass."),
+           eyebrow='Railways · RPF Constable (Executive) · CBT 2025',
+           papers_note=("Every paper is RRB's own question paper as candidates printed it from the RRB portal (the response sheet), with the answer RRB marked as correct. "
+                        "The sheets are from the answer-key stage (24 March 2025), so RRB's final key may differ for a few questions. "
+                        "Each shift had a different paper. Every question is in English and Hindi, as printed in RRB's English and Hindi papers of that shift.")),
     ] + bank_confs()
 
 
@@ -2099,6 +2214,7 @@ def subject_l2_line(conf, s):
     if conf['l2']['code'] == 'te':
         g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
         return f'APPSC {g} {name} ప్రాక్టీస్ బిట్స్ — మునుపటి సంవత్సరం ప్రశ్నలు, సమాధానాలు, వివరణలతో.'
+    if conf.get('hi_name'): return f'{conf["hi_name"]} {name} — पिछले वर्षों के प्रश्न, उत्तर और व्याख्या सहित।'
     return f'सीएपीएफ (एसी) {name} — पिछले वर्षों के प्रश्न, उत्तर और व्याख्या सहित।'
 
 
@@ -2124,6 +2240,7 @@ def exam_terms(e, cat):
     if e['id'] == 'tgpsc-group-2': words += ['tspsc group 2', 'tgpsc group 2', 'group 2', 'group ii', 'group-2', 'telangana group 2', 'telangana movement', 'economy and development', 'telangana', 'tspsc', 'tgpsc']
     if 'hmwssb' in e['id']: words += ['hmwssb', 'water board', 'jalamandali', 'metro water', 'manager engineering', 'civil engineering', 'hmws', 'ece', 'electronics', 'electronics and communication', 'communication engineering']
     if 'civil-judge' in e['id']: words += ['civil judge', 'junior civil judge', 'jcj', 'judiciary', 'high court', 'llb', 'law']
+    if e['id'].startswith('rpf'): words += ['rpf', 'railway protection force', 'rpsf', 'railway police', 'rrb', 'railway', 'railways', 'cen rpf', 'si', 'sub inspector', 'constable', 'police']
     if e['cat'] == 'ap': words += ['appsc', 'andhra'] + ([f'ap group {ROMAN[m.group(1)]}'] if m else [])
     if e['id'] in MAINS_EXAMS and MAINS_KIT: words += ['mains', 'answer writing', 'tool kit', 'toolkit', 'essay']
     return ' '.join(w.lower() for w in words if w)
@@ -2929,7 +3046,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -3790,6 +3907,22 @@ LANDINGS = {
             '<a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> (1,156 posts); SLPRB will announce the application dates in a press note.</p>',
       te={'AP Police SI': 'ఏపీ పోలీస్ ఎస్ఐ ప్రశ్నాపత్రాలు', 'AP Constable': 'ఏపీ పోలీస్ కానిస్టేబుల్ ప్రశ్నాపత్రాలు'},
       order=lambda c: 0 if c['id'] == 'ap-police-si' else 1),
+  'rpf-pyqs.html': dict(   # Anil, 15 Nov 2026: RPF SI + Constable
+      board='RRB', ename='RPF', crumb='RPF PYQs', lang='hi',
+      title='RPF Previous Year Question Papers with Answers – RPF SI & Constable CBT PYQs (RRB), English & Hindi | Learn with Anil',
+      desc='Railway Protection Force SI and Constable previous year question papers in one place: RRB\'s CBT papers of CEN RPF 01/2024 (SI, December 2024) and '
+           'CEN RPF 02/2024 (Constable, March 2025), shift-wise, {n} questions with RRB\'s answer key and explanations in English and Hindi. Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='RPF SI & Constable previous question papers with answers',
+      lede="Every RPF Sub-Inspector and Constable question paper on Learn with Anil, {n} questions in all. "
+           "Each is RRB's own paper (the candidate response sheet) with the answer RRB marked as correct, and every question has a short explanation, in English and Hindi.",
+      intro='<p>Looking for the RPF SI question paper 2024, the RPF Constable question paper 2025, shift-wise RPF previous year papers with the answer key, '
+            'or an RPF mock test in Hindi? They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="hi">आरपीएफ एसआई और कांस्टेबल के पिछले वर्षों के प्रश्न पत्र (शिफ्ट-वार), आरआरबी की उत्तर कुंजी और व्याख्या सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।</p>'
+            '<p class="note">From the next cycle the Staff Selection Commission (SSC) conducts RPF SI and Constable recruitment: '
+            '<a href="/rpf-si-notification-2026.html">RPF SI 2026 notification status</a> · <a href="/rpf-constable-notification-2026.html">RPF Constable 2026 notification status</a>. '
+            'Full shift papers with a 90-minute timer: <a href="/rpf-si/mock-test.html">RPF SI mock test</a> · <a href="/rpf-constable/mock-test.html">RPF Constable mock test</a>.</p>',
+      te={'RPF SI': 'आरपीएफ एसआई प्रश्न पत्र', 'RPF Constable': 'आरपीएफ कांस्टेबल प्रश्न पत्र'},
+      order=lambda c: 0 if c['id'] == 'rpf-si' else 1),
 }
 
 
@@ -3814,7 +3947,7 @@ def landing_page(loaded, rel):
             for p in sorted(papers, key=lambda p: (-p['year'], p['id'])))
         subs = ''.join(f'<a href="{base}subjects/{conf["slugp"]}-{subj[s][2]}-pyqs.html">{esc(subj[s][1])} ({scount[s]})</a>'
                        for s in subj if scount.get(s))
-        secs.append(f'<h2 id="{conf["id"]}">{nw(conf["name"])} PYQs <span lang="te" style="font-size:.8em;font-weight:600">· {esc(L["te"][conf["short"]])}</span></h2>'
+        secs.append(f'<h2 id="{conf["id"]}">{nw(conf["name"])} PYQs <span lang="{L.get("lang", "te")}" style="font-size:.8em;font-weight:600">· {esc(L["te"][conf["short"]])}</span></h2>'
                     + (f'<p class="why" style="font-weight:400">{esc(conf["aka"])}</p>' if conf.get('aka') and L['board'] != 'APPSC' else '')
                     + f'<p><a class="cta" href="{conf["pb"]}">Practise {esc(conf["name"])} online</a></p>'
                     f'<ol class="qs">{rows}</ol><h3>{esc(conf["name"])} PYQs by subject</h3><nav class="toc">{subs}</nav>')
@@ -4901,7 +5034,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable')]
 
 
 def news_hub_page(loaded, rels):
@@ -5208,6 +5341,8 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'ap-police-si': ('AP Police SI Preliminary Written Test', None, 'SLPRB AP notified 378 SI posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
   'ap-police-constable': ('AP Police Constable Preliminary Written Test', None, 'SLPRB AP notified 1,156 posts on 16 September 2026; the application and exam dates will be announced in a press note.'),
   'tgpsc-hmwssb-manager': ('TGPSC HMWSSB Manager (Engineering)', None, 'Tentatively December 2026; TGPSC has not announced the exact date yet.'),
+  'rpf-si': ('Next RPF SI recruitment (by SSC)', None, 'From the next cycle the SSC conducts RPF recruitment (RPF Amendment Rules, 17 October 2025); no notification as of 15 November 2026.'),
+  'rpf-constable': ('Next RPF Constable recruitment (by SSC)', None, 'From the next cycle the SSC conducts RPF recruitment (RPF Amendment Rules, 17 October 2025); no notification as of 15 November 2026.'),
 }
 
 # Anil, 11 Nov 2026: "i want to add mentorship program to appsc group-1, grup-2 ....pls make some poster and add in the respective tile";
@@ -5866,7 +6001,7 @@ def build_static(conf, papers, subjects, questions, subj):
         kw, alt = paper_kw(conf, p), paper_alt(conf, p)
         if p.get('nokey'):
             title = f'{kw} Question Paper with Answers, English & Hindi | Learn with Anil'
-        elif conf['board'] in ('UPSC', 'SSC'):
+        elif conf['board'] in ('UPSC', 'SSC', 'RRB'):
             title = f'{kw} Question Paper with Answer Key{f" ({alt})" if alt and conf["board"] == "SSC" else ""}, English & Hindi | Learn with Anil'
         else:
             title = f'{kw} Question Paper with Answers{f" ({alt})" if alt else ""} – {"Preliminary Key" if "preliminary key" in pkey else "Final Key"}, {"English" if p.get("en_only") else "Telugu & English"} | Learn with Anil'
@@ -5979,7 +6114,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -5995,7 +6130,8 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
-<li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li></ul>
+<li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
+<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li></ul>
 </main></body></html>
 """
 

@@ -269,6 +269,52 @@
    "pages": 34
   }
  },
+ "rpf-constable": {
+  "k25s1": {
+   "bytes": 751736,
+   "file": "rpf-constable-k25s1-b3785de749.bin",
+   "key": "bk-rpf-constable-k25s1",
+   "name": "LearnWithAnil-RPF-Constable-2025-2-March-Shift-1-Question-Paper.pdf",
+   "pages": 27
+  },
+  "k25s2": {
+   "bytes": 749208,
+   "file": "rpf-constable-k25s2-69a7e8c31f.bin",
+   "key": "bk-rpf-constable-k25s2",
+   "name": "LearnWithAnil-RPF-Constable-2025-2-March-Shift-2-Question-Paper.pdf",
+   "pages": 28
+  },
+  "k25s3": {
+   "bytes": 773849,
+   "file": "rpf-constable-k25s3-4138bcd64c.bin",
+   "key": "bk-rpf-constable-k25s3",
+   "name": "LearnWithAnil-RPF-Constable-2025-2-March-Shift-3-Question-Paper.pdf",
+   "pages": 28
+  }
+ },
+ "rpf-si": {
+  "r24s1": {
+   "bytes": 806618,
+   "file": "rpf-si-r24s1-8a24e4183e.bin",
+   "key": "bk-rpf-si-r24s1",
+   "name": "LearnWithAnil-RPF-SI-2024-2-December-Shift-1-Question-Paper.pdf",
+   "pages": 29
+  },
+  "r24s2": {
+   "bytes": 793172,
+   "file": "rpf-si-r24s2-e43498f3a4.bin",
+   "key": "bk-rpf-si-r24s2",
+   "name": "LearnWithAnil-RPF-SI-2024-2-December-Shift-2-Question-Paper.pdf",
+   "pages": 28
+  },
+  "r24s3": {
+   "bytes": 859837,
+   "file": "rpf-si-r24s3-5ae4f8d17b.bin",
+   "key": "bk-rpf-si-r24s3",
+   "name": "LearnWithAnil-RPF-SI-2024-2-December-Shift-3-Question-Paper.pdf",
+   "pages": 30
+  }
+ },
  "tgpsc-group-1": {
   "g1p22": {
    "bytes": 1169482,
