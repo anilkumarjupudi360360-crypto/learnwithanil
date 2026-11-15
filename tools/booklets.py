@@ -29,6 +29,7 @@ esc = B.esc
 LOGO = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(ROOT, 'src', 'static', 'icon-192.png'), 'rb').read()).decode()
 BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC': 'ANDHRA PRADESH PUBLIC SERVICE COMMISSION',
               'SLPRB': 'STATE LEVEL POLICE RECRUITMENT BOARD, ANDHRA PRADESH', 'RRB': 'RAILWAY RECRUITMENT BOARDS · RAILWAY PROTECTION FORCE'}
+BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
 SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
           'appsc-eo': {'e2025a': 'A', 'e2025b': 'A'}}
@@ -49,6 +50,7 @@ def time_marks(conf, p):
     if conf['id'] == 'appsc-aso': return '150 Minutes', 150   # ASO Paper II: 150 questions, 150 marks
     if conf['id'] in ('tgpsc-group-1', 'tgpsc-group-2'): return '150 Minutes', 150   # TG Group-I Prelims and each Group-II paper: 150 questions, 150 marks
     if conf['id'] == 'appsc-fro': return '150 Minutes', 150   # FRO Screening and each Mains paper: 150 questions, 150 marks
+    if conf['id'] == 'rrb-group-d': return '90 Minutes', 100   # RRB Group D CBT: 100 questions, 1 mark each
     return (f'{p["mins"]} Minutes' if p.get('mins') else ''), ''
 
 CSS = """
@@ -122,13 +124,13 @@ def ans_html(q, l2):
 
 def paper_doc(conf, p, qs, mock=None):
     l2 = conf['l2']
-    board = BOARD_NAME.get(conf['board'], conf['board'])
+    board = BOARD_NAME_EXAM.get(conf['id']) or BOARD_NAME.get(conf['board'], conf['board'])
     time_allowed, marks = time_marks(conf, p)
     m = re.search(r'booklet ([A-Z])\b', p.get('notif', '')) or (re.match(r'([A-Z])$', SERIES.get(conf['id'], {}).get(p['id'], '')))
     series = (f'<div class="s">BOOKLET<b>{m.group(1)}</b>SERIES</div>' if m else '<div class="s lwa">LEARN<br>WITH<br>ANIL</div>')
     sub = re.sub(r'\s*·\s*booklet [A-Z]\b.*$', '', p.get('notif', ''))
     key = p.get('key') or ("APPSC's final key" if conf['board'] == 'APPSC' else conf.get('keyname') or 'the official key')
-    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP)\s+', '', p['title'])
+    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB)\s+', '', p['title'])
     l2name = l2['name'] if not p.get('en_only') and any(q.get('qt') for q in qs) else ''
     when = f' · Held on {esc(p["held"])}' if p.get('held') else ''
     if mock: board = 'LEARN WITH ANIL · ' + mock.upper() + ' TEST SERIES'

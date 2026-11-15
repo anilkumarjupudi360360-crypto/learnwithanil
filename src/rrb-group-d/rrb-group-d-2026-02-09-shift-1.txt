@@ -1,0 +1,944 @@
+# RRB Group D (Level-1 posts, CEN 08/2024) Computer Based Test, held 9 February 2026, Shift 1 (9:00 AM – 10:30 AM). 100 questions here; the paper had 100 (1 mark each, 90 minutes, one-third mark cut for a wrong answer).
+# Source: RRB's question paper for this shift with its answer key (correct option shown in green with a tick), as published by RRB (copy hosted by AglaSem). Answers = RRB's key. Explanations by Learn with Anil (writer + independent checker).
+
+Q 1 | sci | Chemistry
+Which of the following salts will have a pH close to 7 when dissolved in water?
+(1) Na₂CO₃
+(2) NaCl
+(3) CH₃COONa
+(4) NH₄Cl
+= 2
+~ NaCl is the salt of a strong acid (HCl) and a strong base (NaOH), so its ions do not react with water and the solution stays neutral, with pH close to 7. Na₂CO₃ and CH₃COONa come from a strong base and a weak acid, so their solutions are basic (pH above 7), while NH₄Cl comes from a strong acid and a weak base (NH₄OH), so its solution is acidic (pH below 7).
+
+Q 2 | sci | Physics
+If the distance-time graph of an object is a straight line parallel to the time axis, what is the object's speed?
+(1) Zero
+(2) Uniform
+(3) Non-zero constant
+(4) Increasing
+= 1
+~ A line parallel to the time axis means the distance stays the same as time passes, so the object is not moving at all. The slope of a distance-time graph gives speed, and the slope of a horizontal line is zero. A uniform (non-zero) speed would instead give a straight line sloping upwards.
+
+Q 3 | sci | Biology
+Which of the following best explains the division of labour seen in multicellular organisms?
+(1) All cells perform the same function in an organism
+(2) Different cells have specialized functions
+(3) Multicellular organisms have only one type of cell
+(4) Each body part is made up of a single cell
+= 2
+~ In multicellular organisms, cells are specialised into different types (muscle cells, nerve cells, blood cells and so on), and groups of such cells form tissues and organs that each do a particular job. This sharing of work among specialised cells is called division of labour. If all cells did the same work, as in option 1, there would be no division of labour.
+
+Q 4 | sci | Chemistry
+The concentration of H⁺ ions in a solution primarily determines its:
+(1) Degree of acidity in aqueous phase
+(2) Rate of solid crystal formation
+(3) Level of gas compressibility factor
+(4) Extent of metallic bonding strength
+= 1
+~ The acidity of an aqueous solution depends on how many hydrogen ions (H⁺) it contains: the higher the H⁺ concentration, the more acidic the solution. This is measured on the pH scale, where pH = −log[H⁺], so a lower pH means a higher H⁺ concentration and a stronger acid. The other options have nothing to do with H⁺ concentration.
+
+Q 5 | sci | Physics
+How is the change in Gravitational Potential Energy (ΔPEg) of a system related to the work (Wg) done by the gravitational force?
+(1) Wg = ΔPEg
+(2) The two are unrelated
+(3) Wg = 0
+(4) Wg = −ΔPEg
+= 4
+~ Gravity is a conservative force, and the work done by such a force equals the negative of the change in potential energy, so Wg = −ΔPEg. For example, when a body falls, gravity does positive work while the potential energy decreases (ΔPEg is negative); when a body is lifted, gravity does negative work while the potential energy increases. Option 1 has the sign wrong.
+
+Q 6 | sci | Biology
+Which contraceptive method is most appropriate for a couple who wishes to avoid both hormonal and surgical methods?
+(1) Using barrier methods like condoms
+(2) Natural methods (periodic abstinence)
+(3) Taking oral pills
+(4) Inserting a copper-T
+= 1
+~ Barrier methods such as condoms simply stop the sperm from reaching the egg, so they involve no hormones and no surgery, and they are reliable and also protect against sexually transmitted infections. Oral pills are hormonal, and a copper-T has to be inserted into the uterus by a doctor. Natural methods also avoid hormones and surgery, but they are much less reliable, so barrier methods are the most appropriate choice.
+
+Q 7 | sci | Chemistry
+The law of conservation of mass states that:
+(1) Matter can be destroyed during reactions
+(2) Mass can neither be created nor destroyed in a chemical reaction
+(3) Matter can be created in reactions
+(4) Mass always decreases during a reaction
+= 2
+~ The law of conservation of mass, given by Lavoisier, says that mass can neither be created nor destroyed in a chemical reaction. The atoms only rearrange, so the total mass of the products equals the total mass of the reactants. That is also why chemical equations must be balanced.
+
+Q 8 | sci | Chemistry
+Copper reacts with moist carbon dioxide in the air and slowly loses its shiny brown surface and gains a _________ colour coating of basic copper carbonate.
+(1) black
+(2) white
+(3) reddish brown
+(4) green
+= 4
+~ When copper is exposed to moist air containing carbon dioxide, it slowly corrodes and forms a green layer of basic copper carbonate, CuCO₃·Cu(OH)₂. This green coating is why old copper vessels and copper statues turn green. A black coating (copper oxide) forms when copper is heated in air, not in this slow reaction with moist CO₂.
+
+Q 9 | sci | Biology
+A decrease in oxygen availability in the environment is most likely to first impact which step of aerobic respiration in animal cells?
+(1) Krebs cycle
+(2) Electron transport chain
+(3) Glycolysis
+(4) Lactic acid fermentation
+= 2
+~ Oxygen is used directly in only one step of aerobic respiration: it is the final electron acceptor at the end of the electron transport chain in the mitochondria, where it combines with electrons and H⁺ to form water. So when oxygen falls, the electron transport chain is the first step to slow down; the Krebs cycle slows only afterwards because it runs out of NAD⁺. Glycolysis does not need oxygen at all, and lactic acid fermentation is not a step of aerobic respiration.
+
+Q 10 | sci | Physics
+If the current in a straight conductor is doubled, the magnetic field at a given distance from it:
+(1) Becomes zero
+(2) Doubles
+(3) Halves
+(4) Remains the same
+= 2
+~ The magnetic field around a straight current-carrying conductor is directly proportional to the current and inversely proportional to the distance from the wire (B = μ₀I/2πr). So at the same distance, doubling the current doubles the magnetic field. The field would halve only if the distance were doubled.
+
+Q 11 | sci | Physics
+The SI unit of average speed is:
+(1) km/hr
+(2) m/s
+(3) cm/s
+(4) m/s²
+= 2
+~ Average speed is total distance divided by total time, and in the SI system distance is measured in metres (m) and time in seconds (s), so its SI unit is m/s. km/hr and cm/s are also units of speed but they are not SI units, and m/s² is the unit of acceleration.
+
+Q 12 | sci | Physics
+A girl clapped her hands near a cliff and heard the echo after 8 s. What is the distance of the cliff from the girl if the speed of the sound is taken as 320 m s⁻¹?
+(1) 640 m
+(2) 80 m
+(3) 320 m
+(4) 1280 m
+= 4
+~ In an echo the sound travels to the cliff and back, so it covers twice the distance d. Total distance = speed × time = 320 × 8 = 2560 m, so 2d = 2560 m and d = 2560/2 = 1280 m. 640 m would come from wrongly dividing by 2 twice (2560/4).
+
+Q 13 | sci | Biology
+What is the advantage of cross-breeding local and exotic cattle breeds?
+(1) Higher meat and milk yield
+(2) Faster reproduction rate
+(3) Lower adaptability to environment
+(4) Denser wool yield
+= 1
+~ Exotic (foreign) breeds such as Jersey and Brown Swiss give a high milk yield and have a long lactation period, while local (Indian) breeds such as Red Sindhi and Sahiwal resist diseases and suit the local climate. Cross-breeding the two gives animals that combine high yield with good adaptability, so production of milk (and meat) goes up. Lower adaptability would be a disadvantage, and cattle are not reared for wool.
+
+Q 14 | sci | Chemistry
+Corrosion of iron is commonly known as rusting, and it requires:
+(1) salt and strong acid presence
+(2) iron and very cold temperatures
+(3) water and atmospheric oxygen
+(4) moisture and high acidity
+= 3
+~ Rusting is the slow reaction of iron with oxygen of the air in the presence of water (moisture), forming hydrated iron(III) oxide (Fe₂O₃·xH₂O), the reddish-brown rust. Both water and oxygen are essential: iron kept in dry air or in boiled water without air does not rust. Salt and acids only speed up rusting; they are not the basic requirement.
+
+Q 15 | sci | Biology
+Arrange the following in the correct sequences of development after fertilisation in humans.
+Embryo, Zygote and Foetus
+(1) Foetus - Embryo - Zygote
+(2) Zygote - Foetus - Embryo
+(3) Embryo - Foetus - Zygote
+(4) Zygote - Embryo - Foetus
+= 4
+~ Fertilisation of the egg by a sperm first forms a single-celled zygote. The zygote divides repeatedly and develops into an embryo, which implants in the wall of the uterus. Once the body parts and organs become recognisable (from about the ninth week in humans), the developing baby is called a foetus. So the order is Zygote - Embryo - Foetus.
+
+Q 16 | sci | Biology
+Which of the following plants is a weed?
+(1) Oryza sativa
+(2) Vigna unguiculata
+(3) Cyperus rotundus
+(4) Pisum sativum
+= 3
+~ Cyperus rotundus (nut grass or motha) is a common weed that grows uninvited in crop fields and competes with crops for water, nutrients and light. The other three are crop plants: Oryza sativa is rice, Vigna unguiculata is cowpea (lobia) and Pisum sativum is garden pea.
+
+Q 17 | sci | Biology
+Two children of the same parents resemble each other but are not exactly alike because ___________.
+(1) their parents show very little genetic variation
+(2) each of them inherits all genetic characters from one parent only
+(3) they show different combinations of the genetic variation existing in their parents
+(4) each of them shows variation in their DNA copying mechanisms
+= 3
+~ In sexual reproduction each child gets half of its genetic material from the mother and half from the father, and the gametes of each parent carry different combinations of the parents' genes. So every child receives a new combination of the variations already present in the parents, which is why siblings look similar but not identical. A child does not inherit all characters from one parent, and small errors in DNA copying are not the main reason for these differences.
+
+Q 18 | sci | Chemistry
+A compound is a substance in which elements are:
+(1) Easily separable
+(2) Chemically combined in fixed proportion
+(3) Physically mixed in any ratio
+(4) Mixed temporarily
+= 2
+~ In a compound, two or more elements are chemically combined in a fixed proportion by mass; for example, water always has hydrogen and oxygen in the mass ratio 1:8. Its components cannot be separated by physical methods. Elements physically mixed in any ratio make a mixture, not a compound.
+
+Q 19 | sci | Chemistry
+Which statement best describes the Law of Constant Proportion of the compound water?
+(1) The total mass of products is always greater than reactants in a reaction.
+(2) A chemical compound always contains the same elements combined in a fixed ratio by mass.
+(3) Elements combine in any ratio to form compounds.
+(4) The properties of compounds are the same as those of elements.
+= 2
+~ The law of constant proportions (Proust) says that a pure chemical compound always contains the same elements combined in the same fixed ratio by mass, whatever its source. For water, hydrogen and oxygen are always in the mass ratio 1:8, whether the water comes from a river, rain or a laboratory. Option 1 contradicts the law of conservation of mass, and option 3 describes a mixture.
+
+Q 20 | sci | Physics
+Which of the following circuit elements is used to vary the amount of current following through a closed circuit?
+(1) Ammeter
+(2) Plug key
+(3) Voltmeter
+(4) Rheostat
+= 4
+~ A rheostat is a variable resistance; changing its resistance changes the current flowing in the circuit (by Ohm's law, I = V/R). An ammeter only measures current, a voltmeter only measures potential difference, and a plug key only switches the circuit on or off.
+
+Q 21 | sci | Physics
+The random wavering or flickering of objects viewed through a turbulent stream of hot air rising above a fire or radiator is an effect of ______________.
+(1) Diffraction of light
+(2) Heat radiation causing visual distortion
+(3) Tyndall effect
+(4) Atmospheric refraction on a small scale
+= 4
+~ Air just above a fire or radiator is hotter and optically rarer than the cooler air further away, and because this hot air keeps moving, its refractive index keeps changing from point to point. Light from objects behind it is bent (refracted) by different amounts from moment to moment, so the objects appear to waver or flicker. This is atmospheric refraction on a small, local scale, the same effect that makes stars twinkle; it is not caused by diffraction or by scattering (Tyndall effect).
+
+Q 22 | sci | Biology
+What is the method of removal of metabolic waste in many unicellular organisms?
+(1) Through a simple diffusion process
+(2) Through osmosis
+(3) Through the use of special organs
+(4) Through filtration through kidneys
+= 1
+~ Unicellular organisms have no special excretory organs; their whole body surface is in contact with the surrounding water. So wastes such as carbon dioxide and ammonia simply diffuse out from the cell into the water. Kidneys and other special organs are found only in complex multicellular organisms, and osmosis is the movement of water, not the removal of wastes.
+
+Q 23 | sci | Physics
+Which of the following quantities determines the magnitude of the buoyant force on a body?
+(1) Surface area of the body
+(2) Density of the fluid and volume displaced
+(3) Temperature of the fluid
+(4) Weight of the body
+= 2
+~ By Archimedes' principle, the buoyant force equals the weight of the fluid displaced by the body: buoyant force = density of fluid × volume displaced × g. So it depends on the density of the fluid and the volume of fluid displaced. The weight of the body decides whether it floats or sinks, but it does not set the size of the buoyant force.
+
+Q 24 | sci | Physics
+What type of image is always formed by a concave lens, no matter where the object is placed?
+(1) Virtual, erect, and diminished
+(2) Real, erect, and same size
+(3) Virtual, inverted, and enlarged
+(4) Real, inverted, and enlarged
+= 1
+~ A concave lens is a diverging lens: the refracted rays spread out and never actually meet, so they only appear to come from a point on the same side as the object. For any position of the object, the image is therefore virtual, erect and diminished, formed between the optical centre and the focus. Real, inverted and enlarged images are formed by a convex lens.
+
+Q 25 | sci | Chemistry
+In electrolytic refining, the impure metal is used as the:
+(1) anode
+(2) electrolyte
+(3) separator
+(4) cathode
+= 1
+~ In electrolytic refining, a thick block of the impure metal is made the anode and a thin strip of the pure metal is made the cathode, with a solution of a salt of the metal as the electrolyte. On passing current, the metal dissolves from the anode into the solution and pure metal is deposited on the cathode, while insoluble impurities settle below the anode as anode mud. For example, copper is refined this way using acidified copper sulphate solution.
+
+Q 26 | qa | Percentage, Profit & Discount
+A shopkeeper marks an article at ₹x and offers a discount of 54% on the marked price. He sells it for ₹437 after charging VAT of 52% on the discounted price. What is the value of x?
+(1) 500
+(2) 600
+(3) 200
+(4) 625
+= 4
+~ After a 54% discount the price before VAT is 46% of x, i.e. 0.46x. Adding 52% VAT makes it 0.46x × 1.52 = 0.6992x. So 0.6992x = 437, giving x = 437 ÷ 0.6992 = 625. Check: 46% of 625 = ₹287.50, and 287.50 × 1.52 = ₹437.
+
+Q 27 | qa | Percentage, Profit & Discount
+Find the single discount equivalent to two successive discounts of 5% and 8%.
+(1) 14.67%
+(2) 12.6%
+(3) 10.8%
+(4) 14.63%
+= 2
+~ For successive discounts of a% and b%, the single equivalent discount = a + b − ab/100 = 5 + 8 − (5 × 8)/100 = 13 − 0.4 = 12.6%. Check with ₹100: after 5% it becomes ₹95, and 8% of ₹95 is ₹7.60, leaving ₹87.40, a total discount of ₹12.60 or 12.6%. Simply adding the two (13%) is wrong because the second discount is taken on the already reduced price.
+
+Q 28 | qa | Percentage, Profit & Discount
+By how much is 60% of 45 greater than 1/5 of 45?
+(1) 16
+(2) 15
+(3) 12
+(4) 18
+= 4
+~ 60% of 45 = 0.6 × 45 = 27, and 1/5 of 45 = 9. The difference is 27 − 9 = 18. Quicker: 1/5 = 20%, so the difference is (60% − 20%) of 45 = 40% of 45 = 18.
+
+Q 29 | qa | Ratio, Proportion & Average
+The average of 6.5, 10.7, 20.2 and a is 17. The value of a is:
+(1) 29.6
+(2) 30.6
+(3) 31.6
+(4) 32.6
+= 2
+~ The sum of the four numbers = 4 × 17 = 68. The three known numbers add up to 6.5 + 10.7 + 20.2 = 37.4. So a = 68 − 37.4 = 30.6.
+
+Q 30 | qa | Algebra & Equations
+Simplify (6pq + 14q)² − (6pq − 14q)².
+(1) 168pq²
+(2) 336pq²
+(3) 168p²q²
+(4) 336p²q
+= 2
+~ Use the identity (A + B)² − (A − B)² = 4AB. Here A = 6pq and B = 14q, so the value is 4 × 6pq × 14q = 336pq². The option 168pq² is only 2AB, a common slip.
+
+Q 31 | qa | Time & Work, Pipes & Cisterns
+P and Q together can fill a cistern with water in 8 hours. If P alone can fill the cistern with water in 20 hours, then in how many hours will Q alone fill three-fourth of the same cistern with water?
+(1) 10
+(2) 11
+(3) 21
+(4) 20
+= 1
+~ In one hour P and Q together fill 1/8 of the cistern and P alone fills 1/20, so Q alone fills 1/8 − 1/20 = (5 − 2)/40 = 3/40 of the cistern per hour. Q alone therefore needs 40/3 hours for the full cistern, and for three-fourth of it Q needs (40/3) × (3/4) = 10 hours.
+
+Q 32 | qa | HCF, LCM & Fractions
+If the numerator of a fraction is increased by 25% and the denominator is decreased by 9%, the value of new fraction becomes 5/7. Which of the following is the correct statement w.r.t. the original fraction?
+(1) The numerator is greater than denominator by 10
+(2) The sum of numerator and denominator is 37
+(3) The value of denominator is 13
+(4) The difference between denominator and numerator is 12
+= 4
+~ Let the fraction be N/D. Then (1.25N)/(0.91D) = 5/7, so N/D = (5 × 0.91)/(7 × 1.25) = 4.55/8.75 = 13/25. Taking the fraction in its lowest form, N = 13 and D = 25, so the denominator exceeds the numerator by 25 − 13 = 12. The other statements fail: the numerator is smaller than the denominator, the sum is 38 (not 37) and the denominator is 25 (not 13). Check: 13 × 1.25 = 16.25 and 25 × 0.91 = 22.75, and 16.25/22.75 = 5/7.
+
+Q 33 | qa | Geometry & Mensuration
+A field is in the shape of a quadrilateral. One of its diagonals is 10 m long. The perpendicular distances from the other two vertices to this diagonal are 12 m and 13 m, respectively. What is the area of the field?
+(1) 110 m²
+(2) 100 m²
+(3) 130 m²
+(4) 125 m²
+= 4
+~ The diagonal divides the quadrilateral into two triangles that share the diagonal as their base, with heights 12 m and 13 m. Area = 1/2 × diagonal × (sum of the perpendiculars) = 1/2 × 10 × (12 + 13) = 5 × 25 = 125 m².
+
+Q 34 | qa | Geometry & Mensuration
+The volume of a solid cylinder is 2926 cm³ and its height is 19 cm. What is the total surface area of the solid cylinder?
+(Use π = 22/7)
+(1) 1144 cm²
+(2) 1175 cm²
+(3) 1106 cm²
+(4) 1121 cm²
+= 1
+~ Volume = πr²h, so (22/7) × r² × 19 = 2926, giving r² = (2926 × 7) ÷ (22 × 19) = 20482 ÷ 418 = 49 and r = 7 cm. Total surface area of a solid cylinder = 2πr(r + h) = 2 × (22/7) × 7 × (7 + 19) = 44 × 26 = 1144 cm².
+
+Q 35 | qa | Ratio, Proportion & Average
+₹8,442 is divided among S, B, and C in such a way that if ₹7, ₹73, and ₹68 be deducted from their respective shares, they have money in the ratio 6 : 7 : 16. Find the difference between the B’s and C’s original shares.
+(1) ₹2,674
+(2) ₹2,524
+(3) ₹2,569
+(4) ₹2,624
+= 3
+~ After the deductions the shares are 6k, 7k and 16k, so the original shares are 6k + 7, 7k + 73 and 16k + 68. Their sum is 29k + 148 = 8442, so 29k = 8294 and k = 286. B’s share = 7 × 286 + 73 = ₹2,075 and C’s share = 16 × 286 + 68 = ₹4,644 (S gets 6 × 286 + 7 = ₹1,723; total 8,442). Difference = 4,644 − 2,075 = ₹2,569.
+
+Q 36 | qa | Algebra & Equations
+The cost of 4 keychains and 3 wallets is ₹75. The cost of 2 keychains and 2 wallets is ₹48. What is the cost of 3 keychains and 1 wallet?
+(1) ₹34
+(2) ₹32
+(3) ₹24
+(4) ₹30
+= 4
+~ Let a keychain cost ₹k and a wallet ₹w. From 2k + 2w = 48 we get k + w = 24. Then 4k + 3w = 3(k + w) + k = 72 + k = 75, so k = 3 and w = 21. Cost of 3 keychains and 1 wallet = 3 × 3 + 21 = ₹30.
+
+Q 37 | qa | Speed, Time & Distance
+Arman runs 8.8 km in 1 hour 20 minutes. How long will he take to run 26.4 km at double the previous speed?
+(1) 2 hours
+(2) 3 hours
+(3) 2 3/4 hours
+(4) 1 1/2 hours
+= 1
+~ 1 hour 20 minutes = 4/3 hours, so his speed = 8.8 ÷ (4/3) = 6.6 km/h. At double the speed he runs 13.2 km/h, so 26.4 km takes 26.4 ÷ 13.2 = 2 hours.
+
+Q 38 | qa | Age, Calendar & Clock
+If the ages of 2 members of a family are in the ratio 6:1, and the average of their ages is 35 years. Find the total of their ages after 11 years.
+(1) 92 years
+(2) 83 years
+(3) 82 years
+(4) 88 years
+= 1
+~ An average of 35 for two people means their present total is 2 × 35 = 70 years (the ratio 6:1 gives 60 and 10 years, but it is not needed for the total). After 11 years each person is 11 years older, so the total rises by 2 × 11 = 22 years: 70 + 22 = 92 years.
+
+Q 39 | qa | Age, Calendar & Clock
+The ratio of the present ages of two friends, A and B, is 3:4. Four years ago, the ratio of their ages was 7:10. Find their present ages.
+(1) 18 years and 24 years
+(2) 15 years and 20 years
+(3) 21 years and 28 years
+(4) 12 years and 16 years
+= 1
+~ Let the present ages be 3x and 4x. Four years ago, (3x − 4)/(4x − 4) = 7/10, so 30x − 40 = 28x − 28, giving 2x = 12 and x = 6. The present ages are 18 years and 24 years. Check: four years ago they were 14 and 20, and 14:20 = 7:10.
+
+Q 40 | qa | Speed, Time & Distance
+A runs 5/2 times as fast as B. If A gives B a start of 80 meters, how far from A’s starting point should the winning post be so that A and B reach it at the same time?
+(1) 133 1/3 m
+(2) 170 m
+(3) 181 2/3 m
+(4) 176 m
+= 1
+~ In the same time A covers 5/2 times the distance B covers. If the winning post is d metres from A’s start, B runs only d − 80 metres, so d = (5/2)(d − 80). This gives 2d = 5d − 400, so 3d = 400 and d = 133 1/3 m. Check: A runs 400/3 m while B runs 400/3 − 80 = 160/3 m, and (400/3) ÷ (160/3) = 5/2.
+
+Q 41 | qa | Geometry & Mensuration
+The volume (in m³) of a cube with edges of 19 m is:
+(1) 6859
+(2) 6696
+(3) 6957
+(4) 6748
+= 1
+~ Volume of a cube = (edge)³ = 19³ = 19 × 19 × 19 = 361 × 19 = 6859 m³. A quick check: 19³ must end in 9 (since 9³ = 729 ends in 9), which rules out 6696, 6957 and 6748.
+
+Q 42 | qa | Number System & Simplification
+An 11-digit number 8732326687X is divisible by 18. What is the value of X?
+(1) 1
+(2) 2
+(3) 3
+(4) 5
+= 2
+~ A number is divisible by 18 when it is divisible by both 2 and 9. The known digits add up to 8 + 7 + 3 + 2 + 3 + 2 + 6 + 6 + 8 + 7 = 52, so 52 + X must be a multiple of 9, which gives X = 2 (sum 54). X = 2 is also even, so the number is divisible by 2 as well.
+
+Q 43 | qa | HCF, LCM & Fractions
+What is the L.C.M. of 45, 63 and 81?
+(1) 2455
+(2) 2545
+(3) 2835
+(4) 2385
+= 3
+~ Prime factors: 45 = 3² × 5, 63 = 3² × 7 and 81 = 3⁴. The LCM takes the highest power of each prime: 3⁴ × 5 × 7 = 81 × 35 = 2835. Check: 2835 ÷ 45 = 63, 2835 ÷ 63 = 45 and 2835 ÷ 81 = 35.
+
+Q 44 | qa | Trigonometry & Heights
+The angle of elevation of the top of a tower from a point on the ground 48 m from the foot of the tower is 30°. Find the height of the tower in metres.
+(1) 4√3
+(2) 14√3
+(3) 12√3
+(4) 16√3
+= 4
+~ tan 30° = height ÷ distance from the foot, so height = 48 × tan 30° = 48 × (1/√3) = 48/√3. Multiplying top and bottom by √3 gives 48√3/3 = 16√3 m (about 27.7 m).
+
+Q 45 | qa | Time & Work, Pipes & Cisterns
+Three people, X, Y and Z, are working together to plant trees in a garden. X and Y together can complete the job in 20 days. Y and Z together can complete the job in 24 days. Z and X together can complete the job in 30 days.
+How long will it take for X, Y and Z working together to complete the job?
+(1) 16 days
+(2) 18 days
+(3) 14 days
+(4) 12 days
+= 1
+~ Adding the one-day work of the three pairs counts each person twice: 2(X + Y + Z) = 1/20 + 1/24 + 1/30 = (6 + 5 + 4)/120 = 15/120 = 1/8. So X + Y + Z = 1/16 of the job per day, and together they finish it in 16 days.
+
+Q 46 | qa | Ratio, Proportion & Average
+The average price of three items of furniture is ₹16,425. If their prices are in the ratio 3 : 5 : 7, the price of the costliest item (in ₹) will be:
+(1) 7,665
+(2) 22,995
+(3) 5,475
+(4) 9,855
+= 2
+~ Total price = 3 × 16,425 = ₹49,275. The ratio parts add up to 3 + 5 + 7 = 15, so one part = 49,275 ÷ 15 = ₹3,285. The costliest item = 7 × 3,285 = ₹22,995. (7,665 is the slip of taking 7/15 of the average instead of the total.)
+
+Q 47 | qa | Percentage, Profit & Discount
+A store originally sold a jacket for ₹120. After a 15% increase in price, what is the new price of the jacket?
+(1) ₹18
+(2) ₹120
+(3) ₹138
+(4) ₹102
+= 3
+~ 15% of ₹120 = 0.15 × 120 = ₹18, so the new price = 120 + 18 = ₹138 (equivalently 120 × 1.15). ₹18 is only the increase, and ₹102 would be the price after a 15% decrease.
+
+Q 48 | qa | Simple & Compound Interest
+The compound interest on ₹5,625 for 6 months at 16% per annum, interest being compounded quarterly is:
+(1) ₹955
+(2) ₹459
+(3) ₹746
+(4) ₹702
+= 2
+~ Compounded quarterly, the rate per quarter is 16% ÷ 4 = 4%, and 6 months = 2 quarters. Amount = 5625 × (1.04)² = 5625 × 1.0816 = ₹6,084. Compound interest = 6084 − 5625 = ₹459.
+
+Q 49 | qa | Percentage, Profit & Discount
+A sold an article to B at a loss of 12%. B sold it to C at a profit of 20%. If C paid ₹1,122 to B, find the cost price of the article for A.
+(1) ₹1,062.50
+(2) ₹985.30
+(3) ₹1,038.80
+(4) ₹999.70
+= 1
+~ Let A’s cost price be x. B buys it for 0.88x, and C pays 0.88x × 1.20 = 1.056x. So 1.056x = 1122, giving x = 1122 ÷ 1.056 = ₹1,062.50. Check: 88% of 1062.50 = 935, and 120% of 935 = 1122.
+
+Q 50 | qa | Number System & Simplification
+Solve the following.
+[1/6 × {(36÷6) + (9÷3) − 3}+18]
+(1) 26
+(2) 19
+(3) 23
+(4) 20
+= 2
+~ Work from the innermost brackets (BODMAS): 36 ÷ 6 = 6 and 9 ÷ 3 = 3, so the curly bracket is 6 + 3 − 3 = 6. Then 1/6 × 6 = 1, and finally 1 + 18 = 19.
+
+Q 51 | rea | Miscellaneous Reasoning
+This question is based on the five, three-digit numbers given below.
+(Left) 687 652 691 287 286 (Right)
+(Example- 697 – First digit = 6, second digit = 9 and third digit = 7)
+NOTE - All operations to be done from left to right.
+What will be the resultant if the second digit of the highest number is added to the third digit of the lowest number?
+(1) 17
+(2) 16
+(3) 15
+(4) 19
+= 3
+~ The highest number is 691, whose second digit is 9. The lowest number is 286, whose third digit is 6. Adding them gives 9 + 6 = 15. (Using 687 as the highest by mistake gives 8 + 6 = 14, which is not an option, so check carefully which number is the largest.)
+
+Q 52 | rea | Analogy & Classification
+RUOT is related to VYSX in a certain way based on the English alphabetical order. In the same way, MPJO is related to QTNS. To which of the given options is HKEJ related, following the same logic?
+(1) LOIN
+(2) LPIM
+(3) LPIN
+(4) LOIM
+= 1
+~ Each letter moves 4 places forward: R → V, U → Y, O → S, T → X, and M → Q, P → T, J → N, O → S. Applying +4 to HKEJ: H → L, K → O, E → I, J → N, giving LOIN.
+
+Q 53 | rea | Series
+What should come in place of ‘?’ in the given series?
+158 171 186 204 226 ?
+(1) 249
+(2) 253
+(3) 255
+(4) 251
+= 2
+~ The differences between consecutive terms are 13, 15, 18, 22, which themselves increase by 2, 3, 4. The next difference is 22 + 5 = 27, so the missing term is 226 + 27 = 253.
+
+Q 54 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance from commonly known facts, decide which of the given conclusion(s) logically follow(s) from the statements.
+Statements: All cushions are pillows. No pillow is a blanket. Some blankets are envelopes.
+Conclusion I: Some envelopes are pillows.
+Conclusion II: No cushion is a blanket.
+(1) Only Conclusion I follows.
+(2) Both Conclusions I and II follow.
+(3) Only Conclusion II follows.
+(4) Neither Conclusion I nor II follows.
+= 3
+~ All cushions lie inside pillows, and no pillow is a blanket, so no cushion can be a blanket: Conclusion II follows. Envelopes are linked only to blankets (some blankets are envelopes), and those envelopes cannot be pillows; nothing tells us that any other envelope is a pillow, so Conclusion I is only a possibility and does not follow. Hence only Conclusion II follows.
+
+Q 55 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. You have to decide which conclusion/s logically follow/s from the given statements.
+Statements: All lotions are creams. All creams are shampoos. No cream is a facewash.
+Conclusion (I) : No shampoo is a facewash.
+Conclusion (II) : No lotion is a facewash.
+(1) Only conclusion (I) follows
+(2) Only conclusion (II) follows
+(3) Neither conclusion (I) nor (II) follows
+(4) Both conclusions (I) and (II) follow
+= 2
+~ All lotions are creams and no cream is a facewash, so no lotion can be a facewash: Conclusion (II) follows. Creams are only a part of shampoos, and the shampoos that are not creams may or may not be facewashes, so “No shampoo is a facewash” is not certain and Conclusion (I) does not follow. Hence only conclusion (II) follows.
+
+Q 56 | rea | Series
+Refer to the following number series and answer the question that follows (all numbers are single-digit numbers only.)
+(Left) 7 4 1 2 4 9 8 5 3 6 1 5 2 6 5 4 8 3 9 6 5 2 3 9 1 4 2 (Right)
+If all the odd numbers are dropped from the series, which of the following will be seventh from the right?
+(1) 8
+(2) 2
+(3) 4
+(4) 6
+= 4
+~ Dropping all odd numbers leaves (left to right): 4 2 4 8 6 2 6 4 8 6 2 4 2. Counting from the right: 2 (1st), 4 (2nd), 2 (3rd), 6 (4th), 8 (5th), 4 (6th), 6 (7th). So the seventh number from the right is 6.
+
+Q 57 | rea | Miscellaneous Reasoning
+This question is based on the five, three-digit numbers given below.
+(Left) 423 253 174 324 749 (Right)
+(Example- 697 – First digit = 6, second digit = 9 and third digit = 7)
+NOTE - All operations to be done from left to right.
+If 2 is added to the first digit of every number, in how many numbers will the first digit be exactly divisible by the second digit?
+(1) Three
+(2) None
+(3) Two
+(4) One
+= 4
+~ Adding 2 to each first digit gives 623, 453, 374, 524 and 949. Now check first digit ÷ second digit: 6 ÷ 2 = 3 (exact), 4 ÷ 5, 3 ÷ 7, 5 ÷ 2 and 9 ÷ 4 are not exact. So the condition holds for only one number (623).
+
+Q 58 | rea | Series
+What should come in place of ? in the given series in order to make it logically complete?
+JF125 KE64 MC27 PZ8 ?
+(1) TW1
+(2) TV1
+(3) TV8
+(4) SV1
+= 2
+~ First letters: J, K, M, P move +1, +2, +3, so the next is P + 4 = T. Second letters: F, E, C, Z move −1, −2, −3 (C − 3 goes back past A to Z), so the next is Z − 4 = V. Numbers: 125, 64, 27, 8 are 5³, 4³, 3³, 2³, so the next is 1³ = 1. The answer is TV1.
+
+Q 59 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four are alike in a certain way and thus form a group. Which is the one that does not belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) JOR
+(2) GKN
+(3) TXA
+(4) YCF
+= 1
+~ In GKN (G +4 → K, K +3 → N), TXA (T +4 → X, X +3 → A, counting on from Z to A) and YCF (Y +4 → C, C +3 → F) the gaps are +4 and +3. In JOR the gaps are +5 (J → O) and +3 (O → R), so JOR is the odd one out.
+
+Q 60 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding / subtracting / multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(14 280 5)
+(7 336 12)
+(1) 21 336 4
+(2) 12 578 10
+(3) 18 876 9
+(4) 13 992 11
+= 1
+~ The middle number = first × third × 4: 14 × 5 × 4 = 280 and 7 × 12 × 4 = 336. Checking the options: 21 × 4 × 4 = 336 (fits), while 12 × 10 × 4 = 480 (not 578), 18 × 9 × 4 = 648 (not 876) and 13 × 11 × 4 = 572 (not 992). So the set is 21 336 4.
+
+Q 61 | rea | Blood Relations
+In a certain code language,
+A + B means ‘A is the son of B’,
+A − B means ‘A is the brother of B’,
+A × B means ‘A is the wife of B’, and
+A ÷ B means ‘A is the father of B’.
+Based on the above, how is D related to J if ‘D ÷ F × G + H − J’?
+(1) Sister's son's wife's brother
+(2) Brother's son's wife's brother
+(3) Sister's son's wife's father
+(4) Brother's son's wife's father
+= 4
+~ Decode step by step: D ÷ F means D is the father of F; F × G means F is the wife of G; G + H means G is the son of H; H − J means H is the brother of J. Starting from J: H is J’s brother, G is H’s son, F is G’s wife, and D is F’s father. So D is J’s brother’s son’s wife’s father.
+
+Q 62 | rea | Series
+Which of the following letter-number clusters will replace the question mark (?) in the given series to make it logically complete?
+MJB 9, QNF 16, URJ 23, YVN 30, ?
+(1) CYR 42
+(2) BZS 36
+(3) CZR 37
+(4) AYR 37
+= 3
+~ Each letter moves 4 places forward: first letters M → Q → U → Y → C (Y + 4 goes past Z to C), second letters J → N → R → V → Z, third letters B → F → J → N → R. The numbers increase by 7: 9, 16, 23, 30, 37. So the next term is CZR 37.
+
+Q 63 | rea | Coding-Decoding
+In a certain code language, ‘chase clouds away’ is coded as ‘hl mt dv’ and ‘clouds block sun’ is coded as ‘ya co hl’. How is ‘clouds’ coded in the given language?
+(1) hl
+(2) dv
+(3) mt
+(4) ya
+= 1
+~ The word ‘clouds’ is the only word common to both sentences, and ‘hl’ is the only code common to both coded forms. So ‘clouds’ is coded as ‘hl’.
+
+Q 64 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+99 ÷ 3 − 15 ÷ 5 + 156 × 2 − 12 × 4 − 16 ÷ 8 + 11 = ?
+(1) 414
+(2) 449
+(3) 361
+(4) 390
+= 1
+~ After interchanging the signs the expression becomes 99 × 3 + 15 × 5 − 156 ÷ 2 + 12 ÷ 4 + 16 × 8 − 11. Do × and ÷ first: 297 + 75 − 78 + 3 + 128 − 11. Then add and subtract from left to right: 297 + 75 = 372, 372 − 78 = 294, 294 + 3 = 297, 297 + 128 = 425, 425 − 11 = 414.
+
+Q 65 | rea | Ranking & Arrangement
+T, U, V, W, X and Y are sitting around a circular table facing the centre. Y is an immediate neighbour of both T and V. U is sitting to the immediate right of V. W is sitting second to the left of Y. How many people sit between X and Y when counted from the right of X?
+(1) Three
+(2) Two
+(3) One
+(4) Four
+= 2
+~ Y sits between T and V. If V were on Y’s immediate left, U (immediate right of V) would have to take Y’s own seat, so V is on Y’s immediate right and T on Y’s immediate left. U is to the immediate right of V, and W, second to the left of Y, sits next to T. The only seat left, between U and W, goes to X. Moving to the right from Y the order is Y, V, U, X, W, T. Counting to the right of X we pass W and T before reaching Y, so two people sit between X and Y (X sits opposite Y, so it is two either way).
+
+Q 66 | rea | Ranking & Arrangement
+Seven people, N, O, P, Q, R, S and T are sitting in a straight row, facing north. Only four people sit to the right of S. T sits second to the left of N. R sits fourth to the left of P. Q sits to the immediate right of S. Who sits at the extreme left end of the line?
+(1) O
+(2) T
+(3) Q
+(4) R
+= 1
+~ Number the seats 1 to 7 from the left. Four people sit to the right of S, so S is in seat 3, and Q is in seat 4. R is fourth to the left of P, so (R, P) is (1, 5) or (2, 6), since seat 3 is taken. With R1 and P5, the free seats 2, 6 and 7 cannot hold T two seats left of N. With R2 and P6, the free seats are 1, 5 and 7, so N is in 7, T in 5 and O in 1. The row is O R S Q T P N, and O is at the extreme left end.
+
+Q 67 | rea | Analogy & Classification
+EADI is related to KGJO in a certain way based on the English alphabetical order. In the same way, IEHM is related to OKNS. To which of the following is MILQ related to, following the same logic?
+(1) SORX
+(2) SPRX
+(3) SPRW
+(4) SORW
+= 4
+~ Each letter moves 6 places forward: E → K, A → G, D → J, I → O, and I → O, E → K, H → N, M → S. Applying +6 to MILQ: M → S, I → O, L → R, Q → W, giving SORW.
+
+Q 68 | rea | Series
+What should come in place of the question mark (?) in the given series?
+173 166 159 152 145 ?
+(1) 139
+(2) 136
+(3) 137
+(4) 138
+= 4
+~ Each term is 7 less than the one before it: 173 − 7 = 166, 166 − 7 = 159, 159 − 7 = 152, 152 − 7 = 145. So the next term is 145 − 7 = 138.
+
+Q 69 | rea | Coding-Decoding
+In a certain code language, ‘FIRM’ is coded as ‘5713’ and ‘MEAN’ is coded as ‘2148’. What is the code for ‘M’ in the given code language?
+(1) 3
+(2) 2
+(3) 4
+(4) 1
+= 4
+~ The letters are coded with digits in a jumbled order, so compare the common parts. The only letter common to FIRM and MEAN is M, and the only digit common to 5713 and 2148 is 1. So M is coded as 1.
+
+Q 70 | rea | Series
+Refer to the following letter series and answer the question.
+(Left) M R Y T O N B F W A H L D X G Z J Q V E P K (Right)
+How many vowels are there in the above series?
+(1) Five
+(2) Four
+(3) Six
+(4) Three
+= 4
+~ The vowels are A, E, I, O and U. In the series only O, A and E appear (there is no I or U, and Y is not counted as a vowel). So there are three vowels.
+
+Q 71 | rea | Series
+Find out the correct alternative that when filled in the blanks in the same sequence will make the series logically complete.
+BA_C F_HG _ILK NM_O R_TS
+(1) DELPQ
+(2) DEJPP
+(3) DEJPQ
+(4) DIJPQ
+= 3
+~ Each group takes the next four letters of the alphabet and writes them in pairs with each pair reversed: AB CD → BA DC, EF GH → FE HG, IJ KL → JI LK, MN OP → NM PO, QR ST → RQ TS. So the groups are BADC, FEHG, JILK, NMPO, RQTS, and the blanks are D, E, J, P, Q, i.e. DEJPQ.
+
+Q 72 | rea | Series
+What should come in place of the question mark (?) in the given series?
+79 83 92 108 133 ?
+(1) 171
+(2) 170
+(3) 169
+(4) 168
+= 3
+~ The differences between consecutive terms are 4, 9, 16, 25, i.e. 2², 3², 4², 5². The next difference is 6² = 36, so the missing term is 133 + 36 = 169.
+
+Q 73 | rea | Ranking & Arrangement
+In a row of 85 students facing north, Rohan’s position is 35th from the left and Shekhar’s position is 25th from the right. Kuldeep is sitting exactly between both of them. Find the position of Kuldeep from Rohan when counted to the right of Rohan.
+(1) 15th
+(2) 12th
+(3) 13th
+(4) 14th
+= 3
+~ Shekhar is 25th from the right, i.e. 85 − 25 + 1 = 61st from the left. Rohan is 35th from the left, so 61 − 35 − 1 = 25 students sit between them. Kuldeep sits exactly in the middle, at position (35 + 61)/2 = 48th from the left, with 12 students on each side of him. Counting to the right of Rohan, Kuldeep is 48 − 35 = 13th.
+
+Q 74 | rea | Analogy & Classification
+VTQS is related to PNKM in a certain way. In the same way, PMKF is related to JGEZ. To which of the given options is ROLG related, following the same logic?
+(1) LJEB
+(2) LIFA
+(3) MIFA
+(4) MJEM
+= 2
+~ Each letter moves 6 places backward: V → P, T → N, Q → K, S → M, and P → J, M → G, K → E, F → Z (going back past A to Z). Applying −6 to ROLG: R → L, O → I, L → F, G → A, giving LIFA.
+
+Q 75 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+97 − 46 + 12 ÷ 8 × 2 = ?
+(1) 99
+(2) 95
+(3) 97
+(4) 102
+= 2
+~ After interchanging the signs the expression becomes 97 + 46 − 12 × 8 ÷ 2. Do × and ÷ first, left to right: 12 × 8 = 96 and 96 ÷ 2 = 48. Then 97 + 46 − 48 = 95.
+
+Q 76 | rea | Miscellaneous Reasoning
+Each of the digits in the number 7231456 is arranged in the ascending order from left to right. The position(s) of how many digits will remain unchanged as compared to that in the original number?
+(1) One
+(2) None
+(3) Three
+(4) Two
+= 4
+~ Original number: 7 2 3 1 4 5 6; arranged in ascending order: 1 2 3 4 5 6 7. Comparing place by place, only the 2nd digit (2) and the 3rd digit (3) stay in the same place; every other digit moves. So the positions of two digits remain unchanged.
+
+Q 77 | rea | Analogy & Classification
+Based on the alphabetical order, three of the following four are alike in a certain way and thus form a group. Which is the one that does not belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter cluster)
+(1) BAY
+(2) ONL
+(3) GFE
+(4) TSQ
+= 3
+~ In BAY (B −1 → A, A −2 → Y, counting back past A to Z), ONL (O −1 → N, N −2 → L) and TSQ (T −1 → S, S −2 → Q) the steps are −1 and −2. In GFE the steps are −1 and −1 (G → F → E), so GFE is the odd one out.
+
+Q 78 | rea | Ranking & Arrangement
+A,B,C,D,E,F and G are sitting in a straight line facing North.
+Only E sits to the left of B. Only four people sit between E and C. Only G sits between F and D and F is not an immediate neighbor of C.
+How many people sit to the right of D?
+(1) 3
+(2) 1
+(3) 2
+(4) 4
+= 3
+~ Number the seats 1 to 7 from the left. Only E is to the left of B, so E is in seat 1 and B in seat 2. Four people sit between E and C, so C is in seat 6. F, G, D must take three seats in a row with G in the middle; the only such free seats are 3, 4, 5, so G is in seat 4. F cannot be next to C (seat 6), so F is in seat 3 and D in seat 5, and A takes seat 7. The line is E B F G D C A, so two people (C and A) sit to the right of D.
+
+Q 79 | rea | Ranking & Arrangement
+In a row of 55 people facing north, Tanmay sits 18th from the left end. If only 17 people sit between Yash and Tanmay, then what is Yash’s position from the right end of the row?
+(1) 19th
+(2) 20th
+(3) 18th
+(4) 21st
+= 2
+~ Yash cannot be to Tanmay’s left, because only 17 people sit to the left of Tanmay and Yash would then have no seat. So Yash is to Tanmay’s right, at 18 + 17 + 1 = 36th from the left. His position from the right end = 55 − 36 + 1 = 20th.
+
+Q 80 | rea | Directions & Distance
+Mr. Apso starts from point A and drives 7 km towards north. He then takes a right turn, drives 4 km, turns right and drives 9 km. He then takes a right turn and drives 8 km. He takes a final right turn, drives 2 km and stops at point P. How far (shortest distance) and towards which direction should he drive in order to reach point A again? (All turns are 90-degree turns only unless specified.)
+(1) 3 km to the west
+(2) 5 km to the east
+(3) 2 km to the west
+(4) 4 km to the east
+= 4
+~ Take A as the origin. 7 km north takes him to 7 km north of A; a right turn faces east, 4 km; another right turn faces south, 9 km, putting him 2 km south of A’s level and 4 km east; a right turn faces west, 8 km, so he is now 4 km west and 2 km south of A; a final right turn faces north, 2 km, bringing him level with A. So P is exactly 4 km west of A, and he must drive 4 km to the east to reach A.
+
+Q 81 | ga | Current Affairs
+In October 2025, which of the following cities of Vietnam hosted the high-level signing ceremony of the United Nations Convention against Cybercrime, where 72 UN member states signed the deal?
+(1) Vinh
+(2) Hanoi
+(3) Can Tho
+(4) Dalat
+= 2
+~ The UN Convention against Cybercrime was opened for signature at a ceremony in Hanoi, the capital of Vietnam, in October 2025, and 72 states signed it there, which is why it is also called the Hanoi Convention. It was adopted by the UN General Assembly in December 2024 and is the first global UN treaty on cybercrime; it enters into force 90 days after the 40th ratification.
+
+Q 82 | ga | Sports
+Which javelin thrower became the first from India to throw beyond 90 m internationally in May 2025?
+(1) Abdul Khaliq
+(2) Sachin Yadav
+(3) Neeraj Chopra
+(4) Shivpal Singh
+= 3
+~ Neeraj Chopra threw 90.23 m at the Doha Diamond League in May 2025, becoming the first Indian to cross the 90 m mark and setting a new national record. He still finished second in that meet, behind Germany's Julian Weber (91.06 m). Neeraj is India's Olympic gold medallist in javelin (Tokyo 2020).
+
+Q 83 | ga | Economy & Schemes
+What is the role of the Centralised Information Management System (CIMS) which was available to the regulated entities (REs) on or before May 13, 2025?
+(1) Filing complaints online
+(2) Tracking mobile apps
+(3) Monitoring tax payments
+(4) Managing digital data
+= 4
+~ CIMS is the Reserve Bank of India's centralised portal for collecting and managing the data that banks, NBFCs and other regulated entities submit to it. Under RBI's digital lending directions, REs had to report the details of their digital lending apps on the CIMS portal, which opened for this on 13 May 2025, and RBI publishes the list of such apps on its website from these submissions. Option 2 is tempting, but the system's role is to receive and manage data, not to track apps.
+
+Q 84 | ga | Sports
+Which Indian state finished at the top of the medal tally in the Khelo India Para Games 2025?
+(1) Maharashtra
+(2) Haryana
+(3) Uttar Pradesh
+(4) Tamil Nadu
+= 2
+~ Haryana topped the Khelo India Para Games 2025, held in New Delhi in March 2025, with 104 medals (34 gold, 39 silver, 31 bronze) and retained the team championship it had also won in the first edition (2023). Tamil Nadu finished second (28 gold) and Uttar Pradesh third (23 gold).
+
+Q 85 | ga | Awards, Books & Persons
+Who was awarded the Sahitya Akademi Award 2024 for his book "Ik Hor Ashwthama" in the Dogri language?
+(1) Dalip Kaur Tiwana
+(2) Jaswant Singh
+(3) Chaman Arora
+(4) Shiv Kumar Batalvi
+= 3
+~ The late Chaman Arora was given the Sahitya Akademi Award 2024 in Dogri for "Ik Hor Ashwthama", a collection of short stories; the award was given posthumously. Dalip Kaur Tiwana and Shiv Kumar Batalvi are well-known Punjabi writers, not Dogri ones.
+
+Q 86 | ga | Sports
+The 9th Asian Winter Games were held in February, 2025, with athletes from 34 countries, in:
+(1) Uzbekistan
+(2) China
+(3) Kyrgystan
+(4) Qatar
+= 2
+~ The 9th Asian Winter Games were held in Harbin, China, from 7 to 14 February 2025, with snow events at Yabuli. A record 34 National Olympic Committees and more than 1,200 athletes took part. Harbin had also hosted the 1996 Asian Winter Games.
+
+Q 87 | ga | Polity & Governance
+The Right to Disconnect Bill, 2025, seeks to establish which principle in the modern digital workplace?
+(1) Uniform labour laws
+(2) Mandatory overtime compensation
+(3) Clear work–life boundaries
+(4) Employer control over digital platforms
+= 3
+~ The Right to Disconnect Bill, 2025 is a private member's bill introduced in the Lok Sabha by Supriya Sule in December 2025. It seeks to give employees the right not to answer work calls and emails after working hours and on holidays without facing any action, so that there is a clear boundary between work and personal life. It proposes an Employees' Welfare Authority and a fine on companies that do not comply; overtime pay is only one supporting provision, not the main principle.
+
+Q 88 | ga | Sports
+In 2025, which legendary Indian cricketer was inducted into the ICC Hall of Fame along with Matthew Hayden and Hashim Amla?
+(1) Virat Kohli
+(2) Sourav Ganguly
+(3) Rahul Dravid
+(4) MS Dhoni
+= 4
+~ In June 2025, the ICC inducted seven players into its Hall of Fame at a ceremony in London: MS Dhoni, Matthew Hayden, Hashim Amla, Graeme Smith, Daniel Vettori, Sana Mir and Sarah Taylor. Dhoni, India's captain in the 2007 T20 World Cup, 2011 ODI World Cup and 2013 Champions Trophy wins, became the 11th Indian in the ICC Hall of Fame. Rahul Dravid had already been inducted in 2018.
+
+Q 89 | ga | Current Affairs
+Which types of equipment were included in the new defence acquisitions approved by India’s Defence Acquisition Council in 2025?
+(1) Stealth fighter jets and hypersonic glide vehicles
+(2) Submarines and satellite-based surveillance systems
+(3) Amphibious warships, missiles and swarm drones
+(4) Aircraft carriers and long-range cruise missiles
+= 3
+~ In October 2025, the Defence Acquisition Council chaired by Defence Minister Rajnath Singh gave Acceptance of Necessity for proposals worth about ₹79,000 crore. They included Landing Platform Docks (large amphibious warships) for the Navy, the Nag anti-tank missile system (NAMIS Mk-II) for the Army, and the Collaborative Long Range Target Saturation/Destruction System for the Air Force, an autonomous long-range strike system reported as a drone-swarm system, along with advanced lightweight torpedoes and 30-mm naval guns.
+
+Q 90 | ga | Science & Technology
+The DRAVYA portal, launched in 2025 as a digital knowledge repository for medicinal substances, was initiated by which ministry?
+(1) Ministry of Pharmaceuticals
+(2) Ministry of Ayush
+(3) Ministry of Biotechnology
+(4) Ministry of Education
+= 2
+~ DRAVYA (Digitised Retrieval Application for Versatile Yardstick of Ayush) was unveiled by the Ministry of Ayush on 23 September 2025, at the 10th Ayurveda Day event in Goa. Developed by the Central Council for Research in Ayurvedic Sciences (CCRAS), it is a digital repository of Ayurvedic medicinal substances with details of their botany, chemistry, pharmacology and safety, starting with 100 key substances. There is no separate "Ministry of Pharmaceuticals" or "Ministry of Biotechnology" in India; these are departments under other ministries.
+
+Q 91 | ga | Economy & Schemes
+What percentage of districts in the North Eastern Region showed an increase in their composite SDG Index score as per the second edition of the North Eastern Region (NER) District Sustainable Development Goals (SDG) Index Report (2023-24) released by NITI Aayog in July 2025?
+(1) 75%
+(2) 65%
+(3) 95%
+(4) 85%
+= 4
+~ The second NER District SDG Index (2023-24), released by NITI Aayog with the Ministry of Development of North Eastern Region and technical support from UNDP in July 2025, ranked 121 districts of the eight north-eastern states. It found that 85% of the districts improved their composite score compared with the first edition (2021-22). Hnahthial district of Mizoram was the top-ranked district.
+
+Q 92 | ga | Economy & Schemes
+During the August 2025 Monetary Policy Committee (MPC) review, what revision did the Reserve Bank of India (RBI) make to its inflation forecast for FY 2025-26?
+(1) Kept unchanged at 3.7%
+(2) Revised upward to 4.5%
+(3) Slashed sharply to 2.5%
+(4) Lowered to 3.1%
+= 4
+~ In its August 2025 policy review, the RBI's Monetary Policy Committee, headed by Governor Sanjay Malhotra, lowered its CPI inflation projection for 2025-26 from 3.7% (June 2025 projection) to 3.1%. It kept the repo rate unchanged at 5.5% with a neutral stance and retained the GDP growth forecast at 6.5%. Option 1 is tempting because 3.7% was the earlier forecast, but it was revised, not kept unchanged.
+
+Q 93 | ga | Economy & Schemes
+What is the maximum financial support provided for new construction of a tribal homestay unit under the Swadesh Darshan Scheme in April 2025?
+(1) ₹4 Lakh
+(2) ₹3 Lakh
+(3) ₹5 Lakh
+(4) ₹7 Lakh
+= 3
+~ Under the Swadesh Darshan scheme, the Ministry of Tourism is supporting 1,000 tribal homestays as part of the Pradhan Mantri Janjatiya Unnat Gram Abhiyan. As stated in Parliament in April 2025, the support is up to ₹5 lakh per unit for new construction and up to ₹3 lakh per unit for renovation, plus up to ₹5 lakh for village community needs. ₹3 lakh is the figure for renovation, not new construction.
+
+Q 94 | ga | Awards, Books & Persons
+Who among the following is known affectionately as “Bihar Kokila” and “Swar Kokila”?
+(1) Chandan
+(2) Payal Singh
+(3) Sharda Sinha
+(4) Bharat Byas
+= 3
+~ Sharda Sinha, the famous folk singer from Bihar, was called "Bihar Kokila" (Nightingale of Bihar) and "Swar Kokila" for her Bhojpuri, Maithili and Magahi folk songs, especially her Chhath Puja songs. She died in November 2024 and was given the Padma Vibhushan posthumously in 2025; she had earlier received the Padma Shri and the Padma Bhushan.
+
+Q 95 | ga | Current Affairs
+At which event did the Vice-President of India, C. P. Radhakrishnan, deliver an inaugural address emphasizing that climate action is an opportunity, not a constraint?
+(1) Bharat Climate Forum 2026
+(2) India Energy Summit 2026
+(3) International Solar Alliance Meet 2026
+(4) Global Green Growth Forum 2026
+= 1
+~ Vice-President C. P. Radhakrishnan addressed the Bharat Climate Forum 2026 in New Delhi on 9 January 2026. He said climate action is an opportunity for inclusive growth and energy security, not a constraint on development, and called for India's growth to be powered by home-grown clean technologies and manufacturing.
+
+Q 96 | ga | Polity & Governance
+Who among the following was appointed as the Chief Justice of India with effect from 24 November 2025?
+(1) Justice Surya Kant
+(2) Justice Sanjiv Khanna
+(3) Justice D.Y. Chandrachud
+(4) Justice B.R. Gavai
+= 1
+~ Justice Surya Kant took oath as the 53rd Chief Justice of India on 24 November 2025, succeeding Justice B.R. Gavai (the 52nd CJI). He is the first CJI from Haryana. Under Article 124 of the Constitution, the President appoints the Chief Justice of India; Sanjiv Khanna and D.Y. Chandrachud were earlier CJIs (51st and 50th).
+
+Q 97 | ga | Polity & Governance
+What major reform did the Government of India implement to simplify workers’ rights and labour law compliance in 2025?
+(1) Expansion of the Minimum Wages Act only
+(2) Merger of 29 labour laws into four Labour Codes
+(3) Elimination of trade unions and withdrawal of their legal recognition
+(4) Introduction of universal basic income
+= 2
+~ The four Labour Codes, which bring 29 central labour laws together, came into force on 21 November 2025. They are the Code on Wages, 2019, the Industrial Relations Code, 2020, the Code on Social Security, 2020 and the Occupational Safety, Health and Working Conditions Code, 2020. The Minimum Wages Act itself is one of the laws merged into the Code on Wages, and trade unions continue to be recognised under the Industrial Relations Code.
+
+Q 98 | ga | Science & Technology
+The National Frequency Allocation Plan, 2025 (NFAP-2025) primarily deals with the allocation of which of the following?
+(1) Radio-frequency spectrum
+(2) Electric vehicle charging bands
+(3) Postal codes
+(4) Railway land-use frequencies
+= 1
+~ The National Frequency Allocation Plan is the Department of Telecommunications' basic policy document that decides which radio-frequency bands (from 8.3 kHz to 3000 GHz) are used for which services, such as mobile (5G and future 6G), satellite, broadcasting, defence and aviation. NFAP-2025 was prepared by DoT's Wireless Planning and Coordination (WPC) Wing in line with the ITU Radio Regulations.
+
+Q 99 | ga | Geography & Environment
+Which of the following ranked as the top national park, with a score of 92.7%, in the Union Environment Ministry's Management Effectiveness Evaluation for the 2020–25 cycle?
+(1) Manas National Park
+(2) Bandipur National Park
+(3) Kanha National Park
+(4) Eravikulam National Park
+= 4
+~ In the Management Effectiveness Evaluation (MEE) of 438 national parks and wildlife sanctuaries for 2020–25, released by the Union Ministry of Environment, Forest and Climate Change in 2025, Eravikulam National Park in Kerala's Idukki district came first, sharing the top score (reported as 92.97%) with Dachigam National Park. Eravikulam is famous as the home of the largest population of the endangered Nilgiri tahr.
+
+Q 100 | ga | Current Affairs
+Which landmark treaty was adopted by WHO member states on 20 May 2025, aiming to strengthen global pandemic preparedness?
+(1) WHO Pandemic Agreement
+(2) Global Health Security Pact
+(3) Global Vaccine Agreement
+(4) International Health Regulations (IHR)
+= 1
+~ The 78th World Health Assembly in Geneva adopted the WHO Pandemic Agreement by consensus on 20 May 2025. It aims to improve pandemic prevention, preparedness and response and fairer access to vaccines, medicines and diagnostics; it is only the second international agreement negotiated under the WHO Constitution after the Framework Convention on Tobacco Control (2003). The International Health Regulations are an older instrument (revised in 2005), not the treaty adopted in 2025.

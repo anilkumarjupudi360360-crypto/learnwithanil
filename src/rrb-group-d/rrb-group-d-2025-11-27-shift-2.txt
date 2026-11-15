@@ -1,0 +1,868 @@
+# RRB Group D (Level-1 posts, CEN 08/2024) Computer Based Test, held 27 November 2025, Shift 2 (12:45 PM – 2:15 PM). 91 questions here; the paper had 100 (1 mark each, 90 minutes, one-third mark cut for a wrong answer).
+# Source: RRB's question paper for this shift with its answer key (correct option shown in green with a tick), as published by RRB (copy hosted by AglaSem). Answers = RRB's key. Explanations by Learn with Anil (writer + independent checker).
+# Q3, Q12, Q20, Q23, Q30, Q32, Q40, Q41 and Q43 are left out: the English paper printed them only in Telugu.
+
+Q 1 | sci | Biology
+What is the location of the cell wall in an organism?
+(1) Just inside the plasma membrane in an animal cell
+(2) Just inside the plasma membrane in a plant cell
+(3) Just outside the plasma membrane in a plant cell
+(4) Just outside the plasma membrane in an animal cell
+= 3
+~ A cell wall is a rigid outer layer found in plant cells (and in fungi and bacteria); in plants it is made mainly of cellulose and lies just outside the plasma membrane, giving the cell shape and protection. Animal cells have no cell wall at all, so options 1 and 4 are wrong, and in a plant cell the wall is outside, not inside, the membrane.
+
+Q 2 | sci | Physics
+If the length of a wire is doubled and its cross-sectional area is halved, its resistance will become:
+(1) Half the original
+(2) Four times the original
+(3) One-fourth the original
+(4) Twice the original
+= 2
+~ Resistance R = ρL/A, so it is directly proportional to length and inversely proportional to area. New resistance = ρ(2L)/(A/2) = 4ρL/A = 4R. Doubling the length alone would only double R, but halving the area doubles it again, making it four times the original.
+
+Q 4 | sci | Physics
+The increase in which of the following factor(s) will increase the resistance of a conductor?
+(i) Temperature of the conductor
+(ii) Length of the conductor
+(iii) Area of cross-section of the conductor
+(1) Both (i) and (ii)
+(2) Only (iii)
+(3) Only (i)
+(4) Both (ii) and (iii)
+= 1
+~ For a conductor R = ρL/A, so resistance rises when the length increases and falls when the area of cross-section increases. In metallic conductors the resistivity also rises with temperature because the vibrating ions obstruct the flow of electrons more. So an increase in temperature and in length both increase resistance, while a larger cross-section lowers it.
+
+Q 5 | sci | Chemistry
+⁴⁰₁₈Ar and ⁴⁰₂₀Ca are a pair of:
+(1) isotones
+(2) isobars
+(3) isoelectronic
+(4) isotopes
+= 2
+~ Isobars are atoms of different elements that have the same mass number but different atomic numbers. Argon (Z = 18) and calcium (Z = 20) both have mass number 40, so they are isobars. They are not isotopes (different atomic numbers), not isotones (Ar has 40 − 18 = 22 neutrons, Ca has 40 − 20 = 20), and not isoelectronic (18 and 20 electrons).
+
+Q 6 | sci | Physics
+A heavy wooden block is pushed across a rough floor. The applied force is gradually increased:
+At first, the block does not move.
+Then, at a certain force, the block just begins to slide.
+Finally, when the block is sliding, it moves with constant velocity.
+Which of the following correctly describes the force situation in these three stages?
+(1) Stage 1 – Balanced, Stage 2 – Unbalanced, Stage 3 – Balanced
+(2) Stage 1 – Unbalanced, Stage 2 – Balanced, Stage 3 – Balanced
+(3) Stage 1 – Unbalanced, Stage 2 – Unbalanced, Stage 3 – Balanced
+(4) Stage 1 – Balanced, Stage 2 – Balanced, Stage 3 – Unbalanced
+= 1
+~ In stage 1 the block stays at rest because static friction grows to equal the push, so the forces are balanced. In stage 2 the push exceeds the maximum static friction, so a net force acts and the block starts moving from rest (it accelerates), which means the forces are unbalanced. In stage 3 the block moves with constant velocity, so by Newton's first law the net force is zero and the forces are balanced again.
+
+Q 7 | sci | Biology
+Which structure is used by pea plant to climb up other plants?
+(1) Sucker
+(2) Shoot
+(3) Runner
+(4) Tendrils
+= 4
+~ The pea plant has a weak stem and climbs with the help of tendrils, which are thin, coiling structures (in pea, modified leaflets) that wind around a support. Suckers and runners are stem modifications used for vegetative propagation (for example in mint and grass), not for climbing.
+
+Q 8 | sci | Physics
+According to the New Cartesian Sign Convention, if a light ray travels from the object to the lens, the object is always placed such that:
+(1) The object distance (u) is always positive
+(2) The object is placed to the left of the lens
+(3) The object is always placed above the principal axis
+(4) The light falls on the lens from the right-hand side
+= 2
+~ In the New Cartesian Sign Convention the object is always placed to the left of the lens, so light falls on the lens from the left. Distances are measured from the optical centre; those measured in the direction of the incident light (to the right) are positive and those against it (to the left) are negative. Hence the object distance u is always negative, not positive, which rules out option 1.
+
+Q 9 | sci | Biology
+In the connective tissues of animals, the fat cells are arranged into lobules, which are separated by partitions of:
+(1) collagen and elastin fibres
+(2) yellow fibres and lymph
+(3) skeletal fibres and tendons
+(4) reticular fibres and plasma
+= 1
+~ Fat is stored in adipose tissue, a type of loose connective tissue. Its fat cells (adipocytes) are grouped into lobules, and these lobules are separated by thin partitions (septa) of connective tissue containing collagen and elastin fibres, which also carry blood vessels and nerves to the fat cells.
+
+Q 10 | sci | Biology
+Select the correct feature about sexual reproduction in organisms.
+(1) It combines the DNA of two parents in the offspring.
+(2) It passes the DNA of only one parent to the offspring.
+(3) It produces a large number of offspring.
+(4) It produces offspring exactly similar to the parent(s).
+= 1
+~ In sexual reproduction a male gamete and a female gamete fuse, so the offspring receives DNA from two parents, which creates variation among the offspring. Passing on DNA of a single parent and producing offspring exactly like the parent are features of asexual reproduction, and producing large numbers of offspring quickly is also typical of asexual methods.
+
+Q 11 | sci | Chemistry
+Concentrated sulphuric acid can be regarded as a dehydrating agent because it removes water from which of the following?
+(1) Sodium hydroxide
+(2) Ammonia gas
+(3) Propane
+(4) Glucose
+= 4
+~ Concentrated sulphuric acid has a strong attraction for water and can even remove the elements of water (hydrogen and oxygen in a 2:1 ratio) from compounds. When it is added to glucose or sugar it pulls out water and leaves behind black carbon: C₆H₁₂O₆ → 6C + 6H₂O, which is why it is called a dehydrating agent. Sodium hydroxide and ammonia are bases that simply react with the acid, and propane contains no oxygen, so no water can be removed from it.
+
+Q 13 | sci | Chemistry
+The processes used for removing the gangue from the ore are based on the differences between which properties of the gangue and the ore?
+(1) Refrative index
+(2) Chemical or physical
+(3) Only physical
+(4) Only chemical
+= 2
+~ Gangue is the unwanted earthy material (sand, soil, rocks) mixed with an ore. It is removed by methods such as gravity separation, froth flotation and magnetic separation, which use differences in physical properties, and by chemical methods such as leaching, which use differences in chemical properties. So the separation depends on physical or chemical differences, not on only one kind.
+
+Q 14 | sci | Chemistry
+Which of the following correctly matches a measurable property of matter with its SI unit?
+(1) Pressure – Newton
+(2) Volume – Cubic centimetre
+(3) Density – Kilogram per cubic metre
+(4) Temperature – Calorie
+= 3
+~ Density is mass per unit volume, so its SI unit is kilogram per cubic metre (kg/m³). The other pairs are wrong: the SI unit of pressure is the pascal (newton is the unit of force), of volume is the cubic metre (the cubic centimetre is a smaller CGS unit), and of temperature is the kelvin (calorie is a unit of heat energy).
+
+Q 15 | sci | Biology
+Which of the following methods is part of the fresh initiatives in irrigation to improve water availability for crops?
+(1) Drip irrigation and crop rotation
+(2) Manuring and chemical spraying
+(3) Rainwater harvesting and watershed management
+(4) Sprinkler irrigation and ploughing
+= 3
+~ Many Indian farms depend on rain, so new (fresh) initiatives to increase the water available for agriculture include rainwater harvesting and watershed management, which collect rainwater and recharge groundwater for use in crops. Drip and sprinkler irrigation are water-saving ways of applying water, but options 1 and 4 pair them with crop rotation and ploughing, which do not add to the water available; manuring and chemical spraying have nothing to do with water supply.
+
+Q 16 | sci | Chemistry
+The characteristic feature(s) of carbon, that lead to the formation of its large number of organic compounds is:
+(1) both tetravalency and catenation
+(2) solubility
+(3) only tetravalency
+(4) only catenation
+= 1
+~ Carbon forms a huge number of compounds because of two properties together. Catenation is its ability to bond with other carbon atoms to form long chains, branched chains and rings, and tetravalency (valency 4) lets each carbon atom bond with four other atoms such as hydrogen, oxygen, nitrogen or halogens. Either property alone would not explain the variety, so "both" is correct.
+
+Q 17 | sci | Biology
+The splitting of a unicellular organism into two equal daughter cells containing identical genetic material is termed as which of the following?
+(1) Binary fission
+(2) Conjugation
+(3) Spore formation
+(4) Budding
+= 1
+~ In binary fission a single-celled organism such as Amoeba or a bacterium copies its DNA and divides into two equal daughter cells with identical genetic material. In budding the new individual grows as a small outgrowth and is unequal in size, spore formation produces many spores, and conjugation is an exchange of genetic material between two cells, not splitting.
+
+Q 18 | sci | Physics
+An object is dropped from a height of 78.4 m. What is the time taken to reach the ground? (Use g = 9.8 m/s²)
+(1) 5 s
+(2) 6 s
+(3) 2 s
+(4) 4 s
+= 4
+~ The object is dropped, so initial velocity u = 0. Using h = ut + (1/2)gt²: 78.4 = (1/2) × 9.8 × t² = 4.9t², so t² = 78.4 ÷ 4.9 = 16 and t = 4 s.
+
+Q 19 | sci | Physics
+A convex lens is also called a converging lens because:
+(1) it does not bend light rays at all
+(2) it diverges rays of light away from each other
+(3) it always forms virtual images
+(4) it brings parallel rays to a [point]
+= 4
+~ A convex lens is thicker in the middle than at the edges, so it bends (refracts) rays parallel to its principal axis inwards and brings them together at a single point called the principal focus; this is why it is called a converging lens. It does bend light, it does not spread rays apart (that is a concave lens), and it forms real images for objects beyond the focus, so it does not always form virtual images.
+
+Q 21 | sci | Chemistry
+What is common between the reaction of metal sodium carbonate and sodium bicarbonate with hydrochloric acid?
+(1) Hydrogen carbonate is formed
+(2) Sodium chloride is formed
+(3) Hydrogen gas is released
+(4) Carbon monoxide is released
+= 2
+~ Both are metal carbonates/hydrogencarbonates, and they react with hydrochloric acid to give a salt, water and carbon dioxide: Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂ and NaHCO₃ + HCl → NaCl + H₂O + CO₂. So sodium chloride is formed in both. The gas released is carbon dioxide, not hydrogen or carbon monoxide; hydrogen gas is given off when an acid reacts with a reactive metal, not with a carbonate.
+
+Q 22 | sci | Biology
+Which one of the following correctly represents Mendel's conclusion about inheritance?
+(1) Each trait is controlled by two factors.
+(2) Each traits is controlled by one factor.
+(3) Each trait is controlled by one chromosome.
+(4) Each trait is controlled by three genes.
+= 1
+~ From his pea plant crosses Mendel concluded that every trait is controlled by a pair of factors (now called genes or alleles), one inherited from each parent. This is why a recessive trait hidden in the F1 generation can reappear in the F2 generation. Mendel did not know about chromosomes, and he described two factors per trait, not one or three.
+
+Q 24 | sci | Physics
+Which of the following is NOT an application of ultrasound?
+(1) Detecting cracks in metal blocks
+(2) Cleaning the objects
+(3) Medical imaging
+(4) Regular hearing tests
+= 4
+~ Ultrasound is sound of frequency above 20,000 Hz, which humans cannot hear. It is used to detect hidden cracks and flaws in metal blocks, to clean hard-to-reach parts of objects, and in medical imaging such as ultrasonography and echocardiography. A regular hearing test checks how well a person hears audible sounds (20 Hz to 20,000 Hz), so ultrasound, being inaudible, is not used for it.
+
+Q 25 | sci | Chemistry
+Corrosion of metals is a process in which:
+(1) metals change their colour permanently
+(2) metals are converted to their oxide, sulphide or carbonate by reaction with environmental agents
+(3) metals melt at low temperature
+(4) metals gain weight due to reaction with acids
+= 2
+~ Corrosion is the slow eating away of a metal when it reacts with substances around it such as air, moisture, acids or gases, forming compounds like oxides, sulphides or carbonates. Examples are rusting of iron (hydrated iron oxide), black coating on silver (silver sulphide) and green coating on copper (basic copper carbonate). A change of colour is only a visible sign, not the process itself, and corrosion has nothing to do with melting.
+
+Q 26 | qa | Trigonometry & Heights
+If tan A = 1, then find the value of sin A + cos A.
+(1) 1
+(2) 2
+(3) √2
+(4) √3
+= 3
+~ tan A = 1 means A = 45°, because tan 45° = 1. Then sin 45° = cos 45° = 1/√2, so sin A + cos A = 1/√2 + 1/√2 = 2/√2 = √2. Option 2 is wrong because sin A and cos A are each less than 1, so their sum cannot reach 2.
+
+Q 27 | qa | Percentage, Profit & Discount
+The market value of Amal’s investment rises successively by 5% in 2021, 6% in 2022, and 10% in 2023. If the initial value was ₹5,50,000, what will be its value (in ₹) at the end of 2023?
+(1) 6,75,800
+(2) 6,75,365
+(3) 6,73,365
+(4) 6,75,900
+= 3
+~ Successive increases multiply: value = 5,50,000 × 1.05 × 1.06 × 1.10. Step by step, 5,50,000 × 1.05 = 5,77,500; 5,77,500 × 1.06 = 6,12,150; 6,12,150 × 1.10 = 6,73,365. So the value at the end of 2023 is ₹6,73,365 (simply adding 5 + 6 + 10 = 21% would wrongly give ₹6,65,500).
+
+Q 28 | qa | Number System & Simplification
+Simplify the following:
+4 − [3 − 4 ÷ 2 + {4 − (5 − 2)}] + [4 + 18 ÷ 2 × 3(4 − 2)]
+(1) 60
+(2) 56
+(3) 58
+(4) 54
+= 1
+~ Use BODMAS, innermost brackets first. First bracket: (5 − 2) = 3, so {4 − 3} = 1, and 3 − 4 ÷ 2 + 1 = 3 − 2 + 1 = 2. Second bracket: 3(4 − 2) = 3 × 2 = 6, and 4 + 18 ÷ 2 × 6 = 4 + 9 × 6 = 4 + 54 = 58. The whole expression is 4 − 2 + 58 = 60.
+
+Q 29 | qa | Time & Work, Pipes & Cisterns
+A and B working together can do a piece of work in 6 days. B alone can do the same work in 15 days. How long (in days) will A alone take to do double the work?
+(1) 20
+(2) 10
+(3) 21
+(4) 23
+= 1
+~ One day's work of A and B together is 1/6 and of B alone is 1/15, so A's one day's work = 1/6 − 1/15 = (5 − 2)/30 = 3/30 = 1/10. A alone finishes the work in 10 days, so double the work takes 2 × 10 = 20 days. Option 2 (10 days) is the time for the work only once.
+
+Q 31 | qa | Number System & Simplification
+The number of prime numbers lying between 374 and 384 is:
+(1) 1
+(2) 0
+(3) 3
+(4) 2
+= 4
+~ The numbers are 375 to 383. Even numbers and 375 (divisible by 5) are not prime; 377 = 13 × 29 and 381 = 3 × 127 are not prime. For 379 and 383, test the primes up to 19 (since 19² = 361 and 20² = 400): neither is divisible by 2, 3, 5, 7, 11, 13, 17 or 19, so both are prime. Hence there are 2 primes, 379 and 383.
+
+Q 33 | qa | Age, Calendar & Clock
+A brother is 6 years older than his sister. The sum of their present ages is 38 years. What will be the age (in years) of the sister after 15 years from now?
+(1) 30
+(2) 33
+(3) 31
+(4) 32
+= 3
+~ Let the sister's present age be x; then the brother's age is x + 6. So x + (x + 6) = 38, which gives 2x = 32 and x = 16 years. After 15 years the sister will be 16 + 15 = 31 years old.
+
+Q 34 | qa | Percentage, Profit & Discount
+A shopkeeper marks the price of an article at ₹5,670. Find the cost price if after allowing a discount of 28% he still gains 26% on the cost price.
+(1) ₹3,153
+(2) ₹3,216
+(3) ₹3,240
+(4) ₹3,225
+= 3
+~ Selling price after 28% discount = 72% of 5,670 = 0.72 × 5,670 = ₹4,082.40. This selling price is 126% of the cost price, so CP = 4,082.40 ÷ 1.26 = ₹3,240. Check: 3,240 × 1.26 = 4,082.40.
+
+Q 35 | qa | Ratio, Proportion & Average
+Amit and Deeksha together invested ₹15,700 in a business. At the end of the year, out of a total profit of ₹6,000, Amit's share was ₹2,100. How much was Amit's investment?
+(1) ₹6,330
+(2) ₹6,960
+(3) ₹6,545
+(4) ₹5,495
+= 4
+~ For the same time period, profit is shared in the ratio of investments. Amit's share of the profit is 2,100/6,000 = 7/20, so his share of the investment is also 7/20 of ₹15,700 = 7 × 785 = ₹5,495. Deeksha then invested ₹10,205, and 5,495 : 10,205 = 2,100 : 3,900 = 7 : 13.
+
+Q 36 | qa | Geometry & Mensuration
+The cost of fencing a square field at ₹15/m is ₹18,000. Find the cost of fencing the same field at ₹11 per 100 m.
+(1) ₹138
+(2) ₹146
+(3) ₹142
+(4) ₹132
+= 4
+~ Length of fencing (the perimeter) = 18,000 ÷ 15 = 1,200 m. At ₹11 for every 100 m, the cost = (1,200 ÷ 100) × 11 = 12 × 11 = ₹132.
+
+Q 37 | qa | Percentage, Profit & Discount
+A person saves 60% of his income. If his expenditure is ₹400, then his income (in ₹) is:
+(1) 160
+(2) 240
+(3) 1,040
+(4) 1,000
+= 4
+~ If he saves 60% of his income, he spends the remaining 100% − 60% = 40%. So 40% of income = ₹400, which gives income = 400 × 100/40 = ₹1,000. Option 2 (240) wrongly takes 60% of 400.
+
+Q 38 | qa | Number System & Simplification
+Simplify: (32672 × 32672 − 21864 × 21864)/10808
+(1) 54836
+(2) 54436
+(3) 54536
+(4) 54636
+= 3
+~ Use a² − b² = (a + b)(a − b) with a = 32672 and b = 21864. Here a − b = 32672 − 21864 = 10808, which is exactly the denominator. So the value = (a + b)(a − b)/(a − b) = a + b = 32672 + 21864 = 54536.
+
+Q 39 | qa | HCF, LCM & Fractions
+The HCF of two numbers is 23 and their sum is 161. The possible pair(s) of these numbers is/are:
+(1) 3
+(2) 4
+(3) 2
+(4) 1
+= 1
+~ Let the numbers be 23a and 23b, where a and b have no common factor other than 1. Then 23(a + b) = 161, so a + b = 7. The co-prime pairs adding to 7 are (1, 6), (2, 5) and (3, 4), giving the number pairs (23, 138), (46, 115) and (69, 92). So 3 pairs are possible.
+
+Q 42 | qa | Geometry & Mensuration
+A toy is in the form of a cone mounted on a hemisphere, both having the same radius of 7 cm. If the volume of the conical part is equal to the volume of the hemispherical part, what is the total height of the toy?
+(1) 21 cm
+(2) 14 cm
+(3) 35 cm
+(4) 28 cm
+= 1
+~ Volume of cone = (1/3)πr²h and volume of hemisphere = (2/3)πr³. Setting them equal gives h = 2r = 2 × 7 = 14 cm, which is only the height of the cone. The total height of the toy = cone height + hemisphere radius = 14 + 7 = 21 cm, so option 2 (14 cm) is the tempting wrong answer.
+
+Q 44 | qa | Percentage, Profit & Discount
+If an item marked at ₹3,650 is sold for ₹730, what is the discount percentage?
+(1) 80%
+(2) 82%
+(3) 79%
+(4) 78%
+= 1
+~ Discount = marked price − selling price = 3,650 − 730 = ₹2,920. Discount % = (2,920/3,650) × 100 = 80%. Quick check: 730 is one-fifth (20%) of 3,650, so the discount is 100% − 20% = 80%.
+
+Q 45 | qa | Percentage, Profit & Discount
+A shopkeeper sold an article for ₹85.50 at a profit of 12.5%. Had he sold it for ₹81.70, then what would be his profit or loss percentage?
+(1) 8.5% loss
+(2) 7.25% loss
+(3) 7.5% profit
+(4) 8.5% profit
+= 3
+~ Cost price = 85.50 ÷ 1.125 = ₹76. At a selling price of ₹81.70, which is still above the cost price, the profit = 81.70 − 76 = ₹5.70. Profit % = (5.70/76) × 100 = 7.5% profit.
+
+Q 46 | qa | Algebra & Equations
+A bag contains 1-rupee and 2-rupee coins. The total number of coins is 10, and their total value is ₹16. What is the difference between the numbers of two-rupee coins and one-rupee coins?
+(1) 4
+(2) 3
+(3) 2
+(4) 1
+= 3
+~ Let there be x one-rupee coins and y two-rupee coins. Then x + y = 10 and x + 2y = 16; subtracting the first equation from the second gives y = 6, so x = 4. Check: 4 × 1 + 6 × 2 = 16. The difference is 6 − 4 = 2.
+
+Q 47 | qa | Statistics & Data
+Find the median of the numbers 3, 5, 2, 5, 5, 8, 4, 2, 7, 9, 8 and 11.
+(1) 8
+(2) 4
+(3) 5
+(4) 3
+= 3
+~ Arrange the 12 numbers in ascending order: 2, 2, 3, 4, 5, 5, 5, 7, 8, 8, 9, 11. With an even count, the median is the average of the 6th and 7th values = (5 + 5)/2 = 5.
+
+Q 48 | qa | Simple & Compound Interest
+Find the simple interest (in ₹) on ₹4,000 at 6% per annum rate of interest for the period from 19 February 2024 to 20 April 2024.
+(1) 38
+(2) 41
+(3) 40
+(4) 39
+= 3
+~ Count the days leaving out the starting day and including the last day: 2024 is a leap year, so February gives 29 − 19 = 10 days, March 31 days and April 20 days, a total of 61 days. Time = 61/366 year = 1/6 year (as 366 = 6 × 61). SI = 4,000 × 6 × (1/6)/100 = ₹40.
+
+Q 49 | qa | Ratio, Proportion & Average
+Rajiv and Sachin started a business, investing amounts of ₹160 and ₹1,690, respectively. If Rajiv's share in the profit earned by them is ₹720, what is the total profit (in ₹) earned by them together?
+(1) 8,325
+(2) 8,395
+(3) 8,361
+(4) 8,454
+= 1
+~ Profit is shared in the ratio of investments, 160 : 1,690 = 16 : 169, a total of 185 parts. Rajiv's 16 parts = ₹720, so 1 part = ₹45. Total profit = 185 × 45 = ₹8,325 (Sachin gets 169 × 45 = ₹7,605).
+
+Q 50 | qa | Statistics & Data
+The arithmetic mean of the observations 76, 28, 79, 17, 33, 95, 83, 30 and 27 is:
+(1) 52
+(2) 61
+(3) 47
+(4) 46
+= 1
+~ Sum of the 9 observations = 76 + 28 + 79 + 17 + 33 + 95 + 83 + 30 + 27 = 468. Mean = 468 ÷ 9 = 52.
+
+Q 51 | rea | Ranking & Arrangement
+A, B, C, R, S, T and U are sitting around a circular table facing the centre of the table. C sits to the immediate right of R. Only three people sit between C and T when counted from the left of C. Only three people sit between R and B when counted from the left of R. S sits to the immediate right of A. How many people sit between R and A when counted from the right of A?
+(1) Two
+(2) Four
+(3) One
+(4) Three
+= 3
+~ Place R; C is immediately to R's right. Counting leftwards from C, three people are skipped and the fourth seat is T; counting leftwards from R, the fourth seat is B. Of the three seats left, the only pair in which S is immediately to the right of A puts A and S next to R (S between A and R), and U takes the last seat. Going round to the right the order is R, C, U, B, T, A, S. Counting to the right from A, we meet S and then R, so only one person (S) sits between R and A.
+
+Q 52 | rea | Directions & Distance
+Mr. Zzz starts from Point A and drives 5 km towards the East. He then takes a right turn, drives 14 km, turns right and drives 16 km. He then takes a right turn and drives 16 km. He takes a final right turn, drives 11 km and stops at Point P. How far (shortest distance) and towards which direction should he drive in order to reach Point A again? (All turns are 90 degrees turns only unless specified).
+(1) 4 km to the North
+(2) 2 km to the South
+(3) 1 km to the West
+(4) 3 km to the East
+= 2
+~ Take A as (0, 0), with East and North positive. 5 km East gives (5, 0); a right turn from East means South, 14 km gives (5, −14); a right turn from South means West, 16 km gives (−11, −14); a right turn from West means North, 16 km gives (−11, 2); a right turn from North means East, 11 km gives P = (0, 2). P is 2 km directly north of A, so he must drive 2 km to the South.
+
+Q 53 | rea | Ranking & Arrangement
+Seven people B, C, D, I, J, K and L are sitting around a circular table facing the centre of the table. I sits fourth to the right of J. Only two people sit between B and C when counted from the left of B. D sits third to the left of K. L is an immediate neighbour of K and C. How many people between I and L when counted from the left of L?
+(1) Two
+(2) One
+(3) Three
+(4) Four
+= 4
+~ Fix J and put I fourth to J's right. C is third to the left of B, D is third to the left of K, and L must sit between K and C; trying the free seats, only one arrangement satisfies all of these: going round to the right, J, K, L, C, I, D, B. Check: from B counting left we pass D and I before C (two people), and D is third to the left of K. Counting to the left from L we pass K, J, B and D before reaching I, so four people sit between them.
+
+Q 54 | rea | Miscellaneous Reasoning
+Refer to the following number series and answer the question that follows (all numbers are single-digit numbers only). Counting to be done from left to right only.
+(Left) 5 4 2 3 7 8 5 1 6 7 9 4 2 6 7 6 3 9 7 5 4 1 6 9 8 3 4 (Right)
+How many such odd digits are there, each of which is immediately preceded by an even digit and also immediately followed by an odd digit?
+(1) More than three
+(2) Three
+(3) Two
+(4) One
+= 1
+~ Look for the pattern even – odd – odd and count the middle digit. The cases are 2 3 7, 8 5 1, 6 7 9 and 6 3 9, so there are four such odd digits. Others do not qualify: for example 6 7 6, 4 1 6, 6 9 8 and 8 3 4 have an even digit after the odd one. Since four is more than three, option 1 is correct.
+
+Q 55 | rea | Analogy & Classification
+In the following triads, each group of letters is related to the subsequent one following a certain logic. Select from the given options, the one which follows the same logic.
+ECHO - CHEO - OHCE
+URGE - RGUE - EGRU
+(1) PAST - PSAT - TSAP
+(2) NAVY - ANVY - YAVN
+(3) WAIT - AIWT - TIAW
+(4) JOYS - OYJS - OYSJ
+= 3
+~ In the second word, the first letter of the first word moves to the third place (letters 1 2 3 4 become 2 3 1 4: ECHO → CHEO, URGE → RGUE), and the third word is the first word written in reverse (ECHO → OHCE, URGE → EGRU). WAIT → AIWT and WAIT reversed is TIAW, so option 3 fits. PAST should give ASPT, NAVY should give AVNY, and JOYS reversed is SYOJ, not OYSJ.
+
+Q 56 | rea | Series
+What should come in place of the question mark (?) in the given series?
+2, 8, 18, 32, 50, ?
+(1) 80
+(2) 60
+(3) 75
+(4) 72
+= 4
+~ Each term is 2 × n²: 2 × 1² = 2, 2 × 2² = 8, 2 × 3² = 18, 2 × 4² = 32, 2 × 5² = 50, so the next term is 2 × 6² = 72. Equivalently, the differences 6, 10, 14, 18 increase by 4, so the next difference is 22 and 50 + 22 = 72.
+
+Q 57 | rea | Series
+What should come in place of the question mark (?) in the given series?
+3, 6, 9, 12, 15, ?, 21
+(1) 18
+(2) 20
+(3) 16
+(4) 17
+= 1
+~ Each term is 3 more than the one before it (the multiples of 3). So the missing term is 15 + 3 = 18, and 18 + 3 = 21 confirms it.
+
+Q 58 | rea | Miscellaneous Reasoning
+Each of the digits in the number 13645928 is arranged in descending order from left to right. The position(s) of how many digits will remain unchanged as compared to that in the original number?
+(1) Three
+(2) None
+(3) One
+(4) Two
+= 4
+~ Arranged in descending order, 13645928 becomes 98654321. Comparing place by place (1 3 6 4 5 9 2 8 with 9 8 6 5 4 3 2 1), only 6 (3rd place) and 2 (7th place) stay in the same position. So two digits are unchanged.
+
+Q 59 | rea | Mathematical Operations
+If + means −, − means ×, × means ÷, ÷ means +, then what will come in place of the question mark (?) in the following equation?
+77 − 5 ÷ 49 + 21 × 7 = ?
+(1) 442
+(2) 431
+(3) 435
+(4) 446
+= 2
+~ After replacing the signs, the expression becomes 77 × 5 + 49 − 21 ÷ 7. By BODMAS, 77 × 5 = 385 and 21 ÷ 7 = 3, so the value is 385 + 49 − 3 = 431.
+
+Q 60 | rea | Coding-Decoding
+In a certain code language, ‘buyer queen heart’ is coded as ‘os ld xi’ and ‘drive heart aunt’ is coded as ‘kx to os’. How is ‘heart’ coded in the given language?
+(1) ld
+(2) kx
+(3) os
+(4) xi
+= 3
+~ The word common to both sentences is ‘heart’, and the only code common to both coded forms is ‘os’. So ‘heart’ is coded as ‘os’.
+
+Q 61 | rea | Ranking & Arrangement
+Dev ranked 10th from the top and 31st from the bottom in his class. How many students are there in the class?
+(1) 39
+(2) 41
+(3) 50
+(4) 40
+= 4
+~ Total = rank from top + rank from bottom − 1 = 10 + 31 − 1 = 40, because Dev is counted in both ranks. Option 2 (41) forgets to subtract the one double count.
+
+Q 62 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-cluster pairs are alike in a certain way and thus form a group. Which letter-cluster pair DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) PU-QN
+(2) LQ-MJ
+(3) RW-SP
+(4) NS-OK
+= 4
+~ In each pair, the first letter moves 1 forward and the second letter moves 7 back: P(16) → Q(17) and U(21) → N(14); L → M and Q(17) → J(10); R → S and W(23) → P(16). In NS-OK, N → O is +1 but S(19) → K(11) is −8, so it breaks the pattern and is the odd one out.
+
+Q 63 | rea | Series
+What should come in place of the question mark (?) in the given series?
+26 42 58 74 90 ?
+(1) 107
+(2) 106
+(3) 105
+(4) 104
+= 2
+~ Each term is 16 more than the previous one: 26 + 16 = 42, 42 + 16 = 58, 58 + 16 = 74, 74 + 16 = 90. So the next term is 90 + 16 = 106.
+
+Q 64 | rea | Miscellaneous Reasoning
+Refer to the following number and symbol series and answer the question that follows. Counting to be done from left to right only. All numbers are single-digit numbers only.
+(Left) 5 $ 5 7 $ $ @ & * € 3 # 8 # $ 5 © 7 £ 4 & * (Right)
+How many such numbers are there, each of which is immediately preceded by a number and also immediately followed by a symbol?
+(1) One
+(2) Two
+(3) Three
+(4) Zero
+= 1
+~ Look for the pattern number – number – symbol. Only 5 7 $ fits, so the 7 there is the one such number. Every other number (3, 8, 5, 7, 4 later in the series and the 5 after the first $) is preceded by a symbol, and the first 5 has nothing before it.
+
+Q 65 | rea | Miscellaneous Reasoning
+Refer to the following number series and answer the question that follows (all numbers are single-digit numbers only). (Counting to be done from left to right only.)
+(Left) 9 1 6 7 7 2 8 3 4 3 3 2 7 9 9 9 5 4 6 7 3 6 3 (Right)
+How many such even numbers are there, each of which is immediately preceded by an odd number and also immediately followed by an even number?
+(1) Two
+(2) Three
+(3) Four
+(4) One
+= 1
+~ Look for the pattern odd – even – even and count the middle number. The cases are 7 2 8 and 5 4 6, so there are two such even numbers. Others fail: 1 6 7, 3 4 3, 3 2 7 and 3 6 3 have an odd number after the even one, while 8 (after 2) and 6 (after 4) are preceded by even numbers.
+
+Q 66 | rea | Ranking & Arrangement
+60 people are standing in a row facing north. Mayank is 13th from the right end while Kishan is 18th from the left end. How many people are there between Mayank and Kishan?
+(1) 28
+(2) 27
+(3) 29
+(4) 30
+= 3
+~ Mayank's position from the left end = 60 − 13 + 1 = 48th. Kishan is 18th from the left, so the people between them are those in positions 19 to 47, that is 48 − 18 − 1 = 29 people.
+
+Q 67 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) ZWU
+(2) HEC
+(3) DBY
+(4) EBZ
+= 3
+~ In ZWU, HEC and EBZ, the second letter is 3 places before the first and the third letter is 2 places before the second: Z(26) → W(23) → U(21); H(8) → E(5) → C(3); E(5) → B(2) → Z (going back past A, B − 2 = Z). In DBY the steps are reversed: D(4) → B(2) is −2 and B → Y is −3, so DBY is the odd one out.
+
+Q 68 | rea | Directions & Distance
+Kareena starts from Point A and drives 16 km towards the east. She then takes a right turn, drives 7 km, turns right and drives 7 km. She then takes a left turn and drives 8 km. She takes a final right turn, drives 9 km and stops at Point P. How far (shortest distance) and towards which direction should she drive in order to reach Point A again? (All turns are 90 degrees turns only unless specified.)
+(1) 15 km towards the north
+(2) 9 km towards the west
+(3) 12 km towards the east
+(4) 15 km towards the south
+= 1
+~ Take A as (0, 0), with East and North positive. 16 km East gives (16, 0); a right turn from East means South, 7 km gives (16, −7); a right turn from South means West, 7 km gives (9, −7); a left turn from West means South, 8 km gives (9, −15); a right turn from South means West, 9 km gives P = (0, −15). P is 15 km directly south of A, so she must drive 15 km towards the north (option 4 gives the right distance but the wrong direction).
+
+Q 69 | rea | Series
+Which of the following letter-number clusters will replace the question mark (?) in the given series to make it logically complete?
+JSF 10 LUH 11 NWJ 12 PYL 13 ?
+(1) RBO 14
+(2) RAN 14
+(3) QAN 14
+(4) QBP 14
+= 2
+~ Each letter moves 2 places forward and the number rises by 1. First letters: J, L, N, P, R; second letters: S, U, W, Y, A (after Z comes A); third letters: F, H, J, L, N; numbers: 10, 11, 12, 13, 14. So the next term is RAN 14.
+
+Q 70 | rea | Syllogism & Statements
+Read the given statement(s) and conclusions carefully. Assuming that the information given in the statement(s) is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).
+Statements:
+All cars are buildings.
+All buildings are papers.
+Conclusion:
+(I) Some buildings are cars.
+(II) All cars are papers.
+(1) Neither conclusion (I) nor (II) follows.
+(2) Only conclusion (II) follows.
+(3) Only conclusion (I) follows.
+(4) Both conclusions (I) and (II) follow.
+= 4
+~ Since all cars are buildings, the cars form a part of the buildings, so some buildings are certainly cars: conclusion I follows. The circle of cars lies inside buildings, which lies inside papers, so all cars are papers: conclusion II also follows. Hence both conclusions follow.
+
+Q 71 | rea | Miscellaneous Reasoning
+Refer to the number series given below and answer the question that follows. Counting to be done from left to right only.
+(NOTE: All numbers are single-digit numbers only.)
+(Left) 4 2 7 1 5 8 7 2 6 8 3 6 (Right)
+How many such prime numbers are there which are immediately followed by even numbers?
+(1) More than three
+(2) Two
+(3) One
+(4) Three
+= 1
+~ The single-digit primes are 2, 3, 5 and 7. In the series, 5 is followed by 8, the second 7 by 2, that 2 by 6, and 3 by 6, giving four such primes. The first 2 (followed by 7) and the first 7 (followed by 1) do not count. Four is more than three, so option 1 is correct.
+
+Q 72 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements: All pan are wok. All cauldron are wok.
+Conclusions (I): Some pan are cauldron.
+Conclusions (II): Some wok are cauldron.
+(1) Both conclusions (I) and (II) follow.
+(2) Only conclusion (I) follows.
+(3) Only conclusion (II) follows.
+(4) Neither conclusion (I) nor (II) follows.
+= 3
+~ Pan and cauldron are both inside wok, but nothing links pan with cauldron directly; the two circles may or may not overlap, so conclusion I does not follow. Since all cauldron are wok, some wok are certainly cauldron, so conclusion II follows. Hence only conclusion II follows.
+
+Q 73 | rea | Coding-Decoding
+In a certain code language, ‘virus book two’ is coded as ‘zv jo db’ and ‘book wet theme’ is coded as ‘xh im jo’. How is ‘book’ coded in that language?
+(1) xh
+(2) jo
+(3) db
+(4) zv
+= 2
+~ The word common to both sentences is ‘book’, and the only code common to both coded forms is ‘jo’. So ‘book’ is coded as ‘jo’.
+
+Q 74 | rea | Ranking & Arrangement
+A, B, C, D, E, F and G are sitting around a circular table facing the centre. E sits third to the right of G. A sits third to the right of E. D is the immediate neighbour of B and A. C sits to the immediate right of F.
+How many people sit between F and B when counted from the left of B?
+(1) Two
+(2) Three
+(3) Four
+(4) One
+= 1
+~ Place G; E is third to G's right and A is third to E's right, which makes A the immediate left neighbour of G. D must sit next to A on the other side (A's left), and B next to D. The two seats left go to F and C, with C immediately to F's right. Going round to the right the order is G, F, C, E, B, D, A. Counting to the left from B we pass E and C before reaching F, so two people sit between them.
+
+Q 75 | rea | Series
+What should come in place of the question mark (?) in the given series?
+SIF QGD OEB MCZ ?
+(1) KAX
+(2) KAY
+(3) NDY
+(4) NDA
+= 1
+~ Each letter moves 2 places back in every term. First letters: S, Q, O, M, K; second letters: I, G, E, C, A; third letters: F, D, B, Z, X (before A comes Z). So the next term is KAX.
+
+Q 76 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding to/subtracting from/multiplying with 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(45, 114, 8)
+(24, 108, 20)
+(1) (32, 114, 18)
+(2) (17, 36, 2)
+(3) (8, 37, 7)
+(4) (16, 49, 7)
+= 3
+~ The middle number = 2 × first number + 3 × third number: 2 × 45 + 3 × 8 = 90 + 24 = 114 and 2 × 24 + 3 × 20 = 48 + 60 = 108. For (8, 37, 7): 2 × 8 + 3 × 7 = 16 + 21 = 37, which fits. The others fail: 64 + 54 = 118 (not 114), 34 + 6 = 40 (not 36) and 32 + 21 = 53 (not 49).
+
+Q 77 | rea | Coding-Decoding
+BFKP is related to XAGK in a certain way based on the English alphabetical order. In the same way, LLUV is related to HGQQ. To which of the given options is ZWIG related, following the same logic?
+(1) VBER
+(2) VERT
+(3) VREB
+(4) VBRE
+= 3
+~ The letters move back by 4, 5, 4 and 5 places in turn: B → X (−4, going back past A), F → A (−5), K → G (−4), P → K (−5); likewise L → H, L → G, U → Q, V → Q. Applying the same to ZWIG: Z − 4 = V, W − 5 = R, I − 4 = E, G − 5 = B, giving VREB.
+
+Q 78 | rea | Mathematical Operations
+If ‘E’ stands for ‘+’, ‘F’ stands for ‘−’, ‘G’ stands for ‘×’ and ‘H’ stands for ‘÷’, what will come in place of question mark ‘?’ in the following equation?
+60 F 12 H 3 E 8 G 2 = ?
+(1) 71
+(2) 76
+(3) 72
+(4) 75
+= 3
+~ Replacing the letters gives 60 − 12 ÷ 3 + 8 × 2. By BODMAS, 12 ÷ 3 = 4 and 8 × 2 = 16, so the value is 60 − 4 + 16 = 72.
+
+Q 79 | rea | Coding-Decoding
+EQ 9 is related to HL −4 in a certain way. In the same way, MR 13 is related to PM 0. To which of the following is MU 19 related, following the same logic?
+(1) KP 7
+(2) RE 2
+(3) YT 5
+(4) PP 6
+= 4
+~ The first letter moves 3 places forward, the second letter moves 5 places back, and 13 is subtracted from the number: E → H, Q → L, 9 − 13 = −4; M → P, R → M, 13 − 13 = 0. For MU 19: M → P, U → P and 19 − 13 = 6, giving PP 6.
+
+Q 80 | rea | Blood Relations
+In a certain code language,
+A + B means ‘A is the sister of B’,
+A @ B means ‘A is the brother of B’,
+A − B means ‘A is the wife of B’,
+and A # B means ‘A is the father of B’.
+How is O related to V if ‘O @ P + T # G − V’?
+(1) Wife's brother
+(2) Wife's father's brother
+(3) Wife's father
+(4) Wife's father's father
+= 2
+~ G − V: G is the wife of V. T # G: T is the father of G, so T is V's wife's father. P + T: P is the sister of T, and O @ P: O is the brother of P, so O is also a brother of T. Hence O is V's wife's father's brother.
+
+Q 81 | ga | Geography & Environment
+According to the Internal Displacement Monitoring Centre report, between 2015 and 2024, how many internal displacements due to disasters were recorded in India?
+(1) 10 million
+(2) 32.3 million
+(3) 25.4 million
+(4) 50 million
+= 2
+~ The Geneva-based Internal Displacement Monitoring Centre (IDMC) reported in June 2025 that India recorded about 32.3 million (3.23 crore) internal displacements due to disasters between 2015 and 2024, the third-highest in the world after China and the Philippines. In 2024 alone India recorded 5.4 million such displacements, its highest in 12 years; worldwide, storms and floods caused nearly 90% of disaster displacements.
+
+Q 82 | ga | Sports
+The 2025 World Kabaddi Cup was won by which of the following countries?
+(1) Pakistan
+(2) India
+(3) Iran
+(4) South Korea
+= 2
+~ India won the 2025 Kabaddi World Cup, held in the West Midlands region of England from 17 to 23 March 2025. The Indian men beat hosts England 44–41 in the final, and the Indian women also won their title by defeating England 57–34, giving India a double.
+
+Q 83 | ga | Current Affairs
+In July 2025, which institution announced India's first AI Plus Campus in Amaravati, Andhra Pradesh?
+(1) BITS Pilani
+(2) IIT Madras
+(3) NIT Warangal
+(4) IIIT Hyderabad
+= 1
+~ In July 2025 BITS Pilani (Birla Institute of Technology and Science) announced an "AI+ Campus" at Amaravati, the capital region of Andhra Pradesh, as part of a ₹2,200 crore expansion plan announced by its chancellor Kumar Mangalam Birla. Andhra Pradesh Chief Minister N. Chandrababu Naidu also announced the news; the campus is to focus on artificial intelligence, data science, robotics, cyber-physical systems and computational linguistics.
+
+Q 84 | ga | Science & Technology
+In May 2025, six African nations signed a Memorandum of Understanding (MoU) with the World Health Organization (WHO) to combat Kala Azar. What does Kala Azar refer to?
+(1) A bacterial infection spread through contaminated water
+(2) A genetic disorder affecting red blood cells
+(3) A type of viral fever transmitted by mosquitoes
+(4) A parasitic disease caused by sandfly bites
+= 4
+~ Kala-azar, or visceral leishmaniasis, is a parasitic disease caused by Leishmania protozoa and spread by the bite of infected sandflies; it causes long fever, weight loss and an enlarged spleen and liver, and can be fatal if untreated. In May 2025 Chad, Djibouti, Ethiopia, Somalia, South Sudan and Sudan signed an MoU on the sidelines of the 78th World Health Assembly in Geneva to eliminate it. It is not caused by bacteria or viruses and is not spread by mosquitoes.
+
+Q 85 | ga | Current Affairs
+On 20 June 2025, Prime Minister Narendra Modi officially flagged off India's first indigenously manufactured locomotive export to which country?
+(1) Mongolia
+(2) Republic of Guinea
+(3) Republic of China
+(4) Spain
+= 2
+~ On 20 June 2025, at an event in Siwan district of Bihar, Prime Minister Narendra Modi flagged off the first export locomotive built at the Marhowrah locomotive plant in Bihar, bound for the Republic of Guinea in West Africa. It is the first of 150 diesel locomotives to be supplied from the plant for Guinea's Simandou iron-ore railway project, a step under the "Make in India, Make for the World" vision.
+
+Q 86 | ga | Economy & Schemes
+What was the theme of the RBI's Financial Literacy Week (FLW) 2025?
+(1) Women and Financial Technology
+(2) Financial Inclusion: India's Growth
+(3) Digital Finance for All
+(4) Financial Literacy: Women's Prosperity
+= 4
+~ The Reserve Bank of India observed Financial Literacy Week from 24 to 28 February 2025 on the theme "Financial Literacy – Women's Prosperity". RBI holds this week every year to spread awareness of banking, saving, credit and safe digital finance, and the 2025 edition focused on women's financial awareness and empowerment.
+
+Q 87 | ga | Science & Technology
+In which of the following months did the institutes of Department of Science and Technology (DST) and the Defence Research and Development Organisation (DRDO) join hands to strengthen ground-based Space Situational Awareness?
+(1) March 2025
+(2) February 2025
+(3) May 2025
+(4) June 2025
+= 3
+~ In May 2025 the Aryabhatta Research Institute of Observational Sciences (ARIES), Nainital, an autonomous institute of DST, signed an MoU with DRDO's Instruments Research and Development Establishment (IRDE), Dehradun. The partnership aims to strengthen India's ground-based Space Situational Awareness, that is, tracking satellites and space objects, through joint work on electro-optical systems, AI/ML applications, research and training.
+
+Q 88 | ga | Sports
+Who was the first Paralympic gold medalist to receive the Arjuna Award 2025 (Lifetime)?
+(1) Deepa Malik
+(2) Murlikant Petkar
+(3) Varun Bhati
+(4) Devendra Jhajharia
+= 2
+~ Murlikant Petkar won India's first-ever Paralympic gold medal in the 50 m freestyle swimming event at the 1972 Heidelberg Paralympics, setting a world record. He received the Arjuna Award (Lifetime) of the 2024 National Sports Awards, presented by President Droupadi Murmu in January 2025; his life story inspired the Hindi film "Chandu Champion".
+
+Q 89 | ga | Awards, Books & Persons
+What honour did ISRO chief V. Narayanan receive in Kolkata in 2025?
+(1) Padma Shri
+(2) National E-Gov Award
+(3) Bharat Ratna
+(4) Rammohan Mission Purashkar
+= 4
+~ Dr V. Narayanan, a rocket propulsion scientist who took charge as ISRO Chairman in January 2025 after S. Somanath, received the Rammohan Mission Purashkar in Kolkata in 2025. The other options do not fit: he has not been awarded the Bharat Ratna, and the National e-Governance Award is given for e-governance projects, not for space science.
+
+Q 90 | ga | Science & Technology
+The indigenous mRNA vaccine technology developed by CSIR-Centre for Cellular and Molecular Biology (CCMB) in 2025 could have a significant impact on:
+(1) providing faster, more scalable vaccine development process for future outbreaks
+(2) improving dengue vector control strategies
+(3) limiting the spread of chikungunya through antibiotics
+(4) reducing the number of vector control programmes required
+= 1
+~ An mRNA vaccine gives the body the genetic instructions (messenger RNA) to make a harmless piece of a germ's protein, which trains the immune system. Because the vaccine is made synthetically and only the mRNA sequence has to be changed for a new disease, the CCMB (Hyderabad) platform can be adapted and produced quickly at large scale, which helps India respond faster to future outbreaks. A vaccine does not control mosquitoes (vector control), and chikungunya is a viral disease, so antibiotics do not work against it.
+
+Q 91 | ga | Polity & Governance
+In which year was the Manipur Appropriation Bill passed by the Parliament of India?
+(1) 2024
+(2) 2025
+(3) 2022
+(4) 2023
+= 2
+~ Manipur was placed under President's Rule by a proclamation under Article 356 on 13 February 2025, so the powers of its legislature, including passing the state budget, passed to Parliament. Parliament therefore passed the Manipur Appropriation (Vote on Account) Bill, 2025 and the Manipur Appropriation Bill, 2025 in March 2025, and cleared a further Manipur budget bill in August 2025.
+
+Q 92 | ga | Economy & Schemes
+At the 2025 World Bank Land Conference, which country was honoured as a Country Champion in recognition of its transformative work in rural land governance?
+(1) India
+(2) Japan
+(3) China
+(4) Burma
+= 1
+~ India took part as a Country Champion at the World Bank Land Conference held in Washington DC in May 2025. The Ministry of Panchayati Raj showcased the SVAMITVA scheme (Survey of Villages and Mapping with Improvised Technology in Village Areas), which uses drone surveys to map rural inhabited land and give households legal property cards.
+
+Q 93 | ga | Sports
+Who became the first Indian woman to win gold in javelin at the Asian Games 2025?
+(1) Kamalpreet Kaur
+(2) Seema Antil
+(3) Annu Rani
+(4) Shalini Sharma
+= 3
+~ Annu Rani became the first Indian woman to win a javelin throw gold at the Asian Games with a throw of 62.92 m at the Hangzhou Asian Games (the 2022 edition, held in October 2023); the "2025" in the question is a slip, as no Asian Games were held in 2025. Kamalpreet Kaur and Seema Antil (Punia) are discus throwers, not javelin throwers.
+
+Q 94 | ga | Sports
+How many athletes received the Arjuna Award, 2024, during the January 2025 ceremony?
+(1) 28
+(2) 34
+(3) 32
+(4) 40
+= 2
+~ At the National Sports Awards 2024, presented by President Droupadi Murmu at Rashtrapati Bhavan on 17 January 2025, 32 sportspersons (including a record 17 para-athletes) received the Arjuna Award for outstanding performance, and two veterans, Sucha Singh and Murlikant Petkar, received the Arjuna Award (Lifetime). RRB's answer of 34 counts both categories together (32 + 2 = 34); if only the regular category is counted, the figure is 32. (RRB key; some sources differ.)
+
+Q 95 | ga | Geography & Environment
+Which group owns and supports Vantara, a unique wildlife conservation, rescue and rehabilitation initiative in Jamnagar, Gujarat, inaugurated by the Prime Minister of India in March 2025?
+(1) Dalmia Group
+(2) Tata Group
+(3) Wadia Group
+(4) Reliance Group
+= 4
+~ Vantara is a wildlife rescue, rehabilitation and conservation centre at Jamnagar, Gujarat, set up by the Reliance group and led by Anant Ambani. Prime Minister Narendra Modi inaugurated it on 4 March 2025; it cares for rescued and endangered animals, including elephants, big cats and other species.
+
+Q 96 | ga | Polity & Governance
+Among India's neighbours, which of the following countries have the better ranking than India in the Corruption Perceptions Index (CPI) for 2024, released by Transparency International in February 2025?
+(1) China
+(2) Pakistan
+(3) Bangladesh
+(4) Sri Lanka
+= 1
+~ In Transparency International's CPI 2024, India ranked 96th out of 180 countries with a score of 38. China ranked 76th (score 43), better than India, while Sri Lanka, Pakistan and Bangladesh all ranked below India. Denmark topped the index as the least corrupt country.
+
+Q 97 | ga | History & Culture
+In 2025, which company has partnered with the Archaeological Survey of India (ASI) to restore heritage water bodies?
+(1) Pepsi
+(2) Bisleri
+(3) Nestle
+(4) Dabur
+= 2
+~ In 2025 Bisleri International signed an MoU with the Archaeological Survey of India under ASI's "Adopt a Heritage 2.0" programme to revive historic water bodies at heritage sites. These include Chand Baori at Abhaneri, the baori at Neemrana, Padma and Rani Talabs at Ranthambore Fort, and Budha Budhi Pond at Kalinjar Fort.
+
+Q 98 | ga | Geography & Environment
+Which of the following countries hosted the first assembly of International Big Cat Alliance in June 2025?
+(1) Germany
+(2) Italy
+(3) Indonesia
+(4) India
+= 4
+~ India hosted the first Assembly of the International Big Cat Alliance (IBCA) in New Delhi on 16 June 2025, chaired by Union Environment Minister Bhupender Yadav, who was endorsed as the alliance's first President. The assembly also ratified a headquarters agreement allowing IBCA to set up its headquarters in India; the alliance, launched by India in 2023, works to conserve seven big cats: tiger, lion, leopard, snow leopard, cheetah, jaguar and puma.
+
+Q 99 | ga | Geography & Environment
+As per the Economic Survey, 2024–25, what is the global movement led by India to promote sustainable lifestyles called?
+(1) Go Green
+(2) LiFE
+(3) Earth First
+(4) Swachh Life
+= 2
+~ LiFE stands for "Lifestyle for Environment", a global movement (Mission LiFE) proposed by Prime Minister Narendra Modi that asks people to adopt mindful, low-waste habits such as saving energy and water and reducing single-use plastic, instead of wasteful consumption. The Economic Survey 2024–25 refers to LiFE as the India-led global movement for sustainable living; the other options are not the names of this movement.
+
+Q 100 | ga | Economy & Schemes
+Which of the following banks of India reported a 33 per cent rise in standalone net profit at ₹5,004 crore for the fourth quarter (Q4) of the financial year 2024-25 (FY25)?
+(1) Canara Bank
+(2) Bank of Baroda
+(3) Punjab National Bank
+(4) State bank of India
+= 1
+~ Canara Bank, a public sector bank headquartered in Bengaluru, reported a standalone net profit of ₹5,004 crore for the January–March 2025 quarter (Q4 FY25), up 33% from a year earlier, in results announced on 8 May 2025.

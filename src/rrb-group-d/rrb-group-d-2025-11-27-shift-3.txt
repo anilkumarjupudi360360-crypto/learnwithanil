@@ -1,0 +1,947 @@
+# RRB Group D (Level-1 posts, CEN 08/2024) Computer Based Test, held 27 November 2025, Shift 3 (4:30 PM – 6:00 PM). 100 questions here; the paper had 100 (1 mark each, 90 minutes, one-third mark cut for a wrong answer).
+# Source: RRB's question paper for this shift with its answer key (correct option shown in green with a tick), as published by RRB (copy hosted by AglaSem). Answers = RRB's key. Explanations by Learn with Anil (writer + independent checker).
+
+Q 1 | sci | Physics
+When a gun is fired, the bullet moves forward because:
+(1) the barrel exerts no force
+(2) air resistance acts forward
+(3) the recoil of the gun acts backward as reaction
+(4) gravity pushes it forward
+= 3
+~ This is Newton's third law of motion: the gun (through the expanding gases) pushes the bullet forward, and the bullet pushes back on the gun with an equal and opposite force, which is felt as the backward recoil. These two forces, forward on the bullet and backward on the gun, are an action-reaction pair, which is what option 3 describes. Air resistance acts against the bullet's motion (backward), and gravity acts downward, so neither can push it forward.
+
+Q 2 | sci | Chemistry
+Which of the following observations best supports that liquids have a definite volume but no fixed shape?
+(1) Air expands to fill the entire container
+(2) A solid iron block retains its shape in any container
+(3) A sponge changes its shape when squeezed
+(4) Water takes the shape of its container but retains its volume
+= 4
+~ A liquid has a fixed volume but flows to take the shape of whatever container it is poured into, and water shows exactly this. Air spreading to fill the whole container is a property of gases, the iron block keeping its shape is a property of solids, and a sponge changes shape only because air is squeezed out of its pores, so it says nothing about liquids.
+
+Q 3 | sci | Chemistry
+Which of the following methods involves coating steel and iron with a layer of zinc to prevent rusting?
+(1) Passivation
+(2) Cathodic protection
+(3) Electroplating
+(4) Galvanisation
+= 4
+~ Galvanisation is the process of coating iron or steel with a thin layer of zinc, usually by dipping it in molten zinc. Zinc is more reactive than iron, so even if the coating is scratched, zinc corrodes first and protects the iron. Cathodic protection is a broader method in which the iron is connected to a block of a more reactive metal or to an electric supply, electroplating uses electricity to deposit metals such as chromium or nickel, and passivation forms a thin protective oxide layer, so none of them is the specific name for a zinc coating.
+
+Q 4 | sci | Chemistry
+Which among the following organic compounds is saturated?
+(1) 2-Bromopropene
+(2) Propene
+(3) Propyne
+(4) Bromopropane
+= 4
+~ A saturated compound has only single bonds between its carbon atoms. Bromopropane (C₃H₇Br) is propane with one hydrogen replaced by bromine, so all its carbon-carbon bonds are single and it is saturated. Propene and 2-bromopropene have a carbon-carbon double bond (the ending "-ene"), and propyne has a triple bond (the ending "-yne"), so they are unsaturated.
+
+Q 5 | sci | Chemistry
+Which of the following has straight-chain hydrocarbons?
+(1) 3-Methylpentane
+(2) 2-Methylpropane
+(3) Butane
+(4) Isobutane
+= 3
+~ Butane (n-butane, CH₃–CH₂–CH₂–CH₃) has its four carbon atoms joined one after another in a single unbranched chain. 2-Methylpropane, which is the same compound as isobutane, and 3-methylpentane each carry a methyl (–CH₃) branch on the main chain, so they are branched-chain hydrocarbons.
+
+Q 6 | sci | Physics
+The relation between electric energy, power and time is:
+(1) Energy = Time – Power
+(2) Energy = Power / Time
+(3) Energy = Power × Time
+(4) Energy = Power + Time
+= 3
+~ Power is the rate at which energy is used, P = E/t, so electric energy E = P × t. This is why household electricity is billed in kilowatt-hours (kWh): a 1 kW appliance running for 1 hour uses 1 kWh, or 3.6 × 10⁶ J. Adding or subtracting power and time makes no sense because they are different physical quantities.
+
+Q 7 | sci | Physics
+The weight of a body on the moon is less than on Earth because:
+(1) Gravitational acceleration on the moon is smaller
+(2) Mass of the body decreases on the moon
+(3) The moon has no atmosphere
+(4) Mass of the moon is equal to Earth’s mass
+= 1
+~ Weight is W = mg, so it depends on the acceleration due to gravity. The acceleration due to gravity on the moon is about 1.6 m/s², roughly one-sixth of Earth's 9.8 m/s², so the same body weighs about one-sixth as much there. The mass of the body stays the same everywhere, and the absence of an atmosphere has nothing to do with weight.
+
+Q 8 | sci | Physics
+When we hit a table lightly, the sound produced is soft because the:
+(1) frequency of vibration is low
+(2) amplitude of vibration is small
+(3) speed of sound decreases
+(4) wavelength becomes shorter
+= 2
+~ The loudness of a sound depends on the amplitude of vibration: a light tap makes the table vibrate with a small amplitude, so the sound is soft, while a hard hit gives a larger amplitude and a louder sound. Frequency decides the pitch (shrillness), not the loudness, and the speed of sound depends on the medium, not on how hard the table is struck.
+
+Q 9 | sci | Biology
+Which of the following statements is true about HIV transmission?
+(1) HIV can be transmitted through aerosols.
+(2) HIV can be transmitted through sexual acts.
+(3) HIV can be transmitted through mosquito bites.
+(4) HIV can be transmitted through casual contact.
+= 2
+~ HIV (Human Immunodeficiency Virus), which causes AIDS, spreads through body fluids such as blood, semen and vaginal fluids, mainly by unprotected sexual contact, sharing infected needles, transfusion of infected blood, and from an infected mother to her child. It does not spread through air or droplets, through mosquito bites, or by casual contact such as shaking hands, hugging or sharing food.
+
+Q 10 | sci | Biology
+Why can tiny molecules like oxygen easily pass through the cell membrane, but not the big ones like starch or proteins?
+(1) Small molecules have special energy to push through.
+(2) The cell membrane is permeable to selective substances.
+(3) The cell membrane is completely solid.
+(4) Big molecules have to break down for entry.
+= 2
+~ The cell (plasma) membrane is selectively permeable: it lets some substances, such as small molecules of oxygen, carbon dioxide and water, pass through freely, while it blocks large molecules like starch and proteins. If the membrane were completely solid, nothing at all could pass through it.
+
+Q 11 | sci | Physics
+A car starts from rest and accelerates uniformly at 2 m/s² for 5 seconds. What is the final velocity of the car?
+(1) 20 m/s
+(2) 5 m/s
+(3) 10 m/s
+(4) 15 m/s
+= 3
+~ Use the first equation of motion, v = u + at. The car starts from rest, so u = 0, a = 2 m/s² and t = 5 s, giving v = 0 + 2 × 5 = 10 m/s.
+
+Q 12 | sci | Biology
+Generally which of the following trophic levels have the least number of organisms?
+(1) Secondary consumers
+(2) Tertiary consumers
+(3) Primary consumers
+(4) Producers
+= 2
+~ In a food chain only about 10% of the energy at one trophic level passes on to the next, so less and less energy is available at each higher level and fewer organisms can be supported there. In a typical pyramid of numbers, producers are the most numerous and tertiary (top) consumers, which sit at the highest of the levels given, are the fewest.
+
+Q 13 | sci | Physics
+The distance between the pole and the centre of curvature of a convex mirror is + 40 cm. What will be the distance between the pole and the focus of this mirror?
+(1) −20 cm
+(2) −40 cm
+(3) + 20 cm
+(4) + 40 cm
+= 3
+~ The distance between the pole and the centre of curvature is the radius of curvature, R = +40 cm. For a spherical mirror the focal length is half the radius of curvature, f = R/2 = +40/2 = +20 cm. The sign stays positive because, for a convex mirror, the focus lies behind the mirror.
+
+Q 14 | sci | Biology
+Which of the following human diseases can be transmitted during sexual act?
+(1) Protein Energy Malnutrition
+(2) Acquired Immuno Deficiency Syndrome
+(3) Diabetes
+(4) Cancer
+= 2
+~ AIDS (Acquired Immuno Deficiency Syndrome) is caused by HIV, which passes from person to person through body fluids, and sexual contact is one of its main routes; it is a sexually transmitted infection. Protein energy malnutrition is a deficiency disease, and diabetes and cancer are non-communicable diseases, so none of them spreads from one person to another.
+
+Q 15 | sci | Chemistry
+Which of the following is a characteristic of gases?
+(1) No fixed shape and no fixed volume
+(2) Fixed shape and volume
+(3) Compressible but not fluid
+(4) No fixed shape but fixed volume
+= 1
+~ The particles of a gas are far apart and move freely in all directions, so a gas has neither a fixed shape nor a fixed volume and spreads to fill its whole container. A fixed shape and volume describes solids, and a fixed volume without a fixed shape describes liquids. Gases are highly compressible and they also flow, so they are fluids.
+
+Q 16 | sci | Physics
+Magnification produced by a lens is related to object distance (u) and image distance (v) by the formula:
+(1) m = v – u
+(2) m = u / v
+(3) m = u + v
+(4) m = v / u
+= 4
+~ Magnification of a lens is the ratio of image height to object height, and it also equals the ratio of image distance to object distance: m = h′/h = v/u. For a mirror the formula carries a minus sign (m = −v/u), so it is easy to confuse the two. Sums or differences of distances do not give magnification.
+
+Q 17 | sci | Chemistry
+Which of the following has the highest acidity?
+(1) Vinegar
+(2) Water
+(3) Milk
+(4) Lemon juice
+= 4
+~ The lower the pH, the more acidic a substance is. Lemon juice has a pH of about 2 (it contains citric acid), vinegar about 2.5 to 3 (acetic acid), milk about 6.5 (slightly acidic) and pure water 7 (neutral), so lemon juice is the most acidic of these.
+
+Q 18 | sci | Physics
+A body of mass ‘m’ kg is kept at a height of ‘h’ m from the surface of the Earth. What will be the potential energy possessed by this body?
+(1) m²gh
+(2) hg/m
+(3) mh/g
+(4) mgh
+= 4
+~ Lifting a body of mass m to a height h requires work against its weight mg, and this work is stored as gravitational potential energy: PE = force × height = mg × h = mgh, where g is the acceleration due to gravity. The other expressions do not even give the unit of energy (joule).
+
+Q 19 | sci | Physics
+How much work (W) is done in moving a charge (Q) of 5 C across two points that have a potential difference of 15 V?
+(1) 1/3 J
+(2) 3 J
+(3) 15 J
+(4) 75 J
+= 4
+~ Potential difference is the work done per unit charge, V = W/Q, so W = V × Q. Here W = 15 V × 5 C = 75 J. Dividing instead (5/15 = 1/3 or 15/5 = 3) gives the wrong options.
+
+Q 20 | sci | Biology
+Which of the following cell organelles have enough surface area for ATP-generating chemical reactions?
+(1) Cell wall
+(2) Vacuoles
+(3) Lysosomes
+(4) Mitochondria
+= 4
+~ Mitochondria are the "powerhouses of the cell" where cellular respiration releases energy in the form of ATP. Their inner membrane is deeply folded into cristae, which gives a large surface area for the ATP-generating chemical reactions. The cell wall gives support, vacuoles store materials, and lysosomes digest waste, so none of them makes ATP.
+
+Q 21 | sci | Biology
+Mitochondria are special because they have their own DNA and ribosomes. What can they do on this basis?
+(1) Move around the cell on their own
+(2) Digest materials like lysosomes do
+(3) Make food using sunlight like plants do
+(4) Make some of their own proteins
+= 4
+~ DNA carries the instructions for making proteins and ribosomes are the sites where proteins are made, so having both lets mitochondria make some of their own proteins (most of their proteins still come from the nucleus). Making food using sunlight is the job of chloroplasts, and digesting materials is the job of lysosomes.
+
+Q 22 | sci | Biology
+Which of the following plants reproduces asexually by budding along the margins of a leaf?
+(1) Mango
+(2) Hydra
+(3) Bryophyllum
+(4) Spirogyra
+= 3
+~ Bryophyllum has buds in the notches along the margins of its leaves; when a leaf falls on moist soil, these buds grow into new plants, a form of vegetative propagation. Hydra also reproduces by budding but it is an animal, not a plant, and Spirogyra (an alga) reproduces by fragmentation.
+
+Q 23 | sci | Chemistry
+Which of the following will show diffusion fastest?
+(1) Liquid in gas
+(2) Solid in liquid
+(3) Gas in gas
+(4) Solid in solid
+= 3
+~ Diffusion is fastest when particles move fastest and have the most space between them. Gas particles have the highest kinetic energy and the largest gaps between them, so one gas spreads through another gas quickly (for example, the smell of incense filling a room). Diffusion of a solid in a solid is the slowest because the particles are tightly packed.
+
+Q 24 | sci | Biology
+How is intercropping beneficial over single crop farming?
+(1) Utilises nutrients efficiently and prevents spread of diseases
+(2) Increases irrigation needs
+(3) Requires less land
+(4) Reduces labour cost
+= 1
+~ In intercropping, two or more crops with different nutrient needs (for example, soyabean with maize) are grown together in a set row pattern on the same field. Because the crops draw different nutrients from the soil, the nutrients are used efficiently, and because each crop's plants are not all next to one another, pests and diseases cannot spread easily through the whole field. Higher irrigation needs would be a drawback, not a benefit.
+
+Q 25 | sci | Chemistry
+__________ is precipitated, when carbon dioxide is passed through lime water.
+(1) Ca(HCO₃)₂
+(2) Ca(OH)₂
+(3) CaSO₄
+(4) CaCO₃
+= 4
+~ Lime water is a solution of calcium hydroxide. When carbon dioxide is passed through it, insoluble calcium carbonate forms and turns the solution milky: Ca(OH)₂ + CO₂ → CaCO₃ + H₂O. If excess CO₂ is passed, the precipitate dissolves again as soluble calcium hydrogen carbonate, Ca(HCO₃)₂, which is why that option is not the precipitate.
+
+Q 26 | qa | Percentage, Profit & Discount
+Mohan buys a watch for ₹460 and sells it for ₹483. Find his percentage of profit.
+(1) 5.5%
+(2) 5%
+(3) 4%
+(4) 4.7%
+= 2
+~ Profit = 483 − 460 = ₹23. Profit % is always worked out on the cost price: (23/460) × 100 = 5%. Dividing by the selling price instead (23/483 × 100 ≈ 4.76%) is a common mistake.
+
+Q 27 | qa | Algebra & Equations
+If x² + 1 = 2x, then (x⁴ − 1) is equal to:
+(1) 0
+(2) 2x
+(3) 1
+(4) x
+= 1
+~ Rewrite the equation as x² − 2x + 1 = 0, i.e. (x − 1)² = 0, so x = 1. Then x⁴ − 1 = 1 − 1 = 0.
+
+Q 28 | qa | Ratio, Proportion & Average
+Anmol and Ayushi together invested ₹46,600 in a business. At the end of the year, out of a total profit of ₹7,500, Anmol's share was ₹2,700. What was Anmol's investment?
+(1) ₹16,080
+(2) ₹17,240
+(3) ₹16,776
+(4) ₹18,740
+= 3
+~ Both invested for the same period (one year), so profit is shared in the ratio of the investments. Anmol's fraction of the profit = 2,700/7,500 = 9/25. So his investment = (9/25) × 46,600 = ₹16,776 (Ayushi's is ₹29,824, and 16,776 : 29,824 = 2,700 : 4,800 = 9 : 16).
+
+Q 29 | qa | Algebra & Equations
+A purse contains only ₹5 and ₹10 coins. The total number of coins is 118 and their total value is ₹855. How many coins of ₹5 are there?
+(1) 53
+(2) 56
+(3) 65
+(4) 55
+= 3
+~ Let there be x coins of ₹5 and y coins of ₹10. Then x + y = 118 and 5x + 10y = 855, i.e. x + 2y = 171. Subtracting, y = 171 − 118 = 53, so x = 118 − 53 = 65. Check: 65 × 5 + 53 × 10 = 325 + 530 = ₹855. Option 1 (53) is the number of ₹10 coins.
+
+Q 30 | qa | Number System & Simplification
+Simplify: ([72 ÷ {6 × (3 + 2)} + 5² − 8] × 5)/97
+(1) 3
+(2) 7
+(3) 1
+(4) 5
+= 3
+~ Follow BODMAS from the innermost bracket: (3 + 2) = 5; {6 × 5} = 30; 72 ÷ 30 = 2.4. Inside the square bracket: 2.4 + 25 − 8 = 19.4. Numerator = 19.4 × 5 = 97, and 97/97 = 1.
+
+Q 31 | qa | Ratio, Proportion & Average
+The average age of 51 students in a class is 24 years. If the age of the teacher is also included, the average age of the whole group becomes 25 years. The age (in years) of the teacher is:
+(1) 76
+(2) 75
+(3) 77
+(4) 71
+= 1
+~ Total age of 51 students = 51 × 24 = 1,224 years. With the teacher there are 52 people with total age 52 × 25 = 1,300 years. Teacher's age = 1,300 − 1,224 = 76 years. Shortcut: the teacher brings his own share of 25 plus 1 extra year for each of the 51 students, so 25 + 51 = 76.
+
+Q 32 | qa | Time & Work, Pipes & Cisterns
+A, B and C can do a piece of work in 3, 8 and 24 days, respectively. How long (in days) will they take to do thrice the same work, working together?
+(1) 6
+(2) 18
+(3) 12
+(4) 7
+= 1
+~ One day's work of A, B and C together = 1/3 + 1/8 + 1/24 = 8/24 + 3/24 + 1/24 = 12/24 = 1/2. So together they finish the work once in 2 days, and three times the work in 3 × 2 = 6 days.
+
+Q 33 | qa | Speed, Time & Distance
+A train P going at the speed of 84 km/hr completely passes train Q of length 447 m, going in the same direction on parallel tracks, at 54 km/hr, in 4.5 minutes. How much time (in seconds) will P take to completely cross train R of length 287 m, going at 87 km/hr in the opposite direction?
+(1) 36
+(2) 39
+(3) 44
+(4) 34
+= 3
+~ Same direction: relative speed = 84 − 54 = 30 km/hr = 30 × 5/18 = 25/3 m/s, and 4.5 minutes = 270 s, so P covers (25/3) × 270 = 2,250 m relative to Q; length of P = 2,250 − 447 = 1,803 m. Opposite direction: relative speed = 84 + 87 = 171 km/hr = 171 × 5/18 = 47.5 m/s. Distance to cover = 1,803 + 287 = 2,090 m. Time = 2,090 ÷ 47.5 = 44 seconds.
+
+Q 34 | qa | Percentage, Profit & Discount
+The cost of a washing machine is 40% less than the cost of a TV. If the cost of the washing machine increases by 80% and that of the TV decreases by 22%, then what is the percentage change in the total cost of 7 washing machines and 6 TVs?
+(1) Increase by 20%
+(2) Increase by 21%
+(3) Decrease by 15%
+(4) Decrease by 18%
+= 1
+~ Let a TV cost ₹100; then a washing machine costs ₹60. Original total = 7 × 60 + 6 × 100 = 420 + 600 = ₹1,020. New prices: washing machine = 60 × 1.8 = ₹108, TV = 100 × 0.78 = ₹78. New total = 7 × 108 + 6 × 78 = 756 + 468 = ₹1,224. Change = 1,224 − 1,020 = 204, and (204/1,020) × 100 = 20% increase.
+
+Q 35 | qa | Number System & Simplification
+Simplify: 4 ÷ 24 + 3.6 × (1/9) − {(1/15) + (1 − 1.5)}
+(1) 1
+(2) 3
+(3) 0
+(4) 2
+= 1
+~ Work out each part: 4 ÷ 24 = 1/6; 3.6 × 1/9 = 0.4 = 2/5; inside the braces, 1/15 + (1 − 1.5) = 1/15 − 1/2 = (2 − 15)/30 = −13/30. So the expression = 1/6 + 2/5 − (−13/30) = 5/30 + 12/30 + 13/30 = 30/30 = 1. The usual slip is forgetting that subtracting a negative bracket adds 13/30.
+
+Q 36 | qa | Ratio, Proportion & Average
+What is the average of the first 50 even natural numbers?
+(1) 52
+(2) 50
+(3) 54
+(4) 51
+= 4
+~ The first 50 even natural numbers are 2, 4, 6, …, 100. Their sum = 50 × 51 = 2,550 (sum of first n even numbers = n(n + 1)), so the average = 2,550 ÷ 50 = 51. Equivalently, for evenly spaced numbers the average = (first + last)/2 = (2 + 100)/2 = 51, i.e. n + 1.
+
+Q 37 | qa | Percentage, Profit & Discount
+(1/20) is what percentage of (2/60)?
+(1) 160%
+(2) 165%
+(3) 150%
+(4) 300%
+= 3
+~ 2/60 = 1/30. Required percentage = (1/20) ÷ (1/30) × 100 = (30/20) × 100 = 150%. Option 4 (300%) results from misreading 2/60 as 1/60.
+
+Q 38 | qa | Ratio, Proportion & Average
+If the third proportional of 32 and 24 is x, then what is the value of x?
+(1) 20
+(2) 17
+(3) 16
+(4) 18
+= 4
+~ If x is the third proportional to a and b, then a : b = b : x, so x = b²/a. Here x = 24²/32 = 576/32 = 18. Check: 32 : 24 = 4 : 3 and 24 : 18 = 4 : 3.
+
+Q 39 | qa | Geometry & Mensuration
+In a ΔPMN, ∠P = 76°. The bisectors of the exterior angles at M and N intersect each other at point O. The degree measure of ∠MON is:
+(1) 128°
+(2) 52°
+(3) 104°
+(4) 38°
+= 2
+~ The exterior angle at M is 180° − M, so its bisector makes (180° − M)/2 with MN; likewise at N. In ΔMON, ∠MON = 180° − (180° − M)/2 − (180° − N)/2 = (M + N)/2 = (180° − P)/2 = 90° − P/2. So ∠MON = 90° − 38° = 52°. Option 1 (128° = 90° + P/2) is the angle formed by the internal bisectors.
+
+Q 40 | qa | Percentage, Profit & Discount
+A person saves 60% of his income. If his expenditure is ₹440, then his income (in ₹) is:
+(1) 176
+(2) 264
+(3) 1,140
+(4) 1,100
+= 4
+~ If he saves 60% of his income, he spends the remaining 40%. So 40% of income = ₹440, and income = 440 × 100/40 = ₹1,100. Check: savings = 60% of 1,100 = ₹660, and 660 + 440 = 1,100.
+
+Q 41 | qa | Time & Work, Pipes & Cisterns
+3 men can do a piece of work in 20 days. How many men will do it in 2 days?
+(1) 30
+(2) 31
+(3) 33
+(4) 32
+= 1
+~ The work needs 3 × 20 = 60 man-days. To finish it in 2 days, the number of men needed = 60 ÷ 2 = 30 (fewer days need proportionally more men: M₁D₁ = M₂D₂).
+
+Q 42 | qa | Time & Work, Pipes & Cisterns
+11 men can dig a well 59 feet deep in 19 days. How many men can dig a well 118 feet deep in 2 days?
+(1) 209
+(2) 206
+(3) 211
+(4) 208
+= 1
+~ Use M₁D₁/W₁ = M₂D₂/W₂: (11 × 19)/59 = (M × 2)/118. So M = (11 × 19 × 118)/(59 × 2) = 11 × 19 × 2/2 = 209. In words: double the depth needs 2 × 209 = 418 man-days, and in 2 days that needs 418 ÷ 2 = 209 men.
+
+Q 43 | qa | Simple & Compound Interest
+The amount on a sum of ₹6,500 at 20% per annum compound interest, compounded annually, in 2 years will be:
+(1) ₹9,431
+(2) ₹10,274
+(3) ₹9,360
+(4) ₹8,411
+= 3
+~ Amount = P(1 + R/100)ⁿ = 6,500 × (1.2)² = 6,500 × 1.44 = ₹9,360. Year by year: after year 1, 6,500 + 1,300 = 7,800; after year 2, 7,800 + 1,560 = ₹9,360.
+
+Q 44 | qa | Ratio, Proportion & Average
+The average age of four children I, J, K and L is 9 years and the average age of I, J, L, M is 12 years. K is 5 years old. The age of M (in years) is:
+(1) 18
+(2) 19
+(3) 17
+(4) 20
+= 3
+~ I + J + K + L = 4 × 9 = 36, and with K = 5, I + J + L = 31. Also I + J + L + M = 4 × 12 = 48. So M = 48 − 31 = 17 years.
+
+Q 45 | qa | Geometry & Mensuration
+The ratio of the volume of a sphere to the total surface area of a hemisphere is 28 : 3. If the radii of the sphere and the hemisphere are equal, find the volume of the sphere (in cubic centimetres).
+(Use π = 22/7)
+(1) 38,208
+(2) 38,808
+(3) 38,542
+(4) 38,460
+= 2
+~ Volume of sphere = (4/3)πr³ and total surface area of a hemisphere = 3πr². Their ratio = (4/3)πr³ ÷ 3πr² = 4r/9 = 28/3, so r = (28 × 9)/(3 × 4) = 21 cm. Volume = (4/3) × (22/7) × 21 × 21 × 21 = 4 × 22 × 441 = 38,808 cm³.
+
+Q 46 | qa | Speed, Time & Distance
+Two trains, measuring 267 metres and 153 metres in length, are moving in the same direction at speeds of 162 km/hr and 36 km/hr, respectively. How long will it take for the faster train to completely overtake the slower one?
+(1) 18 seconds
+(2) 12 seconds
+(3) 17 seconds
+(4) 22 seconds
+= 2
+~ In the same direction the relative speed = 162 − 36 = 126 km/hr = 126 × 5/18 = 35 m/s. To overtake completely, the faster train must cover the sum of both lengths = 267 + 153 = 420 m. Time = 420 ÷ 35 = 12 seconds.
+
+Q 47 | qa | Percentage, Profit & Discount
+After selling an article at a discount of 29%, the profit percentage obtained is 4%. What is the mark-up percentage (rounded off to two decimal places)?
+(1) 48.51%
+(2) 46.48%
+(3) 47.05%
+(4) 45.31%
+= 2
+~ Let CP = ₹100; a 4% profit means SP = ₹104. A 29% discount means SP = 71% of the marked price, so MP = 104 ÷ 0.71 = ₹146.479… The mark-up on cost = 146.479 − 100 = 46.479… ≈ 46.48%.
+
+Q 48 | qa | Trigonometry & Heights
+If cos θ = 5/13, then find the value of √((1 − sin θ)/(1 + sin θ)).
+(1) 1/5
+(2) 1/25
+(3) 12/13
+(4) 1/3
+= 1
+~ With cos θ = 5/13 (θ acute), sin θ = √(1 − 25/169) = 12/13 (the 5-12-13 triangle). Then (1 − sin θ)/(1 + sin θ) = (1/13)/(25/13) = 1/25, and its square root = 1/5. Option 2 (1/25) forgets to take the square root.
+
+Q 49 | qa | Percentage, Profit & Discount
+If an item marked at ₹485 is sold for ₹293, then what is the discount percentage? (Round off your answer to two decimal places).
+(1) 36.76%
+(2) 42.85%
+(3) 38.99%
+(4) 39.59%
+= 4
+~ Discount = 485 − 293 = ₹192. Discount % is taken on the marked price: (192/485) × 100 = 39.587… ≈ 39.59%.
+
+Q 50 | qa | Geometry & Mensuration
+A triangular field has sides measuring 42 cm, 34 cm and 20 cm. What is the length of the altitude corresponding to the longest side?
+(1) 15 cm
+(2) 20 cm
+(3) 16 cm
+(4) 18 cm
+= 3
+~ By Heron's formula, s = (42 + 34 + 20)/2 = 48, so area = √(48 × 6 × 14 × 28) = √112896 = 336 cm². Area = (1/2) × base × height, so the altitude on the longest side (42 cm) = (2 × 336)/42 = 16 cm.
+
+Q 51 | rea | Analogy & Classification
+SDFH is related to VYIC in a certain way based on the English alphabetical order. In the same way, EJRN is related to HEUI. To which of the following options is NUAY related, following the same logic?
+(1) QWET
+(2) QPYU
+(3) QPDT
+(4) QSER
+= 3
+~ The letters move +3, −5, +3, −5 in turn (counting round from A back to Z when needed). SDFH → VYIC: S + 3 = V, D − 5 = Y (D, C, B, A, Z, Y), F + 3 = I, H − 5 = C. EJRN → HEUI: E + 3 = H, J − 5 = E, R + 3 = U, N − 5 = I. So NUAY → N + 3 = Q, U − 5 = P, A + 3 = D, Y − 5 = T, giving QPDT.
+
+Q 52 | rea | Miscellaneous Reasoning
+Refer to the following number series and answer the question that follows (all numbers are single-digit numbers only). Counting to be done from left to right only.
+(Left) 5 7 1 8 4 2 3 9 5 7 6 1 (Right)
+How many even numbers are there which are immediately followed by odd numbers?
+(1) More than three
+(2) Three
+(3) Two
+(4) One
+= 3
+~ The even numbers in the series are 8, 4, 2 and 6. 8 is followed by 4 (even) and 4 is followed by 2 (even), so they do not count. 2 is followed by 3 (odd) and 6 is followed by 1 (odd). So there are two such numbers: 2 and 6.
+
+Q 53 | rea | Series
+What should come in place of the question mark (?) in the given series?
+834 840 848 ? 870 884
+(1) 858
+(2) 854
+(3) 856
+(4) 855
+= 1
+~ The differences increase by 2 each time: 834 + 6 = 840, 840 + 8 = 848, 848 + 10 = 858, 858 + 12 = 870, 870 + 14 = 884. So the missing number is 858.
+
+Q 54 | rea | Miscellaneous Reasoning
+This question is based on the five, three-digit numbers given below.
+(Left) 742 912 853 657 154 (Right)
+(Example: 697 – First digit = 6, second digit = 9 and third digit = 7)
+(NOTE: All operations to be done from left to right.)
+If all the numbers are arranged in descending order, the position of how many numbers will remain unchanged?
+(1) Three
+(2) Two
+(3) One
+(4) Four
+= 2
+~ Original order: 742, 912, 853, 657, 154. Descending order: 912, 853, 742, 657, 154. Comparing position by position, 742, 912 and 853 move, but 657 stays 4th and 154 stays 5th. So the positions of two numbers remain unchanged.
+
+Q 55 | rea | Blood Relations
+In a certain code language,
+A + B means ‘A is the sister of B’,
+A @ B means ‘A is the brother of B’,
+A - B means ‘A is the wife of B’ and
+A # B means ‘A is the father of B’.
+Based on the above, how is O related to V if ‘O + P @ T - G # V’?
+(1) Mother's sister
+(2) Mother
+(3) Sister
+(4) Mother's mother
+= 1
+~ Decode step by step: O + P → O is the sister of P; P @ T → P is the brother of T; T - G → T is the wife of G; G # V → G is the father of V. So T (G's wife) is V's mother. O and P are both siblings of T, so O is T's sister, i.e. O is V's mother's sister.
+
+Q 56 | rea | Analogy & Classification
+In the following triads, each group of letters is related to the subsequent one following a certain logic. Select from the given options, the one which follows the same logic.
+MIST - TIMS - ISMT
+HOPE - EOHP - OPHE
+(1) WIDE - EIWD - DIWE
+(2) BUSY - YUBS - USBY
+(3) NUMB - NMUB - BMUN
+(4) PUTS - UPTS - SUTP
+= 2
+~ Number the letters of each group 1 2 3 4. Group 1 → Group 2 takes letters in the order 4, 2, 1, 3 (MIST → TIMS, HOPE → EOHP). Group 2 → Group 3 takes letters in the order 2, 4, 3, 1 (TIMS → ISMT, EOHP → OPHE). For BUSY: 4, 2, 1, 3 gives YUBS, and YUBS in the order 2, 4, 3, 1 gives USBY, which matches. In option 1, EIWD should give IDWE (not DIWE); in options 3 and 4, the second groups should be BUNM and SUPT.
+
+Q 57 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-cluster pairs are alike in a certain way and thus form a group. Which letter-cluster pair DOES NOT belong to that group? (Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) PS - LO
+(2) MP - IL
+(3) OR - KN
+(4) IL - EL
+= 4
+~ In each pair, the second letter of each cluster is 3 places after its first letter, and the second cluster starts 4 places before the first cluster. PS - LO: P + 3 = S, L + 3 = O, P − 4 = L. MP - IL: M + 3 = P, I + 3 = L, M − 4 = I. OR - KN: O + 3 = R, K + 3 = N, O − 4 = K. In IL - EL, E + 7 = L, which breaks the pattern (it should have been EH), so IL - EL is the odd one out.
+
+Q 58 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+Some paddy are rice.
+Some rice are wheat.
+Conclusions:
+(I) Some paddy are wheat.
+(II) All wheat are rice.
+(1) Only conclusion (II) follows
+(2) Neither conclusion (I) nor (II) follows
+(3) Both conclusions (I) and (II) follow
+(4) Only conclusion (I) follows
+= 2
+~ Two 'some' statements joined through rice give no definite link between paddy and wheat: the rice that are paddy may be completely different from the rice that are wheat, so (I) does not follow. 'Some rice are wheat' only tells us that part of wheat is rice; the rest of wheat may lie outside rice, so (II) 'All wheat are rice' also does not follow. Hence neither conclusion follows.
+
+Q 59 | rea | Mathematical Operations
+If ‘A’ stands for ‘÷’, ‘B’ stands for ‘×’, ‘C’ stands for ‘+’ and ‘D’ stands for ‘−’, what will come in place of the question mark (?) in the following equation?
+21 B 16 C 20 D 26 A 2 = ?
+(1) 341
+(2) 342
+(3) 343
+(4) 340
+= 3
+~ Replacing the letters: 21 × 16 + 20 − 26 ÷ 2. By BODMAS, first 26 ÷ 2 = 13 and 21 × 16 = 336. Then 336 + 20 − 13 = 343.
+
+Q 60 | rea | Miscellaneous Reasoning
+Refer to the number series given below and answer the question that follows. Counting to be done from left to right only.
+(NOTE: All numbers are single-digit numbers only.)
+(Left) 3 1 3 9 6 3 4 1 1 5 6 9 9 6 8 9 7 5 6 6 2 (Right)
+How many such even digits are there each of which is immediately preceded by a perfect square and also immediately followed by an even digit?
+(1) 2
+(2) 1
+(3) 3
+(4) 4
+= 2
+~ Single-digit perfect squares are 0, 1, 4 and 9. Check each even digit: 6 (after the first 9) is preceded by 9 but followed by 3 (odd); 4 is preceded by 3; the next 6 is preceded by 5; the 6 in '9 6 8' is preceded by 9 (perfect square) and followed by 8 (even) — this one qualifies; 8 is preceded by 6, which is not a perfect square; the last 6, 6 and 2 are preceded by 5, 6 and 6. So there is only 1 such digit.
+
+Q 61 | rea | Coding-Decoding
+In a certain code language, ‘nail post fish’ is coded as 'pl mg qn' and ‘fish urn knife’ is coded as ‘ix pl ko’. How is ‘fish’ coded in the given language?
+(1) qn
+(2) ix
+(3) mg
+(4) pl
+= 4
+~ The word common to both phrases is 'fish', and the only code common to both coded phrases is 'pl'. So 'fish' is coded as 'pl'.
+
+Q 62 | rea | Ranking & Arrangement
+Raman ranked 31st from the top and 12th from the bottom in his class. How many students are there in his class?
+(1) 41
+(2) 42
+(3) 40
+(4) 43
+= 2
+~ Total = rank from top + rank from bottom − 1 = 31 + 12 − 1 = 42. We subtract 1 because Raman is counted in both ranks: there are 30 students above him, 11 below him, and Raman himself (30 + 11 + 1 = 42). Option 4 (43) forgets to subtract 1.
+
+Q 63 | rea | Coding-Decoding
+In a certain code language, ‘ROME’ is coded as ‘1398’ and ‘DEMO’ is coded as ‘4138’. What is the code for ‘D’ in the given code language?
+(1) 4
+(2) 3
+(3) 1
+(4) 8
+= 1
+~ ROME and DEMO share the letters O, M and E, and their codes share the digits 1, 3 and 8. So the remaining letter of ROME (R) is 9, and the remaining letter of DEMO (D) is coded as 4.
+
+Q 64 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding to/subtracting from/multiplying with 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(3, −2, 11)
+(46, 2107, 9)
+(1) (34, 1135, 21)
+(2) (25, 607, 17)
+(3) (38, 1433, 10)
+(4) (33, 1081, 7)
+= 1
+~ Middle number = (first number)² − third number. Check: 3² − 11 = 9 − 11 = −2 and 46² − 9 = 2116 − 9 = 2107. For option 1: 34² − 21 = 1156 − 21 = 1135, which fits. The others fail: 25² − 17 = 608 (not 607), 38² − 10 = 1434 (not 1433), 33² − 7 = 1082 (not 1081).
+
+Q 65 | rea | Series
+What should come in place of the question mark (?) in the given series?
+267 237 209 183 159 ?
+(1) 137
+(2) 133
+(3) 128
+(4) 145
+= 1
+~ The numbers decrease by 30, 28, 26, 24, … (the subtracted number falls by 2 each time): 267 − 30 = 237, 237 − 28 = 209, 209 − 26 = 183, 183 − 24 = 159, and 159 − 22 = 137.
+
+Q 66 | rea | Miscellaneous Reasoning
+This question is based on the five, three-digit numbers given below.
+(Left) 593 784 358 631 296 (Right)
+(Example- 697 – First digit = 6, second digit = 9 and third digit = 7)
+NOTE - All operations to be done from left to right.
+What will be the resultant, if the third digit of the highest number is added to the second digit of the lowest number?
+(1) 13
+(2) 17
+(3) 10
+(4) 14
+= 1
+~ The highest number is 784, whose third digit is 4. The lowest number is 296, whose second digit is 9. Adding them: 4 + 9 = 13.
+
+Q 67 | rea | Ranking & Arrangement
+Seven boxes B, C, D, I, J, K and L are kept one over the other but not necessarily in the same order. Only I is kept above C. Only L is kept between C and J. Only K is kept below D. How many boxes are kept between B and I?
+(1) Two
+(2) Four
+(3) One
+(4) Three
+= 4
+~ 'Only I is above C' puts I at the top (1st) and C 2nd. 'Only L is between C and J' puts L 3rd and J 4th. 'Only K is below D' puts K at the bottom (7th) and D 6th. The remaining box B is 5th. From top to bottom: I, C, L, J, B, D, K. Between B (5th) and I (1st) there are C, L and J, i.e. three boxes.
+
+Q 68 | rea | Directions & Distance
+Hemant starts from Point A and drives 3 km towards the east. He then takes a right turn, drives 5 km, turns right and drives 6 km. He then takes a right turn and drives 5 km. He takes a final left turn, drives 8 km and stops at Point P. How far (shortest distance) and towards which direction should he drive in order to reach Point A again? (All turns are 90 degrees turns only unless specified).
+(1) 11 km towards the east
+(2) 11 km towards the west
+(3) 7 km towards the north
+(4) 5 km towards the south
+= 1
+~ Take A as the origin. He goes 3 km east; a right turn faces him south, 5 km; another right turn faces west, 6 km (now 3 km west and 5 km south of A); a right turn faces north, 5 km, bringing him back to A's east-west line, 3 km west of A. The final left turn faces west, and 8 km more puts P 3 + 8 = 11 km west of A. So he must drive 11 km towards the east to reach A.
+
+Q 69 | rea | Ranking & Arrangement
+Seven people, B, C, D, I, J, K and L, are sitting around a circular table, facing the centre of the table. I sits to the immediate left of D. J is the immediate neighbour of both B and K. K sits third to the left of D. L is not an immediate neighbour of K. Who sits second to the right of C?
+(1) I
+(2) K
+(3) J
+(4) D
+= 4
+~ When people face the centre, 'left' is clockwise and 'right' is anticlockwise. Going clockwise (to the left) from D: I is 1st, the next seat is 2nd and K is 3rd. J must sit between B and K; the seat between I and K cannot be J (B would then need I's seat), so J is on K's other side and B next to J. The two empty seats are between I and K, and between B and D; L cannot be next to K, so L sits between B and D and C sits between I and K. Clockwise order: D, I, C, K, J, B, L. Moving to the right (anticlockwise) from C: 1st is I, 2nd is D.
+
+Q 70 | rea | Series
+What should come in place of the question mark (?) in the given series based on the English alphabetical order?
+GMP IOR KQT MSV ?
+(1) OUX
+(2) QVX
+(3) PVX
+(4) OUY
+= 1
+~ Each letter moves 2 places forward from one group to the next. First letters: G, I, K, M, O. Second letters: M, O, Q, S, U. Third letters: P, R, T, V, X. So the next group is OUX.
+
+Q 71 | rea | Series
+Which of the following letter-number clusters will replace the question mark (?) in the given series to make it logically complete?
+GKN19 HLO26 IMP33 JNQ40 ?
+(1) KOR48
+(2) KOS47
+(3) KOS48
+(4) KOR47
+= 4
+~ Each letter moves 1 place forward: G, H, I, J, K; K, L, M, N, O; N, O, P, Q, R. The number increases by 7 each time: 19, 26, 33, 40, 47. So the next term is KOR47.
+
+Q 72 | rea | Mathematical Operations
+If + means −, − means ×, × means ÷ and ÷ means +, then what will come in place of the question mark (?) in the following equation?
+43 − 17 ÷ 147 + 362 × 2 = ?
+(1) 697
+(2) 699
+(3) 691
+(4) 695
+= 1
+~ After replacing the signs, the expression becomes 43 × 17 + 147 − 362 ÷ 2. By BODMAS: 362 ÷ 2 = 181 and 43 × 17 = 731. Then 731 + 147 − 181 = 697.
+
+Q 73 | rea | Ranking & Arrangement
+A, B, C, R, S, T and U are sitting around a circular table facing the centre of the table. Only two people sit between C and U when counted from the left of U. B sits third to the left of A. T sits to the immediate right of A. T sits second to the left of C. R is not an immediate neighbour of B. Who sits third to the right of S?
+(1) U
+(2) T
+(3) A
+(4) C
+= 2
+~ Facing the centre, 'left' is clockwise and 'right' is anticlockwise. Fix A; T is immediately to A's right. Since T is second to the left of C, C is two places to the right of T, i.e. third to the right of A. B is third to the left of A. Counting from U to the left, C is the 3rd seat after U, so U sits immediately to the left of A. Clockwise from A: A, U, _, B, C, _, T. R cannot sit next to B, so R takes the seat between C and T and S sits between U and B. Clockwise order: A, U, S, B, C, R, T. Moving right (anticlockwise) from S: U (1st), A (2nd), T (3rd).
+
+Q 74 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusion(s) logically follow(s) from the statements.
+Statements:
+Some oranges are peaches.
+No peach is a carrot.
+Conclusions:
+(I) Some oranges are carrots.
+(II) All carrots are peaches.
+(1) Only conclusion (I) follows.
+(2) Both conclusions (I) and (II) follow.
+(3) Neither conclusion (I) nor (II) follows.
+(4) Only conclusion (II) follows.
+= 3
+~ From the statements, the oranges that are peaches can never be carrots, so the definite conclusion is only 'Some oranges are not carrots'; whether any other orange is a carrot is unknown, so (I) does not follow. Since no peach is a carrot, no carrot can be a peach, so (II) 'All carrots are peaches' is definitely false. Hence neither conclusion follows.
+
+Q 75 | rea | Ranking & Arrangement
+A, B, C, D, E, F and G are sitting around a circular table facing the centre. C sits third to the right of D. E sits second to the right of C. F is the immediate neighbour of B and C. G is not an immediate neighbour of D. How many people sit between A and G when counted from the left of G?
+(1) Two
+(2) Four
+(3) Three
+(4) One
+= 2
+~ Facing the centre, 'right' is anticlockwise and 'left' is clockwise. Going clockwise from D, the seats are D, 1, 2, 3, 4, 5, 6. C is third to the right (anticlockwise) of D, which is seat 4; E is second to the right of C, so E is at seat 2. F must sit next to C with B on F's other side: seat 3 fails (B would need seat 2, taken by E), so F is at 5 and B at 6. A and G fill seats 1 and 3; G cannot be next to D, so G is at 3 and A at 1. Clockwise order: D, A, E, G, C, F, B. Counting from G to its left (clockwise) until A: C, F, B, D lie in between, i.e. four people.
+
+Q 76 | rea | Directions & Distance
+Mukesh starts from Point A and drives 14 km towards the North. He then takes a left turn, drives 9 km, then turns left and drives 17 km. He then takes a left turn and drives 13 km. He takes a final left turn, drives 3 km, and stops at Point P. How far (shortest distance) and towards which direction should he drive in order to reach Point A again? (All turns are 90-degree turns only, unless specified.)
+(1) 4 km to the east
+(2) 4 km to the west
+(3) 5 km to the west
+(4) 5 km to the east
+= 2
+~ Take A as the origin. 14 km north; left turn faces west, 9 km; left turn faces south, 17 km (now 3 km south of A, 9 km west); left turn faces east, 13 km (now 13 − 9 = 4 km east of A, 3 km south); final left turn faces north, 3 km, which brings him onto A's east-west line. So P is 4 km due east of A, and he must drive 4 km to the west to reach A.
+
+Q 77 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) CIE
+(2) GMJ
+(3) IOL
+(4) PVS
+= 1
+~ In GMJ, IOL and PVS the second letter is 6 places after the first and the third letter is 3 places before the second: G + 6 = M, M − 3 = J; I + 6 = O, O − 3 = L; P + 6 = V, V − 3 = S. In CIE, C + 6 = I but I − 4 = E (it should be F), so CIE is the odd one out.
+
+Q 78 | rea | Mathematical Operations
+If ‘A’ stands for ‘÷’, ‘B’ stands for ‘×’, ‘C’ stands for ‘+’ and ‘D’ stands for ‘−’, then what will come in place of the question mark (?) in the following equation?
+11 B 22 C 288 A 18 D 50 = ?
+(1) 202
+(2) 220
+(3) 208
+(4) 212
+= 3
+~ Replacing the letters: 11 × 22 + 288 ÷ 18 − 50. By BODMAS: 11 × 22 = 242 and 288 ÷ 18 = 16. Then 242 + 16 − 50 = 208.
+
+Q 79 | rea | Analogy & Classification
+EFJL is related to HKMQ in a certain way based on the English alphabetical order. In the same way, QZVF is related to TEYK. To which of the following options is ZOEU related, following the same logic?
+(1) CTHZ
+(2) CTZS
+(3) CGFR
+(4) CTYU
+= 1
+~ The letters move +3, +5, +3, +5 in turn (going round from Z to A when needed). EFJL → HKMQ: E + 3 = H, F + 5 = K, J + 3 = M, L + 5 = Q. QZVF → TEYK: Q + 3 = T, Z + 5 = E, V + 3 = Y, F + 5 = K. So ZOEU → Z + 3 = C, O + 5 = T, E + 3 = H, U + 5 = Z, giving CTHZ.
+
+Q 80 | rea | Series
+What should come in place of the question mark (?) in the given series?
+2 4 12 24 72 ?
+(1) 144
+(2) 136
+(3) 92
+(4) 124
+= 1
+~ The terms are multiplied by 2 and 3 alternately: 2 × 2 = 4, 4 × 3 = 12, 12 × 2 = 24, 24 × 3 = 72, and 72 × 2 = 144.
+
+Q 81 | ga | Economy & Schemes
+Indicating a strong push toward sustainable energy development, the installed renewable energy generating capacity in India increased from 64.04 watts per capita in 2014-15 to what level per capita in 2024-25?
+(1) 98.63 watts
+(2) 110.36 watts
+(3) 156.31 watts
+(4) 85.21 watts
+= 3
+~ According to figures released by the Ministry of Statistics and Programme Implementation (MoSPI) on 29 June 2025 (Statistics Day) with its SDG National Indicator Framework Progress Report 2025, India's installed renewable energy generating capacity rose from 64.04 watts per capita in 2014-15 to 156.31 watts per capita in 2024-25, about 2.4 times in ten years. This is an indicator under SDG 7 (affordable and clean energy).
+
+Q 82 | ga | Sports
+Which app was announced in June 2025 to identify sporting talent via videos?
+(1) SAI Connect App
+(2) Sports Talent Search App
+(3) TOPS Talent App
+(4) Khelo India App
+= 3
+~ In June 2025 the Sports Ministry announced a dedicated mobile app through which citizens can upload videos of talented children from schools and villages; the videos are assessed by zonal talent selection committees under the Khelo India framework, and the children selected join Khelo India Centres for training. RRB's key names this app the TOPS Talent App (TOPS is the Target Olympic Podium Scheme), but the news reports of the announcement did not give the app a name. (RRB key; some sources differ.)
+
+Q 83 | ga | Economy & Schemes
+In June 2025, the Reserve Bank of India introduced relaxed norms for project finance provisioning bringing significant relief to lenders, with effect from _______.
+(1) 1 August 2025
+(2) 1 October 2025
+(3) 1 November 2025
+(4) 1 September 2025
+= 2
+~ The RBI issued the Reserve Bank of India (Project Finance) Directions, 2025 on 19 June 2025, and they came into effect on 1 October 2025. Under them, lenders keep a standard provision of 1% on loans to projects under construction (1.25% for commercial real estate), and projects that had already achieved financial closure continue under the old norms.
+
+Q 84 | ga | Sports
+Which team won the Laureus World Team of the Year in 2025?
+(1) Los Angeles Lakers
+(2) Spain Olympic Football Team
+(3) Barcelona
+(4) Real Madrid
+= 4
+~ Real Madrid's men's football team won the Laureus World Team of the Year award at the 2025 Laureus World Sports Awards, held at the Palacio de Cibeles in Madrid, after winning the La Liga and UEFA Champions League double in the 2023-24 season. At the same ceremony, Barcelona's Lamine Yamal won the Laureus Breakthrough of the Year award.
+
+Q 85 | ga | Current Affairs
+Which international day was observed for the first time on 12 April 2025, as declared by the United Nations?
+(1) International Day of Clean Energy
+(2) International Day of Human Space Flight
+(3) International Day of Plant Health
+(4) International Day for Dialogue Between Civilizations
+= 2
+~ 12 April is the International Day of Human Space Flight, which marks Yuri Gagarin's flight on 12 April 1961, the first human space flight; it is the only option observed on 12 April. However, the UN General Assembly declared this day in April 2011 (resolution 65/271) and it has been observed every year since then, so 2025 was not its first observance; of the options, the day first observed in 2025 was the International Day for Dialogue among Civilizations, which falls on 10 June. (RRB key; some sources differ.)
+
+Q 86 | ga | Polity & Governance
+Which state High Court in January 2025 has mandated that individuals in live-in relationships must sign a legal contract outlining financial responsibilities and childcare provisions?
+(1) Gujarat
+(2) Maharashtra
+(3) Goa
+(4) Rajasthan
+= 4
+~ In January 2025 the Rajasthan High Court directed that, until a law is made, live-in relationships must be registered with a competent authority in each district (and through a web portal) on a set format, under which the partners agree to their terms in advance. These include a plan for the education, healthcare and upbringing of any children, and the male partner's financial responsibility for a non-earning female partner and the children.
+
+Q 87 | ga | Current Affairs
+The theme of National Nurses Day 2025 was 'Our Nurses. Our Future. Caring for nurses strengthens economies'. When was this day celebrated in India?
+(1) 7 June
+(2) 12 May
+(3) 6 July
+(4) 7 August
+= 2
+~ Nurses Day is celebrated in India, as around the world, on 12 May, the birth anniversary of Florence Nightingale (born 12 May 1820), the founder of modern nursing. The 2025 theme, 'Our Nurses. Our Future. Caring for nurses strengthens economies', was set by the International Council of Nurses (ICN) and focuses on the health and wellbeing of nurses.
+
+Q 88 | ga | Current Affairs
+With which of the following institutes did the Data Informatics and Innovation Division of the Ministry of Statistics and Programme Implementation (MoSPI), sign a Memorandum of Understanding under the Data Innovation lab initiative in January 2025?
+(1) National Institute of Technology Warangal
+(2) International Institute of Information Technology – Hyderabad(IIIT-Hyderabad)
+(3) National Institute of Technology Durgapur
+(4) Indraprastha Institute of Information Technology (IIIT-Delhi)
+= 4
+~ On 30 January 2025 in New Delhi, MoSPI's Data Informatics and Innovation Division signed an MoU with the Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi) under its Data Innovation Lab, which MoSPI launched in July 2024. The partnership aims to use artificial intelligence, machine learning and big data analytics to improve how official statistics are collected, processed and shared.
+
+Q 89 | ga | Sports
+Which rugby league legend became the first player in the sport's 130-year history to receive a knighthood, awarded by King Charles at Buckingham Palace in 2025?
+(1) Ellery Hanley
+(2) Billy Boston
+(3) Martin Offiah
+(4) Kevin Sinfield
+= 2
+~ Billy Boston, the Cardiff-born Welsh winger who starred for Wigan and played for Great Britain in the 1950s and 1960s, was knighted by King Charles III at Buckingham Palace in June 2025 and became Sir Billy Boston. He was the first rugby league player ever to receive a knighthood and was also a pioneering Black sportsman in Britain. Kevin Sinfield became the sport's second knight later, in the King's Birthday Honours of June 2026.
+
+Q 90 | ga | Awards, Books & Persons
+Who received the Padma Shri in 2025 for their work in social service (North East India)?
+(1) Jumde Yomgam
+(2) Kiran Mazumdar-Shaw
+(3) Anand Kumar
+(4) Binalakshmi Nepram
+= 1
+~ Jumde Yomgam Gamlin, a social worker from Arunachal Pradesh, received the Padma Shri in 2025 for social work. In 2013 she founded the NGO Mother's Vision, which works on drug de-addiction and women's empowerment, and her work is credited with helping hundreds of people recover from addiction and empowering about 2,000 women. Kiran Mazumdar-Shaw (founder of Biocon) and Anand Kumar (founder of the Super 30 programme in Bihar) are not from the North East, and Binalakshmi Nepram, a peace activist from Manipur, is from the North East but was not the 2025 awardee.
+
+Q 91 | ga | Awards, Books & Persons
+The National Florence Nightingale Awards, conferred by the President of India in May 2025, are given to which of the following?
+(1) Teaching professionals
+(2) Educational institutions
+(3) Nursing professionals
+(4) Doctors
+= 3
+~ The National Florence Nightingale Awards are given to nurses and nursing professionals for meritorious service; they were instituted by the Union Ministry of Health and Family Welfare and are named after Florence Nightingale, the founder of modern nursing. President Droupadi Murmu presented the 2025 awards to 15 nursing professionals at Rashtrapati Bhavan on 30 May 2025.
+
+Q 92 | ga | Geography & Environment
+The Prime Minister laid the foundation stone for the National Referral Centre for Wildlife in which city in 2025?
+(1) Pune
+(2) Ahmedabad
+(3) Vadodara
+(4) Junagadh
+= 4
+~ On 3 March 2025 (World Wildlife Day), Prime Minister Narendra Modi laid the foundation stone of the National Referral Centre for Wildlife at Junagadh, Gujarat. On the same visit he chaired the 7th meeting of the National Board for Wildlife at Sasan Gir, the home of the Asiatic lion in Gir National Park.
+
+Q 93 | ga | Science & Technology
+The ‘GenomeIndia’ project that has completed whole genome sequencing (WGS) on a database of thousands of individuals in April 2025 was launched in ____.
+(1) 2019
+(2) 2014
+(3) 2023
+(4) 2020
+= 4
+~ The Genome India Project was launched in January 2020 by the Department of Biotechnology (Ministry of Science and Technology) to map the genetic diversity of the Indian population. More than 20 research institutions took part and sequenced the whole genomes of 10,000 Indians, and the data was opened to researchers in January 2025; it is expected to help in precision medicine and the study of genetic diseases.
+
+Q 94 | ga | Awards, Books & Persons
+Which of the following organisations received the 2025 Zayed Sustainability Prize in the Health category in January 2025?
+(1) PATH
+(2) Doctors Without Borders
+(3) Periwinkle Technologies
+(4) Last Mile Health
+= 3
+~ Periwinkle Technologies, a healthcare company from Pune, India, won the Health category of the 2025 Zayed Sustainability Prize in January 2025. It was honoured for Smart Scope CX, a point-of-care device that uses artificial intelligence to detect cervical cancer and other diseases of the cervix in real time. The Zayed Sustainability Prize is the UAE's global award for sustainability and humanitarian solutions.
+
+Q 95 | ga | Geography & Environment
+Which two national parks achieved the highest scores of 92.97% in the Management Effectiveness Evaluation (MEE) 2020–2025 of National Parks and Protected Areas?
+(1) Periyar and Sundarbans
+(2) Gir and Kaziranga
+(3) Bandipur and Kanha
+(4) Eravikulam and Dachigam
+= 4
+~ In the Management Effectiveness Evaluation (MEE) 2020–2025 by the Union Ministry of Environment, Forest and Climate Change, which assessed 438 protected areas and was released in June 2025, Eravikulam National Park (Kerala) and Dachigam National Park (Jammu and Kashmir) jointly scored the highest, 92.97%. Eravikulam is known for the endangered Nilgiri tahr, and Dachigam for the Kashmir stag (hangul).
+
+Q 96 | ga | Current Affairs
+With which country did India secure a $131 million deal in May 2025 to acquire 'HawkEye 360’s cutting-edge surveillance technology to advance its maritime defense infrastructure?
+(1) United States of America
+(2) New Zealand
+(3) South Africa
+(4) Germany
+= 1
+~ On 30 April 2025 the US State Department approved a possible Foreign Military Sale to India of Indo-Pacific Maritime Domain Awareness equipment, mainly SeaVision software with training and analytic support, at an estimated cost of $131 million. The principal contractor is HawkEye 360, a US company based in Herndon, Virginia, so the deal is with the United States; it will help India track ships and monitor its seas.
+
+Q 97 | ga | Sports
+Which Indian bowler took 25 wickets to win IPL 2025 Purple Cap?
+(1) Jasprit Bumrah
+(2) Arshdeep Singh
+(3) Yuzvendra Chahal
+(4) Prasidh Krishna
+= 4
+~ Gujarat Titans fast bowler Prasidh Krishna took 25 wickets in 15 matches to win the Purple Cap, given to the highest wicket-taker of the IPL season, in IPL 2025. Chennai Super Kings spinner Noor Ahmad finished second with 24 wickets.
+
+Q 98 | ga | Economy & Schemes
+Which state emerged as India’s first fully literate state, following a major literacy drive under the ULLAS scheme, in May 2025?
+(1) Mizoram
+(2) Kerala
+(3) Gujarat
+(4) Goa
+= 1
+~ On 20 May 2025 Mizoram was declared India's first fully literate state under ULLAS (Understanding Lifelong Learning for All in Society), also called the New India Literacy Programme, which treats a literacy rate of 95% as full literacy; Mizoram's rate is about 98.2%. Kerala was declared fully literate earlier, in 1991, but under the old National Literacy Mission with its 90% standard, not under ULLAS.
+
+Q 99 | ga | Economy & Schemes
+According to ICRA, India’s general insurance sector is expected to see a growth of how much percentage in FY26?
+(1) 7.7%
+(2) 5.7%
+(3) 8.7%
+(4) 6.7%
+= 3
+~ In June 2025 the credit rating agency ICRA projected that the gross direct premium income of India's general insurance industry would grow by 8.7% in FY2026 (2025-26) and by 10.9% in FY2027. General insurance covers all non-life insurance such as health, motor, fire and crop insurance.
+
+Q 100 | ga | Economy & Schemes
+Which Indian personality headed the expert committee on digital competition law in 2025?
+(1) Manoj Govil
+(2) Manoj Joshi
+(3) Nandan Nilekani
+(4) Ashwini Vaishnaw
+= 1
+~ Manoj Govil, then Secretary of the Ministry of Corporate Affairs, chaired the Committee on Digital Competition Law (CDCL), which the government set up on 6 February 2023 to examine whether India needs a separate competition law for digital markets. The committee's report, with a draft Digital Competition Bill to regulate big tech companies in advance (ex-ante), was released in 2024. Ashwini Vaishnaw is the Union Minister for Electronics and IT, and Nandan Nilekani is a co-founder of Infosys.

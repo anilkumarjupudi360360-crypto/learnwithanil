@@ -1,0 +1,943 @@
+# RRB Group D (Level-1 posts, CEN 08/2024) Computer Based Test, held 9 February 2026, Shift 2 (12:45 PM – 2:15 PM). 100 questions here; the paper had 100 (1 mark each, 90 minutes, one-third mark cut for a wrong answer).
+# Source: RRB's question paper for this shift with its answer key (correct option shown in green with a tick), as published by RRB (copy hosted by AglaSem). Answers = RRB's key. Explanations by Learn with Anil (writer + independent checker).
+
+Q 1 | sci | Chemistry
+Baking soda releases which gas on heating?
+(1) O₂
+(2) CO₂
+(3) H₂
+(4) N₂
+= 2
+~ Baking soda is sodium hydrogen carbonate (NaHCO₃). On heating it decomposes: 2NaHCO₃ → Na₂CO₃ + H₂O + CO₂. The carbon dioxide released is what makes cakes and bread rise when baking soda or baking powder is used. Sodium hydrogen carbonate also gives off CO₂ when it reacts with an acid, which is the basis of soda-acid fire extinguishers.
+
+Q 2 | sci | Chemistry
+What is the typical oxide used along with aluminium in a thermite reaction?
+(1) Magnesium oxide
+(2) Iron (III) oxide
+(3) Copper oxide
+(4) Zinc oxide
+= 2
+~ In the thermite reaction, aluminium powder reduces iron(III) oxide: Fe₂O₃ + 2Al → 2Fe + Al₂O₃ + heat. So much heat is released that the iron formed is molten, which is why this reaction is used to join (weld) railway tracks and cracked machine parts. Magnesium oxide would not work because magnesium is more reactive than aluminium, so aluminium cannot displace it.
+
+Q 3 | sci | Biology
+Which cells in xylem are primarily responsible for the vertical transport of water and minerals in plants?
+(1) Sieve tubes
+(2) Xylem fibres
+(3) Tracheids and vessels
+(4) Companion cells
+= 3
+~ Xylem has four elements: tracheids, vessels, xylem parenchyma and xylem fibres. Tracheids and vessels are long, tube-like dead cells that form continuous channels carrying water and dissolved minerals upward from the roots. Xylem fibres mainly give support, while sieve tubes and companion cells belong to phloem, which transports food.
+
+Q 4 | sci | Physics
+Which of the following conditions must be satisfied for work to be done according to science?
+(1) Only the object moves, even if no force is applied.
+(2) The object is at rest, and a force is applied.
+(3) Only a force is applied, even if the object does not move.
+(4) A force must act on an object, and the object must be displaced.
+= 4
+~ In science, work is done only when a force acts on an object and the object is displaced (moves) in the direction of the force; work = force × displacement (W = F × s). If either the force or the displacement is zero, the work done is zero. That is why pushing a wall that does not move does no work, however tiring it may be.
+
+Q 5 | sci | Biology
+Imagine a country continues to use CFCs despite the global agreement. What could be the consequences for that country and the world?
+(1) Environmental harm and global criticism
+(2) Faster industrial development
+(3) No effect, as other countries have stopped using CFCs
+(4) Increase in rainfall
+= 1
+~ Chlorofluorocarbons (CFCs), once used in refrigerators, air conditioners and aerosol sprays, break down the ozone layer in the stratosphere that shields the Earth from harmful ultraviolet (UV) rays. The Montreal Protocol (1987) is the global agreement to phase them out. Ozone depletion affects the whole planet (more skin cancer, eye damage and harm to crops and ecosystems), so a country that keeps using CFCs would cause environmental harm and face international criticism; the damage does not stop just because other countries have stopped.
+
+Q 6 | sci | Chemistry
+What is a colloidal solution?
+(1) Mixture in which particles fully dissolve and settle
+(2) Transparent mixture with gases only
+(3) Heterogeneous mixture with fine particles
+(4) Uniform mixture with large particles
+= 3
+~ A colloid is a heterogeneous mixture whose particles (about 1–100 nm) are too small to be seen with the naked eye but large enough to scatter a beam of light (Tyndall effect). The particles do not settle on standing and cannot be separated by ordinary filtration. Milk, fog, smoke and jelly are common examples. Option 4 is wrong because colloid particles are not large; a mixture with large particles that settle down is a suspension.
+
+Q 7 | sci | Biology
+A flexible support to developing plant parts is provided by _______.
+(1) Xylem
+(2) Phloem
+(3) Collenchyma
+(4) Chlorenchyma
+= 3
+~ Collenchyma is a living simple permanent tissue whose cells are thickened at the corners with cellulose and pectin. It gives mechanical support along with flexibility, so young stems, leaf stalks and growing parts can bend without breaking. Xylem and phloem are conducting tissues, and chlorenchyma is parenchyma containing chloroplasts that carries out photosynthesis.
+
+Q 8 | sci | Chemistry
+In which state of matter is the space between particles maximum ?
+(1) Solid
+(2) Liquid
+(3) All have equal space
+(4) Gas
+= 4
+~ In solids the particles are tightly packed, in liquids they are a little farther apart, and in gases they are very far apart with very weak forces of attraction between them. This large empty space is why gases can be compressed easily and spread to fill any container. So the space between particles is the most in the gaseous state.
+
+Q 9 | sci | Physics
+In household electricity supply, which of the following statements correctly describes the colour codes of the wires?
+(1) The live wire is black, the neutral wire is green, and the earth wire is blue
+(2) The live wire is red, the neutral wire is black, and the earth wire is green
+(3) The live wire is blue, the neutral wire is green, and the earth wire is red
+(4) The live wire is green, the neutral wire is red, and the earth wire is black
+= 2
+~ As per the convention taught in NCERT Class 10 Science, the live (positive) wire has red insulation, the neutral (negative) wire has black insulation, and the earth wire has green insulation. The earth wire connects the metal body of appliances to the ground so that any leaking current flows safely to earth and the user does not get a shock. (Newer wiring standards also use brown for live, blue for neutral and green-yellow for earth.)
+
+Q 10 | sci | Physics
+A race car starting from rest accelerates uniformly. If the car covers 22.5 m in the 5th second of its motion, what is the total distance covered at the end of 10 seconds?
+(1) 375 m
+(2) 300 m
+(3) 250 m
+(4) 450 m
+= 3
+~ Distance covered in the nth second is sₙ = u + (a/2)(2n − 1). With u = 0 and n = 5: 22.5 = (a/2) × 9 = 4.5a, so a = 5 m/s². Distance in 10 s is s = ut + ½at² = 0 + ½ × 5 × 10² = 250 m. Check: distance in the first 5 s is ½ × 5 × 25 = 62.5 m and in the first 4 s is 40 m, and 62.5 − 40 = 22.5 m, as given.
+
+Q 11 | sci | Physics
+An object is thrown vertically upwards and rises to a height of 20 m. What was the velocity with which the object was thrown? (Take g =10 m/s²).
+(1) 40 m/s
+(2) 10 m/s
+(3) 30 m/s
+(4) 20 m/s
+= 4
+~ At the highest point the final velocity is zero. Using v² = u² − 2gh: 0 = u² − 2 × 10 × 20, so u² = 400 and u = 20 m/s. 40 m/s is too much: it would carry the object up to 40² ÷ (2 × 10) = 80 m, four times as high.
+
+Q 12 | sci | Chemistry
+Which of the following types of ore is pyrite?
+(1) Halide
+(2) Oxide
+(3) Nitrate
+(4) Sulphide
+= 4
+~ Pyrite (iron pyrites, FeS₂) is a compound of iron and sulphur, so it is a sulphide ore; its shiny golden colour gives it the name "fool's gold". Sulphide ores such as pyrite, galena (PbS), zinc blende (ZnS) and cinnabar (HgS) are first roasted in air to convert them into oxides before the metal is extracted. Haematite (Fe₂O₃) is an example of an oxide ore of iron.
+
+Q 13 | sci | Physics
+Which of the following is NOT caused by atmospheric refraction?
+(1) Sun appearing higher in sky than its actual geometric position
+(2) Advanced sunrise and delayed sunset
+(3) Twinkling of stars
+(4) Reddish colour of sun at sunrise / sunset
+= 4
+~ Atmospheric refraction is the bending of light as it passes through air layers of changing density; it makes stars twinkle, makes the Sun appear higher than its true position, and lets us see the Sun about 2 minutes before actual sunrise and after actual sunset. The reddish colour of the Sun at sunrise and sunset is due to scattering of light: sunlight travels a longer path through the atmosphere near the horizon, so most blue light is scattered away and mainly the longer-wavelength red light reaches our eyes.
+
+Q 14 | sci | Physics
+The heating effect of electric current is least in _________.
+(1) Iron
+(2) Copper
+(3) Nichrome
+(4) Tungsten
+= 2
+~ Heat produced by a current is H = I²Rt, so for the same current and time, a conductor with lower resistance produces less heat. Copper has the lowest resistivity among these (about 1.7 × 10⁻⁸ Ω m), lower than tungsten, iron and especially nichrome (about 100 × 10⁻⁸ Ω m). That is why copper is used for connecting wires, while nichrome, with its high resistivity, is used in heating elements of heaters and irons.
+
+Q 15 | sci | Physics
+If the velocity of a car increases from 20 m/s to 40 m/s in 4 seconds, the acceleration of the car is _____.
+(1) 5 m/s²
+(2) 5 m/s
+(3) 10 m/s
+(4) 10 m/s²
+= 1
+~ Acceleration = change in velocity ÷ time = (v − u)/t = (40 − 20)/4 = 20/4 = 5 m/s². The unit of acceleration is m/s², so options with m/s (the unit of velocity) are wrong even if the number looks right.
+
+Q 16 | sci | Chemistry
+When a drop of ink is added to water and left undisturbed, the ink gradually spreads throughout the water. Which property of matter does this observation best demonstrate?
+(1) Fixed positions of particles
+(2) Spaces between particles
+(3) Attraction between particles
+(4) Continuous movement of particles
+= 4
+~ The ink spreads on its own, without stirring, because the particles of ink and water are always moving and keep intermixing; this spontaneous intermixing is called diffusion. Diffusion is the standard evidence that particles of matter are continuously moving (and it becomes faster on heating, as particles move faster). Spaces between particles allow the mixing, but the spreading itself is caused by the movement of particles.
+
+Q 17 | sci | Biology
+Herbicides protect crops by ________.
+(1) Killing insects
+(2) Killing bacteria
+(3) Killing weeds
+(4) Killing fungi
+= 3
+~ Herbicides (weedicides) are chemicals that kill weeds, the unwanted plants that grow along with crops and compete with them for water, nutrients, space and light; 2,4-D is a common example. Chemicals that kill insects are insecticides, those that kill fungi are fungicides, and those that kill bacteria are bactericides.
+
+Q 18 | sci | Physics
+In a longitudinal wave, particle’s motion is ___________.
+(1) random
+(2) parallel to the wave direction
+(3) circular
+(4) perpendicular to the wave motion
+= 2
+~ In a longitudinal wave, the particles of the medium vibrate back and forth along (parallel to) the direction in which the wave travels, forming compressions and rarefactions; sound in air is the common example. In a transverse wave, such as a wave on a stretched string, the particles move perpendicular to the direction of the wave.
+
+Q 19 | sci | Biology
+Fill in the blanks with the correct sequence of organs.
+Urine is formed in the _______ → passes through the _______ → stored in the _______ → and finally released through the _______.
+(1) Kidney → Ureter → Urinary bladder → Urethra
+(2) Urethra → Urinary bladder → Ureter → Kidney
+(3) Urinary bladder → Kidney → Ureter → Urethra
+(4) Ureter → Kidney → Urethra → Urinary bladder
+= 1
+~ Urine is formed in the nephrons of the kidneys by filtering blood. It flows from each kidney through a tube called the ureter into the urinary bladder, where it is stored, and is finally passed out of the body through the urethra. So the path is kidney → ureter → urinary bladder → urethra.
+
+Q 20 | sci | Physics
+The distance between the pole and focus of a concave mirror is 30 cm. A real and inverted image is formed by this mirror on a screen at 40 cm from the pole of this mirror. What will be the object distance?
+(1) −120/7 cm
+(2) +120/7 cm
+(3) −120 cm
+(4) +120 cm
+= 3
+~ By the sign convention, for a concave mirror f = −30 cm, and a real image forms in front of the mirror, so v = −40 cm. Mirror formula: 1/u = 1/f − 1/v = −1/30 + 1/40 = (−4 + 3)/120 = −1/120, so u = −120 cm. The object lies 120 cm in front of the mirror (beyond C at 60 cm), which matches a real, inverted image between F and C. The value 120/7 comes from wrongly adding 1/30 + 1/40.
+
+Q 21 | sci | Biology
+What role does the placenta play during the development of the embryo in the human female reproductive system?
+(1) It facilitates the exchange of nutrients and wastes between mother and embryo.
+(2) It is the location where fertilisation of egg and sperm occurs.
+(3) It produces eggs needed for fertilisation.
+(4) It unites the two oviducts into the uterus.
+= 1
+~ The placenta is a disc-shaped special tissue embedded in the uterine wall that connects the embryo with the mother. Through its large surface of villi, glucose, oxygen and other nutrients pass from the mother's blood to the embryo, and wastes such as carbon dioxide pass from the embryo to the mother's blood for removal. Fertilisation takes place in the oviduct (fallopian tube), and eggs are produced by the ovaries, so the other options do not describe the placenta.
+
+Q 22 | sci | Biology
+Which of the following organisms shows the phenomenon of regeneration?
+(1) House fly
+(2) Honey bee
+(3) Mosquito
+(4) Planaria
+= 4
+~ Regeneration is the ability of an organism to grow a complete new body from a cut piece of its body. Planaria, a flatworm, has specialised cells that can divide and form all the tissues, so if it is cut into pieces, each piece can grow into a complete planarian; Hydra also shows this. Insects such as the house fly, honey bee and mosquito are complex organisms that cannot regenerate in this way.
+
+Q 23 | sci | Biology
+What is the most important condition for successful fragmentation reproduction in Spirogyra?
+(1) Each fragment possessing the capability to perform basic life functions
+(2) The ability of fragments to form seeds
+(3) Presence of reproductive organs in each fragment
+(4) Availability of a fully developed vascular system
+= 1
+~ Spirogyra is a simple filamentous green alga. When mature, its filament simply breaks into small pieces, and each fragment grows into a new filament. This works because every cell of the filament is similar and can carry out all life functions such as photosynthesis and growth, so a fragment does not need seeds, special reproductive organs or a vascular system (which algae do not have) to become a new individual.
+
+Q 24 | sci | Chemistry
+Which of the following is an example of addition reaction?
+(1) Chlorination of methane
+(2) Hydrolysis of acetic acid
+(3) Dehydration of alcohol
+(4) Hydrogenation of ethene
+= 4
+~ In an addition reaction, atoms add across a double or triple bond of an unsaturated compound. In hydrogenation of ethene, hydrogen adds across the C=C double bond in the presence of a nickel catalyst: CH₂=CH₂ + H₂ → CH₃–CH₃ (ethane); the same type of reaction is used to make vegetable ghee from oils. Chlorination of methane is a substitution reaction, and dehydration of alcohol is an elimination reaction.
+
+Q 25 | sci | Chemistry
+Which statement best defines a combination reaction?
+(1) Two reactants break down into simpler products.
+(2) Two or more reactants combine to form a single product.
+(3) One element displaces another element from its compound.
+(4) Two compounds exchange ions to form new compounds.
+= 2
+~ A combination reaction is one in which two or more reactants combine to form a single product, for example CaO + H₂O → Ca(OH)₂ or 2H₂ + O₂ → 2H₂O. Breaking down into simpler products is decomposition, one element replacing another is displacement, and exchange of ions between two compounds is double displacement.
+
+Q 26 | qa | Time & Work, Pipes & Cisterns
+Rishi can do a piece of work in 11 days. Shan is 10% more efficient than Rishi. The number of days taken by Shan to do the same piece of work is:
+(1) 10
+(2) 20
+(3) 11
+(4) 15
+= 1
+~ Days taken are inversely proportional to efficiency. If Rishi's efficiency is 100, Shan's is 110, so Shan needs 11 × 100/110 = 10 days. Option 3 (11 days) is Rishi's own time, not Shan's.
+
+Q 27 | qa | Percentage, Profit & Discount
+A shopkeeper bought 10 kg wheat at ₹20 per kg and 15 kg wheat at ₹30 per kg and mixed them. At what price per kg should he sell the mixed variety of wheat to earn 10% profit?
+(1) ₹26.60
+(2) ₹28.60
+(3) ₹29.60
+(4) ₹27.60
+= 2
+~ Total cost = 10 × 20 + 15 × 30 = 200 + 450 = ₹650 for 25 kg, so the cost price is 650 ÷ 25 = ₹26 per kg. For a 10% profit, selling price = 26 × 1.1 = ₹28.60 per kg.
+
+Q 28 | qa | Geometry & Mensuration
+If the radius of a sphere is 3 cm, then its surface area is:
+(1) 98 π cm²
+(2) 49 π cm²
+(3) 72 π cm²
+(4) 36 π cm²
+= 4
+~ Surface area of a sphere = 4πr² = 4 × π × 3² = 36π cm². Option 3 (72π cm²) is double the correct value (8πr²); 4πr² is already the whole surface of the sphere.
+
+Q 29 | qa | Geometry & Mensuration
+Find the volume of a cuboid whose length, breadth and height are in the ratio 4 : 3 : 2 and total surface area is 832 cm².
+(1) 1586 cm³
+(2) 1536 cm³
+(3) 1516 cm³
+(4) 1556 cm³
+= 2
+~ Let the sides be 4x, 3x and 2x. Total surface area = 2(lb + bh + hl) = 2(12x² + 6x² + 8x²) = 52x² = 832, so x² = 16 and x = 4. The sides are 16 cm, 12 cm and 8 cm, so volume = 16 × 12 × 8 = 1536 cm³.
+
+Q 30 | qa | Ratio, Proportion & Average
+₹13,525 is divided among A, B, and C in such a way that if ₹29, ₹70, and ₹28 be deducted from their respective shares, they have money in the ratio 19 : 6 : 8. Find the difference between the B’s and C’s original shares.
+(1) ₹762
+(2) ₹662
+(3) ₹712
+(4) ₹770
+= 4
+~ Total deducted = 29 + 70 + 28 = ₹127, so the remaining 13,525 − 127 = ₹13,398 is in the ratio 19 : 6 : 8 (19 + 6 + 8 = 33 parts). One part = 13,398 ÷ 33 = ₹406. B's original share = 6 × 406 + 70 = ₹2,506 and C's original share = 8 × 406 + 28 = ₹3,276, so the difference = 3,276 − 2,506 = ₹770. (A gets 19 × 406 + 29 = ₹7,743; the three shares add up to ₹13,525.)
+
+Q 31 | qa | Age, Calendar & Clock
+Nine years ago, Asha was thrice as old as Bhawna. Seven years from now, Asha will be twice as old as Bhawna. Find the present age of Bhawna.
+(1) 28 years
+(2) 26 years
+(3) 30 years
+(4) 25 years
+= 4
+~ Let the present ages be A and B. Nine years ago: A − 9 = 3(B − 9), so A = 3B − 18. Seven years from now: A + 7 = 2(B + 7), so 3B − 18 + 7 = 2B + 14, giving B = 25. Check: Asha is 57 now; 9 years ago 48 = 3 × 16, and after 7 years 64 = 2 × 32.
+
+Q 32 | qa | Statistics & Data
+What is the mode of the following data?
+85, 73, 89, 82, 67, 61, 78, 69, 86, 68, 64, 76, 64, 85, 68, 85, 68, 81, 68, 72, 64, 72, 76, 84, 88
+(1) 73
+(2) 89
+(3) 85
+(4) 68
+= 4
+~ The mode is the value that occurs most often. Counting: 68 occurs 4 times, while 85 and 64 occur 3 times each, 76 and 72 twice, and every other value once. So the mode is 68; 85 is the tempting choice but it appears only 3 times.
+
+Q 33 | qa | Percentage, Profit & Discount
+In an election held between two candidates, 75% voters cast their votes. Out of them 2% votes were declared invalid. One candidate got 9261 votes which was 75% of valid votes. In this election what was the total number of registered voters?
+(1) 17,560
+(2) 17,800
+(3) 16,800
+(4) 17,500
+= 3
+~ Let the registered voters be N. Votes cast = 0.75N; valid votes = 98% of that = 0.735N. The candidate got 75% of the valid votes: 0.75 × 0.735N = 0.55125N = 9261, so N = 9261 ÷ 0.55125 = 16,800.
+
+Q 34 | qa | Time & Work, Pipes & Cisterns
+Pipe A can fill a cistern in 15 minutes and Pipe B can fill it in 35 minutes, while Pipe C can empty the full cistern in 1 hour. If all the pipes are turned on at the same time, in how much time (in minutes) will the cistern be full?
+(1) 12 8/11
+(2) 14 10/11
+(3) 13 9/11
+(4) 10 7/11
+= 1
+~ Take the capacity as the LCM of 15, 35 and 60 = 420 units. A fills 28 units/min, B fills 12 units/min and C empties 7 units/min (1 hour = 60 minutes). Net filling = 28 + 12 − 7 = 33 units/min, so time = 420 ÷ 33 = 140/11 = 12 8/11 minutes.
+
+Q 35 | qa | Percentage, Profit & Discount
+Successive discounts of 40% and 15% are equivalent to a single discount of ________.
+(1) 51%
+(2) 49%
+(3) 50%
+(4) 52%
+= 2
+~ For successive discounts a% and b%, the single equivalent discount = a + b − ab/100 = 40 + 15 − (40 × 15)/100 = 55 − 6 = 49%. Check: on ₹100, after 40% off the price is ₹60, and 15% off ₹60 leaves ₹51, so the total discount is ₹49. The sum 55% is wrong because the second discount applies only to the reduced price.
+
+Q 36 | qa | Percentage, Profit & Discount
+A man loses 20% of his money. He then spends 25% of what remains. If he is left with ₹525, what was his original amount?
+(1) ₹890
+(2) ₹880
+(3) ₹885
+(4) ₹875
+= 4
+~ Let the original amount be x. After losing 20%, he has 0.8x; after spending 25% of that, he has 0.75 × 0.8x = 0.6x. So 0.6x = 525 and x = ₹875. Check: 875 → 700 → 525.
+
+Q 37 | qa | HCF, LCM & Fractions
+There are 156 boy students and 143 girl students in a school. The principal wants to divide them in sections, such that a section can have only boys or only girls. If all sections should have the same number of students, and the principal wants to have as fewer sections as possible, how many sections would be there in the school?
+(1) 45
+(2) 25
+(3) 43
+(4) 23
+= 4
+~ For the fewest sections, each section must be as large as possible, so its size is the HCF of 156 and 143. Since 156 = 12 × 13 and 143 = 11 × 13, the HCF is 13. Number of sections = 156/13 + 143/13 = 12 + 11 = 23.
+
+Q 38 | qa | Geometry & Mensuration
+In a quadrilateral ABCD, ∠A = 36° and ∠B = 93°. The bisectors of ∠C and ∠D meet at O. What is the measure of ∠DOC?
+(1) 64.5°
+(2) 62°
+(3) 69.5°
+(4) 68°
+= 1
+~ The angles of a quadrilateral add up to 360°, so ∠C + ∠D = 360° − 36° − 93° = 231°. In triangle DOC, ∠ODC + ∠OCD = (∠C + ∠D)/2 = 115.5°, so ∠DOC = 180° − 115.5° = 64.5°. (Shortcut: ∠DOC = (∠A + ∠B)/2 = 129°/2 = 64.5°.)
+
+Q 39 | qa | Percentage, Profit & Discount
+The difference between a single discount of 46% and two successive discounts of 30% and 20% on the marked price of an article is ₹256. Find the marked price of the article (in ₹).
+(1) 12,600
+(2) 12,800
+(3) 12,200
+(4) 12,400
+= 2
+~ Successive discounts of 30% and 20% equal a single discount of 30 + 20 − (30 × 20)/100 = 44%. The difference from 46% is 2% of the marked price, so 2% of MP = ₹256 and MP = 256 × 100/2 = ₹12,800.
+
+Q 40 | qa | Simple & Compound Interest
+A sum of ₹15,000 is lent at the rate of 15% per annum compound interest, compounded annually for two years. What is the interest received (in ₹) after two years?
+(1) 4,738.25
+(2) 4,973.75
+(3) 5,137.25
+(4) 4,837.50
+= 4
+~ Amount = 15,000 × (1.15)² = 15,000 × 1.3225 = ₹19,837.50, so compound interest = 19,837.50 − 15,000 = ₹4,837.50. Year by year: interest is ₹2,250 in the first year and 15% of 17,250 = ₹2,587.50 in the second, total ₹4,837.50.
+
+Q 41 | qa | Number System & Simplification
+The number of two-digit numbers divisible by 6 is:
+(1) 15
+(2) 18
+(3) 12
+(4) 16
+= 1
+~ The two-digit multiples of 6 run from 12 (6 × 2) to 96 (6 × 16). That is 16 − 2 + 1 = 15 numbers. (16 is wrong because it also counts 6, which is a one-digit number.)
+
+Q 42 | qa | Speed, Time & Distance
+A girl goes to school at a speed of 10 km/hr. She comes back with a speed of 40 km/hr. Find her average speed for the whole journey.
+(1) 21 km/hr
+(2) 6 km/hr
+(3) 16 km/hr
+(4) 13 km/hr
+= 3
+~ For equal distances at speeds x and y, average speed = 2xy/(x + y) = (2 × 10 × 40)/(10 + 40) = 800/50 = 16 km/hr. The simple mean (10 + 40)/2 = 25 is wrong because she spends more time at the slower speed.
+
+Q 43 | qa | Ratio, Proportion & Average
+The average of the first 16 odd natural numbers, is:
+(1) 15.5
+(2) 16
+(3) 17
+(4) 16.5
+= 2
+~ The sum of the first n odd natural numbers is n², so the first 16 odd numbers (1, 3, ..., 31) add up to 16² = 256. Average = 256 ÷ 16 = 16, which is the same as (first + last)/2 = (1 + 31)/2.
+
+Q 44 | qa | Ratio, Proportion & Average
+The ratio of incomes of two persons is 8:5 and the ratio of their expenditure is 2:1. If each of them manages to save ₹160 per month, find the difference of their monthly income.
+(1) ₹220
+(2) ₹260
+(3) ₹240
+(4) ₹200
+= 3
+~ Let incomes be 8x and 5x and expenditures 2y and y. Savings: 8x − 2y = 160 and 5x − y = 160. Doubling the second gives 10x − 2y = 320; subtracting the first gives 2x = 160, so x = 80. Incomes are ₹640 and ₹400, so the difference = ₹240 (expenditures ₹480 and ₹240 leave ₹160 each).
+
+Q 45 | qa | Percentage, Profit & Discount
+Find the single discount equivalent to two successive discounts of 28% and 16%.
+(1) 43.51%
+(2) 43.38%
+(3) 39.52%
+(4) 39.92%
+= 3
+~ Single equivalent discount = a + b − ab/100 = 28 + 16 − (28 × 16)/100 = 44 − 4.48 = 39.52%. Check: ₹100 becomes ₹72 after 28% off, then 16% off ₹72 leaves ₹60.48, a total discount of ₹39.52.
+
+Q 46 | qa | Number System & Simplification
+The value of 13³ − 8³ is:
+(1) 1430
+(2) 1725
+(3) 1685
+(4) 1769
+= 3
+~ 13³ = 2197 and 8³ = 512, so 13³ − 8³ = 2197 − 512 = 1685. Using a³ − b³ = (a − b)(a² + ab + b²): 5 × (169 + 104 + 64) = 5 × 337 = 1685.
+
+Q 47 | qa | Speed, Time & Distance
+If the ratio of the the speeds of three cars is 2:3:5, then the ratio of the time taken by these three cars to travel the same distance is:
+(1) 10 : 15 : 6
+(2) 6 : 10 : 15
+(3) 15 : 10 : 6
+(4) 10 : 6 : 15
+= 3
+~ For a fixed distance, time is inversely proportional to speed, so the times are in the ratio 1/2 : 1/3 : 1/5. Multiplying by the LCM 30 gives 15 : 10 : 6. Option 2 reverses the order (it would mean the fastest car takes the longest).
+
+Q 48 | qa | Ratio, Proportion & Average
+If 66% of the first number is equal to three-fifths of the second number, what is the ratio of the first number to the second number?
+(1) 5 : 7
+(2) 9 : 14
+(3) 8 : 11
+(4) 10 : 11
+= 4
+~ Let the numbers be a and b. Then (66/100)a = (3/5)b, so a/b = (3/5) ÷ (66/100) = 60/66 = 10/11. Hence a : b = 10 : 11.
+
+Q 49 | qa | Number System & Simplification
+Evaluate the given expression.
+35 − [25 − {31 − (21 − 11 + 9)}]
+(1) 25
+(2) 21
+(3) 19
+(4) 22
+= 4
+~ Solve the innermost bracket first: (21 − 11 + 9) = 19. Then {31 − 19} = 12, [25 − 12] = 13, and finally 35 − 13 = 22.
+
+Q 50 | qa | Trigonometry & Heights
+Find the value of sec² 18° − cot² 72° + sin² 30° + cosec² 60° − cosec² 18° + tan² 72°.
+(1) 19/12
+(2) 19/10
+(3) 10/19
+(4) 12/19
+= 1
+~ Since 72° = 90° − 18°, cot 72° = tan 18° and tan 72° = cot 18°. So sec² 18° − tan² 18° = 1 and cot² 18° − cosec² 18° = −1, and these two parts cancel. What remains is sin² 30° + cosec² 60° = (1/2)² + (2/√3)² = 1/4 + 4/3 = 3/12 + 16/12 = 19/12.
+
+Q 51 | rea | Directions & Distance
+Rajesh starts from Point M and drives 13 km towards the north. Then he takes a right turn and drives 6 km, he turns right again and drives 5 km. Then he takes a left turn and drives 3 km, then he turns right and drives 10 km. He then takes a final right turn and drives 9 km and stops at Point N. How far (shortest distance) and towards which direction should he drive in order to reach Point M again? (All turns are 90-degree turns only unless specified.)
+(1) 4 km towards the north
+(2) 2 km towards the north
+(3) 4 km towards the south
+(4) 2 km towards the south
+= 2
+~ Take M as (0, 0). North 13 km → (0, 13); right turn (east) 6 km → (6, 13); right turn (south) 5 km → (6, 8); left turn (east) 3 km → (9, 8); right turn (south) 10 km → (9, −2); right turn (west) 9 km → N at (0, −2). East–west movement cancels (6 + 3 − 9 = 0) and N is 2 km south of M, so he must drive 2 km towards the north.
+
+Q 52 | rea | Blood Relations
+In a certain code language,
+A + B means ‘A is the sister of B’
+A # B means ‘A is the brother of B’
+A × B means ‘A is the wife of B’
+A @ B means ‘A is the father of B’
+Based on the above, how is L related to R if ‘L@O+V#E×R’?
+(1) Wife's father
+(2) Father
+(3) Wife's brother
+(4) Brother
+= 1
+~ L @ O: L is the father of O. O + V: O is the sister of V. V # E: V is the brother of E. E × R: E is the wife of R. So O, V and E are siblings and L is the father of all three, including E. Since E is R's wife, L is R's wife's father (father-in-law).
+
+Q 53 | rea | Series
+Refer to the following number, symbol series and answer the question. Counting to be done from left to right only (all numbers are single digit numbers only).
+(Left) # 5 1 & & 5 + 8 3 & * < \ 9 $ > > * 5 / 7 (Right)
+How many such symbols are there each of which is immediately preceded by another symbol and also immediately followed by a number?
+(1) Three
+(2) Two
+(3) One
+(4) Four
+= 1
+~ Look for the pattern symbol–symbol–number, where the middle symbol is counted. The cases are: & & 5 (second &), < \ 9 (the \) and > * 5 (the second *). No other symbol has a symbol before it and a number after it (for example, * < \ and > > * end in a symbol). So there are three such symbols.
+
+Q 54 | rea | Directions & Distance
+Mohak starts from Point A and drives 12 km towards the South. He then takes a left turn, drives 11 km, turns left and drives 15 km. He then takes a left turn and drives 14 km. He takes a final left turn, drives 3 km and stops at Point P. How far (shortest distance) and towards which direction should he drive in order to reach Point A again? (All turns are 90 degrees turns only unless specified)
+(1) 3 km to the west
+(2) 3 km to the east
+(3) 4 km to the west
+(4) 4 km to the east
+= 2
+~ Take A as (0, 0). South 12 km → (0, −12); a left turn while facing south means east, 11 km → (11, −12); left (north) 15 km → (11, 3); left (west) 14 km → (−3, 3); left (south) 3 km → P at (−3, 0). P is on the same line as A but 3 km to its west, so he must drive 3 km to the east.
+
+Q 55 | rea | Series
+Refer to the following number series and answer the question that follows. Counting to be done from left to right only. (All numbers are single-digit numbers only.)
+(Left) 3 1 2 9 8 4 1 5 4 2 1 5 8 1 3 4 7 5 3 6 5 7 6 6 1 1 2 (Right)
+How many such odd numbers are there each of which is immediately preceded by an odd number and also immediately followed by an odd number?
+(1) 2
+(2) 1
+(3) 0
+(4) 3
+= 2
+~ We need three odd numbers in a row and count the middle one. The only such group is 7 5 3 (the 5 in the middle). Groups like 1 5 4, 1 3 4, 5 3 6, 5 7 6 and 1 1 2 fail because one neighbour is even. So the answer is 1.
+
+Q 56 | rea | Coding-Decoding
+YOBD is related to IYLN in a certain way based on the English alphabetical order. In the same way, MCPR is related to WMZB. To which of the following options is QGTV related to, following the same logic?
+(1) AQDF
+(2) ADRT
+(3) ADER
+(4) AXSW
+= 1
+~ Each letter moves 10 places forward (wrapping from Z back to A): Y + 10 = I, O + 10 = Y, B + 10 = L, D + 10 = N; similarly M → W, C → M, P → Z, R → B. Applying +10 to QGTV: Q → A, G → Q, T → D, V → F, giving AQDF.
+
+Q 57 | rea | Coding-Decoding
+In a certain code language, ‘JARS’ is coded as ‘6428’ and ‘SIDE’ is coded as ‘5761’. What is the code for ‘S’ in the given code language?
+(1) 7
+(2) 6
+(3) 8
+(4) 5
+= 2
+~ The letters are coded as digits in a jumbled order, so compare the two words. The only letter common to JARS and SIDE is S, and the only digit common to 6428 and 5761 is 6. Hence S is coded as 6.
+
+Q 58 | rea | Mathematical Operations
+If 1 is added to each even digit and 2 is subtracted from each odd digit in the number 8239847, how many digits will appear more than once in the new number thus formed?
+(1) One
+(2) None
+(3) Three
+(4) Two
+= 4
+~ Change each digit of 8239847: 8 → 9, 2 → 3, 3 → 1, 9 → 7, 8 → 9, 4 → 5, 7 → 5. The new number is 9317955. Here 9 appears twice and 5 appears twice, while 3, 1 and 7 appear once each, so two digits repeat.
+
+Q 59 | rea | Ranking & Arrangement
+A, B, C, D, E, F and G are sitting around a circular table facing the centre. F sits third to the right of G. A sits third to the right of F. C is the immediate neighbour of B and A. D sits third to the right of A.
+How many people sit between E and D when counted from the left of E ?
+(1) Two
+(2) Four
+(3) Five
+(4) Three
+= 3
+~ When people face the centre, moving to their right means going anticlockwise. Going anticlockwise from G: G, E, D, F, B, C, A (seats 1 to 7). Check: F is 3rd to the right of G, A is 3rd to the right of F, D is 3rd to the right of A (wrapping round), and C sits between B and A; E takes the last seat. Counting from E towards its left (clockwise): G, A, C, B, F and then D, so five people sit between E and D.
+
+Q 60 | rea | Ranking & Arrangement
+Varun ranked 24th from the top and 47th from the bottom in his class. How many students are there in his class?
+(1) 69
+(2) 72
+(3) 70
+(4) 71
+= 3
+~ Total = rank from top + rank from bottom − 1 = 24 + 47 − 1 = 70. We subtract 1 because Varun is counted in both ranks (23 students above him, 46 below him, plus Varun = 70).
+
+Q 61 | rea | Series
+What should come in place of the question mark (?) in the given series?
+76 81 91 111 151 ?
+(1) 233
+(2) 231
+(3) 230
+(4) 232
+= 2
+~ The differences double each time: 81 − 76 = 5, 91 − 81 = 10, 111 − 91 = 20, 151 − 111 = 40. The next difference is 80, so the missing number is 151 + 80 = 231.
+
+Q 62 | rea | Syllogism & Statements
+Read the given statement(s) and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).
+Statements: All shells are mats. All mats are lotions.
+Conclusion (I): Some lotions are shells
+Conclusion (II): No lotion is a shell
+(1) Both conclusions (I) and (II) follow
+(2) Neither conclusion (I) nor (II) follows
+(3) Only conclusion (I) follows
+(4) Only conclusion (II) follows
+= 3
+~ All shells are mats and all mats are lotions, so all shells are lotions (the shells circle lies fully inside the lotions circle). Hence some lotions are certainly shells, so Conclusion I follows. Conclusion II says no lotion is a shell, which contradicts this, so it does not follow.
+
+Q 63 | rea | Coding-Decoding
+BONZ is related to SFEQ in a certain way based on the English alphabetical order. In the same way, REDP is related to IVUG. To which of the following options is QDCO related, following the same logic?
+(1) HUTF
+(2) HTYU
+(3) HFTY
+(4) HUFT
+= 1
+~ Each letter moves 9 places back (wrapping from A round to Z): B − 9 = S, O − 9 = F, N − 9 = E, Z − 9 = Q; similarly R → I, E → V, D → U, P → G. Applying −9 to QDCO: Q → H, D → U, C → T, O → F, giving HUTF. Option 4 (HUFT) has the right letters in the wrong order.
+
+Q 64 | rea | Ranking & Arrangement
+A, B, C, D, E, F and G are sitting around a circular table facing the centre. D sits third to the right of C. E sits third to the left of C. B sits second to the left of D. G sits to the immediate left of A. How many people sit between F and G when counted from the left of F?
+(1) Four
+(2) Two
+(3) One
+(4) Three
+= 4
+~ Facing the centre, right means anticlockwise. Going anticlockwise from C, number the seats 1 to 7: D is 3rd to the right of C (seat 4), E is 3rd to the left of C (seat 5), and B is 2nd to the left of D (seat 2). Seats 3, 6 and 7 remain; G must be immediately left of A, which works only with G in seat 6 and A in seat 7, so F is in seat 3. The order anticlockwise is C, B, F, D, E, G, A. Counting from F to its left (clockwise): B, C, A and then G, so three people sit between F and G.
+
+Q 65 | rea | Ranking & Arrangement
+A,B,C,D,E,F and G are sitting in a straight line facing North.
+Only five people sit between D and C. E sits to the immediate left of C. Only one person sits between E and A. G sits at some place to the left of F but at some place to the right of B.
+How many people sit to the right of A?
+(1) 1
+(2) 3
+(3) 4
+(4) 2
+= 2
+~ With 7 seats, five people between D and C puts them at the two ends. E is immediately left of C, so C is at the right end (seat 7), E is in seat 6 and D in seat 1. One person between E and A puts A in seat 4. B, G and F fill seats 2, 3 and 5 with B left of G and G left of F, so the line is D B G A F E C. Three people (F, E, C) sit to the right of A.
+
+Q 66 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four are alike in a certain way and thus form a group. Which is the one that does not belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) PSW
+(2) FIN
+(3) DGK
+(4) JMQ
+= 2
+~ In PSW, DGK and JMQ the gaps are +3 and then +4 (P → S → W, D → G → K, J → M → Q). In FIN the gaps are +3 and then +5 (F → I → N), so FIN is the odd one out.
+
+Q 67 | rea | Ranking & Arrangement
+In a row of people all facing North, Alok is 12th from the right end. Pyush is 18th from the right end. Pyush is exactly between Alok and Priyanka. If Priyanka is 5th from the left end of the line, how many people are there in the row?
+(1) 27
+(2) 26
+(3) 29
+(4) 28
+= 4
+~ Pyush is 18 − 12 = 6 places to the left of Alok. Being exactly in the middle, Pyush is also 6 places to the right of Priyanka, so Priyanka is 18 + 6 = 24th from the right end. She is 5th from the left, so the total = 24 + 5 − 1 = 28.
+
+Q 68 | rea | Series
+Which of the following letter-number clusters will replace the question mark (?) in the given series to make it logically complete?
+FCF 47 HEH 58 JGJ 69 LIL 80 ?
+(1) NKN 90
+(2) NKN 91
+(3) MJM 90
+(4) MLM 91
+= 2
+~ In the letter part, the outer letters go F, H, J, L, N (+2) and the middle letter goes C, E, G, I, K (+2), giving NKN. The numbers increase by 11: 47, 58, 69, 80, 91. So the next term is NKN 91; NKN 90 has the right letters but the wrong number.
+
+Q 69 | rea | Series
+Which of the following letter-clusters will replace the question mark (?) in the given series to make it logically complete?
+PDH, RFJ, THL, VJN, ?
+(1) XLP
+(2) XMO
+(3) XMP
+(4) XLO
+= 1
+~ Each of the three positions moves forward by 2 letters: first letters P, R, T, V, X; second letters D, F, H, J, L; third letters H, J, L, N, P. So the next cluster is XLP.
+
+Q 70 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+All notepads are diaries.
+All diaries are organisers.
+Some organisers are planners.
+Conclusions:
+(I): All notepads are organisers.
+(II): Some planners are notepads.
+(1) Both conclusions (I) and (II) follow
+(2) Only conclusion (II) follows
+(3) Neither conclusion (I) nor (II) follows
+(4) Only conclusion (I) follows
+= 4
+~ All notepads are diaries and all diaries are organisers, so all notepads are organisers: Conclusion I follows. The planners are linked only to some organisers, and those organisers need not be notepads, so there is no definite link between planners and notepads: Conclusion II does not follow.
+
+Q 71 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+66 × 6 ÷ 3 − 128 ÷ 2 + 15 × 3 − 16 ÷ 2 + 17 = ?
+(1) 245
+(2) 224
+(3) 239
+(4) 299
+= 4
+~ After interchanging, the expression becomes 66 ÷ 6 × 3 + 128 × 2 − 15 ÷ 3 + 16 × 2 − 17. Following BODMAS from left to right: 66 ÷ 6 × 3 = 33, 128 × 2 = 256, 15 ÷ 3 = 5 and 16 × 2 = 32. So the value is 33 + 256 − 5 + 32 − 17 = 299.
+
+Q 72 | rea | Series
+Refer to the following series and answer the question. (All numbers are single-digit numbers only) (Counting to be done from left to right only).
+(Left) 5 4 3 6 7 8 2 1 9 3 3 2 4 5 (Right)
+How many such odd numbers are there, each of which is immediately preceded by an even number and immediately followed by an even number?
+(1) Two
+(2) One
+(3) More than three
+(4) Three
+= 1
+~ Look for the pattern even–odd–even. It occurs twice: 4 3 6 and 6 7 8. Other odd numbers fail: 1 in 2 1 9 is followed by an odd number, and the 9, 3, 3 group has odd neighbours. So there are two such numbers.
+
+Q 73 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+37 ÷ 5 − 91 + 16 × 4 = ?
+(1) 268
+(2) 270
+(3) 272
+(4) 274
+= 3
+~ After interchanging, the expression becomes 37 × 5 + 91 − 16 ÷ 4. By BODMAS: 37 × 5 = 185 and 16 ÷ 4 = 4, so the value is 185 + 91 − 4 = 272.
+
+Q 74 | rea | Coding-Decoding
+In a certain code language, ‘touch snow gently’ is coded as ‘lu ek ag’ and ‘snow falls light’ is coded as ‘ph lu yn’. How is ‘snow’ coded in the given language?
+(1) ek
+(2) yn
+(3) lu
+(4) ph
+= 3
+~ The word common to both sentences is ‘snow’, and the code common to both coded forms is ‘lu’. So ‘snow’ is coded as ‘lu’; the other codes belong to words that appear in only one sentence.
+
+Q 75 | rea | Series
+Refer to the following number series and answer the question that follows. Counting to be done from left to right only. (All numbers are single-digit numbers only.)
+(Left) 8 7 4 1 5 7 4 8 6 6 6 2 5 5 8 4 3 9 4 3 1 7 7 5 1 2 5 (Right)
+How many such odd numbers are there each of which is immediately preceded by an even number and also immediately followed by an even number?
+(1) 3
+(2) 1
+(3) 0
+(4) 2
+= 2
+~ Look for the pattern even–odd–even. It occurs only once, in 8 7 4 at the start. Other odd numbers fail because a neighbour is odd: 4 1 5, 2 5 5, 4 3 9, 4 3 1, and the last 5 has nothing after it. So the answer is 1.
+
+Q 76 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter cluster pairs are alike in a certain way and thus form a group. Which is the one that does not belong to that group?
+(Note: The odd man out is not based on the number of consonants/vowels or their position in the letter cluster)
+(1) BK - GP
+(2) OY - TD
+(3) FS - KY
+(4) MP - RU
+= 3
+~ In each pair, every letter of the first cluster moves 5 places forward to give the second cluster: B + 5 = G and K + 5 = P; O + 5 = T and Y + 5 = D (wrapping past Z); M + 5 = R and P + 5 = U. In FS - KY, F + 5 = K but S + 6 = Y (S + 5 would be X), so FS - KY is the odd one out.
+
+Q 77 | rea | Series
+What should come in place of the question mark (?) in the given series?
+61 66 72 77 83 ?
+(1) 87
+(2) 88
+(3) 89
+(4) 90
+= 2
+~ The differences alternate +5 and +6: 61 + 5 = 66, 66 + 6 = 72, 72 + 5 = 77, 77 + 6 = 83. The next step is +5, so the missing number is 83 + 5 = 88.
+
+Q 78 | rea | Coding-Decoding
+JLIU is related to EKGV in a certain way based on the English alphabetical order. In the same way, MWQE is related to HVOF. To which of the following is CBTJ related to, following the same logic ?
+(1) ZNOP
+(2) WOPK
+(3) XARK
+(4) YQRP
+= 3
+~ The four letters change by −5, −1, −2 and +1: J → E, L → K, I → G, U → V, and likewise M → H, W → V, Q → O, E → F. Applying the same to CBTJ: C − 5 = X (wrapping back past A), B − 1 = A, T − 2 = R and J + 1 = K, giving XARK.
+
+Q 79 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding/subtracting/multiplying to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+15 - 3 - 45
+12 - 4 - 48
+(1) 5 - 6 - 36
+(2) 41 - 3 - 113
+(3) 10 - 2 - 30
+(4) 31 - 2 - 62
+= 4
+~ In each set the third number is the product of the first two: 15 × 3 = 45 and 12 × 4 = 48. Only 31 - 2 - 62 fits, since 31 × 2 = 62. The others fail: 5 × 6 = 30 (not 36), 41 × 3 = 123 (not 113) and 10 × 2 = 20 (not 30).
+
+Q 80 | rea | Series
+Select the number from among the given options that can replace the question mark (?) in the following series.
+121, 144, 169, 196, ?
+(1) 215
+(2) 115
+(3) 225
+(4) 125
+= 3
+~ The terms are squares of consecutive numbers: 11² = 121, 12² = 144, 13² = 169, 14² = 196. The next term is 15² = 225 (the differences 23, 25, 27 also point to a next difference of 29, and 196 + 29 = 225).
+
+Q 81 | ga | Current Affairs
+Which of the following neighboring countries of India had a ranking worse than India in the Sustainable Development Goals (SDG) Index in the 2025 edition of the Sustainable Development Report (SDR) released in June 2025?
+(1) Sri Lanka
+(2) Pakistan
+(3) Nepal
+(4) Bhutan
+= 2
+~ In the SDG Index 2025, published by the UN Sustainable Development Solutions Network as part of its Sustainable Development Report, India ranked 99th (up from 109th in 2024), entering the top 100 for the first time. Pakistan ranked much lower at 140th, while Bhutan, Nepal and Sri Lanka were all ranked above India. Finland topped the index.
+
+Q 82 | ga | Economy & Schemes
+In 2025, which country requested consultations with India at the World Trade Organization regarding trade measures on solar cells and modules?
+(1) Brazil
+(2) China
+(3) Australia
+(4) South Korea
+= 2
+~ In 2025 China requested consultations with India at the WTO, challenging Indian measures that support domestic production of solar cells and modules; China argued that they favour Indian-made products and discriminate against Chinese imports. A request for consultations is the first formal step in the WTO dispute settlement process. China is the world's largest maker of solar equipment; in an earlier case brought by the USA, the WTO had ruled in 2016 against the domestic-content rules of India's National Solar Mission.
+
+Q 83 | ga | Sports
+In which competition did Parul Chaudhary break her national record in 2025?
+(1) Asian Athletics Championship
+(2) Commonwealth Games
+(3) Indian National Championships
+(4) Doha Diamond League
+= 1
+~ At the Asian Athletics Championships held in Gumi, South Korea, in late May 2025, Parul Chaudhary won silver in the women's 3000 m steeplechase with a time of 9:12.46, breaking the national record. However, she had also set a national record of 9:13.39 two weeks earlier at the Doha Diamond League on 16 May 2025, so option 4 is also factually a competition where she broke her record; RRB has marked the Asian Championships, where she lowered the record most recently. (RRB key; some sources differ.)
+
+Q 84 | ga | Science & Technology
+Which missile was successfully launched by DRDO from a rail-based mobile launcher under full operational conditions on 24 September 2025?
+(1) Agni-I
+(2) BrahMos
+(3) Agni-Prime
+(4) Prithvi-II
+= 3
+~ On 24 September 2025, DRDO carried out the first-ever launch of the Agni-Prime missile from a specially designed rail-based mobile launcher. Agni-Prime is a new-generation, nuclear-capable missile of the Agni family with a range of up to 2,000 km. Launching from a train lets the missile move across the rail network and fire with little warning, which makes it harder for an enemy to track.
+
+Q 85 | ga | Science & Technology
+Which of the following missions is the first space-based Indian mission to study the sun?
+(1) Mangalyaan
+(2) Chandrayaan-1
+(3) Aditya L1
+(4) AstroSat
+= 3
+~ Aditya-L1 is India's first space-based observatory dedicated to studying the Sun. ISRO launched it on PSLV-C57 on 2 September 2023, and it was placed in a halo orbit around Lagrange point 1 (L1), about 1.5 million km from Earth, in January 2024, from where it can watch the Sun without being blocked by eclipses. Mangalyaan studied Mars, Chandrayaan-1 the Moon, and AstroSat is a general multi-wavelength space telescope.
+
+Q 86 | ga | Economy & Schemes
+As on 31st August 2025, how many total projects did NABARD sanction under term loans across 8 State Governments?
+(1) 64
+(2) 86
+(3) 92
+(4) 72
+= 2
+~ As per the figure marked by RRB, NABARD had sanctioned 86 projects under term loans across 8 State Governments as on 31 August 2025. NABARD (National Bank for Agriculture and Rural Development), set up on 12 July 1982 and headquartered in Mumbai, is India's apex development bank for agriculture and rural development; besides refinancing banks, it lends directly to State Governments for rural infrastructure such as irrigation, roads and bridges, mainly through the Rural Infrastructure Development Fund (RIDF) and other term-loan windows.
+
+Q 87 | ga | Economy & Schemes
+The launch of “Mission Shakti 5.0” during International Girl Child Week (October 3–11, 2025) in Uttar Pradesh contributed mainly to progress in which of the following Sustainable Development Goals (SDGs)?
+(1) Responsible consumption and production
+(2) Quality education
+(3) Clean energy / sustainable energy
+(4) Gender equality
+= 4
+~ Mission Shakti is the Uttar Pradesh government's campaign, started in 2020, for the safety, dignity and self-reliance of women and girls; Mission Shakti 5.0 is its fifth phase, with safety and awareness drives on women's rights and welfare schemes. Since its aim is to empower women and girls and protect them from violence and discrimination, it mainly supports SDG 5, Gender Equality. Quality education is SDG 4, clean energy SDG 7 and responsible consumption and production SDG 12.
+
+Q 88 | ga | Economy & Schemes
+In 2025, India signed a $126.42 million loan agreement with which institution for the purpose of developing sustainable tourism infrastructure around Tehri Lake in Uttarakhand?
+(1) International Monetary Fund
+(2) World Bank
+(3) New Development Bank
+(4) Asian Development Bank
+= 4
+~ In 2025 the Government of India and the Asian Development Bank (ADB) signed a $126.42 million loan to develop sustainable, inclusive and climate-resilient tourism around Tehri Lake in Tehri Garhwal district, Uttarakhand. The lake is the reservoir of the Tehri Dam on the Bhagirathi river. ADB, set up in 1966, is headquartered in Manila, Philippines.
+
+Q 89 | ga | Economy & Schemes
+Which Indian Ministry released the first-ever monthly Periodic Labour Force Survey (PLFS) in April 2025?
+(1) Ministry of Home Affairs
+(2) Ministry of Statistics and Programme Implementation
+(3) Ministry of Labour and Employment
+(4) Ministry of Finance
+= 2
+~ The Periodic Labour Force Survey is conducted by the National Statistics Office (NSO) under the Ministry of Statistics and Programme Implementation (MoSPI). Under its revamped design, MoSPI began monthly estimates; the first monthly bulletin, covering April 2025 and released in mid-May 2025, showed an unemployment rate of 5.1% (current weekly status, age 15 and above). Earlier, PLFS gave only quarterly urban and annual estimates.
+
+Q 90 | ga | Economy & Schemes
+In May 2025, the Reserve Bank of India (RBI) initiated reviewing digital wallets linked to which of the following sectors after BluSmart shutdown?
+(1) Healthcare
+(2) Food delivery
+(3) Electric vehicle services
+(4) Travel bookings
+= 3
+~ BluSmart was an all-electric cab (EV ride-hailing) service whose sudden shutdown in 2025 left users unable to get back money held in its app wallet. In May 2025, RBI began reviewing the closed-loop wallets used by such electric vehicle services. Closed-loop wallets can be used only on one platform and are not directly regulated by RBI, unlike other prepaid wallets, which is why the shutdown exposed a gap in consumer protection.
+
+Q 91 | ga | Awards, Books & Persons
+In the context of 2025 discussions on global governance and foreign-policy literacy, which of the following books by Richard Haass is widely cited as a concise primer that helps general readers understand world politics and major global challenges?
+(1) The New Map
+(2) The World: A Brief Introduction
+(3) The Future Is Asian
+(4) The Long Game
+= 2
+~ "The World: A Brief Introduction" (Penguin, 2020) was written by Richard Haass, an American diplomat who was president of the Council on Foreign Relations for two decades. It explains, in simple language, how different regions of the world work and global issues such as climate change, terrorism, trade and pandemics. The other books are by different authors: "The New Map" by Daniel Yergin, "The Future Is Asian" by Parag Khanna and "The Long Game" by Rush Doshi.
+
+Q 92 | ga | Polity & Governance
+Which party held the Kaliganj seat in West Bengal during the by-polls held in June 2025?
+(1) Biju Janata Dal
+(2) Trinamool Congress
+(3) Bharatiya Janata Party
+(4) Aam Aadmi Party
+= 2
+~ The Kaliganj (Nadia district) assembly by-election was needed after the death of the sitting Trinamool Congress MLA Nasiruddin Ahmed in 2025. In the result declared on 23 June 2025, TMC candidate Alifa Ahmed, his daughter, defeated the BJP candidate by more than 50,000 votes, so the Trinamool Congress retained the seat.
+
+Q 93 | ga | Awards, Books & Persons
+Which four entertainment icons were honored with Oscars at the 2025 Governors Awards?
+(1) Tom Cruise, Dolly Parton, Debbie Allen, Wynn Thomas
+(2) Meryl Streep, Judi Dench, Clint Eastwood, Martin Scorsese
+(3) Steven Spielberg, Angela Bassett, Benicio del Toro, Julie Taymor
+(4) George Lucas, Viola Davis, Michael Mann, Sofia Coppola
+= 1
+~ At the Academy's 16th Governors Awards, held on 16 November 2025 in Los Angeles, actor Tom Cruise, dancer-choreographer Debbie Allen and production designer Wynn Thomas received Honorary Awards (Oscar statuettes), and singer Dolly Parton received the Jean Hersholt Humanitarian Award. The Governors Awards are given by the Academy of Motion Picture Arts and Sciences for lifetime achievement and humanitarian work, separately from the main Oscars ceremony.
+
+Q 94 | ga | Science & Technology
+The BHARAT study, launched by the Indian Institute of Science (IISc), Bengaluru, in 2023, focuses on:
+(1) Surveying rural health infrastructure for elderly care
+(2) Identifying economic patterns of India's aging population
+(3) Studying biomarkers of healthy aging, resilience, adversity, and transitions
+(4) Promoting traditional wellness practices among senior citizens
+= 3
+~ BHARAT stands for Biomarkers of Healthy Aging, Resilience, Adversity, and Transitions. The IISc study looks at biomarkers (measurable signs in the body, such as blood-test values) together with lifestyle and environmental factors to understand how Indians age and stay healthy, so that age-related disease risk can be spotted early. The other options describe health-infrastructure surveys, economic studies or wellness promotion, not a biomarker study.
+
+Q 95 | ga | Economy & Schemes
+In August 2025, which of the following banks declared the loan accounts of Reliance Communications and Anil Ambani as fraud, following a similar action by the State Bank of India (SBI)?
+(1) Bank of India
+(2) Punjab National Bank
+(3) Indian Overseas Bank
+(4) ICICI Bank
+= 1
+~ In August 2025, Bank of India classified the loan account of Reliance Communications (RCom) as fraud and also named its former director Anil Ambani; RCom disclosed this to the stock exchanges. State Bank of India had classified the RCom account as fraud earlier in 2025. Once a bank tags an account as fraud, it must report it to the RBI and the borrower can be barred from fresh bank finance for some years.
+
+Q 96 | ga | Economy & Schemes
+What was the main purpose of bringing the four Labour Codes into effect on 21 November 2025?
+(1) Enhancing worker safety
+(2) Streamlining labour regulations
+(3) Expanding 11 social security coverage
+(4) Introducing minimum wages
+= 2
+~ On 21 November 2025, the Centre brought into force the four Labour Codes: the Code on Wages, 2019, the Industrial Relations Code, 2020, the Code on Social Security, 2020, and the Occupational Safety, Health and Working Conditions Code, 2020. Together they replace and rationalise 29 existing central labour laws, so the main purpose is to simplify and streamline labour regulation. Worker safety, wider social security and minimum wages are parts of individual codes, not the overall aim.
+
+Q 97 | ga | Sports
+Which Indian state hosted the 2025 Asia Rugby U-20 Sevens Championship, which was held on August 9–10?
+(1) Assam
+(2) Bihar
+(3) West Bengal
+(4) Tamil Nadu
+= 2
+~ The 2025 Asia Rugby U-20 Sevens Championship was held on 9–10 August 2025 at Rajgir in Bihar, with under-20 teams from several Asian countries taking part. Bihar had also hosted the Khelo India Youth Games earlier in 2025. Rugby sevens is the shorter form of rugby union, with seven players a side, and is the form played at the Olympics.
+
+Q 98 | ga | Awards, Books & Persons
+Who received the Hollywood Music in Media Awards 2024 for the film Aadujeevitham: The Goat Life?
+(1) Shankar-Ehsaan-Loy
+(2) Himesh Reshammiya
+(3) A.R. Rahman
+(4) Ilaiyaraaja
+= 3
+~ A.R. Rahman won at the Hollywood Music in Media Awards (HMMA) 2024 in the foreign-language film score category for the background score of the Malayalam film "Aadujeevitham: The Goat Life". The film, directed by Blessy and starring Prithviraj Sukumaran, is based on Benyamin's novel about an Indian migrant worker trapped in the desert of Saudi Arabia. Rahman has also won two Oscars, for the music of "Slumdog Millionaire" (2009).
+
+Q 99 | ga | Sports
+Who won the prestigious Women Player of the Year Female award for FIH 2024?
+(1) Yibbi Jansen
+(2) Sarah Wilson
+(3) Zoe Diaz
+(4) Ye Jiao
+= 1
+~ Yibbi Jansen of the Netherlands was named the women's FIH Player of the Year 2024 at the FIH Hockey Stars Awards, announced in November 2024 at the FIH centenary gala in Muscat, Oman. India's Harmanpreet Singh won the men's Player of the Year award and P.R. Sreejesh was named men's Goalkeeper of the Year. Sarah Wilson of Scotland is an international umpire, not a player.
+
+Q 100 | ga | Sports
+At the 2025 Khelo India Youth Games, Bihar made a notable achievement. What was the total number of medals won by the state?
+(1) 25
+(2) 40
+(3) 30
+(4) 36
+= 4
+~ Bihar, which hosted the 7th Khelo India Youth Games (4–15 May 2025, with venues including Patna, Rajgir, Gaya, Bhagalpur and Begusarai), won 36 medals. Maharashtra topped the overall medal table.

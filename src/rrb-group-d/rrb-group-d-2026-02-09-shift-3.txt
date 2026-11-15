@@ -1,0 +1,948 @@
+# RRB Group D (Level-1 posts, CEN 08/2024) Computer Based Test, held 9 February 2026, Shift 3 (4:30 PM – 6:00 PM). 100 questions here; the paper had 100 (1 mark each, 90 minutes, one-third mark cut for a wrong answer).
+# Source: RRB's question paper for this shift with its answer key (correct option shown in green with a tick), as published by RRB (copy hosted by AglaSem). Answers = RRB's key. Explanations by Learn with Anil (writer + independent checker).
+
+Q 1 | sci | Biology
+Which structure in Rhizopus is directly involved in the process of reproduction through spore formation?
+(1) Hyphae
+(2) Mycelium
+(3) Sporangia
+(4) Rhizoids
+= 3
+~ Rhizopus (bread mould) reproduces asexually by spore formation. Some hyphae grow upward and develop small knob-like sacs at their tips called sporangia, inside which many spores are made; when a sporangium bursts, the spores spread and each can grow into a new mould. Hyphae and mycelium form the body of the fungus, and rhizoids only anchor it and absorb food, so they are not the spore-forming structures.
+
+Q 2 | sci | Chemistry
+Which property enables carbon to form long chains?
+(1) Polymerisation
+(2) Catenation
+(3) Tetravalency
+(4) Isomerism
+= 2
+~ Catenation is the ability of an element to form bonds with other atoms of the same element, giving long chains, branched chains and rings. Carbon shows this property to the greatest extent because carbon–carbon bonds are very strong and stable. Tetravalency (a valency of four) lets carbon bond with four other atoms, but it is catenation that specifically explains the long chains; isomerism and polymerisation are results of these properties, not the cause.
+
+Q 3 | sci | Physics
+A sound wave has a speed of 320 m/s. If the wavelength of the wave is 0.4 m, what is the frequency of this wave?
+(1) 128 Hz
+(2) 80 Hz
+(3) 1280 Hz
+(4) 800 Hz
+= 4
+~ For any wave, speed = frequency × wavelength (v = νλ), so frequency ν = v/λ. Here ν = 320 ÷ 0.4 = 800 Hz. Option 128 Hz comes from wrongly multiplying 320 × 0.4 instead of dividing.
+
+Q 4 | sci | Physics
+The filament of a light bulb is made up of tungsten, because of its ______.
+(1) High resistance and low melting point
+(2) High resistance and high melting point
+(3) Low resistance and low melting point
+(4) Low resistance and high melting point
+= 2
+~ A bulb filament must get hot enough to glow without melting. Tungsten has a high resistance (high resistivity), so it produces a lot of heat when current flows (H = I²Rt), and it has a very high melting point of about 3400 °C, so it can glow white-hot without melting. A metal with a low melting point would simply melt.
+
+Q 5 | sci | Biology
+In plants, food made in leaves is transported to other parts by the complex tissue called __________.
+(1) Phloem
+(2) Sclerenchyma
+(3) Xylem
+(4) Collenchyma
+= 1
+~ Phloem is the complex permanent tissue that carries food (mainly sugars made during photosynthesis) from the leaves to other parts of the plant; this process is called translocation. Xylem is also a complex tissue, but it carries water and minerals from the roots upward. Sclerenchyma and collenchyma are simple tissues that give strength and support.
+
+Q 6 | sci | Chemistry
+A sealed syringe containing air is pressed from one end while keeping the other end closed. What is the most likely outcome of this action in terms of the state of air inside the syringe?
+(1) The volume of air increases and pressure decreases
+(2) The air escapes completely from the syringe
+(3) The volume of air decreases and its pressure increases
+(4) The temperature of air inside drops significantly
+= 3
+~ Gases are highly compressible because there is a lot of space between their particles. When the plunger is pushed with the nozzle closed, the air cannot escape, so its particles are pushed closer together: the volume decreases and, since the same particles now hit the walls more often, the pressure increases (Boyle's law: at constant temperature, pressure × volume stays constant). The air cannot escape from a sealed syringe, and compressing a gas does not cool it.
+
+Q 7 | sci | Physics
+A constant force acts on an object of mass 4 kg for a duration of 2 s, increasing its velocity from 2 m/s to 8 m/s. If the same force is applied for a duration of 4 s, then what would be the final velocity of the object?
+(1) 14 m/s
+(2) 10 m/s
+(3) 20 m/s
+(4) 12 m/s
+= 1
+~ Acceleration a = (v − u)/t = (8 − 2)/2 = 3 m/s², so the force is F = ma = 4 × 3 = 12 N. The same force gives the same acceleration of 3 m/s², so when it acts for 4 s starting from 2 m/s, v = u + at = 2 + 3 × 4 = 14 m/s. The option 20 m/s comes from wrongly adding 3 × 4 to 8 m/s instead of to the initial 2 m/s.
+
+Q 8 | sci | Physics
+A boy lifts an object above his head by exerting a force. Which of the following works is negative?
+(1) Work done by the force of gravity
+(2) Work done by the boy
+(3) Work done by the object
+(4) Work done by the applied force
+= 1
+~ Work is negative when the force and the displacement are in opposite directions. While the object is lifted, it moves upward, but the force of gravity acts downward, so the work done by gravity is negative. The boy's applied force acts upward in the same direction as the displacement, so the work done by the boy (the applied force) is positive.
+
+Q 9 | sci | Physics
+Which of the following is the correct unit of average speed in SI system?
+(1) km/h²
+(2) m/s²
+(3) s/m²
+(4) m/s
+= 4
+~ Average speed = total distance travelled ÷ total time taken. In the SI system distance is measured in metres (m) and time in seconds (s), so the SI unit of average speed is metre per second (m/s). The units m/s² and km/h² are units of acceleration, not speed (and km/h² is not even an SI unit), while s/m² is not a unit of speed at all.
+
+Q 10 | sci | Chemistry
+Which of the following is NOT an olfactory indicator?
+(1) Vanilla
+(2) Onion
+(3) Litmus
+(4) Clove oil
+= 3
+~ Olfactory indicators are substances whose smell changes in acidic or basic medium; vanilla essence, onion and clove oil lose their smell in a basic solution but keep it in an acidic one. Litmus is a natural indicator that shows acids and bases by a change of colour (blue litmus turns red in acid, red litmus turns blue in base), not by smell, so it is not an olfactory indicator.
+
+Q 11 | sci | Physics
+Which of the following statements is true about weight and mass?
+(1) Only weight changes on the Moon
+(2) Only mass changes on the Moon
+(3) Neither mass nor weight changes on the Moon
+(4) Both mass and weight change on the Moon
+= 1
+~ Mass is the amount of matter in an object, so it stays the same everywhere. Weight is the force with which a body is pulled by gravity (W = mg); the Moon's gravity is about one-sixth of the Earth's, so an object's weight on the Moon becomes about one-sixth of its weight on the Earth while its mass does not change.
+
+Q 12 | sci | Biology
+During a nerve impulse transmission, neurotransmitters are released from one neuron and received by another.
+Which part of neurons are primarily involved in this chemical communication?
+(1) Axon → Myelin sheath of nerve
+(2) Axon terminal → Dendrite of another neuron
+(3) Cell body → Axon of same neuron
+(4) Dendrite → Axon terminal of same neuron
+= 2
+~ An impulse travels from the dendrite to the cell body and along the axon to its end (the axon terminal). There the electrical impulse makes the terminal release chemicals called neurotransmitters, which cross the small gap called the synapse and are picked up by the dendrite of the next neuron, starting a new impulse there. The other options describe movement within the same neuron or to the myelin sheath, which is only an insulating covering, not a receiving part.
+
+Q 13 | sci | Biology
+During the birth, the ovaries of a girl child contain ____________.
+(1) Only mature eggs
+(2) Both mature and immature eggs
+(3) Only immature eggs
+(4) No eggs
+= 3
+~ When a girl is born, her ovaries already contain thousands of immature eggs. No egg matures before puberty; after puberty, usually one egg matures and is released by one of the ovaries every month. So at birth the ovaries hold only immature eggs.
+
+Q 14 | sci | Physics
+In a toaster, the heating wire glows red because __________.
+(1) The current is very high.
+(2) It resists the current and gets hot.
+(3) It has low melting point.
+(4) It has zero resistance.
+= 2
+~ The heating element of a toaster is made of an alloy such as nichrome, which has a high resistance. When current flows through it, the wire opposes the current and electrical energy is changed into heat (Joule's law of heating, H = I²Rt), so the wire becomes red-hot. A wire with zero resistance would produce no heat, and a heating wire needs a high melting point, not a low one.
+
+Q 15 | sci | Chemistry
+Read the following statements carefully and select the correct option.
+Assertion (A): Keeping oily food in airtight containers prevents rancidity.
+Reason (R): Airtight containers slow down the oxidation of fats and oils.
+(1) Both A and R are true, and R is not the correct explanation of A.
+(2) A is true, but R is false.
+(3) Both A and R are true, and R is the correct explanation of A.
+(4) A is false, but R is true.
+= 3
+~ Rancidity is the change in smell and taste of oily or fatty food when the fats and oils in it get oxidised by oxygen in the air. An airtight container keeps fresh air away from the food, so oxidation is slowed down and rancidity is prevented (delayed). Thus both statements are true and R correctly explains A; other methods with the same idea are flushing chip packets with nitrogen and adding antioxidants.
+
+Q 16 | sci | Chemistry
+How does the space between particles change from solid to gas?
+(1) The space increases as matter changes from solid to gas
+(2) Solids and gases always have equal spacing
+(3) The space remains unchanged during the change in states of matter
+(4) The space decreases as matter changes from solid to gas
+= 1
+~ In a solid the particles are packed very closely with very little space between them, in a liquid the spaces are a little larger, and in a gas the particles are very far apart. So as matter changes from solid to liquid to gas, the space between particles increases and the forces of attraction between them decrease, which is why gases are easily compressed and fill any container.
+
+Q 17 | sci | Chemistry
+Which of the following symbols is used for the element phosphorus as per the rules for atomic symbols?
+(1) Pr
+(2) P
+(3) Ph
+(4) Ps
+= 2
+~ An atomic symbol is usually the first letter of the element's name written as a capital letter, and a second small letter is added only when needed to tell two elements apart. Phosphorus uses the single capital letter P. The symbol Pr belongs to praseodymium, while Ph and Ps are not symbols of any element.
+
+Q 18 | sci | Chemistry
+What is the general name of the reaction between an acid and a base?
+(1) Oxidation
+(2) Combustion
+(3) Neutralisation
+(4) Decomposition
+= 3
+~ When an acid reacts with a base, they cancel each other's effect and form a salt and water, for example HCl + NaOH → NaCl + H₂O. This is called a neutralisation reaction. Combustion is burning in oxygen, oxidation is the gain of oxygen or loss of hydrogen, and decomposition is the breaking of one compound into simpler substances.
+
+Q 19 | sci | Biology
+The complex tissue that transports food in plants is called __________, and it consists of living cells like sieve tubes and __________.
+(1) Xylem, tracheids
+(2) Collenchyma, sclerenchyma
+(3) Phloem, companion cells
+(4) Xylem, xylem fibres
+= 3
+~ Phloem carries food from the leaves to other parts of the plant. It is made of four kinds of elements: sieve tubes, companion cells, phloem parenchyma and phloem fibres; all of these except the phloem fibres are living cells. Xylem carries water, and its tracheids and vessels are dead cells, while collenchyma and sclerenchyma are simple tissues, not food-conducting ones.
+
+Q 20 | sci | Chemistry
+Based on the reactivity series, which of the following metals is the least reactive?
+(1) Au (gold)
+(2) Ca (calcium)
+(3) Fe (iron)
+(4) K (potassium)
+= 1
+~ The reactivity series arranges metals in decreasing order of reactivity: K > Na > Ca > Mg > Al > Zn > Fe > Pb > (H) > Cu > Hg > Ag > Au. Gold is at the very bottom, which is why it is found free in nature and does not tarnish easily. Potassium is the most reactive of the four given metals, followed by calcium and then iron.
+
+Q 21 | sci | Physics
+A real and inverted image is formed at a distance of 30 cm from a concave mirror when the object is placed 40 cm from the mirror. What will be the magnification produced by the mirror?
+(1) −4/3
+(2) −3/4
+(3) +3/4
+(4) +4/3
+= 2
+~ Using the New Cartesian sign convention, distances measured in front of the mirror are negative, so u = −40 cm and, since a real image forms in front of the mirror, v = −30 cm. Magnification m = −v/u = −(−30)/(−40) = −3/4. The negative sign shows the image is real and inverted, and the value 3/4 (less than 1) shows it is smaller than the object; −4/3 comes from wrongly using u/v.
+
+Q 22 | sci | Physics
+A student shows a concave lens forming a diminished real image on the screen. The mistake is:
+(1) Concave lens cannot form a real image
+(2) Concave lens cannot form a magnified image
+(3) Concave lens does not refract light
+(4) Concave lens always converges light
+= 1
+~ A concave lens is a diverging lens: it spreads out the rays passing through it, so the refracted rays never actually meet. For a real object placed anywhere, a concave lens always forms a virtual, erect and diminished image on the same side as the object, which cannot be caught on a screen. So the mistake is claiming a real image; a diminished image itself is correct, and the lens does refract light, but it diverges rather than converges it.
+
+Q 23 | sci | Biology
+Which connective tissue is known for supporting internal organs?
+(1) Squamous epithelium
+(2) Ligament
+(3) Tendon
+(4) Areolar tissue
+= 4
+~ Areolar connective tissue is found between the skin and muscles, around blood vessels and nerves, and in the bone marrow; it fills the space inside organs, supports internal organs and helps in the repair of tissues. Tendons join muscles to bones and ligaments join bones to bones. Squamous epithelium is not a connective tissue at all; it is a covering (epithelial) tissue.
+
+Q 24 | sci | Biology
+The disease-causing pathogens in plants can be transmitted through______.
+(1) Air
+(2) Soil
+(3) Both Soil and Air
+(4) Neither Soil nor Air
+= 3
+~ Crop pathogens such as bacteria, fungi and viruses spread in several ways: spores of many fungi are carried by air (wind), while other pathogens remain in the soil and infect roots, and some also spread through water. Since both soil and air can carry plant pathogens, the option that includes both is correct.
+
+Q 25 | sci | Biology
+A scientist observed a multicellular organism undergoing reproduction. Which of the following methods would the plant NOT be using?
+(1) Fragmentation
+(2) Binary Fission
+(3) Vegetative Propagation
+(4) Budding
+= 2
+~ Binary fission is the splitting of a single cell into two daughter cells, which is how unicellular organisms such as Amoeba and bacteria reproduce, so a multicellular plant cannot reproduce by it. Multicellular organisms use methods such as fragmentation (Spirogyra breaking into pieces), vegetative propagation (new plants from roots, stems or leaves, as in Bryophyllum) and budding (as in Hydra).
+
+Q 26 | qa | Percentage, Profit & Discount
+A man receives ₹9475 per month as salary. He saves 88% of his salary every month. His expenditure per month is:
+(1) ₹1053
+(2) ₹1137
+(3) ₹1168
+(4) ₹1114
+= 2
+~ Whatever is not saved is spent, so expenditure = 100% − 88% = 12% of the salary. 12% of ₹9475 = 0.12 × 9475 = ₹1137.
+
+Q 27 | qa | Percentage, Profit & Discount
+In an election with three candidates, M, N and R, candidate M secured 42% of the total votes, while candidate R obtained 34%. If the total number of votes polled was 37,700 and all were valid, how many votes did candidate N receive?
+(1) 9048
+(2) 9164
+(3) 9100
+(4) 9000
+= 1
+~ All votes are valid and there are only three candidates, so N's share = 100% − 42% − 34% = 24%. Votes of N = 24% of 37,700 = 37,700 × 24/100 = 9048.
+
+Q 28 | qa | Number System & Simplification
+Simplify: √(121 × 49) + √(64 × 36) − √(100 × 16)
+(1) 51
+(2) 85
+(3) 72
+(4) 95
+= 2
+~ Take the square root of each factor: √(121 × 49) = 11 × 7 = 77, √(64 × 36) = 8 × 6 = 48 and √(100 × 16) = 10 × 4 = 40. So the value is 77 + 48 − 40 = 85.
+
+Q 29 | qa | Speed, Time & Distance
+The speed of a train 200 m long is 50 km/hr. How much time will it take to pass a platform 600 m long?
+(1) 57.6 sec
+(2) 57 sec
+(3) 56 sec
+(4) 55 sec
+= 1
+~ To pass the platform the train must cover its own length plus the platform's length: 200 + 600 = 800 m. Speed = 50 × 5/18 = 125/9 m/s. Time = 800 ÷ (125/9) = 800 × 9/125 = 57.6 seconds.
+
+Q 30 | qa | Age, Calendar & Clock
+The present age of a father is 4 times the age of his daughter. Five years ago, the father was 7 times as old as his daughter. What is the present age of the daughter?
+(1) 10 years
+(2) 15 years
+(3) 18 years
+(4) 20 years
+= 1
+~ Let the daughter's present age be x, so the father's is 4x. Five years ago: 4x − 5 = 7(x − 5), so 4x − 5 = 7x − 35, which gives 3x = 30 and x = 10 years. Check: now 40 and 10; five years ago 35 and 5, and 35 = 7 × 5.
+
+Q 31 | qa | Percentage, Profit & Discount
+A table is bought for ₹1,400 and sold at a loss of 6%. Find its selling price.
+(1) ₹1,310
+(2) ₹1,312
+(3) ₹1,314
+(4) ₹1,316
+= 4
+~ With a 6% loss, the selling price is 94% of the cost price. SP = 1400 × 94/100 = ₹1,316 (the loss is 6% of 1400 = ₹84, and 1400 − 84 = 1316).
+
+Q 32 | qa | Speed, Time & Distance
+A and B started moving at the same time towards each other from points X and Y, respectively. After meeting on the way, A and B took 95.4 hours and p hours, respectively, to reach Y and X, respectively. If the speed of B is 50% more than that of A, then what is the value of p?
+(1) 44.5
+(2) 40.4
+(3) 43.8
+(4) 42.4
+= 4
+~ When A and B start together towards each other and, after meeting, take t₁ and t₂ hours respectively to reach the other ends, (speed of A)/(speed of B) = √(t₂/t₁). Here speed of A : speed of B = 1 : 1.5 = 2 : 3, so 2/3 = √(p/95.4), giving p/95.4 = 4/9. Hence p = 95.4 × 4/9 = 10.6 × 4 = 42.4 hours. (The faster B takes less time after meeting, as expected.)
+
+Q 33 | qa | Ratio, Proportion & Average
+₹9,975 is divided among A, B, C and D in such a way that the shares of A and B, B and C, and C and D are in the ratios of 2 : 3, 4 : 5 and 6 : 7, respectively. The share of A (in ₹) is:
+(1) 1,520
+(2) 1,460
+(3) 1,490
+(4) 1,560
+= 1
+~ Make the common terms equal: A : B = 2 : 3 = 16 : 24, B : C = 4 : 5 = 24 : 30 and C : D = 6 : 7 = 30 : 35. So A : B : C : D = 16 : 24 : 30 : 35, total 105 parts. One part = 9975 ÷ 105 = ₹95, so A's share = 16 × 95 = ₹1,520.
+
+Q 34 | qa | Trigonometry & Heights
+Find the value of tan 10° tan 18° tan 72° tan 80°
+(1) −1
+(2) tan 18°
+(3) 1
+(4) tan 80°
+= 3
+~ Use tan(90° − θ) = cot θ: tan 80° = cot 10° and tan 72° = cot 18°. Since tan θ × cot θ = 1, the product = (tan 10° × cot 10°) × (tan 18° × cot 18°) = 1 × 1 = 1.
+
+Q 35 | qa | Algebra & Equations
+Simplify the following.
+(3x² + 4x²) ÷ 7x
+(1) x
+(2) x²
+(3) 7x²
+(4) 12x/7
+= 1
+~ Like terms add directly: 3x² + 4x² = 7x². Then 7x² ÷ 7x = (7/7) × (x²/x) = x. The coefficients are added (3 + 4 = 7), so the 7 cancels completely and no fraction such as 12x/7 remains.
+
+Q 36 | qa | Simple & Compound Interest
+The amount on a sum of ₹9,400 at 20% per annum compound interest, compounded annually, in 2 years will be:
+(1) ₹12,838
+(2) ₹13,536
+(3) ₹13,189
+(4) ₹14,133
+= 2
+~ Amount = P(1 + R/100)ⁿ = 9400 × (1.2)² = 9400 × 1.44 = ₹13,536. Year by year: after year 1, 9400 + 1880 = 11,280; after year 2, 11,280 + 2,256 = 13,536.
+
+Q 37 | qa | Time & Work, Pipes & Cisterns
+Pipe A can fill a tank in 33 minutes and Pipe B can fill it in 22 minutes. Pipe C empties it. If all of the pipes are opened together, the tank will be full in 55 minutes. In how many minutes will pipe C empty the full tank?
+(1) 14 4/19
+(2) 16 6/19
+(3) 15 5/19
+(4) 17 7/19
+= 4
+~ In one minute A fills 1/33 and B fills 1/22 of the tank, together 2/66 + 3/66 = 5/66. With C working against them the net filling is 1/55 per minute, so C empties 5/66 − 1/55 = 25/330 − 6/330 = 19/330 of the tank per minute. Time for C to empty the full tank = 330/19 = 17 7/19 minutes.
+
+Q 38 | qa | Percentage, Profit & Discount
+A shopkeeper fixed the marked price of an article as ₹2,40,000. He gave 30% and 18% successive discounts on one article and 48% discount on another article of the same marked price. On which of the two articles did the shopkeeper get more benefit and how much more was it?
+(1) Second article; ₹10,960
+(2) Second article; ₹12,800
+(3) First article; ₹12,960
+(4) First article; ₹11,560
+= 3
+~ First article: 2,40,000 × 0.70 × 0.82 = ₹1,37,760 (successive 30% and 18% equal a single discount of 30 + 18 − 30×18/100 = 42.6%, not 48%). Second article: 2,40,000 × 0.52 = ₹1,24,800. The shopkeeper receives more on the first article, by 1,37,760 − 1,24,800 = ₹12,960 (that is, 5.4% of 2,40,000).
+
+Q 39 | qa | Percentage, Profit & Discount
+An item is sold for ₹8,900 after two successive discounts of 20% and 11%. What is the marked price (in ₹) of the item?
+(1) 12,670
+(2) 12,495
+(3) 12,525
+(4) 12,500
+= 4
+~ After discounts of 20% and 11%, the selling price is MP × 0.80 × 0.89 = 0.712 × MP. So 0.712 × MP = 8900, giving MP = 8900 ÷ 0.712 = ₹12,500. Check: 12,500 − 20% = 10,000; 10,000 − 11% = 8,900.
+
+Q 40 | qa | Number System & Simplification
+The sum of the first pair of two-digit twin prime numbers is:
+(1) 22
+(2) 26
+(3) 24
+(4) 28
+= 3
+~ Twin primes are pairs of primes that differ by 2. The smallest two-digit primes are 11 and 13, which differ by 2, so (11, 13) is the first two-digit twin-prime pair and its sum is 11 + 13 = 24.
+
+Q 41 | qa | Ratio, Proportion & Average
+If 66 is the mean proportion between x and 99, what is the value of x?
+(1) 43
+(2) 42
+(3) 44
+(4) 46
+= 3
+~ If m is the mean proportion between a and b, then m² = a × b. So 66² = 99x, i.e. 4356 = 99x, giving x = 4356 ÷ 99 = 44. Check: x : 66 = 66 : 99 means 44 : 66 = 66 : 99 = 2 : 3.
+
+Q 42 | qa | HCF, LCM & Fractions
+What is the smallest natural number that should be added to 9054 such that a remainder of 6 is left when the resulting number is divided by each of the numbers 28, 24, 56 and 29?
+(1) 696
+(2) 678
+(3) 710
+(4) 695
+= 1
+~ The required number must be (a multiple of the LCM) + 6. LCM of 28 (2² × 7), 24 (2³ × 3), 56 (2³ × 7) and 29 (prime) = 2³ × 3 × 7 × 29 = 4872. Multiples: 4872 + 6 = 4878 is less than 9054, so take 2 × 4872 + 6 = 9750. Number to be added = 9750 − 9054 = 696.
+
+Q 43 | qa | Geometry & Mensuration
+The area of a rectangle gets reduced by 21 m² if its length is reduced by 7 m and breadth is increased by 5 m and if its length is increased by 4 m and breadth is increased by 5 m, the area is increased by 67 m². Find the original area of the rectangle.
+(1) 21.8 m²
+(2) 12.8 m²
+(3) 15.6 m²
+(4) 21 m²
+= 4
+~ Let length = l and breadth = b. (l − 7)(b + 5) = lb − 21 gives 5l − 7b − 35 = −21, i.e. 5l − 7b = 14. (l + 4)(b + 5) = lb + 67 gives 5l + 4b + 20 = 67, i.e. 5l + 4b = 47. Subtracting, 11b = 33, so b = 3 m, and 5l = 14 + 21 = 35, so l = 7 m. Original area = 7 × 3 = 21 m². Check: (7 + 4)(3 + 5) = 88 = 21 + 67; in the first case the length becomes 7 − 7 = 0, so the area drops by the whole 21 m² (the question's numbers are unusual, but both conditions hold).
+
+Q 44 | qa | Algebra & Equations
+The cost of 2 chocolates and 3 cookies is ₹36. The cost of 1 chocolate and 2 cookies is ₹23. What is the cost of 4 chocolates and 5 cookies?
+(1) ₹66
+(2) ₹52
+(3) ₹62
+(4) ₹56
+= 3
+~ Let a chocolate cost c and a cookie cost k. 2c + 3k = 36 and c + 2k = 23. Doubling the second gives 2c + 4k = 46; subtracting the first gives k = ₹10, and then c = 23 − 20 = ₹3. Cost of 4 chocolates and 5 cookies = 4 × 3 + 5 × 10 = 12 + 50 = ₹62.
+
+Q 45 | qa | Statistics & Data
+What is the mode of the following data?
+65, 86, 86, 85, 69, 90, 71, 60, 86, 71, 86, 65, 81, 82, 67, 72, 84, 66, 75, 85, 68, 78, 61, 64, 74, 90
+(1) 69
+(2) 86
+(3) 65
+(4) 85
+= 2
+~ The mode is the value that occurs most often. Counting: 86 occurs 4 times, while 65, 71, 85 and 90 occur only twice each and the rest once (69 appears just once). So the mode is 86.
+
+Q 46 | qa | Percentage, Profit & Discount
+The expenditure of Sudha is 100% more than her savings. If her expenditure decreases by 4% and savings increase by 35%, then by what percent does her income increase?
+(1) 9%
+(2) 12%
+(3) 11%
+(4) 14%
+= 1
+~ Let savings = ₹100; expenditure is 100% more, i.e. ₹200, so income = ₹300. New expenditure = 200 − 4% = ₹192 and new savings = 100 + 35% = ₹135, so new income = ₹327. Increase = 27 on 300 = 27/300 × 100 = 9%.
+
+Q 47 | qa | Trigonometry & Heights
+Let A and B be the angles of regular polygons of sides 8 and 10 respectively. Then what is the value of sin²(A/3) + cos³(5B/6)?
+(1) 3/4
+(2) 5/8
+(3) 1/4
+(4) 3/8
+= 4
+~ Each interior angle of a regular n-sided polygon = (n − 2) × 180°/n. For n = 8, A = 6 × 180°/8 = 135°; for n = 10, B = 8 × 180°/10 = 144°. So A/3 = 45° and 5B/6 = 120°. sin² 45° = (1/√2)² = 1/2 and cos³ 120° = (−1/2)³ = −1/8. Value = 1/2 − 1/8 = 3/8.
+
+Q 48 | qa | Time & Work, Pipes & Cisterns
+Rishi can do a piece of work in 12 days. Shan is 20% more efficient than Rishi. The number of days taken by Shan to do the same piece of work is:
+(1) 10
+(2) 20
+(3) 12
+(4) 15
+= 1
+~ Time is inversely proportional to efficiency. Efficiency ratio Rishi : Shan = 100 : 120 = 5 : 6, so time ratio = 6 : 5. Shan's time = 12 × 5/6 = 10 days.
+
+Q 49 | qa | Statistics & Data
+If the mode of a data exceeds its mean by 34.8, then the mode exceeds the median by _____. (Use empirical formula to find the answer)
+(1) 21.6
+(2) 26.9
+(3) 19.3
+(4) 23.2
+= 4
+~ Empirical formula: Mode = 3 Median − 2 Mean, which can be written as Mode − Mean = 3(Median − Mean). So 34.8 = 3(Median − Mean), giving Median − Mean = 11.6. Then Mode − Median = (Mode − Mean) − (Median − Mean) = 34.8 − 11.6 = 23.2 (that is, two-thirds of 34.8).
+
+Q 50 | qa | Geometry & Mensuration
+A rectangular water tank 5 m long and 3 m wide contains water up to a depth of 1.50 m. The area of the wet surface is:
+(1) 39 m²
+(2) 54 m²
+(3) 24 m²
+(4) 36 m²
+= 1
+~ The wet surface is the base plus the four walls up to the water level. Base = 5 × 3 = 15 m². Walls = 2(l + b) × h = 2(5 + 3) × 1.5 = 24 m². Wet surface = 15 + 24 = 39 m². (24 m² is only the walls, without the base.)
+
+Q 51 | rea | Series
+Which of the following letter-number clusters will replace the question mark (?) in the given series to make it logically complete?
+VZY 64 XBA 58 ZDC 52 BFE 46 ?
+(1) DHG 40
+(2) DGF 39
+(3) DIF 40
+(4) DHM 39
+= 1
+~ Each letter moves 2 places forward (Z wraps round to B): first letters V → X → Z → B → D, second letters Z → B → D → F → H, third letters Y → A → C → E → G. The numbers fall by 6: 64, 58, 52, 46, 40. So the next term is DHG 40.
+
+Q 52 | rea | Coding-Decoding
+QOHY is related to WJLV in a certain way based on the English alphabetical order. In the same way, NRBT is related to TMFQ. To which of the following is JRUF related to following the same logic?
+(1) PNZD
+(2) PMYC
+(3) QMYD
+(4) QNZC
+= 2
+~ The four letters change by +6, −5, +4 and −3: Q(17) → W(23), O(15) → J(10), H(8) → L(12), Y(25) → V(22); likewise N → T, R → M, B → F, T → Q. For JRUF: J(10) + 6 = P(16), R(18) − 5 = M(13), U(21) + 4 = Y(25), F(6) − 3 = C(3). So JRUF is related to PMYC.
+
+Q 53 | rea | Series
+What should come in place of the question mark (?) in the given series?
+16 31 46 61 76 ?
+(1) 81
+(2) 99
+(3) 91
+(4) 89
+= 3
+~ Each term is 15 more than the previous one: 16 + 15 = 31, 31 + 15 = 46, 46 + 15 = 61, 61 + 15 = 76. So the next term is 76 + 15 = 91.
+
+Q 54 | rea | Ranking & Arrangement
+Each of the digits in the number 3652497 is arranged in descending order from left to right. What will be the product of the digits that are second from the left and second from the right in the number thus formed?
+(1) 21
+(2) 18
+(3) 24
+(4) 14
+= 1
+~ The digits 3, 6, 5, 2, 4, 9, 7 in descending order give 9765432. Second from the left is 7 and second from the right is 3. Product = 7 × 3 = 21.
+
+Q 55 | rea | Coding-Decoding
+In a certain code language, ‘VOLT’ is coded as ‘6428’ and ‘LIFE’ is coded as ‘5761’. What is the code for ‘L’ in the given code language?
+(1) 7
+(2) 2
+(3) 6
+(4) 5
+= 3
+~ The only letter common to VOLT and LIFE is L, and the only digit common to their codes 6428 and 5761 is 6. So L is coded as 6. (The digits are not in the same order as the letters, so the position of L cannot be used.)
+
+Q 56 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-cluster pairs are alike in a certain way and thus form a group. Which letter-cluster pair DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) WH - BD
+(2) GQ - LN
+(3) QK - VH
+(4) AE - FB
+= 1
+~ In each pair the first letter moves 5 places forward and the second letter moves 3 places back: G → L, Q → N; Q → V, K → H; A → F, E → B. In WH - BD, W → B is +5 (counting round from Z), but H → D is 4 places back, not 3. So WH - BD is the odd one.
+
+Q 57 | rea | Coding-Decoding
+KGLO is related to QMRU in a certain way based on the English alphabetical order. In the same way, NJOR is related to TPUX. To which of the following is EAFI related to, following the same logic?
+(1) KGLP
+(2) KHLO
+(3) KHLP
+(4) KGLO
+= 4
+~ Every letter moves 6 places forward: K → Q, G → M, L → R, O → U, and N → T, J → P, O → U, R → X. For EAFI: E(5) → K(11), A(1) → G(7), F(6) → L(12), I(9) → O(15). So EAFI is related to KGLO.
+
+Q 58 | rea | Coding-Decoding
+JUNC is related to QBUJ in a certain way based on the English alphabetical order. In the same way, LWPE is related to SDWL. To which of the following options is GRKZ related, following the same logic?
+(1) NYRG
+(2) NRTU
+(3) BNHJ
+(4) NGTY
+= 1
+~ Every letter moves 7 places forward, counting round from Z to A: J → Q, U → B, N → U, C → J, and L → S, W → D, P → W, E → L. For GRKZ: G(7) → N(14), R(18) → Y(25), K(11) → R(18), Z(26) → G (26 + 7 = 33, minus 26 = 7). So GRKZ is related to NYRG.
+
+Q 59 | rea | Series
+What should come in place of (?) in the given series in order to make it logically complete?
+ED9 HF16 LI25 QM36 ?
+(1) WR49
+(2) XT49
+(3) VR49
+(4) WR64
+= 1
+~ First letters E(5), H(8), L(12), Q(17) increase by +3, +4, +5, so the next is +6 = W(23). Second letters D(4), F(6), I(9), M(13) increase by +2, +3, +4, so the next is +5 = R(18). The numbers are 3², 4², 5², 6², so the next is 7² = 49. The answer is WR49.
+
+Q 60 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-cluster pairs are alike in a certain way and thus form a group. Which is the one that does not belong to that group?
+(Note: The odd man out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) DY - IC
+(2) SK - XP
+(3) JQ - OV
+(4) EZ - JE
+= 1
+~ In the group, both letters move 5 places forward: S → X, K → P; J → O, Q → V; E → J, Z → E (counting round from Z). In DY - IC, D → I is +5, but Y → C is only +4 (Y → Z → A → B → C). So DY - IC is the odd one.
+
+Q 61 | rea | Ranking & Arrangement
+Refer to the following number, symbol series and answer the question. Counting to be done from left to right only (all numbers are single digit numbers only).
+(Left) / 8 & + ^ 1 + < # @ ^ \ 2 # $ 8 9 * 7 2 $ (Right)
+How many such numbers are there each of which is immediately preceded by a symbol and also immediately followed by a symbol?
+(1) Four
+(2) Two
+(3) Three
+(4) One
+= 3
+~ Check each number with its two neighbours: / 8 &, ^ 1 + and \ 2 # have symbols on both sides. The later numbers fail: $ 8 9 (followed by 9), 8 9 * (preceded by 8), * 7 2 (followed by 2) and 7 2 $ (preceded by 7). So there are three such numbers.
+
+Q 62 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+154 ÷ 2 − 49 ÷ 7 + 10 × 5 + 28 × 7 − 25 ÷ 5 = ?
+(1) 618
+(2) 770
+(3) 711
+(4) 662
+= 2
+~ After interchanging the signs the expression becomes 154 × 2 + 49 × 7 − 10 ÷ 5 − 28 ÷ 7 + 25 × 5. Using BODMAS: 308 + 343 − 2 − 4 + 125 = 770.
+
+Q 63 | rea | Ranking & Arrangement
+Refer to the following series and answer the question. (All numbers are single-digit numbers only) (Counting to be done from left to right only).
+(Left) 3 1 4 1 5 9 2 6 5 3 5 5 7 6 4 3 9 2 8 4 5 5 6 (Right)
+How many such odd numbers are there, each of which is immediately preceded by an even number and immediately followed by an even number?
+(1) One
+(2) Two
+(3) Three
+(4) None
+= 4
+~ The odd numbers that have an even number just before them are 1 (in 4 1 5), 5 (in 6 5 3), 3 (in 4 3 9) and 5 (in 4 5 5), but each of these is followed by an odd number. Every other odd number is preceded by an odd number (or, like the first 3, by nothing at all). So no odd number has even numbers on both sides; the answer is None.
+
+Q 64 | rea | Ranking & Arrangement
+Refer to the following number series and answer the question that follows (all numbers are single-digit numbers only). Counting to be done from left to right only.
+(Left) 2 9 6 2 7 9 4 5 2 6 9 3 4 4 8 9 7 3 6 1 5 6 6 3 1 6 5 (Right)
+How many such odd numbers are there, each of which is immediately preceded by an odd number and also immediately followed by an odd number?
+(1) 2
+(2) 1
+(3) 3
+(4) 0
+= 2
+~ Look for three odd numbers in a row: only 9 7 3 occurs, so the 7 there is the one such number. Near misses: 7 9 4 (9 is followed by 4), 9 3 4 (3 is followed by 4), 7 3 6 (3 is followed by 6), 1 5 6 and 3 1 6 (followed by 6). So the count is 1.
+
+Q 65 | rea | Series
+What should come in place of the question mark (?) in the given series?
+89 94 99 104 109 ?
+(1) 113
+(2) 114
+(3) 115
+(4) 116
+= 2
+~ Each term is 5 more than the previous one: 89, 94, 99, 104, 109. So the next term is 109 + 5 = 114.
+
+Q 66 | rea | Ranking & Arrangement
+Andy ranked 11th from the top and 15th from the bottom in his class. How many students are there in the class?
+(1) 26
+(2) 24
+(3) 27
+(4) 25
+= 4
+~ Total = rank from top + rank from bottom − 1 = 11 + 15 − 1 = 25. One is subtracted because Andy is counted in both ranks; there are 10 students above him and 14 below him, and 10 + 1 + 14 = 25.
+
+Q 67 | rea | Blood Relations
+In a certain code language,
+A + B means ‘A is the father of B’,
+A − B means ‘A is the brother of B’,
+A × B means ‘A is the sister of B’,
+A ÷ B means ‘A is the wife of B’.
+Based on the above, how is M related to Q if ‘M + N × O − P ÷ Q’?
+(1) Wife’s father
+(2) Father
+(3) Husband’s brother
+(4) Husband’s father
+= 1
+~ M + N: M is the father of N. N × O: N is the sister of O. O − P: O is the brother of P. So N, O and P are siblings and M is the father of all three. P ÷ Q: P is the wife of Q. M is the father of Q's wife, i.e. Q's wife's father (father-in-law).
+
+Q 68 | rea | Mathematical Operations
+What will come in place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+53 ÷ 13 + 391 × 17 − 289 = ?
+(1) 955
+(2) 972
+(3) 963
+(4) 915
+= 1
+~ After interchanging the signs the expression becomes 53 × 13 − 391 ÷ 17 + 289. Using BODMAS: 53 × 13 = 689 and 391 ÷ 17 = 23, so the value is 689 − 23 + 289 = 955.
+
+Q 69 | rea | Ranking & Arrangement
+This question is based on the five, three-digit numbers given below.
+(Left) 324 286 472 539 731 (Right)
+(Example- 697 – First digit = 6, second digit = 9 and third digit = 7)
+NOTE - All operations to be done from left to right.
+If all the numbers are arranged in ascending order, the position of how many numbers will remain unchanged?
+(1) Three
+(2) One
+(3) None
+(4) Two
+= 1
+~ Ascending order: 286, 324, 472, 539, 731. Compared with the given order 324, 286, 472, 539, 731, only 324 and 286 swap places; 472, 539 and 731 stay in the 3rd, 4th and 5th positions. So three numbers keep their positions.
+
+Q 70 | rea | Series
+What should come in place of ‘?’ in the given series?
+119 136 155 172 191 ?
+(1) 208
+(2) 206
+(3) 205
+(4) 210
+= 1
+~ The differences alternate between +17 and +19: 119 + 17 = 136, 136 + 19 = 155, 155 + 17 = 172, 172 + 19 = 191. The next step is +17, so 191 + 17 = 208.
+
+Q 71 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding to/subtracting from/multiplying with 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(24, 11, 105)
+(38, 42, 240)
+(1) (34, 62, 286)
+(2) (46, 53, 287)
+(3) (74, 34, 324)
+(4) (93, 12, 318)
+= 3
+~ Rule: (first number + second number) × 3 = third number. (24 + 11) × 3 = 35 × 3 = 105 and (38 + 42) × 3 = 80 × 3 = 240. Only (74 + 34) × 3 = 108 × 3 = 324 fits. The others give (34 + 62) × 3 = 288, (46 + 53) × 3 = 297 and (93 + 12) × 3 = 315, not the numbers given.
+
+Q 72 | rea | Directions & Distance
+City A is to the north of City B. City D is to the east of City A. City D is to the south of City E. If City E is to the west of City C, what is the direction of City B with respect to City E?
+(1) South West
+(2) East
+(3) West
+(4) North
+= 1
+~ Start with B; A is north of B, D is east of A, and E is north of D. So E is east of the B–A line and further north than A, which is itself north of B. Hence B is both west of E and south of E, i.e. B is to the South West of E. (City C, east of E, is not needed.)
+
+Q 73 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+All rods are hooks.
+Some hooks are baits.
+Conclusions:
+(I): All rods are baits.
+(II): Some baits are rods.
+(1) Both conclusions (I) and (II) follow
+(2) Only conclusion (II) follows
+(3) Neither conclusion (I) nor (II) follows
+(4) Only conclusion (I) follows
+= 3
+~ The rods circle lies inside the hooks circle, but the baits circle needs to overlap only some part of the hooks, and that part can lie entirely outside the rods. So it is not certain that all rods are baits (I), or even that any bait is a rod (II). Both are only possibilities, so neither conclusion follows.
+
+Q 74 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. You have to take the given statements to be true even if they seem to be at variance from commonly known facts. You have to decide which conclusion/s logically follow/s from the given statements.
+Statements: All fans are bulbs. Some bulbs are heaters. Some heaters are geysers.
+Conclusion (I) : Some fans are heaters.
+Conclusion (II) : Some bulbs are geysers.
+(1) Only conclusion (I) follows.
+(2) Both conclusions (I) and (II) follow.
+(3) Neither conclusion (I) nor (II) follows.
+(4) Only conclusion (II) follows.
+= 3
+~ Fans lie inside bulbs, but the heaters that are bulbs may be bulbs that are not fans, so 'Some fans are heaters' (I) is not certain. Similarly, the geysers that are heaters may be heaters that are not bulbs, so 'Some bulbs are geysers' (II) is not certain; two 'some' statements in a chain give no definite conclusion. Hence neither conclusion follows.
+
+Q 75 | rea | Ranking & Arrangement
+A, B, C, D, E, F and G are sitting around a circular table facing the centre. D sits to the immediate right of B. E sits third to the right of B. G sits third to the left of D. C is the immediate neighbour of D and E. A is not an immediate neighbour of B.
+How many people sit between F and D when counted from the left of F?
+(1) Five
+(2) Three
+(3) Four
+(4) Two
+= 3
+~ Number the seats moving to the right (anticlockwise, since all face the centre): B = 1, so D = 2 and E = 4. G is third to the left of D, i.e. seat 6. C, the neighbour of both D and E, is seat 3. A and F take seats 5 and 7; seat 7 is next to B, so A = 5 and F = 7. Order to the right: B, D, C, E, A, G, F. Counting to the left of F: G, A, E, C and then D, so four people sit between them. (Counted to the right of F, only B is between F and D.)
+
+Q 76 | rea | Ranking & Arrangement
+Seven people, S, Q, U, A, R, E and D are sitting in a row, facing north.
+Only S sits to the left of Q. Only four people sit between S and U. Only A sits between E and R, and E is not an immediate neighbor of U.
+Who sits at the extreme right of the line?
+(1) S
+(2) U
+(3) A
+(4) D
+= 4
+~ Number the seats 1 to 7 from left to right. Only S is to the left of Q, so S = 1 and Q = 2. Four people between S and U puts U at 6. E, A, R must sit in three adjacent seats with A in the middle; the only free block is 3-4-5, so A = 4. E cannot be at 5 (next to U), so E = 3 and R = 5. The remaining person D takes seat 7, the extreme right. Order: S Q E A R U D.
+
+Q 77 | rea | Directions & Distance
+Aarav starts from Point A and drives 13 km towards the East. He then takes a left turn, drives 8 km, turns left and drives 15 km. He then takes a left turn and drives 11 km. He takes a final left turn, drives 2 km and stops at Point P. How far (shortest distance) and towards which direction should he drive in order to reach Point A again? (All turns are 90 degrees turns only unless specified).
+(1) 4 km to the South
+(2) 4 km to the North
+(3) 3 km to the South
+(4) 3 km to the North
+= 4
+~ Take A as (0, 0). 13 km East → (13, 0); left turn means North, 8 km → (13, 8); left means West, 15 km → (−2, 8); left means South, 11 km → (−2, −3); left means East, 2 km → (0, −3) = P. P is 3 km directly south of A, so he must drive 3 km to the North.
+
+Q 78 | rea | Coding-Decoding
+In a certain code language, ‘she is lovely’ is coded as ‘kl pc cp’ and ‘lovely paint here’ is coded as ‘lk cp no’. How is ‘lovely’ coded in the given language?
+(All codes are two-letter codes)
+(1) kl
+(2) pc
+(3) cp
+(4) no
+= 3
+~ The word common to both sentences is 'lovely', and the code common to both is 'cp'. So 'lovely' is coded as cp. Note that 'kl' and 'lk' are different codes, so 'kl' is not common to both.
+
+Q 79 | rea | Ranking & Arrangement
+All 119 people are standing in a row facing north. Mr. Lkj is 7th from the right end while Mr. Ihg is 29th from the left end. How many people are there between Mr. Lkj and Mr. Ihg?
+(1) 80
+(2) 82
+(3) 83
+(4) 81
+= 3
+~ Lkj's position from the left = 119 − 7 + 1 = 113th. Ihg is 29th from the left. People between them = 113 − 29 − 1 = 83 (positions 30 to 112).
+
+Q 80 | rea | Ranking & Arrangement
+A, B, C, D, E, F and G are sitting around a circular table facing the centre. E sits third to the left of B. D sits second to the right of B. C sits to the immediate right of F. G sits second to the right of A.
+How many people sit between G and C when counted from the left of C?
+(1) Three
+(2) Two
+(3) Four
+(4) One
+= 2
+~ Number the seats moving to the right (anticlockwise, since all face the centre): B = 1, D = 3 and E = 5 (third to the left of B). Free seats are 2, 4, 6 and 7. C is immediately right of F, so F and C need two adjacent free seats: F = 6, C = 7. Then G = A + 2 gives A = 2 and G = 4. Order to the right: B, A, D, G, E, F, C. Counting to the left of C: F, E and then G, so two people sit between them. (Counted to the right of C, three people B, A, D sit between.)
+
+Q 81 | ga | Economy & Schemes
+Under the Viksit Bharat–G RAM G Act 2025, how many days of statutory wage employment are guaranteed per rural household per financial year?
+(1) 100 days
+(2) 150 days
+(3) 125 days
+(4) 110 days
+= 3
+~ The Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin) Act, 2025 (VB–G RAM G) guarantees every rural household not less than 125 days of wage employment in a financial year for adult members willing to do unskilled manual work. It received the President's assent in December 2025 and replaces the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA), 2005, which guaranteed 100 days, so 100 days is the old figure, not the new one.
+
+Q 82 | ga | Sports
+Major Dhyan Chand Khel Ratna Award 2024 winner, D Gukesh, is associated with which sports?
+(1) Hockey
+(2) Chess
+(3) Shooting
+(4) Badminton
+= 2
+~ D. Gukesh is an Indian chess grandmaster who became the youngest undisputed World Chess Champion in December 2024. He received the Major Dhyan Chand Khel Ratna Award 2024, India's highest sports honour, from President Droupadi Murmu in January 2025 along with shooter Manu Bhaker, hockey captain Harmanpreet Singh and para high-jumper Praveen Kumar, which explains why hockey and shooting also appear among the options.
+
+Q 83 | ga | Sports
+Which of the following countries hosted the 2025 FIFA U-17 World Cup under the new 48-team format?
+(1) Russia
+(2) Qatar
+(3) Brazil
+(4) India
+= 2
+~ Qatar hosted the 2025 FIFA U-17 World Cup in November 2025, the first edition of the tournament played with 48 teams instead of 24; Portugal won the title, beating Austria in the final. India hosted the U-17 World Cup earlier, in 2017, and Brazil in 2019.
+
+Q 84 | ga | Current Affairs
+To enhance capabilities in indigenous hydrography, where will the Indian Navy launch INS ‘Ikshak’ in November 2025?
+(1) Visakhapatnam
+(2) Chennai
+(3) Mumbai
+(4) Kochi
+= 4
+~ INS Ikshak, the third of the four Survey Vessel (Large) ships built for the Indian Navy by Garden Reach Shipbuilders and Engineers (GRSE), Kolkata, was commissioned (formally taken into service) at Kochi, the headquarters of the Southern Naval Command, in November 2025. These largely indigenous ships carry out hydrographic surveys, mapping the sea floor and coastal waters for safe navigation; the earlier ships of the class are INS Sandhayak and INS Nirdeshak.
+
+Q 85 | ga | Sports
+Who set a world record in the men's javelin F42 category at the Nottwil World Para Athletics Grand Prix in Switzerland, winning the gold medal?
+(1) Mahendra Gurjar
+(2) Rinku Solanki
+(3) Devender Singh
+(4) Praveen Kumar
+= 1
+~ India's Mahendra Gurjar won the gold medal in the men's javelin throw F42 event at the World Para Athletics Grand Prix in Nottwil, Switzerland, with a world-record throw. The F42 class is for athletes who compete standing and have an impairment affecting the leg. Praveen Kumar is a para high-jumper, not a javelin thrower.
+
+Q 86 | ga | Awards, Books & Persons
+Which British honours list, including overseas recognitions, was published on 13 June 2025?
+(1) Queen’s Platinum Overseas & International List
+(2) UK Civil Service Honors List
+(3) King’s Birthday Honours Overseas & International List
+(4) New Year Honours 2025
+= 3
+~ The King's Birthday Honours 2025 Overseas and International List was published by the UK government on 13 June 2025; it recognises people who have given exceptional service to the UK abroad and internationally, with awards in the Order of St Michael and St George and the Order of the British Empire. Birthday Honours are announced in June to mark the monarch's official birthday, while New Year Honours are announced at the turn of the year; there is no "Queen's" list now, as King Charles III has been the monarch since 2022.
+
+Q 87 | ga | Geography & Environment
+The inaugural plenary session of the Indian Conservation Conference–2025 was held at which institution in June 2025?
+(1) Indian Institute of Science, Bengaluru
+(2) Wildlife Institute of India, Dehradun
+(3) Indian Council of Forestry Research, Jabalpur
+(4) Forest Research Institute, Dehradun
+= 2
+~ The Indian Conservation Conference 2025 was hosted in June 2025 by the Wildlife Institute of India (WII), Dehradun, where its inaugural plenary session was held. WII is an autonomous institute of the Ministry of Environment, Forest and Climate Change; the Forest Research Institute is also in Dehradun, which makes it the tempting wrong option, and the Indian Council of Forestry Research and Education (ICFRE) is headquartered in Dehradun, not Jabalpur.
+
+Q 88 | ga | Polity & Governance
+Which seat did Congress win in the Kerala by-elections in June 2025?
+(1) Ernakulam
+(2) Wayanad
+(3) Kottayam
+(4) Nilambur
+= 4
+~ Congress (UDF) candidate Aryadan Shoukath won the Nilambur Assembly by-election in Malappuram district, held in June 2025, defeating the LDF candidate. The bypoll was needed because the sitting MLA P. V. Anvar, an LDF-backed independent, had resigned. Wayanad had a Lok Sabha by-election earlier, in November 2024, not in June 2025.
+
+Q 89 | ga | Awards, Books & Persons
+Which prestigious award was Dr. Anandharamakrishnan awarded in 2024 for his contributions to Agricultural Sciences?
+(1) Shanti Swarup Bhatnagar Prize
+(2) Bharat Ratna
+(3) Vigyan Shri Award
+(4) Padma Bhushan
+= 3
+~ Dr. C. Anandharamakrishnan received the Vigyan Shri award in the field of Agricultural Sciences in the first Rashtriya Vigyan Puraskar (2024). These national science awards have four categories: Vigyan Ratna, Vigyan Shri, Vigyan Yuva–Shanti Swarup Bhatnagar and Vigyan Team; the old Shanti Swarup Bhatnagar Prize was folded into the Vigyan Yuva category.
+
+Q 90 | ga | Polity & Governance
+Which of the following administrative institutions of India completed 100 years of service in 2025?
+(1) Election Commission of India (ECI)
+(2) Central Bureau of Investigation (CBI)
+(3) Union Public Service Commission (UPSC)
+(4) Central Vigilance Commission (CVC)
+= 3
+~ The UPSC began as the Public Service Commission, set up on 1 October 1926 on the recommendation of the Lee Commission (1924) under the Government of India Act, 1919, with Sir Ross Barker as its first Chairman. On 1 October 2025 it entered its 100th (centenary) year, so it is the institution linked with 100 years of service in 2025 (strictly, it completes 100 years on 1 October 2026). The other bodies are much younger: the Election Commission dates from 1950, the CBI from 1963 and the CVC from 1964.
+
+Q 91 | ga | Current Affairs
+In 2025, 36 people including government employees were arrested under “Operation Spot Trap” by the Vigilance and Anti-Corruption Bureau (VACB). Which state was this operation conducted in?
+(1) Maharashtra
+(2) Kerala
+(3) Uttar Pradesh
+(4) Rajasthan
+= 2
+~ Operation Spot Trap is an anti-corruption drive of the Kerala Vigilance and Anti-Corruption Bureau (VACB) to catch government officials red-handed while accepting bribes. "Vigilance and Anti-Corruption Bureau" is the name of Kerala's state anti-corruption agency, which is a useful clue; Maharashtra and Rajasthan, for example, call theirs the Anti-Corruption Bureau.
+
+Q 92 | ga | Economy & Schemes
+In May 2025, the Reserve Bank of India (RBI) penalised the Union Bank of India and which of the following companies?
+(1) Broadridge Financial Solutions
+(2) Paytm
+(3) Razorpay
+(4) Transactree Technologies
+= 4
+~ In May 2025 the RBI imposed monetary penalties on Union Bank of India and on Transactree Technologies Pvt. Ltd., the company that runs the peer-to-peer (P2P) lending platform Lendbox, for not complying with certain RBI directions. Such penalties are for lapses in regulatory compliance and do not question the validity of any transaction the entity made with its customers.
+
+Q 93 | ga | Awards, Books & Persons
+Which of the following former AIFF officials, who also held key positions in various sports associations in Nagaland, passed away in 2025?
+(1) Savio Medeira
+(2) Bhaichung Bhutia
+(3) Atuo Mezhür
+(4) Subrata Dutta
+= 3
+~ Atuo Mezhür, a former official of the All India Football Federation (AIFF) who also held key posts in sports associations in Nagaland, passed away in 2025. Bhaichung Bhutia is a former India football captain from Sikkim and is alive.
+
+Q 94 | ga | Sports
+Which athlete received the Laureus World Sportswoman of the Year in 2025?
+(1) Serena Williams
+(2) Ellesse Andrews
+(3) Rebeca Andrade
+(4) Simone Biles
+= 4
+~ American gymnast Simone Biles won the Laureus World Sportswoman of the Year award at the 2025 Laureus World Sports Awards. It was her fourth win in this category, equalling the record of Serena Williams; Sweden's pole vaulter Mondo Duplantis won the Sportsman of the Year award.
+
+Q 95 | ga | Geography & Environment
+Which state government implemented an environmental tax on out-of-state vehicles starting December 2025?
+(1) Sikkim
+(2) Himachal Pradesh
+(3) Uttarakhand
+(4) Assam
+= 3
+~ Uttarakhand began levying a green tax (green cess) from December 2025 on vehicles from other states entering Uttarakhand, to curb vehicular pollution and protect the fragile Himalayan environment. Vehicles registered in Uttarakhand itself do not pay it.
+
+Q 96 | ga | Economy & Schemes
+Which of the following Indian states features the defence industrial corridor that attracted investment proposals worth ₹33,896 crore in 2025?
+(1) Tamil Nadu
+(2) Maharashtra
+(3) Gujarat
+(4) Uttar Pradesh
+= 4
+~ The Uttar Pradesh Defence Industrial Corridor, developed through the Uttar Pradesh Expressways Industrial Development Authority (UPEIDA), had attracted investment proposals worth ₹33,896 crore by 2025. The corridor has six nodes: Agra, Aligarh, Chitrakoot, Jhansi, Kanpur and Lucknow. India has two defence industrial corridors, one in Uttar Pradesh and one in Tamil Nadu, so Tamil Nadu is the tempting wrong option.
+
+Q 97 | ga | Economy & Schemes
+According to the Economic Survey released in January 2025, India was identified as the seventh most vulnerable country to climate change. What percentage of days in 2024 were marked by significant climate events such as heatwaves, cyclones and floods?
+(1) 90%
+(2) 85%
+(3) 93%
+(4) 95%
+= 3
+~ The Economic Survey 2024–25, tabled in Parliament in January 2025, described India as the seventh most vulnerable country to climate change and noted that 93% of the days in 2024 saw extreme weather events such as heatwaves, cyclones or floods. The Survey used these figures to stress that India must give priority to climate adaptation and resilience.
+
+Q 98 | ga | Economy & Schemes
+What change did the Banking Laws (Amendment) Act, notified in April 2025, make regarding bank nominee rules?
+(1) Allowed up to four nominees
+(2) Removed nomination option
+(3) Made nomination optional
+(4) Allowed only one nominee
+= 1
+~ The Banking Laws (Amendment) Act, 2025 allows a depositor to name up to four nominees for a bank account, either simultaneously (with a fixed share for each, adding up to 100%) or successively (one after another); for lockers and articles in safe custody only successive nomination is allowed. Earlier only one nominee could be named.
+
+Q 99 | ga | Current Affairs
+What is its primary objective of the GoIStats app, launched by the Ministry of Statistics and Programme Implementation (MoSPI) in 2025?
+(1) To offer real-time agricultural weather forecasts to farmers
+(2) To give a snapshot of key socio-economic data of the Ministry
+(3) To facilitate online shopping and digital payment services
+(4) To provide entertainment content and cultural heritage updates
+= 2
+~ MoSPI's GoIStats mobile app, launched in 2025, gives citizens easy access to official statistics: it shows key socio-economic indicators such as GDP, inflation and employment through simple dashboards, charts and data tables. So its main purpose is a quick snapshot of the Ministry's key data; the other options have nothing to do with MoSPI's work.
+
+Q 100 | ga | Sports
+In February 2025, which Indian athlete broke the Asian short-track record in the 5000 m with a time of 12:59.77?
+(1) Jacob Kiplimo
+(2) Yared Nuguse
+(3) Avinash Sable
+(4) Gulveer Singh
+= 4
+~ Gulveer Singh ran 12:59.77 in the 5000 m at an indoor (short-track) meet in February 2025, setting a new Asian indoor record and becoming the first Indian to run the distance in under 13 minutes. Avinash Sable is an Indian steeplechase runner, while Jacob Kiplimo (Uganda) and Yared Nuguse (USA) are not Indian.

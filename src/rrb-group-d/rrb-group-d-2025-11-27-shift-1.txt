@@ -1,0 +1,947 @@
+# RRB Group D (Level-1 posts, CEN 08/2024) Computer Based Test, held 27 November 2025, Shift 1 (9:00 AM – 10:30 AM). 100 questions here; the paper had 100 (1 mark each, 90 minutes, one-third mark cut for a wrong answer).
+# Source: RRB's question paper for this shift with its answer key (correct option shown in green with a tick), as published by RRB (copy hosted by AglaSem). Answers = RRB's key. Explanations by Learn with Anil (writer + independent checker).
+
+Q 1 | sci | Physics
+Which of the following statements is correct?
+(1) Work done can only be negative.
+(2) Work done can be positive or negative depending on the direction of force.
+(3) Work done does not depend on force or displacement.
+(4) Work done can only be positive.
+= 2
+~ Work done is W = F × s × cos θ, where θ is the angle between the force and the displacement. If the force acts along the displacement (θ = 0°), work is positive, e.g. a falling ball pulled by gravity; if the force acts opposite to the displacement (θ = 180°), work is negative, e.g. friction on a sliding block. So work can be positive or negative (and zero when the force is perpendicular to the displacement), which rules out "only positive" and "only negative"; and since W depends on both F and s, option 3 is also wrong.
+
+Q 2 | sci | Biology
+Through which method of cell division are the diploid chromosomes divided into haploid gametes?
+(1) Mitosis
+(2) Binary Fission
+(3) Amitosis
+(4) Meiosis
+= 4
+~ Meiosis is called reduction division because a diploid (2n) cell in the reproductive organs divides twice to form four haploid (n) cells, which become the gametes. When a male and a female gamete fuse at fertilisation, the diploid number is restored in the zygote. Mitosis keeps the chromosome number the same and is used for growth and repair, while binary fission and amitosis are simple direct divisions that do not halve the chromosome number.
+
+Q 3 | sci | Physics
+The power of a lens is defined as:
+(1) The reciprocal of its focal length in meters
+(2) The ratio of image distance to object distance
+(3) The product of its focal length and refractive index
+(4) The square of its focal length
+= 1
+~ Power of a lens is its ability to converge or diverge light and is given by P = 1/f, with f in metres. Its SI unit is the dioptre (D); 1 D is the power of a lens of focal length 1 m. A convex lens has positive power and a concave lens has negative power. The ratio of image distance to object distance (option 2) is the magnification, not the power.
+
+Q 4 | sci | Physics
+When a thick glass slab is placed over printed matter, the letters appear raised. This is due to ___________.
+(1) Scattering of light
+(2) Refraction of light
+(3) Total internal reflection
+(4) Polarization of light
+= 2
+~ Light from the letters travels up through the glass and bends away from the normal as it passes from the denser glass into the rarer air. To the eye these rays seem to come from a point higher than the actual letters, so the apparent depth is less than the real depth and the letters look raised. This bending of light at the boundary of two media is refraction; total internal reflection would need light to strike the surface beyond the critical angle, which does not happen here.
+
+Q 5 | sci | Physics
+The motion of a satellite orbiting the Earth in a circular path at constant speed is a classic example of uniform circular motion. What property of this motion prevents its acceleration from being zero?
+(1) The total mechanical energy is conserved, necessitating acceleration.
+(2) The direction of motion changes continuously at every point, meaning the velocity is changing.
+(3) The object`s mass continually changes due to orbital dynamics.
+(4) The speed is too high for the gravitational force to sustain a constant velocity.
+= 2
+~ Velocity is a vector, so it changes if either its magnitude (speed) or its direction changes. In uniform circular motion the speed stays constant, but the direction of motion keeps changing at every point along the circle, so the velocity is always changing and the body is accelerated. This acceleration (centripetal acceleration) points towards the centre of the circle; for a satellite it is provided by the Earth's gravitational pull.
+
+Q 6 | sci | Biology
+Asthma primarily affects which part of the respiratory system?
+(1) Diaphragm
+(2) Bronchi and bronchioles
+(3) Trachea
+(4) Alveoli
+= 2
+~ Asthma is a chronic disease of the airways in which the bronchi and bronchioles become inflamed, their muscles tighten and extra mucus is produced. The narrowed air passages cause wheezing, coughing and breathlessness, especially on breathing out. The alveoli are mainly affected in diseases like emphysema and pneumonia, and the diaphragm is a breathing muscle, not the site of asthma.
+
+Q 7 | sci | Physics
+Which of the following describes an example of uniform circular motion?
+(1) A train moving on its track
+(2) A car accelerating on its way
+(3) A ball thrown vertically upwards
+(4) A fan blade rotating at constant speed
+= 4
+~ Uniform circular motion means moving along a circular path with constant speed. Every point on a fan blade rotating at constant speed moves in a circle with unchanging speed, so it is the best example. A car that is accelerating changes its speed, a ball thrown upwards moves in a straight line and slows down, and a train on its track does not, in general, move in a circle.
+
+Q 8 | sci | Biology
+During reproduction, why is it important to create DNA copies?
+(1) For blood circulation
+(2) For digestion
+(3) For inheritance of traits
+(4) For respiration
+= 3
+~ DNA in the nucleus carries the information for making proteins, which decide the body design and characteristics of an organism. During reproduction the cell makes a copy of its DNA so that each new cell or offspring receives a full set of this information, and the traits of the parents are passed on (inherited). Small errors while copying DNA also produce variations, which help species survive changing conditions. Circulation, digestion and respiration are life processes not linked to DNA copying in reproduction.
+
+Q 9 | sci | Chemistry
+What happens when a naphthalene ball is burnt in a metal plate in open space?
+(1) It burns with a blue flame.
+(2) It burns with yellow flame with no deposit on the metal plate.
+(3) It burns with a yellow flame with black soot deposited on the metal plate.
+(4) It burns with a blue flame with black soot deposited on the metal plate.
+= 3
+~ Naphthalene (C₁₀H₈) is an aromatic compound with a very high proportion of carbon. Even in open air it does not get enough oxygen for complete combustion, so it burns with a yellow, sooty (smoky) flame and unburnt carbon particles settle as black soot on a metal plate held over it. A clean blue flame is given by saturated hydrocarbons or fuels like LPG burning with enough air, and blue flames do not leave soot.
+
+Q 10 | sci | Biology
+When water and nutrients are available, algae grow and multiply rapidly by the process of _________.
+(1) spore formation
+(2) pollination
+(3) fragmentation
+(4) budding
+= 3
+~ Filamentous algae such as Spirogyra reproduce by fragmentation: when they mature, the filament simply breaks into small pieces and each piece grows into a new individual. This is why algae spread quickly over ponds when water and nutrients are plentiful. Spore formation is typical of fungi like Rhizopus, budding of Hydra and yeast, and pollination is a step in sexual reproduction of flowering plants.
+
+Q 11 | sci | Physics
+A coil has a resistance of 44 Ω. If it is connected across a 220 V supply, what is the power consumed by the coil?
+(1) 5 W
+(2) 1100 W
+(3) 110 W
+(4) 0.2 W
+= 2
+~ Electric power can be found from P = V²/R. Here P = (220 × 220)/44 = 48400/44 = 1100 W. You can check it another way: current I = V/R = 220/44 = 5 A, and P = V × I = 220 × 5 = 1100 W. Option 1 (5) is the current in amperes, not the power in watts.
+
+Q 12 | sci | Biology
+Which of the following options best describes the term Culture Fishery?
+(1) Catching fishes from marine water
+(2) Capturing fishes from artificial resources
+(3) Farming of the fishes
+(4) Capturing fishes from natural resources
+= 3
+~ Culture fishery (aquaculture) means farming fish: rearing and breeding them in ponds, tanks, reservoirs or enclosed coastal waters and harvesting them, as in composite fish culture of catla, rohu and common carp. Catching fish from seas, rivers and lakes is called capture fishery, which is what options 1 and 4 describe. Option 2 still speaks of "capturing", not of rearing the fish, so it does not describe culture fishery.
+
+Q 13 | sci | Physics
+A body is dropped from a height. If it falls for 3.0 s and g = 10 m/s², its final velocity (v) is ______________.
+(1) 10 m/s
+(2) 30 m/s
+(3) 40 m/s
+(4) 20 m/s
+= 2
+~ A dropped body starts from rest, so initial velocity u = 0 and it accelerates downward at g. Using the first equation of motion, v = u + gt = 0 + 10 × 3.0 = 30 m/s. (10 m/s and 20 m/s are its speeds after 1 s and 2 s.)
+
+Q 14 | sci | Chemistry
+What happens when a zinc rod is placed in aqueous copper sulphate solution?
+(1) The blue colour of the copper sulphate solution fades.
+(2) The temperature of the solution falls.
+(3) Heat is required to start the reaction.
+(4) No chemical change observed.
+= 1
+~ Zinc is more reactive than copper, so it displaces copper from copper sulphate: Zn + CuSO₄ → ZnSO₄ + Cu. Blue copper sulphate is slowly replaced by colourless zinc sulphate, so the blue colour fades, and reddish-brown copper deposits on the zinc rod. This displacement reaction takes place on its own at room temperature and gives out a little heat, so the temperature does not fall and no heating is needed to start it.
+
+Q 15 | sci | Chemistry
+The fractional atomic mass of chlorine is due to which of the following?
+(1) Presence of ions
+(2) Presence of isotopes
+(3) Its compound nature
+(4) Experimental error
+= 2
+~ Natural chlorine is a mixture of two isotopes, Cl-35 and Cl-37, present roughly in the ratio 3 : 1. Its atomic mass is the average of these: (35 × 75 + 37 × 25)/100 = (2625 + 925)/100 = 35.5 u. That is why chlorine's atomic mass is fractional; it is not caused by ions, by measurement error, or by chlorine being a compound (it is an element).
+
+Q 16 | sci | Chemistry
+The functional group which does NOT contain oxygen hetero atom is:
+(1) halo alkane
+(2) ketone
+(3) carboxylic acid
+(4) alcohol
+= 1
+~ A hetero atom is any atom other than carbon and hydrogen in an organic compound. In a haloalkane the functional group is a halogen atom (−Cl, −Br or −I), so it contains no oxygen. The other three groups all contain oxygen: ketone (>C=O), carboxylic acid (−COOH) and alcohol (−OH).
+
+Q 17 | sci | Chemistry
+What is the main role of micelles in the cleansing action of soap?
+(1) To trap and remove oil and dirt from clothes
+(2) To reduce the hardness of water
+(3) To produce lather with water
+(4) To increase the surface tension of water
+= 1
+~ A soap molecule has an ionic end that dissolves in water and a long hydrocarbon tail that dissolves in oil. In water, soap molecules form clusters called micelles, with the tails pointing inwards into the oily dirt and the ionic ends facing the water. The oil and dirt are thus trapped in the centre of the micelles, which stay suspended in water and are washed away on rinsing. Soap does not remove hardness (it forms scum with hard water), and it lowers rather than raises the surface tension of water.
+
+Q 18 | sci | Biology
+Which poultry are birds farmed to produce eggs?
+(1) Milch
+(2) Common carp
+(3) Layers
+(4) Broilers
+= 3
+~ In poultry farming, layers are hens raised for egg production, while broilers are raised for meat. "Milch" refers to milk-giving animals such as cows and buffaloes, and common carp is a fish used in fish farming, so neither is a poultry bird.
+
+Q 19 | sci | Physics
+Statement 1: The potential difference is measured in volts.
+Statement 2: One volt is equal to one newton per coulomb.
+Which of the following is true?
+(1) Both Statements 1 and 2 are correct.
+(2) Only Statement 2 is correct.
+(3) Both Statements 1 and 2 are incorrect.
+(4) Only Statement 1 is correct.
+= 4
+~ Potential difference is the work done to move a unit charge between two points, V = W/Q, and its SI unit is the volt, so Statement 1 is correct. Hence 1 volt = 1 joule per coulomb (1 V = 1 J/C), not 1 newton per coulomb; newton per coulomb (N/C) is the unit of electric field. So Statement 2 is incorrect and only Statement 1 is correct.
+
+Q 20 | sci | Physics
+The frequency of a sound wave is 50 Hz. How much time will it take to complete one wave?
+(1) 50 s
+(2) 0.02 s
+(3) 0.2 s
+(4) 5 s
+= 2
+~ The time taken to complete one wave (one oscillation) is the time period T, and T = 1/frequency. So T = 1/50 = 0.02 s. A frequency of 50 Hz means 50 waves are completed every second, so each wave takes one-fiftieth of a second.
+
+Q 21 | sci | Chemistry
+Which of the following statements best explains the Law of Constant Proportions?
+(1) Elements are always found in random ratios in a compound.
+(2) Atoms can be divided into smaller particles during a reaction.
+(3) Mass can neither be created nor destroyed in a chemical reaction.
+(4) A chemical compound always contains the same elements in the same proportion by mass.
+= 4
+~ The Law of Constant (Definite) Proportions, given by Proust, says that a pure chemical compound always contains the same elements combined in the same fixed proportion by mass, whatever its source or method of preparation. For example, water always has hydrogen and oxygen in the mass ratio 1 : 8. Option 3 is the Law of Conservation of Mass, and option 1 contradicts the law.
+
+Q 22 | sci | Chemistry
+Which of the following is NOT used for expressing the concentration of a solution?
+(1) Volume by Volume percentage of a solution
+(2) Volume by Mass percentage of a solution
+(3) Mass by volume percentage of a solution
+(4) Mass by mass percentage of a solution
+= 2
+~ Concentration of a solution is commonly expressed as mass by mass percentage (mass of solute/mass of solution × 100), mass by volume percentage (mass of solute/volume of solution × 100) and volume by volume percentage (volume of solute/volume of solution × 100, used for liquid solutes). A "volume by mass" percentage, i.e. volume of solute per mass of solution, is not a standard way of expressing concentration.
+
+Q 23 | sci | Biology
+Which of the following plant tissue performs photosynthesis?
+(1) Chlorenchyma
+(2) Sclerenchyma
+(3) Xylem
+(4) Phloem
+= 1
+~ Chlorenchyma is parenchyma tissue whose cells contain chloroplasts; it is found mainly in green leaves and young stems and carries out photosynthesis. Sclerenchyma is made of dead, thick-walled cells that give strength, xylem carries water and minerals, and phloem carries food; none of these make food.
+
+Q 24 | sci | Biology
+Which of the following life processes is important to bring variation in species?
+(1) Heterotrophic nutrition
+(2) Transportation
+(3) Autotrophic nutrition
+(4) Sexual reproduction
+= 4
+~ In sexual reproduction, gametes formed by meiosis from two different parents fuse, so the offspring get a new combination of genes from both parents. This mixing of DNA creates variation among individuals, which helps a species survive changes in its environment and is the raw material for evolution. Nutrition and transportation keep an individual alive but do not create new combinations of traits.
+
+Q 25 | sci | Chemistry
+Which of the following metals is extracted in the middle of the activity series?
+(1) Gold
+(2) Potassium
+(3) Iron
+(4) Sodium
+= 3
+~ Metals in the middle of the activity series, such as iron, zinc and lead, are moderately reactive; their ores (usually sulphides or carbonates) are first converted to oxides by roasting or calcination and then reduced, often with carbon, to get the metal. Iron is one of these middle metals. Potassium and sodium are at the top of the series and are extracted by electrolysis of their molten chlorides, while gold is at the bottom and is found free in nature.
+
+Q 26 | qa | Geometry & Mensuration
+P is any point inside the rectangle ABCD. If PA = 98 cm, PB = 91 cm and PC = 21 cm, then the length of PD (in cm) is equal to:
+(1) 38
+(2) 41
+(3) 46
+(4) 42
+= 4
+~ For any point P inside a rectangle ABCD, the sums of squares of distances to opposite corners are equal (British Flag theorem): PA² + PC² = PB² + PD². So 98² + 21² = 91² + PD², i.e. 9604 + 441 = 8281 + PD², giving PD² = 10045 − 8281 = 1764 and PD = 42 cm.
+
+Q 27 | qa | Geometry & Mensuration
+The vertices of a convex pentagon (in order) are P(0,0), Q(6,0), R(8,3), S(4,7), T(0,4). Find the area of the pentagon.
+(1) 42 sq. units
+(2) 36 sq. units
+(3) 39 sq. units
+(4) 45 sq. units
+= 3
+~ Use the shoelace formula: Area = ½ |Σ (xᵢyᵢ₊₁ − xᵢ₊₁yᵢ)|. Taking the vertices in order: P→Q: 0×0 − 6×0 = 0; Q→R: 6×3 − 8×0 = 18; R→S: 8×7 − 4×3 = 44; S→T: 4×4 − 0×7 = 16; T→P: 0×0 − 0×4 = 0. The sum is 78, so the area = 78/2 = 39 sq. units.
+
+Q 28 | qa | Ratio, Proportion & Average
+A metal rod is divided into three parts, A, B and C. The lengths of A and B are in the ratio 9 : 20, and the lengths of C and B are in the ratio 5 : 11. If the difference between the lengths of A and C is 10 cm, find the total length (in cm) of the metal rod.
+(1) 4202
+(2) 4199
+(3) 4190
+(4) 4180
+= 3
+~ Make B the same in both ratios: A : B = 9 : 20 = 99 : 220 and C : B = 5 : 11 = 100 : 220, so A : B : C = 99 : 220 : 100. The difference between A and C is 100 − 99 = 1 part = 10 cm. The total is 99 + 220 + 100 = 419 parts = 419 × 10 = 4190 cm.
+
+Q 29 | qa | Age, Calendar & Clock
+Soniya got married 15 years ago. Her present age is 8/5 times her age at the time of her marriage. Her sister was 8 years younger to her at the time of her marriage. Find the present age of her sister.
+(1) 32 years
+(2) 24 years
+(3) 40 years
+(4) 28 years
+= 1
+~ Let Soniya's present age be x; then x = (8/5)(x − 15), so 5x = 8x − 120 and x = 40 years. At her marriage she was 40 − 15 = 25, so her sister was 25 − 8 = 17 then. Fifteen years later the sister is 17 + 15 = 32 years old (equivalently, 40 − 8 = 32).
+
+Q 30 | qa | Ratio, Proportion & Average
+The average age of 26 students of a class is 26 years. If the age of the teacher is also included, the average age of the whole group becomes 27 years. The age (in years) of the teacher is:
+(1) 54
+(2) 50
+(3) 57
+(4) 53
+= 4
+~ Total age of the 26 students = 26 × 26 = 676 years. With the teacher there are 27 people with average 27, so the total = 27 × 27 = 729 years. Teacher's age = 729 − 676 = 53 years (shortcut: the teacher's age = new average + 1 year for each of the 26 students = 27 + 26 × 1 = 53).
+
+Q 31 | qa | Number System & Simplification
+If Δ × 2.2 + 0.33 × (3/4) − (1/20) × 0.55 = 0.99, then the value of Δ is:
+(1) 0.35
+(2) 1
+(3) 0.25
+(4) 0
+= 1
+~ Work out the known terms: 0.33 × 3/4 = 0.2475 and (1/20) × 0.55 = 0.0275. So 2.2Δ + 0.2475 − 0.0275 = 0.99, i.e. 2.2Δ + 0.22 = 0.99. Then 2.2Δ = 0.77 and Δ = 0.77 ÷ 2.2 = 0.35.
+
+Q 32 | qa | Percentage, Profit & Discount
+If 20% of a number is added to 90, then the result is the same number. 80% of the same number is:
+(1) 90
+(2) 120
+(3) 110
+(4) 100
+= 1
+~ Let the number be x. Then 90 + 0.2x = x, so 0.8x = 90. But 0.8x is exactly 80% of the number, so the answer is 90 directly (the number itself is 112.5).
+
+Q 33 | qa | Speed, Time & Distance
+Smriti goes to a shopping mall at a speed of 21 km/hr and returns at a speed of 69 km/hr. Find her average speed (in km/hr) for the entire trip.
+(1) 40.2
+(2) 30.3
+(3) 32.2
+(4) 23.4
+= 3
+~ When equal distances are covered at speeds a and b, the average speed is 2ab/(a + b), not the simple average. Here it is 2 × 21 × 69/(21 + 69) = 2898/90 = 32.2 km/hr. The tempting 45 km/hr (simple average) is wrong because she spends more time at the slower speed.
+
+Q 34 | qa | Percentage, Profit & Discount
+An article was bought for ₹8,900. Its price was marked up by 40%. Thereafter, it was sold at a discount of 5% on the marked price. What was the profit percentage on the transaction?
+(1) 32%
+(2) 34%
+(3) 35%
+(4) 33%
+= 4
+~ Marked price = 8900 × 1.40 = ₹12,460. Selling price = 12460 × 0.95 = ₹11,837. Profit = 11837 − 8900 = ₹2,937, and 2937/8900 × 100 = 33%. Quick check: 1.40 × 0.95 = 1.33, i.e. a 33% profit.
+
+Q 35 | qa | Algebra & Equations
+If p = 6, q = −3, then the value of p³ − 3p² + 3p + 3q + 3q² + q³ is:
+(1) −61
+(2) 61
+(3) 117
+(4) −117
+= 3
+~ Group the terms: p³ − 3p² + 3p = (p − 1)³ + 1 and q³ + 3q² + 3q = (q + 1)³ − 1, so the expression equals (p − 1)³ + (q + 1)³ = 5³ + (−2)³ = 125 − 8 = 117. Direct check: 216 − 108 + 18 − 9 + 27 − 27 = 117.
+
+Q 36 | qa | Ratio, Proportion & Average
+Which of the following ratios is equivalent to 3 : 2?
+(1) 53 : 38
+(2) 51 : 37
+(3) 52 : 34
+(4) 54 : 36
+= 4
+~ Divide both terms of 54 : 36 by their HCF 18 to get 3 : 2. Check the others: 53 : 38 and 51 : 37 cannot be reduced to 3 : 2 (3 × 38 = 114 ≠ 2 × 53 = 106; 3 × 37 = 111 ≠ 102), and 52 : 34 reduces to 26 : 17, not 3 : 2.
+
+Q 37 | qa | Percentage, Profit & Discount
+The cost of a washing machine is 40% less than the cost of a TV. If the cost of the washing machine increases by 52% and that of the TV decreases by 76%, then what is the percentage change in the total cost of 5 washing machines and 2 TVs?
+(1) Decrease by 3%
+(2) Decrease by 2%
+(3) Increase by 0.8%
+(4) Increase by 5%
+= 3
+~ Let a TV cost 100, so a washing machine costs 60. Original total = 5 × 60 + 2 × 100 = 500. New prices: washing machine = 60 × 1.52 = 91.2 and TV = 100 × 0.24 = 24, so the new total = 5 × 91.2 + 2 × 24 = 456 + 48 = 504. Change = 4/500 × 100 = 0.8% increase.
+
+Q 38 | qa | Trigonometry & Heights
+If tanθ = 12/5, what is the value of secθ?
+(1) 13/12
+(2) 5/13
+(3) 12/5
+(4) 13/5
+= 4
+~ Use sec²θ = 1 + tan²θ = 1 + 144/25 = 169/25, so secθ = 13/5 (θ taken as acute). In a right triangle with opposite side 12 and adjacent side 5, the hypotenuse is 13, and secθ = hypotenuse/adjacent = 13/5. 13/12 is cosecθ, 5/13 is cosθ and 12/5 is tanθ itself.
+
+Q 39 | qa | Geometry & Mensuration
+The total surface area of a solid right circular cylinder is 542 cm². Its curved surface area is two-fifth of its total surface area. Find the curved surface area of the cylinder.
+(1) 315.4 cm²
+(2) 212.5 cm²
+(3) 513.2 cm²
+(4) 216.8 cm²
+= 4
+~ The curved surface area is simply 2/5 of the total surface area: (2/5) × 542 = 1084/5 = 216.8 cm². No radius or height is needed.
+
+Q 40 | qa | HCF, LCM & Fractions
+Two numbers have an HCF of 18 and an LCM of 1512. If one of the numbers is 126, find the positive difference between these number.
+(1) 126
+(2) 90
+(3) 216
+(4) 256
+= 2
+~ For two numbers, product = HCF × LCM, so the other number = (18 × 1512)/126 = 27216/126 = 216. Check: 126 = 2 × 3² × 7 and 216 = 2³ × 3³ give HCF 18 and LCM 2³ × 3³ × 7 = 1512. Difference = 216 − 126 = 90 (216 is the other number, not the difference).
+
+Q 41 | qa | Percentage, Profit & Discount
+(1/20) is what percentage of (10/40)?
+(1) 30%
+(2) 40%
+(3) 35%
+(4) 20%
+= 4
+~ 10/40 = 1/4. Required percentage = (1/20) ÷ (1/4) × 100 = (4/20) × 100 = 20%.
+
+Q 42 | qa | Statistics & Data
+In statistics out of 100, the marks of 21 students in final exams are as 90, 95, 95, 94, 90, 85, 84, 83, 85, 81, 92, 93, 82, 78, 79, 81, 80, 82, 85, 76, 85, then the mode of data is:
+(1) 84
+(2) 83
+(3) 87
+(4) 85
+= 4
+~ The mode is the value that occurs most often. Counting: 85 appears 4 times, while 90, 95, 81 and 82 appear twice each and every other mark appears once. So the mode is 85 (84 and 83 occur only once, and 87 does not occur at all).
+
+Q 43 | qa | Percentage, Profit & Discount
+A fruit vendor bought 150 mangoes. He sold them at such a price that the selling price of 120 mangoes equals the cost price of 150 mangoes. Find his profit percentage.
+(1) 30%
+(2) 35%
+(3) 25%
+(4) 20%
+= 3
+~ Let the cost price of one mango be ₹1. Then SP of 120 mangoes = CP of 150 mangoes = ₹150. On 120 mangoes, CP = ₹120 and SP = ₹150, so profit = 30 and profit% = 30/120 × 100 = 25%. The tempting 20% is 30/150, which wrongly divides by the selling price.
+
+Q 44 | qa | Time & Work, Pipes & Cisterns
+Three pipes, A, B and C, can fill a tank from empty to full in 40 minutes, 20 minutes and 30 minutes, respectively. When the tank is empty, all the three pipes are opened. A, B and C discharge chemical solutions P, Q and R, respectively. What is the proportion of solution Q in the liquid in the tank after 9 minutes?
+(1) 3/4
+(2) 6/13
+(3) 7/13
+(4) 3/13
+= 2
+~ Take the tank as 120 units (LCM of 40, 20, 30). Per minute A gives 3 units of P, B gives 6 units of Q and C gives 4 units of R, a total of 13 units. Since all three run together the whole time, the mix is always in the ratio 3 : 6 : 4, so the share of Q is 6/13 (after 9 minutes Q = 54 units out of 117 units = 6/13; the tank is not yet full, as it needs 120/13 ≈ 9.2 minutes).
+
+Q 45 | qa | HCF, LCM & Fractions
+Two-fifth of a container is filled with blue liquid, one-third of the remaining container is filled with black liquid, five-sixth of the still remaining container is filled with yellow liquid and the remaining 4.2 litres is of white colour. Find the total capacity of the container.
+(1) 72 litres
+(2) 63 litres
+(3) 60 litres
+(4) 78 litres
+= 2
+~ After blue, 1 − 2/5 = 3/5 is left. Black takes 1/3 of this, leaving (2/3) × (3/5) = 2/5. Yellow takes 5/6 of this, leaving (1/6) × (2/5) = 1/15 of the container for white. So (1/15) × capacity = 4.2 litres, and capacity = 4.2 × 15 = 63 litres.
+
+Q 46 | qa | Speed, Time & Distance
+A 325 m long train overtakes a man moving at a speed of 5 km/hr (in the same direction) in 45 seconds. How much time (in seconds) will it take this train to completely cross another 440 m long train, moving in the opposite direction at a speed of 20 km/hr?
+(1) 54
+(2) 40
+(3) 52
+(4) 51
+= 1
+~ Passing the man, the train covers its own length 325 m in 45 s at the relative speed (train − 5) km/hr: 325/45 m/s = 65/9 m/s = (65/9) × (18/5) = 26 km/hr, so the train's speed = 26 + 5 = 31 km/hr. Against the other train (opposite direction) the relative speed = 31 + 20 = 51 km/hr = 51 × 5/18 = 85/6 m/s. Distance = 325 + 440 = 765 m, so time = 765 ÷ (85/6) = 765 × 6/85 = 54 seconds.
+
+Q 47 | qa | Number System & Simplification
+Simplify [3 1/4 ÷ {1 1/4 − 0.5(2 1/2 − 1/12)}] / (5 × 1/15).
+(1) 234
+(2) 134
+(3) 434
+(4) 334
+= 1
+~ Follow the brackets from inside: 2 1/2 − 1/12 = 30/12 − 1/12 = 29/12; 0.5 × 29/12 = 29/24; 1 1/4 − 29/24 = 30/24 − 29/24 = 1/24. Then 3 1/4 ÷ 1/24 = (13/4) × 24 = 78. The denominator is 5 × 1/15 = 1/3, so the value = 78 ÷ (1/3) = 234.
+
+Q 48 | qa | Time & Work, Pipes & Cisterns
+A and B working together can do a piece of work in 6 days. B alone can do the same work in 12 days. How long (in days) will A alone take to do double the work?
+(1) 12
+(2) 25
+(3) 24
+(4) 27
+= 3
+~ A's one-day work = (A + B)'s one-day work − B's one-day work = 1/6 − 1/12 = 1/12, so A alone finishes the work in 12 days. Double the work therefore takes A 2 × 12 = 24 days (12 days is only for the single job).
+
+Q 49 | qa | Percentage, Profit & Discount
+A scheme like ‘Buy 6, Get 4 Free’ on the same kind of articles with the same MRP attracts a _____ % discount.
+(1) 67.67
+(2) 40
+(3) 41
+(4) 66.67
+= 2
+~ The customer takes 6 + 4 = 10 articles but pays for only 6. The discount is the free articles as a share of all articles received: 4/10 × 100 = 40%. The tempting 66.67% is 4/6, which wrongly compares the free articles with the paid ones instead of with the total marked price.
+
+Q 50 | qa | Simple & Compound Interest
+The amount on a sum of ₹6,800 at 15% per annum compound interest, compounded annually, in 2 years' time, will be:
+(1) ₹7,996
+(2) ₹8,641
+(3) ₹9,393
+(4) ₹8,993
+= 4
+~ Amount = P(1 + r/100)ⁿ = 6800 × (1.15)² = 6800 × 1.3225 = ₹8,993. Year by year: after year 1, 6800 + 1020 = 7820; after year 2, 7820 + 1173 = ₹8,993.
+
+Q 51 | rea | Blood Relations
+In a certain code language,
+A + B means ‘A is the sister of B’,
+A @ B means ‘A is the brother of B’,
+A - B means ‘A is the wife of B’,
+and A # B means ‘A is the father of B’.
+How is O related to V if ‘O + P # T @ G - V’?
+(1) Wife's father's mother
+(2) Wife's mother
+(3) Wife's father's sister
+(4) Wife's sister
+= 3
+~ Decode step by step: O + P means O is the sister of P; P # T means P is the father of T; T @ G means T is the brother of G, so P is also G's father; G - V means G is the wife of V. So P is the father of V's wife, and O, being P's sister, is V's wife's father's sister.
+
+Q 52 | rea | Mathematical Operations
+If + means −, − means ×, × means ÷ and ÷ means +, then what will come in place of the question mark (?) in the following equation?
+84 − 6 ÷ 371 + 648 × 8 = ?
+(1) 797
+(2) 794
+(3) 799
+(4) 795
+= 2
+~ Replacing the signs gives 84 × 6 + 371 − 648 ÷ 8. Using BODMAS: 84 × 6 = 504 and 648 ÷ 8 = 81, so the value = 504 + 371 − 81 = 794.
+
+Q 53 | rea | Coding-Decoding
+In a certain code language, ‘OVAL’ is coded as ‘5294’ and ‘LOVE’ is coded as ‘8549’. What is the code for ‘E’ in the given code language?
+(1) 8
+(2) 5
+(3) 9
+(4) 4
+= 1
+~ The letters common to both words are O, V and L, and the digits common to both codes are 5, 9 and 4, so these digits belong to O, V and L. The only letter left in ‘LOVE’ is E, and the only digit left in ‘8549’ is 8, so E = 8 (likewise A = 2 in ‘OVAL’).
+
+Q 54 | rea | Series
+Refer to the following number series and answer the question that follows. All numbers are single-digit numbers only. Counting to be done from left to right only.
+(Left) 4 6 5 8 2 2 1 8 2 9 8 4 7 4 8 2 4 3 1 4 1 2 7 2 6 (Right)
+How many such numbers are there, each of which is immediately preceded by a perfect square and also immediately followed by a perfect square?
+(Note: 1 is also a perfect square.)
+(1) Two
+(2) Four
+(3) Three
+(4) One
+= 2
+~ The single-digit perfect squares here are 1, 4 and 9. Look for a number with one of these on both sides: 9 8 4, 4 7 4, 4 3 1 and 1 4 1. So 8, 7, 3 and 4 qualify, which makes four such numbers.
+
+Q 55 | rea | Series
+What should come in place of the question mark (?) in the given series?
+61 85 109 133 157 ?
+(1) 179
+(2) 183
+(3) 181
+(4) 185
+= 3
+~ Each term is 24 more than the previous one: 61 + 24 = 85, 85 + 24 = 109, 109 + 24 = 133, 133 + 24 = 157. So the next term is 157 + 24 = 181.
+
+Q 56 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) OSN
+(2) GKE
+(3) NRL
+(4) LPJ
+= 1
+~ Use letter positions. GKE: G(7) +4 = K(11), K(11) −6 = E(5). NRL: N(14) +4 = R(18), R(18) −6 = L(12). LPJ: L(12) +4 = P(16), P(16) −6 = J(10). OSN: O(15) +4 = S(19), but S(19) −5 = N(14), not −6. So OSN is the odd one out.
+
+Q 57 | rea | Directions & Distance
+Alex starts from Point A and drives 8 km towards the east. He then takes a left turn, drives 6 km, turns left and drives 17 km. He then takes a left turn and drives 13 km. He takes a final left turn, drives 9 km and stops at Point P. How far (shortest distance) and towards which direction should he drive in order to reach Point A again? (All turns are 90 degrees turns only, unless specified.)
+(1) 8 km to the north
+(2) 7 km to the north
+(3) 8 km to the south
+(4) 7 km to the south
+= 2
+~ Take A as (0, 0). 8 km east → (8, 0); left turn means north, 6 km → (8, 6); left means west, 17 km → (−9, 6); left means south, 13 km → (−9, −7); left means east, 9 km → (0, −7) = P. So P is 7 km directly south of A, and he must drive 7 km to the north to return to A.
+
+Q 58 | rea | Series
+What should come in place of the question mark (?) in the given series?
+991 989 985 979 971 ?
+(1) 967
+(2) 963
+(3) 961
+(4) 969
+= 3
+~ The differences are −2, −4, −6, −8 (increasing by 2 each time): 991 − 2 = 989, 989 − 4 = 985, 985 − 6 = 979, 979 − 8 = 971. The next difference is −10, so the next term is 971 − 10 = 961.
+
+Q 59 | rea | Mathematical Operations
+If + means −, − means ×, × means ÷ and ÷ means +, then what will come in place of the question mark (?) in the following equation?
+173 − 3 ÷ 282 + 164 × 4 = ?
+(1) 769
+(2) 761
+(3) 760
+(4) 766
+= 3
+~ Replacing the signs gives 173 × 3 + 282 − 164 ÷ 4. Using BODMAS: 173 × 3 = 519 and 164 ÷ 4 = 41, so the value = 519 + 282 − 41 = 760.
+
+Q 60 | rea | Analogy & Classification
+UI 12 is related to YK −2 in a certain way. In the same way, OL 9 is related to SN −5. To which of the following is PQ 15 related, following the same logic?
+(1) ST 3
+(2) TT 3
+(3) SS 1
+(4) TS 1
+= 4
+~ First letter +4, second letter +2, number −14: U(21) + 4 = Y(25), I(9) + 2 = K(11), 12 − 14 = −2; O(15) + 4 = S(19), L(12) + 2 = N(14), 9 − 14 = −5. So for PQ 15: P(16) + 4 = T(20), Q(17) + 2 = S(19), 15 − 14 = 1, giving TS 1.
+
+Q 61 | rea | Series
+Refer to the given number, symbol series and answer the question that follows. Counting to be done from left to right only. All numbers are single-digit numbers.
+(Left) 8 $ 3 Ω 9 % 4 6 7 1 * £ 5 # 2 + @ & (Right)
+How many such symbols are there, each of which is immediately preceded by a number and also immediately followed by another symbol?
+(1) 4
+(2) 3
+(3) 1
+(4) 2
+= 4
+~ Check each symbol that has a number just before it: $ (8 $ 3), Ω (3 Ω 9), % (9 % 4) and # (5 # 2) are all followed by numbers, so they do not count. Only * (1 * £) and + (2 + @) are preceded by a number and followed by a symbol. So there are 2 such symbols.
+
+Q 62 | rea | Coding-Decoding
+In the following triads, each group of letters is related to the subsequent one following a certain logic. Select from the given options, the one which follows the same logic.
+URIC - CRUI - RIUC
+KIDS - SIKD - IDKS
+(1) NAVY - YANV - VANY
+(2) OPEN - OEPN - NEPO
+(3) FADE - EAFD - ADFE
+(4) MALE - AMLE - EALM
+= 3
+~ Number the letters of the first word 1, 2, 3, 4. The second word is letters 4, 2, 1, 3 (URIC → C R U I) and the third word is letters 2, 3, 1, 4 (URIC → R I U C); KIDS → SIKD → IDKS follows the same order. For FADE: 4, 2, 1, 3 gives EAFD and 2, 3, 1, 4 gives ADFE, which matches. NAVY would give YANV but then AVNY (not VANY), and OPEN and MALE fail at the second step (NPOE and EAML would be needed).
+
+Q 63 | rea | Coding-Decoding
+In a certain code language, ‘house sip head’ is coded as ‘bm ma px’ and ‘head wood robot’ is coded as ‘pz bm ey’. How is ‘head’ coded in the given language?
+(1) ma
+(2) bm
+(3) pz
+(4) px
+= 2
+~ The only word common to both phrases is ‘head’, and the only code common to both coded phrases is ‘bm’. So ‘head’ is coded as ‘bm’ (ma and px belong to house/sip, pz to wood/robot).
+
+Q 64 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding / subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(14, 42, 3)
+(12, 60, 5)
+(1) (15, 45, 4)
+(2) (11, 55, 6)
+(3) (13, 39, 3)
+(4) (16, 42, 2)
+= 3
+~ In each set the second number is the first number multiplied by the third: 14 × 3 = 42 and 12 × 5 = 60. Checking the options: 13 × 3 = 39 fits, while 15 × 4 = 60 (not 45), 11 × 6 = 66 (not 55) and 16 × 2 = 32 (not 42) do not.
+
+Q 65 | rea | Series
+Refer to the following number series and answer the question that follows (all numbers are single-digit numbers only). Counting to be done from left to right only.
+(Left) 6 5 8 8 5 4 7 7 4 2 7 9 2 2 5 7 4 8 8 2 1 8 9 (Right)
+How many such odd digits are there, each of which is immediately preceded by an odd digit and also immediately followed by an odd digit?
+(1) One
+(2) Two
+(3) None
+(4) Three
+= 3
+~ We need three odd digits in a row. The odd digits in the series occur only singly or in pairs: 5, 5, 7 7, 7 9, 5 7, 1 and 9, each pair being bordered by even digits (4 7 7 4, 2 7 9 2, 2 5 7 4). No odd digit has odd digits on both sides, so the answer is none.
+
+Q 66 | rea | Series
+What should come in place of the question mark (?) in the given series, based on the English alphabetical order?
+RJV QIU PHT OGS ?
+(1) NHT
+(2) NFR
+(3) PFR
+(4) PHT
+= 2
+~ Each letter of a cluster moves one step back in the alphabet for the next cluster: R → Q → P → O → N, J → I → H → G → F and V → U → T → S → R. So the next cluster is NFR.
+
+Q 67 | rea | Syllogism & Statements
+Read the given statement(s) and conclusions carefully. Assuming that the information given in the statement(s) is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).
+Statements:
+Some hats are caps.
+No cap is a vest.
+Conclusions:
+(I) Some hats are vests.
+(II) Some caps are hats.
+(1) Both conclusions (I) and (II) follow.
+(2) Only conclusion (II) follows.
+(3) Neither conclusion (I) nor (II) follows.
+(4) Only conclusion (I) follows.
+= 2
+~ "Some hats are caps" can be reversed to "Some caps are hats", so conclusion (II) follows. The hats that are caps cannot be vests, but nothing is said about the other hats, so it is possible but not certain that some hats are vests; conclusion (I) does not follow. Hence only conclusion (II) follows.
+
+Q 68 | rea | Ranking & Arrangement
+Seven people, A, B, C, D, E, F and G, are sitting in a row, facing north. Only five people sit to the right of A. Only five people sit to the left of B. F is the immediate neighbour of G and E. C sits second to the left of E.
+How many people sit to the left of G?
+(1) Three
+(2) One
+(3) Four
+(4) Two
+= 3
+~ Number the seats 1 to 7 from the left. Five people to the right of A puts A in seat 2, and five people to the left of B puts B in seat 6. G, F, E must sit together with F in the middle, and the only three free seats in a row are 3, 4, 5. If G were in seat 3, E would be in seat 5 and C (second to the left of E) would need seat 3, which is taken; so E = 3, F = 4, G = 5, C = 1 and D = 7. The order is C A E F G B D, so four people (C, A, E, F) sit to the left of G.
+
+Q 69 | rea | Analogy & Classification
+Based on the English alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which letter-cluster DOES NOT belong to that group?
+(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)
+(1) UTR
+(2) IHF
+(3) ZZW
+(4) NMK
+= 3
+~ Use letter positions. UTR: U(21) −1 = T(20), T(20) −2 = R(18). IHF: I(9) −1 = H(8), H(8) −2 = F(6). NMK: N(14) −1 = M(13), M(13) −2 = K(11). ZZW: Z(26) to Z(26) is 0 and Z(26) to W(23) is −3, which breaks the −1, −2 pattern. So ZZW is the odd one out.
+
+Q 70 | rea | Ranking & Arrangement
+Madhur ranked 58th from the top and 6th from the bottom in his class. How many students are there in his class?
+(1) 61
+(2) 64
+(3) 63
+(4) 62
+= 3
+~ Total students = rank from top + rank from bottom − 1 = 58 + 6 − 1 = 63. We subtract 1 because Madhur is counted in both ranks (64 counts him twice).
+
+Q 71 | rea | Mathematical Operations
+If ‘A’ stands for ‘÷’, ‘B’ stands for ‘×’, ‘C’ stands for ‘+’ and ‘D’ stands for ‘−’, what will be come in place of question mark ‘?’ in the following equation?
+15 A 3 B 10 C 8 D 12 = ?
+(1) 46
+(2) 47
+(3) 44
+(4) 45
+= 1
+~ Replacing the letters gives 15 ÷ 3 × 10 + 8 − 12. Working left to right for ÷ and × first: 15 ÷ 3 = 5, then 5 × 10 = 50. Then 50 + 8 − 12 = 46.
+
+Q 72 | rea | Ranking & Arrangement
+Seven people B, C, D, I, J, K and L are sitting in a straight line facing north. Only two people sit to the right of C. Only two people sit between C and B. Only two people sit between D and K. Only three people sits between C and D. J sits to the immediate right of I. How many people sit(s) to the right of L?
+(1) Three
+(2) Four
+(3) One
+(4) Two
+= 2
+~ Number the seats 1 to 7 from the left. Two people to the right of C puts C in seat 5. Two people between C and B puts B in seat 2, and three between C and D puts D in seat 1. Two people between D and K puts K in seat 4. The free seats are 3, 6 and 7; I and J must be side by side with J on the right, so I = 6 and J = 7, leaving L in seat 3. The order is D B L K C I J, so four people (K, C, I, J) sit to the right of L.
+
+Q 73 | rea | Directions & Distance
+Ajay starts from Point A and drives 16 km towards the west. He then takes a right turn, drives 8 km, then turns left and drives 7 km. He then takes a left turn and drives 8 km. He takes a final right turn, drives 2 km, and stops at Point P. How far (shortest distance) and towards which direction should he drive in order to reach Point A again? (All turns are 90-degrees turns only, unless specified.)
+(1) 7 km towards north
+(2) 11 km towards west
+(3) 25 km towards east
+(4) 16 km towards east
+= 3
+~ Take A as (0, 0). 16 km west → (−16, 0); right turn from west is north, 8 km → (−16, 8); left turn is west, 7 km → (−23, 8); left turn is south, 8 km → (−23, 0); right turn from south is west, 2 km → (−25, 0) = P. The 8 km north and 8 km south cancel, so P is 16 + 7 + 2 = 25 km west of A, and he must drive 25 km towards the east.
+
+Q 74 | rea | Ranking & Arrangement
+Radhika ranked 21st from the top and 7th from the bottom in her class. How many students are there in the class?
+(1) 19
+(2) 20
+(3) 27
+(4) 28
+= 3
+~ Total students = rank from top + rank from bottom − 1 = 21 + 7 − 1 = 27. One is subtracted because Radhika is counted in both ranks (28 counts her twice).
+
+Q 75 | rea | Series
+Which of the following letter-number clusters will replace the question mark (?) in the given series to make it logically complete?
+HBE22 ICF29 JDG36 KEH43 ?
+(1) LFI51
+(2) LFJ50
+(3) LFI50
+(4) LFJ51
+= 3
+~ Each letter moves one step forward and the number increases by 7: first letters H, I, J, K → L; second letters B, C, D, E → F; third letters E, F, G, H → I; numbers 22, 29, 36, 43 → 50. So the next cluster is LFI50.
+
+Q 76 | rea | Series
+What should come in place of the question mark (?) in the given series?
+616 610 612 606 608 ?
+(1) 602
+(2) 601
+(3) 603
+(4) 604
+= 1
+~ The series alternately subtracts 6 and adds 2: 616 − 6 = 610, 610 + 2 = 612, 612 − 6 = 606, 606 + 2 = 608. The next step is −6, so the answer is 608 − 6 = 602.
+
+Q 77 | rea | Ranking & Arrangement
+O, P, Q, R, W, X and Y are sitting in a straight line, facing north. Only two people sit to the left of P. Only three people sit between P and W. Only one person sits between W and X. R sits to the immediate left of O. Y is not an immediate neighbour of W.
+How many people sit to the right of Q?
+(1) Three
+(2) Four
+(3) One
+(4) Two
+= 3
+~ Number the seats 1 to 7 from the left. Two people to the left of P puts P in seat 3; three people between P and W puts W in seat 7; one person between W and X puts X in seat 5. The free seats are 1, 2, 4 and 6, and R and O must sit side by side with R on the left, which is possible only in seats 1 and 2. Y cannot be next to W, so Y is not in seat 6; hence Y = 4 and Q = 6. The order is R O P Y X Q W, so only one person (W) sits to the right of Q.
+
+Q 78 | rea | Analogy & Classification
+RR 4 is related to UQ −14 in a certain way. In the same way, II 8 is related to LH −10. To which of the given options is MO 12 related, following the same logic?
+(1) PN −6
+(2) HY −5
+(3) GT −2
+(4) NH 9
+= 1
+~ First letter +3, second letter −1, number −18: R(18) + 3 = U(21), R(18) − 1 = Q(17), 4 − 18 = −14; I(9) + 3 = L(12), I(9) − 1 = H(8), 8 − 18 = −10. So for MO 12: M(13) + 3 = P(16), O(15) − 1 = N(14), 12 − 18 = −6, giving PN −6.
+
+Q 79 | rea | Syllogism & Statements
+Read the given statement(s) and conclusions carefully. Assuming that the information given in the statement(s) is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).
+Statements:
+Some pizzas are cupcakes.
+All buns are cupcakes.
+Conclusions:
+(I) Some pizzas are buns.
+(II) All cupcakes are buns.
+(1) Only conclusion (II) follows.
+(2) Both conclusions (I) and (II) follow.
+(3) Only conclusion (I) follows.
+(4) Neither conclusion (I) nor (II) follows.
+= 4
+~ Pizzas and buns are both linked only through cupcakes, and the pizzas that are cupcakes may lie outside the buns, so "Some pizzas are buns" is not certain; (I) does not follow. "All buns are cupcakes" cannot be reversed into "All cupcakes are buns" (it only gives "Some cupcakes are buns"), so (II) does not follow either. Hence neither conclusion follows.
+
+Q 80 | rea | Series
+Refer to the following number series and answer the question that follows. (All numbers are single-digit numbers only.) (Counting to be done from left to right only.)
+(Left) 2 8 2 3 2 7 9 3 5 4 6 8 9 4 4 7 8 7 5 4 3 5 5 6 2 9 8 (Right)
+How many such odd numbers are there, each of which is immediately preceded by an odd number and also immediately followed by an odd number?
+(1) 3
+(2) 5
+(3) 4
+(4) 6
+= 1
+~ We need an odd number with odd numbers on both sides. Scanning the series: 7 9 3 (9 qualifies), 9 3 5 (3 qualifies) and 3 5 5 (the first 5 qualifies). Other odd numbers have an even neighbour (for example 2 7 9, 8 7 5, 7 5 4, 4 3 5, 5 5 6). So there are 3 such numbers.
+
+Q 81 | ga | Polity & Governance
+On 24 May 2025, the order of which High Court was overturned by the Supreme Court and ruled that denying maternity leave for a third child violates a woman's constitutional right, reinforcing her dignity and reproductive freedom?
+(1) Allahabad High Court
+(2) Hyderabad High Court
+(3) Bombay High Court
+(4) Madras High Court
+= 4
+~ In K. Umadevi v. Government of Tamil Nadu (May 2025), the Supreme Court set aside an order of the Madras High Court that had upheld the denial of maternity leave to a Tamil Nadu government employee for her third child. The Court held that maternity benefits are part of a woman's reproductive rights, which are protected by Article 21 (right to life and personal liberty), so the leave could not be refused merely because it was for her third child.
+
+Q 82 | ga | Economy & Schemes
+Which of the following new digital facilities was launched in May 2025 by the Union Ministry of Social Justice and Empowerment during the ‘Ageing with Dignity’ event?
+(1) Senior Citizens Welfare Portal
+(2) Digital Life Certificate Platform
+(3) Employment Exchange Portal for Senior Citizens
+(4) One-Stop Senior Citizens Services Portal
+= 1
+~ On 2 May 2025, at the "Ageing with Dignity" event organised by the Ministry of Social Justice and Empowerment at the Rashtrapati Bhavan Cultural Centre, President Droupadi Murmu launched the Senior Citizens Welfare Portal. It is a single digital platform through which elderly people can reach government schemes, health-related benefits and welfare services, and five senior citizens' homes were also inaugurated virtually at the event. The portal was described as a "one-stop" platform, but its name is the Senior Citizens Welfare Portal, not option 4; the Digital Life Certificate (Jeevan Pramaan) is an older facility for pensioners, not a launch of this event.
+
+Q 83 | ga | Geography & Environment
+In 2025, which city in Maharashtra has achieved 100% segregation, collection and processing of sanitary and biomedical waste, handling an average of 300 to 350 kg of sanitary waste daily?
+(1) Nagpur
+(2) Karad
+(3) Nasik
+(4) Pune
+= 2
+~ Karad, a city in Satara district of Maharashtra, was reported in 2025 to have achieved 100% segregation, collection and treatment of sanitary and biomedical waste, handling about 300 to 350 kg of sanitary waste every day. Sanitation staff collect this waste separately from households, hospitals and clinics, and it is burnt in a high-temperature incinerator run by the Karad Hospital Association, whose emissions are monitored online by the State Pollution Control Board. Karad is often cited as a model for small cities in sanitary waste management.
+
+Q 84 | ga | Awards, Books & Persons
+Who authored the book 'Test Cricket: A History', released in 2025?
+(1) Tim Wigmore
+(2) Ramachandra Guha
+(3) Michael Atherton
+(4) Gideon Haigh
+= 1
+~ 'Test Cricket: A History' was written by cricket journalist Tim Wigmore and published in April 2025 (Quercus). It traces the story of Test cricket from the first Test in 1877 to the present, including interviews with players such as Sachin Tendulkar, Rahul Dravid and Pat Cummins, and it was named the Sunday Times Sports Book of the Year 2025. Ramachandra Guha and Gideon Haigh are also well-known cricket writers, but this book is not theirs.
+
+Q 85 | ga | Sports
+Which chess player, besides Gukesh, received the Arjuna Award in 2025?
+(1) Harika Dronavalli
+(2) Vantika Agrawal
+(3) Koneru Humpy
+(4) Pentala Harikrishna
+= 2
+~ At the National Sports Awards 2024, presented by President Droupadi Murmu on 17 January 2025, chess player Vantika Agrawal, a member of India's gold-winning women's team at the 2024 Chess Olympiad, received the Arjuna Award. She was the only chess player among the 32 Arjuna awardees. World champion D. Gukesh was honoured at the same ceremony, but with the Major Dhyan Chand Khel Ratna, the highest sports award, not the Arjuna Award.
+
+Q 86 | ga | Economy & Schemes
+Which of the following documentaries did the Reserve Bank of India (RBI) launch to explain its functions to the public in June 2025?
+(1) RBI Unlocked: Beyond the Rupee
+(2) Financial Literacy A2Z
+(3) My RBI Story
+(4) RBI: Money Simplified
+= 1
+~ "RBI Unlocked: Beyond the Rupee" is a five-part documentary series on the Reserve Bank of India that began streaming on JioHotstar in early June 2025, marking 90 years of the RBI (set up in 1935). Its episodes of about 25-30 minutes explain the RBI's work to ordinary viewers, such as monetary policy, currency management, supervision of banks, digital payments, financial stability and financial inclusion.
+
+Q 87 | ga | Science & Technology
+Which Indian Ministry launched the Bharat Forecasting System (BFS) on 26 May 2025 to provide weather predictions with a 6-km resolution?
+(1) Ministry of Environment, Forest and Climate Change
+(2) Ministry of Agriculture and Farmers Welfare
+(3) Ministry of Earth Sciences
+(4) Ministry of Defence
+= 3
+~ The Bharat Forecasting System was launched on 26 May 2025 by Dr Jitendra Singh, Union Minister of Earth Sciences. It was developed by the Indian Institute of Tropical Meteorology (IITM), Pune, an institute of the Ministry of Earth Sciences, and gives weather forecasts at about 6 km resolution, so that small-scale weather such as local heavy rain can be predicted more accurately. The India Meteorological Department (IMD) also works under the same ministry.
+
+Q 88 | ga | Science & Technology
+Which startup was selected in April 2025 to build India’s first sovereign Indic LLM under the IndiaAI Mission?
+(1) Wadhwani AI
+(2) People+AI
+(3) Sarvam AI
+(4) AI4 Bharat
+= 3
+~ In April 2025, the government selected Bengaluru-based startup Sarvam AI under the IndiaAI Mission to build India's first indigenous foundation large language model (LLM), with reasoning ability, voice support and fluency in Indian languages, to be built and run in India on dedicated compute resources. AI4Bharat, a research lab at IIT Madras, works with Sarvam on Indian-language AI, but it was not the startup selected.
+
+Q 89 | ga | Geography & Environment
+As reported in May 2025, the study by Climate Trends, a Delhi-based research consultancy, examined NASA satellite data of the Himalayan glaciers from 2000-2023 to evaluate the impact of which of the following on Himalayan snow?
+(1) Ozone
+(2) Sulfate Aerosols
+(3) Black Carbon
+(4) Mineral Dust Particles
+= 3
+~ The Climate Trends study used NASA satellite data for 2000-2023 to study black carbon (soot) over the Himalayas. Black carbon settling on snow makes it darker, so the snow reflects less sunlight (lower albedo), absorbs more heat and melts faster; the study found the average snow surface temperature rose from about −11.27 °C in 2000-2009 to −7.13 °C in 2020-2023. Black carbon comes mainly from burning biomass and fossil fuels, and the Indo-Gangetic Plain was identified as a major source region.
+
+Q 90 | ga | Polity & Governance
+The National Conference on Good Governance, organised by the Department of Administrative Reforms and Public Grievances (DARPG) was held in which of the following places in January 2025?
+(1) Gandhinagar
+(2) Varanasi
+(3) Bhopal
+(4) Jaipur
+= 1
+~ The two-day National Conference on Good Governance began on 30 January 2025 in Gandhinagar, Gujarat. It was organised by DARPG, which works under the Ministry of Personnel, Public Grievances and Pensions, together with the Government of Gujarat, and was inaugurated by Union Minister Dr Jitendra Singh, who praised the "Gujarat governance model". Such conferences let states share good governance practices that others can copy.
+
+Q 91 | ga | Current Affairs
+What was the theme of the 78th World Health Assembly, 2025, held in Geneva in May 2025?
+(1) Health for All: Building Resilient Systems
+(2) Advancing Equity in Global Health
+(3) One World for Health
+(4) Universal Health Coverage: A Global Need
+= 3
+~ The 78th World Health Assembly (WHA78) met in Geneva from 19 to 27 May 2025 with the theme "One World for Health". The World Health Assembly is the top decision-making body of the World Health Organization (WHO), and at this session member states adopted the WHO Pandemic Agreement on 20 May 2025.
+
+Q 92 | ga | Science & Technology
+As announced by the Government of India, as on 7 July 2025, how many biotech startups does India have, compared to just 50 a decade ago?
+(1) Nearly 9000
+(2) 8050
+(3) Nearly 11,000
+(4) 7000
+= 3
+~ Speaking at the World Bioproduct Day (7 July) celebration in New Delhi in July 2025, Dr Jitendra Singh, Union Minister of State (Independent Charge) for Science and Technology, said India now has nearly 11,000 biotech startups, compared with about 50 a decade earlier. The celebration's theme was "The BioE3 Way", after the government's BioE3 (Biotechnology for Economy, Environment and Employment) policy for promoting the bio-economy.
+
+Q 93 | ga | Awards, Books & Persons
+Which of the following awards recognises children’s book writers from 22 languages?
+(1) Sahitya Akademi Yuva Puraskar
+(2) Sahitya Ratna
+(3) Padma Shri
+(4) Bal Sahitya Puraskar
+= 1
+~ The Sahitya Akademi gives two awards each year that are announced together: the Yuva Puraskar for young writers aged 35 or below and the Bal Sahitya Puraskar for children's literature, both covering the 22 Eighth Schedule languages plus English and Rajasthani. On 18 June 2025 it announced the Yuva Puraskar for 23 young writers and the Bal Sahitya Puraskar for 24 children's writers. RRB's key chooses the Sahitya Akademi Yuva Puraskar, probably because the two awards were announced together; however, the award meant specifically for children's book writers is the Bal Sahitya Puraskar (option 4). Sahitya Ratna and Padma Shri are not language-wise literary awards. (RRB key; some sources differ.)
+
+Q 94 | ga | Polity & Governance
+On 16 May 2025, the Supreme Court invalidated the Indian Government's orders passed in which years, allowing ex-post facto environmental clearances?
+(1) 2009 and 2015
+(2) 2012 and 2014
+(3) 2017 and 2021
+(4) 2006 and 2011
+= 3
+~ In Vanashakti v. Union of India (16 May 2025), a bench of Justices Abhay S. Oka and Ujjal Bhuyan struck down the Environment Ministry's 2017 notification and 2021 Office Memorandum, which let projects that had started without the prior environmental clearance required by the EIA Notification, 2006 obtain clearance afterwards (ex post facto). The Court also barred the Centre from issuing such orders in future, though clearances already granted were left untouched. Later, on 18 November 2025, a three-judge bench led by CJI B.R. Gavai recalled this ruling by a 2:1 majority (Justice Bhuyan dissenting) and sent the issue for fresh hearing.
+
+Q 95 | ga | Current Affairs
+Where did the chemical factory blast occur on 30 June 2025?
+(1) Nizamabad
+(2) Vijayawada
+(3) Warangal
+(4) Sangareddy
+= 4
+~ On 30 June 2025, a powerful explosion followed by a fire tore through the Sigachi Industries pharmaceutical-chemical plant in the Pashamylaram industrial area of Sangareddy district, Telangana, on the outskirts of Hyderabad. The blast brought down a factory building and killed more than 40 workers, injuring many others; operations at the plant were halted for 90 days.
+
+Q 96 | ga | Economy & Schemes
+Which state became the third Indian state to be recognised as fully functionally literate, under the ULLAS – New India Literacy Programme, in June 2025?
+(1) Karnataka
+(2) Tripura
+(3) Assam
+(4) Telangana
+= 2
+~ In June 2025 Tripura was declared fully functionally literate under ULLAS, becoming the third state to reach this level after Mizoram and Goa. ULLAS (Understanding of Lifelong Learning for All in Society) – Nav Bharat Saaksharta Karyakram is the Centre's adult literacy programme for people aged 15 and above who missed schooling.
+
+Q 97 | ga | Economy & Schemes
+Which of the following shifted its Andhra Pradesh regional office to Vijayawada, inaugurating the new premises on 16 June 2025?
+(1) Bank of Baroda
+(2) Securities and Exchange Board of India
+(3) Reserve Bank of India
+(4) Life Insurance Corporation of India
+= 3
+~ The Reserve Bank of India shifted its Andhra Pradesh Regional Office to Vijayawada, and the new office premises there were inaugurated on 16 June 2025. An RBI regional office carries out the central bank's work in a state, such as overseeing banks, handling public grievances and promoting financial inclusion.
+
+Q 98 | ga | Current Affairs
+India set a new Guinness World Record in 2025 for the largest human formation of which of the following symbols?
+(1) Ashoka Chakra
+(2) Olympic rings
+(3) Heart shape
+(4) Peace symbol
+= 1
+~ On 24 January 2025, on the eve of Republic Day, more than 5,000 students of Sri Manakula Vinayagar Engineering College in Puducherry formed a giant human image of the Ashoka Chakra, which was certified as the largest human Ashoka Chakra. The Ashoka Chakra is the navy-blue wheel with 24 spokes at the centre of the national flag, taken from the Lion Capital of Ashoka at Sarnath.
+
+Q 99 | ga | Sports
+India won the ICC Women’s U19 T20 World Cup 2025 by defeating which country in the final?
+(1) Sri Lanka
+(2) Australia
+(3) South Africa
+(4) England
+= 3
+~ India beat South Africa by 9 wickets in the final at Bayuemas Oval, Kuala Lumpur (Malaysia), on 2 February 2025 to retain the title they had won in the first edition in 2023. The team was captained by Niki Prasad, and Gongadi Trisha was Player of the Match in the final and Player of the Tournament with 309 runs.
+
+Q 100 | ga | Sports
+Which sport had the most Arjuna Award recipients in January 2025?
+(1) Para-Athletics
+(2) Shooting
+(3) Hockey
+(4) Athletics
+= 1
+~ Of the 32 Arjuna Awards presented on 17 January 2025 (National Sports Awards 2024), a record 17 went to para-athletes, and para-athletics alone had 9 awardees, including Preeti Pal, Deepthi Jeevanji, Navdeep Singh and Sachin Khilari. Hockey had 5 awardees, while athletics and shooting had 2 each (para-shooting had 2 more), so para-athletics had the most.

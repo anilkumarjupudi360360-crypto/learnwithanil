@@ -693,6 +693,64 @@ NEW['rpf-constable-notification-2026.html'] = dict(
       ('Is there negative marking in RPF Constable?', 'Yes. In the RRB CBT one-third of a mark was cut for each wrong answer.'),
       ('Where can I practise RPF Constable previous papers?', 'On this site: whole shift papers of the RPF Constable CBT of March 2025 in English and Hindi, with RRB\'s answer key, explanations and a 90-minute timer.'),
     ])
+# ---------------------------------------------------------------- RRB Group D (Anil, 15 Nov 2026: "RRB Group D...add pyqs and other details like other exams").
+# CEN 09/2025 result came on 12 Nov 2026, so the page leads with the result (what students search this week), then the notification facts.
+# Sources: news/coaching sites quoting the RRB notices (RRB websites were not readable from here); two sources for every date and number used.
+NEW['rrb-group-d-result-2026.html'] = dict(
+    exam='rrb-group-d', board='RRB', site='rrb.indianrailways.gov.in and your regional RRB website', crumb='RRB Group D 2026: Result, Notification',
+    faq_asof='15 November 2026',
+    title='RRB Group D Result 2026 Out (12 November) – CEN 09/2025 Scorecard from 16 November, PET, Cut Off, 22,195 Posts, Pattern & Previous Papers | Learn with Anil',
+    desc='RRB Group D 2026 (CEN 09/2025, 22,195 Level-1 posts): CBT held 3–25 August 2026, answer key 7 September, result declared 12 November 2026 zone-wise '
+         'with PET shortlists and cut-offs, scorecards from 16 November. Eligibility, fee, pattern, PET standards, and RRB Group D previous papers with answers.',
+    h1='RRB Group D 2026: result out, PET next',
+    lede='The Railway Recruitment Boards declared the RRB Group D (CEN 09/2025) CBT result on 12 November 2026: each RRB published a PDF of roll numbers '
+         'shortlisted for the Physical Efficiency Test (PET) with zone-wise and category-wise cut-off marks. Scorecards open from 16 November 2026. '
+         'Below: where things stand as of 15 November 2026, the notification facts, the exam pattern, PET standards and the previous papers to practise.',
+    hi='आरआरबी ग्रुप डी 2026 (CEN 09/2025): सीबीटी का परिणाम 12 नवंबर 2026 को घोषित — पीईटी के लिए चयनित रोल नंबर और कट-ऑफ क्षेत्रवार; स्कोरकार्ड 16 नवंबर से।',
+    pdf='https://rrb.indianrailways.gov.in/', pdfname='Railway Recruitment Boards (CEN 09/2025 notices on each regional RRB website, e.g. rrbsecunderabad.gov.in)',
+    more_src=[('https://testbook.com/news/railway-rrb-group-d-result-2026-date/', 'Testbook, 14 November 2026: result 12 November, scorecards 16 November'),
+              ('https://www.oliveboard.in/rrb-group-d-result/', 'Oliveboard: result 12 November 2026 for 22,195 vacancies'),
+              ('https://prepp.in/rrb-group-d-exam/results', 'Prepp, 14 November 2026: zone-wise PET shortlists'),
+              ('https://www.freejobalert.com/articles/rrb-group-d-cen-09-2025-result-2026-3068505', 'FreeJobAlert: CBT result 12 November 2026'),
+              ('https://www.pw.live/news/rrb-group-d-exam-date-2026-cen-09-2025-cbt-1-schedule-revised', 'PW: revised CBT schedule, 3–25 August 2026'),
+              ('https://news.careers360.com/rrb-group-d-answer-key-2026-out-cbt-objections-last-date-september-17-response-sheet-pdf-link/amp', 'Careers360: answer key and objections')],
+    sections=[
+      ('Where RRB Group D 2026 stands', 'table', [
+        ('Notification', 'CEN 09/2025, detailed notice 30 January 2026 (short notice December 2025)'),
+        ('Vacancies', '22,195 Level-1 posts across the railway zones'),
+        ('Applications', '31 January to 9 March 2026 (extended from 2 March); closed'),
+        ('CBT', '3–6, 9–14, 17–21 and 25 August 2026 (over)'),
+        ('Answer key', 'Provisional key with response sheets released 7 September 2026; objection window closed in mid-September'),
+        ('Result', 'Declared 12 November 2026: PET shortlist and cut-offs, zone-wise, on each RRB website'),
+        ('Scorecard', 'From 16 November 2026 (5 pm) on the RRB websites, with your registration number and date of birth'),
+        ('Next stage', 'Physical Efficiency Test (PET), conducted zone-wise by the RRCs; dates are announced by each RRC'),
+        ('RRB Secunderabad (Telangana, Andhra Pradesh)', '1,705 candidates shortlisted for PET against 1,012 vacancies (as reported by Testbook and qmaths)')]),
+      ('Who could apply', 'list', [
+        'Class 10 pass, or ITI, or the National Apprenticeship Certificate (NAC) granted by NCVT (post-wise details in the notification).',
+        'Age 18 to 33 years on 1 January 2026; relaxation OBC-NCL 3 years, SC/ST 5 years, more for PwBD and ex-servicemen.',
+        'Fee ₹500 (₹400 refunded after the candidate takes the CBT); ₹250 for SC, ST, ex-servicemen, PwBD, women, transgender, minorities and Economically Backward Class (refunded in full after the CBT).',
+        'Pay: Level 1 of the 7th CPC Pay Matrix, starting basic pay ₹18,000 a month plus allowances.']),
+      ('Exam pattern (CBT)', 'table+', (['Section', 'Questions'], [
+        ('General Science', '25'), ('Mathematics', '25'), ('General Intelligence & Reasoning', '30'), ('General Awareness & Current Affairs', '20'),
+        ('Total', '100 questions, 100 marks, 90 minutes (120 for eligible PwBD with a scribe); one-third mark cut for a wrong answer')])),
+      ('Physical Efficiency Test (PET)', 'table+', (['', 'Men', 'Women'], [
+        ('Lift and carry', '35 kg for 100 metres in 2 minutes, in one chance, without putting it down', '20 kg for 100 metres in 2 minutes, in one chance, without putting it down'),
+        ('Run', '1,000 metres in 4 minutes 15 seconds, in one chance', '1,000 metres in 5 minutes 40 seconds, in one chance')])),
+      ('The previous cycle (CEN 08/2024)', 'list', [
+        '32,438 Level-1 posts; CBT from 27 November 2025, with the last shifts in January and February 2026.',
+        'Result declared 1 July 2026; PET in July and August 2026.',
+        'The papers on this website are from this cycle: RRB\'s own question papers with its answer key, shift by shift, in English and Hindi.']),
+    ],
+    faqs=[
+      ('Is the RRB Group D result 2026 out?', 'Yes. The RRBs declared the CEN 09/2025 CBT result on 12 November 2026 as zone-wise PDFs of roll numbers shortlisted for the PET, with category-wise cut-off marks. Check your own RRB\'s website.'),
+      ('When will the RRB Group D scorecard 2026 come?', 'From 16 November 2026 (5 pm) on the RRB websites. Log in with your registration number and date of birth to see your raw and normalised marks.'),
+      ('When is the RRB Group D PET 2026?', 'Each zone\'s Railway Recruitment Cell (RRC) announces its own PET dates and issues PET admit cards. As of 15 November 2026 the dates were not out for all zones.'),
+      ('How many candidates qualified for PET in RRB Secunderabad?', '1,705 roll numbers were shortlisted for PET against 1,012 vacancies of RRB Secunderabad (as reported by Testbook and qmaths). Check the official PDF on rrbsecunderabad.gov.in.'),
+      ('What is the RRB Group D cut off 2026?', 'Cut-offs are given zone-wise and category-wise in normalised marks in each RRB\'s result PDF. They differ from zone to zone, so compare your normalised score with your own RRB\'s cut-off.'),
+      ('How many posts are there in RRB Group D 2026?', '22,195 Level-1 posts (CEN 09/2025): Track Maintainer Grade-IV, Pointsman-B, Assistants in various departments and other posts.'),
+      ('Is there negative marking in RRB Group D?', 'Yes. One-third of a mark is cut for each wrong answer. Each question carries 1 mark.'),
+      ('When will the next RRB Group D notification come?', 'Not announced as of 15 November 2026. The last two notices were CEN 08/2024 (32,438 posts) and CEN 09/2025 (22,195 posts).'),
+    ])
 
 
 def apply(NOTIFS):

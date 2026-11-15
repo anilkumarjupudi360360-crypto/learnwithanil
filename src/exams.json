@@ -742,7 +742,8 @@
    "cat": "rail",
    "b": "RRB",
    "t": "Group D",
-   "n": "Level 1 posts"
+   "n": "Level-1 posts (Track Maintainer, Pointsman, Assistant)",
+   "live": "rrb-group-d/"
   },
   {
    "id": "rrb-alp",
