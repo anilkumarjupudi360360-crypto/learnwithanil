@@ -25,6 +25,7 @@ SLUGS = {
     'eohp-en': 'hindu-philosophy-temple-system-appsc-eo-grade-3-book',
     'eohp-te': 'hindu-philosophy-temple-system-appsc-eo-grade-3-book-telugu',
     'kaeco-en': 'karnataka-economy-panchayat-raj-kea-fda-sda-book',
+    'kahis-en': 'karnataka-history-culture-geography-kea-fda-sda-book',
 }
 CSS = ('<style>.bk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:14px 0 26px}'
        '.bk{border:1px solid #d8dee9;border-radius:12px;padding:12px;background:#fff;display:flex;flex-direction:column;gap:6px}'

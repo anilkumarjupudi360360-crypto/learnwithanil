@@ -492,5 +492,53 @@
    "karnataka-fda-sda"
   ],
   "free": "/LearnWithAnil-Karnataka-Economy-KEA-FDA-SDA-Free-Sample.pdf"
+ },
+ {
+  "id": "kahis-en",
+  "lang": "en",
+  "vol": null,
+  "series": "KEA FDA & SDA · Paper 1 General Knowledge",
+  "subject": "Karnataka History",
+  "title": "Karnataka History, Culture & Geography for KEA FDA & SDA",
+  "title_en": "Karnataka History, Culture & Geography for KEA FDA & SDA",
+  "subtitle": "The Karnataka section of the General Knowledge paper, written from KEA's own 2026 questions: dynasties and monuments, the Wodeyars and their Diwans, the freedom struggle and unification, literature and culture, and Karnataka's geography and wildlife, with every KEA 2026 question on them and KEA's official answers",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "Karnataka History, Culture & Geography for KEA FDA & SDA, 2026-27 (English Medium)",
+  "pages": 97,
+  "chapters": [
+   "Prehistory, the Mauryas and the Satavahanas",
+   "The Kadambas and the Gangas",
+   "The Chalukyas of Badami",
+   "The Rashtrakutas and the Chalukyas of Kalyana",
+   "Hoysalas, Seunas and the Vachana movement",
+   "The Vijayanagara empire",
+   "Bahmanis, Adil Shahis, Keladi and the early Wodeyars",
+   "Haidar Ali, Tipu Sultan and the Anglo-Mysore wars",
+   "Early resistance: Dhondia Wagh, Kittur, Rayanna, Nagar",
+   "Modern Mysore: the Wodeyars and their Diwans, 1799–1947",
+   "The freedom struggle in Karnataka",
+   "Unification and Karnataka since 1956",
+   "Literature, art and culture of Karnataka",
+   "Physical geography of Karnataka",
+   "Resources, wildlife and administration"
+  ],
+  "pyqs": 45,
+  "price": 45,
+  "syllabus": "KEA FDA & SDA · Paper 1 General Knowledge (Karnataka) · also KPSC Group-C, VAO, PDO",
+  "badge": "KEA FDA & SDA",
+  "subject_label": "Karnataka History, Culture & Geography",
+  "chapters_label": "15 chapters · all 45 KEA 2026 questions on these topics with official answers · timelines, Diwan tables and memes · 180 practice MCQs",
+  "product_en": "Karnataka History, Culture & Geography for KEA FDA & SDA, 2026-27 (English Medium)",
+  "cover": "notes-kahis-en-cover.jpg",
+  "samples": [
+   "notes-kahis-en-p1.jpg",
+   "notes-kahis-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "karnataka-fda-sda"
+  ],
+  "free": "/LearnWithAnil-Karnataka-History-Culture-Geography-KEA-FDA-SDA-Free-Sample.pdf"
  }
 ]
