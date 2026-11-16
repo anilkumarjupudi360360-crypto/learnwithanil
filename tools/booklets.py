@@ -30,7 +30,8 @@ LOGO = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(ROOT, 'src'
 BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC': 'ANDHRA PRADESH PUBLIC SERVICE COMMISSION',
               'SLPRB': 'STATE LEVEL POLICE RECRUITMENT BOARD, ANDHRA PRADESH', 'RRB': 'RAILWAY RECRUITMENT BOARDS · RAILWAY PROTECTION FORCE',
               'AP DSC': 'COMMISSIONERATE OF SCHOOL EDUCATION, GOVERNMENT OF ANDHRA PRADESH', 'TNPSC': 'TAMIL NADU PUBLIC SERVICE COMMISSION',
-              'KEA': 'KARNATAKA EXAMINATIONS AUTHORITY', 'MPSC': 'MAHARASHTRA PUBLIC SERVICE COMMISSION', 'GSSSB': 'GUJARAT SUBORDINATE SERVICE SELECTION BOARD'}
+              'KEA': 'KARNATAKA EXAMINATIONS AUTHORITY', 'MPSC': 'MAHARASHTRA PUBLIC SERVICE COMMISSION', 'GSSSB': 'GUJARAT SUBORDINATE SERVICE SELECTION BOARD',
+              'UPSSSC': 'UTTAR PRADESH SUBORDINATE SERVICES SELECTION COMMISSION', 'UPPSC': 'UTTAR PRADESH PUBLIC SERVICE COMMISSION'}
 BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
 SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
@@ -41,7 +42,8 @@ SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable
 # exam -> paper -> (question booklet, official key) under BOOKS_PRIV/originals/<exam>/ (never committed); brand_original() adds a Learn with Anil
 # footer strip under every page (the page itself is untouched) and appends the official answer key pages.
 ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('g25', 'g24', 'g23')},
-             'gsssb-cce': {pid: (f'{pid}-qp.pdf',) for pid in ('c01', 'c02', 'c71')}}   # GSSSB's own paper preview already marks the final answers
+             'gsssb-cce': {pid: (f'{pid}-qp.pdf',) for pid in ('c01', 'c02', 'c71')},
+             'uppsc-ro-aro': {'r25': ('r25-qp.pdf',)}}   # UPPSC's own booklet with its key boxed; the 2021 papers are candidates' scans, so typeset   # GSSSB's own paper preview already marks the final answers
 # released mocks with a booklet: exam -> [(mock id, pack, mock name)]; their keys are in BOOKS_PRIV/mock-keys.json
 MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-constable': [('mk-pc-1', 'Mission Khaki – Constable', 'Mock 1')]}
 
@@ -64,6 +66,8 @@ def time_marks(conf, p):
     if conf['id'] == 'tnpsc-group-4': return '3 Hours', 300   # TNPSC Group 4: 200 questions (Part A 150 marks, Parts B-C 150 marks)
     if conf['id'] == 'karnataka-fda-sda': return '2 Hours', 100   # KEA FDA/SDA: each paper 100 questions, 100 marks, 2 hours
     if conf['id'] == 'mpsc-group-c': return '1 Hour', 100   # MPSC Group-C prelims: 100 questions, 100 marks, 1 hour
+    if conf['id'] == 'upsssc-inter-level': return '2 Hours', 100   # UPSSSC Mains: 100 questions, 100 marks, 2 hours
+    if conf['id'] == 'uppsc-ro-aro': return {'r25': ('3 Hours', 200), 'g21': ('2 Hours', 140), 'h21': ('1 Hour', 60)}[p['id']]   # RO/ARO prelims
     return (f'{p["mins"]} Minutes' if p.get('mins') else ''), ''
 
 CSS = """
@@ -161,7 +165,7 @@ def paper_doc(conf, p, qs, mock=None):
               if m else '<div class="s lwa">LEARN<br>WITH<br>ANIL</div>')
     sub = re.sub(r'\s*·\s*booklet [A-Z]\b.*$', '', p.get('notif', ''))
     key = p.get('key') or ("APPSC's final key" if conf['board'] == 'APPSC' else conf.get('keyname') or 'the official key')
-    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC|GSSSB)\s+', '', p['title'])
+    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC|GSSSB|UPSSSC|UPPSC)\s+', '', p['title'])
     l2name = l2['name'] if not p.get('en_only') and any(q.get('qt') for q in qs) else ''
     when = f' · Held on {esc(p["held"])}' if p.get('held') else ''
     if mock: board = 'LEARN WITH ANIL · ' + mock.upper() + ' TEST SERIES'
@@ -230,7 +234,7 @@ def brand_original(conf, p, srcs, out):
     buf = io.BytesIO(); c = canvas.Canvas(buf, invariant=1)
     logo = ImageReader(os.path.join(ROOT, 'src', 'static', 'icon-192.png'))
     label = (f'{p.get("kwname") or p["title"]} · {conf["board"]}\'s original question booklet and final answer key' if len(srcs) > 1 else
-             f'{p.get("kwname") or p["title"]} · {conf["board"]}\'s original question paper, final answers marked')   # GSSSB: the paper preview ticks the answers
+             f'{p.get("kwname") or p["title"]} · {conf["board"]}\'s original question paper, ' + ('answer key marked' if conf['id'] == 'uppsc-ro-aro' else 'final answers marked'))   # GSSSB: the paper preview ticks the answers
     for i, (w, h) in enumerate(sizes):
         c.setPageSize((w, S))
         c.setStrokeColorRGB(0.09, 0.27, 0.78); c.setLineWidth(0.8); c.line(18, S - 1, w - 18, S - 1)

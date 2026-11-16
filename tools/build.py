@@ -823,6 +823,67 @@ def FAQ_USI(total, npapers):
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
+# ---------- UPPSC RO/ARO (Samiksha Adhikari / Sahayak Samiksha Adhikari) Prelims ----------
+# Anil, 15 Nov 2026: "UP: ... UPPSC RO/ARO (26 Nov)"; 16 Nov 2026: "do 3 exams at a time". Advt. A-4/E-1/2026 (26 Oct 2026; 501 posts; apply till 26 Nov).
+# Papers: the 27 July 2025 prelims (Advt. A-7/E-1/2023) as UPPSC published it for its answer key (booklet UNHSIV-01, correct options boxed; one paper of
+# 200 questions: GS 140 + General Hindi 60, 3 hours), and the 5 December 2021 prelims (GS-61 Series A and GH-62 Series B, candidates' copies) with
+# UPPSC's key sheets of 8 December 2021. UPPSC has not put final keys online. Work files: /home/claude/up/ro.
+URA_BLURB = ('Prelims (objective, OMR): General Studies 140 questions and General Hindi 60, 200 marks; four options, one third of a mark deducted for '
+             'each wrong answer. General Studies in Hindi and English, General Hindi in Hindi.')
+URA_PAPERS = [
+  dict(id='r25', file='uppsc-ro-aro-prelims-2025.txt', year=2025, stage='Prelims', short='Prelims 2025 (GS + Hindi)',
+       title='UPPSC RO/ARO Prelims 2025: Question Paper (General Studies & General Hindi)', notif='Advt. No. A-7/E-1/2023 · booklet UNHSIV-01',
+       held='27 July 2025', key="UPPSC's answer key (marked on its booklet, 30 July 2025)", fmt='mcq', slug='uppsc-ro-aro-prelims-2025-question-paper-with-answers',
+       kwname='UPPSC RO ARO Prelims 2025', hi_paper='प्रारंभिक परीक्षा 2025', blurb=URA_BLURB, mins=180),
+  dict(id='g21', file='uppsc-ro-aro-prelims-2021-general-studies.txt', year=2021, stage='Prelims', short='Prelims 2021 · General Studies',
+       title='UPPSC RO/ARO Prelims 2021: General Studies Question Paper', notif='Exam of 5 December 2021 · GS-61, Series A',
+       held='5 December 2021', key="UPPSC's key sheet of 8 December 2021", fmt='mcq', slug='uppsc-ro-aro-prelims-2021-general-studies-question-paper-with-answers',
+       kwname='UPPSC RO ARO Prelims 2021 General Studies', hi_paper='प्रारंभिक परीक्षा 2021 सामान्य अध्ययन', blurb=URA_BLURB, mins=120),
+  dict(id='h21', file='uppsc-ro-aro-prelims-2021-general-hindi.txt', year=2021, stage='Prelims', short='Prelims 2021 · General Hindi',
+       title='UPPSC RO/ARO Prelims 2021: General Hindi Question Paper', notif='Exam of 5 December 2021 · GH-62, Series B',
+       held='5 December 2021', key="UPPSC's key sheet of 8 December 2021", fmt='mcq', slug='uppsc-ro-aro-prelims-2021-general-hindi-question-paper-with-answers',
+       kwname='UPPSC RO ARO Prelims 2021 General Hindi', hi_paper='प्रारंभिक परीक्षा 2021 सामान्य हिंदी', blurb=URA_BLURB, mins=60),
+]
+URA_SUBJECTS = [
+  ('sci', 'General Science', 'general-science', ['Physics', 'Chemistry', 'Biology']),
+  ('his', 'History & National Movement', 'history', ['Ancient India', 'Medieval India', 'Modern India & National Movement']),
+  ('pol', 'Indian Polity', 'polity', ['Constitution & Polity']),
+  ('eco', 'Economy, Agriculture & Trade', 'economy', ['Indian Economy', 'Agriculture, Commerce & Trade']),
+  ('geo', 'Geography & Ecology', 'geography', ['World Geography', 'Indian Geography', 'Ecology, Population & Urbanisation']),
+  ('cur', 'Current Affairs', 'current-affairs', ['National', 'International', 'Sports, Awards & Misc.']),
+  ('ment', 'General Intelligence', 'general-intelligence', ['Reasoning', 'Mathematics']),
+  ('upgk', 'Uttar Pradesh GK', 'up-gk', ['History & Culture of UP', 'Geography, Economy & Schemes of UP']),
+  ('hin', 'General Hindi', 'general-hindi', ['Opposites', 'Synonyms', 'One-word Substitution', 'Sentence Correction', 'Word Usage & Grammar']),
+]
+URA_SUBJ_HI = {'sci': 'सामान्य विज्ञान', 'his': 'इतिहास एवं राष्ट्रीय आंदोलन', 'pol': 'भारतीय राजव्यवस्था', 'eco': 'अर्थव्यवस्था, कृषि एवं व्यापार',
+               'geo': 'भूगोल एवं पारिस्थितिकी', 'cur': 'समसामयिकी', 'ment': 'सामान्य बुद्धिमत्ता', 'upgk': 'उत्तर प्रदेश सामान्य ज्ञान', 'hin': 'सामान्य हिंदी'}
+
+
+def FAQ_URA(total, npapers):
+    return [
+      ('Where can I get UPPSC RO/ARO previous year question papers with answers?',
+       f'This page has {total} questions from {npapers} UPPSC RO/ARO Prelims papers: the whole 200-question paper of 27 July 2025 (General Studies and '
+       'General Hindi) and the General Studies and General Hindi papers of 5 December 2021, each with UPPSC\'s answer key and an explanation in Hindi and English.'),
+      ('Are the answers official?',
+       'Yes. The 2025 answers are the options UPPSC boxed in the booklet it published as its answer key (30 July 2025), and the 2021 answers are from UPPSC\'s '
+       'key sheets of 8 December 2021. These keys were published for objections; UPPSC has not put final keys online. Where an answer looks doubtful, the '
+       'explanation says so. A question with no correct option is left out. The explanations are written by Learn with Anil.'),
+      ('What is the UPPSC RO/ARO 2026 prelims exam pattern?',
+       'One objective paper of 200 questions for 200 marks in 3 hours: General Studies 140 questions and General Hindi 60, with four options and one third of '
+       'a mark cut for each wrong answer (Advt. A-4/E-1/2026). Fifteen times the posts are called to the Mains, and the final selection is on the Mains marks.'),
+      ('Is the UPPSC RO/ARO question paper in Hindi?',
+       'Yes. General Studies is printed in Hindi and English and General Hindi in Hindi. Tap हिन्दी at the top of the page to read the questions and explanations in Hindi.'),
+      ('What is the last date to apply for UPPSC RO/ARO 2026?',
+       'Online applications on uppsc.up.nic.in (with an OTR number) are open from 26 October to 26 November 2026, the last date for the fee as well; corrections '
+       'are allowed till 3 December 2026. Advt. A-4/E-1/2026 has 501 posts.'),
+      ('Is there a UPPSC RO/ARO mock test?',
+       'Yes. Every paper here can be taken as a full mock test with the real time limit and negative marking, and the sectional tests take all the previous '
+       'questions of one subject, such as General Hindi or UP GK. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
 # ---------- RRB Group D (Level-1 posts, CEN 08/2024): RRB's own question papers with the answer key (Anil, 15 Nov 2026: "RRB Group D...add pyqs and other
 # details like other exams"). Source: RRB's "question paper with answer key" for each shift (options in green with a tick = RRB's answer), in English and
 # Hindi, as hosted by AglaSem; the Hindi sheets are another candidate's copy, so the Hindi was matched question by question and put in English option order.
@@ -2448,6 +2509,24 @@ def exam_confs():
            papers_note=("UPSSSC does not publish its question booklets; each paper here was typed from a candidate's copy of the booklet and every answer was matched to "
                         "UPSSSC's revised answer key (master set), which gives each question with its answer. Every question is in Hindi and English, with five options "
                         "as printed. Questions for which UPSSSC gave full marks to everyone are left out.")),
+      dict(id='uppsc-ro-aro', dir='uppsc-ro-aro', src='uppsc-ro-aro', key='up-roaro', name='UPPSC RO/ARO', short='UPPSC RO/ARO', seo='UPPSC RO ARO',
+           slugp='uppsc-ro-aro', papers=URA_PAPERS, subjects=URA_SUBJECTS, faq=FAQ_URA, board='UPPSC', l2=L2_HI, pb='/uppsc-ro-aro/',
+           keyname="UPPSC's answer key", keyshort="UPPSC's answer key",
+           hi_name='यूपीपीएससी आरओ/एआरओ (समीक्षा अधिकारी/सहायक समीक्षा अधिकारी)', hi_paper='प्रश्न पत्र', subj_te=URA_SUBJ_HI,
+           title="UPPSC RO ARO Previous Year Question Papers with Answers – Prelims 2025 & 2021, Hindi & English | Learn with Anil",
+           h1='UPPSC RO/ARO previous year question papers <em>with answers.</em>',
+           aka=('Uttar Pradesh Public Service Commission (UPPSC) Samiksha Adhikari / Sahayak Samiksha Adhikari (Review Officer / Assistant Review Officer) '
+                'Preliminary Examination: General Studies and General Hindi. UPPSC\'s own 2025 booklet with its answer key, and the 2021 papers with UPPSC\'s key sheets.'),
+           aka_short='UPPSC Samiksha Adhikari / Sahayak Samiksha Adhikari (RO/ARO) Prelims',
+           l2line='यूपीपीएससी समीक्षा अधिकारी/सहायक समीक्षा अधिकारी (आरओ/एआरओ) प्रारंभिक परीक्षा के पिछले प्रश्न पत्र (2025, 2021) आयोग की उत्तर कुंजी के साथ — सामान्य अध्ययन और सामान्य हिंदी; हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           desc=lambda t: (f"UPPSC RO ARO previous year question papers with answers: the 27 July 2025 Prelims (General Studies and General Hindi, UPPSC's own booklet "
+                           f"with its key) and the 2021 Prelims papers, {t:,} questions in Hindi and English with explanations; General Hindi, UP GK and General Studies "
+                           f"practice and timed mock tests for UPPSC RO/ARO 2026 (Advt. A-4/E-1/2026)."),
+           eyebrow='UPPSC · Samiksha Adhikari / Sahayak Samiksha Adhikari (RO/ARO)',
+           papers_note=("The 2025 paper is UPPSC's own booklet, which UPPSC published as its answer key with the correct option boxed; the 2021 papers are candidates' "
+                        "copies, answered from UPPSC's key sheets of 8 December 2021. UPPSC published these keys for objections and has not put final keys online, so "
+                        "a few answers may have changed later; the explanation says so where an answer looks doubtful. General Studies is in Hindi and English, "
+                        "General Hindi in Hindi.")),
     ] + bank_confs()
 
 
@@ -2976,6 +3055,7 @@ def exam_terms(e, cat):
     if e['id'] == 'sbi-po': words += ['sbi', 'state bank', 'state bank of india', 'po', 'probationary officer', 'bank po', 'banking', 'bank exam', 'sbi po mock test']
     if e['id'] == 'ibps-so': words += ['ibps', 'so', 'specialist officer', 'it officer', 'agriculture field officer', 'afo', 'hr officer', 'personnel officer', 'marketing officer', 'banking', 'bank exam', 'ibps so mock test']
     if e['id'] == 'karnataka-fda-sda': words += ['kea', 'karnataka examinations authority', 'kpsc', 'fda', 'sda', 'first division assistant', 'second division assistant', 'fda sda', 'karnataka fda', 'karnataka sda', 'group c', 'group-c', 'junior assistant', 'gp secretary', 'accounts assistant', 'warden', 'karnataka', 'kannada', 'general kannada', 'kalyana karnataka', 'hyderabad karnataka', 'ಎಫ್‌ಡಿಎ', 'ಎಸ್‌ಡಿಎ', 'ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ', 'ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ', 'ಸಾಮಾನ್ಯ ಕನ್ನಡ']
+    if e['id'] == 'uppsc-ro-aro': words += ['uppsc', 'uttar pradesh public service commission', 'ro', 'aro', 'ro/aro', 'ro aro', 'review officer', 'assistant review officer', 'samiksha adhikari', 'sahayak samiksha adhikari', 'up', 'uttar pradesh', 'general hindi', 'up gk', 'prelims', 'uppsc ro aro mock test', 'यूपीपीएससी', 'समीक्षा अधिकारी', 'सहायक समीक्षा अधिकारी', 'आरओ', 'एआरओ', 'सामान्य हिंदी']
     if e['id'] == 'upsssc-inter-level': words += ['upsssc', 'uttar pradesh subordinate services selection commission', 'up', 'uttar pradesh', 'inter level', 'intermediate level', 'inter level mains', 'mains', 'pet', 'pet 2025', 'lekhpal', 'gram vikas adhikari', 'vdo', 'gram panchayat adhikari', 'gpa', 'vpo', 'amin', 'vanijya kar sangrah amin', 'bhumi arjan amin', 'samaj kalyan paryavekshak', 'lower subordinate', 'lower pcs', 'up gk', 'hindi', 'upsssc mock test', 'यूपीएसएसएससी', 'लेखपाल', 'ग्राम विकास अधिकारी', 'ग्राम पंचायत अधिकारी', 'इंटर स्तरीय', 'मुख्य परीक्षा']
     if e['id'] == 'gsssb-cce': words += ['gsssb', 'gujarat subordinate service selection board', 'gujarat gaun seva pasandgi mandal', 'cce', 'cce 2.0', 'combined competitive exam', 'class 3', 'class-3', 'class iii', 'group a', 'group b', 'gujarat', 'gujarati', 'junior clerk', 'senior clerk', 'head clerk', 'office assistant', 'social welfare inspector', 'sub registrar', 'gsssb clerk', 'ojas', 'gsssb mock test', 'જુનિયર ક્લાર્ક', 'સિનિયર ક્લાર્ક', 'ગૌણ સેવા', 'જીએસએસએસબી', 'સંયુક્ત સ્પર્ધાત્મક પરીક્ષા']
     if e['id'] == 'mpsc-group-c': words += ['mpsc', 'maharashtra public service commission', 'group c', 'group-c', 'gat c', 'gat-k', 'maharashtra', 'marathi', 'clerk typist', 'clerk-typist', 'tax assistant', 'talathi', 'gram mahsul adhikari', 'village revenue officer', 'amvi', 'assistant motor vehicle inspector', 'industry inspector', 'staff nurse', 'craft instructor', 'civil engineering assistant', 'assistant agriculture officer', 'supply inspector', 'livestock supervisor', 'combined prelims', 'samanya kshamata chachani', 'mpsc group c mock test', 'गट-क', 'गट क', 'एमपीएससी', 'लिपिक-टंकलेखक', 'कर सहायक', 'तलाठी', 'सामान्य क्षमता चाचणी']
@@ -3127,6 +3207,7 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'karnataka-fda-sda': ('Vidhana Soudha, Bengaluru', 'Wilhelm Tell DCCXLVI', 'CC0', _CW + 'Vidhana_Soudha,_14_February_2022_-_cropped.jpg'),   # KEA FDA & SDA (16 Nov 2026)
     'mpsc-group-c': ('Mantralaya, Mumbai', 'Sanket Oswal', 'CC BY-SA 4.0', _CW + 'Office_of_Chief_Minister_of_Maharashtra.jpg'),   # MPSC Group C (16 Nov 2026)
     'gsssb-cce': GSSSB_PHOTO,   # GSSSB CCE (16 Nov 2026)
+    'uppsc-ro-aro': ('Triveni Sangam, Prayagraj', 'Rangan Datta Wiki', 'CC BY-SA 4.0', _CW + 'Prayagraj_Sangam_2.jpg'),   # UPPSC RO/ARO (16 Nov 2026)
     'upsssc-inter-level': ('Rumi Darwaza, Lucknow', 'Rishabhgpt', 'CC BY-SA 4.0', _CW + 'Rumi_Darwaza_-_DSC2797-01.jpg'),   # UPSSSC Inter level (16 Nov 2026)
 }
 
@@ -3932,7 +4013,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -4887,6 +4968,20 @@ LANDINGS = {
             '<p class="note">UPSSSC Inter Level Mains 2026: <a href="/upsssc-inter-level-notification-2026.html">1,784 posts (Advt. 26-Exam/2026), apply by 1 December 2026</a>. '
             'Full papers with a 2-hour timer: <a href="/upsssc-inter-level/mock-test.html">UPSSSC Inter level Mains mock test</a>.</p>',
       te={'UPSSSC Inter Mains': 'यूपीएसएसएससी इंटर स्तरीय मुख्य परीक्षा प्रश्न पत्र'},
+      order=lambda c: 0),  'uppsc-pyqs.html': dict(   # Anil, 15 Nov 2026: UP exams — UPPSC RO/ARO
+      board='UPPSC', ename='UPPSC', crumb='UPPSC PYQs', lang='hi',
+      title='UPPSC Previous Year Question Papers with Answers – RO/ARO Prelims 2025 & 2021 PYQs, Hindi & English | Learn with Anil',
+      desc='UPPSC (Uttar Pradesh Public Service Commission) previous year question papers in one place: RO/ARO (Samiksha Adhikari) Prelims 2025 and 2021, '
+           '{n} questions with UPPSC\'s answer keys and explanations in Hindi and English. Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='UPPSC previous question papers with answers',
+      lede="Every UPPSC question paper on Learn with Anil, {n} questions in all, each with UPPSC's answer key and a short explanation in Hindi and English.",
+      intro='<p>Looking for the UPPSC RO ARO question paper 2025 with the answer key, General Hindi (सामान्य हिंदी) previous questions, or a UPPSC RO/ARO mock test in Hindi? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="hi">यूपीपीएससी समीक्षा अधिकारी/सहायक समीक्षा अधिकारी प्रारंभिक परीक्षा के पिछले प्रश्न पत्र (2025, 2021) आयोग की उत्तर कुंजी के साथ — '
+            'सामान्य अध्ययन, सामान्य हिंदी, उत्तर प्रदेश सामान्य ज्ञान; हिंदी और अंग्रेज़ी में व्याख्या।</p>'
+            '<p class="note">UPPSC RO/ARO 2026: <a href="/uppsc-ro-aro-notification-2026.html">501 posts (Advt. A-4/E-1/2026), apply by 26 November 2026</a>. '
+            'Full papers with the real timer: <a href="/uppsc-ro-aro/mock-test.html">UPPSC RO/ARO mock test</a>.</p>',
+      te={'UPPSC RO/ARO': 'यूपीपीएससी आरओ/एआरओ प्रश्न पत्र'},
       order=lambda c: 0),
 }
 
@@ -6006,7 +6101,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways (RRB): NTPC, Group D'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO')]
 
 
 def news_hub_page(loaded, rels):
@@ -6307,6 +6402,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'upsc-prelims': ('UPSC Civil Services (Preliminary) Examination 2027', '2027-05-23', 'UPSC Calendar 2027.'),
   'tnpsc-group-4': ('TNPSC Group 4 (CCSE-IV) written exam', '2027-01-10', 'TNPSC Notification No. 11/2026 of 6 October 2026 (exam dashboard on tnpsc.gov.in).'),
   'karnataka-fda-sda': ('KEA FDA/SDA competitive exam (FDA-level papers, Kalyana Karnataka)', '2027-01-09', 'KEA notifications of 29 October 2026: Kannada language test 8 January; FDA-level papers 9 (KK) and 10 January (RPC); SDA-level papers 16 (KK) and 17 January 2027 (RPC).'),
+  'uppsc-ro-aro': ('UPPSC RO/ARO Prelims 2026 (Advt. A-4/E-1/2026)', None, 'UPPSC Advt. A-4/E-1/2026: applications 26 October to 26 November 2026; UPPSC has not announced the prelims date yet.'),
   'upsssc-inter-level': ('UPSSSC Intermediate Level Mains (Advt. 26-Exam/2026)', None, 'UPSSSC Advt. No. 26-Exam/2026: applications 10 November to 1 December 2026; UPSSSC has not announced the Mains date yet.'),
   'gsssb-cce': ('GSSSB CCE 2.0 (Advt. 468/2026-27) Preliminary exam', None, 'GSSSB Advt. No. 468/2026-27: applications 5 to 30 November 2026; GSSSB has not announced the prelims date yet.'),
   'mpsc-group-c': ('MPSC Maharashtra Group-C Services Combined Preliminary Examination 2026', '2027-01-24', 'MPSC corrigendum of 6 November 2026 (Advt. No. 017/2026): prelims moved from 3 January to 24 January 2027; applications 13 to 27 November 2026.'),
@@ -7100,7 +7196,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -7117,7 +7213,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
-<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li></ul>
+<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li></ul>
 </main></body></html>
 """
 

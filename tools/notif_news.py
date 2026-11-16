@@ -1134,6 +1134,62 @@ NEW['upsssc-inter-level-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: 
     ])
 ASOF_PAGE['upsssc-inter-level-notification-2026.html'] = '16 November 2026'
 
+NEW['uppsc-ro-aro-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: UPPSC RO/ARO (apply till 26 November); facts from UPPSC's own advertisement A-4/E-1/2026, read on 16 Nov 2026
+    exam='uppsc-ro-aro', board='UPPSC', site='uppsc.up.nic.in', crumb='UPPSC RO/ARO Notification 2026', faq_asof='16 November 2026',
+    title='UPPSC RO/ARO Notification 2026: 501 Posts, Apply by 26 November, Age, Fee, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='UPPSC Samiksha Adhikari / Sahayak Samiksha Adhikari (RO/ARO) Examination-2026, Advt. A-4/E-1/2026: 501 posts in the UP Secretariat, UPPSC, Board of Revenue '
+         'and the Advocate General\'s office. Apply on uppsc.up.nic.in from 26 October to 26 November 2026. Age 21–40, fee, the 200-question prelims pattern and '
+         'UPPSC RO/ARO previous papers with answers in Hindi and English.',
+    h1='UPPSC RO/ARO notification 2026: 501 posts, apply by 26 November',
+    lede='The Uttar Pradesh Public Service Commission (UPPSC) has advertised the Samiksha Adhikari / Sahayak Samiksha Adhikari Etc. (General / Special Recruitment) '
+         'Examination-2026 (Advt. No. A-4/E-1/2026, 26 October 2026) for 501 posts. Online applications, with a One Time Registration (OTR) number, are open on '
+         'uppsc.up.nic.in from 26 October to 26 November 2026. Below: the key dates, the posts, who can apply, the exam pattern and the UPPSC RO/ARO previous papers to practise.',
+    hi='उत्तर प्रदेश लोक सेवा आयोग: समीक्षा अधिकारी/सहायक समीक्षा अधिकारी आदि (सामान्य/विशेष चयन) परीक्षा-2026, विज्ञापन संख्या A-4/E-1/2026 — कुल 501 पद; '
+       'ऑनलाइन आवेदन 26 अक्टूबर से 26 नवम्बर 2026, संशोधन 03 दिसम्बर 2026 तक; प्रारंभिक परीक्षा 200 प्रश्न (सामान्य अध्ययन 140, सामान्य हिंदी 60), 3 घंटे।',
+    pdf='https://uppsc.up.nic.in', pdfname='UPPSC Advt. No. A-4/E-1/2026, uppsc.up.nic.in > All Notifications/Advertisements',
+    more_src=[('https://otr.pariksha.nic.in', 'One Time Registration (OTR) portal')],
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement', 'Advt. No. A-4/E-1/2026, 26 October 2026'),
+        ('Online applications', '26 October to 26 November 2026 on uppsc.up.nic.in (an OTR number from otr.pariksha.nic.in is needed first)'),
+        ('Last date for the fee', '26 November 2026'),
+        ('Corrections and fee reconciliation', 'Up to 3 December 2026'),
+        ('Prelims', 'UPPSC will announce the date'),
+      ]),
+      ('Posts and vacancies (501)', 'table+', (['Post', 'Office', 'Posts'], [
+        ('Samiksha Adhikari', 'U.P. Secretariat 122 · UPPSC 3 · Board of Revenue 6', '131'),
+        ('Samiksha Adhikari (Account)', 'U.P. Secretariat', '31'),
+        ('Sahayak Samiksha Adhikari', 'U.P. Secretariat 261 · UPPSC 21 · Board of Revenue 2 · Office of the Advocate General 45', '329'),
+        ('Sahayak Samiksha Adhikari (Account), special recruitment', 'U.P. Secretariat', '6'),
+        ('Manager, Care-Taker, Receptionist, Store Keeper', 'UPPSC (1 each)', '4'),
+        ('Total', '', '501')])),
+      ('', 'note', 'Pay scales from Rs. 29,200–64,700 (Level 5) to Rs. 47,600–1,51,100 (Level 8), as in the advertisement. The category-wise posts are in the advertisement; '
+                   'the number of vacancies may change before the prelims result.'),
+      ('Exam pattern', 'table+', (['Stage', 'Paper', 'Marks'], [
+        ('Prelims (screening)', 'One objective paper, 3 hours: General Studies 140 questions and General Hindi 60 questions, 1 mark each; four options, one third of a '
+                                'mark deducted for each wrong answer', '200'),
+        ('Mains (written)', 'Selection is on the total marks of the Mains; fifteen times the vacancies are called from the prelims', 'as notified'),
+      ])),
+      ('', 'note', 'General Studies covers general science, history of India and the national movement, polity, economy and culture, agriculture, commerce and '
+                   'trade, population, ecology and urbanisation, world and Indian geography, current events, general intelligence and Uttar Pradesh. General Hindi '
+                   'covers opposites, sentence correction, one-word substitution, words of similar use, nouns and adjectives, and synonyms.'),
+      ('Who can apply', 'list', [
+        'A bachelor\'s degree. Sahayak Samiksha Adhikari posts also need a computer qualification (such as the NIELIT \'O\' Level) and a Hindi typing speed of '
+        '25 words a minute; the Account posts need a B.Com. with accountancy. Check the exact qualification of each post in the advertisement.',
+        'Age: 21 to 40 years as on 1 July 2026 (born between 2 July 1986 and 1 July 2005); 5 years more for SC, ST and OBC of U.P., 15 years more for persons with '
+        'disabilities, and the rules\' relaxation for ex-servicemen.',
+        'Fee (exam fee + Rs. 25 online processing fee): Rs. 125 for unreserved, EWS and OBC; Rs. 65 for SC, ST and ex-servicemen; Rs. 25 for persons with disabilities.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for UPPSC RO/ARO 2026?', '26 November 2026 on uppsc.up.nic.in, which is also the last date for the fee; corrections are allowed till 3 December 2026.'),
+      ('How many posts are there in UPPSC RO/ARO 2026?', '501: 131 Samiksha Adhikari, 31 Samiksha Adhikari (Account), 329 Sahayak Samiksha Adhikari, 6 Sahayak Samiksha Adhikari (Account) in special recruitment and 4 other UPPSC posts.'),
+      ('What is the UPPSC RO/ARO prelims exam pattern?', 'One objective paper of 200 questions in 3 hours: General Studies 140 and General Hindi 60, with one third of a mark cut for each wrong answer.'),
+      ('What is the age limit for UPPSC RO/ARO 2026?', '21 to 40 years as on 1 July 2026, with 5 more years for SC, ST and OBC of U.P. and 15 more for persons with disabilities.'),
+      ('What is the UPPSC RO/ARO application fee?', 'Rs. 125 for unreserved, EWS and OBC, Rs. 65 for SC, ST and ex-servicemen, and Rs. 25 for persons with disabilities (including the Rs. 25 processing fee).'),
+      ('Where can I practise UPPSC RO/ARO previous papers?', 'On Learn with Anil: the 27 July 2025 prelims (200 questions, UPPSC\'s own booklet with its key) and the 2021 General Studies and General Hindi papers, with explanations in Hindi and English.'),
+    ])
+ASOF_PAGE['uppsc-ro-aro-notification-2026.html'] = '16 November 2026'
+
 
 def apply(NOTIFS):
     for rel, f in FAQS.items():

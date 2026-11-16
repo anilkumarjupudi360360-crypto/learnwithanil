@@ -888,7 +888,8 @@
    "cat": "up",
    "b": "UPPSC",
    "t": "RO/ARO",
-   "n": "Review Officer / Assistant Review Officer"
+   "n": "Review Officer / Assistant Review Officer",
+   "live": "uppsc-ro-aro/"
   },
   {
    "id": "upsssc-inter-level",

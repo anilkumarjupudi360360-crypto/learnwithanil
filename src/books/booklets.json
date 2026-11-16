@@ -686,24 +686,48 @@
    "pages": 43
   }
  },
+ "uppsc-ro-aro": {
+  "g21": {
+   "bytes": 737758,
+   "file": "uppsc-ro-aro-g21-49229c7d5e.bin",
+   "key": "bk-uppsc-ro-aro-g21",
+   "name": "LearnWithAnil-UPPSC-RO-ARO-Prelims-2021-General-Studies-Question-Paper.pdf",
+   "pages": 30
+  },
+  "h21": {
+   "bytes": 268831,
+   "file": "uppsc-ro-aro-h21-f408b89c0a.bin",
+   "key": "bk-uppsc-ro-aro-h21",
+   "name": "LearnWithAnil-UPPSC-RO-ARO-Prelims-2021-General-Hindi-Question-Paper.pdf",
+   "pages": 8
+  },
+  "r25": {
+   "bytes": 16815282,
+   "file": "uppsc-ro-aro-r25-e5618a4087.bin",
+   "key": "bk-uppsc-ro-aro-r25",
+   "name": "LearnWithAnil-UPPSC-RO-ARO-Prelims-2025-Question-Paper.pdf",
+   "orig": 2,
+   "pages": 34
+  }
+ },
  "upsssc-inter-level": {
   "gpa": {
-   "bytes": 684641,
-   "file": "upsssc-inter-level-gpa-ba7f780d9c.bin",
+   "bytes": 685651,
+   "file": "upsssc-inter-level-gpa-897f60b94a.bin",
    "key": "bk-upsssc-inter-level-gpa",
    "name": "LearnWithAnil-UPSSSC-Gram-Panchayat-Adhikari-Mains-2025-Question-Paper.pdf",
    "pages": 28
   },
   "lek": {
-   "bytes": 587836,
-   "file": "upsssc-inter-level-lek-dd84f91d51.bin",
+   "bytes": 588851,
+   "file": "upsssc-inter-level-lek-5e45e7e4d2.bin",
    "key": "bk-upsssc-inter-level-lek",
    "name": "LearnWithAnil-UPSSSC-Lekhpal-Mains-2026-Question-Paper.pdf",
    "pages": 24
   },
   "lps": {
-   "bytes": 727433,
-   "file": "upsssc-inter-level-lps-86f87f1b85.bin",
+   "bytes": 728352,
+   "file": "upsssc-inter-level-lps-7143e1ef92.bin",
    "key": "bk-upsssc-inter-level-lps",
    "name": "LearnWithAnil-UPSSSC-Lower-Subordinate-Mains-2026-Question-Paper.pdf",
    "pages": 28
