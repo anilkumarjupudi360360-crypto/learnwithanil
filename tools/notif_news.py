@@ -1550,6 +1550,94 @@ NEW['dsssb-mts-je-notification-2026.html'] = dict(   # Anil, 16 Nov 2026 ("ok co
     ])
 ASOF_PAGE['dsssb-mts-je-notification-2026.html'] = '16 November 2026'
 
+NEW['jkssb-je-civil-notification-2026.html'] = dict(   # Anil, 16 Nov 2026 ("JKSSB JE Civil ... do it"); facts from JKSSB Advertisement Notification No. 11 of 2026 (27 Oct 2026), read on 16 Nov 2026
+    exam='jkssb-je-civil', board='JKSSB', site='jkssb.nic.in', crumb='JKSSB JE Civil Notification 2026', faq_asof='16 November 2026',
+    title='JKSSB JE Civil Notification 2026: 458 Posts, Apply 30 November – 29 December, Age, Fee, Exam & Previous Papers | Learn with Anil',
+    desc='JKSSB Advertisement Notification No. 11 of 2026: 458 Junior Engineer (Civil) posts in the Jal Shakti (282) and PWD (R&B) (176) departments, Level-6. '
+         'Apply on jkssb.nic.in from 30 November to 29 December 2026. Age, fee, qualification, exam scheme and JKSSB JE Civil previous papers with answers.',
+    h1='JKSSB JE Civil notification 2026: 458 posts, apply 30 November – 29 December',
+    lede='The Jammu & Kashmir Services Selection Board (JKSSB) has advertised 458 posts of Junior Engineer (Civil), UT cadre, in the Jal Shakti Department '
+         '(282) and the Public Works (R&B) Department (176) (Advertisement Notification No. 11 of 2026, 27 October 2026). Online applications are open on '
+         'jkssb.nic.in from 30 November to 29 December 2026. Below: the dates, vacancies, eligibility, exam scheme and the JKSSB JE Civil previous papers to practise.',
+    pdf='https://jkssb.nic.in', pdfname='JKSSB Advertisement Notification No. 11 of 2026, jkssb.nic.in > Advertisement',
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement', 'Notification No. 11 of 2026, dated 27 October 2026'),
+        ('Online applications', '30 November to 29 December 2026 on jkssb.nic.in'),
+        ('Written exam', 'Date and centres to be notified separately by JKSSB'),
+      ]),
+      ('Vacancies (458)', 'table+', (['Department', 'OM', 'SC', 'ST-1', 'ST-2', 'OBC', 'ALC/IB', 'RBA', 'EWS', 'Total'], [
+        ('Jal Shakti (Item 266)', '113', '23', '28', '28', '22', '11', '28', '29', '282'),
+        ('PWD (R&B) (Item 267)', '71', '14', '18', '18', '14', '7', '17', '17', '176'),
+        ('Total', '184', '37', '46', '46', '36', '18', '45', '46', '458')])),
+      ('', 'note', 'Pay: Level-6 (Rs. 35,400 – 1,12,400). Horizontal reservation for ex-servicemen and persons with benchmark disabilities as per the rules.'),
+      ('Exam scheme', 'list', [
+        'An objective, multiple-choice written (OMR) exam in English only, with one-fourth of the marks cut for each wrong answer.',
+        'Selection is on merit in the written exam, followed by document verification.',
+        'JKSSB will notify the syllabus separately. The 2025 and 2023 JE (Civil) papers had 120 Civil Engineering questions in 120 minutes.']),
+      ('Who can apply', 'list', [
+        'Domicile of the Union Territory of Jammu & Kashmir (certificate on or before 29 December 2026).',
+        'A 3-year Diploma in Civil Engineering from a government-recognised institute, or a degree in Civil Engineering, or AMIE Sections A and B.',
+        'Age on 1 January 2026: 40 years at most for Open Merit; 43 for SC, ST-1, ST-2, RBA, ALC/IB, EWS and OBC; 42 for physically challenged persons; '
+        'candidates must not be born after 1 January 2008.',
+        'Fee: Rs. 600 online (Rs. 500 for SC, ST-1, ST-2, EWS and PwBD candidates).']),
+    ],
+    faqs=[
+      ('What is the last date to apply for JKSSB JE Civil 2026?', '29 December 2026. Online applications on jkssb.nic.in open on 30 November 2026.'),
+      ('How many JKSSB JE Civil posts are there?', '458: 282 in the Jal Shakti Department and 176 in the Public Works (R&B) Department.'),
+      ('What is the JKSSB JE Civil exam pattern?', 'An objective (OMR) written test in English with negative marking of one-fourth for each wrong answer; selection is on merit in the written exam. Past papers had 120 questions in 120 minutes.'),
+      ('What is the age limit for JKSSB JE Civil?', 'On 1 January 2026, at most 40 years for Open Merit and 43 for SC, ST, RBA, ALC/IB, EWS and OBC candidates (42 for physically challenged persons).'),
+      ('What is the fee for JKSSB JE Civil?', 'Rs. 600, or Rs. 500 for SC, ST-1, ST-2, EWS and PwBD candidates, paid online.'),
+      ('Where can I practise JKSSB JE Civil previous papers?', 'On Learn with Anil: the JKSSB JE (Civil) papers of 2025 and 2023, JKSSB\'s own booklets with its final keys and explanations.'),
+    ])
+ASOF_PAGE['jkssb-je-civil-notification-2026.html'] = '16 November 2026'
+
+NEW['meghalaya-psc-notification-2026.html'] = dict(   # Anil, 16 Nov 2026 ("Meghalaya PSC ... do it"); facts from MPSC Advt. No. 01/2026-2027 of 12 Nov 2026 (mpsc.meghalaya.gov.in), read on 16 Nov 2026
+    exam='meghalaya-psc', board='Meghalaya PSC', site='mpsc.meghalaya.gov.in', crumb='Meghalaya PSC Notification 2026', faq_asof='16 November 2026',
+    title='Meghalaya PSC Notification 2026 (Advt. 01/2026-27): 20 Posts, Apply by 12 December, Age, Fee, Screening Test & Previous Papers | Learn with Anil',
+    desc='Meghalaya PSC Advt. No. 01/2026-2027: 20 posts — Assistant Engineer (Mechanical), Assistant Research Officer (Finance), Junior Athletic and Archery '
+         'Coaches, Journalist. Apply online by 5 pm on 12 December 2026. Age, fee, screening test pattern and Meghalaya PSC previous papers with answers.',
+    h1='Meghalaya PSC notification 2026: 20 posts, apply by 12 December',
+    lede='The Meghalaya Public Service Commission (MPSC) has advertised 20 posts in five departments (Advt. No. 01/2026-2027, 12 November 2026). Online '
+         'applications are open till 5 pm on 12 December 2026. Selection is by an MCQ screening test and a personal interview. Below: the posts, '
+         'eligibility, fee, the screening test for each post and the Meghalaya PSC previous papers to practise.',
+    pdf='https://mpsc.meghalaya.gov.in/advertisements.html', pdfname='MPSC Advt. No. 01/2026-2027, mpsc.meghalaya.gov.in > Advertisements',
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement', 'Advt. No. 01/2026-2027, dated 12 November 2026'),
+        ('Last date to apply online', '12 December 2026, 5 pm'),
+        ('Screening test and interview', 'Dates to be notified by MPSC; exam centres at Shillong, Tura, Jowai, Williamnagar and Nongstoin'),
+      ]),
+      ('Posts (20)', 'table+', (['Post', 'Department', 'Posts', 'Pay'], [
+        ('Assistant Engineer (Mechanical), Group A', 'PWD (R&B)', '4', 'Level 15'),
+        ('Assistant Research Officer', 'Finance (Economic Affairs)', '5', 'Level 15'),
+        ('Junior Athletic Coach', 'Sports & Youth Affairs', '2', 'Level 11'),
+        ('Junior Archery Coach', 'Sports & Youth Affairs', '1', 'Level 11'),
+        ('Journalist', 'Information & Public Relations', '8', 'Level 8'),
+      ])),
+      ('Screening test (MCQ)', 'table+', (['Post', 'Parts', 'Marks'], [
+        ('AE (Mechanical)', 'General English 50 · GK & Current Affairs 60 · Aptitude & Reasoning 20 · Mechanical Engineering (degree level) 170', '300'),
+        ('Assistant Research Officer', 'General English 50 · GK & Current Affairs 50 · Basic Computer, Aptitude & Reasoning 30 · Economics/Statistics/Maths/Commerce 170', '300'),
+        ('Junior Athletic / Archery Coach', 'General English 50 · GK & Current Affairs 100 · Reasoning 50 (Class XII level)', '200'),
+        ('Journalist', 'General English 50 · GK & Current Affairs 50 · Basic Computer, Aptitude & Reasoning 30 · Mass Communication/Journalism 170', '300'),
+      ])),
+      ('', 'note', 'Candidates who pass the screening test are called for a personal interview with their original documents.'),
+      ('Who can apply', 'list', [
+        'Qualification as listed for each post (for example, B.E. Mechanical for AE; a master\'s in Economics/Statistics/Commerce/Mathematics for ARO; a '
+        'degree with a diploma or degree in mass communication/journalism for Journalist; sports-coaching qualifications for the coaches).',
+        'Age on 1 January 2026: 21 to 32 years for AE (Mechanical); 18 to 32 for the other posts; 5 more years for SC/ST candidates with a Meghalaya '
+        'certificate.',
+        'Fee: Rs. 460 (AE, ARO), Rs. 350 (coaches), Rs. 320 (Journalist); half for SC/ST permanent residents of Meghalaya; persons with disabilities exempt.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for Meghalaya PSC Advt. 01/2026-2027?', '12 December 2026, 5 pm, online on the MPSC website.'),
+      ('How many posts are in Meghalaya PSC Advt. 01/2026-2027?', '20: Assistant Engineer (Mechanical) 4, Assistant Research Officer 5, Junior Athletic Coach 2, Junior Archery Coach 1 and Journalist 8.'),
+      ('What is the Meghalaya PSC screening test pattern?', 'MCQ papers with General English, General Knowledge & Current Affairs and Aptitude/Reasoning (plus a subject part for AE, ARO and Journalist), followed by a personal interview.'),
+      ('What is the age limit?', 'On 1 January 2026, 21–32 years for AE (Mechanical) and 18–32 for the other posts, with 5 years\' relaxation for SC/ST candidates of Meghalaya.'),
+      ('Where can I practise Meghalaya PSC previous papers?', 'On Learn with Anil: MCS Prelims 2026 Papers I and II and the LDA screening test 2026, MPSC\'s own booklets with its answer keys and explanations.'),
+    ])
+ASOF_PAGE['meghalaya-psc-notification-2026.html'] = '16 November 2026'
+
 
 # ---- 16 Nov 2026 (Anil: "why mistake book and notification is not present in every exam tile"): pages for the six exams that had no notification card.
 # Facts read on 16 Nov 2026 from news and coaching pages that quote the official notices (sources named on each page); re-check before big changes.

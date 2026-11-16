@@ -1307,6 +1307,121 @@ def FAQ_DSB(total, npapers):
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
+# ---------- JKSSB Junior Engineer (Civil) (Jammu & Kashmir) ----------
+# Anil, 16 Nov 2026 ("JKSSB JE Civil ... do it"). JKSSB Advertisement Notification No. 11 of 2026 (27 Oct 2026): 458 Junior Engineer (Civil) posts
+# (Jal Shakti 282, PWD (R&B) 176), Level-6; apply online 30 Nov - 29 Dec 2026; objective MCQ test in English, 1/4 negative; selection on merit in the
+# written exam. Papers: JKSSB's own Series A booklets of the JE (Civil) OMR exams of 2 Nov 2025 (Advt. 03 of 2025) and 19 Nov 2023 (Advt. 06 of 2022),
+# 120 questions each, with JKSSB's provisional key as revised by the final key (24 Nov 2025; 7 Dec 2023). Work files: /home/claude/jk.
+JKC_BLURB = ('JKSSB JE (Civil) OMR test: 120 Civil Engineering questions in 120 minutes, 1 mark each, ¼ mark cut for each wrong answer, in English.')
+JKC_PAPERS = [
+  dict(id='c25', file='jkssb-je-civil-2025.txt', year=2025, stage='Written', short='JE Civil 2025 · 2 November',
+       title='JKSSB Junior Engineer (Civil) OMR Exam 2025 (2 November) Question Paper', notif='JKSSB Advt. No. 03 of 2025 · Series A',
+       held='2 November 2025', key="JKSSB's final answer key (24 November 2025)", fmt='mcq', slug='jkssb-je-civil-2025-question-paper-with-answers',
+       kwname='JKSSB JE Civil 2025', blurb=JKC_BLURB, mins=120),
+  dict(id='c23', file='jkssb-je-civil-2023.txt', year=2023, stage='Written', short='JE Civil 2023 · 19 November',
+       title='JKSSB Junior Engineer (Civil) OMR Exam 2023 (19 November) Question Paper', notif='JKSSB Advt. No. 06 of 2022 · Series A',
+       held='19 November 2023', key="JKSSB's final answer key (7 December 2023)", fmt='mcq', slug='jkssb-je-civil-2023-question-paper-with-answers',
+       kwname='JKSSB JE Civil 2023', blurb=JKC_BLURB, mins=120),
+]
+JKC_SUBJECTS = [
+  ('sur', 'Surveying', 'surveying', ['Surveying']),
+  ('bmc', 'Building Materials & Construction', 'building-materials-construction', ['Building Materials', 'Building Construction']),
+  ('som', 'Mechanics & Structural Analysis', 'mechanics-structures', ['Engineering Mechanics', 'Strength of Materials', 'Structural Analysis']),
+  ('rcc', 'RCC & Steel Design', 'rcc-steel-design', ['RCC Design', 'Steel Design']),
+  ('soil', 'Soil Mechanics & Foundations', 'soil-mechanics', ['Soil Mechanics & Foundations']),
+  ('hyd', 'Hydraulics & Irrigation', 'hydraulics-irrigation', ['Fluid Mechanics & Hydraulics', 'Irrigation & Water Resources']),
+  ('env', 'Environmental Engineering', 'environmental-engineering', ['Water Supply & Sanitary Engineering']),
+  ('trn', 'Transportation Engineering', 'transportation-engineering', ['Highway Engineering', 'Railways, Bridges & Other Transport']),
+  ('est', 'Estimating & Construction Management', 'estimating-management', ['Estimating & Costing', 'Construction Management']),
+]
+
+
+def FAQ_JKC(total, npapers):
+    return [
+      ('Where can I get the JKSSB JE Civil previous year question paper with answers?',
+       f'This page has {total} questions from {npapers} JKSSB Junior Engineer (Civil) papers — the OMR exams of 2 November 2025 and 19 November 2023, '
+       'JKSSB\'s own Series A booklets — each question with JKSSB\'s final answer key and an explanation.'),
+      ('Are the answers official?',
+       'Yes. Every answer is from JKSSB\'s answer key for Series A as revised by its final answer key (24 November 2025 for the 2025 paper, 7 December 2023 '
+       'for the 2023 paper). Questions JKSSB discarded are left out; where the final key accepts two options, both are marked correct. The explanations '
+       'are written by Learn with Anil.'),
+      ('What is the JKSSB JE Civil exam pattern?',
+       'An objective (OMR) written test in English with negative marking of one-fourth of the marks for each wrong answer; selection is on merit in the '
+       'written exam. The 2025 and 2023 papers had 120 Civil Engineering questions in 120 minutes. JKSSB notifies the syllabus and exam date separately.'),
+      ('When is the last date to apply for JKSSB JE Civil 2026?',
+       'Online applications on jkssb.nic.in open on 30 November 2026 and close on 29 December 2026 (Advertisement Notification No. 11 of 2026, 458 posts).'),
+      ('Which subjects come in the JKSSB JE Civil exam?',
+       'Surveying, building materials and construction, mechanics and structural analysis, RCC and steel design, soil mechanics, hydraulics and irrigation, '
+       'environmental engineering, transportation engineering, and estimating and construction management. The sectional tests here take all previous '
+       'questions of one subject.'),
+      ('Is there a JKSSB JE Civil mock test?',
+       'Yes. Each paper can be taken as a full 120-minute mock test with negative marking. Answers and explanations open with the ₹45 All-in-One Pass, '
+       'which covers every exam on the site.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
+# ---------- Meghalaya PSC ----------
+# Anil, 16 Nov 2026 ("Meghalaya PSC ... do it"). MPSC Meghalaya Advt. No. 01/2026-2027 (12 Nov 2026): 20 posts (AE Mechanical PWD 4, Assistant Research
+# Officer Finance 5, Junior Athletic Coach 2, Junior Archery Coach 1, Journalist DIPR 8); apply online till 17:00 on 12 Dec 2026; screening tests in MCQ
+# pattern with General English, General Knowledge & Current Affairs and Aptitude & Reasoning, then a personal interview. Papers: MPSC's own Series I
+# booklets of the Meghalaya Civil Service Prelims [Oct 2025 advt.] held 26 Sep 2026 (Papers I and II) and of the Lower Division Assistant (Heads of
+# Department) [July 2025 advt.] screening test held 22 Aug 2026, with MPSC's answer keys (23 Oct 2026; 10 Sep 2026). Work files: /home/claude/mg.
+MGP_BLURB_C = ('Meghalaya Civil Service Prelims: two papers of 100 questions, 2 marks each (200 marks), 2 hours each, no negative marking, in English.')
+MGP_BLURB_L = ('MPSC LDA screening test: 150 questions, 2 marks each (300 marks), 2½ hours, no negative marking — English 50, General Knowledge & Current '
+               'Affairs 40, Aptitude 15, Reasoning 20, Basic Computer 25.')
+MGP_PAPERS = [
+  dict(id='c1', file='meghalaya-mcs-prelims-2026-paper-1.txt', year=2026, stage='Preliminary', short='MCS Prelims 2026 · Paper I',
+       title='Meghalaya Civil Service (MCS) Prelims 2026 Paper I (General Studies) Question Paper', notif='MPSC MCS [October 2025] · Series I',
+       held='26 September 2026', key="MPSC's answer key (23 October 2026)", fmt='mcq', slug='meghalaya-mcs-prelims-2026-paper-1-question-paper-with-answers',
+       kwname='Meghalaya MCS Prelims 2026 Paper 1', blurb=MGP_BLURB_C, mins=120),
+  dict(id='c2', file='meghalaya-mcs-prelims-2026-paper-2.txt', year=2026, stage='Preliminary', short='MCS Prelims 2026 · Paper II',
+       title='Meghalaya Civil Service (MCS) Prelims 2026 Paper II Question Paper', notif='MPSC MCS [October 2025] · Series I',
+       held='26 September 2026', key="MPSC's answer key (23 October 2026)", fmt='mcq', slug='meghalaya-mcs-prelims-2026-paper-2-question-paper-with-answers',
+       kwname='Meghalaya MCS Prelims 2026 Paper 2', blurb=MGP_BLURB_C, mins=120),
+  dict(id='l25', file='meghalaya-lda-2026-screening-test.txt', year=2026, stage='Screening Test', short='LDA (Heads of Dept) 2026',
+       title='Meghalaya PSC Lower Division Assistant (Heads of Department) Screening Test 2026 Question Paper', notif='MPSC LDA [July 2025] · Series I',
+       held='22 August 2026', key="MPSC's answer key (10 September 2026)", fmt='mcq', slug='meghalaya-psc-lda-2026-question-paper-with-answers',
+       kwname='Meghalaya PSC LDA 2026', blurb=MGP_BLURB_L, mins=150),
+]
+MGP_SUBJECTS = [
+  ('meg', 'Meghalaya GK', 'meghalaya-gk', ['History, Culture & People of Meghalaya', 'Geography, Economy & Polity of Meghalaya']),
+  ('cur', 'Current Affairs', 'current-affairs', ['National & International', 'Sports, Awards & Misc.']),
+  ('his', 'History & Culture', 'history', ['Indian History & Culture']),
+  ('pol', 'Polity & Governance', 'polity', ['Indian Polity & Governance']),
+  ('geo', 'Geography & Environment', 'geography', ['Indian & World Geography', 'Environment & Ecology']),
+  ('eco', 'Economy', 'economy', ['Indian Economy']),
+  ('sci', 'Science & Technology', 'science-technology', ['General Science', 'Technology']),
+  ('eng', 'General English', 'general-english', ['Grammar', 'Vocabulary', 'Comprehension & Usage']),
+  ('rea', 'Reasoning', 'reasoning', ['Verbal Reasoning', 'Non-verbal Reasoning']),
+  ('apt', 'Aptitude & Numeracy', 'aptitude', ['Arithmetic', 'Data Interpretation', 'Decision Making']),
+  ('comp', 'Basic Computer', 'computer', ['Computer Fundamentals', 'MS Office', 'Internet & Networking']),
+]
+
+
+def FAQ_MGP(total, npapers):
+    return [
+      ('Where can I get Meghalaya PSC previous year question papers with answers?',
+       f'This page has {total} questions from {npapers} Meghalaya PSC papers: Papers I and II of the Meghalaya Civil Service (MCS) Prelims held on '
+       '26 September 2026 and the Lower Division Assistant screening test held on 22 August 2026 — MPSC\'s own Series I booklets — each question with '
+       'MPSC\'s answer key and an explanation.'),
+      ('Are the answers official?',
+       'Yes. Every answer is from the answer key MPSC published for that exam (23 October 2026 for the MCS Prelims, 10 September 2026 for the LDA test). '
+       'Where an answer looks doubtful, the explanation says so. The explanations are written by Learn with Anil.'),
+      ('What is in the Meghalaya PSC screening test?',
+       'Most MPSC screening tests are MCQs on General English, General Knowledge & Current Affairs (including Meghalaya), and Aptitude & Reasoning, plus a '
+       'subject paper for technical posts. Advt. No. 01/2026-2027 lists these parts for its posts; the screening test is followed by a personal interview.'),
+      ('When is the last date to apply for Meghalaya PSC Advt. 01/2026-2027?',
+       '12 December 2026 (5 pm), online on the MPSC website (Advt. No. 01/2026-2027 of 12 November 2026, 20 posts).'),
+      ('Is there a Meghalaya PSC mock test?',
+       'Yes. Each paper can be taken as a full mock test with the real time limit, and the sectional tests take all the previous questions of one part, '
+       'such as Meghalaya GK or English. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
 # ---------- RRB Group D (Level-1 posts, CEN 08/2024): RRB's own question papers with the answer key (Anil, 15 Nov 2026: "RRB Group D...add pyqs and other
 # details like other exams"). Source: RRB's "question paper with answer key" for each shift (options in green with a tick = RRB's answer), in English and
 # Hindi, as hosted by AglaSem; the Hindi sheets are another candidate's copy, so the Hindi was matched question by question and put in English option order.
@@ -3101,6 +3216,38 @@ def exam_confs():
                         "as DSSSB marked it. Questions are in Hindi and English, except the English section (English only) and the Hindi section (Hindi "
                         "only). Both 2022 papers start with the same five general parts that make up the 2026 MTS exam and JE Tier-I Section A; the JE "
                         "paper then has 100 Electrical Engineering questions and the Patwari paper Computer and Delhi questions.")),
+      dict(id='jkssb-je-civil', dir='jkssb-je-civil', src='jkssb-je-civil', key='jk-jec', name='JKSSB JE Civil', short='JKSSB JE Civil', seo='JKSSB JE Civil',
+           slugp='jkssb-je-civil', papers=JKC_PAPERS, subjects=JKC_SUBJECTS, faq=FAQ_JKC, board='JKSSB', l2=L2_HI, pb='/jkssb-je-civil/',
+           keyname="JKSSB's answer key", keyshort="JKSSB's key",
+           title="JKSSB JE Civil Previous Year Question Papers with Answers – 2025 & 2023 OMR Exams | Learn with Anil",
+           h1='JKSSB JE Civil previous year question papers <em>with answers.</em>',
+           aka=('Jammu & Kashmir Services Selection Board (JKSSB) Junior Engineer (Civil) OMR written exams of 2025 and 2023 — JKSSB\'s own Series A booklets '
+                'with its final answer keys.'),
+           aka_short='JKSSB Junior Engineer (Civil), Jal Shakti & PWD (R&B), Jammu & Kashmir',
+           l2line='जम्मू-कश्मीर सेवा चयन बोर्ड (JKSSB) जूनियर इंजीनियर (सिविल) के पिछले प्रश्न पत्र — प्रश्न अंग्रेज़ी में, बोर्ड की अंतिम उत्तर कुंजी सहित।',
+           desc=lambda t: (f"JKSSB JE Civil previous year question papers with answers: the 2025 and 2023 Junior Engineer (Civil) OMR exams (JKSSB's own Series A "
+                           f"booklets), {t:,} questions with JKSSB's final key and explanations; surveying, RCC, soil, hydraulics and other subject-wise "
+                           f"practice and 120-minute mock tests for JKSSB JE Civil 2026 (Advt. 11 of 2026)."),
+           eyebrow='JKSSB · Junior Engineer (Civil), Jammu & Kashmir',
+           papers_note=("Each paper is JKSSB's own Test Booklet Series A (published on jkssb.nic.in), with every answer from JKSSB's answer key as revised by its "
+                        "final answer key. Questions JKSSB discarded are left out; where the final key accepts two options, both count as correct. Both papers "
+                        "are in English, as printed.")),
+      dict(id='meghalaya-psc', dir='meghalaya-psc', src='meghalaya-psc', key='ml-psc', name='Meghalaya PSC', short='Meghalaya PSC', seo='Meghalaya PSC',
+           slugp='meghalaya-psc', papers=MGP_PAPERS, subjects=MGP_SUBJECTS, faq=FAQ_MGP, board='Meghalaya PSC', l2=L2_HI, pb='/meghalaya-psc/',
+           keyname="MPSC's answer key", keyshort="MPSC's key",
+           title="Meghalaya PSC Previous Year Question Papers with Answers – MCS Prelims 2026 Papers I & II, LDA 2026 | Learn with Anil",
+           h1='Meghalaya PSC previous year question papers <em>with answers.</em>',
+           aka=('Meghalaya Public Service Commission (MPSC) papers: Meghalaya Civil Service Prelims Papers I and II and the Lower Division Assistant screening '
+                'test, MPSC\'s own Series I booklets with its answer keys.'),
+           aka_short='Meghalaya Public Service Commission (MPSC): MCS Prelims and screening tests',
+           l2line='मेघालय लोक सेवा आयोग (MPSC) के पिछले प्रश्न पत्र — प्रश्न अंग्रेज़ी में, आयोग की उत्तर कुंजी सहित।',
+           desc=lambda t: (f"Meghalaya PSC previous year question papers with answers: Meghalaya Civil Service Prelims 2026 Papers I and II and the LDA screening "
+                           f"test 2026 (MPSC's own booklets), {t:,} questions with MPSC's key and explanations; Meghalaya GK, current affairs, English, "
+                           f"reasoning and computer practice and mock tests for MPSC screening tests (Advt. 01/2026-2027)."),
+           eyebrow='Meghalaya PSC · Civil Service & screening tests',
+           papers_note=("Each paper is MPSC's own Series I booklet (published on mpsc.meghalaya.gov.in), with every answer from the answer key MPSC published for "
+                        "that exam. All papers are in English, as printed. The MCS Prelims papers and the LDA test cover the General English, General "
+                        "Knowledge & Current Affairs and Aptitude & Reasoning parts that MPSC's screening tests ask.")),
     ] + bank_confs() + _ncert().confs(sys.modules[__name__])   # NCERT Class 11 & 12 chapter-wise MCQs (tools/ncert.py; Anil, 16 Nov 2026)
 
 
@@ -3694,6 +3841,8 @@ def exam_terms(e, cat):
     if e['id'] == 'opsc-aso': words += ['opsc', 'odisha public service commission', 'odisha', 'orissa', 'aso', 'assistant section officer', 'odisha secretariat', 'secretariat assistant', 'advocate general', 'odia', 'oriya', 'odisha gk', 'general awareness', 'reasoning', 'mathematics', 'english', 'opsc aso previous year paper', 'opsc aso question paper', 'osssc']
     if e['id'] == 'wbpsc-ido': words += ['wbpsc', 'psc wb', 'west bengal public service commission', 'west bengal', 'bengal', 'ido', 'industrial development officer', 'msme', 'industrial safety', 'pollution control', 'renewable energy', 'physical science', 'west bengal industry', 'miscellaneous', 'misc', 'msre', 'clerkship', 'bengali', 'bangla', 'wbpsc ido previous year paper', 'wbpsc ido question paper', 'wbpsc miscellaneous question paper', 'wbssc']
     if e['id'] == 'dsssb': words += ['dsssb', 'delhi subordinate services selection board', 'delhi', 'mts', 'multi tasking staff', 'multi-tasking staff', 'aaya', 'je', 'junior engineer', 'electrical', 'patwari', 'section officer', 'delhi gk', 'hindi', 'reasoning', 'arithmetic', 'electrical engineering', 'dsssb previous year paper', 'dsssb question paper', 'dsssb mts question paper', 'dsssb je question paper']
+    if e['id'] == 'jkssb-je-civil': words += ['jkssb', 'jk ssb', 'jammu and kashmir services selection board', 'jammu', 'kashmir', 'j&k', 'je', 'junior engineer', 'civil', 'civil engineering', 'jal shakti', 'pwd', 'r&b', 'surveying', 'rcc', 'soil mechanics', 'hydraulics', 'jkssb je civil previous year paper', 'jkssb je question paper', 'jkssb junior engineer civil question paper']
+    if e['id'] == 'meghalaya-psc': words += ['meghalaya', 'meghalaya psc', 'mpsc meghalaya', 'meghalaya public service commission', 'shillong', 'mcs', 'meghalaya civil service', 'lda', 'lower division assistant', 'meghalaya gk', 'khasi', 'garo', 'jaintia', 'north east', 'northeast', 'meghalaya psc previous year paper', 'mcs prelims question paper']
     if e['id'] == 'uppsc-ro-aro': words += ['uppsc', 'uttar pradesh public service commission', 'ro', 'aro', 'ro/aro', 'ro aro', 'review officer', 'assistant review officer', 'samiksha adhikari', 'sahayak samiksha adhikari', 'up', 'uttar pradesh', 'general hindi', 'up gk', 'prelims', 'uppsc ro aro mock test', 'यूपीपीएससी', 'समीक्षा अधिकारी', 'सहायक समीक्षा अधिकारी', 'आरओ', 'एआरओ', 'सामान्य हिंदी']
     if e['id'] == 'upsssc-inter-level': words += ['upsssc', 'uttar pradesh subordinate services selection commission', 'up', 'uttar pradesh', 'inter level', 'intermediate level', 'inter level mains', 'mains', 'pet', 'pet 2025', 'lekhpal', 'gram vikas adhikari', 'vdo', 'gram panchayat adhikari', 'gpa', 'vpo', 'amin', 'vanijya kar sangrah amin', 'bhumi arjan amin', 'samaj kalyan paryavekshak', 'lower subordinate', 'lower pcs', 'up gk', 'hindi', 'upsssc mock test', 'यूपीएसएसएससी', 'लेखपाल', 'ग्राम विकास अधिकारी', 'ग्राम पंचायत अधिकारी', 'इंटर स्तरीय', 'मुख्य परीक्षा']
     if e['id'] == 'gsssb-cce': words += ['gsssb', 'gujarat subordinate service selection board', 'gujarat gaun seva pasandgi mandal', 'cce', 'cce 2.0', 'combined competitive exam', 'class 3', 'class-3', 'class iii', 'group a', 'group b', 'gujarat', 'gujarati', 'junior clerk', 'senior clerk', 'head clerk', 'office assistant', 'social welfare inspector', 'sub registrar', 'gsssb clerk', 'ojas', 'gsssb mock test', 'જુનિયર ક્લાર્ક', 'સિનિયર ક્લાર્ક', 'ગૌણ સેવા', 'જીએસએસએસબી', 'સંયુક્ત સ્પર્ધાત્મક પરીક્ષા']
@@ -3799,6 +3948,8 @@ BOARD_PHOTO = {   # free-licence photos from Wikimedia Commons, cropped to 640x2
     'od': ('Konark Sun Temple', 'Joydeep', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Konark_Sun_Temple_Puri_district,_Odisha,_India_1.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),   # Odisha (16 Nov 2026)
     'wb': ('Victoria Memorial, Kolkata', 'Bernard Gagnon', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Victoria_Memorial,_Kolkata_-_West_facade_02.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),   # West Bengal (16 Nov 2026)
     'dl': ('India Gate, New Delhi', 'Yann', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:India_Gate,_New_Delhi.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),   # Delhi (16 Nov 2026)
+    'jk': ('Shikaras on Dal Lake near Hazratbal, Srinagar', 'Suhail Skindar Sofi', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Dal_Lake_Hazratbal_Srinagar.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),   # Jammu & Kashmir (16 Nov 2026)
+    'ml': ('Living root bridge, Meghalaya', 'Joydeep Chakraborty', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Living_root_bridge,_Maghalaya,_India1.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),   # Meghalaya (16 Nov 2026)
     'br': ('Bihar Legislature, Patna', 'Innocentbunny', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Bihar_Legislature_Building.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
 }
 
@@ -3946,6 +4097,8 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'bpsc-tre': ('Sariputta Stupa, Nalanda Mahavihara', 'Sumitsurai', 'CC BY-SA 4.0', _CW + 'Temple_3_-_Sariputta_Stupa_-_Nalanda_Mahavihara_(10).jpg'),
     'dsssb': ('Arches of the Red Fort, Delhi', 'Syed Sajidul Islam', 'CC BY-SA 4.0', _CW + 'Red_Fort_-Delhi_-Delhi_-SSI_010.jpg'),   # DSSSB (16 Nov 2026)
     'wbpsc-ido': ('Howrah Bridge over the Hooghly, Kolkata', 'Ushnish Jana', 'CC BY-SA 4.0', _CW + 'Howrah_bridge_1.jpg'),   # WBPSC IDO (16 Nov 2026)
+    'jkssb-je-civil': ('Bridges over the Tawi river, Jammu', 'Timothy A. Gonsalves', 'CC BY-SA 4.0', _CW + 'Tawi_Bridges_River_Jammu_Aerial_Jul24_A7CR_01909.jpg'),   # JKSSB JE Civil (16 Nov 2026)
+    'meghalaya-psc': ('Nohkalikai Falls, near Sohra (Cherrapunji)', 'Vikramjit Kakati', 'CC BY-SA 4.0', _CW + 'NohKaLikai_Falls_V2_Wiki.jpg'),   # Meghalaya PSC (16 Nov 2026)
     'opsc-aso': ('Lingaraja Temple, Bhubaneswar', 'Bernard Gagnon', 'CC BY-SA 3.0', _CW + 'Lingaraja_Temple_01.jpg'),   # OPSC ASO (16 Nov 2026)
     'ukpsc-lower-pcs': ('Har Ki Pauri, Haridwar', 'Whispyhistory', 'CC BY-SA 4.0', _CW + 'Har_Ki_Pauri_and_Clock_Tower_of_Haridwar.jpg'),   # UKPSC Lower PCS (16 Nov 2026)
     'cg-vyapam-group-2': ('Bhoramdeo Temple, Kawardha', 'Pankaj Oudhia', 'CC BY-SA 3.0', _CW + 'Bhoramdeo_Temple,_Kawardha.jpg'),   # CG Vyapam Group 2 (16 Nov 2026)
@@ -4042,7 +4195,7 @@ def lang_fills():
 NAV_FUND = ('      <a class="nav-fund" href="/funders.html" title="Fund this project" data-hubonly><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'
             '<path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 5 6.4 5c2 0 3.4 1.1 4.1 2.3h3C14.2 6.1 15.6 5 17.6 5 21 5 23.1 8.5 21.6 11.8 19.5 16.4 12 21 12 21Z"/></svg>'
             '<span>Fund<span class="nf-x"> this project</span></span></a>\n')   # Anil, 2 Nov 2026: "add fund the project...here" (start page top bar)
-BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'ncert', 'tn', 'ka', 'kl', 'mh', 'gj', 'up', 'uk', 'cg', 'od', 'wb', 'dl', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
+BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'ncert', 'tn', 'ka', 'kl', 'mh', 'gj', 'up', 'uk', 'cg', 'od', 'wb', 'dl', 'jk', 'ml', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
 
 
 def hub_html(catalog, counts, grand):
@@ -4846,7 +4999,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-mts/">SSC MTS</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}wbpsc-ido/">WBPSC IDO (West Bengal)</a> · <a href="{rootup}wbpsc-pyqs.html">All WBPSC previous question papers</a> · <a href="{rootup}wbpsc-ido-notification-2026.html">WBPSC IDO Notification 2026</a> · <a href="{rootup}dsssb/">DSSSB MTS &amp; JE (Delhi)</a> · <a href="{rootup}dsssb-pyqs.html">All DSSSB previous question papers</a> · <a href="{rootup}dsssb-mts-je-notification-2026.html">DSSSB MTS &amp; JE Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-mts/">SSC MTS</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}wbpsc-ido/">WBPSC IDO (West Bengal)</a> · <a href="{rootup}wbpsc-pyqs.html">All WBPSC previous question papers</a> · <a href="{rootup}wbpsc-ido-notification-2026.html">WBPSC IDO Notification 2026</a> · <a href="{rootup}dsssb/">DSSSB MTS &amp; JE (Delhi)</a> · <a href="{rootup}dsssb-pyqs.html">All DSSSB previous question papers</a> · <a href="{rootup}dsssb-mts-je-notification-2026.html">DSSSB MTS &amp; JE Notification 2026</a> · <a href="{rootup}jkssb-je-civil/">JKSSB JE Civil (J&amp;K)</a> · <a href="{rootup}jkssb-pyqs.html">All JKSSB previous question papers</a> · <a href="{rootup}jkssb-je-civil-notification-2026.html">JKSSB JE Civil Notification 2026</a> · <a href="{rootup}meghalaya-psc/">Meghalaya PSC</a> · <a href="{rootup}meghalaya-psc-pyqs.html">All Meghalaya PSC previous question papers</a> · <a href="{rootup}meghalaya-psc-notification-2026.html">Meghalaya PSC Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -5902,6 +6055,32 @@ LANDINGS = {
             '<p class="note">DSSSB MTS &amp; JE 2026: <a href="/dsssb-mts-je-notification-2026.html">1,260 posts (Advt. No. 06/2026), apply by 11 December 2026</a>. '
             'Full papers with the real timer: <a href="/dsssb/mock-test.html">DSSSB mock test</a>.</p>',
       te={'DSSSB': 'डीएसएसएसबी प्रश्न पत्र'},
+      order=lambda c: 0),
+  'jkssb-pyqs.html': dict(   # Anil, 16 Nov 2026: JKSSB JE Civil
+      board='JKSSB', ename='JKSSB', crumb='JKSSB PYQs', lang='hi',
+      title='JKSSB Previous Year Question Papers with Answers – JE Civil 2025 & 2023 | Learn with Anil',
+      desc='JKSSB (Jammu & Kashmir Services Selection Board) previous year question papers in one place: Junior Engineer (Civil) OMR exams of 2025 and 2023, '
+           '{n} questions with JKSSB\'s final answer keys and explanations. Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='JKSSB previous question papers with answers',
+      lede="Every JKSSB question paper on Learn with Anil, {n} questions in all, each with JKSSB's final answer key and a short explanation.",
+      intro='<p>Looking for the JKSSB JE Civil question paper with the answer key, subject-wise civil engineering questions, or a JKSSB JE mock test? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p class="note">JKSSB JE Civil 2026: <a href="/jkssb-je-civil-notification-2026.html">458 posts (Advt. No. 11 of 2026), apply 30 November – 29 December 2026</a>. '
+            'Full papers with the real timer: <a href="/jkssb-je-civil/mock-test.html">JKSSB JE Civil mock test</a>.</p>',
+      te={'JKSSB JE Civil': 'जेकेएसएसबी जेई सिविल प्रश्न पत्र'},
+      order=lambda c: 0),
+  'meghalaya-psc-pyqs.html': dict(   # Anil, 16 Nov 2026: Meghalaya PSC
+      board='Meghalaya PSC', ename='Meghalaya PSC', crumb='Meghalaya PSC PYQs', lang='hi',
+      title='Meghalaya PSC Previous Year Question Papers with Answers – MCS Prelims 2026 & LDA 2026 | Learn with Anil',
+      desc='Meghalaya PSC (MPSC) previous year question papers in one place: Meghalaya Civil Service Prelims 2026 Papers I and II and the LDA screening test '
+           '2026, {n} questions with MPSC\'s answer keys and explanations. Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='Meghalaya PSC previous question papers with answers',
+      lede="Every Meghalaya PSC question paper on Learn with Anil, {n} questions in all, each with MPSC's answer key and a short explanation.",
+      intro='<p>Looking for the Meghalaya PSC question paper with the answer key, Meghalaya GK questions, or an MPSC screening test mock? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p class="note">Meghalaya PSC: <a href="/meghalaya-psc-notification-2026.html">Advt. No. 01/2026-2027, 20 posts, apply by 12 December 2026</a>. '
+            'Full papers with the real timer: <a href="/meghalaya-psc/mock-test.html">Meghalaya PSC mock test</a>.</p>',
+      te={'Meghalaya PSC': 'मेघालय पीएससी प्रश्न पत्र'},
       order=lambda c: 0),
 }
 
@@ -7032,7 +7211,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways (RRB): NTPC, Group D'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2'), ('OPSC', 'OPSC (Odisha): ASO'), ('WBPSC', 'WBPSC (West Bengal): IDO'), ('DSSSB', 'DSSSB (Delhi): MTS, JE'), ('SBI', 'Banking: SBI PO'), ('IBPS', 'Banking: IBPS SO')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2'), ('OPSC', 'OPSC (Odisha): ASO'), ('WBPSC', 'WBPSC (West Bengal): IDO'), ('DSSSB', 'DSSSB (Delhi): MTS, JE'), ('JKSSB', 'JKSSB (Jammu & Kashmir): JE Civil'), ('Meghalaya PSC', 'Meghalaya PSC'), ('SBI', 'Banking: SBI PO'), ('IBPS', 'Banking: IBPS SO')]
 
 
 def news_hub_page(loaded, rels):
@@ -7359,6 +7538,8 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'tnpsc-group-4': ('TNPSC Group 4 (CCSE-IV) written exam', '2027-01-10', 'TNPSC Notification No. 11/2026 of 6 October 2026 (exam dashboard on tnpsc.gov.in).'),
   'karnataka-fda-sda': ('KEA FDA/SDA competitive exam (FDA-level papers, Kalyana Karnataka)', '2027-01-09', 'KEA notifications of 29 October 2026: Kannada language test 8 January; FDA-level papers 9 (KK) and 10 January (RPC); SDA-level papers 16 (KK) and 17 January 2027 (RPC).'),
   'ukpsc-lower-pcs': ('UKPSC Lower PCS Prelims 2026 (Advt. A-1/E-2/DR/LSS/2026-27)', None, 'UKPSC Advt. A-1/E-2/DR/LSS/2026-27: applications 6 to 26 November 2026; UKPSC has not announced the prelims date yet.'),
+  'jkssb-je-civil': ('JKSSB Junior Engineer (Civil) written exam (Advt. 11 of 2026)', None, 'JKSSB Advertisement Notification No. 11 of 2026 (27 October 2026): online applications 30 November to 29 December 2026; JKSSB will notify the exam date separately.'),
+  'meghalaya-psc': ('Meghalaya PSC screening tests (Advt. 01/2026-2027)', None, 'MPSC Advt. No. 01/2026-2027 (12 November 2026): apply online till 5 pm on 12 December 2026; screening test dates to be notified.'),
   'dsssb': ('DSSSB MTS and JE Combined Exams 2026 (Advt. 06/2026)', None, 'DSSSB Advt. No. 06/2026 (6 November 2026): applications 12 November to 11 December 2026; the exam dates will be announced on the Board\'s website.'),
   'wbpsc-ido': ('WBPSC Industrial Development Officer written test (Advt. 15/2024)', None, 'WBPSC Advt. No. 15/2024 (detailed advertisement 5 November 2026): applications 6 to 26 November 2026; WBPSC says the date of the screening test will be announced.'),
   'opsc-aso': ('OPSC Assistant Section Officer written exam (Advt. 15 of 2026-27)', '2027-01-17', 'OPSC Advt. No. 15 of 2026-27 (5 November 2026): written exam on 17 January 2027.'),
@@ -8239,7 +8420,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-mts/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/", "/ncert-class-11/", "/ncert-class-12/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-mts/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/jkssb-je-civil/", "/meghalaya-psc/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/", "/ncert-class-11/", "/ncert-class-12/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -8256,7 +8437,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-mts/">SSC MTS PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
-<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/karnataka-gpstr/">GPSTR (Karnataka Teacher) PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li><li><a href="/opsc-aso/">OPSC ASO PYQs</a></li><li><a href="/wbpsc-ido/">WBPSC IDO PYQs</a></li><li><a href="/dsssb/">DSSSB MTS &amp; JE PYQs</a></li></ul>
+<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/karnataka-gpstr/">GPSTR (Karnataka Teacher) PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li><li><a href="/opsc-aso/">OPSC ASO PYQs</a></li><li><a href="/wbpsc-ido/">WBPSC IDO PYQs</a></li><li><a href="/dsssb/">DSSSB MTS &amp; JE PYQs</a></li><li><a href="/jkssb-je-civil/">JKSSB JE Civil PYQs</a></li><li><a href="/meghalaya-psc/">Meghalaya PSC PYQs</a></li></ul>
 </main></body></html>
 """
 

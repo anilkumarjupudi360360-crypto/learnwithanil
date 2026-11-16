@@ -33,7 +33,7 @@ BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC
               'KEA': 'KARNATAKA EXAMINATIONS AUTHORITY', 'MPSC': 'MAHARASHTRA PUBLIC SERVICE COMMISSION', 'GSSSB': 'GUJARAT SUBORDINATE SERVICE SELECTION BOARD',
               'UPSSSC': 'UTTAR PRADESH SUBORDINATE SERVICES SELECTION COMMISSION', 'UPPSC': 'UTTAR PRADESH PUBLIC SERVICE COMMISSION',
               'UKPSC': 'UTTARAKHAND PUBLIC SERVICE COMMISSION', 'CG Vyapam': 'CHHATTISGARH VYAPAM (CHHATTISGARH KARMCHARI CHAYAN MANDAL)',
-              'OPSC': 'ODISHA PUBLIC SERVICE COMMISSION', 'WBPSC': 'PUBLIC SERVICE COMMISSION, WEST BENGAL', 'DSSSB': 'DELHI SUBORDINATE SERVICES SELECTION BOARD',
+              'OPSC': 'ODISHA PUBLIC SERVICE COMMISSION', 'WBPSC': 'PUBLIC SERVICE COMMISSION, WEST BENGAL', 'DSSSB': 'DELHI SUBORDINATE SERVICES SELECTION BOARD', 'JKSSB': 'JAMMU & KASHMIR SERVICES SELECTION BOARD', 'Meghalaya PSC': 'MEGHALAYA PUBLIC SERVICE COMMISSION',
               'Karnataka School Education': 'DEPARTMENT OF SCHOOL EDUCATION, GOVERNMENT OF KARNATAKA'}
 BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
@@ -51,7 +51,9 @@ ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid i
              'cg-vyapam-group-2': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('vd', 'ag', 'sg')},
              'opsc-aso': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('a1', 'a2', 'a3', 's1', 's2', 's3')},
              'wbpsc-ido': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('i19', 'm23')},
-             'dsssb': {pid: (f'{pid}-qp.pdf',) for pid in ('j22', 'p22')}}   # DSSSB's own question papers with answers (green ticks), from its Question Bank   # WBPSC's own booklets (m23 pages 18, 20 turned upright) + its keys   # OPSC's own scans + its keys (key pages of that paper)   # Vyapam's own booklets + final keys
+             'dsssb': {pid: (f'{pid}-qp.pdf',) for pid in ('j22', 'p22')},
+             'jkssb-je-civil': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('c25', 'c23')},   # JKSSB's Series A booklets + provisional key and final key notice
+             'meghalaya-psc': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('c1', 'c2', 'l25')}}   # MPSC's Series I booklets + its answer keys   # DSSSB's own question papers with answers (green ticks), from its Question Bank   # WBPSC's own booklets (m23 pages 18, 20 turned upright) + its keys   # OPSC's own scans + its keys (key pages of that paper)   # Vyapam's own booklets + final keys
 # released mocks with a booklet: exam -> [(mock id, pack, mock name)]; their keys are in BOOKS_PRIV/mock-keys.json
 MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-constable': [('mk-pc-1', 'Mission Khaki – Constable', 'Mock 1')]}
 
@@ -77,6 +79,8 @@ def time_marks(conf, p):
     if conf['id'] == 'mpsc-group-c': return '1 Hour', 100   # MPSC Group-C prelims: 100 questions, 100 marks, 1 hour
     if conf['id'] == 'upsssc-inter-level': return '2 Hours', 100   # UPSSSC Mains: 100 questions, 100 marks, 2 hours
     if conf['id'] == 'opsc-aso': return (('2 Hours', 200) if p['id'] in ('a3', 's3') else ('1 Hour 30 Minutes', 100))   # OPSC ASO papers
+    if conf['id'] == 'jkssb-je-civil': return '120 Minutes', 120   # JKSSB JE (Civil): 120 questions, 1 mark each
+    if conf['id'] == 'meghalaya-psc': return (('2 Hours 30 Minutes', 300) if p['id'] == 'l25' else ('2 Hours', 200))   # MPSC: MCS Prelims papers 100 x 2 marks; LDA 150 x 2 marks
     if conf['id'] == 'dsssb': return '120 Minutes', 200   # DSSSB one-tier tests: 200 questions, 1 mark each
     if conf['id'] == 'wbpsc-ido': return ('1 Hour 30 Minutes', 200 if p['id'] == 'm23' else 100)   # WBPSC: IDO 100 marks; Miscellaneous 100 questions x 2 marks
     if conf['id'] == 'ukpsc-lower-pcs': return '2 Hours', 150   # UKPSC prelims: 150 questions, 150 marks
@@ -182,7 +186,7 @@ def paper_doc(conf, p, qs, mock=None):
               if m else '<div class="s lwa">LEARN<br>WITH<br>ANIL</div>')
     sub = re.sub(r'\s*·\s*booklet [A-Z]\b.*$', '', p.get('notif', ''))
     key = p.get('key') or ("APPSC's final key" if conf['board'] == 'APPSC' else conf.get('keyname') or 'the official key')
-    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC|GSSSB|UPSSSC|UPPSC|UKPSC|CG Vyapam|OPSC|WBPSC|DSSSB)\s+', '', p['title'])
+    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC|GSSSB|UPSSSC|UPPSC|UKPSC|CG Vyapam|OPSC|WBPSC|DSSSB|JKSSB|Meghalaya PSC)\s+', '', p['title'])
     l2name = l2['name'] if not p.get('en_only') and any(q.get('qt') for q in qs) else ''
     when = f' · Held on {esc(p["held"])}' if p.get('held') else ''
     if mock: board = 'LEARN WITH ANIL · ' + mock.upper() + ' TEST SERIES'

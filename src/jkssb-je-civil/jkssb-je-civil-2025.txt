@@ -1,0 +1,1218 @@
+# JKSSB Junior Engineer (Civil), PWD (R&B)/Jal Shakti, OMR Examination 2025 (Advt. No. 03 of 2025), held 2 November 2025, Test Booklet Series A (JKSSB's own booklet, 120 questions); answers: JKSSB's provisional key as revised by its final answer key of 24 November 2025
+
+Q 1 | sur | Surveying
+Which of the following set of terms does not relate to operation of a theodolite?
+(1) Transiting and inverting
+(2) Face left and face right
+(3) Right swing and left swing
+(4) Gauging and sounding
+= 4
+~ Transiting (plunging) the telescope, face left/face right observations and swinging the telescope right or left are all theodolite operations. Gauging (measuring stream discharge) and sounding (measuring water depth) belong to hydrographic surveying, not to theodolite work.
+
+Q 2 | sur | Surveying
+If the whole circle bearing is 315°20′, its quadrantal bearing would be
+(1) S 36°30′ W
+(2) N 44°40′ W
+(3) N 57°24′ W
+(4) S 60°40′ W
+= 2
+~ A WCB between 270° and 360° lies in the NW quadrant, so QB = N (360° − WCB) W = N (360° − 315°20′) W = N 44°40′ W.
+
+Q 3 | sur | Surveying
+Error due to inclination of line of collimation in levelling across a river can be eliminated by
+(1) Reversion
+(2) Reciprocal ranging
+(3) Reciprocal levelling
+(4) Keeping level in middle
+= 3
+~ Across a river the level cannot be set up midway between the two points, so reciprocal levelling is used: readings are taken with the level near each bank in turn and the mean of the two apparent differences of level cancels the collimation error (and curvature and refraction).
+
+Q 4 | sur | Surveying
+The length of a survey line when measured with a chain of 20 m nominal length was found to be 841.5m. If the chain used is 0.1 m too long, the correct length of the measured line is
+(1) 845.7 m
+(2) 837.3 m
+(3) 841.6 m
+(4) 839.4 m
+= 1
+~ True length = (L′/L) × measured length = (20.1/20) × 841.5 = 845.7 m. A chain that is too long gives a measured length that is too short, so the correction is positive.
+
+Q 5 | sur | Surveying
+In any closed traverse, if the survey work is error free, then
+I. The algebraic sum of all the latitudes should be equal to zero
+II. The algebraic sum of all the departures should be equal to zero
+III. The sum of the northings should be equal to the sum of the southings
+Which of the above statements are correct?
+(1) I and II
+(2) I and III
+(3) II and III
+(4) I, II and III
+= 4
+~ For an error-free closed traverse the closing error is zero, so ΣL = 0 and ΣD = 0. ΣL = 0 simply means the sum of northings (+ latitudes) equals the sum of southings (− latitudes), so all three statements hold.
+
+Q 6 | sur | Surveying
+Consider the following statements:
+Reciprocal leveling eliminates the effect of
+I. Errors due to earth's curvature
+II. Errors due to atmospheric refraction
+III. Mistakes in taking levelling staff readings
+IV. Error due to line of collimation
+Which of these statements are correct?
+(1) I, II and III
+(2) I, III and IV
+(3) II, III and IV
+(4) I, II and IV
+= 4
+~ In reciprocal levelling the true difference of level is the mean of the two apparent differences, so the errors of curvature, refraction (assumed equal in both observations) and collimation cancel out. Mistakes in reading the staff are blunders and are not eliminated by any method.
+
+Q 7 | sur | Surveying
+Consider the following statements about the characteristics of contours:
+I. Closed contour lines with higher values inside show a lake
+II. Contour is an imaginary line joining points of equal elevations
+III. Closely spaced contours indicate steep slope
+IV. Contour lines can cross each other in case an overhanging cliff
+Which of these statements are correct?
+(1) II, III and IV
+(2) I and II
+(3) I and IV
+(4) I, II and III
+= 1
+~ Closed contours with higher values inside indicate a hill; a lake or depression has lower values inside, so I is wrong. A contour joins points of equal elevation, close spacing means a steep slope, and contours cross only at an overhanging cliff (or cave), so II, III and IV are correct.
+
+Q 8 | sur | Surveying
+Match List - I with List-II and select the correct answer using the codes given below the lists:
+List - I (Type of survey) — List - II (Purpose)
+i. Topographical survey — 1. To determine boundaries of fields, houses, etc.
+ii. Reconnaissance survey — 2. To find relics of antiquity
+iii. Cadastral survey — 3. To determine natural features of a country
+iv. Archaeological survey — 4. To determine possibility and rough cost of the surveying system to be adopted
+Choose the correct option:
+(1) (i) - 3, (ii) - 4, (iii) - 1, (iv) - 2
+(2) (i) - 3, (ii) - 1, (iii) - 4, (iv) - 2
+(3) (i) - 2, (ii) - 4, (iii) - 1, (iv) - 3
+(4) (i) - 2, (ii) - 1, (iii) - 4, (iv) - 3
+= 1
+~ A topographical survey maps natural features (hills, rivers, forests); a reconnaissance survey is a preliminary look to judge feasibility and rough cost; a cadastral survey fixes property boundaries of fields and houses; an archaeological survey traces relics of antiquity. So i-3, ii-4, iii-1, iv-2.
+
+Q 9 | sur | Surveying
+Match List - I with List-II and select the correct answer using the codes given below the lists:
+List - I (Statement) — List - II (Situation)
+i. Accurate centering in plane table surveying is necessary for — 1. Inaccessible points
+ii. Exact orientation is more important than accurate centering for — 2. Open country with good intervisibility
+iii. The intersection method of plane table surveying is particularly employed for — 3. Large scale maps
+iv. Plane table survey is useful for — 4. Small scale maps
+Choose the correct option:
+(1) (i) - 3, (ii) - 4, (iii) - 1, (iv) - 2
+(2) (i) - 4, (ii) - 3, (iii) - 2, (iv) - 1
+(3) (i) - 1, (ii) - 2, (iii) - 4, (iv) - 3
+(4) (i) - 3, (ii) - 2, (iii) - 1, (iv) - 4
+= 1
+~ A centring error shows up on paper only at large scales, so accurate centring matters for large-scale maps, while at small scales orientation matters more. Intersection locates points by rays from two stations without measuring distance, so it suits inaccessible points; plane tabling suits open country with good intervisibility. Hence i-3, ii-4, iii-1, iv-2.
+
+Q 10 | sur | Surveying
+The following steps are necessary to obtain sufficient accuracy with the tape:
+I. Keeping uniform tension on tape for each measurement
+II. "Breaking" tape on slopes are necessary to keep the tape level
+III. Keeping accurate count of the stations
+IV. Keeping the tape on the line being measured
+The correct sequence of these steps is:
+(1) IV, II, I, III
+(2) II, III, IV, I
+(3) IV, I, II, III
+(4) III, II, I, IV
+= 1,3
+~ Taping starts by holding the tape on the line being measured (IV); it is then pulled with uniform tension (I), held level by breaking the tape on slopes (II), and each tape length is tallied so the count of stations is not lost (III), giving IV, I, II, III. JKSSB's final key accepts both A and C, the two sequences that begin with keeping the tape on line.
+
+Q 11 | som | Strength of Materials
+Robert Hooke discovered experimentally that within elastic limit
+(1) Stress = strain
+(2) Stress × strain = 1
+(3) Stress / Strain = a constant
+(4) None of the above
+= 3
+~ Hooke's law: within the elastic limit stress is proportional to strain, so stress/strain is a constant — the modulus of elasticity E (σ = Eε).
+
+Q 12 | som | Strength of Materials
+A circular bar is subjected to an axial pull of 100 kN. If the maximum intensity of shear stress on any oblique plane is not to exceed 60 MN/m², determine the diameter of the bar.
+(1) 21.6 mm
+(2) 32.6 mm
+(3) 45.6 mm
+(4) 48.6 mm
+= 2
+~ Under axial pull the maximum shear stress (on the 45° plane) is σ/2 = P/2A. So 60 = 100 × 10³/(2A) gives A = 833.3 mm², and d = √(4A/π) = √1061 = 32.6 mm.
+
+Q 13 | som | Strength of Materials
+In case of a circular section, the maximum shear stress is ______ percent more than the mean shear stress.
+(1) 10
+(2) 20
+(3) 33.33
+(4) 66.66
+= 3
+~ For a circular section τmax = (4/3) τavg, i.e. 33.33% more than the mean shear stress (for a rectangular section it is 1.5 τavg, i.e. 50% more).
+
+Q 14 | som | Strength of Materials
+In a rectangular section, the stress will be of the same sign throughout the section if the load lies within the ______ of the section.
+(1) Middle third
+(2) Middle half
+(3) Both (A) and (B)
+(4) None of the above
+= 1
+~ No tension develops when the eccentricity e ≤ b/6 on either side of the centroid, i.e. the load lies within the middle third of a rectangular section (the kern). For a solid circular section the kern is the middle quarter (diameter d/4).
+
+Q 15 | som | Strength of Materials
+A cantilever 1.5 m long carries a uniformly distributed load over the entire length. Find the deflection at the free end if the slope at the free end is 1.5°.
+(1) 21.88 mm
+(2) 29.45 mm
+(3) 36.48 mm
+(4) 41.54 mm
+= 2
+~ For a cantilever with UDL, θ = wL³/6EI and y = wL⁴/8EI, so y = (3/4) θ L. θ = 1.5° = 0.02618 rad, hence y = 0.75 × 0.02618 × 1500 mm = 29.45 mm.
+
+Q 16 | som | Strength of Materials
+The slope and deflection at a section in a loaded beam can be found out by which of the following methods?
+(1) Double integration method
+(2) Moment area method
+(3) Macaulay's method
+(4) Any of the above
+= 4
+~ Slope and deflection can be found by double integration of EI d²y/dx² = M, by the moment-area theorems, or by Macaulay's method (a step-function form of double integration) — any of them works.
+
+Q 17 | som | Strength of Materials
+The material that exhibits the same elastic properties in all directions at a point is said to be ______
+(1) homogeneous
+(2) orthotropic
+(3) viscoelastic
+(4) isotropic
+= 4
+~ Isotropic means identical elastic properties in every direction at a point. Homogeneous means the same properties at every point of the body; orthotropic means different properties along three mutually perpendicular directions.
+
+Q 18 | som | Strength of Materials
+If principal stresses in a two-dimensional case are −10 MPa and 20 MPa respectively, then maximum shear stress at the point is
+(1) 10 MPa
+(2) 15 MPa
+(3) 20 MPa
+(4) 30 MPa
+= 2
+~ τmax = (σ1 − σ2)/2 = (20 − (−10))/2 = 15 MPa. With unlike principal stresses this in-plane value is also the absolute maximum.
+
+Q 19 | som | Structural Analysis
+All the members of the planar truss (see figure), have the same properties in terms of area of cross-section (A) and modulus of elasticity (E),
+For the loads shown on the truss, the statements that correctly represents the nature of forces in the members of the truss is:
+(1) There are 3 members in tension, and 2 members in compression
+(2) There are 2 members in tension, and 2 members in compression, 1 zero-force member
+(3) There are 2 members in tension, 1 member in compression, and 2 zero-force members
+(4) There are 2 members in tension, and 3 zero-force members
+= 4
+~ At the top-left and bottom-right joints only two members meet and the load P acts along one of them, so the vertical at these joints is a zero-force member and the top and bottom members each carry P in tension. The diagonal joins the two hinged supports, which cannot move, so it cannot change length and carries no force; the couple of the loads is taken by horizontal reactions P at the hinges. So: 2 tension, 3 zero-force members.
+! img/c25-q19.png
+
+Q 20 | som | Strength of Materials
+The following statement are related to bending of beams
+I. The slope of the bending moment diagram is equal to the shear force
+II. The slope of the shear force diagram is equal to the load intensity
+III. The slope of the curvature is equal to the flexural rotation
+IV. The second derivative of the deflection is equal to the curvature
+The only FALSE statement is
+(1) I
+(2) II
+(3) III
+(4) IV
+= 3
+~ dM/dx = V, dV/dx = load intensity w, and d²y/dx² = 1/R (curvature) are standard beam relations. Flexural rotation (slope) is the first derivative of the deflection, dy/dx, not the slope of the curvature, so III is false.
+
+Q 21 | som | Strength of Materials
+A circular solid shaft of span L = 5 m is fixed at one end and free at the other end. A twisting moment T = 100 kN-m is applied at the free end. The torsional rigidity GJ is 50000 kN-m²/rad. Following statements are made for this shaft:
+1. The maximum rotation is 0.01 rad
+2. The torsional strain energy is 1 kN-m
+With reference to the above statements, which of the following applies?
+(1) Both statements are true
+(2) Statement 1 is true but 2 is false
+(3) Statement 2 is true but 1 is false
+(4) Both statements are false
+= 2
+~ Angle of twist θ = TL/GJ = 100 × 5/50000 = 0.01 rad, so statement 1 is true. Strain energy U = Tθ/2 = T²L/2GJ = 100 × 0.01/2 = 0.5 kN-m, not 1 kN-m, so statement 2 is false.
+
+Q 22 | som | Strength of Materials
+Consider the following statements:
+I. On a principal plane, only normal stress acts
+II. On a principal plane, both normal and shear stresses act
+III. On a principal plane, only shear stress acts
+IV. Isotropic state of stress is independent of frame of reference
+Which of these statements is/are correct?
+(1) I and IV
+(2) II only
+(3) II and IV
+(4) II and III
+= 1
+~ Principal planes are planes of zero shear stress, so only normal (principal) stress acts on them — I is true, II and III are false. In an isotropic (hydrostatic) state σ1 = σ2 = σ3, so every plane carries the same normal stress and no shear, whatever the axes — IV is true.
+
+Q 23 | som | Strength of Materials
+The "Plane section remain plane" assumption in bending theory implies
+(1) Stress profile is linear
+(2) Strain profile is linear
+(3) Both profiles are linear
+(4) Shear deformation is neglected
+= 2
+~ If plane sections remain plane, the strain at any fibre is proportional to its distance from the neutral axis (ε = y/R), i.e. the strain profile is linear. A linear stress profile further needs Hooke's law (linear elastic material), which is a separate assumption.
+
+Q 24 | som | Strength of Materials
+List-I shows different loads acting on a beam and List-II shows different bending moment distributions. Match the load with the corresponding bending moment diagram.
+(1) A - 4, B - 2, C - 1, D - 3
+(2) A - 4, B - 3, C - 1, D - 2
+(3) A - 2, B - 3, C - 4, D - 1
+(4) None of the above
+= 4
+~ A couple at mid-span gives an antisymmetric BMD with a sudden jump (2); a central point load gives a triangle (4); a UDL gives a symmetric parabola (1); a triangular (linearly varying) load gives an unsymmetrical cubic curve (3). The correct match A-2, B-4, C-1, D-3 is not among options A–C.
+! img/c25-q24.png
+
+Q 25 | som | Strength of Materials
+Four columns of the same material and having identical geometric properties are supported in different ways as shown below:
+It is required to arrange these four columns in the increasing order of their respective first buckling loads. The correct order is given by
+(1) I, II, III, IV
+(2) III, IV, I, II
+(3) II, I, IV, III
+(4) I, II, IV, III
+= 4
+~ Euler load P = π²EI/Le², so P rises as the effective length falls. Le: (I) fixed–free 2L, (II) hinged–hinged L, (IV) fixed–hinged 0.7L (L/√2), (III) fixed–fixed 0.5L. Increasing order of buckling load: I, II, IV, III.
+! img/c25-q25.png
+
+Q 26 | hyd | Irrigation & Water Resources
+Find the delta for a crop when its duty is 864 hectares/cumec on the field, the base period of this crop is 120 days.
+(1) 104 cm
+(2) 120 cm
+(3) 138 cm
+(4) 720 cm
+= 2
+~ Δ = 8.64 B/D metres, with B in days and D in ha/cumec. Δ = 8.64 × 120/864 = 1.2 m = 120 cm.
+
+Q 27 | hyd | Irrigation & Water Resources
+The depth of penetration along the length of a boarder strip at points 30 meters apart were probed. Their observed values are 2.0, 1.9, 1.8, 1.6 and 1.5 meters. Compute the water distribution efficiency.
+(1) 0.168
+(2) 0.905
+(3) 1.760
+(4) 2.105
+= 2
+~ Mean depth d = (2.0 + 1.9 + 1.8 + 1.6 + 1.5)/5 = 1.76 m. Mean absolute deviation y = (0.24 + 0.14 + 0.04 + 0.16 + 0.26)/5 = 0.168 m. Distribution efficiency ηd = 1 − y/d = 1 − 0.168/1.76 = 0.905.
+
+Q 28 | hyd | Irrigation & Water Resources
+A tile drainage system draining 12 hectares, flows at a design capacity for two days, following a storm. If the system is designed using a drainage coefficient of 1.25 cm, how many cubic meters of water will be removed during this period?
+(1) 1000 m³
+(2) 2000 m³
+(3) 3000 m³
+(4) 4000 m³
+= 3
+~ The drainage coefficient is the depth of water removed per day (1.25 cm/day). Volume = 12 × 10⁴ m² × 0.0125 m/day × 2 days = 3000 m³.
+
+Q 29 | hyd | Irrigation & Water Resources
+The recharging rate of ground water depends upon ______ and on the depth of water stored, and is generally less.
+(1) the permeability of the spread area
+(2) Renney type wells
+(3) Infiltration tube springs
+(4) None of the above
+= 1
+~ In artificial recharge by spreading, water percolates through the soil of the spreading area, so the recharge rate depends on the permeability (infiltration capacity) of the spread area and on the depth of water ponded over it. Ranney (radial collector) wells are structures for drawing groundwater out, not factors that govern recharge.
+
+Q 30 | hyd | Irrigation & Water Resources
+The lake of water which is formed upstream is often called a ______
+(1) creep
+(2) reservoir
+(3) side flanks
+(4) swift trinity
+= 2
+~ When a dam is built across a river, the water impounded upstream forms an artificial lake called a reservoir. Creep refers to seepage along the base of a weir, and flanks are the sides (abutments) of the dam.
+
+Q 31 | hyd | Irrigation & Water Resources
+The following statements are related to cross drainage works and their types.
+Statement - 1: The culvert length or width of aqueduct is maximum in Type I and minimum in Type III. An intermediate value exists in Type II.
+Statement - 2: In Type III, earthen section of the canal is discontinued and the canal water is carried in a masonry or a flumed in this case.
+Choose the correct option:
+(1) Statement 1 is correct and Statement 2 is incorrect
+(2) Statement 2 is correct and Statement 1 is incorrect
+(3) Statement 1 and 2 are correct
+(4) Statement 1 and 2 are incorrect
+= 3
+~ In Type I aqueducts the canal's earthen banks with their slopes are carried over the drain, so the culvert/barrel is longest; in Type II the outer slopes are replaced by retaining walls (intermediate length); in Type III the earthen section is discontinued and water flows in a masonry or concrete trough (flumed), giving the shortest culvert. Both statements are correct.
+
+Q 32 | hyd | Irrigation & Water Resources
+Consider the following Statements:
+Statement - 1: The length of the guide bank on the downstream side should be between 0.1 L to 0.2 L. L indicates the length of structure between the abutments.
+Statement - 2: The top level of guide banks is governed by HFL, afflux, velocity head and freeboard. It can be obtained by adding all these four values.
+Choose the correct option:
+(1) Statement 1 is correct and Statement 2 is incorrect
+(2) Statement 2 is correct and Statement 1 is incorrect
+(3) Statement 1 and 2 are correct
+(4) Statement 1 and 2 are incorrect
+= 3
+~ Guide banks extend well upstream of a bridge or weir but only a short way downstream: by Spring's rule about 0.1 L to 0.2 L, where L is the length of the structure between the abutments. Their top level is fixed by adding afflux, velocity head and freeboard to the HFL. Both statements are correct.
+
+Q 33 | hyd | Irrigation & Water Resources
+The drainage water intercepting the canal can be disposed in different ways. And the type of cross-drainage works with their function is given below. Match List - I with List-II and select the correct answer using the codes given below the lists:
+List - I (Function/Places) — List - II (Accomplished)
+1. By passing the canal over the drainage — i. Either through a level crossing or through inlets and outlets
+2. By passing the canal below the drainage — ii. Either through a super-passage or through a canal syphon
+3. By passing the drain through a canal — iii. Either through an aqueduct or through a syphon-aqueduct
+Choose the correct option:
+(1) (1)-i, (2)-ii, (3)-iii
+(2) (1)-ii, (2)-iii, (3)-i
+(3) (1)-iii, (2)-i, (3)-ii
+(4) (1)-iii, (2)-ii, (3)-i
+= 4
+~ Canal over the drain: aqueduct or syphon-aqueduct. Canal below the drain: super-passage or canal syphon. Drain passed through (at the level of) the canal: level crossing or inlets and outlets. Hence 1-iii, 2-ii, 3-i.
+
+Q 34 | hyd | Irrigation & Water Resources
+Match List - I with List-II and select the correct answer using the codes given below the lists:
+List-I (Classification of River Training) — List - II (Purpose)
+1. High water training — i. Sediment (efficient disposal of suspended load and bed load)
+2. Low water training — ii. Discharge (flood control)
+3. Mean water training — iii. Depth (provide sufficient water depth)
+Choose the correct option:
+(1) (1)-i, (2)-ii, (3)-iii
+(2) (1)-ii, (2)-iii, (3)-i
+(3) (1)-iii, (2)-i, (3)-ii
+(4) (1)-iii, (2)-ii, (3)-i
+= 2
+~ High water training (training for discharge) aims at flood control; low water training (training for depth) keeps enough depth for navigation in the lean season; mean water training (training for sediment) shapes the channel for efficient disposal of suspended and bed load. Hence 1-ii, 2-iii, 3-i.
+
+Q 35 | hyd | Irrigation & Water Resources
+______(i)______ evaporates water, and ______(ii)______, by causing and controlling winds, circulates the evaporated water vapour, and thus, helping in its ______(iii)______ at different places.
+Choose the correct option to fill out i, ii, iii in order.
+(1) Sun, hydro cycle, filtration
+(2) Sun, Coriolis force, filtration
+(3) Sun, cycle, precipitation
+(4) Sun, Coriolis force, reprecipitation
+= 4
+~ In the hydrologic cycle the sun's heat evaporates water; the winds, deflected and steered by the Coriolis force of the earth's rotation, circulate the vapour, which condenses and falls again as rain or snow (reprecipitation) at other places. Filtration plays no part.
+
+Q 36 | env | Water Supply & Sanitary Engineering
+In a domestic wastewater sample, COD and BOD were measured. Generally, which of the following statement is true for their relative magnitude?
+(1) COD = BOD
+(2) COD > BOD
+(3) COD < BOD
+(4) None of the above
+= 2
+~ COD uses a strong chemical oxidant (acid potassium dichromate) and oxidises both biodegradable and non-biodegradable organic matter, while BOD measures only the part that microbes can oxidise during the test period. Hence for domestic wastewater COD is greater than BOD.
+
+Q 37 | env | Water Supply & Sanitary Engineering
+The portable water is prepared from turban surface water by adopting the following treatment sequence.
+(1) Turbid surface water - Coagulation - Flocculation - Sedimentation - Filtration - Disinfection - Storage and Supply
+(2) Turbid surface water - Sedimentation - Coagulation - Flocculation - Filtration - Disinfection - Storage and Supply
+(3) Turbid surface water - Flocculation - Coagulation - Filtration - Disinfection - Sedimentation - Storage and Supply
+(4) Turbid surface water - Coagulation - Flocculation - Filtration - Disinfection - Sedimentation - Storage and Supply
+= 1
+~ A coagulant is first rapid-mixed (coagulation), gently stirred to grow flocs (flocculation), the flocs are settled out in a clarifier (sedimentation), the remaining fine matter is removed by filtration, and disinfection comes last before storage and supply. Sedimentation must precede filtration, and disinfection is the final step.
+
+Q 38 | env | Water Supply & Sanitary Engineering
+A 1% solution of sewage sample is incubated for 5 days at 20°C. The depletion of oxygen was found to be 3ppm. Determine the BOD of raw sewage.
+(1) 60 ppm
+(2) 150 ppm
+(3) 300 ppm
+(4) 600 ppm
+= 3
+~ BOD = DO depletion ÷ dilution fraction = 3 ÷ 0.01 = 300 ppm (mg/L).
+
+Q 39 | env | Water Supply & Sanitary Engineering
+As per Noise Pollution (Regulation and Control) Rules 2000 of India, the day time noise limit for a residential zone, expressed in dB (A) Leq, is
+(1) 45
+(2) 55
+(3) 65
+(4) 75
+= 2
+~ The Schedule to the Noise Pollution (Regulation and Control) Rules, 2000 prescribes day/night limits in dB(A) Leq of 75/70 for industrial, 65/55 for commercial, 55/45 for residential and 50/40 for silence zones. So the residential day-time limit is 55 dB(A).
+
+Q 40 | bmc | Building Construction
+When the depth of trench exceeds 1.5 to 2m, and when excavations is made with side vertical, it becomes necessary to support the side by sheeting and bracing. This operation is known as ______
+(1) shafts of trench
+(2) electro-osmosis
+(3) boning of trench
+(4) timbering of trench
+= 4
+~ Supporting the vertical sides of a deep trench with planks (sheeting) held by struts and wales (bracing) is called timbering of trenches. Electro-osmosis is a method of draining fine-grained soil, and boning (with boning rods) is used to set out levels and gradients.
+
+Q 41 | env | Water Supply & Sanitary Engineering
+The following two statements are relevant to method of sewage disposal.
+Statement - 1: The three principal processes of land treatment of wastewater are (i) Broad irrigation or sewage farming, (ii) Rapid infiltration, and (iii) Overland runoff.
+Statement - 2: The ratio of quantity of receiving water to that of wastewater or effluent discharge is called the dilution factor.
+Choose the correct option:
+(1) Statement 1 is correct and Statement 2 is incorrect
+(2) Statement 2 is correct and Statement 1 is incorrect
+(3) Statement 1 and 2 are correct
+(4) Statement 1 and 2 are incorrect
+= 3
+~ Land treatment of wastewater is done by slow-rate irrigation (broad irrigation/sewage farming), rapid infiltration and overland flow (runoff). The dilution factor is the ratio of the quantity of the receiving (diluting) water to the quantity of wastewater discharged. Both statements are correct.
+
+Q 42 | env | Water Supply & Sanitary Engineering
+Match List - I with List-II and select the correct answer using the codes given below the lists:
+List - I (Water properties) — List - II (Titrants)
+i. Alkalinity — 1. N/35.5 AgNO₃
+ii. Hardness — 2. N/40 Na₂S₂O₃
+iii. Chlorine — 3. N/50 H₂SO₄
+iv. Dissolved Oxygen — 4. N/50 EDTA
+Choose the correct option:
+(1) (i) - 2, (ii) - 4, (iii) - 3, (iv) - 1
+(2) (i) - 3, (ii) - 4, (iii) - 1, (iv) - 2
+(3) (i) - 1, (ii) - 2, (iii) - 4, (iv) - 3
+(4) (i) - 4, (ii) - 3, (iii) - 2, (iv) - 1
+= 2
+~ Alkalinity is titrated with N/50 H₂SO₄, hardness with N/50 EDTA (Eriochrome Black T indicator), chloride ('chlorine' in the list) with N/35.5 AgNO₃ by Mohr's method, and dissolved oxygen by Winkler's method with N/40 sodium thiosulphate. Hence i-3, ii-4, iii-1, iv-2.
+
+Q 43 | env | Water Supply & Sanitary Engineering
+Match List - I with List-II and select the correct answer using the codes given below the lists:
+List - I (Materials and Air pollutants) — List - II (Effects)
+1. Materials: Metals; and Pollutants: SO₂ — i. Embrittlement
+2. Materials: Paper; and Pollutants: SO₂ — ii. Reduction in tensile strength
+3. Materials: Textiles; and Pollutants: SO₂ — iii. Tarnishing of surfaces
+Choose the correct option:
+(1) (1)-i, (2)-ii, (3)-iii
+(2) (1)-ii, (2)-iii, (3)-i
+(3) (1)-iii, (2)-i, (3)-ii
+(4) (1)-iii, (2)-ii, (3)-i
+= 3
+~ SO₂ with moisture forms sulphurous/sulphuric acid, which corrodes and tarnishes metal surfaces, makes paper brittle (embrittlement) and weakens fibres, reducing the tensile strength of textiles. Hence 1-iii, 2-i, 3-ii.
+
+Q 44 | env | Water Supply & Sanitary Engineering
+Match List - I with List-II and select the correct answer using the codes given below the lists:
+List - I (Type of water impurity) — List - II (Method of treatment)
+i. Hardness — 1. Reverse Osmosis
+ii. Brackish water from sea — 2. Chlorination
+iii. Residual MPN from filters — 3. Zeolite treatment
+iv. Turbidity — 4. Coagulation, Flocculation and Filtration
+Choose the correct option:
+(1) (i) - 1, (ii) - 4, (iii) - 3, (iv) - 2
+(2) (i) - 4, (ii) - 3, (iii) - 1, (iv) - 2
+(3) (i) - 2, (ii) - 1, (iii) - 4, (iv) - 3
+(4) (i) - 3, (ii) - 1, (iii) - 2, (iv) - 4
+= 4
+~ Hardness is removed by zeolite (base-exchange) softening; brackish or sea water is desalinated by reverse osmosis; coliforms (MPN) remaining after filtration are killed by chlorination; turbidity is removed by coagulation, flocculation and filtration. Hence i-3, ii-1, iii-2, iv-4.
+
+Q 45 | env | Water Supply & Sanitary Engineering
+Particles may settle out of a suspension in four ways, depending upon the concentration of the suspension and the flocculating properties of the particles. Arrange the four types in order with respect to decreasing of settling depth vs increasing of settling time.
+Choose the correct order.
+(1) Discreate settling, Flocculant settling, Zone settling, Compression settling
+(2) Compression settling, Flocculant settling, Discreate settling, Zone settling
+(3) Zone settling, Flocculant settling, Discreate settling, Compression settling
+(4) Discreate settling, Zone settling, Flocculant settling, Compression settling
+= 1
+~ As concentration rises the settling regime changes from Type I discrete settling (dilute, non-flocculent particles) to Type II flocculant settling, Type III zone (hindered) settling of a concentrated mass, and finally Type IV compression settling at the bottom of the tank, where the sludge layer compacts slowly over a long time.
+
+Q 46 | bmc | Building Materials
+Gap grading of aggregate is one, in which
+(1) At least one intermediate aggregate fraction is absent
+(2) % passing fall within a narrow limit of size fractions
+(3) Combines different fractions of fine and coarse aggregates
+(4) All the aggregate are of same size
+= 1
+~ A gap-graded aggregate has one or more intermediate size fractions omitted from the grading curve (which shows a flat 'gap'). A grading confined to a narrow size range is uniform grading, all sizes present in proportion is continuous (well) grading, and one size only is single-sized aggregate.
+
+Q 47 | rcc | RCC Design
+As per limit state design method the ultimate strain in the outermost compression fiber of concrete in bending is taken as
+(1) 0.0020
+(2) 0.0120
+(3) 0.0035
+(4) 0.0520
+= 3
+~ IS 456:2000 (cl. 38.1) takes the maximum strain in concrete at the outermost compression fibre in flexure as 0.0035. The value 0.002 is the strain at which the parabolic stress block reaches its peak and the limiting strain under axial compression.
+
+Q 48 | som | Engineering Mechanics
+A frame having (M) number of member and joints (J) is said to be perfect frame if it follows the equation as given below
+(1) J = 2M − 3
+(2) M = 2J − 3
+(3) M = 3J − 2
+(4) J = M + 3
+= 2
+~ A plane frame has 2J equilibrium equations, 3 of which are taken by the support reactions, so a perfect frame needs exactly M = 2J − 3 members. With fewer members it is deficient (unstable); with more it is redundant.
+
+Q 49 | som | Strength of Materials
+Consider the following pairs, for a cantilever beam of length (l), loaded by point load (w) and flexural rigidity (EI).
+i. Maximum Bending Moment — 1. wl
+ii. Strain Energy — 2. wl²/2EI
+iii. Maximum slop — 3. wl³/3EI
+iv. Maximum deflection — 4. w²l³/6EI
+Which of the pair given below is correctly matched?
+(1) (i)-(1), (ii)-(4), (iii)-(3), (iv)-(2)
+(2) (i)-(1), (ii)-(4), (iii)-(2), (iv)-(3)
+(3) (i)-(4), (ii)-(2), (iii)-(1), (iv)-(3)
+(4) (i)-(4), (ii)-(3), (iii)-(1), (iv)-(2)
+= 2
+~ For a cantilever with load w at the free end: Mmax = wl (at the support), slope at the free end = wl²/2EI, deflection = wl³/3EI, and strain energy U = ∫(wx)² dx/2EI over 0 to l = w²l³/6EI. Hence i-1, ii-4, iii-2, iv-3.
+
+Q 50 | bmc | Building Materials
+The constituent compounds of cement in decreasing order of rate of hydration are
+(1) C₂S, C₃S and C₃A
+(2) C₃S, C₃A and C₂S
+(3) C₃A, C₂S and C₃S
+(4) C₃A, C₃S and C₂S
+= 4
+~ C₃A reacts with water almost instantly (hence gypsum is added to control flash set), C₃S hydrates fast and gives early strength in the first weeks, and C₂S hydrates slowly and contributes later strength. So the order is C₃A > C₃S > C₂S.
+
+Q 51 | som | Structural Analysis
+Which of the following Indian Standard (IS) code used for wind load analysis for designing building structure
+(1) IS 456
+(2) IS 800
+(3) IS 875
+(4) IS 1893
+= 3
+~ IS 875 gives design loads (other than earthquake) for buildings; its Part 3 covers wind loads. IS 456 is for plain and reinforced concrete, IS 800 for general construction in steel and IS 1893 for earthquake-resistant design.
+
+Q 52 | rcc | RCC Design
+In a cantilever RCC beam design, tensile reinforcement is provided
+(1) On the top of the beam
+(2) On the bottom of the beam
+(3) In the middle of the beam
+(4) On the top and bottom of the beam
+= 1
+~ A cantilever bends with hogging moment, so its top fibres are in tension and the bottom in compression. Main tensile steel is therefore placed near the top face, with maximum steel at the fixed support.
+
+Q 53 | bmc | Building Materials
+For construction of structure under water the type of lime used is
+(1) Hydraulic lime
+(2) Fat lime
+(3) Quick lime
+(4) Pure lime
+= 1
+~ Hydraulic lime contains clay (silica and alumina) and sets by chemical reaction with water, so it can harden under water and in damp places. Fat (pure) lime and quicklime harden only slowly by absorbing CO₂ from the air, so they are unsuitable for underwater work.
+
+Q 54 | bmc | Building Materials
+The standard size of the brick as per IS standard is
+(1) 10 × 9 × 9 cm
+(2) 18 × 9 × 9 cm
+(3) 19 × 9 × 9 cm
+(4) 23 × 12 × 8 cm
+= 3
+~ The IS (modular) brick measures 19 × 9 × 9 cm; with a 1 cm mortar joint its nominal size becomes 20 × 10 × 10 cm.
+
+Q 55 | bmc | Building Materials
+Inadequate compaction during concrete casting results in
+(1) Segregation
+(2) Rutting
+(3) Bleeding
+(4) Honey combing
+= 4
+~ If concrete is not properly compacted, entrapped air remains and coarse aggregate is left without enough mortar around it, leaving honeycomb voids. Segregation comes from poor handling or over-vibration, bleeding is the rise of mix water, and rutting is a pavement defect.
+
+Q 56 | rcc | RCC Design
+Side face reinforcement is required when the depth of the web of a beam is
+(1) Greater than 750 mm
+(2) Greater than 900 mm
+(3) Greater than 950 mm
+(4) Greater than 1000 mm
+= 1
+~ IS 456:2000 (cl. 26.5.1.3): where the depth of the web of a beam exceeds 750 mm, side face reinforcement of 0.1% of the web area is provided, distributed equally on the two faces, to control cracking on the sides.
+
+Q 57 | som | Strength of Materials
+Distribution of shear stress intensity over a rectangular section of a loaded beam follows diagrammatically
+(1) A circular curve
+(2) A straight line
+(3) A parabolic curve
+(4) An elliptical curve
+= 3
+~ For a rectangular section τ = (V/2I)(d²/4 − y²), which varies parabolically with y: zero at the top and bottom fibres and maximum (1.5 times the average) at the neutral axis.
+
+Q 58 | bmc | Building Materials
+The compressive strength of 100 mm cube as compared to 150 mm cube is always
+(1) More
+(2) Less
+(3) Same
+(4) Unpredictable
+= 1
+~ Size effect: a smaller specimen contains fewer flaws and is more restrained by the friction of the loading platens, so a 100 mm cube shows a higher compressive strength than a 150 mm cube of the same concrete.
+
+Q 59 | bmc | Building Materials
+Which of the following is a tensile test of a cylindrical concrete sample,
+(1) Compaction factor test
+(2) Le Chatelier's test
+(3) Splitting test
+(4) Autoclave test
+= 3
+~ In the split cylinder (Brazilian) test a cylinder is loaded in compression along two opposite generators, splitting it along the diameter; tensile strength = 2P/(πDL). Compaction factor measures workability, while Le Chatelier and autoclave tests check soundness of cement.
+
+Q 60 | rcc | RCC Design
+The main reinforcement of a RC slab consists of 6 mm bars at 10 cm spacing if it is desired to replace 6 mm bars by 12 mm bars, then spacing of 12 mm bars should be
+(1) 10 cm
+(2) 40 cm
+(3) 60 cm
+(4) 120 cm
+= 2
+~ For the same steel area per metre, spacing is proportional to the area of one bar: s₂ = s₁ × (d₂/d₁)² = 10 × (12/6)² = 40 cm.
+
+Q 61 | soil | Soil Mechanics & Foundations
+The void ratio of a fully saturated soil sample having a porosity of 0.3 is
+(1) 0.26
+(2) 0.66
+(3) 0.43
+(4) 1.0
+= 3
+~ Void ratio and porosity are related by e = n/(1 − n), whatever the degree of saturation. e = 0.3/(1 − 0.3) = 0.3/0.7 ≈ 0.43.
+
+Q 62 | soil | Soil Mechanics & Foundations
+The soil has a bulk density of 55 kN/m³ and water content 10%. The dry density of soil is
+(1) 5.5 kN/m³
+(2) 10 kN/m³
+(3) 50 kN/m³
+(4) 55 kN/m³
+= 3
+~ Dry unit weight γd = γ/(1 + w) = 55/(1 + 0.10) = 55/1.1 = 50 kN/m³.
+
+Q 63 | soil | Soil Mechanics & Foundations
+Lime stabilization is very effective in treating
+(1) Sandy soil
+(2) Silty soil
+(3) Non-plastic soil
+(4) Plastic clayey soil
+= 4
+~ Lime reacts with clay minerals (cation exchange, flocculation and slow pozzolanic reaction), which lowers plasticity and swelling and raises strength. It therefore works best on plastic clayey soils; cement suits sandy or non-plastic soils better.
+
+Q 64 | soil | Soil Mechanics & Foundations
+Soil which contains finest grain particles
+(1) Fine sand
+(2) Sand
+(3) Clay
+(4) Silt
+= 3
+~ By IS classification, clay particles are finer than 0.002 mm, silt is 0.002–0.075 mm and sand is 0.075–4.75 mm, so clay has the finest grains.
+
+Q 65 | soil | Soil Mechanics & Foundations
+The minimum water content at which the soil just begins to crumble when rolled into threads of 3 mm in diameter, is known as
+(1) Liquid limit
+(2) Plastic limit
+(3) Shrinkage limit
+(4) Permeability limit
+= 2
+~ In the plastic limit test, soil is rolled into threads; the water content at which a 3 mm thread just begins to crumble is the plastic limit, the lower boundary of the plastic state.
+
+Q 66 | soil | Soil Mechanics & Foundations
+Consider soil as a three-phase system, the ratio of (Liquid Limit − Natural water Content)/Plasticity index for the soil mass is called
+(1) Liquidity index
+(2) Shrinkage ratio
+(3) Consistency index
+(4) Toughness index
+= 3
+~ Consistency index Ic = (wL − w)/Ip. By contrast, liquidity index IL = (w − wP)/Ip, and Ic + IL = 1.
+
+Q 67 | soil | Soil Mechanics & Foundations
+Which of the following is a measure of particle size range?
+(1) Effective size
+(2) Uniformity coefficient
+(3) Effective diameter
+(4) Elongation index
+= 2
+~ Uniformity coefficient Cu = D₆₀/D₁₀ compares a coarse and a fine particle size, so it measures the range (spread) of grain sizes. Effective size D₁₀ is a single size, not a range; elongation index describes aggregate shape.
+
+Q 68 | soil | Soil Mechanics & Foundations
+From a laboratory proctor compaction test data, the mass of the soil and water content is found to be 1100 g and 10% respectively. The volume of the proctor mould used is 1000 cm³, then the dry density (γd) of the soil is
+(1) 1 g/cm³
+(2) 1.10 g/cm³
+(3) 1.50 g/cm³
+(4) 1.15 g/cm³
+= 1
+~ Bulk density = 1100 g/1000 cm³ = 1.10 g/cm³. Dry density = bulk density/(1 + w) = 1.10/1.10 = 1.0 g/cm³.
+
+Q 69 | soil | Soil Mechanics & Foundations
+In an unconfined compression test, a saturated clay sample, fails under a load of 150N. Consider final cross-section area (Af) = 2250 mm². Then the shear resistance (cohesion) of the sample is
+(1) 66.21 kPa
+(2) 34.95 kPa
+(3) 33.33 kPa
+(4) 15 kPa
+= 3
+~ Unconfined compressive strength qu = P/Af = 150 N/2250 mm² = 0.0667 N/mm² = 66.67 kPa. For saturated clay (φ = 0), cohesion c = qu/2 = 33.33 kPa.
+
+Q 70 | soil | Soil Mechanics & Foundations
+Consider the following pairs
+i. Standard Proctor Test — 1. [C, φ], apparent cohesion and angle of internal friction
+ii. Modified Proctor Test — 2. 03 layers, 310 mm height of drop
+iii. Direct Shear Test — 3. 05 layers, 450 mm height of drop
+iv. Triaxial Test — 4. [C′, φ′], strength parameter
+Which of the pair given below is correctly matched?
+(1) (i)-(1), (ii)-(2), (iii)-(4), (iv)-(3)
+(2) (i)-(2), (ii)-(3), (iii)-(1), (iv)-(4)
+(3) (i)-(3), (ii)-(2), (iii)-(1), (iv)-(4)
+(4) (i)-(4), (ii)-(3), (iii)-(1), (iv)-(2)
+= 2
+~ Standard Proctor: 2.6 kg rammer, 310 mm drop, 3 layers; modified Proctor: 4.89 kg rammer, 450 mm drop, 5 layers. The direct shear test (pore pressure not measured) gives the apparent c and φ, while the triaxial test, with drainage control and pore-pressure measurement, gives effective strength parameters c′ and φ′. So (i)-(2), (ii)-(3), (iii)-(1), (iv)-(4).
+
+Q 71 | hyd | Fluid Mechanics & Hydraulics
+A fluid is said to be Newtonian fluid when its shear stress is
+(1) Inversely proportional to the velocity gradient
+(2) Proportional to the velocity gradient
+(3) Independent to the velocity gradient
+(4) Inversely proportional to the shear stress rate
+= 2
+~ Newton's law of viscosity: τ = μ(du/dy). A Newtonian fluid (water, air) has shear stress directly proportional to the velocity gradient, with constant viscosity μ as the proportionality constant.
+
+Q 72 | hyd | Fluid Mechanics & Hydraulics
+Pascal-second (Pa.s) is the unit of
+(1) Pressure
+(2) Specific gravity
+(3) Dynamic viscosity
+(4) Compressibility
+= 3
+~ μ = τ/(du/dy) has units (N/m²)/(s⁻¹) = N·s/m² = Pa·s, the SI unit of dynamic viscosity (1 Pa·s = 10 poise). Pressure is in Pa and specific gravity has no unit.
+
+Q 73 | hyd | Fluid Mechanics & Hydraulics
+If specific gravity of a fluid is 0.5, and dynamic viscosity is 0.5 poise, then the kinematic viscosity of that fluid is
+(1) 0.25 stokes
+(2) 0.50 stokes
+(3) 1.0 stokes
+(4) 25 stokes
+= 3
+~ Density = 0.5 g/cm³. Kinematic viscosity ν = μ/ρ = 0.5 poise ÷ 0.5 g/cm³ = 1.0 cm²/s = 1.0 stoke.
+
+Q 74 | hyd | Fluid Mechanics & Hydraulics
+A uniformly tapering vessel is filled with liquid of density 900 kg/m³. Then the force that act on the base of the vessel due to the liquid (g = 10 m/sec²) is
+(1) 3.6 N
+(2) 7.2 N
+(3) 9.8 N
+(4) 15.4 N
+= 2
+~ Pressure at the base depends only on depth, not on vessel shape (hydrostatic paradox): p = ρgh = 900 × 10 × 0.4 = 3600 N/m². Force on base = p × base area = 3600 × 2 × 10⁻³ = 7.2 N.
+! img/c25-q74.png
+
+Q 75 | hyd | Fluid Mechanics & Hydraulics
+The velocity of the upper layer of water in a river is 36 km h⁻¹. Shearing stress between horizontal layers of water is 10⁻³ Nm⁻². Consider co-efficient of viscosity of water is 10⁻² Pa-s. Then depth of the river is
+(1) 100 m
+(2) 200 m
+(3) 360 m
+(4) 3600 m
+= 1
+~ V = 36 km/h = 10 m/s. With a linear velocity profile, τ = μV/y, so y = μV/τ = (10⁻² × 10)/10⁻³ = 100 m.
+
+Q 76 | hyd | Fluid Mechanics & Hydraulics
+Open tank contains 1 m deep water with 50 cm depth of oil of specific gravity 0.6 above it, then the intensity of pressure at the bottom of tank is (taken, g = 1000 cm s⁻²)
+(1) 3 kN/m²
+(2) 13 kN/m²
+(3) 30 kN/m²
+(4) 40 kN/m²
+= 2
+~ g = 10 m/s². Gauge pressure at the bottom = ρ_oil g h_oil + ρ_w g h_w = 600 × 10 × 0.5 + 1000 × 10 × 1 = 3000 + 10000 = 13000 N/m² = 13 kN/m².
+
+Q 77 | hyd | Fluid Mechanics & Hydraulics
+The following figure shows a venturimeter, through which water is flowing. The speed of water at "X" is 2 cm s⁻¹ and height difference between "X" and "Y" is 5.1 mm. Then the speed of water at "Y" is (taken, g = 1000 cm s⁻²)
+(1) 23 cm s⁻¹
+(2) 32 cm s⁻¹
+(3) 101 cm s⁻¹
+(4) 1024 cm s⁻¹
+= 2
+~ Bernoulli for a horizontal meter: h_X − h_Y = (V_Y² − V_X²)/2g. With h = 0.51 cm: V_Y² = 2² + 2 × 1000 × 0.51 = 4 + 1020 = 1024, so V_Y = 32 cm/s.
+! img/c25-q77.png
+
+Q 78 | hyd | Fluid Mechanics & Hydraulics
+An open tank filled with water (density = ρ and g = 9.81 m/sec²) has a narrow hole at a depth of "h" below the water surface. Then the velocity of water flowing out is
+(1) √(2gh)
+(2) ρgh
+(3) 2 gh
+(4) gh
+= 1
+~ By Torricelli's theorem (Bernoulli between the free surface and the jet), the theoretical efflux velocity is V = √(2gh), independent of the liquid's density.
+
+Q 79 | hyd | Fluid Mechanics & Hydraulics
+The Reynold's number for fluid flow in a pipe is independent of
+(1) The viscosity of the fluid
+(2) The velocity of the fluid
+(3) The length of the pipe
+(4) The diameter of the pipe
+= 3
+~ Re = ρVD/μ, the ratio of inertial to viscous forces. It depends on density, velocity, pipe diameter and viscosity, but not on the length of the pipe.
+
+Q 80 | hyd | Fluid Mechanics & Hydraulics
+The point in the immerse body through which the resultant of the total pressure of the liquid be taken to act is known as
+(1) Metacenter
+(2) Centre of gravity
+(3) Centre of buoyancy
+(4) Centre of pressure
+= 4
+~ The centre of pressure is the point on an immersed surface through which the resultant hydrostatic pressure force acts; for a vertical or inclined plane surface it lies below the centroid. The centre of buoyancy is the centroid of the displaced volume, and the metacentre relates to stability of floating bodies.
+
+Q 81 | hyd | Fluid Mechanics & Hydraulics
+Bernouli's principle is derived from the law of conservation of
+(1) Energy
+(2) Mass
+(3) Linear momentum
+(4) Angular momentum
+= 1
+~ Bernoulli's equation, p/ρg + V²/2g + z = constant along a streamline, states that the total energy (pressure + kinetic + potential head) of an ideal, steady, incompressible flow is conserved.
+
+Q 82 | hyd | Fluid Mechanics & Hydraulics
+If a mercury droop is divided into 8 equal parts, then it’s total energy
+(1) Remains same
+(2) Becomes twice
+(3) Decreases by a factor of 8
+(4) Increases by a factor of 8
+= 2
+~ Volume is conserved: 8 × (4/3)πr³ = (4/3)πR³, so r = R/2. New total area = 8 × 4π(R/2)² = 2 × 4πR², so the total surface energy (surface tension × area) becomes twice.
+
+Q 83 | hyd | Fluid Mechanics & Hydraulics
+The continuity equation is based on which of the following principle
+(1) Conservation of mass
+(2) Conservation of static energy
+(3) Conservation of kinetic energy
+(4) Conservation of momentum
+= 1
+~ The continuity equation ρ₁A₁V₁ = ρ₂A₂V₂ (A₁V₁ = A₂V₂ for incompressible flow) says the mass entering a section per second equals the mass leaving it: conservation of mass.
+
+Q 84 | hyd | Fluid Mechanics & Hydraulics
+The major causes for the loss of energy in long pipe is due to
+(1) Sudden contraction
+(2) Sudden enlargement
+(3) Loss at the exit of the pipe
+(4) Friction in the pipe
+= 4
+~ In long pipes the major loss is the friction loss, hf = fLV²/2gD (Darcy–Weisbach), which grows with length. Losses at entry, exit, sudden enlargement or contraction are minor losses.
+
+Q 85 | hyd | Fluid Mechanics & Hydraulics
+Consider the following pairs
+i. Pitot tube — 1. Flow and viscous property of fluid
+ii. Rheometer — 2. Flowing fluid velocity at any point
+iii. Hydrometer — 3. Pressure of the pipeline
+iv. Manometer — 4. Specific gravity or density of a liquid
+Which of the pair given below is correctly matched?
+(1) (i)-(1), (ii)-(2), (iii)-(3), (iv)-(4)
+(2) (i)-(1), (ii)-(4), (iii)-(3), (iv)-(2)
+(3) (i)-(2), (ii)-(1), (iii)-(4), (iv)-(3)
+(4) (i)-(4), (ii)-(3), (iii)-(2), (iv)-(1)
+= 3
+~ A Pitot tube measures the velocity of flow at a point; a rheometer measures flow (rheological/viscous) properties; a hydrometer measures specific gravity or density of a liquid; a manometer measures pressure.
+
+Q 86 | soil | Soil Mechanics & Foundations
+If N = Number of layers, W = Weight of the hammer, H = Height of fall, then which of the following option is correct for California Bearing Ratio (CBR) Test using heavy compaction?
+(1) N = 3, W = 4.89 kg and H = 31 cm
+(2) N = 3, W = 4.89 kg and H = 45 cm
+(3) N = 5, W = 4.89 kg and H = 45 cm
+(4) N = 5, W = 4.89 kg and H = 31 cm
+= 3
+~ For CBR specimens by heavy compaction (IS 2720 Part 16), soil is compacted in 5 layers with a 4.89 kg rammer falling 450 mm (56 blows per layer). Light compaction uses a 2.6 kg rammer, 310 mm drop and 3 layers.
+
+Q 87 | soil | Soil Mechanics & Foundations
+The coefficient of uniformity is defined as
+(1) Cu = D₃₀/D₁₀
+(2) Cu = D₆₀/D₁₀
+(3) Cu = [D₃₀]²/D₁₀
+(4) Cu = D₃₀/(D₁₀ × D₆₀)
+= 2
+~ Coefficient of uniformity Cu = D₆₀/D₁₀, where D₆₀ and D₁₀ are the sizes finer than which 60% and 10% of the soil lies. The coefficient of curvature is Cc = D₃₀²/(D₁₀ × D₆₀).
+
+Q 88 | trn | Highway Engineering
+For a vehicle negotiating a curve, centrifugal force "P", is
+i. Directly proportional to the weight of vehicle
+ii. Inversely proportional to square of velocity
+iii. Inversely proportional to radius of curve
+Which of the above statements are true?
+(1) (i) and (ii)
+(2) (ii) and (iii)
+(3) (i) and (iii)
+(4) (i), (ii) and (iii)
+= 3
+~ Centrifugal force P = Wv²/(gR). It is directly proportional to the weight W and to the square of the speed v, and inversely proportional to the radius R. So (i) and (iii) are true; (ii) is wrong.
+
+Q 89 | trn | Highway Engineering
+The penetration test of bitumen is conducted at X, measuring the penetration of needle loaded with Y load for Z time.
+The correct values are
+(1) X = 25°C; Y = 100 gm; Z = 5 sec
+(2) X = 25°C; Y = 100 gm; Z = 10 sec
+(3) X = 27°C; Y = 50 gm; Z = 60 sec
+(4) X = 27°C; Y = 100 gm; Z = 10 sec
+= 1
+~ In the standard penetration test (IS 1203), a needle carrying a total load of 100 g penetrates the bitumen sample at 25°C for 5 seconds; the penetration is reported in units of 0.1 mm.
+
+Q 90 | trn | Highway Engineering
+For carrying out bituminous patch work during rainy season, the most suitable binder is
+(1) Bitumen
+(2) Bituminous emulsion
+(3) Cutback bitumen
+(4) Road tar
+= 2
+~ Bitumen emulsion (bitumen dispersed in water with an emulsifier) is used cold and can coat damp or wet aggregates, so it is the binder of choice for patch repairs in wet weather. Hot bitumen and cutbacks do not bond to wet surfaces.
+
+Q 91 | trn | Highway Engineering
+Pick the right sequence of the different layers of a flexible pavement construction
+i. Base course construction
+ii. Subbase course construction
+iii. Surface course and seal coat application
+iv. Natural subgrade and compacted subgrade construction
+v. Prime coat, binder course and tack coat application
+Choose the correct answer from the options given below
+(1) (i), (ii), (iii), (iv), (v)
+(2) (i), (iii), (v), (ii), (iv)
+(3) (iv), (ii), (i), (v), (iii)
+(4) (iv), (v), (i), (ii), (iii)
+= 3
+~ A flexible pavement is built from the bottom up: prepared subgrade (iv) → sub-base (ii) → base (i) → prime coat, binder course and tack coat (v) → surface course and seal coat (iii).
+
+Q 92 | trn | Highway Engineering
+Alligator or map cracking is the most common type of failure in
+(1) Bituminous surfacing
+(2) Water Bound Macadam (WBM) surfacing
+(3) Wet Mix Macadam (WMM) surfacing
+(4) Telford and Macadam surfacing
+= 1
+~ Alligator (map) cracking is a network of interconnected cracks forming small blocks in a bituminous surface, caused by fatigue under repeated wheel loads, often over a weak base or subgrade.
+
+Q 93 | trn | Highway Engineering
+A vehicle was stopped in 2 second by fully jamming the break and skid marks measured 20 m then average skid resistance is (consider g = 10 m/sec²)
+(1) 0.35
+(2) 0.50
+(3) 1.0
+(4) 2.2
+= 3
+~ For uniform deceleration, s = (u/2)t, so initial speed u = 2 × 20/2 = 20 m/s. Skid resistance f = u/(gt) = 20/(10 × 2) = 1.0 (check: u²/2gs = 400/400 = 1.0).
+
+Q 94 | trn | Highway Engineering
+The wall which are necessary on the hill side of roadway where natural earth has to be retained from sliding is known as
+(1) Retaining wall
+(2) Breast wall
+(3) Parapet wall
+(4) Cavity wall
+= 2
+~ On hill roads, breast walls are built on the hill side to hold the natural slope from sliding onto the road. Retaining walls on the valley side support the road fill, and parapet walls on the valley edge act as guard walls.
+
+Q 95 | trn | Highway Engineering
+Consider the following pairs
+i. Los angeles abrasion — 1. Gradation
+ii. Size — 2. Toughness
+iii. Durability — 3. Hardness
+iv. Impact — 4. Soundness
+Which of the pair given below is correctly matched?
+(1) (i)-(2), (ii)-(1), (iii)-(3), (iv)-(4)
+(2) (i)-(2), (ii)-(4), (iii)-(3), (iv)-(1)
+(3) (i)-(3), (ii)-(1), (iii)-(4), (iv)-(2)
+(4) (i)-(3), (ii)-(4), (iii)-(1), (iv)-(2)
+= 3
+~ For road aggregates: the Los Angeles abrasion test measures hardness, sieve analysis (size) gives gradation, the soundness test (sodium/magnesium sulphate) checks durability, and the impact test measures toughness.
+
+Q 96 | trn | Highway Engineering
+The fundamental relationship between space-mean speed (u), traffic density (k) and traffic flow (q) is
+(1) q = u × k
+(2) q = u/k
+(3) q = k/u
+(4) q = k²/u
+= 1
+~ The fundamental equation of traffic flow is q = u × k: flow (veh/h) = space-mean speed (km/h) × density (veh/km).
+
+Q 97 | trn | Railways, Bridges & Other Transport
+Which of the following rails is most preferred by Indian railway
+(1) Flat footed rails
+(2) Bull head rails
+(3) Double headed rails
+(4) Thin headed rails
+= 1
+~ Indian Railways uses flat-footed (Vignole) rails: the wide foot sits directly on the sleeper without chairs, giving greater stiffness and stability and simpler fastening than bull-headed or double-headed rails.
+
+Q 98 | trn | Railways, Bridges & Other Transport
+Gauge is the horizontal distance measured between
+(1) Centre to center of two rails
+(2) Inner or running faces of two rails
+(3) Outer to inner face of two rails
+(4) Inner to Outer face of two rails
+= 2
+~ Gauge is the clear horizontal distance between the inner (running) faces of the two rails, e.g. 1676 mm for Indian broad gauge.
+
+Q 99 | trn | Railways, Bridges & Other Transport
+Two major constituents in the composition of steel used in rail are
+(1) Carbon and Silicon
+(2) Carbon and Sulphur
+(3) Carbon and Manganese
+(4) Carbon and Lithium
+= 3
+~ Rail steel is a carbon–manganese steel: carbon gives hardness and strength, and manganese adds toughness and wear resistance. Sulphur and phosphorus are kept low as harmful impurities.
+
+Q 100 | trn | Railways, Bridges & Other Transport
+The rising gradient on which a moving train takes the advantage of the preceding falling gradient, usually referred as
+(1) Pusher gradient
+(2) Neutral gradient
+(3) Ruling gradient
+(4) Momentum gradient
+= 4
+~ A momentum gradient is a rising gradient, steeper than the ruling gradient, that a train can climb using the momentum (kinetic energy) gained on the preceding falling gradient. A pusher gradient needs an extra engine.
+
+Q 101 | trn | Railways, Bridges & Other Transport
+The longitudinally movement of rails in a track is technically referred as,
+(1) Hogging
+(2) Buckling
+(3) Creeping
+(4) Tilting
+= 3
+~ Creep is the longitudinal movement of rails along the track, caused by wave action of moving loads, starting/braking of trains and temperature changes. Hogging is bending of rail ends at joints.
+
+Q 102 | trn | Railways, Bridges & Other Transport
+The sleeping of driving wheels of locomotives on the rail surface causes,
+(1) Wheel burns
+(2) Hogging of rail
+(3) Corrugation of rail
+(4) Buckling of rail
+= 1
+~ When the driving wheels of a locomotive slip (spin) on the rail, friction heat burns the rail surface locally; these damaged spots are called wheel burns.
+
+Q 103 | trn | Railways, Bridges & Other Transport
+The wear of the rail is maximum at
+(1) Tunnel
+(2) Sharp curve
+(3) Coastal area
+(4) Square crossing
+= 2
+~ On sharp curves the wheel flanges rub hard against the outer rail and wheels slip on the rails, so wear of the rail (especially the outer rail head) is greatest there.
+
+Q 104 | trn | Railways, Bridges & Other Transport
+Which among the following organization is the Research and Development (R&D) wing of Indian Railways
+(1) IRCTC
+(2) DRDO
+(3) RDSO
+(4) CRIS
+= 3
+~ RDSO (Research Designs and Standards Organisation), Lucknow, is the R&D wing of Indian Railways. IRCTC handles catering and ticketing, CRIS is its IT arm, and DRDO is under the Ministry of Defence.
+
+Q 105 | trn | Railways, Bridges & Other Transport
+Consider the following pairs
+i. Ballast — 1. Rail fastenings with concrete sleeper
+ii. Sleeper — 2. To hold the rail in proper gauge
+iii. Jim crow — 3. To bend the rail
+iv. Pandrol clip — 4. To Provide cushion effect to the track
+Which of the pair given below is correctly matched?
+(1) (i)-(2), (ii)-(1), (iii)-(3), (iv)-(4)
+(2) (i)-(2), (ii)-(4), (iii)-(3), (iv)-(1)
+(3) (i)-(3), (ii)-(1), (iii)-(4), (iv)-(2)
+(4) (i)-(4), (ii)-(2), (iii)-(3), (iv)-(1)
+= 4
+~ Ballast gives an elastic cushion and drainage; sleepers hold the rails to correct gauge; a Jim crow is a tool for bending rails; the Pandrol (elastic rail) clip fastens rails to concrete sleepers.
+
+Q 106 | bmc | Building Construction
+What is the portion of a brick obtained by cutting the brick longitudinally into two equal parts?
+(1) Queen closer
+(2) King closer
+(3) Half bat
+(4) Bewelled closer
+= 1
+~ A queen closer is made by cutting a brick lengthwise (longitudinally) into two equal parts, each of full length but half the width of the brick. A half bat is a brick cut across its length into halves, and a king closer has a triangular corner cut off.
+
+Q 107 | est | Estimating & Costing
+In long and short wall method of estimation, the length of long wall is the center to center distance between the wall and
+(1) breadth of the wall
+(2) half breadth of the wall on each side
+(3) one forth breadth of the wall on each side
+(4) one fifth breadth of the wall on each side
+= 2
+~ In the long wall–short wall method, long wall length (out-to-out) = centre-to-centre length + half breadth on each side (i.e. + one breadth), while short wall length (in-to-in) = centre-to-centre length − half breadth on each side.
+
+Q 108 | est | Estimating & Costing
+The Damp Proof Course (D.P.C) is measure in
+(1) Cubic meter
+(2) Square meter
+(3) Meters
+(4) Rupees per meter
+= 2
+~ D.P.C. is a thin layer of specified thickness, so it is measured by area in square metres (thickness stated in the item).
+
+Q 109 | est | Estimating & Costing
+While submitting a tender the contractor is required to deposit some amount with the department, as guarantee of the tender, known as
+(1) Bank guarantee
+(2) Caution money
+(3) Security deposit
+(4) Earnest money
+= 4
+~ Earnest money (usually about 1–2% of the estimated cost) is deposited with the tender as a guarantee that the bidder will not withdraw; it is refunded to unsuccessful tenderers. Security deposit is taken later from the successful contractor.
+
+Q 110 | est | Estimating & Costing
+Estimated value of a built up property at the end of its useful life without being dismantled is known as,
+(1) Scrap value
+(2) Salvage Value
+(3) Market value
+(4) Book value
+= 2
+~ Salvage value is the estimated value of a property at the end of its useful life without dismantling it. Scrap value is the value of its materials after dismantling, and book value is the original cost less depreciation.
+
+Q 111 | est | Construction Management
+In a network diagram, an activity having a dotted arrow between two activity is referred as,
+(1) Important activity
+(2) Risky activity
+(3) Dummy activity
+(4) Delayed activity
+= 3
+~ A dummy activity is drawn as a dotted (broken) arrow; it takes no time or resources and only shows a logical dependency between activities.
+
+Q 112 | est | Construction Management
+In the following network, choose the Critical Path from given options, (the number on the arrow shows duration of activity)
+The correct option is:
+(1) A - B - C - D - E - F
+(2) A - B - D - E - F
+(3) A - B - C - E - F
+(4) A - B - D - C - E - F
+= 1
+~ Path durations: A-B-C-D-E-F = 2 + 3 + 2 + 3 + 2 = 12; A-B-C-E-F = 2 + 3 + 4 + 2 = 11; A-B-D-E-F = 2 + 3 + 3 + 2 = 10. A-B-D-C is not possible because the arrow runs from C to D. The longest path, 12, is critical.
+! img/c25-q112.png
+
+Q 113 | est | Construction Management
+If the optimistic time (tₒ), most likely or probable time (tₘ), and pessimistic time (tₚ), for activity (A) are 2, 5 and 14 days respectively, then expected duration and variance of the activity are
+(1) 2 and 5 days
+(2) 6 and 4 days
+(3) 14 and 7 days
+(4) 16 and 5 days
+= 2
+~ PERT: te = (tₒ + 4tₘ + tₚ)/6 = (2 + 20 + 14)/6 = 6 days. Standard deviation σ = (tₚ − tₒ)/6 = 12/6 = 2, so variance = σ² = 4.
+
+Q 114 | est | Construction Management
+As per Critical Path Methodology (CPM) the earliest start time for an event (I) is 10 weeks. Activity (I-J) takes 4 weeks for completion. Event (J) starts after 20 weeks. Then the total float for activity (I-J) is,
+(1) 2 weeks
+(2) 6 weeks
+(3) 12 weeks
+(4) 16 weeks
+= 2
+~ Taking 20 weeks as the latest occurrence time of event J: total float = latest finish time of J − earliest start time of I − duration = 20 − 10 − 4 = 6 weeks.
+
+Q 115 | est | Construction Management
+The difference between Late Start and Early Start Time of an activity is referred as,
+(1) Float
+(2) Progress of an activity
+(3) Task of a work
+(4) PERT task
+= 1
+~ (Total) float = LS − ES = LF − EF: the time by which an activity can be delayed without delaying the project. Critical activities have zero float.
+
+Q 116 | est | Construction Management
+A scheduled activity may begin 10 days before the predecessor activity finishes. Then it's referred as an example of,
+(1) Finish to start
+(2) Finish to finish
+(3) Start to finish
+(4) Start to start
+= 1
+~ The successor's start is tied to the predecessor's finish, so it is a finish-to-start relationship with a lead (negative lag) of 10 days.
+
+Q 117 | est | Construction Management
+Following is a Rate list for an earth excavation work:
+S.No | Item : earth work | Rate | Variable rate
+I | Manual excavation | Rs.10 /cum | Nil
+II | Machine excavation | Rs. 4000 fixed | Rs.2 /cum
+As per above rate list, estimated quantity of earth, for which the cost of excavation by machine will be equal to the cost of manual excavation, considering variable rate is
+(1) 500 cum
+(2) 1000 cum
+(3) 2500 cum
+(4) 3000 cum
+= 1
+~ Let Q be the quantity. Manual cost = 10Q; machine cost = 4000 + 2Q. Equating, 10Q = 4000 + 2Q, so 8Q = 4000 and Q = 500 cum (break-even quantity).
+
+Q 118 | est | Construction Management
+The cost slop is defined as
+(1) (Crash cost - Normal cost)/Normal time
+(2) (Crash cost - Normal cost)/Crash time
+(3) Crash cost/(Normal time-Crash time)
+(4) (Crash cost-Normal cost)/(Normal time-Crash time)
+= 4
+~ Cost slope = (Crash cost − Normal cost)/(Normal time − Crash time): the extra direct cost per unit of time saved by crashing an activity. Activities with the lowest cost slope on the critical path are crashed first.
+
+Q 119 | est | Construction Management
+Which among the following, means statistical quality control of RCC work at civil construction site?
+(1) Minimizing cost for removal of defective work
+(2) Appling theory of probability to sample testing or inspection
+(3) Minimizing in wastage of inspection cost
+(4) Calculating risk probably to minimize utilization
+= 2
+~ Statistical quality control applies probability and statistics to the results of sample tests or inspection (e.g. concrete cube samples) to judge whether the whole work meets the specification.
+
+Q 120 | est | Construction Management
+Consider the following pairs
+i. Net working — 1. actual performance of the task and consume time or resources, represented by an arrow
+ii. Activity — 2. an arrow diagram obtained by connecting all the activities of a project in a logical sequence
+iii. Event — 3. sequential relationship between other activities but does not consume resources, and represented by a circle
+iv. Dummy activity — 4. start or completion of tasks and does not consume time or resources, and represent precedence relationship between real activities.
+Which of the pair given below is correctly matched
+(1) (i)-(2), (ii)-(1), (iii)-(3), (iv)-(4)
+(2) (i)-(2), (ii)-(4), (iii)-(3), (iv)-(1)
+(3) (i)-(3), (ii)-(1), (iii)-(4), (iv)-(2)
+(4) (i)-(3), (ii)-(4), (iii)-(1), (iv)-(2)
+= 1
+~ A network is the arrow diagram linking all activities in logical sequence; an activity is actual work that consumes time or resources (arrow); an event is shown by a circle (node); a dummy consumes no time or resources and only shows precedence between real activities.

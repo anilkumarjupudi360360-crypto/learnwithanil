@@ -93,6 +93,16 @@
    "desc": "DSSSB MTS, Junior Engineer and other Delhi government exams"
   },
   {
+   "id": "jk",
+   "name": "JKSSB & Jammu-Kashmir",
+   "desc": "JKSSB Junior Engineer (Civil) and other Jammu & Kashmir exams"
+  },
+  {
+   "id": "ml",
+   "name": "Meghalaya PSC & North-East",
+   "desc": "Meghalaya PSC Civil Service, LDA and screening tests"
+  },
+  {
    "id": "br",
    "name": "BPSC & Bihar",
    "desc": "BPSC CCE and TRE, BSSC Inter and Graduate level, Bihar Police and STET"
@@ -1335,6 +1345,22 @@
    "t": "MTS & JE",
    "n": "Multi-Tasking Staff and Junior Engineer (Electrical), Delhi",
    "live": "dsssb/"
+  },
+  {
+   "id": "jkssb-je-civil",
+   "cat": "jk",
+   "b": "JKSSB",
+   "t": "JE Civil",
+   "n": "Junior Engineer (Civil), Jal Shakti & PWD (R&B)",
+   "live": "jkssb-je-civil/"
+  },
+  {
+   "id": "meghalaya-psc",
+   "cat": "ml",
+   "b": "Meghalaya PSC",
+   "t": "MCS & LDA",
+   "n": "Meghalaya Civil Service Prelims and screening tests",
+   "live": "meghalaya-psc/"
   },
   {
    "id": "bpsc-cce",
