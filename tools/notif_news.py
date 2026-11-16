@@ -930,6 +930,85 @@ NEW['kea-fda-sda-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: Karnata
 ASOF_PAGE['kea-fda-sda-notification-2026.html'] = '16 November 2026'
 
 
+NEW['mpsc-group-c-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: MPSC Group C (apply till 27 November; prelims 24 January 2027); facts from MPSC's own PDFs (in Marathi), read on 16 Nov 2026
+    exam='mpsc-group-c', board='MPSC', site='mpsc.gov.in', crumb='MPSC Group C Notification 2026', faq_asof='16 November 2026',
+    title='MPSC Group C Notification 2026: 16,717 Posts, Apply 13–27 November, Prelims 24 January 2027, Pattern & Previous Papers | Learn with Anil',
+    desc='MPSC Group C 2026 (Advt. No. 017/2026): the corrigendum of 6 November 2026 raised the posts to 16,717 in 27 cadres, reopened online applications from 13 to 27 '
+         'November 2026 (fee by 30 November) and moved the Group-C Combined Prelims to 24 January 2027. Cadre-wise posts, age limit, fee, exam pattern and MPSC Group C '
+         'previous year papers with answers in Marathi and English.',
+    h1='MPSC Group C notification 2026: 16,717 posts, prelims on 24 January 2027',
+    lede='The Maharashtra Public Service Commission (MPSC) advertised the Maharashtra Group-C Services Combined Preliminary Examination 2026 (Advt. No. 017/2026) on '
+         '25 June 2026 for 2,619 posts. Two corrigenda added cadres and posts, and the one of 6 November 2026 takes the total to 16,717 posts in 27 cadres, from Clerk-Typist '
+         'and Talathi to Staff Nurse and Civil Engineering Assistant. Applications and cadre options are open again from 13 to 27 November 2026, and the prelims is now on '
+         '24 January 2027. Below: the key dates, the posts, who can apply, the exam pattern and the MPSC Group C previous papers to practise.',
+    mr='महाराष्ट्र लोकसेवा आयोग: महाराष्ट्र गट-क सेवा संयुक्त पूर्व परीक्षा-२०२६ (जाहिरात क्र. ०१७/२०२६) — शुद्धिपत्रक दि. ०६ नोव्हेंबर २०२६ नुसार २७ संवर्गांतील एकूण १६,७१७ पदे; '
+       'अर्ज/विकल्प १३ ते २७ नोव्हेंबर २०२६, शुल्क ३० नोव्हेंबरपर्यंत; पूर्व परीक्षा २४ जानेवारी २०२७.',
+    pdf='https://mpsc.gov.in/adv_notification/8', pdfname='MPSC Advt. No. 017/2026 and its corrigenda, mpsc.gov.in > Advertisements',
+    more_src=[('https://mpsconline.gov.in', 'MPSC online application system (mpsconline.gov.in)'),
+              ('https://mpsc.gov.in/prev_que_papers/9', 'MPSC previous question papers'), ('https://mpsc.gov.in/answer_keys_of_examinations/45', 'MPSC answer keys')],
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement', 'Advt. No. 017/2026, 25 June 2026 (2,619 posts; first applications 27 June to 17 July 2026)'),
+        ('Corrigenda', '16 July 2026 (offline OMR exam), 22 July 2026 (+3,088 posts, 5,707 in all), 1 August 2026 (exam pattern), 9 September 2026 (exam moved to 3 January 2027), '
+                       '6 November 2026 (16,717 posts, new applications, exam moved to 24 January 2027), 13 November 2026 (qualifications for Craft Instructor and Civil Engineering Assistant)'),
+        ('New applications and cadre options', '13 November 2026, 2 pm to 27 November 2026, 11.59 pm on mpsconline.gov.in'),
+        ('Last date for the fee', '30 November 2026, 11.59 pm (online only: debit or credit card, net banking, UPI; the challan option is closed)'),
+        ('Group-C Combined Prelims', 'Sunday, 24 January 2027, offline (OMR), at all district centres'),
+        ('Main exam', 'Dates to be announced after the prelims result')]),
+      ('Posts and vacancies (16,717)', 'table+', (['Cadre', 'Department', 'Posts'], [
+        ('Clerk-Typist (लिपिक-टंकलेखक)', 'Various appointing authorities', '3,966'),
+        ('Staff Nurse (अधिपरिचारिका)', 'Medical Education & Drugs', '3,911'),
+        ('Village Revenue Officer (Talathi), Group-C', 'Revenue & Forest', '1,840'),
+        ('Craft Instructor (शिल्प निदेशक)', 'Skills, Employment, Entrepreneurship & Innovation', '1,388'),
+        ('Assistant Agriculture Officer', 'Agriculture, Animal Husbandry, Dairy Development & Fisheries', '1,203'),
+        ('Civil Engineering Assistant', 'Water Resources 949 · Public Works 934', '1,883'),
+        ('Assistant Motor Vehicle Inspector, Group-C', 'Home (Transport)', '461'),
+        ('Livestock Supervisor', 'Agriculture, Animal Husbandry, Dairy Development & Fisheries', '322'),
+        ('Tax Assistant', 'Finance', '282'),
+        ('Assistant Fisheries Development Officer (Technical)', 'Agriculture, Animal Husbandry, Dairy Development & Fisheries', '254'),
+        ('Mathematics & Drawing Instructor', 'Skills, Employment, Entrepreneurship & Innovation', '241'),
+        ('Supply Inspector', 'Food & Civil Supplies', '214'),
+        ('Senior Record Keeper / Senior Clerk / Record Keeper', 'Various departments', '196'),
+        ('Assistant Storekeeper', 'Skills department 182 · Public Works 6', '188'),
+        ('Junior Chemist', 'Water Supply & Sanitation', '153'),
+        ('Other cadres (10)', 'Junior Education Extension Officer 58, Tribal Development Inspector 47, Investigator 42, Junior Skill, Employment & Guidance Officer 32, '
+                              'Assistant Superintendent 11, Industry Inspector 9, Storekeeper 9, Technical Assistant 3, Deputy Accountant / Head Clerk 3, Telephone Operator 1', '215'),
+        ('Total (27 cadres)', '', '16,717')])),
+      ('', 'note', 'Candidates who applied earlier need not apply again; they can add the new cadres they qualify for as an option in "My Account" (no new fee). Posts received '
+                   'from the government until the prelims result is final are also counted for the prelims result. The cadre-wise reservation is in Annexure-1 of the 6 November '
+                   'corrigendum on mpsc.gov.in.'),
+      ('Exam pattern', 'table+', (['Stage', 'Paper', 'Marks'], [
+        ('Combined Prelims (all cadres)', 'General Ability Test (सामान्य क्षमता चाचणी): 100 objective questions in Marathi and English, 1 hour; a quarter mark '
+                                          'deducted for each wrong answer', '100'),
+        ('Combined Main exam', 'One combined main exam for the administrative cadres that need a general degree (Clerk-Typist, Tax Assistant, Talathi and others)', '400'),
+        ('Separate main exams', 'Technical cadres (such as AMVI, 300 marks, and Assistant Fisheries Development Officer) take their own main exam on their subject', 'by cadre')])),
+      ('', 'note', 'The prelims syllabus covers current affairs, history (especially modern India and Maharashtra), geography (India and Maharashtra), the Indian Constitution '
+                   'and polity, economy, general science, and intelligence test and arithmetic. The prelims only shortlists candidates for the main exam; the final selection '
+                   'is on the main exam. The 2026 prelims was first advertised as a computer-based test; MPSC\'s corrigendum of 16 July 2026 made it an offline OMR exam.'),
+      ('Who can apply', 'list', [
+        'Indian citizen with a knowledge of Marathi. Most cadres need a degree from a recognised university; others need the qualification of their cadre '
+        '(for example, Industry Inspector: an engineering or technology diploma or a science degree; AMVI: SSC and a 3-year diploma in automobile or mechanical engineering, '
+        'with experience and driving licences as in the advertisement; Staff Nurse, Civil Engineering Assistant, Craft Instructor and Assistant Fisheries Development Officer: '
+        'their professional qualification, listed in Annexure-3 of the 6 November corrigendum).',
+        'Clerk-Typist and Tax Assistant: typing speed of at least 30 words a minute in Marathi and 40 in English (government commercial certificate or the equivalent '
+        'computer typing course); some reserved categories get two years after appointment to pass it.',
+        'Age as on 1 October 2026: at least 19 (18 for Tax Assistant); at most 38 years for the open category and 43 for backward classes, EWS and orphans, with more for '
+        'sportspersons, ex-servicemen and persons with disabilities. A government resolution of 5 November 2026 relaxes the upper age limit by one more year.',
+        'Prelims fee (not refundable): Rs. 394 for the open category, Rs. 294 for backward classes, EWS and orphans, Rs. 44 for ex-servicemen; bank charges extra.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for MPSC Group C 2026?', '27 November 2026 (11.59 pm) on mpsconline.gov.in; the fee can be paid online till 30 November 2026.'),
+      ('When is the MPSC Group C prelims 2026 exam?', 'On 24 January 2027. It was first fixed for 25 October 2026, then for 3 January 2027; MPSC\'s corrigendum of 6 November 2026 moved it to 24 January 2027.'),
+      ('How many vacancies are there in MPSC Group C 2026?', '16,717 posts in 27 cadres after the corrigendum of 6 November 2026 (the advertisement of 25 June 2026 had 2,619, and the corrigendum of 22 July 2026 raised it to 5,707).'),
+      ('Do I need to apply again if I applied in June–July 2026?', 'No. Candidates who applied earlier keep their application and can add the new cadres they qualify for as options from "My Account", without paying the fee again.'),
+      ('What is the MPSC Group C prelims exam pattern?', 'One objective paper, the General Ability Test: 100 questions, 100 marks, 1 hour, in Marathi and English, with a quarter mark deducted for each wrong answer.'),
+      ('What is the age limit for MPSC Group C 2026?', '19 to 38 years for the open category and up to 43 for backward classes, EWS and orphans, as on 1 October 2026 (18 is the minimum for Tax Assistant), plus the one-year relaxation of 5 November 2026.'),
+      ('What is the MPSC Group C application fee?', 'Rs. 394 for the open category, Rs. 294 for backward classes, EWS and orphans, and Rs. 44 for ex-servicemen, plus bank charges.'),
+      ('Where can I practise MPSC Group C previous papers?', 'On Learn with Anil: the MPSC Group-C Combined Prelims 2025 and 2024 and the Group-B & C Combined Prelims 2023, with MPSC\'s final answer key and explanations in Marathi and English.'),
+    ])
+ASOF_PAGE['mpsc-group-c-notification-2026.html'] = '16 November 2026'
+
+
 def apply(NOTIFS):
     for rel, f in FAQS.items():
         if rel in NOTIFS: NOTIFS[rel]['faqs'] = f; NOTIFS[rel]['faq_asof'] = ASOF_PAGE.get(rel, ASOF)

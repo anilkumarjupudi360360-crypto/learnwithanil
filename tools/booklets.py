@@ -30,12 +30,17 @@ LOGO = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(ROOT, 'src'
 BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC': 'ANDHRA PRADESH PUBLIC SERVICE COMMISSION',
               'SLPRB': 'STATE LEVEL POLICE RECRUITMENT BOARD, ANDHRA PRADESH', 'RRB': 'RAILWAY RECRUITMENT BOARDS · RAILWAY PROTECTION FORCE',
               'AP DSC': 'COMMISSIONERATE OF SCHOOL EDUCATION, GOVERNMENT OF ANDHRA PRADESH', 'TNPSC': 'TAMIL NADU PUBLIC SERVICE COMMISSION',
-              'KEA': 'KARNATAKA EXAMINATIONS AUTHORITY'}
+              'KEA': 'KARNATAKA EXAMINATIONS AUTHORITY', 'MPSC': 'MAHARASHTRA PUBLIC SERVICE COMMISSION'}
 BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
 SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
           'appsc-eo': {'e2025a': 'A', 'e2025b': 'A'}, 'tnpsc-group-4': {'t24': 'A', 't22': 'A'},
           'karnataka-fda-sda': {'f11g': 'A1', 'f11k': 'A1', 's25g': 'B1', 's25k': 'A1', 'k22g': 'A1', 'k22k': 'A1'}}
+# Papers whose PDF is the board's ORIGINAL booklet, not a typeset one (Anil, 16 Nov 2026: "no need to upload like this... upload the original ones...
+# just add our brand (at bottom of every page or something like that) on the original and upload... no need to use more energy for making new pdfs").
+# exam -> paper -> (question booklet, official key) under BOOKS_PRIV/originals/<exam>/ (never committed); brand_original() adds a Learn with Anil
+# footer strip under every page (the page itself is untouched) and appends the official answer key pages.
+ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('g25', 'g24', 'g23')}}
 # released mocks with a booklet: exam -> [(mock id, pack, mock name)]; their keys are in BOOKS_PRIV/mock-keys.json
 MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-constable': [('mk-pc-1', 'Mission Khaki – Constable', 'Mock 1')]}
 
@@ -57,6 +62,7 @@ def time_marks(conf, p):
     if conf['id'] == 'rrb-group-d': return '90 Minutes', 100   # RRB Group D CBT: 100 questions, 1 mark each
     if conf['id'] == 'tnpsc-group-4': return '3 Hours', 300   # TNPSC Group 4: 200 questions (Part A 150 marks, Parts B-C 150 marks)
     if conf['id'] == 'karnataka-fda-sda': return '2 Hours', 100   # KEA FDA/SDA: each paper 100 questions, 100 marks, 2 hours
+    if conf['id'] == 'mpsc-group-c': return '1 Hour', 100   # MPSC Group-C prelims: 100 questions, 100 marks, 1 hour
     return (f'{p["mins"]} Minutes' if p.get('mins') else ''), ''
 
 CSS = """
@@ -66,6 +72,7 @@ body{font:9.6pt/1.38 'Source Sans 3',sans-serif;color:#111}
 [lang=te]{font-family:'Noto Sans Telugu','Source Sans 3',sans-serif;line-height:1.5}
 [lang=ta]{font-family:'Noto Sans Tamil','Source Sans 3',sans-serif;line-height:1.5}
 [lang=kn]{font-family:'Noto Sans Kannada','Source Sans 3',sans-serif;line-height:1.55}
+[lang=mr]{font-family:'Noto Sans Devanagari','Source Sans 3',sans-serif;line-height:1.5}
 [lang=hi]{font-family:'Noto Sans Devanagari','Source Sans 3',sans-serif;line-height:1.5}
 .wm{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:0}
 .wm div{transform:rotate(-35deg);text-align:center;opacity:.07}
@@ -152,7 +159,7 @@ def paper_doc(conf, p, qs, mock=None):
               if m else '<div class="s lwa">LEARN<br>WITH<br>ANIL</div>')
     sub = re.sub(r'\s*·\s*booklet [A-Z]\b.*$', '', p.get('notif', ''))
     key = p.get('key') or ("APPSC's final key" if conf['board'] == 'APPSC' else conf.get('keyname') or 'the official key')
-    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA)\s+', '', p['title'])
+    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC)\s+', '', p['title'])
     l2name = l2['name'] if not p.get('en_only') and any(q.get('qt') for q in qs) else ''
     when = f' · Held on {esc(p["held"])}' if p.get('held') else ''
     if mock: board = 'LEARN WITH ANIL · ' + mock.upper() + ' TEST SERIES'
@@ -202,6 +209,46 @@ async def render(jobs):
         await b.close()
 
 
+def brand_original(conf, p, srcs, out):
+    """The board's own booklet (+ its answer key), each page kept as it is, with a footer strip added below it:
+    the Learn with Anil logo, 'Learn with Anil · learnwithanil.in', the paper and the page number."""
+    import io, pikepdf
+    from reportlab.pdfgen import canvas
+    from reportlab.lib.utils import ImageReader
+    S = 24   # footer strip height (pt)
+    pages = []
+    for f in srcs:
+        src = pikepdf.open(os.path.join(PRIV, 'originals', conf['id'], f))
+        pages += [(src, pg) for pg in src.pages]
+    sizes = []
+    for src, pg in pages:
+        mb = [float(x) for x in pg.mediabox]; w, h = mb[2] - mb[0], mb[3] - mb[1]
+        if int(pg.obj.get('/Rotate', 0)) % 180: w, h = h, w
+        sizes.append((w, h))
+    buf = io.BytesIO(); c = canvas.Canvas(buf, invariant=1)
+    logo = ImageReader(os.path.join(ROOT, 'src', 'static', 'icon-192.png'))
+    label = f'{p.get("kwname") or p["title"]} · {conf["board"]}\'s original question booklet and final answer key'
+    for i, (w, h) in enumerate(sizes):
+        c.setPageSize((w, S))
+        c.setStrokeColorRGB(0.09, 0.27, 0.78); c.setLineWidth(0.8); c.line(18, S - 1, w - 18, S - 1)
+        c.drawImage(logo, 18, 5, 14, 14, mask='auto')
+        c.setFillColorRGB(0.05, 0.09, 0.19); c.setFont('Helvetica-Bold', 8.5); c.drawString(37, 9, 'Learn with Anil · learnwithanil.in')
+        c.setFont('Helvetica', 7); c.setFillColorRGB(0.33, 0.38, 0.49)
+        c.drawString(37 + c.stringWidth('Learn with Anil · learnwithanil.in', 'Helvetica-Bold', 8.5) + 8, 9.4, label)
+        c.drawRightString(w - 18, 9.4, f'Page {i + 1} of {len(sizes)}')
+        c.showPage()
+    c.save()
+    foot = pikepdf.open(io.BytesIO(buf.getvalue()))
+    dst = pikepdf.new()
+    for i, ((src, pg), (w, h)) in enumerate(zip(pages, sizes)):
+        page = dst.add_blank_page(page_size=(w, h + S))
+        page.add_overlay(pg, pikepdf.Rectangle(0, S, w, h + S))
+        page.add_overlay(foot.pages[i], pikepdf.Rectangle(0, 0, w, S))
+    dst.docinfo['/Title'] = f'{p["title"]} – original question booklet with the official answer key'
+    dst.docinfo['/Author'] = 'Learn with Anil (learnwithanil.in)'
+    dst.save(out, deterministic_id=True, compress_streams=True)
+
+
 def main(exams):
     from cryptography.hazmat.primitives.ciphers.aead import AESGCM
     import pikepdf
@@ -220,6 +267,9 @@ def main(exams):
             pq = [q for q in qs if q['p'] == p['id']]
             if not pq or p.get('fmt') == 'recall': continue   # answer-only papers without options: no booklet
             out = os.path.join(OUTDIR, f'{eid}-{p["id"]}.pdf')
+            if p['id'] in ORIGINALS.get(eid, {}):   # the board's own booklet with our footer (no typesetting)
+                brand_original(conf, p, ORIGINALS[eid][p['id']], out)
+                todo.append((eid, conf, p, out, hashlib.sha256(open(out, 'rb').read()).hexdigest()[:10])); continue
             doc = paper_doc(conf, p, pq)
             jobs.append((out, doc))
             todo.append((eid, conf, p, out, hashlib.sha256(doc.encode()).hexdigest()[:10]))
@@ -238,7 +288,7 @@ def main(exams):
             doc = paper_doc(conf, p, mq, mock=pack)
             jobs.append((out, doc))
             todo.append((eid, conf, p, out, hashlib.sha256(doc.encode()).hexdigest()[:10]))
-    asyncio.run(render(jobs))
+    if jobs: asyncio.run(render(jobs))
     rows, today = [], datetime.date.today().isoformat()
     for eid, conf, p, out, dhash in todo:   # file name from the booklet's content, so an unchanged booklet keeps its name (and its keys-tab row)
         pdf = open(out, 'rb').read()
@@ -252,7 +302,8 @@ def main(exams):
             iv = os.urandom(12)
             open(os.path.join(SEALED, name), 'wb').write(iv + AESGCM(base64.b64decode(keys[kid])).encrypt(iv, pdf, kid.encode()))
         dl = re.sub(r'[^A-Za-z0-9]+', '-', f'LearnWithAnil {p.get("kw") or p["title"]} {"Mock Test" if p.get("key") == "Learn with Anil" else "Question Paper"}').strip('-') + '.pdf'
-        manifest.setdefault(eid, {})[p['id']] = dict(key=kid, file=name, name=dl, pages=pages, bytes=len(pdf), **({'mock': p['mock']} if p.get('mock') else {}))
+        manifest.setdefault(eid, {})[p['id']] = dict(key=kid, file=name, name=dl, pages=pages, bytes=len(pdf), **({'mock': p['mock']} if p.get('mock') else {}),
+                                                     **({'orig': 1} if p['id'] in ORIGINALS.get(eid, {}) else {}))
         rows.append('\t'.join([kid, keys[kid], name, today]))
         print(f'  {kid}: {pages} pages, {len(pdf) // 1024} KB -> src/books/{name}')
     json.dump(keys, open(kpath, 'w'), indent=1)

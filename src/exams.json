@@ -860,7 +860,8 @@
    "cat": "mh",
    "b": "MPSC",
    "t": "Group C",
-   "n": "Combined Group C Exam"
+   "n": "Combined Group C Exam",
+   "live": "mpsc-group-c/"
   },
   {
    "id": "uppsc-pcs",

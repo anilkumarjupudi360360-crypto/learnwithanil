@@ -385,6 +385,32 @@
    "pages": 17
   }
  },
+ "mpsc-group-c": {
+  "g23": {
+   "bytes": 1393062,
+   "file": "mpsc-group-c-g23-860d199b0b.bin",
+   "key": "bk-mpsc-group-c-g23",
+   "name": "LearnWithAnil-MPSC-Group-B-C-Prelims-2023-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 42
+  },
+  "g24": {
+   "bytes": 1740934,
+   "file": "mpsc-group-c-g24-e3532f9ee8.bin",
+   "key": "bk-mpsc-group-c-g24",
+   "name": "LearnWithAnil-MPSC-Group-C-Prelims-2024-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 42
+  },
+  "g25": {
+   "bytes": 1592218,
+   "file": "mpsc-group-c-g25-f0dd134d1c.bin",
+   "key": "bk-mpsc-group-c-g25",
+   "name": "LearnWithAnil-MPSC-Group-C-Prelims-2025-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 42
+  }
+ },
  "rpf-constable": {
   "k25s1": {
    "bytes": 751736,

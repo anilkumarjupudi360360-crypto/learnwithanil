@@ -49,6 +49,7 @@ body{margin:0;font:10.5pt/1.45 'Source Sans 3',sans-serif;color:#0D1830}
 [lang=te]{font-family:'Noto Sans Telugu','Source Sans 3',sans-serif;line-height:1.6}
 [lang=ta]{font-family:'Noto Sans Tamil','Source Sans 3',sans-serif;line-height:1.6}
 [lang=kn]{font-family:'Noto Sans Kannada','Source Sans 3',sans-serif;line-height:1.65}
+[lang=mr]{font-family:'Noto Sans Devanagari','Source Sans 3',sans-serif;line-height:1.6}
 [lang=hi]{font-family:'Noto Sans Devanagari','Source Sans 3',sans-serif;line-height:1.6}
 a{color:#1440B8}
 .top{border-bottom:2.5pt solid #1846C7;padding-bottom:8pt;margin-bottom:10pt}
