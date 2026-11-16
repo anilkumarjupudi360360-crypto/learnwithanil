@@ -1,0 +1,883 @@
+# UPSC Civil Services (Preliminary) Examination 2023, General Studies Paper II (CSAT) (Series A, booklet XDTG-S-DNK), held 28 May 2023.
+# Source: the official UPSC question paper; answers from UPSC's official (final) answer key (published May 2024). Explanations by Learn with Anil.
+# Dropped by UPSC: none
+
+Q 1 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+We often hear about conflicts among different States in India over river waters. Of the 20 major river systems, 14 are already water-stressed; 75% of the population lives in water-stressed regions, a third of whom live in water-scarce areas. Climate change, the demands of rising population and the need for agriculture to keep pace, and increased rate of urbanization and industrialization will exacerbate water stress. According to the Constitution of India, water is a State subject and not that of the Union, except for regulation of inter-State rivers. Key to ensuring balance between competing demands of various stakeholders is a basin-based approach to allocate water amongst constituent regions and States. Allocating fair share of water to them requires assessments based on objective criteria, such as specificities of the river basin, size of dependent population, existing water use and demand, efficiency of use, projected future use, etc. while ensuring the environmental needs of the river and aquifers.
+Which one of the following statements best reflects the most rational, practical and immediate action required to ensure fair and equitable allocation of water to different stakeholders?
+(1) A national, pragmatic, legal and policy framework for water allocation should be made.
+(2) All river systems of the country should be linked and huge aquifers created.
+(3) Water channels between regions of water surplus and regions of water deficit should be created.
+(4) To mitigate water crisis, water demand of sectors such as agriculture and industry should be reduced.
+= 1
+~ The passage says water is a State subject, conflicts are growing, and fair allocation needs a basin-based approach built on objective criteria (basin features, dependent population, use, efficiency, future demand, environmental needs). The immediate, rational step is therefore a national, pragmatic legal and policy framework for allocation. Linking all rivers or building channels are big engineering ideas the passage never proposes, and cutting sectoral demand ignores the allocation question. Hence (a).
+
+Q 2 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+More than half of Indian women and almost a quarter of Indian men of working age suffer from anaemia. According to studies, they are anywhere from 5 – 15% less productive than they could be, as a result thereof. India also has the largest tuberculosis burden in the world, costing 170 million workdays to the country annually. But what is just as important as lost productivity now is lost potential in the future. It is becoming increasingly clear that on many measures of cognitive ability, malnourished Indian children perform two or three times worse than their adequately nourished peers. For an economy that will be more dependent on highly skilled workers, this poses a significant challenge. And it is one that really should be addressed given India's demographic outlook.
+Which one of the following statements best reflects what is implied by the passage?
+(1) Education system must be strengthened in rural areas.
+(2) Large scale and effective implementation of skill development programme is the need of the hour.
+(3) For economic development, health and nutrition of only skilled workers needs special attention.
+(4) For rapid economic growth as envisaged by us, attention should be paid to health and nutrition of the people.
+= 4
+~ Anaemia and TB cut productivity today, and malnutrition lowers the cognitive ability of children, which threatens an economy that will depend on highly skilled workers. The implication is that growth needs attention to the health and nutrition of the people as a whole. Option (c) wrongly limits this to 'only skilled workers', and (a) and (b) are about education and skilling, which the passage does not discuss. Hence (d).
+
+Q 3 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In India, a majority of farmers are marginal and small, less educated and possess low adaptive capabilities to climate change, perhaps because of credit and other constraints. So, one cannot expect autonomous adaptation to climate change. Even if it was possible, it would not be sufficient to offset losses from climate change. To deal with this, adaptation to climate change is paramount, alongside a fast mitigation response. Another solution is to have a planned or policy-driven adaptation, which would require the government to come up with policy recommendations. Perception is a necessary pre-requisite for adaptation. Whether farmers are adapting agricultural practices to climate change depends on whether they perceive it or not. However, this is not always enough for adaptation. It is important how a farmer perceives the risks associated with climate change.
+Which one of the following statements best reflects the most logical and rational message conveyed by the author of the passage?
+(1) Adaptation to climate change and mitigation response are basically the responsibilities of the government.
+(2) Climate change causes a change in government policies regarding land use patterns in the country.
+(3) Risk perceptions of farmers are important for motivating them for taking adaptation decisions.
+(4) Since mitigation is not possible, governments should come up with policies for quick response to climate change.
+= 3
+~ The passage ends by stressing that perception is a pre-requisite for adaptation and that what matters is how a farmer perceives the risks of climate change. So farmers' risk perception is key to motivating adaptation decisions. Option (a) puts everything on the government, (b) is never discussed, and (d) wrongly says mitigation is impossible. Hence (c).
+
+Q 4 | qa | Permutations, Combinations & Probability
+Raj has ten pairs of red, nine pairs of white and eight pairs of black shoes in a box. If he randomly picks shoes one by one (without replacement) from the box to get a red pair of shoes to wear, what is the maximum number of attempts he has to make?
+(1) 27
+(2) 36
+(3) 44
+(4) 45
+= 4
+~ Worst case: he first picks all 18 white and all 16 black shoes (34), then 10 red shoes of the same foot (say all left), which still gives no red pair: 44 picks. The 45th shoe must be a red right shoe and completes a red pair. Maximum attempts = 45, (d).
+
+Q 5 | qa | Permutations, Combinations & Probability
+In how many ways can a batsman score exactly 25 runs by scoring single runs, fours and sixes only, irrespective of the sequence of scoring shots?
+(1) 18
+(2) 19
+(3) 20
+(4) 21
+= 2
+~ Let sixes = a, fours = b; singles fill the rest, so we need 6a + 4b ≤ 25. a = 0: b = 0 to 6 (7 ways); a = 1: b = 0 to 4 (5); a = 2: b = 0 to 3 (4); a = 3: b = 0 or 1 (2); a = 4: b = 0 (1). Total 7 + 5 + 4 + 2 + 1 = 19, (b).
+
+Q 6 | qa | Permutations, Combinations & Probability
+There are four letters and four envelopes and exactly one letter is to be put in exactly one envelope with the correct address. If the letters are randomly inserted into the envelopes, then consider the following statements:
+1. It is possible that exactly one letter goes into an incorrect envelope.
+2. There are only six ways in which only two letters can go into the correct envelopes.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ Statement 1 is impossible: if three letters are in their correct envelopes, the only envelope left is the fourth letter's own, so it also goes in correctly. Statement 2: choose the two letters that go correctly in C(4,2) = 6 ways; the other two must then swap, in exactly 1 way. So there are exactly 6 ways. Only 2 is correct, (b).
+
+Q 7 | qa | Number System
+What is the remainder when 85 × 87 × 89 × 91 × 95 × 96 is divided by 100?
+(1) 0
+(2) 1
+(3) 2
+(4) 4
+= 1
+~ 85 = 5 × 17 and 95 = 5 × 19 give 5², and 96 = 2⁵ × 3 gives at least 2². So the product contains 2² × 5² = 100 and is divisible by 100. Remainder 0, (a).
+
+Q 8 | qa | Number System
+What is the unit digit in the expansion of (57242)^(9×7×5×3×1)?
+(1) 2
+(2) 4
+(3) 6
+(4) 8
+= 1
+~ The unit digit depends only on 2 raised to the power 9 × 7 × 5 × 3 × 1 = 945. Powers of 2 end in the cycle 2, 4, 8, 6 (length 4). 945 = 4 × 236 + 1, so the unit digit is the first in the cycle: 2, (a).
+
+Q 9 | qa | Number System
+If ABC and DEF are both 3-digit numbers such that A, B, C, D, E and F are distinct non-zero digits such that ABC + DEF = 1111, then what is the value of A + B + C + D + E + F?
+(1) 28
+(2) 29
+(3) 30
+(4) 31
+= 4
+~ Since all digits are non-zero, C + F cannot be 1, so C + F = 11 (carry 1). Then B + E + 1 must end in 1, so B + E = 10 (carry 1), and A + D + 1 = 11 gives A + D = 10. Total = 11 + 10 + 10 = 31, (d). (Example: 235 + 876 = 1111.)
+
+Q 10 | qa | Number System
+D is a 3-digit number such that the ratio of the number to the sum of its digits is least. What is the difference between the digit at the hundred's place and the digit at the unit's place of D?
+(1) 0
+(2) 7
+(3) 8
+(4) 9
+= 3
+~ To make number ÷ (sum of digits) smallest, keep the hundreds digit small and the other digits large. 199/19 ≈ 10.47 is less than 189/18 = 10.5, 198/18 = 11 and any number with hundreds digit 2 or more (e.g. 299/20 ≈ 14.95). So D = 199, and 9 − 1 = 8, (c).
+
+Q 11 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The emissions humans put into the atmosphere now will affect the climate in the middle of the century and onwards. Technological change, meanwhile, could make a future transition away from fossil fuels cheap or it might not, leaving the world with a terrible choice between sharply reducing emissions at huge cost or suffering through the effects of unabated warming. Businesses that do not hedge against the threat of uncertain outcomes fail. The world cannot afford such recklessness on climate change.
+Which one of the following statements best reflects the crucial message conveyed by the author of the passage?
+(1) Businesses that cause emissions may need to close down or pay for pollution in future.
+(2) The only solution is technological development related to the issues of climate change.
+(3) Waiting to deal with carbon emissions until technology improves is not a wise strategy.
+(4) Since future technological change is uncertain, new industries should be based on renewable energy sources.
+= 3
+~ Today's emissions shape the climate for decades, future technology may or may not make the transition cheap, and businesses that do not hedge against uncertain outcomes fail; the world cannot afford such recklessness. So waiting for technology to improve before cutting emissions is unwise. Options (a) and (d) are specific prescriptions the passage does not make, and (b) contradicts its point about uncertain technology. Hence (c).
+
+Q 12 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Environmental problems cause health problems. Substantial changes in lifestyle can reduce environmental or health problems, but this idea appears almost impossible to adopt. With environmental problems, individual efforts can be perceived as having a negligible effect and therefore lead to inertia. With health, on the other hand, individual choices can make the difference between life and death, literally. And yet, barring a few, there seems to be the same collective lethargy towards making their choices.
+Which one of the following statements best implies the most rational assumption that can be made from the passage?
+(1) We are likely to spend more money on cure than prevention.
+(2) It is the job of the government to solve our environmental and public health problems.
+(3) Health can be protected even if environmental problems go on unattended.
+(4) Loss of traditional lifestyle and the influence of western values led to some unhealthy ways of living.
+= 1
+~ The passage says that even though individual choices can literally decide between life and death in health, people show the same collective lethargy in changing their lifestyles. People who will not take preventive steps end up needing treatment, so the rational assumption is that we are likely to spend more on cure than on prevention. Options (b) and (d) are not discussed, and (c) contradicts the first line that environmental problems cause health problems. Hence (a).
+
+Q 13 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Many people are not eating the right food. For some, it is simply a decision to stick with food they enjoy but which is not too healthy. This is leading to an increase in non-communicable diseases. This in turn leads to major burden on our health-care systems that have the potential to derail the economic progress which is essential for the poor to improve their lives. For others, it is about limited access to nutritious food or a lack of affordability, leading to monotonous diets that do not provide the daily nutrients for them to develop fully. Part of the reason nutrition is under threat worldwide is that our food systems are not properly responding to nutritional needs. Somewhere along that long road from farm to fork, there are serious detours taking place.
+Which one of the following statements best reflects the crux of the passage?
+(1) The scheme of Universal Basic Income should be implemented worldwide as a way of poverty alleviation.
+(2) We must place food-based nutrition at the centre of our policy debate.
+(3) Nutritional status of food should be improved by creating appropriate genetically modified crops.
+(4) Using modern food processing technologies, we must fortify food items with required nutrient elements.
+= 2
+~ The passage traces poor nutrition to food choices, lack of access and affordability, and food systems that do not respond to nutritional needs, causing disease and economic burden. Its crux is that food-based nutrition must be central to policy. Universal Basic Income, GM crops and food fortification are particular remedies the passage never discusses. Hence (b).
+
+Q 14 | qa | Number System
+Three of the five positive integers p, q, r, s, t are even and two of them are odd (not necessarily in order). Consider the following:
+1. p + q + r − s − t is definitely even.
+2. 2p + q + 2r − 2s + t is definitely odd.
+Which of the above statements is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Subtracting a number has the same effect on parity as adding it, so p + q + r − s − t has the same parity as p + q + r + s + t = (three evens) + (two odds) = even. Statement 1 is always true. In 2p + q + 2r − 2s + t, the even terms 2p, 2r, 2s do not matter, so its parity is that of q + t, which is odd only if exactly one of q, t is odd; that is not certain. Only 1, (a).
+
+Q 15 | qa | Number System
+Consider the following in respect of prime number p and composite number c.
+1. (p + c)/(p − c) can be even.
+2. 2p + c can be odd.
+3. pc can be odd.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ 1: take p = 2, c = 6: (2 + 6)/(2 − 6) = 8/(−4) = −2, an even number. 2: p = 2, c = 9: 2p + c = 13, odd. 3: p = 3, c = 9: pc = 27, odd. Each statement can hold, so all three are correct, (d).
+
+Q 16 | qa | Number System
+A 3-digit number ABC, on multiplication with D gives 37DD where A, B, C and D are different non-zero digits. What is the value of A + B + C?
+(1) 18
+(2) 16
+(3) 15
+(4) Cannot be determined due to insufficient data
+= 1
+~ ABC × D = 37DD = 3700 + 11D. Try D: D = 4 gives 3744 ÷ 4 = 936 (digits 9, 3, 6, 4 all different and non-zero). D = 5 gives 751, which repeats 5; D = 6, 7, 8, 9 do not divide evenly; D ≤ 3 makes ABC a 4-digit number. So ABC = 936 and A + B + C = 18, (a).
+
+Q 17 | qa | Number System
+For any choices of values of X, Y and Z, the 6-digit number of the form XYZXYZ is divisible by:
+(1) 7 and 11 only
+(2) 11 and 13 only
+(3) 7 and 13 only
+(4) 7, 11 and 13
+= 4
+~ XYZXYZ = XYZ × 1000 + XYZ = XYZ × 1001, and 1001 = 7 × 11 × 13. So every such number is divisible by 7, 11 and 13, (d).
+
+Q 18 | qa | Geometry & Mensuration
+125 identical cubes are arranged in the form of a cubical block. How many cubes are surrounded by other cubes from each side?
+(1) 27
+(2) 25
+(3) 21
+(4) 18
+= 1
+~ 125 cubes form a 5 × 5 × 5 block. A cube surrounded on every side is not on any outer face, so it lies in the inner (5 − 2) × (5 − 2) × (5 − 2) = 3 × 3 × 3 block: 27 cubes, (a).
+
+Q 19 | qa | Permutations, Combinations & Probability
+How many distinct 8-digit numbers can be formed by rearranging the digits of the number 11223344 such that odd digits occupy odd positions and even digits occupy even positions?
+(1) 12
+(2) 18
+(3) 36
+(4) 72
+= 3
+~ The four odd positions take the digits 1, 1, 3, 3 in 4!/(2! × 2!) = 6 ways, and the four even positions take 2, 2, 4, 4 in another 6 ways. Total 6 × 6 = 36, (c).
+
+Q 20 | qa | Arithmetic
+A, B, C working independently can do a piece of work in 8, 16 and 12 days respectively. A alone works on Monday, B alone works on Tuesday, C alone works on Wednesday; A alone, again works on Thursday and so on.
+Consider the following statements:
+1. The work will be finished on Thursday.
+2. The work will be finished in 10 days.
+Which of the above statements is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Take the work as 48 units: A does 6, B 3 and C 4 units a day, so each 3-day round (A, B, C) does 13 units. After 3 rounds (9 days) 39 units are done; day 10 (A) brings it to 45 and day 11 (B) to 48. Day 1 is Monday, so day 8 is Monday and day 11 is Thursday. The work ends on Thursday, but in 11 days, not 10. Only 1, (a).
+
+Q 21 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+To tackle the problem of pollution in cities, policy makers think that drastic actions like temporary use of odd-even number scheme for vehicles, closing schools, factories, construction activities, and banning the use of certain type of vehicles are a way forward. Even then the air is not clean. Vehicles more than 15 years old comprise one percent of the total; and taking them off the road will not make any difference. Banning certain fuels and car types arbitrarily is not proper. Diesel engines produce more PM 2.5 and less CO₂ than petrol or CNG engines. On the other hand, both diesel and CNG engines produce more NOₓ than petrol engines. No one has measured the amount of NOₓ that CNG engines are emitting. Arbitrary bans on vehicles that have passed mandated fitness tests and periodic pollution tests are unfair. What is needed is the scientific and reliable information about the source of pollutants on a continuing basis and the technologies that will work to reduce pollution from them.
+Which one of the following statements best reflects the most logical and rational implication conveyed by the passage?
+(1) Arbitrary curbs on vehicles to reduce pollution are difficult to implement.
+(2) Knee-jerk reactions cannot solve the problem of pollution but an evidence-based approach will be more effective.
+(3) A heavy penalty should be enforced on those driving without periodic pollution tests.
+(4) In the absence of laws to deal with the problems of pollution, the administration tends to make arbitrary decisions.
+= 2
+~ The passage criticises drastic, arbitrary measures (odd-even, closures, bans on old vehicles or fuels) that have not cleaned the air, and calls for continuous scientific information on pollution sources and technologies that work. So knee-jerk reactions fail and an evidence-based approach is needed. It does not say curbs are hard to implement (a), propose penalties (c), or blame a lack of laws (d). Hence (b).
+
+Q 22 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Good corporate governance structures encourage companies to provide accountability and control. A fundamental reason why corporate governance has moved onto the economic and political agenda worldwide has been the rapid growth in international capital markets. Effective corporate governance enhances access to external financing by firms, leading to greater investment, higher growth and employment. Investors look to place their funds where the standards of disclosure, of timely and accurate financial reporting, and of equal treatment to all stakeholders are met.
+Which of the following statements best reflects the logical inference from the passage given above?
+(1) It is an important agenda of the countries around the world to ensure access to good external financing.
+(2) Good corporate governance improves the credibility of the firms.
+(3) International capital markets ensure that the firms maintain good corporate governance.
+(4) Good corporate governance paves the way for robust supply chains.
+= 2
+~ Investors place funds where disclosure, accurate reporting and fair treatment of stakeholders are assured, and good governance improves firms' access to external finance. The logical inference is that good corporate governance makes firms more credible. Option (a) mixes up countries with firms, (c) reverses the link (capital markets have pushed governance onto the agenda, not enforced it), and (d) is not discussed. Hence (b).
+
+Q 23 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Elephants are landscape architects, creating clearings in the forest, preventing overgrowth of certain plant species and allowing space for the regeneration of others, which in turn provide sustenance to other herbivorous animals. Elephants eat plants, fruits and seeds, propagating the seeds when they defecate in other places as they travel. Elephant dung provides nourishment to plants and animals and acts as a breeding ground for insects. In times of drought, they access water by digging holes which benefits other wildlife.
+Which one of the following statements best reflects the most logical and rational inference that can be drawn from the passage?
+(1) The home range of elephants needs to be a vast area of rich biodiversity.
+(2) Elephants are the keystone species and they benefit the biodiversity.
+(3) Rich biodiversity cannot be maintained in the forests without the presence of elephants.
+(4) Elephants are capable of regenerating forests with species as per their requirement.
+= 2
+~ Elephants create clearings, control overgrowth, help regeneration, disperse seeds, feed plants and insects with their dung and dig water holes for other wildlife; they shape the whole ecosystem, which is what a keystone species does. Option (c) is too strong (rich biodiversity 'cannot' exist without them), (a) is about home range, which is not discussed, and (d) wrongly says they regenerate forests to suit themselves. Hence (b).
+
+Q 24 | lr | Series & Patterns
+If 7 ⊕ 9 ⊕ 10 = 8, 9 ⊕ 11 ⊕ 30 = 5, 11 ⊕ 17 ⊕ 21 = 13, what is the value of 23 ⊕ 4 ⊕ 15?
+(1) 6
+(2) 8
+(3) 13
+(4) 15
+= 1
+~ Add all the digits of the three numbers: 7 + 9 + 1 + 0 = 17 and 1 + 7 = 8; 9 + 1 + 1 + 3 + 0 = 14 and 1 + 4 = 5; 1 + 1 + 1 + 7 + 2 + 1 = 13. For 23 ⊕ 4 ⊕ 15: 2 + 3 + 4 + 1 + 5 = 15 and 1 + 5 = 6, (a). (The third example is left at 13 rather than reduced to 4, so the pattern is not fully consistent; 6 is UPSC's official key.)
+
+Q 25 | qa | Number System
+Let x be a positive integer such that 7x + 96 is divisible by x. How many values of x are possible?
+(1) 10
+(2) 11
+(3) 12
+(4) Infinitely many
+= 3
+~ 7x + 96 is divisible by x exactly when 96 is divisible by x, since 7x always is. So x must be a positive divisor of 96 = 2⁵ × 3, which has (5 + 1)(1 + 1) = 12 divisors. 12 values, (c).
+
+Q 26 | qa | Algebra
+If p, q, r and s are distinct single digit positive numbers, then what is the greatest value of (p + q)(r + s)?
+(1) 230
+(2) 225
+(3) 224
+(4) 221
+= 2
+~ To make the product large, use the four largest digits 9, 8, 7, 6 (total 30). For a fixed total, the product of two parts is largest when the parts are equal: 15 and 15, e.g. (9 + 6)(8 + 7) = 15 × 15 = 225, (b).
+
+Q 27 | qa | Number System
+A number N is formed by writing 9 for 99 times. What is the remainder if N is divided by 13?
+(1) 11
+(2) 9
+(3) 7
+(4) 1
+= 1
+~ 999999 = 13 × 76923, so every block of six 9s is divisible by 13. 99 nines = 16 blocks of six (96 nines) followed by 999, so N leaves the same remainder as 999. 999 = 13 × 76 + 11. Remainder 11, (a).
+
+Q 28 | qa | Number System
+Each digit of a 9-digit number is 1. It is multiplied by itself. What is the sum of the digits of the resulting number?
+(1) 64
+(2) 80
+(3) 81
+(4) 100
+= 3
+~ 111111111 × 111111111 = 12345678987654321. Its digit sum is 2 × (1 + 2 + ... + 8) + 9 = 72 + 9 = 81, (c).
+
+Q 29 | qa | Number System
+What is the sum of all digits which appear in all the integers from 10 to 100?
+(1) 855
+(2) 856
+(3) 910
+(4) 911
+= 2
+~ From 10 to 99, each tens digit 1 to 9 appears 10 times: 45 × 10 = 450; each units digit 0 to 9 appears 9 times: 45 × 9 = 405. That gives 855, and 100 adds 1. Total 856, (b).
+
+Q 30 | qa | Permutations, Combinations & Probability
+ABCD is a square. One point on each of AB and CD; and two distinct points on each of BC and DA are chosen. How many distinct triangles can be drawn using any three points as vertices out of these six points?
+(1) 16
+(2) 18
+(3) 20
+(4) 24
+= 3
+~ There are 6 points and no side of the square holds more than two of them, so no three are collinear. Every choice of three points gives a triangle: C(6, 3) = 20, (c).
+
+Q 31 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In India, the segregation of municipal waste at source is rare. Recycling is mostly with the informal sector. More than three-fourths of the municipal budget goes into collection and transportation, which leaves very little for processing/resource recovery and disposal. Where does waste-to-energy fit into all this? Ideally it fits in the chain after segregation (between wet waste and the rest), collection, recycling, and before getting to the landfill. Which technology is most appropriate in converting waste to energy depends on what is in the waste (that is biodegradable versus non-biodegradable component) and its calorific value. The biodegradable component of India's municipal solid waste is a little over 50 per cent, and biomethanation offers a major solution for processing this.
+Based on the above passage, the following assumptions have been made:
+1. Collection, processing and segregation of municipal waste should be with government agencies.
+2. Resource recovery and recycling require technological inputs that can be best handled by private sector enterprises.
+Which of the assumptions given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 4
+~ The passage describes how waste is handled (budgets spent on collection and transport, recycling with the informal sector) and where waste-to-energy fits. It says nothing about who should do collection, processing and segregation (1), or that private enterprises handle recovery and recycling best (2). Neither assumption is valid, (d).
+
+Q 32 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In India, the segregation of municipal waste at source is rare. Recycling is mostly with the informal sector. More than three-fourths of the municipal budget goes into collection and transportation, which leaves very little for processing/resource recovery and disposal. Where does waste-to-energy fit into all this? Ideally it fits in the chain after segregation (between wet waste and the rest), collection, recycling, and before getting to the landfill. Which technology is most appropriate in converting waste to energy depends on what is in the waste (that is biodegradable versus non-biodegradable component) and its calorific value. The biodegradable component of India's municipal solid waste is a little over 50 per cent, and biomethanation offers a major solution for processing this.
+Which one of the following statements best reflects the crux of the passage?
+(1) Generation of energy from municipal solid waste is inexpensive.
+(2) Biomethanation is the most ideal way of generating energy from municipal solid waste.
+(3) Segregation of municipal solid waste is the first step in ensuring the success of waste-to-energy plants.
+(4) The biodegradable component of India's municipal solid waste is not adequate to provide energy from waste efficiently/effectively.
+= 3
+~ Segregation at source is rare, waste-to-energy fits after segregation, and the choice of technology depends on what the waste contains, which can only be known once it is segregated. So segregation is the first step for waste-to-energy to work. Cost (a) is not discussed, biomethanation is 'a major solution', not 'the most ideal way' (b), and (d) contradicts the passage. Hence (c).
+
+Q 33 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+There is a claim that organic farming is inherently safer and healthier. The reality is that because the organic farming industry is still young and not well-regulated in India, farmers and consumers, alike, are not only confused about what products are best for them, but sometimes use products in ways that could harm them as well. For example, since organic fertilizers are difficult to obtain on a large scale in India, farmers often use farmyard manure, which may contain toxic chemicals and heavy metals. Certain plant sprays, such as Datura flower and leaf spray, have an element called atropine. If it is not applied in the right dose, it can act on the nervous system of the consumer. Unfortunately, how much and when to use it are not well-researched or regulated issues.
+Based on the above passage, the following assumptions have been made:
+1. Organic farming is inherently unsafe for both farmers and consumers.
+2. Farmers and consumers need to be educated about eco-friendly food.
+Which of the assumptions given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ Assumption 1 is too strong: the passage blames the young, poorly regulated industry and wrong use of products, not organic farming itself. Assumption 2 is implied: farmers and consumers are confused about which products are best and sometimes use them in harmful ways, so they need to be educated. Only 2, (b).
+
+Q 34 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+There is a claim that organic farming is inherently safer and healthier. The reality is that because the organic farming industry is still young and not well-regulated in India, farmers and consumers, alike, are not only confused about what products are best for them, but sometimes use products in ways that could harm them as well. For example, since organic fertilizers are difficult to obtain on a large scale in India, farmers often use farmyard manure, which may contain toxic chemicals and heavy metals. Certain plant sprays, such as Datura flower and leaf spray, have an element called atropine. If it is not applied in the right dose, it can act on the nervous system of the consumer. Unfortunately, how much and when to use it are not well-researched or regulated issues.
+Which one of the following statements best reflects the most logical, rational and practical message conveyed by the author of the passage?
+(1) In India, organic farming should not be promoted as a substitute for conventional farming.
+(2) There are no safe organic alternatives to chemical fertilizers.
+(3) In India, farmers need to be guided and helped to make their organic farming sustainable.
+(4) The aim of organic farming should not be to generate huge profits as there is still no global market for its products.
+= 3
+~ The problems in the passage come from a young, unregulated sector: confusion over products, unsafe farmyard manure, and sprays like Datura used without researched doses. The practical message is that farmers need guidance and help to make organic farming sustainable. Options (a) and (b) go further than the passage, and (d) brings in profits and global markets, which are not discussed. Hence (c).
+
+Q 35 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Food consumption patterns have changed substantially in India over the past few decades. This has resulted in the disappearance of many nutritious foods such as millets. While food grain production has increased over five times since independence, it has not sufficiently addressed the issue of malnutrition. For long, the agriculture sector focussed on increasing food production particularly staples, which led to lower production and consumption of indigenous traditional crops/grains, fruits and other vegetables, impacting food and nutrition security in the process. Further, intensive, monoculture agriculture practices can perpetuate the food and nutrition security problem by degrading the quality of land, water and food derived through them.
+Based on the above passage, the following assumptions have been made:
+1. To implement the Sustainable Development Goals and to achieve zero-hunger goal, monoculture agriculture practices are inevitable even if they do not address malnutrition.
+2. Dependence on a few crops has negative consequences for human health and the ecosystem.
+3. Government policies regarding food planning need to incorporate nutritional security.
+4. For the present monoculture agriculture practices, farmers receive subsidies in various ways and government offers remunerative prices for grains and therefore they do not tend to consider crop diversity.
+Which of the above assumptions are valid?
+(1) 1, 2 and 4 only
+(2) 2 and 3 only
+(3) 3 and 4 only
+(4) 1, 2, 3 and 4
+= 2
+~ 2 is valid: focus on a few staples reduced traditional crops and nutrition, and monoculture degrades land, water and food. 3 is valid: higher grain output has not solved malnutrition, so food planning must build in nutritional security. 1 contradicts the passage, which presents monoculture as part of the problem, and 4 brings in subsidies and prices, which the passage never mentions. 2 and 3 only, (b).
+
+Q 36 | qa | Permutations, Combinations & Probability
+A box contains 14 black balls, 20 blue balls, 26 green balls, 28 yellow balls, 38 red balls and 54 white balls. Consider the following statements:
+1. The smallest number n such that any n balls drawn from the box randomly must contain one full group of at least one colour is 175.
+2. The smallest number m such that any m balls drawn from the box randomly must contain at least one ball of each colour is 167.
+Which of the above statements is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ 1: worst case, draw all but one ball of every colour: 13 + 19 + 25 + 27 + 37 + 53 = 174 balls with no full group; the next ball completes one, so n = 175. 2: worst case, draw every ball except the smallest colour group (14 black): 180 − 14 = 166 balls without black; the next must be black, so m = 167. Both are correct, (c).
+
+Q 37 | lr | Series & Patterns
+If 'ZERO' is written as 'CHUR', then how is 'PLAYER' written?
+(1) SOCAGT
+(2) SODBGT
+(3) SODBHT
+(4) SODBHU
+= 4
+~ Each letter moves 3 places forward: Z → C, E → H, R → U, O → R. Applying +3 to PLAYER: P → S, L → O, A → D, Y → B, E → H, R → U, giving SODBHU, (d).
+
+Q 38 | lr | Analytical Reasoning
+Consider the following statements:
+1. A is older than B.
+2. C and D are of the same age.
+3. E is the youngest.
+4. F is younger than D.
+5. F is older than A.
+How many statements given above are required to determine the oldest person/persons?
+(1) Only two
+(2) Only three
+(3) Only four
+(4) All five
+= 4
+~ Together the statements give C = D > F > A > B, with E the youngest, so C and D are the oldest. Every statement is needed: without 1, B could be the oldest; without 2, C's place is unknown; without 3, E could be the oldest; without 4, F might be older than D; without 5, A might be older than F and D. All five, (d).
+
+Q 39 | lr | Analytical Reasoning
+Consider the following including the Question and the Statements:
+There are 5 members A, B, C, D, E in a family.
+Question : What is the relation of E to B?
+Statement-1: A and B are a married couple.
+Statement-2: D is the father of C.
+Statement-3: E is D's son.
+Statement-4: A and C are sisters.
+Which one of the following is correct in respect of the above Question and Statements?
+(1) Statement-1, Statement-2 and Statement-3 are sufficient to answer the Question.
+(2) Statement-1, Statement-3 and Statement-4 are sufficient to answer the Question.
+(3) All four statements together are sufficient to answer the Question.
+(4) All four statements are not sufficient to answer the Question.
+= 3
+~ D is C's father (2) and A and C are sisters (4), so A is D's daughter; E is D's son (3), so E is A's brother. A and B are married (1), and since A is a sister, B is her husband. So E is B's brother-in-law (wife's brother). Dropping any statement breaks this chain, so all four are needed, (c).
+
+Q 40 | qa | Number System
+Choose the group which is different from the others:
+(1) 17, 37, 47, 97
+(2) 31, 41, 53, 67
+(3) 71, 73, 79, 83
+(4) 83, 89, 91, 97
+= 4
+~ All numbers in groups (a), (b) and (c) are primes. In group (d), 91 = 7 × 13 is not a prime, so (d) is the odd one out.
+
+Q 41 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Scientists studied the vernal window — transition period from winter to the growing season. They found that warmer winters with less snow resulted in a longer lag time between spring events and a more protracted vernal window. This change in the spring timetable has ecological, social and economic consequences — for agriculture, fisheries and tourism. As the ice melts earlier, the birds don't return, causing a delay, or lengthening in springtime ecological events.
+With reference to the above passage, the following assumptions have been made:
+1. Global warming is causing spring to come early and for longer durations.
+2. Early spring and longer period of spring is not good for bird populations.
+Which of the above assumptions is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ The passage says warmer winters with less snow and earlier ice-melt have lengthened the vernal window, which supports the assumption that warming is making spring come earlier and last longer (1). It only says the birds do not return on time, delaying springtime events; it says nothing about harm to bird populations (2). Only 1, (a).
+
+Q 42 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+A global analysis of nitrogen use efficiency — a measure of the amount of nitrogen a plant takes in to grow versus what is left behind as pollution — says that using too much fertilizers will lead to increased pollution of waterways and the air. Currently, the global average for nitrogen use efficiency is approximately 0.4, meaning 40 per cent of the total nitrogen added to cropland goes into the harvested crop while 60 per cent is lost to the environment, says a study. More than half of the world's population is nourished by food grown with fertilizers containing synthetic nitrogen, which is needed to produce high crop yields. Plants take the nitrogen they need to grow, and the excess is left in the ground, water and air. This results in significant emissions of nitrous oxide, a potent greenhouse and ozone depleting gas, and other forms of nitrogen pollution, including eutrophication of lakes and rivers and contamination of river water.
+Which one of the following statements best reflects the most logical, rational and crucial message implied by the passage?
+(1) An enhanced efficiency of use of nitrogen is imperative for both food production and environment.
+(2) Production of synthetic nitrogen fertilizers cannot be stopped as it will adversely affect global food security.
+(3) Alternatives to crops that require excess of nitrogen should be identified and cultivated.
+(4) Conventional agriculture using synthetic fertilizers should be replaced with agroforestry, agroecosystems and organic farming.
+= 1
+~ Synthetic nitrogen feeds over half the world, yet only about 40% of applied nitrogen reaches the crop and 60% pollutes air and water (nitrous oxide, eutrophication). The crucial message is that nitrogen must be used more efficiently, for both food production and the environment. Options (b), (c) and (d) are conclusions the passage does not draw. Hence (a).
+
+Q 43 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Along with sustainable lifestyles, climate justice is regarded as a significant principle in environmental parlance. Both the principles have bearings on political and economic choices of the nation. So far, in our climate change summits or compacts, both the principles have eluded consensus among nations. Justice, in the judicial sense, is well defined. However, in the context of climate change, it has scientific as well as socio-political connotations. The crucial question in the next few years will be how resources, technologies and regulations are used to support the victims of climate change. Justice in climate is not confined to actions relating to mitigation, but includes the wider notion of support for adaptation to climate change and compensation for loss and damage.
+Which one of the following statements best reflects the most logical, rational and crucial message conveyed by the passage?
+(1) Climate justice should be ingrained in detail in the rules of all the new climate compacts/agreements.
+(2) Environmental resources are unevenly distributed and exploited across the globe.
+(3) There is an impending issue of dealing with a huge number of climate change victims/climate refugees.
+(4) Climate change in all its connotations is mostly due to developed countries and therefore their share of burden should be more.
+= 1
+~ Climate justice has so far eluded consensus in summits and compacts, and it covers more than mitigation: support for adaptation and compensation for loss and damage. The logical message is that climate justice must be built in detail into the rules of new climate agreements. Option (b) is not discussed, (c) narrows the point to refugees, and (d) assigns blame, which the passage does not do. Hence (a).
+
+Q 44 | qa | Arithmetic
+A principal P becomes Q in 1 year when compounded half-yearly with R% annual rate of interest. If the same principal P becomes Q in 1 year when compounded annually with S% annual rate of interest, then which one of the following is correct?
+(1) R = S
+(2) R > S
+(3) R < S
+(4) R ≤ S
+= 3
+~ Half-yearly compounding at R% gives an effective annual rate of (1 + R/200)² − 1 = R% + R²/40000, which is more than R%. For P to grow to the same Q in a year, the annual rate S must equal this effective rate, so S > R, i.e. R < S, (c).
+
+Q 45 | qa | Number System
+How many natural numbers are there which give a remainder of 31 when 1186 is divided by these natural numbers?
+(1) 6
+(2) 7
+(3) 8
+(4) 9
+= 4
+~ If 1186 leaves remainder 31 on division by n, then n divides 1186 − 31 = 1155 and n > 31. 1155 = 3 × 5 × 7 × 11; its divisors above 31 are 33, 35, 55, 77, 105, 165, 231, 385 and 1155. That is 9 numbers, (d).
+
+Q 46 | qa | Number System
+Let pp, qq and rr be 2-digit numbers where p < q < r. If pp + qq + rr = tt0, where tt0 is a 3-digit number ending with zero, consider the following statements:
+1. The number of possible values of p is 5.
+2. The number of possible values of q is 6.
+Which of the above statements is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ pp = 11p, so 11(p + q + r) = tt0 = 110t, giving p + q + r = 10t. With 1 ≤ p < q < r ≤ 9 the sum is at most 24, so it is 10 or 20. Sum 10: (1,2,7), (1,3,6), (1,4,5), (2,3,5); sum 20: (3,8,9), (4,7,9), (5,6,9), (5,7,8). p takes 1, 2, 3, 4, 5 (5 values) and q takes 2, 3, 4, 6, 7, 8 (6 values). Both correct, (c).
+
+Q 47 | qa | Permutations, Combinations & Probability
+What is the sum of all 4-digit numbers less than 2000 formed by the digits 1, 2, 3 and 4, where none of the digits is repeated?
+(1) 7998
+(2) 8028
+(3) 8878
+(4) 9238
+= 1
+~ Numbers below 2000 must start with 1; the other three places take 2, 3, 4 in 3! = 6 orders. The thousands digits add 6 × 1000 = 6000. In each of the other three places, each of 2, 3, 4 appears twice: 2 × 9 = 18, so they add 18 × 111 = 1998. Sum = 7998, (a).
+
+Q 48 | qa | Permutations, Combinations & Probability
+What is the number of selections of 10 consecutive things out of 12 things in a circle taken in the clockwise direction?
+(1) 3
+(2) 11
+(3) 12
+(4) 66
+= 3
+~ In a circle, a run of 10 consecutive things taken clockwise is fixed by its starting point, and any of the 12 things can be the start. So there are 12 selections, (c).
+
+Q 49 | lr | Directions, Clocks & Calendars
+If today is Sunday, then which day is it exactly on 10¹⁰th day?
+(1) Wednesday
+(2) Thursday
+(3) Friday
+(4) Saturday
+= 1
+~ Counting today (Sunday) as day 1, the 10¹⁰th day is 10¹⁰ − 1 days later. 10 ≡ 3 (mod 7) and 3⁶ ≡ 1 (mod 7); 10 = 6 + 4, so 10¹⁰ ≡ 3⁴ = 81 ≡ 4 (mod 7). Then 10¹⁰ − 1 ≡ 3, and Sunday + 3 days = Wednesday, (a).
+
+Q 50 | qa | Number System
+There are three traffic signals. Each signal changes colour from green to red and then from red to green. The first signal takes 25 seconds, the second signal takes 39 seconds and the third signal takes 60 seconds to change the colour from green to red. The durations for green and red colours are same.
+At 2:00 p.m., they together turn green. At what time will they change to green next, simultaneously?
+(1) 4:00 p.m.
+(2) 4:10 p.m.
+(3) 4:20 p.m.
+(4) 4:30 p.m.
+= 2
+~ Green and red last equally, so the full cycles are 2 × 25 = 50 s, 2 × 39 = 78 s and 2 × 60 = 120 s. They are green together again after LCM(50, 78, 120) = 2³ × 3 × 5² × 13 = 7800 s = 130 minutes = 2 h 10 min. 2:00 p.m. + 2 h 10 min = 4:10 p.m., (b).
+
+Q 51 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Sourcing food from non-agricultural lands (uncultivated systems such as forests, wetlands, pastures, etc) in addition to agricultural lands enables a systemic approach to food consumption. It allows rural and tribal communities to sustain themselves for the whole year and steer clear of natural disasters and season-induced shortfalls of agricultural food. Since the productivity of trees is often more resilient to adverse weather conditions than annual crops, forest foods often provide a safety net during periods of food shortages caused by crop failure; forest foods also make important contributions during seasonal crop production gaps.
+Which one of the following statements best reflects the most logical and rational message conveyed by the author of the passage?
+(1) Food yielding trees should replace other trees in rural and tribal areas and community owned lands.
+(2) Food security cannot be ensured in India with the present practice of conventional agriculture.
+(3) Wastelands and degraded areas in India should be converted into agroforestry systems to help the poor.
+(4) Agroecosystems should be developed in addition to or along with conventional agriculture.
+= 4
+~ The passage values food from forests, wetlands and pastures in addition to farmland: it carries communities through the year, and forest foods act as a safety net when crops fail or between seasons. The message is to develop such agroecosystems in addition to or along with conventional farming. Replacing trees (a), declaring conventional farming a failure (b) or converting wastelands (c) are not what the author says. Hence (d).
+
+Q 52 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+While awareness on use/misuse and abuse of antibiotics is common knowledge, as is the impact of dosing poultry with antibiotics, the environmental impact of antibiotics-manufacturing companies not treating their waste has scarcely been discussed at any length or seriousness thus far. Pollution from antibiotics factories is fuelling the rise of drug-resistant infections. The occurrence of drug-resistant bacteria surrounding the pharma manufacturing plants is well known.
+Which one of the following statements best reflects the most logical and practical message conveyed by the passage?
+(1) It is necessary to put proper effluent treatment protocols in place.
+(2) It is necessary to promote environmental awareness among people.
+(3) Spread of drug-resistant bacteria cannot be done away with, as it is inherent in modern medical care.
+(4) Pharma-manufacturing companies should be set up in remote rural areas, away from crowded towns and cities.
+= 1
+~ The overlooked problem is antibiotic factories not treating their waste, which breeds drug-resistant bacteria around the plants. The practical message is to put proper effluent treatment protocols in place. General awareness (b) misses the point, (c) is defeatist and unsupported, and relocating plants (d) would not stop the pollution. Hence (a).
+
+Q 53 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Benefits of good quality school education accrue only when students complete and leave school after having acquired the gateway skills. Like one learns to walk before running, similarly one picks up advanced skills only after picking the basic foundational skills. The advent of the knowledge economy poses new challenges, and one of the severe consequences of having an uneducated workforce will be our inability to keep pace with the global economy. Without a strong learning foundation at the primary level, there can be no improvement in higher education or skill development.
+Which one of the following statements best reflects the crux of the passage?
+(1) To become a global power, India needs to invest in universal quality education.
+(2) India is unable to become a global power because it is not focussing or promoting knowledge economy.
+(3) Our education system should focus more on imparting skills during higher education.
+(4) Parents of many school children are illiterate and are unaware of the benefits of quality education.
+= 1
+~ Advanced skills rest on foundational skills learnt in school, an uneducated workforce cannot keep pace with the global knowledge economy, and higher education and skilling cannot improve without a strong primary base. The crux is that India must invest in universal quality education to be a global power. Option (b) makes a claim the passage does not make, (c) shifts the focus to higher education, and (d) is not discussed. Hence (a).
+
+Q 54 | qa | Number System
+40 children are standing in a circle and one of them (say child-1) has a ring. The ring is passed clockwise. Child-1 passes on to child-2, child-2 passes on to child-4, child-4 passes on to child-7 and so on. After how many such changes (including child-1) will the ring be in the hands of child-1 again?
+(1) 14
+(2) 15
+(3) 16
+(4) 17
+= 2
+~ The ring moves 1, 2, 3, ... places on successive passes, so after k passes it has moved k(k + 1)/2 places. It is back with child-1 when k(k + 1)/2 is a multiple of 40, i.e. k(k + 1) is a multiple of 80 = 16 × 5. The smallest such k is 15 (15 × 16 = 240 = 3 × 80). So 15 changes, (b).
+
+Q 55 | lr | Series & Patterns
+What is the middle term of the sequence Z, Z, Y, Y, Y, X, X, X, X, W, W, W, W, W, ..., A?
+(1) H
+(2) I
+(3) J
+(4) M
+= 2
+~ Z appears 2 times, Y 3 times, X 4 times, and so on, so the n-th letter from Z appears n + 1 times and A (26th) appears 27 times. Total terms = 2 + 3 + ... + 27 = 377, so the middle term is the 189th. The first 18 letters (Z to I) fill 2 + 3 + ... + 19 = 189 terms, so the 189th term is the last I, (b).
+
+Q 56 | qa | Data Interpretation & Sufficiency
+Question: Is p greater than q?
+Statement-1: p × q is greater than zero.
+Statement-2: p² is greater than q².
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question cannot be answered even by using both the Statements together.
+= 4
+~ Statement 1 says p and q have the same sign; statement 2 says |p| > |q|. Even together: if both are positive, p > q (e.g. 3, 2); if both are negative, p < q (e.g. −3, −2). The question cannot be answered, (d).
+
+Q 57 | qa | Data Interpretation & Sufficiency
+Question: Is (p + q − r) greater than (p − q + r), where p, q and r are integers?
+Statement-1: (p − q) is positive.
+Statement-2: (p − r) is negative.
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question cannot be answered even by using both the Statements together.
+= 3
+~ (p + q − r) − (p − q + r) = 2(q − r), so the question is whether q > r. Statement 1 gives only q < p, and statement 2 only p < r; neither alone links q and r. Together, q < p < r, so q < r and the answer is 'No'. Both are needed, (c).
+
+Q 58 | qa | Data Interpretation & Sufficiency
+In a party, 75 persons took tea, 60 persons took coffee and 15 persons took both tea and coffee. No one taking milk takes tea. Each person takes at least one drink.
+Question: How many persons attended the party?
+Statement-1: 50 persons took milk.
+Statement-2: Number of persons who attended the party is five times the number of persons who took milk only.
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question cannot be answered even by using both the Statements together.
+= 1
+~ Tea or coffee: 75 + 60 − 15 = 120 people. Anyone else took neither tea nor coffee, so took milk only; milk drinkers may also have taken coffee. Statement 1: 50 took milk, but we do not know how many of them also took coffee, so the total is unknown. Statement 2: if x took milk only, then 120 + x = 5x, so x = 30 and the total is 150. Statement 2 alone is enough, (a).
+
+Q 59 | qa | Data Interpretation & Sufficiency
+Consider a 3-digit number.
+Question: What is the number?
+Statement-1: The sum of the digits of the number is equal to the product of the digits.
+Statement-2: The number is divisible by the sum of the digits of the number.
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question cannot be answered even by using both the Statements together.
+= 4
+~ Statement 1: the only digits whose sum equals their product are 1, 2, 3 (1 + 2 + 3 = 6 = 1 × 2 × 3), so the number is one of 123, 132, 213, 231, 312, 321. Statement 2 adds divisibility by 6, leaving 132 and 312. Even together there are two possible numbers, so the question cannot be answered, (d).
+
+Q 60 | qa | Data Interpretation & Sufficiency
+For five children with ages a < b < c < d < e; any two successive ages differ by 2 years.
+Question: What is the age of the youngest child?
+Statement-1: The age of the eldest is 3 times the youngest.
+Statement-2: The average age of the children is 8 years.
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question cannot be answered even by using both the Statements together.
+= 2
+~ The ages are a, a + 2, a + 4, a + 6, a + 8. Statement 1: a + 8 = 3a gives a = 4. Statement 2: the average is the middle age, a + 4 = 8, so a = 4. Either statement alone answers the question, (b).
+
+Q 61 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The paradox of choice is illustrated by the story of Buridan's ass. Jean Buridan, the 14th century philosopher, wrote about free will and the inability to choose due to numerous choices and uncertainties. In the story, a donkey stands between two equally appealing stacks of hay. Unable to decide which to eat, it starves to death. Changes in technology and innovations such as smart phones and tablets only exacerbate our glut of choices. Constant connectivity and overconsumption of real-time data and social media can leave little room for self-reflection and rest, making decisions more difficult. Life is about choices. Many people are overwhelmed with attractive life choices, yet find themselves unhappy and anxious.
+Which one of the following statements best reflects the most logical message implied by the above passage?
+(1) Modern technology enfeebles societal structure and makes life difficult.
+(2) Modern life is full of uncertainties and endless difficult choices.
+(3) We are influenced by the opinion of others and have no courage to follow our own convictions.
+(4) In our lives, having too few choices may not be a good thing, but having too many can be equally as difficult.
+= 4
+~ Buridan's donkey starves because it cannot choose between two equal stacks, and modern technology only adds to our glut of choices, leaving people anxious though their options are attractive. The logical message is that while too few choices may be bad, too many can be just as hard. Option (a) blames technology for weakening society, which the passage does not say, (b) speaks of uncertainties and difficult choices rather than too many choices, and (c) is not discussed. Hence (d).
+
+Q 62 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Household finance in India is unique. We have a tendency to invest heavily in physical assets such as gold and property. Steps to encourage the financialization of savings are critical. A populace accustomed to traditional processes will not simply jump into financialization. Hurdles to change include onerous bureaucracy, a scepticism of organized financial institutions, a lack of basic information about which of the myriad services and providers is best for each family, and how (and even if) one can make the transition between them if necessary.
+Regarding the financialization of household savings, which of the following statements best reflect the solutions that are implied by the passage?
+1. A flexible environment is needed to develop solutions.
+2. Households need customised solutions.
+3. Innovations in financial technology are required.
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ The hurdles named are onerous bureaucracy, scepticism of formal institutions, lack of information on which of many services suits each family, and difficulty switching between them. These imply a flexible environment for developing solutions (1), solutions customised to each household (2), and financial-technology innovation to inform users and ease transitions (3). All three, (d).
+
+Q 63 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Pharmaceutical patents grant protection to the patentee for the duration of the patent term. The patentees enjoy the liberty to determine the prices of medicines, which is time-limited to the period of monopoly, but could be unaffordable to the public. Such patent protection offered to the patentees is believed to benefit the public over the longer term through innovations and research and development (R&D), although it comes at a cost, in the nature of higher prices for the patented medicine. The patent regime and price protection — through a legally validated high price for the medicine during the currency of the patent — provide the patentee with a legitimate mechanism to get returns on the costs incurred in innovation and research.
+Based on the above passage, the following assumptions have been made:
+1. Patent protection given to patentees puts a huge burden on public's purchasing power in accessing patented medicines.
+2. Dependence on other countries for pharmaceutical products is a huge burden for developing and poor countries.
+3. Providing medicines to the public at affordable prices is a key goal during the public health policy design in many countries.
+4. Governments need to find an appropriate balance between the rights of patentees and the requirements of the patients.
+Which of the above assumptions are valid?
+(1) 1 and 2
+(2) 1 and 4
+(3) 3 and 4
+(4) 2 and 3
+= 2
+~ The passage says patentees may set prices that the public cannot afford during the patent term, so patent protection burdens the public's purchasing power (1). It weighs this cost against the long-term benefit of R&D and the patentee's legitimate right to returns, which assumes that a balance between patentees' rights and patients' needs is required (4). Dependence on other countries (2) and the stated goals of public health policy (3) are not discussed. 1 and 4, (b).
+
+Q 64 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+India should ensure the growth of the digital economy while keeping personal data of citizens secure and protected. No one will innovate in a surveillance-oriented environment or in a place where an individual's personal information is compromised. The ultimate control of data must reside with the individuals who generate it; they should be enabled to use, restrict or monetise it as they wish. Therefore, data protection laws should enable the right kind of innovation — one that is user-centric and privacy protecting.
+Based on the above passage, the following assumptions have been made:
+1. Protection of privacy is not just a right, but it has value to the economy.
+2. There is a fundamental link between privacy and innovation.
+Which of the above assumptions is/are valid?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ The passage ties the growth of the digital economy to keeping personal data secure, so privacy has economic value beyond being a right (1). It also says no one will innovate where personal information is compromised and that laws should enable privacy-protecting innovation, which assumes a basic link between privacy and innovation (2). Both are valid, (c).
+
+Q 65 | qa | Permutations, Combinations & Probability
+In an examination, the maximum marks for each of the four papers namely P, Q, R and S are 100. Marks scored by the students are in integers. A student can score 99% in n different ways. What is the value of n?
+(1) 16
+(2) 17
+(3) 23
+(4) 35
+= 4
+~ 99% of 400 is 396, so the four papers together lose exactly 4 marks. The number of ways to split 4 lost marks among 4 papers (each loss 0 or more) is C(4 + 3, 3) = C(7, 3) = 35, (d).
+
+Q 66 | qa | Permutations, Combinations & Probability
+A flag has to be designed with 4 horizontal stripes using some or all of the colours red, green and yellow. What is the number of different ways in which this can be done so that no two adjacent stripes have the same colour?
+(1) 12
+(2) 18
+(3) 24
+(4) 36
+= 3
+~ The top stripe can take any of 3 colours, and each later stripe any colour except the one just above it (2 choices). 3 × 2 × 2 × 2 = 24, (c).
+
+Q 67 | qa | Geometry & Mensuration
+A rectangular floor measures 4 m in length and 2.2 m in breadth. Tiles of size 140 cm by 60 cm have to be laid such that the tiles do not overlap. A tile can be placed in any orientation so long as its edges are parallel to the edges of the floor. What is the maximum number of tiles that can be accommodated on the floor?
+(1) 6
+(2) 7
+(3) 8
+(4) 9
+= 4
+~ The floor is 400 cm × 220 cm. Simple row-by-row layouts give only 8 tiles, but mixing orientations fits 9: along the top, two tiles lying flat (140 × 60) followed by two standing tiles (60 × 140) at the right end; below the flat pair, two more flat tiles stacked on the left, two standing tiles beside them, and one flat tile below the right-hand standing pair. Ten tiles (84,000 cm²) cannot be placed without overlap in an 88,000 cm² floor of this shape, so the maximum is 9, (d).
+
+Q 68 | qa | Permutations, Combinations & Probability
+There are five persons P, Q, R, S and T each one of whom has to be assigned one task. Neither P nor Q can be assigned Task-1. Task-2 must be assigned to either R or S. In how many ways can the assignment be done?
+(1) 6
+(2) 12
+(3) 18
+(4) 24
+= 4
+~ Task-2 goes to R or S: 2 ways. Task-1 cannot go to P, Q or the person given Task-2, so it has 2 choices among the remaining two of R, S, T. The other 3 tasks go to the remaining 3 people in 3! = 6 ways. Total 2 × 2 × 6 = 24, (d).
+
+Q 69 | qa | Arithmetic
+There are large number of silver coins weighing 2 gm, 5 gm, 10 gm, 25 gm, 50 gm each. Consider the following statements:
+1. To buy 78 gm of coins one must buy at least 7 coins.
+2. To weigh 78 gm using these coins one can use less than 7 coins.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ 1: 78 is even, so 5 g and 25 g coins must come in pairs; 50 + 25 + ... leaves 3, which cannot be made. The best is 50 + 10 + 10 + 2 + 2 + 2 + 2 = 78 with 7 coins, so at least 7 coins are needed to buy 78 g. 2: on a balance, coins can go on both pans: put 50 + 25 + 5 = 80 g on one pan and the object plus a 2 g coin on the other; 4 coins weigh 78 g. Both are correct, (c).
+
+Q 70 | lr | Logical Reasoning
+Consider the following:
+I. A + B means A is neither smaller nor equal to B.
+II. A − B means A is not greater than B.
+III. A × B means A is not smaller than B.
+IV. A ÷ B means A is neither greater nor equal to B.
+V. A ± B means A is neither smaller nor greater than B.
+Statement: P × Q, P − T, T ÷ R, R ± S
+Conclusion-1: Q ± T
+Conclusion-2: S + Q
+Which one of the following is correct in respect of the above Statement and the Conclusions?
+(1) Only Conclusion-1 follows from the Statement.
+(2) Only Conclusion-2 follows from the Statement.
+(3) Both Conclusion-1 and Conclusion-2 follow from the Statement.
+(4) Neither Conclusion-1 nor Conclusion-2 follows from the Statement.
+= 2
+~ Decode: + is '>', − is '≤', × is '≥', ÷ is '<', ± is '='. The statement gives P ≥ Q, P ≤ T, T < R, R = S, i.e. Q ≤ P ≤ T < R = S. Conclusion 1 (Q = T) need not hold, since Q may be less than T. Conclusion 2 (S > Q) holds because S > T ≥ Q. Only Conclusion 2, (b).
+
+Q 71 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In India, while the unemployment rate is a frequently used measure of poor performance of the economy, under conditions of rising school and college enrolment, it paints an inaccurate picture. The reported unemployment rate is dominated by the experience of younger Indians who face higher employment challenges and exhibit greater willingness to wait for the right job than their older peers. The unemployment challenge is greater for people with secondary or higher education, and rising education levels inflate unemployment challenges.
+Which one of the following statements most likely reflects as to what the author of the passage intends to say?
+(1) Enrolment in schools and colleges is high but there is no quality education.
+(2) Unemployment must be seen as a function of rising education and aspirations of young Indians.
+(3) There are no labour-intensive industries to accommodate the huge number of unemployed people.
+(4) The education system should be properly designed so as to enable the educated people to be self-employed.
+= 2
+~ The author says the unemployment rate misleads when enrolment is rising: it is dominated by young, educated Indians who face bigger job challenges and are more willing to wait for the right job, and rising education levels inflate it. So unemployment should be read as a function of rising education and aspirations. Education quality (a), labour-intensive industry (c) and self-employment (d) are not discussed. Hence (b).
+
+Q 72 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+"Science by itself is not enough, there must be a force and discipline outside the sciences to coordinate them and point to a goal. It is not possible to run a course aright when the goal itself has not been rightly placed. What science needs is philosophy — the analysis of scientific method and the coordination of scientific purposes and results; without this, any science must be superficial. Government suffers, precisely like science, for lack of philosophy. Philosophy bears to science the same relationship which statesmanship bears to politics : movement guided by total knowledge and perspective, as against aimless and individual seeking. Just as the pursuit of knowledge becomes scholasticism when divorced from the actual needs of men and life, so the pursuit of politics becomes a destructive bedlam when divorced from science and philosophy."
+Which one of the following statements best reflects the most rational, logical and practical message conveyed by the passage?
+(1) Modern statesmen need to be well trained in scientific methods and philosophical thinking to enable them to have a better perspective of their roles, responsibilities and goals.
+(2) It is not desirable to have Governments managed by empirical statesmen unless well mixed with others who are grounded in learning and reflect wisdom.
+(3) As the statesmen/bureaucrats are the products of a society, it is desirable to have a system of education in a society that focuses on training its citizens in scientific method and philosophical thinking from a very early age.
+(4) It is desirable that all scientists need to be philosophers as well to make their work goal-oriented and thus purposeful and useful to the society.
+= 2
+~ Just as science without philosophy is superficial, government suffers when politics is divorced from science and philosophy and becomes a 'destructive bedlam'; statesmanship should be guided by total knowledge and perspective. The practical message in UPSC's key is that government should not be left to empirical statesmen alone but should be mixed with people grounded in learning and wisdom. Options (a), (c) and (d) propose specific training or requirements the passage does not lay down. Hence (b). (Official key; some sources differ.)
+
+Q 73 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+"The last end of the state is not to dominate men, nor to restrain them by fear; rather it is so to free each man from fear that he may live and act with full security and without injury to himself or his neighbour. The end of the state, I repeat, is not to make rational beings into brute beasts and machines. It is to enable their bodies and their minds to function safely. It is to lead men to live by, and to exercise, a free reason; that they may not waste their strength in hatred, anger and guile, nor act unfairly toward one another."
+Based on the above passage, which one of the following terms best expresses the ultimate goal of the state?
+(1) Personal safety
+(2) Health of body and mind
+(3) Communal harmony
+(4) Liberty
+= 4
+~ The state's end is to free each man from fear, let body and mind function safely, and lead men to live by and exercise free reason. Security and health are means to that end; the ultimate goal, living by free reason without fear, is best expressed as liberty, (d).
+
+Q 74 | qa | Number System
+What is the remainder if 2¹⁹² is divided by 6?
+(1) 0
+(2) 1
+(3) 2
+(4) 4
+= 4
+~ Powers of 2 leave remainders 2, 4, 2, 4, ... on division by 6: odd powers leave 2 and even powers leave 4 (since 4 × 4 = 16 ≡ 4). 192 is even, so the remainder is 4, (d).
+
+Q 75 | lr | Series & Patterns
+Consider the sequence ABC _ _ ABC _ DABBCD _ ABCD that follows a certain pattern. Which one of the following completes the sequence?
+(1) DACB
+(2) CDAB
+(3) DCCA
+(4) DDCA
+= 4
+~ Filling D, D, C, A gives ABCDD | ABCCD | ABBCD | AABCD: each block of five is ABCD with one letter doubled, the doubled letter moving back from D to C to B to A. So DDCA, (d).
+
+Q 76 | qa | Number System
+AB and CD are 2-digit numbers. Multiplying AB with CD results in a 3-digit number DEF. Adding DEF to another 3-digit number GHI results in 975. Further A, B, C, D, E, F, G, H, I are distinct digits. If E = 0, F = 8, then what is A + B + C equal to?
+(1) 6
+(2) 7
+(3) 8
+(4) 9
+= 1
+~ AB × CD = D08, where D is also the units digit of CD. Trying D: only D = 4 works with a 2-digit factor ending in 4: 408 = 12 × 34 or 17 × 24. Then GHI = 975 − 408 = 567. With 17 × 24, B = 7 clashes with I = 7; with 12 × 34, the digits 1, 2, 3, 4, 0, 8, 5, 6, 7 are all distinct. So A = 1, B = 2, C = 3 and A + B + C = 6, (a).
+
+Q 77 | lr | Analytical Reasoning
+Consider the following statements in respect of five candidates P, Q, R, S and T. Two statements are true and one statement is false.
+True Statement: One of P and Q was selected for the job.
+False Statement: At least one of R and S was selected for the job.
+True Statement: At most two of R, S and T were selected for the job.
+Which of the following conclusions can be drawn?
+1. At least four were selected for the job.
+2. S was selected for the job.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 4
+~ Since 'at least one of R and S was selected' is false, neither R nor S was selected. Exactly one of P and Q was selected, and T may or may not have been. So at most two people were selected, and S was not among them. Neither conclusion follows, (d).
+
+Q 78 | lr | Logical Reasoning
+Let P, Q, R, S and T be five statements such that:
+I. If P is true, then both Q and S are true.
+II. If R and S are true, then T is false.
+Which of the following can be concluded?
+1. If T is true, then at least one of P and R must be false.
+2. If Q is true, then P is true.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ 1: if T is true, II tells us R and S cannot both be true. If P were also true, I makes S true, so R must be false. Either way at least one of P and R is false, so 1 follows. 2: I says P leads to Q, not Q to P; Q can be true with P false. Only 1, (a).
+
+Q 79 | qa | Geometry & Mensuration
+A cuboid of dimensions 7 cm × 5 cm × 3 cm is painted red, green and blue colour on each pair of opposite faces of dimensions 7 cm × 5 cm, 5 cm × 3 cm, 7 cm × 3 cm respectively. Then the cuboid is cut and separated into various cubes each of side length 1 cm. Which of the following statements is/are correct?
+1. There are exactly 15 small cubes with no paint on any face.
+2. There are exactly 6 small cubes with exactly two faces, one painted with blue and the other with green.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ 1: cubes with no paint form the inner block (7 − 2) × (5 − 2) × (3 − 2) = 5 × 3 × 1 = 15. Correct. 2: green is on the 5 × 3 faces and blue on the 7 × 3 faces, so green and blue meet along the four edges of length 3 cm. Each such edge has 3 − 2 = 1 non-corner cube, giving 4 cubes, not 6. Only 1, (a).
+
+Q 80 | lr | Series & Patterns
+The letters of the word "INCOMPREHENSIBILITIES" are arranged alphabetically in reverse order. How many positions of the letter/letters will remain unchanged?
+(1) None
+(2) One
+(3) Two
+(4) Three
+= 3
+~ INCOMPREHENSIBILITIES has 21 letters: I ×5, E ×3, N ×2, S ×2 and one each of B, C, H, L, M, O, P, R, T. In reverse alphabetical order: T S S R P O N N M L I I I I I H E E E C B. Comparing position by position with the original word, only positions 13 and 15 (both I) match. Two, (c).
