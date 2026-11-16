@@ -3295,6 +3295,10 @@ def main():
     NOTES_ALL[:] = notes   # card 06 (Books) on each exam page
     epath = os.path.join(SRC, 'exams.json')
     catalog = json.load(open(epath, encoding='utf-8')) if os.path.exists(epath) else dict(cats=[], exams=[])
+    # NCERT (Anil, 16 Nov 2026: "if any classes added in future also"): one tile per class in tools/ncert.py, added here if exams.json lacks it
+    for c in confs:
+        if c.get('ncert') and not any(e['id'] == c['id'] for e in catalog['exams']):
+            catalog['exams'].append(dict(id=c['id'], cat='ncert', b='NCERT', t=f'Class {c["cls"]}', n='Subject-wise and chapter-wise MCQs', live=c['dir'] + '/'))
     # an exam tile is live only if its questions were built
     for e in catalog['exams']:
         if e.get('live') and e['id'] not in counts: e.pop('live')
@@ -8421,7 +8425,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-mts/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/jkssb-je-civil/", "/meghalaya-psc/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/", "/ncert-class-11/", "/ncert-class-12/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-mts/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/jkssb-je-civil/", "/meghalaya-psc/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/", """ + ', '.join(f'"/ncert-class-{c}/"' for c in _ncert().CLASSES) + """], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);

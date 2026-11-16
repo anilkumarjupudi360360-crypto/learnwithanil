@@ -135,7 +135,8 @@ BOOKS = {   # class -> [(subject, book code, book title, [chapter titles])], in 
     ],
 }
 
-EXAMS = ('ncert-class-11', 'ncert-class-12')
+CLASSES = sorted(BOOKS)   # Anil, 16 Nov 2026: any class added to BOOKS later gets the same page, boxes and start-page tile
+EXAMS = tuple(f'ncert-class-{c}' for c in CLASSES)
 FOOT = ('Questions and explanations are written by Learn with Anil from the NCERT textbooks (current editions, Reprint 2026-27); '
         'NCERT\'s own exercises are not copied. Not affiliated with NCERT.')
 
@@ -198,7 +199,7 @@ def faq(cls):
 
 def confs(B):
     out = []
-    for cls in (11, 12):
+    for cls in CLASSES:
         nch = sum(len(c) for _, _, _, c in BOOKS[cls])
         out.append(dict(
             id=f'ncert-class-{cls}', dir=f'ncert-class-{cls}', src=f'ncert-class-{cls}', key=f'ncert-{cls}', name=f'NCERT Class {cls}',
@@ -224,25 +225,95 @@ def counts(papers):
     return {p['id']: p['count'] for p in papers}
 
 
+import os as _os
+STATIC = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), 'src', 'static')
+
+# Photos for the subject boxes and the book boxes (Anil, 16 Nov 2026: "that box needs images also....for every book also box & image").
+# key -> (what it shows, author, licence, Commons file page). Files: src/static/ncert-<key>.webp, 640x240 WebP (16 Nov 2026).
+# Subject keys 's-<subject>', book keys 'b-<class>-<book code>'. Free licences only; no logos, emblems or NCERT covers.
+PHOTOS = {
+    's-pol': ('Supreme Court of India, New Delhi', 'Pinakpani', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India,_inside_buildings_01.jpg'),
+    's-his': ('Qutub Minar, Delhi', 'IM3847', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:A_Potrait_view_of_Qutub_Minar.jpg'),
+    's-geo': ('Kangchenjunga from Sandakphu', 'Abhishek.ghosh1984', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Kangchenjunga_(Kanchenjunga)_from_Singalila_National_Park,_Sandakphu.jpg'),
+    's-eco': ('Morning at Nariman Point, Mumbai', 'Vaikoovery', 'CC BY 3.0', 'https://commons.wikimedia.org/wiki/File:Morning_view_from_Nariman_Point.jpg'),
+    's-soc': ('Village home', 'Rahul Konga', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Indian_village_home.jpg'),
+    's-art': ('Cave 26, Ajanta', 'Rohit Sharma', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Exterior_of_Cave_26,_Ajanta_Caves,_Maharashtra,_India.jpg'),
+    's-phy': ('Lightning over the Danube, Budapest', 'Jules Verne Times Two', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Lightning_strike_over_the_Danube_(Budapest,_Hungary).jpg'),
+    's-chem': ('Laboratory glassware', 'Belikov Maxim', 'CC BY 4.0', 'https://commons.wikimedia.org/wiki/File:Equipment_and_glassware.jpg'),
+    's-bio': ('Leaf veins', 'SebastianBlumeArt', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Fittonia_gigantea_leaf_veins_macro.jpg'),
+    'b-11-icw': ('Sansad Bhavan, New Delhi', 'Nikhilb239', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Sansad_Bhavan,_Delhi,_BNK.jpg'),
+    'b-11-pt': ('Old books', 'Eli Francis elifrancis', 'CC0', 'https://commons.wikimedia.org/wiki/File:Old_books_(Unsplash).jpg'),
+    'b-11-twh': ('Colosseum, Rome', 'Nicholas Hartmann', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Rome_Colosseum_exterior_panorama.jpg'),
+    'b-11-fpg': ('Litli-Hrútur eruption, Iceland', 'Giles Laurent', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:001_Volcano_eruption_of_Litli-Hr%C3%BAtur_in_Iceland_in_2023_Photo_by_Giles_Laurent.jpg'),
+    'b-11-ipe': ('Western Ghats in the monsoon', 'Planemad', 'CC0', 'https://commons.wikimedia.org/wiki/File:Monsoon_view_of_the_Sengottai_Gap_in_the_Western_Ghats.jpg'),
+    'b-11-ied': ('Bokaro Steel Plant', 'SuLTan0203', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Bokaro_Steel_Plant.jpg'),
+    'b-11-sfe': ('Abacus', 'Jccsvq', 'CC0', 'https://commons.wikimedia.org/wiki/File:%22Swiss_Army_Knife%22_Abacus.jpg'),
+    'b-11-isoc': ('Thatched village houses', 'Drashokk', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Rural_village_scene_01.jpg'),
+    'b-11-usoc': ('Tram, Kolkata', 'Indrajit Das', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Single_coach_tram_in_Kolkata_02.jpg'),
+    'b-11-iia1': ('Great Stupa, Sanchi', 'Rohit Sharma', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Eastern_Gateway_of_The_Great_stupa,_Sanchi_02.jpg'),
+    'b-11-phy': ("Newton's cradle", 'Sheila Sund', 'CC BY 2.0', 'https://commons.wikimedia.org/wiki/File:Newton%27s_Cradle_(15221366308).jpg'),
+    'b-11-chem': ('Ball-and-stick molecule model', 'MolGod Scientific', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:4,4%27-Diaminodiphenylmethane-3D-molecular-model-engraved-render-CAS-101-77-9.png'),
+    'b-11-bio': ('Moss leaf cells under a microscope', 'Des_Callaghan', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Bryum_capillare_leaf_cells.jpg'),
+    'b-12-pisi': ('North and South Blocks, New Delhi', 'Nikhilb239', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:North_and_south_blocks_new_delhi.jpg'),
+    'b-12-cwp': ('Berlin Wall memorial, Bernauer Strasse', 'Einaz80', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Berlin_Wall_Bernauer_Strasse.jpg'),
+    'b-12-tih1': ('Great Bath, Mohenjo-daro', 'Nikesh chawla', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Great_bath_-_Mohenjo-daro.jpg'),
+    'b-12-tih2': ('Stone chariot, Hampi', 'Raghaven97', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Hampi_Stone_Chariot_with_Sky.jpg'),
+    'b-12-tih3': ('The Residency, Lucknow', 'Khalid Ahmed', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Residency_at_Lucknow_in_ruins.jpg'),
+    'b-12-fhg': ('Container terminal, Hamburg', 'Raimond Spekking', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Container_ship_Marianne_Schulte_(IMO_9215907)_at_the_container_terminal_Burchardkai,_port_of_Hamburg-4750.jpg'),
+    'b-12-ipeco': ('Tea gardens, Munnar', 'Ingo Mehling', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Munnar_-_Lockhart_tea_plantation.jpg'),
+    'b-12-mac': ('Bank vault doors', 'Jim.henderson', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Bank_vault_at_Porecelanosa_jeh.jpg'),
+    'b-12-mic': ('Vegetable stall', 'S N Barid', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Vegetable_stall.JPG'),
+    'b-12-insoc': ('En Ooru village, Kerala', 'Ingo Mehling', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:En_Ooru_Village_-_1.jpg'),
+    'b-12-scdi': ('Bandra-Worli Sea Link, Mumbai', 'Rutiknatekar', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Mumbai_Bandra-Worli_Sea_Link.jpg'),
+    'b-12-iia2': ('Panch Mahal, Fatehpur Sikri', 'Diego Delso', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Panch_Mahal-Fatehpur-Fatehpur_Sikri_India0014.JPG'),
+    'b-12-phy': ('Light through a prism', 'Kilohn limahn', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:DispersionPrisme.jpg'),
+    'b-12-chem': ('Coloured solutions in flasks', 'despeakrit', 'CC0', 'https://commons.wikimedia.org/wiki/File:Chemistry-3533039_960_720.jpg'),
+    'b-12-bio': ('DNA double helix (illustration)', 'PublicDomainPictures', 'CC0', 'https://commons.wikimedia.org/wiki/File:Dna-163466.jpg'),
+}
+
+
+def photo(key):
+    return f'/ncert-{key}.webp' if key in PHOTOS and _os.path.exists(_os.path.join(STATIC, f'ncert-{key}.webp')) else ''
+
+
+SUBJ_ICON = {   # drawn fallback while a photo is missing
+    'pol': '<path d="M12 3 3 8h18Z"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18"/>',
+    'his': '<path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6M4 21h16"/>',
+    'geo': '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
+    'eco': '<path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/>',
+    'soc': '<circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c0-4 3-6 6-6s6 2 6 6M10 20c0-4 3-6 6-6s6 2 6 6"/>',
+    'art': '<path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-1-2 0-3 3 0 4-1 2-3 2-4a9 9 0 0 0-8-8Z"/><circle cx="8" cy="10" r="1.2"/><circle cx="12" cy="7" r="1.2"/><circle cx="16" cy="10" r="1.2"/>',
+    'phy': '<circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>',
+    'chem': '<path d="M9 3h6M10 3v6l-6 10a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-6-10V3"/><path d="M7 15h10"/>',
+    'bio': '<path d="M12 21c-5-3-8-7-8-12a8 8 0 0 1 16 0c0 5-3 9-8 12Z"/><path d="M12 21V8M12 13l-3-3M12 11l3-3"/>',
+}
+
 CSS = """<style>
-.ncb .ncb-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px;margin:0 0 12px}
+.ncb{scroll-margin-top:110px}
+.ncb .ncb-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px;margin:0 0 14px}
 .ncb .ncb-head h2{margin:0}
-.ncb-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
-.ncb-nav button{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 13px;font:600 14px/1.2 var(--f-body,inherit);color:var(--ink);cursor:pointer}
-.ncb-nav button b{font-family:var(--f-mono,monospace);font-size:12px;font-weight:600;color:var(--accent-text);background:var(--accent-soft);border-radius:999px;padding:1px 7px}
-.ncb-nav button.ncb-off b{color:var(--muted);background:var(--surface-2)}
-.ncb-nav button:hover{border-color:var(--accent)}
-.ncb-s{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin:0 0 14px;overflow:hidden;scroll-margin-top:80px}
-.ncb-s>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;font:800 19px/1.25 var(--f-display,inherit);color:var(--ink)}
-.ncb-s>summary::-webkit-details-marker{display:none}
-.ncb-s>summary::after{content:"▾";font-size:16px;color:var(--muted);transition:transform .2s}
-.ncb-s:not([open])>summary::after{transform:rotate(-90deg)}
-.ncb-s>summary small{font:600 13.5px/1.3 var(--f-body,inherit);color:var(--muted);margin-left:auto}
-.ncb-book{padding:4px 16px 14px;border-top:1px solid var(--line)}
-.ncb-book h3{font-size:16px;margin:12px 0 8px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
-.ncb-book h3 span{font-size:13px;font-weight:600;color:var(--muted)}
-.ncb-ch{list-style:none;margin:0;padding:0;display:grid;gap:6px}
-.ncb-ch li{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:4px 10px;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.ncb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.ncb-card{display:flex;flex-direction:column;text-align:left;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden;cursor:pointer;color:var(--ink);font:inherit;transition:transform .15s,box-shadow .15s,border-color .15s}
+.ncb-card:hover,.ncb-card:focus-visible{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--accent)}
+.ncb-img{position:relative;display:grid;place-items:center;aspect-ratio:8/3;background:linear-gradient(135deg,#86198f,#e879f9);color:#fff}
+.ncb-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ncb-img svg{width:44px;height:44px;opacity:.9}
+.ncb-img .ncb-badge{position:absolute;left:10px;top:10px;z-index:1;font:700 11.5px/1 var(--f-body,inherit);padding:5px 9px;border-radius:999px;background:rgba(10,16,32,.72);color:#fff}
+.ncb-img .ncb-badge.on{background:#0E7A43}
+.ncb-body{display:flex;flex-direction:column;gap:3px;padding:12px 14px 14px}
+.ncb-body b{font:800 17px/1.25 var(--f-display,inherit)}
+.ncb-body small{color:var(--muted);font-size:13.5px}
+.ncb-go{margin-top:6px;font-weight:700;font-size:13.5px;color:var(--accent-text)}
+.ncb-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:0 0 14px}
+.ncb-bar h3{margin:0;font-size:21px}
+.ncb-back{border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;font:600 14px/1.2 var(--f-body,inherit);cursor:pointer}
+.ncb-back:hover{border-color:var(--accent)}
+.ncb-bhead{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center;margin:0 0 14px;padding:10px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.ncb-bhead .ncb-img{border-radius:10px;overflow:hidden}
+.ncb-bhead b{font:800 19px/1.25 var(--f-display,inherit);display:block}
+.ncb-bhead small{color:var(--muted);font-size:13.5px}
+.ncb-ch{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ncb-ch li{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:4px 10px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .ncb-ch li.ncb-off{background:var(--surface-2);color:var(--muted)}
 .ncb-n{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;font:700 13px/1 var(--f-mono,monospace);background:var(--accent-soft);color:var(--accent-text)}
 .ncb-ch li.ncb-off .ncb-n{background:var(--line);color:var(--muted)}
@@ -251,20 +322,43 @@ CSS = """<style>
 .ncb-t a:hover{text-decoration:underline}
 .ncb-t small{font-size:12.5px;color:var(--muted)}
 .ncb-a{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
-.ncb-btn{display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;border:1.5px solid var(--accent);color:var(--accent-text);background:var(--surface);font-weight:700;font-size:13.5px;text-decoration:none;white-space:nowrap}
+.ncb-btn{display:inline-flex;align-items:center;padding:7px 13px;border-radius:999px;border:1.5px solid var(--accent);color:var(--accent-text);background:var(--surface);font-weight:700;font-size:13.5px;text-decoration:none;white-space:nowrap}
 .ncb-btn.go{background:var(--accent);color:var(--accent-ink,#fff)}
 .ncb-btn:hover{filter:brightness(1.06)}
 .ncb-soon{font-size:12.5px;font-weight:700;color:var(--muted);white-space:nowrap}
-.ncb-note{font-size:14.5px;color:var(--muted);margin:6px 0 0}
-@media (max-width:560px){.ncb-ch li{grid-template-columns:28px minmax(0,1fr)}.ncb-a{grid-column:2;justify-content:flex-start}}
+.ncb-note{font-size:14.5px;color:var(--muted);margin:14px 0 0}
+.ncb .ph-credit{font-size:12px;color:var(--muted);margin:8px 0 0}
+.ncb .ph-credit a{color:inherit}
+@media (max-width:560px){.ncb-grid{grid-template-columns:1fr 1fr;gap:10px}.ncb-body{padding:10px 11px 12px}.ncb-body b{font-size:15px}.ncb-body small,.ncb-go{font-size:12.5px}
+ .ncb-bhead{grid-template-columns:110px minmax(0,1fr)}.ncb-ch li{grid-template-columns:28px minmax(0,1fr)}.ncb-a{grid-column:2;justify-content:flex-start}}
 </style>"""
 
+# Subject box -> book boxes -> chapter list. The choice is kept for the visit (sessionStorage), so coming back from a quiz
+# opens the same book again.
 JS = """<script>
-document.addEventListener("click", function(e){
-  var b = e.target.closest && e.target.closest("[data-ncs]"); if(!b) return;
-  var d = document.getElementById("ncs-" + b.getAttribute("data-ncs")); if(!d) return;
-  d.open = true; d.scrollIntoView({behavior:"smooth", block:"start"});
-});
+(function(){
+  var KEY = "lwa-ncb-" + (document.querySelector(".ncb") || {}).getAttribute("data-cls");
+  function show(s, b, scroll){
+    var root = document.querySelector(".ncb"); if(!root) return;
+    var grid = document.getElementById("ncbSubj");
+    root.querySelectorAll(".ncb-panel").forEach(function(p){ p.hidden = p.id !== "ncs-" + s; });
+    grid.hidden = !!s;
+    if(s){
+      var panel = document.getElementById("ncs-" + s); if(!panel){ grid.hidden = false; return; }
+      var books = panel.querySelector(".ncb-books");
+      panel.querySelectorAll(".ncb-bk").forEach(function(x){ x.hidden = x.id !== "ncb-" + b; });
+      books.hidden = !!(b && document.getElementById("ncb-" + b));
+    }
+    try{ sessionStorage.setItem(KEY, JSON.stringify({s:s||"", b:b||""})); }catch(e){}
+    if(scroll){ var t = document.getElementById("chapters"); if(t) t.scrollIntoView({behavior:"smooth", block:"start"}); }
+  }
+  document.addEventListener("click", function(e){
+    var c = e.target.closest && e.target.closest("[data-ncs],[data-ncb]"); if(!c) return;
+    if(c.hasAttribute("data-ncs")) show(c.getAttribute("data-ncs"), "", true);
+    else { var p = c.closest(".ncb-panel"); show(p ? p.id.slice(4) : "", c.getAttribute("data-ncb"), true); }
+  });
+  try{ var st = JSON.parse(sessionStorage.getItem(KEY) || "null"); if(st && st.s) show(st.s, st.b, false); }catch(e){}
+})();
 </script>"""
 
 
@@ -274,54 +368,75 @@ def _build():
     return sys.modules['build'] if 'build' in sys.modules else sys.modules['__main__']
 
 
+def _img(key, icon_subj, badge=''):
+    src = photo(key)
+    return (f'<span class="ncb-img" aria-hidden="true">{badge}'
+            + (f'<img src="{src}" alt="" width="640" height="240" loading="lazy" decoding="async">' if src else
+               f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{SUBJ_ICON[icon_subj]}</svg>')
+            + '</span>')
+
+
+def credits(keys):
+    out = []
+    for k in keys:
+        if not photo(k): continue
+        t, a, lic, url = PHOTOS[k]
+        out.append(f'<a href="{url}" target="_blank" rel="noopener">{esc(t)}</a>, {esc(a)}, {lic}')
+    return f'<p class="ph-credit">Photos (cropped) via Wikimedia Commons: {" · ".join(out)}.</p>' if out else ''
+
+
 def browser(conf, papers, abs_links=False):
-    """The class page's subject -> book -> chapter list. Live chapters link to their page and open in the app as a practice quiz
-    (?practice=) or a timed test (?test=); the others say 'Coming soon'."""
+    """The class page: subject boxes (photo) -> book boxes (photo) -> chapter list with Practise (?practice=) and Timed test (?test=).
+    Chapters without questions yet say 'Coming soon'."""
     cls, pb = conf['cls'], conf['pb']
     live = {p['id']: p for p in papers}
     by_s = {}
     for s, code, book, chs in BOOKS[cls]: by_s.setdefault(s, []).append((code, book, chs))
-    nav, secs = [], []
-    first_open = True
+    cards, panels, used = [], [], []
     for k, name, sslug, short, _hi in SUBJ:
         if k not in by_s: continue
         books = by_s[k]
         nch = sum(len(c) for _, _, c in books)
-        ids = [f'n{cls}{code}{i:02d}' for code, _, chs in books for i in range(1, len(chs) + 1)]
-        nlive = sum(1 for i in ids if i in live)
-        nq = sum(live[i]['count'] for i in ids if i in live)
-        nav.append(f'<button type="button" data-ncs="{k}"{" class=ncb-off" if not nq else ""}>{esc(short)} <b>{f"{nq:,} Q" if nq else "soon"}</b></button>')
-        blocks = []
+        nq = sum(live[f'n{cls}{code}{i:02d}']['count'] for code, _, chs in books for i in range(1, len(chs) + 1) if f'n{cls}{code}{i:02d}' in live)
+        used.append(f's-{k}')
+        badge = f'<span class="ncb-badge on">{nq:,} questions</span>' if nq else '<span class="ncb-badge">Coming soon</span>'
+        cards.append(f'<button type="button" class="ncb-card" data-ncs="{k}">{_img(f"s-{k}", k, badge)}'
+                     f'<span class="ncb-body"><b>{esc(name)}</b><small>{len(books)} book{"s" if len(books) > 1 else ""} · {nch} chapters</small>'
+                     f'<span class="ncb-go">Open →</span></span></button>')
+        bcards, bviews = [], []
         for code, book, chs in books:
-            items = []
-            bl = 0
+            bkey = f'b-{cls}-{code}'; used.append(bkey)
+            items, bl, bq = [], 0, 0
             for i, ch in enumerate(chs, 1):
                 pid = f'n{cls}{code}{i:02d}'
                 p = live.get(pid)
                 if p:
-                    bl += 1
+                    bl += 1; bq += p['count']
                     items.append(f'<li><span class="ncb-n">{i}</span><span class="ncb-t"><a href="{pb}papers/{p["slug"]}.html">{esc(ch)}</a>'
                                  f'<small>{p["count"]} MCQs · answers &amp; explanations</small></span>'
                                  f'<span class="ncb-a"><a class="ncb-btn go" href="{pb}?practice={pid}">Practise</a>'
                                  f'<a class="ncb-btn" href="{pb}?test={pid}">Timed test</a></span></li>')
                 else:
                     items.append(f'<li class="ncb-off"><span class="ncb-n">{i}</span><span class="ncb-t"><b>{esc(ch)}</b></span><span class="ncb-soon">Coming soon</span></li>')
-            blocks.append(f'<div class="ncb-book"><h3>{esc(book)} <span>{len(chs)} chapters' + (f' · {bl} live' if bl else '') + '</span></h3>'
+            bbadge = f'<span class="ncb-badge on">{bq:,} questions</span>' if bq else '<span class="ncb-badge">Coming soon</span>'
+            stat = f'{len(chs)} chapters' + (f' · {bl} live' if bl else '')
+            bcards.append(f'<button type="button" class="ncb-card" data-ncb="{k}-{code}">{_img(bkey, k, bbadge)}'
+                          f'<span class="ncb-body"><b>{esc(book)}</b><small>{stat}</small><span class="ncb-go">{"Practise chapters →" if bl else "See chapters →"}</span></span></button>')
+            bviews.append(f'<div class="ncb-bk" id="ncb-{k}-{code}" hidden><div class="ncb-bar"><button type="button" class="ncb-back" data-ncb="">← All {esc(short)} books</button></div>'
+                          f'<div class="ncb-bhead">{_img(bkey, k)}<span><b>{esc(book)}</b><small>NCERT Class {cls} · {esc(name)} · {stat}</small></span></div>'
                           f'<ol class="ncb-ch">{"".join(items)}</ol>'
-                          # Anil, 16 Nov 2026: chapters not uploaded yet -> urgent WhatsApp note, inside the opened subject only
+                          # Anil, 16 Nov 2026: chapters not uploaded yet -> urgent WhatsApp note, inside the opened book only
                           + (_build().urgent_note(f'the NCERT Class {cls} {book} chapter-wise MCQs') if bl < len(chs) else '') + '</div>')
-        op = ' open' if (nq and first_open) else ''
-        if nq: first_open = False
-        secs.append(f'<details class="ncb-s" id="ncs-{k}"{op}><summary>{esc(name)}<small>{len(books)} book{"s" if len(books) > 1 else ""} · {nch} chapters'
-                    + (f' · {nlive} live · {nq:,} questions' if nq else ' · coming soon') + f'</small></summary>{"".join(blocks)}</details>')
+        panels.append(f'<div class="ncb-panel" id="ncs-{k}" hidden><div class="ncb-bar"><button type="button" class="ncb-back" data-ncs="">← All subjects</button>'
+                      f'<h3>{esc(name)} · Class {cls}</h3></div><div class="ncb-grid ncb-books">{"".join(bcards)}</div>{"".join(bviews)}</div>')
     total = sum(p['count'] for p in papers)
     allch = sum(len(c) for _, _, _, c in BOOKS[cls])
-    return (CSS + f'<section class="wrap section ncb" id="chapters"><div class="ncb-head"><h2>Subject-wise &amp; chapter-wise MCQs</h2>'
+    return (CSS + f'<section class="wrap section ncb" id="chapters" data-cls="{cls}"><div class="ncb-head"><h2>Choose a subject</h2>'
             f'<span class="muted" style="font-size:14px">{total:,} questions in {len(papers)} of {allch} chapters · new chapters every week</span></div>'
-            f'<nav class="ncb-nav" aria-label="Subjects">{"".join(nav)}</nav>{"".join(secs)}'
-            f'<p class="ncb-note">Tap a chapter name to read its questions with answers (free). <b>Practise</b> checks each answer as you go; '
-            f'<b>Timed test</b> gives one minute a question. Both open with the ₹149 All-in-One Pass, the same pass for every exam, mock test and book on the site.</p>'
-            '</section>' + JS)
+            f'<div class="ncb-grid" id="ncbSubj">{"".join(cards)}</div>{"".join(panels)}'
+            f'<p class="ncb-note">Open a subject, then a book, to see its chapters. Tap a chapter name to read its questions with answers (free). '
+            f'<b>Practise</b> checks each answer as you go; <b>Timed test</b> gives one minute a question. Both open with the ₹{_build().PAY["pyq_price"]} All-in-One Pass, '
+            f'the same pass for every exam, mock test and book on the site.</p>' + credits(used) + '</section>' + JS)
 
 
 def hero(conf, papers, questions):
