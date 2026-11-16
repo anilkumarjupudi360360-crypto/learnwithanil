@@ -1903,6 +1903,92 @@ NEW['ibps-so-2026-notification.html'] = dict(
     ])
 ASOF_PAGE['ibps-so-2026-notification.html'] = '16 November 2026'
 
+NEW['ssc-chsl-2026-notification.html'] = dict(
+    exam='ssc-chsl', board='SSC', site='ssc.gov.in', crumb='SSC CHSL 2026', faq_asof='16 November 2026',
+    title='SSC CHSL 2026: Tier-1 Exam 30 November – 31 December, 2,536 Vacancies, Pattern with 15-Minute Sectional Timer & Previous Papers | Learn with Anil',
+    desc='SSC CHSL 2026 (10+2): 2,536 tentative vacancies for LDC/JSA, DEO and DEO Grade A; Tier-I computer-based exam from 30 November to 31 December 2026. '
+         'Dates, age limit 18–27, fee, Tier-I pattern with the new 15-minute sectional timer, Tier-II, pay and free CHSL 2025 Tier-I previous papers.',
+    h1='SSC CHSL 2026: Tier-1 from 30 November',
+    lede='The Staff Selection Commission\'s Combined Higher Secondary Level (10+2) Examination 2026 fills Lower Divisional Clerk / Junior Secretariat Assistant and '
+         'Data Entry Operator posts in central ministries and offices. Applications closed on 7 October; the Tier-I computer-based exam runs from 30 November to '
+         '31 December 2026. Below: the dates, posts, eligibility and the exam pattern, with this year\'s change: a 15-minute timer for each Tier-I section.',
+    hi='एसएससी सीएचएसएल 2026: 2,536 पद (एलडीसी/जेएसए, डीईओ)। टियर-I कंप्यूटर आधारित परीक्षा 30 नवंबर से 31 दिसंबर 2026 तक। हर सेक्शन के लिए 15 मिनट का अलग टाइमर।',
+    pdf='https://ssc.gov.in', pdfname='SSC CHSL 2026 notice (7 September 2026) and the Tier-I schedule, ssc.gov.in',
+    related=['ssc-mts-2026-notification.html', 'ssc-cgl-2026-notification.html'],
+    sections=[
+      ('Key dates', 'table', [
+        ('Notification', '7 September 2026'), ('Online applications', '7 September – 7 October 2026 (11 PM); fee till 8 October'),
+        ('Correction window', '14 – 16 October 2026'), ('Tier-I (computer-based)', '30 November – 31 December 2026'),
+        ('Tier-II', 'Date to be announced by SSC'),
+      ]),
+      ('Posts and pay', 'table+', (['Post', 'Pay level'], [
+        ('Lower Divisional Clerk (LDC) / Junior Secretariat Assistant (JSA)', 'Level 2 (₹19,900 – 63,200)'),
+        ('Data Entry Operator (DEO)', 'Level 4 (₹25,500 – 81,100) and Level 5 (₹29,200 – 92,300)'),
+        ('Data Entry Operator Grade \'A\'', 'Level 4 (₹25,500 – 81,100)'),
+        ('Total vacancies (tentative)', '2,536')])),
+      ('Eligibility', 'table', [
+        ('Age', '18 – 27 years as on 1 August 2026 (relaxation for SC/ST, OBC, PwBD, ex-servicemen as per rules)'),
+        ('Education', 'Class 12 (10+2) or equivalent; DEO Grade \'A\' needs Class 12 Science with Mathematics'),
+        ('Fee', '₹100; no fee for women, SC, ST, PwBD and ex-servicemen'),
+      ]),
+      ('Tier-I pattern', 'table+', (['Section', 'Questions · marks', 'Time'], [
+        ('English Language (Basic Knowledge)', '25 · 50', '15 minutes'), ('General Intelligence', '25 · 50', '15 minutes'),
+        ('Quantitative Aptitude (Basic Arithmetic Skill)', '25 · 50', '15 minutes'), ('General Awareness', '25 · 50', '15 minutes'),
+        ('Total', '100 · 200', '60 minutes')])),
+      ('', 'note', 'Half a mark (0.5) is cut for each wrong answer. New in 2026: each section has its own 15-minute timer, so time cannot be moved between sections. '
+                   'Tier-I is a screening test; Tier-II (Session I: Mathematics, Reasoning, English, General Awareness and Computer Knowledge, 1 mark cut per wrong '
+                   'answer; Session II: skill/typing test) decides the merit list.'),
+    ],
+    faqs=[
+      ('When is the SSC CHSL 2026 Tier-1 exam?', 'From 30 November to 31 December 2026, in many shifts. Your own date, shift and centre are on your SSC admit card.'),
+      ('How many vacancies are there in SSC CHSL 2026?', '2,536 tentative vacancies for LDC/JSA, DEO and DEO Grade A. SSC may revise the number before the final result.'),
+      ('Is there a sectional time limit in SSC CHSL 2026 Tier-1?', 'Yes. From this cycle each of the four sections has its own 15-minute timer (60 minutes in all).'),
+      ('What is the age limit for SSC CHSL 2026?', '18 to 27 years as on 1 August 2026, with the usual relaxation for reserved categories.'),
+      ('Where can I practise SSC CHSL previous papers?', 'Learn with Anil has SSC CHSL 2025 Tier-I shift papers with SSC\'s answer key and explanations, in English and Hindi, as timed 60-minute mocks and 15-minute sectionals.'),
+    ])
+ASOF_PAGE['ssc-chsl-2026-notification.html'] = '16 November 2026'
+
+NEW['ibps-rrb-clerk-2026-notification.html'] = dict(
+    exam='ibps-rrb', board='IBPS', site='ibps.in', crumb='IBPS RRB Clerk 2026 (CRP RRBs-XV)', faq_asof='16 November 2026',
+    title='IBPS RRB Clerk 2026 (CRP RRBs-XV): Prelims 6, 12 & 13 December, Mains 30 January, Office Assistant Pattern, Eligibility & Mock Tests | Learn with Anil',
+    desc='IBPS RRB Office Assistant (Clerk) 2026, CRP RRBs-XV: Prelims on 6, 12 and 13 December 2026, Mains on 30 January 2027. Prelims pattern (Reasoning 40 in 25 '
+         'minutes, Numerical Ability 40 in 20 minutes), Mains pattern, age 18–28, eligibility, local language rule and free-pattern mock tests.',
+    h1='IBPS RRB Clerk 2026: Prelims on 6, 12 and 13 December',
+    lede='IBPS is recruiting Office Assistants (Multipurpose) and Officers for the Regional Rural Banks through CRP RRBs-XV. Applications closed on 21 September 2026. '
+         'The Office Assistant (Clerk) Prelims is on 6, 12 and 13 December 2026 and the Mains on 30 January 2027; there is no interview for Office Assistants. '
+         'Below: the dates, eligibility and the exam pattern.',
+    hi='आईबीपीएस आरआरबी ऑफिस असिस्टेंट (क्लर्क) 2026: प्रारंभिक परीक्षा 6, 12 और 13 दिसंबर 2026, मुख्य परीक्षा 30 जनवरी 2027। प्रारंभिक: तर्कशक्ति 40 (25 मिनट) और संख्यात्मक योग्यता 40 (20 मिनट)।',
+    pdf='https://www.ibps.in', pdfname='IBPS CRP RRBs-XV notification (1 September 2026) and IBPS\'s exam schedule, ibps.in',
+    related=['ibps-so-2026-notification.html', 'sbi-po-2026-notification.html'],
+    sections=[
+      ('Key dates (Office Assistant)', 'table', [
+        ('Notification', '31 August 2026 (short notice); detailed notification 1 September 2026'), ('Online applications', '1 – 21 September 2026 (closed)'),
+        ('Prelims', '6, 12 and 13 December 2026'), ('Mains', '30 January 2027'), ('Provisional allotment', 'After the Mains result (IBPS\'s tentative schedule: February–March 2027)'),
+      ]),
+      ('Eligibility', 'table', [
+        ('Age', '18 – 28 years as on 1 September 2026 (born not earlier than 2 September 1998 and not later than 1 September 2008); relaxation as per rules'),
+        ('Education', 'A bachelor\'s degree in any discipline; working knowledge of computers is desirable'),
+        ('Local language', 'Proficiency in the official language of the state where the RRB is (studied up to Class 8 or a certificate); otherwise it must be learnt within six months of joining'),
+        ('Fee', '₹850; ₹175 for SC, ST, PwBD and ex-servicemen'),
+      ]),
+      ('Prelims pattern', 'table+', (['Test', 'Questions · marks', 'Time'], [
+        ('Reasoning', '40 · 40', '25 minutes'), ('Numerical Ability', '40 · 40', '20 minutes'), ('Total', '80 · 80', '45 minutes')])),
+      ('', 'note', 'A quarter of a mark (0.25) is cut for each wrong answer, and candidates must clear the cut-off in each test. The exam is offered in English, Hindi and '
+                   'the regional language of the state (for example Telugu in Andhra Pradesh and Telangana).'),
+      ('Mains pattern', 'table+', (['Test', 'Questions · marks', 'Time'], [
+        ('Reasoning', '40 · 50', '30 minutes'), ('Computer Knowledge', '40 · 20', '15 minutes'), ('General Awareness', '40 · 40', '15 minutes'),
+        ('English or Hindi Language', '40 · 40', '30 minutes'), ('Numerical Ability', '40 · 50', '30 minutes'), ('Total', '200 · 200', '120 minutes')])),
+      ('', 'note', 'Allotment is on the Mains marks only; the Prelims just shortlists. Vacancies are listed bank-wise and state-wise in the notification and are indicative.'),
+    ],
+    faqs=[
+      ('When is the IBPS RRB Clerk Prelims 2026?', 'On 6, 12 and 13 December 2026 (CRP RRBs-XV, Office Assistant). The Mains is on 30 January 2027.'),
+      ('What is the IBPS RRB Clerk Prelims pattern?', 'Reasoning 40 questions in 25 minutes and Numerical Ability 40 questions in 20 minutes: 80 questions, 80 marks, 45 minutes, 0.25 mark cut per wrong answer.'),
+      ('Is there an interview for IBPS RRB Office Assistant?', 'No. Office Assistants are allotted on the Mains marks alone. Officer Scale I candidates have an interview.'),
+      ('What is the age limit for IBPS RRB Clerk 2026?', '18 to 28 years as on 1 September 2026, with the usual relaxation for reserved categories.'),
+      ('Are IBPS RRB previous papers available?', 'IBPS does not publish its papers. Learn with Anil has its own IBPS RRB Clerk Prelims mock tests in the real pattern, in English and Hindi, with 25-minute and 20-minute sectional tests.'),
+    ])
+ASOF_PAGE['ibps-rrb-clerk-2026-notification.html'] = '16 November 2026'
+
 
 def apply(NOTIFS):
     for rel, f in FAQS.items():

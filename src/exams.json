@@ -666,7 +666,8 @@
    "cat": "ssc",
    "b": "SSC",
    "t": "CHSL",
-   "n": "Combined Higher Secondary Level"
+   "n": "Combined Higher Secondary Level",
+   "live": "ssc-chsl/"
   },
   {
    "id": "ssc-mts",
@@ -737,7 +738,8 @@
    "cat": "bank",
    "b": "IBPS",
    "t": "IBPS RRB",
-   "n": "Officer Scale I & Office Assistant"
+   "n": "Officer Scale I & Office Assistant",
+   "live": "ibps-rrb/"
   },
   {
    "id": "sbi-po",

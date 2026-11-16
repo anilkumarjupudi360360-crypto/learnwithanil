@@ -1482,6 +1482,40 @@ def mts_text():
     return dict(n=len(have), days=' and '.join(days) or '30 September', what=f'{len(have)} shift paper{"s" if len(have) != 1 else ""}')
 
 
+# ---------- SSC CHSL (Combined Higher Secondary Level, 10+2): Tier-I 2025 shift papers from SSC's own response sheets ----------
+# Anil, 16 Nov 2026: "SSC CHSL: Tier-1 runs 30 Nov – 31 Dec ... carry on". Sources: candidates' response sheets of CHSL 2025 Tier-I at the answer-key stage
+# (13, 18 and 25 November via Prepp's CDN, 14 November via PW's Drive), answer = the option SSC marked correct (green, or yellow where the candidate missed it).
+# The sheets print Parts B-D in English and Hindi (SSC's own Hindi); Part A English only. Work files (container only): /home/claude/chsl.
+CHSL_BLURB = ('Tier-I: English Language, General Intelligence, Quantitative Aptitude and General Awareness, 25 questions each: 100 questions, 200 marks, '
+              '60 minutes, 0.5 mark cut for a wrong answer. In the 2026 cycle each section has its own 15-minute timer. Tier-I shortlists for Tier-II.')
+def _chsl(pid, day, shift, time_, file_):
+    return dict(id=pid, file=file_, year=2025, stage='Tier-I', short=f'CHSL 2025 · {day} S{shift}',
+                title=f'SSC CHSL Tier-I 2025, {day} 2025, Shift {shift}', notif=f'Shift {shift} ({time_}) · SSC key', held=f'{day} 2025',
+                key="SSC's answer key as marked on the candidate's response sheet", fmt='mcq',
+                slug=f'ssc-chsl-2025-tier-1-{day.lower().replace(" ", "-")}-shift-{shift}-question-paper-with-answers',
+                alt='Tier 1', kwname=f'SSC CHSL 2025 Tier 1 ({day} Shift {shift})', hi_paper=f'टियर-I ({day.replace("November", "नवंबर")}, पाली {shift})',
+                blurb=CHSL_BLURB, mins=60)
+CHSL_PAPERS = [
+  _chsl('n13s2', '13 November', 2, '1:30 PM', 'chsl-2025-13nov-shift2.txt'),
+  _chsl('n14s3', '14 November', 3, '5:00 PM', 'chsl-2025-14nov-shift3.txt'),
+  _chsl('n18s1', '18 November', 1, '10:00 AM', 'chsl-2025-18nov-shift1.txt'),
+  _chsl('n25s3', '25 November', 3, '5:00 PM', 'chsl-2025-25nov-shift3.txt'),
+]
+CHSL_SUBJECTS = [x for x in CGL_SUBJECTS if x[0] != 'comp']
+CHSL_SUBJ_HI = {k: v for k, v in CGL_SUBJ_HI.items() if k != 'comp'}
+
+
+def chsl_text():
+    """Wording for the SSC CHSL page that depends on which papers are on the site."""
+    have = [p for p in CHSL_PAPERS if p['id'] in have_src('ssc-chsl', CHSL_PAPERS)]
+    days = []
+    for p in have:
+        d = p['held'].replace(' 2025', '')
+        if d not in days: days.append(d)
+    days = ', '.join(days[:-1]) + ' and ' + days[-1] if len(days) > 1 else (days[0] if days else '13 November')
+    return dict(n=len(have), days=days, what=f'{len(have)} Tier-I shift paper{"s" if len(have) != 1 else ""}')
+
+
 # ---------- Telangana Police (TSLPRB, now TGPRB): SI and Constable Preliminary Written Tests ----------
 TS_SI_PAPERS = [
   dict(id='s2022', file='ts-si-2022-prelims.txt', year=2022, stage='Preliminary Written Test', short='SI Prelims 2022',
@@ -2458,9 +2492,13 @@ SO_PK_SUBJECTS = [
                                                  'Segmentation, Targeting, Positioning & Branding', 'Pricing, Distribution & Promotion',
                                                  'Services & Bank Marketing', 'Digital & Rural Marketing']),
 ]
+RRB_OA_SUBJECTS = [   # IBPS RRB Office Assistant (Clerk) Prelims: Reasoning 40 (25 min) + Numerical Ability 40 (20 min)
+  ('rea', 'Reasoning', 'reasoning', BANK_SUBJECTS[2][3]),
+  ('qa', 'Numerical Ability', 'numerical-ability', BANK_SUBJECTS[1][3]),
+]
 BANK_SUBJ_HI = {'eng': 'अंग्रेज़ी भाषा', 'qa': 'संख्यात्मक अभियोग्यता', 'rea': 'तर्कशक्ति', 'pkit': 'व्यावसायिक ज्ञान: आईटी अधिकारी',
                 'pkag': 'व्यावसायिक ज्ञान: कृषि क्षेत्र अधिकारी', 'pkhr': 'व्यावसायिक ज्ञान: मानव संसाधन अधिकारी', 'pkmk': 'व्यावसायिक ज्ञान: विपणन अधिकारी'}
-MOCKONLY = {'sbi-po', 'ibps-so'}   # exams with a mock series and no previous papers on the site
+MOCKONLY = {'sbi-po', 'ibps-so', 'ibps-rrb'}   # exams with a mock series and no previous papers on the site
 
 
 def FAQ_SBIPO(total, npapers):
@@ -2502,6 +2540,29 @@ def FAQ_IBPSSO(total, npapers):
     ]
 
 
+def FAQ_IBPSRRB(total, npapers):
+    return [
+      ('Are there IBPS RRB Clerk previous year question papers on Learn with Anil?',
+       'Not as PYQs. IBPS does not publish its RRB question papers; the "memory-based" papers online are coaching institutes\' own write-ups, so Learn with Anil '
+       'does not copy them. Instead, this page has Learn with Anil\'s own IBPS RRB Office Assistant (Clerk) Prelims mock tests in the CRP RRBs-XV pattern, '
+       'with an explanation for every answer.'),
+      ('What is the IBPS RRB Clerk (Office Assistant) Prelims exam pattern?',
+       'Two tests: Reasoning, 40 questions in 25 minutes, and Numerical Ability, 40 questions in 20 minutes: 80 questions, 80 marks, 45 minutes, with 0.25 mark cut '
+       'for a wrong answer. Candidates must clear the cut-off in each test. The Prelims only shortlists for the Mains (200 questions, 120 minutes), which decides '
+       'the allotment; there is no interview for Office Assistants.'),
+      ('When is the IBPS RRB Clerk Prelims 2026?',
+       'IBPS has scheduled the CRP RRBs-XV Office Assistant Prelims for 6, 12 and 13 December 2026 and the Mains for 30 January 2027. Check your own date on the call letter at ibps.in.'),
+      ('Are the IBPS RRB mock tests in Hindi?',
+       'Yes. Every question, option and explanation is in English and Hindi: tap हिंदी at the top. (The real exam is also offered in the regional language of each state, '
+       'such as Telugu for Andhra Pradesh and Telangana.)'),
+      ('How do the mock tests work?',
+       'Each mock is a full 80-question Prelims with the real 45-minute timer. You can also take Reasoning on its own with its 25-minute limit, or Numerical Ability with '
+       'its 20-minute limit, and see your score, mistakes and explanations at the end.'),
+      ('How much do the IBPS RRB mock tests cost?',
+       'They are included in the ₹149 All-in-One Pass, which opens every exam, mock series and study book on Learn with Anil for 12 months.'),
+    ]
+
+
 def _ncert():
     import ncert
     return ncert
@@ -2535,6 +2596,19 @@ def bank_confs():
                            'HR/Personnel Officer and Marketing Officer, new questions in English and Hindi with explanations, in the ₹149 All-in-One Pass.'),
            eyebrow='IBPS · Specialist Officers · Prelims mock tests (new pattern)',
            papers_note='IBPS does not publish its SO question papers, so this page has Learn with Anil\'s own mock tests, not previous papers.'),
+      dict(id='ibps-rrb', dir='ibps-rrb', src='ibps-rrb', key='ibps-rrb', name='IBPS RRB Clerk', short='IBPS RRB Clerk', seo='IBPS RRB Clerk', mockonly=True,
+           slugp='ibps-rrb', papers=[], subjects=RRB_OA_SUBJECTS, faq=FAQ_IBPSRRB, board='IBPS', l2=L2_HI, pb='/ibps-rrb/',
+           keyname="Learn with Anil's answer key", keyshort="Learn with Anil's answer key",
+           hi_name='आईबीपीएस आरआरबी क्लर्क', hi_paper='मॉक टेस्ट', subj_te={'rea': 'तर्कशक्ति', 'qa': 'संख्यात्मक योग्यता'},
+           title='IBPS RRB Clerk Mock Test 2026 – Office Assistant Prelims Mocks (CRP RRBs-XV Pattern), English & Hindi | Learn with Anil',
+           h1='IBPS RRB Clerk Prelims mock tests <em>in the real pattern.</em>',
+           aka='IBPS CRP RRBs-XV Office Assistant (Multipurpose) Preliminary Examination: Reasoning 40 questions (25 minutes) and Numerical Ability 40 questions (20 minutes).',
+           aka_short='IBPS RRB Office Assistant (Multipurpose) Prelims, CRP RRBs-XV',
+           l2line='आईबीपीएस आरआरबी ऑफिस असिस्टेंट (क्लर्क) प्रारंभिक परीक्षा के मॉक टेस्ट — तर्कशक्ति और संख्यात्मक योग्यता, हिंदी और अंग्रेज़ी में, हर उत्तर की व्याख्या सहित।',
+           desc=lambda t: ('IBPS RRB Clerk (Office Assistant) Prelims mock tests by Learn with Anil in the CRP RRBs-XV pattern: Reasoning 40 and Numerical Ability 40 in 45 minutes, '
+                           'new questions in English and Hindi with an explanation for every answer, as full mocks or sectional tests, in the ₹149 All-in-One Pass.'),
+           eyebrow='IBPS · Regional Rural Banks · Office Assistant (Clerk) Prelims mock tests',
+           papers_note='IBPS does not publish its RRB question papers, so this page has Learn with Anil\'s own mock tests, not previous papers.'),
     ]
 
 
@@ -2731,6 +2805,24 @@ def exam_confs():
                         "The sheets are from the answer-key stage, so SSC's final key may differ for a few questions. Each shift had a different paper. "
                         "The English Language section is in English only; the other questions are in English and Hindi as printed in SSC's Hindi paper, except a few "
                         "that could not be read on the Hindi sheet. Two questions of 30 September Shift 1 are cut off on the sheet and are left out.")),
+      dict(id='ssc-chsl', dir='ssc-chsl', src='ssc-chsl', key='ssc-chsl', name='SSC CHSL', short='SSC CHSL', seo='SSC CHSL',
+           slugp='ssc-chsl', papers=CHSL_PAPERS, subjects=CHSL_SUBJECTS, faq=FAQ_CHSL, board='SSC', l2=L2_HI, pb='/ssc-chsl/',
+           keyname="SSC's answer key", keyshort="SSC's answer key (as marked on the response sheets)",
+           hi_name='एसएससी सीएचएसएल', hi_paper='प्रश्न पत्र', subj_te=CHSL_SUBJ_HI,
+           title='SSC CHSL Previous Year Question Papers with Answers – Tier-1 2025 Shift-wise, English & Hindi | Learn with Anil',
+           h1='SSC CHSL previous year question papers <em>with answers.</em>',
+           aka=('SSC Combined Higher Secondary Level (10+2) Examination for LDC/JSA, DEO and DEO Grade A: Tier-I shift papers with SSC\'s answer key, '
+                'subject-wise: English, reasoning, maths and general awareness.'),
+           aka_short='SSC Combined Higher Secondary Level (10+2) Examination',
+           l2line='एसएससी सीएचएसएल (10+2) के पिछले वर्षों के प्रश्न पत्र, एसएससी की उत्तर कुंजी सहित — रीजनिंग, गणित और सामान्य जागरूकता हिंदी में।',
+           desc=lambda t: (f"SSC CHSL previous year question papers with SSC's answer key and explanations: Tier-I 2025, {chsl_text()['what']} ({chsl_text()['days']} 2025), "
+                           f"from SSC's own response sheets. {t:,} questions on English, reasoning, maths and general awareness; subject-wise practice "
+                           f"and 60-minute timed mock tests."),
+           eyebrow='SSC · Combined Higher Secondary Level (10+2) · Tier-I 2025',
+           papers_note=("Every paper is SSC's own question paper as candidates print it from SSC's portal (the response sheet), with the answer SSC marked as correct. "
+                        "The sheets are from the answer-key stage, so SSC's final key may differ for a few questions; where SSC's key looks doubtful the explanation says so. "
+                        "Each shift had a different paper. General Intelligence, Quantitative Aptitude and General Awareness are in English and Hindi as printed in SSC's "
+                        "paper; English Language is in English only.")),
       dict(id='ts-police-si', dir='ts-police-si', src='ts-police-si', key='ts-si', name='TS Police SI', short='TS Police SI', seo='TS Police SI',
            slugp='ts-police-si', papers=TS_SI_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('SI', T['si']), board='TSLPRB', l2=L2_TE, pb='/ts-police-si/',
            keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
@@ -3811,6 +3903,7 @@ def exam_terms(e, cat):
     if 'amvi' in e['id']: words += ['amvi', 'motor vehicle inspector', 'mvi', 'rto', 'transport department', 'automobile engineering', 'automobile']
     if e['id'] == 'sbi-po': words += ['sbi', 'state bank', 'state bank of india', 'po', 'probationary officer', 'bank po', 'banking', 'bank exam', 'sbi po mock test']
     if e['id'] == 'ibps-so': words += ['ibps', 'so', 'specialist officer', 'it officer', 'agriculture field officer', 'afo', 'hr officer', 'personnel officer', 'marketing officer', 'banking', 'bank exam', 'ibps so mock test']
+    if e['id'] == 'ibps-rrb': words += ['ibps', 'rrb', 'regional rural bank', 'gramin bank', 'grameena bank', 'clerk', 'office assistant', 'multipurpose', 'rrb clerk', 'rrb po', 'officer scale', 'banking', 'bank exam', 'ibps rrb mock test', 'आरआरबी', 'क्लर्क']
     if e['id'] == 'karnataka-fda-sda': words += ['kea', 'karnataka examinations authority', 'kpsc', 'fda', 'sda', 'first division assistant', 'second division assistant', 'fda sda', 'karnataka fda', 'karnataka sda', 'group c', 'group-c', 'junior assistant', 'gp secretary', 'accounts assistant', 'warden', 'karnataka', 'kannada', 'general kannada', 'kalyana karnataka', 'hyderabad karnataka', 'ಎಫ್‌ಡಿಎ', 'ಎಸ್‌ಡಿಎ', 'ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ', 'ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ', 'ಸಾಮಾನ್ಯ ಕನ್ನಡ']
     # Karnataka exams added 16 Nov 2026 (upcoming): what students type for them
     KA_WORDS = {'kea-vao': ['vao', 'village accountant', 'village administrative officer', 'grama aadalitha adhikari', 'revenue department', 'ಗ್ರಾಮ ಆಡಳಿತ ಅಧಿಕಾರಿ', 'ಗ್ರಾಮ ಲೆಕ್ಕಿಗ'],
@@ -3873,6 +3966,7 @@ def exam_terms(e, cat):
     if 'civil-judge' in e['id']: words += ['civil judge', 'junior civil judge', 'jcj', 'judiciary', 'high court', 'llb', 'law']
     if e['id'].startswith('rpf'): words += ['rpf', 'railway protection force', 'rpsf', 'railway police', 'rrb', 'railway', 'railways', 'cen rpf', 'si', 'sub inspector', 'constable', 'police']
     if e['id'] == 'ssc-mts': words += ['mts', 'multi tasking staff', 'multi-tasking staff', 'multitasking', 'havaldar', 'hawaldar', 'cbic', 'cbn', '10th pass', 'matric', 'ssc mts mock test', 'एमटीएस', 'हवलदार']
+    if e['id'] == 'ssc-chsl': words += ['chsl', 'combined higher secondary level', '10+2', '12th pass', 'ldc', 'lower divisional clerk', 'jsa', 'junior secretariat assistant', 'deo', 'data entry operator', 'ssc chsl mock test', 'tier 1', 'सीएचएसएल']
     if e['cat'] == 'ap': words += ['appsc', 'andhra'] + ([f'ap group {ROMAN[m.group(1)]}'] if m else [])
     if e['id'] in MAINS_EXAMS and MAINS_KIT: words += ['mains', 'answer writing', 'tool kit', 'toolkit', 'essay']
     return ' '.join(w.lower() for w in words if w)
@@ -4554,6 +4648,35 @@ def FAQ_MTS(total, npapers):
     ]
 
 
+def FAQ_CHSL(total, npapers):
+    C = chsl_text()
+    return [
+      ('Where can I get SSC CHSL previous year question papers with answers?',
+       f'This page has {total} questions from {C["what"]} of the SSC Combined Higher Secondary Level (10+2) Examination 2025 (held on {C["days"]} 2025). '
+       'Each is SSC\'s own question paper as candidates print it from SSC\'s portal, with the answer SSC marked as correct, and every question has a short explanation. '
+       'Take a whole shift as a 60-minute mock test, or practise by subject and topic.'),
+      ('Are the answers official?',
+       'Yes. Every answer is the one SSC marked as correct on the candidate\'s response sheet. The sheets come from the answer-key stage, so SSC\'s final key can '
+       'differ for a few questions; where SSC\'s key looks doubtful the explanation says so. The explanations are written by Learn with Anil.'),
+      ('What is the SSC CHSL Tier-I exam pattern?',
+       'Four sections of 25 questions each: English Language, General Intelligence, Quantitative Aptitude and General Awareness. 100 questions, 200 marks, '
+       '60 minutes, and 0.5 mark is cut for each wrong answer. In the 2026 cycle each section has its own 15-minute timer. Tier-I only shortlists '
+       'candidates for Tier-II, which decides the merit list.'),
+      ('When is SSC CHSL 2026 Tier-I?',
+       'SSC is holding the CHSL 2026 Tier-I computer-based exam from 30 November to 31 December 2026. There are 2,536 tentative vacancies for LDC/JSA, DEO and DEO Grade A. '
+       'Check your own date and city on SSC\'s admit card.'),
+      ('Is the SSC CHSL question paper available in Hindi?',
+       'Yes. Tap हिंदी at the top of the page: General Intelligence, Quantitative Aptitude and General Awareness show in Hindi as printed in SSC\'s paper, '
+       'with the explanation in Hindi. The English Language section is in English only.'),
+      ('Is there an SSC CHSL mock test?',
+       'Yes. Every shift paper here can be taken as a timed mock test with the real 60-minute limit, each section can be taken as a 15-minute sectional test, '
+       'and you can make your own quiz from any subject or topic.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass '
+       'opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
+
 def FAQ_HM(total, npapers):
     return [
       ('Where can I get TGPSC HMWSSB Manager (Engineering) previous question papers with answers?',
@@ -5008,7 +5131,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-mts/">SSC MTS</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}wbpsc-ido/">WBPSC IDO (West Bengal)</a> · <a href="{rootup}wbpsc-pyqs.html">All WBPSC previous question papers</a> · <a href="{rootup}wbpsc-ido-notification-2026.html">WBPSC IDO Notification 2026</a> · <a href="{rootup}dsssb/">DSSSB MTS &amp; JE (Delhi)</a> · <a href="{rootup}dsssb-pyqs.html">All DSSSB previous question papers</a> · <a href="{rootup}dsssb-mts-je-notification-2026.html">DSSSB MTS &amp; JE Notification 2026</a> · <a href="{rootup}jkssb-je-civil/">JKSSB JE Civil (J&amp;K)</a> · <a href="{rootup}jkssb-pyqs.html">All JKSSB previous question papers</a> · <a href="{rootup}jkssb-je-civil-notification-2026.html">JKSSB JE Civil Notification 2026</a> · <a href="{rootup}meghalaya-psc/">Meghalaya PSC</a> · <a href="{rootup}meghalaya-psc-pyqs.html">All Meghalaya PSC previous question papers</a> · <a href="{rootup}meghalaya-psc-notification-2026.html">Meghalaya PSC Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/study-material.html">Study material (books)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-mts/">SSC MTS</a> · <a href="/ssc-chsl/">SSC CHSL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}wbpsc-ido/">WBPSC IDO (West Bengal)</a> · <a href="{rootup}wbpsc-pyqs.html">All WBPSC previous question papers</a> · <a href="{rootup}wbpsc-ido-notification-2026.html">WBPSC IDO Notification 2026</a> · <a href="{rootup}dsssb/">DSSSB MTS &amp; JE (Delhi)</a> · <a href="{rootup}dsssb-pyqs.html">All DSSSB previous question papers</a> · <a href="{rootup}dsssb-mts-je-notification-2026.html">DSSSB MTS &amp; JE Notification 2026</a> · <a href="{rootup}jkssb-je-civil/">JKSSB JE Civil (J&amp;K)</a> · <a href="{rootup}jkssb-pyqs.html">All JKSSB previous question papers</a> · <a href="{rootup}jkssb-je-civil-notification-2026.html">JKSSB JE Civil Notification 2026</a> · <a href="{rootup}meghalaya-psc/">Meghalaya PSC</a> · <a href="{rootup}meghalaya-psc-pyqs.html">All Meghalaya PSC previous question papers</a> · <a href="{rootup}meghalaya-psc-notification-2026.html">Meghalaya PSC Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/study-material.html">Study material (books)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -7467,6 +7590,24 @@ MOCK_PACKS = {
                          for i in range(1, 11)
                          for post, pname, pk in (('it', 'IT Officer', 'pkit'), ('agri', 'Agriculture Field Officer', 'pkag'),
                                                  ('hr', 'HR / Personnel Officer', 'pkhr'), ('mkt', 'Marketing Officer', 'pkmk'))]),
+  # Anil, 16 Nov 2026: "IBPS RRB Clerk: prelims on 6, 12 and 13 Dec ... carry on". IBPS publishes no papers, so (as for SBI PO / IBPS SO) Learn with
+  # Anil's own Office Assistant Prelims mocks: Reasoning 40 (25 min) + Numerical Ability 40 (20 min), English and Hindi, writer + checker agents,
+  # puzzles brute-force verified. Private source /home/claude/rrbm (container only); sealed files src/ibps-rrb-mocks/; ids "bk-" (All-in-One Pass).
+  'ibps-rrb': dict(id='bk-ibpsrrb', name='IBPS RRB Clerk Prelims', price=149, src='ibps-rrb-mocks', dir='ibps-rrb', langs='English &amp; Hindi',
+                   title='IBPS RRB Clerk (Office Assistant) Prelims Mock Test Series – CRP RRBs-XV Pattern',
+                   summary='10 full-length IBPS RRB Office Assistant (Clerk) Preliminary mock tests in the CRP RRBs-XV pattern, 80 questions in 45 minutes '
+                           '(Reasoning 40 in 25 minutes, Numerical Ability 40 in 20 minutes), in English and Hindi, with an explanation for every answer. '
+                           'Each section can also be taken on its own with its real time limit.',
+                   about=['New questions written by Learn with Anil for this series in the IBPS RRB Office Assistant Prelims pattern, not copied from coaching material, '
+                          'memory-based papers or previous papers. IBPS does not publish its question papers, so these are mock tests, not PYQs.',
+                          'Each mock: Reasoning 40 (three puzzle or seating sets, syllogism, inequality, blood relations, directions, coding, ranking and series) and '
+                          'Numerical Ability 40 (simplification and approximation, number series, quadratic equations, data interpretation and arithmetic word problems), '
+                          'five options per question; every puzzle is checked by computer to have exactly one solution.',
+                          'The full mock runs on one 45-minute timer; take a section on its own for its real limit (Reasoning 25 minutes, Numerical Ability 20 minutes). '
+                          'Every question, option and explanation is in English and Hindi.'],
+                   mocks=[dict(id=f'bk-ibpsrrb-{i}', name=f'Mock {i}', qn=80, mins=45, live=(i <= 2), pmins={'rea': 25, 'qa': 20},
+                               parts=[('rea', 'Reasoning', ['rea']), ('qa', 'Numerical Ability', ['qa'])])
+                          for i in range(1, 11)]),
   # Anil, 16 Nov 2026: "start a test series for this exam (KEA FDA & SDA) ... and upload 1st test"; chose "all new questions" and the name
   # "Vijaya FDA-SDA". Each mock = Paper-1 General Knowledge (100) + Paper-2 Kannada 35, English 35, Computer 30 (100), 2 hours each, as in
   # KEA's 2026 pattern. New questions written for the series by writer agents and checked by separate checker agents (private source
@@ -7571,6 +7712,8 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
   'rrb-ntpc': ('RRB NTPC 2026 CBT-1 (CEN 06/2026 and 07/2026)', None, 'Applications closed (graduate 8 November, undergraduate 13 November 2026); RRB has not announced the CBT-1 dates yet. One report says the graduate CBT-1 may be in the fourth week of December 2026.'),
   'ssc-mts': ('SSC MTS & Havaldar 2026 Computer Based Examination', None, 'SSC Calendar 2026 had the MTS notice on 30 June 2026; it was postponed and SSC has not published the MTS 2026 notice or exam date yet.'),
+  'ssc-chsl': ('SSC CHSL 2026 Tier-I computer-based exam', '2026-11-30', 'SSC CHSL 2026 notice (7 September 2026, 2,536 posts): Tier-I is being held from 30 November to 31 December 2026.'),
+  'ibps-rrb': ('IBPS RRB Office Assistant (Clerk) Prelims 2026 (CRP RRBs-XV)', '2026-12-06', 'IBPS CRP RRBs-XV schedule: Office Assistant Prelims on 6, 12 and 13 December 2026, Mains on 30 January 2027.'),
   'upsc-epfo': ('UPSC EPFO APFC Recruitment Test 2026', '2026-12-20', 'UPSC Special Advertisement 52/2026 (80 APFC posts): pen-and-paper Recruitment Test on 20 December 2026.'),
   'appsc-analyst': ('APPSC Analyst Grade-II written examination', None, 'Applications 13 October to 2 November 2026, reported extended to 12 November (Notification 21/2026); APPSC has not announced the exam date yet.'),
   'appsc-env-engineer': ('APPSC Assistant Environmental Engineer written examination', None, 'Applications closed on 9 November 2026 (Notification 08/2026, extended from 27 October); APPSC has not announced the exam date yet.'),
@@ -7684,7 +7827,7 @@ EXAM_NOTIF = {
     'ap-police-si': 'ap-police-si-notification-2026.html', 'ap-police-constable': 'ap-police-constable-notification-2026.html',
     'ap-dsc': 'ap-dsc-2026-notification.html', 'tgpsc-amvi': 'tgpsc-amvi-notification.html',
     'tgpsc-hmwssb-manager': 'tgpsc-hmwssb-manager-notification-2026.html', 'ssc-cgl': 'ssc-cgl-2026-notification.html',
-    'ssc-mts': 'ssc-mts-2026-notification.html',
+    'ssc-mts': 'ssc-mts-2026-notification.html', 'ssc-chsl': 'ssc-chsl-2026-notification.html',
     'ssc-gd': 'ssc-gd-constable-2027-notification.html', 'rrb-ntpc': 'rrb-ntpc-2026-notification.html',
     'rpf-si': 'rpf-si-notification-2026.html', 'rpf-constable': 'rpf-constable-notification-2026.html',
     'tnpsc-group-4': 'tnpsc-group-4-notification-2026.html', 'karnataka-fda-sda': 'kea-fda-sda-notification-2026.html',
@@ -7696,7 +7839,7 @@ EXAM_NOTIF = {
     'ts-police-si': 'ts-police-si-exam-date-hall-ticket-2026.html', 'ts-police-constable': 'ts-police-constable-exam-date-hall-ticket-2026.html',
     # and new pages for the six exams that had none (tools/notif_news.py, 16 Nov 2026)
     'upsc-ifos': 'upsc-ifos-2027-notification.html', 'appsc-aso': 'appsc-aso-notification-2026.html', 'tgpsc-group-1': 'tgpsc-group-1-notification-2026.html',
-    'tgpsc-group-2': 'tgpsc-group-2-notification-2026.html', 'sbi-po': 'sbi-po-2026-notification.html', 'ibps-so': 'ibps-so-2026-notification.html',
+    'tgpsc-group-2': 'tgpsc-group-2-notification-2026.html', 'sbi-po': 'sbi-po-2026-notification.html', 'ibps-so': 'ibps-so-2026-notification.html', 'ibps-rrb': 'ibps-rrb-clerk-2026-notification.html',
     'wbpsc-ido': 'wbpsc-ido-notification-2026.html', 'dsssb': 'dsssb-mts-je-notification-2026.html',
     'jkssb-je-civil': 'jkssb-je-civil-notification-2026.html', 'meghalaya-psc': 'meghalaya-psc-notification-2026.html',
 }   # a new exam with its own notification page: add it here too
@@ -8440,7 +8583,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-mts/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/jkssb-je-civil/", "/meghalaya-psc/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/", """ + ', '.join(f'"/ncert-class-{c}/"' for c in _ncert().CLASSES) + """], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-mts/", "/ssc-chsl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/jkssb-je-civil/", "/meghalaya-psc/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/", """ + ', '.join(f'"/ncert-class-{c}/"' for c in _ncert().CLASSES) + """], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -8454,7 +8597,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <h1>This page does not exist</h1>
 <p>The address may be mistyped, or the page has moved. Try one of these:</p>
 <ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
-<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-mts/">SSC MTS PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
+<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-mts/">SSC MTS PYQs</a></li><li><a href="/ssc-chsl/">SSC CHSL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
 <li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/karnataka-gpstr/">GPSTR (Karnataka Teacher) PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li><li><a href="/opsc-aso/">OPSC ASO PYQs</a></li><li><a href="/wbpsc-ido/">WBPSC IDO PYQs</a></li><li><a href="/dsssb/">DSSSB MTS &amp; JE PYQs</a></li><li><a href="/jkssb-je-civil/">JKSSB JE Civil PYQs</a></li><li><a href="/meghalaya-psc/">Meghalaya PSC PYQs</a></li></ul>
