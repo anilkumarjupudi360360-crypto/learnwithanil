@@ -411,6 +411,24 @@
    "pages": 82
   }
  },
+ "jkssb-je-civil": {
+  "c23": {
+   "bytes": 18830918,
+   "file": "jkssb-je-civil-c23-0415aae23f.bin",
+   "key": "bk-jkssb-je-civil-c23",
+   "name": "LearnWithAnil-JKSSB-JE-Civil-2023-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 41
+  },
+  "c25": {
+   "bytes": 12677914,
+   "file": "jkssb-je-civil-c25-76abbdad36.bin",
+   "key": "bk-jkssb-je-civil-c25",
+   "name": "LearnWithAnil-JKSSB-JE-Civil-2025-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 32
+  }
+ },
  "karnataka-fda-sda": {
   "f11g": {
    "bytes": 625772,
@@ -462,6 +480,32 @@
    "key": "bk-karnataka-gpstr-g22g",
    "name": "LearnWithAnil-GPSTR-2022-Paper-1-General-Studies-Question-Paper.pdf",
    "pages": 26
+  }
+ },
+ "meghalaya-psc": {
+  "c1": {
+   "bytes": 8896739,
+   "file": "meghalaya-psc-c1-0d16a1d70a.bin",
+   "key": "bk-meghalaya-psc-c1",
+   "name": "LearnWithAnil-Meghalaya-MCS-Prelims-2026-Paper-1-Preliminary-Written-Test-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 15
+  },
+  "c2": {
+   "bytes": 12595096,
+   "file": "meghalaya-psc-c2-2902c62189.bin",
+   "key": "bk-meghalaya-psc-c2",
+   "name": "LearnWithAnil-Meghalaya-MCS-Prelims-2026-Paper-2-Preliminary-Written-Test-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 22
+  },
+  "l25": {
+   "bytes": 20090676,
+   "file": "meghalaya-psc-l25-ecd1897fb8.bin",
+   "key": "bk-meghalaya-psc-l25",
+   "name": "LearnWithAnil-Meghalaya-PSC-LDA-2026-Screening-Test-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 24
   }
  },
  "mpsc-group-c": {

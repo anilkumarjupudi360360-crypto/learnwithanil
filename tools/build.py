@@ -1355,10 +1355,10 @@ def FAQ_JKC(total, npapers):
        'environmental engineering, transportation engineering, and estimating and construction management. The sectional tests here take all previous '
        'questions of one subject.'),
       ('Is there a JKSSB JE Civil mock test?',
-       'Yes. Each paper can be taken as a full 120-minute mock test with negative marking. Answers and explanations open with the ₹45 All-in-One Pass, '
+       'Yes. Each paper can be taken as a full 120-minute mock test with negative marking. Answers and explanations open with the ₹149 All-in-One Pass, '
        'which covers every exam on the site.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -1416,9 +1416,9 @@ def FAQ_MGP(total, npapers):
        '12 December 2026 (5 pm), online on the MPSC website (Advt. No. 01/2026-2027 of 12 November 2026, 20 posts).'),
       ('Is there a Meghalaya PSC mock test?',
        'Yes. Each paper can be taken as a full mock test with the real time limit, and the sectional tests take all the previous questions of one part, '
-       'such as Meghalaya GK or English. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+       'such as Meghalaya GK or English. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -6060,7 +6060,7 @@ LANDINGS = {
       board='JKSSB', ename='JKSSB', crumb='JKSSB PYQs', lang='hi',
       title='JKSSB Previous Year Question Papers with Answers – JE Civil 2025 & 2023 | Learn with Anil',
       desc='JKSSB (Jammu & Kashmir Services Selection Board) previous year question papers in one place: Junior Engineer (Civil) OMR exams of 2025 and 2023, '
-           '{n} questions with JKSSB\'s final answer keys and explanations. Practise them online with one ₹45 All-in-One Pass for every exam.',
+           '{n} questions with JKSSB\'s final answer keys and explanations. Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='JKSSB previous question papers with answers',
       lede="Every JKSSB question paper on Learn with Anil, {n} questions in all, each with JKSSB's final answer key and a short explanation.",
       intro='<p>Looking for the JKSSB JE Civil question paper with the answer key, subject-wise civil engineering questions, or a JKSSB JE mock test? '
@@ -6073,7 +6073,7 @@ LANDINGS = {
       board='Meghalaya PSC', ename='Meghalaya PSC', crumb='Meghalaya PSC PYQs', lang='hi',
       title='Meghalaya PSC Previous Year Question Papers with Answers – MCS Prelims 2026 & LDA 2026 | Learn with Anil',
       desc='Meghalaya PSC (MPSC) previous year question papers in one place: Meghalaya Civil Service Prelims 2026 Papers I and II and the LDA screening test '
-           '2026, {n} questions with MPSC\'s answer keys and explanations. Practise them online with one ₹45 All-in-One Pass for every exam.',
+           '2026, {n} questions with MPSC\'s answer keys and explanations. Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='Meghalaya PSC previous question papers with answers',
       lede="Every Meghalaya PSC question paper on Learn with Anil, {n} questions in all, each with MPSC's answer key and a short explanation.",
       intro='<p>Looking for the Meghalaya PSC question paper with the answer key, Meghalaya GK questions, or an MPSC screening test mock? '
@@ -7679,6 +7679,7 @@ EXAM_NOTIF = {
     'upsc-ifos': 'upsc-ifos-2027-notification.html', 'appsc-aso': 'appsc-aso-notification-2026.html', 'tgpsc-group-1': 'tgpsc-group-1-notification-2026.html',
     'tgpsc-group-2': 'tgpsc-group-2-notification-2026.html', 'sbi-po': 'sbi-po-2026-notification.html', 'ibps-so': 'ibps-so-2026-notification.html',
     'wbpsc-ido': 'wbpsc-ido-notification-2026.html', 'dsssb': 'dsssb-mts-je-notification-2026.html',
+    'jkssb-je-civil': 'jkssb-je-civil-notification-2026.html', 'meghalaya-psc': 'meghalaya-psc-notification-2026.html',
 }   # a new exam with its own notification page: add it here too
 
 

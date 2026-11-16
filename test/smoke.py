@@ -212,7 +212,7 @@ async def main():
                     assert await pg.locator('#view .qtext[lang="mr"]').count() >= 1, 'MPSC question should show in Marathi'
                 if l2 == 'gu':   # GSSSB CCE: Reasoning and Quant in Gujarati + English, the Gujarati section in Gujarati only
                     assert await pg.locator('#view .qtext[lang="gu"]').count() >= 1, 'GSSSB question should show in Gujarati'
-                if l2 == 'hi' and tag != 'epfo':   # EPFO Q1-20 (General English) are English only
+                if l2 == 'hi' and tag not in ('epfo', 'jkc', 'mgp'):   # EPFO Q1-20 (General English) are English only; JKSSB JE Civil and Meghalaya PSC papers are printed in English only
                     assert await pg.locator('#view .qtext[lang="hi"]').count() >= 1, 'CAPF question should show in Hindi'
                 await pg.screenshot(path=f'{SHOTS}/{tag}-quiz-{l2}-{name}.png')
                 sw = await pg.evaluate('document.documentElement.scrollWidth')
