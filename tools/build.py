@@ -4515,7 +4515,9 @@ def FAQ_EPFO(total, npapers):
       ('Is there an EPFO mock test?' if eo else 'Is there an EPFO APFC mock test?',
        ('Yes. Open the mock test page and take a real APFC, EO/AO or PA paper with a timer, ' if E['pa'] else
         'Yes. Open the mock test page and take a real APFC or EO/AO paper with a timer, ' if eo else 'Yes. Open the mock test page and take the real 2023 paper with a timer, ')
-       + 'or tap Create a quiz to choose subjects such as Labour Laws, Social Security or Accounting. You get your score, the ' + ('' if E['nokey'] else 'official ') + 'answer and an explanation for every question.'),
+       + 'or tap Create a quiz to choose subjects such as Labour Laws, Social Security or Accounting. You get your score, the ' + ('' if E['nokey'] else 'official ') + 'answer and an explanation for every question. '
+       'For new questions, Sankalpa EPFO is our series of 10 full-length APFC mock tests in UPSC\'s pattern (120 questions, 2 hours, English and Hindi); '
+       'Mock 1 is out and it is included in the same All-in-One Pass.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
@@ -7655,6 +7657,30 @@ MOCK_PACKS = {
                                       ('sci', 'General Science', ['sci']), ('cur', 'Current Affairs', ['cur']),
                                       ('apt', 'Intelligence Test & Arithmetic', ['apt'])])
                           for i in range(1, 11)]),
+  # Anil, 16 Nov 2026: "start epfo test series and add one test"; chose all new questions (writer + checker helper agents) and the
+  # Sanskrit name "Sankalpa EPFO" (was the "coming soon" UPSC EPFO Mock Test Series in UPCOMING_PACKS). APFC Recruitment Test pattern:
+  # 120 questions, 2 hours, 2.5 marks each, 1/3 negative, Hindi + English (General English in English only). Private source
+  # /home/claude/epmk; ids start with "bk-" (any paid All-in-One Pass holder; no payments-script change). Sealed files: src/upsc-epfo-mocks/.
+  'upsc-epfo': dict(id='bk-epfomk', name='Sankalpa EPFO', price=149, src='upsc-epfo-mocks', dir='upsc-epfo', langs='English &amp; Hindi',
+                    title='Sankalpa EPFO – UPSC EPFO APFC Mock Test Series 2026',
+                    summary='10 full-length UPSC EPFO APFC mock tests in the real Recruitment Test pattern, 120 questions in 2 hours, in English and Hindi, '
+                            'with an explanation for every answer. Every subject can also be taken on its own as a sectional test.',
+                    about=['New questions written by Learn with Anil for this series in UPSC\'s EPFO pattern (statement, "how many", match-the-list '
+                           'and chronology questions as UPSC sets them), not copied from coaching material or previous papers. UPSC\'s six real '
+                           'EPFO papers (2017–2025) are on the previous-papers page, in the same pass.',
+                           'Each mock follows the APFC syllabus: General English 20, Indian Freedom Struggle & Culture 10, Current Events 10, Polity 9, '
+                           'Economy 9, Accounting 14, Industrial Relations & Labour Laws 9, Social Security 9, General Science & Computers 15 and '
+                           'Quantitative Aptitude 15. Labour and social-security questions follow the four Labour Codes as in force in 2026; current '
+                           'events cover November 2025 to November 2026.',
+                           'Every question is in English and Hindi (General English in English only, as UPSC prints it), with an explanation in both. '
+                           'Your score, accuracy and topic-wise analysis come after each mock. In the real test each question carries 2.5 marks and a '
+                           'wrong answer loses one-third of that, so practise skipping what you cannot narrow down.'],
+                    mocks=[dict(id=f'bk-epfomk-{i}', name=f'Mock {i}', qn=120, mins=120, live=(i == 1),   # Mock 1 on 16 Nov 2026
+                                parts=[('eng', 'General English', ['eng']), ('ih', 'History & Freedom Struggle', ['ih']),
+                                       ('cur', 'Current Events', ['cur']), ('pol', 'Indian Polity', ['pol']), ('eco', 'Indian Economy', ['eco']),
+                                       ('acc', 'Accounting Principles', ['acc']), ('lab', 'Industrial Relations & Labour Laws', ['lab']),
+                                       ('ss', 'Social Security', ['ss']), ('sci', 'General Science & Computers', ['sci']),
+                                       ('qa', 'Quantitative Aptitude', ['qa'])]) for i in range(1, 11)]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
@@ -7681,10 +7707,7 @@ def mock_questions():
 
 
 # mock-test packs with a price but no mocks yet: shown as "coming soon", no Pay button and no checkout until Mock 1 is ready
-UPCOMING_PACKS = {
-  'upsc-epfo': dict(name='UPSC EPFO Mock Test Series', price=199, n=10, qn=120, langs='English &amp; Hindi',   # Anil, 24 Oct 2026: ₹199
-                    summary='10 full-length UPSC EPFO (APFC / EO-AO) mock tests in the real exam pattern, 120 questions each, in English and Hindi, '
-                            'with an explanation for every answer.'),
+UPCOMING_PACKS = {   # (UPSC EPFO moved to MOCK_PACKS as Sankalpa EPFO on 16 Nov 2026)
 }
 
 

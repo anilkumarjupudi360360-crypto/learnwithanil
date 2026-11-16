@@ -430,7 +430,7 @@ async def main():
             f = os.path.join(SITE, h)
             if h and not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'llms.txt: broken link /{h}')
         epm = open(os.path.join(SITE, 'upsc-epfo', 'mock-test.html'), encoding='utf-8').read()
-        if 'Included in the ₹149 All-in-One Pass' not in epm or 'coming soon' not in epm.lower() or '?buy=mock' in epm or '₹199' in epm: errors.append('upsc-epfo/mock-test.html: EPFO pack should be "coming soon, included in the ₹45 All-in-One Pass" with no separate price')
+        if 'Sankalpa EPFO' not in epm or '?buy=mock' in epm or '₹199' in epm: errors.append('upsc-epfo/mock-test.html: should sell Sankalpa EPFO through the All-in-One Pass, with no separate price')   # Sankalpa EPFO live since 16 Nov 2026 (was "coming soon")
         # one All-in-One Pass for everything (Anil, 26 Oct 2026; ₹149 since 16 Nov 2026, so ₹45 must not show either): no page sells a mock pack, combo, Bahubali or a book separately
         for dp, _, fs in os.walk(SITE):
             for f in fs:
