@@ -254,7 +254,7 @@ def _pre_paper(y, gs):
     return d
 
 
-PRE_PAPERS = [_pre_paper(y, gs) for y in range(2026, 2024, -1) for gs in (True, False)]   # Anil, 1 Nov 2026 21:02: Prelims 2026 and 2025 only
+PRE_PAPERS = [_pre_paper(y, gs) for y in range(2026, 2023, -1) for gs in (True, False)]   # Anil, 16 Nov 2026 06:29: add Prelims back to 2019, a year at a time (2024 now)
 PRE_SUBJECTS = [
   ('ih',  'History & Culture', 'history-culture', ['Ancient India', 'Medieval India', 'Modern India & Freedom Struggle', 'Art & Culture']),
   ('geo', 'Geography', 'geography', ['Physical Geography', 'Indian Geography', 'World Geography']),
