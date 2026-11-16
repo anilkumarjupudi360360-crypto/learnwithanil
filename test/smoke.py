@@ -254,6 +254,9 @@ async def main():
         await pg.goto(URL + 'upsc-capf/q/c2026a-3.html'); await pg.wait_for_timeout(300)
         if 'Raghu Rai' not in await pg.inner_text('main'): errors.append('question page: text missing')
         await pg.click('text=Answer it in the practice app'); await pg.wait_for_timeout(800)
+        for _ in range(15):   # the pass check runs first (papers, then the quiz); on a slow machine it takes over a second (16 Nov 2026)
+            if await pg.evaluate('location.pathname') == '/upsc-capf/quiz/': break
+            await pg.wait_for_timeout(200)
         if await pg.evaluate('location.pathname') != '/upsc-capf/quiz/': errors.append('question page: practice link did not open the quiz')
         # an exam page carries only its own heading; "All exams" goes back to the start page
         await pg.goto(URL + 'appsc-group-1/'); await pg.wait_for_timeout(400)
