@@ -3404,7 +3404,8 @@ def main():
                      .replace('{{HOME_PAPERS}}', home_papers).replace('{{PYQPAGE}}', conf['pb'] + 'pyqs.html').replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
-                     .replace('{{HUB_NOTES}}', '').replace('{{HOME_NOTES}}', home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
+                     .replace('{{HUB_NOTES}}', '').replace('{{HOME_NOTES}}', '')   # Anil, 16 Nov 2026: "remove these strips or any other strips also in all exam boxs" (books: tile 06; Bahubali: G2 tile 02)
+                     .replace('{{HUB}}', hub)
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}').replace('{{NLIVE}}', str(len(loaded)))
                      .replace('{{NLIVEX}}', str(sum(1 for e in catalog['exams'] if e.get('live')))).replace('{{HERO_NEW}}', HERO_NEW)
                      .replace('{{MOCKQ}}', f'{mock_questions():,}')
@@ -7792,8 +7793,8 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
             hd = lambda h, s: f'<div class="section-title" style="margin:{"0" if h == "Prelims" else "26px"} 0 12px"><h2>{h}</h2><span class="muted" style="font-size:14px">{s}</span></div>'
             return (f'<section class="wrap section">' + hd('Prelims', 'Screening test: previous papers, mock tests, sectional tests')
                     + f'<div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>' + hd('Mains', 'Descriptive papers: previous questions with model answers')
-                    + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + g1mains.tiles_credit() + mentor_card(conf) + exam_clock_html(conf)
-                    + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
+                    + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + g1mains.tiles_credit() + exam_clock_html(conf)
+                    + note + '</section>')   # no strips under the tiles (Anil, 16 Nov 2026)
     if conf['id'] == 'tgpsc-group-1':   # TGPSC Group-I: Prelims tiles and Mains tiles (Mains questions only; tools/tg1mains.py)
         import tg1mains
         tq = tg1mains.load(SRC)
@@ -7802,9 +7803,9 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
             return (f'<section class="wrap section">' + hd('Prelims', 'Preliminary test: previous papers, mock tests, sectional tests')
                     + f'<div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>' + hd('Mains', 'Descriptive papers: previous questions in English and Telugu')
                     + f'<div class="etiles">{tg1mains.tiles(conf, len(tq))}</div>' + exam_clock_html(conf)
-                    + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
-    return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>' + mentor_card(conf) + exam_clock_html(conf)
-            + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + mains_section(conf, mains) + '</section>')
+                    + note + '</section>')
+    return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>' + exam_clock_html(conf)
+            + note + '</section>')   # no Mentorship / link / promo strips under the tiles (Anil, 16 Nov 2026)
 
 
 def buy_box(conf, kind):
