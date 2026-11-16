@@ -1,0 +1,883 @@
+# UPSC Civil Services (Preliminary) Examination 2022, General Studies Paper II (CSAT) (Series A, booklet VGYH-D-CST), held 5 June 2022.
+# Source: the official UPSC question paper; answers from UPSC's official (final) answer key (published July 2023). Explanations by Learn with Anil.
+# Dropped by UPSC: 36
+
+Q 1 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The main threat to maintaining progress in human development comes from the increasingly evident unsustainability of production and consumption patterns. Current production models rely heavily on fossil fuels. We now know that this is unsustainable because the resources are finite. The close link between economic growth and greenhouse gas emissions needs to be severed for human development to become truly sustainable. Some developed countries have begun to alleviate the worst effects by expanding recycling and investing in public transport and infrastructure. But most developing countries are hampered by the high costs and low availability of clean energy sources. Developed countries need to support developing countries' transition to sustainable human development.
+Unsustainability in production pattern is due to which of the following?
+1. Heavy dependence on fossil fuels
+2. Limited availability of resources
+3. Expansion of recycling
+Select the correct answer using the code given below.
+(1) 1 and 2 only
+(2) 2 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 1
+~ The passage says current production relies heavily on fossil fuels, which is unsustainable because the resources are finite; so heavy dependence on fossil fuels (1) and limited resources (2) cause the unsustainability. Expanding recycling (3) is mentioned as a remedy some developed countries use, not a cause. Hence 1 and 2 only, (a).
+
+Q 2 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The main threat to maintaining progress in human development comes from the increasingly evident unsustainability of production and consumption patterns. Current production models rely heavily on fossil fuels. We now know that this is unsustainable because the resources are finite. The close link between economic growth and greenhouse gas emissions needs to be severed for human development to become truly sustainable. Some developed countries have begun to alleviate the worst effects by expanding recycling and investing in public transport and infrastructure. But most developing countries are hampered by the high costs and low availability of clean energy sources. Developed countries need to support developing countries' transition to sustainable human development.
+Consider the following statements:
+Developed countries can support developing countries' transition to sustainable human development by
+1. making clean energy sources available at low cost
+2. providing loans for improving their public transport at nominal interest rates
+3. encouraging them to change their production and consumption patterns
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 1 and 2 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 2
+~ Developing countries are held back by the high cost and low availability of clean energy, so making clean energy available cheaply is direct support (1). Investing in public transport is named as a way to reduce the worst effects, so cheap loans for it also help (2). Merely encouraging them to change their patterns (3) does nothing about the cost and availability barriers the passage identifies. Hence 1 and 2 only, (b).
+
+Q 3 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Unless the forces and tendencies which are responsible for destroying the country's environment are checked in the near future and afforestation of denuded areas is taken up on a massive scale, the harshness of the climatic conditions and soil erosion by wind and water will increase to such an extent that agriculture, which is the mainstay of our people, will gradually become impossible. The desert countries of the world and our own desert areas in Rajasthan are a grim reminder of the consequences of large-scale deforestation. Pockets of desert-like landscape are now appearing in other parts of the country including the Sutlej-Ganga Plains and the Deccan Plateau. Where only a few decades back there used to be lush green forests with perennial streams and springs, there is only brown earth, bare of vegetation, without any water in the streams and springs except in the rainy season.
+According to the passage given above, deforestation and denudation will ultimately lead to which of the following?
+1. Depletion of soil resource
+2. Shortage of land for the common man
+3. Lack of water for cultivation
+Select the correct answer using the code given below.
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 3
+~ Deforestation increases soil erosion by wind and water, which depletes the soil (1), and turns perennial streams and springs dry except in the rainy season, leaving no water for cultivation (3). The passage says nothing about a shortage of land for the common man (2). Hence 1 and 3 only, (c).
+
+Q 4 | lr | Series & Patterns
+What is the value of X in the sequence 20, 10, 10, 15, 30, 75, X?
+(1) 105
+(2) 120
+(3) 150
+(4) 225
+= 4
+~ Each term is the previous one multiplied by 0.5, 1, 1.5, 2, 2.5, ... in turn: 20 × 0.5 = 10, 10 × 1 = 10, 10 × 1.5 = 15, 15 × 2 = 30, 30 × 2.5 = 75, so X = 75 × 3 = 225, (d).
+
+Q 5 | qa | Number System
+An Identity Card has the number ABCDEFG, not necessarily in that order, where each letter represents a distinct digit (1, 2, 4, 5, 7, 8, 9 only).
+The number is divisible by 9. After deleting the first digit from the right, the resulting number is divisible by 6.
+After deleting two digits from the right of original number, the resulting number is divisible by 5. After deleting three digits from the right of original number, the resulting number is divisible by 4.
+After deleting four digits from the right of original number, the resulting number is divisible by 3. After deleting five digits from the right of original number, the resulting number is divisible by 2. Which of the following is a possible value for the sum of the middle three digits of the number?
+(1) 8
+(2) 9
+(3) 11
+(4) 12
+= 1
+~ The 7-digit number must use 1, 2, 4, 5, 7, 8, 9 (sum 36, so divisible by 9). Reading from the left: the first digit is even, the first two digits form a multiple of 3, the first three a multiple of 4, the first four a multiple of 5 (so the 4th digit is 5), and the first six a multiple of 6. Working these through gives only 1472589 and 7412589. Their middle three digits (3rd to 5th) add up to 7 + 2 + 5 = 14 and 1 + 2 + 5 = 8; only 8 is offered, (a).
+
+Q 6 | lr | Directions, Clocks & Calendars
+Two friends X and Y start running and they run together for 50 m in the same direction and reach a point. X turns right and runs 60 m, while Y turns left and runs 40 m. Then X turns left and runs 50 m and stops, while Y turns right and runs 50 m and then stops.
+How far are the two friends from each other now?
+(1) 100 m
+(2) 90 m
+(3) 60 m
+(4) 50 m
+= 1
+~ Let them run 50 m north. X turns right (east) 60 m, then left (north) 50 m; Y turns left (west) 40 m, then right (north) 50 m. Both end 100 m north of the start, X 60 m east and Y 40 m west, so they are 60 + 40 = 100 m apart, (a).
+
+Q 7 | lr | Directions, Clocks & Calendars
+Which date of June 2099 among the following is Sunday?
+(1) 4
+(2) 5
+(3) 6
+(4) 7
+= 4
+~ 1 June 2000 was a Thursday. From 1 June 2000 to 1 June 2099 is 99 years with 24 leap days (2004 to 2096), i.e. 99 + 24 = 123 odd days ≡ 4 (mod 7), so 1 June 2099 is Thursday + 4 = Monday. Then 7 June 2099 is a Sunday, (d).
+
+Q 8 | qa | Arithmetic
+A bill for ₹1,840 is paid in the denominations of ₹50, ₹20 and ₹10 notes. 50 notes in all are used. Consider the following statements:
+1. 25 notes of ₹50 are used and the remaining are in the denominations of ₹20 and ₹10.
+2. 35 notes of ₹20 are used and the remaining are in the denominations of ₹50 and ₹10.
+3. 20 notes of ₹10 are used and the remaining are in the denominations of ₹50 and ₹20.
+Which of the above statements are not correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Let a, b, c be the numbers of ₹50, ₹20 and ₹10 notes: a + b + c = 50 and 50a + 20b + 10c = 1840, which gives 4a + b = 134. 1: a = 25 gives b = 34, c = −9, impossible. 2: b = 35 gives a = 24.75, impossible. 3: c = 20 gives a + b = 30 and 4a + b = 134, so a = 34.67, impossible. None is correct, so all three are "not correct", (d).
+
+Q 9 | qa | Number System
+Which number amongst 2⁴⁰, 3²¹, 4¹⁸ and 8¹² is the smallest?
+(1) 2⁴⁰
+(2) 3²¹
+(3) 4¹⁸
+(4) 8¹²
+= 2
+~ Write the others as powers of 2: 4¹⁸ = 2³⁶ and 8¹² = 2³⁶, both smaller than 2⁴⁰. Compare 3²¹ with 2³⁶: 3²¹ = (3⁷)³ = 2187³ and 2³⁶ = (2¹²)³ = 4096³, so 3²¹ is smaller. The smallest is 3²¹, (b).
+
+Q 10 | qa | Number System
+The digits 1 to 9 are arranged in three rows in such a way that each row contains three digits, and the number formed in the second row is twice the number formed in the first row; and the number formed in the third row is thrice the number formed in the first row.
+Repetition of digits is not allowed. If only three of the four digits 2, 3, 7 and 9 are allowed to use in the first row, how many such combinations are possible to be arranged in the three rows?
+(1) 4
+(2) 3
+(3) 2
+(4) 1
+= 3
+~ The first row is a 3-digit number N with digits from {2, 3, 7, 9}, and N, 2N and 3N together must use each of 1 to 9 exactly once. Checking the possibilities, only 273 (546, 819) and 327 (654, 981) work. So 2 combinations, (c).
+
+Q 11 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+"In simple matters like shoe-making, we think only a specially trained person will serve our purpose, but in politics, we presume that everyone who knows how to get votes knows how to administer a State. When we are ill, we call for a trained physician, whose degree is a guarantee of specific preparation and technical competence—we do not ask for the handsomest physician, or the most eloquent one : well then, when the whole State is ill should we not look for the service and guidance of the wisest and the best?"
+Which one of the following statements best reflects the message of the author of the passage?
+(1) We assume that in a democracy, any politician is qualified to administer a State.
+(2) Politicians should be selected from those trained in administration.
+(3) We need to devise a method of barring incompetence from public office.
+(4) As voters select their administrators, the eligibility of politicians to administer a State cannot be questioned.
+= 3
+~ The author contrasts how we demand trained experts for simple tasks like shoe-making or medicine but assume anyone who can win votes can run a State, and asks whether the ill State should not be served by the wisest and the best. The message is that we need a way to keep incompetence out of public office. Option (a) is the attitude the author criticises, (b) is narrower than the passage, and (d) contradicts it. Hence (c).
+
+Q 12 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The poverty line is quite unsatisfactory when it comes to grasping the extent of poverty in India. It is not only because of its extremely narrow definition of 'who is poor' and the debatable methodology used to count the poor, but also because of a more fundamental assumption underlying it. It exclusively relies on the notion of poverty as insufficient income or insufficient purchasing power. One can better categorize it by calling it income poverty. If poverty is ultimately about deprivations affecting human well-being, then income poverty is only one aspect of it. Poverty of a life, in our view, lies not merely in the impoverished state in which the person actually lives, but also in the lack of real opportunity given by social constraints as well as personal circumstances—to choose other types of living. Even the relevance of low incomes, meagre possessions, and other aspects of what are standardly seen as economic poverty relate ultimately to their role in curtailing capabilities, i.e., their role in severely restricting the choices people have to lead variable and valued lives.
+Why is the methodology adopted in India to count the 'poor' debatable?
+(1) There is some confusion regarding what should constitute the 'poverty line'.
+(2) There are wide diversities in the condition of the rural and urban poor.
+(3) There is no uniform global standard for measuring income poverty.
+(4) It is based on the proposition of poverty as meagre income or buying capacity.
+= 4
+~ The passage calls the counting methodology debatable and adds that the deeper flaw is that it relies exclusively on poverty as insufficient income or purchasing power. That reliance on meagre income or buying capacity is what option (d) states. Confusion about the line, rural-urban diversity and a global standard are not mentioned. Hence (d).
+
+Q 13 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The poverty line is quite unsatisfactory when it comes to grasping the extent of poverty in India. It is not only because of its extremely narrow definition of 'who is poor' and the debatable methodology used to count the poor, but also because of a more fundamental assumption underlying it. It exclusively relies on the notion of poverty as insufficient income or insufficient purchasing power. One can better categorize it by calling it income poverty. If poverty is ultimately about deprivations affecting human well-being, then income poverty is only one aspect of it. Poverty of a life, in our view, lies not merely in the impoverished state in which the person actually lives, but also in the lack of real opportunity given by social constraints as well as personal circumstances—to choose other types of living. Even the relevance of low incomes, meagre possessions, and other aspects of what are standardly seen as economic poverty relate ultimately to their role in curtailing capabilities, i.e., their role in severely restricting the choices people have to lead variable and valued lives.
+Why is income poverty only one measure of counting the 'poor'?
+(1) It talks of only one kind of deprivation ignoring all others.
+(2) Other deprivations in a human life have nothing to do with lack of purchasing power.
+(3) Income poverty is not a permanent condition, it changes from time to time.
+(4) Income poverty restricts human choices only at a point of time.
+= 1
+~ If poverty is about all deprivations affecting well-being, income poverty captures only one of them, so it is only one measure: it talks of one kind of deprivation and ignores the others. Option (b) contradicts the passage, which links other deprivations to low income, and (c) and (d) are not discussed. Hence (a).
+
+Q 14 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The poverty line is quite unsatisfactory when it comes to grasping the extent of poverty in India. It is not only because of its extremely narrow definition of 'who is poor' and the debatable methodology used to count the poor, but also because of a more fundamental assumption underlying it. It exclusively relies on the notion of poverty as insufficient income or insufficient purchasing power. One can better categorize it by calling it income poverty. If poverty is ultimately about deprivations affecting human well-being, then income poverty is only one aspect of it. Poverty of a life, in our view, lies not merely in the impoverished state in which the person actually lives, but also in the lack of real opportunity given by social constraints as well as personal circumstances—to choose other types of living. Even the relevance of low incomes, meagre possessions, and other aspects of what are standardly seen as economic poverty relate ultimately to their role in curtailing capabilities, i.e., their role in severely restricting the choices people have to lead variable and valued lives.
+What does the author mean by 'poverty of a life'?
+(1) All deprivations in a human life which stem not only from lack of income but lack of real opportunities
+(2) Impoverished state of poor people in rural and urban areas
+(3) Missed opportunities in diverse personal circumstances
+(4) Material as well as non-material deprivations in a human life which restrict human choices permanently
+= 1
+~ "Poverty of a life", the author says, lies not only in the impoverished state a person lives in but also in the lack of real opportunity, due to social constraints and personal circumstances, to choose other ways of living. Option (a) captures both parts. Option (d) adds "permanently", which the passage does not say. Hence (a).
+
+Q 15 | qa | Arithmetic
+X and Y run a 3 km race along a circular course of length 300 m. Their speeds are in the ratio 3 : 2. If they start together in the same direction, how many times would the first one pass the other (the start-off is not counted as passing)?
+(1) 2
+(2) 3
+(3) 4
+(4) 5
+= 2
+~ When X finishes 3000 m, Y has run 2000 m, so X has gained 1000 m on Y. Every 300 m gained means one pass, and 1000/300 = 3.33, so X passes Y 3 times, (b).
+
+Q 16 | lr | Series & Patterns
+If the order of the letters in the English alphabet is reversed and each letter represents the letter whose position it occupies, then which one of the following represents 'LUCKNOW'?
+(1) OGXPMLD
+(2) OGXQMLE
+(3) OFXPMLE
+(4) OFXPMLD
+= 4
+~ With the alphabet reversed, each letter is replaced by its mirror: A ↔ Z, B ↔ Y, and so on (the two positions add up to 27). L → O, U → F, C → X, K → P, N → M, O → L, W → D, giving OFXPMLD, (d).
+
+Q 17 | lr | Analytical Reasoning
+In a tournament of Chess having 150 entrants, a player is eliminated whenever he loses a match. It is given that no match results in a tie/draw. How many matches are played in the entire tournament?
+(1) 151
+(2) 150
+(3) 149
+(4) 148
+= 3
+~ Every match eliminates exactly one player, and the tournament ends when one champion is left, so 150 − 1 = 149 players must be eliminated: 149 matches, (c).
+
+Q 18 | qa | Permutations, Combinations & Probability
+How many 3-digit natural numbers (without repetition of digits) are there such that each digit is odd and the number is divisible by 5?
+(1) 8
+(2) 12
+(3) 16
+(4) 24
+= 2
+~ All digits odd and divisible by 5 means the last digit is 5. The other two places take distinct digits from 1, 3, 7, 9 in 4 × 3 = 12 ways, (b).
+
+Q 19 | qa | Data Interpretation & Sufficiency
+Consider the Question and two Statements given below:
+Question : Is x an integer?
+Statement-1 : x/3 is not an integer.
+Statement-2 : 3x is an integer.
+Which one of the following is correct in respect of the Question and the Statements?
+(1) Statement-1 alone is sufficient to answer the Question
+(2) Statement-2 alone is sufficient to answer the Question
+(3) Both Statement-1 and Statement-2 are sufficient to answer the Question
+(4) Both Statement-1 and Statement-2 are not sufficient to answer the Question
+= 4
+~ Statement 1 allows x = 1 (an integer) or x = 1/2 (not an integer). Statement 2 allows x = 1 or x = 1/3. Even together, x = 1 (1/3 not an integer, 3 an integer) and x = 1/3 (1/9 not an integer, 1 an integer) both fit, one an integer and one not. Not sufficient, (d).
+
+Q 20 | qa | Arithmetic
+The increase in the price of a certain item was 25%. Then the price was decreased by 20% and then again increased by 10%. What is the resultant increase in the price?
+(1) 5%
+(2) 10%
+(3) 12.5%
+(4) 15%
+= 2
+~ Take the price as 100: after +25% it is 125, after −20% it is 100, and after +10% it is 110. The net increase is 10%, (b).
+
+Q 21 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In some places in the world, the productivity of staples such as rice and wheat has reached a plateau. Neither new strains nor fancy agrochemicals are raising the yields. Nor is there much unfarmed land left that is suitable to be brought under the plough. If global temperature continues to rise, some places will become unsuitable for farming. Application of technology can help overcome these problems. Agricultural technology is changing fast. Much of this change is brought about by affluent farmers in the West/Americas. Techniques developed in the West are being adapted in some places to make tropical crops more productive. Technology is of little use if it is not adapted. In the developing world, that applies as much to existing farming techniques as it does to the latest advances in genetic modification. Extending to the smallholders and subsistence farmers of Africa and Asia the best of today's agricultural practices, in such simple matters as how much fertilizers to apply and when, would lead to a greatly increased availability of food for humanity. So would things like better roads and storage facilities, to allow for the carriage of surpluses to markets and reduce wastage.
+Based on the above passage, the following assumptions have been made:
+1. Development of agricultural technology is confined to developed countries.
+2. Agricultural technology is not adapted in developing countries.
+Which of the above assumptions is/are valid?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 4
+~ 1 is wrong: the passage says much of the change comes from affluent Western farmers, not that development is confined to developed countries. 2 is wrong: it says Western techniques are already being adapted in some places to make tropical crops more productive. Neither assumption is valid, (d).
+
+Q 22 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In some places in the world, the productivity of staples such as rice and wheat has reached a plateau. Neither new strains nor fancy agrochemicals are raising the yields. Nor is there much unfarmed land left that is suitable to be brought under the plough. If global temperature continues to rise, some places will become unsuitable for farming. Application of technology can help overcome these problems. Agricultural technology is changing fast. Much of this change is brought about by affluent farmers in the West/Americas. Techniques developed in the West are being adapted in some places to make tropical crops more productive. Technology is of little use if it is not adapted. In the developing world, that applies as much to existing farming techniques as it does to the latest advances in genetic modification. Extending to the smallholders and subsistence farmers of Africa and Asia the best of today's agricultural practices, in such simple matters as how much fertilizers to apply and when, would lead to a greatly increased availability of food for humanity. So would things like better roads and storage facilities, to allow for the carriage of surpluses to markets and reduce wastage.
+Based on the above passage, the following assumptions have been made:
+1. Poor countries need to bring about change in their existing farming techniques.
+2. Developed countries have better infrastructure and they waste less food.
+Which of the above assumptions is/are valid?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ The passage says extending today's best practices, even simple ones like how much fertiliser to apply and when, to smallholders in Africa and Asia would greatly raise food availability, which assumes poor countries need to change their existing techniques (1). It does not compare the infrastructure or food wastage of developed countries (2). Hence 1 only, (a).
+
+Q 23 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In some places in the world, the productivity of staples such as rice and wheat has reached a plateau. Neither new strains nor fancy agrochemicals are raising the yields. Nor is there much unfarmed land left that is suitable to be brought under the plough. If global temperature continues to rise, some places will become unsuitable for farming. Application of technology can help overcome these problems. Agricultural technology is changing fast. Much of this change is brought about by affluent farmers in the West/Americas. Techniques developed in the West are being adapted in some places to make tropical crops more productive. Technology is of little use if it is not adapted. In the developing world, that applies as much to existing farming techniques as it does to the latest advances in genetic modification. Extending to the smallholders and subsistence farmers of Africa and Asia the best of today's agricultural practices, in such simple matters as how much fertilizers to apply and when, would lead to a greatly increased availability of food for humanity. So would things like better roads and storage facilities, to allow for the carriage of surpluses to markets and reduce wastage.
+Based on the above passage, the following assumptions have been made:
+1. Growing enough food for future generations will be a challenge.
+2. Corporate farming is a viable option for food security in poor countries.
+Which of the above assumptions is/are valid?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Yields of staples have plateaued, little new land is left and warming may make some places unfit for farming, so growing enough food for the future will be a challenge (1). Corporate farming is never mentioned (2). Hence 1 only, (a).
+
+Q 24 | qa | Permutations, Combinations & Probability
+The letters A, B, C, D and E are arranged in such a way that there are exactly two letters between A and E. How many such arrangements are possible?
+(1) 12
+(2) 18
+(3) 24
+(4) 36
+= 3
+~ In a row of five, A and E with exactly two letters between them must occupy positions (1, 4) or (2, 5), each in 2 orders: 4 ways. The other three letters fill the remaining places in 3! = 6 ways. Total 4 × 6 = 24, (c).
+
+Q 25 | qa | Data Interpretation & Sufficiency
+Consider the Question and two Statements given below:
+Question : Is Z brother of X?
+Statement-1 : X is a brother of Y and Y is a brother of Z.
+Statement-2 : X, Y and Z are siblings.
+Which one of the following is correct in respect of the Question and the Statements?
+(1) Statement-1 alone is sufficient to answer the Question
+(2) Statement-2 alone is sufficient to answer the Question
+(3) Both Statement-1 and Statement-2 are sufficient to answer the Question
+(4) Both Statement-1 and Statement-2 are not sufficient to answer the Question
+= 4
+~ Statement 1 shows X and Z are siblings (X is Y's brother, Y is Z's brother) but not whether Z is male. Statement 2 only says they are siblings. Even together, Z could be a brother or a sister of X. Not sufficient, (d).
+
+Q 26 | qa | Arithmetic
+On one side of a 1.01 km long road, 101 plants are planted at equal distance from each other. What is the total distance between 5 consecutive plants?
+(1) 40 m
+(2) 40.4 m
+(3) 50 m
+(4) 50.5 m
+= 2
+~ 101 plants along 1.01 km = 1010 m leave 100 equal gaps of 10.1 m. Five consecutive plants span 4 gaps: 4 × 10.1 = 40.4 m, (b).
+
+Q 27 | qa | Permutations, Combinations & Probability
+A, B and C are three places such that there are three different roads from A to B, four different roads from B to C and three different roads from A to C.
+In how many different ways can one travel from A to C using these roads?
+(1) 10
+(2) 13
+(3) 15
+(4) 36
+= 3
+~ From A to C one can go via B in 3 × 4 = 12 ways or directly in 3 ways. Total 12 + 3 = 15, (c).
+
+Q 28 | qa | Arithmetic
+A has some coins. He gives half of the coins and 2 more to B. B gives half of the coins and 2 more to C. C gives half of the coins and 2 more to D. The number of coins D has now, is the smallest two-digit number. How many coins does A have in the beginning?
+(1) 76
+(2) 68
+(3) 60
+(4) 52
+= 4
+~ Work backwards. D ends with 10, the smallest two-digit number. C gave half his coins plus 2: c/2 + 2 = 10, so c = 16. B gave C half plus 2: b/2 + 2 = 16, so b = 28. A gave B half plus 2: a/2 + 2 = 28, so a = 52, (d).
+
+Q 29 | lr | Series & Patterns
+In the series AABABCABCDABCDE..., which letter appears at the 100th place?
+(1) G
+(2) H
+(3) I
+(4) J
+= 3
+~ The series is built in groups A, AB, ABC, ABCD, ... with group k having k letters. The first 13 groups hold 1 + 2 + ... + 13 = 91 letters, so the 100th letter is the 9th letter of the 14th group, I, (c).
+
+Q 30 | lr | Puzzles & Arrangements
+Three persons A, B and C are standing in a queue not necessarily in the same order. There are 4 persons between A and B, and 7 persons between B and C. If there are 11 persons ahead of C and 13 behind A, what could be the minimum number of persons in the queue?
+(1) 22
+(2) 28
+(3) 32
+(4) 38
+= 1
+~ C is 12th from the front (11 persons ahead). With 7 persons between B and C, B is 4th or 20th. With 4 persons between A and B, A is 5 places from B, and the queue length is A's position + 13. B = 4th gives A = 9th (A cannot be at −1), so the queue has 9 + 13 = 22 persons, with C (12th) inside it. B = 20th would make A 15th or 25th and the queue 28 or 38. The minimum is 22, (a).
+
+Q 31 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Natural selection cannot anticipate future environments on the earth. Therefore, the set of existing organisms can never be fully prepared for environmental catastrophes that await life. An outcome of this is the extinction of those species which cannot overcome environmental adversity. This failure to survive, in modern terms, can be attributed to the genomes which are unable to withstand geological vagaries or biological mishaps (infections, diseases and so on). In biological evolution on the earth, extinction of species has been a major feature. The earth may presently have up to ten million species, yet more than 90% of species that have ever lived on the earth are now extinct. Once again, the creationist doctrines fail to satisfactorily address why a divine creator will firstly bother to create millions of species and then allow them to perish. The Darwinian explanation for extinct life is once again simple, elegant and at once convincing—organisms go extinct as a function of environmental or biological assaults for which their inheritance deems them ill-equipped. Therefore, the so-called Darwinian theory of evolution is not a theory at all. Evolution happens—this is a fact. The mechanism of evolution (Darwin proposed natural selection) is amply supported by scientific data. Indeed, to date no single zoological, botanical, geological, paleontological, genetic or physical evidence has refuted either of the central two main Darwinian ideas. If religion is not taken into consideration, Darwinian laws are acceptable just like the laws proposed by Copernicus, Galileo, Newton and Einstein—sets of natural laws that explain natural phenomena in the universe.
+According to the passage, natural selection cannot anticipate future environments on the earth as
+1. species not fully prepared to face the environmental changes that await them will face extinction
+2. all the existing species would get extinct as their genomes will not withstand biological mishaps
+3. inability of the genome to withstand environmental changes would result in extinction
+4. extinction of species is a common feature
+Select the correct answer using the code given below.
+(1) 1, 2 and 3
+(2) 2, 3 and 4
+(3) 1, 3 and 4
+(4) 1, 2 and 4
+= 3
+~ The passage says organisms not prepared for coming environmental catastrophes go extinct (1), that this failure is due to genomes unable to withstand geological or biological mishaps (3), and that extinction has been a major feature of evolution (4). Statement 2, that all existing species will go extinct, overstates it: only those that cannot overcome adversity do. Hence 1, 3 and 4, (c).
+
+Q 32 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Natural selection cannot anticipate future environments on the earth. Therefore, the set of existing organisms can never be fully prepared for environmental catastrophes that await life. An outcome of this is the extinction of those species which cannot overcome environmental adversity. This failure to survive, in modern terms, can be attributed to the genomes which are unable to withstand geological vagaries or biological mishaps (infections, diseases and so on). In biological evolution on the earth, extinction of species has been a major feature. The earth may presently have up to ten million species, yet more than 90% of species that have ever lived on the earth are now extinct. Once again, the creationist doctrines fail to satisfactorily address why a divine creator will firstly bother to create millions of species and then allow them to perish. The Darwinian explanation for extinct life is once again simple, elegant and at once convincing—organisms go extinct as a function of environmental or biological assaults for which their inheritance deems them ill-equipped. Therefore, the so-called Darwinian theory of evolution is not a theory at all. Evolution happens—this is a fact. The mechanism of evolution (Darwin proposed natural selection) is amply supported by scientific data. Indeed, to date no single zoological, botanical, geological, paleontological, genetic or physical evidence has refuted either of the central two main Darwinian ideas. If religion is not taken into consideration, Darwinian laws are acceptable just like the laws proposed by Copernicus, Galileo, Newton and Einstein—sets of natural laws that explain natural phenomena in the universe.
+The passage suggests that Darwinian theory of evolution is not a theory at all because
+(1) it does not satisfy the creationist doctrine
+(2) extinction is a function of environment and biological assaults
+(3) there are no evidences to refute it
+(4) existence of organisms is attributed to a creator
+= 2
+~ Right before calling Darwinian theory "not a theory at all", the author says the Darwinian explanation is simple and convincing: organisms go extinct as a function of environmental or biological assaults for which their inheritance leaves them ill-equipped. In UPSC's key, this observed fact is the reason given, (b). (Option (c) also echoes the passage's later point that no evidence has refuted Darwin's ideas; the official key prefers (b).)
+
+Q 33 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+Natural selection cannot anticipate future environments on the earth. Therefore, the set of existing organisms can never be fully prepared for environmental catastrophes that await life. An outcome of this is the extinction of those species which cannot overcome environmental adversity. This failure to survive, in modern terms, can be attributed to the genomes which are unable to withstand geological vagaries or biological mishaps (infections, diseases and so on). In biological evolution on the earth, extinction of species has been a major feature. The earth may presently have up to ten million species, yet more than 90% of species that have ever lived on the earth are now extinct. Once again, the creationist doctrines fail to satisfactorily address why a divine creator will firstly bother to create millions of species and then allow them to perish. The Darwinian explanation for extinct life is once again simple, elegant and at once convincing—organisms go extinct as a function of environmental or biological assaults for which their inheritance deems them ill-equipped. Therefore, the so-called Darwinian theory of evolution is not a theory at all. Evolution happens—this is a fact. The mechanism of evolution (Darwin proposed natural selection) is amply supported by scientific data. Indeed, to date no single zoological, botanical, geological, paleontological, genetic or physical evidence has refuted either of the central two main Darwinian ideas. If religion is not taken into consideration, Darwinian laws are acceptable just like the laws proposed by Copernicus, Galileo, Newton and Einstein—sets of natural laws that explain natural phenomena in the universe.
+With reference to the passage, the following assumptions have been made:
+1. Only species that have the ability to overcome environmental catastrophes will survive and perpetuate.
+2. More than 90% of the species on the earth are in the danger of getting extinct due to drastic changes in the environment.
+3. Darwin's theory explains all the natural phenomena.
+Which of the above assumptions is/are valid?
+(1) 1 only
+(2) 1 and 2 only
+(3) 3 only
+(4) 1, 2 and 3
+= 1
+~ Organisms that cannot overcome environmental adversity go extinct, which assumes that only species able to overcome catastrophes survive and perpetuate (1). The 90% figure is about species that have ever lived and are already extinct, not those now in danger (2). The passage says Darwinian laws explain natural phenomena in the same way as other natural laws, not that Darwin's theory explains all natural phenomena (3). Hence 1 only, (a).
+
+Q 34 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+With steady economic growth, higher literacy and increasing skill levels, the number of Indian middle-class families has gone up exponentially. Direct results of the affluence have been changes in dietary patterns and energy consumption levels. People have moved to a higher protein-based diet like milk products, fish and meat, all of which need significantly more water to produce than cereal-based diets. Increasing use of electronic and electric machines/gadgets and motor vehicles needs more and more energy and generation of energy needs water.
+Which one of the following statements best reflects the crux of the passage?
+(1) People should be persuaded to continue with the mainly Indian traditional cereal-based diets.
+(2) India needs to focus on developing agricultural productivity and capacity for more energy generation in the coming years.
+(3) Modern technological developments result in the change of cultural and social behaviour of the people.
+(4) Water management practices in India need to change dramatically in the coming years.
+= 4
+~ The passage traces how affluence raises water demand: protein-rich diets need much more water than cereal diets, and more machines and vehicles need more energy, whose generation needs water. Its crux is that India's water management must change sharply in the coming years. It does not ask people to return to cereal diets (a), and (b) and (c) miss the water theme. Hence (d).
+
+Q 35 | qa | Arithmetic
+How many seconds in total are there in x weeks, x days, x hours, x minutes and x seconds?
+(1) 11580x
+(2) 11581x
+(3) 694860x
+(4) 694861x
+= 4
+~ A week has 604800 seconds, a day 86400, an hour 3600, a minute 60 and then 1 second. Total = (604800 + 86400 + 3600 + 60 + 1)x = 694861x, (d).
+
+Q 37 | qa | Data Interpretation & Sufficiency
+Consider the Question and two Statements given below in respect of three cities P, Q and R in a State:
+Question : How far is city P from city Q?
+Statement-1 : City Q is 18 km from city R.
+Statement-2 : City P is 43 km from city R.
+Which one of the following is correct in respect of the Question and the Statements?
+(1) Statement-1 alone is sufficient to answer the Question
+(2) Statement-2 alone is sufficient to answer the Question
+(3) Both Statement-1 and Statement-2 are sufficient to answer the Question
+(4) Both Statement-1 and Statement-2 are not sufficient to answer the Question
+= 4
+~ Knowing QR = 18 km and PR = 43 km does not fix PQ: depending on where P, Q and R lie, PQ can be anything from 43 − 18 = 25 km to 43 + 18 = 61 km. Even both statements together are not sufficient, (d).
+
+Q 38 | lr | Logical Reasoning
+Two Statements followed by four Conclusions are given below. You have to take the Statements to be true even if they seem to be at variance from the commonly known facts. Read all the Conclusions and then decide which of the given Conclusions logically follows/ follow from the Statements, disregarding the commonly known facts:
+Statement-1 : All pens are books.
+Statement-2 : No chair is a pen.
+Conclusion-I : All chairs are books.
+Conclusion-II : Some chairs are pens.
+Conclusion-III : All books are chairs.
+Conclusion-IV : No chair is a book.
+Which one of the following is correct?
+(1) Only Conclusion-I
+(2) Only Conclusion-II
+(3) Both Conclusion-III and Conclusion-IV
+(4) None of the Conclusions follows
+= 4
+~ All pens are books and no chair is a pen. Chairs may or may not be books, so neither "all chairs are books" (I) nor "no chair is a book" (IV) follows. "Some chairs are pens" (II) contradicts statement 2, and "all books are chairs" (III) cannot be true since pens are books but not chairs. None follows, (d).
+
+Q 39 | lr | Logical Reasoning
+Three Statements followed by three Conclusions are given below. You have to take the Statements to be true even if they seem to be at variance from the commonly known facts. Read all the Conclusions and then decide which of the given Conclusions logically follows/ follow from the Statements, disregarding the commonly known facts:
+Statement-1 : Some doctors are teachers.
+Statement-2 : All teachers are engineers.
+Statement-3 : All engineers are scientists.
+Conclusion-I : Some scientists are doctors.
+Conclusion-II : All engineers are doctors.
+Conclusion-III : Some engineers are doctors.
+Which one of the following is correct?
+(1) Only Conclusion-I
+(2) Only Conclusion-II
+(3) Both Conclusion-I and Conclusion-III
+(4) Both Conclusion-I and Conclusion-II
+= 3
+~ Some doctors are teachers, and every teacher is an engineer, so those doctors are engineers: some engineers are doctors (III). All engineers are scientists, so those doctors are also scientists: some scientists are doctors (I). "All engineers are doctors" (II) does not follow. Hence I and III, (c).
+
+Q 40 | lr | Puzzles & Arrangements
+Eight students A, B, C, D, E, F, G and H sit around a circular table, equidistant from each other, facing the centre of the table, not necessarily in the same order.
+B and D sit neither adjacent to C nor opposite to C. A sits in between E and D, and F sits in between B and H. Which one of the following is definitely correct?
+(1) B sits in between A and G
+(2) C sits opposite to G
+(3) E sits opposite to F
+(4) None of the above
+= 4
+~ A sits between E and D, and F between B and H. B and D are neither next to C nor opposite C. Working out the seats, six different arrangements satisfy all the conditions, and in some of them B is not between A and G, C is not opposite G, and E is not opposite F. So none of (a), (b), (c) is definitely true, (d).
+
+Q 41 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+For two or three generations past, ever-increasing numbers of individuals have been living as workers merely, not as human beings. An excessive amount of labour is rule today in every circle of society, with the result that man's spiritual element cannot thrive. He finds it very difficult to spend his little leisure in serious activities. He does not want to think; or he cannot even if he wants to. He seeks not self-improvement, but entertainment which would enable him to be mentally idle and to forget his usual activities. Therefore, the so-called culture of our age is dependant more on cinema than on theatre, more on newspapers, magazines and crime stories than on serious literature.
+The passage is based on the idea that
+(1) man should not work hard
+(2) the great evil of our age is overstrain
+(3) man cannot think well
+(4) man cannot care for his spiritual welfare
+= 2
+~ The passage's central idea is that excessive labour has become the rule, so people live merely as workers, their spiritual element cannot thrive, and in their little leisure they seek mindless entertainment. The great evil it points to is overstrain, (b). It does not say man should not work (a), and (c) and (d) are consequences, not the base idea.
+
+Q 42 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+For two or three generations past, ever-increasing numbers of individuals have been living as workers merely, not as human beings. An excessive amount of labour is rule today in every circle of society, with the result that man's spiritual element cannot thrive. He finds it very difficult to spend his little leisure in serious activities. He does not want to think; or he cannot even if he wants to. He seeks not self-improvement, but entertainment which would enable him to be mentally idle and to forget his usual activities. Therefore, the so-called culture of our age is dependant more on cinema than on theatre, more on newspapers, magazines and crime stories than on serious literature.
+Man does not seek self-improvement because he
+(1) is not intellectually capable
+(2) has no time to do so
+(3) is distracted by materialism
+(4) loves amusement and is mentally idle
+= 4
+~ The passage says man seeks not self-improvement but entertainment that lets him be mentally idle and forget his usual activities; he does not want to think. So he loves amusement and is mentally idle, (d). Lack of intellect (a) and materialism (c) are not mentioned, and the issue is how he uses his little leisure, not lack of time alone (b).
+
+Q 43 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The demographic dividend, which has begun in India and is expected to last another few decades, is a great window of opportunity. The demographic dividend is basically a swelling in the working age population, which conversely means that the relative ratio of very young and very old will, for a while, be on the decline. From the experience of Ireland and China, we know that this can be a source of energy and an engine of economic growth. The demographic dividend tends to raise a nation's savings rate since in any nation, it is the working age population that is the main saver. And since the savings rate is an important driver of growth, this should help elevate our growth rate. However, the benefits of demographic dividend depend on the quality of the working age population. And this implies bringing back the importance of education, acquisition of skills and human capital.
+Which of the following would invariably happen in a country, when the demographic dividend has begun to operate?
+1. The number of illiterate people will decrease.
+2. The ratio of very old and very young will decrease for a while.
+3. Population growth rate will quickly stabilize.
+Select the correct answer using the code given below.
+(1) 1 and 2 only
+(2) 2 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ The demographic dividend is a swelling of the working-age population, which by definition means the relative share of the very young and very old falls for a while (2). Literacy depends on education, which the passage treats as a separate need (1), and nothing says population growth will quickly stabilise (3). Hence 2 only, (b).
+
+Q 44 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The demographic dividend, which has begun in India and is expected to last another few decades, is a great window of opportunity. The demographic dividend is basically a swelling in the working age population, which conversely means that the relative ratio of very young and very old will, for a while, be on the decline. From the experience of Ireland and China, we know that this can be a source of energy and an engine of economic growth. The demographic dividend tends to raise a nation's savings rate since in any nation, it is the working age population that is the main saver. And since the savings rate is an important driver of growth, this should help elevate our growth rate. However, the benefits of demographic dividend depend on the quality of the working age population. And this implies bringing back the importance of education, acquisition of skills and human capital.
+With reference to the passage, which of the following inferences can be drawn?
+1. Demographic dividend is an essential condition for a country to rapidly increase its economic growth rate.
+2. Promotion of higher education is an essential condition for a country for its rapid economic growth.
+Select the correct answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 4
+~ The passage says the dividend "can be" an engine of growth, not that it is an essential condition for rapid growth (1). It stresses education, skills and human capital in general for reaping the dividend, not higher education as an essential condition for rapid growth (2). Neither inference follows, (d).
+
+Q 45 | qa | Arithmetic
+Five friends P, Q, X, Y and Z purchased some notebooks. The relevant information is given below:
+1. Z purchased 8 notebooks more than X did.
+2. P and Q together purchased 21 notebooks.
+3. Q purchased 5 notebooks less than P did.
+4. X and Y together purchased 28 notebooks.
+5. P purchased 5 notebooks more than X did.
+If each notebook is priced ₹40, then what is the total cost of all the notebooks?
+(1) ₹2,600
+(2) ₹2,400
+(3) ₹2,360
+(4) ₹2,320
+= 1
+~ P + Q = 21 and Q = P − 5 give P = 13, Q = 8. Then X = P − 5 = 8, Y = 28 − 8 = 20 and Z = X + 8 = 16. Total notebooks = 13 + 8 + 8 + 20 + 16 = 65, costing 65 × 40 = ₹2,600, (a).
+
+Q 46 | lr | Directions, Clocks & Calendars
+A man started from home at 14:30 hours and drove to village, arriving there when the village clock indicated 15:15 hours. After staying for 25 minutes, he drove back by a different route of length 1.25 times the first route at a rate twice as fast reaching home at 16:00 hours. As compared to the clock at home, the village clock is
+(1) 10 minutes slow
+(2) 5 minutes slow
+(3) 10 minutes fast
+(4) 5 minutes fast
+= 4
+~ Let the outward trip take t minutes. The return route is 1.25 times as long at twice the speed, so it takes 0.625t. By the home clock, 14:30 to 16:00 is 90 minutes = t + 25 + 0.625t, so t = 40. He really reached the village at 15:10, but its clock showed 15:15: it is 5 minutes fast, (d).
+
+Q 47 | qa | Number System
+A person X wants to distribute some pens among six children A, B, C, D, E and F. Suppose A gets twice the number of pens received by B, three times that of C, four times that of D, five times that of E and six times that of F. What is the minimum number of pens X should buy so that the number of pens each one gets is an even number?
+(1) 147
+(2) 150
+(3) 294
+(4) 300
+= 3
+~ A must be a multiple of 2, 3, 4, 5 and 6, i.e. of 60: A = 60k gives B = 30k, C = 20k, D = 15k, E = 12k, F = 10k, total 147k. D = 15k is even only if k is even, so the smallest k is 2, and X must buy 147 × 2 = 294 pens, (c).
+
+Q 48 | qa | Data Interpretation & Sufficiency
+Six persons A, B, C, D, E and F are sitting equidistant from each other around a circular table (facing the centre of the table).
+Consider the Question and two Statements given below:
+Question : Who is sitting on the immediate left of A?
+Statement-1 : B is sitting opposite to C and D is sitting opposite to E.
+Statement-2 : F is sitting on the immediate left of B.
+Which one of the following is correct in respect of the Question and the Statements?
+(1) Statement-1 alone is sufficient to answer the Question
+(2) Statement-2 alone is sufficient to answer the Question
+(3) Both Statement-1 and Statement-2 are sufficient to answer the Question
+(4) Both Statement-1 and Statement-2 are not sufficient to answer the Question
+= 4
+~ Statement 1 fixes three opposite pairs (B–C, D–E and so A–F) but not their order round the table. Statement 2 places F on B's immediate left. Even together, D or E can be on A's immediate left, depending on which of the D–E pair sits where. Not sufficient, (d).
+
+Q 49 | qa | Data Interpretation & Sufficiency
+Consider the Question and two Statements given below:
+Question : What is the age of Manisha?
+Statement-1 : Manisha is 24 years younger than her mother.
+Statement-2 : 5 years later, the ages of Manisha and her mother will be in the ratio 3 : 5.
+Which one of the following is correct in respect of the Question and the Statements?
+(1) Statement-1 alone is sufficient to answer the Question
+(2) Statement-2 alone is sufficient to answer the Question
+(3) Both Statement-1 and Statement-2 are sufficient to answer the Question
+(4) Both Statement-1 and Statement-2 are not sufficient to answer the Question
+= 3
+~ Statement 1 alone gives only the age difference (24 years), and statement 2 alone only a ratio. Together: (M + 5)/(M + 29) = 3/5, so 5M + 25 = 3M + 87 and M = 31. Both are needed, (c).
+
+Q 50 | qa | Data Interpretation & Sufficiency
+Six lectures A, B, C, D, E and F, each of one hour duration, are scheduled between 8:00 a.m. and 2:00 p.m.
+Consider the Question and two Statements given below:
+Question : Which lecture is in the third period?
+Statement-1 : Lecture F is preceded by A and followed by C.
+Statement-2 : There is no lecture after lecture B.
+Which one of the following is correct in respect of the Question and the Statements?
+(1) Statement-1 alone is sufficient to answer the Question
+(2) Statement-2 alone is sufficient to answer the Question
+(3) Both Statement-1 and Statement-2 are sufficient to answer the Question
+(4) Both Statement-1 and Statement-2 are not sufficient to answer the Question
+= 4
+~ Statement 1 says A, F, C come in a row; statement 2 says B is last. Together, the block A-F-C can still start in period 1, 2 or 3 (with D and E in the other free periods), so the third period could hold C, F or A. Not sufficient, (d).
+
+Q 51 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+In an economic organization, allowing mankind to benefit by the productivity of machines should lead to a very good life of leisure, and much leisure is apt to be tedious except to those who have intelligent activities and interests. If a leisured population is to be happy, it must be an educated population, and must be educated with a view to enjoyment as well as to the direct usefulness of technical knowledge.
+Which of the following statements best reflects the underlying tone of the passage?
+(1) Only an educated population can best make use of the benefits of economic progress.
+(2) All economic development should be aimed at the creation of leisure.
+(3) An increase in the educated population of a country leads to an increase in the happiness of its people.
+(4) Use of machines should be encouraged in order to create a large leisured population.
+= 1
+~ Machines can give mankind much leisure, but leisure is tedious except to those with intelligent interests, so a leisured population must be educated to be happy. The underlying tone is that only an educated population can make the best use of the benefits of economic progress, (a). The passage does not make leisure the aim of all development (b), promise that more education means more happiness (c), or urge more machines (d).
+
+Q 52 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+If presents bring less thrill now that we are grown up, perhaps it is because we have too much already; or perhaps it is because we have lost the fullness of the joy of giving, and with it the fullness of the joy of receiving. Children's fears are poignant, their miseries are acute, but they do not look too forward nor too far backward. Their joys are clear and complete, because they have not yet learnt always to add 'but' to every proposition. Perhaps we are too cautious, too anxious, too sceptical. Perhaps some of our cares would shrink if we thought less about them and entered with more single-minded enjoyment into the happiness that come our way.
+With reference to the passage, which one of the following statements is correct?
+(1) It is not possible for adults to feel thrilled by presents.
+(2) There can be more than one reason why adults feel less thrilled by presents.
+(3) The author does not know why adults feel less thrilled by presents.
+(4) Adults have less capacity to feel the joy of loving or being loved.
+= 2
+~ The author offers two possible reasons why grown-ups get less thrill from presents ("perhaps... we have too much already; or perhaps... we have lost the fullness of the joy of giving"). So there can be more than one reason, (b). Option (a) is too absolute, (c) misreads the tentative tone, and (d) is not discussed.
+
+Q 53 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+If presents bring less thrill now that we are grown up, perhaps it is because we have too much already; or perhaps it is because we have lost the fullness of the joy of giving, and with it the fullness of the joy of receiving. Children's fears are poignant, their miseries are acute, but they do not look too forward nor too far backward. Their joys are clear and complete, because they have not yet learnt always to add 'but' to every proposition. Perhaps we are too cautious, too anxious, too sceptical. Perhaps some of our cares would shrink if we thought less about them and entered with more single-minded enjoyment into the happiness that come our way.
+The author of the passage is against
+(1) worrying too much about the past and future
+(2) being in the habit of thinking about presents
+(3) not being thrilled by new things
+(4) giving and receiving joy only partially
+= 1
+~ Children's joys are complete because they do not look too far forward or backward, while adults are too cautious, anxious and sceptical; the author suggests our cares would shrink if we thought less about them. So he is against worrying too much about the past and the future, (a).
+
+Q 54 | qa | Number System
+Let A, B and C represent distinct non-zero digits. Suppose x is the sum of all possible 3-digit numbers formed by A, B and C without repetition.
+Consider the following statements:
+1. The 4-digit least value of x is 1332.
+2. The 3-digit greatest value of x is 888.
+Which of the above statements is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ The six numbers from A, B, C use each digit twice in each place, so x = 222(A + B + C). The smallest sum of three distinct non-zero digits is 1 + 2 + 3 = 6, giving x = 1332, the least value, which is 4-digit (1). A 3-digit x needs A + B + C ≤ 4, which is impossible, so no 3-digit value (let alone 888) exists (2). Hence 1 only, (a).
+
+Q 55 | qa | Permutations, Combinations & Probability
+There is a numeric lock which has a 3-digit PIN. The PIN contains digits 1 to 7. There is no repetition of digits.
+The digits in the PIN from left to right are in decreasing order. Any two digits in the PIN differ by at least 2. How many maximum attempts does one need to find out the PIN with certainty?
+(1) 6
+(2) 8
+(3) 10
+(4) 12
+= 3
+~ Once three digits are chosen, their decreasing order is fixed, so we only count choices of 3 digits from 1 to 7 with no two consecutive. That number is C(7 − 3 + 1, 3) = C(5, 3) = 10 (e.g. 531, 641, 642, ..., 753). At most 10 attempts are needed, (c).
+
+Q 56 | qa | Geometry & Mensuration
+There are eight equidistant points on a circle. How many right-angled triangles can be drawn using these points as vertices and taking the diameter as one side of the triangle?
+(1) 24
+(2) 16
+(3) 12
+(4) 8
+= 1
+~ Eight equally spaced points form 4 diameters. A triangle with a diameter as one side is right-angled (angle in a semicircle), and the third vertex can be any of the other 6 points. So 4 × 6 = 24 triangles, (a).
+
+Q 57 | qa | Arithmetic
+24 men and 12 women can do a piece of work in 30 days. In how many days can 12 men and 24 women do the same piece of work?
+(1) 30 days
+(2) More than 30 days
+(3) Less than 30 days or more than 30 days
+(4) Data is inadequate to draw any conclusion
+= 4
+~ The answer depends on how a man's work rate compares with a woman's, which is not given. If men work faster, 12 men and 24 women take longer than 30 days; if women work faster, less; if equal, exactly 30. The data are inadequate, (d).
+
+Q 58 | qa | Number System
+What is the remainder when 91 × 92 × 93 × 94 × 95 × 96 × 97 × 98 × 99 is divided by 1261?
+(1) 3
+(2) 2
+(3) 1
+(4) 0
+= 4
+~ 1261 = 13 × 97. The product contains 91 = 7 × 13 and 97, so it is divisible by 13 × 97 = 1261. Remainder 0, (d).
+
+Q 59 | qa | Geometry & Mensuration
+Consider the following statements in respect of a rectangular sheet of length 20 cm and breadth 8 cm:
+1. It is possible to cut the sheet exactly into 4 square sheets.
+2. It is possible to cut the sheet into 10 triangular sheets of equal area.
+Which of the above statements is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ 1: cut two 8 × 8 squares from the 20 × 8 sheet; the leftover 4 × 8 strip gives two 4 × 4 squares: 4 squares in all. 2: cut the sheet into five 4 × 8 rectangles and each along a diagonal: 10 triangles of equal area. Both are possible, (c).
+
+Q 60 | qa | Arithmetic
+When 70% of a number x is added to another number y, the sum becomes 165% of the value of y. When 60% of the number x is added to another number z, then the sum becomes 165% of the value of z. Which one of the following is correct?
+(1) z < x < y
+(2) x < y < z
+(3) y < x < z
+(4) z < y < x
+= 1
+~ 0.7x + y = 1.65y gives y = 0.7x/0.65 = 14x/13, which is more than x. 0.6x + z = 1.65z gives z = 0.6x/0.65 = 12x/13, which is less than x. So z < x < y, (a).
+
+Q 61 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The majority of people who fail to accumulate money sufficient for their needs, are generally, easily influenced by the opinions of others. They permit the newspapers and the gossiping neighbours to do their thinking for them. Opinions are the cheapest commodities on the earth. Everyone has a flock of opinions ready to be wished upon by anyone who will accept them. If you are influenced by opinions when you reach decisions, you will not succeed in any undertaking.
+Which one of the following is implied by the passage?
+(1) Most of the people do not accumulate money for their needs.
+(2) Most of the people never fail to accumulate money for their needs.
+(3) There are people who fail to accumulate money for their needs.
+(4) There is no need to accumulate money.
+= 3
+~ The opening line, "The majority of people who fail to accumulate money sufficient for their needs...", takes for granted that such people exist. So the passage implies there are people who fail to accumulate money for their needs, (c). It does not say most people fail (a) or never fail (b), and (d) is not suggested.
+
+Q 62 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+The majority of people who fail to accumulate money sufficient for their needs, are generally, easily influenced by the opinions of others. They permit the newspapers and the gossiping neighbours to do their thinking for them. Opinions are the cheapest commodities on the earth. Everyone has a flock of opinions ready to be wished upon by anyone who will accept them. If you are influenced by opinions when you reach decisions, you will not succeed in any undertaking.
+What is the main idea of the passage?
+(1) People should not be influenced by the opinions of others.
+(2) People should accumulate as much money as they can.
+(3) People should neither give nor accept the opinions.
+(4) People will succeed in any undertaking if they do not accept any opinion at all.
+= 1
+~ The passage ends with its main point: if you are influenced by others' opinions when you reach decisions, you will not succeed in any undertaking. So people should not be influenced by the opinions of others, (a). It does not urge piling up money (b), giving no opinions (c), or rejecting every opinion (d).
+
+Q 63 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+"The social order is a sacred right which is the basis of all other rights. Nevertheless, this right does not come from nature, and must therefore be founded on conventions."
+With reference to the above passage, which of the following statements is/are correct?
+1. Conventions are the sources of rights of man.
+2. Rights of man can be exercised only when there is a social order.
+Select the correct answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ The social order is the basis of all other rights, and this right is founded on conventions, not nature. So conventions are the source of man's rights (1), and since all rights rest on the social order, they can be exercised only where a social order exists (2). Both are correct, (c).
+
+Q 64 | qa | Arithmetic
+Two candidates X and Y contested an election. 80% of voters cast their vote and there were no invalid votes. There was no NOTA (None of the above) option.
+X got 56% of the votes cast and won by 1440 votes. What is the total number of voters in the voters list?
+(1) 15000
+(2) 12000
+(3) 9600
+(4) 5000
+= 1
+~ X got 56% and Y 44% of the votes cast, so the margin is 12% of votes cast = 1440, i.e. 12000 votes were cast. Since 80% of voters voted, the voters' list has 12000/0.8 = 15000 names, (a).
+
+Q 65 | qa | Number System
+What is the smallest number greater than 1000 that when divided by any one of the numbers 6, 9, 12, 15, 18 leaves a remainder of 3?
+(1) 1063
+(2) 1073
+(3) 1083
+(4) 1183
+= 3
+~ LCM(6, 9, 12, 15, 18) = 180. Numbers leaving remainder 3 are 180k + 3; the smallest above 1000 is 180 × 6 + 3 = 1083, (c).
+
+Q 66 | qa | Number System
+Let p be a two-digit number and q be the number consisting of same digits written in reverse order. If p × q = 2430, then what is the difference between p and q?
+(1) 45
+(2) 27
+(3) 18
+(4) 9
+= 4
+~ 2430 = 45 × 54, and 45 and 54 are reverses of each other, so p and q are 45 and 54. Their difference is 9, (d).
+
+Q 67 | qa | Number System
+Consider the following statements in respect of two natural numbers p and q such that p is a prime number and q is a composite number:
+1. p × q can be an odd number.
+2. q/p can be a prime number.
+3. p + q can be a prime number.
+Which of the above statements are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ 1: p = 3, q = 9 gives pq = 27, odd. 2: p = 2, q = 6 gives q/p = 3, prime. 3: p = 2, q = 9 gives p + q = 11, prime. Each can happen, so all three are correct, (d).
+
+Q 68 | lr | Directions, Clocks & Calendars
+Consider the following statements:
+1. Between 3:16 p.m. and 3:17 p.m., both hour hand and minute hand coincide.
+2. Between 4:58 p.m. and 4:59 p.m., both minute hand and second hand coincide.
+Which of the above statements is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ 1: after 3:00 the hands coincide when the minute hand gains 90° at 5.5° per minute, i.e. after 90/5.5 = 16 4/11 minutes, at about 3:16:22, which lies between 3:16 and 3:17. 2: the second hand passes the minute hand once every minute; at 4:58 the minute hand is just past the 58-minute mark, and the second hand reaches it about 59 seconds later, still before 4:59. Both are correct, (c).
+
+Q 69 | qa | Arithmetic
+There are two containers X and Y.
+X contains 100 ml of milk and Y contains 100 ml of water. 20 ml of milk from X is transferred to Y. After mixing well, 20 ml of the mixture in Y is transferred back to X. If m denotes the proportion of milk in X and n denotes the proportion of water in Y, then which one of the following is correct?
+(1) m = n
+(2) m > n
+(3) m < n
+(4) Cannot be determined due to insufficient data
+= 1
+~ After the first transfer Y has 20 ml milk and 100 ml water. 20 ml of this (1/6 of it) goes back: 10/3 ml milk and 50/3 ml water. X now has 80 + 10/3 = 250/3 ml milk in 100 ml, so m = 5/6. Y keeps 100 − 50/3 = 250/3 ml water in 100 ml, so n = 5/6. Hence m = n, (a).
+
+Q 70 | qa | Data Interpretation & Sufficiency
+A pie chart gives the expenditure on five different items A, B, C, D and E in a household. If B, C, D and E correspond to 90°, 50°, 45° and 75° respectively, then what is the percentage of expenditure on item A?
+(1) 112/9
+(2) 125/6
+(3) 155/9
+(4) 250/9
+= 4
+~ A's angle is 360° − (90° + 50° + 45° + 75°) = 100°, so its share is 100/360 × 100 = 250/9 %, (d).
+
+Q 71 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+To encourage research is one of the functions of a university. Contemporary universities have encouraged research, not only in those cases where research is necessary, but on all sorts of entirely unprofitable subjects as well. Scientific research is probably never completely valueless. However silly and insignificant it may seem, however mechanical and unintelligent the labours of the researchers, there is always a chance that the results may be of value to the investigator of talent, who can use the facts collected for him by uninspired but industrious researchers as the basis of some fruitful generalization. But where research is not original, but consists in the mere rearrangement of existing materials, where its object is not scientific but literary or historical, then there is a risk of the whole business becoming merely futile.
+The author's assumption about scientific research is that
+(1) it is never very valuable
+(2) it is sometimes very valuable
+(3) it is never without some value
+(4) it is always very valuable
+= 3
+~ The author says scientific research is "probably never completely valueless": however silly it seems, its results may be of value to a talented investigator. So his assumption is that it is never without some value, (c). He does not claim it is always very valuable (d) or only sometimes so (b).
+
+Q 72 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+To encourage research is one of the functions of a university. Contemporary universities have encouraged research, not only in those cases where research is necessary, but on all sorts of entirely unprofitable subjects as well. Scientific research is probably never completely valueless. However silly and insignificant it may seem, however mechanical and unintelligent the labours of the researchers, there is always a chance that the results may be of value to the investigator of talent, who can use the facts collected for him by uninspired but industrious researchers as the basis of some fruitful generalization. But where research is not original, but consists in the mere rearrangement of existing materials, where its object is not scientific but literary or historical, then there is a risk of the whole business becoming merely futile.
+According to the author
+(1) not many research results can be of value to an intelligent investigator
+(2) a research result is always valuable to an intelligent investigator
+(3) any research result can be of value to an intelligent investigator
+(4) a research result must always be of some value to an intelligent investigator
+= 3
+~ The author says there is "always a chance" that research results may be of value to an investigator of talent. So any research result can be of value to an intelligent investigator, (c). Options (b) and (d) turn "can be" into "always is/must be", and (a) contradicts the passage.
+
+Q 73 | rc | Passages
+Read the following passage and answer the question that follows. Your answer should be based on the passage only.
+How best can the problems of floods and droughts be addressed so that the losses are minimal and the system becomes resilient? In this context, one important point that needs to be noted is that India gets 'too much' water (about 75% of annual precipitation) during 120 days (June to September) and 'too little' for the remaining 245 days. This skewed water availability has to be managed and regulated for its consumption throughout the year.
+Which one of the following best reflects the practical, rational and lasting solution?
+(1) Constructing huge concrete storage tanks and canals across the country
+(2) Changing the cropping patterns and farming practices
+(3) Interlinking of rivers across the country
+(4) Buffer stocking of water through dams and recharging aquifers
+= 4
+~ India gets too much water in 120 days and too little in the other 245, so the skewed supply must be stored and regulated for use through the year. Buffer stocking in dams and recharging aquifers does exactly that, (d). Concrete tanks across the country (a) are impractical, and changing cropping patterns (b) or interlinking rivers (c) do not address storing the monsoon surplus for the dry months.
+
+Q 74 | qa | Number System
+If 15 × 14 × 13 × ... × 3 × 2 × 1 = 3ᵐ × n where m and n are positive integers, then what is the maximum value of m?
+(1) 7
+(2) 6
+(3) 5
+(4) 4
+= 2
+~ The highest power of 3 dividing 15! is ⌊15/3⌋ + ⌊15/9⌋ = 5 + 1 = 6. So the maximum value of m is 6, (b).
+
+Q 75 | lr | Series & Patterns
+What is the value of X in the sequence 2, 12, 36, 80, 150, X?
+(1) 248
+(2) 252
+(3) 258
+(4) 262
+= 2
+~ The terms are n³ + n²: 1 + 1 = 2, 8 + 4 = 12, 27 + 9 = 36, 64 + 16 = 80, 125 + 25 = 150. The next is 216 + 36 = 252, (b).
+
+Q 76 | qa | Permutations, Combinations & Probability
+One non-zero digit, one vowel and one consonant from English alphabet (in capital) are to be used in forming passwords, such that each password has to start with a vowel and end with a consonant. How many such passwords can be generated?
+(1) 105
+(2) 525
+(3) 945
+(4) 1050
+= 3
+~ The password is vowel, then digit, then consonant (it must start with a vowel and end with a consonant). That gives 5 vowels × 9 non-zero digits × 21 consonants = 945, (c).
+
+Q 77 | qa | Permutations, Combinations & Probability
+There are 9 cups placed on a table arranged in equal number of rows and columns out of which 6 cups contain coffee and 3 cups contain tea. In how many ways can they be arranged so that each row should contain at least one cup of coffee?
+(1) 18
+(2) 27
+(3) 54
+(4) 81
+= 4
+~ The 9 cups form a 3 × 3 grid. Choosing positions for the 3 tea cups gives C(9, 3) = 84 arrangements. A row with no coffee would hold all 3 tea cups, which happens in 3 ways (one per row). So 84 − 3 = 81, (d).
+
+Q 78 | qa | Algebra
+The sum of three consecutive integers is equal to their product. How many such possibilities are there?
+(1) Only one
+(2) Only two
+(3) Only three
+(4) No such possibility is there
+= 3
+~ For n − 1, n, n + 1: the sum is 3n and the product is n(n² − 1). Equality gives n = 0 or n² = 4, i.e. n = 0, 2 or −2: the triples (−1, 0, 1), (1, 2, 3) and (−3, −2, −1). Three possibilities, (c).
+
+Q 79 | qa | Permutations, Combinations & Probability
+What is the number of numbers of the form 0.XY, where X and Y are distinct non-zero digits?
+(1) 72
+(2) 81
+(3) 90
+(4) 100
+= 1
+~ X can be any of the 9 non-zero digits and Y any of the other 8: 9 × 8 = 72 numbers of the form 0.XY, (a).
+
+Q 80 | qa | Arithmetic
+The average weight of A, B, C is 40 kg, the average weight of B, D, E is 42 kg and the weight of F is equal to that of B. What is the average weight of A, B, C, D, E and F?
+(1) 40.5 kg
+(2) 40.8 kg
+(3) 41 kg
+(4) Cannot be determined as data is inadequate
+= 3
+~ A + B + C = 120 and B + D + E = 126, with F = B. Then A + B + C + D + E + F = 120 + (D + E) + B = 120 + (126 − B) + B = 246, so the average of the six is 246/6 = 41 kg, (c).

@@ -1,0 +1,1209 @@
+# UPSC Civil Services (Preliminary) Examination 2022, General Studies Paper I (Series A, booklet VGYH-U-FGT), held 5 June 2022.
+# Source: the official UPSC question paper; answers from UPSC's official (final) answer key (published July 2023). Explanations by Learn with Anil.
+# Dropped by UPSC: 61
+
+Q 1 | eco | External Sector & Trade
+"Rapid Financing Instrument" and "Rapid Credit Facility" are related to the provisions of lending by which one of the following?
+(1) Asian Development Bank
+(2) International Monetary Fund
+(3) United Nations Environment Programme Finance Initiative
+(4) World Bank
+= 2
+~ The Rapid Financing Instrument (RFI) and the Rapid Credit Facility (RCF) are emergency lending windows of the International Monetary Fund. The RFI is open to all members, and the RCF gives concessional loans to low-income countries facing urgent balance-of-payments needs, as during the COVID-19 shock. Hence (b).
+
+Q 2 | eco | External Sector & Trade
+With reference to the Indian economy, consider the following statements:
+1. An increase in Nominal Effective Exchange Rate (NEER) indicates the appreciation of rupee.
+2. An increase in the Real Effective Exchange Rate (REER) indicates an improvement in trade competitiveness.
+3. An increasing trend in domestic inflation relative to inflation in other countries is likely to cause an increasing divergence between NEER and REER.
+Which of the above statements are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 3
+~ 1 is correct: a rise in NEER means the rupee buys more of a basket of foreign currencies, i.e. it has appreciated. 2 is wrong: a rise in REER means Indian goods have become relatively dearer abroad, a loss (not an improvement) in trade competitiveness. 3 is correct: REER is NEER adjusted for relative prices, so higher domestic inflation than abroad pushes REER above NEER and widens the gap. Hence 1 and 3, (c).
+
+Q 3 | eco | Money, Banking & Inflation
+With reference to the Indian economy, consider the following statements:
+1. If the inflation is too high, Reserve Bank of India (RBI) is likely to buy government securities.
+2. If the rupee is rapidly depreciating, RBI is likely to sell dollars in the market.
+3. If interest rates in the USA or European Union were to fall, that is likely to induce RBI to buy dollars.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ 1 is wrong: to fight high inflation the RBI drains liquidity, so it sells (not buys) government securities in open market operations. 2 is correct: when the rupee falls fast, the RBI sells dollars from its reserves to support it. 3 is correct: lower interest rates in the USA or EU push capital towards India, the rupee tends to appreciate, and the RBI buys dollars to absorb the inflow. Hence 2 and 3, (b).
+
+Q 4 | eco | External Sector & Trade
+With reference to the "G20 Common Framework", consider the following statements:
+1. It is an initiative endorsed by the G20 together with the Paris Club.
+2. It is an initiative to support Low Income Countries with unsustainable debt.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ The Common Framework for Debt Treatments beyond the DSSI was agreed by the G20 in November 2020 and endorsed together with the Paris Club of official creditors. Its purpose is to support low-income countries with unsustainable debt through coordinated, case-by-case restructuring. Both statements are correct, (c).
+
+Q 5 | eco | Public Finance & Taxation
+With reference to the Indian economy, what are the advantages of "Inflation-Indexed Bonds (IIBs)"?
+1. Government can reduce the coupon rates on its borrowing by way of IIBs.
+2. IIBs provide protection to the investors from uncertainty regarding inflation.
+3. The interest received as well as capital gains on IIBs are not taxable.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 1
+~ 1 is correct: because IIBs protect investors from inflation, they accept a lower coupon, which cuts the government's borrowing cost. 2 is correct: the principal and/or interest is indexed to inflation, removing inflation uncertainty for investors. 3 is wrong: interest and capital gains on IIBs are taxable under the Income Tax Act; there is no special exemption. Hence 1 and 2, (a).
+
+Q 6 | eco | External Sector & Trade
+With reference to foreign-owned e-commerce firms operating in India, which of the following statements is/are correct?
+1. They can sell their own goods in addition to offering their platforms as market-places.
+2. The degree to which they can own big sellers on their platforms is limited.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 4
+~ Under India's FDI policy, a foreign-owned e-commerce entity may run only a marketplace model; the inventory model, in which it sells its own goods, is not allowed, so 1 is wrong. Statement 2 is also wrong: the policy does not merely limit ownership of big sellers; an entity in which the marketplace or its group companies hold equity, or whose inventory it controls, cannot sell on that platform at all. Neither, (d).
+
+Q 7 | eco | Growth & National Income
+Which of the following activities constitute real sector in the economy?
+1. Farmers harvesting their crops
+2. Textile mills converting raw cotton into fabrics
+3. A commercial bank lending money to a trading company
+4. A corporate body issuing Rupee Denominated Bonds overseas
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 2, 3 and 4 only
+(3) 1, 3 and 4 only
+(4) 1, 2, 3 and 4
+= 1
+~ The real sector is the part of the economy that produces goods and services, such as agriculture and manufacturing. Farmers harvesting crops and textile mills turning cotton into fabric are real-sector activities. A bank lending money and a company issuing rupee-denominated (masala) bonds abroad are financial-sector activities. Hence 1 and 2 only, (a).
+
+Q 8 | eco | Public Finance & Taxation
+Which one of the following situations best reflects "Indirect Transfers" often talked about in media recently with reference to India?
+(1) An Indian company investing in a foreign enterprise and paying taxes to the foreign country on the profits arising out of its investment
+(2) A foreign company investing in India and paying taxes to the country of its base on the profits arising out of its investment
+(3) An Indian company purchases tangible assets in a foreign country and sells such assets after their value increases and transfers the proceeds to India
+(4) A foreign company transfers shares and such shares derive their substantial value from assets located in India
+= 4
+~ An "indirect transfer" is the transfer of shares of a foreign company whose value comes substantially from assets located in India; India taxes such transfers (the issue behind the Vodafone case and the 2012 retrospective amendment, withdrawn in 2021). The other options describe ordinary cross-border investment or asset sales. Hence (d).
+
+Q 9 | eco | Public Finance & Taxation
+With reference to the expenditure made by an organisation or a company, which of the following statements is/are correct?
+1. Acquiring new technology is capital expenditure.
+2. Debt financing is considered capital expenditure, while equity financing is considered revenue expenditure.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ 1 is correct: buying new technology creates a long-lasting asset, so it is capital expenditure. 2 is wrong: debt and equity are ways of raising money (sources of finance), not kinds of expenditure, so neither is classed as capital or revenue expenditure. Hence 1 only, (a).
+
+Q 10 | eco | Public Finance & Taxation
+With reference to the Indian economy, consider the following statements:
+1. A share of the household financial savings goes towards government borrowings.
+2. Dated securities issued at market-related rates in auctions form a large component of internal debt.
+Which of the above statements is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ 1 is correct: households' financial savings reach the government through banks, insurance and provident funds that hold government securities, and through small savings schemes. 2 is correct: dated securities sold at market-related rates in auctions make up the largest part of the Centre's internal debt. Both, (c).
+
+Q 11 | pol | Judiciary
+Consider the following statements:
+1. Pursuant to the report of H.N. Sanyal Committee, the Contempt of Courts Act, 1971 was passed.
+2. The Constitution of India empowers the Supreme Court and the High Courts to punish for contempt of themselves.
+3. The Constitution of India defines Civil Contempt and Criminal Contempt.
+4. In India, the Parliament is vested with the powers to make laws on Contempt of Court.
+Which of the statements given above is/are correct?
+(1) 1 and 2 only
+(2) 1, 2 and 4
+(3) 3 and 4 only
+(4) 3 only
+= 2
+~ 1 is correct: the Contempt of Courts Act, 1971 followed the report of the H.N. Sanyal Committee (1963). 2 is correct: Articles 129 and 215 make the Supreme Court and High Courts courts of record with power to punish for contempt of themselves. 3 is wrong: civil and criminal contempt are defined in the 1971 Act, not in the Constitution. 4 is correct: Parliament can legislate on contempt of court (Union List entry 77, Concurrent List entry 14). Hence 1, 2 and 4, (b).
+
+Q 12 | pol | Judiciary
+With reference to India, consider the following statements:
+1. Government law officers and legal firms are recognised as advocates, but corporate lawyers and patent attorneys are excluded from recognition as advocates.
+2. Bar Councils have the power to lay down the rules relating to legal education and recognition of law colleges.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ 1 is wrong: under the Advocates Act, 1961 only individuals enrolled with a State Bar Council are advocates; the statement's split, recognising legal firms but excluding corporate lawyers and patent attorneys, is not what the law says. 2 is correct: the Bar Council of India lays down standards of legal education and recognises universities and law colleges whose degrees qualify for enrolment. Hence 2 only, (b).
+
+Q 13 | pol | Union & State Government
+Consider the following statements:
+1. A bill amending the Constitution requires a prior recommendation of the President of India.
+2. When a Constitution Amendment Bill is presented to the President of India, it is obligatory for the President of India to give his/her assent.
+3. A Constitution Amendment Bill must be passed by both the Lok Sabha and the Rajya Sabha by a special majority and there is no provision for joint sitting.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ 1 is wrong: a Constitution Amendment Bill can be introduced in either House without the President's prior recommendation. 2 is correct: since the 24th Amendment (1971), the President must give assent to such a Bill. 3 is correct: under Article 368 it must pass each House by a special majority, and there is no provision for a joint sitting. Hence 2 and 3, (b).
+
+Q 14 | pol | Union & State Government
+Consider the following statements:
+1. The Constitution of India classifies the ministers into four ranks viz. Cabinet Minister, Minister of State with Independent Charge, Minister of State and Deputy Minister.
+2. The total number of ministers in the Union Government, including the Prime Minister, shall not exceed 15 percent of the total number of members in the Lok Sabha.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ 1 is wrong: the Constitution does not classify ministers into ranks; the categories of Cabinet Minister, Minister of State and Deputy Minister come from convention and the Salaries and Allowances of Ministers Act. 2 is correct: Article 75(1A), added by the 91st Amendment (2003), caps the Council of Ministers, including the PM, at 15% of the total strength of the Lok Sabha. Hence 2 only, (b).
+
+Q 15 | pol | Union & State Government
+Which of the following is/are the exclusive power(s) of Lok Sabha?
+1. To ratify the declaration of Emergency
+2. To pass a motion of no-confidence against the Council of Ministers
+3. To impeach the President of India
+Select the correct answer using the code given below:
+(1) 1 and 2
+(2) 2 only
+(3) 1 and 3
+(4) 3 only
+= 2
+~ An Emergency proclamation must be approved by both Houses, and the President is impeached by both Houses, so 1 and 3 are not exclusive to the Lok Sabha. The Council of Ministers is collectively responsible to the Lok Sabha (Article 75(3)), so only the Lok Sabha can pass a no-confidence motion. Hence 2 only, (b).
+
+Q 16 | pol | Union & State Government
+With reference to anti-defection law in India, consider the following statements:
+1. The law specifies that a nominated legislator cannot join any political party within six months of being appointed to the House.
+2. The law does not provide any time-frame within which the presiding officer has to decide a defection case.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ 1 is wrong: under the Tenth Schedule a nominated member may join a political party within six months of taking his seat; he is disqualified only if he joins one after that. 2 is correct: the law sets no time limit for the presiding officer to decide a defection petition, a gap the Supreme Court has flagged (e.g. Keisham Meghachandra Singh, 2020). Hence 2 only, (b).
+
+Q 17 | pol | Constitutional & Statutory Bodies
+Consider the following statements:
+1. Attorney General of India and Solicitor General of India are the only officers of the Government who are allowed to participate in the meetings of the Parliament of India.
+2. According to the Constitution of India, the Attorney General of India submits his resignation when the Government which appointed him resigns.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 4
+~ 1 is wrong: Article 88 gives the right to speak in and take part in Parliament's proceedings (without voting) to ministers and the Attorney General; the Solicitor General has no such constitutional right. 2 is wrong: the Constitution says the Attorney General holds office during the pleasure of the President; resigning with the government is only a convention. Neither, (d).
+
+Q 18 | pol | Judiciary
+With reference to the writs issued by the Courts in India, consider the following statements:
+1. Mandamus will not lie against a private organisation unless it is entrusted with a public duty.
+2. Mandamus will not lie against a Company even though it may be a Government Company.
+3. Any public minded person can be a petitioner to move the Court to obtain the writ of Quo Warranto.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Mandamus enforces a public duty, so it does not lie against a private body unless a public duty is entrusted to it (1). The courts have held that it does not lie against a company, even a government company, which is a separate legal entity (Praga Tools Corporation v. C.A. Imanual, 1969) (2). Quo warranto, which tests a person's right to hold a public office, can be sought by any member of the public, not only an aggrieved person (3). UPSC's key treats all three as correct, (d).
+
+Q 19 | sci | IT, Computers & Emerging Technology
+With reference to Ayushman Bharat Digital Mission, consider the following statements:
+1. Private and public hospitals must adopt it.
+2. As it aims to achieve universal health coverage, every citizen of India should be part of it ultimately.
+3. It has seamless portability across the country.
+Which of the statements given above is/are correct?
+(1) 1 and 2 only
+(2) 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ The Ayushman Bharat Digital Mission is voluntary: hospitals are not forced to adopt it, and citizens need not create an ABHA (health ID), so 1 and 2 are wrong. Its digital health IDs and records are designed to work seamlessly across the country, so 3 is correct. Hence 3 only, (b).
+
+Q 20 | pol | Union & State Government
+With reference to Deputy Speaker of Lok Sabha, consider the following statements:
+1. As per the Rules of Procedure and Conduct of Business in Lok Sabha, the election of Deputy Speaker shall be held on such date as the Speaker may fix.
+2. There is a mandatory provision that the election of a candidate as Deputy Speaker of Lok Sabha shall be from either the principal opposition party or the ruling party.
+3. The Deputy Speaker has the same power as of the Speaker when presiding over the sitting of the House and no appeal lies against his rulings.
+4. The well established parliamentary practice regarding the appointment of Deputy Speaker is that the motion is moved by the Speaker and duly seconded by the Prime Minister.
+Which of the statements given above are correct?
+(1) 1 and 3 only
+(2) 1, 2 and 3
+(3) 3 and 4 only
+(4) 2 and 4 only
+= 1
+~ 1 is correct: under Rule 8 of the Lok Sabha Rules, the Deputy Speaker is elected on a date fixed by the Speaker. 2 is wrong: no rule requires the Deputy Speaker to come from the main opposition or ruling party; giving the post to the opposition is only a convention. 3 is correct: while presiding, the Deputy Speaker has the Speaker's powers and no appeal lies against his rulings. 4 is wrong: the motion is moved by a member and seconded by another, not by the Speaker. Hence 1 and 3, (a).
+
+Q 21 | env | Climate Change & Pollution
+Among the following crops, which one is the most important anthropogenic source of both methane and nitrous oxide?
+(1) Cotton
+(2) Rice
+(3) Sugarcane
+(4) Wheat
+= 2
+~ Flooded paddy fields release methane from anaerobic decomposition, and the nitrogen fertiliser used on rice releases nitrous oxide. Rice is therefore the crop most important as an anthropogenic source of both gases, (b).
+
+Q 22 | eco | Agriculture & Industry
+"System of Rice Intensification" of cultivation, in which alternate wetting and drying of rice fields is practised, results in:
+1. Reduced seed requirement
+2. Reduced methane production
+3. Reduced electricity consumption
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ The System of Rice Intensification transplants young seedlings singly and widely spaced, so it needs far less seed (1). Alternate wetting and drying keeps the soil aerobic for long periods, which cuts methane emission (2). Using less irrigation water means less pumping and so less electricity (3). All three, (d).
+
+Q 23 | geo | World Geography
+Which one of the following lakes of West Africa has become dry and turned into a desert?
+(1) Lake Victoria
+(2) Lake Faguibine
+(3) Lake Oguta
+(4) Lake Volta
+= 2
+~ Lake Faguibine in northern Mali, once one of the largest lakes in West Africa, dried up from the 1970s with drought and reduced Niger floods and has turned largely into desert. Lake Victoria is in East Africa, and Lakes Oguta (Nigeria) and Volta (Ghana) still hold water. Hence (b).
+
+Q 24 | geo | Indian Geography
+Gandikota canyon of South India was created by which one of the following rivers?
+(1) Cauvery
+(2) Manjira
+(3) Pennar
+(4) Tungabhadra
+= 3
+~ Gandikota, often called the Grand Canyon of India, is a gorge cut by the Pennar river through the Erramala hills in the Kadapa district of Andhra Pradesh. Hence (c).
+
+Q 25 | geo | Indian Geography
+Consider the following pairs:
+Peak — Mountains
+1. Namcha Barwa — Garhwal Himalaya
+2. Nanda Devi — Kumaon Himalaya
+3. Nokrek — Sikkim Himalaya
+Which of the pairs given above is/are correctly matched?
+(1) 1 and 2
+(2) 2 only
+(3) 1 and 3
+(4) 3 only
+= 2
+~ Namcha Barwa stands at the eastern end of the Himalaya near the great bend of the Tsangpo (Brahmaputra), not in Garhwal. Nanda Devi is in the Kumaon Himalaya of Uttarakhand. Nokrek is the highest peak of the Garo Hills in Meghalaya, not in Sikkim. Only pair 2 is correct, (b).
+
+Q 26 | geo | World Geography
+The term "Levant" often heard in the news roughly corresponds to which of the following regions?
+(1) Region along the eastern Mediterranean shores
+(2) Region along North African shores stretching from Egypt to Morocco
+(3) Region along Persian Gulf and Horn of Africa
+(4) The entire coastal areas of Mediterranean Sea
+= 1
+~ The Levant is the region along the eastern shores of the Mediterranean, roughly today's Syria, Lebanon, Israel, Palestine and Jordan (often with Cyprus and southern Turkey). Hence (a).
+
+Q 27 | geo | World Geography
+Consider the following countries:
+1. Azerbaijan
+2. Kyrgyzstan
+3. Tajikistan
+4. Turkmenistan
+5. Uzbekistan
+Which of the above have borders with Afghanistan?
+(1) 1, 2 and 5 only
+(2) 1, 2, 3 and 4 only
+(3) 3, 4 and 5 only
+(4) 1, 2, 3, 4 and 5
+= 3
+~ Afghanistan's northern neighbours are Turkmenistan, Uzbekistan and Tajikistan. Kyrgyzstan is separated from it by Tajikistan, and Azerbaijan lies across the Caspian Sea in the Caucasus. Hence 3, 4 and 5 only, (c).
+
+Q 28 | geo | Indian Geography
+With reference to India, consider the following statements:
+1. Monazite is a source of rare earths.
+2. Monazite contains thorium.
+3. Monazite occurs naturally in the entire Indian coastal sands in India.
+4. In India, Government bodies only can process or export monazite.
+Which of the statements given above are correct?
+(1) 1, 2 and 3 only
+(2) 1, 2 and 4 only
+(3) 3 and 4 only
+(4) 1, 2, 3 and 4
+= 2
+~ 1 and 2 are correct: monazite is a phosphate mineral of rare earth elements and contains thorium. 3 is wrong: it occurs in the beach sands of particular stretches (Kerala, Tamil Nadu, Odisha, Andhra Pradesh), not along the entire coast. 4 is correct: because of its thorium, only government bodies such as IREL may mine, process or export monazite. Hence 1, 2 and 4, (b).
+
+Q 29 | geo | Physical Geography
+In the northern hemisphere, the longest day of the year normally occurs in the:
+(1) First half of the month of June
+(2) Second half of the month of June
+(3) First half of the month of July
+(4) Second half of the month of July
+= 2
+~ The northern hemisphere's longest day is the summer solstice, around 21 June, when the Sun is overhead at the Tropic of Cancer. That falls in the second half of June, (b).
+
+Q 30 | env | Biodiversity & Conservation
+Consider the following pairs:
+Wetland/Lake — Location
+1. Hokera Wetland — Punjab
+2. Renuka Wetland — Himachal Pradesh
+3. Rudrasagar Lake — Tripura
+4. Sasthamkotta Lake — Tamil Nadu
+How many pairs given above are correctly matched?
+(1) Only one pair
+(2) Only two pairs
+(3) Only three pairs
+(4) All four pairs
+= 2
+~ Hokera (Hokersar) wetland is near Srinagar in Jammu and Kashmir, not Punjab. Renuka is in Himachal Pradesh and Rudrasagar in Tripura, both correct. Sasthamkotta Lake is in Kollam district, Kerala, not Tamil Nadu. Two pairs, (b).
+
+Q 31 | sci | IT, Computers & Emerging Technology
+Consider the following:
+1. Aarogya Setu
+2. CoWIN
+3. DigiLocker
+4. DIKSHA
+Which of the above are built on top of open-source digital platforms?
+(1) 1 and 2 only
+(2) 2, 3 and 4 only
+(3) 1, 3 and 4 only
+(4) 1, 2, 3 and 4
+= 4
+~ All four are built on open-source digital platforms: Aarogya Setu's code was open-sourced, CoWIN's vaccination certificates are issued on the open-source DIVOC platform, DigiLocker is part of India Stack's open APIs, and DIKSHA is built on the open-source Sunbird platform. Hence (d).
+
+Q 32 | sci | IT, Computers & Emerging Technology
+With reference to Web 3.0, consider the following statements:
+1. Web 3.0 technology enables people to control their own data.
+2. In Web 3.0 world, there can be blockchain based social networks.
+3. Web 3.0 is operated by users collectively rather than a corporation.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Web 3.0 is the idea of a decentralised internet built on blockchains: users control their own data (1), blockchain-based social networks become possible (2), and networks are run collectively by users rather than by a corporation (3). All three, (d).
+
+Q 33 | sci | IT, Computers & Emerging Technology
+With reference to "Software as a Service (SaaS)", consider the following statements:
+1. SaaS buyers can customise the user interface and can change data fields.
+2. SaaS users can access their data through their mobile devices.
+3. Outlook, Hotmail and Yahoo! Mail are forms of SaaS.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ In Software as a Service, applications run on the provider's cloud and are used through a browser or app. Buyers can usually customise the interface and data fields (1), users can reach their data from mobile devices (2), and web mail services such as Outlook, Hotmail and Yahoo! Mail are everyday examples (3). All three, (d).
+
+Q 34 | sci | Space & Defence
+Which one of the following statements best reflects the idea behind the "Fractional Orbital Bombardment System" often talked about in media?
+(1) A hypersonic missile is launched into space to counter the asteroid approaching the Earth and explode it in space.
+(2) A spacecraft lands on another planet after making several orbital motions.
+(3) A missile is put into a stable orbit around the Earth and deorbits over a target on the Earth.
+(4) A spacecraft moves along a comet with the same speed and places a probe on its surface.
+= 3
+~ A Fractional Orbital Bombardment System puts a warhead into a low orbit around the Earth and then de-orbits it over the target, so it can approach from unexpected directions and evade early-warning radars. It was in the news after China's reported hypersonic test in 2021. Hence (c).
+
+Q 35 | sci | IT, Computers & Emerging Technology
+Which one of the following is the context in which the term "qubit" is mentioned?
+(1) Cloud Services
+(2) Quantum Computing
+(3) Visible Light Communication Technologies
+(4) Wireless Communication Technologies
+= 2
+~ A qubit (quantum bit) is the basic unit of information in quantum computing; unlike a classical bit it can exist in a superposition of 0 and 1. Hence (b).
+
+Q 36 | sci | IT, Computers & Emerging Technology
+Consider the following communication technologies:
+1. Closed-circuit Television
+2. Radio Frequency Identification
+3. Wireless Local Area Network
+Which of the above are considered Short-Range devices/technologies?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Short-range devices are low-power radio transmitters that work over short distances. Closed-circuit (wireless) television, RFID tags and readers, and wireless local area networks (Wi-Fi) are all treated as short-range devices, and the Department of Telecommunications has de-licensed bands for such uses. All three, (d).
+
+Q 37 | sci | Biology & Health
+Consider the following statements:
+1. Biofilms can form on medical implants within human tissues.
+2. Biofilms can form on food and food processing surfaces.
+3. Biofilms can exhibit antibiotic resistance.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Biofilms are communities of microbes stuck to a surface in a slimy matrix. They form on medical implants such as catheters and joint replacements (1), on food and food-processing surfaces (2), and the matrix makes them far more resistant to antibiotics (3). All three, (d).
+
+Q 38 | sci | Biology & Health
+Consider the following statements in respect of probiotics:
+1. Probiotics are made of both bacteria and yeast.
+2. The organisms in probiotics are found in foods we ingest but they do not naturally occur in our gut.
+3. Probiotics help in the digestion of milk sugars.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) 1 and 3
+(4) 2 and 3
+= 3
+~ 1 is correct: probiotics include bacteria (Lactobacillus, Bifidobacterium) and yeasts (Saccharomyces boulardii). 2 is wrong: these organisms also live naturally in the human gut. 3 is correct: lactic acid bacteria help digest lactose, the milk sugar. Hence 1 and 3, (c).
+
+Q 39 | sci | Biology & Health
+In the context of vaccines manufactured to prevent COVID-19 pandemic, consider the following statements:
+1. The Serum Institute of India produced COVID-19 vaccine named Covishield using mRNA platform.
+2. Sputnik V vaccine is manufactured using vector based platform.
+3. COVAXIN is an inactivated pathogen based vaccine.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ 1 is wrong: Covishield (the Oxford-AstraZeneca vaccine made by the Serum Institute) uses a chimpanzee adenovirus vector, not an mRNA platform. 2 is correct: Sputnik V uses two human adenovirus vectors. 3 is correct: Covaxin is a whole inactivated virus vaccine. Hence 2 and 3, (b).
+
+Q 40 | sci | Space & Defence
+If a major solar storm (solar flare) reaches the Earth, which of the following are the possible effects on the Earth?
+1. GPS and navigation systems could fail.
+2. Tsunamis could occur at equatorial regions.
+3. Power grids could be damaged.
+4. Intense auroras could occur over much of the Earth.
+5. Forest fires could take place over much of the planet.
+6. Orbits of the satellites could be disturbed.
+7. Shortwave radio communication of the aircraft flying over polar regions could be interrupted.
+Select the correct answer using the code given below:
+(1) 1, 2, 4 and 5 only
+(2) 2, 3, 5, 6 and 7 only
+(3) 1, 3, 4, 6 and 7 only
+(4) 1, 2, 3, 4, 5, 6 and 7
+= 3
+~ A strong solar storm disturbs the ionosphere and the Earth's magnetic field: GPS and navigation can fail (1), induced currents can damage power grids (3), intense auroras appear far from the poles (4), the heated upper atmosphere drags on satellites and shifts their orbits (6), and HF radio on polar flights is blacked out (7). It does not cause tsunamis or forest fires. Hence 1, 3, 4, 6 and 7, (c).
+
+Q 41 | env | Environmental Laws, Bodies & Conventions
+"Climate Action Tracker" which monitors the emission reduction pledges of different countries is a:
+(1) Database created by coalition of research organisations
+(2) Wing of "International Panel of Climate Change"
+(3) Committee under "United Nations Framework Convention on Climate Change"
+(4) Agency promoted and financed by United Nations Environment Programme and World Bank
+= 1
+~ The Climate Action Tracker is an independent scientific analysis produced by research organisations, Climate Analytics and the NewClimate Institute, that tracks countries' climate pledges and actions against the Paris goals. It is not part of the IPCC (whose correct name is the Intergovernmental, not International, Panel) or the UNFCCC, nor a UNEP/World Bank agency. Hence (a).
+
+Q 42 | env | Environmental Laws, Bodies & Conventions
+Consider the following statements:
+1. "The Climate Group" is an international non-profit organization that drives climate action by building large networks and runs them.
+2. The International Energy Agency in partnership with the Climate Group launched a global initiative "EP100".
+3. EP100 brings together leading companies committed to driving innovation in energy efficiency and increasing competitiveness while delivering on emission reduction goals.
+4. Some Indian companies are members of EP100.
+5. The International Energy Agency is the Secretariat to the "Under2 Coalition".
+Which of the statements given above are correct?
+(1) 1, 2, 4 and 5
+(2) 1, 3 and 4 only
+(3) 2, 3 and 5 only
+(4) 1, 2, 3, 4 and 5
+= 2
+~ 1 is correct: The Climate Group is an international non-profit that drives climate action through large networks of businesses and governments. 2 is wrong: EP100 was launched by The Climate Group with the Alliance to Save Energy, not with the International Energy Agency. 3 and 4 are correct: EP100 brings together companies committed to energy productivity, and Indian firms such as Mahindra and Godrej are members. 5 is wrong: The Climate Group, not the IEA, is the Secretariat of the Under2 Coalition. Hence 1, 3 and 4 only, (b).
+
+Q 43 | env | Ecology & Ecosystems
+"If rainforests and tropical forests are the lungs of the Earth, then surely wetlands function as its kidneys." Which one of the following functions of wetlands best reflects the above statement?
+(1) The water cycle in wetlands involves surface runoff, subsoil percolation and evaporation.
+(2) Algae form the nutrient base upon which fish, crustaceans, molluscs, birds, reptiles and mammals thrive.
+(3) Wetlands play a vital role in maintaining sedimentation balance and soil stabilization.
+(4) Aquatic plants absorb heavy metals and excess nutrients.
+= 4
+~ Kidneys filter wastes out of the blood; wetlands do the same for water, as their plants absorb heavy metals and excess nutrients and so purify it. The other options describe the water cycle, food webs and sediment control, which do not match the kidney analogy. Hence (d).
+
+Q 44 | env | Climate Change & Pollution
+In the context of WHO Air Quality Guidelines, consider the following statements:
+1. The 24-hour mean of PM2.5 should not exceed 15 µg/m³ and annual mean of PM2.5 should not exceed 5 µg/m³.
+2. In a year, the highest levels of ozone pollution occur during the periods of inclement weather.
+3. PM10 can penetrate the lung barrier and enter the bloodstream.
+4. Excessive ozone in the air can trigger asthma.
+Which of the statements given above are correct?
+(1) 1, 3 and 4
+(2) 1 and 4 only
+(3) 2, 3 and 4
+(4) 1 and 2 only
+= 2
+~ 1 is correct: WHO's 2021 guidelines set PM2.5 at 15 µg/m³ (24-hour mean) and 5 µg/m³ (annual mean). 2 is wrong: ground-level ozone forms in sunlight, so its highest levels occur in sunny weather, not inclement weather. 3 is wrong: it is the finer PM2.5 that can cross the lung barrier into the bloodstream; PM10 lodges in the airways and lungs. 4 is correct: excess ozone can trigger asthma. Hence 1 and 4 only, (b).
+
+Q 45 | env | Biodiversity & Conservation
+With reference to "Gucchi" sometimes mentioned in the news, consider the following statements:
+1. It is a fungus.
+2. It grows in some Himalayan forest areas.
+3. It is commercially cultivated in the Himalayan foothills of north-eastern India.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 3 only
+(3) 1 and 2
+(4) 2 and 3
+= 3
+~ Gucchi is the morel mushroom (Morchella esculenta), a fungus (1) that grows wild in Himalayan forests of Jammu and Kashmir, Himachal Pradesh and Uttarakhand (2). It is gathered from the wild and is not commercially cultivated in the north-eastern foothills (3). Hence 1 and 2, (c).
+
+Q 46 | sci | Physics & Chemistry
+With reference to polyethylene terephthalate, the use of which is so widespread in our daily lives, consider the following statements:
+1. Its fibres can be blended with wool and cotton fibres to reinforce their properties.
+2. Containers made of it can be used to store any alcoholic beverage.
+3. Bottles made of it can be recycled into other products.
+4. Articles made of it can be easily disposed of by incineration without causing greenhouse gas emissions.
+Which of the statements given above are correct?
+(1) 1 and 3
+(2) 2 and 4
+(3) 1 and 4
+(4) 2 and 3
+= 1
+~ 1 is correct: polyester (PET) fibres are routinely blended with wool and cotton to add strength and wrinkle resistance. 2 is wrong: PET is not suitable for every alcoholic beverage; it lets gases through and can leach chemicals, so many spirits and wines are not stored in it. 3 is correct: PET bottles are widely recycled into fibre, sheets and new bottles. 4 is wrong: burning PET releases carbon dioxide, a greenhouse gas. Hence 1 and 3, (a).
+
+Q 47 | env | Biodiversity & Conservation
+Which of the following is not a bird?
+(1) Golden Mahseer
+(2) Indian Nightjar
+(3) Spoonbill
+(4) White Ibis
+= 1
+~ The Golden Mahseer (Tor putitora) is a large freshwater fish of Himalayan rivers. The Indian Nightjar, the Spoonbill and the White Ibis (Black-headed Ibis) are birds. Hence (a).
+
+Q 48 | sci | Biology & Health
+Which of the following are nitrogen-fixing plants?
+1. Alfalfa
+2. Amaranth
+3. Chickpea
+4. Clover
+5. Purslane (Kulfa)
+6. Spinach
+Select the correct answer using the code given below:
+(1) 1, 3 and 4 only
+(2) 1, 3, 5 and 6 only
+(3) 2, 4, 5 and 6 only
+(4) 1, 2, 4, 5 and 6
+= 1
+~ Nitrogen-fixing plants are mainly legumes, which host Rhizobium bacteria in root nodules: alfalfa, chickpea and clover. Amaranth, purslane and spinach are not legumes and do not fix nitrogen. Hence 1, 3 and 4 only, (a).
+
+Q 49 | env | Biodiversity & Conservation
+"Biorock technology" is talked about in which one of the following situations?
+(1) Restoration of damaged coral reefs
+(2) Development of building materials using plant residues
+(3) Identification of areas for exploration/extraction of shale gas
+(4) Providing salt licks for wild animals in forests/protected areas
+= 1
+~ Biorock (mineral accretion) technology passes a low-voltage current through a steel frame on the seabed, so calcium carbonate deposits on it and coral fragments grow quickly. It is used to restore damaged coral reefs, for example in the Gulf of Kachchh. Hence (a).
+
+Q 50 | env | Biodiversity & Conservation
+The "Miyawaki method" is well known for the:
+(1) Promotion of commercial farming in arid and semi-arid areas
+(2) Development of gardens using genetically modified flora
+(3) Creation of mini forests in urban areas
+(4) Harvesting wind energy on coastal areas and on sea surfaces
+= 3
+~ The Miyawaki method, devised by the Japanese botanist Akira Miyawaki, plants many native species very densely in small plots so that they grow into dense mini forests within a few years. It is widely used for urban afforestation. Hence (c).
+
+Q 51 | ih | Modern India & Freedom Struggle
+In the Government of India Act 1919, the functions of Provincial Government were divided into "Reserved" and "Transferred" subjects. Which of the following were treated as "Reserved" subjects?
+1. Administration of Justice
+2. Local Self-Government
+3. Land Revenue
+4. Police
+Select the correct answer using the code given below:
+(1) 1, 2 and 3
+(2) 2, 3 and 4
+(3) 1, 3 and 4
+(4) 1, 2 and 4
+= 3
+~ Under dyarchy in the Government of India Act, 1919, "reserved" subjects stayed with the Governor and his executive council: they included administration of justice, police, land revenue, irrigation and finance. Local self-government, education, public health and agriculture were "transferred" to ministers responsible to the legislature. Hence 1, 3 and 4, (c).
+
+Q 52 | ih | Medieval India
+In medieval India, the term "Fanam" referred to:
+(1) Clothing
+(2) Coins
+(3) Ornaments
+(4) Weapons
+= 2
+~ The fanam was a small gold (later also silver) coin widely used in medieval South India, for example under the Vijayanagara rulers. Hence (b).
+
+Q 53 | ih | Modern India & Freedom Struggle
+Consider the following freedom fighters:
+1. Barindra Kumar Ghosh
+2. Jogesh Chandra Chatterjee
+3. Rash Behari Bose
+Who of the above was/were actively associated with the Ghadar Party?
+(1) 1 and 2
+(2) 2 only
+(3) 1 and 3
+(4) 3 only
+= 4
+~ Rash Behari Bose worked with the Ghadar Party in planning the armed rising of February 1915. Barindra Kumar Ghosh led the Anushilan Samiti/Jugantar group in Bengal (Alipore Bomb Case), and Jogesh Chandra Chatterjee was a founder of the Hindustan Republican Association (Kakori case). Hence 3 only, (d).
+
+Q 54 | ih | Modern India & Freedom Struggle
+With reference to the proposals of Cripps Mission, consider the following statements:
+1. The Constituent Assembly would have members nominated by the Provincial Assemblies as well as the Princely States.
+2. Any Province, which is not prepared to accept the new Constitution would have the right to sign a separate agreement with Britain regarding its future status.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ 1 is wrong: under the Cripps proposals (1942) the constitution-making body was to be elected by the provincial assemblies, while the princely states would nominate their members. 2 is correct: any province unwilling to accept the new constitution could stay out and make a separate agreement with Britain about its status. Hence 2 only, (b).
+
+Q 55 | ih | Art & Culture
+With reference to Indian history, consider the following texts:
+1. Nettipakarana
+2. Parishishtaparvan
+3. Avadanashataka
+4. Trishashtilakshana Mahapurana
+Which of the above are Jaina texts?
+(1) 1, 2 and 3
+(2) 2 and 4 only
+(3) 1, 3 and 4
+(4) 2, 3 and 4
+= 2
+~ Parishishtaparvan (Hemachandra's account of the Jaina elders) and the Trishashtilakshana Mahapurana (lives of the 63 great men of Jainism) are Jaina texts. The Nettipakarana is a Pali Buddhist text on interpretation, and the Avadanashataka is a Sanskrit collection of Buddhist stories. Hence 2 and 4 only, (b).
+
+Q 56 | ih | Art & Culture
+With reference to Indian history, consider the following pairs:
+Historical person — Known as
+1. Aryadeva — Jaina scholar
+2. Dignaga — Buddhist scholar
+3. Nathamuni — Vaishnava scholar
+How many pairs given above are correctly matched?
+(1) None of the pairs
+(2) Only one pair
+(3) Only two pairs
+(4) All three pairs
+= 3
+~ Aryadeva was a Buddhist philosopher of the Madhyamaka school and a disciple of Nagarjuna, not a Jaina scholar. Dignaga was a Buddhist logician, and Nathamuni was an early Sri Vaishnava acharya who compiled the hymns of the Alvars. Two pairs, (c).
+
+Q 57 | ih | Medieval India
+With reference to Indian history, consider the following statements:
+1. The first Mongol invasion of India happened during the reign of Jalal-ud-din Khalji.
+2. During the reign of Ala-ud-din Khalji, one Mongol assault marched up to Delhi and besieged the city.
+3. Muhammad-bin-Tughlaq temporarily lost portions of north-west of his kingdom to Mongols.
+Which of the statements given above is/are correct?
+(1) 1 and 2
+(2) 2 only
+(3) 1 and 3
+(4) 3 only
+= 2
+~ 1 is wrong: the first Mongol threat to India came under Iltutmish, when Chengiz Khan pursued Jalal-ud-din Mangbarni to the Indus in 1221. 2 is correct: under Ala-ud-din Khalji, Mongol armies under Qutlugh Khwaja (1299) and Targhi (1303) reached and besieged Delhi. 3 is wrong as per UPSC's key: Muhammad-bin-Tughlaq faced Tarmashirin's raid but did not lose north-western territory to the Mongols. Hence 2 only, (b).
+
+Q 58 | ih | Medieval India
+With reference to Indian history, who of the following were known as "Kulah-Daran"?
+(1) Arab merchants
+(2) Qalandars
+(3) Persian calligraphists
+(4) Sayyids
+= 4
+~ In the Delhi Sultanate and Mughal period, the Sayyids, who claimed descent from the Prophet's family, were called "kulah-daran" (wearers of the pointed cap, kulah), a mark of their status. Hence (d).
+
+Q 59 | ih | Modern India & Freedom Struggle
+With reference to Indian history, consider the following statements:
+1. The Dutch established their factories/warehouses on the east coast on lands granted to them by Gajapati rulers.
+2. Alfonso de Albuquerque captured Goa from the Bijapur Sultanate.
+3. The English East India Company established a factory at Madras on a plot of land leased from a representative of the Vijayanagara empire.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ 1 is wrong: the Dutch got their east-coast settlements from the Golconda Sultanate (Masulipatnam) and the Vijayanagara/Chandragiri rulers (Pulicat), not from the Gajapatis, whose power had ended by then. 2 is correct: Albuquerque took Goa from the Bijapur Sultanate in 1510. 3 is correct: in 1639 the English got the site of Madras on lease from Damarla Venkatadri Nayaka, a representative of the Vijayanagara ruler. Hence 2 and 3, (b).
+
+Q 60 | ih | Ancient India
+According to Kautilya's Arthashastra, which of the following are correct?
+1. A person could be a slave as a result of a judicial punishment.
+2. If a female slave bore her master a son, she was legally free.
+3. If a son born to a female slave was fathered by her master, the son was entitled to the legal status of the master's son.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ The Arthashastra says that a female slave who bears her master a son becomes free (2), and that such a son gets the legal status of the master's son (3). It also lists the "dandapranita", a person enslaved through a court-imposed penalty, which is why many sources treat statement 1 as correct too; UPSC's final key, however, accepts only 2 and 3, (b). (Official key; some sources differ.)
+
+Q 62 | geo | Indian Geography
+Consider the following States:
+1. Andhra Pradesh
+2. Kerala
+3. Himachal Pradesh
+4. Tripura
+How many of the above are generally known as tea-producing States?
+(1) Only one State
+(2) Only two States
+(3) Only three States
+(4) All four States
+= 4
+~ Besides the big producers of Assam, West Bengal and the Nilgiris, tea is grown in Kerala (Munnar, Wayanad), Himachal Pradesh (Kangra valley), Tripura and, on a small scale, in Andhra Pradesh (the Araku/Paderu hills). All four are generally counted as tea-producing States, (d).
+
+Q 63 | eco | Money, Banking & Inflation
+Consider the following statements:
+1. In India, credit rating agencies are regulated by Reserve Bank of India.
+2. The rating agency popularly known as ICRA is a public limited company.
+3. Brickwork Ratings is an Indian credit rating agency.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ 1 is wrong: credit rating agencies are regulated by SEBI under the Credit Rating Agencies Regulations, 1999, not by the RBI. 2 is correct: ICRA Limited is a public limited company listed on the stock exchanges. 3 is correct: Brickwork Ratings is an Indian credit rating agency (its SEBI registration was cancelled later in 2022). Hence 2 and 3, (b).
+
+Q 64 | eco | Money, Banking & Inflation
+With reference to the 'Banks Board Bureau (BBB)', which of the following statements are correct?
+1. The Governor of RBI is the Chairman of BBB.
+2. BBB recommends for the selection of heads for Public Sector Banks.
+3. BBB helps the Public Sector Banks in developing strategies and capital raising plans.
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ 1 is wrong: the Banks Board Bureau (now the Financial Services Institutions Bureau) is chaired by an eminent person appointed by the Government, not by the RBI Governor. 2 and 3 are correct: it recommends heads of public sector banks and financial institutions and helps these banks develop strategies and capital-raising plans. Hence 2 and 3, (b).
+
+Q 65 | eco | Money, Banking & Inflation
+With reference to Convertible Bonds, consider the following statements:
+1. As there is an option to exchange the bond for equity, Convertible Bonds pay a lower rate of interest.
+2. The option to convert to equity affords the bondholder a degree of indexation to rising consumer prices.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ 1 is correct: because the holder can convert the bond into equity, the issuer can pay a lower coupon than on a plain bond. 2 is correct: equity prices tend to rise with the general price level, so the conversion option gives the holder some protection against rising consumer prices. Both, (c).
+
+Q 66 | cur | International Organisations & Groupings
+Consider the following:
+1. Asian Infrastructure Investment Bank
+2. Missile Technology Control Regime
+3. Shanghai Cooperation Organisation
+India is a member of which of the above?
+(1) 1 and 2 only
+(2) 3 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 4
+~ India is a founding member of the Asian Infrastructure Investment Bank (and its second-largest shareholder), joined the Missile Technology Control Regime in 2016, and became a full member of the Shanghai Cooperation Organisation in 2017. All three, (d).
+
+Q 67 | cur | India & the World
+Consider the following statements:
+1. Vietnam has been one of the fastest growing economies in the world in the recent years.
+2. Vietnam is led by a multi-party political system.
+3. Vietnam's economic growth is linked to its integration with global supply chains and focus on exports.
+4. For a long time Vietnam's low labour costs and stable exchange rates have attracted global manufacturers.
+5. Vietnam has the most productive e-service sector in the Indo-Pacific region.
+Which of the statements given above are correct?
+(1) 2 and 4
+(2) 3 and 5
+(3) 1, 3 and 4
+(4) 1 and 2
+= 3
+~ Vietnam has been among the world's fastest-growing economies (1), its growth is tied to integration with global supply chains and exports (3), and low labour costs with stable exchange rates have drawn manufacturers (4). It is a one-party state led by the Communist Party, not a multi-party system (2), and statement 5 about the most productive e-service sector is not established. Hence 1, 3 and 4, (c).
+
+Q 68 | eco | Money, Banking & Inflation
+In India, which one of the following is responsible for maintaining price stability by controlling inflation?
+(1) Department of Consumer Affairs
+(2) Expenditure Management Commission
+(3) Financial Stability and Development Council
+(4) Reserve Bank of India
+= 4
+~ Under the amended RBI Act (2016), the Reserve Bank of India's Monetary Policy Committee is charged with keeping CPI inflation at 4% within a band of 2 to 6%, i.e. maintaining price stability. Hence (d).
+
+Q 69 | sci | IT, Computers & Emerging Technology
+With reference to Non-Fungible Tokens (NFTs), consider the following statements:
+1. They enable the digital representation of physical assets.
+2. They are unique cryptographic tokens that exist on a blockchain.
+3. They can be traded or exchanged at equivalency and therefore can be used as a medium of commercial transactions.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 1
+~ NFTs are unique cryptographic tokens recorded on a blockchain (2) and can represent physical or digital assets (1). Being non-fungible, each token is unique, so they cannot be exchanged at equivalency like money and do not work as a medium of commercial transactions (3). Hence 1 and 2, (a).
+
+Q 70 | geo | Indian Geography
+Consider the following pairs:
+Reservoirs — States
+1. Ghataprabha — Telangana
+2. Gandhi Sagar — Madhya Pradesh
+3. Indira Sagar — Andhra Pradesh
+4. Maithon — Chhattisgarh
+How many pairs given above are not correctly matched?
+(1) Only one pair
+(2) Only two pairs
+(3) Only three pairs
+(4) All four pairs
+= 3
+~ Ghataprabha reservoir is in Karnataka, not Telangana. Gandhi Sagar (Chambal) is in Madhya Pradesh, correct. Indira Sagar (Narmada) is also in Madhya Pradesh, not Andhra Pradesh. Maithon (Barakar) is in Jharkhand, not Chhattisgarh. Three pairs are not correctly matched, (c).
+
+Q 71 | eco | Poverty, Employment & Welfare
+In India, which one of the following compiles information on industrial disputes, closures, retrenchments and lay-offs in factories employing workers?
+(1) Central Statistics Office
+(2) Department for Promotion of Industry and Internal Trade
+(3) Labour Bureau
+(4) National Technical Manpower Information System
+= 3
+~ The Labour Bureau under the Ministry of Labour and Employment compiles statistics on industrial disputes, closures, retrenchments and lay-offs, along with indices such as CPI for industrial workers. Hence (c).
+
+Q 72 | eco | Agriculture & Industry
+In India, what is the role of the Coal Controller's Organization (CCO)?
+1. CCO is the major source of Coal Statistics in Government of India.
+2. It monitors progress of development of Captive Coal/Lignite blocks.
+3. It hears any objection to the Government's notification relating to acquisition of coal-bearing areas.
+4. It ensures that coal mining companies deliver the coal to end users in the prescribed time.
+Select the correct answer using the code given below:
+(1) 1, 2 and 3
+(2) 3 and 4 only
+(3) 1 and 2 only
+(4) 1, 2 and 4
+= 1
+~ The Coal Controller's Organisation is the main source of coal statistics (1), monitors development of captive coal and lignite blocks (2), and hears objections to notifications under the Coal Bearing Areas (Acquisition and Development) Act, 1957 (3). Ensuring timely delivery of coal to end users is not its job (4). Hence 1, 2 and 3, (a).
+
+Q 73 | pol | Federalism & Local Government
+If a particular area is brought under the Fifth Schedule of the Constitution of India, which one of the following statements best reflects the consequence of it?
+(1) This would prevent the transfer of land of tribal people to non-tribal people.
+(2) This would create a local self-governing body in that area.
+(3) This would convert that area into a Union Territory.
+(4) The State having such areas would be declared a Special Category State.
+= 1
+~ In a Fifth Schedule (Scheduled) Area, the Governor can make regulations that prohibit or restrict the transfer of land by or among tribal people to non-tribals, and many State laws do this. It does not create an autonomous council (that is the Sixth Schedule), a Union Territory or a Special Category State. Hence (a).
+
+Q 74 | eco | Poverty, Employment & Welfare
+Consider the following statements:
+1. The India Sanitation Coalition is a platform to promote sustainable sanitation and is funded by the Government of India and the World Health Organization.
+2. The National Institute of Urban Affairs is an apex body of the Ministry of Housing and Urban Affairs in Government of India and provides innovative solutions to address the challenges of Urban India.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 4
+~ 1 is wrong: the India Sanitation Coalition is a multi-stakeholder platform launched in 2015 at FICCI and supported by companies and NGOs, not funded by the Government of India and the WHO. 2 is wrong: the National Institute of Urban Affairs is an autonomous research and capacity-building institute supported by the Ministry of Housing and Urban Affairs, not an apex body of the Ministry. Neither, (d).
+
+Q 75 | env | Environmental Laws, Bodies & Conventions
+Which one of the following has been constituted under the Environment (Protection) Act, 1986?
+(1) Central Water Commission
+(2) Central Ground Water Board
+(3) Central Ground Water Authority
+(4) National Water Development Agency
+= 3
+~ The Central Ground Water Authority was constituted in 1997 under Section 3(3) of the Environment (Protection) Act, 1986 to regulate groundwater development. The Central Water Commission, the Central Ground Water Board and the National Water Development Agency were set up by government resolutions or as societies. Hence (c).
+
+Q 76 | cur | International Organisations & Groupings
+With reference to the "United Nations Credentials Committee", consider the following statements:
+1. It is a committee set up by the UN Security Council and works under its supervision.
+2. It traditionally meets in March, June and September every year.
+3. It assesses the credentials of all UN members before submitting a report to the General Assembly for approval.
+Which of the statements given above is/are correct?
+(1) 3 only
+(2) 1 and 3
+(3) 2 and 3
+(4) 1 and 2
+= 1
+~ 1 is wrong: the Credentials Committee is appointed by the UN General Assembly at the start of each regular session, not by the Security Council. 2 is wrong: it has no such fixed March-June-September cycle; it usually meets once during the regular session, towards the end of the year. 3 is correct: it examines the credentials of member states' representatives and reports to the General Assembly for approval. Hence 3 only, (a).
+
+Q 77 | cur | International Organisations & Groupings
+Which one of the following statements best describes the 'Polar Code'?
+(1) It is the international code of safety for ships operating in polar waters.
+(2) It is the agreement of the countries around the North Pole regarding the demarcation of their territories in the polar region.
+(3) It is a set of norms to be followed by the countries whose scientists undertake research studies in the North Pole and South Pole.
+(4) It is a trade and security agreement of the member countries of the Arctic Council.
+= 1
+~ The Polar Code is the International Maritime Organization's International Code for Ships Operating in Polar Waters, in force since 2017 under SOLAS and MARPOL; it covers ship design, safety and pollution prevention in Arctic and Antarctic waters. Hence (a).
+
+Q 78 | cur | International Organisations & Groupings
+With reference to the United Nations General Assembly, consider the following statements:
+1. The UN General Assembly can grant observer status to the non-member States.
+2. Inter-governmental organisations can seek observer status in the UN General Assembly.
+3. Permanent Observers in the UN General Assembly can maintain missions at the UN headquarters.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ The General Assembly can grant observer status to non-member States, as with the Holy See and Palestine (1). Intergovernmental organisations such as the African Union and the EU can seek and hold observer status (2). Permanent observers may maintain missions at UN Headquarters in New York (3). All three, (d).
+
+Q 79 | eco | Agriculture & Industry
+With reference to the "Tea Board" in India, consider the following statements:
+1. The Tea Board is a statutory body.
+2. It is a regulatory body attached to the Ministry of Agriculture and Farmers Welfare.
+3. The Tea Board's Head Office is situated in Bengaluru.
+4. The Board has overseas offices at Dubai and Moscow.
+Which of the statements given above are correct?
+(1) 1 and 3
+(2) 2 and 4
+(3) 3 and 4
+(4) 1 and 4
+= 4
+~ The Tea Board is a statutory body set up under the Tea Act, 1953 (1) and has overseas offices in Dubai and Moscow (4). It works under the Ministry of Commerce and Industry, not the Ministry of Agriculture (2), and its head office is in Kolkata, not Bengaluru (3). Hence 1 and 4, (d).
+
+Q 80 | env | Climate Change & Pollution
+Which one of the following best describes the term "greenwashing"?
+(1) Conveying a false impression that a company's products are eco-friendly and environmentally sound
+(2) Non-inclusion of ecological/environmental costs in the Annual Financial Statements of a country
+(3) Ignoring the disastrous ecological consequences while undertaking infrastructure development
+(4) Making mandatory provisions for environmental costs in a government project/programme
+= 1
+~ Greenwashing means giving a false or misleading impression that a company's products or practices are environmentally friendly, usually through marketing claims. Hence (a).
+
+Q 81 | geo | Physical Geography
+Consider the following statements:
+1. High clouds primarily reflect solar radiation and cool the surface of the Earth.
+2. Low clouds have a high absorption of infrared radiation emanating from the Earth's surface and thus cause warming effect.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 4
+~ Both statements are reversed. Low, thick clouds mainly reflect incoming solar radiation and cool the surface, while high, thin clouds let sunlight through but absorb the infrared radiation emitted by the Earth and so warm it. Neither statement is correct, (d).
+
+Q 82 | cur | Reports, Indices & Places in News
+Consider the following statements:
+1. Bidibidi is a large refugee settlement in north-western Kenya.
+2. Some people who fled from South Sudan civil war live in Bidibidi.
+3. Some people who fled from civil war in Somalia live in Dadaab refugee complex in Kenya.
+Which of the statements given above is/are correct?
+(1) 1 and 2
+(2) 2 only
+(3) 2 and 3
+(4) 3 only
+= 3
+~ 1 is wrong: Bidibidi, one of the world's largest refugee settlements, is in north-western Uganda, not Kenya. 2 is correct: its residents fled the civil war in South Sudan. 3 is correct: the Dadaab refugee complex in Kenya houses people who fled the civil war in Somalia. Hence 2 and 3, (c).
+
+Q 83 | cur | International Organisations & Groupings
+Consider the following countries:
+1. Armenia
+2. Azerbaijan
+3. Croatia
+4. Romania
+5. Uzbekistan
+Which of the above are members of the Organization of Turkic States?
+(1) 1, 2 and 4
+(2) 1 and 3
+(3) 2 and 5
+(4) 3, 4 and 5
+= 3
+~ The Organization of Turkic States has five members: Turkey, Azerbaijan, Kazakhstan, Kyrgyzstan and Uzbekistan (Hungary and Turkmenistan are observers). Armenia, Croatia and Romania are not members. Hence 2 and 5, (c).
+
+Q 84 | eco | Agriculture & Industry
+Consider the following statements:
+1. Gujarat has the largest solar park in India.
+2. Kerala has a fully solar powered International Airport.
+3. Goa has the largest floating solar photovoltaic project in India.
+Which of the statements given above is/are correct?
+(1) 1 and 2
+(2) 2 only
+(3) 1 and 3
+(4) 3 only
+= 2
+~ 1 is wrong: India's largest solar park is Bhadla in Rajasthan, not one in Gujarat. 2 is correct: Cochin International Airport in Kerala became the world's first fully solar-powered airport in 2015. 3 is wrong: India's largest floating solar plant at the time was at Ramagundam in Telangana, not in Goa. Hence 2 only, (b).
+
+Q 85 | geo | World Geography
+With reference to the United Nations Convention on the Law of Sea, consider the following statements:
+1. A coastal state has the right to establish the breadth of its territorial sea up to a limit not exceeding 12 nautical miles, measured from baseline determined in accordance with the convention.
+2. Ships of all states, whether coastal or land-locked, enjoy the right of innocent passage through the territorial sea.
+3. The Exclusive Economic Zone shall not extend beyond 200 nautical miles from the baseline from which the breadth of the territorial sea is measured.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Under UNCLOS, a coastal state may fix the breadth of its territorial sea up to 12 nautical miles from the baseline (1); ships of all states, coastal or land-locked, enjoy the right of innocent passage through it (2); and the Exclusive Economic Zone may not extend beyond 200 nautical miles from the baseline (3). All three, (d).
+
+Q 86 | cur | India & the World
+Which one of the following statements best reflects the issue with Senkaku Islands, sometimes mentioned in the news?
+(1) It is generally believed that they are artificial islands made by a country around South China Sea.
+(2) China and Japan engage in maritime disputes over these islands in East China Sea.
+(3) A permanent American military base has been set up there to help Taiwan to increase its defence capabilities.
+(4) Though International Court of Justice declared them as no man's land, some South-East Asian countries claim them.
+= 2
+~ The Senkaku Islands (Diaoyu to China) are uninhabited islands in the East China Sea administered by Japan and claimed by China (and Taiwan), a long-running maritime dispute. They are natural islands, have no American base and have never been declared no man's land by the ICJ. Hence (b).
+
+Q 87 | cur | Reports, Indices & Places in News
+Consider the following pairs:
+Country — Important reason for being in the news recently
+1. Chad — Setting up of permanent military base by China
+2. Guinea — Suspension of Constitution and Government by military
+3. Lebanon — Severe and prolonged economic depression
+4. Tunisia — Suspension of Parliament by President
+How many pairs given above are correctly matched?
+(1) Only one pair
+(2) Only two pairs
+(3) Only three pairs
+(4) All four pairs
+= 3
+~ Chad was in the news for the killing of President Idriss Déby and a military council taking over (2021), not for a Chinese military base (China's overseas base is in Djibouti). Guinea's army suspended the constitution and government in a coup (September 2021), Lebanon is in a severe and prolonged economic depression, and Tunisia's President suspended Parliament (July 2021). Three pairs, (c).
+
+Q 88 | cur | Reports, Indices & Places in News
+Consider the following pairs:
+Region often mentioned in the news — Country
+1. Anatolia — Turkey
+2. Amhara — Ethiopia
+3. Cabo Delgado — Spain
+4. Catalonia — Italy
+How many pairs given above are correctly matched?
+(1) Only one pair
+(2) Only two pairs
+(3) Only three pairs
+(4) All four pairs
+= 2
+~ Anatolia is the Asian heartland of Turkey, and Amhara is a region of Ethiopia caught up in the Tigray war. Cabo Delgado is the insurgency-hit northern province of Mozambique, not Spain, and Catalonia is a region of Spain, not Italy. Two pairs, (b).
+
+Q 89 | env | Environmental Laws, Bodies & Conventions
+With reference to Indian laws about wildlife protection, consider the following statements:
+1. Wild animals are the sole property of the government.
+2. When a wild animal is declared protected, such animal is entitled for equal protection whether it is found in protected areas or outside.
+3. Apprehension of a protected wild animal becoming a danger to human life is sufficient ground for its capture or killing.
+Which of the statements given above is/are correct?
+(1) 1 and 2
+(2) 2 only
+(3) 1 and 3
+(4) 3 only
+= 2
+~ 1 is wrong: under Section 39 of the Wild Life (Protection) Act, 1972 only certain wild animals (those hunted, killed, found dead or captured in breach of the Act, and their parts) become government property; wild animals in general are not the "sole property" of the government. 2 is correct: a protected species is protected wherever it is found, inside or outside protected areas. 3 is wrong: mere apprehension is not enough; under Section 11 the Chief Wild Life Warden must be satisfied that the animal has actually become dangerous to human life. Hence 2 only, (b).
+
+Q 90 | sci | Biology & Health
+Certain species of which one of the following organisms are well known as cultivators of fungi?
+(1) Ant
+(2) Cockroach
+(3) Crab
+(4) Spider
+= 1
+~ Leafcutter ants (and some termites) are true fungus farmers: they cut leaves, carry them to their nests and grow a fungus on them, which they eat. Cockroaches, crabs and spiders do not cultivate fungi. Hence (a).
+
+Q 91 | ih | Ancient India
+Consider the following pairs:
+Site of Ashoka's major rock edicts — Location in the State of
+1. Dhauli — Odisha
+2. Erragudi — Andhra Pradesh
+3. Jaugada — Madhya Pradesh
+4. Kalsi — Karnataka
+How many pairs given above are correctly matched?
+(1) Only one pair
+(2) Only two pairs
+(3) Only three pairs
+(4) All four pairs
+= 2
+~ Dhauli (near Bhubaneswar) is in Odisha and Erragudi (Kurnool) in Andhra Pradesh, both correct. Jaugada is in Ganjam district of Odisha, not Madhya Pradesh, and Kalsi is in Dehradun district of Uttarakhand, not Karnataka. Two pairs, (b).
+
+Q 92 | ih | Medieval India
+Consider the following pairs:
+King — Dynasty
+1. Nannuka — Chandela
+2. Jayashakti — Paramara
+3. Nagabhata II — Gurjara-Pratihara
+4. Bhoja — Rashtrakuta
+How many pairs given above are correctly matched?
+(1) Only one pair
+(2) Only two pairs
+(3) Only three pairs
+(4) All four pairs
+= 2
+~ Nannuka founded the Chandela dynasty, and Nagabhata II was a Gurjara-Pratihara king; both pairs are correct. Jayashakti (Jejaka) was also a Chandela ruler, not a Paramara, and Bhoja was the famous Paramara king of Malwa (the other Bhoja, Mihira Bhoja, was a Pratihara), not a Rashtrakuta. Two pairs, (b).
+
+Q 93 | ih | Ancient India
+Which one of the following statements about Sangam literature in ancient South India is correct?
+(1) Sangam poems are devoid of any reference to material culture.
+(2) The social classification of Varna was known to Sangam poets.
+(3) Sangam poems have no reference to warrior ethic.
+(4) Sangam literature refers to magical forces as irrational.
+= 2
+~ Sangam poems refer to the four varnas, so the varna classification was known to the poets. The poems are full of references to material culture and celebrate the warrior ethic (the puram poems), and they treat magical forces as real rather than irrational. Hence (b).
+
+Q 94 | ih | Medieval India
+"Yogavāsistha" was translated into Persian by Nizamuddin Panipati during the reign of:
+(1) Akbar
+(2) Humayun
+(3) Shahjahan
+(4) Aurangzeb
+= 1
+~ Nizamuddin Panipati translated the Yogavasistha into Persian in 1597, during Akbar's reign, for Prince Salim. Akbar's court sponsored many such translations of Sanskrit works through the Maktab Khana. Hence (a).
+
+Q 95 | ih | Art & Culture
+The world's second tallest statue in sitting pose of Ramanuja was inaugurated by the Prime Minister of India at Hyderabad recently. Which one of the following statements correctly represents the teachings of Ramanuja?
+(1) The best means of salvation was devotion.
+(2) Vedas are eternal, self-existent and wholly authoritative.
+(3) Logical arguments were essential means for the highest bliss.
+(4) Salvation was to be obtained through meditation.
+= 1
+~ Ramanuja, the exponent of Vishishtadvaita, taught that intense devotion (bhakti) to Vishnu was the best means to salvation, through which the devotee attains bliss in union with God. The 216-foot "Statue of Equality" of Ramanuja at Hyderabad was inaugurated in February 2022. Hence (a).
+
+Q 96 | ih | Art & Culture
+The Prime Minister recently inaugurated the new Circuit House near Somnath Temple at Veraval. Which of the following statements are correct regarding Somnath Temple?
+1. Somnath Temple is one of the Jyotirlinga shrines.
+2. A description of Somnath Temple was given by Al-Biruni.
+3. Pran Pratishtha of Somnath Temple (installation of the present day temple) was done by President S. Radhakrishnan.
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 1
+~ Somnath is the first of the twelve Jyotirlinga shrines (1), and Al-Biruni described the temple in his Kitab-ul-Hind (2). The present temple's pran pratishtha in May 1951 was performed by President Rajendra Prasad, not S. Radhakrishnan (3). Hence 1 and 2, (a).
+
+Q 97 | sci | Biology & Health
+Which one of the following statements best describes the role of B cells and T cells in the human body?
+(1) They protect the body from environmental allergens.
+(2) They alleviate the body's pain and inflammation.
+(3) They act as immunosuppressants in the body.
+(4) They protect the body from the diseases caused by pathogens.
+= 4
+~ B cells and T cells are lymphocytes of the adaptive immune system: B cells make antibodies and T cells kill infected cells and coordinate the response. Their role is to protect the body from diseases caused by pathogens, (d).
+
+Q 98 | sci | Physics & Chemistry
+Consider the following statements:
+1. Other than those made by humans, nanoparticles do not exist in nature.
+2. Nanoparticles of some metallic oxides are used in the manufacture of some cosmetics.
+3. Nanoparticles of some commercial products which enter the environment are unsafe for humans.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 3 only
+(3) 1 and 2
+(4) 2 and 3
+= 4
+~ 1 is wrong: nanoparticles also occur naturally, in volcanic ash, sea spray, smoke and mineral dust. 2 is correct: nanoparticles of titanium dioxide and zinc oxide are used in sunscreens and other cosmetics. 3 is correct: some nanoparticles from commercial products that enter the environment can be toxic to humans. Hence 2 and 3, (d).
+
+Q 99 | sci | Biotechnology
+Consider the following statements:
+DNA Barcoding can be a tool to:
+1. assess the age of a plant or animal.
+2. distinguish among species that look alike.
+3. identify undesirable animal or plant materials in processed foods.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 3 only
+(3) 1 and 2
+(4) 2 and 3
+= 4
+~ DNA barcoding identifies species from a short standard DNA sequence, so it can tell apart species that look alike (2) and detect undesirable animal or plant material in processed food (3). DNA sequence does not change with age, so it cannot tell how old a plant or animal is (1). Hence 2 and 3, (d).
+
+Q 100 | env | Climate Change & Pollution
+Consider the following:
+1. Carbon monoxide
+2. Nitrogen oxide
+3. Ozone
+4. Sulphur dioxide
+Excess of which of the above in the environment is/are cause(s) of acid rain?
+(1) 1, 2 and 3
+(2) 2 and 4 only
+(3) 4 only
+(4) 1, 3 and 4
+= 2
+~ Acid rain forms when sulphur dioxide and nitrogen oxides react with water vapour to make sulphuric and nitric acids. Carbon monoxide and ozone do not form acids in rain. Hence 2 and 4 only, (b).
