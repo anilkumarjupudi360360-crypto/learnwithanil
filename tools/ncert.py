@@ -25,7 +25,7 @@ SUBJ = [   # key, name, slug, short name, Hindi name
     ('geo', 'Geography', 'geography', 'Geography', 'भूगोल'),
     ('eco', 'Economics', 'economics', 'Economics', 'अर्थशास्त्र'),
     ('soc', 'Sociology', 'sociology', 'Sociology', 'समाजशास्त्र'),
-    ('art', 'Fine Arts (Indian Art & Culture)', 'fine-arts', 'Indian Art', 'ललित कला'),
+    ('art', 'Art and Culture (Fine Arts)', 'art-and-culture', 'Art and Culture', 'कला एवं संस्कृति'),   # Anil, 16 Nov 2026: "art & culture ncert questions"
     ('phy', 'Physics', 'physics', 'Physics', 'भौतिकी'),
     ('chem', 'Chemistry', 'chemistry', 'Chemistry', 'रसायन विज्ञान'),
     ('bio', 'Biology', 'biology', 'Biology', 'जीव विज्ञान'),
@@ -176,7 +176,7 @@ def faq(cls):
         return [
             (f'What is on the NCERT Class {cls} page?',
              f'Chapter-wise multiple-choice questions (MCQs) on the NCERT Class {cls} textbooks of Polity, History, Geography, Economics, Sociology, '
-             f'Fine Arts (Indian art and culture), Physics, Chemistry and Biology: {nch} chapters in all. {total:,} questions in {npapers} chapters are live now, '
+             f'Art and Culture (Fine Arts), Physics, Chemistry and Biology: {nch} chapters in all. {total:,} questions in {npapers} chapters are live now, '
              f'and new chapters are added every week. Every question has the correct answer and a short explanation.'),
             ('Are these NCERT\'s own exercise questions?',
              'No. The questions are written by Learn with Anil from the content of each NCERT chapter, in the style of UPSC, state PSC, SSC and other '
