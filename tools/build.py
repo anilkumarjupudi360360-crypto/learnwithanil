@@ -884,6 +884,125 @@ def FAQ_URA(total, npapers):
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
+# ---------- UKPSC Lower PCS (Uttarakhand Combined State Civil / Lower Subordinate Services) Prelims ----------
+# Anil, 15 Nov 2026: "Uttarakhand Lower PCS (26 Nov)"; 16 Nov 2026: "do 3 exams at a time". Advt. A-1/E-2/DR/LSS/2026-27 (6 Nov 2026; 54 posts; apply till 26 Nov).
+# Papers: UKPSC's own Series A booklets (clean PDFs from psc.uk.gov.in) of the Lower PCS prelims 2024 (held 11 May 2025) and 2021 (12 Dec 2021), and of
+# the RO/ARO prelims 2023 (17 Dec 2023), which has the same GS & General Aptitude paper of 150 questions; answers from UKPSC's final keys.
+# Work files: /home/claude/uk.
+UKL_BLURB = ('Prelims (objective, OMR): one paper, General Studies & General Aptitude Test, 150 questions for 150 marks in 2 hours, in Hindi and '
+             'English; a quarter of a question\'s marks is cut for each wrong answer.')
+UKL_PAPERS = [
+  dict(id='l24', file='ukpsc-lower-pcs-prelims-2024.txt', year=2024, stage='Prelims', short='Lower PCS Prelims 2024',
+       title='UKPSC Lower PCS Prelims 2024: General Studies & General Aptitude Question Paper', notif='Advt. A-3/E-2/DR/LSS/2024-25 · Series A',
+       held='11 May 2025', key="UKPSC's final answer key (29 July 2025)", fmt='mcq', slug='ukpsc-lower-pcs-prelims-2024-question-paper-with-answers',
+       kwname='UKPSC Lower PCS Prelims 2024', hi_paper='अवर अधीनस्थ सेवा प्रारंभिक परीक्षा 2024', blurb=UKL_BLURB, mins=120),
+  dict(id='l21', file='ukpsc-lower-pcs-prelims-2021.txt', year=2021, stage='Prelims', short='Lower PCS Prelims 2021',
+       title='UKPSC Lower PCS Prelims 2021: General Studies & General Aptitude Question Paper', notif='Exam of 12 December 2021 · Series A',
+       held='12 December 2021', key="UKPSC's revised final key (10 February 2022)", fmt='mcq', slug='ukpsc-lower-pcs-prelims-2021-question-paper-with-answers',
+       kwname='UKPSC Lower PCS Prelims 2021', hi_paper='अवर अधीनस्थ सेवा प्रारंभिक परीक्षा 2021', blurb=UKL_BLURB, mins=120),
+  dict(id='r23', file='ukpsc-ro-aro-prelims-2023.txt', year=2023, stage='Prelims', short='RO/ARO Prelims 2023 (same paper pattern)',
+       title='UKPSC RO/ARO Prelims 2023: General Studies & General Aptitude Question Paper', notif='RO/ARO (Pre) Exam-2023 · Series A',
+       held='17 December 2023', key="UKPSC's final answer key (29 February 2024)", fmt='mcq', slug='ukpsc-ro-aro-prelims-2023-question-paper-with-answers',
+       kwname='UKPSC RO ARO Prelims 2023', hi_paper='समीक्षा अधिकारी/सहायक समीक्षा अधिकारी प्रारंभिक परीक्षा 2023', blurb=UKL_BLURB, mins=120),
+]
+UKL_SUBJECTS = [
+  ('ukg', 'Uttarakhand GK', 'uttarakhand-gk', ['History & Culture of Uttarakhand', 'Geography & Economy of Uttarakhand', 'Polity, Schemes & Current Affairs of Uttarakhand']),
+  ('his', 'History & National Movement', 'history', ['Ancient & Medieval India', 'Modern India & National Movement']),
+  ('pol', 'Indian Polity', 'polity', ['Constitution & Polity']),
+  ('geo', 'Geography & Environment', 'geography', ['Indian & World Geography', 'Environment & Ecology']),
+  ('eco', 'Indian Economy', 'economy', ['Indian Economy']),
+  ('sci', 'General Science & Technology', 'general-science', ['General Science', 'Technology']),
+  ('cur', 'Current Affairs', 'current-affairs', ['National & International', 'Sports, Awards & Misc.']),
+  ('apt', 'General Aptitude', 'general-aptitude', ['Reasoning', 'Mathematics']),
+]
+UKL_SUBJ_HI = {'ukg': 'उत्तराखंड सामान्य ज्ञान', 'his': 'इतिहास एवं राष्ट्रीय आंदोलन', 'pol': 'भारतीय राजव्यवस्था', 'geo': 'भूगोल एवं पर्यावरण',
+               'eco': 'भारतीय अर्थव्यवस्था', 'sci': 'सामान्य विज्ञान एवं प्रौद्योगिकी', 'cur': 'समसामयिकी', 'apt': 'सामान्य अभिरुचि (तर्कशक्ति एवं गणित)'}
+
+
+def FAQ_UKL(total, npapers):
+    return [
+      ('Where can I get UKPSC Lower PCS previous year question papers with answers?',
+       f'This page has {total} questions from {npapers} UKPSC prelims papers: the Lower PCS (Combined State Civil / Lower Subordinate Services) prelims of '
+       '2024 (held 11 May 2025) and 2021 (12 December 2021), and the RO/ARO prelims of 2023, which has the same General Studies & General Aptitude paper. '
+       'Every question is in Hindi and English with UKPSC\'s final answer and an explanation.'),
+      ('Are the answers official?',
+       'Yes. Every answer is from UKPSC\'s final answer key for that exam. Questions UKPSC dropped or gave marks to everyone for are left out. Where an '
+       'answer looks doubtful, the explanation says so. The explanations are written by Learn with Anil.'),
+      ('What is the UKPSC Lower PCS 2026 prelims exam pattern?',
+       'One objective paper, General Studies & General Aptitude Test: 150 questions for 150 marks in 2 hours, with a quarter of a question\'s marks cut for '
+       'each wrong answer. The prelims only selects candidates for the Mains (four written papers for 600 marks: General Hindi, Essay and two General Studies '
+       'papers) and the 75-mark interview.'),
+      ('Is the UKPSC question paper in Hindi?',
+       'Yes. The prelims booklet is printed in Hindi and English, page by page. Tap हिन्दी at the top of the page to read the questions and explanations in Hindi.'),
+      ('What is the last date to apply for UKPSC Lower PCS 2026?',
+       'Online applications on psc.uk.gov.in are open from 6 to 26 November 2026 (11:59 pm), the last date for the fee as well; corrections are allowed '
+       'from 3 to 12 December 2026. Advt. A-1/E-2/DR/LSS/2026-27 has 54 posts.'),
+      ('Is there a UKPSC Lower PCS mock test?',
+       'Yes. Every paper here can be taken as a full 2-hour mock test with negative marking, and the sectional tests take all the previous questions of '
+       'one subject, such as Uttarakhand GK or General Aptitude. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
+# ---------- CG Vyapam (Chhattisgarh Karmchari Chayan Mandal, CGSSB) Group-2 Sub-group-02 (G20227) ----------
+# Anil, 15 Nov 2026: "Chhattisgarh Vyapam Group 2 (27 Nov)". CGSSB detailed advertisement of 5 Nov 2026: 1,703 posts (Assistant Grade-3 1,206, ASI,
+# stenographers, DEO, registration clerk); one paper of 100 questions in 2 hours on 10 Jan 2027 (Computer 20, GS 20, CG GK 20, Mental Ability 10, Maths 10,
+# Hindi 10, English 10). Papers: Vyapam's own Set A booklets of the 2021 recruitments with the same six parts: VDAG21 and AGDO21 (200 questions each) and
+# the SGST21 general paper (150 questions), with Vyapam's final keys. Work files: /home/claude/cg.
+CGV_BLURB = ('Vyapam\'s 2021 paper: Computer, General Studies & Chhattisgarh GK, Mental Ability, Maths, Hindi and English, 1 mark a question with a '
+             'quarter mark cut for each wrong answer, in Hindi and English. The 2027 exam has the same six parts in 100 questions and 2 hours.')
+CGV_PAPERS = [
+  dict(id='vd', file='cg-vyapam-vdag-2021.txt', year=2021, stage='Written', short='VDAG 2021 (DEO & Assistant Grade-3)',
+       title='CG Vyapam Data Entry Operator & Assistant Grade-3 Exam 2021 (VDAG21) Question Paper', notif='Vyapam VDAG21 · Set A',
+       held='2021-22', key="Vyapam's final answer key (18 March 2022)", fmt='mcq', slug='cg-vyapam-vdag-2021-question-paper-with-answers',
+       kwname='CG Vyapam VDAG 2021 (Data Entry Operator & Assistant Grade 3)', hi_paper='वीडीएजी 2021 (डाटा एंट्री ऑपरेटर एवं सहायक ग्रेड-3)', blurb=CGV_BLURB, mins=180),
+  dict(id='ag', file='cg-vyapam-agdo-2021.txt', year=2021, stage='Written', short='AGDO 2021 (Assistant Grade-3 & DEO)',
+       title='CG Vyapam Assistant Grade-3 & Data Entry Operator Exam 2021 (AGDO21) Question Paper', notif='Vyapam AGDO21 · Set A',
+       held='2021-22', key="Vyapam's final answer key (14 February 2022)", fmt='mcq', slug='cg-vyapam-agdo-2021-question-paper-with-answers',
+       kwname='CG Vyapam AGDO 2021 (Assistant Grade 3 & Data Entry Operator)', hi_paper='एजीडीओ 2021 (सहायक ग्रेड-3 एवं डाटा एंट्री ऑपरेटर)', blurb=CGV_BLURB, mins=180),
+  dict(id='sg', file='cg-vyapam-sgst-2021-general-paper.txt', year=2021, stage='Written', short='Steno 2021 · General Paper',
+       title='CG Vyapam Stenographer & Stenotypist Exam 2021 (SGST21): General Paper', notif='Vyapam SGST21 · Set A',
+       held='26 December 2021', key="Vyapam's final answer key (14 March 2022)", fmt='mcq', slug='cg-vyapam-steno-2021-general-paper-question-paper-with-answers',
+       kwname='CG Vyapam Stenographer 2021 General Paper', hi_paper='शीघ्रलेखक/स्टेनो टायपिस्ट 2021 सामान्य प्रश्न पत्र', blurb=CGV_BLURB, mins=150),
+]
+CGV_SUBJECTS = [
+  ('comp', 'Computer Knowledge', 'computer', ['Computer Fundamentals', 'MS Office', 'Internet & Networking', 'Software & Operating Systems']),
+  ('gs', 'General Studies', 'general-studies', ['Indian History & Culture', 'Indian Polity', 'Geography & Environment', 'Economy', 'Science & Technology', 'Current Affairs']),
+  ('cgk', 'Chhattisgarh GK', 'chhattisgarh-gk', ['History & Culture of Chhattisgarh', 'Geography & Economy of Chhattisgarh', 'Polity, Schemes & Current Affairs of Chhattisgarh']),
+  ('ment', 'Mental Ability', 'mental-ability', ['Verbal Reasoning', 'Non-verbal Reasoning']),
+  ('math', 'General Maths', 'general-maths', ['Arithmetic', 'Algebra & Geometry']),
+  ('hin', 'General Hindi', 'general-hindi', ['Grammar', 'Vocabulary & Usage']),
+  ('eng', 'General English', 'general-english', ['Grammar', 'Vocabulary', 'Comprehension & Usage']),
+]
+CGV_SUBJ_HI = {'comp': 'कंप्यूटर का सामान्य ज्ञान', 'gs': 'सामान्य अध्ययन', 'cgk': 'छत्तीसगढ़ का सामान्य ज्ञान', 'ment': 'सामान्य मानसिक योग्यता',
+               'math': 'सामान्य गणित', 'hin': 'सामान्य हिंदी', 'eng': 'सामान्य अंग्रेज़ी'}
+
+
+def FAQ_CGV(total, npapers):
+    return [
+      ('Where can I get CG Vyapam Assistant Grade 3 previous year question papers with answers?',
+       f'This page has {total} questions from {npapers} Vyapam papers of 2021 with the same six parts as the 2027 exam: the VDAG21 (Data Entry Operator & '
+       'Assistant Grade-3) and AGDO21 (Assistant Grade-3 & Data Entry Operator) papers of 200 questions each, and the general paper of the Stenographer & '
+       'Stenotypist exam of 26 December 2021. Each answer is from Vyapam\'s final key, with an explanation in Hindi and English.'),
+      ('Are the answers official?',
+       'Yes. Every answer is from Vyapam\'s final answer key for that exam. Questions Vyapam deleted are left out. Where an answer looks doubtful, the '
+       'explanation says so. The explanations are written by Learn with Anil.'),
+      ('What is the CG Vyapam Group 2 exam pattern for 2027?',
+       'One objective paper of 100 questions for 100 marks in 2 hours: Computer 20, General Studies 20, Chhattisgarh GK 20, Mental Ability 10, General Maths 10, '
+       'General Hindi 10 and General English 10. One mark for a right answer and a quarter mark cut for a wrong one; the paper is in Hindi and English.'),
+      ('When is the CG Vyapam Group 2 exam?',
+       'On Sunday, 10 January 2027, from 10:00 am to 12:15 pm, at the five divisional headquarters. Admit cards are expected on 4 January 2027.'),
+      ('What is the last date to apply?',
+       'Online applications on cgssb.cgstate.gov.in are open from 5 November to 27 November 2026 (5 pm); corrections are allowed from 28 to 30 November 2026.'),
+      ('Is there a CG Vyapam mock test?',
+       'Yes. Every paper here can be taken as a full mock test with negative marking, and the sectional tests take all the previous questions of one part, '
+       'such as Computer or Chhattisgarh GK. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
 # ---------- RRB Group D (Level-1 posts, CEN 08/2024): RRB's own question papers with the answer key (Anil, 15 Nov 2026: "RRB Group D...add pyqs and other
 # details like other exams"). Source: RRB's "question paper with answer key" for each shift (options in green with a tick = RRB's answer), in English and
 # Hindi, as hosted by AglaSem; the Hindi sheets are another candidate's copy, so the Hindi was matched question by question and put in English option order.
@@ -2527,6 +2646,40 @@ def exam_confs():
                         "copies, answered from UPPSC's key sheets of 8 December 2021. UPPSC published these keys for objections and has not put final keys online, so "
                         "a few answers may have changed later; the explanation says so where an answer looks doubtful. General Studies is in Hindi and English, "
                         "General Hindi in Hindi.")),
+      dict(id='ukpsc-lower-pcs', dir='ukpsc-lower-pcs', src='ukpsc-lower-pcs', key='uk-lpcs', name='UKPSC Lower PCS', short='UKPSC Lower PCS', seo='UKPSC Lower PCS',
+           slugp='ukpsc-lower-pcs', papers=UKL_PAPERS, subjects=UKL_SUBJECTS, faq=FAQ_UKL, board='UKPSC', l2=L2_HI, pb='/ukpsc-lower-pcs/',
+           keyname="UKPSC's final answer key", keyshort="UKPSC's final key",
+           hi_name='यूकेपीएससी अवर अधीनस्थ सेवा (लोअर पीसीएस)', hi_paper='प्रश्न पत्र', subj_te=UKL_SUBJ_HI,
+           title="UKPSC Lower PCS Previous Year Question Papers with Answers – Prelims 2024 & 2021, Hindi & English | Learn with Anil",
+           h1='UKPSC Lower PCS previous year question papers <em>with answers.</em>',
+           aka=('Uttarakhand Public Service Commission (UKPSC) Combined State (Civil) Lower Subordinate Services Examination (Lower PCS / Lower Subordinate) '
+                'Preliminary: General Studies & General Aptitude Test. UKPSC\'s own booklets with its final answer keys.'),
+           aka_short='UKPSC Combined State (Civil) Lower Subordinate Services (Lower PCS) Prelims',
+           l2line='उत्तराखंड लोक सेवा आयोग सम्मिलित राज्य (सिविल) अवर अधीनस्थ सेवा (लोअर पीसीएस) प्रारंभिक परीक्षा के पिछले प्रश्न पत्र (2024, 2021) और समीक्षा अधिकारी/सहायक समीक्षा अधिकारी 2023 — आयोग की अंतिम उत्तर कुंजी के साथ; हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           desc=lambda t: (f"UKPSC Lower PCS previous year question papers with answers: the Lower Subordinate prelims 2024 and 2021 and the RO/ARO prelims 2023 "
+                           f"(UKPSC's own booklets), {t:,} questions in Hindi and English with UKPSC's final key and explanations; Uttarakhand GK, General Aptitude "
+                           f"and General Studies practice and 2-hour mock tests for UKPSC Lower PCS 2026 (Advt. A-1/E-2/DR/LSS/2026-27)."),
+           eyebrow='UKPSC · Combined State (Civil) Lower Subordinate Services',
+           papers_note=("Each paper is UKPSC's own Series A booklet (published on psc.uk.gov.in), with every answer from UKPSC's final answer key. Every question is "
+                        "in Hindi and English, as printed. Questions UKPSC dropped or gave marks to everyone for are left out. The RO/ARO prelims 2023 is included "
+                        "because it has the same General Studies & General Aptitude paper of 150 questions.")),
+      dict(id='cg-vyapam-group-2', dir='cg-vyapam-group-2', src='cg-vyapam-group-2', key='cg-g2', name='CG Vyapam Group 2', short='CG Vyapam', seo='CG Vyapam',
+           slugp='cg-vyapam', papers=CGV_PAPERS, subjects=CGV_SUBJECTS, faq=FAQ_CGV, board='CG Vyapam', l2=L2_HI, pb='/cg-vyapam-group-2/',
+           keyname="Vyapam's final answer key", keyshort="Vyapam's final key",
+           hi_name='छत्तीसगढ़ व्यापम (कर्मचारी चयन मण्डल) समूह-2', hi_paper='प्रश्न पत्र', subj_te=CGV_SUBJ_HI,
+           title="CG Vyapam Assistant Grade 3 Previous Year Question Papers with Answers – Group 2 (2021 Papers), Hindi & English | Learn with Anil",
+           h1='CG Vyapam Group 2 previous year question papers <em>with answers.</em>',
+           aka=('Chhattisgarh Karmchari Chayan Mandal (CGSSB, formerly CG Vyapam) Group-2 Class III (graduate level) Sub-group-02 exam: Assistant Grade-3, '
+                'Stenographer, Steno Typist, Data Entry Operator, Registration Clerk and ASI. Vyapam\'s own 2021 booklets with its final answer keys.'),
+           aka_short='CG Vyapam (CGSSB) Group 2: Assistant Grade-3, Stenographer, DEO & ASI',
+           l2line='छत्तीसगढ़ व्यापम (कर्मचारी चयन मण्डल) के पिछले प्रश्न पत्र — सहायक ग्रेड-3 एवं डाटा एंट्री ऑपरेटर (वीडीएजी 2021, एजीडीओ 2021) और शीघ्रलेखक 2021 सामान्य प्रश्न पत्र, व्यापम की अंतिम उत्तर कुंजी के साथ; कंप्यूटर, छत्तीसगढ़ सामान्य ज्ञान, गणित, हिंदी; हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           desc=lambda t: (f"CG Vyapam Assistant Grade 3 previous year question papers with answers: VDAG 2021, AGDO 2021 and the Stenographer 2021 general paper "
+                           f"(Vyapam's own booklets), {t:,} questions in Hindi and English with Vyapam's final key and explanations; Computer, Chhattisgarh GK, "
+                           f"Maths and Hindi practice and mock tests for the CGSSB Group 2 exam of 10 January 2027."),
+           eyebrow='CG Vyapam (CGSSB) · Group 2: Assistant Grade-3, Steno, DEO, ASI',
+           papers_note=("Each paper is Vyapam's own Set A booklet (published on cgssb.cgstate.gov.in), with every answer from Vyapam's final answer key. Questions "
+                        "are in Hindi and English, except the Hindi section (Hindi only) and the English section (English only). Questions Vyapam deleted are "
+                        "left out. These 2021 papers have the same six parts as the 2027 exam, with more questions (200, or 150 in the steno paper).")),
     ] + bank_confs()
 
 
@@ -3055,6 +3208,8 @@ def exam_terms(e, cat):
     if e['id'] == 'sbi-po': words += ['sbi', 'state bank', 'state bank of india', 'po', 'probationary officer', 'bank po', 'banking', 'bank exam', 'sbi po mock test']
     if e['id'] == 'ibps-so': words += ['ibps', 'so', 'specialist officer', 'it officer', 'agriculture field officer', 'afo', 'hr officer', 'personnel officer', 'marketing officer', 'banking', 'bank exam', 'ibps so mock test']
     if e['id'] == 'karnataka-fda-sda': words += ['kea', 'karnataka examinations authority', 'kpsc', 'fda', 'sda', 'first division assistant', 'second division assistant', 'fda sda', 'karnataka fda', 'karnataka sda', 'group c', 'group-c', 'junior assistant', 'gp secretary', 'accounts assistant', 'warden', 'karnataka', 'kannada', 'general kannada', 'kalyana karnataka', 'hyderabad karnataka', 'ಎಫ್‌ಡಿಎ', 'ಎಸ್‌ಡಿಎ', 'ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ', 'ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ', 'ಸಾಮಾನ್ಯ ಕನ್ನಡ']
+    if e['id'] == 'ukpsc-lower-pcs': words += ['ukpsc', 'uttarakhand public service commission', 'uttarakhand', 'uk', 'lower pcs', 'lower subordinate', 'lower subordinate services', 'combined state civil', 'naib tehsildar', 'excise inspector', 'marketing inspector', 'supply inspector', 'labour enforcement officer', 'cane development inspector', 'uttarakhand gk', 'general aptitude', 'ro aro', 'ukpsc lower pcs previous year paper', 'uttarakhand lower pcs question paper', 'uksssc']
+    if e['id'] == 'cg-vyapam-group-2': words += ['cg vyapam', 'vyapam', 'cgssb', 'chhattisgarh', 'cg', 'karmchari chayan mandal', 'chhattisgarh staff selection board', 'group 2', 'assistant grade 3', 'assistant grade-3', 'sahayak grade 3', 'data entry operator', 'deo', 'stenographer', 'steno typist', 'registration clerk', 'asi', 'cg gk', 'chhattisgarh gk', 'computer', 'vdag', 'agdo', 'cg vyapam previous year paper', 'cg vyapam assistant grade 3 question paper']
     if e['id'] == 'uppsc-ro-aro': words += ['uppsc', 'uttar pradesh public service commission', 'ro', 'aro', 'ro/aro', 'ro aro', 'review officer', 'assistant review officer', 'samiksha adhikari', 'sahayak samiksha adhikari', 'up', 'uttar pradesh', 'general hindi', 'up gk', 'prelims', 'uppsc ro aro mock test', 'यूपीपीएससी', 'समीक्षा अधिकारी', 'सहायक समीक्षा अधिकारी', 'आरओ', 'एआरओ', 'सामान्य हिंदी']
     if e['id'] == 'upsssc-inter-level': words += ['upsssc', 'uttar pradesh subordinate services selection commission', 'up', 'uttar pradesh', 'inter level', 'intermediate level', 'inter level mains', 'mains', 'pet', 'pet 2025', 'lekhpal', 'gram vikas adhikari', 'vdo', 'gram panchayat adhikari', 'gpa', 'vpo', 'amin', 'vanijya kar sangrah amin', 'bhumi arjan amin', 'samaj kalyan paryavekshak', 'lower subordinate', 'lower pcs', 'up gk', 'hindi', 'upsssc mock test', 'यूपीएसएसएससी', 'लेखपाल', 'ग्राम विकास अधिकारी', 'ग्राम पंचायत अधिकारी', 'इंटर स्तरीय', 'मुख्य परीक्षा']
     if e['id'] == 'gsssb-cce': words += ['gsssb', 'gujarat subordinate service selection board', 'gujarat gaun seva pasandgi mandal', 'cce', 'cce 2.0', 'combined competitive exam', 'class 3', 'class-3', 'class iii', 'group a', 'group b', 'gujarat', 'gujarati', 'junior clerk', 'senior clerk', 'head clerk', 'office assistant', 'social welfare inspector', 'sub registrar', 'gsssb clerk', 'ojas', 'gsssb mock test', 'જુનિયર ક્લાર્ક', 'સિનિયર ક્લાર્ક', 'ગૌણ સેવા', 'જીએસએસએસબી', 'સંયુક્ત સ્પર્ધાત્મક પરીક્ષા']
@@ -3152,6 +3307,8 @@ BOARD_PHOTO = {   # free-licence photos from Wikimedia Commons, cropped to 640x2
     'mh': ('Gateway of India, Mumbai', 'Joe Ravi', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Gateway_Of_India.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
     'up': ('Taj Mahal, Agra', 'Yann, edited by King of Hearts', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit2.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),
     'gj': ('Rani ki Vav, Patan', 'Bernard Gagnon', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Rani_ki_vav_01.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),   # Gujarat (16 Nov 2026)
+    'uk': ('Kedarnath Temple', 'Shaq774', 'public domain', 'https://commons.wikimedia.org/wiki/File:Kedarnath_Temple.jpg', ''),   # Uttarakhand (16 Nov 2026)
+    'cg': ('Chitrakote Falls, Bastar', 'Moulina kumar', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:The_ravishing_beauty_of_Chitrakote_falls.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),   # Chhattisgarh (16 Nov 2026)
     'br': ('Bihar Legislature, Patna', 'Innocentbunny', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Bihar_Legislature_Building.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
 }
 
@@ -3295,6 +3452,8 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'uppsc-pcs': ('Bara Imambara, Lucknow', 'Harsh13596', 'CC BY-SA 4.0', _CW + 'Imambara_of_Asaf-ud-daula_.jpg'),
     'bpsc-cce': ('Golghar, Patna', 'Deepak1408', 'CC BY-SA 4.0', _CW + 'Golghar_patna_Bihar_India.jpg'),
     'bpsc-tre': ('Sariputta Stupa, Nalanda Mahavihara', 'Sumitsurai', 'CC BY-SA 4.0', _CW + 'Temple_3_-_Sariputta_Stupa_-_Nalanda_Mahavihara_(10).jpg'),
+    'ukpsc-lower-pcs': ('Har Ki Pauri, Haridwar', 'Whispyhistory', 'CC BY-SA 4.0', _CW + 'Har_Ki_Pauri_and_Clock_Tower_of_Haridwar.jpg'),   # UKPSC Lower PCS (16 Nov 2026)
+    'cg-vyapam-group-2': ('Bhoramdeo Temple, Kawardha', 'Pankaj Oudhia', 'CC BY-SA 3.0', _CW + 'Bhoramdeo_Temple,_Kawardha.jpg'),   # CG Vyapam Group 2 (16 Nov 2026)
 }
 
 
@@ -3328,7 +3487,7 @@ def lang_fills():
 NAV_FUND = ('      <a class="nav-fund" href="/funders.html" title="Fund this project" data-hubonly><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'
             '<path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 5 6.4 5c2 0 3.4 1.1 4.1 2.3h3C14.2 6.1 15.6 5 17.6 5 21 5 23.1 8.5 21.6 11.8 19.5 16.4 12 21 12 21Z"/></svg>'
             '<span>Fund<span class="nf-x"> this project</span></span></a>\n')   # Anil, 2 Nov 2026: "add fund the project...here" (start page top bar)
-BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'tn', 'ka', 'kl', 'mh', 'gj', 'up', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
+BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'tn', 'ka', 'kl', 'mh', 'gj', 'up', 'uk', 'cg', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
 
 
 def hub_html(catalog, counts, grand):
@@ -4100,7 +4259,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -5069,6 +5228,36 @@ LANDINGS = {
             '<p class="note">UPPSC RO/ARO 2026: <a href="/uppsc-ro-aro-notification-2026.html">501 posts (Advt. A-4/E-1/2026), apply by 26 November 2026</a>. '
             'Full papers with the real timer: <a href="/uppsc-ro-aro/mock-test.html">UPPSC RO/ARO mock test</a>.</p>',
       te={'UPPSC RO/ARO': 'यूपीपीएससी आरओ/एआरओ प्रश्न पत्र'},
+      order=lambda c: 0),
+  'ukpsc-pyqs.html': dict(   # Anil, 15 Nov 2026: Uttarakhand Lower PCS
+      board='UKPSC', ename='UKPSC', crumb='UKPSC PYQs', lang='hi',
+      title='UKPSC Previous Year Question Papers with Answers – Lower PCS Prelims 2024 & 2021, RO/ARO 2023, Hindi & English | Learn with Anil',
+      desc='UKPSC (Uttarakhand Public Service Commission) previous year question papers in one place: Lower PCS (Lower Subordinate) prelims 2024 and 2021 and '
+           'RO/ARO prelims 2023, {n} questions with UKPSC\'s final keys and explanations in Hindi and English. Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='UKPSC previous question papers with answers',
+      lede="Every UKPSC question paper on Learn with Anil, {n} questions in all, each with UKPSC's final answer key and a short explanation in Hindi and English.",
+      intro='<p>Looking for the UKPSC Lower PCS question paper with the answer key, Uttarakhand GK previous questions, or a UKPSC mock test in Hindi? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="hi">उत्तराखंड लोक सेवा आयोग की अवर अधीनस्थ सेवा (लोअर पीसीएस) प्रारंभिक परीक्षा 2024 और 2021 तथा समीक्षा अधिकारी/सहायक समीक्षा अधिकारी 2023 के प्रश्न पत्र '
+            'आयोग की अंतिम उत्तर कुंजी के साथ — उत्तराखंड सामान्य ज्ञान, सामान्य अध्ययन, सामान्य अभिरुचि; हिंदी और अंग्रेज़ी में व्याख्या।</p>'
+            '<p class="note">UKPSC Lower PCS 2026: <a href="/ukpsc-lower-pcs-notification-2026.html">54 posts (Advt. A-1/E-2/DR/LSS/2026-27), apply by 26 November 2026</a>. '
+            'Full papers with a 2-hour timer: <a href="/ukpsc-lower-pcs/mock-test.html">UKPSC Lower PCS mock test</a>.</p>',
+      te={'UKPSC Lower PCS': 'यूकेपीएससी लोअर पीसीएस प्रश्न पत्र'},
+      order=lambda c: 0),
+  'cg-vyapam-pyqs.html': dict(   # Anil, 15 Nov 2026: Chhattisgarh Vyapam Group 2
+      board='CG Vyapam', ename='CG Vyapam', crumb='CG Vyapam PYQs', lang='hi',
+      title='CG Vyapam Previous Year Question Papers with Answers – Assistant Grade 3, DEO & Steno 2021, Hindi & English | Learn with Anil',
+      desc='CG Vyapam (Chhattisgarh Karmchari Chayan Mandal, CGSSB) previous year question papers in one place: VDAG 2021, AGDO 2021 and the Stenographer 2021 '
+           'general paper, {n} questions with Vyapam\'s final keys and explanations in Hindi and English. Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='CG Vyapam previous question papers with answers',
+      lede="Every CG Vyapam question paper on Learn with Anil, {n} questions in all, each with Vyapam's final answer key and a short explanation in Hindi and English.",
+      intro='<p>Looking for the CG Vyapam Assistant Grade 3 question paper with answers, Chhattisgarh GK and computer previous questions, or a CG Vyapam mock test in Hindi? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="hi">छत्तीसगढ़ व्यापम के पिछले प्रश्न पत्र — सहायक ग्रेड-3 एवं डाटा एंट्री ऑपरेटर (वीडीएजी 2021, एजीडीओ 2021) और शीघ्रलेखक 2021 सामान्य प्रश्न पत्र, '
+            'व्यापम की अंतिम उत्तर कुंजी के साथ — कंप्यूटर, छत्तीसगढ़ सामान्य ज्ञान, मानसिक योग्यता, गणित, हिंदी, अंग्रेज़ी; हिंदी और अंग्रेज़ी में व्याख्या।</p>'
+            '<p class="note">CG Vyapam (CGSSB) Group 2: <a href="/cg-vyapam-group-2-notification-2026.html">1,703 posts, apply by 27 November 2026, exam on 10 January 2027</a>. '
+            'Full papers with the timer: <a href="/cg-vyapam-group-2/mock-test.html">CG Vyapam mock test</a>.</p>',
+      te={'CG Vyapam': 'छत्तीसगढ़ व्यापम प्रश्न पत्र'},
       order=lambda c: 0),
 }
 
@@ -6188,7 +6377,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways (RRB): NTPC, Group D'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2')]
 
 
 def news_hub_page(loaded, rels):
@@ -6489,6 +6678,8 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'upsc-prelims': ('UPSC Civil Services (Preliminary) Examination 2027', '2027-05-23', 'UPSC Calendar 2027.'),
   'tnpsc-group-4': ('TNPSC Group 4 (CCSE-IV) written exam', '2027-01-10', 'TNPSC Notification No. 11/2026 of 6 October 2026 (exam dashboard on tnpsc.gov.in).'),
   'karnataka-fda-sda': ('KEA FDA/SDA competitive exam (FDA-level papers, Kalyana Karnataka)', '2027-01-09', 'KEA notifications of 29 October 2026: Kannada language test 8 January; FDA-level papers 9 (KK) and 10 January (RPC); SDA-level papers 16 (KK) and 17 January 2027 (RPC).'),
+  'ukpsc-lower-pcs': ('UKPSC Lower PCS Prelims 2026 (Advt. A-1/E-2/DR/LSS/2026-27)', None, 'UKPSC Advt. A-1/E-2/DR/LSS/2026-27: applications 6 to 26 November 2026; UKPSC has not announced the prelims date yet.'),
+  'cg-vyapam-group-2': ('CG Vyapam (CGSSB) Group 2 written exam (G20227)', '2027-01-10', 'CGSSB press note of 5 November 2026: exam on 10 January 2027, 10:00 am to 12:15 pm.'),
   'uppsc-ro-aro': ('UPPSC RO/ARO Prelims 2026 (Advt. A-4/E-1/2026)', None, 'UPPSC Advt. A-4/E-1/2026: applications 26 October to 26 November 2026; UPPSC has not announced the prelims date yet.'),
   'upsssc-inter-level': ('UPSSSC Intermediate Level Mains (Advt. 26-Exam/2026)', None, 'UPSSSC Advt. No. 26-Exam/2026: applications 10 November to 1 December 2026; UPSSSC has not announced the Mains date yet.'),
   'gsssb-cce': ('GSSSB CCE 2.0 (Advt. 468/2026-27) Preliminary exam', None, 'GSSSB Advt. No. 468/2026-27: applications 5 to 30 November 2026; GSSSB has not announced the prelims date yet.'),
@@ -7283,7 +7474,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -7300,7 +7491,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
-<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li></ul>
+<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li></ul>
 </main></body></html>
 """
 
