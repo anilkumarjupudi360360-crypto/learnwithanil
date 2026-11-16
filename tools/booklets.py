@@ -29,11 +29,13 @@ esc = B.esc
 LOGO = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(ROOT, 'src', 'static', 'icon-192.png'), 'rb').read()).decode()
 BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC': 'ANDHRA PRADESH PUBLIC SERVICE COMMISSION',
               'SLPRB': 'STATE LEVEL POLICE RECRUITMENT BOARD, ANDHRA PRADESH', 'RRB': 'RAILWAY RECRUITMENT BOARDS · RAILWAY PROTECTION FORCE',
-              'AP DSC': 'COMMISSIONERATE OF SCHOOL EDUCATION, GOVERNMENT OF ANDHRA PRADESH', 'TNPSC': 'TAMIL NADU PUBLIC SERVICE COMMISSION'}
+              'AP DSC': 'COMMISSIONERATE OF SCHOOL EDUCATION, GOVERNMENT OF ANDHRA PRADESH', 'TNPSC': 'TAMIL NADU PUBLIC SERVICE COMMISSION',
+              'KEA': 'KARNATAKA EXAMINATIONS AUTHORITY'}
 BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
 SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
-          'appsc-eo': {'e2025a': 'A', 'e2025b': 'A'}, 'tnpsc-group-4': {'t24': 'A', 't22': 'A'}}
+          'appsc-eo': {'e2025a': 'A', 'e2025b': 'A'}, 'tnpsc-group-4': {'t24': 'A', 't22': 'A'},
+          'karnataka-fda-sda': {'f11g': 'A1', 'f11k': 'A1', 's25g': 'B1', 's25k': 'A1', 'k22g': 'A1', 'k22k': 'A1'}}
 # released mocks with a booklet: exam -> [(mock id, pack, mock name)]; their keys are in BOOKS_PRIV/mock-keys.json
 MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-constable': [('mk-pc-1', 'Mission Khaki – Constable', 'Mock 1')]}
 
@@ -54,6 +56,7 @@ def time_marks(conf, p):
     if conf['id'] == 'appsc-fro': return '150 Minutes', 150   # FRO Screening and each Mains paper: 150 questions, 150 marks
     if conf['id'] == 'rrb-group-d': return '90 Minutes', 100   # RRB Group D CBT: 100 questions, 1 mark each
     if conf['id'] == 'tnpsc-group-4': return '3 Hours', 300   # TNPSC Group 4: 200 questions (Part A 150 marks, Parts B-C 150 marks)
+    if conf['id'] == 'karnataka-fda-sda': return '2 Hours', 100   # KEA FDA/SDA: each paper 100 questions, 100 marks, 2 hours
     return (f'{p["mins"]} Minutes' if p.get('mins') else ''), ''
 
 CSS = """
@@ -62,6 +65,7 @@ html,body{margin:0}
 body{font:9.6pt/1.38 'Source Sans 3',sans-serif;color:#111}
 [lang=te]{font-family:'Noto Sans Telugu','Source Sans 3',sans-serif;line-height:1.5}
 [lang=ta]{font-family:'Noto Sans Tamil','Source Sans 3',sans-serif;line-height:1.5}
+[lang=kn]{font-family:'Noto Sans Kannada','Source Sans 3',sans-serif;line-height:1.55}
 [lang=hi]{font-family:'Noto Sans Devanagari','Source Sans 3',sans-serif;line-height:1.5}
 .wm{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:0}
 .wm div{transform:rotate(-35deg);text-align:center;opacity:.07}
@@ -115,7 +119,7 @@ def script_lang(t):
     """'te' / 'hi' when a question has no English and is printed in Telugu / Hindi only (AP DSC language papers), else ''."""
     if re.search(r'[A-Za-z]{3,}', t or ''): return ''
     return ('te' if re.search(r'[\u0C00-\u0C7F]', t or '') else 'hi' if re.search(r'[\u0900-\u097F]', t or '')
-            else 'ta' if re.search(r'[\u0B80-\u0BFF]', t or '') else '')   # TNPSC Group 4 Part A is in Tamil only
+            else 'ta' if re.search(r'[\u0B80-\u0BFF]', t or '') else 'kn' if re.search(r'[\u0C80-\u0CFF]', t or '') else '')   # TNPSC Group 4 Part A is in Tamil only; KEA Paper-2 General Kannada in Kannada only
 
 
 def q_html(q, l2):
@@ -143,11 +147,12 @@ def paper_doc(conf, p, qs, mock=None):
     l2 = conf['l2']
     board = BOARD_NAME_EXAM.get(conf['id']) or BOARD_NAME.get(conf['board'], conf['board'])
     time_allowed, marks = time_marks(conf, p)
-    m = re.search(r'booklet ([A-Z])\b', p.get('notif', '')) or (re.match(r'([A-Z])$', SERIES.get(conf['id'], {}).get(p['id'], '')))
-    series = (f'<div class="s">BOOKLET<b>{m.group(1)}</b>SERIES</div>' if m else '<div class="s lwa">LEARN<br>WITH<br>ANIL</div>')
+    m = re.search(r'booklet ([A-Z])\b', p.get('notif', '')) or (re.match(r'([A-Z]\d?)$', SERIES.get(conf['id'], {}).get(p['id'], '')))
+    series = ((f'<div class="s">VERSION<b>{m.group(1)}</b>CODE</div>' if len(m.group(1)) > 1 else f'<div class="s">BOOKLET<b>{m.group(1)}</b>SERIES</div>')   # KEA booklets carry a version code (A1, B1 ...)
+              if m else '<div class="s lwa">LEARN<br>WITH<br>ANIL</div>')
     sub = re.sub(r'\s*·\s*booklet [A-Z]\b.*$', '', p.get('notif', ''))
     key = p.get('key') or ("APPSC's final key" if conf['board'] == 'APPSC' else conf.get('keyname') or 'the official key')
-    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC)\s+', '', p['title'])
+    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA)\s+', '', p['title'])
     l2name = l2['name'] if not p.get('en_only') and any(q.get('qt') for q in qs) else ''
     when = f' · Held on {esc(p["held"])}' if p.get('held') else ''
     if mock: board = 'LEARN WITH ANIL · ' + mock.upper() + ' TEST SERIES'

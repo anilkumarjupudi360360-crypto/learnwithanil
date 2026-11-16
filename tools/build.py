@@ -542,6 +542,98 @@ def FAQ_TN4(total, npapers):
     ]
 
 
+# ---------- KEA FDA / SDA (Karnataka Group-C, First and Second Division Assistant and equivalent posts) ----------
+# Anil, 15 Nov 2026: "Karnataka: FDA/SDA, apply by 25 November; exams 8-17 January 2027 ... add these exams pyqs also and other details ...
+# one exam at a time". The 2026 recruitment is run by the Karnataka Examinations Authority (KEA), not KPSC: four notices of 29 October 2026
+# (ED/KEA/14-17/Recruitment/2026; FDA and SDA level, rest of Karnataka (RPC) and Kalyana Karnataka (KK)), 5,431 posts. Its pattern (Paper-1
+# General Knowledge, Paper-2 Kannada, English & Computer Knowledge, 100 questions each, 2 hours, 1/4 negative) is the one KEA already used for
+# the Group-C posts of its 2025 "various departments" recruitment, so the previous papers are those: KEA's own scans of the question booklets
+# (KEA "previous question papers with key answers" archive, cetonline.karnataka.gov.in/kea/QP2026.aspx) with KEA's provisional keys plus
+# KEA's revised-key corrections (the final keys). Key "G" (grace: deleted) left out; two accepted answers both marked correct.
+# Paper-1 and the Computer part of Paper-2 are printed in Kannada and English; Paper-2 General Kannada is Kannada only (its Kannada text fills
+# both the main and the Kannada slots), General English is English only. Work files (container): /home/claude/ka (SPEC.md, CHECK.md, tools/,
+# work/keys.json, work/chk/*.jsonl, tools/merge.py).
+KFS_BLURB1 = ('Paper-1 General Knowledge: 100 questions, 100 marks, 2 hours, in Kannada and English; a quarter mark is deducted for each wrong '
+              'answer (and for a question left blank without shading the fifth circle).')
+KFS_BLURB2 = ('Paper-2 Kannada, English & Computer Knowledge: 100 questions (General Kannada, General English, Computer Knowledge), 100 marks, '
+              '2 hours; a quarter mark is deducted for each wrong answer.')
+def _kfs(pid, level, cadre, paper, held, ver, code, notif, keydate, file_, slug):
+    gk = paper == 1
+    subj = 'General Knowledge' if gk else 'Kannada, English & Computer Knowledge'
+    cad = ' (Kalyana Karnataka)' if cadre == 'KK' else ''
+    return dict(id=pid, file=file_, year=2026, stage=f'{level}-level Paper-{paper}', short=f'{level} {held.split()[1][:3]} 2026 · P{paper}',
+                title=f'KEA {level} 2026{cad} Paper-{paper}: {subj}', notif=f'{notif} · version {ver}' + (f', subject code {code}' if code else ''),
+                held=held, key=f"KEA's revised key ({keydate})", fmt='mcq', slug=slug, kwname=f'KEA {level} 2026{cad} {"General Knowledge" if gk else "Kannada English Computer"}',
+                kn_paper=('ಸಾಮಾನ್ಯ ಜ್ಞಾನ ಪತ್ರಿಕೆ-1' if gk else 'ಕನ್ನಡ, ಇಂಗ್ಲಿಷ್, ಕಂಪ್ಯೂಟರ್ ಜ್ಞಾನ ಪತ್ರಿಕೆ-2'), blurb=KFS_BLURB1 if gk else KFS_BLURB2, mins=120)
+_N_RPC = 'KEA Various Departments Recruitment 2025 (RPC), Notification ED/KEA/ADMN/CR.04/2024-25'
+_N_KK = 'KEA Various Departments Recruitment 2025 (Kalyana Karnataka), Notification ED/KEA/ADMN/CR.05/2024-25'
+KFS_PAPERS = [
+  _kfs('f11g', 'FDA', 'RPC', 1, '11 January 2026', 'A1', 'GFRM11126', _N_RPC, '17 January 2026', 'kea-fda-2026-paper-1.txt', 'kea-fda-2026-general-knowledge-question-paper-with-answers'),
+  _kfs('f11k', 'FDA', 'RPC', 2, '11 January 2026', 'A1', 'KFRA11126', _N_RPC, '17 January 2026', 'kea-fda-2026-paper-2.txt', 'kea-fda-2026-kannada-english-computer-question-paper-with-answers'),
+  _kfs('s25g', 'SDA', 'RPC', 1, '25 January 2026', 'B1', '', _N_RPC, '30 January 2026', 'kea-sda-2026-paper-1.txt', 'kea-sda-2026-general-knowledge-question-paper-with-answers'),
+  _kfs('s25k', 'SDA', 'RPC', 2, '25 January 2026', 'A1', '', _N_RPC, '30 January 2026', 'kea-sda-2026-paper-2.txt', 'kea-sda-2026-kannada-english-computer-question-paper-with-answers'),
+  _kfs('k22g', 'SDA', 'KK', 1, '22 February 2026', 'A1', 'GSKM22226', _N_KK, '2 March 2026', 'kea-sda-kk-2026-paper-1.txt', 'kea-sda-kalyana-karnataka-2026-general-knowledge-question-paper-with-answers'),
+  _kfs('k22k', 'SDA', 'KK', 2, '22 February 2026', 'A1', 'KSKA22226', _N_KK, '2 March 2026', 'kea-sda-kk-2026-paper-2.txt', 'kea-sda-kalyana-karnataka-2026-kannada-english-computer-question-paper-with-answers'),
+]
+KFS_SUBJECTS = [
+  ('his', 'History & Culture', 'history-culture', ['Ancient India', 'Medieval India', 'Modern India & Freedom Struggle', 'Karnataka History', 'Art & Culture']),
+  ('geo', 'Geography & Environment', 'geography-environment', ['Indian Geography', 'Karnataka Geography', 'World Geography', 'Environment & Ecology']),
+  ('pol', 'Indian Constitution & Polity', 'indian-constitution-polity', ['Constitution & Rights', 'Union & State Government', 'Judiciary & Constitutional Bodies', 'Panchayat Raj & Local Bodies']),
+  ('eco', 'Economy & Rural Development', 'economy-rural-development', ['Indian Economy', 'Karnataka Economy & Co-operation', 'Rural Development & Schemes', 'Money, Banking & Budget']),
+  ('sci', 'General Science & Technology', 'general-science', ['Physics', 'Chemistry', 'Biology', 'Science & Technology']),
+  ('cur', 'Current Affairs', 'current-affairs', ['National', 'Karnataka', 'International & Sports', 'Awards, Books & Persons']),
+  ('apt', 'Mental Ability', 'mental-ability', ['Arithmetic', 'Reasoning', 'Series & Puzzles']),
+  ('kan', 'General Kannada', 'general-kannada', ['Grammar', 'Vocabulary & Usage', 'Literature & Writers', 'Comprehension']),
+  ('eng', 'General English', 'general-english', ['Grammar', 'Vocabulary', 'Usage & Sentence Correction', 'Comprehension']),
+  ('comp', 'Computer Knowledge', 'computer-knowledge', ['Computer Fundamentals', 'MS Office & Applications', 'Internet, Networking & Security', 'Operating Systems & Software']),
+]
+KFS_SUBJ_KN = {'his': 'ಇತಿಹಾಸ ಮತ್ತು ಸಂಸ್ಕೃತಿ', 'geo': 'ಭೂಗೋಳ ಮತ್ತು ಪರಿಸರ', 'pol': 'ಭಾರತದ ಸಂವಿಧಾನ ಮತ್ತು ರಾಜ್ಯಶಾಸ್ತ್ರ', 'eco': 'ಅರ್ಥಶಾಸ್ತ್ರ ಮತ್ತು ಗ್ರಾಮೀಣಾಭಿವೃದ್ಧಿ',
+               'sci': 'ಸಾಮಾನ್ಯ ವಿಜ್ಞಾನ ಮತ್ತು ತಂತ್ರಜ್ಞಾನ', 'cur': 'ಪ್ರಚಲಿತ ವಿದ್ಯಮಾನಗಳು', 'apt': 'ಮಾನಸಿಕ ಸಾಮರ್ಥ್ಯ', 'kan': 'ಸಾಮಾನ್ಯ ಕನ್ನಡ',
+               'eng': 'ಸಾಮಾನ್ಯ ಇಂಗ್ಲಿಷ್', 'comp': 'ಕಂಪ್ಯೂಟರ್ ಜ್ಞಾನ'}
+
+
+def kfs_text():
+    """Wording for the KEA FDA/SDA page that depends on which papers are on the site."""
+    have = [p for p in KFS_PAPERS if p['id'] in have_src('karnataka-fda-sda', KFS_PAPERS)]
+    days = list(dict.fromkeys(p['held'] for p in have)) or ['11 January 2026']
+    return dict(n=len(have), held=', '.join(days[:-1]) + (' and ' if len(days) > 1 else '') + days[-1])
+
+
+def FAQ_KFS(total, npapers):
+    T = kfs_text()
+    return [
+      ('Where can I get KEA FDA and SDA previous year question papers with answers?',
+       f'This page has {total} questions from {npapers} papers of KEA\'s Group-C competitive exams held on {T["held"]}: the FDA-level papers '
+       '(rest of Karnataka, 11 January 2026), the SDA-level papers (rest of Karnataka, 25 January 2026) and the Kalyana Karnataka SDA-level papers '
+       '(22 February 2026), each with Paper-1 General Knowledge and Paper-2 Kannada, English & Computer Knowledge. Every paper is KEA\'s own question '
+       'booklet, with the answer from KEA\'s revised key and an explanation in Kannada and English.'),
+      ('Are the answers official?',
+       'Yes. Every answer is from KEA\'s key answers as revised after candidates\' objections (KEA published the revised keys on 17 January, '
+       '30 January and 2 March 2026). Where KEA\'s revised key accepts two options, both are marked correct; questions KEA deleted (grace marks) '
+       'are left out. The explanations are written by Learn with Anil.'),
+      ('What is the KEA FDA/SDA exam pattern?',
+       'Two papers on OMR sheets: Paper-1 General Knowledge (100 questions, 100 marks, 2 hours) and Paper-2 General Kannada, General English and '
+       'Computer Knowledge (100 questions, 100 marks, 2 hours). A quarter mark is deducted for each wrong answer, and also for a question left blank '
+       'unless its fifth circle is shaded. A candidate needs at least 35% in the competitive exam. Candidates who did not study Kannada as a first or '
+       'second language at SSLC or above also take a qualifying Kannada language test (150 marks, at least 50 to pass; it does not count for the rank).'),
+      ('Is the KEA FDA/SDA question paper available in Kannada?',
+       'Yes. Tap ಕನ್ನಡ at the top of the page. Paper-1 and the Computer Knowledge part of Paper-2 are shown in Kannada exactly as KEA printed them; '
+       'General Kannada is in Kannada only and General English in English only, as in the exam. The explanations are in Kannada and English.'),
+      ('Is there a KEA FDA/SDA mock test?',
+       'Yes. Every paper here can be taken as a full 100-question mock test with the real 2-hour limit and negative marking, and the sectional tests take '
+       'all the previous questions of one subject, such as General Kannada or Computer Knowledge. Answers and explanations open with the ₹45 '
+       'All-in-One Pass, which covers every exam on the site.'),
+      ('When is the KEA FDA and SDA exam in 2027?',
+       'KEA\'s four notifications of 29 October 2026 (5,431 posts) fix the Kannada language test for 8 January 2027; the FDA-level papers on 9 January '
+       '(Kalyana Karnataka) and 10 January 2027 (rest of Karnataka); and the SDA-level papers on 16 January (Kalyana Karnataka) and 17 January 2027 '
+       '(rest of Karnataka). Paper-1 is from 10.30 am to 12.30 pm and Paper-2 from 2.30 to 4.30 pm. Online applications close on 25 November 2026 '
+       '(fee by 26 November) on cetonline.karnataka.gov.in/kea.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
+
 # ---------- RRB Group D (Level-1 posts, CEN 08/2024): RRB's own question papers with the answer key (Anil, 15 Nov 2026: "RRB Group D...add pyqs and other
 # details like other exams"). Source: RRB's "question paper with answer key" for each shift (options in green with a tick = RRB's answer), in English and
 # Hindi, as hosted by AglaSem; the Hindi sheets are another candidate's copy, so the Hindi was matched question by question and put in English option order.
@@ -947,6 +1039,8 @@ L2_HI = dict(code='hi', dir='hi', label='हिंदी', name='Hindi', font='N
              gf='&family=Noto+Sans+Devanagari:wght@400;500;600;700')
 L2_TA = dict(code='ta', dir='ta', label='தமிழ்', name='Tamil', font='Noto Sans Tamil', ans='விடை',
              gf='&family=Noto+Sans+Tamil:wght@400;500;600;700')   # TNPSC (Anil, 15 Nov 2026: Tamil Nadu exams)
+L2_KN = dict(code='kn', dir='kn', label='ಕನ್ನಡ', name='Kannada', font='Noto Sans Kannada', ans='ಉತ್ತರ',
+             gf='&family=Noto+Sans+Kannada:wght@400;500;600;700')   # KEA FDA/SDA (Anil, 15 Nov 2026: Karnataka exams)
 
 
 def parse(paper, srcdir='', subj=SUBJ):
@@ -1099,7 +1193,7 @@ def load_exam(conf):
         if nown:
             if nown == len(qs): pp['fmt'], pp['own'] = 'mcq', 1   # four options now (ours + APPSC's answer); still All-in-One Pass only
             else: print(f'  ! {conf["short"]} {p["id"]}: options for {nown} of {len(qs)} questions only; paper stays quick-recall')
-        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel'):
+        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'kn_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel'):
             if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p) if PUBLIC_PDFS else ''
         alt = paper_alt(conf, p)
@@ -2093,6 +2187,23 @@ def exam_confs():
            papers_note=("Every paper is TNPSC's own question booklet, with the answer from TNPSC's final answer key. Part A (General Tamil) is printed only in Tamil; "
                         "Part B (General Studies and Aptitude) is printed in English and Tamil, and both are shown here. Option (E) \"Answer not known\" is left out. "
                         "Questions for which TNPSC accepted every option are left out; where TNPSC accepted two options, both are marked correct.")),
+      dict(id='karnataka-fda-sda', dir='karnataka-fda-sda', src='karnataka-fda-sda', key='ka-fs', name='KEA FDA & SDA', short='KEA FDA & SDA', seo='KEA FDA SDA',
+           slugp='kea-fda-sda', papers=KFS_PAPERS, subjects=KFS_SUBJECTS, faq=FAQ_KFS, board='KEA', l2=L2_KN, pb='/karnataka-fda-sda/',
+           keyname="KEA's revised key", keyshort="KEA's revised (final) keys",
+           kn_name='ಕೆಇಎ ಎಫ್‌ಡಿಎ ಎಸ್‌ಡಿಎ', subj_te=KFS_SUBJ_KN,
+           title="KEA FDA & SDA Previous Year Question Papers with Answers – 2026 (GK, Kannada, English, Computer), Kannada & English | Learn with Anil",
+           h1='KEA FDA &amp; SDA previous year question papers <em>with answers.</em>',
+           aka=('Karnataka Examinations Authority (KEA) Group-C recruitment: First Division Assistant (FDA), Second Division Assistant (SDA) and equivalent posts '
+                '(Accounts Assistant, Junior Assistant, GP Secretary, Warden). Paper-1 General Knowledge and Paper-2 Kannada, English & Computer Knowledge, with KEA\'s revised key.'),
+           aka_short='KEA Group-C: First and Second Division Assistant and equivalent posts',
+           l2line='ಕೆಇಎ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು ಅಂತಿಮ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಸಾಮಾನ್ಯ ಜ್ಞಾನ, ಸಾಮಾನ್ಯ ಕನ್ನಡ, ಇಂಗ್ಲಿಷ್, ಕಂಪ್ಯೂಟರ್ ಜ್ಞಾನ; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹45 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.',
+           desc=lambda t: (f"KEA FDA and SDA previous year question papers with answers from KEA's revised key: the 2026 FDA-level, SDA-level and Kalyana Karnataka "
+                           f"papers, Paper-1 General Knowledge and Paper-2 Kannada, English & Computer Knowledge. {t:,} questions in Kannada and English with explanations; "
+                           f"subject-wise practice and 2-hour timed mock tests for Karnataka FDA, SDA and Group-C aspirants."),
+           eyebrow='KEA · Karnataka Group-C: FDA & SDA · 2026',
+           papers_note=("Every paper is KEA's own question booklet, with the answer from KEA's revised key. Paper-1 and the Computer Knowledge part of Paper-2 are printed "
+                        "in Kannada and English, and both are shown here; General Kannada is in Kannada only and General English in English only. Questions KEA deleted "
+                        "(grace marks) are left out; where KEA accepted two options, both are marked correct.")),
     ] + bank_confs()
 
 
@@ -2231,7 +2342,7 @@ def main():
         def fill(s, photo, title, seo, desc=''):
             return (s.replace('{{HERO_P}}', HERO_P).replace('{{FIG12}}', FIG12)   # (first: they contain other placeholders)
                      .replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title).replace('{{DESC}}', esc(desc))
-                     .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf']).replace('{{TA_HIDDEN}}', '' if l2['code'] == 'ta' else ' hidden')
+                     .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf']).replace('{{TA_HIDDEN}}', '' if l2['code'] == 'ta' else ' hidden').replace('{{KN_HIDDEN}}', '' if l2['code'] == 'kn' else ' hidden')
                      .replace('{{LANGS}}', 'English' if papers and all(p.get('en_only') for p in papers) else 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
                      .replace('{{BOARD}}', conf['board'])
                      .replace('{{FOOTSRC}}', f'Mock tests written by Learn with Anil ({conf["board"]} does not publish its question papers).' if conf.get('mockonly') else
@@ -2553,6 +2664,8 @@ def paper_kw_l2(conf, p):
         return f'{conf["hi_name"]} {p.get("hi_paper") or conf["hi_paper"]} {p["year"]} प्रश्न पत्र, ' + ('उत्तर सहित' if p.get('nokey') else 'उत्तर कुंजी सहित')
     if conf.get('ta_name'):
         return f'{conf["ta_name"]} {p.get("ta_paper") or conf.get("ta_paper", "")} {p["year"]} வினாத்தாள் விடைகளுடன்'.replace('  ', ' ')
+    if conf.get('kn_name'):
+        return f'{conf["kn_name"]} {p["year"]} {p.get("kn_paper", "")} ಪ್ರಶ್ನೆಪತ್ರಿಕೆ ಉತ್ತರಗಳೊಂದಿಗೆ'.replace('  ', ' ')
     if conf['l2']['code'] == 'te':
         g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
         stage = 'ప్రిలిమ్స్' if p['stage'].startswith(('Screening', 'Prelims')) else 'మెయిన్స్'
@@ -2585,6 +2698,8 @@ def subject_l2_line(conf, s):
     if not name: return ''
     if conf['l2']['code'] == 'ta' and conf.get('ta_name'):
         return f'{conf["ta_name"]} {name} — முந்தைய ஆண்டு வினாக்கள், விடைகள், விளக்கங்களுடன்.'
+    if conf['l2']['code'] == 'kn' and conf.get('kn_name'):
+        return f'{conf["kn_name"]} {name} — ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಗಳು, ಉತ್ತರಗಳು ಮತ್ತು ವಿವರಣೆಗಳೊಂದಿಗೆ.'
     if conf.get('te_name'):
         if s['id'] == 'soc': name = 'నైతిక విలువలు, జెండర్ సెన్సిటివిటీ'
         return f'{conf["te_name"]} {name} ప్రాక్టీస్ బిట్స్ — మునుపటి సంవత్సరం ప్రశ్నలు, సమాధానాలు, వివరణలతో.'
@@ -2608,6 +2723,7 @@ def exam_terms(e, cat):
     if 'amvi' in e['id']: words += ['amvi', 'motor vehicle inspector', 'mvi', 'rto', 'transport department', 'automobile engineering', 'automobile']
     if e['id'] == 'sbi-po': words += ['sbi', 'state bank', 'state bank of india', 'po', 'probationary officer', 'bank po', 'banking', 'bank exam', 'sbi po mock test']
     if e['id'] == 'ibps-so': words += ['ibps', 'so', 'specialist officer', 'it officer', 'agriculture field officer', 'afo', 'hr officer', 'personnel officer', 'marketing officer', 'banking', 'bank exam', 'ibps so mock test']
+    if e['id'] == 'karnataka-fda-sda': words += ['kea', 'karnataka examinations authority', 'kpsc', 'fda', 'sda', 'first division assistant', 'second division assistant', 'fda sda', 'karnataka fda', 'karnataka sda', 'group c', 'group-c', 'junior assistant', 'gp secretary', 'accounts assistant', 'warden', 'karnataka', 'kannada', 'general kannada', 'kalyana karnataka', 'hyderabad karnataka', 'ಎಫ್‌ಡಿಎ', 'ಎಸ್‌ಡಿಎ', 'ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ', 'ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ', 'ಸಾಮಾನ್ಯ ಕನ್ನಡ']
     if e['id'] == 'tnpsc-group-4': words += ['tnpsc', 'group 4', 'group iv', 'group-4', 'tnpsc group 4', 'tn group 4', 'ccse 4', 'ccse-iv', 'vao', 'village administrative officer', 'junior assistant', 'typist', 'steno typist', 'bill collector', 'field surveyor', 'forest guard', 'forest watcher', 'tamil nadu', 'tamil', 'general tamil', 'pothu tamil', 'குரூப் 4', 'பொதுத் தமிழ்']
     if e['id'] == 'ssc-gd': words += ['ssc gd', 'gd constable', 'ssc constable', 'constable gd', 'general duty', 'capf constable', 'bsf', 'crpf', 'cisf', 'itbp', 'ssb', 'assam rifles', 'rifleman', 'ncb', 'sepoy', 'paramilitary', 'ssc gd mock test', 'jawan']
     if e['id'] == 'ap-dsc': words += ['dsc', 'ap dsc', 'mega dsc', 'trt', 'teacher recruitment', 'teacher', 'teachers', 'sgt', 'secondary grade teacher', 'school assistant', 'sa',
@@ -2751,6 +2867,7 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'rpf-si': ('Chhatrapati Shivaji Maharaj Terminus, Mumbai', 'Shashank Mehendale', 'CC BY-SA 4.0', _CW + 'Partial_wide_angle_exterior_view_of_Chhatrapati_Shivaji_Maharaj_Terminus.jpg'),
     'rpf-constable': ('Secunderabad Railway Station', 'Nikhilb239', 'CC BY 3.0', _CW + 'Secunderabad_Railway_Station_18082017.jpg'),
     'tnpsc-group-4': ('Fort St. George, Chennai', 'L.vivian.richard', 'public domain', _CW + 'Fort_St._George,_Chennai_2.jpg'),
+    'karnataka-fda-sda': ('Vidhana Soudha, Bengaluru', 'Wilhelm Tell DCCXLVI', 'CC0', _CW + 'Vidhana_Soudha,_14_February_2022_-_cropped.jpg'),   # KEA FDA & SDA (16 Nov 2026)
 }
 
 
@@ -2767,7 +2884,7 @@ def photo_credit(eid, prefix='Photo: '):
 # Live ones are named in the hero line, the badge, the counts and the score card; the others show as "coming soon" (the "+N" chip in the
 # language switcher, the badge, the figures). A language goes live only when questions exist in it; the switcher then needs its own button.
 SITE_LANGS = [('en', 'English', 'अंग्रेज़ी', 'ఇంగ్లీష్', True), ('te', 'తెలుగు', 'तेलुगु', 'తెలుగు', True), ('hi', 'हिंदी', 'हिंदी', 'హిందీ', True),
-              ('ta', 'தமிழ்', 'तमिल', 'తమిళం', True), ('kn', 'ಕನ್ನಡ', 'कन्नड़', 'కన్నడ', False), ('ml', 'മലയാളം', 'मलयालम', 'మలయాళం', False),
+              ('ta', 'தமிழ்', 'तमिल', 'తమిళం', True), ('kn', 'ಕನ್ನಡ', 'कन्नड़', 'కన్నడ', True), ('ml', 'മലയാളം', 'मलयालम', 'మలయాళం', False),
               ('mr', 'मराठी', 'मराठी', 'మరాఠీ', False)]
 
 
@@ -3450,6 +3567,7 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
 [lang="te"]{font-family:"Noto Sans Telugu",sans-serif;line-height:1.8}
 [lang="hi"]{font-family:"Noto Sans Devanagari",sans-serif;line-height:1.75}
 [lang="ta"]{font-family:"Noto Sans Tamil",sans-serif;line-height:1.75}
+[lang="kn"]{font-family:"Noto Sans Kannada",sans-serif;line-height:1.8}
 .q .te{border-left:3px solid var(--line);padding-left:12px;margin:8px 0 4px}
 :root{--bg:#F3F6FB;--surface:#fff;--ink:#0D1830;--muted:#55627C;--line:#D6DFEC;--accent:#1846C7;--accent-soft:#E2EAFC;--accent-text:#1440B8;--band:#0C2266;--band-ink:#EEF3FF;--good:#12804A;--good-soft:#DDF3E7}
 @media (prefers-color-scheme:dark){:root{--bg:#0A1020;--surface:#111A2E;--ink:#E5ECF8;--muted:#9AA8C3;--line:#26334F;--accent:#6F95FF;--accent-soft:#1A2A52;--accent-text:#9DB7FF;--band:#0F1F4E;--band-ink:#EEF3FF;--good:#41C080;--good-soft:#123426;color-scheme:dark}}
@@ -3552,7 +3670,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -4443,6 +4561,22 @@ LANDINGS = {
             '<p class="note">TNPSC Group 4 2026: <a href="/tnpsc-group-4-notification-2026.html">Notification No. 11/2026, 6,574 posts, exam on 10 January 2027</a>. '
             'Full papers with a 3-hour timer: <a href="/tnpsc-group-4/mock-test.html">TNPSC Group 4 mock test</a>.</p>',
       te={'TNPSC Group 4': 'டிஎன்பிஎஸ்சி குரூப் 4 வினாத்தாள்கள்'},
+      order=lambda c: 0),
+  'kea-pyqs.html': dict(   # Anil, 15 Nov 2026: Karnataka exams, starting with KEA FDA/SDA
+      board='KEA', ename='KEA', crumb='KEA PYQs', lang='kn',
+      title='KEA Previous Year Question Papers with Answers – FDA & SDA PYQs (GK, Kannada, English, Computer), Kannada & English | Learn with Anil',
+      desc='KEA (Karnataka Examinations Authority) previous year question papers in one place: the 2026 FDA-level, SDA-level and Kalyana Karnataka Group-C papers, '
+           'Paper-1 General Knowledge and Paper-2 Kannada, English & Computer Knowledge, {n} questions with KEA\'s revised key and explanations in Kannada and English. '
+           'Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='KEA previous question papers with answers',
+      lede="Every KEA question paper on Learn with Anil, {n} questions in all. Each is KEA's own question booklet with the answer from KEA's revised key, "
+           "and every question has a short explanation in Kannada and English.",
+      intro='<p>Looking for the KEA FDA or SDA question paper 2026 with the key answer, General Kannada (ಸಾಮಾನ್ಯ ಕನ್ನಡ) previous questions, or a Karnataka FDA SDA mock test in Kannada? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="kn">ಕೆಇಎ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು (2026) ಅಂತಿಮ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಸಾಮಾನ್ಯ ಜ್ಞಾನ, ಸಾಮಾನ್ಯ ಕನ್ನಡ, ಇಂಗ್ಲಿಷ್, ಕಂಪ್ಯೂಟರ್ ಜ್ಞಾನ; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹45 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.</p>'
+            '<p class="note">KEA FDA &amp; SDA 2026: <a href="/kea-fda-sda-notification-2026.html">four notifications, 5,431 posts, exams 8–17 January 2027</a>. '
+            'Full papers with a 2-hour timer: <a href="/karnataka-fda-sda/mock-test.html">KEA FDA SDA mock test</a>.</p>',
+      te={'KEA FDA & SDA': 'ಕೆಇಎ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು'},
       order=lambda c: 0),
 }
 
@@ -5524,6 +5658,7 @@ def notif_page(loaded, rel):
     if N.get('te'): body.append(f'<p lang="te" style="margin:0 0 6px">{esc(N["te"])}</p>')
     elif N.get('hi'): body.append(f'<p lang="hi" style="margin:0 0 6px">{esc(N["hi"])}</p>')
     elif N.get('ta'): body.append(f'<p lang="ta" style="margin:0 0 6px">{esc(N["ta"])}</p>')
+    elif N.get('kn'): body.append(f'<p lang="kn" style="margin:0 0 6px">{esc(N["kn"])}</p>')
     if conf: body.append(f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>')
     for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
@@ -5559,7 +5694,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways (RRB): NTPC, Group D'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA')]
 
 
 def news_hub_page(loaded, rels):
@@ -5859,6 +5994,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'upsc-capf': ('UPSC CAPF (Assistant Commandants) 2027', '2027-07-04', 'UPSC Calendar 2027.'),
   'upsc-prelims': ('UPSC Civil Services (Preliminary) Examination 2027', '2027-05-23', 'UPSC Calendar 2027.'),
   'tnpsc-group-4': ('TNPSC Group 4 (CCSE-IV) written exam', '2027-01-10', 'TNPSC Notification No. 11/2026 of 6 October 2026 (exam dashboard on tnpsc.gov.in).'),
+  'karnataka-fda-sda': ('KEA FDA/SDA competitive exam (FDA-level papers, Kalyana Karnataka)', '2027-01-09', 'KEA notifications of 29 October 2026: Kannada language test 8 January; FDA-level papers 9 (KK) and 10 January (RPC); SDA-level papers 16 (KK) and 17 January 2027 (RPC).'),
   'ssc-gd': ('SSC GD Constable 2027 computer-based exam', None, "SSC's exam calendar puts the GD 2027 computer-based exam in January–March 2027; the notification, listed for 30 September 2026, was not out as of 15 November 2026."),
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
   'rrb-ntpc': ('RRB NTPC 2026 CBT-1 (CEN 06/2026 and 07/2026)', None, 'Applications closed (graduate 8 November, undergraduate 13 November 2026); RRB has not announced the CBT-1 dates yet. One report says the graduate CBT-1 may be in the fourth week of December 2026.'),
@@ -6646,7 +6782,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -6663,7 +6799,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
-<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li></ul>
+<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li></ul>
 </main></body></html>
 """
 

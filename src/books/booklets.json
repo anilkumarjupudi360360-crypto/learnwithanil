@@ -341,6 +341,50 @@
    "pages": 34
   }
  },
+ "karnataka-fda-sda": {
+  "f11g": {
+   "bytes": 625772,
+   "file": "karnataka-fda-sda-f11g-52191fb1e0.bin",
+   "key": "bk-karnataka-fda-sda-f11g",
+   "name": "LearnWithAnil-KEA-FDA-2026-General-Knowledge-Question-Paper.pdf",
+   "pages": 30
+  },
+  "f11k": {
+   "bytes": 852666,
+   "file": "karnataka-fda-sda-f11k-c22e48dfb8.bin",
+   "key": "bk-karnataka-fda-sda-f11k",
+   "name": "LearnWithAnil-KEA-FDA-2026-Kannada-English-Computer-Question-Paper.pdf",
+   "pages": 19
+  },
+  "k22g": {
+   "bytes": 748882,
+   "file": "karnataka-fda-sda-k22g-f212cf45ed.bin",
+   "key": "bk-karnataka-fda-sda-k22g",
+   "name": "LearnWithAnil-KEA-SDA-2026-Kalyana-Karnataka-General-Knowledge-Question-Paper.pdf",
+   "pages": 29
+  },
+  "k22k": {
+   "bytes": 806322,
+   "file": "karnataka-fda-sda-k22k-e6d6598114.bin",
+   "key": "bk-karnataka-fda-sda-k22k",
+   "name": "LearnWithAnil-KEA-SDA-2026-Kalyana-Karnataka-Kannada-English-Computer-Question-Paper.pdf",
+   "pages": 18
+  },
+  "s25g": {
+   "bytes": 707918,
+   "file": "karnataka-fda-sda-s25g-24106cfb15.bin",
+   "key": "bk-karnataka-fda-sda-s25g",
+   "name": "LearnWithAnil-KEA-SDA-2026-General-Knowledge-Question-Paper.pdf",
+   "pages": 32
+  },
+  "s25k": {
+   "bytes": 673925,
+   "file": "karnataka-fda-sda-s25k-09642ff541.bin",
+   "key": "bk-karnataka-fda-sda-s25k",
+   "name": "LearnWithAnil-KEA-SDA-2026-Kannada-English-Computer-Question-Paper.pdf",
+   "pages": 17
+  }
+ },
  "rpf-constable": {
   "k25s1": {
    "bytes": 751736,

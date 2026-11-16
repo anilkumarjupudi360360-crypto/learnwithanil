@@ -865,6 +865,71 @@ NEW['tnpsc-group-4-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: TNPSC
 ASOF_PAGE['tnpsc-group-4-notification-2026.html'] = '15 November 2026'
 
 
+NEW['kea-fda-sda-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: Karnataka FDA/SDA (exams 8-17 January 2027); facts from KEA's own notification PDFs (in Kannada), read on 16 Nov 2026
+    exam='karnataka-fda-sda', board='KEA', site='cetonline.karnataka.gov.in/kea', crumb='KEA FDA SDA Notification 2026', faq_asof='16 November 2026',
+    title='KEA FDA SDA Notification 2026: 5,431 Group-C Posts in Karnataka, Apply by 25 November, Exams 9–17 January 2027, Pattern & Previous Papers | Learn with Anil',
+    desc='KEA FDA and SDA recruitment 2026: four Karnataka Examinations Authority notifications of 29 October 2026 for 5,431 Group-C posts (FDA level 2,163 + 563, '
+         'SDA level 2,070 + 635), online applications till 25 November 2026, Kannada language test 8 January and papers 9, 10, 16 and 17 January 2027. '
+         'Age limit, fee, exam pattern and KEA FDA/SDA previous year papers with answers in Kannada and English.',
+    h1='KEA FDA and SDA notification 2026: 5,431 posts, exams in January 2027',
+    lede='The Karnataka Examinations Authority (KEA) issued four notifications on 29 October 2026 to fill 5,431 Group-C posts in Karnataka government departments, '
+         'boards and corporations: First Division Assistant (FDA) and equivalent posts for graduates, and Second Division Assistant (SDA) and equivalent posts for II PUC '
+         'holders, each for the rest of Karnataka (RPC) and for Kalyana Karnataka (KK). Applications are open till 25 November 2026. '
+         'Below: the key dates, the posts, who can apply, the exam pattern and the KEA FDA/SDA previous papers to practise.',
+    kn='ಕರ್ನಾಟಕ ಪರೀಕ್ಷಾ ಪ್ರಾಧಿಕಾರ (ಕೆಇಎ): ವಿವಿಧ ಇಲಾಖೆಗಳ ಗ್ರೂಪ್-ಸಿ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಮತ್ತು ಸಮಾನ ಹುದ್ದೆಗಳ ನೇಮಕಾತಿ 2026 — 5,431 ಹುದ್ದೆಗಳು; '
+       'ಆನ್‌ಲೈನ್ ಅರ್ಜಿಗೆ ಕೊನೆಯ ದಿನಾಂಕ 25.11.2026; ಕನ್ನಡ ಭಾಷಾ ಪರೀಕ್ಷೆ 08.01.2027; ಸ್ಪರ್ಧಾತ್ಮಕ ಪರೀಕ್ಷೆ 09, 10, 16, 17 ಜನವರಿ 2027.',
+    pdf='https://cetonline.karnataka.gov.in/kea/gpcfdasdarpc2026', pdfname='KEA notifications ED/KEA/14 and 16/Recruitment/2026 (RPC), 29 October 2026, cetonline.karnataka.gov.in/kea',
+    more_src=[('https://cetonline.karnataka.gov.in/kea/gpcfdasdakk2026', 'KEA notifications ED/KEA/15 and 17/Recruitment/2026 (Kalyana Karnataka), 29 October 2026'),
+              ('https://cetonline.karnataka.gov.in/kearecruitment2026app/login', 'KEA online application (Group-C 2026)')],
+    sections=[
+      ('Key dates', 'table', [
+        ('Notifications', 'ED/KEA/14, 15, 16 and 17/Recruitment/2026, all dated 29 October 2026'),
+        ('Online application', '30 October to 25 November 2026 on cetonline.karnataka.gov.in/kea; fee by 26 November 2026'),
+        ('Kannada language test', 'Friday, 8 January 2027, 3.00 to 5.00 pm (only for candidates who are not exempt)'),
+        ('FDA-level papers', 'Kalyana Karnataka: Saturday, 9 January 2027 · Rest of Karnataka: Sunday, 10 January 2027'),
+        ('SDA-level papers', 'Kalyana Karnataka: Saturday, 16 January 2027 · Rest of Karnataka: Sunday, 17 January 2027'),
+        ('Timings', 'Paper-1 10.30 am to 12.30 pm; Paper-2 2.30 to 4.30 pm (offline, OMR)'),
+        ('Admit card', 'To be downloaded from the KEA website; KEA will announce the date')]),
+      ('Posts and vacancies (5,431)', 'table+', (['Notification', 'Level (qualification)', 'Posts'], [
+        ('No. 14 (RPC)', 'FDA and equivalent (degree)', '2,163'),
+        ('No. 15 (Kalyana Karnataka)', 'FDA and equivalent (degree)', '563'),
+        ('No. 16 (RPC)', 'SDA and equivalent (II PUC)', '2,070'),
+        ('No. 17 (Kalyana Karnataka)', 'SDA and equivalent (II PUC)', '635'),
+        ('Total', '', '5,431')])),
+      ('', 'note', 'Largest posts in No. 14 (RPC, FDA level): Accounts Assistant, Audit and Accounts Department 490; Warden (Men), Social Welfare 294; FDA, Judiciary 249; '
+                   'Hostel Superintendent (Men), Backward Classes Welfare 180; Gram Panchayat Secretary & Rural Development Assistant Grade-1 135; FDA in Zilla and Taluk Panchayats 100; '
+                   'Commercial Tax Inspector 48. Largest posts in No. 16 (RPC, SDA level): SDA, Judiciary 522; SDA, Commercial Taxes 500; Gram Panchayat Secretary & Rural Development '
+                   'Assistant Grade-2 284; SDA in Zilla and Taluk Panchayats 200; Junior Accounts Assistant 130. KEA says the post-wise figures are provisional.'),
+      ('Exam pattern', 'table+', (['Paper', 'Subjects', 'Questions · marks · time'], [
+        ('Paper-1', 'General Knowledge: current events, general science, geography, Indian and Karnataka history, Indian Constitution and public administration, '
+                    'Karnataka economy, rural development and Panchayat Raj, land reforms and social change in Karnataka, IT in governance, environment, mental ability', '100 · 100 · 2 hours'),
+        ('Paper-2', 'General Kannada, General English, Computer Knowledge', '100 · 100 · 2 hours'),
+        ('Kannada language test', 'Qualifying only (SSLC first-language Kannada standard); at least 50 of 150 marks', '150 marks')])),
+      ('', 'note', 'Objective (OMR) questions with four options. A quarter mark is deducted for each wrong answer; a question left blank also loses a quarter mark unless its fifth '
+                   '("not attempted") circle is shaded, for which five extra minutes are given. A candidate must score at least 35% in the competitive exam. Selection is on the total '
+                   'marks of the competitive exam, by merit and reservation, through KEA\'s online counselling (options) and document verification. Candidates who studied Kannada as a '
+                   'first or second language at SSLC or above, studied in Kannada medium, or passed the compulsory Kannada test earlier are exempt from the Kannada language test.'),
+      ('Who can apply', 'list', [
+        'FDA level (Nos. 14 and 15): a degree; some posts need a specific degree (Accounts Assistant: B.Com, BBM or BBA; Warden and Hostel Superintendent: degree with B.Ed; '
+        'Commercial Tax Inspector: degree with Economics or Mathematics, or B.Com). SDA level (Nos. 16 and 17): II PUC or an equivalent; a few posts need Commerce or a computer course.',
+        'Age as on 25 November 2026: at least 18; at most 40 years for General Merit, 43 for Categories 2A, 2B, 3A and 3B, and 45 for SC, ST and Category-1. These limits already '
+        'include the one-time five-year relaxation of the Government order of 29 January 2026. Persons with disabilities, widows and Karnataka government employees get further relaxation.',
+        'Fee (online only, not refundable): Rs. 750 for General Merit and Categories 2A, 2B, 3A, 3B; Rs. 500 for SC, ST, Category-1, ex-servicemen and transgender candidates; '
+        'Rs. 250 for persons with disabilities.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for KEA FDA SDA 2026?', '25 November 2026 on cetonline.karnataka.gov.in/kea; the fee can be paid till 26 November 2026.'),
+      ('When is the KEA FDA SDA exam 2027?', 'The Kannada language test is on 8 January 2027. FDA-level papers: 9 January (Kalyana Karnataka) and 10 January 2027 (rest of Karnataka). SDA-level papers: 16 January (Kalyana Karnataka) and 17 January 2027 (rest of Karnataka). Paper-1 is from 10.30 am and Paper-2 from 2.30 pm.'),
+      ('How many vacancies are there in KEA FDA SDA 2026?', '5,431 in four notifications: 2,163 FDA-level and 2,070 SDA-level posts for the rest of Karnataka, and 563 FDA-level and 635 SDA-level posts for Kalyana Karnataka.'),
+      ('Is the KEA FDA SDA exam conducted by KPSC?', 'No. These 2026 Group-C posts are being filled by the Karnataka Examinations Authority (KEA), which also conducted the Group-C exams of its 2025 recruitment.'),
+      ('What is the KEA FDA SDA exam pattern?', 'Two OMR papers of 100 questions and 100 marks each, 2 hours each: Paper-1 General Knowledge and Paper-2 General Kannada, General English and Computer Knowledge, with a quarter mark deducted for each wrong answer. At least 35% is needed.'),
+      ('What is the age limit for KEA FDA SDA 2026?', '18 to 40 years for General Merit, 43 for 2A/2B/3A/3B and 45 for SC/ST/Category-1, as on 25 November 2026 (including the one-time five-year relaxation).'),
+      ('What is the KEA FDA SDA application fee?', 'Rs. 750 for General Merit and 2A/2B/3A/3B, Rs. 500 for SC/ST/Category-1, ex-servicemen and transgender candidates, and Rs. 250 for persons with disabilities.'),
+      ('Where can I practise KEA FDA SDA previous papers?', 'On Learn with Anil: KEA\'s 2026 FDA-level, SDA-level and Kalyana Karnataka Group-C papers, Paper-1 General Knowledge and Paper-2 Kannada, English & Computer Knowledge, with KEA\'s revised key and explanations in Kannada and English, as 2-hour timed tests or subject-wise practice.'),
+    ])
+ASOF_PAGE['kea-fda-sda-notification-2026.html'] = '16 November 2026'
+
+
 def apply(NOTIFS):
     for rel, f in FAQS.items():
         if rel in NOTIFS: NOTIFS[rel]['faqs'] = f; NOTIFS[rel]['faq_asof'] = ASOF_PAGE.get(rel, ASOF)

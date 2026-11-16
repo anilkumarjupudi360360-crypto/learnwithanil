@@ -39,8 +39,8 @@
   },
   {
    "id": "ka",
-   "name": "KPSC & Karnataka",
-   "desc": "KPSC KAS, FDA and SDA exams"
+   "name": "KEA, KPSC & Karnataka",
+   "desc": "KEA FDA and SDA, KPSC KAS exams"
   },
   {
    "id": "kl",
@@ -814,18 +814,12 @@
    "n": "Gazetted Probationers (Group A and B)"
   },
   {
-   "id": "kpsc-fda",
+   "id": "karnataka-fda-sda",
    "cat": "ka",
-   "b": "KPSC",
-   "t": "FDA",
-   "n": "First Division Assistant"
-  },
-  {
-   "id": "kpsc-sda",
-   "cat": "ka",
-   "b": "KPSC",
-   "t": "SDA",
-   "n": "Second Division Assistant"
+   "b": "KEA",
+   "t": "FDA & SDA",
+   "n": "First & Second Division Assistant (Group C)",
+   "live": "karnataka-fda-sda/"
   },
   {
    "id": "kerala-psc-kas",
