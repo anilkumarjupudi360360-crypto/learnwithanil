@@ -3,4 +3,16 @@ Allow: /
 Disallow: /appsc-group-1/mains/kit/
 Disallow: /books/
 
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Bingbot
+Allow: /
+Disallow: /appsc-group-1/mains/kit/
+Disallow: /books/
+
 Sitemap: https://learnwithanil.in/sitemap.xml

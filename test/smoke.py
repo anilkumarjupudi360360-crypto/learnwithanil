@@ -558,6 +558,17 @@ async def main():
                     dfs = _g.glob(os.path.join(SITE, {'appsc-group-2': ''}.get(eid, EXAM_DIR.get(eid, eid)), 'data', '*.js'))
                     if dfs and f'"{bk["id"]}"' in open(dfs[0], encoding='utf-8').read(): errors.append(f'book {bk["id"]} is on the {eid} study material, but it is not for that exam')
                 if bk.get('free') and not os.path.isfile(os.path.join(SITE, bk['free'].lstrip('/'))): errors.append(f'free sample {bk["free"]} not published')
+            # every book has a plain HTML page (Book + FAQ data) for search engines and AI assistants, in the sitemap and llms.txt (16 Nov 2026)
+            sys.path.insert(0, os.path.join(ROOT, 'tools')); import book_pages as _bp
+            _sm, _ll = open(os.path.join(SITE, 'sitemap.xml')).read(), open(os.path.join(SITE, 'llms.txt'), encoding='utf-8').read()
+            if '/study-material.html' not in _sm or '/study-material.html' not in _ll: errors.append('study-material.html missing from the sitemap or llms.txt')
+            for bk in _NOTES:
+                rel = f'study-material/{_bp.slug(bk)}.html'
+                fp = os.path.join(SITE, rel)
+                if not os.path.isfile(fp): errors.append(f'book page {rel} missing'); continue
+                h = open(fp, encoding='utf-8').read()
+                if '"@type": "Book"' not in h or '"@type": "FAQPage"' not in h: errors.append(f'{rel}: no Book/FAQ structured data')
+                if f'/{rel}</loc>' not in _sm or f'/{rel})' not in _ll: errors.append(f'{rel}: not in the sitemap or llms.txt')
             for bk in [x for x in _NOTES if not x.get('exams')]:   # the APPSC Mains books: Group-I and Group-II only
                 for eid in sorted({e for x in _NOTES for e in x.get('exams', [])} - {'appsc-group-1', 'appsc-group-2'}):
                     dfs = _g.glob(os.path.join(SITE, EXAM_DIR.get(eid, eid), 'data', '*.js'))
