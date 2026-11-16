@@ -63,6 +63,16 @@
    "desc": "UPPSC PCS and RO/ARO, UPSSSC Inter level Mains and other UP exams"
   },
   {
+   "id": "uk",
+   "name": "UKPSC, UKSSSC & Uttarakhand",
+   "desc": "UKPSC Lower PCS and other Uttarakhand exams"
+  },
+  {
+   "id": "cg",
+   "name": "CG Vyapam, CGPSC & Chhattisgarh",
+   "desc": "CG Vyapam (CGSSB) Group 2: Assistant Grade-3, Steno, DEO, ASI and other Chhattisgarh exams"
+  },
+  {
    "id": "br",
    "name": "BPSC & Bihar",
    "desc": "BPSC Combined Competitive Exam and teacher recruitment"
@@ -898,6 +908,22 @@
    "t": "Inter Level Mains",
    "n": "Combined Lower Subordinate (Intermediate Level) Mains, PET-2025",
    "live": "upsssc-inter-level/"
+  },
+  {
+   "id": "ukpsc-lower-pcs",
+   "cat": "uk",
+   "b": "UKPSC",
+   "t": "Lower PCS",
+   "n": "Combined State (Civil) Lower Subordinate Services",
+   "live": "ukpsc-lower-pcs/"
+  },
+  {
+   "id": "cg-vyapam-group-2",
+   "cat": "cg",
+   "b": "CG Vyapam",
+   "t": "Group 2",
+   "n": "Assistant Grade-3, Steno, DEO & ASI (CGSSB)",
+   "live": "cg-vyapam-group-2/"
   },
   {
    "id": "bpsc-cce",

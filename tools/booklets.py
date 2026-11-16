@@ -31,7 +31,8 @@ BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC
               'SLPRB': 'STATE LEVEL POLICE RECRUITMENT BOARD, ANDHRA PRADESH', 'RRB': 'RAILWAY RECRUITMENT BOARDS · RAILWAY PROTECTION FORCE',
               'AP DSC': 'COMMISSIONERATE OF SCHOOL EDUCATION, GOVERNMENT OF ANDHRA PRADESH', 'TNPSC': 'TAMIL NADU PUBLIC SERVICE COMMISSION',
               'KEA': 'KARNATAKA EXAMINATIONS AUTHORITY', 'MPSC': 'MAHARASHTRA PUBLIC SERVICE COMMISSION', 'GSSSB': 'GUJARAT SUBORDINATE SERVICE SELECTION BOARD',
-              'UPSSSC': 'UTTAR PRADESH SUBORDINATE SERVICES SELECTION COMMISSION', 'UPPSC': 'UTTAR PRADESH PUBLIC SERVICE COMMISSION'}
+              'UPSSSC': 'UTTAR PRADESH SUBORDINATE SERVICES SELECTION COMMISSION', 'UPPSC': 'UTTAR PRADESH PUBLIC SERVICE COMMISSION',
+              'UKPSC': 'UTTARAKHAND PUBLIC SERVICE COMMISSION', 'CG Vyapam': 'CHHATTISGARH VYAPAM (CHHATTISGARH KARMCHARI CHAYAN MANDAL)'}
 BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
 SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
@@ -43,7 +44,9 @@ SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable
 # footer strip under every page (the page itself is untouched) and appends the official answer key pages.
 ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('g25', 'g24', 'g23')},
              'gsssb-cce': {pid: (f'{pid}-qp.pdf',) for pid in ('c01', 'c02', 'c71')},
-             'uppsc-ro-aro': {'r25': ('r25-qp.pdf',)}}   # UPPSC's own booklet with its key boxed; the 2021 papers are candidates' scans, so typeset   # GSSSB's own paper preview already marks the final answers
+             'uppsc-ro-aro': {'r25': ('r25-qp.pdf',)},   # UPPSC's own booklet with its key boxed; the 2021 papers are candidates' scans, so typeset (GSSSB's paper preview marks the final answers)
+             'ukpsc-lower-pcs': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('l24', 'l21', 'r23')},   # UKPSC's own clean booklets + final keys
+             'cg-vyapam-group-2': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('vd', 'ag', 'sg')}}   # Vyapam's own booklets + final keys
 # released mocks with a booklet: exam -> [(mock id, pack, mock name)]; their keys are in BOOKS_PRIV/mock-keys.json
 MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-constable': [('mk-pc-1', 'Mission Khaki – Constable', 'Mock 1')]}
 
@@ -67,6 +70,8 @@ def time_marks(conf, p):
     if conf['id'] == 'karnataka-fda-sda': return '2 Hours', 100   # KEA FDA/SDA: each paper 100 questions, 100 marks, 2 hours
     if conf['id'] == 'mpsc-group-c': return '1 Hour', 100   # MPSC Group-C prelims: 100 questions, 100 marks, 1 hour
     if conf['id'] == 'upsssc-inter-level': return '2 Hours', 100   # UPSSSC Mains: 100 questions, 100 marks, 2 hours
+    if conf['id'] == 'ukpsc-lower-pcs': return '2 Hours', 150   # UKPSC prelims: 150 questions, 150 marks
+    if conf['id'] == 'cg-vyapam-group-2': return {'vd': ('3 Hours', 200), 'ag': ('3 Hours', 200), 'sg': ('2 Hours 30 Minutes', 150)}[p['id']]   # Vyapam 2021 papers
     if conf['id'] == 'uppsc-ro-aro': return {'r25': ('3 Hours', 200), 'g21': ('2 Hours', 140), 'h21': ('1 Hour', 60)}[p['id']]   # RO/ARO prelims
     return (f'{p["mins"]} Minutes' if p.get('mins') else ''), ''
 
@@ -165,7 +170,7 @@ def paper_doc(conf, p, qs, mock=None):
               if m else '<div class="s lwa">LEARN<br>WITH<br>ANIL</div>')
     sub = re.sub(r'\s*·\s*booklet [A-Z]\b.*$', '', p.get('notif', ''))
     key = p.get('key') or ("APPSC's final key" if conf['board'] == 'APPSC' else conf.get('keyname') or 'the official key')
-    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC|GSSSB|UPSSSC|UPPSC)\s+', '', p['title'])
+    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC|GSSSB|UPSSSC|UPPSC|UKPSC|CG Vyapam)\s+', '', p['title'])
     l2name = l2['name'] if not p.get('en_only') and any(q.get('qt') for q in qs) else ''
     when = f' · Held on {esc(p["held"])}' if p.get('held') else ''
     if mock: board = 'LEARN WITH ANIL · ' + mock.upper() + ' TEST SERIES'

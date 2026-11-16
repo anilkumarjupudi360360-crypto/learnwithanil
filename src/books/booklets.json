@@ -341,6 +341,32 @@
    "pages": 34
   }
  },
+ "cg-vyapam-group-2": {
+  "ag": {
+   "bytes": 2796148,
+   "file": "cg-vyapam-group-2-ag-492752dd21.bin",
+   "key": "bk-cg-vyapam-group-2-ag",
+   "name": "LearnWithAnil-CG-Vyapam-AGDO-2021-Assistant-Grade-3-Data-Entry-Operator-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 52
+  },
+  "sg": {
+   "bytes": 2789629,
+   "file": "cg-vyapam-group-2-sg-e44284587b.bin",
+   "key": "bk-cg-vyapam-group-2-sg",
+   "name": "LearnWithAnil-CG-Vyapam-Stenographer-2021-General-Paper-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 44
+  },
+  "vd": {
+   "bytes": 3745243,
+   "file": "cg-vyapam-group-2-vd-e08560e065.bin",
+   "key": "bk-cg-vyapam-group-2-vd",
+   "name": "LearnWithAnil-CG-Vyapam-VDAG-2021-Data-Entry-Operator-Assistant-Grade-3-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 52
+  }
+ },
  "gsssb-cce": {
   "c01": {
    "bytes": 5002942,
@@ -684,6 +710,32 @@
    "key": "bk-ts-police-si-s2023d",
    "name": "LearnWithAnil-TS-Police-SI-Mains-2023-Paper-4-Final-Written-Exam-General-Studies-Question-Paper.pdf",
    "pages": 43
+  }
+ },
+ "ukpsc-lower-pcs": {
+  "l21": {
+   "bytes": 597130,
+   "file": "ukpsc-lower-pcs-l21-c1fdfebf5d.bin",
+   "key": "bk-ukpsc-lower-pcs-l21",
+   "name": "LearnWithAnil-UKPSC-Lower-PCS-Prelims-2021-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 32
+  },
+  "l24": {
+   "bytes": 793770,
+   "file": "ukpsc-lower-pcs-l24-de5bb7dc99.bin",
+   "key": "bk-ukpsc-lower-pcs-l24",
+   "name": "LearnWithAnil-UKPSC-Lower-PCS-Prelims-2024-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 36
+  },
+  "r23": {
+   "bytes": 686158,
+   "file": "ukpsc-lower-pcs-r23-2858305d31.bin",
+   "key": "bk-ukpsc-lower-pcs-r23",
+   "name": "LearnWithAnil-UKPSC-RO-ARO-Prelims-2023-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 36
   }
  },
  "uppsc-ro-aro": {

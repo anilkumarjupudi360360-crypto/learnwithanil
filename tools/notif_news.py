@@ -1190,6 +1190,131 @@ NEW['uppsc-ro-aro-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: UPPSC 
     ])
 ASOF_PAGE['uppsc-ro-aro-notification-2026.html'] = '16 November 2026'
 
+NEW['ukpsc-lower-pcs-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: Uttarakhand Lower PCS (apply till 26 November); facts from UKPSC's own advertisement A-1/E-2/DR/LSS/2026-27 and notice of 6 Nov 2026, read on 16 Nov 2026
+    exam='ukpsc-lower-pcs', board='UKPSC', site='psc.uk.gov.in', crumb='UKPSC Lower PCS Notification 2026', faq_asof='16 November 2026',
+    title='UKPSC Lower PCS Notification 2026: 54 Posts, Apply by 26 November, Age, Fee, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='Uttarakhand Combined State (Civil) Lower Subordinate Service Exam-2026 (UKPSC Lower PCS), Advt. A-1/E-2/DR/LSS/2026-27: 54 posts including Naib Tehsildar, '
+         'Excise Inspector and Marketing Inspector. Apply on psc.uk.gov.in from 6 to 26 November 2026. Age 21–42, fee, the 150-question prelims pattern and UKPSC '
+         'Lower PCS previous papers with answers in Hindi and English.',
+    h1='UKPSC Lower PCS notification 2026: 54 posts, apply by 26 November',
+    lede='The Uttarakhand Public Service Commission (UKPSC), Haridwar, has advertised the Uttarakhand Combined State (Civil) Lower Subordinate Service Examination-2026 '
+         '(Advt. No. A-1/E-2/DR/LSS/2026-27, 6 November 2026) for 54 posts. Online applications are open on psc.uk.gov.in from 6 to 26 November 2026. Below: the key '
+         'dates, the posts, who can apply, the exam pattern and the UKPSC Lower PCS previous papers to practise.',
+    hi='उत्तराखण्ड लोक सेवा आयोग: उत्तराखण्ड सम्मिलित राज्य (सिविल) अवर अधीनस्थ सेवा परीक्षा-2026, विज्ञापन संख्या A-1/E-2/DR/LSS/2026-27 — कुल 54 पद; '
+       'ऑनलाइन आवेदन 06 से 26 नवम्बर 2026 (रात्रि 11:59 बजे तक), संशोधन 03 से 12 दिसम्बर 2026; प्रारंभिक परीक्षा: सामान्य अध्ययन एवं सामान्य अभिरुचि परीक्षण, 150 प्रश्न, 2 घंटे।',
+    pdf='https://psc.uk.gov.in', pdfname='UKPSC Advt. No. A-1/E-2/DR/LSS/2026-27, psc.uk.gov.in > Candidate Corner > Recruitment',
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement', 'Advt. No. A-1/E-2/DR/LSS/2026-27, 6 November 2026 (notice No. 235/03/E-2/DR/LSS/2026-27)'),
+        ('Online applications', '6 to 26 November 2026 (11:59 pm) on psc.uk.gov.in'),
+        ('Last date for the fee (net banking, card or UPI)', '26 November 2026 (11:59 pm)'),
+        ('Corrections to the online form', '3 to 12 December 2026 (11:59 pm)'),
+        ('Prelims', 'UKPSC will announce the date'),
+      ]),
+      ('Posts and vacancies (54)', 'table+', (['Post', 'Department', 'Posts'], [
+        ('Naib Tehsildar', 'Revenue (Level 7)', '13'),
+        ('Excise Inspector', 'Excise (Level 7)', '4'),
+        ('Supply Inspector', 'Food, Civil Supply and Consumer Affairs (Level 6)', '2'),
+        ('Marketing Inspector', 'Food, Civil Supply and Consumer Affairs (Level 6)', '20'),
+        ('Labour Enforcement Officer', 'Labour (Level 6)', '5'),
+        ('Tax Officer, Zila Panchayat', 'Panchayati Raj (Level 6)', '5'),
+        ('Senior Cane Development Inspector', 'Sugarcane Development & Sugar Industry (Level 6)', '1'),
+        ('Cane Development Inspector', 'Sugarcane Development & Sugar Industry (Level 5)', '4'),
+        ('Total', '', '54')])),
+      ('', 'note', 'Pay: Level 7 is Rs. 44,900–1,42,400, Level 6 Rs. 35,400–1,12,400 and Level 5 Rs. 29,200–92,300. The category-wise and horizontal reservation of each '
+                   'post is in the advertisement; the number of vacancies may change.'),
+      ('Exam pattern', 'table+', (['Stage', 'Paper', 'Marks'], [
+        ('Prelims (objective)', 'General Studies & General Aptitude Test: 150 questions, 2 hours; a quarter of a question\'s marks deducted for each wrong answer. '
+                                'Prelims marks only decide who goes to the Mains', '150'),
+        ('Mains (descriptive)', 'Language (General Hindi) 100, 2 hours (35% needed); Essay 100, 2 hours; General Studies Paper I 200, 3 hours; General Studies Paper II 200, 3 hours', '600'),
+        ('Personality test', 'Interview', '75'),
+      ])),
+      ('', 'note', 'The Mains is held at Haldwani and Haridwar. The full syllabus is in Appendix 2 of the advertisement.'),
+      ('Who can apply', 'list', [
+        'A bachelor\'s degree from a recognised university; the two Cane Development Inspector posts need a bachelor\'s degree in agriculture. Naib Tehsildar and '
+        'Excise Inspector have height and chest standards; two years in the Territorial Army or an NCC \'B\' certificate gets preference.',
+        'Age: 21 to 42 years as on 1 July 2026 (born between 2 July 1984 and 1 July 2005); 5 years more for SC, ST and OBC of Uttarakhand and dependants of '
+        'freedom fighters, 10 years more for persons with disabilities of Uttarakhand, and the rules\' relaxation for ex-servicemen.',
+        'Fee (application fee + Rs. 16.36 processing fee): Rs. 166.36 for unreserved, EWS and OBC of Uttarakhand; Rs. 76.36 for SC, ST and persons with disabilities '
+        'of Uttarakhand; no fee for orphans living in the state\'s children\'s homes.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for UKPSC Lower PCS 2026?', '26 November 2026 (11:59 pm) on psc.uk.gov.in, which is also the last date for the fee; corrections are allowed from 3 to 12 December 2026.'),
+      ('How many posts are there in UKPSC Lower PCS 2026?', '54: Naib Tehsildar 13, Excise Inspector 4, Supply Inspector 2, Marketing Inspector 20, Labour Enforcement Officer 5, Tax Officer (Zila Panchayat) 5, Senior Cane Development Inspector 1 and Cane Development Inspector 4.'),
+      ('What is the UKPSC Lower PCS prelims exam pattern?', 'One objective paper, General Studies & General Aptitude Test, of 150 questions for 150 marks in 2 hours, with a quarter of a question\'s marks cut for each wrong answer.'),
+      ('What is the age limit for UKPSC Lower PCS 2026?', '21 to 42 years as on 1 July 2026, with 5 more years for SC, ST and OBC of Uttarakhand and 10 more for persons with disabilities.'),
+      ('What is the UKPSC Lower PCS application fee?', 'Rs. 166.36 for unreserved, EWS and OBC, and Rs. 76.36 for SC, ST and persons with disabilities of Uttarakhand (including the Rs. 16.36 processing fee).'),
+      ('Where can I practise UKPSC Lower PCS previous papers?', 'On Learn with Anil: the Lower PCS prelims 2024 and 2021 and the RO/ARO prelims 2023 (UKPSC\'s own booklets with its final keys), with explanations in Hindi and English.'),
+    ])
+ASOF_PAGE['ukpsc-lower-pcs-notification-2026.html'] = '16 November 2026'
+
+NEW['cg-vyapam-group-2-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: Chhattisgarh Vyapam Group 2 (apply till 27 November); facts from CGSSB's detailed advertisement, press note and syllabus of 5 Nov 2026, read on 16 Nov 2026
+    exam='cg-vyapam-group-2', board='CG Vyapam', site='cgssb.cgstate.gov.in', crumb='CG Vyapam Group 2 Notification 2026', faq_asof='16 November 2026',
+    title='CG Vyapam Group 2 Notification 2026: 1,703 Posts (Assistant Grade 3, Steno, DEO, ASI), Apply by 27 November, Exam 10 January | Learn with Anil',
+    desc='Chhattisgarh Karmchari Chayan Mandal (CGSSB, formerly CG Vyapam) Group-2 Sub-group-02 exam (G20227): 1,703 posts including 1,206 Assistant Grade-3, ASI, '
+         'stenographers and data entry operators. Apply on cgssb.cgstate.gov.in from 5 to 27 November 2026; exam on 10 January 2027. Eligibility, fee, the 100-question '
+         'pattern and CG Vyapam previous papers with answers in Hindi and English.',
+    h1='CG Vyapam Group 2 notification 2026: 1,703 posts, apply by 27 November',
+    lede='The Chhattisgarh Karmchari Chayan Mandal (CGSSB, which has taken over from CG Vyapam) has advertised the written exam for the Group-2, Class III (postgraduate '
+         'and graduate level) Sub-group-02 posts (exam code G20227) on 5 November 2026: 1,703 posts in all. Online applications are open on cgssb.cgstate.gov.in from 5 to '
+         '27 November 2026, and the exam is on 10 January 2027. Below: the key dates, the posts, who can apply, the exam pattern and the CG Vyapam previous papers to practise.',
+    hi='छत्तीसगढ़ कर्मचारी चयन मण्डल: समूह-2 तृतीय श्रेणी (स्नातकोत्तर एवं स्नातक स्तर) उप समूह-02 लिखित भर्ती परीक्षा (G20227) — कुल 1,703 पद (सहायक ग्रेड-3: 1,206); '
+       'ऑनलाइन आवेदन 05 से 27 नवम्बर 2026 (सायं 5 बजे तक), त्रुटि सुधार 28 से 30 नवम्बर 2026; परीक्षा 10 जनवरी 2027 (रविवार), 10:00 से 12:15 बजे; 100 प्रश्न, 2 घंटे।',
+    pdf='https://cgssb.cgstate.gov.in', pdfname='CGSSB detailed advertisement No. SSB/Pariksha F-20/2026 of 5 November 2026 (G20227), cgssb.cgstate.gov.in',
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement and press note', '5 November 2026 (exam code G20227)'),
+        ('Online applications', '5 to 27 November 2026 (5 pm) on cgssb.cgstate.gov.in'),
+        ('Corrections to the online form', '28 to 30 November 2026 (5 pm)'),
+        ('Admit cards (expected)', '4 January 2027'),
+        ('Written exam', 'Sunday, 10 January 2027, 10:00 am to 12:15 pm, at the 5 divisional headquarters'),
+      ]),
+      ('Posts and vacancies (1,703)', 'table+', (['Post', 'Posts'], [
+        ('Assistant Grade-3', '1,206'),
+        ('Assistant Sub-Inspector-A (District-unit cadre)', '279'),
+        ('Registration Clerk', '50'),
+        ('Assistant Sub-Inspector-A (General Branch)', '40'),
+        ('Sub-Inspector-A (Stenographer) (General Branch) (Hindi)', '34'),
+        ('Stenographer (Hindi)', '30'),
+        ('Data Entry Operator', '25'),
+        ('Steno Typist', '23'),
+        ('Stenographer (Bilingual)', '13'),
+        ('Stenographer (English)', '3'),
+        ('Total', '1,703')])),
+      ('', 'note', 'Candidates choose their posts and departments in order of preference in the online form, and the choice cannot be changed later. The post codes, '
+                   'departments and category-wise vacancies are in the advertisement.'),
+      ('Exam pattern', 'table+', (['Part', 'Subject', 'Questions (marks)'], [
+        ('1', 'General knowledge of computers', '20'),
+        ('2', '(a) General Studies · (b) General knowledge of Chhattisgarh', '20 + 20'),
+        ('3', 'General Mental Ability', '10'),
+        ('4', 'General Mathematics', '10'),
+        ('5', 'General Hindi', '10'),
+        ('6', 'General English', '10'),
+        ('Total', 'Objective, 2 hours, in Hindi and English (except the language parts); 1 mark a question, a quarter mark cut for each wrong answer', '100'),
+      ])),
+      ('', 'note', 'Minimum qualifying marks: 33% for unreserved and 23% for reserved categories and persons with disabilities. For the 7 Home and Police posts, 15 times '
+                   'the vacancies are called to a qualifying physical measurement test; the final allotment is on the written marks, the post preferences and the '
+                   'reservation rules.'),
+      ('Who can apply', 'list', [
+        'A bachelor\'s degree with a one-year computer diploma, or 10+2 with the Modern Office Management (MOM) diploma of a Chhattisgarh polytechnic, plus a skill '
+        'certificate from the Chhattisgarh Shorthand-Typing-Computer Skill Test Council: typing at 5,000 key depressions an hour (Hindi or English) for Assistant '
+        'Grade-3, Registration Clerk and ASI; 8,000 in Hindi and English for Data Entry Operator; shorthand at 100 words a minute with typing at 10,000 for the '
+        'stenographers; shorthand at 60 words a minute with typing at 5,000 for Steno Typist.',
+        'Age: at least 21 years on 1 January 2026; the upper age and its relaxations follow the state\'s rules, with no one over 45 after all relaxations. The '
+        'police posts follow the Home (Police) Department\'s own age rules and physical standards.',
+        'Fee: Rs. 350 general, Rs. 250 OBC, Rs. 200 SC, ST and persons with disabilities. Candidates domiciled in Chhattisgarh who sit the exam get the fee back '
+        'in the bank account it was paid from.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for CG Vyapam Group 2 2026?', '27 November 2026 (5 pm) on cgssb.cgstate.gov.in; corrections are allowed from 28 to 30 November 2026.'),
+      ('When is the CG Vyapam Group 2 exam?', 'On Sunday, 10 January 2027, from 10:00 am to 12:15 pm, at the five divisional headquarters; admit cards are expected on 4 January 2027.'),
+      ('How many posts are there?', '1,703, of which 1,206 are Assistant Grade-3; the rest are ASI-A (319), Registration Clerk (50), stenographers and steno typists (103) and Data Entry Operator (25).'),
+      ('What is the exam pattern?', '100 objective questions for 100 marks in 2 hours: Computer 20, General Studies 20, Chhattisgarh GK 20, Mental Ability 10, Maths 10, Hindi 10 and English 10, with a quarter mark cut for each wrong answer.'),
+      ('What is the application fee?', 'Rs. 350 general, Rs. 250 OBC and Rs. 200 SC, ST and persons with disabilities; refunded to Chhattisgarh domicile candidates who sit the exam.'),
+      ('Where can I practise CG Vyapam previous papers?', 'On Learn with Anil: Vyapam\'s own VDAG 2021, AGDO 2021 and Stenographer 2021 general papers with its final keys, with explanations in Hindi and English.'),
+    ])
+ASOF_PAGE['cg-vyapam-group-2-notification-2026.html'] = '16 November 2026'
+
 
 def apply(NOTIFS):
     for rel, f in FAQS.items():
