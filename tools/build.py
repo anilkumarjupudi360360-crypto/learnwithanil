@@ -6799,7 +6799,8 @@ EXAM_NOTIF = {
     'tnpsc-group-4': 'tnpsc-group-4-notification-2026.html', 'karnataka-fda-sda': 'kea-fda-sda-notification-2026.html',
     'mpsc-group-c': 'mpsc-group-c-notification-2026.html', 'gsssb-cce': 'gsssb-cce-notification-2026.html',
     'uppsc-ro-aro': 'uppsc-ro-aro-notification-2026.html', 'upsssc-inter-level': 'upsssc-inter-level-notification-2026.html',
-}
+    'ukpsc-lower-pcs': 'ukpsc-lower-pcs-notification-2026.html', 'cg-vyapam-group-2': 'cg-vyapam-group-2-notification-2026.html',
+}   # a new exam with its own notification page: add it here too
 
 
 NOTES_ALL = []
