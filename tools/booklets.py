@@ -30,7 +30,7 @@ LOGO = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(ROOT, 'src'
 BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC': 'ANDHRA PRADESH PUBLIC SERVICE COMMISSION',
               'SLPRB': 'STATE LEVEL POLICE RECRUITMENT BOARD, ANDHRA PRADESH', 'RRB': 'RAILWAY RECRUITMENT BOARDS · RAILWAY PROTECTION FORCE',
               'AP DSC': 'COMMISSIONERATE OF SCHOOL EDUCATION, GOVERNMENT OF ANDHRA PRADESH', 'TNPSC': 'TAMIL NADU PUBLIC SERVICE COMMISSION',
-              'KEA': 'KARNATAKA EXAMINATIONS AUTHORITY', 'MPSC': 'MAHARASHTRA PUBLIC SERVICE COMMISSION'}
+              'KEA': 'KARNATAKA EXAMINATIONS AUTHORITY', 'MPSC': 'MAHARASHTRA PUBLIC SERVICE COMMISSION', 'GSSSB': 'GUJARAT SUBORDINATE SERVICE SELECTION BOARD'}
 BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
 SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
@@ -40,7 +40,8 @@ SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable
 # just add our brand (at bottom of every page or something like that) on the original and upload... no need to use more energy for making new pdfs").
 # exam -> paper -> (question booklet, official key) under BOOKS_PRIV/originals/<exam>/ (never committed); brand_original() adds a Learn with Anil
 # footer strip under every page (the page itself is untouched) and appends the official answer key pages.
-ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('g25', 'g24', 'g23')}}
+ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('g25', 'g24', 'g23')},
+             'gsssb-cce': {pid: (f'{pid}-qp.pdf',) for pid in ('c01', 'c02', 'c71')}}   # GSSSB's own paper preview already marks the final answers
 # released mocks with a booklet: exam -> [(mock id, pack, mock name)]; their keys are in BOOKS_PRIV/mock-keys.json
 MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-constable': [('mk-pc-1', 'Mission Khaki – Constable', 'Mock 1')]}
 
@@ -73,6 +74,7 @@ body{font:9.6pt/1.38 'Source Sans 3',sans-serif;color:#111}
 [lang=ta]{font-family:'Noto Sans Tamil','Source Sans 3',sans-serif;line-height:1.5}
 [lang=kn]{font-family:'Noto Sans Kannada','Source Sans 3',sans-serif;line-height:1.55}
 [lang=mr]{font-family:'Noto Sans Devanagari','Source Sans 3',sans-serif;line-height:1.5}
+[lang=gu]{font-family:'Noto Sans Gujarati','Source Sans 3',sans-serif;line-height:1.5}
 [lang=hi]{font-family:'Noto Sans Devanagari','Source Sans 3',sans-serif;line-height:1.5}
 .wm{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:0}
 .wm div{transform:rotate(-35deg);text-align:center;opacity:.07}
@@ -126,7 +128,7 @@ def script_lang(t):
     """'te' / 'hi' when a question has no English and is printed in Telugu / Hindi only (AP DSC language papers), else ''."""
     if re.search(r'[A-Za-z]{3,}', t or ''): return ''
     return ('te' if re.search(r'[\u0C00-\u0C7F]', t or '') else 'hi' if re.search(r'[\u0900-\u097F]', t or '')
-            else 'ta' if re.search(r'[\u0B80-\u0BFF]', t or '') else 'kn' if re.search(r'[\u0C80-\u0CFF]', t or '') else '')   # TNPSC Group 4 Part A is in Tamil only; KEA Paper-2 General Kannada in Kannada only
+            else 'ta' if re.search(r'[\u0B80-\u0BFF]', t or '') else 'kn' if re.search(r'[\u0C80-\u0CFF]', t or '') else 'gu' if re.search(r'[\u0A80-\u0AFF]', t or '') else '')   # TNPSC Group 4 Part A is in Tamil only; KEA Paper-2 General Kannada in Kannada only
 
 
 def q_html(q, l2):
@@ -159,7 +161,7 @@ def paper_doc(conf, p, qs, mock=None):
               if m else '<div class="s lwa">LEARN<br>WITH<br>ANIL</div>')
     sub = re.sub(r'\s*·\s*booklet [A-Z]\b.*$', '', p.get('notif', ''))
     key = p.get('key') or ("APPSC's final key" if conf['board'] == 'APPSC' else conf.get('keyname') or 'the official key')
-    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC)\s+', '', p['title'])
+    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC|GSSSB)\s+', '', p['title'])
     l2name = l2['name'] if not p.get('en_only') and any(q.get('qt') for q in qs) else ''
     when = f' · Held on {esc(p["held"])}' if p.get('held') else ''
     if mock: board = 'LEARN WITH ANIL · ' + mock.upper() + ' TEST SERIES'
@@ -227,7 +229,8 @@ def brand_original(conf, p, srcs, out):
         sizes.append((w, h))
     buf = io.BytesIO(); c = canvas.Canvas(buf, invariant=1)
     logo = ImageReader(os.path.join(ROOT, 'src', 'static', 'icon-192.png'))
-    label = f'{p.get("kwname") or p["title"]} · {conf["board"]}\'s original question booklet and final answer key'
+    label = (f'{p.get("kwname") or p["title"]} · {conf["board"]}\'s original question booklet and final answer key' if len(srcs) > 1 else
+             f'{p.get("kwname") or p["title"]} · {conf["board"]}\'s original question paper, final answers marked')   # GSSSB: the paper preview ticks the answers
     for i, (w, h) in enumerate(sizes):
         c.setPageSize((w, S))
         c.setStrokeColorRGB(0.09, 0.27, 0.78); c.setLineWidth(0.8); c.line(18, S - 1, w - 18, S - 1)
@@ -244,7 +247,7 @@ def brand_original(conf, p, srcs, out):
         page = dst.add_blank_page(page_size=(w, h + S))
         page.add_overlay(pg, pikepdf.Rectangle(0, S, w, h + S))
         page.add_overlay(foot.pages[i], pikepdf.Rectangle(0, 0, w, S))
-    dst.docinfo['/Title'] = f'{p["title"]} – original question booklet with the official answer key'
+    dst.docinfo['/Title'] = f'{p["title"]} – original question booklet with the official answer key' if len(srcs) > 1 else f'{p["title"]} – original question paper with the official answers marked'
     dst.docinfo['/Author'] = 'Learn with Anil (learnwithanil.in)'
     dst.save(out, deterministic_id=True, compress_streams=True)
 
@@ -303,7 +306,7 @@ def main(exams):
             open(os.path.join(SEALED, name), 'wb').write(iv + AESGCM(base64.b64decode(keys[kid])).encrypt(iv, pdf, kid.encode()))
         dl = re.sub(r'[^A-Za-z0-9]+', '-', f'LearnWithAnil {p.get("kw") or p["title"]} {"Mock Test" if p.get("key") == "Learn with Anil" else "Question Paper"}').strip('-') + '.pdf'
         manifest.setdefault(eid, {})[p['id']] = dict(key=kid, file=name, name=dl, pages=pages, bytes=len(pdf), **({'mock': p['mock']} if p.get('mock') else {}),
-                                                     **({'orig': 1} if p['id'] in ORIGINALS.get(eid, {}) else {}))
+                                                     **({'orig': 1 if len(ORIGINALS[eid][p['id']]) > 1 else 2} if p['id'] in ORIGINALS.get(eid, {}) else {}))
         rows.append('\t'.join([kid, keys[kid], name, today]))
         print(f'  {kid}: {pages} pages, {len(pdf) // 1024} KB -> src/books/{name}')
     json.dump(keys, open(kpath, 'w'), indent=1)

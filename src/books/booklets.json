@@ -341,6 +341,32 @@
    "pages": 34
   }
  },
+ "gsssb-cce": {
+  "c01": {
+   "bytes": 5002942,
+   "file": "gsssb-cce-c01-37e8217f70.bin",
+   "key": "bk-gsssb-cce-c01",
+   "name": "LearnWithAnil-GSSSB-CCE-Prelims-2024-Paper-1-Question-Paper.pdf",
+   "orig": 2,
+   "pages": 105
+  },
+  "c02": {
+   "bytes": 3102326,
+   "file": "gsssb-cce-c02-69548fe9c0.bin",
+   "key": "bk-gsssb-cce-c02",
+   "name": "LearnWithAnil-GSSSB-CCE-Prelims-2024-Paper-2-Question-Paper.pdf",
+   "orig": 2,
+   "pages": 90
+  },
+  "c71": {
+   "bytes": 1506076,
+   "file": "gsssb-cce-c71-221f5c05af.bin",
+   "key": "bk-gsssb-cce-c71",
+   "name": "LearnWithAnil-GSSSB-CCE-Prelims-2024-Paper-71-Question-Paper.pdf",
+   "orig": 2,
+   "pages": 82
+  }
+ },
  "karnataka-fda-sda": {
   "f11g": {
    "bytes": 625772,
@@ -658,6 +684,29 @@
    "key": "bk-ts-police-si-s2023d",
    "name": "LearnWithAnil-TS-Police-SI-Mains-2023-Paper-4-Final-Written-Exam-General-Studies-Question-Paper.pdf",
    "pages": 43
+  }
+ },
+ "upsssc-inter-level": {
+  "gpa": {
+   "bytes": 684641,
+   "file": "upsssc-inter-level-gpa-ba7f780d9c.bin",
+   "key": "bk-upsssc-inter-level-gpa",
+   "name": "LearnWithAnil-UPSSSC-Gram-Panchayat-Adhikari-Mains-2025-Question-Paper.pdf",
+   "pages": 28
+  },
+  "lek": {
+   "bytes": 587836,
+   "file": "upsssc-inter-level-lek-dd84f91d51.bin",
+   "key": "bk-upsssc-inter-level-lek",
+   "name": "LearnWithAnil-UPSSSC-Lekhpal-Mains-2026-Question-Paper.pdf",
+   "pages": 24
+  },
+  "lps": {
+   "bytes": 727433,
+   "file": "upsssc-inter-level-lps-86f87f1b85.bin",
+   "key": "bk-upsssc-inter-level-lps",
+   "name": "LearnWithAnil-UPSSSC-Lower-Subordinate-Mains-2026-Question-Paper.pdf",
+   "pages": 28
   }
  }
 }

@@ -1,0 +1,1004 @@
+# GSSSB Gujarat Subordinate Services Class-III (Group-A and Group-B) Combined Competitive Examination, Advt. No. 212/2023-24, Preliminary (computer-based, April-May 2024), GSSSB question paper No. 2 of 71; answers: GSSSB's final answers, published with the paper (notice of 19 August 2026)
+
+Q 1 | rea | Verbal Reasoning
+If 'A' means 'multiplied by', 'B' means 'plus', 'C' means 'minus' and 'D' means "divided by", then what will be the value of following expression?
+6 A 6 C 3 B 38 D 2 = ?
+(1) 40
+(2) 51
+(3) 52
+(4) 39
+= 3
+~ Replace the letters: 6 × 6 − 3 + 38 ÷ 2. By BODMAS, first 38 ÷ 2 = 19 and 6 × 6 = 36; then 36 − 3 + 19 = 52.
+
+Q 2 | rea | Verbal Reasoning
+If 'M' denotes '×', 'D' denotes '÷', 'A' denotes '+', 'S' denotes '–' Then what will be the value of the following expression?
+4 S 8 D 2 A 12 M 2
+(1) 20
+(2) 24
+(3) 34
+(4) 36
+= 2
+~ Replace the letters: 4 − 8 ÷ 2 + 12 × 2. By BODMAS, 8 ÷ 2 = 4 and 12 × 2 = 24; then 4 − 4 + 24 = 24.
+
+Q 3 | rea | Verbal Reasoning
+If 'A' means 'multiplied by', 'B' means 'plus', 'C' means 'minus' and 'D' means "divided by", then what will be the value of following expression?
+3 A 8 C 8 B 55 D 5 = ?
+(1) 27
+(2) 31
+(3) 37
+(4) 41
+= 1
+~ Replace the letters: 3 × 8 − 8 + 55 ÷ 5. By BODMAS, 3 × 8 = 24 and 55 ÷ 5 = 11; then 24 − 8 + 11 = 27.
+
+Q 4 | rea | Verbal Reasoning
+If '$' means '-', '*' means '+', '@' means '÷', '#' means '×', then what will be the value of the following expression?
+7 # 3 * 42 @ 6 $ 9 = ?
+(1) 14
+(2) 19
+(3) 22
+(4) 26
+= 2
+~ Replace the symbols: 7 × 3 + 42 ÷ 6 − 9. By BODMAS, 7 × 3 = 21 and 42 ÷ 6 = 7; then 21 + 7 − 9 = 19.
+
+Q 5 | rea | Verbal Reasoning
+If P = '+', Q = '-', R = '×' and S = '÷', then what will be the value of the following expression?
+16 R 2 Q 20 P 15 S 3
+(1) 14
+(2) 15
+(3) 16
+(4) 17
+= 4
+~ Replace the letters: 16 × 2 − 20 + 15 ÷ 3. By BODMAS, 16 × 2 = 32 and 15 ÷ 3 = 5; then 32 − 20 + 5 = 17.
+
+Q 6 | rea | Verbal Reasoning
+The following question consists of a 'question' and two statements' numbered as 1 and 2 given below it. The candidates have to decide whether the data provided in the statements are sufficient to answer the question.
+Question: what is the distance between Delhi and Ajmer by the shortest route?
+Statements:
+1. Ajmer is 16 km to the north of Mathura which is 55 km away from Mumbai .
+2. Agra is 63 km away from Bikaner which is 50 km away from Ajmer.
+(1) Statement 1 alone is sufficient while statement 2 alone is not sufficient
+(2) Neither 1 nor 2 statement is sufficient
+(3) Both 1 and 2 statements are sufficient
+(4) Statement 2 alone is sufficient while statement 1 alone is not sufficient
+= 2
+~ The question asks for the Delhi–Ajmer distance, but neither statement mentions Delhi: statement 1 links Ajmer, Mathura and Mumbai, and statement 2 links Agra, Bikaner and Ajmer. Even together they give no distance involving Delhi, so neither is sufficient.
+
+Q 7 | rea | Puzzles & Arrangements
+The following question consists of a 'question' and two statements' numbered as 1 and 2 given below it. The candidates have to decide whether the data provided in the statements are sufficient to answer the question.
+Question: How many girls are there between Priya and Kavya in a row of 30 girls?
+Statements:
+1. Priya is 16 places away from Rahul.
+2. Priya is 12th from the left end.
+(1) Statement 1 alone is sufficient while statement 2 alone is not sufficient
+(2) Statement 2 alone is sufficient while statement 1 alone is not sufficient
+(3) Both 1 and 2 statements are sufficient
+(4) Neither 1 nor 2 statement is sufficient
+= 4
+~ To count the girls between Priya and Kavya we need both their positions. Statement 2 gives only Priya's position (12th from the left), and statement 1 is about Rahul, not Kavya. Kavya's position is never given, so even both statements together are not sufficient.
+
+Q 8 | rea | Verbal Reasoning
+On the basis of Prime numbers and their sequence only which of the following pair is similar to the expression given below?
+181 : 191
+(1) 109 : 113
+(2) 215 : 264
+(3) 117 : 184
+(4) 111 : 120
+= 1
+~ 181 and 191 are consecutive prime numbers (183, 185, 187 = 11 × 17 and 189 in between are composite). In the same way 109 and 113 are consecutive primes (110, 111 = 3 × 37 and 112 are composite). The other pairs contain non-primes such as 215, 117 and 111.
+
+Q 9 | rea | Verbal Reasoning
+Which of the following pairs is similar to the expression given below based on the division method only?
+36 : 722
+(1) 22 : 422
+(2) 12 : 262
+(3) 44 : 883
+(4) 43 : 862
+= 4
+~ 722 ÷ 36 gives quotient 20 and remainder 2 (36 × 20 + 2 = 722). Likewise 862 ÷ 43 gives quotient 20, remainder 2 (43 × 20 + 2 = 862). The others fail: 22 × 20 + 2 = 442, 12 × 20 + 2 = 242, 44 × 20 + 2 = 882.
+
+Q 10 | rea | Verbal Reasoning
+Which of the following pairs is similar to the expression given below based on the number multiplied by the next prime number method only?
+20 : 460
+(1) 10 : 120
+(2) 14 : 238
+(3) 19 : 398
+(4) 15 : 258
+= 2
+~ 20 × 23 = 460, where 23 is the next prime number after 20. Similarly 14 × 17 = 238, 17 being the next prime after 14. Check the others: 10 × 11 = 110, 19 × 23 = 437, 15 × 17 = 255.
+
+Q 11 | rea | Verbal Reasoning
+Which of the following pairs is similar to the expression given below based on the sum of numbers and subtraction method only?
+998 : 25
+(1) 279 : 15
+(2) 319 : 16
+(3) 846: 17
+(4) 868 : 20
+= 3
+~ Sum of the digits of 998 = 9 + 9 + 8 = 26, and 26 − 1 = 25. Likewise for 846: 8 + 4 + 6 = 18, and 18 − 1 = 17. The others fail: 279 → 18 − 1 = 17 (not 15), 319 → 13 − 1 = 12 (not 16), 868 → 22 − 1 = 21 (not 20).
+
+Q 12 | rea | Verbal Reasoning
+Which of the following pair is similar to the expression given below?
+743 : 347
+(1) 326 : 623
+(2) 273: 327
+(3) 418: 418
+(4) 176 : 761
+= 1
+~ 347 is 743 with its digits reversed. In the same way 623 is 326 reversed. The reverse of 273 is 372, of 418 is 814 and of 176 is 671, so the other pairs do not match.
+
+Q 13 | rea | Verbal Reasoning
+Which of the following pairs is similar to the expression given below based on the sum of numbers method only?
+586: 19
+(1) 439 : 18
+(2) 794 : 20
+(3) 743: 17
+(4) 648 : 19
+= 2
+~ The second number is the sum of the digits of the first: 5 + 8 + 6 = 19. Similarly 7 + 9 + 4 = 20. The others fail: 4 + 3 + 9 = 16, 7 + 4 + 3 = 14, 6 + 4 + 8 = 18.
+
+Q 14 | rea | Data Interpretation
+The following table gives the percentage of marks obtained by Six students in six different subjects in an examination.
+The Numbers in the Brackets give the Maximum Marks in Each Subject.
+Subject (Max. Marks)
+Student | GK (100) | Ancient History (100) | Medieval History (100) | Modern History (100) | Environment (100) | Hindi (100)
+Brijesh | 90 | 50 | 90 | 60 | 70 | 80
+Mohan | 100 | 80 | 80 | 40 | 80 | 70
+Alan | 90 | 60 | 70 | 70 | 90 | 70
+Bosco | 80 | 65 | 80 | 80 | 60 | 60
+Deepak | 80 | 65 | 85 | 95 | 50 | 90
+Piyush | 70 | 75 | 65 | 85 | 40 | 60
+Based on the above table Mohan obtained maximum marks in which Subject.
+(1) GK
+(2) Environment
+(3) Hindi
+(4) Medieval History
+= 1
+~ Mohan's row: GK 100, Ancient History 80, Medieval History 80, Modern History 40, Environment 80, Hindi 70. Every subject is out of 100, so his highest score is 100 in GK.
+
+Q 15 | rea | Data Interpretation
+Study the following table and answer the questions.
+Number of singers Appeared and Qualified in a singing contest from Different States Over the Years. App- Appeared, Qual - Qualified
+State | 1997 App. | 1997 Qual. | 1998 App. | 1998 Qual. | 1999 App. | 1999 Qual. | 2000 App. | 2000 Qual. | 2001 App. | 2001 Qual.
+Bihar | 5200 | 720 | 8500 | 980 | 7400 | 850 | 6800 | 775 | 9500 | 1125
+Gujarat | 7500 | 840 | 9200 | 1050 | 8450 | 920 | 9200 | 980 | 8800 | 1020
+Maharashtra | 6400 | 780 | 8800 | 1020 | 7800 | 890 | 8750 | 1010 | 9750 | 1250
+Nagaland | 8100 | 950 | 9500 | 1240 | 8700 | 980 | 9700 | 1200 | 8950 | 995
+Punjab | 7800 | 870 | 7600 | 940 | 9800 | 1350 | 7600 | 945 | 7990 | 885
+What is the average singers who appeared from State Nagaland during the given years?
+(1) 8550
+(2) 8800
+(3) 8990
+(4) 8210
+= 3
+~ Nagaland 'App.' figures: 8100 + 9500 + 8700 + 9700 + 8950 = 44950. Average over 5 years = 44950 ÷ 5 = 8990.
+
+Q 16 | rea | Data Interpretation
+Study the following table and answer the questions.
+Classification of 100 Students Based on the Marks Obtained by them in Language and Culture paper in an Examination.
+Marks out of 100
+Subject | 70 and above | 60 and above | 50 and above | 40 and above | 30 and above
+Language | 9 | 32 | 80 | 92 | 0
+Culture | 4 | 21 | 66 | 81 | 0
+Average (Aggregate) | 7 | 27 | 73 | 87 | 0
+What is the different between the number of students passed with 70 as cut-off marks in Language and those passed with 70 as cut-off marks in Average (Aggregate) ?
+(1) 3
+(2) 2
+(3) 5
+(4) 6
+= 2
+~ With 70 as the cut-off, the students passing are those in the '70 and above' column: 9 in Language and 7 in Average (Aggregate). Difference = 9 − 7 = 2.
+
+Q 17 | rea | Data Interpretation
+The following table gives the percentage of marks obtained by eight students in six different subjects in an examination.
+The Numbers in the Brackets give the Maximum Marks in Each Subject
+Subject (Max. Marks)
+Student | Business (100) | Finance (100) | Maths (100) | Psychology (100) | Sociology (100) | Hindi (100)
+Rashi | 45 | 99 | 39 | 88 | 35 | 74
+Umang | 70 | 49 | 89 | 49 | 88 | 86
+Yogita | 99 | 80 | 60 | 65 | 50 | 90
+Manav | 65 | 80 | 76 | 38 | 96 | 99
+Nilam | 80 | 78 | 99 | 45 | 49 | 83
+Priyam | 73 | 32 | 57 | 71 | 75 | 89
+Riya | 95 | 95 | 40 | 87 | 99 | 94
+Tarun | 99 | 88 | 79 | 89 | 69 | 49
+On the basis of above table, Rashi got A- in which of the above-mentioned subjects (A- means when a student gets marks between/equal to 70 and 80)?
+(1) Hindi
+(2) Maths
+(3) Psychology
+(4) Sociology
+= 1
+~ Rashi's marks: Business 45, Finance 99, Maths 39, Psychology 88, Sociology 35, Hindi 74. Only Hindi (74) lies in the A- band of 70 to 80.
+
+Q 18 | rea | Verbal Reasoning
+What will come in place of the question mark (?) to make the series given below logically complete by using addition and multiplication processes only?
+2, 4, 8, 10, 20, ??
+(1) 100, 50
+(2) 50, 100
+(3) 22, 44
+(4) 44, 22
+= 3
+~ The steps alternate +2 and ×2: 2 + 2 = 4, 4 × 2 = 8, 8 + 2 = 10, 10 × 2 = 20. So the next terms are 20 + 2 = 22 and 22 × 2 = 44.
+
+Q 19 | rea | Verbal Reasoning
+What will come in place of the question mark (?) to make the series given below logically complete?
+50, 53, 50, 59, 50, ?
+(1) 61
+(2) 62
+(3) 63
+(4) 64
+= 1
+~ Every alternate term is 50. The other terms are consecutive prime numbers after 50: 53, 59 and then 61 (54–58 and 60 are not prime).
+
+Q 20 | rea | Verbal Reasoning
+What will come in place of the question mark (?) to make the series given below logically complete by using addition process only?
+5, 21, 37, 53, 69, ?
+(1) 84
+(2) 85
+(3) 89
+(4) 90
+= 2
+~ Each term is 16 more than the previous one: 5, 21, 37, 53, 69. So the next term is 69 + 16 = 85.
+
+Q 21 | rea | Verbal Reasoning
+What will come in place of the question mark (?) to make the series given below logically complete by using subtraction and addition processes only?
+11, 8, 17, 14, 23, ??
+(1) 20, 29
+(2) 29, 20
+(3) 13, 19
+(4) 19, 13
+= 1
+~ The steps alternate −3 and +9: 11 − 3 = 8, 8 + 9 = 17, 17 − 3 = 14, 14 + 9 = 23. So the next terms are 23 − 3 = 20 and 20 + 9 = 29.
+
+Q 22 | rea | Verbal Reasoning
+How is Ravi's (Male) father's real brother's father related to Ravi?
+(1) Father
+(2) Brother
+(3) Maternal Grandfather(NANA)
+(4) Paternal Grandfather(DADA)
+= 4
+~ Ravi's father's real brother is Ravi's paternal uncle. That uncle's father is also the father of Ravi's father, i.e. Ravi's paternal grandfather (Dada).
+
+Q 23 | rea | Verbal Reasoning
+Pointing to a photograph, Narendra (Male) says that the man in the photograph is the father of his father's real brother.
+How is the man in the photograph related to Narendra?
+(1) Son
+(2) Father
+(3) Paternal Grandfather(DADA)
+(4) Maternal Grandfather(NANA)
+= 3
+~ Narendra's father's real brother is his paternal uncle, and the uncle's father is the father of Narendra's father. So the man in the photograph is Narendra's paternal grandfather (Dada).
+
+Q 24 | rea | Verbal Reasoning
+How is A related to the only daughter of the mother of A's (Male) real brother?
+(1) Sister
+(2) Brother
+(3) Father
+(4) Uncle(Father's brother)
+= 2
+~ The mother of A's real brother is A's own mother, and her only daughter is A's sister. Since A is a separate person from that only daughter, A must be male, so A is her brother.
+
+Q 25 | rea | Puzzles & Arrangements
+Bansi is older than Anju. Anal is older than Bansi. Arshi is also not as old as Anal but is older than Bansi. Who is the youngest among them?
+(1) Anju
+(2) Bansi
+(3) Anal
+(4) Arshi
+= 1
+~ Bansi > Anju, Anal > Bansi, and Anal > Arshi > Bansi. So the order by age is Anal > Arshi > Bansi > Anju, and Anju is the youngest.
+
+Q 26 | rea | Puzzles & Arrangements
+Bunny is older than Sanjiv. Kuldeep is older than Bunny. Rishabh is also not as old as Kuldeep but is older than Bunny.
+Who is the oldest among them?
+(1) Bunny
+(2) Sanjiv
+(3) Rishabh
+(4) Kuldeep
+= 4
+~ Bunny > Sanjiv, Kuldeep > Bunny, and Kuldeep > Rishabh > Bunny. So the order by age is Kuldeep > Rishabh > Bunny > Sanjiv, and Kuldeep is the oldest.
+
+Q 27 | rea | Verbal Reasoning
+The following question consists of a 'question' and two statements' numbered as 1 and 2 given below it. The candidates have to decide whether the data provided in the statements are sufficient to answer the question.
+Question: How is 'nor' written in the code language?
+Statements:
+1. 'Or nor And' is written as '7, 6, 2'.
+2. 'Nor not either' is written as '2, 8, 1'.
+(1) Statement 1 alone is sufficient while statement 2 alone is not sufficient
+(2) Statement 2 alone is sufficient while statement 1 alone is not sufficient
+(3) Both 1 and 2 statements are sufficient
+(4) Neither 1 nor 2 statement is sufficient
+= 3
+~ Statement 1 alone leaves 'nor' as 7, 6 or 2; statement 2 alone leaves it as 2, 8 or 1. Together, 'nor' is the only common word and '2' the only common code, so nor = 2. Both statements together are needed and sufficient.
+
+Q 28 | rea | Puzzles & Arrangements
+The following question consists of a 'question' and two statements' numbered as 1 and 2 given below it. The candidates have to decide whether the data provided in the statements are sufficient to answer the question.
+Question: In a row of five children Parul, Kajal, Romy, Shilu and Titu(All are facing North) , who is standing in the middle?
+Statements:
+1. Shilu is to the immediate right of Titu.
+2. Titu is the immediate left of Shilu.
+(1) Statement 1 alone is sufficient while statement 2 alone is not sufficient
+(2) Statement 2 alone is sufficient while statement 1 alone is not sufficient
+(3) Both 1 and 2 statements are sufficient
+(4) Neither 1 nor 2 statement is sufficient
+= 4
+~ Both statements say the same thing: Titu and Shilu stand together with Shilu just to Titu's right. Nothing is said about Parul, Kajal and Romy, so the child in the middle cannot be found even from both statements.
+
+Q 30 | rea | Verbal Reasoning
+Which of the following Venn diagrams indicates the best relation between Computer, Paddy and Delhi ?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+~ Computer (a machine), Paddy (a crop) and Delhi (a city) have nothing in common, so they are shown by three separate, non-overlapping circles, as in Figure 1.
+! img/c02-q30.png
+
+Q 31 | rea | Verbal Reasoning
+Which of the following Venn diagrams indicates the best relation between Trees, Sky and Road?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+~ Trees, Sky and Road are three completely different things; none is a part of another and they share no members. So they are shown by three separate circles, as in Figure 1.
+! img/c02-q31.png
+
+Q 32 | rea | Verbal Reasoning
+Which of the following Venn diagrams indicates the best relation between Bhopal, Madhya Pradesh and India?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+~ Bhopal is a city in Madhya Pradesh, and Madhya Pradesh is a state of India. One lies wholly inside the next, so the relation is shown by three concentric circles, as in Figure 2.
+! img/c02-q32.png
+
+Q 33 | rea | Non-verbal Reasoning
+Which among the following answer figures will be the mirror image of the question figure, when the mirror is held horizontally on the line AB?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 3
+~ A mirror held horizontally above the figure flips it top to bottom; left and right do not change. So P goes to the top upside down (looks like 'b') with both arrowheads pointing at it, A goes to the bottom upside down ('∀') with the two dots beside it, and C stays in the middle. That is answer figure 3.
+! img/c02-q33.png
+
+Q 34 | rea | Non-verbal Reasoning
+Which among the following answer figures will be the mirror image of the question figure, when the mirror is held horizontally on the line AB?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ The mirror lies horizontally along AB below the figure, so the image is flipped top to bottom while left and right stay the same. The left line's dot moves from its bottom end to its top end, and the upward arrow on the right becomes a downward arrow. That is answer figure 1.
+! img/c02-q34.png
+
+Q 35 | rea | Non-verbal Reasoning
+Which among the following answer figures will be the mirror image of the question figure, when the mirror is held vertically on the line AB?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ A vertical mirror on AB flips the figure left to right; top and bottom stay where they are. The upper arm, which comes from the left and turns down into the circle, now comes from the right, and the lower arm, which runs right and then down, now runs left and then down. That is answer figure 1.
+! img/c02-q35.png
+
+Q 36 | rea | Non-verbal Reasoning
+Which of the following answer figures is embedded in the question figure (Rotation is not allowed) ?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 3
+~ The question figure has a dome (a half-circle closed by a straight base) at the top, with vertical lines hanging from its base, each ending in a hook that curves to the left. The dome, one such line and its hook give figure 3 (an umbrella) in the same orientation. Figure 2 has the dome upside down (a bowl), and figures 1 and 4 have a T-bar that the question figure does not have.
+! img/c02-q36.png
+
+Q 37 | rea | Non-verbal Reasoning
+Out of the following 4 options given below, which one will be the water reflection of the original image X (Rotation is not allowed).
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ A water reflection flips the figure top to bottom. So the right-pointing arrow at the bottom comes to the top, the left-pointing arrow at the top goes to the bottom, and the shadings swap: the top triangle now has horizontal lines and the bottom triangle vertical lines. Only answer figure 1 shows this.
+! img/c02-q37.png
+
+Q 38 | rea | Non-verbal Reasoning
+Which of the following answer figures will replace the question mark in the question figure given below? (Rotation is not allowed).
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 3
+~ The figure is symmetrical about its vertical centre line, so the missing bottom-right quarter must mirror the bottom-left one (slanting lines, a short vertical line at the bottom next to the centre, no horizontal line) and carry a full-size leaf like the other quarters. Only (c) fits: (a) and (d) have an extra horizontal line ((d) also lacks the short vertical line), while (b) has only a tiny leaf.
+! img/c02-q38.png
+
+Q 39 | rea | Non-verbal Reasoning
+Which of the following answer figures will embeded in the question figure given below? (Rotation is not allowed).
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 2
+~ Figure 2 sits in the lower middle of the question figure, unrotated: the right vertical line is its right side, the bottom horizontal line its base and the long slanting line its hypotenuse, while the middle horizontal line, the central vertical line and the short slant to the bottom-right corner are its inner lines. Figures 1 and 3 need a slanted inner line where the question figure has a horizontal one, and figure 4 does not occur with the same shape.
+! img/c02-q39.png
+
+Q 40 | rea | Non-verbal Reasoning
+Which of the following answer figures will replace the question mark in the question figure given below? (Rotation is not allowed).
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 2
+~ Each quarter has one black and one white petal, and the black petal turns 90° from quarter to quarter: it lies on the upward line in the top-left, the leftward line in the bottom-left and the downward line in the bottom-right. So in the top-right quarter it must lie on the rightward line (the bottom edge), with the white petal on the left edge: figure (b). (a) faces the wrong way, (c) has no black petal and (d) has two.
+! img/c02-q40.png
+
+Q 41 | qa | Number System & Simplification
+115 × 115 - 2 × 115 × 45 + 45 × 45 is equal to:
+(1) 1600
+(2) 2500
+(3) 4600
+(4) 4900
+= 4
+~ The expression has the form a^2 − 2ab + b^2 = (a − b)^2 with a = 115 and b = 45. So it equals (115 − 45)^2 = 70^2 = 4900.
+
+Q 42 | qa | Algebra, Geometry & Mensuration
+Which of the following equations are correct?
+(1) A^3 - b^3 = (a + b)(a^2 – ab – b^2)
+(2) A^3 + b^3 + c^3– 3abc = (a + b + c)(a^2 + b^2 + c^2 – ab – bc – ca)
+(3) (a – b)^3 = a^3 – b^3 – 3ab(a + b)
+(4) (a + b)^3 = a^3 + b^3 + 3ab(a - b)
+= 2
+~ The standard identity is a^3 + b^3 + c^3 − 3abc = (a + b + c)(a^2 + b^2 + c^2 − ab − bc − ca). The others are wrong: a^3 − b^3 = (a − b)(a^2 + ab + b^2), (a − b)^3 = a^3 − b^3 − 3ab(a − b) and (a + b)^3 = a^3 + b^3 + 3ab(a + b).
+
+Q 43 | qa | Algebra, Geometry & Mensuration
+In an Arithmetic progression, if d = –5, n = 8, aₙ = 12 then a is.
+(1) 47
+(2) 49
+(3) 54
+(4) 58
+= 1
+~ In an AP, aₙ = a + (n − 1)d. So 12 = a + (8 − 1)(−5) = a − 35, giving a = 12 + 35 = 47.
+
+Q 44 | qa | Number System & Simplification
+The sum of odd numbers up to 436 is:
+(1) 47,524
+(2) 52,314
+(3) 54,645
+(4) 57,624
+= 1
+~ The odd numbers up to 436 are 1, 3, 5, …, 435; there are 436 ÷ 2 = 218 of them. The sum of the first n odd numbers is n^2, so the sum = 218^2 = 47,524.
+
+Q 45 | qa | Algebra, Geometry & Mensuration
+The pairs of equations 4x+2y-2 = 0 and -12x-6y+6=0 have:
+(1) Unique solution
+(2) Exactly two solutions
+(3) Infinitely many solutions
+(4) No solution
+= 3
+~ Compare the ratios: a1/a2 = 4/(−12) = −1/3, b1/b2 = 2/(−6) = −1/3, c1/c2 = (−2)/6 = −1/3. All three ratios are equal (the second equation is −3 times the first), so the lines coincide and there are infinitely many solutions.
+
+Q 46 | qa | Algebra, Geometry & Mensuration
+If 6x + 4y = 8 and 2x + y = 2, then find the value of y.
+(1) 4
+(2) 2
+(3) -4
+(4) -2
+= 2
+~ Multiply the second equation by 3: 6x + 3y = 6. Subtract it from 6x + 4y = 8 to get y = 2 (then x = 0).
+
+Q 47 | qa | Arithmetic
+The average monthly income of P and Q is ₹ 5400. The average monthly income of Q and R is ₹ 6200 and the average monthly income of P and R is ₹ 6800. The monthly income of P is:
+(1) ₹ 6000
+(2) ₹ 6400
+(3) ₹ 6800
+(4) ₹ 7000
+= 1
+~ P + Q = 10800, Q + R = 12400 and P + R = 13600. Adding: 2(P + Q + R) = 36800, so P + Q + R = 18400. Then P = 18400 − (Q + R) = 18400 − 12400 = ₹ 6000.
+
+Q 48 | qa | Arithmetic
+If the mean of 7 observations is 21, when a constant 'C' is added to each observation, the mean becomes 28. The value of C is:
+(1) 6
+(2) 7
+(3) 9
+(4) 10
+= 2
+~ Adding the same constant C to every observation increases the mean by exactly C. So 21 + C = 28, giving C = 7.
+
+Q 49 | qa | Arithmetic
+The average of two numbers A and B is 19, that of B and C is 30 and C and A is 25. What is the value of A?
+(1) 20
+(2) 19
+(3) 15
+(4) 14
+= 4
+~ A + B = 38, B + C = 60 and C + A = 50. Adding: 2(A + B + C) = 148, so A + B + C = 74. Then A = 74 − (B + C) = 74 − 60 = 14.
+
+Q 50 | qa | Arithmetic
+After allowing a discount of 12% on the marked price of an article, it is sold for ₹ 308. Find its marked price.
+(1) ₹ 320
+(2) ₹ 216
+(3) ₹ 220
+(4) ₹ 350
+= 4
+~ After a 12% discount the selling price is 88% of the marked price. So marked price = 308 × 100 ÷ 88 = ₹ 350.
+
+Q 51 | qa | Arithmetic
+Sheetal could not decide between discount of 35% or two successive discounts of 25% and 10%, both given on shopping of ₹10000. What is the difference between both the discounts?
+(1) ₹ 250
+(2) ₹ 280
+(3) ₹ 300
+(4) ₹ 340
+= 1
+~ Single discount: 35% of ₹10000 = ₹3500. Successive 25% and 10%: equivalent discount = 25 + 10 − (25×10)/100 = 32.5%, i.e. ₹3250. Difference = 3500 − 3250 = ₹250.
+
+Q 52 | qa | Number System & Simplification
+The unit digit in the sum of (554)^372+(554)^373 is.
+(1) 3
+(2) 0
+(3) 2
+(4) 4
+= 2
+~ Only the unit digit 4 matters: 4 raised to an even power ends in 6 and to an odd power ends in 4. So (554)^372 ends in 6 and (554)^373 ends in 4; 6 + 4 = 10, so the unit digit of the sum is 0.
+
+Q 53 | qa | Arithmetic
+Nandini went to a brick kiln to buy bricks. The rate of the bricks were ₹ 3240 per one thousand bricks. How many bricks can she buy if she has only ₹ 25,920?
+(1) 6500
+(2) 7000
+(3) 7800
+(4) 8000
+= 4
+~ Number of thousands she can buy = 25920 ÷ 3240 = 8. So she can buy 8 × 1000 = 8000 bricks.
+
+Q 54 | qa | Number System & Simplification
+2/7 part of tank is full of water. When 30 liters of water is taken out, it becomes empty. The capacity of the tank is?
+(1) 100 liters
+(2) 105 liters
+(3) 114 liters
+(4) 124 liters
+= 2
+~ Taking out 30 litres empties the tank, so the water present (2/7 of the capacity) is 30 litres. Capacity = 30 × 7/2 = 105 litres.
+
+Q 55 | qa | Number System & Simplification
+Find the greatest among the following options.
+(1) 5/8
+(2) 8/11
+(3) 42/56
+(4) 89/156
+= 3
+~ Convert to decimals: 5/8 = 0.625, 8/11 ≈ 0.727, 42/56 = 3/4 = 0.75, 89/156 ≈ 0.571. The greatest is 42/56.
+
+Q 56 | qa | Number System & Simplification
+The sum of three consecutive odd natural numbers is 159. Then, the largest number is:
+(1) 51
+(2) 53
+(3) 55
+(4) 59
+= 3
+~ Let the numbers be x − 2, x, x + 2. Their sum 3x = 159, so x = 53. The numbers are 51, 53, 55 and the largest is 55.
+
+Q 57 | qa | Algebra, Geometry & Mensuration
+There are three numbers A, B and C. If A is reduced by 5 and B is increased by 5 then their values will be equal. If C is increased by 9 and B is increased by 9 then their values will be equal. If sum of A and C is 380 then find the value of B.
+(1) 195
+(2) 185
+(3) 175
+(4) 165
+= 2
+~ A − 5 = B + 5 gives A = B + 10. C + 9 = B + 9 gives C = B. Then A + C = (B + 10) + B = 380, so 2B = 370 and B = 185.
+
+Q 58 | qa | Arithmetic
+If Ahmad purchases a watch for ₹ 2800 and pays 16% sales tax, the total amount spent on purchase is?
+(1) ₹ 5410
+(2) ₹ 3380
+(3) ₹ 2456
+(4) ₹ 3248
+= 4
+~ Sales tax = 16% of ₹2800 = ₹448. Total amount = 2800 + 448 = ₹3248 (or 2800 × 1.16).
+
+Q 59 | qa | Arithmetic
+If x is 40% greater than z and y is 25% greater than z, then by what percentage x will be greater than y?
+(1) 12%
+(2) 16%
+(3) 18%
+(4) 22%
+= 1
+~ Take z = 100: x = 140 and y = 125. x exceeds y by 15, and 15/125 × 100 = 12%. The percentage is taken on y, the base of comparison.
+
+Q 60 | qa | Arithmetic
+A trader expects a gain of 28 % on his cost price. If in a week, his sale was of ₹ 896, then what was his profit?
+(1) ₹ 156
+(2) ₹ 168
+(3) ₹ 178
+(4) ₹ 196
+= 4
+~ Selling price = 128% of cost price, so CP = 896 × 100/128 = ₹700. Profit = 896 − 700 = ₹196.
+
+Q 61 | qa | Arithmetic
+"A dealer buys an old cooler listed at ₹ 1200 and get Successive discounts of 20% and 10%. He spends ₹ 400 on its repairs and sells it at a profit of 20%. Find the selling price of the cooler."
+(1) ₹ 1516.80
+(2) ₹ 2214.50
+(3) ₹ 1080.00
+(4) ₹ 2930.06
+= 1
+~ Purchase price = 1200 × 0.80 × 0.90 = ₹864. Cost price with repairs = 864 + 400 = ₹1264. Selling price at 20% profit = 1264 × 1.20 = ₹1516.80.
+
+Q 62 | qa | Arithmetic
+Length and width of a field are in the ratio 9 : 5. If the width of the field is 55 m, then its length is.
+(1) 85 m
+(2) 99 m
+(3) 120 m
+(4) 72 m
+= 2
+~ Width 5 parts = 55 m, so 1 part = 11 m. Length = 9 parts = 9 × 11 = 99 m.
+
+Q 63 | qa | Arithmetic
+A car travels 184 km in 4 hours and 174 km in 3 hours. What is the ratio of the car's speed in the first trip to its speed in the second trip?
+(1) 11:13
+(2) 13:11
+(3) 23:11
+(4) 23:29
+= 4
+~ First-trip speed = 184/4 = 46 km/h; second-trip speed = 174/3 = 58 km/h. Ratio 46 : 58 = 23 : 29 (dividing by 2).
+
+Q 64 | qa | Number System & Simplification
+Two numbers are in the ratio of 2:5. If their H. C. F. is 31, numbers are:
+(1) 62, 155
+(2) 20, 100
+(3) 110, 550
+(4) 50, 250
+= 1
+~ Since 2 and 5 are co-prime, the numbers are 2 × HCF and 5 × HCF = 2 × 31 = 62 and 5 × 31 = 155. The other pairs are in the ratio 1 : 5, not 2 : 5.
+
+Q 65 | qa | Arithmetic
+Time taken by A to finish a piece of work is twice the time taken B and thrice the time taken by C. If all three of them work together, it takes them 4 days to complete the entire work. In how many days B alone can complete the work?
+(1) 12 days
+(2) 14 days
+(3) 18 days
+(4) 20 days
+= 1
+~ Let A take 6k days; then B takes 3k and C takes 2k days. Together: 1/6k + 1/3k + 1/2k = (1 + 2 + 3)/6k = 1/k per day, so k = 4. B alone takes 3k = 12 days.
+
+Q 66 | qa | Arithmetic
+A can do a work in 15 days and B in 20 days. If they work on it together for 3 days, then the fraction of the work that is left is:
+(1) 7/10
+(2) 7/20
+(3) 13/20
+(4) 13/10
+= 3
+~ One day's joint work = 1/15 + 1/20 = 7/60. In 3 days they do 21/60 = 7/20 of the work, so the work left = 1 − 7/20 = 13/20.
+
+Q 67 | qa | Arithmetic
+The distance between City A and City B is 2475 kilometers. If a train covers this distance in 55 hours, the average speed of the train in between the railway stations of these two cities is.
+(1) 45 km/hr.
+(2) 30 km/hr.
+(3) 80 km/hr.
+(4) 65 km/hr.
+= 1
+~ Average speed = total distance ÷ total time = 2475 ÷ 55 = 45 km/hr.
+
+Q 68 | qa | Arithmetic
+In a flight of 540 km, an aircraft was slowed down due to bad weather. Its average speed for the trip was reduced by 180 km/hr and the time of flight increased by 30 minutes. The original duration of the flight is:
+(1) 1 hour
+(2) 1.5 hours
+(3) 2 hours
+(4) 2.5 hours
+= 1
+~ Let the original time be t hours: 540/t − 540/(t + 1/2) = 180, which simplifies to t(t + 1/2) = 3/2, i.e. 2t^2 + t − 3 = 0, so t = 1 hour. Check: 540 km/h for 1 h versus 360 km/h for 1.5 h.
+
+Q 69 | qa | Arithmetic
+A man travels from A to B at a speed of 35 km/hr in 74 minutes and he travels a distance from B to C with a speed of 45 km/hr in 111 minutes. Find the average speed of whole journey.
+(1) 37 km/h
+(2) 41 km/h
+(3) 45 km/h
+(4) 48 km/h
+= 2
+~ Average speed = total distance ÷ total time = (35 × 74 + 45 × 111) ÷ (74 + 111) = (2590 + 4995) ÷ 185 = 7585 ÷ 185 = 41 km/h. (Since times are given, it is the time-weighted average of the speeds.)
+
+Q 70 | qa | Arithmetic
+A boat can travel with a speed of 12 km/hr. in still water. If the speed of the stream is 8 km/hr., find the time taken by the boat to go 60 km downstream.
+(1) 3 hours
+(2) 5 hours
+(3) 6 hours
+(4) 9 hours
+= 1
+~ Downstream speed = boat speed + stream speed = 12 + 8 = 20 km/hr. Time = 60 ÷ 20 = 3 hours.
+
+Q 71 | eng | Grammar
+Select the most appropriate article from the options given blow to complete the sentence.
+Mark “No article” if there is no requirement of article in the given sentence.
+My mother cooks ______ best South Indian food in Society.
+(1) a
+(2) No article
+(3) an
+(4) the
+= 4
+~ A superlative adjective (best, tallest, most beautiful) takes the definite article 'the', because it points to one particular thing that stands above all others: 'the best South Indian food'.
+
+Q 72 | eng | Grammar
+Select the most appropriate preposition from the given options to fill in the blanks for the given sentence.
+He is not a difficult man to work ______.
+(1) from
+(2) with
+(3) at
+(4) off
+= 2
+~ We 'work with' a person, i.e. alongside or together with him. 'He is not a difficult man to work with' means it is easy to work together with him.
+
+Q 73 | eng | Grammar
+Select the most appropriate preposition from the given options to fill in the blanks for the given sentence.
+You can obtain the answer ______ adding the date of birth to this figure.
+(1) in
+(2) at
+(3) by
+(4) on
+= 3
+~ 'By' + gerund (-ing form) expresses the means or method of doing something: you get the answer by adding the date of birth.
+
+Q 74 | eng | Grammar
+Select the most appropriate past tense form of the verb from the given options to fill in the blanks in the given sentence.
+John's father ______ the gate when we went to their house.
+(1) was painting
+(2) will be painting
+(3) is painting
+(4) paints
+= 1
+~ An action that was in progress when another past action happened takes the past continuous (was/were + -ing): he 'was painting' the gate when we went (simple past). The other options are future or present forms.
+
+Q 75 | eng | Usage & Sentence Correction
+Choose the most logical order of the words from among the four given choices to construct a coherent sentence.
+A) in the world, and its forest stretches
+B) line of the Andes in the west
+C) Amazonia is the largest river basin
+D) from the Atlantic Ocean in the east to the tree
+(1) DBAC
+(2) CADB
+(3) ABCD
+(4) DCAB
+= 2
+~ C has the subject and opens the sentence; A completes 'largest river basin in the world' and begins 'its forest stretches'; D gives 'from the Atlantic Ocean in the east to the tree', and B completes 'tree line of the Andes in the west'. Order: CADB.
+
+Q 76 | eng | Usage & Sentence Correction
+Choose the most logical order of the words from among the four given choices to construct a coherent sentence.
+A) across larger geographic areas and
+B) the extinction risk of at least 1,660 animal species worldwide
+C) longer seasons, scientists estimate they now contribute to
+D) as wildfires burn more frequently and intensely,
+(1) DCAB
+(2) ADCB
+(3) BCDA
+(4) DACB
+= 4
+~ D opens the clause 'as wildfires burn more frequently and intensely,'; A continues 'across larger geographic areas and'; C completes 'longer seasons' and gives the main clause 'scientists estimate they now contribute to'; B supplies its object. Order: DACB.
+
+Q 77 | eng | Vocabulary
+Out of the four alternatives, choose the one which can be substituted for the given word.
+A person who is unable to pay his debts
+(1) Affluent
+(2) Opulent
+(3) Insolvent
+(4) Tycoon
+= 3
+~ 'Insolvent' means unable to pay one's debts (bankrupt). 'Affluent' and 'opulent' mean wealthy, and a 'tycoon' is a rich, powerful businessman — all the opposite idea.
+
+Q 78 | eng | Vocabulary
+Which one of the alternatives substitutes the given sentence.
+A family of young animals
+(1) Caravan
+(2) Brood
+(3) Herd
+(4) Nomad
+= 2
+~ A 'brood' is a family of young animals, especially birds hatched or born at one time. A 'caravan' is a group of travellers, a 'herd' a large group of cattle or other animals, and a 'nomad' a wanderer.
+
+Q 79 | eng | Usage & Sentence Correction
+Translate the following sentence into Gujarati:
+How many times a day do you eat?
+(1) તમારે દિવસમાં કેટલી વાર જમવું જોઈએ?
+(2) તમે દિવસમાં કેટલી વાર જમો છો?
+(3) તમે દિવસમાં કેટલી વાર જમવું છે?
+(4) તમે દિવસમાં કેટલી વાર જમ્યા છો?
+= 2
+~ 'Do you eat?' is the simple present, used for a habit, so it becomes 'જમો છો?'. Option 1 means 'should you eat', option 3 is ungrammatical ('want to eat'), and option 4 is present perfect ('have you eaten').
+
+Q 80 | eng | Vocabulary
+Select the most appropriate SYNONYM of the word given below.
+Agile
+(1) Awkward
+(2) Graceful
+(3) Clumsy
+(4) Rigid
+= 2
+~ 'Agile' means able to move quickly and easily (nimble, lithe). Of the options, 'graceful' (moving smoothly and easily) is closest; 'awkward', 'clumsy' and 'rigid' are its opposites.
+
+Q 81 | eng | Vocabulary
+Select the most appropriate SYNONYM of the word given below.
+Suspicious
+(1) Sure
+(2) Doubtful
+(3) Undeniable
+(4) Certain
+= 2
+~ 'Suspicious' means having or showing distrust or doubt about something, so 'doubtful' is its synonym. 'Sure', 'certain' and 'undeniable' express the opposite — no doubt at all.
+
+Q 82 | eng | Comprehension
+Read the passage given below and answer the questions.
+Animals, plants, and their habitats are preserved and protected through wildlife conservation. Like forests, wildlife is a national resource that contributes to ecological balance and is also valuable from an economic, recreational, and aesthetic standpoint. There was a time when there was no human intervention, there were a lot of wild animals, and there was no issue with protecting or conserving them.
+However, as agriculture, settlement, industry, and other developmental activities increased, as well as largely because of human greed, the number of wild animals rapidly decreased. As a result, several animal species have already gone extinct, and a number more are in danger of doing so. The need for wildlife conservation results from how human beings are altering lifestyles and advancing ways of living. The massive clearing of trees and forests is causing the habitats of wildlife to be destroyed. The mass extinction of wildlife species is the result of human beings' careless actions. Wild animals and plants crucially maintain the ecological balance. They must be considered necessary. The threat to wildlife comes from a variety of sources. Significant factors contributing to the decline of animals include rising pollution, climatic changes, resource overuse, irregular hunting and poaching, habitat degradation, etc. The government has created and modified many laws and regulations aimed at protecting animals.
+As we know, deforestation is a huge problem when we speak of wildlife conservation. Trees and forests are home to numerous animals and birds. Thus, we need to plant more trees and stop cutting them as well. My school has recently decided to plant trees near our school area, which is empty. This might be a small initiative, but we need to have more afforestation so that it can have a significant impact and help us conserve wildlife.
+Identify the most suitable title for the passage.
+(1) Need For Wildlife Conservation
+(2) Need For deforestation
+(3) Need For afforestration
+(4) Need For human beings to alter lifestyles
+= 1
+~ The whole passage is about why wildlife must be protected — its value, the causes of its decline and the steps (laws, tree planting) to conserve it. Afforestation is only one suggested remedy, deforestation is a cause, not a need, and altered lifestyles are blamed, not recommended.
+
+Q 83 | eng | Comprehension
+Read the passage given below and answer the questions.
+Animals, plants, and their habitats are preserved and protected through wildlife conservation. Like forests, wildlife is a national resource that contributes to ecological balance and is also valuable from an economic, recreational, and aesthetic standpoint. There was a time when there was no human intervention, there were a lot of wild animals, and there was no issue with protecting or conserving them.
+However, as agriculture, settlement, industry, and other developmental activities increased, as well as largely because of human greed, the number of wild animals rapidly decreased. As a result, several animal species have already gone extinct, and a number more are in danger of doing so. The need for wildlife conservation results from how human beings are altering lifestyles and advancing ways of living. The massive clearing of trees and forests is causing the habitats of wildlife to be destroyed. The mass extinction of wildlife species is the result of human beings' careless actions. Wild animals and plants crucially maintain the ecological balance. They must be considered necessary. The threat to wildlife comes from a variety of sources. Significant factors contributing to the decline of animals include rising pollution, climatic changes, resource overuse, irregular hunting and poaching, habitat degradation, etc. The government has created and modified many laws and regulations aimed at protecting animals.
+As we know, deforestation is a huge problem when we speak of wildlife conservation. Trees and forests are home to numerous animals and birds. Thus, we need to plant more trees and stop cutting them as well. My school has recently decided to plant trees near our school area, which is empty. This might be a small initiative, but we need to have more afforestation so that it can have a significant impact and help us conserve wildlife.
+Select the most appropriate SYNONYM of the word given below.
+Rapidly
+(1) Slowly
+(2) Leisurely
+(3) Sluggishly
+(4) Swiftly
+= 4
+~ 'Rapidly' means very quickly ('the number of wild animals rapidly decreased'), so 'swiftly' is the synonym. 'Slowly', 'leisurely' and 'sluggishly' are antonyms.
+
+Q 84 | eng | Comprehension
+Read the passage given below and answer the questions.
+Animals, plants, and their habitats are preserved and protected through wildlife conservation. Like forests, wildlife is a national resource that contributes to ecological balance and is also valuable from an economic, recreational, and aesthetic standpoint. There was a time when there was no human intervention, there were a lot of wild animals, and there was no issue with protecting or conserving them.
+However, as agriculture, settlement, industry, and other developmental activities increased, as well as largely because of human greed, the number of wild animals rapidly decreased. As a result, several animal species have already gone extinct, and a number more are in danger of doing so. The need for wildlife conservation results from how human beings are altering lifestyles and advancing ways of living. The massive clearing of trees and forests is causing the habitats of wildlife to be destroyed. The mass extinction of wildlife species is the result of human beings' careless actions. Wild animals and plants crucially maintain the ecological balance. They must be considered necessary. The threat to wildlife comes from a variety of sources. Significant factors contributing to the decline of animals include rising pollution, climatic changes, resource overuse, irregular hunting and poaching, habitat degradation, etc. The government has created and modified many laws and regulations aimed at protecting animals.
+As we know, deforestation is a huge problem when we speak of wildlife conservation. Trees and forests are home to numerous animals and birds. Thus, we need to plant more trees and stop cutting them as well. My school has recently decided to plant trees near our school area, which is empty. This might be a small initiative, but we need to have more afforestation so that it can have a significant impact and help us conserve wildlife.
+Select the most appropriate SYNONYM of the word given below.
+Significant
+(1) Slight
+(2) Negligible
+(3) Substantial
+(4) Trivial
+= 3
+~ 'Significant' means large or important enough to matter ('significant factors', 'a significant impact'), so 'substantial' is the synonym. 'Slight', 'negligible' and 'trivial' mean small or unimportant.
+
+Q 85 | eng | Comprehension
+Read the passage given below and answer the questions.
+Animals, plants, and their habitats are preserved and protected through wildlife conservation. Like forests, wildlife is a national resource that contributes to ecological balance and is also valuable from an economic, recreational, and aesthetic standpoint. There was a time when there was no human intervention, there were a lot of wild animals, and there was no issue with protecting or conserving them.
+However, as agriculture, settlement, industry, and other developmental activities increased, as well as largely because of human greed, the number of wild animals rapidly decreased. As a result, several animal species have already gone extinct, and a number more are in danger of doing so. The need for wildlife conservation results from how human beings are altering lifestyles and advancing ways of living. The massive clearing of trees and forests is causing the habitats of wildlife to be destroyed. The mass extinction of wildlife species is the result of human beings' careless actions. Wild animals and plants crucially maintain the ecological balance. They must be considered necessary. The threat to wildlife comes from a variety of sources. Significant factors contributing to the decline of animals include rising pollution, climatic changes, resource overuse, irregular hunting and poaching, habitat degradation, etc. The government has created and modified many laws and regulations aimed at protecting animals.
+As we know, deforestation is a huge problem when we speak of wildlife conservation. Trees and forests are home to numerous animals and birds. Thus, we need to plant more trees and stop cutting them as well. My school has recently decided to plant trees near our school area, which is empty. This might be a small initiative, but we need to have more afforestation so that it can have a significant impact and help us conserve wildlife.
+Select the most appropriate ANTONYM of the word given below.
+Extinction
+(1) Annihilation
+(2) Demolition
+(3) Preservation
+(4) Disappearance
+= 3
+~ 'Extinction' means the complete dying out of a species. Its opposite is 'preservation' (keeping it alive and safe), which is exactly what the passage calls for. 'Annihilation', 'demolition' and 'disappearance' are close in meaning to extinction.
+
+Q 86 | guj | Vocabulary & Usage
+‘તોટો’ શબ્દનો વિરુદ્ધાર્થી શબ્દ શોધો
+(1) વજન
+(2) પવન
+(3) ફુગ્ગો
+(4) નફો
+= 4
+~ 'Toto' means loss (khot, nuksan); its opposite is 'nafo' (profit).
+
+Q 87 | guj | Grammar
+‘હું મારી નિષ્ઠા આપું છું’ નું કર્મણિ વિધાન શોધો
+(1) મારાથી નિષ્ઠા અપાય છે
+(2) મારાથી નિષ્ઠા અપાય નહીં
+(3) મારાથી નિષ્ઠા પણ અપાય છે
+(4) મારાથી નિષ્ઠા કેમ અપાય?
+= 1
+~ In the karmani (passive) form the doer 'hun' becomes 'marathi', and the verb root 'aap' takes the passive suffix 'aa' (aap + aa = apa) to give 'apay chhe'; the meaning stays the same: 'marathi nishtha apay chhe'. The other options make it negative, add 'pan' or turn it into a question.
+
+Q 88 | guj | Grammar
+નીચેનામાંથી સાચી જોડણીવાળો શબ્દ શોધો
+(1) કોહીનુર
+(2) કોહિનૂર
+(3) કોહિનુર
+(4) કોહીનૂર
+= 2
+~ The standard spelling is 'કોહિનૂર' (Kohinoor): short 'i' (હિ) and long 'oo' (નૂ), following the original 'Koh-i-Noor' (mountain of light).
+
+Q 89 | guj | Grammar
+‘આઠદસ’ સમાસનો સાચો વિગ્રહ શોધો
+(1) આઠ કે દસ
+(2) આઠ પછી દસ
+(3) આઠ કે દસ
+(4) દસ પછી આઠ
+= 1,3
+~ 'Aathdas' is a dvandva (vaikalpik) compound meaning 'eight or ten' (an approximate number), so its vigrah is 'aath ke das'. Options 1 and 3 print the same correct answer, so GSSSB accepted either option.
+
+Q 90 | guj | Grammar
+‘ભાઈબહેન’ શબ્દનો સમાસ ઓળખાવો
+(1) દ્વંદ્વ
+(2) ઉપપદ
+(3) મધ્યમપદલોપી
+(4) દ્વિગુ
+= 1
+~ 'Bhaibahen' = 'bhai ane bahen' (brother and sister): both parts are equally important and are joined by 'ane', so it is a dvandva (itaretar dvandva) compound.
+
+Q 91 | guj | Vocabulary & Usage
+‘કૂવો પૂરવો’ રૂઢિપ્રયોગનો અર્થ શોધો
+(1) પાપ કરવું
+(2) કૂવામાં પડી આત્મહત્યા કરવી
+(3) પરોપકાર કરવો
+(4) અવાજ કરવો
+= 2
+~ The idiom 'kuvo poorvo' (literally 'to fill a well') means to commit suicide by jumping into a well (kuvama padi aatmahatya karvi).
+
+Q 92 | guj | Vocabulary & Usage
+–કહેવતનો અર્થ શોધો
+બે ઘરનો પરોણો ભૂખે મરે
+(1) બે સગાને ત્યાં ન જવું
+(2) બે પરોણાનો માર લાગે
+(3) અનિશ્ચિતતા દુઃખ આપે
+(4) બે મિત્રોને ત્યાં ન જમવું
+= 3
+~ 'Be gharno parono bhookhe mare' — a guest invited to two houses goes hungry, because each house assumes he has eaten at the other. It means that wavering between two choices (anishchitata, uncertainty) brings trouble.
+
+Q 93 | guj | Grammar
+સાચું સંધિ જોડાણ શોધો
+દ્વારકા + ઈશ
+(1) દ્વારકેશ
+(2) દ્વારિકાધીશ
+(3) દ્વારીકિશ
+(4) દ્વારિકાઈશ્વર
+= 1
+~ Guna sandhi: aa + ee = e, so dvaraka + eesh = 'dvarakesh' (Lord of Dwarka). The other options are different words or wrong joins.
+
+Q 94 | guj | Grammar
+‘પ્રત્યક્ષ’ શબ્દનો સાચો સંધિ વિગ્રહ શોધો.
+(1) પ્રત્યે + ક
+(2) પ્ર + તીઅર્ક
+(3) પ + ત્યેંક
+(4) પ્રતિ + અક્ષ
+= 4
+~ Yan sandhi: i + a = ya, so prati + aksh = 'pratyaksh' (before the eyes, i.e. direct/visible; 'aksh' = eye).
+
+Q 95 | guj | Grammar
+‘કેતુ + ઉદય’ શબ્દનું સાચું સંધિ જોડાણ શોધો
+(1) કેતૂદય
+(2) કેતઓય
+(3) કેતુદય
+(4) કએતઉ
+= 1
+~ Deergh sandhi: u + u = oo (long), so ketu + uday = 'ketooday' (કેતૂદય). 'કેતુદય' wrongly keeps the short u.
+
+Q 96 | guj | Vocabulary & Usage
+‘ગ્રીવા’ શબ્દનો સમાનાર્થી શબ્દ શોધો
+(1) નેત્ર
+(2) ખભો
+(3) ડોક
+(4) ચહેરો
+= 3
+~ 'Greeva' means neck, so its synonym is 'dok' (also 'gardan'). 'Netra' is eye, 'khabho' shoulder and 'chahero' face.
+
+Q 97 | guj | Vocabulary & Usage
+‘વહાણનો મુખ્ય ખલાસી’ શબ્દસમૂહ માટે એક શબ્દ શોધો
+(1) ટંડેલ
+(2) ખલ
+(3) જમેલ
+(4) પાય
+= 1
+~ 'Tandel' is the head sailor (chief of the crew) of a ship or boat. 'Khal' means a wicked person.
+
+Q 99 | guj | Vocabulary & Usage
+‘નર્મદા નદીને કાકા સાહેબ કાલેલકરે ઉભ્યાન્વયી કહી છે, અન્વય કરનારી નદી કહીને તેનું બહુમાન કર્યું છે.’ વાક્યમાં ‘ઉભય’ શબ્દનો અર્થ શોધો
+(1) બંને
+(2) એક જ
+(3) એક પણ નહી
+(4) બધું જ
+= 1
+~ 'Ubhay' (Sanskrit) means 'both' (banne); 'ubhayanvayi' means one that joins or connects both.
+
+Q 100 | guj | Translation & Comprehension
+વાક્યનો સાચો અંગ્રેજી અનુવાદ કરો :
+આ બનાવ પછી હું વધારે અધીરો બન્યો
+(1) The incident, however, made me more anxious than ever to sail.
+(2) made me more anxious than ever to sail
+(3) The incident, however, made me more
+(4) The incident, however, made me more restless and painful all the time
+= 1
+~ 'Aa banav' = this incident; 'vadhare adhiro banyo' = became more anxious/eager. Option 1 is the only complete sentence with that meaning; options 2 and 3 are fragments, and option 4 adds 'painful all the time'.

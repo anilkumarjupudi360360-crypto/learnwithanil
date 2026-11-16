@@ -1,0 +1,987 @@
+# GSSSB Gujarat Subordinate Services Class-III (Group-A and Group-B) Combined Competitive Examination, Advt. No. 212/2023-24, Preliminary (computer-based, April-May 2024), GSSSB question paper No. 71 of 71; answers: GSSSB's final answers, published with the paper (notice of 19 August 2026)
+
+Q 1 | rea | Verbal Reasoning
+A is the wife of B. B is the brother of C. C is the sister of D. D is the father of E. Who is the sister of father of E?
+(1) A
+(2) D
+(3) B
+(4) C
+= 4
+~ D is the father of E, so the sister of E's father is the sister of D. C is the sister of D, so the answer is C.
+
+Q 2 | rea | Verbal Reasoning
+A is the brother of B. B is the sister of C. C is the father of D. D is the mother of E. E is the wife of F. How many females members are there?
+(1) 3
+(2) 2
+(3) 1
+(4) 4
+= 1
+~ B (sister), D (mother) and E (wife) are females. A (brother), C (father) and F (husband of E) are males. So there are 3 female members.
+
+Q 3 | rea | Verbal Reasoning
+‘P + Q’ means ‘P is the sister of Q’, ‘P – Q’ means ‘P is the daughter of Q’, ‘P × Q’ means ‘P is the brother of Q’, ‘P ÷ Q’ means ‘P is the husband of Q’. If X + Y – Z × M ÷ L, then how is M related to X?
+(1) Father
+(2) Father’s sister
+(3) Father’s brother
+(4) Mother
+= 3
+~ X + Y: X is Y's sister; Y – Z: Y is Z's daughter, so Z (male, since Z × M makes Z a brother) is X's father. Z × M: Z is M's brother; M ÷ L: M is L's husband, so M is male. Hence M is X's father's brother.
+
+Q 4 | rea | Verbal Reasoning
+In the following question below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion logically follows the given statements.
+Statements:
+I. All I are M.
+II. Some T are I.
+Conclusion:
+I. Some M are not I.
+II. No T is M.
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Both conclusions I and II follows
+(4) Neither conclusion follows
+= 4
+~ All I are M and some T are I, so some T are definitely M; hence 'No T is M' is false. 'Some M are not I' is only a possibility (M may be the same as I), so it does not definitely follow. Neither conclusion follows.
+
+Q 5 | rea | Verbal Reasoning
+In the following question below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion logically follows the given statements.
+Statements:
+I. All J are O.
+II. All J are Q.
+Conclusion:
+I. No O is Q.
+II. No J are O.
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Both conclusions I and II follows
+(4) Neither conclusion follows
+= 4
+~ All J are O and all J are Q, so the J's are common to O and Q: some O are Q. Hence 'No O is Q' is false, and 'No J are O' contradicts statement I. Neither conclusion follows.
+
+Q 6 | rea | Verbal Reasoning
+In the following question below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion logically follows the given statements.
+Statements:
+I. All pen are paper.
+II. No rubber is paper.
+Conclusion:
+I. Some rubber are not paper.
+II. Some paper are pen.
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Both conclusions I and II follows
+(4) Neither conclusion follows
+= 3
+~ 'No rubber is paper' implies 'Some rubber are not paper', so I follows. 'All pen are paper' converts to 'Some paper are pen', so II follows. Both conclusions follow.
+
+Q 7 | rea | Verbal Reasoning
+Which of the following statement is correct in the context of given venn diagram?
+I. Number of pens which are neither pencil nor ink is 18.
+II. Number of pens which are pencil but not ink is 5.
+III. Number of pencils which are neither pen nor ink is 17.
+(1) Only I
+(2) Only II
+(3) Only III
+(4) I, II and III
+= 1
+~ GSSSB's key follows the Gujarati wording, where all three statements are about pens that are neither pencil nor ink: that region is 18, so only I is true. Read as printed in English, II (pen and pencil but not ink = 3 + 2 = 5) and III (pencil only = 9 + 8 = 17) are also true, giving option 4. (Official GSSSB key; some sources differ.)
+! img/c71-q7.png
+
+Q 8 | rea | Data Interpretation
+The question below consists of a question and two statements numbered I and II given below it. You have to decide whether the data provided in the statements are sufficient to answer the question.
+How much time train P will take to cover a distance of 532 km?
+I. The ratio of speed at which train P and train Q runs is 4 : 5 respectively.
+II. The average of speeds of the train P and train Q is 400/9 km/hr.
+(1) If the question can be answered by using one of the statement alone but cannot be answered by using the other statement alone.
+(2) If the question can be answered by using either of the statement (I) or (II) alone.
+(3) If the question can be answered by using both the statements together but not by either statement alone.
+(4) If the question cannot be answered even by using both the statements together.
+= 3
+~ Neither statement alone gives P's speed. Together: P + Q = 2 × 400/9 = 800/9 km/hr and P : Q = 4 : 5, so P = 4/9 × 800/9 = 3200/81 km/hr and time = 532 ÷ 3200/81 = 532 × 81/3200 ≈ 13.47 hours. Both statements are needed.
+
+Q 9 | rea | Data Interpretation
+The following problem has a question and two statements (I) and (II).
+Five persons A, B, C, D and E are of different weight. Who is heaviest?
+I. B is heavier than C and D but lighter than E and E is not the heaviest.
+II. E is heavier than B and C but lighter than A.
+(1) If the question can be answered by using one of the statement alone but cannot be answered by using the other statement alone.
+(2) If the question can be answered by using either of the statement (I) or (II) alone.
+(3) If the question can be answered by using both the statements together but not by either statement alone.
+(4) If the question cannot be answered even by using both the statements together.
+= 1
+~ From I: E > B > C, D and E is not the heaviest, so the only remaining person, A, must be the heaviest; I alone is enough. From II: A > E > B, C, but D's weight is unknown, so II alone is not enough.
+
+Q 10 | rea | Puzzles & Arrangements
+Runs of 5 boys R, B, C, L and Q are compared. Runs of no two boys are same. Runs of B is less than Q but more than C. Runs of L is more than R but less than C. Which of the following is the correct sequence?
+I. Q > L > R
+II. B > L > C
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ Q > B > C and C > L > R give the order Q > B > C > L > R. So Q > L > R is true, but B > L > C is false because L is less than C. Only I is correct.
+
+Q 11 | rea | Puzzles & Arrangements
+Height of 6 persons J, K, L, M, N and O is compared. Height of K is more than only 3 persons. Height of no two persons is same. Height of J is more than M, N and O. Height of J is not maximum. If height of J is 165 cm, then what can be the height of M?
+(1) 169 cm
+(2) 160 cm
+(3) 172 cm
+(4) 168 cm
+= 2
+~ K is taller than exactly 3 persons, so K is 3rd tallest. J is taller than M, N and O and is not the tallest, so J must be 2nd: L > J > K > M, N, O. M is therefore shorter than J (165 cm); among the options only 160 cm is possible.
+
+Q 12 | rea | Non-verbal Reasoning
+In the following question, select the figure which can be placed at the sign of question mark (?) from the given alternatives.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+~ One pin is added at the top and at the bottom each time (1, 2, 3, 4, so 5 next). The square heads of the two middle pins are at the outer edges in figures 1 and 3 and at the centre in figures 2 and 4, so they return to the outer edges. Figure 3 fits (Figure 1 has them at the centre).
+! img/c71-q12.png
+
+Q 13 | rea | Non-verbal Reasoning
+In the following question, select the figure which can be placed at the sign of question mark (?) from the given alternatives.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+~ One symbol is added each time, alternating ♦ and ○: ♦, ♦○, ♦○♦, ♦○♦○. So the next figure is ♦○♦○♦, which is Figure 3.
+! img/c71-q13.png
+
+Q 14 | rea | Non-verbal Reasoning
+In the following question, select the figure which can be placed at the sign of question mark (?) from the given alternatives.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+~ A new symbol is added at the top each time (↑, ↓, +, □, then ▽) and the older symbols move down, the lowest ones lining up side by side in the bottom row. Figure four shows □, + and then ↓ ↑, so the fifth shows ▽, □ and then + ↓ ↑ — Figure 1.
+! img/c71-q14.png
+
+Q 15 | rea | Non-verbal Reasoning
+A piece of paper is folded and punched as shown below in the question figures. From the given option figures, indicate how it will appear when opened?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+~ The sheet is folded twice (top half down, then left half over the right) and the cut is made at the corner where both folds meet, i.e. the centre of the sheet. On unfolding, the cut is reflected across both fold lines, giving one central hole notched on all four sides — Figure 3 (Figures 1 and 2 are notched on only two sides; Figure 4 has square steps).
+! img/c71-q15.png
+
+Q 16 | rea | Non-verbal Reasoning
+If a mirror is placed on the line AB, then out of the option figures which figure will be the right image of the question figure?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+~ The mirror AB is horizontal, below the figure, so the image is turned upside down: top and bottom interchange while left and right stay the same. The △ at top-left becomes ▽ at bottom-left, the pentagon moves inverted to bottom-right and the two curved symbols move inverted to the top — Figure 3.
+! img/c71-q16.png
+
+Q 17 | rea | Non-verbal Reasoning
+If a mirror is placed on the line AB, then out of the option figures which figure will be the right image of the question figure?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+~ With the mirror AB below the figure, the image is turned upside down. The column of circles ○●○● (top to bottom) becomes ●○●○, and the dot at the bottom-right corner of the inner square moves to its top-right corner while the left dot stays — Figure 1.
+! img/c71-q17.png
+
+Q 18 | rea | Non-verbal Reasoning
+From the given option figures, select the one in which the question figure is hidden/embedded. (rotation is NOT allowed)
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+~ Trace it in Figure 4: the short slanting line in the left cell runs down to the first vertical grid line, that line goes up to the upper horizontal line, which runs right to the second vertical line, and from there the long slanting line goes down to the right — exactly the question figure, in the same orientation.
+! img/c71-q18.png
+
+Q 19 | rea | Non-verbal Reasoning
+If a mirror is placed on the line AB, then out of the option figures which figure will be the right image of the question figure?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+~ The mirror AB is vertical, on the right, so left and right interchange while top and bottom stay. The striped boxes and the black bar (lower part) move to the right side, the slashed squares move to the left with their diagonals reversed, and the half-circle in the diamond faces the other way — Figure 3.
+! img/c71-q19.png
+
+Q 20 | rea | Verbal Reasoning
+If 28 A 10 B 20 B 15 = 3028 and 50 A 18 B 10 B 5 = 950, then 6 A 5 B 12 B 13 = ?
+(1) 784
+(2) 786
+(3) 787
+(4) 794
+= 2
+~ Take A = + and B = ×: 28 + 10 × 20 × 15 = 28 + 3000 = 3028 and 50 + 18 × 10 × 5 = 50 + 900 = 950. So 6 + 5 × 12 × 13 = 6 + 780 = 786.
+
+Q 21 | rea | Verbal Reasoning
+If 30 A 40 B 10 C 18 = –18 and 65 A 35 B 18 C 10 = 38, then 45 A 20 B 18 C 18 = ?
+(1) 20
+(2) 24
+(3) 18
+(4) 25
+= 4
+~ Take A = –, B = + and C = –: 30 – 40 + 10 – 18 = –18 and 65 – 35 + 18 – 10 = 38. So 45 – 20 + 18 – 18 = 25.
+
+Q 22 | rea | Verbal Reasoning
+If 15 P 30 Q 18 R 50 = 17 and 17 P 10 Q 14 R 20 = 13, then 60 P 20 Q 10 R 30 = ?
+(1) 40
+(2) 60
+(3) 80
+(4) 200
+= 2
+~ Take P = –, Q = – and R = +: 15 – 30 – 18 + 50 = 17 and 17 – 10 – 14 + 20 = 13. So 60 – 20 – 10 + 30 = 60.
+
+Q 23 | rea | Verbal Reasoning
+By interchanging the given two signs and numbers (not digits) which of the following equation will be NOT correct?
+× and +, 7 and 4
+(1) 4 × 2 + 7 – 9 ÷ 3 = 12
+(2) 7 + 8 × 6 ÷ 2 – 4 = 10
+(3) 7 × 3 – 4 + 6 ÷ 2 = –14
+(4) 7 + 8 ÷ 2 – 4 × 3 = 12
+= 2
+~ Swap × with + and 7 with 4. Option 2 becomes 4 × 8 + 6 ÷ 2 – 7 = 32 + 3 – 7 = 28 ≠ 10, so it is not correct. The others hold: 7 + 2 × 4 – 9 ÷ 3 = 12; 4 + 3 – 7 × 6 ÷ 2 = –14; 4 × 8 ÷ 2 – 7 + 3 = 12.
+
+Q 25 | rea | Data Interpretation
+Each of the following problems has a question and two statements (I) and (II).
+Two trains X and Y, running in the opposite direction cross each other in 18 second. What is the difference between their lengths?
+I. The difference between the speeds of trains X and Y is 12 m/sec.
+II. The sum of the speeds of trains X and Y is 36 m/sec.
+(1) If the question can be answered by using one of the statement alone but cannot be answered by using the other statement alone.
+(2) If the question can be answered by using either of the statement (I) or (II) alone.
+(3) If the question can be answered by using both the statements together but not by either statement alone.
+(4) If the question cannot be answered even by using both the statements together.
+= 4
+~ Trains moving in opposite directions cover the sum of their lengths at the sum of their speeds, so II gives Lx + Ly = 36 × 18 = 648 m. Neither statement, alone or together, gives the individual lengths, so their difference cannot be found.
+
+Q 26 | rea | Data Interpretation
+The question below consists of a question and two statements numbered I and II given below it. You have to decide whether the data provided in the statements are sufficient to answer the question.
+After 5 years from present, what will the sum of the age of Rohan and Virat?
+I. 5 years before from present, Rohan was 5 year older than Virat.
+II. At present, the ratio of the age of Virat and Rohan is 5 : 6.
+(1) If the question can be answered by using one of the statement alone but cannot be answered by using the other statement alone.
+(2) If the question can be answered by using either of the statement (I) or (II) alone.
+(3) If the question can be answered by using both the statements together but not by either statement alone.
+(4) If the question cannot be answered even by using both the statements together.
+= 3
+~ I gives only the age gap: Rohan – Virat = 5 years. II gives only the ratio 5 : 6. Together, the 1-part difference = 5 years, so Virat = 25 and Rohan = 30; after 5 years the sum = 30 + 35 = 65. Both statements are needed.
+
+Q 27 | rea | Verbal Reasoning
+Select the option that is related to the first number cluster in the same way as the fourth number cluster is related to the third number cluster and sixth number cluster is related to fifth number cluster.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+720 : ? :: 294 : 99 :: 171 : 58
+(1) 147
+(2) 295
+(3) 241
+(4) 363
+= 3
+~ Rule: second number = first ÷ 3 + 1 (294 ÷ 3 + 1 = 99; 171 ÷ 3 + 1 = 58). So ? = 720 ÷ 3 + 1 = 241.
+
+Q 28 | rea | Verbal Reasoning
+Select the option that is related to the fourth number cluster in the same way as the first number cluster is related to the second number cluster and fifth number cluster is related to sixth number cluster. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+69 : 208 :: ? : 604 :: 119 : 358
+(1) 201
+(2) 202
+(3) 203
+(4) 204
+= 1
+~ Rule: second number = first × 3 + 1 (69 × 3 + 1 = 208; 119 × 3 + 1 = 358). So ? × 3 + 1 = 604, i.e. ? = 603 ÷ 3 = 201.
+
+Q 29 | rea | Verbal Reasoning
+Select the option that is related to the fourth number cluster in the same way as the first number cluster is related to the second number cluster and fifth number cluster is related to sixth number cluster. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+37 : 75 :: ? : 115 :: 97 : 195
+(1) 58
+(2) 59
+(3) 57
+(4) 56
+= 3
+~ Rule: second number = first × 2 + 1 (37 × 2 + 1 = 75; 97 × 2 + 1 = 195). So ? × 2 + 1 = 115, i.e. ? = 114 ÷ 2 = 57.
+
+Q 30 | rea | Verbal Reasoning
+Select the option that is related to the fourth number cluster in the same way as the first number cluster is related to the second number cluster and fifth number cluster is related to sixth number cluster. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+308 : 43 :: ? : 73 :: 238 : 33
+(1) 517
+(2) 518
+(3) 516
+(4) 519
+= 2
+~ Rule: second number = first ÷ 7 – 1 (308 ÷ 7 – 1 = 43; 238 ÷ 7 – 1 = 33). So ? ÷ 7 – 1 = 73, i.e. ? = 74 × 7 = 518.
+
+Q 31 | rea | Verbal Reasoning
+Select the option that is related to the fourth number cluster in the same way as the first number cluster is related to the second number cluster and fifth number cluster is related to sixth number cluster. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+658 : 95 :: ? : 67 :: 133 : 20
+(1) 462
+(2) 463
+(3) 464
+(4) 465
+= 1
+~ Rule: second number = first ÷ 7 + 1 (658 ÷ 7 + 1 = 95; 133 ÷ 7 + 1 = 20). So ? ÷ 7 + 1 = 67, i.e. ? = 66 × 7 = 462.
+
+Q 32 | rea | Verbal Reasoning
+Select the option that is related to the third number cluster in the same way as the second number cluster is related to the first number cluster and sixth number cluster is related to fifth number cluster. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+15 : 50624 :: 26 : ? :: 35 : 1500624
+(1) 456974
+(2) 456973
+(3) 456975
+(4) 456972
+= 3
+~ Rule: second number = (first)^4 – 1 (15^4 = 50625, so 50624; 35^4 = 1500625, so 1500624). So ? = 26^4 – 1 = 456976 – 1 = 456975.
+
+Q 33 | rea | Data Interpretation
+The line chart given below shows the marked price and discount of five different articles.
+Selling price = Marked price – Discount
+What is the difference between the total marked price of all the articles and the total selling price of all the articles?
+(1) 227
+(2) 226
+(3) 228
+(4) 229
+= 2
+~ Since selling price = marked price – discount, total marked price – total selling price = total discount = 40 + 50 + 32 + 44 + 60 = 226 (total MP 5600, total SP 5374).
+! img/c71-q33.png
+
+Q 34 | rea | Data Interpretation
+The table given below shows the number of watches sold by 7 shops.
+Shops | Watches
+S1 | 98
+S2 | 89
+S3 | 79
+S4 | 120
+S5 | 84
+S6 | 115
+S7 | 36
+What is the ratio of number of watches sold by S3 to the number of watches sold by S6?
+(1) 73 : 117
+(2) 115 : 79
+(3) 79 : 115
+(4) 117 : 73
+= 3
+~ From the table, S3 sold 79 and S6 sold 115 watches. 79 is prime and does not divide 115, so the ratio is 79 : 115.
+
+Q 35 | rea | Data Interpretation
+The line chart given below shows the number of cars sold by six companies.
+What are the ratio of car sold by B and A together to the car sold by E and F together?
+(1) 4 : 3
+(2) 3 : 4
+(3) 1 : 2
+(4) 2 : 1
+= 3
+~ From the chart, B + A = 15 + 10 = 25 and E + F = 30 + 20 = 50. Ratio = 25 : 50 = 1 : 2.
+! img/c71-q35.png
+
+Q 36 | rea | Data Interpretation
+The line chart given below shows the production of wheat by two companies in 6 years.
+The production of wheat by company A in year Q is how much percent more than the production of wheat by company B in year S?
+(1) 400 percent
+(2) 700 percent
+(3) 800 percent
+(4) 900 percent
+= 1
+~ From the chart, company A in year Q = 100 and company B in year S = 20. Percentage more = (100 – 20)/20 × 100 = 400 percent.
+! img/c71-q36.png
+
+Q 37 | rea | Verbal Reasoning
+In the following question, select the missing number from the given series.
+233, 225, 217, 209, 201, ?
+(1) 193
+(2) 195
+(3) 197
+(4) 199
+= 1
+~ Each term is 8 less than the previous one (233 – 8 = 225, 225 – 8 = 217, …). So ? = 201 – 8 = 193.
+
+Q 38 | rea | Verbal Reasoning
+In the following question, select the missing number from the given series.
+75, 79, 71, ?, 55, 119
+(1) 65
+(2) 87
+(3) 82
+(4) 58
+= 2
+~ The differences double and alternate in sign: +4, –8, +16, –32, +64. So ? = 71 + 16 = 87 (check: 87 – 32 = 55 and 55 + 64 = 119).
+
+Q 39 | rea | Verbal Reasoning
+In the following question, select the missing number from the given options to complete the series.
+36, 44, 53, ?, 142, 358
+(1) 106
+(2) 117
+(3) 87
+(4) 73
+= 2
+~ The differences are alternately cubes and squares: +2^3 (8), +3^2 (9), +4^3 (64), +5^2 (25), +6^3 (216). So ? = 53 + 64 = 117 (check: 117 + 25 = 142, 142 + 216 = 358).
+
+Q 40 | rea | Verbal Reasoning
+In the following question, select the missing number from the given series.
+248, 417, ?, 1067, 1596, 2437
+(1) 673
+(2) 706
+(3) 642
+(4) 741
+= 2
+~ The differences are squares of consecutive primes: 13^2 = 169, 17^2 = 289, 19^2 = 361, 23^2 = 529, 29^2 = 841. So ? = 417 + 289 = 706 (check: 706 + 361 = 1067).
+
+Q 41 | qa | Arithmetic
+A student received the following grades in five different classes: 75, 80, 82, 85, and 90. If the average after six classes is 83, what grade did they receive in the sixth class?
+(1) 73
+(2) 76
+(3) 80
+(4) 86
+= 4
+~ Total for six classes = 6 × 83 = 498. Sum of the five grades = 75 + 80 + 82 + 85 + 90 = 412. Sixth grade = 498 – 412 = 86.
+
+Q 42 | qa | Arithmetic
+In a five-part course, the following weights are assigned to each component: Homework contributes 10%, Midterm 1 contributes 20%, Midterm 2 contributes 30%, a Project contributes 20%, and the Final Exam contributes 20%. If a student's scores for these parts are 60, 70, 85, 80, and 90 respectively, what is the student's weighted average for the course?
+(1) 77.0
+(2) 78.5
+(3) 79.5
+(4) 80.0
+= 3
+~ Weighted average = Σ(weight × score) = 0.10 × 60 + 0.20 × 70 + 0.30 × 85 + 0.20 × 80 + 0.20 × 90 = 6 + 14 + 25.5 + 16 + 18 = 79.5.
+
+Q 43 | qa | Arithmetic
+A student's final grade is calculated based on the following weighted system: Homework 20%, Quizzes 20%, Term Paper 30%, Midterm 15%, and Final Exam 15%. If the student scores 70, 80, 90, 60, and 85 in these respective categories, what is the student's weighted grade?
+(1) 78.75
+(2) 77.0
+(3) 80.0
+(4) 76.5
+= 1
+~ Weighted grade = 0.20 × 70 + 0.20 × 80 + 0.30 × 90 + 0.15 × 60 + 0.15 × 85 = 14 + 16 + 27 + 9 + 12.75 = 78.75.
+
+Q 44 | qa | Number System & Simplification
+Use BODMAS law to solve the following.
+6 + [5 – {(2 * 4 – 2 – 5 * 2)}] = ?
+(1) 3
+(2) 9
+(3) -9
+(4) 15
+= 4
+~ Solve the innermost bracket first, multiplying before subtracting: 2 × 4 – 2 – 5 × 2 = 8 – 2 – 10 = –4. Then 5 – (–4) = 9, and 6 + 9 = 15.
+
+Q 45 | qa | Number System & Simplification
+A teacher divides 150 books among students, giving 2/5 to the first group of students and 3/10 to the second group. How many books are left?
+(1) 30 books
+(2) 60 books
+(3) 45 books
+(4) 75 books
+= 3
+~ Fraction given away = 2/5 + 3/10 = 4/10 + 3/10 = 7/10, so 3/10 is left. Books left = 3/10 × 150 = 45.
+
+Q 46 | qa | Number System & Simplification
+If John has read 0.35 of a book and Maria has read 25%, who has read more and by what fraction?
+(1) John, by 1/10
+(2) Maria, by 1/20
+(3) John, by 1/20
+(4) Maria, by 1/10
+= 1
+~ 25% = 0.25. John read more, by 0.35 – 0.25 = 0.10 = 1/10 of the book.
+
+Q 47 | qa | Number System & Simplification
+Two gears, one with 24 teeth and another with 36 teeth, mesh together. After how many rotations of the smaller gear will the teeth of both gears align in the same position as the start?
+(1) 6 rotations
+(2) 9 rotations
+(3) 12 rotations
+(4) 3 rotations
+= 4
+~ The gears return to the starting position after LCM(24, 36) = 72 teeth have meshed. The smaller gear then makes 72 ÷ 24 = 3 rotations (the larger makes 2).
+
+Q 48 | qa | Number System & Simplification
+If Mia completes 4/9 of a project and Noah has completed 45%, who has completed more and by what fraction?
+(1) Mia, by 1/180
+(2) Noah, by 1/200
+(3) Mia, by 1/360
+(4) Noah, by 1/180
+= 4
+~ 4/9 = 80/180 and 45% = 9/20 = 81/180. Noah completed more, by 81/180 – 80/180 = 1/180.
+
+Q 49 | qa | Arithmetic
+In an election the votes between the candidate P and candidate Q are divided in the ratio 8:1 and total number of voters is 1000, out of which 10% did not cast their vote and among the remaining vote 10% declared invalid. What is the difference between the votes of the P and Q candidate?
+(1) 558
+(2) 630
+(3) 720
+(4) 800
+= 2
+~ Votes cast = 90% of 1000 = 900; valid votes = 90% of 900 = 810. With P : Q = 8 : 1, P = 720 and Q = 90, so the difference = 630 (= 7/9 × 810).
+
+Q 51 | qa | Arithmetic
+If the price of sugar rises from Rs. 3.5 per kg to Rs. 5 per kg, by what percent will a family have to cut their monthly sugar consumption in order to maintain the same expense on sugar, assuming the original consumption level is 60 kg.
+(1) 10%
+(2) 25%
+(3) 30%
+(4) 42%
+= 3
+~ To keep the expense the same, consumption must fall in inverse proportion to the price: cut = (5 − 3.5)/5 × 100 = 1.5/5 × 100 = 30%. Check: 60 kg × Rs 3.5 = Rs 210; at Rs 5 the family can buy 210/5 = 42 kg, i.e. 18 kg (30% of 60) less.
+
+Q 52 | qa | Arithmetic
+A bookstore purchased a batch of novels at a wholesale price of $15 per novel. If the store sells the novels at a price that guarantees a 30% profit margin, what is the selling price per novel?
+(1) $18
+(2) $19.50
+(3) $21.50
+(4) $22
+= 2
+~ Selling price = cost × (1 + profit %) = $15 × 1.30 = $19.50 (profit $4.50, which is 30% of $15).
+
+Q 53 | qa | Arithmetic
+An electronics store buys headphones for Rs.150 each. If they initially sell these headphones with a 30% profit margin and then decide to increase the margin by another 15%, what will the new selling price be?
+(1) Rs.195
+(2) Rs.217.50
+(3) Rs.202.50
+(4) Rs.229.50
+= 2
+~ At a 30% margin the selling price is 150 × 1.30 = Rs 195. Raising the margin by another 15% makes it 30% + 15% = 45% on cost, so the new selling price = 150 × 1.45 = Rs 217.50 (i.e. 195 + 15% of 150 = 195 + 22.50).
+
+Q 54 | qa | Arithmetic
+A mobile phone dealer buys phones in bulk for $300 each and sells them at a price that nets a 40% profit on each phone. After a month, the unsold phones are sold at a 10% discount from the original selling price. What is the discounted selling price for each unsold phone?
+(1) $420
+(2) $504
+(3) $378
+(4) $396
+= 3
+~ Original selling price = $300 × 1.40 = $420. A 10% discount on it leaves $420 × 0.90 = $378.
+
+Q 55 | qa | Arithmetic
+A retailer receives a trade discount of 20% on the list price of a product. The retailer then offers a sale to the customers, giving an additional discount of 10% on the already reduced price. If the final sale price of the product to the customer is Rs.648, what was the original list price of the product?
+(1) Rs.900
+(2) Rs.1200
+(3) Rs.1000
+(4) Rs.820
+= 1
+~ Successive discounts of 20% and 10% leave L × 0.80 × 0.90 = 0.72L. So 0.72L = 648 → L = 648/0.72 = Rs 900. Check: 900 → 720 → 648.
+
+Q 56 | qa | Arithmetic
+The average marks of three boys is 20 and their marks are in the proportion 2:3:5. The boy who got the highest marks is:
+(1) 12
+(2) 18
+(3) 30
+(4) 60
+= 3
+~ Total marks = 3 × 20 = 60. The ratio 2:3:5 has 2 + 3 + 5 = 10 parts, so the highest = 5/10 × 60 = 30 (the marks are 12, 18 and 30).
+
+Q 57 | qa | Arithmetic
+What is the mean proportional of 16 and 64?
+(1) 52
+(2) 40
+(3) 48
+(4) 32
+= 4
+~ The mean proportional x of a and b satisfies a : x = x : b, so x = √(ab) = √(16 × 64) = √1024 = 32 (16 : 32 = 32 : 64).
+
+Q 58 | qa | Arithmetic
+A tank contains a mixture of two solutions, Solution X and Solution Y, in the ratio 3 : 5. If 12 liters of Solution Y are added, the ratio becomes 3 : 7. How many liters of Solution X were there in the tank initially?
+(1) 9 liters
+(2) 15 liters
+(3) 18 liters
+(4) 21 liters
+= 3
+~ Let X = 3k and Y = 5k. After adding 12 L of Y: 3k : (5k + 12) = 3 : 7 → 21k = 15k + 36 → k = 6. So X = 3 × 6 = 18 litres (Y goes from 30 to 42; 18 : 42 = 3 : 7).
+
+Q 60 | qa | Arithmetic
+How much time is required to fill a tank using three pumps, A, B, and C, if Pump A can fill the tank in 4 hours, Pump B in 6 hours, and Pump C in 12 hours, with the condition that Pump C stops working after 2 hours of opening?
+(1) 2 hours and 12 minutes
+(2) 2 hours and 32 minutes
+(3) 2 hours
+(4) 2 hours and 48 minutes
+= 3
+~ Work per hour: A = 1/4, B = 1/6, C = 1/12; together 3/12 + 2/12 + 1/12 = 6/12 = 1/2 tank per hour. In the first 2 hours the three pumps fill 2 × 1/2 = 1 whole tank, so the tank is already full when C stops: 2 hours.
+
+Q 61 | qa | Arithmetic
+X runs at an average speed of 30 km/h for 120 minutes and cycles at a speed of 40 km/h for 60 minutes. Calculate the average speed (in km/h, rounded off to 1 decimal place).
+(1) 28.6 km/h
+(2) 33.3 km/h
+(3) 35.6 km/h
+(4) 42.3 km/h
+= 2
+~ Average speed = total distance ÷ total time. Distance = 30 × 2 + 40 × 1 = 100 km; time = 2 + 1 = 3 hours; average speed = 100/3 ≈ 33.3 km/h.
+
+Q 62 | qa | Arithmetic
+A swimmer has a speed of 2 km/h in still water, and the speed of the river current is 3 km/h. How long will it take for the swimmer to go 15 km downstream?
+(1) 2.5 hours
+(2) 3 hours
+(3) 3.5 hours
+(4) 4 hours
+= 2
+~ Downstream speed = speed in still water + speed of the current = 2 + 3 = 5 km/h. Time = distance ÷ speed = 15 ÷ 5 = 3 hours.
+
+Q 63 | qa | Arithmetic
+A car travels 100 km north at a steady speed of 50 km/h and then returns south to the starting point at a steady speed of 75 km/h. What is the car's average speed for the entire 200 km journey?
+(1) 60 km/h
+(2) 62.5 km/h
+(3) 65 km/h
+(4) 67.5 km/h
+= 1
+~ Total time = 100/50 + 100/75 = 2 + 4/3 = 10/3 hours, so average speed = 200 ÷ 10/3 = 60 km/h. Shortcut for equal distances: 2xy/(x + y) = 2 × 50 × 75/125 = 60 km/h (not the simple mean 62.5).
+
+Q 64 | qa | Arithmetic
+A pedestrian and a cyclist start moving towards each other from points X and Y, respectively, which are 120 kilometers apart. The cyclist moves at a speed that is three times the speed of the pedestrian. If they meet after 4 hours, what is the pedestrian's speed?
+(1) 10 km/h
+(2) 22.5 km/h
+(3) 15 km/h
+(4) 7.5 km/h
+= 4
+~ Let the pedestrian's speed be s; the cyclist's is 3s. Moving towards each other, their relative speed is s + 3s = 4s, so 4s × 4 = 120 → s = 7.5 km/h (the cyclist does 22.5 km/h).
+
+Q 65 | qa | Number System & Simplification
+The sum of the first 10 terms of an arithmetic progression whose first term is 4 and common difference is 2 is:
+(1) 130
+(2) 150
+(3) 120
+(4) 170
+= 1
+~ S_n = n/2 × [2a + (n − 1)d] = 10/2 × [2 × 4 + 9 × 2] = 5 × 26 = 130. (The terms run 4, 6, …, 22, and 10 × (4 + 22)/2 = 130.)
+
+Q 66 | qa | Number System & Simplification
+A geometric progression (GP) consists of 70 terms. If the sum of odd terms of the GP is p, and the sum of even terms of the GP is q, then what is its common ratio?
+(1) p/q
+(2) q/p
+(3) p+(q/p)
+(4) q+(p/q)
+= 2
+~ With 70 (an even number of) terms there are 35 odd-position terms (a, ar^2, …, ar^68) and 35 even-position terms (ar, ar^3, …, ar^69). Each even term is r times the odd term before it, so q = r × p and r = q/p.
+
+Q 67 | qa | Algebra, Geometry & Mensuration
+Simplify the algebraic expression:
+(2x - 3)(x + 4) + x(2 - x)
+(1) 2x^2 + 5x -12
+(2) 2x^2 + 8x -12
+(3) 2x^2 –7x -12
+(4) x^2 +7x -12
+= 4
+~ (2x − 3)(x + 4) = 2x^2 + 8x − 3x − 12 = 2x^2 + 5x − 12, and x(2 − x) = 2x − x^2. Adding: (2x^2 − x^2) + (5x + 2x) − 12 = x^2 + 7x − 12.
+
+Q 68 | qa | Algebra, Geometry & Mensuration
+A fourth of Riyas’s marks in English exceeds a half of English marks of Diya by 60. If the sum of their English marks is 300, then find the marks of Diya.
+(1) 20
+(2) 42
+(3) 50
+(4) 100
+= 1
+~ Let Riya = R and Diya = D. R/4 − D/2 = 60 gives R − 2D = 240; with R + D = 300, subtracting gives 3D = 60, so D = 20 (R = 280; check 280/4 − 20/2 = 70 − 10 = 60).
+
+Q 69 | qa | Arithmetic
+The ages of two sisters differ by 10 years. If 5 years ago, the elder sister be two times as old as the younger sister, then find the present age of the elder sister.
+(1) 15 years
+(2) 20 years
+(3) 25 years
+(4) 30 years
+= 3
+~ Let the younger sister be y now, so the elder is y + 10. Five years ago: (y + 10 − 5) = 2(y − 5) → y + 5 = 2y − 10 → y = 15. Elder sister = 25 years (5 years ago they were 20 and 10).
+
+Q 70 | qa | Arithmetic
+To achieve a mixture with a 20% concentration, how much of a 25% concentrated solution must be mixed with 200 ml of a 10% concentrated solution?
+(1) 200 ml
+(2) 300 ml
+(3) 400 ml
+(4) 500 ml
+= 3
+~ By alligation, 25% solution : 10% solution = (20 − 10) : (25 − 20) = 10 : 5 = 2 : 1. With 200 ml of the 10% solution, we need 2 × 200 = 400 ml of the 25% solution. Check: (20 + 100) ml ÷ 600 ml = 20%.
+
+Q 71 | eng | Grammar
+Fill in the blank with the most appropriate option.
+Immediately, food and drink issued from the cow in ______ endless stream.
+(1) none
+(2) these
+(3) an
+(4) a
+= 3
+~ 'Endless' begins with a vowel sound, so the indefinite article 'an' is needed: 'in an endless stream'. 'A' is used only before consonant sounds, 'these' needs a plural noun, and 'none' makes no sense here.
+
+Q 72 | eng | Vocabulary
+Fill in the blank with the most appropriate option.
+What had ______ happened to Aunt Mabel and her husband, I wondered.
+(1) occasionally
+(2) blindly
+(3) hourly
+(4) really
+= 4
+~ The speaker wonders what had actually happened, so 'really' (= in fact, actually) fits: 'What had really happened…'. 'Occasionally' and 'hourly' express frequency and 'blindly' means without seeing or thinking — none fits a single past event.
+
+Q 73 | eng | Usage & Sentence Correction
+Fill in the blank with the most appropriate option.
+The whole thing seemed to be a waste of good money, but I did not ______ so.
+(1) speak
+(2) tell
+(3) say
+(4) cry
+= 3
+~ The set expression is 'say so' (= state it aloud): 'but I did not say so'. 'Tell' needs a person as its object (tell someone so), 'speak so' is not idiomatic, and 'cry' changes the meaning.
+
+Q 74 | eng | Grammar
+Fill in the blank with the most appropriate option.
+Rakesh ______ a small space and began to dig up a flowerbed.
+(1) finds
+(2) is found
+(3) have been finding
+(4) found
+= 4
+~ The blank is joined by 'and' to 'began' (simple past), so it must also be simple past: 'Rakesh found a small space and began…'. 'Finds' is present tense, 'is found' is passive, and 'have been finding' does not agree with the singular subject.
+
+Q 75 | eng | Usage & Sentence Correction
+The sentence given below is divided and jumbled into four parts. Choose the option that arranges these parts to form a meaningful sentence.
+A. I can’t tie a knot
+B. and wouldn’t know what
+C. I have never caught a thief,
+D. to do with one since
+(1) CBDA
+(2) BACD
+(3) ADBC
+(4) DCBA
+= 1
+~ C–B–D–A: 'I have never caught a thief, and wouldn't know what to do with one since I can't tie a knot.' C is the main clause, B continues it with 'and', D completes 'what to do with one' and introduces the reason with 'since', and A gives that reason.
+
+Q 76 | eng | Usage & Sentence Correction
+The sentence given below is divided and jumbled into four parts. Choose the option that arranges these parts to form a meaningful sentence.
+A. scratching figures in the damp earth with the end of a stick
+B. he knew the shower would not last,
+C. to pass the time, began doing sums,
+D. so he took shelter in a small cave and,
+(1) CBAD
+(2) DABC
+(3) BDCA
+(4) ACDB
+= 3
+~ B–D–C–A: 'He knew the shower would not last, so he took shelter in a small cave and, to pass the time, began doing sums, scratching figures in the damp earth with the end of a stick.' B gives the reason, D ('so … and,') the result, C continues after 'and', and A describes how he did the sums.
+
+Q 77 | eng | Vocabulary
+Select the most appropriate word for the given phrase.
+Sound of Hyena
+(1) Laugh
+(2) Grunt
+(3) Gecker
+(4) Bellow
+= 1,2
+~ A hyena's best-known call is its 'laugh' (a giggling cackle), but hyenas also make low grunts, so GSSSB accepted either 'Laugh' or 'Grunt' (ambiguity noted in the final key). 'Gecker' is a monkey's chattering call and 'bellow' is the deep roar of a bull or bison.
+
+Q 78 | eng | Vocabulary
+Select the most appropriate word for the given phrase.
+Sound of Eagle.
+(1) Screech
+(2) Trumpet
+(3) Quack
+(4) Bugle
+= 1
+~ An eagle's shrill cry is called a 'screech' (or scream). 'Trumpet' is the call of an elephant, 'quack' of a duck, and 'bugle' of a male elk.
+
+Q 79 | eng | Vocabulary
+Select the most appropriate SYNONYM of the given word.
+Antipathy
+(1) Animosity
+(2) Courtesy
+(3) Fearlessness
+(4) Rapport
+= 1
+~ 'Antipathy' means a strong, settled dislike or hostility — the same as 'animosity'. 'Courtesy' (politeness) and 'rapport' (friendly understanding) are close to opposites, and 'fearlessness' is unrelated.
+
+Q 80 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Pervade
+(1) Seldom
+(2) Deplete
+(3) Solemn
+(4) Charge
+= 2
+~ 'Pervade' means to spread through and fill every part of something. 'Deplete' (to drain, empty or use up) expresses the opposite idea. 'Charge' (to fill or load) is closer to a synonym, while 'seldom' (rarely) and 'solemn' (serious) are unrelated.
+
+Q 81 | eng | Comprehension
+From the options select the CORRECT Gujarati translation of the English sentence given below.
+Like it or not like it , we are members of a large and particularly noisy family called the great apes.
+(1) ગમે કે ન ગમે પણ, આપણે શરૂઆતમાં, મહાવાનરો કહેવાતા એક મોટા અને સર્વસામાન્ય ઘોંઘાટીયા કુટુંબના સભ્યો હતા.
+(2) ગમે કે એ ન ગમે પણ, આપણે મહાવાનરો કહેવાતા એક મોટા અને ખાસ કરીને ઘોંઘાટીયા કુટુંબના સભ્યો છીએ.
+(3) તમને એ ગમાડવું પડે કે, તમામ બાબતો પહેલા આપણે મહાવાનરો કહેવાતા એક મોટા અને ખાસ કરીને ઘોંઘાટીયા કુટુંબના સભ્યો છીએ.
+(4) ગમે કે એ ન ગમે પણ, આપણે મહાવાનરો કહેવાતા એક મોટા અને ખાસ કરીને ઘોંઘાટીયા સમાજના સભ્યો છીએ.
+= 2
+~ Option 2 renders every part faithfully: 'Like it or not' = ગમે કે એ ન ગમે પણ, 'particularly noisy' = ખાસ કરીને ઘોંઘાટીયા, 'family' = કુટુંબ, 'we are' = છીએ. Option 1 adds 'શરૂઆતમાં' (in the beginning), says 'સર્વસામાન્ય' (generally) and uses the past 'હતા'; option 3 mistranslates 'Like it or not' and adds 'તમામ બાબતો પહેલા'; option 4 turns 'family' into 'સમાજ' (society).
+
+Q 82 | eng | Comprehension
+Read the following passage and answer the questions given below.
+In recent decades, India has seen a significant push towards empowering its women, aiming to address long-standing inequalities and enhance social progress. This movement has taken various forms, including legislative reforms, educational initiatives, and grassroots activism. One key aspect of women's empowerment in India is the legal framework. Over the years, the Indian government has introduced several laws aimed at protecting women's rights and promoting gender equality. These include the Prevention of Domestic Violence Act, the Dowry Prohibition Act, and amendments to the Hindu Succession Act, granting daughters equal inheritance rights. These legislative measures aim to create a more equitable society where women can live free from discrimination and violence. Education also plays a crucial role in empowering women. Access to quality education enables women to acquire knowledge, skills, and confidence to pursue their goals and participate fully in society. Initiatives like the Sarva Shiksha Abhiyan and Beti Bachao, Beti Padhao campaign have focused on increasing girls' enrolement and retention in schools, bridging the gender gap in education. Furthermore, economic empowerment is vital for women's independence and autonomy. Programs such as the National Rural Livelihoods Mission and the Self-Employment Scheme for Rehabilitation of Manual Scavengers aim to provide women with opportunities for skill development, entrepreneurship, and financial inclusion. By empowering women economically, India can unlock their potential as drivers of growth and development. Despite these efforts, challenges persist in achieving full women's empowerment in India. Deep-rooted patriarchal norms, gender stereotypes, and cultural barriers continue to hinder progress. Discrimination and violence against women remain prevalent, especially in rural and marginalized communities. In conclusion, women's empowerment is a complex and ongoing process in India. While significant strides have been made through legislative reforms, education initiatives, and economic programs, much work remains to be done. By addressing systemic inequalities and promoting gender-sensitive policies, India can create a more inclusive and equitable society where women can realize their full potential.
+Give an appropriate title for the passage.
+(1) Legal Rights for Women in India
+(2) Empowering Women in India
+(3) Gender Discrimination in India
+(4) Role of Women in Indian Economy
+= 2
+~ The passage surveys all of India's efforts to empower women — laws, education and economic programmes — and the obstacles that remain, so 'Empowering Women in India' covers it. Legal rights and the economy are only parts of the discussion, and discrimination is only one of the challenges mentioned.
+
+Q 83 | eng | Comprehension
+Read the following passage and answer the questions given below.
+In recent decades, India has seen a significant push towards empowering its women, aiming to address long-standing inequalities and enhance social progress. This movement has taken various forms, including legislative reforms, educational initiatives, and grassroots activism. One key aspect of women's empowerment in India is the legal framework. Over the years, the Indian government has introduced several laws aimed at protecting women's rights and promoting gender equality. These include the Prevention of Domestic Violence Act, the Dowry Prohibition Act, and amendments to the Hindu Succession Act, granting daughters equal inheritance rights. These legislative measures aim to create a more equitable society where women can live free from discrimination and violence. Education also plays a crucial role in empowering women. Access to quality education enables women to acquire knowledge, skills, and confidence to pursue their goals and participate fully in society. Initiatives like the Sarva Shiksha Abhiyan and Beti Bachao, Beti Padhao campaign have focused on increasing girls' enrolement and retention in schools, bridging the gender gap in education. Furthermore, economic empowerment is vital for women's independence and autonomy. Programs such as the National Rural Livelihoods Mission and the Self-Employment Scheme for Rehabilitation of Manual Scavengers aim to provide women with opportunities for skill development, entrepreneurship, and financial inclusion. By empowering women economically, India can unlock their potential as drivers of growth and development. Despite these efforts, challenges persist in achieving full women's empowerment in India. Deep-rooted patriarchal norms, gender stereotypes, and cultural barriers continue to hinder progress. Discrimination and violence against women remain prevalent, especially in rural and marginalized communities. In conclusion, women's empowerment is a complex and ongoing process in India. While significant strides have been made through legislative reforms, education initiatives, and economic programs, much work remains to be done. By addressing systemic inequalities and promoting gender-sensitive policies, India can create a more inclusive and equitable society where women can realize their full potential.
+Identify the central theme of the passage.
+(1) Women Empowerment in India
+(2) Gender Discrimination
+(3) Critique against the dowry system
+(4) Feminism in the world
+= 1
+~ Every part of the passage deals with women's empowerment in India — its legal, educational and economic sides and the hurdles still ahead. Discrimination and the Dowry Prohibition Act are mentioned only in passing, and the passage is about India, not feminism worldwide.
+
+Q 84 | eng | Comprehension
+Read the following passage and answer the questions given below.
+In recent decades, India has seen a significant push towards empowering its women, aiming to address long-standing inequalities and enhance social progress. This movement has taken various forms, including legislative reforms, educational initiatives, and grassroots activism. One key aspect of women's empowerment in India is the legal framework. Over the years, the Indian government has introduced several laws aimed at protecting women's rights and promoting gender equality. These include the Prevention of Domestic Violence Act, the Dowry Prohibition Act, and amendments to the Hindu Succession Act, granting daughters equal inheritance rights. These legislative measures aim to create a more equitable society where women can live free from discrimination and violence. Education also plays a crucial role in empowering women. Access to quality education enables women to acquire knowledge, skills, and confidence to pursue their goals and participate fully in society. Initiatives like the Sarva Shiksha Abhiyan and Beti Bachao, Beti Padhao campaign have focused on increasing girls' enrolement and retention in schools, bridging the gender gap in education. Furthermore, economic empowerment is vital for women's independence and autonomy. Programs such as the National Rural Livelihoods Mission and the Self-Employment Scheme for Rehabilitation of Manual Scavengers aim to provide women with opportunities for skill development, entrepreneurship, and financial inclusion. By empowering women economically, India can unlock their potential as drivers of growth and development. Despite these efforts, challenges persist in achieving full women's empowerment in India. Deep-rooted patriarchal norms, gender stereotypes, and cultural barriers continue to hinder progress. Discrimination and violence against women remain prevalent, especially in rural and marginalized communities. In conclusion, women's empowerment is a complex and ongoing process in India. While significant strides have been made through legislative reforms, education initiatives, and economic programs, much work remains to be done. By addressing systemic inequalities and promoting gender-sensitive policies, India can create a more inclusive and equitable society where women can realize their full potential.
+Give a suggestion on how women can be empowered.
+(1) Introduction of several laws aimed at protecting women's rights
+(2) Encouraging women to stay at home and focus solely on household duties
+(3) Promoting traditional gender roles
+(4) Implementing policies that restrict women's access to education and employment opportunities.
+= 1
+~ The passage names the legal framework as a key aspect of empowerment: the government 'has introduced several laws aimed at protecting women's rights and promoting gender equality'. The other options (staying at home, traditional roles, restricting education and jobs) would hold women back.
+
+Q 85 | eng | Comprehension
+Read the following passage and answer the questions given below.
+In recent decades, India has seen a significant push towards empowering its women, aiming to address long-standing inequalities and enhance social progress. This movement has taken various forms, including legislative reforms, educational initiatives, and grassroots activism. One key aspect of women's empowerment in India is the legal framework. Over the years, the Indian government has introduced several laws aimed at protecting women's rights and promoting gender equality. These include the Prevention of Domestic Violence Act, the Dowry Prohibition Act, and amendments to the Hindu Succession Act, granting daughters equal inheritance rights. These legislative measures aim to create a more equitable society where women can live free from discrimination and violence. Education also plays a crucial role in empowering women. Access to quality education enables women to acquire knowledge, skills, and confidence to pursue their goals and participate fully in society. Initiatives like the Sarva Shiksha Abhiyan and Beti Bachao, Beti Padhao campaign have focused on increasing girls' enrolement and retention in schools, bridging the gender gap in education. Furthermore, economic empowerment is vital for women's independence and autonomy. Programs such as the National Rural Livelihoods Mission and the Self-Employment Scheme for Rehabilitation of Manual Scavengers aim to provide women with opportunities for skill development, entrepreneurship, and financial inclusion. By empowering women economically, India can unlock their potential as drivers of growth and development. Despite these efforts, challenges persist in achieving full women's empowerment in India. Deep-rooted patriarchal norms, gender stereotypes, and cultural barriers continue to hinder progress. Discrimination and violence against women remain prevalent, especially in rural and marginalized communities. In conclusion, women's empowerment is a complex and ongoing process in India. While significant strides have been made through legislative reforms, education initiatives, and economic programs, much work remains to be done. By addressing systemic inequalities and promoting gender-sensitive policies, India can create a more inclusive and equitable society where women can realize their full potential.
+Identify the inference drawn from the passage.
+(1) Despite legislative reforms and educational initiatives, deep-rooted patriarchal norms and cultural barriers continue to hinder full women empowerment in India.
+(2) The passage suggests that women in India have achieved full empowerment due to the implementation of legislative reforms.
+(3) Economic empowerment programs alone have effectively addressed the challenges faced by women in India.
+(4) Gender stereotypes and cultural barriers have been completely eradicated in India, leading to gender equality.
+= 1
+~ The passage says that despite these efforts 'deep-rooted patriarchal norms, gender stereotypes, and cultural barriers continue to hinder progress' and that 'much work remains to be done'. Options 2, 3 and 4 claim full empowerment or complete success, which the passage contradicts.
+
+Q 86 | guj | Vocabulary & Usage
+નીચે આપેલા શબ્દ-સમૂહ માટે એક શબ્દનો યોગ્ય વિકલ્પ પસંદ કરો.
+આધારભૂત એવું કોઈ પણ લખાણ
+(1) દસ્તાવેજ
+(2) ઝેરોક્ષ
+(3) પ્રત
+(4) નકલ
+= 1
+~ 'Dastavej' (document) is any authentic, reliable written record on which facts can be based. 'Xerox', 'prat' (copy) and 'nakal' (duplicate) only mean copies of a text.
+
+Q 87 | guj | Vocabulary & Usage
+નીચે આપેલા શબ્દનો વિરુદ્ધાર્થી શબ્દનો વિકલ્પ પસંદ કરો.
+નિવૃત્ત
+(1) પ્રવૃત્તિ
+(2) ચંચળ
+(3) કાર્યરત
+(4) સંવૃત્ત
+= 3
+~ 'Nivrutt' (retired, withdrawn from work) is the opposite of 'karyarat' (engaged in work, active). 'Pravrutti' (activity) is a noun — the opposite of 'nivrutti', not of 'nivrutt'; 'chanchal' means fickle and 'sanvrutt' means happened or come about.
+
+Q 88 | guj | Vocabulary & Usage
+નીચે આપેલા સમાનાર્થી શબ્દનો યોગ્ય વિકલ્પ પસંદ કરો.
+માંગલ્ય
+(1) મણિ
+(2) સુખ
+(3) શુભ
+(4) દુઃખ
+= 3
+~ 'Mangalya' means auspiciousness or well-being, so its synonym is 'shubh' (auspicious). 'Mani' is a gem, 'sukh' is happiness, and 'dukh' (sorrow) is nearly the opposite.
+
+Q 89 | guj | Vocabulary & Usage
+નીચે આપેલા શબ્દ-સમૂહ માટે એક શબ્દનો યોગ્ય વિકલ્પ પસંદ કરો.
+સુંદર, સુકોમળ, સપ્રમાણ દેહ
+(1) ખડતલ
+(2) દેહયષ્ટિ
+(3) મજબૂત
+(4) સ્વસ્થ
+= 2
+~ 'Dehyashti' (deh = body + yashti = slender stick) means a beautiful, delicate, well-proportioned body. 'Khadtal' and 'majboot' mean sturdy or strong, and 'swasth' means healthy.
+
+Q 90 | guj | Grammar
+નીચેનામાંથી સાચી જોડણીનો વિકલ્પ પસંદ કરો.
+(1) શિરોમણિ
+(2) પરિક્ષા
+(3) વ્યતીરેક
+(4) તલ્લિન
+= 1
+~ The correct spelling is 'shiromani' (શિરોમણિ = shirah + mani, short i). The others should be spelt પરીક્ષા (pariksha), વ્યતિરેક (vyatirek) and તલ્લીન (tallin).
+
+Q 91 | guj | Grammar
+નીચે આપેલા સમાસના સાચા વિગ્રહનો વિકલ્પ પસંદ કરો.
+મધમીઠું
+(1) મધ અને મીઠું – દ્વંદ્વ સમાસ
+(2) મધનું મીઠું – તત્પુરુષ સમાસ
+(3) મધ મીઠું – ઉપપદ સમાસ
+(4) મધ જેવું મીઠું – કર્મધારય સમાસ
+= 4
+~ 'Madhmithu' = 'madh jevu mithu' (sweet like honey). The first word is the standard of comparison describing the second, so it is a karmadharaya (upaman karmadharaya) compound.
+
+Q 92 | guj | Grammar
+આપેલાં વાક્યોમાંથી શુદ્ધ વાક્યનો વિકલ્પ પસંદ કરો.
+(1) એક અલંગ બંદર છે.
+(2) અલંગ એક બંદર છે.
+(3) બંદર એક અલંગ છે.
+(4) પલંગ એક બંદર છે.
+= 2
+~ 'Alang ek bandar chhe' (Alang is a port) is correct: subject first, then the predicate. Alang in Bhavnagar district is a ship-breaking port. The others have a wrong word order or a wrong word ('palang' = bed).
+
+Q 93 | guj | Grammar
+નીચે આપેલા સમાસના સાચા વિગ્રહનો વિકલ્પ પસંદ કરો.
+ઇજનસાદ
+(1) ઈજનનો સાદ – તત્પુરુષ સમાસ
+(2) ઇજન- આમંત્રણ આપતો સાદ – મધ્યમપદલોપી સમાસ
+(3) ઇજન જેવો સાદ – કર્મધારય સમાસ
+(4) ઇજન અને સાદ -દ્વંદ્વ સમાસ
+= 2
+~ 'Ijan' means invitation; 'ijansaad' = a call that gives an invitation. The middle word 'aapto' (giving) drops out in the compound, so it is a madhyampadlopi compound.
+
+Q 94 | guj | Grammar
+સંધિનો સાચો વિગ્રહ પસંદ કરો.
+(1) સન્મિત્ર=સત+મિત્ર
+(2) તદનુસાર=તદ+અનુસાર
+(3) સત્રોત્સવ=સત્ર+ઉત્સવ
+(4) વ્ય + અવહાર
+= 3
+~ Satra + utsav: a + u = o (guna vowel sandhi) gives 'satrotsav', so option 3 is right. The others should be sat + mitra and tat + anusar (with halant), and vyavahar = vi + avahar.
+
+Q 95 | guj | Grammar
+નીચે આપેલી સંધિનો સાચો વિકલ્પ પસંદ કરો.
+નિઃ + તેજ
+(1) નિસ્તેજ
+(2) નિશતેજ
+(3) નીશતેજ
+(4) નિસતેજ
+= 1
+~ In visarga sandhi, visarga before 't' or 'th' becomes 's': nih + tej = nistej (નિસ્તેજ), just as duh + tar = dustar.
+
+Q 96 | guj | Grammar
+આપેલા સમાસ અને તેના પ્રકાર માટે સાચો વિકલ્પ પસંદ કરો.
+(1) નવરાત્રી- કર્મધારય સમાસ
+(2) કાચઘર- તત્પુરુષ સમાસ
+(3) ઓછાબોલું – દ્વંદ્વ સમાસ
+(4) ગૃહસ્થ- ઉપપદ સમાસ
+= 4
+~ 'Gruhasth' = 'gruhma rahenar' (one who lives in a home); its second member 'stha' comes from the verb root sthā (to stay), so it is an upapad compound — the correct pair. 'Navratri' (group of nine nights) is dvigu, not karmadharaya; 'kachghar' (house made of glass, middle word 'banelu' dropped) is madhyampadlopi, not tatpurush; 'ochhabolu' ('ochhu bolnar', one who speaks little) is itself upapad, not dvandva.
+
+Q 97 | guj | Translation & Comprehension
+આપેલા ગદ્યખંડને વાંચી તેની નીચે આપેલા પ્રશ્નના જવાબ માટે સાચો વિકલ્પ પસંદ કરો.
+દુનિયામાં જે માણસો પોતાનાં સારાં કાર્યો દ્વારા પ્રસિદ્ધ થયા એ બધા પર પોતાની માતાની વિશેષ અસર તેઓ બતાવતા રહ્યા છે. શિવાજી, વિનોબાજી, બબલભાઈ મહેતા સમ્રાટ સિકંદર, ભગતસિંહ- આ બધી વ્યક્તિઓએ એમની માતાનો ખૂબ જ આદર કર્યો છે. માતાના ગુણો અપરંપાર છે.
+પ્રશ્ન: આ ગદ્યખંડમાં કોનો મહિમા વર્ણવાયો છે?
+(1) શિવાજી
+(2) કાર્યો
+(3) સિકંદર
+(4) માતા
+= 4
+~ The passage says famous people show their mother's special influence and ends 'matana guno aparampar chhe' (a mother's virtues are boundless). Shivaji, Sikandar etc. are only examples; it glorifies 'mata' (the mother).
+
+Q 98 | guj | Translation & Comprehension
+આપેલા કાવ્ય-પંક્તિને વાંચી તેની નીચે આપેલા પ્રશ્નના જવાબ માટે સાચો વિકલ્પ પસંદ કરો.
+શમે ના વેરથી વેર, ટળે ના પાપ પાપથી,
+ઔષધ સર્વ દુઃખોનું, મૈત્રીભાવ સનાતન.
+પ્રશ્ન: બધાં દુઃખોની દવા કઈ છે?
+(1) ઔષધ
+(2) મૈત્રીભાવ
+(3) સનાતન
+(4) શમન
+= 2
+~ The lines say enmity does not end enmity and sin does not remove sin; 'aushadh sarva dukhonu, maitribhav sanatan' — the eternal medicine for all sorrows is 'maitribhav' (friendliness). 'Aushadh' just means 'medicine' itself.
+
+Q 99 | guj | Translation & Comprehension
+નીચેના અંગ્રેજી વાક્યના ગુજરાતી અનુવાદનો યોગ્ય વિકલ્પ પસંદ કરો.
+Do I prefer working locally or globally?
+(1) હું સ્થાનિક અને વૈશ્વિક કક્ષાએ કામ કરવું પસંદ કરું છું?
+(2) હું સ્થાનિક કે વૈશ્વિક કક્ષાએ કામ કરવું પસંદ કરું છું?
+(3) હું સ્થાનિક કે વૈશ્વિક કક્ષાએ કામ કરવું પસંદ કરું છું.
+(4) હું સ્થાનિક કે વૈશ્વિક કક્ષાએ પણ કામ કરવું પસંદ કરું છું?
+= 2
+~ 'Do I prefer…?' is a question, so it needs a question mark, and 'or' = 'ke', not 'ane' (and). Option 2 is exact; option 1 uses 'ane', option 3 lacks the question mark and option 4 adds an extra 'pan' (also).
+
+Q 100 | guj | Translation & Comprehension
+નીચેના ગુજરાતી વાક્યના અંગ્રેજી અનુવાદનો યોગ્ય વિકલ્પ પસંદ કરો.
+કોઈએ પણ અભ્યાસ માટે પૈસા ચૂકવવાના નથી.
+(1) Nobody has to pay any fee for study.
+(2) Nobody pay any fee for study.
+(3) Nobody is paying pay any fee for study.
+(4) Nobody has to paid any fee for study.
+= 1
+~ 'Koie … chukavvana nathi' (no one is required to pay) = 'Nobody has to pay'. 'Has to' takes the base verb 'pay'; option 2 needs 'pays', option 3 has 'paying pay', and option 4 wrongly uses 'paid' after 'has to'.

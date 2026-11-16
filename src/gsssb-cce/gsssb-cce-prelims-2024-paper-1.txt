@@ -1,0 +1,1013 @@
+# GSSSB Gujarat Subordinate Services Class-III (Group-A and Group-B) Combined Competitive Examination, Advt. No. 212/2023-24, Preliminary (computer-based, April-May 2024), GSSSB question paper No. 1 of 71; answers: GSSSB's final answers, published with the paper (notice of 19 August 2026)
+
+Q 1 | rea | Verbal Reasoning
+After interchanging which two signs and two numbers, the value of the given equation will be ‘1’?
+4 × 6 ÷ 9 + 8 – 3
+(1) × and ÷, 4 and 8
+(2) + and –, 4 and 6
+(3) ÷ and +, 6 and 9
+(4) × and ÷, 8 and 3
+= 4
+~ Swap × with ÷ and 8 with 3: the expression becomes 4 ÷ 6 × 9 + 3 – 8. By BODMAS, 4 ÷ 6 × 9 = 6, so 6 + 3 – 8 = 1. (Option 1, for example, gives 8 ÷ 6 × 9 + 4 – 3 = 13.)
+
+Q 2 | rea | Verbal Reasoning
+If ‘I’ means ‘+’, ‘J’ means ‘×’, ‘K’ means ‘÷’ and ‘L’ means ‘–’, then which of the following equation is correct?
+I. 81 J 18 K 9 I 20 L 10 = 172
+II. 9 I 17 J 5 L 40 K 5 = 86
+(1) Only I
+(2) Only II
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Decode and apply BODMAS. I: 81 × 18 ÷ 9 + 20 – 10 = 81 × 2 + 10 = 172 (true). II: 9 + 17 × 5 – 40 ÷ 5 = 9 + 85 – 8 = 86 (true). So both equations are correct.
+
+Q 3 | rea | Verbal Reasoning
+If 80 P 10 Q 70 R 50 = 70 and 45 P 55 Q 65 R 75 = 110, then 40 P 10 Q 18 R 28 = ?
+(1) 60
+(2) 80
+(3) 70
+(4) 90
+= 1
+~ Taking P = +, Q = – and R = + fits both equations: 80 + 10 – 70 + 50 = 70 and 45 + 55 – 65 + 75 = 110. Hence 40 + 10 – 18 + 28 = 60.
+
+Q 4 | rea | Verbal Reasoning
+If ‘@’ means ‘÷’, ‘#’ means ‘×’, ‘>’ means ‘+’ and ‘<’ means ‘–’, then which of the following equation is NOT correct?
+(1) 18 < 24 @ 8 > 17 # 20 = 61
+(2) 17 # 7 < 18 @ 3 > 19 = 132
+(3) 80 > 70 < 100 @ 2 # 3 = 0
+(4) 20 # 25 > 30 < 40 @ 10 = 526
+= 1
+~ Option 1 becomes 18 – 24 ÷ 8 + 17 × 20 = 18 – 3 + 340 = 355, not 61, so it is NOT correct. The others hold: 17 × 7 – 18 ÷ 3 + 19 = 132; 80 + 70 – 100 ÷ 2 × 3 = 0; 20 × 25 + 30 – 40 ÷ 10 = 526.
+
+Q 5 | rea | Verbal Reasoning
+If 13 * 17 # 2 = 229 and 8 * 6 # 5 = 20, then 8 * 14 # 2 = ?
+(1) 100
+(2) 110
+(3) 70
+(4) 130
+= 4
+~ The rule is (a² + b²) ÷ c: (13² + 17²) ÷ 2 = 458 ÷ 2 = 229 and (8² + 6²) ÷ 5 = 100 ÷ 5 = 20. So (8² + 14²) ÷ 2 = (64 + 196) ÷ 2 = 130.
+
+Q 6 | rea | Verbal Reasoning
+Each of the following problems has a question and two statements (I) and (II).
+A is in which direction with respect to D?
+I. A is north to the B which is to the west of the C.
+II. D is to the west of the B.
+(1) If the question can be answered by using one of the statement alone but cannot be answered by using the other statement alone.
+(2) If the question can be answered by using either of the statement (I) or (II) alone.
+(3) If the question can be answered by using both the statements together but not by either statement alone.
+(4) If the question cannot be answered even by using both the statements together.
+= 3
+~ Statement I places A relative to B (and C) but says nothing about D; statement II places D relative to B but says nothing about A. Together: A is north of B and D is west of B, so A is north-east of D. Both statements are needed.
+
+Q 8 | rea | Verbal Reasoning
+Select the option that is related to the fourth number cluster in the same way as the first number cluster is related to the second number cluster and fifth number cluster is related to sixth number cluster. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+9 : 90 :: ? : 272 :: 26 : 702
+(1) 16
+(2) 17
+(3) 18
+(4) 19
+= 1
+~ Each pair is n : n × (n + 1) = n² + n. 9 × 10 = 90 and 26 × 27 = 702; similarly 16 × 17 = 272, so ? = 16.
+
+Q 9 | rea | Verbal Reasoning
+Select the option that is related to the fifth number cluster in the same way as the second number cluster is related to the first number cluster and fourth number cluster is related to third number cluster. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+12 : 156 :: 23 : 552 :: 34 : ?
+(1) 1191
+(2) 1192
+(3) 1190
+(4) 1193
+= 3
+~ Each number is multiplied by the next number: 12 × 13 = 156 and 23 × 24 = 552. So 34 × 35 = 1190.
+
+Q 10 | rea | Verbal Reasoning
+Select the option in which the numbers shares the same relationship in set as that shared by the numbers in the given set. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(2, 3, 6)
+(4, 6, 12)
+(1) (6, 9, 18)
+(2) (5, 12, 13)
+(3) (16, 24, 30)
+(4) (8, 12, 16)
+= 1
+~ In each set the second number is 1.5 times the first and the third is 3 times the first (2, 3, 6 and 4, 6, 12). (6, 9, 18) follows it: 9 = 1.5 × 6 and 18 = 3 × 6. In the other options the third number is not 3 times the first.
+
+Q 11 | rea | Verbal Reasoning
+Select the option in which the numbers shares the same relationship in set as that shared by the numbers in the given set. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(32, 4, 784)
+(29, 15, 196)
+(1) (5, 3, 9)
+(2) (51, 31, 400)
+(3) (51, 32, 441)
+(4) (34, 15, 484)
+= 2
+~ Third number = (first – second)²: (32 – 4)² = 28² = 784 and (29 – 15)² = 14² = 196. Likewise (51 – 31)² = 20² = 400. Check others: (5 – 3)² = 4, (51 – 32)² = 361, (34 – 15)² = 361 – none match.
+
+Q 12 | rea | Verbal Reasoning
+Select the option in which the numbers shares the same relationship in set as that shared by the numbers in the given set. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+(3, 6, 27)
+(2, 4, 18)
+(1) (5, 11, 64)
+(2) (8, 12, 60)
+(3) (7, 13, 80)
+(4) (4, 14, 36)
+= 2
+~ Third number = (first + second) × 3: (3 + 6) × 3 = 27 and (2 + 4) × 3 = 18. Only (8, 12, 60) fits: (8 + 12) × 3 = 60. Others give 48, 60 and 54 instead of 64, 80 and 36.
+
+Q 13 | rea | Verbal Reasoning
+Select the option that is related to the fifth number in the same way as the second number is related to the first number and fourth number is related to third number. (NOTE: Operations should be performed on the whole numbers, without breaking down the number into its constituent digits. E.g.13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed)
+33 : 1090 :: 42 : 1765 :: 11 : ?
+(1) 122
+(2) 123
+(3) 121
+(4) 124
+= 1
+~ Second number = (first number)² + 1: 33² + 1 = 1089 + 1 = 1090 and 42² + 1 = 1764 + 1 = 1765. So 11² + 1 = 121 + 1 = 122.
+
+Q 14 | rea | Data Interpretation
+The table given below shows the number of pencils sold by 7 shops.
+Shops | Pencils
+S1 | 54
+S2 | 68
+S3 | 70
+S4 | 120
+S5 | 84
+S6 | 130
+S7 | 36
+What is the average of the number of pencils sold by shop S2, S3 and S7?
+(1) 65
+(2) 58
+(3) 70
+(4) 75
+= 2
+~ Average = (S2 + S3 + S7) ÷ 3 = (68 + 70 + 36) ÷ 3 = 174 ÷ 3 = 58.
+
+Q 15 | rea | Data Interpretation
+The table given below shows the marked price (in Rs.) and value of discount (in Rs.) of 7 articles.
+Articles | Marked price | Discount
+A | 500 | 200
+B | 300 | 50
+C | 450 | 200
+D | 350 | 150
+E | 500 | 100
+F | 400 | 50
+G | 450 | 50
+Selling Price = Marked Price – Discount
+What is the average of the selling price of article A and B?
+(1) 250
+(2) 175
+(3) 275
+(4) 225
+= 3
+~ SP of A = 500 – 200 = Rs. 300; SP of B = 300 – 50 = Rs. 250. Average = (300 + 250) ÷ 2 = Rs. 275.
+
+Q 16 | rea | Data Interpretation
+The line chart given below shows the number of books sold by five shopkeepers.
+What is the average number of books sold by P, Q, R and S?
+(1) 35.5
+(2) 36.5
+(3) 37.5
+(4) 39.5
+= 3
+~ From the chart: P = 50, Q = 35, R = 40, S = 25. Average = (50 + 35 + 40 + 25) ÷ 4 = 150 ÷ 4 = 37.5.
+! img/c01-q16.png
+
+Q 17 | rea | Data Interpretation
+The line chart given below shows the number of 5 different bikes sold by two showrooms.
+What is the sum of the bikes P, Q and R sold by showrooms X and Y together?
+(1) 180
+(2) 190
+(3) 195
+(4) 200
+= 2
+~ Showroom X: P = 60, Q = 20, R = 15 (total 95). Showroom Y: P = 30, Q = 40, R = 25 (total 95). Sum = 95 + 95 = 190.
+! img/c01-q17.png
+
+Q 18 | rea | Verbal Reasoning
+In the following question, select the missing number from the given series.
+133, 140, 147, 154, 161, ?
+(1) 163
+(2) 164
+(3) 167
+(4) 168
+= 4
+~ Each term is 7 more than the previous one (133 + 7 = 140, 140 + 7 = 147, …). So the next term = 161 + 7 = 168.
+
+Q 19 | rea | Verbal Reasoning
+In the following question, select the missing number from the given series.
+191, 183, 167, 143, 111, ?
+(1) 73
+(2) 71
+(3) 77
+(4) 75
+= 2
+~ The differences are –8, –16, –24, –32 (multiples of 8). The next difference is –40, so 111 – 40 = 71.
+
+Q 20 | rea | Verbal Reasoning
+In the following question, select the missing number from the given series.
+197, 189, 173, 149, 117
+(1) 74
+(2) 75
+(3) 76
+(4) 77
+= 4
+~ The differences are –8, –16, –24, –32. The next term is 117 – 40 = 77.
+
+Q 21 | rea | Verbal Reasoning
+What should come in place of ‘?’ in the given series?
+87, 90, 97, 108, 123, ?
+(1) 138
+(2) 131
+(3) 142
+(4) 137
+= 3
+~ The differences are +3, +7, +11, +15 (each 4 more than the last). The next difference is +19, so 123 + 19 = 142.
+
+Q 22 | rea | Verbal Reasoning
+In the following question, select the missing number from the given series.
+141, 283, 567, 1135, 2271, ?
+(1) 4541
+(2) 4542
+(3) 4543
+(4) 4545
+= 3
+~ Each term = previous term × 2 + 1: 141 × 2 + 1 = 283, 283 × 2 + 1 = 567, 567 × 2 + 1 = 1135, 1135 × 2 + 1 = 2271. So 2271 × 2 + 1 = 4543.
+
+Q 23 | rea | Verbal Reasoning
+A is the mother of B. B is the sister of C. C is the wife of D. D is the father of E. How D is related to B?
+(1) Wife’s sister
+(2) Husband’s father
+(3) Sister’s husband
+(4) Wife’s brother
+= 3
+~ B and C are sisters (B is C's sister and C is a wife, so female). C is D's wife, so D is the husband of B's sister – B's sister's husband (brother-in-law). A and E are not needed.
+
+Q 24 | rea | Verbal Reasoning
+P is the brother of Q. Q is the sister of R. R is the mother of S. S is the father of T. T is the wife of U. How many male members are there?
+(1) 2
+(2) 1
+(3) 4
+(4) 3
+= 4
+~ Read the gender from each relation word: P (brother), S (father) and U (husband of T) are male; Q (sister), R (mother) and T (wife) are female. So there are 3 male members.
+
+Q 25 | rea | Verbal Reasoning
+A + B means ‘A’ is the mother of ‘B’, A – B means ‘A’ is the father of ‘B’, A × B means ‘A’ is the sister of ‘B’, A ÷ B means ‘A’ is the daughter of ‘B’. If N × K – R ÷ S + T, then how is K related to T?
+(1) Father’s brother
+(2) Brother
+(3) Father
+(4) Mother
+= 3
+~ N × K: N is K's sister. K – R: K is R's father. R ÷ S: R is S's daughter. S + T: S is T's mother. So R and T are both children of S, K (father of R) is S's husband, and K is T's father.
+
+Q 26 | rea | Verbal Reasoning
+In the question given below, relationships between different elements are shown in the statements. These statements are followed by two conclusions. Give answer:
+Statements:
+I. A ≥ B > O
+II. N ≥ B
+Conclusions:
+I. A ≥ N
+II. N > O
+(1) If only conclusion I is true
+(2) If only conclusion II is true
+(3) If neither conclusion I nor conclusion II is true
+(4) If both conclusions I and II are true
+= 2
+~ Combining gives A ≥ B ≤ N, so A and N cannot be compared – conclusion I is not definite. N ≥ B > O gives N > O – conclusion II is true. Only II follows.
+
+Q 27 | rea | Verbal Reasoning
+In the question given below, relationships between different elements are shown in the statements. These statements are followed by two conclusions. Give answer:
+Statements:
+I. P = Q > R ≥ S
+II. T ≥ U > V
+III. W > T
+Conclusions:
+I. W > V
+II. P = S
+(1) If only conclusion I is true
+(2) If only conclusion II is true
+(3) If neither conclusion I nor conclusion II is true
+(4) If both conclusions I and II are true
+= 1
+~ W > T ≥ U > V gives W > V – conclusion I is true. P = Q > R ≥ S gives P > S, so P = S is false. Only conclusion I is true.
+
+Q 28 | rea | Verbal Reasoning
+Each of the following problems has a question and two statements (I) and (II).
+What is the remainder when N is divided by 10?
+I. N when divided by 5 the remainder is 2.
+II. N is divisible by 20.
+(1) If the question can be answered by using one of the statement alone but cannot be answered by using the other statement alone.
+(2) If the question can be answered by using either of the statement (I) or (II) alone.
+(3) If the question can be answered by using both the statements together but not by either statement alone.
+(4) If the question cannot be answered even by using both the statements together.
+= 1
+~ I: N = 5k + 2 ends in 2 or 7, so the remainder on division by 10 can be 2 or 7 – not unique. II: every multiple of 20 is a multiple of 10, so the remainder is 0. Statement II alone answers it; I alone does not.
+
+Q 29 | rea | Verbal Reasoning
+Each of the following problems has a question and two statements (I) and (II).
+Is A × B even?
+I. A + B is even.
+II. B is an odd number.
+(1) If the question can be answered by using one of the statement alone but cannot be answered by using the other statement alone.
+(2) If the question can be answered by using either of the statement (I) or (II) alone.
+(3) If the question can be answered by using both the statements together but not by either statement alone.
+(4) If the question cannot be answered even by using both the statements together.
+= 3
+~ I alone: A and B are both even (product even) or both odd (product odd) – undecided. II alone: A is unknown. Together: B is odd and A + B is even, so A is odd and A × B is odd – a definite 'No'. Both statements are needed.
+
+Q 30 | rea | Verbal Reasoning
+How many athletes are neither boys nor girls?
+(1) 17
+(2) 27
+(3) 19
+(4) 25
+= 4
+~ Athletes are shown by the triangle, girls by the circle and boys by the rectangle. The part of the triangle lying outside both the circle and the rectangle has 25, so 25 athletes are neither boys nor girls.
+! img/c01-q30.png
+
+Q 31 | rea | Verbal Reasoning
+In the following question below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion logically follows the given statements.
+Statements:
+I. Some cap are socks.
+II. No shirt is socks.
+Conclusion:
+I. All cap are shirt.
+II. Some cap are not shirt.
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Both conclusions I and II follows
+(4) Neither conclusion follows
+= 2
+~ Some caps are socks, and no shirt is socks, so the caps that are socks cannot be shirts: 'Some caps are not shirts' follows (Some + No = Some-not). 'All caps are shirts' contradicts this, so conclusion I does not follow.
+
+Q 32 | rea | Verbal Reasoning
+In the following question below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion logically follows the given statements.
+Statements:
+I. Some farmer are brave.
+II. All brave are honest.
+Conclusion:
+I. All honest are farmer.
+II. Some farmer are honest.
+III. Some brave are farmer.
+(1) Both conclusions I and III follows
+(2) Only conclusion II follows
+(3) Only conclusion III follows
+(4) Both conclusions II and III follows
+= 4
+~ Some farmers are brave + All brave are honest ⇒ Some farmers are honest (II follows). Converting statement I gives Some brave are farmers (III follows). 'All honest are farmers' cannot be concluded (I does not follow). So II and III follow.
+
+Q 33 | rea | Verbal Reasoning
+In the following question below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion logically follows the given statements.
+Statements:
+I. Some red are torch.
+II. All white are torch.
+Conclusion:
+I. Some torch are red.
+II. Some torch are white.
+III. No red are white.
+(1) Only conclusion I follows
+(2) Both conclusions II and III follows
+(3) Both conclusions I and II follows
+(4) All conclusion follows
+= 3
+~ 'Some red are torch' converts to 'Some torch are red' (I follows). 'All white are torch' converts to 'Some torch are white' (II follows). Red and white are linked only through torch, so 'No red are white' is not certain (III does not follow).
+
+Q 34 | rea | Non-verbal Reasoning
+From the given option figures, select the one in which the question figure is hidden/embedded (rotation is not allowed).
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+~ Trace the lines of figure 2: the left side of the square, the slanting line from the left side to the centre, the diagonal from the centre down to the bottom-left corner, and the small right-angled triangle just right of the centre together form the question figure in the same orientation (the question figure is only drawn a little taller).
+! img/c01-q34.png
+
+Q 35 | rea | Non-verbal Reasoning
+A piece of paper is folded and punched as shown below in the question figures. From the given option figures, indicate how it will appear when opened?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+~ Unfold in reverse order. The punched quarter (top-left: notch on the top edge, △ ▽) is mirrored to the top-right, giving △ ▽ ▽ △ and two notches on the top edge. Opening the horizontal fold mirrors this to the bottom half, where each △ becomes ▽: ▽ △ △ ▽ with two notches on the bottom edge – figure 1.
+! img/c01-q35.png
+
+Q 36 | rea | Non-verbal Reasoning
+A piece of paper is folded and punched as shown below in the question figures. From the given option figures, indicate how it will appear when opened?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+~ The punched quarter is the top-right one (circle above a triangle, small square beside the triangle's base on the outer edge). Opening the vertical fold mirrors it to the top-left (square on the left outer edge); opening the horizontal fold mirrors both to the bottom half (△ becomes ▽, circle at the bottom). The squares stay beside the triangle bases, close to the middle fold line – figure 2.
+! img/c01-q36.png
+
+Q 37 | rea | Non-verbal Reasoning
+A piece of paper is folded and punched as shown below in the question figures. From the given option figures, indicate how it will appear when opened?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+~ The folded piece is the bottom-left quarter; its top edge lies on the horizontal fold and its right edge on the vertical fold. A notch cut on a fold opens into a full diamond: upright diamonds on the horizontal centre line (left, right) and flat ones on the vertical centre line (top, bottom). The rectangle and square repeat in all four quarters – figure 1.
+! img/c01-q37.png
+
+Q 38 | rea | Non-verbal Reasoning
+In the following question, select the figure which can be placed at the sign of question mark (?) from the given alternatives.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+~ The small triangle on the circle moves 135° (three-eighths of a turn) clockwise each time: bottom → top-left → right → bottom-left. The next position is the top, as in figure 4.
+! img/c01-q38.png
+
+Q 39 | rea | Non-verbal Reasoning
+In the following question, select the figure which can be placed at the sign of question mark (?) from the given alternatives.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+~ Starting from the bottom-right, one more line turns into an upward arrow in each figure (0, 1, 2, 3 arrows). The next figure must have 4 arrows with only the first (top-left) line unchanged – figure 1.
+! img/c01-q39.png
+
+Q 40 | rea | Non-verbal Reasoning
+In the following question, select the figure which can be placed at the sign of question mark (?) from the given alternatives.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+~ The number of sides falls by one each time: heptagon (7), hexagon (6), pentagon (5), rhombus (4). The next figure must have 3 sides – the triangle (figure 1).
+! img/c01-q40.png
+
+Q 41 | qa | Algebra, Geometry & Mensuration
+If a + 2b = 27, a^3 + 8b^3 = 5427, then what is the value of 2ab?
+(1) 156
+(2) 149
+(3) 172
+(4) 176
+= 4
+~ Use x^3 + y^3 = (x + y)^3 – 3xy(x + y) with x = a, y = 2b: 5427 = 27^3 – 3 × 2ab × 27 = 19683 – 81 × 2ab. So 81 × 2ab = 14256 and 2ab = 176.
+
+Q 42 | qa | Algebra, Geometry & Mensuration
+If a + b = 10 and ab = 16, then what is the value of a^3 + b^3?
+(1) 640
+(2) 520
+(3) 640
+(4) 720
+= 2
+~ a^3 + b^3 = (a + b)^3 – 3ab(a + b) = 1000 – 3 × 16 × 10 = 1000 – 480 = 520.
+
+Q 43 | qa | Algebra, Geometry & Mensuration
+If x – 2/x = 15, then what is the value of x^2 + 4/x^2?
+(1) 229
+(2) 227
+(3) 221
+(4) 223
+= 1
+~ Square both sides: (x – 2/x)^2 = x^2 – 2 × x × (2/x) + 4/x^2 = x^2 + 4/x^2 – 4 = 225. So x^2 + 4/x^2 = 225 + 4 = 229.
+
+Q 44 | qa | Algebra, Geometry & Mensuration
+If x + y = 3, x^3 + y^3 = 7, then what is the value of 18xy?
+(1) 50
+(2) 40
+(3) 20
+(4) 24
+= 2
+~ x^3 + y^3 = (x + y)^3 – 3xy(x + y) gives 7 = 27 – 9xy, so 9xy = 20 and 18xy = 2 × 20 = 40.
+
+Q 45 | qa | Algebra, Geometry & Mensuration
+If 3a – (3/a) – 3 = 0, then what is the value of a^3 – (1/a^3) + 2?
+(1) 0
+(2) 2
+(3) 4
+(4) 6
+= 4
+~ Divide by 3: a – 1/a = 1. Then a^3 – 1/a^3 = (a – 1/a)^3 + 3(a – 1/a) = 1 + 3 = 4, so the expression = 4 + 2 = 6.
+
+Q 46 | qa | Arithmetic
+The average height of L, M and N is 190 cm. If the average height of L and M is 158 cm and the average height of M and N is 157 cm, then what is the height of M?
+(1) 62 cm
+(2) 69 cm
+(3) 60 cm
+(4) 64 cm
+= 3
+~ L + M + N = 3 × 190 = 570; L + M = 2 × 158 = 316; M + N = 2 × 157 = 314. Adding the last two counts M twice: M = 316 + 314 – 570 = 60 cm.
+
+Q 47 | qa | Arithmetic
+Average age of a group of 27 boys is 30 years. A boy having age 22 years leaves the group. A new boy joins the group and the average increases by 1 year. What is the age of the new boy?
+(1) 45 years
+(2) 48 years
+(3) 49 years
+(4) 52 years
+= 3
+~ The group still has 27 boys and the average rises by 1, so the total rises by 27 years. New boy = 22 + 27 = 49 years. (Check: 27 × 31 – (27 × 30 – 22) = 837 – 788 = 49.)
+
+Q 48 | qa | Arithmetic
+The average of three values is 70. If first value is 3/4 of the third value and third value is 10 more than second value, then what will be the difference between the first and second value?
+(1) 15
+(2) 17
+(3) 10
+(4) 12
+= 3
+~ Sum = 210. Let the third value be T: first = 3T/4, second = T – 10. 3T/4 + (T – 10) + T = 210 ⇒ 11T/4 = 220 ⇒ T = 80. First = 60, second = 70, difference = 10.
+
+Q 49 | qa | Arithmetic
+Marked price of an article is Rs. 2500. If a discount of 30 percent is given, then what is the selling price of the article?
+(1) Rs. 1820
+(2) Rs. 1650
+(3) Rs. 1750
+(4) Rs. 1680
+= 3
+~ SP = MP × (100 – discount%)/100 = 2500 × 70/100 = Rs. 1750.
+
+Q 50 | qa | Arithmetic
+A merchant marks the price of his article 60 percent above the cost price. He gives some discount on it and earns a profit of 30 percent. What is the discount percentage?
+(1) 16.25 percent
+(2) 18.75 percent
+(3) 25 percent
+(4) 20 percent
+= 2
+~ Take CP = 100: MP = 160 and SP = 130. Discount = 30 on the marked price 160, so discount % = 30/160 × 100 = 18.75%.
+
+Q 51 | qa | Arithmetic
+If c is 75 percent less than d, then d is how much percentage more than c?
+(1) 300
+(2) 325
+(3) 350
+(4) 275
+= 1
+~ Let d = 100; then c = 100 − 75 = 25. d is 75 more than c, so d exceeds c by 75/25 × 100 = 300 percent.
+
+Q 52 | qa | Number System & Simplification
+What is the Least Common Multiple of 3/2, 9/4 and 6/5?
+(1) 18
+(2) 18/5
+(3) 6/10
+(4) 15
+= 1
+~ LCM of fractions = LCM of the numerators ÷ HCF of the denominators = LCM(3, 9, 6) ÷ HCF(2, 4, 5) = 18 ÷ 1 = 18.
+
+Q 53 | qa | Number System & Simplification
+What is the value of 1^3 + 3^3 + 5^3 + ...... + 15^3?
+(1) 8230
+(2) 8128
+(3) 8438
+(4) 8328
+= 2
+~ Sum of the cubes of the first n odd numbers = n^2(2n^2 − 1). 1, 3, ..., 15 are the first 8 odd numbers, so the sum = 64 × (128 − 1) = 64 × 127 = 8128. (Check: 1^3 + ... + 15^3 = 120^2 = 14400; even cubes 2^3 + ... + 14^3 = 8 × 784 = 6272; 14400 − 6272 = 8128.)
+
+Q 54 | qa | Number System & Simplification
+The greatest possible length which can be used to measure exactly the lengths 8 m 16 cm, 6 m 24 cm, 11 m 04 cm is ______ cm.
+(1) 58
+(2) 68
+(3) 54
+(4) 48
+= 4
+~ In cm the lengths are 816, 624 and 1104. The greatest length that measures all of them exactly is their HCF: 816 = 48 × 17, 624 = 48 × 13, 1104 = 48 × 23, so HCF = 48 cm.
+
+Q 55 | qa | Number System & Simplification
+What is the value of (343/7^2 − 81/27 + 14/7 + 51/3) × 3 + 10?
+(1) 79
+(2) 81
+(3) 83
+(4) 87
+= 1
+~ 343/49 = 7, 81/27 = 3, 14/7 = 2 and 51/3 = 17. Bracket = 7 − 3 + 2 + 17 = 23. Then 23 × 3 + 10 = 69 + 10 = 79.
+
+Q 56 | qa | Arithmetic
+Student L got 60 marks more than the student M and the marks of L were equal to the 65 percent of the sum of their marks. What are the marks obtained by L and M respectively?
+(1) 150, 80
+(2) 130, 70
+(3) 120, 50
+(4) 100, 40
+= 2
+~ L = 0.65(L + M) ⇒ 0.35L = 0.65M ⇒ L : M = 13 : 7. The difference of 6 parts = 60 marks, so 1 part = 10: L = 130 and M = 70.
+
+Q 57 | qa | Arithmetic
+The profit earned by selling a laptop for Rs. 7280 is equal to the loss incurred by selling the same laptop for Rs. 6190. What should be the selling price of the laptop to earn 20 percent profit?
+(1) Rs. 7982
+(2) Rs. 8082
+(3) Rs. 8158
+(4) Rs. 8468
+= 2
+~ When the profit at one selling price equals the loss at another, CP is their average: (7280 + 6190)/2 = Rs. 6735. For 20 percent profit, SP = 6735 × 1.2 = Rs. 8082.
+
+Q 58 | qa | Arithmetic
+Profit obtained on selling an article for Rs. 460 is equal to the loss incurred on selling that article for Rs. 380. If selling price is Rs. 400, then what will be the loss percentage?
+(1) 5.25 percent
+(2) 4.76 percent
+(3) 6.66 percent
+(4) 7.14 percent
+= 2
+~ Equal profit and loss means CP = (460 + 380)/2 = Rs. 420. Selling at Rs. 400 gives a loss of Rs. 20, so loss percent = 20/420 × 100 ≈ 4.76 percent.
+
+Q 59 | qa | Arithmetic
+Both X and Y sells their bag at the rate of Rs. 9000 per bag. X earned a profit of 10 percent while Y incurred a loss of 25 percent. What is the ratio of cost prices of X and Y?
+(1) 15 : 22
+(2) 18 : 23
+(3) 9 : 11
+(4) 5 : 7
+= 1
+~ CP of X = 9000/1.10 and CP of Y = 9000/0.75. Their ratio = 0.75 : 1.10 = 75 : 110 = 15 : 22.
+
+Q 60 | qa | Arithmetic
+If X : Y = 5 : 4, then what is the value of X + Y : Y?
+(1) 9 : 4
+(2) 4 : 9
+(3) 4 : 5
+(4) 7 : 4
+= 1
+~ Let X = 5k and Y = 4k. Then (X + Y) : Y = 9k : 4k = 9 : 4.
+
+Q 61 | qa | Arithmetic
+If p : q = 11 : 2 and q : r = 3 : 2, then what is the value of p : q : r?
+(1) 33 : 6 : 2
+(2) 33 : 4 : 6
+(3) 33 : 6 : 1
+(4) 33 : 6 : 4
+= 4
+~ Make the common term q equal: p : q = 11 : 2 = 33 : 6 (× 3) and q : r = 3 : 2 = 6 : 4 (× 2). Hence p : q : r = 33 : 6 : 4.
+
+Q 62 | qa | Arithmetic
+A box consist of 5 rupees, 2 rupees and 1 rupee coins and their total values are in the ratio of 10 : 6 : 7 respectively. If there are total 144 coins, then how many 2 rupees coins are there in the box?
+(1) 24
+(2) 36
+(3) 84
+(4) 96
+= 2
+~ Number of coins = value ÷ denomination: 10/5 : 6/2 : 7/1 = 2 : 3 : 7 (total 12 parts). 12 parts = 144 coins, so 1 part = 12 and the 2-rupee coins = 3 × 12 = 36.
+
+Q 63 | qa | Arithmetic
+M and N together can complete a work in 24 days. N alone can complete the same work in 72 days. In how many days will M alone complete the same work?
+(1) 42 days
+(2) 56 days
+(3) 46 days
+(4) 36 days
+= 4
+~ M's one-day work = 1/24 − 1/72 = (3 − 1)/72 = 2/72 = 1/36, so M alone takes 36 days.
+
+Q 64 | qa | Arithmetic
+T1, T2 and T3 together can complete a work in 165 days less than T1 alone, 82.5 days less than T2 alone and 27.5 days less than T3 alone. T1, T2 and T3 together take 82.5 days to complete the same work. In how many days T1 and T2 together can complete the same work?
+(1) 107 days
+(2) 105 days
+(3) 110 days
+(4) 99 days
+= 4
+~ Take the stated 82.5 days for all three together: T1 alone = 82.5 + 165 = 247.5 days and T2 alone = 82.5 + 82.5 = 165 days. T1 + T2 per day = 1/247.5 + 1/165 = 2/495 + 3/495 = 1/99, so 99 days. (The data clash: T3 alone = 110 days would make all three together about 52 days, not 82.5; the official answer simply ignores T3.)
+
+Q 65 | qa | Arithmetic
+The distance between place K and L is 1584 km. An express train leaves place K at 4:20 p.m. and runs at a speed of 198 km/hr. The train stops on the way for 50 minutes. At what time the train reaches at place L?
+(1) 12:40 am
+(2) 1:10 am
+(3) 2:20 am
+(4) 3:30 am
+= 2
+~ Running time = 1584 ÷ 198 = 8 hours; adding the 50-minute halt gives 8 h 50 min. 4:20 p.m. + 8 h 50 min = 1:10 a.m.
+
+Q 66 | qa | Arithmetic
+The distance between place E and F is 702 km. An express train leaves place E at 4:00 p.m. and runs at a speed of 54 km/hr. The train stops on the way for 50 minutes. At what time the train reaches at place F?
+(1) 4:20 am
+(2) 5:50 am
+(3) 6:30 am
+(4) 3:50 am
+= 2
+~ Running time = 702 ÷ 54 = 13 hours; with the 50-minute halt the journey takes 13 h 50 min. 4:00 p.m. + 13 h 50 min = 5:50 a.m. next day.
+
+Q 67 | qa | Arithmetic
+A bus travels for 4 hours at the speed of 65 km/hr. A train travels 90 km more than the bus in 1 hour more. What is the speed of the train?
+(1) 85 km/hr
+(2) 75 km/hr
+(3) 70 km/hr
+(4) 80 km/hr
+= 3
+~ Bus distance = 65 × 4 = 260 km. The train covers 260 + 90 = 350 km in 4 + 1 = 5 hours, so its speed = 350 ÷ 5 = 70 km/hr.
+
+Q 68 | qa | Algebra, Geometry & Mensuration
+Diameter of wheel of a cycle is 1.4 cm. A cyclist takes 12 minutes to reach a destination at the speed of 53.9 km/hr. How many revolutions will the wheel make during the journey?
+(1) 312000
+(2) 245000
+(3) 276000
+(4) 208000
+= 2
+~ Distance = 53.9 × 12/60 = 10.78 km = 10,78,000 cm. Circumference = π × d = 22/7 × 1.4 = 4.4 cm. Revolutions = 10,78,000 ÷ 4.4 = 2,45,000.
+
+Q 69 | qa | Algebra, Geometry & Mensuration
+What will be the sum of the sequence 17 + 21 + 25 + ...... 213?
+(1) 6150
+(2) 5450
+(3) 5750
+(4) 5650
+= 3
+~ This is an AP with a = 17, d = 4. Number of terms n = (213 − 17)/4 + 1 = 50. Sum = n/2 × (first + last) = 25 × 230 = 5750.
+
+Q 70 | qa | Algebra, Geometry & Mensuration
+7th term of a geometric progression is 2 and its 12th term is 1/16. What is the first term of this progression?
+(1) 128
+(2) 64
+(3) 256
+(4) 32
+= 1
+~ ar^6 = 2 and ar^11 = 1/16. Dividing, r^5 = 1/32, so r = 1/2. Then a = 2 ÷ (1/2)^6 = 2 × 64 = 128.
+
+Q 71 | eng | Vocabulary
+Fill in the blank with the most appropriate option.
+I was made very uneasy in my mind by Mrs. Pocket's ______ into a discussion with Drummle.
+(1) trapping
+(2) falling
+(3) collapsing
+(4) dropping
+= 2
+~ 'Fall into' a discussion or conversation means to begin one naturally or by chance. After the possessive 'Mrs. Pocket's' a gerund is needed, so 'falling into a discussion' fits (the line is from Dickens's Great Expectations); 'trapping', 'collapsing' and 'dropping' do not form this phrase.
+
+Q 72 | eng | Vocabulary
+Fill in the blank with the most appropriate option.
+To this effect the sergeant and the nearest men were ______ under their breath, when Joe and I came up.
+(1) conveying
+(2) transmitting
+(3) speaking
+(4) pipping
+= 3
+~ 'Speak under one's breath' means to speak in a whisper or very quietly. 'Conveying' and 'transmitting' need an object, and 'pipping' makes no sense here (the sentence is from Dickens's Great Expectations).
+
+Q 73 | eng | Grammar
+Fill in the blank with the most appropriate option.
+Some half an hour, since I had put my new suit on, I had gone ______ an immensity of posturing with Mr. Pumblechook's very limited dressing-glass, in the futile endeavour to see my legs.
+(1) toward
+(2) beneath
+(3) until
+(4) through
+= 4
+~ 'Go through' means to perform or undergo a series of actions, so 'I had gone through an immensity of posturing' (a great deal of posing before the mirror) is correct. 'Toward', 'beneath' and 'until' do not combine with 'gone' to give this sense.
+
+Q 74 | eng | Grammar
+Fill in the blank with the most appropriate option.
+Romel ______ to his feet.
+(1) spring
+(2) springing
+(3) have sprung
+(4) sprang
+= 4
+~ 'Spring to one's feet' means to stand up suddenly. A single completed past action needs the simple past 'sprang' (spring – sprang – sprung). 'Spring' would need -s with a singular subject, 'springing' needs a helping verb, and 'have sprung' does not agree with 'Romel'.
+
+Q 75 | eng | Usage & Sentence Correction
+The sentence given below is divided and jumbled into four parts. Choose the option that arranges these parts to form a meaningful sentence.
+A. of the pronoun "you" for use only in addressing the emperor
+B. ground clear; and the Japanese language includes special forms
+C. servants went ahead of the Inca emperor's litter and swept the
+D. the Aztec and Inca emperors were both carried about in litters;
+(1) DCBA
+(2) CBAD
+(3) BADC
+(4) ADCB
+= 1
+~ D opens with the subject and verb ('the Aztec and Inca emperors were both carried about in litters;'). C continues about the Inca litter and ends with 'swept the', which B completes ('ground clear; and the Japanese language includes special forms'), and A ends the sentence ('of the pronoun "you"...'). Order: DCBA.
+
+Q 76 | eng | Usage & Sentence Correction
+The sentence given below is divided and jumbled into four parts. Choose the option that arranges these parts to form a meaningful sentence.
+A. he was taken with a violent fit of trembling
+B. any means prepared for nothing; and, consequently, when
+C. now, being prepared for almost anything, he was not by
+D. the Bell struck One, and no shape appeared,
+(1) CBDA
+(2) BADC
+(3) DBAC
+(4) ADCB
+= 1
+~ C ends with 'not by', which B completes ('any means prepared for nothing; and, consequently, when'). 'When' introduces D ('the Bell struck One, and no shape appeared,') and the main clause A ends the sentence: '...when the Bell struck One, and no shape appeared, he was taken with a violent fit of trembling.' Order: CBDA.
+
+Q 77 | eng | Vocabulary
+Select the most appropriate word for the given phrase.
+Collective noun for ships.
+(1) Jetty
+(2) Fleet
+(3) Harbour
+(4) Armada
+= 2
+~ A group of ships is a 'fleet'. 'Armada' is specifically a fleet of warships (such as the Spanish Armada), while a 'jetty' and a 'harbour' are places where ships berth, not groups of ships.
+
+Q 78 | eng | Vocabulary
+Select the most appropriate word for the given phrase.
+A herd or flock of animals being driven in a body.
+(1) Drove
+(2) Horde
+(3) Posse
+(4) Torrent
+= 1
+~ A 'drove' is a herd or flock of animals being driven together. A 'horde' is a large unruly crowd, a 'posse' is a group of people summoned to help enforce the law, and a 'torrent' is a violent rush of water.
+
+Q 79 | eng | Comprehension
+Translate the following question:
+What is negative effect on our sense of smell?
+(1) આપણી ઘ્રાણેન્દ્રિય પર નકારાત્મક અસર શું હોય છે?
+(2) આપણી ઘ્રાણેન્દ્રિય પર શી અસર છે?
+(3) આપણી ઘ્રાણેન્દ્રિયની અસર શેની પર હોય છે?
+(4) આપણી ઘ્રાણેન્દ્રિયની નકારાત્મક અસર શેની પર હોય છે?
+= 1
+~ 'Sense of smell' = ઘ્રાણેન્દ્રિય, 'negative effect' = નકારાત્મક અસર and 'on our sense of smell' = આપણી ઘ્રાણેન્દ્રિય પર. Option 1 keeps all of these. Option 2 drops 'negative', and options 3 and 4 reverse the meaning (the effect of our sense of smell on something).
+
+Q 80 | eng | Vocabulary
+Select the most appropriate antonym of the given word.
+Tender
+(1) Unbreakable
+(2) Callous
+(3) Saintly
+(4) Supple
+= 1,2
+~ GSSSB accepted either option 1 or 2 because 'tender' has two senses: 'delicate, easily damaged' (opposite: unbreakable) and 'gentle, kind, sympathetic' (opposite: callous, i.e. unfeeling). 'Saintly' and 'supple' are not opposites of 'tender'.
+
+Q 81 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Expedite
+(1) Cease
+(2) Hinder
+(3) Hasten
+(4) Siege
+= 3
+~ 'Expedite' means to speed up or make something happen sooner, so its synonym is 'hasten'. 'Hinder' (obstruct) is nearly its opposite, 'cease' means stop, and 'siege' is a military blockade.
+
+Q 82 | eng | Comprehension
+Read the given passage carefully and select the most appropriate answer to the questions that follow.
+Historians have judged the Qing dynasty's vulnerability and weakness to foreign imperialism in the 19th century to be based mainly on its maritime naval weakness, but it achieved military success against Westerners on land. The historian Edward L. Dreyer stated, "China's nineteenth-century humiliations were strongly related to her weakness and failure at sea. At the start of the First Opium War, China had no unified navy and not a sense of how vulnerable she was to attack from the sea. British navy forces sailed and steamed wherever they wanted to go. In the Second Opium War (1856–60), the Chinese had no way to prevent the Anglo-French navy expedition of 1860 from sailing into the Gulf of Zhili and landing as near as possible to Beijing. Meanwhile, new but not exactly modern Chinese armies suppressed the mid-century rebellions, bluffed Russia into a peaceful settlement of disputed frontiers in Central Asia, and defeated the French forces on land in the Sino-French War (1884–85). But the defeat at sea, and the resulting threat to steamship traffic to Taiwan, forced China to conclude peace on unfavourable terms.
+From the given options, identify the suitable title for the passage.
+(1) China's Downfall
+(2) Edward L. Dreyer stated
+(3) Rise of the Qing Dynasty
+(4) Wars at Sea
+= 1
+~ The passage explains how China's weakness at sea led to its nineteenth-century humiliations and forced it to accept peace on unfavourable terms, i.e. its decline, so 'China's Downfall' fits. 'Rise of the Qing Dynasty' is the opposite, 'Wars at Sea' ignores the land campaigns, and 'Edward L. Dreyer stated' is not a title.
+
+Q 83 | eng | Comprehension
+Read the given passage carefully and select the most appropriate answer to the questions that follow.
+Historians have judged the Qing dynasty's vulnerability and weakness to foreign imperialism in the 19th century to be based mainly on its maritime naval weakness, but it achieved military success against Westerners on land. The historian Edward L. Dreyer stated, "China's nineteenth-century humiliations were strongly related to her weakness and failure at sea. At the start of the First Opium War, China had no unified navy and not a sense of how vulnerable she was to attack from the sea. British navy forces sailed and steamed wherever they wanted to go. In the Second Opium War (1856–60), the Chinese had no way to prevent the Anglo-French navy expedition of 1860 from sailing into the Gulf of Zhili and landing as near as possible to Beijing. Meanwhile, new but not exactly modern Chinese armies suppressed the mid-century rebellions, bluffed Russia into a peaceful settlement of disputed frontiers in Central Asia, and defeated the French forces on land in the Sino-French War (1884–85). But the defeat at sea, and the resulting threat to steamship traffic to Taiwan, forced China to conclude peace on unfavourable terms.
+Which of the following statements is not true with respect to the passage.
+(1) China was not aware of how vulnerable she was to attack from the sea.
+(2) In the Second Opium War, the Chinese had no way to prevent the Anglo-French naval expedition from sailing into the Gulf of Zhili.
+(3) China had a powerful army.
+(4) China lost battle with Russia and France.
+= 4
+~ The passage says China's armies bluffed Russia into a peaceful settlement and defeated the French on land, so 'China lost battle with Russia and France' is not true. The other three statements agree with the passage.
+
+Q 84 | eng | Comprehension
+Read the given passage carefully and select the most appropriate answer to the questions that follow.
+Historians have judged the Qing dynasty's vulnerability and weakness to foreign imperialism in the 19th century to be based mainly on its maritime naval weakness, but it achieved military success against Westerners on land. The historian Edward L. Dreyer stated, "China's nineteenth-century humiliations were strongly related to her weakness and failure at sea. At the start of the First Opium War, China had no unified navy and not a sense of how vulnerable she was to attack from the sea. British navy forces sailed and steamed wherever they wanted to go. In the Second Opium War (1856–60), the Chinese had no way to prevent the Anglo-French navy expedition of 1860 from sailing into the Gulf of Zhili and landing as near as possible to Beijing. Meanwhile, new but not exactly modern Chinese armies suppressed the mid-century rebellions, bluffed Russia into a peaceful settlement of disputed frontiers in Central Asia, and defeated the French forces on land in the Sino-French War (1884–85). But the defeat at sea, and the resulting threat to steamship traffic to Taiwan, forced China to conclude peace on unfavourable terms.
+Identify the correct inference that can be drawn from the passage.
+(1) The Qing dynasty ruled a major part of Asia.
+(2) The French had stronger Army than China.
+(3) China faced this humiliation because despite being strong at land, it wasn't strong at sea.
+(4) The Second Opium War China won again the Anglo- French Navy.
+= 3
+~ The passage contrasts the Qing's military success on land with its weakness and failure at sea, which caused its humiliations, so option 3 follows. Option 1 is not discussed, and options 2 and 4 contradict the passage (China beat the French on land and could not stop the Anglo-French fleet).
+
+Q 85 | eng | Comprehension
+Read the given passage carefully and select the most appropriate answer to the questions that follow.
+Historians have judged the Qing dynasty's vulnerability and weakness to foreign imperialism in the 19th century to be based mainly on its maritime naval weakness, but it achieved military success against Westerners on land. The historian Edward L. Dreyer stated, "China's nineteenth-century humiliations were strongly related to her weakness and failure at sea. At the start of the First Opium War, China had no unified navy and not a sense of how vulnerable she was to attack from the sea. British navy forces sailed and steamed wherever they wanted to go. In the Second Opium War (1856–60), the Chinese had no way to prevent the Anglo-French navy expedition of 1860 from sailing into the Gulf of Zhili and landing as near as possible to Beijing. Meanwhile, new but not exactly modern Chinese armies suppressed the mid-century rebellions, bluffed Russia into a peaceful settlement of disputed frontiers in Central Asia, and defeated the French forces on land in the Sino-French War (1884–85). But the defeat at sea, and the resulting threat to steamship traffic to Taiwan, forced China to conclude peace on unfavourable terms.
+What is the tone of the passage?
+(1) Ambivalent
+(2) Narrative
+(3) Distressed
+(4) Remorseful
+= 2
+~ The passage recounts historical events in order and reports a historian's view without showing personal emotion, so its tone is narrative. It shows no mixed feelings (ambivalent), anxiety (distressed) or regret (remorseful).
+
+Q 86 | guj | Grammar
+‘પવનચક્કી’ સમાસનો સાચો વિગ્રહ શોધો
+(1) પવનની ચક્કી
+(2) પવનથી ચક્કી
+(3) પવન અને ચક્કી
+(4) પવનથી ચાલતી ચક્કી
+= 4
+~ 'Pavanchakki' (windmill) = 'pavanthi chalti chakki' (a mill run by the wind). The middle word 'chalti' (running) is dropped in the compound, so it is a madhyampadlopi samas.
+
+Q 87 | guj | Grammar
+નીચેના શબ્દનો સમાસ ઓળખાવો- નવરાત્રિ
+(1) મધ્યમપદલોપી સમાસ
+(2) દ્વંદ્વ સમાસ
+(3) દ્વિગુ સમાસ
+(4) કર્મધારય સમાસ
+= 3
+~ 'Navratri' = 'nav ratrio no samuh' (a group of nine nights). A compound whose first member is a number and which denotes a group is a dvigu samas.
+
+Q 88 | guj | Grammar
+નીચેના વિકલ્પોમાંથી 'પ્રતિષ્ઠા' નો સાચો સંધિવિગ્રહ શોધો.
+(1) પ્રતિ + ષ્ઠા
+(2) પ્રતી + સ્થા
+(3) પ્રતિ + સ્થા
+(4) પ્રતી + ષ્ઠા
+= 3
+~ 'prati + sthā' = 'pratiṣṭhā' (prestige): after the vowel 'i', 's' becomes 'ṣ' and 'th' becomes 'ṭh' (consonant sandhi). The prefix is 'prati' with a short i.
+
+Q 89 | guj | Vocabulary & Usage
+'શેષનાગ' સમાનાર્થી શબ્દ શોધો
+(1) વેશનાગ
+(2) કાળીનાગ
+(3) કેશનાગ
+(4) નાગેશ
+= 4
+~ 'Sheshnag' (king of serpents, on whom Vishnu rests) = 'Nagesh' (naag + eesh, lord of serpents). 'Kalinag' (Kaliya) is a different serpent, and 'veshnag' and 'keshnag' are not its names.
+
+Q 90 | guj | Grammar
+સંધિ છોડો= સમાચાર
+(1) સમા+ચાર
+(2) ચાર+સમ
+(3) સમ્ + આચાર
+(4) સમા+અચાર
+= 3
+~ 'sam + āchār' = 'samāchār' (news): the final 'm' of the prefix 'sam' joins the vowel 'ā' of 'āchār' to give 'mā'.
+
+Q 91 | guj | Vocabulary & Usage
+‘વક્તા’ શબ્દનો વિરુદ્ધાર્થી શબ્દ શોધો
+(1) ત્યકતા
+(2) શ્રોતા
+(3) ભોક્તા
+(4) ભાષક
+= 2
+~ 'Vakta' (speaker) is the opposite of 'shrota' (listener). 'Tyakta' (printed ત્યકતા, for ત્યક્તા: one who gives up / an abandoned woman) is unrelated, 'bhokta' means one who enjoys or consumes, and 'bhashak' means one who speaks, so none of them is an antonym.
+
+Q 92 | guj | Vocabulary & Usage
+‘ટીપે ટીપે સરોવર ભરાય’ કહેવતનો અર્થ શોધો
+(1) થોડે થોડે મોટું કામ થાય
+(2) એક ટીપાનું મૂલ્ય સમજવું
+(3) સરોવર પાસે ટીપાનું કોઈ મૂલ્ય નથી
+(4) દુકાળ પડવો
+= 1
+~ 'Tipe tipe sarovar bharay' (drop by drop the lake fills) means that small efforts or savings, added up, accomplish a big task.
+
+Q 93 | guj | Vocabulary & Usage
+‘મલિન’ શબ્દનો વિરુદ્ધાર્થી શબ્દ શોધો
+(1) મધુર
+(2) નિર્મળ
+(3) મેલું
+(4) ગંદુ
+= 2
+~ 'Malin' (dirty, impure) is the opposite of 'nirmal' (clean, pure). 'Melu' and 'gandu' are synonyms of malin, and 'madhur' means sweet.
+
+Q 94 | guj | Grammar
+‘રૂપ + અંતર’ નું સાચું સંધિ જોડાણ શોધો
+(1) રૂપઅંતર
+(2) રૂપઅત્તર
+(3) રૂપાંતર
+(4) રૂપઉત્તર
+= 3
+~ 'roop + antar' = 'roopantar' (transformation): a + a = ā (dirgha svar sandhi).
+
+Q 95 | guj | Vocabulary & Usage
+આપેલ વિકલ્પોમાંથી ખોટી જોડણીવાળો શબ્દ શોધો.
+(1) કીમિયાગર
+(2) કિકિયારી
+(3) કામિની
+(4) કૂળવધુ
+= 4
+~ The correct spelling is 'કુળવધૂ' (kuḷvadhū, daughter-in-law of the family): short u in 'કુ' and long ū in the tatsam 'વધૂ'. The other three words are correctly spelt.
+
+Q 96 | guj | Grammar
+નીચેનાંમાંથી શુદ્ધ વિધાન શોધો
+(1) વિદ્યાએ મંદિર ફરતે પ્રદક્ષિણા ફરી.
+(2) મા – બાપુજી અને બહેન ગયા.
+(3) ત્યાં વંડીની દીવાલ પડી ગઈ છે.
+(4) પ્રત્યેક વિદ્યાર્થીને ઇનામ મળ્યું.
+= 4
+~ 'Pratyek vidyarthine inam malyu' (every student got a prize) is correct. Option 1 is redundant ('pradakshina' itself means going round), option 2 needs the neuter plural 'gayan' for subjects of mixed gender, and option 3 is redundant ('vandi' itself means a wall).
+
+Q 97 | guj | Grammar
+આપેલ સમાસનો સાચો વિગ્રહ શોધો - કલ્પવૃક્ષ
+(1) જેની કલ્પના છે વૃક્ષની તે
+(2) કામદેવનું વૃક્ષ
+(3) કામધેનુ વૃક્ષ
+(4) કલ્પેલું આપનાર વૃક્ષ
+= 4
+~ 'Kalpavruksh' = 'kalpelu apnar vruksh' (the tree that grants whatever is wished for). The middle word 'apnar' (giver) is dropped, so it is a madhyampadlopi samas.
+
+Q 98 | guj | Vocabulary & Usage
+કાવ્યપંક્તિનું વાચન કરીને આપેલ પ્રશ્નના સાચા જવાબ શોધો.
+'હણો ના પાપીને દ્વિગુણ બનશે પાપ જગનાં,
+લડો પાપો સામે વિમલ દિલના ગુપ્ત બળથી !' પંક્તિમાં ‘વિમલ’ શબ્દનો અર્થ શું થાય?
+(1) ગંદા
+(2) સ્વચ્છ
+(3) મલીન
+(4) ઉદાર
+= 2
+~ 'Vimal' = vi (without) + mal (dirt), i.e. spotless, pure, clean ('svachchh'). 'Vimal dil' in the line means a pure heart; 'ganda' and 'malin' are its opposites.
+
+Q 99 | guj | Translation & Comprehension
+વાક્યોનું વાચન કરીને આપેલ પ્રશ્નના સાચા જવાબ શોધો.
+માતા સાધ્વી સ્ત્રી હતી એવી મારા ઉપર છાપ રહેલી છે. હું સમજણો થયો ત્યારથી તેણે કદી ચાતુર્માસ છોડયા હોય એવું મને સ્મરણ નથી. કઠણમાં કઠણ વ્રતો તે આદરતી અને નિર્વિઘ્ને પૂરાં કરતી.
+પ્રશ્ન
+ગાંધીજીના માતાએ કઈ બાબત નિરંતર રાખેલી?
+(1) ચાર મહિનાના એકટાણા
+(2) પૂજા
+(3) હવેલીદર્શન
+(4) વ્રતકથા
+= 1
+~ The extract (from Gandhiji's autobiography) says his mother never once missed the 'chaturmas', the four-month monsoon vow; in the autobiography he adds that living on one meal a day ('ektana') during chaturmas was her habit. So what she kept up without fail was 'char mahina na ektana' (one meal a day for four months).
+
+Q 100 | guj | Translation & Comprehension
+વાક્યનું સાચું અગ્રેજી ભાષાંતર શોધો
+ગાંધી કુટુંબ પ્રથમ તો ગાંધિયાણાનો વેપાર કરનારું હોય એમ જણાય છે.
+(1) The Gandhi family frost of all shopkeepers
+(2) The Gandhis belong to the Bania caste and seem to have been originally grocers
+(3) Gandhis have been owners of the shops
+(4) All Gandhis are businessmen
+= 2
+~ 'Gandhiyanano vepar karnaru' = dealing in groceries (grocers) and 'hoy em janay chhe' = seem to have been. Option 2 is Mahadev Desai's English version of this opening line of Gandhiji's autobiography; the others change the meaning.

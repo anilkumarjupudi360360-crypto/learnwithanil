@@ -53,9 +53,14 @@
    "desc": "MPSC Rajyaseva and Combined Group B and C exams"
   },
   {
+   "id": "gj",
+   "name": "GSSSB, GPSC & Gujarat",
+   "desc": "GSSSB Class-III Combined Competitive Exam (CCE) and other Gujarat exams"
+  },
+  {
    "id": "up",
-   "name": "UPPSC & Uttar Pradesh",
-   "desc": "UPPSC PCS and RO/ARO exams"
+   "name": "UPPSC, UPSSSC & Uttar Pradesh",
+   "desc": "UPPSC PCS and RO/ARO, UPSSSC Inter level Mains and other UP exams"
   },
   {
    "id": "br",
@@ -864,6 +869,14 @@
    "live": "mpsc-group-c/"
   },
   {
+   "id": "gsssb-cce",
+   "cat": "gj",
+   "b": "GSSSB",
+   "t": "CCE",
+   "n": "Class-III Combined Competitive Exam (Group-A & B)",
+   "live": "gsssb-cce/"
+  },
+  {
    "id": "uppsc-pcs",
    "cat": "up",
    "b": "UPPSC",
@@ -876,6 +889,14 @@
    "b": "UPPSC",
    "t": "RO/ARO",
    "n": "Review Officer / Assistant Review Officer"
+  },
+  {
+   "id": "upsssc-inter-level",
+   "cat": "up",
+   "b": "UPSSSC",
+   "t": "Inter Level Mains",
+   "n": "Combined Lower Subordinate (Intermediate Level) Mains, PET-2025",
+   "live": "upsssc-inter-level/"
   },
   {
    "id": "bpsc-cce",

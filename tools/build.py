@@ -698,6 +698,131 @@ def FAQ_MGC(total, npapers):
     ]
 
 
+# ---------- GSSSB CCE (Gujarat Subordinate Services Class-III, Group-A & Group-B Combined Competitive Examination) ----------
+# Anil, 15 Nov 2026: "Gujarat: GSSSB CCE 2.0 (closes 30 Nov) ... add these exams pyqs also and other details also"; 16 Nov 2026: "do 3 exams at a time".
+# CCE 2.0 = Advt. No. 468/2026-27 of 3 Nov 2026 (1,237 posts: Group-A 243, Group-B 994 Junior Clerk; apply 5-30 Nov 2026, fee by 2 Dec). The previous
+# papers are GSSSB's own: for the CCE of Advt. 212/2023-24 GSSSB published all 71 computer-based Preliminary shift papers "with the final answers"
+# (TCS "Question Paper Preview" PDFs: each question in English and Gujarati, the official answer ticked; notice of 19 Aug 2026). Three are used here.
+# Questions GSSSB ignored for all candidates are left out; where GSSSB accepted either of two options, both are marked correct.
+# Work files (container): /home/claude/gj (SPEC.md, CHECK.md, tools/, work/keys.json, work/chk/*.jsonl, tools/merge.py).
+GCC_BLURB = ('Preliminary exam (computer-based): 100 questions, 100 marks, 60 minutes — Reasoning 40, Quantitative Aptitude 30, English 15, Gujarati 15 — '
+             'in English and Gujarati; a quarter mark is deducted for each wrong answer.')
+def _gcc(pid, no, file_):
+    return dict(id=pid, file=file_, year=2024, stage='Prelims', short=f'Prelims 2024 · Paper {no}',
+                title=f'GSSSB CCE Prelims 2024 (Advt. 212/2023-24): Question Paper {no}', notif=f'Advt. No. 212/2023-24 · GSSSB question paper No. {no} of 71',
+                held='April–May 2024', key="GSSSB's final answers (published with the paper)", fmt='mcq',
+                slug=f'gsssb-cce-prelims-2024-question-paper-{no}-with-answers', kwname=f'GSSSB CCE Prelims 2024 Paper {no}',
+                gu_paper=f'પ્રાથમિક પરીક્ષા પ્રશ્નપત્ર-{no}', blurb=GCC_BLURB, mins=60)
+GCC_PAPERS = [
+  _gcc('c01', 1, 'gsssb-cce-prelims-2024-paper-1.txt'),
+  _gcc('c02', 2, 'gsssb-cce-prelims-2024-paper-2.txt'),
+  _gcc('c71', 71, 'gsssb-cce-prelims-2024-paper-71.txt'),
+]
+GCC_SUBJECTS = [
+  ('rea', 'Reasoning', 'reasoning', ['Verbal Reasoning', 'Non-verbal Reasoning', 'Puzzles & Arrangements', 'Data Interpretation']),
+  ('qa', 'Quantitative Aptitude', 'quantitative-aptitude', ['Number System & Simplification', 'Arithmetic', 'Algebra, Geometry & Mensuration']),
+  ('eng', 'English', 'english', ['Grammar', 'Vocabulary', 'Usage & Sentence Correction', 'Comprehension']),
+  ('guj', 'Gujarati', 'gujarati', ['Grammar', 'Vocabulary & Usage', 'Literature & Writers', 'Translation & Comprehension']),
+]
+GCC_SUBJ_GU = {'rea': 'તાર્કિક કસોટી (રિઝનિંગ)', 'qa': 'ગાણિતિક ક્ષમતા', 'eng': 'અંગ્રેજી', 'guj': 'ગુજરાતી'}
+
+
+def FAQ_GCC(total, npapers):
+    return [
+      ('Where can I get GSSSB CCE previous year question papers with answers?',
+       f'This page has {total} questions from {npapers} of GSSSB\'s own CCE Preliminary papers of 2024 (Advt. No. 212/2023-24, Group-A and Group-B): '
+       'question papers No. 1, 2 and 71 of the 71 computer-based shifts, which GSSSB published with the final answers. Every question is in English and Gujarati '
+       '(English and Gujarati language questions as printed), with the official answer and an explanation in English and Gujarati.'),
+      ('Are the answers official?',
+       'Yes. The answer marked on each question is the final answer GSSSB published with its question papers. Questions GSSSB ignored for all candidates are left out; '
+       'where GSSSB accepted either of two options, both are marked correct. The explanations are written by Learn with Anil.'),
+      ('What is the GSSSB CCE 2.0 prelims exam pattern?',
+       'GSSSB\'s CCE 2.0 advertisement (No. 468/2026-27) sets the Preliminary exam at 150 questions for 150 marks in 120 minutes: Reasoning 60, Quantitative Aptitude 30, '
+       'General Awareness and Current Affairs 30, English 15 and Gujarati 15, with 0.25 mark cut for each wrong answer. The 2024 papers here had 100 questions '
+       '(Reasoning 40, Quantitative Aptitude 30, English 15, Gujarati 15) in 60 minutes. Group-A candidates then write a descriptive main exam (Gujarati, English, '
+       'General Studies: 350 marks) and Group-B candidates an objective main exam of 200 marks.'),
+      ('Is the GSSSB CCE question paper available in Gujarati?',
+       'Yes. Tap ગુજરાતી at the top of the page: the Reasoning and Quantitative Aptitude questions show in Gujarati as GSSSB printed them, the Gujarati section is in '
+       'Gujarati and the English section in English, and every explanation is in Gujarati and English.'),
+      ('Is there a GSSSB CCE mock test?',
+       'Yes. Every paper here can be taken as a full 100-question mock test with the real 60-minute limit and negative marking, and the sectional tests take all the '
+       'previous questions of one subject, such as Reasoning or Gujarati. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+      ('What is the last date to apply for GSSSB CCE 2.0?',
+       'Online applications on ojas.gujarat.gov.in are open from 5 November (2 pm) to 30 November 2026 (11.59 pm), and the fee must be paid by 2 December 2026. '
+       'The advertisement (No. 468/2026-27) has 1,237 posts: 243 Group-A posts (Senior Clerk, Head Clerk, Social Welfare Inspector, Sub Registrar and others) and '
+       '994 Junior Clerk posts in Group-B. GSSSB will announce the Preliminary exam date.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
+# ---------- UPSSSC Intermediate-level Mains (Combined Lower Subordinate Services, PET-2025 based) ----------
+# Anil, 15 Nov 2026: "UP: UPSSSC Inter level (1 Dec)"; 16 Nov 2026: "do 3 exams at a time". Advt. No. 26-Exam/2026 (published 16 Oct 2026; 1,784 posts;
+# apply 10 Nov - 1 Dec 2026) is the first combined Intermediate-level Mains. Its scheme (100 questions, 2 hours, 1/4 negative, five options) was used in
+# UPSSSC's Lekhpal Mains 2026 and the Graduate-level Mains 2026, and the Gram Panchayat Adhikari Mains 2025 had the same Computer and UP GK parts.
+# UPSSSC publishes only a master-set answer key (question + answer written out); the booklets (shuffled order, codes ZS7, GE2, BJ4) are candidates'
+# copies published by a coaching site, so the PDFs here are typeset (no clean original exists). Work files: /home/claude/up/sssc.
+USI_BLURB = ('Mains (written, objective): 100 questions, 100 marks, 2 hours, five options per question (E: "None of the above"), in Hindi and English; '
+             'a quarter mark is deducted for each wrong answer.')
+def _usi(pid, year, title, kw, hi_paper, advt, held, code, key, short):
+    return dict(id=pid, file=f'upsssc-{kw.lower().replace(" ", "-")}.txt', year=year, stage='Mains', short=short, title=title,
+                notif=f'Advt. No. {advt} · booklet {code}', held=held, key=key, fmt='mcq', nopts=5,
+                slug=f'upsssc-{kw.lower().replace(" ", "-")}-question-paper-with-answers', kwname=f'UPSSSC {kw}',
+                hi_paper=hi_paper, blurb=USI_BLURB, mins=120)
+USI_PAPERS = [
+  _usi('lek', 2026, 'UPSSSC Lekhpal Mains 2026 (Intermediate level): Question Paper', 'Lekhpal Mains 2026', 'लेखपाल मुख्य परीक्षा 2026',
+       '02-Exam/2025', '21 May 2026', 'ZS7', "UPSSSC's revised answer key (master set) of 1 July 2026", 'Lekhpal Mains 2026'),
+  _usi('lps', 2026, 'UPSSSC Combined Lower Subordinate Services (Graduate Level) Mains 2026: Question Paper', 'Lower Subordinate Mains 2026', 'अवर अधीनस्थ सेवा (स्नातक स्तरीय) मुख्य परीक्षा 2026',
+       '07-Exam/2026', '23 August 2026', 'GE2', "UPSSSC's revised answer key (master set) of 13 November 2026", 'Lower Subordinate Mains 2026'),
+  _usi('gpa', 2025, 'UPSSSC Gram Panchayat Adhikari Mains 2025: Question Paper', 'Gram Panchayat Adhikari Mains 2025', 'ग्राम पंचायत अधिकारी मुख्य परीक्षा 2025',
+       '01-Exam/2023', '27 April 2025', 'BJ4', "UPSSSC's revised answer key (master set) of July 2025", 'Gram Panchayat Adhikari Mains 2025'),
+]
+USI_SUBJECTS = [
+  ('his', 'History & National Movement', 'history', ['Ancient & Medieval India', 'Modern India & National Movement']),
+  ('pol', 'Polity & Constitution', 'polity', ['Constitution & Polity']),
+  ('geo', 'Geography', 'geography', ['Indian Geography', 'World Geography']),
+  ('eco', 'Economy & Social Development', 'economy', ['Indian Economy', 'Social Development & Schemes']),
+  ('rur', 'Rural Development & Panchayati Raj', 'rural-development', ['Rural Society', 'Rural Development & Schemes', 'Panchayati Raj', 'Agriculture & Allied']),
+  ('cur', 'Current Affairs', 'current-affairs', ['National', 'International', 'Sports, Awards & Misc.']),
+  ('sci', 'Science & Technology', 'science', ['Physics & Chemistry', 'Biology & Health', 'Technology & Space']),
+  ('env', 'Environment & Disaster Management', 'environment', ['Environment & Ecology', 'Disaster Management']),
+  ('di', 'Data Interpretation', 'data-interpretation', ['Data Interpretation']),
+  ('hin', 'General Hindi', 'general-hindi', ['Grammar', 'Vocabulary & Usage', 'Literature & Writers']),
+  ('comp', 'Computer & IT', 'computer', ['Computer Basics & Hardware', 'Software, MS Office & Internet', 'Networks & Cyber Security']),
+  ('upgk', 'Uttar Pradesh GK', 'up-gk', ['History & Culture of UP', 'Geography & Economy of UP', 'Polity, Schemes & Current Affairs of UP']),
+]
+USI_SUBJ_HI = {'his': 'इतिहास एवं राष्ट्रीय आंदोलन', 'pol': 'राजव्यवस्था एवं संविधान', 'geo': 'भूगोल', 'eco': 'अर्थव्यवस्था एवं सामाजिक विकास',
+               'rur': 'ग्रामीण विकास एवं पंचायती राज', 'cur': 'समसामयिकी', 'sci': 'विज्ञान एवं प्रौद्योगिकी', 'env': 'पर्यावरण एवं आपदा प्रबंधन',
+               'di': 'आँकड़ों का विश्लेषण', 'hin': 'सामान्य हिंदी', 'comp': 'कंप्यूटर एवं सूचना प्रौद्योगिकी', 'upgk': 'उत्तर प्रदेश सामान्य ज्ञान'}
+
+
+def FAQ_USI(total, npapers):
+    return [
+      ('Where can I get UPSSSC Intermediate level Mains previous year question papers with answers?',
+       f'This page has {total} questions from {npapers} UPSSSC Mains papers in the same pattern: the Lekhpal Mains 2026 (21 May 2026), the Combined Lower '
+       'Subordinate Services (Graduate Level) Mains 2026 (23 August 2026) and the Gram Panchayat Adhikari Mains 2025 (27 April 2025). Every question is in Hindi '
+       'and English, with the answer from UPSSSC\'s revised master-set answer key and an explanation in Hindi and English.'),
+      ('Are the answers official?',
+       'Yes. UPSSSC publishes a revised answer key (master set) after hearing objections; it gives each question with its correct answer written out. '
+       'The booklets shuffle the question order, so each question here was matched to its master-set entry. Questions for which UPSSSC gave full marks to everyone '
+       'are left out. The explanations are written by Learn with Anil.'),
+      ('What is the UPSSSC Intermediate level Mains exam pattern?',
+       'One objective paper of 100 questions (100 marks) in 2 hours, with five options and a quarter mark cut for each wrong answer: Part 1 general studies '
+       '(history 5, polity 5, geography 5, economy 5, rural society 5, current affairs 5, science 5, environment 10, data interpretation 10, General Hindi 10), '
+       'Part 2 Computer and IT 15, and Part 3 Uttar Pradesh GK 20. UPSSSC used the same pattern in the Lekhpal and Graduate-level Mains of 2026.'),
+      ('Who can apply for UPSSSC Advt. 26-Exam/2026?',
+       'Only candidates who took UPSSSC\'s Preliminary Eligibility Test 2025 (PET-2025) and hold its score card, and who have the qualification of the post. '
+       'Candidates are shortlisted for the Mains on their PET-2025 normalised score. Applications are open on upsssc.gov.in from 10 November to 1 December 2026.'),
+      ('Is the UPSSSC question paper in Hindi?',
+       'Yes. UPSSSC prints every question in Hindi and English. Tap हिन्दी at the top of the page to read the questions and explanations in Hindi.'),
+      ('Is there a UPSSSC Mains mock test?',
+       'Yes. Every paper here can be taken as a full 100-question mock test with the real 2-hour limit and negative marking, and the sectional tests take all the '
+       'previous questions of one subject, such as UP GK or Computer. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
 # ---------- RRB Group D (Level-1 posts, CEN 08/2024): RRB's own question papers with the answer key (Anil, 15 Nov 2026: "RRB Group D...add pyqs and other
 # details like other exams"). Source: RRB's "question paper with answer key" for each shift (options in green with a tick = RRB's answer), in English and
 # Hindi, as hosted by AglaSem; the Hindi sheets are another candidate's copy, so the Hindi was matched question by question and put in English option order.
@@ -1107,6 +1232,8 @@ L2_KN = dict(code='kn', dir='kn', label='ಕನ್ನಡ', name='Kannada', font=
              gf='&family=Noto+Sans+Kannada:wght@400;500;600;700')   # KEA FDA/SDA (Anil, 15 Nov 2026: Karnataka exams)
 L2_MR = dict(code='mr', dir='mr', label='मराठी', name='Marathi', font='Noto Sans Devanagari', ans='उत्तर',
              gf='&family=Noto+Sans+Devanagari:wght@400;500;600;700')   # MPSC Group-C (Anil, 15 Nov 2026: Maharashtra exams)
+L2_GU = dict(code='gu', dir='gu', label='ગુજરાતી', name='Gujarati', font='Noto Sans Gujarati', ans='જવાબ',
+             gf='&family=Noto+Sans+Gujarati:wght@400;500;600;700')   # GSSSB CCE (Anil, 15 Nov 2026: Gujarat exams)
 
 
 def parse(paper, srcdir='', subj=SUBJ):
@@ -1129,7 +1256,7 @@ def parse(paper, srcdir='', subj=SUBJ):
         elif t not in subj[s][3]: errs.append(f'{paper["id"]} Q{n}: unknown topic {s}/{t}')
         qlines, opts, ans, why, img = [], [], None, None, None
         for ln in lines[1:]:
-            if re.match(r'^\(([1-4])\) ', ln):
+            if re.match(r'^\(([1-5])\) ', ln):   # (5): UPSSSC prints a fifth option, "None of the above" (16 Nov 2026)
                 opts.append(ln[4:].strip())
             elif ln.startswith('= '):
                 ans = ln[2:].strip()
@@ -1145,7 +1272,7 @@ def parse(paper, srcdir='', subj=SUBJ):
         if not why: errs.append(f'{paper["id"]} Q{n}: no explanation')
         if ans is None: errs.append(f'{paper["id"]} Q{n}: no answer'); continue
         if opts:
-            if len(opts) != 4: errs.append(f'{paper["id"]} Q{n}: {len(opts)} options')
+            if len(opts) != paper.get('nopts', 4): errs.append(f'{paper["id"]} Q{n}: {len(opts)} options')
             try:
                 a = [int(x) - 1 for x in ans.split(',')]
                 assert all(0 <= x < len(opts) for x in a)
@@ -1182,7 +1309,7 @@ def parse_te(paper, qs, srcdir='', l2dir='te'):
             errs.append(f'{paper["id"]} te Q{n}: no such English question'); continue
         qlines, opts, ans = [], [], None
         for ln in b.split('\n')[1:]:
-            if re.match(r'^\(([1-4])\) ', ln): opts.append(ln[4:].strip())
+            if re.match(r'^\(([1-5])\) ', ln): opts.append(ln[4:].strip())
             elif ln.startswith('= '): ans = ln[2:].strip()
             elif ln.strip():
                 if opts: errs.append(f'{paper["id"]} te Q{n}: text after options')
@@ -1259,7 +1386,7 @@ def load_exam(conf):
         if nown:
             if nown == len(qs): pp['fmt'], pp['own'] = 'mcq', 1   # four options now (ours + APPSC's answer); still All-in-One Pass only
             else: print(f'  ! {conf["short"]} {p["id"]}: options for {nown} of {len(qs)} questions only; paper stays quick-recall')
-        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'kn_paper', 'mr_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel'):
+        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'kn_paper', 'mr_paper', 'gu_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel'):
             if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p) if PUBLIC_PDFS else ''
         alt = paper_alt(conf, p)
@@ -2286,6 +2413,41 @@ def exam_confs():
            eyebrow='MPSC · Maharashtra Group-C Combined Prelims',
            papers_note=("Every paper is MPSC's own question booklet (set A), with the answer from MPSC's final answer key. Every question is printed in Marathi and English, "
                         "and both are shown here. Questions MPSC cancelled in its final key are left out.")),
+      dict(id='gsssb-cce', dir='gsssb-cce', src='gsssb-cce', key='gj-cce', name='GSSSB CCE', short='GSSSB CCE', seo='GSSSB CCE',
+           slugp='gsssb-cce', papers=GCC_PAPERS, subjects=GCC_SUBJECTS, faq=FAQ_GCC, board='GSSSB', l2=L2_GU, pb='/gsssb-cce/',
+           keyname="GSSSB's final answers", keyshort="GSSSB's final answers",
+           gu_name='જીએસએસએસબી સીસીઈ', subj_te=GCC_SUBJ_GU,
+           title="GSSSB CCE Previous Year Question Papers with Answers – Prelims 2024, Gujarati & English | Learn with Anil",
+           h1='GSSSB CCE previous year question papers <em>with answers.</em>',
+           aka=('Gujarat Subordinate Service Selection Board (GSSSB) Class-III Combined Competitive Examination (CCE), Group-A and Group-B: Junior Clerk, Senior Clerk, '
+                'Head Clerk, Social Welfare Inspector, Sub Registrar and other posts. GSSSB\'s own Preliminary papers with its final answers.'),
+           aka_short='GSSSB Class-III CCE (Group-A & B): Junior Clerk, Senior Clerk and other posts',
+           l2line='જીએસએસએસબી સીસીઈ (ગ્રુપ-A અને ગ્રુપ-B) પ્રાથમિક પરીક્ષાના અગાઉના પ્રશ્નપત્રો આખરી જવાબો સાથે — રિઝનિંગ, ગણિત, અંગ્રેજી, ગુજરાતી; ગુજરાતી અને અંગ્રેજીમાં સમજૂતી; તમામ પરીક્ષાઓ માટે એક જ ₹45 ઓલ-ઇન-વન પાસ.',
+           desc=lambda t: (f"GSSSB CCE previous year question papers with answers: GSSSB's own Preliminary papers of 2024 (Advt. 212/2023-24, Group-A & B) with its final "
+                           f"answers. {t:,} questions in Gujarati and English with explanations; Reasoning, Quantitative Aptitude, English and Gujarati practice and "
+                           f"timed mock tests for GSSSB CCE 2.0 (Junior Clerk, Senior Clerk) aspirants."),
+           eyebrow='GSSSB · Gujarat Class-III CCE (Group-A & B)',
+           papers_note=("Every paper is GSSSB's own computer-based Preliminary question paper, which GSSSB published with the final answers. Reasoning and Quantitative "
+                        "Aptitude are in English and Gujarati, and both are shown here; the English section is in English only and the Gujarati section in Gujarati only. "
+                        "Questions GSSSB ignored are left out; where GSSSB accepted either of two options, both are marked correct.")),
+      dict(id='upsssc-inter-level', dir='upsssc-inter-level', src='upsssc-inter-level', key='up-inter', name='UPSSSC Inter Level Mains', short='UPSSSC Inter Mains',
+           seo='UPSSSC Inter Level Mains', slugp='upsssc-inter-level', papers=USI_PAPERS, subjects=USI_SUBJECTS, faq=FAQ_USI, board='UPSSSC', l2=L2_HI,
+           pb='/upsssc-inter-level/', keyname="UPSSSC's revised answer key (master set)", keyshort="UPSSSC's revised answer key (master set)",
+           hi_name='यूपीएसएसएससी इंटर स्तरीय मुख्य परीक्षा', hi_paper='प्रश्न पत्र', subj_te=USI_SUBJ_HI,
+           title="UPSSSC Inter Level Mains Previous Year Question Papers with Answers – Lekhpal, Lower Subordinate & GPA Mains, Hindi & English | Learn with Anil",
+           h1='UPSSSC Inter level Mains previous year papers <em>with answers.</em>',
+           aka=('Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) Combined Lower Subordinate Services (Intermediate Level) Mains for PET-2025 '
+                'candidates (Advt. 26-Exam/2026): Gram Vikas Adhikari, Gram Panchayat Adhikari, Vanijya Kar Sangrah Amin, Bhumi Arjan Amin and other posts. '
+                'UPSSSC Mains papers in the same pattern with UPSSSC\'s revised answer key.'),
+           aka_short='UPSSSC Combined Lower Subordinate (Intermediate Level) Mains, PET-2025',
+           l2line='यूपीएसएसएससी इंटर स्तरीय मुख्य परीक्षा के लिए उसी पैटर्न के पिछले प्रश्न पत्र (लेखपाल 2026, स्नातक स्तरीय 2026, ग्राम पंचायत अधिकारी 2025) — आयोग की संशोधित उत्तर कुंजी, हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           desc=lambda t: (f"UPSSSC Inter level Mains previous year question papers with answers: Lekhpal Mains 2026, Lower Subordinate (Graduate Level) Mains 2026 and "
+                           f"Gram Panchayat Adhikari Mains 2025, {t:,} questions in Hindi and English with UPSSSC's revised key and explanations; UP GK, Computer, "
+                           f"General Hindi and general studies practice and 2-hour mock tests for Advt. 26-Exam/2026."),
+           eyebrow='UPSSSC · Intermediate Level Mains (PET-2025)',
+           papers_note=("UPSSSC does not publish its question booklets; each paper here was typed from a candidate's copy of the booklet and every answer was matched to "
+                        "UPSSSC's revised answer key (master set), which gives each question with its answer. Every question is in Hindi and English, with five options "
+                        "as printed. Questions for which UPSSSC gave full marks to everyone are left out.")),
     ] + bank_confs()
 
 
@@ -2374,7 +2536,7 @@ def main():
         for q in questions:
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
         bks = booklets.get(conf['id'], {})
-        papers = [dict(p, bk=dict(key=bks[p['id']]['key'], name=bks[p['id']]['name'], pages=bks[p['id']]['pages'], **({'orig': 1} if bks[p['id']].get('orig') else {}))) if p['id'] in bks else p for p in papers]
+        papers = [dict(p, bk=dict(key=bks[p['id']]['key'], name=bks[p['id']]['name'], pages=bks[p['id']]['pages'], **({'orig': bks[p['id']]['orig']} if bks[p['id']].get('orig') else {}))) if p['id'] in bks else p for p in papers]
         exb = exsealed.get(conf['id'])
         pub_qs, stale = public_questions(questions, exb)
         if stale: print(f'  NOTE {conf["id"]}: {stale} paid explanations are not sealed yet and stay in the public app data; run tools/ex_seal.py {conf["id"]}')
@@ -2424,7 +2586,7 @@ def main():
         def fill(s, photo, title, seo, desc=''):
             return (s.replace('{{HERO_P}}', HERO_P).replace('{{FIG12}}', FIG12)   # (first: they contain other placeholders)
                      .replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title).replace('{{DESC}}', esc(desc))
-                     .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf']).replace('{{TA_HIDDEN}}', '' if l2['code'] == 'ta' else ' hidden').replace('{{KN_HIDDEN}}', '' if l2['code'] == 'kn' else ' hidden').replace('{{MR_HIDDEN}}', '' if l2['code'] == 'mr' else ' hidden')
+                     .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf']).replace('{{TA_HIDDEN}}', '' if l2['code'] == 'ta' else ' hidden').replace('{{KN_HIDDEN}}', '' if l2['code'] == 'kn' else ' hidden').replace('{{MR_HIDDEN}}', '' if l2['code'] == 'mr' else ' hidden').replace('{{GU_HIDDEN}}', '' if l2['code'] == 'gu' else ' hidden')
                      .replace('{{LANGS}}', 'English' if papers and all(p.get('en_only') for p in papers) else 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
                      .replace('{{BOARD}}', conf['board'])
                      .replace('{{FOOTSRC}}', f'Mock tests written by Learn with Anil ({conf["board"]} does not publish its question papers).' if conf.get('mockonly') else
@@ -2750,6 +2912,8 @@ def paper_kw_l2(conf, p):
         return f'{conf["kn_name"]} {p["year"]} {p.get("kn_paper", "")} ಪ್ರಶ್ನೆಪತ್ರಿಕೆ ಉತ್ತರಗಳೊಂದಿಗೆ'.replace('  ', ' ')
     if conf.get('mr_name'):
         return f'{conf["mr_name"]} {p.get("mr_paper", "")} {p["year"]} प्रश्नपत्रिका उत्तरांसह'.replace('  ', ' ')
+    if conf.get('gu_name'):
+        return f'{conf["gu_name"]} {p.get("gu_paper", "")} {p["year"]} પ્રશ્નપત્ર જવાબો સાથે'.replace('  ', ' ')
     if conf['l2']['code'] == 'te':
         g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
         stage = 'ప్రిలిమ్స్' if p['stage'].startswith(('Screening', 'Prelims')) else 'మెయిన్స్'
@@ -2786,6 +2950,8 @@ def subject_l2_line(conf, s):
         return f'{conf["kn_name"]} {name} — ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಗಳು, ಉತ್ತರಗಳು ಮತ್ತು ವಿವರಣೆಗಳೊಂದಿಗೆ.'
     if conf['l2']['code'] == 'mr' and conf.get('mr_name'):
         return f'{conf["mr_name"]} {name} — मागील वर्षांचे प्रश्न, उत्तरे व स्पष्टीकरणांसह.'
+    if conf['l2']['code'] == 'gu' and conf.get('gu_name'):
+        return f'{conf["gu_name"]} {name} — અગાઉના વર્ષોના પ્રશ્નો, જવાબો અને સમજૂતી સાથે.'
     if conf.get('te_name'):
         if s['id'] == 'soc': name = 'నైతిక విలువలు, జెండర్ సెన్సిటివిటీ'
         return f'{conf["te_name"]} {name} ప్రాక్టీస్ బిట్స్ — మునుపటి సంవత్సరం ప్రశ్నలు, సమాధానాలు, వివరణలతో.'
@@ -2810,6 +2976,8 @@ def exam_terms(e, cat):
     if e['id'] == 'sbi-po': words += ['sbi', 'state bank', 'state bank of india', 'po', 'probationary officer', 'bank po', 'banking', 'bank exam', 'sbi po mock test']
     if e['id'] == 'ibps-so': words += ['ibps', 'so', 'specialist officer', 'it officer', 'agriculture field officer', 'afo', 'hr officer', 'personnel officer', 'marketing officer', 'banking', 'bank exam', 'ibps so mock test']
     if e['id'] == 'karnataka-fda-sda': words += ['kea', 'karnataka examinations authority', 'kpsc', 'fda', 'sda', 'first division assistant', 'second division assistant', 'fda sda', 'karnataka fda', 'karnataka sda', 'group c', 'group-c', 'junior assistant', 'gp secretary', 'accounts assistant', 'warden', 'karnataka', 'kannada', 'general kannada', 'kalyana karnataka', 'hyderabad karnataka', 'ಎಫ್‌ಡಿಎ', 'ಎಸ್‌ಡಿಎ', 'ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ', 'ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ', 'ಸಾಮಾನ್ಯ ಕನ್ನಡ']
+    if e['id'] == 'upsssc-inter-level': words += ['upsssc', 'uttar pradesh subordinate services selection commission', 'up', 'uttar pradesh', 'inter level', 'intermediate level', 'inter level mains', 'mains', 'pet', 'pet 2025', 'lekhpal', 'gram vikas adhikari', 'vdo', 'gram panchayat adhikari', 'gpa', 'vpo', 'amin', 'vanijya kar sangrah amin', 'bhumi arjan amin', 'samaj kalyan paryavekshak', 'lower subordinate', 'lower pcs', 'up gk', 'hindi', 'upsssc mock test', 'यूपीएसएसएससी', 'लेखपाल', 'ग्राम विकास अधिकारी', 'ग्राम पंचायत अधिकारी', 'इंटर स्तरीय', 'मुख्य परीक्षा']
+    if e['id'] == 'gsssb-cce': words += ['gsssb', 'gujarat subordinate service selection board', 'gujarat gaun seva pasandgi mandal', 'cce', 'cce 2.0', 'combined competitive exam', 'class 3', 'class-3', 'class iii', 'group a', 'group b', 'gujarat', 'gujarati', 'junior clerk', 'senior clerk', 'head clerk', 'office assistant', 'social welfare inspector', 'sub registrar', 'gsssb clerk', 'ojas', 'gsssb mock test', 'જુનિયર ક્લાર્ક', 'સિનિયર ક્લાર્ક', 'ગૌણ સેવા', 'જીએસએસએસબી', 'સંયુક્ત સ્પર્ધાત્મક પરીક્ષા']
     if e['id'] == 'mpsc-group-c': words += ['mpsc', 'maharashtra public service commission', 'group c', 'group-c', 'gat c', 'gat-k', 'maharashtra', 'marathi', 'clerk typist', 'clerk-typist', 'tax assistant', 'talathi', 'gram mahsul adhikari', 'village revenue officer', 'amvi', 'assistant motor vehicle inspector', 'industry inspector', 'staff nurse', 'craft instructor', 'civil engineering assistant', 'assistant agriculture officer', 'supply inspector', 'livestock supervisor', 'combined prelims', 'samanya kshamata chachani', 'mpsc group c mock test', 'गट-क', 'गट क', 'एमपीएससी', 'लिपिक-टंकलेखक', 'कर सहायक', 'तलाठी', 'सामान्य क्षमता चाचणी']
     if e['id'] == 'tnpsc-group-4': words += ['tnpsc', 'group 4', 'group iv', 'group-4', 'tnpsc group 4', 'tn group 4', 'ccse 4', 'ccse-iv', 'vao', 'village administrative officer', 'junior assistant', 'typist', 'steno typist', 'bill collector', 'field surveyor', 'forest guard', 'forest watcher', 'tamil nadu', 'tamil', 'general tamil', 'pothu tamil', 'குரூப் 4', 'பொதுத் தமிழ்']
     if e['id'] == 'ssc-gd': words += ['ssc gd', 'gd constable', 'ssc constable', 'constable gd', 'general duty', 'capf constable', 'bsf', 'crpf', 'cisf', 'itbp', 'ssb', 'assam rifles', 'rifleman', 'ncb', 'sepoy', 'paramilitary', 'ssc gd mock test', 'jawan']
@@ -2903,6 +3071,7 @@ BOARD_PHOTO = {   # free-licence photos from Wikimedia Commons, cropped to 640x2
     'kl': ('Kerala backwaters', 'Vyacheslav Argenberg', 'CC BY 4.0', 'https://commons.wikimedia.org/wiki/File:Kerala_backwaters,_Houseboats,_India.jpg', 'https://creativecommons.org/licenses/by/4.0/'),
     'mh': ('Gateway of India, Mumbai', 'Joe Ravi', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Gateway_Of_India.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
     'up': ('Taj Mahal, Agra', 'Yann, edited by King of Hearts', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit2.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),
+    'gj': ('Rani ki Vav, Patan', 'Bernard Gagnon', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Rani_ki_vav_01.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),   # Gujarat (16 Nov 2026)
     'br': ('Bihar Legislature, Patna', 'Innocentbunny', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Bihar_Legislature_Building.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
 }
 
@@ -2922,6 +3091,7 @@ CCL = {'CC BY-SA 3.0': 'https://creativecommons.org/licenses/by-sa/3.0/', 'CC BY
        'GODL-India': 'https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf', 'FAL': 'https://artlibre.org/licence/lal/en/',
        'CC BY 2.0': 'https://creativecommons.org/licenses/by/2.0/'}
 _CW = 'https://commons.wikimedia.org/wiki/File:'
+GSSSB_PHOTO = ('Mahatma Mandir, Gandhinagar', '92saeedshaikh', 'CC BY-SA 4.0', _CW + 'Mahatma_Mandir-Gandhinagar.jpg')
 EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil approved, 2 Nov 2026): src/static/ex-<id>-t.webp (tile) and -h.webp (exam page banner)
     'upsc-cse': ('New Parliament building', 'Ministry of Parliamentary Affairs', 'GODL-India', _CW + 'Glimpses_of_the_new_Parliament_Building,_in_New_Delhi_(2).jpg'),
     'upsc-prelims': ('India Gate, New Delhi', 'Yann', 'CC BY-SA 3.0', _CW + 'India_Gate,_New_Delhi.jpg'),
@@ -2956,6 +3126,8 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'tnpsc-group-4': ('Fort St. George, Chennai', 'L.vivian.richard', 'public domain', _CW + 'Fort_St._George,_Chennai_2.jpg'),
     'karnataka-fda-sda': ('Vidhana Soudha, Bengaluru', 'Wilhelm Tell DCCXLVI', 'CC0', _CW + 'Vidhana_Soudha,_14_February_2022_-_cropped.jpg'),   # KEA FDA & SDA (16 Nov 2026)
     'mpsc-group-c': ('Mantralaya, Mumbai', 'Sanket Oswal', 'CC BY-SA 4.0', _CW + 'Office_of_Chief_Minister_of_Maharashtra.jpg'),   # MPSC Group C (16 Nov 2026)
+    'gsssb-cce': GSSSB_PHOTO,   # GSSSB CCE (16 Nov 2026)
+    'upsssc-inter-level': ('Rumi Darwaza, Lucknow', 'Rishabhgpt', 'CC BY-SA 4.0', _CW + 'Rumi_Darwaza_-_DSC2797-01.jpg'),   # UPSSSC Inter level (16 Nov 2026)
 }
 
 
@@ -2973,7 +3145,7 @@ def photo_credit(eid, prefix='Photo: '):
 # language switcher, the badge, the figures). A language goes live only when questions exist in it; the switcher then needs its own button.
 SITE_LANGS = [('en', 'English', 'अंग्रेज़ी', 'ఇంగ్లీష్', True), ('te', 'తెలుగు', 'तेलुगु', 'తెలుగు', True), ('hi', 'हिंदी', 'हिंदी', 'హిందీ', True),
               ('ta', 'தமிழ்', 'तमिल', 'తమిళం', True), ('kn', 'ಕನ್ನಡ', 'कन्नड़', 'కన్నడ', True), ('ml', 'മലയാളം', 'मलयालम', 'మలయాళం', False),
-              ('mr', 'मराठी', 'मराठी', 'మరాఠీ', True)]
+              ('mr', 'मराठी', 'मराठी', 'మరాఠీ', True), ('gu', 'ગુજરાતી', 'गुजराती', 'గుజరాతీ', True)]
 
 
 def lang_fills():
@@ -2989,7 +3161,7 @@ def lang_fills():
 NAV_FUND = ('      <a class="nav-fund" href="/funders.html" title="Fund this project" data-hubonly><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'
             '<path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 5 6.4 5c2 0 3.4 1.1 4.1 2.3h3C14.2 6.1 15.6 5 17.6 5 21 5 23.1 8.5 21.6 11.8 19.5 16.4 12 21 12 21Z"/></svg>'
             '<span>Fund<span class="nf-x"> this project</span></span></a>\n')   # Anil, 2 Nov 2026: "add fund the project...here" (start page top bar)
-BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'tn', 'ka', 'kl', 'mh', 'up', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
+BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'tn', 'ka', 'kl', 'mh', 'gj', 'up', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
 
 
 def hub_html(catalog, counts, grand):
@@ -3657,6 +3829,7 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
 [lang="ta"]{font-family:"Noto Sans Tamil",sans-serif;line-height:1.75}
 [lang="kn"]{font-family:"Noto Sans Kannada",sans-serif;line-height:1.8}
 [lang="mr"]{font-family:"Noto Sans Devanagari",sans-serif;line-height:1.75}
+[lang="gu"]{font-family:"Noto Sans Gujarati",sans-serif;line-height:1.75}
 .q .te{border-left:3px solid var(--line);padding-left:12px;margin:8px 0 4px}
 :root{--bg:#F3F6FB;--surface:#fff;--ink:#0D1830;--muted:#55627C;--line:#D6DFEC;--accent:#1846C7;--accent-soft:#E2EAFC;--accent-text:#1440B8;--band:#0C2266;--band-ink:#EEF3FF;--good:#12804A;--good-soft:#DDF3E7}
 @media (prefers-color-scheme:dark){:root{--bg:#0A1020;--surface:#111A2E;--ink:#E5ECF8;--muted:#9AA8C3;--line:#26334F;--accent:#6F95FF;--accent-soft:#1A2A52;--accent-text:#9DB7FF;--band:#0F1F4E;--band-ink:#EEF3FF;--good:#41C080;--good-soft:#123426;color-scheme:dark}}
@@ -3759,7 +3932,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -4683,6 +4856,37 @@ LANDINGS = {
             '<p class="note">MPSC Group C 2026: <a href="/mpsc-group-c-notification-2026.html">16,717 posts, apply by 27 November, prelims 24 January 2027</a>. '
             'Full papers with a 1-hour timer: <a href="/mpsc-group-c/mock-test.html">MPSC Group C mock test</a>.</p>',
       te={'MPSC Group C': 'एमपीएससी गट-क प्रश्नपत्रिका'},
+      order=lambda c: 0),  'gsssb-pyqs.html': dict(   # Anil, 15 Nov 2026: Gujarat exams, starting with GSSSB CCE
+      board='GSSSB', ename='GSSSB', crumb='GSSSB PYQs', lang='gu',
+      title='GSSSB Previous Year Question Papers with Answers – CCE Prelims 2024 PYQs, Gujarati & English | Learn with Anil',
+      desc='GSSSB (Gujarat Subordinate Service Selection Board) previous year question papers in one place: CCE Preliminary papers of 2024 (Advt. 212/2023-24, Group-A '
+           'and Group-B), {n} questions with GSSSB\'s final answers and explanations in Gujarati and English. Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='GSSSB previous question papers with answers',
+      lede="Every GSSSB question paper on Learn with Anil, {n} questions in all. Each is GSSSB's own computer-based question paper with the final answers GSSSB published, "
+           "and every question has a short explanation in Gujarati and English.",
+      intro='<p>Looking for the GSSSB CCE question paper with answers, Gujarati grammar (ગુજરાતી વ્યાકરણ) and reasoning previous questions, or a GSSSB Junior Clerk mock test in Gujarati? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="gu">જીએસએસએસબી સંયુક્ત સ્પર્ધાત્મક પરીક્ષા (ગ્રુપ-A અને ગ્રુપ-B) ના અગાઉના પ્રશ્નપત્રો (2024) આખરી જવાબો સાથે — રિઝનિંગ, ગણિત, અંગ્રેજી, ગુજરાતી; '
+            'ગુજરાતી અને અંગ્રેજીમાં સમજૂતી.</p>'
+            '<p class="note">GSSSB CCE 2.0: <a href="/gsssb-cce-notification-2026.html">1,237 posts (Advt. 468/2026-27), apply by 30 November 2026</a>. '
+            'Full papers with a 60-minute timer: <a href="/gsssb-cce/mock-test.html">GSSSB CCE mock test</a>.</p>',
+      te={'GSSSB CCE': 'જીએસએસએસબી સીસીઈ પ્રશ્નપત્રો'},
+      order=lambda c: 0),  'upsssc-pyqs.html': dict(   # Anil, 15 Nov 2026: UP exams, starting with the UPSSSC Inter level Mains
+      board='UPSSSC', ename='UPSSSC', crumb='UPSSSC PYQs', lang='hi',
+      title='UPSSSC Previous Year Question Papers with Answers – Lekhpal, Lower Subordinate & GPA Mains PYQs, Hindi & English | Learn with Anil',
+      desc='UPSSSC (Uttar Pradesh Subordinate Services Selection Commission) previous year question papers in one place: Lekhpal Mains 2026, Lower Subordinate '
+           '(Graduate Level) Mains 2026 and Gram Panchayat Adhikari Mains 2025, {n} questions with UPSSSC\'s revised answer key and explanations in Hindi and English. '
+           'Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='UPSSSC previous question papers with answers',
+      lede="Every UPSSSC question paper on Learn with Anil, {n} questions in all. Each answer is from UPSSSC's revised answer key (master set), "
+           "and every question has a short explanation in Hindi and English.",
+      intro='<p>Looking for the UPSSSC Lekhpal Mains question paper with answers, UP GK and computer previous questions, or a UPSSSC Mains mock test in Hindi? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="hi">यूपीएसएसएससी मुख्य परीक्षाओं के पिछले प्रश्न पत्र (लेखपाल 2026, अवर अधीनस्थ स्नातक स्तरीय 2026, ग्राम पंचायत अधिकारी 2025) आयोग की संशोधित उत्तर कुंजी के साथ — '
+            'उत्तर प्रदेश सामान्य ज्ञान, कंप्यूटर, सामान्य हिंदी, पर्यावरण, आँकड़ों का विश्लेषण; हिंदी और अंग्रेज़ी में व्याख्या।</p>'
+            '<p class="note">UPSSSC Inter Level Mains 2026: <a href="/upsssc-inter-level-notification-2026.html">1,784 posts (Advt. 26-Exam/2026), apply by 1 December 2026</a>. '
+            'Full papers with a 2-hour timer: <a href="/upsssc-inter-level/mock-test.html">UPSSSC Inter level Mains mock test</a>.</p>',
+      te={'UPSSSC Inter Mains': 'यूपीएसएसएससी इंटर स्तरीय मुख्य परीक्षा प्रश्न पत्र'},
       order=lambda c: 0),
 }
 
@@ -5766,6 +5970,7 @@ def notif_page(loaded, rel):
     elif N.get('ta'): body.append(f'<p lang="ta" style="margin:0 0 6px">{esc(N["ta"])}</p>')
     elif N.get('kn'): body.append(f'<p lang="kn" style="margin:0 0 6px">{esc(N["kn"])}</p>')
     elif N.get('mr'): body.append(f'<p lang="mr" style="margin:0 0 6px">{esc(N["mr"])}</p>')
+    elif N.get('gu'): body.append(f'<p lang="gu" style="margin:0 0 6px">{esc(N["gu"])}</p>')
     if conf: body.append(f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>')
     for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
@@ -5801,7 +6006,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways (RRB): NTPC, Group D'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains')]
 
 
 def news_hub_page(loaded, rels):
@@ -6102,6 +6307,8 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'upsc-prelims': ('UPSC Civil Services (Preliminary) Examination 2027', '2027-05-23', 'UPSC Calendar 2027.'),
   'tnpsc-group-4': ('TNPSC Group 4 (CCSE-IV) written exam', '2027-01-10', 'TNPSC Notification No. 11/2026 of 6 October 2026 (exam dashboard on tnpsc.gov.in).'),
   'karnataka-fda-sda': ('KEA FDA/SDA competitive exam (FDA-level papers, Kalyana Karnataka)', '2027-01-09', 'KEA notifications of 29 October 2026: Kannada language test 8 January; FDA-level papers 9 (KK) and 10 January (RPC); SDA-level papers 16 (KK) and 17 January 2027 (RPC).'),
+  'upsssc-inter-level': ('UPSSSC Intermediate Level Mains (Advt. 26-Exam/2026)', None, 'UPSSSC Advt. No. 26-Exam/2026: applications 10 November to 1 December 2026; UPSSSC has not announced the Mains date yet.'),
+  'gsssb-cce': ('GSSSB CCE 2.0 (Advt. 468/2026-27) Preliminary exam', None, 'GSSSB Advt. No. 468/2026-27: applications 5 to 30 November 2026; GSSSB has not announced the prelims date yet.'),
   'mpsc-group-c': ('MPSC Maharashtra Group-C Services Combined Preliminary Examination 2026', '2027-01-24', 'MPSC corrigendum of 6 November 2026 (Advt. No. 017/2026): prelims moved from 3 January to 24 January 2027; applications 13 to 27 November 2026.'),
   'ssc-gd': ('SSC GD Constable 2027 computer-based exam', None, "SSC's exam calendar puts the GD 2027 computer-based exam in January–March 2027; the notification, listed for 30 September 2026, was not out as of 15 November 2026."),
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
@@ -6459,7 +6666,8 @@ def pyq_page(conf, papers, questions):
               f'<div class="cbuy"><a class="cta" href="{pb}?buy=pyq">Get everything for ₹{PAY["pyq_price"]}</a>'
               + (f'<a class="try" href="#free-sample">Try {len(sample)} free questions first ↓</a>' if sample else '') + '</div></div>'
               + (f'<p style="margin:10px 0;padding:10px 12px;border-radius:10px;background:#E8F6EE;border:1px solid #9FD8B8"><b>📄 New: download every paper as a PDF</b> — '
-                 + (f'{esc(conf["board"])}\'s original question booklet, as printed, with {esc(conf["board"])}\'s final answer key at the end.' if all(v.get('orig') for v in BOOKLETS[conf['id']].values()) else
+                 + (f'{esc(conf["board"])}\'s original question paper, as printed, with {esc(conf["board"])}\'s final answers marked on it.' if all(v.get('orig') == 2 for v in BOOKLETS[conf['id']].values()) else
+                    f'{esc(conf["board"])}\'s original question booklet, as printed, with {esc(conf["board"])}\'s final answer key at the end.' if all(v.get('orig') for v in BOOKLETS[conf['id']].values()) else
                     f'exam-booklet style, English &amp; {esc(l2["name"])}, with the official answer key and explanations.')
                  + ' Tap <b>⬇ Download PDF</b> under any paper below (with the All-in-One Pass).</p>'
                  if BOOKLETS.get(conf['id']) else '') +
@@ -6892,7 +7100,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/mpsc-group-c/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -6909,7 +7117,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
-<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li></ul>
+<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li></ul>
 </main></body></html>
 """
 

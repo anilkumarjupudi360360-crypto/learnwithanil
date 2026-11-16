@@ -1008,6 +1008,132 @@ NEW['mpsc-group-c-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: MPSC G
     ])
 ASOF_PAGE['mpsc-group-c-notification-2026.html'] = '16 November 2026'
 
+NEW['gsssb-cce-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: Gujarat GSSSB CCE 2.0 (apply till 30 November); facts from GSSSB's own PDFs (in Gujarati), read on 16 Nov 2026
+    exam='gsssb-cce', board='GSSSB', site='gsssb.gujarat.gov.in', crumb='GSSSB CCE Notification 2026', faq_asof='16 November 2026',
+    title='GSSSB CCE 2.0 Notification 2026: 1,237 Posts, Apply by 30 November, Exam Pattern, Age, Fee & Previous Papers | Learn with Anil',
+    desc='GSSSB CCE 2.0 (Advt. No. 468/2026-27): 1,237 Class-III posts, 243 in Group-A (Senior Clerk, Head Clerk, Social Welfare Inspector, Sub Registrar and others) '
+         'and 994 Junior Clerk posts in Group-B. Apply on ojas.gujarat.gov.in from 5 to 30 November 2026, fee by 2 December. Age, fee, the 150-mark prelims pattern '
+         'and GSSSB CCE previous year papers with answers in Gujarati and English.',
+    h1='GSSSB CCE 2.0 notification 2026: 1,237 posts, apply by 30 November',
+    lede='The Gujarat Subordinate Service Selection Board (GSSSB) has advertised its second Combined Competitive Examination under the new rules, "CCE 2.0" '
+         '(Advt. No. 468/2026-27), for 1,237 Class-III posts: 243 Group-A posts in eight cadres and 994 Junior Clerk posts in Group-B. Online applications on '
+         'ojas.gujarat.gov.in are open from 5 November (2 pm) to 30 November 2026 (11.59 pm). Below: the key dates, the posts, who can apply, the exam pattern '
+         'and the GSSSB CCE previous papers to practise.',
+    gu='ગુજરાત ગૌણ સેવા પસંદગી મંડળ: ગુજરાત ગૌણ સેવા વર્ગ-૩ (ગ્રુપ-A તથા ગ્રુપ-B) સંયુક્ત સ્પર્ધાત્મક પરીક્ષા, જાહેરાત ક્રમાંક ૪૬૮/૨૦૨૬૨૭ — કુલ ૧,૨૩૭ જગ્યાઓ '
+       '(ગ્રુપ-A ૨૪૩, ગ્રુપ-B જુનિયર ક્લાર્ક ૯૯૪); ઓનલાઇન અરજી ૫ થી ૩૦ નવેમ્બર ૨૦૨૬, ફી ૨ ડિસેમ્બર ૨૦૨૬ સુધી; પ્રાથમિક પરીક્ષા ૧૫૦ ગુણ, ૧૨૦ મિનિટ.',
+    pdf='https://gsssb.gujarat.gov.in', pdfname='GSSSB Advt. No. 468/2026-27, gsssb.gujarat.gov.in > Advertisement',
+    more_src=[('https://ojas.gujarat.gov.in', 'OJAS, the Gujarat government online application site (ojas.gujarat.gov.in)')],
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement', 'Advt. No. 468/2026-27, Gujarat Subordinate Services Class-III (Group-A and Group-B) Combined Competitive Examination'),
+        ('Online applications', '5 November 2026, 2 pm to 30 November 2026, 11.59 pm on ojas.gujarat.gov.in'),
+        ('Last date for the fee', '2 December 2026, 11.59 pm (online only)'),
+        ('Preliminary exam', 'Computer-based (MCQ); GSSSB will announce the date'),
+        ('Main exam', 'After the prelims result: descriptive for Group-A, objective (MCQ) for Group-B')]),
+      ('Posts and vacancies (1,237)', 'table+', (['Post (Class-III)', 'Office', 'Posts'], [
+        ('Sub Registrar, Grade-1', 'Inspector General of Registration', '6'),
+        ('Sub Registrar, Grade-2', 'Inspector General of Registration', '15'),
+        ('Assistant Tribal Development Officer', 'Director, Tribal Development', '50'),
+        ('Social Welfare Inspector', 'Director, Developing Castes Welfare', '89'),
+        ('Office Superintendent', 'Director, Prohibition & Excise', '7'),
+        ('Office Assistant', 'Gujarat Public Service Commission', '15'),
+        ('Head Clerk', 'Various heads of department', '10'),
+        ('Senior Clerk', 'Various heads of department', '51'),
+        ('Total Group-A', '', '243'),
+        ('Junior Clerk (Group-B)', 'Various heads of department', '994'),
+        ('Total', '', '1,237')])),
+      ('', 'note', 'Fixed pay for the first five years: Rs. 49,600 a month for Sub Registrar Grade-1, Office Superintendent and Assistant Tribal Development Officer; '
+                   'Rs. 40,800 for Sub Registrar Grade-2, Social Welfare Inspector and Head Clerk; Rs. 26,000 for Senior Clerk, Office Assistant and Junior Clerk. '
+                   'The category-wise reservation of each post is in the advertisement.'),
+      ('Exam pattern', 'table+', (['Stage', 'Paper', 'Marks'], [
+        ('Preliminary (Group-A and Group-B together)', '150 objective questions in 120 minutes: Reasoning 60, Quantitative Aptitude 30, General Awareness and Current '
+                                                       'Affairs 30, English 15, Gujarati 15; 0.25 mark deducted for each wrong answer', '150'),
+        ('Main exam, Group-A (descriptive)', 'Paper I Gujarati Language Skill (100), Paper II English Language Skill (100), Paper III General Studies (150), 3 hours each', '350'),
+        ('Main exam, Group-B (objective)', '120 minutes: Constitution 20, Economy 20, Public Administration 20, Ethics 10, Government Schemes 30, Current Affairs 30, '
+                                           'History & Geography of Gujarat 20, Cultural Heritage of Gujarat 10, Gujarati & English 20, Science, Environment & IT 20', '200'),
+      ])),
+      ('', 'note', 'The prelims is only a screening test: its marks are not counted for the final list. Group-A and Group-B have separate lists, and about seven times the '
+                   'posts in each category are called to the main exam. The minimum qualifying mark is 40% in each stage. GSSSB\'s earlier CCE prelims (Advt. 212/2023-24, '
+                   'held in April–May 2024) had 100 questions in 60 minutes; the papers on this site are from that exam.'),
+      ('Who can apply', 'list', [
+        'Indian citizen with a graduate degree from a recognised university, a basic knowledge of computers as in the Gujarat Civil Services rules of 1967, and an '
+        'adequate knowledge of Gujarati or Hindi or both.',
+        'Age as on 30 November 2026: 20 to 35 years. Relaxation: 5 years for women of the general category and for men of the reserved categories, 10 years for women of '
+        'the reserved categories and for men with disabilities, up to an upper age of 45; ex-servicemen get their service period plus 3 years.',
+        'Prelims fee: Rs. 500 for the unreserved category; Rs. 400 for all women, SEBC, SC, ST, EWS, persons with disabilities and ex-servicemen. GSSSB refunds the fee '
+        'to candidates who appear in the exam.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for GSSSB CCE 2.0?', '30 November 2026 (11.59 pm) on ojas.gujarat.gov.in; the fee can be paid online till 2 December 2026.'),
+      ('How many posts are there in GSSSB CCE 2.0?', '1,237: 243 Group-A posts (Senior Clerk 51, Social Welfare Inspector 89, Assistant Tribal Development Officer 50 and others) and 994 Junior Clerk posts in Group-B.'),
+      ('What is the GSSSB CCE 2.0 prelims exam pattern?', '150 objective questions for 150 marks in 120 minutes: Reasoning 60, Quantitative Aptitude 30, General Awareness and Current Affairs 30, English 15 and Gujarati 15, with 0.25 mark cut for each wrong answer.'),
+      ('What is the age limit for GSSSB CCE 2.0?', '20 to 35 years as on 30 November 2026, with relaxations for women, reserved categories, persons with disabilities and ex-servicemen up to an upper age of 45.'),
+      ('What is the GSSSB CCE application fee?', 'Rs. 500 for the unreserved category and Rs. 400 for women, SEBC, SC, ST, EWS, persons with disabilities and ex-servicemen; it is refunded to those who appear in the exam.'),
+      ('When is the GSSSB CCE 2.0 exam date?', 'GSSSB has not announced the prelims date yet; it will be on gsssb.gujarat.gov.in.'),
+      ('Where can I practise GSSSB CCE previous papers?', 'On Learn with Anil: GSSSB\'s own CCE Preliminary papers of 2024 (Advt. 212/2023-24) with its final answers and explanations in Gujarati and English.'),
+    ])
+ASOF_PAGE['gsssb-cce-notification-2026.html'] = '16 November 2026'
+
+NEW['upsssc-inter-level-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: UP UPSSSC Inter level (apply till 1 December); facts from UPSSSC's own advertisement (in Hindi), read on 16 Nov 2026
+    exam='upsssc-inter-level', board='UPSSSC', site='upsssc.gov.in', crumb='UPSSSC Inter Level Mains Notification 2026', faq_asof='16 November 2026',
+    title='UPSSSC Inter Level Mains Notification 2026: 1,784 Posts, Apply by 1 December, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='UPSSSC Advt. No. 26-Exam/2026, Combined Lower Subordinate (Intermediate Level) Mains for PET-2025 candidates: 1,784 posts including Gram Vikas Adhikari 525, '
+         'Gram Panchayat Adhikari 508 and Vanijya Kar Sangrah Amin 235. Apply on upsssc.gov.in from 10 November to 1 December 2026. Posts, eligibility, exam '
+         'pattern and UPSSSC Mains previous papers with answers in Hindi and English.',
+    h1='UPSSSC Inter level Mains notification 2026: 1,784 posts, apply by 1 December',
+    lede='The Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has advertised its Combined Lower Subordinate Services (Intermediate Level) Mains '
+         '(Advt. No. 26-Exam/2026, published 16 October 2026) for 1,784 posts in twelve cadres, from Gram Vikas Adhikari and Gram Panchayat Adhikari to Vanijya Kar '
+         'Sangrah Amin. Only candidates with a PET-2025 score card can apply, on upsssc.gov.in from 10 November to 1 December 2026. Below: the key dates, the posts, '
+         'who can apply, the exam pattern and UPSSSC Mains previous papers to practise.',
+    hi='उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग: विज्ञापन संख्या-26-परीक्षा/2026, संयुक्त अवर अधीनस्थ सेवा (इण्टरमीडिएट स्तरीय) मुख्य परीक्षा (प्रा.अ.प.-2025)/26 — कुल 1784 पद; '
+       'ऑनलाइन आवेदन 10 नवम्बर से 01 दिसम्बर 2026, शुल्क समायोजन एवं संशोधन 08 दिसम्बर 2026 तक; केवल PET-2025 स्कोर कार्ड धारक अभ्यर्थी।',
+    pdf='https://upsssc.gov.in', pdfname='UPSSSC Advt. No. 26-Exam/2026, upsssc.gov.in > Advertisements',
+    more_src=[],
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement', 'Advt. No. 26-Exam/2026, Combined Lower Subordinate Services (Intermediate Level) Mains Examination (PET-2025)/26, published 16 October 2026'),
+        ('Online applications', '10 November to 1 December 2026 on upsssc.gov.in (registration, fee and final submission)'),
+        ('Fee adjustment and corrections', 'Up to 8 December 2026'),
+        ('Mains', 'UPSSSC will announce the date; candidates are shortlisted on their PET-2025 normalised score'),
+      ]),
+      ('Posts and vacancies (1,784)', 'table+', (['Post', 'Department', 'Posts'], [
+        ('Gram Vikas Adhikari (Samaj Kalyan)', 'Social Welfare Directorate', '525'),
+        ('Gram Panchayat Adhikari', 'Panchayati Raj Directorate', '508'),
+        ('Vanijya Kar Sangrah Amin', 'State Tax Commissioner\'s office', '235'),
+        ('Bhumi Arjan Amin', 'Land Acquisition Directorate, Revenue Board', '187'),
+        ('Samaj Kalyan Paryavekshak', 'Social Welfare Directorate', '137'),
+        ('Bhandar Pal evam Lipik', 'Medical & Health Services Directorate (118 + 2 special recruitment)', '120'),
+        ('Sahakari Krishi Paryavekshak', 'Commissioner & Registrar, Cooperatives', '50'),
+        ('Saraniyak', 'Consolidation Commissioner\'s office', '14'),
+        ('Grihmata', 'Tribal Development Directorate', '5'),
+        ('Farm Lipik and Bikri Karta', 'Jail Administration & Reform Services', '3'),
+        ('Total', '', '1,784')])),
+      ('', 'note', 'Pay: Level-3 (Rs. 21,700–69,100) for Gram Vikas Adhikari, Gram Panchayat Adhikari, Vanijya Kar Sangrah Amin, Bhumi Arjan Amin, Samaj Kalyan '
+                   'Paryavekshak, Sahakari Krishi Paryavekshak and Grihmata; Level-2 for the other posts. The category-wise reservation of each post is in the advertisement.'),
+      ('Exam pattern', 'table+', (['Part', 'Subjects', 'Questions'], [
+        ('Part 1', 'History & National Movement 5, Polity & Constitution 5, Geography 5, Indian Economy & Social Development 5, Rural Society & Development 5, '
+                   'Current Affairs 5, Science & Technology 5, Environment, Ecology & Disaster Management 10, Data Interpretation 10, General Hindi 10', '65'),
+        ('Part 2', 'Computer & Information Technology', '15'),
+        ('Part 3', 'Uttar Pradesh General Knowledge', '20'),
+        ('Total', 'One objective paper, 100 marks, 2 hours; a quarter mark deducted for each wrong answer', '100')])),
+      ('', 'note', 'UPSSSC used this pattern (five options per question, in Hindi and English) in its Lekhpal Mains of 21 May 2026 and its Graduate-level Mains of '
+                   '23 August 2026; their papers, with UPSSSC\'s revised answer keys, are on this site.'),
+      ('Who can apply', 'list', [
+        'Only candidates who appeared in UPSSSC\'s Preliminary Eligibility Test 2025 (PET-2025) and were issued its score card; those with a zero or negative score are not shortlisted.',
+        'The essential qualification of the post as given in the advertisement.',
+        'Age: 18 to 40 years as on 1 July 2026, with the relaxations of Uttar Pradesh government rules for reserved categories.',
+        'Fee: only the online processing fee of Rs. 25 is charged with the application, for every category; candidates shortlisted for the Mains pay the Mains fee separately before downloading the admit card.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for UPSSSC Inter level Mains 2026?', '1 December 2026 on upsssc.gov.in; fee adjustment and corrections are allowed till 8 December 2026.'),
+      ('How many posts are there in UPSSSC Advt. 26-Exam/2026?', '1,784, including Gram Vikas Adhikari 525, Gram Panchayat Adhikari 508, Vanijya Kar Sangrah Amin 235 and Bhumi Arjan Amin 187.'),
+      ('Who can apply for the UPSSSC Inter level Mains?', 'Only candidates with a UPSSSC PET-2025 score card and the qualification of the post; they are shortlisted for the Mains on their PET-2025 normalised score.'),
+      ('What is the UPSSSC Inter level Mains exam pattern?', 'One objective paper of 100 questions in 2 hours with a quarter mark negative: general studies and General Hindi 65, Computer 15 and UP GK 20.'),
+      ('What is the age limit?', '18 to 40 years as on 1 July 2026, with the usual UP relaxations for reserved categories.'),
+      ('Where can I practise UPSSSC Mains previous papers?', 'On Learn with Anil: the Lekhpal Mains 2026, the Lower Subordinate (Graduate Level) Mains 2026 and the Gram Panchayat Adhikari Mains 2025, with UPSSSC\'s revised answer keys and explanations in Hindi and English.'),
+    ])
+ASOF_PAGE['upsssc-inter-level-notification-2026.html'] = '16 November 2026'
+
 
 def apply(NOTIFS):
     for rel, f in FAQS.items():
