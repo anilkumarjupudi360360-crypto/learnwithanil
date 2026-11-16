@@ -1,0 +1,182 @@
+# NCERT Class 12 Economics, Introductory Macroeconomics, Chapter 6: Open Economy Macroeconomics
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Introductory Macroeconomics
+The balance of payments (BoP) of a country is:
+(1) The government's annual budget
+(2) The record of only exports and imports of goods
+(3) A record of the transactions in goods, services and assets between residents of a country and the rest of the world over a period, usually a year
+(4) The total foreign debt of a country
+= 3
+~ The BoP records all economic transactions with the rest of the world: trade in goods and services, transfers and flows of assets.
+
+Q 2 | eco | Introductory Macroeconomics
+The two main accounts of the balance of payments are:
+(1) The current account and the capital account
+(2) The revenue account and the capital account
+(3) The savings account and the current account
+(4) The trade account and the budget account
+= 1
+~ The current account records trade in goods and services and transfer payments; the capital account records transactions in assets.
+
+Q 3 | eco | Introductory Macroeconomics
+Which of the following is recorded in the current account of India's BoP?
+(1) Foreign direct investment into India
+(2) Remittances sent home by Indians working abroad
+(3) External commercial borrowing by an Indian firm
+(4) Purchase of Indian shares by foreign investors
+= 2
+~ Remittances are transfers and are recorded in the current account. Investment and borrowing are transactions in assets and go to the capital account.
+
+Q 4 | eco | Introductory Macroeconomics
+Which of the following is recorded in the capital account of the BoP?
+(1) Export of software services
+(2) Import of crude oil
+(3) Gifts received from relatives abroad
+(4) Foreign direct investment
+= 4
+~ The capital account records international purchases and sales of assets such as shares, bonds, land and direct investment, and borrowing and lending.
+
+Q 5 | eco | Introductory Macroeconomics
+The 'balance of trade' refers to:
+(1) The balance on the whole current account
+(2) The balance on the capital account
+(3) The change in foreign exchange reserves
+(4) The difference between the value of exports and imports of goods only
+= 4
+~ Trade in goods is called visible trade, and the gap between exports and imports of goods is the balance of trade. The current account also includes invisibles.
+
+Q 6 | eco | Introductory Macroeconomics
+'Invisibles' in the current account of the BoP include:
+(1) Only exports of goods
+(2) Trade in services, factor income and transfers
+(3) Foreign direct investment
+(4) Changes in gold reserves
+= 2
+~ Invisibles are items that are not visible goods: services such as banking, insurance and software, income from investment and work abroad, and transfers such as gifts and remittances.
+
+Q 7 | eco | Introductory Macroeconomics
+A country's exports of goods are 500, its imports of goods are 600 and its net invisibles are +60 (in crore dollars). Its current account balance is:
+(1) A deficit of 40
+(2) A surplus of 40
+(3) A deficit of 100
+(4) A surplus of 160
+= 1
+~ Trade balance = 500 − 600 = −100. Current account balance = trade balance + net invisibles = −100 + 60 = −40, a deficit of 40.
+
+Q 8 | eco | Introductory Macroeconomics
+'Autonomous' transactions in the BoP are:
+(1) Transactions undertaken only by the central bank
+(2) Transactions made to cover a deficit
+(3) Transactions undertaken for their own sake, such as for profit, independent of the state of the BoP
+(4) Transactions that are never recorded
+= 3
+~ Exports, imports and investments are made because they are profitable or useful, not to balance the BoP. These are autonomous, or 'above the line', transactions.
+
+Q 9 | eco | Introductory Macroeconomics
+'Accommodating' transactions in the BoP are:
+(1) Transactions by tourists
+(2) Exports of services
+(3) Transactions undertaken to cover the gap left by autonomous transactions, such as official reserve transactions of the central bank
+(4) Gifts sent by migrants
+= 3
+~ When autonomous receipts and payments do not match, the gap is filled by accommodating transactions, mainly changes in the central bank's foreign exchange reserves.
+
+Q 10 | eco | Introductory Macroeconomics
+How is a BoP deficit usually financed?
+(1) By the central bank selling foreign exchange from its reserves
+(2) By printing more domestic currency
+(3) By raising income tax
+(4) By increasing exports immediately
+= 1
+~ A BoP deficit means autonomous payments exceed receipts. The central bank meets the gap by selling foreign exchange, so official reserves decline.
+
+Q 11 | eco | Introductory Macroeconomics
+The foreign exchange rate is:
+(1) The interest rate on foreign loans
+(2) The price of one currency in terms of another
+(3) The rate of growth of exports
+(4) The tax on imports
+= 2
+~ The exchange rate tells how many units of domestic currency are needed to buy one unit of a foreign currency, for example ₹83 per US dollar.
+
+Q 12 | eco | Introductory Macroeconomics
+Under a flexible (floating) exchange rate system, the exchange rate is determined by:
+(1) The government alone
+(2) The IMF
+(3) The price of gold
+(4) Market forces of demand for and supply of foreign exchange
+= 4
+~ In a flexible system the central bank does not fix the rate; it moves with demand and supply in the foreign exchange market.
+
+Q 13 | eco | Introductory Macroeconomics
+If the exchange rate changes from ₹80 to ₹84 per US dollar under a flexible system, the rupee has:
+(1) Depreciated
+(2) Appreciated
+(3) Been revalued
+(4) Not changed in value
+= 1
+~ More rupees are now needed to buy one dollar, so the rupee has lost value: it has depreciated, and the dollar has appreciated.
+
+Q 14 | eco | Introductory Macroeconomics
+What is the likely effect of a depreciation of the rupee?
+(1) Imports become cheaper for Indians
+(2) Indian goods become costlier for foreigners
+(3) Indian exports become cheaper for foreigners and imports become costlier for Indians
+(4) There is no effect on trade
+= 3
+~ After depreciation, foreigners need fewer units of their currency to buy Indian goods, so exports rise; Indians need more rupees to buy foreign goods, so imports tend to fall.
+
+Q 15 | eco | Introductory Macroeconomics
+'Devaluation' of a currency refers to:
+(1) A fall in the currency's value due to market forces
+(2) A rise in the value of the currency
+(3) Removal of the currency from circulation
+(4) A deliberate increase in the price of foreign currency by the government under a fixed exchange rate system, reducing the value of the domestic currency
+= 4
+~ Depreciation happens through the market in a flexible system; devaluation is an official decision in a fixed system. The opposite of devaluation is revaluation.
+
+Q 16 | eco | Introductory Macroeconomics
+A 'managed floating' exchange rate system is one in which:
+(1) The government fixes the rate permanently
+(2) The rate is largely market-determined, but the central bank buys and sells foreign currency to moderate its movements
+(3) Only gold is used for payments
+(4) There is no foreign exchange market
+= 2
+~ Managed floating, also called dirty floating, mixes the flexible and fixed systems. The central bank intervenes when it thinks movements are excessive.
+
+Q 17 | eco | Introductory Macroeconomics
+Which of the following adds to the supply of foreign exchange in India?
+(1) Indians travelling abroad
+(2) Indian firms importing machinery
+(3) Exports by Indian firms, foreign investment into India, spending by foreign tourists and remittances from abroad
+(4) Indian students paying fees to foreign universities
+= 3
+~ Foreign exchange flows in when foreigners buy Indian goods and services or assets, and when Indians abroad send money home. The other options create demand for foreign exchange.
+
+Q 18 | eco | Introductory Macroeconomics
+Which of the following creates demand for US dollars in India?
+(1) An Indian company importing machinery from the USA
+(2) An American tourist spending money in Goa
+(3) A US company setting up a factory in India
+(4) An Indian software firm exporting services to the USA
+= 1
+~ To pay for imports, the Indian firm must buy dollars. The other three bring dollars into India and add to their supply.
+
+Q 19 | eco | Introductory Macroeconomics
+Under a flexible exchange rate, if Indians' demand for US dollars rises while supply is unchanged, then:
+(1) The rupee appreciates
+(2) The exchange rate stays the same
+(3) The dollar depreciates
+(4) The dollar appreciates and the rupee depreciates
+= 4
+~ Higher demand raises the price of the dollar in rupees. More rupees are needed per dollar, so the rupee depreciates.
+
+Q 20 | eco | Introductory Macroeconomics
+The real exchange rate is:
+(1) The exchange rate fixed by the government
+(2) The relative price of foreign goods in terms of domestic goods, that is, eP(f) ÷ P
+(3) The nominal exchange rate in the base year
+(4) The interest rate in foreign countries
+= 2
+~ The real exchange rate adjusts the nominal rate e for the price levels abroad (Pf) and at home (P). It measures a country's international competitiveness.

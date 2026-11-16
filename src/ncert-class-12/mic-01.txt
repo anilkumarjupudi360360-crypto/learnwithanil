@@ -1,0 +1,182 @@
+# NCERT Class 12 Economics, Introductory Microeconomics, Chapter 1: Introduction
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Introductory Microeconomics
+Which are the central problems of an economy discussed in the chapter?
+(1) What to produce, how to produce and for whom to produce
+(2) What to import, what to export and what to tax
+(3) How much to save, borrow and invest
+(4) Where to build cities, roads and dams
+= 1
+~ Every economy must decide which goods to produce and in what quantities, which techniques to use, and how the output will be distributed among its people.
+
+Q 2 | eco | Introductory Microeconomics
+Choosing between labour-intensive and capital-intensive techniques of production relates to which central problem?
+(1) What to produce
+(2) For whom to produce
+(3) How much to save
+(4) How to produce
+= 4
+~ 'How to produce' is about the combination of resources and the technology used, such as more labour or more machines.
+
+Q 3 | eco | Introductory Microeconomics
+Deciding how the goods produced will be shared among the members of the economy is the problem of:
+(1) What to produce
+(2) For whom to produce
+(3) How to produce
+(4) Opportunity cost
+= 2
+~ 'For whom to produce' is the question of distribution: who gets how much of the output.
+
+Q 4 | eco | Introductory Microeconomics
+The central problems of an economy arise because:
+(1) Human wants are limited
+(2) Money is scarce
+(3) Resources are scarce and have alternative uses
+(4) Governments interfere in markets
+= 3
+~ If resources were unlimited, everything could be produced for everyone. Because they are scarce and can be used in different ways, choices must be made.
+
+Q 5 | eco | Introductory Microeconomics
+The production possibility frontier shows:
+(1) All the goods a country imports
+(2) The combinations of two goods that can be produced when the given resources are fully and efficiently used with the given technology
+(3) The prices of two goods
+(4) The demand for two goods
+= 2
+~ Each point on the frontier is a maximum output combination; producing more of one good is possible only by giving up some of the other.
+
+Q 6 | eco | Introductory Microeconomics
+'Opportunity cost' of an activity is:
+(1) The money spent on it
+(2) The cost of the raw materials
+(3) The tax paid on it
+(4) The value of the next best alternative forgone
+= 4
+~ When resources are used for one thing, the next best thing they could have produced is given up. That forgone gain is the opportunity cost.
+
+Q 7 | eco | Introductory Microeconomics
+An economy can produce these combinations of wheat and cloth: (0, 20), (1, 18), (2, 14), (3, 8), (4, 0). What is the opportunity cost of producing the third unit of wheat?
+(1) 6 units of cloth
+(2) 8 units of cloth
+(3) 14 units of cloth
+(4) 4 units of cloth
+= 1
+~ Moving from 2 to 3 units of wheat reduces cloth from 14 to 8, so the third unit of wheat costs 14 − 8 = 6 units of cloth. The costs rise (2, 4, 6, 8) as more wheat is produced.
+
+Q 8 | eco | Introductory Microeconomics
+A point inside the production possibility frontier shows that:
+(1) The economy is producing the maximum possible
+(2) The combination cannot be produced
+(3) Resources are being underutilised or wasted
+(4) Technology has improved
+= 3
+~ Inside the frontier, the economy could produce more of one or both goods without giving up anything, which means some resources are idle or inefficiently used.
+
+Q 9 | eco | Introductory Microeconomics
+A point outside the production possibility frontier shows a combination that:
+(1) Is produced with idle resources
+(2) Is the most efficient
+(3) Cannot be produced with the existing resources and technology
+(4) Uses only one good
+= 3
+~ Points beyond the frontier are unattainable at present. They become possible only if resources grow or technology improves.
+
+Q 10 | eco | Introductory Microeconomics
+The production possibility frontier shifts outward when:
+(1) Resources are left unemployed
+(2) Prices of goods rise
+(3) Demand for goods falls
+(4) Resources increase or technology improves
+= 4
+~ More resources or better technology let the economy produce more of both goods, so the whole frontier moves outward.
+
+Q 11 | eco | Introductory Microeconomics
+Why is the production possibility frontier usually concave to the origin?
+(1) Because the opportunity cost of producing more of one good rises as more of it is produced
+(2) Because opportunity cost is zero
+(3) Because both goods are produced in equal quantities
+(4) Because prices are fixed
+= 1
+~ Resources are not equally suited to both goods. As more of one good is produced, resources less suited to it must be shifted, so ever larger amounts of the other good are given up.
+
+Q 12 | eco | Introductory Microeconomics
+In a centrally planned economy:
+(1) All decisions are made through the free play of markets
+(2) The government or a central authority plans all the important economic activities
+(3) There is no government
+(4) Only foreign companies produce goods
+= 2
+~ In a centrally planned economy, the central authority decides what, how and for whom to produce, in line with its idea of what is good for society.
+
+Q 13 | eco | Introductory Microeconomics
+In a market economy, economic activities are coordinated mainly through:
+(1) Orders of the government
+(2) Customs and traditions
+(3) Lotteries
+(4) Prices in markets
+= 4
+~ In a market economy, prices signal how much people value goods and how scarce they are. Buyers and sellers respond to these signals, which coordinates their decisions.
+
+Q 14 | eco | Introductory Microeconomics
+Positive economic analysis is concerned with:
+(1) How the economy actually works, that is, 'what is'
+(2) What ought to be
+(3) Value judgements about fairness
+(4) Moral rules only
+= 1
+~ Positive analysis studies how different mechanisms function. Normative analysis asks whether these mechanisms are desirable.
+
+Q 15 | eco | Introductory Microeconomics
+Which of the following is a normative statement?
+(1) Rising prices reduce the quantity demanded of most goods
+(2) India's GDP grew last year
+(3) The government should give free electricity to farmers
+(4) Minimum support prices are announced for kharif crops
+= 3
+~ A statement about what should be done involves a value judgement and is normative. The others describe facts or relationships and are positive statements.
+
+Q 16 | eco | Introductory Microeconomics
+Microeconomics studies:
+(1) Only the national income
+(2) The behaviour of individual economic agents, such as consumers and producers, in the markets for individual goods
+(3) Only government budgets
+(4) The total employment of the economy
+= 2
+~ Microeconomics looks at individual decision-makers and markets. Macroeconomics deals with aggregates such as total output, employment and the general price level.
+
+Q 17 | eco | Introductory Microeconomics
+In economics, a 'market' refers to:
+(1) An arrangement through which buyers and sellers interact and exchange goods, not necessarily a physical place
+(2) Only a building where goods are sold
+(3) A government office
+(4) Only a weekly village fair
+= 1
+~ A market is any set-up that brings buyers and sellers together, whether a village haat, a shop, a phone call or a website.
+
+Q 18 | eco | Introductory Microeconomics
+Most economies in the world today are best described as:
+(1) Purely centrally planned
+(2) Purely market economies with no government
+(3) Barter economies
+(4) Mixed economies, in which both the government and the market play important roles
+= 4
+~ In a mixed economy, markets decide much of what is produced, but the government plans and intervenes in important areas.
+
+Q 19 | eco | Introductory Microeconomics
+The slope of the production possibility frontier measures:
+(1) The price of the good
+(2) The total cost of production
+(3) The marginal opportunity cost, also called the marginal rate of transformation
+(4) The demand for the good
+= 3
+~ The slope shows how much of one good must be given up to produce one more unit of the other, which is the marginal opportunity cost.
+
+Q 20 | eco | Introductory Microeconomics
+A point on the production possibility frontier shows that:
+(1) Some resources are idle
+(2) Resources are fully and efficiently used, so more of one good can be produced only by producing less of the other
+(3) The combination cannot be produced
+(4) Both goods can be increased without any cost
+= 2
+~ On the frontier there is no slack. Any increase in one good requires shifting resources away from the other.

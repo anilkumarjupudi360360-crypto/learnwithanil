@@ -1,0 +1,182 @@
+# NCERT Class 11 Economics, Statistics for Economics, Chapter 6: Correlation
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Statistics for Economics
+Correlation studies and measures:
+(1) The average of a variable
+(2) The spread of a single variable
+(3) Changes in prices over time
+(4) The direction and intensity of the relationship between variables
+= 4
+~ Correlation tells us whether two variables move together (direction) and how closely (intensity). It measures covariation, not causation.
+
+Q 2 | eco | Statistics for Economics
+Income and consumption expenditure of households usually show:
+(1) No correlation
+(2) Positive correlation
+(3) Negative correlation
+(4) Perfect negative correlation
+= 2
+~ When income rises, consumption also tends to rise. Variables that move in the same direction are positively correlated.
+
+Q 3 | eco | Statistics for Economics
+The price of a good and the quantity demanded usually show:
+(1) Negative correlation
+(2) Positive correlation
+(3) No correlation
+(4) Perfect positive correlation
+= 1
+~ When price rises, quantity demanded usually falls. Variables that move in opposite directions are negatively correlated.
+
+Q 4 | eco | Statistics for Economics
+Which statement about correlation and causation is correct?
+(1) A high correlation proves that one variable causes the other
+(2) Correlation can be calculated only when one variable causes the other
+(3) Correlation measures covariation, not causation; a high correlation does not prove that one variable causes the other
+(4) Correlation and causation mean the same thing
+= 3
+~ Two variables may move together because of chance or a third factor affecting both. Correlation should never be interpreted as cause and effect by itself.
+
+Q 5 | eco | Statistics for Economics
+Which statement about the scatter diagram is correct?
+(1) It gives the exact numerical value of correlation
+(2) It can be drawn only for qualitative data
+(3) It gives a visual idea of the nature of the relationship, without a numerical measure
+(4) It uses ranks instead of values
+= 3
+~ A scatter diagram plots pairs of values as points. How closely the points cluster around a line shows the strength of the relationship, but it gives no exact number.
+
+Q 6 | eco | Statistics for Economics
+Karl Pearson's coefficient of correlation is also known as the:
+(1) Product moment correlation coefficient
+(2) Rank correlation coefficient
+(3) Coefficient of variation
+(4) Index number
+= 1
+~ Karl Pearson's coefficient, r, is also called the product moment correlation coefficient. It measures the degree of linear relationship between two variables.
+
+Q 7 | eco | Statistics for Economics
+The value of the correlation coefficient r lies between:
+(1) 0 and 1
+(2) 0 and 100
+(3) −100 and +100
+(4) −1 and +1
+= 4
+~ r can never be less than −1 or more than +1. Values near ±1 show a strong linear relationship; values near 0 show a weak one.
+
+Q 8 | eco | Statistics for Economics
+If r = 0 between two variables, it means that:
+(1) The variables are perfectly related
+(2) There is no linear relationship between them, though a non-linear relationship may exist
+(3) One variable causes the other
+(4) Both variables are constant
+= 2
+~ r measures only linear relationship. A value of zero means there is no linear relation, but the variables could still be related in a curved, non-linear way.
+
+Q 9 | eco | Statistics for Economics
+r = −1 indicates:
+(1) No correlation
+(2) Perfect negative linear correlation
+(3) Perfect positive linear correlation
+(4) A weak negative correlation
+= 2
+~ When r = −1, all points lie exactly on a downward-sloping straight line: as one variable rises, the other falls in exact proportion.
+
+Q 10 | eco | Statistics for Economics
+In which unit is Karl Pearson's correlation coefficient expressed?
+(1) In the unit of the first variable
+(2) In the unit of the second variable
+(3) In percentages
+(4) It has no unit; it is a pure number
+= 4
+~ r is unit-free, so it can compare relationships between variables measured in different units, such as rupees and kilograms.
+
+Q 11 | eco | Statistics for Economics
+How is Karl Pearson's coefficient affected by a change of origin and scale of the variables?
+(1) It is unaffected by a change of origin and scale
+(2) It changes with any change of origin
+(3) It doubles when the scale is doubled
+(4) It becomes zero
+= 1
+~ Subtracting a constant from every value (change of origin) or dividing by a positive constant (change of scale) does not change r. This property simplifies calculation.
+
+Q 12 | eco | Statistics for Economics
+For two variables, the sum of the products of deviations from their means is Σxy = 40, N = 10, σx = 2 and σy = 4. What is r?
+(1) 0.25
+(2) 1
+(3) 0.5
+(4) 0.8
+= 3
+~ r = Σxy ÷ (N × σx × σy) = 40 ÷ (10 × 2 × 4) = 40 ÷ 80 = 0.5.
+
+Q 13 | eco | Statistics for Economics
+Spearman's rank correlation is especially useful when:
+(1) The variables cannot be measured precisely, such as beauty or honesty, and only ranks can be given
+(2) The data are in a time series
+(3) Only one variable is available
+(4) The data are already in percentages
+= 1
+~ Qualities like honesty or beauty cannot be measured, but individuals can be ranked. Spearman's method works with these ranks.
+
+Q 14 | eco | Statistics for Economics
+Spearman's rank correlation coefficient is calculated as:
+(1) rs = 1 + 6ΣD² ÷ (n³ − n)
+(2) rs = 1 − 6ΣD² ÷ (n³ − n)
+(3) rs = ΣD² ÷ n
+(4) rs = 6ΣD ÷ n²
+= 2
+~ Here D is the difference between the ranks of each pair and n is the number of pairs. Like r, rs lies between −1 and +1.
+
+Q 15 | eco | Statistics for Economics
+Five pairs of ranks give ΣD² = 4. What is Spearman's rank correlation coefficient?
+(1) 0.2
+(2) 0.6
+(3) 0.9
+(4) 0.8
+= 4
+~ rs = 1 − (6 × 4) ÷ (5³ − 5) = 1 − 24 ÷ 120 = 1 − 0.2 = 0.8.
+
+Q 16 | eco | Statistics for Economics
+Two judges rank five contestants exactly in reverse order: 1, 2, 3, 4, 5 and 5, 4, 3, 2, 1. What is the rank correlation?
+(1) 0
+(2) +1
+(3) −1
+(4) −0.5
+= 3
+~ The differences are −4, −2, 0, 2, 4, so ΣD² = 16 + 4 + 0 + 4 + 16 = 40. rs = 1 − (6 × 40) ÷ 120 = 1 − 2 = −1, a perfect negative relationship.
+
+Q 17 | eco | Statistics for Economics
+Why may rank correlation be preferred to Karl Pearson's coefficient even when data can be measured?
+(1) When extreme values are present, because ranks reduce their influence
+(2) Because rank correlation always uses more information
+(3) Because rank correlation can exceed +1
+(4) Because Pearson's coefficient cannot be calculated for numbers
+= 1
+~ Extreme values can distort Pearson's r. Converting data into ranks limits their effect, so rank correlation is preferred in such cases.
+
+Q 18 | eco | Statistics for Economics
+Why is the rank correlation coefficient generally less accurate than Karl Pearson's coefficient?
+(1) Because it is always zero
+(2) Because it uses a wrong formula
+(3) Because it can be used only for small samples
+(4) Because it does not use all the information in the data, only the ranks
+= 4
+~ By replacing actual values with ranks, the size of the differences between values is lost. So when values are reliable, Pearson's r is more precise.
+
+Q 19 | eco | Statistics for Economics
+In a scatter diagram, a high degree of positive correlation appears as:
+(1) Points spread all over the graph with no pattern
+(2) Points lying close to a falling straight line
+(3) Points lying close to a rising straight line
+(4) All points on the x-axis
+= 3
+~ When the points cluster closely around an upward-sloping line, the two variables rise together strongly: high positive correlation.
+
+Q 20 | eco | Statistics for Economics
+X takes the values 1, 2, 3, 4, 5 and Y takes the values 2, 4, 6, 8, 10. What is the correlation coefficient between X and Y?
+(1) 0
+(2) +1
+(3) 2
+(4) 0.5
+= 2
+~ Y is exactly twice X, so all points lie on a rising straight line. The correlation is perfect and positive: r = +1.

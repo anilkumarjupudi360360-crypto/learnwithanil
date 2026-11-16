@@ -1,0 +1,182 @@
+# NCERT Class 11 Economics, Statistics for Economics, Chapter 7: Index Numbers
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Statistics for Economics
+An index number is:
+(1) A statistical device for measuring changes in the magnitude of a group of related variables
+(2) The serial number of a page in a book
+(3) The average of all prices in one year
+(4) A measure of correlation between two variables
+= 1
+~ An index number measures relative change, for example in prices or quantities, between a base period and a current period, for a group of related items.
+
+Q 2 | eco | Statistics for Economics
+Which period should be chosen as the base period of an index number?
+(1) The latest year available
+(2) A year with very high prices
+(3) A normal period, free from extreme fluctuations
+(4) A year of war or drought
+= 3
+~ The base period is the reference with which other periods are compared. It should be a normal year, so that comparisons are not distorted.
+
+Q 3 | eco | Statistics for Economics
+The value of an index number for the base period is always taken as:
+(1) 0
+(2) 100
+(3) 1,000
+(4) 1
+= 2
+~ The base period index is 100. An index of 120 for the current period means a 20 per cent rise over the base.
+
+Q 4 | eco | Statistics for Economics
+The prices of three goods in the base year are ₹10, ₹20 and ₹30, and in the current year ₹12, ₹25 and ₹35. What is the simple aggregative price index?
+(1) 112
+(2) 72
+(3) 83.3
+(4) 120
+= 4
+~ Simple aggregative index = (Σp1 ÷ Σp0) × 100 = (72 ÷ 60) × 100 = 120.
+
+Q 5 | eco | Statistics for Economics
+What is a weakness of the simple aggregative price index?
+(1) It cannot be calculated
+(2) It always equals 100
+(3) It uses current year quantities as weights
+(4) It is affected by the units in which prices are quoted and gives no weight to the relative importance of items
+= 4
+~ In a simple aggregative index, an item with a high price per unit dominates the result, and all items are treated as equally important. Weighted indices correct this.
+
+Q 6 | eco | Statistics for Economics
+Laspeyres' price index uses as weights:
+(1) Current period quantities
+(2) Base period quantities
+(3) Equal weights for all goods
+(4) Current period prices
+= 2
+~ Laspeyres' index = (Σp1q0 ÷ Σp0q0) × 100. It measures how much the base period basket would cost at current prices.
+
+Q 7 | eco | Statistics for Economics
+Paasche's price index uses as weights:
+(1) Current period quantities
+(2) Base period quantities
+(3) Base period prices only
+(4) No weights
+= 1
+~ Paasche's index = (Σp1q1 ÷ Σp0q1) × 100. It uses the quantities of the current period as weights.
+
+Q 8 | eco | Statistics for Economics
+Good A: base price ₹10, current price ₹12, base quantity 5. Good B: base price ₹20, current price ₹25, base quantity 2. What is Laspeyres' price index?
+(1) 120
+(2) 122
+(3) 122.22
+(4) 110
+= 3
+~ Σp1q0 = 12 × 5 + 25 × 2 = 60 + 50 = 110. Σp0q0 = 10 × 5 + 20 × 2 = 50 + 40 = 90. Index = (110 ÷ 90) × 100 = 122.22.
+
+Q 9 | eco | Statistics for Economics
+Good A: base price ₹10, current price ₹12, current quantity 6. Good B: base price ₹20, current price ₹25, current quantity 2. What is Paasche's price index?
+(1) 122.22
+(2) 120
+(3) 122
+(4) 100
+= 3
+~ Σp1q1 = 12 × 6 + 25 × 2 = 72 + 50 = 122. Σp0q1 = 10 × 6 + 20 × 2 = 60 + 40 = 100. Index = (122 ÷ 100) × 100 = 122.
+
+Q 10 | eco | Statistics for Economics
+The Consumer Price Index (CPI) measures:
+(1) The average change in the retail prices of a fixed basket of goods and services consumed by a particular group of people
+(2) The change in industrial production
+(3) The change in wholesale prices only
+(4) The change in share prices
+= 1
+~ The CPI, also called the cost of living index, shows how the retail prices paid by a group of consumers, such as industrial workers or agricultural labourers, have changed.
+
+Q 11 | eco | Statistics for Economics
+How does the Wholesale Price Index (WPI) differ from the CPI, according to the chapter?
+(1) The WPI covers only services
+(2) The WPI has no reference consumer category and does not include services such as barber charges and repairs
+(3) The WPI is calculated only for agricultural labourers
+(4) The WPI measures share prices
+= 2
+~ The WPI tracks prices of goods at the wholesale level for the economy as a whole, so it has no particular consumer group and leaves out services. The CPI is for a specific group and includes services.
+
+Q 12 | eco | Statistics for Economics
+The Index of Industrial Production (IIP) measures:
+(1) Changes in wholesale prices
+(2) Changes in the cost of living
+(3) Changes in share prices
+(4) Changes in the level of industrial production, such as mining, manufacturing and electricity
+= 4
+~ The IIP is a quantity index. It shows how the volume of industrial output in a period compares with the base period.
+
+Q 13 | eco | Statistics for Economics
+The Sensex is:
+(1) An index of wholesale prices
+(2) The index of 30 stocks of the Bombay Stock Exchange, with 1978–79 as the base
+(3) An index of industrial production
+(4) A consumer price index for urban workers
+= 2
+~ The Sensex is the benchmark index of the Bombay Stock Exchange, based on 30 stocks, with 1978–79 as the base. A rising Sensex shows investors' optimism about the economy.
+
+Q 14 | eco | Statistics for Economics
+A worker's money wage is ₹15,000 and the relevant consumer price index is 150. What is the real wage?
+(1) ₹22,500
+(2) ₹15,000
+(3) ₹10,000
+(4) ₹150
+= 3
+~ Real wage = (money wage ÷ CPI) × 100 = (15,000 ÷ 150) × 100 = ₹10,000. This is the wage in terms of base year purchasing power.
+
+Q 15 | eco | Statistics for Economics
+If the consumer price index is 125, the purchasing power of a rupee compared with the base year is:
+(1) 80 paise
+(2) 125 paise
+(3) 25 paise
+(4) ₹1.25
+= 1
+~ Purchasing power of money is the reciprocal of the price index: 100 ÷ 125 = 0.80, so a rupee buys what 80 paise bought in the base year.
+
+Q 16 | eco | Statistics for Economics
+If the WPI rises from 200 to 210 over a year, the rate of inflation is:
+(1) 10 per cent
+(2) 2 per cent
+(3) 4.76 per cent
+(4) 5 per cent
+= 4
+~ Inflation rate = [(210 − 200) ÷ 200] × 100 = (10 ÷ 200) × 100 = 5 per cent.
+
+Q 17 | eco | Statistics for Economics
+For which purpose is the consumer price index widely used?
+(1) Measuring industrial output
+(2) Measuring share prices
+(3) Wage negotiations and fixing dearness allowance
+(4) Measuring correlation
+= 3
+~ Because the CPI shows the change in the cost of living of a group of consumers, it is used in wage contracts and to fix dearness allowance.
+
+Q 18 | eco | Statistics for Economics
+Which of the following should be avoided while constructing an index number?
+(1) Choosing items that represent the group well
+(2) Choosing an abnormal year, such as a year of drought or war, as the base
+(3) Using appropriate weights
+(4) Using reliable price data
+= 2
+~ An abnormal base year makes every later comparison misleading. Careful choice of items, weights, formula and data is needed for a reliable index.
+
+Q 19 | eco | Statistics for Economics
+The price relatives of three goods are 120, 150 and 90. Using the method of simple average of price relatives, the index is:
+(1) 110
+(2) 150
+(3) 90
+(4) 120
+= 4
+~ Index = average of price relatives = (120 + 150 + 90) ÷ 3 = 360 ÷ 3 = 120.
+
+Q 20 | eco | Statistics for Economics
+An index number that measures change in the physical volume of production, rather than prices, is called a:
+(1) Quantity index
+(2) Price index
+(3) Cost of living index
+(4) Wholesale price index
+= 1
+~ A quantity index, such as the Index of Industrial Production, compares physical quantities produced over time. Price indices compare prices.

@@ -1,0 +1,182 @@
+# NCERT Class 11 Economics, Statistics for Economics, Chapter 4: Presentation of Data
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Statistics for Economics
+Which are the three ways of presenting data discussed in the chapter?
+(1) Primary, secondary and tertiary
+(2) Textual (descriptive), tabular and diagrammatic
+(3) Census, sample and pilot
+(4) Mean, median and mode
+= 2
+~ Data can be presented in text, in tables and in diagrams. The choice depends on the amount of data and the purpose.
+
+Q 2 | eco | Statistics for Economics
+Textual (descriptive) presentation of data is most suitable when:
+(1) The data are very large and complex
+(2) Data are to be compared over many years
+(3) Data have many categories
+(4) The quantity of data is not too large
+= 4
+~ When there are only a few figures, they can be included in the text itself. Large data are better shown in tables or diagrams.
+
+Q 3 | eco | Statistics for Economics
+In a statistical table, the column headings are called:
+(1) Captions
+(2) Stubs
+(3) The body
+(4) The source
+= 1
+~ Captions are the headings of the columns. Stubs are the headings of the rows, and the body contains the actual figures.
+
+Q 4 | eco | Statistics for Economics
+In a statistical table, the row headings are called:
+(1) Captions
+(2) Titles
+(3) Stubs
+(4) Notes
+= 3
+~ The row designations are called stubs. Together with the captions, they tell the reader what each figure in the body stands for.
+
+Q 5 | eco | Statistics for Economics
+The part of a table that tells the reader where the data came from, usually given at the bottom, is the:
+(1) Source
+(2) Caption
+(3) Stub
+(4) Table number
+= 1
+~ The source note gives the origin of the data, such as a government report, so readers can check them. A table also has a number, title, captions, stubs, body, unit of measurement and notes.
+
+Q 6 | eco | Statistics for Economics
+Which statement about a simple bar diagram is correct?
+(1) Bars may be of different widths
+(2) Bars touch each other with no gaps
+(3) It can be used only for continuous variables
+(4) Bars are of equal width with equal gaps, and the height of each bar shows the value it represents
+= 4
+~ In a bar diagram, width carries no meaning; only height does. Bars have equal width and equal spacing, and the diagram suits discrete or qualitative categories.
+
+Q 7 | eco | Statistics for Economics
+A multiple bar diagram is used when:
+(1) Only one set of figures is shown
+(2) Two or more sets of data are compared, such as exports and imports of a country over several years
+(3) A total is divided into its parts
+(4) Data form a continuous frequency distribution
+= 2
+~ Multiple bars, placed side by side for each year or category, make comparisons between two or more data sets easy.
+
+Q 8 | eco | Statistics for Economics
+A component bar diagram (sub-diagram) is used to show:
+(1) Changes over time only
+(2) A frequency distribution
+(3) The parts that make up a total, for example enrolment of boys and girls in different classes
+(4) The relationship between two variables
+= 3
+~ Each bar shows a total and is divided into segments for its components, so both the total and its make-up are visible.
+
+Q 9 | eco | Statistics for Economics
+In a pie diagram, a component that forms 25 per cent of the total is shown by a sector with an angle of:
+(1) 25 degrees
+(2) 45 degrees
+(3) 90 degrees
+(4) 180 degrees
+= 3
+~ Angle = (component ÷ total) × 360° = 0.25 × 360° = 90°. Equivalently, multiply the percentage by 3.6.
+
+Q 10 | eco | Statistics for Economics
+A family spends ₹2,400 on food out of a total monthly expenditure of ₹7,200. In a pie diagram of its expenditure, the angle for food is:
+(1) 120 degrees
+(2) 100 degrees
+(3) 33 degrees
+(4) 240 degrees
+= 1
+~ Angle = (2,400 ÷ 7,200) × 360° = (1/3) × 360° = 120°.
+
+Q 11 | eco | Statistics for Economics
+A histogram is:
+(1) A circle divided into sectors
+(2) A set of bars with gaps between them
+(3) A line joining values over time
+(4) A set of adjacent rectangles with the class intervals as bases and the frequencies as heights, with no gaps between them
+= 4
+~ In a histogram the rectangles touch each other because the classes are continuous. The area of each rectangle represents the frequency of its class.
+
+Q 12 | eco | Statistics for Economics
+A histogram is drawn for:
+(1) Qualitative data such as religion
+(2) A continuous variable grouped into a frequency distribution
+(3) A time series
+(4) The components of a total
+= 2
+~ A histogram represents a frequency distribution of a continuous variable. Qualitative and discrete categories are shown with bar diagrams instead.
+
+Q 13 | eco | Statistics for Economics
+When a frequency distribution has unequal class intervals, what must be done before drawing a histogram?
+(1) Nothing; heights are always the frequencies
+(2) The classes must be dropped
+(3) The data must be shown as a pie diagram instead
+(4) The frequencies must be adjusted (for example, frequency per unit of class width), because the area of each rectangle must be proportional to frequency
+= 4
+~ Since area, not height alone, represents frequency, wider classes would look too big unless the frequencies are adjusted for the class width.
+
+Q 14 | eco | Statistics for Economics
+Which measure of central tendency can be found graphically from a histogram?
+(1) Mean
+(2) Median
+(3) Mode
+(4) Weighted mean
+= 3
+~ The mode can be located from the tallest rectangle of a histogram. The median is located graphically using ogives.
+
+Q 15 | eco | Statistics for Economics
+A frequency polygon is drawn by:
+(1) Joining the tops of bars in a bar diagram
+(2) Joining the mid-points of the tops of adjacent rectangles of a histogram, and closing it at both ends on the x-axis
+(3) Drawing a circle and dividing it into sectors
+(4) Plotting cumulative frequencies against class limits
+= 2
+~ The polygon is closed by joining it to the mid-points of hypothetical classes before the first and after the last class on the x-axis. It can also be drawn by plotting frequencies against class marks.
+
+Q 16 | eco | Statistics for Economics
+A frequency curve is obtained by:
+(1) Drawing a smooth freehand curve through the points of a frequency polygon
+(2) Joining the upper class limits with straight lines
+(3) Drawing rectangles of equal width
+(4) Plotting the data on a pie chart
+= 1
+~ The frequency curve smooths out the angles of the frequency polygon by passing a freehand curve through its points.
+
+Q 17 | eco | Statistics for Economics
+An ogive is also known as:
+(1) A pie diagram
+(2) A component bar diagram
+(3) A cumulative frequency curve
+(4) A time series graph
+= 3
+~ An ogive plots cumulative frequencies. There are two kinds: the 'less than' ogive and the 'more than' ogive.
+
+Q 18 | eco | Statistics for Economics
+The point where the 'less than' ogive and the 'more than' ogive intersect gives the:
+(1) Median
+(2) Mean
+(3) Mode
+(4) Range
+= 1
+~ At the point of intersection, the number of observations below and above is equal, so its x-value is the median.
+
+Q 19 | eco | Statistics for Economics
+A 'less than' ogive is drawn by plotting:
+(1) Lower class limits against 'more than' cumulative frequencies
+(2) Upper class limits against 'less than' cumulative frequencies, giving a rising curve
+(3) Class marks against simple frequencies
+(4) Years against values
+= 2
+~ The 'less than' ogive uses upper class limits and rises as cumulative frequencies grow. The 'more than' ogive uses lower class limits and falls.
+
+Q 20 | eco | Statistics for Economics
+An arithmetic line graph (time series graph) is drawn with:
+(1) Frequencies on the x-axis and class marks on the y-axis
+(2) Components shown as sectors of a circle
+(3) Two variables in a two-way table
+(4) Time on the x-axis and the values of the variable on the y-axis, which helps in studying trends over time
+= 4
+~ A time series graph shows how a variable, such as exports or prices, changes over time, and helps in understanding its trend and periodicity.

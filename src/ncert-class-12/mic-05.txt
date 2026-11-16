@@ -1,0 +1,182 @@
+# NCERT Class 12 Economics, Introductory Microeconomics, Chapter 5: Market Equilibrium
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Introductory Microeconomics
+A perfectly competitive market is in equilibrium when:
+(1) Market demand equals market supply
+(2) The price is at its highest
+(3) Supply is greater than demand
+(4) All firms earn super-normal profits
+= 1
+~ At the equilibrium price, the quantity buyers want to buy equals the quantity sellers want to sell, so there is no pressure for the price to change.
+
+Q 2 | eco | Introductory Microeconomics
+If the market price is below the equilibrium price:
+(1) There is excess supply and the price tends to fall
+(2) The market is in equilibrium
+(3) There is excess demand and the price tends to rise
+(4) Firms will reduce output
+= 3
+~ At a low price, buyers want more than sellers offer. Competing buyers bid the price up until demand and supply are equal.
+
+Q 3 | eco | Introductory Microeconomics
+If the market price is above the equilibrium price:
+(1) There is excess demand and the price tends to rise
+(2) There is excess supply and the price tends to fall
+(3) The market is in equilibrium
+(4) Buyers will buy more
+= 2
+~ At a high price, sellers offer more than buyers want. Unsold goods push the price down until the market clears.
+
+Q 4 | eco | Introductory Microeconomics
+The market demand for a good is qD = 200 − p and the market supply is qS = 120 + p. What are the equilibrium price and quantity?
+(1) p = 80, q = 120
+(2) p = 20, q = 180
+(3) p = 40, q = 120
+(4) p = 40, q = 160
+= 4
+~ At equilibrium 200 − p = 120 + p, so 2p = 80 and p = 40. Then q = 200 − 40 = 160 (check: 120 + 40 = 160).
+
+Q 5 | eco | Introductory Microeconomics
+With the same market (qD = 200 − p, qS = 120 + p), what happens if the price is fixed at 30?
+(1) Excess supply of 20 units
+(2) The market is in equilibrium
+(3) Excess demand of 40 units
+(4) Excess demand of 20 units
+= 4
+~ At p = 30, qD = 170 and qS = 150. Demand exceeds supply by 20 units.
+
+Q 6 | eco | Introductory Microeconomics
+With a fixed number of firms, an increase in demand (a rightward shift of the demand curve) leads to:
+(1) A fall in price and a rise in quantity
+(2) A rise in both the equilibrium price and quantity
+(3) A fall in both price and quantity
+(4) No change in price or quantity
+= 2
+~ At the old price there is now excess demand, so the price rises, and firms supply more along the supply curve. Both price and quantity rise.
+
+Q 7 | eco | Introductory Microeconomics
+With demand unchanged, an increase in supply (a rightward shift of the supply curve) leads to:
+(1) A fall in the equilibrium price and a rise in the equilibrium quantity
+(2) A rise in both price and quantity
+(3) A rise in price and a fall in quantity
+(4) No change in quantity
+= 1
+~ At the old price there is excess supply, so the price falls, and buyers buy more. Price falls and quantity rises.
+
+Q 8 | eco | Introductory Microeconomics
+If both demand and supply increase at the same time, then:
+(1) Price and quantity will both definitely rise
+(2) Quantity will fall
+(3) Quantity will rise, but price may rise, fall or remain the same
+(4) Price will definitely fall
+= 3
+~ Both shifts push quantity up. Demand pushes price up while supply pushes it down, so the effect on price depends on which shift is larger.
+
+Q 9 | eco | Introductory Microeconomics
+If demand increases and supply decreases at the same time, then:
+(1) Price will fall and quantity will rise
+(2) Both price and quantity will definitely fall
+(3) Price will rise, but the effect on quantity is uncertain
+(4) Neither price nor quantity will change
+= 3
+~ Both shifts push price up. Demand pushes quantity up while supply pushes it down, so the change in quantity depends on the relative sizes of the shifts.
+
+Q 10 | eco | Introductory Microeconomics
+In a perfectly competitive market with free entry and exit, the long-run equilibrium price equals:
+(1) The minimum average cost of the firms, so they earn only normal profit
+(2) The maximum average cost
+(3) Zero
+(4) The average fixed cost
+= 1
+~ If price were above minimum AC, new firms would enter; if below, firms would leave. Entry and exit stop only when price equals minimum AC.
+
+Q 11 | eco | Introductory Microeconomics
+In a market with free entry and exit, what happens in the long run when demand increases?
+(1) Price rises permanently and quantity falls
+(2) Price and quantity both fall
+(3) Nothing changes
+(4) Price stays at the minimum average cost, quantity rises and the number of firms increases
+= 4
+~ Higher demand briefly raises profits, attracting new firms until price returns to minimum AC. The extra demand is met by more firms, so only quantity and the number of firms change.
+
+Q 12 | eco | Introductory Microeconomics
+Adam Smith's 'invisible hand' refers to:
+(1) Government control of prices
+(2) The idea that the market forces of demand and supply bring about equilibrium on their own
+(3) Hidden taxes
+(4) The role of the central bank
+= 2
+~ When there is excess demand or supply, price adjusts without any central direction. This self-correcting process is described as the invisible hand.
+
+Q 13 | eco | Introductory Microeconomics
+A price ceiling is:
+(1) A minimum price set above the equilibrium price
+(2) A maximum price set by the government below the equilibrium price
+(3) The equilibrium price itself
+(4) A tax on a good
+= 2
+~ The government may fix an upper limit on the price of essential goods such as wheat, rice, kerosene or sugar, to make them affordable. To be effective, it must be below the equilibrium price.
+
+Q 14 | eco | Introductory Microeconomics
+What are the likely results of a price ceiling below the equilibrium price?
+(1) Excess supply and falling stocks
+(2) No effect on the market
+(3) A rise in the market price
+(4) Excess demand (shortage), rationing through ration shops, and the possibility of black markets
+= 4
+~ At the low price, demand exceeds supply. The government rations the good, and some consumers may be willing to pay more in the black market.
+
+Q 15 | eco | Introductory Microeconomics
+A price floor is:
+(1) A minimum price set above the equilibrium price, such as minimum support prices for crops or minimum wages
+(2) A maximum price set below equilibrium
+(3) The price at which demand is zero
+(4) A price fixed by firms
+= 1
+~ A price floor stops the price from falling below a set level. Examples are support prices for agricultural goods and minimum wage laws.
+
+Q 16 | eco | Introductory Microeconomics
+To keep a support price above the equilibrium price for a crop, the government must usually:
+(1) Reduce the price further
+(2) Ban the crop
+(3) Buy the surplus that is not purchased by the market
+(4) Import more of the crop
+= 3
+~ At the support price, supply exceeds demand. The government buys the excess supply, for example through procurement, and stores it as buffer stock.
+
+Q 17 | eco | Introductory Microeconomics
+In a perfectly competitive labour market, a firm hires labour up to the point where:
+(1) The wage is zero
+(2) The wage is highest
+(3) The marginal product of labour is maximum
+(4) The wage equals the value of the marginal product of labour (price × marginal product)
+= 4
+~ An extra worker adds price × MPL to revenue and the wage to cost. The firm keeps hiring as long as the first exceeds the second, and stops where they are equal.
+
+Q 18 | eco | Introductory Microeconomics
+The market demand is qD = 100 − 2p and the market supply is qS = 20 + 2p. What are the equilibrium price and quantity?
+(1) p = 20, q = 60
+(2) p = 30, q = 40
+(3) p = 20, q = 40
+(4) p = 40, q = 20
+= 1
+~ 100 − 2p = 20 + 2p gives 4p = 80, so p = 20. Then q = 100 − 40 = 60 (check: 20 + 40 = 60).
+
+Q 19 | eco | Introductory Microeconomics
+With a fixed number of firms, a decrease in demand leads to:
+(1) A rise in price and quantity
+(2) A fall in both equilibrium price and quantity
+(3) A rise in price and a fall in quantity
+(4) No change
+= 2
+~ At the old price there is excess supply, so the price falls and firms supply less. Both price and quantity fall.
+
+Q 20 | eco | Introductory Microeconomics
+With free entry and exit, what happens in the long run if firms in an industry are earning super-normal profits?
+(1) Firms leave the industry
+(2) The price rises further
+(3) New firms enter, supply increases and the price falls until only normal profits are earned
+(4) Demand falls to zero
+= 3
+~ Super-normal profits attract new firms. Their entry raises market supply and lowers the price until it equals minimum average cost.

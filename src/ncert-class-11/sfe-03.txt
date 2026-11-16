@@ -1,0 +1,182 @@
+# NCERT Class 11 Economics, Statistics for Economics, Chapter 3: Organisation of Data
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Statistics for Economics
+In statistics, classification means:
+(1) Arranging or organising raw data into groups or classes according to their resemblances
+(2) Collecting new data
+(3) Drawing graphs of data
+(4) Deleting unwanted data
+= 1
+~ Raw data are hard to read. Classification puts similar items into groups or classes, which makes the data easier to understand and compare.
+
+Q 2 | eco | Statistics for Economics
+Data on India's exports for each year from 2010 to 2020 are an example of which type of classification?
+(1) Spatial
+(2) Qualitative
+(3) Quantitative
+(4) Chronological
+= 4
+~ When data are classified by time, such as years, quarters or months, the classification is chronological.
+
+Q 3 | eco | Statistics for Economics
+Data on wheat production in different states of India are classified:
+(1) Chronologically
+(2) Spatially
+(3) Qualitatively
+(4) By class marks
+= 2
+~ Spatial classification groups data by place, such as countries, states or districts.
+
+Q 4 | eco | Statistics for Economics
+Classifying a population by marital status or literacy is an example of:
+(1) Chronological classification
+(2) Spatial classification
+(3) Qualitative classification
+(4) Quantitative classification
+= 3
+~ Qualitative classification groups data by attributes that cannot be measured in numbers, such as gender, literacy, religion or marital status.
+
+Q 5 | eco | Statistics for Economics
+Grouping families by monthly income in ranges such as ₹0–10,000 and ₹10,000–20,000 is an example of:
+(1) Chronological classification
+(2) Qualitative classification
+(3) Quantitative classification
+(4) Spatial classification
+= 3
+~ Quantitative classification groups data by characteristics that can be measured, such as income, height, weight or marks.
+
+Q 6 | eco | Statistics for Economics
+Which of the following is a continuous variable?
+(1) Number of students in a class
+(2) Height of students, which can take any value including fractions
+(3) Number of rooms in a house
+(4) Number of cars in a parking lot
+= 2
+~ A continuous variable can take any numerical value, whole or fractional, within a range: height, weight, time and distance are examples.
+
+Q 7 | eco | Statistics for Economics
+Which of the following is a discrete variable?
+(1) Weight of a person
+(2) Time taken to run a race
+(3) Temperature of a city
+(4) Number of children in a family
+= 4
+~ A discrete variable takes only certain values and jumps from one to the next; a family can have 2 or 3 children, but not 2.5.
+
+Q 8 | eco | Statistics for Economics
+The class mark (mid-value) of a class is calculated as:
+(1) (Upper class limit + lower class limit) ÷ 2
+(2) Upper class limit − lower class limit
+(3) Upper class limit × lower class limit
+(4) Frequency ÷ class width
+= 1
+~ The class mark is the middle value of the class. It is used as the representative value of all the observations in that class.
+
+Q 9 | eco | Statistics for Economics
+What is the class mark of the class 20–30?
+(1) 10
+(2) 20
+(3) 30
+(4) 25
+= 4
+~ Class mark = (20 + 30) ÷ 2 = 25.
+
+Q 10 | eco | Statistics for Economics
+The width of a class interval is:
+(1) The number of observations in the class
+(2) The difference between the upper class limit and the lower class limit
+(3) The sum of the two class limits
+(4) The middle value of the class
+= 2
+~ For the class 10–20, the width is 20 − 10 = 10. The number of observations in a class is its frequency, and the middle value is its class mark.
+
+Q 11 | eco | Statistics for Economics
+In the exclusive method, with classes 0–10, 10–20, 20–30, an observation of exactly 10 is placed in:
+(1) 0–10
+(2) Both 0–10 and 10–20
+(3) 10–20
+(4) Neither class
+= 3
+~ In the exclusive method the upper limit of one class is the lower limit of the next, and a value equal to the upper limit is counted in the next class. So 10 goes into 10–20.
+
+Q 12 | eco | Statistics for Economics
+In the inclusive method of classification:
+(1) Both the upper and the lower limits of a class are included in that class, for example 0–9, 10–19
+(2) The upper limit is excluded from the class
+(3) Classes overlap, so an observation is counted twice
+(4) Only the class mark is recorded
+= 1
+~ In the inclusive method a class such as 10–19 includes both 10 and 19. It is often used for discrete data.
+
+Q 13 | eco | Statistics for Economics
+Classes in the inclusive form are 10–19, 20–29, 30–39. After adjustment to make them continuous, the class 10–19 becomes:
+(1) 10–20
+(2) 9.5–19.5
+(3) 10.5–19.5
+(4) 9–19
+= 2
+~ The gap between 20 (the next lower limit) and 19 (this upper limit) is 1. Half of it, 0.5, is subtracted from the lower limit and added to the upper limit: 9.5–19.5.
+
+Q 14 | eco | Statistics for Economics
+What 'loss of information' occurs when data are grouped into a frequency distribution?
+(1) Some observations are deleted
+(2) The total number of observations changes
+(3) The data cannot be used for any calculation
+(4) Individual observations lose their identity, and the class mark is used to represent all values in the class
+= 4
+~ Once values are placed in classes, we know only how many fall in each class, not their exact values. Calculations then treat the class mark as the value of every observation in the class.
+
+Q 15 | eco | Statistics for Economics
+A frequency array is used for:
+(1) A discrete variable, showing each value and the number of times it occurs
+(2) A continuous variable grouped into classes
+(3) Two variables at the same time
+(4) Qualitative data only
+= 1
+~ For a discrete variable, such as the size of households, a frequency array lists each value with its frequency, without class intervals.
+
+Q 16 | eco | Statistics for Economics
+A bivariate frequency distribution is:
+(1) A distribution with two classes only
+(2) A distribution with two frequencies for each class
+(3) The frequency distribution of two variables together, such as sales and advertisement expenditure of firms
+(4) A distribution of qualitative data only
+= 3
+~ A bivariate frequency distribution shows how observations are distributed over the classes of two variables at the same time, in a two-way table.
+
+Q 17 | eco | Statistics for Economics
+How are tally marks used to count frequencies?
+(1) Each observation is written in words
+(2) Each observation is marked by a vertical bar, and every fifth is a stroke across the previous four
+(3) Only the first and last observations are marked
+(4) Each class gets one mark regardless of observations
+= 2
+~ Tally marks are grouped in fives (four bars and a crossing stroke), which makes it easy to count how many observations fall in each class.
+
+Q 18 | eco | Statistics for Economics
+The frequency of a class is:
+(1) Its width
+(2) Its upper limit
+(3) Its class mark
+(4) The number of observations that fall in that class
+= 4
+~ Frequency tells how many times values in that class occur in the data.
+
+Q 19 | eco | Statistics for Economics
+'Raw data' are:
+(1) Data in the form in which they were collected, not yet organised
+(2) Data already grouped into classes
+(3) Data that are wrong
+(4) Data shown in a graph
+= 1
+~ Raw data are unclassified data as collected. They are organised through classification so that they can be understood and analysed.
+
+Q 20 | eco | Statistics for Economics
+The marks of 10 students are: 12, 25, 37, 18, 22, 29, 31, 15, 20, 26. Using exclusive classes 10–20, 20–30 and 30–40, what is the frequency of the class 20–30?
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 3
+~ The marks 25, 22, 29, 20 and 26 fall in 20–30 (20 is included in 20–30 under the exclusive method), so the frequency is 5. The class 10–20 has 12, 18, 15 and 30–40 has 37, 31.

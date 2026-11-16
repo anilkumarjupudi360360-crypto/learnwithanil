@@ -1,0 +1,186 @@
+# NCERT Class 12 Economics, Introductory Macroeconomics, Chapter 2: National Income Accounting
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Introductory Macroeconomics
+Final goods are:
+(1) Goods that are used up in the production of other goods
+(2) Goods meant for final use that will not pass through any further stage of production or transformation
+(3) Only goods bought by the government
+(4) Only goods that are exported
+= 2
+~ A good is final if it is bought for final use, by a consumer or as investment, and not for further processing or resale. Whether a good is final depends on its use, not on what it is.
+
+Q 2 | eco | Introductory Macroeconomics
+Which of the following is an intermediate good?
+(1) A car bought by a family
+(2) A machine bought by a factory for its own use
+(3) Bread bought by a household
+(4) Steel sheets bought by a car manufacturer
+= 4
+~ Steel sheets are used up in making cars, so they are intermediate goods. The value of the steel is already included in the value of the car.
+
+Q 3 | eco | Introductory Macroeconomics
+Capital goods are:
+(1) Durable goods, such as machines, that are used in production over several years; they are final goods
+(2) Raw materials used up in one production cycle
+(3) Goods bought by consumers for immediate use
+(4) Goods that cannot be sold
+= 1
+~ Capital goods help produce other goods over many years and gradually wear out. They are not transformed in production, so they are counted as final goods.
+
+Q 4 | eco | Introductory Macroeconomics
+Which of the following is a stock variable?
+(1) Income earned during a year
+(2) Investment made during a year
+(3) The capital stock of a firm on 31 March
+(4) Depreciation during a year
+= 3
+~ A stock is measured at a point of time, such as capital or wealth. Income, investment and depreciation are flows, measured over a period.
+
+Q 5 | eco | Introductory Macroeconomics
+If gross investment in an economy is ₹500 crore and depreciation is ₹100 crore, net investment is:
+(1) ₹600 crore
+(2) ₹500 crore
+(3) ₹400 crore
+(4) ₹100 crore
+= 3
+~ Net investment = gross investment − depreciation = 500 − 100 = ₹400 crore. Depreciation replaces worn-out capital; only net investment adds to the capital stock.
+
+Q 6 | eco | Introductory Macroeconomics
+A farmer grows wheat worth ₹100 using no purchased inputs and sells it to a miller. The miller makes flour worth ₹150 and sells it to a baker, who makes bread worth ₹200 and sells it to consumers. What is the total value added?
+(1) ₹200
+(2) ₹450
+(3) ₹350
+(4) ₹150
+= 1
+~ Value added: farmer 100, miller 150 − 100 = 50, baker 200 − 150 = 50. Total = ₹200, the value of the final good. Adding all sales (₹450) would count the wheat and flour more than once.
+
+Q 7 | eco | Introductory Macroeconomics
+Why is the value added method used in calculating GDP?
+(1) To include intermediate goods twice
+(2) To include second-hand goods
+(3) To exclude services
+(4) To avoid double counting of intermediate goods
+= 4
+~ Summing the value of all goods sold would count intermediate goods again and again. Summing only the value added at each stage avoids this double counting.
+
+Q 8 | eco | Introductory Macroeconomics
+A firm produces output worth ₹500. It uses intermediate goods worth ₹200, and depreciation is ₹30. What is its net value added?
+(1) ₹300
+(2) ₹270
+(3) ₹470
+(4) ₹230
+= 2
+~ Gross value added = 500 − 200 = ₹300. Net value added = gross value added − depreciation = 300 − 30 = ₹270.
+
+Q 9 | eco | Introductory Macroeconomics
+In national income accounting, an increase in a firm's unsold stock (inventories) during a year is treated as:
+(1) Consumption by the firm
+(2) A loss that is ignored
+(3) An intermediate good
+(4) Investment by the firm
+= 4
+~ Change in inventories = production − sales. The unsold output is counted as inventory investment, so it is part of the year's output and of investment expenditure.
+
+Q 10 | eco | Introductory Macroeconomics
+In an economy, consumption is ₹600, investment ₹200, government expenditure ₹150, exports ₹100 and imports ₹120 (in crore). What is GDP by the expenditure method?
+(1) ₹1,170 crore
+(2) ₹930 crore
+(3) ₹1,050 crore
+(4) ₹830 crore
+= 2
+~ GDP = C + I + G + X − M = 600 + 200 + 150 + 100 − 120 = ₹930 crore. Imports are subtracted because they are produced abroad.
+
+Q 11 | eco | Introductory Macroeconomics
+By the income method, GDP is the sum of:
+(1) Wages, profits, interest and rent
+(2) Consumption, investment and exports
+(3) Taxes and subsidies
+(4) Value of all sales in the economy
+= 1
+~ All the value added in production is paid out as factor incomes: wages to labour, interest to capital, rent to land and profit to entrepreneurs. Their sum equals GDP.
+
+Q 12 | eco | Introductory Macroeconomics
+Gross National Product (GNP) is equal to:
+(1) GDP − depreciation
+(2) GDP − indirect taxes
+(3) GDP + net factor income from abroad
+(4) GDP + imports
+= 3
+~ GNP adds to GDP the factor income earned by the country's factors working abroad and subtracts the factor income earned by foreign factors in the domestic economy.
+
+Q 13 | eco | Introductory Macroeconomics
+GDP at market prices is ₹1,000 crore, net factor income from abroad is −₹20 crore, depreciation is ₹80 crore, and net indirect taxes (indirect taxes − subsidies) are ₹100 crore. What is National Income (NNP at factor cost)?
+(1) ₹800 crore
+(2) ₹900 crore
+(3) ₹980 crore
+(4) ₹820 crore
+= 1
+~ GNP at MP = 1,000 − 20 = 980. NNP at MP = 980 − 80 = 900. NNP at factor cost = 900 − 100 = ₹800 crore.
+
+Q 14 | eco | Introductory Macroeconomics
+NNP at factor cost is obtained from NNP at market prices by subtracting:
+(1) Depreciation
+(2) Net factor income from abroad
+(3) Personal taxes
+(4) Indirect taxes minus subsidies
+= 4
+~ Market prices include indirect taxes and are lowered by subsidies. Removing net indirect taxes gives the value at factor cost, which is National Income.
+
+Q 15 | eco | Introductory Macroeconomics
+Personal Disposable Income is:
+(1) National Income + depreciation
+(2) GDP − imports
+(3) Personal Income − personal tax payments − non-tax payments
+(4) Personal Income + transfer payments
+= 3
+~ Personal Disposable Income is the part of personal income that households are free to spend or save, after paying personal taxes and non-tax payments such as fines.
+
+Q 16 | eco | Introductory Macroeconomics
+Real GDP is:
+(1) GDP measured at current prices
+(2) The value of goods and services measured at constant (base year) prices
+(3) GDP minus depreciation
+(4) GDP plus net factor income from abroad
+= 2
+~ Real GDP values output at the prices of a base year, so changes in it reflect changes in quantities, not in prices. Nominal GDP uses current prices.
+
+Q 17 | eco | Introductory Macroeconomics
+If nominal GDP is ₹1,200 crore and real GDP is ₹1,000 crore, the GDP deflator (as an index) is:
+(1) 83.3
+(2) 100
+(3) 200
+(4) 120
+= 4
+~ GDP deflator = (nominal GDP ÷ real GDP) × 100 = (1,200 ÷ 1,000) × 100 = 120, showing prices are 20 per cent higher than in the base year.
+
+Q 18 | eco | Introductory Macroeconomics
+How does the GDP deflator differ from the Consumer Price Index (CPI)?
+(1) The CPI includes prices of imported goods consumed and uses fixed weights, while the GDP deflator covers only goods and services produced in the country, with weights that vary with production
+(2) They are the same index
+(3) The GDP deflator covers only consumer goods
+(4) The CPI covers all goods produced in the country
+= 1
+~ The CPI tracks a fixed basket bought by consumers, including imports. The GDP deflator covers everything produced domestically, and its weights change with the composition of output.
+
+Q 19 | eco | Introductory Macroeconomics
+Why is GDP not a perfect index of the welfare of a country?
+1. The distribution of GDP may be very unequal.
+2. Non-monetary exchanges, such as domestic work and barter, are not counted.
+3. Externalities, such as pollution, are not accounted for.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 1, 2 and 3
+(3) 2 and 3 only
+(4) 1 and 3 only
+= 2
+~ A rising GDP may go mostly to the rich, may miss valuable unpaid activities, and does not subtract harmful effects like pollution. So higher GDP does not always mean higher welfare.
+
+Q 20 | eco | Introductory Macroeconomics
+Which of the following is an example of a negative externality?
+(1) A family buying a new television
+(2) A government building a school
+(3) A refinery polluting a river and harming fishermen without paying for the harm
+(4) A farmer selling wheat at the market price
+= 3
+~ Externalities are benefits or harms that a firm or person causes to others without receiving or paying any price. Pollution that hurts others is a negative externality, and GDP does not account for it.

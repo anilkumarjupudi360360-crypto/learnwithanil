@@ -1,0 +1,182 @@
+# NCERT Class 12 Economics, Introductory Microeconomics, Chapter 2: Theory of Consumer Behaviour
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Introductory Microeconomics
+The law of diminishing marginal utility states that:
+(1) Total utility always falls as consumption rises
+(2) The marginal utility from successive units of a commodity declines as more of it is consumed
+(3) Marginal utility rises with each unit consumed
+(4) Utility cannot be measured
+= 2
+~ Each additional unit of a good adds less satisfaction than the one before. A thirsty person enjoys the first glass of water most.
+
+Q 2 | eco | Introductory Microeconomics
+The total utility from consuming 1, 2, 3, 4 and 5 units of a good is 12, 20, 25, 27 and 27. What is the marginal utility of the third unit?
+(1) 25
+(2) 8
+(3) 2
+(4) 5
+= 4
+~ Marginal utility of the third unit = TU(3) − TU(2) = 25 − 20 = 5. The marginal utilities are 12, 8, 5, 2 and 0; when MU becomes zero, total utility is at its maximum.
+
+Q 3 | eco | Introductory Microeconomics
+A demand curve shaped like a rectangular hyperbola has a price elasticity that is:
+(1) Zero at every point
+(2) Infinite at every point
+(3) Equal to one (unitary) at every point
+(4) Greater than one at high prices and less than one at low prices
+= 3
+~ On a rectangular hyperbola, price × quantity is constant, so total expenditure does not change with price. That happens only when elasticity is unitary throughout.
+
+Q 4 | eco | Introductory Microeconomics
+Using the cardinal utility approach, a consumer buying a single good is in equilibrium when:
+(1) The marginal utility of the good, in money terms, equals its price
+(2) Total utility is zero
+(3) Marginal utility is at its highest
+(4) The price of the good is zero
+= 1
+~ If MU were greater than the price, buying more would add to satisfaction; if less, buying less would. The consumer stops where MU equals price.
+
+Q 5 | eco | Introductory Microeconomics
+With two goods X and Y, the condition for consumer equilibrium in the marginal utility approach is:
+(1) MUx ÷ Px = MUy ÷ Py
+(2) MUx = MUy
+(3) Px = Py
+(4) MUx × Px = MUy × Py
+= 1
+~ The consumer allocates income so that the last rupee spent on each good gives the same marginal utility. Otherwise, shifting spending would raise total utility.
+
+Q 6 | eco | Introductory Microeconomics
+For a consumer with income M buying two goods with prices p1 and p2, the budget line is:
+(1) p1 + p2 = M
+(2) p1x1 − p2x2 = M
+(3) p1x1 + p2x2 = M
+(4) x1 + x2 = M
+= 3
+~ The budget line shows all bundles that cost exactly the consumer's income. Bundles on or below it form the budget set.
+
+Q 7 | eco | Introductory Microeconomics
+A consumer has an income of ₹100. The price of good 1 is ₹5 and the price of good 2 is ₹10. What is the maximum quantity of good 1 she can buy?
+(1) 10
+(2) 20
+(3) 5
+(4) 50
+= 2
+~ If she spends everything on good 1, she can buy 100 ÷ 5 = 20 units. This is where the budget line meets the good 1 axis.
+
+Q 8 | eco | Introductory Microeconomics
+The slope of the budget line is:
+(1) −M ÷ p1
+(2) p1 × p2
+(3) −p2 ÷ p1
+(4) −p1 ÷ p2
+= 4
+~ The slope, −p1/p2, shows the rate at which the market allows the consumer to substitute good 2 for good 1: to buy one more unit of good 1 she must give up p1/p2 units of good 2.
+
+Q 9 | eco | Introductory Microeconomics
+If the consumer's income rises while prices stay the same, the budget line:
+(1) Rotates around the good 2 axis
+(2) Becomes steeper
+(3) Does not change
+(4) Shifts outward parallel to the original line
+= 4
+~ Higher income raises both intercepts in the same proportion while the slope (−p1/p2) is unchanged, so the line shifts out in parallel.
+
+Q 10 | eco | Introductory Microeconomics
+If the price of good 1 falls while income and the price of good 2 are unchanged, the budget line:
+(1) Shifts inward parallel
+(2) Rotates outward: its intercept on the good 1 axis increases while the intercept on the good 2 axis stays the same
+(3) Does not change
+(4) Rotates inward on the good 2 axis
+= 2
+~ The consumer can now buy more of good 1 with the same income, but the maximum amount of good 2 is unchanged, so the line pivots outward around its good 2 intercept and becomes flatter.
+
+Q 11 | eco | Introductory Microeconomics
+A consumer's preferences are 'monotonic' if she:
+(1) Prefers bundles with less of both goods
+(2) Is indifferent between all bundles
+(3) Prefers a bundle that has more of at least one good and no less of the other
+(4) Always buys the same quantity
+= 3
+~ Monotonic preferences mean 'more is better'. This is why indifference curves slope downward and higher curves give more satisfaction.
+
+Q 12 | eco | Introductory Microeconomics
+An indifference curve shows:
+(1) All bundles of two goods that give the consumer the same level of satisfaction
+(2) All bundles the consumer can afford
+(3) The prices of two goods
+(4) The demand for one good
+= 1
+~ The consumer is indifferent between all bundles on the same curve. A set of such curves is an indifference map, and higher curves represent higher satisfaction.
+
+Q 13 | eco | Introductory Microeconomics
+Indifference curves are usually convex to the origin because of:
+(1) Increasing income
+(2) Rising prices
+(3) A diminishing marginal rate of substitution
+(4) Constant marginal utility
+= 3
+~ As the consumer has more of good 1, she is willing to give up less and less of good 2 for an extra unit of good 1. This diminishing MRS gives the curve its convex shape.
+
+Q 14 | eco | Introductory Microeconomics
+Why can two indifference curves not intersect?
+(1) Because intersection would contradict monotonic preferences: the point of intersection would give the same satisfaction as bundles on both curves, which have different satisfaction levels
+(2) Because prices are fixed
+(3) Because the budget line prevents it
+(4) Because utility cannot be measured
+= 1
+~ If two curves crossed, the common point would be equally good as a bundle on the higher curve and as one on the lower curve, though one of those has more of a good. This is impossible with monotonic preferences.
+
+Q 15 | eco | Introductory Microeconomics
+In the indifference curve approach, the consumer's optimum is where:
+(1) The budget line cuts the indifference curve twice
+(2) The indifference curve is vertical
+(3) Total utility is zero
+(4) The budget line is tangent to an indifference curve, so that MRS = p1 ÷ p2
+= 4
+~ At the point of tangency, the rate at which the consumer is willing to substitute one good for another equals the rate at which the market allows it.
+
+Q 16 | eco | Introductory Microeconomics
+An 'inferior good' is one whose demand:
+(1) Rises when income rises
+(2) Falls when income rises
+(3) Does not change with income
+(4) Rises when its price rises
+= 2
+~ For normal goods, demand rises with income. For inferior goods, such as coarse cereals for some consumers, demand falls as income rises because people switch to better goods.
+
+Q 17 | eco | Introductory Microeconomics
+Tea and coffee are substitutes. If the price of coffee rises, what happens to the demand for tea?
+(1) It falls
+(2) It remains unchanged
+(3) It becomes zero
+(4) It increases
+= 4
+~ Coffee becomes relatively costlier, so some consumers switch to tea. For complements, such as tea and sugar, a rise in the price of one reduces the demand for the other.
+
+Q 18 | eco | Introductory Microeconomics
+For a normal good, an increase in the consumer's income leads to:
+(1) A rightward shift of the demand curve
+(2) A movement along the demand curve
+(3) A fall in demand
+(4) No change in demand
+= 1
+~ A change in the good's own price causes a movement along the demand curve. Changes in income, prices of related goods or tastes shift the whole curve.
+
+Q 19 | eco | Introductory Microeconomics
+The price of a good rises from ₹10 to ₹12, and the quantity demanded falls from 100 to 90 units. What is the price elasticity of demand (in absolute value)?
+(1) 2
+(2) 0.5
+(3) 1
+(4) 0.2
+= 2
+~ Percentage change in quantity = (−10 ÷ 100) × 100 = −10 per cent. Percentage change in price = (2 ÷ 10) × 100 = 20 per cent. Elasticity = 10 ÷ 20 = 0.5, so demand is inelastic.
+
+Q 20 | eco | Introductory Microeconomics
+If the demand for a good is price elastic (elasticity greater than one), a fall in its price will:
+(1) Reduce total expenditure on the good
+(2) Leave total expenditure unchanged
+(3) Increase total expenditure on the good
+(4) Make quantity demanded fall
+= 3
+~ With elastic demand, quantity rises proportionally more than price falls, so price × quantity goes up. With inelastic demand, expenditure would fall; with unitary elasticity, it would stay the same.

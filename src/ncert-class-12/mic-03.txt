@@ -1,0 +1,182 @@
+# NCERT Class 12 Economics, Introductory Microeconomics, Chapter 3: Production and Costs
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Introductory Microeconomics
+The production function of a firm shows:
+(1) The prices of the firm's inputs
+(2) The profit of the firm
+(3) The relationship between the inputs used and the maximum output that can be produced from them
+(4) The demand for the firm's product
+= 3
+~ A production function such as q = f(L, K) tells the maximum output a firm can produce from each combination of inputs, given its technology.
+
+Q 2 | eco | Introductory Microeconomics
+Which statement correctly distinguishes the short run from the long run?
+(1) In the short run at least one factor of production is fixed; in the long run all factors can be varied
+(2) In the short run all factors are variable; in the long run all are fixed
+(3) The short run is always less than one year
+(4) There is no difference
+= 1
+~ The short run and long run are defined by whether all inputs can be changed, not by calendar time.
+
+Q 3 | eco | Introductory Microeconomics
+With a fixed amount of capital, the total product of labour for 1, 2, 3, 4 and 5 workers is 10, 24, 36, 44 and 48. What is the marginal product of the third worker?
+(1) 36
+(2) 24
+(3) 10
+(4) 12
+= 4
+~ MP of the third worker = TP(3) − TP(2) = 36 − 24 = 12. The marginal products are 10, 14, 12, 8 and 4.
+
+Q 4 | eco | Introductory Microeconomics
+With the same data (TP of 10, 24, 36, 44 and 48 for 1 to 5 workers), what is the average product of labour when 4 workers are employed?
+(1) 8
+(2) 11
+(3) 44
+(4) 12
+= 2
+~ AP = TP ÷ L = 44 ÷ 4 = 11.
+
+Q 5 | eco | Introductory Microeconomics
+The law of diminishing marginal product states that:
+(1) Total product always falls as more labour is used
+(2) As more of a variable input is used with fixed inputs, its marginal product eventually falls
+(3) Marginal product always rises
+(4) Doubling all inputs doubles output
+= 2
+~ Marginal product may rise at first, but after a point each extra unit of the variable input has less of the fixed input to work with, so its marginal product falls. This is also called the law of variable proportions.
+
+Q 6 | eco | Introductory Microeconomics
+When total product is at its maximum, marginal product is:
+(1) Maximum
+(2) Equal to average product
+(3) Negative
+(4) Zero
+= 4
+~ Total product rises while MP is positive and falls once MP turns negative, so TP is at its peak where MP is zero.
+
+Q 7 | eco | Introductory Microeconomics
+What is the relationship between average product (AP) and marginal product (MP)?
+(1) AP and MP are always equal
+(2) AP always lies above MP
+(3) When MP is above AP, AP rises; when MP is below AP, AP falls; MP equals AP at the maximum of AP
+(4) MP is always zero when AP rises
+= 3
+~ Adding a unit with a product above the average pulls the average up; adding one below the average pulls it down. So MP cuts AP at AP's highest point.
+
+Q 8 | eco | Introductory Microeconomics
+An isoquant shows:
+(1) All combinations of two inputs that produce the same maximum level of output
+(2) All combinations of two goods that give equal satisfaction
+(3) The cost of producing different outputs
+(4) The price of output
+= 1
+~ An isoquant is the production counterpart of an indifference curve: every input combination on it gives the same output.
+
+Q 9 | eco | Introductory Microeconomics
+If doubling all inputs leads to more than double the output, the production function shows:
+(1) Increasing returns to scale
+(2) Constant returns to scale
+(3) Decreasing returns to scale
+(4) Diminishing marginal product
+= 1
+~ Returns to scale concern changing all inputs in the same proportion. Output rising more than proportionately is increasing returns to scale.
+
+Q 10 | eco | Introductory Microeconomics
+The production function q = x1^0.5 × x2^0.5 exhibits:
+(1) Increasing returns to scale
+(2) Decreasing returns to scale
+(3) Constant returns to scale
+(4) No returns at all
+= 3
+~ For a Cobb-Douglas function q = x1^α × x2^β, returns to scale depend on α + β. Here 0.5 + 0.5 = 1, so doubling both inputs exactly doubles output.
+
+Q 11 | eco | Introductory Microeconomics
+The production function q = x1^0.6 × x2^0.7 exhibits:
+(1) Constant returns to scale
+(2) Increasing returns to scale
+(3) Decreasing returns to scale
+(4) Diminishing returns to scale only in the short run
+= 2
+~ α + β = 0.6 + 0.7 = 1.3, which is greater than 1, so output rises more than proportionately with inputs: increasing returns to scale.
+
+Q 12 | eco | Introductory Microeconomics
+Which cost does not change with the level of output in the short run?
+(1) Total variable cost
+(2) Total cost
+(3) Marginal cost
+(4) Total fixed cost
+= 4
+~ Fixed costs, such as rent for the factory building, must be paid whatever the output, even if nothing is produced.
+
+Q 13 | eco | Introductory Microeconomics
+The shape of the average fixed cost (AFC) curve is:
+(1) U-shaped
+(2) A horizontal straight line
+(3) A rising straight line
+(4) A curve that falls continuously as output rises (a rectangular hyperbola)
+= 4
+~ AFC = TFC ÷ q. Since TFC is constant, AFC × q is always the same, so AFC keeps falling as output rises.
+
+Q 14 | eco | Introductory Microeconomics
+A firm's total fixed cost is ₹100, and its total variable cost at 4 units of output is ₹120. What is its average cost at 4 units?
+(1) ₹30
+(2) ₹55
+(3) ₹25
+(4) ₹220
+= 2
+~ TC = TFC + TVC = 100 + 120 = ₹220. Average cost = 220 ÷ 4 = ₹55 (AFC 25 + AVC 30).
+
+Q 15 | eco | Introductory Microeconomics
+A firm's total variable cost is ₹70 at 2 units and ₹90 at 3 units of output. What is the short-run marginal cost of the third unit?
+(1) ₹20
+(2) ₹30
+(3) ₹90
+(4) ₹63.33
+= 1
+~ SMC = change in TVC (or TC) ÷ change in output = (90 − 70) ÷ 1 = ₹20.
+
+Q 16 | eco | Introductory Microeconomics
+The short-run marginal cost (SMC) curve cuts the average variable cost (AVC) and short-run average cost (SAC) curves:
+(1) At their maximum points
+(2) Where they meet the y-axis
+(3) At their minimum points
+(4) Never
+= 3
+~ When marginal cost is below average cost, the average falls; when above, it rises. So SMC passes through the lowest points of both AVC and SAC.
+
+Q 17 | eco | Introductory Microeconomics
+Why are the AVC, SAC and SMC curves U-shaped in the short run?
+(1) Because of increasing returns to scale only
+(2) Because fixed costs rise with output
+(3) Because input prices keep falling
+(4) Because of the law of variable proportions: marginal product first rises and then falls
+= 4
+~ When MP of the variable input rises, the cost of each extra unit falls; once MP diminishes, it rises. This gives the U-shape to the short-run cost curves.
+
+Q 18 | eco | Introductory Microeconomics
+The vertical gap between the short-run average cost (SAC) and average variable cost (AVC) curves equals:
+(1) Average fixed cost, which falls as output rises, so the two curves come closer
+(2) Marginal cost
+(3) Total fixed cost
+(4) Zero at all outputs
+= 1
+~ SAC = AVC + AFC. Since AFC keeps falling, the gap between SAC and AVC narrows as output increases.
+
+Q 19 | eco | Introductory Microeconomics
+The long-run average cost (LRAC) curve is U-shaped mainly because of:
+(1) Fixed costs
+(2) The law of diminishing marginal utility
+(3) Returns to scale: increasing returns at first, then constant and then decreasing returns
+(4) Changes in consumers' tastes
+= 3
+~ In the long run all inputs vary. Increasing returns to scale lower average cost, constant returns keep it steady and decreasing returns raise it.
+
+Q 20 | eco | Introductory Microeconomics
+Short-run marginal cost can be calculated from either total cost or total variable cost because:
+(1) Total variable cost is always zero
+(2) Total fixed cost does not change with output, so the change in total cost equals the change in total variable cost
+(3) Total cost is constant
+(4) Marginal cost equals average cost
+= 2
+~ Since TC = TFC + TVC and TFC is constant, ΔTC = ΔTVC for every change in output.

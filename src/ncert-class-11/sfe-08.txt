@@ -1,0 +1,182 @@
+# NCERT Class 11 Economics, Statistics for Economics, Chapter 8: Use of Statistical Tools
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Statistics for Economics
+What is the first step in making a statistical project?
+(1) Drawing graphs
+(2) Identifying a problem or an area of study
+(3) Writing the bibliography
+(4) Calculating the mean
+= 2
+~ A project begins by identifying the problem or area to be studied. This decides the target group, the data to be collected and the tools to be used.
+
+Q 2 | eco | Statistics for Economics
+Which is the correct sequence of steps in a project?
+(1) Conclusion → collection of data → choice of target group → identifying the problem
+(2) Collection of data → identifying the problem → bibliography → analysis
+(3) Analysis → presentation → collection → choice of target group
+(4) Identifying the problem → choice of target group → collection of data → organisation and presentation → analysis and interpretation → conclusion → bibliography
+= 4
+~ The steps follow a logical order: decide what to study and whom to study, collect and organise the data, present and analyse them, draw conclusions, and list the sources used.
+
+Q 3 | eco | Statistics for Economics
+In a project, the 'target group' refers to:
+(1) The teachers who evaluate the project
+(2) The investigators who collect the data
+(3) The group of people or units the study focuses on, such as households in a study of consumer awareness
+(4) The books used for the study
+= 3
+~ Once the problem is identified, the investigator decides whom the study is about. For a study of consumer awareness, the target group could be households.
+
+Q 4 | eco | Statistics for Economics
+The bibliography of a project is:
+(1) The list of sources, such as books, reports and websites, that were consulted
+(2) The questionnaire used in the survey
+(3) The final conclusion
+(4) The table of raw data
+= 1
+~ The bibliography lists the secondary sources used, so that readers can check them and know where the information came from.
+
+Q 5 | eco | Statistics for Economics
+For a project on consumer awareness among households, which instrument is most suitable for collecting primary data?
+(1) A questionnaire or interview schedule
+(2) A published census report
+(3) A stock market index
+(4) A price index
+= 1
+~ To know what households themselves know and do, the investigator must ask them directly, using a carefully designed questionnaire or interview schedule.
+
+Q 6 | eco | Statistics for Economics
+In a consumer awareness survey, you want to show the percentage of respondents who know each of several quality marks. A respondent may know more than one mark. Which presentation suits best?
+(1) A pie diagram
+(2) An ogive
+(3) A histogram
+(4) A simple bar diagram of the percentages
+= 4
+~ The percentages do not add up to a whole because respondents can know several marks, so a pie diagram is unsuitable. A bar for each mark compares them clearly.
+
+Q 7 | eco | Statistics for Economics
+A household's monthly expenditure is divided among food, rent, education and other items. Which diagram best shows the share of each item in the total?
+(1) Histogram
+(2) Pie diagram
+(3) Ogive
+(4) Scatter diagram
+= 2
+~ A pie diagram shows how a total is divided into its components, each as a sector proportional to its share.
+
+Q 8 | eco | Statistics for Economics
+To study how the price of onions changed over twelve months, which presentation is most suitable?
+(1) A pie diagram
+(2) A frequency polygon
+(3) An arithmetic line graph (time series graph)
+(4) A bivariate table
+= 3
+~ A line graph with months on the x-axis and prices on the y-axis shows the trend and fluctuations over time.
+
+Q 9 | eco | Statistics for Economics
+To find out whether family income and spending on children's education move together, which statistical tool would you use?
+(1) Mode
+(2) Pie diagram
+(3) Index number
+(4) A scatter diagram and the coefficient of correlation
+= 4
+~ Correlation measures whether and how strongly two variables move together. A scatter diagram gives a first visual check.
+
+Q 10 | eco | Statistics for Economics
+You want the typical income of families in a locality where a few families are very rich. Which average should you use?
+(1) Median
+(2) Arithmetic mean
+(3) Weighted mean
+(4) Sum of incomes
+= 1
+~ The few very high incomes would raise the mean far above what most families earn. The median is not affected by these extreme values.
+
+Q 11 | eco | Statistics for Economics
+To find the brand of toothpaste bought by the largest number of households in a survey, which measure would you use?
+(1) Mean
+(2) Median
+(3) Mode
+(4) Correlation
+= 3
+~ The brand chosen most often is the modal brand. Brands are qualitative, so the mean or median cannot be used.
+
+Q 12 | eco | Statistics for Economics
+To measure how the cost of living of workers' families has changed over the years, which tool is used?
+(1) Karl Pearson's coefficient
+(2) A consumer price index
+(3) A frequency polygon
+(4) The Sensex
+= 2
+~ A consumer price index tracks the change in retail prices of the basket of goods and services consumed by a particular group, and so measures the change in their cost of living.
+
+Q 13 | eco | Statistics for Economics
+India's first Consumer Protection Act, often discussed in projects on consumer awareness, was enacted in:
+(1) 1956
+(2) 1972
+(3) 2005
+(4) 1986
+= 4
+~ The Consumer Protection Act was first passed in 1986 to protect consumers' rights and set up consumer courts. Awareness of such laws is a common theme of student projects.
+
+Q 14 | eco | Statistics for Economics
+Which mark certifies the quality of agricultural products in India?
+(1) ISI
+(2) Agmark
+(3) Hallmark
+(4) ISO
+= 2
+~ Agmark is the quality certification for agricultural products. ISI is the mark for industrial products, and Hallmark is for gold jewellery.
+
+Q 15 | eco | Statistics for Economics
+In a school project, why would a student survey a sample of households instead of every household in the town?
+(1) To save time and cost while still getting reasonably reliable results
+(2) Because a sample always gives exact answers
+(3) Because a census is illegal
+(4) Because samples need no planning
+= 1
+~ A well-chosen sample is far cheaper and quicker than a census and can still represent the population fairly well.
+
+Q 16 | eco | Statistics for Economics
+Before the main survey, a student tries out the questionnaire on a few respondents to find problems in it. This is called:
+(1) Sampling error
+(2) A census
+(3) A pilot survey
+(4) Tabulation
+= 3
+~ A pilot survey shows whether questions are clear and how long the survey will take, so the questionnaire can be improved before the main survey.
+
+Q 17 | eco | Statistics for Economics
+In a project, 'interpretation' of data means:
+(1) Drawing meaning from the analysed data and relating the results to the problem being studied
+(2) Collecting the data
+(3) Writing the questionnaire
+(4) Listing the sources used
+= 1
+~ After the data are analysed with tables, diagrams and measures, interpretation explains what the results say about the question being studied, leading to the conclusion.
+
+Q 18 | eco | Statistics for Economics
+In a survey of 200 respondents, 120 say they know about consumer courts. What percentage of respondents know about them?
+(1) 40 per cent
+(2) 120 per cent
+(3) 80 per cent
+(4) 60 per cent
+= 4
+~ Percentage = (120 ÷ 200) × 100 = 60 per cent.
+
+Q 19 | eco | Statistics for Economics
+Which of the following is a secondary source of data for a project on changes in retail prices?
+(1) The student's own interviews with shopkeepers
+(2) A questionnaire filled in by the student's neighbours
+(3) Price data published by the government, such as consumer price index releases
+(4) A pilot survey conducted by the student
+= 3
+~ Data already collected and published by someone else, such as government price indices, are secondary data. The others are the student's own primary data.
+
+Q 20 | eco | Statistics for Economics
+Which diagram would you use to compare the male and female literacy rates of five states?
+(1) A pie diagram
+(2) A multiple bar diagram
+(3) An ogive
+(4) A frequency curve
+= 2
+~ A multiple bar diagram places the male and female bars side by side for each state, making both comparisons easy at a glance.

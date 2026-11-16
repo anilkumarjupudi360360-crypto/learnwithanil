@@ -1,0 +1,187 @@
+# NCERT Class 12 Economics, Introductory Microeconomics, Chapter 4: The Theory of the Firm under Perfect Competition
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Introductory Microeconomics
+Which of the following are features of perfect competition?
+1. A large number of buyers and sellers
+2. Each firm produces a homogeneous product
+3. Free entry into and exit from the market
+4. Perfect information about prices
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 1, 2 and 3 only
+(3) 2, 3 and 4 only
+(4) 1, 2, 3 and 4
+= 4
+~ All four are features of perfect competition. Together they make every firm a price-taker.
+
+Q 2 | eco | Introductory Microeconomics
+A firm in a perfectly competitive market is a:
+(1) Price-taker
+(2) Price-maker
+(3) Monopolist
+(4) Price leader
+= 1
+~ Each firm is so small relative to the market, and its product so like others', that it cannot influence the market price; it can sell any quantity at that price.
+
+Q 3 | eco | Introductory Microeconomics
+For a firm under perfect competition:
+(1) Marginal revenue is always zero
+(2) Average revenue falls as output rises
+(3) Average revenue = marginal revenue = price
+(4) Marginal revenue is greater than price
+= 3
+~ Since every unit sells at the same market price, TR = p × q, so AR = p and each additional unit adds p to revenue (MR = p).
+
+Q 4 | eco | Introductory Microeconomics
+A perfectly competitive firm sells 50 units at the market price of ₹10. What are its total revenue and marginal revenue?
+(1) ₹50 and ₹1
+(2) ₹500 and ₹10
+(3) ₹60 and ₹10
+(4) ₹5 and ₹50
+= 2
+~ TR = p × q = 10 × 50 = ₹500. Each extra unit adds the price, so MR = ₹10.
+
+Q 5 | eco | Introductory Microeconomics
+The demand curve faced by a single firm under perfect competition is:
+(1) Downward sloping
+(2) A horizontal straight line at the market price, that is, perfectly elastic
+(3) Vertical
+(4) Upward sloping
+= 2
+~ The firm can sell any quantity at the market price but nothing above it, so its demand (AR) curve is horizontal.
+
+Q 6 | eco | Introductory Microeconomics
+In the short run, a perfectly competitive firm maximises profit at the output where:
+(1) Price equals average cost only
+(2) Total revenue is maximum
+(3) Price equals marginal cost, marginal cost is non-decreasing, and price is at least equal to average variable cost
+(4) Marginal cost is falling
+= 3
+~ All three conditions must hold. In the long run, the third condition becomes price at least equal to average cost.
+
+Q 7 | eco | Introductory Microeconomics
+Why must marginal cost be non-decreasing at the profit-maximising output?
+(1) Because the law requires it
+(2) Because price is always rising
+(3) Because fixed cost increases with output
+(4) Because if MC were falling where p = MC, producing a little more would add more to revenue than to cost, so profit would not be at its maximum
+= 4
+~ On the falling part of the MC curve, the next units cost less than the price, so the firm would gain by expanding. Profit is maximised only where MC is rising (or flat) as it crosses the price line.
+
+Q 8 | eco | Introductory Microeconomics
+The short-run shut-down point of a perfectly competitive firm is the:
+(1) Minimum point of the average variable cost curve
+(2) Minimum point of the average cost curve
+(3) Maximum point of the marginal cost curve
+(4) Point where price equals average fixed cost
+= 1
+~ In the short run, the firm keeps producing as long as price covers average variable cost. If price falls below minimum AVC, it is better to stop producing and lose only the fixed cost.
+
+Q 9 | eco | Introductory Microeconomics
+In the long run, a perfectly competitive firm shuts down if price falls below the:
+(1) Minimum of average variable cost
+(2) Maximum of marginal cost
+(3) Average fixed cost
+(4) Minimum of long-run average cost
+= 4
+~ In the long run all costs are variable and must be covered. If the price is below minimum LRAC, the firm leaves the industry.
+
+Q 10 | eco | Introductory Microeconomics
+'Normal profit' is:
+(1) The minimum profit needed to keep a firm in its current business; it is included in the firm's costs
+(2) Any profit above the cost of production
+(3) The profit earned by a monopolist
+(4) The profit earned when price is below average cost
+= 1
+~ Normal profit is the return the entrepreneur could earn elsewhere, its opportunity cost. Profit above this is called super-normal profit.
+
+Q 11 | eco | Introductory Microeconomics
+The 'break-even point' of a firm is the point where:
+(1) The firm earns super-normal profit
+(2) Price equals minimum average variable cost
+(3) Price equals minimum average cost, so the firm earns only normal profit
+(4) Marginal cost is zero
+= 3
+~ At the minimum point of the average cost curve, total revenue just covers total cost including normal profit. There is no super-normal profit and no loss.
+
+Q 12 | eco | Introductory Microeconomics
+The short-run supply curve of a perfectly competitive firm is:
+(1) The whole of its marginal cost curve
+(2) The rising part of its short-run marginal cost curve at and above the minimum of average variable cost; output is zero at prices below this
+(3) Its average fixed cost curve
+(4) A vertical line
+= 2
+~ At each price above minimum AVC, the firm produces where p = SMC. Below minimum AVC it shuts down, so its supply is zero there.
+
+Q 13 | eco | Introductory Microeconomics
+The long-run supply curve of a perfectly competitive firm is:
+(1) The rising part of the long-run marginal cost curve at and above the minimum of long-run average cost
+(2) The whole of the average variable cost curve
+(3) A horizontal line at zero price
+(4) The falling part of the marginal cost curve
+= 1
+~ In the long run the firm produces where p = LRMC, provided the price covers the minimum LRAC; otherwise it exits.
+
+Q 14 | eco | Introductory Microeconomics
+How does a technological progress that lowers costs affect a firm's supply curve?
+(1) It shifts the supply curve to the left
+(2) It makes the supply curve vertical
+(3) It has no effect
+(4) It shifts the supply curve to the right
+= 4
+~ Better technology lowers marginal cost, so at each price the firm supplies more. The supply curve shifts rightward.
+
+Q 15 | eco | Introductory Microeconomics
+If the price of an input used by a firm rises, its supply curve:
+(1) Shifts to the right
+(2) Shifts to the left
+(3) Does not change
+(4) Becomes horizontal
+= 2
+~ A higher input price raises the marginal cost of production, so at each price the firm supplies less: the supply curve shifts leftward.
+
+Q 16 | eco | Introductory Microeconomics
+A unit tax imposed on a good produced by a firm will:
+(1) Lower its marginal cost
+(2) Have no effect on its supply
+(3) Raise its marginal cost by the amount of the tax and shift its supply curve to the left
+(4) Shift its supply curve to the right
+= 3
+~ The firm must pay the tax on every unit, which adds to its marginal cost. It therefore supplies less at each market price.
+
+Q 17 | eco | Introductory Microeconomics
+The market supply curve of a good is obtained by:
+(1) Horizontal summation of the supply curves of the individual firms
+(2) Vertical summation of the supply curves of firms
+(3) Taking the supply curve of the largest firm
+(4) Averaging the prices of all firms
+= 1
+~ At each price, the quantities supplied by all firms are added up. Plotting these totals against price gives the market supply curve.
+
+Q 18 | eco | Introductory Microeconomics
+When the price of a good rises from ₹10 to ₹12, the quantity supplied rises from 100 to 130 units. What is the price elasticity of supply?
+(1) 0.67
+(2) 1
+(3) 0.5
+(4) 1.5
+= 4
+~ Percentage change in quantity = 30 per cent; percentage change in price = 20 per cent. Elasticity of supply = 30 ÷ 20 = 1.5.
+
+Q 19 | eco | Introductory Microeconomics
+For a straight-line supply curve passing through the origin, the price elasticity of supply is:
+(1) Zero at every point
+(2) Equal to one at every point
+(3) Greater than one at every point
+(4) Infinite at every point
+= 2
+~ Along a straight line from the origin, price and quantity change in the same proportion, so the elasticity of supply is one throughout.
+
+Q 20 | eco | Introductory Microeconomics
+In the short run, if the market price falls below the minimum of a firm's average variable cost, the firm will:
+(1) Produce where price equals marginal cost
+(2) Raise its price
+(3) Produce zero output, losing only its fixed cost
+(4) Double its output
+= 3
+~ Producing would mean losing the fixed cost plus part of the variable cost. By shutting down, the loss is limited to the fixed cost.

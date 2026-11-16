@@ -1,0 +1,182 @@
+# NCERT Class 12 Economics, Introductory Macroeconomics, Chapter 4: Determination of Income and Employment
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Introductory Macroeconomics
+In macroeconomics, 'ex ante' values are:
+(1) Actual values recorded after the period
+(2) Values in the base year
+(3) Values at market prices
+(4) Planned or intended values
+= 4
+~ Ex ante means planned or intended; ex post means actual or realised. Equilibrium in the income determination model is defined in terms of ex ante values.
+
+Q 2 | eco | Introductory Macroeconomics
+The marginal propensity to consume (MPC) is:
+(1) Total consumption divided by total income
+(2) The change in consumption per unit change in income (ΔC ÷ ΔY)
+(3) Consumption at zero income
+(4) Saving divided by income
+= 2
+~ MPC measures how much of an additional rupee of income is spent on consumption. Its value lies between 0 and 1.
+
+Q 3 | eco | Introductory Macroeconomics
+The sum of the marginal propensity to consume and the marginal propensity to save (MPC + MPS) is always:
+(1) 0
+(2) Equal to MPC
+(3) 1
+(4) Equal to APC
+= 3
+~ Any extra income is either consumed or saved, so ΔC + ΔS = ΔY, and dividing by ΔY gives MPC + MPS = 1.
+
+Q 4 | eco | Introductory Macroeconomics
+If the MPC is 0.75, the MPS is:
+(1) 0.25
+(2) 0.75
+(3) 1.75
+(4) 4
+= 1
+~ MPS = 1 − MPC = 1 − 0.75 = 0.25.
+
+Q 5 | eco | Introductory Macroeconomics
+In the consumption function C = C̄ + cY, the term C̄ (autonomous consumption) is:
+(1) Consumption that does not depend on income and takes place even at zero income
+(2) Consumption that rises with income
+(3) The marginal propensity to consume
+(4) Total saving
+= 1
+~ Even with no income, people must consume something, financed from past savings or borrowing. This part, C̄, is autonomous consumption; cY is induced consumption.
+
+Q 6 | eco | Introductory Macroeconomics
+Given the consumption function C = 50 + 0.5Y, what is the average propensity to consume (APC) when income is 200?
+(1) 0.5
+(2) 1.33
+(3) 0.75
+(4) 0.25
+= 3
+~ C = 50 + 0.5 × 200 = 150. APC = C ÷ Y = 150 ÷ 200 = 0.75.
+
+Q 7 | eco | Introductory Macroeconomics
+In a two-sector economy (households and firms), aggregate demand is:
+(1) C + G
+(2) C + I + G + X − M
+(3) S + I
+(4) C + I
+= 4
+~ With only households and firms, aggregate demand consists of planned consumption and planned investment: AD = C + I.
+
+Q 8 | eco | Introductory Macroeconomics
+In the simple model of income determination, equilibrium output is reached when:
+(1) Actual saving is zero
+(2) Planned aggregate demand equals output, or equivalently planned saving equals planned investment
+(3) Consumption equals investment
+(4) Prices are rising
+= 2
+~ At equilibrium, what people plan to buy equals what is produced. This is the same as saying that planned saving equals planned investment.
+
+Q 9 | eco | Introductory Macroeconomics
+In an economy, C = 100 + 0.8Y and planned investment I = 50. What is the equilibrium level of income?
+(1) 500
+(2) 750
+(3) 1,000
+(4) 187.5
+= 2
+~ At equilibrium Y = C + I = 100 + 0.8Y + 50, so 0.2Y = 150 and Y = 750.
+
+Q 10 | eco | Introductory Macroeconomics
+The investment multiplier is given by:
+(1) 1 ÷ MPC
+(2) MPC ÷ MPS
+(3) 1 − MPC
+(4) 1 ÷ (1 − MPC), which equals 1 ÷ MPS
+= 4
+~ The multiplier shows how much equilibrium output changes for a unit change in autonomous spending: ΔY ÷ ΔA = 1 ÷ (1 − c) = 1 ÷ s.
+
+Q 11 | eco | Introductory Macroeconomics
+If the MPC is 0.75, the value of the multiplier is:
+(1) 4
+(2) 0.25
+(3) 1.33
+(4) 7.5
+= 1
+~ Multiplier = 1 ÷ (1 − 0.75) = 1 ÷ 0.25 = 4.
+
+Q 12 | eco | Introductory Macroeconomics
+The MPS is 0.2. If autonomous investment rises by ₹100 crore, by how much will equilibrium income rise?
+(1) ₹20 crore
+(2) ₹120 crore
+(3) ₹500 crore
+(4) ₹200 crore
+= 3
+~ Multiplier = 1 ÷ MPS = 1 ÷ 0.2 = 5. Change in income = 5 × 100 = ₹500 crore.
+
+Q 13 | eco | Introductory Macroeconomics
+How does the value of the multiplier change when the MPC rises?
+(1) It falls
+(2) It stays the same
+(3) It rises
+(4) It becomes zero
+= 3
+~ A higher MPC means more of each round of extra income is spent, generating further income. Since the multiplier is 1 ÷ (1 − MPC), it rises with MPC.
+
+Q 14 | eco | Introductory Macroeconomics
+The 'paradox of thrift' states that:
+(1) Saving always raises national income
+(2) Only the rich should save
+(3) Higher interest rates reduce saving
+(4) If all people try to save a larger share of their income, total saving may not rise; it may stay the same or even fall
+= 4
+~ When everyone saves more, consumption and aggregate demand fall, so output and income fall. The lower income limits saving, so what is good for an individual may not be good for the whole economy.
+
+Q 15 | eco | Introductory Macroeconomics
+In the 45-degree line diagram of income determination, equilibrium output is found where:
+(1) The consumption line meets the y-axis
+(2) The aggregate demand line intersects the 45-degree line
+(3) The saving line meets the x-axis
+(4) The investment line is horizontal
+= 2
+~ Every point on the 45-degree line has output equal to aggregate demand. Where the AD line crosses it, planned demand equals output, which is the equilibrium.
+
+Q 16 | eco | Introductory Macroeconomics
+The 'principle of effective demand' says that:
+(1) When the price level is fixed, equilibrium output is determined by the level of aggregate demand
+(2) Supply creates its own demand
+(3) Output is determined only by the number of workers
+(4) Demand never affects output
+= 1
+~ With prices fixed and firms willing to supply any amount at that price, output adjusts to aggregate demand. This is the principle of effective demand.
+
+Q 17 | eco | Introductory Macroeconomics
+At the given fixed price, planned aggregate demand exceeds the output being produced. What follows in the simple model?
+(1) Unsold goods pile up and output falls
+(2) Nothing changes
+(3) Prices fall
+(4) Inventories fall below the desired level, and firms raise output
+= 4
+~ When demand exceeds output, firms sell from their stocks. To restore inventories, they increase production until output equals aggregate demand.
+
+Q 18 | eco | Introductory Macroeconomics
+If, at a certain level of output, planned saving exceeds planned investment, then:
+(1) Output will rise
+(2) Aggregate demand falls short of output, unsold stocks pile up and output tends to fall
+(3) The economy is in equilibrium
+(4) Investment automatically rises to match
+= 2
+~ Planned saving above planned investment means people are withdrawing more from the spending stream than firms are putting in, so demand is below output and output falls until the two are equal.
+
+Q 19 | eco | Introductory Macroeconomics
+In the chapter's simple model, the price level is assumed to be fixed. This means:
+(1) Firms cannot produce more
+(2) Output is fixed at full employment
+(3) Firms are ready to supply any amount demanded at the given price, so output is determined by demand
+(4) Wages keep rising
+= 3
+~ With a fixed price and a perfectly elastic aggregate supply, the amount produced depends only on how much is demanded.
+
+Q 20 | eco | Introductory Macroeconomics
+If the consumption function is C = 40 + 0.8Y, the saving function is:
+(1) S = −40 + 0.2Y
+(2) S = 40 + 0.2Y
+(3) S = −40 + 0.8Y
+(4) S = 40 − 0.2Y
+= 1
+~ S = Y − C = Y − (40 + 0.8Y) = −40 + 0.2Y. At zero income, saving is negative (dissaving) by the amount of autonomous consumption.

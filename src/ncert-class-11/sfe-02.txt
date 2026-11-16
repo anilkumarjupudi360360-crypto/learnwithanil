@@ -1,0 +1,186 @@
+# NCERT Class 11 Economics, Statistics for Economics, Chapter 2: Collection of Data
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Statistics for Economics
+Primary data are:
+(1) Data taken from published government reports
+(2) Data that have already been processed by someone else
+(3) Data collected by the investigator for the purpose of the enquiry, giving first-hand information
+(4) Data copied from newspapers
+= 3
+~ When the investigator collects the data personally, for example through interviews or a questionnaire, the data are primary data.
+
+Q 2 | eco | Statistics for Economics
+Secondary data are:
+(1) Data already collected and processed by someone else, such as those in government publications
+(2) Data collected through the investigator's own interviews
+(3) Data that cannot be used for analysis
+(4) Data collected through a pilot survey
+= 1
+~ Secondary data are obtained from published or unpublished sources such as government reports, documents, newspapers, books, journals and websites. They save time and cost.
+
+Q 3 | eco | Statistics for Economics
+Which of the following is a secondary source of data for a student?
+(1) Interviews the student conducts in a village
+(2) A questionnaire the student mails to households
+(3) Telephone interviews the student conducts
+(4) Published reports of the Census of India
+= 4
+~ Census reports are compiled by someone else and published, so for the student they are a secondary source. The other three are ways of collecting primary data.
+
+Q 4 | eco | Statistics for Economics
+Which of the following should be avoided while preparing a good questionnaire?
+(1) Keeping the questionnaire short
+(2) Leading questions that suggest the answer to the respondent
+(3) Moving from general to specific questions
+(4) Using clear and precise language
+= 2
+~ A good questionnaire is short, clear, goes from general to specific, and avoids ambiguous questions, double negatives and leading questions that push the respondent towards a particular answer.
+
+Q 5 | eco | Statistics for Economics
+A pilot survey is:
+(1) A try-out of the questionnaire on a small group before the main survey, to find its weaknesses and estimate the cost and time needed
+(2) A survey of airline pilots
+(3) The final survey after which no change is made
+(4) A survey done only through the internet
+= 1
+~ The pilot survey gives a preliminary idea of the study, helps find problems in the questionnaire and with the investigators, and helps estimate cost and time.
+
+Q 6 | eco | Statistics for Economics
+In a closed-ended question:
+(1) The respondent writes a long answer in their own words
+(2) No answer is expected
+(3) The respondent chooses from the options given, such as yes/no or multiple choices
+(4) Only the interviewer answers
+= 3
+~ Closed-ended (structured) questions can be two-way (yes/no) or multiple choice. Open-ended questions let respondents answer in their own words.
+
+Q 7 | eco | Statistics for Economics
+Which is an advantage of collecting data through personal interviews?
+(1) It is the cheapest method
+(2) It gives the highest response rate, and the interviewer can clarify questions
+(3) It needs no trained investigators
+(4) The interviewer cannot influence the respondent at all
+= 2
+~ Personal interviews give a high response rate and allow clarification and observation of reactions. But they are expensive, need trained investigators and the interviewer may influence answers.
+
+Q 8 | eco | Statistics for Economics
+Which of the following is a disadvantage of the mailed questionnaire method?
+(1) It is the most expensive method
+(2) The interviewer may influence respondents
+(3) It can cover only a small area
+(4) The response rate is low, questions cannot be clarified, and it cannot be used with people who cannot read
+= 4
+~ Mailing is cheap, covers a wide area and avoids interviewer influence. Its drawbacks are a low response rate, no chance to clarify questions and unsuitability for illiterate respondents.
+
+Q 9 | eco | Statistics for Economics
+What is a limitation of collecting data through telephone interviews?
+(1) It is costlier than personal interviews
+(2) The response rate is always zero
+(3) The investigator has to travel to every house
+(4) It is limited to people who have telephones, and the respondents' reactions cannot be observed
+= 4
+~ Telephone interviews are cheaper than personal interviews and quick, but they reach only those with phones and do not let the investigator observe the respondent.
+
+Q 10 | eco | Statistics for Economics
+In statistics, 'population' or 'universe' refers to:
+(1) The number of people living in a country
+(2) The totality of all the items or units under study
+(3) Only the people interviewed in a survey
+(4) The people of a city
+= 2
+~ In statistics, population means all the units under study, which may be people, farms, firms or anything else, not just the human population.
+
+Q 11 | eco | Statistics for Economics
+A census, or complete enumeration, is a survey in which:
+(1) Every element of the population is included
+(2) Only a few units are selected
+(3) Only adults are counted
+(4) Only secondary data are used
+= 1
+~ In a census, every unit of the population is covered. The Census of India, which counts every person, is an example.
+
+Q 12 | eco | Statistics for Economics
+Why are sample surveys often preferred to a census?
+(1) A sample always gives exact population values
+(2) A sample includes every unit
+(3) A sample costs less and takes less time, and can still give reasonably reliable information
+(4) A sample needs no planning
+= 3
+~ A well-chosen sample saves time and money and can give reliable estimates. It also allows more detailed information to be collected.
+
+Q 13 | eco | Statistics for Economics
+In random sampling:
+(1) The investigator selects the units he or she likes
+(2) Only the most convenient units are selected
+(3) Units are chosen by quota
+(4) Every individual unit has an equal chance of being selected
+= 4
+~ In random sampling, every unit of the population has an equal chance of selection, which makes the sample representative.
+
+Q 14 | eco | Statistics for Economics
+The lottery method and random number tables are used for:
+(1) Random sampling
+(2) Judgement sampling
+(3) Quota sampling
+(4) Convenience sampling
+= 1
+~ Drawing lots and using tables of random numbers ensure that each unit has the same chance of being chosen, as random sampling requires.
+
+Q 15 | eco | Statistics for Economics
+In non-random sampling:
+(1) Every unit has an equal chance of selection
+(2) Units are chosen on the basis of the investigator's judgement or convenience, so not all units have an equal chance
+(3) The whole population is studied
+(4) Only random number tables are used
+= 2
+~ In non-random sampling, such as judgement, quota or convenience sampling, the selection depends on the investigator, so some units have no chance of being chosen.
+
+Q 16 | eco | Statistics for Economics
+Sampling error is:
+(1) A mistake in recording an answer
+(2) The refusal of a respondent to answer
+(3) The difference between the value estimated from the sample and the actual value of the population characteristic
+(4) An error in printing the questionnaire
+= 3
+~ Sampling error arises because only a part of the population is studied. It is the difference between the sample estimate and the true population value.
+
+Q 17 | eco | Statistics for Economics
+How can sampling error be reduced?
+(1) By taking a larger sample
+(2) By asking leading questions
+(3) By using only secondary data
+(4) By reducing the sample size
+= 1
+~ The larger the sample, the closer the sample estimate tends to be to the population value, so sampling error falls as sample size rises.
+
+Q 18 | eco | Statistics for Economics
+Which of the following are non-sampling errors?
+1. Errors in data acquisition, such as mistakes in recording
+2. Non-response errors
+3. Sampling bias
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 1 and 2 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Non-sampling errors arise in collecting data and are more serious than sampling errors, since a larger sample does not remove them. They include recording errors, non-response and sampling bias.
+
+Q 19 | eco | Statistics for Economics
+The Census of India is conducted by:
+(1) The Reserve Bank of India, every five years
+(2) The Election Commission, every year
+(3) The Registrar General and Census Commissioner of India, every ten years
+(4) NITI Aayog, every fifteen years
+= 3
+~ The Census is conducted by the Registrar General and Census Commissioner of India. It has been held regularly every ten years since 1881, and gives the most complete record of India's population.
+
+Q 20 | eco | Statistics for Economics
+The National Sample Survey Office (NSSO) was set up by the Government of India to:
+(1) Count every person in the country
+(2) Conduct nationwide surveys on socio-economic issues
+(3) Conduct elections
+(4) Print currency notes
+= 2
+~ The NSSO conducts nationwide sample surveys in rounds on topics such as literacy, employment and unemployment, enterprises, health and the use of the public distribution system.

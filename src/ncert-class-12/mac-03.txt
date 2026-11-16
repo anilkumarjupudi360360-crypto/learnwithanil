@@ -1,0 +1,182 @@
+# NCERT Class 12 Economics, Introductory Macroeconomics, Chapter 3: Money and Banking
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Introductory Macroeconomics
+What is the main difficulty of a barter system?
+(1) The need for a double coincidence of wants
+(2) The high rate of interest
+(3) The shortage of currency notes
+(4) The presence of banks
+= 1
+~ In barter, a person who wants to exchange goods must find someone who has what he wants and also wants what he has. Money removes this need by acting as a medium of exchange.
+
+Q 2 | eco | Introductory Macroeconomics
+When the prices of all goods are expressed in rupees so that they can be compared easily, money serves as a:
+(1) Store of value
+(2) Medium of exchange
+(3) Unit of account
+(4) Legal tender
+= 3
+~ As a unit of account, money gives a common measure in which the value of every good and service can be stated and compared.
+
+Q 3 | eco | Introductory Macroeconomics
+Money lets people keep their wealth now and spend it later. This function of money is:
+(1) Medium of exchange
+(2) Unit of account
+(3) Double coincidence of wants
+(4) Store of value
+= 4
+~ Money does not perish and its storage costs are low, so it can be used to carry purchasing power into the future.
+
+Q 4 | eco | Introductory Macroeconomics
+'Supply of money' refers to:
+(1) The money printed by the RBI in a year
+(2) The total stock of money held by the public at a point of time
+(3) The money held by banks only
+(4) The total income of the economy
+= 2
+~ Money supply is a stock, measured at a point of time, of the money held by the public.
+
+Q 5 | eco | Introductory Macroeconomics
+In measuring the money supply held by the 'public', whose holdings are excluded?
+(1) Households
+(2) The government and the banking system
+(3) Firms
+(4) Local bodies and non-banking companies
+= 2
+~ The public includes all economic units except the producers of money, namely the government and the banking system.
+
+Q 6 | eco | Introductory Macroeconomics
+M3, one of the RBI's measures of money supply, is equal to:
+(1) Currency held by the public only
+(2) M1 + savings deposits with post office savings banks
+(3) M2 + total deposits with the Post Office savings organisation
+(4) M1 + net time deposits of commercial banks
+= 4
+~ M3 = M1 + net time deposits of commercial banks. M2 adds post office savings bank deposits to M1, and M4 adds total post office deposits to M3.
+
+Q 7 | eco | Introductory Macroeconomics
+Which measure of money supply is the most commonly used and is also called aggregate monetary resources?
+(1) M3
+(2) M1
+(3) M2
+(4) M4
+= 1
+~ M3 is the most commonly used measure of money supply and is known as aggregate monetary resources.
+
+Q 8 | eco | Introductory Macroeconomics
+Which statement about the RBI's measures of money supply is correct?
+(1) All four are called broad money
+(2) M1 and M3 are narrow money; M2 and M4 are broad money
+(3) M1 and M2 are narrow money; M3 and M4 are broad money
+(4) Only M4 is counted as money
+= 3
+~ M1 and M2 are known as narrow money and M3 and M4 as broad money. Liquidity falls as we move from M1 to M4.
+
+Q 9 | eco | Introductory Macroeconomics
+'Legal tender' refers to:
+(1) Cheques drawn on savings accounts
+(2) Credit cards
+(3) Currency notes and coins that cannot be refused by anyone in settlement of a transaction
+(4) Government bonds
+= 3
+~ Currency notes and coins are legal tender by law. Cheques are not legal tender; a seller can refuse to accept them.
+
+Q 10 | eco | Introductory Macroeconomics
+'Fiat money' is money that:
+(1) Has no intrinsic value and is accepted because of the authority of the government
+(2) Is made of gold
+(3) Is issued by commercial banks only
+(4) Can be refused in transactions
+= 1
+~ Modern currency has little value as paper or metal. People accept it because the government declares it money, so it is fiat money.
+
+Q 11 | eco | Introductory Macroeconomics
+If the required reserve ratio for banks is 20 per cent, the money multiplier is:
+(1) 20
+(2) 0.2
+(3) 2
+(4) 5
+= 4
+~ Money multiplier = 1 ÷ reserve ratio = 1 ÷ 0.2 = 5. Banks keep 20 per cent as reserves and lend the rest, which comes back as fresh deposits.
+
+Q 12 | eco | Introductory Macroeconomics
+A new deposit of ₹1,000 enters the banking system and the reserve ratio is 10 per cent. With banks lending out everything above required reserves, total deposits finally created are:
+(1) ₹1,100
+(2) ₹10,000
+(3) ₹9,000
+(4) ₹100
+= 2
+~ Total deposits = initial deposit × (1 ÷ reserve ratio) = 1,000 × (1 ÷ 0.1) = ₹10,000.
+
+Q 13 | eco | Introductory Macroeconomics
+High powered money (the monetary base) consists of:
+(1) Only time deposits of banks
+(2) Only government bonds
+(3) Only demand deposits
+(4) Currency held by the public plus the reserves of commercial banks
+= 4
+~ High powered money is the total liability of the monetary authority: currency held by the public and banks' reserves, as vault cash and deposits with the RBI.
+
+Q 14 | eco | Introductory Macroeconomics
+The Cash Reserve Ratio (CRR) is:
+(1) The rate at which the RBI lends to banks
+(2) The share of deposits banks must keep in government securities
+(3) The fraction of deposits that commercial banks must keep as reserves with the RBI
+(4) The interest rate paid on savings accounts
+= 3
+~ CRR is the share of deposits banks must keep with the RBI. Raising it leaves banks less to lend, which reduces money supply.
+
+Q 15 | eco | Introductory Macroeconomics
+The Statutory Liquidity Ratio (SLR) requires banks to:
+(1) Keep a fraction of their deposits in specified liquid assets, such as government securities
+(2) Keep all deposits as cash
+(3) Lend only to the government
+(4) Pay a fixed interest rate on loans
+= 1
+~ Under SLR, banks must hold a minimum share of their deposits in liquid assets like government securities, apart from the CRR.
+
+Q 16 | eco | Introductory Macroeconomics
+The repo rate is the rate at which:
+(1) Commercial banks lend to the public
+(2) The RBI lends to commercial banks for short periods against government securities under a repurchase agreement
+(3) The RBI borrows from commercial banks
+(4) The government borrows from abroad
+= 2
+~ Under a repo, banks sell securities to the RBI with an agreement to buy them back, getting short-term funds. Raising the repo rate makes such borrowing costlier.
+
+Q 17 | eco | Introductory Macroeconomics
+The reverse repo rate is the rate at which:
+(1) Banks lend to households
+(2) The RBI lends to the government
+(3) The RBI borrows from commercial banks
+(4) Banks pay interest on fixed deposits
+= 3
+~ In a reverse repo, the RBI borrows funds from banks against securities. It is the reverse of the repo transaction.
+
+Q 18 | eco | Introductory Macroeconomics
+If the RBI buys government securities from the public in open market operations, the money supply:
+(1) Falls
+(2) Stays the same
+(3) Becomes zero
+(4) Increases
+= 4
+~ When the RBI buys securities, it pays with new money, which increases high powered money and, through the multiplier, money supply. Selling securities does the opposite.
+
+Q 19 | eco | Introductory Macroeconomics
+To reduce the money supply in order to control inflation, the RBI can:
+(1) Raise the CRR or the repo rate, or sell government securities
+(2) Lower the CRR and buy government securities
+(3) Lower the repo rate
+(4) Print more currency
+= 1
+~ Higher reserve requirements, costlier borrowing from the RBI and sale of securities all reduce the funds banks can lend, lowering money supply.
+
+Q 20 | eco | Introductory Macroeconomics
+The RBI is called the 'lender of last resort' because:
+(1) It lends only to the government
+(2) It stands ready to lend to banks facing a crisis, so that they do not fail
+(3) It lends to the public when banks refuse
+(4) It is the last bank to open each day
+= 2
+~ If depositors rush to withdraw money from a bank, the RBI can provide funds to it. This guarantee prevents bank failures and keeps confidence in the banking system.

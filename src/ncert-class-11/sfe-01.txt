@@ -1,0 +1,182 @@
+# NCERT Class 11 Economics, Statistics for Economics, Chapter 1: Introduction
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | eco | Statistics for Economics
+A person who works for someone else in a job and is paid for it is called, in the chapter, a:
+(1) Consumer
+(2) Service holder
+(3) Producer
+(4) Service provider
+= 2
+~ The chapter describes us all as consumers; some of us are producers, some service holders (in jobs and paid for them) and some service providers (who provide services to others for payment).
+
+Q 2 | eco | Statistics for Economics
+A lawyer or a doctor who offers services to people in return for a fee acts as a:
+(1) Consumer
+(2) Service holder
+(3) Service provider
+(4) Producer of goods
+= 3
+~ Those who provide services to others for payment are service providers. A service holder, by contrast, works in a job for an employer.
+
+Q 3 | eco | Statistics for Economics
+What is the basic economic problem from which the study of economics begins?
+(1) Scarcity: resources are limited and have alternative uses while human wants are unlimited, so choices must be made
+(2) Too many goods and too few buyers
+(3) The existence of money
+(4) The presence of government
+= 1
+~ Because resources are scarce compared with wants, people have to choose how to use them. Economics studies these choices.
+
+Q 4 | eco | Statistics for Economics
+According to the chapter, economics is the study of:
+(1) Only money and banking
+(2) Only the stock market
+(3) Only the government budget
+(4) How people choose to use scarce resources that have alternative uses to satisfy their wants
+= 4
+~ Economics deals with choice: deciding how to use limited resources, which can be put to many uses, in the best possible way.
+
+Q 5 | eco | Statistics for Economics
+The chapter mentions three basic economic activities. Which are they?
+(1) Saving, investment and taxation
+(2) Buying, selling and lending
+(3) Exports, imports and aid
+(4) Consumption, production and distribution
+= 4
+~ Consumption, production and distribution are the three basic economic activities studied in economics.
+
+Q 6 | eco | Statistics for Economics
+In economics, the study of distribution deals with:
+(1) How the national income from production is shared out as wages, profits, rent and interest
+(2) How goods are transported from factories to shops
+(3) How the government distributes free food
+(4) How shops display goods
+= 1
+~ Distribution is about how the income generated in production is divided among the factors of production, as wages, profits, rent and interest.
+
+Q 7 | eco | Statistics for Economics
+'Statistics' used in the singular sense means:
+(1) A collection of numbers
+(2) A single number
+(3) The methods of collecting, organising, presenting, analysing and interpreting data
+(4) Only the census
+= 3
+~ In the singular sense, statistics is a subject: the body of methods used to collect, organise, present, analyse and interpret data.
+
+Q 8 | eco | Statistics for Economics
+'Statistics' used in the plural sense means:
+(1) The science of economics
+(2) Quantitative facts, that is, numerical data
+(3) The methods of analysis
+(4) A survey of opinions
+= 2
+~ In the plural sense, statistics refers to numerical facts, such as statistics of national income, population or prices.
+
+Q 9 | eco | Statistics for Economics
+Which of the following is an example of qualitative data?
+(1) Monthly income of households in rupees
+(2) The level of education or the gender of workers
+(3) Height of students in centimetres
+(4) Number of children in a family
+= 2
+~ Qualitative data describe attributes that are expressed in categories rather than measured in numbers, such as gender or educational status. The other options are quantitative data.
+
+Q 10 | eco | Statistics for Economics
+Which of the following is quantitative data?
+(1) The religion of a respondent
+(2) Whether a family owns a house or rents one
+(3) The colour of cars sold
+(4) The annual production of rice in tonnes
+= 4
+~ Quantitative data are expressed in numbers that can be measured, such as tonnes of rice produced. The others are attributes.
+
+Q 11 | eco | Statistics for Economics
+How does statistics help an economist deal with a mass of data?
+(1) It condenses the data into a few numerical measures, such as the mean and the variance, that summarise it
+(2) It adds more data to it
+(3) It removes all numbers from it
+(4) It converts the data into a story without figures
+= 1
+~ Statistics condenses large amounts of data into a few summary measures. An average, for example, tells us about a whole group of numbers at once.
+
+Q 12 | eco | Statistics for Economics
+An economist checks whether a rise in the price of a good is followed by a fall in the quantity demanded. Which use of statistics does this show?
+(1) Collecting raw data only
+(2) Drawing a pie diagram
+(3) Finding relationships between economic factors
+(4) Entering data in a register
+= 3
+~ Statistics helps establish relationships between economic variables, such as price and demand, or income and consumption.
+
+Q 13 | eco | Statistics for Economics
+Saying 'India produced so many tonnes of wheat this year, so many tonnes more than last year' instead of 'wheat production increased' illustrates which function of statistics?
+(1) Presenting economic facts in a precise and definite form
+(2) Collecting primary data
+(3) Condensing data into a pie chart
+(4) Removing qualitative facts
+= 1
+~ Statistics enables economic facts to be stated precisely and definitely, which helps in understanding them clearly.
+
+Q 14 | eco | Statistics for Economics
+Why do governments need statistics when making economic policies?
+(1) To avoid making any policy
+(2) Because statistics are required by law in every country
+(3) To understand the size and causes of problems such as inflation or unemployment, and to design and check policies
+(4) Because statistics can replace economic theory
+= 3
+~ Data on prices, employment, output and incomes show how serious a problem is and what lies behind it. Policies are then designed and evaluated on this basis.
+
+Q 15 | eco | Statistics for Economics
+Which caution about statistical methods does the chapter stress?
+(1) They always give the right answer
+(2) They can be used without understanding the data
+(3) They are useful only for large countries
+(4) They are no substitute for basic common sense; results must be interpreted carefully
+= 4
+~ Statistical methods are tools. Used without common sense, an average or other measure can mislead, so careful interpretation is always needed.
+
+Q 16 | eco | Statistics for Economics
+Economists study consumption mainly to understand:
+(1) How consumers decide what to buy, given their incomes and the prices of goods
+(2) How factories are built
+(3) How taxes are collected
+(4) How money is printed
+= 1
+~ Consumption is about how people with limited incomes choose among goods and services, depending on prices and their wants.
+
+Q 17 | eco | Statistics for Economics
+An economist who wants to understand production would study:
+(1) How families spend their weekends
+(2) How the stock market index moves
+(3) How goods and services are created using land, labour, capital and other inputs
+(4) How elections are held
+= 3
+~ Production is the creation of goods and services, using inputs such as land, labour and capital.
+
+Q 18 | eco | Statistics for Economics
+Which of the following is NOT a reason why economists use statistics?
+(1) To replace economic reasoning entirely
+(2) To present facts precisely
+(3) To condense large amounts of data
+(4) To find relationships between variables
+= 1
+~ Statistics supports economic reasoning; it does not replace it. Precision, condensation and finding relationships are its main uses.
+
+Q 19 | eco | Statistics for Economics
+Even a very rich person faces scarcity. Why?
+(1) Because the rich cannot buy anything
+(2) Because prices are always rising
+(3) Because the government restricts spending
+(4) Because time and other resources are limited compared with wants, so choices still have to be made
+= 4
+~ Scarcity is about limited resources relative to wants, not just money. Everyone has limited time and must choose how to use it.
+
+Q 20 | eco | Statistics for Economics
+A farmer who grows wheat and sells it in the market is acting as a:
+(1) Consumer
+(2) Producer
+(3) Service holder
+(4) Service provider
+= 2
+~ A person who produces goods, such as a farmer or a manufacturer, is a producer.
