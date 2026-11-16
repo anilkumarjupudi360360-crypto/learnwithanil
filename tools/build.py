@@ -2866,6 +2866,8 @@ def main():
     upm_qs, _ = upscmains.load(SRC)
     upa_qs, _ = upscmains.load(SRC, 'an')   # Anthropology optional Papers I-II (same pages module, course 'an')
     if upm_qs: counts[upscmains.EXAM] = len(upm_qs) + len(upa_qs)
+    ifm_qs, _ = upscmains.load(SRC, 'if')   # UPSC IFoS Mains General English + General Knowledge (same module, course 'if'; Anil, 16 Nov 2026)
+    if ifm_qs: counts['upsc-ifos'] = len(ifm_qs)
     global PRE_LIVE   # the UPSC CSE hub's Prelims box: (questions, years, papers) of the built Prelims app
     pre = [(ps, qs) for c, ps, qs in loaded if c['id'] == 'upsc-prelims']
     PRE_LIVE = ((len(pre[0][1]), sorted({p['year'] for p in pre[0][0]}), len(pre[0][0]),
@@ -3195,6 +3197,11 @@ def main():
         fp = os.path.join(DIST, 'site', upscmains.EXAM, rel); os.makedirs(os.path.dirname(fp), exist_ok=True)
         open(fp, 'w', encoding='utf-8').write(content)
         all_pages[upscmains.EXAM + '/' + (rel[:-len('index.html')] if rel.endswith('index.html') else rel)] = None
+    # UPSC IFoS: the hub and the Mains General English / General Knowledge pages (tools/upscmains.py, course 'if')
+    for rel, content in upscmains.ifos_pages(sys.modules[__name__]).items():
+        fp = os.path.join(DIST, 'site', 'upsc-ifos', rel); os.makedirs(os.path.dirname(fp), exist_ok=True)
+        open(fp, 'w', encoding='utf-8').write(content)
+        all_pages['upsc-ifos/' + (rel[:-len('index.html')] if rel.endswith('index.html') else rel)] = None
     # free sample chapters of the study books (public PDFs; Anil, 28 Oct 2026) go in the sitemap so search engines and AI assistants find them
     for b in notes:
         if b.get('free'): all_pages[b['free'].lstrip('/')] = None
@@ -4698,6 +4705,17 @@ def llms_txt(loaded, grand):
             for p in upscmains.PAPERS:
                 if any(q['year'] == y and q['paper'] == p for q in uq):
                     L.append(f'  - [UPSC Mains {y} GS Paper {upscmains.n_of(p)} ({upscmains.PAPERS[p][2]}) questions with model answers]({ub}{y}-gs{upscmains.n_of(p)}.html)')
+    try: iq, _ = upscmains.load(SRC, 'if')   # UPSC IFoS Mains General English + General Knowledge (same module, course 'if')
+    except Exception: iq = []
+    if iq:
+        ib = f'{SITE_URL}/upsc-ifos/mains-pyqs/'
+        L.append(f'- [UPSC Indian Forest Service (IFoS) Mains previous year questions, Paper I General English and Paper II General Knowledge]({ib}): {len(iq):,} questions of '
+                 f'{min(q["year"] for q in iq)}–{max(q["year"] for q in iq)} from UPSC\'s official papers, year-wise and subject-wise; model answers free (added year by year, newest first). '
+                 f'IFoS Prelims is the common Civil Services Prelims (see UPSC Prelims). Hub: {SITE_URL}/upsc-ifos/')
+        for y in sorted({q['year'] for q in iq}, reverse=True):
+            for p in upscmains.IF_PAPERS:
+                if any(q['year'] == y and q['paper'] == p for q in iq):
+                    L.append(f'  - [UPSC IFoS Mains {y} {upscmains.IF_PAPERS[p][1]} paper questions with model answers]({ib}{y}-paper-{upscmains.n_of(p)}.html)')
     try: aq, _ = upscmains.load(SRC, 'an')   # UPSC Anthropology optional Papers I-II (same module, course 'an')
     except Exception: aq = []
     if aq:

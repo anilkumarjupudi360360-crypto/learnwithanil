@@ -47,11 +47,17 @@ PHOTOS = {
                C + 'Vrihat_Samrat_Yantra,_Jantar_Mantar,_Jaipur_(54358376655).jpg', 'center 60%'),
     'lvm3': (1200, 799, 'LVM3 lifting off with Chandrayaan-3 from Sriharikota, Andhra Pradesh', 'LVM3 launch, Sriharikota', 'ISRO', 'GODL-India',
              C + 'LVM3_M4,_Chandrayaan-3_-_Launch_vehicle_lifting_off_from_the_Second_Launch_Pad_(SLP)_of_SDSC-SHAR,_Sriharikota_01.webp', 'center 55%'),
+    # UPSC Indian Forest Service (Main): General English and General Knowledge (16 Nov 2026)
+    'fri': (1200, 816, 'The main building of the Forest Research Institute, Dehradun', 'Forest Research Institute, Dehradun', 'Mrigank Das', 'CC BY-SA 4.0',
+            C + 'FRI,_Dehradun.jpg', 'center 45%'),
+    'kaziranga': (1200, 800, 'Evening light over the grassland and trees of Kaziranga National Park, Assam', 'Kaziranga National Park', 'Swap5281', 'CC BY-SA 4.0',
+                  C + 'Evening_in_kaziranga_national_park.jpg', 'center 40%'),
 }
 # paper -> (photo, colour)
 LOOK = {'GS1': ('konark', '#8A5A2B'), 'GS2': ('parliament', '#A23B2A'), 'GS3': ('vikrant', '#1D4E89'), 'GS4': ('charkha', '#75611C'),
         'AN1': ('bhimbetka', '#9A4E22'), 'AN2': ('warli', '#7E2F35'),
-        'PGS': ('sanchi', '#0E6B5C'), 'PCSAT': ('jantar', '#B4530F'),   # UPSC Prelims GS Paper I and CSAT (the UPSC hub card)
+        'PGS': ('sanchi', '#0E6B5C'), 'PCSAT': ('jantar', '#B4530F'),
+        'IGE': ('fri', '#7A3E24'), 'IGK': ('kaziranga', '#2F6B2A'),   # UPSC IFoS Mains Paper I General English, Paper II General Knowledge   # UPSC Prelims GS Paper I and CSAT (the UPSC hub card)
         'I': ('prakasam', '#0D6772'), 'II': ('lepakshi', '#80653A'), 'III': ('ap-assembly', '#6F3B1F'), 'IV': ('paddy', '#3A7428'), 'V': ('lvm3', '#2A5AA0')}
 
 SANS = '"Source Sans 3",system-ui,sans-serif'
