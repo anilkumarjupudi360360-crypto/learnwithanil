@@ -3169,7 +3169,8 @@ def photo_credits(ids):
 CCL = {'CC BY-SA 3.0': 'https://creativecommons.org/licenses/by-sa/3.0/', 'CC BY-SA 4.0': 'https://creativecommons.org/licenses/by-sa/4.0/',
        'CC BY 3.0': 'https://creativecommons.org/licenses/by/3.0/', 'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/',
        'GODL-India': 'https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf', 'FAL': 'https://artlibre.org/licence/lal/en/',
-       'CC BY 2.0': 'https://creativecommons.org/licenses/by/2.0/'}
+       'CC BY 2.0': 'https://creativecommons.org/licenses/by/2.0/', 'CC BY 4.0': 'https://creativecommons.org/licenses/by/4.0/',
+       'CC BY-SA 2.0': 'https://creativecommons.org/licenses/by-sa/2.0/', 'CC BY-SA 2.5': 'https://creativecommons.org/licenses/by-sa/2.5/'}
 _CW = 'https://commons.wikimedia.org/wiki/File:'
 GSSSB_PHOTO = ('Mahatma Mandir, Gandhinagar', '92saeedshaikh', 'CC BY-SA 4.0', _CW + 'Mahatma_Mandir-Gandhinagar.jpg')
 EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil approved, 2 Nov 2026): src/static/ex-<id>-t.webp (tile) and -h.webp (exam page banner)
@@ -3209,6 +3210,91 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'gsssb-cce': GSSSB_PHOTO,   # GSSSB CCE (16 Nov 2026)
     'uppsc-ro-aro': ('Triveni Sangam, Prayagraj', 'Rangan Datta Wiki', 'CC BY-SA 4.0', _CW + 'Prayagraj_Sangam_2.jpg'),   # UPPSC RO/ARO (16 Nov 2026)
     'upsssc-inter-level': ('Rumi Darwaza, Lucknow', 'Rishabhgpt', 'CC BY-SA 4.0', _CW + 'Rumi_Darwaza_-_DSC2797-01.jpg'),   # UPSSSC Inter level (16 Nov 2026)
+    # upcoming exams too (Anil, 16 Nov 2026: "pls show all such without hiding ...and add photos to them....do it for all exams in same way")
+    'upsc-nda': ('Khadakwasla lake, Pune', 'Devghorela', 'CC BY-SA 4.0', _CW + 'Khadakwasla.jpg'),
+    'upsc-ese': ('Hirakud Dam, Odisha', 'Quarterbacker', 'CC BY 3.0', _CW + 'Hirakud_Dam_Panorama.jpg'),
+    'upsc-cds': ('National War Memorial, New Delhi', 'Pinakpani', 'CC BY-SA 4.0', _CW + 'National_War_Memorial_in_New_Delhi_10.jpg'),
+    'upsc-ifos': ('Shola forest, Silent Valley National Park', 'Davidvraju', 'CC0', _CW + 'Shola_Forest_Silent_valley_NP_(2).jpg'),
+    'upsc-cms': ('AIIMS New Delhi', 'Vishnoi M', 'CC BY-SA 4.0', _CW + 'AIIMS_-New_Delhi\'s_Ward_Block.jpg'),
+    'appsc-aee': ('Polavaram Aqueduct', 'IM3847', 'CC BY-SA 4.0', _CW + 'Heavy_vehicles_moving_across_Polavaram_Aqueduct_(May_2019)_1.jpg'),
+    'upsc-ies-iss': ('Sansad Bhavan, New Delhi', 'Nikhilb239', 'CC BY-SA 4.0', _CW + 'Sansad_bhavan,_Delhi.jpg'),
+    'appsc-group-4': ('West Godavari District Collectorate, Eluru', 'IM3847', 'CC BY-SA 4.0', _CW + 'District_Collectorate_of_West_Godavari_(May_2019)_3.jpg'),
+    'upsc-geo': ('Rock at Lonar Crater, Maharashtra', 'Dhruva Punde', 'CC BY-SA 4.0', _CW + 'Inscriptions_at_Lonar_Crater_9.jpg'),
+    'appsc-group-3': ('Cotton fields, Rollapadu village, Nandyal', 'PJeganathan', 'CC BY-SA 3.0', _CW + 'Cotton_fields_in_Rollapadu_Village,_Nandyal_District,_Andhra_Pradesh_(99027).jpg'),
+    'appsc-jl': ('Andhra Loyola College, Vijayawada', 'Bhaskaranaidu', 'CC BY-SA 4.0', _CW + 'Andhra_layola_college,_vijayawada..._inside_building.JPG'),
+    'appsc-ae': ('Nagarjuna Sagar Dam', 'iMahesh', 'CC BY-SA 4.0', _CW + 'Nagarjuna_Sagar_dam_with_all_Crest_gates_closed_(Closeup).jpg'),
+    'appsc-pl': ('Andhra Polytechnic, Kakinada', 'Ganesh boddu', 'CC BY-SA 4.0', _CW + 'Andhra_polytechnic,Kakinada,Andhra_Pradesh,India..jpg'),
+    'appsc-fbo': ('Forest at Maredumilli', 'Hari K  Patibanda', 'CC BY 2.0', _CW + 'A_Relatively_Quiet_forest_in_the_area_of_Maredumilli_(39684501283).jpg'),
+    'appsc-dl': ('Andhra University, Visakhapatnam', 'Rajasekhar1961', 'CC BY-SA 4.0', _CW + 'Andhra_University_in_2024_73.jpg'),
+    'appsc-fso': ('Hills and forest, Andhra Pradesh', 'Vinayaraj', 'CC BY-SA 3.0', _CW + 'Andhra_Pradesh_-_Landscapes_from_Andhra_Pradesh,_views_from_Indias_South_Central_Railway_(83).JPG'),
+    'appsc-hwo': ('Hostel buildings, Amaravati', 'IM3847', 'CC BY-SA 4.0', _CW + 'Panorama_of_5_Hostel_buildings_in_SRM_Amaravati.jpg'),
+    'appsc-deo': ('Mandal Parishad school, Pedanagamayyapalem', 'Adityamadhav83', 'CC BY 4.0', _CW + 'Mandal_Parishad_upper_primary_school_at_Pedanagamayyapalem.jpg'),
+    'appsc-drug': ('Pharmacy shelves with medicines', 'Zalasem1', 'CC BY 4.0', _CW + 'Former_pharmacy,_shelves_with_medicines.jpg'),
+    'appsc-hort': ('Banana plantation, Ryali, East Godavari', 'Adityamadhav83', 'CC BY-SA 3.0', _CW + 'Banana_plantation_at_Ryali_village_in_East_Godavari_district.jpg'),
+    'tgpsc-group-4': ('Golconda Fort, Hyderabad', 'Bernard Gagnon', 'CC BY-SA 3.0', _CW + 'Golconda_Fort_005.jpg'),
+    'ap-sachivalayam': ('Ramalayam, Ayodhyalanka village', 'PagillaVijay', 'CC BY-SA 4.0', _CW + 'Ramalayam_in_Ayodhyalanka_village,_Konaseema,_Andhrapradesh.jpg'),
+    'tgpsc-group-3': ('Warangal Fort', 'Khushi Shah 280', 'CC BY-SA 4.0', _CW + 'Remains_of_Warangal_Fort_6.jpg'),
+    'tgpsc-aee': ('Canal near Lakshmi pump house, Kaleshwaram', 'Megha Engineering and Infrastructures Ltd', 'CC BY 3.0', _CW + 'Canal_near_Lakshmi_pump_house.png'),
+    'ap-tet': ('Classroom with a blackboard', 'Rishav2014', 'CC BY-SA 4.0', _CW + 'BRKM_02022025_3.jpg'),
+    'tgpsc-pl': ('Government Polytechnic, Masab Tank', 'Adbh266', 'CC BY-SA 4.0', _CW + 'Government_polytechnic_college_at_masab_tank.jpg'),
+    'tgpsc-asst-prof': ('University of Hyderabad campus', 'Mohammad Anees Qamar', 'CC0', _CW + 'A_view_of_the_grounds_and_outdoor_environment_of_the_University_of_Hyderabad_campus,_Telangana,_India.jpg'),
+    'tgpsc-ae': ('Sriram Sagar Project', 'Rizwanmahai', 'CC BY-SA 3.0', _CW + 'Sri_Ram_Sagar_Project_(Pochampahad).jpg'),
+    'tgpsc-dl': ('Osmania University Arts College', 'iMahesh', 'CC BY-SA 4.0', _CW + 'Corridor_in_Ground_floor_of_OU_arts_college.jpg'),
+    'tgpsc-jl': ('Nizam College, Hyderabad', 'Kavali Chandrakanth KCK', 'CC BY-SA 4.0', _CW + 'Trees_at_Nizam_College_Hyderabad.jpg'),
+    'tgpsc-fro': ('Mallela Theertham waterfall', 'Raghavendra Bashamalla', 'CC BY-SA 4.0', _CW + 'Mallela_theertham_waterfalls.jpg'),
+    'tgpsc-aso': ('Buddha statue, Hussain Sagar', 'Nikhilb239', 'CC BY-SA 4.0', _CW + 'Hussain_Sagar_Buddha_Statue.JPG'),
+    'tgpsc-mpso': ('Bhuvanagiri Fort', 'Kasyap', 'CC0', _CW + 'Bhuvanagiri_Fort_steps_at_Entrance.jpg'),
+    'tgpsc-fbo': ('Kawal Tiger Reserve', 'KSV9', 'CC BY-SA 4.0', _CW + 'Kawal_tiger_reserve_outer_veiw.jpg'),
+    'tgpsc-dao': ('Account ledger', 'RaphaelQS', 'CC0', _CW + 'Ledger.png'),
+    'tgpsc-drug': ('Laboratory glassware', 'LukaszKatlewa', 'CC BY-SA 4.0', _CW + 'Vintage_laboratory_glassware_at_Chemical_Faculty,_Gdansk_University_of_Technology,_Poland.jpg'),
+    'tgpsc-deo': ('Government primary school, Patnapur', 'Nskjnv', 'CC BY-SA 4.0', _CW + 'Government_primary_school_at_Patnapur.jpg'),
+    'tgpsc-fso': ('Pakhal Lake, Telangana', 'Alosh Bennett', 'CC BY 2.0', _CW + 'Pakhal_Lake_Telangana.jpg'),
+    'tgpsc-hwo': ('Social Welfare School, Jangaon', 'Adbh266', 'CC BY-SA 4.0', _CW + 'Social_Welfare_School,_Jangoan.jpg'),
+    'tgpsc-hort': ('Turmeric field', 'Vinayaktvg', 'CC BY-SA 4.0', _CW + 'Turmeric_field_visit.jpg'),
+    'tgpsc-mao': ('GHMC main building, Hyderabad', 'Batthini Vinay Kumar Goud', 'CC BY-SA 4.0', _CW + 'GHMC_Main_Building.jpg'),
+    'tgpsc-vas': ('Ongole bull', 'Pavanaja', 'CC BY-SA 3.0', _CW + 'Ongole_01.JPG'),
+    'tgpsc-tpbo': ('HITEC City skyline, Hyderabad', 'Mohammad Anees Qamar', 'CC BY 4.0', _CW + 'Hyderabad_Hi-Tech_City_Skyline_at_Night_–_India\'s_Emerging_Silicon_Valley_(2025).jpg'),
+    'tgpsc-aeo': ('Paddy fields, Komireddipalle, Mahabubnagar', 'Kavali Chandrakanth KCK', 'CC BY-SA 4.0', _CW + 'Paddy_Fields_Of_Komireddipalle_Village_Mahabubnagar_Telangana.jpg'),
+    'tgpsc-health': ('Osmania General Hospital, Hyderabad', 'fraboof', 'CC BY-SA 2.0', _CW + 'Osmania_Hospital.jpg'),
+    'tgpsc-technician': ('Lathe at work', 'David English', 'CC BY-SA 4.0', _CW + 'Lathe_Boring.jpg'),
+    'tgpsc-technical': ('Durgam Cheruvu cable bridge, Hyderabad', 'iMahesh', 'CC BY-SA 4.0', _CW + 'Long_Exposure_of_Cable_bridge_on_Durgam_Cheruvu.jpg'),
+    'tgpsc-ward': ('Old City street, Hyderabad (1965)', 'David Pirmann', 'CC BY 2.0', _CW + 'Hyderabad_street_scene_-_1965_(W65-A39-13)_OldCity.jpg'),
+    'tgpsc-surveyor': ('Surveying with a tacheometer', 'Maxinvestigator', 'CC BY-SA 4.0', _CW + 'Tacheometric_surveying_with_Vega_TEO-5_2024-06.jpg'),
+    'ts-civil-judge': ('Telangana High Court, Hyderabad', 'Chanduclicks', 'CC BY-SA 4.0', _CW + 'Telangana_High_Court_10.jpg'),
+    'tg-trt': ('Teacher at the blackboard', 'Immanuel Giel', 'CC BY-SA 4.0', _CW + 'Indo-German_School,_Nelavoy_24.jpg'),
+    'tg-gurukul': ('Kakatiya residential block', 'Rizwanmahai', 'CC BY-SA 3.0', _CW + 'Kakatiya_Girls_Residential_Block.jpg'),
+    'tgpsc-librarian': ('State Central Library, Hyderabad', 'Saiphani02', 'CC BY 4.0', _CW + 'Book_racks_in_State_central_library_Hyderabad.jpg'),
+    'tgpsc-pd': ('Gachibowli Athletic Stadium', 'Sanyam Bahga', 'CC BY-SA 3.0', _CW + 'Gachibowli_Outdoor_35.JPG'),
+    'tg-panchayat': ('Palampet village farmlands, Telangana', 'Ms Sarah Welch', 'CC0', _CW + 'Palampet_village_and_nearby_farmlands,_Telangana_India_-_1.jpg'),
+    'ssc-cpo': ('Kartavya Path, New Delhi', 'Pinakpani', 'CC BY-SA 4.0', _CW + 'Kartavya_Path_in_the_evening_in_New_Delhi_05.jpg'),
+    'ssc-chsl': ('Rail Bhavan, New Delhi', 'Pinakpani', 'CC BY-SA 4.0', _CW + 'Rail_Bhavan_in_New_Delhi_09.jpg'),
+    'ssc-steno': ('Olympia typewriter', 'Sammlung der Medien und Wissenschaft', 'CC BY 4.0', _CW + 'Olympia_Simplex.jpg'),
+    'ssc-mts': ('Connaught Place, New Delhi (1987)', 'Jan Kranendonk', 'CC BY-SA 4.0', _CW + 'Connaught_Place_in_New_Delhi_in_1987.jpg'),
+    'tg-tet': ('Village school, India', 'Anne-Mette Jensen from London, UK', 'CC BY-SA 2.0', _CW + 'A_children_school_in_Dharamkot_Himachal_Pradesh_India.jpg'),
+    'ssc-selection': ('Vigyan Bhawan, New Delhi', 'Sumita Roy Dutta', 'CC BY-SA 4.0', _CW + 'East_gate_of_Vigyan_Bhawan_Delhi_P_20170403_094024_02.jpg'),
+    'ibps-po': ('Worli skyline, Mumbai', 'Woodysworldtv', 'CC BY 2.0', _CW + 'Worli_skyline_with_BSWL_(cropped)_2.jpg'),
+    'ssc-je': ('Signature Bridge under construction, Delhi', 'Gerd Eichmann', 'CC BY 4.0', _CW + 'Delhi-Signature_Bridge-22-under_constrction-2016-gje.jpg'),
+    'ibps-clerk': ('Reserve Bank of India and GPO, Kolkata', 'Vyacheslav Argenberg', 'CC BY 4.0', _CW + 'General_Post_Office_and_Reserve_Bank_of_India,_Kolkata,_India.jpg'),
+    'ibps-rrb': ('Road through paddy fields, rural India', 'UnpetitproleX', 'CC BY-SA 4.0', _CW + 'Road_through_paddy_fields_in_rural_Haryana,_India.jpg'),
+    'lic-aao': ('Victoria Memorial, Kolkata', 'Subhrajyoti07', 'CC BY-SA 4.0', _CW + 'Victoria_Memorial_situated_in_Kolkata.jpg'),
+    'rbi-grade-b': ('Horniman Circle, Mumbai', 'Kanad Sanyal', 'CC BY-SA 4.0', _CW + 'Horniman_Circle,_Fort,_Mumbai.jpg'),
+    'rbi-assistant': ('Marine Lines, Mumbai', 'Dr Vikramjit Kakati', 'CC BY-SA 4.0', _CW + 'Marine_Lines_Mumbai_2021.jpg'),
+    'nabard-grade-a': ('Tractor preparing a field, Punjab', 'CIAT', 'CC BY-SA 2.0', _CW + 'Agriculture_in_India_tractor_farming_Punjab_preparing_field_for_a_wheat_crop_without_burning_previous_crop_stalk.jpg'),
+    'sbi-clerk': ('Chennai skyline', 'Jayk27', 'CC BY-SA 4.0', _CW + 'New_Chennai_Skyline.jpg'),
+    'rrb-alp': ('WAP-7 locomotive at Eluru', 'iMahesh', 'CC BY-SA 4.0', _CW + 'WAP-7_30398_at_Eluru_railway_station.jpg'),
+    'rrb-technician': ('Integral Coach Factory, Chennai', 'Saiphani02', 'CC BY-SA 4.0', _CW + 'Integral_Coach_Factory,_Chennai_aerial_view.jpg'),
+    'rrb-je': ('Pamban road and rail bridge', 'Rudolph.A.furtado', 'CC0', _CW + '\'Pamban_road_&_rail_bridge\'.JPG'),
+    'tnpsc-group-1': ('Ripon Building, Chennai', 'PlaneMad', 'CC BY-SA 2.5', _CW + 'Ripon_Building_panorama.jpg'),
+    'tnpsc-group-2': ('Senate House, University of Madras', 'Neurofreak', 'CC BY-SA 4.0', _CW + 'The_Senate_House,_Madras.jpg'),
+    'kerala-psc-sa': ('Napier Museum, Thiruvananthapuram', 'Shajinss', 'CC BY-SA 4.0', _CW + 'Napier_Museum_TVM..jpg'),
+    'kerala-psc-kas': ('Kerala Government Secretariat, Thiruvananthapuram', 'Ajeeshcphilip', 'CC BY-SA 3.0', _CW + 'Kerala_Government_Secretariat,_Thiruvananthapuram,_Kerala,_India.jpg'),
+    'kpsc-kas': ('Karnataka High Court (Attara Kacheri), Bengaluru', 'Rehman Abubakr', 'CC BY-SA 4.0', _CW + 'Karnataka_High_Court_-_June_2019.jpg'),
+    'kerala-psc-ldc': ('Tea gardens, Munnar', 'Hohum', 'public domain', _CW + 'Munnar_tea_gardens.jpg'),
+    'mpsc-rajyaseva': ('Shaniwar Wada, Pune', 'Aakash.gautam', 'CC BY-SA 3.0', _CW + 'The_entrance_of_Shaniwar_Wada..JPG'),
+    'mpsc-group-b': ('Bombay High Court', 'Pinakpani', 'CC BY-SA 4.0', _CW + 'Mumbai_High_Court_Building_02.jpg'),
+    'uppsc-pcs': ('Bara Imambara, Lucknow', 'Harsh13596', 'CC BY-SA 4.0', _CW + 'Imambara_of_Asaf-ud-daula_.jpg'),
+    'bpsc-cce': ('Golghar, Patna', 'Deepak1408', 'CC BY-SA 4.0', _CW + 'Golghar_patna_Bihar_India.jpg'),
+    'bpsc-tre': ('Sariputta Stupa, Nalanda Mahavihara', 'Sumitsurai', 'CC BY-SA 4.0', _CW + 'Temple_3_-_Sariputta_Stupa_-_Nalanda_Mahavihara_(10).jpg'),
 }
 
 
@@ -3276,12 +3362,15 @@ def hub_html(catalog, counts, grand):
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
             if live and e['id'] in MAINS_EXAMS and MAINS_KIT: sub += '<span class="ex-x">Prelims + Mains PYQs with model answers</span>'
             tiles[live].append(f'<a class="card exam x-{c["id"]}{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-id="{e["id"]}" data-s="{esc(exam_terms(e, c))}">'
-                               f'<span class="ex-art{" has-ph" if live and exam_photo(e["id"]) else ""}" aria-hidden="true">'
-                               + (f'<img class="ex-ph" src="{exam_photo(e["id"])}" alt="" width="480" height="180" loading="lazy" decoding="async">' if live and exam_photo(e['id']) else '')
+                               f'<span class="ex-art{" has-ph" if exam_photo(e["id"]) else ""}" aria-hidden="true">'
+                               + (f'<img class="ex-ph" src="{exam_photo(e["id"])}" alt="" width="480" height="180" loading="lazy" decoding="async">' if exam_photo(e['id']) else '')
                                + f'<svg viewBox="0 0 160 90" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">{exam_art(e, c["id"])}</svg></span>'
                                f'<span class="ex-body"><span class="ex-b">{esc(e["b"])}</span><span class="ex-t">{nw(e["t"])}</span>{sub}<span class="ex-st" data-n="{("mk" if e["id"] in MOCKONLY else counts.get(e["id"], 0)) if live else ""}">{status}</span></span></a>')
-        upc = (f'<details class="upc"{"" if lv else " open"}><summary>Upcoming exams in {esc(c["name"])} ({len(tiles[False])}) · being added one by one</summary>'
-               f'<div class="exams">{"".join(tiles[False])}</div></details>' if tiles[False] else '')
+        # Anil, 16 Nov 2026: "pls show all such without hiding" -> upcoming exams are listed openly (no fold), with photos
+        upc = (f'<div class="upc"><h3 class="upc-h">Upcoming exams in {esc(c["name"])} ({len(tiles[False])}) · being added one by one</h3>'
+               f'<div class="exams">{"".join(tiles[False])}</div></div>' if tiles[False] else '')
+        crs = [photo_credit(e['id'], '') for e in lv + [e for e in ex if not e.get('live')] if exam_photo(e['id'])]
+        upc += f'<p class="ph-credit ex-cr">Exam photos (cropped) via Wikimedia Commons: {" · ".join(crs)}.</p>' if crs else ''
         secs.append(f'<section class="exam-cat" data-cat="{c["id"]}"><div class="section-title"><h2>{esc(c["name"])}{" <span class=te-sub lang=te>" + esc(c["te"]) + "</span>" if c.get("te") else ""}</h2>'
                     f'<span class="muted" style="font-size:14px">{esc(c["desc"])}</span></div>'
                     + (f'<div class="exams">{"".join(tiles[True])}</div>' if tiles[True] else '') + upc + '</section>')
@@ -3298,8 +3387,6 @@ def hub_html(catalog, counts, grand):
             f'<div id="hubBack" hidden><button type="button" class="btn btn-secondary btn-sm" data-act="excat" data-cat="all" data-i18n="allB">← All exam boards</button></div>'
             f'<p class="muted" id="hubCount" style="font-size:14px"></p>'
             f'<div id="hubCats">{"".join(secs)}</div>'
-            + (f'<p class="ph-credit" id="exCredits" hidden>Exam photos (cropped) via Wikimedia Commons: '
-               + ' · '.join(photo_credit(e['id'], '') for e in catalog['exams'] if e.get('live') and exam_photo(e['id'])) + '.</p>')
             + f'<div class="card empty" id="hubEmpty" hidden><h3 data-i18n="emptyT">No exam matches your search</h3>'
             f'<p data-i18n="emptyP">Tell Anil which exam you are preparing for, and it will be added to the list.</p>'
             f'<div class="row" style="justify-content:center"><a class="btn btn-primary" id="hubAsk" href="https://wa.me/{WHATSAPP}" target="_blank" rel="noopener" data-i18n="ask">Ask on WhatsApp</a></div></div>'
