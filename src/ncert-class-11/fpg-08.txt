@@ -1,0 +1,189 @@
+# NCERT Class 11 Geography, Fundamentals of Physical Geography, Chapter 8: Solar Radiation, Heat Balance and Temperature
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). November 2026.
+
+Q 1 | geo | Fundamentals of Physical Geography
+The energy received by the earth's surface from the sun, mostly in short wavelengths, is called:
+(1) Terrestrial radiation
+(2) Insolation
+(3) Albedo
+(4) Advection
+= 2
+~ Insolation means incoming solar radiation. The earth receives only a small part of the sun's energy, mostly as short waves.
+
+Q 2 | geo | Fundamentals of Physical Geography
+On average, the earth receives about how much energy at the top of its atmosphere?
+(1) 1.94 calories per sq cm per minute
+(2) 19.4 calories per sq cm per minute
+(3) 320 calories per sq cm per minute
+(4) 0.194 calories per sq cm per minute
+= 1
+~ The chapter gives an average of 1.94 calories per square centimetre per minute at the top of the atmosphere.
+
+Q 3 | geo | Fundamentals of Physical Geography
+Consider the following statements:
+1. The earth is farthest from the sun (aphelion) on about 4 July, at about 152 million km.
+2. The earth is nearest to the sun (perihelion) on about 3 January, at about 147 million km.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Both dates and distances are in the chapter. The earth gets slightly more insolation on 3 January, but this effect is masked by land–sea distribution and atmospheric circulation.
+
+Q 4 | geo | Fundamentals of Physical Geography
+Which one of the following is NOT listed in the chapter as a factor causing variation in insolation?
+(1) The angle of inclination of the sun's rays
+(2) The length of the day
+(3) The transparency of the atmosphere
+(4) The salinity of ocean water
+= 4
+~ The listed factors are the earth's rotation on its axis, the angle of the sun's rays, the length of the day, the transparency of the atmosphere and the aspect of the land.
+
+Q 5 | geo | Fundamentals of Physical Geography
+The earth's axis makes an angle of about how many degrees with the plane of its orbit around the sun?
+(1) 23½°
+(2) 45°
+(3) 66½°
+(4) 90°
+= 3
+~ The axis makes 66½° with the orbital plane, which affects how much insolation different latitudes receive through the year.
+
+Q 6 | geo | Fundamentals of Physical Geography
+Why do higher latitudes receive less insolation than lower latitudes?
+(1) The days are always shorter at high latitudes
+(2) The sun's rays are vertical there
+(3) The atmosphere is absent at high latitudes
+(4) The sun's rays are slanting there, so the energy spreads over a larger area and passes through more atmosphere
+= 4
+~ The angle of the sun's rays depends on latitude. Slanting rays spread their energy over a wider area and lose more of it while crossing a thicker layer of atmosphere.
+
+Q 7 | geo | Fundamentals of Physical Geography
+The blue colour of the sky and the red colour of the rising and setting sun are explained in the chapter by:
+(1) Absorption of radiation by ozone
+(2) Scattering of light by very small particles in the atmosphere
+(3) Reflection of sunlight by the oceans
+(4) Terrestrial radiation
+= 2
+~ Tiny suspended particles scatter the visible spectrum. Scattering gives the blue sky and, when the sun is low, the red colours at sunrise and sunset.
+
+Q 8 | geo | Fundamentals of Physical Geography
+Consider the following statements about the spatial distribution of insolation at the surface:
+1. Maximum insolation is received over the subtropical deserts, where cloudiness is least.
+2. The equator receives comparatively less insolation than the tropics.
+3. At the same latitude, insolation is generally more over the oceans than over the continents.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 1
+~ Statement 3 is reversed: at the same latitude, insolation is generally more over the continents. Insolation ranges from about 320 W/m² in the tropics to about 70 W/m² at the poles.
+
+Q 9 | geo | Fundamentals of Physical Geography
+The transfer of heat through the horizontal movement of air is called:
+(1) Conduction
+(2) Convection
+(3) Advection
+(4) Radiation
+= 3
+~ Advection is horizontal transfer of heat. Convection is vertical transfer, confined to the troposphere, and conduction heats the air layers in contact with the ground.
+
+Q 10 | geo | Fundamentals of Physical Geography
+The hot local wind "loo" that blows over northern India in summer is cited in the chapter as an outcome of:
+(1) Conduction
+(2) Advection
+(3) Scattering
+(4) Temperature inversion
+= 2
+~ In tropical regions, especially northern India in summer, the loo results from advection. In middle latitudes most day-to-day weather variation is also caused by advection.
+
+Q 11 | geo | Fundamentals of Physical Geography
+The atmosphere is heated mainly by:
+(1) Short-wave solar radiation passing through it
+(2) Ultraviolet rays absorbed by nitrogen
+(3) Heat from the earth's core
+(4) Long-wave terrestrial radiation from the earth's surface
+= 4
+~ The earth absorbs insolation and radiates long waves. Greenhouse gases absorb this terrestrial radiation, so the atmosphere is heated indirectly from below.
+
+Q 12 | geo | Fundamentals of Physical Geography
+In the heat budget of the earth, out of 100 units of insolation, 35 units are reflected back to space before reaching the surface. This reflected amount is called the earth's:
+(1) Net radiation
+(2) Lapse rate
+(3) Specific heat
+(4) Albedo
+= 4
+~ Of the 35 units, 27 are reflected from the tops of clouds, 2 from snow and ice-covered areas and 6 are scattered by the atmosphere. Together they make up the albedo.
+
+Q 13 | geo | Fundamentals of Physical Geography
+Of the remaining 65 units of insolation that are absorbed, how are they shared according to the heat budget?
+(1) 14 units by the atmosphere and 51 units by the earth's surface
+(2) 51 units by the atmosphere and 14 units by the earth's surface
+(3) 35 units by the atmosphere and 30 units by the surface
+(4) All 65 units by the oceans
+= 1
+~ The atmosphere absorbs 14 units directly and the surface absorbs 51 units.
+
+Q 14 | geo | Fundamentals of Physical Geography
+Of the 51 units that the earth radiates as terrestrial radiation, 34 units are absorbed by the atmosphere. Which part is the largest?
+(1) 6 units absorbed directly
+(2) 9 units through convection and turbulence
+(3) 19 units through latent heat of condensation
+(4) 17 units through scattering
+= 3
+~ The atmosphere takes up 6 units directly, 9 through convection and turbulence and 19 through latent heat of condensation. The other 17 of the 51 units go straight to space.
+
+Q 15 | geo | Fundamentals of Physical Geography
+How does the earth maintain its heat balance, according to the heat budget?
+(1) The 65 units received are returned to space as 17 units from the surface and 48 units from the atmosphere
+(2) The earth stores all the heat it receives
+(3) Only the oceans radiate heat back to space
+(4) The atmosphere returns all 100 units to space
+= 1
+~ 17 units of terrestrial radiation plus 48 units of atmospheric radiation equal the 65 units absorbed, so the earth as a whole neither accumulates nor loses heat.
+
+Q 16 | geo | Fundamentals of Physical Geography
+Between which latitudes is there a surplus of net radiation, from where heat is transferred towards the poles?
+(1) 40°N and 40°S
+(2) 10°N and 10°S
+(3) 60°N and 60°S
+(4) 23½°N and 66½°N only
+= 1
+~ There is a surplus between about 40°N and 40°S and a deficit near the poles. The surplus heat is carried polewards by winds and ocean currents.
+
+Q 17 | geo | Fundamentals of Physical Geography
+What is the normal lapse rate given in the chapter?
+(1) 6.5°C per 1,000 m
+(2) 1°C per 1,000 m
+(3) 10°C per 100 m
+(4) 0.5°C per 1,000 m
+= 1
+~ Temperature generally falls by about 6.5°C for every 1,000 m of height. This is why mountains are cooler than nearby plains.
+
+Q 18 | geo | Fundamentals of Physical Geography
+In January, the isotherms in the Northern Hemisphere bend northwards over the North Atlantic Ocean. This is mainly due to:
+(1) The cold Labrador Current
+(2) The warm Gulf Stream and North Atlantic Drift
+(3) High mountains in Europe
+(4) Low insolation over the ocean
+= 2
+~ Warm ocean currents make the North Atlantic warmer, so isotherms deviate north over the ocean and south over the colder continents. In the Southern Hemisphere isotherms run more parallel to the latitudes.
+
+Q 19 | geo | Fundamentals of Physical Geography
+According to the chapter, where is the highest annual range of temperature, more than 60°C, found?
+(1) Over the equatorial oceans
+(2) In the north-eastern part of the Eurasian continent
+(3) In the Sahara desert
+(4) Over Antarctica
+= 2
+~ Continentality makes north-eastern Eurasia extremely hot in summer and cold in winter. The least range, about 3°C, is found between 20°S and 15°N.
+
+Q 20 | geo | Fundamentals of Physical Geography
+Which conditions are ideal for a surface inversion of temperature?
+(1) Short summer nights with cloudy skies and strong winds
+(2) Long winter nights with clear skies and still air
+(3) Midday in summer over deserts
+(4) Heavy rainfall during the monsoon
+= 2
+~ On long, clear, calm winter nights the ground loses heat quickly, so the air near it becomes colder than the air above. Inversions can cause fog, and air drainage collects cold air in valley bottoms.
