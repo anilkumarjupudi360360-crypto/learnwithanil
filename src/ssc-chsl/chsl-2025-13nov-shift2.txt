@@ -298,7 +298,7 @@ Which conclusion necessarily follows?
 = 2
 ~ I follows: the statement lists benefits (security, crime prevention) and risks (privacy violations). II follows: critics demand transparent policies and public oversight to address those concerns. III is an extreme step that the statement never suggests, so only I and II follow.
 
-Q 30 | rea | Miscellaneous
+Q 30 | rea | Miscellaneous Reasoning
 Each item describes a situation and is followed by four possible responses. Indicate the response you find most appropriate. Choose only one response for each item. The responses will be evaluated based on the level of appropriateness for the given situation.
 A student has only 3 days left before an exam. She hasn't completed half the syllabus. What's the best strategy?
 (1) Watch motivational videos to calm nerves
@@ -328,7 +328,7 @@ If '~' stands for '÷', '?' stands for '+', '%' stands for '-', '$' stands for '
 = 1
 ~ Replace the symbols: 4 % 13 ? 9 $ 14 becomes 4 − 13 + 9 × 14. By BODMAS, 9 × 14 = 126 first; then 4 − 13 + 126 = 117.
 
-Q 33 | rea | Miscellaneous
+Q 33 | rea | Miscellaneous Reasoning
 Your colleague shares personal problems affecting their work. You are not their manager. Best social intelligence response?
 (1) Spread their issues as office gossip to get sympathy
 (2) Offer to help them prioritize tasks and suggest they talk to HR or supervisor
@@ -399,7 +399,7 @@ In the sequence U, Q, M, I, ?
 = 2
 ~ Letter positions: U = 21, Q = 17, M = 13, I = 9 — each step is −4. So next = 9 − 4 = 5 = E.
 
-Q 40 | rea | Miscellaneous
+Q 40 | rea | Miscellaneous Reasoning
 In this question some conditions or circumstances is provided to you, you have to make logical judgement according to mentioned circumstances and mark the correct judgement for question.
 A municipal council must allocate a limited budget for infrastructure. The council has the choice to repair an old bridge, build a new park, improve water supply, or enhance local transportation. What action is most justified if the town has recently faced water shortages?
 (1) Repair the old bridge
@@ -409,7 +409,7 @@ A municipal council must allocate a limited budget for infrastructure. The counc
 = 3
 ~ With a limited budget, priority goes to the most pressing need. The town has recently faced water shortages, a basic necessity, so improving the water supply is the most justified action.
 
-Q 41 | rea | Miscellaneous
+Q 41 | rea | Miscellaneous Reasoning
 Four meaningful words are given in the options you have to check that which of the following words cannot be formed from the letters.
 'MANAGEMENT'?
 (1) AGENT
@@ -419,7 +419,7 @@ Four meaningful words are given in the options you have to check that which of t
 = 4
 ~ MANAGEMENT has the letters M, A, N, A, G, E, M, E, N, T. AGENT, MEANT and MANGE use only these letters, but MANTLE needs an L, which MANAGEMENT does not contain.
 
-Q 42 | rea | Miscellaneous
+Q 42 | rea | Miscellaneous Reasoning
 In this type of questions, question is provided with some issues/disputes/problem, followed by few methods to resolve the problem in statement choosing the appropriate problem solving method that can be implemented.
 An employee claims a colleague took credit for his idea. HR must resolve. Best step?
 (1) Investigate by collecting evidence from both sides

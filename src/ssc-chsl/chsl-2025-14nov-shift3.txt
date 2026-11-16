@@ -252,7 +252,7 @@ S. The artefacts brought the past of a long-lost culture to life by telling a st
 = 4
 ~ The steps follow the excavation in time: P (grid laid, digging begins) → Q ('They' document artefacts as they are unearthed) → R (each item found is cleaned and catalogued) → S (conclusion: the artefacts bring the past to life). So PQRS.
 
-Q 26 | rea | Miscellaneous
+Q 26 | rea | Miscellaneous Reasoning
 Each item describes a situation and is followed by four possible responses. Indicate the response you find most appropriate. Choose only one response for each item. The responses will be evaluated based on the level of appropriateness for the given situation.
 Vidya has two internship options: one at a top multinational that involves data entry work, and another at a startup where she'll learn coding and project management. She's aiming for a tech career. Which should she choose?
 (1) The multinational for brand name
@@ -262,7 +262,7 @@ Vidya has two internship options: one at a top multinational that involves data 
 = 2
 ~ Her goal is a tech career, so the internship that builds relevant skills (coding and project management) matters more than a big brand offering only data entry. Doing both at once is impractical, and dropping internships throws away practical experience.
 
-Q 27 | rea | Miscellaneous
+Q 27 | rea | Miscellaneous Reasoning
 During a multi-cultural project, one member misinterprets a colloquial phrase and feels slighted. What's best?
 (1) Ignore their feelings
 (2) Explain the phrase contextually and apologize for misunderstanding
@@ -322,7 +322,7 @@ Identify the next term: C, E, G, I, ?
 = 1
 ~ Each letter moves 2 places forward: C(3) → E(5) → G(7) → I(9) → K(11).
 
-Q 33 | rea | Miscellaneous
+Q 33 | rea | Miscellaneous Reasoning
 In this question some conditions or circumstances is provided to you, you have to make logical judgement according to mentioned circumstances and mark the correct judgement for question.
 An employee discovers confidential documents left unattended in a public space. What is the best course of action?
 (1) Ignore the papers
@@ -332,7 +332,7 @@ An employee discovers confidential documents left unattended in a public space. 
 = 3
 ~ Confidential papers must be secured at once and passed to the proper authority, so handing them to the security supervisor protects the information. Ignoring them or only warning others leaves them exposed, and posting them online leaks them.
 
-Q 34 | rea | Miscellaneous
+Q 34 | rea | Miscellaneous Reasoning
 Four meaningful words are given in the options you have to check that which of the following words cannot be formed from the letters.
 ‘INTELLIGENCE’?
 (1) CANCEL
@@ -352,7 +352,7 @@ A mirror is placed on the line AB. Out of the option figures which figure will b
 ~ A vertical mirror on the right reverses left and right: the characters appear in reverse order (3, 2, 1, N, e, D, e, V) and each one is laterally inverted, while the symmetric V looks the same. Only figure 1 shows every character correctly flipped; the others leave the D or the e's unflipped or wrongly drawn.
 ! img/n14s3-q35.png
 
-Q 36 | rea | Miscellaneous
+Q 36 | rea | Miscellaneous Reasoning
 In this type of questions, question is provided with some issues/disputes/problem, followed by few methods to resolve the problem in statement choosing the appropriate problem solving method that can be implemented.
 An employee is consistently late due to long commute but performing well. Manager wants to maintain discipline. What is the balanced approach?
 (1) Offer flexible start hours while setting a defined acceptable window
@@ -362,7 +362,7 @@ An employee is consistently late due to long commute but performing well. Manage
 = 1
 ~ Flexible start hours within a fixed acceptable window solve the commute problem while keeping a clear rule, so discipline and a good performer are both preserved. Ignoring the issue weakens discipline; firing or endless warnings are harsh or ineffective.
 
-Q 37 | rea | Miscellaneous
+Q 37 | rea | Miscellaneous Reasoning
 In this type of questions, question is provided with some issues/disputes/problem, followed by few methods to resolve the problem in statement choosing the appropriate problem solving method that can be implemented.
 A problem arises in the hospital where resources are misused. What should the administrator do to fix it fairly?
 (1) Implement transparent tracking and feedback
@@ -411,7 +411,7 @@ From the given option figures, select the one in which the question figure is hi
 ~ The question figure is a horizontal line ending in a right triangle that hangs below its right end (vertical right side, slanting side going down to the right). In figure 3 the middle horizontal line, the right vertical line and the slanting line below them form exactly this shape, in the same orientation.
 ! img/n14s3-q41.png
 
-Q 42 | rea | Miscellaneous
+Q 42 | rea | Miscellaneous Reasoning
 In the following question, select the number which can be placed at the sign of question mark (?) from the given alternatives.
 8 | 9 | 5 | 44
 5 | ? | 6 | 42
@@ -423,7 +423,7 @@ In the following question, select the number which can be placed at the sign of 
 = 1
 ~ In each row the last number is twice the sum of the first three: (8 + 9 + 5) × 2 = 44 and (12 + 7 + 3) × 2 = 44. So (5 + ? + 6) × 2 = 42 → 11 + ? = 21 → ? = 10.
 
-Q 43 | rea | Miscellaneous
+Q 43 | rea | Miscellaneous Reasoning
 In the figure given below the triangle represents pens, the rectangle represents pencils and the circle represents erasers. Number in each area represents the number of items in that area.
 How many pens are pencils?
 (1) 16

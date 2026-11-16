@@ -307,7 +307,7 @@ Five friends Avi, Ani, Asif, Anu and Asa were born in different consecutive year
 = 1
 ~ Years are 2001–2005. Avi is oldest → 2001. The only leap year is 2004 → Asif. Anu is not 2002 or 2005 → 2003. Asa and Ani take 2002 and 2005; Ani is younger, so Ani 2005 and Asa 2002.
 
-Q 31 | rea | Miscellaneous
+Q 31 | rea | Miscellaneous Reasoning
 You are given a Master Address (MA) from official records. Your task is to identify the correct candidate address that matches exactly with the master address in terms of formatting, punctuation, spelling, and structure.
 Master Address (MA): FL-10, Block C-3, Royal Enclave, Ashram Road, Ahmedabad - 380009
 Candidate Addresses:
@@ -328,7 +328,7 @@ Identify the next number in the sequence.
 = 2
 ~ Differences are 16, 24, 32, 40, rising by 8, so the next difference is 48: 120 + 48 = 168. (Also each term is n² − 1 for odd n: 3²−1, 5²−1, … 13²−1 = 168.)
 
-Q 33 | rea | Miscellaneous
+Q 33 | rea | Miscellaneous Reasoning
 In the following question, select the number which can be placed at the sign of question mark (?) from the given alternatives.
 3 | 5 | 6 | 90
 2 | 4 | 5 | 40
@@ -340,7 +340,7 @@ In the following question, select the number which can be placed at the sign of 
 = 3
 ~ In each row the product of the first three numbers gives the fourth: 3×5×6 = 90, 2×4×5 = 40. So 4×7×? = 140 → ? = 140 ÷ 28 = 5.
 
-Q 34 | rea | Miscellaneous
+Q 34 | rea | Miscellaneous Reasoning
 In the following question, select the number which can be placed at the sign of question mark (?) from the given alternatives.
 (1) 2
 (2) 3
@@ -476,7 +476,7 @@ In a certain code language, ‘proper culture quality relation’ is coded as �
 = 2
 ~ 'quality' is common to sentences 1 and 2, and so is 'du' → quality = du. 'relation' is common to 1 and 3, as is 'tu' → relation = tu. ('now' = pa.) So 'quality relation' = du tu.
 
-Q 48 | rea | Miscellaneous
+Q 48 | rea | Miscellaneous Reasoning
 From the given alternatives, select the word that CANNOT be formed by using the letters of the given word.
 REVOLUTION
 (1) ULTRON
@@ -486,7 +486,7 @@ REVOLUTION
 = 3
 ~ REVOLUTION has the letters R, E, V, O, L, U, T, I, O, N. RATION needs an 'A', which is not there. ULTRON, NOVEL and INTRO can all be formed.
 
-Q 49 | rea | Miscellaneous
+Q 49 | rea | Miscellaneous Reasoning
 From the given alternatives, select the word that CANNOT be formed by using the letters of the given word.
 INDEPENDENCE
 (1) DINE

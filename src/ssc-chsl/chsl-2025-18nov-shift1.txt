@@ -263,7 +263,7 @@ The interior designer received a ______ from her client for choosing furniture t
 = 3
 ~ A compliment is praise (she received a compliment); to complement is to go well with or complete (furniture that complements the walls). Counsel (advice) and council (an advisory body) do not fit.
 
-Q 26 | rea | Miscellaneous
+Q 26 | rea | Miscellaneous Reasoning
 Two numbers differ by 12. If their product is increased by the square of their difference, the result is 1008. Find the larger number.
 (1) 18
 (2) 24
@@ -272,7 +272,7 @@ Two numbers differ by 12. If their product is increased by the square of their d
 = 3
 ~ Product + 12² = 1008, so product = 864. With numbers x and x − 12: x(x − 12) = 864 gives x = 36 (36 × 24 = 864; 864 + 144 = 1008). The keyed 30 (with 18) gives 30 × 18 + 144 = 684, not 1008. (SSC key; some sources differ.)
 
-Q 27 | rea | Miscellaneous
+Q 27 | rea | Miscellaneous Reasoning
 The average score of 5 students in a test is 75. If the scores of four students are 70, 80, 65, and 90, what is the score of the fifth student?
 (1) 60
 (2) 70
@@ -281,7 +281,7 @@ The average score of 5 students in a test is 75. If the scores of four students 
 = 2
 ~ Total of 5 scores = 5 × 75 = 375. Sum of four = 70 + 80 + 65 + 90 = 305. Fifth score = 375 − 305 = 70.
 
-Q 28 | rea | Miscellaneous
+Q 28 | rea | Miscellaneous Reasoning
 A, B, and C started a business by investing ₹2000, ₹3000, and ₹4000 respectively. If the total profit at the end of the year was ₹1800, what is B's share of the profit?
 (1) ₹400
 (2) ₹600
@@ -290,7 +290,7 @@ A, B, and C started a business by investing ₹2000, ₹3000, and ₹4000 respec
 = 2
 ~ For the same period, profit is shared in the ratio of investments: 2000 : 3000 : 4000 = 2 : 3 : 4 (total 9 parts). B's share = 3/9 × 1800 = ₹600.
 
-Q 29 | rea | Miscellaneous
+Q 29 | rea | Miscellaneous Reasoning
 What is the average of the following numbers: 12, 18, 24, 30, 36?
 (1) 24
 (2) 25
@@ -299,7 +299,7 @@ What is the average of the following numbers: 12, 18, 24, 30, 36?
 = 1
 ~ Sum = 12 + 18 + 24 + 30 + 36 = 120; average = 120 ÷ 5 = 24. (The numbers are in AP, so the average is the middle term, 24.)
 
-Q 30 | rea | Miscellaneous
+Q 30 | rea | Miscellaneous Reasoning
 If a car travels 180 km in 3 hours, what is its average speed in km/hr?
 (1) 50 km/hr
 (2) 60 km/hr
@@ -308,7 +308,7 @@ If a car travels 180 km in 3 hours, what is its average speed in km/hr?
 = 2
 ~ Average speed = total distance ÷ total time = 180 ÷ 3 = 60 km/hr.
 
-Q 31 | rea | Miscellaneous
+Q 31 | rea | Miscellaneous Reasoning
 If a number is increased by 10% and then decreased by 10%, what is the net change?
 (1) 1% increase
 (2) 1% decrease
@@ -326,7 +326,7 @@ During Diwali, Meera arranges 50 lamps in a row. A golden lamp is 18th from left
 = 3
 ~ Check each lamp: golden 18 + 33 − 1 = 50 and silver 25 + 26 − 1 = 50, so both positions fit a row of 50. Lamps between = 25 − 18 − 1 = 6. SSC's key nevertheless marks the arrangement as impossible. (SSC key; some sources differ.)
 
-Q 33 | rea | Miscellaneous
+Q 33 | rea | Miscellaneous Reasoning
 A shop offers a 25% discount on the marked price of an item. If the selling price is ₹750, what is the marked price?
 (1) ₹900
 (2) ₹1000
@@ -383,7 +383,7 @@ Identify the missing number in the following number sequence.
 = 4
 ~ Two alternating series: 20, 40, 120, ? and 15, 30, 90, 360, each multiplied by 2, 3, 4. So ? = 120 × 4 = 480. Check: each odd term × 3/4 gives the next term (480 × 3/4 = 360).
 
-Q 39 | rea | Miscellaneous
+Q 39 | rea | Miscellaneous Reasoning
 Which one of the following number pairs is divisible by both 13 and 17?
 (1) (221, 443)
 (2) (663, 884)
@@ -456,7 +456,7 @@ II. Applications of candidates with 6 years of experience in marketing will not 
 = 2
 ~ The statement sets only an experience condition (7 years or more); an MBA degree is never mentioned, so I does not follow. 6 years is below 7, so such applications will be rejected: II follows.
 
-Q 46 | rea | Miscellaneous
+Q 46 | rea | Miscellaneous Reasoning
 Instructions: Carefully examine the Reference Statement. Then, identify the single option among the four alternatives (a, b, c, d) that is an EXACT AND COMPLETE REPLICATION of the Reference Statement. Pay exceptionally close attention to every character, number, symbol, space, and punctuation mark.
 Reference: Mumbai (BOM), 26/11/2008, 09:30 PM.
 (1) Mumbai (BOM), 26/11/2008, 09:30 PM.
@@ -466,7 +466,7 @@ Reference: Mumbai (BOM), 26/11/2008, 09:30 PM.
 = 1
 ~ Only option 1 matches character for character. Option 2 writes "P.M." for "PM", option 3 drops the leading zero ("9:30"), and option 4 inserts an underscore in "Mumb_ai".
 
-Q 47 | rea | Miscellaneous
+Q 47 | rea | Miscellaneous Reasoning
 Instructions: For the question below, carefully examine the Reference Statement. Then, identify the single option among the four alternatives (a, b, c, d) that is an EXACT AND COMPLETE REPLICATION of the Reference Statement. Pay exceptionally close attention to every character, number, symbol, space, and punctuation mark.
 Reference: Athens, GR: 24th July, 1974.
 (1) Athens, GR: 24th July, 1974.
@@ -476,7 +476,7 @@ Reference: Athens, GR: 24th July, 1974.
 = 1
 ~ Only option 1 matches exactly. Option 2 changes "GR:" to "Gr.:", option 3 misspells "Atens", and option 4 swaps the year to 1947.
 
-Q 48 | rea | Miscellaneous
+Q 48 | rea | Miscellaneous Reasoning
 Instructions: For the question below, carefully examine the Reference Statement. Then, identify the single option among the four alternatives (a, b, c, d) that is an EXACT AND COMPLETE REPLICATION of the Reference Statement. Pay exceptionally close attention to every character, number, symbol, space, and punctuation mark.
 Reference: Edinburgh: 24th June, 1314
 (1) Edinburgh: 24th June, 1314

@@ -70,7 +70,7 @@ async def main():
             tiles = await pg.locator('#hub-static .exam').count()
             assert tiles >= 90, f'expected the full exam list, got {tiles}'
             live = await pg.locator('#hub-static .exam.live').count()
-            built = sum(1 for d in ('sbi-po', 'ibps-so', 'ibps-rrb', 'ssc-chsl', 'appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ssc-mts', 'ssc-chsl', 'rrb-ntpc', 'ssc-gd-constable', 'tnpsc-group-4', 'karnataka-fda-sda', 'karnataka-gpstr', 'mpsc-group-c', 'gsssb-cce', 'upsssc-inter-level', 'uppsc-ro-aro', 'ukpsc-lower-pcs', 'cg-vyapam-group-2', 'opsc-aso', 'wbpsc-ido', 'dsssb', 'jkssb-je-civil', 'meghalaya-psc', 'rrb-group-d', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager', 'tgpsc-group-1', 'tgpsc-group-2', 'appsc-amvi', 'tgpsc-amvi', 'appsc-endowment-officer', 'appsc-analyst-grade-2', 'appsc-assistant-environmental-engineer', 'appsc-assistant-statistical-officer', 'appsc-forest-range-officer', 'ap-police-si', 'ap-police-constable', 'upsc-cse', 'upsc-prelims', 'upsc-ifos', 'rpf-si', 'rpf-constable', 'ap-dsc') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1 + sum(1 for d in os.listdir(SITE) if d.startswith('ncert-class-') and os.path.exists(os.path.join(SITE, d, 'index.html')))
+            built = sum(1 for d in ('sbi-po', 'ibps-so', 'ibps-rrb', 'appsc-group-1', 'upsc-capf', 'upsc-epfo', 'ssc-cgl', 'ssc-mts', 'ssc-chsl', 'rrb-ntpc', 'ssc-gd-constable', 'tnpsc-group-4', 'karnataka-fda-sda', 'karnataka-gpstr', 'mpsc-group-c', 'gsssb-cce', 'upsssc-inter-level', 'uppsc-ro-aro', 'ukpsc-lower-pcs', 'cg-vyapam-group-2', 'opsc-aso', 'wbpsc-ido', 'dsssb', 'jkssb-je-civil', 'meghalaya-psc', 'rrb-group-d', 'ts-police-si', 'ts-police-constable', 'tgpsc-hmwssb-manager', 'tgpsc-group-1', 'tgpsc-group-2', 'appsc-amvi', 'tgpsc-amvi', 'appsc-endowment-officer', 'appsc-analyst-grade-2', 'appsc-assistant-environmental-engineer', 'appsc-assistant-statistical-officer', 'appsc-forest-range-officer', 'ap-police-si', 'ap-police-constable', 'upsc-cse', 'upsc-prelims', 'upsc-ifos', 'rpf-si', 'rpf-constable', 'ap-dsc') if os.path.exists(os.path.join(SITE, d, 'index.html'))) + 1 + sum(1 for d in os.listdir(SITE) if d.startswith('ncert-class-') and os.path.exists(os.path.join(SITE, d, 'index.html')))
             assert live == built, f'{built} exams are built but {live} tiles are live'
             await pg.fill('#examSearch', 'group 2'); await pg.wait_for_timeout(100)
             found = await pg.eval_on_selector_all('#hub-static .exam:not([hidden])', 'els => els.map(e => e.dataset.id)')   # APPSC and TGPSC Group-II (+ TNPSC Group 2, listed 2 Nov 2026)
@@ -107,7 +107,7 @@ async def main():
             assert await pg.evaluate('window.__same === 1'), 'moving between views should not reload the page'
             assert await pg.evaluate('!document.getElementById("home-static").hidden'), 'the live Group-II tile should open the Group-II page'
             if name == 'desk': await pg.screenshot(path=f'{SHOTS}/home-{name}.png', full_page=False)
-            for v in ['exams','exam/ssc-chsl','home','papers','practice','mistakes','about','join','notes']:
+            for v in ['exams','exam/ssc-cpo','home','papers','practice','mistakes','about','join','notes']:
                 await pg.evaluate(f'location.hash="{v}"'); await pg.wait_for_timeout(150)
                 sw = await pg.evaluate('document.documentElement.scrollWidth')
                 if sw > width: errors.append(f'{name}/{v}: horizontal overflow {sw}>{width}')
@@ -212,7 +212,7 @@ async def main():
                     assert await pg.locator('#view .qtext[lang="mr"]').count() >= 1, 'MPSC question should show in Marathi'
                 if l2 == 'gu':   # GSSSB CCE: Reasoning and Quant in Gujarati + English, the Gujarati section in Gujarati only
                     assert await pg.locator('#view .qtext[lang="gu"]').count() >= 1, 'GSSSB question should show in Gujarati'
-                if l2 == 'hi' and tag not in ('epfo', 'jkc', 'mgp'):   # EPFO Q1-20 (General English) are English only; JKSSB JE Civil and Meghalaya PSC papers are printed in English only
+                if l2 == 'hi' and tag not in ('epfo', 'jkc', 'mgp', 'chsl'):   # EPFO Q1-20 (General English) and CHSL Q1-25 (English Language) are English only; JKSSB JE Civil and Meghalaya PSC papers are printed in English only
                     assert await pg.locator('#view .qtext[lang="hi"]').count() >= 1, 'CAPF question should show in Hindi'
                 await pg.screenshot(path=f'{SHOTS}/{tag}-quiz-{l2}-{name}.png')
                 sw = await pg.evaluate('document.documentElement.scrollWidth')
@@ -236,7 +236,7 @@ async def main():
         checks = [('appsc-group-1/bank/', '/appsc-group-1/papers/', 'question papers'), ('appsc-group-1/mistakes/', '/appsc-group-1/mistakes/', 'wrong answers'), ('upsc-capf/practice/', '/upsc-capf/practice/', 'quiz'),
                   ('#home', '/appsc-group-2/', 'home'), ('appsc-group-1/#papers', '/appsc-group-1/papers/', 'question papers'),
                   ('upsc-capf/q/c2026a-3/', '/upsc-capf/quiz/', 'Raghu'), ('upsc-capf/?q=c2026a-4', '/upsc-capf/quiz/', 'Ol Chiki'),
-                  ('exam/ssc-chsl/', '/exam/ssc-chsl/', 'CHSL'), ('appsc-group-2/papers/', '/appsc-group-2/papers/', 'question papers')]
+                  ('exam/ssc-cpo/', '/exam/ssc-cpo/', 'CPO'), ('appsc-group-2/papers/', '/appsc-group-2/papers/', 'question papers')]
         for path, want, word in checks:
             await pg.goto(URL + path); await pg.wait_for_timeout(700)
             for _ in range(10):   # slow views (the My Mistakes lock, 16 Nov 2026: no longer named in the top bar) get up to 2 s more
