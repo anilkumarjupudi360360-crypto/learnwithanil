@@ -634,6 +634,67 @@ def FAQ_KFS(total, npapers):
     ]
 
 
+
+# ---------- Karnataka GPSTR / Teacher Recruitment (School Education Department, Karnataka) ----------
+# Anil, 16 Nov 2026: "ok start on exam at a time" (Karnataka Teacher Recruitment 2026: 15,000 posts - GPT 8,500, AM, PST, PET, CST; apply by
+# 16 November 2026; exam date not announced). The 2026 rules (10 Aug 2026) give two OMR papers per cadre, Paper-1 General and Paper-2 subject,
+# 100 questions each, 2 hours, Kannada and English, 35% in each paper. The previous exam is GPSTR 2022 (Graduate Primary School Teachers,
+# classes 6-8, held 21-22 May 2022). Paper-1 General Studies here is a candidate's Kannada-medium booklet (version 1A, P1-GS; from
+# inyatrust.co.in) read page by page, with the department's key answers of 3 June 2022. General Kannada is Kannada only, General English English
+# only; the English text of Q51-150 is our translation. Q84: the key's option 2 (I-a, II-b, III-c, IV-d) fits only an age-ordered List-2;
+# this booklet's List-2 is not in age order, so option 1 (the correct match) is marked, explained in the question. Work files: /home/claude/kt.
+GPS_BLURB1 = ('Paper-1 General Studies: 150 questions, 150 marks, 2 hours 30 minutes, in Kannada and English: General Kannada, General English, '
+              'General Knowledge, Educational Psychology & Pedagogy, Health & Value Education and Computer Literacy. (From 2026 Paper-1 General has '
+              '100 questions in 2 hours.)')
+def _gps(pid, paper, held, ver, code, keydate, file_, slug, title, kwname, kn_paper, blurb, mins):
+    return dict(id=pid, file=file_, year=2022, stage=f'GPSTR 2022 Paper-{paper}', short=f'GPSTR 2022 · P{paper}', title=title,
+                notif=f'GPSTR 2022 (Graduate Primary School Teachers Recruitment, classes 6–8) · Kannada-medium booklet version {ver}, subject code {code}',
+                held=held, key=f"the department's key answers ({keydate})", fmt='mcq', slug=slug, kwname=kwname, kn_paper=kn_paper, blurb=blurb, mins=mins)
+GPS_PAPERS = [
+  _gps('g22g', 1, '21 May 2022', '1A', 'P1-GS', '3 June 2022', 'gpstr-2022-paper-1.txt', 'gpstr-2022-paper-1-general-studies-question-paper-with-answers',
+       'GPSTR 2022 Paper-1: General Studies', 'GPSTR 2022 Paper 1 General Studies', 'ಸಾಮಾನ್ಯ ಅಧ್ಯಯನ ಪತ್ರಿಕೆ-1', GPS_BLURB1, 150),
+]
+GPS_SUBJECTS = [
+  ('kan', 'General Kannada', 'general-kannada', ['Grammar', 'Vocabulary & Usage', 'Literature']),
+  ('eng', 'General English', 'general-english', ['Grammar', 'Vocabulary', 'Sentence Arrangement', 'Language Functions', 'Reading Comprehension']),
+  ('gk', 'General Knowledge & Current Affairs', 'general-knowledge', ['History & Culture', 'Geography', 'Economy & Schemes', 'Science', 'Karnataka', 'Sports, Awards & Books', 'Current Affairs']),
+  ('apt', 'Mental Ability', 'mental-ability', ['Reasoning']),
+  ('psy', 'Educational Psychology, Child Development & Pedagogy', 'educational-psychology', ['Child Development', 'Learning', 'Learning Difficulties', 'Methods of Psychology',
+                                                                                         'Personality', 'Intelligence & Creativity', 'Pedagogy', 'Assessment & Evaluation']),
+  ('hve', 'Health & Value Education', 'health-value-education', ['Health Education', 'Value Education', 'Yoga']),
+  ('cmp', 'Computer Literacy', 'computer-literacy', ['Computer Basics', 'Internet', 'MS Office', 'Kannada Computing']),
+]
+GPS_SUBJ_KN = {'kan': 'ಸಾಮಾನ್ಯ ಕನ್ನಡ', 'eng': 'ಸಾಮಾನ್ಯ ಇಂಗ್ಲಿಷ್', 'gk': 'ಸಾಮಾನ್ಯ ಜ್ಞಾನ ಮತ್ತು ಪ್ರಚಲಿತ ವಿದ್ಯಮಾನಗಳು', 'apt': 'ಮಾನಸಿಕ ಸಾಮರ್ಥ್ಯ',
+               'psy': 'ಶೈಕ್ಷಣಿಕ ಮನೋವಿಜ್ಞಾನ, ಮಗುವಿನ ಬೆಳವಣಿಗೆ ಮತ್ತು ಬೋಧನಾಶಾಸ್ತ್ರ', 'hve': 'ಆರೋಗ್ಯ ಮತ್ತು ಮೌಲ್ಯ ಶಿಕ್ಷಣ', 'cmp': 'ಕಂಪ್ಯೂಟರ್ ಸಾಕ್ಷರತೆ'}
+
+
+def FAQ_GPS(total, npapers):
+    return [
+      ('Where can I get GPSTR previous year question papers with answers?',
+       f'This page has {total} questions from the GPSTR 2022 Paper-1 General Studies (held on 21 May 2022), with the answer from the School Education '
+       'Department\'s key answers and an explanation in Kannada and English. The subject papers (Paper-2) are being added next.'),
+      ('Are the answers official?',
+       'Yes. Every answer is from the key answers the School Education Department published on 3 June 2022. In one question (Q84) the key\'s option fits '
+       'only if List-2 is printed in age order; in the Kannada-medium booklet it is not, so the correct match is marked and the reason is explained. '
+       'Where the key is open to doubt, the explanation says so. The explanations are written by Learn with Anil.'),
+      ('What is the Karnataka teacher recruitment exam pattern in 2026?',
+       'Under the 2026 recruitment rules each cadre (PST, GPT, Assistant Master, PE teacher, Computer Science teacher) writes two compulsory papers on OMR '
+       'sheets: Paper-1 General (100 questions, 100 marks, 2 hours) and Paper-2 in the subject (100 questions, 100 marks, 2 hours), in Kannada and English. '
+       'A candidate needs at least 35% in each paper. The final merit adds the exam marks (70%) to the TET score (20%) and academic and teacher-education marks.'),
+      ('Is the GPSTR question paper available in Kannada?',
+       'Yes. Tap ಕನ್ನಡ at the top of the page. The questions are shown in Kannada exactly as printed in the Kannada-medium booklet; General Kannada is in '
+       'Kannada only and General English in English only, as in the exam. The explanations are in Kannada and English.'),
+      ('Is there a GPSTR mock test?',
+       'Yes. The paper can be taken as a full mock test with a timer, and the sectional tests take all the previous questions of one subject, such as '
+       'Educational Psychology or General Kannada. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+      ('When is the Karnataka teacher recruitment exam 2026?',
+       'Not announced yet (as of 16 November 2026). Online applications for the 15,000 posts closed on 16 November 2026 after extensions; corrections are '
+       'allowed till 18 November and the fee till 28 November. An October timetable in the August guidelines was dropped when the dates were extended.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
 # ---------- MPSC Group-C (Maharashtra Group-C Services Combined Preliminary Examination) ----------
 # Anil, 15 Nov 2026: "Maharashtra: MPSC Group C (apply till 27 November; prelims 24 January 2027) ... add these exams pyqs also and other details also ...
 # one exam at a time". Advt. No. 017/2026 of 25 June 2026; MPSC's corrigendum of 6 November 2026 raised the posts to 16,717 (27 cadres), reopened applications
@@ -2647,6 +2708,23 @@ def exam_confs():
            papers_note=("Every paper is KEA's own question booklet, with the answer from KEA's revised key. Paper-1 and the Computer Knowledge part of Paper-2 are printed "
                         "in Kannada and English, and both are shown here; General Kannada is in Kannada only and General English in English only. Questions KEA deleted "
                         "(grace marks) are left out; where KEA accepted two options, both are marked correct.")),
+      dict(id='karnataka-gpstr', dir='karnataka-gpstr', src='karnataka-gpstr', key='ka-gps', name='Karnataka GPSTR (Teacher Recruitment)', short='Karnataka GPSTR', seo='GPSTR',
+           slugp='gpstr', papers=GPS_PAPERS, subjects=GPS_SUBJECTS, faq=FAQ_GPS, board='Karnataka School Education', l2=L2_KN, pb='/karnataka-gpstr/',
+           keyname="the department's key answers", keyshort="the School Education Department's key answers",
+           kn_name='ಜಿಪಿಎಸ್‌ಟಿಆರ್', subj_te=GPS_SUBJ_KN,
+           title="GPSTR Previous Year Question Papers with Answers – Karnataka Teacher Recruitment (GPT) 2022 Paper-1, Kannada & English | Learn with Anil",
+           h1='GPSTR previous year question papers <em>with answers.</em>',
+           aka=('Karnataka teacher recruitment by the School Education Department: Graduate Primary Teacher (GPT / GPSTR, classes 6–8), and for 2026 also Assistant '
+                'Master, Primary School Teacher, PE and Computer Science teacher posts (15,000 in all). GPSTR 2022 Paper-1 General Studies with the department\'s key.'),
+           aka_short='Karnataka teacher recruitment: Graduate Primary Teacher (GPT) and other posts',
+           l2line='ಜಿಪಿಎಸ್‌ಟಿಆರ್ (ಪದವೀಧರ ಪ್ರಾಥಮಿಕ ಶಾಲಾ ಶಿಕ್ಷಕರ ನೇಮಕಾತಿ) 2022 ಪತ್ರಿಕೆ-1 ಸಾಮಾನ್ಯ ಅಧ್ಯಯನ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಸಾಮಾನ್ಯ ಕನ್ನಡ, ಇಂಗ್ಲಿಷ್, ಸಾಮಾನ್ಯ ಜ್ಞಾನ, ಶೈಕ್ಷಣಿಕ ಮನೋವಿಜ್ಞಾನ, ಆರೋಗ್ಯ ಮತ್ತು ಮೌಲ್ಯ ಶಿಕ್ಷಣ, ಕಂಪ್ಯೂಟರ್; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹45 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.',
+           desc=lambda t: (f"GPSTR previous year question paper with answers from the School Education Department's key: GPSTR 2022 Paper-1 General Studies "
+                           f"(General Kannada, English, GK, Educational Psychology, Health & Value Education, Computer). {t:,} questions in Kannada and English with "
+                           f"explanations; subject-wise practice and timed mock tests for Karnataka teacher recruitment 2026 (GPT, PST, AM)."),
+           eyebrow='Karnataka School Education · GPSTR (Graduate Primary Teacher) · 2022',
+           papers_note=("The paper is the Kannada-medium question booklet of GPSTR 2022 Paper-1 (version 1A), with the answer from the School Education Department's key "
+                        "answers of 3 June 2022. General Kannada is in Kannada only and General English in English only, as printed; for the other sections the "
+                        "Kannada is as printed and the English is our translation.")),
       dict(id='mpsc-group-c', dir='mpsc-group-c', src='mpsc-group-c', key='mh-gc', name='MPSC Group C', short='MPSC Group C', seo='MPSC Group C',
            slugp='mpsc-group-c', papers=MGC_PAPERS, subjects=MGC_SUBJECTS, faq=FAQ_MGC, board='MPSC', l2=L2_MR, pb='/mpsc-group-c/',
            keyname="MPSC's final answer key", keyshort="MPSC's final answer keys",
@@ -3308,7 +3386,7 @@ def exam_terms(e, cat):
                 'kea-land-surveyor': ['land surveyor', 'surveyor', 'survey settlement', 'land records', 'bhoomapaka', 'ಭೂಮಾಪಕ'],
                 'ksp-constable': ['ksp', 'karnataka police', 'police constable', 'civil police constable', 'cpc', 'apc', 'car', 'dar', 'armed police', 'ksrp', 'ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್'],
                 'ksp-psi': ['ksp', 'karnataka police', 'psi', 'si', 'sub inspector', 'police sub inspector', 'ಪಿಎಸ್‌ಐ'],
-                'ka-gpstr': ['gpstr', 'gpt', 'graduate primary teacher', 'teacher recruitment', 'karnataka teacher', 'hstr', 'school education'],
+                'karnataka-gpstr': ['gpstr', 'gpt', 'graduate primary teacher', 'teacher recruitment', 'karnataka teacher', 'hstr', 'school education', 'teacher cet', 'karnataka teacher cet', 'pst', 'primary school teacher', 'assistant master', 'teacher', 'teachers', 'educational psychology', 'ಶಿಕ್ಷಕರ ನೇಮಕಾತಿ', 'ಪದವೀಧರ ಪ್ರಾಥಮಿಕ ಶಿಕ್ಷಕ', 'ಜಿಪಿಎಸ್‌ಟಿಆರ್'],
                 'kartet': ['kartet', 'tet', 'karnataka tet', 'teacher eligibility test', 'paper 1', 'paper 2']}
     if e['id'] in KA_WORDS: words += KA_WORDS[e['id']] + ['karnataka', 'kannada']
     # other state boards (16 Nov 2026): the state's name and what students type for police, revenue, panchayat and teacher exams
@@ -3590,7 +3668,7 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'kea-land-surveyor': ('Granite landscape of Matanga Hill, Hampi', 'Vyacheslav Argenberg', 'CC BY 4.0', _CW + 'Hampi,_India,_Rocky_landscape_of_Hampi,_Granite_rocks_of_Matanga_Hill.jpg'),
     'ksp-constable': ('Police Central Division office, Bengaluru', 'Gpkp', 'CC BY-SA 4.0', _CW + 'Deputy_Commissioner_of_Police,_Central_Division,_Bangalore_City_(2025).jpg'),
     'ksp-psi': ('Bangalore Palace', 'Anupam Chatterjee', 'CC BY 4.0', _CW + 'Bangalore_Palace_facade_on_a_cloudy_day.jpg'),
-    'ka-gpstr': ('Government School, Neralur', 'Umeshred', 'CC BY-SA 4.0', _CW + 'Government_School_Neralur.png'),
+    'karnataka-gpstr': ('Government School, Neralur', 'Umeshred', 'CC BY-SA 4.0', _CW + 'Government_School_Neralur.png'),
     'kartet': ('Government school, Doddegowdana Koppalu', 'Timothy A. Gonsalves', 'CC BY-SA 4.0', _CW + 'Govt_School_Front_Doddegowdana_Koppalu_Aug24_A7CR_02281.jpg'),
     # other state boards: police, revenue, panchayat, technical and teacher exams (Anil, 16 Nov 2026: "pls do the same for other state exams also")
     'tn-trb-pg': ('Presidency College, Chennai', 'Ravichandar84', 'CC BY-SA 3.0', _CW + 'Chennai_Presidency_College_Main.jpg'),
@@ -4447,7 +4525,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -7001,7 +7079,7 @@ EXAM_NOTIF = {
     'ssc-gd': 'ssc-gd-constable-2027-notification.html', 'rrb-ntpc': 'rrb-ntpc-2026-notification.html',
     'rpf-si': 'rpf-si-notification-2026.html', 'rpf-constable': 'rpf-constable-notification-2026.html',
     'tnpsc-group-4': 'tnpsc-group-4-notification-2026.html', 'karnataka-fda-sda': 'kea-fda-sda-notification-2026.html',
-    'mpsc-group-c': 'mpsc-group-c-notification-2026.html', 'gsssb-cce': 'gsssb-cce-notification-2026.html',
+    'karnataka-gpstr': 'karnataka-teacher-recruitment-notification-2026.html', 'mpsc-group-c': 'mpsc-group-c-notification-2026.html', 'gsssb-cce': 'gsssb-cce-notification-2026.html',
     'uppsc-ro-aro': 'uppsc-ro-aro-notification-2026.html', 'upsssc-inter-level': 'upsssc-inter-level-notification-2026.html',
     'ukpsc-lower-pcs': 'ukpsc-lower-pcs-notification-2026.html', 'cg-vyapam-group-2': 'cg-vyapam-group-2-notification-2026.html',
 }   # a new exam with its own notification page: add it here too
@@ -7733,7 +7811,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -7750,7 +7828,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
-<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li><li><a href="/opsc-aso/">OPSC ASO PYQs</a></li></ul>
+<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/karnataka-gpstr/">GPSTR (Karnataka Teacher) PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li><li><a href="/opsc-aso/">OPSC ASO PYQs</a></li></ul>
 </main></body></html>
 """
 

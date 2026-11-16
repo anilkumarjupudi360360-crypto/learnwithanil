@@ -940,11 +940,12 @@
    "n": "Police Sub-Inspector (Civil)"
   },
   {
-   "id": "ka-gpstr",
+   "id": "karnataka-gpstr",
    "cat": "ka",
    "b": "Karnataka School Education",
    "t": "GPSTR",
-   "n": "Graduate Primary Teacher Recruitment"
+   "n": "Graduate Primary Teacher Recruitment",
+   "live": "karnataka-gpstr/"
   },
   {
    "id": "kartet",

@@ -930,6 +930,53 @@ NEW['kea-fda-sda-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: Karnata
 ASOF_PAGE['kea-fda-sda-notification-2026.html'] = '16 November 2026'
 
 
+NEW['karnataka-teacher-recruitment-notification-2026.html'] = dict(   # Anil, 16 Nov 2026: Karnataka Teacher Recruitment (GPSTR); facts from the department's candidate guidelines of 17 Aug 2026 (in Kannada) and news of the date extensions, read on 16 Nov 2026
+    exam='karnataka-gpstr', board='the School Education Department, Karnataka', site='schooleducation.karnataka.gov.in', crumb='Karnataka Teacher Recruitment 2026', faq_asof='16 November 2026',
+    title='Karnataka Teacher Recruitment 2026: 15,000 Posts (GPT 9,000, AM 4,950, PST 1,050), Exam Pattern, Last Date & GPSTR Previous Papers | Learn with Anil',
+    desc='Karnataka teacher recruitment 2026 (GPSTR): 15,000 posts in government primary and high schools, Graduate Primary Teacher and Computer Science Teacher 9,000, '
+         'Assistant Master and PE Grade-1 4,950, Primary School Teacher and PE Grade-2 1,050. Online applications till 16 November 2026, exam pattern (two 100-mark papers, '
+         '35% in each), merit weightage and GPSTR previous year papers with answers in Kannada and English.',
+    h1='Karnataka teacher recruitment 2026: 15,000 posts, exam date awaited',
+    lede='The School Education Department of Karnataka is filling 15,000 teacher posts in government primary and high schools for 2026-27: Graduate Primary Teachers (GPT) '
+         'and Computer Science Teachers for classes 6–8, Assistant Masters and PE teachers for high schools, and Primary School Teachers for classes 1–5. Its Centralised '
+         'Admission Cell (K.G. Road, Bengaluru) conducts the competitive exam. Below: the dates, the posts, the exam pattern and the GPSTR previous papers to practise.',
+    kn='ಶಾಲಾ ಶಿಕ್ಷಣ ಇಲಾಖೆ: ಸರ್ಕಾರಿ ಪ್ರಾಥಮಿಕ ಮತ್ತು ಪ್ರೌಢ ಶಾಲೆಗಳಲ್ಲಿ 15,000 ಶಿಕ್ಷಕರ ಹುದ್ದೆಗಳ ನೇಮಕಾತಿ 2026 (ಜಿಪಿಟಿ/ಸಿಎಸ್‌ಟಿ 9,000; ಪ್ರೌಢ ಶಾಲಾ ಸಹಶಿಕ್ಷಕರು/ದೈ.ಶಿ.ಶಿ ಗ್ರೇಡ್-1 4,950; '
+       'ಪ್ರಾಥಮಿಕ ಶಾಲಾ ಶಿಕ್ಷಕರು/ದೈ.ಶಿ.ಶಿ ಗ್ರೇಡ್-2 1,050). ಪತ್ರಿಕೆ-1 ಮತ್ತು ಪತ್ರಿಕೆ-2 ಕಡ್ಡಾಯ, ಪ್ರತಿ ಪತ್ರಿಕೆಯಲ್ಲಿ ಕನಿಷ್ಠ ಶೇ.35 ಅಂಕಗಳು.',
+    pdf='https://schooleducation.karnataka.gov.in/uploads/media_to_upload1786967745.pdf',
+    pdfname='Candidate guidelines No. DPI-CPIOCAC(ODEX)/1/2026, 17 August 2026, Centralised Admission Cell, School Education Department (in Kannada)',
+    more_src=[('https://schooleducation.karnataka.gov.in/cacell/en', 'Online application: Recruitment of Teachers 2026 (Centralised Admission Cell)')],
+    sections=[
+      ('Key dates', 'table', [
+        ('Government notification', 'No. EP 80 DPB 2026, 10 August 2026 (district-wise notifications by the appointing authorities)'),
+        ('Candidate guidelines', 'No. DPI-CPIOCAC(ODEX)/1/2026, 17 August 2026'),
+        ('Online application', 'Opened 18 August 2026; the last date (first 7 September) was extended several times, finally to 16 November 2026. Corrections till 18 November; fee till 28 November 2026 (as reported)'),
+        ('Exam date', 'Not announced as of 16 November 2026. The August guidelines had a timetable for 5–22 October 2026, which was dropped when the application dates were extended'),
+        ('Admit card', 'On the department website about 10 days before the exam')]),
+      ('Posts (15,000)', 'table+', (['Cadre', 'Classes', 'Posts'], [
+        ('Graduate Primary Teacher (GPT) and Computer Science Teacher (CST)', '6–8 (CST 1–8)', '9,000'),
+        ('Assistant Master (high school) and PE Teacher Grade-1', '8–10', '4,950'),
+        ('Primary School Teacher (PST) and PE Teacher Grade-2', '1–5 (PE 1–8)', '1,050'),
+        ('Total', '', '15,000')])),
+      ('', 'note', 'GPT/CST posts by subject: Maths & Science 3,109; Kannada 2,557; Social Science 1,415; Biological Science 776; English 643; Computer Science 500 '
+                   '(5,472 in the rest of Karnataka and 3,528 in Kalyana Karnataka). One online application covers every post a candidate is eligible for.'),
+      ('Exam pattern', 'table+', (['Paper', 'What it covers', 'Questions · marks · time'], [
+        ('Paper-1 General', 'Common general paper for each cadre group (PST & PE Grade-2; GPT & CST; AM & PE Grade-1)', '100 · 100 · 2 hours'),
+        ('Paper-2 Subject', 'PST: Mathematics, EVS & Social Science; PE: Physical Education; GPT: the subject applied for (Maths & Science, Biological Science, Social Science, '
+                            'Kannada, English); CST: Computer Science; AM: Science, Arts, Kannada or English', '100 · 100 · 2 hours')])),
+      ('', 'note', 'Objective multiple-choice questions on OMR sheets, printed in Kannada and English. Both papers are compulsory, and a candidate must score at least 35% in each '
+                   'paper to be considered. Merit (2026 rules): the exam carries 70% weightage, the TET score 20% and academic and teacher-education marks the rest.'),
+    ],
+    faqs=[
+      ('What is the last date to apply for Karnataka teacher recruitment 2026?', '16 November 2026, after several extensions (first 7 September). Corrections are allowed till 18 November and the fee till 28 November 2026, as reported.'),
+      ('When is the Karnataka GPSTR exam 2026?', 'Not announced as of 16 November 2026. The department\'s August guidelines listed exams from 5 to 22 October 2026, but that timetable was dropped when the application dates were extended.'),
+      ('How many teacher posts are there in Karnataka 2026?', '15,000: 9,000 GPT and Computer Science teacher posts, 4,950 Assistant Master and PE Grade-1 posts and 1,050 Primary School Teacher and PE Grade-2 posts.'),
+      ('What is the GPSTR exam pattern in 2026?', 'Two compulsory OMR papers of 100 questions and 100 marks each, 2 hours each: Paper-1 General and Paper-2 in the subject, in Kannada and English. You need at least 35% in each paper.'),
+      ('Is TET compulsory for Karnataka teacher recruitment?', 'For PST (TET Paper-1), GPT and Computer Science teacher posts (TET Paper-2), yes, and the TET score carries 20% weightage in the merit list. The guidelines say Assistant Masters and PE teachers (Grade-1 and Grade-2) do not need a TET certificate.'),
+      ('Where can I practise GPSTR previous papers?', 'On Learn with Anil: the GPSTR 2022 Paper-1 General Studies with the department\'s key answers and explanations in Kannada and English, as a timed test or subject-wise practice.'),
+    ])
+ASOF_PAGE['karnataka-teacher-recruitment-notification-2026.html'] = '16 November 2026'
+
+
 NEW['mpsc-group-c-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: MPSC Group C (apply till 27 November; prelims 24 January 2027); facts from MPSC's own PDFs (in Marathi), read on 16 Nov 2026
     exam='mpsc-group-c', board='MPSC', site='mpsc.gov.in', crumb='MPSC Group C Notification 2026', faq_asof='16 November 2026',
     title='MPSC Group C Notification 2026: 16,717 Posts, Apply 13–27 November, Prelims 24 January 2027, Pattern & Previous Papers | Learn with Anil',
