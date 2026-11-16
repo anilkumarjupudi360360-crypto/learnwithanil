@@ -689,6 +689,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
 .ex-body{display:flex;flex-direction:column;gap:3px;padding:12px 14px 14px;flex:1}
 .card.exam:not(.live) .ex-art{filter:saturate(.35);opacity:.8}
+.card.exam:not(.live) .ex-art.has-ph{filter:saturate(.85);opacity:1}   /* upcoming exams' photos stay nearly full colour (Anil, 16 Nov 2026) */
 @media (max-width:520px){.ex-art{height:62px}.ex-art svg{height:56px;width:100px}.ex-body{padding:10px 11px 12px}}
 .card.board:not([class*=" b-"]) {--g1:#334155;--g2:#64748b}
 .board.soon .bd-art{filter:saturate(.45)}
@@ -704,8 +705,9 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
 .hub-row{display:flex;flex-direction:column;gap:8px;margin-top:18px}
 .hub-k{font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 #hubBack{margin-top:12px}
-details.upc>summary{cursor:pointer;font-weight:700;font-size:14.5px;color:var(--muted);padding:6px 0}
-details.upc .exams{margin-top:8px}
+.upc-h{font-weight:700;font-size:14.5px;color:var(--muted);margin:22px 0 10px}
+.upc .exams{margin-top:0}
+.ph-credit.ex-cr{margin-top:14px}
 @media (max-width:520px){.boards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.bd-art{height:78px}.bd-art svg{width:112px;height:66px}.bd-badge{left:8px;top:7px;font-size:11px;padding:2px 8px}.bd-body{padding:10px 11px 11px;gap:5px}.bd-n{font-size:15.5px}.bd-te{font-size:12.5px}.bd-d{font-size:12.5px}.bd-pills{gap:4px}.bd-pills span{font-size:11px;padding:1px 7px}.bd-ft{font-size:11.5px;flex-wrap:wrap;gap:2px}}
 .exam-cat{display:flex;flex-direction:column;gap:12px}
 .exam-cat h2 .te-sub{font-size:17px;font-weight:600;color:var(--muted);margin-left:6px;letter-spacing:0;line-height:1.2}
@@ -1885,11 +1887,11 @@ function applyHub(){
   const q = (UI.exQ||"").trim().toLowerCase().replace(/\s+/g," "), cat = UI.exCat||"all", browsing = cat==="all" && !q;
   const hh = $("#hubHome"), hb = $("#hubBack"), hc = $("#hubCats");
   if(hh) hh.hidden = !browsing; if(hb) hb.hidden = cat==="all"; if(hc) hc.hidden = browsing; hubRecent(browsing);
-  const xc = $("#exCredits"); if(xc) xc.hidden = browsing;
+  document.querySelectorAll("#hub-static .ex-cr").forEach(p=>{ p.hidden = !!q; });   // each board's photo credits show while browsing that board
   let n = 0;
   document.querySelectorAll("#hub-static .exam").forEach(a=>{ const ok = (cat==="all"||a.dataset.cat===cat) && (!q || a.dataset.s.includes(q)); a.hidden = !ok; if(ok) n++; });
   document.querySelectorAll("#hub-static .exam-cat").forEach(s=>{ s.hidden = !s.querySelector(".exam:not([hidden])"); });
-  if(q) document.querySelectorAll("#hub-static details.upc").forEach(d=>{ if(d.querySelector(".exam:not([hidden])")) d.open = true; });
+  document.querySelectorAll("#hub-static .upc").forEach(d=>{ d.hidden = !d.querySelector(".exam:not([hidden])"); });
   document.querySelectorAll('#hub-static [data-act="excat"]').forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.cat===cat)));
   document.querySelectorAll('#nav a[data-act="excat"]').forEach(a=>{ if(a.dataset.cat===cat) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
   const allL = document.querySelector('#nav a[data-v="exams"]'); if(allL && cat!=="all") allL.removeAttribute("aria-current");
