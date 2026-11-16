@@ -33,7 +33,7 @@ BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC
               'KEA': 'KARNATAKA EXAMINATIONS AUTHORITY', 'MPSC': 'MAHARASHTRA PUBLIC SERVICE COMMISSION', 'GSSSB': 'GUJARAT SUBORDINATE SERVICE SELECTION BOARD',
               'UPSSSC': 'UTTAR PRADESH SUBORDINATE SERVICES SELECTION COMMISSION', 'UPPSC': 'UTTAR PRADESH PUBLIC SERVICE COMMISSION',
               'UKPSC': 'UTTARAKHAND PUBLIC SERVICE COMMISSION', 'CG Vyapam': 'CHHATTISGARH VYAPAM (CHHATTISGARH KARMCHARI CHAYAN MANDAL)',
-              'OPSC': 'ODISHA PUBLIC SERVICE COMMISSION',
+              'OPSC': 'ODISHA PUBLIC SERVICE COMMISSION', 'WBPSC': 'PUBLIC SERVICE COMMISSION, WEST BENGAL', 'DSSSB': 'DELHI SUBORDINATE SERVICES SELECTION BOARD',
               'Karnataka School Education': 'DEPARTMENT OF SCHOOL EDUCATION, GOVERNMENT OF KARNATAKA'}
 BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
@@ -49,7 +49,9 @@ ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid i
              'uppsc-ro-aro': {'r25': ('r25-qp.pdf',)},   # UPPSC's own booklet with its key boxed; the 2021 papers are candidates' scans, so typeset (GSSSB's paper preview marks the final answers)
              'ukpsc-lower-pcs': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('l24', 'l21', 'r23')},   # UKPSC's own clean booklets + final keys
              'cg-vyapam-group-2': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('vd', 'ag', 'sg')},
-             'opsc-aso': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('a1', 'a2', 'a3', 's1', 's2', 's3')}}   # OPSC's own scans + its keys (key pages of that paper)   # Vyapam's own booklets + final keys
+             'opsc-aso': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('a1', 'a2', 'a3', 's1', 's2', 's3')},
+             'wbpsc-ido': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('i19', 'm23')},
+             'dsssb': {pid: (f'{pid}-qp.pdf',) for pid in ('j22', 'p22')}}   # DSSSB's own question papers with answers (green ticks), from its Question Bank   # WBPSC's own booklets (m23 pages 18, 20 turned upright) + its keys   # OPSC's own scans + its keys (key pages of that paper)   # Vyapam's own booklets + final keys
 # released mocks with a booklet: exam -> [(mock id, pack, mock name)]; their keys are in BOOKS_PRIV/mock-keys.json
 MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-constable': [('mk-pc-1', 'Mission Khaki – Constable', 'Mock 1')]}
 
@@ -75,6 +77,8 @@ def time_marks(conf, p):
     if conf['id'] == 'mpsc-group-c': return '1 Hour', 100   # MPSC Group-C prelims: 100 questions, 100 marks, 1 hour
     if conf['id'] == 'upsssc-inter-level': return '2 Hours', 100   # UPSSSC Mains: 100 questions, 100 marks, 2 hours
     if conf['id'] == 'opsc-aso': return (('2 Hours', 200) if p['id'] in ('a3', 's3') else ('1 Hour 30 Minutes', 100))   # OPSC ASO papers
+    if conf['id'] == 'dsssb': return '120 Minutes', 200   # DSSSB one-tier tests: 200 questions, 1 mark each
+    if conf['id'] == 'wbpsc-ido': return ('1 Hour 30 Minutes', 200 if p['id'] == 'm23' else 100)   # WBPSC: IDO 100 marks; Miscellaneous 100 questions x 2 marks
     if conf['id'] == 'ukpsc-lower-pcs': return '2 Hours', 150   # UKPSC prelims: 150 questions, 150 marks
     if conf['id'] == 'cg-vyapam-group-2': return {'vd': ('3 Hours', 200), 'ag': ('3 Hours', 200), 'sg': ('2 Hours 30 Minutes', 150)}[p['id']]   # Vyapam 2021 papers
     if conf['id'] == 'uppsc-ro-aro': return {'r25': ('3 Hours', 200), 'g21': ('2 Hours', 140), 'h21': ('1 Hour', 60)}[p['id']]   # RO/ARO prelims
@@ -90,6 +94,7 @@ body{font:9.6pt/1.38 'Source Sans 3',sans-serif;color:#111}
 [lang=mr]{font-family:'Noto Sans Devanagari','Source Sans 3',sans-serif;line-height:1.5}
 [lang=gu]{font-family:'Noto Sans Gujarati','Source Sans 3',sans-serif;line-height:1.5}
 [lang=or]{font-family:'Noto Sans Oriya','Source Sans 3',sans-serif;line-height:1.5}
+[lang=bn]{font-family:'Noto Sans Bengali','Source Sans 3',sans-serif;line-height:1.5}
 [lang=hi]{font-family:'Noto Sans Devanagari','Source Sans 3',sans-serif;line-height:1.5}
 .wm{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:0}
 .wm div{transform:rotate(-35deg);text-align:center;opacity:.07}
@@ -143,7 +148,7 @@ def script_lang(t):
     """'te' / 'hi' when a question has no English and is printed in Telugu / Hindi only (AP DSC language papers), else ''."""
     if re.search(r'[A-Za-z]{3,}', t or ''): return ''
     return ('te' if re.search(r'[\u0C00-\u0C7F]', t or '') else 'hi' if re.search(r'[\u0900-\u097F]', t or '')
-            else 'ta' if re.search(r'[\u0B80-\u0BFF]', t or '') else 'kn' if re.search(r'[\u0C80-\u0CFF]', t or '') else 'gu' if re.search(r'[\u0A80-\u0AFF]', t or '') else 'or' if re.search(r'[\u0B00-\u0B7F]', t or '') else '')   # TNPSC Group 4 Part A is in Tamil only; KEA Paper-2 General Kannada in Kannada only
+            else 'ta' if re.search(r'[\u0B80-\u0BFF]', t or '') else 'kn' if re.search(r'[\u0C80-\u0CFF]', t or '') else 'gu' if re.search(r'[\u0A80-\u0AFF]', t or '') else 'or' if re.search(r'[\u0B00-\u0B7F]', t or '') else 'bn' if re.search(r'[\u0980-\u09FF]', t or '') else '')   # TNPSC Group 4 Part A is in Tamil only; KEA Paper-2 General Kannada in Kannada only
 
 
 def q_html(q, l2):
@@ -176,7 +181,7 @@ def paper_doc(conf, p, qs, mock=None):
               if m else '<div class="s lwa">LEARN<br>WITH<br>ANIL</div>')
     sub = re.sub(r'\s*·\s*booklet [A-Z]\b.*$', '', p.get('notif', ''))
     key = p.get('key') or ("APPSC's final key" if conf['board'] == 'APPSC' else conf.get('keyname') or 'the official key')
-    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC|GSSSB|UPSSSC|UPPSC|UKPSC|CG Vyapam|OPSC)\s+', '', p['title'])
+    title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC|GSSSB|UPSSSC|UPPSC|UKPSC|CG Vyapam|OPSC|WBPSC|DSSSB)\s+', '', p['title'])
     l2name = l2['name'] if not p.get('en_only') and any(q.get('qt') for q in qs) else ''
     when = f' · Held on {esc(p["held"])}' if p.get('held') else ''
     if mock: board = 'LEARN WITH ANIL · ' + mock.upper() + ' TEST SERIES'

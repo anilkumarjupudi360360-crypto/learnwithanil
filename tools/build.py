@@ -1132,6 +1132,134 @@ def FAQ_OAS(total, npapers):
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
+# ---------- WBPSC Industrial Development Officer (West Bengal) ----------
+# Anil, 16 Nov 2026 ("ok continue": West Bengal IDO, apply till 26 Nov). WBPSC Advt. No. 15/2024 (detailed advertisement 5 Nov 2026): 247 IDO posts in the
+# Directorate of MSME, MSME & Textiles Department; apply 6-26 Nov 2026; Part I written 100 questions/100 marks in 1½ hours (English 15, Industrial Safety &
+# Pollution Control 10, Environment & Energy 15, Physical Science 15, Computer 10, Industrial scenario of West Bengal 15, Mental Ability & Arithmetic 20; 0.25
+# negative), Part II interview 15. Papers: WBPSC's own booklets (Series A) of the IDO Screening Test of 22 Dec 2019 (English only, key of 27 Dec 2019) and of
+# the Miscellaneous Services Recruitment Exam (Preliminary) 2023, held 15 Sep 2024 (English + Bengali, final key of 13 Mar 2025). Work files: /home/claude/wb.
+WBI_BLURB_I = ('WBPSC IDO Screening Test: 100 questions, 100 marks, 1½ hours, ¼ mark cut for each wrong answer — English, Industrial Safety & Pollution Control, '
+               'Environment & Energy, Physical Science, Computer, Industry in West Bengal, Mental Ability & Arithmetic.')
+WBI_BLURB_M = ('WBPSC Miscellaneous Services Recruitment (Preliminary): 100 questions of 2 marks (200 marks), 1½ hours, ½ mark cut for each wrong answer — '
+               'English, General Studies, current affairs, Mental Ability & Arithmetic, in English and Bengali.')
+WBI_PAPERS = [
+  dict(id='i19', file='wbpsc-ido-2019-screening-test.txt', year=2019, stage='Screening Test', short='IDO 2019 · Screening Test',
+       title='WBPSC Industrial Development Officer (IDO) Screening Test 2019 Question Paper', notif='WBPSC Advt. No. 10/2019 · Series A',
+       held='22 December 2019', key="WBPSC's answer key (27 December 2019)", fmt='mcq', slug='wbpsc-ido-2019-screening-test-question-paper-with-answers',
+       kwname='WBPSC IDO 2019 Screening Test', bn_paper='স্ক্রিনিং টেস্ট', blurb=WBI_BLURB_I, mins=90),
+  dict(id='m23', file='wbpsc-miscellaneous-prelims-2023.txt', year=2023, stage='Preliminary', short='Miscellaneous Services (Prelims) 2023',
+       title='WBPSC Miscellaneous Services Recruitment Examination (Preliminary) 2023 Question Paper', notif='WBPSC Advt. No. 11/2023 · Series A · held 15 September 2024',
+       held='15 September 2024', key="WBPSC's final answer key (13 March 2025)", fmt='mcq', slug='wbpsc-miscellaneous-prelims-2023-question-paper-with-answers',
+       kwname='WBPSC Miscellaneous Services Prelims 2023', bn_paper='মিসলেনিয়াস সার্ভিসেস (প্রিলিমিনারি)', blurb=WBI_BLURB_M, mins=90),
+]
+WBI_SUBJECTS = [
+  ('eng', 'English', 'english', ['Grammar', 'Vocabulary', 'Comprehension & Usage']),
+  ('saf', 'Industrial Safety & Pollution Control', 'industrial-safety-pollution-control', ['Industrial Safety & Security', 'Pollution Control']),
+  ('env', 'Environment & Energy', 'environment-energy', ['Environment & Ecology', 'Energy Conservation & Renewable Energy']),
+  ('sci', 'Physical & General Science', 'general-science', ['Physical Science', 'Life Science & Health']),
+  ('comp', 'Computer Knowledge', 'computer', ['Computer Fundamentals']),
+  ('wbi', 'Industry in West Bengal', 'west-bengal-industry', ['Industrial Scenario & Potential of West Bengal', 'MSME & Industrial Policy']),
+  ('apt', 'Mental Ability & Arithmetic', 'mental-ability-arithmetic', ['Reasoning', 'Arithmetic']),
+  ('his', 'History & Culture', 'history', ['Indian History & Culture', 'History & Culture of Bengal']),
+  ('geo', 'Geography', 'geography', ['Indian & World Geography', 'Geography of West Bengal']),
+  ('pol', 'Polity & Economy', 'polity-economy', ['Indian Polity', 'Indian Economy']),
+  ('cur', 'Current Affairs', 'current-affairs', ['National & International', 'Sports, Awards & Misc.']),
+]
+WBI_SUBJ_BN = {'eng': 'ইংরেজি', 'saf': 'শিল্প নিরাপত্তা ও দূষণ নিয়ন্ত্রণ', 'env': 'পরিবেশ ও শক্তি', 'sci': 'ভৌত ও সাধারণ বিজ্ঞান', 'comp': 'কম্পিউটার জ্ঞান',
+               'wbi': 'পশ্চিমবঙ্গের শিল্প', 'apt': 'মানসিক দক্ষতা ও পাটিগণিত', 'his': 'ইতিহাস ও সংস্কৃতি', 'geo': 'ভূগোল', 'pol': 'রাষ্ট্রব্যবস্থা ও অর্থনীতি',
+               'cur': 'সাম্প্রতিক ঘটনাবলি'}
+
+
+def FAQ_WBI(total, npapers):
+    return [
+      ('Where can I get the WBPSC IDO previous year question paper with answers?',
+       f'This page has {total} questions from {npapers} WBPSC papers: the Industrial Development Officer Screening Test of 22 December 2019 (WBPSC\'s own booklet) '
+       'and the Miscellaneous Services Recruitment Examination (Preliminary) 2023, held on 15 September 2024, in English and Bengali — each question with '
+       'WBPSC\'s answer key and an explanation.'),
+      ('Are the answers official?',
+       'Yes. Every answer is from WBPSC\'s answer key for that exam (the IDO key of 27 December 2019 and the final key of 13 March 2025 for the 2023 '
+       'Miscellaneous paper). Questions WBPSC gave marks to all for are left out. Where an answer looks doubtful, the explanation says so. The explanations '
+       'are written by Learn with Anil.'),
+      ('What is the WBPSC IDO 2026 exam pattern?',
+       'Part I is a written test of 100 multiple-choice questions for 100 marks in 1½ hours: English 15, Industrial Safety & Pollution Control 10, Environment '
+       '(Energy Conservation & Renewable Energy) 15, Physical Science 15, Elementary Computer Knowledge 10, Industrial Scenario & Potential of West Bengal 15, '
+       'Mental Ability & Arithmetic 20, with 0.25 cut for each wrong answer. Part II is an interview of 15 marks; the final merit is out of 115.'),
+      ('Is the WBPSC question paper in Bengali?',
+       'The 2019 IDO screening test was printed in English only. The 2023 Miscellaneous paper is printed in English and Bengali: tap বাংলা at the top of the '
+       'page to read its questions and explanations in Bengali.'),
+      ('When is the last date to apply for WBPSC IDO 2026?',
+       '26 November 2026 (3 pm) on psc.wb.gov.in, for both the application and the fee (Advt. No. 15/2024, 247 posts). WBPSC will announce the exam date later.'),
+      ('Is there a WBPSC IDO mock test?',
+       'Yes. Every paper here can be taken as a full mock test with the real time limit and negative marking, and the sectional tests take all the previous '
+       'questions of one subject, such as Industrial Safety or Mental Ability. Answers and explanations open with the ₹45 All-in-One Pass, which covers every '
+       'exam on the site.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
+# ---------- DSSSB MTS & JE (Delhi) ----------
+# Anil, 16 Nov 2026 ("ok continue"): in place of Kerala PSC Cat 162-173 (16 separate specialised posts) and HP teachers (no public papers), DSSSB's
+# Advt. No. 06/2026 (6 Nov 2026): Combined Exams 2026 for Junior Engineer (Electric/Electrical), Post Code 809/26 (185 posts) and Multi-Tasking Staff /
+# MTS-Aaya / MTS (General Duty), Post Code 810/26 (1,075 posts); apply 12 Nov - 11 Dec 2026 on dsssbonline.nic.in. MTS: one tier, 200 questions in 2 hours
+# (General Awareness, Reasoning, Arithmetic, Hindi, English, 40 each). JE Tier-I: Section A the same five parts (20 each) + Section B 100 technical.
+# Papers: DSSSB's own "question paper with answers" (TCS online exam, green tick = answer) from its Question Bank: JE (Electrical)/SO (Electrical)
+# 802/2022 of 22 Jun 2022 Shift 1 and Patwari 48/21 of 20 Aug 2022 Shift 1, both with the same five general parts. Work files: /home/claude/dl.
+DSB_BLURB_J = ('DSSSB one-tier objective test: 200 questions, 200 marks, 2 hours, ¼ mark cut for each wrong answer — Mental Ability, General Awareness, '
+               'Arithmetic, English and Hindi (20 each) and 100 Electrical Engineering questions.')
+DSB_BLURB_P = ('DSSSB one-tier objective test: 200 questions, 200 marks, 2 hours, ¼ mark cut for each wrong answer — Mental Ability, General Awareness, '
+               'Arithmetic, English and Hindi (20 each), Computer (40) and Delhi (60).')
+DSB_PAPERS = [
+  dict(id='j22', file='dsssb-je-electrical-2022-paper.txt', year=2022, stage='Written', short='JE (Electrical) 2022 · 22 June',
+       title='DSSSB Junior Engineer (Electrical) / Section Officer Exam 2022 (22 June, Shift 1) Question Paper', notif='DSSSB Post Code 802/2022 · Shift 1',
+       held='22 June 2022', key="DSSSB's answer key (question paper with answers)", fmt='mcq', slug='dsssb-je-electrical-2022-question-paper-with-answers',
+       kwname='DSSSB JE Electrical 2022', hi_paper='जेई (इलेक्ट्रिकल)', blurb=DSB_BLURB_J, mins=120),
+  dict(id='p22', file='dsssb-patwari-2022-paper.txt', year=2022, stage='Written', short='Patwari 2022 · 20 August',
+       title='DSSSB Patwari Exam 2022 (20 August, Shift 1) Question Paper', notif='DSSSB Post Code 48/21 · Shift 1',
+       held='20 August 2022', key="DSSSB's answer key (question paper with answers)", fmt='mcq', slug='dsssb-patwari-2022-question-paper-with-answers',
+       kwname='DSSSB Patwari 2022', hi_paper='पटवारी', blurb=DSB_BLURB_P, mins=120),
+]
+DSB_SUBJECTS = [
+  ('ga', 'General Awareness', 'general-awareness', ['History & Culture', 'Polity & Governance', 'Geography & Environment', 'Economy', 'General Science', 'Current Affairs']),
+  ('rea', 'Reasoning (Mental Ability)', 'reasoning', ['Verbal Reasoning', 'Non-verbal Reasoning']),
+  ('math', 'Arithmetic', 'arithmetic', ['Arithmetic', 'Algebra & Geometry', 'Data Interpretation']),
+  ('eng', 'General English', 'general-english', ['Grammar', 'Vocabulary', 'Comprehension & Usage']),
+  ('hin', 'General Hindi', 'general-hindi', ['Grammar', 'Vocabulary & Usage', 'Literature & Comprehension']),
+  ('dl', 'Delhi GK', 'delhi-gk', ['Delhi History, Geography & Culture', 'Delhi Government & Schemes', 'Delhi Land Laws & Development Rules']),
+  ('comp', 'Computer Knowledge', 'computer', ['Computer Fundamentals', 'MS Office', 'Internet & Networking', 'Software & Operating Systems']),
+  ('ee', 'Electrical Engineering', 'electrical-engineering', ['Basic Science & Engineering Drawing', 'Circuits & Electromagnetism', 'Electrical Machines',
+                                                              'Power Systems & Utilisation', 'Measurements & Instruments', 'Electronics & Power Electronics']),
+]
+DSB_SUBJ_HI = {'ga': 'सामान्य जागरूकता', 'rea': 'मानसिक योग्यता (रीजनिंग)', 'math': 'अंकगणित', 'eng': 'सामान्य अंग्रेज़ी', 'hin': 'सामान्य हिंदी',
+               'dl': 'दिल्ली सामान्य ज्ञान', 'comp': 'कंप्यूटर ज्ञान', 'ee': 'इलेक्ट्रिकल इंजीनियरिंग'}
+
+
+def FAQ_DSB(total, npapers):
+    return [
+      ('Where can I get DSSSB MTS and JE previous year question papers with answers?',
+       f'This page has {total} questions from {npapers} DSSSB papers: the Junior Engineer (Electrical) / Section Officer exam of 22 June 2022 and the Patwari '
+       'exam of 20 August 2022 — DSSSB\'s own question papers with answers from its Question Bank, in Hindi and English, each with an explanation. Both '
+       'papers have the same five general parts as the 2026 MTS exam and JE Tier-I Section A.'),
+      ('Are the answers official?',
+       'Yes. Every answer is the one DSSSB marked in its published question paper with answers. Where an answer looks doubtful, the explanation says so. '
+       'The explanations, in English and Hindi, are written by Learn with Anil.'),
+      ('What is the DSSSB MTS 2026 exam pattern?',
+       'One tier: 200 multiple-choice questions for 200 marks in 2 hours — General Awareness, General Intelligence & Reasoning, Arithmetical & Numerical '
+       'Ability, Hindi and English, 40 each — with 0.25 cut for each wrong answer. Questions are in Hindi and English except the language parts.'),
+      ('What is the DSSSB JE Electrical 2026 exam pattern?',
+       'Two tiers. Tier-I: 200 questions in 2 hours — Section A has the five general parts (20 each) and Section B 100 Electrical Engineering questions. '
+       'Tier-II: 150 questions for 200 marks in 2½ hours on Electrical Engineering (Part I 100 one-mark, Part II 50 two-mark questions). Wrong answers '
+       'cost 0.25 (0.50 for two-mark questions).'),
+      ('When is the last date to apply for DSSSB MTS and JE 2026?',
+       '11 December 2026 (11:59 pm) on dsssbonline.nic.in (Advt. No. 06/2026: 1,075 MTS and 185 JE posts). DSSSB will announce the exam dates on its website.'),
+      ('Is there a DSSSB mock test?',
+       'Yes. Each paper can be taken as a full 2-hour mock test with negative marking, and the sectional tests take all the previous questions of one part, '
+       'such as Reasoning, Hindi or Electrical Engineering. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
 # ---------- RRB Group D (Level-1 posts, CEN 08/2024): RRB's own question papers with the answer key (Anil, 15 Nov 2026: "RRB Group D...add pyqs and other
 # details like other exams"). Source: RRB's "question paper with answer key" for each shift (options in green with a tick = RRB's answer), in English and
 # Hindi, as hosted by AglaSem; the Hindi sheets are another candidate's copy, so the Hindi was matched question by question and put in English option order.
@@ -1543,6 +1671,8 @@ L2_MR = dict(code='mr', dir='mr', label='मराठी', name='Marathi', font=
              gf='&family=Noto+Sans+Devanagari:wght@400;500;600;700')   # MPSC Group-C (Anil, 15 Nov 2026: Maharashtra exams)
 L2_OR = dict(code='or', dir='or', label='ଓଡ଼ିଆ', name='Odia', font='Noto Sans Oriya', ans='ଉତ୍ତର',
              gf='&family=Noto+Sans+Oriya:wght@400;500;600;700')   # OPSC ASO (Anil, 15 Nov 2026: Odisha exams)
+L2_BN = dict(code='bn', dir='bn', label='বাংলা', name='Bengali', font='Noto Sans Bengali', ans='উত্তর',
+             gf='&family=Noto+Sans+Bengali:wght@400;500;600;700')   # WBPSC (Anil, 16 Nov 2026: West Bengal exams)
 L2_GU = dict(code='gu', dir='gu', label='ગુજરાતી', name='Gujarati', font='Noto Sans Gujarati', ans='જવાબ',
              gf='&family=Noto+Sans+Gujarati:wght@400;500;600;700')   # GSSSB CCE (Anil, 15 Nov 2026: Gujarat exams)
 
@@ -1697,7 +1827,7 @@ def load_exam(conf):
         if nown:
             if nown == len(qs): pp['fmt'], pp['own'] = 'mcq', 1   # four options now (ours + APPSC's answer); still All-in-One Pass only
             else: print(f'  ! {conf["short"]} {p["id"]}: options for {nown} of {len(qs)} questions only; paper stays quick-recall')
-        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'kn_paper', 'mr_paper', 'gu_paper', 'or_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel'):
+        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'kn_paper', 'mr_paper', 'gu_paper', 'or_paper', 'bn_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel'):
             if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p) if PUBLIC_PDFS else ''
         alt = paper_alt(conf, p)
@@ -2846,6 +2976,42 @@ def exam_confs():
                         "and the English part of Paper III are in English, as printed; the Odia part of Paper III is in Odia, with explanations in Odia and English. "
                         "Questions OPSC did not value are left out. The 2025 papers are from the ASO exam for the Office of the Advocate General, which had the "
                         "same three papers.")),
+      dict(id='wbpsc-ido', dir='wbpsc-ido', src='wbpsc-ido', key='wb-ido', name='WBPSC IDO', short='WBPSC IDO', seo='WBPSC IDO',
+           slugp='wbpsc-ido', papers=WBI_PAPERS, subjects=WBI_SUBJECTS, faq=FAQ_WBI, board='WBPSC', l2=L2_BN, pb='/wbpsc-ido/',
+           keyname="WBPSC's answer key", keyshort="WBPSC's key",
+           bn_name='ডব্লিউবিপিএসসি ইন্ডাস্ট্রিয়াল ডেভেলপমেন্ট অফিসার (IDO)', subj_te=WBI_SUBJ_BN,
+           title="WBPSC IDO Previous Year Question Papers with Answers – 2019 Screening Test & Miscellaneous 2023 (English & Bengali) | Learn with Anil",
+           h1='WBPSC IDO previous year question papers <em>with answers.</em>',
+           aka=('West Bengal Public Service Commission (WBPSC) Industrial Development Officer (IDO) screening test, plus the WBPSC Miscellaneous Services '
+                'Recruitment (Preliminary) 2023 paper. WBPSC\'s own booklets with its answer keys.'),
+           aka_short='WBPSC Industrial Development Officer (IDO), Directorate of MSME, West Bengal',
+           l2line='পশ্চিমবঙ্গ পাবলিক সার্ভিস কমিশনের ইন্ডাস্ট্রিয়াল ডেভেলপমেন্ট অফিসার (IDO) ও মিসলেনিয়াস সার্ভিসেস পরীক্ষার পূর্ববর্তী প্রশ্নপত্র — কমিশনের উত্তরমালা ও বাংলায় ব্যাখ্যা সহ।',
+           desc=lambda t: (f"WBPSC IDO previous year question papers with answers: the Industrial Development Officer Screening Test 2019 and the Miscellaneous "
+                           f"Services (Prelims) 2023 paper (WBPSC's own booklets), {t:,} questions with WBPSC's key and explanations, in English and Bengali; "
+                           f"Industrial Safety, Environment, Science, Computer, West Bengal industry and Mental Ability practice and mock tests for WBPSC IDO 2026."),
+           eyebrow='WBPSC · Industrial Development Officer (MSME, West Bengal)',
+           papers_note=("Each paper is WBPSC's own Series A booklet (published on psc.wb.gov.in), with every answer from WBPSC's answer key. The 2019 IDO screening "
+                        "test is in English, as printed; the 2023 Miscellaneous Services paper is printed in English and Bengali, and both are here with "
+                        "explanations in both languages. Questions WBPSC gave marks to all for are left out. The Miscellaneous paper is WBPSC's general "
+                        "preliminary test — its English, Mental Ability, Arithmetic and General Science questions are the same kind the IDO test asks.")),
+      dict(id='dsssb', dir='dsssb', src='dsssb', key='dl-dsssb', name='DSSSB MTS & JE', short='DSSSB', seo='DSSSB',
+           slugp='dsssb', papers=DSB_PAPERS, subjects=DSB_SUBJECTS, faq=FAQ_DSB, board='DSSSB', l2=L2_HI, pb='/dsssb/',
+           keyname="DSSSB's answer key", keyshort="DSSSB's key",
+           hi_name='डीएसएसएसबी', hi_paper='प्रश्न पत्र', subj_te=DSB_SUBJ_HI,
+           title="DSSSB Previous Year Question Papers with Answers – MTS & JE 2026 Practice (Hindi & English) | Learn with Anil",
+           h1='DSSSB previous year question papers <em>with answers.</em>',
+           aka=('Delhi Subordinate Services Selection Board (DSSSB) online exams: Junior Engineer (Electrical) and Patwari papers of 2022 with DSSSB\'s own answers, '
+                'for the DSSSB MTS and JE 2026 exams (Advt. No. 06/2026).'),
+           aka_short='DSSSB Multi-Tasking Staff (MTS) and Junior Engineer (Electrical), Delhi',
+           l2line='दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) के पिछले प्रश्न पत्र — बोर्ड की उत्तर कुंजी और हिंदी व अंग्रेज़ी में व्याख्या सहित; MTS व JE 2026 की तैयारी के लिए।',
+           desc=lambda t: (f"DSSSB previous year question papers with answers: JE (Electrical) 2022 and Patwari 2022 (DSSSB's own papers with answers), {t:,} "
+                           f"questions in Hindi and English with explanations; Reasoning, General Awareness, Arithmetic, Hindi, English, Delhi GK and Electrical "
+                           f"practice and 2-hour mock tests for DSSSB MTS and JE 2026 (Advt. 06/2026)."),
+           eyebrow='DSSSB · Multi-Tasking Staff & Junior Engineer (Delhi)',
+           papers_note=("Each paper is DSSSB's own question paper with answers from the online exam (published in DSSSB's Question Bank), with every answer "
+                        "as DSSSB marked it. Questions are in Hindi and English, except the English section (English only) and the Hindi section (Hindi "
+                        "only). Both 2022 papers start with the same five general parts that make up the 2026 MTS exam and JE Tier-I Section A; the JE "
+                        "paper then has 100 Electrical Engineering questions and the Patwari paper Computer and Delhi questions.")),
     ] + bank_confs()
 
 
@@ -2987,7 +3153,7 @@ def main():
         def fill(s, photo, title, seo, desc=''):
             return (s.replace('{{HERO_P}}', HERO_P).replace('{{FIG12}}', FIG12)   # (first: they contain other placeholders)
                      .replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title).replace('{{DESC}}', esc(desc))
-                     .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf']).replace('{{TA_HIDDEN}}', '' if l2['code'] == 'ta' else ' hidden').replace('{{KN_HIDDEN}}', '' if l2['code'] == 'kn' else ' hidden').replace('{{MR_HIDDEN}}', '' if l2['code'] == 'mr' else ' hidden').replace('{{GU_HIDDEN}}', '' if l2['code'] == 'gu' else ' hidden').replace('{{OR_HIDDEN}}', '' if l2['code'] == 'or' else ' hidden')
+                     .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf']).replace('{{TA_HIDDEN}}', '' if l2['code'] == 'ta' else ' hidden').replace('{{KN_HIDDEN}}', '' if l2['code'] == 'kn' else ' hidden').replace('{{MR_HIDDEN}}', '' if l2['code'] == 'mr' else ' hidden').replace('{{GU_HIDDEN}}', '' if l2['code'] == 'gu' else ' hidden').replace('{{OR_HIDDEN}}', '' if l2['code'] == 'or' else ' hidden').replace('{{BN_HIDDEN}}', '' if l2['code'] == 'bn' else ' hidden')
                      .replace('{{LANGS}}', 'English' if papers and all(p.get('en_only') for p in papers) else 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
                      .replace('{{BOARD}}', conf['board'])
                      .replace('{{FOOTSRC}}', f'Mock tests written by Learn with Anil ({conf["board"]} does not publish its question papers).' if conf.get('mockonly') else
@@ -3321,6 +3487,8 @@ def paper_kw_l2(conf, p):
         return f'{conf["or_name"]} {p.get("or_paper", "")} {p["year"]} ପ୍ରଶ୍ନପତ୍ର ଉତ୍ତର ସହିତ'.replace('  ', ' ')
     if conf.get('gu_name'):
         return f'{conf["gu_name"]} {p.get("gu_paper", "")} {p["year"]} પ્રશ્નપત્ર જવાબો સાથે'.replace('  ', ' ')
+    if conf.get('bn_name'):
+        return f'{conf["bn_name"]} {p.get("bn_paper", "")} {p["year"]} প্রশ্নপত্র উত্তর সহ'.replace('  ', ' ')
     if conf['l2']['code'] == 'te':
         g = 'గ్రూప్ 2' if conf['short'] == 'Group-II' else 'గ్రూప్ 1'
         stage = 'ప్రిలిమ్స్' if p['stage'].startswith(('Screening', 'Prelims')) else 'మెయిన్స్'
@@ -3361,6 +3529,8 @@ def subject_l2_line(conf, s):
         return f'{conf["or_name"]} {name} — ପୂର୍ବ ବର୍ଷର ପ୍ରଶ୍ନ, ଉତ୍ତର ଓ ବ୍ୟାଖ୍ୟା ସହିତ।'
     if conf['l2']['code'] == 'gu' and conf.get('gu_name'):
         return f'{conf["gu_name"]} {name} — અગાઉના વર્ષોના પ્રશ્નો, જવાબો અને સમજૂતી સાથે.'
+    if conf['l2']['code'] == 'bn' and conf.get('bn_name'):
+        return f'{conf["bn_name"]} {name} — আগের বছরের প্রশ্ন, উত্তর ও ব্যাখ্যা সহ।'
     if conf.get('te_name'):
         if s['id'] == 'soc': name = 'నైతిక విలువలు, జెండర్ సెన్సిటివిటీ'
         return f'{conf["te_name"]} {name} ప్రాక్టీస్ బిట్స్ — మునుపటి సంవత్సరం ప్రశ్నలు, సమాధానాలు, వివరణలతో.'
@@ -3421,6 +3591,8 @@ def exam_terms(e, cat):
     if e['id'] == 'ukpsc-lower-pcs': words += ['ukpsc', 'uttarakhand public service commission', 'uttarakhand', 'uk', 'lower pcs', 'lower subordinate', 'lower subordinate services', 'combined state civil', 'naib tehsildar', 'excise inspector', 'marketing inspector', 'supply inspector', 'labour enforcement officer', 'cane development inspector', 'uttarakhand gk', 'general aptitude', 'ro aro', 'ukpsc lower pcs previous year paper', 'uttarakhand lower pcs question paper', 'uksssc']
     if e['id'] == 'cg-vyapam-group-2': words += ['cg vyapam', 'vyapam', 'cgssb', 'chhattisgarh', 'cg', 'karmchari chayan mandal', 'chhattisgarh staff selection board', 'group 2', 'assistant grade 3', 'assistant grade-3', 'sahayak grade 3', 'data entry operator', 'deo', 'stenographer', 'steno typist', 'registration clerk', 'asi', 'cg gk', 'chhattisgarh gk', 'computer', 'vdag', 'agdo', 'cg vyapam previous year paper', 'cg vyapam assistant grade 3 question paper']
     if e['id'] == 'opsc-aso': words += ['opsc', 'odisha public service commission', 'odisha', 'orissa', 'aso', 'assistant section officer', 'odisha secretariat', 'secretariat assistant', 'advocate general', 'odia', 'oriya', 'odisha gk', 'general awareness', 'reasoning', 'mathematics', 'english', 'opsc aso previous year paper', 'opsc aso question paper', 'osssc']
+    if e['id'] == 'wbpsc-ido': words += ['wbpsc', 'psc wb', 'west bengal public service commission', 'west bengal', 'bengal', 'ido', 'industrial development officer', 'msme', 'industrial safety', 'pollution control', 'renewable energy', 'physical science', 'west bengal industry', 'miscellaneous', 'misc', 'msre', 'clerkship', 'bengali', 'bangla', 'wbpsc ido previous year paper', 'wbpsc ido question paper', 'wbpsc miscellaneous question paper', 'wbssc']
+    if e['id'] == 'dsssb': words += ['dsssb', 'delhi subordinate services selection board', 'delhi', 'mts', 'multi tasking staff', 'multi-tasking staff', 'aaya', 'je', 'junior engineer', 'electrical', 'patwari', 'section officer', 'delhi gk', 'hindi', 'reasoning', 'arithmetic', 'electrical engineering', 'dsssb previous year paper', 'dsssb question paper', 'dsssb mts question paper', 'dsssb je question paper']
     if e['id'] == 'uppsc-ro-aro': words += ['uppsc', 'uttar pradesh public service commission', 'ro', 'aro', 'ro/aro', 'ro aro', 'review officer', 'assistant review officer', 'samiksha adhikari', 'sahayak samiksha adhikari', 'up', 'uttar pradesh', 'general hindi', 'up gk', 'prelims', 'uppsc ro aro mock test', 'यूपीपीएससी', 'समीक्षा अधिकारी', 'सहायक समीक्षा अधिकारी', 'आरओ', 'एआरओ', 'सामान्य हिंदी']
     if e['id'] == 'upsssc-inter-level': words += ['upsssc', 'uttar pradesh subordinate services selection commission', 'up', 'uttar pradesh', 'inter level', 'intermediate level', 'inter level mains', 'mains', 'pet', 'pet 2025', 'lekhpal', 'gram vikas adhikari', 'vdo', 'gram panchayat adhikari', 'gpa', 'vpo', 'amin', 'vanijya kar sangrah amin', 'bhumi arjan amin', 'samaj kalyan paryavekshak', 'lower subordinate', 'lower pcs', 'up gk', 'hindi', 'upsssc mock test', 'यूपीएसएसएससी', 'लेखपाल', 'ग्राम विकास अधिकारी', 'ग्राम पंचायत अधिकारी', 'इंटर स्तरीय', 'मुख्य परीक्षा']
     if e['id'] == 'gsssb-cce': words += ['gsssb', 'gujarat subordinate service selection board', 'gujarat gaun seva pasandgi mandal', 'cce', 'cce 2.0', 'combined competitive exam', 'class 3', 'class-3', 'class iii', 'group a', 'group b', 'gujarat', 'gujarati', 'junior clerk', 'senior clerk', 'head clerk', 'office assistant', 'social welfare inspector', 'sub registrar', 'gsssb clerk', 'ojas', 'gsssb mock test', 'જુનિયર ક્લાર્ક', 'સિનિયર ક્લાર્ક', 'ગૌણ સેવા', 'જીએસએસએસબી', 'સંયુક્ત સ્પર્ધાત્મક પરીક્ષા']
@@ -3521,6 +3693,8 @@ BOARD_PHOTO = {   # free-licence photos from Wikimedia Commons, cropped to 640x2
     'uk': ('Kedarnath Temple', 'Shaq774', 'public domain', 'https://commons.wikimedia.org/wiki/File:Kedarnath_Temple.jpg', ''),   # Uttarakhand (16 Nov 2026)
     'cg': ('Chitrakote Falls, Bastar', 'Moulina kumar', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:The_ravishing_beauty_of_Chitrakote_falls.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),   # Chhattisgarh (16 Nov 2026)
     'od': ('Konark Sun Temple', 'Joydeep', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Konark_Sun_Temple_Puri_district,_Odisha,_India_1.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),   # Odisha (16 Nov 2026)
+    'wb': ('Victoria Memorial, Kolkata', 'Bernard Gagnon', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Victoria_Memorial,_Kolkata_-_West_facade_02.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),   # West Bengal (16 Nov 2026)
+    'dl': ('India Gate, New Delhi', 'Yann', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:India_Gate,_New_Delhi.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),   # Delhi (16 Nov 2026)
     'br': ('Bihar Legislature, Patna', 'Innocentbunny', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Bihar_Legislature_Building.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
 }
 
@@ -3664,6 +3838,8 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'uppsc-pcs': ('Bara Imambara, Lucknow', 'Harsh13596', 'CC BY-SA 4.0', _CW + 'Imambara_of_Asaf-ud-daula_.jpg'),
     'bpsc-cce': ('Golghar, Patna', 'Deepak1408', 'CC BY-SA 4.0', _CW + 'Golghar_patna_Bihar_India.jpg'),
     'bpsc-tre': ('Sariputta Stupa, Nalanda Mahavihara', 'Sumitsurai', 'CC BY-SA 4.0', _CW + 'Temple_3_-_Sariputta_Stupa_-_Nalanda_Mahavihara_(10).jpg'),
+    'dsssb': ('Arches of the Red Fort, Delhi', 'Syed Sajidul Islam', 'CC BY-SA 4.0', _CW + 'Red_Fort_-Delhi_-Delhi_-SSI_010.jpg'),   # DSSSB (16 Nov 2026)
+    'wbpsc-ido': ('Howrah Bridge over the Hooghly, Kolkata', 'Ushnish Jana', 'CC BY-SA 4.0', _CW + 'Howrah_bridge_1.jpg'),   # WBPSC IDO (16 Nov 2026)
     'opsc-aso': ('Lingaraja Temple, Bhubaneswar', 'Bernard Gagnon', 'CC BY-SA 3.0', _CW + 'Lingaraja_Temple_01.jpg'),   # OPSC ASO (16 Nov 2026)
     'ukpsc-lower-pcs': ('Har Ki Pauri, Haridwar', 'Whispyhistory', 'CC BY-SA 4.0', _CW + 'Har_Ki_Pauri_and_Clock_Tower_of_Haridwar.jpg'),   # UKPSC Lower PCS (16 Nov 2026)
     'cg-vyapam-group-2': ('Bhoramdeo Temple, Kawardha', 'Pankaj Oudhia', 'CC BY-SA 3.0', _CW + 'Bhoramdeo_Temple,_Kawardha.jpg'),   # CG Vyapam Group 2 (16 Nov 2026)
@@ -3743,7 +3919,8 @@ def photo_credit(eid, prefix='Photo: '):
 # language switcher, the badge, the figures). A language goes live only when questions exist in it; the switcher then needs its own button.
 SITE_LANGS = [('en', 'English', 'अंग्रेज़ी', 'ఇంగ్లీష్', True), ('te', 'తెలుగు', 'तेलुगु', 'తెలుగు', True), ('hi', 'हिंदी', 'हिंदी', 'హిందీ', True),
               ('ta', 'தமிழ்', 'तमिल', 'తమిళం', True), ('kn', 'ಕನ್ನಡ', 'कन्नड़', 'కన్నడ', True), ('ml', 'മലയാളം', 'मलयालम', 'మలయాళం', False),
-              ('mr', 'मराठी', 'मराठी', 'మరాఠీ', True), ('gu', 'ગુજરાતી', 'गुजराती', 'గుజరాతీ', True), ('or', 'ଓଡ଼ିଆ', 'ओड़िया', 'ఒడియా', True)]
+              ('mr', 'मराठी', 'मराठी', 'మరాఠీ', True), ('gu', 'ગુજરાતી', 'गुजराती', 'గుజరాతీ', True), ('or', 'ଓଡ଼ିଆ', 'ओड़िया', 'ఒడియా', True),
+              ('bn', 'বাংলা', 'बांग्ला', 'బెంగాలీ', True)]
 
 
 def lang_fills():
@@ -3759,7 +3936,7 @@ def lang_fills():
 NAV_FUND = ('      <a class="nav-fund" href="/funders.html" title="Fund this project" data-hubonly><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'
             '<path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 5 6.4 5c2 0 3.4 1.1 4.1 2.3h3C14.2 6.1 15.6 5 17.6 5 21 5 23.1 8.5 21.6 11.8 19.5 16.4 12 21 12 21Z"/></svg>'
             '<span>Fund<span class="nf-x"> this project</span></span></a>\n')   # Anil, 2 Nov 2026: "add fund the project...here" (start page top bar)
-BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'tn', 'ka', 'kl', 'mh', 'gj', 'up', 'uk', 'cg', 'od', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
+BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'tn', 'ka', 'kl', 'mh', 'gj', 'up', 'uk', 'cg', 'od', 'wb', 'dl', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
 
 
 def hub_html(catalog, counts, grand):
@@ -4430,6 +4607,7 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
 [lang="mr"]{font-family:"Noto Sans Devanagari",sans-serif;line-height:1.75}
 [lang="gu"]{font-family:"Noto Sans Gujarati",sans-serif;line-height:1.75}
 [lang="or"]{font-family:"Noto Sans Oriya",sans-serif;line-height:1.75}
+[lang="bn"]{font-family:"Noto Sans Bengali",sans-serif;line-height:1.75}
 .q .te{border-left:3px solid var(--line);padding-left:12px;margin:8px 0 4px}
 :root{--bg:#F3F6FB;--surface:#fff;--ink:#0D1830;--muted:#55627C;--line:#D6DFEC;--accent:#1846C7;--accent-soft:#E2EAFC;--accent-text:#1440B8;--band:#0C2266;--band-ink:#EEF3FF;--good:#12804A;--good-soft:#DDF3E7}
 @media (prefers-color-scheme:dark){:root{--bg:#0A1020;--surface:#111A2E;--ink:#E5ECF8;--muted:#9AA8C3;--line:#26334F;--accent:#6F95FF;--accent-soft:#1A2A52;--accent-text:#9DB7FF;--band:#0F1F4E;--band-ink:#EEF3FF;--good:#41C080;--good-soft:#123426;color-scheme:dark}}
@@ -4532,7 +4710,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}wbpsc-ido/">WBPSC IDO (West Bengal)</a> · <a href="{rootup}wbpsc-pyqs.html">All WBPSC previous question papers</a> · <a href="{rootup}wbpsc-ido-notification-2026.html">WBPSC IDO Notification 2026</a> · <a href="{rootup}dsssb/">DSSSB MTS &amp; JE (Delhi)</a> · <a href="{rootup}dsssb-pyqs.html">All DSSSB previous question papers</a> · <a href="{rootup}dsssb-mts-je-notification-2026.html">DSSSB MTS &amp; JE Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -5556,6 +5734,35 @@ LANDINGS = {
             '<p class="note">OPSC ASO 2026: <a href="/opsc-aso-notification-2026.html">340 posts (Advt. 15 of 2026-27), apply by 30 November 2026, exam on 17 January 2027</a>. '
             'Full papers with the real timer: <a href="/opsc-aso/mock-test.html">OPSC ASO mock test</a>.</p>',
       te={'OPSC ASO': 'ଓପିଏସସି ASO ପ୍ରଶ୍ନପତ୍ର'},
+      order=lambda c: 0),
+  'wbpsc-pyqs.html': dict(   # Anil, 16 Nov 2026: West Bengal WBPSC IDO
+      board='WBPSC', ename='WBPSC', crumb='WBPSC PYQs', lang='bn',
+      title='WBPSC Previous Year Question Papers with Answers – IDO 2019 & Miscellaneous Prelims 2023 (English & Bengali) | Learn with Anil',
+      desc='WBPSC (West Bengal Public Service Commission) previous year question papers in one place: the Industrial Development Officer screening test 2019 and '
+           'the Miscellaneous Services (Prelims) 2023 paper, {n} questions with WBPSC\'s answer keys and explanations in English and Bengali. Practise them '
+           'online with one ₹45 All-in-One Pass for every exam.',
+      h1='WBPSC previous question papers with answers',
+      lede="Every WBPSC question paper on Learn with Anil, {n} questions in all, each with WBPSC's answer key and a short explanation.",
+      intro='<p>Looking for the WBPSC IDO question paper with the answer key, the WBPSC Miscellaneous prelims paper in Bengali, or a WBPSC mock test? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="bn">পশ্চিমবঙ্গ পাবলিক সার্ভিস কমিশনের ইন্ডাস্ট্রিয়াল ডেভেলপমেন্ট অফিসার (IDO) 2019 ও মিসলেনিয়াস সার্ভিসেস (প্রিলিমিনারি) 2023 প্রশ্নপত্র — কমিশনের উত্তরমালা ও বাংলায় ব্যাখ্যা সহ।</p>'
+            '<p class="note">WBPSC IDO 2026: <a href="/wbpsc-ido-notification-2026.html">247 posts (Advt. No. 15/2024), apply by 26 November 2026</a>. '
+            'Full papers with the real timer: <a href="/wbpsc-ido/mock-test.html">WBPSC IDO mock test</a>.</p>',
+      te={'WBPSC IDO': 'ডব্লিউবিপিএসসি IDO প্রশ্নপত্র'},
+      order=lambda c: 0),
+  'dsssb-pyqs.html': dict(   # Anil, 16 Nov 2026: Delhi DSSSB MTS & JE
+      board='DSSSB', ename='DSSSB', crumb='DSSSB PYQs', lang='hi',
+      title='DSSSB Previous Year Question Papers with Answers – JE Electrical 2022 & Patwari 2022 (Hindi & English) for MTS & JE 2026 | Learn with Anil',
+      desc='DSSSB (Delhi Subordinate Services Selection Board) previous year question papers in one place: JE (Electrical) 2022 and Patwari 2022, {n} questions '
+           'with DSSSB\'s own answers and explanations in Hindi and English, for DSSSB MTS and JE 2026. Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='DSSSB previous question papers with answers',
+      lede="Every DSSSB question paper on Learn with Anil, {n} questions in all, each with DSSSB's answer and a short explanation in Hindi and English.",
+      intro='<p>Looking for the DSSSB MTS question paper with answers, DSSSB JE Electrical previous questions, or a DSSSB mock test? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="hi">दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB) के जेई (इलेक्ट्रिकल) 2022 व पटवारी 2022 प्रश्न पत्र — बोर्ड के उत्तर तथा हिंदी व अंग्रेज़ी में व्याख्या सहित।</p>'
+            '<p class="note">DSSSB MTS &amp; JE 2026: <a href="/dsssb-mts-je-notification-2026.html">1,260 posts (Advt. No. 06/2026), apply by 11 December 2026</a>. '
+            'Full papers with the real timer: <a href="/dsssb/mock-test.html">DSSSB mock test</a>.</p>',
+      te={'DSSSB': 'डीएसएसएसबी प्रश्न पत्र'},
       order=lambda c: 0),
 }
 
@@ -6641,6 +6848,7 @@ def notif_page(loaded, rel):
     elif N.get('mr'): body.append(f'<p lang="mr" style="margin:0 0 6px">{esc(N["mr"])}</p>')
     elif N.get('gu'): body.append(f'<p lang="gu" style="margin:0 0 6px">{esc(N["gu"])}</p>')
     elif N.get('or'): body.append(f'<p lang="or" style="margin:0 0 6px">{esc(N["or"])}</p>')
+    elif N.get('bn'): body.append(f'<p lang="bn" style="margin:0 0 6px">{esc(N["bn"])}</p>')
     if conf: body.append(f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>')
     for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
@@ -6676,7 +6884,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways (RRB): NTPC, Group D'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2'), ('OPSC', 'OPSC (Odisha): ASO')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2'), ('OPSC', 'OPSC (Odisha): ASO'), ('WBPSC', 'WBPSC (West Bengal): IDO'), ('DSSSB', 'DSSSB (Delhi): MTS, JE')]
 
 
 def news_hub_page(loaded, rels):
@@ -7003,6 +7211,8 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'tnpsc-group-4': ('TNPSC Group 4 (CCSE-IV) written exam', '2027-01-10', 'TNPSC Notification No. 11/2026 of 6 October 2026 (exam dashboard on tnpsc.gov.in).'),
   'karnataka-fda-sda': ('KEA FDA/SDA competitive exam (FDA-level papers, Kalyana Karnataka)', '2027-01-09', 'KEA notifications of 29 October 2026: Kannada language test 8 January; FDA-level papers 9 (KK) and 10 January (RPC); SDA-level papers 16 (KK) and 17 January 2027 (RPC).'),
   'ukpsc-lower-pcs': ('UKPSC Lower PCS Prelims 2026 (Advt. A-1/E-2/DR/LSS/2026-27)', None, 'UKPSC Advt. A-1/E-2/DR/LSS/2026-27: applications 6 to 26 November 2026; UKPSC has not announced the prelims date yet.'),
+  'dsssb': ('DSSSB MTS and JE Combined Exams 2026 (Advt. 06/2026)', None, 'DSSSB Advt. No. 06/2026 (6 November 2026): applications 12 November to 11 December 2026; the exam dates will be announced on the Board\'s website.'),
+  'wbpsc-ido': ('WBPSC Industrial Development Officer written test (Advt. 15/2024)', None, 'WBPSC Advt. No. 15/2024 (detailed advertisement 5 November 2026): applications 6 to 26 November 2026; WBPSC says the date of the screening test will be announced.'),
   'opsc-aso': ('OPSC Assistant Section Officer written exam (Advt. 15 of 2026-27)', '2027-01-17', 'OPSC Advt. No. 15 of 2026-27 (5 November 2026): written exam on 17 January 2027.'),
   'cg-vyapam-group-2': ('CG Vyapam (CGSSB) Group 2 written exam (G20227)', '2027-01-10', 'CGSSB press note of 5 November 2026: exam on 10 January 2027, 10:00 am to 12:15 pm.'),
   'uppsc-ro-aro': ('UPPSC RO/ARO Prelims 2026 (Advt. A-4/E-1/2026)', None, 'UPPSC Advt. A-4/E-1/2026: applications 26 October to 26 November 2026; UPPSC has not announced the prelims date yet.'),
@@ -7854,7 +8064,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -7871,7 +8081,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
-<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/karnataka-gpstr/">GPSTR (Karnataka Teacher) PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li><li><a href="/opsc-aso/">OPSC ASO PYQs</a></li></ul>
+<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/karnataka-gpstr/">GPSTR (Karnataka Teacher) PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li><li><a href="/opsc-aso/">OPSC ASO PYQs</a></li><li><a href="/wbpsc-ido/">WBPSC IDO PYQs</a></li><li><a href="/dsssb/">DSSSB MTS &amp; JE PYQs</a></li></ul>
 </main></body></html>
 """
 

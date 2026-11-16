@@ -1,0 +1,876 @@
+# WBPSC Miscellaneous Services Recruitment Examination (Preliminary) 2023, Advt. No. 11/2023, held 15 September 2024, booklet RMS/2023, Series A (WBPSC's own booklet, 100 questions of 2 marks, English and Bengali); answers: WBPSC's final answer key of 13 March 2025 (Q29, 59, 64 not valued)
+
+Q 1 | his | Indian History & Culture
+Who is the author of the book ‘Man Makes Himself’?
+(1) A. L. Basham
+(2) Romila Thapar
+(3) V. Gordon Childe
+(4) D. D. Kosambi
+= 3
+~ ‘Man Makes Himself’ (1936) was written by the Australian archaeologist V. Gordon Childe, who coined the terms ‘Neolithic Revolution’ and ‘Urban Revolution’. A. L. Basham wrote ‘The Wonder That Was India’; D. D. Kosambi wrote ‘An Introduction to the Study of Indian History’.
+
+Q 2 | apt | Arithmetic
+When will it be double if some capital was invested at the rate of 6¼%?
+(1) In 12 years
+(2) In 9 years
+(3) In 16 years
+(4) In 8 years
+= 3
+~ At simple interest, money doubles when the interest equals the principal, i.e. R × T = 100. So T = 100 ÷ 6¼ = 100 ÷ 25/4 = 16 years.
+
+Q 3 | apt | Reasoning
+If 12th January of 2024 was Friday, then what will be the 7th June of 2025?
+(1) Monday
+(2) Thursday
+(3) Saturday
+(4) None of the above
+= 3
+~ 12 Jan 2024 to 12 Jan 2025 = 366 days (2024 is a leap year) = 2 odd days, so 12 Jan 2025 is Sunday. From 12 Jan to 7 June 2025: 19 + 28 + 31 + 30 + 31 + 7 = 146 days = 20 weeks + 6 odd days. Sunday + 6 = Saturday.
+
+Q 4 | his | Indian History & Culture
+“Sabe munise paja mama”—Who said?
+(1) Lord Rishabha
+(2) Emperor Ashoka
+(3) Goutamiputra Satakarni
+(4) Suparshvanath
+= 2
+~ “Sabe munise paja mama” (“All men are my children”) is Emperor Ashoka’s declaration in his Separate Kalinga Rock Edicts (Dhauli and Jaugada), written in Prakrit in the Brahmi script.
+
+Q 5 | apt | Arithmetic
+The ratio of the collection of story books of Rabi and Madhu is 2 : 3 respectively. After purchasing of 6 new books by Madhu the ratio of their books would be 1 : 3. How many books did they have earlier?
+(1) 2, 4
+(2) 4, 6
+(3) 4, 8
+(4) None of the above
+= 2
+~ Let Rabi have 2x and Madhu 3x books. Then 2x : (3x + 6) = 1 : 3 → 6x = 3x + 6 → x = 2. So they had 4 and 6 books (check: 4 : 12 = 1 : 3).
+
+Q 6 | geo | Indian & World Geography
+What is the desert soil called?
+(1) Aridisols
+(2) Andisols
+(3) Histosols
+(4) Mollisols
+= 1
+~ In USDA Soil Taxonomy, Aridisols are the dry soils of deserts and arid regions. Andisols form on volcanic ash, Histosols are organic (peat) soils, and Mollisols are the dark, fertile grassland soils.
+
+Q 7 | apt | Arithmetic
+How many times does 7/11 occur from 1 to 7?
+(1) 7
+(2) 13
+(3) 9
+(4) 11
+= 3
+~ The stretch from 1 to 7 is 7 − 1 = 6 long, and 6 ÷ 7/11 = 66/7 = 9 3/7, so 7/11 fits in 9 whole times. Equivalently, the multiples of 7/11 lying between 1 and 7 are 14/11, 21/11, …, 70/11 — 9 of them (77/11 = 7 is the end point itself).
+
+Q 8 | env | Environment & Ecology
+Give an example of Biological Disaster.
+(1) 1984: Bhopal Gas Tragedy
+(2) 2004: Tsunami
+(3) 2009: Aila
+(4) 2020: Covid
+= 4
+~ A biological disaster is caused by living organisms or their toxins, such as epidemics and pandemics; the COVID-19 pandemic (2020) is one. The Bhopal gas leak was a chemical (industrial) disaster, while the 2004 tsunami and cyclone Aila (2009) were natural hazards.
+
+Q 9 | geo | Indian & World Geography
+Loktak lake is in
+(1) Manipur
+(2) Nagaland
+(3) Mizoram
+(4) Arunachal Pradesh
+= 1
+~ Loktak Lake in Manipur is the largest freshwater lake of North-East India, known for its floating biomass islands called ‘phumdis’; Keibul Lamjao, the world’s only floating national park, lies on it.
+
+Q 10 | geo | Indian & World Geography
+Highest part of Southern plateau in India—
+(1) Anaimudi
+(2) Tibetan plateau
+(3) Satpura
+(4) Eastern ghats
+= 1
+~ Anaimudi (2,695 m) in the Anaimalai Hills of Kerala is the highest peak of peninsular (southern) India. The Tibetan plateau is outside the Peninsula, and the Satpura range and Eastern Ghats are much lower.
+
+Q 11 | his | Indian History & Culture
+Name the Sultan who banned hoarding of essential commodities in India.
+(1) Iltutmish
+(2) Balban
+(3) Alauddin Khalji
+(4) Firoz Shah Tughlaq
+= 3
+~ Alauddin Khalji’s market reforms fixed the prices of grain and other essential goods, set up government granaries and controlled markets under officials like the Shahna-i-Mandi, and strictly punished hoarding and black-marketing.
+
+Q 12 | sci | Physical Science
+Which is the chemical formula of salt?
+(1) NaCl
+(2) CaCO₃
+(3) Na₃PO₄
+(4) Na₂CO₃
+= 1
+~ Common (table) salt is sodium chloride, NaCl. CaCO₃ is calcium carbonate (limestone/chalk), Na₃PO₄ is sodium phosphate and Na₂CO₃ is sodium carbonate (washing soda when hydrated).
+
+Q 13 | sci | Life Science & Health
+What is the main goal of Rare Disease Day?
+(1) Fund raising for research
+(2) Improving access to health care
+(3) Raising awareness among general public and their impact on patients’ life
+(4) Providing support for individuals affected by rare disease
+= 3
+~ Rare Disease Day, observed on the last day of February (coordinated by EURORDIS), mainly aims to raise awareness among the general public and decision-makers about rare diseases and their impact on patients’ lives.
+
+Q 14 | env | Environment & Ecology
+Which one is correct?
+The Nagarjuna Sagar Sri Sailam in Andhra Pradesh is the
+(1) smallest Tiger Reserve in India.
+(2) biggest Tiger Reserve in India.
+(3) the first Tiger Reserve in India.
+(4) the newest Tiger Reserve in India.
+= 2
+~ Nagarjunasagar-Srisailam Tiger Reserve (about 3,300 sq km, in the Nallamala hills) is the largest tiger reserve in India by area. India’s first tiger reserve was Jim Corbett (1973, Project Tiger).
+
+Q 15 | apt | Arithmetic
+A can complete a work in 9 days when B can complete the same work in 6 days. They can complete the work in 3 days if C joins them. How many days will C take if C is told to complete the work alone?
+(1) In 15 days
+(2) In 12 days
+(3) In 21 days
+(4) In 18 days
+= 4
+~ One day’s work: A + B + C = 1/3, A = 1/9, B = 1/6. So C = 1/3 − 1/9 − 1/6 = (6 − 2 − 3)/18 = 1/18, i.e. C alone takes 18 days.
+
+Q 16 | pol | Indian Economy
+First Bank in India listed in New York Stock Exchange (NYSE)—
+(1) SBI
+(2) ICICI
+(3) Deutsche
+(4) HDFC
+= 2
+~ ICICI Bank became the first Indian bank to list on the New York Stock Exchange when its American Depositary Receipts (ADRs) were listed in March 2000; HDFC Bank listed its ADRs on the NYSE in 2001.
+
+Q 17 | sci | Life Science & Health
+Which of the following is a water-borne disease?
+(1) Tuberculosis
+(2) Typhoid
+(3) Malaria
+(4) Diphtheria
+= 2
+~ Typhoid, caused by the bacterium Salmonella Typhi, spreads through contaminated water and food, so it is a water-borne disease. Tuberculosis and diphtheria spread through air droplets, and malaria through the bite of female Anopheles mosquitoes.
+
+Q 18 | geo | Geography of West Bengal
+Haldia Port, is a part on the river bank of the confluence of the rivers
+(1) Haldi river and Hooghly river
+(2) Haldi river and Rupnarayan river
+(3) Haldi river and Keleghai river
+(4) Haldi river and Shilabati river
+= 1
+~ Haldia Dock Complex in Purba Medinipur stands where the Haldi river joins the Hooghly; it is part of the Syama Prasad Mookerjee Port, Kolkata. (The Haldi itself is formed by the Kangsabati and Keleghai.)
+
+Q 19 | sci | Life Science & Health
+Study of insects is called
+(1) Emetology
+(2) Entomology
+(3) Astrology
+(4) Geology
+= 2
+~ Entomology (Greek ‘entomon’ = insect) is the scientific study of insects. Geology studies the Earth’s rocks and structure, and astrology is not a science.
+
+Q 20 | his | Indian History & Culture
+Who was the author of the book ‘From Volga to Ganga’?
+(1) Bibhutibhushan Bandopadhyay
+(2) Ruskin Bond
+(3) Jerome. K. Jerome
+(4) Rahul Sankrityayan
+= 4
+~ ‘Volga se Ganga’, a collection of 20 stories tracing human migration and history from the Volga to the Ganga over about 8,000 years, was written in Hindi by Rahul Sankrityayan, the scholar-traveller known as the father of Hindi travel literature.
+
+Q 21 | apt | Arithmetic
+Choose the correct one:
+(1) Sum of two irrational numbers is an irrational.
+(2) Sum of two irrational numbers is always a rational.
+(3) Sum of two irrational numbers is not always an irrational.
+(4) None of the above
+= 3
+~ The sum of two irrationals can be irrational (√2 + √3) or rational ((2 + √3) + (2 − √3) = 4, or √2 + (−√2) = 0). So it is not always irrational, and not always rational either.
+
+Q 22 | pol | Indian Economy
+First Bank in India to introduce Talking ATM for disabled persons—
+(1) SBI
+(2) PNB
+(3) Union Bank of India
+(4) ICICI
+= 3
+~ Union Bank of India launched India’s first talking ATM, with voice guidance through headphones for visually impaired customers, at Ahmedabad in 2012.
+
+Q 23 | geo | Indian & World Geography
+Where is Rann of Kutch in India?
+(1) Rajasthan
+(2) Chhattisgarh
+(3) Gujarat
+(4) Telengana
+= 3
+~ The Rann of Kutch, a vast seasonal salt marsh (the Great and Little Rann), lies in the Kutch district of Gujarat; the Little Rann is home to the Indian wild ass sanctuary.
+
+Q 24 | geo | Indian & World Geography
+Find out the odd one.
+(1) Khyber
+(2) Bolan
+(3) Gomal
+(4) Gomukh
+= 4
+~ Khyber, Bolan and Gomal are mountain passes in the north-western frontier (now in Pakistan/Afghanistan). Gomukh is the snout of the Gangotri glacier in Uttarakhand, the source of the Bhagirathi, so it is the odd one.
+
+Q 25 | his | Indian History & Culture
+Who took the title of ‘Sakalauttarapathanatha’?
+(1) Sasanka
+(2) Harshavardhan
+(3) Laxamanasena
+(4) Dharmapala
+= 2
+~ Harshavardhana of Kanauj was known as ‘Sakalottarapathanatha’ (lord of the whole of North India); Pulakeshin II’s Aihole inscription uses this title for Harsha while recording his defeat on the Narmada.
+
+Q 26 | apt | Reasoning
+Complete the pattern:
+5, 7, 8; 6, 8, 12; 7, 9, ?
+(1) 21
+(2) 16
+(3) 36
+(4) 9
+= 2
+~ In each group the first two numbers go up by 1 (5, 6, 7 and 7, 8, 9), while the third goes up by 4 (8, 12, 16). So the missing number is 12 + 4 = 16.
+
+Q 27 | cur | Sports, Awards & Misc.
+Identify the correct match:
+(1) May 7 : World Health Day
+(2) May 17 : World Telecommunication Day
+(3) June 5 : World Ocean Day
+(4) June 11 : World Day Against Child Labour
+= 2
+~ World Telecommunication (and Information Society) Day is 17 May, marking the founding of the ITU in 1865. World Health Day is 7 April, World Ocean Day 8 June (5 June is World Environment Day) and the World Day Against Child Labour 12 June.
+
+Q 28 | geo | Indian & World Geography
+Pittsburgh of India is
+(1) Chotanagpur Plateau
+(2) Deccan
+(3) Keonjhar
+(4) Jamshedpur
+= 4
+~ Jamshedpur (Jharkhand), home of Tata Steel (TISCO, 1907), is called the ‘Pittsburgh of India’ after the US steel city Pittsburgh. It is also called ‘Steel City’ or Tatanagar.
+
+Q 30 | cur | Sports, Awards & Misc.
+“I have a dream”— Name the civil rights leader.
+(1) Rosa Parks
+(2) Martin Luther King JR.
+(3) Nelson Mandela
+(4) Desmond Tutu
+= 2
+~ “I Have a Dream” is the famous speech of the American civil rights leader Martin Luther King Jr., delivered at the Lincoln Memorial during the March on Washington on 28 August 1963.
+
+Q 31 | his | Indian History & Culture
+What is ‘Dharmachakra Pravartana’?
+(1) In Buddhism, it is a state of enlightenment.
+(2) Death of Lord Buddha.
+(3) After going enlightenment, Lord Buddha delivered his first sermon at Sarnath.
+(4) All of the above
+= 3
+~ ‘Dharmachakra Pravartana’ (turning the wheel of the Law) is the Buddha’s first sermon, given to five disciples at the Deer Park in Sarnath after his enlightenment at Bodh Gaya. Enlightenment is ‘Sambodhi/Nirvana’ and his death is ‘Mahaparinirvana’.
+
+Q 32 | cur | Sports, Awards & Misc.
+What is the motto of the Indian Air Force?
+(1) Touch the sky with glory
+(2) Courage and Sacrifice
+(3) Service before self
+(4) Strength in unity
+= 1
+~ The Indian Air Force motto is ‘Nabhah Sprisham Deeptam’ — ‘Touch the sky with glory’ — taken from the Bhagavad Gita (Chapter 11). ‘Service before self’ is the motto of the Indian Army.
+
+Q 33 | cur | Sports, Awards & Misc.
+Who is the first woman to fly solo across the Atlantic Ocean?
+(1) Bessie Coleman
+(2) Amelia Earhart
+(3) Valentina Tereshkova
+(4) Sally Ride
+= 2
+~ American aviator Amelia Earhart became the first woman to fly solo non-stop across the Atlantic in May 1932 (Newfoundland to Northern Ireland). Valentina Tereshkova was the first woman in space (1963) and Sally Ride the first American woman in space.
+
+Q 34 | geo | Indian & World Geography
+Country without airport—
+(1) Monaco
+(2) San Marino
+(3) Andorra
+(4) All of the above
+= 4
+~ Monaco, San Marino and Andorra, all tiny European states, have no airport of their own (Monaco has only a heliport); visitors fly into airports in neighbouring France, Italy or Spain (e.g. Nice for Monaco). Vatican City and Liechtenstein also have none.
+
+Q 35 | apt | Reasoning
+What will be the angle between the hands of a clock when the time is at 9:15 a.m.?
+(1) 100°
+(2) 115°
+(3) 360°
+(4) 180°
+= 4
+~ Angle = |30H − 5.5M| = |270 − 82.5| = 187.5°, so the smaller angle is 172.5°. No option is exact; 180° is the nearest (it ignores the hour hand’s 7.5° move past 9 in 15 minutes) and is the answer in WBPSC’s key. (Official WBPSC key; some sources differ.)
+
+Q 36 | geo | Indian & World Geography
+Sardar Sarovar Dam has been built over the
+(1) Tista river
+(2) Narmada river
+(3) Torsha river
+(4) Brahmaputra river
+= 2
+~ The Sardar Sarovar Dam is a concrete gravity dam on the Narmada river at Kevadia (Ekta Nagar), Narmada district, Gujarat; the Statue of Unity stands near it. Tista and Torsa are rivers of North Bengal.
+
+Q 37 | his | History & Culture of Bengal
+Who wrote the national anthems of two countries?
+(1) Bankim Chandra Chattopadhyay
+(2) Rabindranath Tagore
+(3) Kazi Nazrul Islam
+(4) Mohammad Iqbal
+= 2
+~ Rabindranath Tagore wrote ‘Jana Gana Mana’, the national anthem of India, and ‘Amar Sonar Bangla’, the national anthem of Bangladesh. Bankim Chandra wrote the national song ‘Vande Mataram’.
+
+Q 38 | apt | Arithmetic
+Add up the natural numbers from 1 to 100 and what is the value of the addition?
+(1) 5020
+(2) 5050
+(3) 5025
+(4) None of the above
+= 2
+~ Sum of the first n natural numbers = n(n + 1)/2. For n = 100: 100 × 101 / 2 = 5050.
+
+Q 39 | apt | Arithmetic
+Mita and Arun started a business with Rs. 700 and Rs. 900 respectively. After 4 months when Mita invested Rs. 500 more, then Arun withdrew Rs. 300. If at the end of the year total profit is Rs. 1,720 then what are profits of both Mita and Arun?
+(1) Rs. 1,000 and Rs. 720
+(2) Rs. 980 and Rs. 740
+(3) Rs. 900 and Rs. 820
+(4) None of the above
+= 4
+~ Mita: 700 × 4 + 1,200 × 8 = 12,400; Arun: 900 × 4 + 600 × 8 = 8,400. Ratio = 31 : 21, so Mita gets 1,720 × 31/52 ≈ Rs. 1,025.38 and Arun ≈ Rs. 694.62. None of the given pairs matches.
+
+Q 40 | cur | Sports, Awards & Misc.
+Who is the British author known for the “Harry Potter” series of Novels?
+(1) Agatha Christie
+(2) J. K. Rowling
+(3) J. R. R. Tolkien
+(4) C. Dickens
+= 2
+~ The seven ‘Harry Potter’ novels (1997–2007), beginning with ‘Harry Potter and the Philosopher’s Stone’, were written by British author J. K. Rowling. Tolkien wrote ‘The Lord of the Rings’ and Agatha Christie the Poirot and Miss Marple detective novels.
+
+Q 41 | sci | Life Science & Health
+Which of the following organisms is not classified as an amphibian?
+(1) Crocodile
+(2) Newt
+(3) Salamander
+(4) Frog
+= 1
+~ The crocodile is a reptile: it has dry scaly skin and lays shelled eggs on land. Newts, salamanders and frogs are amphibians, with moist skin and a larval stage in water.
+
+Q 42 | his | Indian History & Culture
+August movement was started in India in the year
+(1) 1942
+(2) 1920
+(3) 1930
+(4) 1946
+= 1
+~ The Quit India Movement, also called the August Movement (August Kranti), began after the Congress passed the Quit India resolution in Bombay on 8 August 1942, with Gandhi’s call ‘Do or Die’. 1920 was Non-Cooperation and 1930 Civil Disobedience.
+
+Q 43 | sci | Physical Science
+Who was the first woman to win a Noble Prize and remains the only person to win Noble Prize in two different scientific fields?
+(1) Dorothy Crewfoot Hodgkin
+(2) Barbara McClintock
+(3) Marie Curie
+(4) Rosalind Franklin
+= 3
+~ Marie Curie shared the 1903 Nobel Prize in Physics (radioactivity) and won the 1911 Nobel Prize in Chemistry (discovery of polonium and radium), making her the first woman Nobel laureate and the only person to win in two different sciences.
+
+Q 44 | his | Indian History & Culture
+Last Governor General of British India and first viceroy of British India was
+(1) Lord Canning
+(2) Lord Dalhousie
+(3) Lord Curzon
+(4) Lord Mountbatten
+= 1
+~ Under the Government of India Act 1858, which ended Company rule after the 1857 revolt, Lord Canning, the last Governor-General under the East India Company, became the first Viceroy of India.
+
+Q 45 | sci | Life Science & Health
+Name the organ responsible for purification of blood.
+(1) Pancreas
+(2) Intestines
+(3) Kidney
+(4) Stomach
+= 3
+~ The kidneys filter blood through about a million nephrons each, removing urea, excess salts and water as urine and keeping the blood’s composition balanced.
+
+Q 46 | his | Indian History & Culture
+Who introduced Mansabdari System?
+(1) Sher Shah
+(2) Akbar
+(3) Murshid Quli Khan
+(4) Mahmud Gawan
+= 2
+~ Mughal emperor Akbar introduced the Mansabdari system (around 1570s), giving every officer a numerical rank (mansab) shown by ‘zat’ (personal rank) and ‘sawar’ (number of horsemen to maintain); it combined civil and military administration.
+
+Q 47 | geo | Indian & World Geography
+Highest dam in India—
+(1) Tehri Dam
+(2) Bhakra Nangal Dam
+(3) Hirakud Dam
+(4) Sardar Sarovar Dam
+= 1
+~ Tehri Dam on the Bhagirathi in Uttarakhand, about 260 m high, is the highest dam in India. Bhakra (226 m, on the Sutlej) is the highest concrete gravity dam, while Hirakud on the Mahanadi is the longest.
+
+Q 48 | comp | Computer Fundamentals
+What number system is often used in computing and programming?
+(1) Binary
+(2) Hexadecimal
+(3) Octal
+(4) Decimal
+= 1
+~ Computers store and process all data in the binary (base-2) system of 0s and 1s, matching the two states (off/on) of digital circuits. Hexadecimal and octal are only shorthand ways of writing binary.
+
+Q 49 | apt | Arithmetic
+What would be the selling price of broiler chicken per kg if he wants to profit 20% when Ramen purchases the broiler Rs. 115 per kg?
+(1) Rs. 132
+(2) Rs. 136
+(3) Rs. 138
+(4) None of the above
+= 3
+~ Selling price = cost price × (100 + profit%)/100 = 115 × 120/100 = Rs. 138 per kg.
+
+Q 50 | env | Environment & Ecology
+The First National Park of India is
+(1) Kanha National Park
+(2) Rajaji National Park
+(3) Jim Corbett National Park
+(4) Nanda Devi National Park
+= 3
+~ Jim Corbett National Park in Uttarakhand, set up in 1936 as Hailey National Park, is India’s first national park; it was later renamed after the hunter-naturalist Jim Corbett, and Project Tiger was launched there in 1973.
+
+Q 51 | his | Indian History & Culture
+Who was the last Viceroy and last Governor-General of India?
+(1) Lord Wavell and Lord Mountbatten
+(2) Lord Linlithgow and Lord Wavell
+(3) Lord Mayo and Lord Wavell
+(4) Lord Mountbatten and C. Rajagopalachari
+= 4
+~ Lord Mountbatten was the last Viceroy of British India (1947) and then the first Governor-General of independent India until June 1948. C. Rajagopalachari succeeded him as the first and last Indian Governor-General; the post ended on 26 January 1950, when India became a Republic.
+
+Q 52 | apt | Arithmetic
+Amal and Bimal start a business with Rs. 500 for 9 months and an amount of money for 6 months respectively. If the total profit is of Rs. 69 and that of Bimal is of Rs. 46. Then what was the investment of Bimal at the starting of the business?
+(1) Rs. 1,200
+(2) Rs. 1,500
+(3) Rs. 750
+(4) Rs. 1,000
+= 2
+~ Profit is shared in the ratio of capital × time. Amal's share = 69 − 46 = 23, so Amal : Bimal = 23 : 46 = 1 : 2. Amal's capital × months = 500 × 9 = 4,500, so Bimal's = 9,000 = x × 6, giving x = Rs. 1,500.
+
+Q 53 | apt | Arithmetic
+A rational number is
+(1) expressible in a recessing decimal.
+(2) not expressible in a recessing decimal.
+(3) always expressible in a recessing decimal.
+(4) None of the above
+= 1
+~ A rational number p/q has a decimal form that either terminates (1/4 = 0.25) or recurs (1/3 = 0.333…), never non-terminating and non-recurring like √2. So it is expressible as a recurring decimal (“recessing” is a misprint for “recurring”) — option A as per WBPSC's key; option C's “always” is not accepted, since terminating decimals are not normally called recurring.
+
+Q 54 | his | Indian History & Culture
+Who among the following was not a member of Cabinet Mission?
+(1) Pathik Lawrence
+(2) John Simon
+(3) Sir Stafford Cripps
+(4) A. V. Alexander
+= 2
+~ The Cabinet Mission (1946) had three British cabinet ministers: Lord Pethick-Lawrence (Secretary of State for India, its leader), Sir Stafford Cripps and A. V. Alexander. Sir John Simon headed the Simon Commission of 1927, not the Cabinet Mission.
+
+Q 55 | sci | Life Science & Health
+Carrier of Malaria disease is
+(1) Aedes Mosquito
+(2) Culex Mosquito
+(3) Anopheles Mosquito
+(4) Asian tiger Mosquito
+= 3
+~ Malaria is caused by the Plasmodium parasite and spread by the bite of infected female Anopheles mosquitoes. Aedes mosquitoes (including the Asian tiger mosquito, Aedes albopictus) spread dengue, chikungunya and Zika; Culex spreads filariasis and Japanese encephalitis.
+
+Q 56 | his | History & Culture of Bengal
+Who among the following artists did not belong to the ‘Bengal School of Art’?
+(1) Nandalal Bose
+(2) Raja Ravi Varma
+(3) Abanindranath Tagore
+(4) Sunayani Devi
+= 2
+~ Raja Ravi Varma (1848–1906) of Travancore painted in the European academic oil-painting style and was not part of the Bengal School. The Bengal School was founded by Abanindranath Tagore; Nandalal Bose was his leading disciple, and Abanindranath's sister Sunayani Devi belonged to the same circle.
+
+Q 57 | his | Indian History & Culture
+Who among the following ancient Indian rulers protected his principality from Hun invasion?
+(1) Samudragupta
+(2) Skandagupta
+(3) Ashoka
+(4) Kanishka
+= 2
+~ The Gupta emperor Skandagupta (c. 455–467 CE) repulsed the Huna invasion and saved his empire; his Bhitari pillar inscription refers to his clash with the Hunas. Ashoka, Kanishka and Samudragupta ruled before the Huna attacks.
+
+Q 58 | sci | Life Science & Health
+Which one is the root vegetable?
+(1) Cauliflower
+(2) Cucumber
+(3) Gourd
+(4) Carrot
+= 4
+~ Carrot is a modified taproot (conical root) that stores food. Cauliflower is an inflorescence (flower head), while cucumber and gourd are fruits.
+
+Q 60 | cur | Sports, Awards & Misc.
+First woman to climb Mt. Everest—
+(1) Bachendri Pal
+(2) Sudipta Sengupta
+(3) Junko Tabei
+(4) Melissa Arnot
+= 3
+~ Junko Tabei of Japan became the first woman to reach the summit of Mount Everest, on 16 May 1975. Bachendri Pal (1984) was the first Indian woman to do so.
+
+Q 61 | geo | Indian & World Geography
+What is the name of the tropical cyclone originated in South China Sea?
+(1) Willy Willy
+(2) Hurricane
+(3) Typhoons
+(4) Tornado
+= 3
+~ Tropical cyclones of the western North Pacific, including the South China Sea, are called typhoons. In the Atlantic and eastern Pacific they are hurricanes and off north-west Australia willy-willies; a tornado is a small, violent land-based vortex, not a tropical cyclone.
+
+Q 62 | pol | Indian Polity
+Who was the first woman Chief Minister of India?
+(1) Pratibha Patil
+(2) Padmaja Naidu
+(3) Sucheta Kripalani
+(4) Amrit Kaur
+= 3
+~ Sucheta Kripalani became India's first woman Chief Minister when she headed Uttar Pradesh from October 1963 to March 1967. Pratibha Patil was the first woman President, Padmaja Naidu a Governor of West Bengal, and Rajkumari Amrit Kaur India's first Health Minister.
+
+Q 63 | apt | Arithmetic
+Two trains start their journeys with velocities of 60 km/hr and 30 km/hr respectively in opposite directions from two different stations 120 km apart. The train of higher velocity is stopped after 40 min of its departure. When will the other meet the first one?
+(1) At 160 minutes
+(2) At 130 minutes
+(3) At 140 minutes
+(4) None of the above
+= 1
+~ In 40 min the fast train covers 60 × 40/60 = 40 km and the slow one 30 × 40/60 = 20 km, leaving 120 − 60 = 60 km between them. The slow train covers this alone at 30 km/hr in 2 hr = 120 min, so they meet 40 + 120 = 160 minutes after the start.
+
+Q 65 | apt | Arithmetic
+From which least number if one subtracted 1, the difference is divisible by 12, 16 and 28?
+(1) 336
+(2) 335
+(3) 672
+(4) 337
+= 4
+~ The difference must be a common multiple of 12, 16 and 28; the least is their LCM = 2^4 × 3 × 7 = 336. So the required number = 336 + 1 = 337.
+
+Q 66 | sci | Physical Science
+Which of the following is not a metal?
+(1) Mercury
+(2) Zinc
+(3) Sulphur
+(4) Copper
+= 3
+~ Sulphur is a non-metal: a brittle yellow solid that does not conduct electricity. Mercury (the only metal that is liquid at room temperature), zinc and copper are metals.
+
+Q 67 | sci | Physical Science
+Which gas is most abundant in earth’s atmosphere?
+(1) Oxygen
+(2) Carbon dioxide
+(3) Nitrogen
+(4) Neon
+= 3
+~ Nitrogen makes up about 78% of dry air by volume, followed by oxygen (about 21%) and argon (about 0.93%). Carbon dioxide is only about 0.04%, and neon is a trace gas.
+
+Q 68 | sci | Physical Science
+Nikola Tesla invented what kind of electricity?
+(1) AC
+(2) DC
+(3) Static
+(4) Ball lightening
+= 1
+~ Nikola Tesla developed the alternating-current (AC) system — the polyphase AC induction motor and AC power transmission, taken up by Westinghouse. Direct current (DC) was championed by Thomas Edison, while static electricity and ball lightning are natural phenomena, not inventions.
+
+Q 69 | apt | Arithmetic
+What is 171 as a natural number?
+(1) Prime
+(2) Even
+(3) Irrational
+(4) Composite
+= 4
+~ 171 = 9 × 19 (its digit sum 1 + 7 + 1 = 9 shows it is divisible by 9), so it has factors other than 1 and itself and is composite. It is odd, and every natural number is rational.
+
+Q 70 | pol | Indian Polity
+First President of India who died while in office—
+(1) V.V. Giri
+(2) Fakhruddin Ali Ahmed
+(3) Jakir Hussain
+(4) Neelam S. Reddy
+= 3
+~ Dr Zakir Husain, India's third President, died in office on 3 May 1969 — the first President to do so; V. V. Giri then became Acting President. Fakhruddin Ali Ahmed was the second, dying in office on 11 February 1977.
+
+Q 71 | geo | Indian & World Geography
+Amazon basin of Brazil is situated in which climatic region?
+(1) Hot desert climatic region
+(2) Monsoon climatic region
+(3) Equatorial climatic region
+(4) None of the above
+= 3
+~ The Amazon basin lies on and near the Equator, so it has an equatorial climate: hot and humid all year with heavy daily convectional rain, which supports the dense tropical rainforest called selvas.
+
+Q 72 | apt | Arithmetic
+How much time shall a train of length 80 meter take to cross a 120 meter long platform when the train assumed the speed of 72 km/hr?
+(1) 12 seconds
+(2) 18 seconds
+(3) 14 seconds
+(4) 10 seconds
+= 4
+~ To cross a platform the train covers its own length plus the platform: 80 + 120 = 200 m. Speed = 72 × 5/18 = 20 m/s, so time = 200 ÷ 20 = 10 seconds.
+
+Q 73 | his | Indian History & Culture
+Tansen was a famous musician, in the court of
+(1) Akbar
+(2) Ballala Sena
+(3) Hussain Shah
+(4) Devapala
+= 1
+~ Tansen, the great dhrupad singer, came from the court of Raja Ramchandra of Rewa to the court of the Mughal emperor Akbar (c. 1562) and became one of Akbar's 'Navaratnas' (nine jewels). Ballala Sena, Hussain Shah and Devapala were rulers of Bengal in other periods.
+
+Q 74 | apt | Arithmetic
+Summation of unit place and ten place digits of a number is 9. After interchanging the digits the difference between the earlier and present numbers is 9. What is the number?
+(1) 72
+(2) 18
+(3) 54
+(4) 63
+= 3
+~ Let the digits be x (tens) and y (units): x + y = 9. Interchanging them changes the number by 9(x − y), so 9(x − y) = ±9 and x − y = ±1; with x + y = 9 this gives 54 or 45 (54 − 45 = 9). Only 54 is among the options; the others give differences of 45, 63 and 27.
+
+Q 75 | cur | Sports, Awards & Misc.
+What is the highest gallantry award of the Indian Army?
+(1) Paramvir Chakra
+(2) Ashoka Chakra
+(3) Mahavir Chakra
+(4) Vir Chakra
+= 1
+~ The Param Vir Chakra (instituted 1950) is India's highest military decoration for gallantry in the face of the enemy, followed by the Maha Vir Chakra and the Vir Chakra. The Ashoka Chakra is the highest peacetime gallantry award.
+
+Q 76 | cur | Sports, Awards & Misc.
+Rameshbabu Praggnanandhaa is a famous Indian
+(1) Hockey Player
+(2) Table Tennis Player
+(3) Chess Player
+(4) Volleyball Player
+= 3
+~ R. Praggnanandhaa (born 2005, Chennai) is an Indian chess grandmaster: he became a GM at the age of 12 and finished runner-up to Magnus Carlsen at the FIDE World Cup 2023.
+
+Q 77 | his | History & Culture of Bengal
+Who wrote ‘Ramcharit’?
+(1) Tulsidas
+(2) Krittibas Ojha
+(3) Haridas
+(4) Sandhyakar Nandi
+= 4
+~ Ramacharitam, a Sanskrit poem of the Pala period, was written by Sandhyakar Nandi; each verse has a double meaning, telling the story of Rama and of the Pala king Ramapala (including the Kaivarta revolt). Tulsidas wrote the Ramcharitmanas and Krittibas Ojha the Bengali Ramayana.
+
+Q 78 | his | Indian History & Culture
+Who was the founder of Ajivika Sect?
+(1) Mahavira
+(2) Goshala Makkhaliputta
+(3) Ajitanath
+(4) Sumatinatha
+= 2
+~ The Ajivika sect is traditionally ascribed to Makkhali Gosala (Goshala Makkhaliputta), a contemporary of Mahavira and the Buddha, who taught strict fatalism (niyati). Mahavira was the 24th Jain tirthankara, and Ajitanatha and Sumatinatha were the 2nd and 5th tirthankaras.
+
+Q 79 | cur | Sports, Awards & Misc.
+Which one among the following books was authored by Franz Kafka?
+(1) Psychology in Everyday Life
+(2) The Mother
+(3) The Old Man and the Sea
+(4) The Metamorphosis
+= 4
+~ The Metamorphosis (Die Verwandlung, 1915), in which Gregor Samsa wakes up as a giant insect, is a novella by the Prague-born German-language writer Franz Kafka. The Mother is by Maxim Gorky and The Old Man and the Sea by Ernest Hemingway.
+
+Q 80 | his | Indian History & Culture
+Who said, “Man is born free, but is everywhere in chains”?
+(1) J. J. Rousseau
+(2) Montesquieu
+(3) Diderot
+(4) J. P. Sartre
+= 1
+~ “Man is born free, and everywhere he is in chains” opens Chapter 1 of Jean-Jacques Rousseau's The Social Contract (1762), whose ideas inspired the French Revolution. Montesquieu wrote The Spirit of the Laws and Diderot edited the Encyclopédie.
+
+Q 81 | his | Indian History & Culture
+Who planted “Tree of Liberty” in Mysore?
+(1) Chikka Devaraja Wadiyar
+(2) Krishnaraja Wadiyar
+(3) Tipu Sultan
+(4) Hyder Ali
+= 3
+~ Tipu Sultan, inspired by the French Revolution, became a member of the Jacobin Club set up at his capital Srirangapatna and planted a ‘Tree of Liberty’ there; he sought French help against the British.
+
+Q 82 | sci | Physical Science
+In Bronze, Copper is mixed with
+(1) Tin
+(2) Iron
+(3) Silver
+(4) Gold
+= 1
+~ Bronze is an alloy of copper and tin (typically about 88% copper and 12% tin), harder than pure copper. Copper alloyed with zinc gives brass.
+
+Q 83 | his | History & Culture of Bengal
+Chhuti Khan, Governor of Chittagong during medieval period ordered his court poet to translate :–
+(1) Quran
+(2) Zend Avesta
+(3) Mahabharat
+(4) Bible
+= 3
+~ Chhuti Khan, son of Paragal Khan and governor of Chittagong under Sultan Alauddin Hussain Shah, had his court poet Srikar Nandi translate the Ashvamedha Parva of the Mahabharata into Bengali; the work is known as the ‘Chhutikhani Mahabharata’.
+
+Q 84 | apt | Arithmetic
+A medicine wholesaler allows a discount of 20% to his customer and still gains 15% on cost. If the maximum retail price is Rs. 550 then what is the purchase price of the medicine?
+(1) Rs. 440
+(2) Rs. 374
+(3) Rs. 380
+(4) None of the above
+= 4
+~ Selling price after a 20% discount on the MRP = 550 × 80/100 = Rs. 440. This gives a 15% gain, so cost price = 440 × 100/115 ≈ Rs. 382.61, which matches none of the given values.
+
+Q 85 | pol | Indian Polity
+Who among the following Prime Ministers of India was the longest serving Prime Minister?
+(1) Indira Gandhi
+(2) Rajiv Gandhi
+(3) Jawaharlal Nehru
+(4) Manmohan Singh
+= 3
+~ Jawaharlal Nehru was Prime Minister from 15 August 1947 until his death on 27 May 1964 — about 16 years 9 months, the longest tenure. Indira Gandhi served about 16 years in two spells, Manmohan Singh 10 years and Rajiv Gandhi 5 years.
+
+Q 86 | pol | Indian Polity
+Who was the Prime Minister of India, when the ‘Look East Policy’ of India formulated?
+(1) I. K. Gujral
+(2) H. D. Deve Gowda
+(3) Atal Bihari Vajpayee
+(4) P. V. Narasimha Rao
+= 4
+~ India's Look East Policy was launched in 1991–92 under Prime Minister P. V. Narasimha Rao to build economic and strategic ties with South-East Asia (ASEAN). In 2014 it was upgraded to the ‘Act East Policy’.
+
+Q 87 | apt | Arithmetic
+Choose the correct one (Use division algorithm):
+(1) 24 = 2.11 + 2
+(2) 24 = 2.10 + 4
+(3) 24 = 2.12 + 0
+(4) 24 = 2.9 + 6
+= 3
+~ The division algorithm writes a = bq + r with 0 ≤ r < b. Dividing 24 by 2 gives quotient 12 and remainder 0, so 24 = 2 × 12 + 0. In the other options the remainder (2, 4 or 6) is not less than the divisor 2. (The ‘.’ in the options means ×.)
+
+Q 88 | his | History & Culture of Bengal
+Name the first newspaper in India.
+(1) Bengal Gazette
+(2) Samvad Kaumudi
+(3) Mirat-ul-Akbar
+(4) Hindoo Patriot
+= 1
+~ Hicky's Bengal Gazette, started by James Augustus Hicky in Calcutta on 29 January 1780, was India's first newspaper. Sambad Kaumudi (1821) and Mirat-ul-Akhbar (1822) were Raja Rammohun Roy's papers, and the Hindoo Patriot began in 1853.
+
+Q 89 | geo | Indian & World Geography
+The Great Barrier Reef is located in
+(1) Austria
+(2) Antigua
+(3) Australia
+(4) Andaman
+= 3
+~ The Great Barrier Reef, the world's largest coral reef system (over 2,300 km long), lies in the Coral Sea off the coast of Queensland in north-east Australia; it is a UNESCO World Heritage Site.
+
+Q 90 | his | Indian History & Culture
+Who among the following never presided a Session of Indian National Congress?
+(1) Subhas Chandra Bose
+(2) Dadabhai Naoroji
+(3) Bal Gangadhar Tilak
+(4) Womesh Chandra Bonnerjee
+= 3
+~ Bal Gangadhar Tilak never presided over a Congress session. W. C. Bonnerjee presided over the first session (Bombay, 1885), Dadabhai Naoroji over the 1886, 1893 and 1906 sessions, and Subhas Chandra Bose over the Haripura session (1938).
+
+Q 91 | apt | Arithmetic
+In the fashion of ‘as many rows as saplings’ it is to be found that 6 saplings are redundant to plant 127 saplings in a garden. How many rows are in the garden?
+(1) 13
+(2) 15
+(3) 11
+(4) 7
+= 3
+~ With n rows of n saplings each, n^2 saplings are planted. Since 6 are left over, n^2 = 127 − 6 = 121, so n = √121 = 11 rows.
+
+Q 92 | apt | Arithmetic
+If the product of three positive continued proportional numbers is 343. Then what is the median proportional of the first and third?
+(1) 7
+(2) 13
+(3) 11
+(4) 9
+= 1
+~ If a, b, c are in continued proportion, then b^2 = ac and b is the mean (median) proportional of a and c. Their product abc = b × b^2 = b^3 = 343, so b = ∛343 = 7.
+
+Q 93 | apt | Arithmetic
+Ratio of two numbers is 5 : 13. If gcd of the numbers is 11, then what are the numbers?
+(1) 110, 286
+(2) 55, 143
+(3) 25, 65
+(4) 165, 294
+= 2
+~ Since 5 and 13 are co-prime, the numbers are 5k and 13k with gcd = k = 11, i.e. 55 and 143. (110 and 286 are in the same ratio but their gcd is 22.)
+
+Q 94 | sci | Physical Science
+Name the device used to measure wind speed.
+(1) Anemometer
+(2) Barometer
+(3) Manometer
+(4) Thermometer
+= 1
+~ An anemometer (commonly a cup anemometer) measures wind speed. A barometer measures atmospheric pressure, a manometer the pressure of gases or liquids in a container, and a thermometer temperature.
+
+Q 95 | apt | Arithmetic
+Rs. 100 is divided in such a way between A and B such that the rupees of A : the rupees of B = 9 : 11. What are the amount of rupees of A and B?
+(1) Rs. 35 and Rs. 65
+(2) Rs. 45 and Rs. 55
+(3) Rs. 43 and Rs. 57
+(4) Rs. 39 and Rs. 61
+= 2
+~ Total parts = 9 + 11 = 20. A gets 100 × 9/20 = Rs. 45 and B gets 100 × 11/20 = Rs. 55.
+
+Q 96 | wbi | Industrial Scenario & Potential of West Bengal
+India’s first paper mill was built at
+(1) Calcutta
+(2) Serampore
+(3) Naihati
+(4) Asansol
+= 2
+~ India's first modern paper mill was set up at Serampore (Hooghly district, West Bengal) by the Baptist missionaries of the Serampore Mission (William Carey and his colleagues) to supply paper for their printing press. The first large-scale paper mill came up later at Titagarh (1882).
+
+Q 97 | his | Indian History & Culture
+Who was the first British Chief Justice of Supreme Court during British period?
+(1) Sir Robert Chambers
+(2) Sir Edward Hyde
+(3) Sir Henry Russell
+(4) Sir Elijah Impey
+= 4
+~ The Regulating Act of 1773 set up the Supreme Court of Judicature at Fort William, Calcutta (1774), with Sir Elijah Impey as its first Chief Justice; its first puisne judges were Robert Chambers, Stephen Caesar Le Maistre and John Hyde.
+
+Q 98 | cur | Sports, Awards & Misc.
+12th Fail movie is based on the life event of which IPS officer?
+(1) Manoj Kumar Sharma
+(2) R. K. Handa
+(3) Nazrul Islam
+(4) Kiran Bedi
+= 1
+~ The 2023 Hindi film 12th Fail, directed by Vidhu Vinod Chopra and based on Anurag Pathak's book, tells the story of IPS officer Manoj Kumar Sharma, who failed Class 12 but later cleared the UPSC Civil Services Examination.
+
+Q 99 | his | Indian History & Culture
+Who remarked, “I am revolution and I destroyed the revolution”?
+(1) Otto von Bismarck
+(2) Napoleon Bonaparte
+(3) Benito Mussolini
+(4) Adolf Hitler
+= 2
+~ The remark is attributed to Napoleon Bonaparte: he rose to power as a product of the French Revolution and spread its ideas, yet he ended the revolutionary republic by making himself Emperor of the French in 1804.
+
+Q 100 | cur | National & International
+Who is known as father of Indian Space Programme?
+(1) S. Somnath
+(2) Satish Dhawan
+(3) Vikram Sarabhai
+(4) K. Radhakrishnan
+= 3
+~ Dr Vikram Sarabhai, who led INCOSPAR (1962), founded ISRO (1969) and set up the Thumba rocket launching station, is called the father of the Indian Space Programme. Satish Dhawan, K. Radhakrishnan and S. Somanath were later chairmen of ISRO.

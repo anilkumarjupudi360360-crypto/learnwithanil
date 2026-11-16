@@ -367,6 +367,24 @@
    "pages": 52
   }
  },
+ "dsssb": {
+  "j22": {
+   "bytes": 1762479,
+   "file": "dsssb-j22-c136786177.bin",
+   "key": "bk-dsssb-j22",
+   "name": "LearnWithAnil-DSSSB-JE-Electrical-2022-Question-Paper.pdf",
+   "orig": 2,
+   "pages": 96
+  },
+  "p22": {
+   "bytes": 1956018,
+   "file": "dsssb-p22-22e94155cc.bin",
+   "key": "bk-dsssb-p22",
+   "name": "LearnWithAnil-DSSSB-Patwari-2022-Question-Paper.pdf",
+   "orig": 2,
+   "pages": 98
+  }
+ },
  "gsssb-cce": {
   "c01": {
    "bytes": 5002942,
@@ -842,6 +860,24 @@
    "key": "bk-upsssc-inter-level-lps",
    "name": "LearnWithAnil-UPSSSC-Lower-Subordinate-Mains-2026-Question-Paper.pdf",
    "pages": 28
+  }
+ },
+ "wbpsc-ido": {
+  "i19": {
+   "bytes": 1086310,
+   "file": "wbpsc-ido-i19-61f5827970.bin",
+   "key": "bk-wbpsc-ido-i19",
+   "name": "LearnWithAnil-WBPSC-IDO-2019-Screening-Test-Screening-Test-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 13
+  },
+  "m23": {
+   "bytes": 646955,
+   "file": "wbpsc-ido-m23-05c8f9065e.bin",
+   "key": "bk-wbpsc-ido-m23",
+   "name": "LearnWithAnil-WBPSC-Miscellaneous-Services-Prelims-2023-Preliminary-Written-Test-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 22
   }
  }
 }

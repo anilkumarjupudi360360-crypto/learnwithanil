@@ -1408,6 +1408,103 @@ NEW['opsc-aso-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: Odisha OPS
     ])
 ASOF_PAGE['opsc-aso-notification-2026.html'] = '16 November 2026'
 
+NEW['wbpsc-ido-notification-2026.html'] = dict(   # Anil, 16 Nov 2026 ("ok continue": West Bengal IDO, apply till 26 Nov); facts from WBPSC's Advertisement No. 15/2024 (detailed advertisement and announcement of 5 Nov 2026), read on 16 Nov 2026
+    exam='wbpsc-ido', board='WBPSC', site='psc.wb.gov.in', crumb='WBPSC IDO Notification 2026', faq_asof='16 November 2026',
+    title='WBPSC IDO Notification 2026: 247 Posts, Apply by 26 November, Age, Fee, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='WBPSC Industrial Development Officer (IDO), Directorate of MSME, West Bengal, Advt. No. 15/2024: 247 posts, pay Level 10. Apply on psc.wb.gov.in from 6 to '
+         '26 November 2026. Age 18–44, fee Rs. 160, the 100-mark written test pattern and WBPSC IDO previous papers with answers.',
+    h1='WBPSC IDO notification 2026: 247 posts, apply by 26 November',
+    lede='The West Bengal Public Service Commission (WBPSC) has advertised 247 posts of Industrial Development Officer (IDO) in the Directorate of Micro, Small & '
+         'Medium Enterprises under the MSME & Textiles Department (Advertisement No. 15/2024; detailed advertisement of 5 November 2026). Online applications are '
+         'open on psc.wb.gov.in from 6 to 26 November 2026; WBPSC will announce the screening test date. Below: the key dates, the vacancies, who can apply, the '
+         'exam pattern and the WBPSC IDO previous papers to practise.',
+    pdf='https://psc.wb.gov.in', pdfname='WBPSC Advertisement No. 15/2024, psc.wb.gov.in',
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement', 'No. 15/2024 (indicative advertisement of 24 December 2024; detailed advertisement 5 November 2026)'),
+        ('Online applications', '6 to 26 November 2026 (up to 3 pm) on psc.wb.gov.in'),
+        ('Last date for the fee', '26 November 2026 (up to 3 pm), online only'),
+        ('Edit window', '27 November to 2 December 2026 (up to 3 pm)'),
+        ('Written test (screening)', 'Date to be announced by WBPSC'),
+      ]),
+      ('Vacancies (247)', 'table+', (['Category', 'Posts'], [
+        ('SC', '52'), ('ST', '14'), ('OBC (non-creamy layer)', '18'), ('EWS', '25'), ('Unreserved', '138'), ('Total', '247')])),
+      ('', 'note', 'Within these, 9 posts are for persons with benchmark disabilities (7 unreserved, 2 SC) and 5 for meritorious sports persons. Pay: Level 10 '
+                   '(Rs. 32,100 – 82,900) of the WBS (ROPA) Rules, 2019, with allowances. Reserved posts are for candidates of West Bengal only.'),
+      ('Exam pattern', 'table+', (['Part', 'Subjects', 'Marks'], [
+        ('Part I: written test (100 questions, 1 hour 30 minutes)', 'English 15 · Industrial Safety/Security Measures & Pollution Control 10 · Environmental Issues '
+         '(Energy Conservation & Renewable Energy) 15 · Physical Science 15 · Elementary Computer Knowledge 10 · Industrial Scenario & Industrial Potential in '
+         'West Bengal 15 · Mental Ability & Arithmetic 20', '100'),
+        ('Part II: interview', 'Personality test (Bengali reading, writing and speaking is tested here)', '15'),
+      ])),
+      ('', 'note', 'All written questions are multiple choice, 1 mark each, with 0.25 cut for each wrong answer. The final merit list is on Part I and Part II '
+                   'together (115 marks); the minimum aggregate is 40% for UR, EWS and MSP, 38% for OBC, 35% for SC and 30% for ST and PwBD.'),
+      ('Who can apply', 'list', [
+        'A degree from a recognised university, or a diploma in engineering or technology from a recognised university or institution.',
+        'Age: 18 to 44 years on 1 January 2024; 5 years more for SC and ST and 3 years more for OBC (non-creamy layer) candidates of West Bengal, and up to 45 '
+        'years for persons with disabilities (40% or more).',
+        'Ability to read, write and speak Bengali (not required for candidates whose mother tongue is Nepali).',
+        'Fee: Rs. 160 plus service charges, online only; no fee for SC and ST candidates of West Bengal and persons with benchmark disabilities.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for WBPSC IDO 2026?', '26 November 2026 (3 pm) on psc.wb.gov.in, for both the application and the fee. Applications can be edited from 27 November to 2 December 2026.'),
+      ('How many posts are there in WBPSC IDO 2026?', '247 Industrial Development Officer posts in the Directorate of MSME, West Bengal: 52 SC, 14 ST, 18 OBC, 25 EWS and 138 unreserved.'),
+      ('What is the WBPSC IDO exam pattern?', 'A 100-question, 100-mark written test in 1½ hours (English, Industrial Safety & Pollution Control, Environment & Energy, Physical Science, Computer, Industry in West Bengal, Mental Ability & Arithmetic) with 0.25 cut for each wrong answer, then a 15-mark interview.'),
+      ('What is the age limit for WBPSC IDO?', '18 to 44 years on 1 January 2024, with 5 more years for SC and ST and 3 more for OBC candidates of West Bengal.'),
+      ('When is the WBPSC IDO exam?', 'WBPSC has not announced the date yet; it says the date of the screening test will be announced.'),
+      ('Where can I practise WBPSC IDO previous papers?', 'On Learn with Anil: the WBPSC IDO screening test of 2019 and the WBPSC Miscellaneous (Prelims) 2023 paper in English and Bengali, with WBPSC\'s keys and explanations.'),
+    ])
+ASOF_PAGE['wbpsc-ido-notification-2026.html'] = '16 November 2026'
+
+NEW['dsssb-mts-je-notification-2026.html'] = dict(   # Anil, 16 Nov 2026 ("ok continue"); facts from DSSSB's Vacancy Notice / Advertisement No. 06/2026 of 6 Nov 2026 (Combined Examinations 2026), read on 16 Nov 2026
+    exam='dsssb', board='DSSSB', site='dsssb.delhi.gov.in', crumb='DSSSB MTS & JE Notification 2026', faq_asof='16 November 2026',
+    title='DSSSB MTS & JE Notification 2026: 1,260 Posts, Apply by 11 December, Age, Fee, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='DSSSB Advt. No. 06/2026: 1,075 Multi-Tasking Staff (MTS, MTS-Aaya, MTS General Duty) and 185 Junior Engineer (Electric/Electrical) posts in Delhi. '
+         'Apply on dsssbonline.nic.in from 12 November to 11 December 2026. Age, fee, exam pattern and DSSSB previous papers with answers.',
+    h1='DSSSB MTS & JE notification 2026: 1,260 posts, apply by 11 December',
+    lede='The Delhi Subordinate Services Selection Board (DSSSB) has advertised 1,260 posts in its Combined Examinations, 2026 (Advertisement No. 06/2026, '
+         '6 November 2026): 1,075 Multi-Tasking Staff posts (Post Code 810/26) and 185 Junior Engineer (Electric/Electrical) posts (Post Code 809/26) in '
+         'departments of the Government of NCT of Delhi and its bodies. Online applications are open on dsssbonline.nic.in from 12 November to 11 December 2026. '
+         'Below: the dates, posts, eligibility, exam pattern and the DSSSB previous papers to practise.',
+    pdf='https://dsssb.delhi.gov.in', pdfname='DSSSB Advt. No. 06/2026, dsssb.delhi.gov.in > DSSSB Vacancies',
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement', 'Vacancy Notice / Advt. No. 06/2026, Combined Examinations 2026, dated 6 November 2026'),
+        ('Online applications', '12 November 2026 (12 noon) to 11 December 2026 (11:59 pm) on dsssbonline.nic.in'),
+        ('Exam dates', 'To be announced on the Board\'s website'),
+      ]),
+      ('Posts (1,260)', 'table+', (['Post (code)', 'Departments', 'Posts', 'Pay'], [
+        ('MTS (General Duty)', 'Directorate of Education', '757', 'Level 1 (Rs. 18,000 – 56,900)'),
+        ('MTS – Aaya (female)', 'Directorate of Education', '239', 'Level 1'),
+        ('MTS', 'Trade & Taxes 26, DUSIB 20, Weights & Measures 19, Land & Building 7, Higher Education 3, Accounts 2, Chief Electoral Officer 2', '79', 'Level 1'),
+        ('Junior Engineer (Electric/Electrical), 809/26', 'Delhi Transco 75, NDMC 67, MCD 26, DUSIB 14, Agricultural Marketing Board 3', '185', 'Level 6 (Rs. 35,400 – 1,12,400); Delhi Transco Level 8'),
+      ])),
+      ('', 'note', 'By category, all posts: UR 537, OBC 325, SC 181, ST 94, EWS 123 (including 52 for persons with disabilities, 107 for ex-servicemen and 52 '
+                   'for sportspersons). The vacancies are tentative, as reported by the departments.'),
+      ('Exam pattern', 'table+', (['Exam', 'What it has', 'Questions · time'], [
+        ('MTS (one tier)', 'General Awareness, General Intelligence & Reasoning, Arithmetical & Numerical Ability, Hindi, English — 40 each', '200 (200 marks) · 2 hours'),
+        ('JE Tier-I', 'Section A: the same five general parts, 20 each · Section B: 100 questions on Electrical Engineering', '200 (200 marks) · 2 hours'),
+        ('JE Tier-II', 'Electrical Engineering: Part I 100 one-mark questions, Part II 50 two-mark application questions', '150 (200 marks) · 2½ hours'),
+      ])),
+      ('', 'note', 'Wrong answers cost 0.25 mark (0.50 for a two-mark question). Questions are in Hindi and English, except the language parts. For JE, Tier-I '
+                   'only shortlists candidates for Tier-II, and the final merit list is on Tier-II marks.'),
+      ('Who can apply', 'list', [
+        'MTS: Matriculation (Class 10) pass; age 18 to 27 years.',
+        'JE: a degree or diploma in Electrical Engineering (some departments ask for 2 years\' experience with the diploma); age 18 to 27 years '
+        '(18 to 32 for the NDMC posts).',
+        'Age relaxation for reserved categories, persons with disabilities, ex-servicemen and Delhi government employees as given in the advertisement.',
+        'Fee: Rs. 100 through SBI e-pay; no fee for women, SC, ST, persons with disabilities and ex-servicemen.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for DSSSB MTS and JE 2026?', '11 December 2026 (till 11:59 pm) on dsssbonline.nic.in. Applications opened on 12 November 2026.'),
+      ('How many DSSSB MTS posts are there in 2026?', '1,075 Multi-Tasking Staff posts (Post Code 810/26), most of them in the Directorate of Education (757 MTS General Duty and 239 MTS-Aaya).'),
+      ('How many DSSSB JE Electrical posts are there?', '185 Junior Engineer (Electric/Electrical) posts (Post Code 809/26) in Delhi Transco, NDMC, MCD, DUSIB and the Delhi Agricultural Marketing Board.'),
+      ('What is the DSSSB MTS exam pattern?', 'One 2-hour test of 200 questions for 200 marks: General Awareness, Reasoning, Arithmetic, Hindi and English, 40 each, with 0.25 cut for each wrong answer.'),
+      ('What is the age limit for DSSSB MTS 2026?', '18 to 27 years, with relaxation for reserved categories as per the advertisement.'),
+      ('Where can I practise DSSSB previous papers?', 'On Learn with Anil: the DSSSB JE (Electrical) and Patwari papers of 2022 with DSSSB\'s own answers, in Hindi and English with explanations.'),
+    ])
+ASOF_PAGE['dsssb-mts-je-notification-2026.html'] = '16 November 2026'
+
 
 def apply(NOTIFS):
     for rel, f in FAQS.items():

@@ -28,20 +28,22 @@ FACES = [('Source Sans 3', 'source-sans-3-latin', 400), ('Source Sans 3', 'sourc
          ('Noto Sans Tamil', 'noto-sans-tamil-tamil', 400), ('Noto Sans Tamil', 'noto-sans-tamil-tamil', 600),
          ('Noto Sans Kannada', 'noto-sans-kannada-kannada', 400), ('Noto Sans Kannada', 'noto-sans-kannada-kannada', 600),
          ('Noto Sans Gujarati', 'noto-sans-gujarati-gujarati', 400), ('Noto Sans Gujarati', 'noto-sans-gujarati-gujarati', 600),
-         ('Noto Sans Oriya', 'noto-sans-oriya-oriya', 400), ('Noto Sans Oriya', 'noto-sans-oriya-oriya', 600)]
+         ('Noto Sans Oriya', 'noto-sans-oriya-oriya', 400), ('Noto Sans Oriya', 'noto-sans-oriya-oriya', 600),
+         ('Noto Sans Bengali', 'noto-sans-bengali-bengali', 400), ('Noto Sans Bengali', 'noto-sans-bengali-bengali', 600)]
 RANGES = {'latin': 'U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+20B9,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD',
           'latin-ext': 'U+0100-024F,U+20A0-20CF,U+2C60-2C7F,U+A720-A7FF', 'telugu': 'U+0C00-0C7F,U+200C-200D,U+25CC',
           'devanagari': 'U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF',
           'tamil': 'U+0964-0965,U+0B82-0BFA,U+200C-200D,U+20B9,U+25CC',
           'kannada': 'U+0951-0952,U+0964-0965,U+0C80-0CF3,U+1CD0,U+1CD2-1CD3,U+1CDA,U+1CF2,U+1CF4,U+200C-200D,U+20B9,U+25CC,U+A830-A835',
           'gujarati': 'U+0951-0952,U+0964-0965,U+0A80-0AFF,U+200C-200D,U+20B9,U+25CC,U+A830-A839',
-          'oriya': 'U+0951-0952,U+0964-0965,U+0B01-0B77,U+1CDA,U+1CF2,U+200C-200D,U+20B9,U+25CC'}
+          'oriya': 'U+0951-0952,U+0964-0965,U+0B01-0B77,U+1CDA,U+1CF2,U+200C-200D,U+20B9,U+25CC',
+          'bengali': 'U+0951-0952,U+0964-0965,U+0980-09FE,U+1CD0,U+1CD2,U+1CD5-1CD6,U+1CD8,U+1CE1,U+1CEA,U+1CED,U+1CF2,U+1CF5-1CF7,U+200C-200D,U+20B9,U+25CC,U+A8F1'}
 
 
 def font_css():
     out = []
     for fam, f, w in FACES:
-        sub = re.search(r'-(latin-ext|latin|telugu|devanagari|tamil|kannada|gujarati|oriya)$', f).group(1)
+        sub = re.search(r'-(latin-ext|latin|telugu|devanagari|tamil|kannada|gujarati|oriya|bengali)$', f).group(1)
         out.append(f"@font-face{{font-family:'{fam}';font-weight:{w};src:url('file://{FONTS}/{f}-{w}-normal.woff2') format('woff2');unicode-range:{RANGES[sub]}}}")
     return '\n'.join(out)
 
@@ -56,6 +58,7 @@ body{margin:0;font:10.5pt/1.45 'Source Sans 3',sans-serif;color:#0D1830}
 [lang=mr]{font-family:'Noto Sans Devanagari','Source Sans 3',sans-serif;line-height:1.6}
 [lang=gu]{font-family:'Noto Sans Gujarati','Source Sans 3',sans-serif;line-height:1.6}
 [lang=or]{font-family:'Noto Sans Oriya','Source Sans 3',sans-serif;line-height:1.6}
+[lang=bn]{font-family:'Noto Sans Bengali','Source Sans 3',sans-serif;line-height:1.6}
 [lang=hi]{font-family:'Noto Sans Devanagari','Source Sans 3',sans-serif;line-height:1.6}
 a{color:#1440B8}
 .top{border-bottom:2.5pt solid #1846C7;padding-bottom:8pt;margin-bottom:10pt}

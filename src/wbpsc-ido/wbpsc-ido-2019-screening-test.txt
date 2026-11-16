@@ -1,0 +1,911 @@
+# WBPSC Preliminary Screening Test for Industrial Development Officer (IDO), Advt. No. 10/2019, 22 December 2019, booklet SCI/19, Series A (WBPSC's own booklet, 100 questions, English only); answers: WBPSC's answer key of 27 December 2019
+
+Q 1 | sci | Life Science & Health
+Find the similarity in the following common cold, ringworm, conjunctivities, whooping cough.
+(1) All of them are non-communicable diseases
+(2) All of them do not respond to curative treatment
+(3) All of them are contagious
+(4) No preventive measure is available for all of them
+= 3
+~ Common cold (virus), ringworm (fungus), conjunctivitis (virus/bacteria) and whooping cough (bacterium Bordetella pertussis) all spread from person to person by contact or droplets, so all are contagious. They are communicable, they can be treated, and whooping cough is prevented by the DPT vaccine.
+
+Q 2 | sci | Life Science & Health
+Thyroid gland is situated in our
+(1) Liver
+(2) Neck
+(3) Arm-pits
+(4) None of the above
+= 2
+~ The thyroid is a butterfly-shaped endocrine gland in the front of the neck, wrapped around the trachea just below the larynx. It secretes thyroxine, which controls the body's metabolic rate.
+
+Q 3 | sci | Physical Science
+Who discovered ‘Boson’ particle?
+(1) Meghnad Saha
+(2) Satyendra Nath Bose
+(3) C. V. Raman
+(4) J. C. Bose
+= 2
+~ Bosons are named after Satyendra Nath Bose, whose 1924 work on the statistics of photons (Bose–Einstein statistics) describes this class of particles with whole-number spin, such as photons and the Higgs boson.
+
+Q 4 | apt | Arithmetic
+If the length of a rectangle is increased by 20% and the breadth is reduced by 20%, what will be the effect on its area?
+(1) 4% increase
+(2) 6% increase
+(3) 4% decrease
+(4) None of the above
+= 3
+~ New area = 1.2L × 0.8B = 0.96 LB, i.e. 4% less. Shortcut: net change = x − y − xy/100 = 20 − 20 − (20×20)/100 = −4%, a 4% decrease.
+
+Q 5 | sci | Life Science & Health
+Which vitamin is called ‘Riboflavin’?
+(1) Vitamin B1
+(2) Vitamin B2
+(3) Vitamin B12
+(4) Vitamin C
+= 2
+~ Riboflavin is vitamin B2; its deficiency causes cracks at the corners of the mouth and a sore tongue. Vitamin B1 is thiamine, B12 is cobalamin and vitamin C is ascorbic acid.
+
+Q 6 | eng | Vocabulary
+Identify the Synonym.
+Absolve
+(1) Hate
+(2) Conspire
+(3) Pardon
+(4) Accuse
+= 3
+~ To absolve is to free someone from blame, guilt or obligation, i.e. to pardon or forgive. 'Accuse' is its opposite.
+
+Q 7 | his | Indian History & Culture
+Which of the following is not an example of literature of vedic tradition?
+(1) Vedas
+(2) Puranas
+(3) Vedangas
+(4) Purvas
+= 2
+~ Standard GK texts list the Vedangas, Smritis, epics and Puranas under 'literature of the Vedic tradition', along with the Vedas themselves. The Purvas, however, are the 14 ancient canonical texts of Jainism. WBPSC's key marks Puranas, presumably because they were compiled in the post-Vedic period. (Official WBPSC key; some sources differ.)
+
+Q 8 | comp | Computer Fundamentals
+What does GSM stand for?
+(1) Geographic System for Mobility
+(2) Global System for Mobile Communications
+(3) Great System for Mobiles
+(4) Grand System for Mobility
+= 2
+~ GSM stands for Global System for Mobile Communications, the European-developed standard for 2G digital cellular networks, which uses TDMA and SIM cards.
+
+Q 9 | apt | Arithmetic
+P and Q can do a work in 12 days, Q and R in 15 days, R and P in 20 days. Find in what time P will do it alone?
+(1) 30 days
+(2) 20 days
+(3) 24 days
+(4) 60 days
+= 1
+~ Adding the three pairs: 2(P + Q + R) = 1/12 + 1/15 + 1/20 = 12/60 = 1/5, so P + Q + R = 1/10 per day. P = 1/10 − (Q + R) = 1/10 − 1/15 = 1/30, so P alone takes 30 days.
+
+Q 10 | sci | Physical Science
+One horse power is equal to
+(1) 736 Watts
+(2) 746 Watts
+(3) 748 Watts
+(4) 756 Watts
+= 2
+~ One (mechanical) horsepower is about 745.7 W, taken as 746 W. The metric horsepower is about 735.5 W, but the standard answer is 746 W.
+
+Q 11 | sci | Physical Science
+The electric bulb was invented by
+(1) Alexander Graham Bell
+(2) Michael Faraday
+(3) Edison
+(4) Benjamin Franklin
+= 3
+~ Thomas Alva Edison developed the first commercially practical incandescent electric bulb with a carbon filament in 1879. Bell invented the telephone, Faraday discovered electromagnetic induction, and Franklin is known for the lightning rod.
+
+Q 12 | pol | Indian Economy
+How many banks were nationalised in India in the year 1969?
+(1) 11
+(2) 12
+(3) 13
+(4) 14
+= 4
+~ On 19 July 1969, the Indira Gandhi government nationalised 14 major commercial banks, each with deposits above ₹50 crore. Six more banks were nationalised in 1980.
+
+Q 13 | eng | Vocabulary
+Choose the word that does not belong to the group.
+(1) Gainsay
+(2) Deny
+(3) Aver
+(4) Rebuff
+= 3
+~ Gainsay, deny and rebuff all mean to contradict, refuse or reject. 'Aver' means to state firmly or assert, which is the opposite idea, so it is the odd one out.
+
+Q 14 | cur | Sports, Awards & Misc.
+Which of the following award is associated with Agriculture?
+(1) Bor Lang Award
+(2) Shanti Swaroop Bhatnagar
+(3) Arjun Award
+(4) Vyas Samman
+= 1
+~ The Borlaug Award, named after Green Revolution scientist Norman Borlaug, honours Indian agricultural scientists. The Shanti Swarup Bhatnagar Prize is for science and technology, the Arjuna Award is for sports, and the Vyas Samman is for Hindi literature.
+
+Q 15 | pol | Indian Polity
+The 44th amendment in the Constitution of India removed which one of the following rights from the category of Fundamental Rights?
+(1) Freedom of Speech
+(2) Equality before Law
+(3) Right to Property
+(4) Freedom of Religion
+= 3
+~ The 44th Amendment Act, 1978 deleted the right to property (Articles 19(1)(f) and 31) from Part III. It is now only a constitutional (legal) right under Article 300A.
+
+Q 16 | geo | Indian & World Geography
+Fertile black soil, most suitable for the cultivation of cotton is known as
+(1) Bhangar
+(2) Bhabar
+(3) Lom
+(4) Regur
+= 4
+~ Black soil, formed from the weathering of Deccan Trap basalt, is called regur or black cotton soil. It is rich in clay and holds moisture well, which makes it ideal for cotton. Bhangar is old alluvium, and Bhabar is the pebbly belt at the foot of the Shiwaliks.
+
+Q 17 | his | Indian History & Culture
+The ‘Sepoy Mutiny’ first started in
+(1) Mirat
+(2) Barrackpur
+(3) Bihar
+(4) Nagpur
+= 2
+~ The first armed outbreak of 1857 took place at Barrackpore, near Kolkata, on 29 March 1857, when sepoy Mangal Pandey attacked his officers. The full-scale revolt broke out later at Meerut on 10 May 1857.
+
+Q 18 | sci | Physical Science
+Which of the following is not an alloy of copper?
+(1) Bronze
+(2) Brass
+(3) Solder
+(4) Gun metal
+= 3
+~ Solder is an alloy of tin and lead, with no copper. Bronze is copper and tin, brass is copper and zinc, and gun metal is copper, tin and zinc.
+
+Q 19 | apt | Reasoning
+If 4 = 104, 5 = 105, then 12 = ?
+(1) 1012
+(2) 1011
+(3) 9012
+(4) 1021
+= 1
+~ Each number is coded by writing '10' before it: 4 → 10|4 = 104 and 5 → 10|5 = 105. So 12 → 10|12 = 1012.
+
+Q 20 | geo | Indian & World Geography
+Which of the following is not a commercial crop?
+(1) Jute
+(2) Cotton
+(3) Tea
+(4) Wheat
+= 4
+~ Jute and cotton (fibre crops) and tea (a plantation crop) are grown mainly for sale and industry. Wheat is a food crop (cereal).
+
+Q 21 | sci | Physical Science
+Methylated spirit is a mixture of
+(1) Methyl alcohol and acetic acid
+(2) Methyl alcohol and ethyl alcohol
+(3) Ethyl alcohol and pyridine
+(4) Methyl alcohol and Pyridine
+= 2
+~ Methylated spirit is ethyl alcohol (ethanol) made unfit for drinking by adding poisonous methyl alcohol (methanol), i.e. denatured spirit. It is used as a fuel and solvent.
+
+Q 22 | geo | Indian & World Geography
+The ‘Khetri Project’ in Rajasthan is famous for the production of
+(1) Zinc
+(2) Steel
+(3) Copper
+(4) Aluminium
+= 3
+~ Khetri in the Jhunjhunu district of Rajasthan is a major copper mining belt. Hindustan Copper Ltd runs its Khetri Copper Complex there.
+
+Q 23 | apt | Arithmetic
+If 10% of an electricity bill is deducted, Rs. 45 is still to be paid. How much was the Bill?
+(1) Rs. 55
+(2) Rs. 50
+(3) Rs. 45
+(4) Rs. 40
+= 2
+~ After a 10% deduction, 90% of the bill = Rs. 45. So the bill = 45 × 100/90 = Rs. 50.
+
+Q 24 | his | Indian History & Culture
+Gautam Buddha spread his religion in the language of
+(1) Sanskrit
+(2) Magadhi
+(3) Pali
+(4) Sauraseni
+= 3
+~ The Buddha preached in the everyday language of the people rather than in Sanskrit. His teachings were preserved in Pali, the language of the Tripitaka, so Pali is the accepted answer.
+
+Q 25 | sci | Physical Science
+Gasoline is obtained from crude petroleum by
+(1) fractional distillation
+(2) fractional crystallisation
+(3) sublimation
+(4) evaporation
+= 1
+~ Crude oil is a mixture of hydrocarbons with different boiling points. In a fractionating column, it is separated by fractional distillation into fractions such as petroleum gas, gasoline (petrol), kerosene and diesel.
+
+Q 26 | eng | Comprehension & Usage
+Complete the sentence:
+Although adolescent maturational and developmental states occur in an orderly sequence, their timing ______ with regard to onset and duration.
+(1) lasts
+(2) varies
+(3) falters
+(4) accelerates
+= 2
+~ 'Although' sets up a contrast with 'occur in an orderly sequence'. The fixed order is contrasted with timing that is not fixed, so the timing 'varies' with regard to onset and duration.
+
+Q 27 | his | Indian History & Culture
+Out of the following remains excavated in Indus Valley, which one indicates the commercial and economic development?
+(1) Pottery
+(2) Seals
+(3) Boats
+(4) Houses
+= 2
+~ Harappan seals were used to stamp goods and trade bales, and they have been found as far away as Mesopotamia. They are the main evidence of the civilisation's organised trade and commerce.
+
+Q 28 | sci | Physical Science
+Mixture of Calcium Aluminate and Calcium Silicate is called
+(1) Glass
+(2) Cement
+(3) Mortar
+(4) Concrete
+= 2
+~ Portland cement consists mainly of calcium silicates and calcium aluminates, formed by heating limestone with clay. Mortar is cement mixed with sand and water, and concrete also contains gravel.
+
+Q 29 | apt | Arithmetic
+HCF and LCM of two numbers are 16 and 240 respectively. If one of the number is 48, the other number is
+(1) 32
+(2) 64
+(3) 80
+(4) 160
+= 3
+~ Product of two numbers = HCF × LCM. So the other number = (16 × 240)/48 = 3840/48 = 80. Check: HCF(48, 80) = 16 and LCM = 240.
+
+Q 30 | eng | Vocabulary
+Identify the Synonym.
+Abate
+(1) Confusing
+(2) Forget
+(3) Decrease
+(4) Abase
+= 3
+~ To abate is to become less intense or to reduce, e.g. 'the storm abated'. Its synonym is decrease. 'Abase' (to humiliate) only looks similar.
+
+Q 31 | sci | Physical Science
+The working of the human eye is like that of a
+(1) Camera
+(2) Telescope
+(3) Microscope
+(4) Periscope
+= 1
+~ Like a camera, the eye uses a convex lens to form a real, inverted image on a light-sensitive screen (the retina, like the film or sensor). The iris and pupil control the light entering, just as a camera's diaphragm and aperture do.
+
+Q 32 | geo | Indian & World Geography
+Isobars are lines displaying areas of equal
+(1) humidity
+(2) temperature
+(3) rainfall
+(4) atomospheric pressure
+= 4
+~ Isobars join places having equal atmospheric pressure (reduced to sea level) on a weather map. Isotherms join places of equal temperature, and isohyets join places of equal rainfall.
+
+Q 33 | pol | Indian Economy
+Which country is the largest trading partner of India?
+(1) USA
+(2) Japan
+(3) China
+(4) England
+= 3
+~ China was India's largest trading partner from 2013-14 to 2017-18, and WBPSC's key is based on this. However, commerce ministry data for 2018-19 showed the USA (bilateral goods trade of $87.95 billion) narrowly ahead of China (about $87 billion). (Official WBPSC key; some sources differ.)
+
+Q 34 | apt | Arithmetic
+If p, q, r, s and t are five consequitive odd numbers, their average is
+(1) 5(p + 4)
+(2) 9(p + 4)/5
+(3) p + 4
+(4) (p + t)/4
+= 3
+~ Consecutive odd numbers differ by 2, so they are p, p + 2, p + 4, p + 6 and p + 8. Their sum is 5p + 20, so the average = (5p + 20)/5 = p + 4, i.e. the middle number r.
+
+Q 35 | geo | Indian & World Geography
+Which of the following cities is spread over two continents?
+(1) Cairo
+(2) Istanbul
+(3) Tripoli
+(4) Jerusalem
+= 2
+~ Istanbul (Turkey) lies on both banks of the Bosphorus Strait. Its western part is in Europe and its eastern part is in Asia. Cairo and Tripoli are in Africa, and Jerusalem is in Asia.
+
+Q 36 | geo | Indian & World Geography
+What is ‘Mixed Farming’?
+(1) Growing rabi as well as Kharif crops
+(2) Growing several crops
+(3) Growing several crops and also raising livestock
+(4) Growing sugarcane as well as cereal
+= 2
+~ In standard geography texts, mixed farming means growing crops together with rearing livestock on the same farm, as in option C. Growing several crops together is called mixed cropping. WBPSC's key, however, gives 'Growing several crops'. (Official WBPSC key; some sources differ.)
+
+Q 37 | sci | Physical Science
+The first gasoline-run car engine was developed by
+(1) Henry Ford
+(2) Carl Benz
+(3) Hugh Chalmers
+(4) Horace Elgin Dodge
+= 2
+~ Karl (Carl) Benz built the Benz Patent-Motorwagen (patented in 1886), the first practical car powered by a petrol (gasoline) internal-combustion engine. Henry Ford later popularised cars through mass production of the Model T (1908).
+
+Q 38 | eng | Comprehension & Usage
+Complete the sentence:
+______, shy dogs tend to live much longer than bold, aggressive dogs.
+(1) Febrile
+(2) Captivated
+(3) Docile
+(4) Ferocious
+= 2
+~ The blank needs a word that goes with 'shy' and contrasts with 'bold, aggressive'. 'Docile' (gentle, easily controlled) fits, while 'captivated' (charmed) does not suit the sense and 'ferocious' contradicts it. WBPSC's key, however, gives 'Captivated'. (Official WBPSC key; some sources differ.)
+
+Q 39 | eng | Comprehension & Usage
+Complete the sentence:
+New research suggests that as threatening as they may feel, ______ relationships can often enhance social and emotional development more than they impede it.
+(1) illicit
+(2) harmonious
+(3) cosmic
+(4) cross-cultural
+= 4
+~ The relationships must be ones that can feel threatening yet still help development. Relationships across cultures can feel unfamiliar or threatening but broaden social and emotional growth, so 'cross-cultural' fits. 'Harmonious' relationships would not feel threatening, and 'illicit' and 'cosmic' do not fit the sense.
+
+Q 40 | apt | Arithmetic
+A man purchases two watches at Rs. 560. He sells one at 15% profit and other at 10% loss. Then he neither gains nor lose. The cost price of each watch is
+(1) Rs. 224, Rs. 336
+(2) Rs. 220, Rs. 340
+(3) Rs. 234, Rs. 326
+(4) Rs. 244, Rs. 316
+= 1
+~ Let the first watch cost x, so the second costs 560 − x. No gain or loss means the profit equals the loss: 0.15x = 0.10(560 − x), so 0.25x = 56 and x = Rs. 224. The other watch costs 560 − 224 = Rs. 336.
+
+Q 41 | pol | Indian Economy
+All taxes come under
+(1) Revenue Receipt
+(2) Capital Gains
+(3) Public Borrowing
+(4) Both (A) and (B)
+= 1
+~ In the government budget, tax revenue (direct and indirect taxes) and non-tax revenue together form revenue receipts, which neither create a liability nor reduce assets. Public borrowing is a capital receipt, and capital gains is only one kind of income that is taxed.
+
+Q 42 | comp | Computer Fundamentals
+The full name for LAN associated with computer networking is
+(1) Land Area Network
+(2) Local Area Network
+(3) Local and non-local
+(4) Land and Network
+= 2
+~ LAN stands for Local Area Network, a network that links computers within a small area such as an office, building or campus. MAN (Metropolitan) and WAN (Wide Area Network) cover larger areas.
+
+Q 43 | his | Indian History & Culture
+Who amongst the following Englishmen, first translated ‘Bhagvad Gita’ into English?
+(1) William Jones
+(2) Charles Wilkins
+(3) Alexander Cunningham
+(4) John Marshall
+= 2
+~ Charles Wilkins published the first English translation of the Bhagavad Gita in 1785, with Warren Hastings' encouragement. William Jones founded the Asiatic Society (1784) and translated Abhijnanashakuntalam. Cunningham and Marshall were archaeologists.
+
+Q 44 | eng | Vocabulary
+Choose the word that does not belong to the group.
+(1) Puzzle
+(2) Nuzzle
+(3) Enigma
+(4) Riddle
+= 2
+~ Puzzle, enigma and riddle all mean something mysterious or hard to solve. To nuzzle is to rub or push gently with the nose, as animals do, so it is the odd one out.
+
+Q 45 | apt | Arithmetic
+By selling an article for Rs. 450, a man loses 25%. At what price he will sell in order to gain 25%?
+(1) Rs. 600
+(2) Rs. 650
+(3) Rs. 700
+(4) Rs. 750
+= 4
+~ At a 25% loss, SP = 75% of CP, so CP = 450 × 100/75 = Rs. 600. To gain 25%, SP = 125% of 600 = Rs. 750.
+
+Q 46 | his | Indian History & Culture
+Who wrote ‘The autobiography of an unknown Indian’?
+(1) Mahatma Gandhi
+(2) Nirad C. Chaudhuri
+(3) Salman Rushdie
+(4) R. K. Narayan
+= 2
+~ 'The Autobiography of an Unknown Indian' (1951) is the memoir of the Bengali writer Nirad C. Chaudhuri, describing his early life in Bengal. Gandhi's autobiography is 'The Story of My Experiments with Truth'.
+
+Q 47 | apt | Arithmetic
+In what time Rs. 2,400 will amount to Rs. 2,646 at 5% p.a. compounded annually?
+(1) 2 years
+(2) 3 years
+(3) 4 years
+(4) 5 years
+= 1
+~ A = P(1 + r/100)^n gives 2646/2400 = (1.05)^n. Since 2646/2400 = 1.1025 = (1.05)^2, n = 2 years.
+
+Q 48 | apt | Arithmetic
+At what rate of interest per annum will a sum double itselft in 8 years?
+(1) 12½%
+(2) 17½%
+(3) 22½%
+(4) 27½%
+= 1
+~ When a sum doubles, the simple interest equals the principal P. So P = (P × R × 8)/100, which gives R = 100/8 = 12½% per annum.
+
+Q 49 | geo | Indian & World Geography
+Kalpakkam in Tamil Nadu is famous for
+(1) Oil refinery
+(2) Atomic power station
+(3) Rice production
+(4) Hydel power station
+= 2
+~ Kalpakkam, near Chennai, is home to the Madras Atomic Power Station and the Indira Gandhi Centre for Atomic Research, which works on fast breeder reactors.
+
+Q 50 | sci | Physical Science
+What did Dmitri Mendeleev formulate?
+(1) Chaos theory
+(2) The Periodic Table of Chemical elements
+(3) The Alpha Effect
+(4) Nuclear Shell Model
+= 2
+~ In 1869 the Russian chemist Dmitri Mendeleev arranged the known elements in order of atomic mass into a periodic table. He left gaps for undiscovered elements, such as gallium and germanium, and predicted their properties.
+
+Q 51 | sci | Physical Science
+The material used in the manufacture of lead pencil is
+(1) Graphite
+(2) Lead
+(3) Mica
+(4) Carbon
+= 1
+~ The 'lead' of a pencil contains no lead at all: it is a mixture of graphite (a soft, layered form of carbon) and clay. Graphite's layers slide over each other easily, leaving a dark mark on paper. 'Carbon' is too general; graphite is the specific material used.
+
+Q 52 | pol | Indian Economy
+Which of the following has not contributed in India's growth?
+(1) Technological Research
+(2) Population Growth
+(3) Diversification of Industries
+(4) Increase in Savings
+= 2
+~ Technological research, diversification of industries and higher savings (which finance investment) all push growth up. Rapid population growth is usually treated as a drag: it raises consumption and dependency, lowers per-capita income and diverts resources from investment.
+
+Q 53 | sci | Life Science & Health
+From which part of the plant is turmeric obtained?
+(1) Root
+(2) Fruit
+(3) Seed
+(4) Stem
+= 1
+~ Turmeric is obtained from the underground part of the plant (Curcuma longa), which WBPSC's key calls the root. Botanically this part is a rhizome, a modified underground stem (it bears nodes, buds and scale leaves), so many textbooks would mark 'Stem'. (Official WBPSC key; some sources differ.)
+
+Q 54 | his | Indian History & Culture
+Who was the first Indian Governor-General of free India?
+(1) C. Rajagopalachari
+(2) Maulana Azad
+(3) Sardar Patel
+(4) Rajendra Prasad
+= 1
+~ Lord Mountbatten was the first Governor-General of free India; in June 1948 C. Rajagopalachari succeeded him as the first (and only) Indian Governor-General, holding office until India became a republic on 26 January 1950.
+
+Q 55 | comp | Computer Fundamentals
+A prescribed set of well-defined instructions for solving mathematical problems is called
+(1) A compiler
+(2) A code
+(3) A description
+(4) An algorithm
+= 4
+~ An algorithm is a finite, step-by-step set of well-defined instructions for solving a problem. A compiler is a program that translates high-level source code into machine code.
+
+Q 56 | pol | Indian Economy
+The progress in increase of fish production was called
+(1) Yellow revolution
+(2) White revolution
+(3) Brown revolution
+(4) Blue revolution
+= 4
+~ The Blue Revolution refers to the rapid increase in fish and aquaculture production. The Yellow Revolution relates to oilseeds, the White Revolution to milk, and the Brown Revolution to leather (also cocoa).
+
+Q 57 | sci | Physical Science
+The velocity of light in vacuum and in other medium is C and V respectively, the refractive index of the medium
+(1) μ = CV
+(2) μ = 1/CV
+(3) μ = C/V
+(4) μ = V/C
+= 3
+~ Absolute refractive index = speed of light in vacuum ÷ speed of light in the medium, so μ = C/V. Since light is slower in a medium (V < C), μ is greater than 1.
+
+Q 58 | sci | Life Science & Health
+The powerhouse of a cell is the
+(1) Plastid
+(2) Chloroplasts
+(3) Golgi body
+(4) Mitochondria
+= 4
+~ Mitochondria are called the powerhouse of the cell because aerobic respiration (Krebs cycle and oxidative phosphorylation) takes place in them, producing most of the cell's energy as ATP.
+
+Q 59 | eng | Vocabulary
+Identify the Synonym.
+Adamant
+(1) Awkward
+(2) Stable
+(3) Stubborn
+(4) Pleasant
+= 3
+~ 'Adamant' means refusing to change one's opinion or decision; unyielding. Its synonym is 'stubborn'.
+
+Q 60 | his | Indian History & Culture
+In which year was Rowlatt Act passed?
+(1) 1919
+(2) 1921
+(3) 1929
+(4) 1916
+= 1
+~ The Rowlatt Act (Anarchical and Revolutionary Crimes Act) was passed in March 1919. It allowed detention without trial, provoked Gandhi's Rowlatt Satyagraha and led up to the Jallianwala Bagh massacre of 13 April 1919.
+
+Q 61 | wbi | Industrial Scenario & Potential of West Bengal
+Where is the ‘Headquarter’ of Tea Board located?
+(1) Bangalore
+(2) Kochi
+(3) Kolkata
+(4) Darjeeling
+= 3
+~ The Tea Board of India, a statutory body set up under the Tea Act, 1953 under the Union Commerce Ministry, has its headquarters in Kolkata. Kochi hosts the Spices Board and Bengaluru the Coffee Board.
+
+Q 62 | eng | Vocabulary
+Identify the Antonym.
+Immaculate
+(1) Spotless
+(2) Defective
+(3) Dirty
+(4) Arrogant
+= 3
+~ 'Immaculate' means perfectly clean and spotless, so its opposite is 'dirty'. 'Spotless' is a synonym, and 'arrogant' is unrelated.
+
+Q 63 | sci | Physical Science
+Gypsum is an ore of
+(1) iron
+(2) calcium
+(3) sodium
+(4) magnesium
+= 2
+~ Gypsum is hydrated calcium sulphate (CaSO4·2H2O), so it is a source (ore) of calcium. It is used to make plaster of Paris and is added to cement to slow its setting.
+
+Q 64 | his | History & Culture of Bengal
+Who invented the medicine of black fever/kalajor?
+(1) Upendra Nath Roy
+(2) Upendra Nath Brahmachari
+(3) Upendra Nath Chowdhury
+(4) J. C. Bose
+= 2
+~ Upendranath Brahmachari, working in Calcutta, discovered Urea Stibamine in 1922, an effective antimony compound for treating kala-azar (black fever), which saved countless lives in Bengal and Assam.
+
+Q 65 | geo | Indian & World Geography
+Which of the following is not a Kharif crop?
+(1) Rice
+(2) Maize
+(3) Cotton
+(4) Barley
+= 4
+~ Kharif crops are sown with the monsoon (June–July) and harvested in autumn: rice, maize and cotton. Barley is a Rabi crop, sown in winter and harvested in spring, like wheat and mustard.
+
+Q 66 | apt | Reasoning
+Find the missing term of the series:
+12, 20, 30, ?, 56
+(1) 40
+(2) 42
+(3) 43
+(4) 46
+= 2
+~ The terms are products of consecutive numbers: 3×4 = 12, 4×5 = 20, 5×6 = 30, 6×7 = 42, 7×8 = 56. (Differences 8, 10, 12, 14 also confirm it.) So the missing term is 42.
+
+Q 67 | geo | Indian & World Geography
+Tropic of Cancer does not pass through
+(1) Gujarat
+(2) Odisha
+(3) Tripura
+(4) West Bengal
+= 2
+~ The Tropic of Cancer (23.5°N) passes through eight states: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram. Odisha lies wholly south of it.
+
+Q 68 | apt | Arithmetic
+A man is walking at a speed of 10 km/hour. After every kilometre, he takes rest for 5 min. How much time will be taken to cover a distance of 5 km.?
+(1) 45 minutes
+(2) 50 minutes
+(3) 55 minutes
+(4) 1 hour
+= 2
+~ At 10 km/h, 1 km takes 6 min, so walking 5 km takes 30 min. He rests after the 1st, 2nd, 3rd and 4th km only (not after reaching the end): 4 × 5 = 20 min. Total = 30 + 20 = 50 minutes.
+
+Q 69 | apt | Arithmetic
+The ratio of two numbers is 15 : 11. If their HCF is 13, then the numbers are
+(1) 75, 55
+(2) 42, 22
+(3) 104, 44
+(4) 195, 143
+= 4
+~ Since 15 and 11 are co-prime, the numbers are 15 × HCF and 11 × HCF: 15 × 13 = 195 and 11 × 13 = 143.
+
+Q 70 | apt | Reasoning
+If 7 × 6 × 9 = 976, 5 × 9 × 4 = 459, then 6 × 3 × 8 = ?
+(1) 638
+(2) 368
+(3) 144
+(4) 863
+= 4
+~ The answer is formed by writing the third digit first, then the first and second: 7, 6, 9 → 9 7 6 and 5, 9, 4 → 4 5 9. So 6, 3, 8 → 8 6 3 = 863.
+
+Q 71 | apt | Arithmetic
+A man can swim downstream at 8 km/hour and upstream at 2 km/hour. The speed of the current is
+(1) 3 km/hour
+(2) 4 km/hour
+(3) 5 km/hour
+(4) 6 km/hour
+= 1
+~ Speed of current = (downstream speed − upstream speed) ÷ 2 = (8 − 2)/2 = 3 km/hour. (His speed in still water = (8 + 2)/2 = 5 km/hour.)
+
+Q 72 | cur | National & International
+Which state launched 24 hours free power supply for farmers from 1st January 2018 and claimed to have became the first in India to launch such initiative in India?
+(1) Arunachal Pradesh
+(2) Telangana
+(3) Uttarakhand
+(4) Goa
+= 2
+~ Telangana began supplying free, uninterrupted 24-hour power to agricultural pump sets from midnight of 1 January 2018, claiming to be the first state in India to give farmers round-the-clock free electricity.
+
+Q 73 | apt | Arithmetic
+If the average of a, b, c be M and ab + bc = − ca, then the average of a^2, b^2, c^2 is
+(1) M^2
+(2) 3M^2
+(3) 9M^2
+(4) 27M^2
+= 2
+~ a + b + c = 3M and ab + bc + ca = 0. Then a^2 + b^2 + c^2 = (a + b + c)^2 − 2(ab + bc + ca) = 9M^2 − 0 = 9M^2, so their average = 9M^2/3 = 3M^2.
+
+Q 74 | sci | Physical Science
+If a pendulum clock is taken to moon from the earth, the clock will
+(1) run slow
+(2) run fast
+(3) no change
+(4) stop working
+= 1
+~ The time period of a pendulum is T = 2π√(l/g). On the Moon g is about one-sixth of Earth's, so T becomes longer (about 2.45 times); each swing takes more time and the clock runs slow.
+
+Q 75 | his | Indian History & Culture
+Hiuen Tsang visited India during the reign of
+(1) Kanishk
+(2) Harshavardhan
+(3) Chandragupta
+(4) Skandgupta
+= 2
+~ The Chinese Buddhist pilgrim Hiuen Tsang (Xuanzang) travelled in India from about 630 to 645 CE during the reign of Harshavardhana of Kannauj, studied at Nalanda and attended Harsha's assemblies at Kannauj and Prayag.
+
+Q 76 | sci | Life Science & Health
+Protein-energy malnutrition causes
+(1) Marasmus
+(2) Rickets
+(3) Beriberi
+(4) Pellagra
+= 1
+~ Marasmus (and kwashiorkor) are forms of protein-energy malnutrition, usually in young children. Rickets is caused by vitamin D deficiency, beriberi by vitamin B1 (thiamine) deficiency and pellagra by niacin (vitamin B3) deficiency.
+
+Q 77 | comp | Computer Fundamentals
+Basic, Cobol, C++ are different types of
+(1) computer languages
+(2) machine languages
+(3) sign languages
+(4) assembly languages
+= 1
+~ BASIC, COBOL and C++ are high-level computer (programming) languages. They must be translated by a compiler or interpreter into machine language, which consists of binary code; assembly language uses mnemonics.
+
+Q 78 | his | Indian History & Culture
+What was the immediate reason of withdrawal of non-co-operation movement?
+(1) Chauri-Chaura Incidence
+(2) Withdrawal of Muslims from the movement
+(3) Suppression by British Government
+(4) None of the above
+= 1
+~ On 4 February 1922 a mob at Chauri Chaura (Gorakhpur district, UP) set fire to a police station, killing 22 policemen. Gandhi, insisting on non-violence, called off the Non-Cooperation Movement a few days later (Bardoli resolution, 12 February 1922).
+
+Q 79 | apt | Arithmetic
+Three years ago the population of a town was 2,50,000. If it had increased by 3%, 4% and 6% in the last three years, the present population of the town is
+(1) 2,83,268
+(2) 2,83,468
+(3) 2,83,668
+(4) 2,83,868
+= 4
+~ Present population = 2,50,000 × 1.03 × 1.04 × 1.06. Step by step: 2,50,000 × 1.03 = 2,57,500; × 1.04 = 2,67,800; × 1.06 = 2,83,868.
+
+Q 80 | geo | Indian & World Geography
+Major plantation of rubber is found in
+(1) Malaysia
+(2) Canada
+(3) Alaska
+(4) Mexico
+= 1
+~ Natural rubber needs a hot, wet equatorial climate. South-East Asia (Thailand, Indonesia, Malaysia) has the world's major rubber plantations; Canada and Alaska are far too cold.
+
+Q 81 | his | History & Culture of Bengal
+‘Bande Mataram’ was first composed in
+(1) 1870
+(2) 1872
+(3) 1875
+(4) 1876
+= 3
+~ Bankim Chandra Chattopadhyay composed 'Bande Mataram' in 1875 (traditionally dated 7 November 1875); it was later included in his novel Anandamath (1882). Its first two stanzas were adopted as India's National Song in 1950.
+
+Q 82 | sci | Life Science & Health
+Bile juice is secreted by
+(1) Pancreas
+(2) Liver
+(3) Spleen
+(4) Gall bladder
+= 2
+~ Bile is produced (secreted) by the liver; the gall bladder only stores and concentrates it before releasing it into the duodenum. Bile salts emulsify fats, helping their digestion. The pancreas secretes pancreatic juice.
+
+Q 83 | apt | Reasoning
+If PALE is coded as 2134, EARTH is coded as 41590, how is PEARL coded in that code?
+(1) 29530
+(2) 24153
+(3) 25413
+(4) 25430
+= 2
+~ Each letter has a fixed digit: from PALE = 2134, P = 2, A = 1, L = 3, E = 4; from EARTH = 41590, R = 5, T = 9, H = 0. So PEARL = P E A R L = 2 4 1 5 3 = 24153.
+
+Q 84 | apt | Arithmetic
+P, Q and R start a business. P invests 3 time as much as Q invests and Q invests 2/3 of what R invests. If the total profit is Rs. 1320, then the share of P will be
+(1) Rs. 760
+(2) Rs. 720
+(3) Rs. 600
+(4) Rs. 660
+= 2
+~ Let R invest 3x; then Q = 2/3 × 3x = 2x and P = 3 × 2x = 6x. Ratio P : Q : R = 6 : 2 : 3 (total 11 parts). P's share = 6/11 × 1320 = Rs. 720.
+
+Q 85 | apt | Arithmetic
+If the cost price of 25 articles is equal to the selling price of 20 articles, the gain % is
+(1) 20
+(2) 25
+(3) 30
+(4) 45
+= 2
+~ Let CP of 1 article = Re 1. Then SP of 20 articles = CP of 25 = Rs 25, while their CP = Rs 20. Gain = 5 on 20, so gain % = 5/20 × 100 = 25%.
+
+Q 86 | sci | Physical Science
+Who proved experimentally the existence of electromagnetic waves?
+(1) J. C. Bose
+(2) Maxwell
+(3) Marconi
+(4) Hertz
+= 4
+~ James Clerk Maxwell predicted electromagnetic waves theoretically (1860s), and Heinrich Hertz proved their existence experimentally in 1887–88 by generating and detecting radio waves; the unit of frequency, hertz, is named after him.
+
+Q 87 | sci | Life Science & Health
+What is the function of lens in our eyes?
+(1) Lower the eyes
+(2) Send message of image to brain
+(3) Change the focal distance of the eye
+(4) Protect eyes from injury
+= 3
+~ The eye lens is a flexible convex lens. The ciliary muscles change its curvature, and hence its focal length, so that images of both near and distant objects are focused on the retina (accommodation). The optic nerve carries the message to the brain.
+
+Q 88 | apt | Arithmetic
+A bag contains an equal number of one rupee, 50 paise and 25 paise coins respectively. If the total value is Rs. 35, how many coins of each type are there?
+(1) 70
+(2) 50
+(3) 30
+(4) 20
+= 4
+~ Let there be x coins of each type. Value = x(1 + 0.50 + 0.25) = 1.75x = 35, so x = 35/1.75 = 20 coins of each type.
+
+Q 89 | sci | Life Science & Health
+The longest bone in the human body is
+(1) Stirrup
+(2) Back bone
+(3) Thigh bone
+(4) Gullet
+= 3
+~ The femur (thigh bone) is the longest and strongest bone in the human body. The stirrup (stapes) in the middle ear is the smallest bone, and the gullet (oesophagus) is not a bone at all.
+
+Q 90 | eng | Vocabulary
+Identify the Antonym.
+Inclement
+(1) Confused
+(2) Stormy
+(3) Definite
+(4) Vivid
+= 2
+~ 'Inclement' (of weather) means cold, wet or stormy; its antonyms are 'clement', 'mild' or 'calm'. WBPSC's key gives 'Stormy', which is in fact a synonym of 'inclement'; none of the four options is a true antonym. (Official WBPSC key; some sources differ.)
+
+Q 91 | env | Environment & Ecology
+Which of the following is non-biodegradable?
+(1) Animal Bones
+(2) Nylon
+(3) Tea leaves
+(4) Wool
+= 2
+~ Nylon is a synthetic polymer (polyamide) that microbes cannot break down, so it persists in the environment. Bones, tea leaves and wool are natural organic materials that decomposers eventually degrade.
+
+Q 92 | sci | Life Science & Health
+The part of the brain which is responsible for intelligence is
+(1) cerebrum
+(2) cerebellum
+(3) olfactory lobe
+(4) cochlea
+= 1
+~ The cerebrum, the largest part of the brain, is the seat of intelligence, memory, thinking, reasoning and voluntary actions. The cerebellum maintains balance and posture, olfactory lobes deal with smell, and the cochlea is part of the inner ear.
+
+Q 93 | apt | Arithmetic
+A person distributes his pens among four friends A, B, C and D in the ratio 1/3 : 1/4 : 1/5 : 1/6. What is the minimum number of pens that the person should have?
+(1) 19
+(2) 38
+(3) 57
+(4) 58
+= 3
+~ Multiply the ratio by the LCM of 3, 4, 5, 6, which is 60: 1/3 : 1/4 : 1/5 : 1/6 = 20 : 15 : 12 : 10. These have no common factor, so the minimum number of pens = 20 + 15 + 12 + 10 = 57.
+
+Q 94 | apt | Reasoning
+If PEN = 123, HELF = 4278, COW = 956, then PEOPLE = ?
+(1) 125172
+(2) 1217253
+(3) 125127
+(4) 125721
+= 1
+~ Each letter has a fixed digit: P = 1, E = 2, N = 3 (PEN); H = 4, L = 7, F = 8 (HELF); C = 9, O = 5, W = 6 (COW). So PEOPLE = P E O P L E = 1 2 5 1 7 2 = 125172.
+
+Q 95 | apt | Reasoning
+Find the missing number:
+(1) 21
+(2) 25
+(3) 50
+(4) 60
+= 2
+~ In each figure, the bottom number = product of the square roots of the two top numbers: √4 × √9 = 2 × 3 = 6; √9 × √16 = 3 × 4 = 12. So √16 × √? = 20 gives 4 × √? = 20, √? = 5, and the missing number = 25.
+! img/i19-q95.png
+
+Q 96 | apt | Arithmetic
+A water tap can fill a cistern in 20 minutes and another can fill in 30 minutes. If both are opened simultaneously, the cistern will be full in
+(1) 12 minutes
+(2) 10 minutes
+(3) 25 minutes
+(4) 60 minutes
+= 1
+~ In one minute the taps fill 1/20 + 1/30 = 3/60 + 2/60 = 5/60 = 1/12 of the cistern, so together they fill it in 12 minutes. (Shortcut: 20 × 30 ÷ (20 + 30) = 600/50 = 12.)
+
+Q 97 | pol | Indian Economy
+The sectors are classified into public and private sector on the basis of
+(1) employment condition.
+(2) the nature of economic activity.
+(3) ownership of enterprises.
+(4) number of worker employed in the enterprise.
+= 3
+~ The public–private classification is based on who owns the enterprise: in the public sector the government owns most assets and provides services, while in the private sector individuals or companies own them. Nature of activity gives the primary/secondary/tertiary classification, and employment conditions give organised/unorganised.
+
+Q 98 | apt | Arithmetic
+If 90% of A = 30% of B and B = x% of A, then the value of x is
+(1) 600
+(2) 800
+(3) 900
+(4) 300
+= 4
+~ 0.9A = 0.3B gives B = 0.9A/0.3 = 3A. Since 3A = 300% of A, x = 300.
+
+Q 99 | sci | Physical Science
+‘Raman Effect’ was discovered in 1928 by
+(1) J. C. Bose
+(2) C. V. Raman
+(3) R. J. Raman
+(4) Taraknath Palit
+= 2
+~ C. V. Raman, working at the Indian Association for the Cultivation of Science in Calcutta, discovered on 28 February 1928 that light scattered by a medium contains changed wavelengths (the Raman Effect). He won the 1930 Nobel Prize in Physics; 28 February is National Science Day.
+
+Q 100 | sci | Physical Science
+The density of water is maximum at
+(1) 32°F
+(2) 42°F
+(3) 39.2°F
+(4) 4°F
+= 3
+~ Water is densest at 4°C. Converting: °F = (9/5 × 4) + 32 = 7.2 + 32 = 39.2°F. Below 4°C water expands (anomalous expansion), which is why ice floats; 32°F is the freezing point.

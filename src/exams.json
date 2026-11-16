@@ -78,6 +78,16 @@
    "desc": "OPSC Assistant Section Officer and other Odisha exams"
   },
   {
+   "id": "wb",
+   "name": "WBPSC, WBSSC & West Bengal",
+   "desc": "WBPSC Industrial Development Officer and other West Bengal exams"
+  },
+  {
+   "id": "dl",
+   "name": "DSSSB & Delhi",
+   "desc": "DSSSB MTS, Junior Engineer and other Delhi government exams"
+  },
+  {
    "id": "br",
    "name": "BPSC & Bihar",
    "desc": "BPSC CCE and TRE, BSSC Inter and Graduate level, Bihar Police and STET"
@@ -1303,6 +1313,22 @@
    "t": "ASO",
    "n": "Assistant Section Officer, Odisha Secretariat",
    "live": "opsc-aso/"
+  },
+  {
+   "id": "wbpsc-ido",
+   "cat": "wb",
+   "b": "WBPSC",
+   "t": "IDO",
+   "n": "Industrial Development Officer, MSME Directorate",
+   "live": "wbpsc-ido/"
+  },
+  {
+   "id": "dsssb",
+   "cat": "dl",
+   "b": "DSSSB",
+   "t": "MTS & JE",
+   "n": "Multi-Tasking Staff and Junior Engineer (Electrical), Delhi",
+   "live": "dsssb/"
   },
   {
    "id": "bpsc-cce",

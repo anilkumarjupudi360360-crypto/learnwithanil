@@ -1,0 +1,1897 @@
+# DSSSB Junior Engineer (Electrical) / Section Officer (Electrical), Post Code 802/2022, online exam of 22 June 2022, Shift 1 (DSSSB's own question paper with answers from its Question Bank, 200 questions, Hindi and English); answers: DSSSB's key (green ticks)
+
+Q 1 | rea | Verbal Reasoning
+Dev is ranked 23rd from left end and 34th from right end in a row. How many people are in that row?
+(1) 56
+(2) 57
+(3) 58
+(4) 59
+= 1
+~ Total = 23 + 34 − 1 = 56 (Dev is counted in both positions).
+
+Q 2 | rea | Verbal Reasoning
+Atul ranked 17th from left end of the row, while Sachin ranked 15th from the right side of the row. If there are exactly 5 persons between Atul and Sachin. If Atul is towards the left of Sachin, how many persons are in that row?
+(1) 36
+(2) 37
+(3) 39
+(4) 40
+= 2
+~ Counting from the left: 17 people up to Atul, 5 between them, and 15 from Sachin to the right end. Total = 17 + 5 + 15 = 37.
+
+Q 3 | rea | Verbal Reasoning
+Two statements are followed by two conclusions. Consider the statements to be TRUE even if they seem to be at variance with commonly known facts and decide which of the given conclusion(s) logically follow(s) from the given statements.
+Statements:
+A. All dogs are lion.
+B. All sheep are lion.
+Conclusions:
+I. Some lions are dogs.
+II. Some lions are sheep.
+(1) Only conclusion I follows
+(2) Only conclusion II follows
+(3) Both conclusion I and II follow
+(4) Neither conclusion I nor II follow
+= 3
+~ An 'All A are B' statement can always be converted to 'Some B are A'. 'All dogs are lions' gives 'Some lions are dogs' (I) and 'All sheep are lions' gives 'Some lions are sheep' (II), so both follow.
+
+Q 4 | rea | Verbal Reasoning
+Shweat is taller than Anu and Vani is smaller than Dev, Tanu is Taller than Vani and smaller than Samar, Anu is taller than Samar. Dev is smaller than Anu.
+Who is tallest among all?
+(1) Shweta
+(2) Anu
+(3) Vani
+(4) Samar
+= 1
+~ From the statements: Shweta > Anu > Samar > Tanu > Vani, and Anu > Dev > Vani. Anu is taller than everyone except Shweta, and Shweta is taller than Anu, so Shweta is the tallest.
+
+Q 5 | rea | Verbal Reasoning
+Which letter cluster would replace question mark (?) in the given series?
+EF, LL, SR, ZX, ?
+(1) GD
+(2) DE
+(3) CH
+(4) HC
+= 1
+~ First letters move +7: E(5), L(12), S(19), Z(26) → 26 + 7 = 33 − 26 = 7 = G. Second letters move +6: F(6), L(12), R(18), X(24) → 24 + 6 = 30 − 26 = 4 = D. Answer: GD.
+
+Q 6 | rea | Verbal Reasoning
+Which of the following meaningful word can be formed using the letters of the word RELATIONSHIP, a letter can be used only once?
+(1) Reinstate
+(2) Shipment
+(3) Road
+(4) Alter
+= 4
+~ RELATIONSHIP has the letters R, E, L, A, T, I, O, N, S, H, I, P. ALTER uses A, L, T, E, R once each. 'Reinstate' needs a second E and T, 'Shipment' needs M and 'Road' needs D.
+
+Q 7 | rea | Verbal Reasoning
+Shan travels 20 km towards North then he turns right and travels 30 km to reach school. He again turns right and travels 10 km. Finally he turns left and travels 15 km. In which direction is he facing now?
+(1) East
+(2) North
+(3) South
+(4) West
+= 1
+~ He starts facing North; a right turn makes him face East, another right turn South, and finally a left turn East again. So he is now facing East.
+
+Q 8 | rea | Verbal Reasoning
+Zoya is sister of Aman and mother of Anu. Aman is grandson of Neha and father of Fahad. Fahad is son of Hira. How is Hira related to Anu?
+(1) Sister
+(2) Sister-in-law
+(3) Mother
+(4) Aunty
+= 4
+~ Aman is Fahad's father and Fahad is Hira's son, so Hira is Aman's wife. Aman's sister Zoya is Anu's mother, so Aman is Anu's maternal uncle and Hira is Anu's aunt (mami).
+
+Q 9 | rea | Verbal Reasoning
+M € N means ‘M is brother of N’
+M ≠ N means ‘M is father of N’
+M © N means ‘M is wife of N’
+M α N means ‘M is sister of N’
+If
+P © Q € S ≠ R α T
+How is R related to P?
+(1) Aunty
+(2) Nephew
+(3) Niece
+(4) Mother
+= 3
+~ P © Q: P is Q's wife. Q € S: Q is S's brother. S ≠ R: S is R's father. R α T: R is T's sister, so R is female. R is the daughter of P's husband's brother, i.e. P's niece.
+
+Q 10 | rea | Verbal Reasoning
+Select the option that is related to the third word in the same way as the second word is related to the first word.
+Heart : Cardiologist :: Bone :?
+(1) Ecologist
+(2) Ontology
+(3) Orthopedist
+(4) Dermatologist
+= 3
+~ A cardiologist is a doctor who specialises in the heart; likewise an orthopedist specialises in bones.
+
+Q 11 | rea | Verbal Reasoning
+Four words have been given out of which three are alike in some manner, while the fourth one is different. Choose the word which is different from the rest.
+(1) Flock
+(2) Herd
+(3) Shoal
+(4) Fish
+= 4
+~ Flock, herd and shoal are collective nouns for groups of animals or fish, while 'fish' names a single creature.
+
+Q 12 | rea | Non-verbal Reasoning
+Select the option that will correctly replace the question mark (?) and complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+~ The open shape turns 90° clockwise each step (tip pointing right, down, left, so next up), and the star appears in alternate figures (present, absent, present, so next absent). Figure 1 – the upward-pointing shape without a star – fits.
+! img/j22-q12.png
+
+Q 13 | rea | Non-verbal Reasoning
+Four figures have been given out of which three are alike in some manner, while the fourth one is different. Choose the figure which is different from the rest.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+~ The plus, minus and multiplication signs are mathematical operators, while the comma in Figure 1 is a punctuation mark, so Figure 1 is the odd one.
+! img/j22-q13.png
+
+Q 14 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed to the right side.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+~ A mirror on the right swaps left and right but keeps top and bottom: the black triangle moves to the right (now pointing left), the black dot to the left, and the top and bottom shapes tilt the opposite way. This is Figure 2.
+! img/j22-q14.png
+
+Q 15 | rea | Non-verbal Reasoning
+What will be the water image of following figure?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 3
+~ A water image turns the figure upside down (top ↔ bottom) while left and right stay the same. The dot at the top-right therefore moves to the bottom-right and the inner pattern is inverted, as in Figure 3.
+! img/j22-q15.png
+
+Q 16 | rea | Verbal Reasoning
+Which number would replace question mark (?) in the given series?
+42, 55, 70, 87, ?
+(1) 109
+(2) 100
+(3) 106
+(4) 103
+= 3
+~ Differences are consecutive odd numbers: 55 − 42 = 13, 70 − 55 = 15, 87 − 70 = 17, so next is 87 + 19 = 106.
+
+Q 17 | rea | Verbal Reasoning
+Which number would replace question mark (?) in the given series?
+123, 140, 167, 204, ?
+(1) 217
+(2) 227
+(3) 241
+(4) 251
+= 4
+~ Differences increase by 10: 140 − 123 = 17, 167 − 140 = 27, 204 − 167 = 37, so next is 204 + 47 = 251.
+
+Q 18 | rea | Verbal Reasoning
+Four numbers have been given out of which three are alike in some manner, while the fourth one is different. Choose the number which is different from the rest.
+(NOTE: Only whole numbers should be considered, without breaking down the numbers into its constituent digits)
+(1) 53
+(2) 63
+(3) 73
+(4) 83
+= 2
+~ 53, 73 and 83 are prime numbers, but 63 = 7 × 9 is composite, so 63 is the odd one.
+
+Q 19 | rea | Verbal Reasoning
+What will be the approximate value of the following expression?
+23.7 × 2.4 + 47.75 ÷ 2.25 – 12.759
+(1) 59
+(2) 67
+(3) 89
+(4) 102
+= 1
+~ The key rounds every number to the nearest whole number: 24 × 2 + 48 ÷ 2 − 13 = 48 + 24 − 13 = 59. Exact working, however, gives 56.88 + 21.22 − 12.76 ≈ 65.3, which is nearer 67. (Official DSSSB key; some sources differ.)
+
+Q 20 | rea | Verbal Reasoning
+What will be the approximate value of ‘Q’ in the following expression?
+229.58 + Q × 34.4 - 87.92 ÷ 4 = 423.47
+(1) 3.5
+(2) 6
+(3) 8
+(4) 9
+= 2
+~ 87.92 ÷ 4 = 21.98, so Q × 34.4 = 423.47 − 229.58 + 21.98 = 215.87. Hence Q = 215.87 ÷ 34.4 ≈ 6.3 ≈ 6.
+
+Q 21 | ga | Current Affairs
+Who among the following received Aryabhata Award from Astronautical Society of India in October 2021?
+(1) Dr B. N. Suresh
+(2) Dr G. Satheesh Reddy
+(3) Dr Ashwin Vasavada
+(4) Dr Kamlesh Lulla
+= 2
+~ On 9 October 2021 the Astronautical Society of India conferred its Aryabhata Award on Dr G. Satheesh Reddy, then Secretary, Department of Defence R&D and Chairman of DRDO, for his outstanding lifetime contribution to the promotion of astronautics in India.
+
+Q 22 | ga | Current Affairs
+Which of these association conferred the 'International Lifetime Achievement Award in Neurosurgery' to Dr Basant Kumar Misra?
+(1) AFRICAN FEDERATION of Neurosurgical Societies
+(2) ASIAN CONGRESS of Neurological Surgeons
+(3) AMERICAN ACADEMY of Neurological Surgery
+(4) AMERICAN ASSOCIATION of Neurological Surgeons
+= 4
+~ In 2021 the American Association of Neurological Surgeons (AANS) gave its International Lifetime Achievement Award in Neurosurgery to Dr Basant Kumar Misra of Mumbai's Hinduja Hospital – the first Indian to receive it.
+
+Q 23 | ga | Current Affairs
+Which of these state government has introduced a ‘Back to Work’ scheme for women who have had to quit their jobs due to family reasons?
+(1) Gujarat
+(2) Madhya Pradesh
+(3) Rajasthan
+(4) Karnataka
+= 3
+~ In late 2021 the Rajasthan government launched the 'Back to Work' scheme to help women who had left their jobs for family reasons return to employment, including work-from-home options.
+
+Q 24 | ga | Current Affairs
+In how many days, India administered 100 million doses of coronavirus vaccines and became the fastest country in the world in administration of coronavirus vaccines?
+(1) 100 days
+(2) 65 days
+(3) 85 days
+(4) 125 days
+= 3
+~ India crossed 100 million (10 crore) COVID-19 vaccine doses in 85 days (April 2021), faster than the USA (89 days) and China (102 days), as reported by the Union Health Ministry.
+
+Q 25 | ga | Current Affairs
+Who has become the first Indian to be selected for judging the gymnastics competition of the Olympic Games?
+(1) Sanjeet Kumar
+(2) Deepak Kabra
+(3) Sunil Chhetri
+(4) Vantika Agarwal
+= 2
+~ Deepak Kabra became the first Indian selected as a gymnastics judge at the Olympic Games, officiating in artistic gymnastics at the Tokyo 2020 Olympics (held in 2021).
+
+Q 26 | ga | Current Affairs
+Which of the following are the three new member countries of the International Cricket Council (ICC) inducted in July 2021?
+(1) Mongolia, Tajikistan and Switzerland
+(2) Mongolia, Afghanistan and Switzerland
+(3) Bermuda, Canada and Switzerland
+(4) Mongolia, Bermuda and Canada
+= 1
+~ At its Annual General Meeting in July 2021 the ICC admitted Mongolia, Tajikistan and Switzerland as new Associate Members, taking its total membership to 106.
+
+Q 27 | ga | History & Culture
+Harishena was a poet and a minister at the court of ________.
+(1) Ashoka
+(2) Akbar
+(3) Samudragupta
+(4) Chandragupta II
+= 3
+~ Harishena was the court poet and a minister of the Gupta ruler Samudragupta; he composed the Prayag Prashasti (Allahabad Pillar inscription) praising the king's conquests.
+
+Q 28 | ga | History & Culture
+Which of the following was established by Dr. Atma Ram Pandurang?
+(1) Prarthana Samaj
+(2) Brahmo Samaj
+(3) Arya Samaj
+(4) Parmahansa Mandali
+= 1
+~ Dr Atmaram Pandurang founded the Prarthana Samaj in Bombay in 1867; M.G. Ranade and R.G. Bhandarkar later became its leading figures.
+
+Q 29 | ga | History & Culture
+As per the estimation of Scholars, what was the total number of wells in Mohenjodaro?
+(1) About 250
+(2) About 700
+(3) About 500
+(4) About 150
+= 2
+~ Scholars estimate that Mohenjodaro had about 700 wells, reflecting the Harappans' elaborate system of water supply and drainage.
+
+Q 30 | ga | History & Culture
+Hindustani vocalists Kumar Gandharva's and Bhimsen Joshi's places of birth is located in _______.
+(1) Kerala
+(2) Tamil Nadu
+(3) Madhya Pradesh
+(4) Karnataka
+= 4
+~ Kumar Gandharva was born at Sulebhavi near Belagavi and Bhimsen Joshi at Ron in Gadag district – both places are in Karnataka.
+
+Q 31 | ga | Current Affairs
+How many aircrafts and helicopters took part in fly-past in 73rd Republic Day celebrations at Rajpath?
+(1) 75
+(2) 67
+(3) 48
+(4) 59
+= 1
+~ The 73rd Republic Day parade (26 January 2022) ended with the biggest-ever fly-past of 75 aircraft and helicopters, marking 75 years of Independence (Azadi Ka Amrit Mahotsav). Now: Rajpath was renamed Kartavya Path in September 2022.
+
+Q 32 | ga | Economy
+In which year Microfinance Institutions Network (MFIN) was recognised by the Reserve Bank of India (RBI) as India’s first Self-Regulatory Organization (SRO) for the Non-Banking Financial Company - Micro Finance Institutions (NBFC-MFIs)?
+(1) 2010
+(2) 2012
+(3) 2014
+(4) 2019
+= 3
+~ In June 2014 the RBI recognised the Microfinance Institutions Network (MFIN) as the first Self-Regulatory Organisation for NBFC-MFIs.
+
+Q 33 | ga | Economy
+In which year, Industrial Finance Corporation of India (IFCI) became Public Limited Company?
+(1) 1955
+(2) 1964
+(3) 1985
+(4) 1993
+= 4
+~ IFCI, set up in 1948 by an Act of Parliament as India's first development finance institution, was converted into a public limited company (IFCI Ltd) in 1993.
+
+Q 34 | ga | Geography & Environment
+Which of these is NOT a part of The North-Eastern Plateau Region of India?
+(1) Chhotanagpur (Jharkhand)
+(2) Odisha Plateau
+(3) Tamil Nadu uplands
+(4) West Bengal
+= 3
+~ The north-eastern part of the Peninsular plateau comprises the Chhotanagpur plateau (Jharkhand), the Odisha plateau and the adjoining uplands of West Bengal. The Tamil Nadu uplands lie at the southern end of the Peninsula, so they are not part of it.
+
+Q 35 | ga | Geography & Environment
+As per census 2011, what was the literacy rate of Kerala?
+(1) 95%
+(2) 94%
+(3) 96%
+(4) 97%
+= 2
+~ According to Census 2011, Kerala had a literacy rate of 94%, the highest among Indian states (national average 74.04%).
+
+Q 36 | ga | Geography & Environment
+Which of the following port is the premier iron ore exporting port of India?
+(1) Marmagao port
+(2) Jawaharlal Nehru port
+(3) Deendayal Port
+(4) New Mangalore port
+= 1
+~ Mormugao (Marmagao) port in Goa is India's premier iron-ore exporting port, handling the ore mined in Goa and its hinterland.
+
+Q 37 | ga | General Science
+Which of these constellations is visible during winter in the early part of the night and looks like a distorted letter W or M?
+(1) Orion
+(2) Canis Major
+(3) Cassiopeia
+(4) Ursa Minor
+= 3
+~ Cassiopeia is a prominent constellation of the northern sky, visible in winter in the early part of the night; its bright stars form a distorted 'W' or 'M'.
+
+Q 38 | ga | General Science
+Which of these group has radial symmetry?
+(1) Platyhelminthes
+(2) Porifera
+(3) Annelida
+(4) Cnidaria / Coelenterata
+= 4
+~ Cnidarians (coelenterates) such as Hydra and jellyfish are radially symmetrical. Platyhelminthes and Annelida are bilaterally symmetrical, and most sponges (Porifera) are asymmetrical.
+
+Q 39 | ga | Polity & Governance
+Clause k of Article 51A "who is a parent or guardian to provide opportunities for education to his child or, as the case may be, ward between the age of six and fourteen years" was added by the _______ Constitution Amendment Act 2002.
+(1) 70th
+(2) 86th
+(3) 73rd
+(4) 92nd
+= 2
+~ The 86th Constitution Amendment Act, 2002 inserted Article 21A (free and compulsory education for children aged 6–14) and added Fundamental Duty 51A(k) for parents and guardians.
+
+Q 40 | ga | Polity & Governance
+Which of these is NOT a constitutional body?
+(1) National Commission for Scheduled Castes
+(2) National Commission for Backward Classes
+(3) National Commission for Scheduled Tribes
+(4) National Commission for Minorities
+= 4
+~ The National Commission for Minorities is a statutory body set up under the NCM Act, 1992. The NCSC (Art. 338), NCST (Art. 338A) and NCBC (Art. 338B, added by the 102nd Amendment, 2018) are constitutional bodies.
+
+Q 41 | math | Arithmetic
+The value of (1.69 × 0.81 × 1.21)/(0.09 × 0.13 × 0.11) is:
+(1) 1,278
+(2) 1,325
+(3) 1,439
+(4) 1,287
+= 4
+~ Both numerator and denominator have six decimal places, so the value = (169 × 81 × 121)/(9 × 13 × 11) = 13 × 9 × 11 = 1,287.
+
+Q 42 | math | Algebra & Geometry
+If x = (√a + √b)/(√a − √b) and y = (√a − √b)/(√a + √b), where a > b > 0, then find (x + y)/0.5.
+(1) 2((a + b)/(a − b))
+(2) 4((a − b)/(a + b))
+(3) 4((a + b)/(a − b))
+(4) ((a + b)/(a − b))
+= 3
+~ x + y = [(√a + √b)^2 + (√a − √b)^2]/(a − b) = 2(a + b)/(a − b). Dividing by 0.5 doubles it: (x + y)/0.5 = 4(a + b)/(a − b).
+
+Q 43 | math | Arithmetic
+If three positive numbers are in the ratio 2 : 3 : 5 whose L.C.M. is 2400, then find the H.C.F. of the three numbers.
+(1) 60
+(2) 80
+(3) 75
+(4) 90
+= 2
+~ Let the numbers be 2k, 3k and 5k. Their LCM is 30k = 2400, so k = 80. As 2, 3 and 5 are co-prime, the HCF is k = 80.
+
+Q 44 | math | Arithmetic
+Simplify: 2/5 of 4/9 of 5600 − 2/3 of 1/5 of 7/9 of 2160
+(1) 727
+(2) 841
+(3) 772
+(4) 828
+= 3
+~ 2/5 × 4/9 × 5600 = 8/45 × 5600 ≈ 995.56 and 2/3 × 1/5 × 7/9 × 2160 = 14/135 × 2160 = 224. Difference ≈ 995.56 − 224 = 771.56 ≈ 772.
+
+Q 45 | math | Arithmetic
+If an integer 'n' is divisible by 3, 5 and 12 respectively, then what is the next larger positive integer divisible by all these numbers?
+(1) n + 60
+(2) n + 90
+(3) n + 120
+(4) n + 30
+= 1
+~ n is divisible by 3, 5 and 12, so it is a multiple of LCM(3, 5, 12) = 60. The next larger integer divisible by all of them is n + 60.
+
+Q 46 | math | Arithmetic
+A mixture contains 10% water in the milk. How much water should be added to the mixture of one litre such that the water percentage goes up to 25%?
+(1) 400 ml
+(2) 200 ml
+(3) 350 ml
+(4) 250 ml
+= 2
+~ 1 litre has 100 ml water and 900 ml milk. For water to be 25%, the milk must be 75% of the new mixture: 900 ÷ 0.75 = 1200 ml. Water to add = 1200 − 1000 = 200 ml.
+
+Q 47 | math | Arithmetic
+A shopkeeper sold two chairs for Rs. 4725 each. On one chair, he gains 20% and on the other chair 20% loss What is the total gain or loss percentage in the whole transaction?
+(1) No loss or no profit
+(2) 4.17% loss
+(3) 5.12% loss
+(4) 4.81% profit
+= 2
+~ Cost prices: 4725 ÷ 1.2 = 3937.50 and 4725 ÷ 0.8 = 5906.25 (total 9843.75); SP = 9450, so loss = 393.75. Loss on cost = 393.75/9843.75 × 100 = 4% (shortcut x^2/100 = 20^2/100). No option shows 4%; the keyed 4.17% is the loss taken on the selling price (393.75/9450 × 100), the option nearest the true loss. (Official DSSSB key; some sources differ.)
+
+Q 48 | math | Arithmetic
+A banker claims to be loaning money at simple interest, he includes the interest every six months for calculating the principal. If he is charging an interest of 8%, then the effective rate of interest is:
+(1) 8.32%
+(2) 8.08%
+(3) 8.16%
+(4) 8.24%
+= 3
+~ Adding interest every six months means 4% per half-year, compounded: (1.04)^2 = 1.0816, so the effective annual rate is 8.16%.
+
+Q 49 | math | Arithmetic
+Simple interest on a certain sum of money for 3 years at 8% per annum is one-third the compound interest on Rs. 24,000 for 2 years at 10% per annum. What is the sum (in Rs.) placed on simple interest?
+(1) 8300
+(2) 7000
+(3) 7620
+(4) 8050
+= 2
+~ CI on Rs. 24,000 for 2 years at 10% = 24,000 × (1.21 − 1) = Rs. 5,040; one-third = Rs. 1,680. SI = P × 8 × 3/100 = 0.24P = 1,680, so P = Rs. 7,000.
+
+Q 50 | math | Arithmetic
+If 4 males or 5 females can cultivate a rose field in 30 days, then how long will 7 male and 10 female take to cultivate it?
+(1) 8
+(2) 7
+(3) 9
+(4) 12
+= 1
+~ 4 males = 5 females, so 1 male = 5/4 female. 7 males + 10 females = 35/4 + 10 = 75/4 females. Total work = 5 × 30 = 150 female-days, so time = 150 ÷ 75/4 = 8 days.
+
+Q 51 | math | Arithmetic
+A person leaves his office every day at 5.30 p.m. and reaches home at 7.00 p.m. One day, he left his office at 5.30 p.m. but travelled a third of the distance at 2/3 of the usual speed. At how many times, his normal speed did he travel the remaining part of the journey if he managed to reach home on time?
+(1) 4/3
+(2) 3/2
+(3) 5/3
+(4) 4/9
+= 1
+~ The usual time is 90 min, so the first third normally takes 30 min; at 2/3 of the speed it takes 30 × 3/2 = 45 min. The remaining 2/3 of the distance normally takes 60 min but only 90 − 45 = 45 min are left, so the speed must be 60/45 = 4/3 times the normal speed.
+
+Q 52 | math | Arithmetic
+In covering a distance of 360 km, a person A takes 3 hours more than another person B. If A triples his speed, then he would take 2 hours less than B. What is the speed (in km/hr) of A?
+(1) 45
+(2) 52
+(3) 48
+(4) 36
+= 3
+~ Let A's speed be a. A is 3 h slower than B at speed a and 2 h faster at speed 3a, so 360/a − 360/(3a) = 3 + 2 = 5. Then 240/a = 5, giving a = 48 km/hr.
+
+Q 53 | math | Arithmetic
+A salesman completes a journey in 12 hours. He travels first one-third of the journey at the rate of 15 km/hr and second two-third of the journey at the rate of 18 km/hr. What is his total journey in km?
+(1) 202.50
+(2) 210.25
+(3) 218.50
+(4) 198.75
+= 1
+~ Let the journey be D km. Time = (D/3)/15 + (2D/3)/18 = D/45 + D/27 = 8D/135 = 12, so D = 12 × 135/8 = 202.5 km.
+
+Q 54 | math | Algebra & Geometry
+How many granites whose length and breadth are 24 cm and 6 cm respectively will be needed to fit in a rectangular region whose length and breadth are 576 cm and 120 cm respectively?
+(1) 420
+(2) 480
+(3) 460
+(4) 510
+= 2
+~ Number of granites = area of region ÷ area of one granite = (576 × 120)/(24 × 6) = 69120/144 = 480. (Check: 576/24 = 24 along the length and 120/6 = 20 along the breadth; 24 × 20 = 480.)
+
+Q 55 | math | Algebra & Geometry
+The curved surface area of a right circular cylinder is same as the surface area of a sphere. If the diameter and height of a right circular cylinder are 8 cm and 16 cm respectively, then what is the radius of the sphere in cm?
+(1) 6√2
+(2) 8√2
+(3) 5√2
+(4) 4√2
+= 4
+~ Cylinder radius = 8/2 = 4 cm, so its curved surface area = 2πrh = 2π × 4 × 16 = 128π. For the sphere, 4πR^2 = 128π, so R^2 = 32 and R = 4√2 cm.
+
+Q 56 | math | Algebra & Geometry
+The length of a rectangle is two-third of the radius of a circle. The radius of the circle is equal to the side of the square, whose area is 1296 cm^2. If the breadth of the rectangle is 9 cm, then what is the area (in cm^2) of the rectangle?
+(1) 234
+(2) 216
+(3) 207
+(4) 189
+= 2
+~ Side of the square = √1296 = 36 cm = radius of the circle. Length of the rectangle = 2/3 × 36 = 24 cm, so its area = 24 × 9 = 216 cm^2.
+
+Q 57 | math | Data Interpretation
+The following table represents the classification of 100 students on the basis of marks obtained by them in two different papers I and II in an entrance examination during the year 2020.
+Out of 50 marks
+Subject | 40 and above | 30 and above | 20 and above | 10 and above | 0 and above
+Paper I | 14 | 38 | 68 | 86 | 100
+Paper II | 10 | 26 | 60 | 82 | 100
+Aggregate | 12 | 30 | 62 | 84 | 100
+What is the number of students with less than 60% marks in total?
+(1) 38
+(2) 62
+(3) 70
+(4) 54
+= 3
+~ Marks are out of 50, so 60% = 30 marks. The Aggregate row shows 30 students with 30 and above, so students with less than 60% in total = 100 − 30 = 70.
+
+Q 58 | math | Data Interpretation
+The following tables shows the percentage-wise distribution of lecturers and ratio of males and females' lecturers in five different subjects A, B, C, D and E in a certain University during the year 2021. Total number of lecturers is 1200.
+Subjects | % distribution | Ratio of Males : Females
+A | 32 | 5 : 3
+B | 20 | 1 : 3
+C | 18 | 5 : 1
+D | 14 | 2 : 5
+E | 16 | 3 : 5
+What is the difference between the total number of male lecturers in subjects B and C together and the total number of lecturers in a subject E?
+(1) 52
+(2) 48
+(3) 45
+(4) 56
+= 2
+~ B: 20% of 1200 = 240 lecturers, males = 1/4 × 240 = 60. C: 18% of 1200 = 216, males = 5/6 × 216 = 180. Males in B and C = 240. E: 16% of 1200 = 192. Difference = 240 − 192 = 48.
+
+Q 59 | math | Data Interpretation
+The following bar-graph represents the income and expenditures (Rs.in thousands) of five companies A, B, C, D and E in the year 2021:
+Which company suffered the maximum percentage of loss in the year 2021?
+(1) C
+(2) E
+(3) B
+(4) A
+= 4
+~ A loss occurs only where expenditure exceeds income: A (45 vs 35) and C (45 vs 40); B, D and E make a profit. Loss % = loss/expenditure × 100: A = 10/45 × 100 ≈ 22.2%, C = 5/45 × 100 ≈ 11.1%. So A suffered the maximum percentage loss.
+! img/j22-q59.png
+
+Q 60 | math | Data Interpretation
+The following line graph shows the two different models A and B produced (in thousands) by a certain company in five years 2013 - 2017.
+What is the average number of model A production by the company in all five years 2013-2017?
+(1) 71000
+(2) 66400
+(3) 64200
+(4) 73000
+= 4
+~ Model A (blue line): 65, 60, 80, 70 and 90 thousand. Average = (65 + 60 + 80 + 70 + 90)/5 = 365/5 = 73 thousand = 73000. (66400 is the average of model B.)
+! img/j22-q60.png
+
+Q 61 | eng | Grammar
+Fill in the blank with the most appropriate word.
+She is cut out ______ a career in acting.
+(1) to
+(2) in
+(3) at
+(4) for
+= 4
+~ 'Cut out for' is a fixed phrase meaning naturally suited to something, so 'She is cut out for a career in acting.'
+
+Q 62 | eng | Grammar
+Fill in the blank with the most appropriate word.
+It is time to go to work ______.
+(1) yet
+(2) now
+(3) still
+(4) often
+= 2
+~ 'It is time to go to work now' — 'now' points to the present moment the sentence is about. 'Yet' and 'still' suggest something not done or continuing, and 'often' (habitual) does not fit 'It is time'.
+
+Q 63 | eng | Grammar
+Fill in the blank with the most appropriate word.
+By the time we arrived home, the children ______.
+(1) went
+(2) had gone
+(3) were going
+(4) have gone
+= 2
+~ 'By the time' + simple past shows that the other action was already completed earlier, which needs the past perfect: 'the children had gone'.
+
+Q 64 | eng | Grammar
+Fill in the blank with the most appropriate word.
+She ______ poetry since she was six years old.
+(1) wrote
+(2) is writing
+(3) was writing
+(4) has been writing
+= 4
+~ An action that started at a point in the past ('since she was six') and continues up to now takes the present perfect continuous: 'She has been writing poetry'.
+
+Q 65 | eng | Vocabulary
+Select the correct synonym of the given word.
+Feeble
+(1) famous
+(2) funny
+(3) frail
+(4) fluent
+= 3
+~ 'Feeble' means weak or lacking strength; 'frail' (weak, delicate) is its synonym.
+
+Q 66 | eng | Vocabulary
+Select the correct antonym of the given word.
+Elude
+(1) escape
+(2) evade
+(3) encounter
+(4) eschew
+= 3
+~ 'Elude' means to escape from or avoid; its opposite is 'encounter' (to meet or face). 'Escape', 'evade' and 'eschew' are close in meaning to 'elude'.
+
+Q 67 | eng | Vocabulary
+Fill in the blank with the most appropriate word.
+The ______ was caught with a consignment of ______.
+(1) heroin, heroin
+(2) heroine, heroin
+(3) heroin, heroine
+(4) heroine, heroine
+= 2
+~ 'Heroine' is a woman (the female lead) and 'heroin' is a narcotic drug. A person is caught with a consignment of drugs: 'The heroine was caught with a consignment of heroin.'
+
+Q 68 | eng | Vocabulary
+Select the correct meaning of the given idiom.
+Eat like a horse
+(1) to eat while standing
+(2) to eat very slowly
+(3) to have a large appetite
+(4) to make a mess while eating
+= 3
+~ To 'eat like a horse' means to eat a great deal, i.e. to have a large appetite.
+
+Q 69 | eng | Vocabulary
+Select the correct meaning of the given proverb.
+All that glitters is not gold
+(1) if something does not shine, it cannot be gold
+(2) things may not be as valuable as they seem
+(3) it is not easy to find pure gold
+(4) purity of metals determines their value
+= 2
+~ The proverb warns that attractive appearances can deceive: things may not be as valuable as they seem.
+
+Q 70 | eng | Vocabulary
+Select the correctly spelt word.
+(1) Pavilion
+(2) Pavillion
+(3) Pavelion
+(4) Pavileon
+= 1
+~ The correct spelling is 'Pavilion' (p-a-v-i-l-i-o-n): a single 'l' and the ending '-ion'.
+
+Q 71 | eng | Vocabulary
+Select the incorrectly spelt word.
+(1) Vengeance
+(2) Unconscious
+(3) Acclamatize
+(4) Maleficent
+= 3
+~ 'Acclamatize' is misspelt; the correct form is 'acclimatize' (built on 'climate'). Vengeance, Unconscious and Maleficent are spelt correctly.
+
+Q 72 | eng | Grammar
+Identify the grammatically correct sentence.
+(1) He had take part in the dance competition as he couldn’t sprained his ankle.
+(2) He couldn’t sprained his ankle in the dance competition as he had take part.
+(3) He couldn’t take part in the dance competition as he had sprained his ankle.
+(4) The dance competition he had sprained in his ankle as he couldn’t take part.
+= 3
+~ Option 3 is correct in form and logic: 'couldn’t' is followed by the base verb ('take part'), and the past perfect 'had sprained' shows the earlier action that caused it. The others misuse 'had take' / 'couldn’t sprained' or jumble the order.
+
+Q 73 | eng | Comprehension & Usage
+Arrange the following sentences in the correct order to form a meaningful paragraph.
+A. Yet, most patients with the problem choose to neglect it.
+B. These could range from pain to blurred vision.
+C. It manifests as a complex condition with a host of symptoms.
+D. Migraine is much more than a severe headache.
+(1) DABC
+(2) DCBA
+(3) CADB
+(4) CBAD
+= 2
+~ D introduces the topic (migraine is more than a headache), C says it is a complex condition with many symptoms, B describes 'these' symptoms, and A adds the contrast ('Yet, ... neglect it'). Order: DCBA.
+
+Q 74 | eng | Vocabulary
+Fill in the blank with the most appropriate word.
+My cousin ______ that she had been neglecting her studies.
+(1) continued
+(2) consoled
+(3) confessed
+(4) conducted
+= 3
+~ 'Confessed' (admitted something wrong) fits the clause 'that she had been neglecting her studies'; continued, consoled and conducted make no sense with it.
+
+Q 75 | eng | Vocabulary
+Fill in the blank with the most appropriate word.
+The situation calls for ______ action by the government.
+(1) eager
+(2) prompt
+(3) sharp
+(4) fluent
+= 2
+~ 'Prompt action' means quick, immediate action — the natural collocation after 'calls for'. Eager, sharp and fluent do not fit 'action' here.
+
+Q 76 | eng | Comprehension & Usage
+Read the passage given below and answer the questions that follow.
+Each drop represents a little bit of creation and of life itself. When the monsoon brings to northern India the first rains of summer, the parched earth opens its pores and quenches its thirst with a hiss of ecstasy. After baking in the sun for the last few months, the land looks cracked, dusty and tired. Now, almost overnight, new grass springs up, there is renewal everywhere, and the damp earth releases a fragrance sweeter than any devised by man.
+Water brings joy to earth, grass, leaf, bud, blossom, insect, bird, animal and the pounding heart of man. Small children run out of their homes to romp naked in the rain. Buffaloes, which have spent the summer listlessly around lakes gone dry, now plunge into a heaven of muddy water. Soon the lakes and rivers will overflow with the monsoon’s generosity. Trekking in the Himalayan foothills, I recently walked for kilometres without encountering habitation. I was just scolding myself for not having brought along a water bottle, when I came across a patch of green on a rock face. I parted a curtain of tender maiden hair fern and discovered a tiny spring issuing from the rock --nectar for the thirsty traveller.
+I stayed there for hours, watching the water descend, drop by drop, into a tiny casement in the rocks. Each drop reflected creation. That same spring, I later discovered, joined other springs to form a swift, tumbling stream, which went cascading down the hill into other streams until, in the plains, it became part of a river. And that river flowed into another mightier river that kilometres later emptied into the ocean. Be like water, taught Laotzu, philosopher and founder of Taoism. Soft and limpid, it finds its way through, over or under any obstacle. It does not quarrel; it simply moves on.
+The tiny spring issuing from the rock was hidden by:
+(1) Grass
+(2) Curtain
+(3) Fern
+(4) Mud
+= 3
+~ The writer says, 'I parted a curtain of tender maiden hair fern and discovered a tiny spring' — so the spring was hidden by fern. 'Curtain' is only a figure of speech for the fern.
+
+Q 77 | eng | Comprehension & Usage
+Read the passage given below and answer the questions that follow.
+Each drop represents a little bit of creation and of life itself. When the monsoon brings to northern India the first rains of summer, the parched earth opens its pores and quenches its thirst with a hiss of ecstasy. After baking in the sun for the last few months, the land looks cracked, dusty and tired. Now, almost overnight, new grass springs up, there is renewal everywhere, and the damp earth releases a fragrance sweeter than any devised by man.
+Water brings joy to earth, grass, leaf, bud, blossom, insect, bird, animal and the pounding heart of man. Small children run out of their homes to romp naked in the rain. Buffaloes, which have spent the summer listlessly around lakes gone dry, now plunge into a heaven of muddy water. Soon the lakes and rivers will overflow with the monsoon’s generosity. Trekking in the Himalayan foothills, I recently walked for kilometres without encountering habitation. I was just scolding myself for not having brought along a water bottle, when I came across a patch of green on a rock face. I parted a curtain of tender maiden hair fern and discovered a tiny spring issuing from the rock --nectar for the thirsty traveller.
+I stayed there for hours, watching the water descend, drop by drop, into a tiny casement in the rocks. Each drop reflected creation. That same spring, I later discovered, joined other springs to form a swift, tumbling stream, which went cascading down the hill into other streams until, in the plains, it became part of a river. And that river flowed into another mightier river that kilometres later emptied into the ocean. Be like water, taught Laotzu, philosopher and founder of Taoism. Soft and limpid, it finds its way through, over or under any obstacle. It does not quarrel; it simply moves on.
+The tiny spring finally became a part of:
+(1) a stream
+(2) a hill
+(3) a river
+(4) the ocean
+= 4
+~ The spring joined other springs to form a stream, then became part of a river, which flowed into a mightier river that 'emptied into the ocean' — so finally it became part of the ocean.
+
+Q 78 | eng | Comprehension & Usage
+Read the passage given below and answer the questions that follow.
+Each drop represents a little bit of creation and of life itself. When the monsoon brings to northern India the first rains of summer, the parched earth opens its pores and quenches its thirst with a hiss of ecstasy. After baking in the sun for the last few months, the land looks cracked, dusty and tired. Now, almost overnight, new grass springs up, there is renewal everywhere, and the damp earth releases a fragrance sweeter than any devised by man.
+Water brings joy to earth, grass, leaf, bud, blossom, insect, bird, animal and the pounding heart of man. Small children run out of their homes to romp naked in the rain. Buffaloes, which have spent the summer listlessly around lakes gone dry, now plunge into a heaven of muddy water. Soon the lakes and rivers will overflow with the monsoon’s generosity. Trekking in the Himalayan foothills, I recently walked for kilometres without encountering habitation. I was just scolding myself for not having brought along a water bottle, when I came across a patch of green on a rock face. I parted a curtain of tender maiden hair fern and discovered a tiny spring issuing from the rock --nectar for the thirsty traveller.
+I stayed there for hours, watching the water descend, drop by drop, into a tiny casement in the rocks. Each drop reflected creation. That same spring, I later discovered, joined other springs to form a swift, tumbling stream, which went cascading down the hill into other streams until, in the plains, it became part of a river. And that river flowed into another mightier river that kilometres later emptied into the ocean. Be like water, taught Laotzu, philosopher and founder of Taoism. Soft and limpid, it finds its way through, over or under any obstacle. It does not quarrel; it simply moves on.
+How do children respond to the first rain?
+(1) by jumping into the muddy water
+(2) by running and playing in the rain
+(3) by bathing in lakes and rivers
+(4) by sniffing the fragrance of damp earth
+= 2
+~ The passage says, 'Small children run out of their homes to romp naked in the rain' — they run out and play in the rain. Plunging into muddy water is what the buffaloes do.
+
+Q 79 | eng | Comprehension & Usage
+Read the passage given below and answer the questions that follow.
+Each drop represents a little bit of creation and of life itself. When the monsoon brings to northern India the first rains of summer, the parched earth opens its pores and quenches its thirst with a hiss of ecstasy. After baking in the sun for the last few months, the land looks cracked, dusty and tired. Now, almost overnight, new grass springs up, there is renewal everywhere, and the damp earth releases a fragrance sweeter than any devised by man.
+Water brings joy to earth, grass, leaf, bud, blossom, insect, bird, animal and the pounding heart of man. Small children run out of their homes to romp naked in the rain. Buffaloes, which have spent the summer listlessly around lakes gone dry, now plunge into a heaven of muddy water. Soon the lakes and rivers will overflow with the monsoon’s generosity. Trekking in the Himalayan foothills, I recently walked for kilometres without encountering habitation. I was just scolding myself for not having brought along a water bottle, when I came across a patch of green on a rock face. I parted a curtain of tender maiden hair fern and discovered a tiny spring issuing from the rock --nectar for the thirsty traveller.
+I stayed there for hours, watching the water descend, drop by drop, into a tiny casement in the rocks. Each drop reflected creation. That same spring, I later discovered, joined other springs to form a swift, tumbling stream, which went cascading down the hill into other streams until, in the plains, it became part of a river. And that river flowed into another mightier river that kilometres later emptied into the ocean. Be like water, taught Laotzu, philosopher and founder of Taoism. Soft and limpid, it finds its way through, over or under any obstacle. It does not quarrel; it simply moves on.
+Which of the following words is most similar in meaning to the word ‘pounding’ as used in para 2 of the passage?
+(1) shaking
+(2) benumbing
+(3) palpitating
+(4) sinking
+= 3
+~ 'The pounding heart of man' is a heart beating hard and fast with joy — that is, palpitating.
+
+Q 80 | eng | Comprehension & Usage
+Read the passage given below and answer the questions that follow.
+Each drop represents a little bit of creation and of life itself. When the monsoon brings to northern India the first rains of summer, the parched earth opens its pores and quenches its thirst with a hiss of ecstasy. After baking in the sun for the last few months, the land looks cracked, dusty and tired. Now, almost overnight, new grass springs up, there is renewal everywhere, and the damp earth releases a fragrance sweeter than any devised by man.
+Water brings joy to earth, grass, leaf, bud, blossom, insect, bird, animal and the pounding heart of man. Small children run out of their homes to romp naked in the rain. Buffaloes, which have spent the summer listlessly around lakes gone dry, now plunge into a heaven of muddy water. Soon the lakes and rivers will overflow with the monsoon’s generosity. Trekking in the Himalayan foothills, I recently walked for kilometres without encountering habitation. I was just scolding myself for not having brought along a water bottle, when I came across a patch of green on a rock face. I parted a curtain of tender maiden hair fern and discovered a tiny spring issuing from the rock --nectar for the thirsty traveller.
+I stayed there for hours, watching the water descend, drop by drop, into a tiny casement in the rocks. Each drop reflected creation. That same spring, I later discovered, joined other springs to form a swift, tumbling stream, which went cascading down the hill into other streams until, in the plains, it became part of a river. And that river flowed into another mightier river that kilometres later emptied into the ocean. Be like water, taught Laotzu, philosopher and founder of Taoism. Soft and limpid, it finds its way through, over or under any obstacle. It does not quarrel; it simply moves on.
+What important lesson can we learn from water?
+(1) to value natural resources
+(2) to rejuvenate others
+(3) to lose our identity
+(4) to move on, making our way through obstacles
+= 4
+~ Laotzu's lesson is that water 'finds its way through, over or under any obstacle. It does not quarrel; it simply moves on' — so we should move on, making our way through obstacles.
+
+Q 81 | hin | Grammar
+कर्म कारक की विभक्ति कौनसी है?
+(1) के
+(2) का
+(3) को
+(4) की
+= 3
+~ The case-ending (vibhakti) of karm kaarak (objective case) is 'को' (ko), e.g. 'राम ने रावण को मारा' (Ram killed Ravan). 'का, के, की' (ka, ke, ki) mark sambandh kaarak (possessive case).
+
+Q 82 | hin | Grammar
+कारक प्रयोग की दृष्टि से अशुद्ध वाक्य है-
+(1) आपने एक को भी नहीं देखा।
+(2) मैं यह पुस्तक पढ़ा हूँ।
+(3) बालिका ने कहा था।
+(4) बहन ने कहा है कि कल से पढाई होगी।
+= 2
+~ With a transitive verb (पढ़ना, 'to read') in the perfect/past tense, the subject takes 'ने' (ne) and the verb agrees with the object: correct form 'मैंने यह पुस्तक पढ़ी है' (I have read this book). So option 2 is wrong.
+
+Q 83 | hin | Grammar
+इनमें कौनसा अनिश्चित संख्यावाचक विशेषण है?
+(1) सब जंगल
+(2) बहुत दूध
+(3) बहुत आदमी
+(4) सारा देश
+= 3
+~ 'बहुत आदमी' (bahut aadmi, many men): men are countable but the number is not fixed, so it is an indefinite numeral adjective (anishchit sankhyavachak). 'बहुत दूध' (much milk) is an indefinite quantitative adjective (parimanvachak), since milk is measured, not counted.
+
+Q 84 | hin | Grammar
+‘पुरस्कार’ शब्द का उचित संधि विच्छेद है-
+(1) पुरः + कार
+(2) पुरस + कार
+(3) पुर + स्कार
+(4) पु + रस्कार
+= 1
+~ पुरस्कार (puraskar, 'reward') = पुरः + कार (puraḥ + kaar), a visarga sandhi: in some words a visarga before 'क' (k) becomes 'स्' (s), as in नमः + कार = नमस्कार (namaskar).
+
+Q 85 | hin | Grammar
+किस विकल्प में शब्द का संधि विच्छेद अनुचित है?
+(1) अहन् + रात्र = अहोरात्र
+(2) वि + सर्ज = विसर्ग
+(3) विस्म + अरण = विस्मरण
+(4) नमः + कार = नमस्कार
+= 3
+~ विस्मरण (vismaran, 'forgetting') is वि + स्मरण (prefix vi + smaran); 'विस्म + अरण' is a meaningless split. अहन् + रात्र = अहोरात्र (ahoratra) is a well-known exception, वि + सर्ज = विसर्ग (visarg) follows ज → ग as in त्यज् → त्याग, and नमः + कार = नमस्कार is a visarga sandhi.
+
+Q 86 | hin | Vocabulary & Usage
+इनमें ‘मशहूर’ का पर्यायवाची शब्द कौनसा है?
+(1) ख्याति
+(2) लब्ध प्रतिष्ठ
+(3) ठट्ठेबाज
+(4) नवनीत
+= 2
+~ 'मशहूर' (mashhoor, 'famous') = 'लब्ध प्रतिष्ठ' (labdh pratishth, 'one who has won renown'). 'ख्याति' (khyati) is the noun 'fame'; 'ठट्ठेबाज' (thatthebaaz) means a joker and 'नवनीत' (navneet) means butter.
+
+Q 87 | hin | Vocabulary & Usage
+‘संवाददाता’ का पर्यायवाची शब्द नहीं है-
+(1) नमानिगार
+(2) प्रतिवेदक
+(3) समाचारदाता
+(4) विवर्धक
+= 4
+~ 'संवाददाता' (samvaddata, 'correspondent/reporter') has the synonyms नामानिगार (namanigar), प्रतिवेदक (prativedak) and समाचारदाता (samachardata). 'विवर्धक' (vivardhak) means 'that which increases/enlarges', so it is not a synonym.
+
+Q 88 | hin | Vocabulary & Usage
+‘अतिवृष्टि’ का विलोम युग्म कौनसा है?
+(1) उपवृष्टि
+(2) सूखा
+(3) अकाल
+(4) अनावृष्टि
+= 4
+~ 'अतिवृष्टि' (ativrishti, excessive rain) has the antonym 'अनावृष्टि' (anavrishti, absence of rain). 'सूखा' (drought) and 'अकाल' (famine) are results of no rain, not the standard antonym.
+
+Q 89 | hin | Vocabulary & Usage
+विलोम युग्म की दृष्टि से अनुचित विकल्प है-
+(1) एकतंत्र - बहुतंत्र
+(2) उद्यम - उर्वर
+(3) क्षर - अक्षर
+(4) ऋजु - वक्र
+= 2
+~ 'उद्यम' (udyam, effort) is opposed to 'आलस्य' (laziness) and 'उर्वर' (urvar, fertile) to 'ऊसर' (barren), so 'उद्यम - उर्वर' is not an antonym pair. The others are true pairs: rule by one/many, perishable/imperishable, straight/crooked.
+
+Q 90 | hin | Vocabulary & Usage
+इनमें ‘नहार तोड़ना’ मुहावरे का अर्थ है-
+(1) जलपान कर लेना
+(2) बहुतायत कर देना
+(3) न खाना
+(4) बिना कुछ खाये-पिये
+= 1
+~ 'नहार तोड़ना' (nahaar todna, literally 'to break the empty stomach') means to eat something in the morning, i.e. have breakfast — 'जलपान कर लेना' (jalpaan kar lena).
+
+Q 91 | hin | Vocabulary & Usage
+किस विकल्प में लोकोक्ति और उसका अर्थ सुमेलित नहीं है?
+(1) अपना हाथ जगन्नाथ – अपना काम अपने हाथों से करना फलदाई
+(2) आगे कुआं, पीछे खाई – दोनों ओर विपत्ति होना
+(3) आवां का आवां बिगाड़ना – परिवार के सभी लोगों का बिगड़ जाना
+(4) एक अनार सौ बीमार – बेमेल चीजें जिनमें सामंजस्य का आभाव
+= 4
+~ 'एक अनार सौ बीमार' (ek anaar sau beemar, 'one pomegranate, a hundred sick people') means one thing wanted by many (little supply, much demand), not 'mismatched things lacking harmony'. The other three pairs are correctly matched.
+
+Q 92 | hin | Grammar
+इनमें कौनसा आसन्न भूतकाल वाला वाक्य नहीं है?
+(1) आपने कई पुस्तकें लिखी हैं।
+(2) उसने बढाई का कार्य किया है।
+(3) वे आपको बुलाते हैं।
+(4) उसने अभी नहाया है।
+= 3
+~ Aasann bhootkaal (recent past / present perfect) is past participle + है/हैं (hai/hain): लिखी हैं, किया है, नहाया है. 'वे आपको बुलाते हैं' (they call you) is in the simple present tense.
+
+Q 93 | hin | Grammar
+किस वाक्य में कर्ता और क्रिया का समन्वय नहीं है?
+(1) सुदामा, राम या श्याम जाएगा।
+(2) एक झोंपड़ी और दो तम्बू जल गए।
+(3) राम और सीता आई।
+(4) अध्यापक, कर्मचारी अथवा छात्रा खेल रही थी।
+= 3
+~ Two animate subjects joined by 'और' (and) take a plural verb, masculine when the genders differ: 'राम और सीता आए' (Ram and Sita came). With inanimate subjects joined by 'और' the verb follows the nearest one ('दो तम्बू जल गए' is right), and with 'या/अथवा' (or) it agrees with the last subject, so options 1, 2 and 4 are correct.
+
+Q 94 | hin | Vocabulary & Usage
+मुझे संस्कृत का ______ ज्ञान नहीं है। उचित शब्द का चयन कर वाक्य पूर्ण कीजिए।
+(1) व्यवहारिक
+(2) व्यावहारिक
+(3) मानसिक
+(4) भौतिकी
+= 2
+~ Adding the suffix 'इक' (ik) to 'व्यवहार' (vyavahar) lengthens the first vowel (vriddhi), giving 'व्यावहारिक' (vyavaharik, practical); 'व्यवहारिक' is a misspelling.
+
+Q 95 | hin | Grammar
+किस वाक्य में ‘मत’ (आज्ञा के लिए) का प्रयोग अशुद्ध और अनुचित है?
+(1) जब तक मैं नहीं आऊँ तुम दफ़्तर बंद मत करना।
+(2) मैंने उसको बोला कि कल से मत आना।
+(3) आप यहाँ से मत जाएइ।
+(4) कार मत तेज मत चलाओ।
+= 4
+~ In a prohibitive command 'मत' (mat, 'don't') is used once, normally just before the verb: 'कार तेज मत चलाओ' (don't drive the car fast). Option 4 uses 'मत' twice, so it is wrong.
+
+Q 96 | hin | Literature & Comprehension
+दिये गए गध्यांश को ध्यानपूर्वक पढ़ें और दिये गए प्रश्नों का उत्तर दीजिये।
+राम की रावण के ऊपर विजय उतनी महत्वपूर्ण नहीं है जितनी राम की प्रजा के मनोविज्ञान के ऊपर यह विजय। राम का वैयक्तिक जीवन अपनी प्राण-सहचरी के प्रति इस गंभीर-स्नेह-भावना से सर्वथा परिप्लावित है और वे सामाजिक समरसता के प्रतीक तो चाहें बाद में बनें, वैयक्तिक समरसता के तो वे मूर्तिमान उदाहरण हैं। संभवतः लोक से अधिक वे व्यक्ति में ही सफल हुए हैं जब कि भगवान श्रीकृष्ण का व्यक्तिगत संबंध किसी से है ही नहीं, जिनकी इंद्रियों को शतसहस्त्र रमणियों की कुहक विमथित नहीं कर सकी थी, जिन्हें पुत्र-पौत्रादि का सुख एक क्षण भी खींच नहीं सका, जिन्हें स्वजनों का विनाश भी लोकहित के लिए अभीष्ट हो गया था और जिन्हें जीवन भर विराट विरक्ति बनी रही अपने व्यक्तित्व के प्रति। पर हाय री विडंबने, वे कृष्ण प्रेम के आराध्य देवता हो गए, वे जादूवाले कन्हैया हो गए और कामुकता के लिए एक सुलभ आलंबन।
+राम की लोकप्रियता का श्रेय लोक-रंजन को आज तक भले ही दिया जाता रहा हो, पर मेरी दृष्टि में यह श्रेय उनकी व्यक्ति की पूर्णतया को अधिक देना चाहिए। राम लोक-हृदय पर विजयी हुए हैं इसलिए कि वे अपने ऊपर विजयी हैं, कृष्ण अपने ऊपर विजयी आपाततः हैं, इसे उन्होंने साधन बनाया है अपने लोक-विजय के लिए दोनों के महान चरित्रों का यही विश्लेषण है और दोनों के आदर्श पृथक-पृथक क्षेत्रों में हैं, इसे एक दूसरे के साथ मिलाना नहीं चाहिए।
+किसे राम की लोकप्रियता का अधिक श्रेय देना चाहिए?
+(1) रावण के ज्ञान को
+(2) राम के व्यक्तित्व की पूर्णता को
+(3) लोक रंजन को
+(4) सीता की पतिव्रता को
+= 2
+~ The author says the credit for Ram's popularity should go more to his completeness as a person ('व्यक्ति की पूर्णता', vyakti ki poornata) than to लोक-रंजन (lok-ranjan, pleasing the people), to which it has traditionally been given.
+
+Q 97 | hin | Literature & Comprehension
+दिये गए गध्यांश को ध्यानपूर्वक पढ़ें और दिये गए प्रश्नों का उत्तर दीजिये।
+राम की रावण के ऊपर विजय उतनी महत्वपूर्ण नहीं है जितनी राम की प्रजा के मनोविज्ञान के ऊपर यह विजय। राम का वैयक्तिक जीवन अपनी प्राण-सहचरी के प्रति इस गंभीर-स्नेह-भावना से सर्वथा परिप्लावित है और वे सामाजिक समरसता के प्रतीक तो चाहें बाद में बनें, वैयक्तिक समरसता के तो वे मूर्तिमान उदाहरण हैं। संभवतः लोक से अधिक वे व्यक्ति में ही सफल हुए हैं जब कि भगवान श्रीकृष्ण का व्यक्तिगत संबंध किसी से है ही नहीं, जिनकी इंद्रियों को शतसहस्त्र रमणियों की कुहक विमथित नहीं कर सकी थी, जिन्हें पुत्र-पौत्रादि का सुख एक क्षण भी खींच नहीं सका, जिन्हें स्वजनों का विनाश भी लोकहित के लिए अभीष्ट हो गया था और जिन्हें जीवन भर विराट विरक्ति बनी रही अपने व्यक्तित्व के प्रति। पर हाय री विडंबने, वे कृष्ण प्रेम के आराध्य देवता हो गए, वे जादूवाले कन्हैया हो गए और कामुकता के लिए एक सुलभ आलंबन।
+राम की लोकप्रियता का श्रेय लोक-रंजन को आज तक भले ही दिया जाता रहा हो, पर मेरी दृष्टि में यह श्रेय उनकी व्यक्ति की पूर्णतया को अधिक देना चाहिए। राम लोक-हृदय पर विजयी हुए हैं इसलिए कि वे अपने ऊपर विजयी हैं, कृष्ण अपने ऊपर विजयी आपाततः हैं, इसे उन्होंने साधन बनाया है अपने लोक-विजय के लिए दोनों के महान चरित्रों का यही विश्लेषण है और दोनों के आदर्श पृथक-पृथक क्षेत्रों में हैं, इसे एक दूसरे के साथ मिलाना नहीं चाहिए।
+राम किसके मूर्तिमान उदाहरण हैं?
+(1) वैयक्तिक समरसता के
+(2) सामाजिक समरसता के
+(3) सहचरी के प्रति गंभीर-स्नेह-भावना के
+(4) राम की रावण के ऊपर विजय के
+= 1
+~ The passage says Ram is the living example (मूर्तिमान उदाहरण, murtimaan udaharan) of personal harmony — 'वैयक्तिक समरसता' (vaiyaktik samarasta); a symbol of social harmony he may have become only later.
+
+Q 98 | hin | Literature & Comprehension
+दिये गए गध्यांश को ध्यानपूर्वक पढ़ें और दिये गए प्रश्नों का उत्तर दीजिये।
+राम की रावण के ऊपर विजय उतनी महत्वपूर्ण नहीं है जितनी राम की प्रजा के मनोविज्ञान के ऊपर यह विजय। राम का वैयक्तिक जीवन अपनी प्राण-सहचरी के प्रति इस गंभीर-स्नेह-भावना से सर्वथा परिप्लावित है और वे सामाजिक समरसता के प्रतीक तो चाहें बाद में बनें, वैयक्तिक समरसता के तो वे मूर्तिमान उदाहरण हैं। संभवतः लोक से अधिक वे व्यक्ति में ही सफल हुए हैं जब कि भगवान श्रीकृष्ण का व्यक्तिगत संबंध किसी से है ही नहीं, जिनकी इंद्रियों को शतसहस्त्र रमणियों की कुहक विमथित नहीं कर सकी थी, जिन्हें पुत्र-पौत्रादि का सुख एक क्षण भी खींच नहीं सका, जिन्हें स्वजनों का विनाश भी लोकहित के लिए अभीष्ट हो गया था और जिन्हें जीवन भर विराट विरक्ति बनी रही अपने व्यक्तित्व के प्रति। पर हाय री विडंबने, वे कृष्ण प्रेम के आराध्य देवता हो गए, वे जादूवाले कन्हैया हो गए और कामुकता के लिए एक सुलभ आलंबन।
+राम की लोकप्रियता का श्रेय लोक-रंजन को आज तक भले ही दिया जाता रहा हो, पर मेरी दृष्टि में यह श्रेय उनकी व्यक्ति की पूर्णतया को अधिक देना चाहिए। राम लोक-हृदय पर विजयी हुए हैं इसलिए कि वे अपने ऊपर विजयी हैं, कृष्ण अपने ऊपर विजयी आपाततः हैं, इसे उन्होंने साधन बनाया है अपने लोक-विजय के लिए दोनों के महान चरित्रों का यही विश्लेषण है और दोनों के आदर्श पृथक-पृथक क्षेत्रों में हैं, इसे एक दूसरे के साथ मिलाना नहीं चाहिए।
+राम लोक-हृदय पर क्यों विजयी हुए हैं?
+(1) इसलिए की वे प्रजा को महत्व देते थे।
+(2) इसलिए के उन्होंने रावण को पराजित किया था।
+(3) इसलिए कि लोक से अधिक वे व्यक्ति में ही सफल हुए हैं।
+(4) इसलिए कि वे अपने ऊपर विजयी हैं।
+= 4
+~ The passage states that Ram won the people's hearts 'इसलिए कि वे अपने ऊपर विजयी हैं' — because he had conquered himself (self-mastery).
+
+Q 99 | hin | Literature & Comprehension
+दिये गए गध्यांश को ध्यानपूर्वक पढ़ें और दिये गए प्रश्नों का उत्तर दीजिये।
+राम की रावण के ऊपर विजय उतनी महत्वपूर्ण नहीं है जितनी राम की प्रजा के मनोविज्ञान के ऊपर यह विजय। राम का वैयक्तिक जीवन अपनी प्राण-सहचरी के प्रति इस गंभीर-स्नेह-भावना से सर्वथा परिप्लावित है और वे सामाजिक समरसता के प्रतीक तो चाहें बाद में बनें, वैयक्तिक समरसता के तो वे मूर्तिमान उदाहरण हैं। संभवतः लोक से अधिक वे व्यक्ति में ही सफल हुए हैं जब कि भगवान श्रीकृष्ण का व्यक्तिगत संबंध किसी से है ही नहीं, जिनकी इंद्रियों को शतसहस्त्र रमणियों की कुहक विमथित नहीं कर सकी थी, जिन्हें पुत्र-पौत्रादि का सुख एक क्षण भी खींच नहीं सका, जिन्हें स्वजनों का विनाश भी लोकहित के लिए अभीष्ट हो गया था और जिन्हें जीवन भर विराट विरक्ति बनी रही अपने व्यक्तित्व के प्रति। पर हाय री विडंबने, वे कृष्ण प्रेम के आराध्य देवता हो गए, वे जादूवाले कन्हैया हो गए और कामुकता के लिए एक सुलभ आलंबन।
+राम की लोकप्रियता का श्रेय लोक-रंजन को आज तक भले ही दिया जाता रहा हो, पर मेरी दृष्टि में यह श्रेय उनकी व्यक्ति की पूर्णतया को अधिक देना चाहिए। राम लोक-हृदय पर विजयी हुए हैं इसलिए कि वे अपने ऊपर विजयी हैं, कृष्ण अपने ऊपर विजयी आपाततः हैं, इसे उन्होंने साधन बनाया है अपने लोक-विजय के लिए दोनों के महान चरित्रों का यही विश्लेषण है और दोनों के आदर्श पृथक-पृथक क्षेत्रों में हैं, इसे एक दूसरे के साथ मिलाना नहीं चाहिए।
+गद्यांश में ‘परिप्लावित’ शब्द का अर्थ है -
+(1) मोहित
+(2) आसक्त
+(3) सराबोर
+(4) आश्रित
+= 3
+~ 'परिप्लावित' (pariplaavit) means soaked or immersed — 'सराबोर' (sarabor, drenched). Ram's personal life is described as wholly drenched in deep affection for his consort.
+
+Q 100 | hin | Literature & Comprehension
+दिये गए गध्यांश को ध्यानपूर्वक पढ़ें और दिये गए प्रश्नों का उत्तर दीजिये।
+राम की रावण के ऊपर विजय उतनी महत्वपूर्ण नहीं है जितनी राम की प्रजा के मनोविज्ञान के ऊपर यह विजय। राम का वैयक्तिक जीवन अपनी प्राण-सहचरी के प्रति इस गंभीर-स्नेह-भावना से सर्वथा परिप्लावित है और वे सामाजिक समरसता के प्रतीक तो चाहें बाद में बनें, वैयक्तिक समरसता के तो वे मूर्तिमान उदाहरण हैं। संभवतः लोक से अधिक वे व्यक्ति में ही सफल हुए हैं जब कि भगवान श्रीकृष्ण का व्यक्तिगत संबंध किसी से है ही नहीं, जिनकी इंद्रियों को शतसहस्त्र रमणियों की कुहक विमथित नहीं कर सकी थी, जिन्हें पुत्र-पौत्रादि का सुख एक क्षण भी खींच नहीं सका, जिन्हें स्वजनों का विनाश भी लोकहित के लिए अभीष्ट हो गया था और जिन्हें जीवन भर विराट विरक्ति बनी रही अपने व्यक्तित्व के प्रति। पर हाय री विडंबने, वे कृष्ण प्रेम के आराध्य देवता हो गए, वे जादूवाले कन्हैया हो गए और कामुकता के लिए एक सुलभ आलंबन।
+राम की लोकप्रियता का श्रेय लोक-रंजन को आज तक भले ही दिया जाता रहा हो, पर मेरी दृष्टि में यह श्रेय उनकी व्यक्ति की पूर्णतया को अधिक देना चाहिए। राम लोक-हृदय पर विजयी हुए हैं इसलिए कि वे अपने ऊपर विजयी हैं, कृष्ण अपने ऊपर विजयी आपाततः हैं, इसे उन्होंने साधन बनाया है अपने लोक-विजय के लिए दोनों के महान चरित्रों का यही विश्लेषण है और दोनों के आदर्श पृथक-पृथक क्षेत्रों में हैं, इसे एक दूसरे के साथ मिलाना नहीं चाहिए।
+गद्यांश के लिए अधिक उपयुक्त शीर्षक कौनसा है?
+(1) राम और कृष्ण की लोक-विजय
+(2) राम की भक्ति और शक्ति
+(3) कृष्ण की महत्ता
+(4) राम तथा कृष्ण की तुलना
+= 1
+~ The passage analyses how and why both Ram and Krishna won the people's hearts (लोक-विजय, lok-vijay), so 'राम और कृष्ण की लोक-विजय' is the most suitable title.
+
+Q 101 | ee | Basic Science & Engineering Drawing
+One mol of water molecule contains:
+(1) 6.022 × 10^23 molecules
+(2) 3.022 × 10^23 molecules
+(3) 1.66 × 10^12 molecules
+(4) 1.66 × 10^23 molecules
+= 1
+~ One mole of any substance contains Avogadro's number of particles, N_A = 6.022 × 10^23. So one mole of water contains 6.022 × 10^23 water molecules.
+
+Q 102 | ee | Basic Science & Engineering Drawing
+What is the molar mass of water?
+(1) 3.0 gmol^-1
+(2) 36.02 gmol^-1
+(3) 18.02 gmol^-1
+(4) 6.02 gmol^-1
+= 3
+~ Molar mass of H2O = 2 × (atomic mass of H) + (atomic mass of O) = 2 × 1.008 + 16.00 = 18.02 g mol^-1.
+
+Q 103 | ee | Basic Science & Engineering Drawing
+The second orbit of an atom contains 6 electrons. If it’s atomic mass is 17, then the number of protons in it’s nucleus will be:
+(1) 6
+(2) 8
+(3) 9
+(4) 17
+= 2
+~ Electrons fill the first orbit (K shell, 2 electrons) before the second, so the configuration is 2, 6 = 8 electrons. A neutral atom has as many protons as electrons, so it has 8 protons (oxygen); mass 17 just means 9 neutrons (O-17).
+
+Q 104 | ee | Basic Science & Engineering Drawing
+The oxygen dissolved in cold water can reach a concentration upto:
+(1) 1 parts per million (ppm)
+(2) 3 parts per million (ppm)
+(3) 10 parts per million (ppm)
+(4) 100 parts per million (ppm)
+= 3
+~ Gases are more soluble in cold water. As stated in NCERT (Environmental Chemistry), the dissolved oxygen (DO) in cold water can reach a concentration of up to about 10 ppm.
+
+Q 105 | ee | Circuits & Electromagnetism
+According to Coulomb’s law, the force between two point charges q₁ and q₂ separated by a distance r is given by:
+(1) F = k q₁q₂/r^2
+(2) F = k q₁q₂/r
+(3) F = k q₁q₂
+(4) F = k q₁q₂r
+= 1
+~ Coulomb's law: the force between two point charges is directly proportional to the product of the charges and inversely proportional to the square of the distance between them, F = k q₁q₂/r^2, where k = 1/(4πε₀) ≈ 9 × 10^9 N m^2 C^-2.
+
+Q 106 | ee | Circuits & Electromagnetism
+The heat produced in a resistor by current in time t is given by:
+(1) H = I^2Rt joule
+(2) H = IRt joule
+(3) H = I^2R/t joule
+(4) H = IR joule
+= 1
+~ Joule's law of heating: power lost in a resistor is P = I^2R, so the heat produced in time t is H = I^2Rt joule. (IR is only the voltage across the resistor.)
+
+Q 107 | ee | Circuits & Electromagnetism
+According to Biot-Savart law, the magnitude of the field in SI unit is given by:
+(1) dB = 4π μ₀ I dl sin θ / r
+(2) dB = μ₀ I dl sin θ / (4π r^2)
+(3) dB = μ₀ I dl sin θ / (4π r)
+(4) dB = 4π μ₀ I dl sin θ / r^2
+= 2
+~ Biot-Savart law: the field due to a current element I dl at distance r is dB = (μ₀/4π) · I dl sin θ / r^2, i.e. proportional to I, dl and sin θ and inversely proportional to r^2 (μ₀/4π = 10^-7 T m/A).
+
+Q 108 | ee | Electronics & Power Electronics
+If n_p and n_e is the number of holes and electrons respectively in an intrinsic semiconductor then:
+(1) n_p = n_e
+(2) n_p > n_e
+(3) n_p < n_e
+(4) n_p n_e = 1
+= 1
+~ In a pure (intrinsic) semiconductor every broken covalent bond releases one free electron and leaves one hole, so holes and electrons are equal: n_p = n_e = n_i. (The mass-action law gives n_p n_e = n_i^2, not 1.)
+
+Q 109 | ee | Basic Science & Engineering Drawing
+Which term of the series 2 + 5 + 8 + ------ is 50?
+(1) 15
+(2) 16
+(3) 17
+(4) 18
+= 3
+~ It is an AP with a = 2, d = 3. T_n = a + (n − 1)d gives 2 + 3(n − 1) = 50, so n − 1 = 16 and n = 17.
+
+Q 110 | ee | Basic Science & Engineering Drawing
+The slope of the lines passing through the points (3, -2) and (7, -2) is:
+(1) 0
+(2) 4
+(3) 2/3
+(4) -4
+= 1
+~ Slope m = (y2 − y1)/(x2 − x1) = (−2 − (−2))/(7 − 3) = 0/4 = 0. Both points have the same y, so the line is horizontal.
+
+Q 111 | ee | Basic Science & Engineering Drawing
+The scalar product of two non zero vectors will be zero, if and only if the angle between two vectors is:
+(1) 0 degree
+(2) 90 degree
+(3) 45 degree
+(4) 180 degree
+= 2
+~ A · B = |A||B| cos θ. For non-zero vectors this is zero only when cos θ = 0, i.e. θ = 90° (the vectors are perpendicular).
+
+Q 112 | ee | Basic Science & Engineering Drawing
+What is the order of differential equation,
+(d^2y/dx^2)^3 + y = 0
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 2
+~ Order = order of the highest derivative present. The highest derivative here is d^2y/dx^2, so the order is 2 (its power, 3, is the degree).
+
+Q 113 | ee | Basic Science & Engineering Drawing
+∫ dx/√(1 − x^2) = ?
+(1) −cos^-1 x + C
+(2) cos^-1 x + C
+(3) −tan x + C
+(4) tan^-1 x + C
+= 1
+~ ∫ dx/√(1 − x^2) = sin^-1 x + C. Since sin^-1 x = π/2 − cos^-1 x, this equals −cos^-1 x + C (the π/2 is absorbed in the constant). tan^-1 x is the integral of 1/(1 + x^2).
+
+Q 114 | ee | Basic Science & Engineering Drawing
+Find the modulus of the complex number 4 – 3i
+(1) 4
+(2) 5
+(3) 7
+(4) 1
+= 2
+~ For z = a + bi, |z| = √(a^2 + b^2). So |4 − 3i| = √(16 + 9) = √25 = 5.
+
+Q 115 | ee | Basic Science & Engineering Drawing
+The resultant of two forces 7 N and 9 N acting in opposite direction will be:
+(1) 2 N towards 9 N
+(2) 2 N towards 7 N
+(3) 16 N towards 9 N
+(4) 16 N towards 7 N
+= 1
+~ Forces acting along the same line in opposite directions are subtracted: R = 9 − 7 = 2 N, and the resultant acts in the direction of the larger force (9 N).
+
+Q 116 | ee | Basic Science & Engineering Drawing
+The tendency of forces is not only to move a body but also to rotate the body is called:
+(1) Force
+(2) Fulcrum
+(3) Moment
+(4) Inertia
+= 3
+~ The turning (rotating) effect of a force about a point is its moment = force × perpendicular distance from the point (N-m). Fulcrum is only the pivot; inertia is resistance to change of motion.
+
+Q 117 | ee | Basic Science & Engineering Drawing
+The unit of co-efficient of friction in S I system of unit is:
+(1) N-m
+(2) N/m
+(3) N
+(4) unit less
+= 4
+~ Coefficient of friction μ = limiting friction F / normal reaction R. Both are forces (N/N), so μ is a pure number with no unit.
+
+Q 118 | ee | Basic Science & Engineering Drawing
+The product of mass of a body and its velocity is called _____.
+(1) Moment
+(2) Momentum
+(3) Impulse
+(4) Work
+= 2
+~ Momentum p = mv (unit kg m/s). Impulse = force × time = change in momentum; moment = force × perpendicular distance; work = force × displacement.
+
+Q 119 | ee | Circuits & Electromagnetism
+A piece of gold has a resistance of 0.8 ohm. Find the resistance of a wire of the same size and resistivity 25 times that of gold.
+(1) 0.8 ohm
+(2) 31.25 ohm
+(3) 20 ohm
+(4) 0.032 ohm
+= 3
+~ R = ρl/A. With the same length and area, R is directly proportional to resistivity, so R = 25 × 0.8 = 20 ohm.
+
+Q 120 | ee | Circuits & Electromagnetism
+The direction of magnetic lines of force around a straight current carrying conductor may be determined by:
+(1) Lenz’s law
+(2) Cork screw rule
+(3) Fleming’s left hand rule
+(4) Faraday’s law
+= 2
+~ Maxwell's cork screw rule: if a right-handed screw advances in the direction of the current, the direction in which it turns gives the direction of the magnetic lines around the conductor. Lenz's and Faraday's laws deal with induced emf; Fleming's left hand rule gives the force on a conductor (motor).
+
+Q 121 | ee | Circuits & Electromagnetism
+Two parallel conductors carrying current in the same direction:
+(1) attract each other
+(2) repel each other
+(3) experiences no force
+(4) sometimes attract and sometime repel
+= 1
+~ Between two parallel conductors the fields of like (same-direction) currents oppose each other in the space between them, so the conductors attract; currents in opposite directions repel. Force per metre = μ₀I₁I₂/(2πd).
+
+Q 122 | ee | Circuits & Electromagnetism
+The phenomenon of lagging of flux density behind the magnetizing force is called as:
+(1) magnetic leakage
+(2) magnetic hysteresis
+(3) relative permeability
+(4) Mmf
+= 2
+~ In a ferromagnetic material taken through a cycle of magnetisation, the flux density B lags behind the magnetising force H; this is magnetic hysteresis, and the area of the B-H loop gives the hysteresis loss.
+
+Q 123 | ee | Circuits & Electromagnetism
+The direction of magnetic lines of force is:
+(1) not fixed
+(2) from S to N pole
+(3) from N to S pole
+(4) have no direction
+= 3
+~ By convention, magnetic lines of force leave the N pole and enter the S pole outside the magnet (inside the magnet they run from S to N, forming closed loops). The standard answer is N to S.
+
+Q 124 | ee | Circuits & Electromagnetism
+An AC series circuit consists of a 100 ohm resistance and a capacitor of 2 micrfarad. What will be its time constant ?
+(1) 2 × 10^-6 sec
+(2) 2 × 10^-5 sec
+(3) 2 × 10^-4 sec
+(4) 2 × 10^-8 sec
+= 3
+~ Time constant of an RC circuit τ = RC = 100 Ω × 2 × 10^-6 F = 2 × 10^-4 s.
+
+Q 125 | ee | Circuits & Electromagnetism
+The power consumed by a pure inductance connected to an AC circuit is:
+(1) Zero
+(2) Infinite
+(3) very low
+(4) very high
+= 1
+~ In a pure inductor the current lags the voltage by 90°, so average power P = VI cos 90° = 0. Energy stored in the field in one quarter-cycle is returned to the source in the next.
+
+Q 126 | ee | Circuits & Electromagnetism
+Time constant of a capacitive circuit is defined as the time taken by the voltage to rise to ______ times final value of the voltage.
+(1) 0.368
+(2) 0.632
+(3) 0.5
+(4) 2.0
+= 2
+~ While charging, v = V(1 − e^(−t/RC)). At t = RC, v = V(1 − e^-1) = 0.632 V, i.e. 63.2% of the final value. (0.368 is the fraction left during discharge.)
+
+Q 127 | ee | Basic Science & Engineering Drawing
+The unit of representative fraction (RF) in engineering drawing is:
+(1) Mm
+(2) M
+(3) Km
+(4) unit less
+= 4
+~ RF = length of the object on the drawing / actual length of the object, both in the same units. Being a ratio of two lengths, RF has no unit (e.g. 1:100).
+
+Q 128 | ee | Basic Science & Engineering Drawing
+In the convention of lines in engineering drawing, the above figure represents.
+(1) hidden line
+(2) centre line
+(3) construction line
+(4) dimension line
+= 1
+~ A line of short, evenly spaced dashes is the hidden (dashed) line, used for edges not visible from the viewing direction. A centre line is a long-dash–short-dash chain line; construction and dimension lines are thin continuous lines.
+! img/j22-q128.png
+
+Q 129 | ee | Basic Science & Engineering Drawing
+In the aligned system of placing dimensions on a prepared drawing ______.
+(1) the dimensions are placed parallel to the dimension lines
+(2) the dimensions are placed perpendicular to the dimension lines
+(3) the dimensions are placed alwayshorizontal
+(4) the dimensions are placed always vertical
+= 2
+~ The key follows the standard textbook definition (N.D. Bhatt; NPTEL): in the aligned system the dimensions are placed perpendicular to the dimension lines, i.e. each figure stands upright on its dimension line, near the middle and above it, so it reads from the bottom or the right-hand edge of the sheet. In the unidirectional system all dimensions read from the bottom edge.
+
+Q 130 | ee | Basic Science & Engineering Drawing
+A diagonal scale represents:
+(1) one units of measurement
+(2) two units of measurement
+(3) three units of measurement
+(4) four units of measurement
+= 3
+~ A plain scale shows two units (e.g. metre and decimetre). A diagonal scale uses diagonals to subdivide further, so it shows three units (e.g. metre, decimetre and centimetre).
+
+Q 131 | ee | Circuits & Electromagnetism
+In MKS, unit of resistivity is:
+(1) Ω/m
+(2) Ω-m
+(3) Ω
+(4) Ω/m^2
+= 2
+~ R = ρl/A, so ρ = RA/l. Its unit is Ω × m^2 / m = Ω-m (ohm-metre).
+
+Q 132 | ee | Electronics & Power Electronics
+Germanium atom contains _____ valance electrons.
+(1) 2
+(2) 4
+(3) 6
+(4) 8
+= 2
+~ Germanium (Z = 32) has the configuration 2, 8, 18, 4. Like silicon it is a group 14 (tetravalent) element with 4 valence electrons.
+
+Q 133 | ee | Circuits & Electromagnetism
+The dipoles of a dielectric are oriented in the direction of electric field, this process is called:
+(1) dielectric constant
+(2) Permittivity
+(3) Polarization
+(4) Magnetization
+= 3
+~ When an electric field is applied to a dielectric, its dipoles (induced or permanent) align along the field; this is polarization. Dielectric constant and permittivity are properties, and magnetization concerns magnetic dipoles.
+
+Q 134 | ee | Electronics & Power Electronics
+Which material is used for making emitters in vacuum tubes?
+(1) tungesten
+(2) carbon
+(3) Sulphur
+(4) Silicon
+= 1
+~ Electron emitters (cathodes/filaments) of vacuum tubes work by thermionic emission at high temperature, so tungsten (often thoriated tungsten) is used for its very high melting point (about 3422 °C).
+
+Q 135 | ee | Circuits & Electromagnetism
+Which among the following has highest permeability?
+(1) paramagnetic materials
+(2) diamagnetic materials
+(3) ferromagnetic materials
+(4) air
+= 3
+~ Ferromagnetic materials (iron, nickel, cobalt) have relative permeability in the hundreds to thousands. Paramagnetic materials have μr slightly above 1, diamagnetic slightly below 1, and air about 1.
+
+Q 136 | ee | Circuits & Electromagnetism
+Curie temperature is the temperature at which the magnetic material:
+(1) looses their magnetism
+(2) fully magnetized
+(3) starts magnetizing
+(4) behaves like insulators
+= 1
+~ Above the Curie temperature, thermal agitation destroys the alignment of magnetic domains, so a ferromagnetic material loses its ferromagnetism and becomes paramagnetic (for iron about 770 °C).
+
+Q 137 | ee | Electronics & Power Electronics
+The barrier potential of Silicon is approximately ______.
+(1) 0.1 V
+(2) 0.3 V
+(3) 0.7 V
+(4) 1.0 V
+= 3
+~ The barrier potential of a silicon p-n junction at room temperature is about 0.7 V, so a Si diode conducts appreciably only above about 0.7 V forward bias; for germanium it is about 0.3 V.
+
+Q 138 | ee | Electronics & Power Electronics
+Rectification efficiency and ripple factor of a full wave rectifier _____ and ______ respectively.
+(1) 40.6% , 1.21
+(2) 81.2% , 0.482
+(3) 91.6% , 1.21
+(4) 100%, 0.482
+= 2
+~ For a full wave rectifier, η = 8/π^2 = 81.2% and ripple factor γ = √((Irms/Idc)^2 − 1) = 0.482. (Half wave: 40.6% and 1.21.)
+
+Q 139 | ee | Electronics & Power Electronics
+For which purpose, L is replaced by R in π filter?
+(1) to decrease ripple factor
+(2) to increase ripple factor
+(3) to get high dc voltage
+(4) to reduce weight, cost and external field
+= 4
+~ The choke of a CLC π filter is bulky, heavy, costly and produces a stray magnetic field. Replacing it with a resistor (CRC filter) reduces weight, cost and external field, at the price of more DC drop and poorer filtering.
+
+Q 140 | ee | Electronics & Power Electronics
+By narrowing the space charge region, the amount of reverse voltage needed to cause zener breakdown:
+(1) Decreases
+(2) Increases
+(3) has no effect
+(4) reduces to zero
+= 1
+~ Zener breakdown occurs when the electric field across the depletion (space charge) region becomes strong enough to pull electrons out of covalent bonds. A narrower region (heavier doping) gives that field at a smaller voltage, so the breakdown voltage decreases.
+
+Q 141 | ee | Electronics & Power Electronics
+For transistor action:
+(1) emitter is heavily dopped
+(2) emitter is lightely dopped
+(3) emitter is moderately dopped
+(4) collector is heavily dopped
+= 1
+~ The emitter must inject a large number of charge carriers into the base, so it is heavily doped. The base is thin and lightly doped, and the collector is moderately doped (and largest in size).
+
+Q 142 | ee | Electronics & Power Electronics
+The arrow head in a transistor symbol points in the direction of:
+(1) electron flow in the emitter region
+(2) holes flow in the emitter region
+(3) majority carrier flow in emitter region
+(4) minority carrier flow in emitter region
+= 2
+~ The arrow on the emitter shows the direction of conventional current, which is the direction of hole flow in the emitter region (out of the emitter in n-p-n, into it in p-n-p). Electrons flow opposite to the arrow.
+
+Q 143 | ee | Electronics & Power Electronics
+The output voltage of CE amplifier compared to its input voltage is:
+(1) out of phase by 180°
+(2) leading by 90°
+(3) lagging by 90°
+(4) in phase
+= 1
+~ In a CE amplifier, a rise in input voltage raises base and collector current, which increases the drop across RC and lowers the collector (output) voltage. So output is 180° out of phase with input (phase reversal).
+
+Q 144 | ee | Electronics & Power Electronics
+Which one is suited best for impedance matching?
+(1) CC Configuration
+(2) CE Configuration
+(3) CB Configuration
+(4) both CE and CB Configuration
+= 1
+~ The common collector (emitter follower) has very high input impedance and very low output impedance with voltage gain ≈ 1, so it is used as a buffer to match a high-impedance source to a low-impedance load.
+
+Q 145 | ee | Electronics & Power Electronics
+Convert binary number 1101.1101 into octal number:
+(1) 15.64
+(2) 15.15
+(3) 13.13
+(4) 13.15
+= 1
+~ Group bits in threes from the binary point. Integer part: 001 101 = 1 5. Fraction: 110 100 (zeros added on the right) = 6 4. So (1101.1101)₂ = (15.64)₈ (check: both equal 13.8125 in decimal).
+
+Q 146 | ee | Electronics & Power Electronics
+For a three input NOR gate, the possible number of states where output is 0 equals:
+(1) 1
+(2) 5
+(3) 7
+(4) 8
+= 3
+~ Three inputs give 2^3 = 8 combinations. A NOR gate gives output 1 only when all inputs are 0 (one combination), so the output is 0 in 8 − 1 = 7 states.
+
+Q 147 | ee | Electronics & Power Electronics
+In a logic gate output will be 1 if:
+(1) anything ORed with its own compliment
+(2) anything ANDed with its own compliment
+(3) anything ORed with itself
+(4) anything ANDed with itself
+= 1
+~ Boolean complement law: A + A' = 1 always. By contrast A · A' = 0, and A + A = A · A = A (depends on A).
+
+Q 148 | ee | Electronics & Power Electronics
+How many flip-flop are required to design Mod-20 counter?
+(1) 4
+(2) 5
+(3) 10
+(4) 20
+= 2
+~ n flip-flops give 2^n states, and we need 2^n ≥ 20. 2^4 = 16 is too few and 2^5 = 32 is enough, so 5 flip-flops are needed.
+
+Q 149 | ee | Electronics & Power Electronics
+If 1s are applied simultaneously to both set and reset input lines of a NOR SR latch, then the mode of operation will be:
+(1) Hold
+(2) Set
+(3) Reset
+(4) Prohibited
+= 4
+~ In a NOR SR latch, S = R = 1 forces both Q and Q' to 0, violating Q' = not Q, and the next state is unpredictable when the inputs return to 0. So S = R = 1 is the prohibited (invalid) state; S = R = 0 is hold.
+
+Q 150 | ee | Electronics & Power Electronics
+A logic circuit which perform the function of half-adder has:
+(1) 2 inputs and 1 output
+(2) 2 inputs and 2 outputs
+(3) 1 input and 2 outputs
+(4) 3 inputs and 2 outputs
+= 2
+~ A half adder adds two bits A and B and gives two outputs: Sum = A XOR B and Carry = A AND B. (A full adder has 3 inputs and 2 outputs.)
+
+Q 151 | ee | Electronics & Power Electronics
+In 8085 microprocessor, ______ interrupt has the lowest priority?
+(1) INTR
+(2) TRAP
+(3) RST 5.5
+(4) RST 7.5
+= 1
+~ The 8085 interrupt priority order is TRAP (highest) > RST 7.5 > RST 6.5 > RST 5.5 > INTR (lowest). INTR is a general-purpose, maskable, non-vectored interrupt, so it has the lowest priority.
+
+Q 152 | ee | Electronics & Power Electronics
+Accumulator in 8085 microprocessor is an ______ bit register.
+(1) 4
+(2) 8
+(3) 12
+(4) 16
+= 2
+~ The 8085 is an 8-bit microprocessor: its data bus and ALU are 8 bits wide, and the accumulator (register A), which holds one operand and the result of arithmetic/logic operations, is an 8-bit register.
+
+Q 153 | ee | Power Systems & Utilisation
+According to IE rule, the number of light/fan points connected in one sub circuit should not exceed to:
+(1) 3
+(2) 6
+(3) 10
+(4) 15
+= 3
+~ As per the IE rules / wiring practice for domestic installations, a lighting (light and fan) sub-circuit may have at most 10 points, with a total load not exceeding 800 W. Further points need a separate sub-circuit.
+
+Q 154 | ee | Power Systems & Utilisation
+A cable having 3 strands each of gauge 20 SWG may be represented as:
+(1) 3/20
+(2) 20/3
+(3) 3/20 mm
+(4) 3-20
+= 1
+~ Stranded cables are specified as (number of strands)/(SWG gauge of each strand). So 3 strands of 20 SWG wire are written 3/20 (like 3/22 or 7/20). The second number is a wire gauge, not a size in mm.
+
+Q 155 | ee | Power Systems & Utilisation
+According to the types of insulation used over the conductor in cables, VIR stands for:
+(1) Very Important Rubber
+(2) Vulcanized Indian Rubber
+(3) Vulcanized Intense Rubber
+(4) Vinyl IntenseRubber
+= 2
+~ VIR = Vulcanized Indian Rubber: Indian (natural) rubber hardened by heating with sulphur (vulcanizing). It was used as conductor insulation in VIR wiring cables, usually covered with a cotton/tape braid.
+
+Q 156 | ee | Power Systems & Utilisation
+Pendant holders are used in domestic installation, when the lamp is to be:
+(1) fixed on board
+(2) fixed on wall
+(3) suspended vertically
+(4) fixed at an angle
+= 3
+~ A pendant holder hangs from a ceiling rose on a flexible cord, so the lamp is suspended vertically. Batten holders are screwed directly onto a board or wall, and angle holders fix the lamp at an angle.
+
+Q 157 | ee | Power Systems & Utilisation
+MCB of the family of protective devices in electrical installation stands for:
+(1) maximum current breaker
+(2) mini circuit breaker
+(3) main circuit breaker
+(4) miniature circuit breaker
+= 4
+~ MCB = Miniature Circuit Breaker: a small automatic switch that trips on overload (thermal bimetal) and on short circuit (magnetic coil) and can simply be reset. It replaces rewirable fuses in domestic wiring.
+
+Q 158 | ee | Power Systems & Utilisation
+Coal is the ______ source of energy.
+(1) Conventional
+(2) non conventional
+(3) Primary
+(4) Renewable
+= 1
+~ Coal is a conventional (traditional), non-renewable fossil fuel used on a large scale for a long time, mainly in thermal power plants; solar, wind, tidal etc. are non-conventional/renewable. (Coal is also a primary source, but the intended classification is conventional vs non-conventional.)
+
+Q 159 | ee | Power Systems & Utilisation
+In athermal power plant, steam energy is converted into mechanical energy by:
+(1) Boiler
+(2) Alternator
+(3) Turbine
+(4) Superheater
+= 3
+~ In a thermal plant the boiler (with superheater) turns the fuel's heat into high-pressure steam; the steam turbine converts the steam's energy into mechanical (rotational) energy; the alternator then converts this into electrical energy.
+
+Q 160 | ee | Power Systems & Utilisation
+The most commonly used coolant in nuclear power plant is:
+(1) Oil
+(2) Helium
+(3) Carbon dioxide
+(4) Water
+= 4
+~ Most reactors in the world are light-water reactors (PWR, BWR), and India's PHWRs use heavy water; in all of them water carries heat away from the core. CO2 and helium are used only in gas-cooled reactors, and liquid sodium in fast breeders.
+
+Q 161 | ee | Power Systems & Utilisation
+Name the huge pipe used in a hydro power plant for bringing the water to the turbine:
+(1) spill way
+(2) pen stock
+(3) tail race
+(4) surge tank
+= 2
+~ The penstock is the large pipe that carries water under pressure from the reservoir/forebay down to the turbine. The spillway discharges surplus flood water, the tail race carries water away from the turbine, and the surge tank protects the penstock from water hammer.
+
+Q 162 | ee | Power Systems & Utilisation
+The maximum demand on a plant is 50 kW and load factor is 0.5. find the total energy generated in a year:
+(1) 2.19 × 10^5 kWh
+(2) 8.76 × 10^5 kWh
+(3) 9.125 × 10^5 kWh
+(4) 3.65 × 10^5 kWh
+= 1
+~ Load factor = average load / maximum demand, so average load = 0.5 × 50 = 25 kW. Energy generated in a year = 25 kW × 8760 h = 219,000 kWh = 2.19 × 10^5 kWh.
+
+Q 163 | ee | Circuits & Electromagnetism
+Ohm’s law is not applicable to:
+(1) resistor
+(2) inductor
+(3) capacitor
+(4) transistor
+= 4
+~ Ohm's law (V ∝ I at constant temperature) holds only for linear, bilateral elements. A transistor is a non-linear semiconductor device whose current is not proportional to the applied voltage, so Ohm's law does not apply to it (for R, L and C in AC circuits, V = IZ still holds).
+
+Q 164 | ee | Circuits & Electromagnetism
+Find the current I in the above circuit
+(1) 1.2 A
+(2) 2 A
+(3) 4 A
+(4) 6 A
+= 3
+~ The 6 A source feeds two parallel paths: the 10 Ω resistor and the outer loop through the 5 Ω resistor, which carries I. By current division, I = 6 × 10/(10 + 5) = 4 A (the other 2 A flows through the 10 Ω).
+! img/j22-q164.png
+
+Q 165 | ee | Circuits & Electromagnetism
+Find the Thevenin resistance (R_th) across MN for the above circuit
+(1) 29 Ω
+(2) 8 Ω
+(3) 8.33 Ω
+(4) 24 Ω
+= 2
+~ To find R_th, replace the voltage source by a short circuit and the current source by an open circuit. Then 5 Ω ∥ 20 Ω = (5 × 20)/(5 + 20) = 4 Ω, which is in series with 4 Ω: R_th = 4 + 4 = 8 Ω.
+! img/j22-q165.png
+
+Q 166 | ee | Circuits & Electromagnetism
+The maximum power drawn by the load R_L in the above circuit will be
+(1) 2 W
+(2) 5 W
+(3) 10 W
+(4) 20 W
+= 2
+~ By the maximum power transfer theorem, the load gets maximum power when R_L equals the source resistance, 5 Ω. Then I = 10/(5 + 5) = 1 A and P_max = I^2 × R_L = 1 × 5 = 5 W (= V^2/4R = 100/20).
+! img/j22-q166.png
+
+Q 167 | ee | Circuits & Electromagnetism
+The algebraic sum of all the currents meeting at a point is zero, known as:
+(1) Kirchhof’s law
+(2) Coulomb’s law
+(3) Joule’s law
+(4) Voltage law
+= 1
+~ Kirchhoff's current law (KCL): at any junction (node) the algebraic sum of currents is zero, i.e. total current entering = total current leaving. It follows from conservation of charge.
+
+Q 168 | ee | Circuits & Electromagnetism
+If the frequency of AC supply is increased then the resistance of the circuit will ______.
+(1) Decrease
+(2) unaffected
+(3) Increase
+(4) first increases then decreases
+= 2
+~ Resistance R = ρl/A depends only on the material and dimensions, not on frequency. Changing frequency changes only the reactances: X_L = 2πfL rises and X_C = 1/(2πfC) falls. (Skin effect at very high frequencies is ignored.)
+
+Q 169 | ee | Circuits & Electromagnetism
+A series AC circuit connected to 220 V, 50 Hz supply consists of a resistance of 100 Ω, inductive reactance of 10 Ω and a capacitive reactance of 10 Ω. Calculate the power factor of the circuit.
+(1) 0.1
+(2) 0.5
+(3) 0.8
+(4) 1.0
+= 4
+~ Z = √(R^2 + (X_L − X_C)^2) = √(100^2 + (10 − 10)^2) = 100 Ω. Power factor = R/Z = 100/100 = 1.0. Since X_L = X_C the circuit is at resonance and behaves as purely resistive.
+
+Q 170 | ee | Electrical Machines
+The frame of a DC generator is made of:
+(1) Cast iron
+(2) Copper
+(3) Aluminium
+(4) Bronze
+= 1
+~ The frame (yoke) gives mechanical support and also carries the magnetic flux between the poles, so it must be a magnetic material. Small machines use cast iron (cheap); large machines use cast or rolled steel. Copper, aluminium and bronze are non-magnetic.
+
+Q 171 | ee | Electrical Machines
+For an ideal DC generator, voltage regulation should be
+(1) infinite
+(2) zero
+(3) positive
+(4) negative
+= 2
+~ Voltage regulation = (V_no-load − V_full-load)/V_full-load × 100%. An ideal generator keeps the same terminal voltage from no load to full load (no armature drop or armature reaction), so its regulation is zero.
+
+Q 172 | ee | Electrical Machines
+If a DC series motor is started on no load, its speed will be:
+(1) Zero
+(2) Very small
+(3) Normal
+(4) Enormously high
+= 4
+~ In a series motor the field current is the armature current, so flux φ ∝ I_a. At no load I_a is very small, so the flux is very small, and since N ∝ E_b/φ the speed rises to dangerously high values. Hence a series motor is never started or run without load.
+
+Q 173 | ee | Electrical Machines
+The current drawn by DC motor at starting is equal to:
+(1) normal current
+(2) above normal current
+(3) below normal current
+(4) zero
+= 2
+~ I_a = (V − E_b)/R_a. At starting the armature is at rest, so the back EMF E_b = 0 and I_a = V/R_a, which is many times the normal full-load current because R_a is very small. That is why a starter (series resistance) is used.
+
+Q 174 | ee | Electrical Machines
+If W_o is the weight of copper in ordinary transformer then saving of copper in an auto transformer is given by:
+(1) K W_o
+(2) (1-K) W_o
+(3) W_o/K
+(4) 2K W_o
+= 1
+~ For the same output, copper needed in an auto-transformer W_a = (1 − K) W_o, where K = V_2/V_1 is the transformation ratio (less than 1). Saving of copper = W_o − W_a = K W_o, so the saving is larger when K is close to 1.
+
+Q 175 | ee | Electrical Machines
+In a three phase induction motor, speed of the rotating magnetic field is called :
+(1) shaft speed
+(2) synchronous speed
+(3) slip speed
+(4) effective speed
+= 2
+~ The stator's rotating magnetic field turns at the synchronous speed N_s = 120f/P rpm. The rotor runs slightly slower (speed N), and the difference N_s − N is called the slip speed.
+
+Q 176 | ee | Electrical Machines
+Frequency of rotor current in an induction motor is given by:
+(1) fs
+(2) f/s
+(3) s/f
+(4) 1/fs
+= 1
+~ The field cuts the rotor conductors at the slip speed (N_s − N), so rotor frequency f_r = P(N_s − N)/120 = s × f. At standstill s = 1 and f_r = f; at normal running (s ≈ 0.02–0.05) it is only 1–2.5 Hz on a 50 Hz supply.
+
+Q 177 | ee | Electrical Machines
+Buchholz relay is:
+(1) frequency sensitive device
+(2) voltage sensitive device
+(3) current sensitive device
+(4) gas actuated device
+= 4
+~ The Buchholz relay is fitted in the pipe between an oil-immersed transformer's tank and its conservator. An internal fault decomposes the oil and releases gas, which collects in the relay and operates its float switches (alarm/trip), so it is a gas-actuated device.
+
+Q 178 | ee | Electrical Machines
+In a synchronous motor minimum armature current corresponds to:
+(1) leading power factor only
+(2) unity power factor only
+(3) lagging power factor only
+(4) Lagging or leading power factor
+= 2
+~ For a given load, P = √3 V I cosφ is fixed, so the armature current is least when cosφ = 1. The V-curves show this: as excitation is varied, I_a is minimum at normal excitation (unity pf) and rises for both under-excitation (lagging pf) and over-excitation (leading pf).
+
+Q 179 | ee | Electrical Machines
+The torque developed by split phase induction motor is proportional to the:
+(1) auxiliary winding current I_s
+(2) main winding current I_m
+(3) sine of the angle between I_m and I_s
+(4) cosine of the angle between I_m and I_s
+= 3
+~ In a split-phase motor the starting torque T = K × I_m × I_s × sin α, where α is the phase angle between the main-winding current I_m and the auxiliary (starting) winding current I_s. With α = 0 there is no torque, so the windings are designed for a large phase difference; torque ∝ sin α.
+
+Q 180 | ee | Electronics & Power Electronics
+Which one is not true for thyristor as compared to transistor?
+(1) thyristor has higher internal power loss
+(2) thyristor can have larger current rating
+(3) thyristor has less punch through device failure
+(4) thyristor has better current surge withstanding capability
+= 1
+~ Compared with a power transistor, a thyristor (a latching four-layer device) has LOWER internal power loss, can be built with larger voltage and current ratings, has a surge-current rating and is more rugged. So 'thyristor has higher internal power loss' is the false statement.
+
+Q 181 | ee | Electronics & Power Electronics
+UJT is a ______.
+(1) 2 layer, 3 terminal device
+(2) 2 layer, 2 terminal device
+(3) 1 layer, 3 terminal device
+(4) 3 layer, 3 terminal device
+= 1
+~ A unijunction transistor is a lightly doped n-type bar with one p-type emitter region, i.e. a single p-n junction (2 layers), and it has three terminals: emitter E, base-1 B1 and base-2 B2. It is used in relaxation oscillators and SCR triggering circuits.
+
+Q 182 | ee | Electronics & Power Electronics
+A single phase, half wave controlled rectifier contains:
+(1) 1 diode only
+(2) 1 thyristor only
+(3) 1 thyristor and 1 diode
+(4) 2 thyristors
+= 2
+~ A half-wave controlled rectifier is the diode half-wave rectifier with the diode replaced by one thyristor (SCR). Firing the SCR at angle α in each positive half cycle controls the average output; with a resistive load V_dc = (V_m/2π)(1 + cos α).
+
+Q 183 | ee | Electronics & Power Electronics
+The maximum output voltage of a single phase half bridge inverter as compared to the single phase full bridge inverter is:
+(1) Half
+(2) Double
+(3) Same
+(4) four times
+= 1
+~ In a half-bridge inverter the load is connected between the midpoint of the DC source (two capacitors) and the switching leg, so the output swings between +V_dc/2 and −V_dc/2. A full-bridge inverter applies ±V_dc. So the half-bridge output is half.
+
+Q 184 | ee | Electronics & Power Electronics
+Thyristors can be considered as a/an:
+(1) transistor
+(2) controlled transistor
+(3) controlled switch
+(4) Amplifier
+= 3
+~ A thyristor (SCR) works only in two states, OFF (blocking) and ON (conducting). A gate pulse turns it on at a chosen instant, so it acts as a controlled switch (controlled rectifier), not as an amplifier.
+
+Q 185 | ee | Electronics & Power Electronics
+Chopper is a ______.
+(1) DC to AC converter
+(2) DC to DC converter
+(3) AC to DC converter
+(4) AC to AC converter
+= 2
+~ A chopper switches a fixed DC supply on and off rapidly to give a variable DC output (V_o = D × V_s for a step-down chopper, D = duty cycle), so it is a DC-to-DC converter. DC to AC is an inverter, AC to DC a rectifier, AC to AC a cycloconverter or AC voltage controller.
+
+Q 186 | ee | Electronics & Power Electronics
+A step down cyclo converter is a device which converts:
+(1) lower input frequency into higher output frequency
+(2) higher input frequency into lower output frequency
+(3) DC to AC
+(4) AC to DC
+= 2
+~ A cycloconverter converts AC at one frequency directly into AC at another frequency, without a DC link. A step-down cycloconverter gives an output frequency lower than the input (f_o < f_s), e.g. for low-speed drives; a step-up type gives f_o > f_s.
+
+Q 187 | ee | Measurements & Instruments
+A current of 100 A was measured three times by an ammeter and the values were indicated as 100.3 A, 100.5 A and 100.4 A. What is the precision of the ammeter ?
+(1) ± 0.1 %
+(2) ± 0.2 %
+(3) ± 0.3 %
+(4) ± 0.4 %
+= 1
+~ Precision is how close repeated readings are to their own mean (not to the true value). Mean = (100.3 + 100.5 + 100.4)/3 = 100.4 A; the maximum deviation from the mean is ±0.1 A. Precision = ±0.1/100.4 × 100 ≈ ±0.1%.
+
+Q 188 | ee | Measurements & Instruments
+In measurement system, the number 130.4 has how many numbers of significant figures ?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 4
+~ All non-zero digits are significant, and a zero lying between non-zero digits (here between 3 and 4) is also significant. So 1, 3, 0 and 4 are all significant: 4 significant figures.
+
+Q 189 | ee | Measurements & Instruments
+______ is a passive transducer.
+(1) LVDT
+(2) solar cell
+(3) thermocouple
+(4) techogenerator
+= 1
+~ A passive transducer needs an external power (excitation) source and works by changing a parameter such as R, L or C. The LVDT (an inductive transducer) needs AC excitation of its primary, so it is passive. Solar cell, thermocouple and tachogenerator generate their own voltage, so they are active.
+
+Q 190 | ee | Measurements & Instruments
+Orifice meter is used to measure:
+(1) torque
+(2) liquid flow
+(3) temperature
+(4) Force
+= 2
+~ An orifice meter is a thin plate with a hole, placed in a pipe. The pressure drop across the orifice is measured, and the flow rate is proportional to √(Δp) (Bernoulli's principle), so it measures the flow of liquids (fluids).
+
+Q 191 | ee | Measurements & Instruments
+Thermistor has the property of ______.
+(1) zero temperature coefficient
+(2) positive temperature coefficient
+(3) negative temperature coefficient
+(4) no resistance
+= 3
+~ A thermistor (thermal resistor) is made of semiconducting metal oxides; its resistance falls sharply as temperature rises, i.e. it has a large negative temperature coefficient (NTC). This is the usual type used for temperature measurement (PTC thermistors also exist, but 'thermistor' normally means NTC).
+
+Q 192 | ee | Measurements & Instruments
+Thermocouple works on:
+(1) Seebeck effect
+(2) Peltier effect
+(3) Thomson effect
+(4) Kelvin effect
+= 1
+~ Seebeck effect: when two dissimilar metals are joined and their two junctions are kept at different temperatures, an EMF is produced in the circuit. A thermocouple measures temperature from this thermo-EMF. The Peltier effect is the reverse (a current heats or cools a junction).
+
+Q 193 | ee | Measurements & Instruments
+LVDT has:
+(1) one secondary
+(2) two secondaries
+(3) three secondaries
+(4) twoprimaries
+= 2
+~ An LVDT (Linear Variable Differential Transformer) has one primary winding and two identical secondary windings, one on each side, connected in series opposition. Moving the core makes the two induced voltages unequal, and their difference is an output proportional to displacement.
+
+Q 194 | ee | Measurements & Instruments
+A strain gauge of gauge factor 4 is attached to a metal wire that stretches from 10 cm to 10.1 cm. Calculate the percentage change in its resistance.
+(1) 4%
+(2) 3%
+(3) 2%
+(4) 1%
+= 1
+~ Strain ε = ΔL/L = (10.1 − 10)/10 = 0.01. Gauge factor G = (ΔR/R)/ε, so ΔR/R = G × ε = 4 × 0.01 = 0.04, i.e. a 4% change in resistance.
+
+Q 195 | ee | Power Systems & Utilisation
+According to Kelvin’s law, the most economical size of conductor is that for which variable part of annual charge is:
+(1) equal to annual cost of energy wasted
+(2) more to annual cost of energy wasted
+(3) less to annual cost of energy wasted
+(4) √2 times to annual cost of energy wasted
+= 1
+~ A thicker conductor raises the capital cost (annual interest and depreciation ∝ area a) but lowers the I^2R loss (∝ 1/a). Total annual cost P1·a + P2/a is minimum when P1·a = P2/a, i.e. when the variable part of the annual charge equals the annual cost of energy wasted (Kelvin's law).
+
+Q 196 | ee | Power Systems & Utilisation
+Which one is true about transmission line constants?
+(1) BC – AD =1
+(2) A has no dimension
+(3) B has no dimension
+(4) C has no dimension
+= 2
+~ In V_S = A V_R + B I_R and I_S = C V_R + D I_R, A and D are ratios (voltage/voltage, current/current) and so dimensionless, B is an impedance (Ω) and C an admittance (S). The correct relation is AD − BC = 1, not BC − AD = 1.
+
+Q 197 | ee | Power Systems & Utilisation
+Due to non uniform distribution of current, the increase in resistance in a conductor is known as:
+(1) ferranti effect
+(2) proximity effect
+(3) skin effect
+(4) kelvin effect
+= 3
+~ With AC, current crowds towards the surface of a conductor (its centre links more flux, so it has more inductance); the effective area falls and the AC resistance rises: the skin effect, which grows with frequency and conductor diameter. The proximity effect is similar crowding caused by currents in nearby conductors; the Ferranti effect is a rise of receiving-end voltage on a lightly loaded line.
+
+Q 198 | ee | Power Systems & Utilisation
+A line which joins the energy meter of a consumer with the distributor is known as:
+(1) feeder
+(2) service mains
+(3) distributor
+(4) grid
+= 2
+~ In a distribution system, feeders carry power from the substation to the distributors (no tappings), distributors run along the streets and are tapped for supply, and service mains are the small cables that connect the distributor to the consumer's terminals (energy meter).
+
+Q 199 | ee | Power Systems & Utilisation
+The ratio of GMR to actual radius of the conductor is ______.
+(1) equal to 1
+(2) more than 1
+(3) equal to 0.7788
+(4) equal to 0.5
+= 3
+~ For a solid round conductor, taking its internal flux linkage into account gives the geometric mean radius r' = r × e^(−1/4) = 0.7788 r. So GMR/r = 0.7788 (less than 1).
+
+Q 200 | ee | Power Systems & Utilisation
+In case of a transmission line, the purpose of transposition of unsymmetrical conductors is to ______.
+(1) balance line voltage drop
+(2) reduce corona
+(3) reduce skin effect
+(4) reduce resistance
+= 1
+~ With unsymmetrical spacing the three phases have unequal inductances (and capacitances), so their voltage drops differ even with balanced currents. Transposition (each conductor occupies every position for one-third of the length) equalises the average inductance and balances the voltage drops; it also reduces interference with telephone lines.
