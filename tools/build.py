@@ -3699,6 +3699,7 @@ def exam_art(e, cat):
 
 
 BOARD_PHOTO = {   # free-licence photos from Wikimedia Commons, cropped to 640x250 WebP in src/static (Anil approved the download, 2 Nov 2026)
+    'ncert': ('NCERT office, New Delhi', 'BhuyanBhaskar', 'CC BY 4.0', 'https://commons.wikimedia.org/wiki/File:National_Council_of_Educational_Research_and_Training_(NCERT)_Office,_New_Delhi_(2).jpg', 'https://creativecommons.org/licenses/by/4.0/'),   # NCERT board, 16 Nov 2026
     'upsc': ('North Block, Delhi', 'Atulburnwal', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:North_Block,_Delhi.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
     'ap': ('Tirumala gopurams', 'Vimalkalyan', 'public domain', 'https://commons.wikimedia.org/wiki/File:Tirumala_gopurams.JPG', ''),
     'tg': ('Charminar, Hyderabad', 'Craftofolio.media', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Charminar,_Hyderabad,_Telangana,_India.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),
@@ -3739,6 +3740,8 @@ CCL = {'CC BY-SA 3.0': 'https://creativecommons.org/licenses/by-sa/3.0/', 'CC BY
 _CW = 'https://commons.wikimedia.org/wiki/File:'
 GSSSB_PHOTO = ('Mahatma Mandir, Gandhinagar', '92saeedshaikh', 'CC BY-SA 4.0', _CW + 'Mahatma_Mandir-Gandhinagar.jpg')
 EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil approved, 2 Nov 2026): src/static/ex-<id>-t.webp (tile) and -h.webp (exam page banner)
+    'ncert-class-11': ('Reading room, Central Library, IIT Delhi', 'Scntst0009', 'CC0', _CW + 'Reading_room_of_Central_library_iitd.jpg'),   # NCERT Class 11, 16 Nov 2026
+    'ncert-class-12': ('Library shelves, IIT Delhi', 'Scntst0009', 'CC0', _CW + 'Library_shelves_iitd.jpg'),   # NCERT Class 12, 16 Nov 2026
     'upsc-cse': ('New Parliament building', 'Ministry of Parliamentary Affairs', 'GODL-India', _CW + 'Glimpses_of_the_new_Parliament_Building,_in_New_Delhi_(2).jpg'),
     'upsc-prelims': ('India Gate, New Delhi', 'Yann', 'CC BY-SA 3.0', _CW + 'India_Gate,_New_Delhi.jpg'),
     'upsc-epfo': ('Shastri Bhawan, New Delhi', 'Pinakpani', 'CC BY-SA 4.0', _CW + 'Shastri_Bhawan,_a_Government_buildings_in_New_Delhi_10.jpg'),
