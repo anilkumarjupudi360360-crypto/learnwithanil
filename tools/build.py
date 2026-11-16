@@ -2716,7 +2716,8 @@ def photo_credits(ids):
 
 CCL = {'CC BY-SA 3.0': 'https://creativecommons.org/licenses/by-sa/3.0/', 'CC BY-SA 4.0': 'https://creativecommons.org/licenses/by-sa/4.0/',
        'CC BY 3.0': 'https://creativecommons.org/licenses/by/3.0/', 'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/',
-       'GODL-India': 'https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf', 'FAL': 'https://artlibre.org/licence/lal/en/'}
+       'GODL-India': 'https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf', 'FAL': 'https://artlibre.org/licence/lal/en/',
+       'CC BY 2.0': 'https://creativecommons.org/licenses/by/2.0/'}
 _CW = 'https://commons.wikimedia.org/wiki/File:'
 EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil approved, 2 Nov 2026): src/static/ex-<id>-t.webp (tile) and -h.webp (exam page banner)
     'upsc-cse': ('New Parliament building', 'Ministry of Parliamentary Affairs', 'GODL-India', _CW + 'Glimpses_of_the_new_Parliament_Building,_in_New_Delhi_(2).jpg'),
@@ -2736,6 +2737,20 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'ts-police-si': ('James Street police station, Hyderabad', 'adbh266', 'CC BY-SA 4.0', _CW + 'James_Street_police_station,_Hyderabad.jpg'),
     'ts-police-constable': ('Chikkadpally police station, Hyderabad', 'Adbh266', 'CC BY-SA 4.0', _CW + 'Chikkadpally_police_station.jpg'),
     'ssc-cgl': ('Shastri Bhawan, New Delhi', 'Pinakpani', 'CC BY-SA 4.0', _CW + 'Shastri_Bhawan,_a_Government_buildings_in_New_Delhi_02.jpg'),
+    # the 13 newer tiles (Anil, 16 Nov 2026: "pls add photos for all the new tiles")
+    'appsc-env-engineer': ('Coringa mangrove forest, Andhra Pradesh', 'రహ్మానుద్దీన్', 'CC BY-SA 4.0', _CW + 'Coringa_reserve_forest_park_mangrove_forest_01.jpg'),
+    'appsc-aso': ('Indian Statistical Institute, Kolkata', 'Ravi Dwivedi', 'CC BY-SA 4.0', _CW + 'Indian_Statistical_Institute,_Kolkata.jpg'),
+    'ap-dsc': ('Alapati Venkataramaiah ZP High School, Edlapalli', 'Vin09', 'CC BY-SA 4.0', _CW + 'Alapati_Venkataramaiah_ZPHS,_Edlapalli.jpg'),
+    'tgpsc-group-1': ('Dr. B.R. Ambedkar Telangana State Secretariat, Hyderabad', 'Kavali Chandrakanth KCK', 'CC BY-SA 4.0', _CW + 'Dr.B.R._Ambedkar_Telangana_State_Secretariat_Hyderabad_(59137).jpg'),
+    'tgpsc-group-2': ('Ramappa Temple, Telangana', 'Khushi Shah 280', 'CC BY-SA 4.0', _CW + 'WHS_Ramappa_Temple_14.jpg'),
+    'ssc-gd': ('Sunrise at Sam sand dunes, Thar Desert', 'Chinmayisk', 'CC BY-SA 3.0', _CW + 'Sunrise_at_sams_sand_dunes.JPG'),
+    'ibps-so': ('Nariman Point skyline, Mumbai', 'Saadabdullah007', 'CC BY-SA 3.0', _CW + 'Nariman_Point_Cityscape.jpg'),
+    'sbi-po': ('Bandra Kurla Complex, Mumbai', 'Nikhil Kulkarni', 'public domain', _CW + 'Bandra-Kurla_complex_Bombay_3239.JPG'),
+    'rrb-ntpc': ('Vande Bharat Express', 'Ravi Dwivedi', 'CC BY-SA 4.0', _CW + 'Vande_Bharat_Express_train.jpg'),
+    'rrb-group-d': ('Indian Railways track maintenance', 'Gopal Aggarwal', 'CC BY 2.0', _CW + 'Indian_Railways_Track_Maintenance_-_various_tasks.jpg'),
+    'rpf-si': ('Chhatrapati Shivaji Maharaj Terminus, Mumbai', 'Shashank Mehendale', 'CC BY-SA 4.0', _CW + 'Partial_wide_angle_exterior_view_of_Chhatrapati_Shivaji_Maharaj_Terminus.jpg'),
+    'rpf-constable': ('Secunderabad Railway Station', 'Nikhilb239', 'CC BY 3.0', _CW + 'Secunderabad_Railway_Station_18082017.jpg'),
+    'tnpsc-group-4': ('Fort St. George, Chennai', 'L.vivian.richard', 'public domain', _CW + 'Fort_St._George,_Chennai_2.jpg'),
 }
 
 
