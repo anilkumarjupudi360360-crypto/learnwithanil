@@ -1819,7 +1819,8 @@ def load_exam(conf):
         if nte: print(f'  {conf["short"]} {p["id"]}: {conf["l2"]["name"]} for {nte} questions')
         nown = add_own_options(p, qs, conf['src'])
         if not qs:
-            print(f'  - skipping {conf["short"]} {p["id"]} (no source yet)'); continue
+            if not conf.get('ncert'): print(f'  - skipping {conf["short"]} {p["id"]} (no source yet)')   # NCERT: chapters not written yet are expected
+            continue
         for q in qs:
             if 'img' in q: q['img'] = img_data_uri(os.path.join(conf['src'], q['img']))
         pp = {k: p[k] for k in ('id', 'year', 'stage', 'short', 'title', 'notif', 'held', 'fmt', 'slug', 'blurb')}
@@ -1827,7 +1828,7 @@ def load_exam(conf):
         if nown:
             if nown == len(qs): pp['fmt'], pp['own'] = 'mcq', 1   # four options now (ours + APPSC's answer); still All-in-One Pass only
             else: print(f'  ! {conf["short"]} {p["id"]}: options for {nown} of {len(qs)} questions only; paper stays quick-recall')
-        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'kn_paper', 'mr_paper', 'gu_paper', 'or_paper', 'bn_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel'):
+        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'kn_paper', 'mr_paper', 'gu_paper', 'or_paper', 'bn_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel', 'nsub', 'nbook', 'nch'):
             if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p) if PUBLIC_PDFS else ''
         alt = paper_alt(conf, p)
@@ -2324,6 +2325,11 @@ def FAQ_IBPSSO(total, npapers):
       ('How much do the IBPS SO mock tests cost?',
        'They are included in the ₹45 All-in-One Pass, which opens every exam, mock series and study book on Learn with Anil for 12 months.'),
     ]
+
+
+def _ncert():
+    import ncert
+    return ncert
 
 
 def bank_confs():
@@ -3017,7 +3023,7 @@ def exam_confs():
                         "as DSSSB marked it. Questions are in Hindi and English, except the English section (English only) and the Hindi section (Hindi "
                         "only). Both 2022 papers start with the same five general parts that make up the 2026 MTS exam and JE Tier-I Section A; the JE "
                         "paper then has 100 Electrical Engineering questions and the Patwari paper Computer and Delhi questions.")),
-    ] + bank_confs()
+    ] + bank_confs() + _ncert().confs(sys.modules[__name__])   # NCERT Class 11 & 12 chapter-wise MCQs (tools/ncert.py; Anil, 16 Nov 2026)
 
 
 def main():
@@ -3030,7 +3036,7 @@ def main():
             loaded.append((c, papers, questions))
     # only exams whose papers are built (an exam configured before its paper sources are added, e.g. AMVI, stays out of the lists and links)
     PAY['exams'] = ', '.join(c['seo'] for c, _, _ in loaded)   # the All-in-One Pass covers every one of these
-    PAY['exam_links'] = [(c['seo'], c['pb']) for c, _, _ in loaded]
+    PAY['exam_links'] = [(c['seo'], c['pb']) for c, _, _ in loaded if not c.get('ncert')]   # NCERT classes have no PYQs page
     counts = {c['id']: len(qs) for c, _, qs in loaded}
     grand = sum(counts.values())
     import upscmains   # UPSC CSE Mains GS 1-4 previous questions with model answers (tools/upscmains.py): its own pages; Prelims is the 'upsc-prelims' app
@@ -3112,7 +3118,7 @@ def main():
         exb = exsealed.get(conf['id'])
         pub_qs, stale = public_questions(questions, exb)
         if stale: print(f'  NOTE {conf["id"]}: {stale} paid explanations are not sealed yet and stay in the public app data; run tools/ex_seal.py {conf["id"]}')
-        data = dict(mockHtml=inapp_mocks(conf, papers), secHtml=inapp_sectionals(conf, papers, questions),
+        data = dict(mockHtml='' if conf.get('ncert') else inapp_mocks(conf, papers), secHtml='' if conf.get('ncert') else inapp_sectionals(conf, papers, questions), ncert=bool(conf.get('ncert')),
                     pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=pub_qs, instagram=INSTAGRAM,
                     exb=dict(key=exb['key'], file=exb['file']) if exb else None, site=SITE_URL, notes=enotes, wa=WHATSAPP,
                     mains=emains, mainsP5=MAINS_P5 if emains else None, mainsLink=('/appsc-group-1/mains/' if enotes else ''),
@@ -3120,7 +3126,7 @@ def main():
                     notesTitle=ROOT_NOTES[0] if is_root else conf.get('notes_title', ''), notesLede=ROOT_NOTES[1] if is_root else conf.get('notes_lede', ''),
                     key=conf['key'], exam=conf['name'], mockonly=bool(conf.get('mockonly')), bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
-                    base=prefix, qotd=qotd_pool(loaded, 120) if is_root else [],
+                    base=prefix, qotd=qotd_pool([x for x in loaded if not x[0].get('ncert')], 120) if is_root else [],
                     pay=dict(pay_data(conf), sample=len(free_sample(conf, papers, questions)) if any(p['fmt'] == 'mcq' for p in papers) else 0),
                     exams=catalog['exams'] if is_root else [], cats=catalog['cats'] if is_root else [],
                     timers=catalog.get('timers', []) if (is_root and SHOW_TIMERS) else [])
@@ -3155,13 +3161,14 @@ def main():
                       f'{esc(conf["papers_note"])} Take a full mock or one section at a time, with one ₹45 All-in-One Pass for every exam on the site.</p>')
             FIG12 = (f'      <div class="figure"><div class="v">{len(_live)}/{len(_all)}</div><div class="k">Mock tests released</div></div>\n'
                      f'      <div class="figure"><div class="v">{len(_mk["mocks"][0]["parts"])}</div><div class="k">Sections, each also as a sectional test</div></div>\n')
+        if conf.get('ncert'): HERO_P, FIG12 = _ncert().hero(conf, papers, questions)   # NCERT: chapters, not previous papers
         def fill(s, photo, title, seo, desc=''):
             return (s.replace('{{HERO_P}}', HERO_P).replace('{{FIG12}}', FIG12)   # (first: they contain other placeholders)
                      .replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title).replace('{{DESC}}', esc(desc))
                      .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf']).replace('{{TA_HIDDEN}}', '' if l2['code'] == 'ta' else ' hidden').replace('{{KN_HIDDEN}}', '' if l2['code'] == 'kn' else ' hidden').replace('{{MR_HIDDEN}}', '' if l2['code'] == 'mr' else ' hidden').replace('{{GU_HIDDEN}}', '' if l2['code'] == 'gu' else ' hidden').replace('{{OR_HIDDEN}}', '' if l2['code'] == 'or' else ' hidden').replace('{{BN_HIDDEN}}', '' if l2['code'] == 'bn' else ' hidden')
                      .replace('{{LANGS}}', 'English' if papers and all(p.get('en_only') for p in papers) else 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
                      .replace('{{BOARD}}', conf['board'])
-                     .replace('{{FOOTSRC}}', f'Mock tests written by Learn with Anil ({conf["board"]} does not publish its question papers).' if conf.get('mockonly') else
+                     .replace('{{FOOTSRC}}', conf['foot'] if conf.get('ncert') else f'Mock tests written by Learn with Anil ({conf["board"]} does not publish its question papers).' if conf.get('mockonly') else
                               ('Questions and answers are from the official final keys, or the preliminary key where the final key could not be found.'
                                               if any('preliminary key' in x.get('key', '') for x in papers) else 'Questions and answers are from the official final keys.') if conf['board'] in ('APPSC', 'TSLPRB', 'SLPRB')
                               else f'Questions are from {conf["board"]}\'s official question paper; answers from {conf["keyshort"]}.')
@@ -3196,6 +3203,8 @@ def main():
             if conf.get('mockonly'):   # SBI PO / IBPS SO: the top bar offers the mock and sectional tests instead of the PYQ pages
                 s = s.replace('      <a href="#papers" data-v="papers" data-g2>Previous Papers</a>\n', '      <a href="#mocks" data-v="mocks" data-g2>Mock Tests</a>\n')
                 s = s.replace('      <a href="#practice" data-v="practice" data-g2>Practice</a>\n', '      <a href="#sectionals" data-v="sectionals" data-g2>Sectional Tests</a>\n')
+            if conf.get('ncert'):   # NCERT: the menu says Chapters, not Previous Papers
+                s = s.replace('data-g2>Previous Papers</a>', 'data-g2>Chapters</a>').replace('</svg>Papers</a>', '</svg>Chapters</a>')
             for k, v in LF.items(): s = s.replace(k, v)
             return s
         root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: UPSC Prelims, Mains & Anthropology, APPSC Group 1 & 2, TS Police, SSC CGL'
@@ -3231,6 +3240,12 @@ def main():
           'sectionals': (f'{seo_name} Sectional Tests | Learn with Anil', f'{seo_name} subject-wise sectional tests with a timer.', pb + 'sectionals/', False),
           'account': ('My account – Learn with Anil', 'Your Learn with Anil account: your All-in-One Pass, devices and payments.', pb + 'account/', False),
         }
+        if conf.get('ncert'):   # NCERT: chapters and chapter quizzes
+            views['papers'] = (f'{seo_name} Chapter-wise MCQs – All Subjects and Chapters | Learn with Anil',
+                               f'Every chapter of the NCERT Class {conf["cls"]} textbooks with MCQs on Learn with Anil, subject by subject: practise a chapter or take it as a timed test.', pb + 'papers/', True)
+            views['practice'] = (f'{seo_name} MCQ Quiz – Make Your Own Chapter-wise Test | Learn with Anil',
+                                 f'Build an NCERT Class {conf["cls"]} quiz from {total:,} chapter-wise MCQs: choose chapters and subjects, then practise with answers or take a timed test.', pb + 'practice/', True)
+            views.pop('mocks', None); views.pop('sectionals', None)
         if conf.get('mockonly'):   # SBI PO / IBPS SO: no previous papers, so only the mock tests, sectional tests and the general pages
             views = {k: v for k, v in views.items() if k in ('about', 'mocks', 'sectionals', 'account', 'mistakes')}   # My Mistakes too (16 Nov 2026)
             views['mocks'] = (f'{seo_name} Mock Tests – {MOCK_PACKS[conf["id"]]["title"]} | Learn with Anil', home_desc, pb + 'mocks/', False)
@@ -3297,7 +3312,7 @@ def main():
             if ix and cp.startswith(pb): all_pages[cp.lstrip('/')] = None
         os.makedirs(os.path.join(outdir, 'papers'), exist_ok=True); os.makedirs(os.path.join(outdir, 'subjects'), exist_ok=True)
         # crawlable pages per paper and per subject
-        pages = build_static(conf, papers, subjects, questions, subj)
+        pages = _ncert().static_pages(sys.modules[__name__], conf, papers, subjects, questions, subj) if conf.get('ncert') else build_static(conf, papers, subjects, questions, subj)
         for rel, content in pages.items():
             open(os.path.join(outdir, rel), 'w', encoding='utf-8').write(content)
             if is_root: open(os.path.join(DIST, 'artifact', rel), 'w', encoding='utf-8').write(content)
@@ -3337,6 +3352,7 @@ def main():
     mocks = {}
     for c, ps, qs in loaded:
         if not any(p['fmt'] == 'mcq' for p in ps) and not c.get('mockonly'): continue
+        if c.get('ncert'): continue   # NCERT: the class page lists the chapters itself
         for fn in ((mock_page, sectional_page) if c.get('mockonly') else (pyq_page, mock_page, sectional_page)):
             rel, html_ = fn(c, ps, qs)
             open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(html_)
@@ -3652,6 +3668,7 @@ BOARD_ART = {   # line drawings for the board tiles (own artwork; no photos, no 
     'tg': '<path d="M58 78V36h44v42"/><path d="M68 78V60a12 12 0 0 1 24 0v18"/><path d="M56 36h48M58 30h44"/><path d="M73 30c0-7 14-7 14 0"/><path d="M47 78V27h9v51M104 78V27h9v51"/><path d="M47 27c0-8 9-8 9 0M104 27c0-8 9-8 9 0"/><path d="M51.5 19v-5M108.5 19v-5"/><path d="M44 44h15M44 61h15M101 44h15M101 61h15"/>',
     'ssc': '<rect x="56" y="14" width="44" height="62" rx="4"/><path d="M64 28h28M64 38h28M64 48h18"/><path d="m64 61 4 4 9-9"/><path d="m104 50 16-16 5 5-16 16-7 2Z"/>',
     'rail': '<rect x="56" y="12" width="48" height="54" rx="11"/><rect x="63" y="20" width="34" height="19" rx="3"/><circle cx="68" cy="53" r="3.5"/><circle cx="92" cy="53" r="3.5"/><path d="M74 53h12"/><path d="m63 66-9 13M97 66l9 13M48 79h64M52 73h56"/>',
+    'ncert': '<path d="M80 26c-10-7-24-9-38-7v52c14-2 28 0 38 7 10-7 24-9 38-7V19c-14-2-28 0-38 7Z"/><path d="M80 26v52"/><path d="M50 32c8-1 15 0 22 3M50 42c8-1 15 0 22 3M50 52c8-1 15 0 22 3M88 35c7-3 14-4 22-3M88 45c7-3 14-4 22-3M88 55c7-3 14-4 22-3"/>',
     'bank': '<path d="M42 34 80 15l38 19Z"/><path d="M42 34h76"/><path d="M50 39v28M64 39v28M96 39v28M110 39v28"/><path d="M40 70h80M35 77h90"/><circle cx="80" cy="52" r="10"/><path d="M76 47h9M76 51h9M79 47c5 0 5 8 0 8h-3l7 7"/>',
 }
 EXAM_ART = [   # header drawings on the exam tiles (own line art, 160x90; Anil 2 Nov 2026: a picture instead of a strip). No photos, maps or emblems.
@@ -3941,7 +3958,7 @@ def lang_fills():
 NAV_FUND = ('      <a class="nav-fund" href="/funders.html" title="Fund this project" data-hubonly><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'
             '<path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 5 6.4 5c2 0 3.4 1.1 4.1 2.3h3C14.2 6.1 15.6 5 17.6 5 21 5 23.1 8.5 21.6 11.8 19.5 16.4 12 21 12 21Z"/></svg>'
             '<span>Fund<span class="nf-x"> this project</span></span></a>\n')   # Anil, 2 Nov 2026: "add fund the project...here" (start page top bar)
-BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'tn', 'ka', 'kl', 'mh', 'gj', 'up', 'uk', 'cg', 'od', 'wb', 'dl', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
+BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'ncert', 'tn', 'ka', 'kl', 'mh', 'gj', 'up', 'uk', 'cg', 'od', 'wb', 'dl', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
 
 
 def hub_html(catalog, counts, grand):
@@ -3958,7 +3975,8 @@ def hub_html(catalog, counts, grand):
         te = f'<span class="bd-te" lang="te">{esc(c["te"])}</span>' if c.get('te') else ''
         pills = ''.join(f'<span>{esc(e["t"])}</span>' for e in lv[:4]) + (f'<span class="more">+{len(lv) - 4} more</span>' if len(lv) > 4 else '')
         art = BOARD_ART.get(c['id'], BOARD_ART['ssc'])
-        badge = f'<span class="bd-badge"><i></i>{len(lv)} exam{"s" if len(lv) != 1 else ""} live</span>' if lv else '<span class="bd-badge bd-soon">Coming soon</span>'
+        unit = 'class' if c['id'] == 'ncert' else 'exam'   # NCERT board: Class 11 and Class 12
+        badge = f'<span class="bd-badge"><i></i>{len(lv)} {unit}{("es" if unit == "class" else "s") if len(lv) != 1 else ""} live</span>' if lv else '<span class="bd-badge bd-soon">Coming soon</span>'
         foot = (f'{nq:,} questions' if nq else f'{len(lv)} mock test series') if lv else f'{len(ex)} exams listed'
         boards.append(f'<button type="button" class="card board b-{c["id"]}{"" if lv else " soon"}" data-act="excat" data-cat="{c["id"]}" title="{esc(c["desc"])}">'
                       f'<span class="bd-art{" has-ph" if c["id"] in BOARD_PHOTO and os.path.exists(os.path.join(SRC, "static", "board-" + c["id"] + ".webp")) else ""}">'
@@ -4708,7 +4726,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
-<header><div class="wrap"><a href="{pb if conf else '/'}">Learn with Anil · {nw(ename) + ' PYQs' if not head_all else 'PYQs for every exam'}</a><span class="hr"><a href="{'/' if head_all else (conf or {}).get('nav', ('', pb + 'practice/'))[1]}">{'All exams →' if head_all else (conf or {}).get('nav', ('Practise online →', ''))[0]}</a><a class="hsub" id="hsub" href="{pb}?buy=pyq" title="One ₹{PAY["pyq_price"]} payment opens every PYQ, mock test and book on the site for 12 months">Subscribe ₹{PAY["pyq_price"]}</a></span></div></header>
+<header><div class="wrap"><a href="{pb if conf else '/'}">Learn with Anil · {nw(ename) + (' MCQs' if conf and conf.get('ncert') else ' PYQs') if not head_all else 'PYQs for every exam'}</a><span class="hr"><a href="{'/' if head_all else (conf or {}).get('nav', ('', pb + 'practice/'))[1]}">{'All exams →' if head_all else (conf or {}).get('nav', ('Practise online →', ''))[0]}</a><a class="hsub" id="hsub" href="{pb}?buy=pyq" title="One ₹{PAY["pyq_price"]} payment opens every PYQ, mock test and book on the site for 12 months">Subscribe ₹{PAY["pyq_price"]}</a></span></div></header>
 <script>try{{var P=JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all||{{}};if(P.paid&&P.pyq&&new Date(P.pyq+"T23:59:59+05:30")>=new Date())document.getElementById("hsub").hidden=true;}}catch(e){{}}</script>
 <main class="wrap">
 <h1>{nw(h1)}</h1>
@@ -4832,7 +4850,8 @@ def q_html(q, paper_short, num_label, subj=SUBJ, l2=L2_TE, qhref=None, unlock=No
 def llms_txt(loaded, grand):
     """/llms.txt: a plain summary of the site for AI assistants (ChatGPT, Claude, Perplexity …) that cite pages when people
     ask where to find previous papers. ChatGPT was the biggest source of visitors on 24 Oct 2026."""
-    exams = [c for c, _, _ in loaded]
+    exams = [c for c, _, _ in loaded if not c.get('ncert')]   # NCERT Class 11 & 12 MCQs are listed at the end
+    grand = sum(len(q) for c, _, q in loaded if not c.get('ncert'))
     L = [f'# Learn with Anil PYQs (learnwithanil.in)', '',
          f'> Previous year question papers (PYQs) of Indian government recruitment exams with answers from the official final keys, '
          f'a short explanation for every question, and online practice: question-by-question practice with a timer, timed tests, '
@@ -4852,7 +4871,7 @@ def llms_txt(loaded, grand):
     L += ['- Not affiliated with APPSC, TSLPRB, UPSC, TGPSC or any recruiting body.', '', '## Exams and their previous papers']
     for c, papers, questions in loaded:
         base = c['dir'] + '/' if c['dir'] else ''
-        if c.get('mockonly'): continue   # SBI PO / IBPS SO: mock tests only (listed above with the mock series)
+        if c.get('mockonly') or c.get('ncert'): continue   # SBI PO / IBPS SO: mock tests only (listed above with the mock series); NCERT: at the end
         L.append(f'- [{c["name"]} previous year question papers with answers]({SITE_URL}{c["pb"]}): {len(questions):,} questions, '
                  f'English and {c["l2"]["name"]}. PYQs: {SITE_URL}{c["pb"]}pyqs.html · Sectional tests: {SITE_URL}{c["pb"]}sectional-tests.html')
         for p in sorted(papers, key=lambda p: (-p['year'], p['id'])):
@@ -4922,6 +4941,8 @@ def llms_txt(loaded, grand):
         if b.get('free'): line += f' Free sample chapter (PDF, shareable): {SITE_URL}{b["free"]}'
         bl.append(line)
     if bl: L += ['', '## Study material (PDF books)'] + bl
+    nc = _ncert().llms_lines(sys.modules[__name__], loaded)   # NCERT Class 11 & 12 chapter-wise MCQs (Anil, 16 Nov 2026)
+    if nc: L += ['', '## NCERT Class 11 and 12 chapter-wise MCQs (written by Learn with Anil)'] + nc
     L += ['', '## Pages for each recruiting board']
     for rel, X in LANDINGS.items():
         if any(c['board'] == X['board'] for c in exams): L.append(f'- [{X["title"].split(" | ")[0]}]({SITE_URL}/{rel})')
@@ -7406,6 +7427,7 @@ def extra_tiles(conf):
 
 def tiles_html(conf, papers, questions, extra_links, mains=()):
     """The three tiles on an exam's home page (PYQs, mock tests, sectional tests), tiles 2 and 3 open the app's own Mock tests and Sectional tests views in place (Anil, 29 Oct 2026), plus link tiles."""
+    if conf.get('ncert'): return _ncert().browser(conf, papers)   # NCERT: subject -> book -> chapter list instead of the three tiles
     pb, mk = conf['pb'], MOCK_PACKS.get(conf['id'])
     n = len(questions)
     nsub = len({q['s'] for q in questions})
@@ -8063,7 +8085,7 @@ def question_pages(conf, papers, questions, subj):
             short = text if len(text) <= 80 else text[:78].rsplit(' ', 1)[0] + '…'
             kw = paper_kw(conf, p)
             title = f'{short} – {kw} Q{q["n"]} | Learn with Anil'
-            desc = (f'{kw} question paper, Q{q["n"]}: {text[:140].rsplit(" ", 1)[0]}… '
+            desc = _ncert().qpage_desc(conf, p, q, text) if conf.get('ncert') else (f'{kw} question paper, Q{q["n"]}: {text[:140].rsplit(" ", 1)[0]}… '
                     + (f'Answer worked out by Learn with Anil (no official key), with explanation, in English and {l2["name"]}.' if p.get('nokey') else
                        f'Answer from {p.get("key") or conf["keyname"]}, with explanation, in English and {l2["name"]}.'))
             prev_q, next_q = (qs[i - 1] if i else None), (qs[i + 1] if i + 1 < len(qs) else None)
@@ -8095,7 +8117,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/", "/ncert-class-11/", "/ncert-class-12/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);

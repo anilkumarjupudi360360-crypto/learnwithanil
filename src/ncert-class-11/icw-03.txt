@@ -1,0 +1,194 @@
+# NCERT Class 11 Political Science, Indian Constitution at Work, Chapter 3: Election and Representation
+# Questions written by Learn with Anil from the chapter (current NCERT edition, Reprint 2026-27). 16 Nov 2026.
+
+Q 1 | pol | Indian Constitution at Work
+Why does the chapter say that elections are needed in most democracies?
+(1) Because all citizens can take every decision directly in large modern societies
+(2) Because the courts cannot work without elected judges
+(3) Because in large societies citizens cannot take every decision directly, so they choose representatives who govern on their behalf
+(4) Because the Constitution forbids direct democracy
+= 3
+~ Direct democracy, where citizens decide everything themselves, is possible only in small communities. In a country like India people rule through representatives, and elections are how they choose and change them.
+
+Q 2 | pol | Indian Constitution at Work
+In the "first past the post" (FPTP) system, the candidate who wins is the one who:
+(1) Gets more than half of all the votes polled
+(2) Gets the largest number of second-preference votes
+(3) Is placed first on the party's list
+(4) Gets more votes than any other candidate, even if less than half of the total
+= 4
+~ Under FPTP, also called the plurality system, the candidate with the most votes wins the seat; a majority of votes is not needed. India uses it for the Lok Sabha and the state legislative assemblies.
+
+Q 3 | pol | Indian Constitution at Work
+Which of the following is a feature of the proportional representation (PR) system?
+(1) The country is always divided into small single-member constituencies
+(2) A party gets seats roughly in proportion to its share of votes
+(3) The winner need not get a majority of votes in any constituency, and the party with the most seats may get far more seats than its vote share
+(4) Voters vote for individual candidates only and never for parties
+= 2
+~ In PR, a party's share of seats roughly matches its share of votes. Option 3 describes a common result of FPTP, where a party can win a large majority of seats with well under half the votes.
+
+Q 4 | pol | Indian Constitution at Work
+The chapter uses the example of a country where the whole country is treated as one constituency and seats are given to parties in proportion to their votes. Which country is it?
+(1) Israel
+(2) United Kingdom
+(3) United States
+(4) Canada
+= 1
+~ In Israel, voters vote for parties and the whole country is one constituency; each party gets seats in the Knesset in proportion to its national vote share, provided it crosses a minimum threshold.
+
+Q 5 | pol | Indian Constitution at Work
+In India, the proportional representation system with single transferable vote is used to elect:
+1. Members of the Rajya Sabha
+2. The President
+3. The Vice-President
+4. Members of the Lok Sabha
+(1) 1, 2 and 3 only
+(2) 1 and 4 only
+(3) 2 and 3 only
+(4) 1, 2, 3 and 4
+= 1
+~ The Rajya Sabha, the President, the Vice-President and the state legislative councils are elected by PR with single transferable vote. The Lok Sabha and state assemblies use first past the post.
+
+Q 6 | pol | Indian Constitution at Work
+Which of the following is NOT a reason the chapter gives for India's choice of the first past the post system?
+(1) It is simple to understand, even for voters with little knowledge of politics
+(2) It gives voters a clear choice between candidates and a representative for their area
+(3) It always gives every party seats exactly in proportion to its votes
+(4) It tends to produce stable governments
+= 3
+~ FPTP does not give seats in proportion to votes; that is the aim of PR. The makers of the Constitution chose FPTP for its simplicity, its link between voters and a local representative, and its tendency to give stable majorities.
+
+Q 7 | pol | Indian Constitution at Work
+In the Rajya Sabha elections, which voters elect the representatives of a state?
+(1) All adult citizens of the state
+(2) The members of the Lok Sabha from that state
+(3) The members of the state's panchayats and municipalities
+(4) The members of the state's Legislative Assembly
+= 4
+~ Members of the Rajya Sabha are elected by the elected members of the state Legislative Assembly, using PR with single transferable vote. Voters rank candidates in order of preference.
+
+Q 8 | pol | Indian Constitution at Work
+The Constituent Assembly rejected separate electorates for disadvantaged groups and chose instead:
+(1) Nominated members for each community
+(2) Reserved constituencies, where only candidates from the group can contest but all voters of the constituency vote
+(3) A separate list of voters for each caste
+(4) Proportional representation for the Lok Sabha
+= 2
+~ Separate electorates, used under British rule, let only members of a community vote for its candidates. The Constitution chose reserved constituencies: only SC or ST candidates can stand, but every voter in the constituency votes.
+
+Q 9 | pol | Indian Constitution at Work
+Which body decides which constituencies will be reserved for the Scheduled Castes and Scheduled Tribes?
+(1) The Election Commission of India
+(2) The Supreme Court
+(3) The Delimitation Commission
+(4) The National Commission for Scheduled Castes
+= 3
+~ The Delimitation Commission, set up by the President and working with the Election Commission, draws constituency boundaries and decides which ones are reserved, based on the population of SCs and STs.
+
+Q 10 | pol | Indian Constitution at Work
+On what basis are constituencies reserved for the Scheduled Tribes chosen?
+(1) Constituencies where STs are more than half of all voters, only
+(2) Constituencies with the highest share of ST population
+(3) By lottery among all constituencies
+(4) Constituencies chosen by the ruling party
+= 2
+~ For the STs, the constituencies with the largest proportion of ST population are reserved. For the SCs, the Delimitation Commission looks at constituencies with a high share of SC population and also spreads them across the state.
+
+Q 11 | pol | Indian Constitution at Work
+The 61st Amendment, which applied from the 1989 elections, changed the minimum voting age in India from:
+(1) 25 years to 21 years
+(2) 21 years to 18 years
+(3) 18 years to 16 years
+(4) 21 years to 19 years
+= 2
+~ The 61st Amendment (1988) lowered the voting age from 21 to 18, bringing millions of young people onto the voters' list from the 1989 elections.
+
+Q 12 | pol | Indian Constitution at Work
+"Universal adult franchise" means that:
+(1) Every adult citizen has the right to vote, without restrictions of property, education, caste, religion or gender
+(2) Only educated adults can vote
+(3) Only taxpayers can vote
+(4) Every adult has to vote by law
+= 1
+~ Every citizen above the voting age can vote. India adopted it from the first election, unlike many older democracies where women and the poor got the vote only gradually.
+
+Q 13 | pol | Indian Constitution at Work
+The minimum age to contest an election to the Lok Sabha is:
+(1) 18 years
+(2) 21 years
+(3) 25 years
+(4) 30 years
+= 3
+~ A candidate must be at least 25 years old to contest the Lok Sabha or a state Legislative Assembly, and 30 years for the Rajya Sabha or a Legislative Council.
+
+Q 14 | pol | Indian Constitution at Work
+Which article of the Constitution provides for an Election Commission for the superintendence, direction and control of elections?
+(1) Article 280
+(2) Article 356
+(3) Article 368
+(4) Article 324
+= 4
+~ Article 324 sets up the Election Commission and gives it the superintendence, direction and control of elections to Parliament, the state legislatures and the offices of President and Vice-President.
+
+Q 15 | pol | Indian Constitution at Work
+Consider the following statements about the Election Commission of India:
+1. It has had more than one member since 1993, with the Chief Election Commissioner presiding.
+2. The Chief Election Commissioner can be removed only in the way a Supreme Court judge is removed.
+3. Elections to panchayats and municipalities are conducted by the Election Commission of India.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 1
+~ Since 1993 the Commission has had three members. The CEC enjoys the security of tenure of a Supreme Court judge. Panchayat and municipal elections are conducted by the State Election Commissions, not the ECI.
+
+Q 16 | pol | Indian Constitution at Work
+In each state, the work of the Election Commission is assisted by:
+(1) The Governor
+(2) The Advocate General
+(3) The Chief Electoral Officer
+(4) The State Public Service Commission
+= 3
+~ A Chief Electoral Officer in each state, with officers in each district and constituency, runs the election machinery under the Election Commission's direction.
+
+Q 17 | pol | Indian Constitution at Work
+Which of the following is a function of the Election Commission of India?
+1. Preparing and updating the voters' list
+2. Deciding the election schedule
+3. Recognising political parties and allotting symbols
+4. Deciding the number of seats in the Lok Sabha
+(1) 1, 2 and 3 only
+(2) 1 and 2 only
+(3) 3 and 4 only
+(4) 1, 2, 3 and 4
+= 1
+~ The ECI prepares electoral rolls, fixes the schedule, enforces the Model Code of Conduct and recognises parties and allots symbols. The number of seats is fixed by the Constitution and laws of Parliament, not by the Commission.
+
+Q 18 | pol | Indian Constitution at Work
+Under the first past the post system, which of the following outcomes is possible?
+(1) A party wins a large majority of seats with much less than half of the votes
+(2) Every party gets seats exactly equal to its vote share
+(3) A candidate needs more than 50% of votes to win
+(4) Small parties always get more seats than their vote share
+= 1
+~ Because each seat goes to whoever is ahead, a party that leads narrowly in many constituencies can win a big majority of seats with well under half the votes. The chapter shows this with an example from a Lok Sabha election.
+
+Q 19 | pol | Indian Constitution at Work
+Which of the following has been suggested as an electoral reform in the chapter?
+(1) Abolishing the Election Commission
+(2) Ending universal adult franchise
+(3) Steps to reduce the role of money and criminals in elections and to give more representation to women
+(4) Allowing only national parties to contest
+= 3
+~ Suggestions discussed include more representation for women, stricter rules on election spending, barring candidates with serious criminal cases and more powers for the Election Commission. Reform depends on vigilant citizens as much as on laws.
+
+Q 20 | pol | Indian Constitution at Work
+Who conducts the election of the President of India?
+(1) The Speaker of the Lok Sabha
+(2) The Chief Justice of India
+(3) The Union Home Ministry
+(4) The Election Commission of India
+= 4
+~ Article 324 places elections to the offices of President and Vice-President, as well as to Parliament and state legislatures, under the Election Commission of India.

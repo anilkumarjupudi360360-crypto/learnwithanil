@@ -33,6 +33,11 @@
    "desc": "Railway Recruitment Board exams"
   },
   {
+   "id": "ncert",
+   "name": "NCERT",
+   "desc": "NCERT Class 11 & 12 textbooks: subject-wise and chapter-wise MCQs with answers"
+  },
+  {
    "id": "tn",
    "name": "TNPSC & Tamil Nadu",
    "desc": "TNPSC Groups 1–4 and CTS, TNUSRB Police, TRB teacher and TN TET exams"
@@ -1378,6 +1383,22 @@
    "b": "BSEB",
    "t": "STET",
    "n": "Secondary Teacher Eligibility Test"
+  },
+  {
+   "id": "ncert-class-11",
+   "cat": "ncert",
+   "b": "NCERT",
+   "t": "Class 11",
+   "n": "Polity, History, Geography, Economics, Sociology, Art & Science · chapter-wise MCQs",
+   "live": "ncert-class-11/"
+  },
+  {
+   "id": "ncert-class-12",
+   "cat": "ncert",
+   "b": "NCERT",
+   "t": "Class 12",
+   "n": "Polity, History, Geography, Economics, Sociology, Art & Science · chapter-wise MCQs",
+   "live": "ncert-class-12/"
   }
  ],
  "timers": [
