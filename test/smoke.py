@@ -145,7 +145,12 @@ async def main():
                 await pg.screenshot(path=f'{SHOTS}/mistakes.png')
                 mt = await pg.inner_text('#view')
                 if 'my mistakes' not in mt.lower() or ('Practise' not in mt and 'No mistakes yet' not in mt and 'Unlock' not in mt): errors.append('my mistakes: page did not show')
-                if await pg.evaluate('document.getElementById("navMis").hidden') and 'to practise again' in mt: errors.append('my mistakes: no count on the tab')
+                # Anil, 16 Nov 2026: My Mistakes left the top bar; it is card 04 on the exam page, with the count
+                if await pg.locator('#nav a[data-v="mistakes"], #tabbar a[data-v="mistakes"]').count(): errors.append('my mistakes should not be in the top bar any more')
+                if 'to practise again' in mt:
+                    await pg.evaluate('location.hash="home"'); await pg.wait_for_timeout(250)
+                    mc = await pg.evaluate('(document.querySelector("[data-mis]")||{}).textContent||""')
+                    if 'to practise again' not in mc: errors.append(f'my mistakes card: no count ({mc!r})')
                 await pg.evaluate('location.hash="bank"'); await pg.wait_for_timeout(200)
                 if 'papers' not in (await pg.evaluate('location.pathname + location.hash')): errors.append('removed Question Bank should open Previous Papers')
                 await pg.evaluate('location.hash="about"'); await pg.wait_for_timeout(150)
@@ -223,12 +228,15 @@ async def main():
             return await pg.evaluate("""(()=>{ const hub = document.getElementById('hub-static'), home = document.getElementById('home-static');
                 if(hub && !hub.hidden) return 'exams'; if(home && !home.hidden) return 'home';
                 const h = document.querySelector('#view h1, #view h2'); return h ? h.innerText : '?'; })()""")
-        checks = [('appsc-group-1/bank/', '/appsc-group-1/papers/', 'question papers'), ('appsc-group-1/mistakes/', '/appsc-group-1/mistakes/', 'My Mistakes'), ('upsc-capf/practice/', '/upsc-capf/practice/', 'quiz'),
+        checks = [('appsc-group-1/bank/', '/appsc-group-1/papers/', 'question papers'), ('appsc-group-1/mistakes/', '/appsc-group-1/mistakes/', 'wrong answers'), ('upsc-capf/practice/', '/upsc-capf/practice/', 'quiz'),
                   ('#home', '/appsc-group-2/', 'home'), ('appsc-group-1/#papers', '/appsc-group-1/papers/', 'question papers'),
                   ('upsc-capf/q/c2026a-3/', '/upsc-capf/quiz/', 'Raghu'), ('upsc-capf/?q=c2026a-4', '/upsc-capf/quiz/', 'Ol Chiki'),
                   ('exam/ssc-chsl/', '/exam/ssc-chsl/', 'CHSL'), ('appsc-group-2/papers/', '/appsc-group-2/papers/', 'question papers')]
         for path, want, word in checks:
             await pg.goto(URL + path); await pg.wait_for_timeout(700)
+            for _ in range(10):   # slow views (the My Mistakes lock, 16 Nov 2026: no longer named in the top bar) get up to 2 s more
+                if word in (await view()) or word in await pg.evaluate('document.body.innerText'): break
+                await pg.wait_for_timeout(200)
             got = await pg.evaluate('location.pathname')
             txt = await pg.evaluate('document.body.innerText')
             if got != want: errors.append(f'paths: {path} ended at {got}, wanted {want}')
@@ -285,10 +293,13 @@ async def main():
             await pg.goto(URL + sub + '/'); await pg.wait_for_timeout(400)
             nt = await pg.locator('#home-static .etiles .etile:not(.etile-sm)').count()
             want = {'appsc-group-1': 6, 'tgpsc-group-1': 5}.get(sub, 3)   # APPSC Group-1: Prelims 3 + Mains 3; TGPSC Group-I: Prelims 3 + Mains 2 (questions only)
+            # Anil, 16 Nov 2026: plus card 04 My Mistakes (not on mock-only exams), 05 Notification (when the exam has a page), 06 Books (when it has books)
+            want += await pg.locator('#home-static .etile .etile-hd.eh4, #home-static .etile .etile-hd.eh5, #home-static .etile .etile-hd.eh6').count()
+            if sub not in ('sbi-po', 'ibps-so') and not await pg.locator('#home-static .etile-hd.eh4').count(): errors.append(f'{sub}: no My Mistakes card')
             if nt != want: errors.append(f'{sub}: {nt} main tiles on the exam home, expected {want}')
             if await pg.locator('#qotd-home').count(): errors.append(f'{sub}: question of the day should only be on the start page')
             for h in await pg.eval_on_selector_all('#home-static .etiles a', 'els => els.map(e => e.getAttribute("href"))'):
-                if h.startswith('#'): continue
+                if h.startswith('#') or h.startswith('https://wa.me/'): continue   # card 06 Books asks Anil on WhatsApp when an exam has no books yet
                 f = os.path.join(SITE, h.split('#')[0].lstrip('/'))
                 if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{sub}: tile links to missing {h}')
         # every previous paper runs with a countdown timer (1 minute per question), also question by question

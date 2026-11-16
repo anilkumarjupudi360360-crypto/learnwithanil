@@ -2569,6 +2569,7 @@ def main():
     xpath_ = os.path.join(SRC, 'books', 'explanations.json')
     exsealed = json.load(open(xpath_, encoding='utf-8')) if os.path.exists(xpath_) else {}
     notes = [dict(b, dl=sealed[b['id']]['pdf'], buy='') if b['id'] in sealed else b for b in notes]
+    NOTES_ALL[:] = notes   # card 06 (Books) on each exam page
     epath = os.path.join(SRC, 'exams.json')
     catalog = json.load(open(epath, encoding='utf-8')) if os.path.exists(epath) else dict(cats=[], exams=[])
     # an exam tile is live only if its questions were built
@@ -2646,7 +2647,7 @@ def main():
 
         l2 = conf['l2']
 
-        links = [(N['h1'], '/' + rel) for rel, N in NOTIFS.items() if N['exam'] == conf['id']]
+        links = [(N['h1'], '/' + rel) for rel, N in NOTIFS.items() if N['exam'] == conf['id'] and rel != EXAM_NOTIF.get(conf['id'])]   # card 05 links the exam's own notification
         if bb_url and conf['id'] == 'appsc-group-2': links.insert(0, ('New: Bahubali Test Series – Group 2 Mains full-length tests', bb_url))
         tiles = tiles_html(conf, papers, questions, links, emains)
 
@@ -2703,7 +2704,6 @@ def main():
             if conf.get('mockonly'):   # SBI PO / IBPS SO: the top bar offers the mock and sectional tests instead of the PYQ pages
                 s = s.replace('      <a href="#papers" data-v="papers" data-g2>Previous Papers</a>\n', '      <a href="#mocks" data-v="mocks" data-g2>Mock Tests</a>\n')
                 s = s.replace('      <a href="#practice" data-v="practice" data-g2>Practice</a>\n', '      <a href="#sectionals" data-v="sectionals" data-g2>Sectional Tests</a>\n')
-                s = s.replace('      <a href="#mistakes" data-v="mistakes" data-g2>My Mistakes<span class="nav-n" id="navMis" hidden></span></a>\n', '')
             for k, v in LF.items(): s = s.replace(k, v)
             return s
         root_title = 'Learn with Anil (LearnWithAnil.in) – PYQs with Answers: UPSC Prelims, Mains & Anthropology, APPSC Group 1 & 2, TS Police, SSC CGL'
@@ -6592,6 +6592,60 @@ def pay_data(conf):
                 pages=dict(pyq=pb + 'pyqs.html', mock=pb + 'mock-test.html', sec=pb + 'sectional-tests.html'))
 
 
+# Anil, 16 Nov 2026: "add one more box of their notifcation in the respective exam only" -> card 05 on the exam page
+EXAM_NOTIF = {
+    'upsc-cse': 'upsc-cse-2027-notification.html', 'upsc-prelims': 'upsc-cse-2027-notification.html',
+    'upsc-epfo': 'upsc-epfo-apfc-2026-notification.html', 'upsc-capf': 'upsc-capf-2027-notification.html',
+    'appsc-group-1': 'appsc-group-1-notification-2026.html', 'appsc-group-2': 'appsc-group-2-notification-2026.html',
+    'appsc-fro': 'appsc-fro-notification-2026.html', 'appsc-amvi': 'appsc-amvi-notification-2026.html',
+    'appsc-eo': 'appsc-eo-grade-3-notification-2026.html', 'appsc-analyst': 'appsc-analyst-grade-2-notification-2026.html',
+    'appsc-env-engineer': 'appsc-assistant-environmental-engineer-notification-2026.html',
+    'ap-police-si': 'ap-police-si-notification-2026.html', 'ap-police-constable': 'ap-police-constable-notification-2026.html',
+    'ap-dsc': 'ap-dsc-2026-notification.html', 'tgpsc-amvi': 'tgpsc-amvi-notification.html',
+    'tgpsc-hmwssb-manager': 'tgpsc-hmwssb-manager-notification-2026.html', 'ssc-cgl': 'ssc-cgl-2026-notification.html',
+    'ssc-gd': 'ssc-gd-constable-2027-notification.html', 'rrb-ntpc': 'rrb-ntpc-2026-notification.html',
+    'rpf-si': 'rpf-si-notification-2026.html', 'rpf-constable': 'rpf-constable-notification-2026.html',
+    'tnpsc-group-4': 'tnpsc-group-4-notification-2026.html', 'karnataka-fda-sda': 'kea-fda-sda-notification-2026.html',
+    'mpsc-group-c': 'mpsc-group-c-notification-2026.html', 'gsssb-cce': 'gsssb-cce-notification-2026.html',
+    'uppsc-ro-aro': 'uppsc-ro-aro-notification-2026.html', 'upsssc-inter-level': 'upsssc-inter-level-notification-2026.html',
+}
+
+
+NOTES_ALL = []
+
+
+def extra_tiles(conf):
+    """Cards after 01-03 on an exam's page (Anil, 16 Nov 2026): My Mistakes (moved here from the top bar), the exam's Notification page and its Books."""
+    pb, cards = conf['pb'], []
+    hd = lambda k, ic, label: (f'<span class="etile-hd eh{k}"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ic}</svg></span>'
+                               f'<span class="etile-k">0{len(cards) + 4} · {label}</span></span>')
+    exam = esc(conf.get('seo') or conf['name'])
+    if not conf.get('mockonly'):
+        cards.append(f'<a class="etile fx" href="{pb}mistakes/">' + hd(4, '<path d="M4 4h16v16H4z"/><path d="M9 9l6 6M15 9l-6 6"/>', 'My Mistakes')
+                     + '<b>Your mistakes book</b><span class="etile-p">Every question you get wrong in this exam is saved here, subject by subject. '
+                     'Practise them again and again; a question leaves the list once you get it right twice in a row.</span>'
+                     '<span class="etile-price" data-mis>Empty for now · it fills up as you practise</span><span class="etile-btn">Open My Mistakes →</span></a>')
+    nf = EXAM_NOTIF.get(conf['id'])
+    if nf:
+        cards.append(f'<a class="etile fx" href="/{nf}">' + hd(5, '<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>', 'Notification')
+                     + f'<b>{exam} notification</b><span class="etile-p">Posts, eligibility, age, important dates, fee, exam pattern and syllabus, '
+                     'with links to the official notice. Updated as news comes in.</span>'
+                     '<span class="etile-price">Latest news on this exam</span><span class="etile-btn">Read the notification →</span></a>')
+    own = [b for b in NOTES_ALL if (conf['id'] in b['exams'] if b.get('exams') else conf['id'] in NOTES_EXAMS)]
+    bic = '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/>'
+    if own:
+        subs = list(dict.fromkeys(b.get('subject_label', b['subject']) for b in own))
+        cards.append(f'<a class="etile fx" href="{pb}notes/">' + hd(6, bic, 'Books')
+                     + f'<b>Study material for {exam}</b><span class="etile-p">{len(subs)} Learn with Anil book{"s" if len(subs) > 1 else ""}: {esc(", ".join(subs))}, with the latest data and previous questions inside.</span>'
+                     f'<span class="etile-price" data-paidtxt="✓ Included in your All-in-One Pass">🔒 {INCL}</span><span class="etile-btn">See the books →</span></a>')
+    else:
+        wa = f'https://wa.me/{WHATSAPP}?text=' + urllib.parse.quote(f'Hi Anil sir, please add books for {conf.get("seo") or conf["name"]} on Learn with Anil.')
+        cards.append(f'<a class="etile fx" href="{wa}" target="_blank" rel="noopener">' + hd(6, bic, 'Books')
+                     + f'<b>Books for {exam}</b><span class="etile-p">Learn with Anil books for this exam are being written. They will come with the same All-in-One Pass, at no extra cost.</span>'
+                     '<span class="etile-price">Coming soon</span><span class="etile-btn">Ask Anil for them →</span></a>')
+    return ''.join(cards)
+
+
 def tiles_html(conf, papers, questions, extra_links, mains=()):
     """The three tiles on an exam's home page (PYQs, mock tests, sectional tests), tiles 2 and 3 open the app's own Mock tests and Sectional tests views in place (Anil, 29 Oct 2026), plus link tiles."""
     pb, mk = conf['pb'], MOCK_PACKS.get(conf['id'])
@@ -6664,7 +6718,7 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
         if mq:
             hd = lambda h, s: f'<div class="section-title" style="margin:{"0" if h == "Prelims" else "26px"} 0 12px"><h2>{h}</h2><span class="muted" style="font-size:14px">{s}</span></div>'
             return (f'<section class="wrap section">' + hd('Prelims', 'Screening test: previous papers, mock tests, sectional tests')
-                    + f'<div class="etiles">{t1}{t2}{t3}</div>' + hd('Mains', 'Descriptive papers: previous questions with model answers')
+                    + f'<div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>' + hd('Mains', 'Descriptive papers: previous questions with model answers')
                     + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + g1mains.tiles_credit() + mentor_card(conf) + exam_clock_html(conf)
                     + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
     if conf['id'] == 'tgpsc-group-1':   # TGPSC Group-I: Prelims tiles and Mains tiles (Mains questions only; tools/tg1mains.py)
@@ -6673,10 +6727,10 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
         if tq:
             hd = lambda h, s: f'<div class="section-title" style="margin:{"0" if h == "Prelims" else "26px"} 0 12px"><h2>{h}</h2><span class="muted" style="font-size:14px">{s}</span></div>'
             return (f'<section class="wrap section">' + hd('Prelims', 'Preliminary test: previous papers, mock tests, sectional tests')
-                    + f'<div class="etiles">{t1}{t2}{t3}</div>' + hd('Mains', 'Descriptive papers: previous questions in English and Telugu')
+                    + f'<div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>' + hd('Mains', 'Descriptive papers: previous questions in English and Telugu')
                     + f'<div class="etiles">{tg1mains.tiles(conf, len(tq))}</div>' + exam_clock_html(conf)
                     + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + '</section>')
-    return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}</div>' + mentor_card(conf) + exam_clock_html(conf)
+    return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>' + mentor_card(conf) + exam_clock_html(conf)
             + (f'<div class="etiles etiles-links">{links}</div>' if links else '') + note + mains_section(conf, mains) + '</section>')
 
 
