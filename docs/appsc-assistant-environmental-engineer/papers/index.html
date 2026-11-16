@@ -85,6 +85,7 @@ img{max-width:100%}
 .lang button[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body)}
 .lang button[lang="ta"]{font-family:"Noto Sans Tamil",var(--f-body)}
 .lang button[lang="kn"]{font-family:"Noto Sans Kannada",var(--f-body)}
+.lang button[lang="mr"]{font-family:"Noto Sans Devanagari",var(--f-body)}
 .lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .lang button.na{opacity:.45}
 .lang button.lang-soon{font-size:12px;font-weight:700;padding:5px 8px;color:var(--muted);border-left:1px solid var(--line);border-radius:0 999px 999px 0;margin-left:2px}
@@ -94,7 +95,8 @@ img{max-width:100%}
 [lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body);line-height:1.75}
 [lang="ta"]{font-family:"Noto Sans Tamil",var(--f-body);line-height:1.75}
 [lang="kn"]{font-family:"Noto Sans Kannada",var(--f-body);line-height:1.8}
-.lang button[lang="te"],.lang button[lang="hi"],.lang button[lang="ta"],.lang button[lang="kn"]{line-height:1.2}
+[lang="mr"]{font-family:"Noto Sans Devanagari",var(--f-body);line-height:1.75}
+.lang button[lang="te"],.lang button[lang="hi"],.lang button[lang="ta"],.lang button[lang="kn"],.lang button[lang="mr"]{line-height:1.2}
 .pill.en-only{background:var(--none-soft);color:var(--muted)}
 .nav .count{font-family:var(--f-mono);font-size:11px;background:var(--bad);color:#fff;border-radius:999px;padding:0 6px;line-height:18px}
 @media (max-width:1360px){
@@ -196,7 +198,7 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .hero p.hero-l2{font-size:16px;margin-top:-4px}
 .hero p.hero-news{font-size:15px;margin-top:-8px}.hero p.hero-news:empty{display:none}.hero p.hero-news a{color:inherit;font-weight:700}
 .hero p.hero-aka{font-size:15px;color:var(--band-muted);opacity:.85;margin-top:-4px}.hero p.hero-aka:empty{display:none}
-.why h4[lang="te"],.why-en summary[lang="te"]{font-family:"Noto Sans Telugu",var(--f-body)}.why h4[lang="hi"],.why-en summary[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body)}.why h4[lang="ta"],.why-en summary[lang="ta"]{font-family:"Noto Sans Tamil",var(--f-body)}.why h4[lang="kn"],.why-en summary[lang="kn"]{font-family:"Noto Sans Kannada",var(--f-body)}
+.why h4[lang="te"],.why-en summary[lang="te"]{font-family:"Noto Sans Telugu",var(--f-body)}.why h4[lang="hi"],.why-en summary[lang="hi"]{font-family:"Noto Sans Devanagari",var(--f-body)}.why h4[lang="ta"],.why-en summary[lang="ta"]{font-family:"Noto Sans Tamil",var(--f-body)}.why h4[lang="kn"],.why-en summary[lang="kn"]{font-family:"Noto Sans Kannada",var(--f-body)}.why h4[lang="mr"],.why-en summary[lang="mr"]{font-family:"Noto Sans Devanagari",var(--f-body)}
 .why-en{margin-top:6px}.why-en summary{cursor:pointer;font-size:13.5px;font-weight:700;color:var(--accent-text)}.why-en p{margin:6px 0 0}
 #home-static .hero h1{max-width:20ch}
 #hub-static .hero h1{max-width:21ch}
@@ -864,7 +866,8 @@ details.upc .exams{margin-top:8px}
       <button type="button" data-act="lang" data-l="te" lang="te" aria-pressed="false">తెలుగు</button>
       <button type="button" data-act="lang" data-l="ta" lang="ta" aria-pressed="false" hidden>தமிழ்</button>
       <button type="button" data-act="lang" data-l="kn" lang="kn" aria-pressed="false" hidden>ಕನ್ನಡ</button>
-      <button type="button" class="lang-soon" data-act="langsoon" title="Coming soon: മലയാളം, मराठी" aria-label="More languages coming soon: മലയാളം, मराठी">+2</button>
+      <button type="button" data-act="lang" data-l="mr" lang="mr" aria-pressed="false" hidden>मराठी</button>
+      <button type="button" class="lang-soon" data-act="langsoon" title="Coming soon: മലയാളം" aria-label="More languages coming soon: മലയാളം">+1</button>
     </div>
     <button type="button" class="nav-sub" id="navSub" data-act="navsub" title="One ₹45 payment opens every PYQ, mock test and book on the site for 12 months" hidden>Subscribe ₹45</button>
   </div>
@@ -936,7 +939,7 @@ details.upc .exams{margin-top:8px}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ap-enveng-351cb4aee8.js"></script>
+<script src="data/ap-enveng-c65908e7ca.js"></script>
 <script>
 (function(){
 "use strict";
@@ -973,7 +976,7 @@ const REV = ["mistakes"];   // "My Mistakes" in the top menu (was "My Revision" 
 let S = readLS(KEY, blank());
 (()=>{ let n = 0; for(const [id, m] of Object.entries(S.mistakes||{})) if(m && m.reason==="k" && (m.miss||1)<=1){ delete S.mistakes[id]; n++; } if(n) writeLS(KEY, S); })();   // skipped-only entries (old rule)
 let P = readLS(PKEY, {papers:null, topics:null, count:10, mode:"practice", recall:true, lang:"en"});
-try{ const gl = localStorage.getItem("lwa-lang"); if(gl && ["en","hi","te","ta","kn"].includes(gl)) P.lang = gl; }catch(_){}
+try{ const gl = localStorage.getItem("lwa-lang"); if(gl && ["en","hi","te","ta","kn","mr"].includes(gl)) P.lang = gl; }catch(_){}
 const save = ()=>writeLS(KEY, S), savePrefs = ()=>writeLS(PKEY, P);
 const QKEY = "lwa-"+EKEY+"-quiz-v1";   // the quiz or test in progress, so a reload (or a phone closing the tab in the background) does not lose it
 function saveQZ(){ try{ if(QZ && QZ.source!=="mock") localStorage.setItem(QKEY, JSON.stringify({QZ, at:Date.now()})); else localStorage.removeItem(QKEY); }catch(_){} }
@@ -1734,7 +1737,7 @@ function stemHTML(q){ const t=QT(q), tag = (t.split("\n").filter(tblRow).length>
 function answerText(q){ const o=OPTS(q); return isMCQ(q) ? q.a.map(i=>`(${LET[i]}) ${o[i]}`).join("  or  ") : ANS(q); }
 function answerBox(q){ const te = isMCQ(q)? (P.lang===L2.code&&!!q.ot) : (P.lang===L2.code&&!!q.at); return `<div class="answer"${te?LATTR:""}><small lang="en">${esc((PMAP[q.p]||{}).alabel||"Official answer")}</small>${esc(answerText(q))}</div>`; }
 function videoBtn(q){ return q.v? `<button class="video-btn" type="button" data-act="video" data-id="${q.id}"><span class="play" aria-hidden="true">▶</span><span><b lang="te">వీడియో వివరణ చూడండి</b><small>Watch the video explanation · ${esc(q.v.dur||"1 min")} · Telugu</small></span></button>` : ""; }
-const WHY_L2 = {te:"వివరణ", hi:"व्याख्या", ta:"விளக்கம்", kn:"ವಿವರಣೆ"}, EN_TOO = {te:"English లో చదవండి", hi:"अंग्रेज़ी में पढ़ें", ta:"ஆங்கிலத்தில் படிக்க", kn:"ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಓದಿ"};
+const WHY_L2 = {te:"వివరణ", hi:"व्याख्या", ta:"விளக்கம்", kn:"ವಿವರಣೆ", mr:"स्पष्टीकरण"}, EN_TOO = {te:"English లో చదవండి", hi:"अंग्रेज़ी में पढ़ें", ta:"ஆங்கிலத்தில் படிக்க", kn:"ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಓದಿ", mr:"इंग्रजीत वाचा"};
 function whyBox(w, wt, l){   // the explanation in the reader's language, with the English one a tap away
   if(wt && l && l!=="en") return `<div class="why"><h4 lang="${l}">${WHY_L2[l]||"Explanation"}</h4><p lang="${l}">${esc(wt)}</p>`
     + (w? `<details class="why-en"><summary lang="${l}">${EN_TOO[l]||"Read in English"}</summary><p>${esc(w)}</p></details>` : "") + `</div>`;
@@ -1778,7 +1781,7 @@ function head(eyebrow, title, desc, right){ return `<div class="page-head"><div>
 /* ---------- languages (one choice for the whole site) ----------
    SITE_LANGS comes from SITE_LANGS in tools/build.py: the hero line, the badge, the counts, the "+N" chip in the switcher and the score
    card follow it, so a language marked live there shows up everywhere (Anil, 2 Nov 2026: "update them...as new languages are added"). */
-const SITE_LANGS = [{"c": "en", "self": "English", "hi": "अंग्रेज़ी", "te": "ఇంగ్లీష్", "live": true}, {"c": "te", "self": "తెలుగు", "hi": "तेलुगु", "te": "తెలుగు", "live": true}, {"c": "hi", "self": "हिंदी", "hi": "हिंदी", "te": "హిందీ", "live": true}, {"c": "ta", "self": "தமிழ்", "hi": "तमिल", "te": "తమిళం", "live": true}, {"c": "kn", "self": "ಕನ್ನಡ", "hi": "कन्नड़", "te": "కన్నడ", "live": true}, {"c": "ml", "self": "മലയാളം", "hi": "मलयालम", "te": "మలయాళం", "live": false}, {"c": "mr", "self": "मराठी", "hi": "मराठी", "te": "మరాఠీ", "live": false}];
+const SITE_LANGS = [{"c": "en", "self": "English", "hi": "अंग्रेज़ी", "te": "ఇంగ్లీష్", "live": true}, {"c": "te", "self": "తెలుగు", "hi": "तेलुगु", "te": "తెలుగు", "live": true}, {"c": "hi", "self": "हिंदी", "hi": "हिंदी", "te": "హిందీ", "live": true}, {"c": "ta", "self": "தமிழ்", "hi": "तमिल", "te": "తమిళం", "live": true}, {"c": "kn", "self": "ಕನ್ನಡ", "hi": "कन्नड़", "te": "కన్నడ", "live": true}, {"c": "ml", "self": "മലയാളം", "hi": "मलयालम", "te": "మలయాళం", "live": false}, {"c": "mr", "self": "मराठी", "hi": "मराठी", "te": "మరాఠీ", "live": true}];
 const LANGS = Object.fromEntries(SITE_LANGS.filter(x=>x.live).map(x=>[x.c, x.self]));
 const HUB_LANGS = ["en","hi","te"];   // the start page is translated into these (other live languages, e.g. Tamil, are exam-page only for now)
 const availLangs = ()=> (DATA.hub && (current==="exams" || current==="")) ? SITE_LANGS.filter(x=>x.live && HUB_LANGS.includes(x.c)).map(x=>x.c) : ["en", L2.code];
@@ -1800,7 +1803,7 @@ const HUBT = {
   f5:{en:'Mock test questions in our test series', hi:'हमारी टेस्ट सीरीज़ में मॉक टेस्ट प्रश्न', te:'మా టెస్ట్ సిరీస్‌లో మాక్ టెస్ట్ ప్రశ్నలు'},
   g1:{en:'1 lakh', hi:'1 लाख', te:'1 లక్ష'},
   g2:{en:'Our goal: 1,00,000 PYQs under one roof', hi:'हमारा लक्ष्य: 1,00,000 PYQs एक ही जगह', te:'మా లక్ష్యం: 1,00,000 PYQs ఒకే చోట'},
-  g3:{en:'17,720 done so far · 18%', hi:'अब तक 17,720 पूरे · 18%', te:'ఇప్పటివరకు 17,720 పూర్తి · 18%'},
+  g3:{en:'18,016 done so far · 18%', hi:'अब तक 18,016 पूरे · 18%', te:'ఇప్పటివరకు 18,016 పూర్తి · 18%'},
   choose:{en:'Choose your exam', hi:'अपनी परीक्षा चुनें', te:'మీ పరీక్షను ఎంచుకోండి'},
   all:{en:'All exams', hi:'सभी परीक्षाएँ', te:'అన్ని పరీక్షలు'},
   popT:{en:'Popular exams', hi:'लोकप्रिय परीक्षाएँ', te:'ప్రముఖ పరీక్షలు'},
@@ -2091,7 +2094,7 @@ function vPapers(){
   };
   return `<div class="wrap view">
     ${head("Previous papers", esc(DATA.examSeo||DATA.exam||"APPSC Group-II")+" previous year question papers", esc(DATA.papersNote||""))}
-    ${PAPERS.some(p=>p.bk) ? `<p class="card" style="padding:12px 14px;background:var(--good-soft,#E8F6EE)"><b>📄 Every paper as a PDF:</b> exam-booklet style with the official answer key and explanations. Tap <b>Download PDF</b> under any paper${passOK("pyq") ? "." : " (with the ₹" + (PAYC ? PAYC.pyq.price : 45) + " All-in-One Pass)."}</p>` : ""}
+    ${PAPERS.some(p=>p.bk) ? `<p class="card" style="padding:12px 14px;background:var(--good-soft,#E8F6EE)"><b>📄 Every paper as a PDF:</b> ${PAPERS.every(p=>!p.bk||p.bk.orig) ? "the original question booklet, as printed, with the official answer key at the end" : "exam-booklet style with the official answer key and explanations"}. Tap <b>Download PDF</b> under any paper${passOK("pyq") ? "." : " (with the ₹" + (PAYC ? PAYC.pyq.price : 45) + " All-in-One Pass)."}</p>` : ""}
     ${years.map(y=>`<section class="section"><div class="section-title"><h2>${y}</h2></div><div class="papers">${PAPERS.filter(p=>p.year===y).map(card).join("")}</div></section>`).join("")}
   </div>`;
 }
@@ -2667,7 +2670,7 @@ function vAbout(){
         <div class="bio">
           <p>I am a civil-services educator with 2.5 years of teaching and mentorship for UPSC, APPSC and TGPSC aspirants. I teach Indian Polity, Governance and Ethics, build test series and study material, and have evaluated more than 2,000 Mains answer copies.</p>
           <p>As Course Coordinator, faculty and mentor, I plan the Group-1 and Group-2 programmes and their test series, coordinate the UPSC mock interview programme in Delhi, and mentor Group-1, Group-2 and UPSC aspirants. I have headed several Prelims and Mains test series.</p>
-          <p>I built Learn with Anil so that every aspirant can practise the real previous questions of their exam, topic by topic, as practice quizzes or timed tests in English and their own language, and see clearly where they are losing marks. Today it has 17,720 questions from 30 exams (APPSC, TGPSC, TS Police, UPSC and SSC), and one ₹${PAYC ? PAYC.pyq.price : 45} All-in-One Pass opens all of them for 12 months: less than the price of one guide book.</p>
+          <p>I built Learn with Anil so that every aspirant can practise the real previous questions of their exam, topic by topic, as practice quizzes or timed tests in English and their own language, and see clearly where they are losing marks. Today it has 18,016 questions from 31 exams (APPSC, TGPSC, TS Police, UPSC and SSC), and one ₹${PAYC ? PAYC.pyq.price : 45} All-in-One Pass opens all of them for 12 months: less than the price of one guide book.</p>
           <p>Our goal is 1 lakh previous questions of government exams under one roof, with a mock test series for every exam, all in the same ₹${PAYC ? PAYC.pyq.price : 45} pass. I am building it alone, one exam at a time. If you would like to help, see <a href="/funders.html">Fund this project</a>.</p>
         </div>
         <dl>
@@ -2805,7 +2808,7 @@ async function questionCard(x, te){
   const tag = "QUESTION OF THE DAY · "+date.toUpperCase(); ctx.font='800 24px "Archivo", sans-serif';
   ctx.fillStyle="#F2B705"; rrect(ctx,60,168,ctx.measureText(tag).width+34,46,8); ctx.fill(); ctx.fillStyle="#0C2266"; ctx.fillText(tag, 77, 200);
   ctx.fillStyle="#AFC1EE"; ctx.font='500 22px "IBM Plex Mono", monospace'; ctx.fillText((x.exName+" · "+x.paper).toUpperCase(), 60, 256);
-  const qt = te && x.qt ? x.qt : x.q, opts = te && x.ot ? x.ot : x.o, fam = te? '"'+(x.l2==="hi" ? "Noto Sans Devanagari" : x.l2==="ta" ? "Noto Sans Tamil" : x.l2==="kn" ? "Noto Sans Kannada" : "Noto Sans Telugu")+'", "Source Sans 3", sans-serif' : '"Source Sans 3", sans-serif';
+  const qt = te && x.qt ? x.qt : x.q, opts = te && x.ot ? x.ot : x.o, fam = te? '"'+(x.l2==="hi" ? "Noto Sans Devanagari" : x.l2==="ta" ? "Noto Sans Tamil" : x.l2==="kn" ? "Noto Sans Kannada" : x.l2==="mr" ? "Noto Sans Devanagari" : "Noto Sans Telugu")+'", "Source Sans 3", sans-serif' : '"Source Sans 3", sans-serif';
   // fit text: shrink font until question + options fit above the footer
   let fs = 52, qLines, oLines, total;
   for(; fs>=24; fs-=2){
