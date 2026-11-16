@@ -35,7 +35,7 @@
   {
    "id": "tn",
    "name": "TNPSC & Tamil Nadu",
-   "desc": "TNPSC Group 1, Group 2 and Group 4 exams"
+   "desc": "TNPSC Groups 1–4 and CTS, TNUSRB Police, TRB teacher and TN TET exams"
   },
   {
    "id": "ka",
@@ -45,37 +45,37 @@
   {
    "id": "kl",
    "name": "Kerala PSC & Kerala",
-   "desc": "Kerala PSC KAS, LDC and Secretariat Assistant exams"
+   "desc": "Kerala PSC KAS, LDC, LGS, Secretariat Assistant, VEO, Police and teacher exams"
   },
   {
    "id": "mh",
    "name": "MPSC & Maharashtra",
-   "desc": "MPSC Rajyaseva and Combined Group B and C exams"
+   "desc": "MPSC Rajyaseva, Group B & C, Police Bharti, Talathi, ZP, forest and teacher exams"
   },
   {
    "id": "gj",
    "name": "GSSSB, GPSC & Gujarat",
-   "desc": "GSSSB Class-III Combined Competitive Exam (CCE) and other Gujarat exams"
+   "desc": "GSSSB CCE, GPSC Class 1-2, Talati, Junior Clerk, Police LRD/PSI and teacher exams"
   },
   {
    "id": "up",
    "name": "UPPSC, UPSSSC & Uttar Pradesh",
-   "desc": "UPPSC PCS and RO/ARO, UPSSSC Inter level Mains and other UP exams"
+   "desc": "UPPSC PCS and RO/ARO, UPSSSC PET, Lekhpal, VDO and Inter level, UP Police and teacher exams"
   },
   {
    "id": "uk",
    "name": "UKPSC, UKSSSC & Uttarakhand",
-   "desc": "UKPSC Lower PCS and other Uttarakhand exams"
+   "desc": "UKPSC Lower PCS and PCS, UKSSSC Patwari and Group C, Uttarakhand Police and UTET"
   },
   {
    "id": "cg",
    "name": "CG Vyapam, CGPSC & Chhattisgarh",
-   "desc": "CG Vyapam (CGSSB) Group 2: Assistant Grade-3, Steno, DEO, ASI and other Chhattisgarh exams"
+   "desc": "CG Vyapam Group 2, Patwari, ADEO and SI, CGPSC State Service, CG Police and CG TET"
   },
   {
    "id": "br",
    "name": "BPSC & Bihar",
-   "desc": "BPSC Combined Competitive Exam and teacher recruitment"
+   "desc": "BPSC CCE and TRE, BSSC Inter and Graduate level, Bihar Police and STET"
   }
  ],
  "exams": [
@@ -822,6 +822,55 @@
    "live": "tnpsc-group-4/"
   },
   {
+   "id": "tnpsc-group-3",
+   "cat": "tn",
+   "b": "TNPSC",
+   "t": "Group 3",
+   "n": "Combined Civil Services Exam III"
+  },
+  {
+   "id": "tnpsc-cts",
+   "cat": "tn",
+   "b": "TNPSC",
+   "t": "CTS",
+   "n": "Combined Technical Services (Diploma & Degree)"
+  },
+  {
+   "id": "tnusrb-pc",
+   "cat": "tn",
+   "b": "TNUSRB",
+   "t": "Police Constable",
+   "n": "Grade II Police Constable, Jail Warder & Fireman"
+  },
+  {
+   "id": "tnusrb-si",
+   "cat": "tn",
+   "b": "TNUSRB",
+   "t": "Police SI",
+   "n": "Sub-Inspector (Taluk & AR)"
+  },
+  {
+   "id": "tn-trb-pg",
+   "cat": "tn",
+   "b": "TN TRB",
+   "t": "PG Assistant",
+   "n": "Post Graduate Assistant teachers"
+  },
+  {
+   "id": "tn-trb-bt",
+   "cat": "tn",
+   "b": "TN TRB",
+   "t": "BT Assistant",
+   "n": "Graduate (BT) Assistant teachers"
+  },
+  {
+   "id": "tn-tet",
+   "cat": "tn",
+   "b": "TN TRB",
+   "t": "TN TET",
+   "n": "Teacher Eligibility Test"
+  },
+  {
    "id": "kpsc-kas",
    "cat": "ka",
    "b": "KPSC",
@@ -920,6 +969,48 @@
    "t": "Secretariat Assistant"
   },
   {
+   "id": "kerala-psc-lgs",
+   "cat": "kl",
+   "b": "Kerala PSC",
+   "t": "LGS",
+   "n": "Last Grade Servants"
+  },
+  {
+   "id": "kerala-psc-veo",
+   "cat": "kl",
+   "b": "Kerala PSC",
+   "t": "VEO",
+   "n": "Village Extension Officer"
+  },
+  {
+   "id": "kerala-psc-degree",
+   "cat": "kl",
+   "b": "Kerala PSC",
+   "t": "Degree Level",
+   "n": "Degree Level Preliminary Exam"
+  },
+  {
+   "id": "kerala-psc-cpo",
+   "cat": "kl",
+   "b": "Kerala PSC",
+   "t": "Civil Police Officer",
+   "n": "Police Constable (CPO)"
+  },
+  {
+   "id": "kerala-psc-si",
+   "cat": "kl",
+   "b": "Kerala PSC",
+   "t": "Police SI",
+   "n": "Sub Inspector of Police (Trainee)"
+  },
+  {
+   "id": "k-tet",
+   "cat": "kl",
+   "b": "Kerala Pareeksha Bhavan",
+   "t": "K-TET",
+   "n": "Kerala Teacher Eligibility Test"
+  },
+  {
    "id": "mpsc-rajyaseva",
    "cat": "mh",
    "b": "MPSC",
@@ -942,12 +1033,96 @@
    "live": "mpsc-group-c/"
   },
   {
+   "id": "mh-talathi",
+   "cat": "mh",
+   "b": "Maharashtra Revenue",
+   "t": "Talathi",
+   "n": "Talathi Bharti (Village Revenue Officer)"
+  },
+  {
+   "id": "mh-zp",
+   "cat": "mh",
+   "b": "Zilla Parishad",
+   "t": "ZP Bharti",
+   "n": "Zilla Parishad Group C posts"
+  },
+  {
+   "id": "mh-police-constable",
+   "cat": "mh",
+   "b": "Maharashtra Police",
+   "t": "Police Bharti",
+   "n": "Police Constable (Police Shipai)"
+  },
+  {
+   "id": "mh-van-rakshak",
+   "cat": "mh",
+   "b": "Maharashtra Forest",
+   "t": "Van Rakshak",
+   "n": "Forest Guard"
+  },
+  {
+   "id": "mh-tait",
+   "cat": "mh",
+   "b": "Maharashtra School Education",
+   "t": "MAHA TAIT",
+   "n": "Teacher Aptitude & Intelligence Test"
+  },
+  {
+   "id": "mh-tet",
+   "cat": "mh",
+   "b": "Maharashtra School Education",
+   "t": "MAHA TET",
+   "n": "Teacher Eligibility Test"
+  },
+  {
    "id": "gsssb-cce",
    "cat": "gj",
    "b": "GSSSB",
    "t": "CCE",
    "n": "Class-III Combined Competitive Exam (Group-A & B)",
    "live": "gsssb-cce/"
+  },
+  {
+   "id": "gpsc-class-1-2",
+   "cat": "gj",
+   "b": "GPSC",
+   "t": "Class 1-2",
+   "n": "Gujarat Administrative & Civil Services"
+  },
+  {
+   "id": "gpssb-talati",
+   "cat": "gj",
+   "b": "GPSSB",
+   "t": "Talati cum Mantri",
+   "n": "Panchayat Secretary (Talati)"
+  },
+  {
+   "id": "gpssb-junior-clerk",
+   "cat": "gj",
+   "b": "GPSSB",
+   "t": "Junior Clerk",
+   "n": "Panchayat Junior Clerk"
+  },
+  {
+   "id": "gj-lrd",
+   "cat": "gj",
+   "b": "Gujarat Police (GPRB)",
+   "t": "LRD",
+   "n": "Lokrakshak (Police Constable)"
+  },
+  {
+   "id": "gj-psi",
+   "cat": "gj",
+   "b": "Gujarat Police (GPRB)",
+   "t": "PSI",
+   "n": "Police Sub-Inspector"
+  },
+  {
+   "id": "gj-tet",
+   "cat": "gj",
+   "b": "Gujarat SEB",
+   "t": "TET / TAT",
+   "n": "Teacher Eligibility & Aptitude Tests"
   },
   {
    "id": "uppsc-pcs",
@@ -973,6 +1148,55 @@
    "live": "upsssc-inter-level/"
   },
   {
+   "id": "upsssc-pet",
+   "cat": "up",
+   "b": "UPSSSC",
+   "t": "PET",
+   "n": "Preliminary Eligibility Test"
+  },
+  {
+   "id": "upsssc-lekhpal",
+   "cat": "up",
+   "b": "UPSSSC",
+   "t": "Lekhpal",
+   "n": "Revenue Lekhpal"
+  },
+  {
+   "id": "upsssc-vdo",
+   "cat": "up",
+   "b": "UPSSSC",
+   "t": "VDO",
+   "n": "Gram Panchayat Adhikari / Village Development Officer"
+  },
+  {
+   "id": "up-police-constable",
+   "cat": "up",
+   "b": "UPPRPB",
+   "t": "Police Constable",
+   "n": "UP Police Constable (Civil Police)"
+  },
+  {
+   "id": "up-police-si",
+   "cat": "up",
+   "b": "UPPRPB",
+   "t": "Police SI",
+   "n": "Sub-Inspector (Civil Police)"
+  },
+  {
+   "id": "up-tgt-pgt",
+   "cat": "up",
+   "b": "UPESSC",
+   "t": "TGT / PGT",
+   "n": "Trained Graduate & Post Graduate Teachers"
+  },
+  {
+   "id": "uptet",
+   "cat": "up",
+   "b": "UPESSC",
+   "t": "UPTET",
+   "n": "Teacher Eligibility Test"
+  },
+  {
    "id": "ukpsc-lower-pcs",
    "cat": "uk",
    "b": "UKPSC",
@@ -981,12 +1205,89 @@
    "live": "ukpsc-lower-pcs/"
   },
   {
+   "id": "ukpsc-pcs",
+   "cat": "uk",
+   "b": "UKPSC",
+   "t": "PCS",
+   "n": "Combined State Civil / Upper Subordinate Services"
+  },
+  {
+   "id": "uksssc-patwari",
+   "cat": "uk",
+   "b": "UKSSSC",
+   "t": "Patwari & Lekhpal",
+   "n": "Revenue Patwari / Lekhpal"
+  },
+  {
+   "id": "uksssc-group-c",
+   "cat": "uk",
+   "b": "UKSSSC",
+   "t": "Group C",
+   "n": "Graduate & Inter Level Group C"
+  },
+  {
+   "id": "uk-police-constable",
+   "cat": "uk",
+   "b": "UKSSSC",
+   "t": "Police Constable",
+   "n": "Uttarakhand Police Constable"
+  },
+  {
+   "id": "utet",
+   "cat": "uk",
+   "b": "UBSE",
+   "t": "UTET",
+   "n": "Uttarakhand Teacher Eligibility Test"
+  },
+  {
    "id": "cg-vyapam-group-2",
    "cat": "cg",
    "b": "CG Vyapam",
    "t": "Group 2",
    "n": "Assistant Grade-3, Steno, DEO & ASI (CGSSB)",
    "live": "cg-vyapam-group-2/"
+  },
+  {
+   "id": "cgpsc-state-service",
+   "cat": "cg",
+   "b": "CGPSC",
+   "t": "State Service Exam",
+   "n": "State Service (Deputy Collector, DSP and other posts)"
+  },
+  {
+   "id": "cg-vyapam-patwari",
+   "cat": "cg",
+   "b": "CG Vyapam",
+   "t": "Patwari",
+   "n": "Revenue Patwari"
+  },
+  {
+   "id": "cg-vyapam-adeo",
+   "cat": "cg",
+   "b": "CG Vyapam",
+   "t": "ADEO",
+   "n": "Assistant Development Extension Officer"
+  },
+  {
+   "id": "cg-police-constable",
+   "cat": "cg",
+   "b": "CG Police",
+   "t": "Police Constable",
+   "n": "Chhattisgarh Police Constable"
+  },
+  {
+   "id": "cg-vyapam-si",
+   "cat": "cg",
+   "b": "CG Vyapam",
+   "t": "Police SI",
+   "n": "Sub-Inspector (Police)"
+  },
+  {
+   "id": "cg-tet",
+   "cat": "cg",
+   "b": "CG Vyapam",
+   "t": "CG TET",
+   "n": "Teacher Eligibility Test"
   },
   {
    "id": "bpsc-cce",
@@ -1001,6 +1302,41 @@
    "b": "BPSC",
    "t": "TRE",
    "n": "School Teacher Recruitment"
+  },
+  {
+   "id": "bssc-inter",
+   "cat": "br",
+   "b": "BSSC",
+   "t": "Inter Level",
+   "n": "Inter Level Combined Competitive Exam"
+  },
+  {
+   "id": "bssc-graduate",
+   "cat": "br",
+   "b": "BSSC",
+   "t": "Graduate Level",
+   "n": "Combined Graduate Level (CGL)"
+  },
+  {
+   "id": "csbc-constable",
+   "cat": "br",
+   "b": "CSBC",
+   "t": "Police Constable",
+   "n": "Bihar Police Constable"
+  },
+  {
+   "id": "bpssc-si",
+   "cat": "br",
+   "b": "BPSSC",
+   "t": "Police SI",
+   "n": "Bihar Police Sub-Inspector (Daroga)"
+  },
+  {
+   "id": "bihar-stet",
+   "cat": "br",
+   "b": "BSEB",
+   "t": "STET",
+   "n": "Secondary Teacher Eligibility Test"
   }
  ],
  "timers": [
