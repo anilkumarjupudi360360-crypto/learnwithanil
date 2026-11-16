@@ -4841,7 +4841,7 @@ def llms_txt(loaded, grand):
          f'- All-in-One Pass: ₹{PAY["pyq_price"]} once for 12 months, covering everything on the site: every previous paper of every exam (and exams added later) with every explanation, practice in the app, timed tests, sectionals and study tools, every mock test series and the study books. Nothing else is sold.']
     for c in exams:
         mk = MOCK_PACKS.get(c['id']); up = UPCOMING_PACKS.get(c['id'])
-        if mk: L.append(f'- {mk["title"]}: {mk["n"]} full-length mock tests ({live_text(mk).replace(" (included in the price)", "").rstrip(".")}), included in the ₹{PAY["pyq_price"]} All-in-One Pass. {SITE_URL}{c["pb"]}mock-test.html')
+        if mk: L.append(f'- {mk["title"]}: {full_mocks(mk)} full-length mock tests ({live_text(mk).replace(" (included in the price)", "").rstrip(".")}), included in the ₹{PAY["pyq_price"]} All-in-One Pass. {SITE_URL}{c["pb"]}mock-test.html')
         elif up: L.append(f'- {up["name"]}: {up["n"]} mock tests, coming soon, included in the ₹{PAY["pyq_price"]} All-in-One Pass. {SITE_URL}{c["pb"]}mock-test.html')
     if BB_URL: L.append(f'- Bahubali Test Series (APPSC Group 2 Mains): 24 full-length tests, included in the ₹{PAY["pyq_price"]} All-in-One Pass. {SITE_URL}{BB_URL}')
     L += ['- Not affiliated with APPSC, TSLPRB, UPSC, TGPSC or any recruiting body.', '', '## Exams and their previous papers']
@@ -7278,6 +7278,12 @@ def exam_clock_html(conf):
             f'<div class="ec-r tm-count"><b class="tm-d">–</b> <span class="ec-days">days to go</span> <span class="tm-hms">--:--:--</span></div></div>')
 
 
+def full_mocks(mk):
+    """Number of full mocks in a pack: a mock with two papers (EO, Vijaya FDA-SDA) or four post versions (IBPS SO) counts once."""
+    if 'mocks' not in mk: return mk['n']
+    return len(dict.fromkeys(m.get('group') or m['name'].split(' · ')[0] for m in mk['mocks']))
+
+
 def live_text(mk):
     """'Mock 1 is available now; Mocks 2–10 are coming soon.' (all mocks are included in the pack price)"""
     if 'mocks' in mk:
@@ -7491,7 +7497,7 @@ def plans_html(conf):
         rows.append((esc(up['name']), 'Included (coming soon)', f'{up["n"]} full-length {esc(conf["seo"])} mock tests, {up["qn"]} questions each, with explanations. They open for All-in-One Pass holders as each mock is released.', 'With the All-in-One Pass'))
     if mk:
         free = [m['name'] for m in mk.get('mocks', []) if m.get('free')]
-        rows.append((esc(mk['name']), 'Included', f'{mk["n"]} full-length {esc(conf["seo"])} mock tests and their sectional tests, with explanations.'
+        rows.append((esc(mk['name']), 'Included', f'{full_mocks(mk)} full-length {esc(conf["seo"])} mock tests and their sectional tests, with explanations.'
                      + (f' {" and ".join(free)} {"is" if len(free) == 1 else "are"} free for every registered student.' if free else ''),
                      'With the All-in-One Pass'))
     return ('<table class="facts plans"><tr><th style="width:17%">Plan</th><th style="width:17%">Price</th><th>What you get</th><th style="width:19%">Valid</th></tr>'
