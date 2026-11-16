@@ -664,5 +664,11 @@ async def main():
             h_ = open(os.path.join(SITE, rel), encoding='utf-8').read()
             if 'noindex' in h_: errors.append(f'{rel} has noindex')
             if 'class="abox"' not in h_ or '"@type": "Article"' not in h_: errors.append(f'{rel}: no author box / Article data')   # 3 Nov 2026
+        # Anil (16 Nov 2026): "pls add photos if any new exams gets added to site" -> every live exam tile needs a photo:
+        # an EXAM_PHOTO entry in tools/build.py (with credit) and src/static/ex-<id>-t.webp (480x180) + ex-<id>-h.webp (1000x334).
+        # Free licence (Wikimedia Commons), no uniformed people, emblems or logos. See claude/start-page-boards.md in the project.
+        hub_ = open(os.path.join(SITE, 'index.html'), encoding='utf-8').read()
+        nophoto = sorted({i for i in re.findall(r'<a class="card exam [^"]*\blive\b[^"]*"[^>]*data-id="([^"]+)"', hub_) if f'/ex-{i}-t.webp' not in hub_})
+        if nophoto: print('REMINDER - live exams without a tile photo (Anil wants one for every new exam):', ', '.join(nophoto))
         print('ERRORS:', errors if errors else 'none')
 asyncio.run(main())
