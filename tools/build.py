@@ -3208,6 +3208,17 @@ def exam_terms(e, cat):
     if e['id'] == 'sbi-po': words += ['sbi', 'state bank', 'state bank of india', 'po', 'probationary officer', 'bank po', 'banking', 'bank exam', 'sbi po mock test']
     if e['id'] == 'ibps-so': words += ['ibps', 'so', 'specialist officer', 'it officer', 'agriculture field officer', 'afo', 'hr officer', 'personnel officer', 'marketing officer', 'banking', 'bank exam', 'ibps so mock test']
     if e['id'] == 'karnataka-fda-sda': words += ['kea', 'karnataka examinations authority', 'kpsc', 'fda', 'sda', 'first division assistant', 'second division assistant', 'fda sda', 'karnataka fda', 'karnataka sda', 'group c', 'group-c', 'junior assistant', 'gp secretary', 'accounts assistant', 'warden', 'karnataka', 'kannada', 'general kannada', 'kalyana karnataka', 'hyderabad karnataka', 'ಎಫ್‌ಡಿಎ', 'ಎಸ್‌ಡಿಎ', 'ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ', 'ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ', 'ಸಾಮಾನ್ಯ ಕನ್ನಡ']
+    # Karnataka exams added 16 Nov 2026 (upcoming): what students type for them
+    KA_WORDS = {'kea-vao': ['vao', 'village accountant', 'village administrative officer', 'grama aadalitha adhikari', 'revenue department', 'ಗ್ರಾಮ ಆಡಳಿತ ಅಧಿಕಾರಿ', 'ಗ್ರಾಮ ಲೆಕ್ಕಿಗ'],
+                'kpsc-pdo': ['pdo', 'panchayat development officer', 'rdpr', 'gram panchayat', 'ಪಂಚಾಯತ್ ಅಭಿವೃದ್ಧಿ ಅಧಿಕಾರಿ'],
+                'kpsc-audit': ['audit officer', 'assistant controller', 'state accounts', 'kpsc audit'],
+                'kea-ao-aao': ['ao', 'aao', 'agriculture officer', 'assistant agriculture officer', 'agriculture department'],
+                'kea-land-surveyor': ['land surveyor', 'surveyor', 'survey settlement', 'land records', 'bhoomapaka', 'ಭೂಮಾಪಕ'],
+                'ksp-constable': ['ksp', 'karnataka police', 'police constable', 'civil police constable', 'cpc', 'apc', 'car', 'dar', 'armed police', 'ksrp', 'ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್'],
+                'ksp-psi': ['ksp', 'karnataka police', 'psi', 'si', 'sub inspector', 'police sub inspector', 'ಪಿಎಸ್‌ಐ'],
+                'ka-gpstr': ['gpstr', 'gpt', 'graduate primary teacher', 'teacher recruitment', 'karnataka teacher', 'hstr', 'school education'],
+                'kartet': ['kartet', 'tet', 'karnataka tet', 'teacher eligibility test', 'paper 1', 'paper 2']}
+    if e['id'] in KA_WORDS: words += KA_WORDS[e['id']] + ['karnataka', 'kannada']
     if e['id'] == 'ukpsc-lower-pcs': words += ['ukpsc', 'uttarakhand public service commission', 'uttarakhand', 'uk', 'lower pcs', 'lower subordinate', 'lower subordinate services', 'combined state civil', 'naib tehsildar', 'excise inspector', 'marketing inspector', 'supply inspector', 'labour enforcement officer', 'cane development inspector', 'uttarakhand gk', 'general aptitude', 'ro aro', 'ukpsc lower pcs previous year paper', 'uttarakhand lower pcs question paper', 'uksssc']
     if e['id'] == 'cg-vyapam-group-2': words += ['cg vyapam', 'vyapam', 'cgssb', 'chhattisgarh', 'cg', 'karmchari chayan mandal', 'chhattisgarh staff selection board', 'group 2', 'assistant grade 3', 'assistant grade-3', 'sahayak grade 3', 'data entry operator', 'deo', 'stenographer', 'steno typist', 'registration clerk', 'asi', 'cg gk', 'chhattisgarh gk', 'computer', 'vdag', 'agdo', 'cg vyapam previous year paper', 'cg vyapam assistant grade 3 question paper']
     if e['id'] == 'uppsc-ro-aro': words += ['uppsc', 'uttar pradesh public service commission', 'ro', 'aro', 'ro/aro', 'ro aro', 'review officer', 'assistant review officer', 'samiksha adhikari', 'sahayak samiksha adhikari', 'up', 'uttar pradesh', 'general hindi', 'up gk', 'prelims', 'uppsc ro aro mock test', 'यूपीपीएससी', 'समीक्षा अधिकारी', 'सहायक समीक्षा अधिकारी', 'आरओ', 'एआरओ', 'सामान्य हिंदी']
@@ -3454,6 +3465,16 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'bpsc-tre': ('Sariputta Stupa, Nalanda Mahavihara', 'Sumitsurai', 'CC BY-SA 4.0', _CW + 'Temple_3_-_Sariputta_Stupa_-_Nalanda_Mahavihara_(10).jpg'),
     'ukpsc-lower-pcs': ('Har Ki Pauri, Haridwar', 'Whispyhistory', 'CC BY-SA 4.0', _CW + 'Har_Ki_Pauri_and_Clock_Tower_of_Haridwar.jpg'),   # UKPSC Lower PCS (16 Nov 2026)
     'cg-vyapam-group-2': ('Bhoramdeo Temple, Kawardha', 'Pankaj Oudhia', 'CC BY-SA 3.0', _CW + 'Bhoramdeo_Temple,_Kawardha.jpg'),   # CG Vyapam Group 2 (16 Nov 2026)
+    # Karnataka exams added as upcoming (Anil, 16 Nov 2026: "add other exam names in the site and ....add pic.....questions we will add later")
+    'kea-vao': ('Newly planted paddy fields, Raichur', 'Vraj Acharya, WELL Labs', 'CC BY-SA 4.0', _CW + 'Newly_planted_paddy_fields_in_Raichur,_Karnataka,_India_with_borehole_irrigation.jpg'),
+    'kpsc-pdo': ('Koothagal village, Ramanagara', 'KshitizBathwal', 'CC BY-SA 4.0', _CW + 'Koothagal_village_in_Ramnagara.jpg'),
+    'kpsc-audit': ('Sir Puttanna Chetty Town Hall, Bengaluru', 'Harvinder Chandigarh', 'CC BY 4.0', _CW + 'Sir_Puttanna_Chetty_Town_Hall_,_Bangalore,_India.jpg'),
+    'kea-ao-aao': ('Robusta coffee drying, Coorg', 'Timothy A. Gonsalves', 'CC BY-SA 4.0', _CW + 'Beans_Drying_Coffee_Robusta_Balamuri_Coorg_Feb24_A7C_09491.jpg'),
+    'kea-land-surveyor': ('Granite landscape of Matanga Hill, Hampi', 'Vyacheslav Argenberg', 'CC BY 4.0', _CW + 'Hampi,_India,_Rocky_landscape_of_Hampi,_Granite_rocks_of_Matanga_Hill.jpg'),
+    'ksp-constable': ('Police Central Division office, Bengaluru', 'Gpkp', 'CC BY-SA 4.0', _CW + 'Deputy_Commissioner_of_Police,_Central_Division,_Bangalore_City_(2025).jpg'),
+    'ksp-psi': ('Bangalore Palace', 'Anupam Chatterjee', 'CC BY 4.0', _CW + 'Bangalore_Palace_facade_on_a_cloudy_day.jpg'),
+    'ka-gpstr': ('Government School, Neralur', 'Umeshred', 'CC BY-SA 4.0', _CW + 'Government_School_Neralur.png'),
+    'kartet': ('Government school, Doddegowdana Koppalu', 'Timothy A. Gonsalves', 'CC BY-SA 4.0', _CW + 'Govt_School_Front_Doddegowdana_Koppalu_Aug24_A7CR_02281.jpg'),
 }
 
 

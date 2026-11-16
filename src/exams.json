@@ -40,7 +40,7 @@
   {
    "id": "ka",
    "name": "KEA, KPSC & Karnataka",
-   "desc": "KEA FDA and SDA, KPSC KAS exams"
+   "desc": "KEA FDA & SDA, VAO and AO/AAO, KPSC KAS and PDO, KSP Police and teacher exams"
   },
   {
    "id": "kl",
@@ -835,6 +835,69 @@
    "t": "FDA & SDA",
    "n": "First & Second Division Assistant (Group C)",
    "live": "karnataka-fda-sda/"
+  },
+  {
+   "id": "kea-vao",
+   "cat": "ka",
+   "b": "KEA",
+   "t": "VAO",
+   "n": "Village Administrative Officer (Village Accountant)"
+  },
+  {
+   "id": "kpsc-pdo",
+   "cat": "ka",
+   "b": "KPSC",
+   "t": "PDO",
+   "n": "Panchayat Development Officer"
+  },
+  {
+   "id": "kpsc-audit",
+   "cat": "ka",
+   "b": "KPSC",
+   "t": "Audit Officer",
+   "n": "Audit Officer & Assistant Controller"
+  },
+  {
+   "id": "kea-ao-aao",
+   "cat": "ka",
+   "b": "KEA",
+   "t": "AO & AAO",
+   "n": "Agriculture Officer & Assistant Agriculture Officer"
+  },
+  {
+   "id": "kea-land-surveyor",
+   "cat": "ka",
+   "b": "KEA",
+   "t": "Land Surveyor",
+   "n": "Survey, Settlement & Land Records"
+  },
+  {
+   "id": "ksp-constable",
+   "cat": "ka",
+   "b": "KSP",
+   "t": "Police Constable",
+   "n": "Civil & Armed (CAR/DAR) Police Constable"
+  },
+  {
+   "id": "ksp-psi",
+   "cat": "ka",
+   "b": "KSP",
+   "t": "Police SI",
+   "n": "Police Sub-Inspector (Civil)"
+  },
+  {
+   "id": "ka-gpstr",
+   "cat": "ka",
+   "b": "Karnataka School Education",
+   "t": "GPSTR",
+   "n": "Graduate Primary Teacher Recruitment"
+  },
+  {
+   "id": "kartet",
+   "cat": "ka",
+   "b": "Karnataka School Education",
+   "t": "KARTET",
+   "n": "Teacher Eligibility Test"
   },
   {
    "id": "kerala-psc-kas",
