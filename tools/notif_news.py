@@ -1506,6 +1506,271 @@ NEW['dsssb-mts-je-notification-2026.html'] = dict(   # Anil, 16 Nov 2026 ("ok co
 ASOF_PAGE['dsssb-mts-je-notification-2026.html'] = '16 November 2026'
 
 
+# ---- 16 Nov 2026 (Anil: "why mistake book and notification is not present in every exam tile"): pages for the six exams that had no notification card.
+# Facts read on 16 Nov 2026 from news and coaching pages that quote the official notices (sources named on each page); re-check before big changes.
+
+NEW['upsc-ifos-2027-notification.html'] = dict(
+    exam=None, ename='UPSC IFoS',   # the IFoS hub is not an app exam (tools/upscmains.py), so no exam id here
+    board='UPSC', site='upsc.gov.in', crumb='IFoS 2026 Mains & 2027 Notification', faq_asof='16 November 2026',
+    title='UPSC IFoS 2026 Mains (22–29 November) & IFoS 2027 Notification on 13 January: Vacancies, Eligibility, Pattern | Learn with Anil',
+    desc='UPSC Indian Forest Service: the IFoS 2026 Main exam runs from 22 to 29 November 2026 (about 80 vacancies). IFoS 2027 will be notified with the Civil '
+         'Services on 13 January 2027; Prelims on 23 May 2027, Mains from 21 November 2027. Eligibility, age, the Mains pattern and IFoS previous papers.',
+    h1='UPSC IFoS: 2026 Mains from 22 November, 2027 notification on 13 January',
+    lede='The Indian Forest Service (IFoS) Main Examination 2026 is from 22 to 29 November 2026, with General English and General Knowledge on the first day. '
+         'The next cycle, IFoS 2027, will be notified together with the Civil Services on 13 January 2027 (apply by 2 February), with the common Prelims on '
+         '23 May 2027. Below: the dates, vacancies, who can apply, the Mains pattern and the IFoS previous papers to practise.',
+    hi='यूपीएससी भारतीय वन सेवा: मुख्य परीक्षा 2026 — 22 से 29 नवंबर; IFoS 2027 की अधिसूचना 13 जनवरी 2027 को, प्रारंभिक परीक्षा 23 मई 2027 (सिविल सेवा के साथ)।',
+    pdf='https://upsc.gov.in', pdfname='UPSC: Indian Forest Service Examination Notice No. 06/2026-IFoSE, IFoS (Main) 2026 time-table and the UPSC Calendar 2027 (upsc.gov.in)',
+    related=['upsc-cse-2027-notification.html'],
+    sections=[
+      ('IFoS 2026: where it stands', 'table', [
+        ('Notification', 'Examination Notice No. 06/2026-IFoSE, 4 February 2026 (applications closed 27 February 2026)'),
+        ('Preliminary exam', '24 May 2026, through the Civil Services (Preliminary) Examination'),
+        ('Main exam', '22 to 29 November 2026, two sessions a day (9 am–12 noon and 2:30–5:30 pm); no paper on 24 November'),
+        ('First day (22 November)', 'Paper I General English (forenoon) and Paper II General Knowledge (afternoon); the optional papers follow from 23 November'),
+        ('e-Admit cards', 'Out on upsconline.nic.in'),
+        ('Then', 'Interview (personality test) for those who clear the Mains, then the final result'),
+      ]),
+      ('IFoS 2026 vacancies: about 80', 'table+', (['Category', 'Posts'], [
+        ('Unreserved', '33'), ('OBC', '21'), ('SC', '12'), ('EWS', '8'), ('ST', '6'), ('Total', 'about 80')])),
+      ('IFoS 2027: expected dates (UPSC Calendar 2027)', 'table', [
+        ('Notification (with Civil Services 2027)', '13 January 2027'), ('Last date to apply', '2 February 2027'),
+        ('Preliminary exam (common with CSE)', 'Sunday, 23 May 2027'), ('Main exam', 'From Sunday, 21 November 2027 (7 days)'),
+        ('Vacancies', 'Will be given in the 2027 notification'),
+      ]),
+      ('Who can apply', 'list', [
+        'A bachelor\'s degree with at least one of Animal Husbandry & Veterinary Science, Botany, Chemistry, Geology, Mathematics, Physics, Statistics or Zoology, '
+        'or a bachelor\'s degree in Agriculture, Forestry or Engineering.',
+        'Age 21 to 32 years on 1 August of the exam year, with the usual relaxations (5 years for SC and ST, 3 for OBC, 10 for persons with benchmark disabilities).',
+        'One online form covers both the Civil Services and IFoS Prelims; tick IFoS in it. Fee Rs. 100, no fee for women, SC, ST and persons with benchmark disabilities.']),
+      ('Main exam pattern (1,400 marks + 300 interview)', 'table+', (['Paper', 'Marks'], [
+        ('Paper I: General English (essay, précis, comprehension, grammar)', '300'), ('Paper II: General Knowledge', '300'),
+        ('Papers III–VI: two optional subjects, two papers each', '4 × 200 = 800'), ('Personality test (interview)', '300')])),
+      ('', 'note', 'IFoS has its own Prelims cut-off, usually higher than the Civil Services cut-off, though the two papers are the same. Optional subjects include '
+                   'Forestry, Botany, Zoology, Agriculture, Geology, Physics, Chemistry, Mathematics, Statistics and the engineering subjects; some pairs cannot be taken together.'),
+    ],
+    tail_html='<h2>Practise the IFoS previous papers</h2><p>Learn with Anil has the IFoS Mains Paper I (General English) and Paper II (General Knowledge) '
+              'from UPSC\'s official papers, 2019–2025, each question with a model answer, and the common Civil Services Prelims papers with answer keys and '
+              'explanations in English and Hindi.</p><p><a href="/upsc-ifos/">UPSC IFoS home</a> · <a href="/upsc-ifos/mains-pyqs/">IFoS Mains PYQs with model answers</a> · '
+              '<a href="/upsc-prelims/pyqs.html">Prelims previous papers</a></p>',
+    faqs=[
+      ('When is the UPSC IFoS Mains 2026?', 'From 22 to 29 November 2026. General English and General Knowledge are on 22 November; the optional papers follow (no paper on 24 November).'),
+      ('When will the IFoS 2027 notification come?', 'On 13 January 2027, together with the Civil Services 2027 notification, as per the UPSC Calendar 2027. The last date to apply is 2 February 2027.'),
+      ('When is the IFoS Prelims 2027?', 'On Sunday, 23 May 2027. It is the same paper as the Civil Services Prelims; IFoS has its own cut-off.'),
+      ('How many IFoS vacancies are there in 2026?', 'About 80: 33 unreserved, 21 OBC, 12 SC, 8 EWS and 6 ST, as given in UPSC\'s notice.'),
+      ('What is the age limit for IFoS?', '21 to 32 years on 1 August of the exam year, with relaxation for SC, ST, OBC and persons with benchmark disabilities.'),
+      ('Where can I practise IFoS Mains previous questions?', 'On Learn with Anil: Paper I General English and Paper II General Knowledge, 2019–2025, with model answers.'),
+    ])
+ASOF_PAGE['upsc-ifos-2027-notification.html'] = '16 November 2026'
+
+NEW['appsc-aso-notification-2026.html'] = dict(
+    exam='appsc-aso', board='APPSC', site='psc.ap.gov.in', crumb='APPSC ASO Notification 2026', faq_asof='16 November 2026',
+    title='APPSC ASO Notification 2026: 196 Assistant Statistical Officer Posts, Last Date 12 November, Exam Pattern, Age 44 & Previous Papers | Learn with Anil',
+    desc='APPSC Notification No. 20/2026: 196 Assistant Statistical Officer posts in the A.P. Economics & Statistical Subordinate Service. Applications closed on '
+         '12 November 2026 (extended from 2 November); the exam date is awaited. Degree with Statistics, age 18–44, the two-paper CBRT pattern and ASO previous papers.',
+    h1='APPSC ASO notification 2026: 196 Assistant Statistical Officer posts',
+    lede='The Andhra Pradesh Public Service Commission (APPSC) has notified 196 posts of Assistant Statistical Officer (ASO) in the A.P. Economics & Statistical '
+         'Subordinate Service (Notification No. 20/2026). Online applications ran from 13 October to 12 November 2026 (the last date was extended from 2 November); '
+         'APPSC will announce the exam date. Below: the dates, who could apply, the exam pattern and the ASO previous papers to practise.',
+    te='ఏపీపీఎస్సీ అసిస్టెంట్ స్టాటిస్టికల్ ఆఫీసర్ నోటిఫికేషన్ (నం. 20/2026): 196 పోస్టులు. దరఖాస్తు గడువు నవంబర్ 12, 2026తో ముగిసింది; పరీక్ష తేదీ ఇంకా ప్రకటించలేదు. '
+       'పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ, పేపర్-2 ఎకనామిక్స్, అకౌంటింగ్, కంప్యూటర్స్ & స్టాటిస్టిక్స్.',
+    pdf='https://psc.ap.gov.in', pdfname='APPSC Notification No. 20/2026 (Assistant Statistical Officer, A.P. Economics & Statistical Subordinate Service), psc.ap.gov.in',
+    related=['tgpsc-mpso-aso-notification-2026.html'],
+    sections=[
+      ('Key dates', 'table', [
+        ('Notification', 'No. 20/2026 (brief notice 15 September 2026; detailed notification with the online application from 13 October 2026)'),
+        ('Online applications', '13 October to 12 November 2026, 11:59 pm (extended from 2 November); now closed'),
+        ('Written exam (CBRT)', 'Date to be announced by APPSC; there is no screening test'),
+        ('Computer Proficiency Test', 'For candidates who qualify in the written exam'),
+      ]),
+      ('Posts and pay', 'table', [
+        ('Post', 'Assistant Statistical Officer, A.P. Economics & Statistical Subordinate Service'), ('Vacancies', '196 (provisional)'),
+        ('Pay', 'Rs. 37,640 – 1,15,500 (RPS 2022), with allowances')]),
+      ('Exam pattern (single level, online CBRT, degree standard)', 'table+', (['Paper', 'Subject', 'Questions · minutes · marks'], [
+        ('Paper I', 'General Studies & Mental Ability', '150 · 150 · 150'),
+        ('Paper II', 'Economics, Financial Accounting, Basics of Computers and Statistics', '150 · 150 · 150'),
+        ('CPT', 'Computer Proficiency Test: fundamentals (20%) and word processing, spreadsheet and presentation practicals (80%); qualifying', '—')])),
+      ('', 'note', 'The written exam is 300 marks; one-third of a mark is cut for each wrong answer. Marks may be normalised if the exam is held in more than one session. '
+                   'The CPT only has to be passed: 40% for OC, 35% for BC and 30% for SC, ST and persons with disabilities.'),
+      ('Who could apply', 'list', [
+        'A bachelor\'s degree with Statistics as a main subject, or with Mathematics, Economics, Commerce or Computer Science as a main subject and Statistics '
+        'studied as a paper.',
+        'Age 18 to 44 years on 1 July 2026 (the upper limit was raised from 42 to 44 by G.O.Ms.No.187 of 14 September 2026); 5 years more for SC, ST, BC and EWS, '
+        '10 more for persons with disabilities.',
+        'Fee: Rs. 250 application fee plus Rs. 80 exam fee; the exam fee is waived for SC, ST, BC, persons with disabilities, ex-servicemen, white-card families '
+        'and unemployed youth as defined in the notification.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for APPSC ASO 2026?', 'It was 12 November 2026 (extended from 2 November). Applications are now closed.'),
+      ('When is the APPSC ASO exam 2026?', 'APPSC has not announced the date yet. It will be a single online (CBRT) exam with no screening test; watch psc.ap.gov.in for the date and hall tickets.'),
+      ('How many posts are there in APPSC ASO 2026?', '196 Assistant Statistical Officer posts in the A.P. Economics & Statistical Subordinate Service (provisional).'),
+      ('What is the APPSC ASO exam pattern?', 'Paper I General Studies & Mental Ability and Paper II Economics, Accounting, Computers and Statistics, 150 questions and 150 marks each, then a qualifying Computer Proficiency Test.'),
+      ('What is the age limit for APPSC ASO 2026?', '18 to 44 years on 1 July 2026, with 5 more years for SC, ST, BC and EWS and 10 more for persons with disabilities.'),
+      ('Where can I practise APPSC ASO previous papers?', 'On Learn with Anil: the Paper II (Statistics) papers of the 2025 and 2022 ASO exams with APPSC\'s final keys and explanations in English and Telugu.'),
+    ])
+ASOF_PAGE['appsc-aso-notification-2026.html'] = '16 November 2026'
+
+_TG1_FAQ_STATUS = 'No. As of 16 November 2026 TGPSC has not issued a new Group-I notification. The last one was Notification No. 02/2024 (563 posts), whose selection list came in September 2025.'
+NEW['tgpsc-group-1-notification-2026.html'] = dict(
+    exam='tgpsc-group-1', board='TGPSC', site='tgpsc.gov.in', crumb='TGPSC Group-I Notification', faq_asof='16 November 2026',
+    title='TGPSC Group 1 Notification 2026: Latest Status, 2024 Recruitment (563 Posts) Timeline, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='Is there a new TGPSC Group-I notification? Not yet (16 November 2026). The last recruitment, Notification 02/2024 for 563 posts: Prelims 9 June 2024, '
+         'Mains 21–27 October 2024, 562 selected; the High Court and the Supreme Court upheld it in 2026. Prelims and Mains pattern and Group-I previous papers.',
+    h1='TGPSC Group-I notification 2026: latest status',
+    lede='As of 16 November 2026, the Telangana Public Service Commission (TGPSC) has not issued a new Group-I notification. The last recruitment, under '
+         'Notification No. 02/2024 for 563 posts, is complete: 562 candidates were selected, and the courts upheld the result in 2026. Below: that timeline, the '
+         'Prelims and Mains pattern, and the Group-I previous papers to start with while the next notification is awaited.',
+    te='టీజీపీఎస్సీ గ్రూప్-1: 16 నవంబర్ 2026 నాటికి కొత్త నోటిఫికేషన్ రాలేదు. చివరి నోటిఫికేషన్ 02/2024 (563 పోస్టులు) — ప్రిలిమ్స్ 9 జూన్ 2024, '
+       'మెయిన్స్ అక్టోబర్ 2024, 562 మంది ఎంపిక. పరీక్ష విధానం, గత ప్రశ్నపత్రాలు ఇక్కడ.',
+    pdf='https://www.tgpsc.gov.in', pdfname='TGPSC Notification No. 02/2024 (Group-I Services) and its results, tgpsc.gov.in',
+    related=['tgpsc-group-2-notification-2026.html', 'tgpsc-mpso-aso-notification-2026.html'],
+    sections=[
+      ('Status', 'table', [
+        ('New Group-I notification', 'Not issued yet (checked 16 November 2026). It will appear on tgpsc.gov.in; ignore notices shared only on social media.'),
+        ('Last notification', 'No. 02/2024, 19 February 2024, 563 posts (Deputy Collector, DSP, Commercial Tax Officer, District Registrar and others)'),
+      ]),
+      ('How the 2024 recruitment went', 'table', [
+        ('Prelims', '9 June 2024 (31,382 qualified for the Mains at 1:50)'), ('Mains', '21 to 27 October 2024 (about 30,000 wrote)'),
+        ('General Ranking List', '30 March 2025'),
+        ('Selection list', 'September 2025: 562 provisionally selected, one post withheld because of a court case'),
+        ('Court cases', 'A single judge set the Mains result aside on 9 September 2025; a division bench of the High Court upheld it on 5 February 2026, '
+                        'and the Supreme Court rejected the plea against it in April 2026'),
+      ]),
+      ('Exam pattern (as in Notification 02/2024)', 'table+', (['Stage', 'Papers', 'Marks'], [
+        ('Prelims (screening)', 'General Studies & Mental Ability, 150 questions, 2½ hours, objective', '150 (not counted in the final merit)'),
+        ('Mains (written, descriptive)', 'General English (qualifying) and six papers of 3 hours each: I General Essay; II History, Culture & Geography; '
+                                         'III Indian Society, Constitution & Governance; IV Economy & Development; V Science & Technology and Data Interpretation; '
+                                         'VI Telangana Movement & State Formation', '6 × 150 = 900'),
+      ])),
+      ('', 'note', 'There is no interview: the final selection is on the 900 Mains marks. The Mains papers can be written in English, Telugu or Urdu.'),
+    ],
+    faqs=[
+      ('Is there a TGPSC Group-I notification in 2026?', _TG1_FAQ_STATUS),
+      ('How many posts were there in the last TGPSC Group-I?', '563 posts under Notification No. 02/2024; 562 candidates were selected and one post was withheld because of a court case.'),
+      ('Is there an interview in TGPSC Group-I?', 'No. Selection is on the Mains written marks (six papers of 150 marks); the Prelims only screens candidates for the Mains.'),
+      ('What is the TGPSC Group-I Prelims pattern?', 'One objective paper of General Studies & Mental Ability: 150 questions, 150 marks, 2½ hours.'),
+      ('Where can I practise TGPSC Group-I previous papers?', 'On Learn with Anil: the 2024, 2023 and 2022 Prelims papers with TGPSC\'s final keys and explanations in English and Telugu, and the 2024 Mains questions.'),
+    ])
+ASOF_PAGE['tgpsc-group-1-notification-2026.html'] = '16 November 2026'
+
+NEW['tgpsc-group-2-notification-2026.html'] = dict(
+    exam='tgpsc-group-2', board='TGPSC', site='tgpsc.gov.in', crumb='TGPSC Group-II Notification', faq_asof='16 November 2026',
+    title='TGPSC Group 2 Notification 2026: Latest Status, 783-Post Recruitment (28/2022) Timeline, Exam Pattern & Previous Papers | Learn with Anil',
+    desc='Is there a new TGPSC Group-II notification? Not yet (16 November 2026); posts of a "2026 notification for 783 posts" are the old 2022 one. Notification '
+         '28/2022: exam 15–16 December 2024, 782 selected on 28 September 2025. The four-paper pattern and Group-II previous papers with answers.',
+    h1='TGPSC Group-II notification 2026: latest status',
+    lede='As of 16 November 2026, TGPSC has not issued a new Group-II notification. Job sites that show a "Group-2 2026 notification for 783 posts" are repeating '
+         'the 2022 notification, whose recruitment is complete: 782 candidates were selected on 28 September 2025. Below: that timeline, the exam pattern and the '
+         'Group-II previous papers to start with.',
+    te='టీజీపీఎస్సీ గ్రూప్-2: 16 నవంబర్ 2026 నాటికి కొత్త నోటిఫికేషన్ రాలేదు. చివరి నోటిఫికేషన్ 28/2022 (783 పోస్టులు) — పరీక్ష డిసెంబర్ 2024లో, '
+       '782 మంది ఎంపిక (సెప్టెంబర్ 28, 2025). పరీక్ష విధానం, గత ప్రశ్నపత్రాలు ఇక్కడ.',
+    pdf='https://www.tgpsc.gov.in', pdfname='TGPSC Notification No. 28/2022 (Group-II Services) and its results, tgpsc.gov.in',
+    related=['tgpsc-group-1-notification-2026.html', 'tgpsc-mpso-aso-notification-2026.html'],
+    sections=[
+      ('Status', 'table', [
+        ('New Group-II notification', 'Not issued yet (checked 16 November 2026). Trust only tgpsc.gov.in; "2026" posts with 783 posts are the 2022 notification.'),
+        ('Last notification', 'No. 28/2022, 29 December 2022: 783 posts in 18 post codes (Municipal Commissioner Gr. III, Assistant Commercial Tax Officer, '
+                              'Sub-Registrar, Mandal Revenue Officer posts and others)'),
+      ]),
+      ('How the 28/2022 recruitment went', 'table', [
+        ('Applications', '18 January to 16 February 2023 (about 5.5 lakh applied)'), ('Written exam', '15 and 16 December 2024 (after several postponements)'),
+        ('General Ranking List', '11 March 2025'), ('Selection list', '28 September 2025: 782 provisionally selected, one post withheld'),
+      ]),
+      ('Exam pattern (objective, no interview)', 'table+', (['Paper', 'Subject', 'Questions · marks · time'], [
+        ('Paper I', 'General Studies & General Abilities', '150 · 150 · 2½ hours'), ('Paper II', 'History, Polity & Society', '150 · 150 · 2½ hours'),
+        ('Paper III', 'Economy & Development', '150 · 150 · 2½ hours'), ('Paper IV', 'Telangana Movement & State Formation', '150 · 150 · 2½ hours'),
+        ('Total', '', '600 marks')])),
+      ('', 'note', 'Selection is on the 600 written marks; there is no interview. The papers are bilingual (English and Telugu), with Urdu on request.'),
+    ],
+    faqs=[
+      ('Is there a TGPSC Group-II notification in 2026?', 'No. As of 16 November 2026 TGPSC has not issued one. The last was Notification No. 28/2022 for 783 posts, completed in September 2025.'),
+      ('Is the "TGPSC Group 2 2026 notification for 783 posts" real?', 'No. 783 posts is the 2022 notification (No. 28/2022), whose exam was in December 2024 and selection list in September 2025.'),
+      ('How many were selected in TGPSC Group-II 2024?', '782 against 783 posts; one post was withheld. The list came on 28 September 2025.'),
+      ('What is the TGPSC Group-II exam pattern?', 'Four objective papers of 150 questions and 150 marks each (600 marks): GS & General Abilities; History, Polity & Society; Economy & Development; Telangana Movement. No interview.'),
+      ('Where can I practise TGPSC Group-II previous papers?', 'On Learn with Anil: all four papers of the December 2024 exam with TGPSC\'s final key and explanations in English and Telugu.'),
+    ])
+ASOF_PAGE['tgpsc-group-2-notification-2026.html'] = '16 November 2026'
+
+NEW['sbi-po-2026-notification.html'] = dict(
+    exam='sbi-po', board='SBI', site='sbi.bank.in', crumb='SBI PO 2026', faq_asof='16 November 2026',
+    title='SBI PO 2026: 1,500 Posts, Mains Result Out, Group Exercise & Interview from 18 November, Final Result, Pattern & Mock Tests | Learn with Anil',
+    desc='SBI PO 2026 (CRPD/PO/2026-27/09): 1,500 Probationary Officer posts. Prelims 1–2 August, Mains 12 September; 4,367 shortlisted for Phase III — psychometric '
+         'test 31 October, group exercise and interviews from 18 November 2026. Vacancies, final merit, the Prelims pattern and free-pattern mock tests.',
+    h1='SBI PO 2026: group exercise and interviews from 18 November',
+    lede='The State Bank of India is recruiting 1,500 Probationary Officers (Advertisement CRPD/PO/2026-27/09). The Prelims and Mains are over; the Mains result '
+         'shortlisted 4,367 candidates for Phase III. The psychometric test was held on 31 October and the group exercise and interviews start on 18 November 2026 '
+         '(tentative), with the final result expected in November–December. Below: the dates, vacancies, how the final merit works and the exam pattern.',
+    hi='एसबीआई पीओ 2026 (विज्ञापन CRPD/PO/2026-27/09): 1,500 पद। मेन्स का परिणाम आ चुका है; ग्रुप एक्सरसाइज़ और इंटरव्यू 18 नवंबर 2026 से (संभावित)।',
+    pdf='https://sbi.bank.in/web/careers/current-openings', pdfname='SBI Advertisement No. CRPD/PO/2026-27/09 and its notices, sbi.bank.in > Careers',
+    related=['ibps-so-2026-notification.html'],
+    sections=[
+      ('Key dates', 'table', [
+        ('Notification', '18 June 2026 (CRPD/PO/2026-27/09)'), ('Online applications', '18 June to 8 July 2026 (closed)'),
+        ('Phase I: Prelims', '1 and 2 August 2026 (result at the end of August)'), ('Phase II: Mains', '12 September 2026 (result in mid-October; 4,367 shortlisted)'),
+        ('Phase III: psychometric test', '31 October 2026'), ('Phase III: group exercise and interview', 'From 18 November 2026 (tentative)'),
+        ('Final result', 'November–December 2026 (tentative)'),
+      ]),
+      ('Vacancies: 1,500', 'table+', (['Category', 'Regular', 'Backlog'], [
+        ('UR', '588', '—'), ('OBC', '390', '—'), ('SC', '216', '18'), ('ST', '108', '36'), ('EWS', '144', '—'), ('Total', '1,446', '54')])),
+      ('How the final merit is made', 'list', [
+        'Prelims marks do not count; the Prelims only shortlists for the Mains.',
+        'Mains (objective + descriptive) marks are converted to 75, and Phase III (group exercise 20 + interview 30 = 50) to 25: final merit out of 100.']),
+      ('Prelims pattern (Phase I)', 'table+', (['Section', 'Questions (marks)', 'Time'], [
+        ('English Language', '40', '20 minutes'), ('Quantitative Aptitude', '30', '20 minutes'), ('Reasoning Ability', '30', '20 minutes'),
+        ('Total', '100', '1 hour')])),
+      ('', 'note', 'A quarter of the marks for a question is cut for each wrong answer. Who could apply: graduates in any discipline, aged 21 to 30 on 1 April 2026 '
+                   '(born 2 April 1996 to 1 April 2005), with the usual relaxations.'),
+    ],
+    faqs=[
+      ('When is the SBI PO 2026 interview?', 'The group exercise and interviews start on 18 November 2026 (tentative); each candidate\'s date is on the Phase III call letter on sbi.bank.in.'),
+      ('How many candidates cleared the SBI PO 2026 Mains?', '4,367 candidates were shortlisted for Phase III (psychometric test, group exercise and interview) for 1,500 posts.'),
+      ('When will the SBI PO 2026 final result come?', 'SBI\'s tentative schedule puts it in November–December 2026, after the interviews.'),
+      ('How many vacancies are there in SBI PO 2026?', '1,500: 1,446 regular (588 UR, 390 OBC, 216 SC, 108 ST, 144 EWS) and 54 backlog (18 SC, 36 ST).'),
+      ('How is the SBI PO final merit calculated?', 'Mains marks out of 75 plus group exercise and interview out of 25. Prelims marks are not counted.'),
+      ('Are SBI PO previous papers available?', 'SBI does not publish its papers. Learn with Anil has its own full-length SBI PO Prelims mock tests in the real pattern, in English and Hindi, with explanations.'),
+    ])
+ASOF_PAGE['sbi-po-2026-notification.html'] = '16 November 2026'
+
+NEW['ibps-so-2026-notification.html'] = dict(
+    exam='ibps-so', board='IBPS', site='ibps.in', crumb='IBPS SO 2026 (CRP SPL-XVI)', faq_asof='16 November 2026',
+    title='IBPS SO 2026 (CRP SPL-XVI): Vacancies Revised to 1,043, Mains Held 1 November, Interview Next, Post-wise Posts & Mock Tests | Learn with Anil',
+    desc='IBPS Specialist Officer 2026, CRP SPL-XVI: vacancies revised from 745 to 1,043 (IT 376, AFO 370, Law 125, Rajbhasha 102, HR 60, Marketing 10). Prelims '
+         '29 August, result 15 October, Mains 1 November 2026; interviews next. The Prelims pattern and free-pattern mock tests.',
+    h1='IBPS SO 2026: 1,043 posts, Mains over, interviews next',
+    lede='IBPS is recruiting Specialist Officers (Scale I) for the public sector banks through CRP SPL-XVI, for the vacancy year 2027-28. The notification of 30 June '
+         '2026 gave 745 posts; IBPS has since raised them to 1,043. The Prelims (29 August) and Mains (1 November 2026) are over; the Mains result and the interviews '
+         'come next. Below: the dates, the post-wise vacancies, the selection process and the Prelims pattern.',
+    hi='आईबीपीएस एसओ 2026 (CRP SPL-XVI): रिक्तियाँ बढ़कर 1,043। मेन्स परीक्षा 1 नवंबर 2026 को हुई; अब मेन्स का परिणाम और इंटरव्यू।',
+    pdf='https://www.ibps.in', pdfname='IBPS CRP SPL-XVI notification (30 June 2026) and the revised vacancy list (27 August 2026), ibps.in',
+    related=['sbi-po-2026-notification.html'],
+    sections=[
+      ('Key dates', 'table', [
+        ('Notification', '30 June 2026, CRP SPL-XVI (vacancy year 2027-28)'), ('Online applications', 'July 2026 (closed)'),
+        ('Vacancies revised', '745 → 1,035 (20 July) → 1,043 (27 August 2026)'),
+        ('Prelims', '29 August 2026 (result 15 October)'), ('Mains', '1 November 2026'),
+        ('Interview', 'After the Mains result; IBPS\'s tentative schedule says December 2026 – January 2027'),
+        ('Provisional allotment', 'Early 2027 (tentative)'),
+      ]),
+      ('Post-wise vacancies (revised, 27 August 2026)', 'table+', (['Post (Scale I)', 'Posts'], [
+        ('IT Officer', '376'), ('Agricultural Field Officer', '370'), ('Law Officer', '125'), ('Rajbhasha Adhikari', '102'), ('HR / Personnel Officer', '60'),
+        ('Marketing Officer', '10'), ('Total', '1,043')])),
+      ('', 'note', 'The list is indicative: IBPS may change it again with the banks\' reports. Final selection: Mains and interview, with 80% and 20% weightage.'),
+      ('Prelims pattern (IT, AFO, HR, Marketing)', 'table+', (['Section', 'Questions · marks', 'Time'], [
+        ('English Language', '25 · 25', '20 minutes'), ('Reasoning', '25 · 25', '20 minutes'), ('Quantitative Aptitude', '25 · 25', '20 minutes'),
+        ('Professional Knowledge', '25 · 50', '20 minutes'), ('Total', '100 · 125', '80 minutes')])),
+      ('', 'note', 'A quarter of the marks for a question is cut for each wrong answer. Law Officer and Rajbhasha Adhikari candidates have General Awareness '
+                   '(banking) in place of Quantitative Aptitude.'),
+    ],
+    faqs=[
+      ('How many vacancies are there in IBPS SO 2026?', '1,043 after the revision of 27 August 2026: IT Officer 376, AFO 370, Law 125, Rajbhasha 102, HR 60 and Marketing 10. The notification first gave 745.'),
+      ('When was the IBPS SO Mains 2026?', 'On 1 November 2026. The Prelims was on 29 August and its result came on 15 October 2026.'),
+      ('When is the IBPS SO 2026 interview?', 'After the Mains result. IBPS\'s tentative schedule puts the interviews in December 2026 – January 2027.'),
+      ('How is the IBPS SO final selection made?', 'On the Mains and interview marks, with 80% and 20% weightage. The Prelims only shortlists for the Mains.'),
+      ('Are IBPS SO previous papers available?', 'IBPS does not publish its papers. Learn with Anil has its own IBPS SO Prelims mock tests (IT, AFO, HR and Marketing) in the real pattern, in English and Hindi.'),
+    ])
+ASOF_PAGE['ibps-so-2026-notification.html'] = '16 November 2026'
+
+
 def apply(NOTIFS):
     for rel, f in FAQS.items():
         if rel in NOTIFS: NOTIFS[rel]['faqs'] = f; NOTIFS[rel]['faq_asof'] = ASOF_PAGE.get(rel, ASOF)

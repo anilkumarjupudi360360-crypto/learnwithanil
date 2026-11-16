@@ -973,11 +973,29 @@ function syncLang(){
 
 /* ---------- storage (this browser only) ---------- */
 function readLS(k, d){ try{ const v = localStorage.getItem(k); if(v){ const o = JSON.parse(v); if(o && typeof o==="object") return Object.assign(d, o); } }catch(e){} return d; }
-function writeLS(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function writeLS(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){
+  // browser storage full: drop the older half of the saved mock-question copies (My Mistakes, 16 Nov 2026) and try once more, so progress keeps saving
+  try{ const c = Object.values((v && v.mistakes) || {}).filter(m=>m && m.q).sort((a,b)=>(Number(a.added)||0)-(Number(b.added)||0));
+       if(c.length){ c.slice(0, Math.ceil(c.length/2)).forEach(m=>{ delete m.q; delete m.pp; }); localStorage.setItem(k, JSON.stringify(v)); } }catch(e2){} } }
 const blank = ()=>({qs:{}, mistakes:{}, bm:{}, history:[]});
 const REV = ["mistakes"];   // "My Mistakes" in the top menu (was "My Revision" with four pages, until 8 Nov 2026)
 let S = readLS(KEY, blank());
 (()=>{ let n = 0; for(const [id, m] of Object.entries(S.mistakes||{})) if(m && m.reason==="k" && (m.miss||1)<=1){ delete S.mistakes[id]; n++; } if(n) writeLS(KEY, S); })();   // skipped-only entries (old rule)
+// Anil, 16 Nov 2026 ("why mistake book ... is not present in every exam tile"): mock-test questions are not in the exam's data, so a
+// mistake from a mock keeps its own copy of the question (m.q, and the mock's name in m.pp) and comes back into QMAP on every visit.
+// That is how SBI PO / IBPS SO (mock tests only) and every other exam's mocks fill My Mistakes. At most MIS_COPIES copies per exam.
+const BASEQ = new Set(QS.map(q=>q.id)), MIS_COPIES = 100;
+(()=>{ for(const [id, m] of Object.entries(S.mistakes||{})){ if(!m || !m.q || QMAP[id]) continue;
+  QMAP[id] = m.q;
+  if(m.pp && !PMAP[m.pp.id]) PMAP[m.pp.id] = Object.assign({fmt:"mcq", paid:true}, m.pp);
+  if(!PMAP[m.q.p]) PMAP[m.q.p] = {id:m.q.p, short:"Mock test", title:"Mock test", fmt:"mcq", paid:true};
+  if(!SUBJ[m.q.s]) SUBJ[m.q.s] = {id:m.q.s, name:m.q.s, topics:[]}; } })();
+function misCopy(id, m){   // keep a copy of a mock question with its mistake (not for the exam's own questions)
+  if(BASEQ.has(id) || m.q || !QMAP[id]) return;
+  if(Object.values(S.mistakes).filter(x=>x && x.q).length >= MIS_COPIES) return;
+  const q = QMAP[id], p = PMAP[q.p];
+  m.q = q; if(p) m.pp = {id:p.id, short:p.short, title:p.title||p.short};
+}
 let P = readLS(PKEY, {papers:null, topics:null, count:10, mode:"practice", recall:true, lang:"en"});
 try{ const gl = localStorage.getItem("lwa-lang"); if(gl && ["en","hi","te","ta","kn","mr","gu","or","bn"].includes(gl)) P.lang = gl; }catch(_){}
 const save = ()=>writeLS(KEY, S), savePrefs = ()=>writeLS(PKEY, P);
@@ -1342,7 +1360,7 @@ async function startMock(id, part, mode){   // mode "practice": check each answe
     const mm = (PAYC.mock.mocks||[]).find(x=>x.id===id);   // packs with several kinds of mock (e.g. Mission CGL Tier-I / Tier-II)
     const mname = mm? mm.name : "Mock " + no;
     PMAP[id] = PMAP[id] || {id, short: PAYC.mock.name + " " + mname, title: PAYC.mock.name + " · " + mname, fmt:"mcq", paid:true, count:r.questions.length};
-    r.questions.forEach(q=>{ QMAP[q.id] = q; });
+    r.questions.forEach(q=>{ if(!q.p) q.p = id; QMAP[q.id] = q; });   // q.p: the mock, so a saved mistake keeps its mock name
     let qs = r.questions, pname = PART_NAME[part], mins;
     if(mm){
       const pt = (mm.parts||[]).find(x=>x[0]===part);
@@ -2320,7 +2338,7 @@ function finishQuiz(){
     if(r==="c"){ if(m){ m.recall=(m.recall||0)+1; if(m.recall>=2){ delete S.mistakes[id]; goneMark(id); res.mastered++; } } }
     // Anil, 2 Nov 2026 ("these things are creating some confusion"): only a wrong answer goes into the mistakes notebook. A question you
     // skipped, or never reached in a timed test, is not a mistake: it shows under "Skipped" on the result page and counts on the heatmap.
-    else if(r==="w"){ if(!m){ S.mistakes[id]={reason:r, added:res.at, recall:0, miss:1}; res.added++; } else { m.recall=0; m.reason=r; m.miss=(m.miss||0)+1; } }
+    else if(r==="w"){ if(!m){ S.mistakes[id]={reason:r, added:res.at, recall:0, miss:1}; res.added++; } else { m.recall=0; m.reason=r; m.miss=(m.miss||0)+1; } misCopy(id, S.mistakes[id]); }
     else if(m){ m.recall=0; }
   });
   if(QZ.source==="daily"){ S.daily = {d: dayIST(), c: res.c, n: res.ids.length}; res.streak = bumpStreak().n; track("daily_done", {exam: DATA.examShort||"", correct: res.c}); }
@@ -2458,7 +2476,7 @@ function revTabs(v){ return ""; }   // My Revision sub-tabs removed (Anil, 8 Nov
 function recallDots(m){ const r=m.recall||0; return `<span class="recall" title="Correct recalls: ${r} of 2"><i class="${r>=1?"on":""}"></i><i class="${r>=2?"on":""}"></i></span>`; }
 function vMistakes(){   // Anil, 8 Nov 2026: "i want wrong questions to be separated for the student and need to practice them again and again ... in that same exam pages"
   const ids = mistakeIds();
-  if(!ids.length) return `<div class="wrap view">${head("My Mistakes","Your wrong answers, ready to practise","Every question you answer wrongly in this exam is saved here automatically, so you can practise it again and again.")}${emptyHTML("No mistakes yet","Take a previous paper or a practice quiz. Every question you get wrong will appear here, ready to practise again.",`<a class="btn btn-primary" href="/upsc-prelims/papers/">Open previous papers</a><a class="btn btn-secondary" href="/upsc-prelims/practice/">Start a practice quiz</a>`)}</div>`;
+  if(!ids.length) return `<div class="wrap view">${head("My Mistakes","Your wrong answers, ready to practise","Every question you answer wrongly in this exam is saved here automatically, so you can practise it again and again.")}${DATA.mockonly ? emptyHTML("No mistakes yet","Take a mock test or a sectional test. Every question you get wrong will appear here, ready to practise again.",`<a class="btn btn-primary" href="#mocks">Open the mock tests</a><a class="btn btn-secondary" href="#sectionals">Sectional tests</a>`) : emptyHTML("No mistakes yet","Take a previous paper, a mock test or a practice quiz. Every question you get wrong will appear here, ready to practise again.",`<a class="btn btn-primary" href="/upsc-prelims/papers/">Open previous papers</a><a class="btn btn-secondary" href="/upsc-prelims/practice/">Start a practice quiz</a>`)}</div>`;
   const subs = [...new Set(ids.map(id=>QMAP[id].s))];
   if(UI.mFilter!=="all" && !subs.includes(UI.mFilter)) UI.mFilter="all";
   const pick = ids.filter(id=>UI.mFilter==="all"||QMAP[id].s===UI.mFilter);

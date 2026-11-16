@@ -2835,6 +2835,11 @@ def exam_confs():
                            f"papers, Paper-1 General Knowledge and Paper-2 Kannada, English & Computer Knowledge. {t:,} questions in Kannada and English with explanations; "
                            f"subject-wise practice and 2-hour timed mock tests for Karnataka FDA, SDA and Group-C aspirants."),
            eyebrow='KEA · Karnataka Group-C: FDA & SDA · 2026',
+           notes_title='Study material for KEA FDA & SDA',   # Anil, 16 Nov 2026: the Karnataka economy book ("pls upload it")
+           notes_seo=('Karnataka Economy, Co-operation & Panchayat Raj Book for KEA FDA SDA – Paper 1 GK Study Material with KEA Questions (Free Sample PDF) | Learn with Anil',
+                      'KEA FDA and SDA Paper 1 General Knowledge study material by Jupudi Anil Kumar: Karnataka economy, budget 2026-27, co-operation, Panchayat Raj, rural development, the five guarantees and Article 371J, with all 59 KEA 2026 questions on these topics and the official answers. Free sample chapter.'),
+           notes_lede='The Karnataka part of the KEA General Knowledge paper in one book by Jupudi Anil Kumar: the State\'s economy and budget, agriculture and land reforms, industry and IT, the co-operative movement, Panchayat Raj, rural development, the five guarantees, banking and Article 371J, written from the questions KEA actually asked in its 2026 FDA, SDA and Kalyana Karnataka papers, with KEA\'s official answers.',
+           notes_line='Karnataka Economy, Co-operation, Panchayat Raj & Rural Development: the Karnataka GK book for KEA FDA & SDA, with all 59 KEA 2026 questions on these topics.',
            papers_note=("Every paper is KEA's own question booklet, with the answer from KEA's revised key. Paper-1 and the Computer Knowledge part of Paper-2 are printed "
                         "in Kannada and English, and both are shown here; General Kannada is in Kannada only and General English in English only. Questions KEA deleted "
                         "(grace marks) are left out; where KEA accepted two options, both are marked correct.")),
@@ -3227,7 +3232,7 @@ def main():
           'account': ('My account – Learn with Anil', 'Your Learn with Anil account: your All-in-One Pass, devices and payments.', pb + 'account/', False),
         }
         if conf.get('mockonly'):   # SBI PO / IBPS SO: no previous papers, so only the mock tests, sectional tests and the general pages
-            views = {k: v for k, v in views.items() if k in ('about', 'mocks', 'sectionals', 'account')}
+            views = {k: v for k, v in views.items() if k in ('about', 'mocks', 'sectionals', 'account', 'mistakes')}   # My Mistakes too (16 Nov 2026)
             views['mocks'] = (f'{seo_name} Mock Tests – {MOCK_PACKS[conf["id"]]["title"]} | Learn with Anil', home_desc, pb + 'mocks/', False)
         sdata = dict(data, pb=pb, qpages=True, examSeo=seo_name, homeTitle=home_title, hubTitle=root_title)
         sjson = json.dumps(sdata, ensure_ascii=False, separators=(',', ':'))
@@ -6849,7 +6854,9 @@ def notif_page(loaded, rel):
     elif N.get('gu'): body.append(f'<p lang="gu" style="margin:0 0 6px">{esc(N["gu"])}</p>')
     elif N.get('or'): body.append(f'<p lang="or" style="margin:0 0 6px">{esc(N["or"])}</p>')
     elif N.get('bn'): body.append(f'<p lang="bn" style="margin:0 0 6px">{esc(N["bn"])}</p>')
-    if conf: body.append(f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>')
+    if conf and conf.get('mockonly'):   # SBI PO / IBPS SO: mock tests only, no papers pages (16 Nov 2026)
+        body.append(f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}sectional-tests.html">{esc(conf["seo"])} sectional tests</a>')
+    elif conf: body.append(f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>')
     for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
         if kind == 'table': body.append(facts_table(data))
@@ -6867,7 +6874,14 @@ def notif_page(loaded, rel):
     if N.get('related'):   # other pages for the same exam (hall ticket, answer key, syllabus, salary…)
         body.append('<h2>More on this exam</h2><ul>' + ''.join(f'<li><a href="/{r}">{esc(re.sub("<[^>]+>", "", NOTIFS[r]["h1"]))}</a></li>'
                                                             for r in N['related'] if r in NOTIFS and r != rel) + '</ul>')
-    if conf and not N.get('no_practice'):
+    if conf and conf.get('mockonly'):
+        if not N.get('no_practice'):
+            body.append(f'<h2>Practise with mock tests</h2><p>{esc(board)} does not publish its question papers, so Learn with Anil writes its own full-length '
+                        f'{esc(conf["seo"])} mock tests in the real pattern, in English and Hindi, with the answer and a short explanation for every question. '
+                        f'Take a full mock with the real timer, or one section at a time; every question you get wrong is saved in My Mistakes.</p>'
+                        f'<p><a href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a> · <a href="{conf["pb"]}sectional-tests.html">Sectional tests</a> · '
+                        f'<a href="{conf["pb"]}">{esc(conf["name"])} home</a></p>')
+    elif conf and not N.get('no_practice'):
         key = 'the official answer keys (where the board has published them)' if board != 'APPSC' else "APPSC's final key"
         body.append(f'<h2>Start with the previous papers</h2><p>Every {esc(conf["name"])} paper on this site comes with the answers from {key} and a short '
                     f'explanation in English and {esc(conf["l2"]["name"])}. Practise a paper online or take it as a timed mock test.</p>' + practice_links(conf, papers, questions))
@@ -6884,7 +6898,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways (RRB): NTPC, Group D'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2'), ('OPSC', 'OPSC (Odisha): ASO'), ('WBPSC', 'WBPSC (West Bengal): IDO'), ('DSSSB', 'DSSSB (Delhi): MTS, JE')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2'), ('OPSC', 'OPSC (Odisha): ASO'), ('WBPSC', 'WBPSC (West Bengal): IDO'), ('DSSSB', 'DSSSB (Delhi): MTS, JE'), ('SBI', 'Banking: SBI PO'), ('IBPS', 'Banking: IBPS SO')]
 
 
 def news_hub_page(loaded, rels):
@@ -7341,6 +7355,13 @@ EXAM_NOTIF = {
     'karnataka-gpstr': 'karnataka-teacher-recruitment-notification-2026.html', 'mpsc-group-c': 'mpsc-group-c-notification-2026.html', 'gsssb-cce': 'gsssb-cce-notification-2026.html',
     'uppsc-ro-aro': 'uppsc-ro-aro-notification-2026.html', 'upsssc-inter-level': 'upsssc-inter-level-notification-2026.html',
     'ukpsc-lower-pcs': 'ukpsc-lower-pcs-notification-2026.html', 'cg-vyapam-group-2': 'cg-vyapam-group-2-notification-2026.html',
+    # 16 Nov 2026 (Anil: "why ... notification is not present in every exam tile"): pages that existed but were not linked
+    'opsc-aso': 'opsc-aso-notification-2026.html', 'rrb-group-d': 'rrb-group-d-result-2026.html',
+    'ts-police-si': 'ts-police-si-exam-date-hall-ticket-2026.html', 'ts-police-constable': 'ts-police-constable-exam-date-hall-ticket-2026.html',
+    # and new pages for the six exams that had none (tools/notif_news.py, 16 Nov 2026)
+    'upsc-ifos': 'upsc-ifos-2027-notification.html', 'appsc-aso': 'appsc-aso-notification-2026.html', 'tgpsc-group-1': 'tgpsc-group-1-notification-2026.html',
+    'tgpsc-group-2': 'tgpsc-group-2-notification-2026.html', 'sbi-po': 'sbi-po-2026-notification.html', 'ibps-so': 'ibps-so-2026-notification.html',
+    'wbpsc-ido': 'wbpsc-ido-notification-2026.html', 'dsssb': 'dsssb-mts-je-notification-2026.html',
 }   # a new exam with its own notification page: add it here too
 
 
@@ -7353,10 +7374,14 @@ def extra_tiles(conf):
     hd = lambda k, ic, label: (f'<span class="etile-hd eh{k}"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ic}</svg></span>'
                                f'<span class="etile-k">0{len(cards) + 4} · {label}</span></span>')
     exam = esc(conf.get('seo') or conf['name'])
-    if not conf.get('mockonly'):
+    # every exam, including the mock-only ones (Anil, 16 Nov 2026: "why mistake book and notification is not present in every exam tile");
+    # mistakes from the mock tests are kept with a copy of the question (tools/app.html, misCopy)
+    if 'mistakes' not in conf.get('no_cards', ()):
         cards.append(f'<a class="etile fx" href="{pb}mistakes/">' + hd(4, '<path d="M4 4h16v16H4z"/><path d="M9 9l6 6M15 9l-6 6"/>', 'My Mistakes')
-                     + '<b>Your mistakes book</b><span class="etile-p">Every question you get wrong in this exam is saved here, subject by subject. '
-                     'Practise them again and again; a question leaves the list once you get it right twice in a row.</span>'
+                     + '<b>Your mistakes book</b><span class="etile-p">'
+                     + ('Every question you get wrong in the mock and sectional tests is saved here, section by section. ' if conf.get('mockonly') else
+                        'Every question you get wrong in this exam is saved here, subject by subject. ')
+                     + 'Practise them again and again; a question leaves the list once you get it right twice in a row.</span>'
                      '<span class="etile-price" data-mis>Empty for now · it fills up as you practise</span><span class="etile-btn">Open My Mistakes →</span></a>')
     nf = EXAM_NOTIF.get(conf['id'])
     if nf:

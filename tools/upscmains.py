@@ -396,7 +396,12 @@ def ifos_pages(B):
               'two optional subjects of two papers each (200 marks a paper), followed by a personality test (300 marks). The optional subjects include '
               'Forestry, Botany, Zoology, Agriculture, Geology, Physics, Chemistry, Mathematics, Statistics and the engineering subjects.</p>'
               '<p class="muted">Pattern as in UPSC\'s IFoS notification; check the latest notice on upsc.gov.in before you apply.</p></div></section>')
-    body = CSS + mains + f'<div class="cpair">{prelims}{scheme}</div>' + info['buy'] + flip_js() + D.credits([D.LOOK[p][0] for p in C['papers']])
+    # Notification card (Anil, 16 Nov 2026: "why ... notification is not present in every exam tile"); no dates on the card itself
+    news = ('<section class="ccard plain"><div class="cb"><p class="kick">Notification</p><h2>IFoS exam dates, vacancies and the next notification</h2>'
+            '<p class="lead">The current IFoS Main exam schedule, the vacancies, who can apply, and when UPSC will notify the next cycle together with the '
+            'Civil Services. Updated as news comes in.</p><div class="row"><a class="cta" href="/upsc-ifos-2027-notification.html">Read the notification page</a>'
+            '<a class="cta alt" href="/exam-notifications.html">All exam notifications</a></div></div></section>')
+    body = CSS + mains + f'<div class="cpair">{prelims}{scheme}</div>' + news + info['buy'] + flip_js() + D.credits([D.LOOK[p][0] for p in C['papers']])
     page = B.static_page(0, f'UPSC IFoS (Indian Forest Service) PYQs – Mains General English & General Knowledge with Model Answers, Prelims ({yr}) | Learn with Anil',
                          f'UPSC Indian Forest Service previous year questions: Mains Paper I General English and Paper II General Knowledge ({yr}), '
                          f'each with a model answer, and the common Civil Services Prelims with answer keys, by Learn with Anil.',

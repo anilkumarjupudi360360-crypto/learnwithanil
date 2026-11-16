@@ -86,6 +86,11 @@ async def main():
                 t = await bp.evaluate('document.body.innerText')
                 if 'No official papers to publish' not in t or nm + ' Prelims test series' not in t: errors.append(f'{name}: {d} home tiles missing')
                 if 'Previous Papers' in await bp.evaluate('document.getElementById("nav").innerText'): errors.append(f'{name}: {d} nav should not offer previous papers')
+                # 16 Nov 2026: mock-only exams get My Mistakes (mock-test mistakes are saved) and a Notification card too
+                for c, what in (('eh4', 'My Mistakes'), ('eh5', 'Notification')):
+                    if not await bp.locator(f'#home-static .etile-hd.{c}').count(): errors.append(f'{name}: {d} has no {what} card')
+                await bp.goto(URL + d + '/mistakes/'); await bp.wait_for_timeout(500)
+                if 'No mistakes yet' not in await bp.evaluate('document.body.innerText') and 'Unlock' not in await bp.evaluate('document.body.innerText'): errors.append(f'{name}: {d} My Mistakes page did not show')
                 await bp.goto(URL + d + '/mock-test.html'); await bp.wait_for_timeout(300)
                 if '?mock=bk-' not in await bp.content(): errors.append(f'{name}: {d} mock-test page has no mock link')
                 await bp.close()
@@ -293,9 +298,10 @@ async def main():
             await pg.goto(URL + sub + '/'); await pg.wait_for_timeout(400)
             nt = await pg.locator('#home-static .etiles .etile:not(.etile-sm)').count()
             want = {'appsc-group-1': 6, 'tgpsc-group-1': 5}.get(sub, 3)   # APPSC Group-1: Prelims 3 + Mains 3; TGPSC Group-I: Prelims 3 + Mains 2 (questions only)
-            # Anil, 16 Nov 2026: plus card 04 My Mistakes (not on mock-only exams), 05 Notification (when the exam has a page), 06 Books (when it has books)
+            # Anil, 16 Nov 2026: plus card 04 My Mistakes (every exam, mock-only ones too), 05 Notification (when the exam has a page), 06 Books (when it has books)
             want += await pg.locator('#home-static .etile .etile-hd.eh4, #home-static .etile .etile-hd.eh5, #home-static .etile .etile-hd.eh6').count()
-            if sub not in ('sbi-po', 'ibps-so') and not await pg.locator('#home-static .etile-hd.eh4').count(): errors.append(f'{sub}: no My Mistakes card')
+            if not await pg.locator('#home-static .etile-hd.eh4').count(): errors.append(f'{sub}: no My Mistakes card')
+            if not await pg.locator('#home-static .etile-hd.eh5').count(): errors.append(f'{sub}: no Notification card')   # every exam has one (16 Nov 2026)
             if nt != want: errors.append(f'{sub}: {nt} main tiles on the exam home, expected {want}')
             if await pg.locator('#qotd-home').count(): errors.append(f'{sub}: question of the day should only be on the start page')
             for h in await pg.eval_on_selector_all('#home-static .etiles a', 'els => els.map(e => e.getAttribute("href"))'):

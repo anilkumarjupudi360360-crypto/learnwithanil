@@ -449,5 +449,48 @@
    "appsc-eo"
   ],
   "free": "/LearnWithAnil-EO-Grade-3-Hindu-Philosophy-Temple-System-Telugu-Free-Sample.pdf"
+ },
+ {
+  "id": "kaeco-en",
+  "lang": "en",
+  "vol": null,
+  "series": "KEA FDA & SDA · Paper 1 General Knowledge",
+  "subject": "Karnataka Economy",
+  "title": "Karnataka Economy, Co-operation, Panchayat Raj & Rural Development for KEA FDA & SDA",
+  "title_en": "Karnataka Economy, Co-operation, Panchayat Raj & Rural Development for KEA FDA & SDA",
+  "subtitle": "The Karnataka section of the General Knowledge paper, written from KEA's own 2026 questions: economy, co-operation, Panchayat Raj, rural development, the five guarantees and Article 371J, with every KEA 2026 question on them and KEA's official answers",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "Karnataka Economy, Co-operation, Panchayat Raj & Rural Development for KEA FDA & SDA, 2026-27 (English Medium)",
+  "pages": 70,
+  "chapters": [
+   "Karnataka economy at a glance: GSDP and budget",
+   "Agriculture, irrigation and land reforms",
+   "Industry, IT, infrastructure and energy",
+   "The co-operative movement in Karnataka",
+   "Panchayat Raj and local bodies",
+   "Rural development and poverty programmes",
+   "Welfare schemes and the five guarantees",
+   "Banking, finance and financial inclusion",
+   "Regional imbalance, Article 371J and Kalyana Karnataka",
+   "Karnataka economy: current affairs 2025-26"
+  ],
+  "pyqs": 59,
+  "price": 45,
+  "syllabus": "KEA FDA & SDA · Paper 1 General Knowledge (Karnataka) · also KPSC Group-C, VAO, PDO",
+  "badge": "KEA FDA & SDA",
+  "subject_label": "Karnataka Economy & Panchayat Raj",
+  "chapters_label": "10 chapters · all 59 KEA 2026 questions on these topics with official answers · Budget 2026-27 & Economic Survey data · 120 practice MCQs",
+  "product_en": "Karnataka Economy, Co-operation, Panchayat Raj & Rural Development for KEA FDA & SDA, 2026-27 (English Medium)",
+  "cover": "notes-kaeco-en-cover.jpg",
+  "samples": [
+   "notes-kaeco-en-p1.jpg",
+   "notes-kaeco-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "karnataka-fda-sda"
+  ],
+  "free": "/LearnWithAnil-Karnataka-Economy-KEA-FDA-SDA-Free-Sample.pdf"
  }
 ]
