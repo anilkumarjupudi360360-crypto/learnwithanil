@@ -6935,6 +6935,31 @@ MOCK_PACKS = {
                          for i in range(1, 11)
                          for post, pname, pk in (('it', 'IT Officer', 'pkit'), ('agri', 'Agriculture Field Officer', 'pkag'),
                                                  ('hr', 'HR / Personnel Officer', 'pkhr'), ('mkt', 'Marketing Officer', 'pkmk'))]),
+  # Anil, 16 Nov 2026: "start a test series for this exam (KEA FDA & SDA) ... and upload 1st test"; chose "all new questions" and the name
+  # "Vijaya FDA-SDA". Each mock = Paper-1 General Knowledge (100) + Paper-2 Kannada 35, English 35, Computer 30 (100), 2 hours each, as in
+  # KEA's 2026 pattern. New questions written for the series by writer agents and checked by separate checker agents (private source
+  # /home/claude/kmk). Ids start with "bk-" (any paid All-in-One Pass holder; no payments-script change). Sealed files: src/karnataka-fda-sda-mocks/.
+  'karnataka-fda-sda': dict(id='bk-kfsmk', name='Vijaya FDA-SDA', price=45, src='karnataka-fda-sda-mocks', dir='karnataka-fda-sda', langs='English &amp; Kannada',
+                   title='Vijaya FDA-SDA – KEA FDA & SDA Mock Test Series (Paper-1 & Paper-2)',
+                   summary='10 full-length KEA FDA & SDA mock tests in the 2026 pattern, each with Paper-1 General Knowledge (100 questions, 2 hours) and '
+                           'Paper-2 General Kannada, General English and Computer Knowledge (100 questions, 2 hours), in Kannada and English, with an '
+                           'explanation for every answer. Every section can also be taken on its own as a sectional test.',
+                   about=['New questions written by Learn with Anil for this series in KEA\'s FDA/SDA pattern (statement, match-the-following and '
+                          'chronology questions as KEA sets them), not copied from coaching material or previous papers. Practise KEA\'s real 2026 '
+                          'papers free on the previous-papers page.',
+                          'Paper-1: History & Culture, Geography & Environment, Constitution & Polity, Economy & Rural Development, General Science, '
+                          'Current Affairs (November 2025 to November 2026, with Karnataka news) and Mental Ability. Paper-2: General Kannada 35, '
+                          'General English 35 and Computer Knowledge 30, as in the real exam.',
+                          'Paper-1 and Computer Knowledge are in Kannada and English; General Kannada is in Kannada only and General English in English '
+                          'only, as KEA prints them. Every answer has an explanation in English and Kannada. Your score, accuracy and topic-wise analysis '
+                          'come after each paper.'],
+                   mocks=[m for i in range(1, 11) for m in (
+                       dict(id=f'bk-kfsmk-{i}a', name=f'Mock {i} · Paper-1 (General Knowledge)', group=f'Mock {i}', qn=100, mins=120, live=(i == 1),   # Mock 1 on 16 Nov 2026
+                            parts=[('his', 'History & Culture', ['his']), ('geo', 'Geography & Environment', ['geo']), ('pol', 'Constitution & Polity', ['pol']),
+                                   ('eco', 'Economy & Rural Development', ['eco']), ('sci', 'General Science & Technology', ['sci']),
+                                   ('cur', 'Current Affairs', ['cur']), ('apt', 'Mental Ability', ['apt'])]),
+                       dict(id=f'bk-kfsmk-{i}b', name=f'Mock {i} · Paper-2 (Kannada, English & Computer)', group=f'Mock {i}', qn=100, mins=120, live=(i == 1),
+                            parts=[('kan', 'General Kannada', ['kan']), ('eng', 'General English', ['eng']), ('comp', 'Computer Knowledge', ['comp'])]))]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
